@@ -625,6 +625,53 @@ module.exports = {
         "need": "سجّل بالبريد الإلكتروني، وثبّت تطبيق الحاسوب واتركه يعمل",
         "caution": "توقفت مشاركة عرض النطاق على الهاتف في أبريل 2026، فالكسب السلبي على الحاسوب فقط. يستخدم آخرون عنوان IP الخاص بك لجمع البيانات، والأرباح قليلة"
       }
+    },
+    {
+      "id": "pinetwork",
+      "name": "Pi Network",
+      "cat": "crypto-bi",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://minepi.com/",
+      "code": "eltociear",
+      "ref": "https://minepi.com/eltociear",
+      "ja": {
+        "gain": "PIを毎日",
+        "note": "アプリで24時間に1回ボタンを押すとPIがたまる。紹介した人が増えるほど採掘ペースも上がる。2025年2月に一般公開され、OKX・Bitget・MEXCなどで取引されている",
+        "need": "招待リンクから登録（招待コード：eltociear）。PIを動かすには本人確認とメインネットのウォレットへの移行が必要",
+        "caution": "価格は2025年の最高値$2.99から約97%下落（2026年10月時点で約$0.08）。BinanceやCoinbase、日本の取引所では扱いがない。毎日の操作が必要で、ほったらかしでは貯まらない"
+      },
+      "en": {
+        "gain": "PI every day",
+        "note": "Tap a button in the app once every 24 hours to earn PI. The more people you refer, the faster you mine. Opened to the public in February 2025 and trades on OKX, Bitget, MEXC and others",
+        "need": "Sign up via the invite link (invite code: eltociear). To move your PI you need identity verification and migration to the mainnet wallet",
+        "caution": "The price is down about 97% from its 2025 high of $2.99 (about $0.08 as of October 2026). Not listed on Binance, Coinbase or Japanese exchanges. Needs a daily tap, so it won’t build up if you leave it alone"
+      },
+      "hi": {
+        "gain": "हर दिन PI",
+        "note": "ऐप में हर 24 घंटे में एक बार बटन दबाने पर PI जमा होता है। जितने ज़्यादा लोगों को रेफ़र करेंगे, माइनिंग उतनी तेज़ होगी। फ़रवरी 2025 में आम लोगों के लिए खुला और OKX, Bitget, MEXC आदि पर ट्रेड होता है",
+        "need": "इनवाइट लिंक से साइन अप करें (इनवाइट कोड: eltociear)। PI को ट्रांसफ़र करने के लिए पहचान सत्यापन और मेननेट वॉलेट में माइग्रेशन ज़रूरी है",
+        "caution": "कीमत 2025 के उच्चतम स्तर $2.99 से लगभग 97% गिर चुकी है (अक्टूबर 2026 तक लगभग $0.08)। Binance, Coinbase या जापानी एक्सचेंजों पर उपलब्ध नहीं। रोज़ बटन दबाना पड़ता है, यूँ ही छोड़ देने पर कुछ जमा नहीं होता"
+      },
+      "zh": {
+        "gain": "每天获得 PI",
+        "note": "每 24 小时在应用中点一次按钮即可累积 PI。邀请的人越多，挖矿速度越快。2025 年 2 月向公众开放，在 OKX、Bitget、MEXC 等交易所交易",
+        "need": "通过邀请链接注册（邀请码：eltociear）。要转移 PI，需要完成身份验证并迁移到主网钱包",
+        "caution": "价格较 2025 年最高点 $2.99 下跌约 97%（截至 2026 年 10 月约为 $0.08）。Binance、Coinbase 和日本交易所均未上架。需要每天操作，放着不管不会累积"
+      },
+      "es": {
+        "gain": "PI cada día",
+        "note": "Pulsa un botón en la app una vez cada 24 horas para acumular PI. Cuantas más personas invites, más rápido minas. Se abrió al público en febrero de 2025 y cotiza en OKX, Bitget, MEXC y otros",
+        "need": "Regístrate con el enlace de invitación (código de invitación: eltociear). Para mover tus PI necesitas verificar tu identidad y migrar a la billetera de la mainnet",
+        "caution": "El precio ha caído cerca de un 97% desde su máximo de $2.99 en 2025 (unos $0.08 en octubre de 2026). No está en Binance, Coinbase ni en exchanges japoneses. Hay que pulsar a diario; si lo dejas, no se acumula"
+      },
+      "ar": {
+        "gain": "عملة PI كل يوم",
+        "note": "اضغط زرًا في التطبيق مرة كل 24 ساعة لتجميع PI. كلما دعوت أشخاصًا أكثر زادت سرعة التعدين. فُتح للعامة في فبراير 2025 ويُتداول في OKX وBitget وMEXC وغيرها",
+        "need": "سجّل عبر رابط الدعوة (رمز الدعوة: eltociear). لنقل عملات PI يلزم التحقق من الهوية والانتقال إلى محفظة الشبكة الرئيسية",
+        "caution": "انخفض السعر بنحو 97% عن أعلى مستوى له في 2025 وهو ⁦$2.99⁩ (نحو ⁦$0.08⁩ في أكتوبر 2026). غير مدرج في Binance أو Coinbase أو منصات التداول اليابانية. يتطلب ضغطة يومية، فلا يتراكم إن تركته"
+      }
     }
   ],
   "CATS": {
@@ -736,7 +783,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -827,7 +874,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -917,7 +964,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -1007,7 +1054,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -1097,7 +1144,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -1187,7 +1234,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
