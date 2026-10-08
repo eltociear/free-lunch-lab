@@ -1,6 +1,6 @@
 # 寝てても入金 / Paid While You Sleep
 
-ベーシックインカム系アプリと紹介特典をまとめた、日英対応の1ページサイト。
+ベーシックインカム系アプリと紹介特典をまとめた1ページサイト。日本語・English・हिन्दी に対応（URL末尾 `#ja` `#en` `#hi` で言語指定）。
 
 - サイト本体: `public/index.html`（HTML・CSS・JS を1ファイルに収録）
 - 公開先: Cloudflare（`wrangler.jsonc` の `assets.directory` が `public`）
