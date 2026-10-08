@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neteru-nyukin.eltociear.workers.dev/sitemap.xml
