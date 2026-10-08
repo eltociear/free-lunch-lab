@@ -198,6 +198,36 @@ function clientScript(lang) {
   var t0=Date.now(),timerEl=document.getElementById('timer');
   function pad(n){return n<10?'0'+n:''+n}
   setInterval(function(){var s=Math.floor((Date.now()-t0)/1000);timerEl.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)},1000);
+  // 言語切替で読んでいた位置と絞り込みを引き継ぐ（文章量が違うのでpxではなく要素＋割合で）
+  var KEY='langPos',bar=document.querySelector('.bar');
+  function barB(){return bar?bar.getBoundingClientRect().bottom:0}
+  document.querySelector('.lang').addEventListener('click',function(e){
+    var a=e.target.closest('a'); if(!a||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey) return;
+    var y=barB(),best=null,f=0;
+    document.querySelectorAll('header[id],section[id],.svc[id]').forEach(function(el){
+      var r=el.getBoundingClientRect(); if(!r.height||r.bottom<=y||(best&&r.top>y)) return;
+      best=el; f=Math.max(0,(y-r.top)/r.height);
+    });
+    try{sessionStorage.setItem(KEY,JSON.stringify({id:best&&window.scrollY>0?best.id:'',f:f,cat:cat,loop:loopOnly.checked,t:Date.now()}))}catch(err){}
+  });
+  var s=null;
+  try{s=JSON.parse(sessionStorage.getItem(KEY));sessionStorage.removeItem(KEY)}catch(err){}
+  if(s&&Date.now()-s.t<30000){
+    var fb=s.cat&&filters.querySelector('button[data-cat="'+s.cat+'"]');
+    if(fb&&s.cat!=='all') fb.click();
+    if(s.loop){loopOnly.checked=true;apply()}
+    var el=s.id&&document.getElementById(s.id),root=document.documentElement,goneY;
+    function go(){
+      if(!el||el.hidden) return;
+      var r=el.getBoundingClientRect();
+      root.style.scrollBehavior='auto';
+      window.scrollTo(0,window.scrollY+r.top+s.f*r.height-barB());
+      root.style.scrollBehavior=''; goneY=window.scrollY;
+    }
+    go();
+    // フォント等の読込で位置がずれたら、まだ動かしていなければ合わせ直す
+    window.addEventListener('load',function(){if(window.scrollY===goneY)go()});
+  }
 })();
 </script>`;
 }
