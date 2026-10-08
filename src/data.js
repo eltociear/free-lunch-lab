@@ -507,6 +507,53 @@ module.exports = {
         "need": "سجّل بالبريد الإلكتروني، وثبّت الإضافة أو التطبيق وابقَ متصلًا",
         "caution": "يستخدم آخرون عنوان IP الخاص بك لجمع البيانات. المكافآت تعتمد على الإسقاطات الجوية، فلا يمكن توقّع قيمتها أو موعدها"
       }
+    },
+    {
+      "id": "honeygain",
+      "name": "Honeygain",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 5,
+      "official": "https://www.honeygain.com/",
+      "code": "ELTOCD89E5",
+      "ref": "https://join.honeygain.com/ELTOCD89E5",
+      "ja": {
+        "gain": "共有した通信量に応じて現金",
+        "note": "使っていない回線を企業のWebデータ収集に貸し出す、通信量シェアの定番アプリ。紹介経由の登録で$3のウェルカムボーナス（公式ブログより）。$20たまるとPayPalなどで出金できる",
+        "need": "メールで登録し、PCやスマホにアプリを入れて動かしたままにする",
+        "caution": "自分のIPアドレスを他社のデータ収集に使わせるしくみ。稼げる額は地域の需要次第で、地域によってはかなり少ない"
+      },
+      "en": {
+        "gain": "Cash for the traffic you share",
+        "note": "The best-known bandwidth-sharing app: it rents your unused connection to businesses for web data collection. Signing up via a referral gives a $3 welcome bonus (per the official blog). Cash out via PayPal and more once you reach $20",
+        "need": "Sign up with email, install the app on your PC or phone, and leave it running",
+        "caution": "Your IP address is used by others for data collection. Earnings depend on demand in your region and can be very low in some areas"
+      },
+      "hi": {
+        "gain": "शेयर किए गए ट्रैफ़िक के बदले नकद",
+        "note": "बैंडविड्थ शेयर करने वाला सबसे जाना-माना ऐप: यह आपके खाली इंटरनेट कनेक्शन को कंपनियों को वेब डेटा जुटाने के लिए किराए पर देता है। रेफ़रल से साइन अप करने पर $3 वेलकम बोनस (आधिकारिक ब्लॉग के अनुसार)। $20 होने पर PayPal आदि से निकाल सकते हैं",
+        "need": "ईमेल से साइन अप करें, PC या फ़ोन पर ऐप इंस्टॉल करें और चालू छोड़ दें",
+        "caution": "आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। कमाई आपके इलाक़े की माँग पर निर्भर है और कुछ जगहों पर बहुत कम होती है"
+      },
+      "zh": {
+        "gain": "按共享流量获得现金",
+        "note": "最知名的带宽共享应用：把闲置网络出租给企业做网页数据采集。通过推荐注册可获得 $3 欢迎奖励（据官方博客）。满 $20 可通过 PayPal 等提现",
+        "need": "用邮箱注册，在电脑或手机上安装应用并保持运行",
+        "caution": "你的 IP 地址会被他人用于数据采集。收益取决于所在地区的需求，有些地区非常少"
+      },
+      "es": {
+        "gain": "Dinero por el tráfico que compartes",
+        "note": "La app de compartir ancho de banda más conocida: alquila tu conexión sin usar a empresas para recopilar datos web. Registrarte con un referido da un bono de bienvenida de $3 (según su blog oficial). Cobra por PayPal y otros al llegar a $20",
+        "need": "Regístrate con tu email, instala la app en tu PC o móvil y déjala funcionando",
+        "caution": "Otros usan tu dirección IP para recopilar datos. Lo que ganas depende de la demanda en tu región y puede ser muy poco en algunas zonas"
+      },
+      "ar": {
+        "gain": "نقود مقابل حركة البيانات التي تشاركها",
+        "note": "أشهر تطبيق لمشاركة عرض النطاق: يؤجّر اتصالك غير المستخدم للشركات لجمع بيانات الويب. التسجيل عبر رابط إحالة يمنح مكافأة ترحيبية قدرها ⁦$3⁩ (حسب المدونة الرسمية). اسحب أرباحك عبر PayPal وغيره عند بلوغ ⁦$20⁩",
+        "need": "سجّل بالبريد الإلكتروني، وثبّت التطبيق على حاسوبك أو هاتفك واتركه يعمل",
+        "caution": "يستخدم آخرون عنوان IP الخاص بك لجمع البيانات. الأرباح تعتمد على الطلب في منطقتك وقد تكون ضئيلة جدًا في بعض المناطق"
+      }
     }
   ],
   "CATS": {
