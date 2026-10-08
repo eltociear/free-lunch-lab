@@ -92,9 +92,14 @@ function picks(lang) {
   }).join('\n');
 }
 
-// 新着・更新履歴（新しい順に8件）
+// 新着・更新履歴（日付ごとにまとめて新しい順に5日分）
 function news(lang) {
-  return NEWS.slice(0, 8).map(n => `<li><time class="dot" datetime="${n.date}">${n.date.replace(/-/g, '.')}</time><span>${esc(n[lang] || n.en)}</span></li>`).join('');
+  const days = new Map();
+  for (const n of NEWS) {
+    if (!days.has(n.date)) days.set(n.date, []);
+    days.get(n.date).push(n);
+  }
+  return [...days].slice(0, 5).map(([date, items]) => `<li><time class="dot" datetime="${date}">${date.replace(/-/g, '.')}</time><ul>${items.map(n => `<li>${esc(n[lang] || n.en)}</li>`).join('')}</ul></li>`).join('');
 }
 
 // 言語ごとによく使われる SNS を先に並べる

@@ -307,8 +307,11 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 
 /* news */
 .news{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);max-width:44em}
-.news li{display:flex;gap:16px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
-.news time{flex:none;font-size:.85rem;color:var(--muted)}
+.news>li{display:grid;grid-template-columns:7.5em 1fr;gap:4px 16px;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line)}
+.news time{font-size:.85rem;color:var(--muted)}
+.news ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:.92rem}
+.news ul li{position:relative;padding-inline-start:14px}
+.news ul li::before{content:"";position:absolute;inset-inline-start:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
 
 /* share */
 .share{position:relative;overflow:hidden;border-radius:16px;padding:clamp(22px,4vw,36px);color:#EEF1FF;
@@ -327,6 +330,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   .zzz{top:140px;inset-inline-end:80px}
   .ledger table{min-width:300px}
   .tape{transform:rotate(-2deg)}
+  .news>li{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){.night::before,.zzz i,.tape-in{animation:none}.zzz i{opacity:.7}.svc{transition:none}}
 </style>
@@ -517,7 +521,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 
 <section id="news">
   <div class="sec-head"><h2>Novedades</h2><span class="label">UPDATES</span></div>
-  <ol class="news"><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadidas las 3 recomendadas y los indicadores de confianza</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>WAVEE ahora aparece como Global</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadido Delta Kim</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadido Pi Network</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadido Pawns.app</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadido Sweatcoin</span></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><span>Nuevo diseño del sitio</span></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><span>Añadido Honeygain</span></li></ol>
+  <ol class="news"><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>Añadidas las 3 recomendadas y los indicadores de confianza</li><li>WAVEE ahora aparece como Global</li><li>Añadido Delta Kim</li><li>Añadido Pi Network</li><li>Añadido Pawns.app</li><li>Añadido Sweatcoin</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>Nuevo diseño del sitio</li><li>Añadido Honeygain</li><li>Añadido Grass</li></ul></li></ol>
 </section>
 
 <section id="share">
