@@ -65,6 +65,7 @@ function head(lang) {
   return `<title>${esc(title)}</title>
 <meta name="description" content="${esc(L.metaDesc)}">
 <link rel="canonical" href="${abs(lang)}">
+<meta name="google-site-verification" content="n5VlzRi2FPlfwdfg9RcoApbpTtxkHIoB2ws5jWbPF9s">
 ${alts}
 <link rel="alternate" hreflang="x-default" href="${abs(DEFAULT_LANG)}">
 <meta property="og:type" content="website">
