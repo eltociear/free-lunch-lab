@@ -36,13 +36,13 @@ function card(s, lang) {
   const L = T[lang];
   const d = s[lang] || s.en;
   const name = lang === 'ja' ? s.name : s.nameEn || s.name;
-  const has = !!s.code;
+  const has = !!s.code; // 紹介リンクがあるものはコード欄・コピーボタンを出さない
   return `<article class="svc" data-cat="${s.cat}" data-type="${s.type}">
 <div class="svc-top"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags"><span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div>
 <p class="gain">${esc(d.gain)}<small>${esc(d.note)}</small></p>
 <dl><dt>${esc(L.need)}</dt><dd>${esc(d.need)}</dd><dt>${esc(L.ease)}</dt><dd>${meter(s.ease)}</dd><dt>${esc(L.region)}</dt><dd><span class="region">${esc(s.global ? L.global : L.jp)}</span></dd></dl>
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
-<div class="slip"><div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot">${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button><a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener sponsored">${esc(s.ref ? L.goRef : L.goOff)}</a></div>
+<div class="slip">${s.ref ? '' : `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot">${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>`}<a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener sponsored">${esc(s.ref ? L.goRef : L.goOff)}</a></div>
 </article>`;
 }
 
