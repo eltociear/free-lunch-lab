@@ -446,19 +446,43 @@ module.exports = {
       "global": true,
       "ease": 5,
       "official": "https://sweatco.in/",
-      "code": "",
-      "ref": "",
+      "code": "mover77273393923",
+      "ref": "https://swcapp.com/i/mover77273393923",
       "ja": {
         "gain": "1,000歩で0.95コイン",
-        "note": "歩数が自動でコインになり、アプリ内で商品や体験と交換できる",
-        "need": "アプリを入れるだけ",
-        "caution": ""
+        "note": "スマホを持って歩くだけで、歩数が自動でコインになる。コインはアプリ内のマーケットで商品や割引、寄付と交換できる",
+        "need": "アプリを入れて、歩数と位置情報へのアクセスを許可する",
+        "caution": "現金への換金レートは決まっていない。無料プランは1日に換算できる歩数に上限がある"
       },
       "en": {
         "gain": "0.95 coins per 1,000 steps",
-        "note": "Steps turn into coins automatically. Spend them in the in-app marketplace",
-        "need": "Just install the app",
-        "caution": ""
+        "note": "Carry your phone and your steps turn into coins automatically. Spend them in the in-app marketplace on products, discounts or donations",
+        "need": "Install the app and allow access to steps and location",
+        "caution": "There is no fixed cash conversion rate. The free plan caps how many steps convert each day"
+      },
+      "hi": {
+        "gain": "हर 1,000 कदम पर 0.95 कॉइन",
+        "note": "फ़ोन साथ लेकर चलें, आपके कदम अपने-आप कॉइन में बदल जाते हैं। इन्हें ऐप के मार्केटप्लेस में सामान, छूट या दान के लिए इस्तेमाल करें",
+        "need": "ऐप इंस्टॉल करें और कदम व लोकेशन की अनुमति दें",
+        "caution": "नकद में बदलने की कोई तय दर नहीं है। फ़्री प्लान में रोज़ बदले जा सकने वाले कदमों की सीमा है"
+      },
+      "zh": {
+        "gain": "每 1,000 步 0.95 枚币",
+        "note": "带着手机走路，步数就会自动变成币。可在应用内商城兑换商品、折扣或用于捐赠",
+        "need": "安装应用，并允许访问步数和位置信息",
+        "caution": "没有固定的现金兑换比例。免费版每天可兑换的步数有上限"
+      },
+      "es": {
+        "gain": "0,95 monedas por cada 1.000 pasos",
+        "note": "Lleva el móvil encima y tus pasos se convierten en monedas automáticamente. Úsalas en la tienda de la app en productos, descuentos o donaciones",
+        "need": "Instala la app y permite el acceso a pasos y ubicación",
+        "caution": "No hay un tipo de cambio fijo a dinero. El plan gratuito limita cuántos pasos se convierten al día"
+      },
+      "ar": {
+        "gain": "0.95 عملة لكل 1,000 خطوة",
+        "note": "احمل هاتفك وامشِ، فتتحوّل خطواتك إلى عملات تلقائيًا. استخدمها في متجر التطبيق للحصول على منتجات أو خصومات أو للتبرّع",
+        "need": "ثبّت التطبيق واسمح بالوصول إلى الخطوات والموقع",
+        "caution": "لا يوجد سعر ثابت لتحويلها إلى نقد. الخطة المجانية تحدّ عدد الخطوات التي تُحوَّل يوميًا"
       }
     },
     {
@@ -665,7 +689,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -756,7 +780,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -846,7 +870,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -936,7 +960,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -1026,7 +1050,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -1116,7 +1140,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
