@@ -99,8 +99,8 @@ function news(lang) {
 
 // 言語ごとによく使われる SNS を先に並べる
 const SHARE_ORDER = {
-  ja: ['x', 'line'], en: ['x', 'wa', 'tg'], zh: ['wb', 'x', 'tg'],
-  hi: ['wa', 'x', 'tg'], es: ['wa', 'x', 'fb'], ar: ['wa', 'x', 'tg'],
+  ja: ['x', 'line', 'fb', 'tg'], en: ['x', 'wa', 'tg', 'fb'], zh: ['wb', 'x', 'tg', 'fb'],
+  hi: ['wa', 'x', 'tg', 'fb'], es: ['wa', 'x', 'fb', 'tg'], ar: ['wa', 'x', 'tg', 'fb'],
 };
 function shareBtns(lang) {
   const L = T[lang];
