@@ -780,6 +780,59 @@ module.exports = {
         "need": "سجّل عبر رابط الدعوة واضغط زر التعدين في التطبيق كل يوم",
         "caution": "حتى أكتوبر 2026 لم يتسنَّ التأكد من إدراجها في أي منصة تداول أو من وجود سعر سوقي، لذا ليس واضحًا إن كان يمكن تحويلها إلى نقود. يذكر بعض المستخدمين أن رصيدهم توقف عن الزيادة رغم التعدين. يتطلب إجراءً يوميًا"
       }
+    },
+    {
+      "id": "interlink",
+      "name": "InterLink",
+      "cat": "crypto-bi",
+      "type": "loop",
+      "global": true,
+      "ease": 2,
+      "official": "https://interlinklabs.ai/",
+      "code": "541682748130",
+      "ref": "https://interlinklabs.ai/541682748130",
+      "added": "2026-10-09",
+      "trust": {
+        "cash": "unknown",
+        "price": "unknown",
+        "operator": "yes"
+      },
+      "ja": {
+        "gain": "ITLGトークンを毎日",
+        "note": "顔認証で“本人であること”を確かめた人（Human Node）に、ITLGトークンを配るプロジェクト。アプリで約4時間ごと（1日最大6回）にチェックインするとたまる",
+        "need": "招待リンクから登録し、アプリで顔認証をする",
+        "caution": "2026年5月時点でITLGは取引所に上場しておらず、市場価格がない。こまめなチェックインが必要。顔の生体情報の扱いに納得したうえで使う"
+      },
+      "en": {
+        "gain": "ITLG tokens every day",
+        "note": "A project that distributes ITLG tokens to people who have verified they are real humans through face verification (Human Nodes). Check in on the app about every 4 hours (up to 6 times a day) to earn",
+        "need": "Sign up via the invite link and complete face verification in the app",
+        "caution": "As of May 2026, ITLG is not listed on any exchange and has no market price. Requires frequent check-ins. Use it only if you are comfortable with how your facial biometric data is handled"
+      },
+      "hi": {
+        "gain": "हर दिन ITLG टोकन",
+        "note": "एक प्रोजेक्ट जो फ़ेस वेरिफ़िकेशन से “असली इंसान” साबित करने वाले लोगों (Human Node) को ITLG टोकन देता है। ऐप में लगभग हर 4 घंटे में (दिन में अधिकतम 6 बार) चेक-इन करने पर टोकन जमा होते हैं",
+        "need": "इनवाइट लिंक से साइन अप करें और ऐप में फ़ेस वेरिफ़िकेशन करें",
+        "caution": "मई 2026 तक ITLG किसी एक्सचेंज पर लिस्टेड नहीं है और इसका कोई बाज़ार मूल्य नहीं है। बार-बार चेक-इन करना पड़ता है। चेहरे के बायोमेट्रिक डेटा के इस्तेमाल से सहमत हों, तभी इस्तेमाल करें"
+      },
+      "zh": {
+        "gain": "每天获得 ITLG 代币",
+        "note": "向通过人脸验证确认“本人身份”的用户（Human Node）发放 ITLG 代币的项目。在应用中约每 4 小时签到一次（每天最多 6 次）即可累积",
+        "need": "通过邀请链接注册，并在应用中完成人脸验证",
+        "caution": "截至 2026 年 5 月，ITLG 尚未在交易所上架，没有市场价格。需要经常签到。请在认可其人脸生物信息处理方式的前提下使用"
+      },
+      "es": {
+        "gain": "Tokens ITLG cada día",
+        "note": "Un proyecto que reparte tokens ITLG a personas que han verificado que son humanas mediante reconocimiento facial (Human Nodes). Haz check-in en la app cada 4 horas aproximadamente (hasta 6 veces al día) para acumularlos",
+        "need": "Regístrate con el enlace de invitación y completa la verificación facial en la app",
+        "caution": "En mayo de 2026, ITLG no cotiza en ningún exchange y no tiene precio de mercado. Requiere check-ins frecuentes. Úsalo solo si estás conforme con cómo se tratan tus datos biométricos faciales"
+      },
+      "ar": {
+        "gain": "رموز ITLG كل يوم",
+        "note": "مشروع يوزّع رموز ITLG على من تحقّقوا من أنهم بشر حقيقيون عبر التحقق بالوجه (⁦Human Node⁩). سجّل حضورك في التطبيق كل 4 ساعات تقريبًا (حتى 6 مرات يوميًا) لتجميعها",
+        "need": "سجّل عبر رابط الدعوة وأكمل التحقق بالوجه في التطبيق",
+        "caution": "حتى مايو 2026 لم تُدرج ITLG في أي منصة تداول وليس لها سعر سوقي. يتطلب تسجيل حضور متكررًا. استخدمه فقط إن كنت مطمئنًا لطريقة التعامل مع بيانات وجهك البيومترية"
+      }
     }
   ],
   "PICKS": [
@@ -812,6 +865,15 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-09",
+      "ja": "InterLinkを追加",
+      "en": "Added InterLink",
+      "zh": "新增 InterLink",
+      "hi": "InterLink जोड़ा",
+      "es": "Añadido InterLink",
+      "ar": "أضفنا InterLink"
+    },
     {
       "date": "2026-10-09",
       "ja": "「おすすめ3つ」と信頼度の表示を追加",
@@ -1003,7 +1065,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1109,7 +1171,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1214,7 +1276,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -1319,7 +1381,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -1424,7 +1486,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -1529,7 +1591,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
