@@ -460,6 +460,53 @@ module.exports = {
         "need": "Just install the app",
         "caution": ""
       }
+    },
+    {
+      "id": "grass",
+      "name": "Grass",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 5,
+      "official": "https://www.grass.io/",
+      "code": "97_MD5PEysoBbJ7",
+      "ref": "https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7",
+      "ja": {
+        "gain": "ポイント（のちにGRASSトークン）",
+        "note": "使っていない回線の帯域をAIのWebデータ収集に貸し出すDePIN。PCのブラウザ拡張やアプリを入れておくだけで、接続時間と実際に使われた帯域に応じてポイントがたまり、シーズンごとのエアドロップで配られる",
+        "need": "メールで登録し、ブラウザ拡張またはアプリを入れて接続したままにする",
+        "caution": "自分のIPアドレスを他社のデータ収集に使わせるしくみ。報酬はエアドロップ次第で、額も時期も読めない"
+      },
+      "en": {
+        "gain": "Points (later GRASS tokens)",
+        "note": "A DePIN that rents out your unused bandwidth for AI web scraping. Keep the browser extension or app running and earn points for uptime and bandwidth actually used, paid out through seasonal airdrops",
+        "need": "Sign up with email, install the extension or app, and stay connected",
+        "caution": "Your IP address is used by others for data collection. Rewards depend on airdrops, so amount and timing are unpredictable"
+      },
+      "hi": {
+        "gain": "पॉइंट (बाद में GRASS टोकन)",
+        "note": "एक DePIN जो आपकी बिना इस्तेमाल हुई बैंडविड्थ को AI वेब स्क्रैपिंग के लिए किराए पर देता है। ब्राउज़र एक्सटेंशन या ऐप चालू रखें; अपटाइम और असल में इस्तेमाल हुई बैंडविड्थ के हिसाब से पॉइंट मिलते हैं, जो सीज़न वाले एयरड्रॉप में बँटते हैं",
+        "need": "ईमेल से साइन अप करें, एक्सटेंशन या ऐप इंस्टॉल करें और कनेक्ट रहें",
+        "caution": "आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। इनाम एयरड्रॉप पर निर्भर है, इसलिए रकम और समय तय नहीं"
+      },
+      "zh": {
+        "gain": "积分（之后换成 GRASS 代币）",
+        "note": "把闲置带宽出租给 AI 网页数据采集的 DePIN 项目。保持浏览器扩展或应用在线，即可按在线时长和实际被使用的带宽累积积分，并通过每季空投发放",
+        "need": "用邮箱注册，安装扩展或应用并保持连接",
+        "caution": "你的 IP 地址会被他人用于数据采集。收益取决于空投，金额和时间都无法预估"
+      },
+      "es": {
+        "gain": "Puntos (luego tokens GRASS)",
+        "note": "Un DePIN que alquila tu ancho de banda sin usar para el rastreo web de IA. Deja la extensión o la app activa y gana puntos por tiempo conectado y ancho de banda usado, que se reparten en airdrops por temporadas",
+        "need": "Regístrate con tu email, instala la extensión o la app y mantente conectado",
+        "caution": "Otros usan tu dirección IP para recopilar datos. Las recompensas dependen de airdrops, así que el importe y el momento son impredecibles"
+      },
+      "ar": {
+        "gain": "نقاط (ثم رموز GRASS لاحقًا)",
+        "note": "شبكة DePIN تؤجّر عرض النطاق غير المستخدم لديك لجمع بيانات الويب للذكاء الاصطناعي. أبقِ الإضافة أو التطبيق قيد التشغيل لتجمع نقاطًا حسب مدة الاتصال وعرض النطاق المستخدم فعلًا، وتُوزَّع عبر إسقاطات جوية موسمية",
+        "need": "سجّل بالبريد الإلكتروني، وثبّت الإضافة أو التطبيق وابقَ متصلًا",
+        "caution": "يستخدم آخرون عنوان IP الخاص بك لجمع البيانات. المكافآت تعتمد على الإسقاطات الجوية، فلا يمكن توقّع قيمتها أو موعدها"
+      }
     }
   ],
   "CATS": {
