@@ -665,7 +665,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -692,7 +692,16 @@ module.exports = {
       "filterLabel": "カテゴリで絞り込む",
       "metaDesc": "暗号資産のベーシックインカム（GoodDollar・ME Pass・BioMatrix）からポイ活サイト・招待制サービスまで、紹介コードつきで入金されるサービスをまとめた一覧。",
       "navLabel": "セクション",
-      "langLabel": "言語"
+      "langLabel": "言語",
+      "shareH": "友だちにも教える",
+      "shareSub": "「寝てても入金」を知らない人に、こっそり教えてあげてください。",
+      "shareText": "登録するだけで入金されるサービス、まとめてみた😴💰 #寝てても入金 #ポイ活",
+      "copyLink": "リンクをコピー",
+      "linkCopied": "リンクをコピーしました",
+      "share": "シェア",
+      "sleepL": "このページを開いて",
+      "sleepS": "ほったらかしアプリなら、この間もずっと裏で動いています",
+      "badgeMax": "ほったらかし度MAX"
     },
     "en": {
       "brand": "Paid While You <span>Sleep</span>",
@@ -747,7 +756,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -773,7 +782,16 @@ module.exports = {
       "filterLabel": "Filter by category",
       "metaDesc": "A list of crypto basic income (UBI) apps like GoodDollar, ME Pass and BioMatrix, plus cashback sites and invite-only services, with referral codes and current bonuses.",
       "navLabel": "Sections",
-      "langLabel": "Language"
+      "langLabel": "Language",
+      "shareH": "Share this list",
+      "shareSub": "Know someone who would rather earn in their sleep? Send it their way.",
+      "shareText": "Apps that pay you while you sleep 😴💰 Crypto UBI and passive income apps, all in one list",
+      "copyLink": "Copy link",
+      "linkCopied": "Link copied",
+      "share": "Share",
+      "sleepL": "Time on this page",
+      "sleepS": "Passive apps keep running in the background the whole time",
+      "badgeMax": "Set & forget"
     },
     "hi": {
       "brand": "सोते हुए भी <span>कमाई</span>",
@@ -828,7 +846,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -854,7 +872,16 @@ module.exports = {
       "filterLabel": "श्रेणी से फ़िल्टर करें",
       "metaDesc": "GoodDollar, ME Pass और BioMatrix जैसे क्रिप्टो बेसिक इनकम (UBI) ऐप, कैशबैक साइटें और इनवाइट-ओनली सेवाएँ — रेफ़रल कोड और मौजूदा बोनस के साथ एक सूची।",
       "navLabel": "सेक्शन",
-      "langLabel": "भाषा"
+      "langLabel": "भाषा",
+      "shareH": "दोस्तों को भेजें",
+      "shareSub": "कोई दोस्त जो सोते हुए कमाना चाहता है? उसे यह लिस्ट भेजें।",
+      "shareText": "सोते हुए भी कमाई 😴💰 क्रिप्टो UBI और पैसिव इनकम ऐप्स की पूरी लिस्ट",
+      "copyLink": "लिंक कॉपी करें",
+      "linkCopied": "लिंक कॉपी हो गया",
+      "share": "शेयर करें",
+      "sleepL": "इस पेज पर बिताया समय",
+      "sleepS": "पैसिव ऐप्स इस पूरे समय बैकग्राउंड में चलते रहते हैं",
+      "badgeMax": "सेट करो, भूल जाओ"
     },
     "zh": {
       "brand": "躺着也<span>到账</span>",
@@ -909,7 +936,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -935,7 +962,16 @@ module.exports = {
       "filterLabel": "按类别筛选",
       "metaDesc": "汇总 GoodDollar、ME Pass、BioMatrix 等加密货币基本收入（UBI）应用，以及返利网站和邀请制服务，附推荐码和最新奖励。",
       "navLabel": "栏目",
-      "langLabel": "语言"
+      "langLabel": "语言",
+      "shareH": "分享给朋友",
+      "shareSub": "身边有想躺着赚钱的朋友吗？把这份清单发给 TA。",
+      "shareText": "躺着也到账😴💰 加密货币 UBI 和躺赚应用一览",
+      "copyLink": "复制链接",
+      "linkCopied": "链接已复制",
+      "share": "分享",
+      "sleepL": "打开本页已过",
+      "sleepS": "躺赚应用在这段时间里也一直在后台运行",
+      "badgeMax": "最省心"
     },
     "es": {
       "brand": "Cobra mientras <span>duermes</span>",
@@ -990,7 +1026,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -1016,7 +1052,16 @@ module.exports = {
       "filterLabel": "Filtrar por categoría",
       "metaDesc": "Lista de apps de renta básica cripto (UBI) como GoodDollar, ME Pass y BioMatrix, además de webs de cashback y servicios por invitación, con códigos de referido y bonos actuales.",
       "navLabel": "Secciones",
-      "langLabel": "Idioma"
+      "langLabel": "Idioma",
+      "shareH": "Compártelo",
+      "shareSub": "¿Conoces a alguien que prefiera ganar mientras duerme? Envíaselo.",
+      "shareText": "Apps que te pagan mientras duermes 😴💰 UBI cripto e ingresos pasivos en una sola lista",
+      "copyLink": "Copiar enlace",
+      "linkCopied": "Enlace copiado",
+      "share": "Compartir",
+      "sleepL": "Tiempo en esta página",
+      "sleepS": "Las apps pasivas siguen funcionando en segundo plano todo este rato",
+      "badgeMax": "Instalar y olvidar"
     },
     "ar": {
       "brand": "دخل وأنت <span>نائم</span>",
@@ -1071,7 +1116,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
@@ -1097,7 +1142,16 @@ module.exports = {
       "filterLabel": "التصفية حسب الفئة",
       "metaDesc": "قائمة بتطبيقات الدخل الأساسي بالعملات المشفرة (UBI) مثل GoodDollar وME Pass وBioMatrix، إضافة إلى مواقع استرداد النقود والخدمات المتاحة بالدعوة، مع رموز الإحالة والمكافآت الحالية.",
       "navLabel": "الأقسام",
-      "langLabel": "اللغة"
+      "langLabel": "اللغة",
+      "shareH": "شارك القائمة",
+      "shareSub": "تعرف شخصًا يفضّل أن يكسب وهو نائم؟ أرسلها إليه.",
+      "shareText": "تطبيقات تدفع لك وأنت نائم 😴💰 دخل أساسي مشفّر وتطبيقات دخل سلبي في قائمة واحدة",
+      "copyLink": "نسخ الرابط",
+      "linkCopied": "تم نسخ الرابط",
+      "share": "مشاركة",
+      "sleepL": "الوقت على هذه الصفحة",
+      "sleepS": "التطبيقات السلبية تواصل العمل في الخلفية طوال هذا الوقت",
+      "badgeMax": "ثبّت وانسَ"
     }
   }
 };

@@ -19,7 +19,11 @@
 <meta property="og:description" content="汇总 GoodDollar、ME Pass、BioMatrix 等加密货币基本收入（UBI）应用，以及返利网站和邀请制服务，附推荐码和最新奖励。">
 <meta property="og:url" content="https://neteru-nyukin.eltociear.workers.dev/zh/">
 <meta property="og:locale" content="zh_CN">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://neteru-nyukin.eltociear.workers.dev/og/zh.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/zh.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"躺着也到账 | 加密货币 UBI 应用与推荐奖励","inLanguage":"zh-Hans","itemListElement":[{"@type":"ListItem","position":1,"name":"GoodDollar","url":"https://www.gooddollar.org/"},{"@type":"ListItem","position":2,"name":"ME Pass","url":"https://www.mec.me/"},{"@type":"ListItem","position":3,"name":"BioMatrix","url":"https://biomatrix.ai/ja/"},{"@type":"ListItem","position":4,"name":"Hapitas","url":"https://hapitas.jp/"},{"@type":"ListItem","position":5,"name":"WAVEE","url":"https://wavee.world/"},{"@type":"ListItem","position":6,"name":"Grass","url":"https://www.grass.io/"},{"@type":"ListItem","position":7,"name":"Honeygain","url":"https://www.honeygain.com/"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -205,6 +209,87 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   .lang{order:3;overflow-x:auto}
 }
 @media (prefers-reduced-motion:reduce){.ledger tbody tr{animation:none}html{scroll-behavior:auto}}
+
+/* night hero: always a night sky, whatever the theme */
+.night{--paper:#0A0F24;--ink:#EEF1FF;--muted:#A9B2D8;--line:#2B3566;--accent:#FFD66B;--pos:#6CF0B0;
+  position:relative;overflow:hidden;isolation:isolate;margin-inline:-16px;padding-inline:16px;color:var(--ink);
+  background:radial-gradient(120% 90% at 85% 0%,#3B2A86 0%,transparent 55%),radial-gradient(90% 70% at 0% 100%,#0F3B5C 0%,transparent 60%),linear-gradient(180deg,#0A0F24,#121741)}
+.night::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.9;
+  background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff 50%,transparent 51%),radial-gradient(1px 1px at 120px 80px,#fff 50%,transparent 51%),
+    radial-gradient(1.2px 1.2px at 200px 150px,#cfd6ff 50%,transparent 51%),radial-gradient(1px 1px at 60px 190px,#fff 50%,transparent 51%),
+    radial-gradient(1.6px 1.6px at 260px 40px,#fff7d6 50%,transparent 51%);
+  background-size:300px 220px;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.45}to{opacity:1}}
+.night .wrap{position:relative}
+.night .pr{color:var(--muted)}
+.night .pr b{background:var(--ink);color:var(--paper)}
+.night .hero h1{color:#fff;text-shadow:0 4px 30px rgba(120,100,255,.35)}
+.night .hero h1 em{background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+.night .lede b{color:#fff}
+.night .btn.solid{background:#FFD66B;color:#141A3A;box-shadow:0 8px 30px -8px rgba(255,214,107,.6)}
+.night .btn.solid:hover{background:#FFE59A}
+.night .btn.line{color:#fff;border-color:rgba(255,255,255,.7)}
+.night .stats{border-top-color:var(--line)}
+.night .stats .dot{color:#FFD66B}
+.moon{position:absolute;top:clamp(20px,5vw,56px);inset-inline-end:clamp(-30px,2vw,40px);width:120px;height:120px;border-radius:50%;
+  box-shadow:inset -26px 14px 0 0 #FFE7A3;filter:drop-shadow(0 0 28px rgba(255,214,107,.45));transform:rotate(-12deg);z-index:-1;pointer-events:none}
+.zzz{position:absolute;top:clamp(40px,7vw,90px);inset-inline-end:clamp(110px,14vw,190px);font-family:var(--f-display);color:#CFD6FF;pointer-events:none;z-index:-1}
+.zzz i{position:absolute;font-style:normal;opacity:0;animation:zzz 4.5s ease-in infinite}
+.zzz i:nth-child(1){font-size:1rem}.zzz i:nth-child(2){font-size:1.4rem;animation-delay:1.5s}.zzz i:nth-child(3){font-size:1.9rem;animation-delay:3s}
+@keyframes zzz{0%{transform:translate(0,0);opacity:0}20%{opacity:.9}100%{transform:translate(-40px,-70px) rotate(-12deg);opacity:0}}
+.hero-side{display:grid;gap:30px;justify-items:stretch}
+.hero-side>*{min-width:0}
+/* the passbook stays paper-colored on the night sky */
+.book{--surface:#F7F2E2;--ink:#1A2240;--muted:#6B6F86;--line:#DCD3B8;--accent-soft:#ECE3C6;--pos:#16835A;--stamp:#C9302A;color:var(--ink);
+  box-shadow:0 30px 80px -24px rgba(108,240,176,.35),0 0 0 1px rgba(255,255,255,.06)}
+.awake{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding:10px 16px;border-radius:14px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);font-size:.82rem;color:var(--muted)}
+.awake .dot{font-size:1.35rem;color:#6CF0B0;letter-spacing:.04em}
+.awake small{flex-basis:100%;font-size:.76rem}
+
+/* ticker tape */
+.tape{margin-inline:-16px;background:#FFD66B;color:#141A3A;border-block:2px solid #141A3A;overflow:hidden;transform:rotate(-1.2deg);margin-top:-14px;position:relative;z-index:2}
+.tape-in{display:flex;width:max-content;animation:tape 38s linear infinite}
+.tape span{font-weight:700;font-size:.92rem;padding:9px 0;white-space:nowrap}
+.tape span::after{content:"✦";padding-inline:18px;opacity:.6}
+.tape b{font-family:var(--f-display);font-weight:400;margin-inline-end:8px}
+@keyframes tape{to{transform:translateX(-50%)}}
+[dir="rtl"] .tape-in{animation-name:tape-rtl}
+@keyframes tape-rtl{to{transform:translateX(50%)}}
+
+/* card polish */
+.svc{--c:var(--accent);position:relative;border-top:4px solid var(--c);border-radius:10px;transition:transform .2s ease,box-shadow .2s ease}
+.svc[data-cat="crypto-bi"]{--c:#7C5CFF}.svc[data-cat="app"]{--c:#1FB57A}.svc[data-cat="pointsite"]{--c:#F08A24}
+.svc[data-cat="career"]{--c:#E2457A}.svc[data-cat="exchange"]{--c:#2F7BEA}.svc[data-cat="finance"]{--c:#14A3A3}
+.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px var(--c)}
+.svc .cat{color:var(--c);font-weight:700}
+.gain{font-size:1.45rem}
+.max{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.55)}
+.slip .btn.solid{background:var(--pos);color:var(--paper);padding-block:11px;font-size:.95rem;gap:8px}
+.slip .btn.solid::after{content:"→";transition:transform .2s ease}
+[dir="rtl"] .slip .btn.solid::after{content:"←"}
+.slip .btn.solid:hover{background:var(--pos);filter:brightness(1.08)}
+.slip .btn.solid:hover::after{transform:translateX(4px)}
+[dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
+
+/* share */
+.share{position:relative;overflow:hidden;border-radius:16px;padding:clamp(22px,4vw,36px);color:#EEF1FF;
+  background:radial-gradient(80% 120% at 100% 0%,#3B2A86,transparent 60%),linear-gradient(135deg,#0A0F24,#16205A)}
+.share h2{font-size:var(--s2);color:#fff}
+.share p{color:#A9B2D8;margin-top:6px;max-width:36em}
+.share-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.share-btns .btn{color:#fff;border-radius:999px;padding:10px 20px}
+.sb-x{background:#000;border:1px solid #444}.sb-line{background:#06C755}.sb-wa{background:#25D366}.sb-tg{background:#229ED9}
+.sb-wb{background:#E6162D}.sb-fb{background:#1877F2}.sb-copy,.sb-native{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.3)!important}
+.share-btns .btn:hover{filter:brightness(1.12)}
+
+@media (max-width:760px){
+  .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
+  .zzz{top:140px;inset-inline-end:80px}
+  .ledger table{min-width:300px}
+  .tape{transform:rotate(-2deg)}
+}
+@media (prefers-reduced-motion:reduce){.night::before,.zzz i,.tape-in{animation:none}.zzz i{opacity:.7}.svc{transition:none}}
 </style>
 </head>
 <body>
@@ -218,6 +303,9 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   </div>
 </div>
 
+<div class="night">
+<div class="moon" aria-hidden="true"></div>
+<div class="zzz" aria-hidden="true"><i>z</i><i>z</i><i>Z</i></div>
 <div class="wrap">
 <p class="pr"><b>PR</b><span>本页包含推荐链接和推荐码。通过它们注册时，网站运营者也可能获得奖励。</span></p>
 
@@ -237,6 +325,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
       <div><span class="dot">2026.10</span><span>最后核实</span></div>
     </div>
   </div>
+  <div class="hero-side">
   <div class="book" aria-hidden="true">
     <div class="book-head"><b>存款明细</b><span class="dot label">NO.0001</span></div>
     <div class="ledger">
@@ -254,7 +343,15 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <p class="note">仅为示意。实际奖励和条件请查看各卡片。</p>
     <div class="hanko">躺着<br>到账</div>
   </div>
+  <p class="awake"><span>打开本页已过</span><span class="dot" id="timer">00:00:00</span><small>躺赚应用在这段时间里也一直在后台运行</small></p>
+  </div>
 </header>
+</div>
+</div>
+
+<div class="tape" aria-hidden="true"><div class="tape-in"><span><b>GoodDollar</b>每天领取 G$ 代币</span><span><b>ME Pass</b>每天领取 MEC 代币</span><span><b>BioMatrix</b>每月领取 PoY 代币</span><span><b>Hapitas</b>最高 2,300 积分</span><span><b>WAVEE</b>每次找到工作都有匹配奖励</span><span><b>Grass</b>积分（之后换成 GRASS 代币）</span><span><b>Honeygain</b>按共享流量获得现金</span><span><b>GoodDollar</b>每天领取 G$ 代币</span><span><b>ME Pass</b>每天领取 MEC 代币</span><span><b>BioMatrix</b>每月领取 PoY 代币</span><span><b>Hapitas</b>最高 2,300 积分</span><span><b>WAVEE</b>每次找到工作都有匹配奖励</span><span><b>Grass</b>积分（之后换成 GRASS 代币）</span><span><b>Honeygain</b>按共享流量获得现金</span></div></div>
+
+<div class="wrap">
 
 <section id="list">
   <div class="sec-head"><h2>服务一览</h2><span class="label">REFERRAL LIST</span></div>
@@ -304,19 +401,27 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 <div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
 <article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Grass</h3><div class="tags"><span class="type loop">持续</span></div></div>
+<div class="svc-top"><h3><span class="cat">躺赚应用</span>Grass</h3><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div>
 <p class="gain">积分（之后换成 GRASS 代币）<small>把闲置带宽出租给 AI 网页数据采集的 DePIN 项目。保持浏览器扩展或应用在线，即可按在线时长和实际被使用的带宽累积积分，并通过每季空投发放</small></p>
 <dl><dt>获取方式</dt><dd>用邮箱注册，安装扩展或应用并保持连接</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
 <p class="caution">注意：你的 IP 地址会被他人用于数据采集。收益取决于空投，金额和时间都无法预估</p>
 <div class="slip"><a class="btn solid" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
 <article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Honeygain</h3><div class="tags"><span class="type loop">持续</span></div></div>
+<div class="svc-top"><h3><span class="cat">躺赚应用</span>Honeygain</h3><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div>
 <p class="gain">按共享流量获得现金<small>最知名的带宽共享应用：把闲置网络出租给企业做网页数据采集。通过推荐注册可获得 $3 欢迎奖励（据官方博客）。满 $20 可通过 PayPal 等提现</small></p>
 <dl><dt>获取方式</dt><dd>用邮箱注册，在电脑或手机上安装应用并保持运行</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
 <p class="caution">注意：你的 IP 地址会被他人用于数据采集。收益取决于所在地区的需求，有些地区非常少</p>
 <div class="slip"><a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article><p class="empty-state" id="empty" hidden>没有符合条件的服务。</p></div>
+</section>
+
+<section id="share">
+  <div class="share">
+    <h2>分享给朋友</h2>
+    <p>身边有想躺着赚钱的朋友吗？把这份清单发给 TA。</p>
+    <div class="share-btns"><a class="btn sb-wb" href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F&amp;title=%E8%BA%BA%E7%9D%80%E4%B9%9F%E5%88%B0%E8%B4%A6%F0%9F%98%B4%F0%9F%92%B0%20%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%20UBI%20%E5%92%8C%E8%BA%BA%E8%B5%9A%E5%BA%94%E7%94%A8%E4%B8%80%E8%A7%88" target="_blank" rel="noopener">微博</a><a class="btn sb-x" href="https://x.com/intent/post?text=%E8%BA%BA%E7%9D%80%E4%B9%9F%E5%88%B0%E8%B4%A6%F0%9F%98%B4%F0%9F%92%B0%20%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%20UBI%20%E5%92%8C%E8%BA%BA%E8%B5%9A%E5%BA%94%E7%94%A8%E4%B8%80%E8%A7%88&amp;url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F" target="_blank" rel="noopener">X</a><a class="btn sb-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F&amp;text=%E8%BA%BA%E7%9D%80%E4%B9%9F%E5%88%B0%E8%B4%A6%F0%9F%98%B4%F0%9F%92%B0%20%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%20UBI%20%E5%92%8C%E8%BA%BA%E8%B5%9A%E5%BA%94%E7%94%A8%E4%B8%80%E8%A7%88" target="_blank" rel="noopener">Telegram</a><button class="btn sb-native" type="button" id="nativeShare" hidden>分享</button><button class="btn sb-copy" type="button" id="copyLink">复制链接</button></div>
+  </div>
 </section>
 
 <section id="how">
@@ -334,7 +439,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <details><summary>这是真正的基本收入吗？</summary><p>不是政府发放的那种。这里的“UBI”指的是像 GoodDollar 和 BioMatrix 这样，无条件、反复向每位注册者发放代币的项目。日本目前还没有国家层面的基本收入。</p></details>
     <details><summary>使用推荐码会吃亏吗？</summary><p>通常不会。手续费和条件都一样，而且大多数服务也会给新用户奖励。推荐人同样会获得奖励，因此本页标注了 PR。</p></details>
     <details><summary>获得的奖励需要缴税吗？</summary><p>在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。</p></details>
-    <details><summary>在日本以外也能用吗？</summary><p>标有“全球”的服务（GoodDollar、ME Pass、BioMatrix）在日本以外也能使用。其余服务面向日本居民。</p></details>
+    <details><summary>在日本以外也能用吗？</summary><p>标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain）在日本以外也能使用。其余服务面向日本居民。</p></details>
   </div>
 </section>
 
@@ -355,7 +460,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 <div class="toast" id="toast" role="status" hidden></div>
 <script>
 (function(){
-  var I18N={"count":"显示 {n} 项服务","copied":"推荐码已复制","selected":"已选中推荐码，请从菜单中复制"};
+  var I18N={"count":"显示 {n} 项服务","copied":"推荐码已复制","selected":"已选中推荐码，请从菜单中复制","linkCopied":"链接已复制","shareText":"躺着也到账😴💰 加密货币 UBI 和躺赚应用一览","url":"https://neteru-nyukin.eltociear.workers.dev/zh/"};
   var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
       countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
   function apply(){
@@ -381,6 +486,15 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
     try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
   });
+  document.getElementById('copyLink').addEventListener('click',function(){
+    try{navigator.clipboard.writeText(I18N.url).then(function(){say(I18N.linkCopied)},function(){prompt('',I18N.url)})}catch(err){prompt('',I18N.url)}
+  });
+  var ns=document.getElementById('nativeShare');
+  if(navigator.share){ns.hidden=false;ns.addEventListener('click',function(){navigator.share({text:I18N.shareText,url:I18N.url}).catch(function(){})})}
+  // このページを開いてからの時間
+  var t0=Date.now(),timerEl=document.getElementById('timer');
+  function pad(n){return n<10?'0'+n:''+n}
+  setInterval(function(){var s=Math.floor((Date.now()-t0)/1000);timerEl.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)},1000);
 })();
 </script>
 </body>

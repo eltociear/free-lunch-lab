@@ -19,7 +19,11 @@
 <meta property="og:description" content="暗号資産のベーシックインカム（GoodDollar・ME Pass・BioMatrix）からポイ活サイト・招待制サービスまで、紹介コードつきで入金されるサービスをまとめた一覧。">
 <meta property="og:url" content="https://neteru-nyukin.eltociear.workers.dev/ja/">
 <meta property="og:locale" content="ja_JP">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://neteru-nyukin.eltociear.workers.dev/og/ja.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/ja.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"寝てても入金 | ベーシックインカム系アプリ ＆ 紹介特典まとめ","inLanguage":"ja","itemListElement":[{"@type":"ListItem","position":1,"name":"GoodDollar","url":"https://www.gooddollar.org/"},{"@type":"ListItem","position":2,"name":"ME Pass","url":"https://www.mec.me/"},{"@type":"ListItem","position":3,"name":"BioMatrix","url":"https://biomatrix.ai/ja/"},{"@type":"ListItem","position":4,"name":"ハピタス","url":"https://hapitas.jp/"},{"@type":"ListItem","position":5,"name":"WAVEE","url":"https://wavee.world/"},{"@type":"ListItem","position":6,"name":"Grass","url":"https://www.grass.io/"},{"@type":"ListItem","position":7,"name":"Honeygain","url":"https://www.honeygain.com/"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -205,6 +209,87 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   .lang{order:3;overflow-x:auto}
 }
 @media (prefers-reduced-motion:reduce){.ledger tbody tr{animation:none}html{scroll-behavior:auto}}
+
+/* night hero: always a night sky, whatever the theme */
+.night{--paper:#0A0F24;--ink:#EEF1FF;--muted:#A9B2D8;--line:#2B3566;--accent:#FFD66B;--pos:#6CF0B0;
+  position:relative;overflow:hidden;isolation:isolate;margin-inline:-16px;padding-inline:16px;color:var(--ink);
+  background:radial-gradient(120% 90% at 85% 0%,#3B2A86 0%,transparent 55%),radial-gradient(90% 70% at 0% 100%,#0F3B5C 0%,transparent 60%),linear-gradient(180deg,#0A0F24,#121741)}
+.night::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.9;
+  background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff 50%,transparent 51%),radial-gradient(1px 1px at 120px 80px,#fff 50%,transparent 51%),
+    radial-gradient(1.2px 1.2px at 200px 150px,#cfd6ff 50%,transparent 51%),radial-gradient(1px 1px at 60px 190px,#fff 50%,transparent 51%),
+    radial-gradient(1.6px 1.6px at 260px 40px,#fff7d6 50%,transparent 51%);
+  background-size:300px 220px;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.45}to{opacity:1}}
+.night .wrap{position:relative}
+.night .pr{color:var(--muted)}
+.night .pr b{background:var(--ink);color:var(--paper)}
+.night .hero h1{color:#fff;text-shadow:0 4px 30px rgba(120,100,255,.35)}
+.night .hero h1 em{background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+.night .lede b{color:#fff}
+.night .btn.solid{background:#FFD66B;color:#141A3A;box-shadow:0 8px 30px -8px rgba(255,214,107,.6)}
+.night .btn.solid:hover{background:#FFE59A}
+.night .btn.line{color:#fff;border-color:rgba(255,255,255,.7)}
+.night .stats{border-top-color:var(--line)}
+.night .stats .dot{color:#FFD66B}
+.moon{position:absolute;top:clamp(20px,5vw,56px);inset-inline-end:clamp(-30px,2vw,40px);width:120px;height:120px;border-radius:50%;
+  box-shadow:inset -26px 14px 0 0 #FFE7A3;filter:drop-shadow(0 0 28px rgba(255,214,107,.45));transform:rotate(-12deg);z-index:-1;pointer-events:none}
+.zzz{position:absolute;top:clamp(40px,7vw,90px);inset-inline-end:clamp(110px,14vw,190px);font-family:var(--f-display);color:#CFD6FF;pointer-events:none;z-index:-1}
+.zzz i{position:absolute;font-style:normal;opacity:0;animation:zzz 4.5s ease-in infinite}
+.zzz i:nth-child(1){font-size:1rem}.zzz i:nth-child(2){font-size:1.4rem;animation-delay:1.5s}.zzz i:nth-child(3){font-size:1.9rem;animation-delay:3s}
+@keyframes zzz{0%{transform:translate(0,0);opacity:0}20%{opacity:.9}100%{transform:translate(-40px,-70px) rotate(-12deg);opacity:0}}
+.hero-side{display:grid;gap:30px;justify-items:stretch}
+.hero-side>*{min-width:0}
+/* the passbook stays paper-colored on the night sky */
+.book{--surface:#F7F2E2;--ink:#1A2240;--muted:#6B6F86;--line:#DCD3B8;--accent-soft:#ECE3C6;--pos:#16835A;--stamp:#C9302A;color:var(--ink);
+  box-shadow:0 30px 80px -24px rgba(108,240,176,.35),0 0 0 1px rgba(255,255,255,.06)}
+.awake{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding:10px 16px;border-radius:14px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);font-size:.82rem;color:var(--muted)}
+.awake .dot{font-size:1.35rem;color:#6CF0B0;letter-spacing:.04em}
+.awake small{flex-basis:100%;font-size:.76rem}
+
+/* ticker tape */
+.tape{margin-inline:-16px;background:#FFD66B;color:#141A3A;border-block:2px solid #141A3A;overflow:hidden;transform:rotate(-1.2deg);margin-top:-14px;position:relative;z-index:2}
+.tape-in{display:flex;width:max-content;animation:tape 38s linear infinite}
+.tape span{font-weight:700;font-size:.92rem;padding:9px 0;white-space:nowrap}
+.tape span::after{content:"✦";padding-inline:18px;opacity:.6}
+.tape b{font-family:var(--f-display);font-weight:400;margin-inline-end:8px}
+@keyframes tape{to{transform:translateX(-50%)}}
+[dir="rtl"] .tape-in{animation-name:tape-rtl}
+@keyframes tape-rtl{to{transform:translateX(50%)}}
+
+/* card polish */
+.svc{--c:var(--accent);position:relative;border-top:4px solid var(--c);border-radius:10px;transition:transform .2s ease,box-shadow .2s ease}
+.svc[data-cat="crypto-bi"]{--c:#7C5CFF}.svc[data-cat="app"]{--c:#1FB57A}.svc[data-cat="pointsite"]{--c:#F08A24}
+.svc[data-cat="career"]{--c:#E2457A}.svc[data-cat="exchange"]{--c:#2F7BEA}.svc[data-cat="finance"]{--c:#14A3A3}
+.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px var(--c)}
+.svc .cat{color:var(--c);font-weight:700}
+.gain{font-size:1.45rem}
+.max{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.55)}
+.slip .btn.solid{background:var(--pos);color:var(--paper);padding-block:11px;font-size:.95rem;gap:8px}
+.slip .btn.solid::after{content:"→";transition:transform .2s ease}
+[dir="rtl"] .slip .btn.solid::after{content:"←"}
+.slip .btn.solid:hover{background:var(--pos);filter:brightness(1.08)}
+.slip .btn.solid:hover::after{transform:translateX(4px)}
+[dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
+
+/* share */
+.share{position:relative;overflow:hidden;border-radius:16px;padding:clamp(22px,4vw,36px);color:#EEF1FF;
+  background:radial-gradient(80% 120% at 100% 0%,#3B2A86,transparent 60%),linear-gradient(135deg,#0A0F24,#16205A)}
+.share h2{font-size:var(--s2);color:#fff}
+.share p{color:#A9B2D8;margin-top:6px;max-width:36em}
+.share-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.share-btns .btn{color:#fff;border-radius:999px;padding:10px 20px}
+.sb-x{background:#000;border:1px solid #444}.sb-line{background:#06C755}.sb-wa{background:#25D366}.sb-tg{background:#229ED9}
+.sb-wb{background:#E6162D}.sb-fb{background:#1877F2}.sb-copy,.sb-native{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.3)!important}
+.share-btns .btn:hover{filter:brightness(1.12)}
+
+@media (max-width:760px){
+  .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
+  .zzz{top:140px;inset-inline-end:80px}
+  .ledger table{min-width:300px}
+  .tape{transform:rotate(-2deg)}
+}
+@media (prefers-reduced-motion:reduce){.night::before,.zzz i,.tape-in{animation:none}.zzz i{opacity:.7}.svc{transition:none}}
 </style>
 </head>
 <body>
@@ -218,6 +303,9 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   </div>
 </div>
 
+<div class="night">
+<div class="moon" aria-hidden="true"></div>
+<div class="zzz" aria-hidden="true"><i>z</i><i>z</i><i>Z</i></div>
 <div class="wrap">
 <p class="pr"><b>PR</b><span>このページには紹介リンク・紹介コードが含まれます。経由して登録すると、運営者にも特典が入ることがあります。</span></p>
 
@@ -237,6 +325,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
       <div><span class="dot">2026.10</span><span>情報の確認月</span></div>
     </div>
   </div>
+  <div class="hero-side">
   <div class="book" aria-hidden="true">
     <div class="book-head"><b>普通預金 ご入金明細</b><span class="dot label">NO.0001</span></div>
     <div class="ledger">
@@ -254,7 +343,15 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <p class="note">※ イメージです。実際の特典と条件は各カードをご確認ください。</p>
     <div class="hanko">寝て<br>た日</div>
   </div>
+  <p class="awake"><span>このページを開いて</span><span class="dot" id="timer">00:00:00</span><small>ほったらかしアプリなら、この間もずっと裏で動いています</small></p>
+  </div>
 </header>
+</div>
+</div>
+
+<div class="tape" aria-hidden="true"><div class="tape-in"><span><b>GoodDollar</b>G$トークンを毎日</span><span><b>ME Pass</b>MECトークンを毎日</span><span><b>BioMatrix</b>PoYトークンを毎月</span><span><b>ハピタス</b>最大2,300ポイント</span><span><b>WAVEE</b>仕事が決まるたびにマッチング報酬</span><span><b>Grass</b>ポイント（のちにGRASSトークン）</span><span><b>Honeygain</b>共有した通信量に応じて現金</span><span><b>GoodDollar</b>G$トークンを毎日</span><span><b>ME Pass</b>MECトークンを毎日</span><span><b>BioMatrix</b>PoYトークンを毎月</span><span><b>ハピタス</b>最大2,300ポイント</span><span><b>WAVEE</b>仕事が決まるたびにマッチング報酬</span><span><b>Grass</b>ポイント（のちにGRASSトークン）</span><span><b>Honeygain</b>共有した通信量に応じて現金</span></div></div>
+
+<div class="wrap">
 
 <section id="list">
   <div class="sec-head"><h2>サービス一覧</h2><span class="label">REFERRAL LIST</span></div>
@@ -304,19 +401,27 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 <div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
 </article>
 <article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">ほったらかしアプリ</span>Grass</h3><div class="tags"><span class="type loop">継続</span></div></div>
+<div class="svc-top"><h3><span class="cat">ほったらかしアプリ</span>Grass</h3><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div>
 <p class="gain">ポイント（のちにGRASSトークン）<small>使っていない回線の帯域をAIのWebデータ収集に貸し出すDePIN。PCのブラウザ拡張やアプリを入れておくだけで、接続時間と実際に使われた帯域に応じてポイントがたまり、シーズンごとのエアドロップで配られる</small></p>
 <dl><dt>条件</dt><dd>メールで登録し、ブラウザ拡張またはアプリを入れて接続したままにする</dd><dt>ラク度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地域</dt><dd><span class="region">海外OK</span></dd></dl>
 <p class="caution">注意：自分のIPアドレスを他社のデータ収集に使わせるしくみ。報酬はエアドロップ次第で、額も時期も読めない</p>
 <div class="slip"><a class="btn solid" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
 </article>
 <article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">ほったらかしアプリ</span>Honeygain</h3><div class="tags"><span class="type loop">継続</span></div></div>
+<div class="svc-top"><h3><span class="cat">ほったらかしアプリ</span>Honeygain</h3><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div>
 <p class="gain">共有した通信量に応じて現金<small>使っていない回線を企業のWebデータ収集に貸し出す、通信量シェアの定番アプリ。紹介経由の登録で$3のウェルカムボーナス（公式ブログより）。$20たまるとPayPalなどで出金できる</small></p>
 <dl><dt>条件</dt><dd>メールで登録し、PCやスマホにアプリを入れて動かしたままにする</dd><dt>ラク度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地域</dt><dd><span class="region">海外OK</span></dd></dl>
 <p class="caution">注意：自分のIPアドレスを他社のデータ収集に使わせるしくみ。稼げる額は地域の需要次第で、地域によってはかなり少ない</p>
 <div class="slip"><a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
 </article><p class="empty-state" id="empty" hidden>条件に合うサービスはありません。</p></div>
+</section>
+
+<section id="share">
+  <div class="share">
+    <h2>友だちにも教える</h2>
+    <p>「寝てても入金」を知らない人に、こっそり教えてあげてください。</p>
+    <div class="share-btns"><a class="btn sb-x" href="https://x.com/intent/post?text=%E7%99%BB%E9%8C%B2%E3%81%99%E3%82%8B%E3%81%A0%E3%81%91%E3%81%A7%E5%85%A5%E9%87%91%E3%81%95%E3%82%8C%E3%82%8B%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%80%81%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F%F0%9F%98%B4%F0%9F%92%B0%20%23%E5%AF%9D%E3%81%A6%E3%81%A6%E3%82%82%E5%85%A5%E9%87%91%20%23%E3%83%9D%E3%82%A4%E6%B4%BB&amp;url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2F" target="_blank" rel="noopener">X</a><a class="btn sb-line" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2F" target="_blank" rel="noopener">LINE</a><button class="btn sb-native" type="button" id="nativeShare" hidden>シェア</button><button class="btn sb-copy" type="button" id="copyLink">リンクをコピー</button></div>
+  </div>
 </section>
 
 <section id="how">
@@ -334,7 +439,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <details><summary>これって本当のベーシックインカム？</summary><p>国が全員に配る本来のベーシックインカムとは別物です。ここでの「BI」は、GoodDollar や BioMatrix のように、登録した人に無条件でくり返しトークンを配るプロジェクトのことです。日本ではまだ国のベーシックインカムは導入されていません。</p></details>
     <details><summary>紹介コードを使うと損をしますか？</summary><p>ふつうは損をしません。紹介経由でも登録の条件や手数料は同じで、紹介された側にも特典が付くサービスがほとんどです。紹介した側にも報酬が入るので、このページには PR 表記を入れています。</p></details>
     <details><summary>もらった暗号資産やポイントに税金はかかる？</summary><p>暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。</p></details>
-    <details><summary>海外に住んでいても使えますか？</summary><p>「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix）は海外からも使えます。そのほかは日本在住者向けです。</p></details>
+    <details><summary>海外に住んでいても使えますか？</summary><p>「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain）は海外からも使えます。そのほかは日本在住者向けです。</p></details>
   </div>
 </section>
 
@@ -355,7 +460,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 <div class="toast" id="toast" role="status" hidden></div>
 <script>
 (function(){
-  var I18N={"count":"{n}件を表示中","copied":"コードをコピーしました","selected":"選択しました。長押しでコピーできます"};
+  var I18N={"count":"{n}件を表示中","copied":"コードをコピーしました","selected":"選択しました。長押しでコピーできます","linkCopied":"リンクをコピーしました","shareText":"登録するだけで入金されるサービス、まとめてみた😴💰 #寝てても入金 #ポイ活","url":"https://neteru-nyukin.eltociear.workers.dev/ja/"};
   var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
       countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
   function apply(){
@@ -381,6 +486,15 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
     try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
   });
+  document.getElementById('copyLink').addEventListener('click',function(){
+    try{navigator.clipboard.writeText(I18N.url).then(function(){say(I18N.linkCopied)},function(){prompt('',I18N.url)})}catch(err){prompt('',I18N.url)}
+  });
+  var ns=document.getElementById('nativeShare');
+  if(navigator.share){ns.hidden=false;ns.addEventListener('click',function(){navigator.share({text:I18N.shareText,url:I18N.url}).catch(function(){})})}
+  // このページを開いてからの時間
+  var t0=Date.now(),timerEl=document.getElementById('timer');
+  function pad(n){return n<10?'0'+n:''+n}
+  setInterval(function(){var s=Math.floor((Date.now()-t0)/1000);timerEl.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)},1000);
 })();
 </script>
 </body>

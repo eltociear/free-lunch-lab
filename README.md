@@ -9,6 +9,7 @@
 - `src/data.js` … サービス一覧（`SERVICES`）、カテゴリ名、各言語の文言、サイトURL
 - `src/template.html` … ページのテンプレート（デザイン・CSS）
 - `build.js` … `public/` に6言語のページ、`sitemap.xml`、`robots.txt` を生成
+- `og.js` … SNS シェア用の画像（1200×630）を Chrome で `src/og/` に作る。`build.js` が `public/og/` にコピーする
 - `public/` … 生成物（Cloudflare に公開されるフォルダ）
 
 ## サービスの追加・編集
@@ -24,6 +25,7 @@
 ## ビルドと公開
 
 ```sh
+node og.js      # 見出しや掲載サービスを変えたときだけ（Chrome が必要）
 node build.js
 npx wrangler deploy
 ```

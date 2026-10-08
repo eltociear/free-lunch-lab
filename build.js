@@ -38,12 +38,41 @@ function card(s, lang) {
   const name = lang === 'ja' ? s.name : s.nameEn || s.name;
   const has = !!s.code; // 紹介リンクがあるものはコード欄・コピーボタンを出さない
   return `<article class="svc" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags"><span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div>
+<div class="svc-top"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags">${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div>
 <p class="gain">${esc(d.gain)}<small>${esc(d.note)}</small></p>
 <dl><dt>${esc(L.need)}</dt><dd>${esc(d.need)}</dd><dt>${esc(L.ease)}</dt><dd>${meter(s.ease)}</dd><dt>${esc(L.region)}</dt><dd><span class="region">${esc(s.global ? L.global : L.jp)}</span></dd></dl>
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
 <div class="slip">${s.ref ? '' : `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot">${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>`}<a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener sponsored">${esc(s.ref ? L.goRef : L.goOff)}</a></div>
 </article>`;
+}
+
+// 流れるテープ（サービス名＋もらえるもの）
+function tape(lang) {
+  return live.map(s => {
+    const d = s[lang] || s.en;
+    return `<span><b>${esc(lang === 'ja' ? s.name : s.nameEn || s.name)}</b>${esc(d.gain)}</span>`;
+  }).join('');
+}
+
+// 言語ごとによく使われる SNS を先に並べる
+const SHARE_ORDER = {
+  ja: ['x', 'line'], en: ['x', 'wa', 'tg'], zh: ['wb', 'x', 'tg'],
+  hi: ['wa', 'x', 'tg'], es: ['wa', 'x', 'fb'], ar: ['wa', 'x', 'tg'],
+};
+function shareBtns(lang) {
+  const L = T[lang];
+  const u = encodeURIComponent(abs(lang)), t = encodeURIComponent(L.shareText);
+  const SNS = {
+    x: ['X', `https://x.com/intent/post?text=${t}&url=${u}`],
+    line: ['LINE', `https://social-plugins.line.me/lineit/share?url=${u}`],
+    wa: ['WhatsApp', `https://wa.me/?text=${t}%20${u}`],
+    tg: ['Telegram', `https://t.me/share/url?url=${u}&text=${t}`],
+    wb: ['微博', `https://service.weibo.com/share/share.php?url=${u}&title=${t}`],
+    fb: ['Facebook', `https://www.facebook.com/sharer/sharer.php?u=${u}`],
+  };
+  return SHARE_ORDER[lang].map(k => `<a class="btn sb-${k}" href="${esc(SNS[k][1])}" target="_blank" rel="noopener">${SNS[k][0]}</a>`).join('')
+    + `<button class="btn sb-native" type="button" id="nativeShare" hidden>${esc(L.share)}</button>`
+    + `<button class="btn sb-copy" type="button" id="copyLink">${esc(L.copyLink)}</button>`;
 }
 
 function filters(lang) {
@@ -73,13 +102,17 @@ ${alts}
 <meta property="og:description" content="${esc(L.metaDesc)}">
 <meta property="og:url" content="${abs(lang)}">
 <meta property="og:locale" content="${OG_LOCALE[lang]}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="${SITE_URL}/og/${lang}.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${SITE_URL}/og/${lang}.png">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>`;
 }
 
 function clientScript(lang) {
   const L = T[lang];
-  const i18n = { count: L.count, copied: L.copied, selected: L.selected };
+  const i18n = { count: L.count, copied: L.copied, selected: L.selected, linkCopied: L.linkCopied, shareText: L.shareText, url: abs(lang) };
   return `<script>
 (function(){
   var I18N=${JSON.stringify(i18n)};
@@ -108,6 +141,15 @@ function clientScript(lang) {
     function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
     try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
   });
+  document.getElementById('copyLink').addEventListener('click',function(){
+    try{navigator.clipboard.writeText(I18N.url).then(function(){say(I18N.linkCopied)},function(){prompt('',I18N.url)})}catch(err){prompt('',I18N.url)}
+  });
+  var ns=document.getElementById('nativeShare');
+  if(navigator.share){ns.hidden=false;ns.addEventListener('click',function(){navigator.share({text:I18N.shareText,url:I18N.url}).catch(function(){})})}
+  // このページを開いてからの時間
+  var t0=Date.now(),timerEl=document.getElementById('timer');
+  function pad(n){return n<10?'0'+n:''+n}
+  setInterval(function(){var s=Math.floor((Date.now()-t0)/1000);timerEl.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)},1000);
 })();
 </script>`;
 }
@@ -129,6 +171,8 @@ for (const lang of LANGS) {
     statAll: live.length,
     statLoop: live.filter(s => s.type === 'loop').length,
     statGlobal: live.filter(s => s.global).length,
+    tape: tape(lang),
+    shareBtns: shareBtns(lang),
     script: clientScript(lang),
   };
   body = body.replace(/\{\{(\w+)\}\}/g, (_, k) => {
@@ -152,6 +196,10 @@ ${body.slice(cut).trim()}
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'index.html'), html);
 }
+
+// SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
+const OG_SRC = path.join(__dirname, 'src/og');
+if (fs.existsSync(OG_SRC)) fs.cpSync(OG_SRC, path.join(OUT, 'og'), { recursive: true });
 
 const today = new Date().toISOString().slice(0, 10);
 const alts = LANGS.map(l => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[l]}" href="${abs(l)}"/>`).join('\n');

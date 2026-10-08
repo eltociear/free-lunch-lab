@@ -19,7 +19,11 @@
 <meta property="og:description" content="GoodDollar, ME Pass और BioMatrix जैसे क्रिप्टो बेसिक इनकम (UBI) ऐप, कैशबैक साइटें और इनवाइट-ओनली सेवाएँ — रेफ़रल कोड और मौजूदा बोनस के साथ एक सूची।">
 <meta property="og:url" content="https://neteru-nyukin.eltociear.workers.dev/hi/">
 <meta property="og:locale" content="hi_IN">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://neteru-nyukin.eltociear.workers.dev/og/hi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/hi.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"सोते हुए भी कमाई | क्रिप्टो UBI ऐप और रेफ़रल बोनस","inLanguage":"hi","itemListElement":[{"@type":"ListItem","position":1,"name":"GoodDollar","url":"https://www.gooddollar.org/"},{"@type":"ListItem","position":2,"name":"ME Pass","url":"https://www.mec.me/"},{"@type":"ListItem","position":3,"name":"BioMatrix","url":"https://biomatrix.ai/ja/"},{"@type":"ListItem","position":4,"name":"Hapitas","url":"https://hapitas.jp/"},{"@type":"ListItem","position":5,"name":"WAVEE","url":"https://wavee.world/"},{"@type":"ListItem","position":6,"name":"Grass","url":"https://www.grass.io/"},{"@type":"ListItem","position":7,"name":"Honeygain","url":"https://www.honeygain.com/"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -205,6 +209,87 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   .lang{order:3;overflow-x:auto}
 }
 @media (prefers-reduced-motion:reduce){.ledger tbody tr{animation:none}html{scroll-behavior:auto}}
+
+/* night hero: always a night sky, whatever the theme */
+.night{--paper:#0A0F24;--ink:#EEF1FF;--muted:#A9B2D8;--line:#2B3566;--accent:#FFD66B;--pos:#6CF0B0;
+  position:relative;overflow:hidden;isolation:isolate;margin-inline:-16px;padding-inline:16px;color:var(--ink);
+  background:radial-gradient(120% 90% at 85% 0%,#3B2A86 0%,transparent 55%),radial-gradient(90% 70% at 0% 100%,#0F3B5C 0%,transparent 60%),linear-gradient(180deg,#0A0F24,#121741)}
+.night::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.9;
+  background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff 50%,transparent 51%),radial-gradient(1px 1px at 120px 80px,#fff 50%,transparent 51%),
+    radial-gradient(1.2px 1.2px at 200px 150px,#cfd6ff 50%,transparent 51%),radial-gradient(1px 1px at 60px 190px,#fff 50%,transparent 51%),
+    radial-gradient(1.6px 1.6px at 260px 40px,#fff7d6 50%,transparent 51%);
+  background-size:300px 220px;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.45}to{opacity:1}}
+.night .wrap{position:relative}
+.night .pr{color:var(--muted)}
+.night .pr b{background:var(--ink);color:var(--paper)}
+.night .hero h1{color:#fff;text-shadow:0 4px 30px rgba(120,100,255,.35)}
+.night .hero h1 em{background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+.night .lede b{color:#fff}
+.night .btn.solid{background:#FFD66B;color:#141A3A;box-shadow:0 8px 30px -8px rgba(255,214,107,.6)}
+.night .btn.solid:hover{background:#FFE59A}
+.night .btn.line{color:#fff;border-color:rgba(255,255,255,.7)}
+.night .stats{border-top-color:var(--line)}
+.night .stats .dot{color:#FFD66B}
+.moon{position:absolute;top:clamp(20px,5vw,56px);inset-inline-end:clamp(-30px,2vw,40px);width:120px;height:120px;border-radius:50%;
+  box-shadow:inset -26px 14px 0 0 #FFE7A3;filter:drop-shadow(0 0 28px rgba(255,214,107,.45));transform:rotate(-12deg);z-index:-1;pointer-events:none}
+.zzz{position:absolute;top:clamp(40px,7vw,90px);inset-inline-end:clamp(110px,14vw,190px);font-family:var(--f-display);color:#CFD6FF;pointer-events:none;z-index:-1}
+.zzz i{position:absolute;font-style:normal;opacity:0;animation:zzz 4.5s ease-in infinite}
+.zzz i:nth-child(1){font-size:1rem}.zzz i:nth-child(2){font-size:1.4rem;animation-delay:1.5s}.zzz i:nth-child(3){font-size:1.9rem;animation-delay:3s}
+@keyframes zzz{0%{transform:translate(0,0);opacity:0}20%{opacity:.9}100%{transform:translate(-40px,-70px) rotate(-12deg);opacity:0}}
+.hero-side{display:grid;gap:30px;justify-items:stretch}
+.hero-side>*{min-width:0}
+/* the passbook stays paper-colored on the night sky */
+.book{--surface:#F7F2E2;--ink:#1A2240;--muted:#6B6F86;--line:#DCD3B8;--accent-soft:#ECE3C6;--pos:#16835A;--stamp:#C9302A;color:var(--ink);
+  box-shadow:0 30px 80px -24px rgba(108,240,176,.35),0 0 0 1px rgba(255,255,255,.06)}
+.awake{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding:10px 16px;border-radius:14px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);font-size:.82rem;color:var(--muted)}
+.awake .dot{font-size:1.35rem;color:#6CF0B0;letter-spacing:.04em}
+.awake small{flex-basis:100%;font-size:.76rem}
+
+/* ticker tape */
+.tape{margin-inline:-16px;background:#FFD66B;color:#141A3A;border-block:2px solid #141A3A;overflow:hidden;transform:rotate(-1.2deg);margin-top:-14px;position:relative;z-index:2}
+.tape-in{display:flex;width:max-content;animation:tape 38s linear infinite}
+.tape span{font-weight:700;font-size:.92rem;padding:9px 0;white-space:nowrap}
+.tape span::after{content:"✦";padding-inline:18px;opacity:.6}
+.tape b{font-family:var(--f-display);font-weight:400;margin-inline-end:8px}
+@keyframes tape{to{transform:translateX(-50%)}}
+[dir="rtl"] .tape-in{animation-name:tape-rtl}
+@keyframes tape-rtl{to{transform:translateX(50%)}}
+
+/* card polish */
+.svc{--c:var(--accent);position:relative;border-top:4px solid var(--c);border-radius:10px;transition:transform .2s ease,box-shadow .2s ease}
+.svc[data-cat="crypto-bi"]{--c:#7C5CFF}.svc[data-cat="app"]{--c:#1FB57A}.svc[data-cat="pointsite"]{--c:#F08A24}
+.svc[data-cat="career"]{--c:#E2457A}.svc[data-cat="exchange"]{--c:#2F7BEA}.svc[data-cat="finance"]{--c:#14A3A3}
+.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px var(--c)}
+.svc .cat{color:var(--c);font-weight:700}
+.gain{font-size:1.45rem}
+.max{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.55)}
+.slip .btn.solid{background:var(--pos);color:var(--paper);padding-block:11px;font-size:.95rem;gap:8px}
+.slip .btn.solid::after{content:"→";transition:transform .2s ease}
+[dir="rtl"] .slip .btn.solid::after{content:"←"}
+.slip .btn.solid:hover{background:var(--pos);filter:brightness(1.08)}
+.slip .btn.solid:hover::after{transform:translateX(4px)}
+[dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
+
+/* share */
+.share{position:relative;overflow:hidden;border-radius:16px;padding:clamp(22px,4vw,36px);color:#EEF1FF;
+  background:radial-gradient(80% 120% at 100% 0%,#3B2A86,transparent 60%),linear-gradient(135deg,#0A0F24,#16205A)}
+.share h2{font-size:var(--s2);color:#fff}
+.share p{color:#A9B2D8;margin-top:6px;max-width:36em}
+.share-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.share-btns .btn{color:#fff;border-radius:999px;padding:10px 20px}
+.sb-x{background:#000;border:1px solid #444}.sb-line{background:#06C755}.sb-wa{background:#25D366}.sb-tg{background:#229ED9}
+.sb-wb{background:#E6162D}.sb-fb{background:#1877F2}.sb-copy,.sb-native{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.3)!important}
+.share-btns .btn:hover{filter:brightness(1.12)}
+
+@media (max-width:760px){
+  .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
+  .zzz{top:140px;inset-inline-end:80px}
+  .ledger table{min-width:300px}
+  .tape{transform:rotate(-2deg)}
+}
+@media (prefers-reduced-motion:reduce){.night::before,.zzz i,.tape-in{animation:none}.zzz i{opacity:.7}.svc{transition:none}}
 </style>
 </head>
 <body>
@@ -218,6 +303,9 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   </div>
 </div>
 
+<div class="night">
+<div class="moon" aria-hidden="true"></div>
+<div class="zzz" aria-hidden="true"><i>z</i><i>z</i><i>Z</i></div>
 <div class="wrap">
 <p class="pr"><b>PR</b><span>इस पेज पर रेफ़रल लिंक और कोड हैं। इनके ज़रिए साइन अप करने पर साइट चलाने वाले को भी बोनस मिल सकता है।</span></p>
 
@@ -237,6 +325,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
       <div><span class="dot">2026.10</span><span>आख़िरी जाँच</span></div>
     </div>
   </div>
+  <div class="hero-side">
   <div class="book" aria-hidden="true">
     <div class="book-head"><b>जमा विवरण</b><span class="dot label">NO.0001</span></div>
     <div class="ledger">
@@ -254,7 +343,15 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <p class="note">सिर्फ़ उदाहरण। असली बोनस और शर्तें हर कार्ड पर देखें।</p>
     <div class="hanko">सोते<br>हुए</div>
   </div>
+  <p class="awake"><span>इस पेज पर बिताया समय</span><span class="dot" id="timer">00:00:00</span><small>पैसिव ऐप्स इस पूरे समय बैकग्राउंड में चलते रहते हैं</small></p>
+  </div>
 </header>
+</div>
+</div>
+
+<div class="tape" aria-hidden="true"><div class="tape-in"><span><b>GoodDollar</b>हर दिन G$ टोकन</span><span><b>ME Pass</b>हर दिन MEC टोकन</span><span><b>BioMatrix</b>हर महीने PoY टोकन</span><span><b>Hapitas</b>2,300 पॉइंट तक</span><span><b>WAVEE</b>हर बार नौकरी मिलने पर मैचिंग इनाम</span><span><b>Grass</b>पॉइंट (बाद में GRASS टोकन)</span><span><b>Honeygain</b>शेयर किए गए ट्रैफ़िक के बदले नकद</span><span><b>GoodDollar</b>हर दिन G$ टोकन</span><span><b>ME Pass</b>हर दिन MEC टोकन</span><span><b>BioMatrix</b>हर महीने PoY टोकन</span><span><b>Hapitas</b>2,300 पॉइंट तक</span><span><b>WAVEE</b>हर बार नौकरी मिलने पर मैचिंग इनाम</span><span><b>Grass</b>पॉइंट (बाद में GRASS टोकन)</span><span><b>Honeygain</b>शेयर किए गए ट्रैफ़िक के बदले नकद</span></div></div>
+
+<div class="wrap">
 
 <section id="list">
   <div class="sec-head"><h2>सेवाएँ</h2><span class="label">REFERRAL LIST</span></div>
@@ -304,19 +401,27 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 <div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">पैसिव ऐप</span>Grass</h3><div class="tags"><span class="type loop">बार-बार</span></div></div>
+<div class="svc-top"><h3><span class="cat">पैसिव ऐप</span>Grass</h3><div class="tags"><span class="max">सेट करो, भूल जाओ</span><span class="type loop">बार-बार</span></div></div>
 <p class="gain">पॉइंट (बाद में GRASS टोकन)<small>एक DePIN जो आपकी बिना इस्तेमाल हुई बैंडविड्थ को AI वेब स्क्रैपिंग के लिए किराए पर देता है। ब्राउज़र एक्सटेंशन या ऐप चालू रखें; अपटाइम और असल में इस्तेमाल हुई बैंडविड्थ के हिसाब से पॉइंट मिलते हैं, जो सीज़न वाले एयरड्रॉप में बँटते हैं</small></p>
 <dl><dt>कैसे मिलेगा</dt><dd>ईमेल से साइन अप करें, एक्सटेंशन या ऐप इंस्टॉल करें और कनेक्ट रहें</dd><dt>आसानी</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>क्षेत्र</dt><dd><span class="region">ग्लोबल</span></dd></dl>
 <p class="caution">ध्यान दें: आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। इनाम एयरड्रॉप पर निर्भर है, इसलिए रकम और समय तय नहीं</p>
 <div class="slip"><a class="btn solid" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">पैसिव ऐप</span>Honeygain</h3><div class="tags"><span class="type loop">बार-बार</span></div></div>
+<div class="svc-top"><h3><span class="cat">पैसिव ऐप</span>Honeygain</h3><div class="tags"><span class="max">सेट करो, भूल जाओ</span><span class="type loop">बार-बार</span></div></div>
 <p class="gain">शेयर किए गए ट्रैफ़िक के बदले नकद<small>बैंडविड्थ शेयर करने वाला सबसे जाना-माना ऐप: यह आपके खाली इंटरनेट कनेक्शन को कंपनियों को वेब डेटा जुटाने के लिए किराए पर देता है। रेफ़रल से साइन अप करने पर $3 वेलकम बोनस (आधिकारिक ब्लॉग के अनुसार)। $20 होने पर PayPal आदि से निकाल सकते हैं</small></p>
 <dl><dt>कैसे मिलेगा</dt><dd>ईमेल से साइन अप करें, PC या फ़ोन पर ऐप इंस्टॉल करें और चालू छोड़ दें</dd><dt>आसानी</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>क्षेत्र</dt><dd><span class="region">ग्लोबल</span></dd></dl>
 <p class="caution">ध्यान दें: आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। कमाई आपके इलाक़े की माँग पर निर्भर है और कुछ जगहों पर बहुत कम होती है</p>
 <div class="slip"><a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article><p class="empty-state" id="empty" hidden>इन फ़िल्टर से कोई सेवा मेल नहीं खाती।</p></div>
+</section>
+
+<section id="share">
+  <div class="share">
+    <h2>दोस्तों को भेजें</h2>
+    <p>कोई दोस्त जो सोते हुए कमाना चाहता है? उसे यह लिस्ट भेजें।</p>
+    <div class="share-btns"><a class="btn sb-wa" href="https://wa.me/?text=%E0%A4%B8%E0%A5%8B%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%81%E0%A4%8F%20%E0%A4%AD%E0%A5%80%20%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%88%20%F0%9F%98%B4%F0%9F%92%B0%20%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%AA%E0%A5%8D%E0%A4%9F%E0%A5%8B%20UBI%20%E0%A4%94%E0%A4%B0%20%E0%A4%AA%E0%A5%88%E0%A4%B8%E0%A4%BF%E0%A4%B5%20%E0%A4%87%E0%A4%A8%E0%A4%95%E0%A4%AE%20%E0%A4%90%E0%A4%AA%E0%A5%8D%E0%A4%B8%20%E0%A4%95%E0%A5%80%20%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A4%BF%E0%A4%B8%E0%A5%8D%E0%A4%9F%20https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fhi%2F" target="_blank" rel="noopener">WhatsApp</a><a class="btn sb-x" href="https://x.com/intent/post?text=%E0%A4%B8%E0%A5%8B%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%81%E0%A4%8F%20%E0%A4%AD%E0%A5%80%20%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%88%20%F0%9F%98%B4%F0%9F%92%B0%20%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%AA%E0%A5%8D%E0%A4%9F%E0%A5%8B%20UBI%20%E0%A4%94%E0%A4%B0%20%E0%A4%AA%E0%A5%88%E0%A4%B8%E0%A4%BF%E0%A4%B5%20%E0%A4%87%E0%A4%A8%E0%A4%95%E0%A4%AE%20%E0%A4%90%E0%A4%AA%E0%A5%8D%E0%A4%B8%20%E0%A4%95%E0%A5%80%20%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A4%BF%E0%A4%B8%E0%A5%8D%E0%A4%9F&amp;url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fhi%2F" target="_blank" rel="noopener">X</a><a class="btn sb-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fhi%2F&amp;text=%E0%A4%B8%E0%A5%8B%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%81%E0%A4%8F%20%E0%A4%AD%E0%A5%80%20%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%88%20%F0%9F%98%B4%F0%9F%92%B0%20%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%AA%E0%A5%8D%E0%A4%9F%E0%A5%8B%20UBI%20%E0%A4%94%E0%A4%B0%20%E0%A4%AA%E0%A5%88%E0%A4%B8%E0%A4%BF%E0%A4%B5%20%E0%A4%87%E0%A4%A8%E0%A4%95%E0%A4%AE%20%E0%A4%90%E0%A4%AA%E0%A5%8D%E0%A4%B8%20%E0%A4%95%E0%A5%80%20%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A4%BF%E0%A4%B8%E0%A5%8D%E0%A4%9F" target="_blank" rel="noopener">Telegram</a><button class="btn sb-native" type="button" id="nativeShare" hidden>शेयर करें</button><button class="btn sb-copy" type="button" id="copyLink">लिंक कॉपी करें</button></div>
+  </div>
 </section>
 
 <section id="how">
@@ -334,7 +439,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <details><summary>क्या यह असली बेसिक इनकम है?</summary><p>यह सरकार वाली बेसिक इनकम नहीं है। यहाँ “UBI” का मतलब GoodDollar और BioMatrix जैसे प्रोजेक्ट हैं, जो हर रजिस्टर्ड व्यक्ति को बिना शर्त बार-बार टोकन देते हैं। जापान में अभी कोई राष्ट्रीय बेसिक इनकम नहीं है।</p></details>
     <details><summary>क्या रेफ़रल कोड इस्तेमाल करने से मेरा कोई नुकसान है?</summary><p>आम तौर पर नहीं। फ़ीस और शर्तें वही रहती हैं, और ज़्यादातर सेवाएँ नए यूज़र को भी बोनस देती हैं। रेफ़र करने वाले को भी इनाम मिलता है, इसलिए इस पेज पर PR लिखा है।</p></details>
     <details><summary>क्या इनाम पर टैक्स लगता है?</summary><p>जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।</p></details>
-    <details><summary>क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?</summary><p>“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।</p></details>
+    <details><summary>क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?</summary><p>“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।</p></details>
   </div>
 </section>
 
@@ -355,7 +460,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 <div class="toast" id="toast" role="status" hidden></div>
 <script>
 (function(){
-  var I18N={"count":"{n} सेवाएँ दिख रही हैं","copied":"कोड कॉपी हो गया","selected":"कोड चुन लिया गया। मेन्यू से कॉपी करें"};
+  var I18N={"count":"{n} सेवाएँ दिख रही हैं","copied":"कोड कॉपी हो गया","selected":"कोड चुन लिया गया। मेन्यू से कॉपी करें","linkCopied":"लिंक कॉपी हो गया","shareText":"सोते हुए भी कमाई 😴💰 क्रिप्टो UBI और पैसिव इनकम ऐप्स की पूरी लिस्ट","url":"https://neteru-nyukin.eltociear.workers.dev/hi/"};
   var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
       countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
   function apply(){
@@ -381,6 +486,15 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
     try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
   });
+  document.getElementById('copyLink').addEventListener('click',function(){
+    try{navigator.clipboard.writeText(I18N.url).then(function(){say(I18N.linkCopied)},function(){prompt('',I18N.url)})}catch(err){prompt('',I18N.url)}
+  });
+  var ns=document.getElementById('nativeShare');
+  if(navigator.share){ns.hidden=false;ns.addEventListener('click',function(){navigator.share({text:I18N.shareText,url:I18N.url}).catch(function(){})})}
+  // このページを開いてからの時間
+  var t0=Date.now(),timerEl=document.getElementById('timer');
+  function pad(n){return n<10?'0'+n:''+n}
+  setInterval(function(){var s=Math.floor((Date.now()-t0)/1000);timerEl.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)},1000);
 })();
 </script>
 </body>
