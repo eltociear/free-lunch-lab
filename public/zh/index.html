@@ -32,7 +32,7 @@
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
 :root{
   --paper:#EAF0EE; --surface:#F7FAF9; --ink:#18213B; --muted:#56627A; --line:#C3D0CD;
-  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3;
+  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B;
   --f-display:"Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
   --f-body:"Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
   --f-dot:"DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
@@ -40,10 +40,10 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}}
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -57,6 +57,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;li
 p{margin:0}
 .dot{font-family:var(--f-dot);font-variant-numeric:tabular-nums}
 .label{font-size:var(--s4);letter-spacing:.12em;color:var(--muted)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 section[id],header[id]{scroll-margin-top:72px}
 
 /* top bar */
@@ -84,14 +85,14 @@ section[id],header[id]{scroll-margin-top:72px}
 html[lang="en"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
 html[lang="hi"]{--f-display:"Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
 html[lang="hi"] body{line-height:1.9}
-html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3{font-weight:700}
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3,html[lang="hi"] .pick h3{font-weight:700}
 html[lang="hi"] .hero h1{font-size:clamp(2rem,5.4vw,3.6rem);line-height:1.35}
 html[lang="es"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
 html[lang="zh-Hans"]{--f-display:"Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"Noto Sans SC",system-ui,sans-serif}
-html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3{font-weight:900}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3,html[lang="zh-Hans"] .pick h3{font-weight:900}
 html[lang="ar"]{--f-display:"Noto Kufi Arabic",sans-serif;--f-body:"Noto Sans Arabic",system-ui,sans-serif}
 html[lang="ar"] body{line-height:1.95}
-html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3{font-weight:700}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3,html[lang="ar"] .pick h3{font-weight:700}
 html[lang="ar"] .hero h1{font-size:clamp(2rem,5.2vw,3.5rem);line-height:1.45}
 html[lang="ar"] .book{transform:rotate(1.2deg)}
 html[lang="ar"] .hanko{transform:rotate(-14deg)}
@@ -272,6 +273,43 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .slip .btn.solid:hover::after{transform:translateX(4px)}
 [dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
 
+/* trust chips / NEW badge */
+.trust{display:flex;flex-wrap:wrap;gap:5px;margin:0;padding:0;list-style:none}
+.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust b,.tr-leg b{font-weight:700}
+.t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
+.tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
+.tr-leg>span:first-child{color:var(--ink);font-weight:700}
+.new{font-size:.68rem;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:999px;background:var(--stamp);color:#fff;white-space:nowrap}
+.svc{scroll-margin-top:72px}
+.svc .tags{flex:0 1 auto;flex-wrap:wrap;justify-content:flex-end;row-gap:4px}
+.svc-top h3{flex:1 1 auto;min-width:8em}
+
+/* top picks */
+#picks{position:relative;z-index:1}
+.picks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pick{display:flex;flex-direction:column;gap:12px;min-width:0;padding:18px;border-radius:12px;color:#EEF1FF;border:1px solid rgba(255,214,107,.6);
+  background:radial-gradient(90% 80% at 100% 0%,#3B2A86,transparent 62%),linear-gradient(160deg,#0A0F24,#16205A);
+  box-shadow:0 0 0 3px rgba(255,214,107,.08),0 16px 40px -20px rgba(255,190,80,.6)}
+.pick-top{display:flex;align-items:center;gap:14px}
+.pick-top>div{min-width:0}
+.rank{flex:none;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;border:2px solid #FFD66B;color:#FFD66B;font-size:1.9rem;line-height:1;
+  text-shadow:0 0 14px rgba(255,214,107,.6);box-shadow:inset 0 0 16px rgba(255,214,107,.18)}
+.pick .cat{color:#A9B2D8}
+.pick h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:1.3rem;line-height:1.3;color:#fff}
+.pick p{font-size:.9rem;color:#C9D0EE;line-height:1.65}
+.pick .btn.solid{margin-top:auto;background:#FFD66B;color:#141A3A;padding-block:10px;gap:8px;white-space:normal;text-align:center}
+.pick .btn.solid::after{content:"→"}
+[dir="rtl"] .pick .btn.solid::after{content:"←"}
+.pick .btn.solid:hover{background:#FFE59A}
+.pick .more{font-size:.8rem;color:#A9B2D8;text-align:center;text-underline-offset:3px}
+.pick .more:hover{color:#fff}
+
+/* news */
+.news{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);max-width:44em}
+.news li{display:flex;gap:16px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
+.news time{flex:none;font-size:.85rem;color:var(--muted)}
+
 /* share */
 .share{position:relative;overflow:hidden;border-radius:16px;padding:clamp(22px,4vw,36px);color:#EEF1FF;
   background:radial-gradient(80% 120% at 100% 0%,#3B2A86,transparent 60%),linear-gradient(135deg,#0A0F24,#16205A)}
@@ -284,6 +322,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .share-btns .btn:hover{filter:brightness(1.12)}
 
 @media (max-width:760px){
+  .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
   .ledger table{min-width:300px}
@@ -353,6 +392,26 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 
 <div class="wrap">
 
+<section id="picks">
+  <div class="sec-head"><h2>先装这 3 个</h2><span class="label">TOP 3</span></div>
+  <p class="intro">按省事、海外可用、能真正兑换这三点挑选。</p>
+  <div class="picks"><article class="pick"><div class="pick-top"><span class="rank dot">1</span><div><span class="cat">躺赚应用</span><h3>Honeygain</h3></div></div>
+<p>装在电脑或手机上就行。攒满 $20 可通过 PayPal 提现</p>
+<a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">通过推荐链接注册</a>
+<a class="more" href="#svc-honeygain">查看详情 ↓</a>
+</article>
+<article class="pick"><div class="pick-top"><span class="rank dot">2</span><div><span class="cat">躺赚应用</span><h3>Pawns.app</h3></div></div>
+<p>装在电脑上就行。满 $5 即可提现</p>
+<a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">通过推荐链接注册</a>
+<a class="more" href="#svc-pawns">查看详情 ↓</a>
+</article>
+<article class="pick"><div class="pick-top"><span class="rank dot">3</span><div><span class="cat">躺赚应用</span><h3>Sweatcoin</h3></div></div>
+<p>带着手机走路就行。攒下的币可兑换商品或折扣</p>
+<a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">通过推荐链接注册</a>
+<a class="more" href="#svc-sweatcoin">查看详情 ↓</a>
+</article></div>
+</section>
+
 <section id="list">
   <div class="sec-head"><h2>服务一览</h2><span class="label">REFERRAL LIST</span></div>
   <div class="tools">
@@ -363,85 +422,102 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <span><span class="type loop">持续</span>&nbsp; <span>注册后可反复获得</span></span>
     <span><span class="type once">一次性</span>&nbsp; <span>通过推荐注册可获得一次性奖励</span></span>
     <span><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i></span>&nbsp; <span>轻松度（本站主观评分）</span></span>
+    <span class="tr-leg"><span>可信度参考</span><span><b class="t-yes">✓</b> 有</span><span><b class="t-partial">△</b> 有条件</span><span><b class="t-no">✗</b> 无</span><span><b class="t-unknown">?</b> 未确认</span></span>
   </div>
   <p class="count" id="count" aria-live="polite">显示 11 项服务</p>
-  <div class="grid" id="grid"><article class="svc" data-cat="crypto-bi" data-type="loop">
+  <div class="grid" id="grid"><article class="svc" id="svc-gooddollar" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><h3><span class="cat">加密货币 UBI</span>GoodDollar</h3><div class="tags"><span class="type loop">持续</span></div></div>
 <p class="gain">每天领取 G$ 代币<small>非营利 UBI 协议。每 24 小时可在应用中领取一次，当天的奖池由所有领取者平分</small></p>
 <dl><dt>获取方式</dt><dd>在应用中进行人脸身份验证</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
 <p class="caution">注意：2026 年 5 月发生安全事件，储备金正在审查中。每日金额也很少</p>
 <div class="slip"><a class="btn solid" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
+<article class="svc" id="svc-mepass" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><h3><span class="cat">加密货币 UBI</span>ME Pass</h3><div class="tags"><span class="type loop">持续</span></div></div>
 <p class="gain">每天领取 MEC 代币<small>Meta Earth 的钱包应用。完成验证的用户可获得 1 MEC 作为“无条件基本收入”，每日签到也有少量奖励</small></p>
 <dl><dt>获取方式</dt><dd>通过邀请链接注册，并在应用中完成 KYC</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul>
 <p class="caution">注意：截至 2026 年 10 月，MEC 尚未在任何交易所上市，没有市场价格。只能通过点对点交易变现</p>
 <div class="slip"><a class="btn solid" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
+<article class="svc" id="svc-biomatrix" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><h3><span class="cat">加密货币 UBI</span>BioMatrix</h3><div class="tags"><span class="type loop">持续</span></div></div>
 <p class="gain">每月领取 PoY 代币<small>承诺 60 年每月发放的 UBI 代币。使用推荐码注册可获得 5 枚代币奖励（截至 2026 年 1 月）。越早注册分配越多</small></p>
 <dl><dt>获取方式</dt><dd>在应用中通过生物识别验证后，每月领取</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul>
 <p class="caution">注意：我们未能确认 PoY 的市场价格。请在接受其生物识别数据处理方式后再使用</p>
 <div class="slip"><a class="btn solid" href="https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&amp;af_dp=biomatrix%3A%2F%2F&amp;deep_link_sub1=C66SPN" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="pointsite" data-type="once">
+<article class="svc" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><h3><span class="cat">返利网站</span>Hapitas</h3><div class="tags"><span class="type once">一次性</span></div></div>
 <p class="gain">最高 2,300 积分<small>2026 年 10 月活动（1 积分 = 1 日元）。连续登录 3 天得 100 积分，通过广告累计获得 3,000 积分再得 1,000 积分等</small></p>
 <dl><dt>获取方式</dt><dd>10 月 31 日前通过推荐注册，并于 11 月 30 日前达成条件</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">仅限日本</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
 
 <div class="slip"><a class="btn solid" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="career" data-type="loop">
+<article class="svc" id="svc-wavee" data-cat="career" data-type="loop">
 <div class="svc-top"><h3><span class="cat">工作匹配</span>WAVEE</h3><div class="tags"><span class="type loop">持续</span></div></div>
 <p class="gain">每次找到工作都有匹配奖励<small>完全邀请制的工作匹配平台。你邀请的人（或其邀请的人）每次找到工作，你都能反复获得推荐分成（7.5–15%）。DMM、GMO Pepabo 等公司在此发布职位</small></p>
 <dl><dt>获取方式</dt><dd>通过邀请链接注册</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
 <p class="caution">注意：只有在工作匹配成功时才有收入。分成比例来自 2024 年 6 月的官方 note</p>
 <div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Sweatcoin</h3><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div>
+<article class="svc" id="svc-sweatcoin" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">躺赚应用</span>Sweatcoin</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div>
 <p class="gain">每 1,000 步 0.95 枚币<small>带着手机走路，步数就会自动变成币。可在应用内商城兑换商品、折扣或用于捐赠</small></p>
 <dl><dt>获取方式</dt><dd>安装应用，并允许访问步数和位置信息</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
 <p class="caution">注意：没有固定的现金兑换比例。免费版每天可兑换的步数有上限</p>
 <div class="slip"><a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Grass</h3><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div>
+<article class="svc" id="svc-grass" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">躺赚应用</span>Grass</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div>
 <p class="gain">积分（之后换成 GRASS 代币）<small>把闲置带宽出租给 AI 网页数据采集的 DePIN 项目。保持浏览器扩展或应用在线，即可按在线时长和实际被使用的带宽累积积分，并通过每季空投发放</small></p>
 <dl><dt>获取方式</dt><dd>用邮箱注册，安装扩展或应用并保持连接</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
 <p class="caution">注意：你的 IP 地址会被他人用于数据采集。收益取决于空投，金额和时间都无法预估</p>
 <div class="slip"><a class="btn solid" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Honeygain</h3><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div>
+<article class="svc" id="svc-honeygain" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">躺赚应用</span>Honeygain</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div>
 <p class="gain">按共享流量获得现金<small>最知名的带宽共享应用：把闲置网络出租给企业做网页数据采集。通过推荐注册可获得 $3 欢迎奖励（据官方博客）。满 $20 可通过 PayPal 等提现</small></p>
 <dl><dt>获取方式</dt><dd>用邮箱注册，在电脑或手机上安装应用并保持运行</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
 <p class="caution">注意：你的 IP 地址会被他人用于数据采集。收益取决于所在地区的需求，有些地区非常少</p>
 <div class="slip"><a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Pawns.app</h3><div class="tags"><span class="type loop">持续</span></div></div>
+<article class="svc" id="svc-pawns" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">躺赚应用</span>Pawns.app</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div>
 <p class="gain">按共享流量获得现金<small>IPRoyal 旗下的带宽共享应用。让电脑端应用保持运行，闲置网络就能赚钱。问卷和游戏也能赚。满 $5 可通过 PayPal、比特币等提现</small></p>
 <dl><dt>获取方式</dt><dd>用邮箱注册，在电脑上安装应用并保持运行</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
 <p class="caution">注意：手机端带宽共享已于 2026 年 4 月停止，躺赚只能用电脑。你的 IP 地址会被他人用于数据采集，收益也不多</p>
 <div class="slip"><a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>Pi Network</h3><div class="tags"><span class="type loop">持续</span></div></div>
+<article class="svc" id="svc-pinetwork" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>Pi Network</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div>
 <p class="gain">每天获得 PI<small>每 24 小时在应用中点一次按钮即可累积 PI。邀请的人越多，挖矿速度越快。2025 年 2 月向公众开放，在 OKX、Bitget、MEXC 等交易所交易</small></p>
 <dl><dt>获取方式</dt><dd>通过邀请链接注册（邀请码：eltociear）。要转移 PI，需要完成身份验证并迁移到主网钱包</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
 <p class="caution">注意：价格较 2025 年最高点 $2.99 下跌约 97%（截至 2026 年 10 月约为 $0.08）。Binance、Coinbase 和日本交易所均未上架。需要每天操作，放着不管不会累积</p>
 <div class="slip"><a class="btn solid" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>Delta Kim</h3><div class="tags"><span class="type loop">持续</span></div></div>
+<article class="svc" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>Delta Kim</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div>
 <p class="gain">每天获得 KIM<small>类似 Pi Network 的加密资产应用，每天用手机“挖矿”。据称使用邀请码注册后挖矿速度会提高</small></p>
 <dl><dt>获取方式</dt><dd>通过邀请链接注册，每天在应用中点击挖矿按钮</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul>
 <p class="caution">注意：截至 2026 年 10 月，尚未确认在任何交易所上架或有市场价格，能否兑现尚不清楚。也有用户反映挖矿后余额不再增加。需要每天操作</p>
 <div class="slip"><a class="btn solid" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article><p class="empty-state" id="empty" hidden>没有符合条件的服务。</p></div>
+</section>
+
+<section id="news">
+  <div class="sec-head"><h2>最新动态</h2><span class="label">UPDATES</span></div>
+  <ol class="news"><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>新增“推荐 3 个”和可信度标识</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>WAVEE 更新为“全球”可用</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>新增 Delta Kim</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>新增 Pi Network</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>新增 Pawns.app</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>新增 Sweatcoin</span></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><span>网站改版</span></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><span>新增 Honeygain</span></li></ol>
 </section>
 
 <section id="share">

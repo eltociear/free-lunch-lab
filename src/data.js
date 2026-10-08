@@ -23,6 +23,11 @@ module.exports = {
       "official": "https://www.gooddollar.org/",
       "code": "KgChqUuJic",
       "ref": "https://goodwallet.xyz?inviteCode=KgChqUuJic&chainId=50",
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "yes"
+      },
       "ja": {
         "gain": "G$トークンを毎日",
         "note": "24時間に1回、アプリで受け取る非営利のUBIプロジェクト。その日に受け取った人数で配分を分ける",
@@ -93,6 +98,11 @@ module.exports = {
       "official": "https://www.mec.me/",
       "code": "d22fj9hx",
       "ref": "https://i.mec.me/ja-JP/?c=d22fj9hx",
+      "trust": {
+        "cash": "partial",
+        "price": "no",
+        "operator": "unknown"
+      },
       "ja": {
         "gain": "MECトークンを毎日",
         "note": "Meta Earthのウォレットアプリ。本人確認すると「無条件のベーシックインカム」として1 MECが付与され、毎日のチェックインでも少しずつ増える",
@@ -140,6 +150,11 @@ module.exports = {
       "official": "https://biomatrix.ai/ja/",
       "code": "C66SPN",
       "ref": "https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&af_dp=biomatrix%3A%2F%2F&deep_link_sub1=C66SPN",
+      "trust": {
+        "cash": "unknown",
+        "price": "unknown",
+        "operator": "unknown"
+      },
       "ja": {
         "gain": "PoYトークンを毎月",
         "note": "「60年間毎月配る」とうたうUBIトークン。紹介コードで登録すると5トークンのボーナス（2026年1月時点）。早く登録した人ほど配布が多い",
@@ -282,6 +297,11 @@ module.exports = {
       "official": "https://hapitas.jp/",
       "code": "",
       "ref": "https://hapitas.jp/appinvite/?i=25819964",
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
       "ja": {
         "gain": "最大2,300ポイント",
         "note": "2026年10月の内容（1ポイント＝1円）。3日連続ログインで100ポイント、広告利用で合計3,000ポイントたまると1,000ポイントなど",
@@ -377,6 +397,11 @@ module.exports = {
       "official": "https://wavee.world/",
       "code": "",
       "ref": "https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd",
+      "trust": {
+        "cash": "partial",
+        "price": "na",
+        "operator": "yes"
+      },
       "ja": {
         "gain": "仕事が決まるたびにマッチング報酬",
         "note": "完全招待制の仕事マッチング。自分が招待した人や、その先の人が仕事に決まるたび、招待報酬が何度でも入る（分配率7.5〜15%）。DMMやGMOペパボなどが求人を掲載",
@@ -448,6 +473,12 @@ module.exports = {
       "official": "https://sweatco.in/",
       "code": "mover77273393923",
       "ref": "https://swcapp.com/i/mover77273393923",
+      "added": "2026-10-09",
+      "trust": {
+        "cash": "partial",
+        "price": "na",
+        "operator": "yes"
+      },
       "ja": {
         "gain": "1,000歩で0.95コイン",
         "note": "スマホを持って歩くだけで、歩数が自動でコインになる。コインはアプリ内のマーケットで商品や割引、寄付と交換できる",
@@ -495,6 +526,12 @@ module.exports = {
       "official": "https://www.grass.io/",
       "code": "97_MD5PEysoBbJ7",
       "ref": "https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7",
+      "added": "2026-10-08",
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "yes"
+      },
       "ja": {
         "gain": "ポイント（のちにGRASSトークン）",
         "note": "使っていない回線の帯域をAIのWebデータ収集に貸し出すDePIN。PCのブラウザ拡張やアプリを入れておくだけで、接続時間と実際に使われた帯域に応じてポイントがたまり、シーズンごとのエアドロップで配られる",
@@ -542,6 +579,12 @@ module.exports = {
       "official": "https://www.honeygain.com/",
       "code": "ELTOCD89E5",
       "ref": "https://join.honeygain.com/ELTOCD89E5",
+      "added": "2026-10-08",
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
       "ja": {
         "gain": "共有した通信量に応じて現金",
         "note": "使っていない回線を企業のWebデータ収集に貸し出す、通信量シェアの定番アプリ。紹介経由の登録で$3のウェルカムボーナス（公式ブログより）。$20たまるとPayPalなどで出金できる",
@@ -589,6 +632,12 @@ module.exports = {
       "official": "https://pawns.app/",
       "code": "20659471",
       "ref": "https://pawns.app/?r=20659471",
+      "added": "2026-10-09",
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
       "ja": {
         "gain": "共有した通信量に応じて現金",
         "note": "IPRoyal社の通信量シェアアプリ。PCアプリを入れておくと回線の空きが報酬になる。アンケートやゲームでも稼げる。$5からPayPal・ビットコインなどで出金できる",
@@ -636,6 +685,12 @@ module.exports = {
       "official": "https://minepi.com/",
       "code": "eltociear",
       "ref": "https://minepi.com/eltociear",
+      "added": "2026-10-09",
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "yes"
+      },
       "ja": {
         "gain": "PIを毎日",
         "note": "アプリで24時間に1回ボタンを押すとPIがたまる。紹介した人が増えるほど採掘ペースも上がる。2025年2月に一般公開され、OKX・Bitget・MEXCなどで取引されている",
@@ -683,6 +738,12 @@ module.exports = {
       "official": "https://www.delta.kim/",
       "code": "E7XK90P8N2AX9",
       "ref": "https://www.delta.kim/?referrer=E7XK90P8N2AX9",
+      "added": "2026-10-09",
+      "trust": {
+        "cash": "unknown",
+        "price": "no",
+        "operator": "unknown"
+      },
       "ja": {
         "gain": "KIMを毎日",
         "note": "Pi Networkに似た、スマホで毎日“採掘”する暗号資産アプリ。紹介コードを使って登録すると採掘ペースが上がるとされる",
@@ -719,6 +780,118 @@ module.exports = {
         "need": "سجّل عبر رابط الدعوة واضغط زر التعدين في التطبيق كل يوم",
         "caution": "حتى أكتوبر 2026 لم يتسنَّ التأكد من إدراجها في أي منصة تداول أو من وجود سعر سوقي، لذا ليس واضحًا إن كان يمكن تحويلها إلى نقود. يذكر بعض المستخدمين أن رصيدهم توقف عن الزيادة رغم التعدين. يتطلب إجراءً يوميًا"
       }
+    }
+  ],
+  "PICKS": [
+    {
+      "id": "honeygain",
+      "ja": "PCやスマホに入れておくだけ。$20たまるとPayPalで現金にできる",
+      "en": "Just install it on your PC or phone. Cash out via PayPal once you reach $20",
+      "zh": "装在电脑或手机上就行。攒满 $20 可通过 PayPal 提现",
+      "hi": "बस PC या फ़ोन पर इंस्टॉल कर दें। $20 होने पर PayPal से नकद निकालें",
+      "es": "Solo instálala en tu PC o móvil. Al llegar a $20 cobras por PayPal",
+      "ar": "ثبّته على الحاسوب أو الهاتف فقط. عند بلوغ ⁦$20⁩ اسحبها نقدًا عبر PayPal"
+    },
+    {
+      "id": "pawns",
+      "ja": "PCに入れておくだけ。$5から現金で出金できる",
+      "en": "Just leave it running on your PC. Cash out from $5",
+      "zh": "装在电脑上就行。满 $5 即可提现",
+      "hi": "बस PC पर चालू छोड़ दें। $5 से नकद निकालें",
+      "es": "Solo déjala funcionando en tu PC. Cobra en efectivo desde $5",
+      "ar": "اتركه يعمل على الحاسوب فقط. اسحب أرباحك نقدًا من ⁦$5⁩"
+    },
+    {
+      "id": "sweatcoin",
+      "ja": "スマホを持って歩くだけ。たまったコインは商品や割引と交換できる",
+      "en": "Just walk with your phone. Trade your coins for products and discounts",
+      "zh": "带着手机走路就行。攒下的币可兑换商品或折扣",
+      "hi": "बस फ़ोन साथ लेकर चलें। जमा सिक्कों को सामान और छूट से बदलें",
+      "es": "Solo camina con el móvil. Cambia tus monedas por productos o descuentos",
+      "ar": "احمل هاتفك وامشِ فقط. استبدل عملاتك بمنتجات أو خصومات"
+    }
+  ],
+  "NEWS": [
+    {
+      "date": "2026-10-09",
+      "ja": "「おすすめ3つ」と信頼度の表示を追加",
+      "en": "Added top 3 picks and trust indicators",
+      "zh": "新增“推荐 3 个”和可信度标识",
+      "hi": "टॉप 3 सुझाव और भरोसे के संकेत जोड़े",
+      "es": "Añadidas las 3 recomendadas y los indicadores de confianza",
+      "ar": "أضفنا أفضل 3 خيارات ومؤشرات الثقة"
+    },
+    {
+      "date": "2026-10-09",
+      "ja": "WAVEEを「海外OK」に更新",
+      "en": "WAVEE is now marked Global",
+      "zh": "WAVEE 更新为“全球”可用",
+      "hi": "WAVEE को “ग्लोबल” किया",
+      "es": "WAVEE ahora aparece como Global",
+      "ar": "صار WAVEE يحمل علامة «عالمي»"
+    },
+    {
+      "date": "2026-10-09",
+      "ja": "Delta Kimを追加",
+      "en": "Added Delta Kim",
+      "zh": "新增 Delta Kim",
+      "hi": "Delta Kim जोड़ा",
+      "es": "Añadido Delta Kim",
+      "ar": "أضفنا Delta Kim"
+    },
+    {
+      "date": "2026-10-09",
+      "ja": "Pi Networkを追加",
+      "en": "Added Pi Network",
+      "zh": "新增 Pi Network",
+      "hi": "Pi Network जोड़ा",
+      "es": "Añadido Pi Network",
+      "ar": "أضفنا Pi Network"
+    },
+    {
+      "date": "2026-10-09",
+      "ja": "Pawns.appを追加",
+      "en": "Added Pawns.app",
+      "zh": "新增 Pawns.app",
+      "hi": "Pawns.app जोड़ा",
+      "es": "Añadido Pawns.app",
+      "ar": "أضفنا Pawns.app"
+    },
+    {
+      "date": "2026-10-09",
+      "ja": "Sweatcoinを追加",
+      "en": "Added Sweatcoin",
+      "zh": "新增 Sweatcoin",
+      "hi": "Sweatcoin जोड़ा",
+      "es": "Añadido Sweatcoin",
+      "ar": "أضفنا Sweatcoin"
+    },
+    {
+      "date": "2026-10-08",
+      "ja": "デザインを一新",
+      "en": "Redesigned the site",
+      "zh": "网站改版",
+      "hi": "साइट का नया डिज़ाइन",
+      "es": "Nuevo diseño del sitio",
+      "ar": "تصميم جديد للموقع"
+    },
+    {
+      "date": "2026-10-08",
+      "ja": "Honeygainを追加",
+      "en": "Added Honeygain",
+      "zh": "新增 Honeygain",
+      "hi": "Honeygain जोड़ा",
+      "es": "Añadido Honeygain",
+      "ar": "أضفنا Honeygain"
+    },
+    {
+      "date": "2026-10-08",
+      "ja": "Grassを追加",
+      "en": "Added Grass",
+      "zh": "新增 Grass",
+      "hi": "Grass जोड़ा",
+      "es": "Añadido Grass",
+      "ar": "أضفنا Grass"
     }
   ],
   "CATS": {
@@ -866,7 +1039,22 @@ module.exports = {
       "share": "シェア",
       "sleepL": "このページを開いて",
       "sleepS": "ほったらかしアプリなら、この間もずっと裏で動いています",
-      "badgeMax": "ほったらかし度MAX"
+      "badgeMax": "ほったらかし度MAX",
+      "picksH": "まず入れるならこの3つ",
+      "picksSub": "手間が少なく、海外からも使えて、ちゃんと交換できるものから選びました。",
+      "pickMore": "くわしく見る",
+      "trustLabel": "信頼の目安",
+      "trustCash": "換金",
+      "trustPrice": "市場価格",
+      "trustOp": "運営元",
+      "trustCashD": "換金（現金にできるか）",
+      "trustPriceD": "市場価格（トークンに値段がついているか）",
+      "trustOpD": "運営元公開（運営元が公開されているか）",
+      "tYes": "あり",
+      "tPartial": "条件つき",
+      "tNo": "なし",
+      "tUnknown": "未確認",
+      "newsH": "新着・更新履歴"
     },
     "en": {
       "brand": "Paid While You <span>Sleep</span>",
@@ -956,7 +1144,22 @@ module.exports = {
       "share": "Share",
       "sleepL": "Time on this page",
       "sleepS": "Passive apps keep running in the background the whole time",
-      "badgeMax": "Set & forget"
+      "badgeMax": "Set & forget",
+      "picksH": "Start with these 3",
+      "picksSub": "Picked for low effort, working outside Japan, and a real way to cash out or redeem.",
+      "pickMore": "See details",
+      "trustLabel": "Trust check",
+      "trustCash": "Cash",
+      "trustPrice": "Price",
+      "trustOp": "Operator",
+      "trustCashD": "Cash out (can it become real money)",
+      "trustPriceD": "Market price (does the token trade at a price)",
+      "trustOpD": "Operator (is the company behind it public)",
+      "tYes": "Yes",
+      "tPartial": "With conditions",
+      "tNo": "No",
+      "tUnknown": "Unverified",
+      "newsH": "What’s new"
     },
     "hi": {
       "brand": "सोते हुए भी <span>कमाई</span>",
@@ -1046,7 +1249,22 @@ module.exports = {
       "share": "शेयर करें",
       "sleepL": "इस पेज पर बिताया समय",
       "sleepS": "पैसिव ऐप्स इस पूरे समय बैकग्राउंड में चलते रहते हैं",
-      "badgeMax": "सेट करो, भूल जाओ"
+      "badgeMax": "सेट करो, भूल जाओ",
+      "picksH": "शुरुआत इन 3 से करें",
+      "picksSub": "कम मेहनत वाली, जापान के बाहर भी चलने वाली और सच में भुनाई जा सकने वाली सेवाएँ चुनी हैं।",
+      "pickMore": "विवरण देखें",
+      "trustLabel": "भरोसे के संकेत",
+      "trustCash": "नकदी",
+      "trustPrice": "बाज़ार भाव",
+      "trustOp": "संचालक",
+      "trustCashD": "नकदी (क्या इसे पैसे में बदल सकते हैं)",
+      "trustPriceD": "बाज़ार भाव (क्या टोकन का बाज़ार में दाम है)",
+      "trustOpD": "संचालक (क्या चलाने वाली कंपनी सार्वजनिक है)",
+      "tYes": "हाँ",
+      "tPartial": "शर्तों के साथ",
+      "tNo": "नहीं",
+      "tUnknown": "अपुष्ट",
+      "newsH": "नया क्या है"
     },
     "zh": {
       "brand": "躺着也<span>到账</span>",
@@ -1136,7 +1354,22 @@ module.exports = {
       "share": "分享",
       "sleepL": "打开本页已过",
       "sleepS": "躺赚应用在这段时间里也一直在后台运行",
-      "badgeMax": "最省心"
+      "badgeMax": "最省心",
+      "picksH": "先装这 3 个",
+      "picksSub": "按省事、海外可用、能真正兑换这三点挑选。",
+      "pickMore": "查看详情",
+      "trustLabel": "可信度参考",
+      "trustCash": "变现",
+      "trustPrice": "市价",
+      "trustOp": "运营方",
+      "trustCashD": "变现（能否换成现金）",
+      "trustPriceD": "市价（代币是否有市场价格）",
+      "trustOpD": "运营方公开（是否公开运营公司）",
+      "tYes": "有",
+      "tPartial": "有条件",
+      "tNo": "无",
+      "tUnknown": "未确认",
+      "newsH": "最新动态"
     },
     "es": {
       "brand": "Cobra mientras <span>duermes</span>",
@@ -1226,7 +1459,22 @@ module.exports = {
       "share": "Compartir",
       "sleepL": "Tiempo en esta página",
       "sleepS": "Las apps pasivas siguen funcionando en segundo plano todo este rato",
-      "badgeMax": "Instalar y olvidar"
+      "badgeMax": "Instalar y olvidar",
+      "picksH": "Empieza por estas 3",
+      "picksSub": "Elegidas por exigir poco esfuerzo, funcionar fuera de Japón y permitir canjear de verdad.",
+      "pickMore": "Ver detalles",
+      "trustLabel": "Confianza",
+      "trustCash": "Cobro",
+      "trustPrice": "Precio",
+      "trustOp": "Operador",
+      "trustCashD": "Cobro (se puede pasar a dinero)",
+      "trustPriceD": "Precio de mercado (el token cotiza)",
+      "trustOpD": "Operador (se sabe quién lo gestiona)",
+      "tYes": "Sí",
+      "tPartial": "Con condiciones",
+      "tNo": "No",
+      "tUnknown": "Sin confirmar",
+      "newsH": "Novedades"
     },
     "ar": {
       "brand": "دخل وأنت <span>نائم</span>",
@@ -1316,7 +1564,22 @@ module.exports = {
       "share": "مشاركة",
       "sleepL": "الوقت على هذه الصفحة",
       "sleepS": "التطبيقات السلبية تواصل العمل في الخلفية طوال هذا الوقت",
-      "badgeMax": "ثبّت وانسَ"
+      "badgeMax": "ثبّت وانسَ",
+      "picksH": "ابدأ بهذه الثلاثة",
+      "picksSub": "اخترناها لأنها لا تحتاج جهدًا كبيرًا، وتعمل خارج اليابان، ويمكن صرفها أو استبدالها فعلًا.",
+      "pickMore": "عرض التفاصيل",
+      "trustLabel": "مؤشرات الثقة",
+      "trustCash": "صرف نقدي",
+      "trustPrice": "سعر السوق",
+      "trustOp": "المشغّل",
+      "trustCashD": "صرف نقدي (هل يمكن تحويله إلى نقود)",
+      "trustPriceD": "سعر السوق (هل للرمز سعر متداول)",
+      "trustOpD": "المشغّل (هل الجهة المشغّلة معلنة)",
+      "tYes": "نعم",
+      "tPartial": "بشروط",
+      "tNo": "لا",
+      "tUnknown": "غير مؤكد",
+      "newsH": "آخر التحديثات"
     }
   }
 };

@@ -1,7 +1,7 @@
 // 使い方: node build.js  →  public/ に en(/), ja(/ja/), hi(/hi/), sitemap.xml, robots.txt を生成
 const fs = require('fs');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, CATS, T } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T } = require('./src/data.js');
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
@@ -32,15 +32,40 @@ function meter(n) {
   return `<span class="meter" role="img" aria-label="${n}/5">${h}</span>`;
 }
 
+// 信頼の目安（換金・市場価格・運営元）。na は暗号資産でないので出さない
+const SYM = { yes: '✓', partial: '△', no: '✗', unknown: '?' };
+const TV = { yes: 'tYes', partial: 'tPartial', no: 'tNo', unknown: 'tUnknown' };
+const colon = l => (l === 'ja' || l === 'zh' ? '：' : ': ');
+function trust(s, lang) {
+  if (!s.trust) return '';
+  const L = T[lang];
+  const items = [['cash', 'trustCash'], ['price', 'trustPrice'], ['operator', 'trustOp']]
+    .filter(([k]) => s.trust[k] && s.trust[k] !== 'na')
+    .map(([k, t]) => {
+      const v = s.trust[k], mean = L[t + 'D'] + colon(lang) + L[TV[v]];
+      return `<li class="t-${v}" title="${esc(mean)}"><span aria-hidden="true">${esc(L[t])}</span><b aria-hidden="true">${SYM[v]}</b><span class="vh">${esc(mean)}</span></li>`;
+    });
+  return `<ul class="trust" aria-label="${esc(L.trustLabel)}">${items.join('')}</ul>`;
+}
+function trustLegend(lang) {
+  const L = T[lang];
+  return `<span class="tr-leg"><span>${esc(L.trustLabel)}</span>${Object.keys(SYM).map(v => `<span><b class="t-${v}">${SYM[v]}</b> ${esc(L[TV[v]])}</span>`).join('')}</span>`;
+}
+
+// 追加から14日以内なら NEW
+const NEW_MS = 14 * 864e5;
+const isNew = s => s.added && Date.now() - Date.parse(s.added) < NEW_MS;
+
 function card(s, lang) {
   const L = T[lang];
   const d = s[lang] || s.en;
   const name = lang === 'ja' ? s.name : s.nameEn || s.name;
   const has = !!s.code; // 紹介リンクがあるものはコード欄・コピーボタンを出さない
-  return `<article class="svc" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags">${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div>
+  return `<article class="svc" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
+<div class="svc-top"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div>
 <p class="gain">${esc(d.gain)}<small>${esc(d.note)}</small></p>
 <dl><dt>${esc(L.need)}</dt><dd>${esc(d.need)}</dd><dt>${esc(L.ease)}</dt><dd>${meter(s.ease)}</dd><dt>${esc(L.region)}</dt><dd><span class="region">${esc(s.global ? L.global : L.jp)}</span></dd></dl>
+${trust(s, lang)}
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
 <div class="slip">${s.ref ? '' : `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot">${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>`}<a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener sponsored">${esc(s.ref ? L.goRef : L.goOff)}</a></div>
 </article>`;
@@ -52,6 +77,24 @@ function tape(lang) {
     const d = s[lang] || s.en;
     return `<span><b>${esc(lang === 'ja' ? s.name : s.nameEn || s.name)}</b>${esc(d.gain)}</span>`;
   }).join('');
+}
+
+// まず入れるならこの3つ（紹介リンクがあるものだけ）
+function picks(lang) {
+  const L = T[lang];
+  return PICKS.map(p => [p, live.find(s => s.id === p.id)]).filter(([, s]) => s).map(([p, s], i) => {
+    const name = lang === 'ja' ? s.name : s.nameEn || s.name;
+    return `<article class="pick"><div class="pick-top"><span class="rank dot">${i + 1}</span><div><span class="cat">${esc(CATS[lang][s.cat])}</span><h3>${esc(name)}</h3></div></div>
+<p>${esc(p[lang] || p.en)}</p>
+<a class="btn solid" href="${esc(s.ref)}" target="_blank" rel="noopener sponsored">${esc(L.goRef)}</a>
+<a class="more" href="#svc-${s.id}">${esc(L.pickMore)} ↓</a>
+</article>`;
+  }).join('\n');
+}
+
+// 新着・更新履歴（新しい順に8件）
+function news(lang) {
+  return NEWS.slice(0, 8).map(n => `<li><time class="dot" datetime="${n.date}">${n.date.replace(/-/g, '.')}</time><span>${esc(n[lang] || n.en)}</span></li>`).join('');
 }
 
 // 言語ごとによく使われる SNS を先に並べる
@@ -172,6 +215,9 @@ for (const lang of LANGS) {
     statLoop: live.filter(s => s.type === 'loop').length,
     statGlobal: live.filter(s => s.global).length,
     tape: tape(lang),
+    picks: picks(lang),
+    trustLegend: trustLegend(lang),
+    news: news(lang),
     shareBtns: shareBtns(lang),
     script: clientScript(lang),
   };

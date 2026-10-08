@@ -32,7 +32,7 @@
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
 :root{
   --paper:#EAF0EE; --surface:#F7FAF9; --ink:#18213B; --muted:#56627A; --line:#C3D0CD;
-  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3;
+  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B;
   --f-display:"Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
   --f-body:"Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
   --f-dot:"DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
@@ -40,10 +40,10 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}}
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -57,6 +57,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;li
 p{margin:0}
 .dot{font-family:var(--f-dot);font-variant-numeric:tabular-nums}
 .label{font-size:var(--s4);letter-spacing:.12em;color:var(--muted)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 section[id],header[id]{scroll-margin-top:72px}
 
 /* top bar */
@@ -84,14 +85,14 @@ section[id],header[id]{scroll-margin-top:72px}
 html[lang="en"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
 html[lang="hi"]{--f-display:"Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
 html[lang="hi"] body{line-height:1.9}
-html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3{font-weight:700}
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3,html[lang="hi"] .pick h3{font-weight:700}
 html[lang="hi"] .hero h1{font-size:clamp(2rem,5.4vw,3.6rem);line-height:1.35}
 html[lang="es"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
 html[lang="zh-Hans"]{--f-display:"Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"Noto Sans SC",system-ui,sans-serif}
-html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3{font-weight:900}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3,html[lang="zh-Hans"] .pick h3{font-weight:900}
 html[lang="ar"]{--f-display:"Noto Kufi Arabic",sans-serif;--f-body:"Noto Sans Arabic",system-ui,sans-serif}
 html[lang="ar"] body{line-height:1.95}
-html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3{font-weight:700}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3,html[lang="ar"] .pick h3{font-weight:700}
 html[lang="ar"] .hero h1{font-size:clamp(2rem,5.2vw,3.5rem);line-height:1.45}
 html[lang="ar"] .book{transform:rotate(1.2deg)}
 html[lang="ar"] .hanko{transform:rotate(-14deg)}
@@ -272,6 +273,43 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .slip .btn.solid:hover::after{transform:translateX(4px)}
 [dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
 
+/* trust chips / NEW badge */
+.trust{display:flex;flex-wrap:wrap;gap:5px;margin:0;padding:0;list-style:none}
+.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust b,.tr-leg b{font-weight:700}
+.t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
+.tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
+.tr-leg>span:first-child{color:var(--ink);font-weight:700}
+.new{font-size:.68rem;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:999px;background:var(--stamp);color:#fff;white-space:nowrap}
+.svc{scroll-margin-top:72px}
+.svc .tags{flex:0 1 auto;flex-wrap:wrap;justify-content:flex-end;row-gap:4px}
+.svc-top h3{flex:1 1 auto;min-width:8em}
+
+/* top picks */
+#picks{position:relative;z-index:1}
+.picks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pick{display:flex;flex-direction:column;gap:12px;min-width:0;padding:18px;border-radius:12px;color:#EEF1FF;border:1px solid rgba(255,214,107,.6);
+  background:radial-gradient(90% 80% at 100% 0%,#3B2A86,transparent 62%),linear-gradient(160deg,#0A0F24,#16205A);
+  box-shadow:0 0 0 3px rgba(255,214,107,.08),0 16px 40px -20px rgba(255,190,80,.6)}
+.pick-top{display:flex;align-items:center;gap:14px}
+.pick-top>div{min-width:0}
+.rank{flex:none;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;border:2px solid #FFD66B;color:#FFD66B;font-size:1.9rem;line-height:1;
+  text-shadow:0 0 14px rgba(255,214,107,.6);box-shadow:inset 0 0 16px rgba(255,214,107,.18)}
+.pick .cat{color:#A9B2D8}
+.pick h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:1.3rem;line-height:1.3;color:#fff}
+.pick p{font-size:.9rem;color:#C9D0EE;line-height:1.65}
+.pick .btn.solid{margin-top:auto;background:#FFD66B;color:#141A3A;padding-block:10px;gap:8px;white-space:normal;text-align:center}
+.pick .btn.solid::after{content:"→"}
+[dir="rtl"] .pick .btn.solid::after{content:"←"}
+.pick .btn.solid:hover{background:#FFE59A}
+.pick .more{font-size:.8rem;color:#A9B2D8;text-align:center;text-underline-offset:3px}
+.pick .more:hover{color:#fff}
+
+/* news */
+.news{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);max-width:44em}
+.news li{display:flex;gap:16px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
+.news time{flex:none;font-size:.85rem;color:var(--muted)}
+
 /* share */
 .share{position:relative;overflow:hidden;border-radius:16px;padding:clamp(22px,4vw,36px);color:#EEF1FF;
   background:radial-gradient(80% 120% at 100% 0%,#3B2A86,transparent 60%),linear-gradient(135deg,#0A0F24,#16205A)}
@@ -284,6 +322,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .share-btns .btn:hover{filter:brightness(1.12)}
 
 @media (max-width:760px){
+  .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
   .ledger table{min-width:300px}
@@ -353,6 +392,26 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 
 <div class="wrap">
 
+<section id="picks">
+  <div class="sec-head"><h2>Start with these 3</h2><span class="label">TOP 3</span></div>
+  <p class="intro">Picked for low effort, working outside Japan, and a real way to cash out or redeem.</p>
+  <div class="picks"><article class="pick"><div class="pick-top"><span class="rank dot">1</span><div><span class="cat">Passive apps</span><h3>Honeygain</h3></div></div>
+<p>Just install it on your PC or phone. Cash out via PayPal once you reach $20</p>
+<a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">Sign up with referral</a>
+<a class="more" href="#svc-honeygain">See details ↓</a>
+</article>
+<article class="pick"><div class="pick-top"><span class="rank dot">2</span><div><span class="cat">Passive apps</span><h3>Pawns.app</h3></div></div>
+<p>Just leave it running on your PC. Cash out from $5</p>
+<a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">Sign up with referral</a>
+<a class="more" href="#svc-pawns">See details ↓</a>
+</article>
+<article class="pick"><div class="pick-top"><span class="rank dot">3</span><div><span class="cat">Passive apps</span><h3>Sweatcoin</h3></div></div>
+<p>Just walk with your phone. Trade your coins for products and discounts</p>
+<a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">Sign up with referral</a>
+<a class="more" href="#svc-sweatcoin">See details ↓</a>
+</article></div>
+</section>
+
 <section id="list">
   <div class="sec-head"><h2>Services</h2><span class="label">REFERRAL LIST</span></div>
   <div class="tools">
@@ -363,85 +422,102 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <span><span class="type loop">Recurring</span>&nbsp; <span>Pays out again and again after you sign up</span></span>
     <span><span class="type once">One-time</span>&nbsp; <span>A one-time bonus for joining via referral</span></span>
     <span><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i></span>&nbsp; <span>Ease (our own rating)</span></span>
+    <span class="tr-leg"><span>Trust check</span><span><b class="t-yes">✓</b> Yes</span><span><b class="t-partial">△</b> With conditions</span><span><b class="t-no">✗</b> No</span><span><b class="t-unknown">?</b> Unverified</span></span>
   </div>
   <p class="count" id="count" aria-live="polite">11 services shown</p>
-  <div class="grid" id="grid"><article class="svc" data-cat="crypto-bi" data-type="loop">
+  <div class="grid" id="grid"><article class="svc" id="svc-gooddollar" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><h3><span class="cat">Crypto UBI</span>GoodDollar</h3><div class="tags"><span class="type loop">Recurring</span></div></div>
 <p class="gain">G$ tokens every day<small>A nonprofit UBI protocol. Claim once every 24 hours; each day's pool is split among everyone who claims</small></p>
 <dl><dt>To get it</dt><dd>Face verification in the app</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-yes" title="Market price (does the token trade at a price): Yes"><span aria-hidden="true">Price</span><b aria-hidden="true">✓</b><span class="vh">Market price (does the token trade at a price): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul>
 <p class="caution">Note: A security incident in May 2026 put its reserve under review. The daily amount is very small</p>
 <div class="slip"><a class="btn solid" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
+<article class="svc" id="svc-mepass" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><h3><span class="cat">Crypto UBI</span>ME Pass</h3><div class="tags"><span class="type loop">Recurring</span></div></div>
 <p class="gain">MEC tokens every day<small>Meta Earth's wallet app. Verified users get 1 MEC as an “unconditional basic income”, plus small daily check-in rewards</small></p>
 <dl><dt>To get it</dt><dd>Sign up via the invite link and complete KYC in the app</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-no" title="Market price (does the token trade at a price): No"><span aria-hidden="true">Price</span><b aria-hidden="true">✗</b><span class="vh">Market price (does the token trade at a price): No</span></li><li class="t-unknown" title="Operator (is the company behind it public): Unverified"><span aria-hidden="true">Operator</span><b aria-hidden="true">?</b><span class="vh">Operator (is the company behind it public): Unverified</span></li></ul>
 <p class="caution">Note: As of Oct 2026, MEC is not listed on any exchange and has no market price. Cashing out is peer-to-peer only</p>
 <div class="slip"><a class="btn solid" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
+<article class="svc" id="svc-biomatrix" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><h3><span class="cat">Crypto UBI</span>BioMatrix</h3><div class="tags"><span class="type loop">Recurring</span></div></div>
 <p class="gain">PoY tokens every month<small>A UBI token that promises monthly payouts for 60 years. Signing up with a referral code gives a 5-token bonus (as of Jan 2026). Earlier sign-ups get larger allocations</small></p>
 <dl><dt>To get it</dt><dd>Verify with biometrics in the app, then claim each month</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-unknown" title="Cash out (can it become real money): Unverified"><span aria-hidden="true">Cash</span><b aria-hidden="true">?</b><span class="vh">Cash out (can it become real money): Unverified</span></li><li class="t-unknown" title="Market price (does the token trade at a price): Unverified"><span aria-hidden="true">Price</span><b aria-hidden="true">?</b><span class="vh">Market price (does the token trade at a price): Unverified</span></li><li class="t-unknown" title="Operator (is the company behind it public): Unverified"><span aria-hidden="true">Operator</span><b aria-hidden="true">?</b><span class="vh">Operator (is the company behind it public): Unverified</span></li></ul>
 <p class="caution">Note: We could not confirm a market price for PoY. Make sure you are comfortable with how it handles biometric data</p>
 <div class="slip"><a class="btn solid" href="https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&amp;af_dp=biomatrix%3A%2F%2F&amp;deep_link_sub1=C66SPN" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="pointsite" data-type="once">
+<article class="svc" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><h3><span class="cat">Cashback sites</span>Hapitas</h3><div class="tags"><span class="type once">One-time</span></div></div>
 <p class="gain">Up to 2,300 points<small>October 2026 offer (1 point = ¥1). 100 for logging in 3 days in a row, 1,000 once you earn 3,000 through offers, and more</small></p>
 <dl><dt>To get it</dt><dd>Join via referral by Oct 31 and meet the conditions by Nov 30</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>Region</dt><dd><span class="region">Japan only</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-yes" title="Cash out (can it become real money): Yes"><span aria-hidden="true">Cash</span><b aria-hidden="true">✓</b><span class="vh">Cash out (can it become real money): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul>
 
 <div class="slip"><a class="btn solid" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="career" data-type="loop">
+<article class="svc" id="svc-wavee" data-cat="career" data-type="loop">
 <div class="svc-top"><h3><span class="cat">Job matching</span>WAVEE</h3><div class="tags"><span class="type loop">Recurring</span></div></div>
 <p class="gain">A matching reward each time you land a job<small>Invite-only job matching. Every time someone you invited (or someone they invited) lands a job, you earn a referral share again and again (7.5–15%). DMM, GMO Pepabo and others post jobs</small></p>
 <dl><dt>To get it</dt><dd>Sign up via the invite link</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul>
 <p class="caution">Note: You earn when a job is matched. Rates are from the official note of June 2024</p>
 <div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Passive apps</span>Sweatcoin</h3><div class="tags"><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div>
+<article class="svc" id="svc-sweatcoin" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Passive apps</span>Sweatcoin</h3><div class="tags"><span class="new">NEW</span><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div>
 <p class="gain">0.95 coins per 1,000 steps<small>Carry your phone and your steps turn into coins automatically. Spend them in the in-app marketplace on products, discounts or donations</small></p>
 <dl><dt>To get it</dt><dd>Install the app and allow access to steps and location</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul>
 <p class="caution">Note: There is no fixed cash conversion rate. The free plan caps how many steps convert each day</p>
 <div class="slip"><a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Passive apps</span>Grass</h3><div class="tags"><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div>
+<article class="svc" id="svc-grass" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Passive apps</span>Grass</h3><div class="tags"><span class="new">NEW</span><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div>
 <p class="gain">Points (later GRASS tokens)<small>A DePIN that rents out your unused bandwidth for AI web scraping. Keep the browser extension or app running and earn points for uptime and bandwidth actually used, paid out through seasonal airdrops</small></p>
 <dl><dt>To get it</dt><dd>Sign up with email, install the extension or app, and stay connected</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-yes" title="Market price (does the token trade at a price): Yes"><span aria-hidden="true">Price</span><b aria-hidden="true">✓</b><span class="vh">Market price (does the token trade at a price): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul>
 <p class="caution">Note: Your IP address is used by others for data collection. Rewards depend on airdrops, so amount and timing are unpredictable</p>
 <div class="slip"><a class="btn solid" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Passive apps</span>Honeygain</h3><div class="tags"><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div>
+<article class="svc" id="svc-honeygain" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Passive apps</span>Honeygain</h3><div class="tags"><span class="new">NEW</span><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div>
 <p class="gain">Cash for the traffic you share<small>The best-known bandwidth-sharing app: it rents your unused connection to businesses for web data collection. Signing up via a referral gives a $3 welcome bonus (per the official blog). Cash out via PayPal and more once you reach $20</small></p>
 <dl><dt>To get it</dt><dd>Sign up with email, install the app on your PC or phone, and leave it running</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-yes" title="Cash out (can it become real money): Yes"><span aria-hidden="true">Cash</span><b aria-hidden="true">✓</b><span class="vh">Cash out (can it become real money): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul>
 <p class="caution">Note: Your IP address is used by others for data collection. Earnings depend on demand in your region and can be very low in some areas</p>
 <div class="slip"><a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Passive apps</span>Pawns.app</h3><div class="tags"><span class="type loop">Recurring</span></div></div>
+<article class="svc" id="svc-pawns" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Passive apps</span>Pawns.app</h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div>
 <p class="gain">Cash for the traffic you share<small>IPRoyal’s bandwidth-sharing app. Leave the desktop app running and your spare connection earns money. Surveys and games pay too. Cash out from $5 via PayPal, Bitcoin and more</small></p>
 <dl><dt>To get it</dt><dd>Sign up with email, install the desktop app and leave it running</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-yes" title="Cash out (can it become real money): Yes"><span aria-hidden="true">Cash</span><b aria-hidden="true">✓</b><span class="vh">Cash out (can it become real money): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul>
 <p class="caution">Note: Mobile bandwidth sharing ended in April 2026, so passive earning is desktop only. Your IP address is used by others for data collection, and payouts are small</p>
 <div class="slip"><a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Crypto UBI</span>Pi Network</h3><div class="tags"><span class="type loop">Recurring</span></div></div>
+<article class="svc" id="svc-pinetwork" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Crypto UBI</span>Pi Network</h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div>
 <p class="gain">PI every day<small>Tap a button in the app once every 24 hours to earn PI. The more people you refer, the faster you mine. Opened to the public in February 2025 and trades on OKX, Bitget, MEXC and others</small></p>
 <dl><dt>To get it</dt><dd>Sign up via the invite link (invite code: eltociear). To move your PI you need identity verification and migration to the mainnet wallet</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-yes" title="Market price (does the token trade at a price): Yes"><span aria-hidden="true">Price</span><b aria-hidden="true">✓</b><span class="vh">Market price (does the token trade at a price): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul>
 <p class="caution">Note: The price is down about 97% from its 2025 high of $2.99 (about $0.08 as of October 2026). Not listed on Binance, Coinbase or Japanese exchanges. Needs a daily tap, so it won’t build up if you leave it alone</p>
 <div class="slip"><a class="btn solid" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Crypto UBI</span>Delta Kim</h3><div class="tags"><span class="type loop">Recurring</span></div></div>
+<article class="svc" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Crypto UBI</span>Delta Kim</h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div>
 <p class="gain">KIM every day<small>A crypto app similar to Pi Network where you “mine” daily on your phone. Signing up with a referral code is said to boost your mining rate</small></p>
 <dl><dt>To get it</dt><dd>Sign up via the invite link and tap the mining button in the app every day</dd><dt>Ease</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>Region</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Trust check"><li class="t-unknown" title="Cash out (can it become real money): Unverified"><span aria-hidden="true">Cash</span><b aria-hidden="true">?</b><span class="vh">Cash out (can it become real money): Unverified</span></li><li class="t-no" title="Market price (does the token trade at a price): No"><span aria-hidden="true">Price</span><b aria-hidden="true">✗</b><span class="vh">Market price (does the token trade at a price): No</span></li><li class="t-unknown" title="Operator (is the company behind it public): Unverified"><span aria-hidden="true">Operator</span><b aria-hidden="true">?</b><span class="vh">Operator (is the company behind it public): Unverified</span></li></ul>
 <p class="caution">Note: As of October 2026, no exchange listing or market price could be confirmed, so it’s unclear whether KIM can be cashed out. Some users report their balance stopped growing despite mining. Needs daily action</p>
 <div class="slip"><a class="btn solid" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article><p class="empty-state" id="empty" hidden>No services match these filters.</p></div>
+</section>
+
+<section id="news">
+  <div class="sec-head"><h2>What’s new</h2><span class="label">UPDATES</span></div>
+  <ol class="news"><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Added top 3 picks and trust indicators</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>WAVEE is now marked Global</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Added Delta Kim</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Added Pi Network</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Added Pawns.app</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Added Sweatcoin</span></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><span>Redesigned the site</span></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><span>Added Honeygain</span></li></ol>
 </section>
 
 <section id="share">

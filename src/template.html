@@ -6,7 +6,7 @@
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
 :root{
   --paper:#EAF0EE; --surface:#F7FAF9; --ink:#18213B; --muted:#56627A; --line:#C3D0CD;
-  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3;
+  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B;
   --f-display:"Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
   --f-body:"Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
   --f-dot:"DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
@@ -14,10 +14,10 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}}
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -31,6 +31,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;li
 p{margin:0}
 .dot{font-family:var(--f-dot);font-variant-numeric:tabular-nums}
 .label{font-size:var(--s4);letter-spacing:.12em;color:var(--muted)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 section[id],header[id]{scroll-margin-top:72px}
 
 /* top bar */
@@ -58,14 +59,14 @@ section[id],header[id]{scroll-margin-top:72px}
 html[lang="en"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
 html[lang="hi"]{--f-display:"Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
 html[lang="hi"] body{line-height:1.9}
-html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3{font-weight:700}
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3,html[lang="hi"] .pick h3{font-weight:700}
 html[lang="hi"] .hero h1{font-size:clamp(2rem,5.4vw,3.6rem);line-height:1.35}
 html[lang="es"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
 html[lang="zh-Hans"]{--f-display:"Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"Noto Sans SC",system-ui,sans-serif}
-html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3{font-weight:900}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3,html[lang="zh-Hans"] .pick h3{font-weight:900}
 html[lang="ar"]{--f-display:"Noto Kufi Arabic",sans-serif;--f-body:"Noto Sans Arabic",system-ui,sans-serif}
 html[lang="ar"] body{line-height:1.95}
-html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3{font-weight:700}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3,html[lang="ar"] .pick h3{font-weight:700}
 html[lang="ar"] .hero h1{font-size:clamp(2rem,5.2vw,3.5rem);line-height:1.45}
 html[lang="ar"] .book{transform:rotate(1.2deg)}
 html[lang="ar"] .hanko{transform:rotate(-14deg)}
@@ -246,6 +247,43 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .slip .btn.solid:hover::after{transform:translateX(4px)}
 [dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
 
+/* trust chips / NEW badge */
+.trust{display:flex;flex-wrap:wrap;gap:5px;margin:0;padding:0;list-style:none}
+.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust b,.tr-leg b{font-weight:700}
+.t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
+.tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
+.tr-leg>span:first-child{color:var(--ink);font-weight:700}
+.new{font-size:.68rem;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:999px;background:var(--stamp);color:#fff;white-space:nowrap}
+.svc{scroll-margin-top:72px}
+.svc .tags{flex:0 1 auto;flex-wrap:wrap;justify-content:flex-end;row-gap:4px}
+.svc-top h3{flex:1 1 auto;min-width:8em}
+
+/* top picks */
+#picks{position:relative;z-index:1}
+.picks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pick{display:flex;flex-direction:column;gap:12px;min-width:0;padding:18px;border-radius:12px;color:#EEF1FF;border:1px solid rgba(255,214,107,.6);
+  background:radial-gradient(90% 80% at 100% 0%,#3B2A86,transparent 62%),linear-gradient(160deg,#0A0F24,#16205A);
+  box-shadow:0 0 0 3px rgba(255,214,107,.08),0 16px 40px -20px rgba(255,190,80,.6)}
+.pick-top{display:flex;align-items:center;gap:14px}
+.pick-top>div{min-width:0}
+.rank{flex:none;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;border:2px solid #FFD66B;color:#FFD66B;font-size:1.9rem;line-height:1;
+  text-shadow:0 0 14px rgba(255,214,107,.6);box-shadow:inset 0 0 16px rgba(255,214,107,.18)}
+.pick .cat{color:#A9B2D8}
+.pick h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:1.3rem;line-height:1.3;color:#fff}
+.pick p{font-size:.9rem;color:#C9D0EE;line-height:1.65}
+.pick .btn.solid{margin-top:auto;background:#FFD66B;color:#141A3A;padding-block:10px;gap:8px;white-space:normal;text-align:center}
+.pick .btn.solid::after{content:"→"}
+[dir="rtl"] .pick .btn.solid::after{content:"←"}
+.pick .btn.solid:hover{background:#FFE59A}
+.pick .more{font-size:.8rem;color:#A9B2D8;text-align:center;text-underline-offset:3px}
+.pick .more:hover{color:#fff}
+
+/* news */
+.news{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);max-width:44em}
+.news li{display:flex;gap:16px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
+.news time{flex:none;font-size:.85rem;color:var(--muted)}
+
 /* share */
 .share{position:relative;overflow:hidden;border-radius:16px;padding:clamp(22px,4vw,36px);color:#EEF1FF;
   background:radial-gradient(80% 120% at 100% 0%,#3B2A86,transparent 60%),linear-gradient(135deg,#0A0F24,#16205A)}
@@ -258,6 +296,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .share-btns .btn:hover{filter:brightness(1.12)}
 
 @media (max-width:760px){
+  .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
   .ledger table{min-width:300px}
@@ -326,6 +365,12 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 
 <div class="wrap">
 
+<section id="picks">
+  <div class="sec-head"><h2>{{t.picksH}}</h2><span class="label">TOP 3</span></div>
+  <p class="intro">{{t.picksSub}}</p>
+  <div class="picks">{{picks}}</div>
+</section>
+
 <section id="list">
   <div class="sec-head"><h2>{{t.listH}}</h2><span class="label">REFERRAL LIST</span></div>
   <div class="tools">
@@ -336,9 +381,15 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <span><span class="type loop">{{t.tagLoop}}</span>&nbsp; <span>{{t.legLoop}}</span></span>
     <span><span class="type once">{{t.tagOnce}}</span>&nbsp; <span>{{t.legOnce}}</span></span>
     <span><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i></span>&nbsp; <span>{{t.legEase}}</span></span>
+    {{trustLegend}}
   </div>
   <p class="count" id="count" aria-live="polite">{{count}}</p>
   <div class="grid" id="grid">{{cards}}<p class="empty-state" id="empty" hidden>{{t.none}}</p></div>
+</section>
+
+<section id="news">
+  <div class="sec-head"><h2>{{t.newsH}}</h2><span class="label">UPDATES</span></div>
+  <ol class="news">{{news}}</ol>
 </section>
 
 <section id="share">

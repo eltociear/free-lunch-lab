@@ -32,7 +32,7 @@
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
 :root{
   --paper:#EAF0EE; --surface:#F7FAF9; --ink:#18213B; --muted:#56627A; --line:#C3D0CD;
-  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3;
+  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B;
   --f-display:"Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
   --f-body:"Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
   --f-dot:"DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
@@ -40,10 +40,10 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}}
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -57,6 +57,7 @@ h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;li
 p{margin:0}
 .dot{font-family:var(--f-dot);font-variant-numeric:tabular-nums}
 .label{font-size:var(--s4);letter-spacing:.12em;color:var(--muted)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 section[id],header[id]{scroll-margin-top:72px}
 
 /* top bar */
@@ -84,14 +85,14 @@ section[id],header[id]{scroll-margin-top:72px}
 html[lang="en"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
 html[lang="hi"]{--f-display:"Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
 html[lang="hi"] body{line-height:1.9}
-html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3{font-weight:700}
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3,html[lang="hi"] .pick h3{font-weight:700}
 html[lang="hi"] .hero h1{font-size:clamp(2rem,5.4vw,3.6rem);line-height:1.35}
 html[lang="es"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
 html[lang="zh-Hans"]{--f-display:"Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"Noto Sans SC",system-ui,sans-serif}
-html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3{font-weight:900}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3,html[lang="zh-Hans"] .pick h3{font-weight:900}
 html[lang="ar"]{--f-display:"Noto Kufi Arabic",sans-serif;--f-body:"Noto Sans Arabic",system-ui,sans-serif}
 html[lang="ar"] body{line-height:1.95}
-html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3{font-weight:700}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3,html[lang="ar"] .pick h3{font-weight:700}
 html[lang="ar"] .hero h1{font-size:clamp(2rem,5.2vw,3.5rem);line-height:1.45}
 html[lang="ar"] .book{transform:rotate(1.2deg)}
 html[lang="ar"] .hanko{transform:rotate(-14deg)}
@@ -272,6 +273,43 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .slip .btn.solid:hover::after{transform:translateX(4px)}
 [dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
 
+/* trust chips / NEW badge */
+.trust{display:flex;flex-wrap:wrap;gap:5px;margin:0;padding:0;list-style:none}
+.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust b,.tr-leg b{font-weight:700}
+.t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
+.tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
+.tr-leg>span:first-child{color:var(--ink);font-weight:700}
+.new{font-size:.68rem;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:999px;background:var(--stamp);color:#fff;white-space:nowrap}
+.svc{scroll-margin-top:72px}
+.svc .tags{flex:0 1 auto;flex-wrap:wrap;justify-content:flex-end;row-gap:4px}
+.svc-top h3{flex:1 1 auto;min-width:8em}
+
+/* top picks */
+#picks{position:relative;z-index:1}
+.picks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pick{display:flex;flex-direction:column;gap:12px;min-width:0;padding:18px;border-radius:12px;color:#EEF1FF;border:1px solid rgba(255,214,107,.6);
+  background:radial-gradient(90% 80% at 100% 0%,#3B2A86,transparent 62%),linear-gradient(160deg,#0A0F24,#16205A);
+  box-shadow:0 0 0 3px rgba(255,214,107,.08),0 16px 40px -20px rgba(255,190,80,.6)}
+.pick-top{display:flex;align-items:center;gap:14px}
+.pick-top>div{min-width:0}
+.rank{flex:none;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;border:2px solid #FFD66B;color:#FFD66B;font-size:1.9rem;line-height:1;
+  text-shadow:0 0 14px rgba(255,214,107,.6);box-shadow:inset 0 0 16px rgba(255,214,107,.18)}
+.pick .cat{color:#A9B2D8}
+.pick h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:1.3rem;line-height:1.3;color:#fff}
+.pick p{font-size:.9rem;color:#C9D0EE;line-height:1.65}
+.pick .btn.solid{margin-top:auto;background:#FFD66B;color:#141A3A;padding-block:10px;gap:8px;white-space:normal;text-align:center}
+.pick .btn.solid::after{content:"→"}
+[dir="rtl"] .pick .btn.solid::after{content:"←"}
+.pick .btn.solid:hover{background:#FFE59A}
+.pick .more{font-size:.8rem;color:#A9B2D8;text-align:center;text-underline-offset:3px}
+.pick .more:hover{color:#fff}
+
+/* news */
+.news{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);max-width:44em}
+.news li{display:flex;gap:16px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
+.news time{flex:none;font-size:.85rem;color:var(--muted)}
+
 /* share */
 .share{position:relative;overflow:hidden;border-radius:16px;padding:clamp(22px,4vw,36px);color:#EEF1FF;
   background:radial-gradient(80% 120% at 100% 0%,#3B2A86,transparent 60%),linear-gradient(135deg,#0A0F24,#16205A)}
@@ -284,6 +322,7 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .share-btns .btn:hover{filter:brightness(1.12)}
 
 @media (max-width:760px){
+  .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
   .ledger table{min-width:300px}
@@ -353,6 +392,26 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 
 <div class="wrap">
 
+<section id="picks">
+  <div class="sec-head"><h2>Empieza por estas 3</h2><span class="label">TOP 3</span></div>
+  <p class="intro">Elegidas por exigir poco esfuerzo, funcionar fuera de Japón y permitir canjear de verdad.</p>
+  <div class="picks"><article class="pick"><div class="pick-top"><span class="rank dot">1</span><div><span class="cat">Apps pasivas</span><h3>Honeygain</h3></div></div>
+<p>Solo instálala en tu PC o móvil. Al llegar a $20 cobras por PayPal</p>
+<a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">Registrarme con referido</a>
+<a class="more" href="#svc-honeygain">Ver detalles ↓</a>
+</article>
+<article class="pick"><div class="pick-top"><span class="rank dot">2</span><div><span class="cat">Apps pasivas</span><h3>Pawns.app</h3></div></div>
+<p>Solo déjala funcionando en tu PC. Cobra en efectivo desde $5</p>
+<a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">Registrarme con referido</a>
+<a class="more" href="#svc-pawns">Ver detalles ↓</a>
+</article>
+<article class="pick"><div class="pick-top"><span class="rank dot">3</span><div><span class="cat">Apps pasivas</span><h3>Sweatcoin</h3></div></div>
+<p>Solo camina con el móvil. Cambia tus monedas por productos o descuentos</p>
+<a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">Registrarme con referido</a>
+<a class="more" href="#svc-sweatcoin">Ver detalles ↓</a>
+</article></div>
+</section>
+
 <section id="list">
   <div class="sec-head"><h2>Servicios</h2><span class="label">REFERRAL LIST</span></div>
   <div class="tools">
@@ -363,85 +422,102 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <span><span class="type loop">Recurrente</span>&nbsp; <span>Paga una y otra vez tras registrarte</span></span>
     <span><span class="type once">Única vez</span>&nbsp; <span>Un bono único por unirte con un referido</span></span>
     <span><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i></span>&nbsp; <span>Facilidad (nuestra valoración)</span></span>
+    <span class="tr-leg"><span>Confianza</span><span><b class="t-yes">✓</b> Sí</span><span><b class="t-partial">△</b> Con condiciones</span><span><b class="t-no">✗</b> No</span><span><b class="t-unknown">?</b> Sin confirmar</span></span>
   </div>
   <p class="count" id="count" aria-live="polite">11 servicios</p>
-  <div class="grid" id="grid"><article class="svc" data-cat="crypto-bi" data-type="loop">
+  <div class="grid" id="grid"><article class="svc" id="svc-gooddollar" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><h3><span class="cat">UBI cripto</span>GoodDollar</h3><div class="tags"><span class="type loop">Recurrente</span></div></div>
 <p class="gain">Tokens G$ cada día<small>Protocolo UBI sin ánimo de lucro. Reclama una vez cada 24 horas; el fondo de cada día se reparte entre todos los que reclaman</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Verificación facial en la app</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-partial" title="Cobro (se puede pasar a dinero): Con condiciones"><span aria-hidden="true">Cobro</span><b aria-hidden="true">△</b><span class="vh">Cobro (se puede pasar a dinero): Con condiciones</span></li><li class="t-yes" title="Precio de mercado (el token cotiza): Sí"><span aria-hidden="true">Precio</span><b aria-hidden="true">✓</b><span class="vh">Precio de mercado (el token cotiza): Sí</span></li><li class="t-yes" title="Operador (se sabe quién lo gestiona): Sí"><span aria-hidden="true">Operador</span><b aria-hidden="true">✓</b><span class="vh">Operador (se sabe quién lo gestiona): Sí</span></li></ul>
 <p class="caution">Ojo: Un incidente de seguridad en mayo de 2026 dejó su reserva en revisión. La cantidad diaria es muy pequeña</p>
 <div class="slip"><a class="btn solid" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
+<article class="svc" id="svc-mepass" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><h3><span class="cat">UBI cripto</span>ME Pass</h3><div class="tags"><span class="type loop">Recurrente</span></div></div>
 <p class="gain">Tokens MEC cada día<small>La app de cartera de Meta Earth. Los usuarios verificados reciben 1 MEC como «renta básica incondicional», más pequeñas recompensas por registrarse cada día</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Regístrate con el enlace de invitación y completa el KYC en la app</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-partial" title="Cobro (se puede pasar a dinero): Con condiciones"><span aria-hidden="true">Cobro</span><b aria-hidden="true">△</b><span class="vh">Cobro (se puede pasar a dinero): Con condiciones</span></li><li class="t-no" title="Precio de mercado (el token cotiza): No"><span aria-hidden="true">Precio</span><b aria-hidden="true">✗</b><span class="vh">Precio de mercado (el token cotiza): No</span></li><li class="t-unknown" title="Operador (se sabe quién lo gestiona): Sin confirmar"><span aria-hidden="true">Operador</span><b aria-hidden="true">?</b><span class="vh">Operador (se sabe quién lo gestiona): Sin confirmar</span></li></ul>
 <p class="caution">Ojo: A octubre de 2026, MEC no cotiza en ningún exchange y no tiene precio de mercado. Solo se puede cobrar entre particulares (P2P)</p>
 <div class="slip"><a class="btn solid" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
+<article class="svc" id="svc-biomatrix" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><h3><span class="cat">UBI cripto</span>BioMatrix</h3><div class="tags"><span class="type loop">Recurrente</span></div></div>
 <p class="gain">Tokens PoY cada mes<small>Token UBI que promete pagos mensuales durante 60 años. Registrarte con un código de referido da 5 tokens extra (a enero de 2026). Quien se registra antes recibe más</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Verifícate con biometría en la app y reclama cada mes</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-unknown" title="Cobro (se puede pasar a dinero): Sin confirmar"><span aria-hidden="true">Cobro</span><b aria-hidden="true">?</b><span class="vh">Cobro (se puede pasar a dinero): Sin confirmar</span></li><li class="t-unknown" title="Precio de mercado (el token cotiza): Sin confirmar"><span aria-hidden="true">Precio</span><b aria-hidden="true">?</b><span class="vh">Precio de mercado (el token cotiza): Sin confirmar</span></li><li class="t-unknown" title="Operador (se sabe quién lo gestiona): Sin confirmar"><span aria-hidden="true">Operador</span><b aria-hidden="true">?</b><span class="vh">Operador (se sabe quién lo gestiona): Sin confirmar</span></li></ul>
 <p class="caution">Ojo: No pudimos confirmar un precio de mercado para PoY. Úsala solo si estás de acuerdo con cómo trata los datos biométricos</p>
 <div class="slip"><a class="btn solid" href="https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&amp;af_dp=biomatrix%3A%2F%2F&amp;deep_link_sub1=C66SPN" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="pointsite" data-type="once">
+<article class="svc" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><h3><span class="cat">Cashback</span>Hapitas</h3><div class="tags"><span class="type once">Única vez</span></div></div>
 <p class="gain">Hasta 2.300 puntos<small>Oferta de octubre de 2026 (1 punto = 1 ¥). 100 por entrar 3 días seguidos, 1.000 al ganar 3.000 con ofertas, y más</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Únete con referido antes del 31 de octubre y cumple las condiciones antes del 30 de noviembre</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>Región</dt><dd><span class="region">Solo Japón</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-yes" title="Cobro (se puede pasar a dinero): Sí"><span aria-hidden="true">Cobro</span><b aria-hidden="true">✓</b><span class="vh">Cobro (se puede pasar a dinero): Sí</span></li><li class="t-yes" title="Operador (se sabe quién lo gestiona): Sí"><span aria-hidden="true">Operador</span><b aria-hidden="true">✓</b><span class="vh">Operador (se sabe quién lo gestiona): Sí</span></li></ul>
 
 <div class="slip"><a class="btn solid" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="career" data-type="loop">
+<article class="svc" id="svc-wavee" data-cat="career" data-type="loop">
 <div class="svc-top"><h3><span class="cat">Empleo</span>WAVEE</h3><div class="tags"><span class="type loop">Recurrente</span></div></div>
 <p class="gain">Una recompensa cada vez que consigues trabajo<small>Plataforma de empleo solo por invitación. Cada vez que alguien a quien invitaste (o a quien esa persona invitó) consigue trabajo, recibes una parte del referido una y otra vez (7,5–15 %). Publican ofertas DMM, GMO Pepabo y otras</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Regístrate con el enlace de invitación</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-partial" title="Cobro (se puede pasar a dinero): Con condiciones"><span aria-hidden="true">Cobro</span><b aria-hidden="true">△</b><span class="vh">Cobro (se puede pasar a dinero): Con condiciones</span></li><li class="t-yes" title="Operador (se sabe quién lo gestiona): Sí"><span aria-hidden="true">Operador</span><b aria-hidden="true">✓</b><span class="vh">Operador (se sabe quién lo gestiona): Sí</span></li></ul>
 <p class="caution">Ojo: Solo ganas cuando se concreta un empleo. Los porcentajes son de la nota oficial de junio de 2024</p>
 <div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Apps pasivas</span>Sweatcoin</h3><div class="tags"><span class="max">Instalar y olvidar</span><span class="type loop">Recurrente</span></div></div>
+<article class="svc" id="svc-sweatcoin" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Apps pasivas</span>Sweatcoin</h3><div class="tags"><span class="new">NEW</span><span class="max">Instalar y olvidar</span><span class="type loop">Recurrente</span></div></div>
 <p class="gain">0,95 monedas por cada 1.000 pasos<small>Lleva el móvil encima y tus pasos se convierten en monedas automáticamente. Úsalas en la tienda de la app en productos, descuentos o donaciones</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Instala la app y permite el acceso a pasos y ubicación</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-partial" title="Cobro (se puede pasar a dinero): Con condiciones"><span aria-hidden="true">Cobro</span><b aria-hidden="true">△</b><span class="vh">Cobro (se puede pasar a dinero): Con condiciones</span></li><li class="t-yes" title="Operador (se sabe quién lo gestiona): Sí"><span aria-hidden="true">Operador</span><b aria-hidden="true">✓</b><span class="vh">Operador (se sabe quién lo gestiona): Sí</span></li></ul>
 <p class="caution">Ojo: No hay un tipo de cambio fijo a dinero. El plan gratuito limita cuántos pasos se convierten al día</p>
 <div class="slip"><a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Apps pasivas</span>Grass</h3><div class="tags"><span class="max">Instalar y olvidar</span><span class="type loop">Recurrente</span></div></div>
+<article class="svc" id="svc-grass" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Apps pasivas</span>Grass</h3><div class="tags"><span class="new">NEW</span><span class="max">Instalar y olvidar</span><span class="type loop">Recurrente</span></div></div>
 <p class="gain">Puntos (luego tokens GRASS)<small>Un DePIN que alquila tu ancho de banda sin usar para el rastreo web de IA. Deja la extensión o la app activa y gana puntos por tiempo conectado y ancho de banda usado, que se reparten en airdrops por temporadas</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Regístrate con tu email, instala la extensión o la app y mantente conectado</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-partial" title="Cobro (se puede pasar a dinero): Con condiciones"><span aria-hidden="true">Cobro</span><b aria-hidden="true">△</b><span class="vh">Cobro (se puede pasar a dinero): Con condiciones</span></li><li class="t-yes" title="Precio de mercado (el token cotiza): Sí"><span aria-hidden="true">Precio</span><b aria-hidden="true">✓</b><span class="vh">Precio de mercado (el token cotiza): Sí</span></li><li class="t-yes" title="Operador (se sabe quién lo gestiona): Sí"><span aria-hidden="true">Operador</span><b aria-hidden="true">✓</b><span class="vh">Operador (se sabe quién lo gestiona): Sí</span></li></ul>
 <p class="caution">Ojo: Otros usan tu dirección IP para recopilar datos. Las recompensas dependen de airdrops, así que el importe y el momento son impredecibles</p>
 <div class="slip"><a class="btn solid" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Apps pasivas</span>Honeygain</h3><div class="tags"><span class="max">Instalar y olvidar</span><span class="type loop">Recurrente</span></div></div>
+<article class="svc" id="svc-honeygain" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Apps pasivas</span>Honeygain</h3><div class="tags"><span class="new">NEW</span><span class="max">Instalar y olvidar</span><span class="type loop">Recurrente</span></div></div>
 <p class="gain">Dinero por el tráfico que compartes<small>La app de compartir ancho de banda más conocida: alquila tu conexión sin usar a empresas para recopilar datos web. Registrarte con un referido da un bono de bienvenida de $3 (según su blog oficial). Cobra por PayPal y otros al llegar a $20</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Regístrate con tu email, instala la app en tu PC o móvil y déjala funcionando</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-yes" title="Cobro (se puede pasar a dinero): Sí"><span aria-hidden="true">Cobro</span><b aria-hidden="true">✓</b><span class="vh">Cobro (se puede pasar a dinero): Sí</span></li><li class="t-yes" title="Operador (se sabe quién lo gestiona): Sí"><span aria-hidden="true">Operador</span><b aria-hidden="true">✓</b><span class="vh">Operador (se sabe quién lo gestiona): Sí</span></li></ul>
 <p class="caution">Ojo: Otros usan tu dirección IP para recopilar datos. Lo que ganas depende de la demanda en tu región y puede ser muy poco en algunas zonas</p>
 <div class="slip"><a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">Apps pasivas</span>Pawns.app</h3><div class="tags"><span class="type loop">Recurrente</span></div></div>
+<article class="svc" id="svc-pawns" data-cat="app" data-type="loop">
+<div class="svc-top"><h3><span class="cat">Apps pasivas</span>Pawns.app</h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurrente</span></div></div>
 <p class="gain">Dinero por el tráfico que compartes<small>La app de compartir ancho de banda de IPRoyal. Deja la app de escritorio funcionando y tu conexión sobrante genera dinero. También paga por encuestas y juegos. Cobra desde $5 por PayPal, Bitcoin y más</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Regístrate con tu email, instala la app de escritorio y déjala funcionando</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-yes" title="Cobro (se puede pasar a dinero): Sí"><span aria-hidden="true">Cobro</span><b aria-hidden="true">✓</b><span class="vh">Cobro (se puede pasar a dinero): Sí</span></li><li class="t-yes" title="Operador (se sabe quién lo gestiona): Sí"><span aria-hidden="true">Operador</span><b aria-hidden="true">✓</b><span class="vh">Operador (se sabe quién lo gestiona): Sí</span></li></ul>
 <p class="caution">Ojo: Compartir ancho de banda en el móvil terminó en abril de 2026, así que lo pasivo solo funciona en PC. Otros usan tu dirección IP para recopilar datos, y se gana poco</p>
 <div class="slip"><a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">UBI cripto</span>Pi Network</h3><div class="tags"><span class="type loop">Recurrente</span></div></div>
+<article class="svc" id="svc-pinetwork" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">UBI cripto</span>Pi Network</h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurrente</span></div></div>
 <p class="gain">PI cada día<small>Pulsa un botón en la app una vez cada 24 horas para acumular PI. Cuantas más personas invites, más rápido minas. Se abrió al público en febrero de 2025 y cotiza en OKX, Bitget, MEXC y otros</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Regístrate con el enlace de invitación (código de invitación: eltociear). Para mover tus PI necesitas verificar tu identidad y migrar a la billetera de la mainnet</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-partial" title="Cobro (se puede pasar a dinero): Con condiciones"><span aria-hidden="true">Cobro</span><b aria-hidden="true">△</b><span class="vh">Cobro (se puede pasar a dinero): Con condiciones</span></li><li class="t-yes" title="Precio de mercado (el token cotiza): Sí"><span aria-hidden="true">Precio</span><b aria-hidden="true">✓</b><span class="vh">Precio de mercado (el token cotiza): Sí</span></li><li class="t-yes" title="Operador (se sabe quién lo gestiona): Sí"><span aria-hidden="true">Operador</span><b aria-hidden="true">✓</b><span class="vh">Operador (se sabe quién lo gestiona): Sí</span></li></ul>
 <p class="caution">Ojo: El precio ha caído cerca de un 97% desde su máximo de $2.99 en 2025 (unos $0.08 en octubre de 2026). No está en Binance, Coinbase ni en exchanges japoneses. Hay que pulsar a diario; si lo dejas, no se acumula</p>
 <div class="slip"><a class="btn solid" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article>
-<article class="svc" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">UBI cripto</span>Delta Kim</h3><div class="tags"><span class="type loop">Recurrente</span></div></div>
+<article class="svc" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">UBI cripto</span>Delta Kim</h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurrente</span></div></div>
 <p class="gain">KIM cada día<small>Una app de criptomonedas parecida a Pi Network en la que «minas» a diario desde el móvil. Se dice que registrarte con un código de referido aumenta tu ritmo de minado</small></p>
 <dl><dt>Cómo conseguirlo</dt><dd>Regístrate con el enlace de invitación y pulsa el botón de minado en la app cada día</dd><dt>Facilidad</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>Región</dt><dd><span class="region">Global</span></dd></dl>
+<ul class="trust" aria-label="Confianza"><li class="t-unknown" title="Cobro (se puede pasar a dinero): Sin confirmar"><span aria-hidden="true">Cobro</span><b aria-hidden="true">?</b><span class="vh">Cobro (se puede pasar a dinero): Sin confirmar</span></li><li class="t-no" title="Precio de mercado (el token cotiza): No"><span aria-hidden="true">Precio</span><b aria-hidden="true">✗</b><span class="vh">Precio de mercado (el token cotiza): No</span></li><li class="t-unknown" title="Operador (se sabe quién lo gestiona): Sin confirmar"><span aria-hidden="true">Operador</span><b aria-hidden="true">?</b><span class="vh">Operador (se sabe quién lo gestiona): Sin confirmar</span></li></ul>
 <p class="caution">Ojo: En octubre de 2026 no se ha podido confirmar que cotice en ningún exchange ni que tenga precio de mercado, así que no está claro si se puede convertir en dinero. Algunos usuarios dicen que su saldo dejó de crecer aunque sigan minando. Requiere acción diaria</p>
 <div class="slip"><a class="btn solid" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article><p class="empty-state" id="empty" hidden>Ningún servicio coincide con estos filtros.</p></div>
+</section>
+
+<section id="news">
+  <div class="sec-head"><h2>Novedades</h2><span class="label">UPDATES</span></div>
+  <ol class="news"><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadidas las 3 recomendadas y los indicadores de confianza</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>WAVEE ahora aparece como Global</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadido Delta Kim</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadido Pi Network</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadido Pawns.app</span></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><span>Añadido Sweatcoin</span></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><span>Nuevo diseño del sitio</span></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><span>Añadido Honeygain</span></li></ol>
 </section>
 
 <section id="share">
