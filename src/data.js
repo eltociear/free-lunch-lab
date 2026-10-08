@@ -54,7 +54,7 @@ module.exports = {
         "caution": "Un incidente de seguridad en mayo de 2026 dejó su reserva en revisión. La cantidad diaria es muy pequeña"
       },
       "ar": {
-        "gain": "رموز G$ كل يوم",
+        "gain": "رموز ⁦G$⁩ كل يوم",
         "note": "بروتوكول دخل أساسي غير ربحي. اطلبها مرة كل 24 ساعة، ويُقسَّم رصيد كل يوم على جميع من يطلبونها",
         "need": "التحقق من الوجه داخل التطبيق",
         "caution": "وقعت حادثة أمنية في مايو 2026 وُضع بعدها الاحتياطي قيد المراجعة. المبلغ اليومي صغير جدًا"
@@ -944,7 +944,7 @@ module.exports = {
       "thDate": "التاريخ",
       "thMemo": "البيان",
       "thIn": "إيداع",
-      "r1": "منحة G$",
+      "r1": "منحة ⁦G$⁩",
       "r1v": "يوميًا",
       "r2": "منحة MEC",
       "r2v": "يوميًا",
