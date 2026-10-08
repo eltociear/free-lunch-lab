@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>دخل وأنت نائم | تطبيقات الدخل الأساسي بالعملات المشفرة ومكافآت الإحالة</title>
+<meta name="description" content="قائمة بتطبيقات الدخل الأساسي بالعملات المشفرة (UBI) مثل GoodDollar وME Pass وBioMatrix، إضافة إلى مواقع استرداد النقود والخدمات المتاحة بالدعوة، مع رموز الإحالة والمكافآت الحالية.">
+<link rel="canonical" href="https://neteru-nyukin.eltociear.workers.dev/ar/">
+<link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/">
+<link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/">
+<link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/">
+<link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/">
+<link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/">
+<link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="دخل وأنت نائم | تطبيقات الدخل الأساسي بالعملات المشفرة ومكافآت الإحالة">
+<meta property="og:description" content="قائمة بتطبيقات الدخل الأساسي بالعملات المشفرة (UBI) مثل GoodDollar وME Pass وBioMatrix، إضافة إلى مواقع استرداد النقود والخدمات المتاحة بالدعوة، مع رموز الإحالة والمكافآت الحالية.">
+<meta property="og:url" content="https://neteru-nyukin.eltociear.workers.dev/ar/">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"دخل وأنت نائم | تطبيقات الدخل الأساسي بالعملات المشفرة ومكافآت الإحالة","inLanguage":"ar","itemListElement":[{"@type":"ListItem","position":1,"name":"GoodDollar","url":"https://www.gooddollar.org/"},{"@type":"ListItem","position":2,"name":"ME Pass","url":"https://www.mec.me/"},{"@type":"ListItem","position":3,"name":"BioMatrix","url":"https://biomatrix.ai/ja/"},{"@type":"ListItem","position":4,"name":"Hapitas","url":"https://hapitas.jp/"},{"@type":"ListItem","position":5,"name":"WAVEE","url":"https://wavee.world/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Noto+Kufi+Arabic:wght@700&family=Noto+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+/* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
+:root{
+  --paper:#EAF0EE; --surface:#F7FAF9; --ink:#18213B; --muted:#56627A; --line:#C3D0CD;
+  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3;
+  --f-display:"Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-body:"Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-dot:"DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
+  --s1:clamp(2.3rem,6.4vw,4.3rem); --s2:clamp(1.45rem,3.4vw,2.1rem); --s4:.8rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+img{max-width:100%}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;padding-inline:16px;padding-block:0 48px}
+.wrap{max-width:1080px;margin-inline:auto}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;line-height:1.25}
+p{margin:0}
+.dot{font-family:var(--f-dot);font-variant-numeric:tabular-nums}
+.label{font-size:var(--s4);letter-spacing:.12em;color:var(--muted)}
+section[id],header[id]{scroll-margin-top:72px}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:2px solid var(--ink);margin-inline:-16px;padding:10px 16px}
+.bar-in{max-width:1080px;margin-inline:auto;display:flex;align-items:center;gap:16px}
+.brand{font-family:var(--f-display);font-size:1.05rem;text-decoration:none;color:var(--ink);white-space:nowrap}
+.brand span{color:var(--accent)}
+.nav{display:flex;gap:18px;margin-inline-start:auto;font-size:.88rem}
+.nav a{color:var(--ink);text-decoration:none}
+.nav a:hover{color:var(--accent)}
+.lang{display:inline-flex;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden;flex:none}
+.lang{margin-inline-start:auto;max-width:100%}
+.lang a{font-size:.8rem;font-weight:700;color:var(--ink);text-decoration:none;padding:3px 11px;white-space:nowrap}
+.nav+.lang{margin-inline-start:0}
+.lang a[aria-current="page"]{background:var(--ink);color:var(--paper)}
+
+.pr{font-size:.78rem;color:var(--muted);padding-block:12px 0}
+.pr b{display:inline-block;background:var(--ink);color:var(--paper);font-size:.7rem;padding:0 7px;border-radius:3px;margin-inline-end:6px;letter-spacing:.08em}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,5vw,56px);align-items:center;padding-block:clamp(32px,6vw,72px) clamp(28px,5vw,48px)}
+.hero>*{min-width:0}
+.hero h1{font-size:var(--s1)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+html[lang="en"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
+html[lang="hi"]{--f-display:"Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
+html[lang="hi"] body{line-height:1.9}
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3{font-weight:700}
+html[lang="hi"] .hero h1{font-size:clamp(2rem,5.4vw,3.6rem);line-height:1.35}
+html[lang="es"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
+html[lang="zh-Hans"]{--f-display:"Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"Noto Sans SC",system-ui,sans-serif}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3{font-weight:900}
+html[lang="ar"]{--f-display:"Noto Kufi Arabic",sans-serif;--f-body:"Noto Sans Arabic",system-ui,sans-serif}
+html[lang="ar"] body{line-height:1.95}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3{font-weight:700}
+html[lang="ar"] .hero h1{font-size:clamp(2rem,5.2vw,3.5rem);line-height:1.45}
+html[lang="ar"] .book{transform:rotate(1.2deg)}
+html[lang="ar"] .hanko{transform:rotate(-14deg)}
+html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar"] .cat{letter-spacing:0}
+.lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
+.lede b{color:var(--ink)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.stats{display:flex;flex-wrap:wrap;gap:20px 28px;margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
+.stats div{display:grid}
+.stats .dot{font-size:1.7rem;line-height:1.1}
+.stats span:last-child{font-size:.78rem;color:var(--muted)}
+
+.book{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 16px 22px;
+  background-image:repeating-radial-gradient(circle at 100% 0,transparent 0 9px,var(--accent-soft) 9px 10px);
+  box-shadow:0 1px 0 var(--line),0 18px 40px -24px rgba(20,30,60,.35);transform:rotate(-1.2deg)}
+.book-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:4px}
+.book-head b{font-family:var(--f-display);font-weight:400;font-size:1rem}
+.ledger{overflow-x:auto}
+.ledger table{width:100%;border-collapse:collapse;min-width:340px;font-size:.9rem}
+.ledger th{font-family:var(--f-body);font-weight:500;font-size:.68rem;color:var(--muted);text-align:start;padding:6px;border-bottom:1px solid var(--line)}
+.ledger td{padding:9px 6px;border-bottom:1px dashed var(--line);white-space:nowrap}
+.ledger .n{text-align:end}
+.ledger td.in{color:var(--pos)}
+.ledger tbody tr{animation:print .5s steps(6) both}
+.ledger tbody tr:nth-child(2){animation-delay:.35s}.ledger tbody tr:nth-child(3){animation-delay:.7s}
+.ledger tbody tr:nth-child(4){animation-delay:1.05s}.ledger tbody tr:nth-child(5){animation-delay:1.4s}
+@keyframes print{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.hanko{position:absolute;inset-inline-end:14px;bottom:-22px;width:86px;height:86px;border:3px solid var(--stamp);border-radius:50%;color:var(--stamp);
+  display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-size:.74rem;line-height:1.2;transform:rotate(14deg);background:var(--surface)}
+.note{font-size:.72rem;color:var(--muted);margin-top:10px}
+
+/* sections */
+section{padding-block:clamp(44px,7vw,72px) 0}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-top:2px solid var(--ink);padding-top:14px;margin-bottom:20px}
+.sec-head h2{font-size:var(--s2)}
+.sec-head .label{margin-inline-start:auto}
+.intro{max-width:44em;color:var(--muted);margin-bottom:20px}
+
+/* buttons */
+.btn{font:inherit;font-weight:700;font-size:.9rem;border:0;border-radius:4px;padding:8px 16px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--accent)}
+.btn.line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+/* tools */
+.tools{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:14px}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{font:inherit;font-size:.86rem;color:var(--ink);background:transparent;border:1.5px solid var(--ink);padding:3px 13px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.filters button span{font-family:var(--f-dot);margin-inline-start:5px;opacity:.7}
+.switch{display:inline-flex;align-items:center;gap:8px;font-size:.86rem;margin-inline-start:auto;cursor:pointer}
+.switch input{width:18px;height:18px;accent-color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.8rem;color:var(--muted);margin-bottom:20px}
+.count{font-size:.8rem;color:var(--muted);margin-bottom:10px}
+
+/* service cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.svc-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.svc h3{margin:0;font-size:1.15rem;line-height:1.35}
+.cat{font-size:.72rem;color:var(--muted);display:block;font-weight:400;letter-spacing:.06em}
+.tags{display:flex;gap:4px;flex:none}
+.type,.region{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.type.loop{background:var(--pos-soft);color:var(--pos)}
+.type.once{background:var(--accent-soft);color:var(--accent)}
+.region{border:1px solid var(--line);color:var(--muted);font-weight:500}
+.gain{font-family:var(--f-dot);font-size:1.3rem;line-height:1.35;color:var(--pos)}
+.gain small{display:block;font-family:var(--f-body);font-size:.76rem;color:var(--muted);margin-top:3px;line-height:1.6}
+.svc dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:.88rem}
+.svc dt{color:var(--muted)}
+.svc dd{margin:0;min-width:0}
+.meter{display:inline-flex;gap:3px;vertical-align:middle}
+.meter i{width:12px;height:12px;border-radius:2px;background:var(--line)}
+.meter i.on{background:var(--accent)}
+.caution{font-size:.8rem;color:var(--stamp)}
+.slip{margin-top:auto;display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:4px}
+.code{border:1.5px dashed var(--muted);border-radius:4px;padding:6px 10px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+.code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.code .label{letter-spacing:.06em;flex:none}
+.code.empty .dot{color:var(--muted);font-size:.88rem}
+.slip .solid{grid-column:1/-1}
+.empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:6px;padding:28px;text-align:center;color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.step{border-top:1px solid var(--line);padding-top:12px}
+.step b{font-family:var(--f-dot);font-size:1.5rem;color:var(--accent);display:block}
+.step h3{margin:0 0 4px;font-size:1rem}
+.step p{font-size:.92rem;color:var(--muted)}
+
+/* faq */
+.faq{display:grid;gap:0;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-dot);color:var(--accent);font-size:1.2rem;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq p{margin-top:8px;color:var(--muted);max-width:46em}
+
+.warn{border:2px solid var(--stamp);border-radius:6px;padding:22px;background:var(--surface)}
+.warn h3{margin:0 0 10px;color:var(--stamp);font-family:var(--f-display);font-weight:400;font-size:1.25rem}
+.warn ul{margin:0;padding-inline-start:1.2em;display:grid;gap:6px}
+
+footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-size:.8rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:8px 18px;border-radius:999px;font-size:.88rem;z-index:10}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr}
+  .book{transform:none}
+  .steps{grid-template-columns:1fr}
+  .nav{display:none}
+  .switch{margin-inline-start:0}
+  .bar-in{flex-wrap:wrap;row-gap:8px}
+  .lang{order:3;overflow-x:auto}
+}
+@media (prefers-reduced-motion:reduce){.ledger tbody tr{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="bar-in">
+    <a class="brand" href="#top">دخل وأنت <span>نائم</span></a>
+    <nav class="nav" aria-label="الأقسام">
+      <a href="#list">الخدمات</a><a href="#how">طريقة الاستخدام</a><a href="#faq">الأسئلة الشائعة</a>
+    </nav>
+    <div class="lang" role="group" aria-label="اللغة"><a href="/" hreflang="en" lang="en">EN</a><a href="/ja/" hreflang="ja" lang="ja">日本語</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/ar/" hreflang="ar" lang="ar" dir="rtl" aria-current="page">العربية</a></div>
+  </div>
+</div>
+
+<div class="wrap">
+<p class="pr"><b>PR</b><span>تحتوي هذه الصفحة على روابط ورموز إحالة. إذا سجّلت عبرها، فقد يحصل صاحب الموقع أيضًا على مكافأة.</span></p>
+
+<header class="hero" id="top">
+  <div>
+    <p class="label">تطبيقات الدخل الأساسي بالعملات المشفرة ومكافآت الإحالة</p>
+    <h1>سجّل مرة واحدة.<br>واحصل على <em>دخل</em><br>وأنت نائم.</h1>
+    <p class="lede">من مشاريع <b>الدخل الأساسي بالعملات المشفرة</b> التي ترسل رموزًا كل يوم أو كل شهر، إلى <b>مواقع استرداد النقود والخدمات المتاحة بالدعوة فقط</b> التي تكافئك على الانضمام عبر إحالة. كل ذلك في قائمة واحدة.</p>
+    <div class="cta">
+      <a class="btn solid" href="#list">تصفّح الخدمات</a>
+      <a class="btn line" href="#how">طريقة الاستخدام</a>
+    </div>
+    <div class="stats">
+      <div><span class="dot">5</span><span>خدمات مدرجة</span></div>
+      <div><span class="dot">4</span><span>تدفع بشكل متكرر</span></div>
+      <div><span class="dot">3</span><span>تعمل خارج اليابان</span></div>
+      <div><span class="dot">2026.10</span><span>آخر مراجعة</span></div>
+    </div>
+  </div>
+  <div class="book" aria-hidden="true">
+    <div class="book-head"><b>كشف الإيداعات</b><span class="dot label">NO.0001</span></div>
+    <div class="ledger">
+      <table class="dot">
+        <thead><tr><th>التاريخ</th><th>البيان</th><th class="n">إيداع</th></tr></thead>
+        <tbody>
+          <tr><td>26-10-01</td><td>منحة G$</td><td class="n in">يوميًا</td></tr>
+          <tr><td>26-10-02</td><td>منحة MEC</td><td class="n in">يوميًا</td></tr>
+          <tr><td>26-10-05</td><td>منحة PoY</td><td class="n in">شهريًا</td></tr>
+          <tr><td>26-10-06</td><td>إحالة HAPITAS</td><td class="n in">2,300P</td></tr>
+          <tr><td>26-10-07</td><td>مكافأة WAVEE</td><td class="n in">عند التوظيف</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">للتوضيح فقط. راجع كل بطاقة لمعرفة المكافأة والشروط الفعلية.</p>
+    <div class="hanko">دُفع<br>وأنت نائم</div>
+  </div>
+</header>
+
+<section id="list">
+  <div class="sec-head"><h2>الخدمات</h2><span class="label">REFERRAL LIST</span></div>
+  <div class="tools">
+    <div class="filters" role="group" id="filters" aria-label="التصفية حسب الفئة"><button type="button" data-cat="all" aria-pressed="true">الكل<span>5</span></button><button type="button" data-cat="crypto-bi" aria-pressed="false">دخل أساسي مشفّر<span>3</span></button><button type="button" data-cat="pointsite" aria-pressed="false">استرداد نقدي<span>1</span></button><button type="button" data-cat="career" aria-pressed="false">توظيف<span>1</span></button></div>
+    <label class="switch" for="loopOnly"><input type="checkbox" id="loopOnly"><span>المتكررة فقط</span></label>
+  </div>
+  <div class="legend">
+    <span><span class="type loop">متكرر</span>&nbsp; <span>يدفع مرة بعد مرة بعد التسجيل</span></span>
+    <span><span class="type once">مرة واحدة</span>&nbsp; <span>مكافأة لمرة واحدة عند الانضمام عبر إحالة</span></span>
+    <span><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i></span>&nbsp; <span>السهولة (تقييمنا الخاص)</span></span>
+  </div>
+  <p class="count" id="count" aria-live="polite">عدد الخدمات المعروضة: 5</p>
+  <div class="grid" id="grid"><article class="svc" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">دخل أساسي مشفّر</span>GoodDollar</h3><div class="tags"><span class="type loop">متكرر</span></div></div>
+<p class="gain">رموز G$ كل يوم<small>بروتوكول دخل أساسي غير ربحي. اطلبها مرة كل 24 ساعة، ويُقسَّم رصيد كل يوم على جميع من يطلبونها</small></p>
+<dl><dt>طريقة الحصول</dt><dd>التحقق من الوجه داخل التطبيق</dd><dt>السهولة</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>المنطقة</dt><dd><span class="region">عالمي</span></dd></dl>
+<p class="caution">تنبيه: وقعت حادثة أمنية في مايو 2026 وُضع بعدها الاحتياطي قيد المراجعة. المبلغ اليومي صغير جدًا</p>
+<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot">KgChqUuJic</span></div><button class="btn line" type="button" data-code="KgChqUuJic">نسخ</button><a class="btn solid" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+</article>
+<article class="svc" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">دخل أساسي مشفّر</span>ME Pass</h3><div class="tags"><span class="type loop">متكرر</span></div></div>
+<p class="gain">رموز MEC كل يوم<small>تطبيق محفظة من Meta Earth. يحصل المستخدمون الموثَّقون على 1 MEC بوصفه «دخلًا أساسيًا غير مشروط»، إضافة إلى مكافآت صغيرة لتسجيل الحضور يوميًا</small></p>
+<dl><dt>طريقة الحصول</dt><dd>سجّل عبر رابط الدعوة وأكمل التحقق من الهوية (KYC) في التطبيق</dd><dt>السهولة</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>المنطقة</dt><dd><span class="region">عالمي</span></dd></dl>
+<p class="caution">تنبيه: حتى أكتوبر 2026، لم يُدرج MEC في أي منصة تداول وليس له سعر سوقي. لا يمكن تحويله إلى نقد إلا بين الأفراد (P2P)</p>
+<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot">d22fj9hx</span></div><button class="btn line" type="button" data-code="d22fj9hx">نسخ</button><a class="btn solid" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+</article>
+<article class="svc" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">دخل أساسي مشفّر</span>BioMatrix</h3><div class="tags"><span class="type loop">متكرر</span></div></div>
+<p class="gain">رموز PoY كل شهر<small>رمز دخل أساسي يَعِد بمدفوعات شهرية لمدة 60 عامًا. التسجيل برمز إحالة يمنح 5 رموز إضافية (حتى يناير 2026). من يسجّل مبكرًا يحصل على حصة أكبر</small></p>
+<dl><dt>طريقة الحصول</dt><dd>تحقّق ببياناتك الحيوية في التطبيق، ثم اطلب حصتك كل شهر</dd><dt>السهولة</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>المنطقة</dt><dd><span class="region">عالمي</span></dd></dl>
+<p class="caution">تنبيه: لم نتمكن من تأكيد سعر سوقي لـPoY. استخدمه فقط إذا كنت مرتاحًا لطريقة تعامله مع البيانات الحيوية</p>
+<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot">C66SPN</span></div><button class="btn line" type="button" data-code="C66SPN">نسخ</button><a class="btn solid" href="https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&amp;af_dp=biomatrix%3A%2F%2F&amp;deep_link_sub1=C66SPN" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+</article>
+<article class="svc" data-cat="pointsite" data-type="once">
+<div class="svc-top"><h3><span class="cat">استرداد نقدي</span>Hapitas</h3><div class="tags"><span class="type once">مرة واحدة</span></div></div>
+<p class="gain">حتى 2,300 نقطة<small>عرض أكتوبر 2026 (النقطة = 1 ين). 100 نقطة لتسجيل الدخول 3 أيام متتالية، و1,000 عند جمع 3,000 نقطة من العروض، وغير ذلك</small></p>
+<dl><dt>طريقة الحصول</dt><dd>انضم عبر الإحالة قبل 31 أكتوبر واستوفِ الشروط قبل 30 نوفمبر</dd><dt>السهولة</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>المنطقة</dt><dd><span class="region">اليابان فقط</span></dd></dl>
+
+<div class="slip"><div class="code empty"><span class="label">الرمز</span><span class="dot">قريبًا</span></div><button class="btn line" type="button" disabled>نسخ</button><a class="btn solid" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+</article>
+<article class="svc" data-cat="career" data-type="loop">
+<div class="svc-top"><h3><span class="cat">توظيف</span>WAVEE</h3><div class="tags"><span class="type loop">متكرر</span></div></div>
+<p class="gain">مكافأة في كل مرة تحصل فيها على وظيفة<small>منصة توظيف بالدعوة فقط. في كل مرة يحصل فيها شخص دعوته (أو شخص دعاه) على وظيفة، تحصل على حصة إحالة مرارًا وتكرارًا (7.5–15%). تنشر فيها شركات مثل DMM وGMO Pepabo وظائفها</small></p>
+<dl><dt>طريقة الحصول</dt><dd>سجّل عبر رابط الدعوة</dd><dt>السهولة</dt><dd><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></dd><dt>المنطقة</dt><dd><span class="region">اليابان فقط</span></dd></dl>
+<p class="caution">تنبيه: تكسب فقط عند إتمام التوظيف. النسب مأخوذة من المنشور الرسمي في يونيو 2024</p>
+<div class="slip"><div class="code empty"><span class="label">الرمز</span><span class="dot">قريبًا</span></div><button class="btn line" type="button" disabled>نسخ</button><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+</article><p class="empty-state" id="empty" hidden>لا توجد خدمات مطابقة لهذه الفلاتر.</p></div>
+</section>
+
+<section id="how">
+  <div class="sec-head"><h2>كيف تستخدم رمز الإحالة</h2><span class="label">HOW TO</span></div>
+  <div class="steps">
+    <div class="step"><b>1</b><h3>افتح الرابط</h3><p>اضغط الزر في البطاقة لفتح الموقع أو التطبيق الرسمي. بعض الخدمات تطبّق الإحالة تلقائيًا عبر الرابط.</p></div>
+    <div class="step"><b>2</b><h3>أدخل الرمز</h3><p>أدخل الرمز في شاشة التسجيل. كثير من الخدمات لا تقبله إلا أثناء التسجيل، لذا أدخله فورًا.</p></div>
+    <div class="step"><b>3</b><h3>استوفِ الشروط</h3><p>تصلك المكافأة بعد استيفاء الشروط، مثل التحقق من الهوية أو أول استخدام. تختلف الشروط من خدمة لأخرى.</p></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="sec-head"><h2>الأسئلة الشائعة</h2><span class="label">FAQ</span></div>
+  <div class="faq">
+    <details><summary>هل هذا دخل أساسي حقيقي؟</summary><p>ليس الدخل الذي تقدمه الحكومات. المقصود بـ«UBI» هنا مشاريع مثل GoodDollar وBioMatrix تمنح رموزًا لكل شخص مسجّل، بشكل متكرر ودون شروط. لا يوجد في اليابان دخل أساسي وطني حتى الآن.</p></details>
+    <details><summary>هل أخسر شيئًا إذا استخدمت رمز إحالة؟</summary><p>عادةً لا. الرسوم والشروط نفسها، ومعظم الخدمات تمنح المستخدم الجديد مكافأة أيضًا. يحصل صاحب الإحالة على مكافأة كذلك، ولهذا وُضعت علامة PR على هذه الصفحة.</p></details>
+    <details><summary>هل تخضع المكافآت للضريبة؟</summary><p>في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.</p></details>
+    <details><summary>هل يمكنني استخدامها خارج اليابان؟</summary><p>الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.</p></details>
+  </div>
+</section>
+
+<section id="warn">
+  <div class="sec-head"><h2>قبل التسجيل</h2><span class="label">CAUTION</span></div>
+  <div class="warn">
+    <h3>من المفيد أن تعرف</h3>
+    <ul>
+      <li>تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.</li>
+      <li>تتقلب قيمة المكافآت المدفوعة بالعملات المشفرة صعودًا وهبوطًا.</li>
+      <li>الدورات الباهظة التي تَعِد بـ«100,000 ين شهريًا تلقائيًا» لا علاقة لها بالخدمات المدرجة هنا.</li>
+    </ul>
+  </div>
+</section>
+
+<footer><span>المعلومات محدّثة حتى أكتوبر 2026. هذه ليست نصيحة استثمارية.</span><span class="dot">دخل وأنت نائم</span></footer>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script>
+(function(){
+  var I18N={"count":"عدد الخدمات المعروضة: {n}","copied":"تم نسخ الرمز","selected":"تم تحديد الرمز. انسخه من القائمة"};
+  var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
+      countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
+  function apply(){
+    var n=0;
+    grid.querySelectorAll('.svc').forEach(function(el){
+      var show=(cat==='all'||el.getAttribute('data-cat')===cat)&&(!loopOnly.checked||el.getAttribute('data-type')==='loop');
+      el.hidden=!show; if(show)n++;
+    });
+    empty.hidden=n>0;
+    countEl.textContent=I18N.count.replace('{n}',n);
+  }
+  filters.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    cat=b.getAttribute('data-cat');
+    filters.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    apply();
+  });
+  loopOnly.addEventListener('change',apply);
+  function say(msg){toast.textContent=msg;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
+  grid.addEventListener('click',function(e){
+    var b=e.target.closest('[data-code]'); if(!b) return;
+    var code=b.getAttribute('data-code'),span=b.previousElementSibling.querySelector('.dot');
+    function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
+    try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>躺着也到账 | 加密货币 UBI 应用与推荐奖励</title>
+<meta name="description" content="汇总 GoodDollar、ME Pass、BioMatrix 等加密货币基本收入（UBI）应用，以及返利网站和邀请制服务，附推荐码和最新奖励。">
+<link rel="canonical" href="https://neteru-nyukin.eltociear.workers.dev/zh/">
+<link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/">
+<link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/">
+<link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/">
+<link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/">
+<link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/">
+<link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="躺着也到账 | 加密货币 UBI 应用与推荐奖励">
+<meta property="og:description" content="汇总 GoodDollar、ME Pass、BioMatrix 等加密货币基本收入（UBI）应用，以及返利网站和邀请制服务，附推荐码和最新奖励。">
+<meta property="og:url" content="https://neteru-nyukin.eltociear.workers.dev/zh/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"躺着也到账 | 加密货币 UBI 应用与推荐奖励","inLanguage":"zh-Hans","itemListElement":[{"@type":"ListItem","position":1,"name":"GoodDollar","url":"https://www.gooddollar.org/"},{"@type":"ListItem","position":2,"name":"ME Pass","url":"https://www.mec.me/"},{"@type":"ListItem","position":3,"name":"BioMatrix","url":"https://biomatrix.ai/ja/"},{"@type":"ListItem","position":4,"name":"Hapitas","url":"https://hapitas.jp/"},{"@type":"ListItem","position":5,"name":"WAVEE","url":"https://wavee.world/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Noto+Sans+SC:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
+:root{
+  --paper:#EAF0EE; --surface:#F7FAF9; --ink:#18213B; --muted:#56627A; --line:#C3D0CD;
+  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3;
+  --f-display:"Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-body:"Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-dot:"DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
+  --s1:clamp(2.3rem,6.4vw,4.3rem); --s2:clamp(1.45rem,3.4vw,2.1rem); --s4:.8rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+img{max-width:100%}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;padding-inline:16px;padding-block:0 48px}
+.wrap{max-width:1080px;margin-inline:auto}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;line-height:1.25}
+p{margin:0}
+.dot{font-family:var(--f-dot);font-variant-numeric:tabular-nums}
+.label{font-size:var(--s4);letter-spacing:.12em;color:var(--muted)}
+section[id],header[id]{scroll-margin-top:72px}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:2px solid var(--ink);margin-inline:-16px;padding:10px 16px}
+.bar-in{max-width:1080px;margin-inline:auto;display:flex;align-items:center;gap:16px}
+.brand{font-family:var(--f-display);font-size:1.05rem;text-decoration:none;color:var(--ink);white-space:nowrap}
+.brand span{color:var(--accent)}
+.nav{display:flex;gap:18px;margin-inline-start:auto;font-size:.88rem}
+.nav a{color:var(--ink);text-decoration:none}
+.nav a:hover{color:var(--accent)}
+.lang{display:inline-flex;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden;flex:none}
+.lang{margin-inline-start:auto;max-width:100%}
+.lang a{font-size:.8rem;font-weight:700;color:var(--ink);text-decoration:none;padding:3px 11px;white-space:nowrap}
+.nav+.lang{margin-inline-start:0}
+.lang a[aria-current="page"]{background:var(--ink);color:var(--paper)}
+
+.pr{font-size:.78rem;color:var(--muted);padding-block:12px 0}
+.pr b{display:inline-block;background:var(--ink);color:var(--paper);font-size:.7rem;padding:0 7px;border-radius:3px;margin-inline-end:6px;letter-spacing:.08em}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,5vw,56px);align-items:center;padding-block:clamp(32px,6vw,72px) clamp(28px,5vw,48px)}
+.hero>*{min-width:0}
+.hero h1{font-size:var(--s1)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+html[lang="en"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
+html[lang="hi"]{--f-display:"Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
+html[lang="hi"] body{line-height:1.9}
+html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3{font-weight:700}
+html[lang="hi"] .hero h1{font-size:clamp(2rem,5.4vw,3.6rem);line-height:1.35}
+html[lang="es"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
+html[lang="zh-Hans"]{--f-display:"Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"Noto Sans SC",system-ui,sans-serif}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3{font-weight:900}
+html[lang="ar"]{--f-display:"Noto Kufi Arabic",sans-serif;--f-body:"Noto Sans Arabic",system-ui,sans-serif}
+html[lang="ar"] body{line-height:1.95}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3{font-weight:700}
+html[lang="ar"] .hero h1{font-size:clamp(2rem,5.2vw,3.5rem);line-height:1.45}
+html[lang="ar"] .book{transform:rotate(1.2deg)}
+html[lang="ar"] .hanko{transform:rotate(-14deg)}
+html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar"] .cat{letter-spacing:0}
+.lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
+.lede b{color:var(--ink)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.stats{display:flex;flex-wrap:wrap;gap:20px 28px;margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
+.stats div{display:grid}
+.stats .dot{font-size:1.7rem;line-height:1.1}
+.stats span:last-child{font-size:.78rem;color:var(--muted)}
+
+.book{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 16px 22px;
+  background-image:repeating-radial-gradient(circle at 100% 0,transparent 0 9px,var(--accent-soft) 9px 10px);
+  box-shadow:0 1px 0 var(--line),0 18px 40px -24px rgba(20,30,60,.35);transform:rotate(-1.2deg)}
+.book-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:4px}
+.book-head b{font-family:var(--f-display);font-weight:400;font-size:1rem}
+.ledger{overflow-x:auto}
+.ledger table{width:100%;border-collapse:collapse;min-width:340px;font-size:.9rem}
+.ledger th{font-family:var(--f-body);font-weight:500;font-size:.68rem;color:var(--muted);text-align:start;padding:6px;border-bottom:1px solid var(--line)}
+.ledger td{padding:9px 6px;border-bottom:1px dashed var(--line);white-space:nowrap}
+.ledger .n{text-align:end}
+.ledger td.in{color:var(--pos)}
+.ledger tbody tr{animation:print .5s steps(6) both}
+.ledger tbody tr:nth-child(2){animation-delay:.35s}.ledger tbody tr:nth-child(3){animation-delay:.7s}
+.ledger tbody tr:nth-child(4){animation-delay:1.05s}.ledger tbody tr:nth-child(5){animation-delay:1.4s}
+@keyframes print{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.hanko{position:absolute;inset-inline-end:14px;bottom:-22px;width:86px;height:86px;border:3px solid var(--stamp);border-radius:50%;color:var(--stamp);
+  display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-size:.74rem;line-height:1.2;transform:rotate(14deg);background:var(--surface)}
+.note{font-size:.72rem;color:var(--muted);margin-top:10px}
+
+/* sections */
+section{padding-block:clamp(44px,7vw,72px) 0}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-top:2px solid var(--ink);padding-top:14px;margin-bottom:20px}
+.sec-head h2{font-size:var(--s2)}
+.sec-head .label{margin-inline-start:auto}
+.intro{max-width:44em;color:var(--muted);margin-bottom:20px}
+
+/* buttons */
+.btn{font:inherit;font-weight:700;font-size:.9rem;border:0;border-radius:4px;padding:8px 16px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--accent)}
+.btn.line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+/* tools */
+.tools{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:14px}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{font:inherit;font-size:.86rem;color:var(--ink);background:transparent;border:1.5px solid var(--ink);padding:3px 13px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.filters button span{font-family:var(--f-dot);margin-inline-start:5px;opacity:.7}
+.switch{display:inline-flex;align-items:center;gap:8px;font-size:.86rem;margin-inline-start:auto;cursor:pointer}
+.switch input{width:18px;height:18px;accent-color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.8rem;color:var(--muted);margin-bottom:20px}
+.count{font-size:.8rem;color:var(--muted);margin-bottom:10px}
+
+/* service cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.svc-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.svc h3{margin:0;font-size:1.15rem;line-height:1.35}
+.cat{font-size:.72rem;color:var(--muted);display:block;font-weight:400;letter-spacing:.06em}
+.tags{display:flex;gap:4px;flex:none}
+.type,.region{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.type.loop{background:var(--pos-soft);color:var(--pos)}
+.type.once{background:var(--accent-soft);color:var(--accent)}
+.region{border:1px solid var(--line);color:var(--muted);font-weight:500}
+.gain{font-family:var(--f-dot);font-size:1.3rem;line-height:1.35;color:var(--pos)}
+.gain small{display:block;font-family:var(--f-body);font-size:.76rem;color:var(--muted);margin-top:3px;line-height:1.6}
+.svc dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:.88rem}
+.svc dt{color:var(--muted)}
+.svc dd{margin:0;min-width:0}
+.meter{display:inline-flex;gap:3px;vertical-align:middle}
+.meter i{width:12px;height:12px;border-radius:2px;background:var(--line)}
+.meter i.on{background:var(--accent)}
+.caution{font-size:.8rem;color:var(--stamp)}
+.slip{margin-top:auto;display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:4px}
+.code{border:1.5px dashed var(--muted);border-radius:4px;padding:6px 10px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+.code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.code .label{letter-spacing:.06em;flex:none}
+.code.empty .dot{color:var(--muted);font-size:.88rem}
+.slip .solid{grid-column:1/-1}
+.empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:6px;padding:28px;text-align:center;color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.step{border-top:1px solid var(--line);padding-top:12px}
+.step b{font-family:var(--f-dot);font-size:1.5rem;color:var(--accent);display:block}
+.step h3{margin:0 0 4px;font-size:1rem}
+.step p{font-size:.92rem;color:var(--muted)}
+
+/* faq */
+.faq{display:grid;gap:0;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-dot);color:var(--accent);font-size:1.2rem;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq p{margin-top:8px;color:var(--muted);max-width:46em}
+
+.warn{border:2px solid var(--stamp);border-radius:6px;padding:22px;background:var(--surface)}
+.warn h3{margin:0 0 10px;color:var(--stamp);font-family:var(--f-display);font-weight:400;font-size:1.25rem}
+.warn ul{margin:0;padding-inline-start:1.2em;display:grid;gap:6px}
+
+footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-size:.8rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:8px 18px;border-radius:999px;font-size:.88rem;z-index:10}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr}
+  .book{transform:none}
+  .steps{grid-template-columns:1fr}
+  .nav{display:none}
+  .switch{margin-inline-start:0}
+  .bar-in{flex-wrap:wrap;row-gap:8px}
+  .lang{order:3;overflow-x:auto}
+}
+@media (prefers-reduced-motion:reduce){.ledger tbody tr{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="bar-in">
+    <a class="brand" href="#top">躺着也<span>到账</span></a>
+    <nav class="nav" aria-label="栏目">
+      <a href="#list">服务</a><a href="#how">使用方法</a><a href="#faq">常见问题</a>
+    </nav>
+    <div class="lang" role="group" aria-label="语言"><a href="/" hreflang="en" lang="en">EN</a><a href="/ja/" hreflang="ja" lang="ja">日本語</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">中文</a><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
+  </div>
+</div>
+
+<div class="wrap">
+<p class="pr"><b>PR</b><span>本页包含推荐链接和推荐码。通过它们注册时，网站运营者也可能获得奖励。</span></p>
+
+<header class="hero" id="top">
+  <div>
+    <p class="label">加密货币 UBI 应用与推荐奖励</p>
+    <h1>注册一次，<br>躺着也能<br><em>到账</em>。</h1>
+    <p class="lede">从每天或每月发放代币的<b>加密货币基本收入</b>项目，到通过推荐加入即可获得奖励的<b>返利网站和邀请制服务</b>，一页看全。</p>
+    <div class="cta">
+      <a class="btn solid" href="#list">查看服务</a>
+      <a class="btn line" href="#how">使用方法</a>
+    </div>
+    <div class="stats">
+      <div><span class="dot">5</span><span>收录服务</span></div>
+      <div><span class="dot">4</span><span>持续到账</span></div>
+      <div><span class="dot">3</span><span>日本以外可用</span></div>
+      <div><span class="dot">2026.10</span><span>最后核实</span></div>
+    </div>
+  </div>
+  <div class="book" aria-hidden="true">
+    <div class="book-head"><b>存款明细</b><span class="dot label">NO.0001</span></div>
+    <div class="ledger">
+      <table class="dot">
+        <thead><tr><th>日期</th><th>摘要</th><th class="n">存入</th></tr></thead>
+        <tbody>
+          <tr><td>26-10-01</td><td>发放 G$</td><td class="n in">每日</td></tr>
+          <tr><td>26-10-02</td><td>发放 MEC</td><td class="n in">每日</td></tr>
+          <tr><td>26-10-05</td><td>发放 PoY</td><td class="n in">每月</td></tr>
+          <tr><td>26-10-06</td><td>推荐 HAPITAS</td><td class="n in">2,300P</td></tr>
+          <tr><td>26-10-07</td><td>奖励 WAVEE</td><td class="n in">匹配时</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">仅为示意。实际奖励和条件请查看各卡片。</p>
+    <div class="hanko">躺着<br>到账</div>
+  </div>
+</header>
+
+<section id="list">
+  <div class="sec-head"><h2>服务一览</h2><span class="label">REFERRAL LIST</span></div>
+  <div class="tools">
+    <div class="filters" role="group" id="filters" aria-label="按类别筛选"><button type="button" data-cat="all" aria-pressed="true">全部<span>5</span></button><button type="button" data-cat="crypto-bi" aria-pressed="false">加密货币 UBI<span>3</span></button><button type="button" data-cat="pointsite" aria-pressed="false">返利网站<span>1</span></button><button type="button" data-cat="career" aria-pressed="false">工作匹配<span>1</span></button></div>
+    <label class="switch" for="loopOnly"><input type="checkbox" id="loopOnly"><span>只看持续到账</span></label>
+  </div>
+  <div class="legend">
+    <span><span class="type loop">持续</span>&nbsp; <span>注册后可反复获得</span></span>
+    <span><span class="type once">一次性</span>&nbsp; <span>通过推荐注册可获得一次性奖励</span></span>
+    <span><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i></span>&nbsp; <span>轻松度（本站主观评分）</span></span>
+  </div>
+  <p class="count" id="count" aria-live="polite">显示 5 项服务</p>
+  <div class="grid" id="grid"><article class="svc" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>GoodDollar</h3><div class="tags"><span class="type loop">持续</span></div></div>
+<p class="gain">每天领取 G$ 代币<small>非营利 UBI 协议。每 24 小时可在应用中领取一次，当天的奖池由所有领取者平分</small></p>
+<dl><dt>获取方式</dt><dd>在应用中进行人脸身份验证</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<p class="caution">注意：2026 年 5 月发生安全事件，储备金正在审查中。每日金额也很少</p>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot">KgChqUuJic</span></div><button class="btn line" type="button" data-code="KgChqUuJic">复制</button><a class="btn solid" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+</article>
+<article class="svc" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>ME Pass</h3><div class="tags"><span class="type loop">持续</span></div></div>
+<p class="gain">每天领取 MEC 代币<small>Meta Earth 的钱包应用。完成验证的用户可获得 1 MEC 作为“无条件基本收入”，每日签到也有少量奖励</small></p>
+<dl><dt>获取方式</dt><dd>通过邀请链接注册，并在应用中完成 KYC</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<p class="caution">注意：截至 2026 年 10 月，MEC 尚未在任何交易所上市，没有市场价格。只能通过点对点交易变现</p>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot">d22fj9hx</span></div><button class="btn line" type="button" data-code="d22fj9hx">复制</button><a class="btn solid" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+</article>
+<article class="svc" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>BioMatrix</h3><div class="tags"><span class="type loop">持续</span></div></div>
+<p class="gain">每月领取 PoY 代币<small>承诺 60 年每月发放的 UBI 代币。使用推荐码注册可获得 5 枚代币奖励（截至 2026 年 1 月）。越早注册分配越多</small></p>
+<dl><dt>获取方式</dt><dd>在应用中通过生物识别验证后，每月领取</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
+<p class="caution">注意：我们未能确认 PoY 的市场价格。请在接受其生物识别数据处理方式后再使用</p>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot">C66SPN</span></div><button class="btn line" type="button" data-code="C66SPN">复制</button><a class="btn solid" href="https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&amp;af_dp=biomatrix%3A%2F%2F&amp;deep_link_sub1=C66SPN" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+</article>
+<article class="svc" data-cat="pointsite" data-type="once">
+<div class="svc-top"><h3><span class="cat">返利网站</span>Hapitas</h3><div class="tags"><span class="type once">一次性</span></div></div>
+<p class="gain">最高 2,300 积分<small>2026 年 10 月活动（1 积分 = 1 日元）。连续登录 3 天得 100 积分，通过广告累计获得 3,000 积分再得 1,000 积分等</small></p>
+<dl><dt>获取方式</dt><dd>10 月 31 日前通过推荐注册，并于 11 月 30 日前达成条件</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">仅限日本</span></dd></dl>
+
+<div class="slip"><div class="code empty"><span class="label">CODE</span><span class="dot">即将推出</span></div><button class="btn line" type="button" disabled>复制</button><a class="btn solid" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+</article>
+<article class="svc" data-cat="career" data-type="loop">
+<div class="svc-top"><h3><span class="cat">工作匹配</span>WAVEE</h3><div class="tags"><span class="type loop">持续</span></div></div>
+<p class="gain">每次找到工作都有匹配奖励<small>完全邀请制的工作匹配平台。你邀请的人（或其邀请的人）每次找到工作，你都能反复获得推荐分成（7.5–15%）。DMM、GMO Pepabo 等公司在此发布职位</small></p>
+<dl><dt>获取方式</dt><dd>通过邀请链接注册</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">仅限日本</span></dd></dl>
+<p class="caution">注意：只有在工作匹配成功时才有收入。分成比例来自 2024 年 6 月的官方 note</p>
+<div class="slip"><div class="code empty"><span class="label">CODE</span><span class="dot">即将推出</span></div><button class="btn line" type="button" disabled>复制</button><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+</article><p class="empty-state" id="empty" hidden>没有符合条件的服务。</p></div>
+</section>
+
+<section id="how">
+  <div class="sec-head"><h2>如何使用推荐码</h2><span class="label">HOW TO</span></div>
+  <div class="steps">
+    <div class="step"><b>1</b><h3>打开链接</h3><p>点击卡片上的按钮，打开官方网站或应用。部分服务通过链接即可自动关联推荐。</p></div>
+    <div class="step"><b>2</b><h3>输入推荐码</h3><p>在注册页面输入推荐码。很多服务只在注册时接受推荐码，请当场输入。</p></div>
+    <div class="step"><b>3</b><h3>满足条件</h3><p>完成身份验证或首次使用等条件后即可获得奖励。各服务的条件不同。</p></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="sec-head"><h2>常见问题</h2><span class="label">FAQ</span></div>
+  <div class="faq">
+    <details><summary>这是真正的基本收入吗？</summary><p>不是政府发放的那种。这里的“UBI”指的是像 GoodDollar 和 BioMatrix 这样，无条件、反复向每位注册者发放代币的项目。日本目前还没有国家层面的基本收入。</p></details>
+    <details><summary>使用推荐码会吃亏吗？</summary><p>通常不会。手续费和条件都一样，而且大多数服务也会给新用户奖励。推荐人同样会获得奖励，因此本页标注了 PR。</p></details>
+    <details><summary>获得的奖励需要缴税吗？</summary><p>在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。</p></details>
+    <details><summary>在日本以外也能用吗？</summary><p>标有“全球”的服务（GoodDollar、ME Pass、BioMatrix）在日本以外也能使用。其余服务面向日本居民。</p></details>
+  </div>
+</section>
+
+<section id="warn">
+  <div class="sec-head"><h2>注册之前</h2><span class="label">CAUTION</span></div>
+  <div class="warn">
+    <h3>需要了解的事</h3>
+    <ul>
+      <li>奖励金额和条件经常变化。注册前请务必查看官方活动页面。</li>
+      <li>以加密货币发放的奖励，价格会上下波动。</li>
+      <li>以“每月自动到账 10 万日元”为噱头、推销高价课程的，与本页介绍的服务毫无关系。</li>
+    </ul>
+  </div>
+</section>
+
+<footer><span>信息截至 2026 年 10 月。不构成投资建议。</span><span class="dot">躺着也到账</span></footer>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script>
+(function(){
+  var I18N={"count":"显示 {n} 项服务","copied":"推荐码已复制","selected":"已选中推荐码，请从菜单中复制"};
+  var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
+      countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
+  function apply(){
+    var n=0;
+    grid.querySelectorAll('.svc').forEach(function(el){
+      var show=(cat==='all'||el.getAttribute('data-cat')===cat)&&(!loopOnly.checked||el.getAttribute('data-type')==='loop');
+      el.hidden=!show; if(show)n++;
+    });
+    empty.hidden=n>0;
+    countEl.textContent=I18N.count.replace('{n}',n);
+  }
+  filters.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    cat=b.getAttribute('data-cat');
+    filters.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    apply();
+  });
+  loopOnly.addEventListener('change',apply);
+  function say(msg){toast.textContent=msg;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
+  grid.addEventListener('click',function(e){
+    var b=e.target.closest('[data-code]'); if(!b) return;
+    var code=b.getAttribute('data-code'),span=b.previousElementSibling.querySelector('.dot');
+    function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
+    try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
+  });
+})();
+</script>
+</body>
+</html>

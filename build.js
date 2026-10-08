@@ -5,8 +5,21 @@ const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, CATS, T } = require('./src/data
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
-const LANG_NAMES = { en: 'EN', ja: '日本語', hi: 'हिन्दी' };
-const OG_LOCALE = { en: 'en_US', ja: 'ja_JP', hi: 'hi_IN' };
+const LANG_NAMES = { en: 'EN', ja: '日本語', zh: '中文', hi: 'हिन्दी', es: 'Español', ar: 'العربية' };
+const LANG_TAG = { en: 'en', ja: 'ja', zh: 'zh-Hans', hi: 'hi', es: 'es', ar: 'ar' }; // html lang / hreflang
+const OG_LOCALE = { en: 'en_US', ja: 'ja_JP', zh: 'zh_CN', hi: 'hi_IN', es: 'es_ES', ar: 'ar_AR' };
+const RTL = new Set(['ar']);
+// 共通: 見出しの Dela Gothic One と数字の DotGothic16。本文フォントは言語ごと
+const BASE_FONTS = 'family=Dela+Gothic+One&family=DotGothic16';
+const LANG_FONTS = {
+  en: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
+  ja: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
+  es: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
+  zh: 'family=Noto+Sans+SC:wght@400;500;700;900',
+  hi: 'family=Noto+Sans+Devanagari:wght@400;500;700',
+  ar: 'family=Noto+Kufi+Arabic:wght@700&family=Noto+Sans+Arabic:wght@400;500;700',
+};
+const fontsUrl = l => `https://fonts.googleapis.com/css2?${BASE_FONTS}&${LANG_FONTS[l]}&display=swap`;
 
 const live = SERVICES.filter(s => s.ref); // 紹介リンクがあるものだけ表示
 const urlPath = l => (l === DEFAULT_LANG ? '/' : `/${l}/`);
@@ -44,9 +57,9 @@ function filters(lang) {
 function head(lang) {
   const L = T[lang];
   const title = `${L.title} | ${L.eyebrow}`;
-  const alts = LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${abs(l)}">`).join('\n');
+  const alts = LANGS.map(l => `<link rel="alternate" hreflang="${LANG_TAG[l]}" href="${abs(l)}">`).join('\n');
   const ld = {
-    '@context': 'https://schema.org', '@type': 'ItemList', name: title, inLanguage: lang,
+    '@context': 'https://schema.org', '@type': 'ItemList', name: title, inLanguage: LANG_TAG[lang],
     itemListElement: live.map((s, i) => ({ '@type': 'ListItem', position: i + 1, name: lang === 'ja' ? s.name : s.nameEn || s.name, url: s.official })),
   };
   return `<title>${esc(title)}</title>
@@ -107,7 +120,8 @@ for (const lang of LANGS) {
   });
   const vars = {
     head: head(lang),
-    langSwitch: LANGS.map(l => `<a href="${urlPath(l)}" hreflang="${l}" lang="${l}"${l === lang ? ' aria-current="page"' : ''}>${LANG_NAMES[l]}</a>`).join(''),
+    langSwitch: LANGS.map(l => `<a href="${urlPath(l)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}"${RTL.has(l) ? ' dir="rtl"' : ''}${l === lang ? ' aria-current="page"' : ''}>${LANG_NAMES[l]}</a>`).join(''),
+    fonts: fontsUrl(lang),
     filters: filters(lang),
     cards: live.map(s => card(s, lang)).join('\n'),
     count: esc(L.count.replace('{n}', live.length)),
@@ -122,7 +136,7 @@ for (const lang of LANGS) {
   });
   const cut = body.indexOf('</style>') + '</style>'.length;
   const html = `<!doctype html>
-<html lang="${lang}">
+<html lang="${LANG_TAG[lang]}"${RTL.has(lang) ? ' dir="rtl"' : ''}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -139,7 +153,7 @@ ${body.slice(cut).trim()}
 }
 
 const today = new Date().toISOString().slice(0, 10);
-const alts = LANGS.map(l => `    <xhtml:link rel="alternate" hreflang="${l}" href="${abs(l)}"/>`).join('\n');
+const alts = LANGS.map(l => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[l]}" href="${abs(l)}"/>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${LANGS.map(l => `  <url>
