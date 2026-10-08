@@ -610,7 +610,8 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   // このページを開いてからの時間
   var t0=Date.now(),timerEl=document.getElementById('timer');
   function pad(n){return n<10?'0'+n:''+n}
-  setInterval(function(){var s=Math.floor((Date.now()-t0)/1000);timerEl.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)},1000);
+  function tick(){var s=Math.floor((Date.now()-t0)/1000);timerEl.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)}
+  setInterval(tick,1000);
   // 言語切替で読んでいた位置と絞り込みを引き継ぐ（文章量が違うのでpxではなく要素＋割合で）
   var KEY='langPos',bar=document.querySelector('.bar');
   function barB(){return bar?bar.getBoundingClientRect().bottom:0}
@@ -621,11 +622,13 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
       var r=el.getBoundingClientRect(); if(!r.height||r.bottom<=y||(best&&r.top>y)) return;
       best=el; f=Math.max(0,(y-r.top)/r.height);
     });
-    try{sessionStorage.setItem(KEY,JSON.stringify({id:best&&window.scrollY>0?best.id:'',f:f,cat:cat,loop:loopOnly.checked,t:Date.now()}))}catch(err){}
+    try{sessionStorage.setItem(KEY,JSON.stringify({id:best&&window.scrollY>0?best.id:'',f:f,cat:cat,loop:loopOnly.checked,t0:t0,t:Date.now()}))}catch(err){}
   });
   var s=null;
   try{s=JSON.parse(sessionStorage.getItem(KEY));sessionStorage.removeItem(KEY)}catch(err){}
   if(s&&Date.now()-s.t<30000){
+    // 経過時間も引き継ぐ（未来や24時間超の値は無視）
+    if(typeof s.t0==='number'&&s.t0<=Date.now()&&Date.now()-s.t0<864e5){t0=s.t0;tick()}
     var fb=s.cat&&filters.querySelector('button[data-cat="'+s.cat+'"]');
     if(fb&&s.cat!=='all') fb.click();
     if(s.loop){loopOnly.checked=true;apply()}
