@@ -4,6 +4,8 @@
 
 公開先: https://neteru-nyukin.eltociear.workers.dev
 
+Search Console: [neteru-nyukin.eltociear.workers.dev](https://search.google.com/search-console?resource_id=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2F)（URL プレフィックス、`google-site-verification` メタタグで確認済み）
+
 ## 構成
 
 - `src/data.js` … サービス一覧（`SERVICES`）、カテゴリ名、各言語の文言、サイトURL
