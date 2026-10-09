@@ -56,18 +56,26 @@ function trustLegend(lang) {
 const NEW_MS = 14 * 864e5;
 const isNew = s => s.added && Date.now() - Date.parse(s.added) < NEW_MS;
 
+// 申し込みボタン。codeOnly はリンク先が公式ページなので sponsored を付けない
+function cta(s, L) {
+  const label = s.codeOnly ? L.goCode : s.ref ? L.goRef : L.goOff;
+  return `<a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener${s.codeOnly ? '' : ' sponsored'}">${esc(label)}</a>`;
+}
+
 function card(s, lang) {
   const L = T[lang];
   const d = s[lang] || s.en;
   const name = lang === 'ja' ? s.name : s.nameEn || s.name;
-  const has = !!s.code; // 紹介リンクがあるものはコード欄・コピーボタンを出さない
+  const has = !!s.code;
+  // 紹介リンクがあるものはコード欄・コピーボタンを出さない。codeOnly はリンクが公式ページだけなのでコードを出す
+  const showCode = !s.ref || s.codeOnly;
   return `<article class="svc" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
 <div class="svc-top"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div>
 <p class="gain">${esc(d.gain)}<small>${esc(d.note)}</small></p>
 <dl><dt>${esc(L.need)}</dt><dd>${esc(d.need)}</dd><dt>${esc(L.ease)}</dt><dd>${meter(s.ease)}</dd><dt>${esc(L.region)}</dt><dd><span class="region">${esc(s.global ? L.global : L.jp)}</span></dd></dl>
 ${trust(s, lang)}
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
-<div class="slip">${s.ref ? '' : `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot">${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>`}<a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener sponsored">${esc(s.ref ? L.goRef : L.goOff)}</a></div>
+<div class="slip">${showCode ? `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot"${has ? ' dir="ltr"' : ''}>${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>` : ''}${cta(s, L)}</div>
 </article>`;
 }
 
@@ -86,7 +94,7 @@ function picks(lang) {
     const name = lang === 'ja' ? s.name : s.nameEn || s.name;
     return `<article class="pick"><div class="pick-top"><span class="rank dot">${i + 1}</span><div><span class="cat">${esc(CATS[lang][s.cat])}</span><h3>${esc(name)}</h3></div></div>
 <p>${esc(p[lang] || p.en)}</p>
-<a class="btn solid" href="${esc(s.ref)}" target="_blank" rel="noopener sponsored">${esc(L.goRef)}</a>
+${cta(s, L)}
 <a class="more" href="#svc-${s.id}">${esc(L.pickMore)} ↓</a>
 </article>`;
   }).join('\n');

@@ -447,20 +447,51 @@ module.exports = {
       "type": "loop",
       "global": false,
       "ease": 5,
-      "official": "https://trip-mile.com/",
-      "code": "",
-      "ref": "",
+      "official": "https://www.trip-mile.com/",
+      "code": "49-icnRep",
+      "ref": "https://www.trip-mile.com/",
+      "codeOnly": true,
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
+      "added": "2026-10-09",
       "ja": {
-        "gain": "5,000マイル ＋ 移動するたびマイル",
-        "note": "5,000マイルは約50円相当。あとは歩く・電車・車の移動で自動でたまる",
-        "need": "アプリの初回起動時に招待コードを入力し、会員登録まで完了",
-        "caution": "コードは初回起動時しか入力できない。位置情報はずっとオン"
+        "gain": "5,000マイル ＋ 移動や歩数でマイル",
+        "note": "スマホを持って移動したり歩いたりするだけでマイルがたまるアプリ。招待コードを入れると、紹介した側・された側の両方に5,000マイル（2026年7月時点の情報）。マイルはギフト券や現金などに交換できる",
+        "need": "アプリを入れて、登録時に招待コード 49-icnRep を入力する",
+        "caution": "特典の額やタイミングは変わることがある。位置情報の常時許可が必要で、電池を少し多く使う"
       },
       "en": {
-        "gain": "5,000 miles + miles every time you move",
-        "note": "5,000 miles is about ¥50. After that, walking, trains and driving earn miles automatically",
-        "need": "Enter the code on first launch and finish registering",
-        "caution": "The code can only be entered on first launch. Location access stays on"
+        "gain": "5,000 miles + miles for moving and walking",
+        "note": "An app that earns miles just by carrying your phone as you travel and walk. Enter an invite code and both you and the person who invited you get 5,000 miles (as of July 2026). Miles can be exchanged for gift cards, cash and more",
+        "need": "Install the app and enter the invite code 49-icnRep when you register",
+        "caution": "The bonus amount and timing may change. It needs “always on” location access and uses a bit more battery"
+      },
+      "zh": {
+        "gain": "5,000 里程 ＋ 移动和步数也能赚里程",
+        "note": "只要带着手机移动或走路就能累积里程的应用。填写邀请码后，邀请人和被邀请人双方各得 5,000 里程（2026 年 7 月的信息）。里程可兑换礼品卡、现金等",
+        "need": "安装应用，注册时填写邀请码 49-icnRep",
+        "caution": "奖励金额和发放时间可能会变。需要始终允许位置信息，耗电会稍多一些"
+      },
+      "hi": {
+        "gain": "5,000 माइल + चलने-फिरने और कदमों पर माइल",
+        "note": "एक ऐप जिसमें बस फ़ोन साथ लेकर सफ़र करने या पैदल चलने से माइल जमा होते हैं। इनवाइट कोड डालने पर बुलाने वाले और नए यूज़र, दोनों को 5,000 माइल मिलते हैं (जुलाई 2026 की जानकारी)। माइल को गिफ़्ट कार्ड, नकद आदि में बदल सकते हैं",
+        "need": "ऐप इंस्टॉल करें और रजिस्ट्रेशन के समय इनवाइट कोड 49-icnRep डालें",
+        "caution": "बोनस की राशि और समय बदल सकते हैं। लोकेशन की अनुमति हमेशा चालू रखनी होती है और बैटरी थोड़ी ज़्यादा खर्च होती है"
+      },
+      "es": {
+        "gain": "5.000 millas + millas por moverte y caminar",
+        "note": "Una app que suma millas solo con llevar el móvil mientras te desplazas o caminas. Si introduces un código de invitación, tú y quien te invitó recibís 5.000 millas cada uno (información de julio de 2026). Las millas se canjean por tarjetas regalo, dinero y más",
+        "need": "Instala la app e introduce el código de invitación 49-icnRep al registrarte",
+        "caution": "El importe y el momento del bono pueden cambiar. Requiere permitir la ubicación siempre y gasta algo más de batería"
+      },
+      "ar": {
+        "gain": "5,000 ميل + أميال مقابل التنقل والمشي",
+        "note": "تطبيق تجمع فيه الأميال بمجرد حمل هاتفك أثناء التنقل أو المشي. عند إدخال رمز الدعوة يحصل كلٌّ من الداعي والمستخدم الجديد على 5,000 ميل (معلومات يوليو 2026). يمكن استبدال الأميال ببطاقات هدايا أو نقود وغيرها",
+        "need": "ثبّت التطبيق وأدخل رمز الدعوة ⁦49-icnRep⁩ عند التسجيل",
+        "caution": "قد يتغير مبلغ المكافأة وموعدها. يتطلب السماح بالموقع دائمًا ويستهلك البطارية أكثر قليلًا"
       }
     },
     {
@@ -867,6 +898,15 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-10-09",
+      "ja": "トリマを追加",
+      "en": "Added Trima",
+      "zh": "新增 Trima",
+      "hi": "Trima जोड़ा",
+      "es": "Añadido Trima",
+      "ar": "أضفنا ⁦Trima⁩"
+    },
+    {
+      "date": "2026-10-09",
       "ja": "InterLinkを追加",
       "en": "Added InterLink",
       "zh": "新增 InterLink",
@@ -1085,6 +1125,7 @@ module.exports = {
       "copy": "コピー",
       "goRef": "紹介リンクから登録する",
       "goOff": "公式サイトを見る",
+      "goCode": "アプリを入れてコードを入力",
       "copied": "コードをコピーしました",
       "selected": "選択しました。長押しでコピーできます",
       "title": "寝てても入金",
@@ -1190,6 +1231,7 @@ module.exports = {
       "copy": "Copy",
       "goRef": "Sign up with referral",
       "goOff": "Visit official site",
+      "goCode": "Get the app & enter the code",
       "copied": "Code copied",
       "selected": "Code selected. Copy it from the menu",
       "title": "Paid While You Sleep",
@@ -1295,6 +1337,7 @@ module.exports = {
       "copy": "कॉपी",
       "goRef": "रेफ़रल से साइन अप करें",
       "goOff": "आधिकारिक साइट देखें",
+      "goCode": "ऐप इंस्टॉल करें और कोड डालें",
       "copied": "कोड कॉपी हो गया",
       "selected": "कोड चुन लिया गया। मेन्यू से कॉपी करें",
       "title": "सोते हुए भी कमाई",
@@ -1400,6 +1443,7 @@ module.exports = {
       "copy": "复制",
       "goRef": "通过推荐链接注册",
       "goOff": "查看官方网站",
+      "goCode": "安装应用并填写邀请码",
       "copied": "推荐码已复制",
       "selected": "已选中推荐码，请从菜单中复制",
       "title": "躺着也到账",
@@ -1505,6 +1549,7 @@ module.exports = {
       "copy": "Copiar",
       "goRef": "Registrarme con referido",
       "goOff": "Ver web oficial",
+      "goCode": "Instala la app e introduce el código",
       "copied": "Código copiado",
       "selected": "Código seleccionado. Cópialo desde el menú",
       "title": "Cobra mientras duermes",
@@ -1610,6 +1655,7 @@ module.exports = {
       "copy": "نسخ",
       "goRef": "سجّل عبر الإحالة",
       "goOff": "زيارة الموقع الرسمي",
+      "goCode": "ثبّت التطبيق وأدخل الرمز",
       "copied": "تم نسخ الرمز",
       "selected": "تم تحديد الرمز. انسخه من القائمة",
       "title": "دخل وأنت نائم",
