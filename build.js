@@ -62,6 +62,15 @@ function cta(s, L) {
   return `<a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener${s.codeOnly ? '' : ' sponsored'}">${esc(label)}</a>`;
 }
 
+// アイコン代わりのモノグラム（ロゴは使わない）。日本語名は頭の1文字、英字は大文字2つか頭2文字
+const MONO = { honeygain: 'Hg', pinetwork: 'Pi', wavee: 'W' };
+function mono(s, name) {
+  if (MONO[s.id] && /^[\x00-\x7f]/.test(name)) return MONO[s.id];
+  if (!/^[\x00-\x7f]/.test(name)) return name[0];
+  const caps = name.replace(/[^A-Z]/g, '');
+  return caps.length >= 2 ? caps.slice(0, 2) : name.replace(/[^A-Za-z]/g, '').slice(0, 2);
+}
+
 function card(s, lang) {
   const L = T[lang];
   const d = s[lang] || s.en;
@@ -69,11 +78,12 @@ function card(s, lang) {
   const has = !!s.code;
   // 紹介リンクがあるものはコード欄・コピーボタンを出さない。codeOnly はリンクが公式ページだけなのでコードを出す
   const showCode = !s.ref || s.codeOnly;
-  return `<article class="svc" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div>
-<p class="gain">${esc(d.gain)}<small>${esc(d.note)}</small></p>
-<dl><dt>${esc(L.need)}</dt><dd>${esc(d.need)}</dd><dt>${esc(L.ease)}</dt><dd>${meter(s.ease)}</dd><dt>${esc(L.region)}</dt><dd><span class="region">${esc(s.global ? L.global : L.jp)}</span></dd></dl>
-${trust(s, lang)}
+  return `<article class="svc rv" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">${esc(mono(s, name))}</span><div class="svc-id"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div></div>
+<p class="gain">${esc(d.gain)}</p>
+<div class="desc"><p id="d-${s.id}">${esc(d.note)}</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-${s.id}" hidden>${esc(L.more)}</button></div>
+<p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
+<div class="meta"><span class="ease"><span>${esc(L.ease)}</span>${meter(s.ease)}</span><span class="region${s.global ? ' world' : ''}"><span class="vh">${esc(L.region)}: </span>${esc(s.global ? L.global : L.jp)}</span>${trust(s, lang)}</div>
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
 <div class="slip">${showCode ? `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot"${has ? ' dir="ltr"' : ''}>${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>` : ''}${cta(s, L)}</div>
 </article>`;
@@ -92,7 +102,7 @@ function picks(lang) {
   const L = T[lang];
   return PICKS.map(p => [p, live.find(s => s.id === p.id)]).filter(([, s]) => s).map(([p, s], i) => {
     const name = lang === 'ja' ? s.name : s.nameEn || s.name;
-    return `<article class="pick"><div class="pick-top"><span class="rank dot">${i + 1}</span><div><span class="cat">${esc(CATS[lang][s.cat])}</span><h3>${esc(name)}</h3></div></div>
+    return `<article class="pick rv"><div class="pick-top"><span class="rank dot">${i + 1}</span><div><span class="cat">${esc(CATS[lang][s.cat])}</span><h3>${esc(name)}</h3></div></div>
 <p>${esc(p[lang] || p.en)}</p>
 ${cta(s, L)}
 <a class="more" href="#svc-${s.id}">${esc(L.pickMore)} ↓</a>
@@ -168,7 +178,7 @@ ${alts}
 
 function clientScript(lang) {
   const L = T[lang];
-  const i18n = { count: L.count, copied: L.copied, selected: L.selected, linkCopied: L.linkCopied, shareText: L.shareText, url: abs(lang) };
+  const i18n = { more: L.more, less: L.less, count: L.count, copied: L.copied, selected: L.selected, linkCopied: L.linkCopied, shareText: L.shareText, url: abs(lang) };
   return `<script>
 (function(){
   var I18N=${JSON.stringify(i18n)};
@@ -202,17 +212,54 @@ function clientScript(lang) {
   });
   var ns=document.getElementById('nativeShare');
   if(navigator.share){ns.hidden=false;ns.addEventListener('click',function(){navigator.share({text:I18N.shareText,url:I18N.url}).catch(function(){})})}
+  // 説明文は3行で畳む。はみ出すものだけ「もっと見る」を出す
+  function clampAll(){
+    grid.querySelectorAll('.desc').forEach(function(d){
+      if(d.classList.contains('open')) return;
+      var p=d.firstChild,b=d.lastChild;
+      b.hidden=!(p.scrollHeight>p.clientHeight+1);
+    });
+  }
+  clampAll();
+  if(document.fonts) document.fonts.ready.then(clampAll);
+  grid.addEventListener('click',function(e){
+    var b=e.target.closest('.expand'); if(!b) return;
+    var d=b.parentNode,open=d.classList.toggle('open');
+    b.setAttribute('aria-expanded',open); b.textContent=open?I18N.less:I18N.more;
+  });
+  // スクロールで少しずつ出す（一度だけ）。動きを減らす設定や非対応のときはそのまま見せる
+  var rv=document.querySelectorAll('.rv,.rise');
+  if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(es){
+      var k=0;
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var el=e.target; io.unobserve(el);
+        el.style.transitionDelay=Math.min(k++*70,280)+'ms'; el.classList.add('in');
+        setTimeout(function(){el.style.transitionDelay='';el.classList.add('done')},1100);
+      });
+    },{rootMargin:'0px 0px -40px 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  }else rv.forEach(function(el){el.classList.add('in','done')});
   // このページを開いてからの時間
   var t0=Date.now(),timerEl=document.getElementById('timer');
   function pad(n){return n<10?'0'+n:''+n}
   function tick(){var s=Math.floor((Date.now()-t0)/1000);timerEl.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)}
   setInterval(tick,1000);
   // 言語切替で読んでいた位置と絞り込みを引き継ぐ（文章量が違うのでpxではなく要素＋割合で）
-  var KEY='langPos',bar=document.querySelector('.bar');
+  var KEY='langPos',bar=document.querySelector('.bar'),tools=document.getElementById('tools'),root=document.documentElement;
   function barB(){return bar?bar.getBoundingClientRect().bottom:0}
+  // 一覧の絞り込みバーは上に貼りつくので、その高さをCSSに渡す。貼りついている間は見えている上端がその下になる
+  function stuck(){var r=tools.getBoundingClientRect();return Math.abs(r.top-parseFloat(getComputedStyle(tools).top))<1.5&&window.scrollY>0}
+  function topB(){return stuck()?tools.getBoundingClientRect().bottom:barB()}
+  function measure(){root.style.setProperty('--bar-h',(bar?bar.offsetHeight:0)+'px');root.style.setProperty('--tools-h',tools.offsetHeight+'px')}
+  function onScroll(){tools.classList.toggle('stuck',stuck())}
+  measure(); onScroll();
+  window.addEventListener('resize',function(){measure();onScroll();clampAll()});
+  window.addEventListener('scroll',onScroll,{passive:true});
   document.querySelector('.lang').addEventListener('click',function(e){
     var a=e.target.closest('a'); if(!a||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey) return;
-    var y=barB(),best=null,f=0;
+    var y=topB(),best=null,f=0;
     document.querySelectorAll('header[id],section[id],.svc[id]').forEach(function(el){
       var r=el.getBoundingClientRect(); if(!r.height||r.bottom<=y||(best&&r.top>y)) return;
       best=el; f=Math.max(0,(y-r.top)/r.height);
@@ -227,17 +274,18 @@ function clientScript(lang) {
     var fb=s.cat&&filters.querySelector('button[data-cat="'+s.cat+'"]');
     if(fb&&s.cat!=='all') fb.click();
     if(s.loop){loopOnly.checked=true;apply()}
-    var el=s.id&&document.getElementById(s.id),root=document.documentElement,goneY;
+    var el=s.id&&document.getElementById(s.id),goneY;
     function go(){
       if(!el||el.hidden) return;
-      var r=el.getBoundingClientRect();
       root.style.scrollBehavior='auto';
-      window.scrollTo(0,window.scrollY+r.top+s.f*r.height-barB());
-      root.style.scrollBehavior=''; goneY=window.scrollY;
+      // 絞り込みバーが貼りつくかどうかで上端が変わるので、何回か合わせる
+      for(var i=0;i<3;i++){var r=el.getBoundingClientRect();window.scrollTo(0,window.scrollY+r.top+s.f*r.height-topB())}
+      root.style.scrollBehavior=''; goneY=window.scrollY; onScroll();
     }
     go();
     // フォント等の読込で位置がずれたら、まだ動かしていなければ合わせ直す
     window.addEventListener('load',function(){if(window.scrollY===goneY)go()});
+    if(document.fonts) document.fonts.ready.then(function(){clampAll();if(window.scrollY===goneY)go()});
   }
 })();
 </script>`;

@@ -25,43 +25,47 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/zh.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"躺着也到账 | 加密货币 UBI 应用与推荐奖励","inLanguage":"zh-Hans","itemListElement":[{"@type":"ListItem","position":1,"name":"GoodDollar","url":"https://www.gooddollar.org/"},{"@type":"ListItem","position":2,"name":"ME Pass","url":"https://www.mec.me/"},{"@type":"ListItem","position":3,"name":"BioMatrix","url":"https://biomatrix.ai/ja/"},{"@type":"ListItem","position":4,"name":"Hapitas","url":"https://hapitas.jp/"},{"@type":"ListItem","position":5,"name":"WAVEE","url":"https://wavee.world/"},{"@type":"ListItem","position":6,"name":"Trima","url":"https://www.trip-mile.com/"},{"@type":"ListItem","position":7,"name":"Sweatcoin","url":"https://sweatco.in/"},{"@type":"ListItem","position":8,"name":"Grass","url":"https://www.grass.io/"},{"@type":"ListItem","position":9,"name":"Honeygain","url":"https://www.honeygain.com/"},{"@type":"ListItem","position":10,"name":"Pawns.app","url":"https://pawns.app/"},{"@type":"ListItem","position":11,"name":"Pi Network","url":"https://minepi.com/"},{"@type":"ListItem","position":12,"name":"Delta Kim","url":"https://www.delta.kim/"},{"@type":"ListItem","position":13,"name":"InterLink","url":"https://interlinklabs.ai/"}]}</script>
+<script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Noto+Sans+SC:wght@400;500;700;900&display=swap">
 <style>
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
 :root{
-  --paper:#EAF0EE; --surface:#F7FAF9; --ink:#18213B; --muted:#56627A; --line:#C3D0CD;
-  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B;
+  --paper:#E9EDF6; --paper-2:#F8ECE0; --surface:#FFFFFF; --ink:#18213B; --muted:#56627A; --line:#CFD6E4;
+  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B; --gold:#D99A1E;
+  --shadow:0 1px 2px rgba(20,28,60,.06),0 12px 32px -22px rgba(20,28,60,.4);
   --f-display:"Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
   --f-body:"Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
   --f-dot:"DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
   --s1:clamp(2.3rem,6.4vw,4.3rem); --s2:clamp(1.45rem,3.4vw,2.1rem); --s4:.8rem;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}}
+  --paper:#0E1320; --paper-2:#1D1733; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; --gold:#FFD66B;
+  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 14px 34px -22px rgba(0,0,0,.8); color-scheme:dark}}
 :root[data-theme="dark"]{
-  --paper:#0E1320; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; color-scheme:dark}
+  --paper:#0E1320; --paper-2:#1D1733; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; --gold:#FFD66B;
+  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 14px 34px -22px rgba(0,0,0,.8); color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 img{max-width:100%}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;padding-inline:16px;padding-block:0 48px}
+body{background:linear-gradient(180deg,var(--paper) 25%,var(--paper-2)) var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;padding-inline:16px;padding-block:0;margin:0;min-height:100vh;overflow-x:clip}
 .wrap{max-width:1080px;margin-inline:auto}
 a{color:var(--accent)}
-a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
 h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;line-height:1.25}
 p{margin:0}
 .dot{font-family:var(--f-dot);font-variant-numeric:tabular-nums}
 .label{font-size:var(--s4);letter-spacing:.12em;color:var(--muted)}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-section[id],header[id]{scroll-margin-top:72px}
+section[id],header[id]{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 
 /* top bar */
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:2px solid var(--ink);margin-inline:-16px;padding:10px 16px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 84%,transparent);-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);border-bottom:2px solid var(--ink);margin-inline:-16px;padding:10px 16px}
 .bar-in{max-width:1080px;margin-inline:auto;display:flex;align-items:center;gap:16px}
 .brand{font-family:var(--f-display);font-size:1.05rem;text-decoration:none;color:var(--ink);white-space:nowrap}
 .brand span{color:var(--accent)}
@@ -124,90 +128,147 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
   display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-size:.74rem;line-height:1.2;transform:rotate(14deg);background:var(--surface)}
 .note{font-size:.72rem;color:var(--muted);margin-top:10px}
 
-/* sections */
-section{padding-block:clamp(44px,7vw,72px) 0}
-.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-top:2px solid var(--ink);padding-top:14px;margin-bottom:20px}
+/* sections: 見出しの上に夜の時刻。読み進めるほど朝に近づく */
+section{padding-block:clamp(60px,8vw,100px) 0}
+#picks{--sky1:#4B3BC0;--sky2:#7C5CFF}#list{--sky1:#7C5CFF;--sky2:#C04FA0}#news{--sky1:#C04FA0;--sky2:#E8607A}
+#how{--sky1:#E8607A;--sky2:#F08A4B}#faq{--sky1:#F08A4B;--sky2:#F6B04A}#warn{--sky1:#F6B04A;--sky2:#FFD66B}
+.sec-head{position:relative;display:grid;gap:8px;border-top:1px solid var(--line);padding-top:20px;margin-bottom:24px}
+.sec-head::before{content:"";position:absolute;top:-2px;inset-inline-start:0;width:88px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--sky1),var(--sky2))}
+[dir="rtl"] .sec-head::before{background:linear-gradient(-90deg,var(--sky1),var(--sky2))}
 .sec-head h2{font-size:var(--s2)}
-.sec-head .label{margin-inline-start:auto}
-.intro{max-width:44em;color:var(--muted);margin-bottom:20px}
+.eyebrow{display:flex;align-items:center;gap:10px;margin:0;font-size:.72rem;font-weight:700;letter-spacing:.18em;color:var(--muted)}
+.eyebrow .dot{font-size:.9rem;font-weight:400;letter-spacing:.04em;color:var(--sky2,var(--accent));padding:1px 8px;border-radius:999px;border:1px solid currentColor}
+.intro{max-width:44em;color:var(--muted);margin-bottom:22px}
 
 /* buttons */
-.btn{font:inherit;font-weight:700;font-size:.9rem;border:0;border-radius:4px;padding:8px 16px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+.btn{font:inherit;font-weight:700;font-size:.9rem;border:0;border-radius:8px;padding:8px 16px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
 .btn.solid{background:var(--ink);color:var(--paper)}
 .btn.solid:hover{background:var(--accent)}
 .btn.line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
 .btn[disabled]{opacity:.45;cursor:not-allowed}
 
-/* tools */
-.tools{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:14px}
-.filters{display:flex;flex-wrap:wrap;gap:8px}
-.filters button{font:inherit;font-size:.86rem;color:var(--ink);background:transparent;border:1.5px solid var(--ink);padding:3px 13px;border-radius:999px;cursor:pointer}
-.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-.filters button span{font-family:var(--f-dot);margin-inline-start:5px;opacity:.7}
-.switch{display:inline-flex;align-items:center;gap:8px;font-size:.86rem;margin-inline-start:auto;cursor:pointer}
-.switch input{width:18px;height:18px;accent-color:var(--accent)}
-.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.8rem;color:var(--muted);margin-bottom:20px}
-.count{font-size:.8rem;color:var(--muted);margin-bottom:10px}
+/* tools: 一覧を見ている間は上に貼りつく */
+.tools{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--bar-h,56px) + 8px);z-index:4;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:16px;
+  padding:10px 12px;border-radius:16px;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 80%,transparent);
+  -webkit-backdrop-filter:blur(16px) saturate(1.5);backdrop-filter:blur(16px) saturate(1.5);transition:box-shadow .25s ease,border-color .25s ease}
+.tools.stuck{box-shadow:0 16px 34px -20px rgba(10,15,40,.55);border-color:color-mix(in srgb,var(--accent) 30%,var(--line))}
+/* 貼りついている間は上のバーとのすき間から下の文字が見えないようにする */
+.tools.stuck::before{content:"";position:absolute;z-index:-1;inset-inline:-100vmax;bottom:100%;height:10px;background:color-mix(in srgb,var(--paper) 84%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
+.filters button{font:inherit;font-size:.84rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:3px 12px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;transition:border-color .15s ease,background .15s ease}
+.filters button::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c,var(--muted));flex:none}
+.filters button[data-cat="all"]::before{display:none}
+.filters button:hover{border-color:var(--c,var(--ink))}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.filters button span{font-family:var(--f-dot);opacity:.65}
+.switch{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;margin-inline-start:auto;cursor:pointer;white-space:nowrap}
+.switch input{width:18px;height:18px;accent-color:var(--pos);margin:0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.78rem;color:var(--muted);margin-bottom:22px}
+.legend .meter i.on{background:var(--accent)}
+.count{font-size:.8rem;color:var(--muted);margin-bottom:12px}
 
-/* service cards */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
-.svc{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
-.svc-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
-.svc h3{margin:0;font-size:1.15rem;line-height:1.35}
+/* service cards: アプリストア風。アイコン＋名前、大きな入金、説明は3行、目安はひとまとめ */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:18px}
+.svc{--c:var(--accent)}
+[data-cat="crypto-bi"]{--c:#7C5CFF}[data-cat="app"]{--c:#1FB57A}[data-cat="pointsite"]{--c:#F08A24}
+[data-cat="career"]{--c:#E2457A}[data-cat="exchange"]{--c:#2F7BEA}[data-cat="finance"]{--c:#14A3A3}
+.svc{position:relative;display:flex;flex-direction:column;gap:12px;min-width:0;padding:20px;border-radius:18px;border:1px solid var(--line);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--c) 10%,transparent),transparent 130px) var(--surface);box-shadow:var(--shadow);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;scroll-margin-top:calc(var(--bar-h,56px) + var(--tools-h,0px) + 28px)}
+.svc::before{content:"";position:absolute;top:-1px;inset-inline:22px;height:3px;border-radius:0 0 3px 3px;background:var(--c)}
+.svc:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--c) 50%,var(--line));
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--c) 22%,transparent),0 24px 48px -24px color-mix(in srgb,var(--c) 75%,transparent)}
+.svc-top{display:flex;gap:14px;align-items:flex-start}
+.ava{flex:none;width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-family:"Dela Gothic One",var(--f-display);font-weight:400;font-size:1.2rem;line-height:1;color:#fff;
+  background:radial-gradient(120% 90% at 25% 0%,rgba(255,255,255,.4),transparent 55%),linear-gradient(150deg,var(--c),color-mix(in srgb,var(--c) 50%,#0A0F24));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.15),0 10px 20px -12px var(--c);text-shadow:0 1px 2px rgba(0,0,0,.25)}
+.svc-id{flex:1;min-width:0;display:grid;gap:6px}
+.svc h3{margin:0;font-size:1.2rem;line-height:1.3;overflow-wrap:anywhere}
 .cat{font-size:.72rem;color:var(--muted);display:block;font-weight:400;letter-spacing:.06em}
-.tags{display:flex;gap:4px;flex:none}
+.svc .cat{color:var(--c);font-weight:700;margin-bottom:2px}
+.tags{display:flex;flex-wrap:wrap;gap:4px}
 .type,.region{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
 .type.loop{background:var(--pos-soft);color:var(--pos)}
 .type.once{background:var(--accent-soft);color:var(--accent)}
-.region{border:1px solid var(--line);color:var(--muted);font-weight:500}
-.gain{font-family:var(--f-dot);font-size:1.3rem;line-height:1.35;color:var(--pos)}
-.gain small{display:block;font-family:var(--f-body);font-size:.76rem;color:var(--muted);margin-top:3px;line-height:1.6}
-.svc dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:.88rem}
-.svc dt{color:var(--muted)}
-.svc dd{margin:0;min-width:0}
+.gain{font-family:var(--f-dot);font-size:1.5rem;line-height:1.35;color:var(--pos);overflow-wrap:anywhere}
+.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
+.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+.expand{font:inherit;font-size:.78rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
+.expand:hover{text-decoration:underline;text-underline-offset:3px}
+.need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
+.need b{flex:none;font-size:.68rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
+.meta{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
+.meta>*,.trust li{background:var(--surface)}
+.ease{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
-.meter i{width:12px;height:12px;border-radius:2px;background:var(--line)}
-.meter i.on{background:var(--accent)}
-.caution{font-size:.8rem;color:var(--stamp)}
-.slip{margin-top:auto;display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:4px}
-.code{border:1.5px dashed var(--muted);border-radius:4px;padding:6px 10px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+.meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
+.meter i.on{background:var(--c,var(--accent))}
+.region{border:1px solid var(--line);color:var(--muted);font-weight:500;line-height:1.5;padding-block:1px}
+.region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
+.caution{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
+.caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.72rem;line-height:1}
+.slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
+.code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .code .label{letter-spacing:.06em;flex:none}
 .code.empty .dot{color:var(--muted);font-size:.88rem}
+.slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
-.empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:6px;padding:28px;text-align:center;color:var(--muted)}
+.empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.step{border-top:1px solid var(--line);padding-top:12px}
-.step b{font-family:var(--f-dot);font-size:1.5rem;color:var(--accent);display:block}
-.step h3{margin:0 0 4px;font-size:1rem}
+/* steps: 金色の数字を線でつなぐ（スマホは縦） */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.step{position:relative;display:grid;gap:6px;align-content:start}
+.step b{position:relative;z-index:1;width:68px;height:68px;margin-bottom:10px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-dot);font-weight:400;font-size:2.3rem;line-height:1;color:#FFD66B;
+  background:radial-gradient(circle at 32% 25%,#2E2878,#0A0F24 72%);box-shadow:0 0 0 1.5px rgba(255,214,107,.7),0 0 0 7px color-mix(in srgb,var(--gold) 14%,transparent),0 10px 30px -8px rgba(255,190,80,.55);text-shadow:0 0 16px rgba(255,214,107,.7)}
+.step:not(:last-child)::after{content:"";position:absolute;top:33px;inset-inline-start:86px;width:calc(100% - 76px);height:2px;border-radius:2px;background:linear-gradient(90deg,var(--gold),color-mix(in srgb,var(--gold) 20%,transparent))}
+[dir="rtl"] .step:not(:last-child)::after{background:linear-gradient(-90deg,var(--gold),color-mix(in srgb,var(--gold) 20%,transparent))}
+.step h3{margin:0;font-size:1.05rem}
 .step p{font-size:.92rem;color:var(--muted)}
 
 /* faq */
-.faq{display:grid;gap:0;border-top:1px solid var(--line)}
-.faq details{border-bottom:1px solid var(--line);padding:14px 0}
-.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq{display:grid;gap:10px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding-inline:18px;box-shadow:var(--shadow);transition:border-color .2s ease}
+.faq details[open]{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;align-items:center;gap:12px;padding-block:15px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--f-dot);color:var(--accent);font-size:1.2rem;line-height:1}
+.faq summary::before{content:"Q";flex:none;font-family:var(--f-dot);font-weight:400;font-size:1.15rem;color:var(--gold)}
+.faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
-.faq p{margin-top:8px;color:var(--muted);max-width:46em}
+.faq p{padding:0 0 16px;padding-inline-start:26px;color:var(--muted);max-width:46em}
 
-.warn{border:2px solid var(--stamp);border-radius:6px;padding:22px;background:var(--surface)}
-.warn h3{margin:0 0 10px;color:var(--stamp);font-family:var(--f-display);font-weight:400;font-size:1.25rem}
-.warn ul{margin:0;padding-inline-start:1.2em;display:grid;gap:6px}
+.warn{border:1px solid color-mix(in srgb,var(--stamp) 35%,var(--line));border-inline-start:5px solid var(--stamp);border-radius:14px;padding:22px 24px;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--stamp) 9%,var(--surface)),var(--surface) 65%);box-shadow:var(--shadow)}
+.warn h3{display:flex;align-items:center;gap:10px;margin:0 0 14px;color:var(--stamp);font-family:var(--f-display);font-weight:400;font-size:1.25rem}
+.warn h3::before{content:"!";flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-family:var(--f-dot);font-size:1rem;line-height:1}
+.warn ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.warn li{position:relative;padding-inline-start:22px}
+.warn li::before{content:"";position:absolute;inset-inline-start:4px;top:.85em;width:9px;height:2px;border-radius:2px;background:var(--stamp)}
 
-footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-size:.8rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:8px 18px;border-radius:999px;font-size:.88rem;z-index:10}
 
 @media (max-width:760px){
   .hero{grid-template-columns:1fr}
   .book{transform:none}
-  .steps{grid-template-columns:1fr}
   .nav{display:none}
-  .switch{margin-inline-start:0}
   .bar-in{flex-wrap:wrap;row-gap:8px}
   .lang{order:3;overflow-x:auto}
+  .tools{padding:8px 10px;gap:8px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:2px 10px;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent);mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent)}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none}
+  .switch{margin-inline-start:0}
+  .svc{padding:18px}
+  .steps{grid-template-columns:1fr;gap:0}
+  .step{grid-template-columns:68px 1fr;column-gap:18px;padding-bottom:30px}
+  .step b{grid-row:1/span 2;margin:0}
+  .step:last-child{padding-bottom:0}
+  .step:not(:last-child)::after{top:80px;bottom:10px;inset-inline-start:33px;width:2px;height:auto;background:linear-gradient(180deg,var(--gold),color-mix(in srgb,var(--gold) 15%,transparent))}
+  [dir="rtl"] .step:not(:last-child)::after{background:linear-gradient(180deg,var(--gold),color-mix(in srgb,var(--gold) 15%,transparent))}
+  .warn{padding:18px}
 }
 @media (prefers-reduced-motion:reduce){.ledger tbody tr{animation:none}html{scroll-behavior:auto}}
 
@@ -258,15 +319,9 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 [dir="rtl"] .tape-in{animation-name:tape-rtl}
 @keyframes tape-rtl{to{transform:translateX(50%)}}
 
-/* card polish */
-.svc{--c:var(--accent);position:relative;border-top:4px solid var(--c);border-radius:10px;transition:transform .2s ease,box-shadow .2s ease}
-.svc[data-cat="crypto-bi"]{--c:#7C5CFF}.svc[data-cat="app"]{--c:#1FB57A}.svc[data-cat="pointsite"]{--c:#F08A24}
-.svc[data-cat="career"]{--c:#E2457A}.svc[data-cat="exchange"]{--c:#2F7BEA}.svc[data-cat="finance"]{--c:#14A3A3}
-.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px var(--c)}
-.svc .cat{color:var(--c);font-weight:700}
-.gain{font-size:1.45rem}
-.max{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.55)}
-.slip .btn.solid{background:var(--pos);color:var(--paper);padding-block:11px;font-size:.95rem;gap:8px}
+/* card CTA */
+.max{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.45)}
+.slip .btn.solid{background:var(--pos);color:var(--paper);border-radius:12px;padding-block:12px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
 .slip .btn.solid::after{content:"→";transition:transform .2s ease}
 [dir="rtl"] .slip .btn.solid::after{content:"←"}
 .slip .btn.solid:hover{background:var(--pos);filter:brightness(1.08)}
@@ -274,16 +329,13 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 [dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
 
 /* trust chips / NEW badge */
-.trust{display:flex;flex-wrap:wrap;gap:5px;margin:0;padding:0;list-style:none}
+.trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
 .trust li{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
 .tr-leg>span:first-child{color:var(--ink);font-weight:700}
 .new{font-size:.68rem;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:999px;background:var(--stamp);color:#fff;white-space:nowrap}
-.svc{scroll-margin-top:72px}
-.svc .tags{flex:0 1 auto;flex-wrap:wrap;justify-content:flex-end;row-gap:4px}
-.svc-top h3{flex:1 1 auto;min-width:8em}
 
 /* top picks */
 #picks{position:relative;z-index:1}
@@ -305,13 +357,16 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .pick .more{font-size:.8rem;color:#A9B2D8;text-align:center;text-underline-offset:3px}
 .pick .more:hover{color:#fff}
 
-/* news */
-.news{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);max-width:44em}
-.news>li{display:grid;grid-template-columns:7.5em 1fr;gap:4px 16px;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line)}
-.news time{font-size:.85rem;color:var(--muted)}
-.news ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:.92rem}
+/* news: 夜の時間軸のようなタイムライン */
+.news{list-style:none;margin:0;padding:0;max-width:46em}
+.news>li{position:relative;display:grid;grid-template-columns:7.5em 1fr;gap:2px 18px;align-items:baseline;padding-bottom:22px;padding-inline-start:26px;border-inline-start:2px solid var(--line)}
+.news>li:last-child{padding-bottom:4px;border-image:linear-gradient(var(--line),transparent) 1}
+.news>li::before{content:"";position:absolute;inset-inline-start:-8px;top:.42em;width:14px;height:14px;border-radius:50%;background:var(--surface);border:3px solid var(--accent)}
+.news>li:first-child::before{background:var(--accent);box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 22%,transparent)}
+.news time{font-size:.9rem;color:var(--accent)}
+.news ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.92rem}
 .news ul li{position:relative;padding-inline-start:14px}
-.news ul li::before{content:"";position:absolute;inset-inline-start:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.news ul li::before{content:"";position:absolute;inset-inline-start:0;top:.7em;width:6px;height:2px;border-radius:2px;background:var(--muted)}
 
 /* share */
 .share{position:relative;overflow:hidden;border-radius:16px;padding:clamp(22px,4vw,36px);color:#EEF1FF;
@@ -323,6 +378,41 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 .sb-x{background:#000;border:1px solid #444}.sb-line{background:#06C755}.sb-wa{background:#25D366}.sb-tg{background:#229ED9}
 .sb-wb{background:#E6162D}.sb-fb{background:#1877F2}.sb-copy,.sb-native{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.3)!important}
 .share-btns .btn:hover{filter:brightness(1.12)}
+.share .eyebrow{color:#A9B2D8;margin-bottom:10px}
+.share .eyebrow .dot{color:#FFD66B}
+
+/* dawn footer: ページの終わりで夜が明ける */
+.dawn{position:relative;overflow:hidden;isolation:isolate;margin-inline:-16px;margin-top:clamp(48px,7vw,80px);padding:clamp(80px,10vw,120px) 16px 0;color:#fff;text-align:center;
+  background:radial-gradient(70% 40% at 50% 88%,rgba(255,206,120,.85),transparent 70%),
+    linear-gradient(180deg,var(--paper-2) 0,#151436 13%,#2A1F66 30%,#5B2E86 50%,#B4487E 68%,#F08A4B 84%,#FFC56E 100%)}
+.dawn::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.8;
+  background-image:radial-gradient(1.5px 1.5px at 20px 30px,#fff 50%,transparent 51%),radial-gradient(1px 1px at 120px 80px,#fff 50%,transparent 51%),
+    radial-gradient(1.2px 1.2px at 200px 150px,#cfd6ff 50%,transparent 51%),radial-gradient(1px 1px at 60px 190px,#fff 50%,transparent 51%);
+  background-size:300px 220px;-webkit-mask-image:linear-gradient(transparent 6%,#000 14%,transparent 48%);mask-image:linear-gradient(transparent 6%,#000 14%,transparent 48%)}
+.horizon{position:relative;z-index:-1;height:clamp(150px,20vw,250px);margin-inline:-16px;margin-top:clamp(28px,5vw,48px)}
+.sun{position:absolute;left:50%;bottom:clamp(36px,5vw,64px);width:clamp(170px,22vw,260px);aspect-ratio:1;border-radius:50%;transform:translate(-50%,42%);
+  background:radial-gradient(circle at 50% 40%,#FFFBE8,#FFE08A 45%,#FFB347 100%);box-shadow:0 0 60px 20px rgba(255,200,110,.55),0 0 160px 70px rgba(255,140,80,.35);
+  transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.js .dawn:not(.in) .sun{transform:translate(-50%,72%)}
+.hills{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(90px,12vw,150px);display:block}
+.dawn-in{position:relative;display:grid;justify-items:center;gap:16px;max-width:860px}
+.dawn .eyebrow{color:rgba(255,255,255,.75);justify-content:center}
+.dawn .eyebrow .dot{color:#FFE08A}
+.dawn h2{font-size:clamp(1.55rem,4.2vw,2.6rem);line-height:1.4;word-break:auto-phrase;color:#fff;text-shadow:0 4px 30px rgba(60,20,90,.45)}
+.dawn-sub{max-width:34em;text-wrap:balance;word-break:auto-phrase;color:rgba(255,255,255,.86)}
+.dawn .btn.solid{margin-top:6px;background:#FFF4D6;color:#2A1F66;border-radius:999px;padding:12px 24px;gap:8px;box-shadow:0 12px 30px -10px rgba(60,20,90,.6)}
+.dawn .btn.solid::after{content:"↑"}
+.dawn .btn.solid:hover{background:#fff}
+.dawn .btn.solid:focus-visible{outline-color:#fff}
+.foot-band{background:#160F2E;margin-inline:-16px;padding-inline:16px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:6px 0 calc(22px + env(safe-area-inset-bottom,0px));
+  font-size:.8rem;color:rgba(255,236,214,.85);text-align:start}
+.foot .dot{color:#FFE08A}
+
+/* scroll reveal: JSがあるときだけ隠してから出す。位置は変えず透明度と移動だけ */
+.js .rv{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv:not(.in){opacity:0;transform:translateY(18px)}
+.js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
   .picks{grid-template-columns:1fr}
@@ -332,7 +422,9 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   .tape{transform:rotate(-2deg)}
   .news>li{grid-template-columns:1fr}
 }
-@media (prefers-reduced-motion:reduce){.night::before,.zzz i,.tape-in{animation:none}.zzz i{opacity:.7}.svc{transition:none}}
+@media (prefers-reduced-motion:reduce){.night::before,.zzz i,.tape-in{animation:none}.zzz i{opacity:.7}.svc,.js .rv,.sun{transition:none!important}
+  .js .rv:not(.in){opacity:1;transform:none}.js .dawn:not(.in) .sun{transform:translate(-50%,42%)}}
+@media print{.js .rv:not(.in){opacity:1;transform:none}.tools{position:static}}
 </style>
 </head>
 <body>
@@ -397,19 +489,19 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 <div class="wrap">
 
 <section id="picks">
-  <div class="sec-head"><h2>先装这 3 个</h2><span class="label">TOP 3</span></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">23:00</span>TOP 3</p><h2>先装这 3 个</h2></div>
   <p class="intro">按省事、海外可用、能真正兑换这三点挑选。</p>
-  <div class="picks"><article class="pick"><div class="pick-top"><span class="rank dot">1</span><div><span class="cat">躺赚应用</span><h3>Honeygain</h3></div></div>
+  <div class="picks"><article class="pick rv"><div class="pick-top"><span class="rank dot">1</span><div><span class="cat">躺赚应用</span><h3>Honeygain</h3></div></div>
 <p>装在电脑或手机上就行。攒满 $20 可通过 PayPal 提现</p>
 <a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">通过推荐链接注册</a>
 <a class="more" href="#svc-honeygain">查看详情 ↓</a>
 </article>
-<article class="pick"><div class="pick-top"><span class="rank dot">2</span><div><span class="cat">躺赚应用</span><h3>Pawns.app</h3></div></div>
+<article class="pick rv"><div class="pick-top"><span class="rank dot">2</span><div><span class="cat">躺赚应用</span><h3>Pawns.app</h3></div></div>
 <p>装在电脑上就行。满 $5 即可提现</p>
 <a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">通过推荐链接注册</a>
 <a class="more" href="#svc-pawns">查看详情 ↓</a>
 </article>
-<article class="pick"><div class="pick-top"><span class="rank dot">3</span><div><span class="cat">躺赚应用</span><h3>Sweatcoin</h3></div></div>
+<article class="pick rv"><div class="pick-top"><span class="rank dot">3</span><div><span class="cat">躺赚应用</span><h3>Sweatcoin</h3></div></div>
 <p>带着手机走路就行。攒下的币可兑换商品或折扣</p>
 <a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">通过推荐链接注册</a>
 <a class="more" href="#svc-sweatcoin">查看详情 ↓</a>
@@ -417,8 +509,8 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 </section>
 
 <section id="list">
-  <div class="sec-head"><h2>服务一览</h2><span class="label">REFERRAL LIST</span></div>
-  <div class="tools">
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">00:30</span>REFERRAL LIST</p><h2>服务一览</h2></div>
+  <div class="tools" id="tools">
     <div class="filters" role="group" id="filters" aria-label="按类别筛选"><button type="button" data-cat="all" aria-pressed="true">全部<span>13</span></button><button type="button" data-cat="crypto-bi" aria-pressed="false">加密货币 UBI<span>6</span></button><button type="button" data-cat="pointsite" aria-pressed="false">返利网站<span>1</span></button><button type="button" data-cat="career" aria-pressed="false">工作匹配<span>1</span></button><button type="button" data-cat="app" aria-pressed="false">躺赚应用<span>5</span></button></div>
     <label class="switch" for="loopOnly"><input type="checkbox" id="loopOnly"><span>只看持续到账</span></label>
   </div>
@@ -429,119 +521,133 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     <span class="tr-leg"><span>可信度参考</span><span><b class="t-yes">✓</b> 有</span><span><b class="t-partial">△</b> 有条件</span><span><b class="t-no">✗</b> 无</span><span><b class="t-unknown">?</b> 未确认</span></span>
   </div>
   <p class="count" id="count" aria-live="polite">显示 13 项服务</p>
-  <div class="grid" id="grid"><article class="svc" id="svc-gooddollar" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>GoodDollar</h3><div class="tags"><span class="type loop">持续</span></div></div>
-<p class="gain">每天领取 G$ 代币<small>非营利 UBI 协议。每 24 小时可在应用中领取一次，当天的奖池由所有领取者平分</small></p>
-<dl><dt>获取方式</dt><dd>在应用中进行人脸身份验证</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+  <div class="grid" id="grid"><article class="svc rv" id="svc-gooddollar" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">GD</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span>GoodDollar</h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<p class="gain">每天领取 G$ 代币</p>
+<div class="desc"><p id="d-gooddollar">非营利 UBI 协议。每 24 小时可在应用中领取一次，当天的奖池由所有领取者平分</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-gooddollar" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>在应用中进行人脸身份验证</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 <p class="caution">注意：2026 年 5 月发生安全事件，储备金正在审查中。每日金额也很少</p>
 <div class="slip"><a class="btn solid" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-mepass" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>ME Pass</h3><div class="tags"><span class="type loop">持续</span></div></div>
-<p class="gain">每天领取 MEC 代币<small>Meta Earth 的钱包应用。完成验证的用户可获得 1 MEC 作为“无条件基本收入”，每日签到也有少量奖励</small></p>
-<dl><dt>获取方式</dt><dd>通过邀请链接注册，并在应用中完成 KYC</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul>
+<article class="svc rv" id="svc-mepass" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ME</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span>ME Pass</h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<p class="gain">每天领取 MEC 代币</p>
+<div class="desc"><p id="d-mepass">Meta Earth 的钱包应用。完成验证的用户可获得 1 MEC 作为“无条件基本收入”，每日签到也有少量奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-mepass" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册，并在应用中完成 KYC</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
 <p class="caution">注意：截至 2026 年 10 月，MEC 尚未在任何交易所上市，没有市场价格。只能通过点对点交易变现</p>
 <div class="slip"><a class="btn solid" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-biomatrix" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>BioMatrix</h3><div class="tags"><span class="type loop">持续</span></div></div>
-<p class="gain">每月领取 PoY 代币<small>承诺 60 年每月发放的 UBI 代币。使用推荐码注册可获得 5 枚代币奖励（截至 2026 年 1 月）。越早注册分配越多</small></p>
-<dl><dt>获取方式</dt><dd>在应用中通过生物识别验证后，每月领取</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul>
+<article class="svc rv" id="svc-biomatrix" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">BM</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span>BioMatrix</h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<p class="gain">每月领取 PoY 代币</p>
+<div class="desc"><p id="d-biomatrix">承诺 60 年每月发放的 UBI 代币。使用推荐码注册可获得 5 枚代币奖励（截至 2026 年 1 月）。越早注册分配越多</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-biomatrix" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>在应用中通过生物识别验证后，每月领取</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
 <p class="caution">注意：我们未能确认 PoY 的市场价格。请在接受其生物识别数据处理方式后再使用</p>
 <div class="slip"><a class="btn solid" href="https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&amp;af_dp=biomatrix%3A%2F%2F&amp;deep_link_sub1=C66SPN" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-hapitas" data-cat="pointsite" data-type="once">
-<div class="svc-top"><h3><span class="cat">返利网站</span>Hapitas</h3><div class="tags"><span class="type once">一次性</span></div></div>
-<p class="gain">最高 2,300 积分<small>2026 年 10 月活动（1 积分 = 1 日元）。连续登录 3 天得 100 积分，通过广告累计获得 3,000 积分再得 1,000 积分等</small></p>
-<dl><dt>获取方式</dt><dd>10 月 31 日前通过推荐注册，并于 11 月 30 日前达成条件</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">仅限日本</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+<article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><h3><span class="cat">返利网站</span>Hapitas</h3><div class="tags"><span class="type once">一次性</span></div></div></div>
+<p class="gain">最高 2,300 积分</p>
+<div class="desc"><p id="d-hapitas">2026 年 10 月活动（1 积分 = 1 日元）。连续登录 3 天得 100 积分，通过广告累计获得 3,000 积分再得 1,000 积分等</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-hapitas" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>10 月 31 日前通过推荐注册，并于 11 月 30 日前达成条件</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region"><span class="vh">地区: </span>仅限日本</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 
 <div class="slip"><a class="btn solid" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-wavee" data-cat="career" data-type="loop">
-<div class="svc-top"><h3><span class="cat">工作匹配</span>WAVEE</h3><div class="tags"><span class="type loop">持续</span></div></div>
-<p class="gain">每次找到工作都有匹配奖励<small>完全邀请制的工作匹配平台。你邀请的人（或其邀请的人）每次找到工作，你都能反复获得推荐分成（7.5–15%）。DMM、GMO Pepabo 等公司在此发布职位</small></p>
-<dl><dt>获取方式</dt><dd>通过邀请链接注册</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+<article class="svc rv" id="svc-wavee" data-cat="career" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><h3><span class="cat">工作匹配</span>WAVEE</h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<p class="gain">每次找到工作都有匹配奖励</p>
+<div class="desc"><p id="d-wavee">完全邀请制的工作匹配平台。你邀请的人（或其邀请的人）每次找到工作，你都能反复获得推荐分成（7.5–15%）。DMM、GMO Pepabo 等公司在此发布职位</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wavee" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 <p class="caution">注意：只有在工作匹配成功时才有收入。分成比例来自 2024 年 6 月的官方 note</p>
 <div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-trima" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Trima</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div>
-<p class="gain">5,000 里程 ＋ 移动和步数也能赚里程<small>只要带着手机移动或走路就能累积里程的应用。填写邀请码后，邀请人和被邀请人双方各得 5,000 里程（2026 年 7 月的信息）。里程可兑换礼品卡、现金等</small></p>
-<dl><dt>获取方式</dt><dd>安装应用，注册时填写邀请码 49‑icnRep</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地区</dt><dd><span class="region">仅限日本</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+<article class="svc rv" id="svc-trima" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Tr</span><div class="svc-id"><h3><span class="cat">躺赚应用</span>Trima</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div></div>
+<p class="gain">5,000 里程 ＋ 移动和步数也能赚里程</p>
+<div class="desc"><p id="d-trima">只要带着手机移动或走路就能累积里程的应用。填写邀请码后，邀请人和被邀请人双方各得 5,000 里程（2026 年 7 月的信息）。里程可兑换礼品卡、现金等</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-trima" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>安装应用，注册时填写邀请码 49‑icnRep</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region"><span class="vh">地区: </span>仅限日本</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 <p class="caution">注意：奖励金额和发放时间可能会变。需要始终允许位置信息，耗电会稍多一些</p>
 <div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">复制</button><a class="btn solid" href="https://www.trip-mile.com/" target="_blank" rel="noopener">安装应用并填写邀请码</a></div>
 </article>
-<article class="svc" id="svc-sweatcoin" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Sweatcoin</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div>
-<p class="gain">每 1,000 步 0.95 枚币<small>带着手机走路，步数就会自动变成币。可在应用内商城兑换商品、折扣或用于捐赠</small></p>
-<dl><dt>获取方式</dt><dd>安装应用，并允许访问步数和位置信息</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+<article class="svc rv" id="svc-sweatcoin" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Sw</span><div class="svc-id"><h3><span class="cat">躺赚应用</span>Sweatcoin</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div></div>
+<p class="gain">每 1,000 步 0.95 枚币</p>
+<div class="desc"><p id="d-sweatcoin">带着手机走路，步数就会自动变成币。可在应用内商城兑换商品、折扣或用于捐赠</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-sweatcoin" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>安装应用，并允许访问步数和位置信息</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 <p class="caution">注意：没有固定的现金兑换比例。免费版每天可兑换的步数有上限</p>
 <div class="slip"><a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-grass" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Grass</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div>
-<p class="gain">积分（之后换成 GRASS 代币）<small>把闲置带宽出租给 AI 网页数据采集的 DePIN 项目。保持浏览器扩展或应用在线，即可按在线时长和实际被使用的带宽累积积分，并通过每季空投发放</small></p>
-<dl><dt>获取方式</dt><dd>用邮箱注册，安装扩展或应用并保持连接</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+<article class="svc rv" id="svc-grass" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">躺赚应用</span>Grass</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div></div>
+<p class="gain">积分（之后换成 GRASS 代币）</p>
+<div class="desc"><p id="d-grass">把闲置带宽出租给 AI 网页数据采集的 DePIN 项目。保持浏览器扩展或应用在线，即可按在线时长和实际被使用的带宽累积积分，并通过每季空投发放</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-grass" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>用邮箱注册，安装扩展或应用并保持连接</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 <p class="caution">注意：你的 IP 地址会被他人用于数据采集。收益取决于空投，金额和时间都无法预估</p>
 <div class="slip"><a class="btn solid" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-honeygain" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Honeygain</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div>
-<p class="gain">按共享流量获得现金<small>最知名的带宽共享应用：把闲置网络出租给企业做网页数据采集。通过推荐注册可获得 $3 欢迎奖励（据官方博客）。满 $20 可通过 PayPal 等提现</small></p>
-<dl><dt>获取方式</dt><dd>用邮箱注册，在电脑或手机上安装应用并保持运行</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+<article class="svc rv" id="svc-honeygain" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Hg</span><div class="svc-id"><h3><span class="cat">躺赚应用</span>Honeygain</h3><div class="tags"><span class="new">NEW</span><span class="max">最省心</span><span class="type loop">持续</span></div></div></div>
+<p class="gain">按共享流量获得现金</p>
+<div class="desc"><p id="d-honeygain">最知名的带宽共享应用：把闲置网络出租给企业做网页数据采集。通过推荐注册可获得 $3 欢迎奖励（据官方博客）。满 $20 可通过 PayPal 等提现</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-honeygain" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>用邮箱注册，在电脑或手机上安装应用并保持运行</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 <p class="caution">注意：你的 IP 地址会被他人用于数据采集。收益取决于所在地区的需求，有些地区非常少</p>
 <div class="slip"><a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-pawns" data-cat="app" data-type="loop">
-<div class="svc-top"><h3><span class="cat">躺赚应用</span>Pawns.app</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div>
-<p class="gain">按共享流量获得现金<small>IPRoyal 旗下的带宽共享应用。让电脑端应用保持运行，闲置网络就能赚钱。问卷和游戏也能赚。满 $5 可通过 PayPal、比特币等提现</small></p>
-<dl><dt>获取方式</dt><dd>用邮箱注册，在电脑上安装应用并保持运行</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+<article class="svc rv" id="svc-pawns" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><h3><span class="cat">躺赚应用</span>Pawns.app</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<p class="gain">按共享流量获得现金</p>
+<div class="desc"><p id="d-pawns">IPRoyal 旗下的带宽共享应用。让电脑端应用保持运行，闲置网络就能赚钱。问卷和游戏也能赚。满 $5 可通过 PayPal、比特币等提现</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pawns" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>用邮箱注册，在电脑上安装应用并保持运行</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 <p class="caution">注意：手机端带宽共享已于 2026 年 4 月停止，躺赚只能用电脑。你的 IP 地址会被他人用于数据采集，收益也不多</p>
 <div class="slip"><a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-pinetwork" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>Pi Network</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div>
-<p class="gain">每天获得 PI<small>每 24 小时在应用中点一次按钮即可累积 PI。邀请的人越多，挖矿速度越快。2025 年 2 月向公众开放，在 OKX、Bitget、MEXC 等交易所交易</small></p>
-<dl><dt>获取方式</dt><dd>通过邀请链接注册（邀请码：eltociear）。要转移 PI，需要完成身份验证并迁移到主网钱包</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+<article class="svc rv" id="svc-pinetwork" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pi</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span>Pi Network</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<p class="gain">每天获得 PI</p>
+<div class="desc"><p id="d-pinetwork">每 24 小时在应用中点一次按钮即可累积 PI。邀请的人越多，挖矿速度越快。2025 年 2 月向公众开放，在 OKX、Bitget、MEXC 等交易所交易</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pinetwork" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册（邀请码：eltociear）。要转移 PI，需要完成身份验证并迁移到主网钱包</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 <p class="caution">注意：价格较 2025 年最高点 $2.99 下跌约 97%（截至 2026 年 10 月约为 $0.08）。Binance、Coinbase 和日本交易所均未上架。需要每天操作，放着不管不会累积</p>
 <div class="slip"><a class="btn solid" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>Delta Kim</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div>
-<p class="gain">每天获得 KIM<small>类似 Pi Network 的加密资产应用，每天用手机“挖矿”。据称使用邀请码注册后挖矿速度会提高</small></p>
-<dl><dt>获取方式</dt><dd>通过邀请链接注册，每天在应用中点击挖矿按钮</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul>
+<article class="svc rv" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">DK</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span>Delta Kim</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<p class="gain">每天获得 KIM</p>
+<div class="desc"><p id="d-deltakim">类似 Pi Network 的加密资产应用，每天用手机“挖矿”。据称使用邀请码注册后挖矿速度会提高</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-deltakim" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册，每天在应用中点击挖矿按钮</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
 <p class="caution">注意：截至 2026 年 10 月，尚未确认在任何交易所上架或有市场价格，能否兑现尚不清楚。也有用户反映挖矿后余额不再增加。需要每天操作</p>
 <div class="slip"><a class="btn solid" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
-<article class="svc" id="svc-interlink" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><h3><span class="cat">加密货币 UBI</span>InterLink</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div>
-<p class="gain">每天获得 ITLG 代币<small>向通过人脸验证确认“本人身份”的用户（Human Node）发放 ITLG 代币的项目。在应用中约每 4 小时签到一次（每天最多 6 次）即可累积</small></p>
-<dl><dt>获取方式</dt><dd>通过邀请链接注册，并在应用中完成人脸验证</dd><dt>轻松度</dt><dd><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></dd><dt>地区</dt><dd><span class="region">全球</span></dd></dl>
-<ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul>
+<article class="svc rv" id="svc-interlink" data-cat="crypto-bi" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">IL</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span>InterLink</h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<p class="gain">每天获得 ITLG 代币</p>
+<div class="desc"><p id="d-interlink">向通过人脸验证确认“本人身份”的用户（Human Node）发放 ITLG 代币的项目。在应用中约每 4 小时签到一次（每天最多 6 次）即可累积</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-interlink" hidden>展开</button></div>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册，并在应用中完成人脸验证</span></p>
+<div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 <p class="caution">注意：截至 2026 年 5 月，ITLG 尚未在交易所上架，没有市场价格。需要经常签到。请在认可其人脸生物信息处理方式的前提下使用</p>
 <div class="slip"><a class="btn solid" href="https://interlinklabs.ai/541682748130" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article><p class="empty-state" id="empty" hidden>没有符合条件的服务。</p></div>
 </section>
 
 <section id="news">
-  <div class="sec-head"><h2>最新动态</h2><span class="label">UPDATES</span></div>
-  <ol class="news"><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>新增 Trima</li><li>新增 InterLink</li><li>新增“推荐 3 个”和可信度标识</li><li>WAVEE 更新为“全球”可用</li><li>新增 Delta Kim</li><li>新增 Pi Network</li><li>新增 Pawns.app</li><li>新增 Sweatcoin</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>网站改版</li><li>新增 Honeygain</li><li>新增 Grass</li></ul></li></ol>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>UPDATES</p><h2>最新动态</h2></div>
+  <ol class="news rv"><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>新增 Trima</li><li>新增 InterLink</li><li>新增“推荐 3 个”和可信度标识</li><li>WAVEE 更新为“全球”可用</li><li>新增 Delta Kim</li><li>新增 Pi Network</li><li>新增 Pawns.app</li><li>新增 Sweatcoin</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>网站改版</li><li>新增 Honeygain</li><li>新增 Grass</li></ul></li></ol>
 </section>
 
 <section id="share">
-  <div class="share">
+  <div class="share rv">
+    <p class="eyebrow"><span class="dot">03:00</span>SHARE</p>
     <h2>分享给朋友</h2>
     <p>身边有想躺着赚钱的朋友吗？把这份清单发给 TA。</p>
     <div class="share-btns"><a class="btn sb-wb" href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F&amp;title=%E8%BA%BA%E7%9D%80%E4%B9%9F%E5%88%B0%E8%B4%A6%F0%9F%98%B4%F0%9F%92%B0%20%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%20UBI%20%E5%92%8C%E8%BA%BA%E8%B5%9A%E5%BA%94%E7%94%A8%E4%B8%80%E8%A7%88" target="_blank" rel="noopener">微博</a><a class="btn sb-x" href="https://x.com/intent/post?text=%E8%BA%BA%E7%9D%80%E4%B9%9F%E5%88%B0%E8%B4%A6%F0%9F%98%B4%F0%9F%92%B0%20%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%20UBI%20%E5%92%8C%E8%BA%BA%E8%B5%9A%E5%BA%94%E7%94%A8%E4%B8%80%E8%A7%88&amp;url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F" target="_blank" rel="noopener">X</a><a class="btn sb-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F&amp;text=%E8%BA%BA%E7%9D%80%E4%B9%9F%E5%88%B0%E8%B4%A6%F0%9F%98%B4%F0%9F%92%B0%20%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%20UBI%20%E5%92%8C%E8%BA%BA%E8%B5%9A%E5%BA%94%E7%94%A8%E4%B8%80%E8%A7%88" target="_blank" rel="noopener">Telegram</a><a class="btn sb-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F" target="_blank" rel="noopener">Facebook</a><button class="btn sb-native" type="button" id="nativeShare" hidden>分享</button><button class="btn sb-copy" type="button" id="copyLink">复制链接</button></div>
@@ -549,17 +655,17 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 </section>
 
 <section id="how">
-  <div class="sec-head"><h2>注册方法</h2><span class="label">HOW TO</span></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">03:30</span>HOW TO</p><h2>注册方法</h2></div>
   <div class="steps">
-    <div class="step"><b>1</b><h3>点击按钮打开</h3><p>点击卡片上的“通过推荐链接注册”，即可打开官方网站或应用。大多数服务只要通过链接打开，推荐就会自动生效。</p></div>
-    <div class="step"><b>2</b><h3>直接完成注册</h3><p>在打开的页面上直接完成注册。中途切换到其他浏览器或应用可能导致推荐失效，请在同一页面内完成。</p></div>
-    <div class="step"><b>3</b><h3>满足条件</h3><p>完成身份验证或首次使用等条件后即可获得奖励。各服务的条件不同。</p></div>
+    <div class="step rv"><b>1</b><h3>点击按钮打开</h3><p>点击卡片上的“通过推荐链接注册”，即可打开官方网站或应用。大多数服务只要通过链接打开，推荐就会自动生效。</p></div>
+    <div class="step rv"><b>2</b><h3>直接完成注册</h3><p>在打开的页面上直接完成注册。中途切换到其他浏览器或应用可能导致推荐失效，请在同一页面内完成。</p></div>
+    <div class="step rv"><b>3</b><h3>满足条件</h3><p>完成身份验证或首次使用等条件后即可获得奖励。各服务的条件不同。</p></div>
   </div>
 </section>
 
 <section id="faq">
-  <div class="sec-head"><h2>常见问题</h2><span class="label">FAQ</span></div>
-  <div class="faq">
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:30</span>FAQ</p><h2>常见问题</h2></div>
+  <div class="faq rv">
     <details><summary>这是真正的基本收入吗？</summary><p>不是政府发放的那种。这里的“UBI”指的是像 GoodDollar 和 BioMatrix 这样，无条件、反复向每位注册者发放代币的项目。日本目前还没有国家层面的基本收入。</p></details>
     <details><summary>使用推荐码会吃亏吗？</summary><p>通常不会。手续费和条件都一样，而且大多数服务也会给新用户奖励。推荐人同样会获得奖励，因此本页标注了 PR。</p></details>
     <details><summary>获得的奖励需要缴税吗？</summary><p>在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。</p></details>
@@ -568,8 +674,8 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
 </section>
 
 <section id="warn">
-  <div class="sec-head"><h2>注册之前</h2><span class="label">CAUTION</span></div>
-  <div class="warn">
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">05:30</span>CAUTION</p><h2>注册之前</h2></div>
+  <div class="warn rv">
     <h3>需要了解的事</h3>
     <ul>
       <li>奖励金额和条件经常变化。注册前请务必查看官方活动页面。</li>
@@ -579,12 +685,22 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   </div>
 </section>
 
-<footer><span>信息截至 2026 年 10 月。不构成投资建议。</span><span class="dot">躺着也到账</span></footer>
 </div>
+
+<footer class="dawn rise" id="dawn">
+  <div class="wrap dawn-in rv">
+    <p class="eyebrow"><span class="dot">06:00</span>GOOD MORNING</p>
+    <h2>早上好。<br>睡着的时候，说不定已经到账了。</h2>
+    <p class="dawn-sub">打开应用看看余额吧。还没开始的话，现在就为今晚做好准备。</p>
+    <a class="btn solid" href="#list">查看服务列表</a>
+  </div>
+  <div class="horizon" aria-hidden="true"><div class="sun"></div><svg class="hills" aria-hidden="true" viewBox="0 0 1440 150" preserveAspectRatio="none"><path fill="#4A2558" d="M0 70C160 30 300 40 460 70s300 40 470 6 340-50 510-10V150H0z"/><path fill="#160F2E" d="M0 104c200-34 380-30 560 0s360 26 520-6 260-28 360-12V150H0z"/></svg></div>
+  <div class="foot-band"><div class="wrap foot"><span>信息截至 2026 年 10 月。不构成投资建议。</span><span class="dot">躺着也到账</span></div></div>
+</footer>
 <div class="toast" id="toast" role="status" hidden></div>
 <script>
 (function(){
-  var I18N={"count":"显示 {n} 项服务","copied":"推荐码已复制","selected":"已选中推荐码，请从菜单中复制","linkCopied":"链接已复制","shareText":"躺着也到账😴💰 加密货币 UBI 和躺赚应用一览","url":"https://neteru-nyukin.eltociear.workers.dev/zh/"};
+  var I18N={"more":"展开","less":"收起","count":"显示 {n} 项服务","copied":"推荐码已复制","selected":"已选中推荐码，请从菜单中复制","linkCopied":"链接已复制","shareText":"躺着也到账😴💰 加密货币 UBI 和躺赚应用一览","url":"https://neteru-nyukin.eltociear.workers.dev/zh/"};
   var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
       countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
   function apply(){
@@ -615,17 +731,54 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
   });
   var ns=document.getElementById('nativeShare');
   if(navigator.share){ns.hidden=false;ns.addEventListener('click',function(){navigator.share({text:I18N.shareText,url:I18N.url}).catch(function(){})})}
+  // 説明文は3行で畳む。はみ出すものだけ「もっと見る」を出す
+  function clampAll(){
+    grid.querySelectorAll('.desc').forEach(function(d){
+      if(d.classList.contains('open')) return;
+      var p=d.firstChild,b=d.lastChild;
+      b.hidden=!(p.scrollHeight>p.clientHeight+1);
+    });
+  }
+  clampAll();
+  if(document.fonts) document.fonts.ready.then(clampAll);
+  grid.addEventListener('click',function(e){
+    var b=e.target.closest('.expand'); if(!b) return;
+    var d=b.parentNode,open=d.classList.toggle('open');
+    b.setAttribute('aria-expanded',open); b.textContent=open?I18N.less:I18N.more;
+  });
+  // スクロールで少しずつ出す（一度だけ）。動きを減らす設定や非対応のときはそのまま見せる
+  var rv=document.querySelectorAll('.rv,.rise');
+  if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(es){
+      var k=0;
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var el=e.target; io.unobserve(el);
+        el.style.transitionDelay=Math.min(k++*70,280)+'ms'; el.classList.add('in');
+        setTimeout(function(){el.style.transitionDelay='';el.classList.add('done')},1100);
+      });
+    },{rootMargin:'0px 0px -40px 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  }else rv.forEach(function(el){el.classList.add('in','done')});
   // このページを開いてからの時間
   var t0=Date.now(),timerEl=document.getElementById('timer');
   function pad(n){return n<10?'0'+n:''+n}
   function tick(){var s=Math.floor((Date.now()-t0)/1000);timerEl.textContent=pad(Math.floor(s/3600))+':'+pad(Math.floor(s/60)%60)+':'+pad(s%60)}
   setInterval(tick,1000);
   // 言語切替で読んでいた位置と絞り込みを引き継ぐ（文章量が違うのでpxではなく要素＋割合で）
-  var KEY='langPos',bar=document.querySelector('.bar');
+  var KEY='langPos',bar=document.querySelector('.bar'),tools=document.getElementById('tools'),root=document.documentElement;
   function barB(){return bar?bar.getBoundingClientRect().bottom:0}
+  // 一覧の絞り込みバーは上に貼りつくので、その高さをCSSに渡す。貼りついている間は見えている上端がその下になる
+  function stuck(){var r=tools.getBoundingClientRect();return Math.abs(r.top-parseFloat(getComputedStyle(tools).top))<1.5&&window.scrollY>0}
+  function topB(){return stuck()?tools.getBoundingClientRect().bottom:barB()}
+  function measure(){root.style.setProperty('--bar-h',(bar?bar.offsetHeight:0)+'px');root.style.setProperty('--tools-h',tools.offsetHeight+'px')}
+  function onScroll(){tools.classList.toggle('stuck',stuck())}
+  measure(); onScroll();
+  window.addEventListener('resize',function(){measure();onScroll();clampAll()});
+  window.addEventListener('scroll',onScroll,{passive:true});
   document.querySelector('.lang').addEventListener('click',function(e){
     var a=e.target.closest('a'); if(!a||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey) return;
-    var y=barB(),best=null,f=0;
+    var y=topB(),best=null,f=0;
     document.querySelectorAll('header[id],section[id],.svc[id]').forEach(function(el){
       var r=el.getBoundingClientRect(); if(!r.height||r.bottom<=y||(best&&r.top>y)) return;
       best=el; f=Math.max(0,(y-r.top)/r.height);
@@ -640,17 +793,18 @@ footer{margin-top:56px;padding-top:16px;border-top:2px solid var(--ink);font-siz
     var fb=s.cat&&filters.querySelector('button[data-cat="'+s.cat+'"]');
     if(fb&&s.cat!=='all') fb.click();
     if(s.loop){loopOnly.checked=true;apply()}
-    var el=s.id&&document.getElementById(s.id),root=document.documentElement,goneY;
+    var el=s.id&&document.getElementById(s.id),goneY;
     function go(){
       if(!el||el.hidden) return;
-      var r=el.getBoundingClientRect();
       root.style.scrollBehavior='auto';
-      window.scrollTo(0,window.scrollY+r.top+s.f*r.height-barB());
-      root.style.scrollBehavior=''; goneY=window.scrollY;
+      // 絞り込みバーが貼りつくかどうかで上端が変わるので、何回か合わせる
+      for(var i=0;i<3;i++){var r=el.getBoundingClientRect();window.scrollTo(0,window.scrollY+r.top+s.f*r.height-topB())}
+      root.style.scrollBehavior=''; goneY=window.scrollY; onScroll();
     }
     go();
     // フォント等の読込で位置がずれたら、まだ動かしていなければ合わせ直す
     window.addEventListener('load',function(){if(window.scrollY===goneY)go()});
+    if(document.fonts) document.fonts.ready.then(function(){clampAll();if(window.scrollY===goneY)go()});
   }
 })();
 </script>

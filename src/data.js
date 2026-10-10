@@ -1157,7 +1157,12 @@ module.exports = {
       "tPartial": "条件つき",
       "tNo": "なし",
       "tUnknown": "未確認",
-      "newsH": "新着・更新履歴"
+      "newsH": "新着・更新履歴",
+      "dawnH": "おはよう。<br>寝ているあいだに、入金されてるかも。",
+      "dawnSub": "アプリを開いて、残高をのぞいてみましょう。まだなら、今夜のぶんを仕込んでおけます。",
+      "dawnCta": "サービス一覧へ",
+      "more": "もっと見る",
+      "less": "閉じる"
     },
     "en": {
       "brand": "Paid While You <span>Sleep</span>",
@@ -1263,7 +1268,12 @@ module.exports = {
       "tPartial": "With conditions",
       "tNo": "No",
       "tUnknown": "Unverified",
-      "newsH": "What’s new"
+      "newsH": "What’s new",
+      "dawnH": "Good morning.<br>Something may have landed while you slept.",
+      "dawnSub": "Open your apps and peek at the balance. Haven’t started yet? Set one up for tonight.",
+      "dawnCta": "Back to the list",
+      "more": "Show more",
+      "less": "Show less"
     },
     "hi": {
       "brand": "सोते हुए भी <span>कमाई</span>",
@@ -1369,7 +1379,12 @@ module.exports = {
       "tPartial": "शर्तों के साथ",
       "tNo": "नहीं",
       "tUnknown": "अपुष्ट",
-      "newsH": "नया क्या है"
+      "newsH": "नया क्या है",
+      "dawnH": "सुप्रभात।<br>आप सो रहे थे, और शायद पैसे आ भी गए।",
+      "dawnSub": "ऐप खोलकर बैलेंस देख लीजिए। अभी शुरू नहीं किया? आज रात के लिए एक सेट कर लीजिए।",
+      "dawnCta": "सेवाओं की सूची देखें",
+      "more": "और पढ़ें",
+      "less": "कम दिखाएँ"
     },
     "zh": {
       "brand": "躺着也<span>到账</span>",
@@ -1475,7 +1490,12 @@ module.exports = {
       "tPartial": "有条件",
       "tNo": "无",
       "tUnknown": "未确认",
-      "newsH": "最新动态"
+      "newsH": "最新动态",
+      "dawnH": "早上好。<br>睡着的时候，说不定已经到账了。",
+      "dawnSub": "打开应用看看余额吧。还没开始的话，现在就为今晚做好准备。",
+      "dawnCta": "查看服务列表",
+      "more": "展开",
+      "less": "收起"
     },
     "es": {
       "brand": "Cobra mientras <span>duermes</span>",
@@ -1581,7 +1601,12 @@ module.exports = {
       "tPartial": "Con condiciones",
       "tNo": "No",
       "tUnknown": "Sin confirmar",
-      "newsH": "Novedades"
+      "newsH": "Novedades",
+      "dawnH": "Buenos días.<br>Quizá te haya llegado algo mientras dormías.",
+      "dawnSub": "Abre tus apps y echa un vistazo al saldo. ¿Aún no empiezas? Deja una lista para esta noche.",
+      "dawnCta": "Ver la lista",
+      "more": "Ver más",
+      "less": "Ver menos"
     },
     "ar": {
       "brand": "دخل وأنت <span>نائم</span>",
@@ -1687,7 +1712,12 @@ module.exports = {
       "tPartial": "بشروط",
       "tNo": "لا",
       "tUnknown": "غير مؤكد",
-      "newsH": "آخر التحديثات"
+      "newsH": "آخر التحديثات",
+      "dawnH": "صباح الخير.<br>ربما وصلك شيء وأنت نائم.",
+      "dawnSub": "افتح تطبيقاتك وألقِ نظرة على الرصيد. لم تبدأ بعد؟ جهّز واحدًا لليلة.",
+      "dawnCta": "العودة إلى القائمة",
+      "more": "عرض المزيد",
+      "less": "عرض أقل"
     }
   }
 };
