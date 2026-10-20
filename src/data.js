@@ -864,6 +864,59 @@ module.exports = {
         "need": "سجّل عبر رابط الدعوة وأكمل التحقق بالوجه في التطبيق",
         "caution": "حتى مايو 2026 لم تُدرج ITLG في أي منصة تداول وليس لها سعر سوقي. يتطلب تسجيل حضور متكررًا. استخدمه فقط إن كنت مطمئنًا لطريقة التعامل مع بيانات وجهك البيومترية"
       }
+    },
+    {
+      "id": "meingrundeinkommen",
+      "name": "Mein Grundeinkommen",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 4,
+      "official": "https://www.mein-grundeinkommen.de/",
+      "code": "",
+      "ref": "https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft",
+      "added": "2026-10-21",
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ja": {
+        "gain": "当選すると月1,000ユーロを1年間",
+        "note": "ベルリンの非営利団体が、クラウドファンディングの寄付を元手に開く無料の抽選。定期的に抽選があり、当たった人は月1,000ユーロを12か月、条件なしで受け取れる（暗号資産ではなく現金）",
+        "need": "メールアドレスで登録し、抽選ごとに参加を確認する。16歳以上で、当選時は名前と生年月日が身分証と一致している必要がある",
+        "caution": "2020年に運営は「年齢や居住地に関係なく誰でも参加できる」と説明しているが、ドイツ国外在住者の現在の条件や海外への送金は確認できていない。サイトはドイツ語。抽選なので、ほとんどの人は何も受け取れない。当選金は住んでいる国で税金がかかることがある"
+      },
+      "en": {
+        "gain": "€1,000 a month for a year if you win",
+        "note": "A free lottery run by a nonprofit association in Berlin and funded by crowdfunding donations. Draws are held regularly, and each winner gets €1,000 a month for 12 months, no strings attached (real cash, not crypto)",
+        "need": "Register with your email and confirm your participation for each draw. You must be 16 or older, and your name and date of birth must match your ID if you win",
+        "caution": "A 2020 statement from the organisation said anyone can take part regardless of age or where they live, but current rules for people outside Germany and payouts abroad are not confirmed. The site is in German. It's a lottery, so most entrants receive nothing. Winnings may be taxed in your country"
+      },
+      "zh": {
+        "gain": "中奖后每月 1,000 欧元，持续一年",
+        "note": "由柏林的非营利协会举办、以众筹捐款为资金的免费抽奖。定期开奖，每位中奖者可无条件连续 12 个月每月领取 1,000 欧元（是现金，不是加密货币）",
+        "need": "用邮箱注册，并在每次抽奖前确认参加。需年满 16 岁，中奖时姓名和出生日期须与身份证件一致",
+        "caution": "主办方在 2020 年表示，不论年龄和居住地，任何人都可参加，但目前对德国境外居民的规定以及能否向海外付款尚未确认。网站为德语。这是抽奖，大多数参加者什么也拿不到。奖金在你所在的国家可能需要缴税"
+      },
+      "hi": {
+        "gain": "जीतने पर एक साल तक हर महीने €1,000",
+        "note": "बर्लिन की एक नॉन-प्रॉफ़िट संस्था की मुफ़्त लॉटरी, जो क्राउडफ़ंडिंग दान से चलती है। ड्रॉ नियमित रूप से होते हैं, और हर विजेता को 12 महीने तक हर महीने €1,000 बिना किसी शर्त के मिलते हैं (असली नकद, क्रिप्टो नहीं)",
+        "need": "ईमेल से रजिस्टर करें और हर ड्रॉ के लिए अपनी भागीदारी कन्फ़र्म करें। उम्र 16 साल या ज़्यादा होनी चाहिए, और जीतने पर नाम व जन्मतिथि आपकी ID से मेल खानी चाहिए",
+        "caution": "संस्था ने 2020 में कहा था कि उम्र या रहने की जगह से फ़र्क नहीं पड़ता, कोई भी भाग ले सकता है, लेकिन जर्मनी के बाहर रहने वालों के मौजूदा नियम और विदेश में भुगतान की पुष्टि नहीं हुई है। साइट जर्मन भाषा में है। यह लॉटरी है, इसलिए ज़्यादातर लोगों को कुछ नहीं मिलता। जीती हुई रकम पर आपके देश में टैक्स लग सकता है"
+      },
+      "es": {
+        "gain": "1.000 € al mes durante un año si ganas",
+        "note": "Un sorteo gratuito organizado por una asociación sin ánimo de lucro de Berlín y financiado con donaciones de crowdfunding. Hay sorteos periódicos y cada ganador recibe 1.000 € al mes durante 12 meses, sin condiciones (dinero real, no cripto)",
+        "need": "Regístrate con tu email y confirma tu participación en cada sorteo. Debes tener 16 años o más, y si ganas, tu nombre y fecha de nacimiento deben coincidir con tu documento de identidad",
+        "caution": "En 2020 la organización dijo que cualquiera puede participar sin importar la edad ni el lugar de residencia, pero no están confirmadas las reglas actuales para quienes viven fuera de Alemania ni los pagos al extranjero. La web está en alemán. Es un sorteo, así que la mayoría no recibe nada. Las ganancias pueden tributar en tu país"
+      },
+      "ar": {
+        "gain": "⁦€1,000⁩ شهريًا لمدة سنة إن فزت",
+        "note": "سحب مجاني تنظمه جمعية غير ربحية في برلين ويُموَّل بتبرعات التمويل الجماعي. تُجرى السحوبات بانتظام، ويحصل كل فائز على ⁦€1,000⁩ شهريًا لمدة 12 شهرًا دون أي شروط (نقود حقيقية، لا عملات مشفرة)",
+        "need": "سجّل ببريدك الإلكتروني وأكّد مشاركتك في كل سحب. يجب أن يكون عمرك 16 عامًا أو أكثر، وعند الفوز يجب أن يطابق اسمك وتاريخ ميلادك وثيقة هويتك",
+        "caution": "ذكرت الجهة المنظمة في 2020 أن المشاركة متاحة للجميع بغض النظر عن العمر أو مكان الإقامة، لكن القواعد الحالية للمقيمين خارج ألمانيا والدفع إلى الخارج غير مؤكدة. الموقع باللغة الألمانية. إنه سحب، لذا لا يحصل معظم المشاركين على شيء. قد تخضع الجوائز للضريبة في بلدك"
+      }
     }
   ],
   "PICKS": [
@@ -896,6 +949,15 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-21",
+      "ja": "Mein Grundeinkommenを追加",
+      "en": "Added Mein Grundeinkommen",
+      "zh": "新增 Mein Grundeinkommen",
+      "hi": "Mein Grundeinkommen जोड़ा",
+      "es": "Añadido Mein Grundeinkommen",
+      "ar": "أضفنا ⁦Mein Grundeinkommen⁩"
+    },
     {
       "date": "2026-10-09",
       "ja": "トリマを追加",
@@ -1105,7 +1167,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1217,7 +1279,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1328,7 +1390,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -1439,7 +1501,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -1550,7 +1612,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -1661,7 +1723,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
