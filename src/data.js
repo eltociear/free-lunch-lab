@@ -67,25 +67,57 @@ module.exports = {
     },
     {
       "id": "circles",
-      "name": "Circles（Metri）",
+      "name": "Circles（Gnosis App）",
+      "nameEn": "Circles (Gnosis App)",
       "cat": "crypto-bi",
       "type": "loop",
       "global": true,
       "ease": 3,
-      "official": "https://aboutcircles.com/",
+      "official": "https://app.gnosis.io/",
       "code": "",
       "ref": "",
+      "noRef": true,
+      "added": "2026-10-23",
+      "trust": {
+        "cash": "unknown",
+        "price": "unknown",
+        "operator": "yes"
+      },
       "ja": {
         "gain": "1時間に1 CRC（1日24 CRC）",
-        "note": "Gnosisが手がける、一人ひとりが通貨を発行するしくみ。2025年5月にCircles 2.0公開",
-        "need": "Metriにメールで登録。参加には既存メンバーからの招待が必要",
-        "caution": "CRCを使える場所はまだ限られる"
+        "note": "Gnosisが手がける、一人ひとりが自分の通貨を発行するしくみ。2025年5月にCircles 2.0が公開され、2026年6月にはGnosis AppがCircles中心に作り直された。このサイトの紹介リンクはまだない",
+        "need": "Gnosis Appで登録し、既存のCirclesメンバーから招待を受ける。招待する側が96 CRCを払い、招待された側は歓迎ボーナスとして48 CRCを受け取る",
+        "caution": "招待してくれるメンバーがいないと始められない。CRCの市場価格や換金方法は確認できていない。Gnosis AppはGnosis Ltdから独立した会社に移る予定と発表されていて、内容が変わることがある"
       },
       "en": {
         "gain": "1 CRC per hour (24 per day)",
-        "note": "A Gnosis project where every person issues their own currency. Circles 2.0 launched May 2025",
-        "need": "Sign up to Metri with email. Joining requires an invite from a member",
-        "caution": "Places that accept CRC are still limited"
+        "note": "A Gnosis project where every person issues their own currency. Circles 2.0 launched in May 2025, and in June 2026 the Gnosis App was rebuilt around Circles. This site has no referral link for it yet",
+        "need": "Sign up in the Gnosis App and get invited by an existing Circles member. The inviter pays 96 CRC and the newcomer gets 48 CRC as a welcome bonus",
+        "caution": "You can’t start without a member to invite you. CRC’s market price and ways to cash out are not confirmed. Gnosis has announced plans to spin the Gnosis App out of Gnosis Ltd into a separate company, so details may change"
+      },
+      "zh": {
+        "gain": "每小时 1 CRC（每天 24 CRC）",
+        "note": "由 Gnosis 推出、每个人发行自己货币的机制。Circles 2.0 于 2025 年 5 月上线，2026 年 6 月 Gnosis App 围绕 Circles 进行了重建。本站暂时没有它的推荐链接",
+        "need": "在 Gnosis App 注册，并接受现有 Circles 成员的邀请。邀请人支付 96 CRC，被邀请人获得 48 CRC 欢迎奖励",
+        "caution": "没有成员邀请就无法开始。CRC 的市场价格和兑现方式尚未确认。Gnosis 已宣布计划将 Gnosis App 从 Gnosis Ltd 分拆为独立公司，内容可能会有变化"
+      },
+      "hi": {
+        "gain": "हर घंटे 1 CRC (रोज़ 24 CRC)",
+        "note": "Gnosis का एक प्रोजेक्ट जिसमें हर व्यक्ति अपनी खुद की करेंसी जारी करता है। Circles 2.0 मई 2025 में लॉन्च हुआ, और जून 2026 में Gnosis App को Circles के इर्द-गिर्द नए सिरे से बनाया गया। इस साइट के पास अभी इसका रेफ़रल लिंक नहीं है",
+        "need": "Gnosis App में साइन अप करें और किसी मौजूदा Circles सदस्य से इनवाइट पाएँ। इनवाइट करने वाला 96 CRC देता है और नए सदस्य को वेलकम बोनस के रूप में 48 CRC मिलते हैं",
+        "caution": "इनवाइट करने वाले सदस्य के बिना शुरू नहीं कर सकते। CRC की बाज़ार कीमत और उसे नकद में बदलने के तरीके की पुष्टि नहीं हुई है। Gnosis ने Gnosis App को Gnosis Ltd से अलग कंपनी बनाने की योजना घोषित की है, इसलिए चीज़ें बदल सकती हैं"
+      },
+      "es": {
+        "gain": "1 CRC por hora (24 al día)",
+        "note": "Un proyecto de Gnosis en el que cada persona emite su propia moneda. Circles 2.0 se lanzó en mayo de 2025, y en junio de 2026 la Gnosis App se rehízo en torno a Circles. Esta web aún no tiene enlace de referido",
+        "need": "Regístrate en la Gnosis App y consigue una invitación de un miembro de Circles. Quien invita paga 96 CRC y la persona invitada recibe 48 CRC de bienvenida",
+        "caution": "No puedes empezar sin un miembro que te invite. No están confirmados el precio de mercado del CRC ni cómo convertirlo en dinero. Gnosis ha anunciado que separará la Gnosis App de Gnosis Ltd en una empresa independiente, así que los detalles pueden cambiar"
+      },
+      "ar": {
+        "gain": "⁦1 CRC⁩ كل ساعة (⁦24 CRC⁩ يوميًا)",
+        "note": "مشروع من ⁦Gnosis⁩ يُصدر فيه كل شخص عملته الخاصة. أُطلق ⁦Circles 2.0⁩ في مايو 2025، وفي يونيو 2026 أُعيد بناء ⁦Gnosis App⁩ حول ⁦Circles⁩. لا يوجد لدى هذا الموقع رابط إحالة له بعد",
+        "need": "سجّل في ⁦Gnosis App⁩ واحصل على دعوة من عضو حالي في ⁦Circles⁩. يدفع الداعي ⁦96 CRC⁩ ويحصل المدعو على ⁦48 CRC⁩ مكافأة ترحيب",
+        "caution": "لا يمكنك البدء دون عضو يدعوك. لم يتأكد سعر ⁦CRC⁩ في السوق ولا طرق تحويله إلى نقود. أعلنت ⁦Gnosis⁩ نيتها فصل ⁦Gnosis App⁩ عن ⁦Gnosis Ltd⁩ في شركة مستقلة، لذا قد تتغير التفاصيل"
       }
     },
     {
@@ -1006,6 +1038,15 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-10-23",
+      "ja": "Circles（Gnosis App）を追加",
+      "en": "Added Circles (Gnosis App)",
+      "zh": "新增 Circles（Gnosis App）",
+      "hi": "Circles (Gnosis App) जोड़ा",
+      "es": "Añadido Circles (Gnosis App)",
+      "ar": "أضفنا ⁦Circles (Gnosis App)⁩"
+    },
+    {
+      "date": "2026-10-23",
       "ja": "Ğ1（ジューン）を追加",
       "en": "Added Ğ1 (June)",
       "zh": "新增 Ğ1",
@@ -1231,7 +1272,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1343,7 +1384,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1454,7 +1495,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -1565,7 +1606,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -1676,7 +1717,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -1787,7 +1828,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
