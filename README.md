@@ -20,6 +20,7 @@ Search Console: [neteru-nyukin.eltociear.workers.dev](https://search.google.com/
 
 - `code`: 紹介コード（空なら「準備中」と表示）
 - `ref`: 紹介リンク。**空のサービスは自動で非表示**
+- `noRef`: `true` にすると紹介制度のないサービスとして `ref` が空でも表示する（コード欄なし、ボタンは公式サイトへ）。あとで紹介リンクやコードが手に入ったら `ref` / `code` を入れて `noRef` を外す
 - `ja` / `en` / `zh` / `hi` / `es` / `ar`: 各言語の説明。無い言語は英語で表示
 
 独自ドメインに移したら `SITE_URL` を書き換える（canonical・hreflang・サイトマップに使われる）。

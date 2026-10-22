@@ -21,7 +21,7 @@ const FACE = {
   zh: '"Noto Sans SC"', hi: '"Noto Sans Devanagari"', ar: '"Noto Kufi Arabic"',
 };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const live = SERVICES.filter(s => s.ref);
+const live = SERVICES.filter(s => s.ref || s.noRef);
 
 function page(lang) {
   const L = T[lang];
@@ -29,6 +29,7 @@ function page(lang) {
   const chips = live.map(s => `<span>${esc(lang === 'ja' ? s.name : s.nameEn || s.name)}</span>`).join('');
   return `<!doctype html><html lang="${lang}"${rtl ? ' dir="rtl"' : ''}><head><meta charset="utf-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?${FONTS[lang]}&display=block">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&text=%C4%9E&display=block">
 <style>
 *{box-sizing:border-box;margin:0}
 body{width:1200px;height:630px;overflow:hidden;color:#EEF1FF;font-family:${FACE[lang]},sans-serif;position:relative;padding:64px 72px;
@@ -41,7 +42,7 @@ body::before{content:"";position:absolute;inset:0;background-image:radial-gradie
 h1{position:relative;font-weight:${/^(ja|en|es)$/.test(lang) ? 400 : 900};font-size:${lang === 'ja' ? 84 : lang === 'en' || lang === 'es' ? 76 : 70}px;line-height:${rtl || lang === 'hi' ? 1.4 : 1.15};margin-top:18px;max-width:${lang === 'ja' ? 820 : 900}px;text-shadow:0 6px 40px rgba(120,100,255,.4)}
 h1 em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .chips{position:absolute;bottom:56px;inset-inline:72px;display:flex;flex-wrap:wrap;gap:10px}
-.chips span{font-family:"Zen Kaku Gothic New","Noto Sans SC","Noto Sans Arabic",sans-serif;font-weight:700;font-size:22px;color:#141A3A;background:#FFD66B;padding:6px 18px;border-radius:999px}
+.chips span{font-family:"Zen Kaku Gothic New","Noto Sans","Noto Sans SC","Noto Sans Arabic",sans-serif;font-weight:700;font-size:22px;color:#141A3A;background:#FFD66B;padding:6px 18px;border-radius:999px}
 </style></head><body>
 <div class="moon"></div><div class="z"><small>z</small>Z</div>
 <p class="eyebrow">${esc(L.brandPlain)} · ${esc(L.eyebrow)}</p>

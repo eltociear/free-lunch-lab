@@ -21,7 +21,7 @@ const LANG_FONTS = {
 };
 const fontsUrl = l => `https://fonts.googleapis.com/css2?${BASE_FONTS}&${LANG_FONTS[l]}&display=swap`;
 
-const live = SERVICES.filter(s => s.ref); // 紹介リンクがあるものだけ表示
+const live = SERVICES.filter(s => s.ref || s.noRef); // 紹介リンクがあるもの（と紹介制度のない noRef）だけ表示
 const urlPath = l => (l === DEFAULT_LANG ? '/' : `/${l}/`);
 const abs = l => SITE_URL + urlPath(l);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -56,10 +56,10 @@ function trustLegend(lang) {
 const NEW_MS = 14 * 864e5;
 const isNew = s => s.added && Date.now() - Date.parse(s.added) < NEW_MS;
 
-// 申し込みボタン。codeOnly はリンク先が公式ページなので sponsored を付けない
+// 申し込みボタン。codeOnly と noRef はリンク先が公式ページなので sponsored を付けない
 function cta(s, L) {
   const label = s.codeOnly ? L.goCode : s.ref ? L.goRef : L.goOff;
-  return `<a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener${s.codeOnly ? '' : ' sponsored'}">${esc(label)}</a>`;
+  return `<a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener${s.ref && !s.codeOnly ? ' sponsored' : ''}">${esc(label)}</a>`;
 }
 
 // アイコン代わりのモノグラム（ロゴは使わない）。日本語名は頭の1文字、英字は大文字2つか頭2文字
@@ -77,7 +77,8 @@ function card(s, lang) {
   const name = lang === 'ja' ? s.name : s.nameEn || s.name;
   const has = !!s.code;
   // 紹介リンクがあるものはコード欄・コピーボタンを出さない。codeOnly はリンクが公式ページだけなのでコードを出す
-  const showCode = !s.ref || s.codeOnly;
+  // noRef は紹介制度がないのでコード欄も出さない
+  const showCode = (!s.ref && !s.noRef) || s.codeOnly;
   return `<article class="svc rv" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">${esc(mono(s, name))}</span><div class="svc-id"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div></div>
 <p class="gain">${esc(d.gain)}</p>
