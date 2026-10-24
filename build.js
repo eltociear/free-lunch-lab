@@ -405,7 +405,6 @@ const DETAIL_CSS = `
 .org-meta{font-size:.78rem;color:var(--muted)}
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
-.orgs-credit{margin-top:32px;font-size:.8rem;color:var(--muted);line-height:1.8}
 .faq-more{margin-top:14px;font-size:.92rem}
 .foot a{color:inherit;text-underline-offset:3px}
 `;
@@ -562,7 +561,6 @@ function orgsPage(lang) {
 <header class="orgs-head"><p class="eyebrow">ORGANIZATIONS</p><h1>${esc(L.orgsH1)}</h1><p class="orgs-intro">${esc(L.orgsIntro)}</p>
 <nav class="org-toc" aria-label="${esc(L.navLabel)}">${ORG_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}</nav></header>
 ${groups}
-<p class="orgs-credit">${esc(L.orgsCredit)} <a href="https://github.com/rmharrison/awesome-ubi-organisations" target="_blank" rel="noopener">awesome-ubi-organisations</a> · ${esc(L.orgsAsOf)}</p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   return shell(lang, { title, desc: L.orgsDesc, hrefFor: orgAbs, pathFor: orgPath, ld, ogType: 'website', body });
