@@ -1340,8 +1340,7 @@ module.exports = {
       "ease": 2,
       "official": "https://gradido.net/en/",
       "code": "",
-      "ref": "",
-      "noRef": true,
+      "ref": "https://gdd.gradido.net/u/eltociear",
       "added": "2026-10-24",
       "trust": {
         "cash": "unknown",
@@ -1351,38 +1350,38 @@ module.exports = {
       "ja": {
         "gain": "公益への貢献1時間につき20 GDD（月最大1,000 GDD）",
         "note": "「感謝（Gratitude）・尊厳（Dignity）・寄付（Donation）」から名づけられた、「自然の経済」をうたう独自通貨のしくみ。お金は借金からではなく参加者みんなが生み出すという考え方で、公益になる活動をすると「アクティブ・ベーシックインカム」として1時間20 GDD、月50時間（1,000 GDD）まで受け取れる。使わないお金は年50%（月約5.61%）の割合で目減りする。運営はオーストリアの研究開発団体 Gradido Akademie International（ドイツにも拠点）",
-        "need": "公式サイトから無料で Gradido アカウントを作り、公益への貢献を申告して GDD を受け取る",
-        "caution": "公式FAQでは「今のところは感謝のポイント報酬システム」で、暗号資産ではないとしている。GDDをユーロなどに換金する方法は公式に書かれていない。2026年10月に日本から使えることを実際に確認した。アカウント内に知り合いを招待するしくみはあるが、このサイトの紹介リンクはない"
+        "need": "紹介リンクから無料で Gradido アカウントを作り、公益への貢献を申告して GDD を受け取る",
+        "caution": "公式FAQでは「今のところは感謝のポイント報酬システム」で、暗号資産ではないとしている。GDDをユーロなどに換金する方法は公式に書かれていない。2026年10月に日本から使えることを実際に確認した。紹介リンク経由で登録した人が、のちに Gradido へ資金面の貢献（寄付など）をすると、紹介した側に GDT（Gradido Transform）が付く（公開されているウォレットのソースコードによる）。登録するだけで特典が出るしくみではない"
       },
       "en": {
         "gain": "20 GDD per hour of common-good work (up to 1,000 GDD a month)",
         "note": "A currency system billed as a “natural economy”, named after Gratitude, Dignity and Donation. Money is created by everyone rather than as debt: contributions to the common good earn an “active basic income” of 20 GDD an hour, up to 50 hours (1,000 GDD) a month. Unused money shrinks at 50% a year (about 5.61% a month). Run by Gradido Akademie International, a research and development association in Austria with a branch in Germany",
-        "need": "Create a free Gradido account on the official site, log your common-good contributions and receive GDD",
-        "caution": "The official FAQ says that for now it is a thank-you point reward system and not a cryptocurrency. There is no official information on exchanging GDD for euros or other money. Confirmed usable from Japan in Oct 2026 (first-hand). The account has a way to invite people you know, but this site has no referral link for it"
+        "need": "Create a free Gradido account through the referral link, log your common-good contributions and receive GDD",
+        "caution": "The official FAQ says that for now it is a thank-you point reward system and not a cryptocurrency. There is no official information on exchanging GDD for euros or other money. Confirmed usable from Japan in Oct 2026 (first-hand). If someone who signed up through a referral link later makes a financial contribution to Gradido (such as a donation), the referrer is credited with GDT (Gradido Transform), according to the public wallet source code. There is no bonus just for signing up"
       },
       "zh": {
         "gain": "每做 1 小时公益贡献得 20 GDD（每月最多 1,000 GDD）",
         "note": "一种自称“自然经济”的独立货币体系，名称来自感恩（Gratitude）、尊严（Dignity）和捐赠（Donation）。认为货币应由所有人创造而不是来自债务：为公益做贡献可获得“主动基本收入”，每小时 20 GDD，每月最多 50 小时（1,000 GDD）。不用的钱每年减少 50%（每月约 5.61%）。运营方为奥地利的研发协会 Gradido Akademie International（在德国也设有分支）",
-        "need": "在官网免费注册 Gradido 账户，申报公益贡献并领取 GDD",
-        "caution": "官方 FAQ 称目前它是“感谢积分奖励系统”，并非加密货币。官方没有说明 GDD 能否兑换成欧元等货币。2026 年 10 月已亲自确认可在日本使用。账户内有邀请熟人的功能，但本站没有它的推荐链接"
+        "need": "通过推荐链接免费注册 Gradido 账户，申报公益贡献并领取 GDD",
+        "caution": "官方 FAQ 称目前它是“感谢积分奖励系统”，并非加密货币。官方没有说明 GDD 能否兑换成欧元等货币。2026 年 10 月已亲自确认可在日本使用。通过推荐链接注册的人日后若向 Gradido 做出资金贡献（如捐款），推荐人会获得 GDT（Gradido Transform）（依据公开的钱包源代码）。仅注册不会得到奖励"
       },
       "hi": {
         "gain": "जनहित के हर घंटे के काम पर 20 GDD (महीने में ज़्यादा से ज़्यादा 1,000 GDD)",
         "note": "“प्राकृतिक अर्थव्यवस्था” कहलाने वाली एक मुद्रा व्यवस्था, जिसका नाम Gratitude (कृतज्ञता), Dignity (गरिमा) और Donation (दान) से बना है। पैसा कर्ज़ से नहीं, सब मिलकर बनाते हैं: जनहित के काम पर “एक्टिव बेसिक इनकम” के रूप में 20 GDD प्रति घंटा, महीने में 50 घंटे (1,000 GDD) तक मिलते हैं। बिना इस्तेमाल का पैसा साल में 50% (महीने में लगभग 5.61%) घटता है। इसे ऑस्ट्रिया का शोध और विकास संघ Gradido Akademie International चलाता है (जर्मनी में भी शाखा)",
-        "need": "आधिकारिक साइट पर मुफ़्त Gradido अकाउंट बनाएँ, जनहित के योगदान दर्ज करें और GDD पाएँ",
-        "caution": "आधिकारिक FAQ के अनुसार अभी यह “धन्यवाद पॉइंट इनाम व्यवस्था” है और क्रिप्टोकरेंसी नहीं है। GDD को यूरो या दूसरे पैसे में बदलने की कोई आधिकारिक जानकारी नहीं है। अक्टूबर 2026 में खुद आज़माकर पुष्टि हुई कि यह जापान से चलता है। अकाउंट में जान-पहचान वालों को बुलाने का तरीका है, पर इस साइट के पास इसका रेफ़रल लिंक नहीं है"
+        "need": "रेफ़रल लिंक से मुफ़्त Gradido अकाउंट बनाएँ, जनहित के योगदान दर्ज करें और GDD पाएँ",
+        "caution": "आधिकारिक FAQ के अनुसार अभी यह “धन्यवाद पॉइंट इनाम व्यवस्था” है और क्रिप्टोकरेंसी नहीं है। GDD को यूरो या दूसरे पैसे में बदलने की कोई आधिकारिक जानकारी नहीं है। अक्टूबर 2026 में खुद आज़माकर पुष्टि हुई कि यह जापान से चलता है। रेफ़रल लिंक से जुड़ा व्यक्ति अगर बाद में Gradido को आर्थिक योगदान (जैसे दान) देता है, तो रेफ़र करने वाले को GDT (Gradido Transform) मिलता है (सार्वजनिक वॉलेट सोर्स कोड के अनुसार)। सिर्फ़ साइन अप करने पर कोई बोनस नहीं है"
       },
       "es": {
         "gain": "20 GDD por hora de trabajo por el bien común (hasta 1.000 GDD al mes)",
         "note": "Un sistema monetario que se presenta como «economía natural», con nombre tomado de Gratitude (gratitud), Dignity (dignidad) y Donation (donación). El dinero lo crean todas las personas y no nace de la deuda: las aportaciones al bien común dan una «renta básica activa» de 20 GDD por hora, hasta 50 horas (1.000 GDD) al mes. El dinero sin usar se reduce un 50 % al año (en torno al 5,61 % al mes). Lo gestiona Gradido Akademie International, una asociación de investigación y desarrollo de Austria con sede también en Alemania",
-        "need": "Crea gratis una cuenta Gradido en la web oficial, registra tus aportaciones al bien común y recibe GDD",
-        "caution": "Según las preguntas frecuentes oficiales, por ahora es un sistema de puntos de agradecimiento y no una criptomoneda. No hay información oficial sobre cambiar GDD por euros u otro dinero. Se comprobó en persona que funciona desde Japón en octubre de 2026. La cuenta permite invitar a conocidos, pero esta web no tiene enlace de referido"
+        "need": "Crea gratis una cuenta Gradido con el enlace de referido, registra tus aportaciones al bien común y recibe GDD",
+        "caution": "Según las preguntas frecuentes oficiales, por ahora es un sistema de puntos de agradecimiento y no una criptomoneda. No hay información oficial sobre cambiar GDD por euros u otro dinero. Se comprobó en persona que funciona desde Japón en octubre de 2026. Si alguien que se registró con un enlace de referido hace después una aportación económica a Gradido (como una donación), quien lo refirió recibe GDT (Gradido Transform), según el código fuente público del monedero. No hay bono solo por registrarse"
       },
       "ar": {
         "gain": "⁦20 GDD⁩ عن كل ساعة عمل للصالح العام (حتى ⁦1,000 GDD⁩ شهريًا)",
         "note": "نظام عملة يصف نفسه بأنه «اقتصاد طبيعي»، اسمه مأخوذ من الامتنان (⁦Gratitude⁩) والكرامة (⁦Dignity⁩) والتبرع (⁦Donation⁩). يرى أن المال يخلقه الجميع لا الدَّين: المساهمة في الصالح العام تمنح «دخلًا أساسيًا نشطًا» قدره ⁦20 GDD⁩ للساعة، حتى 50 ساعة (⁦1,000 GDD⁩) شهريًا. المال غير المستخدم يتناقص بنسبة 50% سنويًا (نحو 5.61% شهريًا). تديره ⁦Gradido Akademie International⁩، وهي جمعية بحث وتطوير في النمسا ولها فرع في ألمانيا",
-        "need": "أنشئ حساب ⁦Gradido⁩ مجانًا من الموقع الرسمي، وسجّل مساهماتك في الصالح العام واستلم ⁦GDD⁩",
-        "caution": "تقول الأسئلة الشائعة الرسمية إنه حاليًا نظام نقاط شكر وليس عملة مشفرة. لا توجد معلومات رسمية عن تحويل ⁦GDD⁩ إلى يورو أو نقود أخرى. تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان. في الحساب طريقة لدعوة المعارف، لكن ليس لدى هذا الموقع رابط إحالة له"
+        "need": "أنشئ حساب ⁦Gradido⁩ مجانًا عبر رابط الإحالة، وسجّل مساهماتك في الصالح العام واستلم ⁦GDD⁩",
+        "caution": "تقول الأسئلة الشائعة الرسمية إنه حاليًا نظام نقاط شكر وليس عملة مشفرة. لا توجد معلومات رسمية عن تحويل ⁦GDD⁩ إلى يورو أو نقود أخرى. تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان. إذا قدّم من سجّل عبر رابط إحالة لاحقًا مساهمة مالية لـ⁦Gradido⁩ (كالتبرع)، يُضاف ⁦GDT (Gradido Transform)⁩ إلى حساب من أحاله، وفقًا للشيفرة المصدرية العامة للمحفظة. لا توجد مكافأة لمجرد التسجيل"
       }
     },
     {
