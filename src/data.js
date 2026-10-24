@@ -1111,6 +1111,61 @@ module.exports = {
         "need": "أن يكون عمرك 18 عامًا أو أكثر. سجّل في الموقع الرسمي وقدّم طلبًا لكل سنة تريد المشاركة فيها. عندما يحين دورك، اجتز تحققًا سريعًا من الهوية (للتأكد أنك إنسان) وأنشئ محفظة ⁦Cardano⁩ لاستلام الدفعات",
         "caution": "في دورة 2027 أُغلق باب الطلبات في 31 أغسطس 2026 ويُغلق التسجيل في 30 نوفمبر 2026، ولم يتأكد متى يبدأ من يسجّل الآن في الاستلام. يُصرف حسب ترتيب الطابور، وفي 24 أكتوبر 2026 أظهر الموقع 147 مواطنًا ومستفيدَين اثنين. سعر ⁦ADA⁩ يتقلب كثيرًا"
       }
+    },
+    {
+      "id": "oro",
+      "name": "ORO（World App）",
+      "nameEn": "ORO (World App)",
+      "cat": "crypto-bi",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645",
+      "code": "",
+      "ref": "",
+      "noRef": true,
+      "added": "2026-10-24",
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "unknown"
+      },
+      "ja": {
+        "gain": "ORO トークンを毎日",
+        "note": "World App の中で動くミニアプリ。「すべての人間が毎日受け取れるトークン」として、World Chain 上の ORO を1日1回受け取れる。友だちを招待すると ORO が多くもらえるしくみもある。開発は Grupo de Fiesta、利用者は約390万人（2026年10月時点のWorldの掲載ページ）",
+        "need": "World App を入れて World ID で人間であることを証明し、ミニアプリ ORO を開いて毎日受け取る",
+        "caution": "1日にもらえる量は公式ページに書かれていない（2025年9月の World Chain の告知では1日1 ORO。その後減ったという報告もある）。必要な本人確認のレベル（Orb など）と、日本から使えるかは確認できていない。ORO は分散型取引所（DEX）で取引されているが流動性は小さく、2026年10月時点で1 ORO は1円未満。運営元の会社情報は見つからない"
+      },
+      "en": {
+        "gain": "ORO tokens every day",
+        "note": "A mini app inside World App. Billed as “a token every human can claim daily”, it lets you claim ORO on World Chain once a day, and you can invite friends to earn more. Developed by Grupo de Fiesta, with about 3.9 million users (World’s listing page, Oct 2026)",
+        "need": "Install World App, prove you are human with World ID, then open the ORO mini app and claim every day",
+        "caution": "The daily amount is not stated on the official pages (a World Chain announcement in Sep 2025 said 1 ORO a day; later reports say it was reduced). The required verification level (Orb etc.) and availability in Japan are not confirmed. ORO trades on a decentralized exchange (DEX) with little liquidity, and as of Oct 2026 one ORO is worth well under a cent. No company details for the operator were found"
+      },
+      "zh": {
+        "gain": "每天领取 ORO 代币",
+        "note": "在 World App 内运行的小程序。号称“每个人类每天都能领取的代币”，每天可领取一次 World Chain 上的 ORO，邀请朋友还能多得 ORO。开发者为 Grupo de Fiesta，用户约 390 万（2026 年 10 月 World 的介绍页）",
+        "need": "安装 World App，用 World ID 证明你是真人，然后打开 ORO 小程序每天领取",
+        "caution": "官方页面没有写明每天能领多少（2025 年 9 月 World Chain 的公告为每天 1 ORO，之后有减少的报告）。所需的验证等级（Orb 等）以及在日本能否使用尚未确认。ORO 在去中心化交易所（DEX）交易，但流动性很小，截至 2026 年 10 月 1 ORO 远不到 1 美分。未找到运营方的公司信息"
+      },
+      "hi": {
+        "gain": "हर दिन ORO टोकन",
+        "note": "World App के अंदर चलने वाला एक मिनी ऐप। “हर इंसान रोज़ क्लेम कर सकने वाला टोकन” के रूप में, इसमें World Chain पर ORO दिन में एक बार क्लेम किया जा सकता है, और दोस्तों को बुलाकर ज़्यादा ORO कमाया जा सकता है। डेवलपर Grupo de Fiesta है, और लगभग 39 लाख यूज़र हैं (World का लिस्टिंग पेज, अक्टूबर 2026)",
+        "need": "World App इंस्टॉल करें, World ID से साबित करें कि आप इंसान हैं, फिर ORO मिनी ऐप खोलकर रोज़ क्लेम करें",
+        "caution": "रोज़ की रकम आधिकारिक पेजों पर नहीं लिखी है (सितंबर 2025 में World Chain की घोषणा में रोज़ 1 ORO बताया गया था; बाद की रिपोर्टों के अनुसार यह घटाया गया)। ज़रूरी वेरिफ़िकेशन लेवल (Orb आदि) और जापान में उपलब्धता की पुष्टि नहीं हुई है। ORO एक डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर ट्रेड होता है, पर लिक्विडिटी बहुत कम है, और अक्टूबर 2026 में 1 ORO की कीमत एक सेंट से भी काफ़ी कम है। ऑपरेटर की कंपनी की जानकारी नहीं मिली"
+      },
+      "es": {
+        "gain": "Tokens ORO cada día",
+        "note": "Una mini app dentro de World App. Presentada como «un token que todo humano puede reclamar a diario», permite reclamar ORO en World Chain una vez al día, y puedes invitar a amigos para ganar más. La desarrolla Grupo de Fiesta y tiene unos 3,9 millones de usuarios (página de World, octubre de 2026)",
+        "need": "Instala World App, demuestra que eres humano con World ID y abre la mini app ORO para reclamar cada día",
+        "caution": "La cantidad diaria no figura en las páginas oficiales (un anuncio de World Chain de septiembre de 2025 hablaba de 1 ORO al día; después se informó de una reducción). No están confirmados el nivel de verificación necesario (Orb, etc.) ni si funciona en Japón. ORO se negocia en un exchange descentralizado (DEX) con poca liquidez, y a octubre de 2026 un ORO vale mucho menos de un céntimo. No se encontraron datos de la empresa que lo gestiona"
+      },
+      "ar": {
+        "gain": "رموز ⁦ORO⁩ كل يوم",
+        "note": "تطبيق مصغّر داخل ⁦World App⁩. يُقدَّم على أنه «رمز يستطيع كل إنسان المطالبة به يوميًا»، فتطالب بـ⁦ORO⁩ على ⁦World Chain⁩ مرة في اليوم، ويمكنك دعوة الأصدقاء لكسب المزيد. المطوّر ⁦Grupo de Fiesta⁩، وعدد المستخدمين نحو 3.9 مليون (صفحة ⁦World⁩، أكتوبر 2026)",
+        "need": "ثبّت ⁦World App⁩ وأثبت أنك إنسان عبر ⁦World ID⁩، ثم افتح تطبيق ⁦ORO⁩ المصغّر وطالب كل يوم",
+        "caution": "لا تذكر الصفحات الرسمية المقدار اليومي (إعلان ⁦World Chain⁩ في سبتمبر 2025 ذكر ⁦1 ORO⁩ يوميًا، وتشير تقارير لاحقة إلى تخفيضه). لم يتأكد مستوى التحقق المطلوب (⁦Orb⁩ وغيره) ولا توفره في اليابان. يُتداول ⁦ORO⁩ في منصة تداول لامركزية (⁦DEX⁩) بسيولة ضئيلة، وفي أكتوبر 2026 كانت قيمة ⁦1 ORO⁩ أقل بكثير من سنت واحد. لم نعثر على معلومات عن الشركة المشغّلة"
+      }
     }
   ],
   "PICKS": [
@@ -1143,6 +1198,15 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-24",
+      "ja": "ORO（World App）を追加",
+      "en": "Added ORO (World App)",
+      "zh": "新增 ORO（World App）",
+      "hi": "ORO (World App) जोड़ा",
+      "es": "Añadido ORO (World App)",
+      "ar": "أضفنا ⁦ORO (World App)⁩"
+    },
     {
       "date": "2026-10-24",
       "ja": "Dotareを追加",
@@ -1397,7 +1461,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1516,7 +1580,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1634,7 +1698,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -1752,7 +1816,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -1870,7 +1934,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -1988,7 +2052,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
