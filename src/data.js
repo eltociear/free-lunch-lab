@@ -1330,6 +1330,60 @@ module.exports = {
         "need": "للمقيمين في الولايات المتحدة بعمر 18 عامًا فأكثر. التحقق بمعاملة قدرها سنت واحد عبر ⁦Venmo⁩ (دون رفع هوية أو فحص للدخل)",
         "caution": "حتى أكتوبر 2026 لا يمكن استخدامه من اليابان (الشروط تقصره على المقيمين في الولايات المتحدة، وتأكدنا بالتجربة أنه لا يعمل من اليابان). الحصة للفرد ضئيلة جدًا وتنخفض مع أداء الصندوق، ويُذكر صراحةً أن الدفعات غير مضمونة وقد تتوقف في أي وقت. يصف نفسه بأنه تجربة اجتماعية غير رسمية وليس شركة. على المستلم الإبلاغ عن المبالغ بوصفها دخلًا"
       }
+    },
+    {
+      "id": "gradido",
+      "name": "Gradido",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 2,
+      "official": "https://gradido.net/en/",
+      "code": "",
+      "ref": "",
+      "noRef": true,
+      "added": "2026-10-24",
+      "trust": {
+        "cash": "unknown",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ja": {
+        "gain": "公益への貢献1時間につき20 GDD（月最大1,000 GDD）",
+        "note": "「感謝（Gratitude）・尊厳（Dignity）・寄付（Donation）」から名づけられた、「自然の経済」をうたう独自通貨のしくみ。お金は借金からではなく参加者みんなが生み出すという考え方で、公益になる活動をすると「アクティブ・ベーシックインカム」として1時間20 GDD、月50時間（1,000 GDD）まで受け取れる。使わないお金は年50%（月約5.61%）の割合で目減りする。運営はオーストリアの研究開発団体 Gradido Akademie International（ドイツにも拠点）",
+        "need": "公式サイトから無料で Gradido アカウントを作り、公益への貢献を申告して GDD を受け取る",
+        "caution": "公式FAQでは「今のところは感謝のポイント報酬システム」で、暗号資産ではないとしている。GDDをユーロなどに換金する方法は公式に書かれていない。2026年10月に日本から使えることを実際に確認した。アカウント内に知り合いを招待するしくみはあるが、このサイトの紹介リンクはない"
+      },
+      "en": {
+        "gain": "20 GDD per hour of common-good work (up to 1,000 GDD a month)",
+        "note": "A currency system billed as a “natural economy”, named after Gratitude, Dignity and Donation. Money is created by everyone rather than as debt: contributions to the common good earn an “active basic income” of 20 GDD an hour, up to 50 hours (1,000 GDD) a month. Unused money shrinks at 50% a year (about 5.61% a month). Run by Gradido Akademie International, a research and development association in Austria with a branch in Germany",
+        "need": "Create a free Gradido account on the official site, log your common-good contributions and receive GDD",
+        "caution": "The official FAQ says that for now it is a thank-you point reward system and not a cryptocurrency. There is no official information on exchanging GDD for euros or other money. Confirmed usable from Japan in Oct 2026 (first-hand). The account has a way to invite people you know, but this site has no referral link for it"
+      },
+      "zh": {
+        "gain": "每做 1 小时公益贡献得 20 GDD（每月最多 1,000 GDD）",
+        "note": "一种自称“自然经济”的独立货币体系，名称来自感恩（Gratitude）、尊严（Dignity）和捐赠（Donation）。认为货币应由所有人创造而不是来自债务：为公益做贡献可获得“主动基本收入”，每小时 20 GDD，每月最多 50 小时（1,000 GDD）。不用的钱每年减少 50%（每月约 5.61%）。运营方为奥地利的研发协会 Gradido Akademie International（在德国也设有分支）",
+        "need": "在官网免费注册 Gradido 账户，申报公益贡献并领取 GDD",
+        "caution": "官方 FAQ 称目前它是“感谢积分奖励系统”，并非加密货币。官方没有说明 GDD 能否兑换成欧元等货币。2026 年 10 月已亲自确认可在日本使用。账户内有邀请熟人的功能，但本站没有它的推荐链接"
+      },
+      "hi": {
+        "gain": "जनहित के हर घंटे के काम पर 20 GDD (महीने में ज़्यादा से ज़्यादा 1,000 GDD)",
+        "note": "“प्राकृतिक अर्थव्यवस्था” कहलाने वाली एक मुद्रा व्यवस्था, जिसका नाम Gratitude (कृतज्ञता), Dignity (गरिमा) और Donation (दान) से बना है। पैसा कर्ज़ से नहीं, सब मिलकर बनाते हैं: जनहित के काम पर “एक्टिव बेसिक इनकम” के रूप में 20 GDD प्रति घंटा, महीने में 50 घंटे (1,000 GDD) तक मिलते हैं। बिना इस्तेमाल का पैसा साल में 50% (महीने में लगभग 5.61%) घटता है। इसे ऑस्ट्रिया का शोध और विकास संघ Gradido Akademie International चलाता है (जर्मनी में भी शाखा)",
+        "need": "आधिकारिक साइट पर मुफ़्त Gradido अकाउंट बनाएँ, जनहित के योगदान दर्ज करें और GDD पाएँ",
+        "caution": "आधिकारिक FAQ के अनुसार अभी यह “धन्यवाद पॉइंट इनाम व्यवस्था” है और क्रिप्टोकरेंसी नहीं है। GDD को यूरो या दूसरे पैसे में बदलने की कोई आधिकारिक जानकारी नहीं है। अक्टूबर 2026 में खुद आज़माकर पुष्टि हुई कि यह जापान से चलता है। अकाउंट में जान-पहचान वालों को बुलाने का तरीका है, पर इस साइट के पास इसका रेफ़रल लिंक नहीं है"
+      },
+      "es": {
+        "gain": "20 GDD por hora de trabajo por el bien común (hasta 1.000 GDD al mes)",
+        "note": "Un sistema monetario que se presenta como «economía natural», con nombre tomado de Gratitude (gratitud), Dignity (dignidad) y Donation (donación). El dinero lo crean todas las personas y no nace de la deuda: las aportaciones al bien común dan una «renta básica activa» de 20 GDD por hora, hasta 50 horas (1.000 GDD) al mes. El dinero sin usar se reduce un 50 % al año (en torno al 5,61 % al mes). Lo gestiona Gradido Akademie International, una asociación de investigación y desarrollo de Austria con sede también en Alemania",
+        "need": "Crea gratis una cuenta Gradido en la web oficial, registra tus aportaciones al bien común y recibe GDD",
+        "caution": "Según las preguntas frecuentes oficiales, por ahora es un sistema de puntos de agradecimiento y no una criptomoneda. No hay información oficial sobre cambiar GDD por euros u otro dinero. Se comprobó en persona que funciona desde Japón en octubre de 2026. La cuenta permite invitar a conocidos, pero esta web no tiene enlace de referido"
+      },
+      "ar": {
+        "gain": "⁦20 GDD⁩ عن كل ساعة عمل للصالح العام (حتى ⁦1,000 GDD⁩ شهريًا)",
+        "note": "نظام عملة يصف نفسه بأنه «اقتصاد طبيعي»، اسمه مأخوذ من الامتنان (⁦Gratitude⁩) والكرامة (⁦Dignity⁩) والتبرع (⁦Donation⁩). يرى أن المال يخلقه الجميع لا الدَّين: المساهمة في الصالح العام تمنح «دخلًا أساسيًا نشطًا» قدره ⁦20 GDD⁩ للساعة، حتى 50 ساعة (⁦1,000 GDD⁩) شهريًا. المال غير المستخدم يتناقص بنسبة 50% سنويًا (نحو 5.61% شهريًا). تديره ⁦Gradido Akademie International⁩، وهي جمعية بحث وتطوير في النمسا ولها فرع في ألمانيا",
+        "need": "أنشئ حساب ⁦Gradido⁩ مجانًا من الموقع الرسمي، وسجّل مساهماتك في الصالح العام واستلم ⁦GDD⁩",
+        "caution": "تقول الأسئلة الشائعة الرسمية إنه حاليًا نظام نقاط شكر وليس عملة مشفرة. لا توجد معلومات رسمية عن تحويل ⁦GDD⁩ إلى يورو أو نقود أخرى. تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان. في الحساب طريقة لدعوة المعارف، لكن ليس لدى هذا الموقع رابط إحالة له"
+      }
     }
   ],
   "PICKS": [
@@ -1362,6 +1416,15 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-24",
+      "ja": "Gradidoを追加",
+      "en": "Added Gradido",
+      "zh": "新增 Gradido",
+      "hi": "Gradido जोड़ा",
+      "es": "Añadido Gradido",
+      "ar": "أضفنا ⁦Gradido⁩"
+    },
     {
       "date": "2026-10-24",
       "ja": "Ubiquitusを追加（アメリカ在住者向け）",
@@ -1661,7 +1724,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1791,7 +1854,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1920,7 +1983,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -2049,7 +2112,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -2178,7 +2241,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -2307,7 +2370,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
@@ -2440,6 +2503,14 @@ module.exports = {
       "hi": "जापान",
       "es": "Japón",
       "ar": "اليابان"
+    },
+    "at": {
+      "ja": "オーストリア",
+      "en": "Austria",
+      "zh": "奥地利",
+      "hi": "ऑस्ट्रिया",
+      "es": "Austria",
+      "ar": "النمسا"
     }
   },
   "ORG_GROUPS": [
@@ -2782,6 +2853,22 @@ module.exports = {
         "hi": "अपने ही समूह में “बेसिक इनकम” बनाने के लिए ओपन-सोर्स ऐप: सदस्य हर महीने पैसे जोड़ते हैं और जिनकी आय कम पड़ती है उनकी मदद करते हैं। okTurtles Foundation इसे विकसित कर रहा है",
         "es": "App de código abierto para crear una «renta básica» dentro de tu propio grupo: los miembros aportan cada mes para apoyar a quien no llega. La desarrolla la okTurtles Foundation",
         "ar": "تطبيق مفتوح المصدر لبناء «دخل أساسي» داخل مجموعتك: يساهم الأعضاء شهريًا لدعم من يقل دخله. تطوّره ⁦okTurtles Foundation⁩"
+      }
+    },
+    {
+      "id": "gradido",
+      "group": "chain",
+      "name": "Gradido (Gradido Akademie International)",
+      "url": "https://gradido.net/en/",
+      "region": "at",
+      "svc": "gradido",
+      "desc": {
+        "ja": "「自然の経済」をうたう独自通貨のしくみを研究・運営する、オーストリアの研究開発団体。公益への貢献に応じた「アクティブ・ベーシックインカム」と、使わないお金が目減りするしくみが特徴",
+        "en": "An Austrian research and development association behind Gradido, a currency system billed as a “natural economy”, with an “active basic income” for common-good contributions and money that slowly shrinks when unused",
+        "zh": "研究并运营自称“自然经济”的货币体系 Gradido 的奥地利研发协会。特点是按公益贡献发放的“主动基本收入”，以及闲置货币逐渐减少的机制",
+        "hi": "ऑस्ट्रिया का शोध और विकास संघ, जो “प्राकृतिक अर्थव्यवस्था” कहलाने वाली मुद्रा व्यवस्था Gradido चलाता है; जनहित के योगदान पर “एक्टिव बेसिक इनकम” और बिना इस्तेमाल के धीरे-धीरे घटने वाला पैसा इसकी ख़ासियत है",
+        "es": "Asociación austriaca de investigación y desarrollo detrás de Gradido, un sistema monetario que se presenta como «economía natural», con una «renta básica activa» por aportar al bien común y dinero que se reduce poco a poco si no se usa",
+        "ar": "جمعية بحث وتطوير نمساوية تقف وراء ⁦Gradido⁩، وهو نظام عملة يصف نفسه بأنه «اقتصاد طبيعي»، يتميز بـ«دخل أساسي نشط» مقابل المساهمة في الصالح العام وبمال يتناقص تدريجيًا إذا لم يُستخدم"
       }
     },
     {

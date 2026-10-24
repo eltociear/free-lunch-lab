@@ -41,8 +41,8 @@ body::before{content:"";position:absolute;inset:0;background-image:radial-gradie
 .eyebrow{position:relative;max-width:820px;font-family:"Zen Kaku Gothic New",${FACE[lang]},sans-serif;font-weight:700;font-size:24px;color:#A9B2D8;letter-spacing:.04em}
 h1{position:relative;font-weight:${/^(ja|en|es)$/.test(lang) ? 400 : 900};font-size:${lang === 'ja' ? 84 : lang === 'en' || lang === 'es' ? 76 : rtl && live.length > 16 ? 60 : 70}px;line-height:${rtl || lang === 'hi' ? 1.4 : 1.15};margin-top:18px;max-width:${lang === 'ja' ? 820 : 900}px;text-shadow:0 6px 40px rgba(120,100,255,.4)}
 h1 em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.chips{position:relative;margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:${live.length > 16 ? 8 : 10}px}
-.chips span{font-family:"Zen Kaku Gothic New","Noto Sans","Noto Sans SC","Noto Sans Arabic",sans-serif;font-weight:700;font-size:${live.length > 16 ? 19 : 22}px;color:#141A3A;background:#FFD66B;padding:${live.length > 16 ? '5px 14px' : '6px 18px'};border-radius:999px}
+.chips{position:relative;margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:${live.length > 22 ? 6 : live.length > 16 ? 8 : 10}px}
+.chips span{font-family:"Zen Kaku Gothic New","Noto Sans","Noto Sans SC","Noto Sans Arabic",sans-serif;font-weight:700;font-size:${live.length > 22 ? 17 : live.length > 16 ? 19 : 22}px;color:#141A3A;background:#FFD66B;padding:${live.length > 22 ? '4px 12px' : live.length > 16 ? '5px 14px' : '6px 18px'};border-radius:999px}
 </style></head><body>
 <div class="moon"></div><div class="z"><small>z</small>Z</div>
 <p class="eyebrow">${esc(L.brandPlain)} · ${esc(L.eyebrow)}</p>
