@@ -97,7 +97,7 @@ const ava = (s, name) => `<span class="ava" aria-hidden="true" dir="auto">${esc(
 const tags = (s, L) => `<div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div>`;
 function meta(s, lang) {
   const L = T[lang];
-  return `<div class="meta"><span class="ease"><span>${esc(L.ease)}</span>${meter(s.ease)}</span><span class="region${s.global ? ' world' : ''}"><span class="vh">${esc(L.region)}: </span>${esc(s.global ? L.global : L.jp)}</span>${trust(s, lang)}</div>`;
+  return `<div class="meta"><span class="ease"><span>${esc(L.ease)}</span>${meter(s.ease)}</span><span class="region${s.global ? ' world' : ''}"><span class="vh">${esc(L.region)}: </span>${esc(s.onlyIn ? L['only_' + s.onlyIn] : s.global ? L.global : L.jp)}</span>${trust(s, lang)}</div>`;
 }
 function slip(s, L) {
   const has = !!s.code;

@@ -28,6 +28,7 @@ Search Console: [neteru-nyukin.eltociear.workers.dev](https://search.google.com/
 
 - `code`: 紹介コード（空なら「準備中」と表示）
 - `ref`: 紹介リンク。**空のサービスは自動で非表示**
+- `onlyIn`: 特定の国の居住者だけが使えるときに国コード（例 `us`）を入れると、地域表示が「アメリカ在住者向け」などになる（文言は `T` の `only_{国コード}`）。`global` は `false` のまま
 - `noRef`: `true` にすると紹介制度のないサービスとして `ref` が空でも表示する（コード欄なし、ボタンは公式サイトへ）。あとで紹介リンクやコードが手に入ったら `ref` / `code` を入れて `noRef` を外す
 - `ja` / `en` / `zh` / `hi` / `es` / `ar`: 各言語の説明。無い言語は英語で表示
 

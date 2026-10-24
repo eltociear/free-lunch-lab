@@ -1275,6 +1275,61 @@ module.exports = {
         "need": "افتح تطبيق ⁦AI-DAC⁩ المصغّر في ⁦World App⁩ وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)",
         "caution": "لا تُذكر رسميًا الكمية ولا التكرار ولا المناطق ولا طريقة التحويل إلى نقود. تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب ⁦World ID⁩ موثَّق عبر ⁦Orb⁩، ولا يُعرف إن كان مستوى تحقق أدنى (دون ⁦Orb⁩) كافيًا. ⁦DAC⁩ رمز ⁦ERC-20⁩ على ⁦World Chain⁩ بمعروض إجمالي مُعلن قدره 100 مليون، لكن العقد بلا حد أقصى، ويمكن للمالك سكّ المزيد وتوزيعه في أي وقت، ما قد يُضعف قيمته. يقول المشروع إنه ليس للاستثمار وإن قيمته غير مضمونة. يوجد زوج ⁦DAC/WLD⁩ في منصة تداول لامركزية (⁦DEX⁩)، لكن السيولة في أكتوبر 2026 نحو ⁦$170⁩ فقط. تُدفع طلبات إنتاج التطبيقات بشكل منفصل بـ⁦USDC⁩ على ⁦World⁩"
       }
+    },
+    {
+      "id": "ubiquitus",
+      "name": "Ubiquitus",
+      "cat": "app",
+      "type": "loop",
+      "global": false,
+      "onlyIn": "us",
+      "ease": 4,
+      "official": "https://www.ubiquitus.org/",
+      "code": "",
+      "ref": "",
+      "noRef": true,
+      "added": "2026-10-24",
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ja": {
+        "gain": "毎月1日に、参加者で等分した少額の現金（Venmo）",
+        "note": "アメリカの「誰でも参加できるベーシックインカム」の社会実験。任意の寄付を基金にして株式など（一部は暗号資産）で運用し、毎月その0.5%を参加者全員で等分してVenmoで配る。寄付しても受け取る額は増えない。2023年に始まり、創設者・開発者は Ryan Frigo 氏。2026年10月の配分は266人に1人0.10ドル。紹介リンクや紹介特典はない",
+        "need": "18歳以上のアメリカ居住者。Venmoのアカウントで1セントの送金をして本人確認する（身分証の提出や所得の審査はない）",
+        "caution": "2026年10月時点で日本からは利用できない（利用規約ではアメリカ居住者のみ対象。日本から使えないことは実際に試して確認）。1人あたりの額はごくわずかで、基金の運用成績しだいで減り、配分は保証されず、いつ止まってもおかしくないと明記されている。運営は法人ではない「非公式の社会実験」とされている。受け取ったお金は自分で所得として申告する必要がある"
+      },
+      "en": {
+        "gain": "A small equal cash share on the 1st of each month (Venmo)",
+        "note": "A US “basic income anyone can join” experiment. Voluntary gifts form a pool invested mainly in stocks (with a small crypto sleeve), and each month 0.5% of it is split equally among all members and paid via Venmo. Giving does not increase your share. Started in 2023 by founder and developer Ryan Frigo. The October 2026 payout was $0.10 each to 266 people. There is no referral link or referral bonus",
+        "need": "US residents aged 18+. Verify with a 1¢ Venmo transaction (no ID upload, no means test)",
+        "caution": "As of Oct 2026 it cannot be used from Japan (the terms limit it to US residents; not working from Japan was confirmed first-hand). The per-person amount is tiny, falls with the pool, and payouts are stated to be not guaranteed and able to stop at any time. It describes itself as an informal social experiment, not a company. Recipients must report payments as income"
+      },
+      "zh": {
+        "gain": "每月 1 日按人数平分的少量现金（Venmo）",
+        "note": "美国的“人人都能参加的基本收入”社会实验。以自愿捐款组成基金，主要投资股票（少量加密资产），每月将其中 0.5% 平分给全体成员并通过 Venmo 发放。捐款不会让你分得更多。2023 年由创始人兼开发者 Ryan Frigo 发起。2026 年 10 月共 266 人，每人 0.10 美元。没有推荐链接，也没有推荐奖励",
+        "need": "年满 18 岁的美国居民。用 Venmo 账户转账 1 美分完成验证（无需上传证件，也不审查收入）",
+        "caution": "截至 2026 年 10 月无法在日本使用（使用条款只面向美国居民；已亲自确认在日本无法使用）。每人金额极少，会随基金表现减少，官方明确发放不受保证、随时可能停止。运营方自称“非正式的社会实验”，并非公司。收到的钱需自行申报为收入"
+      },
+      "hi": {
+        "gain": "हर महीने की 1 तारीख़ को बराबर बँटी थोड़ी नकद रकम (Venmo)",
+        "note": "अमेरिका का “कोई भी जुड़ सके ऐसी बेसिक इनकम” सामाजिक प्रयोग। स्वैच्छिक दान से बना फ़ंड मुख्य रूप से शेयरों (थोड़ा क्रिप्टो) में लगाया जाता है, और हर महीने उसका 0.5% सभी सदस्यों में बराबर बाँटकर Venmo से भेजा जाता है। दान देने से हिस्सा नहीं बढ़ता। 2023 में संस्थापक और डेवलपर Ryan Frigo ने शुरू किया। अक्टूबर 2026 में 266 लोगों को $0.10 प्रति व्यक्ति मिले। कोई रेफ़रल लिंक या रेफ़रल बोनस नहीं है",
+        "need": "18 साल या ज़्यादा उम्र के अमेरिकी निवासी। Venmo से 1 सेंट का लेन-देन करके सत्यापन करें (ID अपलोड या आय जाँच नहीं)",
+        "caution": "अक्टूबर 2026 तक इसे जापान से इस्तेमाल नहीं किया जा सकता (शर्तों के अनुसार सिर्फ़ अमेरिकी निवासी; जापान से न चलने की पुष्टि खुद आज़माकर की गई)। प्रति व्यक्ति रकम बहुत कम है, फ़ंड के प्रदर्शन के साथ घटती है, और साफ़ लिखा है कि भुगतान की गारंटी नहीं है और कभी भी रुक सकता है। यह खुद को कंपनी नहीं, बल्कि “अनौपचारिक सामाजिक प्रयोग” बताता है। मिली रकम को आय के रूप में खुद घोषित करना होता है"
+      },
+      "es": {
+        "gain": "Una pequeña parte igual en efectivo el día 1 de cada mes (Venmo)",
+        "note": "Un experimento estadounidense de «renta básica a la que cualquiera puede unirse». Las donaciones voluntarias forman un fondo invertido sobre todo en acciones (con una pequeña parte en cripto), y cada mes el 0,5 % se reparte a partes iguales entre todos los miembros vía Venmo. Donar no aumenta tu parte. Lo inició en 2023 su fundador y desarrollador, Ryan Frigo. En octubre de 2026 se pagaron 0,10 $ a cada una de 266 personas. No hay enlace ni bono de referido",
+        "need": "Residentes en EE. UU. mayores de 18 años. Verificación con una transacción de 1 centavo en Venmo (sin subir documentos ni prueba de ingresos)",
+        "caution": "A octubre de 2026 no se puede usar desde Japón (los términos lo limitan a residentes en EE. UU.; se comprobó en persona que no funciona desde Japón). La cantidad por persona es mínima, baja si cae el fondo, y se indica que los pagos no están garantizados y pueden detenerse en cualquier momento. Se describe como un experimento social informal, no como una empresa. Quien cobra debe declarar los pagos como ingresos"
+      },
+      "ar": {
+        "gain": "حصة نقدية صغيرة متساوية في اليوم الأول من كل شهر (⁦Venmo⁩)",
+        "note": "تجربة أمريكية لـ«دخل أساسي يمكن لأي شخص الانضمام إليه». تُجمع التبرعات الطوعية في صندوق يُستثمر أساسًا في الأسهم (مع جزء صغير من العملات المشفرة)، ويُقسَّم 0.5% منه شهريًا بالتساوي على جميع الأعضاء عبر ⁦Venmo⁩. التبرع لا يزيد حصتك. أطلقها مؤسسها ومطوّرها ⁦Ryan Frigo⁩ عام 2023. في أكتوبر 2026 حصل 266 شخصًا على ⁦$0.10⁩ لكل منهم. لا يوجد رابط إحالة ولا مكافأة إحالة",
+        "need": "للمقيمين في الولايات المتحدة بعمر 18 عامًا فأكثر. التحقق بمعاملة قدرها سنت واحد عبر ⁦Venmo⁩ (دون رفع هوية أو فحص للدخل)",
+        "caution": "حتى أكتوبر 2026 لا يمكن استخدامه من اليابان (الشروط تقصره على المقيمين في الولايات المتحدة، وتأكدنا بالتجربة أنه لا يعمل من اليابان). الحصة للفرد ضئيلة جدًا وتنخفض مع أداء الصندوق، ويُذكر صراحةً أن الدفعات غير مضمونة وقد تتوقف في أي وقت. يصف نفسه بأنه تجربة اجتماعية غير رسمية وليس شركة. على المستلم الإبلاغ عن المبالغ بوصفها دخلًا"
+      }
     }
   ],
   "PICKS": [
@@ -1307,6 +1362,15 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-24",
+      "ja": "Ubiquitusを追加（アメリカ在住者向け）",
+      "en": "Added Ubiquitus (US residents only)",
+      "zh": "新增 Ubiquitus（仅限美国居民）",
+      "hi": "Ubiquitus जोड़ा (सिर्फ़ अमेरिकी निवासियों के लिए)",
+      "es": "Añadido Ubiquitus (solo residentes en EE. UU.)",
+      "ar": "أضفنا ⁦Ubiquitus⁩ (للمقيمين في الولايات المتحدة فقط)"
+    },
     {
       "date": "2026-10-24",
       "ja": "AI-DAC（World App）を追加",
@@ -1597,7 +1661,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1671,7 +1735,8 @@ module.exports = {
       "orgsRelated": "関連する団体・プロジェクト",
       "orgsSecH": "ベーシックインカムに取り組む団体",
       "orgsSecP": "ここからは、お金がもらえるサービスではなく、ベーシックインカムを研究・推進したり、実際に現金を配ったりしている団体の紹介です。登録して何かをもらうためのものではありません。",
-      "orgsSecBtn": "団体一覧を見る（{n}団体）"
+      "orgsSecBtn": "団体一覧を見る（{n}団体）",
+      "only_us": "アメリカ在住者向け"
     },
     "en": {
       "brand": "Paid While You <span>Sleep</span>",
@@ -1726,7 +1791,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1799,7 +1864,8 @@ module.exports = {
       "orgsRelated": "Related organization",
       "orgsSecH": "Organizations working on basic income",
       "orgsSecP": "These are not services you sign up to for money, but organizations that research, campaign for or actually run basic income and cash transfers.",
-      "orgsSecBtn": "See all organizations ({n})"
+      "orgsSecBtn": "See all organizations ({n})",
+      "only_us": "US residents only"
     },
     "hi": {
       "brand": "सोते हुए भी <span>कमाई</span>",
@@ -1854,7 +1920,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -1927,7 +1993,8 @@ module.exports = {
       "orgsRelated": "संबंधित संगठन",
       "orgsSecH": "बेसिक इनकम पर काम करने वाले संगठन",
       "orgsSecP": "ये पैसे पाने के लिए साइन अप करने वाली सेवाएँ नहीं हैं, बल्कि ऐसे संगठन हैं जो बेसिक इनकम पर शोध करते हैं, उसकी पैरवी करते हैं या असल में नकद बाँटते हैं।",
-      "orgsSecBtn": "सभी संगठन देखें ({n})"
+      "orgsSecBtn": "सभी संगठन देखें ({n})",
+      "only_us": "सिर्फ़ अमेरिकी निवासी"
     },
     "zh": {
       "brand": "躺着也<span>到账</span>",
@@ -1982,7 +2049,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -2055,7 +2122,8 @@ module.exports = {
       "orgsRelated": "相关团体与项目",
       "orgsSecH": "致力于基本收入的团体",
       "orgsSecP": "这里介绍的不是能领钱的服务，而是研究、推动或实际发放基本收入与现金的团体，并不是注册后就能拿到钱的。",
-      "orgsSecBtn": "查看全部团体（{n} 个）"
+      "orgsSecBtn": "查看全部团体（{n} 个）",
+      "only_us": "仅限美国居民"
     },
     "es": {
       "brand": "Cobra mientras <span>duermes</span>",
@@ -2110,7 +2178,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -2183,7 +2251,8 @@ module.exports = {
       "orgsRelated": "Organización relacionada",
       "orgsSecH": "Organizaciones que trabajan por la renta básica",
       "orgsSecP": "No son servicios para registrarte y cobrar, sino organizaciones que investigan, defienden o ponen en marcha la renta básica y las transferencias de efectivo.",
-      "orgsSecBtn": "Ver todas las organizaciones ({n})"
+      "orgsSecBtn": "Ver todas las organizaciones ({n})",
+      "only_us": "Solo residentes en EE. UU."
     },
     "ar": {
       "brand": "دخل وأنت <span>نائم</span>",
@@ -2238,7 +2307,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
@@ -2311,7 +2380,8 @@ module.exports = {
       "orgsRelated": "منظمة ذات صلة",
       "orgsSecH": "منظمات تعمل على الدخل الأساسي",
       "orgsSecP": "هذه ليست خدمات تسجّل فيها لتحصل على المال، بل منظمات تبحث في الدخل الأساسي أو تدعو إليه أو تطبّقه فعلًا عبر التحويلات النقدية.",
-      "orgsSecBtn": "عرض كل المنظمات ({n})"
+      "orgsSecBtn": "عرض كل المنظمات ({n})",
+      "only_us": "للمقيمين في الولايات المتحدة فقط"
     }
   },
   "ORG_REGIONS": {
