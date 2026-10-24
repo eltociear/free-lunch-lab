@@ -1187,38 +1187,38 @@ module.exports = {
       "ja": {
         "gain": "AXO トークンを毎日",
         "note": "World App の中で動くミニアプリ。World Chain 上のトークン AXO（AXOLOCOIN）を1日1回タップで受け取れる。月1 WLDの「Premium」に入ると毎日の受け取り量が3倍になる。紹介のしくみもある。創設者として David Mateos の名前が公開されている。利用者は約30万人（2026年10月時点のWorldの掲載ページ）",
-        "need": "紹介リンク（紹介コード 932BDA）から World App でミニアプリを開き、World ID で人間であることを証明して毎日受け取る",
-        "caution": "1日にもらえる量と、紹介でもらえる特典の中身は公式に書かれていない。必要な本人確認のレベル（Orb など）と、日本から使えるかは確認できていない。AXO は分散型取引所（DEX）で WLD と交換できるが、2026年10月時点で流動性は約2,000ドルととても小さく、1 AXO は0.01円未満。運営会社の情報は見つからない"
+        "need": "紹介リンク（紹介コード 932BDA）から World App でミニアプリを開き、World ID で人間であることを証明し（日本からはOrb認証済みで利用を確認）、毎日受け取る",
+        "caution": "1日にもらえる量と、紹介でもらえる特典の中身は公式に書かれていない。2026年10月に、OrbでWorld IDを認証したアカウントで日本から使えることを確認した。Orbより低い認証レベルで足りるかはわかっていない。AXO は分散型取引所（DEX）で WLD と交換できるが、2026年10月時点で流動性は約2,000ドルととても小さく、1 AXO は0.01円未満。運営会社の情報は見つからない"
       },
       "en": {
         "gain": "AXO tokens every day",
         "note": "A mini app inside World App. Claim AXO (AXOLOCOIN), a token on World Chain, once a day with a tap. “Premium” at 1 WLD a month triples your daily claim. It also has a referral system. David Mateos is named as the founder. About 300,000 users (World’s listing page, Oct 2026)",
-        "need": "Open the mini app in World App via the referral link (referral code 932BDA), prove you are human with World ID, and claim every day",
-        "caution": "The daily amount and what the referral reward is are not stated officially. The required verification level (Orb etc.) and availability in Japan are not confirmed. AXO can be swapped for WLD on a decentralized exchange (DEX), but as of Oct 2026 liquidity is only about $2,000 and one AXO is worth a tiny fraction of a cent. No operating company details were found"
+        "need": "Open the mini app in World App via the referral link (referral code 932BDA), prove you are human with World ID (confirmed from Japan with Orb verification), and claim every day",
+        "caution": "The daily amount and what the referral reward is are not stated officially. Confirmed usable from Japan with an Orb-verified World ID in Oct 2026; whether a lower (non-Orb) verification level is enough is unknown. AXO can be swapped for WLD on a decentralized exchange (DEX), but as of Oct 2026 liquidity is only about $2,000 and one AXO is worth a tiny fraction of a cent. No operating company details were found"
       },
       "zh": {
         "gain": "每天领取 AXO 代币",
         "note": "在 World App 内运行的小程序。每天点一下即可领取一次 World Chain 上的代币 AXO（AXOLOCOIN）。加入每月 1 WLD 的“Premium”后，每日领取量变为 3 倍。也有推荐机制。公开的创始人为 David Mateos。用户约 30 万（2026 年 10 月 World 的介绍页）",
-        "need": "通过推荐链接（推荐码 932BDA）在 World App 中打开小程序，用 World ID 证明你是真人，然后每天领取",
-        "caution": "官方没有写明每天能领多少，也没有写明推荐奖励的内容。所需的验证等级（Orb 等）以及在日本能否使用尚未确认。AXO 可在去中心化交易所（DEX）换成 WLD，但截至 2026 年 10 月流动性只有约 2,000 美元，1 AXO 远不到 1 美分。未找到运营公司的信息"
+        "need": "通过推荐链接（推荐码 932BDA）在 World App 中打开小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后每天领取",
+        "caution": "官方没有写明每天能领多少，也没有写明推荐奖励的内容。2026 年 10 月已确认，使用经 Orb 验证的 World ID 账户可在日本使用；低于 Orb 的验证等级是否足够尚不清楚。AXO 可在去中心化交易所（DEX）换成 WLD，但截至 2026 年 10 月流动性只有约 2,000 美元，1 AXO 远不到 1 美分。未找到运营公司的信息"
       },
       "hi": {
         "gain": "हर दिन AXO टोकन",
         "note": "World App के अंदर चलने वाला एक मिनी ऐप। World Chain पर AXO (AXOLOCOIN) टोकन दिन में एक बार टैप करके क्लेम करें। हर महीने 1 WLD वाला “Premium” लेने पर रोज़ की क्लेम तीन गुना हो जाती है। इसमें रेफ़रल सिस्टम भी है। संस्थापक के रूप में David Mateos का नाम दिया गया है। लगभग 3 लाख यूज़र (World का लिस्टिंग पेज, अक्टूबर 2026)",
-        "need": "रेफ़रल लिंक (रेफ़रल कोड 932BDA) से World App में मिनी ऐप खोलें, World ID से साबित करें कि आप इंसान हैं, और रोज़ क्लेम करें",
-        "caution": "रोज़ की रकम और रेफ़रल इनाम क्या है, यह आधिकारिक तौर पर नहीं लिखा है। ज़रूरी वेरिफ़िकेशन लेवल (Orb आदि) और जापान में उपलब्धता की पुष्टि नहीं हुई है। AXO को डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर WLD से बदला जा सकता है, पर अक्टूबर 2026 में लिक्विडिटी सिर्फ़ लगभग $2,000 है और 1 AXO की कीमत एक सेंट का बहुत छोटा हिस्सा है। ऑपरेटर कंपनी की जानकारी नहीं मिली"
+        "need": "रेफ़रल लिंक (रेफ़रल कोड 932BDA) से World App में मिनी ऐप खोलें, World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि), और रोज़ क्लेम करें",
+        "caution": "रोज़ की रकम और रेफ़रल इनाम क्या है, यह आधिकारिक तौर पर नहीं लिखा है। अक्टूबर 2026 में पुष्टि हुई कि Orb से वेरिफ़ाई की गई World ID वाले अकाउंट से यह जापान में चलता है; Orb से कम वेरिफ़िकेशन लेवल काफ़ी है या नहीं, यह पता नहीं। AXO को डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर WLD से बदला जा सकता है, पर अक्टूबर 2026 में लिक्विडिटी सिर्फ़ लगभग $2,000 है और 1 AXO की कीमत एक सेंट का बहुत छोटा हिस्सा है। ऑपरेटर कंपनी की जानकारी नहीं मिली"
       },
       "es": {
         "gain": "Tokens AXO cada día",
         "note": "Una mini app dentro de World App. Reclama AXO (AXOLOCOIN), un token de World Chain, una vez al día con un toque. «Premium», por 1 WLD al mes, triplica lo que reclamas cada día. También tiene un sistema de referidos. Figura David Mateos como fundador. Unos 300.000 usuarios (página de World, octubre de 2026)",
-        "need": "Abre la mini app en World App con el enlace de referido (código 932BDA), demuestra que eres humano con World ID y reclama cada día",
-        "caution": "La cantidad diaria y en qué consiste la recompensa por referido no se indican oficialmente. No están confirmados el nivel de verificación necesario (Orb, etc.) ni si funciona en Japón. AXO se puede cambiar por WLD en un exchange descentralizado (DEX), pero a octubre de 2026 la liquidez es de solo unos 2.000 $ y un AXO vale una mínima fracción de céntimo. No se encontraron datos de la empresa que lo gestiona"
+        "need": "Abre la mini app en World App con el enlace de referido (código 932BDA), demuestra que eres humano con World ID (confirmado desde Japón con verificación Orb) y reclama cada día",
+        "caution": "La cantidad diaria y en qué consiste la recompensa por referido no se indican oficialmente. En octubre de 2026 se confirmó que funciona desde Japón con un World ID verificado por Orb; no se sabe si basta un nivel de verificación inferior (sin Orb). AXO se puede cambiar por WLD en un exchange descentralizado (DEX), pero a octubre de 2026 la liquidez es de solo unos 2.000 $ y un AXO vale una mínima fracción de céntimo. No se encontraron datos de la empresa que lo gestiona"
       },
       "ar": {
         "gain": "رموز ⁦AXO⁩ كل يوم",
         "note": "تطبيق مصغّر داخل ⁦World App⁩. طالب برمز ⁦AXO (AXOLOCOIN)⁩ على ⁦World Chain⁩ مرة يوميًا بنقرة واحدة. اشتراك «⁦Premium⁩» مقابل ⁦1 WLD⁩ شهريًا يضاعف مطالبتك اليومية ثلاث مرات. وفيه نظام إحالة أيضًا. يُذكر ⁦David Mateos⁩ مؤسسًا له. نحو 300 ألف مستخدم (صفحة ⁦World⁩، أكتوبر 2026)",
-        "need": "افتح التطبيق المصغّر في ⁦World App⁩ عبر رابط الإحالة (رمز الإحالة ⁦932BDA⁩)، وأثبت أنك إنسان عبر ⁦World ID⁩، وطالب كل يوم",
-        "caution": "لا يُذكر رسميًا المقدار اليومي ولا ماهية مكافأة الإحالة. لم يتأكد مستوى التحقق المطلوب (⁦Orb⁩ وغيره) ولا توفره في اليابان. يمكن مبادلة ⁦AXO⁩ بـ⁦WLD⁩ في منصة تداول لامركزية (⁦DEX⁩)، لكن السيولة في أكتوبر 2026 نحو ⁦$2,000⁩ فقط، وقيمة ⁦1 AXO⁩ جزء ضئيل جدًا من السنت. لم نعثر على معلومات عن الشركة المشغّلة"
+        "need": "افتح التطبيق المصغّر في ⁦World App⁩ عبر رابط الإحالة (رمز الإحالة ⁦932BDA⁩)، وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)، وطالب كل يوم",
+        "caution": "لا يُذكر رسميًا المقدار اليومي ولا ماهية مكافأة الإحالة. تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب ⁦World ID⁩ موثَّق عبر ⁦Orb⁩، ولا يُعرف إن كان مستوى تحقق أدنى (دون ⁦Orb⁩) كافيًا. يمكن مبادلة ⁦AXO⁩ بـ⁦WLD⁩ في منصة تداول لامركزية (⁦DEX⁩)، لكن السيولة في أكتوبر 2026 نحو ⁦$2,000⁩ فقط، وقيمة ⁦1 AXO⁩ جزء ضئيل جدًا من السنت. لم نعثر على معلومات عن الشركة المشغّلة"
       }
     }
   ],
