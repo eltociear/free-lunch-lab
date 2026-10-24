@@ -241,6 +241,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::before{content:"Q";flex:none;font-family:var(--f-dot);font-weight:400;font-size:1.15rem;color:var(--gold)}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
+.faq-more{margin-top:14px;font-size:.92rem}
+.foot a{color:inherit;text-underline-offset:3px}
 .faq p{padding:0 0 16px;padding-inline-start:26px;color:var(--muted);max-width:46em}
 
 .warn{border:1px solid color-mix(in srgb,var(--stamp) 35%,var(--line));border-inline-start:5px solid var(--stamp);border-radius:14px;padding:22px 24px;
@@ -436,7 +438,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   <div class="bar-in">
     <a class="brand" href="#top">寝てても<span>入金</span></a>
     <nav class="nav" aria-label="セクション">
-      <a href="#list">一覧</a><a href="#how">使い方</a><a href="#faq">よくある質問</a>
+      <a href="#list">一覧</a><a href="#how">使い方</a><a href="#faq">よくある質問</a><a href="organizations/">団体</a>
     </nav>
     <div class="lang" role="group" aria-label="言語"><a href="/" hreflang="en" lang="en">EN</a><a href="/ja/" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
   </div>
@@ -709,7 +711,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 <section id="news">
   <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>UPDATES</p><h2>新着・更新履歴</h2></div>
-  <ol class="news rv"><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>AXO（World App）を追加</li><li>ORO（World App）を追加</li><li>Dotareを追加</li><li>Palaiを追加</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>Circles（Gnosis App）を追加</li><li>Ğ1（ジューン）を追加</li></ul></li><li><time class="dot" datetime="2026-10-21">2026.10.21</time><ul><li>Mein Grundeinkommenを追加</li></ul></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>トリマを追加</li><li>InterLinkを追加</li><li>「おすすめ3つ」と信頼度の表示を追加</li><li>WAVEEを「海外OK」に更新</li><li>Delta Kimを追加</li><li>Pi Networkを追加</li><li>Pawns.appを追加</li><li>Sweatcoinを追加</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>デザインを一新</li><li>Honeygainを追加</li><li>Grassを追加</li></ul></li></ol>
+  <ol class="news rv"><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>UBIの団体・プロジェクトのページを追加</li><li>AXO（World App）を追加</li><li>ORO（World App）を追加</li><li>Dotareを追加</li><li>Palaiを追加</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>Circles（Gnosis App）を追加</li><li>Ğ1（ジューン）を追加</li></ul></li><li><time class="dot" datetime="2026-10-21">2026.10.21</time><ul><li>Mein Grundeinkommenを追加</li></ul></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>トリマを追加</li><li>InterLinkを追加</li><li>「おすすめ3つ」と信頼度の表示を追加</li><li>WAVEEを「海外OK」に更新</li><li>Delta Kimを追加</li><li>Pi Networkを追加</li><li>Pawns.appを追加</li><li>Sweatcoinを追加</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>デザインを一新</li><li>Honeygainを追加</li><li>Grassを追加</li></ul></li></ol>
 </section>
 
 <section id="share">
@@ -738,6 +740,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <details><summary>もらった暗号資産やポイントに税金はかかる？</summary><p>暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。</p></details>
     <details><summary>海外に住んでいても使えますか？</summary><p>「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO）は海外からも使えます。そのほかは日本在住者向けです。</p></details>
   </div>
+  <p class="faq-more"><a href="organizations/">ベーシックインカムの団体・プロジェクト一覧も見る</a></p>
 </section>
 
 <section id="warn">
@@ -762,7 +765,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <a class="btn solid" href="#list">サービス一覧へ</a>
   </div>
   <div class="horizon" aria-hidden="true"><div class="sun"></div><svg class="hills" aria-hidden="true" viewBox="0 0 1440 150" preserveAspectRatio="none"><path fill="#4A2558" d="M0 70C160 30 300 40 460 70s300 40 470 6 340-50 510-10V150H0z"/><path fill="#160F2E" d="M0 104c200-34 380-30 560 0s360 26 520-6 260-28 360-12V150H0z"/></svg></div>
-  <div class="foot-band"><div class="wrap foot"><span>2026年10月時点の情報です。投資を勧めるものではありません。</span><span class="dot">寝てても入金</span></div></div>
+  <div class="foot-band"><div class="wrap foot"><span>2026年10月時点の情報です。投資を勧めるものではありません。</span><a href="organizations/">UBIの団体・プロジェクト</a><span class="dot">寝てても入金</span></div></div>
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 <script>

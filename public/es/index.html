@@ -241,6 +241,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::before{content:"Q";flex:none;font-family:var(--f-dot);font-weight:400;font-size:1.15rem;color:var(--gold)}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
+.faq-more{margin-top:14px;font-size:.92rem}
+.foot a{color:inherit;text-underline-offset:3px}
 .faq p{padding:0 0 16px;padding-inline-start:26px;color:var(--muted);max-width:46em}
 
 .warn{border:1px solid color-mix(in srgb,var(--stamp) 35%,var(--line));border-inline-start:5px solid var(--stamp);border-radius:14px;padding:22px 24px;
@@ -436,7 +438,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   <div class="bar-in">
     <a class="brand" href="#top">Cobra mientras <span>duermes</span></a>
     <nav class="nav" aria-label="Secciones">
-      <a href="#list">Servicios</a><a href="#how">Cómo funciona</a><a href="#faq">Preguntas</a>
+      <a href="#list">Servicios</a><a href="#how">Cómo funciona</a><a href="#faq">Preguntas</a><a href="organizations/">Organizaciones</a>
     </nav>
     <div class="lang" role="group" aria-label="Idioma"><a href="/" hreflang="en" lang="en">EN</a><a href="/ja/" hreflang="ja" lang="ja">日本語</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/" hreflang="es" lang="es" aria-current="page">Español</a><a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
   </div>
@@ -709,7 +711,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 <section id="news">
   <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>UPDATES</p><h2>Novedades</h2></div>
-  <ol class="news rv"><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>Añadido AXO (World App)</li><li>Añadido ORO (World App)</li><li>Añadido Dotare</li><li>Añadido Palai</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>Añadido Circles (Gnosis App)</li><li>Añadido Ğ1</li></ul></li><li><time class="dot" datetime="2026-10-21">2026.10.21</time><ul><li>Añadido Mein Grundeinkommen</li></ul></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>Añadido Trima</li><li>Añadido InterLink</li><li>Añadidas las 3 recomendadas y los indicadores de confianza</li><li>WAVEE ahora aparece como Global</li><li>Añadido Delta Kim</li><li>Añadido Pi Network</li><li>Añadido Pawns.app</li><li>Añadido Sweatcoin</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>Nuevo diseño del sitio</li><li>Añadido Honeygain</li><li>Añadido Grass</li></ul></li></ol>
+  <ol class="news rv"><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>Añadida una página de organizaciones y proyectos de RBU</li><li>Añadido AXO (World App)</li><li>Añadido ORO (World App)</li><li>Añadido Dotare</li><li>Añadido Palai</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>Añadido Circles (Gnosis App)</li><li>Añadido Ğ1</li></ul></li><li><time class="dot" datetime="2026-10-21">2026.10.21</time><ul><li>Añadido Mein Grundeinkommen</li></ul></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>Añadido Trima</li><li>Añadido InterLink</li><li>Añadidas las 3 recomendadas y los indicadores de confianza</li><li>WAVEE ahora aparece como Global</li><li>Añadido Delta Kim</li><li>Añadido Pi Network</li><li>Añadido Pawns.app</li><li>Añadido Sweatcoin</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>Nuevo diseño del sitio</li><li>Añadido Honeygain</li><li>Añadido Grass</li></ul></li></ol>
 </section>
 
 <section id="share">
@@ -738,6 +740,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <details><summary>¿Las recompensas pagan impuestos?</summary><p>En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.</p></details>
     <details><summary>¿Puedo usarlos fuera de Japón?</summary><p>Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO) funcionan fuera de Japón. El resto son para residentes en Japón.</p></details>
   </div>
+  <p class="faq-more"><a href="organizations/">Ver la lista de organizaciones y proyectos de renta básica</a></p>
 </section>
 
 <section id="warn">
@@ -762,7 +765,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <a class="btn solid" href="#list">Ver la lista</a>
   </div>
   <div class="horizon" aria-hidden="true"><div class="sun"></div><svg class="hills" aria-hidden="true" viewBox="0 0 1440 150" preserveAspectRatio="none"><path fill="#4A2558" d="M0 70C160 30 300 40 460 70s300 40 470 6 340-50 510-10V150H0z"/><path fill="#160F2E" d="M0 104c200-34 380-30 560 0s360 26 520-6 260-28 360-12V150H0z"/></svg></div>
-  <div class="foot-band"><div class="wrap foot"><span>Información a octubre de 2026. No es asesoramiento de inversión.</span><span class="dot">Cobra mientras duermes</span></div></div>
+  <div class="foot-band"><div class="wrap foot"><span>Información a octubre de 2026. No es asesoramiento de inversión.</span><a href="organizations/">Organizaciones y proyectos de RBU</a><span class="dot">Cobra mientras duermes</span></div></div>
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 <script>

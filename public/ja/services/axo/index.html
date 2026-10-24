@@ -238,6 +238,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::before{content:"Q";flex:none;font-family:var(--f-dot);font-weight:400;font-size:1.15rem;color:var(--gold)}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
+.faq-more{margin-top:14px;font-size:.92rem}
+.foot a{color:inherit;text-underline-offset:3px}
 .faq p{padding:0 0 16px;padding-inline-start:26px;color:var(--muted);max-width:46em}
 
 .warn{border:1px solid color-mix(in srgb,var(--stamp) 35%,var(--line));border-inline-start:5px solid var(--stamp);border-radius:14px;padding:22px 24px;
@@ -452,13 +454,38 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .back .btn{border-radius:999px;padding:10px 22px}
 .detail-foot{margin-top:clamp(48px,7vw,80px)}
 .detail-foot .foot{padding-top:18px}
+.org-link{font-size:.84rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
+.org-link span{font-size:.78rem}
+/* 団体ページ: お金のカードと区別するため、色の帯やボタンのない落ち着いた行で並べる */
+.orgs{max-width:820px;margin-inline:auto}
+.orgs-head{padding-block:24px 8px;display:grid;gap:12px}
+.orgs-head h1{font-size:clamp(1.6rem,5vw,2.4rem)}
+.orgs-intro{color:var(--muted);max-width:44em}
+.org-toc{display:flex;flex-wrap:wrap;gap:6px}
+.org-toc a{font-size:.8rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.org-toc a:hover{border-color:var(--accent);color:var(--accent)}
+.org-group{padding-top:clamp(32px,5vw,48px)}
+.org-group h2{font-size:1.25rem;display:flex;align-items:center;gap:10px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.org-group h2 .dot{font-size:.85rem;color:var(--muted);font-weight:400}
+.org-list{list-style:none;margin:0;padding:0}
+.org{padding:16px 2px;border-bottom:1px solid var(--line);display:grid;gap:6px;scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
+.org:target{background:color-mix(in srgb,var(--accent) 8%,transparent);border-radius:8px;padding-inline:10px}
+.org-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.org-name{font-weight:700;font-size:1.02rem;text-underline-offset:3px;overflow-wrap:anywhere}
+.org-name::after{content:"↗";font-size:.8em;margin-inline-start:4px;opacity:.7}
+.org-meta{font-size:.78rem;color:var(--muted)}
+.org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
+.org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
+.orgs-credit{margin-top:32px;font-size:.8rem;color:var(--muted);line-height:1.8}
+.faq-more{margin-top:14px;font-size:.92rem}
+.foot a{color:inherit;text-underline-offset:3px}
 </style>
 </head>
 <body>
 <div class="bar">
   <div class="bar-in">
     <a class="brand" href="/ja/">寝てても<span>入金</span></a>
-    <nav class="nav" aria-label="セクション"><a href="/ja/#list">一覧</a><a href="/ja/#how">使い方</a><a href="/ja/#faq">よくある質問</a></nav>
+    <nav class="nav" aria-label="セクション"><a href="/ja/#list">一覧</a><a href="/ja/#how">使い方</a><a href="/ja/#faq">よくある質問</a><a href="/ja/organizations/">団体</a></nav>
     <div class="lang" role="group" aria-label="言語"><a href="/services/axo/" hreflang="en" lang="en">EN</a><a href="/ja/services/axo/" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="/zh/services/axo/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/services/axo/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/services/axo/" hreflang="es" lang="es">Español</a><a href="/ar/services/axo/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
   </div>
 </div>
@@ -477,6 +504,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-partial" title="運営元公開（運営元が公開されているか）：条件つき"><span aria-hidden="true">運営元</span><b aria-hidden="true">△</b><span class="vh">運営元公開（運営元が公開されているか）：条件つき</span></li></ul></div>
 <p class="caution">注意：1日にもらえる量と、紹介でもらえる特典の中身は公式に書かれていない。2026年10月に、OrbでWorld IDを認証したアカウントで日本から使えることを確認した。Orbより低い認証レベルで足りるかはわかっていない。AXO は分散型取引所（DEX）で WLD と交換できるが、2026年10月時点で流動性は約2,000ドルととても小さく、1 AXO は0.01円未満。運営会社の情報は見つからない</p>
 <div class="slip"><a class="btn solid" href="https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&amp;path=?ref=932BDA" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+
 </article>
 <section id="related">
   <div class="sec-head"><h2>関連サービス</h2></div>

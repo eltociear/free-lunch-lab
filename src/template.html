@@ -215,6 +215,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::before{content:"Q";flex:none;font-family:var(--f-dot);font-weight:400;font-size:1.15rem;color:var(--gold)}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
+.faq-more{margin-top:14px;font-size:.92rem}
+.foot a{color:inherit;text-underline-offset:3px}
 .faq p{padding:0 0 16px;padding-inline-start:26px;color:var(--muted);max-width:46em}
 
 .warn{border:1px solid color-mix(in srgb,var(--stamp) 35%,var(--line));border-inline-start:5px solid var(--stamp);border-radius:14px;padding:22px 24px;
@@ -409,7 +411,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   <div class="bar-in">
     <a class="brand" href="#top">{{t.brand}}</a>
     <nav class="nav" aria-label="{{t.navLabel}}">
-      <a href="#list">{{t.navList}}</a><a href="#how">{{t.navHow}}</a><a href="#faq">{{t.navFaq}}</a>
+      <a href="#list">{{t.navList}}</a><a href="#how">{{t.navHow}}</a><a href="#faq">{{t.navFaq}}</a><a href="organizations/">{{t.navOrgs}}</a>
     </nav>
     <div class="lang" role="group" aria-label="{{t.langLabel}}">{{langSwitch}}</div>
   </div>
@@ -518,6 +520,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <details><summary>{{t.q3}}</summary><p>{{t.a3}}</p></details>
     <details><summary>{{t.q4}}</summary><p>{{t.a4}}</p></details>
   </div>
+  <p class="faq-more"><a href="organizations/">{{t.orgsFaqLink}}</a></p>
 </section>
 
 <section id="warn">
@@ -542,7 +545,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <a class="btn solid" href="#list">{{t.dawnCta}}</a>
   </div>
   <div class="horizon" aria-hidden="true"><div class="sun"></div><svg class="hills" aria-hidden="true" viewBox="0 0 1440 150" preserveAspectRatio="none"><path fill="#4A2558" d="M0 70C160 30 300 40 460 70s300 40 470 6 340-50 510-10V150H0z"/><path fill="#160F2E" d="M0 104c200-34 380-30 560 0s360 26 520-6 260-28 360-12V150H0z"/></svg></div>
-  <div class="foot-band"><div class="wrap foot"><span>{{t.foot}}</span><span class="dot">{{t.brandPlain}}</span></div></div>
+  <div class="foot-band"><div class="wrap foot"><span>{{t.foot}}</span><a href="organizations/">{{t.orgsTitle}}</a><span class="dot">{{t.brandPlain}}</span></div></div>
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 {{script}}

@@ -1,7 +1,7 @@
 // 使い方: node build.js  →  public/ に6言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
 const fs = require('fs');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS } = require('./src/data.js');
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
@@ -27,6 +27,9 @@ const abs = l => SITE_URL + urlPath(l);
 // サービスごとの個別ページ: /services/{id}/（英語）と /{lang}/services/{id}/
 const svcPath = (l, s) => `${urlPath(l)}services/${s.id}/`;
 const svcAbs = (l, s) => SITE_URL + svcPath(l, s);
+// UBIの団体・プロジェクト: /organizations/ と /{lang}/organizations/
+const orgPath = l => `${urlPath(l)}organizations/`;
+const orgAbs = l => SITE_URL + orgPath(l);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 function meter(n) {
@@ -380,6 +383,31 @@ const DETAIL_CSS = `
 .back .btn{border-radius:999px;padding:10px 22px}
 .detail-foot{margin-top:clamp(48px,7vw,80px)}
 .detail-foot .foot{padding-top:18px}
+.org-link{font-size:.84rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
+.org-link span{font-size:.78rem}
+/* 団体ページ: お金のカードと区別するため、色の帯やボタンのない落ち着いた行で並べる */
+.orgs{max-width:820px;margin-inline:auto}
+.orgs-head{padding-block:24px 8px;display:grid;gap:12px}
+.orgs-head h1{font-size:clamp(1.6rem,5vw,2.4rem)}
+.orgs-intro{color:var(--muted);max-width:44em}
+.org-toc{display:flex;flex-wrap:wrap;gap:6px}
+.org-toc a{font-size:.8rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.org-toc a:hover{border-color:var(--accent);color:var(--accent)}
+.org-group{padding-top:clamp(32px,5vw,48px)}
+.org-group h2{font-size:1.25rem;display:flex;align-items:center;gap:10px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.org-group h2 .dot{font-size:.85rem;color:var(--muted);font-weight:400}
+.org-list{list-style:none;margin:0;padding:0}
+.org{padding:16px 2px;border-bottom:1px solid var(--line);display:grid;gap:6px;scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
+.org:target{background:color-mix(in srgb,var(--accent) 8%,transparent);border-radius:8px;padding-inline:10px}
+.org-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.org-name{font-weight:700;font-size:1.02rem;text-underline-offset:3px;overflow-wrap:anywhere}
+.org-name::after{content:"↗";font-size:.8em;margin-inline-start:4px;opacity:.7}
+.org-meta{font-size:.78rem;color:var(--muted)}
+.org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
+.org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
+.orgs-credit{margin-top:32px;font-size:.8rem;color:var(--muted);line-height:1.8}
+.faq-more{margin-top:14px;font-size:.92rem}
+.foot a{color:inherit;text-underline-offset:3px}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
 // meta description 用に長さをそろえる（日本語・中国語は短め）
@@ -409,7 +437,6 @@ function servicePage(s, lang) {
   const desc = clip(`${name}${sep}${d.gain}${end}${d.note}`, lang);
   const url = svcAbs(lang, s);
   const home = urlPath(lang);
-  const alts = LANGS.map(l => `<link rel="alternate" hreflang="${LANG_TAG[l]}" href="${svcAbs(l, s)}">`).join('\n');
   const ld = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [
@@ -418,7 +445,51 @@ function servicePage(s, lang) {
     ],
   };
   const rel = related(s).map(x => `<a class="rel" data-cat="${x.cat}" href="${svcPath(lang, x)}">${ava(x, sName(x, lang))}<span><span class="cat">${esc(CATS[lang][x.cat])}</span><b>${esc(sName(x, lang))}</b><small>${esc((x[lang] || x.en).gain)}</small></span></a>`).join('');
+  const org = ORGS.find(o => o.svc === s.id);
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${home}#list">${esc(L.listH)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
+<main>
+<article class="svc detail" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
+<div class="svc-top">${ava(s, name)}<div class="svc-id"><span class="cat">${esc(CATS[lang][s.cat])}</span><h1>${esc(name)}</h1>${tags(s, L)}</div></div>
+<h2>${esc(L.hGain)}</h2>
+<p class="gain">${esc(d.gain)}</p>
+<h2>${esc(L.hAbout.replace('{name}', name))}</h2>
+<p class="body">${esc(d.note)}</p>
+<h2>${esc(L.hNeed)}</h2>
+<p class="body">${esc(d.need)}</p>
+${meta(s, lang)}
+${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
+${slip(s, L)}
+${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#org-${org.id}">${esc(org.name)}</a> <span>(${esc(L.orgsTitle)})</span></p>` : ''}
+</article>
+<section id="related">
+  <div class="sec-head"><h2>${esc(L.hRelated)}</h2></div>
+  <div class="rel-grid">${rel}</div>
+</section>
+<p class="back"><a class="btn line" href="${home}#list">${rtl ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
   const i18n = { copied: L.copied, selected: L.selected };
+  const script = `<script>
+(function(){
+  var I18N=${JSON.stringify(i18n)},toast=document.getElementById('toast'),timer;
+  function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-code]'); if(!b) return;
+    var code=b.getAttribute('data-code'),span=b.previousElementSibling.querySelector('.dot');
+    function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
+    try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
+  });
+})();
+</script>`;
+  return shell(lang, { title, desc, hrefFor: l => svcAbs(l, s), pathFor: l => svcPath(l, s), ld, ogType: 'article', body, script, pr: true });
+}
+
+// 個別ページ・団体ページで共通の外枠（head、上のバー、フッター）
+function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script = '', pr = false }) {
+  const L = T[lang];
+  const rtl = RTL.has(lang);
+  const home = urlPath(lang);
+  const url = hrefFor(lang);
+  const alts = LANGS.map(l => `<link rel="alternate" hreflang="${LANG_TAG[l]}" href="${hrefFor(l)}">`).join('\n');
   return `<!doctype html>
 <html lang="${LANG_TAG[lang]}"${rtl ? ' dir="rtl"' : ''}>
 <head>
@@ -428,8 +499,8 @@ function servicePage(s, lang) {
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
 ${alts}
-<link rel="alternate" hreflang="x-default" href="${svcAbs(DEFAULT_LANG, s)}">
-<meta property="og:type" content="article">
+<link rel="alternate" hreflang="x-default" href="${hrefFor(DEFAULT_LANG)}">
+<meta property="og:type" content="${ogType}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${url}">
@@ -450,57 +521,62 @@ ${alts}
 <div class="bar">
   <div class="bar-in">
     <a class="brand" href="${home}">${L.brand}</a>
-    <nav class="nav" aria-label="${esc(L.navLabel)}"><a href="${home}#list">${esc(L.navList)}</a><a href="${home}#how">${esc(L.navHow)}</a><a href="${home}#faq">${esc(L.navFaq)}</a></nav>
-    <div class="lang" role="group" aria-label="${esc(L.langLabel)}">${LANGS.map(l => `<a href="${svcPath(l, s)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}"${RTL.has(l) ? ' dir="rtl"' : ''}${l === lang ? ' aria-current="page"' : ''}>${LANG_NAMES[l]}</a>`).join('')}</div>
+    <nav class="nav" aria-label="${esc(L.navLabel)}"><a href="${home}#list">${esc(L.navList)}</a><a href="${home}#how">${esc(L.navHow)}</a><a href="${home}#faq">${esc(L.navFaq)}</a><a href="${orgPath(lang)}">${esc(L.navOrgs)}</a></nav>
+    <div class="lang" role="group" aria-label="${esc(L.langLabel)}">${LANGS.map(l => `<a href="${pathFor(l)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}"${RTL.has(l) ? ' dir="rtl"' : ''}${l === lang ? ' aria-current="page"' : ''}>${LANG_NAMES[l]}</a>`).join('')}</div>
   </div>
 </div>
 <div class="wrap">
-<p class="pr"><b>PR</b><span>${L.pr}</span></p>
-<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${home}#list">${esc(L.listH)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
-<main>
-<article class="svc detail" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top">${ava(s, name)}<div class="svc-id"><span class="cat">${esc(CATS[lang][s.cat])}</span><h1>${esc(name)}</h1>${tags(s, L)}</div></div>
-<h2>${esc(L.hGain)}</h2>
-<p class="gain">${esc(d.gain)}</p>
-<h2>${esc(L.hAbout.replace('{name}', name))}</h2>
-<p class="body">${esc(d.note)}</p>
-<h2>${esc(L.hNeed)}</h2>
-<p class="body">${esc(d.need)}</p>
-${meta(s, lang)}
-${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
-${slip(s, L)}
-</article>
-<section id="related">
-  <div class="sec-head"><h2>${esc(L.hRelated)}</h2></div>
-  <div class="rel-grid">${rel}</div>
-</section>
-<p class="back"><a class="btn line" href="${home}#list">${rtl ? '→' : '←'} ${esc(L.backList)}</a></p>
-</main>
+${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
-<script>
-(function(){
-  var I18N=${JSON.stringify(i18n)},toast=document.getElementById('toast'),timer;
-  function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
-  document.addEventListener('click',function(e){
-    var b=e.target.closest('[data-code]'); if(!b) return;
-    var code=b.getAttribute('data-code'),span=b.previousElementSibling.querySelector('.dot');
-    function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
-    try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
-  });
-})();
-</script>
+${script}
 </body>
 </html>
 `;
 }
+
+// ---- UBIの団体・プロジェクト（/organizations/）。お金がもらえるサービスではないので、紹介ボタンや sponsored は付けない
+function orgsPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const title = `${L.orgsTitle} | ${L.title}`;
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: L.orgsTitle, item: orgAbs(lang) },
+    ],
+  };
+  const groups = ORG_GROUPS.map(g => {
+    const items = ORGS.filter(o => o.group === g.id).map(o => {
+      const svc = o.svc && live.find(x => x.id === o.svc);
+      const meta = [o.region && ORG_REGIONS[o.region][lang], o.year && `${L.orgsFounded} ${o.year}`].filter(Boolean).map(esc).join(' · ');
+      return `<li class="org" id="org-${o.id}"><div class="org-head"><a class="org-name" href="${esc(o.url)}" target="_blank" rel="noopener" dir="auto">${esc(o.name)}</a>${meta ? `<span class="org-meta">${meta}</span>` : ''}</div>
+<p>${esc(o.desc[lang] || o.desc.en)}</p>${svc ? `<a class="org-svc" href="${svcPath(lang, svc)}">${esc(L.orgsOnSite)}: ${esc(sName(svc, lang))}</a>` : ''}</li>`;
+    }).join('\n');
+    return `<section class="org-group" id="g-${g.id}"><h2>${esc(g.name[lang])}<span class="dot">${ORGS.filter(o => o.group === g.id).length}</span></h2><ul class="org-list">${items}</ul></section>`;
+  }).join('\n');
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.orgsTitle)}</li></ol></nav>
+<main class="orgs">
+<header class="orgs-head"><p class="eyebrow">ORGANIZATIONS</p><h1>${esc(L.orgsH1)}</h1><p class="orgs-intro">${esc(L.orgsIntro)}</p>
+<nav class="org-toc" aria-label="${esc(L.navLabel)}">${ORG_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}</nav></header>
+${groups}
+<p class="orgs-credit">${esc(L.orgsCredit)} <a href="https://github.com/rmharrison/awesome-ubi-organisations" target="_blank" rel="noopener">awesome-ubi-organisations</a> · ${esc(L.orgsAsOf)}</p>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  return shell(lang, { title, desc: L.orgsDesc, hrefFor: orgAbs, pathFor: orgPath, ld, ogType: 'website', body });
+}
+
 for (const lang of LANGS) {
   for (const s of live) {
     const dir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'services', s.id);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), servicePage(s, lang));
   }
+  const odir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'organizations');
+  fs.mkdirSync(odir, { recursive: true });
+  fs.writeFileSync(path.join(odir, 'index.html'), orgsPage(lang));
 }
 
 // SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
@@ -517,8 +593,8 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
-console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages, ${live.length} services shown (${SERVICES.length - live.length} hidden)`);
+console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages + ${LANGS.length} organization pages, ${live.length} services shown (${SERVICES.length - live.length} hidden)`);

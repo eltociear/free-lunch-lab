@@ -19,6 +19,8 @@ Search Console: [neteru-nyukin.eltociear.workers.dev](https://search.google.com/
 - 一覧: `/`（英語）、`/ja/`、`/zh/`、`/hi/`、`/es/`、`/ar/`
 - 個別ページ: `/services/{id}/`（英語）と `/{lang}/services/{id}/`。表示中のサービス（`ref` があるか `noRef`）ごとに6言語ぶん作る。中身は `SERVICES` のデータだけで、見出しなどの文言は `T` の `svcTitle`・`hGain`・`hAbout`・`hNeed`・`hRelated`・`backList`・`crumbLabel`
 - 一覧のカードのサービス名から個別ページへリンクする。`sitemap.xml` には全ページが入る
+- UBIの団体・プロジェクト: `/organizations/` と `/{lang}/organizations/`。データは `src/data.js` の `ORGS`（団体）・`ORG_GROUPS`（種類）・`ORG_REGIONS`（地域名）。`svc` にサービスの id を入れると、団体ページからそのサービスの個別ページへ、個別ページから団体へ相互にリンクする。紹介ボタンや sponsored は付けない。海外の一部は [awesome-ubi-organisations](https://github.com/rmharrison/awesome-ubi-organisations)（CC0、2018年）をもとに2026年10月に確認し直したもの
+- 入口: 上のナビ（PC）、よくある質問の下のリンク、フッター
 
 ## サービスの追加・編集
 

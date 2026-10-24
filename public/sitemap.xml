@@ -67,6 +67,72 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/"/>
   </url>
   <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/organizations/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/ja/organizations/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/zh/organizations/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/hi/organizations/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/es/organizations/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/ar/organizations/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/organizations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/organizations/"/>
+  </url>
+  <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/</loc>
     <lastmod>2026-10-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/"/>

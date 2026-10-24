@@ -241,6 +241,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::before{content:"Q";flex:none;font-family:var(--f-dot);font-weight:400;font-size:1.15rem;color:var(--gold)}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
+.faq-more{margin-top:14px;font-size:.92rem}
+.foot a{color:inherit;text-underline-offset:3px}
 .faq p{padding:0 0 16px;padding-inline-start:26px;color:var(--muted);max-width:46em}
 
 .warn{border:1px solid color-mix(in srgb,var(--stamp) 35%,var(--line));border-inline-start:5px solid var(--stamp);border-radius:14px;padding:22px 24px;
@@ -436,7 +438,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   <div class="bar-in">
     <a class="brand" href="#top">सोते हुए भी <span>कमाई</span></a>
     <nav class="nav" aria-label="सेक्शन">
-      <a href="#list">सेवाएँ</a><a href="#how">कैसे इस्तेमाल करें</a><a href="#faq">सवाल-जवाब</a>
+      <a href="#list">सेवाएँ</a><a href="#how">कैसे इस्तेमाल करें</a><a href="#faq">सवाल-जवाब</a><a href="organizations/">संगठन</a>
     </nav>
     <div class="lang" role="group" aria-label="भाषा"><a href="/" hreflang="en" lang="en">EN</a><a href="/ja/" hreflang="ja" lang="ja">日本語</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/" hreflang="hi" lang="hi" aria-current="page">हिन्दी</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
   </div>
@@ -709,7 +711,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 <section id="news">
   <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>UPDATES</p><h2>नया क्या है</h2></div>
-  <ol class="news rv"><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>AXO (World App) जोड़ा</li><li>ORO (World App) जोड़ा</li><li>Dotare जोड़ा</li><li>Palai जोड़ा</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>Circles (Gnosis App) जोड़ा</li><li>Ğ1 जोड़ा</li></ul></li><li><time class="dot" datetime="2026-10-21">2026.10.21</time><ul><li>Mein Grundeinkommen जोड़ा</li></ul></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>Trima जोड़ा</li><li>InterLink जोड़ा</li><li>टॉप 3 सुझाव और भरोसे के संकेत जोड़े</li><li>WAVEE को “ग्लोबल” किया</li><li>Delta Kim जोड़ा</li><li>Pi Network जोड़ा</li><li>Pawns.app जोड़ा</li><li>Sweatcoin जोड़ा</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>साइट का नया डिज़ाइन</li><li>Honeygain जोड़ा</li><li>Grass जोड़ा</li></ul></li></ol>
+  <ol class="news rv"><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>UBI संगठनों और प्रोजेक्ट का पेज जोड़ा</li><li>AXO (World App) जोड़ा</li><li>ORO (World App) जोड़ा</li><li>Dotare जोड़ा</li><li>Palai जोड़ा</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>Circles (Gnosis App) जोड़ा</li><li>Ğ1 जोड़ा</li></ul></li><li><time class="dot" datetime="2026-10-21">2026.10.21</time><ul><li>Mein Grundeinkommen जोड़ा</li></ul></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>Trima जोड़ा</li><li>InterLink जोड़ा</li><li>टॉप 3 सुझाव और भरोसे के संकेत जोड़े</li><li>WAVEE को “ग्लोबल” किया</li><li>Delta Kim जोड़ा</li><li>Pi Network जोड़ा</li><li>Pawns.app जोड़ा</li><li>Sweatcoin जोड़ा</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>साइट का नया डिज़ाइन</li><li>Honeygain जोड़ा</li><li>Grass जोड़ा</li></ul></li></ol>
 </section>
 
 <section id="share">
@@ -738,6 +740,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <details><summary>क्या इनाम पर टैक्स लगता है?</summary><p>जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।</p></details>
     <details><summary>क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?</summary><p>“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।</p></details>
   </div>
+  <p class="faq-more"><a href="organizations/">बेसिक इनकम संगठनों और प्रोजेक्ट की सूची देखें</a></p>
 </section>
 
 <section id="warn">
@@ -762,7 +765,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <a class="btn solid" href="#list">सेवाओं की सूची देखें</a>
   </div>
   <div class="horizon" aria-hidden="true"><div class="sun"></div><svg class="hills" aria-hidden="true" viewBox="0 0 1440 150" preserveAspectRatio="none"><path fill="#4A2558" d="M0 70C160 30 300 40 460 70s300 40 470 6 340-50 510-10V150H0z"/><path fill="#160F2E" d="M0 104c200-34 380-30 560 0s360 26 520-6 260-28 360-12V150H0z"/></svg></div>
-  <div class="foot-band"><div class="wrap foot"><span>जानकारी अक्टूबर 2026 तक की है। यह निवेश सलाह नहीं है।</span><span class="dot">सोते हुए भी कमाई</span></div></div>
+  <div class="foot-band"><div class="wrap foot"><span>जानकारी अक्टूबर 2026 तक की है। यह निवेश सलाह नहीं है।</span><a href="organizations/">UBI संगठन और प्रोजेक्ट</a><span class="dot">सोते हुए भी कमाई</span></div></div>
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 <script>

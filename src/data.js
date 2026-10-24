@@ -1254,6 +1254,15 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-10-24",
+      "ja": "UBIの団体・プロジェクトのページを追加",
+      "en": "Added a page of UBI organizations & projects",
+      "zh": "新增 UBI 团体与项目页面",
+      "hi": "UBI संगठनों और प्रोजेक्ट का पेज जोड़ा",
+      "es": "Añadida una página de organizaciones y proyectos de RBU",
+      "ar": "أضفنا صفحة منظمات ومشاريع الدخل الأساسي"
+    },
+    {
+      "date": "2026-10-24",
       "ja": "AXO（World App）を追加",
       "en": "Added AXO (World App)",
       "zh": "新增 AXO（World App）",
@@ -1588,7 +1597,18 @@ module.exports = {
       "hNeed": "始め方・条件",
       "hRelated": "関連サービス",
       "backList": "サービス一覧に戻る",
-      "crumbLabel": "パンくずリスト"
+      "crumbLabel": "パンくずリスト",
+      "navOrgs": "団体",
+      "orgsTitle": "UBIの団体・プロジェクト",
+      "orgsH1": "ベーシックインカムの団体・プロジェクト",
+      "orgsDesc": "ベーシックインカム（UBI）を推進・研究・実践している世界と日本の団体・プロジェクトを、種類別にまとめました。各団体の現状は2026年10月に確認しています。",
+      "orgsIntro": "ベーシックインカムについてもっと知りたい人、支援や参加の入り口を探している人のための一覧です。お金がもらえるサービスではなく、推進・研究・現金給付などに取り組む団体を種類別にまとめています。",
+      "orgsCredit": "海外の団体の一部は、Ryan Harrison 氏らの「awesome-ubi-organisations」（CC0、最終更新2018年）をもとに、名前・URL・活動状況を確かめ直して作り直しました。活動が確認できないものは外しています。",
+      "orgsAsOf": "2026年10月時点の情報です。",
+      "orgsFounded": "設立",
+      "orgsOnSite": "このサイトの紹介ページ",
+      "orgsRelated": "関連する団体・プロジェクト",
+      "orgsFaqLink": "ベーシックインカムの団体・プロジェクト一覧も見る"
     },
     "en": {
       "brand": "Paid While You <span>Sleep</span>",
@@ -1706,7 +1726,18 @@ module.exports = {
       "hNeed": "How to start",
       "hRelated": "Related services",
       "backList": "Back to the list",
-      "crumbLabel": "Breadcrumb"
+      "crumbLabel": "Breadcrumb",
+      "navOrgs": "Organizations",
+      "orgsTitle": "UBI organizations & projects",
+      "orgsH1": "Basic income organizations & projects",
+      "orgsDesc": "A curated list of organizations and projects around the world and in Japan that advocate, research or practise basic income (UBI), grouped by type. Checked in October 2026.",
+      "orgsIntro": "For anyone who wants to learn more about basic income or find a way to support or get involved. These are not money-making services but organizations working on advocacy, research and cash transfers, grouped by type.",
+      "orgsCredit": "Part of the international list is based on “awesome-ubi-organisations” by Ryan Harrison and contributors (CC0, last updated 2018), with every name, URL and activity status re-checked. Entries we could not confirm as active were left out.",
+      "orgsAsOf": "Information as of October 2026.",
+      "orgsFounded": "Founded",
+      "orgsOnSite": "Our page on this service",
+      "orgsRelated": "Related organization",
+      "orgsFaqLink": "See the list of basic income organizations & projects"
     },
     "hi": {
       "brand": "सोते हुए भी <span>कमाई</span>",
@@ -1824,7 +1855,18 @@ module.exports = {
       "hNeed": "कैसे शुरू करें",
       "hRelated": "मिलती-जुलती सेवाएँ",
       "backList": "सूची पर वापस जाएँ",
-      "crumbLabel": "ब्रेडक्रंब"
+      "crumbLabel": "ब्रेडक्रंब",
+      "navOrgs": "संगठन",
+      "orgsTitle": "UBI संगठन और प्रोजेक्ट",
+      "orgsH1": "बेसिक इनकम के संगठन और प्रोजेक्ट",
+      "orgsDesc": "दुनिया और जापान में बेसिक इनकम (UBI) की पैरवी, शोध या उस पर अमल करने वाले संगठनों और प्रोजेक्ट की प्रकार के हिसाब से चुनी हुई सूची। अक्टूबर 2026 में जाँची गई।",
+      "orgsIntro": "उनके लिए जो बेसिक इनकम के बारे में और जानना चाहते हैं या समर्थन व भागीदारी का रास्ता खोज रहे हैं। ये पैसे देने वाली सेवाएँ नहीं, बल्कि पैरवी, शोध और नकद सहायता पर काम करने वाले संगठन हैं।",
+      "orgsCredit": "अंतरराष्ट्रीय सूची का एक हिस्सा Ryan Harrison और सहयोगियों की “awesome-ubi-organisations” (CC0, आख़िरी अपडेट 2018) पर आधारित है; हर नाम, URL और सक्रियता दोबारा जाँची गई। जिनकी सक्रियता की पुष्टि नहीं हुई, उन्हें हटा दिया गया।",
+      "orgsAsOf": "जानकारी अक्टूबर 2026 तक की है।",
+      "orgsFounded": "स्थापना",
+      "orgsOnSite": "इस साइट पर इसका पेज",
+      "orgsRelated": "संबंधित संगठन",
+      "orgsFaqLink": "बेसिक इनकम संगठनों और प्रोजेक्ट की सूची देखें"
     },
     "zh": {
       "brand": "躺着也<span>到账</span>",
@@ -1942,7 +1984,18 @@ module.exports = {
       "hNeed": "如何开始・条件",
       "hRelated": "相关服务",
       "backList": "返回服务列表",
-      "crumbLabel": "面包屑导航"
+      "crumbLabel": "面包屑导航",
+      "navOrgs": "团体",
+      "orgsTitle": "UBI 团体与项目",
+      "orgsH1": "基本收入的团体与项目",
+      "orgsDesc": "按类型整理了世界和日本推动、研究和实践基本收入（UBI）的团体与项目，各团体现状已于 2026 年 10 月确认。",
+      "orgsIntro": "为想进一步了解基本收入、或想寻找支持和参与途径的人准备的列表。这里不是能领钱的服务，而是按类型整理的从事倡导、研究和现金援助等工作的团体。",
+      "orgsCredit": "部分海外团体以 Ryan Harrison 等人的“awesome-ubi-organisations”（CC0，最后更新于 2018 年）为基础，重新核实了名称、网址和活动状况。无法确认仍在活动的已删除。",
+      "orgsAsOf": "信息截至 2026 年 10 月。",
+      "orgsFounded": "成立",
+      "orgsOnSite": "本站的介绍页",
+      "orgsRelated": "相关团体与项目",
+      "orgsFaqLink": "查看基本收入团体与项目列表"
     },
     "es": {
       "brand": "Cobra mientras <span>duermes</span>",
@@ -2060,7 +2113,18 @@ module.exports = {
       "hNeed": "Cómo empezar",
       "hRelated": "Servicios relacionados",
       "backList": "Volver a la lista",
-      "crumbLabel": "Ruta de navegación"
+      "crumbLabel": "Ruta de navegación",
+      "navOrgs": "Organizaciones",
+      "orgsTitle": "Organizaciones y proyectos de RBU",
+      "orgsH1": "Organizaciones y proyectos de renta básica",
+      "orgsDesc": "Una selección de organizaciones y proyectos de todo el mundo y de Japón que defienden, investigan o ponen en práctica la renta básica (RBU), por tipo. Revisado en octubre de 2026.",
+      "orgsIntro": "Para quien quiera saber más sobre la renta básica o busque cómo apoyarla o participar. No son servicios para ganar dinero, sino organizaciones que trabajan en defensa, investigación y transferencias de efectivo, agrupadas por tipo.",
+      "orgsCredit": "Parte de la lista internacional se basa en «awesome-ubi-organisations» de Ryan Harrison y colaboradores (CC0, última actualización en 2018), con cada nombre, URL y estado de actividad comprobados de nuevo. Se han omitido las que no pudimos confirmar como activas.",
+      "orgsAsOf": "Información a octubre de 2026.",
+      "orgsFounded": "Fundación",
+      "orgsOnSite": "Nuestra página sobre este servicio",
+      "orgsRelated": "Organización relacionada",
+      "orgsFaqLink": "Ver la lista de organizaciones y proyectos de renta básica"
     },
     "ar": {
       "brand": "دخل وأنت <span>نائم</span>",
@@ -2178,7 +2242,426 @@ module.exports = {
       "hNeed": "كيف تبدأ",
       "hRelated": "خدمات ذات صلة",
       "backList": "العودة إلى القائمة",
-      "crumbLabel": "مسار التنقل"
+      "crumbLabel": "مسار التنقل",
+      "navOrgs": "المنظمات",
+      "orgsTitle": "منظمات ومشاريع الدخل الأساسي",
+      "orgsH1": "منظمات ومشاريع الدخل الأساسي",
+      "orgsDesc": "قائمة مختارة بمنظمات ومشاريع حول العالم وفي اليابان تدعو إلى الدخل الأساسي أو تبحث فيه أو تطبّقه، مصنّفة حسب النوع. رُوجعت في أكتوبر 2026.",
+      "orgsIntro": "لمن يريد معرفة المزيد عن الدخل الأساسي أو يبحث عن طريقة لدعمه أو المشاركة فيه. هذه ليست خدمات لكسب المال، بل منظمات تعمل في المناصرة والبحث والتحويلات النقدية، مصنّفة حسب النوع.",
+      "orgsCredit": "جزء من القائمة الدولية مبني على «⁦awesome-ubi-organisations⁩» لـ⁦Ryan Harrison⁩ والمساهمين (⁦CC0⁩، آخر تحديث 2018)، مع إعادة التحقق من كل اسم ورابط وحالة نشاط. حُذفت الجهات التي لم نتمكن من تأكيد نشاطها.",
+      "orgsAsOf": "المعلومات حتى أكتوبر 2026.",
+      "orgsFounded": "التأسيس",
+      "orgsOnSite": "صفحتنا عن هذه الخدمة",
+      "orgsRelated": "منظمة ذات صلة",
+      "orgsFaqLink": "اطّلع على قائمة منظمات ومشاريع الدخل الأساسي"
     }
-  }
+  },
+  "ORG_REGIONS": {
+    "global": {
+      "ja": "世界",
+      "en": "Global",
+      "zh": "全球",
+      "hi": "वैश्विक",
+      "es": "Global",
+      "ar": "عالمي"
+    },
+    "eu": {
+      "ja": "ヨーロッパ",
+      "en": "Europe",
+      "zh": "欧洲",
+      "hi": "यूरोप",
+      "es": "Europa",
+      "ar": "أوروبا"
+    },
+    "us": {
+      "ja": "アメリカ",
+      "en": "United States",
+      "zh": "美国",
+      "hi": "अमेरिका",
+      "es": "Estados Unidos",
+      "ar": "الولايات المتحدة"
+    },
+    "ca": {
+      "ja": "カナダ",
+      "en": "Canada",
+      "zh": "加拿大",
+      "hi": "कनाडा",
+      "es": "Canadá",
+      "ar": "كندا"
+    },
+    "de": {
+      "ja": "ドイツ",
+      "en": "Germany",
+      "zh": "德国",
+      "hi": "जर्मनी",
+      "es": "Alemania",
+      "ar": "ألمانيا"
+    },
+    "fr": {
+      "ja": "フランス語圏",
+      "en": "French-speaking",
+      "zh": "法语地区",
+      "hi": "फ़्रेंच भाषी क्षेत्र",
+      "es": "Francófono",
+      "ar": "الفرنكوفونية"
+    },
+    "jp": {
+      "ja": "日本",
+      "en": "Japan",
+      "zh": "日本",
+      "hi": "जापान",
+      "es": "Japón",
+      "ar": "اليابان"
+    }
+  },
+  "ORG_GROUPS": [
+    {
+      "id": "advocacy",
+      "name": {
+        "ja": "推進団体",
+        "en": "Advocacy groups",
+        "zh": "倡导团体",
+        "hi": "पैरवी करने वाले संगठन",
+        "es": "Grupos de defensa",
+        "ar": "مجموعات المناصرة"
+      }
+    },
+    {
+      "id": "research",
+      "name": {
+        "ja": "研究・社会実験",
+        "en": "Research & pilots",
+        "zh": "研究与社会实验",
+        "hi": "शोध और प्रयोग",
+        "es": "Investigación y pilotos",
+        "ar": "البحث والتجارب"
+      }
+    },
+    {
+      "id": "cash",
+      "name": {
+        "ja": "現金給付NGO",
+        "en": "Cash-transfer NGOs",
+        "zh": "现金援助 NGO",
+        "hi": "नकद सहायता देने वाले NGO",
+        "es": "ONG de transferencias en efectivo",
+        "ar": "منظمات التحويل النقدي"
+      }
+    },
+    {
+      "id": "raffle",
+      "name": {
+        "ja": "抽選・寄付型",
+        "en": "Raffles & donations",
+        "zh": "抽奖与捐赠型",
+        "hi": "लॉटरी और दान आधारित",
+        "es": "Sorteos y donaciones",
+        "ar": "السحوبات والتبرعات"
+      }
+    },
+    {
+      "id": "chain",
+      "name": {
+        "ja": "ブロックチェーン・独自通貨系",
+        "en": "Blockchain & community currencies",
+        "zh": "区块链与社区货币",
+        "hi": "ब्लॉकचेन और सामुदायिक मुद्राएँ",
+        "es": "Blockchain y monedas comunitarias",
+        "ar": "البلوكتشين والعملات المجتمعية"
+      }
+    },
+    {
+      "id": "japan",
+      "name": {
+        "ja": "日本の団体・プロジェクト",
+        "en": "In Japan",
+        "zh": "日本的团体与项目",
+        "hi": "जापान में",
+        "es": "En Japón",
+        "ar": "في اليابان"
+      }
+    }
+  ],
+  "ORGS": [
+    {
+      "id": "bien",
+      "group": "advocacy",
+      "name": "Basic Income Earth Network (BIEN)",
+      "url": "https://basicincome.org/",
+      "region": "global",
+      "year": 1986,
+      "desc": {
+        "ja": "ベーシックインカムを支持する人や団体をつなぐ国際ネットワーク。1986年に欧州の団体として始まり、各国の関連団体や国際会議、ニュースの発信を続けている",
+        "en": "An international network linking people and groups who support basic income. Started in 1986 as a European network, it now runs a world congress, publishes news and connects national affiliates",
+        "zh": "连接支持基本收入的个人与团体的国际网络。1986 年以欧洲网络起步，现在举办世界大会、发布新闻并联系各国的关联组织",
+        "hi": "बेसिक इनकम के समर्थक लोगों और संगठनों को जोड़ने वाला अंतरराष्ट्रीय नेटवर्क। 1986 में यूरोपीय नेटवर्क के रूप में शुरू हुआ; अब विश्व सम्मेलन, समाचार और देशों के सहयोगी संगठनों को जोड़ता है",
+        "es": "Red internacional que une a personas y grupos que apoyan la renta básica. Nació en 1986 como red europea y hoy organiza un congreso mundial, publica noticias y conecta a sus afiliados nacionales",
+        "ar": "شبكة دولية تربط الأفراد والمجموعات المؤيدة للدخل الأساسي. بدأت عام 1986 شبكةً أوروبية، وتنظم اليوم مؤتمرًا عالميًا وتنشر الأخبار وتربط الفروع الوطنية"
+      }
+    },
+    {
+      "id": "ubie",
+      "group": "advocacy",
+      "name": "Unconditional Basic Income Europe (UBIE)",
+      "url": "https://www.ubie.org/",
+      "region": "eu",
+      "desc": {
+        "ja": "約25か国の活動家や団体が参加する、ヨーロッパの無条件ベーシックインカム推進ネットワーク。ベーシックインカムを人権として認めさせることを目指す（ベルギーの非営利団体として登録）",
+        "en": "A European network of activists and initiatives from about 25 countries campaigning for unconditional basic income and for its recognition as a human right (registered as a Belgian non-profit)",
+        "zh": "由约 25 个国家的活动人士和团体组成的欧洲无条件基本收入倡导网络，目标是让基本收入被承认为一项人权（在比利时注册为非营利组织）",
+        "hi": "करीब 25 देशों के कार्यकर्ताओं और पहलों का यूरोपीय नेटवर्क, जो बिना शर्त बेसिक इनकम और उसे मानव अधिकार के रूप में मान्यता दिलाने के लिए काम करता है (बेल्जियम में गैर-लाभकारी संस्था के रूप में पंजीकृत)",
+        "es": "Red europea de activistas e iniciativas de unos 25 países que defiende la renta básica incondicional y su reconocimiento como derecho humano (registrada como asociación sin ánimo de lucro en Bélgica)",
+        "ar": "شبكة أوروبية من ناشطين ومبادرات في نحو 25 دولة تدعو إلى دخل أساسي غير مشروط والاعتراف به حقًا من حقوق الإنسان (مسجلة جمعيةً غير ربحية في بلجيكا)"
+      }
+    },
+    {
+      "id": "bicn",
+      "group": "advocacy",
+      "name": "Basic Income Canada Network (BICN)",
+      "url": "https://basicincomecanada.org/",
+      "region": "ca",
+      "desc": {
+        "ja": "カナダでベーシックインカムの導入を求める全国ネットワーク。政策提言や情報発信、各地のグループとの連携を行う",
+        "en": "A national network pushing for a basic income in Canada through policy work, public information and links with local groups",
+        "zh": "推动加拿大实行基本收入的全国性网络，开展政策倡导、信息传播并与各地团体合作",
+        "hi": "कनाडा में बेसिक इनकम लागू कराने के लिए काम करने वाला राष्ट्रीय नेटवर्क; नीति सुझाव, जानकारी और स्थानीय समूहों से तालमेल",
+        "es": "Red nacional que impulsa una renta básica en Canadá mediante propuestas políticas, divulgación y coordinación con grupos locales",
+        "ar": "شبكة وطنية تسعى إلى دخل أساسي في كندا عبر العمل على السياسات ونشر المعلومات والتنسيق مع المجموعات المحلية"
+      }
+    },
+    {
+      "id": "usbig",
+      "group": "advocacy",
+      "name": "US Basic Income Guarantee Network (USBIG)",
+      "url": "https://usbig.net/",
+      "region": "us",
+      "year": 1999,
+      "desc": {
+        "ja": "アメリカのベーシックインカム推進ネットワーク（非営利団体）。研究や記事の発信と、毎年の大会の開催を続けている",
+        "en": "A US non-profit network promoting a basic income guarantee. It publishes research and articles and holds an annual conference",
+        "zh": "美国推动基本收入保障的非营利网络，发布研究与文章并每年举办大会",
+        "hi": "अमेरिका में बेसिक इनकम गारंटी को बढ़ावा देने वाला गैर-लाभकारी नेटवर्क; शोध और लेख प्रकाशित करता है और हर साल सम्मेलन करता है",
+        "es": "Red sin ánimo de lucro de EE. UU. que promueve una renta básica garantizada; publica investigación y artículos y celebra una conferencia anual",
+        "ar": "شبكة أمريكية غير ربحية تروّج لضمان الدخل الأساسي، تنشر الأبحاث والمقالات وتعقد مؤتمرًا سنويًا"
+      }
+    },
+    {
+      "id": "esp",
+      "group": "advocacy",
+      "name": "Economic Security Project",
+      "url": "https://economicsecurityproject.org/",
+      "region": "us",
+      "year": 2016,
+      "desc": {
+        "ja": "Facebook共同創業者のChris Hughesらが立ち上げたアメリカの団体。各地の「保証所得（guaranteed income）」の試験事業に資金や支援を出し、制度化を後押ししている",
+        "en": "A US group co-founded by Facebook co-founder Chris Hughes and others. It funds and supports guaranteed income pilots around the country and pushes for them to become policy",
+        "zh": "由 Facebook 联合创始人 Chris Hughes 等人创立的美国团体，为各地的“保障收入”试点提供资金与支持，并推动其制度化",
+        "hi": "Facebook के सह-संस्थापक Chris Hughes और अन्य लोगों द्वारा शुरू किया गया अमेरिकी संगठन; देशभर के गारंटीड इनकम पायलट को पैसा और मदद देता है और उन्हें नीति बनाने पर ज़ोर देता है",
+        "es": "Grupo estadounidense cofundado por Chris Hughes, cofundador de Facebook, entre otros. Financia y apoya pilotos de ingreso garantizado en todo el país e impulsa que se conviertan en política",
+        "ar": "مجموعة أمريكية شارك في تأسيسها ⁦Chris Hughes⁩، أحد مؤسسي فيسبوك، وآخرون. تموّل تجارب الدخل المضمون في أنحاء البلاد وتدعمها وتدفع نحو تحويلها إلى سياسة"
+      }
+    },
+    {
+      "id": "mgi",
+      "group": "advocacy",
+      "name": "Mayors for a Guaranteed Income",
+      "url": "https://www.mayorsforagi.org/",
+      "region": "us",
+      "year": 2020,
+      "desc": {
+        "ja": "元ストックトン市長のMichael Tubbsが始めた、保証所得を求めるアメリカの市長のネットワーク。各市での現金給付の試験事業と、国レベルの制度化を後押しする",
+        "en": "A network of US mayors calling for a guaranteed income, started by former Stockton mayor Michael Tubbs. It backs city cash pilots and a federal policy",
+        "zh": "由前斯托克顿市长 Michael Tubbs 发起、呼吁保障收入的美国市长网络，支持各市的现金试点并推动联邦层面的制度",
+        "hi": "स्टॉकटन के पूर्व मेयर Michael Tubbs द्वारा शुरू किया गया अमेरिकी मेयरों का नेटवर्क, जो गारंटीड इनकम की माँग करता है; शहरों के नकद पायलट और संघीय नीति का समर्थन करता है",
+        "es": "Red de alcaldes de EE. UU. que pide un ingreso garantizado, fundada por el exalcalde de Stockton Michael Tubbs. Apoya pilotos municipales de dinero en efectivo y una política federal",
+        "ar": "شبكة من رؤساء بلديات أمريكيين تطالب بدخل مضمون، أسسها رئيس بلدية ستوكتون السابق ⁦Michael Tubbs⁩. تدعم التجارب النقدية في المدن وسياسة على المستوى الفيدرالي"
+      }
+    },
+    {
+      "id": "openresearch",
+      "group": "research",
+      "name": "OpenResearch",
+      "url": "https://www.openresearchlab.org/",
+      "region": "us",
+      "desc": {
+        "ja": "旧「Y Combinator Research」のベーシックインカム研究を引き継いだ非営利の研究組織。3,000人を対象に3年間、毎月現金を渡す大規模な調査を行い、結果を公開している",
+        "en": "The non-profit research group that grew out of Y Combinator Research’s basic income project. It ran a three-year study giving monthly cash to 3,000 people and publishes the findings",
+        "zh": "由原“Y Combinator Research”基本收入项目发展而来的非营利研究机构。对 3,000 人进行了为期三年的每月现金发放研究，并公开结果",
+        "hi": "Y Combinator Research के बेसिक इनकम प्रोजेक्ट से निकला गैर-लाभकारी शोध संगठन। इसने 3,000 लोगों को तीन साल तक हर महीने नकद देकर अध्ययन किया और नतीजे प्रकाशित करता है",
+        "es": "Organización de investigación sin ánimo de lucro surgida del proyecto de renta básica de Y Combinator Research. Hizo un estudio de tres años con pagos mensuales a 3.000 personas y publica los resultados",
+        "ar": "منظمة بحثية غير ربحية نشأت من مشروع الدخل الأساسي في ⁦Y Combinator Research⁩. أجرت دراسة لثلاث سنوات قدّمت فيها نقودًا شهرية لـ3,000 شخص وتنشر نتائجها"
+      }
+    },
+    {
+      "id": "stanford",
+      "group": "research",
+      "name": "Stanford Basic Income Lab",
+      "url": "https://basicincome.stanford.edu/",
+      "region": "us",
+      "desc": {
+        "ja": "スタンフォード大学の貧困・不平等研究センターの研究プログラム。世界各地のベーシックインカムの実験や試験事業を集めて分析し、政策担当者や実務家に共有している",
+        "en": "A program of Stanford’s Center on Poverty and Inequality that tracks and analyses basic income experiments and pilots and shares what it learns with policymakers and practitioners",
+        "zh": "斯坦福大学贫困与不平等研究中心的项目，收集并分析世界各地的基本收入实验与试点，并与政策制定者和实践者分享",
+        "hi": "स्टैनफ़ोर्ड के Center on Poverty and Inequality का कार्यक्रम, जो बेसिक इनकम के प्रयोगों और पायलटों को ट्रैक कर उनका विश्लेषण करता है और नीति-निर्माताओं से साझा करता है",
+        "es": "Programa del Centro sobre Pobreza y Desigualdad de Stanford que recopila y analiza experimentos y pilotos de renta básica y comparte lo aprendido con responsables políticos",
+        "ar": "برنامج تابع لمركز الفقر وعدم المساواة في جامعة ستانفورد، يتابع تجارب الدخل الأساسي ويحللها ويشارك ما يتعلمه مع صانعي السياسات"
+      }
+    },
+    {
+      "id": "bis",
+      "group": "research",
+      "name": "Basic Income Studies",
+      "url": "https://www.degruyterbrill.com/journal/key/bis/html",
+      "region": "global",
+      "desc": {
+        "ja": "ベーシックインカムを専門に扱う学術誌。経済学・哲学・政治学などの論文を掲載している（出版はDe Gruyter Brill）",
+        "en": "An academic journal devoted to basic income, publishing work from economics, philosophy, politics and more (published by De Gruyter Brill)",
+        "zh": "专门研究基本收入的学术期刊，刊登经济学、哲学、政治学等领域的论文（由 De Gruyter Brill 出版）",
+        "hi": "बेसिक इनकम पर केंद्रित शोध पत्रिका, जिसमें अर्थशास्त्र, दर्शन, राजनीति आदि के लेख छपते हैं (प्रकाशक De Gruyter Brill)",
+        "es": "Revista académica dedicada a la renta básica, con trabajos de economía, filosofía, política y otras áreas (editada por De Gruyter Brill)",
+        "ar": "مجلة أكاديمية مخصصة للدخل الأساسي تنشر أبحاثًا في الاقتصاد والفلسفة والسياسة وغيرها (تصدرها ⁦De Gruyter Brill⁩)"
+      }
+    },
+    {
+      "id": "greshm",
+      "group": "research",
+      "name": "The Greshm Institute",
+      "url": "https://www.greshm.org/",
+      "desc": {
+        "ja": "ベーシックインカムの経済学を研究・議論する団体。以前の「Project Greshm」から名前を変え、オンラインのシンポジウムなどを開いている",
+        "en": "A group studying and debating the economics of basic income. Formerly “Project Greshm”, it now holds online symposia and similar events",
+        "zh": "研究和探讨基本收入经济学的团体。前身为“Project Greshm”，现在举办线上研讨会等活动",
+        "hi": "बेसिक इनकम के अर्थशास्त्र पर शोध और चर्चा करने वाला समूह। पहले इसका नाम “Project Greshm” था; अब ऑनलाइन संगोष्ठियाँ आदि करता है",
+        "es": "Grupo que estudia y debate la economía de la renta básica. Antes se llamaba «Project Greshm» y ahora organiza simposios en línea, entre otras actividades",
+        "ar": "مجموعة تدرس اقتصاديات الدخل الأساسي وتناقشها. كانت تُعرف سابقًا باسم «⁦Project Greshm⁩» وتنظم الآن ندوات عبر الإنترنت وغيرها"
+      }
+    },
+    {
+      "id": "givedirectly",
+      "group": "cash",
+      "name": "GiveDirectly",
+      "url": "https://www.givedirectly.org/",
+      "region": "us",
+      "desc": {
+        "ja": "寄付金を、貧困の中で暮らす家庭に直接現金で届ける非営利団体。2009年から給付を続け、アフリカ各国やアメリカで活動している",
+        "en": "A non-profit that sends donations straight to people living in poverty as cash. It has been giving since 2009 and works in several African countries and the US",
+        "zh": "将捐款以现金形式直接送到贫困家庭手中的非营利组织。自 2009 年起持续发放，在多个非洲国家和美国开展工作",
+        "hi": "दान की रकम को सीधे गरीबी में रह रहे परिवारों तक नकद पहुँचाने वाली गैर-लाभकारी संस्था। 2009 से नकद दे रही है और कई अफ़्रीकी देशों व अमेरिका में काम करती है",
+        "es": "Organización sin ánimo de lucro que entrega las donaciones directamente en efectivo a personas en situación de pobreza. Lo hace desde 2009 en varios países de África y en EE. UU.",
+        "ar": "منظمة غير ربحية توصل التبرعات نقدًا مباشرةً إلى الأسر التي تعيش في فقر. تقدّم النقود منذ 2009 وتعمل في عدة دول أفريقية والولايات المتحدة"
+      }
+    },
+    {
+      "id": "mgk",
+      "group": "raffle",
+      "name": "Mein Grundeinkommen",
+      "url": "https://www.mein-grundeinkommen.de/",
+      "region": "de",
+      "year": 2014,
+      "svc": "meingrundeinkommen",
+      "desc": {
+        "ja": "ベルリンの非営利団体。寄付で集めたお金で、月1,000ユーロを1年間受け取れる「ベーシックインカム」を抽選で配っている",
+        "en": "A Berlin non-profit that raises donations and raffles off basic incomes of €1,000 a month for a year",
+        "zh": "柏林的非营利组织，用募集的捐款以抽奖方式发放为期一年、每月 1,000 欧元的“基本收入”",
+        "hi": "बर्लिन की गैर-लाभकारी संस्था, जो दान जुटाकर एक साल तक हर महीने €1,000 की “बेसिक इनकम” लॉटरी से बाँटती है",
+        "es": "Organización sin ánimo de lucro de Berlín que recauda donaciones y sortea rentas básicas de 1.000 € al mes durante un año",
+        "ar": "منظمة غير ربحية في برلين تجمع التبرعات وتجري سحوبات على دخل أساسي قدره ⁦€1,000⁩ شهريًا لمدة سنة"
+      }
+    },
+    {
+      "id": "circles",
+      "group": "chain",
+      "name": "Circles",
+      "url": "https://aboutcircles.com/",
+      "region": "global",
+      "svc": "circles",
+      "desc": {
+        "ja": "一人ひとりが自分の通貨を少しずつ発行し、信頼でつながった人どうしで使うしくみ。Gnosisが手がけ、現在はGnosis Appから参加する（旧サイトはjoincircles.net）",
+        "en": "A system where every person slowly issues their own currency, used among people linked by trust. Built by Gnosis; you now join through the Gnosis App (the old site was joincircles.net)",
+        "zh": "每个人逐步发行自己的货币，并在相互信任的人之间使用的机制。由 Gnosis 打造，现在通过 Gnosis App 加入（旧网站为 joincircles.net）",
+        "hi": "ऐसी व्यवस्था जिसमें हर व्यक्ति धीरे-धीरे अपनी करेंसी जारी करता है और भरोसे से जुड़े लोगों में उसका इस्तेमाल होता है। Gnosis ने बनाया; अब Gnosis App से जुड़ते हैं (पुरानी साइट joincircles.net थी)",
+        "es": "Sistema en el que cada persona emite poco a poco su propia moneda, que se usa entre personas unidas por la confianza. Creado por Gnosis; ahora se entra a través de la Gnosis App (la web antigua era joincircles.net)",
+        "ar": "نظام يُصدر فيه كل شخص عملته الخاصة تدريجيًا، وتُستخدم بين أشخاص تربطهم الثقة. أنشأته ⁦Gnosis⁩، والانضمام اليوم عبر ⁦Gnosis App⁩ (الموقع القديم ⁦joincircles.net⁩)"
+      }
+    },
+    {
+      "id": "gooddollar",
+      "group": "chain",
+      "name": "GoodDollar",
+      "url": "https://www.gooddollar.org/",
+      "region": "global",
+      "svc": "gooddollar",
+      "desc": {
+        "ja": "本人確認をした人がG$トークンを毎日受け取れる、非営利のブロックチェーン型ベーシックインカムの取り組み",
+        "en": "A non-profit blockchain basic income project where verified people can claim G$ tokens every day",
+        "zh": "经过身份验证的人每天都能领取 G$ 代币的非营利区块链基本收入项目",
+        "hi": "गैर-लाभकारी ब्लॉकचेन बेसिक इनकम प्रोजेक्ट, जिसमें सत्यापित लोग हर दिन G$ टोकन क्लेम कर सकते हैं",
+        "es": "Proyecto sin ánimo de lucro de renta básica en blockchain en el que las personas verificadas pueden reclamar tokens G$ cada día",
+        "ar": "مشروع دخل أساسي غير ربحي على البلوكتشين يتيح للأشخاص الموثَّقين المطالبة برموز ⁦G$⁩ كل يوم"
+      }
+    },
+    {
+      "id": "g1",
+      "group": "chain",
+      "name": "Ğ1 (Duniter)",
+      "url": "https://duniter.org/g1/",
+      "region": "fr",
+      "year": 2017,
+      "svc": "g1",
+      "desc": {
+        "ja": "「貨幣の相対性理論」にもとづく自由通貨。メンバーが「信頼の網」で互いを認証し、全員に毎日の配当が発行される。フランス語圏の参加者が中心",
+        "en": "A libre currency based on the Relative Theory of Money. Members certify one another through a web of trust, and everyone receives a daily dividend. Mostly French-speaking",
+        "zh": "基于“货币相对论”的自由货币。成员通过“信任网”相互认证，每个人每天都会获得红利。参与者以法语圈为主",
+        "hi": "“रिलेटिव थ्योरी ऑफ़ मनी” पर आधारित लिब्रे करेंसी। सदस्य “वेब ऑफ़ ट्रस्ट” से एक-दूसरे को सर्टिफ़ाई करते हैं, और सबको रोज़ डिविडेंड मिलता है। ज़्यादातर फ़्रेंच भाषी",
+        "es": "Moneda libre basada en la Teoría Relativa de la Moneda. Los miembros se certifican mutuamente mediante una red de confianza y todos reciben un dividendo diario. Mayoritariamente francófona",
+        "ar": "عملة حرة قائمة على «النظرية النسبية للنقود». يوثّق الأعضاء بعضهم بعضًا عبر «شبكة الثقة»، ويحصل الجميع على عائد يومي. أغلب المشاركين من الناطقين بالفرنسية"
+      }
+    },
+    {
+      "id": "groupincome",
+      "group": "chain",
+      "name": "Group Income",
+      "url": "https://groupincome.org/",
+      "region": "global",
+      "desc": {
+        "ja": "仲間うちで毎月お金を出し合い、一定額に届かない人を支える「自分たちのベーシックインカム」をつくるオープンソースのアプリ。okTurtles Foundationが開発を続けている",
+        "en": "An open-source app for building a “basic income” within your own group: members chip in each month to support those who fall short. Developed by the okTurtles Foundation",
+        "zh": "在自己的小团体内建立“基本收入”的开源应用：成员每月出资，支持收入不足的人。由 okTurtles Foundation 持续开发",
+        "hi": "अपने ही समूह में “बेसिक इनकम” बनाने के लिए ओपन-सोर्स ऐप: सदस्य हर महीने पैसे जोड़ते हैं और जिनकी आय कम पड़ती है उनकी मदद करते हैं। okTurtles Foundation इसे विकसित कर रहा है",
+        "es": "App de código abierto para crear una «renta básica» dentro de tu propio grupo: los miembros aportan cada mes para apoyar a quien no llega. La desarrolla la okTurtles Foundation",
+        "ar": "تطبيق مفتوح المصدر لبناء «دخل أساسي» داخل مجموعتك: يساهم الأعضاء شهريًا لدعم من يقل دخله. تطوّره ⁦okTurtles Foundation⁩"
+      }
+    },
+    {
+      "id": "jabi",
+      "group": "japan",
+      "name": "日本ベーシックインカム学会（JABI）",
+      "url": "https://jabi.jp/",
+      "region": "jp",
+      "year": 2018,
+      "desc": {
+        "ja": "研究者や運動家、政治家などが集まり、ベーシックインカムを中立的な立場で研究する学会。年次大会や各地の研究会、学会誌『ベーシックインカム研究』の発行を行っている",
+        "en": "A Japanese academic society where researchers, activists and politicians study basic income from a neutral standpoint. It holds an annual conference and regional study groups and publishes a journal",
+        "zh": "研究者、社会活动人士和政治人物等汇聚一堂、以中立立场研究基本收入的日本学会。举办年会和各地研究会，并出版学会期刊",
+        "hi": "जापान का अकादमिक संगठन, जहाँ शोधकर्ता, कार्यकर्ता और राजनेता तटस्थ रूप से बेसिक इनकम का अध्ययन करते हैं। वार्षिक सम्मेलन, क्षेत्रीय अध्ययन समूह और एक पत्रिका प्रकाशित करता है",
+        "es": "Sociedad académica japonesa en la que investigadores, activistas y políticos estudian la renta básica desde una postura neutral. Celebra un congreso anual y grupos de estudio regionales y edita una revista",
+        "ar": "جمعية أكاديمية يابانية يدرس فيها باحثون وناشطون وسياسيون الدخل الأساسي من موقف محايد. تعقد مؤتمرًا سنويًا وحلقات دراسية إقليمية وتصدر مجلة"
+      }
+    },
+    {
+      "id": "maezawa",
+      "group": "japan",
+      "name": "前澤式ベーシックインカム社会実験",
+      "url": "https://www.yusakumaezawa.com/",
+      "region": "jp",
+      "desc": {
+        "ja": "実業家の前澤友作氏による民間の社会実験。1,000人に1人あたり総額100万円を渡し、受け取り方の違う4つのグループに約1年間アンケートを行って、ベーシックインカムのある暮らしへの影響を調べる",
+        "en": "A private experiment by entrepreneur Yusaku Maezawa: 1,000 people each receive ¥1 million in total, split into four groups with different payout patterns and surveyed for about a year on how it affects their lives",
+        "zh": "企业家前泽友作发起的民间社会实验：向 1,000 人每人发放共 100 万日元，按不同领取方式分成 4 组，用约一年时间问卷调查其对生活的影响",
+        "hi": "उद्यमी Yusaku Maezawa का निजी सामाजिक प्रयोग: 1,000 लोगों को कुल ¥10 लाख प्रति व्यक्ति, अलग-अलग भुगतान तरीकों वाले 4 समूहों में बाँटकर करीब एक साल सर्वे से जीवन पर असर देखा जाता है",
+        "es": "Experimento privado del empresario Yusaku Maezawa: 1.000 personas reciben en total 1 millón de yenes cada una, repartidas en cuatro grupos con distintas formas de cobro y encuestadas durante un año sobre el efecto en su vida",
+        "ar": "تجربة اجتماعية خاصة أطلقها رجل الأعمال ⁦Yusaku Maezawa⁩: يحصل 1,000 شخص على مليون ين لكل منهم إجمالًا، موزعين على أربع مجموعات بطرق دفع مختلفة، ويُستطلعون لنحو عام حول أثر ذلك في حياتهم"
+      }
+    }
+  ]
 };
