@@ -1133,38 +1133,38 @@ module.exports = {
       "ja": {
         "gain": "ORO トークンを毎日",
         "note": "World App の中で動くミニアプリ。「すべての人間が毎日受け取れるトークン」として、World Chain 上の ORO を1日1回受け取れる。友だちを招待すると ORO が多くもらえるしくみもある。開発は Grupo de Fiesta、利用者は約390万人（2026年10月時点のWorldの掲載ページ）",
-        "need": "World App を入れて World ID で人間であることを証明し、ミニアプリ ORO を開いて毎日受け取る",
-        "caution": "1日にもらえる量は公式ページに書かれていない（2025年9月の World Chain の告知では1日1 ORO。その後減ったという報告もある）。必要な本人確認のレベル（Orb など）と、日本から使えるかは確認できていない。ORO は分散型取引所（DEX）で取引されているが流動性は小さく、2026年10月時点で1 ORO は1円未満。運営元の会社情報は見つからない"
+        "need": "World App を入れて World ID で人間であることを証明し（日本からはOrb認証済みで利用を確認）、ミニアプリ ORO を開いて毎日受け取る",
+        "caution": "1日にもらえる量は公式ページに書かれていない（2025年9月の World Chain の告知では1日1 ORO。その後減ったという報告もある）。2026年10月に、OrbでWorld IDを認証したアカウントで日本から使えることを確認した。Orbより低い認証レベルで足りるかはわかっていない。ORO は分散型取引所（DEX）で取引されているが流動性は小さく、2026年10月時点で1 ORO は1円未満。運営元の会社情報は見つからない"
       },
       "en": {
         "gain": "ORO tokens every day",
         "note": "A mini app inside World App. Billed as “a token every human can claim daily”, it lets you claim ORO on World Chain once a day, and you can invite friends to earn more. Developed by Grupo de Fiesta, with about 3.9 million users (World’s listing page, Oct 2026)",
-        "need": "Install World App, prove you are human with World ID, then open the ORO mini app and claim every day",
-        "caution": "The daily amount is not stated on the official pages (a World Chain announcement in Sep 2025 said 1 ORO a day; later reports say it was reduced). The required verification level (Orb etc.) and availability in Japan are not confirmed. ORO trades on a decentralized exchange (DEX) with little liquidity, and as of Oct 2026 one ORO is worth well under a cent. No company details for the operator were found"
+        "need": "Install World App, prove you are human with World ID (confirmed from Japan with Orb verification), then open the ORO mini app and claim every day",
+        "caution": "The daily amount is not stated on the official pages (a World Chain announcement in Sep 2025 said 1 ORO a day; later reports say it was reduced). Confirmed usable from Japan with an Orb-verified World ID in Oct 2026; whether a lower (non-Orb) verification level is enough is unknown. ORO trades on a decentralized exchange (DEX) with little liquidity, and as of Oct 2026 one ORO is worth well under a cent. No company details for the operator were found"
       },
       "zh": {
         "gain": "每天领取 ORO 代币",
         "note": "在 World App 内运行的小程序。号称“每个人类每天都能领取的代币”，每天可领取一次 World Chain 上的 ORO，邀请朋友还能多得 ORO。开发者为 Grupo de Fiesta，用户约 390 万（2026 年 10 月 World 的介绍页）",
-        "need": "安装 World App，用 World ID 证明你是真人，然后打开 ORO 小程序每天领取",
-        "caution": "官方页面没有写明每天能领多少（2025 年 9 月 World Chain 的公告为每天 1 ORO，之后有减少的报告）。所需的验证等级（Orb 等）以及在日本能否使用尚未确认。ORO 在去中心化交易所（DEX）交易，但流动性很小，截至 2026 年 10 月 1 ORO 远不到 1 美分。未找到运营方的公司信息"
+        "need": "安装 World App，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后打开 ORO 小程序每天领取",
+        "caution": "官方页面没有写明每天能领多少（2025 年 9 月 World Chain 的公告为每天 1 ORO，之后有减少的报告）。2026 年 10 月已确认，使用经 Orb 验证的 World ID 账户可在日本使用；低于 Orb 的验证等级是否足够尚不清楚。ORO 在去中心化交易所（DEX）交易，但流动性很小，截至 2026 年 10 月 1 ORO 远不到 1 美分。未找到运营方的公司信息"
       },
       "hi": {
         "gain": "हर दिन ORO टोकन",
         "note": "World App के अंदर चलने वाला एक मिनी ऐप। “हर इंसान रोज़ क्लेम कर सकने वाला टोकन” के रूप में, इसमें World Chain पर ORO दिन में एक बार क्लेम किया जा सकता है, और दोस्तों को बुलाकर ज़्यादा ORO कमाया जा सकता है। डेवलपर Grupo de Fiesta है, और लगभग 39 लाख यूज़र हैं (World का लिस्टिंग पेज, अक्टूबर 2026)",
-        "need": "World App इंस्टॉल करें, World ID से साबित करें कि आप इंसान हैं, फिर ORO मिनी ऐप खोलकर रोज़ क्लेम करें",
-        "caution": "रोज़ की रकम आधिकारिक पेजों पर नहीं लिखी है (सितंबर 2025 में World Chain की घोषणा में रोज़ 1 ORO बताया गया था; बाद की रिपोर्टों के अनुसार यह घटाया गया)। ज़रूरी वेरिफ़िकेशन लेवल (Orb आदि) और जापान में उपलब्धता की पुष्टि नहीं हुई है। ORO एक डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर ट्रेड होता है, पर लिक्विडिटी बहुत कम है, और अक्टूबर 2026 में 1 ORO की कीमत एक सेंट से भी काफ़ी कम है। ऑपरेटर की कंपनी की जानकारी नहीं मिली"
+        "need": "World App इंस्टॉल करें, World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि), फिर ORO मिनी ऐप खोलकर रोज़ क्लेम करें",
+        "caution": "रोज़ की रकम आधिकारिक पेजों पर नहीं लिखी है (सितंबर 2025 में World Chain की घोषणा में रोज़ 1 ORO बताया गया था; बाद की रिपोर्टों के अनुसार यह घटाया गया)। अक्टूबर 2026 में पुष्टि हुई कि Orb से वेरिफ़ाई की गई World ID वाले अकाउंट से यह जापान में चलता है; Orb से कम वेरिफ़िकेशन लेवल काफ़ी है या नहीं, यह पता नहीं। ORO एक डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर ट्रेड होता है, पर लिक्विडिटी बहुत कम है, और अक्टूबर 2026 में 1 ORO की कीमत एक सेंट से भी काफ़ी कम है। ऑपरेटर की कंपनी की जानकारी नहीं मिली"
       },
       "es": {
         "gain": "Tokens ORO cada día",
         "note": "Una mini app dentro de World App. Presentada como «un token que todo humano puede reclamar a diario», permite reclamar ORO en World Chain una vez al día, y puedes invitar a amigos para ganar más. La desarrolla Grupo de Fiesta y tiene unos 3,9 millones de usuarios (página de World, octubre de 2026)",
-        "need": "Instala World App, demuestra que eres humano con World ID y abre la mini app ORO para reclamar cada día",
-        "caution": "La cantidad diaria no figura en las páginas oficiales (un anuncio de World Chain de septiembre de 2025 hablaba de 1 ORO al día; después se informó de una reducción). No están confirmados el nivel de verificación necesario (Orb, etc.) ni si funciona en Japón. ORO se negocia en un exchange descentralizado (DEX) con poca liquidez, y a octubre de 2026 un ORO vale mucho menos de un céntimo. No se encontraron datos de la empresa que lo gestiona"
+        "need": "Instala World App, demuestra que eres humano con World ID (confirmado desde Japón con verificación Orb) y abre la mini app ORO para reclamar cada día",
+        "caution": "La cantidad diaria no figura en las páginas oficiales (un anuncio de World Chain de septiembre de 2025 hablaba de 1 ORO al día; después se informó de una reducción). En octubre de 2026 se confirmó que funciona desde Japón con un World ID verificado por Orb; no se sabe si basta un nivel de verificación inferior (sin Orb). ORO se negocia en un exchange descentralizado (DEX) con poca liquidez, y a octubre de 2026 un ORO vale mucho menos de un céntimo. No se encontraron datos de la empresa que lo gestiona"
       },
       "ar": {
         "gain": "رموز ⁦ORO⁩ كل يوم",
         "note": "تطبيق مصغّر داخل ⁦World App⁩. يُقدَّم على أنه «رمز يستطيع كل إنسان المطالبة به يوميًا»، فتطالب بـ⁦ORO⁩ على ⁦World Chain⁩ مرة في اليوم، ويمكنك دعوة الأصدقاء لكسب المزيد. المطوّر ⁦Grupo de Fiesta⁩، وعدد المستخدمين نحو 3.9 مليون (صفحة ⁦World⁩، أكتوبر 2026)",
-        "need": "ثبّت ⁦World App⁩ وأثبت أنك إنسان عبر ⁦World ID⁩، ثم افتح تطبيق ⁦ORO⁩ المصغّر وطالب كل يوم",
-        "caution": "لا تذكر الصفحات الرسمية المقدار اليومي (إعلان ⁦World Chain⁩ في سبتمبر 2025 ذكر ⁦1 ORO⁩ يوميًا، وتشير تقارير لاحقة إلى تخفيضه). لم يتأكد مستوى التحقق المطلوب (⁦Orb⁩ وغيره) ولا توفره في اليابان. يُتداول ⁦ORO⁩ في منصة تداول لامركزية (⁦DEX⁩) بسيولة ضئيلة، وفي أكتوبر 2026 كانت قيمة ⁦1 ORO⁩ أقل بكثير من سنت واحد. لم نعثر على معلومات عن الشركة المشغّلة"
+        "need": "ثبّت ⁦World App⁩ وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)، ثم افتح تطبيق ⁦ORO⁩ المصغّر وطالب كل يوم",
+        "caution": "لا تذكر الصفحات الرسمية المقدار اليومي (إعلان ⁦World Chain⁩ في سبتمبر 2025 ذكر ⁦1 ORO⁩ يوميًا، وتشير تقارير لاحقة إلى تخفيضه). تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب ⁦World ID⁩ موثَّق عبر ⁦Orb⁩، ولا يُعرف إن كان مستوى تحقق أدنى (دون ⁦Orb⁩) كافيًا. يُتداول ⁦ORO⁩ في منصة تداول لامركزية (⁦DEX⁩) بسيولة ضئيلة، وفي أكتوبر 2026 كانت قيمة ⁦1 ORO⁩ أقل بكثير من سنت واحد. لم نعثر على معلومات عن الشركة المشغّلة"
       }
     }
   ],
