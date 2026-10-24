@@ -9,6 +9,7 @@ module.exports = {
     "zh",
     "hi",
     "es",
+    "de",
     "ar"
   ],
   "DEFAULT_LANG": "en",
@@ -57,6 +58,12 @@ module.exports = {
         "note": "Protocolo UBI sin ánimo de lucro. Reclama una vez cada 24 horas; el fondo de cada día se reparte entre todos los que reclaman",
         "need": "Verificación facial en la app",
         "caution": "Un incidente de seguridad en mayo de 2026 dejó su reserva en revisión. La cantidad diaria es muy pequeña"
+      },
+      "de": {
+        "gain": "Jeden Tag G$-Token",
+        "note": "Ein gemeinnütziges Grundeinkommens-Protokoll. Einmal alle 24 Stunden abholen; der Topf des Tages wird auf alle aufgeteilt, die abholen",
+        "need": "Gesichtsverifizierung in der App",
+        "caution": "Nach einem Sicherheitsvorfall im Mai 2026 wird die Reserve überprüft. Der Tagesbetrag ist sehr klein"
       },
       "ar": {
         "gain": "رموز ⁦G$⁩ كل يوم",
@@ -113,6 +120,12 @@ module.exports = {
         "need": "Regístrate en la Gnosis App y consigue una invitación de un miembro de Circles. Quien invita paga 96 CRC y la persona invitada recibe 48 CRC de bienvenida",
         "caution": "No puedes empezar sin un miembro que te invite. No están confirmados el precio de mercado del CRC ni cómo convertirlo en dinero. Gnosis ha anunciado que separará la Gnosis App de Gnosis Ltd en una empresa independiente, así que los detalles pueden cambiar"
       },
+      "de": {
+        "gain": "1 CRC pro Stunde (24 pro Tag)",
+        "note": "Ein Projekt von Gnosis, bei dem jede Person ihre eigene Währung ausgibt. Circles 2.0 startete im Mai 2025, und im Juni 2026 wurde die Gnosis App rund um Circles neu gebaut. Diese Seite hat noch keinen Empfehlungslink dafür",
+        "need": "In der Gnosis App anmelden und von einem bestehenden Circles-Mitglied eingeladen werden. Wer einlädt, zahlt 96 CRC, und Neue bekommen 48 CRC als Willkommensbonus",
+        "caution": "Ohne ein Mitglied, das dich einlädt, kannst du nicht starten. Marktkurs von CRC und Auszahlungswege sind nicht bestätigt. Gnosis hat angekündigt, die Gnosis App aus der Gnosis Ltd in ein eigenes Unternehmen auszugliedern, daher kann sich einiges ändern"
+      },
       "ar": {
         "gain": "⁦1 CRC⁩ كل ساعة (⁦24 CRC⁩ يوميًا)",
         "note": "مشروع من ⁦Gnosis⁩ يُصدر فيه كل شخص عملته الخاصة. أُطلق ⁦Circles 2.0⁩ في مايو 2025، وفي يونيو 2026 أُعيد بناء ⁦Gnosis App⁩ حول ⁦Circles⁩. لا يوجد لدى هذا الموقع رابط إحالة له بعد",
@@ -165,6 +178,12 @@ module.exports = {
         "need": "Regístrate con el enlace de invitación y completa el KYC en la app",
         "caution": "A octubre de 2026, MEC no cotiza en ningún exchange y no tiene precio de mercado. Solo se puede cobrar entre particulares (P2P)"
       },
+      "de": {
+        "gain": "Jeden Tag MEC-Token",
+        "note": "Die Wallet-App von Meta Earth. Verifizierte Nutzer bekommen 1 MEC als „bedingungsloses Grundeinkommen“ und dazu kleine Belohnungen für den täglichen Check-in",
+        "need": "Über den Einladungslink anmelden und in der App die KYC-Prüfung abschließen",
+        "caution": "Stand Oktober 2026 ist MEC an keiner Börse gelistet und hat keinen Marktkurs. Auszahlung nur von Person zu Person"
+      },
       "ar": {
         "gain": "رموز MEC كل يوم",
         "note": "تطبيق محفظة من Meta Earth. يحصل المستخدمون الموثَّقون على 1 MEC بوصفه «دخلًا أساسيًا غير مشروط»، إضافة إلى مكافآت صغيرة لتسجيل الحضور يوميًا",
@@ -216,6 +235,12 @@ module.exports = {
         "note": "Token UBI que promete pagos mensuales durante 60 años. Registrarte con un código de referido da 5 tokens extra (a enero de 2026). Quien se registra antes recibe más",
         "need": "Verifícate con biometría en la app y reclama cada mes",
         "caution": "No pudimos confirmar un precio de mercado para PoY. Úsala solo si estás de acuerdo con cómo trata los datos biométricos"
+      },
+      "de": {
+        "gain": "Jeden Monat PoY-Token",
+        "note": "Ein Grundeinkommens-Token, der 60 Jahre lang monatliche Auszahlungen verspricht. Mit Empfehlungscode gibt es 5 Token als Bonus (Stand Januar 2026). Wer früher dabei ist, bekommt größere Zuteilungen",
+        "need": "In der App biometrisch verifizieren und dann jeden Monat abholen",
+        "caution": "Einen Marktkurs für PoY konnten wir nicht bestätigen. Überleg dir, ob du mit dem Umgang mit deinen biometrischen Daten einverstanden bist"
       },
       "ar": {
         "gain": "رموز PoY كل شهر",
@@ -364,6 +389,12 @@ module.exports = {
         "need": "Únete con referido antes del 31 de octubre y cumple las condiciones antes del 30 de noviembre",
         "caution": ""
       },
+      "de": {
+        "gain": "Bis zu 2.300 Punkte",
+        "note": "Aktion im Oktober 2026 (1 Punkt = 1 Yen). 100 für 3 Tage Login in Folge, 1.000, sobald du über Angebote 3.000 verdienst, und mehr",
+        "need": "Bis 31. Oktober über Empfehlung beitreten und die Bedingungen bis 30. November erfüllen",
+        "caution": ""
+      },
       "ar": {
         "gain": "حتى 2,300 نقطة",
         "note": "عرض أكتوبر 2026 (النقطة = 1 ين). 100 نقطة لتسجيل الدخول 3 أيام متتالية، و1,000 عند جمع 3,000 نقطة من العروض، وغير ذلك",
@@ -464,6 +495,12 @@ module.exports = {
         "need": "Regístrate con el enlace de invitación",
         "caution": "Solo ganas cuando se concreta un empleo. Los porcentajes son de la nota oficial de junio de 2024"
       },
+      "de": {
+        "gain": "Eine Vermittlungsprämie bei jeder Jobvermittlung",
+        "note": "Jobvermittlung nur auf Einladung. Jedes Mal, wenn jemand, den du eingeladen hast (oder den diese Person eingeladen hat), einen Job bekommt, erhältst du immer wieder einen Empfehlungsanteil (7,5–15 %). DMM, GMO Pepabo und andere schreiben Jobs aus",
+        "need": "Über den Einladungslink anmelden",
+        "caution": "Du verdienst, wenn ein Job vermittelt wird. Die Sätze stammen aus der offiziellen Mitteilung vom Juni 2024"
+      },
       "ar": {
         "gain": "مكافأة في كل مرة تحصل فيها على وظيفة",
         "note": "منصة توظيف بالدعوة فقط. في كل مرة يحصل فيها شخص دعوته (أو شخص دعاه) على وظيفة، تحصل على حصة إحالة مرارًا وتكرارًا (7.5–15%). تنشر فيها شركات مثل DMM وGMO Pepabo وظائفها",
@@ -519,6 +556,12 @@ module.exports = {
         "need": "Instala la app e introduce el código de invitación 49‑icnRep al registrarte",
         "caution": "El importe y el momento del bono pueden cambiar. Requiere permitir la ubicación siempre y gasta algo más de batería"
       },
+      "de": {
+        "gain": "5.000 Meilen + Meilen fürs Unterwegssein und Gehen",
+        "note": "Eine App, die Meilen gibt, nur weil du dein Handy beim Unterwegssein und Gehen dabeihast. Mit einem Einladungscode bekommen du und die einladende Person je 5.000 Meilen (Stand Juli 2026). Meilen lassen sich gegen Geschenkkarten, Bargeld und mehr tauschen",
+        "need": "App installieren und bei der Registrierung den Einladungscode 49‑icnRep eingeben",
+        "caution": "Bonushöhe und Zeitpunkt können sich ändern. Die App braucht dauerhaften Standortzugriff und verbraucht etwas mehr Akku"
+      },
       "ar": {
         "gain": "5,000 ميل + أميال مقابل التنقل والمشي",
         "note": "تطبيق تجمع فيه الأميال بمجرد حمل هاتفك أثناء التنقل أو المشي. عند إدخال رمز الدعوة يحصل كلٌّ من الداعي والمستخدم الجديد على 5,000 ميل (معلومات يوليو 2026). يمكن استبدال الأميال ببطاقات هدايا أو نقود وغيرها",
@@ -571,6 +614,12 @@ module.exports = {
         "note": "Lleva el móvil encima y tus pasos se convierten en monedas automáticamente. Úsalas en la tienda de la app en productos, descuentos o donaciones",
         "need": "Instala la app y permite el acceso a pasos y ubicación",
         "caution": "No hay un tipo de cambio fijo a dinero. El plan gratuito limita cuántos pasos se convierten al día"
+      },
+      "de": {
+        "gain": "0,95 Coins pro 1.000 Schritte",
+        "note": "Trag dein Handy bei dir, und deine Schritte werden automatisch zu Coins. Gib sie im Marktplatz der App für Produkte, Rabatte oder Spenden aus",
+        "need": "App installieren und Zugriff auf Schritte und Standort erlauben",
+        "caution": "Es gibt keinen festen Umrechnungskurs in Geld. Im kostenlosen Tarif ist begrenzt, wie viele Schritte pro Tag umgewandelt werden"
       },
       "ar": {
         "gain": "0.95 عملة لكل 1,000 خطوة",
@@ -625,6 +674,12 @@ module.exports = {
         "need": "Regístrate con tu email, instala la extensión o la app y mantente conectado",
         "caution": "Otros usan tu dirección IP para recopilar datos. Las recompensas dependen de airdrops, así que el importe y el momento son impredecibles"
       },
+      "de": {
+        "gain": "Punkte (später GRASS-Token)",
+        "note": "Ein DePIN, das deine ungenutzte Bandbreite für KI-Web-Scraping vermietet. Lass die Browser-Erweiterung oder App laufen und sammle Punkte für Laufzeit und tatsächlich genutzte Bandbreite, ausgezahlt über saisonale Airdrops",
+        "need": "Mit E-Mail anmelden, Erweiterung oder App installieren und verbunden bleiben",
+        "caution": "Deine IP-Adresse wird von anderen zur Datensammlung genutzt. Die Belohnungen hängen von Airdrops ab, Höhe und Zeitpunkt sind also nicht vorhersehbar"
+      },
       "ar": {
         "gain": "نقاط (ثم رموز GRASS لاحقًا)",
         "note": "شبكة DePIN تؤجّر عرض النطاق غير المستخدم لديك لجمع بيانات الويب للذكاء الاصطناعي. أبقِ الإضافة أو التطبيق قيد التشغيل لتجمع نقاطًا حسب مدة الاتصال وعرض النطاق المستخدم فعلًا، وتُوزَّع عبر إسقاطات جوية موسمية",
@@ -677,6 +732,12 @@ module.exports = {
         "note": "La app de compartir ancho de banda más conocida: alquila tu conexión sin usar a empresas para recopilar datos web. Registrarte con un referido da un bono de bienvenida de $3 (según su blog oficial). Cobra por PayPal y otros al llegar a $20",
         "need": "Regístrate con tu email, instala la app en tu PC o móvil y déjala funcionando",
         "caution": "Otros usan tu dirección IP para recopilar datos. Lo que ganas depende de la demanda en tu región y puede ser muy poco en algunas zonas"
+      },
+      "de": {
+        "gain": "Geld für den geteilten Datenverkehr",
+        "note": "Die bekannteste App zum Teilen von Bandbreite: Sie vermietet deine ungenutzte Verbindung an Unternehmen zur Web-Datensammlung. Bei Anmeldung über eine Empfehlung gibt es 3 $ Willkommensbonus (laut offiziellem Blog). Auszahlung per PayPal und mehr ab 20 $",
+        "need": "Mit E-Mail anmelden, App auf PC oder Handy installieren und laufen lassen",
+        "caution": "Deine IP-Adresse wird von anderen zur Datensammlung genutzt. Die Einnahmen hängen von der Nachfrage in deiner Region ab und können mancherorts sehr gering sein"
       },
       "ar": {
         "gain": "نقود مقابل حركة البيانات التي تشاركها",
@@ -731,6 +792,12 @@ module.exports = {
         "need": "Regístrate con tu email, instala la app de escritorio y déjala funcionando",
         "caution": "Compartir ancho de banda en el móvil terminó en abril de 2026, así que lo pasivo solo funciona en PC. Otros usan tu dirección IP para recopilar datos, y se gana poco"
       },
+      "de": {
+        "gain": "Geld für den geteilten Datenverkehr",
+        "note": "Die Bandbreiten-App von IPRoyal. Lass die Desktop-App laufen, und deine freie Verbindung bringt Geld. Umfragen und Spiele zahlen ebenfalls. Auszahlung ab 5 $ per PayPal, Bitcoin und mehr",
+        "need": "Mit E-Mail anmelden, Desktop-App installieren und laufen lassen",
+        "caution": "Das Teilen mobiler Bandbreite wurde im April 2026 eingestellt, passives Verdienen geht also nur noch am Desktop. Deine IP-Adresse wird von anderen zur Datensammlung genutzt, und die Auszahlungen sind klein"
+      },
       "ar": {
         "gain": "نقود مقابل حركة البيانات التي تشاركها",
         "note": "تطبيق مشاركة عرض النطاق من IPRoyal. اترك تطبيق الحاسوب يعمل ليكسب اتصالك غير المستخدم مالًا. الاستبيانات والألعاب تدفع أيضًا. اسحب أرباحك من ⁦$5⁩ عبر PayPal وبيتكوين وغيرها",
@@ -783,6 +850,12 @@ module.exports = {
         "note": "Pulsa un botón en la app una vez cada 24 horas para acumular PI. Cuantas más personas invites, más rápido minas. Se abrió al público en febrero de 2025 y cotiza en OKX, Bitget, MEXC y otros",
         "need": "Regístrate con el enlace de invitación (código de invitación: eltociear). Para mover tus PI necesitas verificar tu identidad y migrar a la billetera de la mainnet",
         "caution": "El precio ha caído cerca de un 97% desde su máximo de $2.99 en 2025 (unos $0.08 en octubre de 2026). No está en Binance, Coinbase ni en exchanges japoneses. Hay que pulsar a diario; si lo dejas, no se acumula"
+      },
+      "de": {
+        "gain": "Jeden Tag PI",
+        "note": "Tippe einmal alle 24 Stunden in der App auf einen Button, um PI zu verdienen. Je mehr Leute du wirbst, desto schneller minst du. Seit Februar 2025 öffentlich und an OKX, Bitget, MEXC und anderen Börsen handelbar",
+        "need": "Über den Einladungslink anmelden (Einladungscode: eltociear). Um deine PI zu bewegen, brauchst du eine Identitätsprüfung und die Migration in die Mainnet-Wallet",
+        "caution": "Der Kurs liegt rund 97 % unter dem Hoch von 2,99 $ aus dem Jahr 2025 (etwa 0,08 $ im Oktober 2026). Nicht bei Binance, Coinbase oder japanischen Börsen gelistet. Braucht ein tägliches Tippen, ohne das sich nichts ansammelt"
       },
       "ar": {
         "gain": "عملة PI كل يوم",
@@ -837,6 +910,12 @@ module.exports = {
         "need": "Regístrate con el enlace de invitación y pulsa el botón de minado en la app cada día",
         "caution": "En octubre de 2026 no se ha podido confirmar que cotice en ningún exchange ni que tenga precio de mercado, así que no está claro si se puede convertir en dinero. Algunos usuarios dicen que su saldo dejó de crecer aunque sigan minando. Requiere acción diaria"
       },
+      "de": {
+        "gain": "Jeden Tag KIM",
+        "note": "Eine Krypto-App ähnlich wie Pi Network, bei der du täglich auf dem Handy „minst“. Eine Anmeldung mit Empfehlungscode soll deine Mining-Rate erhöhen",
+        "need": "Über den Einladungslink anmelden und jeden Tag in der App auf den Mining-Button tippen",
+        "caution": "Stand Oktober 2026 ließen sich weder Börsennotierung noch Marktkurs bestätigen, daher ist unklar, ob KIM ausgezahlt werden kann. Manche Nutzer berichten, dass ihr Guthaben trotz Mining nicht mehr wuchs. Braucht tägliche Aktion"
+      },
       "ar": {
         "gain": "عملة KIM كل يوم",
         "note": "تطبيق عملات مشفرة يشبه Pi Network، «تعدّن» فيه يوميًا من هاتفك. يُقال إن التسجيل برمز إحالة يرفع سرعة التعدين",
@@ -890,6 +969,12 @@ module.exports = {
         "need": "Regístrate con el enlace de invitación y completa la verificación facial en la app",
         "caution": "En mayo de 2026, ITLG no cotiza en ningún exchange y no tiene precio de mercado. Requiere check-ins frecuentes. Úsalo solo si estás conforme con cómo se tratan tus datos biométricos faciales"
       },
+      "de": {
+        "gain": "Jeden Tag ITLG-Token",
+        "note": "Ein Projekt, das ITLG-Token an Menschen verteilt, die per Gesichtsverifizierung bestätigt haben, dass sie echte Menschen sind (Human Nodes). Etwa alle 4 Stunden (bis zu 6-mal am Tag) in der App einchecken, um zu verdienen",
+        "need": "Über den Einladungslink anmelden und in der App die Gesichtsverifizierung abschließen",
+        "caution": "Stand Mai 2026 ist ITLG an keiner Börse gelistet und hat keinen Marktkurs. Erfordert häufiges Einchecken. Nutz es nur, wenn du mit dem Umgang mit deinen biometrischen Gesichtsdaten einverstanden bist"
+      },
       "ar": {
         "gain": "رموز ITLG كل يوم",
         "note": "مشروع يوزّع رموز ITLG على من تحقّقوا من أنهم بشر حقيقيون عبر التحقق بالوجه (⁦Human Node⁩). سجّل حضورك في التطبيق كل 4 ساعات تقريبًا (حتى 6 مرات يوميًا) لتجميعها",
@@ -942,6 +1027,12 @@ module.exports = {
         "note": "Un sorteo gratuito organizado por una asociación sin ánimo de lucro de Berlín y financiado con donaciones de crowdfunding. Hay sorteos periódicos y cada ganador recibe 1.000 € al mes durante 12 meses, sin condiciones (dinero real, no cripto)",
         "need": "Regístrate con tu email y confirma tu participación en cada sorteo. Debes tener 16 años o más, y si ganas, tu nombre y fecha de nacimiento deben coincidir con tu documento de identidad",
         "caution": "En 2020 la organización dijo que cualquiera puede participar sin importar la edad ni el lugar de residencia, pero no están confirmadas las reglas actuales para quienes viven fuera de Alemania ni los pagos al extranjero. La web está en alemán. Es un sorteo, así que la mayoría no recibe nada. Las ganancias pueden tributar en tu país"
+      },
+      "de": {
+        "gain": "1.000 € im Monat ein Jahr lang, wenn du gewinnst",
+        "note": "Eine kostenlose Verlosung eines gemeinnützigen Vereins in Berlin, finanziert durch Crowdfunding-Spenden. Es wird regelmäßig verlost, und jede Gewinnerin und jeder Gewinner bekommt 12 Monate lang 1.000 € im Monat, bedingungslos (echtes Geld, keine Kryptowährung)",
+        "need": "Mit E-Mail registrieren und die Teilnahme an jeder Verlosung bestätigen. Du musst mindestens 16 sein, und im Gewinnfall müssen Name und Geburtsdatum zu deinem Ausweis passen",
+        "caution": "Der Verein erklärte 2020, dass alle unabhängig von Alter und Wohnort teilnehmen können, die aktuellen Regeln für Menschen außerhalb Deutschlands und Auszahlungen ins Ausland sind aber nicht bestätigt. Die Seite ist auf Deutsch. Es ist eine Verlosung, die meisten gehen also leer aus. Gewinne können in deinem Land steuerpflichtig sein"
       },
       "ar": {
         "gain": "⁦€1,000⁩ شهريًا لمدة سنة إن فزت",
@@ -998,6 +1089,12 @@ module.exports = {
         "need": "Crea un monedero y consigue la certificación de al menos 5 miembros a través de la Red de Confianza (Web of Trust). Se espera que quienes te certifican te conozcan en persona",
         "caution": "La comunidad es sobre todo francófona y se basa en el trato en persona, así que unirse desde fuera (por ejemplo, desde Japón) es muy difícil. Sin ser miembro puedes tener Ğ1 en un monedero, pero no recibes el dividendo diario. La Ğ1 se usa sobre todo para intercambiar bienes y servicios, y cambiarla por dinero normal solo es posible entre particulares"
       },
+      "de": {
+        "gain": "Jeden Tag Ğ1, sobald du Mitglied bist (Universelle Dividende)",
+        "note": "Eine freie Währung auf Grundlage der Relativen Geldtheorie. Sie läuft mit der Open-Source-Software Duniter, und jedes Mitglied erhält jeden Tag neu geschöpfte Ğ1 als „Universelle Dividende“. Gestartet im März 2017, im März 2026 auf Duniter v2 umgezogen. Es gibt keinen Empfehlungslink und keinen Empfehlungsbonus",
+        "need": "Eine Wallet anlegen und dich über das Vertrauensnetz (Web of Trust) von mindestens 5 bestehenden Mitgliedern zertifizieren lassen. Wer zertifiziert, sollte dich persönlich kennen",
+        "caution": "Die Gemeinschaft ist überwiegend französischsprachig und beruht auf persönlichen Kontakten, daher ist der Einstieg von außerhalb (z. B. aus Japan) sehr schwer. Auch Nicht-Mitglieder können Ğ1 in einer Wallet halten, bekommen aber keine tägliche Dividende. Ğ1 wird vor allem gegen Waren und Dienstleistungen getauscht, ein Tausch in normales Geld geht nur von Person zu Person"
+      },
       "ar": {
         "gain": "⁦Ğ1⁩ كل يوم بعد أن تصبح عضوًا (العائد الشامل)",
         "note": "عملة حرة قائمة على «النظرية النسبية للنقود». تعمل ببرنامج ⁦Duniter⁩ مفتوح المصدر، ويحصل كل عضو يوميًا على ⁦Ğ1⁩ جديدة بوصفها «عائدًا شاملًا». بدأت في مارس 2017 وانتقلت إلى ⁦Duniter v2⁩ في مارس 2026. لا يوجد رابط إحالة ولا مكافأة إحالة",
@@ -1050,6 +1147,12 @@ module.exports = {
         "note": "Una moneda propia que da a todo el mundo una renta básica diaria solo por ser humano. No hay que instalar nada ni pagar dinero. Los saldos sin usar se «evaporan» poco a poco (2,000 % al año a octubre de 2026) y esa cantidad se reparte de nuevo como renta básica. Si invitas a un amigo, recibes un día extra de renta básica",
         "need": "Regístrate con el enlace de referido y certifícate añadiendo un número de móvil (no hace falta documento de identidad). La renta se reclama a mano; los días no reclamados en 10 días se pierden",
         "caution": "A octubre de 2026 no hay forma de cambiar Palai por euros u otro dinero ni tipo de cambio oficial; solo se puede intercambiar por bienes y servicios con quien acepte Palai. La web no dice quién lo gestiona, solo que cuenta con el «apoyo de Social Impact Lab Leipzig»"
+      },
+      "de": {
+        "gain": "Jeden Tag Grundeinkommen in Palai (¶)",
+        "note": "Eine eigene Währung, die allen ein tägliches Grundeinkommen zahlt, einfach weil sie Menschen sind. Keine Installation, kein Geld einzuzahlen. Ungenutzte Guthaben „verdunsten“ langsam (2,000 % pro Jahr, Stand Oktober 2026), und dieser Betrag wird als Grundeinkommen neu verteilt. Wenn du eine Freundin oder einen Freund einlädst, bekommst du einen zusätzlichen Tag Grundeinkommen",
+        "need": "Über den Empfehlungslink anmelden und dich mit einer Handynummer zertifizieren (kein Ausweis nötig). Dein Einkommen holst du selbst ab; Tage, die du nicht innerhalb von 10 Tagen abholst, verfallen",
+        "caution": "Stand Oktober 2026 gibt es keine Möglichkeit, Palai in Euro oder anderes Geld zu tauschen, und keinen offiziellen Wechselkurs; tauschen kannst du nur gegen Waren und Dienstleistungen mit Menschen, die Palai annehmen. Die Seite nennt keinen Betreiber, sondern nur, dass es „vom Social Impact Lab Leipzig unterstützt“ wird"
       },
       "ar": {
         "gain": "دخل أساسي بعملة ⁦Palai (¶)⁩ كل يوم",
@@ -1104,6 +1207,12 @@ module.exports = {
         "note": "Un fondo de «renta básica universal global» en Cardano. El rendimiento por staking del ADA aportado por los benefactores hace crecer el fondo, y sus ganancias se pagan cada mes en ADA. Los beneficiarios de 2027 reciben 10 ADA al mes durante 12 meses (la cantidad puede crecer con el fondo). No hay prueba de ingresos. Lo gestiona Dotare, LLC, en EE. UU. No hay enlace ni bono de referido",
         "need": "Ser mayor de 18 años. Regístrate en la web oficial y solicita cada año en que quieras participar. Cuando te toque, pasa una breve verificación de identidad (para comprobar que eres humano) y crea un monedero de Cardano para recibir los pagos",
         "caution": "Para el ciclo 2027, las solicitudes cerraron el 31 de agosto de 2026 y la inscripción cierra el 30 de noviembre de 2026; no está confirmado desde cuándo cobraría quien se registre ahora. Se paga por orden de fila, y a 24 de octubre de 2026 la web mostraba 147 ciudadanos y 2 beneficiarios. El precio del ADA sube y baja mucho"
+      },
+      "de": {
+        "gain": "10 ADA im Monat ein Jahr lang, wenn du ausgewählt wirst (Zyklus 2027)",
+        "note": "Ein „globaler Grundeinkommens“-Stiftungsfonds auf Cardano. Staking-Erträge auf ADA, die Förderer zusagen, lassen den Fonds wachsen, und seine Erträge werden monatlich in ADA ausgezahlt. Empfänger 2027 bekommen 12 Monate lang 10 ADA im Monat (der Betrag kann mit dem Fonds wachsen). Es gibt keine Bedürftigkeitsprüfung. Betrieben von Dotare, LLC in den USA. Es gibt keinen Empfehlungslink und keinen Empfehlungsbonus",
+        "need": "Mindestens 18 Jahre alt sein. Auf der offiziellen Seite anmelden und dich für jedes Jahr bewerben, in dem du teilnehmen willst. Wenn du an der Reihe bist, eine kurze Identitätsprüfung bestehen (um zu zeigen, dass du ein Mensch bist) und eine Cardano-Wallet für die Auszahlungen einrichten",
+        "caution": "Für den Zyklus 2027 endete die Bewerbung am 31. August 2026, die Einschreibung endet am 30. November 2026; ab wann jemand, der sich jetzt anmeldet, etwas bekommt, ist nicht bestätigt. Ausgezahlt wird in der Reihenfolge der Warteschlange, und am 24. Oktober 2026 zeigte die Seite 147 Bürger und 2 Empfänger. Der ADA-Kurs schwankt stark"
       },
       "ar": {
         "gain": "⁦10 ADA⁩ شهريًا لمدة سنة إن اختِرت (دورة 2027)",
@@ -1160,6 +1269,12 @@ module.exports = {
         "need": "Instala World App, demuestra que eres humano con World ID (confirmado desde Japón con verificación Orb) y abre la mini app ORO para reclamar cada día",
         "caution": "La cantidad diaria no figura en las páginas oficiales (un anuncio de World Chain de septiembre de 2025 hablaba de 1 ORO al día; después se informó de una reducción). En octubre de 2026 se confirmó que funciona desde Japón con un World ID verificado por Orb; no se sabe si basta un nivel de verificación inferior (sin Orb). ORO se negocia en un exchange descentralizado (DEX) con poca liquidez, y a octubre de 2026 un ORO vale mucho menos de un céntimo. No se encontraron datos de la empresa que lo gestiona"
       },
+      "de": {
+        "gain": "Jeden Tag ORO-Token",
+        "note": "Eine Mini-App in der World App. Als „ein Token, den jeder Mensch täglich abholen kann“ beworben, lässt sie dich einmal am Tag ORO auf World Chain abholen. Der Eintrag bei World erwähnt, dass man durch Einladen von Freunden mehr verdient, aber in der App wurde Stand Oktober 2026 kein Einladungslink gefunden. Entwickelt von Grupo de Fiesta, mit rund 3,9 Millionen Nutzern (Eintrag bei World, Oktober 2026)",
+        "need": "World App installieren, mit World ID beweisen, dass du ein Mensch bist (aus Japan mit Orb-Verifizierung bestätigt), dann die ORO-Mini-App öffnen und jeden Tag abholen",
+        "caution": "Der Tagesbetrag steht nicht auf den offiziellen Seiten (eine Ankündigung von World Chain im September 2025 nannte 1 ORO pro Tag; spätere Berichte sprechen von einer Kürzung). Im Oktober 2026 wurde bestätigt, dass es aus Japan mit einer per Orb verifizierten World ID funktioniert; ob eine niedrigere Stufe (ohne Orb) reicht, ist unbekannt. ORO wird an einer dezentralen Börse (DEX) mit wenig Liquidität gehandelt, und Stand Oktober 2026 ist ein ORO deutlich weniger als einen Cent wert. Zur Betreiberfirma wurden keine Angaben gefunden"
+      },
       "ar": {
         "gain": "رموز ⁦ORO⁩ كل يوم",
         "note": "تطبيق مصغّر داخل ⁦World App⁩. يُقدَّم على أنه «رمز يستطيع كل إنسان المطالبة به يوميًا»، فتطالب بـ⁦ORO⁩ على ⁦World Chain⁩ مرة في اليوم. تذكر صفحة ⁦World⁩ دعوة الأصدقاء لكسب المزيد، لكن لم نجد رابط دعوة داخل التطبيق حتى أكتوبر 2026. المطوّر ⁦Grupo de Fiesta⁩، وعدد المستخدمين نحو 3.9 مليون (صفحة ⁦World⁩، أكتوبر 2026)",
@@ -1213,6 +1328,12 @@ module.exports = {
         "note": "Una mini app dentro de World App. Reclama AXO (AXOLOCOIN), un token de World Chain, una vez al día con un toque. «Premium», por 1 WLD al mes, triplica lo que reclamas cada día. También tiene un sistema de referidos. Figura David Mateos como fundador. Unos 300.000 usuarios (página de World, octubre de 2026)",
         "need": "Abre la mini app en World App con el enlace de referido (código 932BDA), demuestra que eres humano con World ID (confirmado desde Japón con verificación Orb) y reclama cada día",
         "caution": "La cantidad diaria y en qué consiste la recompensa por referido no se indican oficialmente. En octubre de 2026 se confirmó que funciona desde Japón con un World ID verificado por Orb; no se sabe si basta un nivel de verificación inferior (sin Orb). AXO se puede cambiar por WLD en un exchange descentralizado (DEX), pero a octubre de 2026 la liquidez es de solo unos 2.000 $ y un AXO vale una mínima fracción de céntimo. No se encontraron datos de la empresa que lo gestiona"
+      },
+      "de": {
+        "gain": "Jeden Tag AXO-Token",
+        "note": "Eine Mini-App in der World App. Hol einmal am Tag per Tippen AXO (AXOLOCOIN) ab, einen Token auf World Chain. „Premium“ für 1 WLD im Monat verdreifacht deine tägliche Menge. Es gibt auch ein Empfehlungssystem. Als Gründer wird David Mateos genannt. Rund 300.000 Nutzer (Eintrag bei World, Oktober 2026)",
+        "need": "Die Mini-App über den Empfehlungslink (Empfehlungscode 932BDA) in der World App öffnen, mit World ID beweisen, dass du ein Mensch bist (aus Japan mit Orb-Verifizierung bestätigt), und jeden Tag abholen",
+        "caution": "Tagesbetrag und Art der Empfehlungsprämie werden offiziell nicht genannt. Im Oktober 2026 wurde bestätigt, dass es aus Japan mit einer per Orb verifizierten World ID funktioniert; ob eine niedrigere Stufe (ohne Orb) reicht, ist unbekannt. AXO lässt sich an einer dezentralen Börse (DEX) gegen WLD tauschen, aber Stand Oktober 2026 liegt die Liquidität nur bei etwa 2.000 $, und ein AXO ist nur einen winzigen Bruchteil eines Cents wert. Zur Betreiberfirma wurden keine Angaben gefunden"
       },
       "ar": {
         "gain": "رموز ⁦AXO⁩ كل يوم",
@@ -1269,6 +1390,12 @@ module.exports = {
         "need": "Abre la mini app AI-DAC en World App y demuestra que eres humano con World ID (confirmado desde Japón con verificación Orb)",
         "caution": "No se indican oficialmente la cantidad, la frecuencia, las regiones ni cómo cobrar. En octubre de 2026 se confirmó que funciona desde Japón con un World ID verificado por Orb; no se sabe si basta un nivel de verificación inferior (sin Orb). DAC es un token ERC-20 en World Chain con un suministro total declarado de 100 millones, pero el contrato no tiene límite y el propietario puede acuñar y repartir más en cualquier momento, lo que puede diluir su valor. El proyecto dice que no es para invertir y que su valor no está garantizado. Hay un par DAC/WLD en un exchange descentralizado (DEX), pero a octubre de 2026 la liquidez es de solo unos 170 $. Los encargos de producción de apps se pagan aparte en USDC de World"
       },
+      "de": {
+        "gain": "Grundeinkommen in DAC-Token",
+        "note": "Eine Mini-App in der World App, die sich als „KI-gestützte Plattform für ein universelles Grundeinkommen“ bezeichnet. Wer per World ID als Mensch verifiziert ist, erhält DAC als Grundeinkommen und nutzt es, um autonome „KI-CEOs“ zu unterstützen, die Apps planen, bauen und veröffentlichen, sowie um über Releases abzustimmen und Feedback zu geben. Betrieben vom Gründer Kei Iwami. Es gibt keinen Empfehlungslink und keinen Empfehlungsbonus",
+        "need": "Die Mini-App AI-DAC in der World App öffnen und mit World ID beweisen, dass du ein Mensch bist (aus Japan mit Orb-Verifizierung bestätigt)",
+        "caution": "Betrag, Häufigkeit, Regionen und Auszahlung werden offiziell nicht genannt. Im Oktober 2026 wurde bestätigt, dass es aus Japan mit einer per Orb verifizierten World ID funktioniert; ob eine niedrigere Stufe (ohne Orb) reicht, ist unbekannt. DAC ist ein ERC-20-Token auf World Chain mit einer angegebenen Gesamtmenge von 100 Mio., aber der Vertrag hat keine Obergrenze, und der Eigentümer kann jederzeit weitere Token prägen (minten) und per Airdrop verteilen, was den Wert verwässern kann. Laut Projekt ist es nicht als Geldanlage gedacht, und der Wert ist nicht garantiert. An einer dezentralen Börse (DEX) gibt es ein DAC/WLD-Paar, aber Stand Oktober 2026 liegt die Liquidität nur bei etwa 170 $. Aufträge zur App-Produktion werden separat in World-USDC bezahlt"
+      },
       "ar": {
         "gain": "دخل أساسي بعملة ⁦DAC⁩",
         "note": "تطبيق مصغّر داخل ⁦World App⁩ يصف نفسه بأنه «منصة دخل أساسي شامل مدعومة بالذكاء الاصطناعي». يحصل من يُثبتون أنهم بشر عبر ⁦World ID⁩ على دخل بعملة ⁦DAC⁩ ويستخدمونه لدعم «مديرين تنفيذيين بالذكاء الاصطناعي» يخططون للتطبيقات ويبنونها وينشرونها، وللتصويت وإبداء الرأي في الإصدارات. يديره المؤسس ⁦Kei Iwami⁩. لا يوجد رابط إحالة ولا مكافأة إحالة",
@@ -1324,6 +1451,12 @@ module.exports = {
         "need": "Residentes en EE. UU. mayores de 18 años. Verificación con una transacción de 1 centavo en Venmo (sin subir documentos ni prueba de ingresos)",
         "caution": "A octubre de 2026 no se puede usar desde Japón (los términos lo limitan a residentes en EE. UU.; se comprobó en persona que no funciona desde Japón). La cantidad por persona es mínima, baja si cae el fondo, y se indica que los pagos no están garantizados y pueden detenerse en cualquier momento. Se describe como un experimento social informal, no como una empresa. Quien cobra debe declarar los pagos como ingresos"
       },
+      "de": {
+        "gain": "Am 1. jedes Monats ein kleiner, gleicher Geldanteil (Venmo)",
+        "note": "Ein US-Experiment für ein „Grundeinkommen, bei dem alle mitmachen können“. Freiwillige Spenden bilden einen Topf, der vor allem in Aktien (mit einem kleinen Krypto-Anteil) angelegt wird, und jeden Monat werden 0,5 % davon gleichmäßig auf alle Mitglieder aufgeteilt und per Venmo ausgezahlt. Spenden erhöht deinen Anteil nicht. 2023 gestartet von Gründer und Entwickler Ryan Frigo. Die Auszahlung im Oktober 2026 betrug 0,10 $ für jede der 266 Personen. Es gibt keinen Empfehlungslink und keinen Empfehlungsbonus",
+        "need": "Wohnsitz in den USA und mindestens 18 Jahre. Verifizierung mit einer 1-Cent-Transaktion über Venmo (kein Ausweis-Upload, keine Bedürftigkeitsprüfung)",
+        "caution": "Stand Oktober 2026 nicht aus Japan nutzbar (die Bedingungen beschränken es auf Menschen mit Wohnsitz in den USA; dass es aus Japan nicht funktioniert, wurde selbst getestet). Der Betrag pro Person ist winzig, sinkt mit dem Topf, und laut eigener Angabe sind die Auszahlungen nicht garantiert und können jederzeit enden. Es bezeichnet sich als informelles soziales Experiment, nicht als Unternehmen. Empfänger müssen die Zahlungen als Einkommen angeben"
+      },
       "ar": {
         "gain": "حصة نقدية صغيرة متساوية في اليوم الأول من كل شهر (⁦Venmo⁩)",
         "note": "تجربة أمريكية لـ«دخل أساسي يمكن لأي شخص الانضمام إليه». تُجمع التبرعات الطوعية في صندوق يُستثمر أساسًا في الأسهم (مع جزء صغير من العملات المشفرة)، ويُقسَّم 0.5% منه شهريًا بالتساوي على جميع الأعضاء عبر ⁦Venmo⁩. التبرع لا يزيد حصتك. أطلقها مؤسسها ومطوّرها ⁦Ryan Frigo⁩ عام 2023. في أكتوبر 2026 حصل 266 شخصًا على ⁦$0.10⁩ لكل منهم. لا يوجد رابط إحالة ولا مكافأة إحالة",
@@ -1376,6 +1509,12 @@ module.exports = {
         "note": "Un sistema monetario que se presenta como «economía natural», con nombre tomado de Gratitude (gratitud), Dignity (dignidad) y Donation (donación). El dinero lo crean todas las personas y no nace de la deuda: las aportaciones al bien común dan una «renta básica activa» de 20 GDD por hora, hasta 50 horas (1.000 GDD) al mes. El dinero sin usar se reduce un 50 % al año (en torno al 5,61 % al mes). Lo gestiona Gradido Akademie International, una asociación de investigación y desarrollo de Austria con sede también en Alemania",
         "need": "Crea gratis una cuenta Gradido con el enlace de referido, registra tus aportaciones al bien común y recibe GDD",
         "caution": "Según las preguntas frecuentes oficiales, por ahora es un sistema de puntos de agradecimiento y no una criptomoneda. No hay información oficial sobre cambiar GDD por euros u otro dinero. Se comprobó en persona que funciona desde Japón en octubre de 2026. Si alguien que se registró con un enlace de referido hace después una aportación económica a Gradido (como una donación), quien lo refirió recibe GDT (Gradido Transform), según el código fuente público del monedero. No hay bono solo por registrarse"
+      },
+      "de": {
+        "gain": "20 GDD pro Stunde Gemeinwohl-Arbeit (bis zu 1.000 GDD im Monat)",
+        "note": "Ein Geldsystem, das sich „Natürliche Ökonomie des Lebens“ nennt; der Name steht für Gratitude, Dignity und Donation (Dankbarkeit, Würde, Spende). Geld wird von allen geschöpft statt als Schuld: Beiträge zum Gemeinwohl bringen ein „aktives Grundeinkommen“ von 20 GDD pro Stunde, bis zu 50 Stunden (1.000 GDD) im Monat. Ungenutztes Geld schrumpft um 50 % pro Jahr (etwa 5,61 % pro Monat; Vergänglichkeit). Betrieben von der Gradido Akademie International, einem Forschungs- und Entwicklungsverein in Österreich mit Niederlassung in Deutschland",
+        "need": "Über den Empfehlungslink kostenlos ein Gradido-Konto anlegen, deine Gemeinwohl-Beiträge eintragen und GDD erhalten",
+        "caution": "Laut offizieller FAQ ist es derzeit ein Dankbarkeits-Punktesystem und keine Kryptowährung. Offizielle Angaben zum Tausch von GDD in Euro oder anderes Geld gibt es nicht. Im Oktober 2026 selbst bestätigt: aus Japan nutzbar. Wenn jemand, der sich über einen Empfehlungslink angemeldet hat, später finanziell zu Gradido beiträgt (z. B. durch eine Spende), bekommt die empfehlende Person laut öffentlichem Quellcode der Wallet GDT (Gradido Transform) gutgeschrieben. Für die reine Anmeldung gibt es keinen Bonus"
       },
       "ar": {
         "gain": "⁦20 GDD⁩ عن كل ساعة عمل للصالح العام (حتى ⁦1,000 GDD⁩ شهريًا)",
@@ -1430,6 +1569,12 @@ module.exports = {
         "need": "Regístrate gratis con el enlace de referido y usa la app cada día (se comprobó en persona que funciona desde Japón en octubre de 2026)",
         "caution": "Las recompensas no solo vienen de las personas que invitas, sino también de las que invitan ellas: es una red multinivel. Fuentes externas hablan de 8 niveles; no está confirmado oficialmente. Las cantidades diarias son mínimas, así que no esperes un ingreso significativo. Al parecer, los retiros a PayPal tienen mínimo, comisiones y un requisito de días seguidos de uso, pero no se pudieron consultar directamente las páginas de ayuda oficiales. En la App Store de Japón tiene una nota de 3,2 (167 valoraciones, octubre de 2026), y algunos usuarios dicen que no pudieron retirar. No está confirmada la ubicación de la empresa"
       },
+      "de": {
+        "gain": "Kleine Belohnungen für tägliche Nutzung, Spiele, Einkäufe und mehr",
+        "note": "Eine Chat- und Telefonie-App mit Belohnungssystem. Du sammelst Belohnungen über ein tägliches „Grundeinkommen“ (digitales Einkommen), Spiele, Cashback beim Online-Einkauf, günstige Anrufe und tägliche Angebote und lässt sie dir auszahlen oder spendest sie an rund 2.000 Hilfsorganisationen in über 100 Ländern. Deine Belohnungen wachsen auch, wenn dein Netzwerk, etwa von dir eingeladene Freunde, aktiv ist. Herausgeber im App Store ist YouWowMe Limited, und die App wurde zuletzt im August 2026 aktualisiert",
+        "need": "Über den Empfehlungslink kostenlos anmelden und die App jeden Tag nutzen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+        "caution": "Belohnungen kommen nicht nur von Menschen, die du einlädst, sondern auch von denen, die diese wiederum einladen: ein mehrstufiges Netzwerk (Multi-Level). Drittquellen sprechen von 8 Stufen; offiziell bestätigt ist das nicht. Die Tagesbeträge sind winzig, erwarte also kein nennenswertes Einkommen. Auszahlungen an PayPal haben angeblich einen Mindestbetrag, Gebühren und eine Bedingung für tägliche Nutzung in Folge, die offiziellen Hilfeseiten ließen sich aber nicht direkt prüfen. Bewertung im japanischen App Store: 3,2 (167 Bewertungen, Oktober 2026), einige berichten von gescheiterten Auszahlungen. Der Sitz der Betreiberfirma ist nicht bestätigt"
+      },
       "ar": {
         "gain": "مكافآت صغيرة مقابل الاستخدام اليومي والألعاب والتسوق وغيرها",
         "note": "تطبيق دردشة واتصال مع نظام مكافآت. تجمع المكافآت من «دخل أساسي» رقمي يومي، والألعاب، واسترداد نقدي من التسوق عبر الإنترنت، ومكالمات رخيصة، وعروض يومية، ثم تسحبها أو تتبرع بها لنحو 2,000 جمعية خيرية في أكثر من 100 دولة. تزيد مكافآتك أيضًا عندما تنشط شبكتك، مثل الأصدقاء الذين دعوتهم. الناشر في ⁦App Store⁩ هو ⁦YouWowMe Limited⁩، وقد حُدّث التطبيق حتى أغسطس 2026",
@@ -1446,7 +1591,8 @@ module.exports = {
       "zh": "装在电脑或手机上就行。攒满 $20 可通过 PayPal 提现",
       "hi": "बस PC या फ़ोन पर इंस्टॉल कर दें। $20 होने पर PayPal से नकद निकालें",
       "es": "Solo instálala en tu PC o móvil. Al llegar a $20 cobras por PayPal",
-      "ar": "ثبّته على الحاسوب أو الهاتف فقط. عند بلوغ ⁦$20⁩ اسحبها نقدًا عبر PayPal"
+      "ar": "ثبّته على الحاسوب أو الهاتف فقط. عند بلوغ ⁦$20⁩ اسحبها نقدًا عبر PayPal",
+      "de": "Einfach auf PC oder Handy installieren. Auszahlung per PayPal ab 20 $"
     },
     {
       "id": "pawns",
@@ -1455,7 +1601,8 @@ module.exports = {
       "zh": "装在电脑上就行。满 $5 即可提现",
       "hi": "बस PC पर चालू छोड़ दें। $5 से नकद निकालें",
       "es": "Solo déjala funcionando en tu PC. Cobra en efectivo desde $5",
-      "ar": "اتركه يعمل على الحاسوب فقط. اسحب أرباحك نقدًا من ⁦$5⁩"
+      "ar": "اتركه يعمل على الحاسوب فقط. اسحب أرباحك نقدًا من ⁦$5⁩",
+      "de": "Einfach auf dem PC laufen lassen. Auszahlung ab 5 $"
     },
     {
       "id": "sweatcoin",
@@ -1464,10 +1611,21 @@ module.exports = {
       "zh": "带着手机走路就行。攒下的币可兑换商品或折扣",
       "hi": "बस फ़ोन साथ लेकर चलें। जमा सिक्कों को सामान और छूट से बदलें",
       "es": "Solo camina con el móvil. Cambia tus monedas por productos o descuentos",
-      "ar": "احمل هاتفك وامشِ فقط. استبدل عملاتك بمنتجات أو خصومات"
+      "ar": "احمل هاتفك وامشِ فقط. استبدل عملاتك بمنتجات أو خصومات",
+      "de": "Einfach mit dem Handy gehen. Tausch deine Coins gegen Produkte und Rabatte"
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-25",
+      "ja": "ドイツ語版を追加",
+      "en": "Added a German version",
+      "zh": "新增德语版",
+      "hi": "जर्मन संस्करण जोड़ा",
+      "es": "Añadida la versión en alemán",
+      "ar": "أضفنا النسخة الألمانية",
+      "de": "Deutsche Version hinzugefügt"
+    },
     {
       "date": "2026-10-24",
       "ja": "WowAppを追加",
@@ -1475,7 +1633,8 @@ module.exports = {
       "zh": "新增 WowApp",
       "hi": "WowApp जोड़ा",
       "es": "Añadido WowApp",
-      "ar": "أضفنا ⁦WowApp⁩"
+      "ar": "أضفنا ⁦WowApp⁩",
+      "de": "WowApp hinzugefügt"
     },
     {
       "date": "2026-10-24",
@@ -1484,7 +1643,8 @@ module.exports = {
       "zh": "新增 Gradido",
       "hi": "Gradido जोड़ा",
       "es": "Añadido Gradido",
-      "ar": "أضفنا ⁦Gradido⁩"
+      "ar": "أضفنا ⁦Gradido⁩",
+      "de": "Gradido hinzugefügt"
     },
     {
       "date": "2026-10-24",
@@ -1493,7 +1653,8 @@ module.exports = {
       "zh": "新增 Ubiquitus（仅限美国居民）",
       "hi": "Ubiquitus जोड़ा (सिर्फ़ अमेरिकी निवासियों के लिए)",
       "es": "Añadido Ubiquitus (solo residentes en EE. UU.)",
-      "ar": "أضفنا ⁦Ubiquitus⁩ (للمقيمين في الولايات المتحدة فقط)"
+      "ar": "أضفنا ⁦Ubiquitus⁩ (للمقيمين في الولايات المتحدة فقط)",
+      "de": "Ubiquitus hinzugefügt (nur Wohnsitz in den USA)"
     },
     {
       "date": "2026-10-24",
@@ -1502,7 +1663,8 @@ module.exports = {
       "zh": "新增 AI-DAC（World App）",
       "hi": "AI-DAC (World App) जोड़ा",
       "es": "Añadido AI-DAC (World App)",
-      "ar": "أضفنا ⁦AI-DAC (World App)⁩"
+      "ar": "أضفنا ⁦AI-DAC (World App)⁩",
+      "de": "AI-DAC (World App) hinzugefügt"
     },
     {
       "date": "2026-10-24",
@@ -1511,7 +1673,8 @@ module.exports = {
       "zh": "新增 UBI 团体与项目页面",
       "hi": "UBI संगठनों और प्रोजेक्ट का पेज जोड़ा",
       "es": "Añadida una página de organizaciones y proyectos de RBU",
-      "ar": "أضفنا صفحة منظمات ومشاريع الدخل الأساسي"
+      "ar": "أضفنا صفحة منظمات ومشاريع الدخل الأساسي",
+      "de": "Seite mit Organisationen & Projekten zum Grundeinkommen hinzugefügt"
     },
     {
       "date": "2026-10-24",
@@ -1520,7 +1683,8 @@ module.exports = {
       "zh": "新增 AXO（World App）",
       "hi": "AXO (World App) जोड़ा",
       "es": "Añadido AXO (World App)",
-      "ar": "أضفنا ⁦AXO (World App)⁩"
+      "ar": "أضفنا ⁦AXO (World App)⁩",
+      "de": "AXO (World App) hinzugefügt"
     },
     {
       "date": "2026-10-24",
@@ -1529,7 +1693,8 @@ module.exports = {
       "zh": "新增 ORO（World App）",
       "hi": "ORO (World App) जोड़ा",
       "es": "Añadido ORO (World App)",
-      "ar": "أضفنا ⁦ORO (World App)⁩"
+      "ar": "أضفنا ⁦ORO (World App)⁩",
+      "de": "ORO (World App) hinzugefügt"
     },
     {
       "date": "2026-10-24",
@@ -1538,7 +1703,8 @@ module.exports = {
       "zh": "新增 Dotare",
       "hi": "Dotare जोड़ा",
       "es": "Añadido Dotare",
-      "ar": "أضفنا ⁦Dotare⁩"
+      "ar": "أضفنا ⁦Dotare⁩",
+      "de": "Dotare hinzugefügt"
     },
     {
       "date": "2026-10-24",
@@ -1547,7 +1713,8 @@ module.exports = {
       "zh": "新增 Palai",
       "hi": "Palai जोड़ा",
       "es": "Añadido Palai",
-      "ar": "أضفنا ⁦Palai⁩"
+      "ar": "أضفنا ⁦Palai⁩",
+      "de": "Palai hinzugefügt"
     },
     {
       "date": "2026-10-23",
@@ -1556,7 +1723,8 @@ module.exports = {
       "zh": "新增 Circles（Gnosis App）",
       "hi": "Circles (Gnosis App) जोड़ा",
       "es": "Añadido Circles (Gnosis App)",
-      "ar": "أضفنا ⁦Circles (Gnosis App)⁩"
+      "ar": "أضفنا ⁦Circles (Gnosis App)⁩",
+      "de": "Circles (Gnosis App) hinzugefügt"
     },
     {
       "date": "2026-10-23",
@@ -1565,7 +1733,8 @@ module.exports = {
       "zh": "新增 Ğ1",
       "hi": "Ğ1 जोड़ा",
       "es": "Añadido Ğ1",
-      "ar": "أضفنا ⁦Ğ1⁩"
+      "ar": "أضفنا ⁦Ğ1⁩",
+      "de": "Ğ1 (June) hinzugefügt"
     },
     {
       "date": "2026-10-21",
@@ -1574,7 +1743,8 @@ module.exports = {
       "zh": "新增 Mein Grundeinkommen",
       "hi": "Mein Grundeinkommen जोड़ा",
       "es": "Añadido Mein Grundeinkommen",
-      "ar": "أضفنا ⁦Mein Grundeinkommen⁩"
+      "ar": "أضفنا ⁦Mein Grundeinkommen⁩",
+      "de": "Mein Grundeinkommen hinzugefügt"
     },
     {
       "date": "2026-10-09",
@@ -1583,7 +1753,8 @@ module.exports = {
       "zh": "新增 Trima",
       "hi": "Trima जोड़ा",
       "es": "Añadido Trima",
-      "ar": "أضفنا ⁦Trima⁩"
+      "ar": "أضفنا ⁦Trima⁩",
+      "de": "Trima hinzugefügt"
     },
     {
       "date": "2026-10-09",
@@ -1592,7 +1763,8 @@ module.exports = {
       "zh": "新增 InterLink",
       "hi": "InterLink जोड़ा",
       "es": "Añadido InterLink",
-      "ar": "أضفنا InterLink"
+      "ar": "أضفنا InterLink",
+      "de": "InterLink hinzugefügt"
     },
     {
       "date": "2026-10-09",
@@ -1601,7 +1773,8 @@ module.exports = {
       "zh": "新增“推荐 3 个”和可信度标识",
       "hi": "टॉप 3 सुझाव और भरोसे के संकेत जोड़े",
       "es": "Añadidas las 3 recomendadas y los indicadores de confianza",
-      "ar": "أضفنا أفضل 3 خيارات ومؤشرات الثقة"
+      "ar": "أضفنا أفضل 3 خيارات ومؤشرات الثقة",
+      "de": "Top-3-Empfehlungen und Vertrauenscheck hinzugefügt"
     },
     {
       "date": "2026-10-09",
@@ -1610,7 +1783,8 @@ module.exports = {
       "zh": "WAVEE 更新为“全球”可用",
       "hi": "WAVEE को “ग्लोबल” किया",
       "es": "WAVEE ahora aparece como Global",
-      "ar": "صار WAVEE يحمل علامة «عالمي»"
+      "ar": "صار WAVEE يحمل علامة «عالمي»",
+      "de": "WAVEE ist jetzt als „Weltweit“ markiert"
     },
     {
       "date": "2026-10-09",
@@ -1619,7 +1793,8 @@ module.exports = {
       "zh": "新增 Delta Kim",
       "hi": "Delta Kim जोड़ा",
       "es": "Añadido Delta Kim",
-      "ar": "أضفنا Delta Kim"
+      "ar": "أضفنا Delta Kim",
+      "de": "Delta Kim hinzugefügt"
     },
     {
       "date": "2026-10-09",
@@ -1628,7 +1803,8 @@ module.exports = {
       "zh": "新增 Pi Network",
       "hi": "Pi Network जोड़ा",
       "es": "Añadido Pi Network",
-      "ar": "أضفنا Pi Network"
+      "ar": "أضفنا Pi Network",
+      "de": "Pi Network hinzugefügt"
     },
     {
       "date": "2026-10-09",
@@ -1637,7 +1813,8 @@ module.exports = {
       "zh": "新增 Pawns.app",
       "hi": "Pawns.app जोड़ा",
       "es": "Añadido Pawns.app",
-      "ar": "أضفنا Pawns.app"
+      "ar": "أضفنا Pawns.app",
+      "de": "Pawns.app hinzugefügt"
     },
     {
       "date": "2026-10-09",
@@ -1646,7 +1823,8 @@ module.exports = {
       "zh": "新增 Sweatcoin",
       "hi": "Sweatcoin जोड़ा",
       "es": "Añadido Sweatcoin",
-      "ar": "أضفنا Sweatcoin"
+      "ar": "أضفنا Sweatcoin",
+      "de": "Sweatcoin hinzugefügt"
     },
     {
       "date": "2026-10-08",
@@ -1655,7 +1833,8 @@ module.exports = {
       "zh": "网站改版",
       "hi": "साइट का नया डिज़ाइन",
       "es": "Nuevo diseño del sitio",
-      "ar": "تصميم جديد للموقع"
+      "ar": "تصميم جديد للموقع",
+      "de": "Seite neu gestaltet"
     },
     {
       "date": "2026-10-08",
@@ -1664,7 +1843,8 @@ module.exports = {
       "zh": "新增 Honeygain",
       "hi": "Honeygain जोड़ा",
       "es": "Añadido Honeygain",
-      "ar": "أضفنا Honeygain"
+      "ar": "أضفنا Honeygain",
+      "de": "Honeygain hinzugefügt"
     },
     {
       "date": "2026-10-08",
@@ -1673,7 +1853,8 @@ module.exports = {
       "zh": "新增 Grass",
       "hi": "Grass जोड़ा",
       "es": "Añadido Grass",
-      "ar": "أضفنا Grass"
+      "ar": "أضفنا Grass",
+      "de": "Grass hinzugefügt"
     }
   ],
   "CATS": {
@@ -1730,6 +1911,15 @@ module.exports = {
       "pointsite": "استرداد نقدي",
       "career": "توظيف",
       "app": "تطبيقات سلبية"
+    },
+    "de": {
+      "all": "Alle",
+      "crypto-bi": "Krypto-Grundeinkommen",
+      "exchange": "Krypto-Börsen",
+      "finance": "Karten & Banken",
+      "pointsite": "Cashback-Seiten",
+      "career": "Jobvermittlung",
+      "app": "Passive Apps"
     }
   },
   "T": {
@@ -2506,6 +2696,135 @@ module.exports = {
       "orgsSecP": "هذه ليست خدمات تسجّل فيها لتحصل على المال، بل منظمات تبحث في الدخل الأساسي أو تدعو إليه أو تطبّقه فعلًا عبر التحويلات النقدية.",
       "orgsSecBtn": "عرض كل المنظمات ({n})",
       "only_us": "للمقيمين في الولايات المتحدة فقط"
+    },
+    "de": {
+      "brand": "Geld im <span>Schlaf</span>",
+      "brandPlain": "Geld im Schlaf",
+      "navList": "Dienste",
+      "navHow": "So geht’s",
+      "navFaq": "FAQ",
+      "pr": "Diese Seite enthält Empfehlungslinks und -codes. Wenn du dich darüber anmeldest, kann auch der Betreiber dieser Seite einen Bonus bekommen.",
+      "eyebrow": "Krypto-Grundeinkommen-Apps & Empfehlungsboni",
+      "h1": "Einmal anmelden.<br><em>Geld</em> bekommen,<br>während du schläfst.",
+      "lede": "Von <b>Krypto-Grundeinkommen</b>-Projekten, die jeden Tag oder jeden Monat Token verschicken, bis zu <b>Cashback-Seiten und Diensten auf Einladung</b>, die dich für die Anmeldung über eine Empfehlung belohnen. Alles in einer Liste.",
+      "ctaList": "Zu den Diensten",
+      "ctaHow": "So geht’s",
+      "statAll": "Dienste gelistet",
+      "statLoop": "zahlen wiederholt",
+      "statGlobal": "auch außerhalb Japans",
+      "statDate": "zuletzt geprüft",
+      "bookTitle": "KONTOAUSZUG GUTSCHRIFTEN",
+      "thDate": "DATUM",
+      "thMemo": "BUCHUNGSTEXT",
+      "thIn": "GUTSCHRIFT",
+      "r1": "ZUTEILUNG G$",
+      "r1v": "TÄGLICH",
+      "r2": "ZUTEILUNG MEC",
+      "r2v": "TÄGLICH",
+      "r3": "ZUTEILUNG POY",
+      "r3v": "MONATLICH",
+      "r4": "EMPFEHLUNG HAPITAS",
+      "r5": "PRÄMIE WAVEE",
+      "r5v": "BEI MATCH",
+      "bookNote": "Nur zur Veranschaulichung. Die tatsächlichen Boni und Bedingungen stehen auf den einzelnen Karten.",
+      "hanko": "IM<br>SCHLAF",
+      "listH": "Dienste",
+      "loopOnly": "Nur wiederkehrende",
+      "tagLoop": "Wiederkehrend",
+      "tagOnce": "Einmalig",
+      "legLoop": "Zahlt nach der Anmeldung immer wieder aus",
+      "legOnce": "Einmaliger Bonus für die Anmeldung über eine Empfehlung",
+      "legEase": "Aufwand (unsere eigene Einschätzung)",
+      "howH": "So meldest du dich an",
+      "s1h": "Auf den Button tippen",
+      "s1": "Tippe auf einer Karte auf „Über Empfehlung anmelden“, um die offizielle Seite oder App zu öffnen. Bei den meisten Diensten reicht das Öffnen des Links, damit die Empfehlung zählt.",
+      "s2h": "Direkt dort anmelden",
+      "s2": "Schließ die Anmeldung auf der Seite ab, die sich öffnet. Wenn du zwischendurch in einen anderen Browser oder eine andere App wechselst, kann die Empfehlung verloren gehen. Bleib also auf demselben Bildschirm.",
+      "s3h": "Bedingungen erfüllen",
+      "s3": "Der Bonus kommt, sobald du die Bedingungen erfüllst, etwa die Identitätsprüfung oder einen ersten Kauf. Das ist bei jedem Dienst anders.",
+      "faqH": "FAQ",
+      "q1": "Ist das ein echtes Grundeinkommen?",
+      "a1": "Nicht das staatliche. „Grundeinkommen“ meint hier Projekte wie GoodDollar und BioMatrix, die allen registrierten Personen wiederholt und ohne Bedingungen Token geben. Japan hat noch kein staatliches Grundeinkommen.",
+      "q2": "Verliere ich etwas, wenn ich einen Empfehlungscode nutze?",
+      "a2": "Normalerweise nicht. Gebühren und Bedingungen bleiben gleich, und die meisten Dienste geben auch neuen Nutzerinnen und Nutzern einen Bonus. Wer empfiehlt, bekommt ebenfalls eine Belohnung. Deshalb ist diese Seite als Werbung (PR) gekennzeichnet.",
+      "q3": "Muss ich die Belohnungen versteuern?",
+      "a3": "In Japan gelten Krypto-Gewinne beim Verkauf oder Ausgeben als sonstige Einkünfte, Punkte meist als gelegentliche Einkünfte. Die Regeln sind von Land zu Land verschieden. Frag bei größeren Beträgen beim Finanzamt in deinem Land nach.",
+      "q4": "Kann ich das auch außerhalb Japans nutzen?",
+      "a4": "Dienste mit der Markierung „Weltweit“ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp) funktionieren auch außerhalb Japans. Ubiquitus ist nur für Menschen mit Wohnsitz in den USA; die übrigen sind für Menschen mit Wohnsitz in Japan.",
+      "warnH": "Bevor du dich anmeldest",
+      "warnT": "Gut zu wissen",
+      "w1": "Bonushöhe und Bedingungen ändern sich oft. Prüf vor der Anmeldung immer die offizielle Aktionsseite.",
+      "w2": "Belohnungen in Kryptowährung schwanken im Wert.",
+      "w4": "Teure Kurse, die „100.000 Yen im Monat ganz automatisch“ versprechen, haben nichts mit den hier gelisteten Diensten zu tun.",
+      "foot": "Stand: Oktober 2026. Keine Anlageberatung.",
+      "count": "{n} Dienste angezeigt",
+      "none": "Keine Dienste passen zu diesen Filtern.",
+      "global": "Weltweit",
+      "jp": "Nur Japan",
+      "need": "So bekommst du es",
+      "ease": "Aufwand",
+      "cautionP": "Hinweis: ",
+      "code": "CODE",
+      "pending": "Folgt bald",
+      "copy": "Kopieren",
+      "goRef": "Über Empfehlung anmelden",
+      "goOff": "Offizielle Seite ansehen",
+      "goCode": "App holen & Code eingeben",
+      "copied": "Code kopiert",
+      "selected": "Code markiert. Kopier ihn über das Menü",
+      "title": "Geld im Schlaf",
+      "region": "Region",
+      "filterLabel": "Nach Kategorie filtern",
+      "metaDesc": "Eine Liste von Krypto-Grundeinkommen-Apps wie GoodDollar, ME Pass und BioMatrix sowie Cashback-Seiten und Diensten auf Einladung, mit Empfehlungscodes und aktuellen Boni.",
+      "navLabel": "Bereiche",
+      "langLabel": "Sprache",
+      "shareH": "Liste teilen",
+      "shareSub": "Kennst du jemanden, der lieber im Schlaf verdienen würde? Schick ihm die Liste.",
+      "shareText": "Apps, die dich im Schlaf bezahlen 😴💰 Krypto-Grundeinkommen und passive Einkommens-Apps in einer Liste",
+      "copyLink": "Link kopieren",
+      "linkCopied": "Link kopiert",
+      "share": "Teilen",
+      "sleepL": "Zeit auf dieser Seite",
+      "sleepS": "Passive Apps laufen die ganze Zeit im Hintergrund weiter",
+      "badgeMax": "Einrichten & vergessen",
+      "picksH": "Fang mit diesen 3 an",
+      "picksSub": "Ausgewählt nach wenig Aufwand, Nutzbarkeit außerhalb Japans und einer echten Möglichkeit zum Auszahlen oder Einlösen.",
+      "pickMore": "Details ansehen",
+      "trustLabel": "Vertrauenscheck",
+      "trustCash": "Auszahlung",
+      "trustPrice": "Kurs",
+      "trustOp": "Betreiber",
+      "trustCashD": "Auszahlung (lässt es sich in echtes Geld umwandeln)",
+      "trustPriceD": "Marktkurs (wird der Token zu einem Preis gehandelt)",
+      "trustOpD": "Betreiber (ist das Unternehmen dahinter bekannt)",
+      "tYes": "Ja",
+      "tPartial": "Mit Bedingungen",
+      "tNo": "Nein",
+      "tUnknown": "Ungeprüft",
+      "newsH": "Neuigkeiten",
+      "dawnH": "Guten Morgen.<br>Vielleicht ist im Schlaf etwas eingegangen.",
+      "dawnSub": "Öffne deine Apps und wirf einen Blick auf den Kontostand. Noch nicht angefangen? Richte heute Abend etwas ein.",
+      "dawnCta": "Zurück zur Liste",
+      "more": "Mehr anzeigen",
+      "less": "Weniger anzeigen",
+      "svcTitle": "Was ist {name}? Was du bekommst & wie du startest",
+      "hGain": "Was du bekommst",
+      "hAbout": "Was ist {name}?",
+      "hNeed": "So startest du",
+      "hRelated": "Ähnliche Dienste",
+      "backList": "Zurück zur Liste",
+      "crumbLabel": "Brotkrümelnavigation",
+      "orgsTitle": "Grundeinkommen: Organisationen & Projekte",
+      "orgsH1": "Organisationen & Projekte zum Grundeinkommen",
+      "orgsDesc": "Eine ausgewählte Liste von Organisationen und Projekten weltweit und in Japan, die sich für das Grundeinkommen einsetzen, es erforschen oder umsetzen, nach Art gruppiert. Geprüft im Oktober 2026.",
+      "orgsIntro": "Für alle, die mehr über das Grundeinkommen erfahren oder einen Weg suchen, es zu unterstützen oder mitzumachen. Das sind keine Dienste zum Geldverdienen, sondern Organisationen, die sich mit Lobbyarbeit, Forschung und Geldtransfers befassen, nach Art gruppiert.",
+      "orgsFounded": "Gegründet",
+      "orgsOnSite": "Unsere Seite zu diesem Dienst",
+      "orgsRelated": "Zugehörige Organisation",
+      "orgsSecH": "Organisationen, die sich mit dem Grundeinkommen befassen",
+      "orgsSecP": "Das sind keine Dienste, bei denen du dich für Geld anmeldest, sondern Organisationen, die das Grundeinkommen erforschen, sich dafür einsetzen oder es selbst auszahlen.",
+      "orgsSecBtn": "Alle Organisationen ansehen ({n})",
+      "only_us": "Nur für Wohnsitz in den USA"
     }
   },
   "ORG_REGIONS": {
@@ -2515,7 +2834,8 @@ module.exports = {
       "zh": "全球",
       "hi": "वैश्विक",
       "es": "Global",
-      "ar": "عالمي"
+      "ar": "عالمي",
+      "de": "Weltweit"
     },
     "eu": {
       "ja": "ヨーロッパ",
@@ -2523,7 +2843,8 @@ module.exports = {
       "zh": "欧洲",
       "hi": "यूरोप",
       "es": "Europa",
-      "ar": "أوروبا"
+      "ar": "أوروبا",
+      "de": "Europa"
     },
     "us": {
       "ja": "アメリカ",
@@ -2531,7 +2852,8 @@ module.exports = {
       "zh": "美国",
       "hi": "अमेरिका",
       "es": "Estados Unidos",
-      "ar": "الولايات المتحدة"
+      "ar": "الولايات المتحدة",
+      "de": "USA"
     },
     "ca": {
       "ja": "カナダ",
@@ -2539,7 +2861,8 @@ module.exports = {
       "zh": "加拿大",
       "hi": "कनाडा",
       "es": "Canadá",
-      "ar": "كندا"
+      "ar": "كندا",
+      "de": "Kanada"
     },
     "de": {
       "ja": "ドイツ",
@@ -2547,7 +2870,8 @@ module.exports = {
       "zh": "德国",
       "hi": "जर्मनी",
       "es": "Alemania",
-      "ar": "ألمانيا"
+      "ar": "ألمانيا",
+      "de": "Deutschland"
     },
     "fr": {
       "ja": "フランス語圏",
@@ -2555,7 +2879,8 @@ module.exports = {
       "zh": "法语地区",
       "hi": "फ़्रेंच भाषी क्षेत्र",
       "es": "Francófono",
-      "ar": "الفرنكوفونية"
+      "ar": "الفرنكوفونية",
+      "de": "Französischsprachig"
     },
     "jp": {
       "ja": "日本",
@@ -2563,7 +2888,8 @@ module.exports = {
       "zh": "日本",
       "hi": "जापान",
       "es": "Japón",
-      "ar": "اليابان"
+      "ar": "اليابان",
+      "de": "Japan"
     },
     "at": {
       "ja": "オーストリア",
@@ -2571,7 +2897,8 @@ module.exports = {
       "zh": "奥地利",
       "hi": "ऑस्ट्रिया",
       "es": "Austria",
-      "ar": "النمسا"
+      "ar": "النمسا",
+      "de": "Österreich"
     }
   },
   "ORG_GROUPS": [
@@ -2583,7 +2910,8 @@ module.exports = {
         "zh": "倡导团体",
         "hi": "पैरवी करने वाले संगठन",
         "es": "Grupos de defensa",
-        "ar": "مجموعات المناصرة"
+        "ar": "مجموعات المناصرة",
+        "de": "Interessenverbände"
       }
     },
     {
@@ -2594,7 +2922,8 @@ module.exports = {
         "zh": "研究与社会实验",
         "hi": "शोध और प्रयोग",
         "es": "Investigación y pilotos",
-        "ar": "البحث والتجارب"
+        "ar": "البحث والتجارب",
+        "de": "Forschung & Pilotprojekte"
       }
     },
     {
@@ -2605,7 +2934,8 @@ module.exports = {
         "zh": "现金援助 NGO",
         "hi": "नकद सहायता देने वाले NGO",
         "es": "ONG de transferencias en efectivo",
-        "ar": "منظمات التحويل النقدي"
+        "ar": "منظمات التحويل النقدي",
+        "de": "NGOs für Geldtransfers"
       }
     },
     {
@@ -2616,7 +2946,8 @@ module.exports = {
         "zh": "抽奖与捐赠型",
         "hi": "लॉटरी और दान आधारित",
         "es": "Sorteos y donaciones",
-        "ar": "السحوبات والتبرعات"
+        "ar": "السحوبات والتبرعات",
+        "de": "Verlosungen & Spenden"
       }
     },
     {
@@ -2627,7 +2958,8 @@ module.exports = {
         "zh": "区块链与社区货币",
         "hi": "ब्लॉकचेन और सामुदायिक मुद्राएँ",
         "es": "Blockchain y monedas comunitarias",
-        "ar": "البلوكتشين والعملات المجتمعية"
+        "ar": "البلوكتشين والعملات المجتمعية",
+        "de": "Blockchain & Gemeinschaftswährungen"
       }
     },
     {
@@ -2638,7 +2970,8 @@ module.exports = {
         "zh": "日本的团体与项目",
         "hi": "जापान में",
         "es": "En Japón",
-        "ar": "في اليابان"
+        "ar": "في اليابان",
+        "de": "In Japan"
       }
     }
   ],
@@ -2656,7 +2989,8 @@ module.exports = {
         "zh": "连接支持基本收入的个人与团体的国际网络。1986 年以欧洲网络起步，现在举办世界大会、发布新闻并联系各国的关联组织",
         "hi": "बेसिक इनकम के समर्थक लोगों और संगठनों को जोड़ने वाला अंतरराष्ट्रीय नेटवर्क। 1986 में यूरोपीय नेटवर्क के रूप में शुरू हुआ; अब विश्व सम्मेलन, समाचार और देशों के सहयोगी संगठनों को जोड़ता है",
         "es": "Red internacional que une a personas y grupos que apoyan la renta básica. Nació en 1986 como red europea y hoy organiza un congreso mundial, publica noticias y conecta a sus afiliados nacionales",
-        "ar": "شبكة دولية تربط الأفراد والمجموعات المؤيدة للدخل الأساسي. بدأت عام 1986 شبكةً أوروبية، وتنظم اليوم مؤتمرًا عالميًا وتنشر الأخبار وتربط الفروع الوطنية"
+        "ar": "شبكة دولية تربط الأفراد والمجموعات المؤيدة للدخل الأساسي. بدأت عام 1986 شبكةً أوروبية، وتنظم اليوم مؤتمرًا عالميًا وتنشر الأخبار وتربط الفروع الوطنية",
+        "de": "Ein internationales Netzwerk, das Menschen und Gruppen verbindet, die das Grundeinkommen unterstützen. 1986 als europäisches Netzwerk gegründet, veranstaltet es heute einen Weltkongress, veröffentlicht Nachrichten und verbindet nationale Partnerorganisationen"
       },
       "short": {
         "ja": "1986年から続く、ベーシックインカムの国際ネットワーク",
@@ -2664,7 +2998,8 @@ module.exports = {
         "zh": "自 1986 年起的基本收入国际网络",
         "hi": "1986 से चल रहा बेसिक इनकम का अंतरराष्ट्रीय नेटवर्क",
         "es": "Red internacional de renta básica desde 1986",
-        "ar": "شبكة دولية للدخل الأساسي منذ 1986"
+        "ar": "شبكة دولية للدخل الأساسي منذ 1986",
+        "de": "Internationales Netzwerk für Grundeinkommen, seit 1986"
       }
     },
     {
@@ -2679,7 +3014,8 @@ module.exports = {
         "zh": "由约 25 个国家的活动人士和团体组成的欧洲无条件基本收入倡导网络，目标是让基本收入被承认为一项人权（在比利时注册为非营利组织）",
         "hi": "करीब 25 देशों के कार्यकर्ताओं और पहलों का यूरोपीय नेटवर्क, जो बिना शर्त बेसिक इनकम और उसे मानव अधिकार के रूप में मान्यता दिलाने के लिए काम करता है (बेल्जियम में गैर-लाभकारी संस्था के रूप में पंजीकृत)",
         "es": "Red europea de activistas e iniciativas de unos 25 países que defiende la renta básica incondicional y su reconocimiento como derecho humano (registrada como asociación sin ánimo de lucro en Bélgica)",
-        "ar": "شبكة أوروبية من ناشطين ومبادرات في نحو 25 دولة تدعو إلى دخل أساسي غير مشروط والاعتراف به حقًا من حقوق الإنسان (مسجلة جمعيةً غير ربحية في بلجيكا)"
+        "ar": "شبكة أوروبية من ناشطين ومبادرات في نحو 25 دولة تدعو إلى دخل أساسي غير مشروط والاعتراف به حقًا من حقوق الإنسان (مسجلة جمعيةً غير ربحية في بلجيكا)",
+        "de": "Ein europäisches Netzwerk von Aktiven und Initiativen aus etwa 25 Ländern, das sich für ein bedingungsloses Grundeinkommen und dessen Anerkennung als Menschenrecht einsetzt (als gemeinnütziger Verein in Belgien eingetragen)"
       }
     },
     {
@@ -2694,7 +3030,8 @@ module.exports = {
         "zh": "推动加拿大实行基本收入的全国性网络，开展政策倡导、信息传播并与各地团体合作",
         "hi": "कनाडा में बेसिक इनकम लागू कराने के लिए काम करने वाला राष्ट्रीय नेटवर्क; नीति सुझाव, जानकारी और स्थानीय समूहों से तालमेल",
         "es": "Red nacional que impulsa una renta básica en Canadá mediante propuestas políticas, divulgación y coordinación con grupos locales",
-        "ar": "شبكة وطنية تسعى إلى دخل أساسي في كندا عبر العمل على السياسات ونشر المعلومات والتنسيق مع المجموعات المحلية"
+        "ar": "شبكة وطنية تسعى إلى دخل أساسي في كندا عبر العمل على السياسات ونشر المعلومات والتنسيق مع المجموعات المحلية",
+        "de": "Ein landesweites Netzwerk, das sich mit Politikarbeit, Information und Kontakten zu lokalen Gruppen für ein Grundeinkommen in Kanada einsetzt"
       }
     },
     {
@@ -2710,7 +3047,8 @@ module.exports = {
         "zh": "美国推动基本收入保障的非营利网络，发布研究与文章并每年举办大会",
         "hi": "अमेरिका में बेसिक इनकम गारंटी को बढ़ावा देने वाला गैर-लाभकारी नेटवर्क; शोध और लेख प्रकाशित करता है और हर साल सम्मेलन करता है",
         "es": "Red sin ánimo de lucro de EE. UU. que promueve una renta básica garantizada; publica investigación y artículos y celebra una conferencia anual",
-        "ar": "شبكة أمريكية غير ربحية تروّج لضمان الدخل الأساسي، تنشر الأبحاث والمقالات وتعقد مؤتمرًا سنويًا"
+        "ar": "شبكة أمريكية غير ربحية تروّج لضمان الدخل الأساسي، تنشر الأبحاث والمقالات وتعقد مؤتمرًا سنويًا",
+        "de": "Ein gemeinnütziges US-Netzwerk, das sich für eine Grundeinkommensgarantie einsetzt. Es veröffentlicht Forschung und Artikel und veranstaltet eine jährliche Konferenz"
       }
     },
     {
@@ -2726,7 +3064,8 @@ module.exports = {
         "zh": "由 Facebook 联合创始人 Chris Hughes 等人创立的美国团体，为各地的“保障收入”试点提供资金与支持，并推动其制度化",
         "hi": "Facebook के सह-संस्थापक Chris Hughes और अन्य लोगों द्वारा शुरू किया गया अमेरिकी संगठन; देशभर के गारंटीड इनकम पायलट को पैसा और मदद देता है और उन्हें नीति बनाने पर ज़ोर देता है",
         "es": "Grupo estadounidense cofundado por Chris Hughes, cofundador de Facebook, entre otros. Financia y apoya pilotos de ingreso garantizado en todo el país e impulsa que se conviertan en política",
-        "ar": "مجموعة أمريكية شارك في تأسيسها ⁦Chris Hughes⁩، أحد مؤسسي فيسبوك، وآخرون. تموّل تجارب الدخل المضمون في أنحاء البلاد وتدعمها وتدفع نحو تحويلها إلى سياسة"
+        "ar": "مجموعة أمريكية شارك في تأسيسها ⁦Chris Hughes⁩، أحد مؤسسي فيسبوك، وآخرون. تموّل تجارب الدخل المضمون في أنحاء البلاد وتدعمها وتدفع نحو تحويلها إلى سياسة",
+        "de": "Eine US-Gruppe, die unter anderem von Facebook-Mitgründer Chris Hughes gegründet wurde. Sie finanziert und unterstützt Pilotprojekte für ein garantiertes Einkommen im ganzen Land und setzt sich dafür ein, dass sie zur Politik werden"
       }
     },
     {
@@ -2742,7 +3081,8 @@ module.exports = {
         "zh": "由前斯托克顿市长 Michael Tubbs 发起、呼吁保障收入的美国市长网络，支持各市的现金试点并推动联邦层面的制度",
         "hi": "स्टॉकटन के पूर्व मेयर Michael Tubbs द्वारा शुरू किया गया अमेरिकी मेयरों का नेटवर्क, जो गारंटीड इनकम की माँग करता है; शहरों के नकद पायलट और संघीय नीति का समर्थन करता है",
         "es": "Red de alcaldes de EE. UU. que pide un ingreso garantizado, fundada por el exalcalde de Stockton Michael Tubbs. Apoya pilotos municipales de dinero en efectivo y una política federal",
-        "ar": "شبكة من رؤساء بلديات أمريكيين تطالب بدخل مضمون، أسسها رئيس بلدية ستوكتون السابق ⁦Michael Tubbs⁩. تدعم التجارب النقدية في المدن وسياسة على المستوى الفيدرالي"
+        "ar": "شبكة من رؤساء بلديات أمريكيين تطالب بدخل مضمون، أسسها رئيس بلدية ستوكتون السابق ⁦Michael Tubbs⁩. تدعم التجارب النقدية في المدن وسياسة على المستوى الفيدرالي",
+        "de": "Ein Netzwerk von US-Bürgermeistern, das ein garantiertes Einkommen fordert, gegründet vom früheren Bürgermeister von Stockton, Michael Tubbs. Es unterstützt städtische Geld-Pilotprojekte und eine bundesweite Regelung"
       }
     },
     {
@@ -2757,7 +3097,8 @@ module.exports = {
         "zh": "由原“Y Combinator Research”基本收入项目发展而来的非营利研究机构。对 3,000 人进行了为期三年的每月现金发放研究，并公开结果",
         "hi": "Y Combinator Research के बेसिक इनकम प्रोजेक्ट से निकला गैर-लाभकारी शोध संगठन। इसने 3,000 लोगों को तीन साल तक हर महीने नकद देकर अध्ययन किया और नतीजे प्रकाशित करता है",
         "es": "Organización de investigación sin ánimo de lucro surgida del proyecto de renta básica de Y Combinator Research. Hizo un estudio de tres años con pagos mensuales a 3.000 personas y publica los resultados",
-        "ar": "منظمة بحثية غير ربحية نشأت من مشروع الدخل الأساسي في ⁦Y Combinator Research⁩. أجرت دراسة لثلاث سنوات قدّمت فيها نقودًا شهرية لـ3,000 شخص وتنشر نتائجها"
+        "ar": "منظمة بحثية غير ربحية نشأت من مشروع الدخل الأساسي في ⁦Y Combinator Research⁩. أجرت دراسة لثلاث سنوات قدّمت فيها نقودًا شهرية لـ3,000 شخص وتنشر نتائجها",
+        "de": "Die gemeinnützige Forschungsgruppe, die aus dem Grundeinkommensprojekt von Y Combinator Research hervorging. Sie führte eine dreijährige Studie durch, in der 3.000 Menschen monatlich Geld erhielten, und veröffentlicht die Ergebnisse"
       },
       "short": {
         "ja": "3,000人に3年間現金を配る大規模調査を行った研究組織",
@@ -2765,7 +3106,8 @@ module.exports = {
         "zh": "对 3,000 人进行三年现金发放研究的机构",
         "hi": "3,000 लोगों पर तीन साल का नकद अध्ययन करने वाला शोध संगठन",
         "es": "Hizo un estudio de tres años con pagos en efectivo a 3.000 personas",
-        "ar": "أجرت دراسة نقدية لثلاث سنوات شملت 3,000 شخص"
+        "ar": "أجرت دراسة نقدية لثلاث سنوات شملت 3,000 شخص",
+        "de": "Dreijährige Geldstudie mit 3.000 Menschen"
       }
     },
     {
@@ -2780,7 +3122,8 @@ module.exports = {
         "zh": "斯坦福大学贫困与不平等研究中心的项目，收集并分析世界各地的基本收入实验与试点，并与政策制定者和实践者分享",
         "hi": "स्टैनफ़ोर्ड के Center on Poverty and Inequality का कार्यक्रम, जो बेसिक इनकम के प्रयोगों और पायलटों को ट्रैक कर उनका विश्लेषण करता है और नीति-निर्माताओं से साझा करता है",
         "es": "Programa del Centro sobre Pobreza y Desigualdad de Stanford que recopila y analiza experimentos y pilotos de renta básica y comparte lo aprendido con responsables políticos",
-        "ar": "برنامج تابع لمركز الفقر وعدم المساواة في جامعة ستانفورد، يتابع تجارب الدخل الأساسي ويحللها ويشارك ما يتعلمه مع صانعي السياسات"
+        "ar": "برنامج تابع لمركز الفقر وعدم المساواة في جامعة ستانفورد، يتابع تجارب الدخل الأساسي ويحللها ويشارك ما يتعلمه مع صانعي السياسات",
+        "de": "Ein Programm des Center on Poverty and Inequality der Stanford University, das Experimente und Pilotprojekte zum Grundeinkommen sammelt und auswertet und die Erkenntnisse mit Politik und Praxis teilt"
       }
     },
     {
@@ -2795,7 +3138,8 @@ module.exports = {
         "zh": "专门研究基本收入的学术期刊，刊登经济学、哲学、政治学等领域的论文（由 De Gruyter Brill 出版）",
         "hi": "बेसिक इनकम पर केंद्रित शोध पत्रिका, जिसमें अर्थशास्त्र, दर्शन, राजनीति आदि के लेख छपते हैं (प्रकाशक De Gruyter Brill)",
         "es": "Revista académica dedicada a la renta básica, con trabajos de economía, filosofía, política y otras áreas (editada por De Gruyter Brill)",
-        "ar": "مجلة أكاديمية مخصصة للدخل الأساسي تنشر أبحاثًا في الاقتصاد والفلسفة والسياسة وغيرها (تصدرها ⁦De Gruyter Brill⁩)"
+        "ar": "مجلة أكاديمية مخصصة للدخل الأساسي تنشر أبحاثًا في الاقتصاد والفلسفة والسياسة وغيرها (تصدرها ⁦De Gruyter Brill⁩)",
+        "de": "Eine Fachzeitschrift zum Grundeinkommen mit Beiträgen aus Ökonomie, Philosophie, Politikwissenschaft und mehr (verlegt bei De Gruyter Brill)"
       }
     },
     {
@@ -2809,7 +3153,8 @@ module.exports = {
         "zh": "研究和探讨基本收入经济学的团体。前身为“Project Greshm”，现在举办线上研讨会等活动",
         "hi": "बेसिक इनकम के अर्थशास्त्र पर शोध और चर्चा करने वाला समूह। पहले इसका नाम “Project Greshm” था; अब ऑनलाइन संगोष्ठियाँ आदि करता है",
         "es": "Grupo que estudia y debate la economía de la renta básica. Antes se llamaba «Project Greshm» y ahora organiza simposios en línea, entre otras actividades",
-        "ar": "مجموعة تدرس اقتصاديات الدخل الأساسي وتناقشها. كانت تُعرف سابقًا باسم «⁦Project Greshm⁩» وتنظم الآن ندوات عبر الإنترنت وغيرها"
+        "ar": "مجموعة تدرس اقتصاديات الدخل الأساسي وتناقشها. كانت تُعرف سابقًا باسم «⁦Project Greshm⁩» وتنظم الآن ندوات عبر الإنترنت وغيرها",
+        "de": "Eine Gruppe, die die Ökonomie des Grundeinkommens erforscht und diskutiert. Früher „Project Greshm“, veranstaltet sie heute unter anderem Online-Symposien"
       }
     },
     {
@@ -2824,7 +3169,8 @@ module.exports = {
         "zh": "将捐款以现金形式直接送到贫困家庭手中的非营利组织。自 2009 年起持续发放，在多个非洲国家和美国开展工作",
         "hi": "दान की रकम को सीधे गरीबी में रह रहे परिवारों तक नकद पहुँचाने वाली गैर-लाभकारी संस्था। 2009 से नकद दे रही है और कई अफ़्रीकी देशों व अमेरिका में काम करती है",
         "es": "Organización sin ánimo de lucro que entrega las donaciones directamente en efectivo a personas en situación de pobreza. Lo hace desde 2009 en varios países de África y en EE. UU.",
-        "ar": "منظمة غير ربحية توصل التبرعات نقدًا مباشرةً إلى الأسر التي تعيش في فقر. تقدّم النقود منذ 2009 وتعمل في عدة دول أفريقية والولايات المتحدة"
+        "ar": "منظمة غير ربحية توصل التبرعات نقدًا مباشرةً إلى الأسر التي تعيش في فقر. تقدّم النقود منذ 2009 وتعمل في عدة دول أفريقية والولايات المتحدة",
+        "de": "Eine gemeinnützige Organisation, die Spenden direkt als Geld an Menschen in Armut weitergibt. Sie zahlt seit 2009 aus und arbeitet in mehreren afrikanischen Ländern und den USA"
       },
       "short": {
         "ja": "貧困の中で暮らす家庭に、寄付を現金で直接届けるNGO",
@@ -2832,7 +3178,8 @@ module.exports = {
         "zh": "将捐款以现金直接送到贫困家庭的 NGO",
         "hi": "दान को सीधे नकद के रूप में गरीब परिवारों तक पहुँचाने वाला NGO",
         "es": "ONG que entrega donaciones en efectivo directamente a personas en pobreza",
-        "ar": "منظمة توصل التبرعات نقدًا مباشرةً إلى الأسر الفقيرة"
+        "ar": "منظمة توصل التبرعات نقدًا مباشرةً إلى الأسر الفقيرة",
+        "de": "Gibt Spenden direkt als Geld an Menschen in Armut weiter"
       }
     },
     {
@@ -2849,7 +3196,8 @@ module.exports = {
         "zh": "柏林的非营利组织，用募集的捐款以抽奖方式发放为期一年、每月 1,000 欧元的“基本收入”",
         "hi": "बर्लिन की गैर-लाभकारी संस्था, जो दान जुटाकर एक साल तक हर महीने €1,000 की “बेसिक इनकम” लॉटरी से बाँटती है",
         "es": "Organización sin ánimo de lucro de Berlín que recauda donaciones y sortea rentas básicas de 1.000 € al mes durante un año",
-        "ar": "منظمة غير ربحية في برلين تجمع التبرعات وتجري سحوبات على دخل أساسي قدره ⁦€1,000⁩ شهريًا لمدة سنة"
+        "ar": "منظمة غير ربحية في برلين تجمع التبرعات وتجري سحوبات على دخل أساسي قدره ⁦€1,000⁩ شهريًا لمدة سنة",
+        "de": "Ein gemeinnütziger Verein aus Berlin, der Spenden sammelt und Grundeinkommen von 1.000 € im Monat für ein Jahr verlost"
       }
     },
     {
@@ -2865,7 +3213,8 @@ module.exports = {
         "zh": "每个人逐步发行自己的货币，并在相互信任的人之间使用的机制。由 Gnosis 打造，现在通过 Gnosis App 加入（旧网站为 joincircles.net）",
         "hi": "ऐसी व्यवस्था जिसमें हर व्यक्ति धीरे-धीरे अपनी करेंसी जारी करता है और भरोसे से जुड़े लोगों में उसका इस्तेमाल होता है। Gnosis ने बनाया; अब Gnosis App से जुड़ते हैं (पुरानी साइट joincircles.net थी)",
         "es": "Sistema en el que cada persona emite poco a poco su propia moneda, que se usa entre personas unidas por la confianza. Creado por Gnosis; ahora se entra a través de la Gnosis App (la web antigua era joincircles.net)",
-        "ar": "نظام يُصدر فيه كل شخص عملته الخاصة تدريجيًا، وتُستخدم بين أشخاص تربطهم الثقة. أنشأته ⁦Gnosis⁩، والانضمام اليوم عبر ⁦Gnosis App⁩ (الموقع القديم ⁦joincircles.net⁩)"
+        "ar": "نظام يُصدر فيه كل شخص عملته الخاصة تدريجيًا، وتُستخدم بين أشخاص تربطهم الثقة. أنشأته ⁦Gnosis⁩، والانضمام اليوم عبر ⁦Gnosis App⁩ (الموقع القديم ⁦joincircles.net⁩)",
+        "de": "Ein System, in dem jede Person nach und nach ihre eigene Währung schöpft, die zwischen Menschen genutzt wird, die einander vertrauen. Entwickelt von Gnosis; heute steigt man über die Gnosis App ein (die alte Seite war joincircles.net)"
       }
     },
     {
@@ -2881,7 +3230,8 @@ module.exports = {
         "zh": "经过身份验证的人每天都能领取 G$ 代币的非营利区块链基本收入项目",
         "hi": "गैर-लाभकारी ब्लॉकचेन बेसिक इनकम प्रोजेक्ट, जिसमें सत्यापित लोग हर दिन G$ टोकन क्लेम कर सकते हैं",
         "es": "Proyecto sin ánimo de lucro de renta básica en blockchain en el que las personas verificadas pueden reclamar tokens G$ cada día",
-        "ar": "مشروع دخل أساسي غير ربحي على البلوكتشين يتيح للأشخاص الموثَّقين المطالبة برموز ⁦G$⁩ كل يوم"
+        "ar": "مشروع دخل أساسي غير ربحي على البلوكتشين يتيح للأشخاص الموثَّقين المطالبة برموز ⁦G$⁩ كل يوم",
+        "de": "Ein gemeinnütziges Blockchain-Grundeinkommensprojekt, bei dem verifizierte Menschen jeden Tag G$-Token abholen können"
       }
     },
     {
@@ -2898,7 +3248,8 @@ module.exports = {
         "zh": "基于“货币相对论”的自由货币。成员通过“信任网”相互认证，每个人每天都会获得红利。参与者以法语圈为主",
         "hi": "“रिलेटिव थ्योरी ऑफ़ मनी” पर आधारित लिब्रे करेंसी। सदस्य “वेब ऑफ़ ट्रस्ट” से एक-दूसरे को सर्टिफ़ाई करते हैं, और सबको रोज़ डिविडेंड मिलता है। ज़्यादातर फ़्रेंच भाषी",
         "es": "Moneda libre basada en la Teoría Relativa de la Moneda. Los miembros se certifican mutuamente mediante una red de confianza y todos reciben un dividendo diario. Mayoritariamente francófona",
-        "ar": "عملة حرة قائمة على «النظرية النسبية للنقود». يوثّق الأعضاء بعضهم بعضًا عبر «شبكة الثقة»، ويحصل الجميع على عائد يومي. أغلب المشاركين من الناطقين بالفرنسية"
+        "ar": "عملة حرة قائمة على «النظرية النسبية للنقود». يوثّق الأعضاء بعضهم بعضًا عبر «شبكة الثقة»، ويحصل الجميع على عائد يومي. أغلب المشاركين من الناطقين بالفرنسية",
+        "de": "Eine freie Währung auf Grundlage der Relativen Geldtheorie. Mitglieder zertifizieren sich gegenseitig über ein Vertrauensnetz, und alle erhalten eine tägliche Dividende. Überwiegend französischsprachig"
       }
     },
     {
@@ -2913,7 +3264,8 @@ module.exports = {
         "zh": "在自己的小团体内建立“基本收入”的开源应用：成员每月出资，支持收入不足的人。由 okTurtles Foundation 持续开发",
         "hi": "अपने ही समूह में “बेसिक इनकम” बनाने के लिए ओपन-सोर्स ऐप: सदस्य हर महीने पैसे जोड़ते हैं और जिनकी आय कम पड़ती है उनकी मदद करते हैं। okTurtles Foundation इसे विकसित कर रहा है",
         "es": "App de código abierto para crear una «renta básica» dentro de tu propio grupo: los miembros aportan cada mes para apoyar a quien no llega. La desarrolla la okTurtles Foundation",
-        "ar": "تطبيق مفتوح المصدر لبناء «دخل أساسي» داخل مجموعتك: يساهم الأعضاء شهريًا لدعم من يقل دخله. تطوّره ⁦okTurtles Foundation⁩"
+        "ar": "تطبيق مفتوح المصدر لبناء «دخل أساسي» داخل مجموعتك: يساهم الأعضاء شهريًا لدعم من يقل دخله. تطوّره ⁦okTurtles Foundation⁩",
+        "de": "Eine Open-Source-App, mit der du in deiner eigenen Gruppe ein „Grundeinkommen“ aufbaust: Mitglieder zahlen monatlich ein, um die zu unterstützen, denen etwas fehlt. Entwickelt von der okTurtles Foundation"
       }
     },
     {
@@ -2929,7 +3281,8 @@ module.exports = {
         "zh": "研究并运营自称“自然经济”的货币体系 Gradido 的奥地利研发协会。特点是按公益贡献发放的“主动基本收入”，以及闲置货币逐渐减少的机制",
         "hi": "ऑस्ट्रिया का शोध और विकास संघ, जो “प्राकृतिक अर्थव्यवस्था” कहलाने वाली मुद्रा व्यवस्था Gradido चलाता है; जनहित के योगदान पर “एक्टिव बेसिक इनकम” और बिना इस्तेमाल के धीरे-धीरे घटने वाला पैसा इसकी ख़ासियत है",
         "es": "Asociación austriaca de investigación y desarrollo detrás de Gradido, un sistema monetario que se presenta como «economía natural», con una «renta básica activa» por aportar al bien común y dinero que se reduce poco a poco si no se usa",
-        "ar": "جمعية بحث وتطوير نمساوية تقف وراء ⁦Gradido⁩، وهو نظام عملة يصف نفسه بأنه «اقتصاد طبيعي»، يتميز بـ«دخل أساسي نشط» مقابل المساهمة في الصالح العام وبمال يتناقص تدريجيًا إذا لم يُستخدم"
+        "ar": "جمعية بحث وتطوير نمساوية تقف وراء ⁦Gradido⁩، وهو نظام عملة يصف نفسه بأنه «اقتصاد طبيعي»، يتميز بـ«دخل أساسي نشط» مقابل المساهمة في الصالح العام وبمال يتناقص تدريجيًا إذا لم يُستخدم",
+        "de": "Ein österreichischer Forschungs- und Entwicklungsverein hinter Gradido, einem Geldsystem, das sich „Natürliche Ökonomie“ nennt, mit einem „aktiven Grundeinkommen“ für Gemeinwohl-Beiträge und Geld, das ungenutzt langsam schrumpft"
       }
     },
     {
@@ -2945,7 +3298,8 @@ module.exports = {
         "zh": "研究者、社会活动人士和政治人物等汇聚一堂、以中立立场研究基本收入的日本学会。举办年会和各地研究会，并出版学会期刊",
         "hi": "जापान का अकादमिक संगठन, जहाँ शोधकर्ता, कार्यकर्ता और राजनेता तटस्थ रूप से बेसिक इनकम का अध्ययन करते हैं। वार्षिक सम्मेलन, क्षेत्रीय अध्ययन समूह और एक पत्रिका प्रकाशित करता है",
         "es": "Sociedad académica japonesa en la que investigadores, activistas y políticos estudian la renta básica desde una postura neutral. Celebra un congreso anual y grupos de estudio regionales y edita una revista",
-        "ar": "جمعية أكاديمية يابانية يدرس فيها باحثون وناشطون وسياسيون الدخل الأساسي من موقف محايد. تعقد مؤتمرًا سنويًا وحلقات دراسية إقليمية وتصدر مجلة"
+        "ar": "جمعية أكاديمية يابانية يدرس فيها باحثون وناشطون وسياسيون الدخل الأساسي من موقف محايد. تعقد مؤتمرًا سنويًا وحلقات دراسية إقليمية وتصدر مجلة",
+        "de": "Eine japanische Fachgesellschaft, in der Forschende, Aktive und Politiker das Grundeinkommen aus neutraler Sicht untersuchen. Sie veranstaltet eine Jahrestagung und regionale Arbeitskreise und gibt eine Zeitschrift heraus"
       },
       "short": {
         "ja": "ベーシックインカムを中立の立場で研究する日本の学会",
@@ -2953,7 +3307,8 @@ module.exports = {
         "zh": "以中立立场研究基本收入的日本学会",
         "hi": "बेसिक इनकम पर शोध करने वाला जापानी अकादमिक संगठन",
         "es": "Sociedad académica japonesa que estudia la renta básica",
-        "ar": "جمعية أكاديمية يابانية تدرس الدخل الأساسي"
+        "ar": "جمعية أكاديمية يابانية تدرس الدخل الأساسي",
+        "de": "Japanische Fachgesellschaft zur Grundeinkommensforschung"
       }
     },
     {
@@ -2968,7 +3323,8 @@ module.exports = {
         "zh": "企业家前泽友作发起的民间社会实验：向 1,000 人每人发放共 100 万日元，按不同领取方式分成 4 组，用约一年时间问卷调查其对生活的影响",
         "hi": "उद्यमी Yusaku Maezawa का निजी सामाजिक प्रयोग: 1,000 लोगों को कुल ¥10 लाख प्रति व्यक्ति, अलग-अलग भुगतान तरीकों वाले 4 समूहों में बाँटकर करीब एक साल सर्वे से जीवन पर असर देखा जाता है",
         "es": "Experimento privado del empresario Yusaku Maezawa: 1.000 personas reciben en total 1 millón de yenes cada una, repartidas en cuatro grupos con distintas formas de cobro y encuestadas durante un año sobre el efecto en su vida",
-        "ar": "تجربة اجتماعية خاصة أطلقها رجل الأعمال ⁦Yusaku Maezawa⁩: يحصل 1,000 شخص على مليون ين لكل منهم إجمالًا، موزعين على أربع مجموعات بطرق دفع مختلفة، ويُستطلعون لنحو عام حول أثر ذلك في حياتهم"
+        "ar": "تجربة اجتماعية خاصة أطلقها رجل الأعمال ⁦Yusaku Maezawa⁩: يحصل 1,000 شخص على مليون ين لكل منهم إجمالًا، موزعين على أربع مجموعات بطرق دفع مختلفة، ويُستطلعون لنحو عام حول أثر ذلك في حياتهم",
+        "de": "Ein privates Experiment des Unternehmers Yusaku Maezawa: 1.000 Menschen erhalten insgesamt je 1 Million Yen, aufgeteilt in vier Gruppen mit unterschiedlichen Auszahlungsweisen, und werden etwa ein Jahr lang befragt, wie sich das auf ihr Leben auswirkt"
       }
     }
   ],

@@ -12,6 +12,7 @@
 <link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/">
 <link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/">
 <link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/">
+<link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/">
 <link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/">
 <link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/">
 <meta property="og:type" content="website">
@@ -29,17 +30,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
-<!-- Ğ など本文フォントにない文字だけを補う（その文字だけのサブセット） -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&text=%C4%9E&display=swap">
 <style>
+/* Ğ（本文フォントにない文字）だけを Noto Sans で補う。unicode-range で Ğ 1文字に限定する */
+@font-face{font-family:"GBreve";src:url(https://fonts.gstatic.com/l/font?kit=o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc1azXvFujBSg6T775xg&skey=2b960fe17823056f&v=v42) format("woff2");unicode-range:U+011E;font-display:swap}
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
 :root{
   --paper:#E9EDF6; --paper-2:#F8ECE0; --surface:#FFFFFF; --ink:#18213B; --muted:#56627A; --line:#CFD6E4;
   --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B; --gold:#D99A1E;
   --shadow:0 1px 2px rgba(20,28,60,.06),0 12px 32px -22px rgba(20,28,60,.4);
-  --f-display:"Noto Sans","Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
-  --f-body:"Noto Sans","Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
-  --f-dot:"Noto Sans","DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
+  --f-display:"GBreve","Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-body:"GBreve","Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-dot:"GBreve","DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
   --s1:clamp(2.3rem,6.4vw,4.3rem); --s2:clamp(1.45rem,3.4vw,2.1rem); --s4:.8rem;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
@@ -89,14 +90,15 @@ section[id],header[id]{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 .hero h1{font-size:var(--s1)}
 .hero h1 em{font-style:normal;color:var(--accent)}
 html[lang="en"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
-html[lang="hi"]{--f-display:"Noto Sans","Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"Noto Sans","Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
+html[lang="hi"]{--f-display:"GBreve","Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"GBreve","Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
 html[lang="hi"] body{line-height:1.9}
 html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3,html[lang="hi"] .pick h3{font-weight:700}
 html[lang="hi"] .hero h1{font-size:clamp(2rem,5.4vw,3.6rem);line-height:1.35}
 html[lang="es"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
-html[lang="zh-Hans"]{--f-display:"Noto Sans","Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"Noto Sans","Noto Sans SC",system-ui,sans-serif}
+html[lang="de"] .hero h1{font-size:clamp(1.9rem,5.2vw,3.5rem);letter-spacing:-.01em;hyphens:auto}
+html[lang="zh-Hans"]{--f-display:"GBreve","Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"GBreve","Noto Sans SC",system-ui,sans-serif}
 html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3,html[lang="zh-Hans"] .pick h3{font-weight:900}
-html[lang="ar"]{--f-display:"Noto Sans","Noto Kufi Arabic",sans-serif;--f-body:"Noto Sans","Noto Sans Arabic",system-ui,sans-serif}
+html[lang="ar"]{--f-display:"GBreve","Noto Kufi Arabic",sans-serif;--f-body:"GBreve","Noto Sans Arabic",system-ui,sans-serif}
 html[lang="ar"] body{line-height:1.95}
 html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3,html[lang="ar"] .pick h3{font-weight:700}
 html[lang="ar"] .hero h1{font-size:clamp(2rem,5.2vw,3.5rem);line-height:1.45}
@@ -270,7 +272,9 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   .book{transform:none}
   .nav{display:none}
   .bar-in{flex-wrap:wrap;row-gap:8px}
-  .lang{order:3;overflow-x:auto}
+  .lang{order:3;overflow-x:auto;scrollbar-width:none}
+  .lang::-webkit-scrollbar{display:none}
+  .lang a{padding:3px 7px;font-size:.74rem}
   .tools{padding:8px 10px;gap:8px;border-radius:14px}
   .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:2px 10px;
     -webkit-mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent);mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent)}
@@ -450,7 +454,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <nav class="nav" aria-label="セクション">
       <a href="#list">一覧</a><a href="#how">使い方</a><a href="#faq">よくある質問</a>
     </nav>
-    <div class="lang" role="group" aria-label="言語"><a href="/" hreflang="en" lang="en">EN</a><a href="/ja/" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
+    <div class="lang" role="group" aria-label="言語"><a href="/" hreflang="en" lang="en">EN</a><a href="/ja/" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/de/" hreflang="de" lang="de">Deutsch</a><a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
   </div>
 </div>
 
@@ -757,7 +761,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 <section id="news">
   <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>UPDATES</p><h2>新着・更新履歴</h2></div>
-  <ol class="news rv"><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>WowAppを追加</li><li>Gradidoを追加</li><li>Ubiquitusを追加（アメリカ在住者向け）</li><li>AI-DAC（World App）を追加</li><li>UBIの団体・プロジェクトのページを追加</li><li>AXO（World App）を追加</li><li>ORO（World App）を追加</li><li>Dotareを追加</li><li>Palaiを追加</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>Circles（Gnosis App）を追加</li><li>Ğ1（ジューン）を追加</li></ul></li><li><time class="dot" datetime="2026-10-21">2026.10.21</time><ul><li>Mein Grundeinkommenを追加</li></ul></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>トリマを追加</li><li>InterLinkを追加</li><li>「おすすめ3つ」と信頼度の表示を追加</li><li>WAVEEを「海外OK」に更新</li><li>Delta Kimを追加</li><li>Pi Networkを追加</li><li>Pawns.appを追加</li><li>Sweatcoinを追加</li></ul></li><li><time class="dot" datetime="2026-10-08">2026.10.08</time><ul><li>デザインを一新</li><li>Honeygainを追加</li><li>Grassを追加</li></ul></li></ol>
+  <ol class="news rv"><li><time class="dot" datetime="2026-10-25">2026.10.25</time><ul><li>ドイツ語版を追加</li></ul></li><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>WowAppを追加</li><li>Gradidoを追加</li><li>Ubiquitusを追加（アメリカ在住者向け）</li><li>AI-DAC（World App）を追加</li><li>UBIの団体・プロジェクトのページを追加</li><li>AXO（World App）を追加</li><li>ORO（World App）を追加</li><li>Dotareを追加</li><li>Palaiを追加</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>Circles（Gnosis App）を追加</li><li>Ğ1（ジューン）を追加</li></ul></li><li><time class="dot" datetime="2026-10-21">2026.10.21</time><ul><li>Mein Grundeinkommenを追加</li></ul></li><li><time class="dot" datetime="2026-10-09">2026.10.09</time><ul><li>トリマを追加</li><li>InterLinkを追加</li><li>「おすすめ3つ」と信頼度の表示を追加</li><li>WAVEEを「海外OK」に更新</li><li>Delta Kimを追加</li><li>Pi Networkを追加</li><li>Pawns.appを追加</li><li>Sweatcoinを追加</li></ul></li></ol>
 </section>
 
 <section id="share">

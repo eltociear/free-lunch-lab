@@ -1,13 +1,13 @@
-// 使い方: node build.js  →  public/ に6言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
+// 使い方: node build.js  →  public/ に全言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
 const fs = require('fs');
 const path = require('path');
 const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW } = require('./src/data.js');
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
-const LANG_NAMES = { en: 'EN', ja: '日本語', zh: '中文', hi: 'हिन्दी', es: 'Español', ar: 'العربية' };
-const LANG_TAG = { en: 'en', ja: 'ja', zh: 'zh-Hans', hi: 'hi', es: 'es', ar: 'ar' }; // html lang / hreflang
-const OG_LOCALE = { en: 'en_US', ja: 'ja_JP', zh: 'zh_CN', hi: 'hi_IN', es: 'es_ES', ar: 'ar_AR' };
+const LANG_NAMES = { en: 'EN', ja: '日本語', zh: '中文', hi: 'हिन्दी', es: 'Español', de: 'Deutsch', ar: 'العربية' };
+const LANG_TAG = { en: 'en', ja: 'ja', zh: 'zh-Hans', hi: 'hi', es: 'es', de: 'de', ar: 'ar' }; // html lang / hreflang
+const OG_LOCALE = { en: 'en_US', ja: 'ja_JP', zh: 'zh_CN', hi: 'hi_IN', es: 'es_ES', de: 'de_DE', ar: 'ar_AR' };
 const RTL = new Set(['ar']);
 // 共通: 見出しの Dela Gothic One と数字の DotGothic16。本文フォントは言語ごと
 const BASE_FONTS = 'family=Dela+Gothic+One&family=DotGothic16';
@@ -15,6 +15,7 @@ const LANG_FONTS = {
   en: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
   ja: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
   es: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
+  de: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
   zh: 'family=Noto+Sans+SC:wght@400;500;700;900',
   hi: 'family=Noto+Sans+Devanagari:wght@400;500;700',
   ar: 'family=Noto+Kufi+Arabic:wght@700&family=Noto+Sans+Arabic:wght@400;500;700',
@@ -141,7 +142,7 @@ function news(lang) {
 // 言語ごとによく使われる SNS を先に並べる
 const SHARE_ORDER = {
   ja: ['x', 'line', 'fb', 'tg'], en: ['x', 'wa', 'tg', 'fb'], zh: ['wb', 'x', 'tg', 'fb'],
-  hi: ['wa', 'x', 'tg', 'fb'], es: ['wa', 'x', 'fb', 'tg'], ar: ['wa', 'x', 'tg', 'fb'],
+  hi: ['wa', 'x', 'tg', 'fb'], es: ['wa', 'x', 'fb', 'tg'], de: ['wa', 'x', 'fb', 'tg'], ar: ['wa', 'x', 'tg', 'fb'],
 };
 function shareBtns(lang) {
   const L = T[lang];
@@ -366,7 +367,7 @@ const DETAIL_CSS = `
 .crumbs a{color:var(--muted);text-underline-offset:3px}
 .detail{max-width:760px;margin:20px auto 0;gap:16px;padding:clamp(20px,4vw,32px)}
 .detail:hover{transform:none}
-.detail h1{font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.3;overflow-wrap:anywhere}
+.detail h1{font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.3;overflow-wrap:break-word;hyphens:auto}
 .detail .ava{width:64px;height:64px;font-size:1.4rem}
 .detail h2{font-family:var(--f-body);font-weight:700;font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin-top:4px}
 .detail .body{font-size:.98rem;line-height:1.9}
@@ -514,7 +515,6 @@ ${alts}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${fontsUrl(lang)}">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&text=%C4%9E&display=swap">
 <style>${CSS}${DETAIL_CSS}</style>
 </head>
 <body>

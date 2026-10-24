@@ -11,6 +11,7 @@
 <link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/services/biomatrix/">
 <link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/services/biomatrix/">
 <link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/services/biomatrix/">
+<link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/services/biomatrix/">
 <link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/services/biomatrix/">
 <link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/">
 <meta property="og:type" content="article">
@@ -27,16 +28,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&text=%C4%9E&display=swap">
 <style>
+/* Ğ（本文フォントにない文字）だけを Noto Sans で補う。unicode-range で Ğ 1文字に限定する */
+@font-face{font-family:"GBreve";src:url(https://fonts.gstatic.com/l/font?kit=o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc1azXvFujBSg6T775xg&skey=2b960fe17823056f&v=v42) format("woff2");unicode-range:U+011E;font-display:swap}
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
 :root{
   --paper:#E9EDF6; --paper-2:#F8ECE0; --surface:#FFFFFF; --ink:#18213B; --muted:#56627A; --line:#CFD6E4;
   --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B; --gold:#D99A1E;
   --shadow:0 1px 2px rgba(20,28,60,.06),0 12px 32px -22px rgba(20,28,60,.4);
-  --f-display:"Noto Sans","Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
-  --f-body:"Noto Sans","Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
-  --f-dot:"Noto Sans","DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
+  --f-display:"GBreve","Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-body:"GBreve","Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --f-dot:"GBreve","DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
   --s1:clamp(2.3rem,6.4vw,4.3rem); --s2:clamp(1.45rem,3.4vw,2.1rem); --s4:.8rem;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
@@ -86,14 +88,15 @@ section[id],header[id]{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 .hero h1{font-size:var(--s1)}
 .hero h1 em{font-style:normal;color:var(--accent)}
 html[lang="en"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
-html[lang="hi"]{--f-display:"Noto Sans","Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"Noto Sans","Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
+html[lang="hi"]{--f-display:"GBreve","Noto Sans Devanagari","Dela Gothic One",sans-serif;--f-body:"GBreve","Noto Sans Devanagari","Zen Kaku Gothic New",system-ui,sans-serif}
 html[lang="hi"] body{line-height:1.9}
 html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] .brand,html[lang="hi"] .hanko,html[lang="hi"] .book-head b,html[lang="hi"] .warn h3,html[lang="hi"] .pick h3{font-weight:700}
 html[lang="hi"] .hero h1{font-size:clamp(2rem,5.4vw,3.6rem);line-height:1.35}
 html[lang="es"] .hero h1{font-size:clamp(2.1rem,5.6vw,3.8rem);letter-spacing:-.01em}
-html[lang="zh-Hans"]{--f-display:"Noto Sans","Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"Noto Sans","Noto Sans SC",system-ui,sans-serif}
+html[lang="de"] .hero h1{font-size:clamp(1.9rem,5.2vw,3.5rem);letter-spacing:-.01em;hyphens:auto}
+html[lang="zh-Hans"]{--f-display:"GBreve","Noto Sans SC","Dela Gothic One",sans-serif;--f-body:"GBreve","Noto Sans SC",system-ui,sans-serif}
 html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] .brand,html[lang="zh-Hans"] .hanko,html[lang="zh-Hans"] .book-head b,html[lang="zh-Hans"] .warn h3,html[lang="zh-Hans"] .pick h3{font-weight:900}
-html[lang="ar"]{--f-display:"Noto Sans","Noto Kufi Arabic",sans-serif;--f-body:"Noto Sans","Noto Sans Arabic",system-ui,sans-serif}
+html[lang="ar"]{--f-display:"GBreve","Noto Kufi Arabic",sans-serif;--f-body:"GBreve","Noto Sans Arabic",system-ui,sans-serif}
 html[lang="ar"] body{line-height:1.95}
 html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .brand,html[lang="ar"] .hanko,html[lang="ar"] .book-head b,html[lang="ar"] .warn h3,html[lang="ar"] .pick h3{font-weight:700}
 html[lang="ar"] .hero h1{font-size:clamp(2rem,5.2vw,3.5rem);line-height:1.45}
@@ -267,7 +270,9 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   .book{transform:none}
   .nav{display:none}
   .bar-in{flex-wrap:wrap;row-gap:8px}
-  .lang{order:3;overflow-x:auto}
+  .lang{order:3;overflow-x:auto;scrollbar-width:none}
+  .lang::-webkit-scrollbar{display:none}
+  .lang a{padding:3px 7px;font-size:.74rem}
   .tools{padding:8px 10px;gap:8px;border-radius:14px}
   .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:2px 10px;
     -webkit-mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent);mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent)}
@@ -445,7 +450,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .crumbs a{color:var(--muted);text-underline-offset:3px}
 .detail{max-width:760px;margin:20px auto 0;gap:16px;padding:clamp(20px,4vw,32px)}
 .detail:hover{transform:none}
-.detail h1{font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.3;overflow-wrap:anywhere}
+.detail h1{font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.3;overflow-wrap:break-word;hyphens:auto}
 .detail .ava{width:64px;height:64px;font-size:1.4rem}
 .detail h2{font-family:var(--f-body);font-weight:700;font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin-top:4px}
 .detail .body{font-size:.98rem;line-height:1.9}
@@ -494,7 +499,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   <div class="bar-in">
     <a class="brand" href="/hi/">सोते हुए भी <span>कमाई</span></a>
     <nav class="nav" aria-label="सेक्शन"><a href="/hi/#list">सेवाएँ</a><a href="/hi/#how">कैसे इस्तेमाल करें</a><a href="/hi/#faq">सवाल-जवाब</a></nav>
-    <div class="lang" role="group" aria-label="भाषा"><a href="/services/biomatrix/" hreflang="en" lang="en">EN</a><a href="/ja/services/biomatrix/" hreflang="ja" lang="ja">日本語</a><a href="/zh/services/biomatrix/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/services/biomatrix/" hreflang="hi" lang="hi" aria-current="page">हिन्दी</a><a href="/es/services/biomatrix/" hreflang="es" lang="es">Español</a><a href="/ar/services/biomatrix/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
+    <div class="lang" role="group" aria-label="भाषा"><a href="/services/biomatrix/" hreflang="en" lang="en">EN</a><a href="/ja/services/biomatrix/" hreflang="ja" lang="ja">日本語</a><a href="/zh/services/biomatrix/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/services/biomatrix/" hreflang="hi" lang="hi" aria-current="page">हिन्दी</a><a href="/es/services/biomatrix/" hreflang="es" lang="es">Español</a><a href="/de/services/biomatrix/" hreflang="de" lang="de">Deutsch</a><a href="/ar/services/biomatrix/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
   </div>
 </div>
 <div class="wrap">
