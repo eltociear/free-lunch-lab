@@ -1004,6 +1004,59 @@ module.exports = {
         "need": "أنشئ محفظة واحصل على توثيق من 5 أعضاء حاليين على الأقل عبر «شبكة الثقة». يُفترض أن يعرفك الموثّقون شخصيًا",
         "caution": "المجتمع ناطق بالفرنسية في الغالب ويقوم على العلاقات المباشرة، لذا الانضمام من الخارج (من اليابان مثلًا) صعب جدًا. يمكن لغير الأعضاء الاحتفاظ بـ⁦Ğ1⁩ في محفظة، لكنهم لا يحصلون على العائد اليومي. تُستخدم ⁦Ğ1⁩ غالبًا لتبادل السلع والخدمات، وتحويلها إلى نقود عادية يتم بين الأفراد فقط"
       }
+    },
+    {
+      "id": "palai",
+      "name": "Palai",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 4,
+      "official": "https://palai.org/en",
+      "code": "",
+      "ref": "https://palai.org/en?referrer=eltociear%2B856536b6d-da3a-4f27-9bcf-8eef2ce05bc2",
+      "added": "2026-10-24",
+      "trust": {
+        "cash": "no",
+        "price": "na",
+        "operator": "unknown"
+      },
+      "ja": {
+        "gain": "Palai（¶）のベーシックインカムを毎日",
+        "note": "「人間だから」という理由だけで毎日ベーシックインカムが配られる独自通貨。アプリのインストールは不要で、お金を払う必要もない。使わずに置いておいた残高は少しずつ「蒸発」し（2026年10月時点で年2.000%）、その分がベーシックインカムとして配り直される。友だちを紹介すると、紹介した側に1日分のベーシックインカムが追加でもらえる",
+        "need": "紹介リンクから登録し、携帯電話番号を登録して認証を受ける（身分証は不要）。受け取りは自分で申請し、10日以内に申請しなかった日の分は消える",
+        "caution": "2026年10月時点で、Palaiをユーロや円に換金する方法や公式の交換レートはなく、使い道はPalaiで支払ってくれる人との商品やサービスの交換に限られる。運営元は公式サイトに明記されておらず、「Social Impact Lab Leipzigの支援を受けている」とだけ書かれている"
+      },
+      "en": {
+        "gain": "Palai (¶) basic income every day",
+        "note": "Its own currency that pays everyone a daily basic income simply for being human. No install and no money to pay in. Idle balances slowly “evaporate” (2.000% a year as of Oct 2026), and that amount is redistributed as basic income. When you invite a friend, you get an extra day’s basic income",
+        "need": "Sign up via the referral link and get certified by adding a mobile phone number (no ID needed). You claim your income yourself; days not claimed within 10 days are lost",
+        "caution": "As of Oct 2026 there is no way to cash Palai out into euros or other money and no official exchange rate; you can only trade it for goods and services with people who accept Palai. The site doesn’t name the operator, only that it is “supported by Social Impact Lab Leipzig”"
+      },
+      "zh": {
+        "gain": "每天领取 Palai（¶）基本收入",
+        "note": "一种独立货币，只因“你是人”就每天发放基本收入。无需安装，也不用付钱。闲置余额会慢慢“蒸发”（截至 2026 年 10 月为每年 2.000%），蒸发的部分会作为基本收入重新分配。邀请朋友后，邀请人可额外获得 1 天的基本收入",
+        "need": "通过推荐链接注册，并登记手机号码完成认证（不需要身份证件）。收入需要自己申领，10 天内未申领的部分会作废",
+        "caution": "截至 2026 年 10 月，Palai 还无法兑换成欧元等货币，也没有官方汇率，只能与接受 Palai 的人交换商品或服务。官网没有写明运营方，只写着“由 Social Impact Lab Leipzig 支持”"
+      },
+      "hi": {
+        "gain": "हर दिन Palai (¶) में बेसिक इनकम",
+        "note": "एक अलग करेंसी जो सिर्फ़ इंसान होने की वजह से सबको रोज़ बेसिक इनकम देती है। कुछ इंस्टॉल करने या पैसे देने की ज़रूरत नहीं। बिना इस्तेमाल पड़ा बैलेंस धीरे-धीरे “भाप बनकर उड़ता” है (अक्टूबर 2026 में सालाना 2.000%), और वह रकम बेसिक इनकम के रूप में फिर से बाँटी जाती है। किसी दोस्त को बुलाने पर आपको एक दिन की बेसिक इनकम अलग से मिलती है",
+        "need": "रेफ़रल लिंक से साइन अप करें और मोबाइल नंबर जोड़कर सर्टिफ़ाई हों (ID की ज़रूरत नहीं)। इनकम खुद क्लेम करनी होती है; 10 दिन के अंदर क्लेम न किए गए दिन खत्म हो जाते हैं",
+        "caution": "अक्टूबर 2026 तक Palai को यूरो या दूसरे पैसे में बदलने का कोई तरीका या आधिकारिक एक्सचेंज रेट नहीं है; इसे सिर्फ़ Palai लेने वाले लोगों से सामान और सेवाओं के बदले इस्तेमाल किया जा सकता है। साइट पर ऑपरेटर का नाम नहीं है, सिर्फ़ लिखा है कि इसे “Social Impact Lab Leipzig का सहयोग” मिला है"
+      },
+      "es": {
+        "gain": "Renta básica en Palai (¶) cada día",
+        "note": "Una moneda propia que da a todo el mundo una renta básica diaria solo por ser humano. No hay que instalar nada ni pagar dinero. Los saldos sin usar se «evaporan» poco a poco (2,000 % al año a octubre de 2026) y esa cantidad se reparte de nuevo como renta básica. Si invitas a un amigo, recibes un día extra de renta básica",
+        "need": "Regístrate con el enlace de referido y certifícate añadiendo un número de móvil (no hace falta documento de identidad). La renta se reclama a mano; los días no reclamados en 10 días se pierden",
+        "caution": "A octubre de 2026 no hay forma de cambiar Palai por euros u otro dinero ni tipo de cambio oficial; solo se puede intercambiar por bienes y servicios con quien acepte Palai. La web no dice quién lo gestiona, solo que cuenta con el «apoyo de Social Impact Lab Leipzig»"
+      },
+      "ar": {
+        "gain": "دخل أساسي بعملة ⁦Palai (¶)⁩ كل يوم",
+        "note": "عملة مستقلة تمنح الجميع دخلًا أساسيًا يوميًا لمجرد أنهم بشر. لا حاجة إلى تثبيت شيء ولا إلى دفع أي مال. الأرصدة غير المستخدمة «تتبخر» ببطء (⁦2.000%⁩ سنويًا حتى أكتوبر 2026)، ويُعاد توزيع ذلك المقدار دخلًا أساسيًا. عند دعوة صديق تحصل على دخل يوم إضافي",
+        "need": "سجّل عبر رابط الإحالة ووثّق حسابك بإضافة رقم هاتف محمول (لا حاجة إلى هوية). تطلب دخلك بنفسك، والأيام التي لا تطلبها خلال 10 أيام تضيع",
+        "caution": "حتى أكتوبر 2026 لا توجد طريقة لتحويل ⁦Palai⁩ إلى يورو أو نقود أخرى ولا سعر صرف رسمي، ويمكن فقط مبادلتها بسلع وخدمات مع من يقبلون ⁦Palai⁩. لا يذكر الموقع الجهة المشغّلة، بل فقط أنها «مدعومة من ⁦Social Impact Lab Leipzig⁩»"
+      }
     }
   ],
   "PICKS": [
@@ -1036,6 +1089,15 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-24",
+      "ja": "Palaiを追加",
+      "en": "Added Palai",
+      "zh": "新增 Palai",
+      "hi": "Palai जोड़ा",
+      "es": "Añadido Palai",
+      "ar": "أضفنا ⁦Palai⁩"
+    },
     {
       "date": "2026-10-23",
       "ja": "Circles（Gnosis App）を追加",
@@ -1272,7 +1334,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1384,7 +1446,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1495,7 +1557,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -1606,7 +1668,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -1717,7 +1779,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -1828,7 +1890,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
