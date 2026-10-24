@@ -241,7 +241,17 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::before{content:"Q";flex:none;font-family:var(--f-dot);font-weight:400;font-size:1.15rem;color:var(--gold)}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
-.faq-more{margin-top:14px;font-size:.92rem}
+/* 団体の紹介: お金のカードと区別して、紙の帳面のような落ち着いた枠に */
+#orgs{--sky1:#EC6F6A;--sky2:#F08A4B}
+.orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;gap:16px}
+.orgs-lead{color:var(--muted);max-width:46em}
+.orgs-mini{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:0 22px}
+.orgs-mini li{display:grid;gap:2px;padding:12px 0;border-top:1px solid var(--line)}
+.orgs-mini a{font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.orgs-mini a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.orgs-mini span{font-size:.72rem;color:var(--muted)}
+.orgs-mini p{font-size:.84rem;color:var(--muted);line-height:1.6}
+.orgs-btn{justify-self:start;border-radius:999px;padding:10px 22px}
 .foot a{color:inherit;text-underline-offset:3px}
 .faq p{padding:0 0 16px;padding-inline-start:26px;color:var(--muted);max-width:46em}
 
@@ -438,7 +448,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   <div class="bar-in">
     <a class="brand" href="#top">躺着也<span>到账</span></a>
     <nav class="nav" aria-label="栏目">
-      <a href="#list">服务</a><a href="#how">使用方法</a><a href="#faq">常见问题</a><a href="organizations/">团体</a>
+      <a href="#list">服务</a><a href="#how">使用方法</a><a href="#faq">常见问题</a>
     </nav>
     <div class="lang" role="group" aria-label="语言"><a href="/" hreflang="en" lang="en">EN</a><a href="/ja/" hreflang="ja" lang="ja">日本語</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">中文</a><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
   </div>
@@ -732,6 +742,15 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   </div>
 </section>
 
+<section id="orgs">
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:00</span>ORGANIZATIONS</p><h2>致力于基本收入的团体</h2></div>
+  <div class="orgs-box rv">
+    <p class="orgs-lead">这里介绍的不是能领钱的服务，而是研究、推动或实际发放基本收入与现金的团体，并不是注册后就能拿到钱的。</p>
+    <ul class="orgs-mini"><li><a href="organizations/#org-bien" dir="auto">Basic Income Earth Network (BIEN)</a><span>全球</span><p>自 1986 年起的基本收入国际网络</p></li><li><a href="organizations/#org-givedirectly" dir="auto">GiveDirectly</a><span>美国</span><p>将捐款以现金直接送到贫困家庭的 NGO</p></li><li><a href="organizations/#org-openresearch" dir="auto">OpenResearch</a><span>美国</span><p>对 3,000 人进行三年现金发放研究的机构</p></li><li><a href="organizations/#org-jabi" dir="auto">日本ベーシックインカム学会（JABI）</a><span>日本</span><p>以中立立场研究基本收入的日本学会</p></li></ul>
+    <a class="btn line orgs-btn" href="organizations/">查看全部团体（18 个）</a>
+  </div>
+</section>
+
 <section id="faq">
   <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:30</span>FAQ</p><h2>常见问题</h2></div>
   <div class="faq rv">
@@ -740,7 +759,6 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <details><summary>获得的奖励需要缴税吗？</summary><p>在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。</p></details>
     <details><summary>在日本以外也能用吗？</summary><p>标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO）在日本以外也能使用。其余服务面向日本居民。</p></details>
   </div>
-  <p class="faq-more"><a href="organizations/">查看基本收入团体与项目列表</a></p>
 </section>
 
 <section id="warn">

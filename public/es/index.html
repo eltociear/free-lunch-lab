@@ -241,7 +241,17 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::before{content:"Q";flex:none;font-family:var(--f-dot);font-weight:400;font-size:1.15rem;color:var(--gold)}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
-.faq-more{margin-top:14px;font-size:.92rem}
+/* 団体の紹介: お金のカードと区別して、紙の帳面のような落ち着いた枠に */
+#orgs{--sky1:#EC6F6A;--sky2:#F08A4B}
+.orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;gap:16px}
+.orgs-lead{color:var(--muted);max-width:46em}
+.orgs-mini{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:0 22px}
+.orgs-mini li{display:grid;gap:2px;padding:12px 0;border-top:1px solid var(--line)}
+.orgs-mini a{font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.orgs-mini a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.orgs-mini span{font-size:.72rem;color:var(--muted)}
+.orgs-mini p{font-size:.84rem;color:var(--muted);line-height:1.6}
+.orgs-btn{justify-self:start;border-radius:999px;padding:10px 22px}
 .foot a{color:inherit;text-underline-offset:3px}
 .faq p{padding:0 0 16px;padding-inline-start:26px;color:var(--muted);max-width:46em}
 
@@ -438,7 +448,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   <div class="bar-in">
     <a class="brand" href="#top">Cobra mientras <span>duermes</span></a>
     <nav class="nav" aria-label="Secciones">
-      <a href="#list">Servicios</a><a href="#how">Cómo funciona</a><a href="#faq">Preguntas</a><a href="organizations/">Organizaciones</a>
+      <a href="#list">Servicios</a><a href="#how">Cómo funciona</a><a href="#faq">Preguntas</a>
     </nav>
     <div class="lang" role="group" aria-label="Idioma"><a href="/" hreflang="en" lang="en">EN</a><a href="/ja/" hreflang="ja" lang="ja">日本語</a><a href="/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/" hreflang="es" lang="es" aria-current="page">Español</a><a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
   </div>
@@ -732,6 +742,15 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   </div>
 </section>
 
+<section id="orgs">
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:00</span>ORGANIZATIONS</p><h2>Organizaciones que trabajan por la renta básica</h2></div>
+  <div class="orgs-box rv">
+    <p class="orgs-lead">No son servicios para registrarte y cobrar, sino organizaciones que investigan, defienden o ponen en marcha la renta básica y las transferencias de efectivo.</p>
+    <ul class="orgs-mini"><li><a href="organizations/#org-bien" dir="auto">Basic Income Earth Network (BIEN)</a><span>Global</span><p>Red internacional de renta básica desde 1986</p></li><li><a href="organizations/#org-givedirectly" dir="auto">GiveDirectly</a><span>Estados Unidos</span><p>ONG que entrega donaciones en efectivo directamente a personas en pobreza</p></li><li><a href="organizations/#org-openresearch" dir="auto">OpenResearch</a><span>Estados Unidos</span><p>Hizo un estudio de tres años con pagos en efectivo a 3.000 personas</p></li><li><a href="organizations/#org-jabi" dir="auto">日本ベーシックインカム学会（JABI）</a><span>Japón</span><p>Sociedad académica japonesa que estudia la renta básica</p></li></ul>
+    <a class="btn line orgs-btn" href="organizations/">Ver todas las organizaciones (18)</a>
+  </div>
+</section>
+
 <section id="faq">
   <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:30</span>FAQ</p><h2>Preguntas frecuentes</h2></div>
   <div class="faq rv">
@@ -740,7 +759,6 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <details><summary>¿Las recompensas pagan impuestos?</summary><p>En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.</p></details>
     <details><summary>¿Puedo usarlos fuera de Japón?</summary><p>Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO) funcionan fuera de Japón. El resto son para residentes en Japón.</p></details>
   </div>
-  <p class="faq-more"><a href="organizations/">Ver la lista de organizaciones y proyectos de renta básica</a></p>
 </section>
 
 <section id="warn">

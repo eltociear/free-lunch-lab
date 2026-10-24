@@ -238,7 +238,17 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::before{content:"Q";flex:none;font-family:var(--f-dot);font-weight:400;font-size:1.15rem;color:var(--gold)}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
-.faq-more{margin-top:14px;font-size:.92rem}
+/* 団体の紹介: お金のカードと区別して、紙の帳面のような落ち着いた枠に */
+#orgs{--sky1:#EC6F6A;--sky2:#F08A4B}
+.orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;gap:16px}
+.orgs-lead{color:var(--muted);max-width:46em}
+.orgs-mini{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:0 22px}
+.orgs-mini li{display:grid;gap:2px;padding:12px 0;border-top:1px solid var(--line)}
+.orgs-mini a{font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.orgs-mini a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.orgs-mini span{font-size:.72rem;color:var(--muted)}
+.orgs-mini p{font-size:.84rem;color:var(--muted);line-height:1.6}
+.orgs-btn{justify-self:start;border-radius:999px;padding:10px 22px}
 .foot a{color:inherit;text-underline-offset:3px}
 .faq p{padding:0 0 16px;padding-inline-start:26px;color:var(--muted);max-width:46em}
 
@@ -476,7 +486,6 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .org-meta{font-size:.78rem;color:var(--muted)}
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
-.faq-more{margin-top:14px;font-size:.92rem}
 .foot a{color:inherit;text-underline-offset:3px}
 </style>
 </head>
@@ -484,7 +493,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="bar">
   <div class="bar-in">
     <a class="brand" href="/ja/">寝てても<span>入金</span></a>
-    <nav class="nav" aria-label="セクション"><a href="/ja/#list">一覧</a><a href="/ja/#how">使い方</a><a href="/ja/#faq">よくある質問</a><a href="/ja/organizations/">団体</a></nav>
+    <nav class="nav" aria-label="セクション"><a href="/ja/#list">一覧</a><a href="/ja/#how">使い方</a><a href="/ja/#faq">よくある質問</a></nav>
     <div class="lang" role="group" aria-label="言語"><a href="/services/pawns/" hreflang="en" lang="en">EN</a><a href="/ja/services/pawns/" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="/zh/services/pawns/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/hi/services/pawns/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/services/pawns/" hreflang="es" lang="es">Español</a><a href="/ar/services/pawns/" hreflang="ar" lang="ar" dir="rtl">العربية</a></div>
   </div>
 </div>

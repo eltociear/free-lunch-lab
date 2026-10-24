@@ -1598,7 +1598,6 @@ module.exports = {
       "hRelated": "関連サービス",
       "backList": "サービス一覧に戻る",
       "crumbLabel": "パンくずリスト",
-      "navOrgs": "団体",
       "orgsTitle": "UBIの団体・プロジェクト",
       "orgsH1": "ベーシックインカムの団体・プロジェクト",
       "orgsDesc": "ベーシックインカム（UBI）を推進・研究・実践している世界と日本の団体・プロジェクトを、種類別にまとめました。各団体の現状は2026年10月に確認しています。",
@@ -1606,7 +1605,9 @@ module.exports = {
       "orgsFounded": "設立",
       "orgsOnSite": "このサイトの紹介ページ",
       "orgsRelated": "関連する団体・プロジェクト",
-      "orgsFaqLink": "ベーシックインカムの団体・プロジェクト一覧も見る"
+      "orgsSecH": "ベーシックインカムに取り組む団体",
+      "orgsSecP": "ここからは、お金がもらえるサービスではなく、ベーシックインカムを研究・推進したり、実際に現金を配ったりしている団体の紹介です。登録して何かをもらうためのものではありません。",
+      "orgsSecBtn": "団体一覧を見る（{n}団体）"
     },
     "en": {
       "brand": "Paid While You <span>Sleep</span>",
@@ -1725,7 +1726,6 @@ module.exports = {
       "hRelated": "Related services",
       "backList": "Back to the list",
       "crumbLabel": "Breadcrumb",
-      "navOrgs": "Organizations",
       "orgsTitle": "UBI organizations & projects",
       "orgsH1": "Basic income organizations & projects",
       "orgsDesc": "A curated list of organizations and projects around the world and in Japan that advocate, research or practise basic income (UBI), grouped by type. Checked in October 2026.",
@@ -1733,7 +1733,9 @@ module.exports = {
       "orgsFounded": "Founded",
       "orgsOnSite": "Our page on this service",
       "orgsRelated": "Related organization",
-      "orgsFaqLink": "See the list of basic income organizations & projects"
+      "orgsSecH": "Organizations working on basic income",
+      "orgsSecP": "These are not services you sign up to for money, but organizations that research, campaign for or actually run basic income and cash transfers.",
+      "orgsSecBtn": "See all organizations ({n})"
     },
     "hi": {
       "brand": "सोते हुए भी <span>कमाई</span>",
@@ -1852,7 +1854,6 @@ module.exports = {
       "hRelated": "मिलती-जुलती सेवाएँ",
       "backList": "सूची पर वापस जाएँ",
       "crumbLabel": "ब्रेडक्रंब",
-      "navOrgs": "संगठन",
       "orgsTitle": "UBI संगठन और प्रोजेक्ट",
       "orgsH1": "बेसिक इनकम के संगठन और प्रोजेक्ट",
       "orgsDesc": "दुनिया और जापान में बेसिक इनकम (UBI) की पैरवी, शोध या उस पर अमल करने वाले संगठनों और प्रोजेक्ट की प्रकार के हिसाब से चुनी हुई सूची। अक्टूबर 2026 में जाँची गई।",
@@ -1860,7 +1861,9 @@ module.exports = {
       "orgsFounded": "स्थापना",
       "orgsOnSite": "इस साइट पर इसका पेज",
       "orgsRelated": "संबंधित संगठन",
-      "orgsFaqLink": "बेसिक इनकम संगठनों और प्रोजेक्ट की सूची देखें"
+      "orgsSecH": "बेसिक इनकम पर काम करने वाले संगठन",
+      "orgsSecP": "ये पैसे पाने के लिए साइन अप करने वाली सेवाएँ नहीं हैं, बल्कि ऐसे संगठन हैं जो बेसिक इनकम पर शोध करते हैं, उसकी पैरवी करते हैं या असल में नकद बाँटते हैं।",
+      "orgsSecBtn": "सभी संगठन देखें ({n})"
     },
     "zh": {
       "brand": "躺着也<span>到账</span>",
@@ -1979,7 +1982,6 @@ module.exports = {
       "hRelated": "相关服务",
       "backList": "返回服务列表",
       "crumbLabel": "面包屑导航",
-      "navOrgs": "团体",
       "orgsTitle": "UBI 团体与项目",
       "orgsH1": "基本收入的团体与项目",
       "orgsDesc": "按类型整理了世界和日本推动、研究和实践基本收入（UBI）的团体与项目，各团体现状已于 2026 年 10 月确认。",
@@ -1987,7 +1989,9 @@ module.exports = {
       "orgsFounded": "成立",
       "orgsOnSite": "本站的介绍页",
       "orgsRelated": "相关团体与项目",
-      "orgsFaqLink": "查看基本收入团体与项目列表"
+      "orgsSecH": "致力于基本收入的团体",
+      "orgsSecP": "这里介绍的不是能领钱的服务，而是研究、推动或实际发放基本收入与现金的团体，并不是注册后就能拿到钱的。",
+      "orgsSecBtn": "查看全部团体（{n} 个）"
     },
     "es": {
       "brand": "Cobra mientras <span>duermes</span>",
@@ -2106,7 +2110,6 @@ module.exports = {
       "hRelated": "Servicios relacionados",
       "backList": "Volver a la lista",
       "crumbLabel": "Ruta de navegación",
-      "navOrgs": "Organizaciones",
       "orgsTitle": "Organizaciones y proyectos de RBU",
       "orgsH1": "Organizaciones y proyectos de renta básica",
       "orgsDesc": "Una selección de organizaciones y proyectos de todo el mundo y de Japón que defienden, investigan o ponen en práctica la renta básica (RBU), por tipo. Revisado en octubre de 2026.",
@@ -2114,7 +2117,9 @@ module.exports = {
       "orgsFounded": "Fundación",
       "orgsOnSite": "Nuestra página sobre este servicio",
       "orgsRelated": "Organización relacionada",
-      "orgsFaqLink": "Ver la lista de organizaciones y proyectos de renta básica"
+      "orgsSecH": "Organizaciones que trabajan por la renta básica",
+      "orgsSecP": "No son servicios para registrarte y cobrar, sino organizaciones que investigan, defienden o ponen en marcha la renta básica y las transferencias de efectivo.",
+      "orgsSecBtn": "Ver todas las organizaciones ({n})"
     },
     "ar": {
       "brand": "دخل وأنت <span>نائم</span>",
@@ -2233,7 +2238,6 @@ module.exports = {
       "hRelated": "خدمات ذات صلة",
       "backList": "العودة إلى القائمة",
       "crumbLabel": "مسار التنقل",
-      "navOrgs": "المنظمات",
       "orgsTitle": "منظمات ومشاريع الدخل الأساسي",
       "orgsH1": "منظمات ومشاريع الدخل الأساسي",
       "orgsDesc": "قائمة مختارة بمنظمات ومشاريع حول العالم وفي اليابان تدعو إلى الدخل الأساسي أو تبحث فيه أو تطبّقه، مصنّفة حسب النوع. رُوجعت في أكتوبر 2026.",
@@ -2241,7 +2245,9 @@ module.exports = {
       "orgsFounded": "التأسيس",
       "orgsOnSite": "صفحتنا عن هذه الخدمة",
       "orgsRelated": "منظمة ذات صلة",
-      "orgsFaqLink": "اطّلع على قائمة منظمات ومشاريع الدخل الأساسي"
+      "orgsSecH": "منظمات تعمل على الدخل الأساسي",
+      "orgsSecP": "هذه ليست خدمات تسجّل فيها لتحصل على المال، بل منظمات تبحث في الدخل الأساسي أو تدعو إليه أو تطبّقه فعلًا عبر التحويلات النقدية.",
+      "orgsSecBtn": "عرض كل المنظمات ({n})"
     }
   },
   "ORG_REGIONS": {
@@ -2385,6 +2391,14 @@ module.exports = {
         "hi": "बेसिक इनकम के समर्थक लोगों और संगठनों को जोड़ने वाला अंतरराष्ट्रीय नेटवर्क। 1986 में यूरोपीय नेटवर्क के रूप में शुरू हुआ; अब विश्व सम्मेलन, समाचार और देशों के सहयोगी संगठनों को जोड़ता है",
         "es": "Red internacional que une a personas y grupos que apoyan la renta básica. Nació en 1986 como red europea y hoy organiza un congreso mundial, publica noticias y conecta a sus afiliados nacionales",
         "ar": "شبكة دولية تربط الأفراد والمجموعات المؤيدة للدخل الأساسي. بدأت عام 1986 شبكةً أوروبية، وتنظم اليوم مؤتمرًا عالميًا وتنشر الأخبار وتربط الفروع الوطنية"
+      },
+      "short": {
+        "ja": "1986年から続く、ベーシックインカムの国際ネットワーク",
+        "en": "International basic income network, since 1986",
+        "zh": "自 1986 年起的基本收入国际网络",
+        "hi": "1986 से चल रहा बेसिक इनकम का अंतरराष्ट्रीय नेटवर्क",
+        "es": "Red internacional de renta básica desde 1986",
+        "ar": "شبكة دولية للدخل الأساسي منذ 1986"
       }
     },
     {
@@ -2478,6 +2492,14 @@ module.exports = {
         "hi": "Y Combinator Research के बेसिक इनकम प्रोजेक्ट से निकला गैर-लाभकारी शोध संगठन। इसने 3,000 लोगों को तीन साल तक हर महीने नकद देकर अध्ययन किया और नतीजे प्रकाशित करता है",
         "es": "Organización de investigación sin ánimo de lucro surgida del proyecto de renta básica de Y Combinator Research. Hizo un estudio de tres años con pagos mensuales a 3.000 personas y publica los resultados",
         "ar": "منظمة بحثية غير ربحية نشأت من مشروع الدخل الأساسي في ⁦Y Combinator Research⁩. أجرت دراسة لثلاث سنوات قدّمت فيها نقودًا شهرية لـ3,000 شخص وتنشر نتائجها"
+      },
+      "short": {
+        "ja": "3,000人に3年間現金を配る大規模調査を行った研究組織",
+        "en": "Ran a three-year cash study with 3,000 people",
+        "zh": "对 3,000 人进行三年现金发放研究的机构",
+        "hi": "3,000 लोगों पर तीन साल का नकद अध्ययन करने वाला शोध संगठन",
+        "es": "Hizo un estudio de tres años con pagos en efectivo a 3.000 personas",
+        "ar": "أجرت دراسة نقدية لثلاث سنوات شملت 3,000 شخص"
       }
     },
     {
@@ -2537,6 +2559,14 @@ module.exports = {
         "hi": "दान की रकम को सीधे गरीबी में रह रहे परिवारों तक नकद पहुँचाने वाली गैर-लाभकारी संस्था। 2009 से नकद दे रही है और कई अफ़्रीकी देशों व अमेरिका में काम करती है",
         "es": "Organización sin ánimo de lucro que entrega las donaciones directamente en efectivo a personas en situación de pobreza. Lo hace desde 2009 en varios países de África y en EE. UU.",
         "ar": "منظمة غير ربحية توصل التبرعات نقدًا مباشرةً إلى الأسر التي تعيش في فقر. تقدّم النقود منذ 2009 وتعمل في عدة دول أفريقية والولايات المتحدة"
+      },
+      "short": {
+        "ja": "貧困の中で暮らす家庭に、寄付を現金で直接届けるNGO",
+        "en": "Sends donations as cash directly to people in poverty",
+        "zh": "将捐款以现金直接送到贫困家庭的 NGO",
+        "hi": "दान को सीधे नकद के रूप में गरीब परिवारों तक पहुँचाने वाला NGO",
+        "es": "ONG que entrega donaciones en efectivo directamente a personas en pobreza",
+        "ar": "منظمة توصل التبرعات نقدًا مباشرةً إلى الأسر الفقيرة"
       }
     },
     {
@@ -2634,6 +2664,14 @@ module.exports = {
         "hi": "जापान का अकादमिक संगठन, जहाँ शोधकर्ता, कार्यकर्ता और राजनेता तटस्थ रूप से बेसिक इनकम का अध्ययन करते हैं। वार्षिक सम्मेलन, क्षेत्रीय अध्ययन समूह और एक पत्रिका प्रकाशित करता है",
         "es": "Sociedad académica japonesa en la que investigadores, activistas y políticos estudian la renta básica desde una postura neutral. Celebra un congreso anual y grupos de estudio regionales y edita una revista",
         "ar": "جمعية أكاديمية يابانية يدرس فيها باحثون وناشطون وسياسيون الدخل الأساسي من موقف محايد. تعقد مؤتمرًا سنويًا وحلقات دراسية إقليمية وتصدر مجلة"
+      },
+      "short": {
+        "ja": "ベーシックインカムを中立の立場で研究する日本の学会",
+        "en": "Japanese academic society studying basic income",
+        "zh": "以中立立场研究基本收入的日本学会",
+        "hi": "बेसिक इनकम पर शोध करने वाला जापानी अकादमिक संगठन",
+        "es": "Sociedad académica japonesa que estudia la renta básica",
+        "ar": "جمعية أكاديمية يابانية تدرس الدخل الأساسي"
       }
     },
     {
@@ -2651,5 +2689,11 @@ module.exports = {
         "ar": "تجربة اجتماعية خاصة أطلقها رجل الأعمال ⁦Yusaku Maezawa⁩: يحصل 1,000 شخص على مليون ين لكل منهم إجمالًا، موزعين على أربع مجموعات بطرق دفع مختلفة، ويُستطلعون لنحو عام حول أثر ذلك في حياتهم"
       }
     }
+  ],
+  "ORG_PREVIEW": [
+    "bien",
+    "givedirectly",
+    "openresearch",
+    "jabi"
   ]
 };

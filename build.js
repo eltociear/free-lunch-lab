@@ -1,7 +1,7 @@
 // 使い方: node build.js  →  public/ に6言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
 const fs = require('fs');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW } = require('./src/data.js');
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
@@ -331,6 +331,8 @@ for (const lang of LANGS) {
     trustLegend: trustLegend(lang),
     news: news(lang),
     shareBtns: shareBtns(lang),
+    orgsPreview: ORG_PREVIEW.map(id => ORGS.find(o => o.id === id)).filter(Boolean).map(o => `<li><a href="organizations/#org-${o.id}" dir="auto">${esc(o.name)}</a><span>${esc(o.region ? ORG_REGIONS[o.region][lang] : '')}</span><p>${esc((o.short || o.desc)[lang] || (o.short || o.desc).en)}</p></li>`).join(''),
+    orgsBtn: esc(L.orgsSecBtn.replace('{n}', ORGS.length)),
     script: clientScript(lang),
   };
   body = body.replace(/\{\{(\w+)\}\}/g, (_, k) => {
@@ -405,7 +407,6 @@ const DETAIL_CSS = `
 .org-meta{font-size:.78rem;color:var(--muted)}
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
-.faq-more{margin-top:14px;font-size:.92rem}
 .foot a{color:inherit;text-underline-offset:3px}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
@@ -520,7 +521,7 @@ ${alts}
 <div class="bar">
   <div class="bar-in">
     <a class="brand" href="${home}">${L.brand}</a>
-    <nav class="nav" aria-label="${esc(L.navLabel)}"><a href="${home}#list">${esc(L.navList)}</a><a href="${home}#how">${esc(L.navHow)}</a><a href="${home}#faq">${esc(L.navFaq)}</a><a href="${orgPath(lang)}">${esc(L.navOrgs)}</a></nav>
+    <nav class="nav" aria-label="${esc(L.navLabel)}"><a href="${home}#list">${esc(L.navList)}</a><a href="${home}#how">${esc(L.navHow)}</a><a href="${home}#faq">${esc(L.navFaq)}</a></nav>
     <div class="lang" role="group" aria-label="${esc(L.langLabel)}">${LANGS.map(l => `<a href="${pathFor(l)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}"${RTL.has(l) ? ' dir="rtl"' : ''}${l === lang ? ' aria-current="page"' : ''}>${LANG_NAMES[l]}</a>`).join('')}</div>
   </div>
 </div>
