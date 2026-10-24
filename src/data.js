@@ -1384,6 +1384,59 @@ module.exports = {
         "need": "أنشئ حساب ⁦Gradido⁩ مجانًا من الموقع الرسمي، وسجّل مساهماتك في الصالح العام واستلم ⁦GDD⁩",
         "caution": "تقول الأسئلة الشائعة الرسمية إنه حاليًا نظام نقاط شكر وليس عملة مشفرة. لا توجد معلومات رسمية عن تحويل ⁦GDD⁩ إلى يورو أو نقود أخرى. تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان. في الحساب طريقة لدعوة المعارف، لكن ليس لدى هذا الموقع رابط إحالة له"
       }
+    },
+    {
+      "id": "wowapp",
+      "name": "WowApp",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 4,
+      "official": "https://www.wowapp.com/",
+      "code": "",
+      "ref": "https://www.wowapp.com/w/eltociear/Ikko-Ashimine",
+      "added": "2026-10-24",
+      "trust": {
+        "cash": "partial",
+        "price": "na",
+        "operator": "partial"
+      },
+      "ja": {
+        "gain": "毎日の利用やゲーム・買い物などで少額の報酬",
+        "note": "チャット・通話アプリに、報酬のしくみを組み合わせたサービス。毎日の「UBI（デジタル収入）」の受け取り、ゲーム、オンラインショッピングのキャッシュバック、格安通話、デイリーオファーなどで報酬がたまり、出金するか、100か国以上の約2,000の慈善団体に寄付できる。招待した友だちなど自分のネットワークが活動すると、自分の報酬も増える。App Store の提供元は YouWowMe Limited で、2026年8月にも更新されている",
+        "need": "紹介リンクから無料で登録し、アプリを毎日使う（日本からの利用は2026年10月に実際に確認）",
+        "caution": "報酬は招待した人だけでなく、その先の人たちの活動にも応じて入る多段階（マルチレベル）型。第三者の情報では8段階とされるが、公式には確認できていない。1日あたりの額はごくわずかで、まとまった収入になるとは考えないほうがよい。PayPal への出金には最低額・手数料・連続利用日数などの条件があるとされるが、公式ヘルプは直接確認できなかった。App Store の評価は日本で3.2（167件、2026年10月）で、出金できないという声もある。運営会社の所在地は確認できていない"
+      },
+      "en": {
+        "gain": "Small rewards for daily use, games, shopping and more",
+        "note": "A chat and calling app combined with a rewards scheme. You collect rewards from a daily “UBI” (digital income), games, online shopping cashback, cheap calls and daily offers, then cash out or donate to around 2,000 charities in 100+ countries. Your rewards also grow when your network, such as friends you invited, is active. The App Store publisher is YouWowMe Limited, and the app was updated as recently as Aug 2026",
+        "need": "Sign up free through the referral link and use the app every day (confirmed usable from Japan in Oct 2026, first-hand)",
+        "caution": "Rewards come not only from people you invite but also from the people they bring in: a multi-level network. Third-party sources say 8 levels; this is not officially confirmed. Daily amounts are tiny, so do not expect meaningful income. Cash-outs to PayPal reportedly have a minimum, fees and a daily-streak requirement, but the official help pages could not be checked directly. App Store rating in Japan is 3.2 (167 ratings, Oct 2026), with some users reporting failed cash-outs. The operating company’s location is not confirmed"
+      },
+      "zh": {
+        "gain": "每天使用、游戏、购物等可得少量奖励",
+        "note": "把聊天、通话应用和奖励机制结合起来的服务。可通过每天的“UBI（数字收入）”、游戏、网购返现、低价通话、每日任务等累积奖励，然后提现，或捐给 100 多个国家约 2,000 家慈善机构。你邀请的朋友等自己的网络越活跃，你的奖励也越多。App Store 上的提供者为 YouWowMe Limited，2026 年 8 月仍有更新",
+        "need": "通过推荐链接免费注册，每天使用应用（已于 2026 年 10 月亲自确认可在日本使用）",
+        "caution": "奖励不仅来自你邀请的人，也来自他们再邀请的人，属于多层级（多层次）网络模式。第三方资料称有 8 层，但官方未能确认。每天的金额极少，不应把它当作可观的收入。据称提现到 PayPal 有最低金额、手续费和连续使用天数等条件，但未能直接查看官方帮助页面。日本 App Store 评分为 3.2（167 条，2026 年 10 月），也有用户反映无法提现。运营公司的所在地尚未确认"
+      },
+      "hi": {
+        "gain": "रोज़ के इस्तेमाल, गेम, शॉपिंग आदि पर थोड़े इनाम",
+        "note": "चैट और कॉलिंग ऐप के साथ इनाम की व्यवस्था। रोज़ की “UBI” (डिजिटल आय), गेम, ऑनलाइन शॉपिंग कैशबैक, सस्ती कॉल और रोज़ के ऑफ़र से इनाम जमा होते हैं, जिन्हें निकाला जा सकता है या 100+ देशों की करीब 2,000 चैरिटी को दान किया जा सकता है। आपके बुलाए दोस्त जैसे आपके नेटवर्क के सक्रिय होने पर आपका इनाम भी बढ़ता है। App Store पर प्रकाशक YouWowMe Limited है, और ऐप अगस्त 2026 में भी अपडेट हुआ",
+        "need": "रेफ़रल लिंक से मुफ़्त साइन अप करें और रोज़ ऐप इस्तेमाल करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+        "caution": "इनाम सिर्फ़ आपके बुलाए लोगों से नहीं, बल्कि उनके आगे जुड़े लोगों की गतिविधि से भी आता है: यानी मल्टी-लेवल नेटवर्क। तीसरे पक्ष के स्रोत 8 लेवल बताते हैं; आधिकारिक पुष्टि नहीं हुई। रोज़ की रकम बहुत कम है, इसलिए इसे अच्छी आय न समझें। PayPal पर निकासी के लिए न्यूनतम रकम, फ़ीस और लगातार इस्तेमाल के दिनों की शर्तें बताई जाती हैं, पर आधिकारिक सहायता पेज सीधे नहीं देखे जा सके। जापान के App Store में रेटिंग 3.2 है (167 रेटिंग, अक्टूबर 2026), और कुछ लोगों ने निकासी न हो पाने की शिकायत की है। ऑपरेटर कंपनी का स्थान पुष्ट नहीं है"
+      },
+      "es": {
+        "gain": "Pequeñas recompensas por usarla a diario, jugar, comprar y más",
+        "note": "Una app de chat y llamadas combinada con un sistema de recompensas. Acumulas recompensas con una «UBI» diaria (ingreso digital), juegos, reembolsos por compras online, llamadas baratas y ofertas diarias, y luego las retiras o las donas a unas 2.000 organizaciones benéficas de más de 100 países. Tus recompensas también crecen cuando tu red, como los amigos que invitaste, está activa. En la App Store la publica YouWowMe Limited, y se actualizó todavía en agosto de 2026",
+        "need": "Regístrate gratis con el enlace de referido y usa la app cada día (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+        "caution": "Las recompensas no solo vienen de las personas que invitas, sino también de las que invitan ellas: es una red multinivel. Fuentes externas hablan de 8 niveles; no está confirmado oficialmente. Las cantidades diarias son mínimas, así que no esperes un ingreso significativo. Al parecer, los retiros a PayPal tienen mínimo, comisiones y un requisito de días seguidos de uso, pero no se pudieron consultar directamente las páginas de ayuda oficiales. En la App Store de Japón tiene una nota de 3,2 (167 valoraciones, octubre de 2026), y algunos usuarios dicen que no pudieron retirar. No está confirmada la ubicación de la empresa"
+      },
+      "ar": {
+        "gain": "مكافآت صغيرة مقابل الاستخدام اليومي والألعاب والتسوق وغيرها",
+        "note": "تطبيق دردشة واتصال مع نظام مكافآت. تجمع المكافآت من «دخل أساسي» رقمي يومي، والألعاب، واسترداد نقدي من التسوق عبر الإنترنت، ومكالمات رخيصة، وعروض يومية، ثم تسحبها أو تتبرع بها لنحو 2,000 جمعية خيرية في أكثر من 100 دولة. تزيد مكافآتك أيضًا عندما تنشط شبكتك، مثل الأصدقاء الذين دعوتهم. الناشر في ⁦App Store⁩ هو ⁦YouWowMe Limited⁩، وقد حُدّث التطبيق حتى أغسطس 2026",
+        "need": "سجّل مجانًا عبر رابط الإحالة واستخدم التطبيق يوميًا (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+        "caution": "لا تأتي المكافآت ممن تدعوهم فقط، بل أيضًا ممن يدعونهم بدورهم: أي شبكة متعددة المستويات. تذكر مصادر خارجية 8 مستويات، ولم يتأكد ذلك رسميًا. المبالغ اليومية ضئيلة جدًا، فلا تتوقع دخلًا يُعتد به. يُقال إن السحب إلى ⁦PayPal⁩ يتطلب حدًا أدنى ورسومًا وعددًا من أيام الاستخدام المتتالية، لكن تعذّر الاطلاع على صفحات المساعدة الرسمية مباشرة. تقييمه في متجر ⁦App Store⁩ الياباني 3.2 (167 تقييمًا، أكتوبر 2026)، ويشكو بعض المستخدمين من تعذر السحب. موقع الشركة المشغّلة غير مؤكد"
+      }
     }
   ],
   "PICKS": [
@@ -1416,6 +1469,15 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-24",
+      "ja": "WowAppを追加",
+      "en": "Added WowApp",
+      "zh": "新增 WowApp",
+      "hi": "WowApp जोड़ा",
+      "es": "Añadido WowApp",
+      "ar": "أضفنا ⁦WowApp⁩"
+    },
     {
       "date": "2026-10-24",
       "ja": "Gradidoを追加",
@@ -1724,7 +1786,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1854,7 +1916,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1983,7 +2045,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -2112,7 +2174,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -2241,7 +2303,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -2370,7 +2432,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido وWowApp) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
