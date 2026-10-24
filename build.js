@@ -1,4 +1,4 @@
-// 使い方: node build.js  →  public/ に en(/), ja(/ja/), hi(/hi/), sitemap.xml, robots.txt を生成
+// 使い方: node build.js  →  public/ に6言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
 const fs = require('fs');
 const path = require('path');
 const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T } = require('./src/data.js');
@@ -24,6 +24,9 @@ const fontsUrl = l => `https://fonts.googleapis.com/css2?${BASE_FONTS}&${LANG_FO
 const live = SERVICES.filter(s => s.ref || s.noRef); // 紹介リンクがあるもの（と紹介制度のない noRef）だけ表示
 const urlPath = l => (l === DEFAULT_LANG ? '/' : `/${l}/`);
 const abs = l => SITE_URL + urlPath(l);
+// サービスごとの個別ページ: /services/{id}/（英語）と /{lang}/services/{id}/
+const svcPath = (l, s) => `${urlPath(l)}services/${s.id}/`;
+const svcAbs = (l, s) => SITE_URL + svcPath(l, s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 function meter(n) {
@@ -75,19 +78,30 @@ function card(s, lang) {
   const L = T[lang];
   const d = s[lang] || s.en;
   const name = lang === 'ja' ? s.name : s.nameEn || s.name;
+  return `<article class="svc rv" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
+<div class="svc-top">${ava(s, name)}<div class="svc-id"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span><a href="${svcPath(lang, s)}">${esc(name)}</a></h3>${tags(s, L)}</div></div>
+<p class="gain">${esc(d.gain)}</p>
+<div class="desc"><p id="d-${s.id}">${esc(d.note)}</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-${s.id}" hidden>${esc(L.more)}</button></div>
+<p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
+${meta(s, lang)}
+${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
+${slip(s, L)}
+</article>`;
+}
+
+// カードと個別ページで共通の部品
+const ava = (s, name) => `<span class="ava" aria-hidden="true" dir="auto">${esc(mono(s, name))}</span>`;
+const tags = (s, L) => `<div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div>`;
+function meta(s, lang) {
+  const L = T[lang];
+  return `<div class="meta"><span class="ease"><span>${esc(L.ease)}</span>${meter(s.ease)}</span><span class="region${s.global ? ' world' : ''}"><span class="vh">${esc(L.region)}: </span>${esc(s.global ? L.global : L.jp)}</span>${trust(s, lang)}</div>`;
+}
+function slip(s, L) {
   const has = !!s.code;
   // 紹介リンクがあるものはコード欄・コピーボタンを出さない。codeOnly はリンクが公式ページだけなのでコードを出す
   // noRef は紹介制度がないのでコード欄も出さない
   const showCode = (!s.ref && !s.noRef) || s.codeOnly;
-  return `<article class="svc rv" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">${esc(mono(s, name))}</span><div class="svc-id"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span>${esc(name)}</h3><div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div></div></div>
-<p class="gain">${esc(d.gain)}</p>
-<div class="desc"><p id="d-${s.id}">${esc(d.note)}</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-${s.id}" hidden>${esc(L.more)}</button></div>
-<p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
-<div class="meta"><span class="ease"><span>${esc(L.ease)}</span>${meter(s.ease)}</span><span class="region${s.global ? ' world' : ''}"><span class="vh">${esc(L.region)}: </span>${esc(s.global ? L.global : L.jp)}</span>${trust(s, lang)}</div>
-${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
-<div class="slip">${showCode ? `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot"${has ? ' dir="ltr"' : ''}>${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>` : ''}${cta(s, L)}</div>
-</article>`;
+  return `<div class="slip">${showCode ? `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot"${has ? ' dir="ltr"' : ''}>${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>` : ''}${cta(s, L)}</div>`;
 }
 
 // 流れるテープ（サービス名＋もらえるもの）
@@ -338,21 +352,173 @@ ${body.slice(cut).trim()}
   fs.writeFileSync(path.join(dir, 'index.html'), html);
 }
 
+// ---- サービスごとの個別ページ（検索で「サービス名 とは」などから来る人向け）。中身は SERVICES のデータだけで作る
+const CSS = template.slice(template.indexOf('<style>') + 7, template.indexOf('</style>'));
+const DETAIL_CSS = `
+.crumbs ol{list-style:none;margin:0;padding:14px 0 0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.8rem;color:var(--muted)}
+.crumbs li+li::before{content:"›";margin-inline-end:8px;opacity:.7}
+[dir="rtl"] .crumbs li+li::before{content:"‹"}
+.crumbs a{color:var(--muted);text-underline-offset:3px}
+.detail{max-width:760px;margin:20px auto 0;gap:16px;padding:clamp(20px,4vw,32px)}
+.detail:hover{transform:none}
+.detail h1{font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.3;overflow-wrap:anywhere}
+.detail .ava{width:64px;height:64px;font-size:1.4rem}
+.detail h2{font-family:var(--f-body);font-weight:700;font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin-top:4px}
+.detail .body{font-size:.98rem;line-height:1.9}
+.detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
+.detail .meta{margin-top:4px}
+.detail .caution{font-size:.88rem}
+#related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
+.rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
+.rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
+.rel:hover{border-color:color-mix(in srgb,var(--c) 50%,var(--line))}
+.rel .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.rel>span:last-child{display:grid;min-width:0}
+.rel b{font-size:.98rem;line-height:1.35;overflow-wrap:anywhere}
+.rel small{font-size:.78rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.back{max-width:760px;margin:28px auto 0;display:flex;justify-content:center}
+.back .btn{border-radius:999px;padding:10px 22px}
+.detail-foot{margin-top:clamp(48px,7vw,80px)}
+.detail-foot .foot{padding-top:18px}
+`;
+const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
+// meta description 用に長さをそろえる（日本語・中国語は短め）
+function clip(str, lang) {
+  const n = lang === 'ja' || lang === 'zh' ? 110 : 155;
+  const a = [...str];
+  return a.length <= n ? str : a.slice(0, n - 1).join('').trimEnd() + '…';
+}
+// 関連サービス: 同じカテゴリから最大4つ。3つに満たなければ同じ種類（継続/1回）→その他で埋める
+function related(s) {
+  const others = live.filter(x => x.id !== s.id);
+  const out = others.filter(x => x.cat === s.cat).slice(0, 4);
+  for (const x of [...others.filter(x => x.type === s.type), ...others]) {
+    if (out.length >= 3) break;
+    if (!out.includes(x)) out.push(x);
+  }
+  return out;
+}
+function servicePage(s, lang) {
+  const L = T[lang];
+  const d = s[lang] || s.en;
+  const name = sName(s, lang);
+  const rtl = RTL.has(lang);
+  const sep = lang === 'ja' || lang === 'zh' ? '：' : ': ';
+  const end = lang === 'ja' || lang === 'zh' ? '。' : '. ';
+  const title = `${L.svcTitle.replace('{name}', name)} | ${L.title}`;
+  const desc = clip(`${name}${sep}${d.gain}${end}${d.note}`, lang);
+  const url = svcAbs(lang, s);
+  const home = urlPath(lang);
+  const alts = LANGS.map(l => `<link rel="alternate" hreflang="${LANG_TAG[l]}" href="${svcAbs(l, s)}">`).join('\n');
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name, item: url },
+    ],
+  };
+  const rel = related(s).map(x => `<a class="rel" data-cat="${x.cat}" href="${svcPath(lang, x)}">${ava(x, sName(x, lang))}<span><span class="cat">${esc(CATS[lang][x.cat])}</span><b>${esc(sName(x, lang))}</b><small>${esc((x[lang] || x.en).gain)}</small></span></a>`).join('');
+  const i18n = { copied: L.copied, selected: L.selected };
+  return `<!doctype html>
+<html lang="${LANG_TAG[lang]}"${rtl ? ' dir="rtl"' : ''}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(desc)}">
+<link rel="canonical" href="${url}">
+${alts}
+<link rel="alternate" hreflang="x-default" href="${svcAbs(DEFAULT_LANG, s)}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc)}">
+<meta property="og:url" content="${url}">
+<meta property="og:locale" content="${OG_LOCALE[lang]}">
+<meta property="og:image" content="${SITE_URL}/og/${lang}.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${SITE_URL}/og/${lang}.png">
+<script type="application/ld+json">${JSON.stringify(ld)}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="${fontsUrl(lang)}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&text=%C4%9E&display=swap">
+<style>${CSS}${DETAIL_CSS}</style>
+</head>
+<body>
+<div class="bar">
+  <div class="bar-in">
+    <a class="brand" href="${home}">${L.brand}</a>
+    <nav class="nav" aria-label="${esc(L.navLabel)}"><a href="${home}#list">${esc(L.navList)}</a><a href="${home}#how">${esc(L.navHow)}</a><a href="${home}#faq">${esc(L.navFaq)}</a></nav>
+    <div class="lang" role="group" aria-label="${esc(L.langLabel)}">${LANGS.map(l => `<a href="${svcPath(l, s)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}"${RTL.has(l) ? ' dir="rtl"' : ''}${l === lang ? ' aria-current="page"' : ''}>${LANG_NAMES[l]}</a>`).join('')}</div>
+  </div>
+</div>
+<div class="wrap">
+<p class="pr"><b>PR</b><span>${L.pr}</span></p>
+<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${home}#list">${esc(L.listH)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
+<main>
+<article class="svc detail" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
+<div class="svc-top">${ava(s, name)}<div class="svc-id"><span class="cat">${esc(CATS[lang][s.cat])}</span><h1>${esc(name)}</h1>${tags(s, L)}</div></div>
+<h2>${esc(L.hGain)}</h2>
+<p class="gain">${esc(d.gain)}</p>
+<h2>${esc(L.hAbout.replace('{name}', name))}</h2>
+<p class="body">${esc(d.note)}</p>
+<h2>${esc(L.hNeed)}</h2>
+<p class="body">${esc(d.need)}</p>
+${meta(s, lang)}
+${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
+${slip(s, L)}
+</article>
+<section id="related">
+  <div class="sec-head"><h2>${esc(L.hRelated)}</h2></div>
+  <div class="rel-grid">${rel}</div>
+</section>
+<p class="back"><a class="btn line" href="${home}#list">${rtl ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>
+</div>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<div class="toast" id="toast" role="status" hidden></div>
+<script>
+(function(){
+  var I18N=${JSON.stringify(i18n)},toast=document.getElementById('toast'),timer;
+  function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-code]'); if(!b) return;
+    var code=b.getAttribute('data-code'),span=b.previousElementSibling.querySelector('.dot');
+    function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
+    try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
+  });
+})();
+</script>
+</body>
+</html>
+`;
+}
+for (const lang of LANGS) {
+  for (const s of live) {
+    const dir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'services', s.id);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'index.html'), servicePage(s, lang));
+  }
+}
+
 // SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
 const OG_SRC = path.join(__dirname, 'src/og');
 if (fs.existsSync(OG_SRC)) fs.cpSync(OG_SRC, path.join(OUT, 'og'), { recursive: true });
 
 const today = new Date().toISOString().slice(0, 10);
-const alts = LANGS.map(l => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[l]}" href="${abs(l)}"/>`).join('\n');
+// 1ページ分の <url>。href(l) で各言語版の URL を返す
+const sitemapUrls = href => LANGS.map(l => `  <url>
+    <loc>${href(l)}</loc>
+    <lastmod>${today}</lastmod>
+${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href="${href(k)}"/>`).join('\n')}
+    <xhtml:link rel="alternate" hreflang="x-default" href="${href(DEFAULT_LANG)}"/>
+  </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${LANGS.map(l => `  <url>
-    <loc>${abs(l)}</loc>
-    <lastmod>${today}</lastmod>
-${alts}
-    <xhtml:link rel="alternate" hreflang="x-default" href="${abs(DEFAULT_LANG)}"/>
-  </url>`).join('\n')}
+${[sitemapUrls(abs), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
-console.log(`built ${LANGS.length} pages, ${live.length} services shown (${SERVICES.length - live.length} hidden)`);
+console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages, ${live.length} services shown (${SERVICES.length - live.length} hidden)`);

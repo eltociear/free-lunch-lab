@@ -10,9 +10,15 @@ Search Console: [neteru-nyukin.eltociear.workers.dev](https://search.google.com/
 
 - `src/data.js` … サービス一覧（`SERVICES`）、カテゴリ名、各言語の文言、サイトURL
 - `src/template.html` … ページのテンプレート（デザイン・CSS）
-- `build.js` … `public/` に6言語のページ、`sitemap.xml`、`robots.txt` を生成
+- `build.js` … `public/` に6言語の一覧ページ、サービスごとの個別ページ、`sitemap.xml`、`robots.txt` を生成
 - `og.js` … SNS シェア用の画像（1200×630）を Chrome で `src/og/` に作る。`build.js` が `public/og/` にコピーする
 - `public/` … 生成物（Cloudflare に公開されるフォルダ）
+
+## ページ構成
+
+- 一覧: `/`（英語）、`/ja/`、`/zh/`、`/hi/`、`/es/`、`/ar/`
+- 個別ページ: `/services/{id}/`（英語）と `/{lang}/services/{id}/`。表示中のサービス（`ref` があるか `noRef`）ごとに6言語ぶん作る。中身は `SERVICES` のデータだけで、見出しなどの文言は `T` の `svcTitle`・`hGain`・`hAbout`・`hNeed`・`hRelated`・`backList`・`crumbLabel`
+- 一覧のカードのサービス名から個別ページへリンクする。`sitemap.xml` には全ページが入る
 
 ## サービスの追加・編集
 

@@ -1391,7 +1391,14 @@ module.exports = {
       "dawnSub": "アプリを開いて、残高をのぞいてみましょう。まだなら、今夜のぶんを仕込んでおけます。",
       "dawnCta": "サービス一覧へ",
       "more": "もっと見る",
-      "less": "閉じる"
+      "less": "閉じる",
+      "svcTitle": "{name}とは？もらえるもの・始め方",
+      "hGain": "もらえるもの",
+      "hAbout": "{name}とは",
+      "hNeed": "始め方・条件",
+      "hRelated": "関連サービス",
+      "backList": "サービス一覧に戻る",
+      "crumbLabel": "パンくずリスト"
     },
     "en": {
       "brand": "Paid While You <span>Sleep</span>",
@@ -1502,7 +1509,14 @@ module.exports = {
       "dawnSub": "Open your apps and peek at the balance. Haven’t started yet? Set one up for tonight.",
       "dawnCta": "Back to the list",
       "more": "Show more",
-      "less": "Show less"
+      "less": "Show less",
+      "svcTitle": "What is {name}? What you get & how to start",
+      "hGain": "What you get",
+      "hAbout": "What is {name}?",
+      "hNeed": "How to start",
+      "hRelated": "Related services",
+      "backList": "Back to the list",
+      "crumbLabel": "Breadcrumb"
     },
     "hi": {
       "brand": "सोते हुए भी <span>कमाई</span>",
@@ -1613,7 +1627,14 @@ module.exports = {
       "dawnSub": "ऐप खोलकर बैलेंस देख लीजिए। अभी शुरू नहीं किया? आज रात के लिए एक सेट कर लीजिए।",
       "dawnCta": "सेवाओं की सूची देखें",
       "more": "और पढ़ें",
-      "less": "कम दिखाएँ"
+      "less": "कम दिखाएँ",
+      "svcTitle": "{name} क्या है? क्या मिलता है और कैसे शुरू करें",
+      "hGain": "क्या मिलता है",
+      "hAbout": "{name} क्या है?",
+      "hNeed": "कैसे शुरू करें",
+      "hRelated": "मिलती-जुलती सेवाएँ",
+      "backList": "सूची पर वापस जाएँ",
+      "crumbLabel": "ब्रेडक्रंब"
     },
     "zh": {
       "brand": "躺着也<span>到账</span>",
@@ -1724,7 +1745,14 @@ module.exports = {
       "dawnSub": "打开应用看看余额吧。还没开始的话，现在就为今晚做好准备。",
       "dawnCta": "查看服务列表",
       "more": "展开",
-      "less": "收起"
+      "less": "收起",
+      "svcTitle": "{name}是什么？能得到什么・如何开始",
+      "hGain": "能得到什么",
+      "hAbout": "{name}是什么",
+      "hNeed": "如何开始・条件",
+      "hRelated": "相关服务",
+      "backList": "返回服务列表",
+      "crumbLabel": "面包屑导航"
     },
     "es": {
       "brand": "Cobra mientras <span>duermes</span>",
@@ -1835,7 +1863,14 @@ module.exports = {
       "dawnSub": "Abre tus apps y echa un vistazo al saldo. ¿Aún no empiezas? Deja una lista para esta noche.",
       "dawnCta": "Ver la lista",
       "more": "Ver más",
-      "less": "Ver menos"
+      "less": "Ver menos",
+      "svcTitle": "¿Qué es {name}? Qué recibes y cómo empezar",
+      "hGain": "Qué recibes",
+      "hAbout": "¿Qué es {name}?",
+      "hNeed": "Cómo empezar",
+      "hRelated": "Servicios relacionados",
+      "backList": "Volver a la lista",
+      "crumbLabel": "Ruta de navegación"
     },
     "ar": {
       "brand": "دخل وأنت <span>نائم</span>",
@@ -1946,7 +1981,14 @@ module.exports = {
       "dawnSub": "افتح تطبيقاتك وألقِ نظرة على الرصيد. لم تبدأ بعد؟ جهّز واحدًا لليلة.",
       "dawnCta": "العودة إلى القائمة",
       "more": "عرض المزيد",
-      "less": "عرض أقل"
+      "less": "عرض أقل",
+      "svcTitle": "ما هو {name}؟ ما الذي تحصل عليه وكيف تبدأ",
+      "hGain": "ما الذي تحصل عليه",
+      "hAbout": "ما هو {name}؟",
+      "hNeed": "كيف تبدأ",
+      "hRelated": "خدمات ذات صلة",
+      "backList": "العودة إلى القائمة",
+      "crumbLabel": "مسار التنقل"
     }
   }
 };
