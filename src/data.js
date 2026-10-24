@@ -1220,6 +1220,61 @@ module.exports = {
         "need": "افتح التطبيق المصغّر في ⁦World App⁩ عبر رابط الإحالة (رمز الإحالة ⁦932BDA⁩)، وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)، وطالب كل يوم",
         "caution": "لا يُذكر رسميًا المقدار اليومي ولا ماهية مكافأة الإحالة. تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب ⁦World ID⁩ موثَّق عبر ⁦Orb⁩، ولا يُعرف إن كان مستوى تحقق أدنى (دون ⁦Orb⁩) كافيًا. يمكن مبادلة ⁦AXO⁩ بـ⁦WLD⁩ في منصة تداول لامركزية (⁦DEX⁩)، لكن السيولة في أكتوبر 2026 نحو ⁦$2,000⁩ فقط، وقيمة ⁦1 AXO⁩ جزء ضئيل جدًا من السنت. لم نعثر على معلومات عن الشركة المشغّلة"
       }
+    },
+    {
+      "id": "aidac",
+      "name": "AI-DAC（World App）",
+      "nameEn": "AI-DAC (World App)",
+      "cat": "crypto-bi",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://lp.ai-dac.com/",
+      "code": "",
+      "ref": "",
+      "noRef": true,
+      "added": "2026-10-24",
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ja": {
+        "gain": "DAC トークンのUBI",
+        "note": "World App の中で動くミニアプリで、「AIを使ったユニバーサル・ベーシックインカムのプラットフォーム」をうたう。World ID で人間と確認された人が DAC のUBIを受け取り、それを使って、アプリを企画・開発・公開する自律型の「AI CEO」を応援したり、リリースに投票やフィードバックをしたりする。運営は創設者の Kei Iwami 氏。紹介リンクや紹介特典はない",
+        "need": "World App でミニアプリ AI-DAC を開き、World ID で人間であることを証明する（日本からはOrb認証済みで利用を確認）",
+        "caution": "もらえる量・頻度、使える地域、換金方法は公式に書かれていない。2026年10月に、OrbでWorld IDを認証したアカウントで日本から使えることを確認した。Orbより低い認証レベルで足りるかはわかっていない。DAC は World Chain 上の ERC-20 トークンで、総供給量は1億 DAC とされているが、コントラクトに発行上限はなく、運営者がいつでも追加発行（ミント）やエアドロップができる。追加発行されると1枚あたりの価値は薄まりうる。公式に「投資目的ではなく、価値は保証されない」とある。分散型取引所（DEX）に WLD との取引ペアがあるが、2026年10月時点で流動性は約170ドルとごくわずか。アプリ制作の注文は DAC とは別に World の USDC で支払う"
+      },
+      "en": {
+        "gain": "UBI in DAC tokens",
+        "note": "A mini app inside World App that calls itself an “AI-powered universal basic income platform”. People verified as human with World ID receive DAC UBI and use it to back autonomous “AI CEOs” that plan, build and ship apps, and to vote and give feedback on releases. Run by founder Kei Iwami. There is no referral link or referral bonus",
+        "need": "Open the AI-DAC mini app in World App and prove you are human with World ID (confirmed from Japan with Orb verification)",
+        "caution": "The amount, frequency, regions and cash-out are not stated officially. Confirmed usable from Japan with an Orb-verified World ID in Oct 2026; whether a lower (non-Orb) verification level is enough is unknown. DAC is an ERC-20 token on World Chain with a stated total supply of 100M, but the contract has no supply cap and the owner can mint and airdrop more at any time, which can dilute its value. The project says it is not for investment and its value is not guaranteed. There is a DAC/WLD pair on a decentralized exchange (DEX), but as of Oct 2026 liquidity is only about $170. App production orders are paid separately in World USDC"
+      },
+      "zh": {
+        "gain": "DAC 代币形式的 UBI",
+        "note": "在 World App 内运行的小程序，自称“由 AI 驱动的全民基本收入平台”。经 World ID 验证为真人的用户可领取 DAC UBI，用它支持能策划、开发并发布应用的自主“AI CEO”，并对发布内容投票和反馈。运营者为创始人 Kei Iwami。没有推荐链接，也没有推荐奖励",
+        "need": "在 World App 中打开 AI-DAC 小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用）",
+        "caution": "官方没有写明领取数量、频率、可用地区和兑现方式。2026 年 10 月已确认，使用经 Orb 验证的 World ID 账户可在日本使用；低于 Orb 的验证等级是否足够尚不清楚。DAC 是 World Chain 上的 ERC-20 代币，宣称总供应量为 1 亿枚，但合约没有发行上限，所有者可随时增发（铸造）和空投，可能稀释其价值。官方表示它不以投资为目的，价值不受保证。去中心化交易所（DEX）上有 DAC/WLD 交易对，但截至 2026 年 10 月流动性只有约 170 美元。应用制作订单需另外用 World 的 USDC 支付"
+      },
+      "hi": {
+        "gain": "DAC टोकन में UBI",
+        "note": "World App के अंदर चलने वाला मिनी ऐप, जो खुद को “AI से चलने वाला यूनिवर्सल बेसिक इनकम प्लेटफ़ॉर्म” कहता है। World ID से इंसान साबित हुए लोग DAC UBI पाते हैं और उससे ऐप की योजना बनाने, बनाने और रिलीज़ करने वाले स्वायत्त “AI CEO” का समर्थन करते हैं, और रिलीज़ पर वोट व फ़ीडबैक देते हैं। इसे संस्थापक Kei Iwami चलाते हैं। कोई रेफ़रल लिंक या रेफ़रल बोनस नहीं है",
+        "need": "World App में AI-DAC मिनी ऐप खोलें और World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि)",
+        "caution": "रकम, कितनी बार मिलेगा, किन क्षेत्रों में चलेगा और नकद में कैसे बदलें, यह आधिकारिक रूप से नहीं बताया गया। अक्टूबर 2026 में पुष्टि हुई कि Orb से वेरिफ़ाई की गई World ID वाले अकाउंट से यह जापान में चलता है; Orb से कम वेरिफ़िकेशन लेवल काफ़ी है या नहीं, यह पता नहीं। DAC, World Chain पर ERC-20 टोकन है और कुल सप्लाई 10 करोड़ बताई गई है, पर कॉन्ट्रैक्ट में कोई सीमा नहीं है और मालिक कभी भी और टोकन मिंट व एयरड्रॉप कर सकता है, जिससे कीमत घट सकती है। प्रोजेक्ट कहता है कि यह निवेश के लिए नहीं है और कीमत की गारंटी नहीं है। डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर DAC/WLD पेयर है, पर अक्टूबर 2026 में लिक्विडिटी सिर्फ़ लगभग $170 है। ऐप बनवाने के ऑर्डर का भुगतान अलग से World USDC में होता है"
+      },
+      "es": {
+        "gain": "UBI en tokens DAC",
+        "note": "Una mini app dentro de World App que se presenta como una «plataforma de renta básica universal impulsada por IA». Las personas verificadas como humanas con World ID reciben UBI en DAC y la usan para apoyar a «CEO de IA» autónomos que planifican, crean y publican apps, y para votar y opinar sobre los lanzamientos. La gestiona su fundador, Kei Iwami. No hay enlace ni bono de referido",
+        "need": "Abre la mini app AI-DAC en World App y demuestra que eres humano con World ID (confirmado desde Japón con verificación Orb)",
+        "caution": "No se indican oficialmente la cantidad, la frecuencia, las regiones ni cómo cobrar. En octubre de 2026 se confirmó que funciona desde Japón con un World ID verificado por Orb; no se sabe si basta un nivel de verificación inferior (sin Orb). DAC es un token ERC-20 en World Chain con un suministro total declarado de 100 millones, pero el contrato no tiene límite y el propietario puede acuñar y repartir más en cualquier momento, lo que puede diluir su valor. El proyecto dice que no es para invertir y que su valor no está garantizado. Hay un par DAC/WLD en un exchange descentralizado (DEX), pero a octubre de 2026 la liquidez es de solo unos 170 $. Los encargos de producción de apps se pagan aparte en USDC de World"
+      },
+      "ar": {
+        "gain": "دخل أساسي بعملة ⁦DAC⁩",
+        "note": "تطبيق مصغّر داخل ⁦World App⁩ يصف نفسه بأنه «منصة دخل أساسي شامل مدعومة بالذكاء الاصطناعي». يحصل من يُثبتون أنهم بشر عبر ⁦World ID⁩ على دخل بعملة ⁦DAC⁩ ويستخدمونه لدعم «مديرين تنفيذيين بالذكاء الاصطناعي» يخططون للتطبيقات ويبنونها وينشرونها، وللتصويت وإبداء الرأي في الإصدارات. يديره المؤسس ⁦Kei Iwami⁩. لا يوجد رابط إحالة ولا مكافأة إحالة",
+        "need": "افتح تطبيق ⁦AI-DAC⁩ المصغّر في ⁦World App⁩ وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)",
+        "caution": "لا تُذكر رسميًا الكمية ولا التكرار ولا المناطق ولا طريقة التحويل إلى نقود. تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب ⁦World ID⁩ موثَّق عبر ⁦Orb⁩، ولا يُعرف إن كان مستوى تحقق أدنى (دون ⁦Orb⁩) كافيًا. ⁦DAC⁩ رمز ⁦ERC-20⁩ على ⁦World Chain⁩ بمعروض إجمالي مُعلن قدره 100 مليون، لكن العقد بلا حد أقصى، ويمكن للمالك سكّ المزيد وتوزيعه في أي وقت، ما قد يُضعف قيمته. يقول المشروع إنه ليس للاستثمار وإن قيمته غير مضمونة. يوجد زوج ⁦DAC/WLD⁩ في منصة تداول لامركزية (⁦DEX⁩)، لكن السيولة في أكتوبر 2026 نحو ⁦$170⁩ فقط. تُدفع طلبات إنتاج التطبيقات بشكل منفصل بـ⁦USDC⁩ على ⁦World⁩"
+      }
     }
   ],
   "PICKS": [
@@ -1252,6 +1307,15 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-24",
+      "ja": "AI-DAC（World App）を追加",
+      "en": "Added AI-DAC (World App)",
+      "zh": "新增 AI-DAC（World App）",
+      "hi": "AI-DAC (World App) जोड़ा",
+      "es": "Añadido AI-DAC (World App)",
+      "ar": "أضفنا ⁦AI-DAC (World App)⁩"
+    },
     {
       "date": "2026-10-24",
       "ja": "UBIの団体・プロジェクトのページを追加",
@@ -1533,7 +1597,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1662,7 +1726,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1790,7 +1854,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -1918,7 +1982,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -2046,7 +2110,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -2174,7 +2238,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
