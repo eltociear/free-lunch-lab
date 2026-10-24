@@ -32,17 +32,17 @@ function page(lang) {
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&text=%C4%9E&display=block">
 <style>
 *{box-sizing:border-box;margin:0}
-body{width:1200px;height:630px;overflow:hidden;color:#EEF1FF;font-family:${FACE[lang]},sans-serif;position:relative;padding:64px 72px;
+body{width:1200px;height:630px;overflow:hidden;display:flex;flex-direction:column;padding-bottom:${live.length > 16 ? 44 : 56}px!important;color:#EEF1FF;font-family:${FACE[lang]},sans-serif;position:relative;padding:64px 72px;
   background:radial-gradient(70% 90% at 88% 0%,#3B2A86 0%,transparent 60%),radial-gradient(60% 70% at 0% 100%,#0F3B5C 0%,transparent 60%),linear-gradient(180deg,#0A0F24,#121741)}
 body::before{content:"";position:absolute;inset:0;background-image:radial-gradient(2px 2px at 30px 40px,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 150px 110px,#fff 50%,transparent 51%),radial-gradient(2px 2px at 260px 30px,#fff7d6 50%,transparent 51%),radial-gradient(1.5px 1.5px at 90px 200px,#cfd6ff 50%,transparent 51%);background-size:320px 240px;opacity:.8}
 .moon{position:absolute;top:52px;${rtl ? 'left' : 'right'}:80px;width:190px;height:190px;border-radius:50%;box-shadow:inset -40px 22px 0 0 #FFE7A3;transform:rotate(-12deg);filter:drop-shadow(0 0 40px rgba(255,214,107,.5))}
 .z{position:absolute;top:255px;${rtl ? 'left' : 'right'}:110px;font-family:"Dela Gothic One",sans-serif;color:#CFD6FF;font-size:44px;opacity:.85}
 .z small{font-size:28px}
 .eyebrow{position:relative;max-width:820px;font-family:"Zen Kaku Gothic New",${FACE[lang]},sans-serif;font-weight:700;font-size:24px;color:#A9B2D8;letter-spacing:.04em}
-h1{position:relative;font-weight:${/^(ja|en|es)$/.test(lang) ? 400 : 900};font-size:${lang === 'ja' ? 84 : lang === 'en' || lang === 'es' ? 76 : 70}px;line-height:${rtl || lang === 'hi' ? 1.4 : 1.15};margin-top:18px;max-width:${lang === 'ja' ? 820 : 900}px;text-shadow:0 6px 40px rgba(120,100,255,.4)}
+h1{position:relative;font-weight:${/^(ja|en|es)$/.test(lang) ? 400 : 900};font-size:${lang === 'ja' ? 84 : lang === 'en' || lang === 'es' ? 76 : rtl && live.length > 16 ? 60 : 70}px;line-height:${rtl || lang === 'hi' ? 1.4 : 1.15};margin-top:18px;max-width:${lang === 'ja' ? 820 : 900}px;text-shadow:0 6px 40px rgba(120,100,255,.4)}
 h1 em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.chips{position:absolute;bottom:56px;inset-inline:72px;display:flex;flex-wrap:wrap;gap:10px}
-.chips span{font-family:"Zen Kaku Gothic New","Noto Sans","Noto Sans SC","Noto Sans Arabic",sans-serif;font-weight:700;font-size:22px;color:#141A3A;background:#FFD66B;padding:6px 18px;border-radius:999px}
+.chips{position:relative;margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:${live.length > 16 ? 8 : 10}px}
+.chips span{font-family:"Zen Kaku Gothic New","Noto Sans","Noto Sans SC","Noto Sans Arabic",sans-serif;font-weight:700;font-size:${live.length > 16 ? 19 : 22}px;color:#141A3A;background:#FFD66B;padding:${live.length > 16 ? '5px 14px' : '6px 18px'};border-radius:999px}
 </style></head><body>
 <div class="moon"></div><div class="z"><small>z</small>Z</div>
 <p class="eyebrow">${esc(L.brandPlain)} · ${esc(L.eyebrow)}</p>
@@ -56,7 +56,7 @@ const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'og-'));
 for (const lang of LANGS) {
   const html = path.join(tmp, `${lang}.html`);
   fs.writeFileSync(html, page(lang));
-  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--virtual-time-budget=8000',
+  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--virtual-time-budget=15000',
     '--window-size=1200,630', `--screenshot=${path.join(OUT, `${lang}.png`)}`, `file://${html}`], { stdio: 'ignore' });
   console.log(`og/${lang}.png`);
 }

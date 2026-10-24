@@ -1057,6 +1057,60 @@ module.exports = {
         "need": "سجّل عبر رابط الإحالة ووثّق حسابك بإضافة رقم هاتف محمول (لا حاجة إلى هوية). تطلب دخلك بنفسك، والأيام التي لا تطلبها خلال 10 أيام تضيع",
         "caution": "حتى أكتوبر 2026 لا توجد طريقة لتحويل ⁦Palai⁩ إلى يورو أو نقود أخرى ولا سعر صرف رسمي، ويمكن فقط مبادلتها بسلع وخدمات مع من يقبلون ⁦Palai⁩. لا يذكر الموقع الجهة المشغّلة، بل فقط أنها «مدعومة من ⁦Social Impact Lab Leipzig⁩»"
       }
+    },
+    {
+      "id": "dotare",
+      "name": "Dotare",
+      "cat": "crypto-bi",
+      "type": "loop",
+      "global": true,
+      "ease": 2,
+      "official": "https://dotare.io/",
+      "code": "",
+      "ref": "",
+      "noRef": true,
+      "added": "2026-10-24",
+      "trust": {
+        "cash": "yes",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ja": {
+        "gain": "受給者に選ばれると月10 ADAを1年間（2027年分）",
+        "note": "Cardano上の「世界向けベーシックインカム基金」。寄付者が預けたADAのステーキング利回りなどで基金を運用し、その収益を受給者に毎月ADAで配る。2027年分の受給者は月10 ADAを12か月受け取れる（金額は基金の成長で増えることがある）。所得の審査はない。運営はアメリカのDotare, LLC。紹介リンクや紹介特典はない",
+        "need": "18歳以上。公式サイトから登録し、受け取りたい年ごとに申し込む。順番が回ってきたら簡単な本人確認（人間であることの確認）をして、受け取り用のCardanoウォレットを用意する",
+        "caution": "2027年分は申し込みが2026年8月31日、登録が11月30日で締め切りと案内されていて、今から登録した場合にいつから受け取れるかは確認できていない。配布は順番待ちで、2026年10月24日時点のサイト表示では登録者147人に対し受給者は2人。ADAは価格が大きく上下する"
+      },
+      "en": {
+        "gain": "10 ADA a month for a year if you are chosen (2027 cycle)",
+        "note": "A “global universal basic income” endowment on Cardano. Staking yield on ADA pledged by benefactors grows the fund, and its earnings are paid out monthly in ADA. 2027 beneficiaries get 10 ADA a month for 12 months (the amount can grow as the fund grows). There is no means test. Run by Dotare, LLC in the US. There is no referral link or referral bonus",
+        "need": "Be 18 or older. Sign up on the official site and apply for each year you want to take part. When your turn comes, pass a quick identity check (to show you are human) and set up a Cardano wallet to receive payments",
+        "caution": "For the 2027 cycle, applications closed on 31 Aug 2026 and enrollment closes on 30 Nov 2026; when someone signing up now would start receiving is not confirmed. Payouts go in line order, and as of 24 Oct 2026 the site showed 147 citizens and 2 beneficiaries. ADA’s price swings a lot"
+      },
+      "zh": {
+        "gain": "入选受益人后每月 10 ADA，持续一年（2027 年度）",
+        "note": "Cardano 上的“全球全民基本收入”基金。捐助者存入的 ADA 通过质押收益等让基金增长，再把收益每月以 ADA 发给受益人。2027 年度受益人每月可得 10 ADA，共 12 个月（金额可能随基金增长而增加）。不做收入审查。运营方为美国的 Dotare, LLC。没有推荐链接，也没有推荐奖励",
+        "need": "须年满 18 岁。在官网注册，并为想参加的每一年分别申请。轮到你时完成简单的身份验证（确认你是真人），并准备用于收款的 Cardano 钱包",
+        "caution": "2027 年度的申请已于 2026 年 8 月 31 日截止，登记将于 11 月 30 日截止；现在注册的人从何时开始领取尚未确认。按排队顺序发放，截至 2026 年 10 月 24 日网站显示登记 147 人、受益人 2 人。ADA 价格波动很大"
+      },
+      "hi": {
+        "gain": "चुने जाने पर एक साल तक हर महीने 10 ADA (2027 साइकिल)",
+        "note": "Cardano पर एक “वैश्विक यूनिवर्सल बेसिक इनकम” एंडोमेंट। दानदाताओं की जमा ADA पर स्टेकिंग से फ़ंड बढ़ता है, और उसकी कमाई हर महीने ADA में लाभार्थियों को दी जाती है। 2027 के लाभार्थियों को 12 महीने तक हर महीने 10 ADA मिलते हैं (फ़ंड बढ़ने पर रकम बढ़ सकती है)। आय की कोई जाँच नहीं होती। इसे अमेरिका की Dotare, LLC चलाती है। कोई रेफ़रल लिंक या रेफ़रल बोनस नहीं है",
+        "need": "उम्र 18 साल या ज़्यादा होनी चाहिए। आधिकारिक साइट पर साइन अप करें और जिस साल हिस्सा लेना हो उसके लिए आवेदन करें। आपकी बारी आने पर छोटी-सी पहचान जाँच (कि आप इंसान हैं) पूरी करें और भुगतान पाने के लिए Cardano वॉलेट बनाएँ",
+        "caution": "2027 साइकिल के लिए आवेदन 31 अगस्त 2026 को बंद हो गए और नामांकन 30 नवंबर 2026 को बंद होगा; अभी साइन अप करने वालों को कब से पैसे मिलेंगे, इसकी पुष्टि नहीं हुई है। भुगतान कतार के क्रम में होता है, और 24 अक्टूबर 2026 को साइट पर 147 नागरिक और 2 लाभार्थी दिख रहे थे। ADA की कीमत बहुत ऊपर-नीचे होती है"
+      },
+      "es": {
+        "gain": "10 ADA al mes durante un año si te eligen (ciclo 2027)",
+        "note": "Un fondo de «renta básica universal global» en Cardano. El rendimiento por staking del ADA aportado por los benefactores hace crecer el fondo, y sus ganancias se pagan cada mes en ADA. Los beneficiarios de 2027 reciben 10 ADA al mes durante 12 meses (la cantidad puede crecer con el fondo). No hay prueba de ingresos. Lo gestiona Dotare, LLC, en EE. UU. No hay enlace ni bono de referido",
+        "need": "Ser mayor de 18 años. Regístrate en la web oficial y solicita cada año en que quieras participar. Cuando te toque, pasa una breve verificación de identidad (para comprobar que eres humano) y crea un monedero de Cardano para recibir los pagos",
+        "caution": "Para el ciclo 2027, las solicitudes cerraron el 31 de agosto de 2026 y la inscripción cierra el 30 de noviembre de 2026; no está confirmado desde cuándo cobraría quien se registre ahora. Se paga por orden de fila, y a 24 de octubre de 2026 la web mostraba 147 ciudadanos y 2 beneficiarios. El precio del ADA sube y baja mucho"
+      },
+      "ar": {
+        "gain": "⁦10 ADA⁩ شهريًا لمدة سنة إن اختِرت (دورة 2027)",
+        "note": "صندوق «دخل أساسي شامل عالمي» على ⁦Cardano⁩. ينمو الصندوق من عائد التخزين على ⁦ADA⁩ التي يودعها المتبرعون، وتُوزَّع أرباحه شهريًا بـ⁦ADA⁩ على المستفيدين. يحصل مستفيدو 2027 على ⁦10 ADA⁩ شهريًا لمدة 12 شهرًا (وقد يزيد المبلغ مع نمو الصندوق). لا يوجد فحص للدخل. تديره ⁦Dotare, LLC⁩ في الولايات المتحدة. لا يوجد رابط إحالة ولا مكافأة إحالة",
+        "need": "أن يكون عمرك 18 عامًا أو أكثر. سجّل في الموقع الرسمي وقدّم طلبًا لكل سنة تريد المشاركة فيها. عندما يحين دورك، اجتز تحققًا سريعًا من الهوية (للتأكد أنك إنسان) وأنشئ محفظة ⁦Cardano⁩ لاستلام الدفعات",
+        "caution": "في دورة 2027 أُغلق باب الطلبات في 31 أغسطس 2026 ويُغلق التسجيل في 30 نوفمبر 2026، ولم يتأكد متى يبدأ من يسجّل الآن في الاستلام. يُصرف حسب ترتيب الطابور، وفي 24 أكتوبر 2026 أظهر الموقع 147 مواطنًا ومستفيدَين اثنين. سعر ⁦ADA⁩ يتقلب كثيرًا"
+      }
     }
   ],
   "PICKS": [
@@ -1089,6 +1143,15 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-24",
+      "ja": "Dotareを追加",
+      "en": "Added Dotare",
+      "zh": "新增 Dotare",
+      "hi": "Dotare जोड़ा",
+      "es": "Añadido Dotare",
+      "ar": "أضفنا ⁦Dotare⁩"
+    },
     {
       "date": "2026-10-24",
       "ja": "Palaiを追加",
@@ -1334,7 +1397,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai）は海外からも使えます。そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare）は海外からも使えます。そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -1453,7 +1516,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai) work outside Japan. The rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare) work outside Japan. The rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -1571,7 +1634,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare) जापान के बाहर भी चलती हैं। बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -1689,7 +1752,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai）在日本以外也能使用。其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare）在日本以外也能使用。其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -1807,7 +1870,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai) funcionan fuera de Japón. El resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare) funcionan fuera de Japón. El resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -1925,7 +1988,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare) تعمل خارج اليابان. أما البقية فهي للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
