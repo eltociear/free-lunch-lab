@@ -1618,6 +1618,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-10-25",
+      "ja": "サイト名を「不労所得研究所（Free Lunch Lab）」に変更",
+      "en": "Renamed the site to Free Lunch Lab",
+      "zh": "网站更名为 Free Lunch Lab（免费午餐研究所）",
+      "hi": "साइट का नाम बदलकर Free Lunch Lab किया",
+      "es": "El sitio ahora se llama Free Lunch Lab",
+      "de": "Die Seite heißt jetzt Free Lunch Lab",
+      "ar": "غيّرنا اسم الموقع إلى ⁦Free Lunch Lab⁩ (مختبر الغداء المجاني)"
+    },
+    {
+      "date": "2026-10-25",
       "ja": "ドイツ語版を追加",
       "en": "Added a German version",
       "zh": "新增德语版",
@@ -1924,7 +1934,7 @@ module.exports = {
   },
   "T": {
     "ja": {
-      "brand": "寝てても<span>入金</span>",
+      "brand": "不労所得<span>研究所</span>",
       "navList": "一覧",
       "navHow": "使い方",
       "navFaq": "よくある質問",
@@ -1982,7 +1992,7 @@ module.exports = {
       "w2": "暗号資産でもらう特典は価格が上下します。",
       "w4": "「月◯万円が自動で入る」と高額な教材に誘導するものは、ここで紹介しているサービスとは別物です。",
       "foot": "2026年10月時点の情報です。投資を勧めるものではありません。",
-      "brandPlain": "寝てても入金",
+      "brandPlain": "不労所得研究所",
       "count": "{n}件を表示中",
       "none": "条件に合うサービスはありません。",
       "global": "海外OK",
@@ -1998,15 +2008,15 @@ module.exports = {
       "goCode": "アプリを入れてコードを入力",
       "copied": "コードをコピーしました",
       "selected": "選択しました。長押しでコピーできます",
-      "title": "寝てても入金",
+      "title": "不労所得研究所",
       "region": "地域",
       "filterLabel": "カテゴリで絞り込む",
       "metaDesc": "暗号資産のベーシックインカム（GoodDollar・ME Pass・BioMatrix）からポイ活サイト・招待制サービスまで、紹介コードつきで入金されるサービスをまとめた一覧。",
       "navLabel": "セクション",
       "langLabel": "言語",
       "shareH": "友だちにも教える",
-      "shareSub": "「寝てても入金」を知らない人に、こっそり教えてあげてください。",
-      "shareText": "登録するだけで入金されるサービス、まとめてみた😴💰 #寝てても入金 #ポイ活",
+      "shareSub": "「不労所得研究所」を知らない人に、こっそり教えてあげてください。",
+      "shareText": "登録するだけで入金されるサービス、まとめてみた😴💰 #不労所得研究所 #ポイ活",
       "copyLink": "リンクをコピー",
       "linkCopied": "リンクをコピーしました",
       "share": "シェア",
@@ -2050,11 +2060,13 @@ module.exports = {
       "orgsSecH": "ベーシックインカムに取り組む団体",
       "orgsSecP": "ここからは、お金がもらえるサービスではなく、ベーシックインカムを研究・推進したり、実際に現金を配ったりしている団体の紹介です。登録して何かをもらうためのものではありません。",
       "orgsSecBtn": "団体一覧を見る（{n}団体）",
-      "only_us": "アメリカ在住者向け"
+      "only_us": "アメリカ在住者向け",
+      "brandSub": "Free Lunch Lab",
+      "tagline": "タダ飯は、ある。"
     },
     "en": {
-      "brand": "Paid While You <span>Sleep</span>",
-      "brandPlain": "Paid While You Sleep",
+      "brand": "Free Lunch <span>Lab</span>",
+      "brandPlain": "Free Lunch Lab",
       "navList": "Services",
       "navHow": "How it works",
       "navFaq": "FAQ",
@@ -2127,7 +2139,7 @@ module.exports = {
       "goCode": "Get the app & enter the code",
       "copied": "Code copied",
       "selected": "Code selected. Copy it from the menu",
-      "title": "Paid While You Sleep",
+      "title": "Free Lunch Lab",
       "region": "Region",
       "filterLabel": "Filter by category",
       "metaDesc": "A list of crypto basic income (UBI) apps like GoodDollar, ME Pass and BioMatrix, plus cashback sites and invite-only services, with referral codes and current bonuses.",
@@ -2179,11 +2191,13 @@ module.exports = {
       "orgsSecH": "Organizations working on basic income",
       "orgsSecP": "These are not services you sign up to for money, but organizations that research, campaign for or actually run basic income and cash transfers.",
       "orgsSecBtn": "See all organizations ({n})",
-      "only_us": "US residents only"
+      "only_us": "US residents only",
+      "brandSub": "",
+      "tagline": "There is such a thing as a free lunch."
     },
     "hi": {
-      "brand": "सोते हुए भी <span>कमाई</span>",
-      "brandPlain": "सोते हुए भी कमाई",
+      "brand": "Free Lunch <span>Lab</span>",
+      "brandPlain": "Free Lunch Lab",
       "navList": "सेवाएँ",
       "navHow": "कैसे इस्तेमाल करें",
       "navFaq": "सवाल-जवाब",
@@ -2256,7 +2270,7 @@ module.exports = {
       "goCode": "ऐप इंस्टॉल करें और कोड डालें",
       "copied": "कोड कॉपी हो गया",
       "selected": "कोड चुन लिया गया। मेन्यू से कॉपी करें",
-      "title": "सोते हुए भी कमाई",
+      "title": "Free Lunch Lab",
       "region": "क्षेत्र",
       "filterLabel": "श्रेणी से फ़िल्टर करें",
       "metaDesc": "GoodDollar, ME Pass और BioMatrix जैसे क्रिप्टो बेसिक इनकम (UBI) ऐप, कैशबैक साइटें और इनवाइट-ओनली सेवाएँ — रेफ़रल कोड और मौजूदा बोनस के साथ एक सूची।",
@@ -2264,7 +2278,7 @@ module.exports = {
       "langLabel": "भाषा",
       "shareH": "दोस्तों को भेजें",
       "shareSub": "कोई दोस्त जो सोते हुए कमाना चाहता है? उसे यह लिस्ट भेजें।",
-      "shareText": "सोते हुए भी कमाई 😴💰 क्रिप्टो UBI और पैसिव इनकम ऐप्स की पूरी लिस्ट",
+      "shareText": "Free Lunch Lab 😴💰 क्रिप्टो UBI और पैसिव इनकम ऐप्स की पूरी लिस्ट",
       "copyLink": "लिंक कॉपी करें",
       "linkCopied": "लिंक कॉपी हो गया",
       "share": "शेयर करें",
@@ -2308,11 +2322,13 @@ module.exports = {
       "orgsSecH": "बेसिक इनकम पर काम करने वाले संगठन",
       "orgsSecP": "ये पैसे पाने के लिए साइन अप करने वाली सेवाएँ नहीं हैं, बल्कि ऐसे संगठन हैं जो बेसिक इनकम पर शोध करते हैं, उसकी पैरवी करते हैं या असल में नकद बाँटते हैं।",
       "orgsSecBtn": "सभी संगठन देखें ({n})",
-      "only_us": "सिर्फ़ अमेरिकी निवासी"
+      "only_us": "सिर्फ़ अमेरिकी निवासी",
+      "brandSub": "",
+      "tagline": "मुफ़्त का लंच भी होता है।"
     },
     "zh": {
-      "brand": "躺着也<span>到账</span>",
-      "brandPlain": "躺着也到账",
+      "brand": "Free Lunch <span>Lab</span>",
+      "brandPlain": "Free Lunch Lab（免费午餐研究所）",
       "navList": "服务",
       "navHow": "使用方法",
       "navFaq": "常见问题",
@@ -2385,7 +2401,7 @@ module.exports = {
       "goCode": "安装应用并填写邀请码",
       "copied": "推荐码已复制",
       "selected": "已选中推荐码，请从菜单中复制",
-      "title": "躺着也到账",
+      "title": "Free Lunch Lab（免费午餐研究所）",
       "region": "地区",
       "filterLabel": "按类别筛选",
       "metaDesc": "汇总 GoodDollar、ME Pass、BioMatrix 等加密货币基本收入（UBI）应用，以及返利网站和邀请制服务，附推荐码和最新奖励。",
@@ -2393,7 +2409,7 @@ module.exports = {
       "langLabel": "语言",
       "shareH": "分享给朋友",
       "shareSub": "身边有想躺着赚钱的朋友吗？把这份清单发给 TA。",
-      "shareText": "躺着也到账😴💰 加密货币 UBI 和躺赚应用一览",
+      "shareText": "Free Lunch Lab（免费午餐研究所）😴💰 加密货币 UBI 和躺赚应用一览",
       "copyLink": "复制链接",
       "linkCopied": "链接已复制",
       "share": "分享",
@@ -2437,11 +2453,13 @@ module.exports = {
       "orgsSecH": "致力于基本收入的团体",
       "orgsSecP": "这里介绍的不是能领钱的服务，而是研究、推动或实际发放基本收入与现金的团体，并不是注册后就能拿到钱的。",
       "orgsSecBtn": "查看全部团体（{n} 个）",
-      "only_us": "仅限美国居民"
+      "only_us": "仅限美国居民",
+      "brandSub": "免费午餐研究所",
+      "tagline": "天下竟然有免费的午餐。"
     },
     "es": {
-      "brand": "Cobra mientras <span>duermes</span>",
-      "brandPlain": "Cobra mientras duermes",
+      "brand": "Free Lunch <span>Lab</span>",
+      "brandPlain": "Free Lunch Lab",
       "navList": "Servicios",
       "navHow": "Cómo funciona",
       "navFaq": "Preguntas",
@@ -2514,7 +2532,7 @@ module.exports = {
       "goCode": "Instala la app e introduce el código",
       "copied": "Código copiado",
       "selected": "Código seleccionado. Cópialo desde el menú",
-      "title": "Cobra mientras duermes",
+      "title": "Free Lunch Lab",
       "region": "Región",
       "filterLabel": "Filtrar por categoría",
       "metaDesc": "Lista de apps de renta básica cripto (UBI) como GoodDollar, ME Pass y BioMatrix, además de webs de cashback y servicios por invitación, con códigos de referido y bonos actuales.",
@@ -2566,11 +2584,13 @@ module.exports = {
       "orgsSecH": "Organizaciones que trabajan por la renta básica",
       "orgsSecP": "No son servicios para registrarte y cobrar, sino organizaciones que investigan, defienden o ponen en marcha la renta básica y las transferencias de efectivo.",
       "orgsSecBtn": "Ver todas las organizaciones ({n})",
-      "only_us": "Solo residentes en EE. UU."
+      "only_us": "Solo residentes en EE. UU.",
+      "brandSub": "",
+      "tagline": "Pues sí: hay almuerzo gratis."
     },
     "ar": {
-      "brand": "دخل وأنت <span>نائم</span>",
-      "brandPlain": "دخل وأنت نائم",
+      "brand": "Free Lunch <span>Lab</span>",
+      "brandPlain": "⁦Free Lunch Lab⁩ (مختبر الغداء المجاني)",
       "navList": "الخدمات",
       "navHow": "طريقة الاستخدام",
       "navFaq": "الأسئلة الشائعة",
@@ -2643,7 +2663,7 @@ module.exports = {
       "goCode": "ثبّت التطبيق وأدخل الرمز",
       "copied": "تم نسخ الرمز",
       "selected": "تم تحديد الرمز. انسخه من القائمة",
-      "title": "دخل وأنت نائم",
+      "title": "⁦Free Lunch Lab⁩ (مختبر الغداء المجاني)",
       "region": "المنطقة",
       "filterLabel": "التصفية حسب الفئة",
       "metaDesc": "قائمة بتطبيقات الدخل الأساسي بالعملات المشفرة (UBI) مثل GoodDollar وME Pass وBioMatrix، إضافة إلى مواقع استرداد النقود والخدمات المتاحة بالدعوة، مع رموز الإحالة والمكافآت الحالية.",
@@ -2695,11 +2715,13 @@ module.exports = {
       "orgsSecH": "منظمات تعمل على الدخل الأساسي",
       "orgsSecP": "هذه ليست خدمات تسجّل فيها لتحصل على المال، بل منظمات تبحث في الدخل الأساسي أو تدعو إليه أو تطبّقه فعلًا عبر التحويلات النقدية.",
       "orgsSecBtn": "عرض كل المنظمات ({n})",
-      "only_us": "للمقيمين في الولايات المتحدة فقط"
+      "only_us": "للمقيمين في الولايات المتحدة فقط",
+      "brandSub": "مختبر الغداء المجاني",
+      "tagline": "الغداء المجاني موجود فعلًا."
     },
     "de": {
-      "brand": "Geld im <span>Schlaf</span>",
-      "brandPlain": "Geld im Schlaf",
+      "brand": "Free Lunch <span>Lab</span>",
+      "brandPlain": "Free Lunch Lab",
       "navList": "Dienste",
       "navHow": "So geht’s",
       "navFaq": "FAQ",
@@ -2772,7 +2794,7 @@ module.exports = {
       "goCode": "App holen & Code eingeben",
       "copied": "Code kopiert",
       "selected": "Code markiert. Kopier ihn über das Menü",
-      "title": "Geld im Schlaf",
+      "title": "Free Lunch Lab",
       "region": "Region",
       "filterLabel": "Nach Kategorie filtern",
       "metaDesc": "Eine Liste von Krypto-Grundeinkommen-Apps wie GoodDollar, ME Pass und BioMatrix sowie Cashback-Seiten und Diensten auf Einladung, mit Empfehlungscodes und aktuellen Boni.",
@@ -2824,7 +2846,9 @@ module.exports = {
       "orgsSecH": "Organisationen, die sich mit dem Grundeinkommen befassen",
       "orgsSecP": "Das sind keine Dienste, bei denen du dich für Geld anmeldest, sondern Organisationen, die das Grundeinkommen erforschen, sich dafür einsetzen oder es selbst auszahlen.",
       "orgsSecBtn": "Alle Organisationen ansehen ({n})",
-      "only_us": "Nur für Wohnsitz in den USA"
+      "only_us": "Nur für Wohnsitz in den USA",
+      "brandSub": "",
+      "tagline": "Es gibt doch ein kostenloses Mittagessen."
     }
   },
   "ORG_REGIONS": {

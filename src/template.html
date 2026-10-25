@@ -45,6 +45,8 @@ section[id],header[id]{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 .bar-in{max-width:1080px;margin-inline:auto;display:flex;align-items:center;gap:16px}
 .brand{font-family:var(--f-display);font-size:1.05rem;text-decoration:none;color:var(--ink);white-space:nowrap}
 .brand span{color:var(--accent)}
+.brand small{display:inline-block;margin-inline-start:8px;font-family:var(--f-body);font-size:.66rem;font-weight:700;letter-spacing:.08em;color:var(--muted);vertical-align:middle}
+.tagline{margin-top:10px;font-family:var(--f-body);font-weight:700;font-size:clamp(1.1rem,2.6vw,1.4rem);color:#FFD66B;letter-spacing:.02em}
 .nav{display:flex;gap:18px;margin-inline-start:auto;font-size:.88rem}
 .nav a{color:var(--ink);text-decoration:none}
 .nav a:hover{color:var(--accent)}
@@ -422,7 +424,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 <div class="bar">
   <div class="bar-in">
-    <a class="brand" href="#top">{{t.brand}}</a>
+    <a class="brand" href="#top">{{t.brand}}{{brandSub}}</a>
     <nav class="nav" aria-label="{{t.navLabel}}">
       <a href="#list">{{t.navList}}</a><a href="#how">{{t.navHow}}</a><a href="#faq">{{t.navFaq}}</a>
     </nav>
@@ -439,6 +441,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <header class="hero" id="top">
   <div>
     <p class="label">{{t.eyebrow}}</p>
+    <p class="tagline">{{t.tagline}}</p>
     <h1>{{t.h1}}</h1>
     <p class="lede">{{t.lede}}</p>
     <div class="cta">

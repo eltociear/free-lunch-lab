@@ -39,6 +39,7 @@ body::before{content:"";position:absolute;inset:0;background-image:radial-gradie
 .moon{position:absolute;top:52px;${rtl ? 'left' : 'right'}:80px;width:190px;height:190px;border-radius:50%;box-shadow:inset -40px 22px 0 0 #FFE7A3;transform:rotate(-12deg);filter:drop-shadow(0 0 40px rgba(255,214,107,.5))}
 .z{position:absolute;top:255px;${rtl ? 'left' : 'right'}:110px;font-family:"Dela Gothic One",sans-serif;color:#CFD6FF;font-size:44px;opacity:.85}
 .z small{font-size:28px}
+.brandname{color:#FFD66B}
 .eyebrow{position:relative;max-width:820px;font-family:"Zen Kaku Gothic New",${FACE[lang]},sans-serif;font-weight:700;font-size:24px;color:#A9B2D8;letter-spacing:.04em}
 h1{position:relative;font-weight:${/^(ja|en|es|de)$/.test(lang) ? 400 : 900};font-size:${lang === 'ja' ? 84 : lang === 'en' || lang === 'es' ? 76 : lang === 'de' ? 66 : rtl && live.length > 16 ? 60 : 70}px;line-height:${rtl || lang === 'hi' ? 1.4 : 1.15};margin-top:18px;max-width:${lang === 'ja' ? 820 : 900}px;text-shadow:0 6px 40px rgba(120,100,255,.4)}
 h1 em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -46,7 +47,7 @@ h1 em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90
 .chips span{font-family:"GBreve","Zen Kaku Gothic New","Noto Sans SC","Noto Sans Arabic",sans-serif;font-weight:700;font-size:${live.length > 22 ? 17 : live.length > 16 ? 19 : 22}px;color:#141A3A;background:#FFD66B;padding:${live.length > 22 ? '4px 12px' : live.length > 16 ? '5px 14px' : '6px 18px'};border-radius:999px}
 </style></head><body>
 <div class="moon"></div><div class="z"><small>z</small>Z</div>
-<p class="eyebrow">${esc(L.brandPlain)} · ${esc(L.eyebrow)}</p>
+<p class="eyebrow"><b class="brandname">${esc(L.brandPlain)}</b> · ${esc(L.tagline)}</p>
 <h1>${L.h1}</h1>
 <div class="chips">${chips}</div>
 </body></html>`;

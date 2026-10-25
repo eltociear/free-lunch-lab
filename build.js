@@ -182,6 +182,7 @@ function head(lang) {
 <meta name="google-site-verification" content="n5VlzRi2FPlfwdfg9RcoApbpTtxkHIoB2ws5jWbPF9s">
 ${alts}
 <link rel="alternate" hreflang="x-default" href="${abs(DEFAULT_LANG)}">
+<meta property="og:site_name" content="${esc(L.brandPlain)}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(L.metaDesc)}">
@@ -332,6 +333,7 @@ for (const lang of LANGS) {
     trustLegend: trustLegend(lang),
     news: news(lang),
     shareBtns: shareBtns(lang),
+    brandSub: L.brandSub ? `<small dir="auto">${esc(L.brandSub)}</small>` : '',
     orgsPreview: ORG_PREVIEW.map(id => ORGS.find(o => o.id === id)).filter(Boolean).map(o => `<li><a href="organizations/#org-${o.id}" dir="auto">${esc(o.name)}</a><span>${esc(o.region ? ORG_REGIONS[o.region][lang] : '')}</span><p>${esc((o.short || o.desc)[lang] || (o.short || o.desc).en)}</p></li>`).join(''),
     orgsBtn: esc(L.orgsSecBtn.replace('{n}', ORGS.length)),
     script: clientScript(lang),
@@ -501,6 +503,7 @@ function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script =
 <link rel="canonical" href="${url}">
 ${alts}
 <link rel="alternate" hreflang="x-default" href="${hrefFor(DEFAULT_LANG)}">
+<meta property="og:site_name" content="${esc(L.brandPlain)}">
 <meta property="og:type" content="${ogType}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
@@ -520,7 +523,7 @@ ${alts}
 <body>
 <div class="bar">
   <div class="bar-in">
-    <a class="brand" href="${home}">${L.brand}</a>
+    <a class="brand" href="${home}">${L.brand}${L.brandSub ? `<small dir="auto">${esc(L.brandSub)}</small>` : ''}</a>
     <nav class="nav" aria-label="${esc(L.navLabel)}"><a href="${home}#list">${esc(L.navList)}</a><a href="${home}#how">${esc(L.navHow)}</a><a href="${home}#faq">${esc(L.navFaq)}</a></nav>
     <div class="lang" role="group" aria-label="${esc(L.langLabel)}">${LANGS.map(l => `<a href="${pathFor(l)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}"${RTL.has(l) ? ' dir="rtl"' : ''}${l === lang ? ' aria-current="page"' : ''}>${LANG_NAMES[l]}</a>`).join('')}</div>
   </div>
