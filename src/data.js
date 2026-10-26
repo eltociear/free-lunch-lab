@@ -1822,6 +1822,67 @@ module.exports = {
         "need": "سجّل عبر رابط الإحالة وأدخل رمز الإحالة ⁦7HOdyg⁩ عند التسجيل. اربط حساب بريد إلكتروني وتسوّق من المتاجر المشمولة (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
         "caution": "بحكم طريقة عمله يقرأ صندوق بريدك المرتبط: الرسائل التجارية مثل الإيصالات وتأكيدات الطلب والفواتير، وبيانات مثل العناوين والمرسلين. تقول سياسة الخصوصية إن البيانات بعد إزالة ما يحدد الهوية تُباع أو تُشارك مع شركاء مثل ⁦Measurable AI⁩ التي تقدم «بيانات بديلة» للشركات. تستغرق الموافقة على استبدال بطاقات الهدايا 7–14 يوم عمل (فورًا مع ⁦World ID⁩ موثَّق بـ⁦Orb⁩). قد يُحذف الرصيد بعد 6 أشهر من عدم الاستخدام. غير متاح في الولايات المتحدة والبر الرئيسي للصين وأماكن أخرى، وانسحب من الفلبين في نهاية 2025. مبالغ مكافأة التسجيل والإحالة غير مذكورة رسميًا. كان سعر ⁦MDT⁩ نحو ⁦$0.0067⁩ في أكتوبر 2026"
       }
+    },
+    {
+      "id": "fheid",
+      "name": "FheID（Privasea）",
+      "nameEn": "FheID (Privasea)",
+      "cat": "crypto-bi",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://www.privasea.ai/",
+      "code": "QVedKjg",
+      "ref": "https://www.privasea.ai/download-app",
+      "codeOnly": true,
+      "added": "2026-10-26",
+      "trust": {
+        "cash": "unknown",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ja": {
+        "gain": "人間証明でエアドロップや報酬（キャンペーンの「スター」など）",
+        "note": "スマホのカメラで顔を読み取り、「本物の人間」であることを証明する Proof of Humanity アプリ。顔の特徴は端末の中で暗号化されたベクトルに変換され、完全準同型暗号（FHE）で処理されるため、元の画像は送られないと説明されている。認証すると人間証明のNFTが作られ、エアドロップや各アプリの報酬を受け取れる。運営は Privasea（App Store の提供元は Privasea AB、2026年5月にも更新）で、独自の暗号資産 PRAI は KuCoin や Gate などで取引されている",
+        "need": "アプリ FheID を入れて招待コード QVedKjg を入力し、顔で人間証明をする",
+        "caution": "今どんな報酬がどれくらいもらえるかは公式に書かれていない。公式の過去のキャンペーン（2024年）では、紹介で「スター」がたまり（3段階まで、1人あたり100・50・25スター）、エアドロップと交換できるしくみだった。招待コードをどこで入力するかや、紹介された側の特典は確認できていない。PRAI は2025年5月の最高値 約0.096ドルから大きく下がり、2026年10月時点で約0.0008ドル。顔の情報を扱うアプリなので、プライバシーの扱いを確認してから使いたい。日本から使えるかはまだ確認していない"
+      },
+      "en": {
+        "gain": "Airdrops and rewards for proving you are human (e.g. campaign “stars”)",
+        "note": "A proof-of-humanity app that scans your face with your phone camera to show you are a real person. It says your facial features are turned into encrypted vectors on the device and processed with fully homomorphic encryption (FHE), so the original images are not sent. Verifying creates a proof-of-human NFT and lets you receive airdrops and rewards across apps. Run by Privasea (App Store publisher Privasea AB, updated as recently as May 2026); its token PRAI trades on KuCoin, Gate and others",
+        "need": "Install the FheID app, enter the invite code QVedKjg, and verify you are human with a face scan",
+        "caution": "What rewards are on offer now, and how much, is not stated officially. A past official campaign (2024) gave referral “stars” (up to 3 levels: 100, 50 and 25 stars per person) that could be exchanged for airdrops. Where the invite code is entered and whether the new user gets anything are not confirmed. PRAI has fallen from its May 2025 high of about $0.096 to about $0.0008 as of Oct 2026. It handles your face data, so check its privacy terms first. Availability from Japan has not been confirmed yet"
+      },
+      "zh": {
+        "gain": "证明你是真人即可获得空投和奖励（如活动“星星”）",
+        "note": "用手机摄像头扫描人脸、证明你是“真人”的 Proof of Humanity 应用。官方称面部特征会在设备上转换为加密向量，并用全同态加密（FHE）处理，原始图像不会被发送。完成验证后会生成真人证明 NFT，可在各应用中获得空投和奖励。运营方为 Privasea（App Store 提供者为 Privasea AB，2026 年 5 月仍有更新），自有代币 PRAI 在 KuCoin、Gate 等交易",
+        "need": "安装 FheID 应用，输入邀请码 QVedKjg，并用人脸完成真人验证",
+        "caution": "官方没有说明目前提供哪些奖励、数量多少。过去的官方活动（2024 年）中，邀请可获得“星星”（最多 3 层，每人 100、50、25 颗），可兑换空投。邀请码在哪里输入、被邀请人有无奖励尚未确认。PRAI 从 2025 年 5 月约 0.096 美元的高点大幅下跌，2026 年 10 月约为 0.0008 美元。它会处理人脸数据，使用前请先确认隐私条款。尚未确认能否在日本使用"
+      },
+      "hi": {
+        "gain": "इंसान होने का सबूत देने पर एयरड्रॉप और इनाम (जैसे कैंपेन “स्टार”)",
+        "note": "फ़ोन कैमरे से चेहरा स्कैन करके यह साबित करने वाला Proof of Humanity ऐप कि आप असली इंसान हैं। ऐप के अनुसार चेहरे की विशेषताएँ डिवाइस पर ही एन्क्रिप्टेड वेक्टर में बदली जाती हैं और फ़ुली होमोमॉर्फ़िक एन्क्रिप्शन (FHE) से प्रोसेस होती हैं, इसलिए मूल तस्वीरें नहीं भेजी जातीं। वेरिफ़ाई करने पर इंसान होने का NFT बनता है और अलग-अलग ऐप में एयरड्रॉप व इनाम मिल सकते हैं। इसे Privasea चलाता है (App Store पर प्रकाशक Privasea AB, मई 2026 में भी अपडेट); इसका टोकन PRAI KuCoin, Gate आदि पर ट्रेड होता है",
+        "need": "FheID ऐप इंस्टॉल करें, इनवाइट कोड QVedKjg डालें, और चेहरे से इंसान होने का सबूत दें",
+        "caution": "अभी कौन-से इनाम कितने मिलते हैं, यह आधिकारिक रूप से नहीं बताया गया। पिछले आधिकारिक कैंपेन (2024) में रेफ़रल पर “स्टार” मिलते थे (3 लेवल तक: प्रति व्यक्ति 100, 50 और 25 स्टार), जिन्हें एयरड्रॉप से बदला जा सकता था। इनवाइट कोड कहाँ डालना है और नए यूज़र को कुछ मिलता है या नहीं, इसकी पुष्टि नहीं हुई। PRAI मई 2025 के लगभग $0.096 के उच्च स्तर से गिरकर अक्टूबर 2026 में लगभग $0.0008 पर है। यह चेहरे का डेटा संभालता है, इसलिए पहले गोपनीयता शर्तें देखें। जापान से इस्तेमाल की पुष्टि अभी नहीं हुई"
+      },
+      "es": {
+        "gain": "Airdrops y recompensas por demostrar que eres humano (p. ej. «estrellas» de campaña)",
+        "note": "Una app de prueba de humanidad que escanea tu cara con la cámara del móvil para demostrar que eres una persona real. Según la app, tus rasgos faciales se convierten en vectores cifrados en el propio dispositivo y se procesan con cifrado totalmente homomórfico (FHE), así que no se envían las imágenes originales. Al verificarte se crea un NFT de prueba de humanidad y puedes recibir airdrops y recompensas en distintas apps. La gestiona Privasea (en la App Store, Privasea AB; actualizada en mayo de 2026); su token PRAI cotiza en KuCoin, Gate y otros",
+        "need": "Instala la app FheID, introduce el código de invitación QVedKjg y verifica que eres humano con un escaneo facial",
+        "caution": "No se indica oficialmente qué recompensas hay ahora ni de cuánto son. Una campaña oficial anterior (2024) daba «estrellas» por invitar (hasta 3 niveles: 100, 50 y 25 estrellas por persona) que se podían cambiar por airdrops. No está confirmado dónde se introduce el código ni si el nuevo usuario recibe algo. PRAI ha caído desde su máximo de mayo de 2025, unos 0,096 $, hasta unos 0,0008 $ en octubre de 2026. Maneja datos de tu cara, así que revisa antes su privacidad. Aún no se ha confirmado que funcione desde Japón"
+      },
+      "de": {
+        "gain": "Airdrops und Belohnungen für den Menschlichkeitsnachweis (z. B. Kampagnen-„Sterne“)",
+        "note": "Eine Proof-of-Humanity-App, die per Handykamera dein Gesicht scannt, um zu zeigen, dass du ein echter Mensch bist. Laut App werden deine Gesichtsmerkmale auf dem Gerät in verschlüsselte Vektoren umgewandelt und mit vollhomomorpher Verschlüsselung (FHE) verarbeitet, die Originalbilder werden also nicht verschickt. Die Verifizierung erzeugt ein Menschlichkeits-NFT und ermöglicht Airdrops und Belohnungen in verschiedenen Apps. Betrieben von Privasea (Herausgeber im App Store: Privasea AB, zuletzt im Mai 2026 aktualisiert); der Token PRAI wird u. a. bei KuCoin und Gate gehandelt",
+        "need": "Die App FheID installieren, den Einladungscode QVedKjg eingeben und dich per Gesichtsscan als Mensch verifizieren",
+        "caution": "Welche Belohnungen es derzeit gibt und wie hoch sie sind, steht offiziell nirgends. Eine frühere offizielle Kampagne (2024) gab für Empfehlungen „Sterne“ (bis zu 3 Stufen: 100, 50 und 25 Sterne pro Person), die gegen Airdrops getauscht werden konnten. Wo der Einladungscode eingegeben wird und ob Neue etwas bekommen, ist nicht bestätigt. PRAI ist vom Hoch im Mai 2025 bei etwa 0,096 $ auf rund 0,0008 $ im Oktober 2026 gefallen. Die App verarbeitet Gesichtsdaten, prüf also vorher den Datenschutz. Ob es aus Japan funktioniert, ist noch nicht bestätigt"
+      },
+      "ar": {
+        "gain": "إسقاطات جوية ومكافآت مقابل إثبات أنك إنسان (مثل «نجوم» الحملات)",
+        "note": "تطبيق لإثبات الإنسانية يمسح وجهك بكاميرا الهاتف ليثبت أنك شخص حقيقي. يقول التطبيق إن ملامح وجهك تتحول على الجهاز نفسه إلى متجهات مشفّرة وتُعالَج بالتشفير المتماثل الكامل (⁦FHE⁩)، فلا تُرسل الصور الأصلية. يُنشئ التحقق رمز ⁦NFT⁩ لإثبات الإنسانية ويتيح لك تلقي الإسقاطات الجوية والمكافآت في تطبيقات مختلفة. تديره ⁦Privasea⁩ (الناشر في ⁦App Store⁩ هو ⁦Privasea AB⁩، وحُدّث حتى مايو 2026)، ورمزه ⁦PRAI⁩ يُتداول في ⁦KuCoin⁩ و⁦Gate⁩ وغيرهما",
+        "need": "ثبّت تطبيق ⁦FheID⁩ وأدخل رمز الدعوة ⁦QVedKjg⁩ وتحقق من أنك إنسان بمسح الوجه",
+        "caution": "لا يُذكر رسميًا ما المكافآت المتاحة الآن ولا قيمتها. منحت حملة رسمية سابقة (2024) «نجومًا» مقابل الإحالة (حتى 3 مستويات: 100 و50 و25 نجمة لكل شخص) يمكن استبدالها بإسقاطات جوية. لم يتأكد مكان إدخال رمز الدعوة ولا ما إذا كان المستخدم الجديد يحصل على شيء. هبط ⁦PRAI⁩ من ذروته في مايو 2025 عند نحو ⁦$0.096⁩ إلى نحو ⁦$0.0008⁩ في أكتوبر 2026. يتعامل التطبيق مع بيانات وجهك، فراجع الخصوصية أولًا. لم نتأكد بعد من أنه يعمل من اليابان"
+      }
     }
   ],
   "PICKS": [
@@ -1857,6 +1918,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-26",
+      "ja": "FheID（Privasea）を追加",
+      "en": "Added FheID (Privasea)",
+      "zh": "新增 FheID（Privasea）",
+      "hi": "FheID (Privasea) जोड़ा",
+      "es": "Añadido FheID (Privasea)",
+      "de": "FheID (Privasea) hinzugefügt",
+      "ar": "أضفنا ⁦FheID (Privasea)⁩"
+    },
     {
       "date": "2026-10-26",
       "ja": "RewardMeを追加",
@@ -2273,7 +2344,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena、RewardMe）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena、RewardMe、FheID）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -2405,7 +2476,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe, FheID) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -2536,7 +2607,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe, FheID) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -2667,7 +2738,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena、RewardMe）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena、RewardMe、FheID）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -2798,7 +2869,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe, FheID) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -2929,7 +3000,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido وWowApp وBillions وIdena وRewardMe) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido وWowApp وBillions وIdena وRewardMe وFheID) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
@@ -3060,7 +3131,7 @@ module.exports = {
       "q3": "Muss ich die Belohnungen versteuern?",
       "a3": "In Japan gelten Krypto-Gewinne beim Verkauf oder Ausgeben als sonstige Einkünfte, Punkte meist als gelegentliche Einkünfte. Die Regeln sind von Land zu Land verschieden. Frag bei größeren Beträgen beim Finanzamt in deinem Land nach.",
       "q4": "Kann ich das auch außerhalb Japans nutzen?",
-      "a4": "Dienste mit der Markierung „Weltweit“ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe) funktionieren auch außerhalb Japans. Ubiquitus ist nur für Menschen mit Wohnsitz in den USA; die übrigen sind für Menschen mit Wohnsitz in Japan.",
+      "a4": "Dienste mit der Markierung „Weltweit“ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe, FheID) funktionieren auch außerhalb Japans. Ubiquitus ist nur für Menschen mit Wohnsitz in den USA; die übrigen sind für Menschen mit Wohnsitz in Japan.",
       "warnH": "Bevor du dich anmeldest",
       "warnT": "Gut zu wissen",
       "w1": "Bonushöhe und Bedingungen ändern sich oft. Prüf vor der Anmeldung immer die offizielle Aktionsseite.",
