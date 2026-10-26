@@ -192,8 +192,19 @@ ${alts}
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="${SITE_URL}/og/${lang}.png">
-<script type="application/ld+json">${JSON.stringify(ld)}</script>`;
+<script type="application/ld+json">${JSON.stringify(ld)}</script>
+<script type="application/ld+json">${JSON.stringify(siteLd(lang))}</script>`;
+}
+
+// サイト全体の WebSite / Organization（X アカウントを sameAs に）
+function siteLd(lang) {
+  const L = T[lang];
+  return {
+    '@context': 'https://schema.org', '@type': 'WebSite', name: L.brandPlain, url: abs(lang), inLanguage: LANG_TAG[lang],
+    publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG), sameAs: ['https://x.com/FreeLunchLab'] },
+  };
 }
 
 function clientScript(lang) {
@@ -513,6 +524,7 @@ ${alts}
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="${SITE_URL}/og/${lang}.png">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -531,7 +543,7 @@ ${alts}
 <div class="wrap">
 ${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 ${script}
 </body>
