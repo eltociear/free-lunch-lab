@@ -49,3 +49,7 @@ npx wrangler deploy
 ## 言語を足すとき
 
 `src/data.js` の `LANGS` と、`T`・`CATS`・各サービス・`NEWS`・`PICKS`・`ORGS`（`desc`/`short`）・`ORG_GROUPS`・`ORG_REGIONS` に言語キーを足し、`build.js` の `LANG_NAMES`・`LANG_TAG`・`OG_LOCALE`・`LANG_FONTS`・`SHARE_ORDER` と `og.js` の `FONTS`・`FACE` にも追加する。`T` のキーが欠けているとビルドが止まる
+
+## X のプロフィール画像
+
+`brand/x/avatar.png`（400×400、円形に切り抜かれる前提）と `brand/x/header.png`（1500×500）は X（[@FreeLunchLab](https://x.com/FreeLunchLab)）用の画像で、サイトには載せない（`public/` の外）。作り直すときは `node brand/x/render.js`（`og.js` と同じく Chrome と、使う文字だけに絞った Google Fonts を埋め込んで描画する）。
