@@ -1844,44 +1844,44 @@ module.exports = {
       "ja": {
         "gain": "人間証明でエアドロップや報酬（キャンペーンの「スター」など）",
         "note": "スマホのカメラで顔を読み取り、「本物の人間」であることを証明する Proof of Humanity アプリ。顔の特徴は端末の中で暗号化されたベクトルに変換され、完全準同型暗号（FHE）で処理されるため、元の画像は送られないと説明されている。認証すると人間証明のNFTが作られ、エアドロップや各アプリの報酬を受け取れる。運営は Privasea（App Store の提供元は Privasea AB、2026年5月にも更新）で、独自の暗号資産 PRAI は KuCoin や Gate などで取引されている",
-        "need": "アプリ FheID を入れて招待コード QVedKjg を入力し、顔で人間証明をする",
-        "caution": "今どんな報酬がどれくらいもらえるかは公式に書かれていない。公式の過去のキャンペーン（2024年）では、紹介で「スター」がたまり（3段階まで、1人あたり100・50・25スター）、エアドロップと交換できるしくみだった。招待コードをどこで入力するかや、紹介された側の特典は確認できていない。PRAI は2025年5月の最高値 約0.096ドルから大きく下がり、2026年10月時点で約0.0008ドル。顔の情報を扱うアプリなので、プライバシーの扱いを確認してから使いたい。日本から使えるかはまだ確認していない"
+        "need": "アプリ FheID を入れて招待コード QVedKjg を入力し、顔で人間証明をする（日本からの利用は2026年10月に実際に確認）",
+        "caution": "今どんな報酬がどれくらいもらえるかは公式に書かれていない。公式の過去のキャンペーン（2024年）では、紹介で「スター」がたまり（3段階まで、1人あたり100・50・25スター）、エアドロップと交換できるしくみだった。招待コードをどこで入力するかや、紹介された側の特典は確認できていない。PRAI は2025年5月の最高値 約0.096ドルから大きく下がり、2026年10月時点で約0.0008ドル。顔の情報を扱うアプリなので、プライバシーの扱いを確認してから使いたい"
       },
       "en": {
         "gain": "Airdrops and rewards for proving you are human (e.g. campaign “stars”)",
         "note": "A proof-of-humanity app that scans your face with your phone camera to show you are a real person. It says your facial features are turned into encrypted vectors on the device and processed with fully homomorphic encryption (FHE), so the original images are not sent. Verifying creates a proof-of-human NFT and lets you receive airdrops and rewards across apps. Run by Privasea (App Store publisher Privasea AB, updated as recently as May 2026); its token PRAI trades on KuCoin, Gate and others",
-        "need": "Install the FheID app, enter the invite code QVedKjg, and verify you are human with a face scan",
-        "caution": "What rewards are on offer now, and how much, is not stated officially. A past official campaign (2024) gave referral “stars” (up to 3 levels: 100, 50 and 25 stars per person) that could be exchanged for airdrops. Where the invite code is entered and whether the new user gets anything are not confirmed. PRAI has fallen from its May 2025 high of about $0.096 to about $0.0008 as of Oct 2026. It handles your face data, so check its privacy terms first. Availability from Japan has not been confirmed yet"
+        "need": "Install the FheID app, enter the invite code QVedKjg, and verify you are human with a face scan (confirmed usable from Japan in Oct 2026, first-hand)",
+        "caution": "What rewards are on offer now, and how much, is not stated officially. A past official campaign (2024) gave referral “stars” (up to 3 levels: 100, 50 and 25 stars per person) that could be exchanged for airdrops. Where the invite code is entered and whether the new user gets anything are not confirmed. PRAI has fallen from its May 2025 high of about $0.096 to about $0.0008 as of Oct 2026. It handles your face data, so check its privacy terms first"
       },
       "zh": {
         "gain": "证明你是真人即可获得空投和奖励（如活动“星星”）",
         "note": "用手机摄像头扫描人脸、证明你是“真人”的 Proof of Humanity 应用。官方称面部特征会在设备上转换为加密向量，并用全同态加密（FHE）处理，原始图像不会被发送。完成验证后会生成真人证明 NFT，可在各应用中获得空投和奖励。运营方为 Privasea（App Store 提供者为 Privasea AB，2026 年 5 月仍有更新），自有代币 PRAI 在 KuCoin、Gate 等交易",
-        "need": "安装 FheID 应用，输入邀请码 QVedKjg，并用人脸完成真人验证",
-        "caution": "官方没有说明目前提供哪些奖励、数量多少。过去的官方活动（2024 年）中，邀请可获得“星星”（最多 3 层，每人 100、50、25 颗），可兑换空投。邀请码在哪里输入、被邀请人有无奖励尚未确认。PRAI 从 2025 年 5 月约 0.096 美元的高点大幅下跌，2026 年 10 月约为 0.0008 美元。它会处理人脸数据，使用前请先确认隐私条款。尚未确认能否在日本使用"
+        "need": "安装 FheID 应用，输入邀请码 QVedKjg，并用人脸完成真人验证（已于 2026 年 10 月亲自确认可在日本使用）",
+        "caution": "官方没有说明目前提供哪些奖励、数量多少。过去的官方活动（2024 年）中，邀请可获得“星星”（最多 3 层，每人 100、50、25 颗），可兑换空投。邀请码在哪里输入、被邀请人有无奖励尚未确认。PRAI 从 2025 年 5 月约 0.096 美元的高点大幅下跌，2026 年 10 月约为 0.0008 美元。它会处理人脸数据，使用前请先确认隐私条款"
       },
       "hi": {
         "gain": "इंसान होने का सबूत देने पर एयरड्रॉप और इनाम (जैसे कैंपेन “स्टार”)",
         "note": "फ़ोन कैमरे से चेहरा स्कैन करके यह साबित करने वाला Proof of Humanity ऐप कि आप असली इंसान हैं। ऐप के अनुसार चेहरे की विशेषताएँ डिवाइस पर ही एन्क्रिप्टेड वेक्टर में बदली जाती हैं और फ़ुली होमोमॉर्फ़िक एन्क्रिप्शन (FHE) से प्रोसेस होती हैं, इसलिए मूल तस्वीरें नहीं भेजी जातीं। वेरिफ़ाई करने पर इंसान होने का NFT बनता है और अलग-अलग ऐप में एयरड्रॉप व इनाम मिल सकते हैं। इसे Privasea चलाता है (App Store पर प्रकाशक Privasea AB, मई 2026 में भी अपडेट); इसका टोकन PRAI KuCoin, Gate आदि पर ट्रेड होता है",
-        "need": "FheID ऐप इंस्टॉल करें, इनवाइट कोड QVedKjg डालें, और चेहरे से इंसान होने का सबूत दें",
-        "caution": "अभी कौन-से इनाम कितने मिलते हैं, यह आधिकारिक रूप से नहीं बताया गया। पिछले आधिकारिक कैंपेन (2024) में रेफ़रल पर “स्टार” मिलते थे (3 लेवल तक: प्रति व्यक्ति 100, 50 और 25 स्टार), जिन्हें एयरड्रॉप से बदला जा सकता था। इनवाइट कोड कहाँ डालना है और नए यूज़र को कुछ मिलता है या नहीं, इसकी पुष्टि नहीं हुई। PRAI मई 2025 के लगभग $0.096 के उच्च स्तर से गिरकर अक्टूबर 2026 में लगभग $0.0008 पर है। यह चेहरे का डेटा संभालता है, इसलिए पहले गोपनीयता शर्तें देखें। जापान से इस्तेमाल की पुष्टि अभी नहीं हुई"
+        "need": "FheID ऐप इंस्टॉल करें, इनवाइट कोड QVedKjg डालें, और चेहरे से इंसान होने का सबूत दें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+        "caution": "अभी कौन-से इनाम कितने मिलते हैं, यह आधिकारिक रूप से नहीं बताया गया। पिछले आधिकारिक कैंपेन (2024) में रेफ़रल पर “स्टार” मिलते थे (3 लेवल तक: प्रति व्यक्ति 100, 50 और 25 स्टार), जिन्हें एयरड्रॉप से बदला जा सकता था। इनवाइट कोड कहाँ डालना है और नए यूज़र को कुछ मिलता है या नहीं, इसकी पुष्टि नहीं हुई। PRAI मई 2025 के लगभग $0.096 के उच्च स्तर से गिरकर अक्टूबर 2026 में लगभग $0.0008 पर है। यह चेहरे का डेटा संभालता है, इसलिए पहले गोपनीयता शर्तें देखें"
       },
       "es": {
         "gain": "Airdrops y recompensas por demostrar que eres humano (p. ej. «estrellas» de campaña)",
         "note": "Una app de prueba de humanidad que escanea tu cara con la cámara del móvil para demostrar que eres una persona real. Según la app, tus rasgos faciales se convierten en vectores cifrados en el propio dispositivo y se procesan con cifrado totalmente homomórfico (FHE), así que no se envían las imágenes originales. Al verificarte se crea un NFT de prueba de humanidad y puedes recibir airdrops y recompensas en distintas apps. La gestiona Privasea (en la App Store, Privasea AB; actualizada en mayo de 2026); su token PRAI cotiza en KuCoin, Gate y otros",
-        "need": "Instala la app FheID, introduce el código de invitación QVedKjg y verifica que eres humano con un escaneo facial",
-        "caution": "No se indica oficialmente qué recompensas hay ahora ni de cuánto son. Una campaña oficial anterior (2024) daba «estrellas» por invitar (hasta 3 niveles: 100, 50 y 25 estrellas por persona) que se podían cambiar por airdrops. No está confirmado dónde se introduce el código ni si el nuevo usuario recibe algo. PRAI ha caído desde su máximo de mayo de 2025, unos 0,096 $, hasta unos 0,0008 $ en octubre de 2026. Maneja datos de tu cara, así que revisa antes su privacidad. Aún no se ha confirmado que funcione desde Japón"
+        "need": "Instala la app FheID, introduce el código de invitación QVedKjg y verifica que eres humano con un escaneo facial (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+        "caution": "No se indica oficialmente qué recompensas hay ahora ni de cuánto son. Una campaña oficial anterior (2024) daba «estrellas» por invitar (hasta 3 niveles: 100, 50 y 25 estrellas por persona) que se podían cambiar por airdrops. No está confirmado dónde se introduce el código ni si el nuevo usuario recibe algo. PRAI ha caído desde su máximo de mayo de 2025, unos 0,096 $, hasta unos 0,0008 $ en octubre de 2026. Maneja datos de tu cara, así que revisa antes su privacidad"
       },
       "de": {
         "gain": "Airdrops und Belohnungen für den Menschlichkeitsnachweis (z. B. Kampagnen-„Sterne“)",
         "note": "Eine Proof-of-Humanity-App, die per Handykamera dein Gesicht scannt, um zu zeigen, dass du ein echter Mensch bist. Laut App werden deine Gesichtsmerkmale auf dem Gerät in verschlüsselte Vektoren umgewandelt und mit vollhomomorpher Verschlüsselung (FHE) verarbeitet, die Originalbilder werden also nicht verschickt. Die Verifizierung erzeugt ein Menschlichkeits-NFT und ermöglicht Airdrops und Belohnungen in verschiedenen Apps. Betrieben von Privasea (Herausgeber im App Store: Privasea AB, zuletzt im Mai 2026 aktualisiert); der Token PRAI wird u. a. bei KuCoin und Gate gehandelt",
-        "need": "Die App FheID installieren, den Einladungscode QVedKjg eingeben und dich per Gesichtsscan als Mensch verifizieren",
-        "caution": "Welche Belohnungen es derzeit gibt und wie hoch sie sind, steht offiziell nirgends. Eine frühere offizielle Kampagne (2024) gab für Empfehlungen „Sterne“ (bis zu 3 Stufen: 100, 50 und 25 Sterne pro Person), die gegen Airdrops getauscht werden konnten. Wo der Einladungscode eingegeben wird und ob Neue etwas bekommen, ist nicht bestätigt. PRAI ist vom Hoch im Mai 2025 bei etwa 0,096 $ auf rund 0,0008 $ im Oktober 2026 gefallen. Die App verarbeitet Gesichtsdaten, prüf also vorher den Datenschutz. Ob es aus Japan funktioniert, ist noch nicht bestätigt"
+        "need": "Die App FheID installieren, den Einladungscode QVedKjg eingeben und dich per Gesichtsscan als Mensch verifizieren (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+        "caution": "Welche Belohnungen es derzeit gibt und wie hoch sie sind, steht offiziell nirgends. Eine frühere offizielle Kampagne (2024) gab für Empfehlungen „Sterne“ (bis zu 3 Stufen: 100, 50 und 25 Sterne pro Person), die gegen Airdrops getauscht werden konnten. Wo der Einladungscode eingegeben wird und ob Neue etwas bekommen, ist nicht bestätigt. PRAI ist vom Hoch im Mai 2025 bei etwa 0,096 $ auf rund 0,0008 $ im Oktober 2026 gefallen. Die App verarbeitet Gesichtsdaten, prüf also vorher den Datenschutz"
       },
       "ar": {
         "gain": "إسقاطات جوية ومكافآت مقابل إثبات أنك إنسان (مثل «نجوم» الحملات)",
         "note": "تطبيق لإثبات الإنسانية يمسح وجهك بكاميرا الهاتف ليثبت أنك شخص حقيقي. يقول التطبيق إن ملامح وجهك تتحول على الجهاز نفسه إلى متجهات مشفّرة وتُعالَج بالتشفير المتماثل الكامل (⁦FHE⁩)، فلا تُرسل الصور الأصلية. يُنشئ التحقق رمز ⁦NFT⁩ لإثبات الإنسانية ويتيح لك تلقي الإسقاطات الجوية والمكافآت في تطبيقات مختلفة. تديره ⁦Privasea⁩ (الناشر في ⁦App Store⁩ هو ⁦Privasea AB⁩، وحُدّث حتى مايو 2026)، ورمزه ⁦PRAI⁩ يُتداول في ⁦KuCoin⁩ و⁦Gate⁩ وغيرهما",
-        "need": "ثبّت تطبيق ⁦FheID⁩ وأدخل رمز الدعوة ⁦QVedKjg⁩ وتحقق من أنك إنسان بمسح الوجه",
-        "caution": "لا يُذكر رسميًا ما المكافآت المتاحة الآن ولا قيمتها. منحت حملة رسمية سابقة (2024) «نجومًا» مقابل الإحالة (حتى 3 مستويات: 100 و50 و25 نجمة لكل شخص) يمكن استبدالها بإسقاطات جوية. لم يتأكد مكان إدخال رمز الدعوة ولا ما إذا كان المستخدم الجديد يحصل على شيء. هبط ⁦PRAI⁩ من ذروته في مايو 2025 عند نحو ⁦$0.096⁩ إلى نحو ⁦$0.0008⁩ في أكتوبر 2026. يتعامل التطبيق مع بيانات وجهك، فراجع الخصوصية أولًا. لم نتأكد بعد من أنه يعمل من اليابان"
+        "need": "ثبّت تطبيق ⁦FheID⁩ وأدخل رمز الدعوة ⁦QVedKjg⁩ وتحقق من أنك إنسان بمسح الوجه (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+        "caution": "لا يُذكر رسميًا ما المكافآت المتاحة الآن ولا قيمتها. منحت حملة رسمية سابقة (2024) «نجومًا» مقابل الإحالة (حتى 3 مستويات: 100 و50 و25 نجمة لكل شخص) يمكن استبدالها بإسقاطات جوية. لم يتأكد مكان إدخال رمز الدعوة ولا ما إذا كان المستخدم الجديد يحصل على شيء. هبط ⁦PRAI⁩ من ذروته في مايو 2025 عند نحو ⁦$0.096⁩ إلى نحو ⁦$0.0008⁩ في أكتوبر 2026. يتعامل التطبيق مع بيانات وجهك، فراجع الخصوصية أولًا"
       }
     }
   ],
