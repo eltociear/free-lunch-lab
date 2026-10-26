@@ -1762,6 +1762,66 @@ module.exports = {
         "need": "اتبع الرسالة المثبتة في قناة ⁦Telegram⁩ الرسمية لتحصل مجانًا على رمز دعوة من عضو موثَّق أو من فريق ⁦Idena⁩. شارك عبر تطبيق الويب (ويصلح أيضًا عبر عقدة مشتركة) أو عقدتك الخاصة، وكن متصلًا وقت المراسم لحل ألغاز ⁦FLIP⁩ (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
         "caution": "إن لم تكن متصلًا في الوقت المحدد (منتصف الليل في اليابان) فلن يتم التحقق منك، لذا يتطلب جهدًا. الشبكة صغيرة جدًا: سعر ⁦iDNA⁩ نحو ⁦$0.0012⁩ (أكتوبر 2026) وقيمتها السوقية نحو 120 ألف دولار، والمنصة الوحيدة التي يعرضها ⁦CoinGecko⁩ هي ⁦PancakeSwap (BSC)⁩، فالسيولة ضعيفة. التحويل إلى نقود يعني البيع في منصة تداول. يُمنع بيع رموز الدعوة وشراؤها، فهي مجانية. إن فوّضت «مجمّعًا» لشخص آخر فقد يستولي صاحبه على حصتك"
       }
+    },
+    {
+      "id": "rewardme",
+      "name": "RewardMe",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 4,
+      "official": "https://reward.me/",
+      "code": "7HOdyg",
+      "ref": "https://app.reward.me/s6hS/z8a4ajc1",
+      "showCode": true,
+      "added": "2026-10-26",
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "partial"
+      },
+      "ja": {
+        "gain": "受信メールのレシートから最大5%のキャッシュバック（Reward Dollars／暗号資産MDT）",
+        "note": "メールアカウントを連携しておくと、Amazon・Uber・DoorDash など100以上の対象店での買い物を受信メールのレシートから自動で見つけ、最大5%の報酬（Reward Dollars）がたまる。報酬はギフト券に交換するか、暗号資産 MDT（Coinbase などに上場）にして出金できる。紹介コードで登録すると登録特典があり、友だちが最初の報酬を得ると、紹介した側・された側の両方が紹介特典を受け取れる。App Store の提供元は Magic Crystal Limited（所在地は香港。2026年8月にも更新）",
+        "need": "紹介リンクから登録し、登録時に紹介コード 7HOdyg を入力する。メールアカウントを連携して、対象のお店で買い物する（日本からの利用は2026年10月に実際に確認）",
+        "caution": "しくみ上、連携したメールの中身（レシート・注文確認・請求などの商用メールと、件名・送信者などのデータ）が読み取られる。プライバシーポリシーでは、個人を特定できない形に加工したデータを、企業向けに「オルタナティブデータ」を提供する Measurable AI などに販売・共有すると書かれている。ギフト券への交換は承認まで7〜14営業日かかる（Orb認証済みの World ID を連携すると即時）。6か月使わないと残高が消えることがある。米国・中国本土などでは使えず、フィリピンからは2025年末に撤退した。登録特典と紹介特典の額は公式に書かれていない。MDT は2026年10月時点で約0.0067ドル"
+      },
+      "en": {
+        "gain": "Up to 5% cashback found in your email receipts (Reward Dollars / MDT crypto)",
+        "note": "Link your email account and it automatically finds purchases at 100+ merchants such as Amazon, Uber and DoorDash from the receipts in your inbox, crediting up to 5% in Reward Dollars. Redeem them for gift cards or convert to the MDT token (listed on Coinbase and others) and withdraw. Signing up with a referral code gives a sign-up reward, and once your friend earns a first shopping reward, both of you can claim referral rewards. The App Store publisher is Magic Crystal Limited (address in Hong Kong; updated as recently as Aug 2026)",
+        "need": "Sign up through the referral link and enter the referral code 7HOdyg when you register. Link an email account and shop at eligible merchants (confirmed usable from Japan in Oct 2026, first-hand)",
+        "caution": "By design it reads your linked inbox: commercial emails such as receipts, order confirmations and bills, plus data like subjects and senders. Its privacy policy says de-identified data is sold to or shared with partners such as Measurable AI, which provides “alternative data” to businesses. Gift-card redemptions take 7–14 business days to approve (instant with an Orb-verified World ID). Balances may be deleted after 6 months of inactivity. Not available in the US, mainland China and some other places, and it left the Philippines at the end of 2025. The sign-up and referral reward amounts are not stated officially. MDT was about $0.0067 in Oct 2026"
+      },
+      "zh": {
+        "gain": "从收件箱的购物收据中自动获得最高 5% 返现（Reward Dollars／加密货币 MDT）",
+        "note": "关联邮箱后，它会从收件箱的收据中自动找出你在 Amazon、Uber、DoorDash 等 100 多家商户的消费，返还最高 5% 的奖励（Reward Dollars）。奖励可兑换礼品卡，或转换为加密货币 MDT（已在 Coinbase 等上市）后提现。用推荐码注册可获得注册奖励；好友获得首笔购物奖励后，邀请人和被邀请人都能领取推荐奖励。App Store 提供者为 Magic Crystal Limited（地址在香港，2026 年 8 月仍有更新）",
+        "need": "通过推荐链接注册，并在注册时输入推荐码 7HOdyg。关联邮箱，在合作商户购物（已于 2026 年 10 月亲自确认可在日本使用）",
+        "caution": "按其机制，它会读取你关联邮箱的内容：收据、订单确认、账单等商业邮件，以及主题、发件人等数据。隐私政策称，会把去标识化的数据出售或分享给为企业提供“另类数据”的 Measurable AI 等合作方。兑换礼品卡需 7–14 个工作日审批（关联经 Orb 验证的 World ID 则即时）。连续 6 个月不用，余额可能被清除。美国、中国大陆等地无法使用，并已于 2025 年底退出菲律宾。注册奖励和推荐奖励的金额官方没有写明。MDT 在 2026 年 10 月约为 0.0067 美元"
+      },
+      "hi": {
+        "gain": "ईमेल रसीदों से मिला ज़्यादा से ज़्यादा 5% कैशबैक (Reward Dollars / MDT क्रिप्टो)",
+        "note": "अपना ईमेल अकाउंट जोड़ें, और यह इनबॉक्स की रसीदों से Amazon, Uber, DoorDash जैसे 100+ व्यापारियों पर आपकी ख़रीदारी अपने आप ढूँढकर 5% तक Reward Dollars देता है। इन्हें गिफ़्ट कार्ड में बदलें या MDT टोकन (Coinbase आदि पर लिस्टेड) में बदलकर निकालें। रेफ़रल कोड से साइन अप करने पर साइन-अप इनाम मिलता है, और आपके दोस्त को पहला शॉपिंग इनाम मिलने पर आप दोनों रेफ़रल इनाम ले सकते हैं। App Store पर प्रकाशक Magic Crystal Limited है (पता हांगकांग में; अगस्त 2026 में भी अपडेट)",
+        "need": "रेफ़रल लिंक से साइन अप करें और रजिस्ट्रेशन के समय रेफ़रल कोड 7HOdyg डालें। ईमेल अकाउंट जोड़ें और योग्य दुकानों पर ख़रीदारी करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+        "caution": "अपनी बनावट के कारण यह आपका जोड़ा गया इनबॉक्स पढ़ता है: रसीद, ऑर्डर कन्फ़र्मेशन, बिल जैसे व्यावसायिक ईमेल, और विषय व भेजने वाले जैसा डेटा। इसकी प्राइवेसी पॉलिसी कहती है कि पहचान हटाया गया डेटा Measurable AI जैसे साझेदारों को बेचा या दिया जाता है, जो कंपनियों को “ऑल्टरनेटिव डेटा” देते हैं। गिफ़्ट कार्ड रिडेम्प्शन की मंज़ूरी में 7–14 कार्यदिवस लगते हैं (Orb से वेरिफ़ाई की गई World ID जोड़ने पर तुरंत)। 6 महीने इस्तेमाल न करने पर बैलेंस मिटाया जा सकता है। यह अमेरिका, मुख्य भूमि चीन और कुछ और जगहों पर उपलब्ध नहीं है, और 2025 के अंत में फ़िलीपींस से हट गया। साइन-अप और रेफ़रल इनाम की रकम आधिकारिक रूप से नहीं बताई गई। अक्टूबर 2026 में MDT लगभग $0.0067 था"
+      },
+      "es": {
+        "gain": "Hasta un 5 % de reembolso a partir de los recibos de tu correo (Reward Dollars / cripto MDT)",
+        "note": "Vincula tu cuenta de correo y la app detecta sola, en los recibos de tu bandeja de entrada, tus compras en más de 100 comercios como Amazon, Uber o DoorDash, y te abona hasta un 5 % en Reward Dollars. Puedes canjearlos por tarjetas regalo o pasarlos al token MDT (cotiza en Coinbase y otros) y retirarlos. Registrarte con un código de referido da un premio de registro, y cuando tu amigo obtiene su primera recompensa de compra, ambos podéis reclamar el premio por referido. En la App Store la publica Magic Crystal Limited (dirección en Hong Kong; actualizada en agosto de 2026)",
+        "need": "Regístrate con el enlace de referido e introduce el código 7HOdyg al registrarte. Vincula una cuenta de correo y compra en comercios adheridos (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+        "caution": "Por cómo funciona, lee tu bandeja de entrada vinculada: correos comerciales como recibos, confirmaciones de pedido y facturas, además de datos como asuntos y remitentes. Su política de privacidad dice que vende o comparte datos desidentificados con socios como Measurable AI, que ofrece «datos alternativos» a empresas. Los canjes por tarjetas regalo tardan 7–14 días hábiles en aprobarse (al instante con un World ID verificado con Orb). El saldo puede borrarse tras 6 meses sin uso. No está disponible en EE. UU., China continental y otros lugares, y salió de Filipinas a finales de 2025. Los importes del premio de registro y por referido no se indican oficialmente. MDT valía unos 0,0067 $ en octubre de 2026"
+      },
+      "de": {
+        "gain": "Bis zu 5 % Cashback aus Kaufbelegen in deinem Postfach (Reward Dollars / Krypto MDT)",
+        "note": "Verknüpfe dein E-Mail-Konto, und die App findet in den Belegen in deinem Posteingang automatisch Einkäufe bei über 100 Händlern wie Amazon, Uber oder DoorDash und schreibt dir bis zu 5 % in Reward Dollars gut. Die kannst du gegen Geschenkkarten eintauschen oder in den Token MDT (u. a. bei Coinbase gelistet) umwandeln und auszahlen. Wer sich mit Empfehlungscode anmeldet, bekommt einen Anmeldebonus, und sobald dein Freund seine erste Einkaufsbelohnung erhält, könnt ihr beide die Empfehlungsprämie abholen. Herausgeber im App Store ist Magic Crystal Limited (Adresse in Hongkong; zuletzt im August 2026 aktualisiert)",
+        "need": "Über den Empfehlungslink anmelden und bei der Registrierung den Empfehlungscode 7HOdyg eingeben. E-Mail-Konto verknüpfen und bei teilnehmenden Händlern einkaufen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+        "caution": "Systembedingt liest die App dein verknüpftes Postfach: geschäftliche Mails wie Belege, Bestellbestätigungen und Rechnungen sowie Daten wie Betreff und Absender. Laut Datenschutzerklärung werden de-identifizierte Daten an Partner wie Measurable AI verkauft oder weitergegeben, die Unternehmen „alternative Daten“ liefern. Das Einlösen von Geschenkkarten braucht 7–14 Werktage bis zur Freigabe (sofort mit einer per Orb verifizierten World ID). Nach 6 Monaten ohne Nutzung kann das Guthaben gelöscht werden. Nicht verfügbar in den USA, Festland-China und einigen weiteren Ländern; aus den Philippinen hat sich RewardMe Ende 2025 zurückgezogen. Die Höhe von Anmelde- und Empfehlungsbonus wird offiziell nicht genannt. MDT lag im Oktober 2026 bei etwa 0,0067 $"
+      },
+      "ar": {
+        "gain": "استرداد نقدي حتى 5% من إيصالات الشراء في بريدك (⁦Reward Dollars⁩ / عملة ⁦MDT⁩ المشفرة)",
+        "note": "اربط حساب بريدك الإلكتروني، فيعثر التطبيق تلقائيًا في إيصالات صندوق الوارد على مشترياتك من أكثر من 100 متجر مثل ⁦Amazon⁩ و⁦Uber⁩ و⁦DoorDash⁩، ويمنحك حتى 5% بـ⁦Reward Dollars⁩. يمكنك استبدالها ببطاقات هدايا أو تحويلها إلى رمز ⁦MDT⁩ (مدرج في ⁦Coinbase⁩ وغيرها) وسحبها. التسجيل برمز إحالة يمنح مكافأة تسجيل، وعندما يحصل صديقك على أول مكافأة شراء يمكنكما معًا المطالبة بمكافأة الإحالة. الناشر في ⁦App Store⁩ هو ⁦Magic Crystal Limited⁩ (العنوان في هونغ كونغ، وقد حُدّث حتى أغسطس 2026)",
+        "need": "سجّل عبر رابط الإحالة وأدخل رمز الإحالة ⁦7HOdyg⁩ عند التسجيل. اربط حساب بريد إلكتروني وتسوّق من المتاجر المشمولة (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+        "caution": "بحكم طريقة عمله يقرأ صندوق بريدك المرتبط: الرسائل التجارية مثل الإيصالات وتأكيدات الطلب والفواتير، وبيانات مثل العناوين والمرسلين. تقول سياسة الخصوصية إن البيانات بعد إزالة ما يحدد الهوية تُباع أو تُشارك مع شركاء مثل ⁦Measurable AI⁩ التي تقدم «بيانات بديلة» للشركات. تستغرق الموافقة على استبدال بطاقات الهدايا 7–14 يوم عمل (فورًا مع ⁦World ID⁩ موثَّق بـ⁦Orb⁩). قد يُحذف الرصيد بعد 6 أشهر من عدم الاستخدام. غير متاح في الولايات المتحدة والبر الرئيسي للصين وأماكن أخرى، وانسحب من الفلبين في نهاية 2025. مبالغ مكافأة التسجيل والإحالة غير مذكورة رسميًا. كان سعر ⁦MDT⁩ نحو ⁦$0.0067⁩ في أكتوبر 2026"
+      }
     }
   ],
   "PICKS": [
@@ -1797,6 +1857,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-26",
+      "ja": "RewardMeを追加",
+      "en": "Added RewardMe",
+      "zh": "新增 RewardMe",
+      "hi": "RewardMe जोड़ा",
+      "es": "Añadido RewardMe",
+      "de": "RewardMe hinzugefügt",
+      "ar": "أضفنا ⁦RewardMe⁩"
+    },
     {
       "date": "2026-10-26",
       "ja": "Idena（iDNA）を追加",
@@ -2203,7 +2273,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena、RewardMe）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -2335,7 +2405,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -2466,7 +2536,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -2597,7 +2667,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena、RewardMe）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -2728,7 +2798,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -2859,7 +2929,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido وWowApp وBillions وIdena) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido وWowApp وBillions وIdena وRewardMe) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
@@ -2990,7 +3060,7 @@ module.exports = {
       "q3": "Muss ich die Belohnungen versteuern?",
       "a3": "In Japan gelten Krypto-Gewinne beim Verkauf oder Ausgeben als sonstige Einkünfte, Punkte meist als gelegentliche Einkünfte. Die Regeln sind von Land zu Land verschieden. Frag bei größeren Beträgen beim Finanzamt in deinem Land nach.",
       "q4": "Kann ich das auch außerhalb Japans nutzen?",
-      "a4": "Dienste mit der Markierung „Weltweit“ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena) funktionieren auch außerhalb Japans. Ubiquitus ist nur für Menschen mit Wohnsitz in den USA; die übrigen sind für Menschen mit Wohnsitz in Japan.",
+      "a4": "Dienste mit der Markierung „Weltweit“ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena, RewardMe) funktionieren auch außerhalb Japans. Ubiquitus ist nur für Menschen mit Wohnsitz in den USA; die übrigen sind für Menschen mit Wohnsitz in Japan.",
       "warnH": "Bevor du dich anmeldest",
       "warnT": "Gut zu wissen",
       "w1": "Bonushöhe und Bedingungen ändern sich oft. Prüf vor der Anmeldung immer die offizielle Aktionsseite.",

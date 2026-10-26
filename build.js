@@ -104,7 +104,8 @@ function slip(s, L) {
   const has = !!s.code;
   // 紹介リンクがあるものはコード欄・コピーボタンを出さない。codeOnly はリンクが公式ページだけなのでコードを出す
   // noRef は紹介制度がないのでコード欄も出さない
-  const showCode = (!s.ref && !s.noRef) || s.codeOnly;
+  // showCode: true は、紹介リンクに加えて登録時にコード入力も求められるサービス（アプリストア経由だとリンクが効かないことがある）
+  const showCode = (!s.ref && !s.noRef) || s.codeOnly || s.showCode;
   return `<div class="slip">${showCode ? `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot"${has ? ' dir="ltr"' : ''}>${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>` : ''}${cta(s, L)}</div>`;
 }
 
