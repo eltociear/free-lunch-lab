@@ -1701,6 +1701,67 @@ module.exports = {
         "need": "سجّل عبر رابط الإحالة وتحقق بفحص حيوية الوجه أو بجواز سفر يدعم ⁦NFC⁩ (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
         "caution": "لا يُذكر رسميًا هل تتحول نقاط ⁦Power⁩ إلى ⁦$BILL⁩ أو إلى نقود، ولا كيف. تقول مصادر خارجية إن الداعي يحصل على ⁦Power⁩ عندما يتحقق الشخص المدعو، إضافة إلى جزء مما تجلبه دعوات ذلك الشخص، لكن لم نتمكن من تأكيد ذلك في الصفحات الرسمية (ولا يُعرف إن كان للمستخدم الجديد مكافأة). هبط ⁦$BILL⁩ من ذروته في مايو 2026 عند نحو ⁦$0.23⁩ إلى نحو ⁦$0.006⁩ في أكتوبر 2026. تقييمات ⁦App Store⁩ منخفضة (2.5 في اليابان، 2.7 في الولايات المتحدة)، مع شكاوى من عدم صرف المكافآت ومن عدم الاستقرار. يتعامل التطبيق مع بيانات وجهك وجواز سفرك، فراجع شروط الخصوصية أولًا"
       }
+    },
+    {
+      "id": "idena",
+      "name": "Idena（iDNA）",
+      "nameEn": "Idena (iDNA)",
+      "cat": "crypto-bi",
+      "type": "loop",
+      "global": true,
+      "ease": 1,
+      "official": "https://www.idena.io/",
+      "code": "",
+      "ref": "",
+      "noRef": true,
+      "added": "2026-10-26",
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "partial"
+      },
+      "ja": {
+        "gain": "iDNA（ノードを動かしている間のマイニング報酬と、認証セッションの報酬）",
+        "note": "「一人一票」の仕組みで人間であることを証明する、Proof of Person 型のブロックチェーン。世界中で同時に行われる「認証セレモニー」でFLIPと呼ばれる絵のパズルを解いて認証される。2026年10月は5日ごとに開かれ、開始は15:00 UTC（日本時間の深夜0時）。認証されると、ノードを動かしている間は iDNA のマイニング報酬がリアルタイムで入り、セッションごとの報酬もある。オープンソースのプロジェクトで、2026年10月24日のセレモニーでは159アカウントが対象になった。紹介リンクはない",
+        "need": "公式 Telegram の案内に従って、認証済みメンバーか運営チームから無料の招待コードをもらう。Webアプリ（共有ノード経由でも可）か自分のノードで参加し、セレモニーの時間にオンラインで FLIP を解く（日本からの利用は2026年10月に実際に確認）",
+        "caution": "決まった時刻（日本時間の深夜0時）にオンラインでいないと認証されず、手間がかかる。ネットワークはとても小さく、iDNA は1枚約0.0012ドル（2026年10月）。時価総額は約12万ドルで、CoinGecko で確認できた取引所は PancakeSwap（BSC）のみと流動性が低い。換金は取引所で売る形になる。招待コードを売買するのは禁止されていて、無料でもらうもの。報酬を他人の「プール」に任せると、相手がステークを持ち去れるので注意"
+      },
+      "en": {
+        "gain": "iDNA (mining rewards while your node runs, plus validation rewards)",
+        "note": "A proof-of-person blockchain built on “one person, one vote”. You prove you are human in a synchronized “validation ceremony” held worldwide at the same time, by solving picture puzzles called FLIPs. In Oct 2026 ceremonies were held every 5 days, starting at 15:00 UTC. Once validated, you earn iDNA mining rewards in real time while your node runs, plus rewards per session. It is an open-source project; 159 accounts took part in the 24 Oct 2026 ceremony. There is no referral link",
+        "need": "Follow the pinned message in the official Telegram to get a free invitation code from a validated member or the Idena team. Join with the web app (a shared node works too) or your own node, and be online at ceremony time to solve FLIPs (confirmed usable from Japan in Oct 2026, first-hand)",
+        "caution": "You must be online at a fixed time (midnight in Japan) or you will not be validated, so it takes effort. The network is very small: iDNA is about $0.0012 (Oct 2026), the market cap is about $120,000, and the only exchange CoinGecko shows is PancakeSwap (BSC), so liquidity is low. Cashing out means selling on an exchange. Invitation codes must not be bought or sold; they are free. If you delegate to someone else’s “pool”, the pool owner can take your stake"
+      },
+      "zh": {
+        "gain": "iDNA（节点运行期间的挖矿奖励，以及验证奖励）",
+        "note": "基于“一人一票”、证明你是真人的 Proof of Person 区块链。在全球同时举行的“验证仪式”中解开名为 FLIP 的图片谜题来完成验证。2026 年 10 月每 5 天举行一次，开始时间为 15:00 UTC。通过验证后，节点运行期间可实时获得 iDNA 挖矿奖励，每次验证还有奖励。这是开源项目，2026 年 10 月 24 日的仪式共有 159 个账户参加。没有推荐链接",
+        "need": "按官方 Telegram 置顶消息的说明，向已验证成员或 Idena 团队免费索取邀请码。用网页应用（也可通过共享节点）或自己的节点参加，在仪式时间在线解 FLIP（已于 2026 年 10 月亲自确认可在日本使用）",
+        "caution": "必须在固定时间（日本时间午夜）在线，否则无法通过验证，比较费事。网络规模很小：iDNA 约 0.0012 美元（2026 年 10 月），市值约 12 万美元，CoinGecko 上能确认的交易所只有 PancakeSwap（BSC），流动性很低。兑现需在交易所出售。邀请码禁止买卖，应免费获取。若把挖矿委托给他人的“矿池”，对方可能拿走你的质押"
+      },
+      "hi": {
+        "gain": "iDNA (नोड चलते रहने तक माइनिंग इनाम, और वैलिडेशन इनाम)",
+        "note": "“एक व्यक्ति, एक वोट” पर बना Proof of Person ब्लॉकचेन, जो साबित करता है कि आप इंसान हैं। दुनिया भर में एक साथ होने वाले “वैलिडेशन समारोह” में FLIP नाम की चित्र पहेलियाँ हल करके आप वैलिडेट होते हैं। अक्टूबर 2026 में यह हर 5 दिन पर 15:00 UTC से हुआ। वैलिडेट होने के बाद, नोड चलते रहने तक iDNA माइनिंग इनाम तुरंत मिलता है, साथ में हर सत्र का इनाम भी। यह ओपन-सोर्स प्रोजेक्ट है; 24 अक्टूबर 2026 के समारोह में 159 अकाउंट शामिल थे। कोई रेफ़रल लिंक नहीं है",
+        "need": "आधिकारिक Telegram के पिन किए संदेश के अनुसार किसी वैलिडेटेड सदस्य या Idena टीम से मुफ़्त इनविटेशन कोड लें। वेब ऐप (शेयर्ड नोड से भी) या अपने नोड से जुड़ें, और समारोह के समय ऑनलाइन रहकर FLIP हल करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+        "caution": "तय समय (जापान में आधी रात) पर ऑनलाइन न होने पर वैलिडेशन नहीं होता, इसलिए मेहनत लगती है। नेटवर्क बहुत छोटा है: iDNA लगभग $0.0012 (अक्टूबर 2026), मार्केट कैप लगभग $1.2 लाख, और CoinGecko पर दिखने वाला एकमात्र एक्सचेंज PancakeSwap (BSC) है, इसलिए लिक्विडिटी कम है। नकद के लिए एक्सचेंज पर बेचना होता है। इनविटेशन कोड ख़रीदना-बेचना मना है; ये मुफ़्त हैं। किसी और के “पूल” को सौंपने पर पूल का मालिक आपका स्टेक ले सकता है"
+      },
+      "es": {
+        "gain": "iDNA (recompensas de minado mientras tu nodo funciona, más recompensas de validación)",
+        "note": "Una blockchain de «prueba de persona» basada en «una persona, un voto». Demuestras que eres humano en una «ceremonia de validación» sincronizada en todo el mundo, resolviendo acertijos de imágenes llamados FLIP. En octubre de 2026 las ceremonias fueron cada 5 días, a las 15:00 UTC. Una vez validado, ganas recompensas de minado en iDNA en tiempo real mientras tu nodo está activo, además de recompensas por sesión. Es un proyecto de código abierto; en la ceremonia del 24 de octubre de 2026 participaron 159 cuentas. No hay enlace de referido",
+        "need": "Sigue el mensaje fijado del Telegram oficial para conseguir gratis un código de invitación de un miembro validado o del equipo de Idena. Participa con la app web (también vale un nodo compartido) o con tu propio nodo, y conéctate a la hora de la ceremonia para resolver FLIP (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+        "caution": "Si no estás conectado a una hora fija (medianoche en Japón) no te validan, así que requiere esfuerzo. La red es muy pequeña: iDNA vale unos 0,0012 $ (octubre de 2026), la capitalización ronda los 120.000 $ y el único exchange que muestra CoinGecko es PancakeSwap (BSC), así que hay poca liquidez. Para cobrar hay que vender en un exchange. Los códigos de invitación no se compran ni se venden: son gratis. Si delegas en el «pool» de otra persona, quien lo gestiona puede quedarse con tu stake"
+      },
+      "de": {
+        "gain": "iDNA (Mining-Belohnungen, solange dein Node läuft, plus Validierungsbelohnungen)",
+        "note": "Eine Proof-of-Person-Blockchain nach dem Prinzip „eine Person, eine Stimme“. Du weist in einer weltweit gleichzeitigen „Validierungszeremonie“ nach, dass du ein Mensch bist, indem du Bilderrätsel namens FLIPs löst. Im Oktober 2026 fanden die Zeremonien alle 5 Tage um 15:00 UTC statt. Nach der Validierung bekommst du in Echtzeit iDNA-Mining-Belohnungen, solange dein Node läuft, plus Belohnungen pro Sitzung. Es ist ein Open-Source-Projekt; an der Zeremonie vom 24. Oktober 2026 nahmen 159 Konten teil. Einen Empfehlungslink gibt es nicht",
+        "need": "Laut angepinnter Nachricht im offiziellen Telegram einen kostenlosen Einladungscode von einem validierten Mitglied oder vom Idena-Team holen. Über die Web-App (auch mit Shared Node) oder einen eigenen Node teilnehmen und zur Zeremonie online sein, um FLIPs zu lösen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+        "caution": "Wer zur festen Uhrzeit (Mitternacht in Japan) nicht online ist, wird nicht validiert, das ist also aufwendig. Das Netzwerk ist sehr klein: iDNA kostet etwa 0,0012 $ (Oktober 2026), die Marktkapitalisierung liegt bei rund 120.000 $, und die einzige Börse, die CoinGecko zeigt, ist PancakeSwap (BSC), die Liquidität ist also gering. Auszahlen heißt an einer Börse verkaufen. Einladungscodes dürfen nicht gekauft oder verkauft werden, sie sind kostenlos. Wer an den „Pool“ einer anderen Person delegiert, riskiert, dass diese den Stake einbehält"
+      },
+      "ar": {
+        "gain": "⁦iDNA⁩ (مكافآت تعدين ما دامت عقدتك تعمل، ومكافآت التحقق)",
+        "note": "بلوكتشين من نوع «إثبات الشخص» يقوم على مبدأ «شخص واحد، صوت واحد». تثبت أنك إنسان في «مراسم تحقق» تُقام في الوقت نفسه حول العالم بحل ألغاز صور تُسمى ⁦FLIP⁩. في أكتوبر 2026 أُقيمت المراسم كل 5 أيام عند 15:00 بالتوقيت العالمي. بعد التحقق تحصل على مكافآت تعدين ⁦iDNA⁩ لحظيًا ما دامت عقدتك تعمل، إضافة إلى مكافآت كل جلسة. إنه مشروع مفتوح المصدر، وشارك 159 حسابًا في مراسم 24 أكتوبر 2026. لا يوجد رابط إحالة",
+        "need": "اتبع الرسالة المثبتة في قناة ⁦Telegram⁩ الرسمية لتحصل مجانًا على رمز دعوة من عضو موثَّق أو من فريق ⁦Idena⁩. شارك عبر تطبيق الويب (ويصلح أيضًا عبر عقدة مشتركة) أو عقدتك الخاصة، وكن متصلًا وقت المراسم لحل ألغاز ⁦FLIP⁩ (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+        "caution": "إن لم تكن متصلًا في الوقت المحدد (منتصف الليل في اليابان) فلن يتم التحقق منك، لذا يتطلب جهدًا. الشبكة صغيرة جدًا: سعر ⁦iDNA⁩ نحو ⁦$0.0012⁩ (أكتوبر 2026) وقيمتها السوقية نحو 120 ألف دولار، والمنصة الوحيدة التي يعرضها ⁦CoinGecko⁩ هي ⁦PancakeSwap (BSC)⁩، فالسيولة ضعيفة. التحويل إلى نقود يعني البيع في منصة تداول. يُمنع بيع رموز الدعوة وشراؤها، فهي مجانية. إن فوّضت «مجمّعًا» لشخص آخر فقد يستولي صاحبه على حصتك"
+      }
     }
   ],
   "PICKS": [
@@ -1736,6 +1797,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-26",
+      "ja": "Idena（iDNA）を追加",
+      "en": "Added Idena (iDNA)",
+      "zh": "新增 Idena（iDNA）",
+      "hi": "Idena (iDNA) जोड़ा",
+      "es": "Añadido Idena (iDNA)",
+      "de": "Idena (iDNA) hinzugefügt",
+      "ar": "أضفنا ⁦Idena (iDNA)⁩"
+    },
     {
       "date": "2026-10-26",
       "ja": "Billionsを追加",
@@ -2125,7 +2196,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -2257,7 +2328,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -2388,7 +2459,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -2519,7 +2590,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions、Idena）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -2650,7 +2721,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -2781,7 +2852,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido وWowApp وBillions) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido وWowApp وBillions وIdena) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
@@ -2912,7 +2983,7 @@ module.exports = {
       "q3": "Muss ich die Belohnungen versteuern?",
       "a3": "In Japan gelten Krypto-Gewinne beim Verkauf oder Ausgeben als sonstige Einkünfte, Punkte meist als gelegentliche Einkünfte. Die Regeln sind von Land zu Land verschieden. Frag bei größeren Beträgen beim Finanzamt in deinem Land nach.",
       "q4": "Kann ich das auch außerhalb Japans nutzen?",
-      "a4": "Dienste mit der Markierung „Weltweit“ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions) funktionieren auch außerhalb Japans. Ubiquitus ist nur für Menschen mit Wohnsitz in den USA; die übrigen sind für Menschen mit Wohnsitz in Japan.",
+      "a4": "Dienste mit der Markierung „Weltweit“ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions, Idena) funktionieren auch außerhalb Japans. Ubiquitus ist nur für Menschen mit Wohnsitz in den USA; die übrigen sind für Menschen mit Wohnsitz in Japan.",
       "warnH": "Bevor du dich anmeldest",
       "warnT": "Gut zu wissen",
       "w1": "Bonushöhe und Bedingungen ändern sich oft. Prüf vor der Anmeldung immer die offizielle Aktionsseite.",
