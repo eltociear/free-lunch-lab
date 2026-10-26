@@ -1581,6 +1581,67 @@ module.exports = {
         "need": "سجّل مجانًا عبر رابط الإحالة واستخدم التطبيق يوميًا (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
         "caution": "لا تأتي المكافآت ممن تدعوهم فقط، بل أيضًا ممن يدعونهم بدورهم: أي شبكة متعددة المستويات. تذكر مصادر خارجية 8 مستويات، ولم يتأكد ذلك رسميًا. المبالغ اليومية ضئيلة جدًا، فلا تتوقع دخلًا يُعتد به. يُقال إن السحب إلى ⁦PayPal⁩ يتطلب حدًا أدنى ورسومًا وعددًا من أيام الاستخدام المتتالية، لكن تعذّر الاطلاع على صفحات المساعدة الرسمية مباشرة. تقييمه في متجر ⁦App Store⁩ الياباني 3.2 (167 تقييمًا، أكتوبر 2026)، ويشكو بعض المستخدمين من تعذر السحب. موقع الشركة المشغّلة غير مؤكد"
       }
+    },
+    {
+      "id": "humad",
+      "name": "Humad（World App）",
+      "nameEn": "Humad (World App)",
+      "cat": "pointsite",
+      "type": "loop",
+      "global": false,
+      "ease": 3,
+      "official": "https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1",
+      "code": "",
+      "ref": "",
+      "noRef": true,
+      "added": "2026-10-26",
+      "trust": {
+        "cash": "partial",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ja": {
+        "gain": "広告のタップや質問への回答でポイント（1,500pt＝150円分からギフト券に交換）",
+        "note": "World App の中で動くミニアプリ。好きな広告をタップしたり、興味や価値観についての質問に答えたりするとポイントがたまり、カフェ・スイーツ、フードデリバリー、映画、ECサイト、アプリストアなどのギフト券に交換できる。World ID で人間証明をすると広告タップのポイントが6倍になり、デイリークエスチョンに答えると最大1,000ptが当たるルーレットにも参加できる。運営は博報堂DYホールディングス100%出資の株式会社Ads for Humanity（東京・赤坂）で、2026年8月7日にベータ版を公開。World の掲載ページでの利用者は約2.5万人（2026年10月）。紹介リンクや紹介特典は見つからなかった",
+        "need": "World App でミニアプリ Humad を開いて使う。ギフト券への交換には、Orb で認証した World ID での人間証明が必要",
+        "caution": "ポイントは現金ではなくギフト券にしか交換できず、交換後の取り消しはできない。日本で使える日本限定のサービス（プレスリリースでも日本国内からのアクセスに限定とされている）。ベータ版なので、内容が変わることがある。広告の配信には、回答や連携したデータが使われる"
+      },
+      "en": {
+        "gain": "Points for tapping ads and answering questions (gift cards from 1,500 pt = ¥150)",
+        "note": "A mini app inside World App. Tap ads you like and answer questions about your interests and values to collect points, then exchange them for gift cards for cafés and sweets, food delivery, movies, online shops, app stores and more. Proving you are human with World ID multiplies ad-tap points by 6, and answering the daily question enters you in a roulette worth up to 1,000 pt. Run by Ads for Humanity Inc. (Akasaka, Tokyo), wholly owned by Hakuhodo DY Holdings; the beta launched on 7 Aug 2026. About 25,000 users (World’s listing page, Oct 2026). No referral link or referral bonus was found",
+        "need": "Open the Humad mini app in World App. Exchanging points for gift cards requires proof of human with an Orb-verified World ID",
+        "caution": "Points can only be exchanged for gift cards, not cash, and exchanges cannot be undone. Available in Japan and Japan-only (the press release also says access is limited to Japan). It is a beta, so details may change. Your answers and linked data are used to target ads"
+      },
+      "zh": {
+        "gain": "点击广告、回答问题可得积分（1,500 积分＝150 日元起可换礼品卡）",
+        "note": "在 World App 内运行的小程序。点击喜欢的广告、回答关于兴趣和价值观的问题即可积累积分，可兑换咖啡甜点、外卖、电影、电商、应用商店等礼品卡。用 World ID 完成真人证明后，点击广告的积分变为 6 倍；回答每日问题还可参加最高 1,000 积分的转盘。运营方为博报堂 DY 控股全资子公司 Ads for Humanity 株式会社（东京赤坂），2026 年 8 月 7 日推出测试版。World 介绍页显示用户约 2.5 万（2026 年 10 月）。未找到推荐链接或推荐奖励",
+        "need": "在 World App 中打开 Humad 小程序使用。兑换礼品卡需要用经 Orb 验证的 World ID 完成真人证明",
+        "caution": "积分只能兑换礼品卡，不能换现金，兑换后无法撤销。可在日本使用，且仅限日本（新闻稿也称仅限日本国内访问）。目前为测试版，内容可能变化。你的回答和关联的数据会被用于投放广告"
+      },
+      "hi": {
+        "gain": "विज्ञापन टैप करने और सवालों के जवाब देने पर पॉइंट (1,500 pt = ¥150 से गिफ़्ट कार्ड)",
+        "note": "World App के अंदर चलने वाला मिनी ऐप। पसंद के विज्ञापन टैप करें और अपनी रुचियों व मूल्यों से जुड़े सवालों के जवाब दें, पॉइंट जमा करें और उन्हें कैफ़े-मिठाई, फ़ूड डिलीवरी, फ़िल्म, ऑनलाइन शॉप, ऐप स्टोर आदि के गिफ़्ट कार्ड से बदलें। World ID से इंसान साबित करने पर विज्ञापन टैप के पॉइंट 6 गुना हो जाते हैं, और रोज़ के सवाल का जवाब देने पर 1,000 pt तक की रूलेट में हिस्सा मिलता है। इसे Hakuhodo DY Holdings की पूर्ण स्वामित्व वाली Ads for Humanity Inc. (अकासाका, टोक्यो) चलाती है; बीटा 7 अगस्त 2026 को शुरू हुआ। लगभग 25,000 यूज़र (World का लिस्टिंग पेज, अक्टूबर 2026)। कोई रेफ़रल लिंक या रेफ़रल बोनस नहीं मिला",
+        "need": "World App में Humad मिनी ऐप खोलकर इस्तेमाल करें। पॉइंट को गिफ़्ट कार्ड में बदलने के लिए Orb से वेरिफ़ाई की गई World ID से इंसान होने का सबूत चाहिए",
+        "caution": "पॉइंट सिर्फ़ गिफ़्ट कार्ड में बदलते हैं, नकद में नहीं, और बदलने के बाद रद्द नहीं होते। यह जापान में उपलब्ध है और सिर्फ़ जापान के लिए है (प्रेस रिलीज़ में भी पहुँच सिर्फ़ जापान के अंदर से बताई गई है)। यह बीटा है, इसलिए चीज़ें बदल सकती हैं। आपके जवाब और जोड़ा गया डेटा विज्ञापन दिखाने में इस्तेमाल होता है"
+      },
+      "es": {
+        "gain": "Puntos por tocar anuncios y responder preguntas (tarjetas regalo desde 1.500 pt = 150 ¥)",
+        "note": "Una mini app dentro de World App. Toca los anuncios que te gusten y responde preguntas sobre tus intereses y valores para sumar puntos, y cámbialos por tarjetas regalo de cafeterías y dulces, comida a domicilio, cine, tiendas online, tiendas de apps y más. Si demuestras que eres humano con World ID, los puntos por anuncio se multiplican por 6, y al responder la pregunta del día entras en una ruleta de hasta 1.000 pt. La gestiona Ads for Humanity Inc. (Akasaka, Tokio), filial al 100 % de Hakuhodo DY Holdings; la beta salió el 7 de agosto de 2026. Unos 25.000 usuarios (página de World, octubre de 2026). No se encontró enlace ni bono de referido",
+        "need": "Abre la mini app Humad en World App. Para cambiar puntos por tarjetas regalo hace falta demostrar que eres humano con un World ID verificado con Orb",
+        "caution": "Los puntos solo se cambian por tarjetas regalo, no por dinero, y el canje no se puede deshacer. Disponible en Japón y solo para Japón (el comunicado de prensa también limita el acceso a Japón). Es una beta, así que puede cambiar. Tus respuestas y los datos que vincules se usan para mostrarte anuncios"
+      },
+      "de": {
+        "gain": "Punkte fürs Antippen von Werbung und Beantworten von Fragen (Geschenkkarten ab 1.500 Pkt. = 150 Yen)",
+        "note": "Eine Mini-App in der World App. Tipp Werbung an, die dir gefällt, und beantworte Fragen zu deinen Interessen und Werten, um Punkte zu sammeln, und tausch sie gegen Geschenkkarten für Cafés und Süßes, Essenslieferung, Kino, Onlineshops, App-Stores und mehr. Wenn du mit World ID nachweist, dass du ein Mensch bist, gibt es für das Antippen von Werbung 6-mal so viele Punkte, und mit der täglichen Frage nimmst du an einem Glücksrad mit bis zu 1.000 Pkt. teil. Betrieben von der Ads for Humanity Inc. (Akasaka, Tokio), einer 100-prozentigen Tochter der Hakuhodo DY Holdings; die Beta startete am 7. August 2026. Rund 25.000 Nutzer (Eintrag bei World, Oktober 2026). Ein Empfehlungslink oder -bonus wurde nicht gefunden",
+        "need": "Die Mini-App Humad in der World App öffnen. Zum Eintauschen in Geschenkkarten brauchst du einen Menschlichkeitsnachweis mit einer per Orb verifizierten World ID",
+        "caution": "Punkte lassen sich nur gegen Geschenkkarten tauschen, nicht gegen Geld, und ein Tausch kann nicht rückgängig gemacht werden. In Japan verfügbar und nur für Japan (auch laut Pressemitteilung ist der Zugang auf Japan beschränkt). Es ist eine Beta, Details können sich also ändern. Deine Antworten und verknüpften Daten werden für Werbung genutzt"
+      },
+      "ar": {
+        "gain": "نقاط مقابل النقر على الإعلانات والإجابة عن الأسئلة (بطاقات هدايا بدءًا من ⁦1,500 pt⁩ = 150 ين)",
+        "note": "تطبيق مصغّر داخل ⁦World App⁩. انقر على الإعلانات التي تعجبك وأجب عن أسئلة حول اهتماماتك وقيمك لتجمع النقاط، ثم استبدلها ببطاقات هدايا للمقاهي والحلويات وتوصيل الطعام والسينما والمتاجر الإلكترونية ومتاجر التطبيقات وغيرها. إثبات أنك إنسان عبر ⁦World ID⁩ يضاعف نقاط النقر على الإعلانات 6 مرات، والإجابة عن سؤال اليوم تتيح لك عجلة حظ تصل إلى ⁦1,000 pt⁩. تديره ⁦Ads for Humanity Inc.⁩ (أكاساكا، طوكيو)، المملوكة بالكامل لـ⁦Hakuhodo DY Holdings⁩، وأُطلقت النسخة التجريبية في 7 أغسطس 2026. نحو 25 ألف مستخدم (صفحة ⁦World⁩، أكتوبر 2026). لم نجد رابط إحالة ولا مكافأة إحالة",
+        "need": "افتح تطبيق ⁦Humad⁩ المصغّر في ⁦World App⁩. استبدال النقاط ببطاقات الهدايا يتطلب إثبات أنك إنسان عبر ⁦World ID⁩ موثَّق بـ⁦Orb⁩",
+        "caution": "لا تُستبدل النقاط إلا ببطاقات هدايا وليس بنقود، ولا يمكن التراجع عن الاستبدال. متاح في اليابان ومقتصر عليها (ويذكر البيان الصحفي أيضًا أن الوصول مقتصر على اليابان). إنه إصدار تجريبي، لذا قد تتغير التفاصيل. تُستخدم إجاباتك والبيانات التي تربطها لاستهداف الإعلانات"
+      }
     }
   ],
   "PICKS": [
@@ -1616,6 +1677,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-26",
+      "ja": "Humad（World App）を追加",
+      "en": "Added Humad (World App)",
+      "zh": "新增 Humad（World App）",
+      "hi": "Humad (World App) जोड़ा",
+      "es": "Añadido Humad (World App)",
+      "de": "Humad (World App) hinzugefügt",
+      "ar": "أضفنا ⁦Humad (World App)⁩"
+    },
     {
       "date": "2026-10-25",
       "ja": "サイト名を「不労所得研究所（Free Lunch Lab）」に変更",

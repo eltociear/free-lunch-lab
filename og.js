@@ -24,14 +24,29 @@ const FACE = {
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const live = SERVICES.filter(s => s.ref || s.noRef);
 
+// フォントは画面に出る文字だけのサブセット（Google Fonts の text=）を先に取ってきて data: URI で埋め込む。
+// ヘッドレス Chrome でリモートのフォントを読ませると、読み込みが間に合わず代わりのフォントで撮れてしまうことがあるため
+const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+const curl = (url, enc) => execFileSync('curl', ['-sfL', '--retry', '3', '-A', UA, url], { encoding: enc, maxBuffer: 64 << 20 });
+const GBREVE = 'https://fonts.gstatic.com/l/font?kit=o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc1azXvFujBSg6T775xg&skey=2b960fe17823056f&v=v42';
+const dataUri = url => `data:font/woff2;base64,${curl(url).toString('base64')}`;
+function inlineFonts(lang, text) {
+  const chars = [...new Set(text)].join('');
+  const css = curl(`https://fonts.googleapis.com/css2?${FONTS[lang]}&text=${encodeURIComponent(chars)}&display=block`, 'utf8');
+  const urls = [...new Set(css.match(/https:\/\/fonts\.gstatic\.com\/[^)'"\s]+/g) || [])];
+  if (!urls.length) throw new Error(`no font urls for ${lang}`);
+  let out = css;
+  for (const u of urls) out = out.split(u).join(dataUri(u));
+  return out + `\n@font-face{font-family:"GBreve";src:url(${dataUri(GBREVE)}) format("woff2");unicode-range:U+011E;font-display:block}`;
+}
+
 function page(lang) {
   const L = T[lang];
   const rtl = lang === 'ar';
   const chips = live.map(s => `<span>${esc(lang === 'ja' ? s.name : s.nameEn || s.name)}</span>`).join('');
   return `<!doctype html><html lang="${lang}"${rtl ? ' dir="rtl"' : ''}><head><meta charset="utf-8">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?${FONTS[lang]}&display=block">
 <style>
-@font-face{font-family:"GBreve";src:url(https://fonts.gstatic.com/l/font?kit=o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc1azXvFujBSg6T775xg&skey=2b960fe17823056f&v=v42) format("woff2");unicode-range:U+011E;font-display:block}
+${inlineFonts(lang, [L.brandPlain, L.tagline, L.h1.replace(/<[^>]+>/g, ''), chips.replace(/<[^>]+>/g, ''), ' ·zZ'].join(''))}
 *{box-sizing:border-box;margin:0}
 body{width:1200px;height:630px;overflow:hidden;display:flex;flex-direction:column;padding-bottom:${live.length > 16 ? 44 : 56}px!important;color:#EEF1FF;font-family:${FACE[lang]},sans-serif;position:relative;padding:64px 72px;
   background:radial-gradient(70% 90% at 88% 0%,#3B2A86 0%,transparent 60%),radial-gradient(60% 70% at 0% 100%,#0F3B5C 0%,transparent 60%),linear-gradient(180deg,#0A0F24,#121741)}
