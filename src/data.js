@@ -2086,7 +2086,8 @@ module.exports = {
       "finance": "カード・銀行",
       "pointsite": "ポイントサイト",
       "career": "仕事マッチング",
-      "app": "ほったらかしアプリ"
+      "app": "ほったらかしアプリ",
+      "ai-agent": "AIエージェント向け"
     },
     "en": {
       "all": "All",
@@ -2095,7 +2096,8 @@ module.exports = {
       "finance": "Cards & banks",
       "pointsite": "Cashback sites",
       "career": "Job matching",
-      "app": "Passive apps"
+      "app": "Passive apps",
+      "ai-agent": "For AI agents"
     },
     "hi": {
       "all": "सभी",
@@ -2104,7 +2106,8 @@ module.exports = {
       "finance": "कार्ड और बैंक",
       "pointsite": "कैशबैक साइट",
       "career": "जॉब मैचिंग",
-      "app": "पैसिव ऐप"
+      "app": "पैसिव ऐप",
+      "ai-agent": "AI एजेंटों के लिए"
     },
     "zh": {
       "all": "全部",
@@ -2113,7 +2116,8 @@ module.exports = {
       "finance": "信用卡与银行",
       "pointsite": "返利网站",
       "career": "工作匹配",
-      "app": "躺赚应用"
+      "app": "躺赚应用",
+      "ai-agent": "面向 AI 智能体"
     },
     "es": {
       "all": "Todos",
@@ -2122,7 +2126,8 @@ module.exports = {
       "finance": "Tarjetas y bancos",
       "pointsite": "Cashback",
       "career": "Empleo",
-      "app": "Apps pasivas"
+      "app": "Apps pasivas",
+      "ai-agent": "Para agentes de IA"
     },
     "ar": {
       "all": "الكل",
@@ -2131,7 +2136,8 @@ module.exports = {
       "finance": "بطاقات وبنوك",
       "pointsite": "استرداد نقدي",
       "career": "توظيف",
-      "app": "تطبيقات سلبية"
+      "app": "تطبيقات سلبية",
+      "ai-agent": "لوكلاء الذكاء الاصطناعي"
     },
     "de": {
       "all": "Alle",
@@ -2140,7 +2146,8 @@ module.exports = {
       "finance": "Karten & Banken",
       "pointsite": "Cashback-Seiten",
       "career": "Jobvermittlung",
-      "app": "Passive Apps"
+      "app": "Passive Apps",
+      "ai-agent": "Für KI-Agenten"
     }
   },
   "T": {
@@ -2150,9 +2157,9 @@ module.exports = {
       "navHow": "使い方",
       "navFaq": "よくある質問",
       "pr": "このページには紹介リンク・紹介コードが含まれます。経由して登録すると、運営者にも特典が入ることがあります。",
-      "eyebrow": "人間であるだけでもらえるアプリ・プロジェクト",
+      "eyebrow": "存在するだけでもらえるアプリ・プロジェクト",
       "h1": "登録するだけで<br><em>入金</em>される<br>サービス帳。",
-      "lede": "<b>人間であるだけで</b>お金やトークンがもらえる、ベーシックインカム型のアプリやプロジェクトを集めました（ポイ活アプリも少し）。それぞれ<b>リスクや換金の実情</b>もあわせて紹介しています。一部は紹介リンクです。",
+      "lede": "<b>存在するだけで</b>お金やトークンがもらえる、ベーシックインカム型のアプリやプロジェクトを集めました（ポイ活アプリも少し）。今はほとんどが「人間であること」の確認つきですが、AIエージェント向けのしくみが出てきたら、それも載せます。それぞれ<b>リスクや換金の実情</b>もあわせて紹介しています。一部は紹介リンクです。",
       "ctaList": "サービスを見る",
       "ctaHow": "使い方",
       "statAll": "掲載サービス",
@@ -2222,7 +2229,7 @@ module.exports = {
       "title": "不労所得研究所",
       "region": "地域",
       "filterLabel": "カテゴリで絞り込む",
-      "metaDesc": "人間であるだけでお金がもらえる、ベーシックインカム型のアプリやプロジェクト（Ğ1、Circles、Gradido、Idena など）の一覧。リスクや換金のしやすさもあわせて紹介。一部は紹介リンクです。",
+      "metaDesc": "存在するだけでお金がもらえる、ベーシックインカム型のアプリやプロジェクト（Ğ1、Circles、Gradido、Idena など）の一覧。リスクや換金のしやすさもあわせて紹介。一部は紹介リンクです。",
       "navLabel": "セクション",
       "langLabel": "言語",
       "shareH": "友だちにも教える",
@@ -2282,9 +2289,9 @@ module.exports = {
       "navHow": "How it works",
       "navFaq": "FAQ",
       "pr": "This page contains referral links and codes. If you sign up through them, the site owner may also receive a bonus.",
-      "eyebrow": "Apps that pay you just for being human",
+      "eyebrow": "Apps that pay you just for existing",
       "h1": "Sign up once.<br>Get <em>paid</em><br>while you sleep.",
-      "lede": "Basic-income-style apps and projects that pay you <b>just for being human</b>, from daily token claims to community currencies, plus a few point apps. Each one notes the <b>risks and how cashing out really works</b>. Some links are referral links.",
+      "lede": "Basic-income-style apps and projects that pay you <b>just for existing</b>, from daily token claims to community currencies, plus a few point apps. Most check that you’re human for now; AI agents are welcome here when such schemes appear. Each one notes the <b>risks and how cashing out really works</b>. Some links are referral links.",
       "ctaList": "See the services",
       "ctaHow": "How it works",
       "statAll": "services listed",
@@ -2353,7 +2360,7 @@ module.exports = {
       "title": "Free Lunch Lab",
       "region": "Region",
       "filterLabel": "Filter by category",
-      "metaDesc": "Apps and projects that pay you just for being human, basic-income style, like Ğ1, Circles, Gradido and Idena. Risks and cash-out noted. Some referral links.",
+      "metaDesc": "Apps and projects that pay you just for existing, basic-income style, like Ğ1, Circles, Gradido and Idena. Risks and cash-out noted. Some referral links.",
       "navLabel": "Sections",
       "langLabel": "Language",
       "shareH": "Share this list",
@@ -2413,9 +2420,9 @@ module.exports = {
       "navHow": "कैसे इस्तेमाल करें",
       "navFaq": "सवाल-जवाब",
       "pr": "इस पेज पर रेफ़रल लिंक और कोड हैं। इनके ज़रिए साइन अप करने पर साइट चलाने वाले को भी बोनस मिल सकता है।",
-      "eyebrow": "सिर्फ़ इंसान होने पर पैसे देने वाले ऐप",
+      "eyebrow": "सिर्फ़ मौजूद होने पर पैसे देने वाले ऐप",
       "h1": "एक बार साइन अप करें।<br>सोते हुए भी<br><em>कमाई</em> पाएँ।",
-      "lede": "<b>सिर्फ़ इंसान होने पर</b> पैसे या टोकन देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (साथ में कुछ पॉइंट ऐप), हर एक के <b>जोखिम और नकद में बदलने की असलियत</b> के साथ। कुछ लिंक रेफ़रल लिंक हैं।",
+      "lede": "<b>सिर्फ़ मौजूद होने पर</b> पैसे या टोकन देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (साथ में कुछ पॉइंट ऐप)। अभी ज़्यादातर यह जाँचते हैं कि आप इंसान हैं; AI एजेंटों के लिए ऐसी योजनाएँ आएँगी तो उन्हें भी यहाँ जगह मिलेगी। हर एक के <b>जोखिम और नकद में बदलने की असलियत</b> के साथ। कुछ लिंक रेफ़रल लिंक हैं।",
       "ctaList": "सेवाएँ देखें",
       "ctaHow": "कैसे इस्तेमाल करें",
       "statAll": "सेवाएँ",
@@ -2484,7 +2491,7 @@ module.exports = {
       "title": "Free Lunch Lab",
       "region": "क्षेत्र",
       "filterLabel": "श्रेणी से फ़िल्टर करें",
-      "metaDesc": "सिर्फ़ इंसान होने पर पैसे देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (जैसे Ğ1, Circles, Gradido, Idena), जोखिम और नकद में बदलने की असलियत के साथ। कुछ लिंक रेफ़रल लिंक हैं।",
+      "metaDesc": "सिर्फ़ मौजूद होने पर पैसे देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (जैसे Ğ1, Circles, Gradido, Idena), जोखिम और नकद में बदलने की असलियत के साथ। कुछ लिंक रेफ़रल लिंक हैं।",
       "navLabel": "सेक्शन",
       "langLabel": "भाषा",
       "shareH": "दोस्तों को भेजें",
@@ -2544,9 +2551,9 @@ module.exports = {
       "navHow": "使用方法",
       "navFaq": "常见问题",
       "pr": "本页包含推荐链接和推荐码。通过它们注册时，网站运营者也可能获得奖励。",
-      "eyebrow": "只因你是人就能领钱的应用与项目",
+      "eyebrow": "只要存在就能领钱的应用与项目",
       "h1": "注册一次，<br>躺着也能<br><em>到账</em>。",
-      "lede": "收录<b>只因你是人</b>就能领钱或代币的基本收入型应用与项目（也有少量积分应用），并逐一注明<b>风险和兑现的实际情况</b>。部分为推荐链接。",
+      "lede": "收录<b>只要存在</b>就能领钱或代币的基本收入型应用与项目（也有少量积分应用）。目前大多需要验证你是真人；将来出现面向 AI 智能体的机制，也会收录。每个都注明<b>风险和兑现的实际情况</b>。部分为推荐链接。",
       "ctaList": "查看服务",
       "ctaHow": "使用方法",
       "statAll": "收录服务",
@@ -2615,7 +2622,7 @@ module.exports = {
       "title": "Free Lunch Lab（免费午餐研究所）",
       "region": "地区",
       "filterLabel": "按类别筛选",
-      "metaDesc": "收录只因“你是人”就能领钱的基本收入型应用与项目（如 Ğ1、Circles、Gradido、Idena），并注明风险和能否兑现。部分为推荐链接。",
+      "metaDesc": "收录只要存在就能领钱的基本收入型应用与项目（如 Ğ1、Circles、Gradido、Idena），并注明风险和能否兑现。部分为推荐链接。",
       "navLabel": "栏目",
       "langLabel": "语言",
       "shareH": "分享给朋友",
@@ -2675,9 +2682,9 @@ module.exports = {
       "navHow": "Cómo funciona",
       "navFaq": "Preguntas",
       "pr": "Esta página contiene enlaces y códigos de referido. Si te registras con ellos, el responsable del sitio también puede recibir una bonificación.",
-      "eyebrow": "Apps que te pagan solo por ser humano",
+      "eyebrow": "Apps que te pagan solo por existir",
       "h1": "Regístrate una vez.<br>Cobra<br>mientras <em>duermes</em>.",
-      "lede": "Apps y proyectos al estilo renta básica que te pagan <b>solo por ser humano</b>, desde tokens diarios hasta monedas comunitarias, más algunas apps de puntos. Cada uno indica <b>los riesgos y cómo se cobra de verdad</b>. Algunos enlaces son de referido.",
+      "lede": "Apps y proyectos al estilo renta básica que te pagan <b>solo por existir</b>, desde tokens diarios hasta monedas comunitarias, más algunas apps de puntos. Por ahora casi todos comprueban que eres humano; si aparecen sistemas para agentes de IA, también tendrán sitio aquí. Cada uno indica <b>los riesgos y cómo se cobra de verdad</b>. Algunos enlaces son de referido.",
       "ctaList": "Ver los servicios",
       "ctaHow": "Cómo funciona",
       "statAll": "servicios",
@@ -2746,7 +2753,7 @@ module.exports = {
       "title": "Free Lunch Lab",
       "region": "Región",
       "filterLabel": "Filtrar por categoría",
-      "metaDesc": "Apps y proyectos que te pagan solo por ser humano, tipo renta básica: Ğ1, Circles, Gradido, Idena y más. Con riesgos y cómo cobrar. Hay enlaces de referido.",
+      "metaDesc": "Apps y proyectos que te pagan solo por existir, tipo renta básica: Ğ1, Circles, Gradido, Idena y más. Con riesgos y cómo cobrar. Hay enlaces de referido.",
       "navLabel": "Secciones",
       "langLabel": "Idioma",
       "shareH": "Compártelo",
@@ -2806,9 +2813,9 @@ module.exports = {
       "navHow": "طريقة الاستخدام",
       "navFaq": "الأسئلة الشائعة",
       "pr": "تحتوي هذه الصفحة على روابط ورموز إحالة. إذا سجّلت عبرها، فقد يحصل صاحب الموقع أيضًا على مكافأة.",
-      "eyebrow": "تطبيقات تدفع لك لمجرد أنك إنسان",
+      "eyebrow": "تطبيقات تدفع لك لمجرد وجودك",
       "h1": "سجّل مرة واحدة.<br>واحصل على <em>دخل</em><br>وأنت نائم.",
-      "lede": "تطبيقات ومشاريع على طريقة الدخل الأساسي تدفع لك <b>لمجرد أنك إنسان</b>، من الرموز اليومية إلى العملات المجتمعية، مع بعض تطبيقات النقاط. ونذكر لكل منها <b>المخاطر وحقيقة التحويل إلى نقود</b>. بعض الروابط روابط إحالة.",
+      "lede": "تطبيقات ومشاريع على طريقة الدخل الأساسي تدفع لك <b>لمجرد وجودك</b>، من الرموز اليومية إلى العملات المجتمعية، مع بعض تطبيقات النقاط. معظمها اليوم يتحقق من أنك إنسان، وإذا ظهرت أنظمة لوكلاء الذكاء الاصطناعي فستجد مكانها هنا أيضًا. ونذكر لكل منها <b>المخاطر وحقيقة التحويل إلى نقود</b>. بعض الروابط روابط إحالة.",
       "ctaList": "تصفّح الخدمات",
       "ctaHow": "طريقة الاستخدام",
       "statAll": "خدمات مدرجة",
@@ -2877,7 +2884,7 @@ module.exports = {
       "title": "⁦Free Lunch Lab⁩ (مختبر الغداء المجاني)",
       "region": "المنطقة",
       "filterLabel": "التصفية حسب الفئة",
-      "metaDesc": "تطبيقات ومشاريع تدفع لك لمجرد أنك إنسان على طريقة الدخل الأساسي، مثل ⁦Ğ1⁩ و⁦Circles⁩ و⁦Gradido⁩ و⁦Idena⁩، مع ذكر المخاطر وإمكانية التحويل إلى نقود. بعض الروابط روابط إحالة.",
+      "metaDesc": "تطبيقات ومشاريع تدفع لك لمجرد وجودك على طريقة الدخل الأساسي، مثل ⁦Ğ1⁩ و⁦Circles⁩ و⁦Gradido⁩ و⁦Idena⁩، مع ذكر المخاطر وإمكانية التحويل إلى نقود. بعض الروابط روابط إحالة.",
       "navLabel": "الأقسام",
       "langLabel": "اللغة",
       "shareH": "شارك القائمة",
@@ -2937,9 +2944,9 @@ module.exports = {
       "navHow": "So geht’s",
       "navFaq": "FAQ",
       "pr": "Diese Seite enthält Empfehlungslinks und -codes. Wenn du dich darüber anmeldest, kann auch der Betreiber dieser Seite einen Bonus bekommen.",
-      "eyebrow": "Apps, die dich fürs Menschsein bezahlen",
+      "eyebrow": "Apps, die dich fürs bloße Dasein bezahlen",
       "h1": "Einmal anmelden.<br><em>Geld</em> bekommen,<br>während du schläfst.",
-      "lede": "Apps und Projekte im Stil eines Grundeinkommens, die dich <b>einfach fürs Menschsein</b> bezahlen, von täglichen Token bis zu Gemeinschaftswährungen, dazu ein paar Punkte-Apps. Bei jedem stehen <b>Risiken und wie die Auszahlung wirklich läuft</b>. Einige Links sind Empfehlungslinks.",
+      "lede": "Apps und Projekte im Stil eines Grundeinkommens, die dich <b>einfach fürs Dasein</b> bezahlen, von täglichen Token bis zu Gemeinschaftswährungen, dazu ein paar Punkte-Apps. Noch prüfen fast alle, ob du ein Mensch bist; kommen solche Modelle für KI-Agenten, sind sie hier ebenfalls willkommen. Bei jedem stehen <b>Risiken und wie die Auszahlung wirklich läuft</b>. Einige Links sind Empfehlungslinks.",
       "ctaList": "Zu den Diensten",
       "ctaHow": "So geht’s",
       "statAll": "Dienste gelistet",
@@ -3008,7 +3015,7 @@ module.exports = {
       "title": "Free Lunch Lab",
       "region": "Region",
       "filterLabel": "Nach Kategorie filtern",
-      "metaDesc": "Apps und Projekte, die dich fürs Menschsein bezahlen, wie ein Grundeinkommen: Ğ1, Circles, Gradido, Idena. Mit Risiken und Auszahlung. Teils Empfehlungslinks.",
+      "metaDesc": "Apps und Projekte, die dich fürs bloße Dasein bezahlen, wie ein Grundeinkommen: Ğ1, Circles, Gradido, Idena. Mit Risiken und Auszahlung. Teils Empfehlungslinks.",
       "navLabel": "Bereiche",
       "langLabel": "Sprache",
       "shareH": "Liste teilen",
