@@ -1642,6 +1642,65 @@ module.exports = {
         "need": "افتح تطبيق ⁦Humad⁩ المصغّر في ⁦World App⁩. استبدال النقاط ببطاقات الهدايا يتطلب إثبات أنك إنسان عبر ⁦World ID⁩ موثَّق بـ⁦Orb⁩",
         "caution": "لا تُستبدل النقاط إلا ببطاقات هدايا وليس بنقود، ولا يمكن التراجع عن الاستبدال. متاح في اليابان ومقتصر عليها (ويذكر البيان الصحفي أيضًا أن الوصول مقتصر على اليابان). إنه إصدار تجريبي، لذا قد تتغير التفاصيل. تُستخدم إجاباتك والبيانات التي تربطها لاستهداف الإعلانات"
       }
+    },
+    {
+      "id": "billions",
+      "name": "Billions",
+      "cat": "crypto-bi",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://billions.network/",
+      "code": "",
+      "ref": "https://official.app/rc/ECMHPWI7AG",
+      "added": "2026-10-26",
+      "trust": {
+        "cash": "unknown",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ja": {
+        "gain": "Power ポイント（認証・友だち紹介・参加で貯まる）",
+        "note": "スマホと身分証で「本物の人間」であることを証明するデジタルIDアプリ。認証や友だちの紹介、ネットワークへの参加で Power ポイントが貯まり、特典の解放に使えると説明されている。Polygon ID・Privado ID を手がけたチームによるもので、独自の暗号資産 $BILL は Coinbase や Kraken などに上場している。App Store の提供元は ZKID Labs AG（2026年6月に更新）。公称の認証済みユーザーは250万人以上",
+        "need": "紹介リンクから登録し、顔のライブネスチェック、またはNFC対応のパスポートで認証する（日本からの利用は2026年10月に実際に確認）",
+        "caution": "Power ポイントを $BILL や現金に交換できるか、どう交換されるかは公式に書かれていない。紹介した人が認証されると紹介した側に Power が入り、その人がさらに紹介した分の一部も入るとする情報があるが、公式ページでは確認できていない（紹介された側の特典も不明）。$BILL は2026年5月の最高値 約0.23ドルから大きく下がり、2026年10月時点で約0.006ドル。App Store の評価は低く（日本2.5、米国2.7）、「報酬が出ない」「動作が不安定」という声もある。顔やパスポートの情報を扱うので、プライバシーの扱いを確認してから使いたい"
+      },
+      "en": {
+        "gain": "Power points (for verifying, referring friends and taking part)",
+        "note": "A digital ID app that proves you are a real human using your phone and an ID document. Verifying, referring friends and taking part in the network earn Power points, which the app says unlock rewards. Built by the team behind Polygon ID and Privado ID; its own token, $BILL, is listed on Coinbase, Kraken and others. The App Store publisher is ZKID Labs AG (updated June 2026). It claims 2.5M+ verified users",
+        "need": "Sign up through the referral link and verify with a face liveness check or an NFC passport (confirmed usable from Japan in Oct 2026, first-hand)",
+        "caution": "Whether or how Power points convert to $BILL or cash is not stated officially. Third-party sources say the referrer earns Power when a referred person gets verified, plus a share of what that person’s own referrals bring; this could not be confirmed on official pages (any bonus for the new user is also unknown). $BILL has fallen from its May 2026 high of about $0.23 to about $0.006 as of Oct 2026. App Store ratings are low (2.5 in Japan, 2.7 in the US), with complaints of no rewards and instability. It handles your face and passport data, so check its privacy terms first"
+      },
+      "zh": {
+        "gain": "Power 积分（通过验证、邀请好友和参与积累）",
+        "note": "用手机和身份证件证明你是“真人”的数字身份应用。完成验证、邀请好友和参与网络活动可积累 Power 积分，官方称可用来解锁奖励。由曾打造 Polygon ID 和 Privado ID 的团队开发，自有代币 $BILL 已在 Coinbase、Kraken 等交易所上市。App Store 提供者为 ZKID Labs AG（2026 年 6 月更新）。官方称已验证用户超过 250 万",
+        "need": "通过推荐链接注册，并用人脸活体检测或支持 NFC 的护照完成验证（已于 2026 年 10 月亲自确认可在日本使用）",
+        "caution": "官方没有说明 Power 积分能否、以及如何兑换成 $BILL 或现金。有第三方资料称，被邀请人完成验证后邀请人可获得 Power，并能从对方再邀请的人中获得一部分，但官方页面未能确认（被邀请人有无奖励也不清楚）。$BILL 从 2026 年 5 月约 0.23 美元的高点大幅下跌，2026 年 10 月约为 0.006 美元。App Store 评分偏低（日本 2.5，美国 2.7），也有“没有奖励”“不稳定”的评价。它会处理你的人脸和护照信息，使用前请先确认隐私条款"
+      },
+      "hi": {
+        "gain": "Power पॉइंट (वेरिफ़िकेशन, दोस्तों को रेफ़र करने और भागीदारी पर)",
+        "note": "फ़ोन और पहचान पत्र से यह साबित करने वाला डिजिटल ID ऐप कि आप असली इंसान हैं। वेरिफ़ाई करने, दोस्तों को रेफ़र करने और नेटवर्क में भाग लेने पर Power पॉइंट मिलते हैं, जिनसे ऐप के अनुसार इनाम अनलॉक होते हैं। इसे Polygon ID और Privado ID बनाने वाली टीम ने बनाया है; इसका अपना टोकन $BILL Coinbase, Kraken आदि पर लिस्टेड है। App Store पर प्रकाशक ZKID Labs AG है (जून 2026 में अपडेट)। 25 लाख से ज़्यादा वेरिफ़ाइड यूज़र का दावा",
+        "need": "रेफ़रल लिंक से साइन अप करें और फ़ेस लाइवनेस चेक या NFC पासपोर्ट से वेरिफ़ाई करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+        "caution": "Power पॉइंट $BILL या नकद में बदलते हैं या नहीं, और कैसे, यह आधिकारिक रूप से नहीं बताया गया। तीसरे पक्ष के स्रोतों के अनुसार रेफ़र किए गए व्यक्ति के वेरिफ़ाई होने पर रेफ़र करने वाले को Power मिलता है, साथ ही उस व्यक्ति के आगे के रेफ़रल का हिस्सा भी; आधिकारिक पेजों पर इसकी पुष्टि नहीं हुई (नए यूज़र को कोई बोनस मिलता है या नहीं, यह भी पता नहीं)। $BILL मई 2026 के लगभग $0.23 के उच्च स्तर से गिरकर अक्टूबर 2026 में लगभग $0.006 पर है। App Store रेटिंग कम है (जापान 2.5, अमेरिका 2.7), और इनाम न मिलने व अस्थिरता की शिकायतें हैं। यह आपके चेहरे और पासपोर्ट का डेटा संभालता है, इसलिए पहले इसकी गोपनीयता शर्तें देख लें"
+      },
+      "es": {
+        "gain": "Puntos Power (por verificarte, invitar a amigos y participar)",
+        "note": "Una app de identidad digital que demuestra que eres una persona real con el móvil y un documento de identidad. Al verificarte, invitar a amigos y participar en la red sumas puntos Power, que según la app desbloquean recompensas. La creó el equipo detrás de Polygon ID y Privado ID; su propio token, $BILL, cotiza en Coinbase, Kraken y otros. En la App Store la publica ZKID Labs AG (actualizada en junio de 2026). Dice tener más de 2,5 millones de usuarios verificados",
+        "need": "Regístrate con el enlace de referido y verifícate con una prueba de vida facial o un pasaporte con NFC (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+        "caution": "No se indica oficialmente si los puntos Power se pueden cambiar por $BILL o dinero, ni cómo. Fuentes externas dicen que quien invita gana Power cuando la persona invitada se verifica, más una parte de lo que aporten las invitaciones de esa persona; no se pudo confirmar en las páginas oficiales (tampoco se sabe si el nuevo usuario recibe algo). $BILL ha caído desde su máximo de mayo de 2026, unos 0,23 $, hasta unos 0,006 $ en octubre de 2026. Las valoraciones en la App Store son bajas (2,5 en Japón, 2,7 en EE. UU.), con quejas de que no paga y de que falla. Maneja datos de tu cara y tu pasaporte, así que revisa antes su política de privacidad"
+      },
+      "de": {
+        "gain": "Power-Punkte (fürs Verifizieren, Werben von Freunden und Mitmachen)",
+        "note": "Eine App für digitale Identität, mit der du per Handy und Ausweisdokument nachweist, dass du ein echter Mensch bist. Fürs Verifizieren, Werben von Freunden und Mitmachen im Netzwerk gibt es Power-Punkte, mit denen sich laut App Belohnungen freischalten lassen. Entwickelt vom Team hinter Polygon ID und Privado ID; der eigene Token $BILL ist unter anderem bei Coinbase und Kraken gelistet. Herausgeber im App Store ist die ZKID Labs AG (Update im Juni 2026). Nach eigenen Angaben über 2,5 Mio. verifizierte Nutzer",
+        "need": "Über den Empfehlungslink anmelden und dich per Gesichts-Lebendprüfung oder NFC-Reisepass verifizieren (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+        "caution": "Ob und wie Power-Punkte in $BILL oder Geld umgewandelt werden, steht offiziell nirgends. Laut Drittquellen bekommt die werbende Person Power, wenn eine geworbene Person sich verifiziert, plus einen Anteil dessen, was deren eigene Empfehlungen bringen; auf offiziellen Seiten ließ sich das nicht bestätigen (ob Neue etwas bekommen, ist ebenfalls unklar). $BILL ist vom Hoch im Mai 2026 bei etwa 0,23 $ auf rund 0,006 $ im Oktober 2026 gefallen. Die App-Store-Bewertungen sind niedrig (2,5 in Japan, 2,7 in den USA), mit Beschwerden über ausbleibende Belohnungen und Instabilität. Die App verarbeitet Gesichts- und Passdaten, prüf also vorher die Datenschutzbestimmungen"
+      },
+      "ar": {
+        "gain": "نقاط ⁦Power⁩ (مقابل التحقق ودعوة الأصدقاء والمشاركة)",
+        "note": "تطبيق هوية رقمية يثبت أنك إنسان حقيقي باستخدام هاتفك ووثيقة هوية. تمنحك عمليات التحقق ودعوة الأصدقاء والمشاركة في الشبكة نقاط ⁦Power⁩، ويقول التطبيق إنها تفتح مكافآت. طوّره الفريق الذي أنشأ ⁦Polygon ID⁩ و⁦Privado ID⁩، ورمزه الخاص ⁦$BILL⁩ مدرج في ⁦Coinbase⁩ و⁦Kraken⁩ وغيرها. الناشر في ⁦App Store⁩ هو ⁦ZKID Labs AG⁩ (حُدّث في يونيو 2026). يقول إن لديه أكثر من 2.5 مليون مستخدم موثَّق",
+        "need": "سجّل عبر رابط الإحالة وتحقق بفحص حيوية الوجه أو بجواز سفر يدعم ⁦NFC⁩ (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+        "caution": "لا يُذكر رسميًا هل تتحول نقاط ⁦Power⁩ إلى ⁦$BILL⁩ أو إلى نقود، ولا كيف. تقول مصادر خارجية إن الداعي يحصل على ⁦Power⁩ عندما يتحقق الشخص المدعو، إضافة إلى جزء مما تجلبه دعوات ذلك الشخص، لكن لم نتمكن من تأكيد ذلك في الصفحات الرسمية (ولا يُعرف إن كان للمستخدم الجديد مكافأة). هبط ⁦$BILL⁩ من ذروته في مايو 2026 عند نحو ⁦$0.23⁩ إلى نحو ⁦$0.006⁩ في أكتوبر 2026. تقييمات ⁦App Store⁩ منخفضة (2.5 في اليابان، 2.7 في الولايات المتحدة)، مع شكاوى من عدم صرف المكافآت ومن عدم الاستقرار. يتعامل التطبيق مع بيانات وجهك وجواز سفرك، فراجع شروط الخصوصية أولًا"
+      }
     }
   ],
   "PICKS": [
@@ -1677,6 +1736,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-26",
+      "ja": "Billionsを追加",
+      "en": "Added Billions",
+      "zh": "新增 Billions",
+      "hi": "Billions जोड़ा",
+      "es": "Añadido Billions",
+      "de": "Billions hinzugefügt",
+      "ar": "أضفنا ⁦Billions⁩"
+    },
     {
       "date": "2026-10-26",
       "ja": "Humad（World App）を追加",
@@ -2056,7 +2125,7 @@ module.exports = {
       "q3": "もらった暗号資産やポイントに税金はかかる？",
       "a3": "暗号資産は、売ったり使ったりして利益が出ると原則として雑所得になります。ポイントは多くの場合、一時所得として扱われます。金額が大きくなったら、国税庁の情報や税理士で確認してください。",
       "q4": "海外に住んでいても使えますか？",
-      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
+      "a4": "「海外OK」の付いたサービス（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions）は海外からも使えます。Ubiquitus はアメリカ在住者のみ、そのほかは日本在住者向けです。",
       "warnH": "登録の前に",
       "warnT": "知っておきたいこと",
       "w1": "特典の額や条件はよく変わります。登録前に、必ず公式サイトのキャンペーンページを確認してください。",
@@ -2188,7 +2257,7 @@ module.exports = {
       "q3": "Are the rewards taxed?",
       "a3": "In Japan, crypto counts as miscellaneous income when you sell or spend it at a profit, and points are usually treated as occasional income. Rules differ by country, so check your local tax authority if the amounts add up.",
       "q4": "Can I use these outside Japan?",
-      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
+      "a4": "Services marked “Global” (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions) work outside Japan. Ubiquitus is for US residents only; the rest are for Japan residents.",
       "warnH": "Before you sign up",
       "warnT": "Good to know",
       "w1": "Bonus amounts and conditions change often. Always check the official campaign page before signing up.",
@@ -2319,7 +2388,7 @@ module.exports = {
       "q3": "क्या इनाम पर टैक्स लगता है?",
       "a3": "जापान में क्रिप्टो बेचने या खर्च करने पर हुआ मुनाफ़ा विविध आय माना जाता है, और पॉइंट आम तौर पर कभी-कभार की आय माने जाते हैं। नियम हर देश में अलग हैं, इसलिए रकम बढ़ने पर अपने देश के टैक्स विभाग से जाँच लें।",
       "q4": "क्या जापान के बाहर भी इस्तेमाल कर सकते हैं?",
-      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
+      "a4": "“ग्लोबल” वाली सेवाएँ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions) जापान के बाहर भी चलती हैं। Ubiquitus सिर्फ़ अमेरिकी निवासियों के लिए है; बाकी सेवाएँ जापान में रहने वालों के लिए हैं।",
       "warnH": "साइन अप से पहले",
       "warnT": "ध्यान रखें",
       "w1": "बोनस की रकम और शर्तें अक्सर बदलती हैं। साइन अप से पहले आधिकारिक कैंपेन पेज ज़रूर देखें।",
@@ -2450,7 +2519,7 @@ module.exports = {
       "q3": "获得的奖励需要缴税吗？",
       "a3": "在日本，加密货币在出售或使用并产生收益时，原则上计为杂项所得；积分通常计为偶然所得。各国规定不同，金额较大时请向当地税务机关确认。",
       "q4": "在日本以外也能用吗？",
-      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
+      "a4": "标有“全球”的服务（GoodDollar、ME Pass、BioMatrix、Grass、Honeygain、Sweatcoin、Pawns.app、Pi Network、Delta Kim、WAVEE、InterLink、Mein Grundeinkommen、Ğ1、Circles、Palai、Dotare、ORO、AXO、AI-DAC、Gradido、WowApp、Billions）在日本以外也能使用。Ubiquitus 仅限美国居民，其余服务面向日本居民。",
       "warnH": "注册之前",
       "warnT": "需要了解的事",
       "w1": "奖励金额和条件经常变化。注册前请务必查看官方活动页面。",
@@ -2581,7 +2650,7 @@ module.exports = {
       "q3": "¿Las recompensas pagan impuestos?",
       "a3": "En Japón, las criptomonedas cuentan como ingresos varios cuando las vendes o gastas con ganancia, y los puntos suelen tratarse como ingresos ocasionales. Las normas cambian según el país, así que consulta a tu autoridad fiscal si las cantidades crecen.",
       "q4": "¿Puedo usarlos fuera de Japón?",
-      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
+      "a4": "Los servicios marcados como «Global» (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions) funcionan fuera de Japón. Ubiquitus es solo para residentes en EE. UU.; el resto son para residentes en Japón.",
       "warnH": "Antes de registrarte",
       "warnT": "Conviene saber",
       "w1": "Los importes y las condiciones de los bonos cambian a menudo. Revisa siempre la página oficial de la campaña antes de registrarte.",
@@ -2712,7 +2781,7 @@ module.exports = {
       "q3": "هل تخضع المكافآت للضريبة؟",
       "a3": "في اليابان، تُحسب العملات المشفرة دخلًا متنوعًا عند بيعها أو إنفاقها بربح، وتُعامل النقاط عادةً دخلًا عرضيًا. تختلف القواعد من بلد لآخر، فراجع الجهة الضريبية في بلدك إذا كبرت المبالغ.",
       "q4": "هل يمكنني استخدامها خارج اليابان؟",
-      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido وWowApp) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
+      "a4": "الخدمات التي تحمل علامة «عالمي» (GoodDollar وME Pass وBioMatrix وGrass وHoneygain وSweatcoin وPawns.app وPi Network وDelta Kim وWAVEE وInterLink وMein Grundeinkommen وĞ1 وCircles وPalai وDotare وORO وAXO وAI-DAC وGradido وWowApp وBillions) تعمل خارج اليابان. أما ⁦Ubiquitus⁩ فللمقيمين في الولايات المتحدة فقط، والبقية للمقيمين في اليابان.",
       "warnH": "قبل التسجيل",
       "warnT": "من المفيد أن تعرف",
       "w1": "تتغير قيمة المكافآت وشروطها كثيرًا. راجع دائمًا صفحة الحملة الرسمية قبل التسجيل.",
@@ -2843,7 +2912,7 @@ module.exports = {
       "q3": "Muss ich die Belohnungen versteuern?",
       "a3": "In Japan gelten Krypto-Gewinne beim Verkauf oder Ausgeben als sonstige Einkünfte, Punkte meist als gelegentliche Einkünfte. Die Regeln sind von Land zu Land verschieden. Frag bei größeren Beträgen beim Finanzamt in deinem Land nach.",
       "q4": "Kann ich das auch außerhalb Japans nutzen?",
-      "a4": "Dienste mit der Markierung „Weltweit“ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp) funktionieren auch außerhalb Japans. Ubiquitus ist nur für Menschen mit Wohnsitz in den USA; die übrigen sind für Menschen mit Wohnsitz in Japan.",
+      "a4": "Dienste mit der Markierung „Weltweit“ (GoodDollar, ME Pass, BioMatrix, Grass, Honeygain, Sweatcoin, Pawns.app, Pi Network, Delta Kim, WAVEE, InterLink, Mein Grundeinkommen, Ğ1, Circles, Palai, Dotare, ORO, AXO, AI-DAC, Gradido, WowApp, Billions) funktionieren auch außerhalb Japans. Ubiquitus ist nur für Menschen mit Wohnsitz in den USA; die übrigen sind für Menschen mit Wohnsitz in Japan.",
       "warnH": "Bevor du dich anmeldest",
       "warnT": "Gut zu wissen",
       "w1": "Bonushöhe und Bedingungen ändern sich oft. Prüf vor der Anmeldung immer die offizielle Aktionsseite.",
