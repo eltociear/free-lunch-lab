@@ -186,6 +186,7 @@ ${alts}
 <meta property="og:type" content="website">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(L.metaDesc)}">
+<meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(L.metaDesc)}">
 <meta property="og:url" content="${abs(lang)}">
 <meta property="og:locale" content="${OG_LOCALE[lang]}">
