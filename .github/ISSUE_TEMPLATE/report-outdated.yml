@@ -1,0 +1,29 @@
+name: Report outdated info
+description: Something on the site is wrong or no longer true
+title: "[Outdated] "
+labels: ["outdated"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page or service
+      description: The service name or the URL of the page on the site.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong or outdated
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What is correct now
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Official links if possible, and the date you checked.

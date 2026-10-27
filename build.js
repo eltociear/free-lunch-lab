@@ -614,4 +614,6 @@ ${[sitemapUrls(abs), sitemapUrls(orgAbs), ...live.map(s => sitemapUrls(l => svcA
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+// README.md のサービス表・団体一覧も同期する
+require('./readme.js').updateReadme();
 console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages + ${LANGS.length} organization pages, ${live.length} services shown (${SERVICES.length - live.length} hidden)`);

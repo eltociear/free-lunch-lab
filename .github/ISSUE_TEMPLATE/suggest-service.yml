@@ -1,0 +1,48 @@
+name: Suggest a service
+description: Suggest an app or project that pays you just for existing (basic-income style)
+title: "[Suggest] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check the listing criteria in CONTRIBUTING.md first: no deposits or promised returns, no MLM as the main mechanic, active, with official sources. Do not include referral links or codes.
+  - type: input
+    id: name
+    attributes:
+      label: Service name
+    validations:
+      required: true
+  - type: input
+    id: official
+    attributes:
+      label: Official site or app store page
+      description: Not a referral link.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What you get, how often, and what it takes
+      description: Rewards, frequency, verification or other requirements.
+    validations:
+      required: true
+  - type: textarea
+    id: cashout
+    attributes:
+      label: Cash-out and risks
+      description: How (and whether) rewards become real money, token price/liquidity if any, privacy or data use, deposits or fees, multi-level referrals.
+    validations:
+      required: true
+  - type: input
+    id: regions
+    attributes:
+      label: Regions / Japan availability
+      description: Say whether you confirmed it yourself.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Official sources
+      description: Links to the official site, docs, terms or announcements that back the above.
+    validations:
+      required: true
