@@ -105,7 +105,7 @@ Full list with descriptions: https://neteru-nyukin.eltociear.workers.dev/organiz
 - `brand/x/` — profile images for the X account and the script that renders them (not deployed)
 - `public/` — build output, deployed to Cloudflare Workers (static assets)
 
-URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/services/{id}/` for each service, `/organizations/` and `/{lang}/organizations/` for organizations.
+URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/services/{id}/` for each service, `/organizations/` and `/{lang}/organizations/` for organizations, `/graveyard/` and `/{lang}/graveyard/` for ended services (data in `GRAVE`; only endings confirmed by an official or credible source).
 
 ## Build and deploy
 

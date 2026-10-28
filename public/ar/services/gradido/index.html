@@ -500,6 +500,15 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
 .foot a{color:inherit;text-underline-offset:3px}
+.graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
+.grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
+.tomb{flex:none;color:var(--muted);margin-top:2px}
+.grave-body{min-width:0;display:grid;gap:8px}
+.grave h2{font-family:var(--f-body);font-weight:700;font-size:1.08rem;overflow-wrap:anywhere}
+.grave dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.88rem;line-height:1.7}
+.grave dt{color:var(--muted);font-size:.76rem;padding-top:.15em;white-space:nowrap}
+.grave dd{margin:0;min-width:0;overflow-wrap:anywhere}
+@media (max-width:520px){.grave dl{grid-template-columns:1fr}.grave dt{padding-top:6px}}
 </style>
 </head>
 <body>

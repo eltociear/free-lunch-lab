@@ -1,7 +1,7 @@
 // 使い方: node build.js  →  public/ に全言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
 const fs = require('fs');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE } = require('./src/data.js');
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
@@ -39,6 +39,9 @@ const svcAbs = (l, s) => SITE_URL + svcPath(l, s);
 // UBIの団体・プロジェクト: /organizations/ と /{lang}/organizations/
 const orgPath = l => `${urlPath(l)}organizations/`;
 const orgAbs = l => SITE_URL + orgPath(l);
+// 終了したサービスの墓場: /graveyard/ と /{lang}/graveyard/
+const gravePath = l => `${urlPath(l)}graveyard/`;
+const graveAbs = l => SITE_URL + gravePath(l);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 function meter(n) {
@@ -434,6 +437,15 @@ const DETAIL_CSS = `
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
 .foot a{color:inherit;text-underline-offset:3px}
+.graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
+.grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
+.tomb{flex:none;color:var(--muted);margin-top:2px}
+.grave-body{min-width:0;display:grid;gap:8px}
+.grave h2{font-family:var(--f-body);font-weight:700;font-size:1.08rem;overflow-wrap:anywhere}
+.grave dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.88rem;line-height:1.7}
+.grave dt{color:var(--muted);font-size:.76rem;padding-top:.15em;white-space:nowrap}
+.grave dd{margin:0;min-width:0;overflow-wrap:anywhere}
+@media (max-width:520px){.grave dl{grid-template-columns:1fr}.grave dt{padding-top:6px}}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
 // meta description 用に長さをそろえる（日本語・中国語は短め）
@@ -595,6 +607,33 @@ ${groups}
   return shell(lang, { title, desc: L.orgsDesc, hrefFor: orgAbs, pathFor: orgPath, ld, ogType: 'website', body });
 }
 
+// ---- 終了したサービスの墓場（/graveyard/）。終了が確かめられたものだけ。紹介ボタンや sponsored は付けない
+const TOMB = '<svg class="tomb" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 30V13a8 8 0 0 1 16 0v17zm2-2h12V13a6 6 0 0 0-12 0zm5-15h2v3h3v2h-3v6h-2v-6h-3v-2h3zM4 30h24v2H4z"/></svg>';
+function graveyardPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const title = `${L.graveTitle} | ${L.title}`;
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: L.graveTitle, item: graveAbs(lang) },
+    ],
+  };
+  const rows = GRAVE.map(g => {
+    const svc = g.svc && live.find(x => x.id === g.svc);
+    return `<li class="grave" id="grave-${g.id}">${TOMB}<div class="grave-body"><h2 dir="auto">${esc(g.name)}</h2>
+<dl><dt>${esc(L.graveWhat)}</dt><dd>${esc(g.what[lang] || g.what.en)}</dd><dt>${esc(L.graveEnded)}</dt><dd><time datetime="${esc(g.endedOn)}">${esc(g.ended[lang] || g.ended.en)}</time></dd><dt>${esc(L.graveWhy)}</dt><dd>${esc(g.why[lang] || g.why.en)}</dd><dt>${esc(L.graveSource)}</dt><dd><a href="${esc(g.source)}" target="_blank" rel="noopener" dir="auto">${esc(g.sourceLabel)}</a></dd></dl>${svc ? `<a class="org-svc" href="${svcPath(lang, svc)}">${esc(L.graveOnSite)}: ${esc(sName(svc, lang))}</a>` : ''}</div></li>`;
+  }).join('\n');
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.graveTitle)}</li></ol></nav>
+<main class="orgs">
+<header class="orgs-head"><p class="eyebrow" dir="ltr">R.I.P.</p><h1>${esc(L.graveTitle)}</h1><p class="orgs-intro">${esc(L.graveIntro)}</p></header>
+<ul class="graves">${rows}</ul>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  return shell(lang, { title, desc: L.graveDesc, hrefFor: graveAbs, pathFor: gravePath, ld, ogType: 'website', body });
+}
+
 for (const lang of LANGS) {
   for (const s of live) {
     const dir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'services', s.id);
@@ -604,6 +643,9 @@ for (const lang of LANGS) {
   const odir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'organizations');
   fs.mkdirSync(odir, { recursive: true });
   fs.writeFileSync(path.join(odir, 'index.html'), orgsPage(lang));
+  const gdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'graveyard');
+  fs.mkdirSync(gdir, { recursive: true });
+  fs.writeFileSync(path.join(gdir, 'index.html'), graveyardPage(lang));
 }
 
 // SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
@@ -620,7 +662,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);

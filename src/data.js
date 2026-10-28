@@ -1948,6 +1948,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-10-28",
+      "ja": "終了したサービスの墓場のページを追加",
+      "en": "Added The Free Lunch Graveyard page",
+      "zh": "新增已结束服务的墓地页面",
+      "hi": "बंद हो चुकी सेवाओं के क़ब्रिस्तान का पेज जोड़ा",
+      "es": "Añadida la página del cementerio del almuerzo gratis",
+      "de": "Seite „Friedhof der Gratis-Mittagessen“ hinzugefügt",
+      "ar": "أضفنا صفحة مقبرة الغداء المجاني"
+    },
+    {
       "date": "2026-10-26",
       "ja": "FheID（Privasea）を追加",
       "en": "Added FheID (Privasea)",
@@ -2452,7 +2462,15 @@ module.exports = {
       "brandSub": "Free Lunch Lab",
       "tagline": "タダ飯は、ある。",
       "ghLabel": "GitHubでデータ公開中",
-      "checkedOn": "{date}に確認"
+      "checkedOn": "{date}に確認",
+      "graveTitle": "終了したサービスの墓場",
+      "graveIntro": "かつてお金やポイントを配っていたけれど、いまは終わってしまったサービスやプログラムの記録です。終了が公式発表や信頼できる情報で確かめられたものだけを載せています。ごちそうさまでした。安らかに。",
+      "graveDesc": "かつてお金やポイントを配っていて、終了が確認されたサービス・プログラムの記録（World の WLD エアドロップ、Miles など）。終了時期と理由、出典つき。",
+      "graveWhat": "どんなものだったか",
+      "graveEnded": "終了",
+      "graveWhy": "終わった理由",
+      "graveSource": "出典",
+      "graveOnSite": "このサイトの紹介ページ"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2585,7 +2603,15 @@ module.exports = {
       "brandSub": "",
       "tagline": "There is such a thing as a free lunch.",
       "ghLabel": "Open data on GitHub",
-      "checkedOn": "Checked {date}"
+      "checkedOn": "Checked {date}",
+      "graveTitle": "The Free Lunch Graveyard",
+      "graveIntro": "A record of services and programmes that once handed out money or points and have since ended. Only endings confirmed by an official announcement or a credible source are listed. Thanks for the lunches. Rest in peace.",
+      "graveDesc": "Services and programmes that once paid out money or points and have ended, such as World’s WLD airdrop and Miles, with end dates, reasons and sources.",
+      "graveWhat": "What it was",
+      "graveEnded": "Ended",
+      "graveWhy": "Why",
+      "graveSource": "Source",
+      "graveOnSite": "Our page on this service"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2718,7 +2744,15 @@ module.exports = {
       "brandSub": "",
       "tagline": "मुफ़्त का लंच भी होता है।",
       "ghLabel": "GitHub पर खुला डेटा",
-      "checkedOn": "जाँचा गया: {date}"
+      "checkedOn": "जाँचा गया: {date}",
+      "graveTitle": "बंद हो चुकी सेवाओं का क़ब्रिस्तान",
+      "graveIntro": "उन सेवाओं और कार्यक्रमों का रिकॉर्ड जो कभी पैसे या पॉइंट देते थे और अब बंद हो चुके हैं। सिर्फ़ वही शामिल हैं जिनका बंद होना आधिकारिक घोषणा या भरोसेमंद स्रोत से पक्का है। लंच के लिए धन्यवाद। शांति मिले।",
+      "graveDesc": "कभी पैसे या पॉइंट देने वाली, अब बंद हो चुकी सेवाएँ और कार्यक्रम (जैसे World का WLD एयरड्रॉप और Miles), बंद होने की तारीख़, कारण और स्रोत के साथ।",
+      "graveWhat": "यह क्या था",
+      "graveEnded": "बंद हुआ",
+      "graveWhy": "क्यों",
+      "graveSource": "स्रोत",
+      "graveOnSite": "इस साइट पर इसका पेज"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2851,7 +2885,15 @@ module.exports = {
       "brandSub": "免费午餐研究所",
       "tagline": "天下竟然有免费的午餐。",
       "ghLabel": "数据在 GitHub 公开",
-      "checkedOn": "核实于{date}"
+      "checkedOn": "核实于{date}",
+      "graveTitle": "已结束服务的墓地",
+      "graveIntro": "这里记录曾经发放钱或积分、如今已结束的服务和项目。只收录经官方公告或可靠来源确认已结束的。谢谢款待，愿其安息。",
+      "graveDesc": "曾发放钱或积分、现已确认结束的服务和项目记录（如 World 的 WLD 空投、Miles 等），附结束时间、原因和出处。",
+      "graveWhat": "是什么",
+      "graveEnded": "结束",
+      "graveWhy": "原因",
+      "graveSource": "出处",
+      "graveOnSite": "本站的介绍页"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2984,7 +3026,15 @@ module.exports = {
       "brandSub": "",
       "tagline": "Pues sí: hay almuerzo gratis.",
       "ghLabel": "Datos abiertos en GitHub",
-      "checkedOn": "Revisado: {date}"
+      "checkedOn": "Revisado: {date}",
+      "graveTitle": "El cementerio del almuerzo gratis",
+      "graveIntro": "Un registro de servicios y programas que alguna vez repartieron dinero o puntos y que ya terminaron. Solo incluimos cierres confirmados por un anuncio oficial o una fuente fiable. Gracias por los almuerzos. Descansen en paz.",
+      "graveDesc": "Servicios y programas que alguna vez pagaron dinero o puntos y ya terminaron, como el airdrop de WLD de World y Miles, con fechas, motivos y fuentes.",
+      "graveWhat": "Qué era",
+      "graveEnded": "Terminó",
+      "graveWhy": "Por qué",
+      "graveSource": "Fuente",
+      "graveOnSite": "Nuestra página sobre este servicio"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3117,7 +3167,15 @@ module.exports = {
       "brandSub": "مختبر الغداء المجاني",
       "tagline": "الغداء المجاني موجود فعلًا.",
       "ghLabel": "بيانات مفتوحة على ⁦GitHub⁩",
-      "checkedOn": "تم التحقق: {date}"
+      "checkedOn": "تم التحقق: {date}",
+      "graveTitle": "مقبرة الغداء المجاني",
+      "graveIntro": "سجلّ لخدمات وبرامج كانت توزّع المال أو النقاط ثم توقفت. لا ندرج إلا ما تأكد توقفه بإعلان رسمي أو مصدر موثوق. شكرًا على الوجبات. فلترقد بسلام.",
+      "graveDesc": "خدمات وبرامج كانت تدفع مالًا أو نقاطًا ثم توقفت، مثل إسقاط ⁦WLD⁩ من ⁦World⁩ و⁦Miles⁩، مع تواريخ التوقف وأسبابه ومصادره.",
+      "graveWhat": "ما كان",
+      "graveEnded": "انتهى",
+      "graveWhy": "السبب",
+      "graveSource": "المصدر",
+      "graveOnSite": "صفحتنا عن هذه الخدمة"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3250,7 +3308,15 @@ module.exports = {
       "brandSub": "",
       "tagline": "Es gibt doch ein kostenloses Mittagessen.",
       "ghLabel": "Offene Daten auf GitHub",
-      "checkedOn": "Geprüft: {date}"
+      "checkedOn": "Geprüft: {date}",
+      "graveTitle": "Der Friedhof der Gratis-Mittagessen",
+      "graveIntro": "Eine Erinnerung an Dienste und Programme, die einmal Geld oder Punkte verteilt haben und inzwischen eingestellt sind. Aufgeführt ist nur, was durch eine offizielle Mitteilung oder eine verlässliche Quelle belegt ist. Danke fürs Mittagessen. Ruhet in Frieden.",
+      "graveDesc": "Dienste und Programme, die einmal Geld oder Punkte ausgezahlt haben und eingestellt sind, etwa der WLD-Airdrop von World und Miles, mit Enddatum, Gründen und Quellen.",
+      "graveWhat": "Was es war",
+      "graveEnded": "Eingestellt",
+      "graveWhy": "Warum",
+      "graveSource": "Quelle",
+      "graveOnSite": "Unsere Seite zu diesem Dienst"
     }
   },
   "ORG_REGIONS": {
@@ -3759,5 +3825,179 @@ module.exports = {
     "givedirectly",
     "openresearch",
     "jabi"
+  ],
+  "GRAVE": [
+    {
+      "id": "wld-airdrop",
+      "name": "World — WLD Airdrop (Grants)",
+      "endedOn": "2026-06-01",
+      "source": "https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program",
+      "sourceLabel": "World Help Center",
+      "what": {
+        "ja": "World ID で人間であることを証明した人に、WLD トークンを毎月配っていたエアドロップ（旧グラント）",
+        "en": "Monthly WLD token airdrops (formerly grants) for people who proved they are human with World ID",
+        "zh": "向通过 World ID 证明自己是真人的用户每月发放 WLD 代币的空投（原称 Grants）",
+        "hi": "World ID से इंसान साबित करने वालों को हर महीने WLD टोकन देने वाला एयरड्रॉप (पहले ग्रांट)",
+        "es": "Airdrops mensuales de tokens WLD (antes «grants») para quienes demostraban ser humanos con World ID",
+        "de": "Monatliche WLD-Airdrops (früher „Grants“) für Menschen, die sich per World ID als Mensch verifiziert hatten",
+        "ar": "إسقاطات شهرية لرموز ⁦WLD⁩ (كانت تُسمى منحًا) لمن أثبتوا أنهم بشر عبر ⁦World ID⁩"
+      },
+      "ended": {
+        "ja": "2026年6月1日に新規の受付と更新を停止（参加済みの人は12か月の期間が終わるまで受け取れる）",
+        "en": "No new or renewed cycles from 1 June 2026 (existing 12-month cycles can still be claimed until they end)",
+        "zh": "2026 年 6 月 1 日起不再新建或续期（已参加者可领到 12 个月周期结束）",
+        "hi": "1 जून 2026 से नए या नवीनीकृत चक्र बंद (चल रहे 12 महीने के चक्र खत्म होने तक क्लेम हो सकते हैं)",
+        "es": "Sin ciclos nuevos ni renovaciones desde el 1 de junio de 2026 (los ciclos de 12 meses ya iniciados se pueden cobrar hasta que terminen)",
+        "de": "Seit 1. Juni 2026 keine neuen oder verlängerten Zyklen (laufende 12-Monats-Zyklen können bis zu ihrem Ende abgeholt werden)",
+        "ar": "لا دورات جديدة أو مجددة منذ 1 يونيو 2026 (يمكن مواصلة المطالبة بالدورات الجارية حتى نهاية مدتها البالغة 12 شهرًا)"
+      },
+      "why": {
+        "ja": "公式ヘルプは理由を示さず、「エアドロップの期間は新たに作られず、更新もされない」とだけ説明している",
+        "en": "The official help page gives no reason; it only says airdrop cycles are no longer being created or renewed",
+        "zh": "官方帮助页面没有说明原因，只说空投周期不再新建或续期",
+        "hi": "आधिकारिक सहायता पेज कोई कारण नहीं बताता; बस इतना कहता है कि एयरड्रॉप चक्र अब नहीं बनाए या बढ़ाए जा रहे",
+        "es": "La ayuda oficial no da motivos; solo dice que ya no se crean ni renuevan ciclos de airdrop",
+        "de": "Die offizielle Hilfeseite nennt keinen Grund, sondern nur, dass keine Airdrop-Zyklen mehr angelegt oder verlängert werden",
+        "ar": "لا تذكر صفحة المساعدة الرسمية سببًا، وتقول فقط إن دورات الإسقاط لم تعد تُنشأ أو تُجدد"
+      }
+    },
+    {
+      "id": "miles",
+      "name": "Miles",
+      "endedOn": "2025-05-14",
+      "source": "https://note.com/y121516/n/nbb9bf7625c03",
+      "sourceLabel": "note (Yuhki Ogasawara)",
+      "what": {
+        "ja": "スマホを持って移動するだけでマイルがたまり、商品やギフト券と交換できたアプリ（日本ではマイルズ・ジャパンが運営）",
+        "en": "An app that earned miles just by carrying your phone as you travelled, redeemable for goods and gift cards (run in Japan by Miles Japan)",
+        "zh": "只要带着手机移动就能累积里程、可兑换商品和礼品卡的应用（在日本由 Miles Japan 运营）",
+        "hi": "फ़ोन साथ लेकर चलने भर से माइल देने वाला ऐप, जिन्हें सामान और गिफ़्ट कार्ड से बदला जा सकता था (जापान में Miles Japan चलाती थी)",
+        "es": "Una app que daba millas solo por llevar el móvil al desplazarte, canjeables por productos y tarjetas regalo (en Japón la gestionaba Miles Japan)",
+        "de": "Eine App, die Meilen gab, nur weil man das Handy unterwegs dabeihatte, einlösbar gegen Waren und Geschenkkarten (in Japan betrieben von Miles Japan)",
+        "ar": "تطبيق كان يمنح أميالًا بمجرد حمل الهاتف أثناء التنقل، قابلة للاستبدال بسلع وبطاقات هدايا (تديره في اليابان ⁦Miles Japan⁩)"
+      },
+      "ended": {
+        "ja": "2025年5月14日（当日のメールで告知され、猶予期間なし）",
+        "en": "14 May 2025 (announced by email the same day, with no grace period)",
+        "zh": "2025 年 5 月 14 日（当天以邮件通知，没有缓冲期）",
+        "hi": "14 मई 2025 (उसी दिन ईमेल से घोषणा, कोई मोहलत नहीं)",
+        "es": "14 de mayo de 2025 (anunciado por correo ese mismo día, sin periodo de gracia)",
+        "de": "14. Mai 2025 (am selben Tag per E-Mail angekündigt, ohne Übergangsfrist)",
+        "ar": "14 مايو 2025 (أُعلن بالبريد الإلكتروني في اليوم نفسه دون مهلة)"
+      },
+      "why": {
+        "ja": "公式には「難しい決断」とだけ説明され、理由は示されていない",
+        "en": "Officially only called a “difficult decision”; no reason was given",
+        "zh": "官方只称这是“艰难的决定”，没有说明原因",
+        "hi": "आधिकारिक तौर पर बस “कठिन फ़ैसला” कहा गया; कोई कारण नहीं बताया गया",
+        "es": "Oficialmente solo se habló de una «decisión difícil»; no se dio ningún motivo",
+        "de": "Offiziell nur als „schwierige Entscheidung“ bezeichnet; einen Grund gab es nicht",
+        "ar": "وُصف رسميًا بأنه «قرار صعب» فقط، دون ذكر سبب"
+      }
+    },
+    {
+      "id": "mybasicincome",
+      "name": "My Basic Income",
+      "endedOn": "2017",
+      "source": "https://www.pulse.com.gh/bi/tech/tech-a-dollar15000-basic-income-lottery-promised-free-money-for-a-year-then-the/5gbp5pj",
+      "sourceLabel": "Business Insider (syndicated)",
+      "what": {
+        "ja": "サンフランシスコの団体が、クラウドファンディングで集めた1年分のベーシックインカム（15,000ドル）を抽選で配った取り組み（2016年）",
+        "en": "A San Francisco group that raffled off a crowdfunded one-year basic income of $15,000 (2016)",
+        "zh": "旧金山的一个团体用众筹资金抽奖发放一年期基本收入（15,000 美元，2016 年）",
+        "hi": "सैन फ़्रांसिस्को का एक समूह, जिसने क्राउडफ़ंडिंग से जुटाई एक साल की बेसिक इनकम ($15,000) लॉटरी से दी (2016)",
+        "es": "Un grupo de San Francisco que sorteó una renta básica de un año de 15.000 $ financiada con crowdfunding (2016)",
+        "de": "Eine Gruppe aus San Francisco, die ein per Crowdfunding finanziertes Grundeinkommen für ein Jahr (15.000 $) verloste (2016)",
+        "ar": "مجموعة في سان فرانسيسكو أجرت سحبًا على دخل أساسي لمدة عام بقيمة ⁦$15,000⁩ جُمع بالتمويل الجماعي (2016)"
+      },
+      "ended": {
+        "ja": "2017年ごろ（当選者への支払いは12回中5回で止まり、2回目の抽選はなかった。2026年10月時点で公式サイトは閉鎖）",
+        "en": "Around 2017 (the winner received only 5 of 12 payments and no second raffle followed; the website was offline as of Oct 2026)",
+        "zh": "约 2017 年（中奖者只收到 12 笔中的 5 笔，也没有第二次抽奖；截至 2026 年 10 月官网已关闭）",
+        "hi": "लगभग 2017 (विजेता को 12 में से सिर्फ़ 5 भुगतान मिले और दूसरी लॉटरी नहीं हुई; अक्टूबर 2026 तक वेबसाइट बंद)",
+        "es": "Hacia 2017 (el ganador solo recibió 5 de 12 pagos y no hubo un segundo sorteo; la web estaba caída en octubre de 2026)",
+        "de": "Um 2017 (der Gewinner erhielt nur 5 von 12 Zahlungen, eine zweite Verlosung gab es nicht; die Website war im Oktober 2026 offline)",
+        "ar": "نحو 2017 (لم يتلقَّ الفائز سوى 5 من 12 دفعة ولم يُجرَ سحب ثانٍ؛ والموقع متوقف حتى أكتوبر 2026)"
+      },
+      "why": {
+        "ja": "支払いの遅れと未払いが報じられているが、運営からの公式な説明は見つからなかった",
+        "en": "Delayed and missed payments were reported; no official explanation was found",
+        "zh": "有报道称付款延迟和未付，但未找到运营方的正式说明",
+        "hi": "भुगतान में देरी और भुगतान न होने की ख़बरें आईं; कोई आधिकारिक स्पष्टीकरण नहीं मिला",
+        "es": "Se informó de pagos retrasados e impagados; no se encontró una explicación oficial",
+        "de": "Berichtet wurden verspätete und ausgebliebene Zahlungen; eine offizielle Erklärung wurde nicht gefunden",
+        "ar": "أُفيد بتأخر دفعات وعدم سدادها، ولم نجد تفسيرًا رسميًا"
+      }
+    },
+    {
+      "id": "me-token",
+      "name": "ME Token (RewardMe)",
+      "endedOn": "2025-07",
+      "svc": "rewardme",
+      "source": "https://help.reward.me/en/articles/4901904-sunsetting-me-token-jul-2025",
+      "sourceLabel": "RewardMe Help",
+      "what": {
+        "ja": "キャッシュバックアプリ RewardMe の報酬トークン",
+        "en": "The reward token of the cashback app RewardMe",
+        "zh": "返现应用 RewardMe 的奖励代币",
+        "hi": "कैशबैक ऐप RewardMe का इनाम टोकन",
+        "es": "El token de recompensas de la app de reembolsos RewardMe",
+        "de": "Der Belohnungstoken der Cashback-App RewardMe",
+        "ar": "رمز المكافآت في تطبيق الاسترداد النقدي ⁦RewardMe⁩"
+      },
+      "ended": {
+        "ja": "2025年7月に廃止（残高は Reward Dollars に1対1で自動変換）",
+        "en": "Retired in July 2025 (balances were automatically converted 1:1 into Reward Dollars)",
+        "zh": "2025 年 7 月停用（余额按 1:1 自动转换为 Reward Dollars）",
+        "hi": "जुलाई 2025 में बंद (बैलेंस अपने आप 1:1 में Reward Dollars में बदल गया)",
+        "es": "Retirado en julio de 2025 (los saldos se convirtieron automáticamente 1:1 en Reward Dollars)",
+        "de": "Im Juli 2025 eingestellt (Guthaben wurden automatisch 1:1 in Reward Dollars umgewandelt)",
+        "ar": "أُوقف في يوليو 2025 (حُوّلت الأرصدة تلقائيًا بنسبة 1:1 إلى ⁦Reward Dollars⁩)"
+      },
+      "why": {
+        "ja": "公式ヘルプでは理由は示されていない",
+        "en": "The official help page gives no reason",
+        "zh": "官方帮助页面没有说明原因",
+        "hi": "आधिकारिक सहायता पेज कोई कारण नहीं बताता",
+        "es": "La ayuda oficial no da motivos",
+        "de": "Die offizielle Hilfeseite nennt keinen Grund",
+        "ar": "لا تذكر صفحة المساعدة الرسمية سببًا"
+      }
+    },
+    {
+      "id": "rewardme-ph",
+      "name": "RewardMe (Philippines)",
+      "endedOn": "2025-12-31",
+      "svc": "rewardme",
+      "source": "https://help.reward.me/en/articles/12780396-winding-down-operations-in-the-philippines",
+      "sourceLabel": "RewardMe Help",
+      "what": {
+        "ja": "キャッシュバックアプリ RewardMe のフィリピンでのサービス",
+        "en": "The cashback app RewardMe’s service in the Philippines",
+        "zh": "返现应用 RewardMe 在菲律宾的服务",
+        "hi": "फ़िलीपींस में कैशबैक ऐप RewardMe की सेवा",
+        "es": "El servicio de la app de reembolsos RewardMe en Filipinas",
+        "de": "Der Dienst der Cashback-App RewardMe auf den Philippinen",
+        "ar": "خدمة تطبيق الاسترداد النقدي ⁦RewardMe⁩ في الفلبين"
+      },
+      "ended": {
+        "ja": "2025年12月10日でキャッシュバック終了、12月31日で MDT の出金・変換も終了（その後はギフト券への交換のみ）",
+        "en": "Cashback ended on 10 Dec 2025, and MDT withdrawals and conversions on 31 Dec 2025 (gift-card redemption only after that)",
+        "zh": "2025 年 12 月 10 日停止返现，12 月 31 日停止 MDT 提现和转换（之后只能兑换礼品卡）",
+        "hi": "10 दिसंबर 2025 को कैशबैक बंद, 31 दिसंबर 2025 को MDT निकासी और रूपांतरण भी बंद (उसके बाद सिर्फ़ गिफ़्ट कार्ड)",
+        "es": "El reembolso terminó el 10 de diciembre de 2025, y los retiros y conversiones de MDT el 31 de diciembre de 2025 (después, solo canje por tarjetas regalo)",
+        "de": "Cashback endete am 10. Dezember 2025, MDT-Auszahlungen und -Umwandlungen am 31. Dezember 2025 (danach nur noch Einlösen gegen Geschenkkarten)",
+        "ar": "انتهى الاسترداد النقدي في 10 ديسمبر 2025، وسحب ⁦MDT⁩ وتحويله في 31 ديسمبر 2025 (بعدها الاستبدال ببطاقات الهدايا فقط)"
+      },
+      "why": {
+        "ja": "公式の告知は理由を示していない",
+        "en": "The official notice gives no reason",
+        "zh": "官方公告没有说明原因",
+        "hi": "आधिकारिक सूचना कोई कारण नहीं बताती",
+        "es": "El aviso oficial no da motivos",
+        "de": "Die offizielle Mitteilung nennt keinen Grund",
+        "ar": "لا يذكر الإعلان الرسمي سببًا"
+      }
+    }
   ]
 };
