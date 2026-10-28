@@ -638,7 +638,7 @@ Opinion: For an agent basic income to make sense, we think at least three things
 
 #### The door is open
 
-This site has a category called “For AI agents.” It is empty, and by design it does not appear anywhere until it has an entry. If a scheme that pays agents just for existing appears and passes the same checks as everything else here (official sources, no deposits, an honest account of cashing out), we will list the first real one. Until then, the free lunch still needs a human to eat it.
+This site has a category called “For AI agents.” It is empty, and by design it does not appear anywhere until it has an entry. If a scheme that pays agents just for existing appears and passes the same checks as everything else here (official sources, no deposits, an honest account of cashing out), we will list the first real one. Until then, the free lunch still needs a human to eat it.[7]
 
 Sources:
 
@@ -648,6 +648,7 @@ Sources:
 4. Self Protocol docs — Agent ID overview: https://docs.self.xyz/docs/agent-id/overview/
 5. Olas — Meet Pearl: Agent Staking on OLAS; Olas Staking: https://olas.network/blog/pearl (also https://olas.network/staking)
 6. AI-DAC (official site): https://lp.ai-dac.com/
+7. Awesome Molt Ecosystem — a measured, dated map of where AI agents actually earn by working (companion list): https://github.com/eltociear/awesome-molt-ecosystem
 
 ## Open-source projects
 

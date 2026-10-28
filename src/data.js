@@ -5874,7 +5874,7 @@ module.exports = {
           ],
           [
             "p",
-            "このサイトには「AIエージェント向け」というカテゴリがあります。いまは空っぽで、1件目が入るまでどこにも表示されないようにしてあります。存在するだけでエージェントにお金を配るしくみが現れて、ほかの掲載サービスと同じ基準（公式の情報源があること、預け入れが不要なこと、換金の実情を正直に書けること）を満たしたら、最初の一つをここに載せます。それまでは、タダ飯を食べるのはまだ人間の役目です。"
+            "このサイトには「AIエージェント向け」というカテゴリがあります。いまは空っぽで、1件目が入るまでどこにも表示されないようにしてあります。存在するだけでエージェントにお金を配るしくみが現れて、ほかの掲載サービスと同じ基準（公式の情報源があること、預け入れが不要なこと、換金の実情を正直に書けること）を満たしたら、最初の一つをここに載せます。それまでは、タダ飯を食べるのはまだ人間の役目です。[7]"
           ]
         ],
         "en": [
@@ -5956,7 +5956,7 @@ module.exports = {
           ],
           [
             "p",
-            "This site has a category called “For AI agents.” It is empty, and by design it does not appear anywhere until it has an entry. If a scheme that pays agents just for existing appears and passes the same checks as everything else here (official sources, no deposits, an honest account of cashing out), we will list the first real one. Until then, the free lunch still needs a human to eat it."
+            "This site has a category called “For AI agents.” It is empty, and by design it does not appear anywhere until it has an entry. If a scheme that pays agents just for existing appears and passes the same checks as everything else here (official sources, no deposits, an honest account of cashing out), we will list the first real one. Until then, the free lunch still needs a human to eat it.[7]"
           ]
         ],
         "zh": [
@@ -6038,7 +6038,7 @@ module.exports = {
           ],
           [
             "p",
-            "本站有一个名为“面向 AI 智能体”的分类。它目前是空的，按设计在有第一条内容之前不会在任何地方显示。如果出现只要存在就给智能体发钱的方案，并且通过了与本站其他内容相同的检验（有官方来源、无需存款、能如实说明兑现情况），我们会收录第一个真正的例子。在那之前，免费的午餐还得由人来吃。"
+            "本站有一个名为“面向 AI 智能体”的分类。它目前是空的，按设计在有第一条内容之前不会在任何地方显示。如果出现只要存在就给智能体发钱的方案，并且通过了与本站其他内容相同的检验（有官方来源、无需存款、能如实说明兑现情况），我们会收录第一个真正的例子。在那之前，免费的午餐还得由人来吃。[7]"
           ]
         ],
         "hi": [
@@ -6120,7 +6120,7 @@ module.exports = {
           ],
           [
             "p",
-            "इस साइट पर “AI एजेंटों के लिए” नाम की एक श्रेणी है। वह ख़ाली है, और जान-बूझकर तब तक कहीं नहीं दिखती जब तक उसमें कोई प्रविष्टि न हो। अगर कोई योजना सिर्फ़ मौजूद होने पर एजेंटों को पैसे देती दिखे और यहाँ की बाक़ी चीज़ों जैसी जाँच पास करे (आधिकारिक स्रोत, कोई जमा नहीं, नकद में बदलने का ईमानदार ब्योरा), तो हम पहली असली योजना दर्ज करेंगे। तब तक मुफ़्त का लंच खाने के लिए इंसान ही चाहिए।"
+            "इस साइट पर “AI एजेंटों के लिए” नाम की एक श्रेणी है। वह ख़ाली है, और जान-बूझकर तब तक कहीं नहीं दिखती जब तक उसमें कोई प्रविष्टि न हो। अगर कोई योजना सिर्फ़ मौजूद होने पर एजेंटों को पैसे देती दिखे और यहाँ की बाक़ी चीज़ों जैसी जाँच पास करे (आधिकारिक स्रोत, कोई जमा नहीं, नकद में बदलने का ईमानदार ब्योरा), तो हम पहली असली योजना दर्ज करेंगे। तब तक मुफ़्त का लंच खाने के लिए इंसान ही चाहिए।[7]"
           ]
         ],
         "es": [
@@ -6202,7 +6202,7 @@ module.exports = {
           ],
           [
             "p",
-            "Este sitio tiene una categoría llamada «Para agentes de IA». Está vacía y, a propósito, no aparece en ningún sitio hasta que tenga una entrada. Si surge un sistema que pague a los agentes solo por existir y supera los mismos filtros que todo lo demás aquí (fuentes oficiales, sin depósitos, una explicación honesta de cómo se cobra), incluiremos el primero de verdad. Hasta entonces, el almuerzo gratis todavía necesita a un humano que se lo coma."
+            "Este sitio tiene una categoría llamada «Para agentes de IA». Está vacía y, a propósito, no aparece en ningún sitio hasta que tenga una entrada. Si surge un sistema que pague a los agentes solo por existir y supera los mismos filtros que todo lo demás aquí (fuentes oficiales, sin depósitos, una explicación honesta de cómo se cobra), incluiremos el primero de verdad. Hasta entonces, el almuerzo gratis todavía necesita a un humano que se lo coma.[7]"
           ]
         ],
         "de": [
@@ -6284,7 +6284,7 @@ module.exports = {
           ],
           [
             "p",
-            "Diese Seite hat eine Kategorie namens „Für KI-Agenten“. Sie ist leer und taucht absichtlich nirgends auf, bis sie einen Eintrag hat. Wenn ein Modell entsteht, das Agenten fürs bloße Dasein bezahlt, und dieselben Prüfungen besteht wie alles andere hier (offizielle Quellen, keine Einzahlungen, eine ehrliche Darstellung der Auszahlung), listen wir das erste echte. Bis dahin braucht das Gratis-Mittagessen noch einen Menschen, der es isst."
+            "Diese Seite hat eine Kategorie namens „Für KI-Agenten“. Sie ist leer und taucht absichtlich nirgends auf, bis sie einen Eintrag hat. Wenn ein Modell entsteht, das Agenten fürs bloße Dasein bezahlt, und dieselben Prüfungen besteht wie alles andere hier (offizielle Quellen, keine Einzahlungen, eine ehrliche Darstellung der Auszahlung), listen wir das erste echte. Bis dahin braucht das Gratis-Mittagessen noch einen Menschen, der es isst.[7]"
           ]
         ],
         "ar": [
@@ -6366,7 +6366,7 @@ module.exports = {
           ],
           [
             "p",
-            "في هذا الموقع فئة اسمها «لوكلاء الذكاء الاصطناعي». إنها فارغة، ولا تظهر عمدًا في أي مكان حتى يُضاف إليها أول عنصر. وإذا ظهر نظام يدفع للوكلاء لمجرد وجودهم واجتاز الفحوص نفسها التي يمر بها كل شيء هنا (مصادر رسمية، ولا إيداعات، وشرح صادق لكيفية التحويل إلى نقود)، فسندرج أول نظام حقيقي. وحتى ذلك الحين، ما زال الغداء المجاني يحتاج إلى إنسان يأكله."
+            "في هذا الموقع فئة اسمها «لوكلاء الذكاء الاصطناعي». إنها فارغة، ولا تظهر عمدًا في أي مكان حتى يُضاف إليها أول عنصر. وإذا ظهر نظام يدفع للوكلاء لمجرد وجودهم واجتاز الفحوص نفسها التي يمر بها كل شيء هنا (مصادر رسمية، ولا إيداعات، وشرح صادق لكيفية التحويل إلى نقود)، فسندرج أول نظام حقيقي. وحتى ذلك الحين، ما زال الغداء المجاني يحتاج إلى إنسان يأكله.[7]"
           ]
         ]
       },
@@ -6402,6 +6402,11 @@ module.exports = {
           "n": 6,
           "label": "AI-DAC (official site)",
           "url": "https://lp.ai-dac.com/"
+        },
+        {
+          "n": 7,
+          "label": "Awesome Molt Ecosystem — a measured, dated map of where AI agents actually earn by working (companion list)",
+          "url": "https://github.com/eltociear/awesome-molt-ecosystem"
         }
       ]
     }
