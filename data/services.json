@@ -52,6 +52,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/aidac/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/aidac/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/aidac/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/aidac/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/aidac/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "UBI in DAC tokens",
@@ -135,6 +141,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/axo/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/axo/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/axo/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/axo/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/axo/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/axo/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -224,6 +236,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/billions/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/billions/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/billions/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/billions/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/billions/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "Power points (for verifying, referring friends and taking part)",
@@ -302,6 +320,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/biomatrix/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/biomatrix/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/biomatrix/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -382,6 +406,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/circles/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/circles/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/circles/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/circles/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/circles/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/circles/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -467,6 +497,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/deltakim/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/deltakim/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/deltakim/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/deltakim/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/deltakim/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "KIM every day",
@@ -541,6 +577,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/dotare/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/dotare/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/dotare/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/dotare/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/dotare/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/dotare/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -626,6 +668,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/fheid/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/fheid/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/fheid/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/fheid/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/fheid/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "Airdrops and rewards for proving you are human (e.g. campaign “stars”)",
@@ -705,6 +753,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/g1/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/g1/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/g1/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/g1/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/g1/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/g1/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -790,6 +844,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/gooddollar/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/gooddollar/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "G$ tokens every day",
@@ -873,6 +933,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/gradido/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/gradido/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/gradido/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/gradido/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/gradido/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/gradido/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -958,6 +1024,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/grass/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/grass/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/grass/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/grass/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/grass/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "Points (later GRASS tokens)",
@@ -1042,6 +1114,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/hapitas/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/hapitas/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/hapitas/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/hapitas/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/hapitas/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "Up to 2,300 points",
@@ -1118,6 +1196,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/honeygain/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/honeygain/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/honeygain/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/honeygain/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/honeygain/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/honeygain/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -1198,6 +1282,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/humad/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/humad/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/humad/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/humad/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/humad/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/humad/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -1283,6 +1373,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/idena/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/idena/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/idena/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/idena/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/idena/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "iDNA (mining rewards while your node runs, plus validation rewards)",
@@ -1366,6 +1462,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/interlink/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/interlink/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/interlink/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/interlink/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/interlink/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/interlink/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -1455,6 +1557,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/meingrundeinkommen/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/meingrundeinkommen/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/meingrundeinkommen/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/meingrundeinkommen/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/meingrundeinkommen/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "€1,000 a month for a year if you win",
@@ -1539,6 +1647,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/mepass/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/mepass/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/mepass/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/mepass/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/mepass/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "MEC tokens every day",
@@ -1618,6 +1732,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/oro/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/oro/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/oro/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/oro/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/oro/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/oro/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -1703,6 +1823,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/palai/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/palai/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/palai/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/palai/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/palai/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "Palai (¶) basic income every day",
@@ -1787,6 +1913,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/pawns/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/pawns/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/pawns/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/pawns/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/pawns/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "Cash for the traffic you share",
@@ -1870,6 +2002,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/pinetwork/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/pinetwork/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/pinetwork/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -1959,6 +2097,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/rewardme/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/rewardme/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/rewardme/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/rewardme/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/rewardme/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "Up to 5% cashback found in your email receipts (Reward Dollars / MDT crypto)",
@@ -2042,6 +2186,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/sweatcoin/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/sweatcoin/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/sweatcoin/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/sweatcoin/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/sweatcoin/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/sweatcoin/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -2127,6 +2277,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/trima/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/trima/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/trima/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/trima/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/trima/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "5,000 miles + miles for moving and walking",
@@ -2201,6 +2357,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/ubiquitus/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/ubiquitus/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/ubiquitus/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {
@@ -2286,6 +2448,12 @@
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/wavee/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/wavee/"
       },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/wavee/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/wavee/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/wavee/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": {
           "gain": "A matching reward each time you land a job",
@@ -2369,6 +2537,12 @@
         "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/wowapp/",
         "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/wowapp/",
         "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/wowapp/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/wowapp/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/wowapp/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/wowapp/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
       },
       "descriptions": {
         "en": {

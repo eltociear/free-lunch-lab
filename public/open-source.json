@@ -55,6 +55,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-cesium2s",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-cesium2s",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-cesium2s)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-cesium2s\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app",
         "ja": "Duniter v2s 向けの Ğ1 のウォレット兼「信頼の網」エクスプローラー。Cesium アプリの後継",
@@ -84,6 +90,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-circles-contracts-v2",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-circles-contracts-v2",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-circles-contracts-v2)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-circles-contracts-v2\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Smart contracts for Circles v2 on Gnosis Chain: every person mints their own currency each hour, and trust between people lets it circulate",
         "ja": "Gnosis Chain 上の Circles v2 のスマートコントラクト。一人ひとりが毎時間自分の通貨を発行し、人どうしの信頼でそれが流通する",
@@ -113,6 +125,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-duniter-v2s",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-duniter-v2s",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-duniter-v2s)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-duniter-v2s\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of its web of trust creates a universal dividend each day",
         "ja": "自由通貨 Ğ1 のノードソフトを Substrate で作り直したもの。信頼の網で認められたメンバー全員が毎日「ユニバーサル配当」を生み出す",
@@ -142,6 +160,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-encointer-pallets",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-encointer-pallets",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-encointer-pallets)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-encointer-pallets\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Substrate pallets behind Encointer: local community currencies that pay a UBI to everyone who attends regular in-person meetups",
         "ja": "Encointer を動かす Substrate のモジュール群。地域通貨ごとに、定期的な対面の集まりに参加した全員へ UBI を配る",
@@ -171,6 +195,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-encointer-wallet",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-encointer-wallet",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-encointer-wallet)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-encointer-wallet\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Mobile wallet for Encointer: join the in-person meetups, receive the community currency UBI and pay locally",
         "ja": "Encointer のモバイルウォレット。対面の集まり（セレモニー）に参加し、地域通貨の UBI を受け取って地元で支払える",
@@ -200,6 +230,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-gecko",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-gecko",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-gecko)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-gecko\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s",
         "ja": "Ğ1 のモバイルウォレット（Flutter 製）。Duniter v2s 上で自由通貨を送ったり受け取ったりできる",
@@ -229,6 +265,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-gooddapp",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-gooddapp",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-gooddapp)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-gooddapp\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "The GoodDollar wallet: the web and React Native app where people claim their daily G$",
         "ja": "GoodDollar のウォレット。毎日の G$ を受け取るためのウェブ／React Native アプリ",
@@ -258,6 +300,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-goodprotocol",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-goodprotocol",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-goodprotocol)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-goodprotocol\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "GoodDollar’s smart contracts (version 2): the G$ token, the reserve funded by staking yield, and the daily UBI claim",
         "ja": "GoodDollar のスマートコントラクト（第2版）。G$ トークン、ステーキングの利回りでまかなう準備金、毎日の UBI 受け取りのしくみ",
@@ -279,7 +327,7 @@
       "language": "TypeScript",
       "license": "Apache-2.0",
       "stars": 10,
-      "lastCommit": "2026-10-27",
+      "lastCommit": "2026-10-28",
       "archived": false,
       "dormant": false,
       "serviceId": "gradido",
@@ -287,6 +335,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-gradido",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-gradido",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-gradido)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-gradido\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community",
         "ja": "Gradido のサーバー、ウェブウォレット、管理ツール。地域への貢献に対する「アクティブなベーシックインカム」として一人ひとりにお金を生み出す",
@@ -316,6 +370,12 @@
       "organizationId": "groupincome",
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-group-income",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-group-income",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-group-income)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-group-income\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum",
         "ja": "エンドツーエンド暗号化された、仲間うちのベーシックインカムのアプリ。メンバーが毎月お金を出しあい、全員が決めた最低額を下回らないようにする",
@@ -345,6 +405,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-idena-go",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-idena-go",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-idena-go)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-idena-go\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Node for Idena, a blockchain where people prove they are human by solving AI-resistant “flip” puzzles at the same moment worldwide, and validated identities earn rewards",
         "ja": "Idena のノード。世界中で同時に AI が解きにくい「フリップ」テストを解いて人間であることを示し、認められた ID が報酬を受け取る",
@@ -374,6 +440,12 @@
       "organizationId": null,
       "essayUrl": "https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/",
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-mosaic-model",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-mosaic-model",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-mosaic-model)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-mosaic-model\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Economic model for funding a universal basic income from AI-automation dividends",
         "ja": "AI による自動化の利益を「配当」にして、ユニバーサル・ベーシックインカムの財源にする経済モデル",
@@ -403,6 +475,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-openfisca-core",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-openfisca-core",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-openfisca-core)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-openfisca-core\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes",
         "ja": "税と給付のルールをコードで書くためのオープンなエンジン。これを使った各国のモデルでベーシックインカム案を試算できる",
@@ -432,6 +510,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-poh-v2",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-poh-v2",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-poh-v2)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-poh-v2\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Smart contracts for Proof of Humanity v2: a registry of humans built on video submissions, vouching and Kleros disputes, which UBI tokens build on",
         "ja": "Proof of Humanity v2 のスマートコントラクト。動画での登録、保証（vouching）、Kleros の紛争解決で人間の名簿を作り、UBI トークンの土台になる",
@@ -461,6 +545,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-policyengine-us",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-policyengine-us",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-policyengine-us)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-policyengine-us\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms",
         "ja": "米国の税と社会保障のルールを計算するエンジン。UBI などの改革にかかる費用や貧困への影響の試算に使われる",
@@ -490,6 +580,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-ubi-token",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-ubi-token",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-ubi-token)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-ubi-token\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "The original $UBI token for Proof of Humanity: an ERC-20 that streams newly minted UBI to every registered human",
         "ja": "Proof of Humanity 向けの最初の $UBI トークン。登録された人間一人ひとりに、新しく発行した UBI を流し続ける ERC-20",
@@ -519,6 +615,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-ubi2",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-ubi2",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-ubi2)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-ubi2\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Experimental new UBI chain from Democracy Earth, started in June 2026: personhood is checked by AI, and 1 UBI per hour streams to every human",
         "ja": "Democracy Earth が2026年6月に始めた実験的な新しい UBI チェーン。AI で人間であることを確かめ、1時間に 1 UBI を一人ひとりに流し続ける",
@@ -540,7 +642,7 @@
       "language": "Rust",
       "license": "MIT",
       "stars": 42,
-      "lastCommit": "2026-10-27",
+      "lastCommit": "2026-10-28",
       "archived": false,
       "dormant": false,
       "serviceId": null,
@@ -548,6 +650,12 @@
       "organizationId": null,
       "essayUrl": null,
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/open-source/#oss-world-id-protocol",
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-world-id-protocol",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-world-id-protocol)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/open-source/?ref=badge#oss-world-id-protocol\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
       "descriptions": {
         "en": "Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)",
         "ja": "World ID の中核プロトコルと開発者向けドキュメント。World（旧 Worldcoin）の匿名の「人間であることの証明」",

@@ -29,6 +29,8 @@ Referral links and codes on the site are the maintainer's own. **Pull requests m
 - Write facts, not hype. Date anything that changes (prices, user counts, campaign terms), e.g. "as of Oct 2026".
 - List your sources in the pull request description.
 
+If your project is listed, you can add the optional "Listed on Free Lunch Lab" badge; copy its snippet from https://neteru-nyukin.eltociear.workers.dev/badge/. Adding it or not has no effect on the listing.
+
 To report outdated or wrong information, open an issue with the "Report outdated info" template.
 
 ## License of contributions

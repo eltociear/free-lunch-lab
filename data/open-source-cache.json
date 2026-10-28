@@ -94,7 +94,7 @@
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-10-27",
+      "lastCommit": "2026-10-28",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"
@@ -122,7 +122,7 @@
     },
     "github.com:worldcoin/world-id-protocol": {
       "stars": 42,
-      "lastCommit": "2026-10-27",
+      "lastCommit": "2026-10-28",
       "archived": false,
       "license": "MIT",
       "language": "Rust"

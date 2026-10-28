@@ -7,6 +7,7 @@ const { execFileSync } = require('child_process');
 // オープンソース一覧のスター数・最終コミット日などを取りに行く（失敗してもキャッシュで続ける。OSS_OFFLINE=1 で取得しない）
 try { execFileSync(process.execPath, [path.join(__dirname, 'oss-fetch.js')], { stdio: 'inherit', timeout: 120000 }); } catch (e) { console.warn('open-source metadata: fetch failed, using cache'); }
 const { ossProjects, DORMANT_MONTHS } = require('./src/oss.js');
+const { badgeFiles, LABEL: BADGE_LABEL } = require('./src/badge.js');
 const { projects: OSSP, fetchedOn: ossFetchedOn } = ossProjects();
 
 const OUT = path.join(__dirname, 'public');
@@ -71,6 +72,18 @@ for (const p of OSSP) {
   for (const l of LANGS) if (!p.desc[l]) throw new Error(`${p.id}: missing desc.${l}`);
   for (const l of LANGS) if (!OSS_GROUPS.find(g => g.id === p.group).name[l]) throw new Error(`${p.group}: missing name.${l}`);
 }
+// 掲載中のプロジェクト向けバッジ: /badge/ と /{lang}/badge/（SVG は /badge/*.svg に1つだけ）
+const badgePath = l => `${urlPath(l)}badge/`;
+const badgeAbs = l => SITE_URL + badgePath(l);
+const BADGE_KEYS = ['badgeTitle', 'badgeH1', 'badgeDesc', 'badgeIntro', 'badgeNote', 'badgePreviewH', 'badgeFlat', 'badgeCard', 'badgeDark', 'badgeLight', 'badgeSvcH', 'badgeOssH', 'badgeOrgH', 'badgeCopied'];
+for (const l of LANGS) for (const k of BADGE_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+const BADGES = badgeFiles();
+const badgeImg = f => `${SITE_URL}/badge/${f}`;
+// バッジのリンク先（そのプロジェクトのページか一覧のアンカー）。?ref=badge はアンカーより前に付ける
+const withRef = u => { const i = u.indexOf('#'); return i < 0 ? `${u}?ref=badge` : `${u.slice(0, i)}?ref=badge${u.slice(i)}`; };
+const badgeTarget = (kind, x, l) => withRef(kind === 'svc' ? svcAbs(l, x) : kind === 'oss' ? `${ossAbs(l)}#oss-${x.id}` : `${orgAbs(l)}#org-${x.id}`);
+const badgeMd = url => `[![${BADGE_LABEL}](${badgeImg('listed.svg')})](${url})`;
+const badgeHtml = url => `<a href="${url}"><img src="${badgeImg('listed-card.svg')}" alt="${BADGE_LABEL}" width="${BADGES['listed-card.svg'].width}" height="${BADGES['listed-card.svg'].height}"></a>`;
 // 認証方法ごとのページ: /verify/{method}/。必須・任意あわせて2件以上あるものだけ作る
 const verifyPath = (l, m) => `${urlPath(l)}verify/${m}/`;
 const verifyAbs = (l, m) => SITE_URL + verifyPath(l, m);
@@ -535,6 +548,21 @@ const DETAIL_CSS = `
 .grave dt{color:var(--muted);font-size:.76rem;padding-top:.15em;white-space:nowrap}
 .grave dd{margin:0;min-width:0;overflow-wrap:anywhere}
 @media (max-width:520px){.grave dl{grid-template-columns:1fr}.grave dt{padding-top:6px}}
+/* バッジのページ: 見本は明るい背景と暗い背景の両方に置く。コードの箱は中で折り返し、ページは横にスクロールさせない */
+.bdg-prev{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px;margin-top:4px}
+.bdg-tile{margin:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface);display:grid;min-width:0}
+.bdg-show{display:grid;grid-template-columns:1fr 1fr}
+.bdg-show span{display:grid;place-items:center;padding:16px 10px;min-width:0}
+.bdg-show .on-l{background:#FFFFFF}.bdg-show .on-d{background:#0D1117}
+.bdg-show img{max-width:100%;height:auto}
+.bdg-tile figcaption{padding:10px 12px;display:grid;gap:2px;font-size:.8rem;min-width:0}
+.bdg-tile figcaption a{font-size:.74rem;overflow-wrap:anywhere}
+.bdg-note{font-size:.84rem;color:var(--muted);max-width:44em}
+.bdg-name{font-weight:700;font-size:1.02rem;text-underline-offset:3px;overflow-wrap:anywhere}
+.snip{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 8px;align-items:start;min-width:0}
+.snip-k{grid-column:1/-1;font-size:.68rem;font-weight:700;letter-spacing:.08em;color:var(--muted)}
+.snip pre{margin:0;min-width:0;max-height:9em;overflow:auto;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:color-mix(in srgb,var(--paper) 60%,var(--surface));color:var(--ink);font:.74rem/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all;text-align:left;user-select:all;-webkit-user-select:all}
+.snip .btn{font-size:.78rem;padding:6px 12px}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
 // meta description 用に長さをそろえる（日本語・中国語は短め）
@@ -662,7 +690,7 @@ ${alts}
 <div class="wrap">
 ${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 ${script}
 </body>
@@ -877,10 +905,61 @@ function ossPage(lang) {
 <header class="orgs-head"><p class="eyebrow" dir="ltr">OPEN SOURCE</p><h1>${esc(L.ossH1)}</h1><p class="orgs-intro">${esc(L.ossIntro)}</p>
 ${ossFetchedOn ? `<p class="oss-note">${esc(L.ossFetched).replace('{date}', `<time datetime="${ossFetchedOn}">${esc(longDate(ossFetchedOn, lang))}</time>`)} · <a href="${SITE_URL}/open-source.json" dir="ltr">open-source.json</a></p>\n` : ''}<nav class="org-toc" aria-label="${esc(L.navLabel)}">${OSS_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}</nav></header>
 ${groups}
-<p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a></p>
+<p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a></p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   return shell(lang, { title, desc: L.ossDesc, hrefFor: ossAbs, pathFor: ossPath, ld, ogType: 'website', body });
+}
+
+// ---- 掲載中のプロジェクト向けバッジ（/badge/）。見本と、サービス・オープンソース・団体ごとのコピー用コード
+function badgePage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const title = `${L.badgeTitle} | ${L.title}`;
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: L.badgeTitle, item: badgeAbs(lang) },
+    ],
+  };
+  const tile = (f, kind, theme) => { const b = BADGES[f]; const img = `<img src="/badge/${f}" alt="${BADGE_LABEL}" width="${b.width}" height="${b.height}" loading="lazy">`; return `<figure class="bdg-tile"><div class="bdg-show"><span class="on-l">${img}</span><span class="on-d">${img}</span></div><figcaption><b>${esc(kind)} · ${esc(theme)}</b><a href="${badgeImg(f)}" dir="ltr">${esc(badgeImg(f))}</a></figcaption></figure>`; };
+  const snip = (k, code) => `<div class="snip"><span class="snip-k">${k}</span><pre dir="ltr"><code>${esc(code)}</code></pre><button class="btn line" type="button" data-snip hidden>${esc(L.copy)}</button></div>`;
+  const item = (kind, x, name, href, meta) => {
+    const url = badgeTarget(kind, x, lang);
+    return `<li class="org" id="b-${kind}-${x.id}"><div class="org-head"><a class="bdg-name" href="${esc(href)}" dir="auto">${esc(name)}</a>${meta ? `<span class="org-meta">${esc(meta)}</span>` : ''}</div>
+${snip('Markdown', badgeMd(url))}
+${snip('HTML', badgeHtml(url))}</li>`;
+  };
+  const sec = (id, h, items) => `<section class="org-group" id="${id}"><h2>${esc(h)}<span class="dot">${items.length}</span></h2><ul class="org-list">${items.join('\n')}</ul></section>`;
+  const svcItems = live.map(s => item('svc', s, sName(s, lang), svcPath(lang, s), CATS[lang][s.cat]));
+  const ossItems = OSSP.map(p => item('oss', p, p.name, `${ossPath(lang)}#oss-${p.id}`, OSS_GROUPS.find(g => g.id === p.group).name[lang]));
+  const orgItems = ORGS.map(o => item('org', o, o.name, `${orgPath(lang)}#org-${o.id}`, (ORG_GROUPS.find(g => g.id === o.group) || { name: {} }).name[lang]));
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.badgeTitle)}</li></ol></nav>
+<main class="orgs">
+<header class="orgs-head"><p class="eyebrow" dir="ltr">BADGE</p><h1>${esc(L.badgeH1)}</h1><p class="orgs-intro">${esc(L.badgeIntro)}</p><p class="bdg-note">${esc(L.badgeNote)}</p>
+<nav class="org-toc" aria-label="${esc(L.navLabel)}"><a href="#b-prev">${esc(L.badgePreviewH)}</a><a href="#b-svc">${esc(L.badgeSvcH)}</a><a href="#b-oss">${esc(L.badgeOssH)}</a><a href="#b-org">${esc(L.badgeOrgH)}</a></nav></header>
+<section class="org-group" id="b-prev"><h2>${esc(L.badgePreviewH)}</h2><div class="bdg-prev">${tile('listed.svg', L.badgeFlat, L.badgeDark)}${tile('listed-light.svg', L.badgeFlat, L.badgeLight)}${tile('listed-card.svg', L.badgeCard, L.badgeDark)}${tile('listed-card-light.svg', L.badgeCard, L.badgeLight)}</div></section>
+${sec('b-svc', L.badgeSvcH, svcItems)}
+${sec('b-oss', L.badgeOssH, ossItems)}
+${sec('b-org', L.badgeOrgH, orgItems)}
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  // コピーボタンは JS が動くときだけ出す（動かなくてもコードは選んでコピーできる）
+  const script = `<script>
+(function(){
+  var M=${JSON.stringify({ copied: L.badgeCopied, selected: L.selected })},toast=document.getElementById('toast'),timer;
+  function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
+  document.querySelectorAll('[data-snip]').forEach(function(b){b.hidden=false});
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-snip]'); if(!b) return;
+    var pre=b.previousElementSibling,text=pre.textContent;
+    function fallback(){var r=document.createRange();r.selectNodeContents(pre);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(M.selected)}
+    try{navigator.clipboard.writeText(text).then(function(){say(M.copied)},fallback)}catch(err){fallback()}
+  });
+})();
+</script>`;
+  return shell(lang, { title, desc: L.badgeDesc, hrefFor: badgeAbs, pathFor: badgePath, ld, ogType: 'website', body, script });
 }
 
 for (const lang of LANGS) {
@@ -905,6 +984,9 @@ for (const lang of LANGS) {
   const osdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'open-source');
   fs.mkdirSync(osdir, { recursive: true });
   fs.writeFileSync(path.join(osdir, 'index.html'), ossPage(lang));
+  const bdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'badge');
+  fs.mkdirSync(bdir, { recursive: true });
+  fs.writeFileSync(path.join(bdir, 'index.html'), badgePage(lang));
   const tdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'timeline');
   fs.mkdirSync(tdir, { recursive: true });
   fs.writeFileSync(path.join(tdir, 'index.html'), timelinePage(lang));
@@ -918,11 +1000,14 @@ for (const lang of LANGS) {
 // SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
 const OG_SRC = path.join(__dirname, 'src/og');
 if (fs.existsSync(OG_SRC)) fs.cpSync(OG_SRC, path.join(OUT, 'og'), { recursive: true });
+// バッジの SVG（src/badge.js で作る）
+for (const [f, b] of Object.entries(BADGES)) fs.writeFileSync(path.join(OUT, 'badge', f), b.svg);
 
 // ---- RSS 2.0（更新履歴 NEWS から）。guid は日付と英語の文から作るので、文が変わらないかぎり毎回同じ
 const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 function newsLink(n, lang) {
   const en = n.en || '';
+  if (/badge/i.test(en)) return badgeAbs(lang);
   if (/open-source/i.test(en)) return ossAbs(lang);
   if (/essay/i.test(en)) return essayAbs(lang, ESSAYS[0]);
   if (/timeline/i.test(en)) return tlAbs(lang);
@@ -978,7 +1063,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
@@ -989,6 +1074,7 @@ const DATA_LICENSE = 'CC BY 4.0 (referral links excluded)';
 const REGION = s => (s.onlyIn ? `only-${s.onlyIn}` : s.global ? 'global' : 'japan-only');
 const byId = (a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
 const latest = [...live.map(s => s.checked)].sort().pop();
+const badgeJson = (kind, x) => { const url = badgeTarget(kind, x, DEFAULT_LANG); return { url, image: badgeImg('listed.svg'), markdown: badgeMd(url), html: badgeHtml(url) }; };
 const servicesJson = {
   name: 'Free Lunch Lab services',
   description: 'Apps and projects that pay you basic income just for existing, as listed on Free Lunch Lab. Hidden entries are excluded.',
@@ -1017,6 +1103,7 @@ const servicesJson = {
     checked: s.checked,
     pageUrl: svcAbs(DEFAULT_LANG, s),
     pageUrls: Object.fromEntries(LANGS.map(l => [l, svcAbs(l, s)])),
+    badge: badgeJson('svc', s),
     descriptions: Object.fromEntries(LANGS.filter(l => s[l]).map(l => [l, Object.fromEntries(['gain', 'note', 'need', 'caution'].filter(k => s[l][k]).map(k => [k, clean(s[l][k])]))])),
   })),
 };
@@ -1071,6 +1158,7 @@ const ossJson = {
     organizationId: p.org || null,
     essayUrl: p.essay && ESSAYS.find(e => e.id === p.essay) ? essayAbs(DEFAULT_LANG, ESSAYS.find(e => e.id === p.essay)) : null,
     pageUrl: ossAbs(DEFAULT_LANG) + '#oss-' + p.id,
+    badge: badgeJson('oss', p),
     descriptions: Object.fromEntries(LANGS.map(l => [l, clean(p.desc[l])])),
   })),
 };
@@ -1118,6 +1206,7 @@ ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LA
 - [${md(T.en.tlTitle)}](${tlAbs(DEFAULT_LANG)}): ${md(T.en.tlDesc)}
 - [${md(T.en.graveTitle)}](${graveAbs(DEFAULT_LANG)}): ${md(T.en.graveDesc)}
 - [${md(T.en.ossTitle)}](${ossAbs(DEFAULT_LANG)}): ${md(T.en.ossDesc)}
+- [${md(T.en.badgeH1)}](${badgeAbs(DEFAULT_LANG)}): ${md(T.en.badgeDesc)} Image: ${badgeImg('listed.svg')}. Each entry in services.json and open-source.json has a \`badge\` object with the Markdown snippet and target URL.
 ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}): ${md(e.desc.en)}`).join('\n')}
 
 ## Open-source projects

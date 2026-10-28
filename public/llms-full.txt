@@ -696,7 +696,7 @@ Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of 
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-10-27
+- Last commit: 2026-10-28
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -811,7 +811,7 @@ Mobile wallet for Encointer: join the in-person meetups, receive the community c
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-10-27
+- Last commit: 2026-10-28
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 

@@ -8,6 +8,13 @@
     <lastBuildDate>Wed, 28 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>新增给已收录项目的徽章</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/badge/</link>
+      <guid isPermaLink="false">news-2026-10-28-cabc33d35547</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>新增给已收录项目的徽章</description>
+    </item>
+    <item>
       <title>新增基本收入开源项目列表</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/zh/open-source/</link>
       <guid isPermaLink="false">news-2026-10-28-35c90020b5f3</guid>
