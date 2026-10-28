@@ -1,5 +1,6 @@
 // 使い方: node build.js  →  public/ に全言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
 const fs = require('fs');
+const crypto = require('crypto');
 const path = require('path');
 const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS } = require('./src/data.js');
 
@@ -42,6 +43,9 @@ const orgAbs = l => SITE_URL + orgPath(l);
 // 終了したサービスの墓場: /graveyard/ と /{lang}/graveyard/
 const gravePath = l => `${urlPath(l)}graveyard/`;
 const graveAbs = l => SITE_URL + gravePath(l);
+// RSS フィード: /feed.xml と /{lang}/feed.xml
+const feedPath = l => `${urlPath(l)}feed.xml`;
+const feedAbs = l => SITE_URL + feedPath(l);
 // エッセイ: /essays/ と /essays/{id}/（言語ごとに接頭辞）
 const essaysPath = l => `${urlPath(l)}essays/`;
 const essaysAbs = l => SITE_URL + essaysPath(l);
@@ -210,6 +214,7 @@ function head(lang) {
   return `<title>${esc(title)}</title>
 <meta name="description" content="${esc(L.metaDesc)}">
 <link rel="canonical" href="${abs(lang)}">
+<link rel="alternate" type="application/rss+xml" title="${esc(L.title)} RSS" href="${feedAbs(lang)}">
 <meta name="google-site-verification" content="n5VlzRi2FPlfwdfg9RcoApbpTtxkHIoB2ws5jWbPF9s">
 ${alts}
 <link rel="alternate" hreflang="x-default" href="${abs(DEFAULT_LANG)}">
@@ -597,6 +602,7 @@ function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script =
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
+<link rel="alternate" type="application/rss+xml" title="${esc(L.title)} RSS" href="${feedAbs(lang)}">
 ${alts}
 <link rel="alternate" hreflang="x-default" href="${hrefFor(DEFAULT_LANG)}">
 <meta property="og:site_name" content="${esc(L.brandPlain)}">
@@ -628,7 +634,7 @@ ${alts}
 <div class="wrap">
 ${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 ${script}
 </body>
@@ -832,6 +838,54 @@ for (const lang of LANGS) {
 // SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
 const OG_SRC = path.join(__dirname, 'src/og');
 if (fs.existsSync(OG_SRC)) fs.cpSync(OG_SRC, path.join(OUT, 'og'), { recursive: true });
+
+// ---- RSS 2.0（更新履歴 NEWS から）。guid は日付と英語の文から作るので、文が変わらないかぎり毎回同じ
+const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
+function newsLink(n, lang) {
+  const en = n.en || '';
+  if (/essay/i.test(en)) return essayAbs(lang, ESSAYS[0]);
+  if (/timeline/i.test(en)) return tlAbs(lang);
+  if (/verification method/i.test(en)) return verifyAbs(lang, 'world-id');
+  if (/graveyard/i.test(en)) return graveAbs(lang);
+  if (/organizations/i.test(en)) return orgAbs(lang);
+  if (/German version/i.test(en)) return abs('de');
+  const svc = live.slice().sort((a, b) => (b.nameEn || b.name).length - (a.nameEn || a.name).length)
+    .find(x => en.includes((x.nameEn || x.name).split(' (')[0]) || en.includes(x.name.split('（')[0]));
+  if (svc) return svcAbs(lang, svc);
+  return abs(lang);
+}
+function feedXml(lang) {
+  const L = T[lang];
+  const items = NEWS.map(n => {
+    const title = n[lang] || n.en;
+    const link = newsLink(n, lang);
+    const guid = 'news-' + n.date + '-' + crypto.createHash('sha1').update(n.date + '|' + n.en).digest('hex').slice(0, 12);
+    const svc = live.find(x => link === svcAbs(lang, x));
+    const desc = svc ? `${title}: ${(svc[lang] || svc.en).gain}` : title;
+    return `    <item>
+      <title>${xesc(title)}</title>
+      <link>${xesc(link)}</link>
+      <guid isPermaLink="false">${guid}</guid>
+      <pubDate>${new Date(n.date + 'T00:00:00Z').toUTCString()}</pubDate>
+      <description>${xesc(desc)}</description>
+    </item>`;
+  }).join('\n');
+  const last = new Date((NEWS[0] || { date: '2026-01-01' }).date + 'T00:00:00Z').toUTCString();
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${xesc(L.title)}</title>
+    <link>${xesc(abs(lang))}</link>
+    <description>${xesc(L.metaDesc)}</description>
+    <language>${LANG_TAG[lang]}</language>
+    <lastBuildDate>${last}</lastBuildDate>
+    <atom:link href="${xesc(feedAbs(lang))}" rel="self" type="application/rss+xml"/>
+${items}
+  </channel>
+</rss>
+`;
+}
+for (const lang of LANGS) fs.writeFileSync(path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'feed.xml'), feedXml(lang));
 
 const today = new Date().toISOString().slice(0, 10);
 // 1ページ分の <url>。href(l) で各言語版の URL を返す

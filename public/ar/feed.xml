@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Free Lunch Lab (مختبر الغداء المجاني)</title>
+    <link>https://neteru-nyukin.eltociear.workers.dev/ar/</link>
+    <description>تطبيقات ومشاريع تدفع لك لمجرد وجودك على طريقة الدخل الأساسي، مثل Ğ1 وCircles وGradido وIdena، مع ذكر المخاطر وإمكانية التحويل إلى نقود. بعض الروابط روابط إحالة.</description>
+    <language>ar</language>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ar/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>أضفنا خلاصات RSS للتحديثات</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/</link>
+      <guid isPermaLink="false">news-2026-10-28-3d632cffc912</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا خلاصات RSS للتحديثات</description>
+    </item>
+    <item>
+      <title>نشرنا مقال «هل ينبغي أن يحصل وكلاء الذكاء الاصطناعي على دخل أساسي؟»</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/essays/ai-agent-basic-income/</link>
+      <guid isPermaLink="false">news-2026-10-28-f5014a81bb2c</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>نشرنا مقال «هل ينبغي أن يحصل وكلاء الذكاء الاصطناعي على دخل أساسي؟»</description>
+    </item>
+    <item>
+      <title>أضفنا خطًا زمنيًا لتجارب الدخل الأساسي</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/timeline/</link>
+      <guid isPermaLink="false">news-2026-10-28-fe4fb4961a6f</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا خطًا زمنيًا لتجارب الدخل الأساسي</description>
+    </item>
+    <item>
+      <title>أضفنا صفحات حسب طريقة التحقق (World ID وغيرها)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/verify/world-id/</link>
+      <guid isPermaLink="false">news-2026-10-28-c357e2dde127</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا صفحات حسب طريقة التحقق (World ID وغيرها)</description>
+    </item>
+    <item>
+      <title>أضفنا صفحة مقبرة الغداء المجاني</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/graveyard/</link>
+      <guid isPermaLink="false">news-2026-10-28-b328c947aa27</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا صفحة مقبرة الغداء المجاني</description>
+    </item>
+    <item>
+      <title>أضفنا FheID (Privasea)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/fheid/</link>
+      <guid isPermaLink="false">news-2026-10-26-2a54b45f0d2b</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا FheID (Privasea): إسقاطات جوية ومكافآت مقابل إثبات أنك إنسان (مثل «نجوم» الحملات)</description>
+    </item>
+    <item>
+      <title>أضفنا RewardMe</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/rewardme/</link>
+      <guid isPermaLink="false">news-2026-10-26-0fbf81813e38</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا RewardMe: استرداد نقدي حتى 5% من إيصالات الشراء في بريدك (Reward Dollars / عملة MDT المشفرة)</description>
+    </item>
+    <item>
+      <title>أضفنا Idena (iDNA)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/idena/</link>
+      <guid isPermaLink="false">news-2026-10-26-658e8ad558a9</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Idena (iDNA): iDNA (مكافآت تعدين ما دامت عقدتك تعمل، ومكافآت التحقق)</description>
+    </item>
+    <item>
+      <title>أضفنا Billions</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/billions/</link>
+      <guid isPermaLink="false">news-2026-10-26-88a37a797bf6</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Billions: نقاط Power (مقابل التحقق ودعوة الأصدقاء والمشاركة)</description>
+    </item>
+    <item>
+      <title>أضفنا Humad (World App)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/humad/</link>
+      <guid isPermaLink="false">news-2026-10-26-0692de69d675</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Humad (World App): نقاط مقابل النقر على الإعلانات والإجابة عن الأسئلة (بطاقات هدايا بدءًا من 1,500 pt = 150 ين)</description>
+    </item>
+    <item>
+      <title>غيّرنا اسم الموقع إلى Free Lunch Lab (مختبر الغداء المجاني)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/</link>
+      <guid isPermaLink="false">news-2026-10-25-931046bbf5bf</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description>غيّرنا اسم الموقع إلى Free Lunch Lab (مختبر الغداء المجاني)</description>
+    </item>
+    <item>
+      <title>أضفنا النسخة الألمانية</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/de/</link>
+      <guid isPermaLink="false">news-2026-10-25-ba9de3fc0594</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا النسخة الألمانية</description>
+    </item>
+    <item>
+      <title>أضفنا WowApp</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/wowapp/</link>
+      <guid isPermaLink="false">news-2026-10-24-25902ab49093</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا WowApp: مكافآت صغيرة مقابل الاستخدام اليومي والألعاب والتسوق وغيرها</description>
+    </item>
+    <item>
+      <title>أضفنا Gradido</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/gradido/</link>
+      <guid isPermaLink="false">news-2026-10-24-54eca34322df</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Gradido: 20 GDD عن كل ساعة عمل للصالح العام (حتى 1,000 GDD شهريًا)</description>
+    </item>
+    <item>
+      <title>أضفنا Ubiquitus (للمقيمين في الولايات المتحدة فقط)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/ubiquitus/</link>
+      <guid isPermaLink="false">news-2026-10-24-b24b36b557b5</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Ubiquitus (للمقيمين في الولايات المتحدة فقط): حصة نقدية صغيرة متساوية في اليوم الأول من كل شهر (Venmo)</description>
+    </item>
+    <item>
+      <title>أضفنا AI-DAC (World App)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/aidac/</link>
+      <guid isPermaLink="false">news-2026-10-24-4921102e0ca6</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا AI-DAC (World App): دخل أساسي بعملة DAC</description>
+    </item>
+    <item>
+      <title>أضفنا صفحة منظمات ومشاريع الدخل الأساسي</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/organizations/</link>
+      <guid isPermaLink="false">news-2026-10-24-78537084dfe0</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا صفحة منظمات ومشاريع الدخل الأساسي</description>
+    </item>
+    <item>
+      <title>أضفنا AXO (World App)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/axo/</link>
+      <guid isPermaLink="false">news-2026-10-24-7362639a17b9</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا AXO (World App): رموز AXO كل يوم</description>
+    </item>
+    <item>
+      <title>أضفنا ORO (World App)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/oro/</link>
+      <guid isPermaLink="false">news-2026-10-24-b4662b082934</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا ORO (World App): رموز ORO كل يوم</description>
+    </item>
+    <item>
+      <title>أضفنا Dotare</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/dotare/</link>
+      <guid isPermaLink="false">news-2026-10-24-939248cbb938</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Dotare: 10 ADA شهريًا لمدة سنة إن اختِرت (دورة 2027)</description>
+    </item>
+    <item>
+      <title>أضفنا Palai</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/palai/</link>
+      <guid isPermaLink="false">news-2026-10-24-d4eddf8ebfaf</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Palai: دخل أساسي بعملة Palai (¶) كل يوم</description>
+    </item>
+    <item>
+      <title>أضفنا Circles (Gnosis App)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/circles/</link>
+      <guid isPermaLink="false">news-2026-10-23-10a632a2309b</guid>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Circles (Gnosis App): 1 CRC كل ساعة (24 CRC يوميًا)</description>
+    </item>
+    <item>
+      <title>أضفنا Ğ1</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/g1/</link>
+      <guid isPermaLink="false">news-2026-10-23-295f2bda3856</guid>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Ğ1: Ğ1 كل يوم بعد أن تصبح عضوًا (العائد الشامل)</description>
+    </item>
+    <item>
+      <title>أضفنا Mein Grundeinkommen</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/meingrundeinkommen/</link>
+      <guid isPermaLink="false">news-2026-10-21-c9767b251f58</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Mein Grundeinkommen: €1,000 شهريًا لمدة سنة إن فزت</description>
+    </item>
+    <item>
+      <title>أضفنا Trima</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/trima/</link>
+      <guid isPermaLink="false">news-2026-10-09-8ba534d6885d</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Trima: 5,000 ميل + أميال مقابل التنقل والمشي</description>
+    </item>
+    <item>
+      <title>أضفنا InterLink</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/interlink/</link>
+      <guid isPermaLink="false">news-2026-10-09-1ffdfd948a65</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا InterLink: رموز ITLG كل يوم</description>
+    </item>
+    <item>
+      <title>أضفنا أفضل 3 خيارات ومؤشرات الثقة</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/</link>
+      <guid isPermaLink="false">news-2026-10-09-34710bc95676</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا أفضل 3 خيارات ومؤشرات الثقة</description>
+    </item>
+    <item>
+      <title>صار WAVEE يحمل علامة «عالمي»</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/wavee/</link>
+      <guid isPermaLink="false">news-2026-10-09-07d980dc2303</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>صار WAVEE يحمل علامة «عالمي»: مكافأة في كل مرة تحصل فيها على وظيفة</description>
+    </item>
+    <item>
+      <title>أضفنا Delta Kim</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/deltakim/</link>
+      <guid isPermaLink="false">news-2026-10-09-af5770ffc547</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Delta Kim: عملة KIM كل يوم</description>
+    </item>
+    <item>
+      <title>أضفنا Pi Network</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/pinetwork/</link>
+      <guid isPermaLink="false">news-2026-10-09-d778d43c9bb4</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Pi Network: عملة PI كل يوم</description>
+    </item>
+    <item>
+      <title>أضفنا Pawns.app</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/pawns/</link>
+      <guid isPermaLink="false">news-2026-10-09-70ce222eb78d</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Pawns.app: نقود مقابل حركة البيانات التي تشاركها</description>
+    </item>
+    <item>
+      <title>أضفنا Sweatcoin</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/sweatcoin/</link>
+      <guid isPermaLink="false">news-2026-10-09-4693044b4ecf</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Sweatcoin: 0.95 عملة لكل 1,000 خطوة</description>
+    </item>
+    <item>
+      <title>تصميم جديد للموقع</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/</link>
+      <guid isPermaLink="false">news-2026-10-08-4b2a5e1d78c3</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>تصميم جديد للموقع</description>
+    </item>
+    <item>
+      <title>أضفنا Honeygain</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/honeygain/</link>
+      <guid isPermaLink="false">news-2026-10-08-29664a2da91c</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Honeygain: نقود مقابل حركة البيانات التي تشاركها</description>
+    </item>
+    <item>
+      <title>أضفنا Grass</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/services/grass/</link>
+      <guid isPermaLink="false">news-2026-10-08-af7e925cfb34</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>أضفنا Grass: نقاط (ثم رموز GRASS لاحقًا)</description>
+    </item>
+  </channel>
+</rss>

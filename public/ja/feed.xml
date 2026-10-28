@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>不労所得研究所</title>
+    <link>https://neteru-nyukin.eltociear.workers.dev/ja/</link>
+    <description>存在するだけでお金がもらえる、ベーシックインカム型のアプリやプロジェクト（Ğ1、Circles、Gradido、Idena など）の一覧。リスクや換金のしやすさもあわせて紹介。一部は紹介リンクです。</description>
+    <language>ja</language>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ja/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>更新情報のRSSフィードを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/</link>
+      <guid isPermaLink="false">news-2026-10-28-3d632cffc912</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>更新情報のRSSフィードを追加</description>
+    </item>
+    <item>
+      <title>エッセイ「AIエージェントにベーシックインカムは必要か」を公開</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/essays/ai-agent-basic-income/</link>
+      <guid isPermaLink="false">news-2026-10-28-f5014a81bb2c</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>エッセイ「AIエージェントにベーシックインカムは必要か」を公開</description>
+    </item>
+    <item>
+      <title>ベーシックインカム社会実験の年表を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/timeline/</link>
+      <guid isPermaLink="false">news-2026-10-28-fe4fb4961a6f</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>ベーシックインカム社会実験の年表を追加</description>
+    </item>
+    <item>
+      <title>認証方法ごとのページを追加（World ID など）</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/verify/world-id/</link>
+      <guid isPermaLink="false">news-2026-10-28-c357e2dde127</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>認証方法ごとのページを追加（World ID など）</description>
+    </item>
+    <item>
+      <title>終了したサービスの墓場のページを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/graveyard/</link>
+      <guid isPermaLink="false">news-2026-10-28-b328c947aa27</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>終了したサービスの墓場のページを追加</description>
+    </item>
+    <item>
+      <title>FheID（Privasea）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/fheid/</link>
+      <guid isPermaLink="false">news-2026-10-26-2a54b45f0d2b</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>FheID（Privasea）を追加: 人間証明でエアドロップや報酬（キャンペーンの「スター」など）</description>
+    </item>
+    <item>
+      <title>RewardMeを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/rewardme/</link>
+      <guid isPermaLink="false">news-2026-10-26-0fbf81813e38</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>RewardMeを追加: 受信メールのレシートから最大5%のキャッシュバック（Reward Dollars／暗号資産MDT）</description>
+    </item>
+    <item>
+      <title>Idena（iDNA）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/idena/</link>
+      <guid isPermaLink="false">news-2026-10-26-658e8ad558a9</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Idena（iDNA）を追加: iDNA（ノードを動かしている間のマイニング報酬と、認証セッションの報酬）</description>
+    </item>
+    <item>
+      <title>Billionsを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/billions/</link>
+      <guid isPermaLink="false">news-2026-10-26-88a37a797bf6</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Billionsを追加: Power ポイント（認証・友だち紹介・参加で貯まる）</description>
+    </item>
+    <item>
+      <title>Humad（World App）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/humad/</link>
+      <guid isPermaLink="false">news-2026-10-26-0692de69d675</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Humad（World App）を追加: 広告のタップや質問への回答でポイント（1,500pt＝150円分からギフト券に交換）</description>
+    </item>
+    <item>
+      <title>サイト名を「不労所得研究所（Free Lunch Lab）」に変更</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/</link>
+      <guid isPermaLink="false">news-2026-10-25-931046bbf5bf</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description>サイト名を「不労所得研究所（Free Lunch Lab）」に変更</description>
+    </item>
+    <item>
+      <title>ドイツ語版を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/de/</link>
+      <guid isPermaLink="false">news-2026-10-25-ba9de3fc0594</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description>ドイツ語版を追加</description>
+    </item>
+    <item>
+      <title>WowAppを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/wowapp/</link>
+      <guid isPermaLink="false">news-2026-10-24-25902ab49093</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>WowAppを追加: 毎日の利用やゲーム・買い物などで少額の報酬</description>
+    </item>
+    <item>
+      <title>Gradidoを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/gradido/</link>
+      <guid isPermaLink="false">news-2026-10-24-54eca34322df</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Gradidoを追加: 公益への貢献1時間につき20 GDD（月最大1,000 GDD）</description>
+    </item>
+    <item>
+      <title>Ubiquitusを追加（アメリカ在住者向け）</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/ubiquitus/</link>
+      <guid isPermaLink="false">news-2026-10-24-b24b36b557b5</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Ubiquitusを追加（アメリカ在住者向け）: 毎月1日に、参加者で等分した少額の現金（Venmo）</description>
+    </item>
+    <item>
+      <title>AI-DAC（World App）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/aidac/</link>
+      <guid isPermaLink="false">news-2026-10-24-4921102e0ca6</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>AI-DAC（World App）を追加: DAC トークンのUBI</description>
+    </item>
+    <item>
+      <title>UBIの団体・プロジェクトのページを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/organizations/</link>
+      <guid isPermaLink="false">news-2026-10-24-78537084dfe0</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>UBIの団体・プロジェクトのページを追加</description>
+    </item>
+    <item>
+      <title>AXO（World App）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/axo/</link>
+      <guid isPermaLink="false">news-2026-10-24-7362639a17b9</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>AXO（World App）を追加: AXO トークンを毎日</description>
+    </item>
+    <item>
+      <title>ORO（World App）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/oro/</link>
+      <guid isPermaLink="false">news-2026-10-24-b4662b082934</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>ORO（World App）を追加: ORO トークンを毎日</description>
+    </item>
+    <item>
+      <title>Dotareを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/dotare/</link>
+      <guid isPermaLink="false">news-2026-10-24-939248cbb938</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Dotareを追加: 受給者に選ばれると月10 ADAを1年間（2027年分）</description>
+    </item>
+    <item>
+      <title>Palaiを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/palai/</link>
+      <guid isPermaLink="false">news-2026-10-24-d4eddf8ebfaf</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Palaiを追加: Palai（¶）のベーシックインカムを毎日</description>
+    </item>
+    <item>
+      <title>Circles（Gnosis App）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/circles/</link>
+      <guid isPermaLink="false">news-2026-10-23-10a632a2309b</guid>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Circles（Gnosis App）を追加: 1時間に1 CRC（1日24 CRC）</description>
+    </item>
+    <item>
+      <title>Ğ1（ジューン）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/g1/</link>
+      <guid isPermaLink="false">news-2026-10-23-295f2bda3856</guid>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Ğ1（ジューン）を追加: メンバーになるとĞ1を毎日（ユニバーサル・ディビデンド）</description>
+    </item>
+    <item>
+      <title>Mein Grundeinkommenを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/meingrundeinkommen/</link>
+      <guid isPermaLink="false">news-2026-10-21-c9767b251f58</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Mein Grundeinkommenを追加: 当選すると月1,000ユーロを1年間</description>
+    </item>
+    <item>
+      <title>トリマを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/trima/</link>
+      <guid isPermaLink="false">news-2026-10-09-8ba534d6885d</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>トリマを追加: 5,000マイル ＋ 移動や歩数でマイル</description>
+    </item>
+    <item>
+      <title>InterLinkを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/interlink/</link>
+      <guid isPermaLink="false">news-2026-10-09-1ffdfd948a65</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>InterLinkを追加: ITLGトークンを毎日</description>
+    </item>
+    <item>
+      <title>「おすすめ3つ」と信頼度の表示を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/</link>
+      <guid isPermaLink="false">news-2026-10-09-34710bc95676</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>「おすすめ3つ」と信頼度の表示を追加</description>
+    </item>
+    <item>
+      <title>WAVEEを「海外OK」に更新</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/wavee/</link>
+      <guid isPermaLink="false">news-2026-10-09-07d980dc2303</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>WAVEEを「海外OK」に更新: 仕事が決まるたびにマッチング報酬</description>
+    </item>
+    <item>
+      <title>Delta Kimを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/deltakim/</link>
+      <guid isPermaLink="false">news-2026-10-09-af5770ffc547</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Delta Kimを追加: KIMを毎日</description>
+    </item>
+    <item>
+      <title>Pi Networkを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/pinetwork/</link>
+      <guid isPermaLink="false">news-2026-10-09-d778d43c9bb4</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Pi Networkを追加: PIを毎日</description>
+    </item>
+    <item>
+      <title>Pawns.appを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/pawns/</link>
+      <guid isPermaLink="false">news-2026-10-09-70ce222eb78d</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Pawns.appを追加: 共有した通信量に応じて現金</description>
+    </item>
+    <item>
+      <title>Sweatcoinを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/sweatcoin/</link>
+      <guid isPermaLink="false">news-2026-10-09-4693044b4ecf</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Sweatcoinを追加: 1,000歩で0.95コイン</description>
+    </item>
+    <item>
+      <title>デザインを一新</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/</link>
+      <guid isPermaLink="false">news-2026-10-08-4b2a5e1d78c3</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>デザインを一新</description>
+    </item>
+    <item>
+      <title>Honeygainを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/honeygain/</link>
+      <guid isPermaLink="false">news-2026-10-08-29664a2da91c</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Honeygainを追加: 共有した通信量に応じて現金</description>
+    </item>
+    <item>
+      <title>Grassを追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/grass/</link>
+      <guid isPermaLink="false">news-2026-10-08-af7e925cfb34</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Grassを追加: ポイント（のちにGRASSトークン）</description>
+    </item>
+  </channel>
+</rss>

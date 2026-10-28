@@ -2096,6 +2096,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-10-28",
+      "ja": "更新情報のRSSフィードを追加",
+      "en": "Added RSS feeds for updates",
+      "zh": "新增更新信息的 RSS 订阅",
+      "hi": "अपडेट के लिए RSS फ़ीड जोड़े",
+      "es": "Añadidos feeds RSS de novedades",
+      "de": "RSS-Feeds für Neuigkeiten hinzugefügt",
+      "ar": "أضفنا خلاصات ⁦RSS⁩ للتحديثات"
+    },
+    {
+      "date": "2026-10-28",
       "ja": "エッセイ「AIエージェントにベーシックインカムは必要か」を公開",
       "en": "Published the essay “Should AI agents get a basic income?”",
       "zh": "发布随笔《AI 智能体需要基本收入吗？》",
@@ -2671,7 +2681,8 @@ module.exports = {
       "essayBy": "文：Free Lunch Lab",
       "essayOpinion": "意見",
       "essaySources": "出典",
-      "essayPublished": "公開"
+      "essayPublished": "公開",
+      "rssLabel": "RSSフィード"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2836,7 +2847,8 @@ module.exports = {
       "essayBy": "By Free Lunch Lab",
       "essayOpinion": "Opinion",
       "essaySources": "Sources",
-      "essayPublished": "Published"
+      "essayPublished": "Published",
+      "rssLabel": "RSS feed"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3001,7 +3013,8 @@ module.exports = {
       "essayBy": "लेखक: Free Lunch Lab",
       "essayOpinion": "राय",
       "essaySources": "स्रोत",
-      "essayPublished": "प्रकाशित"
+      "essayPublished": "प्रकाशित",
+      "rssLabel": "RSS फ़ीड"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3166,7 +3179,8 @@ module.exports = {
       "essayBy": "作者：Free Lunch Lab",
       "essayOpinion": "观点",
       "essaySources": "出处",
-      "essayPublished": "发布"
+      "essayPublished": "发布",
+      "rssLabel": "RSS 订阅"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3331,7 +3345,8 @@ module.exports = {
       "essayBy": "Por Free Lunch Lab",
       "essayOpinion": "Opinión",
       "essaySources": "Fuentes",
-      "essayPublished": "Publicado"
+      "essayPublished": "Publicado",
+      "rssLabel": "Feed RSS"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3496,7 +3511,8 @@ module.exports = {
       "essayBy": "بقلم ⁦Free Lunch Lab⁩",
       "essayOpinion": "رأي",
       "essaySources": "المصادر",
-      "essayPublished": "نُشر"
+      "essayPublished": "نُشر",
+      "rssLabel": "خلاصة ⁦RSS⁩"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3661,7 +3677,8 @@ module.exports = {
       "essayBy": "Von Free Lunch Lab",
       "essayOpinion": "Meinung",
       "essaySources": "Quellen",
-      "essayPublished": "Veröffentlicht"
+      "essayPublished": "Veröffentlicht",
+      "rssLabel": "RSS-Feed"
     }
   },
   "ORG_REGIONS": {

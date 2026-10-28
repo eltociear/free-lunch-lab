@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Free Lunch Lab</title>
+    <link>https://neteru-nyukin.eltociear.workers.dev/hi/</link>
+    <description>सिर्फ़ मौजूद होने पर पैसे देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (जैसे Ğ1, Circles, Gradido, Idena), जोखिम और नकद में बदलने की असलियत के साथ। कुछ लिंक रेफ़रल लिंक हैं।</description>
+    <language>hi</language>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://neteru-nyukin.eltociear.workers.dev/hi/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>अपडेट के लिए RSS फ़ीड जोड़े</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/</link>
+      <guid isPermaLink="false">news-2026-10-28-3d632cffc912</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>अपडेट के लिए RSS फ़ीड जोड़े</description>
+    </item>
+    <item>
+      <title>निबंध “क्या AI एजेंटों को बेसिक इनकम मिलनी चाहिए?” प्रकाशित</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/essays/ai-agent-basic-income/</link>
+      <guid isPermaLink="false">news-2026-10-28-f5014a81bb2c</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>निबंध “क्या AI एजेंटों को बेसिक इनकम मिलनी चाहिए?” प्रकाशित</description>
+    </item>
+    <item>
+      <title>बेसिक इनकम प्रयोगों की समयरेखा जोड़ी</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/timeline/</link>
+      <guid isPermaLink="false">news-2026-10-28-fe4fb4961a6f</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>बेसिक इनकम प्रयोगों की समयरेखा जोड़ी</description>
+    </item>
+    <item>
+      <title>वेरिफ़िकेशन के तरीके के हिसाब से पेज जोड़े (World ID आदि)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/verify/world-id/</link>
+      <guid isPermaLink="false">news-2026-10-28-c357e2dde127</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>वेरिफ़िकेशन के तरीके के हिसाब से पेज जोड़े (World ID आदि)</description>
+    </item>
+    <item>
+      <title>बंद हो चुकी सेवाओं के क़ब्रिस्तान का पेज जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/graveyard/</link>
+      <guid isPermaLink="false">news-2026-10-28-b328c947aa27</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>बंद हो चुकी सेवाओं के क़ब्रिस्तान का पेज जोड़ा</description>
+    </item>
+    <item>
+      <title>FheID (Privasea) जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/fheid/</link>
+      <guid isPermaLink="false">news-2026-10-26-2a54b45f0d2b</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>FheID (Privasea) जोड़ा: इंसान होने का सबूत देने पर एयरड्रॉप और इनाम (जैसे कैंपेन “स्टार”)</description>
+    </item>
+    <item>
+      <title>RewardMe जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/rewardme/</link>
+      <guid isPermaLink="false">news-2026-10-26-0fbf81813e38</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>RewardMe जोड़ा: ईमेल रसीदों से मिला ज़्यादा से ज़्यादा 5% कैशबैक (Reward Dollars / MDT क्रिप्टो)</description>
+    </item>
+    <item>
+      <title>Idena (iDNA) जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/idena/</link>
+      <guid isPermaLink="false">news-2026-10-26-658e8ad558a9</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Idena (iDNA) जोड़ा: iDNA (नोड चलते रहने तक माइनिंग इनाम, और वैलिडेशन इनाम)</description>
+    </item>
+    <item>
+      <title>Billions जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/billions/</link>
+      <guid isPermaLink="false">news-2026-10-26-88a37a797bf6</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Billions जोड़ा: Power पॉइंट (वेरिफ़िकेशन, दोस्तों को रेफ़र करने और भागीदारी पर)</description>
+    </item>
+    <item>
+      <title>Humad (World App) जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/humad/</link>
+      <guid isPermaLink="false">news-2026-10-26-0692de69d675</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Humad (World App) जोड़ा: विज्ञापन टैप करने और सवालों के जवाब देने पर पॉइंट (1,500 pt = ¥150 से गिफ़्ट कार्ड)</description>
+    </item>
+    <item>
+      <title>साइट का नाम बदलकर Free Lunch Lab किया</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/</link>
+      <guid isPermaLink="false">news-2026-10-25-931046bbf5bf</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description>साइट का नाम बदलकर Free Lunch Lab किया</description>
+    </item>
+    <item>
+      <title>जर्मन संस्करण जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/de/</link>
+      <guid isPermaLink="false">news-2026-10-25-ba9de3fc0594</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description>जर्मन संस्करण जोड़ा</description>
+    </item>
+    <item>
+      <title>WowApp जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/wowapp/</link>
+      <guid isPermaLink="false">news-2026-10-24-25902ab49093</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>WowApp जोड़ा: रोज़ के इस्तेमाल, गेम, शॉपिंग आदि पर थोड़े इनाम</description>
+    </item>
+    <item>
+      <title>Gradido जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/gradido/</link>
+      <guid isPermaLink="false">news-2026-10-24-54eca34322df</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Gradido जोड़ा: जनहित के हर घंटे के काम पर 20 GDD (महीने में ज़्यादा से ज़्यादा 1,000 GDD)</description>
+    </item>
+    <item>
+      <title>Ubiquitus जोड़ा (सिर्फ़ अमेरिकी निवासियों के लिए)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/ubiquitus/</link>
+      <guid isPermaLink="false">news-2026-10-24-b24b36b557b5</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Ubiquitus जोड़ा (सिर्फ़ अमेरिकी निवासियों के लिए): हर महीने की 1 तारीख़ को बराबर बँटी थोड़ी नकद रकम (Venmo)</description>
+    </item>
+    <item>
+      <title>AI-DAC (World App) जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/aidac/</link>
+      <guid isPermaLink="false">news-2026-10-24-4921102e0ca6</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>AI-DAC (World App) जोड़ा: DAC टोकन में UBI</description>
+    </item>
+    <item>
+      <title>UBI संगठनों और प्रोजेक्ट का पेज जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/organizations/</link>
+      <guid isPermaLink="false">news-2026-10-24-78537084dfe0</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>UBI संगठनों और प्रोजेक्ट का पेज जोड़ा</description>
+    </item>
+    <item>
+      <title>AXO (World App) जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/axo/</link>
+      <guid isPermaLink="false">news-2026-10-24-7362639a17b9</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>AXO (World App) जोड़ा: हर दिन AXO टोकन</description>
+    </item>
+    <item>
+      <title>ORO (World App) जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/oro/</link>
+      <guid isPermaLink="false">news-2026-10-24-b4662b082934</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>ORO (World App) जोड़ा: हर दिन ORO टोकन</description>
+    </item>
+    <item>
+      <title>Dotare जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/dotare/</link>
+      <guid isPermaLink="false">news-2026-10-24-939248cbb938</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Dotare जोड़ा: चुने जाने पर एक साल तक हर महीने 10 ADA (2027 साइकिल)</description>
+    </item>
+    <item>
+      <title>Palai जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/palai/</link>
+      <guid isPermaLink="false">news-2026-10-24-d4eddf8ebfaf</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Palai जोड़ा: हर दिन Palai (¶) में बेसिक इनकम</description>
+    </item>
+    <item>
+      <title>Circles (Gnosis App) जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/circles/</link>
+      <guid isPermaLink="false">news-2026-10-23-10a632a2309b</guid>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Circles (Gnosis App) जोड़ा: हर घंटे 1 CRC (रोज़ 24 CRC)</description>
+    </item>
+    <item>
+      <title>Ğ1 जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/g1/</link>
+      <guid isPermaLink="false">news-2026-10-23-295f2bda3856</guid>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Ğ1 जोड़ा: सदस्य बनने पर हर दिन Ğ1 (यूनिवर्सल डिविडेंड)</description>
+    </item>
+    <item>
+      <title>Mein Grundeinkommen जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/meingrundeinkommen/</link>
+      <guid isPermaLink="false">news-2026-10-21-c9767b251f58</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Mein Grundeinkommen जोड़ा: जीतने पर एक साल तक हर महीने €1,000</description>
+    </item>
+    <item>
+      <title>Trima जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/trima/</link>
+      <guid isPermaLink="false">news-2026-10-09-8ba534d6885d</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Trima जोड़ा: 5,000 माइल + चलने-फिरने और कदमों पर माइल</description>
+    </item>
+    <item>
+      <title>InterLink जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/interlink/</link>
+      <guid isPermaLink="false">news-2026-10-09-1ffdfd948a65</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>InterLink जोड़ा: हर दिन ITLG टोकन</description>
+    </item>
+    <item>
+      <title>टॉप 3 सुझाव और भरोसे के संकेत जोड़े</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/</link>
+      <guid isPermaLink="false">news-2026-10-09-34710bc95676</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>टॉप 3 सुझाव और भरोसे के संकेत जोड़े</description>
+    </item>
+    <item>
+      <title>WAVEE को “ग्लोबल” किया</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/wavee/</link>
+      <guid isPermaLink="false">news-2026-10-09-07d980dc2303</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>WAVEE को “ग्लोबल” किया: हर बार नौकरी मिलने पर मैचिंग इनाम</description>
+    </item>
+    <item>
+      <title>Delta Kim जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/deltakim/</link>
+      <guid isPermaLink="false">news-2026-10-09-af5770ffc547</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Delta Kim जोड़ा: हर दिन KIM</description>
+    </item>
+    <item>
+      <title>Pi Network जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/pinetwork/</link>
+      <guid isPermaLink="false">news-2026-10-09-d778d43c9bb4</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Pi Network जोड़ा: हर दिन PI</description>
+    </item>
+    <item>
+      <title>Pawns.app जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/pawns/</link>
+      <guid isPermaLink="false">news-2026-10-09-70ce222eb78d</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Pawns.app जोड़ा: शेयर किए गए ट्रैफ़िक के बदले नकद</description>
+    </item>
+    <item>
+      <title>Sweatcoin जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/sweatcoin/</link>
+      <guid isPermaLink="false">news-2026-10-09-4693044b4ecf</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Sweatcoin जोड़ा: हर 1,000 कदम पर 0.95 कॉइन</description>
+    </item>
+    <item>
+      <title>साइट का नया डिज़ाइन</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/</link>
+      <guid isPermaLink="false">news-2026-10-08-4b2a5e1d78c3</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>साइट का नया डिज़ाइन</description>
+    </item>
+    <item>
+      <title>Honeygain जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/honeygain/</link>
+      <guid isPermaLink="false">news-2026-10-08-29664a2da91c</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Honeygain जोड़ा: शेयर किए गए ट्रैफ़िक के बदले नकद</description>
+    </item>
+    <item>
+      <title>Grass जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/grass/</link>
+      <guid isPermaLink="false">news-2026-10-08-af7e925cfb34</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Grass जोड़ा: पॉइंट (बाद में GRASS टोकन)</description>
+    </item>
+  </channel>
+</rss>

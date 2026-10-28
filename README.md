@@ -6,6 +6,7 @@ Free Lunch Lab is a curated, multilingual list of apps and projects that pay you
 
 - Live site: https://neteru-nyukin.eltociear.workers.dev
 - X: [@FreeLunchLab](https://x.com/FreeLunchLab)
+- RSS: https://neteru-nyukin.eltociear.workers.dev/feed.xml (and `/{lang}/feed.xml`, generated from the update log)
 - Source and data: this repository is public. Everything on the site is generated from [`src/data.js`](src/data.js), which you can reuse under CC BY 4.0 (see [License](#license)).
 
 ## Affiliate disclosure
