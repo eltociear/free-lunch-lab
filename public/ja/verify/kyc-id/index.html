@@ -515,6 +515,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .verify-line a,.verify-line span{padding:2px 10px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
+.essay{max-width:720px;margin-inline:auto}
+.byline{font-size:.84rem;color:var(--muted)}
+.essay-body{display:grid;gap:16px;margin-top:12px}
+.essay-body p{font-size:1rem;line-height:1.95}
+.essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
+.essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+.op-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.06em;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
+.fnref a{text-decoration:none;font-weight:700;padding-inline:1px}
+.fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
+.fn h2{font-size:1rem;margin-bottom:8px}
+.fn ol{margin:0;padding-inline-start:22px;display:grid;gap:6px;font-size:.84rem;overflow-wrap:anywhere}
+.fnback{text-decoration:none;margin-inline-start:4px}
 .tl{list-style:none;margin:16px 0 0;padding:0;position:relative}
 .tl::before{content:"";position:absolute;top:6px;bottom:6px;inset-inline-start:7px;width:2px;background:linear-gradient(var(--accent),var(--gold));opacity:.6}
 .tl-item{position:relative;padding-inline-start:30px;padding-bottom:22px}
@@ -589,7 +601,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="back"><a class="btn line" href="/ja/#list">← サービス一覧に戻る</a></p>
 </main>
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>2026年10月時点の情報です。投資を勧めるものではありません。</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: GitHubでデータ公開中"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHubでデータ公開中</span></a><span class="dot">不労所得研究所</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>2026年10月時点の情報です。投資を勧めるものではありません。</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: GitHubでデータ公開中"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHubでデータ公開中</span></a><a href="/ja/essays/">エッセイ</a><span class="dot">不労所得研究所</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 <script>
 (function(){

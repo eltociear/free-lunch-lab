@@ -1,7 +1,7 @@
 // 使い方: node build.js  →  public/ に全言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
 const fs = require('fs');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS } = require('./src/data.js');
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
@@ -42,6 +42,12 @@ const orgAbs = l => SITE_URL + orgPath(l);
 // 終了したサービスの墓場: /graveyard/ と /{lang}/graveyard/
 const gravePath = l => `${urlPath(l)}graveyard/`;
 const graveAbs = l => SITE_URL + gravePath(l);
+// エッセイ: /essays/ と /essays/{id}/（言語ごとに接頭辞）
+const essaysPath = l => `${urlPath(l)}essays/`;
+const essaysAbs = l => SITE_URL + essaysPath(l);
+const essayPath = (l, e) => `${essaysPath(l)}${e.id}/`;
+const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
+const longDate = (iso, lang) => new Intl.DateTimeFormat(LANG_TAG[lang], { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(iso + 'T00:00:00Z'));
 // ベーシックインカム社会実験の年表: /timeline/ と /{lang}/timeline/
 const tlPath = l => `${urlPath(l)}timeline/`;
 const tlAbs = l => SITE_URL + tlPath(l);
@@ -459,6 +465,18 @@ const DETAIL_CSS = `
 .verify-line a,.verify-line span{padding:2px 10px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
+.essay{max-width:720px;margin-inline:auto}
+.byline{font-size:.84rem;color:var(--muted)}
+.essay-body{display:grid;gap:16px;margin-top:12px}
+.essay-body p{font-size:1rem;line-height:1.95}
+.essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
+.essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+.op-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.06em;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
+.fnref a{text-decoration:none;font-weight:700;padding-inline:1px}
+.fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
+.fn h2{font-size:1rem;margin-bottom:8px}
+.fn ol{margin:0;padding-inline-start:22px;display:grid;gap:6px;font-size:.84rem;overflow-wrap:anywhere}
+.fnback{text-decoration:none;margin-inline-start:4px}
 .tl{list-style:none;margin:16px 0 0;padding:0;position:relative}
 .tl::before{content:"";position:absolute;top:6px;bottom:6px;inset-inline-start:7px;width:2px;background:linear-gradient(var(--accent),var(--gold));opacity:.6}
 .tl-item{position:relative;padding-inline-start:30px;padding-bottom:22px}
@@ -610,7 +628,7 @@ ${alts}
 <div class="wrap">
 ${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 ${script}
 </body>
@@ -648,6 +666,49 @@ ${groups}
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   return shell(lang, { title, desc: L.orgsDesc, hrefFor: orgAbs, pathFor: orgPath, ld, ogType: 'website', body });
+}
+
+// ---- エッセイ（/essays/{id}/）。[n] は脚注、o は「意見」の段落
+function essayPage(e, lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const ttl = e.title[lang] || e.title.en;
+  const desc = e.desc[lang] || e.desc.en;
+  const url = essayAbs(lang, e);
+  const fn = t => esc(t).replace(/\[(\d+)\]/g, (_, n) => `<sup class="fnref"><a href="#fn-${n}" id="ref-${n}">${n}</a></sup>`);
+  const blocks = (e.blocks[lang] || e.blocks.en).map(([k, t]) => k === 'h' ? `<h2>${esc(t)}</h2>` : k === 'o' ? `<p class="op"><span class="op-tag">${esc(L.essayOpinion)}</span>${fn(t)}</p>` : `<p>${fn(t)}</p>`).join('\n');
+  const sources = e.sources.map(s => `<li id="fn-${s.n}"><a href="${esc(s.url)}" target="_blank" rel="noopener" dir="auto">${esc(s.label)}</a>${s.url2 ? ` · <a href="${esc(s.url2)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(s.url2).hostname.replace(/^www\./, ''))}</a>` : ''} <a class="fnback" href="#ref-${s.n}" aria-label="↩">↩</a></li>`).join('');
+  const ld = [
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: L.essaysTitle, item: essaysAbs(lang) },
+      { '@type': 'ListItem', position: 3, name: ttl, item: url } ] },
+    { '@context': 'https://schema.org', '@type': 'Article', headline: ttl, description: desc, inLanguage: LANG_TAG[lang], datePublished: e.date, dateModified: e.date,
+      author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
+      mainEntityOfPage: url, image: `${SITE_URL}/og/${lang}.png` },
+  ];
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a></li><li aria-current="page">${esc(ttl)}</li></ol></nav>
+<main class="essay">
+<article>
+<header class="orgs-head"><p class="eyebrow">ESSAY</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p></header>
+<div class="essay-body">${blocks}</div>
+<section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
+</article>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  return shell(lang, { title: `${ttl} | ${L.title}`, desc, hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body });
+}
+function essaysIndex(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.essaysTitle, item: essaysAbs(lang) } ] };
+  const items = ESSAYS.map(e => `<li class="org"><div class="org-head"><a class="org-name essay-link" href="${essayPath(lang, e)}">${esc(e.title[lang] || e.title.en)}</a><span class="org-meta"><time datetime="${e.date}">${esc(longDate(e.date, lang))}</time></span></div><p>${esc(e.desc[lang] || e.desc.en)}</p></li>`).join('');
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.essaysTitle)}</li></ol></nav>
+<main class="orgs"><header class="orgs-head"><p class="eyebrow">ESSAYS</p><h1>${esc(L.essaysTitle)}</h1></header><ul class="org-list">${items}</ul>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p></main>`;
+  return shell(lang, { title: `${L.essaysTitle} | ${L.title}`, desc: ESSAYS.map(e => e.desc[lang] || e.desc.en).join(' ').slice(0, 160), hrefFor: essaysAbs, pathFor: essaysPath, ld, ogType: 'website', body });
 }
 
 // ---- ベーシックインカム社会実験の年表（/timeline/）。縦のタイムライン（RTLでは左右が反転）
@@ -751,6 +812,13 @@ for (const lang of LANGS) {
   const gdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'graveyard');
   fs.mkdirSync(gdir, { recursive: true });
   fs.writeFileSync(path.join(gdir, 'index.html'), graveyardPage(lang));
+  const edir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'essays');
+  fs.mkdirSync(edir, { recursive: true });
+  fs.writeFileSync(path.join(edir, 'index.html'), essaysIndex(lang));
+  for (const e of ESSAYS) {
+    fs.mkdirSync(path.join(edir, e.id), { recursive: true });
+    fs.writeFileSync(path.join(edir, e.id, 'index.html'), essayPage(e, lang));
+  }
   const tdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'timeline');
   fs.mkdirSync(tdir, { recursive: true });
   fs.writeFileSync(path.join(tdir, 'index.html'), timelinePage(lang));
@@ -775,7 +843,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);

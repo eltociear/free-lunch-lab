@@ -105,7 +105,7 @@ Full list with descriptions: https://neteru-nyukin.eltociear.workers.dev/organiz
 - `brand/x/` — profile images for the X account and the script that renders them (not deployed)
 - `public/` — build output, deployed to Cloudflare Workers (static assets)
 
-URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/services/{id}/` for each service, `/organizations/` and `/{lang}/organizations/` for organizations, `/verify/{method}/` and `/{lang}/verify/{method}/` for services by verification method (e.g. [World ID](https://neteru-nyukin.eltociear.workers.dev/verify/world-id/)), `/timeline/` and `/{lang}/timeline/` for a timeline of basic income experiments (data in `TIMELINE`; every item cites a source), `/graveyard/` and `/{lang}/graveyard/` for ended services (data in `GRAVE`; only endings confirmed by an official or credible source).
+URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/services/{id}/` for each service, `/organizations/` and `/{lang}/organizations/` for organizations, `/verify/{method}/` and `/{lang}/verify/{method}/` for services by verification method (e.g. [World ID](https://neteru-nyukin.eltociear.workers.dev/verify/world-id/)), `/essays/` and `/essays/{id}/` (with language prefixes) for essays (data in `ESSAYS`), `/timeline/` and `/{lang}/timeline/` for a timeline of basic income experiments (data in `TIMELINE`; every item cites a source), `/graveyard/` and `/{lang}/graveyard/` for ended services (data in `GRAVE`; only endings confirmed by an official or credible source).
 
 ## Build and deploy
 

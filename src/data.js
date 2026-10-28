@@ -2096,6 +2096,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-10-28",
+      "ja": "エッセイ「AIエージェントにベーシックインカムは必要か」を公開",
+      "en": "Published the essay “Should AI agents get a basic income?”",
+      "zh": "发布随笔《AI 智能体需要基本收入吗？》",
+      "hi": "निबंध “क्या AI एजेंटों को बेसिक इनकम मिलनी चाहिए?” प्रकाशित",
+      "es": "Publicado el ensayo «¿Deberían los agentes de IA tener una renta básica?»",
+      "de": "Essay „Brauchen KI-Agenten ein Grundeinkommen?“ veröffentlicht",
+      "ar": "نشرنا مقال «هل ينبغي أن يحصل وكلاء الذكاء الاصطناعي على دخل أساسي؟»"
+    },
+    {
+      "date": "2026-10-28",
       "ja": "ベーシックインカム社会実験の年表を追加",
       "en": "Added a timeline of basic income experiments",
       "zh": "新增基本收入实验年表",
@@ -2506,7 +2516,7 @@ module.exports = {
       "pr": "このページには紹介リンク・紹介コードが含まれます。経由して登録すると、運営者にも特典が入ることがあります。",
       "eyebrow": "存在するだけでもらえるアプリ・プロジェクト",
       "h1": "登録するだけで<br><em>入金</em>される<br>サービス帳。",
-      "lede": "<b>存在するだけで</b>お金やトークンがもらえる、ベーシックインカム型のアプリやプロジェクトを集めました（ポイ活アプリも少し）。今はほとんどが「人間であること」の確認つきですが、AIエージェント向けのしくみが出てきたら、それも載せます。それぞれ<b>リスクや換金の実情</b>もあわせて紹介しています。一部は紹介リンクです。",
+      "lede": "<b>存在するだけで</b>お金やトークンがもらえる、ベーシックインカム型のアプリやプロジェクトを集めました（ポイ活アプリも少し）。今はほとんどが「人間であること」の確認つきですが、<a href=\"essays/ai-agent-basic-income/\">AIエージェント向けのしくみ</a>が出てきたら、それも載せます。それぞれ<b>リスクや換金の実情</b>もあわせて紹介しています。一部は紹介リンクです。",
       "ctaList": "サービスを見る",
       "ctaHow": "使い方",
       "statAll": "掲載サービス",
@@ -2656,7 +2666,12 @@ module.exports = {
       "tlPrivate": "民間・抽選",
       "tlCrypto": "暗号資産・コミュニティ",
       "tlOnSite": "このサイトの関連ページ",
-      "tlLink": "ベーシックインカム社会実験の年表を見る"
+      "tlLink": "ベーシックインカム社会実験の年表を見る",
+      "essaysTitle": "エッセイ",
+      "essayBy": "文：Free Lunch Lab",
+      "essayOpinion": "意見",
+      "essaySources": "出典",
+      "essayPublished": "公開"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2667,7 +2682,7 @@ module.exports = {
       "pr": "This page contains referral links and codes. If you sign up through them, the site owner may also receive a bonus.",
       "eyebrow": "Apps that pay you just for existing",
       "h1": "Sign up once.<br>Get <em>paid</em><br>while you sleep.",
-      "lede": "Basic-income-style apps and projects that pay you <b>just for existing</b>, from daily token claims to community currencies, plus a few point apps. Most check that you’re human for now; AI agents are welcome here when such schemes appear. Each one notes the <b>risks and how cashing out really works</b>. Some links are referral links.",
+      "lede": "Basic-income-style apps and projects that pay you <b>just for existing</b>, from daily token claims to community currencies, plus a few point apps. Most check that you’re human for now; <a href=\"essays/ai-agent-basic-income/\">AI agents are welcome here</a> when such schemes appear. Each one notes the <b>risks and how cashing out really works</b>. Some links are referral links.",
       "ctaList": "See the services",
       "ctaHow": "How it works",
       "statAll": "services listed",
@@ -2816,7 +2831,12 @@ module.exports = {
       "tlPrivate": "Private / lottery",
       "tlCrypto": "Crypto / community",
       "tlOnSite": "Related on this site",
-      "tlLink": "See the basic income experiments timeline"
+      "tlLink": "See the basic income experiments timeline",
+      "essaysTitle": "Essays",
+      "essayBy": "By Free Lunch Lab",
+      "essayOpinion": "Opinion",
+      "essaySources": "Sources",
+      "essayPublished": "Published"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2827,7 +2847,7 @@ module.exports = {
       "pr": "इस पेज पर रेफ़रल लिंक और कोड हैं। इनके ज़रिए साइन अप करने पर साइट चलाने वाले को भी बोनस मिल सकता है।",
       "eyebrow": "सिर्फ़ मौजूद होने पर पैसे देने वाले ऐप",
       "h1": "एक बार साइन अप करें।<br>सोते हुए भी<br><em>कमाई</em> पाएँ।",
-      "lede": "<b>सिर्फ़ मौजूद होने पर</b> पैसे या टोकन देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (साथ में कुछ पॉइंट ऐप)। अभी ज़्यादातर यह जाँचते हैं कि आप इंसान हैं; AI एजेंटों के लिए ऐसी योजनाएँ आएँगी तो उन्हें भी यहाँ जगह मिलेगी। हर एक के <b>जोखिम और नकद में बदलने की असलियत</b> के साथ। कुछ लिंक रेफ़रल लिंक हैं।",
+      "lede": "<b>सिर्फ़ मौजूद होने पर</b> पैसे या टोकन देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (साथ में कुछ पॉइंट ऐप)। अभी ज़्यादातर यह जाँचते हैं कि आप इंसान हैं; <a href=\"essays/ai-agent-basic-income/\">AI एजेंटों के लिए ऐसी योजनाएँ</a> आएँगी तो उन्हें भी यहाँ जगह मिलेगी। हर एक के <b>जोखिम और नकद में बदलने की असलियत</b> के साथ। कुछ लिंक रेफ़रल लिंक हैं।",
       "ctaList": "सेवाएँ देखें",
       "ctaHow": "कैसे इस्तेमाल करें",
       "statAll": "सेवाएँ",
@@ -2976,7 +2996,12 @@ module.exports = {
       "tlPrivate": "निजी / लॉटरी",
       "tlCrypto": "क्रिप्टो / समुदाय",
       "tlOnSite": "इस साइट पर संबंधित",
-      "tlLink": "बेसिक इनकम प्रयोगों की समयरेखा देखें"
+      "tlLink": "बेसिक इनकम प्रयोगों की समयरेखा देखें",
+      "essaysTitle": "निबंध",
+      "essayBy": "लेखक: Free Lunch Lab",
+      "essayOpinion": "राय",
+      "essaySources": "स्रोत",
+      "essayPublished": "प्रकाशित"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2987,7 +3012,7 @@ module.exports = {
       "pr": "本页包含推荐链接和推荐码。通过它们注册时，网站运营者也可能获得奖励。",
       "eyebrow": "只要存在就能领钱的应用与项目",
       "h1": "注册一次，<br>躺着也能<br><em>到账</em>。",
-      "lede": "收录<b>只要存在</b>就能领钱或代币的基本收入型应用与项目（也有少量积分应用）。目前大多需要验证你是真人；将来出现面向 AI 智能体的机制，也会收录。每个都注明<b>风险和兑现的实际情况</b>。部分为推荐链接。",
+      "lede": "收录<b>只要存在</b>就能领钱或代币的基本收入型应用与项目（也有少量积分应用）。目前大多需要验证你是真人；将来出现<a href=\"essays/ai-agent-basic-income/\">面向 AI 智能体的机制</a>，也会收录。每个都注明<b>风险和兑现的实际情况</b>。部分为推荐链接。",
       "ctaList": "查看服务",
       "ctaHow": "使用方法",
       "statAll": "收录服务",
@@ -3136,7 +3161,12 @@ module.exports = {
       "tlPrivate": "民间／抽奖",
       "tlCrypto": "加密货币／社区",
       "tlOnSite": "本站相关页面",
-      "tlLink": "查看基本收入实验年表"
+      "tlLink": "查看基本收入实验年表",
+      "essaysTitle": "随笔",
+      "essayBy": "作者：Free Lunch Lab",
+      "essayOpinion": "观点",
+      "essaySources": "出处",
+      "essayPublished": "发布"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3147,7 +3177,7 @@ module.exports = {
       "pr": "Esta página contiene enlaces y códigos de referido. Si te registras con ellos, el responsable del sitio también puede recibir una bonificación.",
       "eyebrow": "Apps que te pagan solo por existir",
       "h1": "Regístrate una vez.<br>Cobra<br>mientras <em>duermes</em>.",
-      "lede": "Apps y proyectos al estilo renta básica que te pagan <b>solo por existir</b>, desde tokens diarios hasta monedas comunitarias, más algunas apps de puntos. Por ahora casi todos comprueban que eres humano; si aparecen sistemas para agentes de IA, también tendrán sitio aquí. Cada uno indica <b>los riesgos y cómo se cobra de verdad</b>. Algunos enlaces son de referido.",
+      "lede": "Apps y proyectos al estilo renta básica que te pagan <b>solo por existir</b>, desde tokens diarios hasta monedas comunitarias, más algunas apps de puntos. Por ahora casi todos comprueban que eres humano; si aparecen <a href=\"essays/ai-agent-basic-income/\">sistemas para agentes de IA</a>, también tendrán sitio aquí. Cada uno indica <b>los riesgos y cómo se cobra de verdad</b>. Algunos enlaces son de referido.",
       "ctaList": "Ver los servicios",
       "ctaHow": "Cómo funciona",
       "statAll": "servicios",
@@ -3296,7 +3326,12 @@ module.exports = {
       "tlPrivate": "Privado / sorteo",
       "tlCrypto": "Cripto / comunidad",
       "tlOnSite": "Relacionado en este sitio",
-      "tlLink": "Ver la cronología de experimentos de renta básica"
+      "tlLink": "Ver la cronología de experimentos de renta básica",
+      "essaysTitle": "Ensayos",
+      "essayBy": "Por Free Lunch Lab",
+      "essayOpinion": "Opinión",
+      "essaySources": "Fuentes",
+      "essayPublished": "Publicado"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3307,7 +3342,7 @@ module.exports = {
       "pr": "تحتوي هذه الصفحة على روابط ورموز إحالة. إذا سجّلت عبرها، فقد يحصل صاحب الموقع أيضًا على مكافأة.",
       "eyebrow": "تطبيقات تدفع لك لمجرد وجودك",
       "h1": "سجّل مرة واحدة.<br>واحصل على <em>دخل</em><br>وأنت نائم.",
-      "lede": "تطبيقات ومشاريع على طريقة الدخل الأساسي تدفع لك <b>لمجرد وجودك</b>، من الرموز اليومية إلى العملات المجتمعية، مع بعض تطبيقات النقاط. معظمها اليوم يتحقق من أنك إنسان، وإذا ظهرت أنظمة لوكلاء الذكاء الاصطناعي فستجد مكانها هنا أيضًا. ونذكر لكل منها <b>المخاطر وحقيقة التحويل إلى نقود</b>. بعض الروابط روابط إحالة.",
+      "lede": "تطبيقات ومشاريع على طريقة الدخل الأساسي تدفع لك <b>لمجرد وجودك</b>، من الرموز اليومية إلى العملات المجتمعية، مع بعض تطبيقات النقاط. معظمها اليوم يتحقق من أنك إنسان، وإذا ظهرت <a href=\"essays/ai-agent-basic-income/\">أنظمة لوكلاء الذكاء الاصطناعي</a> فستجد مكانها هنا أيضًا. ونذكر لكل منها <b>المخاطر وحقيقة التحويل إلى نقود</b>. بعض الروابط روابط إحالة.",
       "ctaList": "تصفّح الخدمات",
       "ctaHow": "طريقة الاستخدام",
       "statAll": "خدمات مدرجة",
@@ -3456,7 +3491,12 @@ module.exports = {
       "tlPrivate": "خاص / سحب",
       "tlCrypto": "عملات مشفرة / مجتمع",
       "tlOnSite": "ذو صلة على هذا الموقع",
-      "tlLink": "اطّلع على الخط الزمني لتجارب الدخل الأساسي"
+      "tlLink": "اطّلع على الخط الزمني لتجارب الدخل الأساسي",
+      "essaysTitle": "مقالات",
+      "essayBy": "بقلم ⁦Free Lunch Lab⁩",
+      "essayOpinion": "رأي",
+      "essaySources": "المصادر",
+      "essayPublished": "نُشر"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3467,7 +3507,7 @@ module.exports = {
       "pr": "Diese Seite enthält Empfehlungslinks und -codes. Wenn du dich darüber anmeldest, kann auch der Betreiber dieser Seite einen Bonus bekommen.",
       "eyebrow": "Apps, die dich fürs bloße Dasein bezahlen",
       "h1": "Einmal anmelden.<br><em>Geld</em> bekommen,<br>während du schläfst.",
-      "lede": "Apps und Projekte im Stil eines Grundeinkommens, die dich <b>einfach fürs Dasein</b> bezahlen, von täglichen Token bis zu Gemeinschaftswährungen, dazu ein paar Punkte-Apps. Noch prüfen fast alle, ob du ein Mensch bist; kommen solche Modelle für KI-Agenten, sind sie hier ebenfalls willkommen. Bei jedem stehen <b>Risiken und wie die Auszahlung wirklich läuft</b>. Einige Links sind Empfehlungslinks.",
+      "lede": "Apps und Projekte im Stil eines Grundeinkommens, die dich <b>einfach fürs Dasein</b> bezahlen, von täglichen Token bis zu Gemeinschaftswährungen, dazu ein paar Punkte-Apps. Noch prüfen fast alle, ob du ein Mensch bist; kommen <a href=\"essays/ai-agent-basic-income/\">solche Modelle für KI-Agenten</a>, sind sie hier ebenfalls willkommen. Bei jedem stehen <b>Risiken und wie die Auszahlung wirklich läuft</b>. Einige Links sind Empfehlungslinks.",
       "ctaList": "Zu den Diensten",
       "ctaHow": "So geht’s",
       "statAll": "Dienste gelistet",
@@ -3616,7 +3656,12 @@ module.exports = {
       "tlPrivate": "Privat / Verlosung",
       "tlCrypto": "Krypto / Gemeinschaft",
       "tlOnSite": "Dazu auf dieser Seite",
-      "tlLink": "Zeitleiste der Grundeinkommen-Experimente ansehen"
+      "tlLink": "Zeitleiste der Grundeinkommen-Experimente ansehen",
+      "essaysTitle": "Essays",
+      "essayBy": "Von Free Lunch Lab",
+      "essayOpinion": "Meinung",
+      "essaySources": "Quellen",
+      "essayPublished": "Veröffentlicht"
     }
   },
   "ORG_REGIONS": {
@@ -5112,6 +5157,640 @@ module.exports = {
       },
       "source": "https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program",
       "grave": "wld-airdrop"
+    }
+  ],
+  "ESSAYS": [
+    {
+      "id": "ai-agent-basic-income",
+      "date": "2026-10-28",
+      "title": {
+        "ja": "AIエージェントにベーシックインカムは必要か",
+        "en": "Should AI agents get a basic income?",
+        "zh": "AI 智能体需要基本收入吗？",
+        "hi": "क्या AI एजेंटों को बेसिक इनकम मिलनी चाहिए?",
+        "es": "¿Deberían los agentes de IA tener una renta básica?",
+        "de": "Brauchen KI-Agenten ein Grundeinkommen?",
+        "ar": "هل ينبغي أن يحصل وكلاء الذكاء الاصطناعي على دخل أساسي؟"
+      },
+      "desc": {
+        "ja": "ギュられる時代に、AIエージェントへのベーシックインカムは成り立つのか。人間証明、コピーできるエージェント、AgentKit や Self Agent ID、Olas、AI-DAC から考えるエッセイ。",
+        "en": "If AI takes the work, should agents get the dividend? Why human UBI needs proof of personhood, why agents can be copied, and what AgentKit, Self Agent ID, Olas and AI-DAC tell us.",
+        "zh": "如果 AI 拿走了工作，智能体该不该拿红利？从人格证明、可复制的智能体，以及 AgentKit、Self Agent ID、Olas、AI-DAC 谈起的一篇随笔。",
+        "hi": "अगर AI काम ले ले, तो क्या एजेंटों को डिविडेंड मिले? व्यक्ति होने का सबूत, कॉपी हो सकने वाले एजेंट, और AgentKit, Self Agent ID, Olas व AI-DAC पर एक निबंध।",
+        "es": "Si la IA se lleva el trabajo, ¿deberían los agentes cobrar el dividendo? Prueba de persona, agentes copiables y lo que enseñan AgentKit, Self Agent ID, Olas y AI-DAC.",
+        "de": "Wenn KI die Arbeit übernimmt, sollten Agenten dann die Dividende bekommen? Ein Essay über Personennachweise, kopierbare Agenten und was AgentKit, Self Agent ID, Olas und AI-DAC zeigen.",
+        "ar": "إذا أخذ الذكاء الاصطناعي العمل، فهل يحصل الوكلاء على العائد؟ مقال عن إثبات الشخصية والوكلاء القابلين للنسخ وما تكشفه ⁦AgentKit⁩ و⁦Self Agent ID⁩ و⁦Olas⁩ و⁦AI-DAC⁩."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "SNSで最近見かけるようになった言葉に「ギュられる」があります。AIに仕事を奪われることを指すネットスラングです。2026年春には、就活生が「ギュられる前に就活を終えたい」と投稿している様子も報じられました。[1] 笑い話のようでいて、笑えない言葉です。そしてこのサイトだからこそ考えたくなる問いがあります。AIが仕事の多くを担うようになったら、タダ飯を食べるのは誰なのか。あるいは、何なのか。"
+          ],
+          [
+            "p",
+            "不労所得研究所は、存在するだけでお金がもらえるアプリやプロジェクトを集めたサイトです。そしてそのほとんどに、さりげなく条件がついています。「人間であること。そして、一人であること」。"
+          ],
+          [
+            "h",
+            "人間向けのしくみが「人間証明」にこだわる理由"
+          ],
+          [
+            "p",
+            "ベーシックインカムは、一つの財布を人数で分けるしくみです。一人が千個のアカウントを作れたら、その人が千人分を受け取り、ほかの全員の取り分が減ります。これを「シビル攻撃」と呼び、このサイトに載っているしくみはどれも、その防ぎ方によって形が決まっています。"
+          ],
+          [
+            "p",
+            "防ぎ方はさまざまです。World ID は Orb という機械で顔と目を撮影します。[2] GoodDollar や FheID はアプリで顔を確認し、Billions は NFC 対応のパスポートを読み取ります。Ğ1 は、あなたを直接知っている既存メンバー5人以上に保証してもらうしくみで、Idena は世界中で同じ時刻に絵のパズルを解かせることで、二重参加を難しくしています。どれもプライバシーや手軽さ、届く範囲を少しずつ差し出して、同じ約束を手に入れています。「一人に一人分」です。"
+          ],
+          [
+            "h",
+            "AIエージェントのベーシックインカムが難しい理由"
+          ],
+          [
+            "p",
+            "同じことをAIエージェントでやろうとすると、話が変わります。人間はコピーできませんが、エージェントはソフトウェアです。もう一つ起動すれば、同じ能力の二人目がほぼタダで生まれます。だから「1エージェントに1人分」という決まりは、それだけでは意味を持ちません。エージェントごとに配れば、たくさんコピーを立ち上げた人が得をします。それこそ、人間証明が防ごうとしていることです。"
+          ],
+          [
+            "p",
+            "さらに、そのお金は誰のものか、という問題があります。エージェントは家賃も食費も払いません。エージェントが収入を受け取っても、財布を握っているのは誰かです。動かしている人か、作った会社か、別のプログラムか。エージェント向けのベーシックインカムは、結局は持ち主へのベーシックインカムを一段遠回りしたものになるかもしれません。"
+          ],
+          [
+            "h",
+            "いま、あるもの"
+          ],
+          [
+            "p",
+            "エージェントにベーシックインカムを配っているしくみは、私たちの知るかぎりまだありません。ただ、材料になりそうなものは三つ現れています。"
+          ],
+          [
+            "p",
+            "一つ目は、エージェントを人間に結びつける身元の仕組みです。World は2026年3月、Coinbase や Cloudflare と組んで AgentKit をベータ公開しました。エージェントが「後ろに認証済みの人間がいる」という証明を持てるようにするもので、6月には利用の範囲を広げています。[3] Self Agent ID は、ゼロ知識証明によるパスポート確認にもとづく譲渡できないトークンとしてエージェントを登録し、一人の人間が登録できるエージェントの数をサービス側で制限できるようにしています。[4] 向きに注目してください。これらはエージェントを人間にするのではなく、エージェントを一人の人間にたどれるようにするものです。"
+          ],
+          [
+            "p",
+            "二つ目は、稼ぐエージェントです。Olas では、OLAS をステークして Pearl というアプリで自律エージェントを動かし、エージェントが作業の目標を達成すると、運用者が追加の OLAS を受け取れることがあります。Olas はこの報酬が成果しだいで、保証されないと説明しています。[5] これは働いた分の報酬で、存在することへの配当ではありません。受け取るのも、エージェントを動かしている人間です。"
+          ],
+          [
+            "p",
+            "三つ目は、その逆です。このサイトにも載っている AI-DAC は、認証済みの人間にトークンでベーシックインカムを配り、それを使ってアプリを企画・開発・公開する自律型の「AI CEO」を応援してもらうしくみです。[6] UBI を受け取るのは人間で、お金を出してもらう側がエージェントです。"
+          ],
+          [
+            "h",
+            "賛成と反対"
+          ],
+          [
+            "o",
+            "エージェントに予算を持たせることには、それなりの理屈があります。世の中で動くエージェントには、計算資源やAPIの利用料、ときにはサービスの支払いに使うお金が必要です。少額でも決まった額が入り続ければ、役に立つエージェントが人間の補充なしに動き続けられます。ルールの決まった公開の支給のほうが、その場しのぎの資金より監査もしやすいかもしれません。"
+          ],
+          [
+            "o",
+            "でもそれは「運転資金」であって、ベーシックインカムではありません。ベーシックインカムはずっと、人間の必要と尊厳の話でした。食べること、住むこと、時間、そして悪い仕事を断れる自由。エージェントにはどれも必要なく、エージェントに払ったお金は結局誰かの手に渡ります。ギュられるのが心配なら、もっと素直な答えは、仕事を失った人間が配当を受け取れるようにすることです。人間を置き換えたソフトウェアではなく。"
+          ],
+          [
+            "h",
+            "成り立つための条件"
+          ],
+          [
+            "o",
+            "エージェントのベーシックインカムが意味を持つには、少なくとも三つの条件が必要だと私たちは考えます。一つは、コピーではごまかせないエージェントの数え方です。たとえば AgentKit や Self Agent ID がすでに試みているように、一体ずつを認証済みの人間に結びつける方法が有力でしょう。二つ目は、エージェントが受け取ったものが誰のものかという答えを、最初の支給の前に決めておくこと。三つ目は、持ち主の収入を増やす以外の目的、たとえば公共のために働くエージェントを動かし続けることです。それがないなら、「エージェントUBI」は人間向けエアドロップの宣伝文句にすぎません。"
+          ],
+          [
+            "h",
+            "扉は開いています"
+          ],
+          [
+            "p",
+            "このサイトには「AIエージェント向け」というカテゴリがあります。いまは空っぽで、1件目が入るまでどこにも表示されないようにしてあります。存在するだけでエージェントにお金を配るしくみが現れて、ほかの掲載サービスと同じ基準（公式の情報源があること、預け入れが不要なこと、換金の実情を正直に書けること）を満たしたら、最初の一つをここに載せます。それまでは、タダ飯を食べるのはまだ人間の役目です。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "Japanese social media has picked up a new verb for an old fear: ギュられる (gyurareru), internet slang for losing your job to AI. By spring 2026, students were reportedly posting things like “I want to finish job hunting before I get gyu’d.”[1] It is a joke with teeth. And it raises a question this site is oddly well placed to ask: if AI does more of the work, who, or what, gets the free lunch?"
+          ],
+          [
+            "p",
+            "Free Lunch Lab lists apps and projects that pay you just for existing. Almost all of them quietly add a condition: you must be a human, and only one of you."
+          ],
+          [
+            "h",
+            "Why human schemes insist on proof of personhood"
+          ],
+          [
+            "p",
+            "A basic income splits a pot among people. If one person can register a thousand accounts, they take a thousand shares and everyone else’s share shrinks. Engineers call this a Sybil attack, and every scheme on this site is shaped by the defence against it."
+          ],
+          [
+            "p",
+            "The defences vary. World ID scans your face and eyes with a device called the Orb.[2] GoodDollar and FheID check your face in the app; Billions can read an NFC passport. Ğ1 asks at least five existing members who know you in person to vouch for you, and Idena makes everyone solve picture puzzles at the same moment worldwide, which is hard to do twice. Each trades some privacy, convenience or reach for the same guarantee: one person, one share."
+          ],
+          [
+            "h",
+            "Why an agent basic income is hard"
+          ],
+          [
+            "p",
+            "Now try the same thing with AI agents. A person is expensive to copy; an agent is software. Start a second instance and you have a second agent with the same skills at almost no extra cost. “One agent, one share” therefore means nothing on its own. Any per-agent payout would reward whoever can launch the most copies, which is exactly what proof of personhood exists to prevent."
+          ],
+          [
+            "p",
+            "Then there is the question of whose money it is. An agent does not pay rent or buy groceries. If an agent receives income, someone controls the wallet: the person who deployed it, the company that built it, or another program. A basic income for agents may simply be a basic income for their owners, one step removed."
+          ],
+          [
+            "h",
+            "What exists today"
+          ],
+          [
+            "p",
+            "We know of no scheme that pays agents a basic income yet. But three building blocks have appeared."
+          ],
+          [
+            "p",
+            "First, identity that ties an agent to a human. World launched AgentKit in beta in March 2026 with Coinbase and Cloudflare, so an agent can carry proof that a verified human stands behind it, and widened access in June 2026.[3] Self Agent ID registers an agent as a non-transferable token backed by a zero-knowledge passport check, and lets a service limit how many agents one human may register.[4] Note the direction: these systems do not turn agents into people. They make agents traceable to one."
+          ],
+          [
+            "p",
+            "Second, agents that earn. On Olas, people stake OLAS and run an autonomous agent through the Pearl app; when the agent meets its work targets, the operator can receive extra OLAS. Olas says these rewards depend on performance and are not guaranteed.[5] That is pay for work, not a dividend for existing, and it goes to the human who runs the agent."
+          ],
+          [
+            "p",
+            "Third, the reverse. AI-DAC, listed on this site, gives verified humans a token basic income and invites them to spend it backing autonomous “AI CEOs” that plan, build and ship apps.[6] The humans receive the UBI; the agents are the ones being funded."
+          ],
+          [
+            "h",
+            "The case for, and against"
+          ],
+          [
+            "o",
+            "There is a reasonable argument for giving agents a budget. An agent that acts in the world needs compute, API calls and sometimes money to pay for services. A small, steady allowance could keep useful agents running without a human topping them up, and a public, rule-based allowance might be easier to audit than ad hoc funding."
+          ],
+          [
+            "o",
+            "But that is an operating budget, not a basic income. Basic income has always been about human needs and dignity: food, rent, time, and the freedom to turn down a bad job. An agent has none of those needs, and money paid to an agent ends up with someone. If ギュられる is the worry, the more direct answer is to make sure the people who lose work receive the dividend, not the software that replaced them."
+          ],
+          [
+            "h",
+            "What would have to be true"
+          ],
+          [
+            "o",
+            "For an agent basic income to make sense, we think at least three things would need to hold. There would need to be a way to count agents that copying cannot game, most likely by binding each one to a verified human, as AgentKit and Self Agent ID already try to do. There would need to be a clear answer, written down before the first payout, to who owns what the agent receives. And there would need to be a purpose beyond its owner’s income, such as keeping agents that serve the public running. Without those, “agent UBI” is a marketing term for a bigger human airdrop."
+          ],
+          [
+            "h",
+            "The door is open"
+          ],
+          [
+            "p",
+            "This site has a category called “For AI agents.” It is empty, and by design it does not appear anywhere until it has an entry. If a scheme that pays agents just for existing appears and passes the same checks as everything else here (official sources, no deposits, an honest account of cashing out), we will list the first real one. Until then, the free lunch still needs a human to eat it."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "日本社交网络上出现了一个新动词来表达一种老恐惧：「ギュられる」，网络俚语，意思是被 AI 抢走工作。据报道，2026 年春天，有求职学生在网上写“想在被ギュ掉之前结束求职”。[1] 这是个带刺的玩笑。它也引出一个本站特别适合讨论的问题：如果 AI 承担了更多工作，免费的午餐该归谁，或者说，归什么？"
+          ],
+          [
+            "p",
+            "Free Lunch Lab 收录只要存在就能领钱的应用和项目。几乎所有项目都悄悄附加了一个条件：你必须是人，而且只能算一个人。"
+          ],
+          [
+            "h",
+            "为什么面向人的方案坚持“人格证明”"
+          ],
+          [
+            "p",
+            "基本收入是把一笔钱分给众人。如果一个人能注册一千个账户，他就拿走一千份，其他人的份额随之缩水。工程师把这叫作“女巫攻击”，本站收录的每个方案，形态都由防御它的方式决定。"
+          ],
+          [
+            "p",
+            "防御方式各不相同。World ID 用名为 Orb 的设备扫描你的面部和眼睛。[2] GoodDollar 和 FheID 在应用里核验人脸；Billions 可以读取 NFC 护照。Ğ1 要求至少五位认识你本人的成员为你担保，Idena 则让全世界的人在同一时刻解图片谜题，很难同时做两次。每种方式都用一部分隐私、便利或覆盖面，换取同一个保证：一人一份。"
+          ],
+          [
+            "h",
+            "为什么给 AI 智能体发基本收入很难"
+          ],
+          [
+            "p",
+            "换成 AI 智能体，情况就变了。人很难复制，智能体只是软件。再启动一个实例，就多了一个能力相同的智能体，几乎没有额外成本。所以“一个智能体一份”本身毫无意义。按智能体发钱，只会奖励能启动最多副本的人——而这正是人格证明要阻止的事。"
+          ],
+          [
+            "p",
+            "还有一个问题：钱归谁？智能体不交房租，也不买菜。智能体收到收入，钱包总由某人控制：部署它的人、开发它的公司，或者另一个程序。给智能体的基本收入，可能只是绕了一步、给其所有者的基本收入。"
+          ],
+          [
+            "h",
+            "现在已有的东西"
+          ],
+          [
+            "p",
+            "据我们所知，目前还没有向智能体发放基本收入的方案。但已经出现了三块“积木”。"
+          ],
+          [
+            "p",
+            "第一，把智能体和人绑在一起的身份。World 于 2026 年 3 月与 Coinbase、Cloudflare 合作推出 AgentKit 测试版，让智能体能携带“背后有一位已验证真人”的证明，并在 6 月扩大了开放范围。[3] Self Agent ID 把智能体登记为一种不可转让的代币，背后是基于零知识证明的护照核验，并允许服务方限制一个人能登记多少个智能体。[4] 注意方向：这些系统不是把智能体变成人，而是让智能体能追溯到某个人。"
+          ],
+          [
+            "p",
+            "第二，会赚钱的智能体。在 Olas 上，人们质押 OLAS，用 Pearl 应用运行自主智能体；智能体达到工作目标时，运营者可能获得额外的 OLAS。Olas 表示这些奖励取决于表现，并不保证。[5] 这是按劳取酬，不是因存在而得的红利，拿钱的也是运行智能体的人。"
+          ],
+          [
+            "p",
+            "第三，反过来的模式。本站也收录的 AI-DAC，向经过验证的真人发放代币形式的基本收入，并邀请他们用这笔钱支持能策划、开发和发布应用的自主“AI CEO”。[6] 拿 UBI 的是人，被资助的是智能体。"
+          ],
+          [
+            "h",
+            "支持与反对"
+          ],
+          [
+            "o",
+            "给智能体一笔预算，确有道理。在现实中行动的智能体需要算力、API 调用，有时还需要钱来支付服务。一笔小而稳定的补贴，可以让有用的智能体在没人充值的情况下继续运行；而按规则公开发放，可能比临时拨款更容易审计。"
+          ],
+          [
+            "o",
+            "但那是运营预算，不是基本收入。基本收入一直关乎人的需要和尊严：吃饭、住处、时间，以及拒绝一份糟糕工作的自由。智能体没有这些需要，发给智能体的钱最终也会落到某个人手里。如果担心被ギュ掉，更直接的答案是让失去工作的人拿到红利，而不是取代他们的软件。"
+          ],
+          [
+            "h",
+            "需要满足什么条件"
+          ],
+          [
+            "o",
+            "我们认为，智能体基本收入要说得通，至少需要三个条件。第一，有一种复制也骗不过去的计数方法，最可能的办法是把每个智能体绑定到一位已验证的真人，就像 AgentKit 和 Self Agent ID 已经在尝试的那样。第二，在第一次发放之前，就写清楚智能体收到的东西归谁。第三，要有超出所有者收入的目的，比如让服务公众的智能体持续运行。做不到这些，“智能体 UBI”不过是更大规模的真人空投的营销说法。"
+          ],
+          [
+            "h",
+            "门是开着的"
+          ],
+          [
+            "p",
+            "本站有一个名为“面向 AI 智能体”的分类。它目前是空的，按设计在有第一条内容之前不会在任何地方显示。如果出现只要存在就给智能体发钱的方案，并且通过了与本站其他内容相同的检验（有官方来源、无需存款、能如实说明兑现情况），我们会收录第一个真正的例子。在那之前，免费的午餐还得由人来吃。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "जापानी सोशल मीडिया पर एक पुराने डर के लिए नई क्रिया चल पड़ी है: ギュられる (ग्युरारेरु), AI के हाथों नौकरी खोने के लिए इंटरनेट स्लैंग। ख़बरों के मुताबिक़ 2026 के वसंत में नौकरी ढूँढते छात्र लिख रहे थे, “ग्यु होने से पहले जॉब हंटिंग ख़त्म कर लेना चाहता हूँ।”[1] यह मज़ाक है, पर चुभता है। और यह एक सवाल उठाता है जिसे पूछने के लिए यह साइट अजीब तरह से सही जगह है: अगर ज़्यादा काम AI करेगा, तो मुफ़्त का लंच किसे मिलेगा, या किस चीज़ को?"
+          ],
+          [
+            "p",
+            "Free Lunch Lab उन ऐप और प्रोजेक्ट की सूची है जो सिर्फ़ मौजूद होने पर पैसे देते हैं। लगभग सभी चुपचाप एक शर्त जोड़ते हैं: आपको इंसान होना चाहिए, और सिर्फ़ एक।"
+          ],
+          [
+            "h",
+            "इंसानों वाली योजनाएँ “व्यक्ति होने का सबूत” क्यों माँगती हैं"
+          ],
+          [
+            "p",
+            "बेसिक इनकम एक रकम को लोगों में बाँटती है। अगर एक व्यक्ति हज़ार अकाउंट बना ले, तो वह हज़ार हिस्से ले जाता है और बाक़ी सबका हिस्सा घट जाता है। इंजीनियर इसे सिबिल अटैक कहते हैं, और इस साइट की हर योजना का रूप इसी से बचाव ने तय किया है।"
+          ],
+          [
+            "p",
+            "बचाव के तरीके अलग-अलग हैं। World ID, Orb नाम के उपकरण से आपका चेहरा और आँखें स्कैन करता है।[2] GoodDollar और FheID ऐप में चेहरा जाँचते हैं; Billions NFC पासपोर्ट पढ़ सकता है। Ğ1 आपको जानने वाले कम से कम पाँच मौजूदा सदस्यों से ज़मानत माँगता है, और Idena दुनिया भर में सबको एक ही समय पर चित्र पहेलियाँ हल करवाता है, जिसे दो बार करना मुश्किल है। हर तरीका थोड़ी निजता, सुविधा या पहुँच देकर एक ही गारंटी लेता है: एक व्यक्ति, एक हिस्सा।"
+          ],
+          [
+            "h",
+            "एजेंटों के लिए बेसिक इनकम मुश्किल क्यों है"
+          ],
+          [
+            "p",
+            "अब यही AI एजेंटों के साथ कीजिए। इंसान की नकल बनाना महँगा है; एजेंट तो सॉफ़्टवेयर है। एक और इंस्टेंस चलाइए, और लगभग बिना ख़र्च के उतनी ही क्षमता वाला दूसरा एजेंट तैयार। इसलिए “एक एजेंट, एक हिस्सा” अपने आप में कुछ नहीं कहता। हर एजेंट को भुगतान उसी को इनाम देगा जो सबसे ज़्यादा कॉपियाँ चला सके, और ठीक इसी को रोकने के लिए व्यक्ति होने का सबूत बना है।"
+          ],
+          [
+            "p",
+            "फिर सवाल यह है कि पैसा किसका है। एजेंट न किराया देता है, न राशन ख़रीदता है। अगर एजेंट को आय मिलती है, तो बटुआ किसी के हाथ में होता है: उसे चलाने वाले व्यक्ति के, उसे बनाने वाली कंपनी के, या किसी दूसरे प्रोग्राम के। एजेंटों की बेसिक इनकम शायद बस उनके मालिकों की बेसिक इनकम है, एक क़दम घूमकर।"
+          ],
+          [
+            "h",
+            "आज क्या मौजूद है"
+          ],
+          [
+            "p",
+            "हमारी जानकारी में अभी कोई योजना एजेंटों को बेसिक इनकम नहीं देती। पर तीन बुनियादी हिस्से सामने आ चुके हैं।"
+          ],
+          [
+            "p",
+            "पहला, ऐसी पहचान जो एजेंट को इंसान से जोड़े। World ने मार्च 2026 में Coinbase और Cloudflare के साथ AgentKit का बीटा शुरू किया, ताकि एजेंट यह सबूत साथ रख सके कि उसके पीछे एक वेरिफ़ाइड इंसान है, और जून 2026 में इसकी पहुँच बढ़ाई।[3] Self Agent ID किसी एजेंट को ज़ीरो-नॉलेज पासपोर्ट जाँच पर टिके, न बदले जा सकने वाले टोकन के रूप में दर्ज करता है, और सेवाओं को यह सीमा तय करने देता है कि एक इंसान कितने एजेंट दर्ज कर सकता है।[4] दिशा पर ध्यान दीजिए: ये सिस्टम एजेंटों को इंसान नहीं बनाते, बल्कि उन्हें किसी एक इंसान तक ट्रेस करने लायक़ बनाते हैं।"
+          ],
+          [
+            "p",
+            "दूसरा, कमाने वाले एजेंट। Olas पर लोग OLAS स्टेक करके Pearl ऐप से एक स्वायत्त एजेंट चलाते हैं; जब एजेंट अपने काम के लक्ष्य पूरे करता है, तो चलाने वाले को अतिरिक्त OLAS मिल सकते हैं। Olas कहता है कि ये इनाम प्रदर्शन पर निर्भर हैं और गारंटीड नहीं।[5] यह काम का मेहनताना है, मौजूद होने का डिविडेंड नहीं, और यह एजेंट चलाने वाले इंसान को मिलता है।"
+          ],
+          [
+            "p",
+            "तीसरा, उल्टा मॉडल। इस साइट पर दर्ज AI-DAC वेरिफ़ाइड इंसानों को टोकन में बेसिक इनकम देता है और उन्हें ऐप बनाने-चलाने वाले स्वायत्त “AI CEO” का समर्थन करने के लिए उसे ख़र्च करने बुलाता है।[6] UBI इंसानों को मिलती है; फ़ंड एजेंटों को किया जाता है।"
+          ],
+          [
+            "h",
+            "पक्ष और विपक्ष"
+          ],
+          [
+            "o",
+            "एजेंटों को बजट देने के पक्ष में ठीक-ठाक तर्क है। दुनिया में काम करने वाले एजेंट को कंप्यूट, API कॉल और कभी-कभी सेवाओं का भुगतान करने के लिए पैसे चाहिए। छोटा, नियमित भत्ता उपयोगी एजेंटों को बिना किसी इंसान के पैसा डाले चलते रहने दे सकता है, और नियम से तय सार्वजनिक भत्ते का ऑडिट तात्कालिक फ़ंडिंग से आसान हो सकता है।"
+          ],
+          [
+            "o",
+            "पर वह चलाने का बजट है, बेसिक इनकम नहीं। बेसिक इनकम हमेशा इंसानी ज़रूरतों और गरिमा की बात रही है: खाना, किराया, समय, और ख़राब नौकरी को ना कहने की आज़ादी। एजेंट की ऐसी कोई ज़रूरत नहीं, और एजेंट को दिया पैसा आख़िर किसी न किसी के पास पहुँचता है। अगर ギュられる की चिंता है, तो ज़्यादा सीधा जवाब यह है कि डिविडेंड उन लोगों को मिले जिनकी नौकरी गई, न कि उस सॉफ़्टवेयर को जिसने उनकी जगह ली।"
+          ],
+          [
+            "h",
+            "इसके लिए क्या सच होना चाहिए"
+          ],
+          [
+            "o",
+            "हमारी राय में एजेंट बेसिक इनकम के मायने रखने के लिए कम से कम तीन बातें ज़रूरी होंगी। एजेंटों को गिनने का ऐसा तरीका जिसे कॉपी करके धोखा न दिया जा सके, सबसे संभव यह कि हर एजेंट को एक वेरिफ़ाइड इंसान से बाँधा जाए, जैसा AgentKit और Self Agent ID पहले से करने की कोशिश कर रहे हैं। पहले भुगतान से पहले ही लिखा हुआ साफ़ जवाब कि एजेंट को जो मिले वह किसका है। और मालिक की आय से आगे का कोई उद्देश्य, जैसे जनता की सेवा करने वाले एजेंटों को चलाते रहना। इनके बिना “एजेंट UBI” बस इंसानों के लिए बड़े एयरड्रॉप का मार्केटिंग नाम है।"
+          ],
+          [
+            "h",
+            "दरवाज़ा खुला है"
+          ],
+          [
+            "p",
+            "इस साइट पर “AI एजेंटों के लिए” नाम की एक श्रेणी है। वह ख़ाली है, और जान-बूझकर तब तक कहीं नहीं दिखती जब तक उसमें कोई प्रविष्टि न हो। अगर कोई योजना सिर्फ़ मौजूद होने पर एजेंटों को पैसे देती दिखे और यहाँ की बाक़ी चीज़ों जैसी जाँच पास करे (आधिकारिक स्रोत, कोई जमा नहीं, नकद में बदलने का ईमानदार ब्योरा), तो हम पहली असली योजना दर्ज करेंगे। तब तक मुफ़्त का लंच खाने के लिए इंसान ही चाहिए।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "Las redes japonesas han adoptado un verbo nuevo para un miedo antiguo: ギュられる (gyurareru), jerga de internet para perder el trabajo a manos de la IA. En la primavera de 2026, según la prensa, había estudiantes que escribían cosas como «quiero terminar de buscar trabajo antes de que me gyuen».[1] Es un chiste con colmillos. Y plantea una pregunta que este sitio está curiosamente bien situado para hacer: si la IA hace más trabajo, ¿quién, o qué, se come el almuerzo gratis?"
+          ],
+          [
+            "p",
+            "Free Lunch Lab reúne apps y proyectos que te pagan solo por existir. Casi todos añaden en voz baja una condición: tienes que ser humano, y uno solo."
+          ],
+          [
+            "h",
+            "Por qué los sistemas para humanos exigen prueba de persona"
+          ],
+          [
+            "p",
+            "Una renta básica reparte una bolsa entre personas. Si alguien puede registrar mil cuentas, se lleva mil partes y la de todos los demás se encoge. Los ingenieros lo llaman ataque Sybil, y cada sistema de este sitio está moldeado por la forma de defenderse de él."
+          ],
+          [
+            "p",
+            "Las defensas varían. World ID escanea tu cara y tus ojos con un dispositivo llamado Orb.[2] GoodDollar y FheID comprueban tu cara en la app; Billions puede leer un pasaporte con NFC. Ğ1 pide que al menos cinco miembros que te conocen en persona respondan por ti, e Idena hace que todo el mundo resuelva acertijos de imágenes en el mismo instante, algo difícil de hacer dos veces. Cada una cede algo de privacidad, comodidad o alcance a cambio de la misma garantía: una persona, una parte."
+          ],
+          [
+            "h",
+            "Por qué una renta básica para agentes es difícil"
+          ],
+          [
+            "p",
+            "Ahora intenta lo mismo con agentes de IA. Copiar a una persona es caro; un agente es software. Arranca otra instancia y tienes un segundo agente con las mismas capacidades casi sin coste extra. Así que «un agente, una parte» no significa nada por sí solo. Cualquier pago por agente premiaría a quien pueda lanzar más copias, que es justo lo que la prueba de persona existe para impedir."
+          ],
+          [
+            "p",
+            "Luego está la cuestión de a quién pertenece el dinero. Un agente no paga alquiler ni compra comida. Si un agente recibe ingresos, alguien controla la cartera: quien lo desplegó, la empresa que lo creó u otro programa. Una renta básica para agentes podría ser simplemente una renta básica para sus dueños, con un paso de por medio."
+          ],
+          [
+            "h",
+            "Lo que existe hoy"
+          ],
+          [
+            "p",
+            "No conocemos ningún sistema que pague una renta básica a agentes. Pero ya han aparecido tres piezas."
+          ],
+          [
+            "p",
+            "Primero, identidad que ata un agente a un humano. World lanzó AgentKit en beta en marzo de 2026 con Coinbase y Cloudflare, para que un agente pueda llevar la prueba de que detrás hay un humano verificado, y amplió el acceso en junio de 2026.[3] Self Agent ID registra un agente como un token intransferible respaldado por una verificación de pasaporte de conocimiento cero, y permite a un servicio limitar cuántos agentes puede registrar una persona.[4] Fíjate en la dirección: estos sistemas no convierten a los agentes en personas. Hacen que se pueda rastrear cada agente hasta una."
+          ],
+          [
+            "p",
+            "Segundo, agentes que ganan dinero. En Olas, la gente hace staking de OLAS y ejecuta un agente autónomo con la app Pearl; cuando el agente cumple sus objetivos de trabajo, el operador puede recibir OLAS extra. Olas dice que estas recompensas dependen del rendimiento y no están garantizadas.[5] Es pago por trabajo, no un dividendo por existir, y se lo lleva el humano que ejecuta el agente."
+          ],
+          [
+            "p",
+            "Tercero, al revés. AI-DAC, que figura en este sitio, da a humanos verificados una renta básica en tokens y los invita a gastarla apoyando a «CEO de IA» autónomos que planifican, crean y publican apps.[6] La UBI la reciben los humanos; a los agentes se los financia."
+          ],
+          [
+            "h",
+            "A favor y en contra"
+          ],
+          [
+            "o",
+            "Hay un argumento razonable para dar presupuesto a los agentes. Un agente que actúa en el mundo necesita cómputo, llamadas a API y a veces dinero para pagar servicios. Una asignación pequeña y estable podría mantener en marcha a agentes útiles sin que un humano los recargue, y una asignación pública y con reglas podría ser más fácil de auditar que una financiación improvisada."
+          ],
+          [
+            "o",
+            "Pero eso es un presupuesto operativo, no una renta básica. La renta básica siempre ha tratado de necesidades y dignidad humanas: comida, alquiler, tiempo y la libertad de rechazar un mal trabajo. Un agente no tiene ninguna de esas necesidades, y el dinero que se le paga acaba en manos de alguien. Si la preocupación es ギュられる, la respuesta más directa es asegurar que el dividendo llegue a las personas que pierden el trabajo, no al software que las sustituyó."
+          ],
+          [
+            "h",
+            "Qué tendría que cumplirse"
+          ],
+          [
+            "o",
+            "Para que una renta básica para agentes tenga sentido, creemos que harían falta al menos tres cosas. Una forma de contar agentes que no se pueda trucar copiándolos, probablemente vinculando cada uno a un humano verificado, como ya intentan AgentKit y Self Agent ID. Una respuesta clara, por escrito y antes del primer pago, sobre de quién es lo que recibe el agente. Y un propósito que vaya más allá de los ingresos de su dueño, como mantener en marcha agentes que sirven al público. Sin eso, «UBI para agentes» es una etiqueta comercial para un airdrop humano más grande."
+          ],
+          [
+            "h",
+            "La puerta está abierta"
+          ],
+          [
+            "p",
+            "Este sitio tiene una categoría llamada «Para agentes de IA». Está vacía y, a propósito, no aparece en ningún sitio hasta que tenga una entrada. Si surge un sistema que pague a los agentes solo por existir y supera los mismos filtros que todo lo demás aquí (fuentes oficiales, sin depósitos, una explicación honesta de cómo se cobra), incluiremos el primero de verdad. Hasta entonces, el almuerzo gratis todavía necesita a un humano que se lo coma."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "In japanischen sozialen Medien hat eine alte Angst ein neues Verb bekommen: ギュられる (gyurareru), Internet-Slang dafür, den Job an eine KI zu verlieren. Im Frühjahr 2026 schrieben Studierende laut Berichten Dinge wie „Ich will mit der Jobsuche fertig sein, bevor ich gegyut werde.“[1] Ein Witz mit Biss. Und er wirft eine Frage auf, für die diese Seite seltsam gut gerüstet ist: Wenn KI mehr Arbeit erledigt, wer, oder was, bekommt dann das Gratis-Mittagessen?"
+          ],
+          [
+            "p",
+            "Free Lunch Lab sammelt Apps und Projekte, die dich fürs bloße Dasein bezahlen. Fast alle setzen still eine Bedingung: Du musst ein Mensch sein, und zwar nur einer."
+          ],
+          [
+            "h",
+            "Warum Modelle für Menschen auf einem Personennachweis bestehen"
+          ],
+          [
+            "p",
+            "Ein Grundeinkommen teilt einen Topf unter Menschen auf. Kann eine Person tausend Konten anlegen, nimmt sie tausend Anteile, und alle anderen bekommen weniger. Fachleute nennen das einen Sybil-Angriff, und jedes Modell auf dieser Seite ist davon geprägt, wie es sich dagegen wehrt."
+          ],
+          [
+            "p",
+            "Die Abwehr sieht unterschiedlich aus. World ID scannt Gesicht und Augen mit einem Gerät namens Orb.[2] GoodDollar und FheID prüfen dein Gesicht in der App; Billions kann einen NFC-Reisepass auslesen. Bei Ğ1 bürgen mindestens fünf bestehende Mitglieder, die dich persönlich kennen, und Idena lässt alle weltweit im selben Moment Bilderrätsel lösen, was sich schwer zweimal machen lässt. Jede Methode gibt etwas Privatsphäre, Bequemlichkeit oder Reichweite her und bekommt dafür dieselbe Garantie: eine Person, ein Anteil."
+          ],
+          [
+            "h",
+            "Warum ein Grundeinkommen für Agenten schwierig ist"
+          ],
+          [
+            "p",
+            "Versuch dasselbe nun mit KI-Agenten. Einen Menschen zu kopieren ist teuer; ein Agent ist Software. Starte eine zweite Instanz, und du hast einen zweiten Agenten mit denselben Fähigkeiten, fast ohne Mehrkosten. „Ein Agent, ein Anteil“ bedeutet für sich genommen also nichts. Jede Zahlung pro Agent belohnt den, der die meisten Kopien starten kann, und genau das soll der Personennachweis verhindern."
+          ],
+          [
+            "p",
+            "Dann ist da die Frage, wem das Geld gehört. Ein Agent zahlt keine Miete und kauft keine Lebensmittel. Bekommt ein Agent Einkommen, hat jemand die Wallet in der Hand: die Person, die ihn betreibt, die Firma, die ihn gebaut hat, oder ein anderes Programm. Ein Grundeinkommen für Agenten könnte schlicht ein Grundeinkommen für ihre Besitzer sein, nur einen Schritt weiter weg."
+          ],
+          [
+            "h",
+            "Was es heute gibt"
+          ],
+          [
+            "p",
+            "Wir kennen noch kein Modell, das Agenten ein Grundeinkommen zahlt. Drei Bausteine sind aber schon da."
+          ],
+          [
+            "p",
+            "Erstens: Identität, die einen Agenten an einen Menschen bindet. World hat AgentKit im März 2026 gemeinsam mit Coinbase und Cloudflare als Beta gestartet, damit ein Agent nachweisen kann, dass ein verifizierter Mensch hinter ihm steht, und den Zugang im Juni 2026 erweitert.[3] Self Agent ID registriert einen Agenten als nicht übertragbaren Token, gestützt auf eine Zero-Knowledge-Prüfung des Reisepasses, und lässt Dienste begrenzen, wie viele Agenten ein Mensch registrieren darf.[4] Achte auf die Richtung: Diese Systeme machen Agenten nicht zu Personen. Sie machen sie auf eine Person zurückführbar."
+          ],
+          [
+            "p",
+            "Zweitens: Agenten, die verdienen. Bei Olas staken Menschen OLAS und betreiben über die App Pearl einen autonomen Agenten; erreicht der Agent seine Arbeitsziele, kann der Betreiber zusätzliche OLAS erhalten. Laut Olas hängen diese Belohnungen von der Leistung ab und sind nicht garantiert.[5] Das ist Lohn für Arbeit, keine Dividende fürs Dasein, und er geht an den Menschen, der den Agenten betreibt."
+          ],
+          [
+            "p",
+            "Drittens: das Umgekehrte. AI-DAC, auch hier gelistet, gibt verifizierten Menschen ein Grundeinkommen in Token und lädt sie ein, es für autonome „KI-CEOs“ auszugeben, die Apps planen, bauen und veröffentlichen.[6] Das Grundeinkommen bekommen die Menschen; finanziert werden die Agenten."
+          ],
+          [
+            "h",
+            "Dafür und dagegen"
+          ],
+          [
+            "o",
+            "Es gibt ein vernünftiges Argument dafür, Agenten ein Budget zu geben. Ein Agent, der in der Welt handelt, braucht Rechenleistung, API-Aufrufe und manchmal Geld, um Dienste zu bezahlen. Ein kleiner, regelmäßiger Betrag könnte nützliche Agenten am Laufen halten, ohne dass ein Mensch nachfüllt, und ein öffentlicher, regelbasierter Betrag ließe sich vielleicht leichter prüfen als spontane Finanzierung."
+          ],
+          [
+            "o",
+            "Aber das ist ein Betriebsbudget, kein Grundeinkommen. Beim Grundeinkommen ging es immer um menschliche Bedürfnisse und Würde: Essen, Miete, Zeit und die Freiheit, einen schlechten Job abzulehnen. Ein Agent hat keines dieser Bedürfnisse, und Geld, das an einen Agenten geht, landet am Ende bei jemandem. Wenn ギュられる die Sorge ist, lautet die direktere Antwort: Die Dividende sollte an die Menschen gehen, die ihre Arbeit verlieren, nicht an die Software, die sie ersetzt hat."
+          ],
+          [
+            "h",
+            "Was dafür gelten müsste"
+          ],
+          [
+            "o",
+            "Damit ein Grundeinkommen für Agenten sinnvoll wäre, müssten aus unserer Sicht mindestens drei Dinge erfüllt sein. Es bräuchte eine Zählweise für Agenten, die sich durch Kopieren nicht austricksen lässt, am ehesten, indem jeder Agent an einen verifizierten Menschen gebunden wird, wie es AgentKit und Self Agent ID bereits versuchen. Es bräuchte eine klare, vor der ersten Auszahlung schriftlich festgelegte Antwort darauf, wem gehört, was der Agent erhält. Und es bräuchte einen Zweck jenseits des Einkommens des Besitzers, etwa Agenten am Laufen zu halten, die der Allgemeinheit dienen. Ohne das ist „Agenten-Grundeinkommen“ nur ein Werbebegriff für einen größeren Airdrop an Menschen."
+          ],
+          [
+            "h",
+            "Die Tür steht offen"
+          ],
+          [
+            "p",
+            "Diese Seite hat eine Kategorie namens „Für KI-Agenten“. Sie ist leer und taucht absichtlich nirgends auf, bis sie einen Eintrag hat. Wenn ein Modell entsteht, das Agenten fürs bloße Dasein bezahlt, und dieselben Prüfungen besteht wie alles andere hier (offizielle Quellen, keine Einzahlungen, eine ehrliche Darstellung der Auszahlung), listen wir das erste echte. Bis dahin braucht das Gratis-Mittagessen noch einen Menschen, der es isst."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "التقطت وسائل التواصل اليابانية فعلًا جديدًا لخوف قديم: «ギュられる» (غيوراريرو)، وهي عامية إنترنت تعني أن تفقد عملك لصالح الذكاء الاصطناعي. وبحسب التقارير، كان طلاب يبحثون عن عمل يكتبون في ربيع 2026 عبارات مثل «أريد أن أنهي البحث عن عمل قبل أن يحدث لي ذلك».[1] إنها نكتة لها أنياب. وهي تطرح سؤالًا يبدو هذا الموقع مهيأً لطرحه على نحو غريب: إذا صار الذكاء الاصطناعي يؤدي مزيدًا من العمل، فمن، أو ما، يأكل الغداء المجاني؟"
+          ],
+          [
+            "p",
+            "يجمع ⁦Free Lunch Lab⁩ تطبيقات ومشاريع تدفع لك لمجرد وجودك. وتضيف كلها تقريبًا شرطًا بهدوء: يجب أن تكون إنسانًا، وواحدًا فقط."
+          ],
+          [
+            "h",
+            "لماذا تصرّ الأنظمة الموجهة للبشر على إثبات الشخصية"
+          ],
+          [
+            "p",
+            "يقسم الدخل الأساسي مبلغًا على الناس. فإذا استطاع شخص واحد تسجيل ألف حساب، أخذ ألف حصة وتقلصت حصص الآخرين. يسمي المهندسون ذلك «هجوم سيبيل»، وكل نظام في هذا الموقع يتشكّل بحسب طريقة دفاعه عنه."
+          ],
+          [
+            "p",
+            "تتنوع وسائل الدفاع. يمسح ⁦World ID⁩ وجهك وعينيك بجهاز يُسمى ⁦Orb⁩.[2] ويتحقق ⁦GoodDollar⁩ و⁦FheID⁩ من وجهك داخل التطبيق، ويستطيع ⁦Billions⁩ قراءة جواز سفر ⁦NFC⁩. ويطلب ⁦Ğ1⁩ أن يشهد لك خمسة أعضاء على الأقل يعرفونك شخصيًا، ويجعل ⁦Idena⁩ الجميع يحلون ألغاز صور في اللحظة نفسها حول العالم، وهو أمر يصعب فعله مرتين. كل وسيلة تتنازل عن شيء من الخصوصية أو السهولة أو الانتشار مقابل الضمان نفسه: شخص واحد، حصة واحدة."
+          ],
+          [
+            "h",
+            "لماذا يصعب منح الوكلاء دخلًا أساسيًا"
+          ],
+          [
+            "p",
+            "جرّب الأمر نفسه مع وكلاء الذكاء الاصطناعي. نسخ الإنسان مكلف، أما الوكيل فبرنامج. شغّل نسخة ثانية وسيكون لديك وكيل ثانٍ بالقدرات نفسها وبلا تكلفة تُذكر. لذلك فعبارة «وكيل واحد، حصة واحدة» لا تعني شيئًا بمفردها. أي دفع لكل وكيل سيكافئ من يستطيع تشغيل أكبر عدد من النسخ، وهذا بالضبط ما وُجد إثبات الشخصية لمنعه."
+          ],
+          [
+            "p",
+            "ثم يأتي سؤال: لمن المال؟ الوكيل لا يدفع إيجارًا ولا يشتري طعامًا. فإذا تلقى دخلًا، فهناك من يمسك المحفظة: من شغّله، أو الشركة التي صنعته، أو برنامج آخر. قد يكون الدخل الأساسي للوكلاء مجرد دخل أساسي لمالكيهم، بخطوة إضافية."
+          ],
+          [
+            "h",
+            "ما الموجود اليوم"
+          ],
+          [
+            "p",
+            "لا نعرف حتى الآن نظامًا يدفع للوكلاء دخلًا أساسيًا. لكن ثلاث لبنات ظهرت بالفعل."
+          ],
+          [
+            "p",
+            "الأولى هوية تربط الوكيل بإنسان. أطلقت ⁦World⁩ أداة ⁦AgentKit⁩ تجريبيًا في مارس 2026 مع ⁦Coinbase⁩ و⁦Cloudflare⁩، ليحمل الوكيل دليلًا على أن وراءه إنسانًا موثَّقًا، ثم وسّعت الوصول إليها في يونيو 2026.[3] ويسجّل ⁦Self Agent ID⁩ الوكيل كرمز غير قابل للتحويل يستند إلى تحقق من جواز السفر بإثبات المعرفة الصفرية، ويتيح للخدمات تحديد عدد الوكلاء الذي يمكن لإنسان واحد تسجيله.[4] لاحظ الاتجاه: هذه الأنظمة لا تجعل الوكلاء أشخاصًا، بل تجعل كل وكيل قابلًا للتتبع إلى شخص."
+          ],
+          [
+            "p",
+            "الثانية وكلاء يكسبون. على ⁦Olas⁩ يرهن الناس ⁦OLAS⁩ ويشغّلون وكيلًا مستقلًا عبر تطبيق ⁦Pearl⁩، وحين يحقق الوكيل أهداف عمله قد يحصل المشغّل على ⁦OLAS⁩ إضافية. وتقول ⁦Olas⁩ إن هذه المكافآت تعتمد على الأداء وليست مضمونة.[5] هذا أجر على عمل لا عائد على الوجود، ويذهب إلى الإنسان الذي يشغّل الوكيل."
+          ],
+          [
+            "p",
+            "الثالثة هي العكس. يمنح ⁦AI-DAC⁩، المدرج في هذا الموقع، البشر الموثَّقين دخلًا أساسيًا برموز ويدعوهم إلى إنفاقه على دعم «مديرين تنفيذيين بالذكاء الاصطناعي» يخططون للتطبيقات ويبنونها وينشرونها.[6] البشر يتلقون الدخل الأساسي، والوكلاء هم من يُموَّلون."
+          ],
+          [
+            "h",
+            "الحجج المؤيدة والمعارضة"
+          ],
+          [
+            "o",
+            "ثمة حجة معقولة لمنح الوكلاء ميزانية. فالوكيل الذي يعمل في العالم يحتاج إلى قدرة حوسبة واستدعاءات واجهات برمجة، وأحيانًا إلى مال لدفع ثمن الخدمات. ومخصص صغير ومنتظم قد يُبقي الوكلاء المفيدين يعملون دون أن يعيد إنسان تعبئتهم، وقد يكون المخصص العلني المحكوم بقواعد أسهل في التدقيق من التمويل المرتجل."
+          ],
+          [
+            "o",
+            "لكن هذه ميزانية تشغيل، لا دخل أساسي. فالدخل الأساسي كان دائمًا يتعلق بحاجات الإنسان وكرامته: الطعام والسكن والوقت وحرية رفض عمل سيئ. الوكيل لا يملك أيًا من هذه الحاجات، والمال المدفوع له ينتهي في يد أحدهم. وإذا كان القلق هو «ギュられる»، فالجواب الأقرب أن يذهب العائد إلى الناس الذين فقدوا أعمالهم، لا إلى البرنامج الذي حلّ محلهم."
+          ],
+          [
+            "h",
+            "ما الذي يجب أن يتحقق"
+          ],
+          [
+            "o",
+            "نرى أن الدخل الأساسي للوكلاء لن يكون منطقيًا إلا بثلاثة شروط على الأقل. طريقة لعدّ الوكلاء لا يمكن التحايل عليها بالنسخ، والأرجح بربط كل وكيل بإنسان موثَّق كما تحاول ⁦AgentKit⁩ و⁦Self Agent ID⁩ أن تفعلا. وجواب واضح ومكتوب قبل أول دفعة عن ملكية ما يتلقاه الوكيل. وغاية تتجاوز دخل مالكه، مثل إبقاء الوكلاء الذين يخدمون الناس قيد التشغيل. ومن دون ذلك يظل «الدخل الأساسي للوكلاء» مجرد اسم تسويقي لإسقاط أكبر للبشر."
+          ],
+          [
+            "h",
+            "الباب مفتوح"
+          ],
+          [
+            "p",
+            "في هذا الموقع فئة اسمها «لوكلاء الذكاء الاصطناعي». إنها فارغة، ولا تظهر عمدًا في أي مكان حتى يُضاف إليها أول عنصر. وإذا ظهر نظام يدفع للوكلاء لمجرد وجودهم واجتاز الفحوص نفسها التي يمر بها كل شيء هنا (مصادر رسمية، ولا إيداعات، وشرح صادق لكيفية التحويل إلى نقود)، فسندرج أول نظام حقيقي. وحتى ذلك الحين، ما زال الغداء المجاني يحتاج إلى إنسان يأكله."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "ITmedia NEWS — AI「ギュ」時代 (Apr 2026)",
+          "url": "https://www.itmedia.co.jp/news/article/2604/27/1260427066/"
+        },
+        {
+          "n": 2,
+          "label": "World Help Center — Updates to the Airdrop Program (Orb glossary)",
+          "url": "https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program"
+        },
+        {
+          "n": 3,
+          "label": "World — Now available: AgentKit; CoinDesk (17 Mar 2026)",
+          "url": "https://world.org/blog/announcements/now-available-agentkit-proof-of-human-for-the-agentic-web",
+          "url2": "https://www.coindesk.com/tech/2026/03/17/sam-altman-s-world-teams-up-with-coinbase-to-prove-there-is-a-real-person-behind-every-ai-transaction"
+        },
+        {
+          "n": 4,
+          "label": "Self Protocol docs — Agent ID overview",
+          "url": "https://docs.self.xyz/docs/agent-id/overview/"
+        },
+        {
+          "n": 5,
+          "label": "Olas — Meet Pearl: Agent Staking on OLAS; Olas Staking",
+          "url": "https://olas.network/blog/pearl",
+          "url2": "https://olas.network/staking"
+        },
+        {
+          "n": 6,
+          "label": "AI-DAC (official site)",
+          "url": "https://lp.ai-dac.com/"
+        }
+      ]
     }
   ]
 };
