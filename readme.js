@@ -10,12 +10,12 @@ const cell = s => String(s).replace(/[⁦-⁩]/g, '').replace(/\|/g, '\\|').repl
 const region = s => (s.onlyIn ? T.en['only_' + s.onlyIn] : s.global ? 'Global (海外OK)' : 'Japan only');
 
 function servicesTable() {
-  const rows = live.map(s => `| [${cell(s.nameEn || s.name)}](${SITE_URL}/services/${s.id}/) | ${cell(CATS.en[s.cat])} | ${cell((s.en || {}).gain || '')} | ${cell(region(s))} |`);
+  const rows = live.map(s => `| [${cell(s.nameEn || s.name)}](${SITE_URL}/services/${s.id}/) | ${cell(CATS.en[s.cat])} | ${cell((s.en || {}).gain || '')} | ${cell(region(s))} | ${s.checked} |`);
   return [
     `${live.length} services are listed on the site. Each name links to its page on the site (in English; every page is also available in 6 more languages).`,
     '',
-    '| Service | Category | What you get | Region |',
-    '| --- | --- | --- | --- |',
+    '| Service | Category | What you get | Region | Checked |',
+    '| --- | --- | --- | --- | --- |',
     ...rows,
   ].join('\n');
 }

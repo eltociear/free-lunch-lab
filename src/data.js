@@ -22,6 +22,7 @@ module.exports = {
       "global": true,
       "ease": 4,
       "official": "https://www.gooddollar.org/",
+      "checked": "2026-10",
       "code": "KgChqUuJic",
       "ref": "https://goodwallet.xyz?inviteCode=KgChqUuJic&chainId=50",
       "trust": {
@@ -85,6 +86,7 @@ module.exports = {
       "ref": "",
       "noRef": true,
       "added": "2026-10-23",
+      "checked": "2026-10",
       "trust": {
         "cash": "unknown",
         "price": "unknown",
@@ -141,6 +143,7 @@ module.exports = {
       "global": true,
       "ease": 4,
       "official": "https://www.mec.me/",
+      "checked": "2026-10",
       "code": "d22fj9hx",
       "ref": "https://i.mec.me/ja-JP/?c=d22fj9hx",
       "trust": {
@@ -199,6 +202,7 @@ module.exports = {
       "global": true,
       "ease": 4,
       "official": "https://biomatrix.ai/ja/",
+      "checked": "2026-10",
       "code": "C66SPN",
       "ref": "https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&af_dp=biomatrix%3A%2F%2F&deep_link_sub1=C66SPN",
       "trust": {
@@ -352,6 +356,7 @@ module.exports = {
       "global": false,
       "ease": 3,
       "official": "https://hapitas.jp/",
+      "checked": "2026-10",
       "code": "",
       "ref": "https://hapitas.jp/appinvite/?i=25819964",
       "trust": {
@@ -458,6 +463,7 @@ module.exports = {
       "global": true,
       "ease": 1,
       "official": "https://wavee.world/",
+      "checked": "2026-10",
       "code": "",
       "ref": "https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd",
       "trust": {
@@ -526,6 +532,7 @@ module.exports = {
         "operator": "yes"
       },
       "added": "2026-10-09",
+      "checked": "2026-10",
       "ja": {
         "gain": "5,000マイル ＋ 移動や歩数でマイル",
         "note": "スマホを持って移動したり歩いたりするだけでマイルがたまるアプリ。招待コードを入れると、紹介した側・された側の両方に5,000マイル（2026年7月時点の情報）。マイルはギフト券や現金などに交換できる",
@@ -580,6 +587,7 @@ module.exports = {
       "code": "mover77273393923",
       "ref": "https://swcapp.com/i/mover77273393923",
       "added": "2026-10-09",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "na",
@@ -639,6 +647,7 @@ module.exports = {
       "code": "97_MD5PEysoBbJ7",
       "ref": "https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7",
       "added": "2026-10-08",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "yes",
@@ -698,6 +707,7 @@ module.exports = {
       "code": "ELTOCD89E5",
       "ref": "https://join.honeygain.com/ELTOCD89E5",
       "added": "2026-10-08",
+      "checked": "2026-10",
       "trust": {
         "cash": "yes",
         "price": "na",
@@ -757,6 +767,7 @@ module.exports = {
       "code": "20659471",
       "ref": "https://pawns.app/?r=20659471",
       "added": "2026-10-09",
+      "checked": "2026-10",
       "trust": {
         "cash": "yes",
         "price": "na",
@@ -816,6 +827,7 @@ module.exports = {
       "code": "eltociear",
       "ref": "https://minepi.com/eltociear",
       "added": "2026-10-09",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "yes",
@@ -875,6 +887,7 @@ module.exports = {
       "code": "E7XK90P8N2AX9",
       "ref": "https://www.delta.kim/?referrer=E7XK90P8N2AX9",
       "added": "2026-10-09",
+      "checked": "2026-10",
       "trust": {
         "cash": "unknown",
         "price": "no",
@@ -934,6 +947,7 @@ module.exports = {
       "code": "541682748130",
       "ref": "https://interlinklabs.ai/541682748130",
       "added": "2026-10-09",
+      "checked": "2026-10",
       "trust": {
         "cash": "unknown",
         "price": "unknown",
@@ -993,6 +1007,7 @@ module.exports = {
       "code": "",
       "ref": "https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft",
       "added": "2026-10-21",
+      "checked": "2026-10",
       "trust": {
         "cash": "yes",
         "price": "na",
@@ -1054,6 +1069,7 @@ module.exports = {
       "ref": "",
       "noRef": true,
       "added": "2026-10-23",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "unknown",
@@ -1113,6 +1129,7 @@ module.exports = {
       "code": "",
       "ref": "https://palai.org/en?referrer=eltociear%2B856536b6d-da3a-4f27-9bcf-8eef2ce05bc2",
       "added": "2026-10-24",
+      "checked": "2026-10",
       "trust": {
         "cash": "no",
         "price": "na",
@@ -1173,6 +1190,7 @@ module.exports = {
       "ref": "",
       "noRef": true,
       "added": "2026-10-24",
+      "checked": "2026-10",
       "trust": {
         "cash": "yes",
         "price": "yes",
@@ -1234,6 +1252,7 @@ module.exports = {
       "ref": "",
       "noRef": true,
       "added": "2026-10-24",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "yes",
@@ -1294,6 +1313,7 @@ module.exports = {
       "code": "932BDA",
       "ref": "https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&path=?ref=932BDA",
       "added": "2026-10-24",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "yes",
@@ -1355,6 +1375,7 @@ module.exports = {
       "ref": "",
       "noRef": true,
       "added": "2026-10-24",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "yes",
@@ -1416,6 +1437,7 @@ module.exports = {
       "ref": "",
       "noRef": true,
       "added": "2026-10-24",
+      "checked": "2026-10",
       "trust": {
         "cash": "yes",
         "price": "na",
@@ -1475,6 +1497,7 @@ module.exports = {
       "code": "",
       "ref": "https://gdd.gradido.net/u/eltociear",
       "added": "2026-10-24",
+      "checked": "2026-10",
       "trust": {
         "cash": "unknown",
         "price": "na",
@@ -1534,6 +1557,7 @@ module.exports = {
       "code": "",
       "ref": "https://www.wowapp.com/w/eltociear/Ikko-Ashimine",
       "added": "2026-10-24",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "na",
@@ -1595,6 +1619,7 @@ module.exports = {
       "ref": "",
       "noRef": true,
       "added": "2026-10-26",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "na",
@@ -1654,6 +1679,7 @@ module.exports = {
       "code": "",
       "ref": "https://official.app/rc/ECMHPWI7AG",
       "added": "2026-10-26",
+      "checked": "2026-10",
       "trust": {
         "cash": "unknown",
         "price": "yes",
@@ -1715,6 +1741,7 @@ module.exports = {
       "ref": "",
       "noRef": true,
       "added": "2026-10-26",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "yes",
@@ -1775,6 +1802,7 @@ module.exports = {
       "ref": "https://app.reward.me/s6hS/z8a4ajc1",
       "showCode": true,
       "added": "2026-10-26",
+      "checked": "2026-10",
       "trust": {
         "cash": "partial",
         "price": "yes",
@@ -1836,6 +1864,7 @@ module.exports = {
       "ref": "https://www.privasea.ai/download-app",
       "codeOnly": true,
       "added": "2026-10-26",
+      "checked": "2026-10",
       "trust": {
         "cash": "unknown",
         "price": "yes",
@@ -2422,7 +2451,8 @@ module.exports = {
       "only_us": "アメリカ在住者向け",
       "brandSub": "Free Lunch Lab",
       "tagline": "タダ飯は、ある。",
-      "ghLabel": "GitHubでデータ公開中"
+      "ghLabel": "GitHubでデータ公開中",
+      "checkedOn": "{date}に確認"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2554,7 +2584,8 @@ module.exports = {
       "only_us": "US residents only",
       "brandSub": "",
       "tagline": "There is such a thing as a free lunch.",
-      "ghLabel": "Open data on GitHub"
+      "ghLabel": "Open data on GitHub",
+      "checkedOn": "Checked {date}"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2686,7 +2717,8 @@ module.exports = {
       "only_us": "सिर्फ़ अमेरिकी निवासी",
       "brandSub": "",
       "tagline": "मुफ़्त का लंच भी होता है।",
-      "ghLabel": "GitHub पर खुला डेटा"
+      "ghLabel": "GitHub पर खुला डेटा",
+      "checkedOn": "जाँचा गया: {date}"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2818,7 +2850,8 @@ module.exports = {
       "only_us": "仅限美国居民",
       "brandSub": "免费午餐研究所",
       "tagline": "天下竟然有免费的午餐。",
-      "ghLabel": "数据在 GitHub 公开"
+      "ghLabel": "数据在 GitHub 公开",
+      "checkedOn": "核实于{date}"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2950,7 +2983,8 @@ module.exports = {
       "only_us": "Solo residentes en EE. UU.",
       "brandSub": "",
       "tagline": "Pues sí: hay almuerzo gratis.",
-      "ghLabel": "Datos abiertos en GitHub"
+      "ghLabel": "Datos abiertos en GitHub",
+      "checkedOn": "Revisado: {date}"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3082,7 +3116,8 @@ module.exports = {
       "only_us": "للمقيمين في الولايات المتحدة فقط",
       "brandSub": "مختبر الغداء المجاني",
       "tagline": "الغداء المجاني موجود فعلًا.",
-      "ghLabel": "بيانات مفتوحة على ⁦GitHub⁩"
+      "ghLabel": "بيانات مفتوحة على ⁦GitHub⁩",
+      "checkedOn": "تم التحقق: {date}"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3214,7 +3249,8 @@ module.exports = {
       "only_us": "Nur für Wohnsitz in den USA",
       "brandSub": "",
       "tagline": "Es gibt doch ein kostenloses Mittagessen.",
-      "ghLabel": "Offene Daten auf GitHub"
+      "ghLabel": "Offene Daten auf GitHub",
+      "checkedOn": "Geprüft: {date}"
     }
   },
   "ORG_REGIONS": {

@@ -23,6 +23,14 @@ const LANG_FONTS = {
 const fontsUrl = l => `https://fonts.googleapis.com/css2?${BASE_FONTS}&${LANG_FONTS[l]}&display=swap`;
 
 const live = SERVICES.filter(s => s.ref || s.noRef); // 紹介リンクがあるもの（と紹介制度のない noRef）だけ表示
+// 表示するサービスには「最終確認月」（checked: "YYYY-MM"）が必須
+for (const s of live) if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(s.checked || '')) throw new Error(`${s.id}: checked ("YYYY-MM") is missing or invalid`);
+// 確認月を言語に合わせて表示（en は Oct 2026、ほかは各言語の月名）
+function checkedLine(s, lang) {
+  const [y, m] = s.checked.split('-').map(Number);
+  const date = new Intl.DateTimeFormat(LANG_TAG[lang], { year: 'numeric', month: lang === 'en' ? 'short' : 'long', timeZone: 'UTC' }).format(new Date(Date.UTC(y, m - 1, 1)));
+  return `<p class="checked"><time datetime="${s.checked}">${esc(T[lang].checkedOn.replace('{date}', date))}</time></p>`;
+}
 const urlPath = l => (l === DEFAULT_LANG ? '/' : `/${l}/`);
 const abs = l => SITE_URL + urlPath(l);
 // サービスごとの個別ページ: /services/{id}/（英語）と /{lang}/services/{id}/
@@ -89,6 +97,7 @@ function card(s, lang) {
 <p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
 ${meta(s, lang)}
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
+${checkedLine(s, lang)}
 ${slip(s, L)}
 </article>`;
 }
@@ -475,6 +484,7 @@ function servicePage(s, lang) {
 <p class="body">${esc(d.need)}</p>
 ${meta(s, lang)}
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
+${checkedLine(s, lang)}
 ${slip(s, L)}
 ${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#org-${org.id}">${esc(org.name)}</a> <span>(${esc(L.orgsTitle)})</span></p>` : ''}
 </article>
