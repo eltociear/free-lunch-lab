@@ -1,0 +1,131 @@
+{
+  "fetchedOn": "2026-10-28",
+  "repos": {
+    "git.duniter.org:clients/cesium-grp/cesium2s": {
+      "stars": 6,
+      "lastCommit": "2026-10-26",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "TypeScript"
+    },
+    "git.duniter.org:clients/gecko": {
+      "stars": 8,
+      "lastCommit": "2026-10-24",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "Dart"
+    },
+    "git.duniter.org:nodes/rust/duniter-v2s": {
+      "stars": 10,
+      "lastCommit": "2026-10-16",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "Rust"
+    },
+    "github.com:DemocracyEarth/ubi": {
+      "stars": 231,
+      "lastCommit": "2022-04-18",
+      "archived": false,
+      "license": null,
+      "language": "TypeScript"
+    },
+    "github.com:DemocracyEarth/ubi2": {
+      "stars": 6,
+      "lastCommit": "2026-10-13",
+      "archived": false,
+      "license": "MIT",
+      "language": "Rust"
+    },
+    "github.com:GoodDollar/GoodDAPP": {
+      "stars": 135,
+      "lastCommit": "2026-09-01",
+      "archived": false,
+      "license": "MIT",
+      "language": "JavaScript"
+    },
+    "github.com:GoodDollar/GoodProtocol": {
+      "stars": 20,
+      "lastCommit": "2026-10-15",
+      "archived": false,
+      "license": "MIT",
+      "language": "TypeScript"
+    },
+    "github.com:Mosaic-AI-Policy-Institute/mosaic-model": {
+      "stars": 2,
+      "lastCommit": "2026-01-28",
+      "archived": false,
+      "license": "MIT",
+      "language": "Jupyter Notebook"
+    },
+    "github.com:PolicyEngine/policyengine-us": {
+      "stars": 170,
+      "lastCommit": "2026-10-28",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "Python"
+    },
+    "github.com:Proof-Of-Humanity/proof-of-humanity-v2-contracts": {
+      "stars": 22,
+      "lastCommit": "2026-05-07",
+      "archived": false,
+      "license": null,
+      "language": "TypeScript"
+    },
+    "github.com:aboutcircles/circles-contracts-v2": {
+      "stars": 12,
+      "lastCommit": "2026-03-05",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "Solidity"
+    },
+    "github.com:encointer/encointer-wallet-flutter": {
+      "stars": 27,
+      "lastCommit": "2026-06-29",
+      "archived": false,
+      "license": "Apache-2.0",
+      "language": "Dart"
+    },
+    "github.com:encointer/pallets": {
+      "stars": 18,
+      "lastCommit": "2026-10-01",
+      "archived": false,
+      "license": "GPL-3.0",
+      "language": "Rust"
+    },
+    "github.com:gradido/gradido": {
+      "stars": 10,
+      "lastCommit": "2026-10-27",
+      "archived": false,
+      "license": "Apache-2.0",
+      "language": "TypeScript"
+    },
+    "github.com:idena-network/idena-go": {
+      "stars": 152,
+      "lastCommit": "2025-12-22",
+      "archived": false,
+      "license": "LGPL-3.0",
+      "language": "Go"
+    },
+    "github.com:okTurtles/group-income": {
+      "stars": 349,
+      "lastCommit": "2026-10-26",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "JavaScript"
+    },
+    "github.com:openfisca/openfisca-core": {
+      "stars": 249,
+      "lastCommit": "2026-10-23",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "Python"
+    },
+    "github.com:worldcoin/world-id-protocol": {
+      "stars": 42,
+      "lastCommit": "2026-10-27",
+      "archived": false,
+      "license": "MIT",
+      "language": "Rust"
+    }
+  }
+}

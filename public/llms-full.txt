@@ -649,6 +649,217 @@ Sources:
 5. Olas — Meet Pearl: Agent Staking on OLAS; Olas Staking: https://olas.network/blog/pearl (also https://olas.network/staking)
 6. AI-DAC (official site): https://lp.ai-dac.com/
 
+## Open-source projects
+
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-10-28. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+
+### Circles v2 contracts
+
+- Repository: https://github.com/aboutcircles/circles-contracts-v2
+- Group: Protocols
+- Language: Solidity
+- License: AGPL-3.0
+- Stars: 12
+- Last commit: 2026-03-05
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/circles/
+
+Smart contracts for Circles v2 on Gnosis Chain: every person mints their own currency each hour, and trust between people lets it circulate
+
+### GoodProtocol
+
+- Repository: https://github.com/GoodDollar/GoodProtocol
+- Group: Protocols
+- Language: TypeScript
+- License: MIT
+- Stars: 20
+- Last commit: 2026-10-15
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/
+
+GoodDollar’s smart contracts (version 2): the G$ token, the reserve funded by staking yield, and the daily UBI claim
+
+### Duniter v2s
+
+- Repository: https://git.duniter.org/nodes/rust/duniter-v2s
+- Group: Protocols
+- Language: Rust
+- License: AGPL-3.0
+- Stars: 10
+- Last commit: 2026-10-16
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
+
+Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of its web of trust creates a universal dividend each day
+
+### Gradido
+
+- Repository: https://github.com/gradido/gradido
+- Group: Protocols
+- Language: TypeScript
+- License: Apache-2.0
+- Stars: 10
+- Last commit: 2026-10-27
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
+
+Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
+
+### Idena
+
+- Repository: https://github.com/idena-network/idena-go
+- Group: Protocols
+- Language: Go
+- License: LGPL-3.0
+- Stars: 152
+- Last commit: 2025-12-22
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/idena/
+
+Node for Idena, a blockchain where people prove they are human by solving AI-resistant “flip” puzzles at the same moment worldwide, and validated identities earn rewards
+
+### Encointer pallets
+
+- Repository: https://github.com/encointer/pallets
+- Group: Protocols
+- Language: Rust
+- License: GPL-3.0
+- Stars: 18
+- Last commit: 2026-10-01
+
+Substrate pallets behind Encointer: local community currencies that pay a UBI to everyone who attends regular in-person meetups
+
+### Group Income
+
+- Repository: https://github.com/okTurtles/group-income
+- Group: Protocols
+- Language: JavaScript
+- License: AGPL-3.0
+- Stars: 349
+- Last commit: 2026-10-26
+
+End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum
+
+### UBI2
+
+- Repository: https://github.com/DemocracyEarth/ubi2
+- Group: Protocols
+- Language: Rust
+- License: MIT
+- Stars: 6
+- Last commit: 2026-10-13
+
+Experimental new UBI chain from Democracy Earth, started in June 2026: personhood is checked by AI, and 1 UBI per hour streams to every human
+
+### UBI token (Proof of Humanity)
+
+- Repository: https://github.com/DemocracyEarth/ubi
+- Group: Protocols
+- Language: TypeScript
+- License: ISC (package.json)
+- Stars: 231
+- Last commit: 2022-04-18 (dormant: no commits in over 12 months)
+
+The original $UBI token for Proof of Humanity: an ERC-20 that streams newly minted UBI to every registered human
+
+### GoodDAPP
+
+- Repository: https://github.com/GoodDollar/GoodDAPP
+- Group: Apps & wallets
+- Language: JavaScript
+- License: MIT
+- Stars: 135
+- Last commit: 2026-09-01
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/
+
+The GoodDollar wallet: the web and React Native app where people claim their daily G$
+
+### Cesium²
+
+- Repository: https://git.duniter.org/clients/cesium-grp/cesium2s
+- Group: Apps & wallets
+- Language: TypeScript
+- License: AGPL-3.0
+- Stars: 6
+- Last commit: 2026-10-26
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
+
+Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app
+
+### Ğecko
+
+- Repository: https://git.duniter.org/clients/gecko
+- Group: Apps & wallets
+- Language: Dart
+- License: AGPL-3.0
+- Stars: 8
+- Last commit: 2026-10-24
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
+
+Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s
+
+### Encointer wallet
+
+- Repository: https://github.com/encointer/encointer-wallet-flutter
+- Group: Apps & wallets
+- Language: Dart
+- License: Apache-2.0
+- Stars: 27
+- Last commit: 2026-06-29
+
+Mobile wallet for Encointer: join the in-person meetups, receive the community currency UBI and pay locally
+
+### World ID protocol
+
+- Repository: https://github.com/worldcoin/world-id-protocol
+- Group: Proof of personhood
+- Language: Rust
+- License: MIT
+- Stars: 42
+- Last commit: 2026-10-27
+
+Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
+
+### Proof of Humanity v2 contracts
+
+- Repository: https://github.com/Proof-Of-Humanity/proof-of-humanity-v2-contracts
+- Group: Proof of personhood
+- Language: TypeScript
+- License: MIT (package.json)
+- Stars: 22
+- Last commit: 2026-05-07
+
+Smart contracts for Proof of Humanity v2: a registry of humans built on video submissions, vouching and Kleros disputes, which UBI tokens build on
+
+### PolicyEngine US
+
+- Repository: https://github.com/PolicyEngine/policyengine-us
+- Group: Simulators & research
+- Language: Python
+- License: AGPL-3.0
+- Stars: 170
+- Last commit: 2026-10-28
+
+Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
+
+### OpenFisca
+
+- Repository: https://github.com/openfisca/openfisca-core
+- Group: Simulators & research
+- Language: Python
+- License: AGPL-3.0
+- Stars: 249
+- Last commit: 2026-10-23
+
+Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes
+
+### MOSAIC model
+
+- Repository: https://github.com/Mosaic-AI-Policy-Institute/mosaic-model
+- Group: Simulators & research
+- Language: Jupyter Notebook
+- License: MIT
+- Stars: 2
+- Last commit: 2026-01-28
+- Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
+
+Economic model for funding a universal basic income from AI-automation dividends
+
 ## Graveyard
 
 A record of services and programmes that once handed out money or points and have since ended. Only endings confirmed by an official announcement or a credible source are listed. Thanks for the lunches. Rest in peace.

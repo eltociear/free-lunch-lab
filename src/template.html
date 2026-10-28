@@ -220,7 +220,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
 /* 団体の紹介: お金のカードと区別して、紙の帳面のような落ち着いた枠に */
-#orgs{--sky1:#EC6F6A;--sky2:#F08A4B}
+#orgs{--sky1:#EC6F6A;--sky2:#F08A4B}#oss{--sky1:#EE7E5C;--sky2:#F39C4A}
 #verify{--sky1:#9B5CF0;--sky2:#C04FA0}
 .vchips{display:flex;flex-wrap:wrap;gap:8px}
 .vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
@@ -553,6 +553,15 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   </div>
 </section>
 
+<section id="oss">
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:15</span>OPEN SOURCE</p><h2>{{t.ossSecH}}</h2></div>
+  <div class="orgs-box rv">
+    <p class="orgs-lead">{{t.ossSecP}}</p>
+    <ul class="orgs-mini">{{ossPreview}}</ul>
+    <a class="btn line orgs-btn" href="open-source/">{{ossBtn}}</a>
+  </div>
+</section>
+
 <section id="faq">
   <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:30</span>FAQ</p><h2>{{t.faqH}}</h2></div>
   <div class="faq rv">
@@ -585,7 +594,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
     <a class="btn solid" href="#list">{{t.dawnCta}}</a>
   </div>
   <div class="horizon" aria-hidden="true"><div class="sun"></div><svg class="hills" aria-hidden="true" viewBox="0 0 1440 150" preserveAspectRatio="none"><path fill="#4A2558" d="M0 70C160 30 300 40 460 70s300 40 470 6 340-50 510-10V150H0z"/><path fill="#160F2E" d="M0 104c200-34 380-30 560 0s360 26 520-6 260-28 360-12V150H0z"/></svg></div>
-  <div class="foot-band"><div class="wrap foot"><span>{{t.foot}}</span><a href="organizations/">{{t.orgsTitle}}</a><a href="graveyard/">{{t.graveTitle}}</a><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: {{t.ghLabel}}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>{{t.ghLabel}}</span></a><a class="xlink" href="feed.xml" aria-label="{{t.rssLabel}}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="essays/">{{t.essaysTitle}}</a><span class="dot">{{t.brandPlain}}</span></div></div>
+  <div class="foot-band"><div class="wrap foot"><span>{{t.foot}}</span><a href="organizations/">{{t.orgsTitle}}</a><a href="graveyard/">{{t.graveTitle}}</a><a href="open-source/">{{t.ossTitle}}</a><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: {{t.ghLabel}}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>{{t.ghLabel}}</span></a><a class="xlink" href="feed.xml" aria-label="{{t.rssLabel}}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="essays/">{{t.essaysTitle}}</a><span class="dot">{{t.brandPlain}}</span></div></div>
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 {{script}}

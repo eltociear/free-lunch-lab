@@ -2,7 +2,12 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW } = require('./src/data.js');
+const { execFileSync } = require('child_process');
+// オープンソース一覧のスター数・最終コミット日などを取りに行く（失敗してもキャッシュで続ける。OSS_OFFLINE=1 で取得しない）
+try { execFileSync(process.execPath, [path.join(__dirname, 'oss-fetch.js')], { stdio: 'inherit', timeout: 120000 }); } catch (e) { console.warn('open-source metadata: fetch failed, using cache'); }
+const { ossProjects, DORMANT_MONTHS } = require('./src/oss.js');
+const { projects: OSSP, fetchedOn: ossFetchedOn } = ossProjects();
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
@@ -55,6 +60,17 @@ const longDate = (iso, lang) => new Intl.DateTimeFormat(LANG_TAG[lang], { year: 
 // ベーシックインカム社会実験の年表: /timeline/ と /{lang}/timeline/
 const tlPath = l => `${urlPath(l)}timeline/`;
 const tlAbs = l => SITE_URL + tlPath(l);
+// ベーシックインカムにかかわるオープンソースのコード: /open-source/ と /{lang}/open-source/
+const ossPath = l => `${urlPath(l)}open-source/`;
+const ossAbs = l => SITE_URL + ossPath(l);
+// オープンソースのページは template.html を通らないので、UI 文字列がそろっているかここで確かめる
+const OSS_KEYS = ['ossTitle', 'ossH1', 'ossDesc', 'ossIntro', 'ossSecH', 'ossSecP', 'ossSecBtn', 'ossLang', 'ossLicense', 'ossStars', 'ossLastCommit', 'ossDormant', 'ossDormantTip', 'ossArchived', 'ossEssay', 'ossFetched', 'ossUnknown'];
+for (const l of LANGS) for (const k of OSS_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const p of OSSP) {
+  if (!OSS_GROUPS.some(g => g.id === p.group)) throw new Error(`${p.id}: unknown group ${p.group}`);
+  for (const l of LANGS) if (!p.desc[l]) throw new Error(`${p.id}: missing desc.${l}`);
+  for (const l of LANGS) if (!OSS_GROUPS.find(g => g.id === p.group).name[l]) throw new Error(`${p.group}: missing name.${l}`);
+}
 // 認証方法ごとのページ: /verify/{method}/。必須・任意あわせて2件以上あるものだけ作る
 const verifyPath = (l, m) => `${urlPath(l)}verify/${m}/`;
 const verifyAbs = (l, m) => SITE_URL + verifyPath(l, m);
@@ -385,6 +401,8 @@ for (const lang of LANGS) {
     brandSub: L.brandSub ? `<small dir="auto">${esc(L.brandSub)}</small>` : '',
     orgsPreview: ORG_PREVIEW.map(id => ORGS.find(o => o.id === id)).filter(Boolean).map(o => `<li><a href="organizations/#org-${o.id}" dir="auto">${esc(o.name)}</a><span>${esc(o.region ? ORG_REGIONS[o.region][lang] : '')}</span><p>${esc((o.short || o.desc)[lang] || (o.short || o.desc).en)}</p></li>`).join(''),
     orgsBtn: esc(L.orgsSecBtn.replace('{n}', ORGS.length)),
+    ossPreview: OSS_PREVIEW.map(id => OSSP.find(p => p.id === id)).filter(Boolean).map(p => `<li><a href="open-source/#oss-${p.id}" dir="auto">${esc(p.name)}</a><span>${esc(OSS_GROUPS.find(g => g.id === p.group).name[lang])}</span><p>${esc(p.desc[lang])}</p></li>`).join(''),
+    ossBtn: esc(L.ossSecBtn.replace('{n}', OSSP.length)),
     verifyBlock: verifyPages.map(m => { const b = byMethod(m); return `<a href="verify/${m}/" dir="auto">${esc(VERIFY[m].name[lang])}<span>${b.req.length + b.opt.length}</span></a>`; }).join(''),
     script: clientScript(lang),
   };
@@ -460,6 +478,16 @@ const DETAIL_CSS = `
 .org-meta{font-size:.78rem;color:var(--muted)}
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
+/* オープンソースのページ: 団体ページと同じ行に、言語・ライセンス・スター・最終コミットを小さく添える */
+.oss-repo{font-size:.76rem;color:var(--muted);overflow-wrap:anywhere}
+.oss-badge{font-size:.7rem;font-weight:700;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid currentColor;color:var(--muted);white-space:nowrap}
+.oss-badge.archived{color:var(--accent)}
+.oss-facts{margin:0;display:flex;flex-wrap:wrap;gap:2px 16px;font-size:.78rem;color:var(--muted)}
+.oss-facts div{display:flex;gap:6px;align-items:baseline;min-width:0}
+.oss-facts dt{font-size:.72rem}
+.oss-facts dd{margin:0;color:var(--ink);overflow-wrap:anywhere}
+.oss-links{display:flex;flex-wrap:wrap;gap:4px 16px}
+.oss-note{font-size:.78rem;color:var(--muted)}
 .foot a{color:inherit;text-underline-offset:3px}
 .vmain{max-width:1080px;margin-inline:auto}
 .vsec{padding-top:28px}
@@ -745,7 +773,7 @@ function timelinePage(lang) {
 <main class="orgs">
 <header class="orgs-head"><p class="eyebrow">TIMELINE</p><h1>${esc(L.tlTitle)}</h1><p class="orgs-intro">${esc(L.tlIntro)}</p></header>
 <ol class="tl">${items}</ol>
-<p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a></p>
+<p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${ossPath(lang)}">${esc(L.ossTitle)}</a></p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   return shell(lang, { title, desc: L.tlDesc, hrefFor: tlAbs, pathFor: tlPath, ld, ogType: 'website', body });
@@ -806,6 +834,55 @@ function graveyardPage(lang) {
   return shell(lang, { title, desc: L.graveDesc, hrefFor: graveAbs, pathFor: gravePath, ld, ogType: 'website', body });
 }
 
+// ---- ベーシックインカムにかかわるオープンソースのコード（/open-source/）。数値はビルド時に取得（src/oss.js）
+function ossPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const title = `${L.ossTitle} | ${L.title}`;
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: L.ossTitle, item: ossAbs(lang) },
+    ],
+  };
+  const num = n => new Intl.NumberFormat(LANG_TAG[lang]).format(n);
+  const fact = (k, v) => `<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`;
+  const groups = OSS_GROUPS.map(g => {
+    const list = OSSP.filter(p => p.group === g.id);
+    if (!list.length) return '';
+    const items = list.map(p => {
+      const links = [];
+      const svc = p.svc && live.find(x => x.id === p.svc);
+      if (svc) links.push(`<a class="org-svc" href="${svcPath(lang, svc)}">${esc(L.orgsOnSite)}: ${esc(sName(svc, lang))}</a>`);
+      const org = p.org && ORGS.find(o => o.id === p.org);
+      if (org) links.push(`<a class="org-svc" href="${orgPath(lang)}#org-${org.id}">${esc(L.orgsTitle)}: ${esc(org.name)}</a>`);
+      if (p.verify && verifyPages.includes(p.verify)) links.push(`<a class="org-svc" href="${verifyPath(lang, p.verify)}" dir="auto">${esc(VERIFY[p.verify].title[lang])}</a>`);
+      const essay = p.essay && ESSAYS.find(e => e.id === p.essay);
+      if (essay) links.push(`<a class="org-svc" href="${essayPath(lang, essay)}">${esc(L.ossEssay)}: ${esc(essay.title[lang] || essay.title.en)}</a>`);
+      const badges = (p.dormant ? `<span class="oss-badge" title="${esc(L.ossDormantTip)}">${esc(L.ossDormant)}</span>` : '') + (p.archived ? `<span class="oss-badge archived">${esc(L.ossArchived)}</span>` : '');
+      const facts = [
+        fact(L.ossLang, p.language ? `<span dir="ltr">${esc(p.language)}</span>` : esc(L.ossUnknown)),
+        fact(L.ossLicense, p.license ? `<span dir="ltr">${esc(p.license)}</span>` : esc(L.ossUnknown)),
+        ...(p.stars != null ? [fact(L.ossStars, `★ ${esc(num(p.stars))}`)] : []),
+        ...(p.lastCommit ? [fact(L.ossLastCommit, `<time datetime="${esc(p.lastCommit)}">${esc(longDate(p.lastCommit, lang))}</time>`)] : []),
+      ].join('');
+      return `<li class="org" id="oss-${p.id}"><div class="org-head"><a class="org-name" href="${esc(p.url)}" target="_blank" rel="noopener" dir="auto">${esc(p.name)}</a><span class="oss-repo" dir="ltr">${esc(p.host)}/${esc(p.repo)}</span>${badges}</div>
+<p>${esc(p.desc[lang])}</p><dl class="oss-facts">${facts}</dl>${links.length ? `<div class="oss-links">${links.join('')}</div>` : ''}</li>`;
+    }).join('\n');
+    return `<section class="org-group" id="g-${g.id}"><h2>${esc(g.name[lang])}<span class="dot">${list.length}</span></h2><ul class="org-list">${items}</ul></section>`;
+  }).join('\n');
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.ossTitle)}</li></ol></nav>
+<main class="orgs">
+<header class="orgs-head"><p class="eyebrow" dir="ltr">OPEN SOURCE</p><h1>${esc(L.ossH1)}</h1><p class="orgs-intro">${esc(L.ossIntro)}</p>
+${ossFetchedOn ? `<p class="oss-note">${esc(L.ossFetched).replace('{date}', `<time datetime="${ossFetchedOn}">${esc(longDate(ossFetchedOn, lang))}</time>`)} · <a href="${SITE_URL}/open-source.json" dir="ltr">open-source.json</a></p>\n` : ''}<nav class="org-toc" aria-label="${esc(L.navLabel)}">${OSS_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}</nav></header>
+${groups}
+<p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a></p>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  return shell(lang, { title, desc: L.ossDesc, hrefFor: ossAbs, pathFor: ossPath, ld, ogType: 'website', body });
+}
+
 for (const lang of LANGS) {
   for (const s of live) {
     const dir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'services', s.id);
@@ -825,6 +902,9 @@ for (const lang of LANGS) {
     fs.mkdirSync(path.join(edir, e.id), { recursive: true });
     fs.writeFileSync(path.join(edir, e.id, 'index.html'), essayPage(e, lang));
   }
+  const osdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'open-source');
+  fs.mkdirSync(osdir, { recursive: true });
+  fs.writeFileSync(path.join(osdir, 'index.html'), ossPage(lang));
   const tdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'timeline');
   fs.mkdirSync(tdir, { recursive: true });
   fs.writeFileSync(path.join(tdir, 'index.html'), timelinePage(lang));
@@ -843,6 +923,7 @@ if (fs.existsSync(OG_SRC)) fs.cpSync(OG_SRC, path.join(OUT, 'og'), { recursive: 
 const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 function newsLink(n, lang) {
   const en = n.en || '';
+  if (/open-source/i.test(en)) return ossAbs(lang);
   if (/essay/i.test(en)) return essayAbs(lang, ESSAYS[0]);
   if (/timeline/i.test(en)) return tlAbs(lang);
   if (/verification method/i.test(en)) return verifyAbs(lang, 'world-id');
@@ -897,7 +978,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
@@ -959,9 +1040,43 @@ const graveJson = {
     descriptions: Object.fromEntries(LANGS.map(l => [l, Object.fromEntries(['what', 'ended', 'why'].filter(k => g[k] && g[k][l]).map(k => [k, clean(g[k][l])]))])),
   })),
 };
+const ossJson = {
+  name: 'Free Lunch Lab open-source projects',
+  description: 'Open-source code projects related to basic income (UBI protocols, wallets, proof of personhood, simulators), as listed on Free Lunch Lab. Stars, last commit, archived status, license and language are fetched from GitHub and GitLab at build time.',
+  source: ossAbs(DEFAULT_LANG),
+  repository: 'https://github.com/eltociear/free-lunch-lab',
+  license: 'CC BY 4.0',
+  licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+  generatedAt: ossFetchedOn,
+  dormantAfterMonths: DORMANT_MONTHS,
+  languages: LANGS,
+  count: OSSP.length,
+  groups: OSS_GROUPS.map(g => ({ id: g.id, name: g.name.en })),
+  projects: OSSP.slice().sort(byId).map(p => ({
+    id: p.id,
+    name: p.name,
+    group: p.group,
+    groupName: OSS_GROUPS.find(g => g.id === p.group).name.en,
+    repoUrl: p.url,
+    host: p.host,
+    repo: p.repo,
+    language: p.language,
+    license: p.license,
+    stars: p.stars,
+    lastCommit: p.lastCommit,
+    archived: p.archived,
+    dormant: p.dormant,
+    serviceId: p.svc && live.some(x => x.id === p.svc) ? p.svc : null,
+    servicePageUrl: p.svc && live.find(x => x.id === p.svc) ? svcAbs(DEFAULT_LANG, live.find(x => x.id === p.svc)) : null,
+    organizationId: p.org || null,
+    essayUrl: p.essay && ESSAYS.find(e => e.id === p.essay) ? essayAbs(DEFAULT_LANG, ESSAYS.find(e => e.id === p.essay)) : null,
+    pageUrl: ossAbs(DEFAULT_LANG) + '#oss-' + p.id,
+    descriptions: Object.fromEntries(LANGS.map(l => [l, clean(p.desc[l])])),
+  })),
+};
 const DATA_DIR = path.join(__dirname, 'data');
 fs.mkdirSync(DATA_DIR, { recursive: true });
-for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson]]) {
+for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson], ['open-source.json', ossJson]]) {
   const txt = JSON.stringify(obj, null, 2) + '\n';
   fs.writeFileSync(path.join(DATA_DIR, file), txt);
   fs.writeFileSync(path.join(OUT, file), txt);
@@ -983,11 +1098,13 @@ const llmsHead = full => `# Free Lunch Lab
 - Data last checked: ${latest}
 - ${full ? `Short index: ${SITE_URL}/llms.txt` : `Full text: ${SITE_URL}/llms-full.txt`}
 `;
+const ossFacts = p => [OSS_GROUPS.find(g => g.id === p.group).name.en, p.language, p.license && `license ${p.license}`, p.stars != null && `${p.stars} stars`, p.lastCommit && `last commit ${p.lastCommit}`, p.dormant && 'dormant', p.archived && 'archived'].filter(Boolean).map(md).join('; ');
 const llmsTxt = `${llmsHead(false)}
 ## Data
 
 - [services.json](${SITE_URL}/services.json): all visible services as JSON, with descriptions in every language, region, verification, trust check and referral info
 - [graveyard.json](${SITE_URL}/graveyard.json): ended basic-income-style programs, each with a source
+- [open-source.json](${SITE_URL}/open-source.json): open-source code projects related to basic income, with license, language, stars, last commit and dormant flag
 ${LANGS.map(l => `- [RSS feed (${l})](${feedAbs(l)}): update log in ${LANG_NAMES[l] === 'EN' ? 'English' : LANG_NAMES[l]}`).join('\n')}
 
 ## Services
@@ -1000,7 +1117,12 @@ ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LA
 - [${md(T.en.orgsH1)}](${orgAbs(DEFAULT_LANG)}): ${md(T.en.orgsDesc)}
 - [${md(T.en.tlTitle)}](${tlAbs(DEFAULT_LANG)}): ${md(T.en.tlDesc)}
 - [${md(T.en.graveTitle)}](${graveAbs(DEFAULT_LANG)}): ${md(T.en.graveDesc)}
+- [${md(T.en.ossTitle)}](${ossAbs(DEFAULT_LANG)}): ${md(T.en.ossDesc)}
 ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}): ${md(e.desc.en)}`).join('\n')}
+
+## Open-source projects
+
+${OSSP.map(p => `- [${mdLink(p.name)}](${p.url}): ${md(p.desc.en)} (${ossFacts(p)})`).join('\n')}
 
 ## Other languages
 
@@ -1057,6 +1179,25 @@ const graveFull = g => [
   `- Page: ${graveAbs(DEFAULT_LANG)}#grave-${g.id}`,
   ...['what', 'ended', 'why'].filter(k => g[k] && g[k].en).flatMap(k => ['', `${{ what: 'What it was', ended: 'Ended', why: 'Why' }[k]}: ${md(g[k].en)}`]),
 ].join('\n');
+const ossFull = p => {
+  const svc = p.svc && live.find(x => x.id === p.svc);
+  const essay = p.essay && ESSAYS.find(e => e.id === p.essay);
+  return [
+    `### ${md(p.name)}`,
+    '',
+    `- Repository: ${p.url}`,
+    `- Group: ${md(OSS_GROUPS.find(g => g.id === p.group).name.en)}`,
+    `- Language: ${p.language || 'unknown'}`,
+    `- License: ${p.license || 'unknown'}`,
+    ...(p.stars != null ? [`- Stars: ${p.stars}`] : []),
+    ...(p.lastCommit ? [`- Last commit: ${p.lastCommit}${p.dormant ? ` (dormant: no commits in over ${DORMANT_MONTHS} months)` : ''}`] : []),
+    ...(p.archived ? ['- Archived: yes'] : []),
+    ...(svc ? [`- Service page: ${svcAbs(DEFAULT_LANG, svc)}`] : []),
+    ...(essay ? [`- Related essay: ${essayAbs(DEFAULT_LANG, essay)}`] : []),
+    '',
+    md(p.desc.en),
+  ].join('\n');
+};
 const llmsFull = `${llmsHead(true)}
 ## Services
 
@@ -1065,6 +1206,12 @@ ${live.map(svcFull).join('\n\n')}
 ## Essays
 
 ${ESSAYS.map(essayFull).join('\n\n')}
+
+## Open-source projects
+
+${md(T.en.ossIntro)}${ossFetchedOn ? ` Metadata fetched on ${ossFetchedOn}.` : ''} Page: ${ossAbs(DEFAULT_LANG)}
+
+${OSSP.map(ossFull).join('\n\n')}
 
 ## Graveyard
 
@@ -1081,4 +1228,4 @@ fs.writeFileSync(path.join(OUT, '_headers'), ['/llms.txt', '/llms-full.txt'].map
 
 // README.md のサービス表・団体一覧も同期する
 require('./readme.js').updateReadme();
-console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages + ${LANGS.length} organization pages, ${live.length} services shown (${SERVICES.length - live.length} hidden)`);
+console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages + ${LANGS.length} organization pages + ${LANGS.length} open-source pages (${OSSP.length} projects, ${OSSP.filter(p => p.dormant).length} dormant), ${live.length} services shown (${SERVICES.length - live.length} hidden)`);

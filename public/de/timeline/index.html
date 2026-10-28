@@ -248,7 +248,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
 /* 団体の紹介: お金のカードと区別して、紙の帳面のような落ち着いた枠に */
-#orgs{--sky1:#EC6F6A;--sky2:#F08A4B}
+#orgs{--sky1:#EC6F6A;--sky2:#F08A4B}#oss{--sky1:#EE7E5C;--sky2:#F39C4A}
 #verify{--sky1:#9B5CF0;--sky2:#C04FA0}
 .vchips{display:flex;flex-wrap:wrap;gap:8px}
 .vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
@@ -506,6 +506,16 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .org-meta{font-size:.78rem;color:var(--muted)}
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
+/* オープンソースのページ: 団体ページと同じ行に、言語・ライセンス・スター・最終コミットを小さく添える */
+.oss-repo{font-size:.76rem;color:var(--muted);overflow-wrap:anywhere}
+.oss-badge{font-size:.7rem;font-weight:700;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid currentColor;color:var(--muted);white-space:nowrap}
+.oss-badge.archived{color:var(--accent)}
+.oss-facts{margin:0;display:flex;flex-wrap:wrap;gap:2px 16px;font-size:.78rem;color:var(--muted)}
+.oss-facts div{display:flex;gap:6px;align-items:baseline;min-width:0}
+.oss-facts dt{font-size:.72rem}
+.oss-facts dd{margin:0;color:var(--ink);overflow-wrap:anywhere}
+.oss-links{display:flex;flex-wrap:wrap;gap:4px 16px}
+.oss-note{font-size:.78rem;color:var(--muted)}
 .foot a{color:inherit;text-underline-offset:3px}
 .vmain{max-width:1080px;margin-inline:auto}
 .vsec{padding-top:28px}
@@ -593,7 +603,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <dl><dt>Träger</dt><dd>Gnosis</dd><dt>Gezahlt</dt><dd>Zweite Version eines Systems, in dem jede Person 1 CRC pro Stunde als eigene Währung schöpft, gestartet im Mai 2025</dd><dt>Quelle</dt><dd><a href="https://www.businesswire.com/news/home/20250521225718/en" target="_blank" rel="noopener" dir="ltr">businesswire.com</a></dd></dl><p class="tl-links"><span>Dazu auf dieser Seite:</span> <a href="/de/services/circles/">Circles (Gnosis App)</a> · <a href="/de/organizations/#org-circles">Grundeinkommen: Organisationen &amp; Projekte: Circles</a></p></div></li>
 <li class="tl-item tl-crypto" id="tl-wld-end"><div class="tl-when"><span class="dot" dir="ltr">2026</span></div><div class="tl-card"><p class="tl-type">Krypto / Gemeinschaft</p><h2 dir="auto">World — WLD Airdrop</h2><p class="tl-place">Weltweit</p>
 <dl><dt>Träger</dt><dd>World (Tools for Humanity / World Foundation)</dd><dt>Gezahlt</dt><dd>Die monatlichen WLD-Airdrops für per World ID verifizierte Menschen nehmen seit 1. Juni 2026 keine neuen oder verlängerten Zyklen mehr an</dd><dt>Quelle</dt><dd><a href="https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program" target="_blank" rel="noopener" dir="ltr">support.world.org</a></dd></dl><p class="tl-links"><span>Dazu auf dieser Seite:</span> <a href="/de/graveyard/#grave-wld-airdrop">Der Friedhof der Gratis-Mittagessen</a></p></div></li></ol>
-<p class="tl-more"><a href="/de/organizations/">Grundeinkommen: Organisationen &amp; Projekte</a> · <a href="/de/graveyard/">Der Friedhof der Gratis-Mittagessen</a></p>
+<p class="tl-more"><a href="/de/organizations/">Grundeinkommen: Organisationen &amp; Projekte</a> · <a href="/de/graveyard/">Der Friedhof der Gratis-Mittagessen</a> · <a href="/de/open-source/">Open-Source-Projekte zum Grundeinkommen</a></p>
 <p class="back"><a class="btn line" href="/de/#list">← Zurück zur Liste</a></p>
 </main>
 </div>

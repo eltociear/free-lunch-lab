@@ -248,7 +248,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq summary::after{content:"+";flex:none;margin-inline-start:auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-weight:400;font-size:1.15rem;line-height:1}
 .faq details[open] summary::after{content:"−"}
 /* 団体の紹介: お金のカードと区別して、紙の帳面のような落ち着いた枠に */
-#orgs{--sky1:#EC6F6A;--sky2:#F08A4B}
+#orgs{--sky1:#EC6F6A;--sky2:#F08A4B}#oss{--sky1:#EE7E5C;--sky2:#F39C4A}
 #verify{--sky1:#9B5CF0;--sky2:#C04FA0}
 .vchips{display:flex;flex-wrap:wrap;gap:8px}
 .vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
@@ -506,6 +506,16 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .org-meta{font-size:.78rem;color:var(--muted)}
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
+/* オープンソースのページ: 団体ページと同じ行に、言語・ライセンス・スター・最終コミットを小さく添える */
+.oss-repo{font-size:.76rem;color:var(--muted);overflow-wrap:anywhere}
+.oss-badge{font-size:.7rem;font-weight:700;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid currentColor;color:var(--muted);white-space:nowrap}
+.oss-badge.archived{color:var(--accent)}
+.oss-facts{margin:0;display:flex;flex-wrap:wrap;gap:2px 16px;font-size:.78rem;color:var(--muted)}
+.oss-facts div{display:flex;gap:6px;align-items:baseline;min-width:0}
+.oss-facts dt{font-size:.72rem}
+.oss-facts dd{margin:0;color:var(--ink);overflow-wrap:anywhere}
+.oss-links{display:flex;flex-wrap:wrap;gap:4px 16px}
+.oss-note{font-size:.78rem;color:var(--muted)}
 .foot a{color:inherit;text-underline-offset:3px}
 .vmain{max-width:1080px;margin-inline:auto}
 .vsec{padding-top:28px}

@@ -11,6 +11,7 @@
 
 - [services.json](https://neteru-nyukin.eltociear.workers.dev/services.json): all visible services as JSON, with descriptions in every language, region, verification, trust check and referral info
 - [graveyard.json](https://neteru-nyukin.eltociear.workers.dev/graveyard.json): ended basic-income-style programs, each with a source
+- [open-source.json](https://neteru-nyukin.eltociear.workers.dev/open-source.json): open-source code projects related to basic income, with license, language, stars, last commit and dormant flag
 - [RSS feed (en)](https://neteru-nyukin.eltociear.workers.dev/feed.xml): update log in English
 - [RSS feed (ja)](https://neteru-nyukin.eltociear.workers.dev/ja/feed.xml): update log in 日本語
 - [RSS feed (zh)](https://neteru-nyukin.eltociear.workers.dev/zh/feed.xml): update log in 中文
@@ -61,7 +62,29 @@
 - [Basic income organizations & projects](https://neteru-nyukin.eltociear.workers.dev/organizations/): A curated list of organizations and projects around the world and in Japan that advocate, research or practise basic income (UBI), grouped by type. Checked in October 2026.
 - [Basic income experiments: a timeline](https://neteru-nyukin.eltociear.workers.dev/timeline/): A timeline of basic income experiments and schemes, from Mincome and Alaska’s dividend to Namibia, Finland, Stockton, OpenResearch and Germany’s pilot, with who ran them, what was paid, results and sources.
 - [The Free Lunch Graveyard](https://neteru-nyukin.eltociear.workers.dev/graveyard/): Services and programmes that once paid out money or points and have ended, such as World’s WLD airdrop and Miles, with end dates, reasons and sources.
+- [Open-source basic income projects](https://neteru-nyukin.eltociear.workers.dev/open-source/): A curated list of open-source code projects behind basic income: UBI protocols, wallets, proof of personhood and policy simulators, with license, stars and last commit date.
 - [Essay: Should AI agents get a basic income?](https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/): If AI takes the work, should agents get the dividend? Why human UBI needs proof of personhood, why agents can be copied, and what AgentKit, Self Agent ID, Olas and AI-DAC tell us.
+
+## Open-source projects
+
+- [Circles v2 contracts](https://github.com/aboutcircles/circles-contracts-v2): Smart contracts for Circles v2 on Gnosis Chain: every person mints their own currency each hour, and trust between people lets it circulate (Protocols; Solidity; license AGPL-3.0; 12 stars; last commit 2026-03-05)
+- [GoodProtocol](https://github.com/GoodDollar/GoodProtocol): GoodDollar’s smart contracts (version 2): the G$ token, the reserve funded by staking yield, and the daily UBI claim (Protocols; TypeScript; license MIT; 20 stars; last commit 2026-10-15)
+- [Duniter v2s](https://git.duniter.org/nodes/rust/duniter-v2s): Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of its web of trust creates a universal dividend each day (Protocols; Rust; license AGPL-3.0; 10 stars; last commit 2026-10-16)
+- [Gradido](https://github.com/gradido/gradido): Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community (Protocols; TypeScript; license Apache-2.0; 10 stars; last commit 2026-10-27)
+- [Idena](https://github.com/idena-network/idena-go): Node for Idena, a blockchain where people prove they are human by solving AI-resistant “flip” puzzles at the same moment worldwide, and validated identities earn rewards (Protocols; Go; license LGPL-3.0; 152 stars; last commit 2025-12-22)
+- [Encointer pallets](https://github.com/encointer/pallets): Substrate pallets behind Encointer: local community currencies that pay a UBI to everyone who attends regular in-person meetups (Protocols; Rust; license GPL-3.0; 18 stars; last commit 2026-10-01)
+- [Group Income](https://github.com/okTurtles/group-income): End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum (Protocols; JavaScript; license AGPL-3.0; 349 stars; last commit 2026-10-26)
+- [UBI2](https://github.com/DemocracyEarth/ubi2): Experimental new UBI chain from Democracy Earth, started in June 2026: personhood is checked by AI, and 1 UBI per hour streams to every human (Protocols; Rust; license MIT; 6 stars; last commit 2026-10-13)
+- [UBI token (Proof of Humanity)](https://github.com/DemocracyEarth/ubi): The original $UBI token for Proof of Humanity: an ERC-20 that streams newly minted UBI to every registered human (Protocols; TypeScript; license ISC (package.json); 231 stars; last commit 2022-04-18; dormant)
+- [GoodDAPP](https://github.com/GoodDollar/GoodDAPP): The GoodDollar wallet: the web and React Native app where people claim their daily G$ (Apps & wallets; JavaScript; license MIT; 135 stars; last commit 2026-09-01)
+- [Cesium²](https://git.duniter.org/clients/cesium-grp/cesium2s): Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app (Apps & wallets; TypeScript; license AGPL-3.0; 6 stars; last commit 2026-10-26)
+- [Ğecko](https://git.duniter.org/clients/gecko): Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s (Apps & wallets; Dart; license AGPL-3.0; 8 stars; last commit 2026-10-24)
+- [Encointer wallet](https://github.com/encointer/encointer-wallet-flutter): Mobile wallet for Encointer: join the in-person meetups, receive the community currency UBI and pay locally (Apps & wallets; Dart; license Apache-2.0; 27 stars; last commit 2026-06-29)
+- [World ID protocol](https://github.com/worldcoin/world-id-protocol): Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin) (Proof of personhood; Rust; license MIT; 42 stars; last commit 2026-10-27)
+- [Proof of Humanity v2 contracts](https://github.com/Proof-Of-Humanity/proof-of-humanity-v2-contracts): Smart contracts for Proof of Humanity v2: a registry of humans built on video submissions, vouching and Kleros disputes, which UBI tokens build on (Proof of personhood; TypeScript; license MIT (package.json); 22 stars; last commit 2026-05-07)
+- [PolicyEngine US](https://github.com/PolicyEngine/policyengine-us): Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms (Simulators & research; Python; license AGPL-3.0; 170 stars; last commit 2026-10-28)
+- [OpenFisca](https://github.com/openfisca/openfisca-core): Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes (Simulators & research; Python; license AGPL-3.0; 249 stars; last commit 2026-10-23)
+- [MOSAIC model](https://github.com/Mosaic-AI-Policy-Institute/mosaic-model): Economic model for funding a universal basic income from AI-automation dividends (Simulators & research; Jupyter Notebook; license MIT; 2 stars; last commit 2026-01-28)
 
 ## Other languages
 

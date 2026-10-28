@@ -2096,6 +2096,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-10-28",
+      "ja": "ベーシックインカムのオープンソースプロジェクトの一覧を追加",
+      "en": "Added a list of open-source basic income projects",
+      "zh": "新增基本收入开源项目列表",
+      "hi": "बेसिक इनकम के ओपन-सोर्स प्रोजेक्ट की सूची जोड़ी",
+      "es": "Añadida una lista de proyectos de código abierto sobre renta básica",
+      "de": "Liste von Open-Source-Projekten zum Grundeinkommen hinzugefügt",
+      "ar": "أضفنا قائمة بمشاريع الدخل الأساسي المفتوحة المصدر"
+    },
+    {
+      "date": "2026-10-28",
       "ja": "更新情報のRSSフィードを追加",
       "en": "Added RSS feeds for updates",
       "zh": "新增更新信息的 RSS 订阅",
@@ -2682,7 +2692,24 @@ module.exports = {
       "essayOpinion": "意見",
       "essaySources": "出典",
       "essayPublished": "公開",
-      "rssLabel": "RSSフィード"
+      "rssLabel": "RSSフィード",
+      "ossTitle": "ベーシックインカムのオープンソース",
+      "ossH1": "ベーシックインカムを支えるオープンソースのコード",
+      "ossDesc": "ベーシックインカムにかかわるオープンソースのコードの一覧。UBIのプロトコル、ウォレット、人間であることの証明、政策シミュレーターを、ライセンス・スター数・最終コミット日つきで紹介。",
+      "ossIntro": "だれでも読めて、動かせて、改良できるベーシックインカムのコード。UBIを発行するプロトコル、受け取りに使うウォレット、人間であることを証明するしくみ、ベーシックインカムの費用を見積もるシミュレーターを集めた。スター数と最終コミット日はサイトのビルド時に GitHub と GitLab から取得し、12か月以上コミットがないものには「休眠中」と表示する。",
+      "ossSecH": "ベーシックインカムを動かすオープンソースのコード",
+      "ossSecP": "ソースコードが公開されているUBIのプロトコル、ウォレット、人間証明のしくみ、政策シミュレーター。読むのも、動かすのも、貢献するのも自由。",
+      "ossSecBtn": "オープンソースのプロジェクトをすべて見る（{n}）",
+      "ossLang": "言語",
+      "ossLicense": "ライセンス",
+      "ossStars": "スター",
+      "ossLastCommit": "最終コミット",
+      "ossDormant": "休眠中",
+      "ossDormantTip": "12か月以上コミットがない",
+      "ossArchived": "アーカイブ済み",
+      "ossEssay": "関連エッセイ",
+      "ossFetched": "スター数とコミット日は {date} 時点",
+      "ossUnknown": "不明"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2848,7 +2875,24 @@ module.exports = {
       "essayOpinion": "Opinion",
       "essaySources": "Sources",
       "essayPublished": "Published",
-      "rssLabel": "RSS feed"
+      "rssLabel": "RSS feed",
+      "ossTitle": "Open-source basic income projects",
+      "ossH1": "Open-source code for basic income",
+      "ossDesc": "A curated list of open-source code projects behind basic income: UBI protocols, wallets, proof of personhood and policy simulators, with license, stars and last commit date.",
+      "ossIntro": "The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant.",
+      "ossSecH": "Open-source code behind basic income",
+      "ossSecP": "UBI protocols, wallets, proof-of-personhood systems and policy simulators whose source code is public. Read it, run it or contribute.",
+      "ossSecBtn": "See all open-source projects ({n})",
+      "ossLang": "Language",
+      "ossLicense": "License",
+      "ossStars": "Stars",
+      "ossLastCommit": "Last commit",
+      "ossDormant": "Dormant",
+      "ossDormantTip": "No commits in over 12 months",
+      "ossArchived": "Archived",
+      "ossEssay": "Related essay",
+      "ossFetched": "Stars and commit dates as of {date}",
+      "ossUnknown": "Unknown"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3014,7 +3058,24 @@ module.exports = {
       "essayOpinion": "राय",
       "essaySources": "स्रोत",
       "essayPublished": "प्रकाशित",
-      "rssLabel": "RSS फ़ीड"
+      "rssLabel": "RSS फ़ीड",
+      "ossTitle": "बेसिक इनकम के ओपन-सोर्स प्रोजेक्ट",
+      "ossH1": "बेसिक इनकम का ओपन-सोर्स कोड",
+      "ossDesc": "बेसिक इनकम से जुड़े ओपन-सोर्स कोड प्रोजेक्ट की चुनी हुई सूची: UBI प्रोटोकॉल, वॉलेट, इंसान होने का प्रमाण और नीति सिम्युलेटर, लाइसेंस, स्टार और आख़िरी कमिट की तारीख के साथ।",
+      "ossIntro": "बेसिक इनकम का वह कोड जिसे कोई भी पढ़, चला या बेहतर बना सकता है: UBI जारी करने वाले प्रोटोकॉल, उसे क्लेम करने के वॉलेट, इंसान होने का प्रमाण देने वाले सिस्टम और बेसिक इनकम की लागत का अनुमान लगाने वाले सिम्युलेटर। स्टार और आख़िरी कमिट की तारीख साइट बनाते समय GitHub और GitLab से ली जाती है, और 12 महीने से ज़्यादा समय से बिना कमिट वाले प्रोजेक्ट “निष्क्रिय” दिखाए जाते हैं।",
+      "ossSecH": "बेसिक इनकम के पीछे का ओपन-सोर्स कोड",
+      "ossSecP": "UBI प्रोटोकॉल, वॉलेट, इंसान होने का प्रमाण देने वाले सिस्टम और नीति सिम्युलेटर, जिनका सोर्स कोड सार्वजनिक है। पढ़ें, चलाएँ या योगदान दें।",
+      "ossSecBtn": "सभी ओपन-सोर्स प्रोजेक्ट देखें ({n})",
+      "ossLang": "भाषा",
+      "ossLicense": "लाइसेंस",
+      "ossStars": "स्टार",
+      "ossLastCommit": "आख़िरी कमिट",
+      "ossDormant": "निष्क्रिय",
+      "ossDormantTip": "12 महीने से ज़्यादा समय से कोई कमिट नहीं",
+      "ossArchived": "आर्काइव किया गया",
+      "ossEssay": "संबंधित निबंध",
+      "ossFetched": "स्टार और कमिट की तारीख {date} के अनुसार",
+      "ossUnknown": "अज्ञात"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3180,7 +3241,24 @@ module.exports = {
       "essayOpinion": "观点",
       "essaySources": "出处",
       "essayPublished": "发布",
-      "rssLabel": "RSS 订阅"
+      "rssLabel": "RSS 订阅",
+      "ossTitle": "基本收入开源项目",
+      "ossH1": "基本收入的开源代码",
+      "ossDesc": "与基本收入相关的开源代码项目精选：UBI 协议、钱包、人格证明和政策模拟器，附许可证、星标数和最后提交日期。",
+      "ossIntro": "任何人都能阅读、运行或改进的基本收入代码：发放 UBI 的协议、用来领取的钱包、人格证明系统，以及估算基本收入成本的模拟器。星标数和最后提交日期在网站构建时从 GitHub 和 GitLab 获取，超过 12 个月没有提交的项目会标为“休眠”。",
+      "ossSecH": "支撑基本收入的开源代码",
+      "ossSecP": "源代码公开的 UBI 协议、钱包、人格证明系统和政策模拟器。可以阅读、运行，也欢迎参与贡献。",
+      "ossSecBtn": "查看全部开源项目（{n}）",
+      "ossLang": "语言",
+      "ossLicense": "许可证",
+      "ossStars": "星标",
+      "ossLastCommit": "最后提交",
+      "ossDormant": "休眠",
+      "ossDormantTip": "超过 12 个月没有提交",
+      "ossArchived": "已归档",
+      "ossEssay": "相关随笔",
+      "ossFetched": "星标数和提交日期截至 {date}",
+      "ossUnknown": "未知"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3346,7 +3424,24 @@ module.exports = {
       "essayOpinion": "Opinión",
       "essaySources": "Fuentes",
       "essayPublished": "Publicado",
-      "rssLabel": "Feed RSS"
+      "rssLabel": "Feed RSS",
+      "ossTitle": "Proyectos de código abierto sobre renta básica",
+      "ossH1": "Código abierto para la renta básica",
+      "ossDesc": "Selección de proyectos de código abierto en torno a la renta básica: protocolos de RBU, billeteras, prueba de humanidad y simuladores de políticas, con licencia, estrellas y fecha del último commit.",
+      "ossIntro": "El código de la renta básica que cualquiera puede leer, ejecutar o mejorar: protocolos que emiten una RBU, las billeteras para cobrarla, sistemas de prueba de humanidad y simuladores que estiman cuánto costaría una renta básica. Las estrellas y la fecha del último commit se obtienen de GitHub y GitLab al generar el sitio, y los proyectos sin commits en más de 12 meses se marcan como inactivos.",
+      "ossSecH": "El código abierto detrás de la renta básica",
+      "ossSecP": "Protocolos de RBU, billeteras, sistemas de prueba de humanidad y simuladores de políticas con código fuente público. Léelo, ejecútalo o contribuye.",
+      "ossSecBtn": "Ver todos los proyectos de código abierto ({n})",
+      "ossLang": "Lenguaje",
+      "ossLicense": "Licencia",
+      "ossStars": "Estrellas",
+      "ossLastCommit": "Último commit",
+      "ossDormant": "Inactivo",
+      "ossDormantTip": "Sin commits en más de 12 meses",
+      "ossArchived": "Archivado",
+      "ossEssay": "Ensayo relacionado",
+      "ossFetched": "Estrellas y fechas de commit a {date}",
+      "ossUnknown": "Desconocido"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3512,7 +3607,24 @@ module.exports = {
       "essayOpinion": "رأي",
       "essaySources": "المصادر",
       "essayPublished": "نُشر",
-      "rssLabel": "خلاصة ⁦RSS⁩"
+      "rssLabel": "خلاصة ⁦RSS⁩",
+      "ossTitle": "مشاريع مفتوحة المصدر للدخل الأساسي",
+      "ossH1": "شيفرة مفتوحة المصدر للدخل الأساسي",
+      "ossDesc": "قائمة مختارة من مشاريع الشيفرة المفتوحة المصدر المتعلقة بالدخل الأساسي: بروتوكولات الدخل الأساسي والمحافظ وإثبات الإنسانية وأدوات محاكاة السياسات، مع الترخيص وعدد النجوم وتاريخ آخر إيداع.",
+      "ossIntro": "شيفرة الدخل الأساسي التي يستطيع أي شخص قراءتها أو تشغيلها أو تحسينها: بروتوكولات تُصدر دخلًا أساسيًا، والمحافظ المستخدمة للمطالبة به، وأنظمة إثبات الإنسانية، وأدوات محاكاة تقدّر تكلفة الدخل الأساسي. تُجلب أعداد النجوم وتواريخ آخر إيداع من ⁦GitHub⁩ و⁦GitLab⁩ عند بناء الموقع، وتُوسم المشاريع التي لم تشهد أي إيداع منذ أكثر من 12 شهرًا بأنها خاملة.",
+      "ossSecH": "الشيفرة المفتوحة المصدر وراء الدخل الأساسي",
+      "ossSecP": "بروتوكولات للدخل الأساسي ومحافظ وأنظمة لإثبات الإنسانية وأدوات لمحاكاة السياسات، شيفرتها المصدرية متاحة للجميع. اقرأها أو شغّلها أو ساهم فيها.",
+      "ossSecBtn": "عرض كل المشاريع المفتوحة المصدر ({n})",
+      "ossLang": "لغة البرمجة",
+      "ossLicense": "الترخيص",
+      "ossStars": "النجوم",
+      "ossLastCommit": "آخر إيداع",
+      "ossDormant": "خامل",
+      "ossDormantTip": "لا إيداعات منذ أكثر من 12 شهرًا",
+      "ossArchived": "مؤرشف",
+      "ossEssay": "مقال ذو صلة",
+      "ossFetched": "النجوم وتواريخ الإيداع حتى {date}",
+      "ossUnknown": "غير معروف"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3678,7 +3790,24 @@ module.exports = {
       "essayOpinion": "Meinung",
       "essaySources": "Quellen",
       "essayPublished": "Veröffentlicht",
-      "rssLabel": "RSS-Feed"
+      "rssLabel": "RSS-Feed",
+      "ossTitle": "Open-Source-Projekte zum Grundeinkommen",
+      "ossH1": "Open-Source-Code für das Grundeinkommen",
+      "ossDesc": "Eine kuratierte Liste von Open-Source-Projekten rund ums Grundeinkommen: UBI-Protokolle, Wallets, Personennachweise und Politik-Simulatoren, mit Lizenz, Sternen und Datum des letzten Commits.",
+      "ossIntro": "Code rund ums Grundeinkommen, den alle lesen, ausführen oder verbessern können: Protokolle, die ein Grundeinkommen ausgeben, Wallets zum Abholen, Systeme zum Nachweis, ein Mensch zu sein, und Simulatoren, die die Kosten eines Grundeinkommens schätzen. Sterne und das Datum des letzten Commits werden beim Bauen der Website von GitHub und GitLab abgerufen; Projekte ohne Commit seit über 12 Monaten sind als ruhend markiert.",
+      "ossSecH": "Der offene Code hinter dem Grundeinkommen",
+      "ossSecP": "UBI-Protokolle, Wallets, Personennachweis-Systeme und Politik-Simulatoren mit öffentlichem Quellcode. Lesen, ausführen oder mitmachen.",
+      "ossSecBtn": "Alle Open-Source-Projekte ansehen ({n})",
+      "ossLang": "Sprache",
+      "ossLicense": "Lizenz",
+      "ossStars": "Sterne",
+      "ossLastCommit": "Letzter Commit",
+      "ossDormant": "Ruhend",
+      "ossDormantTip": "Seit über 12 Monaten kein Commit",
+      "ossArchived": "Archiviert",
+      "ossEssay": "Passender Essay",
+      "ossFetched": "Sterne und Commit-Daten, Stand {date}",
+      "ossUnknown": "Unbekannt"
     }
   },
   "ORG_REGIONS": {
@@ -4187,6 +4316,365 @@ module.exports = {
     "givedirectly",
     "openresearch",
     "jabi"
+  ],
+  "OSS_GROUPS": [
+    {
+      "id": "protocols",
+      "name": {
+        "ja": "プロトコル",
+        "en": "Protocols",
+        "zh": "协议",
+        "hi": "प्रोटोकॉल",
+        "es": "Protocolos",
+        "ar": "البروتوكولات",
+        "de": "Protokolle"
+      }
+    },
+    {
+      "id": "apps",
+      "name": {
+        "ja": "アプリとウォレット",
+        "en": "Apps & wallets",
+        "zh": "应用与钱包",
+        "hi": "ऐप और वॉलेट",
+        "es": "Apps y billeteras",
+        "ar": "التطبيقات والمحافظ",
+        "de": "Apps & Wallets"
+      }
+    },
+    {
+      "id": "personhood",
+      "name": {
+        "ja": "人間であることの証明",
+        "en": "Proof of personhood",
+        "zh": "人格证明",
+        "hi": "इंसान होने का प्रमाण",
+        "es": "Prueba de humanidad",
+        "ar": "إثبات الإنسانية",
+        "de": "Personennachweis"
+      }
+    },
+    {
+      "id": "research",
+      "name": {
+        "ja": "シミュレーターと研究",
+        "en": "Simulators & research",
+        "zh": "模拟器与研究",
+        "hi": "सिम्युलेटर और शोध",
+        "es": "Simuladores e investigación",
+        "ar": "أدوات المحاكاة والأبحاث",
+        "de": "Simulatoren & Forschung"
+      }
+    }
+  ],
+  "OSS": [
+    {
+      "id": "circles-contracts-v2",
+      "group": "protocols",
+      "name": "Circles v2 contracts",
+      "host": "github.com",
+      "repo": "aboutcircles/circles-contracts-v2",
+      "svc": "circles",
+      "desc": {
+        "ja": "Gnosis Chain 上の Circles v2 のスマートコントラクト。一人ひとりが毎時間自分の通貨を発行し、人どうしの信頼でそれが流通する",
+        "en": "Smart contracts for Circles v2 on Gnosis Chain: every person mints their own currency each hour, and trust between people lets it circulate",
+        "zh": "Gnosis Chain 上 Circles v2 的智能合约：每个人每小时铸造自己的货币，人与人之间的信任让它流通起来",
+        "hi": "Gnosis Chain पर Circles v2 के स्मार्ट कॉन्ट्रैक्ट: हर व्यक्ति हर घंटे अपनी मुद्रा बनाता है, और लोगों के बीच भरोसे से वह चलन में आती है",
+        "es": "Contratos inteligentes de Circles v2 en Gnosis Chain: cada persona acuña su propia moneda cada hora y la confianza entre personas la hace circular",
+        "ar": "العقود الذكية لـ⁦Circles v2⁩ على ⁦Gnosis Chain⁩: يصكّ كل شخص عملته الخاصة كل ساعة، وتتيح الثقة بين الناس تداولها",
+        "de": "Smart Contracts für Circles v2 auf der Gnosis Chain: Jeder Mensch prägt stündlich seine eigene Währung, und Vertrauen zwischen Menschen bringt sie in Umlauf"
+      }
+    },
+    {
+      "id": "goodprotocol",
+      "group": "protocols",
+      "name": "GoodProtocol",
+      "host": "github.com",
+      "repo": "GoodDollar/GoodProtocol",
+      "svc": "gooddollar",
+      "desc": {
+        "ja": "GoodDollar のスマートコントラクト（第2版）。G$ トークン、ステーキングの利回りでまかなう準備金、毎日の UBI 受け取りのしくみ",
+        "en": "GoodDollar’s smart contracts (version 2): the G$ token, the reserve funded by staking yield, and the daily UBI claim",
+        "zh": "GoodDollar 的智能合约（第 2 版）：G$ 代币、由质押收益注资的储备金，以及每日领取 UBI 的机制",
+        "hi": "GoodDollar के स्मार्ट कॉन्ट्रैक्ट (संस्करण 2): G$ टोकन, स्टेकिंग की कमाई से भरा रिज़र्व और रोज़ाना UBI क्लेम",
+        "es": "Contratos inteligentes de GoodDollar (versión 2): el token G$, la reserva financiada con rendimientos de staking y el cobro diario de la RBU",
+        "ar": "العقود الذكية لـ⁦GoodDollar⁩ (الإصدار 2): رمز ⁦G$⁩، والاحتياطي الممول من عوائد التخزين، والمطالبة اليومية بالدخل الأساسي",
+        "de": "Die Smart Contracts von GoodDollar (Version 2): der G$-Token, die aus Staking-Erträgen finanzierte Reserve und das tägliche Abholen des Grundeinkommens"
+      }
+    },
+    {
+      "id": "duniter-v2s",
+      "group": "protocols",
+      "name": "Duniter v2s",
+      "host": "git.duniter.org",
+      "repo": "nodes/rust/duniter-v2s",
+      "svc": "g1",
+      "desc": {
+        "ja": "自由通貨 Ğ1 のノードソフトを Substrate で作り直したもの。信頼の網で認められたメンバー全員が毎日「ユニバーサル配当」を生み出す",
+        "en": "Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of its web of trust creates a universal dividend each day",
+        "zh": "用 Substrate 重写的自由货币 Ğ1 节点软件：信任网络中的每位成员每天都会产生一份全民红利",
+        "hi": "Ğ1 मुक्त मुद्रा का नोड सॉफ़्टवेयर, Substrate पर नए सिरे से बना: भरोसे के जाल का हर सदस्य रोज़ एक सार्वभौमिक लाभांश बनाता है",
+        "es": "Software de nodo de la moneda libre Ğ1, reescrito sobre Substrate: cada miembro de su red de confianza crea un dividendo universal cada día",
+        "ar": "برنامج العُقد للعملة الحرة ⁦Ğ1⁩، أعيد بناؤه على ⁦Substrate⁩: ينشئ كل عضو في شبكة الثقة الخاصة بها حصة أرباح شاملة كل يوم",
+        "de": "Node-Software der freien Währung Ğ1, neu gebaut auf Substrate: Jedes Mitglied ihres Vertrauensnetzes erzeugt täglich eine universelle Dividende"
+      }
+    },
+    {
+      "id": "gradido",
+      "group": "protocols",
+      "name": "Gradido",
+      "host": "github.com",
+      "repo": "gradido/gradido",
+      "svc": "gradido",
+      "desc": {
+        "ja": "Gradido のサーバー、ウェブウォレット、管理ツール。地域への貢献に対する「アクティブなベーシックインカム」として一人ひとりにお金を生み出す",
+        "en": "Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community",
+        "zh": "Gradido 的服务器、网页钱包和管理工具。它为每个人创造货币，作为对社区贡献的“积极基本收入”",
+        "hi": "Gradido का सर्वर, वेब वॉलेट और एडमिन टूल; यह समुदाय में योगदान के बदले हर व्यक्ति के लिए “सक्रिय बेसिक इनकम” के रूप में पैसा बनाता है",
+        "es": "Servidor, billetera web y herramientas de administración de Gradido, que crea dinero para cada persona como «renta básica activa» por contribuir a la comunidad",
+        "ar": "الخادم والمحفظة الإلكترونية وأدوات الإدارة لـ⁦Gradido⁩، الذي ينشئ المال لكل شخص بوصفه «دخلًا أساسيًا نشطًا» مقابل المساهمة في المجتمع",
+        "de": "Server, Web-Wallet und Admin-Werkzeuge für Gradido, das für jeden Menschen Geld als „aktives Grundeinkommen“ für Beiträge zur Gemeinschaft schöpft"
+      }
+    },
+    {
+      "id": "idena-go",
+      "group": "protocols",
+      "name": "Idena",
+      "host": "github.com",
+      "repo": "idena-network/idena-go",
+      "svc": "idena",
+      "desc": {
+        "ja": "Idena のノード。世界中で同時に AI が解きにくい「フリップ」テストを解いて人間であることを示し、認められた ID が報酬を受け取る",
+        "en": "Node for Idena, a blockchain where people prove they are human by solving AI-resistant “flip” puzzles at the same moment worldwide, and validated identities earn rewards",
+        "zh": "Idena 的节点。人们在全球同一时刻解答难以被 AI 破解的“翻转”谜题来证明自己是真人，通过验证的身份可获得奖励",
+        "hi": "Idena का नोड: इस ब्लॉकचेन पर लोग दुनिया भर में एक ही समय AI के लिए कठिन “फ़्लिप” पहेलियाँ हल करके इंसान साबित होते हैं, और सत्यापित पहचानों को इनाम मिलता है",
+        "es": "Nodo de Idena, una blockchain donde las personas demuestran ser humanas resolviendo a la vez en todo el mundo acertijos «flip» difíciles para la IA, y las identidades validadas reciben recompensas",
+        "ar": "عقدة ⁦Idena⁩، وهي سلسلة كتل يثبت فيها الناس أنهم بشر بحل ألغاز «الصور المقلوبة» الصعبة على الذكاء الاصطناعي في اللحظة نفسها حول العالم، وتحصل الهويات المُتحقَّق منها على مكافآت",
+        "de": "Node für Idena, eine Blockchain, auf der Menschen weltweit zur selben Zeit KI-resistente „Flip“-Rätsel lösen, um zu zeigen, dass sie Menschen sind; bestätigte Identitäten erhalten Belohnungen"
+      }
+    },
+    {
+      "id": "encointer-pallets",
+      "group": "protocols",
+      "name": "Encointer pallets",
+      "host": "github.com",
+      "repo": "encointer/pallets",
+      "desc": {
+        "ja": "Encointer を動かす Substrate のモジュール群。地域通貨ごとに、定期的な対面の集まりに参加した全員へ UBI を配る",
+        "en": "Substrate pallets behind Encointer: local community currencies that pay a UBI to everyone who attends regular in-person meetups",
+        "zh": "驱动 Encointer 的 Substrate 模块：各地的社区货币向定期参加线下聚会的每个人发放 UBI",
+        "hi": "Encointer के पीछे के Substrate पैलेट: स्थानीय सामुदायिक मुद्राएँ, जो नियमित आमने-सामने की मीटअप में आने वाले हर व्यक्ति को UBI देती हैं",
+        "es": "Pallets de Substrate detrás de Encointer: monedas comunitarias locales que pagan una RBU a todos los que asisten a encuentros presenciales periódicos",
+        "ar": "وحدات ⁦Substrate⁩ التي يقوم عليها ⁦Encointer⁩: عملات مجتمعية محلية تدفع دخلًا أساسيًا لكل من يحضر لقاءات وجاهية دورية",
+        "de": "Substrate-Pallets hinter Encointer: lokale Gemeinschaftswährungen, die allen, die regelmäßig zu persönlichen Treffen kommen, ein Grundeinkommen zahlen"
+      }
+    },
+    {
+      "id": "group-income",
+      "group": "protocols",
+      "name": "Group Income",
+      "host": "github.com",
+      "repo": "okTurtles/group-income",
+      "org": "groupincome",
+      "desc": {
+        "ja": "エンドツーエンド暗号化された、仲間うちのベーシックインカムのアプリ。メンバーが毎月お金を出しあい、全員が決めた最低額を下回らないようにする",
+        "en": "End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum",
+        "zh": "端到端加密的点对点基本收入应用：朋友们每月认捐，让群组里每个人的收入都不低于约定的最低额",
+        "hi": "आपसी बेसिक इनकम के लिए एंड-टू-एंड एन्क्रिप्टेड ऐप: दोस्त हर महीने पैसे देने का वादा करते हैं ताकि समूह में हर किसी की आय तय न्यूनतम से ऊपर रहे",
+        "es": "App cifrada de extremo a extremo para una renta básica entre pares: los amigos aportan dinero cada mes para que nadie del grupo quede por debajo de un mínimo acordado",
+        "ar": "تطبيق مشفّر من طرف إلى طرف لدخل أساسي بين الأصدقاء: يتعهد الأعضاء بمبلغ كل شهر كي لا يقل دخل أي فرد في المجموعة عن حد أدنى متفق عليه",
+        "de": "Ende-zu-Ende-verschlüsselte App für ein Grundeinkommen unter Freunden: Alle sagen monatlich Beiträge zu, damit niemand in der Gruppe unter ein vereinbartes Minimum fällt"
+      }
+    },
+    {
+      "id": "ubi2",
+      "group": "protocols",
+      "name": "UBI2",
+      "host": "github.com",
+      "repo": "DemocracyEarth/ubi2",
+      "desc": {
+        "ja": "Democracy Earth が2026年6月に始めた実験的な新しい UBI チェーン。AI で人間であることを確かめ、1時間に 1 UBI を一人ひとりに流し続ける",
+        "en": "Experimental new UBI chain from Democracy Earth, started in June 2026: personhood is checked by AI, and 1 UBI per hour streams to every human",
+        "zh": "Democracy Earth 于 2026 年 6 月创建的实验性新 UBI 链：由 AI 核验人格，每小时向每个人持续流入 1 UBI",
+        "hi": "Democracy Earth की प्रयोगात्मक नई UBI चेन (जून 2026 में शुरू): इंसान होने की जाँच AI करता है, और हर इंसान को हर घंटे 1 UBI लगातार मिलता है",
+        "es": "Nueva cadena experimental de RBU de Democracy Earth, creada en junio de 2026: la IA comprueba la humanidad y cada persona recibe un flujo de 1 UBI por hora",
+        "ar": "سلسلة دخل أساسي جديدة وتجريبية من ⁦Democracy Earth⁩ أُنشئت في يونيو 2026: يتحقق الذكاء الاصطناعي من الإنسانية، ويتدفق ⁦1 UBI⁩ كل ساعة إلى كل إنسان",
+        "de": "Experimentelle neue UBI-Chain von Democracy Earth, gestartet im Juni 2026: Die Menschlichkeit prüft eine KI, und jedem Menschen fließt stündlich 1 UBI zu"
+      }
+    },
+    {
+      "id": "ubi-token",
+      "group": "protocols",
+      "name": "UBI token (Proof of Humanity)",
+      "host": "github.com",
+      "repo": "DemocracyEarth/ubi",
+      "licenseNote": "ISC (package.json)",
+      "desc": {
+        "ja": "Proof of Humanity 向けの最初の $UBI トークン。登録された人間一人ひとりに、新しく発行した UBI を流し続ける ERC-20",
+        "en": "The original $UBI token for Proof of Humanity: an ERC-20 that streams newly minted UBI to every registered human",
+        "zh": "为 Proof of Humanity 打造的最初的 $UBI 代币：一种向每位注册真人持续流入新铸造 UBI 的 ERC-20",
+        "hi": "Proof of Humanity के लिए मूल $UBI टोकन: एक ERC-20 जो हर पंजीकृत इंसान को नया बना UBI लगातार भेजता है",
+        "es": "El token $UBI original de Proof of Humanity: un ERC-20 que envía un flujo de UBI recién acuñado a cada humano registrado",
+        "ar": "رمز ⁦$UBI⁩ الأصلي لـ⁦Proof of Humanity⁩: رمز ⁦ERC-20⁩ يضخ ⁦UBI⁩ المصكوك حديثًا بتدفق مستمر إلى كل إنسان مسجل",
+        "de": "Der ursprüngliche $UBI-Token für Proof of Humanity: ein ERC-20, der neu geprägte UBI fortlaufend an jeden registrierten Menschen streamt"
+      }
+    },
+    {
+      "id": "gooddapp",
+      "group": "apps",
+      "name": "GoodDAPP",
+      "host": "github.com",
+      "repo": "GoodDollar/GoodDAPP",
+      "svc": "gooddollar",
+      "desc": {
+        "ja": "GoodDollar のウォレット。毎日の G$ を受け取るためのウェブ／React Native アプリ",
+        "en": "The GoodDollar wallet: the web and React Native app where people claim their daily G$",
+        "zh": "GoodDollar 钱包：用来每天领取 G$ 的网页与 React Native 应用",
+        "hi": "GoodDollar वॉलेट: वेब और React Native ऐप, जिससे लोग अपना रोज़ का G$ क्लेम करते हैं",
+        "es": "La billetera de GoodDollar: la app web y React Native donde se cobra el G$ diario",
+        "ar": "محفظة ⁦GoodDollar⁩: تطبيق الويب و⁦React Native⁩ الذي يطالب فيه الناس بحصتهم اليومية من ⁦G$⁩",
+        "de": "Die GoodDollar-Wallet: die Web- und React-Native-App, mit der man sein tägliches G$ abholt"
+      }
+    },
+    {
+      "id": "cesium2s",
+      "group": "apps",
+      "name": "Cesium²",
+      "host": "git.duniter.org",
+      "repo": "clients/cesium-grp/cesium2s",
+      "svc": "g1",
+      "desc": {
+        "ja": "Duniter v2s 向けの Ğ1 のウォレット兼「信頼の網」エクスプローラー。Cesium アプリの後継",
+        "en": "Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app",
+        "zh": "面向 Duniter v2s 的 Ğ1 钱包和信任网络浏览器，是 Cesium 应用的后继者",
+        "hi": "Duniter v2s के लिए Ğ1 वॉलेट और भरोसे के जाल का एक्सप्लोरर, Cesium ऐप का उत्तराधिकारी",
+        "es": "Billetera de Ğ1 y explorador de la red de confianza para Duniter v2s, sucesor de la app Cesium",
+        "ar": "محفظة ⁦Ğ1⁩ ومستكشف لشبكة الثقة على ⁦Duniter v2s⁩، وهي خليفة تطبيق ⁦Cesium⁩",
+        "de": "Ğ1-Wallet und Explorer für das Vertrauensnetz auf Duniter v2s, Nachfolger der Cesium-App"
+      }
+    },
+    {
+      "id": "gecko",
+      "group": "apps",
+      "name": "Ğecko",
+      "host": "git.duniter.org",
+      "repo": "clients/gecko",
+      "svc": "g1",
+      "desc": {
+        "ja": "Ğ1 のモバイルウォレット（Flutter 製）。Duniter v2s 上で自由通貨を送ったり受け取ったりできる",
+        "en": "Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s",
+        "zh": "Ğ1 的移动钱包（基于 Flutter），可在 Duniter v2s 上收发这种自由货币",
+        "hi": "Ğ1 का मोबाइल वॉलेट (Flutter से बना), जिससे Duniter v2s पर यह मुक्त मुद्रा भेजी और पाई जा सकती है",
+        "es": "Billetera móvil de Ğ1, hecha con Flutter, para enviar y recibir la moneda libre en Duniter v2s",
+        "ar": "محفظة جوال لـ⁦Ğ1⁩ مبنية بـ⁦Flutter⁩، لإرسال العملة الحرة واستلامها على ⁦Duniter v2s⁩",
+        "de": "Mobile Wallet für Ğ1, gebaut mit Flutter, zum Senden und Empfangen der freien Währung auf Duniter v2s"
+      }
+    },
+    {
+      "id": "encointer-wallet",
+      "group": "apps",
+      "name": "Encointer wallet",
+      "host": "github.com",
+      "repo": "encointer/encointer-wallet-flutter",
+      "desc": {
+        "ja": "Encointer のモバイルウォレット。対面の集まり（セレモニー）に参加し、地域通貨の UBI を受け取って地元で支払える",
+        "en": "Mobile wallet for Encointer: join the in-person meetups, receive the community currency UBI and pay locally",
+        "zh": "Encointer 的移动钱包：参加线下聚会、领取社区货币 UBI 并在本地支付",
+        "hi": "Encointer का मोबाइल वॉलेट: आमने-सामने की मीटअप में शामिल हों, सामुदायिक मुद्रा का UBI पाएँ और स्थानीय रूप से भुगतान करें",
+        "es": "Billetera móvil de Encointer: únete a los encuentros presenciales, recibe la RBU en moneda comunitaria y paga en tu zona",
+        "ar": "محفظة جوال لـ⁦Encointer⁩: انضم إلى اللقاءات الوجاهية، واستلم الدخل الأساسي بالعملة المجتمعية، وادفع محليًا",
+        "de": "Mobile Wallet für Encointer: an den persönlichen Treffen teilnehmen, das Grundeinkommen in Gemeinschaftswährung erhalten und vor Ort bezahlen"
+      }
+    },
+    {
+      "id": "world-id-protocol",
+      "group": "personhood",
+      "name": "World ID protocol",
+      "host": "github.com",
+      "repo": "worldcoin/world-id-protocol",
+      "verify": "world-id",
+      "desc": {
+        "ja": "World ID の中核プロトコルと開発者向けドキュメント。World（旧 Worldcoin）の匿名の「人間であることの証明」",
+        "en": "Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)",
+        "zh": "World ID 的核心协议与开发者文档，即 World（原 Worldcoin）的匿名人格证明",
+        "hi": "World ID का मूल प्रोटोकॉल और डेवलपर दस्तावेज़: World (पहले Worldcoin) का गुमनाम “इंसान होने का प्रमाण”",
+        "es": "Protocolo central y documentación para desarrolladores de World ID, la prueba de humanidad anónima de World (antes Worldcoin)",
+        "ar": "البروتوكول الأساسي ووثائق المطورين لـ⁦World ID⁩، وهو إثبات الإنسانية المجهول الهوية من ⁦World⁩ (سابقًا ⁦Worldcoin⁩)",
+        "de": "Kernprotokoll und Entwicklerdoku für World ID, den anonymen Personennachweis von World (früher Worldcoin)"
+      }
+    },
+    {
+      "id": "poh-v2",
+      "group": "personhood",
+      "name": "Proof of Humanity v2 contracts",
+      "host": "github.com",
+      "repo": "Proof-Of-Humanity/proof-of-humanity-v2-contracts",
+      "licenseNote": "MIT (package.json)",
+      "desc": {
+        "ja": "Proof of Humanity v2 のスマートコントラクト。動画での登録、保証（vouching）、Kleros の紛争解決で人間の名簿を作り、UBI トークンの土台になる",
+        "en": "Smart contracts for Proof of Humanity v2: a registry of humans built on video submissions, vouching and Kleros disputes, which UBI tokens build on",
+        "zh": "Proof of Humanity v2 的智能合约：通过视频提交、担保和 Kleros 争议裁决建立的真人名册，UBI 代币以此为基础",
+        "hi": "Proof of Humanity v2 के स्मार्ट कॉन्ट्रैक्ट: वीडियो सबमिशन, वाउचिंग और Kleros विवाद निपटारे से बना इंसानों का रजिस्टर, जिस पर UBI टोकन टिके हैं",
+        "es": "Contratos inteligentes de Proof of Humanity v2: un registro de humanos basado en vídeos, avales y disputas en Kleros, sobre el que se construyen tokens de RBU",
+        "ar": "العقود الذكية لـ⁦Proof of Humanity v2⁩: سجل للبشر يقوم على تقديم مقاطع فيديو والتزكية وتحكيم النزاعات عبر ⁦Kleros⁩، وتُبنى عليه رموز الدخل الأساسي",
+        "de": "Smart Contracts für Proof of Humanity v2: ein Register von Menschen auf Basis von Video-Einreichungen, Bürgschaften und Kleros-Streitfällen, auf dem UBI-Token aufbauen"
+      }
+    },
+    {
+      "id": "policyengine-us",
+      "group": "research",
+      "name": "PolicyEngine US",
+      "host": "github.com",
+      "repo": "PolicyEngine/policyengine-us",
+      "desc": {
+        "ja": "米国の税と社会保障のルールを計算するエンジン。UBI などの改革にかかる費用や貧困への影響の試算に使われる",
+        "en": "Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms",
+        "zh": "美国税收与福利制度的规则引擎，用于测算 UBI 等改革的成本及其对贫困的影响",
+        "hi": "अमेरिका की कर और लाभ प्रणाली का रूल्स इंजन, जिससे UBI और दूसरे सुधारों की लागत और ग़रीबी पर असर का मॉडल बनाया जाता है",
+        "es": "Motor de reglas del sistema fiscal y de prestaciones de EE. UU., usado para modelar el coste y el efecto sobre la pobreza de la RBU y otras reformas",
+        "ar": "محرك قواعد لنظام الضرائب والإعانات الأمريكي، يُستخدم لنمذجة تكلفة الدخل الأساسي وغيره من الإصلاحات وأثرها على الفقر",
+        "de": "Regel-Engine für das US-Steuer- und Sozialleistungssystem, mit der Kosten und Armutswirkung eines Grundeinkommens und anderer Reformen modelliert werden"
+      }
+    },
+    {
+      "id": "openfisca-core",
+      "group": "research",
+      "name": "OpenFisca",
+      "host": "github.com",
+      "repo": "openfisca/openfisca-core",
+      "desc": {
+        "ja": "税と給付のルールをコードで書くためのオープンなエンジン。これを使った各国のモデルでベーシックインカム案を試算できる",
+        "en": "Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes",
+        "zh": "把税收与福利规则写成代码的开放引擎；基于它的各国模型可用来模拟基本收入方案",
+        "hi": "कर और लाभ के नियमों को कोड के रूप में लिखने का खुला इंजन; इस पर बने देशों के मॉडल से बेसिक इनकम योजनाओं का सिमुलेशन होता है",
+        "es": "Motor abierto para escribir como código las reglas fiscales y de prestaciones; los modelos nacionales basados en él sirven para simular propuestas de renta básica",
+        "ar": "محرك مفتوح لكتابة قواعد الضرائب والإعانات على هيئة شيفرة؛ وتُستخدم النماذج الوطنية المبنية عليه لمحاكاة مقترحات الدخل الأساسي",
+        "de": "Offene Engine, um Steuer- und Leistungsregeln als Code zu schreiben; darauf aufbauende Ländermodelle dienen zur Simulation von Grundeinkommensmodellen"
+      }
+    },
+    {
+      "id": "mosaic-model",
+      "group": "research",
+      "name": "MOSAIC model",
+      "host": "github.com",
+      "repo": "Mosaic-AI-Policy-Institute/mosaic-model",
+      "essay": "ai-agent-basic-income",
+      "desc": {
+        "ja": "AI による自動化の利益を「配当」にして、ユニバーサル・ベーシックインカムの財源にする経済モデル",
+        "en": "Economic model for funding a universal basic income from AI-automation dividends",
+        "zh": "用 AI 自动化红利为全民基本收入提供资金的经济模型",
+        "hi": "AI ऑटोमेशन से होने वाले लाभांश से सार्वभौमिक बेसिक इनकम का ख़र्च उठाने का आर्थिक मॉडल",
+        "es": "Modelo económico para financiar una renta básica universal con dividendos de la automatización por IA",
+        "ar": "نموذج اقتصادي لتمويل دخل أساسي شامل من أرباح الأتمتة بالذكاء الاصطناعي",
+        "de": "Wirtschaftsmodell, um ein bedingungsloses Grundeinkommen aus Dividenden der KI-Automatisierung zu finanzieren"
+      }
+    }
+  ],
+  "OSS_PREVIEW": [
+    "group-income",
+    "ubi2",
+    "duniter-v2s",
+    "policyengine-us"
   ],
   "GRAVE": [
     {
