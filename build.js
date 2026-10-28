@@ -1,7 +1,7 @@
 // 使い方: node build.js  →  public/ に全言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
 const fs = require('fs');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE } = require('./src/data.js');
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
@@ -42,6 +42,9 @@ const orgAbs = l => SITE_URL + orgPath(l);
 // 終了したサービスの墓場: /graveyard/ と /{lang}/graveyard/
 const gravePath = l => `${urlPath(l)}graveyard/`;
 const graveAbs = l => SITE_URL + gravePath(l);
+// ベーシックインカム社会実験の年表: /timeline/ と /{lang}/timeline/
+const tlPath = l => `${urlPath(l)}timeline/`;
+const tlAbs = l => SITE_URL + tlPath(l);
 // 認証方法ごとのページ: /verify/{method}/。必須・任意あわせて2件以上あるものだけ作る
 const verifyPath = (l, m) => `${urlPath(l)}verify/${m}/`;
 const verifyAbs = (l, m) => SITE_URL + verifyPath(l, m);
@@ -456,6 +459,22 @@ const DETAIL_CSS = `
 .verify-line a,.verify-line span{padding:2px 10px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
+.tl{list-style:none;margin:16px 0 0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;top:6px;bottom:6px;inset-inline-start:7px;width:2px;background:linear-gradient(var(--accent),var(--gold));opacity:.6}
+.tl-item{position:relative;padding-inline-start:30px;padding-bottom:22px}
+.tl-item::before{content:"";position:absolute;inset-inline-start:0;top:4px;width:16px;height:16px;border-radius:50%;background:var(--surface);border:3px solid var(--accent)}
+.tl-crypto::before{border-color:#7C5CFF}.tl-gov::before{border-color:#2F7BEA}.tl-ngo::before{border-color:#1FB57A}.tl-private::before{border-color:#F08A24}
+.tl-when{font-size:1rem;color:var(--accent);margin-bottom:6px}
+.tl-card{padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);display:grid;gap:6px;box-shadow:var(--shadow)}
+.tl-type{justify-self:start;font-size:.7rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.tl-card h2{font-family:var(--f-body);font-weight:700;font-size:1.08rem;overflow-wrap:anywhere}
+.tl-place{font-size:.8rem;color:var(--muted)}
+.tl-card dl{margin:4px 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.86rem;line-height:1.7}
+.tl-card dt{color:var(--muted);font-size:.74rem;padding-top:.15em;white-space:nowrap}
+.tl-card dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.tl-links{font-size:.8rem}.tl-links span{color:var(--muted)}
+.tl-more{margin-top:24px;font-size:.92rem}
+@media (max-width:520px){.tl-card dl{grid-template-columns:1fr}.tl-card dt{padding-top:6px}}
 .graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
 .grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .tomb{flex:none;color:var(--muted);margin-top:2px}
@@ -625,9 +644,44 @@ function orgsPage(lang) {
 <header class="orgs-head"><p class="eyebrow">ORGANIZATIONS</p><h1>${esc(L.orgsH1)}</h1><p class="orgs-intro">${esc(L.orgsIntro)}</p>
 <nav class="org-toc" aria-label="${esc(L.navLabel)}">${ORG_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}</nav></header>
 ${groups}
+<p class="tl-more"><a href="${tlPath(lang)}">${esc(L.tlLink)} →</a></p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   return shell(lang, { title, desc: L.orgsDesc, hrefFor: orgAbs, pathFor: orgPath, ld, ogType: 'website', body });
+}
+
+// ---- ベーシックインカム社会実験の年表（/timeline/）。縦のタイムライン（RTLでは左右が反転）
+function timelinePage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const title = `${L.tlTitle} | ${L.title}`;
+  const TYPE = { gov: L.tlGov, ngo: L.tlNgo, private: L.tlPrivate, crypto: L.tlCrypto };
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: L.tlTitle, item: tlAbs(lang) },
+    ],
+  };
+  const t = (o) => (o[lang] || o.en);
+  const items = TIMELINE.map(i => {
+    const links = [];
+    const svc = i.svc && live.find(x => x.id === i.svc);
+    if (svc) links.push(`<a href="${svcPath(lang, svc)}">${esc(sName(svc, lang))}</a>`);
+    const org = i.org && ORGS.find(o => o.id === i.org);
+    if (org) links.push(`<a href="${orgPath(lang)}#org-${org.id}">${esc(L.orgsTitle)}: ${esc(org.name)}</a>`);
+    if (i.grave) links.push(`<a href="${gravePath(lang)}#grave-${i.grave}">${esc(L.graveTitle)}</a>`);
+    return `<li class="tl-item tl-${i.type}" id="tl-${i.id}"><div class="tl-when"><span class="dot" dir="ltr">${esc(i.years)}</span></div><div class="tl-card"><p class="tl-type">${esc(TYPE[i.type])}</p><h2 dir="auto">${esc(i.name)}</h2><p class="tl-place">${esc(t(i.place))}</p>
+<dl><dt>${esc(L.tlWho)}</dt><dd>${esc(t(i.who))}</dd><dt>${esc(L.tlPaid)}</dt><dd>${esc(t(i.paid))}</dd>${t(i.result) ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(t(i.result))}</dd>` : ''}<dt>${esc(L.tlSource)}</dt><dd><a href="${esc(i.source)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(i.source).hostname.replace(/^www\./, ''))}</a></dd></dl>${links.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${links.join(' · ')}</p>` : ''}</div></li>`;
+  }).join('\n');
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.tlTitle)}</li></ol></nav>
+<main class="orgs">
+<header class="orgs-head"><p class="eyebrow">TIMELINE</p><h1>${esc(L.tlTitle)}</h1><p class="orgs-intro">${esc(L.tlIntro)}</p></header>
+<ol class="tl">${items}</ol>
+<p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a></p>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  return shell(lang, { title, desc: L.tlDesc, hrefFor: tlAbs, pathFor: tlPath, ld, ogType: 'website', body });
 }
 
 // ---- 認証方法ごとのページ（/verify/{method}/）。カードは一覧と同じ部品を使う。必須を先、任意を後に
@@ -697,6 +751,9 @@ for (const lang of LANGS) {
   const gdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'graveyard');
   fs.mkdirSync(gdir, { recursive: true });
   fs.writeFileSync(path.join(gdir, 'index.html'), graveyardPage(lang));
+  const tdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'timeline');
+  fs.mkdirSync(tdir, { recursive: true });
+  fs.writeFileSync(path.join(tdir, 'index.html'), timelinePage(lang));
   for (const m of verifyPages) {
     const vdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'verify', m);
     fs.mkdirSync(vdir, { recursive: true });
@@ -718,7 +775,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);

@@ -262,6 +262,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .orgs-mini span{font-size:.72rem;color:var(--muted)}
 .orgs-mini p{font-size:.84rem;color:var(--muted);line-height:1.6}
 .orgs-btn{justify-self:start;border-radius:999px;padding:10px 22px}
+.orgs-tl{justify-self:start;font-size:.9rem;font-weight:700;text-underline-offset:3px}
 .foot a{color:inherit;text-underline-offset:3px}
 .xlink{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
 .xlink:hover span{text-decoration:underline}
@@ -514,6 +515,22 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .verify-line a,.verify-line span{padding:2px 10px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
+.tl{list-style:none;margin:16px 0 0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;top:6px;bottom:6px;inset-inline-start:7px;width:2px;background:linear-gradient(var(--accent),var(--gold));opacity:.6}
+.tl-item{position:relative;padding-inline-start:30px;padding-bottom:22px}
+.tl-item::before{content:"";position:absolute;inset-inline-start:0;top:4px;width:16px;height:16px;border-radius:50%;background:var(--surface);border:3px solid var(--accent)}
+.tl-crypto::before{border-color:#7C5CFF}.tl-gov::before{border-color:#2F7BEA}.tl-ngo::before{border-color:#1FB57A}.tl-private::before{border-color:#F08A24}
+.tl-when{font-size:1rem;color:var(--accent);margin-bottom:6px}
+.tl-card{padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);display:grid;gap:6px;box-shadow:var(--shadow)}
+.tl-type{justify-self:start;font-size:.7rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.tl-card h2{font-family:var(--f-body);font-weight:700;font-size:1.08rem;overflow-wrap:anywhere}
+.tl-place{font-size:.8rem;color:var(--muted)}
+.tl-card dl{margin:4px 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.86rem;line-height:1.7}
+.tl-card dt{color:var(--muted);font-size:.74rem;padding-top:.15em;white-space:nowrap}
+.tl-card dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.tl-links{font-size:.8rem}.tl-links span{color:var(--muted)}
+.tl-more{margin-top:24px;font-size:.92rem}
+@media (max-width:520px){.tl-card dl{grid-template-columns:1fr}.tl-card dt{padding-top:6px}}
 .graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
 .grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .tomb{flex:none;color:var(--muted);margin-top:2px}

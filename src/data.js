@@ -2096,6 +2096,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-10-28",
+      "ja": "ベーシックインカム社会実験の年表を追加",
+      "en": "Added a timeline of basic income experiments",
+      "zh": "新增基本收入实验年表",
+      "hi": "बेसिक इनकम प्रयोगों की समयरेखा जोड़ी",
+      "es": "Añadida una cronología de experimentos de renta básica",
+      "de": "Zeitleiste der Grundeinkommen-Experimente hinzugefügt",
+      "ar": "أضفنا خطًا زمنيًا لتجارب الدخل الأساسي"
+    },
+    {
+      "date": "2026-10-28",
       "ja": "認証方法ごとのページを追加（World ID など）",
       "en": "Added pages by verification method (World ID and more)",
       "zh": "新增按验证方式分类的页面（World ID 等）",
@@ -2633,7 +2643,20 @@ module.exports = {
       "verifyOpt": "任意",
       "verifyReqH": "この認証が必要なサービス",
       "verifyOptH": "この認証を任意で使えるサービス",
-      "verifyAll": "認証方法の一覧"
+      "verifyAll": "認証方法の一覧",
+      "tlTitle": "ベーシックインカム社会実験の年表",
+      "tlIntro": "世界で行われてきたベーシックインカムや現金給付の主な実験・制度を、年代順にまとめました。結果はそれぞれの発表元の説明をもとにしています。出典が確かめられたものだけを載せています。",
+      "tlDesc": "Mincome、アラスカの配当、ナミビア、フィンランド、ストックトン、OpenResearch、ドイツのパイロットなど、ベーシックインカム実験と制度の年表。実施者・給付・結果・出典つき。",
+      "tlWho": "実施",
+      "tlPaid": "内容",
+      "tlResult": "結果",
+      "tlSource": "出典",
+      "tlGov": "政府",
+      "tlNgo": "NGO・研究",
+      "tlPrivate": "民間・抽選",
+      "tlCrypto": "暗号資産・コミュニティ",
+      "tlOnSite": "このサイトの関連ページ",
+      "tlLink": "ベーシックインカム社会実験の年表を見る"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2780,7 +2803,20 @@ module.exports = {
       "verifyOpt": "optional",
       "verifyReqH": "Services that require it",
       "verifyOptH": "Services where it is optional",
-      "verifyAll": "All verification methods"
+      "verifyAll": "All verification methods",
+      "tlTitle": "Basic income experiments: a timeline",
+      "tlIntro": "Major basic income and cash-transfer experiments and schemes around the world, in order. Results are as reported by each source, and only items we could source are listed.",
+      "tlDesc": "A timeline of basic income experiments and schemes, from Mincome and Alaska’s dividend to Namibia, Finland, Stockton, OpenResearch and Germany’s pilot, with who ran them, what was paid, results and sources.",
+      "tlWho": "Run by",
+      "tlPaid": "What was paid",
+      "tlResult": "Result",
+      "tlSource": "Source",
+      "tlGov": "Government",
+      "tlNgo": "NGO / research",
+      "tlPrivate": "Private / lottery",
+      "tlCrypto": "Crypto / community",
+      "tlOnSite": "Related on this site",
+      "tlLink": "See the basic income experiments timeline"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2927,7 +2963,20 @@ module.exports = {
       "verifyOpt": "वैकल्पिक",
       "verifyReqH": "जिन सेवाओं में यह ज़रूरी है",
       "verifyOptH": "जिन सेवाओं में यह वैकल्पिक है",
-      "verifyAll": "सभी वेरिफ़िकेशन तरीके"
+      "verifyAll": "सभी वेरिफ़िकेशन तरीके",
+      "tlTitle": "बेसिक इनकम प्रयोगों की समयरेखा",
+      "tlIntro": "दुनिया भर के प्रमुख बेसिक इनकम और नकद सहायता प्रयोग और योजनाएँ, क्रम से। नतीजे हर स्रोत के बताए अनुसार हैं, और सिर्फ़ वही शामिल हैं जिनका स्रोत मिल सका।",
+      "tlDesc": "बेसिक इनकम प्रयोगों और योजनाओं की समयरेखा: Mincome, अलास्का डिविडेंड, नामीबिया, फ़िनलैंड, स्टॉकटन, OpenResearch और जर्मन पायलट, संचालक, भुगतान, नतीजे और स्रोत के साथ।",
+      "tlWho": "संचालक",
+      "tlPaid": "क्या दिया गया",
+      "tlResult": "नतीजा",
+      "tlSource": "स्रोत",
+      "tlGov": "सरकार",
+      "tlNgo": "NGO / शोध",
+      "tlPrivate": "निजी / लॉटरी",
+      "tlCrypto": "क्रिप्टो / समुदाय",
+      "tlOnSite": "इस साइट पर संबंधित",
+      "tlLink": "बेसिक इनकम प्रयोगों की समयरेखा देखें"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3074,7 +3123,20 @@ module.exports = {
       "verifyOpt": "可选",
       "verifyReqH": "需要此验证的服务",
       "verifyOptH": "可选择使用此验证的服务",
-      "verifyAll": "全部验证方式"
+      "verifyAll": "全部验证方式",
+      "tlTitle": "基本收入实验年表",
+      "tlIntro": "按时间顺序整理世界各地主要的基本收入和现金发放实验与制度。结果均依据各来源的说明，仅收录能核实出处的项目。",
+      "tlDesc": "基本收入实验与制度年表：Mincome、阿拉斯加红利、纳米比亚、芬兰、斯托克顿、OpenResearch、德国试点等，附实施方、发放内容、结果和出处。",
+      "tlWho": "实施方",
+      "tlPaid": "发放内容",
+      "tlResult": "结果",
+      "tlSource": "出处",
+      "tlGov": "政府",
+      "tlNgo": "NGO／研究",
+      "tlPrivate": "民间／抽奖",
+      "tlCrypto": "加密货币／社区",
+      "tlOnSite": "本站相关页面",
+      "tlLink": "查看基本收入实验年表"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3221,7 +3283,20 @@ module.exports = {
       "verifyOpt": "opcional",
       "verifyReqH": "Servicios que lo exigen",
       "verifyOptH": "Servicios donde es opcional",
-      "verifyAll": "Todos los métodos de verificación"
+      "verifyAll": "Todos los métodos de verificación",
+      "tlTitle": "Experimentos de renta básica: una cronología",
+      "tlIntro": "Los principales experimentos y programas de renta básica y transferencias de efectivo del mundo, en orden. Los resultados son los que informa cada fuente y solo incluimos lo que pudimos documentar.",
+      "tlDesc": "Cronología de experimentos y programas de renta básica, de Mincome y el dividendo de Alaska a Namibia, Finlandia, Stockton, OpenResearch y el piloto alemán, con quién los hizo, qué se pagó, resultados y fuentes.",
+      "tlWho": "Quién",
+      "tlPaid": "Qué se pagó",
+      "tlResult": "Resultado",
+      "tlSource": "Fuente",
+      "tlGov": "Gobierno",
+      "tlNgo": "ONG / investigación",
+      "tlPrivate": "Privado / sorteo",
+      "tlCrypto": "Cripto / comunidad",
+      "tlOnSite": "Relacionado en este sitio",
+      "tlLink": "Ver la cronología de experimentos de renta básica"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3368,7 +3443,20 @@ module.exports = {
       "verifyOpt": "اختياري",
       "verifyReqH": "خدمات تتطلبه",
       "verifyOptH": "خدمات يكون فيها اختياريًا",
-      "verifyAll": "كل طرق التحقق"
+      "verifyAll": "كل طرق التحقق",
+      "tlTitle": "تجارب الدخل الأساسي: خط زمني",
+      "tlIntro": "أبرز تجارب وبرامج الدخل الأساسي والتحويلات النقدية حول العالم، مرتبة زمنيًا. النتائج كما أوردها كل مصدر، ولا ندرج إلا ما استطعنا توثيقه.",
+      "tlDesc": "خط زمني لتجارب وبرامج الدخل الأساسي، من ⁦Mincome⁩ وعائد ألاسكا إلى ناميبيا وفنلندا وستوكتون و⁦OpenResearch⁩ والتجربة الألمانية، مع الجهة المنفذة وما دُفع والنتائج والمصادر.",
+      "tlWho": "الجهة المنفذة",
+      "tlPaid": "ما دُفع",
+      "tlResult": "النتيجة",
+      "tlSource": "المصدر",
+      "tlGov": "حكومي",
+      "tlNgo": "منظمة غير حكومية / بحث",
+      "tlPrivate": "خاص / سحب",
+      "tlCrypto": "عملات مشفرة / مجتمع",
+      "tlOnSite": "ذو صلة على هذا الموقع",
+      "tlLink": "اطّلع على الخط الزمني لتجارب الدخل الأساسي"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3515,7 +3603,20 @@ module.exports = {
       "verifyOpt": "optional",
       "verifyReqH": "Dienste, die das verlangen",
       "verifyOptH": "Dienste, bei denen es optional ist",
-      "verifyAll": "Alle Verifizierungsmethoden"
+      "verifyAll": "Alle Verifizierungsmethoden",
+      "tlTitle": "Grundeinkommen-Experimente: eine Zeitleiste",
+      "tlIntro": "Die wichtigsten Experimente und Programme zu Grundeinkommen und Geldtransfers weltweit, chronologisch. Die Ergebnisse geben wieder, was die jeweilige Quelle berichtet; aufgeführt ist nur, was wir belegen konnten.",
+      "tlDesc": "Zeitleiste der Grundeinkommen-Experimente und -Programme, von Mincome und Alaskas Dividende über Namibia, Finnland, Stockton und OpenResearch bis zum deutschen Pilotprojekt, mit Trägern, Zahlungen, Ergebnissen und Quellen.",
+      "tlWho": "Träger",
+      "tlPaid": "Gezahlt",
+      "tlResult": "Ergebnis",
+      "tlSource": "Quelle",
+      "tlGov": "Staatlich",
+      "tlNgo": "NGO / Forschung",
+      "tlPrivate": "Privat / Verlosung",
+      "tlCrypto": "Krypto / Gemeinschaft",
+      "tlOnSite": "Dazu auf dieser Seite",
+      "tlLink": "Zeitleiste der Grundeinkommen-Experimente ansehen"
     }
   },
   "ORG_REGIONS": {
@@ -4442,5 +4543,575 @@ module.exports = {
         "ar": "يمكنك البدء ببريد إلكتروني أو بتثبيت تطبيق فقط، دون تحقق من الهوية. في المقابل تكون المبالغ أصغر، وبعض الخدمات تأخذ شيئًا آخر، كمشاركة النطاق الترددي أو قراءة بريدك. راجع ملاحظات كل بطاقة. في ⁦RewardMe⁩ يكون ⁦World ID⁩ اختياريًا ويُسرّع استبدال بطاقات الهدايا فقط."
       }
     }
-  }
+  },
+  "TIMELINE": [
+    {
+      "id": "mincome",
+      "years": "1974–1979",
+      "type": "gov",
+      "name": "Mincome",
+      "place": {
+        "ja": "カナダ・マニトバ州ドーフィン",
+        "en": "Dauphin, Manitoba, Canada",
+        "zh": "加拿大马尼托巴省多芬",
+        "hi": "डॉफ़िन, मैनिटोबा, कनाडा",
+        "es": "Dauphin, Manitoba (Canadá)",
+        "de": "Dauphin, Manitoba (Kanada)",
+        "ar": "دوفين، مانيتوبا، كندا"
+      },
+      "who": {
+        "ja": "カナダ連邦政府とマニトバ州政府",
+        "en": "Federal and Manitoba governments",
+        "zh": "加拿大联邦政府与马尼托巴省政府",
+        "hi": "कनाडा की संघीय और मैनिटोबा सरकारें",
+        "es": "Gobiernos federal y de Manitoba",
+        "de": "Bundesregierung und Provinzregierung Manitoba",
+        "ar": "الحكومة الاتحادية وحكومة مانيتوبا"
+      },
+      "paid": {
+        "ja": "町の住民全員が対象の最低所得保障（他の収入の50%を差し引く方式）",
+        "en": "A guaranteed income floor every Dauphin resident could claim (reduced by 50% of other income)",
+        "zh": "多芬全体居民都可申领的最低收入保障（按其他收入的 50% 递减）",
+        "hi": "डॉफ़िन के हर निवासी के लिए न्यूनतम आय की गारंटी (दूसरी आय का 50% घटाकर)",
+        "es": "Un ingreso mínimo garantizado al que podía acceder todo residente de Dauphin (se reducía un 50 % de otros ingresos)",
+        "de": "Ein garantiertes Mindesteinkommen für alle Einwohner Dauphins (gekürzt um 50 % des übrigen Einkommens)",
+        "ar": "حد أدنى مضمون للدخل يحق لكل سكان دوفين (يُخفَّض بنسبة 50% من الدخل الآخر)"
+      },
+      "result": {
+        "ja": "エヴリン・フォージェ（2011年）は入院率が対照群より8.5%下がったと報告。2022年の再分析はこの因果関係に異論を唱えている",
+        "en": "Evelyn Forget (2011) reported an 8.5% lower hospitalisation rate than controls; a 2022 reanalysis disputes the causal claim",
+        "zh": "Evelyn Forget（2011 年）报告住院率比对照组低 8.5%；2022 年的再分析对这一因果关系提出异议",
+        "hi": "एवलिन फ़ॉर्गेट (2011) ने नियंत्रण समूह से 8.5% कम अस्पताल भर्ती दर बताई; 2022 का पुनर्विश्लेषण इस कारण-संबंध पर सवाल उठाता है",
+        "es": "Evelyn Forget (2011) informó de una tasa de hospitalización un 8,5 % menor que la del grupo de control; un reanálisis de 2022 discute la relación causal",
+        "de": "Evelyn Forget (2011) berichtete von 8,5 % weniger Krankenhausaufenthalten als in der Vergleichsgruppe; eine Neuauswertung von 2022 bestreitet den kausalen Zusammenhang",
+        "ar": "أفادت إيفلين فورجيه (2011) بانخفاض معدل دخول المستشفى 8.5% مقارنة بالمجموعة الضابطة، وتعترض إعادة تحليل عام 2022 على العلاقة السببية"
+      },
+      "source": "https://www.progress.org/wiki/forget-mincome-town-with-no-poverty/"
+    },
+    {
+      "id": "alaska",
+      "years": "1982–",
+      "type": "gov",
+      "name": "Alaska Permanent Fund Dividend",
+      "place": {
+        "ja": "アメリカ・アラスカ州",
+        "en": "Alaska, USA",
+        "zh": "美国阿拉斯加州",
+        "hi": "अलास्का, अमेरिका",
+        "es": "Alaska (EE. UU.)",
+        "de": "Alaska (USA)",
+        "ar": "ألاسكا، الولايات المتحدة"
+      },
+      "who": {
+        "ja": "アラスカ州",
+        "en": "State of Alaska",
+        "zh": "阿拉斯加州政府",
+        "hi": "अलास्का राज्य",
+        "es": "Estado de Alaska",
+        "de": "Bundesstaat Alaska",
+        "ar": "ولاية ألاسكا"
+      },
+      "paid": {
+        "ja": "州の基金から、条件を満たす住民全員に毎年配当。最初の配当は1人1,000ドル（1982年6月14日に支給）",
+        "en": "An annual dividend from the state fund to eligible residents; the first was $1,000 each, paid on 14 June 1982",
+        "zh": "从州基金每年向符合条件的居民发放红利；首次为每人 1,000 美元，于 1982 年 6 月 14 日发放",
+        "hi": "राज्य कोष से योग्य निवासियों को हर साल डिविडेंड; पहला $1,000 प्रति व्यक्ति, 14 जून 1982 को",
+        "es": "Un dividendo anual del fondo estatal para residentes que cumplen requisitos; el primero fue de 1.000 $ por persona, pagado el 14 de junio de 1982",
+        "de": "Eine jährliche Dividende aus dem Staatsfonds für berechtigte Einwohner; die erste betrug 1.000 $ pro Person, ausgezahlt am 14. Juni 1982",
+        "ar": "عائد سنوي من صندوق الولاية للمقيمين المستحقين؛ كان الأول ⁦$1,000⁩ للفرد ودُفع في 14 يونيو 1982"
+      },
+      "result": {
+        "ja": "",
+        "en": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://pfd.alaska.gov/Division-Info/Historical-Timeline"
+    },
+    {
+      "id": "namibia",
+      "years": "2008–2009",
+      "type": "ngo",
+      "name": "Basic Income Grant (BIG) pilot",
+      "place": {
+        "ja": "ナミビア・オチヴェロ",
+        "en": "Otjivero, Namibia",
+        "zh": "纳米比亚奥奇韦罗",
+        "hi": "ओत्जिवेरो, नामीबिया",
+        "es": "Otjivero (Namibia)",
+        "de": "Otjivero (Namibia)",
+        "ar": "أوتجيفيرو، ناميبيا"
+      },
+      "who": {
+        "ja": "教会・労働組合・NGOによる BIG 連合",
+        "en": "The BIG Coalition of churches, unions and NGOs",
+        "zh": "由教会、工会和 NGO 组成的 BIG 联盟",
+        "hi": "चर्च, यूनियन और NGO का BIG गठबंधन",
+        "es": "La Coalición BIG de iglesias, sindicatos y ONG",
+        "de": "Die BIG-Koalition aus Kirchen, Gewerkschaften und NGOs",
+        "ar": "تحالف ⁦BIG⁩ من الكنائس والنقابات والمنظمات غير الحكومية"
+      },
+      "paid": {
+        "ja": "60歳未満の住民全員に月100ナミビア・ドル（条件なし、民間資金）",
+        "en": "N$100 a month, no conditions, to every resident under 60 (privately funded)",
+        "zh": "每月 100 纳米比亚元，无条件发给 60 岁以下的所有居民（私人资金）",
+        "hi": "60 से कम उम्र के हर निवासी को बिना शर्त हर महीने N$100 (निजी फ़ंड)",
+        "es": "100 N$ al mes, sin condiciones, para todo residente menor de 60 años (financiación privada)",
+        "de": "100 N$ im Monat ohne Bedingungen für alle Einwohner unter 60 (privat finanziert)",
+        "ar": "100 دولار ناميبي شهريًا دون شروط لكل مقيم دون الستين (بتمويل خاص)"
+      },
+      "result": {
+        "ja": "連合の評価報告は、子どもの栄養状態や世帯収入の改善を報告している（推進側による評価）",
+        "en": "The coalition’s assessment reported better child nutrition and higher household incomes (an advocacy-linked evaluation)",
+        "zh": "联盟的评估报告称儿童营养和家庭收入有所改善（属倡导方的评估）",
+        "hi": "गठबंधन के आकलन ने बच्चों के पोषण और घरेलू आय में सुधार बताया (पैरवी करने वालों का आकलन)",
+        "es": "La evaluación de la coalición informó de mejor nutrición infantil y mayores ingresos familiares (evaluación vinculada a sus promotores)",
+        "de": "Die Auswertung der Koalition berichtete von besserer Ernährung der Kinder und höheren Haushaltseinkommen (eine Auswertung der Befürworter)",
+        "ar": "أفاد تقييم التحالف بتحسّن تغذية الأطفال وارتفاع دخل الأسر (تقييم مرتبط بالجهة الداعية)"
+      },
+      "source": "https://namibiadigitalrepository.com/items/show/456"
+    },
+    {
+      "id": "india-mp",
+      "years": "2011–2013",
+      "type": "ngo",
+      "name": "Madhya Pradesh cash transfer pilots",
+      "place": {
+        "ja": "インド・マディヤ・プラデーシュ州",
+        "en": "Madhya Pradesh, India",
+        "zh": "印度中央邦",
+        "hi": "मध्य प्रदेश, भारत",
+        "es": "Madhya Pradesh (India)",
+        "de": "Madhya Pradesh (Indien)",
+        "ar": "ماديا براديش، الهند"
+      },
+      "who": {
+        "ja": "SEWA（自営女性協会）、資金はユニセフ",
+        "en": "SEWA (Self-Employed Women’s Association), funded by UNICEF",
+        "zh": "SEWA（自营妇女协会），由联合国儿童基金会资助",
+        "hi": "SEWA (सेल्फ़-एम्प्लॉयड विमेंस एसोसिएशन), UNICEF के फ़ंड से",
+        "es": "SEWA (Asociación de Mujeres Autónomas), con fondos de UNICEF",
+        "de": "SEWA (Self-Employed Women’s Association), finanziert von UNICEF",
+        "ar": "رابطة النساء العاملات لحسابهن (⁦SEWA⁩) بتمويل من اليونيسف"
+      },
+      "paid": {
+        "ja": "ランダムに選んだ8つの村の全員（大人も子どもも）に、17か月間毎月少額の現金（12の村を比較対照に）",
+        "en": "Small monthly cash to every man, woman and child in eight randomly chosen villages for 17 months, with 12 control villages",
+        "zh": "在随机选出的 8 个村庄，向所有男女老少每月发放少量现金，共 17 个月，另设 12 个对照村",
+        "hi": "बेतरतीब चुने गए 8 गाँवों के हर पुरुष, महिला और बच्चे को 17 महीने तक हर महीने थोड़ा नकद; 12 गाँव तुलना के लिए",
+        "es": "Pequeñas sumas mensuales para cada hombre, mujer y niño de ocho aldeas elegidas al azar durante 17 meses, con 12 aldeas de control",
+        "de": "Kleine monatliche Geldbeträge für jeden Mann, jede Frau und jedes Kind in acht zufällig gewählten Dörfern über 17 Monate, mit 12 Vergleichsdörfern",
+        "ar": "مبالغ نقدية شهرية صغيرة لكل رجل وامرأة وطفل في ثماني قرى مختارة عشوائيًا لمدة 17 شهرًا، مع 12 قرية للمقارنة"
+      },
+      "result": {
+        "ja": "評価結果は2013年にニューデリーでの会議で発表された",
+        "en": "Evaluations were presented at a 2013 conference in New Delhi",
+        "zh": "评估结果于 2013 年在新德里的会议上发布",
+        "hi": "मूल्यांकन 2013 में नई दिल्ली के एक सम्मेलन में पेश किए गए",
+        "es": "Las evaluaciones se presentaron en una conferencia en Nueva Delhi en 2013",
+        "de": "Die Auswertungen wurden 2013 auf einer Konferenz in Neu-Delhi vorgestellt",
+        "ar": "عُرضت التقييمات في مؤتمر بنيودلهي عام 2013"
+      },
+      "source": "https://socioeco.org/bdf_fiche-document-2813_de.html"
+    },
+    {
+      "id": "kenya",
+      "years": "2017–",
+      "type": "ngo",
+      "name": "GiveDirectly basic income study",
+      "place": {
+        "ja": "ケニアの農村部",
+        "en": "Rural Kenya",
+        "zh": "肯尼亚农村",
+        "hi": "ग्रामीण केन्या",
+        "es": "Kenia rural",
+        "de": "Ländliches Kenia",
+        "ar": "ريف كينيا"
+      },
+      "who": {
+        "ja": "GiveDirectly（評価はバネルジー、スリら）",
+        "en": "GiveDirectly (evaluated by Abhijit Banerjee, Tavneet Suri and others)",
+        "zh": "GiveDirectly（由 Abhijit Banerjee、Tavneet Suri 等评估）",
+        "hi": "GiveDirectly (मूल्यांकन: अभिजीत बनर्जी, तवनीत सूरी आदि)",
+        "es": "GiveDirectly (evaluado por Abhijit Banerjee, Tavneet Suri y otros)",
+        "de": "GiveDirectly (ausgewertet u. a. von Abhijit Banerjee und Tavneet Suri)",
+        "ar": "⁦GiveDirectly⁩ (يقيّمه أبهيجيت بانيرجي وتافنيت سوري وآخرون)"
+      },
+      "paid": {
+        "ja": "長期グループの大人に月20ドルあまりを12年間。ほかに2年間グループ、一括払いグループ、対照群がある",
+        "en": "A little over $20 a month for 12 years to adults in the long-term group, alongside two-year, lump-sum and control groups",
+        "zh": "长期组的成人每月 20 多美元，持续 12 年；另有两年组、一次性发放组和对照组",
+        "hi": "लंबी अवधि वाले समूह के वयस्कों को 12 साल तक हर महीने $20 से थोड़ा ज़्यादा; साथ में दो-साल, एकमुश्त और नियंत्रण समूह",
+        "es": "Algo más de 20 $ al mes durante 12 años para los adultos del grupo de largo plazo, junto a grupos de dos años, de pago único y de control",
+        "de": "Etwas über 20 $ im Monat für 12 Jahre an Erwachsene der Langzeitgruppe, daneben Zwei-Jahres-, Einmalzahlungs- und Kontrollgruppen",
+        "ar": "ما يزيد قليلًا على ⁦$20⁩ شهريًا لمدة 12 عامًا للبالغين في المجموعة طويلة الأمد، إلى جانب مجموعات السنتين والدفعة الواحدة والمجموعة الضابطة"
+      },
+      "result": {
+        "ja": "2023年の初期結果では、多くの経済指標で一括払いグループの効果が大きかった",
+        "en": "Early results (2023) found the lump-sum group did better on many economic measures",
+        "zh": "2023 年的初步结果显示，一次性发放组在许多经济指标上表现更好",
+        "hi": "2023 के शुरुआती नतीजों में कई आर्थिक पैमानों पर एकमुश्त समूह बेहतर रहा",
+        "es": "Los primeros resultados (2023) hallaron que el grupo de pago único obtuvo mejores resultados en muchas medidas económicas",
+        "de": "Erste Ergebnisse (2023) zeigten, dass die Einmalzahlungsgruppe bei vielen wirtschaftlichen Kennzahlen besser abschnitt",
+        "ar": "وجدت النتائج الأولية (2023) أن مجموعة الدفعة الواحدة كانت أفضل في كثير من المؤشرات الاقتصادية"
+      },
+      "source": "https://www.wunc.org/2023-12-07/its-one-of-the-biggest-experiments-in-fighting-global-poverty-now-the-results-are-in",
+      "org": "givedirectly"
+    },
+    {
+      "id": "finland",
+      "years": "2017–2018",
+      "type": "gov",
+      "name": "Finland’s basic income experiment",
+      "place": {
+        "ja": "フィンランド",
+        "en": "Finland",
+        "zh": "芬兰",
+        "hi": "फ़िनलैंड",
+        "es": "Finlandia",
+        "de": "Finnland",
+        "ar": "فنلندا"
+      },
+      "who": {
+        "ja": "フィンランド社会保険庁（Kela）",
+        "en": "Kela, the Social Insurance Institution of Finland",
+        "zh": "芬兰社会保险局（Kela）",
+        "hi": "Kela (फ़िनलैंड का सामाजिक बीमा संस्थान)",
+        "es": "Kela, la Seguridad Social de Finlandia",
+        "de": "Kela, die finnische Sozialversicherungsanstalt",
+        "ar": "مؤسسة التأمين الاجتماعي الفنلندية (⁦Kela⁩)"
+      },
+      "paid": {
+        "ja": "無作為に選んだ失業者2,000人に月560ユーロを2年間",
+        "en": "€560 a month for two years to 2,000 randomly chosen unemployed people",
+        "zh": "向随机选出的 2,000 名失业者每月发放 560 欧元，为期两年",
+        "hi": "बेतरतीब चुने गए 2,000 बेरोज़गारों को दो साल तक हर महीने €560",
+        "es": "560 € al mes durante dos años para 2.000 personas desempleadas elegidas al azar",
+        "de": "560 € im Monat für zwei Jahre an 2.000 zufällig ausgewählte Arbeitslose",
+        "ar": "⁦€560⁩ شهريًا لمدة عامين لـ2,000 عاطل عن العمل اختيروا عشوائيًا"
+      },
+      "result": {
+        "ja": "2020年の最終報告では、就労への効果は小さく、生活の満足度や心の健康は改善した",
+        "en": "The 2020 final evaluation found small employment effects and better wellbeing and mental health",
+        "zh": "2020 年的最终评估显示，对就业的影响很小，但生活满意度和心理健康有所改善",
+        "hi": "2020 के अंतिम मूल्यांकन में रोज़गार पर असर छोटा, पर ख़ुशहाली और मानसिक स्वास्थ्य बेहतर पाया गया",
+        "es": "La evaluación final de 2020 halló efectos pequeños en el empleo y más bienestar y mejor salud mental",
+        "de": "Die Schlussauswertung 2020 fand kleine Beschäftigungseffekte und mehr Wohlbefinden sowie bessere psychische Gesundheit",
+        "ar": "وجد التقييم النهائي عام 2020 آثارًا صغيرة على التوظيف وتحسنًا في الرفاه والصحة النفسية"
+      },
+      "source": "https://stm.fi/en/-/perustulokokeilun-tulokset-tyollisyysvaikutukset-vahaisia-toimeentulo-ja-psyykkinen-terveys-koettiin-paremmaksi"
+    },
+    {
+      "id": "ontario",
+      "years": "2017–2018",
+      "type": "gov",
+      "name": "Ontario Basic Income Pilot",
+      "place": {
+        "ja": "カナダ・オンタリオ州（ハミルトン、リンジー、サンダーベイなど）",
+        "en": "Ontario, Canada (Hamilton, Lindsay, Thunder Bay and others)",
+        "zh": "加拿大安大略省（汉密尔顿、林赛、桑德贝等）",
+        "hi": "ओंटारियो, कनाडा (हैमिल्टन, लिंडसे, थंडर बे आदि)",
+        "es": "Ontario, Canadá (Hamilton, Lindsay, Thunder Bay y otras)",
+        "de": "Ontario, Kanada (Hamilton, Lindsay, Thunder Bay u. a.)",
+        "ar": "أونتاريو، كندا (هاميلتون وليندسي وثندر باي وغيرها)"
+      },
+      "who": {
+        "ja": "オンタリオ州政府",
+        "en": "Government of Ontario",
+        "zh": "安大略省政府",
+        "hi": "ओंटारियो सरकार",
+        "es": "Gobierno de Ontario",
+        "de": "Regierung von Ontario",
+        "ar": "حكومة أونتاريو"
+      },
+      "paid": {
+        "ja": "約4,000人に、単身で年最大16,989カナダドル（勤労収入の50%を差し引く）",
+        "en": "Up to C$16,989 a year for single people (less 50% of earnings) to about 4,000 participants",
+        "zh": "向约 4,000 名参与者发放，单身者每年最多 16,989 加元（扣除劳动收入的 50%）",
+        "hi": "लगभग 4,000 प्रतिभागियों को, अकेले व्यक्ति को साल में अधिकतम C$16,989 (कमाई का 50% घटाकर)",
+        "es": "Hasta 16.989 C$ al año para personas solas (menos el 50 % de lo ganado) para unos 4.000 participantes",
+        "de": "Bis zu 16.989 C$ im Jahr für Alleinstehende (abzüglich 50 % des Verdiensts) an rund 4.000 Teilnehmende",
+        "ar": "حتى 16,989 دولارًا كنديًا سنويًا للفرد الأعزب (ناقص 50% من الدخل) لنحو 4,000 مشارك"
+      },
+      "result": {
+        "ja": "3年の予定が、2018年7月31日に新政府が約1年で打ち切りを発表",
+        "en": "Planned for three years; the new government announced its cancellation on 31 July 2018, after about one year",
+        "zh": "原计划三年，新政府于 2018 年 7 月 31 日宣布在约一年后终止",
+        "hi": "तीन साल के लिए था; नई सरकार ने 31 जुलाई 2018 को लगभग एक साल बाद इसे रद्द करने की घोषणा की",
+        "es": "Previsto para tres años; el nuevo gobierno anunció su cancelación el 31 de julio de 2018, tras un año aproximadamente",
+        "de": "Auf drei Jahre angelegt; die neue Regierung kündigte am 31. Juli 2018 nach etwa einem Jahr das Ende an",
+        "ar": "كان مقررًا لثلاث سنوات، وأعلنت الحكومة الجديدة إلغاءه في 31 يوليو 2018 بعد نحو عام"
+      },
+      "source": "https://globalnews.ca/news/4365399/ontario-cancels-basic-income-pilot-project"
+    },
+    {
+      "id": "stockton",
+      "years": "2019–2021",
+      "type": "ngo",
+      "name": "Stockton SEED",
+      "place": {
+        "ja": "アメリカ・カリフォルニア州ストックトン",
+        "en": "Stockton, California, USA",
+        "zh": "美国加州斯托克顿",
+        "hi": "स्टॉकटन, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Stockton, California (EE. UU.)",
+        "de": "Stockton, Kalifornien (USA)",
+        "ar": "ستوكتون، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "ja": "ストックトン経済エンパワーメント実証（SEED）",
+        "en": "Stockton Economic Empowerment Demonstration",
+        "zh": "斯托克顿经济赋能示范项目（SEED）",
+        "hi": "स्टॉकटन इकोनॉमिक एम्पावरमेंट डेमॉन्स्ट्रेशन (SEED)",
+        "es": "Stockton Economic Empowerment Demonstration (SEED)",
+        "de": "Stockton Economic Empowerment Demonstration (SEED)",
+        "ar": "مشروع ستوكتون للتمكين الاقتصادي (⁦SEED⁩)"
+      },
+      "paid": {
+        "ja": "住民125人に月500ドルを2年間（使い道の制限なし）",
+        "en": "$500 a month for two years to 125 residents, with no spending restrictions",
+        "zh": "向 125 名居民每月发放 500 美元，为期两年，不限用途",
+        "hi": "125 निवासियों को दो साल तक हर महीने $500, ख़र्च पर कोई रोक नहीं",
+        "es": "500 $ al mes durante dos años para 125 residentes, sin restricciones de uso",
+        "de": "500 $ im Monat für zwei Jahre an 125 Einwohner, ohne Ausgabevorgaben",
+        "ar": "⁦$500⁩ شهريًا لمدة عامين لـ125 من السكان دون قيود على الإنفاق"
+      },
+      "result": {
+        "ja": "研究者によると、受給者は対照群の2倍以上の割合でフルタイムの仕事に移った",
+        "en": "Researchers reported recipients moved into full-time work at more than twice the rate of the control group",
+        "zh": "研究人员称，受助者转为全职工作的比例是对照组的两倍多",
+        "hi": "शोधकर्ताओं के अनुसार प्राप्तकर्ता नियंत्रण समूह की तुलना में दोगुने से ज़्यादा दर से पूर्णकालिक काम में गए",
+        "es": "Según los investigadores, los beneficiarios pasaron a empleo a tiempo completo a más del doble de ritmo que el grupo de control",
+        "de": "Laut den Forschenden wechselten Empfänger mehr als doppelt so häufig in Vollzeit wie die Kontrollgruppe",
+        "ar": "أفاد الباحثون بأن المستفيدين انتقلوا إلى العمل بدوام كامل بأكثر من ضعف معدل المجموعة الضابطة"
+      },
+      "source": "https://cbsnews.com/news/basic-guaranteed-income-stockton-experiment/"
+    },
+    {
+      "id": "openresearch",
+      "years": "2020–2023",
+      "type": "ngo",
+      "name": "OpenResearch Unconditional Cash Study",
+      "place": {
+        "ja": "アメリカ・イリノイ州とテキサス州",
+        "en": "Illinois and Texas, USA",
+        "zh": "美国伊利诺伊州和得克萨斯州",
+        "hi": "इलिनॉय और टेक्सस, अमेरिका",
+        "es": "Illinois y Texas (EE. UU.)",
+        "de": "Illinois und Texas (USA)",
+        "ar": "إلينوي وتكساس، الولايات المتحدة"
+      },
+      "who": {
+        "ja": "OpenResearch（旧 Y Combinator Research）",
+        "en": "OpenResearch (formerly Y Combinator Research)",
+        "zh": "OpenResearch（原 Y Combinator Research）",
+        "hi": "OpenResearch (पहले Y Combinator Research)",
+        "es": "OpenResearch (antes Y Combinator Research)",
+        "de": "OpenResearch (früher Y Combinator Research)",
+        "ar": "⁦OpenResearch⁩ (سابقًا ⁦Y Combinator Research⁩)"
+      },
+      "paid": {
+        "ja": "21〜40歳の1,000人に月1,000ドルを3年間（対照群2,000人は月50ドル）",
+        "en": "$1,000 a month for three years to 1,000 people aged 21–40 (2,000 controls got $50 a month)",
+        "zh": "向 1,000 名 21–40 岁的人每月发放 1,000 美元，为期三年（2,000 名对照者每月 50 美元）",
+        "hi": "21–40 साल के 1,000 लोगों को तीन साल तक हर महीने $1,000 (2,000 नियंत्रण वालों को $50 महीना)",
+        "es": "1.000 $ al mes durante tres años para 1.000 personas de 21 a 40 años (2.000 de control recibieron 50 $ al mes)",
+        "de": "1.000 $ im Monat für drei Jahre an 1.000 Menschen zwischen 21 und 40 (2.000 Kontrollpersonen bekamen 50 $ im Monat)",
+        "ar": "⁦$1,000⁩ شهريًا لمدة ثلاث سنوات لـ1,000 شخص بين 21 و40 عامًا (حصلت المجموعة الضابطة البالغة 2,000 على ⁦$50⁩ شهريًا)"
+      },
+      "result": {
+        "ja": "2024年の最初の結果では、支出が増え、労働時間はわずかに減った",
+        "en": "First results (2024) found higher spending and slightly fewer hours worked",
+        "zh": "2024 年的首批结果显示，支出增加，工作时间略有减少",
+        "hi": "2024 के पहले नतीजों में ख़र्च बढ़ा और काम के घंटे थोड़े घटे",
+        "es": "Los primeros resultados (2024) hallaron más gasto y algo menos de horas trabajadas",
+        "de": "Erste Ergebnisse (2024) zeigten höhere Ausgaben und etwas weniger Arbeitsstunden",
+        "ar": "وجدت النتائج الأولى (2024) زيادة في الإنفاق وانخفاضًا طفيفًا في ساعات العمل"
+      },
+      "source": "https://www.openresearchlab.org/",
+      "org": "openresearch"
+    },
+    {
+      "id": "pilotprojekt",
+      "years": "2021–2024",
+      "type": "ngo",
+      "name": "Pilotprojekt Grundeinkommen",
+      "place": {
+        "ja": "ドイツ",
+        "en": "Germany",
+        "zh": "德国",
+        "hi": "जर्मनी",
+        "es": "Alemania",
+        "de": "Deutschland",
+        "ar": "ألمانيا"
+      },
+      "who": {
+        "ja": "Mein Grundeinkommen とドイツ経済研究所（DIW）",
+        "en": "Mein Grundeinkommen with the German Institute for Economic Research (DIW)",
+        "zh": "Mein Grundeinkommen 与德国经济研究所（DIW）",
+        "hi": "Mein Grundeinkommen और जर्मन आर्थिक शोध संस्थान (DIW)",
+        "es": "Mein Grundeinkommen con el Instituto Alemán de Investigación Económica (DIW)",
+        "de": "Mein Grundeinkommen mit dem Deutschen Institut für Wirtschaftsforschung (DIW)",
+        "ar": "⁦Mein Grundeinkommen⁩ مع المعهد الألماني للبحوث الاقتصادية (⁦DIW⁩)"
+      },
+      "paid": {
+        "ja": "寄付を財源に、約120人に月1,200ユーロを3年間（2021年6月〜2024年5月）",
+        "en": "€1,200 a month for three years (June 2021–May 2024) to about 120 people, funded by donations",
+        "zh": "以捐款为资金，向约 120 人每月发放 1,200 欧元，为期三年（2021 年 6 月至 2024 年 5 月）",
+        "hi": "दान से, लगभग 120 लोगों को तीन साल (जून 2021–मई 2024) तक हर महीने €1,200",
+        "es": "1.200 € al mes durante tres años (junio 2021–mayo 2024) para unas 120 personas, financiados con donaciones",
+        "de": "1.200 € im Monat über drei Jahre (Juni 2021 bis Mai 2024) an rund 120 Menschen, finanziert aus Spenden",
+        "ar": "⁦€1,200⁩ شهريًا لثلاث سنوات (يونيو 2021–مايو 2024) لنحو 120 شخصًا، بتمويل من التبرعات"
+      },
+      "result": {
+        "ja": "2025年4月のDIWの発表では、受給者は働く時間を目立って減らさず、心の健康と生活満足度が改善した",
+        "en": "DIW reported in April 2025 that recipients did not significantly cut their working hours and that mental health and life satisfaction improved",
+        "zh": "DIW 于 2025 年 4 月发布：受助者没有明显减少工作时间，心理健康和生活满意度有所改善",
+        "hi": "DIW ने अप्रैल 2025 में बताया कि प्राप्तकर्ताओं ने काम के घंटे ख़ास कम नहीं किए और मानसिक स्वास्थ्य व जीवन-संतोष बेहतर हुआ",
+        "es": "El DIW informó en abril de 2025 de que los beneficiarios no redujeron de forma significativa sus horas de trabajo y mejoraron su salud mental y su satisfacción vital",
+        "de": "Das DIW berichtete im April 2025, dass die Empfänger ihre Arbeitszeit nicht signifikant reduzierten und sich psychische Gesundheit und Lebenszufriedenheit verbesserten",
+        "ar": "أفاد ⁦DIW⁩ في أبريل 2025 بأن المستفيدين لم يقللوا ساعات عملهم بشكل ملحوظ، وتحسنت صحتهم النفسية ورضاهم عن الحياة"
+      },
+      "source": "https://www.diw.de/de/diw_01.c.945271.de/pilotprojekt_grundeinkommen__feldstudie_entkraeftet_mythos_von_der_sozialen_haengematte.html",
+      "svc": "meingrundeinkommen",
+      "org": "mgk"
+    },
+    {
+      "id": "g1",
+      "years": "2017",
+      "type": "crypto",
+      "name": "Ğ1 (Duniter)",
+      "place": {
+        "ja": "フランス語圏を中心に世界",
+        "en": "Worldwide, mostly French-speaking",
+        "zh": "全球，以法语圈为主",
+        "hi": "दुनियाभर, ज़्यादातर फ़्रेंच भाषी",
+        "es": "Mundial, sobre todo francófono",
+        "de": "Weltweit, überwiegend französischsprachig",
+        "ar": "عالمي، أغلبه ناطق بالفرنسية"
+      },
+      "who": {
+        "ja": "Duniter のコミュニティ",
+        "en": "The Duniter community",
+        "zh": "Duniter 社区",
+        "hi": "Duniter समुदाय",
+        "es": "La comunidad Duniter",
+        "de": "Die Duniter-Gemeinschaft",
+        "ar": "مجتمع ⁦Duniter⁩"
+      },
+      "paid": {
+        "ja": "メンバー全員に毎日の「ユニバーサル・ディビデンド」。2017年3月8日に59人で開始",
+        "en": "A daily “Universal Dividend” for every member; launched on 8 March 2017 with 59 members",
+        "zh": "每位成员每天获得“全民红利”；2017 年 3 月 8 日以 59 名成员启动",
+        "hi": "हर सदस्य को रोज़ “यूनिवर्सल डिविडेंड”; 8 मार्च 2017 को 59 सदस्यों के साथ शुरू",
+        "es": "Un «Dividendo Universal» diario para cada miembro; empezó el 8 de marzo de 2017 con 59 miembros",
+        "de": "Eine tägliche „Universelle Dividende“ für jedes Mitglied; gestartet am 8. März 2017 mit 59 Mitgliedern",
+        "ar": "«عائد شامل» يومي لكل عضو؛ انطلقت في 8 مارس 2017 بـ59 عضوًا"
+      },
+      "result": {
+        "ja": "2026年3月に Duniter v2 へ移行",
+        "en": "Moved to Duniter v2 in March 2026",
+        "zh": "2026 年 3 月迁移至 Duniter v2",
+        "hi": "मार्च 2026 में Duniter v2 पर गई",
+        "es": "Pasó a Duniter v2 en marzo de 2026",
+        "de": "Im März 2026 auf Duniter v2 umgezogen",
+        "ar": "انتقلت إلى ⁦Duniter v2⁩ في مارس 2026"
+      },
+      "source": "https://duniter.org/g1/",
+      "svc": "g1",
+      "org": "g1"
+    },
+    {
+      "id": "circles2",
+      "years": "2025",
+      "type": "crypto",
+      "name": "Circles 2.0",
+      "place": {
+        "ja": "世界",
+        "en": "Worldwide",
+        "zh": "全球",
+        "hi": "दुनियाभर",
+        "es": "Mundial",
+        "de": "Weltweit",
+        "ar": "عالمي"
+      },
+      "who": {
+        "ja": "Gnosis",
+        "en": "Gnosis",
+        "zh": "Gnosis",
+        "hi": "Gnosis",
+        "es": "Gnosis",
+        "de": "Gnosis",
+        "ar": "⁦Gnosis⁩"
+      },
+      "paid": {
+        "ja": "一人ひとりが自分の通貨を1時間に1 CRC ずつ発行するしくみの第2版を2025年5月に公開",
+        "en": "Second version of a system where each person issues their own currency at 1 CRC an hour, launched in May 2025",
+        "zh": "每人每小时发行 1 CRC 自有货币的机制第二版，于 2025 年 5 月推出",
+        "hi": "हर व्यक्ति के घंटे में 1 CRC अपनी करेंसी जारी करने की व्यवस्था का दूसरा संस्करण, मई 2025 में लॉन्च",
+        "es": "Segunda versión de un sistema en el que cada persona emite su propia moneda a 1 CRC por hora, lanzada en mayo de 2025",
+        "de": "Zweite Version eines Systems, in dem jede Person 1 CRC pro Stunde als eigene Währung schöpft, gestartet im Mai 2025",
+        "ar": "الإصدار الثاني من نظام يُصدر فيه كل شخص عملته بمعدل ⁦1 CRC⁩ في الساعة، أُطلق في مايو 2025"
+      },
+      "result": {
+        "ja": "",
+        "en": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.businesswire.com/news/home/20250521225718/en",
+      "svc": "circles",
+      "org": "circles"
+    },
+    {
+      "id": "wld-end",
+      "years": "2026",
+      "type": "crypto",
+      "name": "World — WLD Airdrop",
+      "place": {
+        "ja": "世界",
+        "en": "Worldwide",
+        "zh": "全球",
+        "hi": "दुनियाभर",
+        "es": "Mundial",
+        "de": "Weltweit",
+        "ar": "عالمي"
+      },
+      "who": {
+        "ja": "World（Tools for Humanity / World Foundation）",
+        "en": "World (Tools for Humanity / World Foundation)",
+        "zh": "World（Tools for Humanity / World Foundation）",
+        "hi": "World (Tools for Humanity / World Foundation)",
+        "es": "World (Tools for Humanity / World Foundation)",
+        "de": "World (Tools for Humanity / World Foundation)",
+        "ar": "⁦World⁩ (⁦Tools for Humanity⁩ / ⁦World Foundation⁩)"
+      },
+      "paid": {
+        "ja": "World ID で認証した人への毎月の WLD エアドロップが、2026年6月1日に新規・更新とも停止",
+        "en": "Monthly WLD airdrops for World ID–verified people stopped taking new or renewed cycles on 1 June 2026",
+        "zh": "面向经 World ID 验证者的每月 WLD 空投于 2026 年 6 月 1 日停止新建和续期",
+        "hi": "World ID से वेरिफ़ाई लोगों के लिए मासिक WLD एयरड्रॉप में 1 जून 2026 से नए या नवीनीकृत चक्र बंद",
+        "es": "Los airdrops mensuales de WLD para personas verificadas con World ID dejaron de abrir ciclos nuevos o renovados el 1 de junio de 2026",
+        "de": "Die monatlichen WLD-Airdrops für per World ID verifizierte Menschen nehmen seit 1. Juni 2026 keine neuen oder verlängerten Zyklen mehr an",
+        "ar": "توقفت إسقاطات ⁦WLD⁩ الشهرية لمن تحققوا عبر ⁦World ID⁩ عن فتح دورات جديدة أو مجددة في 1 يونيو 2026"
+      },
+      "result": {
+        "ja": "",
+        "en": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program",
+      "grave": "wld-airdrop"
+    }
+  ]
 };
