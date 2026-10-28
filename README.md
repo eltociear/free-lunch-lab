@@ -6,6 +6,7 @@ Free Lunch Lab is a curated, multilingual list of apps and projects that pay you
 
 - Live site: https://neteru-nyukin.eltociear.workers.dev
 - X: [@FreeLunchLab](https://x.com/FreeLunchLab)
+- Source and data: this repository is public. Everything on the site is generated from [`src/data.js`](src/data.js), which you can reuse under CC BY 4.0 (see [License](#license)).
 
 ## Affiliate disclosure
 
@@ -159,6 +160,7 @@ Suggestions and corrections are welcome. Please read [CONTRIBUTING.md](CONTRIBUT
 
 - サイト: https://neteru-nyukin.eltociear.workers.dev （日本語版は `/ja/`）
 - X: [@FreeLunchLab](https://x.com/FreeLunchLab)
+- このリポジトリは公開中。サイトの中身はすべて [`src/data.js`](src/data.js) から作っていて、文章は CC BY 4.0 で再利用できる
 - 2026年10月に「寝てても入金」から改名し、リポジトリ名も `neteru-nyukin` から `free-lunch-lab` に変えた。サイトのURLと Cloudflare のワーカー名は変えていない
 - Search Console: [neteru-nyukin.eltociear.workers.dev](https://search.google.com/search-console?resource_id=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2F)（URL プレフィックス、`google-site-verification` メタタグで確認済み）
 - ビルドとサービスの追加方法は上の英語の説明を参照。掲載の基準は [CONTRIBUTING.md](CONTRIBUTING.md)

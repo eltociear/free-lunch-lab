@@ -2421,7 +2421,8 @@ module.exports = {
       "orgsSecBtn": "団体一覧を見る（{n}団体）",
       "only_us": "アメリカ在住者向け",
       "brandSub": "Free Lunch Lab",
-      "tagline": "タダ飯は、ある。"
+      "tagline": "タダ飯は、ある。",
+      "ghLabel": "GitHubでデータ公開中"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2552,7 +2553,8 @@ module.exports = {
       "orgsSecBtn": "See all organizations ({n})",
       "only_us": "US residents only",
       "brandSub": "",
-      "tagline": "There is such a thing as a free lunch."
+      "tagline": "There is such a thing as a free lunch.",
+      "ghLabel": "Open data on GitHub"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2683,7 +2685,8 @@ module.exports = {
       "orgsSecBtn": "सभी संगठन देखें ({n})",
       "only_us": "सिर्फ़ अमेरिकी निवासी",
       "brandSub": "",
-      "tagline": "मुफ़्त का लंच भी होता है।"
+      "tagline": "मुफ़्त का लंच भी होता है।",
+      "ghLabel": "GitHub पर खुला डेटा"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2814,7 +2817,8 @@ module.exports = {
       "orgsSecBtn": "查看全部团体（{n} 个）",
       "only_us": "仅限美国居民",
       "brandSub": "免费午餐研究所",
-      "tagline": "天下竟然有免费的午餐。"
+      "tagline": "天下竟然有免费的午餐。",
+      "ghLabel": "数据在 GitHub 公开"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2945,7 +2949,8 @@ module.exports = {
       "orgsSecBtn": "Ver todas las organizaciones ({n})",
       "only_us": "Solo residentes en EE. UU.",
       "brandSub": "",
-      "tagline": "Pues sí: hay almuerzo gratis."
+      "tagline": "Pues sí: hay almuerzo gratis.",
+      "ghLabel": "Datos abiertos en GitHub"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3076,7 +3081,8 @@ module.exports = {
       "orgsSecBtn": "عرض كل المنظمات ({n})",
       "only_us": "للمقيمين في الولايات المتحدة فقط",
       "brandSub": "مختبر الغداء المجاني",
-      "tagline": "الغداء المجاني موجود فعلًا."
+      "tagline": "الغداء المجاني موجود فعلًا.",
+      "ghLabel": "بيانات مفتوحة على ⁦GitHub⁩"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3207,7 +3213,8 @@ module.exports = {
       "orgsSecBtn": "Alle Organisationen ansehen ({n})",
       "only_us": "Nur für Wohnsitz in den USA",
       "brandSub": "",
-      "tagline": "Es gibt doch ein kostenloses Mittagessen."
+      "tagline": "Es gibt doch ein kostenloses Mittagessen.",
+      "ghLabel": "Offene Daten auf GitHub"
     }
   },
   "ORG_REGIONS": {
