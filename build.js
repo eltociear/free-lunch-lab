@@ -901,6 +901,72 @@ ${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlA
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+// ---- オープンデータ: 表示中のサービスと墓場を JSON で。data/（リポジトリに入れる）と public/（サイトで配る）の両方へ
+// generatedAt は確認月の最新値にして、中身が変わらないかぎり再ビルドで差分が出ないようにする
+const clean = t => String(t).replace(/[⁦-⁩]/g, '');
+const DATA_LICENSE = 'CC BY 4.0 (referral links excluded)';
+const REGION = s => (s.onlyIn ? `only-${s.onlyIn}` : s.global ? 'global' : 'japan-only');
+const byId = (a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+const latest = [...live.map(s => s.checked)].sort().pop();
+const servicesJson = {
+  name: 'Free Lunch Lab services',
+  description: 'Apps and projects that pay you basic income just for existing, as listed on Free Lunch Lab. Hidden entries are excluded.',
+  source: SITE_URL + '/',
+  repository: 'https://github.com/eltociear/free-lunch-lab',
+  license: DATA_LICENSE,
+  licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+  generatedAt: latest,
+  languages: LANGS,
+  count: live.length,
+  services: live.slice().sort(byId).map(s => ({
+    id: s.id,
+    name: clean(s.nameEn || s.name),
+    nameJa: s.name,
+    category: s.cat,
+    categoryName: clean(CATS.en[s.cat]),
+    payout: s.type,
+    officialUrl: s.official,
+    referral: s.ref || s.code ? { url: s.ref || null, code: s.code || null, note: "Maintainer's referral link; not covered by the content license" } : null,
+    region: REGION(s),
+    availableFromJapan: !s.onlyIn,
+    verify: (s.verify || []).map(v => ({ method: v.method, optional: !!v.optional })),
+    trust: s.trust || null,
+    ease: s.ease ?? null,
+    added: s.added || null,
+    checked: s.checked,
+    pageUrl: svcAbs(DEFAULT_LANG, s),
+    pageUrls: Object.fromEntries(LANGS.map(l => [l, svcAbs(l, s)])),
+    descriptions: Object.fromEntries(LANGS.filter(l => s[l]).map(l => [l, Object.fromEntries(['gain', 'note', 'need', 'caution'].filter(k => s[l][k]).map(k => [k, clean(s[l][k])]))])),
+  })),
+};
+const graveJson = {
+  name: 'Free Lunch Lab graveyard',
+  description: 'Basic-income-style programs that have ended, each with an official or credible source.',
+  source: graveAbs(DEFAULT_LANG),
+  repository: 'https://github.com/eltociear/free-lunch-lab',
+  license: 'CC BY 4.0',
+  licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+  generatedAt: [...GRAVE.map(g => g.endedOn)].sort().pop() || null,
+  count: GRAVE.length,
+  graveyard: GRAVE.slice().sort(byId).map(g => ({
+    id: g.id,
+    name: clean(g.name),
+    endedOn: g.endedOn,
+    sourceUrl: g.source,
+    sourceLabel: clean(g.sourceLabel),
+    pageUrl: graveAbs(DEFAULT_LANG) + '#grave-' + g.id,
+    serviceId: g.svc || null,
+    descriptions: Object.fromEntries(LANGS.map(l => [l, Object.fromEntries(['what', 'ended', 'why'].filter(k => g[k] && g[k][l]).map(k => [k, clean(g[k][l])]))])),
+  })),
+};
+const DATA_DIR = path.join(__dirname, 'data');
+fs.mkdirSync(DATA_DIR, { recursive: true });
+for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson]]) {
+  const txt = JSON.stringify(obj, null, 2) + '\n';
+  fs.writeFileSync(path.join(DATA_DIR, file), txt);
+  fs.writeFileSync(path.join(OUT, file), txt);
+}
+
 // README.md のサービス表・団体一覧も同期する
 require('./readme.js').updateReadme();
 console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages + ${LANGS.length} organization pages, ${live.length} services shown (${SERVICES.length - live.length} hidden)`);

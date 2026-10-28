@@ -1,0 +1,2419 @@
+{
+  "name": "Free Lunch Lab services",
+  "description": "Apps and projects that pay you basic income just for existing, as listed on Free Lunch Lab. Hidden entries are excluded.",
+  "source": "https://neteru-nyukin.eltociear.workers.dev/",
+  "repository": "https://github.com/eltociear/free-lunch-lab",
+  "license": "CC BY 4.0 (referral links excluded)",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "generatedAt": "2026-10",
+  "languages": [
+    "en",
+    "ja",
+    "zh",
+    "hi",
+    "es",
+    "de",
+    "ar"
+  ],
+  "count": 29,
+  "services": [
+    {
+      "id": "aidac",
+      "name": "AI-DAC (World App)",
+      "nameJa": "AI-DAC（World App）",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://lp.ai-dac.com/",
+      "referral": null,
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "world-id",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ease": 3,
+      "added": "2026-10-24",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/aidac/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/aidac/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/aidac/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/aidac/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/aidac/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/aidac/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/aidac/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/aidac/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "UBI in DAC tokens",
+          "note": "A mini app inside World App that calls itself an “AI-powered universal basic income platform”. People verified as human with World ID receive DAC UBI and use it to back autonomous “AI CEOs” that plan, build and ship apps, and to vote and give feedback on releases. Run by founder Kei Iwami. There is no referral link or referral bonus",
+          "need": "Open the AI-DAC mini app in World App and prove you are human with World ID (confirmed from Japan with Orb verification)",
+          "caution": "The amount, frequency, regions and cash-out are not stated officially. Confirmed usable from Japan with an Orb-verified World ID in Oct 2026; whether a lower (non-Orb) verification level is enough is unknown. DAC is an ERC-20 token on World Chain with a stated total supply of 100M, but the contract has no supply cap and the owner can mint and airdrop more at any time, which can dilute its value. The project says it is not for investment and its value is not guaranteed. There is a DAC/WLD pair on a decentralized exchange (DEX), but as of Oct 2026 liquidity is only about $170. App production orders are paid separately in World USDC"
+        },
+        "ja": {
+          "gain": "DAC トークンのUBI",
+          "note": "World App の中で動くミニアプリで、「AIを使ったユニバーサル・ベーシックインカムのプラットフォーム」をうたう。World ID で人間と確認された人が DAC のUBIを受け取り、それを使って、アプリを企画・開発・公開する自律型の「AI CEO」を応援したり、リリースに投票やフィードバックをしたりする。運営は創設者の Kei Iwami 氏。紹介リンクや紹介特典はない",
+          "need": "World App でミニアプリ AI-DAC を開き、World ID で人間であることを証明する（日本からはOrb認証済みで利用を確認）",
+          "caution": "もらえる量・頻度、使える地域、換金方法は公式に書かれていない。2026年10月に、OrbでWorld IDを認証したアカウントで日本から使えることを確認した。Orbより低い認証レベルで足りるかはわかっていない。DAC は World Chain 上の ERC-20 トークンで、総供給量は1億 DAC とされているが、コントラクトに発行上限はなく、運営者がいつでも追加発行（ミント）やエアドロップができる。追加発行されると1枚あたりの価値は薄まりうる。公式に「投資目的ではなく、価値は保証されない」とある。分散型取引所（DEX）に WLD との取引ペアがあるが、2026年10月時点で流動性は約170ドルとごくわずか。アプリ制作の注文は DAC とは別に World の USDC で支払う"
+        },
+        "zh": {
+          "gain": "DAC 代币形式的 UBI",
+          "note": "在 World App 内运行的小程序，自称“由 AI 驱动的全民基本收入平台”。经 World ID 验证为真人的用户可领取 DAC UBI，用它支持能策划、开发并发布应用的自主“AI CEO”，并对发布内容投票和反馈。运营者为创始人 Kei Iwami。没有推荐链接，也没有推荐奖励",
+          "need": "在 World App 中打开 AI-DAC 小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用）",
+          "caution": "官方没有写明领取数量、频率、可用地区和兑现方式。2026 年 10 月已确认，使用经 Orb 验证的 World ID 账户可在日本使用；低于 Orb 的验证等级是否足够尚不清楚。DAC 是 World Chain 上的 ERC-20 代币，宣称总供应量为 1 亿枚，但合约没有发行上限，所有者可随时增发（铸造）和空投，可能稀释其价值。官方表示它不以投资为目的，价值不受保证。去中心化交易所（DEX）上有 DAC/WLD 交易对，但截至 2026 年 10 月流动性只有约 170 美元。应用制作订单需另外用 World 的 USDC 支付"
+        },
+        "hi": {
+          "gain": "DAC टोकन में UBI",
+          "note": "World App के अंदर चलने वाला मिनी ऐप, जो खुद को “AI से चलने वाला यूनिवर्सल बेसिक इनकम प्लेटफ़ॉर्म” कहता है। World ID से इंसान साबित हुए लोग DAC UBI पाते हैं और उससे ऐप की योजना बनाने, बनाने और रिलीज़ करने वाले स्वायत्त “AI CEO” का समर्थन करते हैं, और रिलीज़ पर वोट व फ़ीडबैक देते हैं। इसे संस्थापक Kei Iwami चलाते हैं। कोई रेफ़रल लिंक या रेफ़रल बोनस नहीं है",
+          "need": "World App में AI-DAC मिनी ऐप खोलें और World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि)",
+          "caution": "रकम, कितनी बार मिलेगा, किन क्षेत्रों में चलेगा और नकद में कैसे बदलें, यह आधिकारिक रूप से नहीं बताया गया। अक्टूबर 2026 में पुष्टि हुई कि Orb से वेरिफ़ाई की गई World ID वाले अकाउंट से यह जापान में चलता है; Orb से कम वेरिफ़िकेशन लेवल काफ़ी है या नहीं, यह पता नहीं। DAC, World Chain पर ERC-20 टोकन है और कुल सप्लाई 10 करोड़ बताई गई है, पर कॉन्ट्रैक्ट में कोई सीमा नहीं है और मालिक कभी भी और टोकन मिंट व एयरड्रॉप कर सकता है, जिससे कीमत घट सकती है। प्रोजेक्ट कहता है कि यह निवेश के लिए नहीं है और कीमत की गारंटी नहीं है। डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर DAC/WLD पेयर है, पर अक्टूबर 2026 में लिक्विडिटी सिर्फ़ लगभग $170 है। ऐप बनवाने के ऑर्डर का भुगतान अलग से World USDC में होता है"
+        },
+        "es": {
+          "gain": "UBI en tokens DAC",
+          "note": "Una mini app dentro de World App que se presenta como una «plataforma de renta básica universal impulsada por IA». Las personas verificadas como humanas con World ID reciben UBI en DAC y la usan para apoyar a «CEO de IA» autónomos que planifican, crean y publican apps, y para votar y opinar sobre los lanzamientos. La gestiona su fundador, Kei Iwami. No hay enlace ni bono de referido",
+          "need": "Abre la mini app AI-DAC en World App y demuestra que eres humano con World ID (confirmado desde Japón con verificación Orb)",
+          "caution": "No se indican oficialmente la cantidad, la frecuencia, las regiones ni cómo cobrar. En octubre de 2026 se confirmó que funciona desde Japón con un World ID verificado por Orb; no se sabe si basta un nivel de verificación inferior (sin Orb). DAC es un token ERC-20 en World Chain con un suministro total declarado de 100 millones, pero el contrato no tiene límite y el propietario puede acuñar y repartir más en cualquier momento, lo que puede diluir su valor. El proyecto dice que no es para invertir y que su valor no está garantizado. Hay un par DAC/WLD en un exchange descentralizado (DEX), pero a octubre de 2026 la liquidez es de solo unos 170 $. Los encargos de producción de apps se pagan aparte en USDC de World"
+        },
+        "de": {
+          "gain": "Grundeinkommen in DAC-Token",
+          "note": "Eine Mini-App in der World App, die sich als „KI-gestützte Plattform für ein universelles Grundeinkommen“ bezeichnet. Wer per World ID als Mensch verifiziert ist, erhält DAC als Grundeinkommen und nutzt es, um autonome „KI-CEOs“ zu unterstützen, die Apps planen, bauen und veröffentlichen, sowie um über Releases abzustimmen und Feedback zu geben. Betrieben vom Gründer Kei Iwami. Es gibt keinen Empfehlungslink und keinen Empfehlungsbonus",
+          "need": "Die Mini-App AI-DAC in der World App öffnen und mit World ID beweisen, dass du ein Mensch bist (aus Japan mit Orb-Verifizierung bestätigt)",
+          "caution": "Betrag, Häufigkeit, Regionen und Auszahlung werden offiziell nicht genannt. Im Oktober 2026 wurde bestätigt, dass es aus Japan mit einer per Orb verifizierten World ID funktioniert; ob eine niedrigere Stufe (ohne Orb) reicht, ist unbekannt. DAC ist ein ERC-20-Token auf World Chain mit einer angegebenen Gesamtmenge von 100 Mio., aber der Vertrag hat keine Obergrenze, und der Eigentümer kann jederzeit weitere Token prägen (minten) und per Airdrop verteilen, was den Wert verwässern kann. Laut Projekt ist es nicht als Geldanlage gedacht, und der Wert ist nicht garantiert. An einer dezentralen Börse (DEX) gibt es ein DAC/WLD-Paar, aber Stand Oktober 2026 liegt die Liquidität nur bei etwa 170 $. Aufträge zur App-Produktion werden separat in World-USDC bezahlt"
+        },
+        "ar": {
+          "gain": "دخل أساسي بعملة DAC",
+          "note": "تطبيق مصغّر داخل World App يصف نفسه بأنه «منصة دخل أساسي شامل مدعومة بالذكاء الاصطناعي». يحصل من يُثبتون أنهم بشر عبر World ID على دخل بعملة DAC ويستخدمونه لدعم «مديرين تنفيذيين بالذكاء الاصطناعي» يخططون للتطبيقات ويبنونها وينشرونها، وللتصويت وإبداء الرأي في الإصدارات. يديره المؤسس Kei Iwami. لا يوجد رابط إحالة ولا مكافأة إحالة",
+          "need": "افتح تطبيق AI-DAC المصغّر في World App وأثبت أنك إنسان عبر World ID (تأكد عمله من اليابان مع التحقق عبر Orb)",
+          "caution": "لا تُذكر رسميًا الكمية ولا التكرار ولا المناطق ولا طريقة التحويل إلى نقود. تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب World ID موثَّق عبر Orb، ولا يُعرف إن كان مستوى تحقق أدنى (دون Orb) كافيًا. DAC رمز ERC-20 على World Chain بمعروض إجمالي مُعلن قدره 100 مليون، لكن العقد بلا حد أقصى، ويمكن للمالك سكّ المزيد وتوزيعه في أي وقت، ما قد يُضعف قيمته. يقول المشروع إنه ليس للاستثمار وإن قيمته غير مضمونة. يوجد زوج DAC/WLD في منصة تداول لامركزية (DEX)، لكن السيولة في أكتوبر 2026 نحو $170 فقط. تُدفع طلبات إنتاج التطبيقات بشكل منفصل بـUSDC على World"
+        }
+      }
+    },
+    {
+      "id": "axo",
+      "name": "AXO (World App)",
+      "nameJa": "AXO（World App）",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://world.org/ecosystem/app_8aeb55d57b7be834fb8d67e2f803d258",
+      "referral": {
+        "url": "https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&path=?ref=932BDA",
+        "code": "932BDA",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "world-id",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "partial"
+      },
+      "ease": 3,
+      "added": "2026-10-24",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/axo/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/axo/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/axo/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/axo/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/axo/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/axo/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/axo/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/axo/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "AXO tokens every day",
+          "note": "A mini app inside World App. Claim AXO (AXOLOCOIN), a token on World Chain, once a day with a tap. “Premium” at 1 WLD a month triples your daily claim. It also has a referral system. David Mateos is named as the founder. About 300,000 users (World’s listing page, Oct 2026)",
+          "need": "Open the mini app in World App via the referral link (referral code 932BDA), prove you are human with World ID (confirmed from Japan with Orb verification), and claim every day",
+          "caution": "The daily amount and what the referral reward is are not stated officially. Confirmed usable from Japan with an Orb-verified World ID in Oct 2026; whether a lower (non-Orb) verification level is enough is unknown. AXO can be swapped for WLD on a decentralized exchange (DEX), but as of Oct 2026 liquidity is only about $2,000 and one AXO is worth a tiny fraction of a cent. No operating company details were found"
+        },
+        "ja": {
+          "gain": "AXO トークンを毎日",
+          "note": "World App の中で動くミニアプリ。World Chain 上のトークン AXO（AXOLOCOIN）を1日1回タップで受け取れる。月1 WLDの「Premium」に入ると毎日の受け取り量が3倍になる。紹介のしくみもある。創設者として David Mateos の名前が公開されている。利用者は約30万人（2026年10月時点のWorldの掲載ページ）",
+          "need": "紹介リンク（紹介コード 932BDA）から World App でミニアプリを開き、World ID で人間であることを証明し（日本からはOrb認証済みで利用を確認）、毎日受け取る",
+          "caution": "1日にもらえる量と、紹介でもらえる特典の中身は公式に書かれていない。2026年10月に、OrbでWorld IDを認証したアカウントで日本から使えることを確認した。Orbより低い認証レベルで足りるかはわかっていない。AXO は分散型取引所（DEX）で WLD と交換できるが、2026年10月時点で流動性は約2,000ドルととても小さく、1 AXO は0.01円未満。運営会社の情報は見つからない"
+        },
+        "zh": {
+          "gain": "每天领取 AXO 代币",
+          "note": "在 World App 内运行的小程序。每天点一下即可领取一次 World Chain 上的代币 AXO（AXOLOCOIN）。加入每月 1 WLD 的“Premium”后，每日领取量变为 3 倍。也有推荐机制。公开的创始人为 David Mateos。用户约 30 万（2026 年 10 月 World 的介绍页）",
+          "need": "通过推荐链接（推荐码 932BDA）在 World App 中打开小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后每天领取",
+          "caution": "官方没有写明每天能领多少，也没有写明推荐奖励的内容。2026 年 10 月已确认，使用经 Orb 验证的 World ID 账户可在日本使用；低于 Orb 的验证等级是否足够尚不清楚。AXO 可在去中心化交易所（DEX）换成 WLD，但截至 2026 年 10 月流动性只有约 2,000 美元，1 AXO 远不到 1 美分。未找到运营公司的信息"
+        },
+        "hi": {
+          "gain": "हर दिन AXO टोकन",
+          "note": "World App के अंदर चलने वाला एक मिनी ऐप। World Chain पर AXO (AXOLOCOIN) टोकन दिन में एक बार टैप करके क्लेम करें। हर महीने 1 WLD वाला “Premium” लेने पर रोज़ की क्लेम तीन गुना हो जाती है। इसमें रेफ़रल सिस्टम भी है। संस्थापक के रूप में David Mateos का नाम दिया गया है। लगभग 3 लाख यूज़र (World का लिस्टिंग पेज, अक्टूबर 2026)",
+          "need": "रेफ़रल लिंक (रेफ़रल कोड 932BDA) से World App में मिनी ऐप खोलें, World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि), और रोज़ क्लेम करें",
+          "caution": "रोज़ की रकम और रेफ़रल इनाम क्या है, यह आधिकारिक तौर पर नहीं लिखा है। अक्टूबर 2026 में पुष्टि हुई कि Orb से वेरिफ़ाई की गई World ID वाले अकाउंट से यह जापान में चलता है; Orb से कम वेरिफ़िकेशन लेवल काफ़ी है या नहीं, यह पता नहीं। AXO को डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर WLD से बदला जा सकता है, पर अक्टूबर 2026 में लिक्विडिटी सिर्फ़ लगभग $2,000 है और 1 AXO की कीमत एक सेंट का बहुत छोटा हिस्सा है। ऑपरेटर कंपनी की जानकारी नहीं मिली"
+        },
+        "es": {
+          "gain": "Tokens AXO cada día",
+          "note": "Una mini app dentro de World App. Reclama AXO (AXOLOCOIN), un token de World Chain, una vez al día con un toque. «Premium», por 1 WLD al mes, triplica lo que reclamas cada día. También tiene un sistema de referidos. Figura David Mateos como fundador. Unos 300.000 usuarios (página de World, octubre de 2026)",
+          "need": "Abre la mini app en World App con el enlace de referido (código 932BDA), demuestra que eres humano con World ID (confirmado desde Japón con verificación Orb) y reclama cada día",
+          "caution": "La cantidad diaria y en qué consiste la recompensa por referido no se indican oficialmente. En octubre de 2026 se confirmó que funciona desde Japón con un World ID verificado por Orb; no se sabe si basta un nivel de verificación inferior (sin Orb). AXO se puede cambiar por WLD en un exchange descentralizado (DEX), pero a octubre de 2026 la liquidez es de solo unos 2.000 $ y un AXO vale una mínima fracción de céntimo. No se encontraron datos de la empresa que lo gestiona"
+        },
+        "de": {
+          "gain": "Jeden Tag AXO-Token",
+          "note": "Eine Mini-App in der World App. Hol einmal am Tag per Tippen AXO (AXOLOCOIN) ab, einen Token auf World Chain. „Premium“ für 1 WLD im Monat verdreifacht deine tägliche Menge. Es gibt auch ein Empfehlungssystem. Als Gründer wird David Mateos genannt. Rund 300.000 Nutzer (Eintrag bei World, Oktober 2026)",
+          "need": "Die Mini-App über den Empfehlungslink (Empfehlungscode 932BDA) in der World App öffnen, mit World ID beweisen, dass du ein Mensch bist (aus Japan mit Orb-Verifizierung bestätigt), und jeden Tag abholen",
+          "caution": "Tagesbetrag und Art der Empfehlungsprämie werden offiziell nicht genannt. Im Oktober 2026 wurde bestätigt, dass es aus Japan mit einer per Orb verifizierten World ID funktioniert; ob eine niedrigere Stufe (ohne Orb) reicht, ist unbekannt. AXO lässt sich an einer dezentralen Börse (DEX) gegen WLD tauschen, aber Stand Oktober 2026 liegt die Liquidität nur bei etwa 2.000 $, und ein AXO ist nur einen winzigen Bruchteil eines Cents wert. Zur Betreiberfirma wurden keine Angaben gefunden"
+        },
+        "ar": {
+          "gain": "رموز AXO كل يوم",
+          "note": "تطبيق مصغّر داخل World App. طالب برمز AXO (AXOLOCOIN) على World Chain مرة يوميًا بنقرة واحدة. اشتراك «Premium» مقابل 1 WLD شهريًا يضاعف مطالبتك اليومية ثلاث مرات. وفيه نظام إحالة أيضًا. يُذكر David Mateos مؤسسًا له. نحو 300 ألف مستخدم (صفحة World، أكتوبر 2026)",
+          "need": "افتح التطبيق المصغّر في World App عبر رابط الإحالة (رمز الإحالة 932BDA)، وأثبت أنك إنسان عبر World ID (تأكد عمله من اليابان مع التحقق عبر Orb)، وطالب كل يوم",
+          "caution": "لا يُذكر رسميًا المقدار اليومي ولا ماهية مكافأة الإحالة. تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب World ID موثَّق عبر Orb، ولا يُعرف إن كان مستوى تحقق أدنى (دون Orb) كافيًا. يمكن مبادلة AXO بـWLD في منصة تداول لامركزية (DEX)، لكن السيولة في أكتوبر 2026 نحو $2,000 فقط، وقيمة 1 AXO جزء ضئيل جدًا من السنت. لم نعثر على معلومات عن الشركة المشغّلة"
+        }
+      }
+    },
+    {
+      "id": "billions",
+      "name": "Billions",
+      "nameJa": "Billions",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://billions.network/",
+      "referral": {
+        "url": "https://official.app/rc/ECMHPWI7AG",
+        "code": null,
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "face",
+          "optional": false
+        },
+        {
+          "method": "passport-nfc",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "unknown",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ease": 3,
+      "added": "2026-10-26",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/billions/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/billions/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/billions/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/billions/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/billions/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/billions/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/billions/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/billions/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Power points (for verifying, referring friends and taking part)",
+          "note": "A digital ID app that proves you are a real human using your phone and an ID document. Verifying, referring friends and taking part in the network earn Power points, which the app says unlock rewards. Built by the team behind Polygon ID and Privado ID; its own token, $BILL, is listed on Coinbase, Kraken and others. The App Store publisher is ZKID Labs AG (updated June 2026). It claims 2.5M+ verified users",
+          "need": "Sign up through the referral link and verify with a face liveness check or an NFC passport (confirmed usable from Japan in Oct 2026, first-hand)",
+          "caution": "Whether or how Power points convert to $BILL or cash is not stated officially. Third-party sources say the referrer earns Power when a referred person gets verified, plus a share of what that person’s own referrals bring; this could not be confirmed on official pages (any bonus for the new user is also unknown). $BILL has fallen from its May 2026 high of about $0.23 to about $0.006 as of Oct 2026. App Store ratings are low (2.5 in Japan, 2.7 in the US), with complaints of no rewards and instability. It handles your face and passport data, so check its privacy terms first"
+        },
+        "ja": {
+          "gain": "Power ポイント（認証・友だち紹介・参加で貯まる）",
+          "note": "スマホと身分証で「本物の人間」であることを証明するデジタルIDアプリ。認証や友だちの紹介、ネットワークへの参加で Power ポイントが貯まり、特典の解放に使えると説明されている。Polygon ID・Privado ID を手がけたチームによるもので、独自の暗号資産 $BILL は Coinbase や Kraken などに上場している。App Store の提供元は ZKID Labs AG（2026年6月に更新）。公称の認証済みユーザーは250万人以上",
+          "need": "紹介リンクから登録し、顔のライブネスチェック、またはNFC対応のパスポートで認証する（日本からの利用は2026年10月に実際に確認）",
+          "caution": "Power ポイントを $BILL や現金に交換できるか、どう交換されるかは公式に書かれていない。紹介した人が認証されると紹介した側に Power が入り、その人がさらに紹介した分の一部も入るとする情報があるが、公式ページでは確認できていない（紹介された側の特典も不明）。$BILL は2026年5月の最高値 約0.23ドルから大きく下がり、2026年10月時点で約0.006ドル。App Store の評価は低く（日本2.5、米国2.7）、「報酬が出ない」「動作が不安定」という声もある。顔やパスポートの情報を扱うので、プライバシーの扱いを確認してから使いたい"
+        },
+        "zh": {
+          "gain": "Power 积分（通过验证、邀请好友和参与积累）",
+          "note": "用手机和身份证件证明你是“真人”的数字身份应用。完成验证、邀请好友和参与网络活动可积累 Power 积分，官方称可用来解锁奖励。由曾打造 Polygon ID 和 Privado ID 的团队开发，自有代币 $BILL 已在 Coinbase、Kraken 等交易所上市。App Store 提供者为 ZKID Labs AG（2026 年 6 月更新）。官方称已验证用户超过 250 万",
+          "need": "通过推荐链接注册，并用人脸活体检测或支持 NFC 的护照完成验证（已于 2026 年 10 月亲自确认可在日本使用）",
+          "caution": "官方没有说明 Power 积分能否、以及如何兑换成 $BILL 或现金。有第三方资料称，被邀请人完成验证后邀请人可获得 Power，并能从对方再邀请的人中获得一部分，但官方页面未能确认（被邀请人有无奖励也不清楚）。$BILL 从 2026 年 5 月约 0.23 美元的高点大幅下跌，2026 年 10 月约为 0.006 美元。App Store 评分偏低（日本 2.5，美国 2.7），也有“没有奖励”“不稳定”的评价。它会处理你的人脸和护照信息，使用前请先确认隐私条款"
+        },
+        "hi": {
+          "gain": "Power पॉइंट (वेरिफ़िकेशन, दोस्तों को रेफ़र करने और भागीदारी पर)",
+          "note": "फ़ोन और पहचान पत्र से यह साबित करने वाला डिजिटल ID ऐप कि आप असली इंसान हैं। वेरिफ़ाई करने, दोस्तों को रेफ़र करने और नेटवर्क में भाग लेने पर Power पॉइंट मिलते हैं, जिनसे ऐप के अनुसार इनाम अनलॉक होते हैं। इसे Polygon ID और Privado ID बनाने वाली टीम ने बनाया है; इसका अपना टोकन $BILL Coinbase, Kraken आदि पर लिस्टेड है। App Store पर प्रकाशक ZKID Labs AG है (जून 2026 में अपडेट)। 25 लाख से ज़्यादा वेरिफ़ाइड यूज़र का दावा",
+          "need": "रेफ़रल लिंक से साइन अप करें और फ़ेस लाइवनेस चेक या NFC पासपोर्ट से वेरिफ़ाई करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+          "caution": "Power पॉइंट $BILL या नकद में बदलते हैं या नहीं, और कैसे, यह आधिकारिक रूप से नहीं बताया गया। तीसरे पक्ष के स्रोतों के अनुसार रेफ़र किए गए व्यक्ति के वेरिफ़ाई होने पर रेफ़र करने वाले को Power मिलता है, साथ ही उस व्यक्ति के आगे के रेफ़रल का हिस्सा भी; आधिकारिक पेजों पर इसकी पुष्टि नहीं हुई (नए यूज़र को कोई बोनस मिलता है या नहीं, यह भी पता नहीं)। $BILL मई 2026 के लगभग $0.23 के उच्च स्तर से गिरकर अक्टूबर 2026 में लगभग $0.006 पर है। App Store रेटिंग कम है (जापान 2.5, अमेरिका 2.7), और इनाम न मिलने व अस्थिरता की शिकायतें हैं। यह आपके चेहरे और पासपोर्ट का डेटा संभालता है, इसलिए पहले इसकी गोपनीयता शर्तें देख लें"
+        },
+        "es": {
+          "gain": "Puntos Power (por verificarte, invitar a amigos y participar)",
+          "note": "Una app de identidad digital que demuestra que eres una persona real con el móvil y un documento de identidad. Al verificarte, invitar a amigos y participar en la red sumas puntos Power, que según la app desbloquean recompensas. La creó el equipo detrás de Polygon ID y Privado ID; su propio token, $BILL, cotiza en Coinbase, Kraken y otros. En la App Store la publica ZKID Labs AG (actualizada en junio de 2026). Dice tener más de 2,5 millones de usuarios verificados",
+          "need": "Regístrate con el enlace de referido y verifícate con una prueba de vida facial o un pasaporte con NFC (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+          "caution": "No se indica oficialmente si los puntos Power se pueden cambiar por $BILL o dinero, ni cómo. Fuentes externas dicen que quien invita gana Power cuando la persona invitada se verifica, más una parte de lo que aporten las invitaciones de esa persona; no se pudo confirmar en las páginas oficiales (tampoco se sabe si el nuevo usuario recibe algo). $BILL ha caído desde su máximo de mayo de 2026, unos 0,23 $, hasta unos 0,006 $ en octubre de 2026. Las valoraciones en la App Store son bajas (2,5 en Japón, 2,7 en EE. UU.), con quejas de que no paga y de que falla. Maneja datos de tu cara y tu pasaporte, así que revisa antes su política de privacidad"
+        },
+        "de": {
+          "gain": "Power-Punkte (fürs Verifizieren, Werben von Freunden und Mitmachen)",
+          "note": "Eine App für digitale Identität, mit der du per Handy und Ausweisdokument nachweist, dass du ein echter Mensch bist. Fürs Verifizieren, Werben von Freunden und Mitmachen im Netzwerk gibt es Power-Punkte, mit denen sich laut App Belohnungen freischalten lassen. Entwickelt vom Team hinter Polygon ID und Privado ID; der eigene Token $BILL ist unter anderem bei Coinbase und Kraken gelistet. Herausgeber im App Store ist die ZKID Labs AG (Update im Juni 2026). Nach eigenen Angaben über 2,5 Mio. verifizierte Nutzer",
+          "need": "Über den Empfehlungslink anmelden und dich per Gesichts-Lebendprüfung oder NFC-Reisepass verifizieren (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+          "caution": "Ob und wie Power-Punkte in $BILL oder Geld umgewandelt werden, steht offiziell nirgends. Laut Drittquellen bekommt die werbende Person Power, wenn eine geworbene Person sich verifiziert, plus einen Anteil dessen, was deren eigene Empfehlungen bringen; auf offiziellen Seiten ließ sich das nicht bestätigen (ob Neue etwas bekommen, ist ebenfalls unklar). $BILL ist vom Hoch im Mai 2026 bei etwa 0,23 $ auf rund 0,006 $ im Oktober 2026 gefallen. Die App-Store-Bewertungen sind niedrig (2,5 in Japan, 2,7 in den USA), mit Beschwerden über ausbleibende Belohnungen und Instabilität. Die App verarbeitet Gesichts- und Passdaten, prüf also vorher die Datenschutzbestimmungen"
+        },
+        "ar": {
+          "gain": "نقاط Power (مقابل التحقق ودعوة الأصدقاء والمشاركة)",
+          "note": "تطبيق هوية رقمية يثبت أنك إنسان حقيقي باستخدام هاتفك ووثيقة هوية. تمنحك عمليات التحقق ودعوة الأصدقاء والمشاركة في الشبكة نقاط Power، ويقول التطبيق إنها تفتح مكافآت. طوّره الفريق الذي أنشأ Polygon ID وPrivado ID، ورمزه الخاص $BILL مدرج في Coinbase وKraken وغيرها. الناشر في App Store هو ZKID Labs AG (حُدّث في يونيو 2026). يقول إن لديه أكثر من 2.5 مليون مستخدم موثَّق",
+          "need": "سجّل عبر رابط الإحالة وتحقق بفحص حيوية الوجه أو بجواز سفر يدعم NFC (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+          "caution": "لا يُذكر رسميًا هل تتحول نقاط Power إلى $BILL أو إلى نقود، ولا كيف. تقول مصادر خارجية إن الداعي يحصل على Power عندما يتحقق الشخص المدعو، إضافة إلى جزء مما تجلبه دعوات ذلك الشخص، لكن لم نتمكن من تأكيد ذلك في الصفحات الرسمية (ولا يُعرف إن كان للمستخدم الجديد مكافأة). هبط $BILL من ذروته في مايو 2026 عند نحو $0.23 إلى نحو $0.006 في أكتوبر 2026. تقييمات App Store منخفضة (2.5 في اليابان، 2.7 في الولايات المتحدة)، مع شكاوى من عدم صرف المكافآت ومن عدم الاستقرار. يتعامل التطبيق مع بيانات وجهك وجواز سفرك، فراجع شروط الخصوصية أولًا"
+        }
+      }
+    },
+    {
+      "id": "biomatrix",
+      "name": "BioMatrix",
+      "nameJa": "BioMatrix",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://biomatrix.ai/ja/",
+      "referral": {
+        "url": "https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&af_dp=biomatrix%3A%2F%2F&deep_link_sub1=C66SPN",
+        "code": "C66SPN",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [],
+      "trust": {
+        "cash": "unknown",
+        "price": "unknown",
+        "operator": "unknown"
+      },
+      "ease": 4,
+      "added": null,
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/biomatrix/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/biomatrix/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/biomatrix/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/biomatrix/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/biomatrix/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/biomatrix/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "PoY tokens every month",
+          "note": "A UBI token that promises monthly payouts for 60 years. Signing up with a referral code gives a 5-token bonus (as of Jan 2026). Earlier sign-ups get larger allocations",
+          "need": "Verify with biometrics in the app, then claim each month",
+          "caution": "We could not confirm a market price for PoY. Make sure you are comfortable with how it handles biometric data"
+        },
+        "ja": {
+          "gain": "PoYトークンを毎月",
+          "note": "「60年間毎月配る」とうたうUBIトークン。紹介コードで登録すると5トークンのボーナス（2026年1月時点）。早く登録した人ほど配布が多い",
+          "need": "アプリで生体認証による本人確認をして、毎月受け取る",
+          "caution": "PoYの取引所での価格は今回確認できず。生体情報の扱いに納得したうえで使う"
+        },
+        "zh": {
+          "gain": "每月领取 PoY 代币",
+          "note": "承诺 60 年每月发放的 UBI 代币。使用推荐码注册可获得 5 枚代币奖励（截至 2026 年 1 月）。越早注册分配越多",
+          "need": "在应用中通过生物识别验证后，每月领取",
+          "caution": "我们未能确认 PoY 的市场价格。请在接受其生物识别数据处理方式后再使用"
+        },
+        "hi": {
+          "gain": "हर महीने PoY टोकन",
+          "note": "एक UBI टोकन जो 60 साल तक हर महीने भुगतान का वादा करता है। रेफ़रल कोड से साइन अप करने पर 5 टोकन बोनस (जनवरी 2026 तक)। जल्दी जुड़ने वालों को ज़्यादा मिलता है",
+          "need": "ऐप में बायोमेट्रिक से सत्यापन करें, फिर हर महीने क्लेम करें",
+          "caution": "PoY की बाज़ार कीमत की पुष्टि हम नहीं कर सके। बायोमेट्रिक डेटा के इस्तेमाल से सहमत हों तभी इस्तेमाल करें"
+        },
+        "es": {
+          "gain": "Tokens PoY cada mes",
+          "note": "Token UBI que promete pagos mensuales durante 60 años. Registrarte con un código de referido da 5 tokens extra (a enero de 2026). Quien se registra antes recibe más",
+          "need": "Verifícate con biometría en la app y reclama cada mes",
+          "caution": "No pudimos confirmar un precio de mercado para PoY. Úsala solo si estás de acuerdo con cómo trata los datos biométricos"
+        },
+        "de": {
+          "gain": "Jeden Monat PoY-Token",
+          "note": "Ein Grundeinkommens-Token, der 60 Jahre lang monatliche Auszahlungen verspricht. Mit Empfehlungscode gibt es 5 Token als Bonus (Stand Januar 2026). Wer früher dabei ist, bekommt größere Zuteilungen",
+          "need": "In der App biometrisch verifizieren und dann jeden Monat abholen",
+          "caution": "Einen Marktkurs für PoY konnten wir nicht bestätigen. Überleg dir, ob du mit dem Umgang mit deinen biometrischen Daten einverstanden bist"
+        },
+        "ar": {
+          "gain": "رموز PoY كل شهر",
+          "note": "رمز دخل أساسي يَعِد بمدفوعات شهرية لمدة 60 عامًا. التسجيل برمز إحالة يمنح 5 رموز إضافية (حتى يناير 2026). من يسجّل مبكرًا يحصل على حصة أكبر",
+          "need": "تحقّق ببياناتك الحيوية في التطبيق، ثم اطلب حصتك كل شهر",
+          "caution": "لم نتمكن من تأكيد سعر سوقي لـPoY. استخدمه فقط إذا كنت مرتاحًا لطريقة تعامله مع البيانات الحيوية"
+        }
+      }
+    },
+    {
+      "id": "circles",
+      "name": "Circles (Gnosis App)",
+      "nameJa": "Circles（Gnosis App）",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://app.gnosis.io/",
+      "referral": null,
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "web-of-trust",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "unknown",
+        "price": "unknown",
+        "operator": "yes"
+      },
+      "ease": 3,
+      "added": "2026-10-23",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/circles/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/circles/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/circles/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/circles/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/circles/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/circles/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/circles/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/circles/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "1 CRC per hour (24 per day)",
+          "note": "A Gnosis project where every person issues their own currency. Circles 2.0 launched in May 2025, and in June 2026 the Gnosis App was rebuilt around Circles. This site has no referral link for it yet",
+          "need": "Sign up in the Gnosis App and get invited by an existing Circles member. The inviter pays 96 CRC and the newcomer gets 48 CRC as a welcome bonus",
+          "caution": "You can’t start without a member to invite you. CRC’s market price and ways to cash out are not confirmed. Gnosis has announced plans to spin the Gnosis App out of Gnosis Ltd into a separate company, so details may change"
+        },
+        "ja": {
+          "gain": "1時間に1 CRC（1日24 CRC）",
+          "note": "Gnosisが手がける、一人ひとりが自分の通貨を発行するしくみ。2025年5月にCircles 2.0が公開され、2026年6月にはGnosis AppがCircles中心に作り直された。このサイトの紹介リンクはまだない",
+          "need": "Gnosis Appで登録し、既存のCirclesメンバーから招待を受ける。招待する側が96 CRCを払い、招待された側は歓迎ボーナスとして48 CRCを受け取る",
+          "caution": "招待してくれるメンバーがいないと始められない。CRCの市場価格や換金方法は確認できていない。Gnosis AppはGnosis Ltdから独立した会社に移る予定と発表されていて、内容が変わることがある"
+        },
+        "zh": {
+          "gain": "每小时 1 CRC（每天 24 CRC）",
+          "note": "由 Gnosis 推出、每个人发行自己货币的机制。Circles 2.0 于 2025 年 5 月上线，2026 年 6 月 Gnosis App 围绕 Circles 进行了重建。本站暂时没有它的推荐链接",
+          "need": "在 Gnosis App 注册，并接受现有 Circles 成员的邀请。邀请人支付 96 CRC，被邀请人获得 48 CRC 欢迎奖励",
+          "caution": "没有成员邀请就无法开始。CRC 的市场价格和兑现方式尚未确认。Gnosis 已宣布计划将 Gnosis App 从 Gnosis Ltd 分拆为独立公司，内容可能会有变化"
+        },
+        "hi": {
+          "gain": "हर घंटे 1 CRC (रोज़ 24 CRC)",
+          "note": "Gnosis का एक प्रोजेक्ट जिसमें हर व्यक्ति अपनी खुद की करेंसी जारी करता है। Circles 2.0 मई 2025 में लॉन्च हुआ, और जून 2026 में Gnosis App को Circles के इर्द-गिर्द नए सिरे से बनाया गया। इस साइट के पास अभी इसका रेफ़रल लिंक नहीं है",
+          "need": "Gnosis App में साइन अप करें और किसी मौजूदा Circles सदस्य से इनवाइट पाएँ। इनवाइट करने वाला 96 CRC देता है और नए सदस्य को वेलकम बोनस के रूप में 48 CRC मिलते हैं",
+          "caution": "इनवाइट करने वाले सदस्य के बिना शुरू नहीं कर सकते। CRC की बाज़ार कीमत और उसे नकद में बदलने के तरीके की पुष्टि नहीं हुई है। Gnosis ने Gnosis App को Gnosis Ltd से अलग कंपनी बनाने की योजना घोषित की है, इसलिए चीज़ें बदल सकती हैं"
+        },
+        "es": {
+          "gain": "1 CRC por hora (24 al día)",
+          "note": "Un proyecto de Gnosis en el que cada persona emite su propia moneda. Circles 2.0 se lanzó en mayo de 2025, y en junio de 2026 la Gnosis App se rehízo en torno a Circles. Esta web aún no tiene enlace de referido",
+          "need": "Regístrate en la Gnosis App y consigue una invitación de un miembro de Circles. Quien invita paga 96 CRC y la persona invitada recibe 48 CRC de bienvenida",
+          "caution": "No puedes empezar sin un miembro que te invite. No están confirmados el precio de mercado del CRC ni cómo convertirlo en dinero. Gnosis ha anunciado que separará la Gnosis App de Gnosis Ltd en una empresa independiente, así que los detalles pueden cambiar"
+        },
+        "de": {
+          "gain": "1 CRC pro Stunde (24 pro Tag)",
+          "note": "Ein Projekt von Gnosis, bei dem jede Person ihre eigene Währung ausgibt. Circles 2.0 startete im Mai 2025, und im Juni 2026 wurde die Gnosis App rund um Circles neu gebaut. Diese Seite hat noch keinen Empfehlungslink dafür",
+          "need": "In der Gnosis App anmelden und von einem bestehenden Circles-Mitglied eingeladen werden. Wer einlädt, zahlt 96 CRC, und Neue bekommen 48 CRC als Willkommensbonus",
+          "caution": "Ohne ein Mitglied, das dich einlädt, kannst du nicht starten. Marktkurs von CRC und Auszahlungswege sind nicht bestätigt. Gnosis hat angekündigt, die Gnosis App aus der Gnosis Ltd in ein eigenes Unternehmen auszugliedern, daher kann sich einiges ändern"
+        },
+        "ar": {
+          "gain": "1 CRC كل ساعة (24 CRC يوميًا)",
+          "note": "مشروع من Gnosis يُصدر فيه كل شخص عملته الخاصة. أُطلق Circles 2.0 في مايو 2025، وفي يونيو 2026 أُعيد بناء Gnosis App حول Circles. لا يوجد لدى هذا الموقع رابط إحالة له بعد",
+          "need": "سجّل في Gnosis App واحصل على دعوة من عضو حالي في Circles. يدفع الداعي 96 CRC ويحصل المدعو على 48 CRC مكافأة ترحيب",
+          "caution": "لا يمكنك البدء دون عضو يدعوك. لم يتأكد سعر CRC في السوق ولا طرق تحويله إلى نقود. أعلنت Gnosis نيتها فصل Gnosis App عن Gnosis Ltd في شركة مستقلة، لذا قد تتغير التفاصيل"
+        }
+      }
+    },
+    {
+      "id": "deltakim",
+      "name": "Delta Kim",
+      "nameJa": "Delta Kim",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://www.delta.kim/",
+      "referral": {
+        "url": "https://www.delta.kim/?referrer=E7XK90P8N2AX9",
+        "code": "E7XK90P8N2AX9",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "unknown",
+        "price": "no",
+        "operator": "unknown"
+      },
+      "ease": 3,
+      "added": "2026-10-09",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/deltakim/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/deltakim/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/deltakim/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/deltakim/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/deltakim/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/deltakim/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/deltakim/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/deltakim/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "KIM every day",
+          "note": "A crypto app similar to Pi Network where you “mine” daily on your phone. Signing up with a referral code is said to boost your mining rate",
+          "need": "Sign up via the invite link and tap the mining button in the app every day",
+          "caution": "As of October 2026, no exchange listing or market price could be confirmed, so it’s unclear whether KIM can be cashed out. Some users report their balance stopped growing despite mining. Needs daily action"
+        },
+        "ja": {
+          "gain": "KIMを毎日",
+          "note": "Pi Networkに似た、スマホで毎日“採掘”する暗号資産アプリ。紹介コードを使って登録すると採掘ペースが上がるとされる",
+          "need": "招待リンクから登録し、アプリで毎日採掘ボタンを押す",
+          "caution": "2026年10月時点で取引所への上場や市場価格は確認できず、換金できるかは不明。採掘しても残高が増えなくなったという声もある。毎日の操作が必要"
+        },
+        "zh": {
+          "gain": "每天获得 KIM",
+          "note": "类似 Pi Network 的加密资产应用，每天用手机“挖矿”。据称使用邀请码注册后挖矿速度会提高",
+          "need": "通过邀请链接注册，每天在应用中点击挖矿按钮",
+          "caution": "截至 2026 年 10 月，尚未确认在任何交易所上架或有市场价格，能否兑现尚不清楚。也有用户反映挖矿后余额不再增加。需要每天操作"
+        },
+        "hi": {
+          "gain": "हर दिन KIM",
+          "note": "Pi Network जैसा एक क्रिप्टो ऐप, जिसमें आप फ़ोन पर रोज़ “माइनिंग” करते हैं। कहा जाता है कि रेफ़रल कोड से साइन अप करने पर माइनिंग की रफ़्तार बढ़ जाती है",
+          "need": "इनवाइट लिंक से साइन अप करें और ऐप में रोज़ माइनिंग बटन दबाएँ",
+          "caution": "अक्टूबर 2026 तक किसी एक्सचेंज पर लिस्टिंग या बाज़ार मूल्य की पुष्टि नहीं हो सकी, इसलिए यह साफ़ नहीं कि इसे नकद में बदला जा सकेगा या नहीं। कुछ लोगों का कहना है कि माइनिंग के बावजूद बैलेंस बढ़ना बंद हो गया। रोज़ ऐप चलाना ज़रूरी है"
+        },
+        "es": {
+          "gain": "KIM cada día",
+          "note": "Una app de criptomonedas parecida a Pi Network en la que «minas» a diario desde el móvil. Se dice que registrarte con un código de referido aumenta tu ritmo de minado",
+          "need": "Regístrate con el enlace de invitación y pulsa el botón de minado en la app cada día",
+          "caution": "En octubre de 2026 no se ha podido confirmar que cotice en ningún exchange ni que tenga precio de mercado, así que no está claro si se puede convertir en dinero. Algunos usuarios dicen que su saldo dejó de crecer aunque sigan minando. Requiere acción diaria"
+        },
+        "de": {
+          "gain": "Jeden Tag KIM",
+          "note": "Eine Krypto-App ähnlich wie Pi Network, bei der du täglich auf dem Handy „minst“. Eine Anmeldung mit Empfehlungscode soll deine Mining-Rate erhöhen",
+          "need": "Über den Einladungslink anmelden und jeden Tag in der App auf den Mining-Button tippen",
+          "caution": "Stand Oktober 2026 ließen sich weder Börsennotierung noch Marktkurs bestätigen, daher ist unklar, ob KIM ausgezahlt werden kann. Manche Nutzer berichten, dass ihr Guthaben trotz Mining nicht mehr wuchs. Braucht tägliche Aktion"
+        },
+        "ar": {
+          "gain": "عملة KIM كل يوم",
+          "note": "تطبيق عملات مشفرة يشبه Pi Network، «تعدّن» فيه يوميًا من هاتفك. يُقال إن التسجيل برمز إحالة يرفع سرعة التعدين",
+          "need": "سجّل عبر رابط الدعوة واضغط زر التعدين في التطبيق كل يوم",
+          "caution": "حتى أكتوبر 2026 لم يتسنَّ التأكد من إدراجها في أي منصة تداول أو من وجود سعر سوقي، لذا ليس واضحًا إن كان يمكن تحويلها إلى نقود. يذكر بعض المستخدمين أن رصيدهم توقف عن الزيادة رغم التعدين. يتطلب إجراءً يوميًا"
+        }
+      }
+    },
+    {
+      "id": "dotare",
+      "name": "Dotare",
+      "nameJa": "Dotare",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://dotare.io/",
+      "referral": null,
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [],
+      "trust": {
+        "cash": "yes",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ease": 2,
+      "added": "2026-10-24",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/dotare/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/dotare/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/dotare/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/dotare/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/dotare/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/dotare/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/dotare/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/dotare/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "10 ADA a month for a year if you are chosen (2027 cycle)",
+          "note": "A “global universal basic income” endowment on Cardano. Staking yield on ADA pledged by benefactors grows the fund, and its earnings are paid out monthly in ADA. 2027 beneficiaries get 10 ADA a month for 12 months (the amount can grow as the fund grows). There is no means test. Run by Dotare, LLC in the US. There is no referral link or referral bonus",
+          "need": "Be 18 or older. Sign up on the official site and apply for each year you want to take part. When your turn comes, pass a quick identity check (to show you are human) and set up a Cardano wallet to receive payments",
+          "caution": "For the 2027 cycle, applications closed on 31 Aug 2026 and enrollment closes on 30 Nov 2026; when someone signing up now would start receiving is not confirmed. Payouts go in line order, and as of 24 Oct 2026 the site showed 147 citizens and 2 beneficiaries. ADA’s price swings a lot"
+        },
+        "ja": {
+          "gain": "受給者に選ばれると月10 ADAを1年間（2027年分）",
+          "note": "Cardano上の「世界向けベーシックインカム基金」。寄付者が預けたADAのステーキング利回りなどで基金を運用し、その収益を受給者に毎月ADAで配る。2027年分の受給者は月10 ADAを12か月受け取れる（金額は基金の成長で増えることがある）。所得の審査はない。運営はアメリカのDotare, LLC。紹介リンクや紹介特典はない",
+          "need": "18歳以上。公式サイトから登録し、受け取りたい年ごとに申し込む。順番が回ってきたら簡単な本人確認（人間であることの確認）をして、受け取り用のCardanoウォレットを用意する",
+          "caution": "2027年分は申し込みが2026年8月31日、登録が11月30日で締め切りと案内されていて、今から登録した場合にいつから受け取れるかは確認できていない。配布は順番待ちで、2026年10月24日時点のサイト表示では登録者147人に対し受給者は2人。ADAは価格が大きく上下する"
+        },
+        "zh": {
+          "gain": "入选受益人后每月 10 ADA，持续一年（2027 年度）",
+          "note": "Cardano 上的“全球全民基本收入”基金。捐助者存入的 ADA 通过质押收益等让基金增长，再把收益每月以 ADA 发给受益人。2027 年度受益人每月可得 10 ADA，共 12 个月（金额可能随基金增长而增加）。不做收入审查。运营方为美国的 Dotare, LLC。没有推荐链接，也没有推荐奖励",
+          "need": "须年满 18 岁。在官网注册，并为想参加的每一年分别申请。轮到你时完成简单的身份验证（确认你是真人），并准备用于收款的 Cardano 钱包",
+          "caution": "2027 年度的申请已于 2026 年 8 月 31 日截止，登记将于 11 月 30 日截止；现在注册的人从何时开始领取尚未确认。按排队顺序发放，截至 2026 年 10 月 24 日网站显示登记 147 人、受益人 2 人。ADA 价格波动很大"
+        },
+        "hi": {
+          "gain": "चुने जाने पर एक साल तक हर महीने 10 ADA (2027 साइकिल)",
+          "note": "Cardano पर एक “वैश्विक यूनिवर्सल बेसिक इनकम” एंडोमेंट। दानदाताओं की जमा ADA पर स्टेकिंग से फ़ंड बढ़ता है, और उसकी कमाई हर महीने ADA में लाभार्थियों को दी जाती है। 2027 के लाभार्थियों को 12 महीने तक हर महीने 10 ADA मिलते हैं (फ़ंड बढ़ने पर रकम बढ़ सकती है)। आय की कोई जाँच नहीं होती। इसे अमेरिका की Dotare, LLC चलाती है। कोई रेफ़रल लिंक या रेफ़रल बोनस नहीं है",
+          "need": "उम्र 18 साल या ज़्यादा होनी चाहिए। आधिकारिक साइट पर साइन अप करें और जिस साल हिस्सा लेना हो उसके लिए आवेदन करें। आपकी बारी आने पर छोटी-सी पहचान जाँच (कि आप इंसान हैं) पूरी करें और भुगतान पाने के लिए Cardano वॉलेट बनाएँ",
+          "caution": "2027 साइकिल के लिए आवेदन 31 अगस्त 2026 को बंद हो गए और नामांकन 30 नवंबर 2026 को बंद होगा; अभी साइन अप करने वालों को कब से पैसे मिलेंगे, इसकी पुष्टि नहीं हुई है। भुगतान कतार के क्रम में होता है, और 24 अक्टूबर 2026 को साइट पर 147 नागरिक और 2 लाभार्थी दिख रहे थे। ADA की कीमत बहुत ऊपर-नीचे होती है"
+        },
+        "es": {
+          "gain": "10 ADA al mes durante un año si te eligen (ciclo 2027)",
+          "note": "Un fondo de «renta básica universal global» en Cardano. El rendimiento por staking del ADA aportado por los benefactores hace crecer el fondo, y sus ganancias se pagan cada mes en ADA. Los beneficiarios de 2027 reciben 10 ADA al mes durante 12 meses (la cantidad puede crecer con el fondo). No hay prueba de ingresos. Lo gestiona Dotare, LLC, en EE. UU. No hay enlace ni bono de referido",
+          "need": "Ser mayor de 18 años. Regístrate en la web oficial y solicita cada año en que quieras participar. Cuando te toque, pasa una breve verificación de identidad (para comprobar que eres humano) y crea un monedero de Cardano para recibir los pagos",
+          "caution": "Para el ciclo 2027, las solicitudes cerraron el 31 de agosto de 2026 y la inscripción cierra el 30 de noviembre de 2026; no está confirmado desde cuándo cobraría quien se registre ahora. Se paga por orden de fila, y a 24 de octubre de 2026 la web mostraba 147 ciudadanos y 2 beneficiarios. El precio del ADA sube y baja mucho"
+        },
+        "de": {
+          "gain": "10 ADA im Monat ein Jahr lang, wenn du ausgewählt wirst (Zyklus 2027)",
+          "note": "Ein „globaler Grundeinkommens“-Stiftungsfonds auf Cardano. Staking-Erträge auf ADA, die Förderer zusagen, lassen den Fonds wachsen, und seine Erträge werden monatlich in ADA ausgezahlt. Empfänger 2027 bekommen 12 Monate lang 10 ADA im Monat (der Betrag kann mit dem Fonds wachsen). Es gibt keine Bedürftigkeitsprüfung. Betrieben von Dotare, LLC in den USA. Es gibt keinen Empfehlungslink und keinen Empfehlungsbonus",
+          "need": "Mindestens 18 Jahre alt sein. Auf der offiziellen Seite anmelden und dich für jedes Jahr bewerben, in dem du teilnehmen willst. Wenn du an der Reihe bist, eine kurze Identitätsprüfung bestehen (um zu zeigen, dass du ein Mensch bist) und eine Cardano-Wallet für die Auszahlungen einrichten",
+          "caution": "Für den Zyklus 2027 endete die Bewerbung am 31. August 2026, die Einschreibung endet am 30. November 2026; ab wann jemand, der sich jetzt anmeldet, etwas bekommt, ist nicht bestätigt. Ausgezahlt wird in der Reihenfolge der Warteschlange, und am 24. Oktober 2026 zeigte die Seite 147 Bürger und 2 Empfänger. Der ADA-Kurs schwankt stark"
+        },
+        "ar": {
+          "gain": "10 ADA شهريًا لمدة سنة إن اختِرت (دورة 2027)",
+          "note": "صندوق «دخل أساسي شامل عالمي» على Cardano. ينمو الصندوق من عائد التخزين على ADA التي يودعها المتبرعون، وتُوزَّع أرباحه شهريًا بـADA على المستفيدين. يحصل مستفيدو 2027 على 10 ADA شهريًا لمدة 12 شهرًا (وقد يزيد المبلغ مع نمو الصندوق). لا يوجد فحص للدخل. تديره Dotare, LLC في الولايات المتحدة. لا يوجد رابط إحالة ولا مكافأة إحالة",
+          "need": "أن يكون عمرك 18 عامًا أو أكثر. سجّل في الموقع الرسمي وقدّم طلبًا لكل سنة تريد المشاركة فيها. عندما يحين دورك، اجتز تحققًا سريعًا من الهوية (للتأكد أنك إنسان) وأنشئ محفظة Cardano لاستلام الدفعات",
+          "caution": "في دورة 2027 أُغلق باب الطلبات في 31 أغسطس 2026 ويُغلق التسجيل في 30 نوفمبر 2026، ولم يتأكد متى يبدأ من يسجّل الآن في الاستلام. يُصرف حسب ترتيب الطابور، وفي 24 أكتوبر 2026 أظهر الموقع 147 مواطنًا ومستفيدَين اثنين. سعر ADA يتقلب كثيرًا"
+        }
+      }
+    },
+    {
+      "id": "fheid",
+      "name": "FheID (Privasea)",
+      "nameJa": "FheID（Privasea）",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://www.privasea.ai/",
+      "referral": {
+        "url": "https://www.privasea.ai/download-app",
+        "code": "QVedKjg",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "face",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "unknown",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ease": 3,
+      "added": "2026-10-26",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/fheid/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/fheid/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/fheid/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/fheid/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/fheid/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/fheid/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/fheid/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/fheid/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Airdrops and rewards for proving you are human (e.g. campaign “stars”)",
+          "note": "A proof-of-humanity app that scans your face with your phone camera to show you are a real person. It says your facial features are turned into encrypted vectors on the device and processed with fully homomorphic encryption (FHE), so the original images are not sent. Verifying creates a proof-of-human NFT and lets you receive airdrops and rewards across apps. Run by Privasea (App Store publisher Privasea AB, updated as recently as May 2026); its token PRAI trades on KuCoin, Gate and others",
+          "need": "Install the FheID app, enter the invite code QVedKjg, and verify you are human with a face scan (confirmed usable from Japan in Oct 2026, first-hand)",
+          "caution": "What rewards are on offer now, and how much, is not stated officially. A past official campaign (2024) gave referral “stars” (up to 3 levels: 100, 50 and 25 stars per person) that could be exchanged for airdrops. Where the invite code is entered and whether the new user gets anything are not confirmed. PRAI has fallen from its May 2025 high of about $0.096 to about $0.0008 as of Oct 2026. It handles your face data, so check its privacy terms first"
+        },
+        "ja": {
+          "gain": "人間証明でエアドロップや報酬（キャンペーンの「スター」など）",
+          "note": "スマホのカメラで顔を読み取り、「本物の人間」であることを証明する Proof of Humanity アプリ。顔の特徴は端末の中で暗号化されたベクトルに変換され、完全準同型暗号（FHE）で処理されるため、元の画像は送られないと説明されている。認証すると人間証明のNFTが作られ、エアドロップや各アプリの報酬を受け取れる。運営は Privasea（App Store の提供元は Privasea AB、2026年5月にも更新）で、独自の暗号資産 PRAI は KuCoin や Gate などで取引されている",
+          "need": "アプリ FheID を入れて招待コード QVedKjg を入力し、顔で人間証明をする（日本からの利用は2026年10月に実際に確認）",
+          "caution": "今どんな報酬がどれくらいもらえるかは公式に書かれていない。公式の過去のキャンペーン（2024年）では、紹介で「スター」がたまり（3段階まで、1人あたり100・50・25スター）、エアドロップと交換できるしくみだった。招待コードをどこで入力するかや、紹介された側の特典は確認できていない。PRAI は2025年5月の最高値 約0.096ドルから大きく下がり、2026年10月時点で約0.0008ドル。顔の情報を扱うアプリなので、プライバシーの扱いを確認してから使いたい"
+        },
+        "zh": {
+          "gain": "证明你是真人即可获得空投和奖励（如活动“星星”）",
+          "note": "用手机摄像头扫描人脸、证明你是“真人”的 Proof of Humanity 应用。官方称面部特征会在设备上转换为加密向量，并用全同态加密（FHE）处理，原始图像不会被发送。完成验证后会生成真人证明 NFT，可在各应用中获得空投和奖励。运营方为 Privasea（App Store 提供者为 Privasea AB，2026 年 5 月仍有更新），自有代币 PRAI 在 KuCoin、Gate 等交易",
+          "need": "安装 FheID 应用，输入邀请码 QVedKjg，并用人脸完成真人验证（已于 2026 年 10 月亲自确认可在日本使用）",
+          "caution": "官方没有说明目前提供哪些奖励、数量多少。过去的官方活动（2024 年）中，邀请可获得“星星”（最多 3 层，每人 100、50、25 颗），可兑换空投。邀请码在哪里输入、被邀请人有无奖励尚未确认。PRAI 从 2025 年 5 月约 0.096 美元的高点大幅下跌，2026 年 10 月约为 0.0008 美元。它会处理人脸数据，使用前请先确认隐私条款"
+        },
+        "hi": {
+          "gain": "इंसान होने का सबूत देने पर एयरड्रॉप और इनाम (जैसे कैंपेन “स्टार”)",
+          "note": "फ़ोन कैमरे से चेहरा स्कैन करके यह साबित करने वाला Proof of Humanity ऐप कि आप असली इंसान हैं। ऐप के अनुसार चेहरे की विशेषताएँ डिवाइस पर ही एन्क्रिप्टेड वेक्टर में बदली जाती हैं और फ़ुली होमोमॉर्फ़िक एन्क्रिप्शन (FHE) से प्रोसेस होती हैं, इसलिए मूल तस्वीरें नहीं भेजी जातीं। वेरिफ़ाई करने पर इंसान होने का NFT बनता है और अलग-अलग ऐप में एयरड्रॉप व इनाम मिल सकते हैं। इसे Privasea चलाता है (App Store पर प्रकाशक Privasea AB, मई 2026 में भी अपडेट); इसका टोकन PRAI KuCoin, Gate आदि पर ट्रेड होता है",
+          "need": "FheID ऐप इंस्टॉल करें, इनवाइट कोड QVedKjg डालें, और चेहरे से इंसान होने का सबूत दें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+          "caution": "अभी कौन-से इनाम कितने मिलते हैं, यह आधिकारिक रूप से नहीं बताया गया। पिछले आधिकारिक कैंपेन (2024) में रेफ़रल पर “स्टार” मिलते थे (3 लेवल तक: प्रति व्यक्ति 100, 50 और 25 स्टार), जिन्हें एयरड्रॉप से बदला जा सकता था। इनवाइट कोड कहाँ डालना है और नए यूज़र को कुछ मिलता है या नहीं, इसकी पुष्टि नहीं हुई। PRAI मई 2025 के लगभग $0.096 के उच्च स्तर से गिरकर अक्टूबर 2026 में लगभग $0.0008 पर है। यह चेहरे का डेटा संभालता है, इसलिए पहले गोपनीयता शर्तें देखें"
+        },
+        "es": {
+          "gain": "Airdrops y recompensas por demostrar que eres humano (p. ej. «estrellas» de campaña)",
+          "note": "Una app de prueba de humanidad que escanea tu cara con la cámara del móvil para demostrar que eres una persona real. Según la app, tus rasgos faciales se convierten en vectores cifrados en el propio dispositivo y se procesan con cifrado totalmente homomórfico (FHE), así que no se envían las imágenes originales. Al verificarte se crea un NFT de prueba de humanidad y puedes recibir airdrops y recompensas en distintas apps. La gestiona Privasea (en la App Store, Privasea AB; actualizada en mayo de 2026); su token PRAI cotiza en KuCoin, Gate y otros",
+          "need": "Instala la app FheID, introduce el código de invitación QVedKjg y verifica que eres humano con un escaneo facial (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+          "caution": "No se indica oficialmente qué recompensas hay ahora ni de cuánto son. Una campaña oficial anterior (2024) daba «estrellas» por invitar (hasta 3 niveles: 100, 50 y 25 estrellas por persona) que se podían cambiar por airdrops. No está confirmado dónde se introduce el código ni si el nuevo usuario recibe algo. PRAI ha caído desde su máximo de mayo de 2025, unos 0,096 $, hasta unos 0,0008 $ en octubre de 2026. Maneja datos de tu cara, así que revisa antes su privacidad"
+        },
+        "de": {
+          "gain": "Airdrops und Belohnungen für den Menschlichkeitsnachweis (z. B. Kampagnen-„Sterne“)",
+          "note": "Eine Proof-of-Humanity-App, die per Handykamera dein Gesicht scannt, um zu zeigen, dass du ein echter Mensch bist. Laut App werden deine Gesichtsmerkmale auf dem Gerät in verschlüsselte Vektoren umgewandelt und mit vollhomomorpher Verschlüsselung (FHE) verarbeitet, die Originalbilder werden also nicht verschickt. Die Verifizierung erzeugt ein Menschlichkeits-NFT und ermöglicht Airdrops und Belohnungen in verschiedenen Apps. Betrieben von Privasea (Herausgeber im App Store: Privasea AB, zuletzt im Mai 2026 aktualisiert); der Token PRAI wird u. a. bei KuCoin und Gate gehandelt",
+          "need": "Die App FheID installieren, den Einladungscode QVedKjg eingeben und dich per Gesichtsscan als Mensch verifizieren (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+          "caution": "Welche Belohnungen es derzeit gibt und wie hoch sie sind, steht offiziell nirgends. Eine frühere offizielle Kampagne (2024) gab für Empfehlungen „Sterne“ (bis zu 3 Stufen: 100, 50 und 25 Sterne pro Person), die gegen Airdrops getauscht werden konnten. Wo der Einladungscode eingegeben wird und ob Neue etwas bekommen, ist nicht bestätigt. PRAI ist vom Hoch im Mai 2025 bei etwa 0,096 $ auf rund 0,0008 $ im Oktober 2026 gefallen. Die App verarbeitet Gesichtsdaten, prüf also vorher den Datenschutz"
+        },
+        "ar": {
+          "gain": "إسقاطات جوية ومكافآت مقابل إثبات أنك إنسان (مثل «نجوم» الحملات)",
+          "note": "تطبيق لإثبات الإنسانية يمسح وجهك بكاميرا الهاتف ليثبت أنك شخص حقيقي. يقول التطبيق إن ملامح وجهك تتحول على الجهاز نفسه إلى متجهات مشفّرة وتُعالَج بالتشفير المتماثل الكامل (FHE)، فلا تُرسل الصور الأصلية. يُنشئ التحقق رمز NFT لإثبات الإنسانية ويتيح لك تلقي الإسقاطات الجوية والمكافآت في تطبيقات مختلفة. تديره Privasea (الناشر في App Store هو Privasea AB، وحُدّث حتى مايو 2026)، ورمزه PRAI يُتداول في KuCoin وGate وغيرهما",
+          "need": "ثبّت تطبيق FheID وأدخل رمز الدعوة QVedKjg وتحقق من أنك إنسان بمسح الوجه (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+          "caution": "لا يُذكر رسميًا ما المكافآت المتاحة الآن ولا قيمتها. منحت حملة رسمية سابقة (2024) «نجومًا» مقابل الإحالة (حتى 3 مستويات: 100 و50 و25 نجمة لكل شخص) يمكن استبدالها بإسقاطات جوية. لم يتأكد مكان إدخال رمز الدعوة ولا ما إذا كان المستخدم الجديد يحصل على شيء. هبط PRAI من ذروته في مايو 2025 عند نحو $0.096 إلى نحو $0.0008 في أكتوبر 2026. يتعامل التطبيق مع بيانات وجهك، فراجع الخصوصية أولًا"
+        }
+      }
+    },
+    {
+      "id": "g1",
+      "name": "Ğ1 (June)",
+      "nameJa": "Ğ1（ジューン）",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://duniter.org/g1/",
+      "referral": null,
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "web-of-trust",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "unknown",
+        "operator": "yes"
+      },
+      "ease": 1,
+      "added": "2026-10-23",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/g1/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/g1/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/g1/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/g1/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/g1/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/g1/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/g1/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/g1/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Ğ1 every day once you are a member (Universal Dividend)",
+          "note": "A libre currency based on the Relative Theory of Money. It runs on the open-source Duniter software, and every member receives newly created Ğ1 each day as a “Universal Dividend”. Launched in March 2017 and moved to Duniter v2 in March 2026. There is no referral link or referral bonus",
+          "need": "Create a wallet and get certified by at least 5 existing members through the Web of Trust. Certifiers are expected to know you in person",
+          "caution": "The community is mostly French-speaking and built on in-person ties, so joining from outside it (e.g. from Japan) is very hard. Non-members can still hold Ğ1 in a wallet but do not receive the daily dividend. Ğ1 is mainly traded for goods and services, and swapping it for regular money is peer-to-peer only"
+        },
+        "ja": {
+          "gain": "メンバーになるとĞ1を毎日（ユニバーサル・ディビデンド）",
+          "note": "「貨幣の相対性理論」にもとづく自由通貨。Duniterというオープンソースのソフトで動き、メンバー全員に「ユニバーサル・ディビデンド」としてĞ1が毎日新しく発行される。2017年3月に始まり、2026年3月にDuniter v2へ移行した。紹介リンクや紹介特典はない",
+          "need": "ウォレットを作り、「信頼の網（Web of Trust）」で既存メンバー5人以上から認証を受ける。認証する人は、あなたを直接知っていることが前提",
+          "caution": "コミュニティはフランス語圏が中心で、対面のつながりが基本なので、日本から参加するのはかなり難しい。メンバーでなくてもウォレットでĞ1を持つことはできるが、毎日のĞ1はもらえない。Ğ1は主に商品やサービスとの交換で使われ、円などへの換金は個人間に限られる"
+        },
+        "zh": {
+          "gain": "成为成员后每天获得 Ğ1（全民红利）",
+          "note": "基于“货币相对论”的自由货币。运行在开源软件 Duniter 上，每位成员每天都会以“全民红利”的形式获得新发行的 Ğ1。2017 年 3 月启动，2026 年 3 月迁移到 Duniter v2。没有推荐链接，也没有推荐奖励",
+          "need": "创建钱包，并通过“信任网（Web of Trust）”获得至少 5 位现有成员的认证。认证人原则上应当与你本人相识",
+          "caution": "社区以法语圈为主，并以线下交往为基础，从日本等地加入相当困难。非成员也可以用钱包持有 Ğ1，但领不到每日红利。Ğ1 主要用于交换商品和服务，兑换成法币只能在个人之间进行"
+        },
+        "hi": {
+          "gain": "सदस्य बनने पर हर दिन Ğ1 (यूनिवर्सल डिविडेंड)",
+          "note": "“रिलेटिव थ्योरी ऑफ़ मनी” पर आधारित एक लिब्रे करेंसी। यह ओपन-सोर्स Duniter सॉफ़्टवेयर पर चलती है, और हर सदस्य को रोज़ “यूनिवर्सल डिविडेंड” के रूप में नए बने Ğ1 मिलते हैं। मार्च 2017 में शुरू हुई और मार्च 2026 में Duniter v2 पर चली गई। कोई रेफ़रल लिंक या रेफ़रल बोनस नहीं है",
+          "need": "वॉलेट बनाएँ और “वेब ऑफ़ ट्रस्ट” में कम से कम 5 मौजूदा सदस्यों से सर्टिफ़िकेशन पाएँ। सर्टिफ़ाई करने वालों से उम्मीद है कि वे आपको व्यक्तिगत रूप से जानते हों",
+          "caution": "समुदाय ज़्यादातर फ़्रेंच भाषी है और आमने-सामने के रिश्तों पर चलता है, इसलिए बाहर से (जैसे जापान से) जुड़ना बहुत मुश्किल है। गैर-सदस्य भी वॉलेट में Ğ1 रख सकते हैं, पर उन्हें रोज़ का डिविडेंड नहीं मिलता। Ğ1 ज़्यादातर सामान और सेवाओं के लेन-देन में चलता है, और आम पैसे में बदलना सिर्फ़ आपसी लेन-देन से होता है"
+        },
+        "es": {
+          "gain": "Ğ1 cada día al ser miembro (Dividendo Universal)",
+          "note": "Una moneda libre basada en la Teoría Relativa de la Moneda. Funciona con el software libre Duniter, y cada miembro recibe cada día Ğ1 recién creados como «Dividendo Universal». Empezó en marzo de 2017 y pasó a Duniter v2 en marzo de 2026. No hay enlace ni bono de referido",
+          "need": "Crea un monedero y consigue la certificación de al menos 5 miembros a través de la Red de Confianza (Web of Trust). Se espera que quienes te certifican te conozcan en persona",
+          "caution": "La comunidad es sobre todo francófona y se basa en el trato en persona, así que unirse desde fuera (por ejemplo, desde Japón) es muy difícil. Sin ser miembro puedes tener Ğ1 en un monedero, pero no recibes el dividendo diario. La Ğ1 se usa sobre todo para intercambiar bienes y servicios, y cambiarla por dinero normal solo es posible entre particulares"
+        },
+        "de": {
+          "gain": "Jeden Tag Ğ1, sobald du Mitglied bist (Universelle Dividende)",
+          "note": "Eine freie Währung auf Grundlage der Relativen Geldtheorie. Sie läuft mit der Open-Source-Software Duniter, und jedes Mitglied erhält jeden Tag neu geschöpfte Ğ1 als „Universelle Dividende“. Gestartet im März 2017, im März 2026 auf Duniter v2 umgezogen. Es gibt keinen Empfehlungslink und keinen Empfehlungsbonus",
+          "need": "Eine Wallet anlegen und dich über das Vertrauensnetz (Web of Trust) von mindestens 5 bestehenden Mitgliedern zertifizieren lassen. Wer zertifiziert, sollte dich persönlich kennen",
+          "caution": "Die Gemeinschaft ist überwiegend französischsprachig und beruht auf persönlichen Kontakten, daher ist der Einstieg von außerhalb (z. B. aus Japan) sehr schwer. Auch Nicht-Mitglieder können Ğ1 in einer Wallet halten, bekommen aber keine tägliche Dividende. Ğ1 wird vor allem gegen Waren und Dienstleistungen getauscht, ein Tausch in normales Geld geht nur von Person zu Person"
+        },
+        "ar": {
+          "gain": "Ğ1 كل يوم بعد أن تصبح عضوًا (العائد الشامل)",
+          "note": "عملة حرة قائمة على «النظرية النسبية للنقود». تعمل ببرنامج Duniter مفتوح المصدر، ويحصل كل عضو يوميًا على Ğ1 جديدة بوصفها «عائدًا شاملًا». بدأت في مارس 2017 وانتقلت إلى Duniter v2 في مارس 2026. لا يوجد رابط إحالة ولا مكافأة إحالة",
+          "need": "أنشئ محفظة واحصل على توثيق من 5 أعضاء حاليين على الأقل عبر «شبكة الثقة». يُفترض أن يعرفك الموثّقون شخصيًا",
+          "caution": "المجتمع ناطق بالفرنسية في الغالب ويقوم على العلاقات المباشرة، لذا الانضمام من الخارج (من اليابان مثلًا) صعب جدًا. يمكن لغير الأعضاء الاحتفاظ بـĞ1 في محفظة، لكنهم لا يحصلون على العائد اليومي. تُستخدم Ğ1 غالبًا لتبادل السلع والخدمات، وتحويلها إلى نقود عادية يتم بين الأفراد فقط"
+        }
+      }
+    },
+    {
+      "id": "gooddollar",
+      "name": "GoodDollar",
+      "nameJa": "GoodDollar",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://www.gooddollar.org/",
+      "referral": {
+        "url": "https://goodwallet.xyz?inviteCode=KgChqUuJic&chainId=50",
+        "code": "KgChqUuJic",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "face",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ease": 4,
+      "added": null,
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/gooddollar/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/gooddollar/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/gooddollar/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/gooddollar/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/gooddollar/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/gooddollar/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "G$ tokens every day",
+          "note": "A nonprofit UBI protocol. Claim once every 24 hours; each day's pool is split among everyone who claims",
+          "need": "Face verification in the app",
+          "caution": "A security incident in May 2026 put its reserve under review. The daily amount is very small"
+        },
+        "ja": {
+          "gain": "G$トークンを毎日",
+          "note": "24時間に1回、アプリで受け取る非営利のUBIプロジェクト。その日に受け取った人数で配分を分ける",
+          "need": "アプリで顔による本人確認",
+          "caution": "2026年5月にセキュリティ事故があり、準備金を見直し中。1日の額もかなり少なめ"
+        },
+        "zh": {
+          "gain": "每天领取 G$ 代币",
+          "note": "非营利 UBI 协议。每 24 小时可在应用中领取一次，当天的奖池由所有领取者平分",
+          "need": "在应用中进行人脸身份验证",
+          "caution": "2026 年 5 月发生安全事件，储备金正在审查中。每日金额也很少"
+        },
+        "hi": {
+          "gain": "हर दिन G$ टोकन",
+          "note": "एक नॉन-प्रॉफ़िट UBI प्रोटोकॉल। हर 24 घंटे में एक बार ऐप से क्लेम करें; हर दिन का पूल क्लेम करने वाले सभी लोगों में बँटता है",
+          "need": "ऐप में चेहरे से पहचान सत्यापन",
+          "caution": "मई 2026 की एक सुरक्षा घटना के बाद इसके रिज़र्व की समीक्षा चल रही है। रोज़ की रकम बहुत कम है"
+        },
+        "es": {
+          "gain": "Tokens G$ cada día",
+          "note": "Protocolo UBI sin ánimo de lucro. Reclama una vez cada 24 horas; el fondo de cada día se reparte entre todos los que reclaman",
+          "need": "Verificación facial en la app",
+          "caution": "Un incidente de seguridad en mayo de 2026 dejó su reserva en revisión. La cantidad diaria es muy pequeña"
+        },
+        "de": {
+          "gain": "Jeden Tag G$-Token",
+          "note": "Ein gemeinnütziges Grundeinkommens-Protokoll. Einmal alle 24 Stunden abholen; der Topf des Tages wird auf alle aufgeteilt, die abholen",
+          "need": "Gesichtsverifizierung in der App",
+          "caution": "Nach einem Sicherheitsvorfall im Mai 2026 wird die Reserve überprüft. Der Tagesbetrag ist sehr klein"
+        },
+        "ar": {
+          "gain": "رموز G$ كل يوم",
+          "note": "بروتوكول دخل أساسي غير ربحي. اطلبها مرة كل 24 ساعة، ويُقسَّم رصيد كل يوم على جميع من يطلبونها",
+          "need": "التحقق من الوجه داخل التطبيق",
+          "caution": "وقعت حادثة أمنية في مايو 2026 وُضع بعدها الاحتياطي قيد المراجعة. المبلغ اليومي صغير جدًا"
+        }
+      }
+    },
+    {
+      "id": "gradido",
+      "name": "Gradido",
+      "nameJa": "Gradido",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://gradido.net/en/",
+      "referral": {
+        "url": "https://gdd.gradido.net/u/eltociear",
+        "code": null,
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "unknown",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 2,
+      "added": "2026-10-24",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/gradido/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/gradido/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/gradido/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/gradido/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/gradido/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/gradido/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/gradido/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/gradido/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "20 GDD per hour of common-good work (up to 1,000 GDD a month)",
+          "note": "A currency system billed as a “natural economy”, named after Gratitude, Dignity and Donation. Money is created by everyone rather than as debt: contributions to the common good earn an “active basic income” of 20 GDD an hour, up to 50 hours (1,000 GDD) a month. Unused money shrinks at 50% a year (about 5.61% a month). Run by Gradido Akademie International, a research and development association in Austria with a branch in Germany",
+          "need": "Create a free Gradido account through the referral link, log your common-good contributions and receive GDD",
+          "caution": "The official FAQ says that for now it is a thank-you point reward system and not a cryptocurrency. There is no official information on exchanging GDD for euros or other money. Confirmed usable from Japan in Oct 2026 (first-hand). If someone who signed up through a referral link later makes a financial contribution to Gradido (such as a donation), the referrer is credited with GDT (Gradido Transform), according to the public wallet source code. There is no bonus just for signing up"
+        },
+        "ja": {
+          "gain": "公益への貢献1時間につき20 GDD（月最大1,000 GDD）",
+          "note": "「感謝（Gratitude）・尊厳（Dignity）・寄付（Donation）」から名づけられた、「自然の経済」をうたう独自通貨のしくみ。お金は借金からではなく参加者みんなが生み出すという考え方で、公益になる活動をすると「アクティブ・ベーシックインカム」として1時間20 GDD、月50時間（1,000 GDD）まで受け取れる。使わないお金は年50%（月約5.61%）の割合で目減りする。運営はオーストリアの研究開発団体 Gradido Akademie International（ドイツにも拠点）",
+          "need": "紹介リンクから無料で Gradido アカウントを作り、公益への貢献を申告して GDD を受け取る",
+          "caution": "公式FAQでは「今のところは感謝のポイント報酬システム」で、暗号資産ではないとしている。GDDをユーロなどに換金する方法は公式に書かれていない。2026年10月に日本から使えることを実際に確認した。紹介リンク経由で登録した人が、のちに Gradido へ資金面の貢献（寄付など）をすると、紹介した側に GDT（Gradido Transform）が付く（公開されているウォレットのソースコードによる）。登録するだけで特典が出るしくみではない"
+        },
+        "zh": {
+          "gain": "每做 1 小时公益贡献得 20 GDD（每月最多 1,000 GDD）",
+          "note": "一种自称“自然经济”的独立货币体系，名称来自感恩（Gratitude）、尊严（Dignity）和捐赠（Donation）。认为货币应由所有人创造而不是来自债务：为公益做贡献可获得“主动基本收入”，每小时 20 GDD，每月最多 50 小时（1,000 GDD）。不用的钱每年减少 50%（每月约 5.61%）。运营方为奥地利的研发协会 Gradido Akademie International（在德国也设有分支）",
+          "need": "通过推荐链接免费注册 Gradido 账户，申报公益贡献并领取 GDD",
+          "caution": "官方 FAQ 称目前它是“感谢积分奖励系统”，并非加密货币。官方没有说明 GDD 能否兑换成欧元等货币。2026 年 10 月已亲自确认可在日本使用。通过推荐链接注册的人日后若向 Gradido 做出资金贡献（如捐款），推荐人会获得 GDT（Gradido Transform）（依据公开的钱包源代码）。仅注册不会得到奖励"
+        },
+        "hi": {
+          "gain": "जनहित के हर घंटे के काम पर 20 GDD (महीने में ज़्यादा से ज़्यादा 1,000 GDD)",
+          "note": "“प्राकृतिक अर्थव्यवस्था” कहलाने वाली एक मुद्रा व्यवस्था, जिसका नाम Gratitude (कृतज्ञता), Dignity (गरिमा) और Donation (दान) से बना है। पैसा कर्ज़ से नहीं, सब मिलकर बनाते हैं: जनहित के काम पर “एक्टिव बेसिक इनकम” के रूप में 20 GDD प्रति घंटा, महीने में 50 घंटे (1,000 GDD) तक मिलते हैं। बिना इस्तेमाल का पैसा साल में 50% (महीने में लगभग 5.61%) घटता है। इसे ऑस्ट्रिया का शोध और विकास संघ Gradido Akademie International चलाता है (जर्मनी में भी शाखा)",
+          "need": "रेफ़रल लिंक से मुफ़्त Gradido अकाउंट बनाएँ, जनहित के योगदान दर्ज करें और GDD पाएँ",
+          "caution": "आधिकारिक FAQ के अनुसार अभी यह “धन्यवाद पॉइंट इनाम व्यवस्था” है और क्रिप्टोकरेंसी नहीं है। GDD को यूरो या दूसरे पैसे में बदलने की कोई आधिकारिक जानकारी नहीं है। अक्टूबर 2026 में खुद आज़माकर पुष्टि हुई कि यह जापान से चलता है। रेफ़रल लिंक से जुड़ा व्यक्ति अगर बाद में Gradido को आर्थिक योगदान (जैसे दान) देता है, तो रेफ़र करने वाले को GDT (Gradido Transform) मिलता है (सार्वजनिक वॉलेट सोर्स कोड के अनुसार)। सिर्फ़ साइन अप करने पर कोई बोनस नहीं है"
+        },
+        "es": {
+          "gain": "20 GDD por hora de trabajo por el bien común (hasta 1.000 GDD al mes)",
+          "note": "Un sistema monetario que se presenta como «economía natural», con nombre tomado de Gratitude (gratitud), Dignity (dignidad) y Donation (donación). El dinero lo crean todas las personas y no nace de la deuda: las aportaciones al bien común dan una «renta básica activa» de 20 GDD por hora, hasta 50 horas (1.000 GDD) al mes. El dinero sin usar se reduce un 50 % al año (en torno al 5,61 % al mes). Lo gestiona Gradido Akademie International, una asociación de investigación y desarrollo de Austria con sede también en Alemania",
+          "need": "Crea gratis una cuenta Gradido con el enlace de referido, registra tus aportaciones al bien común y recibe GDD",
+          "caution": "Según las preguntas frecuentes oficiales, por ahora es un sistema de puntos de agradecimiento y no una criptomoneda. No hay información oficial sobre cambiar GDD por euros u otro dinero. Se comprobó en persona que funciona desde Japón en octubre de 2026. Si alguien que se registró con un enlace de referido hace después una aportación económica a Gradido (como una donación), quien lo refirió recibe GDT (Gradido Transform), según el código fuente público del monedero. No hay bono solo por registrarse"
+        },
+        "de": {
+          "gain": "20 GDD pro Stunde Gemeinwohl-Arbeit (bis zu 1.000 GDD im Monat)",
+          "note": "Ein Geldsystem, das sich „Natürliche Ökonomie des Lebens“ nennt; der Name steht für Gratitude, Dignity und Donation (Dankbarkeit, Würde, Spende). Geld wird von allen geschöpft statt als Schuld: Beiträge zum Gemeinwohl bringen ein „aktives Grundeinkommen“ von 20 GDD pro Stunde, bis zu 50 Stunden (1.000 GDD) im Monat. Ungenutztes Geld schrumpft um 50 % pro Jahr (etwa 5,61 % pro Monat; Vergänglichkeit). Betrieben von der Gradido Akademie International, einem Forschungs- und Entwicklungsverein in Österreich mit Niederlassung in Deutschland",
+          "need": "Über den Empfehlungslink kostenlos ein Gradido-Konto anlegen, deine Gemeinwohl-Beiträge eintragen und GDD erhalten",
+          "caution": "Laut offizieller FAQ ist es derzeit ein Dankbarkeits-Punktesystem und keine Kryptowährung. Offizielle Angaben zum Tausch von GDD in Euro oder anderes Geld gibt es nicht. Im Oktober 2026 selbst bestätigt: aus Japan nutzbar. Wenn jemand, der sich über einen Empfehlungslink angemeldet hat, später finanziell zu Gradido beiträgt (z. B. durch eine Spende), bekommt die empfehlende Person laut öffentlichem Quellcode der Wallet GDT (Gradido Transform) gutgeschrieben. Für die reine Anmeldung gibt es keinen Bonus"
+        },
+        "ar": {
+          "gain": "20 GDD عن كل ساعة عمل للصالح العام (حتى 1,000 GDD شهريًا)",
+          "note": "نظام عملة يصف نفسه بأنه «اقتصاد طبيعي»، اسمه مأخوذ من الامتنان (Gratitude) والكرامة (Dignity) والتبرع (Donation). يرى أن المال يخلقه الجميع لا الدَّين: المساهمة في الصالح العام تمنح «دخلًا أساسيًا نشطًا» قدره 20 GDD للساعة، حتى 50 ساعة (1,000 GDD) شهريًا. المال غير المستخدم يتناقص بنسبة 50% سنويًا (نحو 5.61% شهريًا). تديره Gradido Akademie International، وهي جمعية بحث وتطوير في النمسا ولها فرع في ألمانيا",
+          "need": "أنشئ حساب Gradido مجانًا عبر رابط الإحالة، وسجّل مساهماتك في الصالح العام واستلم GDD",
+          "caution": "تقول الأسئلة الشائعة الرسمية إنه حاليًا نظام نقاط شكر وليس عملة مشفرة. لا توجد معلومات رسمية عن تحويل GDD إلى يورو أو نقود أخرى. تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان. إذا قدّم من سجّل عبر رابط إحالة لاحقًا مساهمة مالية لـGradido (كالتبرع)، يُضاف GDT (Gradido Transform) إلى حساب من أحاله، وفقًا للشيفرة المصدرية العامة للمحفظة. لا توجد مكافأة لمجرد التسجيل"
+        }
+      }
+    },
+    {
+      "id": "grass",
+      "name": "Grass",
+      "nameJa": "Grass",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://www.grass.io/",
+      "referral": {
+        "url": "https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7",
+        "code": "97_MD5PEysoBbJ7",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ease": 5,
+      "added": "2026-10-08",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/grass/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/grass/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/grass/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/grass/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/grass/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/grass/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/grass/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/grass/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Points (later GRASS tokens)",
+          "note": "A DePIN that rents out your unused bandwidth for AI web scraping. Keep the browser extension or app running and earn points for uptime and bandwidth actually used, paid out through seasonal airdrops",
+          "need": "Sign up with email, install the extension or app, and stay connected",
+          "caution": "Your IP address is used by others for data collection. Rewards depend on airdrops, so amount and timing are unpredictable"
+        },
+        "ja": {
+          "gain": "ポイント（のちにGRASSトークン）",
+          "note": "使っていない回線の帯域をAIのWebデータ収集に貸し出すDePIN。PCのブラウザ拡張やアプリを入れておくだけで、接続時間と実際に使われた帯域に応じてポイントがたまり、シーズンごとのエアドロップで配られる",
+          "need": "メールで登録し、ブラウザ拡張またはアプリを入れて接続したままにする",
+          "caution": "自分のIPアドレスを他社のデータ収集に使わせるしくみ。報酬はエアドロップ次第で、額も時期も読めない"
+        },
+        "zh": {
+          "gain": "积分（之后换成 GRASS 代币）",
+          "note": "把闲置带宽出租给 AI 网页数据采集的 DePIN 项目。保持浏览器扩展或应用在线，即可按在线时长和实际被使用的带宽累积积分，并通过每季空投发放",
+          "need": "用邮箱注册，安装扩展或应用并保持连接",
+          "caution": "你的 IP 地址会被他人用于数据采集。收益取决于空投，金额和时间都无法预估"
+        },
+        "hi": {
+          "gain": "पॉइंट (बाद में GRASS टोकन)",
+          "note": "एक DePIN जो आपकी बिना इस्तेमाल हुई बैंडविड्थ को AI वेब स्क्रैपिंग के लिए किराए पर देता है। ब्राउज़र एक्सटेंशन या ऐप चालू रखें; अपटाइम और असल में इस्तेमाल हुई बैंडविड्थ के हिसाब से पॉइंट मिलते हैं, जो सीज़न वाले एयरड्रॉप में बँटते हैं",
+          "need": "ईमेल से साइन अप करें, एक्सटेंशन या ऐप इंस्टॉल करें और कनेक्ट रहें",
+          "caution": "आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। इनाम एयरड्रॉप पर निर्भर है, इसलिए रकम और समय तय नहीं"
+        },
+        "es": {
+          "gain": "Puntos (luego tokens GRASS)",
+          "note": "Un DePIN que alquila tu ancho de banda sin usar para el rastreo web de IA. Deja la extensión o la app activa y gana puntos por tiempo conectado y ancho de banda usado, que se reparten en airdrops por temporadas",
+          "need": "Regístrate con tu email, instala la extensión o la app y mantente conectado",
+          "caution": "Otros usan tu dirección IP para recopilar datos. Las recompensas dependen de airdrops, así que el importe y el momento son impredecibles"
+        },
+        "de": {
+          "gain": "Punkte (später GRASS-Token)",
+          "note": "Ein DePIN, das deine ungenutzte Bandbreite für KI-Web-Scraping vermietet. Lass die Browser-Erweiterung oder App laufen und sammle Punkte für Laufzeit und tatsächlich genutzte Bandbreite, ausgezahlt über saisonale Airdrops",
+          "need": "Mit E-Mail anmelden, Erweiterung oder App installieren und verbunden bleiben",
+          "caution": "Deine IP-Adresse wird von anderen zur Datensammlung genutzt. Die Belohnungen hängen von Airdrops ab, Höhe und Zeitpunkt sind also nicht vorhersehbar"
+        },
+        "ar": {
+          "gain": "نقاط (ثم رموز GRASS لاحقًا)",
+          "note": "شبكة DePIN تؤجّر عرض النطاق غير المستخدم لديك لجمع بيانات الويب للذكاء الاصطناعي. أبقِ الإضافة أو التطبيق قيد التشغيل لتجمع نقاطًا حسب مدة الاتصال وعرض النطاق المستخدم فعلًا، وتُوزَّع عبر إسقاطات جوية موسمية",
+          "need": "سجّل بالبريد الإلكتروني، وثبّت الإضافة أو التطبيق وابقَ متصلًا",
+          "caution": "يستخدم آخرون عنوان IP الخاص بك لجمع البيانات. المكافآت تعتمد على الإسقاطات الجوية، فلا يمكن توقّع قيمتها أو موعدها"
+        }
+      }
+    },
+    {
+      "id": "hapitas",
+      "name": "Hapitas",
+      "nameJa": "ハピタス",
+      "category": "pointsite",
+      "categoryName": "Cashback sites",
+      "payout": "once",
+      "officialUrl": "https://hapitas.jp/",
+      "referral": {
+        "url": "https://hapitas.jp/appinvite/?i=25819964",
+        "code": null,
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "japan-only",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 3,
+      "added": null,
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/hapitas/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/hapitas/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/hapitas/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/hapitas/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/hapitas/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/hapitas/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/hapitas/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/hapitas/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Up to 2,300 points",
+          "note": "October 2026 offer (1 point = ¥1). 100 for logging in 3 days in a row, 1,000 once you earn 3,000 through offers, and more",
+          "need": "Join via referral by Oct 31 and meet the conditions by Nov 30"
+        },
+        "ja": {
+          "gain": "最大2,300ポイント",
+          "note": "2026年10月の内容（1ポイント＝1円）。3日連続ログインで100ポイント、広告利用で合計3,000ポイントたまると1,000ポイントなど",
+          "need": "10月31日までに紹介経由で登録し、11月30日までに条件を達成"
+        },
+        "zh": {
+          "gain": "最高 2,300 积分",
+          "note": "2026 年 10 月活动（1 积分 = 1 日元）。连续登录 3 天得 100 积分，通过广告累计获得 3,000 积分再得 1,000 积分等",
+          "need": "10 月 31 日前通过推荐注册，并于 11 月 30 日前达成条件"
+        },
+        "hi": {
+          "gain": "2,300 पॉइंट तक",
+          "note": "अक्टूबर 2026 का ऑफ़र (1 पॉइंट = ¥1)। लगातार 3 दिन लॉग इन पर 100, ऑफ़र से कुल 3,000 कमाने पर 1,000, और भी",
+          "need": "31 अक्टूबर तक रेफ़रल से जुड़ें और 30 नवंबर तक शर्तें पूरी करें"
+        },
+        "es": {
+          "gain": "Hasta 2.300 puntos",
+          "note": "Oferta de octubre de 2026 (1 punto = 1 ¥). 100 por entrar 3 días seguidos, 1.000 al ganar 3.000 con ofertas, y más",
+          "need": "Únete con referido antes del 31 de octubre y cumple las condiciones antes del 30 de noviembre"
+        },
+        "de": {
+          "gain": "Bis zu 2.300 Punkte",
+          "note": "Aktion im Oktober 2026 (1 Punkt = 1 Yen). 100 für 3 Tage Login in Folge, 1.000, sobald du über Angebote 3.000 verdienst, und mehr",
+          "need": "Bis 31. Oktober über Empfehlung beitreten und die Bedingungen bis 30. November erfüllen"
+        },
+        "ar": {
+          "gain": "حتى 2,300 نقطة",
+          "note": "عرض أكتوبر 2026 (النقطة = 1 ين). 100 نقطة لتسجيل الدخول 3 أيام متتالية، و1,000 عند جمع 3,000 نقطة من العروض، وغير ذلك",
+          "need": "انضم عبر الإحالة قبل 31 أكتوبر واستوفِ الشروط قبل 30 نوفمبر"
+        }
+      }
+    },
+    {
+      "id": "honeygain",
+      "name": "Honeygain",
+      "nameJa": "Honeygain",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://www.honeygain.com/",
+      "referral": {
+        "url": "https://join.honeygain.com/ELTOCD89E5",
+        "code": "ELTOCD89E5",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 5,
+      "added": "2026-10-08",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/honeygain/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/honeygain/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/honeygain/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/honeygain/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/honeygain/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/honeygain/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/honeygain/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/honeygain/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Cash for the traffic you share",
+          "note": "The best-known bandwidth-sharing app: it rents your unused connection to businesses for web data collection. Signing up via a referral gives a $3 welcome bonus (per the official blog). Cash out via PayPal and more once you reach $20",
+          "need": "Sign up with email, install the app on your PC or phone, and leave it running",
+          "caution": "Your IP address is used by others for data collection. Earnings depend on demand in your region and can be very low in some areas"
+        },
+        "ja": {
+          "gain": "共有した通信量に応じて現金",
+          "note": "使っていない回線を企業のWebデータ収集に貸し出す、通信量シェアの定番アプリ。紹介経由の登録で$3のウェルカムボーナス（公式ブログより）。$20たまるとPayPalなどで出金できる",
+          "need": "メールで登録し、PCやスマホにアプリを入れて動かしたままにする",
+          "caution": "自分のIPアドレスを他社のデータ収集に使わせるしくみ。稼げる額は地域の需要次第で、地域によってはかなり少ない"
+        },
+        "zh": {
+          "gain": "按共享流量获得现金",
+          "note": "最知名的带宽共享应用：把闲置网络出租给企业做网页数据采集。通过推荐注册可获得 $3 欢迎奖励（据官方博客）。满 $20 可通过 PayPal 等提现",
+          "need": "用邮箱注册，在电脑或手机上安装应用并保持运行",
+          "caution": "你的 IP 地址会被他人用于数据采集。收益取决于所在地区的需求，有些地区非常少"
+        },
+        "hi": {
+          "gain": "शेयर किए गए ट्रैफ़िक के बदले नकद",
+          "note": "बैंडविड्थ शेयर करने वाला सबसे जाना-माना ऐप: यह आपके खाली इंटरनेट कनेक्शन को कंपनियों को वेब डेटा जुटाने के लिए किराए पर देता है। रेफ़रल से साइन अप करने पर $3 वेलकम बोनस (आधिकारिक ब्लॉग के अनुसार)। $20 होने पर PayPal आदि से निकाल सकते हैं",
+          "need": "ईमेल से साइन अप करें, PC या फ़ोन पर ऐप इंस्टॉल करें और चालू छोड़ दें",
+          "caution": "आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। कमाई आपके इलाक़े की माँग पर निर्भर है और कुछ जगहों पर बहुत कम होती है"
+        },
+        "es": {
+          "gain": "Dinero por el tráfico que compartes",
+          "note": "La app de compartir ancho de banda más conocida: alquila tu conexión sin usar a empresas para recopilar datos web. Registrarte con un referido da un bono de bienvenida de $3 (según su blog oficial). Cobra por PayPal y otros al llegar a $20",
+          "need": "Regístrate con tu email, instala la app en tu PC o móvil y déjala funcionando",
+          "caution": "Otros usan tu dirección IP para recopilar datos. Lo que ganas depende de la demanda en tu región y puede ser muy poco en algunas zonas"
+        },
+        "de": {
+          "gain": "Geld für den geteilten Datenverkehr",
+          "note": "Die bekannteste App zum Teilen von Bandbreite: Sie vermietet deine ungenutzte Verbindung an Unternehmen zur Web-Datensammlung. Bei Anmeldung über eine Empfehlung gibt es 3 $ Willkommensbonus (laut offiziellem Blog). Auszahlung per PayPal und mehr ab 20 $",
+          "need": "Mit E-Mail anmelden, App auf PC oder Handy installieren und laufen lassen",
+          "caution": "Deine IP-Adresse wird von anderen zur Datensammlung genutzt. Die Einnahmen hängen von der Nachfrage in deiner Region ab und können mancherorts sehr gering sein"
+        },
+        "ar": {
+          "gain": "نقود مقابل حركة البيانات التي تشاركها",
+          "note": "أشهر تطبيق لمشاركة عرض النطاق: يؤجّر اتصالك غير المستخدم للشركات لجمع بيانات الويب. التسجيل عبر رابط إحالة يمنح مكافأة ترحيبية قدرها $3 (حسب المدونة الرسمية). اسحب أرباحك عبر PayPal وغيره عند بلوغ $20",
+          "need": "سجّل بالبريد الإلكتروني، وثبّت التطبيق على حاسوبك أو هاتفك واتركه يعمل",
+          "caution": "يستخدم آخرون عنوان IP الخاص بك لجمع البيانات. الأرباح تعتمد على الطلب في منطقتك وقد تكون ضئيلة جدًا في بعض المناطق"
+        }
+      }
+    },
+    {
+      "id": "humad",
+      "name": "Humad (World App)",
+      "nameJa": "Humad（World App）",
+      "category": "pointsite",
+      "categoryName": "Cashback sites",
+      "payout": "loop",
+      "officialUrl": "https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1",
+      "referral": null,
+      "region": "japan-only",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "world-id",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 3,
+      "added": "2026-10-26",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/humad/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/humad/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/humad/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/humad/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/humad/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/humad/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/humad/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/humad/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Points for tapping ads and answering questions (gift cards from 1,500 pt = ¥150)",
+          "note": "A mini app inside World App. Tap ads you like and answer questions about your interests and values to collect points, then exchange them for gift cards for cafés and sweets, food delivery, movies, online shops, app stores and more. Proving you are human with World ID multiplies ad-tap points by 6, and answering the daily question enters you in a roulette worth up to 1,000 pt. Run by Ads for Humanity Inc. (Akasaka, Tokyo), wholly owned by Hakuhodo DY Holdings; the beta launched on 7 Aug 2026. About 25,000 users (World’s listing page, Oct 2026). No referral link or referral bonus was found",
+          "need": "Open the Humad mini app in World App. Exchanging points for gift cards requires proof of human with an Orb-verified World ID",
+          "caution": "Points can only be exchanged for gift cards, not cash, and exchanges cannot be undone. Available in Japan and Japan-only (the press release also says access is limited to Japan). It is a beta, so details may change. Your answers and linked data are used to target ads"
+        },
+        "ja": {
+          "gain": "広告のタップや質問への回答でポイント（1,500pt＝150円分からギフト券に交換）",
+          "note": "World App の中で動くミニアプリ。好きな広告をタップしたり、興味や価値観についての質問に答えたりするとポイントがたまり、カフェ・スイーツ、フードデリバリー、映画、ECサイト、アプリストアなどのギフト券に交換できる。World ID で人間証明をすると広告タップのポイントが6倍になり、デイリークエスチョンに答えると最大1,000ptが当たるルーレットにも参加できる。運営は博報堂DYホールディングス100%出資の株式会社Ads for Humanity（東京・赤坂）で、2026年8月7日にベータ版を公開。World の掲載ページでの利用者は約2.5万人（2026年10月）。紹介リンクや紹介特典は見つからなかった",
+          "need": "World App でミニアプリ Humad を開いて使う。ギフト券への交換には、Orb で認証した World ID での人間証明が必要",
+          "caution": "ポイントは現金ではなくギフト券にしか交換できず、交換後の取り消しはできない。日本で使える日本限定のサービス（プレスリリースでも日本国内からのアクセスに限定とされている）。ベータ版なので、内容が変わることがある。広告の配信には、回答や連携したデータが使われる"
+        },
+        "zh": {
+          "gain": "点击广告、回答问题可得积分（1,500 积分＝150 日元起可换礼品卡）",
+          "note": "在 World App 内运行的小程序。点击喜欢的广告、回答关于兴趣和价值观的问题即可积累积分，可兑换咖啡甜点、外卖、电影、电商、应用商店等礼品卡。用 World ID 完成真人证明后，点击广告的积分变为 6 倍；回答每日问题还可参加最高 1,000 积分的转盘。运营方为博报堂 DY 控股全资子公司 Ads for Humanity 株式会社（东京赤坂），2026 年 8 月 7 日推出测试版。World 介绍页显示用户约 2.5 万（2026 年 10 月）。未找到推荐链接或推荐奖励",
+          "need": "在 World App 中打开 Humad 小程序使用。兑换礼品卡需要用经 Orb 验证的 World ID 完成真人证明",
+          "caution": "积分只能兑换礼品卡，不能换现金，兑换后无法撤销。可在日本使用，且仅限日本（新闻稿也称仅限日本国内访问）。目前为测试版，内容可能变化。你的回答和关联的数据会被用于投放广告"
+        },
+        "hi": {
+          "gain": "विज्ञापन टैप करने और सवालों के जवाब देने पर पॉइंट (1,500 pt = ¥150 से गिफ़्ट कार्ड)",
+          "note": "World App के अंदर चलने वाला मिनी ऐप। पसंद के विज्ञापन टैप करें और अपनी रुचियों व मूल्यों से जुड़े सवालों के जवाब दें, पॉइंट जमा करें और उन्हें कैफ़े-मिठाई, फ़ूड डिलीवरी, फ़िल्म, ऑनलाइन शॉप, ऐप स्टोर आदि के गिफ़्ट कार्ड से बदलें। World ID से इंसान साबित करने पर विज्ञापन टैप के पॉइंट 6 गुना हो जाते हैं, और रोज़ के सवाल का जवाब देने पर 1,000 pt तक की रूलेट में हिस्सा मिलता है। इसे Hakuhodo DY Holdings की पूर्ण स्वामित्व वाली Ads for Humanity Inc. (अकासाका, टोक्यो) चलाती है; बीटा 7 अगस्त 2026 को शुरू हुआ। लगभग 25,000 यूज़र (World का लिस्टिंग पेज, अक्टूबर 2026)। कोई रेफ़रल लिंक या रेफ़रल बोनस नहीं मिला",
+          "need": "World App में Humad मिनी ऐप खोलकर इस्तेमाल करें। पॉइंट को गिफ़्ट कार्ड में बदलने के लिए Orb से वेरिफ़ाई की गई World ID से इंसान होने का सबूत चाहिए",
+          "caution": "पॉइंट सिर्फ़ गिफ़्ट कार्ड में बदलते हैं, नकद में नहीं, और बदलने के बाद रद्द नहीं होते। यह जापान में उपलब्ध है और सिर्फ़ जापान के लिए है (प्रेस रिलीज़ में भी पहुँच सिर्फ़ जापान के अंदर से बताई गई है)। यह बीटा है, इसलिए चीज़ें बदल सकती हैं। आपके जवाब और जोड़ा गया डेटा विज्ञापन दिखाने में इस्तेमाल होता है"
+        },
+        "es": {
+          "gain": "Puntos por tocar anuncios y responder preguntas (tarjetas regalo desde 1.500 pt = 150 ¥)",
+          "note": "Una mini app dentro de World App. Toca los anuncios que te gusten y responde preguntas sobre tus intereses y valores para sumar puntos, y cámbialos por tarjetas regalo de cafeterías y dulces, comida a domicilio, cine, tiendas online, tiendas de apps y más. Si demuestras que eres humano con World ID, los puntos por anuncio se multiplican por 6, y al responder la pregunta del día entras en una ruleta de hasta 1.000 pt. La gestiona Ads for Humanity Inc. (Akasaka, Tokio), filial al 100 % de Hakuhodo DY Holdings; la beta salió el 7 de agosto de 2026. Unos 25.000 usuarios (página de World, octubre de 2026). No se encontró enlace ni bono de referido",
+          "need": "Abre la mini app Humad en World App. Para cambiar puntos por tarjetas regalo hace falta demostrar que eres humano con un World ID verificado con Orb",
+          "caution": "Los puntos solo se cambian por tarjetas regalo, no por dinero, y el canje no se puede deshacer. Disponible en Japón y solo para Japón (el comunicado de prensa también limita el acceso a Japón). Es una beta, así que puede cambiar. Tus respuestas y los datos que vincules se usan para mostrarte anuncios"
+        },
+        "de": {
+          "gain": "Punkte fürs Antippen von Werbung und Beantworten von Fragen (Geschenkkarten ab 1.500 Pkt. = 150 Yen)",
+          "note": "Eine Mini-App in der World App. Tipp Werbung an, die dir gefällt, und beantworte Fragen zu deinen Interessen und Werten, um Punkte zu sammeln, und tausch sie gegen Geschenkkarten für Cafés und Süßes, Essenslieferung, Kino, Onlineshops, App-Stores und mehr. Wenn du mit World ID nachweist, dass du ein Mensch bist, gibt es für das Antippen von Werbung 6-mal so viele Punkte, und mit der täglichen Frage nimmst du an einem Glücksrad mit bis zu 1.000 Pkt. teil. Betrieben von der Ads for Humanity Inc. (Akasaka, Tokio), einer 100-prozentigen Tochter der Hakuhodo DY Holdings; die Beta startete am 7. August 2026. Rund 25.000 Nutzer (Eintrag bei World, Oktober 2026). Ein Empfehlungslink oder -bonus wurde nicht gefunden",
+          "need": "Die Mini-App Humad in der World App öffnen. Zum Eintauschen in Geschenkkarten brauchst du einen Menschlichkeitsnachweis mit einer per Orb verifizierten World ID",
+          "caution": "Punkte lassen sich nur gegen Geschenkkarten tauschen, nicht gegen Geld, und ein Tausch kann nicht rückgängig gemacht werden. In Japan verfügbar und nur für Japan (auch laut Pressemitteilung ist der Zugang auf Japan beschränkt). Es ist eine Beta, Details können sich also ändern. Deine Antworten und verknüpften Daten werden für Werbung genutzt"
+        },
+        "ar": {
+          "gain": "نقاط مقابل النقر على الإعلانات والإجابة عن الأسئلة (بطاقات هدايا بدءًا من 1,500 pt = 150 ين)",
+          "note": "تطبيق مصغّر داخل World App. انقر على الإعلانات التي تعجبك وأجب عن أسئلة حول اهتماماتك وقيمك لتجمع النقاط، ثم استبدلها ببطاقات هدايا للمقاهي والحلويات وتوصيل الطعام والسينما والمتاجر الإلكترونية ومتاجر التطبيقات وغيرها. إثبات أنك إنسان عبر World ID يضاعف نقاط النقر على الإعلانات 6 مرات، والإجابة عن سؤال اليوم تتيح لك عجلة حظ تصل إلى 1,000 pt. تديره Ads for Humanity Inc. (أكاساكا، طوكيو)، المملوكة بالكامل لـHakuhodo DY Holdings، وأُطلقت النسخة التجريبية في 7 أغسطس 2026. نحو 25 ألف مستخدم (صفحة World، أكتوبر 2026). لم نجد رابط إحالة ولا مكافأة إحالة",
+          "need": "افتح تطبيق Humad المصغّر في World App. استبدال النقاط ببطاقات الهدايا يتطلب إثبات أنك إنسان عبر World ID موثَّق بـOrb",
+          "caution": "لا تُستبدل النقاط إلا ببطاقات هدايا وليس بنقود، ولا يمكن التراجع عن الاستبدال. متاح في اليابان ومقتصر عليها (ويذكر البيان الصحفي أيضًا أن الوصول مقتصر على اليابان). إنه إصدار تجريبي، لذا قد تتغير التفاصيل. تُستخدم إجاباتك والبيانات التي تربطها لاستهداف الإعلانات"
+        }
+      }
+    },
+    {
+      "id": "idena",
+      "name": "Idena (iDNA)",
+      "nameJa": "Idena（iDNA）",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://www.idena.io/",
+      "referral": null,
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "ceremony",
+          "optional": false
+        },
+        {
+          "method": "web-of-trust",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "partial"
+      },
+      "ease": 1,
+      "added": "2026-10-26",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/idena/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/idena/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/idena/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/idena/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/idena/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/idena/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/idena/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/idena/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "iDNA (mining rewards while your node runs, plus validation rewards)",
+          "note": "A proof-of-person blockchain built on “one person, one vote”. You prove you are human in a synchronized “validation ceremony” held worldwide at the same time, by solving picture puzzles called FLIPs. In Oct 2026 ceremonies were held every 5 days, starting at 15:00 UTC. Once validated, you earn iDNA mining rewards in real time while your node runs, plus rewards per session. It is an open-source project; 159 accounts took part in the 24 Oct 2026 ceremony. There is no referral link",
+          "need": "Follow the pinned message in the official Telegram to get a free invitation code from a validated member or the Idena team. Join with the web app (a shared node works too) or your own node, and be online at ceremony time to solve FLIPs (confirmed usable from Japan in Oct 2026, first-hand)",
+          "caution": "You must be online at a fixed time (midnight in Japan) or you will not be validated, so it takes effort. The network is very small: iDNA is about $0.0012 (Oct 2026), the market cap is about $120,000, and the only exchange CoinGecko shows is PancakeSwap (BSC), so liquidity is low. Cashing out means selling on an exchange. Invitation codes must not be bought or sold; they are free. If you delegate to someone else’s “pool”, the pool owner can take your stake"
+        },
+        "ja": {
+          "gain": "iDNA（ノードを動かしている間のマイニング報酬と、認証セッションの報酬）",
+          "note": "「一人一票」の仕組みで人間であることを証明する、Proof of Person 型のブロックチェーン。世界中で同時に行われる「認証セレモニー」でFLIPと呼ばれる絵のパズルを解いて認証される。2026年10月は5日ごとに開かれ、開始は15:00 UTC（日本時間の深夜0時）。認証されると、ノードを動かしている間は iDNA のマイニング報酬がリアルタイムで入り、セッションごとの報酬もある。オープンソースのプロジェクトで、2026年10月24日のセレモニーでは159アカウントが対象になった。紹介リンクはない",
+          "need": "公式 Telegram の案内に従って、認証済みメンバーか運営チームから無料の招待コードをもらう。Webアプリ（共有ノード経由でも可）か自分のノードで参加し、セレモニーの時間にオンラインで FLIP を解く（日本からの利用は2026年10月に実際に確認）",
+          "caution": "決まった時刻（日本時間の深夜0時）にオンラインでいないと認証されず、手間がかかる。ネットワークはとても小さく、iDNA は1枚約0.0012ドル（2026年10月）。時価総額は約12万ドルで、CoinGecko で確認できた取引所は PancakeSwap（BSC）のみと流動性が低い。換金は取引所で売る形になる。招待コードを売買するのは禁止されていて、無料でもらうもの。報酬を他人の「プール」に任せると、相手がステークを持ち去れるので注意"
+        },
+        "zh": {
+          "gain": "iDNA（节点运行期间的挖矿奖励，以及验证奖励）",
+          "note": "基于“一人一票”、证明你是真人的 Proof of Person 区块链。在全球同时举行的“验证仪式”中解开名为 FLIP 的图片谜题来完成验证。2026 年 10 月每 5 天举行一次，开始时间为 15:00 UTC。通过验证后，节点运行期间可实时获得 iDNA 挖矿奖励，每次验证还有奖励。这是开源项目，2026 年 10 月 24 日的仪式共有 159 个账户参加。没有推荐链接",
+          "need": "按官方 Telegram 置顶消息的说明，向已验证成员或 Idena 团队免费索取邀请码。用网页应用（也可通过共享节点）或自己的节点参加，在仪式时间在线解 FLIP（已于 2026 年 10 月亲自确认可在日本使用）",
+          "caution": "必须在固定时间（日本时间午夜）在线，否则无法通过验证，比较费事。网络规模很小：iDNA 约 0.0012 美元（2026 年 10 月），市值约 12 万美元，CoinGecko 上能确认的交易所只有 PancakeSwap（BSC），流动性很低。兑现需在交易所出售。邀请码禁止买卖，应免费获取。若把挖矿委托给他人的“矿池”，对方可能拿走你的质押"
+        },
+        "hi": {
+          "gain": "iDNA (नोड चलते रहने तक माइनिंग इनाम, और वैलिडेशन इनाम)",
+          "note": "“एक व्यक्ति, एक वोट” पर बना Proof of Person ब्लॉकचेन, जो साबित करता है कि आप इंसान हैं। दुनिया भर में एक साथ होने वाले “वैलिडेशन समारोह” में FLIP नाम की चित्र पहेलियाँ हल करके आप वैलिडेट होते हैं। अक्टूबर 2026 में यह हर 5 दिन पर 15:00 UTC से हुआ। वैलिडेट होने के बाद, नोड चलते रहने तक iDNA माइनिंग इनाम तुरंत मिलता है, साथ में हर सत्र का इनाम भी। यह ओपन-सोर्स प्रोजेक्ट है; 24 अक्टूबर 2026 के समारोह में 159 अकाउंट शामिल थे। कोई रेफ़रल लिंक नहीं है",
+          "need": "आधिकारिक Telegram के पिन किए संदेश के अनुसार किसी वैलिडेटेड सदस्य या Idena टीम से मुफ़्त इनविटेशन कोड लें। वेब ऐप (शेयर्ड नोड से भी) या अपने नोड से जुड़ें, और समारोह के समय ऑनलाइन रहकर FLIP हल करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+          "caution": "तय समय (जापान में आधी रात) पर ऑनलाइन न होने पर वैलिडेशन नहीं होता, इसलिए मेहनत लगती है। नेटवर्क बहुत छोटा है: iDNA लगभग $0.0012 (अक्टूबर 2026), मार्केट कैप लगभग $1.2 लाख, और CoinGecko पर दिखने वाला एकमात्र एक्सचेंज PancakeSwap (BSC) है, इसलिए लिक्विडिटी कम है। नकद के लिए एक्सचेंज पर बेचना होता है। इनविटेशन कोड ख़रीदना-बेचना मना है; ये मुफ़्त हैं। किसी और के “पूल” को सौंपने पर पूल का मालिक आपका स्टेक ले सकता है"
+        },
+        "es": {
+          "gain": "iDNA (recompensas de minado mientras tu nodo funciona, más recompensas de validación)",
+          "note": "Una blockchain de «prueba de persona» basada en «una persona, un voto». Demuestras que eres humano en una «ceremonia de validación» sincronizada en todo el mundo, resolviendo acertijos de imágenes llamados FLIP. En octubre de 2026 las ceremonias fueron cada 5 días, a las 15:00 UTC. Una vez validado, ganas recompensas de minado en iDNA en tiempo real mientras tu nodo está activo, además de recompensas por sesión. Es un proyecto de código abierto; en la ceremonia del 24 de octubre de 2026 participaron 159 cuentas. No hay enlace de referido",
+          "need": "Sigue el mensaje fijado del Telegram oficial para conseguir gratis un código de invitación de un miembro validado o del equipo de Idena. Participa con la app web (también vale un nodo compartido) o con tu propio nodo, y conéctate a la hora de la ceremonia para resolver FLIP (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+          "caution": "Si no estás conectado a una hora fija (medianoche en Japón) no te validan, así que requiere esfuerzo. La red es muy pequeña: iDNA vale unos 0,0012 $ (octubre de 2026), la capitalización ronda los 120.000 $ y el único exchange que muestra CoinGecko es PancakeSwap (BSC), así que hay poca liquidez. Para cobrar hay que vender en un exchange. Los códigos de invitación no se compran ni se venden: son gratis. Si delegas en el «pool» de otra persona, quien lo gestiona puede quedarse con tu stake"
+        },
+        "de": {
+          "gain": "iDNA (Mining-Belohnungen, solange dein Node läuft, plus Validierungsbelohnungen)",
+          "note": "Eine Proof-of-Person-Blockchain nach dem Prinzip „eine Person, eine Stimme“. Du weist in einer weltweit gleichzeitigen „Validierungszeremonie“ nach, dass du ein Mensch bist, indem du Bilderrätsel namens FLIPs löst. Im Oktober 2026 fanden die Zeremonien alle 5 Tage um 15:00 UTC statt. Nach der Validierung bekommst du in Echtzeit iDNA-Mining-Belohnungen, solange dein Node läuft, plus Belohnungen pro Sitzung. Es ist ein Open-Source-Projekt; an der Zeremonie vom 24. Oktober 2026 nahmen 159 Konten teil. Einen Empfehlungslink gibt es nicht",
+          "need": "Laut angepinnter Nachricht im offiziellen Telegram einen kostenlosen Einladungscode von einem validierten Mitglied oder vom Idena-Team holen. Über die Web-App (auch mit Shared Node) oder einen eigenen Node teilnehmen und zur Zeremonie online sein, um FLIPs zu lösen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+          "caution": "Wer zur festen Uhrzeit (Mitternacht in Japan) nicht online ist, wird nicht validiert, das ist also aufwendig. Das Netzwerk ist sehr klein: iDNA kostet etwa 0,0012 $ (Oktober 2026), die Marktkapitalisierung liegt bei rund 120.000 $, und die einzige Börse, die CoinGecko zeigt, ist PancakeSwap (BSC), die Liquidität ist also gering. Auszahlen heißt an einer Börse verkaufen. Einladungscodes dürfen nicht gekauft oder verkauft werden, sie sind kostenlos. Wer an den „Pool“ einer anderen Person delegiert, riskiert, dass diese den Stake einbehält"
+        },
+        "ar": {
+          "gain": "iDNA (مكافآت تعدين ما دامت عقدتك تعمل، ومكافآت التحقق)",
+          "note": "بلوكتشين من نوع «إثبات الشخص» يقوم على مبدأ «شخص واحد، صوت واحد». تثبت أنك إنسان في «مراسم تحقق» تُقام في الوقت نفسه حول العالم بحل ألغاز صور تُسمى FLIP. في أكتوبر 2026 أُقيمت المراسم كل 5 أيام عند 15:00 بالتوقيت العالمي. بعد التحقق تحصل على مكافآت تعدين iDNA لحظيًا ما دامت عقدتك تعمل، إضافة إلى مكافآت كل جلسة. إنه مشروع مفتوح المصدر، وشارك 159 حسابًا في مراسم 24 أكتوبر 2026. لا يوجد رابط إحالة",
+          "need": "اتبع الرسالة المثبتة في قناة Telegram الرسمية لتحصل مجانًا على رمز دعوة من عضو موثَّق أو من فريق Idena. شارك عبر تطبيق الويب (ويصلح أيضًا عبر عقدة مشتركة) أو عقدتك الخاصة، وكن متصلًا وقت المراسم لحل ألغاز FLIP (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+          "caution": "إن لم تكن متصلًا في الوقت المحدد (منتصف الليل في اليابان) فلن يتم التحقق منك، لذا يتطلب جهدًا. الشبكة صغيرة جدًا: سعر iDNA نحو $0.0012 (أكتوبر 2026) وقيمتها السوقية نحو 120 ألف دولار، والمنصة الوحيدة التي يعرضها CoinGecko هي PancakeSwap (BSC)، فالسيولة ضعيفة. التحويل إلى نقود يعني البيع في منصة تداول. يُمنع بيع رموز الدعوة وشراؤها، فهي مجانية. إن فوّضت «مجمّعًا» لشخص آخر فقد يستولي صاحبه على حصتك"
+        }
+      }
+    },
+    {
+      "id": "interlink",
+      "name": "InterLink",
+      "nameJa": "InterLink",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://interlinklabs.ai/",
+      "referral": {
+        "url": "https://interlinklabs.ai/541682748130",
+        "code": "541682748130",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "face",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "unknown",
+        "price": "unknown",
+        "operator": "yes"
+      },
+      "ease": 2,
+      "added": "2026-10-09",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/interlink/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/interlink/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/interlink/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/interlink/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/interlink/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/interlink/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/interlink/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/interlink/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "ITLG tokens every day",
+          "note": "A project that distributes ITLG tokens to people who have verified they are real humans through face verification (Human Nodes). Check in on the app about every 4 hours (up to 6 times a day) to earn",
+          "need": "Sign up via the invite link and complete face verification in the app",
+          "caution": "As of May 2026, ITLG is not listed on any exchange and has no market price. Requires frequent check-ins. Use it only if you are comfortable with how your facial biometric data is handled"
+        },
+        "ja": {
+          "gain": "ITLGトークンを毎日",
+          "note": "顔認証で“本人であること”を確かめた人（Human Node）に、ITLGトークンを配るプロジェクト。アプリで約4時間ごと（1日最大6回）にチェックインするとたまる",
+          "need": "招待リンクから登録し、アプリで顔認証をする",
+          "caution": "2026年5月時点でITLGは取引所に上場しておらず、市場価格がない。こまめなチェックインが必要。顔の生体情報の扱いに納得したうえで使う"
+        },
+        "zh": {
+          "gain": "每天获得 ITLG 代币",
+          "note": "向通过人脸验证确认“本人身份”的用户（Human Node）发放 ITLG 代币的项目。在应用中约每 4 小时签到一次（每天最多 6 次）即可累积",
+          "need": "通过邀请链接注册，并在应用中完成人脸验证",
+          "caution": "截至 2026 年 5 月，ITLG 尚未在交易所上架，没有市场价格。需要经常签到。请在认可其人脸生物信息处理方式的前提下使用"
+        },
+        "hi": {
+          "gain": "हर दिन ITLG टोकन",
+          "note": "एक प्रोजेक्ट जो फ़ेस वेरिफ़िकेशन से “असली इंसान” साबित करने वाले लोगों (Human Node) को ITLG टोकन देता है। ऐप में लगभग हर 4 घंटे में (दिन में अधिकतम 6 बार) चेक-इन करने पर टोकन जमा होते हैं",
+          "need": "इनवाइट लिंक से साइन अप करें और ऐप में फ़ेस वेरिफ़िकेशन करें",
+          "caution": "मई 2026 तक ITLG किसी एक्सचेंज पर लिस्टेड नहीं है और इसका कोई बाज़ार मूल्य नहीं है। बार-बार चेक-इन करना पड़ता है। चेहरे के बायोमेट्रिक डेटा के इस्तेमाल से सहमत हों, तभी इस्तेमाल करें"
+        },
+        "es": {
+          "gain": "Tokens ITLG cada día",
+          "note": "Un proyecto que reparte tokens ITLG a personas que han verificado que son humanas mediante reconocimiento facial (Human Nodes). Haz check-in en la app cada 4 horas aproximadamente (hasta 6 veces al día) para acumularlos",
+          "need": "Regístrate con el enlace de invitación y completa la verificación facial en la app",
+          "caution": "En mayo de 2026, ITLG no cotiza en ningún exchange y no tiene precio de mercado. Requiere check-ins frecuentes. Úsalo solo si estás conforme con cómo se tratan tus datos biométricos faciales"
+        },
+        "de": {
+          "gain": "Jeden Tag ITLG-Token",
+          "note": "Ein Projekt, das ITLG-Token an Menschen verteilt, die per Gesichtsverifizierung bestätigt haben, dass sie echte Menschen sind (Human Nodes). Etwa alle 4 Stunden (bis zu 6-mal am Tag) in der App einchecken, um zu verdienen",
+          "need": "Über den Einladungslink anmelden und in der App die Gesichtsverifizierung abschließen",
+          "caution": "Stand Mai 2026 ist ITLG an keiner Börse gelistet und hat keinen Marktkurs. Erfordert häufiges Einchecken. Nutz es nur, wenn du mit dem Umgang mit deinen biometrischen Gesichtsdaten einverstanden bist"
+        },
+        "ar": {
+          "gain": "رموز ITLG كل يوم",
+          "note": "مشروع يوزّع رموز ITLG على من تحقّقوا من أنهم بشر حقيقيون عبر التحقق بالوجه (Human Node). سجّل حضورك في التطبيق كل 4 ساعات تقريبًا (حتى 6 مرات يوميًا) لتجميعها",
+          "need": "سجّل عبر رابط الدعوة وأكمل التحقق بالوجه في التطبيق",
+          "caution": "حتى مايو 2026 لم تُدرج ITLG في أي منصة تداول وليس لها سعر سوقي. يتطلب تسجيل حضور متكررًا. استخدمه فقط إن كنت مطمئنًا لطريقة التعامل مع بيانات وجهك البيومترية"
+        }
+      }
+    },
+    {
+      "id": "meingrundeinkommen",
+      "name": "Mein Grundeinkommen",
+      "nameJa": "Mein Grundeinkommen",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://www.mein-grundeinkommen.de/",
+      "referral": {
+        "url": "https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft",
+        "code": null,
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        },
+        {
+          "method": "kyc-id",
+          "optional": true
+        }
+      ],
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 4,
+      "added": "2026-10-21",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/meingrundeinkommen/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/meingrundeinkommen/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/meingrundeinkommen/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/meingrundeinkommen/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/meingrundeinkommen/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/meingrundeinkommen/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/meingrundeinkommen/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/meingrundeinkommen/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "€1,000 a month for a year if you win",
+          "note": "A free lottery run by a nonprofit association in Berlin and funded by crowdfunding donations. Draws are held regularly, and each winner gets €1,000 a month for 12 months, no strings attached (real cash, not crypto)",
+          "need": "Register with your email and confirm your participation for each draw. You must be 16 or older, and your name and date of birth must match your ID if you win",
+          "caution": "A 2020 statement from the organisation said anyone can take part regardless of age or where they live, but current rules for people outside Germany and payouts abroad are not confirmed. The site is in German. It's a lottery, so most entrants receive nothing. Winnings may be taxed in your country"
+        },
+        "ja": {
+          "gain": "当選すると月1,000ユーロを1年間",
+          "note": "ベルリンの非営利団体が、クラウドファンディングの寄付を元手に開く無料の抽選。定期的に抽選があり、当たった人は月1,000ユーロを12か月、条件なしで受け取れる（暗号資産ではなく現金）",
+          "need": "メールアドレスで登録し、抽選ごとに参加を確認する。16歳以上で、当選時は名前と生年月日が身分証と一致している必要がある",
+          "caution": "2020年に運営は「年齢や居住地に関係なく誰でも参加できる」と説明しているが、ドイツ国外在住者の現在の条件や海外への送金は確認できていない。サイトはドイツ語。抽選なので、ほとんどの人は何も受け取れない。当選金は住んでいる国で税金がかかることがある"
+        },
+        "zh": {
+          "gain": "中奖后每月 1,000 欧元，持续一年",
+          "note": "由柏林的非营利协会举办、以众筹捐款为资金的免费抽奖。定期开奖，每位中奖者可无条件连续 12 个月每月领取 1,000 欧元（是现金，不是加密货币）",
+          "need": "用邮箱注册，并在每次抽奖前确认参加。需年满 16 岁，中奖时姓名和出生日期须与身份证件一致",
+          "caution": "主办方在 2020 年表示，不论年龄和居住地，任何人都可参加，但目前对德国境外居民的规定以及能否向海外付款尚未确认。网站为德语。这是抽奖，大多数参加者什么也拿不到。奖金在你所在的国家可能需要缴税"
+        },
+        "hi": {
+          "gain": "जीतने पर एक साल तक हर महीने €1,000",
+          "note": "बर्लिन की एक नॉन-प्रॉफ़िट संस्था की मुफ़्त लॉटरी, जो क्राउडफ़ंडिंग दान से चलती है। ड्रॉ नियमित रूप से होते हैं, और हर विजेता को 12 महीने तक हर महीने €1,000 बिना किसी शर्त के मिलते हैं (असली नकद, क्रिप्टो नहीं)",
+          "need": "ईमेल से रजिस्टर करें और हर ड्रॉ के लिए अपनी भागीदारी कन्फ़र्म करें। उम्र 16 साल या ज़्यादा होनी चाहिए, और जीतने पर नाम व जन्मतिथि आपकी ID से मेल खानी चाहिए",
+          "caution": "संस्था ने 2020 में कहा था कि उम्र या रहने की जगह से फ़र्क नहीं पड़ता, कोई भी भाग ले सकता है, लेकिन जर्मनी के बाहर रहने वालों के मौजूदा नियम और विदेश में भुगतान की पुष्टि नहीं हुई है। साइट जर्मन भाषा में है। यह लॉटरी है, इसलिए ज़्यादातर लोगों को कुछ नहीं मिलता। जीती हुई रकम पर आपके देश में टैक्स लग सकता है"
+        },
+        "es": {
+          "gain": "1.000 € al mes durante un año si ganas",
+          "note": "Un sorteo gratuito organizado por una asociación sin ánimo de lucro de Berlín y financiado con donaciones de crowdfunding. Hay sorteos periódicos y cada ganador recibe 1.000 € al mes durante 12 meses, sin condiciones (dinero real, no cripto)",
+          "need": "Regístrate con tu email y confirma tu participación en cada sorteo. Debes tener 16 años o más, y si ganas, tu nombre y fecha de nacimiento deben coincidir con tu documento de identidad",
+          "caution": "En 2020 la organización dijo que cualquiera puede participar sin importar la edad ni el lugar de residencia, pero no están confirmadas las reglas actuales para quienes viven fuera de Alemania ni los pagos al extranjero. La web está en alemán. Es un sorteo, así que la mayoría no recibe nada. Las ganancias pueden tributar en tu país"
+        },
+        "de": {
+          "gain": "1.000 € im Monat ein Jahr lang, wenn du gewinnst",
+          "note": "Eine kostenlose Verlosung eines gemeinnützigen Vereins in Berlin, finanziert durch Crowdfunding-Spenden. Es wird regelmäßig verlost, und jede Gewinnerin und jeder Gewinner bekommt 12 Monate lang 1.000 € im Monat, bedingungslos (echtes Geld, keine Kryptowährung)",
+          "need": "Mit E-Mail registrieren und die Teilnahme an jeder Verlosung bestätigen. Du musst mindestens 16 sein, und im Gewinnfall müssen Name und Geburtsdatum zu deinem Ausweis passen",
+          "caution": "Der Verein erklärte 2020, dass alle unabhängig von Alter und Wohnort teilnehmen können, die aktuellen Regeln für Menschen außerhalb Deutschlands und Auszahlungen ins Ausland sind aber nicht bestätigt. Die Seite ist auf Deutsch. Es ist eine Verlosung, die meisten gehen also leer aus. Gewinne können in deinem Land steuerpflichtig sein"
+        },
+        "ar": {
+          "gain": "€1,000 شهريًا لمدة سنة إن فزت",
+          "note": "سحب مجاني تنظمه جمعية غير ربحية في برلين ويُموَّل بتبرعات التمويل الجماعي. تُجرى السحوبات بانتظام، ويحصل كل فائز على €1,000 شهريًا لمدة 12 شهرًا دون أي شروط (نقود حقيقية، لا عملات مشفرة)",
+          "need": "سجّل ببريدك الإلكتروني وأكّد مشاركتك في كل سحب. يجب أن يكون عمرك 16 عامًا أو أكثر، وعند الفوز يجب أن يطابق اسمك وتاريخ ميلادك وثيقة هويتك",
+          "caution": "ذكرت الجهة المنظمة في 2020 أن المشاركة متاحة للجميع بغض النظر عن العمر أو مكان الإقامة، لكن القواعد الحالية للمقيمين خارج ألمانيا والدفع إلى الخارج غير مؤكدة. الموقع باللغة الألمانية. إنه سحب، لذا لا يحصل معظم المشاركين على شيء. قد تخضع الجوائز للضريبة في بلدك"
+        }
+      }
+    },
+    {
+      "id": "mepass",
+      "name": "ME Pass",
+      "nameJa": "ME Pass",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://www.mec.me/",
+      "referral": {
+        "url": "https://i.mec.me/ja-JP/?c=d22fj9hx",
+        "code": "d22fj9hx",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "kyc-id",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "no",
+        "operator": "unknown"
+      },
+      "ease": 4,
+      "added": null,
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/mepass/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/mepass/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/mepass/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/mepass/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/mepass/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/mepass/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/mepass/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/mepass/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "MEC tokens every day",
+          "note": "Meta Earth's wallet app. Verified users get 1 MEC as an “unconditional basic income”, plus small daily check-in rewards",
+          "need": "Sign up via the invite link and complete KYC in the app",
+          "caution": "As of Oct 2026, MEC is not listed on any exchange and has no market price. Cashing out is peer-to-peer only"
+        },
+        "ja": {
+          "gain": "MECトークンを毎日",
+          "note": "Meta Earthのウォレットアプリ。本人確認すると「無条件のベーシックインカム」として1 MECが付与され、毎日のチェックインでも少しずつ増える",
+          "need": "招待リンクから登録し、アプリで本人確認（KYC）",
+          "caution": "MECは2026年10月時点で取引所に上場しておらず、市場価格がない。換金は個人間取引のみ"
+        },
+        "zh": {
+          "gain": "每天领取 MEC 代币",
+          "note": "Meta Earth 的钱包应用。完成验证的用户可获得 1 MEC 作为“无条件基本收入”，每日签到也有少量奖励",
+          "need": "通过邀请链接注册，并在应用中完成 KYC",
+          "caution": "截至 2026 年 10 月，MEC 尚未在任何交易所上市，没有市场价格。只能通过点对点交易变现"
+        },
+        "hi": {
+          "gain": "हर दिन MEC टोकन",
+          "note": "Meta Earth का वॉलेट ऐप। सत्यापित यूज़र को “बिना शर्त बेसिक इनकम” के तौर पर 1 MEC मिलता है, साथ में रोज़ चेक-इन पर थोड़े इनाम",
+          "need": "इनवाइट लिंक से साइन अप करें और ऐप में KYC पूरा करें",
+          "caution": "अक्टूबर 2026 तक MEC किसी एक्सचेंज पर लिस्टेड नहीं है और इसकी कोई बाज़ार कीमत नहीं है। कैश निकालना सिर्फ़ पीयर-टू-पीयर से संभव है"
+        },
+        "es": {
+          "gain": "Tokens MEC cada día",
+          "note": "La app de cartera de Meta Earth. Los usuarios verificados reciben 1 MEC como «renta básica incondicional», más pequeñas recompensas por registrarse cada día",
+          "need": "Regístrate con el enlace de invitación y completa el KYC en la app",
+          "caution": "A octubre de 2026, MEC no cotiza en ningún exchange y no tiene precio de mercado. Solo se puede cobrar entre particulares (P2P)"
+        },
+        "de": {
+          "gain": "Jeden Tag MEC-Token",
+          "note": "Die Wallet-App von Meta Earth. Verifizierte Nutzer bekommen 1 MEC als „bedingungsloses Grundeinkommen“ und dazu kleine Belohnungen für den täglichen Check-in",
+          "need": "Über den Einladungslink anmelden und in der App die KYC-Prüfung abschließen",
+          "caution": "Stand Oktober 2026 ist MEC an keiner Börse gelistet und hat keinen Marktkurs. Auszahlung nur von Person zu Person"
+        },
+        "ar": {
+          "gain": "رموز MEC كل يوم",
+          "note": "تطبيق محفظة من Meta Earth. يحصل المستخدمون الموثَّقون على 1 MEC بوصفه «دخلًا أساسيًا غير مشروط»، إضافة إلى مكافآت صغيرة لتسجيل الحضور يوميًا",
+          "need": "سجّل عبر رابط الدعوة وأكمل التحقق من الهوية (KYC) في التطبيق",
+          "caution": "حتى أكتوبر 2026، لم يُدرج MEC في أي منصة تداول وليس له سعر سوقي. لا يمكن تحويله إلى نقد إلا بين الأفراد (P2P)"
+        }
+      }
+    },
+    {
+      "id": "oro",
+      "name": "ORO (World App)",
+      "nameJa": "ORO（World App）",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645",
+      "referral": null,
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "world-id",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "unknown"
+      },
+      "ease": 3,
+      "added": "2026-10-24",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/oro/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/oro/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/oro/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/oro/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/oro/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/oro/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/oro/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/oro/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "ORO tokens every day",
+          "note": "A mini app inside World App. Billed as “a token every human can claim daily”, it lets you claim ORO on World Chain once a day. World’s listing mentions inviting friends to earn more, but no invite link was found in the app as of Oct 2026. Developed by Grupo de Fiesta, with about 3.9 million users (World’s listing page, Oct 2026)",
+          "need": "Install World App, prove you are human with World ID (confirmed from Japan with Orb verification), then open the ORO mini app and claim every day",
+          "caution": "The daily amount is not stated on the official pages (a World Chain announcement in Sep 2025 said 1 ORO a day; later reports say it was reduced). Confirmed usable from Japan with an Orb-verified World ID in Oct 2026; whether a lower (non-Orb) verification level is enough is unknown. ORO trades on a decentralized exchange (DEX) with little liquidity, and as of Oct 2026 one ORO is worth well under a cent. No company details for the operator were found"
+        },
+        "ja": {
+          "gain": "ORO トークンを毎日",
+          "note": "World App の中で動くミニアプリ。「すべての人間が毎日受け取れるトークン」として、World Chain 上の ORO を1日1回受け取れる。Worldの掲載ページには「友だちを招待するとORO が多くもらえる」とあるが、2026年10月時点でアプリ内に招待リンクは見つからなかった。開発は Grupo de Fiesta、利用者は約390万人（2026年10月時点のWorldの掲載ページ）",
+          "need": "World App を入れて World ID で人間であることを証明し（日本からはOrb認証済みで利用を確認）、ミニアプリ ORO を開いて毎日受け取る",
+          "caution": "1日にもらえる量は公式ページに書かれていない（2025年9月の World Chain の告知では1日1 ORO。その後減ったという報告もある）。2026年10月に、OrbでWorld IDを認証したアカウントで日本から使えることを確認した。Orbより低い認証レベルで足りるかはわかっていない。ORO は分散型取引所（DEX）で取引されているが流動性は小さく、2026年10月時点で1 ORO は1円未満。運営元の会社情報は見つからない"
+        },
+        "zh": {
+          "gain": "每天领取 ORO 代币",
+          "note": "在 World App 内运行的小程序。号称“每个人类每天都能领取的代币”，每天可领取一次 World Chain 上的 ORO。World 的介绍页提到邀请朋友可多得 ORO，但截至 2026 年 10 月在应用内没有找到邀请链接。开发者为 Grupo de Fiesta，用户约 390 万（2026 年 10 月 World 的介绍页）",
+          "need": "安装 World App，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后打开 ORO 小程序每天领取",
+          "caution": "官方页面没有写明每天能领多少（2025 年 9 月 World Chain 的公告为每天 1 ORO，之后有减少的报告）。2026 年 10 月已确认，使用经 Orb 验证的 World ID 账户可在日本使用；低于 Orb 的验证等级是否足够尚不清楚。ORO 在去中心化交易所（DEX）交易，但流动性很小，截至 2026 年 10 月 1 ORO 远不到 1 美分。未找到运营方的公司信息"
+        },
+        "hi": {
+          "gain": "हर दिन ORO टोकन",
+          "note": "World App के अंदर चलने वाला एक मिनी ऐप। “हर इंसान रोज़ क्लेम कर सकने वाला टोकन” के रूप में, इसमें World Chain पर ORO दिन में एक बार क्लेम किया जा सकता है। World की लिस्टिंग में दोस्तों को बुलाकर ज़्यादा ORO कमाने की बात है, पर अक्टूबर 2026 तक ऐप में कोई इनवाइट लिंक नहीं मिला। डेवलपर Grupo de Fiesta है, और लगभग 39 लाख यूज़र हैं (World का लिस्टिंग पेज, अक्टूबर 2026)",
+          "need": "World App इंस्टॉल करें, World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि), फिर ORO मिनी ऐप खोलकर रोज़ क्लेम करें",
+          "caution": "रोज़ की रकम आधिकारिक पेजों पर नहीं लिखी है (सितंबर 2025 में World Chain की घोषणा में रोज़ 1 ORO बताया गया था; बाद की रिपोर्टों के अनुसार यह घटाया गया)। अक्टूबर 2026 में पुष्टि हुई कि Orb से वेरिफ़ाई की गई World ID वाले अकाउंट से यह जापान में चलता है; Orb से कम वेरिफ़िकेशन लेवल काफ़ी है या नहीं, यह पता नहीं। ORO एक डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर ट्रेड होता है, पर लिक्विडिटी बहुत कम है, और अक्टूबर 2026 में 1 ORO की कीमत एक सेंट से भी काफ़ी कम है। ऑपरेटर की कंपनी की जानकारी नहीं मिली"
+        },
+        "es": {
+          "gain": "Tokens ORO cada día",
+          "note": "Una mini app dentro de World App. Presentada como «un token que todo humano puede reclamar a diario», permite reclamar ORO en World Chain una vez al día. La página de World menciona invitar a amigos para ganar más, pero a octubre de 2026 no se encontró ningún enlace de invitación en la app. La desarrolla Grupo de Fiesta y tiene unos 3,9 millones de usuarios (página de World, octubre de 2026)",
+          "need": "Instala World App, demuestra que eres humano con World ID (confirmado desde Japón con verificación Orb) y abre la mini app ORO para reclamar cada día",
+          "caution": "La cantidad diaria no figura en las páginas oficiales (un anuncio de World Chain de septiembre de 2025 hablaba de 1 ORO al día; después se informó de una reducción). En octubre de 2026 se confirmó que funciona desde Japón con un World ID verificado por Orb; no se sabe si basta un nivel de verificación inferior (sin Orb). ORO se negocia en un exchange descentralizado (DEX) con poca liquidez, y a octubre de 2026 un ORO vale mucho menos de un céntimo. No se encontraron datos de la empresa que lo gestiona"
+        },
+        "de": {
+          "gain": "Jeden Tag ORO-Token",
+          "note": "Eine Mini-App in der World App. Als „ein Token, den jeder Mensch täglich abholen kann“ beworben, lässt sie dich einmal am Tag ORO auf World Chain abholen. Der Eintrag bei World erwähnt, dass man durch Einladen von Freunden mehr verdient, aber in der App wurde Stand Oktober 2026 kein Einladungslink gefunden. Entwickelt von Grupo de Fiesta, mit rund 3,9 Millionen Nutzern (Eintrag bei World, Oktober 2026)",
+          "need": "World App installieren, mit World ID beweisen, dass du ein Mensch bist (aus Japan mit Orb-Verifizierung bestätigt), dann die ORO-Mini-App öffnen und jeden Tag abholen",
+          "caution": "Der Tagesbetrag steht nicht auf den offiziellen Seiten (eine Ankündigung von World Chain im September 2025 nannte 1 ORO pro Tag; spätere Berichte sprechen von einer Kürzung). Im Oktober 2026 wurde bestätigt, dass es aus Japan mit einer per Orb verifizierten World ID funktioniert; ob eine niedrigere Stufe (ohne Orb) reicht, ist unbekannt. ORO wird an einer dezentralen Börse (DEX) mit wenig Liquidität gehandelt, und Stand Oktober 2026 ist ein ORO deutlich weniger als einen Cent wert. Zur Betreiberfirma wurden keine Angaben gefunden"
+        },
+        "ar": {
+          "gain": "رموز ORO كل يوم",
+          "note": "تطبيق مصغّر داخل World App. يُقدَّم على أنه «رمز يستطيع كل إنسان المطالبة به يوميًا»، فتطالب بـORO على World Chain مرة في اليوم. تذكر صفحة World دعوة الأصدقاء لكسب المزيد، لكن لم نجد رابط دعوة داخل التطبيق حتى أكتوبر 2026. المطوّر Grupo de Fiesta، وعدد المستخدمين نحو 3.9 مليون (صفحة World، أكتوبر 2026)",
+          "need": "ثبّت World App وأثبت أنك إنسان عبر World ID (تأكد عمله من اليابان مع التحقق عبر Orb)، ثم افتح تطبيق ORO المصغّر وطالب كل يوم",
+          "caution": "لا تذكر الصفحات الرسمية المقدار اليومي (إعلان World Chain في سبتمبر 2025 ذكر 1 ORO يوميًا، وتشير تقارير لاحقة إلى تخفيضه). تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب World ID موثَّق عبر Orb، ولا يُعرف إن كان مستوى تحقق أدنى (دون Orb) كافيًا. يُتداول ORO في منصة تداول لامركزية (DEX) بسيولة ضئيلة، وفي أكتوبر 2026 كانت قيمة 1 ORO أقل بكثير من سنت واحد. لم نعثر على معلومات عن الشركة المشغّلة"
+        }
+      }
+    },
+    {
+      "id": "palai",
+      "name": "Palai",
+      "nameJa": "Palai",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://palai.org/en",
+      "referral": {
+        "url": "https://palai.org/en?referrer=eltociear%2B856536b6d-da3a-4f27-9bcf-8eef2ce05bc2",
+        "code": null,
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "phone",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "no",
+        "price": "na",
+        "operator": "unknown"
+      },
+      "ease": 4,
+      "added": "2026-10-24",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/palai/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/palai/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/palai/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/palai/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/palai/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/palai/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/palai/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/palai/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Palai (¶) basic income every day",
+          "note": "Its own currency that pays everyone a daily basic income simply for being human. No install and no money to pay in. Idle balances slowly “evaporate” (2.000% a year as of Oct 2026), and that amount is redistributed as basic income. When you invite a friend, you get an extra day’s basic income",
+          "need": "Sign up via the referral link and get certified by adding a mobile phone number (no ID needed). You claim your income yourself; days not claimed within 10 days are lost",
+          "caution": "As of Oct 2026 there is no way to cash Palai out into euros or other money and no official exchange rate; you can only trade it for goods and services with people who accept Palai. The site doesn’t name the operator, only that it is “supported by Social Impact Lab Leipzig”"
+        },
+        "ja": {
+          "gain": "Palai（¶）のベーシックインカムを毎日",
+          "note": "「人間だから」という理由だけで毎日ベーシックインカムが配られる独自通貨。アプリのインストールは不要で、お金を払う必要もない。使わずに置いておいた残高は少しずつ「蒸発」し（2026年10月時点で年2.000%）、その分がベーシックインカムとして配り直される。友だちを紹介すると、紹介した側に1日分のベーシックインカムが追加でもらえる",
+          "need": "紹介リンクから登録し、携帯電話番号を登録して認証を受ける（身分証は不要）。受け取りは自分で申請し、10日以内に申請しなかった日の分は消える",
+          "caution": "2026年10月時点で、Palaiをユーロや円に換金する方法や公式の交換レートはなく、使い道はPalaiで支払ってくれる人との商品やサービスの交換に限られる。運営元は公式サイトに明記されておらず、「Social Impact Lab Leipzigの支援を受けている」とだけ書かれている"
+        },
+        "zh": {
+          "gain": "每天领取 Palai（¶）基本收入",
+          "note": "一种独立货币，只因“你是人”就每天发放基本收入。无需安装，也不用付钱。闲置余额会慢慢“蒸发”（截至 2026 年 10 月为每年 2.000%），蒸发的部分会作为基本收入重新分配。邀请朋友后，邀请人可额外获得 1 天的基本收入",
+          "need": "通过推荐链接注册，并登记手机号码完成认证（不需要身份证件）。收入需要自己申领，10 天内未申领的部分会作废",
+          "caution": "截至 2026 年 10 月，Palai 还无法兑换成欧元等货币，也没有官方汇率，只能与接受 Palai 的人交换商品或服务。官网没有写明运营方，只写着“由 Social Impact Lab Leipzig 支持”"
+        },
+        "hi": {
+          "gain": "हर दिन Palai (¶) में बेसिक इनकम",
+          "note": "एक अलग करेंसी जो सिर्फ़ इंसान होने की वजह से सबको रोज़ बेसिक इनकम देती है। कुछ इंस्टॉल करने या पैसे देने की ज़रूरत नहीं। बिना इस्तेमाल पड़ा बैलेंस धीरे-धीरे “भाप बनकर उड़ता” है (अक्टूबर 2026 में सालाना 2.000%), और वह रकम बेसिक इनकम के रूप में फिर से बाँटी जाती है। किसी दोस्त को बुलाने पर आपको एक दिन की बेसिक इनकम अलग से मिलती है",
+          "need": "रेफ़रल लिंक से साइन अप करें और मोबाइल नंबर जोड़कर सर्टिफ़ाई हों (ID की ज़रूरत नहीं)। इनकम खुद क्लेम करनी होती है; 10 दिन के अंदर क्लेम न किए गए दिन खत्म हो जाते हैं",
+          "caution": "अक्टूबर 2026 तक Palai को यूरो या दूसरे पैसे में बदलने का कोई तरीका या आधिकारिक एक्सचेंज रेट नहीं है; इसे सिर्फ़ Palai लेने वाले लोगों से सामान और सेवाओं के बदले इस्तेमाल किया जा सकता है। साइट पर ऑपरेटर का नाम नहीं है, सिर्फ़ लिखा है कि इसे “Social Impact Lab Leipzig का सहयोग” मिला है"
+        },
+        "es": {
+          "gain": "Renta básica en Palai (¶) cada día",
+          "note": "Una moneda propia que da a todo el mundo una renta básica diaria solo por ser humano. No hay que instalar nada ni pagar dinero. Los saldos sin usar se «evaporan» poco a poco (2,000 % al año a octubre de 2026) y esa cantidad se reparte de nuevo como renta básica. Si invitas a un amigo, recibes un día extra de renta básica",
+          "need": "Regístrate con el enlace de referido y certifícate añadiendo un número de móvil (no hace falta documento de identidad). La renta se reclama a mano; los días no reclamados en 10 días se pierden",
+          "caution": "A octubre de 2026 no hay forma de cambiar Palai por euros u otro dinero ni tipo de cambio oficial; solo se puede intercambiar por bienes y servicios con quien acepte Palai. La web no dice quién lo gestiona, solo que cuenta con el «apoyo de Social Impact Lab Leipzig»"
+        },
+        "de": {
+          "gain": "Jeden Tag Grundeinkommen in Palai (¶)",
+          "note": "Eine eigene Währung, die allen ein tägliches Grundeinkommen zahlt, einfach weil sie Menschen sind. Keine Installation, kein Geld einzuzahlen. Ungenutzte Guthaben „verdunsten“ langsam (2,000 % pro Jahr, Stand Oktober 2026), und dieser Betrag wird als Grundeinkommen neu verteilt. Wenn du eine Freundin oder einen Freund einlädst, bekommst du einen zusätzlichen Tag Grundeinkommen",
+          "need": "Über den Empfehlungslink anmelden und dich mit einer Handynummer zertifizieren (kein Ausweis nötig). Dein Einkommen holst du selbst ab; Tage, die du nicht innerhalb von 10 Tagen abholst, verfallen",
+          "caution": "Stand Oktober 2026 gibt es keine Möglichkeit, Palai in Euro oder anderes Geld zu tauschen, und keinen offiziellen Wechselkurs; tauschen kannst du nur gegen Waren und Dienstleistungen mit Menschen, die Palai annehmen. Die Seite nennt keinen Betreiber, sondern nur, dass es „vom Social Impact Lab Leipzig unterstützt“ wird"
+        },
+        "ar": {
+          "gain": "دخل أساسي بعملة Palai (¶) كل يوم",
+          "note": "عملة مستقلة تمنح الجميع دخلًا أساسيًا يوميًا لمجرد أنهم بشر. لا حاجة إلى تثبيت شيء ولا إلى دفع أي مال. الأرصدة غير المستخدمة «تتبخر» ببطء (2.000% سنويًا حتى أكتوبر 2026)، ويُعاد توزيع ذلك المقدار دخلًا أساسيًا. عند دعوة صديق تحصل على دخل يوم إضافي",
+          "need": "سجّل عبر رابط الإحالة ووثّق حسابك بإضافة رقم هاتف محمول (لا حاجة إلى هوية). تطلب دخلك بنفسك، والأيام التي لا تطلبها خلال 10 أيام تضيع",
+          "caution": "حتى أكتوبر 2026 لا توجد طريقة لتحويل Palai إلى يورو أو نقود أخرى ولا سعر صرف رسمي، ويمكن فقط مبادلتها بسلع وخدمات مع من يقبلون Palai. لا يذكر الموقع الجهة المشغّلة، بل فقط أنها «مدعومة من Social Impact Lab Leipzig»"
+        }
+      }
+    },
+    {
+      "id": "pawns",
+      "name": "Pawns.app",
+      "nameJa": "Pawns.app",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://pawns.app/",
+      "referral": {
+        "url": "https://pawns.app/?r=20659471",
+        "code": "20659471",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 4,
+      "added": "2026-10-09",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/pawns/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/pawns/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/pawns/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/pawns/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/pawns/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/pawns/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/pawns/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/pawns/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Cash for the traffic you share",
+          "note": "IPRoyal’s bandwidth-sharing app. Leave the desktop app running and your spare connection earns money. Surveys and games pay too. Cash out from $5 via PayPal, Bitcoin and more",
+          "need": "Sign up with email, install the desktop app and leave it running",
+          "caution": "Mobile bandwidth sharing ended in April 2026, so passive earning is desktop only. Your IP address is used by others for data collection, and payouts are small"
+        },
+        "ja": {
+          "gain": "共有した通信量に応じて現金",
+          "note": "IPRoyal社の通信量シェアアプリ。PCアプリを入れておくと回線の空きが報酬になる。アンケートやゲームでも稼げる。$5からPayPal・ビットコインなどで出金できる",
+          "need": "メールで登録し、PCにアプリを入れて動かしたままにする",
+          "caution": "スマホでの通信量シェアは2026年4月に終了し、ほったらかしで稼げるのはPCだけ。自分のIPアドレスを他社のデータ収集に使わせるしくみで、額も少なめ"
+        },
+        "zh": {
+          "gain": "按共享流量获得现金",
+          "note": "IPRoyal 旗下的带宽共享应用。让电脑端应用保持运行，闲置网络就能赚钱。问卷和游戏也能赚。满 $5 可通过 PayPal、比特币等提现",
+          "need": "用邮箱注册，在电脑上安装应用并保持运行",
+          "caution": "手机端带宽共享已于 2026 年 4 月停止，躺赚只能用电脑。你的 IP 地址会被他人用于数据采集，收益也不多"
+        },
+        "hi": {
+          "gain": "शेयर किए गए ट्रैफ़िक के बदले नकद",
+          "note": "IPRoyal का बैंडविड्थ शेयर करने वाला ऐप। डेस्कटॉप ऐप चालू छोड़ दें, आपका खाली कनेक्शन कमाई करता है। सर्वे और गेम से भी कमाई होती है। $5 से PayPal, Bitcoin आदि से निकालें",
+          "need": "ईमेल से साइन अप करें, डेस्कटॉप ऐप इंस्टॉल करें और चालू छोड़ दें",
+          "caution": "मोबाइल पर बैंडविड्थ शेयरिंग अप्रैल 2026 में बंद हो गई, इसलिए पैसिव कमाई सिर्फ़ डेस्कटॉप पर है। आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं, और कमाई कम होती है"
+        },
+        "es": {
+          "gain": "Dinero por el tráfico que compartes",
+          "note": "La app de compartir ancho de banda de IPRoyal. Deja la app de escritorio funcionando y tu conexión sobrante genera dinero. También paga por encuestas y juegos. Cobra desde $5 por PayPal, Bitcoin y más",
+          "need": "Regístrate con tu email, instala la app de escritorio y déjala funcionando",
+          "caution": "Compartir ancho de banda en el móvil terminó en abril de 2026, así que lo pasivo solo funciona en PC. Otros usan tu dirección IP para recopilar datos, y se gana poco"
+        },
+        "de": {
+          "gain": "Geld für den geteilten Datenverkehr",
+          "note": "Die Bandbreiten-App von IPRoyal. Lass die Desktop-App laufen, und deine freie Verbindung bringt Geld. Umfragen und Spiele zahlen ebenfalls. Auszahlung ab 5 $ per PayPal, Bitcoin und mehr",
+          "need": "Mit E-Mail anmelden, Desktop-App installieren und laufen lassen",
+          "caution": "Das Teilen mobiler Bandbreite wurde im April 2026 eingestellt, passives Verdienen geht also nur noch am Desktop. Deine IP-Adresse wird von anderen zur Datensammlung genutzt, und die Auszahlungen sind klein"
+        },
+        "ar": {
+          "gain": "نقود مقابل حركة البيانات التي تشاركها",
+          "note": "تطبيق مشاركة عرض النطاق من IPRoyal. اترك تطبيق الحاسوب يعمل ليكسب اتصالك غير المستخدم مالًا. الاستبيانات والألعاب تدفع أيضًا. اسحب أرباحك من $5 عبر PayPal وبيتكوين وغيرها",
+          "need": "سجّل بالبريد الإلكتروني، وثبّت تطبيق الحاسوب واتركه يعمل",
+          "caution": "توقفت مشاركة عرض النطاق على الهاتف في أبريل 2026، فالكسب السلبي على الحاسوب فقط. يستخدم آخرون عنوان IP الخاص بك لجمع البيانات، والأرباح قليلة"
+        }
+      }
+    },
+    {
+      "id": "pinetwork",
+      "name": "Pi Network",
+      "nameJa": "Pi Network",
+      "category": "crypto-bi",
+      "categoryName": "Crypto UBI",
+      "payout": "loop",
+      "officialUrl": "https://minepi.com/",
+      "referral": {
+        "url": "https://minepi.com/eltociear",
+        "code": "eltociear",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "kyc-id",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "ease": 3,
+      "added": "2026-10-09",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/pinetwork/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/pinetwork/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/pinetwork/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/pinetwork/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/pinetwork/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/pinetwork/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "PI every day",
+          "note": "Tap a button in the app once every 24 hours to earn PI. The more people you refer, the faster you mine. Opened to the public in February 2025 and trades on OKX, Bitget, MEXC and others",
+          "need": "Sign up via the invite link (invite code: eltociear). To move your PI you need identity verification and migration to the mainnet wallet",
+          "caution": "The price is down about 97% from its 2025 high of $2.99 (about $0.08 as of October 2026). Not listed on Binance, Coinbase or Japanese exchanges. Needs a daily tap, so it won’t build up if you leave it alone"
+        },
+        "ja": {
+          "gain": "PIを毎日",
+          "note": "アプリで24時間に1回ボタンを押すとPIがたまる。紹介した人が増えるほど採掘ペースも上がる。2025年2月に一般公開され、OKX・Bitget・MEXCなどで取引されている",
+          "need": "招待リンクから登録（招待コード：eltociear）。PIを動かすには本人確認とメインネットのウォレットへの移行が必要",
+          "caution": "価格は2025年の最高値$2.99から約97%下落（2026年10月時点で約$0.08）。BinanceやCoinbase、日本の取引所では扱いがない。毎日の操作が必要で、ほったらかしでは貯まらない"
+        },
+        "zh": {
+          "gain": "每天获得 PI",
+          "note": "每 24 小时在应用中点一次按钮即可累积 PI。邀请的人越多，挖矿速度越快。2025 年 2 月向公众开放，在 OKX、Bitget、MEXC 等交易所交易",
+          "need": "通过邀请链接注册（邀请码：eltociear）。要转移 PI，需要完成身份验证并迁移到主网钱包",
+          "caution": "价格较 2025 年最高点 $2.99 下跌约 97%（截至 2026 年 10 月约为 $0.08）。Binance、Coinbase 和日本交易所均未上架。需要每天操作，放着不管不会累积"
+        },
+        "hi": {
+          "gain": "हर दिन PI",
+          "note": "ऐप में हर 24 घंटे में एक बार बटन दबाने पर PI जमा होता है। जितने ज़्यादा लोगों को रेफ़र करेंगे, माइनिंग उतनी तेज़ होगी। फ़रवरी 2025 में आम लोगों के लिए खुला और OKX, Bitget, MEXC आदि पर ट्रेड होता है",
+          "need": "इनवाइट लिंक से साइन अप करें (इनवाइट कोड: eltociear)। PI को ट्रांसफ़र करने के लिए पहचान सत्यापन और मेननेट वॉलेट में माइग्रेशन ज़रूरी है",
+          "caution": "कीमत 2025 के उच्चतम स्तर $2.99 से लगभग 97% गिर चुकी है (अक्टूबर 2026 तक लगभग $0.08)। Binance, Coinbase या जापानी एक्सचेंजों पर उपलब्ध नहीं। रोज़ बटन दबाना पड़ता है, यूँ ही छोड़ देने पर कुछ जमा नहीं होता"
+        },
+        "es": {
+          "gain": "PI cada día",
+          "note": "Pulsa un botón en la app una vez cada 24 horas para acumular PI. Cuantas más personas invites, más rápido minas. Se abrió al público en febrero de 2025 y cotiza en OKX, Bitget, MEXC y otros",
+          "need": "Regístrate con el enlace de invitación (código de invitación: eltociear). Para mover tus PI necesitas verificar tu identidad y migrar a la billetera de la mainnet",
+          "caution": "El precio ha caído cerca de un 97% desde su máximo de $2.99 en 2025 (unos $0.08 en octubre de 2026). No está en Binance, Coinbase ni en exchanges japoneses. Hay que pulsar a diario; si lo dejas, no se acumula"
+        },
+        "de": {
+          "gain": "Jeden Tag PI",
+          "note": "Tippe einmal alle 24 Stunden in der App auf einen Button, um PI zu verdienen. Je mehr Leute du wirbst, desto schneller minst du. Seit Februar 2025 öffentlich und an OKX, Bitget, MEXC und anderen Börsen handelbar",
+          "need": "Über den Einladungslink anmelden (Einladungscode: eltociear). Um deine PI zu bewegen, brauchst du eine Identitätsprüfung und die Migration in die Mainnet-Wallet",
+          "caution": "Der Kurs liegt rund 97 % unter dem Hoch von 2,99 $ aus dem Jahr 2025 (etwa 0,08 $ im Oktober 2026). Nicht bei Binance, Coinbase oder japanischen Börsen gelistet. Braucht ein tägliches Tippen, ohne das sich nichts ansammelt"
+        },
+        "ar": {
+          "gain": "عملة PI كل يوم",
+          "note": "اضغط زرًا في التطبيق مرة كل 24 ساعة لتجميع PI. كلما دعوت أشخاصًا أكثر زادت سرعة التعدين. فُتح للعامة في فبراير 2025 ويُتداول في OKX وBitget وMEXC وغيرها",
+          "need": "سجّل عبر رابط الدعوة (رمز الدعوة: eltociear). لنقل عملات PI يلزم التحقق من الهوية والانتقال إلى محفظة الشبكة الرئيسية",
+          "caution": "انخفض السعر بنحو 97% عن أعلى مستوى له في 2025 وهو $2.99 (نحو $0.08 في أكتوبر 2026). غير مدرج في Binance أو Coinbase أو منصات التداول اليابانية. يتطلب ضغطة يومية، فلا يتراكم إن تركته"
+        }
+      }
+    },
+    {
+      "id": "rewardme",
+      "name": "RewardMe",
+      "nameJa": "RewardMe",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://reward.me/",
+      "referral": {
+        "url": "https://app.reward.me/s6hS/z8a4ajc1",
+        "code": "7HOdyg",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        },
+        {
+          "method": "world-id",
+          "optional": true
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "partial"
+      },
+      "ease": 4,
+      "added": "2026-10-26",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/rewardme/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/rewardme/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/rewardme/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/rewardme/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/rewardme/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/rewardme/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/rewardme/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/rewardme/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Up to 5% cashback found in your email receipts (Reward Dollars / MDT crypto)",
+          "note": "Link your email account and it automatically finds purchases at 100+ merchants such as Amazon, Uber and DoorDash from the receipts in your inbox, crediting up to 5% in Reward Dollars. Redeem them for gift cards or convert to the MDT token (listed on Coinbase and others) and withdraw. Signing up with a referral code gives a sign-up reward, and once your friend earns a first shopping reward, both of you can claim referral rewards. The App Store publisher is Magic Crystal Limited (address in Hong Kong; updated as recently as Aug 2026)",
+          "need": "Sign up through the referral link and enter the referral code 7HOdyg when you register. Link an email account and shop at eligible merchants (confirmed usable from Japan in Oct 2026, first-hand)",
+          "caution": "By design it reads your linked inbox: commercial emails such as receipts, order confirmations and bills, plus data like subjects and senders. Its privacy policy says de-identified data is sold to or shared with partners such as Measurable AI, which provides “alternative data” to businesses. Gift-card redemptions take 7–14 business days to approve (instant with an Orb-verified World ID). Balances may be deleted after 6 months of inactivity. Not available in the US, mainland China and some other places, and it left the Philippines at the end of 2025. The sign-up and referral reward amounts are not stated officially. MDT was about $0.0067 in Oct 2026"
+        },
+        "ja": {
+          "gain": "受信メールのレシートから最大5%のキャッシュバック（Reward Dollars／暗号資産MDT）",
+          "note": "メールアカウントを連携しておくと、Amazon・Uber・DoorDash など100以上の対象店での買い物を受信メールのレシートから自動で見つけ、最大5%の報酬（Reward Dollars）がたまる。報酬はギフト券に交換するか、暗号資産 MDT（Coinbase などに上場）にして出金できる。紹介コードで登録すると登録特典があり、友だちが最初の報酬を得ると、紹介した側・された側の両方が紹介特典を受け取れる。App Store の提供元は Magic Crystal Limited（所在地は香港。2026年8月にも更新）",
+          "need": "紹介リンクから登録し、登録時に紹介コード 7HOdyg を入力する。メールアカウントを連携して、対象のお店で買い物する（日本からの利用は2026年10月に実際に確認）",
+          "caution": "しくみ上、連携したメールの中身（レシート・注文確認・請求などの商用メールと、件名・送信者などのデータ）が読み取られる。プライバシーポリシーでは、個人を特定できない形に加工したデータを、企業向けに「オルタナティブデータ」を提供する Measurable AI などに販売・共有すると書かれている。ギフト券への交換は承認まで7〜14営業日かかる（Orb認証済みの World ID を連携すると即時）。6か月使わないと残高が消えることがある。米国・中国本土などでは使えず、フィリピンからは2025年末に撤退した。登録特典と紹介特典の額は公式に書かれていない。MDT は2026年10月時点で約0.0067ドル"
+        },
+        "zh": {
+          "gain": "从收件箱的购物收据中自动获得最高 5% 返现（Reward Dollars／加密货币 MDT）",
+          "note": "关联邮箱后，它会从收件箱的收据中自动找出你在 Amazon、Uber、DoorDash 等 100 多家商户的消费，返还最高 5% 的奖励（Reward Dollars）。奖励可兑换礼品卡，或转换为加密货币 MDT（已在 Coinbase 等上市）后提现。用推荐码注册可获得注册奖励；好友获得首笔购物奖励后，邀请人和被邀请人都能领取推荐奖励。App Store 提供者为 Magic Crystal Limited（地址在香港，2026 年 8 月仍有更新）",
+          "need": "通过推荐链接注册，并在注册时输入推荐码 7HOdyg。关联邮箱，在合作商户购物（已于 2026 年 10 月亲自确认可在日本使用）",
+          "caution": "按其机制，它会读取你关联邮箱的内容：收据、订单确认、账单等商业邮件，以及主题、发件人等数据。隐私政策称，会把去标识化的数据出售或分享给为企业提供“另类数据”的 Measurable AI 等合作方。兑换礼品卡需 7–14 个工作日审批（关联经 Orb 验证的 World ID 则即时）。连续 6 个月不用，余额可能被清除。美国、中国大陆等地无法使用，并已于 2025 年底退出菲律宾。注册奖励和推荐奖励的金额官方没有写明。MDT 在 2026 年 10 月约为 0.0067 美元"
+        },
+        "hi": {
+          "gain": "ईमेल रसीदों से मिला ज़्यादा से ज़्यादा 5% कैशबैक (Reward Dollars / MDT क्रिप्टो)",
+          "note": "अपना ईमेल अकाउंट जोड़ें, और यह इनबॉक्स की रसीदों से Amazon, Uber, DoorDash जैसे 100+ व्यापारियों पर आपकी ख़रीदारी अपने आप ढूँढकर 5% तक Reward Dollars देता है। इन्हें गिफ़्ट कार्ड में बदलें या MDT टोकन (Coinbase आदि पर लिस्टेड) में बदलकर निकालें। रेफ़रल कोड से साइन अप करने पर साइन-अप इनाम मिलता है, और आपके दोस्त को पहला शॉपिंग इनाम मिलने पर आप दोनों रेफ़रल इनाम ले सकते हैं। App Store पर प्रकाशक Magic Crystal Limited है (पता हांगकांग में; अगस्त 2026 में भी अपडेट)",
+          "need": "रेफ़रल लिंक से साइन अप करें और रजिस्ट्रेशन के समय रेफ़रल कोड 7HOdyg डालें। ईमेल अकाउंट जोड़ें और योग्य दुकानों पर ख़रीदारी करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+          "caution": "अपनी बनावट के कारण यह आपका जोड़ा गया इनबॉक्स पढ़ता है: रसीद, ऑर्डर कन्फ़र्मेशन, बिल जैसे व्यावसायिक ईमेल, और विषय व भेजने वाले जैसा डेटा। इसकी प्राइवेसी पॉलिसी कहती है कि पहचान हटाया गया डेटा Measurable AI जैसे साझेदारों को बेचा या दिया जाता है, जो कंपनियों को “ऑल्टरनेटिव डेटा” देते हैं। गिफ़्ट कार्ड रिडेम्प्शन की मंज़ूरी में 7–14 कार्यदिवस लगते हैं (Orb से वेरिफ़ाई की गई World ID जोड़ने पर तुरंत)। 6 महीने इस्तेमाल न करने पर बैलेंस मिटाया जा सकता है। यह अमेरिका, मुख्य भूमि चीन और कुछ और जगहों पर उपलब्ध नहीं है, और 2025 के अंत में फ़िलीपींस से हट गया। साइन-अप और रेफ़रल इनाम की रकम आधिकारिक रूप से नहीं बताई गई। अक्टूबर 2026 में MDT लगभग $0.0067 था"
+        },
+        "es": {
+          "gain": "Hasta un 5 % de reembolso a partir de los recibos de tu correo (Reward Dollars / cripto MDT)",
+          "note": "Vincula tu cuenta de correo y la app detecta sola, en los recibos de tu bandeja de entrada, tus compras en más de 100 comercios como Amazon, Uber o DoorDash, y te abona hasta un 5 % en Reward Dollars. Puedes canjearlos por tarjetas regalo o pasarlos al token MDT (cotiza en Coinbase y otros) y retirarlos. Registrarte con un código de referido da un premio de registro, y cuando tu amigo obtiene su primera recompensa de compra, ambos podéis reclamar el premio por referido. En la App Store la publica Magic Crystal Limited (dirección en Hong Kong; actualizada en agosto de 2026)",
+          "need": "Regístrate con el enlace de referido e introduce el código 7HOdyg al registrarte. Vincula una cuenta de correo y compra en comercios adheridos (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+          "caution": "Por cómo funciona, lee tu bandeja de entrada vinculada: correos comerciales como recibos, confirmaciones de pedido y facturas, además de datos como asuntos y remitentes. Su política de privacidad dice que vende o comparte datos desidentificados con socios como Measurable AI, que ofrece «datos alternativos» a empresas. Los canjes por tarjetas regalo tardan 7–14 días hábiles en aprobarse (al instante con un World ID verificado con Orb). El saldo puede borrarse tras 6 meses sin uso. No está disponible en EE. UU., China continental y otros lugares, y salió de Filipinas a finales de 2025. Los importes del premio de registro y por referido no se indican oficialmente. MDT valía unos 0,0067 $ en octubre de 2026"
+        },
+        "de": {
+          "gain": "Bis zu 5 % Cashback aus Kaufbelegen in deinem Postfach (Reward Dollars / Krypto MDT)",
+          "note": "Verknüpfe dein E-Mail-Konto, und die App findet in den Belegen in deinem Posteingang automatisch Einkäufe bei über 100 Händlern wie Amazon, Uber oder DoorDash und schreibt dir bis zu 5 % in Reward Dollars gut. Die kannst du gegen Geschenkkarten eintauschen oder in den Token MDT (u. a. bei Coinbase gelistet) umwandeln und auszahlen. Wer sich mit Empfehlungscode anmeldet, bekommt einen Anmeldebonus, und sobald dein Freund seine erste Einkaufsbelohnung erhält, könnt ihr beide die Empfehlungsprämie abholen. Herausgeber im App Store ist Magic Crystal Limited (Adresse in Hongkong; zuletzt im August 2026 aktualisiert)",
+          "need": "Über den Empfehlungslink anmelden und bei der Registrierung den Empfehlungscode 7HOdyg eingeben. E-Mail-Konto verknüpfen und bei teilnehmenden Händlern einkaufen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+          "caution": "Systembedingt liest die App dein verknüpftes Postfach: geschäftliche Mails wie Belege, Bestellbestätigungen und Rechnungen sowie Daten wie Betreff und Absender. Laut Datenschutzerklärung werden de-identifizierte Daten an Partner wie Measurable AI verkauft oder weitergegeben, die Unternehmen „alternative Daten“ liefern. Das Einlösen von Geschenkkarten braucht 7–14 Werktage bis zur Freigabe (sofort mit einer per Orb verifizierten World ID). Nach 6 Monaten ohne Nutzung kann das Guthaben gelöscht werden. Nicht verfügbar in den USA, Festland-China und einigen weiteren Ländern; aus den Philippinen hat sich RewardMe Ende 2025 zurückgezogen. Die Höhe von Anmelde- und Empfehlungsbonus wird offiziell nicht genannt. MDT lag im Oktober 2026 bei etwa 0,0067 $"
+        },
+        "ar": {
+          "gain": "استرداد نقدي حتى 5% من إيصالات الشراء في بريدك (Reward Dollars / عملة MDT المشفرة)",
+          "note": "اربط حساب بريدك الإلكتروني، فيعثر التطبيق تلقائيًا في إيصالات صندوق الوارد على مشترياتك من أكثر من 100 متجر مثل Amazon وUber وDoorDash، ويمنحك حتى 5% بـReward Dollars. يمكنك استبدالها ببطاقات هدايا أو تحويلها إلى رمز MDT (مدرج في Coinbase وغيرها) وسحبها. التسجيل برمز إحالة يمنح مكافأة تسجيل، وعندما يحصل صديقك على أول مكافأة شراء يمكنكما معًا المطالبة بمكافأة الإحالة. الناشر في App Store هو Magic Crystal Limited (العنوان في هونغ كونغ، وقد حُدّث حتى أغسطس 2026)",
+          "need": "سجّل عبر رابط الإحالة وأدخل رمز الإحالة 7HOdyg عند التسجيل. اربط حساب بريد إلكتروني وتسوّق من المتاجر المشمولة (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+          "caution": "بحكم طريقة عمله يقرأ صندوق بريدك المرتبط: الرسائل التجارية مثل الإيصالات وتأكيدات الطلب والفواتير، وبيانات مثل العناوين والمرسلين. تقول سياسة الخصوصية إن البيانات بعد إزالة ما يحدد الهوية تُباع أو تُشارك مع شركاء مثل Measurable AI التي تقدم «بيانات بديلة» للشركات. تستغرق الموافقة على استبدال بطاقات الهدايا 7–14 يوم عمل (فورًا مع World ID موثَّق بـOrb). قد يُحذف الرصيد بعد 6 أشهر من عدم الاستخدام. غير متاح في الولايات المتحدة والبر الرئيسي للصين وأماكن أخرى، وانسحب من الفلبين في نهاية 2025. مبالغ مكافأة التسجيل والإحالة غير مذكورة رسميًا. كان سعر MDT نحو $0.0067 في أكتوبر 2026"
+        }
+      }
+    },
+    {
+      "id": "sweatcoin",
+      "name": "Sweatcoin",
+      "nameJa": "Sweatcoin",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://sweatco.in/",
+      "referral": {
+        "url": "https://swcapp.com/i/mover77273393923",
+        "code": "mover77273393923",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 5,
+      "added": "2026-10-09",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/sweatcoin/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/sweatcoin/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/sweatcoin/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/sweatcoin/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/sweatcoin/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/sweatcoin/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/sweatcoin/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/sweatcoin/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "0.95 coins per 1,000 steps",
+          "note": "Carry your phone and your steps turn into coins automatically. Spend them in the in-app marketplace on products, discounts or donations",
+          "need": "Install the app and allow access to steps and location",
+          "caution": "There is no fixed cash conversion rate. The free plan caps how many steps convert each day"
+        },
+        "ja": {
+          "gain": "1,000歩で0.95コイン",
+          "note": "スマホを持って歩くだけで、歩数が自動でコインになる。コインはアプリ内のマーケットで商品や割引、寄付と交換できる",
+          "need": "アプリを入れて、歩数と位置情報へのアクセスを許可する",
+          "caution": "現金への換金レートは決まっていない。無料プランは1日に換算できる歩数に上限がある"
+        },
+        "zh": {
+          "gain": "每 1,000 步 0.95 枚币",
+          "note": "带着手机走路，步数就会自动变成币。可在应用内商城兑换商品、折扣或用于捐赠",
+          "need": "安装应用，并允许访问步数和位置信息",
+          "caution": "没有固定的现金兑换比例。免费版每天可兑换的步数有上限"
+        },
+        "hi": {
+          "gain": "हर 1,000 कदम पर 0.95 कॉइन",
+          "note": "फ़ोन साथ लेकर चलें, आपके कदम अपने-आप कॉइन में बदल जाते हैं। इन्हें ऐप के मार्केटप्लेस में सामान, छूट या दान के लिए इस्तेमाल करें",
+          "need": "ऐप इंस्टॉल करें और कदम व लोकेशन की अनुमति दें",
+          "caution": "नकद में बदलने की कोई तय दर नहीं है। फ़्री प्लान में रोज़ बदले जा सकने वाले कदमों की सीमा है"
+        },
+        "es": {
+          "gain": "0,95 monedas por cada 1.000 pasos",
+          "note": "Lleva el móvil encima y tus pasos se convierten en monedas automáticamente. Úsalas en la tienda de la app en productos, descuentos o donaciones",
+          "need": "Instala la app y permite el acceso a pasos y ubicación",
+          "caution": "No hay un tipo de cambio fijo a dinero. El plan gratuito limita cuántos pasos se convierten al día"
+        },
+        "de": {
+          "gain": "0,95 Coins pro 1.000 Schritte",
+          "note": "Trag dein Handy bei dir, und deine Schritte werden automatisch zu Coins. Gib sie im Marktplatz der App für Produkte, Rabatte oder Spenden aus",
+          "need": "App installieren und Zugriff auf Schritte und Standort erlauben",
+          "caution": "Es gibt keinen festen Umrechnungskurs in Geld. Im kostenlosen Tarif ist begrenzt, wie viele Schritte pro Tag umgewandelt werden"
+        },
+        "ar": {
+          "gain": "0.95 عملة لكل 1,000 خطوة",
+          "note": "احمل هاتفك وامشِ، فتتحوّل خطواتك إلى عملات تلقائيًا. استخدمها في متجر التطبيق للحصول على منتجات أو خصومات أو للتبرّع",
+          "need": "ثبّت التطبيق واسمح بالوصول إلى الخطوات والموقع",
+          "caution": "لا يوجد سعر ثابت لتحويلها إلى نقد. الخطة المجانية تحدّ عدد الخطوات التي تُحوَّل يوميًا"
+        }
+      }
+    },
+    {
+      "id": "trima",
+      "name": "Trima",
+      "nameJa": "トリマ",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://www.trip-mile.com/",
+      "referral": {
+        "url": "https://www.trip-mile.com/",
+        "code": "49-icnRep",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "japan-only",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 5,
+      "added": "2026-10-09",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/trima/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/trima/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/trima/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/trima/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/trima/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/trima/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/trima/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/trima/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "5,000 miles + miles for moving and walking",
+          "note": "An app that earns miles just by carrying your phone as you travel and walk. Enter an invite code and both you and the person who invited you get 5,000 miles (as of July 2026). Miles can be exchanged for gift cards, cash and more",
+          "need": "Install the app and enter the invite code 49‑icnRep when you register",
+          "caution": "The bonus amount and timing may change. It needs “always on” location access and uses a bit more battery"
+        },
+        "ja": {
+          "gain": "5,000マイル ＋ 移動や歩数でマイル",
+          "note": "スマホを持って移動したり歩いたりするだけでマイルがたまるアプリ。招待コードを入れると、紹介した側・された側の両方に5,000マイル（2026年7月時点の情報）。マイルはギフト券や現金などに交換できる",
+          "need": "アプリを入れて、登録時に招待コード 49‑icnRep を入力する",
+          "caution": "特典の額やタイミングは変わることがある。位置情報の常時許可が必要で、電池を少し多く使う"
+        },
+        "zh": {
+          "gain": "5,000 里程 ＋ 移动和步数也能赚里程",
+          "note": "只要带着手机移动或走路就能累积里程的应用。填写邀请码后，邀请人和被邀请人双方各得 5,000 里程（2026 年 7 月的信息）。里程可兑换礼品卡、现金等",
+          "need": "安装应用，注册时填写邀请码 49‑icnRep",
+          "caution": "奖励金额和发放时间可能会变。需要始终允许位置信息，耗电会稍多一些"
+        },
+        "hi": {
+          "gain": "5,000 माइल + चलने-फिरने और कदमों पर माइल",
+          "note": "एक ऐप जिसमें बस फ़ोन साथ लेकर सफ़र करने या पैदल चलने से माइल जमा होते हैं। इनवाइट कोड डालने पर बुलाने वाले और नए यूज़र, दोनों को 5,000 माइल मिलते हैं (जुलाई 2026 की जानकारी)। माइल को गिफ़्ट कार्ड, नकद आदि में बदल सकते हैं",
+          "need": "ऐप इंस्टॉल करें और रजिस्ट्रेशन के समय इनवाइट कोड 49‑icnRep डालें",
+          "caution": "बोनस की राशि और समय बदल सकते हैं। लोकेशन की अनुमति हमेशा चालू रखनी होती है और बैटरी थोड़ी ज़्यादा खर्च होती है"
+        },
+        "es": {
+          "gain": "5.000 millas + millas por moverte y caminar",
+          "note": "Una app que suma millas solo con llevar el móvil mientras te desplazas o caminas. Si introduces un código de invitación, tú y quien te invitó recibís 5.000 millas cada uno (información de julio de 2026). Las millas se canjean por tarjetas regalo, dinero y más",
+          "need": "Instala la app e introduce el código de invitación 49‑icnRep al registrarte",
+          "caution": "El importe y el momento del bono pueden cambiar. Requiere permitir la ubicación siempre y gasta algo más de batería"
+        },
+        "de": {
+          "gain": "5.000 Meilen + Meilen fürs Unterwegssein und Gehen",
+          "note": "Eine App, die Meilen gibt, nur weil du dein Handy beim Unterwegssein und Gehen dabeihast. Mit einem Einladungscode bekommen du und die einladende Person je 5.000 Meilen (Stand Juli 2026). Meilen lassen sich gegen Geschenkkarten, Bargeld und mehr tauschen",
+          "need": "App installieren und bei der Registrierung den Einladungscode 49‑icnRep eingeben",
+          "caution": "Bonushöhe und Zeitpunkt können sich ändern. Die App braucht dauerhaften Standortzugriff und verbraucht etwas mehr Akku"
+        },
+        "ar": {
+          "gain": "5,000 ميل + أميال مقابل التنقل والمشي",
+          "note": "تطبيق تجمع فيه الأميال بمجرد حمل هاتفك أثناء التنقل أو المشي. عند إدخال رمز الدعوة يحصل كلٌّ من الداعي والمستخدم الجديد على 5,000 ميل (معلومات يوليو 2026). يمكن استبدال الأميال ببطاقات هدايا أو نقود وغيرها",
+          "need": "ثبّت التطبيق وأدخل رمز الدعوة 49‑icnRep عند التسجيل",
+          "caution": "قد يتغير مبلغ المكافأة وموعدها. يتطلب السماح بالموقع دائمًا ويستهلك البطارية أكثر قليلًا"
+        }
+      }
+    },
+    {
+      "id": "ubiquitus",
+      "name": "Ubiquitus",
+      "nameJa": "Ubiquitus",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://www.ubiquitus.org/",
+      "referral": null,
+      "region": "only-us",
+      "availableFromJapan": false,
+      "verify": [],
+      "trust": {
+        "cash": "yes",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 4,
+      "added": "2026-10-24",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/ubiquitus/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/ubiquitus/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/ubiquitus/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/ubiquitus/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/ubiquitus/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/ubiquitus/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "A small equal cash share on the 1st of each month (Venmo)",
+          "note": "A US “basic income anyone can join” experiment. Voluntary gifts form a pool invested mainly in stocks (with a small crypto sleeve), and each month 0.5% of it is split equally among all members and paid via Venmo. Giving does not increase your share. Started in 2023 by founder and developer Ryan Frigo. The October 2026 payout was $0.10 each to 266 people. There is no referral link or referral bonus",
+          "need": "US residents aged 18+. Verify with a 1¢ Venmo transaction (no ID upload, no means test)",
+          "caution": "As of Oct 2026 it cannot be used from Japan (the terms limit it to US residents; not working from Japan was confirmed first-hand). The per-person amount is tiny, falls with the pool, and payouts are stated to be not guaranteed and able to stop at any time. It describes itself as an informal social experiment, not a company. Recipients must report payments as income"
+        },
+        "ja": {
+          "gain": "毎月1日に、参加者で等分した少額の現金（Venmo）",
+          "note": "アメリカの「誰でも参加できるベーシックインカム」の社会実験。任意の寄付を基金にして株式など（一部は暗号資産）で運用し、毎月その0.5%を参加者全員で等分してVenmoで配る。寄付しても受け取る額は増えない。2023年に始まり、創設者・開発者は Ryan Frigo 氏。2026年10月の配分は266人に1人0.10ドル。紹介リンクや紹介特典はない",
+          "need": "18歳以上のアメリカ居住者。Venmoのアカウントで1セントの送金をして本人確認する（身分証の提出や所得の審査はない）",
+          "caution": "2026年10月時点で日本からは利用できない（利用規約ではアメリカ居住者のみ対象。日本から使えないことは実際に試して確認）。1人あたりの額はごくわずかで、基金の運用成績しだいで減り、配分は保証されず、いつ止まってもおかしくないと明記されている。運営は法人ではない「非公式の社会実験」とされている。受け取ったお金は自分で所得として申告する必要がある"
+        },
+        "zh": {
+          "gain": "每月 1 日按人数平分的少量现金（Venmo）",
+          "note": "美国的“人人都能参加的基本收入”社会实验。以自愿捐款组成基金，主要投资股票（少量加密资产），每月将其中 0.5% 平分给全体成员并通过 Venmo 发放。捐款不会让你分得更多。2023 年由创始人兼开发者 Ryan Frigo 发起。2026 年 10 月共 266 人，每人 0.10 美元。没有推荐链接，也没有推荐奖励",
+          "need": "年满 18 岁的美国居民。用 Venmo 账户转账 1 美分完成验证（无需上传证件，也不审查收入）",
+          "caution": "截至 2026 年 10 月无法在日本使用（使用条款只面向美国居民；已亲自确认在日本无法使用）。每人金额极少，会随基金表现减少，官方明确发放不受保证、随时可能停止。运营方自称“非正式的社会实验”，并非公司。收到的钱需自行申报为收入"
+        },
+        "hi": {
+          "gain": "हर महीने की 1 तारीख़ को बराबर बँटी थोड़ी नकद रकम (Venmo)",
+          "note": "अमेरिका का “कोई भी जुड़ सके ऐसी बेसिक इनकम” सामाजिक प्रयोग। स्वैच्छिक दान से बना फ़ंड मुख्य रूप से शेयरों (थोड़ा क्रिप्टो) में लगाया जाता है, और हर महीने उसका 0.5% सभी सदस्यों में बराबर बाँटकर Venmo से भेजा जाता है। दान देने से हिस्सा नहीं बढ़ता। 2023 में संस्थापक और डेवलपर Ryan Frigo ने शुरू किया। अक्टूबर 2026 में 266 लोगों को $0.10 प्रति व्यक्ति मिले। कोई रेफ़रल लिंक या रेफ़रल बोनस नहीं है",
+          "need": "18 साल या ज़्यादा उम्र के अमेरिकी निवासी। Venmo से 1 सेंट का लेन-देन करके सत्यापन करें (ID अपलोड या आय जाँच नहीं)",
+          "caution": "अक्टूबर 2026 तक इसे जापान से इस्तेमाल नहीं किया जा सकता (शर्तों के अनुसार सिर्फ़ अमेरिकी निवासी; जापान से न चलने की पुष्टि खुद आज़माकर की गई)। प्रति व्यक्ति रकम बहुत कम है, फ़ंड के प्रदर्शन के साथ घटती है, और साफ़ लिखा है कि भुगतान की गारंटी नहीं है और कभी भी रुक सकता है। यह खुद को कंपनी नहीं, बल्कि “अनौपचारिक सामाजिक प्रयोग” बताता है। मिली रकम को आय के रूप में खुद घोषित करना होता है"
+        },
+        "es": {
+          "gain": "Una pequeña parte igual en efectivo el día 1 de cada mes (Venmo)",
+          "note": "Un experimento estadounidense de «renta básica a la que cualquiera puede unirse». Las donaciones voluntarias forman un fondo invertido sobre todo en acciones (con una pequeña parte en cripto), y cada mes el 0,5 % se reparte a partes iguales entre todos los miembros vía Venmo. Donar no aumenta tu parte. Lo inició en 2023 su fundador y desarrollador, Ryan Frigo. En octubre de 2026 se pagaron 0,10 $ a cada una de 266 personas. No hay enlace ni bono de referido",
+          "need": "Residentes en EE. UU. mayores de 18 años. Verificación con una transacción de 1 centavo en Venmo (sin subir documentos ni prueba de ingresos)",
+          "caution": "A octubre de 2026 no se puede usar desde Japón (los términos lo limitan a residentes en EE. UU.; se comprobó en persona que no funciona desde Japón). La cantidad por persona es mínima, baja si cae el fondo, y se indica que los pagos no están garantizados y pueden detenerse en cualquier momento. Se describe como un experimento social informal, no como una empresa. Quien cobra debe declarar los pagos como ingresos"
+        },
+        "de": {
+          "gain": "Am 1. jedes Monats ein kleiner, gleicher Geldanteil (Venmo)",
+          "note": "Ein US-Experiment für ein „Grundeinkommen, bei dem alle mitmachen können“. Freiwillige Spenden bilden einen Topf, der vor allem in Aktien (mit einem kleinen Krypto-Anteil) angelegt wird, und jeden Monat werden 0,5 % davon gleichmäßig auf alle Mitglieder aufgeteilt und per Venmo ausgezahlt. Spenden erhöht deinen Anteil nicht. 2023 gestartet von Gründer und Entwickler Ryan Frigo. Die Auszahlung im Oktober 2026 betrug 0,10 $ für jede der 266 Personen. Es gibt keinen Empfehlungslink und keinen Empfehlungsbonus",
+          "need": "Wohnsitz in den USA und mindestens 18 Jahre. Verifizierung mit einer 1-Cent-Transaktion über Venmo (kein Ausweis-Upload, keine Bedürftigkeitsprüfung)",
+          "caution": "Stand Oktober 2026 nicht aus Japan nutzbar (die Bedingungen beschränken es auf Menschen mit Wohnsitz in den USA; dass es aus Japan nicht funktioniert, wurde selbst getestet). Der Betrag pro Person ist winzig, sinkt mit dem Topf, und laut eigener Angabe sind die Auszahlungen nicht garantiert und können jederzeit enden. Es bezeichnet sich als informelles soziales Experiment, nicht als Unternehmen. Empfänger müssen die Zahlungen als Einkommen angeben"
+        },
+        "ar": {
+          "gain": "حصة نقدية صغيرة متساوية في اليوم الأول من كل شهر (Venmo)",
+          "note": "تجربة أمريكية لـ«دخل أساسي يمكن لأي شخص الانضمام إليه». تُجمع التبرعات الطوعية في صندوق يُستثمر أساسًا في الأسهم (مع جزء صغير من العملات المشفرة)، ويُقسَّم 0.5% منه شهريًا بالتساوي على جميع الأعضاء عبر Venmo. التبرع لا يزيد حصتك. أطلقها مؤسسها ومطوّرها Ryan Frigo عام 2023. في أكتوبر 2026 حصل 266 شخصًا على $0.10 لكل منهم. لا يوجد رابط إحالة ولا مكافأة إحالة",
+          "need": "للمقيمين في الولايات المتحدة بعمر 18 عامًا فأكثر. التحقق بمعاملة قدرها سنت واحد عبر Venmo (دون رفع هوية أو فحص للدخل)",
+          "caution": "حتى أكتوبر 2026 لا يمكن استخدامه من اليابان (الشروط تقصره على المقيمين في الولايات المتحدة، وتأكدنا بالتجربة أنه لا يعمل من اليابان). الحصة للفرد ضئيلة جدًا وتنخفض مع أداء الصندوق، ويُذكر صراحةً أن الدفعات غير مضمونة وقد تتوقف في أي وقت. يصف نفسه بأنه تجربة اجتماعية غير رسمية وليس شركة. على المستلم الإبلاغ عن المبالغ بوصفها دخلًا"
+        }
+      }
+    },
+    {
+      "id": "wavee",
+      "name": "WAVEE",
+      "nameJa": "WAVEE",
+      "category": "career",
+      "categoryName": "Job matching",
+      "payout": "loop",
+      "officialUrl": "https://wavee.world/",
+      "referral": {
+        "url": "https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd",
+        "code": null,
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "na",
+        "operator": "yes"
+      },
+      "ease": 1,
+      "added": null,
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/wavee/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/wavee/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/wavee/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/wavee/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/wavee/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/wavee/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/wavee/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/wavee/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "A matching reward each time you land a job",
+          "note": "Invite-only job matching. Every time someone you invited (or someone they invited) lands a job, you earn a referral share again and again (7.5–15%). DMM, GMO Pepabo and others post jobs",
+          "need": "Sign up via the invite link",
+          "caution": "You earn when a job is matched. Rates are from the official note of June 2024"
+        },
+        "ja": {
+          "gain": "仕事が決まるたびにマッチング報酬",
+          "note": "完全招待制の仕事マッチング。自分が招待した人や、その先の人が仕事に決まるたび、招待報酬が何度でも入る（分配率7.5〜15%）。DMMやGMOペパボなどが求人を掲載",
+          "need": "招待リンクから登録",
+          "caution": "お金が入るのは仕事が決まったとき。報酬率は2024年6月の公式noteの内容"
+        },
+        "zh": {
+          "gain": "每次找到工作都有匹配奖励",
+          "note": "完全邀请制的工作匹配平台。你邀请的人（或其邀请的人）每次找到工作，你都能反复获得推荐分成（7.5–15%）。DMM、GMO Pepabo 等公司在此发布职位",
+          "need": "通过邀请链接注册",
+          "caution": "只有在工作匹配成功时才有收入。分成比例来自 2024 年 6 月的官方 note"
+        },
+        "hi": {
+          "gain": "हर बार नौकरी मिलने पर मैचिंग इनाम",
+          "note": "इनवाइट-ओनली जॉब मैचिंग। आपके बुलाए व्यक्ति (या उनके बुलाए व्यक्ति) को जब भी नौकरी मिले, आपको बार-बार रेफ़रल हिस्सा मिलता है (7.5–15%)। DMM, GMO Pepabo जैसी कंपनियाँ नौकरियाँ डालती हैं",
+          "need": "इनवाइट लिंक से साइन अप करें",
+          "caution": "कमाई नौकरी मैच होने पर ही होती है। दरें जून 2024 के आधिकारिक नोट से हैं"
+        },
+        "es": {
+          "gain": "Una recompensa cada vez que consigues trabajo",
+          "note": "Plataforma de empleo solo por invitación. Cada vez que alguien a quien invitaste (o a quien esa persona invitó) consigue trabajo, recibes una parte del referido una y otra vez (7,5–15 %). Publican ofertas DMM, GMO Pepabo y otras",
+          "need": "Regístrate con el enlace de invitación",
+          "caution": "Solo ganas cuando se concreta un empleo. Los porcentajes son de la nota oficial de junio de 2024"
+        },
+        "de": {
+          "gain": "Eine Vermittlungsprämie bei jeder Jobvermittlung",
+          "note": "Jobvermittlung nur auf Einladung. Jedes Mal, wenn jemand, den du eingeladen hast (oder den diese Person eingeladen hat), einen Job bekommt, erhältst du immer wieder einen Empfehlungsanteil (7,5–15 %). DMM, GMO Pepabo und andere schreiben Jobs aus",
+          "need": "Über den Einladungslink anmelden",
+          "caution": "Du verdienst, wenn ein Job vermittelt wird. Die Sätze stammen aus der offiziellen Mitteilung vom Juni 2024"
+        },
+        "ar": {
+          "gain": "مكافأة في كل مرة تحصل فيها على وظيفة",
+          "note": "منصة توظيف بالدعوة فقط. في كل مرة يحصل فيها شخص دعوته (أو شخص دعاه) على وظيفة، تحصل على حصة إحالة مرارًا وتكرارًا (7.5–15%). تنشر فيها شركات مثل DMM وGMO Pepabo وظائفها",
+          "need": "سجّل عبر رابط الدعوة",
+          "caution": "تكسب فقط عند إتمام التوظيف. النسب مأخوذة من المنشور الرسمي في يونيو 2024"
+        }
+      }
+    },
+    {
+      "id": "wowapp",
+      "name": "WowApp",
+      "nameJa": "WowApp",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://www.wowapp.com/",
+      "referral": {
+        "url": "https://www.wowapp.com/w/eltociear/Ikko-Ashimine",
+        "code": null,
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "na",
+        "operator": "partial"
+      },
+      "ease": 4,
+      "added": "2026-10-24",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/wowapp/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/wowapp/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/wowapp/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/wowapp/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/wowapp/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/wowapp/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/wowapp/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/wowapp/"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Small rewards for daily use, games, shopping and more",
+          "note": "A chat and calling app combined with a rewards scheme. You collect rewards from a daily “UBI” (digital income), games, online shopping cashback, cheap calls and daily offers, then cash out or donate to around 2,000 charities in 100+ countries. Your rewards also grow when your network, such as friends you invited, is active. The App Store publisher is YouWowMe Limited, and the app was updated as recently as Aug 2026",
+          "need": "Sign up free through the referral link and use the app every day (confirmed usable from Japan in Oct 2026, first-hand)",
+          "caution": "Rewards come not only from people you invite but also from the people they bring in: a multi-level network. Third-party sources say 8 levels; this is not officially confirmed. Daily amounts are tiny, so do not expect meaningful income. Cash-outs to PayPal reportedly have a minimum, fees and a daily-streak requirement, but the official help pages could not be checked directly. App Store rating in Japan is 3.2 (167 ratings, Oct 2026), with some users reporting failed cash-outs. The operating company’s location is not confirmed"
+        },
+        "ja": {
+          "gain": "毎日の利用やゲーム・買い物などで少額の報酬",
+          "note": "チャット・通話アプリに、報酬のしくみを組み合わせたサービス。毎日の「UBI（デジタル収入）」の受け取り、ゲーム、オンラインショッピングのキャッシュバック、格安通話、デイリーオファーなどで報酬がたまり、出金するか、100か国以上の約2,000の慈善団体に寄付できる。招待した友だちなど自分のネットワークが活動すると、自分の報酬も増える。App Store の提供元は YouWowMe Limited で、2026年8月にも更新されている",
+          "need": "紹介リンクから無料で登録し、アプリを毎日使う（日本からの利用は2026年10月に実際に確認）",
+          "caution": "報酬は招待した人だけでなく、その先の人たちの活動にも応じて入る多段階（マルチレベル）型。第三者の情報では8段階とされるが、公式には確認できていない。1日あたりの額はごくわずかで、まとまった収入になるとは考えないほうがよい。PayPal への出金には最低額・手数料・連続利用日数などの条件があるとされるが、公式ヘルプは直接確認できなかった。App Store の評価は日本で3.2（167件、2026年10月）で、出金できないという声もある。運営会社の所在地は確認できていない"
+        },
+        "zh": {
+          "gain": "每天使用、游戏、购物等可得少量奖励",
+          "note": "把聊天、通话应用和奖励机制结合起来的服务。可通过每天的“UBI（数字收入）”、游戏、网购返现、低价通话、每日任务等累积奖励，然后提现，或捐给 100 多个国家约 2,000 家慈善机构。你邀请的朋友等自己的网络越活跃，你的奖励也越多。App Store 上的提供者为 YouWowMe Limited，2026 年 8 月仍有更新",
+          "need": "通过推荐链接免费注册，每天使用应用（已于 2026 年 10 月亲自确认可在日本使用）",
+          "caution": "奖励不仅来自你邀请的人，也来自他们再邀请的人，属于多层级（多层次）网络模式。第三方资料称有 8 层，但官方未能确认。每天的金额极少，不应把它当作可观的收入。据称提现到 PayPal 有最低金额、手续费和连续使用天数等条件，但未能直接查看官方帮助页面。日本 App Store 评分为 3.2（167 条，2026 年 10 月），也有用户反映无法提现。运营公司的所在地尚未确认"
+        },
+        "hi": {
+          "gain": "रोज़ के इस्तेमाल, गेम, शॉपिंग आदि पर थोड़े इनाम",
+          "note": "चैट और कॉलिंग ऐप के साथ इनाम की व्यवस्था। रोज़ की “UBI” (डिजिटल आय), गेम, ऑनलाइन शॉपिंग कैशबैक, सस्ती कॉल और रोज़ के ऑफ़र से इनाम जमा होते हैं, जिन्हें निकाला जा सकता है या 100+ देशों की करीब 2,000 चैरिटी को दान किया जा सकता है। आपके बुलाए दोस्त जैसे आपके नेटवर्क के सक्रिय होने पर आपका इनाम भी बढ़ता है। App Store पर प्रकाशक YouWowMe Limited है, और ऐप अगस्त 2026 में भी अपडेट हुआ",
+          "need": "रेफ़रल लिंक से मुफ़्त साइन अप करें और रोज़ ऐप इस्तेमाल करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+          "caution": "इनाम सिर्फ़ आपके बुलाए लोगों से नहीं, बल्कि उनके आगे जुड़े लोगों की गतिविधि से भी आता है: यानी मल्टी-लेवल नेटवर्क। तीसरे पक्ष के स्रोत 8 लेवल बताते हैं; आधिकारिक पुष्टि नहीं हुई। रोज़ की रकम बहुत कम है, इसलिए इसे अच्छी आय न समझें। PayPal पर निकासी के लिए न्यूनतम रकम, फ़ीस और लगातार इस्तेमाल के दिनों की शर्तें बताई जाती हैं, पर आधिकारिक सहायता पेज सीधे नहीं देखे जा सके। जापान के App Store में रेटिंग 3.2 है (167 रेटिंग, अक्टूबर 2026), और कुछ लोगों ने निकासी न हो पाने की शिकायत की है। ऑपरेटर कंपनी का स्थान पुष्ट नहीं है"
+        },
+        "es": {
+          "gain": "Pequeñas recompensas por usarla a diario, jugar, comprar y más",
+          "note": "Una app de chat y llamadas combinada con un sistema de recompensas. Acumulas recompensas con una «UBI» diaria (ingreso digital), juegos, reembolsos por compras online, llamadas baratas y ofertas diarias, y luego las retiras o las donas a unas 2.000 organizaciones benéficas de más de 100 países. Tus recompensas también crecen cuando tu red, como los amigos que invitaste, está activa. En la App Store la publica YouWowMe Limited, y se actualizó todavía en agosto de 2026",
+          "need": "Regístrate gratis con el enlace de referido y usa la app cada día (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+          "caution": "Las recompensas no solo vienen de las personas que invitas, sino también de las que invitan ellas: es una red multinivel. Fuentes externas hablan de 8 niveles; no está confirmado oficialmente. Las cantidades diarias son mínimas, así que no esperes un ingreso significativo. Al parecer, los retiros a PayPal tienen mínimo, comisiones y un requisito de días seguidos de uso, pero no se pudieron consultar directamente las páginas de ayuda oficiales. En la App Store de Japón tiene una nota de 3,2 (167 valoraciones, octubre de 2026), y algunos usuarios dicen que no pudieron retirar. No está confirmada la ubicación de la empresa"
+        },
+        "de": {
+          "gain": "Kleine Belohnungen für tägliche Nutzung, Spiele, Einkäufe und mehr",
+          "note": "Eine Chat- und Telefonie-App mit Belohnungssystem. Du sammelst Belohnungen über ein tägliches „Grundeinkommen“ (digitales Einkommen), Spiele, Cashback beim Online-Einkauf, günstige Anrufe und tägliche Angebote und lässt sie dir auszahlen oder spendest sie an rund 2.000 Hilfsorganisationen in über 100 Ländern. Deine Belohnungen wachsen auch, wenn dein Netzwerk, etwa von dir eingeladene Freunde, aktiv ist. Herausgeber im App Store ist YouWowMe Limited, und die App wurde zuletzt im August 2026 aktualisiert",
+          "need": "Über den Empfehlungslink kostenlos anmelden und die App jeden Tag nutzen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+          "caution": "Belohnungen kommen nicht nur von Menschen, die du einlädst, sondern auch von denen, die diese wiederum einladen: ein mehrstufiges Netzwerk (Multi-Level). Drittquellen sprechen von 8 Stufen; offiziell bestätigt ist das nicht. Die Tagesbeträge sind winzig, erwarte also kein nennenswertes Einkommen. Auszahlungen an PayPal haben angeblich einen Mindestbetrag, Gebühren und eine Bedingung für tägliche Nutzung in Folge, die offiziellen Hilfeseiten ließen sich aber nicht direkt prüfen. Bewertung im japanischen App Store: 3,2 (167 Bewertungen, Oktober 2026), einige berichten von gescheiterten Auszahlungen. Der Sitz der Betreiberfirma ist nicht bestätigt"
+        },
+        "ar": {
+          "gain": "مكافآت صغيرة مقابل الاستخدام اليومي والألعاب والتسوق وغيرها",
+          "note": "تطبيق دردشة واتصال مع نظام مكافآت. تجمع المكافآت من «دخل أساسي» رقمي يومي، والألعاب، واسترداد نقدي من التسوق عبر الإنترنت، ومكالمات رخيصة، وعروض يومية، ثم تسحبها أو تتبرع بها لنحو 2,000 جمعية خيرية في أكثر من 100 دولة. تزيد مكافآتك أيضًا عندما تنشط شبكتك، مثل الأصدقاء الذين دعوتهم. الناشر في App Store هو YouWowMe Limited، وقد حُدّث التطبيق حتى أغسطس 2026",
+          "need": "سجّل مجانًا عبر رابط الإحالة واستخدم التطبيق يوميًا (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+          "caution": "لا تأتي المكافآت ممن تدعوهم فقط، بل أيضًا ممن يدعونهم بدورهم: أي شبكة متعددة المستويات. تذكر مصادر خارجية 8 مستويات، ولم يتأكد ذلك رسميًا. المبالغ اليومية ضئيلة جدًا، فلا تتوقع دخلًا يُعتد به. يُقال إن السحب إلى PayPal يتطلب حدًا أدنى ورسومًا وعددًا من أيام الاستخدام المتتالية، لكن تعذّر الاطلاع على صفحات المساعدة الرسمية مباشرة. تقييمه في متجر App Store الياباني 3.2 (167 تقييمًا، أكتوبر 2026)، ويشكو بعض المستخدمين من تعذر السحب. موقع الشركة المشغّلة غير مؤكد"
+        }
+      }
+    }
+  ]
+}

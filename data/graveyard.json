@@ -1,0 +1,242 @@
+{
+  "name": "Free Lunch Lab graveyard",
+  "description": "Basic-income-style programs that have ended, each with an official or credible source.",
+  "source": "https://neteru-nyukin.eltociear.workers.dev/graveyard/",
+  "repository": "https://github.com/eltociear/free-lunch-lab",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "generatedAt": "2026-06-01",
+  "count": 5,
+  "graveyard": [
+    {
+      "id": "me-token",
+      "name": "ME Token (RewardMe)",
+      "endedOn": "2025-07",
+      "sourceUrl": "https://help.reward.me/en/articles/4901904-sunsetting-me-token-jul-2025",
+      "sourceLabel": "RewardMe Help",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-me-token",
+      "serviceId": "rewardme",
+      "descriptions": {
+        "en": {
+          "what": "The reward token of the cashback app RewardMe",
+          "ended": "Retired in July 2025 (balances were automatically converted 1:1 into Reward Dollars)",
+          "why": "The official help page gives no reason"
+        },
+        "ja": {
+          "what": "キャッシュバックアプリ RewardMe の報酬トークン",
+          "ended": "2025年7月に廃止（残高は Reward Dollars に1対1で自動変換）",
+          "why": "公式ヘルプでは理由は示されていない"
+        },
+        "zh": {
+          "what": "返现应用 RewardMe 的奖励代币",
+          "ended": "2025 年 7 月停用（余额按 1:1 自动转换为 Reward Dollars）",
+          "why": "官方帮助页面没有说明原因"
+        },
+        "hi": {
+          "what": "कैशबैक ऐप RewardMe का इनाम टोकन",
+          "ended": "जुलाई 2025 में बंद (बैलेंस अपने आप 1:1 में Reward Dollars में बदल गया)",
+          "why": "आधिकारिक सहायता पेज कोई कारण नहीं बताता"
+        },
+        "es": {
+          "what": "El token de recompensas de la app de reembolsos RewardMe",
+          "ended": "Retirado en julio de 2025 (los saldos se convirtieron automáticamente 1:1 en Reward Dollars)",
+          "why": "La ayuda oficial no da motivos"
+        },
+        "de": {
+          "what": "Der Belohnungstoken der Cashback-App RewardMe",
+          "ended": "Im Juli 2025 eingestellt (Guthaben wurden automatisch 1:1 in Reward Dollars umgewandelt)",
+          "why": "Die offizielle Hilfeseite nennt keinen Grund"
+        },
+        "ar": {
+          "what": "رمز المكافآت في تطبيق الاسترداد النقدي RewardMe",
+          "ended": "أُوقف في يوليو 2025 (حُوّلت الأرصدة تلقائيًا بنسبة 1:1 إلى Reward Dollars)",
+          "why": "لا تذكر صفحة المساعدة الرسمية سببًا"
+        }
+      }
+    },
+    {
+      "id": "miles",
+      "name": "Miles",
+      "endedOn": "2025-05-14",
+      "sourceUrl": "https://note.com/y121516/n/nbb9bf7625c03",
+      "sourceLabel": "note (Yuhki Ogasawara)",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-miles",
+      "serviceId": null,
+      "descriptions": {
+        "en": {
+          "what": "An app that earned miles just by carrying your phone as you travelled, redeemable for goods and gift cards (run in Japan by Miles Japan)",
+          "ended": "14 May 2025 (announced by email the same day, with no grace period)",
+          "why": "Officially only called a “difficult decision”; no reason was given"
+        },
+        "ja": {
+          "what": "スマホを持って移動するだけでマイルがたまり、商品やギフト券と交換できたアプリ（日本ではマイルズ・ジャパンが運営）",
+          "ended": "2025年5月14日（当日のメールで告知され、猶予期間なし）",
+          "why": "公式には「難しい決断」とだけ説明され、理由は示されていない"
+        },
+        "zh": {
+          "what": "只要带着手机移动就能累积里程、可兑换商品和礼品卡的应用（在日本由 Miles Japan 运营）",
+          "ended": "2025 年 5 月 14 日（当天以邮件通知，没有缓冲期）",
+          "why": "官方只称这是“艰难的决定”，没有说明原因"
+        },
+        "hi": {
+          "what": "फ़ोन साथ लेकर चलने भर से माइल देने वाला ऐप, जिन्हें सामान और गिफ़्ट कार्ड से बदला जा सकता था (जापान में Miles Japan चलाती थी)",
+          "ended": "14 मई 2025 (उसी दिन ईमेल से घोषणा, कोई मोहलत नहीं)",
+          "why": "आधिकारिक तौर पर बस “कठिन फ़ैसला” कहा गया; कोई कारण नहीं बताया गया"
+        },
+        "es": {
+          "what": "Una app que daba millas solo por llevar el móvil al desplazarte, canjeables por productos y tarjetas regalo (en Japón la gestionaba Miles Japan)",
+          "ended": "14 de mayo de 2025 (anunciado por correo ese mismo día, sin periodo de gracia)",
+          "why": "Oficialmente solo se habló de una «decisión difícil»; no se dio ningún motivo"
+        },
+        "de": {
+          "what": "Eine App, die Meilen gab, nur weil man das Handy unterwegs dabeihatte, einlösbar gegen Waren und Geschenkkarten (in Japan betrieben von Miles Japan)",
+          "ended": "14. Mai 2025 (am selben Tag per E-Mail angekündigt, ohne Übergangsfrist)",
+          "why": "Offiziell nur als „schwierige Entscheidung“ bezeichnet; einen Grund gab es nicht"
+        },
+        "ar": {
+          "what": "تطبيق كان يمنح أميالًا بمجرد حمل الهاتف أثناء التنقل، قابلة للاستبدال بسلع وبطاقات هدايا (تديره في اليابان Miles Japan)",
+          "ended": "14 مايو 2025 (أُعلن بالبريد الإلكتروني في اليوم نفسه دون مهلة)",
+          "why": "وُصف رسميًا بأنه «قرار صعب» فقط، دون ذكر سبب"
+        }
+      }
+    },
+    {
+      "id": "mybasicincome",
+      "name": "My Basic Income",
+      "endedOn": "2017",
+      "sourceUrl": "https://www.pulse.com.gh/bi/tech/tech-a-dollar15000-basic-income-lottery-promised-free-money-for-a-year-then-the/5gbp5pj",
+      "sourceLabel": "Business Insider (syndicated)",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-mybasicincome",
+      "serviceId": null,
+      "descriptions": {
+        "en": {
+          "what": "A San Francisco group that raffled off a crowdfunded one-year basic income of $15,000 (2016)",
+          "ended": "Around 2017 (the winner received only 5 of 12 payments and no second raffle followed; the website was offline as of Oct 2026)",
+          "why": "Delayed and missed payments were reported; no official explanation was found"
+        },
+        "ja": {
+          "what": "サンフランシスコの団体が、クラウドファンディングで集めた1年分のベーシックインカム（15,000ドル）を抽選で配った取り組み（2016年）",
+          "ended": "2017年ごろ（当選者への支払いは12回中5回で止まり、2回目の抽選はなかった。2026年10月時点で公式サイトは閉鎖）",
+          "why": "支払いの遅れと未払いが報じられているが、運営からの公式な説明は見つからなかった"
+        },
+        "zh": {
+          "what": "旧金山的一个团体用众筹资金抽奖发放一年期基本收入（15,000 美元，2016 年）",
+          "ended": "约 2017 年（中奖者只收到 12 笔中的 5 笔，也没有第二次抽奖；截至 2026 年 10 月官网已关闭）",
+          "why": "有报道称付款延迟和未付，但未找到运营方的正式说明"
+        },
+        "hi": {
+          "what": "सैन फ़्रांसिस्को का एक समूह, जिसने क्राउडफ़ंडिंग से जुटाई एक साल की बेसिक इनकम ($15,000) लॉटरी से दी (2016)",
+          "ended": "लगभग 2017 (विजेता को 12 में से सिर्फ़ 5 भुगतान मिले और दूसरी लॉटरी नहीं हुई; अक्टूबर 2026 तक वेबसाइट बंद)",
+          "why": "भुगतान में देरी और भुगतान न होने की ख़बरें आईं; कोई आधिकारिक स्पष्टीकरण नहीं मिला"
+        },
+        "es": {
+          "what": "Un grupo de San Francisco que sorteó una renta básica de un año de 15.000 $ financiada con crowdfunding (2016)",
+          "ended": "Hacia 2017 (el ganador solo recibió 5 de 12 pagos y no hubo un segundo sorteo; la web estaba caída en octubre de 2026)",
+          "why": "Se informó de pagos retrasados e impagados; no se encontró una explicación oficial"
+        },
+        "de": {
+          "what": "Eine Gruppe aus San Francisco, die ein per Crowdfunding finanziertes Grundeinkommen für ein Jahr (15.000 $) verloste (2016)",
+          "ended": "Um 2017 (der Gewinner erhielt nur 5 von 12 Zahlungen, eine zweite Verlosung gab es nicht; die Website war im Oktober 2026 offline)",
+          "why": "Berichtet wurden verspätete und ausgebliebene Zahlungen; eine offizielle Erklärung wurde nicht gefunden"
+        },
+        "ar": {
+          "what": "مجموعة في سان فرانسيسكو أجرت سحبًا على دخل أساسي لمدة عام بقيمة $15,000 جُمع بالتمويل الجماعي (2016)",
+          "ended": "نحو 2017 (لم يتلقَّ الفائز سوى 5 من 12 دفعة ولم يُجرَ سحب ثانٍ؛ والموقع متوقف حتى أكتوبر 2026)",
+          "why": "أُفيد بتأخر دفعات وعدم سدادها، ولم نجد تفسيرًا رسميًا"
+        }
+      }
+    },
+    {
+      "id": "rewardme-ph",
+      "name": "RewardMe (Philippines)",
+      "endedOn": "2025-12-31",
+      "sourceUrl": "https://help.reward.me/en/articles/12780396-winding-down-operations-in-the-philippines",
+      "sourceLabel": "RewardMe Help",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-rewardme-ph",
+      "serviceId": "rewardme",
+      "descriptions": {
+        "en": {
+          "what": "The cashback app RewardMe’s service in the Philippines",
+          "ended": "Cashback ended on 10 Dec 2025, and MDT withdrawals and conversions on 31 Dec 2025 (gift-card redemption only after that)",
+          "why": "The official notice gives no reason"
+        },
+        "ja": {
+          "what": "キャッシュバックアプリ RewardMe のフィリピンでのサービス",
+          "ended": "2025年12月10日でキャッシュバック終了、12月31日で MDT の出金・変換も終了（その後はギフト券への交換のみ）",
+          "why": "公式の告知は理由を示していない"
+        },
+        "zh": {
+          "what": "返现应用 RewardMe 在菲律宾的服务",
+          "ended": "2025 年 12 月 10 日停止返现，12 月 31 日停止 MDT 提现和转换（之后只能兑换礼品卡）",
+          "why": "官方公告没有说明原因"
+        },
+        "hi": {
+          "what": "फ़िलीपींस में कैशबैक ऐप RewardMe की सेवा",
+          "ended": "10 दिसंबर 2025 को कैशबैक बंद, 31 दिसंबर 2025 को MDT निकासी और रूपांतरण भी बंद (उसके बाद सिर्फ़ गिफ़्ट कार्ड)",
+          "why": "आधिकारिक सूचना कोई कारण नहीं बताती"
+        },
+        "es": {
+          "what": "El servicio de la app de reembolsos RewardMe en Filipinas",
+          "ended": "El reembolso terminó el 10 de diciembre de 2025, y los retiros y conversiones de MDT el 31 de diciembre de 2025 (después, solo canje por tarjetas regalo)",
+          "why": "El aviso oficial no da motivos"
+        },
+        "de": {
+          "what": "Der Dienst der Cashback-App RewardMe auf den Philippinen",
+          "ended": "Cashback endete am 10. Dezember 2025, MDT-Auszahlungen und -Umwandlungen am 31. Dezember 2025 (danach nur noch Einlösen gegen Geschenkkarten)",
+          "why": "Die offizielle Mitteilung nennt keinen Grund"
+        },
+        "ar": {
+          "what": "خدمة تطبيق الاسترداد النقدي RewardMe في الفلبين",
+          "ended": "انتهى الاسترداد النقدي في 10 ديسمبر 2025، وسحب MDT وتحويله في 31 ديسمبر 2025 (بعدها الاستبدال ببطاقات الهدايا فقط)",
+          "why": "لا يذكر الإعلان الرسمي سببًا"
+        }
+      }
+    },
+    {
+      "id": "wld-airdrop",
+      "name": "World — WLD Airdrop (Grants)",
+      "endedOn": "2026-06-01",
+      "sourceUrl": "https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program",
+      "sourceLabel": "World Help Center",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-wld-airdrop",
+      "serviceId": null,
+      "descriptions": {
+        "en": {
+          "what": "Monthly WLD token airdrops (formerly grants) for people who proved they are human with World ID",
+          "ended": "No new or renewed cycles from 1 June 2026 (existing 12-month cycles can still be claimed until they end)",
+          "why": "The official help page gives no reason; it only says airdrop cycles are no longer being created or renewed"
+        },
+        "ja": {
+          "what": "World ID で人間であることを証明した人に、WLD トークンを毎月配っていたエアドロップ（旧グラント）",
+          "ended": "2026年6月1日に新規の受付と更新を停止（参加済みの人は12か月の期間が終わるまで受け取れる）",
+          "why": "公式ヘルプは理由を示さず、「エアドロップの期間は新たに作られず、更新もされない」とだけ説明している"
+        },
+        "zh": {
+          "what": "向通过 World ID 证明自己是真人的用户每月发放 WLD 代币的空投（原称 Grants）",
+          "ended": "2026 年 6 月 1 日起不再新建或续期（已参加者可领到 12 个月周期结束）",
+          "why": "官方帮助页面没有说明原因，只说空投周期不再新建或续期"
+        },
+        "hi": {
+          "what": "World ID से इंसान साबित करने वालों को हर महीने WLD टोकन देने वाला एयरड्रॉप (पहले ग्रांट)",
+          "ended": "1 जून 2026 से नए या नवीनीकृत चक्र बंद (चल रहे 12 महीने के चक्र खत्म होने तक क्लेम हो सकते हैं)",
+          "why": "आधिकारिक सहायता पेज कोई कारण नहीं बताता; बस इतना कहता है कि एयरड्रॉप चक्र अब नहीं बनाए या बढ़ाए जा रहे"
+        },
+        "es": {
+          "what": "Airdrops mensuales de tokens WLD (antes «grants») para quienes demostraban ser humanos con World ID",
+          "ended": "Sin ciclos nuevos ni renovaciones desde el 1 de junio de 2026 (los ciclos de 12 meses ya iniciados se pueden cobrar hasta que terminen)",
+          "why": "La ayuda oficial no da motivos; solo dice que ya no se crean ni renuevan ciclos de airdrop"
+        },
+        "de": {
+          "what": "Monatliche WLD-Airdrops (früher „Grants“) für Menschen, die sich per World ID als Mensch verifiziert hatten",
+          "ended": "Seit 1. Juni 2026 keine neuen oder verlängerten Zyklen (laufende 12-Monats-Zyklen können bis zu ihrem Ende abgeholt werden)",
+          "why": "Die offizielle Hilfeseite nennt keinen Grund, sondern nur, dass keine Airdrop-Zyklen mehr angelegt oder verlängert werden"
+        },
+        "ar": {
+          "what": "إسقاطات شهرية لرموز WLD (كانت تُسمى منحًا) لمن أثبتوا أنهم بشر عبر World ID",
+          "ended": "لا دورات جديدة أو مجددة منذ 1 يونيو 2026 (يمكن مواصلة المطالبة بالدورات الجارية حتى نهاية مدتها البالغة 12 شهرًا)",
+          "why": "لا تذكر صفحة المساعدة الرسمية سببًا، وتقول فقط إن دورات الإسقاط لم تعد تُنشأ أو تُجدد"
+        }
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-// 使い方: node readme.js  →  README.md の自動生成ブロック（サービス表・団体一覧）を src/data.js から作り直す
+// 使い方: node readme.js  →  README.md の自動生成ブロック（バッジ・サービス表・団体一覧）を src/data.js から作り直す
 // build.js の最後でも呼ばれるので、ふだんは node build.js だけでよい
 const fs = require('fs');
 const path = require('path');
@@ -17,6 +17,17 @@ function servicesTable() {
     '| Service | Category | What you get | Region | Checked |',
     '| --- | --- | --- | --- | --- |',
     ...rows,
+  ].join('\n');
+}
+
+function badges() {
+  const b = (label, msg, color, link) => `[![${label}](https://img.shields.io/badge/${encodeURIComponent(label).replace(/-/g, '--')}-${encodeURIComponent(msg).replace(/-/g, '--')}-${color})](${link})`;
+  return [
+    b('services', String(live.length), 'e8590c', `${SITE_URL}/`),
+    b('languages', '7', '1c7ed6', `${SITE_URL}/`),
+    b('code', 'MIT', '2f9e44', 'LICENSE'),
+    b('content', 'CC BY 4.0', '2f9e44', 'NOTICE.md'),
+    b('live site', 'free lunch lab', '212529', `${SITE_URL}/`),
   ].join('\n');
 }
 
@@ -40,7 +51,8 @@ function replaceBlock(text, name, body) {
 
 function updateReadme() {
   const before = fs.readFileSync(README, 'utf8');
-  let after = replaceBlock(before, 'services', servicesTable());
+  let after = replaceBlock(before, 'badges', badges());
+  after = replaceBlock(after, 'services', servicesTable());
   after = replaceBlock(after, 'organizations', orgsList());
   if (after !== before) fs.writeFileSync(README, after);
   return after !== before;
