@@ -1,0 +1,79 @@
+# Free Lunch Lab
+
+> Free Lunch Lab ("There is such a thing as a free lunch.") is a curated directory of apps and projects that pay you a basic income or rewards just for existing: crypto UBI, passive apps, cashback and more. Every entry links to its official source and has a "last checked" month, and the risks and cautions are listed next to the rewards. The site is available in 7 languages (en, ja, zh, hi, es, de, ar).
+
+- Referral links: some sign-up links are the maintainer's referral links. They are marked in the data (`referral` in services.json); official URLs are always given too.
+- License: content is CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), referral links excluded.
+- Data last checked: 2026-10
+- Full text: https://neteru-nyukin.eltociear.workers.dev/llms-full.txt
+
+## Data
+
+- [services.json](https://neteru-nyukin.eltociear.workers.dev/services.json): all visible services as JSON, with descriptions in every language, region, verification, trust check and referral info
+- [graveyard.json](https://neteru-nyukin.eltociear.workers.dev/graveyard.json): ended basic-income-style programs, each with a source
+- [RSS feed (en)](https://neteru-nyukin.eltociear.workers.dev/feed.xml): update log in English
+- [RSS feed (ja)](https://neteru-nyukin.eltociear.workers.dev/ja/feed.xml): update log in 日本語
+- [RSS feed (zh)](https://neteru-nyukin.eltociear.workers.dev/zh/feed.xml): update log in 中文
+- [RSS feed (hi)](https://neteru-nyukin.eltociear.workers.dev/hi/feed.xml): update log in हिन्दी
+- [RSS feed (es)](https://neteru-nyukin.eltociear.workers.dev/es/feed.xml): update log in Español
+- [RSS feed (de)](https://neteru-nyukin.eltociear.workers.dev/de/feed.xml): update log in Deutsch
+- [RSS feed (ar)](https://neteru-nyukin.eltociear.workers.dev/ar/feed.xml): update log in العربية
+
+## Services
+
+- [GoodDollar](https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/): G$ tokens every day. A nonprofit UBI protocol (Crypto UBI; available in Japan and worldwide; verification: Face scan / liveness)
+- [Circles (Gnosis App)](https://neteru-nyukin.eltociear.workers.dev/services/circles/): 1 CRC per hour (24 per day). A Gnosis project where every person issues their own currency (Crypto UBI; available in Japan and worldwide; verification: Web of trust / invites)
+- [ME Pass](https://neteru-nyukin.eltociear.workers.dev/services/mepass/): MEC tokens every day. Meta Earth's wallet app (Crypto UBI; available in Japan and worldwide; verification: ID document KYC)
+- [BioMatrix](https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/): PoY tokens every month. A UBI token that promises monthly payouts for 60 years (Crypto UBI; available in Japan and worldwide; verification: not specified)
+- [Hapitas](https://neteru-nyukin.eltociear.workers.dev/services/hapitas/): Up to 2,300 points. October 2026 offer (1 point = ¥1) (Cashback sites; Japan only; verification: No verification)
+- [WAVEE](https://neteru-nyukin.eltociear.workers.dev/services/wavee/): A matching reward each time you land a job. Invite-only job matching (Job matching; available in Japan and worldwide; verification: No verification)
+- [Trima](https://neteru-nyukin.eltociear.workers.dev/services/trima/): 5,000 miles + miles for moving and walking. An app that earns miles just by carrying your phone as you travel and walk (Passive apps; Japan only; verification: No verification)
+- [Sweatcoin](https://neteru-nyukin.eltociear.workers.dev/services/sweatcoin/): 0.95 coins per 1,000 steps. Carry your phone and your steps turn into coins automatically (Passive apps; available in Japan and worldwide; verification: No verification)
+- [Grass](https://neteru-nyukin.eltociear.workers.dev/services/grass/): Points (later GRASS tokens). A DePIN that rents out your unused bandwidth for AI web scraping (Passive apps; available in Japan and worldwide; verification: No verification)
+- [Honeygain](https://neteru-nyukin.eltociear.workers.dev/services/honeygain/): Cash for the traffic you share. The best-known bandwidth-sharing app: it rents your unused connection to businesses for web data collection (Passive apps; available in Japan and worldwide; verification: No verification)
+- [Pawns.app](https://neteru-nyukin.eltociear.workers.dev/services/pawns/): Cash for the traffic you share. IPRoyal’s bandwidth-sharing app (Passive apps; available in Japan and worldwide; verification: No verification)
+- [Pi Network](https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/): PI every day. Tap a button in the app once every 24 hours to earn PI (Crypto UBI; available in Japan and worldwide; verification: ID document KYC)
+- [Delta Kim](https://neteru-nyukin.eltociear.workers.dev/services/deltakim/): KIM every day. A crypto app similar to Pi Network where you “mine” daily on your phone (Crypto UBI; available in Japan and worldwide; verification: No verification)
+- [InterLink](https://neteru-nyukin.eltociear.workers.dev/services/interlink/): ITLG tokens every day. A project that distributes ITLG tokens to people who have verified they are real humans through face verification (Human Nodes) (Crypto UBI; available in Japan and worldwide; verification: Face scan / liveness)
+- [Mein Grundeinkommen](https://neteru-nyukin.eltociear.workers.dev/services/meingrundeinkommen/): €1,000 a month for a year if you win. A free lottery run by a nonprofit association in Berlin and funded by crowdfunding donations (Passive apps; available in Japan and worldwide; verification: No verification, ID document KYC (optional))
+- [Ğ1 (June)](https://neteru-nyukin.eltociear.workers.dev/services/g1/): Ğ1 every day once you are a member (Universal Dividend). A libre currency based on the Relative Theory of Money (Crypto UBI; available in Japan and worldwide; verification: Web of trust / invites)
+- [Palai](https://neteru-nyukin.eltociear.workers.dev/services/palai/): Palai (¶) basic income every day. Its own currency that pays everyone a daily basic income simply for being human (Passive apps; available in Japan and worldwide; verification: Phone number)
+- [Dotare](https://neteru-nyukin.eltociear.workers.dev/services/dotare/): 10 ADA a month for a year if you are chosen (2027 cycle). A “global universal basic income” endowment on Cardano (Crypto UBI; available in Japan and worldwide; verification: not specified)
+- [ORO (World App)](https://neteru-nyukin.eltociear.workers.dev/services/oro/): ORO tokens every day. A mini app inside World App (Crypto UBI; available in Japan and worldwide; verification: World ID (Orb))
+- [AXO (World App)](https://neteru-nyukin.eltociear.workers.dev/services/axo/): AXO tokens every day. A mini app inside World App (Crypto UBI; available in Japan and worldwide; verification: World ID (Orb))
+- [AI-DAC (World App)](https://neteru-nyukin.eltociear.workers.dev/services/aidac/): UBI in DAC tokens. A mini app inside World App that calls itself an “AI-powered universal basic income platform” (Crypto UBI; available in Japan and worldwide; verification: World ID (Orb))
+- [Ubiquitus](https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/): A small equal cash share on the 1st of each month (Venmo). A US “basic income anyone can join” experiment (Passive apps; US residents only, not available from Japan; verification: not specified)
+- [Gradido](https://neteru-nyukin.eltociear.workers.dev/services/gradido/): 20 GDD per hour of common-good work (up to 1,000 GDD a month). A currency system billed as a “natural economy”, named after Gratitude, Dignity and Donation (Passive apps; available in Japan and worldwide; verification: No verification)
+- [WowApp](https://neteru-nyukin.eltociear.workers.dev/services/wowapp/): Small rewards for daily use, games, shopping and more. A chat and calling app combined with a rewards scheme (Passive apps; available in Japan and worldwide; verification: No verification)
+- [Humad (World App)](https://neteru-nyukin.eltociear.workers.dev/services/humad/): Points for tapping ads and answering questions (gift cards from 1,500 pt = ¥150). A mini app inside World App (Cashback sites; Japan only; verification: World ID (Orb))
+- [Billions](https://neteru-nyukin.eltociear.workers.dev/services/billions/): Power points (for verifying, referring friends and taking part). A digital ID app that proves you are a real human using your phone and an ID document (Crypto UBI; available in Japan and worldwide; verification: Face scan / liveness, NFC passport)
+- [Idena (iDNA)](https://neteru-nyukin.eltociear.workers.dev/services/idena/): iDNA (mining rewards while your node runs, plus validation rewards). A proof-of-person blockchain built on “one person, one vote” (Crypto UBI; available in Japan and worldwide; verification: Validation ceremony, Web of trust / invites)
+- [RewardMe](https://neteru-nyukin.eltociear.workers.dev/services/rewardme/): Up to 5% cashback found in your email receipts (Reward Dollars / MDT crypto). Link your email account and it automatically finds purchases at 100+ merchants such as Amazon, Uber and DoorDash from the receipts in your inbox, crediting up to 5% in Reward Dollars (Passive apps; available in Japan and worldwide; verification: No verification, World ID (Orb) (optional))
+- [FheID (Privasea)](https://neteru-nyukin.eltociear.workers.dev/services/fheid/): Airdrops and rewards for proving you are human (e.g. campaign “stars”). A proof-of-humanity app that scans your face with your phone camera to show you are a real person (Crypto UBI; available in Japan and worldwide; verification: Face scan / liveness)
+
+## Guides
+
+- [What can you do with World ID? Apps that use Orb verification](https://neteru-nyukin.eltociear.workers.dev/verify/world-id/): services that use World ID (Orb)
+- [Apps that verify you with a face scan](https://neteru-nyukin.eltociear.workers.dev/verify/face/): services that use Face scan / liveness
+- [Apps that require ID document KYC](https://neteru-nyukin.eltociear.workers.dev/verify/kyc-id/): services that use ID document KYC
+- [Apps you join through invites or a web of trust](https://neteru-nyukin.eltociear.workers.dev/verify/web-of-trust/): services that use Web of trust / invites
+- [Apps that need no identity verification](https://neteru-nyukin.eltociear.workers.dev/verify/none/): services that use No verification
+- [Basic income organizations & projects](https://neteru-nyukin.eltociear.workers.dev/organizations/): A curated list of organizations and projects around the world and in Japan that advocate, research or practise basic income (UBI), grouped by type. Checked in October 2026.
+- [Basic income experiments: a timeline](https://neteru-nyukin.eltociear.workers.dev/timeline/): A timeline of basic income experiments and schemes, from Mincome and Alaska’s dividend to Namibia, Finland, Stockton, OpenResearch and Germany’s pilot, with who ran them, what was paid, results and sources.
+- [The Free Lunch Graveyard](https://neteru-nyukin.eltociear.workers.dev/graveyard/): Services and programmes that once paid out money or points and have ended, such as World’s WLD airdrop and Miles, with end dates, reasons and sources.
+- [Essay: Should AI agents get a basic income?](https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/): If AI takes the work, should agents get the dividend? Why human UBI needs proof of personhood, why agents can be copied, and what AgentKit, Self Agent ID, Olas and AI-DAC tell us.
+
+## Other languages
+
+- [日本語](https://neteru-nyukin.eltociear.workers.dev/ja/)
+- [中文](https://neteru-nyukin.eltociear.workers.dev/zh/)
+- [हिन्दी](https://neteru-nyukin.eltociear.workers.dev/hi/)
+- [Español](https://neteru-nyukin.eltociear.workers.dev/es/)
+- [Deutsch](https://neteru-nyukin.eltociear.workers.dev/de/)
+- [العربية](https://neteru-nyukin.eltociear.workers.dev/ar/)
+
+## Optional
+
+- [GitHub repository](https://github.com/eltociear/free-lunch-lab): source code and data
+- [X: @FreeLunchLab](https://x.com/FreeLunchLab)
+- [CONTRIBUTING](https://github.com/eltociear/free-lunch-lab/blob/main/CONTRIBUTING.md): how to suggest or correct a service

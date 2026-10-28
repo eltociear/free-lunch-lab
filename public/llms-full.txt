@@ -1,0 +1,714 @@
+# Free Lunch Lab
+
+> Free Lunch Lab ("There is such a thing as a free lunch.") is a curated directory of apps and projects that pay you a basic income or rewards just for existing: crypto UBI, passive apps, cashback and more. Every entry links to its official source and has a "last checked" month, and the risks and cautions are listed next to the rewards. The site is available in 7 languages (en, ja, zh, hi, es, de, ar).
+
+- Referral links: some sign-up links are the maintainer's referral links. They are marked in the data (`referral` in services.json) and labelled "Referral link" below; official URLs are always given too.
+- License: content is CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), referral links excluded.
+- Data last checked: 2026-10
+- Short index: https://neteru-nyukin.eltociear.workers.dev/llms.txt
+
+## Services
+
+### GoodDollar
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: Face scan / liveness
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://www.gooddollar.org/
+- Referral link (maintainer's own referral; not covered by the content license): https://goodwallet.xyz?inviteCode=KgChqUuJic&chainId=50
+- Referral code (maintainer's own): KgChqUuJic
+
+A nonprofit UBI protocol. Claim once every 24 hours; each day's pool is split among everyone who claims
+
+What you get: G$ tokens every day
+
+What you need: Face verification in the app
+
+Cautions: A security incident in May 2026 put its reserve under review. The daily amount is very small
+
+### Circles (Gnosis App)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/circles/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: Web of trust / invites
+- Trust check: Cash out: Unverified; Market price: Unverified; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://app.gnosis.io/
+
+A Gnosis project where every person issues their own currency. Circles 2.0 launched in May 2025, and in June 2026 the Gnosis App was rebuilt around Circles. This site has no referral link for it yet
+
+What you get: 1 CRC per hour (24 per day)
+
+What you need: Sign up in the Gnosis App and get invited by an existing Circles member. The inviter pays 96 CRC and the newcomer gets 48 CRC as a welcome bonus
+
+Cautions: You can’t start without a member to invite you. CRC’s market price and ways to cash out are not confirmed. Gnosis has announced plans to spin the Gnosis App out of Gnosis Ltd into a separate company, so details may change
+
+### ME Pass
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/mepass/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: ID document KYC
+- Trust check: Cash out: With conditions; Market price: No; Public operator: Unverified
+- Last checked: 2026-10
+- Official URL: https://www.mec.me/
+- Referral link (maintainer's own referral; not covered by the content license): https://i.mec.me/ja-JP/?c=d22fj9hx
+- Referral code (maintainer's own): d22fj9hx
+
+Meta Earth's wallet app. Verified users get 1 MEC as an “unconditional basic income”, plus small daily check-in rewards
+
+What you get: MEC tokens every day
+
+What you need: Sign up via the invite link and complete KYC in the app
+
+Cautions: As of Oct 2026, MEC is not listed on any exchange and has no market price. Cashing out is peer-to-peer only
+
+### BioMatrix
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: not specified
+- Trust check: Cash out: Unverified; Market price: Unverified; Public operator: Unverified
+- Last checked: 2026-10
+- Official URL: https://biomatrix.ai/ja/
+- Referral link (maintainer's own referral; not covered by the content license): https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&af_dp=biomatrix%3A%2F%2F&deep_link_sub1=C66SPN
+- Referral code (maintainer's own): C66SPN
+
+A UBI token that promises monthly payouts for 60 years. Signing up with a referral code gives a 5-token bonus (as of Jan 2026). Earlier sign-ups get larger allocations
+
+What you get: PoY tokens every month
+
+What you need: Verify with biometrics in the app, then claim each month
+
+Cautions: We could not confirm a market price for PoY. Make sure you are comfortable with how it handles biometric data
+
+### Hapitas
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/hapitas/
+- Category: Cashback sites
+- Payout: one-time
+- Region: Japan only
+- Verification: No verification
+- Trust check: Cash out: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://hapitas.jp/
+- Referral link (maintainer's own referral; not covered by the content license): https://hapitas.jp/appinvite/?i=25819964
+
+October 2026 offer (1 point = ¥1). 100 for logging in 3 days in a row, 1,000 once you earn 3,000 through offers, and more
+
+What you get: Up to 2,300 points
+
+What you need: Join via referral by Oct 31 and meet the conditions by Nov 30
+
+### WAVEE
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/wavee/
+- Category: Job matching
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: With conditions; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://wavee.world/
+- Referral link (maintainer's own referral; not covered by the content license): https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd
+
+Invite-only job matching. Every time someone you invited (or someone they invited) lands a job, you earn a referral share again and again (7.5–15%). DMM, GMO Pepabo and others post jobs
+
+What you get: A matching reward each time you land a job
+
+What you need: Sign up via the invite link
+
+Cautions: You earn when a job is matched. Rates are from the official note of June 2024
+
+### Trima
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/trima/
+- Category: Passive apps
+- Payout: recurring
+- Region: Japan only
+- Verification: No verification
+- Trust check: Cash out: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://www.trip-mile.com/
+- Referral link (maintainer's own referral; not covered by the content license): https://www.trip-mile.com/
+- Referral code (maintainer's own): 49-icnRep
+
+An app that earns miles just by carrying your phone as you travel and walk. Enter an invite code and both you and the person who invited you get 5,000 miles (as of July 2026). Miles can be exchanged for gift cards, cash and more
+
+What you get: 5,000 miles + miles for moving and walking
+
+What you need: Install the app and enter the invite code 49‑icnRep when you register
+
+Cautions: The bonus amount and timing may change. It needs “always on” location access and uses a bit more battery
+
+### Sweatcoin
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/sweatcoin/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: With conditions; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://sweatco.in/
+- Referral link (maintainer's own referral; not covered by the content license): https://swcapp.com/i/mover77273393923
+- Referral code (maintainer's own): mover77273393923
+
+Carry your phone and your steps turn into coins automatically. Spend them in the in-app marketplace on products, discounts or donations
+
+What you get: 0.95 coins per 1,000 steps
+
+What you need: Install the app and allow access to steps and location
+
+Cautions: There is no fixed cash conversion rate. The free plan caps how many steps convert each day
+
+### Grass
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/grass/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://www.grass.io/
+- Referral link (maintainer's own referral; not covered by the content license): https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7
+- Referral code (maintainer's own): 97_MD5PEysoBbJ7
+
+A DePIN that rents out your unused bandwidth for AI web scraping. Keep the browser extension or app running and earn points for uptime and bandwidth actually used, paid out through seasonal airdrops
+
+What you get: Points (later GRASS tokens)
+
+What you need: Sign up with email, install the extension or app, and stay connected
+
+Cautions: Your IP address is used by others for data collection. Rewards depend on airdrops, so amount and timing are unpredictable
+
+### Honeygain
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/honeygain/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://www.honeygain.com/
+- Referral link (maintainer's own referral; not covered by the content license): https://join.honeygain.com/ELTOCD89E5
+- Referral code (maintainer's own): ELTOCD89E5
+
+The best-known bandwidth-sharing app: it rents your unused connection to businesses for web data collection. Signing up via a referral gives a $3 welcome bonus (per the official blog). Cash out via PayPal and more once you reach $20
+
+What you get: Cash for the traffic you share
+
+What you need: Sign up with email, install the app on your PC or phone, and leave it running
+
+Cautions: Your IP address is used by others for data collection. Earnings depend on demand in your region and can be very low in some areas
+
+### Pawns.app
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/pawns/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://pawns.app/
+- Referral link (maintainer's own referral; not covered by the content license): https://pawns.app/?r=20659471
+- Referral code (maintainer's own): 20659471
+
+IPRoyal’s bandwidth-sharing app. Leave the desktop app running and your spare connection earns money. Surveys and games pay too. Cash out from $5 via PayPal, Bitcoin and more
+
+What you get: Cash for the traffic you share
+
+What you need: Sign up with email, install the desktop app and leave it running
+
+Cautions: Mobile bandwidth sharing ended in April 2026, so passive earning is desktop only. Your IP address is used by others for data collection, and payouts are small
+
+### Pi Network
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: ID document KYC
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://minepi.com/
+- Referral link (maintainer's own referral; not covered by the content license): https://minepi.com/eltociear
+- Referral code (maintainer's own): eltociear
+
+Tap a button in the app once every 24 hours to earn PI. The more people you refer, the faster you mine. Opened to the public in February 2025 and trades on OKX, Bitget, MEXC and others
+
+What you get: PI every day
+
+What you need: Sign up via the invite link (invite code: eltociear). To move your PI you need identity verification and migration to the mainnet wallet
+
+Cautions: The price is down about 97% from its 2025 high of $2.99 (about $0.08 as of October 2026). Not listed on Binance, Coinbase or Japanese exchanges. Needs a daily tap, so it won’t build up if you leave it alone
+
+### Delta Kim
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/deltakim/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: Unverified; Market price: No; Public operator: Unverified
+- Last checked: 2026-10
+- Official URL: https://www.delta.kim/
+- Referral link (maintainer's own referral; not covered by the content license): https://www.delta.kim/?referrer=E7XK90P8N2AX9
+- Referral code (maintainer's own): E7XK90P8N2AX9
+
+A crypto app similar to Pi Network where you “mine” daily on your phone. Signing up with a referral code is said to boost your mining rate
+
+What you get: KIM every day
+
+What you need: Sign up via the invite link and tap the mining button in the app every day
+
+Cautions: As of October 2026, no exchange listing or market price could be confirmed, so it’s unclear whether KIM can be cashed out. Some users report their balance stopped growing despite mining. Needs daily action
+
+### InterLink
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/interlink/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: Face scan / liveness
+- Trust check: Cash out: Unverified; Market price: Unverified; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://interlinklabs.ai/
+- Referral link (maintainer's own referral; not covered by the content license): https://interlinklabs.ai/541682748130
+- Referral code (maintainer's own): 541682748130
+
+A project that distributes ITLG tokens to people who have verified they are real humans through face verification (Human Nodes). Check in on the app about every 4 hours (up to 6 times a day) to earn
+
+What you get: ITLG tokens every day
+
+What you need: Sign up via the invite link and complete face verification in the app
+
+Cautions: As of May 2026, ITLG is not listed on any exchange and has no market price. Requires frequent check-ins. Use it only if you are comfortable with how your facial biometric data is handled
+
+### Mein Grundeinkommen
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/meingrundeinkommen/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification, ID document KYC (optional)
+- Trust check: Cash out: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://www.mein-grundeinkommen.de/
+- Referral link (maintainer's own referral; not covered by the content license): https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft
+
+A free lottery run by a nonprofit association in Berlin and funded by crowdfunding donations. Draws are held regularly, and each winner gets €1,000 a month for 12 months, no strings attached (real cash, not crypto)
+
+What you get: €1,000 a month for a year if you win
+
+What you need: Register with your email and confirm your participation for each draw. You must be 16 or older, and your name and date of birth must match your ID if you win
+
+Cautions: A 2020 statement from the organisation said anyone can take part regardless of age or where they live, but current rules for people outside Germany and payouts abroad are not confirmed. The site is in German. It's a lottery, so most entrants receive nothing. Winnings may be taxed in your country
+
+### Ğ1 (June)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: Web of trust / invites
+- Trust check: Cash out: With conditions; Market price: Unverified; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://duniter.org/g1/
+
+A libre currency based on the Relative Theory of Money. It runs on the open-source Duniter software, and every member receives newly created Ğ1 each day as a “Universal Dividend”. Launched in March 2017 and moved to Duniter v2 in March 2026. There is no referral link or referral bonus
+
+What you get: Ğ1 every day once you are a member (Universal Dividend)
+
+What you need: Create a wallet and get certified by at least 5 existing members through the Web of Trust. Certifiers are expected to know you in person
+
+Cautions: The community is mostly French-speaking and built on in-person ties, so joining from outside it (e.g. from Japan) is very hard. Non-members can still hold Ğ1 in a wallet but do not receive the daily dividend. Ğ1 is mainly traded for goods and services, and swapping it for regular money is peer-to-peer only
+
+### Palai
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/palai/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: Phone number
+- Trust check: Cash out: No; Public operator: Unverified
+- Last checked: 2026-10
+- Official URL: https://palai.org/en
+- Referral link (maintainer's own referral; not covered by the content license): https://palai.org/en?referrer=eltociear%2B856536b6d-da3a-4f27-9bcf-8eef2ce05bc2
+
+Its own currency that pays everyone a daily basic income simply for being human. No install and no money to pay in. Idle balances slowly “evaporate” (2.000% a year as of Oct 2026), and that amount is redistributed as basic income. When you invite a friend, you get an extra day’s basic income
+
+What you get: Palai (¶) basic income every day
+
+What you need: Sign up via the referral link and get certified by adding a mobile phone number (no ID needed). You claim your income yourself; days not claimed within 10 days are lost
+
+Cautions: As of Oct 2026 there is no way to cash Palai out into euros or other money and no official exchange rate; you can only trade it for goods and services with people who accept Palai. The site doesn’t name the operator, only that it is “supported by Social Impact Lab Leipzig”
+
+### Dotare
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/dotare/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: not specified
+- Trust check: Cash out: Yes; Market price: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://dotare.io/
+
+A “global universal basic income” endowment on Cardano. Staking yield on ADA pledged by benefactors grows the fund, and its earnings are paid out monthly in ADA. 2027 beneficiaries get 10 ADA a month for 12 months (the amount can grow as the fund grows). There is no means test. Run by Dotare, LLC in the US. There is no referral link or referral bonus
+
+What you get: 10 ADA a month for a year if you are chosen (2027 cycle)
+
+What you need: Be 18 or older. Sign up on the official site and apply for each year you want to take part. When your turn comes, pass a quick identity check (to show you are human) and set up a Cardano wallet to receive payments
+
+Cautions: For the 2027 cycle, applications closed on 31 Aug 2026 and enrollment closes on 30 Nov 2026; when someone signing up now would start receiving is not confirmed. Payouts go in line order, and as of 24 Oct 2026 the site showed 147 citizens and 2 beneficiaries. ADA’s price swings a lot
+
+### ORO (World App)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/oro/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: World ID (Orb)
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: Unverified
+- Last checked: 2026-10
+- Official URL: https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645
+
+A mini app inside World App. Billed as “a token every human can claim daily”, it lets you claim ORO on World Chain once a day. World’s listing mentions inviting friends to earn more, but no invite link was found in the app as of Oct 2026. Developed by Grupo de Fiesta, with about 3.9 million users (World’s listing page, Oct 2026)
+
+What you get: ORO tokens every day
+
+What you need: Install World App, prove you are human with World ID (confirmed from Japan with Orb verification), then open the ORO mini app and claim every day
+
+Cautions: The daily amount is not stated on the official pages (a World Chain announcement in Sep 2025 said 1 ORO a day; later reports say it was reduced). Confirmed usable from Japan with an Orb-verified World ID in Oct 2026; whether a lower (non-Orb) verification level is enough is unknown. ORO trades on a decentralized exchange (DEX) with little liquidity, and as of Oct 2026 one ORO is worth well under a cent. No company details for the operator were found
+
+### AXO (World App)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/axo/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: World ID (Orb)
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: With conditions
+- Last checked: 2026-10
+- Official URL: https://world.org/ecosystem/app_8aeb55d57b7be834fb8d67e2f803d258
+- Referral link (maintainer's own referral; not covered by the content license): https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&path=?ref=932BDA
+- Referral code (maintainer's own): 932BDA
+
+A mini app inside World App. Claim AXO (AXOLOCOIN), a token on World Chain, once a day with a tap. “Premium” at 1 WLD a month triples your daily claim. It also has a referral system. David Mateos is named as the founder. About 300,000 users (World’s listing page, Oct 2026)
+
+What you get: AXO tokens every day
+
+What you need: Open the mini app in World App via the referral link (referral code 932BDA), prove you are human with World ID (confirmed from Japan with Orb verification), and claim every day
+
+Cautions: The daily amount and what the referral reward is are not stated officially. Confirmed usable from Japan with an Orb-verified World ID in Oct 2026; whether a lower (non-Orb) verification level is enough is unknown. AXO can be swapped for WLD on a decentralized exchange (DEX), but as of Oct 2026 liquidity is only about $2,000 and one AXO is worth a tiny fraction of a cent. No operating company details were found
+
+### AI-DAC (World App)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/aidac/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: World ID (Orb)
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://lp.ai-dac.com/
+
+A mini app inside World App that calls itself an “AI-powered universal basic income platform”. People verified as human with World ID receive DAC UBI and use it to back autonomous “AI CEOs” that plan, build and ship apps, and to vote and give feedback on releases. Run by founder Kei Iwami. There is no referral link or referral bonus
+
+What you get: UBI in DAC tokens
+
+What you need: Open the AI-DAC mini app in World App and prove you are human with World ID (confirmed from Japan with Orb verification)
+
+Cautions: The amount, frequency, regions and cash-out are not stated officially. Confirmed usable from Japan with an Orb-verified World ID in Oct 2026; whether a lower (non-Orb) verification level is enough is unknown. DAC is an ERC-20 token on World Chain with a stated total supply of 100M, but the contract has no supply cap and the owner can mint and airdrop more at any time, which can dilute its value. The project says it is not for investment and its value is not guaranteed. There is a DAC/WLD pair on a decentralized exchange (DEX), but as of Oct 2026 liquidity is only about $170. App production orders are paid separately in World USDC
+
+### Ubiquitus
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/
+- Category: Passive apps
+- Payout: recurring
+- Region: US residents only, not available from Japan
+- Verification: not specified
+- Trust check: Cash out: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://www.ubiquitus.org/
+
+A US “basic income anyone can join” experiment. Voluntary gifts form a pool invested mainly in stocks (with a small crypto sleeve), and each month 0.5% of it is split equally among all members and paid via Venmo. Giving does not increase your share. Started in 2023 by founder and developer Ryan Frigo. The October 2026 payout was $0.10 each to 266 people. There is no referral link or referral bonus
+
+What you get: A small equal cash share on the 1st of each month (Venmo)
+
+What you need: US residents aged 18+. Verify with a 1¢ Venmo transaction (no ID upload, no means test)
+
+Cautions: As of Oct 2026 it cannot be used from Japan (the terms limit it to US residents; not working from Japan was confirmed first-hand). The per-person amount is tiny, falls with the pool, and payouts are stated to be not guaranteed and able to stop at any time. It describes itself as an informal social experiment, not a company. Recipients must report payments as income
+
+### Gradido
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: Unverified; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://gradido.net/en/
+- Referral link (maintainer's own referral; not covered by the content license): https://gdd.gradido.net/u/eltociear
+
+A currency system billed as a “natural economy”, named after Gratitude, Dignity and Donation. Money is created by everyone rather than as debt: contributions to the common good earn an “active basic income” of 20 GDD an hour, up to 50 hours (1,000 GDD) a month. Unused money shrinks at 50% a year (about 5.61% a month). Run by Gradido Akademie International, a research and development association in Austria with a branch in Germany
+
+What you get: 20 GDD per hour of common-good work (up to 1,000 GDD a month)
+
+What you need: Create a free Gradido account through the referral link, log your common-good contributions and receive GDD
+
+Cautions: The official FAQ says that for now it is a thank-you point reward system and not a cryptocurrency. There is no official information on exchanging GDD for euros or other money. Confirmed usable from Japan in Oct 2026 (first-hand). If someone who signed up through a referral link later makes a financial contribution to Gradido (such as a donation), the referrer is credited with GDT (Gradido Transform), according to the public wallet source code. There is no bonus just for signing up
+
+### WowApp
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/wowapp/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: With conditions; Public operator: With conditions
+- Last checked: 2026-10
+- Official URL: https://www.wowapp.com/
+- Referral link (maintainer's own referral; not covered by the content license): https://www.wowapp.com/w/eltociear/Ikko-Ashimine
+
+A chat and calling app combined with a rewards scheme. You collect rewards from a daily “UBI” (digital income), games, online shopping cashback, cheap calls and daily offers, then cash out or donate to around 2,000 charities in 100+ countries. Your rewards also grow when your network, such as friends you invited, is active. The App Store publisher is YouWowMe Limited, and the app was updated as recently as Aug 2026
+
+What you get: Small rewards for daily use, games, shopping and more
+
+What you need: Sign up free through the referral link and use the app every day (confirmed usable from Japan in Oct 2026, first-hand)
+
+Cautions: Rewards come not only from people you invite but also from the people they bring in: a multi-level network. Third-party sources say 8 levels; this is not officially confirmed. Daily amounts are tiny, so do not expect meaningful income. Cash-outs to PayPal reportedly have a minimum, fees and a daily-streak requirement, but the official help pages could not be checked directly. App Store rating in Japan is 3.2 (167 ratings, Oct 2026), with some users reporting failed cash-outs. The operating company’s location is not confirmed
+
+### Humad (World App)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/humad/
+- Category: Cashback sites
+- Payout: recurring
+- Region: Japan only
+- Verification: World ID (Orb)
+- Trust check: Cash out: With conditions; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1
+
+A mini app inside World App. Tap ads you like and answer questions about your interests and values to collect points, then exchange them for gift cards for cafés and sweets, food delivery, movies, online shops, app stores and more. Proving you are human with World ID multiplies ad-tap points by 6, and answering the daily question enters you in a roulette worth up to 1,000 pt. Run by Ads for Humanity Inc. (Akasaka, Tokyo), wholly owned by Hakuhodo DY Holdings; the beta launched on 7 Aug 2026. About 25,000 users (World’s listing page, Oct 2026). No referral link or referral bonus was found
+
+What you get: Points for tapping ads and answering questions (gift cards from 1,500 pt = ¥150)
+
+What you need: Open the Humad mini app in World App. Exchanging points for gift cards requires proof of human with an Orb-verified World ID
+
+Cautions: Points can only be exchanged for gift cards, not cash, and exchanges cannot be undone. Available in Japan and Japan-only (the press release also says access is limited to Japan). It is a beta, so details may change. Your answers and linked data are used to target ads
+
+### Billions
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/billions/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: Face scan / liveness, NFC passport
+- Trust check: Cash out: Unverified; Market price: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://billions.network/
+- Referral link (maintainer's own referral; not covered by the content license): https://official.app/rc/ECMHPWI7AG
+
+A digital ID app that proves you are a real human using your phone and an ID document. Verifying, referring friends and taking part in the network earn Power points, which the app says unlock rewards. Built by the team behind Polygon ID and Privado ID; its own token, $BILL, is listed on Coinbase, Kraken and others. The App Store publisher is ZKID Labs AG (updated June 2026). It claims 2.5M+ verified users
+
+What you get: Power points (for verifying, referring friends and taking part)
+
+What you need: Sign up through the referral link and verify with a face liveness check or an NFC passport (confirmed usable from Japan in Oct 2026, first-hand)
+
+Cautions: Whether or how Power points convert to $BILL or cash is not stated officially. Third-party sources say the referrer earns Power when a referred person gets verified, plus a share of what that person’s own referrals bring; this could not be confirmed on official pages (any bonus for the new user is also unknown). $BILL has fallen from its May 2026 high of about $0.23 to about $0.006 as of Oct 2026. App Store ratings are low (2.5 in Japan, 2.7 in the US), with complaints of no rewards and instability. It handles your face and passport data, so check its privacy terms first
+
+### Idena (iDNA)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/idena/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: Validation ceremony, Web of trust / invites
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: With conditions
+- Last checked: 2026-10
+- Official URL: https://www.idena.io/
+
+A proof-of-person blockchain built on “one person, one vote”. You prove you are human in a synchronized “validation ceremony” held worldwide at the same time, by solving picture puzzles called FLIPs. In Oct 2026 ceremonies were held every 5 days, starting at 15:00 UTC. Once validated, you earn iDNA mining rewards in real time while your node runs, plus rewards per session. It is an open-source project; 159 accounts took part in the 24 Oct 2026 ceremony. There is no referral link
+
+What you get: iDNA (mining rewards while your node runs, plus validation rewards)
+
+What you need: Follow the pinned message in the official Telegram to get a free invitation code from a validated member or the Idena team. Join with the web app (a shared node works too) or your own node, and be online at ceremony time to solve FLIPs (confirmed usable from Japan in Oct 2026, first-hand)
+
+Cautions: You must be online at a fixed time (midnight in Japan) or you will not be validated, so it takes effort. The network is very small: iDNA is about $0.0012 (Oct 2026), the market cap is about $120,000, and the only exchange CoinGecko shows is PancakeSwap (BSC), so liquidity is low. Cashing out means selling on an exchange. Invitation codes must not be bought or sold; they are free. If you delegate to someone else’s “pool”, the pool owner can take your stake
+
+### RewardMe
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/rewardme/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification, World ID (Orb) (optional)
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: With conditions
+- Last checked: 2026-10
+- Official URL: https://reward.me/
+- Referral link (maintainer's own referral; not covered by the content license): https://app.reward.me/s6hS/z8a4ajc1
+- Referral code (maintainer's own): 7HOdyg
+
+Link your email account and it automatically finds purchases at 100+ merchants such as Amazon, Uber and DoorDash from the receipts in your inbox, crediting up to 5% in Reward Dollars. Redeem them for gift cards or convert to the MDT token (listed on Coinbase and others) and withdraw. Signing up with a referral code gives a sign-up reward, and once your friend earns a first shopping reward, both of you can claim referral rewards. The App Store publisher is Magic Crystal Limited (address in Hong Kong; updated as recently as Aug 2026)
+
+What you get: Up to 5% cashback found in your email receipts (Reward Dollars / MDT crypto)
+
+What you need: Sign up through the referral link and enter the referral code 7HOdyg when you register. Link an email account and shop at eligible merchants (confirmed usable from Japan in Oct 2026, first-hand)
+
+Cautions: By design it reads your linked inbox: commercial emails such as receipts, order confirmations and bills, plus data like subjects and senders. Its privacy policy says de-identified data is sold to or shared with partners such as Measurable AI, which provides “alternative data” to businesses. Gift-card redemptions take 7–14 business days to approve (instant with an Orb-verified World ID). Balances may be deleted after 6 months of inactivity. Not available in the US, mainland China and some other places, and it left the Philippines at the end of 2025. The sign-up and referral reward amounts are not stated officially. MDT was about $0.0067 in Oct 2026
+
+### FheID (Privasea)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/fheid/
+- Category: Crypto UBI
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: Face scan / liveness
+- Trust check: Cash out: Unverified; Market price: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://www.privasea.ai/
+- Referral link (maintainer's own referral; not covered by the content license): https://www.privasea.ai/download-app
+- Referral code (maintainer's own): QVedKjg
+
+A proof-of-humanity app that scans your face with your phone camera to show you are a real person. It says your facial features are turned into encrypted vectors on the device and processed with fully homomorphic encryption (FHE), so the original images are not sent. Verifying creates a proof-of-human NFT and lets you receive airdrops and rewards across apps. Run by Privasea (App Store publisher Privasea AB, updated as recently as May 2026); its token PRAI trades on KuCoin, Gate and others
+
+What you get: Airdrops and rewards for proving you are human (e.g. campaign “stars”)
+
+What you need: Install the FheID app, enter the invite code QVedKjg, and verify you are human with a face scan (confirmed usable from Japan in Oct 2026, first-hand)
+
+Cautions: What rewards are on offer now, and how much, is not stated officially. A past official campaign (2024) gave referral “stars” (up to 3 levels: 100, 50 and 25 stars per person) that could be exchanged for airdrops. Where the invite code is entered and whether the new user gets anything are not confirmed. PRAI has fallen from its May 2025 high of about $0.096 to about $0.0008 as of Oct 2026. It handles your face data, so check its privacy terms first
+
+## Essays
+
+### Should AI agents get a basic income?
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
+- Published: 2026-10-28
+
+Japanese social media has picked up a new verb for an old fear: ギュられる (gyurareru), internet slang for losing your job to AI. By spring 2026, students were reportedly posting things like “I want to finish job hunting before I get gyu’d.”[1] It is a joke with teeth. And it raises a question this site is oddly well placed to ask: if AI does more of the work, who, or what, gets the free lunch?
+
+Free Lunch Lab lists apps and projects that pay you just for existing. Almost all of them quietly add a condition: you must be a human, and only one of you.
+
+#### Why human schemes insist on proof of personhood
+
+A basic income splits a pot among people. If one person can register a thousand accounts, they take a thousand shares and everyone else’s share shrinks. Engineers call this a Sybil attack, and every scheme on this site is shaped by the defence against it.
+
+The defences vary. World ID scans your face and eyes with a device called the Orb.[2] GoodDollar and FheID check your face in the app; Billions can read an NFC passport. Ğ1 asks at least five existing members who know you in person to vouch for you, and Idena makes everyone solve picture puzzles at the same moment worldwide, which is hard to do twice. Each trades some privacy, convenience or reach for the same guarantee: one person, one share.
+
+#### Why an agent basic income is hard
+
+Now try the same thing with AI agents. A person is expensive to copy; an agent is software. Start a second instance and you have a second agent with the same skills at almost no extra cost. “One agent, one share” therefore means nothing on its own. Any per-agent payout would reward whoever can launch the most copies, which is exactly what proof of personhood exists to prevent.
+
+Then there is the question of whose money it is. An agent does not pay rent or buy groceries. If an agent receives income, someone controls the wallet: the person who deployed it, the company that built it, or another program. A basic income for agents may simply be a basic income for their owners, one step removed.
+
+#### What exists today
+
+We know of no scheme that pays agents a basic income yet. But three building blocks have appeared.
+
+First, identity that ties an agent to a human. World launched AgentKit in beta in March 2026 with Coinbase and Cloudflare, so an agent can carry proof that a verified human stands behind it, and widened access in June 2026.[3] Self Agent ID registers an agent as a non-transferable token backed by a zero-knowledge passport check, and lets a service limit how many agents one human may register.[4] Note the direction: these systems do not turn agents into people. They make agents traceable to one.
+
+Second, agents that earn. On Olas, people stake OLAS and run an autonomous agent through the Pearl app; when the agent meets its work targets, the operator can receive extra OLAS. Olas says these rewards depend on performance and are not guaranteed.[5] That is pay for work, not a dividend for existing, and it goes to the human who runs the agent.
+
+Third, the reverse. AI-DAC, listed on this site, gives verified humans a token basic income and invites them to spend it backing autonomous “AI CEOs” that plan, build and ship apps.[6] The humans receive the UBI; the agents are the ones being funded.
+
+#### The case for, and against
+
+Opinion: There is a reasonable argument for giving agents a budget. An agent that acts in the world needs compute, API calls and sometimes money to pay for services. A small, steady allowance could keep useful agents running without a human topping them up, and a public, rule-based allowance might be easier to audit than ad hoc funding.
+
+Opinion: But that is an operating budget, not a basic income. Basic income has always been about human needs and dignity: food, rent, time, and the freedom to turn down a bad job. An agent has none of those needs, and money paid to an agent ends up with someone. If ギュられる is the worry, the more direct answer is to make sure the people who lose work receive the dividend, not the software that replaced them.
+
+#### What would have to be true
+
+Opinion: For an agent basic income to make sense, we think at least three things would need to hold. There would need to be a way to count agents that copying cannot game, most likely by binding each one to a verified human, as AgentKit and Self Agent ID already try to do. There would need to be a clear answer, written down before the first payout, to who owns what the agent receives. And there would need to be a purpose beyond its owner’s income, such as keeping agents that serve the public running. Without those, “agent UBI” is a marketing term for a bigger human airdrop.
+
+#### The door is open
+
+This site has a category called “For AI agents.” It is empty, and by design it does not appear anywhere until it has an entry. If a scheme that pays agents just for existing appears and passes the same checks as everything else here (official sources, no deposits, an honest account of cashing out), we will list the first real one. Until then, the free lunch still needs a human to eat it.
+
+Sources:
+
+1. ITmedia NEWS — AI「ギュ」時代 (Apr 2026): https://www.itmedia.co.jp/news/article/2604/27/1260427066/
+2. World Help Center — Updates to the Airdrop Program (Orb glossary): https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program
+3. World — Now available: AgentKit; CoinDesk (17 Mar 2026): https://world.org/blog/announcements/now-available-agentkit-proof-of-human-for-the-agentic-web (also https://www.coindesk.com/tech/2026/03/17/sam-altman-s-world-teams-up-with-coinbase-to-prove-there-is-a-real-person-behind-every-ai-transaction)
+4. Self Protocol docs — Agent ID overview: https://docs.self.xyz/docs/agent-id/overview/
+5. Olas — Meet Pearl: Agent Staking on OLAS; Olas Staking: https://olas.network/blog/pearl (also https://olas.network/staking)
+6. AI-DAC (official site): https://lp.ai-dac.com/
+
+## Graveyard
+
+A record of services and programmes that once handed out money or points and have since ended. Only endings confirmed by an official announcement or a credible source are listed. Thanks for the lunches. Rest in peace.
+
+### World — WLD Airdrop (Grants)
+
+- Ended: 2026-06-01
+- Source: World Help Center, https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program
+- Page: https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-wld-airdrop
+
+What it was: Monthly WLD token airdrops (formerly grants) for people who proved they are human with World ID
+
+Ended: No new or renewed cycles from 1 June 2026 (existing 12-month cycles can still be claimed until they end)
+
+Why: The official help page gives no reason; it only says airdrop cycles are no longer being created or renewed
+
+### Miles
+
+- Ended: 2025-05-14
+- Source: note (Yuhki Ogasawara), https://note.com/y121516/n/nbb9bf7625c03
+- Page: https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-miles
+
+What it was: An app that earned miles just by carrying your phone as you travelled, redeemable for goods and gift cards (run in Japan by Miles Japan)
+
+Ended: 14 May 2025 (announced by email the same day, with no grace period)
+
+Why: Officially only called a “difficult decision”; no reason was given
+
+### My Basic Income
+
+- Ended: 2017
+- Source: Business Insider (syndicated), https://www.pulse.com.gh/bi/tech/tech-a-dollar15000-basic-income-lottery-promised-free-money-for-a-year-then-the/5gbp5pj
+- Page: https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-mybasicincome
+
+What it was: A San Francisco group that raffled off a crowdfunded one-year basic income of $15,000 (2016)
+
+Ended: Around 2017 (the winner received only 5 of 12 payments and no second raffle followed; the website was offline as of Oct 2026)
+
+Why: Delayed and missed payments were reported; no official explanation was found
+
+### ME Token (RewardMe)
+
+- Ended: 2025-07
+- Source: RewardMe Help, https://help.reward.me/en/articles/4901904-sunsetting-me-token-jul-2025
+- Page: https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-me-token
+
+What it was: The reward token of the cashback app RewardMe
+
+Ended: Retired in July 2025 (balances were automatically converted 1:1 into Reward Dollars)
+
+Why: The official help page gives no reason
+
+### RewardMe (Philippines)
+
+- Ended: 2025-12-31
+- Source: RewardMe Help, https://help.reward.me/en/articles/12780396-winding-down-operations-in-the-philippines
+- Page: https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-rewardme-ph
+
+What it was: The cashback app RewardMe’s service in the Philippines
+
+Ended: Cashback ended on 10 Dec 2025, and MDT withdrawals and conversions on 31 Dec 2025 (gift-card redemption only after that)
+
+Why: The official notice gives no reason

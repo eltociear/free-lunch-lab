@@ -903,7 +903,7 @@ ${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlA
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 // ---- オープンデータ: 表示中のサービスと墓場を JSON で。data/（リポジトリに入れる）と public/（サイトで配る）の両方へ
 // generatedAt は確認月の最新値にして、中身が変わらないかぎり再ビルドで差分が出ないようにする
-const clean = t => String(t).replace(/[⁦-⁩]/g, '');
+const clean = t => String(t).replace(/[\u2066-\u2069\u200e\u200f\u202a-\u202e]/g, '');
 const DATA_LICENSE = 'CC BY 4.0 (referral links excluded)';
 const REGION = s => (s.onlyIn ? `only-${s.onlyIn}` : s.global ? 'global' : 'japan-only');
 const byId = (a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
@@ -966,6 +966,118 @@ for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', g
   fs.writeFileSync(path.join(DATA_DIR, file), txt);
   fs.writeFileSync(path.join(OUT, file), txt);
 }
+
+// ---- llms.txt / llms-full.txt（llmstxt.org の形式）。英語のみ、絶対 URL。日付は確認月の最新値なので再ビルドで差分が出ない
+const REPO_URL = 'https://github.com/eltociear/free-lunch-lab';
+const md = t => clean(t).replace(/\s+/g, ' ').trim();
+const mdLink = t => md(t).replace(/[[\]]/g, '');
+const firstSentence = t => { const m = md(t).match(/^.*?[.!?](?=\s|$)/); return m ? m[0].replace(/[.!?]$/, '') : md(t); };
+const regionEn = s => s.onlyIn ? `${T.en['only_' + s.onlyIn]}, not available from Japan` : s.global ? 'available in Japan and worldwide' : 'Japan only';
+const verifyEn = s => (s.verify || []).length ? s.verify.map(v => md(VERIFY[v.method].name.en) + (v.optional ? ' (optional)' : '')).join(', ') : 'not specified';
+const llmsHead = full => `# Free Lunch Lab
+
+> Free Lunch Lab ("There is such a thing as a free lunch.") is a curated directory of apps and projects that pay you a basic income or rewards just for existing: crypto UBI, passive apps, cashback and more. Every entry links to its official source and has a "last checked" month, and the risks and cautions are listed next to the rewards. The site is available in ${LANGS.length} languages (${LANGS.join(', ')}).
+
+- Referral links: some sign-up links are the maintainer's referral links. They are marked in the data (\`referral\` in services.json)${full ? ' and labelled "Referral link" below' : ''}; official URLs are always given too.
+- License: content is CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), referral links excluded.
+- Data last checked: ${latest}
+- ${full ? `Short index: ${SITE_URL}/llms.txt` : `Full text: ${SITE_URL}/llms-full.txt`}
+`;
+const llmsTxt = `${llmsHead(false)}
+## Data
+
+- [services.json](${SITE_URL}/services.json): all visible services as JSON, with descriptions in every language, region, verification, trust check and referral info
+- [graveyard.json](${SITE_URL}/graveyard.json): ended basic-income-style programs, each with a source
+${LANGS.map(l => `- [RSS feed (${l})](${feedAbs(l)}): update log in ${LANG_NAMES[l] === 'EN' ? 'English' : LANG_NAMES[l]}`).join('\n')}
+
+## Services
+
+${live.map(s => `- [${mdLink(s.nameEn || s.name)}](${svcAbs(DEFAULT_LANG, s)}): ${md(s.en.gain)}. ${firstSentence(s.en.note)} (${md(CATS.en[s.cat])}; ${regionEn(s)}; verification: ${verifyEn(s)})`).join('\n')}
+
+## Guides
+
+${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LANG, m)}): services that use ${md(VERIFY[m].name.en)}`).join('\n')}
+- [${md(T.en.orgsH1)}](${orgAbs(DEFAULT_LANG)}): ${md(T.en.orgsDesc)}
+- [${md(T.en.tlTitle)}](${tlAbs(DEFAULT_LANG)}): ${md(T.en.tlDesc)}
+- [${md(T.en.graveTitle)}](${graveAbs(DEFAULT_LANG)}): ${md(T.en.graveDesc)}
+${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}): ${md(e.desc.en)}`).join('\n')}
+
+## Other languages
+
+${LANGS.filter(l => l !== DEFAULT_LANG).map(l => `- [${LANG_NAMES[l]}](${abs(l)})`).join('\n')}
+
+## Optional
+
+- [GitHub repository](${REPO_URL}): source code and data
+- [X: @FreeLunchLab](https://x.com/FreeLunchLab)
+- [CONTRIBUTING](${REPO_URL}/blob/main/CONTRIBUTING.md): how to suggest or correct a service
+`;
+const TRUSTK = [['cash', 'Cash out'], ['price', 'Market price'], ['operator', 'Public operator']];
+const svcFull = s => {
+  const d = s.en;
+  const trustLine = s.trust ? TRUSTK.filter(([k]) => s.trust[k] && s.trust[k] !== 'na').map(([k, n]) => `${n}: ${T.en[TV[s.trust[k]]]}`).join('; ') : '';
+  return [
+    `### ${md(s.nameEn || s.name)}`,
+    '',
+    `- Page: ${svcAbs(DEFAULT_LANG, s)}`,
+    `- Category: ${md(CATS.en[s.cat])}`,
+    `- Payout: ${s.type === 'loop' ? 'recurring' : 'one-time'}`,
+    `- Region: ${regionEn(s)}`,
+    `- Verification: ${verifyEn(s)}`,
+    ...(trustLine ? [`- Trust check: ${trustLine}`] : []),
+    `- Last checked: ${s.checked}`,
+    `- Official URL: ${s.official}`,
+    ...(s.ref ? [`- Referral link (maintainer's own referral; not covered by the content license): ${s.ref}`] : []),
+    ...(s.code ? [`- Referral code (maintainer's own): ${s.code}`] : []),
+    '',
+    md(d.note),
+    '',
+    `What you get: ${md(d.gain)}`,
+    '',
+    `What you need: ${md(d.need)}`,
+    ...(d.caution ? ['', `Cautions: ${md(d.caution)}`] : []),
+  ].join('\n');
+};
+const essayFull = e => [
+  `### ${md(e.title.en)}`,
+  '',
+  `- Page: ${essayAbs(DEFAULT_LANG, e)}`,
+  `- Published: ${e.date}`,
+  '',
+  ...e.blocks.en.map(([k, t]) => k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : md(t)).flatMap(x => [x, '']),
+  'Sources:',
+  '',
+  ...e.sources.map(s => `${s.n}. ${md(s.label)}: ${s.url}${s.url2 ? ` (also ${s.url2})` : ''}`),
+].join('\n');
+const graveFull = g => [
+  `### ${md(g.name)}`,
+  '',
+  `- Ended: ${g.endedOn}`,
+  `- Source: ${md(g.sourceLabel)}, ${g.source}`,
+  `- Page: ${graveAbs(DEFAULT_LANG)}#grave-${g.id}`,
+  ...['what', 'ended', 'why'].filter(k => g[k] && g[k].en).flatMap(k => ['', `${{ what: 'What it was', ended: 'Ended', why: 'Why' }[k]}: ${md(g[k].en)}`]),
+].join('\n');
+const llmsFull = `${llmsHead(true)}
+## Services
+
+${live.map(svcFull).join('\n\n')}
+
+## Essays
+
+${ESSAYS.map(essayFull).join('\n\n')}
+
+## Graveyard
+
+${md(T.en.graveIntro)}
+
+${GRAVE.map(graveFull).join('\n\n')}
+`;
+for (const [file, txt] of [['llms.txt', llmsTxt], ['llms-full.txt', llmsFull]]) {
+  if (/[⁦-⁩‎‏‪-‮]/.test(txt)) throw new Error(`${file}: bidi control characters left`);
+  fs.writeFileSync(path.join(OUT, file), txt);
+}
+// Cloudflare の静的アセットは .txt を charset なしの text/plain で返すので、_headers で utf-8 を明示する（_headers 自体は配信されない）
+fs.writeFileSync(path.join(OUT, '_headers'), ['/llms.txt', '/llms-full.txt'].map(p => `${p}\n  Content-Type: text/plain; charset=utf-8\n`).join(''));
 
 // README.md のサービス表・団体一覧も同期する
 require('./readme.js').updateReadme();
