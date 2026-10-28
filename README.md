@@ -105,7 +105,7 @@ Full list with descriptions: https://neteru-nyukin.eltociear.workers.dev/organiz
 - `brand/x/` — profile images for the X account and the script that renders them (not deployed)
 - `public/` — build output, deployed to Cloudflare Workers (static assets)
 
-URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/services/{id}/` for each service, `/organizations/` and `/{lang}/organizations/` for organizations, `/graveyard/` and `/{lang}/graveyard/` for ended services (data in `GRAVE`; only endings confirmed by an official or credible source).
+URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/services/{id}/` for each service, `/organizations/` and `/{lang}/organizations/` for organizations, `/verify/{method}/` and `/{lang}/verify/{method}/` for services by verification method (e.g. [World ID](https://neteru-nyukin.eltociear.workers.dev/verify/world-id/)), `/graveyard/` and `/{lang}/graveyard/` for ended services (data in `GRAVE`; only endings confirmed by an official or credible source).
 
 ## Build and deploy
 
@@ -128,6 +128,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the listing criteria first. Then add 
 - `ease` (1–5), `official` (official site), `added` (date, shows a NEW badge for 14 days)
 - `checked` — month the facts were last verified, `"YYYY-MM"` (required for visible entries; shown as “Checked Oct 2026”)
 - `ref` / `code` — referral link and code; `showCode: true` shows the code box next to the link; `codeOnly: true` when the code is entered in the app and the button points to the official page; `noRef: true` to list a service that has no referral program (an entry with neither `ref` nor `noRef` is hidden)
+- `verify` — how you prove who you are, an array of `{ "method": ..., "optional": true? }` with methods from `VERIFY` (`world-id`, `face`, `passport-nfc`, `kyc-id`, `phone`, `web-of-trust`, `ceremony`, `none`). Leave it empty if the entry’s own facts do not say which method is used. A page is built at `/verify/{method}/` for every method with 2 or more services (required first, then optional)
 - `trust` — `cash`, `price`, `operator`, each `yes` / `partial` / `no` / `unknown` (`price: na` for non-crypto)
 - `ja`, `en`, `zh`, `hi`, `es`, `de`, `ar` — `gain`, `note`, `need`, `caution` per language (English is the fallback)
 

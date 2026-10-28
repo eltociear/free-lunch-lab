@@ -30,6 +30,11 @@ module.exports = {
         "price": "yes",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "face"
+        }
+      ],
       "ja": {
         "gain": "G$トークンを毎日",
         "note": "24時間に1回、アプリで受け取る非営利のUBIプロジェクト。その日に受け取った人数で配分を分ける",
@@ -92,6 +97,11 @@ module.exports = {
         "price": "unknown",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "web-of-trust"
+        }
+      ],
       "ja": {
         "gain": "1時間に1 CRC（1日24 CRC）",
         "note": "Gnosisが手がける、一人ひとりが自分の通貨を発行するしくみ。2025年5月にCircles 2.0が公開され、2026年6月にはGnosis AppがCircles中心に作り直された。このサイトの紹介リンクはまだない",
@@ -151,6 +161,11 @@ module.exports = {
         "price": "no",
         "operator": "unknown"
       },
+      "verify": [
+        {
+          "method": "kyc-id"
+        }
+      ],
       "ja": {
         "gain": "MECトークンを毎日",
         "note": "Meta Earthのウォレットアプリ。本人確認すると「無条件のベーシックインカム」として1 MECが付与され、毎日のチェックインでも少しずつ増える",
@@ -210,6 +225,7 @@ module.exports = {
         "price": "unknown",
         "operator": "unknown"
       },
+      "verify": [],
       "ja": {
         "gain": "PoYトークンを毎月",
         "note": "「60年間毎月配る」とうたうUBIトークン。紹介コードで登録すると5トークンのボーナス（2026年1月時点）。早く登録した人ほど配布が多い",
@@ -364,6 +380,11 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "ja": {
         "gain": "最大2,300ポイント",
         "note": "2026年10月の内容（1ポイント＝1円）。3日連続ログインで100ポイント、広告利用で合計3,000ポイントたまると1,000ポイントなど",
@@ -471,6 +492,11 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "ja": {
         "gain": "仕事が決まるたびにマッチング報酬",
         "note": "完全招待制の仕事マッチング。自分が招待した人や、その先の人が仕事に決まるたび、招待報酬が何度でも入る（分配率7.5〜15%）。DMMやGMOペパボなどが求人を掲載",
@@ -531,6 +557,11 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "added": "2026-10-09",
       "checked": "2026-10",
       "ja": {
@@ -593,6 +624,11 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "ja": {
         "gain": "1,000歩で0.95コイン",
         "note": "スマホを持って歩くだけで、歩数が自動でコインになる。コインはアプリ内のマーケットで商品や割引、寄付と交換できる",
@@ -653,6 +689,11 @@ module.exports = {
         "price": "yes",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "ja": {
         "gain": "ポイント（のちにGRASSトークン）",
         "note": "使っていない回線の帯域をAIのWebデータ収集に貸し出すDePIN。PCのブラウザ拡張やアプリを入れておくだけで、接続時間と実際に使われた帯域に応じてポイントがたまり、シーズンごとのエアドロップで配られる",
@@ -713,6 +754,11 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "ja": {
         "gain": "共有した通信量に応じて現金",
         "note": "使っていない回線を企業のWebデータ収集に貸し出す、通信量シェアの定番アプリ。紹介経由の登録で$3のウェルカムボーナス（公式ブログより）。$20たまるとPayPalなどで出金できる",
@@ -773,6 +819,11 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "ja": {
         "gain": "共有した通信量に応じて現金",
         "note": "IPRoyal社の通信量シェアアプリ。PCアプリを入れておくと回線の空きが報酬になる。アンケートやゲームでも稼げる。$5からPayPal・ビットコインなどで出金できる",
@@ -833,6 +884,11 @@ module.exports = {
         "price": "yes",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "kyc-id"
+        }
+      ],
       "ja": {
         "gain": "PIを毎日",
         "note": "アプリで24時間に1回ボタンを押すとPIがたまる。紹介した人が増えるほど採掘ペースも上がる。2025年2月に一般公開され、OKX・Bitget・MEXCなどで取引されている",
@@ -893,6 +949,11 @@ module.exports = {
         "price": "no",
         "operator": "unknown"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "ja": {
         "gain": "KIMを毎日",
         "note": "Pi Networkに似た、スマホで毎日“採掘”する暗号資産アプリ。紹介コードを使って登録すると採掘ペースが上がるとされる",
@@ -953,6 +1014,11 @@ module.exports = {
         "price": "unknown",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "face"
+        }
+      ],
       "ja": {
         "gain": "ITLGトークンを毎日",
         "note": "顔認証で“本人であること”を確かめた人（Human Node）に、ITLGトークンを配るプロジェクト。アプリで約4時間ごと（1日最大6回）にチェックインするとたまる",
@@ -1013,6 +1079,15 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "none"
+        },
+        {
+          "method": "kyc-id",
+          "optional": true
+        }
+      ],
       "ja": {
         "gain": "当選すると月1,000ユーロを1年間",
         "note": "ベルリンの非営利団体が、クラウドファンディングの寄付を元手に開く無料の抽選。定期的に抽選があり、当たった人は月1,000ユーロを12か月、条件なしで受け取れる（暗号資産ではなく現金）",
@@ -1075,6 +1150,11 @@ module.exports = {
         "price": "unknown",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "web-of-trust"
+        }
+      ],
       "ja": {
         "gain": "メンバーになるとĞ1を毎日（ユニバーサル・ディビデンド）",
         "note": "「貨幣の相対性理論」にもとづく自由通貨。Duniterというオープンソースのソフトで動き、メンバー全員に「ユニバーサル・ディビデンド」としてĞ1が毎日新しく発行される。2017年3月に始まり、2026年3月にDuniter v2へ移行した。紹介リンクや紹介特典はない",
@@ -1135,6 +1215,11 @@ module.exports = {
         "price": "na",
         "operator": "unknown"
       },
+      "verify": [
+        {
+          "method": "phone"
+        }
+      ],
       "ja": {
         "gain": "Palai（¶）のベーシックインカムを毎日",
         "note": "「人間だから」という理由だけで毎日ベーシックインカムが配られる独自通貨。アプリのインストールは不要で、お金を払う必要もない。使わずに置いておいた残高は少しずつ「蒸発」し（2026年10月時点で年2.000%）、その分がベーシックインカムとして配り直される。友だちを紹介すると、紹介した側に1日分のベーシックインカムが追加でもらえる",
@@ -1196,6 +1281,7 @@ module.exports = {
         "price": "yes",
         "operator": "yes"
       },
+      "verify": [],
       "ja": {
         "gain": "受給者に選ばれると月10 ADAを1年間（2027年分）",
         "note": "Cardano上の「世界向けベーシックインカム基金」。寄付者が預けたADAのステーキング利回りなどで基金を運用し、その収益を受給者に毎月ADAで配る。2027年分の受給者は月10 ADAを12か月受け取れる（金額は基金の成長で増えることがある）。所得の審査はない。運営はアメリカのDotare, LLC。紹介リンクや紹介特典はない",
@@ -1258,6 +1344,11 @@ module.exports = {
         "price": "yes",
         "operator": "unknown"
       },
+      "verify": [
+        {
+          "method": "world-id"
+        }
+      ],
       "ja": {
         "gain": "ORO トークンを毎日",
         "note": "World App の中で動くミニアプリ。「すべての人間が毎日受け取れるトークン」として、World Chain 上の ORO を1日1回受け取れる。Worldの掲載ページには「友だちを招待するとORO が多くもらえる」とあるが、2026年10月時点でアプリ内に招待リンクは見つからなかった。開発は Grupo de Fiesta、利用者は約390万人（2026年10月時点のWorldの掲載ページ）",
@@ -1319,6 +1410,11 @@ module.exports = {
         "price": "yes",
         "operator": "partial"
       },
+      "verify": [
+        {
+          "method": "world-id"
+        }
+      ],
       "ja": {
         "gain": "AXO トークンを毎日",
         "note": "World App の中で動くミニアプリ。World Chain 上のトークン AXO（AXOLOCOIN）を1日1回タップで受け取れる。月1 WLDの「Premium」に入ると毎日の受け取り量が3倍になる。紹介のしくみもある。創設者として David Mateos の名前が公開されている。利用者は約30万人（2026年10月時点のWorldの掲載ページ）",
@@ -1381,6 +1477,11 @@ module.exports = {
         "price": "yes",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "world-id"
+        }
+      ],
       "ja": {
         "gain": "DAC トークンのUBI",
         "note": "World App の中で動くミニアプリで、「AIを使ったユニバーサル・ベーシックインカムのプラットフォーム」をうたう。World ID で人間と確認された人が DAC のUBIを受け取り、それを使って、アプリを企画・開発・公開する自律型の「AI CEO」を応援したり、リリースに投票やフィードバックをしたりする。運営は創設者の Kei Iwami 氏。紹介リンクや紹介特典はない",
@@ -1443,6 +1544,7 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [],
       "ja": {
         "gain": "毎月1日に、参加者で等分した少額の現金（Venmo）",
         "note": "アメリカの「誰でも参加できるベーシックインカム」の社会実験。任意の寄付を基金にして株式など（一部は暗号資産）で運用し、毎月その0.5%を参加者全員で等分してVenmoで配る。寄付しても受け取る額は増えない。2023年に始まり、創設者・開発者は Ryan Frigo 氏。2026年10月の配分は266人に1人0.10ドル。紹介リンクや紹介特典はない",
@@ -1503,6 +1605,11 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "ja": {
         "gain": "公益への貢献1時間につき20 GDD（月最大1,000 GDD）",
         "note": "「感謝（Gratitude）・尊厳（Dignity）・寄付（Donation）」から名づけられた、「自然の経済」をうたう独自通貨のしくみ。お金は借金からではなく参加者みんなが生み出すという考え方で、公益になる活動をすると「アクティブ・ベーシックインカム」として1時間20 GDD、月50時間（1,000 GDD）まで受け取れる。使わないお金は年50%（月約5.61%）の割合で目減りする。運営はオーストリアの研究開発団体 Gradido Akademie International（ドイツにも拠点）",
@@ -1563,6 +1670,11 @@ module.exports = {
         "price": "na",
         "operator": "partial"
       },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
       "ja": {
         "gain": "毎日の利用やゲーム・買い物などで少額の報酬",
         "note": "チャット・通話アプリに、報酬のしくみを組み合わせたサービス。毎日の「UBI（デジタル収入）」の受け取り、ゲーム、オンラインショッピングのキャッシュバック、格安通話、デイリーオファーなどで報酬がたまり、出金するか、100か国以上の約2,000の慈善団体に寄付できる。招待した友だちなど自分のネットワークが活動すると、自分の報酬も増える。App Store の提供元は YouWowMe Limited で、2026年8月にも更新されている",
@@ -1625,6 +1737,11 @@ module.exports = {
         "price": "na",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "world-id"
+        }
+      ],
       "ja": {
         "gain": "広告のタップや質問への回答でポイント（1,500pt＝150円分からギフト券に交換）",
         "note": "World App の中で動くミニアプリ。好きな広告をタップしたり、興味や価値観についての質問に答えたりするとポイントがたまり、カフェ・スイーツ、フードデリバリー、映画、ECサイト、アプリストアなどのギフト券に交換できる。World ID で人間証明をすると広告タップのポイントが6倍になり、デイリークエスチョンに答えると最大1,000ptが当たるルーレットにも参加できる。運営は博報堂DYホールディングス100%出資の株式会社Ads for Humanity（東京・赤坂）で、2026年8月7日にベータ版を公開。World の掲載ページでの利用者は約2.5万人（2026年10月）。紹介リンクや紹介特典は見つからなかった",
@@ -1685,6 +1802,14 @@ module.exports = {
         "price": "yes",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "face"
+        },
+        {
+          "method": "passport-nfc"
+        }
+      ],
       "ja": {
         "gain": "Power ポイント（認証・友だち紹介・参加で貯まる）",
         "note": "スマホと身分証で「本物の人間」であることを証明するデジタルIDアプリ。認証や友だちの紹介、ネットワークへの参加で Power ポイントが貯まり、特典の解放に使えると説明されている。Polygon ID・Privado ID を手がけたチームによるもので、独自の暗号資産 $BILL は Coinbase や Kraken などに上場している。App Store の提供元は ZKID Labs AG（2026年6月に更新）。公称の認証済みユーザーは250万人以上",
@@ -1747,6 +1872,14 @@ module.exports = {
         "price": "yes",
         "operator": "partial"
       },
+      "verify": [
+        {
+          "method": "ceremony"
+        },
+        {
+          "method": "web-of-trust"
+        }
+      ],
       "ja": {
         "gain": "iDNA（ノードを動かしている間のマイニング報酬と、認証セッションの報酬）",
         "note": "「一人一票」の仕組みで人間であることを証明する、Proof of Person 型のブロックチェーン。世界中で同時に行われる「認証セレモニー」でFLIPと呼ばれる絵のパズルを解いて認証される。2026年10月は5日ごとに開かれ、開始は15:00 UTC（日本時間の深夜0時）。認証されると、ノードを動かしている間は iDNA のマイニング報酬がリアルタイムで入り、セッションごとの報酬もある。オープンソースのプロジェクトで、2026年10月24日のセレモニーでは159アカウントが対象になった。紹介リンクはない",
@@ -1808,6 +1941,15 @@ module.exports = {
         "price": "yes",
         "operator": "partial"
       },
+      "verify": [
+        {
+          "method": "none"
+        },
+        {
+          "method": "world-id",
+          "optional": true
+        }
+      ],
       "ja": {
         "gain": "受信メールのレシートから最大5%のキャッシュバック（Reward Dollars／暗号資産MDT）",
         "note": "メールアカウントを連携しておくと、Amazon・Uber・DoorDash など100以上の対象店での買い物を受信メールのレシートから自動で見つけ、最大5%の報酬（Reward Dollars）がたまる。報酬はギフト券に交換するか、暗号資産 MDT（Coinbase などに上場）にして出金できる。紹介コードで登録すると登録特典があり、友だちが最初の報酬を得ると、紹介した側・された側の両方が紹介特典を受け取れる。App Store の提供元は Magic Crystal Limited（所在地は香港。2026年8月にも更新）",
@@ -1870,6 +2012,11 @@ module.exports = {
         "price": "yes",
         "operator": "yes"
       },
+      "verify": [
+        {
+          "method": "face"
+        }
+      ],
       "ja": {
         "gain": "人間証明でエアドロップや報酬（キャンペーンの「スター」など）",
         "note": "スマホのカメラで顔を読み取り、「本物の人間」であることを証明する Proof of Humanity アプリ。顔の特徴は端末の中で暗号化されたベクトルに変換され、完全準同型暗号（FHE）で処理されるため、元の画像は送られないと説明されている。認証すると人間証明のNFTが作られ、エアドロップや各アプリの報酬を受け取れる。運営は Privasea（App Store の提供元は Privasea AB、2026年5月にも更新）で、独自の暗号資産 PRAI は KuCoin や Gate などで取引されている",
@@ -1947,6 +2094,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-28",
+      "ja": "認証方法ごとのページを追加（World ID など）",
+      "en": "Added pages by verification method (World ID and more)",
+      "zh": "新增按验证方式分类的页面（World ID 等）",
+      "hi": "वेरिफ़िकेशन के तरीके के हिसाब से पेज जोड़े (World ID आदि)",
+      "es": "Añadidas páginas por método de verificación (World ID y más)",
+      "de": "Seiten nach Verifizierungsmethode hinzugefügt (World ID u. a.)",
+      "ar": "أضفنا صفحات حسب طريقة التحقق (⁦World ID⁩ وغيرها)"
+    },
     {
       "date": "2026-10-28",
       "ja": "終了したサービスの墓場のページを追加",
@@ -2470,7 +2627,13 @@ module.exports = {
       "graveEnded": "終了",
       "graveWhy": "終わった理由",
       "graveSource": "出典",
-      "graveOnSite": "このサイトの紹介ページ"
+      "graveOnSite": "このサイトの紹介ページ",
+      "verifyH": "認証方法で探す",
+      "verifyLabel": "認証方法",
+      "verifyOpt": "任意",
+      "verifyReqH": "この認証が必要なサービス",
+      "verifyOptH": "この認証を任意で使えるサービス",
+      "verifyAll": "認証方法の一覧"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2611,7 +2774,13 @@ module.exports = {
       "graveEnded": "Ended",
       "graveWhy": "Why",
       "graveSource": "Source",
-      "graveOnSite": "Our page on this service"
+      "graveOnSite": "Our page on this service",
+      "verifyH": "Browse by verification method",
+      "verifyLabel": "Verification",
+      "verifyOpt": "optional",
+      "verifyReqH": "Services that require it",
+      "verifyOptH": "Services where it is optional",
+      "verifyAll": "All verification methods"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2752,7 +2921,13 @@ module.exports = {
       "graveEnded": "बंद हुआ",
       "graveWhy": "क्यों",
       "graveSource": "स्रोत",
-      "graveOnSite": "इस साइट पर इसका पेज"
+      "graveOnSite": "इस साइट पर इसका पेज",
+      "verifyH": "वेरिफ़िकेशन के तरीके से खोजें",
+      "verifyLabel": "वेरिफ़िकेशन",
+      "verifyOpt": "वैकल्पिक",
+      "verifyReqH": "जिन सेवाओं में यह ज़रूरी है",
+      "verifyOptH": "जिन सेवाओं में यह वैकल्पिक है",
+      "verifyAll": "सभी वेरिफ़िकेशन तरीके"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -2893,7 +3068,13 @@ module.exports = {
       "graveEnded": "结束",
       "graveWhy": "原因",
       "graveSource": "出处",
-      "graveOnSite": "本站的介绍页"
+      "graveOnSite": "本站的介绍页",
+      "verifyH": "按验证方式查找",
+      "verifyLabel": "验证方式",
+      "verifyOpt": "可选",
+      "verifyReqH": "需要此验证的服务",
+      "verifyOptH": "可选择使用此验证的服务",
+      "verifyAll": "全部验证方式"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3034,7 +3215,13 @@ module.exports = {
       "graveEnded": "Terminó",
       "graveWhy": "Por qué",
       "graveSource": "Fuente",
-      "graveOnSite": "Nuestra página sobre este servicio"
+      "graveOnSite": "Nuestra página sobre este servicio",
+      "verifyH": "Buscar por método de verificación",
+      "verifyLabel": "Verificación",
+      "verifyOpt": "opcional",
+      "verifyReqH": "Servicios que lo exigen",
+      "verifyOptH": "Servicios donde es opcional",
+      "verifyAll": "Todos los métodos de verificación"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3175,7 +3362,13 @@ module.exports = {
       "graveEnded": "انتهى",
       "graveWhy": "السبب",
       "graveSource": "المصدر",
-      "graveOnSite": "صفحتنا عن هذه الخدمة"
+      "graveOnSite": "صفحتنا عن هذه الخدمة",
+      "verifyH": "تصفّح حسب طريقة التحقق",
+      "verifyLabel": "طريقة التحقق",
+      "verifyOpt": "اختياري",
+      "verifyReqH": "خدمات تتطلبه",
+      "verifyOptH": "خدمات يكون فيها اختياريًا",
+      "verifyAll": "كل طرق التحقق"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3316,7 +3509,13 @@ module.exports = {
       "graveEnded": "Eingestellt",
       "graveWhy": "Warum",
       "graveSource": "Quelle",
-      "graveOnSite": "Unsere Seite zu diesem Dienst"
+      "graveOnSite": "Unsere Seite zu diesem Dienst",
+      "verifyH": "Nach Verifizierungsmethode suchen",
+      "verifyLabel": "Verifizierung",
+      "verifyOpt": "optional",
+      "verifyReqH": "Dienste, die das verlangen",
+      "verifyOptH": "Dienste, bei denen es optional ist",
+      "verifyAll": "Alle Verifizierungsmethoden"
     }
   },
   "ORG_REGIONS": {
@@ -3999,5 +4198,249 @@ module.exports = {
         "ar": "لا يذكر الإعلان الرسمي سببًا"
       }
     }
-  ]
+  ],
+  "VERIFY_ORDER": [
+    "world-id",
+    "face",
+    "passport-nfc",
+    "kyc-id",
+    "phone",
+    "web-of-trust",
+    "ceremony",
+    "none"
+  ],
+  "VERIFY": {
+    "world-id": {
+      "name": {
+        "ja": "World ID（Orb認証）",
+        "en": "World ID (Orb)",
+        "zh": "World ID（Orb 验证）",
+        "hi": "World ID (Orb)",
+        "es": "World ID (Orb)",
+        "de": "World ID (Orb)",
+        "ar": "⁦World ID⁩ (⁦Orb⁩)"
+      },
+      "title": {
+        "ja": "World ID（Orb認証）で使えるアプリ・サービス一覧",
+        "en": "What can you do with World ID? Apps that use Orb verification",
+        "zh": "World ID 能做什么？使用 Orb 验证的应用一览",
+        "hi": "World ID से क्या कर सकते हैं? Orb वेरिफ़िकेशन वाले ऐप",
+        "es": "¿Qué puedes hacer con World ID? Apps que usan la verificación Orb",
+        "de": "Was kann man mit World ID machen? Apps mit Orb-Verifizierung",
+        "ar": "ماذا يمكنك أن تفعل بـ⁦World ID⁩؟ تطبيقات تستخدم تحقق ⁦Orb⁩"
+      },
+      "intro": {
+        "ja": "World ID は、Orb という専用の機械で顔と目を撮影して、一人の実在する人間であることを証明するデジタルIDです。World は画像を暗号化して処理すると説明していますが、生体情報を扱う点は理解しておきたいところです。このサイトに載っている World App のミニアプリ（ORO・AXO・AI-DAC）は、2026年10月に Orb 認証済みのアカウントで日本から使えることを確認しています。Orb より低い認証レベルで足りるかは分かっていません。Humad は日本限定です。",
+        "en": "World ID is a digital ID that proves you are one unique, real person by scanning your face and eyes with a device called the Orb. World says the images are processed in encrypted form, but it is still biometric data, so weigh that. The World App mini apps listed here (ORO, AXO, AI-DAC) were confirmed to work from Japan with an Orb-verified account in Oct 2026; whether a lower verification level is enough is unknown. Humad is Japan-only.",
+        "zh": "World ID 是一种数字身份：用名为 Orb 的专用设备拍摄你的面部和眼睛，证明你是独一无二的真人。World 称图像会以加密方式处理，但它仍涉及生物特征信息，需要心中有数。本站收录的 World App 小程序（ORO、AXO、AI-DAC）已于 2026 年 10 月确认可用经 Orb 验证的账户在日本使用；低于 Orb 的验证等级是否足够尚不清楚。Humad 仅限日本。",
+        "hi": "World ID एक डिजिटल ID है, जो Orb नाम के उपकरण से आपका चेहरा और आँखें स्कैन करके साबित करती है कि आप एक अनोखे, असली इंसान हैं। World के अनुसार तस्वीरें एन्क्रिप्टेड रूप में प्रोसेस होती हैं, फिर भी यह बायोमेट्रिक डेटा है, इसे ध्यान में रखें। यहाँ दिए World App मिनी ऐप (ORO, AXO, AI-DAC) अक्टूबर 2026 में Orb से वेरिफ़ाई किए गए अकाउंट से जापान में चलते पाए गए; Orb से कम लेवल काफ़ी है या नहीं, यह पता नहीं। Humad सिर्फ़ जापान के लिए है।",
+        "es": "World ID es una identidad digital que demuestra que eres una persona real y única escaneando tu cara y tus ojos con un dispositivo llamado Orb. World dice que procesa las imágenes cifradas, pero siguen siendo datos biométricos, tenlo en cuenta. Las mini apps de World App que listamos (ORO, AXO, AI-DAC) se comprobaron desde Japón con una cuenta verificada con Orb en octubre de 2026; no se sabe si basta un nivel inferior. Humad es solo para Japón.",
+        "de": "World ID ist eine digitale Identität, die per Scan von Gesicht und Augen mit einem Gerät namens Orb belegt, dass du ein einzigartiger, echter Mensch bist. Laut World werden die Bilder verschlüsselt verarbeitet, es bleiben aber biometrische Daten, das solltest du abwägen. Die hier gelisteten Mini-Apps der World App (ORO, AXO, AI-DAC) funktionierten im Oktober 2026 aus Japan mit einem per Orb verifizierten Konto; ob eine niedrigere Stufe reicht, ist unbekannt. Humad gibt es nur in Japan.",
+        "ar": "⁦World ID⁩ هوية رقمية تثبت أنك شخص حقيقي وفريد عبر مسح وجهك وعينيك بجهاز يُسمى ⁦Orb⁩. تقول ⁦World⁩ إن الصور تُعالَج مشفّرة، لكنها تبقى بيانات حيوية، فضع ذلك في الحسبان. تأكدنا في أكتوبر 2026 أن تطبيقات ⁦World App⁩ المصغّرة المدرجة هنا (⁦ORO⁩ و⁦AXO⁩ و⁦AI-DAC⁩) تعمل من اليابان بحساب موثَّق بـ⁦Orb⁩، ولا يُعرف إن كان مستوى أدنى كافيًا. أما ⁦Humad⁩ فمقتصر على اليابان."
+      }
+    },
+    "face": {
+      "name": {
+        "ja": "顔認証・ライブネス",
+        "en": "Face scan / liveness",
+        "zh": "人脸识别／活体检测",
+        "hi": "चेहरा स्कैन / लाइवनेस",
+        "es": "Escaneo facial / prueba de vida",
+        "de": "Gesichtsscan / Lebendprüfung",
+        "ar": "مسح الوجه / فحص الحيوية"
+      },
+      "title": {
+        "ja": "顔認証で使えるアプリ・サービス一覧",
+        "en": "Apps that verify you with a face scan",
+        "zh": "用人脸识别验证的应用一览",
+        "hi": "चेहरा स्कैन से वेरिफ़ाई करने वाले ऐप",
+        "es": "Apps que te verifican con un escaneo facial",
+        "de": "Apps mit Gesichtsscan-Verifizierung",
+        "ar": "تطبيقات تتحقق منك بمسح الوجه"
+      },
+      "intro": {
+        "ja": "スマホのカメラで顔を読み取り、本人や実在の人間であることを確かめる方式です。手軽な反面、顔という変えられない情報を渡すことになるので、各サービスのデータの扱いを確認しましょう。Billions と FheID は2026年10月に日本から使えることを確認しています。",
+        "en": "Your phone camera reads your face to confirm you are a real person. It is easy, but you are handing over something you cannot change, so check how each service handles the data. Billions and FheID were confirmed to work from Japan in Oct 2026.",
+        "zh": "用手机摄像头读取人脸，确认你是真人。方便是方便，但你交出的是无法更改的信息，请先确认各服务如何处理数据。Billions 和 FheID 已于 2026 年 10 月确认可在日本使用。",
+        "hi": "फ़ोन का कैमरा आपका चेहरा पढ़कर पक्का करता है कि आप असली इंसान हैं। यह आसान है, पर आप ऐसी चीज़ दे रहे हैं जो बदल नहीं सकती, इसलिए हर सेवा का डेटा प्रबंधन देख लें। Billions और FheID अक्टूबर 2026 में जापान से चलते पाए गए।",
+        "es": "La cámara del móvil lee tu cara para confirmar que eres una persona real. Es cómodo, pero entregas algo que no puedes cambiar, así que revisa cómo trata los datos cada servicio. Billions y FheID se comprobaron desde Japón en octubre de 2026.",
+        "de": "Die Handykamera liest dein Gesicht, um zu bestätigen, dass du ein echter Mensch bist. Das ist bequem, aber du gibst etwas her, das du nicht ändern kannst, prüf also, wie der jeweilige Dienst mit den Daten umgeht. Billions und FheID funktionierten im Oktober 2026 aus Japan.",
+        "ar": "تقرأ كاميرا الهاتف وجهك لتتأكد أنك شخص حقيقي. الأمر سهل، لكنك تسلّم شيئًا لا يمكنك تغييره، فتحقق من طريقة تعامل كل خدمة مع البيانات. تأكدنا في أكتوبر 2026 أن ⁦Billions⁩ و⁦FheID⁩ يعملان من اليابان."
+      }
+    },
+    "passport-nfc": {
+      "name": {
+        "ja": "パスポート（NFC）",
+        "en": "NFC passport",
+        "zh": "护照（NFC）",
+        "hi": "NFC पासपोर्ट",
+        "es": "Pasaporte con NFC",
+        "de": "NFC-Reisepass",
+        "ar": "جواز سفر ⁦NFC⁩"
+      },
+      "title": {
+        "ja": "NFCパスポートで使えるアプリ・サービス一覧",
+        "en": "Apps that verify you with an NFC passport",
+        "zh": "用 NFC 护照验证的应用一览",
+        "hi": "NFC पासपोर्ट से वेरिफ़ाई करने वाले ऐप",
+        "es": "Apps que te verifican con un pasaporte NFC",
+        "de": "Apps mit NFC-Reisepass-Verifizierung",
+        "ar": "تطبيقات تتحقق منك بجواز سفر ⁦NFC⁩"
+      },
+      "intro": {
+        "ja": "",
+        "en": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      }
+    },
+    "kyc-id": {
+      "name": {
+        "ja": "身分証のKYC",
+        "en": "ID document KYC",
+        "zh": "身份证件 KYC",
+        "hi": "ID दस्तावेज़ KYC",
+        "es": "KYC con documento",
+        "de": "Ausweis-KYC",
+        "ar": "التحقق بوثيقة هوية (⁦KYC⁩)"
+      },
+      "title": {
+        "ja": "身分証の本人確認（KYC）が必要なアプリ・サービス一覧",
+        "en": "Apps that require ID document KYC",
+        "zh": "需要身份证件 KYC 的应用一览",
+        "hi": "ID दस्तावेज़ KYC माँगने वाले ऐप",
+        "es": "Apps que piden KYC con documento de identidad",
+        "de": "Apps mit Ausweis-KYC",
+        "ar": "تطبيقات تتطلب التحقق بوثيقة هوية"
+      },
+      "intro": {
+        "ja": "運転免許証やパスポートなどの身分証で本人確認（KYC）をする方式です。名前や生年月日などの個人情報を運営者に渡すことになります。ME Pass は登録時、Pi Network は PI を動かすときに必要で、Mein Grundeinkommen は当選したときにだけ身分証との照合があります。",
+        "en": "You verify your identity (KYC) with an ID document such as a passport or driving licence, which means giving the operator personal details like your name and date of birth. ME Pass needs it at sign-up and Pi Network to move your PI; Mein Grundeinkommen only checks your ID if you win.",
+        "zh": "用护照、驾照等身份证件完成实名认证（KYC），需要把姓名、出生日期等个人信息交给运营方。ME Pass 注册时需要，Pi Network 转移 PI 时需要；Mein Grundeinkommen 只在中奖时核对证件。",
+        "hi": "पासपोर्ट या ड्राइविंग लाइसेंस जैसे पहचान दस्तावेज़ से KYC होता है, यानी नाम और जन्मतिथि जैसी निजी जानकारी ऑपरेटर को देनी होती है। ME Pass में साइन-अप पर और Pi Network में PI भेजने के लिए ज़रूरी है; Mein Grundeinkommen सिर्फ़ जीतने पर ID मिलाता है।",
+        "es": "Verificas tu identidad (KYC) con un documento como el pasaporte o el carné de conducir, lo que implica dar al operador datos como tu nombre y fecha de nacimiento. ME Pass lo pide al registrarte y Pi Network para mover tus PI; Mein Grundeinkommen solo coteja tu documento si ganas.",
+        "de": "Du weist deine Identität (KYC) mit einem Ausweisdokument wie Reisepass oder Führerschein nach und gibst dem Betreiber damit Daten wie Name und Geburtsdatum. ME Pass verlangt das bei der Anmeldung, Pi Network zum Bewegen deiner PI; Mein Grundeinkommen gleicht den Ausweis nur im Gewinnfall ab.",
+        "ar": "تتحقق من هويتك (⁦KYC⁩) بوثيقة مثل جواز السفر أو رخصة القيادة، أي أنك تعطي المشغّل بيانات مثل اسمك وتاريخ ميلادك. يطلبه ⁦ME Pass⁩ عند التسجيل و⁦Pi Network⁩ لتحريك ⁦PI⁩، أما ⁦Mein Grundeinkommen⁩ فلا يطابق الهوية إلا عند الفوز."
+      }
+    },
+    "phone": {
+      "name": {
+        "ja": "電話番号",
+        "en": "Phone number",
+        "zh": "手机号",
+        "hi": "फ़ोन नंबर",
+        "es": "Número de teléfono",
+        "de": "Telefonnummer",
+        "ar": "رقم الهاتف"
+      },
+      "title": {
+        "ja": "電話番号で使えるアプリ・サービス一覧",
+        "en": "Apps that verify you by phone number",
+        "zh": "用手机号验证的应用一览",
+        "hi": "फ़ोन नंबर से वेरिफ़ाई करने वाले ऐप",
+        "es": "Apps que te verifican por número de teléfono",
+        "de": "Apps mit Telefonnummer-Verifizierung",
+        "ar": "تطبيقات تتحقق منك برقم الهاتف"
+      },
+      "intro": {
+        "ja": "",
+        "en": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      }
+    },
+    "web-of-trust": {
+      "name": {
+        "ja": "信頼の網・招待",
+        "en": "Web of trust / invites",
+        "zh": "信任网／邀请",
+        "hi": "वेब ऑफ़ ट्रस्ट / इनवाइट",
+        "es": "Red de confianza / invitaciones",
+        "de": "Vertrauensnetz / Einladungen",
+        "ar": "شبكة الثقة / الدعوات"
+      },
+      "title": {
+        "ja": "招待・信頼の網で参加するアプリ・サービス一覧",
+        "en": "Apps you join through invites or a web of trust",
+        "zh": "通过邀请或信任网加入的应用一览",
+        "hi": "इनवाइट या वेब ऑफ़ ट्रस्ट से जुड़ने वाले ऐप",
+        "es": "Apps a las que entras por invitación o red de confianza",
+        "de": "Apps mit Einladung oder Vertrauensnetz",
+        "ar": "تطبيقات تنضم إليها بدعوة أو عبر شبكة ثقة"
+      },
+      "intro": {
+        "ja": "すでに参加している人に招待されたり、認証（保証）してもらったりして参加する方式です。顔や身分証を出さずに済む一方、知り合いのメンバーがいないと始めにくいのが難点です。Idena は2026年10月に日本から使えることを確認していますが、Ğ1 はフランス語圏が中心で日本からの参加はかなり難しく、Circles も招待してくれるメンバーが必要です。",
+        "en": "You join by being invited or vouched for by existing members. No face scan or ID is needed, but it is hard to start without a member who knows you. Idena was confirmed to work from Japan in Oct 2026; Ğ1 is mostly French-speaking and very hard to join from Japan, and Circles also needs a member to invite you.",
+        "zh": "由已加入的成员邀请或为你担保（认证）后加入。无需人脸或证件，但没有认识的成员就很难开始。Idena 已于 2026 年 10 月确认可在日本使用；Ğ1 以法语圈为主，从日本加入相当困难；Circles 也需要有成员邀请。",
+        "hi": "मौजूदा सदस्यों के बुलाने या आपकी ज़मानत (सर्टिफ़िकेशन) देने से आप जुड़ते हैं। चेहरा या ID नहीं चाहिए, पर जान-पहचान का सदस्य न हो तो शुरुआत मुश्किल है। Idena अक्टूबर 2026 में जापान से चलता पाया गया; Ğ1 ज़्यादातर फ़्रेंच भाषी है और जापान से जुड़ना बहुत कठिन है, और Circles में भी किसी सदस्य का बुलावा चाहिए।",
+        "es": "Entras porque te invita o te avala un miembro. No hace falta escaneo facial ni documento, pero cuesta empezar sin un miembro que te conozca. Idena se comprobó desde Japón en octubre de 2026; Ğ1 es sobre todo francófona y muy difícil desde Japón, y Circles también requiere que te invite un miembro.",
+        "de": "Du kommst hinein, indem bestehende Mitglieder dich einladen oder für dich bürgen. Gesichtsscan oder Ausweis brauchst du nicht, aber ohne ein Mitglied, das dich kennt, ist der Einstieg schwer. Idena funktionierte im Oktober 2026 aus Japan; Ğ1 ist überwiegend französischsprachig und aus Japan sehr schwer zugänglich, und auch Circles braucht ein Mitglied, das dich einlädt.",
+        "ar": "تنضم بدعوة من أعضاء حاليين أو بتوثيقهم لك. لا حاجة إلى مسح الوجه ولا إلى هوية، لكن البدء صعب دون عضو يعرفك. تأكدنا في أكتوبر 2026 أن ⁦Idena⁩ يعمل من اليابان، أما ⁦Ğ1⁩ فأغلبه ناطق بالفرنسية والانضمام إليه من اليابان صعب جدًا، و⁦Circles⁩ يحتاج أيضًا إلى عضو يدعوك."
+      }
+    },
+    "ceremony": {
+      "name": {
+        "ja": "認証セレモニー",
+        "en": "Validation ceremony",
+        "zh": "验证仪式",
+        "hi": "वैलिडेशन समारोह",
+        "es": "Ceremonia de validación",
+        "de": "Validierungszeremonie",
+        "ar": "مراسم التحقق"
+      },
+      "title": {
+        "ja": "認証セレモニーで参加するアプリ・サービス一覧",
+        "en": "Apps that use a validation ceremony",
+        "zh": "使用验证仪式的应用一览",
+        "hi": "वैलिडेशन समारोह वाले ऐप",
+        "es": "Apps con ceremonia de validación",
+        "de": "Apps mit Validierungszeremonie",
+        "ar": "تطبيقات تستخدم مراسم التحقق"
+      },
+      "intro": {
+        "ja": "",
+        "en": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      }
+    },
+    "none": {
+      "name": {
+        "ja": "認証なし",
+        "en": "No verification",
+        "zh": "无需验证",
+        "hi": "कोई वेरिफ़िकेशन नहीं",
+        "es": "Sin verificación",
+        "de": "Keine Verifizierung",
+        "ar": "دون تحقق"
+      },
+      "title": {
+        "ja": "本人確認なしで使えるアプリ・サービス一覧",
+        "en": "Apps that need no identity verification",
+        "zh": "无需身份验证的应用一览",
+        "hi": "बिना पहचान वेरिफ़िकेशन वाले ऐप",
+        "es": "Apps que no piden verificación de identidad",
+        "de": "Apps ohne Identitätsprüfung",
+        "ar": "تطبيقات لا تتطلب التحقق من الهوية"
+      },
+      "intro": {
+        "ja": "メールアドレスの登録やアプリのインストールだけで始められ、特別な本人確認がいらないサービスです。手軽な分、もらえる額は小さめで、回線（帯域）の共有やメールの読み取りなど、別の形でデータや回線を提供するものもあります。条件は各カードの「注意」を確認してください。RewardMe の World ID は、ギフト券をすぐ受け取りたいときの任意の認証です。",
+        "en": "You can start with just an email address or an app install, with no identity check. The trade-off: amounts are smaller, and some services take something else instead, such as sharing your bandwidth or reading your email. Check the notes on each card. For RewardMe, World ID is optional and only speeds up gift-card redemption.",
+        "zh": "只需注册邮箱或安装应用即可开始，无需特别的身份验证。代价是金额较小，有些服务会以别的方式取得数据或网络，例如共享带宽或读取邮件。请查看各卡片的“注意”。RewardMe 的 World ID 是可选的，仅用于更快兑换礼品卡。",
+        "hi": "सिर्फ़ ईमेल या ऐप इंस्टॉल से शुरू कर सकते हैं, कोई पहचान जाँच नहीं। बदले में रकम कम होती है, और कुछ सेवाएँ किसी और रूप में चीज़ें लेती हैं, जैसे बैंडविड्थ शेयर करना या ईमेल पढ़ना। हर कार्ड के नोट देखें। RewardMe में World ID वैकल्पिक है और सिर्फ़ गिफ़्ट कार्ड जल्दी पाने के लिए है।",
+        "es": "Basta con un correo o instalar una app, sin comprobar tu identidad. A cambio, los importes son menores y algunos servicios toman otra cosa, como compartir tu ancho de banda o leer tu correo. Revisa las notas de cada tarjeta. En RewardMe, World ID es opcional y solo acelera el canje de tarjetas regalo.",
+        "de": "Du startest mit einer E-Mail-Adresse oder einer App-Installation, ohne Identitätsprüfung. Dafür sind die Beträge kleiner, und manche Dienste nehmen etwas anderes, etwa deine Bandbreite oder das Lesen deiner E-Mails. Lies die Hinweise auf jeder Karte. Bei RewardMe ist World ID optional und beschleunigt nur das Einlösen von Geschenkkarten.",
+        "ar": "يمكنك البدء ببريد إلكتروني أو بتثبيت تطبيق فقط، دون تحقق من الهوية. في المقابل تكون المبالغ أصغر، وبعض الخدمات تأخذ شيئًا آخر، كمشاركة النطاق الترددي أو قراءة بريدك. راجع ملاحظات كل بطاقة. في ⁦RewardMe⁩ يكون ⁦World ID⁩ اختياريًا ويُسرّع استبدال بطاقات الهدايا فقط."
+      }
+    }
+  }
 };

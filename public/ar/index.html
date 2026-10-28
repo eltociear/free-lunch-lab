@@ -253,6 +253,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq details[open] summary::after{content:"−"}
 /* 団体の紹介: お金のカードと区別して、紙の帳面のような落ち着いた枠に */
 #orgs{--sky1:#EC6F6A;--sky2:#F08A4B}
+#verify{--sky1:#9B5CF0;--sky2:#C04FA0}
+.vchips{display:flex;flex-wrap:wrap;gap:8px}
+.vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
+.vchips a:hover{border-color:var(--accent);color:var(--accent)}
+.vchips a span{font-family:var(--f-dot);font-weight:400;color:var(--muted)}
 .orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;gap:16px}
 .orgs-lead{color:var(--muted);max-width:46em}
 .orgs-mini{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:0 22px}
@@ -845,9 +850,14 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </article><p class="empty-state" id="empty" hidden>لا توجد خدمات مطابقة لهذه الفلاتر.</p></div>
 </section>
 
+<section id="verify">
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">01:30</span>VERIFICATION</p><h2>تصفّح حسب طريقة التحقق</h2></div>
+  <nav class="vchips rv" aria-label="تصفّح حسب طريقة التحقق"><a href="verify/world-id/" dir="auto">⁦World ID⁩ (⁦Orb⁩)<span>5</span></a><a href="verify/face/" dir="auto">مسح الوجه / فحص الحيوية<span>4</span></a><a href="verify/kyc-id/" dir="auto">التحقق بوثيقة هوية (⁦KYC⁩)<span>3</span></a><a href="verify/web-of-trust/" dir="auto">شبكة الثقة / الدعوات<span>3</span></a><a href="verify/none/" dir="auto">دون تحقق<span>12</span></a></nav>
+</section>
+
 <section id="news">
   <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>UPDATES</p><h2>آخر التحديثات</h2></div>
-  <ol class="news rv"><li><time class="dot" datetime="2026-10-28">2026.10.28</time><ul><li>أضفنا صفحة مقبرة الغداء المجاني</li></ul></li><li><time class="dot" datetime="2026-10-26">2026.10.26</time><ul><li>أضفنا ⁦FheID (Privasea)⁩</li><li>أضفنا ⁦RewardMe⁩</li><li>أضفنا ⁦Idena (iDNA)⁩</li><li>أضفنا ⁦Billions⁩</li><li>أضفنا ⁦Humad (World App)⁩</li></ul></li><li><time class="dot" datetime="2026-10-25">2026.10.25</time><ul><li>غيّرنا اسم الموقع إلى ⁦Free Lunch Lab⁩ (مختبر الغداء المجاني)</li><li>أضفنا النسخة الألمانية</li></ul></li><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>أضفنا ⁦WowApp⁩</li><li>أضفنا ⁦Gradido⁩</li><li>أضفنا ⁦Ubiquitus⁩ (للمقيمين في الولايات المتحدة فقط)</li><li>أضفنا ⁦AI-DAC (World App)⁩</li><li>أضفنا صفحة منظمات ومشاريع الدخل الأساسي</li><li>أضفنا ⁦AXO (World App)⁩</li><li>أضفنا ⁦ORO (World App)⁩</li><li>أضفنا ⁦Dotare⁩</li><li>أضفنا ⁦Palai⁩</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>أضفنا ⁦Circles (Gnosis App)⁩</li><li>أضفنا ⁦Ğ1⁩</li></ul></li></ol>
+  <ol class="news rv"><li><time class="dot" datetime="2026-10-28">2026.10.28</time><ul><li>أضفنا صفحات حسب طريقة التحقق (⁦World ID⁩ وغيرها)</li><li>أضفنا صفحة مقبرة الغداء المجاني</li></ul></li><li><time class="dot" datetime="2026-10-26">2026.10.26</time><ul><li>أضفنا ⁦FheID (Privasea)⁩</li><li>أضفنا ⁦RewardMe⁩</li><li>أضفنا ⁦Idena (iDNA)⁩</li><li>أضفنا ⁦Billions⁩</li><li>أضفنا ⁦Humad (World App)⁩</li></ul></li><li><time class="dot" datetime="2026-10-25">2026.10.25</time><ul><li>غيّرنا اسم الموقع إلى ⁦Free Lunch Lab⁩ (مختبر الغداء المجاني)</li><li>أضفنا النسخة الألمانية</li></ul></li><li><time class="dot" datetime="2026-10-24">2026.10.24</time><ul><li>أضفنا ⁦WowApp⁩</li><li>أضفنا ⁦Gradido⁩</li><li>أضفنا ⁦Ubiquitus⁩ (للمقيمين في الولايات المتحدة فقط)</li><li>أضفنا ⁦AI-DAC (World App)⁩</li><li>أضفنا صفحة منظمات ومشاريع الدخل الأساسي</li><li>أضفنا ⁦AXO (World App)⁩</li><li>أضفنا ⁦ORO (World App)⁩</li><li>أضفنا ⁦Dotare⁩</li><li>أضفنا ⁦Palai⁩</li></ul></li><li><time class="dot" datetime="2026-10-23">2026.10.23</time><ul><li>أضفنا ⁦Circles (Gnosis App)⁩</li><li>أضفنا ⁦Ğ1⁩</li></ul></li></ol>
 </section>
 
 <section id="share">

@@ -24,6 +24,7 @@ Referral links and codes on the site are the maintainer's own. **Pull requests m
 - **One service per pull request.** Keep changes focused.
 - Edit `src/data.js` only (plus `CATS` or `T` if a new label is truly needed). Run `node build.js`; it regenerates `public/` and the README tables. Do not edit the generated parts of `README.md` by hand.
 - Provide text in English at least. Other languages fall back to English; translations into Japanese, Simplified Chinese, Hindi, Spanish, German and Arabic are welcome.
+- Set `verify` from the service’s own documentation only (see README); mark a method `"optional": true` if it is not required, and leave the array empty if the method is not stated.
 - Set `checked` to the month you verified the entry against official sources, as `"YYYY-MM"` (e.g. `"2026-10"`). It is shown on the site as “Checked Oct 2026”, and the build fails if a visible entry lacks it. Update it only when you actually re-check the facts.
 - Write facts, not hype. Date anything that changes (prices, user counts, campaign terms), e.g. "as of Oct 2026".
 - List your sources in the pull request description.

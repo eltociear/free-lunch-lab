@@ -248,6 +248,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq details[open] summary::after{content:"−"}
 /* 団体の紹介: お金のカードと区別して、紙の帳面のような落ち着いた枠に */
 #orgs{--sky1:#EC6F6A;--sky2:#F08A4B}
+#verify{--sky1:#9B5CF0;--sky2:#C04FA0}
+.vchips{display:flex;flex-wrap:wrap;gap:8px}
+.vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
+.vchips a:hover{border-color:var(--accent);color:var(--accent)}
+.vchips a span{font-family:var(--f-dot);font-weight:400;color:var(--muted)}
 .orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;gap:16px}
 .orgs-lead{color:var(--muted);max-width:46em}
 .orgs-mini{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:0 22px}
@@ -500,6 +505,15 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
 .foot a{color:inherit;text-underline-offset:3px}
+.vmain{max-width:1080px;margin-inline:auto}
+.vsec{padding-top:28px}
+.vsec h2{font-size:1.15rem;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.vsec h2 .dot{font-size:.85rem;color:var(--muted);font-weight:400}
+.verify-line{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.82rem}
+.verify-line b{font-size:.72rem;color:var(--muted);margin-inline-end:4px}
+.verify-line a,.verify-line span{padding:2px 10px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
+.verify-line a:hover{border-color:var(--accent);color:var(--accent)}
+.vother{margin-top:28px}
 .graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
 .grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .tomb{flex:none;color:var(--muted);margin-top:2px}
@@ -534,6 +548,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
 <p class="caution">تنبيه: لا يوجد سعر ثابت لتحويلها إلى نقد. الخطة المجانية تحدّ عدد الخطوات التي تُحوَّل يوميًا</p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
+<p class="verify-line"><b>طريقة التحقق</b><a href="/ar/verify/none/" dir="auto">دون تحقق</a></p>
 <div class="slip"><a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
 
 </article>

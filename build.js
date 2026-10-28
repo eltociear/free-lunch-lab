@@ -1,7 +1,7 @@
 // 使い方: node build.js  →  public/ に全言語の一覧ページ（/ と /{lang}/）、サービスごとの個別ページ（services/{id}/）、sitemap.xml, robots.txt を生成
 const fs = require('fs');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER } = require('./src/data.js');
 
 const OUT = path.join(__dirname, 'public');
 const template = fs.readFileSync(path.join(__dirname, 'src/template.html'), 'utf8');
@@ -42,6 +42,15 @@ const orgAbs = l => SITE_URL + orgPath(l);
 // 終了したサービスの墓場: /graveyard/ と /{lang}/graveyard/
 const gravePath = l => `${urlPath(l)}graveyard/`;
 const graveAbs = l => SITE_URL + gravePath(l);
+// 認証方法ごとのページ: /verify/{method}/。必須・任意あわせて2件以上あるものだけ作る
+const verifyPath = (l, m) => `${urlPath(l)}verify/${m}/`;
+const verifyAbs = (l, m) => SITE_URL + verifyPath(l, m);
+const byMethod = m => ({
+  req: live.filter(s => (s.verify || []).some(v => v.method === m && !v.optional)),
+  opt: live.filter(s => (s.verify || []).some(v => v.method === m && v.optional)),
+});
+const verifyPages = VERIFY_ORDER.filter(m => { const b = byMethod(m); return b.req.length + b.opt.length >= 2; });
+for (const s of live) for (const v of (s.verify || [])) if (!VERIFY[v.method]) throw new Error(`${s.id}: unknown verify method ${v.method}`);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 function meter(n) {
@@ -362,6 +371,7 @@ for (const lang of LANGS) {
     brandSub: L.brandSub ? `<small dir="auto">${esc(L.brandSub)}</small>` : '',
     orgsPreview: ORG_PREVIEW.map(id => ORGS.find(o => o.id === id)).filter(Boolean).map(o => `<li><a href="organizations/#org-${o.id}" dir="auto">${esc(o.name)}</a><span>${esc(o.region ? ORG_REGIONS[o.region][lang] : '')}</span><p>${esc((o.short || o.desc)[lang] || (o.short || o.desc).en)}</p></li>`).join(''),
     orgsBtn: esc(L.orgsSecBtn.replace('{n}', ORGS.length)),
+    verifyBlock: verifyPages.map(m => { const b = byMethod(m); return `<a href="verify/${m}/" dir="auto">${esc(VERIFY[m].name[lang])}<span>${b.req.length + b.opt.length}</span></a>`; }).join(''),
     script: clientScript(lang),
   };
   body = body.replace(/\{\{(\w+)\}\}/g, (_, k) => {
@@ -437,6 +447,15 @@ const DETAIL_CSS = `
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
 .org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
 .foot a{color:inherit;text-underline-offset:3px}
+.vmain{max-width:1080px;margin-inline:auto}
+.vsec{padding-top:28px}
+.vsec h2{font-size:1.15rem;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.vsec h2 .dot{font-size:.85rem;color:var(--muted);font-weight:400}
+.verify-line{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.82rem}
+.verify-line b{font-size:.72rem;color:var(--muted);margin-inline-end:4px}
+.verify-line a,.verify-line span{padding:2px 10px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
+.verify-line a:hover{border-color:var(--accent);color:var(--accent)}
+.vother{margin-top:28px}
 .graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
 .grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .tomb{flex:none;color:var(--muted);margin-top:2px}
@@ -497,6 +516,7 @@ function servicePage(s, lang) {
 ${meta(s, lang)}
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
 ${checkedLine(s, lang)}
+${(s.verify || []).length ? `<p class="verify-line"><b>${esc(L.verifyLabel)}</b>${s.verify.map(v => { const nm = esc(VERIFY[v.method].name[lang]) + (v.optional ? (lang === 'ja' || lang === 'zh' ? `（${esc(L.verifyOpt)}）` : ` (${esc(L.verifyOpt)})`) : ''); return verifyPages.includes(v.method) ? `<a href="${verifyPath(lang, v.method)}" dir="auto">${nm}</a>` : `<span dir="auto">${nm}</span>`; }).join('')}</p>` : ''}
 ${slip(s, L)}
 ${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#org-${org.id}">${esc(org.name)}</a> <span>(${esc(L.orgsTitle)})</span></p>` : ''}
 </article>
@@ -506,8 +526,12 @@ ${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#or
 </section>
 <p class="back"><a class="btn line" href="${home}#list">${rtl ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
+  const script = copyScript(L);
+  return shell(lang, { title, desc, hrefFor: l => svcAbs(l, s), pathFor: l => svcPath(l, s), ld, ogType: 'article', body, script, pr: true });
+}
+function copyScript(L) {
   const i18n = { copied: L.copied, selected: L.selected };
-  const script = `<script>
+  return `<script>
 (function(){
   var I18N=${JSON.stringify(i18n)},toast=document.getElementById('toast'),timer;
   function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
@@ -519,7 +543,6 @@ ${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#or
   });
 })();
 </script>`;
-  return shell(lang, { title, desc, hrefFor: l => svcAbs(l, s), pathFor: l => svcPath(l, s), ld, ogType: 'article', body, script, pr: true });
 }
 
 // 個別ページ・団体ページで共通の外枠（head、上のバー、フッター）
@@ -607,6 +630,34 @@ ${groups}
   return shell(lang, { title, desc: L.orgsDesc, hrefFor: orgAbs, pathFor: orgPath, ld, ogType: 'website', body });
 }
 
+// ---- 認証方法ごとのページ（/verify/{method}/）。カードは一覧と同じ部品を使う。必須を先、任意を後に
+function verifyPage(m, lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const V = VERIFY[m];
+  const title = `${V.title[lang]} | ${L.title}`;
+  const { req, opt } = byMethod(m);
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: V.name[lang], item: verifyAbs(lang, m) },
+    ],
+  };
+  const section = (h, list) => list.length ? `<section class="vsec"><h2>${esc(h)}<span class="dot">${list.length}</span></h2><div class="grid">${list.map(s => card(s, lang)).join('\n')}</div></section>` : '';
+  const others = verifyPages.filter(x => x !== m).map(x => `<a href="${verifyPath(lang, x)}" dir="auto">${esc(VERIFY[x].name[lang])}</a>`).join('');
+  const intro = V.intro[lang] || V.intro.en;
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(V.name[lang])}</li></ol></nav>
+<main class="vmain">
+<header class="orgs-head"><p class="eyebrow">VERIFICATION</p><h1>${esc(V.title[lang])}</h1>${intro ? `<p class="orgs-intro">${esc(intro)}</p>` : ''}</header>
+${section(L.verifyReqH, req)}
+${section(L.verifyOptH, opt)}
+<nav class="vchips vother" aria-label="${esc(L.verifyAll)}">${others}</nav>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  return shell(lang, { title, desc: (intro || V.title[lang]).slice(0, 160), hrefFor: l => verifyAbs(l, m), pathFor: l => verifyPath(l, m), ld, ogType: 'website', body, script: copyScript(L), pr: true });
+}
+
 // ---- 終了したサービスの墓場（/graveyard/）。終了が確かめられたものだけ。紹介ボタンや sponsored は付けない
 const TOMB = '<svg class="tomb" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 30V13a8 8 0 0 1 16 0v17zm2-2h12V13a6 6 0 0 0-12 0zm5-15h2v3h3v2h-3v6h-2v-6h-3v-2h3zM4 30h24v2H4z"/></svg>';
 function graveyardPage(lang) {
@@ -646,6 +697,11 @@ for (const lang of LANGS) {
   const gdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'graveyard');
   fs.mkdirSync(gdir, { recursive: true });
   fs.writeFileSync(path.join(gdir, 'index.html'), graveyardPage(lang));
+  for (const m of verifyPages) {
+    const vdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'verify', m);
+    fs.mkdirSync(vdir, { recursive: true });
+    fs.writeFileSync(path.join(vdir, 'index.html'), verifyPage(m, lang));
+  }
 }
 
 // SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
@@ -662,7 +718,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);

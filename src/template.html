@@ -221,6 +221,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .faq details[open] summary::after{content:"−"}
 /* 団体の紹介: お金のカードと区別して、紙の帳面のような落ち着いた枠に */
 #orgs{--sky1:#EC6F6A;--sky2:#F08A4B}
+#verify{--sky1:#9B5CF0;--sky2:#C04FA0}
+.vchips{display:flex;flex-wrap:wrap;gap:8px}
+.vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
+.vchips a:hover{border-color:var(--accent);color:var(--accent)}
+.vchips a span{font-family:var(--f-dot);font-weight:400;color:var(--muted)}
 .orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;gap:16px}
 .orgs-lead{color:var(--muted);max-width:46em}
 .orgs-mini{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:0 22px}
@@ -507,6 +512,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   </div>
   <p class="count" id="count" aria-live="polite">{{count}}</p>
   <div class="grid" id="grid">{{cards}}<p class="empty-state" id="empty" hidden>{{t.none}}</p></div>
+</section>
+
+<section id="verify">
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">01:30</span>VERIFICATION</p><h2>{{t.verifyH}}</h2></div>
+  <nav class="vchips rv" aria-label="{{t.verifyH}}">{{verifyBlock}}</nav>
 </section>
 
 <section id="news">
