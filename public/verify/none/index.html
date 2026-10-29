@@ -472,6 +472,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
 .detail .caution{font-size:.88rem}
+/* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
+.svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.svc-warn p{margin:0}
+.svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
+.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
 .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
 .rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
@@ -594,7 +599,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Free Lunch Lab</a></li><li aria-current="page">No verification</li></ol></nav>
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">VERIFICATION</p><h1>Apps that need no identity verification</h1><p class="orgs-intro">You can start with just an email address or an app install, with no identity check. The trade-off: amounts are smaller, and some services take something else instead, such as sharing your bandwidth or reading your email. Check the notes on each card. For RewardMe, World ID is optional and only speeds up gift-card redemption.</p></header>
-<section class="vsec"><h2>Services that require it<span class="dot">13</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
+<section class="vsec"><h2>Services that require it<span class="dot">14</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><h3><span class="cat">Cashback sites</span><a href="/services/hapitas/">Hapitas</a></h3><div class="tags"><span class="type once">One-time</span></div></div></div>
 <p class="gain">Up to 2,300 points</p>
 <div class="desc"><p id="d-hapitas">October 2026 offer (1 point = ¥1). 100 for logging in 3 days in a row, 1,000 once you earn 3,000 through offers, and more</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-hapitas" hidden>Show more</button></div>
@@ -723,6 +728,16 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="caution">Note: The invite page itself says “JR is an in-app point; it cannot be sold or transferred.” As of October 2026 there is no way to cash it out, so any value depends on a possible future use. Points only accrue if you tap every day. The Google Play package name is “com.yourcompany.jrkripto”, which looks like an unchanged template name</p>
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
 <div class="slip"><a class="btn solid" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+</article>
+<article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/miningmachine/">Mining Machine ($ORE)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<p class="gain">$ORE mining balance (free 24-hour sessions)</p>
+<div class="desc"><p id="d-miningmachine">A site where a “mining machine” in your browser builds up a $ORE balance. $ORE is said to have a fixed supply of 21,000,000 across 4 epochs with 3 halvings. Joining is free, with no deposit, card or install. A free “Free Miner” runs in 24-hour sessions, and accounts start with 2 machine slots. Linking an X account adds a temporary +15 MP machine for a day. You can pay to add machines to “go faster”. Inviters get 10% of what their invitees mine (minted on top, so invitees keep all of theirs) and 10% of what invitees spend. The first inviter is permanent</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>Show more</button></div>
+<p class="need"><b>To get it</b><span>Sign up for free via the invite link (log in with email or X, no ID needed). Then start a mining session every 24 hours (sign-up from Japan confirmed in Oct 2026)</span></p>
+<div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-no" title="Cash out (can it become real money): No"><span aria-hidden="true">Cash</span><b aria-hidden="true">✗</b><span class="vh">Cash out (can it become real money): No</span></li><li class="t-no" title="Market price (does the token trade at a price): No"><span aria-hidden="true">Price</span><b aria-hidden="true">✗</b><span class="vh">Market price (does the token trade at a price): No</span></li><li class="t-unknown" title="Operator (is the company behind it public): Unverified"><span aria-hidden="true">Operator</span><b aria-hidden="true">?</b><span class="vh">Operator (is the company behind it public): Unverified</span></li></ul></div>
+<p class="caution">Note: Don’t pay for machines or upgrades. There’s no guarantee that anything you pay for will ever be worth anything. Whoever invited you receives 10% of what you spend, and that includes this site’s operator, who invited you through this link. $ORE is not a token yet, and the site itself says balances are not a promise of tokens. The operator is anonymous. There is no operator name, address or jurisdiction, and no whitepaper. The only company presence is the X account @RigGrid, and no independent reviews could be found (as of October 2026). Extra machines cost money, but prices are not shown publicly. The page pushes you to hurry with a countdown (“only 7 days”). You have to restart mining yourself every 24 hours</p>
+<p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
+<div class="slip"><a class="btn solid" href="https://miningmachine.io/r/aS80bLRm" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="All verification methods"><a href="/verify/world-id/" dir="auto">World ID (Orb)</a><a href="/verify/face/" dir="auto">Face scan / liveness</a><a href="/verify/kyc-id/" dir="auto">ID document KYC</a><a href="/verify/web-of-trust/" dir="auto">Web of trust / invites</a></nav>

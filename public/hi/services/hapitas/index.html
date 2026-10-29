@@ -472,6 +472,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
 .detail .caution{font-size:.88rem}
+/* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
+.svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.svc-warn p{margin:0}
+.svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
+.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
 .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
 .rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
@@ -595,6 +600,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <main>
 <article class="svc detail" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><span class="cat">कैशबैक साइट</span><h1>Hapitas</h1><div class="tags"><span class="type once">एक बार</span></div></div></div>
+
 <h2>क्या मिलता है</h2>
 <p class="gain">2,300 पॉइंट तक</p>
 <h2>Hapitas क्या है?</h2>

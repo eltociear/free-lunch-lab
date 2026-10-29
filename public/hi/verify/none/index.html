@@ -472,6 +472,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
 .detail .caution{font-size:.88rem}
+/* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
+.svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.svc-warn p{margin:0}
+.svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
+.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
 .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
 .rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
@@ -594,7 +599,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <nav class="crumbs" aria-label="ब्रेडक्रंब"><ol><li><a href="/hi/">Free Lunch Lab</a></li><li aria-current="page">कोई वेरिफ़िकेशन नहीं</li></ol></nav>
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">VERIFICATION</p><h1>बिना पहचान वेरिफ़िकेशन वाले ऐप</h1><p class="orgs-intro">सिर्फ़ ईमेल या ऐप इंस्टॉल से शुरू कर सकते हैं, कोई पहचान जाँच नहीं। बदले में रकम कम होती है, और कुछ सेवाएँ किसी और रूप में चीज़ें लेती हैं, जैसे बैंडविड्थ शेयर करना या ईमेल पढ़ना। हर कार्ड के नोट देखें। RewardMe में World ID वैकल्पिक है और सिर्फ़ गिफ़्ट कार्ड जल्दी पाने के लिए है।</p></header>
-<section class="vsec"><h2>जिन सेवाओं में यह ज़रूरी है<span class="dot">13</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
+<section class="vsec"><h2>जिन सेवाओं में यह ज़रूरी है<span class="dot">14</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><h3><span class="cat">कैशबैक साइट</span><a href="/hi/services/hapitas/">Hapitas</a></h3><div class="tags"><span class="type once">एक बार</span></div></div></div>
 <p class="gain">2,300 पॉइंट तक</p>
 <div class="desc"><p id="d-hapitas">अक्टूबर 2026 का ऑफ़र (1 पॉइंट = ¥1)। लगातार 3 दिन लॉग इन पर 100, ऑफ़र से कुल 3,000 कमाने पर 1,000, और भी</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-hapitas" hidden>और पढ़ें</button></div>
@@ -723,6 +728,16 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="caution">ध्यान दें: इनवाइट पेज पर ही लिखा है कि “JR एक इन-ऐप पॉइंट है; इसे न बेचा जा सकता है, न ट्रांसफ़र किया जा सकता है।” अक्टूबर 2026 तक इसे नकद में बदलने का कोई तरीका नहीं है, इसलिए इसकी कोई भी क़ीमत भविष्य के संभावित इस्तेमाल पर निर्भर है। रोज़ टैप न करें तो पॉइंट जमा नहीं होते। Google Play पर पैकेज का नाम “com.yourcompany.jrkripto” है, जो बिना बदले टेम्पलेट नाम जैसा लगता है</p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
 <div class="slip"><a class="btn solid" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+</article>
+<article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/miningmachine/">Mining Machine ($ORE)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<p class="gain">$ORE माइनिंग बैलेंस (मुफ़्त, हर बार 24 घंटे)</p>
+<div class="desc"><p id="d-miningmachine">एक साइट, जहाँ ब्राउज़र में चलने वाली “माइनिंग मशीन” से $ORE का बैलेंस जमा होता है। बताया जाता है कि $ORE की कुल सप्लाई 2,10,00,000 पर तय है, जो 4 एपॉक में बँटी है और जिसमें 3 हाल्विंग होती हैं। जुड़ना मुफ़्त है; न डिपॉज़िट, न कार्ड, न इंस्टॉल। मुफ़्त “Free Miner” 24-24 घंटे के सेशन में चलता है, और हर अकाउंट में शुरू से 2 मशीन स्लॉट होते हैं। X अकाउंट जोड़ने पर एक दिन के लिए +15 MP की अस्थायी मशीन मिलती है। पैसे देकर मशीनें जोड़ने से “तेज़ी” आने की बात कही जाती है। इनवाइट करने वाले को इनवाइट किए गए लोगों की माइनिंग का 10% (ऊपर से मिंट होता है, इसलिए उनका हिस्सा कम नहीं होता) और उनके ख़र्च का 10% मिलता है। पहला इनवाइटर हमेशा के लिए तय रहता है</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>और पढ़ें</button></div>
+<p class="need"><b>कैसे मिलेगा</b><span>इनवाइट लिंक से मुफ़्त साइन अप करें (ईमेल या X से लॉग इन, पहचान पत्र ज़रूरी नहीं)। फिर हर 24 घंटे में माइनिंग सेशन शुरू करें (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)</span></p>
+<div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-no" title="नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✗</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं</span></li><li class="t-no" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✗</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं</span></li><li class="t-unknown" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट"><span aria-hidden="true">संचालक</span><b aria-hidden="true">?</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट</span></li></ul></div>
+<p class="caution">ध्यान दें: मशीनों या अपग्रेड के लिए पैसे न दें। इस बात की कोई गारंटी नहीं कि जो आप ख़रीदेंगे उसकी कभी कोई क़ीमत होगी। जिसने आपको इनवाइट किया, उसे आपके ख़र्च का 10% मिलता है, और इसमें इस साइट का संचालक भी शामिल है, जिसने इस लिंक से आपको इनवाइट किया है। $ORE अभी टोकन नहीं है, और साइट ख़ुद कहती है कि बैलेंस टोकन का वादा नहीं है। संचालक गुमनाम है। संचालक का नाम, पता या क़ानूनी क्षेत्राधिकार कहीं नहीं लिखा, और कोई व्हाइटपेपर नहीं है। कंपनी की इकलौती मौजूदगी X अकाउंट @RigGrid है, और कोई स्वतंत्र समीक्षा नहीं मिली (अक्टूबर 2026 तक)। अतिरिक्त मशीनों के पैसे लगते हैं, लेकिन क़ीमतें सार्वजनिक नहीं हैं। पेज “सिर्फ़ 7 दिन” जैसे काउंटडाउन से जल्दी करने का दबाव डालता है। हर 24 घंटे में माइनिंग ख़ुद फिर से शुरू करनी पड़ती है</p>
+<p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
+<div class="slip"><a class="btn solid" href="https://miningmachine.io/r/aS80bLRm" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="सभी वेरिफ़िकेशन तरीके"><a href="/hi/verify/world-id/" dir="auto">World ID (Orb)</a><a href="/hi/verify/face/" dir="auto">चेहरा स्कैन / लाइवनेस</a><a href="/hi/verify/kyc-id/" dir="auto">ID दस्तावेज़ KYC</a><a href="/hi/verify/web-of-trust/" dir="auto">वेब ऑफ़ ट्रस्ट / इनवाइट</a></nav>

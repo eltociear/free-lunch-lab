@@ -472,6 +472,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
 .detail .caution{font-size:.88rem}
+/* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
+.svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.svc-warn p{margin:0}
+.svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
+.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
 .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
 .rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
@@ -594,7 +599,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <nav class="crumbs" aria-label="Ruta de navegación"><ol><li><a href="/es/">Free Lunch Lab</a></li><li aria-current="page">Sin verificación</li></ol></nav>
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">VERIFICATION</p><h1>Apps que no piden verificación de identidad</h1><p class="orgs-intro">Basta con un correo o instalar una app, sin comprobar tu identidad. A cambio, los importes son menores y algunos servicios toman otra cosa, como compartir tu ancho de banda o leer tu correo. Revisa las notas de cada tarjeta. En RewardMe, World ID es opcional y solo acelera el canje de tarjetas regalo.</p></header>
-<section class="vsec"><h2>Servicios que lo exigen<span class="dot">13</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
+<section class="vsec"><h2>Servicios que lo exigen<span class="dot">14</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><h3><span class="cat">Cashback</span><a href="/es/services/hapitas/">Hapitas</a></h3><div class="tags"><span class="type once">Única vez</span></div></div></div>
 <p class="gain">Hasta 2.300 puntos</p>
 <div class="desc"><p id="d-hapitas">Oferta de octubre de 2026 (1 punto = 1 ¥). 100 por entrar 3 días seguidos, 1.000 al ganar 3.000 con ofertas, y más</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-hapitas" hidden>Ver más</button></div>
@@ -723,6 +728,16 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="caution">Ojo: La propia página de invitación dice: «JR es un punto dentro de la app; no se puede vender ni transferir». En octubre de 2026 no hay forma de convertirlo en dinero, así que su valor depende de un posible uso futuro. Solo se acumula si pulsas cada día. En Google Play el nombre del paquete es «com.yourcompany.jrkripto», que parece un nombre de plantilla sin cambiar</p>
 <p class="checked"><time datetime="2026-10">Revisado: octubre de 2026</time></p>
 <div class="slip"><a class="btn solid" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
+</article>
+<article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">Apps pasivas</span><a href="/es/services/miningmachine/">Mining Machine ($ORE)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurrente</span></div></div></div>
+<p class="gain">Saldo de minería de $ORE (sesiones gratis de 24 horas)</p>
+<div class="desc"><p id="d-miningmachine">Un sitio en el que una «máquina de minería» en tu navegador acumula un saldo de $ORE. Según el sitio, $ORE tiene un suministro fijo de 21.000.000 repartido en 4 épocas con 3 halvings. Unirse es gratis, sin depósito, tarjeta ni instalación. Un «Free Miner» gratuito funciona en sesiones de 24 horas, y las cuentas empiezan con 2 huecos para máquinas. Si vinculas una cuenta de X, recibes durante un día una máquina temporal de +15 MP. Puedes pagar para añadir máquinas e «ir más rápido». Quien invita recibe el 10% de lo que minan sus invitados (se emite aparte, así que el invitado conserva todo lo suyo) y el 10% de lo que gastan. El primer invitador es permanente</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>Ver más</button></div>
+<p class="need"><b>Cómo conseguirlo</b><span>Regístrate gratis con el enlace de invitación (inicia sesión con correo o con X, sin documento de identidad). Después, inicia una sesión de minería cada 24 horas (se comprobó en octubre de 2026 que el registro funciona desde Japón)</span></p>
+<div class="meta"><span class="ease"><span>Facilidad</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">Región: </span>Global</span><ul class="trust" aria-label="Confianza"><li class="t-no" title="Cobro (se puede pasar a dinero): No"><span aria-hidden="true">Cobro</span><b aria-hidden="true">✗</b><span class="vh">Cobro (se puede pasar a dinero): No</span></li><li class="t-no" title="Precio de mercado (el token cotiza): No"><span aria-hidden="true">Precio</span><b aria-hidden="true">✗</b><span class="vh">Precio de mercado (el token cotiza): No</span></li><li class="t-unknown" title="Operador (se sabe quién lo gestiona): Sin confirmar"><span aria-hidden="true">Operador</span><b aria-hidden="true">?</b><span class="vh">Operador (se sabe quién lo gestiona): Sin confirmar</span></li></ul></div>
+<p class="caution">Ojo: No pagues por máquinas ni mejoras. No hay ninguna garantía de que lo que pagues vaya a valer algo. Quien te invita recibe el 10% de lo que gastas, y eso incluye al responsable de este sitio, que te invita con este enlace. $ORE todavía no es un token, y el propio sitio dice que el saldo no es una promesa de tokens. El operador es anónimo. No figura el nombre del operador, su dirección ni su jurisdicción, y no hay whitepaper. La única presencia de la empresa es la cuenta de X @RigGrid, y no se encontraron reseñas independientes (a octubre de 2026). Las máquinas extra cuestan dinero, pero los precios no se muestran públicamente. La página te mete prisa con una cuenta atrás («solo 7 días»). Tienes que reiniciar la minería tú mismo cada 24 horas</p>
+<p class="checked"><time datetime="2026-10">Revisado: octubre de 2026</time></p>
+<div class="slip"><a class="btn solid" href="https://miningmachine.io/r/aS80bLRm" target="_blank" rel="noopener sponsored">Registrarme con referido</a></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="Todos los métodos de verificación"><a href="/es/verify/world-id/" dir="auto">World ID (Orb)</a><a href="/es/verify/face/" dir="auto">Escaneo facial / prueba de vida</a><a href="/es/verify/kyc-id/" dir="auto">KYC con documento</a><a href="/es/verify/web-of-trust/" dir="auto">Red de confianza / invitaciones</a></nav>

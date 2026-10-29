@@ -472,6 +472,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
 .detail .caution{font-size:.88rem}
+/* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
+.svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.svc-warn p{margin:0}
+.svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
+.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
 .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
 .rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
@@ -594,7 +599,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <nav class="crumbs" aria-label="مسار التنقل"><ol><li><a href="/ar/">⁦Free Lunch Lab⁩ (مختبر الغداء المجاني)</a></li><li aria-current="page">دون تحقق</li></ol></nav>
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">VERIFICATION</p><h1>تطبيقات لا تتطلب التحقق من الهوية</h1><p class="orgs-intro">يمكنك البدء ببريد إلكتروني أو بتثبيت تطبيق فقط، دون تحقق من الهوية. في المقابل تكون المبالغ أصغر، وبعض الخدمات تأخذ شيئًا آخر، كمشاركة النطاق الترددي أو قراءة بريدك. راجع ملاحظات كل بطاقة. في ⁦RewardMe⁩ يكون ⁦World ID⁩ اختياريًا ويُسرّع استبدال بطاقات الهدايا فقط.</p></header>
-<section class="vsec"><h2>خدمات تتطلبه<span class="dot">13</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
+<section class="vsec"><h2>خدمات تتطلبه<span class="dot">14</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><h3><span class="cat">استرداد نقدي</span><a href="/ar/services/hapitas/">Hapitas</a></h3><div class="tags"><span class="type once">مرة واحدة</span></div></div></div>
 <p class="gain">حتى 2,300 نقطة</p>
 <div class="desc"><p id="d-hapitas">عرض أكتوبر 2026 (النقطة = 1 ين). 100 نقطة لتسجيل الدخول 3 أيام متتالية، و1,000 عند جمع 3,000 نقطة من العروض، وغير ذلك</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-hapitas" hidden>عرض المزيد</button></div>
@@ -723,6 +728,16 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="caution">تنبيه: تقول صفحة الدعوة نفسها: «⁦JR⁩ نقطة داخل التطبيق، ولا يمكن بيعها أو تحويلها». حتى أكتوبر 2026 لا توجد طريقة لتحويلها إلى نقود، فأي قيمة لها تعتمد على استخدام محتمل في المستقبل. لا تتجمع النقاط إلا إذا ضغطت كل يوم. اسم الحزمة في ⁦Google Play⁩ هو ⁦“com.yourcompany.jrkripto”⁩، ويبدو كأنه اسم قالب لم يُغيَّر</p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
 <div class="slip"><a class="btn solid" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+</article>
+<article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/miningmachine/">Mining Machine ($ORE)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<p class="gain">رصيد تعدين ⁦$ORE⁩ (جلسات مجانية مدة كل منها 24 ساعة)</p>
+<div class="desc"><p id="d-miningmachine">موقع تجمع فيه «آلة تعدين» داخل المتصفح رصيدًا من ⁦$ORE⁩. يُقال إن المعروض الكلي من ⁦$ORE⁩ ثابت عند 21,000,000 موزّعة على 4 حقب مع 3 عمليات تنصيف. الانضمام مجاني، بلا إيداع ولا بطاقة ولا تثبيت. يعمل ⁦“Free Miner”⁩ المجاني في جلسات مدة كل منها 24 ساعة، ويبدأ كل حساب بخانتين للأجهزة. ربط حساب ⁦X⁩ يضيف جهازًا مؤقتًا بقوة ⁦+15 MP⁩ ليوم واحد. يمكنك الدفع لإضافة أجهزة «لتسريع» التعدين. يحصل من يدعو على 10% مما يعدّنه المدعوون (يُصكّ إضافيًا، فلا ينقص نصيب المدعو) وعلى 10% مما ينفقونه. أول من يدعوك يبقى دائمًا</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>عرض المزيد</button></div>
+<p class="need"><b>طريقة الحصول</b><span>سجّل مجانًا عبر رابط الدعوة (تسجيل الدخول بالبريد الإلكتروني أو ⁦X⁩، ولا حاجة لوثيقة هوية). ثم ابدأ جلسة تعدين كل 24 ساعة (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)</span></p>
+<div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-no" title="صرف نقدي (هل يمكن تحويله إلى نقود): لا"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✗</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): لا</span></li><li class="t-no" title="سعر السوق (هل للرمز سعر متداول): لا"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✗</b><span class="vh">سعر السوق (هل للرمز سعر متداول): لا</span></li><li class="t-unknown" title="المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">?</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد</span></li></ul></div>
+<p class="caution">تنبيه: لا تدفع مقابل الأجهزة أو الترقيات. لا يوجد أي ضمان بأن ما تدفع مقابله سيكون له أي قيمة. يحصل من دعاك على 10% مما تنفقه، ويشمل ذلك مشغّل هذا الموقع الذي يدعوك عبر هذا الرابط. ليست ⁦$ORE⁩ رمزًا مميزًا (توكن) بعد، ويقول الموقع نفسه إن الرصيد ليس وعدًا بالحصول على رموز. المشغّل مجهول الهوية. لا يُذكر اسم المشغّل ولا عنوانه ولا الجهة القانونية التي يتبعها، ولا توجد ورقة بيضاء. الوجود الوحيد للشركة هو حساب ⁦X⁩ ⁦@RigGrid⁩، ولم نجد أي مراجعات مستقلة (حتى أكتوبر 2026). الأجهزة الإضافية مدفوعة، لكن أسعارها غير معلنة. تستعجلك الصفحة بعدّ تنازلي («7 أيام فقط»). عليك إعادة تشغيل التعدين بنفسك كل 24 ساعة</p>
+<p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
+<div class="slip"><a class="btn solid" href="https://miningmachine.io/r/aS80bLRm" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="كل طرق التحقق"><a href="/ar/verify/world-id/" dir="auto">⁦World ID⁩ (⁦Orb⁩)</a><a href="/ar/verify/face/" dir="auto">مسح الوجه / فحص الحيوية</a><a href="/ar/verify/kyc-id/" dir="auto">التحقق بوثيقة هوية (⁦KYC⁩)</a><a href="/ar/verify/web-of-trust/" dir="auto">شبكة الثقة / الدعوات</a></nav>

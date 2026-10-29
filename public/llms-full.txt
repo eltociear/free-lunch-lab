@@ -614,6 +614,28 @@ What you need: Sign up via the invite link and verify your email address (no ID 
 
 Cautions: The invite page itself says “JR is an in-app point; it cannot be sold or transferred.” As of October 2026 there is no way to cash it out, so any value depends on a possible future use. Points only accrue if you tap every day. The Google Play package name is “com.yourcompany.jrkripto”, which looks like an unchanged template name
 
+### Mining Machine ($ORE)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/miningmachine/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: No; Market price: No; Public operator: Unverified
+- Last checked: 2026-10
+- Official URL: https://miningmachine.io/
+- Referral link (maintainer's own referral; not covered by the content license): https://miningmachine.io/r/aS80bLRm
+
+A site where a “mining machine” in your browser builds up a $ORE balance. $ORE is said to have a fixed supply of 21,000,000 across 4 epochs with 3 halvings. Joining is free, with no deposit, card or install. A free “Free Miner” runs in 24-hour sessions, and accounts start with 2 machine slots. Linking an X account adds a temporary +15 MP machine for a day. You can pay to add machines to “go faster”. Inviters get 10% of what their invitees mine (minted on top, so invitees keep all of theirs) and 10% of what invitees spend. The first inviter is permanent
+
+What you get: $ORE mining balance (free 24-hour sessions)
+
+What you need: Sign up for free via the invite link (log in with email or X, no ID needed). Then start a mining session every 24 hours (sign-up from Japan confirmed in Oct 2026)
+
+Warning: Don’t pay for machines or upgrades. There’s no guarantee that anything you pay for will ever be worth anything. Whoever invited you receives 10% of what you spend, and that includes this site’s operator, who invited you through this link. $ORE is not a token yet, and the site itself says balances are not a promise of tokens. The operator is anonymous.
+
+Cautions: Don’t pay for machines or upgrades. There’s no guarantee that anything you pay for will ever be worth anything. Whoever invited you receives 10% of what you spend, and that includes this site’s operator, who invited you through this link. $ORE is not a token yet, and the site itself says balances are not a promise of tokens. The operator is anonymous. There is no operator name, address or jurisdiction, and no whitepaper. The only company presence is the X account @RigGrid, and no independent reviews could be found (as of October 2026). Extra machines cost money, but prices are not shown publicly. The page pushes you to hurry with a countdown (“only 7 days”). You have to restart mining yourself every 24 hours
+
 ## Essays
 
 ### Universal high income: who pays?
@@ -921,7 +943,7 @@ Smart contracts for Proof of Humanity v2: a registry of humans built on video su
 - Language: Python
 - License: AGPL-3.0
 - Stars: 170
-- Last commit: 2026-10-28
+- Last commit: 2026-10-29
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 

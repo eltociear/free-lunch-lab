@@ -469,6 +469,11 @@ const DETAIL_CSS = `
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
 .detail .caution{font-size:.88rem}
+/* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
+.svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.svc-warn p{margin:0}
+.svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
+.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
 .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
 .rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
@@ -618,6 +623,7 @@ function servicePage(s, lang) {
 <main>
 <article class="svc detail" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
 <div class="svc-top">${ava(s, name)}<div class="svc-id"><span class="cat">${esc(CATS[lang][s.cat])}</span><h1>${esc(name)}</h1>${tags(s, L)}</div></div>
+${d.warning ? `<div class="warn svc-warn" role="note"><p class="warn-h">${esc(L.svcWarnH)}</p><p>${esc(d.warning)}</p></div>` : ''}
 <h2>${esc(L.hGain)}</h2>
 <p class="gain">${esc(d.gain)}</p>
 <h2>${esc(L.hAbout.replace('{name}', name))}</h2>
@@ -1119,7 +1125,7 @@ const servicesJson = {
     pageUrl: svcAbs(DEFAULT_LANG, s),
     pageUrls: Object.fromEntries(LANGS.map(l => [l, svcAbs(l, s)])),
     badge: badgeJson('svc', s),
-    descriptions: Object.fromEntries(LANGS.filter(l => s[l]).map(l => [l, Object.fromEntries(['gain', 'note', 'need', 'caution'].filter(k => s[l][k]).map(k => [k, clean(s[l][k])]))])),
+    descriptions: Object.fromEntries(LANGS.filter(l => s[l]).map(l => [l, Object.fromEntries(['gain', 'note', 'need', 'warning', 'caution'].filter(k => s[l][k]).map(k => [k, clean(s[l][k])]))])),
   })),
 };
 const graveJson = {
@@ -1261,6 +1267,7 @@ const svcFull = s => {
     `What you get: ${md(d.gain)}`,
     '',
     `What you need: ${md(d.need)}`,
+    ...(d.warning ? ['', `Warning: ${md(d.warning)}`] : []),
     ...(d.caution ? ['', `Cautions: ${md(d.caution)}`] : []),
   ].join('\n');
 };

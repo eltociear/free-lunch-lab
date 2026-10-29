@@ -472,6 +472,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
 .detail .caution{font-size:.88rem}
+/* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
+.svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.svc-warn p{margin:0}
+.svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
+.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
 .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
 .rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
@@ -594,7 +599,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">不労所得研究所</a></li><li aria-current="page">認証なし</li></ol></nav>
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">VERIFICATION</p><h1>本人確認なしで使えるアプリ・サービス一覧</h1><p class="orgs-intro">メールアドレスの登録やアプリのインストールだけで始められ、特別な本人確認がいらないサービスです。手軽な分、もらえる額は小さめで、回線（帯域）の共有やメールの読み取りなど、別の形でデータや回線を提供するものもあります。条件は各カードの「注意」を確認してください。RewardMe の World ID は、ギフト券をすぐ受け取りたいときの任意の認証です。</p></header>
-<section class="vsec"><h2>この認証が必要なサービス<span class="dot">13</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
+<section class="vsec"><h2>この認証が必要なサービス<span class="dot">14</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ハ</span><div class="svc-id"><h3><span class="cat">ポイントサイト</span><a href="/ja/services/hapitas/">ハピタス</a></h3><div class="tags"><span class="type once">1回</span></div></div></div>
 <p class="gain">最大2,300ポイント</p>
 <div class="desc"><p id="d-hapitas">2026年10月の内容（1ポイント＝1円）。3日連続ログインで100ポイント、広告利用で合計3,000ポイントたまると1,000ポイントなど</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-hapitas" hidden>もっと見る</button></div>
@@ -723,6 +728,16 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="caution">注意：招待ページ自体に「JRはアプリ内ポイントで、売ることも送ることもできない」と書かれている。2026年10月時点で換金の手段はなく、価値は将来の使い道しだい。毎日タップしないとたまらない。Google Playのパッケージ名が「com.yourcompany.jrkripto」と、ひな形のままのような名前になっている</p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
 <div class="slip"><a class="btn solid" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+</article>
+<article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/miningmachine/">Mining Machine（$ORE）</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<p class="gain">$OREのマイニング残高（無料で24時間ずつ）</p>
+<div class="desc"><p id="d-miningmachine">ブラウザ上の「マイニングマシン」で$OREの残高をためるサイト。$OREの総量は2,100万枚で、4つのエポックに分けて3回半減するとされる。登録は無料で、入金・カード登録・インストールは不要。無料の「Free Miner」が24時間ずつ動き、アカウントには最初からマシン枠が2つある。Xアカウントを連携すると、1日だけ +15 MP のマシンが追加される。お金を払ってマシンを足すと「速くなる」とされている。招待した人には、招待された人の採掘量の10%（上乗せで発行されるので、招待された人の分は減らない）と、招待された人の支払い額の10%が入る。最初の招待者は変わらない</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>もっと見る</button></div>
+<p class="need"><b>条件</b><span>紹介リンクから無料で登録する（メールアドレスかXでログイン、身分証は不要）。あとは24時間ごとにマイニングを開始する（日本から登録できることは2026年10月に確認）</span></p>
+<div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-no" title="換金（現金にできるか）：なし"><span aria-hidden="true">換金</span><b aria-hidden="true">✗</b><span class="vh">換金（現金にできるか）：なし</span></li><li class="t-no" title="市場価格（トークンに値段がついているか）：なし"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✗</b><span class="vh">市場価格（トークンに値段がついているか）：なし</span></li><li class="t-unknown" title="運営元公開（運営元が公開されているか）：未確認"><span aria-hidden="true">運営元</span><b aria-hidden="true">?</b><span class="vh">運営元公開（運営元が公開されているか）：未確認</span></li></ul></div>
+<p class="caution">注意：課金はしないでください。払ったお金に見合う価値がつく保証はありません。紹介者は、あなたの課金額の10%を受け取ります（このリンクの紹介者である当サイト運営者も含みます）。$OREはまだトークンではなく、サイト自身が「残高はトークンの約束ではない」と書いています。運営者は匿名です。運営者の名前・所在地・準拠法の記載はなく、ホワイトペーパーもありません。会社としての存在はXアカウント「@RigGrid」だけで、第三者によるレビューも見つかりませんでした（2026年10月時点）。マシンの追加は有料ですが、価格は公開されていません。「残り7日」といったカウントダウンで登録を急がせる表示があります。マイニングは24時間ごとに自分で再開する必要があります</p>
+<p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
+<div class="slip"><a class="btn solid" href="https://miningmachine.io/r/aS80bLRm" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="認証方法の一覧"><a href="/ja/verify/world-id/" dir="auto">World ID（Orb認証）</a><a href="/ja/verify/face/" dir="auto">顔認証・ライブネス</a><a href="/ja/verify/kyc-id/" dir="auto">身分証のKYC</a><a href="/ja/verify/web-of-trust/" dir="auto">信頼の網・招待</a></nav>

@@ -472,6 +472,11 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
 .detail .caution{font-size:.88rem}
+/* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
+.svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.svc-warn p{margin:0}
+.svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
+.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
 .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
 .rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
@@ -626,7 +631,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <li class="org" id="oss-poh-v2"><div class="org-head"><a class="org-name" href="https://github.com/Proof-Of-Humanity/proof-of-humanity-v2-contracts" target="_blank" rel="noopener" dir="auto">Proof of Humanity v2 contracts</a><span class="oss-repo" dir="ltr">github.com/Proof-Of-Humanity/proof-of-humanity-v2-contracts</span></div>
 <p>Proof of Humanity v2 的智能合约：通过视频提交、担保和 Kleros 争议裁决建立的真人名册，UBI 代币以此为基础</p><dl class="oss-facts"><div><dt>语言</dt><dd><span dir="ltr">TypeScript</span></dd></div><div><dt>许可证</dt><dd><span dir="ltr">MIT (package.json)</span></dd></div><div><dt>星标</dt><dd>★ 22</dd></div><div><dt>最后提交</dt><dd><time datetime="2026-05-07">2026年5月7日</time></dd></div></dl></li></ul></section>
 <section class="org-group" id="g-research"><h2>模拟器与研究<span class="dot">3</span></h2><ul class="org-list"><li class="org" id="oss-policyengine-us"><div class="org-head"><a class="org-name" href="https://github.com/PolicyEngine/policyengine-us" target="_blank" rel="noopener" dir="auto">PolicyEngine US</a><span class="oss-repo" dir="ltr">github.com/PolicyEngine/policyengine-us</span></div>
-<p>美国税收与福利制度的规则引擎，用于测算 UBI 等改革的成本及其对贫困的影响</p><dl class="oss-facts"><div><dt>语言</dt><dd><span dir="ltr">Python</span></dd></div><div><dt>许可证</dt><dd><span dir="ltr">AGPL-3.0</span></dd></div><div><dt>星标</dt><dd>★ 170</dd></div><div><dt>最后提交</dt><dd><time datetime="2026-10-28">2026年10月28日</time></dd></div></dl></li>
+<p>美国税收与福利制度的规则引擎，用于测算 UBI 等改革的成本及其对贫困的影响</p><dl class="oss-facts"><div><dt>语言</dt><dd><span dir="ltr">Python</span></dd></div><div><dt>许可证</dt><dd><span dir="ltr">AGPL-3.0</span></dd></div><div><dt>星标</dt><dd>★ 170</dd></div><div><dt>最后提交</dt><dd><time datetime="2026-10-29">2026年10月29日</time></dd></div></dl></li>
 <li class="org" id="oss-openfisca-core"><div class="org-head"><a class="org-name" href="https://github.com/openfisca/openfisca-core" target="_blank" rel="noopener" dir="auto">OpenFisca</a><span class="oss-repo" dir="ltr">github.com/openfisca/openfisca-core</span></div>
 <p>把税收与福利规则写成代码的开放引擎；基于它的各国模型可用来模拟基本收入方案</p><dl class="oss-facts"><div><dt>语言</dt><dd><span dir="ltr">Python</span></dd></div><div><dt>许可证</dt><dd><span dir="ltr">AGPL-3.0</span></dd></div><div><dt>星标</dt><dd>★ 249</dd></div><div><dt>最后提交</dt><dd><time datetime="2026-10-23">2026年10月23日</time></dd></div></dl></li>
 <li class="org" id="oss-mosaic-model"><div class="org-head"><a class="org-name" href="https://github.com/Mosaic-AI-Policy-Institute/mosaic-model" target="_blank" rel="noopener" dir="auto">MOSAIC model</a><span class="oss-repo" dir="ltr">github.com/Mosaic-AI-Policy-Institute/mosaic-model</span></div>

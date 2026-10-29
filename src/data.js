@@ -2125,6 +2125,78 @@ module.exports = {
         "need": "سجّل عبر رابط الدعوة وأكّد بريدك الإلكتروني (لا حاجة لوثيقة هوية). ثم اضغط مرة واحدة يوميًا في التطبيق (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
         "caution": "تقول صفحة الدعوة نفسها: «⁦JR⁩ نقطة داخل التطبيق، ولا يمكن بيعها أو تحويلها». حتى أكتوبر 2026 لا توجد طريقة لتحويلها إلى نقود، فأي قيمة لها تعتمد على استخدام محتمل في المستقبل. لا تتجمع النقاط إلا إذا ضغطت كل يوم. اسم الحزمة في ⁦Google Play⁩ هو ⁦“com.yourcompany.jrkripto”⁩، ويبدو كأنه اسم قالب لم يُغيَّر"
       }
+    },
+    {
+      "id": "miningmachine",
+      "name": "Mining Machine（$ORE）",
+      "nameEn": "Mining Machine ($ORE)",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://miningmachine.io/",
+      "ref": "https://miningmachine.io/r/aS80bLRm",
+      "added": "2026-10-29",
+      "checked": "2026-10",
+      "trust": {
+        "cash": "no",
+        "price": "no",
+        "operator": "unknown"
+      },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
+      "ja": {
+        "gain": "$OREのマイニング残高（無料で24時間ずつ）",
+        "note": "ブラウザ上の「マイニングマシン」で$OREの残高をためるサイト。$OREの総量は2,100万枚で、4つのエポックに分けて3回半減するとされる。登録は無料で、入金・カード登録・インストールは不要。無料の「Free Miner」が24時間ずつ動き、アカウントには最初からマシン枠が2つある。Xアカウントを連携すると、1日だけ +15 MP のマシンが追加される。お金を払ってマシンを足すと「速くなる」とされている。招待した人には、招待された人の採掘量の10%（上乗せで発行されるので、招待された人の分は減らない）と、招待された人の支払い額の10%が入る。最初の招待者は変わらない",
+        "need": "紹介リンクから無料で登録する（メールアドレスかXでログイン、身分証は不要）。あとは24時間ごとにマイニングを開始する（日本から登録できることは2026年10月に確認）",
+        "warning": "課金はしないでください。払ったお金に見合う価値がつく保証はありません。紹介者は、あなたの課金額の10%を受け取ります（このリンクの紹介者である当サイト運営者も含みます）。$OREはまだトークンではなく、サイト自身が「残高はトークンの約束ではない」と書いています。運営者は匿名です。",
+        "caution": "課金はしないでください。払ったお金に見合う価値がつく保証はありません。紹介者は、あなたの課金額の10%を受け取ります（このリンクの紹介者である当サイト運営者も含みます）。$OREはまだトークンではなく、サイト自身が「残高はトークンの約束ではない」と書いています。運営者は匿名です。運営者の名前・所在地・準拠法の記載はなく、ホワイトペーパーもありません。会社としての存在はXアカウント「@RigGrid」だけで、第三者によるレビューも見つかりませんでした（2026年10月時点）。マシンの追加は有料ですが、価格は公開されていません。「残り7日」といったカウントダウンで登録を急がせる表示があります。マイニングは24時間ごとに自分で再開する必要があります"
+      },
+      "en": {
+        "gain": "$ORE mining balance (free 24-hour sessions)",
+        "note": "A site where a “mining machine” in your browser builds up a $ORE balance. $ORE is said to have a fixed supply of 21,000,000 across 4 epochs with 3 halvings. Joining is free, with no deposit, card or install. A free “Free Miner” runs in 24-hour sessions, and accounts start with 2 machine slots. Linking an X account adds a temporary +15 MP machine for a day. You can pay to add machines to “go faster”. Inviters get 10% of what their invitees mine (minted on top, so invitees keep all of theirs) and 10% of what invitees spend. The first inviter is permanent",
+        "need": "Sign up for free via the invite link (log in with email or X, no ID needed). Then start a mining session every 24 hours (sign-up from Japan confirmed in Oct 2026)",
+        "warning": "Don’t pay for machines or upgrades. There’s no guarantee that anything you pay for will ever be worth anything. Whoever invited you receives 10% of what you spend, and that includes this site’s operator, who invited you through this link. $ORE is not a token yet, and the site itself says balances are not a promise of tokens. The operator is anonymous.",
+        "caution": "Don’t pay for machines or upgrades. There’s no guarantee that anything you pay for will ever be worth anything. Whoever invited you receives 10% of what you spend, and that includes this site’s operator, who invited you through this link. $ORE is not a token yet, and the site itself says balances are not a promise of tokens. The operator is anonymous. There is no operator name, address or jurisdiction, and no whitepaper. The only company presence is the X account @RigGrid, and no independent reviews could be found (as of October 2026). Extra machines cost money, but prices are not shown publicly. The page pushes you to hurry with a countdown (“only 7 days”). You have to restart mining yourself every 24 hours"
+      },
+      "zh": {
+        "gain": "$ORE 挖矿余额（免费，每次 24 小时）",
+        "note": "一个用浏览器里的“矿机”累积 $ORE 余额的网站。据称 $ORE 总量固定为 2,100 万枚，分 4 个纪元、减半 3 次。注册免费，无需充值、绑卡或安装。免费的“Free Miner”每次运行 24 小时，账户一开始有 2 个矿机位。关联 X 账号可获得一天的临时 +15 MP 矿机。付费增加矿机据称可以“更快”。邀请人可获得被邀请人挖矿量的 10%（额外发行，被邀请人的部分不会减少）以及被邀请人支付金额的 10%。第一个邀请人永久不变",
+        "need": "通过邀请链接免费注册（用邮箱或 X 登录，无需身份证件）。之后每 24 小时开始一次挖矿（已于 2026 年 10 月确认可从日本注册）",
+        "warning": "请不要付费。无法保证你付的钱将来会有相应的价值。邀请人会获得你付费金额的 10%（也包括通过此链接邀请你的本站运营者）。$ORE 目前还不是代币，网站自己也写明余额并不是代币的承诺。运营方是匿名的。",
+        "caution": "请不要付费。无法保证你付的钱将来会有相应的价值。邀请人会获得你付费金额的 10%（也包括通过此链接邀请你的本站运营者）。$ORE 目前还不是代币，网站自己也写明余额并不是代币的承诺。运营方是匿名的。没有写明运营方的名称、地址或适用法律，也没有白皮书。公司唯一的公开存在是 X 账号 @RigGrid，也找不到任何第三方评测（截至 2026 年 10 月）。增加矿机需要付费，但价格没有公开。页面用“只剩 7 天”之类的倒计时催促注册。每 24 小时需要自己重新开始挖矿"
+      },
+      "hi": {
+        "gain": "$ORE माइनिंग बैलेंस (मुफ़्त, हर बार 24 घंटे)",
+        "note": "एक साइट, जहाँ ब्राउज़र में चलने वाली “माइनिंग मशीन” से $ORE का बैलेंस जमा होता है। बताया जाता है कि $ORE की कुल सप्लाई 2,10,00,000 पर तय है, जो 4 एपॉक में बँटी है और जिसमें 3 हाल्विंग होती हैं। जुड़ना मुफ़्त है; न डिपॉज़िट, न कार्ड, न इंस्टॉल। मुफ़्त “Free Miner” 24-24 घंटे के सेशन में चलता है, और हर अकाउंट में शुरू से 2 मशीन स्लॉट होते हैं। X अकाउंट जोड़ने पर एक दिन के लिए +15 MP की अस्थायी मशीन मिलती है। पैसे देकर मशीनें जोड़ने से “तेज़ी” आने की बात कही जाती है। इनवाइट करने वाले को इनवाइट किए गए लोगों की माइनिंग का 10% (ऊपर से मिंट होता है, इसलिए उनका हिस्सा कम नहीं होता) और उनके ख़र्च का 10% मिलता है। पहला इनवाइटर हमेशा के लिए तय रहता है",
+        "need": "इनवाइट लिंक से मुफ़्त साइन अप करें (ईमेल या X से लॉग इन, पहचान पत्र ज़रूरी नहीं)। फिर हर 24 घंटे में माइनिंग सेशन शुरू करें (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)",
+        "warning": "मशीनों या अपग्रेड के लिए पैसे न दें। इस बात की कोई गारंटी नहीं कि जो आप ख़रीदेंगे उसकी कभी कोई क़ीमत होगी। जिसने आपको इनवाइट किया, उसे आपके ख़र्च का 10% मिलता है, और इसमें इस साइट का संचालक भी शामिल है, जिसने इस लिंक से आपको इनवाइट किया है। $ORE अभी टोकन नहीं है, और साइट ख़ुद कहती है कि बैलेंस टोकन का वादा नहीं है। संचालक गुमनाम है।",
+        "caution": "मशीनों या अपग्रेड के लिए पैसे न दें। इस बात की कोई गारंटी नहीं कि जो आप ख़रीदेंगे उसकी कभी कोई क़ीमत होगी। जिसने आपको इनवाइट किया, उसे आपके ख़र्च का 10% मिलता है, और इसमें इस साइट का संचालक भी शामिल है, जिसने इस लिंक से आपको इनवाइट किया है। $ORE अभी टोकन नहीं है, और साइट ख़ुद कहती है कि बैलेंस टोकन का वादा नहीं है। संचालक गुमनाम है। संचालक का नाम, पता या क़ानूनी क्षेत्राधिकार कहीं नहीं लिखा, और कोई व्हाइटपेपर नहीं है। कंपनी की इकलौती मौजूदगी X अकाउंट @RigGrid है, और कोई स्वतंत्र समीक्षा नहीं मिली (अक्टूबर 2026 तक)। अतिरिक्त मशीनों के पैसे लगते हैं, लेकिन क़ीमतें सार्वजनिक नहीं हैं। पेज “सिर्फ़ 7 दिन” जैसे काउंटडाउन से जल्दी करने का दबाव डालता है। हर 24 घंटे में माइनिंग ख़ुद फिर से शुरू करनी पड़ती है"
+      },
+      "es": {
+        "gain": "Saldo de minería de $ORE (sesiones gratis de 24 horas)",
+        "note": "Un sitio en el que una «máquina de minería» en tu navegador acumula un saldo de $ORE. Según el sitio, $ORE tiene un suministro fijo de 21.000.000 repartido en 4 épocas con 3 halvings. Unirse es gratis, sin depósito, tarjeta ni instalación. Un «Free Miner» gratuito funciona en sesiones de 24 horas, y las cuentas empiezan con 2 huecos para máquinas. Si vinculas una cuenta de X, recibes durante un día una máquina temporal de +15 MP. Puedes pagar para añadir máquinas e «ir más rápido». Quien invita recibe el 10% de lo que minan sus invitados (se emite aparte, así que el invitado conserva todo lo suyo) y el 10% de lo que gastan. El primer invitador es permanente",
+        "need": "Regístrate gratis con el enlace de invitación (inicia sesión con correo o con X, sin documento de identidad). Después, inicia una sesión de minería cada 24 horas (se comprobó en octubre de 2026 que el registro funciona desde Japón)",
+        "warning": "No pagues por máquinas ni mejoras. No hay ninguna garantía de que lo que pagues vaya a valer algo. Quien te invita recibe el 10% de lo que gastas, y eso incluye al responsable de este sitio, que te invita con este enlace. $ORE todavía no es un token, y el propio sitio dice que el saldo no es una promesa de tokens. El operador es anónimo.",
+        "caution": "No pagues por máquinas ni mejoras. No hay ninguna garantía de que lo que pagues vaya a valer algo. Quien te invita recibe el 10% de lo que gastas, y eso incluye al responsable de este sitio, que te invita con este enlace. $ORE todavía no es un token, y el propio sitio dice que el saldo no es una promesa de tokens. El operador es anónimo. No figura el nombre del operador, su dirección ni su jurisdicción, y no hay whitepaper. La única presencia de la empresa es la cuenta de X @RigGrid, y no se encontraron reseñas independientes (a octubre de 2026). Las máquinas extra cuestan dinero, pero los precios no se muestran públicamente. La página te mete prisa con una cuenta atrás («solo 7 días»). Tienes que reiniciar la minería tú mismo cada 24 horas"
+      },
+      "de": {
+        "gain": "$ORE-Mining-Guthaben (kostenlos, je 24 Stunden)",
+        "note": "Eine Seite, auf der eine „Mining-Maschine“ im Browser ein $ORE-Guthaben aufbaut. $ORE soll eine feste Menge von 21.000.000 haben, verteilt auf 4 Epochen mit 3 Halvings. Die Anmeldung ist kostenlos, ohne Einzahlung, Karte oder Installation. Ein kostenloser „Free Miner“ läuft in Sitzungen von je 24 Stunden, und Konten starten mit 2 Maschinenplätzen. Wer ein X-Konto verknüpft, bekommt für einen Tag eine zusätzliche Maschine mit +15 MP. Gegen Geld kann man Maschinen hinzufügen, um „schneller“ zu werden. Wer einlädt, bekommt 10 % dessen, was die Eingeladenen minen (zusätzlich ausgegeben, die Eingeladenen behalten also alles), und 10 % dessen, was sie ausgeben. Der erste Einlader bleibt dauerhaft",
+        "need": "Über den Einladungslink kostenlos anmelden (Login per E-Mail oder X, kein Ausweis nötig). Danach alle 24 Stunden eine Mining-Sitzung starten (im Oktober 2026 bestätigt: Anmeldung aus Japan möglich)",
+        "warning": "Bitte zahle nicht für Maschinen oder Upgrades. Es gibt keine Garantie, dass das, wofür du zahlst, jemals etwas wert ist. Wer dich eingeladen hat, bekommt 10 % von dem, was du ausgibst, und dazu gehört auch der Betreiber dieser Seite, der dich über diesen Link einlädt. $ORE ist noch kein Token, und die Seite selbst sagt, dass Guthaben kein Versprechen auf Tokens sind. Der Betreiber ist anonym.",
+        "caution": "Bitte zahle nicht für Maschinen oder Upgrades. Es gibt keine Garantie, dass das, wofür du zahlst, jemals etwas wert ist. Wer dich eingeladen hat, bekommt 10 % von dem, was du ausgibst, und dazu gehört auch der Betreiber dieser Seite, der dich über diesen Link einlädt. $ORE ist noch kein Token, und die Seite selbst sagt, dass Guthaben kein Versprechen auf Tokens sind. Der Betreiber ist anonym. Es gibt keinen Betreibernamen, keine Adresse, keine Rechtsordnung und kein Whitepaper. Die einzige Präsenz des Unternehmens ist der X-Account @RigGrid, unabhängige Bewertungen ließen sich nicht finden (Stand Oktober 2026). Zusätzliche Maschinen kosten Geld, die Preise werden aber nicht öffentlich genannt. Die Seite drängt mit einem Countdown („nur 7 Tage“) zur Eile. Das Mining musst du alle 24 Stunden selbst neu starten"
+      },
+      "ar": {
+        "gain": "رصيد تعدين ⁦$ORE⁩ (جلسات مجانية مدة كل منها 24 ساعة)",
+        "note": "موقع تجمع فيه «آلة تعدين» داخل المتصفح رصيدًا من ⁦$ORE⁩. يُقال إن المعروض الكلي من ⁦$ORE⁩ ثابت عند 21,000,000 موزّعة على 4 حقب مع 3 عمليات تنصيف. الانضمام مجاني، بلا إيداع ولا بطاقة ولا تثبيت. يعمل ⁦“Free Miner”⁩ المجاني في جلسات مدة كل منها 24 ساعة، ويبدأ كل حساب بخانتين للأجهزة. ربط حساب ⁦X⁩ يضيف جهازًا مؤقتًا بقوة ⁦+15 MP⁩ ليوم واحد. يمكنك الدفع لإضافة أجهزة «لتسريع» التعدين. يحصل من يدعو على 10% مما يعدّنه المدعوون (يُصكّ إضافيًا، فلا ينقص نصيب المدعو) وعلى 10% مما ينفقونه. أول من يدعوك يبقى دائمًا",
+        "need": "سجّل مجانًا عبر رابط الدعوة (تسجيل الدخول بالبريد الإلكتروني أو ⁦X⁩، ولا حاجة لوثيقة هوية). ثم ابدأ جلسة تعدين كل 24 ساعة (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)",
+        "warning": "لا تدفع مقابل الأجهزة أو الترقيات. لا يوجد أي ضمان بأن ما تدفع مقابله سيكون له أي قيمة. يحصل من دعاك على 10% مما تنفقه، ويشمل ذلك مشغّل هذا الموقع الذي يدعوك عبر هذا الرابط. ليست ⁦$ORE⁩ رمزًا مميزًا (توكن) بعد، ويقول الموقع نفسه إن الرصيد ليس وعدًا بالحصول على رموز. المشغّل مجهول الهوية.",
+        "caution": "لا تدفع مقابل الأجهزة أو الترقيات. لا يوجد أي ضمان بأن ما تدفع مقابله سيكون له أي قيمة. يحصل من دعاك على 10% مما تنفقه، ويشمل ذلك مشغّل هذا الموقع الذي يدعوك عبر هذا الرابط. ليست ⁦$ORE⁩ رمزًا مميزًا (توكن) بعد، ويقول الموقع نفسه إن الرصيد ليس وعدًا بالحصول على رموز. المشغّل مجهول الهوية. لا يُذكر اسم المشغّل ولا عنوانه ولا الجهة القانونية التي يتبعها، ولا توجد ورقة بيضاء. الوجود الوحيد للشركة هو حساب ⁦X⁩ ⁦@RigGrid⁩، ولم نجد أي مراجعات مستقلة (حتى أكتوبر 2026). الأجهزة الإضافية مدفوعة، لكن أسعارها غير معلنة. تستعجلك الصفحة بعدّ تنازلي («7 أيام فقط»). عليك إعادة تشغيل التعدين بنفسك كل 24 ساعة"
+      }
     }
   ],
   "PICKS": [
@@ -2160,6 +2232,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-29",
+      "ja": "Mining Machine（$ORE）を追加",
+      "en": "Added Mining Machine ($ORE)",
+      "zh": "新增 Mining Machine（$ORE）",
+      "hi": "Mining Machine ($ORE) जोड़ा",
+      "es": "Añadido Mining Machine ($ORE)",
+      "de": "Mining Machine ($ORE) hinzugefügt",
+      "ar": "أضفنا ⁦Mining Machine ($ORE)⁩"
+    },
     {
       "date": "2026-10-29",
       "ja": "JrKripto（JR）を追加",
@@ -2691,6 +2773,7 @@ module.exports = {
       "need": "条件",
       "ease": "ラク度",
       "cautionP": "注意：",
+      "svcWarnH": "登録する前に読んでください",
       "code": "CODE",
       "pending": "準備中",
       "copy": "コピー",
@@ -2889,6 +2972,7 @@ module.exports = {
       "need": "To get it",
       "ease": "Ease",
       "cautionP": "Note: ",
+      "svcWarnH": "Read this before signing up",
       "code": "CODE",
       "pending": "Coming soon",
       "copy": "Copy",
@@ -3087,6 +3171,7 @@ module.exports = {
       "need": "कैसे मिलेगा",
       "ease": "आसानी",
       "cautionP": "ध्यान दें: ",
+      "svcWarnH": "साइन अप करने से पहले इसे पढ़ें",
       "code": "CODE",
       "pending": "जल्द आ रहा है",
       "copy": "कॉपी",
@@ -3285,6 +3370,7 @@ module.exports = {
       "need": "获取方式",
       "ease": "轻松度",
       "cautionP": "注意：",
+      "svcWarnH": "注册前请先阅读",
       "code": "CODE",
       "pending": "即将推出",
       "copy": "复制",
@@ -3483,6 +3569,7 @@ module.exports = {
       "need": "Cómo conseguirlo",
       "ease": "Facilidad",
       "cautionP": "Ojo: ",
+      "svcWarnH": "Lee esto antes de registrarte",
       "code": "CÓDIGO",
       "pending": "Próximamente",
       "copy": "Copiar",
@@ -3681,6 +3768,7 @@ module.exports = {
       "need": "طريقة الحصول",
       "ease": "السهولة",
       "cautionP": "تنبيه: ",
+      "svcWarnH": "اقرأ هذا قبل التسجيل",
       "code": "الرمز",
       "pending": "قريبًا",
       "copy": "نسخ",
@@ -3879,6 +3967,7 @@ module.exports = {
       "need": "So bekommst du es",
       "ease": "Aufwand",
       "cautionP": "Hinweis: ",
+      "svcWarnH": "Bitte vor der Anmeldung lesen",
       "code": "CODE",
       "pending": "Folgt bald",
       "copy": "Kopieren",
