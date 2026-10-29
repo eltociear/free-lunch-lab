@@ -595,6 +595,70 @@ Cautions: What rewards are on offer now, and how much, is not stated officially.
 
 ## Essays
 
+### Universal high income: who pays?
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
+- Published: 2026-10-29
+
+In November 2023, closing the UK’s AI Safety Summit in conversation with Rishi Sunak, Elon Musk said “there will come a point where no job is needed”, and added: “We won’t have universal basic income, we’ll have universal high income.”[1] Six months later, speaking by video link to VivaTech in Paris, he went further: “Probably none of us will have a job.” AI and robots would provide the goods and services people want, there would be “no shortage of goods or services”, and to make it work there would need to be a “universal high income”. CNN noted that he did not say what that would look like.[2]
+
+As far as the public record goes, that is the whole proposal: a forecast of abundance, plus a name. This essay asks the question the name skips. If the robots do the work, who pays the high income, and through what pipe does it reach people?
+
+#### What the framing gets right
+
+Opinion: Credit where it is due. Most talk about AI and jobs is defensive: retraining, safety nets, how to survive being replaced. Universal high income flips the question from “how do we survive job loss?” to “how do we share abundance?” That is a better question. If machines really make goods and services far cheaper, the problem stops being scarcity and becomes distribution. Basic income advocates have argued for decades that distribution is a political choice, not a law of nature. It is useful to hear the same point from someone who runs AI and robotics companies.
+
+#### The gaps
+
+Opinion: Who pays? Abundance does not distribute itself. In a world where AI earns the money, the profits land with whoever owns the models, the data centres and the robots. Getting them to everyone else needs a mechanism: a tax, a dividend, a public fund, a share register. Musk has not named one. A promise of income with no payer is a forecast, not a policy.
+
+Opinion: Not everything gets cheaper. AI can cut the cost of software, translation and perhaps, one day, manufacturing. It does little for land, which nobody is making more of, or for housing where people want to live. Positional goods, such as the best school, the view or the scarce ticket, are scarce by definition. And care from an actual human may become more valuable, not less, precisely because it is the one thing machines are not. If those prices rise while gadgets get cheap, people can be richer in stuff and still feel poor.
+
+Opinion: “High” is relative. A high income is high compared with someone. If everyone receives the same generous amount, the prices of the scarce things above adjust to it, and what feels high in year one becomes the new floor. The useful question is not “how high?” but “how much of the scarce stuff can it buy?”
+
+Opinion: The people promising it own the AI. That is not a conspiracy, just the shape of the incentive. When the owners of a technology say its benefits will reach everyone, the details of how matter more, not less. A share of profits that depends on the goodwill of the people holding them is a gift, and gifts can stop.
+
+#### Pipes people have actually proposed
+
+Some people have tried to draw the pipe. In “Moore’s Law for Everything” (March 2021), Sam Altman proposed an American Equity Fund, filled by taxing large companies 2.5% of their market value each year, paid in shares, and 2.5% of the value of privately held land, paid in dollars. He estimated that within a decade each of 250 million American adults would get about $13,500 a year.[3] He picked land because its supply is fixed, which is exactly the problem above.
+
+In May 2024, on the All-In podcast, Altman floated “universal basic compute”: everybody gets “a slice of GPT-7’s compute” to use, resell or donate. He did not say how it would work.[4]
+
+The Windfall Clause, from researchers at the Centre for the Governance of AI at Oxford’s Future of Humanity Institute (2020), proposes that AI firms commit in advance to donate a significant share of any extremely large profits that only a transformative AI breakthrough could produce.[5]
+
+There is also a working precedent. Since 1982, Alaska has paid residents an annual dividend from its Permanent Fund, which turns the state’s oil and mineral wealth into a lasting financial resource; the first payment was $1,000 each.[6] (See our timeline (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-alaska).) Swap “oil” for “AI profits” and you have the cleanest real-world template for a high income. There is evidence on what cash does, too. The OpenResearch study gave 1,000 people $1,000 a month for three years. Its 2024 results found that recipients spent more and worked one to two fewer hours a week, with no improvement in job quality.[7] (Timeline entry (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-openresearch).)
+
+#### How crypto UBI answers “who pays”
+
+The apps on this site have had to answer the question for real, at small scale. They answer it in three different ways.
+
+World handed out newly issued tokens. When WLD launched in 2023, 75% of its 10 billion supply was earmarked for the community, and people verified as human with the Orb received regular WLD airdrops; proof of personhood stopped one person from claiming a thousand shares.[8] No one’s profits paid for it: what recipients got was worth whatever the market would pay for WLD. New airdrop cycles stopped on 1 June 2026 (see the graveyard (https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-wld-airdrop)).
+
+GoodDollar (https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/) pays its daily G$ from a reserve funded by staking yield, the return on crypto that supporters lock up. That is closer to a real pipe: capital earns a return, and the return becomes a dividend. It also shows the risk. After a security incident in May 2026 the reserve is under review, and the daily amount is very small.[9]
+
+Circles (https://neteru-nyukin.eltociear.workers.dev/services/circles/) and Ğ1 (https://neteru-nyukin.eltociear.workers.dev/services/g1/) remove the payer altogether. Every member issues new currency for themselves: 1 CRC an hour in Circles, a daily Universal Dividend in Ğ1. Money creation is the dividend, so no one “pays” in the usual sense; everyone is diluted a little, equally. The catch is that the money is worth only what others will accept it for, which today is not much, and mostly within the community.[10] (The code for all three is on our open-source page (https://neteru-nyukin.eltociear.workers.dev/open-source/).)
+
+#### Conclusion: build the pipe
+
+Opinion: Universal high income is a forecast, not a policy. It may even be a good forecast. But the interesting part is not the word “high”. It is the pipe that would carry AI profits to people who no longer earn wages. Taxes, equity funds, windfall pledges, resource dividends and self-issued currencies are all candidate pipes, and each has a known way to leak.
+
+Opinion: In our previous essay (https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/), we argued that AI agents need operating budgets, not a basic income. Put the two together and the picture is simple: agents get budgets, humans get dividends, and someone has to build the pipe in between. Until someone does, treat any promise of a high income the way this site treats every free lunch. Check who is paying.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
+
+Sources:
+
+1. The National — Elon Musk warns of a future where “no job is needed” in conversation with Rishi Sunak (2 Nov 2023): https://www.thenationalnews.com/world/uk-news/2023/11/02/elon-musk-warns-of-a-future-where-no-job-is-needed-in-conversation-with-rishi-sunak/
+2. CNN — Elon Musk says AI will take all our jobs (VivaTech 2024, 23 May 2024): https://www.cnn.com/2024/05/23/tech/elon-musk-ai-your-job/index.html
+3. Sam Altman — Moore’s Law for Everything (16 Mar 2021): https://moores.samaltman.com/
+4. Business Insider — Sam Altman’s “universal basic compute” on the All-In podcast (12 May 2024): https://www.businessinsider.com/openai-sam-altman-universal-basic-income-idea-compute-gpt-7-2024-5
+5. O’Keefe et al. — The Windfall Clause: Distributing the Benefits of AI for the Common Good (Centre for the Governance of AI, FHI, 2020): https://arxiv.org/abs/1912.11595
+6. Alaska Permanent Fund Dividend Division — Historical Timeline; Alaska Permanent Fund Corporation: https://pfd.alaska.gov/Division-Info/Historical-Timeline (also https://apfc.org/who-we-are/)
+7. Vivalt et al. — The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States (NBER w32719, Jul 2024); OpenResearch: https://www.nber.org/papers/w32719 (also https://www.openresearchlab.org/)
+8. CoinDesk — Worldcoin releases tokenomics (24 Jul 2023); World Help Center — Updates to the Airdrop Program: https://www.coindesk.com/business/2023/07/24/worldcoin-release-tokenomics-report-geofenced-for-some-countries/ (also https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program)
+9. GoodDollar — GoodProtocol smart contracts (G$, staking-funded reserve, daily UBI): https://github.com/GoodDollar/GoodProtocol (also https://www.gooddollar.org/)
+10. Circles v2 contracts; Duniter v2s (Ğ1 universal dividend): https://github.com/aboutcircles/circles-contracts-v2 (also https://git.duniter.org/nodes/rust/duniter-v2s)
+
 ### Should AI agents get a basic income?
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
@@ -640,6 +704,8 @@ Opinion: For an agent basic income to make sense, we think at least three things
 
 This site has a category called “For AI agents.” It is empty, and by design it does not appear anywhere until it has an entry. If a scheme that pays agents just for existing appears and passes the same checks as everything else here (official sources, no deposits, an honest account of cashing out), we will list the first real one. Until then, the free lunch still needs a human to eat it.[7]
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
+
 Sources:
 
 1. ITmedia NEWS — AI「ギュ」時代 (Apr 2026): https://www.itmedia.co.jp/news/article/2604/27/1260427066/
@@ -652,7 +718,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-10-28. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-10-29. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -697,7 +763,7 @@ Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of 
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-10-28
+- Last commit: 2026-10-29
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community

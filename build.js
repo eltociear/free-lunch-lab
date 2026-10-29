@@ -57,6 +57,18 @@ const essaysPath = l => `${urlPath(l)}essays/`;
 const essaysAbs = l => SITE_URL + essaysPath(l);
 const essayPath = (l, e) => `${essaysPath(l)}${e.id}/`;
 const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
+// エッセイ本文の {文字|/path/} はサイト内リンク（言語の接頭辞は自動で付く）。/essays/{id}/ への参照と related は実在を確かめる
+const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
+const ESSAY_KEYS = ['essaysTitle', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated'];
+for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const e of ESSAYS) {
+  for (const l of LANGS) for (const f of ['title', 'desc', 'blocks']) if (!e[f][l]) throw new Error(`${e.id}: missing ${f}.${l}`);
+  if (e.related && !ESSAYS.some(x => x.id === e.related)) throw new Error(`${e.id}: unknown related essay ${e.related}`);
+  for (const l of LANGS) for (const [, t] of e.blocks[l]) for (const [, , href] of t.matchAll(ESSAY_LINK)) {
+    const m = href.match(/^\/essays\/([^/]+)\//);
+    if (m && !ESSAYS.some(x => x.id === m[1])) throw new Error(`${e.id}.${l}: link to unknown essay ${href}`);
+  }
+}
 const longDate = (iso, lang) => new Intl.DateTimeFormat(LANG_TAG[lang], { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(iso + 'T00:00:00Z'));
 // ベーシックインカム社会実験の年表: /timeline/ と /{lang}/timeline/
 const tlPath = l => `${urlPath(l)}timeline/`;
@@ -523,6 +535,7 @@ const DETAIL_CSS = `
 .fn h2{font-size:1rem;margin-bottom:8px}
 .fn ol{margin:0;padding-inline-start:22px;display:grid;gap:6px;font-size:.84rem;overflow-wrap:anywhere}
 .fnback{text-decoration:none;margin-inline-start:4px}
+.related{margin-top:24px;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-weight:700}
 .tl{list-style:none;margin:16px 0 0;padding:0;position:relative}
 .tl::before{content:"";position:absolute;top:6px;bottom:6px;inset-inline-start:7px;width:2px;background:linear-gradient(var(--accent),var(--gold));opacity:.6}
 .tl-item{position:relative;padding-inline-start:30px;padding-bottom:22px}
@@ -737,8 +750,9 @@ function essayPage(e, lang) {
   const ttl = e.title[lang] || e.title.en;
   const desc = e.desc[lang] || e.desc.en;
   const url = essayAbs(lang, e);
-  const fn = t => esc(t).replace(/\[(\d+)\]/g, (_, n) => `<sup class="fnref"><a href="#fn-${n}" id="ref-${n}">${n}</a></sup>`);
+  const fn = t => esc(t).replace(ESSAY_LINK, (_, txt, href) => `<a href="${urlPath(lang)}${href.slice(1)}">${txt}</a>`).replace(/\[(\d+)\]/g, (_, n) => `<sup class="fnref"><a href="#fn-${n}" id="ref-${n}">${n}</a></sup>`);
   const blocks = (e.blocks[lang] || e.blocks.en).map(([k, t]) => k === 'h' ? `<h2>${esc(t)}</h2>` : k === 'o' ? `<p class="op"><span class="op-tag">${esc(L.essayOpinion)}</span>${fn(t)}</p>` : `<p>${fn(t)}</p>`).join('\n');
+  const rel = e.related && ESSAYS.find(x => x.id === e.related);
   const sources = e.sources.map(s => `<li id="fn-${s.n}"><a href="${esc(s.url)}" target="_blank" rel="noopener" dir="auto">${esc(s.label)}</a>${s.url2 ? ` · <a href="${esc(s.url2)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(s.url2).hostname.replace(/^www\./, ''))}</a>` : ''} <a class="fnback" href="#ref-${s.n}" aria-label="↩">↩</a></li>`).join('');
   const ld = [
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
@@ -754,6 +768,7 @@ function essayPage(e, lang) {
 <article>
 <header class="orgs-head"><p class="eyebrow">ESSAY</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p></header>
 <div class="essay-body">${blocks}</div>
+${rel ? `<p class="related">${esc(L.essayRelated)}: <a href="${essayPath(lang, rel)}">${esc(rel.title[lang] || rel.title.en)}</a></p>` : ''}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
 </article>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
@@ -1009,7 +1024,7 @@ function newsLink(n, lang) {
   const en = n.en || '';
   if (/badge/i.test(en)) return badgeAbs(lang);
   if (/open-source/i.test(en)) return ossAbs(lang);
-  if (/essay/i.test(en)) return essayAbs(lang, ESSAYS[0]);
+  if (/essay/i.test(en)) return essayAbs(lang, ESSAYS.find(e => en.includes(e.title.en)) || ESSAYS[ESSAYS.length - 1]);
   if (/timeline/i.test(en)) return tlAbs(lang);
   if (/verification method/i.test(en)) return verifyAbs(lang, 'world-id');
   if (/graveyard/i.test(en)) return graveAbs(lang);
@@ -1255,7 +1270,8 @@ const essayFull = e => [
   `- Page: ${essayAbs(DEFAULT_LANG, e)}`,
   `- Published: ${e.date}`,
   '',
-  ...e.blocks.en.map(([k, t]) => k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : md(t)).flatMap(x => [x, '']),
+  ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : md(t)).flatMap(x => [x, '']),
+  ...(e.related ? [`Related essay: ${essayAbs(DEFAULT_LANG, ESSAYS.find(x => x.id === e.related))}`, ''] : []),
   'Sources:',
   '',
   ...e.sources.map(s => `${s.n}. ${md(s.label)}: ${s.url}${s.url2 ? ` (also ${s.url2})` : ''}`),

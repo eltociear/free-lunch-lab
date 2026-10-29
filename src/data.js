@@ -2095,6 +2095,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-10-29",
+      "ja": "エッセイ「ユニバーサルハイインカムは来るのか：誰が払う？」を公開",
+      "en": "Published the essay “Universal high income: who pays?”",
+      "zh": "发布随笔《全民高收入：谁来买单？》",
+      "hi": "निबंध “यूनिवर्सल हाई इनकम: पैसा कौन देगा?” प्रकाशित",
+      "es": "Publicado el ensayo «Ingreso universal alto: ¿quién paga?»",
+      "de": "Essay „Universelles Hocheinkommen: Wer zahlt?“ veröffentlicht",
+      "ar": "نشرنا مقال «الدخل المرتفع الشامل: من يدفع؟»"
+    },
+    {
       "date": "2026-10-28",
       "ja": "掲載中のプロジェクト向けのバッジを追加",
       "en": "Added badges for listed projects",
@@ -2702,6 +2712,7 @@ module.exports = {
       "essayOpinion": "意見",
       "essaySources": "出典",
       "essayPublished": "公開",
+      "essayRelated": "関連エッセイ",
       "rssLabel": "RSSフィード",
       "ossTitle": "ベーシックインカムのオープンソース",
       "ossH1": "ベーシックインカムを支えるオープンソースのコード",
@@ -2899,6 +2910,7 @@ module.exports = {
       "essayOpinion": "Opinion",
       "essaySources": "Sources",
       "essayPublished": "Published",
+      "essayRelated": "Related essay",
       "rssLabel": "RSS feed",
       "ossTitle": "Open-source basic income projects",
       "ossH1": "Open-source code for basic income",
@@ -3096,6 +3108,7 @@ module.exports = {
       "essayOpinion": "राय",
       "essaySources": "स्रोत",
       "essayPublished": "प्रकाशित",
+      "essayRelated": "संबंधित निबंध",
       "rssLabel": "RSS फ़ीड",
       "ossTitle": "बेसिक इनकम के ओपन-सोर्स प्रोजेक्ट",
       "ossH1": "बेसिक इनकम का ओपन-सोर्स कोड",
@@ -3293,6 +3306,7 @@ module.exports = {
       "essayOpinion": "观点",
       "essaySources": "出处",
       "essayPublished": "发布",
+      "essayRelated": "相关随笔",
       "rssLabel": "RSS 订阅",
       "ossTitle": "基本收入开源项目",
       "ossH1": "基本收入的开源代码",
@@ -3490,6 +3504,7 @@ module.exports = {
       "essayOpinion": "Opinión",
       "essaySources": "Fuentes",
       "essayPublished": "Publicado",
+      "essayRelated": "Ensayo relacionado",
       "rssLabel": "Feed RSS",
       "ossTitle": "Proyectos de código abierto sobre renta básica",
       "ossH1": "Código abierto para la renta básica",
@@ -3687,6 +3702,7 @@ module.exports = {
       "essayOpinion": "رأي",
       "essaySources": "المصادر",
       "essayPublished": "نُشر",
+      "essayRelated": "مقال ذو صلة",
       "rssLabel": "خلاصة ⁦RSS⁩",
       "ossTitle": "مشاريع مفتوحة المصدر للدخل الأساسي",
       "ossH1": "شيفرة مفتوحة المصدر للدخل الأساسي",
@@ -3884,6 +3900,7 @@ module.exports = {
       "essayOpinion": "Meinung",
       "essaySources": "Quellen",
       "essayPublished": "Veröffentlicht",
+      "essayRelated": "Verwandter Essay",
       "rssLabel": "RSS-Feed",
       "ossTitle": "Open-Source-Projekte zum Grundeinkommen",
       "ossH1": "Open-Source-Code für das Grundeinkommen",
@@ -5774,8 +5791,721 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "universal-high-income",
+      "date": "2026-10-29",
+      "related": "ai-agent-basic-income",
+      "title": {
+        "ja": "ユニバーサルハイインカムは来るのか：誰が払う？",
+        "en": "Universal high income: who pays?",
+        "zh": "全民高收入：谁来买单？",
+        "hi": "यूनिवर्सल हाई इनकम: पैसा कौन देगा?",
+        "es": "Ingreso universal alto: ¿quién paga?",
+        "de": "Universelles Hocheinkommen: Wer zahlt?",
+        "ar": "الدخل المرتفع الشامل: من يدفع؟"
+      },
+      "desc": {
+        "ja": "イーロン・マスクは、AIとロボットで「ユニバーサルハイインカム」の時代が来ると言う。では誰が払うのか。アルトマンの株式基金、ウィンドフォール条項、アラスカの配当、そして World・GoodDollar・Circles・Ğ1 の答え方から考えるエッセイ。",
+        "en": "Elon Musk says AI will bring a “universal high income”. Who pays, and through what pipe? Altman’s American Equity Fund, the Windfall Clause, Alaska’s dividend, and how World, GoodDollar, Circles and Ğ1 answer it.",
+        "zh": "马斯克说 AI 和机器人会带来“全民高收入”。那么谁来买单、钱经由什么管道流到人手里？从阿尔特曼的美国股权基金、横财条款、阿拉斯加的分红，到 World、GoodDollar、Circles 和 Ğ1 的做法谈起。",
+        "hi": "एलन मस्क कहते हैं कि AI “यूनिवर्सल हाई इनकम” लाएगा। पर पैसा कौन देगा, और किस पाइप से पहुँचेगा? ऑल्टमैन का अमेरिकन इक्विटी फ़ंड, विंडफ़ॉल क्लॉज़, अलास्का का डिविडेंड, और World, GoodDollar, Circles व Ğ1 के जवाब।",
+        "es": "Elon Musk dice que la IA traerá un «ingreso universal alto». ¿Quién paga y por qué tubería llega? El fondo de Altman, la Windfall Clause, el dividendo de Alaska y cómo responden World, GoodDollar, Circles y Ğ1.",
+        "de": "Elon Musk sagt, KI bringe ein „universelles Hocheinkommen“. Wer zahlt, und durch welche Leitung? Altmans American Equity Fund, die Windfall Clause, Alaskas Dividende und die Antworten von World, GoodDollar, Circles und Ğ1.",
+        "ar": "يقول إيلون ماسك إن الذكاء الاصطناعي سيجلب «دخلًا مرتفعًا شاملًا». فمن يدفع، وعبر أي أنبوب؟ صندوق ألتمان، و«بند الأرباح الاستثنائية»، وعائد ألاسكا، وكيف تجيب ⁦World⁩ و⁦GoodDollar⁩ و⁦Circles⁩ و⁦Ğ1⁩."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "In November 2023, closing the UK’s AI Safety Summit in conversation with Rishi Sunak, Elon Musk said “there will come a point where no job is needed”, and added: “We won’t have universal basic income, we’ll have universal high income.”[1] Six months later, speaking by video link to VivaTech in Paris, he went further: “Probably none of us will have a job.” AI and robots would provide the goods and services people want, there would be “no shortage of goods or services”, and to make it work there would need to be a “universal high income”. CNN noted that he did not say what that would look like.[2]"
+          ],
+          [
+            "p",
+            "As far as the public record goes, that is the whole proposal: a forecast of abundance, plus a name. This essay asks the question the name skips. If the robots do the work, who pays the high income, and through what pipe does it reach people?"
+          ],
+          [
+            "h",
+            "What the framing gets right"
+          ],
+          [
+            "o",
+            "Credit where it is due. Most talk about AI and jobs is defensive: retraining, safety nets, how to survive being replaced. Universal high income flips the question from “how do we survive job loss?” to “how do we share abundance?” That is a better question. If machines really make goods and services far cheaper, the problem stops being scarcity and becomes distribution. Basic income advocates have argued for decades that distribution is a political choice, not a law of nature. It is useful to hear the same point from someone who runs AI and robotics companies."
+          ],
+          [
+            "h",
+            "The gaps"
+          ],
+          [
+            "o",
+            "Who pays? Abundance does not distribute itself. In a world where AI earns the money, the profits land with whoever owns the models, the data centres and the robots. Getting them to everyone else needs a mechanism: a tax, a dividend, a public fund, a share register. Musk has not named one. A promise of income with no payer is a forecast, not a policy."
+          ],
+          [
+            "o",
+            "Not everything gets cheaper. AI can cut the cost of software, translation and perhaps, one day, manufacturing. It does little for land, which nobody is making more of, or for housing where people want to live. Positional goods, such as the best school, the view or the scarce ticket, are scarce by definition. And care from an actual human may become more valuable, not less, precisely because it is the one thing machines are not. If those prices rise while gadgets get cheap, people can be richer in stuff and still feel poor."
+          ],
+          [
+            "o",
+            "“High” is relative. A high income is high compared with someone. If everyone receives the same generous amount, the prices of the scarce things above adjust to it, and what feels high in year one becomes the new floor. The useful question is not “how high?” but “how much of the scarce stuff can it buy?”"
+          ],
+          [
+            "o",
+            "The people promising it own the AI. That is not a conspiracy, just the shape of the incentive. When the owners of a technology say its benefits will reach everyone, the details of how matter more, not less. A share of profits that depends on the goodwill of the people holding them is a gift, and gifts can stop."
+          ],
+          [
+            "h",
+            "Pipes people have actually proposed"
+          ],
+          [
+            "p",
+            "Some people have tried to draw the pipe. In “Moore’s Law for Everything” (March 2021), Sam Altman proposed an American Equity Fund, filled by taxing large companies 2.5% of their market value each year, paid in shares, and 2.5% of the value of privately held land, paid in dollars. He estimated that within a decade each of 250 million American adults would get about $13,500 a year.[3] He picked land because its supply is fixed, which is exactly the problem above."
+          ],
+          [
+            "p",
+            "In May 2024, on the All-In podcast, Altman floated “universal basic compute”: everybody gets “a slice of GPT-7’s compute” to use, resell or donate. He did not say how it would work.[4]"
+          ],
+          [
+            "p",
+            "The Windfall Clause, from researchers at the Centre for the Governance of AI at Oxford’s Future of Humanity Institute (2020), proposes that AI firms commit in advance to donate a significant share of any extremely large profits that only a transformative AI breakthrough could produce.[5]"
+          ],
+          [
+            "p",
+            "There is also a working precedent. Since 1982, Alaska has paid residents an annual dividend from its Permanent Fund, which turns the state’s oil and mineral wealth into a lasting financial resource; the first payment was $1,000 each.[6] ({See our timeline|/timeline/#tl-alaska}.) Swap “oil” for “AI profits” and you have the cleanest real-world template for a high income. There is evidence on what cash does, too. The OpenResearch study gave 1,000 people $1,000 a month for three years. Its 2024 results found that recipients spent more and worked one to two fewer hours a week, with no improvement in job quality.[7] ({Timeline entry|/timeline/#tl-openresearch}.)"
+          ],
+          [
+            "h",
+            "How crypto UBI answers “who pays”"
+          ],
+          [
+            "p",
+            "The apps on this site have had to answer the question for real, at small scale. They answer it in three different ways."
+          ],
+          [
+            "p",
+            "World handed out newly issued tokens. When WLD launched in 2023, 75% of its 10 billion supply was earmarked for the community, and people verified as human with the Orb received regular WLD airdrops; proof of personhood stopped one person from claiming a thousand shares.[8] No one’s profits paid for it: what recipients got was worth whatever the market would pay for WLD. New airdrop cycles stopped on 1 June 2026 ({see the graveyard|/graveyard/#grave-wld-airdrop})."
+          ],
+          [
+            "p",
+            "{GoodDollar|/services/gooddollar/} pays its daily G$ from a reserve funded by staking yield, the return on crypto that supporters lock up. That is closer to a real pipe: capital earns a return, and the return becomes a dividend. It also shows the risk. After a security incident in May 2026 the reserve is under review, and the daily amount is very small.[9]"
+          ],
+          [
+            "p",
+            "{Circles|/services/circles/} and {Ğ1|/services/g1/} remove the payer altogether. Every member issues new currency for themselves: 1 CRC an hour in Circles, a daily Universal Dividend in Ğ1. Money creation is the dividend, so no one “pays” in the usual sense; everyone is diluted a little, equally. The catch is that the money is worth only what others will accept it for, which today is not much, and mostly within the community.[10] (The code for all three is on our {open-source page|/open-source/}.)"
+          ],
+          [
+            "h",
+            "Conclusion: build the pipe"
+          ],
+          [
+            "o",
+            "Universal high income is a forecast, not a policy. It may even be a good forecast. But the interesting part is not the word “high”. It is the pipe that would carry AI profits to people who no longer earn wages. Taxes, equity funds, windfall pledges, resource dividends and self-issued currencies are all candidate pipes, and each has a known way to leak."
+          ],
+          [
+            "o",
+            "In our {previous essay|/essays/ai-agent-basic-income/}, we argued that AI agents need operating budgets, not a basic income. Put the two together and the picture is simple: agents get budgets, humans get dividends, and someone has to build the pipe in between. Until someone does, treat any promise of a high income the way this site treats every free lunch. Check who is paying."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "2023年11月、英国のAIセーフティ・サミットの締めくくりにリシ・スナク首相（当時）と対談したイーロン・マスクは、「仕事が必要なくなるときが来る」と語り、こう続けました。「ユニバーサル・ベーシックインカムではなく、ユニバーサル・ハイインカムになるだろう」。[1] 半年後の2024年5月、パリのテック見本市 VivaTech にビデオで登壇したときは、さらに踏み込みます。「たぶん、私たちの誰も仕事を持たなくなる」。AIとロボットが欲しいモノやサービスを何でも用意してくれて、「モノやサービスが足りなくなることはない」。それを成り立たせるには「ユニバーサル・ハイインカム」が必要だ、と。ただしCNNは、それがどういうものかについては語らなかったと伝えています。[2]"
+          ],
+          [
+            "p",
+            "公の記録をたどるかぎり、提案はこれで全部です。豊かさの予測と、名前がひとつ。このエッセイでは、その名前が素通りしている問いを考えます。ロボットが働いてくれるとして、その「高い所得」は誰が払うのか。そして、どんなパイプを通って人の手に届くのか。"
+          ],
+          [
+            "h",
+            "この言い方の、いいところ"
+          ],
+          [
+            "o",
+            "まずは評価すべき点から。AIと仕事の話は、たいてい守りの話になります。学び直し、セーフティネット、ギュられたあとどう生き延びるか。ユニバーサルハイインカムは、問いを「失業をどう乗り切るか」から「豊かさをどう分けるか」へと変えます。これはいい問いです。機械が本当にモノやサービスを大幅に安くするなら、問題は「足りないこと」ではなく「分け方」になります。分け方は自然法則ではなく政治の選択だと、ベーシックインカムの支持者は何十年も言い続けてきました。同じことを、AIやロボットの会社を率いる本人の口から聞けるのは悪くありません。"
+          ],
+          [
+            "h",
+            "足りないところ"
+          ],
+          [
+            "o",
+            "誰が払うのか。豊かさは、勝手に配られたりはしません。AIがお金を稼ぐ世界では、利益はモデルやデータセンターやロボットの持ち主のところに入ります。それをほかの人に届けるには、税金、配当、公的な基金、株の持ち分といった「しくみ」が要ります。マスクはそれを示していません。払う人のいない所得の約束は、予測であって政策ではありません。"
+          ],
+          [
+            "o",
+            "安くならないものがある。AIはソフトウェアや翻訳、いつかは製造のコストまで下げるかもしれません。でも、土地はほとんど安くなりません。誰も新しく作れないからです。人が住みたい場所の住宅も同じ。いちばんいい学校、眺めのいい部屋、数の限られたチケットのような「地位財」は、そもそも数が少ないから価値があります。そして生身の人間によるケアは、機械ではないこと自体が価値なので、むしろ高くなるかもしれません。ガジェットが安くなる一方でこうした値段が上がれば、モノは豊かなのに暮らしは苦しい、ということが起こりえます。"
+          ],
+          [
+            "o",
+            "「ハイ」は相対的。高い所得とは、誰かと比べて高いという意味です。全員に同じだけ気前よく配られれば、さっきの数の限られたものの値段がそれに合わせて動き、1年目に「高い」と感じた額は、やがてただの最低ラインになります。問うべきは「いくらもらえるか」ではなく、「数の限られたものをどれだけ買えるか」です。"
+          ],
+          [
+            "o",
+            "約束しているのは、AIを持っている側。陰謀論ではなく、インセンティブの形の話です。技術の持ち主が「恩恵はみんなに行き渡る」と言うときこそ、どう行き渡るのかの中身が大事になります。利益を握る側の善意しだいで配られる分け前は「贈り物」です。そして贈り物は、止まることがあります。"
+          ],
+          [
+            "h",
+            "実際に提案されている「パイプ」"
+          ],
+          [
+            "p",
+            "パイプを具体的に描こうとした人もいます。サム・アルトマンは2021年3月のエッセイ「Moore’s Law for Everything」で、「アメリカ株式基金（American Equity Fund）」を提案しました。一定以上の時価総額の企業に毎年その2.5%を株式で、私有地にはその価値の2.5%をドルで課税して基金に積み立てるというものです。10年後には、米国の成人2億5,000万人それぞれに年約1万3,500ドルを配れると見積もっています。[3] 土地を選んだ理由は、供給が限られているから。つまり、さっきの問題そのものです。"
+          ],
+          [
+            "p",
+            "アルトマンは2024年5月、ポッドキャスト「All-In」で「ユニバーサル・ベーシック・コンピュート」という考えも口にしました。全員が「GPT-7の計算資源のひとかけら」を受け取り、自分で使っても、売っても、寄付してもいい、というものです。どう実現するかは語っていません。[4]"
+          ],
+          [
+            "p",
+            "「ウィンドフォール条項（Windfall Clause）」は、オックスフォード大学人類の未来研究所（FHI）のAIガバナンス・センターの研究者たちが2020年に発表した提案です。変革的なAIの突破なしには得られないほど莫大な利益が出たら、そのかなりの部分を寄付すると、AI企業があらかじめ約束しておくというものです。[5]"
+          ],
+          [
+            "p",
+            "実際に動いている前例もあります。アラスカ州は1982年から、州の石油と鉱物資源の富を元にした永久基金から、住民に毎年配当を払っています。最初の配当は1人1,000ドルでした。[6]（{年表を見る|/timeline/#tl-alaska}）「石油」を「AIの利益」に置き換えれば、ハイインカムのいちばんわかりやすいひな形になります。現金を配ると何が起きるかのデータもあります。OpenResearch の研究では、1,000人に月1,000ドルを3年間配りました。2024年に出た結果では、受け取った人は支出が増え、労働時間は週1〜2時間減り、仕事の質がよくなった様子は見られませんでした。[7]（{年表の項目|/timeline/#tl-openresearch}）"
+          ],
+          [
+            "h",
+            "暗号資産のUBIは「誰が払う」にどう答えているか"
+          ],
+          [
+            "p",
+            "このサイトに載っているアプリは、小さな規模ながら、この問いに実地で答えを出してきました。答え方は三通りです。"
+          ],
+          [
+            "p",
+            "World は、新しく発行したトークンを配りました。2023年にWLDが始まったとき、総供給100億枚の75%が「コミュニティ」向けに確保され、Orbで人間だと認証された人に定期的にWLDが配られました。人間証明は、一人が千人分を受け取るのを防ぐためのものです。[8] 誰かの利益が原資だったわけではなく、受け取ったものの価値は、市場がWLDにつける値段しだいでした。新しい配布サイクルは2026年6月1日に止まっています（{墓場を見る|/graveyard/#grave-wld-airdrop}）。"
+          ],
+          [
+            "p",
+            "{GoodDollar|/services/gooddollar/} は、毎日のG$を、ステーキングの利回りでまかなう準備金から出しています。支援者が預けた暗号資産が生む利回りです。資本が利回りを生み、それが配当になるので、本物のパイプに近い形です。同時にリスクも見えます。2026年5月にセキュリティ事故があって準備金は見直し中で、1日の額もかなり少なめです。[9]"
+          ],
+          [
+            "p",
+            "{Circles|/services/circles/} と {Ğ1|/services/g1/} は、「払う人」そのものをなくしました。メンバー一人ひとりが自分で新しい通貨を発行します。Circlesなら1時間に1 CRC、Ğ1なら毎日の「ユニバーサル・ディビデンド」。お金を生み出すこと自体が配当なので、ふつうの意味で「払う」人はいません。全員が少しずつ、平等に薄まるだけです。弱点は、そのお金の価値がほかの人が受け取ってくれる分しかないこと。今のところそれは大きくなく、ほとんどコミュニティの中にとどまっています。[10]（3つのコードはどれも{オープンソースの一覧|/open-source/}に載っています）"
+          ],
+          [
+            "h",
+            "結論：パイプを作ろう"
+          ],
+          [
+            "o",
+            "ユニバーサルハイインカムは予測であって、政策ではありません。当たる予測かもしれません。でもおもしろいのは「ハイ」という言葉のほうではなく、賃金をなくした人にAIの利益を届けるパイプのほうです。税金、株式基金、ウィンドフォールの約束、資源の配当、自分で発行する通貨。どれもパイプの候補で、どれにも知られた漏れ方があります。"
+          ],
+          [
+            "o",
+            "{前のエッセイ|/essays/ai-agent-basic-income/}で私たちは、AIエージェントに必要なのはベーシックインカムではなく運転資金だと書きました。二つを合わせると、絵はシンプルです。エージェントには予算を、人間には配当を。そしてその間をつなぐパイプは、誰かが作らなければなりません。それまでは「高い所得」の約束も、このサイトがあらゆるタダ飯を扱うのと同じように扱ってください。まず、誰が払っているのかを確かめること。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2023 年 11 月，在英国 AI 安全峰会闭幕时与时任首相苏纳克对谈，埃隆·马斯克说“总有一天，不再需要任何工作”，接着又说：“我们不会有全民基本收入，我们会有全民高收入。”[1] 半年后，他通过视频连线在巴黎 VivaTech 大会上讲得更进一步：“很可能我们谁都不会有工作。”AI 和机器人会提供人们想要的商品和服务，“商品和服务不会短缺”，而要让这一切成立，就需要“全民高收入”。CNN 指出，他没有说明那会是什么样子。[2]"
+          ],
+          [
+            "p",
+            "就公开记录而言，这就是提案的全部：一个关于富足的预测，加上一个名字。这篇随笔要追问这个名字跳过的问题：如果机器人把活干了，这份高收入由谁来付，又经由什么管道送到人手里？"
+          ],
+          [
+            "h",
+            "这个说法好在哪里"
+          ],
+          [
+            "o",
+            "先说值得肯定的地方。关于 AI 与工作的讨论大多是防守性的：再培训、安全网、被取代后怎么活下去。全民高收入把问题从“如何熬过失业”换成了“如何分享富足”。这是个更好的问题。如果机器真的让商品和服务便宜得多，问题就不再是稀缺，而是分配。基本收入的支持者几十年来一直说，分配是政治选择，不是自然规律。从经营 AI 和机器人公司的人口中听到同样的话，是件有用的事。"
+          ],
+          [
+            "h",
+            "缺口在哪里"
+          ],
+          [
+            "o",
+            "谁来付钱？富足不会自己分配。在 AI 赚钱的世界里，利润会流向拥有模型、数据中心和机器人的人。要把它送到其他人手里，需要一种机制：税收、分红、公共基金、股权登记。马斯克没有给出任何一种。没有付款人的收入承诺，是预测，不是政策。"
+          ],
+          [
+            "o",
+            "并非一切都会变便宜。AI 能降低软件、翻译，或许有一天还有制造的成本。但它对土地几乎无能为力，因为没人能造出更多土地；人们想住的地方的住房也一样。最好的学校、好景观、限量的门票这类“地位性商品”，本来就因稀缺而有价值。而真人的照护，恰恰因为不是机器，反而可能更贵。如果这些价格上涨，而电子产品越来越便宜，人们就可能东西更多，却依然觉得穷。"
+          ],
+          [
+            "o",
+            "“高”是相对的。高收入是和别人比出来的。如果每个人都拿到同样丰厚的金额，上面那些稀缺东西的价格就会随之调整，第一年觉得“高”的数额，最终会变成新的底线。真正有用的问题不是“有多高”，而是“能买到多少稀缺的东西”。"
+          ],
+          [
+            "o",
+            "做出承诺的人，正是拥有 AI 的人。这不是阴谋论，只是激励结构的样子。当一项技术的所有者说它的好处会惠及所有人时，“怎么惠及”的细节反而更重要。取决于利润持有者善意的那份分成，是一份礼物，而礼物是会停的。"
+          ],
+          [
+            "h",
+            "人们真正提出过的管道"
+          ],
+          [
+            "p",
+            "有人试过把管道画出来。山姆·阿尔特曼在 2021 年 3 月的文章《Moore’s Law for Everything》中提出“美国股权基金”（American Equity Fund）：对超过一定市值的公司每年按市值的 2.5% 征税，以股份缴纳；对私有土地按价值的 2.5% 征税，以美元缴纳。他估计十年内，美国 2.5 亿成年人每人每年可得约 13,500 美元。[3] 他选土地，是因为土地供给固定，这正是上面说的问题。"
+          ],
+          [
+            "p",
+            "2024 年 5 月，阿尔特曼在播客 All-In 上提出“全民基本算力”：每个人都得到“GPT-7 算力的一小份”，可以自己用、转卖或捐出去。他没有说明具体怎么运作。[4]"
+          ],
+          [
+            "p",
+            "“横财条款”（Windfall Clause）由牛津大学人类未来研究所 AI 治理中心的研究者在 2020 年提出：AI 公司事先承诺，如果获得只有变革性 AI 突破才能带来的超额利润，就把其中相当大的一部分捐出去。[5]"
+          ],
+          [
+            "p",
+            "也有正在运作的先例。自 1982 年起，阿拉斯加州每年从永久基金向居民发放分红，这个基金把该州的石油和矿产财富变成可持续的金融资源；第一次每人 1,000 美元。[6]（{见我们的年表|/timeline/#tl-alaska}）把“石油”换成“AI 利润”，就是高收入最清晰的现实模板。关于发钱会带来什么，也有证据。OpenResearch 的研究给 1,000 人每月 1,000 美元，连续三年。2024 年的结果显示，受助者支出增加，每周工作时间减少一到两小时，工作质量没有改善。[7]（{年表条目|/timeline/#tl-openresearch}）"
+          ],
+          [
+            "h",
+            "加密 UBI 怎样回答“谁来付”"
+          ],
+          [
+            "p",
+            "本站收录的应用不得不在小规模上真正回答这个问题。它们给出了三种不同的答案。"
+          ],
+          [
+            "p",
+            "World 发的是新发行的代币。WLD 在 2023 年推出时，100 亿总供应量的 75% 被划给社区，经 Orb 验证为真人的用户定期收到 WLD 空投；人格证明防止一个人领走一千份。[8] 这不是谁的利润在买单：领到的东西值多少，取决于市场愿意为 WLD 付多少。新的空投周期已于 2026 年 6 月 1 日停止（{见墓地|/graveyard/#grave-wld-airdrop}）。"
+          ],
+          [
+            "p",
+            "{GoodDollar|/services/gooddollar/} 每天发放的 G$ 来自一个由质押收益注资的储备金，也就是支持者锁定的加密资产所产生的收益。这更接近真正的管道：资本产生回报，回报变成分红。它也显示了风险：2026 年 5 月发生安全事件后，储备金正在审查中，每日金额也非常少。[9]"
+          ],
+          [
+            "p",
+            "{Circles|/services/circles/} 和 {Ğ1|/services/g1/} 干脆取消了付款人。每位成员自己发行新货币：Circles 每小时 1 CRC，Ğ1 每天一份“全民红利”。创造货币本身就是分红，所以通常意义上没有人“付钱”，只是每个人都被平等地稀释一点点。问题在于，这种钱只值别人愿意接受它的那么多，而目前这并不多，且大多局限在社区内部。[10]（三者的代码都在我们的{开源页面|/open-source/}上）"
+          ],
+          [
+            "h",
+            "结论：把管道建起来"
+          ],
+          [
+            "o",
+            "全民高收入是预测，不是政策。它甚至可能是个准确的预测。但有意思的不是“高”这个字，而是那条把 AI 利润送到不再有工资的人手里的管道。税收、股权基金、横财承诺、资源分红、自行发行的货币，都是候选管道，而每一种都有已知的漏法。"
+          ],
+          [
+            "o",
+            "在{上一篇随笔|/essays/ai-agent-basic-income/}里，我们认为 AI 智能体需要的是运营预算，而不是基本收入。把两篇放在一起，图景很简单：智能体拿预算，人类拿分红，中间的管道总得有人来建。在那之前，对待任何高收入的承诺，都请像本站对待每一顿免费午餐那样：先看清是谁在付钱。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "नवंबर 2023 में, ब्रिटेन के AI सेफ़्टी समिट के समापन पर तत्कालीन प्रधानमंत्री ऋषि सुनक से बातचीत में एलन मस्क ने कहा कि “एक समय आएगा जब किसी नौकरी की ज़रूरत नहीं होगी”, और जोड़ा: “हमारे पास यूनिवर्सल बेसिक इनकम नहीं, यूनिवर्सल हाई इनकम होगी।”[1] छह महीने बाद, पेरिस के VivaTech में वीडियो के ज़रिए बोलते हुए वे और आगे गए: “शायद हम में से किसी के पास नौकरी नहीं होगी।” AI और रोबोट लोगों की चाही हर चीज़ और सेवा देंगे, “चीज़ों या सेवाओं की कोई कमी नहीं होगी”, और इसे चलाने के लिए “यूनिवर्सल हाई इनकम” चाहिए होगी। CNN ने लिखा कि उन्होंने यह नहीं बताया कि वह कैसी दिखेगी।[2]"
+          ],
+          [
+            "p",
+            "सार्वजनिक रिकॉर्ड जहाँ तक जाता है, पूरा प्रस्ताव इतना ही है: समृद्धि का एक अनुमान, और एक नाम। यह निबंध वह सवाल पूछता है जिसे यह नाम छोड़ देता है। अगर काम रोबोट करेंगे, तो यह ऊँची आय कौन देगा, और किस पाइप से लोगों तक पहुँचेगी?"
+          ],
+          [
+            "h",
+            "इस सोच में क्या अच्छा है"
+          ],
+          [
+            "o",
+            "पहले तारीफ़ जहाँ बनती है। AI और नौकरियों की ज़्यादातर बातें बचाव की होती हैं: दोबारा ट्रेनिंग, सुरक्षा जाल, बदल दिए जाने के बाद कैसे टिकें। यूनिवर्सल हाई इनकम सवाल को “नौकरी जाने से कैसे बचें?” से बदलकर “समृद्धि कैसे बाँटें?” कर देती है। यह बेहतर सवाल है। अगर मशीनें सचमुच चीज़ें और सेवाएँ बहुत सस्ती कर दें, तो समस्या कमी की नहीं, बँटवारे की हो जाती है। बेसिक इनकम के समर्थक दशकों से कहते आए हैं कि बँटवारा प्रकृति का नियम नहीं, राजनीतिक चुनाव है। यही बात AI और रोबोटिक्स कंपनियाँ चलाने वाले किसी व्यक्ति से सुनना काम का है।"
+          ],
+          [
+            "h",
+            "कमियाँ"
+          ],
+          [
+            "o",
+            "पैसा कौन देगा? समृद्धि अपने आप नहीं बँटती। जिस दुनिया में AI कमाता है, वहाँ मुनाफ़ा उनके पास जाता है जिनके पास मॉडल, डेटा सेंटर और रोबोट हैं। उसे बाक़ी सब तक पहुँचाने के लिए एक तंत्र चाहिए: टैक्स, डिविडेंड, सार्वजनिक फ़ंड, शेयरों का रजिस्टर। मस्क ने ऐसा कोई तंत्र नहीं बताया। बिना देने वाले के आय का वादा एक अनुमान है, नीति नहीं।"
+          ],
+          [
+            "o",
+            "हर चीज़ सस्ती नहीं होती। AI सॉफ़्टवेयर, अनुवाद और शायद किसी दिन उत्पादन की लागत घटा सकता है। पर ज़मीन के लिए वह कम ही कर सकता है, जिसे कोई और नहीं बना रहा, और न ही उन जगहों के घरों के लिए जहाँ लोग रहना चाहते हैं। सबसे अच्छा स्कूल, अच्छा नज़ारा या गिने-चुने टिकट जैसी “पोज़ीशनल” चीज़ें परिभाषा से ही दुर्लभ हैं। और असली इंसान की देखभाल शायद और क़ीमती हो जाए, ठीक इसलिए कि वह मशीन नहीं है। अगर इनकी क़ीमतें बढ़ें और गैजेट सस्ते हों, तो लोग सामान में अमीर होकर भी ग़रीब महसूस कर सकते हैं।"
+          ],
+          [
+            "o",
+            "“हाई” सापेक्ष है। ऊँची आय किसी की तुलना में ऊँची होती है। अगर सबको एक जैसी उदार रक़म मिले, तो ऊपर बताई दुर्लभ चीज़ों की क़ीमतें उसके हिसाब से ढल जाती हैं, और पहले साल जो ऊँचा लगता है वह नई न्यूनतम रेखा बन जाता है। काम का सवाल “कितनी ऊँची?” नहीं, बल्कि “इससे दुर्लभ चीज़ें कितनी ख़रीदी जा सकती हैं?” है।"
+          ],
+          [
+            "o",
+            "वादा करने वालों के पास ही AI है। यह कोई साज़िश नहीं, बस प्रोत्साहन की बनावट है। जब किसी तकनीक के मालिक कहते हैं कि उसका फ़ायदा सब तक पहुँचेगा, तो “कैसे” का ब्योरा और ज़्यादा मायने रखता है। मुनाफ़ा रखने वालों की सद्भावना पर टिका हिस्सा एक तोहफ़ा है, और तोहफ़े रुक सकते हैं।"
+          ],
+          [
+            "h",
+            "लोगों ने असल में कौन-से पाइप सुझाए हैं"
+          ],
+          [
+            "p",
+            "कुछ लोगों ने पाइप का नक्शा बनाने की कोशिश की है। मार्च 2021 के “Moore’s Law for Everything” में सैम ऑल्टमैन ने अमेरिकन इक्विटी फ़ंड का प्रस्ताव रखा: बड़ी कंपनियों पर हर साल उनके बाज़ार मूल्य का 2.5% टैक्स, शेयरों में चुकाया जाए, और निजी ज़मीन के मूल्य का 2.5%, डॉलर में। उनका अनुमान था कि एक दशक में अमेरिका के 25 करोड़ वयस्कों में हर एक को साल में लगभग 13,500 डॉलर मिलेंगे।[3] उन्होंने ज़मीन इसलिए चुनी क्योंकि उसकी आपूर्ति तय है, जो ठीक ऊपर वाली समस्या है।"
+          ],
+          [
+            "p",
+            "मई 2024 में All-In पॉडकास्ट पर ऑल्टमैन ने “यूनिवर्सल बेसिक कंप्यूट” का विचार रखा: हर किसी को “GPT-7 के कंप्यूट का एक टुकड़ा” मिले, जिसे वह इस्तेमाल करे, बेचे या दान करे। उन्होंने नहीं बताया कि यह कैसे काम करेगा।[4]"
+          ],
+          [
+            "p",
+            "विंडफ़ॉल क्लॉज़, जिसे ऑक्सफ़ोर्ड के फ़्यूचर ऑफ़ ह्यूमैनिटी इंस्टीट्यूट के सेंटर फ़ॉर द गवर्नेंस ऑफ़ AI के शोधकर्ताओं ने 2020 में रखा, कहता है कि AI कंपनियाँ पहले से वादा करें कि केवल किसी क्रांतिकारी AI सफलता से होने वाले बेहद बड़े मुनाफ़े का एक बड़ा हिस्सा वे दान करेंगी।[5]"
+          ],
+          [
+            "p",
+            "एक चलती हुई मिसाल भी है। 1982 से अलास्का अपने परमानेंट फ़ंड से निवासियों को सालाना डिविडेंड देता है; यह फ़ंड राज्य की तेल और खनिज संपदा को स्थायी वित्तीय संसाधन में बदलता है। पहला भुगतान प्रति व्यक्ति 1,000 डॉलर था।[6] ({हमारी समयरेखा देखें|/timeline/#tl-alaska}) “तेल” की जगह “AI मुनाफ़ा” रख दें, तो ऊँची आय का सबसे साफ़ असली नमूना मिल जाता है। नक़द देने के असर पर सबूत भी है। OpenResearch अध्ययन ने 1,000 लोगों को तीन साल तक हर महीने 1,000 डॉलर दिए। 2024 के नतीजों में पाने वालों ने ज़्यादा ख़र्च किया, हफ़्ते में एक-दो घंटे कम काम किया, और नौकरी की गुणवत्ता में सुधार नहीं दिखा।[7] ({समयरेखा की प्रविष्टि|/timeline/#tl-openresearch})"
+          ],
+          [
+            "h",
+            "क्रिप्टो UBI “कौन देगा” का जवाब कैसे देते हैं"
+          ],
+          [
+            "p",
+            "इस साइट के ऐप्स को छोटे पैमाने पर इस सवाल का असली जवाब देना पड़ा है। वे इसे तीन अलग तरीक़ों से देते हैं।"
+          ],
+          [
+            "p",
+            "World ने नए जारी किए टोकन बाँटे। 2023 में WLD के लॉन्च पर उसकी 10 अरब की आपूर्ति का 75% कम्युनिटी के लिए रखा गया, और Orb से इंसान के रूप में सत्यापित लोगों को नियमित WLD एयरड्रॉप मिले; व्यक्ति होने के सबूत ने एक व्यक्ति को हज़ार हिस्से लेने से रोका।[8] इसका भुगतान किसी के मुनाफ़े से नहीं हुआ: पाने वालों को जो मिला उसकी क़ीमत उतनी ही थी जितनी बाज़ार WLD के लिए देता। नए एयरड्रॉप चक्र 1 जून 2026 को बंद हो गए ({क़ब्रिस्तान देखें|/graveyard/#grave-wld-airdrop})।"
+          ],
+          [
+            "p",
+            "{GoodDollar|/services/gooddollar/} रोज़ का G$ एक ऐसे रिज़र्व से देता है जो स्टेकिंग की कमाई से भरता है, यानी समर्थकों के लॉक किए क्रिप्टो पर मिलने वाला रिटर्न। यह असली पाइप के ज़्यादा क़रीब है: पूँजी रिटर्न कमाती है और रिटर्न डिविडेंड बनता है। इससे जोखिम भी दिखता है। मई 2026 की एक सुरक्षा घटना के बाद रिज़र्व की समीक्षा चल रही है, और रोज़ की रक़म बहुत कम है।[9]"
+          ],
+          [
+            "p",
+            "{Circles|/services/circles/} और {Ğ1|/services/g1/} देने वाले को ही हटा देते हैं। हर सदस्य अपने लिए नई मुद्रा जारी करता है: Circles में हर घंटे 1 CRC, Ğ1 में रोज़ एक यूनिवर्सल डिविडेंड। पैसा बनाना ही डिविडेंड है, इसलिए आम अर्थ में कोई “देता” नहीं; सब थोड़ा-थोड़ा, बराबर पतला होते हैं। दिक़्क़त यह है कि उस पैसे की क़ीमत उतनी ही है जितने में दूसरे उसे स्वीकार करें, जो आज ज़्यादा नहीं है और ज़्यादातर समुदाय के भीतर है।[10] (तीनों का कोड हमारे {ओपन-सोर्स पेज|/open-source/} पर है।)"
+          ],
+          [
+            "h",
+            "निष्कर्ष: पाइप बनाइए"
+          ],
+          [
+            "o",
+            "यूनिवर्सल हाई इनकम एक अनुमान है, नीति नहीं। हो सकता है अनुमान सही भी हो। पर दिलचस्प हिस्सा “हाई” शब्द नहीं, बल्कि वह पाइप है जो AI का मुनाफ़ा उन लोगों तक ले जाए जिनके पास अब तनख़्वाह नहीं। टैक्स, इक्विटी फ़ंड, विंडफ़ॉल के वादे, संसाधनों के डिविडेंड और ख़ुद जारी की गई मुद्राएँ, सब पाइप के उम्मीदवार हैं, और हर एक के रिसने का एक जाना-पहचाना तरीक़ा है।"
+          ],
+          [
+            "o",
+            "अपने {पिछले निबंध|/essays/ai-agent-basic-income/} में हमने कहा था कि AI एजेंटों को बेसिक इनकम नहीं, संचालन बजट चाहिए। दोनों को साथ रखें तो तस्वीर सीधी है: एजेंटों को बजट, इंसानों को डिविडेंड, और बीच का पाइप किसी को बनाना होगा। जब तक कोई नहीं बनाता, ऊँची आय के हर वादे को वैसे ही परखिए जैसे यह साइट हर मुफ़्त लंच को परखती है: देखिए कि पैसा कौन दे रहा है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "En noviembre de 2023, al cierre de la cumbre británica sobre seguridad de la IA y en conversación con Rishi Sunak, Elon Musk dijo que «llegará un momento en que no hará falta ningún empleo» y añadió: «No tendremos una renta básica universal, tendremos un ingreso universal alto».[1] Seis meses después, por videoconferencia en VivaTech, en París, fue más lejos: «Probablemente ninguno de nosotros tendrá trabajo». La IA y los robots darían los bienes y servicios que la gente quiera, «no habría escasez de bienes o servicios» y, para que funcionara, haría falta un «ingreso universal alto». La CNN señaló que no explicó cómo sería.[2]"
+          ],
+          [
+            "p",
+            "Hasta donde llega el registro público, esa es toda la propuesta: un pronóstico de abundancia y un nombre. Este ensayo plantea la pregunta que el nombre se salta. Si los robots hacen el trabajo, ¿quién paga ese ingreso alto, y por qué tubería llega a la gente?"
+          ],
+          [
+            "h",
+            "Lo que el planteamiento acierta"
+          ],
+          [
+            "o",
+            "Reconozcamos el mérito. Casi todo lo que se dice sobre la IA y el empleo es defensivo: reciclaje profesional, redes de seguridad, cómo sobrevivir a que te sustituyan. El ingreso universal alto cambia la pregunta de «¿cómo sobrevivimos a perder el empleo?» a «¿cómo repartimos la abundancia?». Es una pregunta mejor. Si las máquinas abaratan de verdad los bienes y servicios, el problema deja de ser la escasez y pasa a ser el reparto. Los defensores de la renta básica llevan décadas diciendo que el reparto es una decisión política, no una ley natural. Es útil oírlo de alguien que dirige empresas de IA y robótica."
+          ],
+          [
+            "h",
+            "Los huecos"
+          ],
+          [
+            "o",
+            "¿Quién paga? La abundancia no se reparte sola. En un mundo donde la IA gana el dinero, los beneficios van a parar a quien posee los modelos, los centros de datos y los robots. Llevarlos a todos los demás exige un mecanismo: un impuesto, un dividendo, un fondo público, un registro de participaciones. Musk no ha nombrado ninguno. Una promesa de ingresos sin pagador es un pronóstico, no una política."
+          ],
+          [
+            "o",
+            "No todo se abarata. La IA puede reducir el coste del software, la traducción y quizá, algún día, la fabricación. Hace poco por el suelo, que nadie fabrica, o por la vivienda donde la gente quiere vivir. Los bienes posicionales, como el mejor colegio, las vistas o la entrada escasa, son escasos por definición. Y el cuidado de un ser humano de verdad puede volverse más valioso, no menos, justamente porque es lo que las máquinas no son. Si esos precios suben mientras los aparatos se abaratan, la gente puede tener más cosas y seguir sintiéndose pobre."
+          ],
+          [
+            "o",
+            "«Alto» es relativo. Un ingreso alto es alto en comparación con alguien. Si todos reciben la misma cantidad generosa, los precios de esas cosas escasas se ajustan a ella, y lo que parece alto el primer año se convierte en el nuevo mínimo. La pregunta útil no es «¿cuánto de alto?», sino «¿cuánto de lo escaso permite comprar?»."
+          ],
+          [
+            "o",
+            "Quienes lo prometen son los dueños de la IA. No es una conspiración, solo la forma del incentivo. Cuando los dueños de una tecnología dicen que sus beneficios llegarán a todos, los detalles de cómo importan más, no menos. Una parte de los beneficios que depende de la buena voluntad de quienes los tienen es un regalo, y los regalos pueden acabarse."
+          ],
+          [
+            "h",
+            "Tuberías que alguien ha propuesto de verdad"
+          ],
+          [
+            "p",
+            "Hay quien ha intentado dibujar la tubería. En «Moore’s Law for Everything» (marzo de 2021), Sam Altman propuso un American Equity Fund, alimentado con un impuesto anual del 2,5 % del valor de mercado de las grandes empresas, pagado en acciones, y del 2,5 % del valor del suelo privado, pagado en dólares. Calculó que en una década cada uno de los 250 millones de adultos de EE. UU. recibiría unos 13 500 dólares al año.[3] Eligió el suelo porque su oferta es fija, que es justo el problema de arriba."
+          ],
+          [
+            "p",
+            "En mayo de 2024, en el pódcast All-In, Altman lanzó la idea de un «cómputo básico universal»: que cada persona reciba «un trozo del cómputo de GPT-7» para usarlo, revenderlo o donarlo. No explicó cómo funcionaría.[4]"
+          ],
+          [
+            "p",
+            "La Windfall Clause, de investigadores del Centre for the Governance of AI del Future of Humanity Institute de Oxford (2020), propone que las empresas de IA se comprometan de antemano a donar una parte importante de cualquier beneficio extraordinario que solo un avance transformador de la IA pudiera generar.[5]"
+          ],
+          [
+            "p",
+            "También hay un precedente que funciona. Desde 1982, Alaska paga a sus residentes un dividendo anual de su Permanent Fund, que convierte la riqueza petrolera y minera del estado en un recurso financiero duradero; el primer pago fue de 1000 dólares por persona.[6] ({Véase nuestra cronología|/timeline/#tl-alaska}.) Cambia «petróleo» por «beneficios de la IA» y tienes la plantilla real más limpia para un ingreso alto. También hay datos sobre lo que hace el dinero en efectivo. El estudio de OpenResearch dio a 1000 personas 1000 dólares al mes durante tres años. Sus resultados de 2024 mostraron que los receptores gastaron más y trabajaron entre una y dos horas menos a la semana, sin mejora en la calidad del empleo.[7] ({Entrada de la cronología|/timeline/#tl-openresearch}.)"
+          ],
+          [
+            "h",
+            "Cómo responde la RBU cripto a «quién paga»"
+          ],
+          [
+            "p",
+            "Las apps de este sitio han tenido que responder la pregunta de verdad, a pequeña escala. Y la responden de tres maneras distintas."
+          ],
+          [
+            "p",
+            "World repartía tokens recién emitidos. Cuando WLD se lanzó en 2023, el 75 % de su oferta de 10 000 millones se reservó para la comunidad, y las personas verificadas como humanas con el Orb recibían airdrops periódicos de WLD; la prueba de persona impedía que alguien cobrara mil partes.[8] No lo pagaban los beneficios de nadie: lo recibido valía lo que el mercado pagara por WLD. Los nuevos ciclos de airdrop se detuvieron el 1 de junio de 2026 ({véase el cementerio|/graveyard/#grave-wld-airdrop})."
+          ],
+          [
+            "p",
+            "{GoodDollar|/services/gooddollar/} paga su G$ diario desde una reserva financiada con rendimientos de staking, el retorno de las criptomonedas que bloquean sus partidarios. Eso se parece más a una tubería real: el capital rinde y el rendimiento se convierte en dividendo. También muestra el riesgo. Tras un incidente de seguridad en mayo de 2026, la reserva está en revisión, y la cantidad diaria es muy pequeña.[9]"
+          ],
+          [
+            "p",
+            "{Circles|/services/circles/} y {Ğ1|/services/g1/} eliminan al pagador por completo. Cada miembro emite moneda nueva para sí mismo: 1 CRC por hora en Circles, un Dividendo Universal diario en Ğ1. Crear dinero es el dividendo, así que nadie «paga» en el sentido habitual; todos se diluyen un poco, por igual. La pega es que ese dinero vale solo lo que otros acepten por él, que hoy no es mucho y casi siempre dentro de la comunidad.[10] (El código de los tres está en nuestra {página de código abierto|/open-source/}.)"
+          ],
+          [
+            "h",
+            "Conclusión: construir la tubería"
+          ],
+          [
+            "o",
+            "El ingreso universal alto es un pronóstico, no una política. Puede que incluso sea un buen pronóstico. Pero lo interesante no es la palabra «alto», sino la tubería que llevaría los beneficios de la IA a gente que ya no cobra salario. Impuestos, fondos de acciones, compromisos sobre beneficios extraordinarios, dividendos de recursos y monedas autoemitidas son tuberías candidatas, y cada una tiene una forma conocida de gotear."
+          ],
+          [
+            "o",
+            "En nuestro {ensayo anterior|/essays/ai-agent-basic-income/} defendimos que los agentes de IA necesitan presupuestos operativos, no una renta básica. Junta las dos ideas y el cuadro es sencillo: los agentes reciben presupuestos, los humanos reciben dividendos, y alguien tiene que construir la tubería entre ambos. Hasta que alguien lo haga, trata cualquier promesa de ingreso alto como este sitio trata cada almuerzo gratis: comprueba quién paga."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Im November 2023, zum Abschluss des britischen KI-Sicherheitsgipfels im Gespräch mit Rishi Sunak, sagte Elon Musk, „es wird ein Punkt kommen, an dem kein Job mehr nötig ist“, und fügte hinzu: „Wir werden kein universelles Grundeinkommen haben, sondern ein universelles Hocheinkommen.“[1] Ein halbes Jahr später, per Video zugeschaltet auf der VivaTech in Paris, ging er weiter: „Wahrscheinlich wird keiner von uns einen Job haben.“ KI und Roboter würden alle gewünschten Waren und Dienstleistungen liefern, es gäbe „keinen Mangel an Waren oder Dienstleistungen“, und damit das funktioniere, brauche es ein „universelles Hocheinkommen“. CNN merkte an, dass er nicht sagte, wie das aussehen solle.[2]"
+          ],
+          [
+            "p",
+            "Soweit die öffentlichen Quellen reichen, ist das der ganze Vorschlag: eine Prognose des Überflusses und ein Name. Dieser Essay stellt die Frage, die der Name überspringt. Wenn die Roboter die Arbeit machen, wer zahlt das hohe Einkommen, und durch welche Leitung kommt es bei den Menschen an?"
+          ],
+          [
+            "h",
+            "Was an dieser Sichtweise stimmt"
+          ],
+          [
+            "o",
+            "Ehre, wem Ehre gebührt. Das meiste Reden über KI und Arbeit ist defensiv: Umschulung, Sicherheitsnetze, wie man es übersteht, ersetzt zu werden. Das universelle Hocheinkommen dreht die Frage um, von „Wie überstehen wir den Jobverlust?“ zu „Wie teilen wir den Überfluss?“. Das ist die bessere Frage. Wenn Maschinen Waren und Dienstleistungen wirklich viel billiger machen, ist das Problem nicht mehr Knappheit, sondern Verteilung. Befürworter des Grundeinkommens sagen seit Jahrzehnten, dass Verteilung eine politische Entscheidung ist und kein Naturgesetz. Es ist nützlich, das von jemandem zu hören, der KI- und Robotikfirmen leitet."
+          ],
+          [
+            "h",
+            "Die Lücken"
+          ],
+          [
+            "o",
+            "Wer zahlt? Überfluss verteilt sich nicht von selbst. In einer Welt, in der KI das Geld verdient, landen die Gewinne bei denen, denen die Modelle, Rechenzentren und Roboter gehören. Um sie zu allen anderen zu bringen, braucht es einen Mechanismus: eine Steuer, eine Dividende, einen öffentlichen Fonds, ein Anteilsregister. Musk hat keinen genannt. Ein Einkommensversprechen ohne Zahler ist eine Prognose, keine Politik."
+          ],
+          [
+            "o",
+            "Nicht alles wird billiger. KI kann die Kosten für Software, Übersetzung und vielleicht eines Tages für Fertigung senken. Für Boden, von dem niemand mehr herstellt, tut sie wenig, ebenso für Wohnraum dort, wo Menschen leben wollen. Positionsgüter wie die beste Schule, die Aussicht oder das knappe Ticket sind per Definition knapp. Und die Fürsorge eines echten Menschen könnte wertvoller werden statt billiger, gerade weil sie das ist, was Maschinen nicht sind. Steigen diese Preise, während Geräte billig werden, können Menschen reicher an Dingen sein und sich trotzdem arm fühlen."
+          ],
+          [
+            "o",
+            "„Hoch“ ist relativ. Ein hohes Einkommen ist hoch im Vergleich zu jemandem. Bekommen alle denselben großzügigen Betrag, passen sich die Preise der knappen Dinge daran an, und was im ersten Jahr hoch wirkt, wird zum neuen Boden. Die nützliche Frage lautet nicht „Wie hoch?“, sondern „Wie viel vom Knappen kann man damit kaufen?“."
+          ],
+          [
+            "o",
+            "Die, die es versprechen, besitzen die KI. Das ist keine Verschwörung, nur die Form des Anreizes. Wenn die Eigentümer einer Technik sagen, ihr Nutzen werde alle erreichen, zählen die Details des Wie mehr, nicht weniger. Ein Anteil am Gewinn, der vom guten Willen derer abhängt, die ihn halten, ist ein Geschenk, und Geschenke können aufhören."
+          ],
+          [
+            "h",
+            "Leitungen, die tatsächlich vorgeschlagen wurden"
+          ],
+          [
+            "p",
+            "Manche haben versucht, die Leitung zu zeichnen. In „Moore’s Law for Everything“ (März 2021) schlug Sam Altman einen American Equity Fund vor, gespeist aus einer jährlichen Steuer von 2,5 % auf den Marktwert großer Unternehmen, zahlbar in Aktien, und von 2,5 % auf den Wert privaten Bodens, zahlbar in Dollar. Er schätzte, dass innerhalb eines Jahrzehnts jeder der 250 Millionen Erwachsenen in den USA etwa 13.500 Dollar im Jahr bekäme.[3] Boden wählte er, weil sein Angebot fest ist, also genau das Problem von oben."
+          ],
+          [
+            "p",
+            "Im Mai 2024 brachte Altman im Podcast All-In „universal basic compute“ ins Spiel: Jeder bekommt „ein Stück der Rechenleistung von GPT-7“, um es zu nutzen, weiterzuverkaufen oder zu spenden. Wie das funktionieren soll, sagte er nicht.[4]"
+          ],
+          [
+            "p",
+            "Die Windfall Clause von Forschenden des Centre for the Governance of AI am Future of Humanity Institute in Oxford (2020) schlägt vor, dass KI-Firmen sich vorab verpflichten, einen erheblichen Teil extrem hoher Gewinne zu spenden, die nur ein transformativer KI-Durchbruch ermöglichen würde.[5]"
+          ],
+          [
+            "p",
+            "Es gibt auch ein funktionierendes Vorbild. Seit 1982 zahlt Alaska seinen Einwohnern eine jährliche Dividende aus dem Permanent Fund, der den Öl- und Rohstoffreichtum des Staates in eine dauerhafte Finanzquelle verwandelt; die erste Zahlung betrug 1.000 Dollar pro Kopf.[6] ({Siehe unsere Zeitleiste|/timeline/#tl-alaska}.) Ersetze „Öl“ durch „KI-Gewinne“, und du hast die sauberste reale Vorlage für ein hohes Einkommen. Auch dazu, was Bargeld bewirkt, gibt es Daten. Die OpenResearch-Studie gab 1.000 Menschen drei Jahre lang 1.000 Dollar im Monat. Die Ergebnisse von 2024 zeigten, dass die Empfänger mehr ausgaben und ein bis zwei Stunden pro Woche weniger arbeiteten, ohne bessere Jobqualität.[7] ({Eintrag in der Zeitleiste|/timeline/#tl-openresearch}.)"
+          ],
+          [
+            "h",
+            "Wie Krypto-Grundeinkommen „Wer zahlt?“ beantwortet"
+          ],
+          [
+            "p",
+            "Die Apps auf dieser Seite mussten die Frage im Kleinen wirklich beantworten. Sie tun es auf drei verschiedene Arten."
+          ],
+          [
+            "p",
+            "World verteilte neu ausgegebene Token. Beim Start von WLD 2023 waren 75 % des Angebots von 10 Milliarden für die Community vorgesehen, und Menschen, die per Orb als Mensch verifiziert waren, bekamen regelmäßig WLD-Airdrops; der Personennachweis verhinderte, dass eine Person tausend Anteile abholt.[8] Bezahlt hat das niemandes Gewinn: Was die Empfänger bekamen, war so viel wert, wie der Markt für WLD zahlte. Neue Airdrop-Zyklen endeten am 1. Juni 2026 ({siehe Friedhof|/graveyard/#grave-wld-airdrop})."
+          ],
+          [
+            "p",
+            "{GoodDollar|/services/gooddollar/} zahlt sein tägliches G$ aus einer Reserve, die aus Staking-Erträgen gespeist wird, also aus der Rendite von Krypto, das Unterstützer sperren. Das kommt einer echten Leitung näher: Kapital erwirtschaftet eine Rendite, und die Rendite wird zur Dividende. Es zeigt auch das Risiko. Nach einem Sicherheitsvorfall im Mai 2026 wird die Reserve überprüft, und der Tagesbetrag ist sehr klein.[9]"
+          ],
+          [
+            "p",
+            "{Circles|/services/circles/} und {Ğ1|/services/g1/} schaffen den Zahler ganz ab. Jedes Mitglied gibt neues Geld für sich selbst aus: 1 CRC pro Stunde bei Circles, eine tägliche Universelle Dividende bei Ğ1. Geldschöpfung ist die Dividende, also „zahlt“ niemand im üblichen Sinn; alle werden ein wenig verwässert, gleichmäßig. Der Haken: Das Geld ist nur so viel wert, wie andere dafür annehmen, und das ist heute nicht viel und meist innerhalb der Gemeinschaft.[10] (Der Code aller drei steht auf unserer {Open-Source-Seite|/open-source/}.)"
+          ],
+          [
+            "h",
+            "Fazit: Baut die Leitung"
+          ],
+          [
+            "o",
+            "Das universelle Hocheinkommen ist eine Prognose, keine Politik. Vielleicht sogar eine gute Prognose. Spannend ist aber nicht das Wort „hoch“, sondern die Leitung, die KI-Gewinne zu Menschen bringt, die keinen Lohn mehr verdienen. Steuern, Aktienfonds, Windfall-Zusagen, Rohstoffdividenden und selbst ausgegebene Währungen sind alles mögliche Leitungen, und jede hat eine bekannte Stelle, an der sie leckt."
+          ],
+          [
+            "o",
+            "In unserem {vorigen Essay|/essays/ai-agent-basic-income/} haben wir argumentiert, dass KI-Agenten Betriebsbudgets brauchen, kein Grundeinkommen. Nimmt man beides zusammen, ist das Bild einfach: Agenten bekommen Budgets, Menschen bekommen Dividenden, und jemand muss die Leitung dazwischen bauen. Bis das jemand tut, behandle jedes Versprechen eines hohen Einkommens so, wie diese Seite jedes Gratis-Mittagessen behandelt: Prüfe, wer zahlt."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في نوفمبر 2023، وفي ختام قمة سلامة الذكاء الاصطناعي البريطانية خلال حوار مع ريشي سوناك، قال إيلون ماسك إنه «ستأتي لحظة لا تعود فيها أي وظيفة ضرورية»، وأضاف: «لن يكون لدينا دخل أساسي شامل، بل دخل مرتفع شامل».[1] وبعد ستة أشهر، متحدثًا عبر الفيديو إلى مؤتمر ⁦VivaTech⁩ في باريس، ذهب أبعد: «على الأرجح لن يكون لأيٍّ منا وظيفة». سيوفر الذكاء الاصطناعي والروبوتات ما يريده الناس من سلع وخدمات، و«لن يكون هناك نقص في السلع أو الخدمات»، ولكي ينجح ذلك لا بد من «دخل مرتفع شامل». وأشارت ⁦CNN⁩ إلى أنه لم يوضح كيف سيبدو ذلك.[2]"
+          ],
+          [
+            "p",
+            "بقدر ما يكشف السجل العام، هذا هو الاقتراح كله: توقّع بالوفرة، واسم. يطرح هذا المقال السؤال الذي يتخطاه الاسم: إذا قامت الروبوتات بالعمل، فمن يدفع هذا الدخل المرتفع، وعبر أي أنبوب يصل إلى الناس؟"
+          ],
+          [
+            "h",
+            "ما يصيب فيه هذا الطرح"
+          ],
+          [
+            "o",
+            "لنعترف بالفضل لأهله. معظم الحديث عن الذكاء الاصطناعي والوظائف دفاعي: إعادة التأهيل، وشبكات الأمان، وكيف تنجو بعد أن يحل غيرك محلك. أما الدخل المرتفع الشامل فيقلب السؤال من «كيف ننجو من فقدان الوظائف؟» إلى «كيف نتقاسم الوفرة؟». وهذا سؤال أفضل. فإذا جعلت الآلات السلع والخدمات أرخص بكثير فعلًا، لم تعد المشكلة ندرة بل توزيعًا. ويقول أنصار الدخل الأساسي منذ عقود إن التوزيع خيار سياسي لا قانون طبيعي، ومن المفيد سماع الفكرة نفسها من شخص يدير شركات للذكاء الاصطناعي والروبوتات."
+          ],
+          [
+            "h",
+            "الثغرات"
+          ],
+          [
+            "o",
+            "من يدفع؟ الوفرة لا توزّع نفسها. في عالم يكسب فيه الذكاء الاصطناعي المال، تذهب الأرباح إلى من يملك النماذج ومراكز البيانات والروبوتات. وإيصالها إلى الجميع يتطلب آلية: ضريبة، أو عائدًا، أو صندوقًا عامًا، أو سجلًا للحصص. ولم يسمِّ ماسك أيًّا منها. ووعدٌ بدخل بلا دافع هو توقّع، لا سياسة."
+          ],
+          [
+            "o",
+            "ليس كل شيء سيصبح أرخص. قد يخفّض الذكاء الاصطناعي تكلفة البرمجيات والترجمة، وربما يومًا ما التصنيع. لكنه لا يفعل الكثير للأرض، التي لا يصنع أحد منها المزيد، ولا للسكن حيث يريد الناس أن يعيشوا. والسلع الموضعية، مثل أفضل مدرسة أو الإطلالة أو التذكرة النادرة، نادرة بطبيعتها. ورعاية إنسان حقيقي قد تصبح أثمن لا أرخص، لأنها بالضبط ما ليست عليه الآلات. فإذا ارتفعت هذه الأسعار بينما رخصت الأجهزة، فقد يصبح الناس أغنى بالأشياء ويظلون يشعرون بالفقر."
+          ],
+          [
+            "o",
+            "«مرتفع» أمر نسبي. الدخل المرتفع مرتفع مقارنةً بأحد ما. فإذا حصل الجميع على المبلغ السخي نفسه، تتكيف أسعار تلك الأشياء النادرة معه، ويصبح ما بدا مرتفعًا في السنة الأولى هو الحد الأدنى الجديد. والسؤال المفيد ليس «إلى أي حد مرتفع؟» بل «كم يشتري من الأشياء النادرة؟»."
+          ],
+          [
+            "o",
+            "من يعِدون به هم من يملكون الذكاء الاصطناعي. ليست هذه مؤامرة، بل شكل الحافز فحسب. وحين يقول مالكو تقنية ما إن منافعها ستصل إلى الجميع، تصبح تفاصيل «كيف» أهم لا أقل. فحصة من الأرباح تعتمد على حسن نية من يملكونها هي هدية، والهدايا قد تتوقف."
+          ],
+          [
+            "h",
+            "أنابيب اقترحها أحد فعلًا"
+          ],
+          [
+            "p",
+            "حاول بعضهم رسم الأنبوب. في مقال «⁦Moore’s Law for Everything⁩» (مارس 2021)، اقترح سام ألتمان «صندوق الأسهم الأمريكي»، يُموَّل بضريبة سنوية قدرها 2.5% من القيمة السوقية للشركات الكبيرة تُدفع أسهمًا، و2.5% من قيمة الأراضي المملوكة ملكية خاصة تُدفع دولارات. وقدّر أنه في غضون عقد سيحصل كل واحد من 250 مليون بالغ في أمريكا على نحو 13,500 دولار سنويًا.[3] واختار الأرض لأن المعروض منها ثابت، وهي المشكلة نفسها التي ذكرناها."
+          ],
+          [
+            "p",
+            "في مايو 2024، وفي بودكاست ⁦All-In⁩، طرح ألتمان فكرة «الحوسبة الأساسية الشاملة»: أن يحصل كل شخص على «شريحة من قدرة حوسبة ⁦GPT-7⁩» يستخدمها أو يعيد بيعها أو يتبرع بها. ولم يقل كيف سيعمل ذلك.[4]"
+          ],
+          [
+            "p",
+            "أما «بند الأرباح الاستثنائية» (⁦Windfall Clause⁩)، من باحثين في مركز حوكمة الذكاء الاصطناعي التابع لمعهد مستقبل الإنسانية في أكسفورد (2020)، فيقترح أن تلتزم شركات الذكاء الاصطناعي مسبقًا بالتبرع بجزء كبير من أي أرباح هائلة لا يمكن تحقيقها إلا بقفزة تحويلية في الذكاء الاصطناعي.[5]"
+          ],
+          [
+            "p",
+            "وهناك أيضًا سابقة تعمل بالفعل. منذ 1982 تدفع ألاسكا لسكانها عائدًا سنويًا من صندوقها الدائم، الذي يحوّل ثروة الولاية من النفط والمعادن إلى مورد مالي دائم؛ وكانت أول دفعة 1,000 دولار للفرد.[6] ({انظر خطنا الزمني|/timeline/#tl-alaska}.) استبدل «النفط» بـ«أرباح الذكاء الاصطناعي» تحصل على أوضح نموذج واقعي لدخل مرتفع. وهناك أيضًا أدلة على ما تفعله النقود. فقد أعطت دراسة ⁦OpenResearch⁩ ألف شخص 1,000 دولار شهريًا لثلاث سنوات، ووجدت نتائجها في 2024 أن المستفيدين أنفقوا أكثر وعملوا ساعة إلى ساعتين أقل أسبوعيًا، دون تحسن في جودة العمل.[7] ({مدخل الخط الزمني|/timeline/#tl-openresearch}.)"
+          ],
+          [
+            "h",
+            "كيف تجيب تجارب الدخل الأساسي المشفّرة عن «من يدفع»"
+          ],
+          [
+            "p",
+            "اضطرت التطبيقات على هذا الموقع إلى الإجابة عن السؤال فعليًا، على نطاق صغير. وهي تجيب بثلاث طرق مختلفة."
+          ],
+          [
+            "p",
+            "وزّعت ⁦World⁩ رموزًا مُصدرة حديثًا. عند إطلاق ⁦WLD⁩ في 2023، خُصص 75% من المعروض البالغ 10 مليارات للمجتمع، وتلقى الأشخاص الذين تحقق ⁦Orb⁩ من أنهم بشر توزيعات ⁦WLD⁩ منتظمة؛ ومنع إثبات الشخصية أن يطالب شخص واحد بألف حصة.[8] لم تدفع أرباح أحد ثمن ذلك: كانت قيمة ما حصل عليه المستفيدون هي ما يدفعه السوق مقابل ⁦WLD⁩. وتوقفت دورات التوزيع الجديدة في 1 يونيو 2026 ({انظر المقبرة|/graveyard/#grave-wld-airdrop})."
+          ],
+          [
+            "p",
+            "يدفع {⁦GoodDollar⁩|/services/gooddollar/} رموز ⁦G$⁩ اليومية من احتياطي ممول من عوائد التخزين، أي عائد العملات المشفرة التي يقفلها الداعمون. وهذا أقرب إلى أنبوب حقيقي: رأس المال يدرّ عائدًا، والعائد يصبح حصة توزَّع. لكنه يكشف المخاطرة أيضًا: بعد حادث أمني في مايو 2026 أصبح الاحتياطي قيد المراجعة، والمبلغ اليومي ضئيل جدًا.[9]"
+          ],
+          [
+            "p",
+            "أما {⁦Circles⁩|/services/circles/} و{⁦Ğ1⁩|/services/g1/} فيلغيان الدافع كليًا. كل عضو يصدر عملة جديدة لنفسه: ⁦1 CRC⁩ كل ساعة في ⁦Circles⁩، وحصة أرباح شاملة يومية في ⁦Ğ1⁩. خلق النقود هو العائد نفسه، فلا أحد «يدفع» بالمعنى المعتاد؛ الجميع يتعرض لتخفيف بسيط ومتساوٍ. والعقبة أن هذه النقود لا تساوي إلا ما يقبله الآخرون مقابلها، وهو اليوم ليس كثيرًا، ومعظمه داخل المجتمع.[10] (شيفرة الثلاثة موجودة في {صفحة المشاريع المفتوحة المصدر|/open-source/}.)"
+          ],
+          [
+            "h",
+            "الخلاصة: ابنوا الأنبوب"
+          ],
+          [
+            "o",
+            "الدخل المرتفع الشامل توقّع، لا سياسة. وقد يكون توقعًا صائبًا. لكن الجزء المثير ليس كلمة «مرتفع»، بل الأنبوب الذي سيحمل أرباح الذكاء الاصطناعي إلى أناس لم يعودوا يتقاضون أجورًا. الضرائب وصناديق الأسهم وتعهدات الأرباح الاستثنائية وعوائد الموارد والعملات ذاتية الإصدار كلها أنابيب مرشحة، ولكل منها طريقة معروفة للتسرب."
+          ],
+          [
+            "o",
+            "في {مقالنا السابق|/essays/ai-agent-basic-income/} قلنا إن وكلاء الذكاء الاصطناعي يحتاجون إلى ميزانيات تشغيل، لا إلى دخل أساسي. ضع الفكرتين معًا وتصبح الصورة بسيطة: الوكلاء يحصلون على ميزانيات، والبشر يحصلون على عوائد، وعلى أحدٍ ما أن يبني الأنبوب بينهما. وإلى أن يفعل أحد ذلك، تعامل مع أي وعد بدخل مرتفع كما يتعامل هذا الموقع مع كل غداء مجاني: تحقّق ممن يدفع."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "The National — Elon Musk warns of a future where “no job is needed” in conversation with Rishi Sunak (2 Nov 2023)",
+          "url": "https://www.thenationalnews.com/world/uk-news/2023/11/02/elon-musk-warns-of-a-future-where-no-job-is-needed-in-conversation-with-rishi-sunak/"
+        },
+        {
+          "n": 2,
+          "label": "CNN — Elon Musk says AI will take all our jobs (VivaTech 2024, 23 May 2024)",
+          "url": "https://www.cnn.com/2024/05/23/tech/elon-musk-ai-your-job/index.html"
+        },
+        {
+          "n": 3,
+          "label": "Sam Altman — Moore’s Law for Everything (16 Mar 2021)",
+          "url": "https://moores.samaltman.com/"
+        },
+        {
+          "n": 4,
+          "label": "Business Insider — Sam Altman’s “universal basic compute” on the All-In podcast (12 May 2024)",
+          "url": "https://www.businessinsider.com/openai-sam-altman-universal-basic-income-idea-compute-gpt-7-2024-5"
+        },
+        {
+          "n": 5,
+          "label": "O’Keefe et al. — The Windfall Clause: Distributing the Benefits of AI for the Common Good (Centre for the Governance of AI, FHI, 2020)",
+          "url": "https://arxiv.org/abs/1912.11595"
+        },
+        {
+          "n": 6,
+          "label": "Alaska Permanent Fund Dividend Division — Historical Timeline; Alaska Permanent Fund Corporation",
+          "url": "https://pfd.alaska.gov/Division-Info/Historical-Timeline",
+          "url2": "https://apfc.org/who-we-are/"
+        },
+        {
+          "n": 7,
+          "label": "Vivalt et al. — The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States (NBER w32719, Jul 2024); OpenResearch",
+          "url": "https://www.nber.org/papers/w32719",
+          "url2": "https://www.openresearchlab.org/"
+        },
+        {
+          "n": 8,
+          "label": "CoinDesk — Worldcoin releases tokenomics (24 Jul 2023); World Help Center — Updates to the Airdrop Program",
+          "url": "https://www.coindesk.com/business/2023/07/24/worldcoin-release-tokenomics-report-geofenced-for-some-countries/",
+          "url2": "https://support.world.org/hc/en-us/articles/30969185598739-Updates-to-the-Airdrop-Program"
+        },
+        {
+          "n": 9,
+          "label": "GoodDollar — GoodProtocol smart contracts (G$, staking-funded reserve, daily UBI)",
+          "url": "https://github.com/GoodDollar/GoodProtocol",
+          "url2": "https://www.gooddollar.org/"
+        },
+        {
+          "n": 10,
+          "label": "Circles v2 contracts; Duniter v2s (Ğ1 universal dividend)",
+          "url": "https://github.com/aboutcircles/circles-contracts-v2",
+          "url2": "https://git.duniter.org/nodes/rust/duniter-v2s"
+        }
+      ]
+    },
+    {
       "id": "ai-agent-basic-income",
       "date": "2026-10-28",
+      "related": "universal-high-income",
       "title": {
         "ja": "AIエージェントにベーシックインカムは必要か",
         "en": "Should AI agents get a basic income?",
