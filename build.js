@@ -401,12 +401,23 @@ function clientScript(lang) {
 </script>`;
 }
 
+// FAQ「海外でも使えるか」(a4) の {list} は、表示中で海外OKのサービス名から作る（手書きの列挙は追加のたびに古くなるため）
+const LIST_SEP = { ja: '、', zh: '、', ar: ' و' };
+const shortName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name).split(/（| \(/)[0];
+const globalList = l => live.filter(s => s.global).map(s => esc(shortName(s, l))).join(LIST_SEP[l] || ', ');
+const fillText = (lang, k, v) => {
+  if (k !== 'a4') return v;
+  if (!v.includes('{list}')) throw new Error(`${lang}.a4: missing {list}`);
+  for (const s of live.filter(x => x.onlyIn)) if (!v.includes(shortName(s, lang))) throw new Error(`${lang}.a4: onlyIn service ${s.id} not mentioned`);
+  return v.replace('{list}', globalList(lang));
+};
+
 fs.rmSync(OUT, { recursive: true, force: true });
 for (const lang of LANGS) {
   const L = T[lang];
   let body = template.replace(/\{\{t\.(\w+)\}\}/g, (_, k) => {
     if (!(k in L)) throw new Error(`missing ${lang}.${k}`);
-    return L[k];
+    return fillText(lang, k, L[k]);
   });
   const vars = {
     head: head(lang),
