@@ -218,6 +218,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
 .caution{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
 .caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.72rem;line-height:1}
+.contact-ref{font-size:.8rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
+.contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
 .checked{font-size:.72rem;color:var(--muted);margin-top:-4px}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
@@ -609,6 +611,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="body">World App में Humad मिनी ऐप खोलकर इस्तेमाल करें। पॉइंट को गिफ़्ट कार्ड में बदलने के लिए Orb से वेरिफ़ाई की गई World ID से इंसान होने का सबूत चाहिए</p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region"><span class="vh">क्षेत्र: </span>सिर्फ़ जापान</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
 <p class="caution">ध्यान दें: पॉइंट सिर्फ़ गिफ़्ट कार्ड में बदलते हैं, नकद में नहीं, और बदलने के बाद रद्द नहीं होते। यह जापान में उपलब्ध है और सिर्फ़ जापान के लिए है (प्रेस रिलीज़ में भी पहुँच सिर्फ़ जापान के अंदर से बताई गई है)। यह बीटा है, इसलिए चीज़ें बदल सकती हैं। आपके जवाब और जोड़ा गया डेटा विज्ञापन दिखाने में इस्तेमाल होता है</p>
+
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
 <p class="verify-line"><b>वेरिफ़िकेशन</b><a href="/hi/verify/world-id/" dir="auto">World ID (Orb)</a></p>
 <div class="slip"><a class="btn solid" href="https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div>
@@ -616,7 +619,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </article>
 <section id="related">
   <div class="sec-head"><h2>मिलती-जुलती सेवाएँ</h2></div>
-  <div class="rel-grid"><a class="rel" data-cat="pointsite" href="/hi/services/hapitas/"><span class="ava" aria-hidden="true" dir="auto">Ha</span><span><span class="cat">कैशबैक साइट</span><b>Hapitas</b><small>2,300 पॉइंट तक</small></span></a><a class="rel" data-cat="crypto-bi" href="/hi/services/gooddollar/"><span class="ava" aria-hidden="true" dir="auto">GD</span><span><span class="cat">क्रिप्टो UBI</span><b>GoodDollar</b><small>हर दिन G$ टोकन</small></span></a><a class="rel" data-cat="crypto-bi" href="/hi/services/circles/"><span class="ava" aria-hidden="true" dir="auto">CG</span><span><span class="cat">क्रिप्टो UBI</span><b>Circles (Gnosis App)</b><small>हर घंटे 1 CRC (रोज़ 24 CRC)</small></span></a></div>
+  <div class="rel-grid"><a class="rel" data-cat="pointsite" href="/hi/services/hapitas/"><span class="ava" aria-hidden="true" dir="auto">Ha</span><span><span class="cat">कैशबैक साइट</span><b>Hapitas</b><small>2,300 पॉइंट तक</small></span></a><a class="rel" data-cat="pointsite" href="/hi/services/kabuand/"><span class="ava" aria-hidden="true" dir="auto">KA</span><span><span class="cat">कैशबैक साइट</span><b>KABU&amp;</b><small>बिजली, गैस, मोबाइल आदि के भुगतान के हिसाब से शेयर वाउचर (बिना लिस्टिंग वाले शेयरों के आवेदन में इस्तेमाल)</small></span></a><a class="rel" data-cat="crypto-bi" href="/hi/services/gooddollar/"><span class="ava" aria-hidden="true" dir="auto">GD</span><span><span class="cat">क्रिप्टो UBI</span><b>GoodDollar</b><small>हर दिन G$ टोकन</small></span></a></div>
 </section>
 <p class="back"><a class="btn line" href="/hi/#list">← सूची पर वापस जाएँ</a></p>
 </main>

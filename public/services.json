@@ -15,7 +15,7 @@
     "de",
     "ar"
   ],
-  "count": 31,
+  "count": 32,
   "services": [
     {
       "id": "aidac",
@@ -1601,6 +1601,104 @@
           "note": "تطبيق الهاتف لموقع JrKripto، وهو موقع تركي لأخبار العملات المشفرة وتحليلاتها وتتبّع أسعارها، ويدير مؤسسه أيضًا موقع الأسهم JrHisse. اضغط مرة واحدة يوميًا في التطبيق لتتجمع نقاط JR على مدى الـ24 ساعة التالية. إذا سجّلت برمز دعوة وأكّدت بريدك الإلكتروني تحصل على مكافأة 50 JR",
           "need": "سجّل عبر رابط الدعوة وأكّد بريدك الإلكتروني (لا حاجة لوثيقة هوية). ثم اضغط مرة واحدة يوميًا في التطبيق (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
           "caution": "تقول صفحة الدعوة نفسها: «JR نقطة داخل التطبيق، ولا يمكن بيعها أو تحويلها». حتى أكتوبر 2026 لا توجد طريقة لتحويلها إلى نقود، فأي قيمة لها تعتمد على استخدام محتمل في المستقبل. لا تتجمع النقاط إلا إذا ضغطت كل يوم. اسم الحزمة في Google Play هو “com.yourcompany.jrkripto”، ويبدو كأنه اسم قالب لم يُغيَّر"
+        }
+      }
+    },
+    {
+      "id": "kabuand",
+      "name": "KABU&",
+      "nameJa": "KABU&（カブアンド）",
+      "category": "pointsite",
+      "categoryName": "Cashback sites",
+      "payout": "loop",
+      "officialUrl": "https://kabuand.com/",
+      "referral": null,
+      "referralByDM": {
+        "contact": "https://x.com/FreeLunchLab",
+        "handle": "@FreeLunchLab",
+        "note": "No referral code is published. Ask the maintainer by DM on X; the maintainer, as referrer, also receives the referral reward"
+      },
+      "region": "japan-only",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "kyc-id",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "no",
+        "price": "no",
+        "operator": "yes"
+      },
+      "ease": 2,
+      "added": "2026-10-29",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/kabuand/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/kabuand/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/kabuand/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/kabuand/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/kabuand/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/kabuand/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/kabuand/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/kabuand/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/kabuand/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/kabuand/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/kabuand/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Share vouchers based on what you pay for electricity, gas, mobile and more (used to apply for unlisted shares)",
+          "note": "A service from Kabu & Peace Inc., whose president and CEO is Yusaku Maezawa. When you pay for KABU& electricity, gas, mobile, fibre internet, Wi-Fi, water, travel, telemedicine and other services, or spend with the KABU& Card, you receive “share vouchers” (kabu hikikaeken). For standard members the rate is 1% for electricity and gas, 5% for mobile, fibre, water and telemedicine, and 1 voucher per ¥200 on the card; paid Plus and Premium memberships raise the rates. During a set offering period you can apply to exchange vouchers for the company’s class shares (KABU& class shares); the 4th offering’s issue price is ¥8 a share (8 vouchers), and its application period is 6–26 Nov 2026. Vouchers can also be converted into ¥1 discount vouchers for KABU& bills. Under the referral program, both sides get vouchers depending on the service contracted; a referrer is rewarded for at most 20 people a month",
+          "need": "Adults living in Japan (foreign nationals need a special permanent resident certificate or a residence card with no expiry date). Register as a KABU& member, then contract a service and pay for it. To exchange vouchers for shares you must apply during the offering period, pass ID-based eKYC (driving licence, My Number card, etc.) and open and link a Daiwa Connect Securities account (by 6 Dec 2026 for the 4th offering)",
+          "caution": "The shares are unlisted: right now they cannot be sold or cashed, and their future value and liquidity are uncertain. The official site itself says a listing is not guaranteed, and the value may fall below the issue price. Vouchers basically come only from paying for services, so switching only makes sense if the price and terms of the service itself suit you. Vouchers can be exchanged for shares only during set offering periods, and they expire one year after the end of the month of your latest grant. Check the terms, the prospectus and when vouchers turn into shares before applying. The official referral notes say rewards may be voided if referral codes are spread on social media. KABU& also warns that offers to sell you its shares by phone, social media or email are very likely investment fraud: the shares can only be obtained with vouchers",
+          "contactRef": "Want a referral code? DM @FreeLunchLab on X (the referrer, this site’s operator, also receives share vouchers)."
+        },
+        "ja": {
+          "gain": "電気・ガス・スマホなどの利用料金に応じた株引換券（未上場株の申込みに使う）",
+          "note": "前澤友作氏が代表取締役社長を務める株式会社カブ＆ピースのサービス。KABU&でんき・ガス・モバイル・ひかり・Wi-Fi・ウォーター・トラベル・メディカルなどの利用料金や、KABU&カードの利用額に応じて「株引換券」が付与される。通常会員の付与率は、でんき・ガスが1%、モバイル・ひかり・ウォーター・メディカルが5%、カードは200円ごとに1枚で、有料のプラス会員・プレミアム会員は付与率が上がる。決められた募集期間（株引換）に申し込むと、株引換券を同社の株（カブアンド種類株式）に交換できる。第4期の発行価格は1株8円（株引換券8枚）で、申込期間は2026年11月6日〜26日。株引換券は1枚1円の割引券に交換して、カブアンドのサービスの支払いに充てることもできる。紹介プログラムでは、紹介した人とされた人の両方に、契約したサービスに応じた株引換券が付与される（紹介者への付与は毎月先着20人まで）",
+          "need": "日本在住の成人（外国籍の方は特別永住者証明書か、在留期限が無期限の在留カードが必要）。カブアンド会員に登録し、サービスを契約して料金を払う。株への交換には、募集期間中の申込み、身分証によるeKYC（運転免許証・マイナンバーカードなど）、大和コネクト証券の口座開設とID連携が必要（第4期分は2026年12月6日まで）",
+          "caution": "株は未上場で、今は売ることも現金にすることもできず、将来の価値や換金できるかどうかは不確か。公式サイトにも上場は「確約するものではない」とあり、価値が発行価格を下回るリスクもある。株引換券は基本的にサービスの料金を払うことでしかもらえないので、乗り換えるのは、そのサービス自体の料金や条件が自分に合う場合だけにしたい。株への交換は決められた募集期間にしかできず、株引換券の有効期限は最後に付与された月の月末から1年。申し込む前に、利用規約・目論見書と、株引換券が株になる時期を確認すること。公式の紹介プログラムの注意事項では、紹介コードのSNSでの拡散は特典の対象外とされている。また、電話・SNS・メールで「カブアンドの株が買える」という勧誘は投資詐欺の可能性が高いと公式が注意している（株は株引換券でしか取得できない）",
+          "contactRef": "紹介コードが欲しい方は、Xの @FreeLunchLab にDMしてください（紹介した側である当サイト運営者にも株引換券が入ります）。"
+        },
+        "zh": {
+          "gain": "按电费、燃气费、手机费等支付金额获得的股票兑换券（用于申购未上市股票）",
+          "note": "由前泽友作担任代表董事社长的 Kabu & Peace 株式会社（株式会社カブ＆ピース）提供的服务。使用 KABU& 的电力、燃气、手机、光纤宽带、Wi-Fi、饮水机、旅行、在线诊疗等服务并付费，或使用 KABU& 卡消费，就会获得“股票兑换券”（株引換券）。普通会员的比例为：电力和燃气 1%，手机、光纤、饮水机、在线诊疗 5%，信用卡每 200 日元 1 张；付费的 Plus 和 Premium 会员比例更高。在规定的募集期内可以申请把兑换券换成该公司的类别股（KABU& 类别股）；第 4 期发行价为每股 8 日元（8 张兑换券），申请期为 2026 年 11 月 6 日至 26 日。兑换券也可以换成每张 1 日元的折扣券，用于支付 KABU& 的账单。推荐计划中，推荐人和被推荐人都会按签约的服务获得兑换券；推荐人每月最多前 20 人有奖励",
+          "need": "居住在日本的成年人（外国籍人士需持有特别永住者证明书或无在留期限的在留卡）。注册 KABU& 会员，签约服务并付费。把兑换券换成股票，需要在募集期内申请、通过身份证件 eKYC（驾照、个人编号卡等），并开设大和 Connect 证券账户且完成 ID 关联（第 4 期截止 2026 年 12 月 6 日）",
+          "caution": "这些股票未上市：目前无法出售或变现，将来的价值和流动性都不确定。官网自己也写明不保证上市，股票价值还可能低于发行价。兑换券基本上只有付费使用服务才能获得，所以只有在服务本身的价格和条件适合你时，换用才有意义。兑换券只能在规定的募集期内换成股票，有效期为最后一次获得兑换券当月月底起 1 年。申请前请确认条款、招股说明书以及兑换成股票的时间。官方推荐说明写明，在社交媒体上扩散推荐码可能导致奖励无效。KABU& 还提醒：通过电话、社交媒体或邮件推销其股票的很可能是投资诈骗，这些股票只能用兑换券获得",
+          "contactRef": "想要推荐码的话，请在 X 上私信 @FreeLunchLab（推荐人，即本站运营者，也会获得股票兑换券）。"
+        },
+        "hi": {
+          "gain": "बिजली, गैस, मोबाइल आदि के भुगतान के हिसाब से शेयर वाउचर (बिना लिस्टिंग वाले शेयरों के आवेदन में इस्तेमाल)",
+          "note": "Kabu & Peace Inc. की सेवा, जिसके प्रेसिडेंट और CEO Yusaku Maezawa हैं। KABU& की बिजली, गैस, मोबाइल, फ़ाइबर इंटरनेट, Wi-Fi, पानी, ट्रैवल, टेलीमेडिसिन जैसी सेवाओं के भुगतान पर, या KABU& कार्ड से ख़र्च करने पर “शेयर वाउचर” (kabu hikikaeken) मिलते हैं। सामान्य सदस्यों के लिए दर बिजली और गैस पर 1%, मोबाइल, फ़ाइबर, पानी और टेलीमेडिसिन पर 5%, और कार्ड पर हर ¥200 पर 1 वाउचर है; पेड Plus और Premium सदस्यता से दरें बढ़ती हैं। तय ऑफ़रिंग अवधि में वाउचर को कंपनी के क्लास शेयर (KABU& क्लास शेयर) से बदलने के लिए आवेदन किया जा सकता है; चौथी ऑफ़रिंग का इश्यू प्राइस ¥8 प्रति शेयर (8 वाउचर) है और आवेदन अवधि 6–26 नवंबर 2026 है। वाउचर को KABU& बिलों के लिए ¥1 वाले डिस्काउंट वाउचर में भी बदला जा सकता है। रेफ़रल प्रोग्राम में दोनों पक्षों को ली गई सेवा के हिसाब से वाउचर मिलते हैं; रेफ़र करने वाले को महीने में ज़्यादा से ज़्यादा 20 लोगों तक इनाम मिलता है",
+          "need": "जापान में रहने वाले वयस्क (विदेशी नागरिकों के पास स्पेशल परमानेंट रेज़िडेंट सर्टिफ़िकेट या बिना समय-सीमा वाला रेज़िडेंस कार्ड होना चाहिए)। KABU& सदस्य बनें, फिर कोई सेवा लें और उसका भुगतान करें। वाउचर को शेयर में बदलने के लिए ऑफ़रिंग अवधि में आवेदन, पहचान पत्र से eKYC (ड्राइविंग लाइसेंस, My Number कार्ड आदि), और Daiwa Connect Securities में खाता खोलकर उसे लिंक करना ज़रूरी है (चौथी ऑफ़रिंग के लिए 6 दिसंबर 2026 तक)",
+          "caution": "शेयर लिस्टेड नहीं हैं: अभी इन्हें न बेचा जा सकता है, न नकद में बदला जा सकता है, और इनकी भविष्य की क़ीमत और बिक्री की संभावना अनिश्चित है। आधिकारिक साइट ख़ुद कहती है कि लिस्टिंग की गारंटी नहीं है, और क़ीमत इश्यू प्राइस से नीचे भी जा सकती है। वाउचर मूल रूप से सिर्फ़ सेवाओं का भुगतान करने पर मिलते हैं, इसलिए सेवा बदलना तभी समझदारी है जब उस सेवा की क़ीमत और शर्तें ख़ुद आपके लिए ठीक हों। वाउचर सिर्फ़ तय ऑफ़रिंग अवधि में शेयर में बदले जा सकते हैं, और आख़िरी बार वाउचर मिलने वाले महीने के अंत से 1 साल में ख़त्म हो जाते हैं। आवेदन से पहले शर्तें, प्रॉस्पेक्टस और वाउचर कब शेयर में बदलते हैं, यह जाँच लें। आधिकारिक रेफ़रल नोट्स कहते हैं कि सोशल मीडिया पर रेफ़रल कोड फैलाने पर इनाम रद्द हो सकता है। KABU& यह भी चेतावनी देता है कि फ़ोन, सोशल मीडिया या ईमेल से इसके शेयर बेचने के प्रस्ताव बहुत संभवतः निवेश धोखाधड़ी हैं: शेयर सिर्फ़ वाउचर से ही मिलते हैं",
+          "contactRef": "रेफ़रल कोड चाहिए? X पर @FreeLunchLab को DM करें (रेफ़र करने वाले, यानी इस साइट के संचालक, को भी शेयर वाउचर मिलते हैं)।"
+        },
+        "es": {
+          "gain": "Vales de acciones según lo que pagas de luz, gas, móvil y más (sirven para solicitar acciones no cotizadas)",
+          "note": "Un servicio de Kabu & Peace Inc., cuyo presidente y CEO es Yusaku Maezawa. Al pagar los servicios de KABU& de luz, gas, móvil, fibra, Wi-Fi, agua, viajes, telemedicina y otros, o al gastar con la tarjeta KABU&, recibes «vales de acciones» (kabu hikikaeken). Para miembros normales la tasa es del 1% en luz y gas, del 5% en móvil, fibra, agua y telemedicina, y 1 vale por cada 200 ¥ con la tarjeta; las membresías de pago Plus y Premium suben las tasas. Durante un periodo de oferta fijado puedes solicitar canjear los vales por acciones de clase de la empresa (acciones de clase KABU&); el precio de emisión de la 4.ª oferta es de 8 ¥ por acción (8 vales) y el plazo de solicitud va del 6 al 26 de noviembre de 2026. Los vales también se pueden convertir en vales de descuento de 1 ¥ para las facturas de KABU&. Con el programa de referidos, ambas partes reciben vales según el servicio contratado; quien invita solo recibe recompensa por un máximo de 20 personas al mes",
+          "need": "Adultos que viven en Japón (los extranjeros necesitan un certificado de residente permanente especial o una tarjeta de residencia sin fecha de vencimiento). Regístrate como miembro de KABU& y luego contrata un servicio y págalo. Para canjear los vales por acciones tienes que solicitarlo durante el periodo de oferta, pasar un eKYC con documento (carné de conducir, tarjeta My Number, etc.) y abrir y vincular una cuenta en Daiwa Connect Securities (antes del 6 de diciembre de 2026 para la 4.ª oferta)",
+          "caution": "Las acciones no cotizan: ahora mismo no se pueden vender ni convertir en dinero, y su valor y liquidez futuros son inciertos. El propio sitio oficial dice que la salida a bolsa no está garantizada, y el valor puede caer por debajo del precio de emisión. Los vales básicamente solo se obtienen pagando servicios, así que cambiarte solo tiene sentido si el precio y las condiciones del servicio en sí te convienen. Los vales solo se canjean por acciones en periodos de oferta fijados y caducan un año después del final del mes en que recibiste los últimos. Antes de solicitar, revisa las condiciones, el folleto y cuándo se convierten los vales en acciones. Las notas oficiales del programa de referidos dicen que la recompensa puede anularse si se difunden códigos en redes sociales. KABU& también advierte que las ofertas de venta de sus acciones por teléfono, redes sociales o correo son muy probablemente fraudes de inversión: las acciones solo se obtienen con vales",
+          "contactRef": "¿Quieres un código de referido? Escribe por DM a @FreeLunchLab en X (quien te invita, el responsable de este sitio, también recibe vales de acciones)."
+        },
+        "de": {
+          "gain": "Aktiengutscheine je nach Ausgaben für Strom, Gas, Mobilfunk und mehr (für die Zeichnung nicht börsennotierter Aktien)",
+          "note": "Ein Dienst der Kabu & Peace Inc., deren Präsident und CEO Yusaku Maezawa ist. Wer für KABU&-Strom, -Gas, -Mobilfunk, -Glasfaser, -WLAN, -Wasser, -Reisen, -Telemedizin und andere Dienste zahlt oder mit der KABU&-Karte bezahlt, bekommt „Aktiengutscheine“ (kabu hikikaeken). Für normale Mitglieder sind es 1 % bei Strom und Gas, 5 % bei Mobilfunk, Glasfaser, Wasser und Telemedizin und 1 Gutschein je 200 Yen mit der Karte; die kostenpflichtigen Mitgliedschaften Plus und Premium erhöhen die Sätze. In einem festgelegten Angebotszeitraum kann man beantragen, die Gutscheine gegen Gattungsaktien des Unternehmens (KABU&-Gattungsaktien) zu tauschen; der Ausgabepreis des 4. Angebots liegt bei 8 Yen je Aktie (8 Gutscheine), Antragszeitraum 6.–26. November 2026. Gutscheine lassen sich auch in Rabattgutscheine zu je 1 Yen für KABU&-Rechnungen umwandeln. Beim Empfehlungsprogramm bekommen beide Seiten Gutscheine je nach abgeschlossenem Dienst; Werbende werden für höchstens 20 Personen im Monat belohnt",
+          "need": "Volljährige mit Wohnsitz in Japan (ausländische Staatsangehörige brauchen eine Bescheinigung als Sonder-Daueraufenthaltsberechtigte oder eine Aufenthaltskarte ohne Ablaufdatum). Als KABU&-Mitglied registrieren, dann einen Dienst abschließen und bezahlen. Für den Tausch in Aktien musst du im Angebotszeitraum zeichnen, ein eKYC mit Ausweis (Führerschein, My-Number-Karte usw.) durchlaufen und ein Konto bei Daiwa Connect Securities eröffnen und verknüpfen (für das 4. Angebot bis 6. Dezember 2026)",
+          "caution": "Die Aktien sind nicht börsennotiert: Derzeit kann man sie weder verkaufen noch zu Geld machen, und ihr künftiger Wert und ihre Handelbarkeit sind ungewiss. Die offizielle Seite selbst schreibt, dass ein Börsengang nicht zugesichert ist, und der Wert kann unter den Ausgabepreis fallen. Gutscheine gibt es im Grunde nur, wenn du für Dienste zahlst; ein Wechsel lohnt sich also nur, wenn Preis und Bedingungen des Dienstes selbst zu dir passen. Gutscheine lassen sich nur in festgelegten Angebotszeiträumen in Aktien tauschen und verfallen ein Jahr nach Ende des Monats, in dem du zuletzt welche bekommen hast. Prüfe vor dem Antrag die Bedingungen, den Prospekt und wann Gutscheine zu Aktien werden. Laut den offiziellen Hinweisen zum Empfehlungsprogramm kann die Prämie entfallen, wenn Empfehlungscodes in sozialen Medien verbreitet werden. KABU& warnt außerdem, dass Angebote, seine Aktien per Telefon, sozialen Medien oder E-Mail zu kaufen, sehr wahrscheinlich Anlagebetrug sind: Die Aktien gibt es nur gegen Gutscheine",
+          "contactRef": "Du möchtest einen Empfehlungscode? Schreib @FreeLunchLab auf X per DM (wer dich empfiehlt, also der Betreiber dieser Seite, bekommt ebenfalls Aktiengutscheine)."
+        },
+        "ar": {
+          "gain": "قسائم أسهم بحسب ما تدفعه للكهرباء والغاز والهاتف وغيرها (تُستخدم للاكتتاب في أسهم غير مدرجة)",
+          "note": "خدمة من شركة Kabu & Peace Inc. التي يرأسها ويديرها Yusaku Maezawa. عندما تدفع مقابل خدمات KABU& للكهرباء والغاز والهاتف المحمول والإنترنت بالألياف وWi-Fi والمياه والسفر والطب عن بُعد وغيرها، أو تنفق ببطاقة KABU&، تحصل على «قسائم أسهم» (kabu hikikaeken). للأعضاء العاديين النسبة 1% للكهرباء والغاز، و5% للهاتف والألياف والمياه والطب عن بُعد، وقسيمة واحدة لكل 200 ين بالبطاقة؛ وترفع العضويتان المدفوعتان Plus وPremium النسب. خلال فترة طرح محددة يمكنك طلب استبدال القسائم بأسهم من فئة خاصة في الشركة (أسهم KABU& الفئوية)؛ سعر الإصدار في الطرح الرابع 8 ين للسهم (8 قسائم)، وفترة الطلب من 6 إلى 26 نوفمبر 2026. ويمكن أيضًا تحويل القسائم إلى قسائم خصم بقيمة 1 ين لفواتير KABU&. في برنامج الإحالة يحصل الطرفان على قسائم بحسب الخدمة المتعاقد عليها، ولا يُكافأ المُحيل إلا عن 20 شخصًا كحد أقصى في الشهر",
+          "need": "البالغون المقيمون في اليابان (يحتاج الأجانب إلى شهادة إقامة دائمة خاصة أو بطاقة إقامة بلا تاريخ انتهاء). سجّل عضوًا في KABU&، ثم تعاقد على خدمة وادفع مقابلها. لاستبدال القسائم بأسهم عليك التقديم خلال فترة الطرح، واجتياز التحقق الإلكتروني من الهوية (eKYC) بوثيقة (رخصة قيادة أو بطاقة My Number وغيرهما)، وفتح حساب لدى Daiwa Connect Securities وربطه (حتى 6 ديسمبر 2026 للطرح الرابع)",
+          "caution": "الأسهم غير مدرجة: لا يمكن بيعها ولا تحويلها إلى نقود الآن، وقيمتها وسيولتها في المستقبل غير مؤكدتين. يقول الموقع الرسمي نفسه إن الإدراج غير مضمون، وقد تنخفض القيمة عن سعر الإصدار. لا تحصل على القسائم في الأساس إلا بالدفع مقابل الخدمات، لذا لا يكون الانتقال منطقيًا إلا إذا كان سعر الخدمة نفسها وشروطها مناسبة لك. لا تُستبدل القسائم بأسهم إلا في فترات طرح محددة، وتنتهي صلاحيتها بعد سنة من نهاية الشهر الذي حصلت فيه على آخر قسائم. راجع الشروط ونشرة الإصدار وموعد تحوّل القسائم إلى أسهم قبل التقديم. تقول الملاحظات الرسمية لبرنامج الإحالة إن المكافأة قد تُلغى إذا نُشرت رموز الإحالة على وسائل التواصل الاجتماعي. وتحذّر KABU& أيضًا من أن عروض بيع أسهمها عبر الهاتف أو وسائل التواصل أو البريد الإلكتروني هي على الأرجح احتيال استثماري: لا يمكن الحصول على الأسهم إلا بالقسائم",
+          "contactRef": "تريد رمز إحالة؟ راسل @FreeLunchLab على X برسالة خاصة (المُحيل، أي مشغّل هذا الموقع، يحصل أيضًا على قسائم أسهم)."
         }
       }
     },

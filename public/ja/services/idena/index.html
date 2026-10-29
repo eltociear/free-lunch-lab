@@ -218,6 +218,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
 .caution{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
 .caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.72rem;line-height:1}
+.contact-ref{font-size:.8rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
+.contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
 .checked{font-size:.72rem;color:var(--muted);margin-top:-4px}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
@@ -609,6 +611,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="body">公式 Telegram の案内に従って、認証済みメンバーか運営チームから無料の招待コードをもらう。Webアプリ（共有ノード経由でも可）か自分のノードで参加し、セレモニーの時間にオンラインで FLIP を解く（日本からの利用は2026年10月に実際に確認）</p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-partial" title="運営元公開（運営元が公開されているか）：条件つき"><span aria-hidden="true">運営元</span><b aria-hidden="true">△</b><span class="vh">運営元公開（運営元が公開されているか）：条件つき</span></li></ul></div>
 <p class="caution">注意：決まった時刻（日本時間の深夜0時）にオンラインでいないと認証されず、手間がかかる。ネットワークはとても小さく、iDNA は1枚約0.0012ドル（2026年10月）。時価総額は約12万ドルで、CoinGecko で確認できた取引所は PancakeSwap（BSC）のみと流動性が低い。換金は取引所で売る形になる。招待コードを売買するのは禁止されていて、無料でもらうもの。報酬を他人の「プール」に任せると、相手がステークを持ち去れるので注意</p>
+
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
 <p class="verify-line"><b>認証方法</b><span dir="auto">認証セレモニー</span><a href="/ja/verify/web-of-trust/" dir="auto">信頼の網・招待</a></p>
 <div class="slip"><a class="btn solid" href="https://www.idena.io/" target="_blank" rel="noopener">公式サイトを見る</a></div>

@@ -8,6 +8,13 @@
     <lastBuildDate>Thu, 29 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Added KABU&amp;</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/services/kabuand/</link>
+      <guid isPermaLink="false">news-2026-10-29-738d2f05503a</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Added KABU&amp;: Share vouchers based on what you pay for electricity, gas, mobile and more (used to apply for unlisted shares)</description>
+    </item>
+    <item>
       <title>Added Mining Machine ($ORE)</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/services/miningmachine/</link>
       <guid isPermaLink="false">news-2026-10-29-3e4e6015a8d8</guid>

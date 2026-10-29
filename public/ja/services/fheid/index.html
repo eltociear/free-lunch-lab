@@ -218,6 +218,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
 .caution{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
 .caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.72rem;line-height:1}
+.contact-ref{font-size:.8rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
+.contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
 .checked{font-size:.72rem;color:var(--muted);margin-top:-4px}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
@@ -609,6 +611,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="body">アプリ FheID を入れて招待コード QVedKjg を入力し、顔で人間証明をする（日本からの利用は2026年10月に実際に確認）</p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-unknown" title="換金（現金にできるか）：未確認"><span aria-hidden="true">換金</span><b aria-hidden="true">?</b><span class="vh">換金（現金にできるか）：未確認</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
 <p class="caution">注意：今どんな報酬がどれくらいもらえるかは公式に書かれていない。公式の過去のキャンペーン（2024年）では、紹介で「スター」がたまり（3段階まで、1人あたり100・50・25スター）、エアドロップと交換できるしくみだった。招待コードをどこで入力するかや、紹介された側の特典は確認できていない。PRAI は2025年5月の最高値 約0.096ドルから大きく下がり、2026年10月時点で約0.0008ドル。顔の情報を扱うアプリなので、プライバシーの扱いを確認してから使いたい</p>
+
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
 <p class="verify-line"><b>認証方法</b><a href="/ja/verify/face/" dir="auto">顔認証・ライブネス</a></p>
 <div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">QVedKjg</span></div><button class="btn line" type="button" data-code="QVedKjg">コピー</button><a class="btn solid" href="https://www.privasea.ai/download-app" target="_blank" rel="noopener">アプリを入れてコードを入力</a></div>

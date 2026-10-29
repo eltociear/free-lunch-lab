@@ -137,6 +137,19 @@ function trustLegend(lang) {
 const NEW_MS = 14 * 864e5;
 const isNew = s => s.added && Date.now() - Date.parse(s.added) < NEW_MS;
 
+// 任意の contactRef: 紹介コードをサイトに載せず、X の DM で渡すサービス。各言語の contactRef 文中のハンドルを X のプロフィールへのリンクにする
+for (const s of live.filter(x => x.contactRef)) {
+  if (!s.contactRef.url || !s.contactRef.handle) throw new Error(`${s.id}: contactRef needs url and handle`);
+  if (s.ref || s.code) throw new Error(`${s.id}: contactRef is for entries without a published referral`);
+  for (const l of LANGS) if (!(s[l] && s[l].contactRef || '').includes(s.contactRef.handle)) throw new Error(`${s.id}: ${l}.contactRef must mention ${s.contactRef.handle}`);
+}
+function contactLine(s, lang) {
+  const t = s.contactRef && (s[lang] || s.en).contactRef;
+  if (!t) return '';
+  const h = s.contactRef.handle;
+  return `<p class="contact-ref">${t.split(h).map(esc).join(`<a href="${esc(s.contactRef.url)}" target="_blank" rel="noopener" dir="ltr">${esc(h)}</a>`)}</p>`;
+}
+
 // 申し込みボタン。codeOnly と noRef はリンク先が公式ページなので sponsored を付けない
 function cta(s, L) {
   const label = s.codeOnly ? L.goCode : s.ref ? L.goRef : L.goOff;
@@ -163,6 +176,7 @@ function card(s, lang) {
 <p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
 ${meta(s, lang)}
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
+${contactLine(s, lang)}
 ${checkedLine(s, lang)}
 ${slip(s, L)}
 </article>`;
@@ -643,6 +657,7 @@ ${d.warning ? `<div class="warn svc-warn" role="note"><p class="warn-h">${esc(L.
 <p class="body">${esc(d.need)}</p>
 ${meta(s, lang)}
 ${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
+${contactLine(s, lang)}
 ${checkedLine(s, lang)}
 ${(s.verify || []).length ? `<p class="verify-line"><b>${esc(L.verifyLabel)}</b>${s.verify.map(v => { const nm = esc(VERIFY[v.method].name[lang]) + (v.optional ? (lang === 'ja' || lang === 'zh' ? `（${esc(L.verifyOpt)}）` : ` (${esc(L.verifyOpt)})`) : ''); return verifyPages.includes(v.method) ? `<a href="${verifyPath(lang, v.method)}" dir="auto">${nm}</a>` : `<span dir="auto">${nm}</span>`; }).join('')}</p>` : ''}
 ${slip(s, L)}
@@ -1126,6 +1141,7 @@ const servicesJson = {
     payout: s.type,
     officialUrl: s.official,
     referral: s.ref || s.code ? { url: s.ref || null, code: s.code || null, note: "Maintainer's referral link; not covered by the content license" } : null,
+    ...(s.contactRef ? { referralByDM: { contact: s.contactRef.url, handle: s.contactRef.handle, note: "No referral code is published. Ask the maintainer by DM on X; the maintainer, as referrer, also receives the referral reward" } } : {}),
     region: REGION(s),
     availableFromJapan: !s.onlyIn,
     verify: (s.verify || []).map(v => ({ method: v.method, optional: !!v.optional })),
@@ -1136,7 +1152,7 @@ const servicesJson = {
     pageUrl: svcAbs(DEFAULT_LANG, s),
     pageUrls: Object.fromEntries(LANGS.map(l => [l, svcAbs(l, s)])),
     badge: badgeJson('svc', s),
-    descriptions: Object.fromEntries(LANGS.filter(l => s[l]).map(l => [l, Object.fromEntries(['gain', 'note', 'need', 'warning', 'caution'].filter(k => s[l][k]).map(k => [k, clean(s[l][k])]))])),
+    descriptions: Object.fromEntries(LANGS.filter(l => s[l]).map(l => [l, Object.fromEntries(['gain', 'note', 'need', 'warning', 'caution', 'contactRef'].filter(k => s[l][k]).map(k => [k, clean(s[l][k])]))])),
   })),
 };
 const graveJson = {
@@ -1272,6 +1288,7 @@ const svcFull = s => {
     `- Official URL: ${s.official}`,
     ...(s.ref ? [`- Referral link (maintainer's own referral; not covered by the content license): ${s.ref}`] : []),
     ...(s.code ? [`- Referral code (maintainer's own): ${s.code}`] : []),
+    ...(s.contactRef ? [`- Referral code: not published; available on request by DM to ${s.contactRef.handle} on X (${s.contactRef.url}). The maintainer, as referrer, also receives the referral reward`] : []),
     '',
     md(d.note),
     '',

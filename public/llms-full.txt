@@ -636,6 +636,26 @@ Warning: Don’t pay for machines or upgrades. There’s no guarantee that anyth
 
 Cautions: Don’t pay for machines or upgrades. There’s no guarantee that anything you pay for will ever be worth anything. Whoever invited you receives 10% of what you spend, and that includes this site’s operator, who invited you through this link. $ORE is not a token yet, and the site itself says balances are not a promise of tokens. The operator is anonymous. There is no operator name, address or jurisdiction, and no whitepaper. The only company presence is the X account @RigGrid, and no independent reviews could be found (as of October 2026). Extra machines cost money, but prices are not shown publicly. The page pushes you to hurry with a countdown (“only 7 days”). You have to restart mining yourself every 24 hours
 
+### KABU&
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/kabuand/
+- Category: Cashback sites
+- Payout: recurring
+- Region: Japan only
+- Verification: ID document KYC
+- Trust check: Cash out: No; Market price: No; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://kabuand.com/
+- Referral code: not published; available on request by DM to @FreeLunchLab on X (https://x.com/FreeLunchLab). The maintainer, as referrer, also receives the referral reward
+
+A service from Kabu & Peace Inc., whose president and CEO is Yusaku Maezawa. When you pay for KABU& electricity, gas, mobile, fibre internet, Wi-Fi, water, travel, telemedicine and other services, or spend with the KABU& Card, you receive “share vouchers” (kabu hikikaeken). For standard members the rate is 1% for electricity and gas, 5% for mobile, fibre, water and telemedicine, and 1 voucher per ¥200 on the card; paid Plus and Premium memberships raise the rates. During a set offering period you can apply to exchange vouchers for the company’s class shares (KABU& class shares); the 4th offering’s issue price is ¥8 a share (8 vouchers), and its application period is 6–26 Nov 2026. Vouchers can also be converted into ¥1 discount vouchers for KABU& bills. Under the referral program, both sides get vouchers depending on the service contracted; a referrer is rewarded for at most 20 people a month
+
+What you get: Share vouchers based on what you pay for electricity, gas, mobile and more (used to apply for unlisted shares)
+
+What you need: Adults living in Japan (foreign nationals need a special permanent resident certificate or a residence card with no expiry date). Register as a KABU& member, then contract a service and pay for it. To exchange vouchers for shares you must apply during the offering period, pass ID-based eKYC (driving licence, My Number card, etc.) and open and link a Daiwa Connect Securities account (by 6 Dec 2026 for the 4th offering)
+
+Cautions: The shares are unlisted: right now they cannot be sold or cashed, and their future value and liquidity are uncertain. The official site itself says a listing is not guaranteed, and the value may fall below the issue price. Vouchers basically come only from paying for services, so switching only makes sense if the price and terms of the service itself suit you. Vouchers can be exchanged for shares only during set offering periods, and they expire one year after the end of the month of your latest grant. Check the terms, the prospectus and when vouchers turn into shares before applying. The official referral notes say rewards may be voided if referral codes are spread on social media. KABU& also warns that offers to sell you its shares by phone, social media or email are very likely investment fraud: the shares can only be obtained with vouchers
+
 ## Essays
 
 ### Universal high income: who pays?

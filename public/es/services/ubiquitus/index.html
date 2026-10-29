@@ -218,6 +218,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
 .caution{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
 .caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.72rem;line-height:1}
+.contact-ref{font-size:.8rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
+.contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
 .checked{font-size:.72rem;color:var(--muted);margin-top:-4px}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
@@ -609,6 +611,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <p class="body">Residentes en EE. UU. mayores de 18 años. Verificación con una transacción de 1 centavo en Venmo (sin subir documentos ni prueba de ingresos)</p>
 <div class="meta"><span class="ease"><span>Facilidad</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region"><span class="vh">Región: </span>Solo residentes en EE. UU.</span><ul class="trust" aria-label="Confianza"><li class="t-yes" title="Cobro (se puede pasar a dinero): Sí"><span aria-hidden="true">Cobro</span><b aria-hidden="true">✓</b><span class="vh">Cobro (se puede pasar a dinero): Sí</span></li><li class="t-yes" title="Operador (se sabe quién lo gestiona): Sí"><span aria-hidden="true">Operador</span><b aria-hidden="true">✓</b><span class="vh">Operador (se sabe quién lo gestiona): Sí</span></li></ul></div>
 <p class="caution">Ojo: A octubre de 2026 no se puede usar desde Japón (los términos lo limitan a residentes en EE. UU.; se comprobó en persona que no funciona desde Japón). La cantidad por persona es mínima, baja si cae el fondo, y se indica que los pagos no están garantizados y pueden detenerse en cualquier momento. Se describe como un experimento social informal, no como una empresa. Quien cobra debe declarar los pagos como ingresos</p>
+
 <p class="checked"><time datetime="2026-10">Revisado: octubre de 2026</time></p>
 
 <div class="slip"><a class="btn solid" href="https://www.ubiquitus.org/" target="_blank" rel="noopener">Ver web oficial</a></div>

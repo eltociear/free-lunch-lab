@@ -53,6 +53,7 @@
 - [FheID (Privasea)](https://neteru-nyukin.eltociear.workers.dev/services/fheid/): Airdrops and rewards for proving you are human (e.g. campaign “stars”). A proof-of-humanity app that scans your face with your phone camera to show you are a real person (Crypto UBI; available in Japan and worldwide; verification: Face scan / liveness)
 - [JrKripto (JR)](https://neteru-nyukin.eltociear.workers.dev/services/jrkripto/): JR points every day (50 JR sign-up bonus). The mobile app of JrKripto, a Turkish crypto news, analysis and price-tracking site whose founder also runs the stock site JrHisse (Passive apps; available in Japan and worldwide; verification: No verification)
 - [Mining Machine ($ORE)](https://neteru-nyukin.eltociear.workers.dev/services/miningmachine/): $ORE mining balance (free 24-hour sessions). A site where a “mining machine” in your browser builds up a $ORE balance (Passive apps; available in Japan and worldwide; verification: No verification)
+- [KABU&](https://neteru-nyukin.eltociear.workers.dev/services/kabuand/): Share vouchers based on what you pay for electricity, gas, mobile and more (used to apply for unlisted shares). A service from Kabu & Peace Inc., whose president and CEO is Yusaku Maezawa (Cashback sites; Japan only; verification: ID document KYC)
 
 ## Guides
 
