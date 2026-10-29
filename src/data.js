@@ -2059,6 +2059,72 @@ module.exports = {
         "need": "ثبّت تطبيق ⁦FheID⁩ وأدخل رمز الدعوة ⁦QVedKjg⁩ وتحقق من أنك إنسان بمسح الوجه (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
         "caution": "لا يُذكر رسميًا ما المكافآت المتاحة الآن ولا قيمتها. منحت حملة رسمية سابقة (2024) «نجومًا» مقابل الإحالة (حتى 3 مستويات: 100 و50 و25 نجمة لكل شخص) يمكن استبدالها بإسقاطات جوية. لم يتأكد مكان إدخال رمز الدعوة ولا ما إذا كان المستخدم الجديد يحصل على شيء. هبط ⁦PRAI⁩ من ذروته في مايو 2025 عند نحو ⁦$0.096⁩ إلى نحو ⁦$0.0008⁩ في أكتوبر 2026. يتعامل التطبيق مع بيانات وجهك، فراجع الخصوصية أولًا"
       }
+    },
+    {
+      "id": "jrkripto",
+      "name": "JrKripto（JR）",
+      "nameEn": "JrKripto (JR)",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://jrkripto.com/en",
+      "code": "JR-9C9T57",
+      "ref": "https://jrkripto.com/r/JR-9C9T57",
+      "added": "2026-10-29",
+      "checked": "2026-10",
+      "trust": {
+        "cash": "no",
+        "price": "na",
+        "operator": "partial"
+      },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
+      "ja": {
+        "gain": "毎日JRポイント（登録で50JR）",
+        "note": "トルコの暗号資産ニュース・分析・価格チャートのサイト「JrKripto」のスマホアプリ。創業者は株式情報サイト「JrHisse」も運営している。アプリで1日1回タップすると、そこから24時間かけてJRポイントがたまる。招待コード付きで登録してメールアドレスを認証すると、50JRのボーナスがもらえる",
+        "need": "招待リンクから登録し、メールアドレスを認証する（身分証は不要）。あとはアプリで毎日1回タップする（日本からの利用は2026年10月に実際に確認）",
+        "caution": "招待ページ自体に「JRはアプリ内ポイントで、売ることも送ることもできない」と書かれている。2026年10月時点で換金の手段はなく、価値は将来の使い道しだい。毎日タップしないとたまらない。Google Playのパッケージ名が「com.yourcompany.jrkripto」と、ひな形のままのような名前になっている"
+      },
+      "en": {
+        "gain": "JR points every day (50 JR sign-up bonus)",
+        "note": "The mobile app of JrKripto, a Turkish crypto news, analysis and price-tracking site whose founder also runs the stock site JrHisse. Tap once a day in the app and JR points accrue over the next 24 hours. Sign up with an invite code and verify your email to get a 50 JR bonus",
+        "need": "Sign up via the invite link and verify your email address (no ID needed). Then tap once a day in the app (confirmed usable from Japan in Oct 2026, first-hand)",
+        "caution": "The invite page itself says “JR is an in-app point; it cannot be sold or transferred.” As of October 2026 there is no way to cash it out, so any value depends on a possible future use. Points only accrue if you tap every day. The Google Play package name is “com.yourcompany.jrkripto”, which looks like an unchanged template name"
+      },
+      "zh": {
+        "gain": "每天获得 JR 积分（注册送 50 JR）",
+        "note": "土耳其加密资产新闻、分析和行情网站 JrKripto 的手机应用，创始人还运营股票信息网站 JrHisse。每天在应用中点一次，接下来 24 小时内会累积 JR 积分。使用邀请码注册并验证邮箱，可获得 50 JR 奖励",
+        "need": "通过邀请链接注册并验证邮箱（无需身份证件）。之后每天在应用中点一次即可（已于 2026 年 10 月亲自确认可在日本使用）",
+        "caution": "邀请页面本身写明“JR 是应用内积分，不能出售或转让”。截至 2026 年 10 月没有任何兑现途径，价值取决于将来可能的用途。不每天点击就不会累积。Google Play 上的包名是“com.yourcompany.jrkripto”，看起来像是未修改的模板名称"
+      },
+      "hi": {
+        "gain": "हर दिन JR पॉइंट (साइन अप पर 50 JR)",
+        "note": "JrKripto का मोबाइल ऐप, जो तुर्की की एक क्रिप्टो न्यूज़, विश्लेषण और प्राइस-ट्रैकिंग साइट है; इसके संस्थापक शेयर बाज़ार की साइट JrHisse भी चलाते हैं। ऐप में दिन में एक बार टैप करें, और अगले 24 घंटों में JR पॉइंट जमा होते हैं। इनवाइट कोड से साइन अप करके ईमेल वेरिफ़ाई करने पर 50 JR का बोनस मिलता है",
+        "need": "इनवाइट लिंक से साइन अप करें और अपना ईमेल वेरिफ़ाई करें (पहचान पत्र ज़रूरी नहीं)। फिर ऐप में रोज़ एक बार टैप करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+        "caution": "इनवाइट पेज पर ही लिखा है कि “JR एक इन-ऐप पॉइंट है; इसे न बेचा जा सकता है, न ट्रांसफ़र किया जा सकता है।” अक्टूबर 2026 तक इसे नकद में बदलने का कोई तरीका नहीं है, इसलिए इसकी कोई भी क़ीमत भविष्य के संभावित इस्तेमाल पर निर्भर है। रोज़ टैप न करें तो पॉइंट जमा नहीं होते। Google Play पर पैकेज का नाम “com.yourcompany.jrkripto” है, जो बिना बदले टेम्पलेट नाम जैसा लगता है"
+      },
+      "es": {
+        "gain": "Puntos JR cada día (50 JR al registrarte)",
+        "note": "La app móvil de JrKripto, un sitio turco de noticias, análisis y seguimiento de precios de criptomonedas cuyo fundador también dirige el sitio bursátil JrHisse. Pulsa una vez al día en la app y los puntos JR se acumulan durante las 24 horas siguientes. Si te registras con un código de invitación y verificas tu correo, recibes un bono de 50 JR",
+        "need": "Regístrate con el enlace de invitación y verifica tu correo electrónico (sin documento de identidad). Después, pulsa una vez al día en la app (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+        "caution": "La propia página de invitación dice: «JR es un punto dentro de la app; no se puede vender ni transferir». En octubre de 2026 no hay forma de convertirlo en dinero, así que su valor depende de un posible uso futuro. Solo se acumula si pulsas cada día. En Google Play el nombre del paquete es «com.yourcompany.jrkripto», que parece un nombre de plantilla sin cambiar"
+      },
+      "de": {
+        "gain": "Jeden Tag JR-Punkte (50 JR Anmeldebonus)",
+        "note": "Die Handy-App von JrKripto, einer türkischen Seite für Krypto-News, Analysen und Kursverfolgung; der Gründer betreibt auch die Aktienseite JrHisse. Tippe einmal am Tag in der App, dann sammeln sich über die nächsten 24 Stunden JR-Punkte an. Wer sich mit Einladungscode anmeldet und die E-Mail bestätigt, bekommt 50 JR Bonus",
+        "need": "Über den Einladungslink anmelden und die E-Mail-Adresse bestätigen (kein Ausweis nötig). Danach einmal am Tag in der App tippen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+        "caution": "Auf der Einladungsseite selbst steht: „JR ist ein In-App-Punkt; er kann weder verkauft noch übertragen werden.“ Stand Oktober 2026 gibt es keine Möglichkeit, ihn auszuzahlen; ein Wert hängt also von einer möglichen künftigen Nutzung ab. Punkte sammeln sich nur, wenn du jeden Tag tippst. Der Paketname bei Google Play lautet „com.yourcompany.jrkripto“, was nach einem unveränderten Vorlagennamen aussieht"
+      },
+      "ar": {
+        "gain": "نقاط ⁦JR⁩ كل يوم (⁦50 JR⁩ عند التسجيل)",
+        "note": "تطبيق الهاتف لموقع ⁦JrKripto⁩، وهو موقع تركي لأخبار العملات المشفرة وتحليلاتها وتتبّع أسعارها، ويدير مؤسسه أيضًا موقع الأسهم ⁦JrHisse⁩. اضغط مرة واحدة يوميًا في التطبيق لتتجمع نقاط ⁦JR⁩ على مدى الـ24 ساعة التالية. إذا سجّلت برمز دعوة وأكّدت بريدك الإلكتروني تحصل على مكافأة ⁦50 JR⁩",
+        "need": "سجّل عبر رابط الدعوة وأكّد بريدك الإلكتروني (لا حاجة لوثيقة هوية). ثم اضغط مرة واحدة يوميًا في التطبيق (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+        "caution": "تقول صفحة الدعوة نفسها: «⁦JR⁩ نقطة داخل التطبيق، ولا يمكن بيعها أو تحويلها». حتى أكتوبر 2026 لا توجد طريقة لتحويلها إلى نقود، فأي قيمة لها تعتمد على استخدام محتمل في المستقبل. لا تتجمع النقاط إلا إذا ضغطت كل يوم. اسم الحزمة في ⁦Google Play⁩ هو ⁦“com.yourcompany.jrkripto”⁩، ويبدو كأنه اسم قالب لم يُغيَّر"
+      }
     }
   ],
   "PICKS": [
@@ -2094,6 +2160,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-29",
+      "ja": "JrKripto（JR）を追加",
+      "en": "Added JrKripto (JR)",
+      "zh": "新增 JrKripto（JR）",
+      "hi": "JrKripto (JR) जोड़ा",
+      "es": "Añadido JrKripto (JR)",
+      "de": "JrKripto (JR) hinzugefügt",
+      "ar": "أضفنا ⁦JrKripto (JR)⁩"
+    },
     {
       "date": "2026-10-29",
       "ja": "エッセイ「ユニバーサルハイインカムは来るのか：誰が払う？」を公開",

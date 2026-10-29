@@ -593,6 +593,27 @@ What you need: Install the FheID app, enter the invite code QVedKjg, and verify 
 
 Cautions: What rewards are on offer now, and how much, is not stated officially. A past official campaign (2024) gave referral “stars” (up to 3 levels: 100, 50 and 25 stars per person) that could be exchanged for airdrops. Where the invite code is entered and whether the new user gets anything are not confirmed. PRAI has fallen from its May 2025 high of about $0.096 to about $0.0008 as of Oct 2026. It handles your face data, so check its privacy terms first
 
+### JrKripto (JR)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/jrkripto/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: No; Public operator: With conditions
+- Last checked: 2026-10
+- Official URL: https://jrkripto.com/en
+- Referral link (maintainer's own referral; not covered by the content license): https://jrkripto.com/r/JR-9C9T57
+- Referral code (maintainer's own): JR-9C9T57
+
+The mobile app of JrKripto, a Turkish crypto news, analysis and price-tracking site whose founder also runs the stock site JrHisse. Tap once a day in the app and JR points accrue over the next 24 hours. Sign up with an invite code and verify your email to get a 50 JR bonus
+
+What you get: JR points every day (50 JR sign-up bonus)
+
+What you need: Sign up via the invite link and verify your email address (no ID needed). Then tap once a day in the app (confirmed usable from Japan in Oct 2026, first-hand)
+
+Cautions: The invite page itself says “JR is an in-app point; it cannot be sold or transferred.” As of October 2026 there is no way to cash it out, so any value depends on a possible future use. Points only accrue if you tap every day. The Google Play package name is “com.yourcompany.jrkripto”, which looks like an unchanged template name
+
 ## Essays
 
 ### Universal high income: who pays?
@@ -855,7 +876,7 @@ The GoodDollar wallet: the web and React Native app where people claim their dai
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-10-24
+- Last commit: 2026-10-28
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s
