@@ -1,6 +1,7 @@
 // Usage: node brand/x/infographics/render.js [name ...]
 //   -> brand/x/infographics/{name}-{lang}.png (1080x1350, 4:5 portrait for the X feed)
 //   With no args every infographic in GRAPHICS is rendered. Example: node brand/x/infographics/render.js verify-5
+//   It fails if anything overflows the frame; ALLOW_OVERFLOW=1 captures anyway (for debugging the layout).
 // X (@FreeLunchLab) posts only; not part of the site (outside public/). Chrome path can be overridden with CHROME.
 // To add an infographic: add an entry to GRAPHICS that returns { body, css } per language; the shared frame
 // (night sky, title, footer, fonts) is handled by frame().
@@ -66,7 +67,7 @@ const bento = `
 const BASE_CSS = `
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:${W}px;height:${H}px;overflow:hidden}
-body{position:relative;color:#EEF1FF;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;
+body{position:relative;color:#EEF1FF;font-family:"GBreve","Zen Kaku Gothic New",sans-serif;font-weight:700;
   background:radial-gradient(70% 55% at 92% 0%,#3B2A86 0%,transparent 60%),radial-gradient(70% 50% at 0% 100%,#0F3B5C 0%,transparent 60%),linear-gradient(180deg,#0A0F24,#121741)}
 svg.sky{position:absolute;inset:0}
 .page{position:absolute;inset:0;padding:44px 60px 30px;display:flex;flex-direction:column}
@@ -185,6 +186,90 @@ h1{font-size:${ja ? 62 : 66}px}
 `,
     };
   },
+
+  // Basic income timeline. Years and type come from TIMELINE in src/data.js; each line is condensed from that
+  // item's place / paid / result fields (nothing added beyond the data).
+  timeline: lang => {
+    const ja = lang === 'ja';
+    const L = T[lang];
+    const rows = [
+      { id: 'mincome',
+        place: ja ? 'カナダ・ドーフィン' : 'Dauphin, Canada',
+        what: ja ? '最低所得保障の実験 Mincome が始まる' : 'Mincome experiment: a guaranteed income floor',
+        res: ja ? '入院率8.5%減と報告（のちに異論も）' : '8.5% fewer hospitalisations reported (disputed)' },
+      { id: 'alaska',
+        place: ja ? 'アメリカ・アラスカ州' : 'Alaska, USA',
+        what: ja ? '州の基金から住民に毎年配当' : 'A yearly state-fund dividend for residents',
+        res: ja ? '最初の配当は1人1,000ドル' : 'The first one: $1,000 each' },
+      { id: 'namibia',
+        place: ja ? 'ナミビア・オチヴェロ' : 'Otjivero, Namibia',
+        what: ja ? '60歳未満の全員に月100ナミビア・ドル' : 'N$100 a month to everyone under 60',
+        res: ja ? '子どもの栄養改善を報告（推進側の評価）' : 'Better child nutrition (advocates’ report)' },
+      { id: 'finland',
+        place: ja ? 'フィンランド' : 'Finland',
+        what: ja ? '失業者2,000人に月560ユーロ' : '€560 a month to 2,000 unemployed people',
+        res: ja ? '就労効果は小さく、心の健康は改善' : 'Small job effect, better mental health' },
+      { id: 'g1',
+        place: ja ? '世界（フランス語圏中心）' : 'Worldwide (mostly French-speaking)',
+        what: ja ? 'Ğ1：メンバー全員に毎日の配当' : 'Ğ1: a daily dividend for every member',
+        res: ja ? '2017年3月8日、59人で開始' : 'Launched 8 March 2017 with 59 members' },
+      { id: 'stockton',
+        place: ja ? 'アメリカ・ストックトン' : 'Stockton, California',
+        what: ja ? '住民125人に月500ドルを2年間' : '$500 a month for 2 years to 125 residents',
+        res: ja ? 'フルタイム就労への移行が対照群の2倍超' : 'Full-time work at over 2× the control rate' },
+      { id: 'pilotprojekt',
+        place: ja ? 'ドイツ' : 'Germany',
+        what: ja ? '約120人に月1,200ユーロを3年間' : '€1,200 a month for 3 years to about 120 people',
+        res: ja ? '労働時間は目立って減らず、心の健康が改善' : 'Work hours not cut much; mental health improved' },
+      { id: 'wld-end',
+        place: ja ? '世界（World ID）' : 'Worldwide (World ID)',
+        what: ja ? 'World ID 認証者への毎月の WLD エアドロップ' : 'Monthly WLD airdrops for verified people',
+        res: ja ? '2026年6月1日に新規・更新を停止' : 'No new or renewed cycles from 1 June 2026' },
+    ];
+    const TL = require('../../../src/data.js').TIMELINE;
+    const COLOR = { gov: '#FFD66B', ngo: '#8FB8FF', private: '#8FB8FF', crypto: '#6CF0B0' };
+    const items = rows.map(r => {
+      const t = TL.find(x => x.id === r.id);
+      if (!t) throw new Error(`timeline item missing: ${r.id}`);
+      const [from, to] = t.years.split('–');
+      const tail = to === undefined ? '' : to === '' ? (ja ? '〜現在' : '–now') : `–${to.slice(2)}`;
+      const c = COLOR[t.type];
+      return `
+  <div class="item" style="--c:${c}">
+    <p class="yr">${from}${tail ? `<small>${tail}</small>` : ''}</p>
+    <span class="dot"></span>
+    <div class="c">
+      <p class="pl"><svg width="22" height="28" viewBox="0 0 22 28"><path d="M11 27 C11 27 2 16 2 10.5 a9 9 0 0 1 18 0 C20 16 11 27 11 27 Z" fill="${c}"/><circle cx="11" cy="10.5" r="3.6" fill="#141A3A"/></svg>${esc(r.place)}</p>
+      <p class="what">${esc(r.what)}</p>
+      <p class="res"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M3 11 H17 M11 5 L17 11 L11 17" stroke="#FFE7A3" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>${esc(r.res)}</p>
+    </div>
+  </div>`;
+    }).join('');
+    const legend = [['gov', L.tlGov], ['ngo', L.tlNgo], ['crypto', L.tlCrypto]]
+      .map(([k, label]) => `<span><i style="background:${COLOR[k]}"></i>${esc(label)}</span>`).join('');
+    return {
+      title: ja ? 'ベーシックインカム<br>実験の<em>半世紀</em>' : '<em>Half a century</em> of<br>basic income experiments',
+      sub: ja ? 'カナダの小さな町から、スマホのアプリまで。' : 'From a Canadian town to an app on your phone.',
+      body: `<p class="legend">${legend}</p><div class="tl">${items}</div>`,
+      css: `
+h1{font-size:${ja ? 64 : 52}px}
+.legend{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px 28px;font-size:26px;line-height:1.2;color:#C9D0F0}
+.legend span{display:inline-flex;align-items:center;gap:10px}
+.legend i{width:20px;height:20px;border-radius:50%}
+.tl{position:relative;margin-top:24px;margin-bottom:16px;display:flex;flex-direction:column;gap:12px}
+.tl::before{content:"";position:absolute;left:191px;top:14px;bottom:40px;width:6px;border-radius:3px;background:linear-gradient(180deg,#FFD66B,#8FB8FF 55%,#6CF0B0)}
+.item{position:relative;display:grid;grid-template-columns:166px 56px 1fr;align-items:start}
+.yr{text-align:right;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:44px;line-height:1;color:var(--c);padding-top:2px}
+.yr small{display:block;margin-top:6px;font-family:"Zen Kaku Gothic New",sans-serif;white-space:nowrap;font-weight:700;font-size:26px;color:#A9B2D8}
+.dot{justify-self:center;margin-top:8px;width:30px;height:30px;border-radius:50%;background:var(--c);border:6px solid #10153A;box-shadow:0 0 0 3px var(--c),0 0 18px var(--c)}
+.c{min-width:0}
+.pl{display:flex;align-items:center;gap:10px;font-size:30px;line-height:1.2;font-weight:900;color:#FFFFFF}
+.pl svg,.res svg{flex:none}
+.what{margin-top:2px;font-size:27px;line-height:1.26;font-weight:500;color:#C9D0F0;white-space:nowrap}
+.res{display:flex;align-items:center;gap:9px;font-size:26px;line-height:1.26;color:#FFE7A3;white-space:nowrap}
+`,
+    };
+  },
 };
 
 // Screenshots go through the DevTools protocol, not `chrome --screenshot`: the one-shot CLI capture can fire before
@@ -194,6 +279,7 @@ const { spawn } = require('child_process');
 async function launch() {
   const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'ig-chrome-'));
   const proc = spawn(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--force-device-scale-factor=1',
+    '--disable-background-timer-throttling', '--disable-renderer-backgrounding', '--disable-backgrounding-occluded-windows',
     '--remote-debugging-port=0', `--user-data-dir=${profile}`, `--window-size=${W},${H}`, 'about:blank'], { stdio: ['ignore', 'ignore', 'pipe'] });
   const wsUrl = await new Promise((ok, ng) => {
     let buf = '';
@@ -210,16 +296,21 @@ async function launch() {
     if (m.id && pending.has(m.id)) { const [ok, ng] = pending.get(m.id); pending.delete(m.id); m.error ? ng(new Error(m.error.message)) : ok(m.result); }
     else if (m.method) for (const w of waiters.splice(0)) w.method === m.method ? w.ok(m.params) : waiters.push(w);
   };
-  const send = (method, params = {}) => new Promise((ok, ng) => { pending.set(++id, [ok, ng]); ws.send(JSON.stringify({ id, method, params })); });
-  const once = method => new Promise(ok => waiters.push({ method, ok }));
+  // every wait has a timeout so a stuck page fails loudly instead of hanging
+  const timed = (p, what) => Promise.race([p, new Promise((_, ng) => setTimeout(() => ng(new Error(`timed out: ${what}`)), 30000))]);
+  const send = (method, params = {}) => timed(new Promise((ok, ng) => { pending.set(++id, [ok, ng]); ws.send(JSON.stringify({ id, method, params })); }), method);
+  const once = method => timed(new Promise(ok => waiters.push({ method, ok })), method);
   const close = async () => {
     ws.close();
-    await new Promise(ok => { proc.once('exit', ok); proc.kill(); });
+    if (proc.exitCode === null && proc.signalCode === null) {
+      await new Promise(ok => { proc.once('exit', ok); proc.kill(); setTimeout(() => { proc.kill('SIGKILL'); ok(); }, 5000); });
+    }
     fs.rmSync(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
   };
   return { send, once, close };
 }
 
+const log = (...a) => process.env.DEBUG && console.error(new Date().toISOString().slice(11, 23), ...a);
 async function shot(cdp, name, html) {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'ig-'));
   const f = path.join(tmp, `${name}.html`);
@@ -230,17 +321,18 @@ async function shot(cdp, name, html) {
   const loaded = cdp.once('Page.loadEventFired');
   await cdp.send('Page.navigate', { url: `file://${f}` });
   await loaded;
+  log(name, 'loaded');
   const { result } = await cdp.send('Runtime.evaluate', {
     awaitPromise: true, returnByValue: true,
     expression: `document.fonts.ready.then(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(() => {
-      const over = [...document.querySelectorAll('.page *')].filter(e => { const b = e.getBoundingClientRect(); return b.width && (b.right > ${W} + .5 || b.bottom > ${H} + .5); }).map(e => e.className || e.tagName);
+      const over = [...document.querySelectorAll('.page *')].filter(e => { const b = e.getBoundingClientRect(); return b.width && (b.right > ${W} + .5 || b.bottom > ${H} + .5); }).map(e => (e.getAttribute('class') || e.tagName) + '@' + Math.round(e.getBoundingClientRect().bottom));
       r({ fonts: [...document.fonts].filter(x => x.status !== 'loaded' && x.status !== 'unloaded').length, over, w: innerWidth, h: innerHeight });
     }))))`,
   });
   const v = result.value;
   if (v.w !== W || v.h !== H) throw new Error(`${name}: viewport ${v.w}x${v.h}, expected ${W}x${H}`);
   if (v.fonts) throw new Error(`${name}: ${v.fonts} font(s) failed to load`);
-  if (v.over.length) throw new Error(`${name}: overflows the ${W}x${H} frame: ${[...new Set(v.over)].join(', ')}`);
+  if (v.over.length && !process.env.ALLOW_OVERFLOW) throw new Error(`${name}: overflows the ${W}x${H} frame: ${[...new Set(v.over)].join(', ')}`);
   const { data } = await cdp.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false, clip: { x: 0, y: 0, width: W, height: H, scale: 1 } });
   fs.writeFileSync(out, Buffer.from(data, 'base64'));
   fs.rmSync(tmp, { recursive: true, force: true });
@@ -250,9 +342,15 @@ async function shot(cdp, name, html) {
 (async () => {
   const names = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(GRAPHICS);
   for (const name of names) if (!GRAPHICS[name]) throw new Error(`unknown infographic: ${name}`);
-  const cdp = await launch();
-  try {
-    await cdp.send('Page.enable');
-    for (const name of names) for (const lang of ['ja', 'en']) await shot(cdp, `${name}-${lang}`, frame(lang, GRAPHICS[name](lang)));
-  } finally { await cdp.close(); }
+  // a fresh Chrome per image: reusing one tab for several captures could stall on later frames
+  for (const name of names) for (const lang of ['ja', 'en']) {
+    const html = frame(lang, GRAPHICS[name](lang));
+    log(name, 'launch');
+    const cdp = await launch();
+    log(name, 'connected');
+    try {
+      await cdp.send('Page.enable');
+      await shot(cdp, `${name}-${lang}`, html);
+    } finally { await cdp.close(); log(name, 'closed'); }
+  }
 })().catch(e => { console.error(e); process.exit(1); });
