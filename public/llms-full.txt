@@ -317,6 +317,25 @@ What you need: Register with your email and confirm your participation for each 
 
 Cautions: A 2020 statement from the organisation said anyone can take part regardless of age or where they live, but current rules for people outside Germany and payouts abroad are not confirmed. The site is in German. It's a lottery, so most entrants receive nothing. Winnings may be taxed in your country
 
+### UBI4ALL
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/ubi4all/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification, ID document KYC (optional)
+- Trust check: Cash out: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://www.ubi4all.org/
+
+A free raffle run by a European non-profit founded in 2020 (legal entity: “EBI Politische Teilhabe in Europa gemeinnützige UG” in Germany). Each time donations reach €9,600, a basic income worth €9,600 in total is raffled off, no strings attached (real cash, not crypto). The monthly amount and duration depend on the income level of the winner’s country: high-income OECD countries such as Japan get €800 a month for 1 year, low-income countries €160 a month for 5 years. Raffles are held whenever the pot is funded; 10 so far (Oct 2026). The 9th was held live at the BIEN Congress in Brazil in Aug 2025. The team is unpaid. There is no referral link or referral bonus
+
+What you get: €9,600 if you win (in Japan: €800 a month for a year)
+
+What you need: Create a free account on the official site and register for each raffle (there is also an option to confirm for all raffles at once). Monthly donors (“UBI Beavers”, from €1) are entered automatically. You must be 16 or older, your name, date of birth and country must match your ID, and winners are verified with their ID. Eligibility is per the official site (it is open worldwide and lists Japan as an example country, but sign-up from Japan has not yet been tested by this site)
+
+Cautions: It’s a raffle, so the odds are low and depend on how many people take part. Raffles only happen when donations fill the €9,600 pot, so the timing is irregular. Unless you are a UBI Beaver, you have to register for each raffle. Residents of the previous winner’s country are excluded from the next draw. Payouts go to SEPA bank accounts; other methods have their fees taken from the prize. How the prize is taxed depends on your country
+
 ### Ğ1 (June)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
