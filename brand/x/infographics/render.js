@@ -14,7 +14,7 @@ const DIR = __dirname;
 const W = 1080, H = 1350;
 const CHROME = process.env.CHROME || '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary';
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
-const curl = (url, enc) => execFileSync('curl', ['-sfL', '--retry', '3', '-A', UA, url], { encoding: enc, maxBuffer: 64 << 20 });
+const curl = (url, enc) => execFileSync('curl', ['-sfL', '--retry', '5', '--retry-delay', '1', '--retry-connrefused', '--retry-all-errors', '-A', UA, url], { encoding: enc, maxBuffer: 64 << 20 });
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 // Same approach as og.js: subset Google Fonts to the exact characters and inline them as data: URIs,
@@ -187,20 +187,72 @@ h1{font-size:${ja ? 62 : 66}px}
   },
 };
 
-function shot(name, html) {
+// Screenshots go through the DevTools protocol, not `chrome --screenshot`: the one-shot CLI capture can fire before
+// every raster tile is painted (it once left a white block over the footer). Here we fix the viewport, wait for
+// load + document.fonts.ready + two animation frames, check that nothing overflows, then capture with an explicit clip.
+const { spawn } = require('child_process');
+async function launch() {
+  const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'ig-chrome-'));
+  const proc = spawn(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--force-device-scale-factor=1',
+    '--remote-debugging-port=0', `--user-data-dir=${profile}`, `--window-size=${W},${H}`, 'about:blank'], { stdio: ['ignore', 'ignore', 'pipe'] });
+  const wsUrl = await new Promise((ok, ng) => {
+    let buf = '';
+    const t = setTimeout(() => ng(new Error('Chrome did not start')), 20000);
+    proc.stderr.on('data', d => { buf += d; const m = buf.match(/DevTools listening on (ws:\/\/\S+)/); if (m) { clearTimeout(t); ok(m[1]); } });
+  });
+  const port = new URL(wsUrl).port;
+  const page = (await (await fetch(`http://127.0.0.1:${port}/json/list`)).json()).find(t => t.type === 'page');
+  const ws = new WebSocket(page.webSocketDebuggerUrl);
+  await new Promise((ok, ng) => { ws.onopen = ok; ws.onerror = ng; });
+  let id = 0; const pending = new Map(), waiters = [];
+  ws.onmessage = ev => {
+    const m = JSON.parse(ev.data);
+    if (m.id && pending.has(m.id)) { const [ok, ng] = pending.get(m.id); pending.delete(m.id); m.error ? ng(new Error(m.error.message)) : ok(m.result); }
+    else if (m.method) for (const w of waiters.splice(0)) w.method === m.method ? w.ok(m.params) : waiters.push(w);
+  };
+  const send = (method, params = {}) => new Promise((ok, ng) => { pending.set(++id, [ok, ng]); ws.send(JSON.stringify({ id, method, params })); });
+  const once = method => new Promise(ok => waiters.push({ method, ok }));
+  const close = async () => {
+    ws.close();
+    await new Promise(ok => { proc.once('exit', ok); proc.kill(); });
+    fs.rmSync(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
+  };
+  return { send, once, close };
+}
+
+async function shot(cdp, name, html) {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'ig-'));
   const f = path.join(tmp, `${name}.html`);
   fs.writeFileSync(f, html);
   if (process.env.KEEP_HTML) fs.writeFileSync(path.join(DIR, `${name}.html`), html);
   const out = path.join(DIR, `${name}.png`);
-  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--virtual-time-budget=10000', '--force-device-scale-factor=1',
-    `--window-size=${W},${H}`, `--screenshot=${out}`, `file://${f}`], { stdio: 'ignore' });
+  await cdp.send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 1, mobile: false });
+  const loaded = cdp.once('Page.loadEventFired');
+  await cdp.send('Page.navigate', { url: `file://${f}` });
+  await loaded;
+  const { result } = await cdp.send('Runtime.evaluate', {
+    awaitPromise: true, returnByValue: true,
+    expression: `document.fonts.ready.then(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(() => {
+      const over = [...document.querySelectorAll('.page *')].filter(e => { const b = e.getBoundingClientRect(); return b.width && (b.right > ${W} + .5 || b.bottom > ${H} + .5); }).map(e => e.className || e.tagName);
+      r({ fonts: [...document.fonts].filter(x => x.status !== 'loaded' && x.status !== 'unloaded').length, over, w: innerWidth, h: innerHeight });
+    }))))`,
+  });
+  const v = result.value;
+  if (v.w !== W || v.h !== H) throw new Error(`${name}: viewport ${v.w}x${v.h}, expected ${W}x${H}`);
+  if (v.fonts) throw new Error(`${name}: ${v.fonts} font(s) failed to load`);
+  if (v.over.length) throw new Error(`${name}: overflows the ${W}x${H} frame: ${[...new Set(v.over)].join(', ')}`);
+  const { data } = await cdp.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false, clip: { x: 0, y: 0, width: W, height: H, scale: 1 } });
+  fs.writeFileSync(out, Buffer.from(data, 'base64'));
   fs.rmSync(tmp, { recursive: true, force: true });
   console.log(out);
 }
 
-const names = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(GRAPHICS);
-for (const name of names) {
-  if (!GRAPHICS[name]) throw new Error(`unknown infographic: ${name}`);
-  for (const lang of ['ja', 'en']) shot(`${name}-${lang}`, frame(lang, GRAPHICS[name](lang)));
-}
+(async () => {
+  const names = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(GRAPHICS);
+  for (const name of names) if (!GRAPHICS[name]) throw new Error(`unknown infographic: ${name}`);
+  const cdp = await launch();
+  try {
+    await cdp.send('Page.enable');
+    for (const name of names) for (const lang of ['ja', 'en']) await shot(cdp, `${name}-${lang}`, frame(lang, GRAPHICS[name](lang)));
+  } finally { await cdp.close(); }
+})().catch(e => { console.error(e); process.exit(1); });
