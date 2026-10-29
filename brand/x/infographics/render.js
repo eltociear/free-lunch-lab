@@ -1,10 +1,12 @@
 // Usage: node brand/x/infographics/render.js [name ...]
-//   -> brand/x/infographics/{name}-{lang}.png (1080x1350, 4:5 portrait for the X feed)
+//   -> brand/x/infographics/{name}-{lang}.png (default 1080x1350, 4:5 portrait for the X feed)
 //   With no args every infographic in GRAPHICS is rendered. Example: node brand/x/infographics/render.js verify-5
 //   It fails if anything overflows the frame; ALLOW_OVERFLOW=1 captures anyway (for debugging the layout).
 // X (@FreeLunchLab) posts only; not part of the site (outside public/). Chrome path can be overridden with CHROME.
-// To add an infographic: add an entry to GRAPHICS that returns { body, css } per language; the shared frame
-// (night sky, title, footer, fonts) is handled by frame().
+// To add an infographic: add an entry to GRAPHICS. Either a function lang => { title, sub, body, css } (1080x1350,
+// ja + en, standard frame: night sky, title, footer, fonts), or an object { w, h, langs, safe, build } where build
+// returns { body, css, bare: true, moon: [cx, cy, r] } to lay out the whole page itself. `safe: [w, h]` checks that
+// every element outside .deco stays inside a centred box of that size (for sites that crop, e.g. note.com).
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
@@ -12,7 +14,7 @@ const { execFileSync } = require('child_process');
 const { SERVICES, T } = require('../../../src/data.js');
 
 const DIR = __dirname;
-const W = 1080, H = 1350;
+const W = 1080, H = 1350; // defaults
 const CHROME = process.env.CHROME || '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary';
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const curl = (url, enc) => execFileSync('curl', ['-sfL', '--retry', '5', '--retry-delay', '1', '--retry-connrefused', '--retry-all-errors', '-A', UA, url], { encoding: enc, maxBuffer: 64 << 20 });
@@ -41,10 +43,10 @@ function svc(id, lang) {
   return (lang === 'ja' ? s.name : s.nameEn || s.name).replace(/\s*[（(].*[)）]\s*$/, '');
 }
 
-const STARS = n => {
+const STARS = (n, w = W, h = H) => {
   let s = 11, out = '';
   const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
-  for (let i = 0; i < n; i++) out += `<circle cx="${(r() * W).toFixed(1)}" cy="${(r() * H).toFixed(1)}" r="${(0.6 + r() * 1.5).toFixed(2)}" fill="${r() > .7 ? '#FFF7D6' : '#FFFFFF'}" opacity="${(0.35 + r() * 0.5).toFixed(2)}"/>`;
+  for (let i = 0; i < n; i++) out += `<circle cx="${(r() * w).toFixed(1)}" cy="${(r() * h).toFixed(1)}" r="${(0.6 + r() * 1.5).toFixed(2)}" fill="${r() > .7 ? '#FFF7D6' : '#FFFFFF'}" opacity="${(0.35 + r() * 0.5).toFixed(2)}"/>`;
   return out;
 };
 const moon = (cx, cy, r) => `
@@ -64,7 +66,7 @@ const bento = `
 <line x1="128" y1="6" x2="128" y2="162" stroke="#141A3A" stroke-width="9"/><line x1="132" y1="84" x2="234" y2="84" stroke="#141A3A" stroke-width="9"/>
 <rect x="0" y="0" width="240" height="168" rx="26" fill="none" stroke="url(#grad)" stroke-width="12"/>`;
 
-const BASE_CSS = `
+const BASE_CSS = (W, H) => `
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:${W}px;height:${H}px;overflow:hidden}
 body{position:relative;color:#EEF1FF;font-family:"GBreve","Zen Kaku Gothic New",sans-serif;font-weight:700;
@@ -83,20 +85,20 @@ h1 em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90
 .handle{margin-left:auto;font-size:30px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.16);padding:8px 22px;border-radius:999px}
 `;
 
-function frame(lang, { title, sub, body, css }) {
+function frame(lang, { title = '', sub = '', body, css, bare, moon: m = [966, 112, 50] }, W = 1080, H = 1350) {
   const L = T[lang];
   const wordmark = lang === 'ja' ? esc(L.brandPlain) : 'Free <em>Lunch</em> Lab';
   const text = [title, sub, body, wordmark, L.tagline, '@FreeLunchLab'].join('');
   return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><style>
 ${inlineFonts(text)}
-${BASE_CSS}
+${BASE_CSS(W, H)}
 ${css}
 </style></head><body>
 <svg class="sky" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
   <defs><linearGradient id="grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD66B"/><stop offset="1" stop-color="#6CF0B0"/></linearGradient></defs>
-  <g opacity=".8">${STARS(110)}</g>${moon(966, 112, 50)}
+  <g opacity=".8">${STARS(Math.round(110 * W * H / 1458000), W, H)}</g>${moon(...m)}
 </svg>
-<div class="page">
+<div class="page">${bare ? body : `
   <h1>${title}</h1>
   <p class="sub">${esc(sub)}</p>
   ${body}
@@ -104,7 +106,7 @@ ${css}
     <svg width="84" height="59" viewBox="-8 -8 256 184">${bento}</svg>
     <div><p class="wm ${lang}">${wordmark}</p><p class="tag">${esc(L.tagline)}</p></div>
     <p class="handle">@FreeLunchLab</p>
-  </div>
+  </div>`}
 </div>
 </body></html>`;
 }
@@ -270,13 +272,55 @@ h1{font-size:${ja ? 64 : 52}px}
 `,
     };
   },
+  // note.com header (見出し画像) for the article on Musk's "universal high income". note crops the edges in some
+  // views, so all text sits inside a centred 1100x560 safe area; only the .deco visual and the sky may bleed out.
+  'note-uhi': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => ({
+      bare: true,
+      moon: [1192, 92, 44],
+      body: `
+<div class="wrap">
+  <p class="kicker">イーロン・マスクが語る未来</p>
+  <h1 class="hero">ユニバーサル<em>“ハイ”</em>インカム</h1>
+  <p class="ask">で、<b>誰が払うの？</b></p>
+</div>
+<svg class="deco" width="300" height="330" viewBox="0 0 300 330">
+  <path d="M310 46 H150 a40 40 0 0 0 -40 40 V118" fill="none" stroke="url(#grad)" stroke-width="58" stroke-linejoin="round"/>
+  <path d="M310 46 H150 a40 40 0 0 0 -40 40 V118" fill="none" stroke="#1A2050" stroke-width="40" stroke-linejoin="round"/>
+  <rect x="68" y="112" width="84" height="22" rx="7" fill="url(#grad)"/>
+  <g transform="translate(110 196)"><circle r="40" fill="#FFD66B"/><circle r="31" fill="none" stroke="#F0B93A" stroke-width="5"/>
+    <text y="17" text-anchor="middle" font-family="Dela Gothic One" font-size="46" fill="#7A5310">¥</text></g>
+  <g transform="translate(96 286) rotate(-14)"><ellipse rx="34" ry="11" fill="#F0B93A"/><ellipse rx="34" ry="11" cy="-5" fill="#FFD66B"/></g>
+  <text x="196" y="300" font-family="Dela Gothic One" font-size="124" fill="url(#grad)">?</text>
+</svg>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+      css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:96px;width:860px}
+.kicker{display:inline-block;font-size:32px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px}
+.hero{margin-top:34px;font-size:80px;line-height:1.1;padding-right:0;white-space:nowrap}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ask{margin-top:22px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:124px;line-height:1.1;color:#FFFFFF;text-shadow:0 6px 40px rgba(120,100,255,.45);white-space:nowrap}
+.ask b{font-weight:400;color:#FFD66B}
+.deco{position:absolute;right:0;top:300px}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+    }),
+  },
 };
 
 // Screenshots go through the DevTools protocol, not `chrome --screenshot`: the one-shot CLI capture can fire before
 // every raster tile is painted (it once left a white block over the footer). Here we fix the viewport, wait for
 // load + document.fonts.ready + two animation frames, check that nothing overflows, then capture with an explicit clip.
 const { spawn } = require('child_process');
-async function launch() {
+async function launch(W, H) {
   const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'ig-chrome-'));
   const proc = spawn(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--force-device-scale-factor=1',
     '--disable-background-timer-throttling', '--disable-renderer-backgrounding', '--disable-backgrounding-occluded-windows',
@@ -311,8 +355,11 @@ async function launch() {
 }
 
 const log = (...a) => process.env.DEBUG && console.error(new Date().toISOString().slice(11, 23), ...a);
-async function shot(cdp, name, html) {
+async function shot(cdp, name, html, W, H, safe) {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'ig-'));
+  try { await capture(cdp, name, html, W, H, safe, tmp); } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
+}
+async function capture(cdp, name, html, W, H, safe, tmp) {
   const f = path.join(tmp, `${name}.html`);
   fs.writeFileSync(f, html);
   if (process.env.KEEP_HTML) fs.writeFileSync(path.join(DIR, `${name}.html`), html);
@@ -325,17 +372,19 @@ async function shot(cdp, name, html) {
   const { result } = await cdp.send('Runtime.evaluate', {
     awaitPromise: true, returnByValue: true,
     expression: `document.fonts.ready.then(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(() => {
-      const over = [...document.querySelectorAll('.page *')].filter(e => { const b = e.getBoundingClientRect(); return b.width && (b.right > ${W} + .5 || b.bottom > ${H} + .5); }).map(e => (e.getAttribute('class') || e.tagName) + '@' + Math.round(e.getBoundingClientRect().bottom));
-      r({ fonts: [...document.fonts].filter(x => x.status !== 'loaded' && x.status !== 'unloaded').length, over, w: innerWidth, h: innerHeight });
+      const over = [...document.querySelectorAll('.page *')].filter(e => !e.closest('.deco')).filter(e => { const b = e.getBoundingClientRect(); return b.width && (b.right > ${W} + .5 || b.bottom > ${H} + .5); }).map(e => (e.getAttribute('class') || e.tagName) + '@' + Math.round(e.getBoundingClientRect().bottom));
+      const sx = (${W} - ${safe ? safe[0] : W}) / 2, sy = (${H} - ${safe ? safe[1] : H}) / 2;
+      const unsafe = [...document.querySelectorAll('.page *')].filter(e => !e.closest('.deco')).filter(e => { const b = e.getBoundingClientRect(); return b.width && (b.left < sx - .5 || b.top < sy - .5 || b.right > ${W} - sx + .5 || b.bottom > ${H} - sy + .5); }).map(e => (e.getAttribute('class') || e.tagName) + '@' + [b => b.left, b => b.top, b => b.right, b => b.bottom].map(f => Math.round(f(e.getBoundingClientRect()))).join(','));
+      r({ unsafe, fonts: [...document.fonts].filter(x => x.status !== 'loaded' && x.status !== 'unloaded').length, over, w: innerWidth, h: innerHeight });
     }))))`,
   });
   const v = result.value;
   if (v.w !== W || v.h !== H) throw new Error(`${name}: viewport ${v.w}x${v.h}, expected ${W}x${H}`);
   if (v.fonts) throw new Error(`${name}: ${v.fonts} font(s) failed to load`);
   if (v.over.length && !process.env.ALLOW_OVERFLOW) throw new Error(`${name}: overflows the ${W}x${H} frame: ${[...new Set(v.over)].join(', ')}`);
+  if (v.unsafe.length && !process.env.ALLOW_OVERFLOW) throw new Error(`${name}: outside the ${safe.join('x')} safe area: ${[...new Set(v.unsafe)].join(', ')}`);
   const { data } = await cdp.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false, clip: { x: 0, y: 0, width: W, height: H, scale: 1 } });
   fs.writeFileSync(out, Buffer.from(data, 'base64'));
-  fs.rmSync(tmp, { recursive: true, force: true });
   console.log(out);
 }
 
@@ -343,14 +392,18 @@ async function shot(cdp, name, html) {
   const names = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(GRAPHICS);
   for (const name of names) if (!GRAPHICS[name]) throw new Error(`unknown infographic: ${name}`);
   // a fresh Chrome per image: reusing one tab for several captures could stall on later frames
-  for (const name of names) for (const lang of ['ja', 'en']) {
-    const html = frame(lang, GRAPHICS[name](lang));
+  for (const name of names) {
+    const g = typeof GRAPHICS[name] === 'function' ? { build: GRAPHICS[name] } : GRAPHICS[name];
+    const { w = W, h = H, langs = ['ja', 'en'], safe = null } = g;
+    for (const lang of langs) {
+    const html = frame(lang, g.build(lang), w, h);
     log(name, 'launch');
-    const cdp = await launch();
+    const cdp = await launch(w, h);
     log(name, 'connected');
     try {
       await cdp.send('Page.enable');
-      await shot(cdp, `${name}-${lang}`, html);
+      await shot(cdp, `${name}-${lang}`, html, w, h, safe);
     } finally { await cdp.close(); log(name, 'closed'); }
+    }
   }
 })().catch(e => { console.error(e); process.exit(1); });
