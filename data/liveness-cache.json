@@ -1,0 +1,174 @@
+{
+ "checkedOn": "2026-10-29T01:56:40.028Z",
+ "services": {
+  "gooddollar": {
+   "code": 200,
+   "url": "https://www.gooddollar.org/",
+   "checked": "2026-10"
+  },
+  "circles": {
+   "code": 200,
+   "url": "https://app.gnosis.io/",
+   "checked": "2026-10"
+  },
+  "mepass": {
+   "code": 200,
+   "url": "https://www.mec.me/",
+   "checked": "2026-10"
+  },
+  "biomatrix": {
+   "code": 200,
+   "url": "https://biomatrix.ai/ja/",
+   "checked": "2026-10"
+  },
+  "bitflyer": {
+   "code": 403,
+   "url": "https://bitflyer.com/ja-jp/"
+  },
+  "coincheck": {
+   "code": 200,
+   "url": "https://coincheck.com/ja/"
+  },
+  "rakutencard": {
+   "code": 200,
+   "url": "https://www.rakuten-card.co.jp/"
+  },
+  "rakutenbank": {
+   "code": 200,
+   "url": "https://www.rakuten-bank.co.jp/campaign/referral.html"
+  },
+  "hapitas": {
+   "code": 200,
+   "url": "https://hapitas.jp/",
+   "checked": "2026-10"
+  },
+  "moppy": {
+   "code": 200,
+   "url": "https://pc.moppy.jp/"
+  },
+  "pointincome": {
+   "code": 200,
+   "url": "https://pointi.jp/"
+  },
+  "wavee": {
+   "code": 200,
+   "url": "https://wavee.world/",
+   "checked": "2026-10"
+  },
+  "trima": {
+   "code": 200,
+   "url": "https://www.trip-mile.com/",
+   "checked": "2026-10"
+  },
+  "sweatcoin": {
+   "code": 200,
+   "url": "https://sweatco.in/",
+   "checked": "2026-10"
+  },
+  "grass": {
+   "code": 200,
+   "url": "https://www.grass.io/",
+   "checked": "2026-10"
+  },
+  "honeygain": {
+   "code": 200,
+   "url": "https://www.honeygain.com/",
+   "checked": "2026-10"
+  },
+  "pawns": {
+   "code": 200,
+   "url": "https://pawns.app/",
+   "checked": "2026-10"
+  },
+  "pinetwork": {
+   "code": 200,
+   "url": "https://minepi.com/",
+   "checked": "2026-10"
+  },
+  "deltakim": {
+   "code": 200,
+   "url": "https://www.delta.kim/",
+   "checked": "2026-10"
+  },
+  "interlink": {
+   "code": 200,
+   "url": "https://interlinklabs.ai/",
+   "checked": "2026-10"
+  },
+  "meingrundeinkommen": {
+   "code": 403,
+   "url": "https://www.mein-grundeinkommen.de/",
+   "checked": "2026-10"
+  },
+  "g1": {
+   "code": 200,
+   "url": "https://duniter.org/g1/",
+   "checked": "2026-10"
+  },
+  "palai": {
+   "code": 200,
+   "url": "https://palai.org/en",
+   "checked": "2026-10"
+  },
+  "dotare": {
+   "code": 200,
+   "url": "https://dotare.io/",
+   "checked": "2026-10"
+  },
+  "oro": {
+   "code": 200,
+   "url": "https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645",
+   "checked": "2026-10"
+  },
+  "axo": {
+   "code": 200,
+   "url": "https://world.org/ecosystem/app_8aeb55d57b7be834fb8d67e2f803d258",
+   "checked": "2026-10"
+  },
+  "aidac": {
+   "code": 200,
+   "url": "https://lp.ai-dac.com/",
+   "checked": "2026-10"
+  },
+  "ubiquitus": {
+   "code": 200,
+   "url": "https://www.ubiquitus.org/",
+   "checked": "2026-10"
+  },
+  "gradido": {
+   "code": 200,
+   "url": "https://gradido.net/en/",
+   "checked": "2026-10"
+  },
+  "wowapp": {
+   "code": 200,
+   "url": "https://www.wowapp.com/",
+   "checked": "2026-10"
+  },
+  "humad": {
+   "code": 200,
+   "url": "https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1",
+   "checked": "2026-10"
+  },
+  "billions": {
+   "code": 200,
+   "url": "https://billions.network/",
+   "checked": "2026-10"
+  },
+  "idena": {
+   "code": 200,
+   "url": "https://www.idena.io/",
+   "checked": "2026-10"
+  },
+  "rewardme": {
+   "code": 200,
+   "url": "https://reward.me/",
+   "checked": "2026-10"
+  },
+  "fheid": {
+   "code": 200,
+   "url": "https://www.privasea.ai/",
+   "checked": "2026-10"
+  }
+ }
+}
