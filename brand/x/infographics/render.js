@@ -318,6 +318,61 @@ h1{font-size:${ja ? 64 : 52}px}
 `,
     }),
   },
+  // note.com header for the article asking whether KABU& (前澤さんの「国民総株主」) is a basic income. Same 1100x560
+  // safe area as note-uhi; the five BI conditions are drawn as chips with SVG marks (no KABU& logo, text name only).
+  'note-kabuand': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => {
+      const mk = {
+        o: `<svg width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="22" r="16" fill="none" stroke="#6CF0B0" stroke-width="6"/></svg>`,
+        t: `<svg width="44" height="44" viewBox="0 0 44 44"><path d="M22 6 L39 36 H5 Z" fill="none" stroke="#FFD66B" stroke-width="6" stroke-linejoin="round"/></svg>`,
+        x: `<svg width="44" height="44" viewBox="0 0 44 44"><path d="M8 8 L36 36 M36 8 L8 36" stroke="#FF8A7A" stroke-width="6.5" stroke-linecap="round"/></svg>`,
+      };
+      const rows = [['定期的', 't'], ['現金', 'x'], ['個人単位', 'o'], ['誰でも', 'x'], ['条件なし', 'x']];
+      return {
+        bare: true,
+        moon: [1192, 92, 44],
+        body: `
+<div class="wrap">
+  <p class="kicker">前澤さんの「国民総株主」</p>
+  <h1 class="hero"><span class="l1">カブアンドは</span><span class="l2"><em>ベーシックインカム</em>か？</span></h1>
+  <div class="chk">
+    ${rows.map(([t, m]) => `<div class="chip ${m}">${mk[m]}<span>${t}</span></div>`).join('')}
+    <div class="score"><span>5条件中</span><b>1<small>つ</small></b></div>
+  </div>
+  <p class="sub2">電気代が株になる仕組みを、5つの条件で検証</p>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+        css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:72px;width:1060px}
+.kicker{display:inline-block;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px}
+.hero{margin-top:22px;padding-right:0;white-space:nowrap}
+.hero span{display:block}
+.hero .l1{font-size:62px;line-height:1.12}
+.hero .l2{margin-top:4px;font-size:86px;line-height:1.12}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chk{margin-top:28px;display:flex;align-items:stretch;gap:12px}
+.chip{width:150px;display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 0 12px;border-radius:20px;background:rgba(20,26,58,.72);border:2px solid rgba(207,214,255,.18)}
+.chip span{font-size:26px;line-height:1.1;color:#E3E8FF;white-space:nowrap}
+.chip.o{border-color:#6CF0B0;box-shadow:0 0 22px rgba(108,240,176,.35)}
+.chip.x span{color:#AEB6DA}
+.score{margin-left:12px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 10px}
+.score span{font-size:26px;line-height:1.1;color:#C9D0F0}
+.score b{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:76px;line-height:1;color:#FF8A7A}
+.score small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:30px;margin-left:4px;color:#FFFFFF}
+.sub2{margin-top:22px;font-size:28px;line-height:1.2;color:#C9D0F0;white-space:nowrap}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+      };
+    },
+  },
   // note.com profile header for 「不労所得で生きていきたい」. note shows roughly a centre crop on mobile, so every
   // text element stays inside a centred 1000x600 box (stricter than the 1400x600 desktop safe area); the constellation
   // icons, moon and glow are atmosphere and may sit outside it.
