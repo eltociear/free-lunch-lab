@@ -26,6 +26,7 @@ Referral links and codes on the site are the maintainer's own. **Pull requests m
 - Provide text in English at least. Other languages fall back to English; translations into Japanese, Simplified Chinese, Hindi, Spanish, German and Arabic are welcome.
 - Set `verify` from the service’s own documentation only (see README); mark a method `"optional": true` if it is not required, and leave the array empty if the method is not stated.
 - Set `checked` to the month you verified the entry against official sources, as `"YYYY-MM"` (e.g. `"2026-10"`). It is shown on the site as “Checked Oct 2026”, and the build fails if a visible entry lacks it. Update it only when you actually re-check the facts.
+- Keep entries short (measured on the Japanese text): `note` up to 150 characters, `caution` up to 200, `need` up to 100, `warning` up to 120; `node build.js` warns when an entry is longer.
 - Write facts, not hype. Date anything that changes (prices, user counts, campaign terms), e.g. "as of Oct 2026".
 - List your sources in the pull request description.
 

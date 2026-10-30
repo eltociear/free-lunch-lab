@@ -32,6 +32,10 @@ const fontsUrl = l => `https://fonts.googleapis.com/css2?${BASE_FONTS}&${LANG_FO
 const live = SERVICES.filter(s => s.ref || s.noRef); // 紹介リンクがあるもの（と紹介制度のない noRef）だけ表示
 // 表示するサービスには「最終確認月」（checked: "YYYY-MM"）が必須
 for (const s of live) if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(s.checked || '')) throw new Error(`${s.id}: checked ("YYYY-MM") is missing or invalid`);
+// 説明が長くなりすぎないように、ja の文字数が目安を超えたら警告する（ビルドは止めない）
+const TEXT_LIMITS = { note: 150, caution: 200, need: 100, warning: 120 };
+const tooLong = SERVICES.flatMap(s => Object.entries(TEXT_LIMITS).filter(([k, max]) => ((s.ja || {})[k] || '').length > max).map(([k, max]) => `${s.id}.ja.${k} (${s.ja[k].length} > ${max})`));
+if (tooLong.length) console.warn(`WARNING: service text over the length guideline: ${tooLong.join(', ')}`);
 // 確認月を言語に合わせて表示（en は Oct 2026、ほかは各言語の月名）
 function checkedLine(s, lang) {
   const [y, m] = s.checked.split('-').map(Number);
