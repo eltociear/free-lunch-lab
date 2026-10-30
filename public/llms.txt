@@ -56,6 +56,7 @@
 - [Mining Machine ($ORE)](https://neteru-nyukin.eltociear.workers.dev/services/miningmachine/): $ORE mining balance (free 24-hour sessions). A site where a “mining machine” in your browser builds up a $ORE balance (Passive apps; available in Japan and worldwide; verification: No verification)
 - [KABU&](https://neteru-nyukin.eltociear.workers.dev/services/kabuand/): Share vouchers based on what you pay for electricity, gas, mobile and more (used to apply for unlisted shares). A service from Kabu & Peace Inc., whose president and CEO is Yusaku Maezawa (Cashback sites; Japan only; verification: ID document KYC)
 - [Life AI Testnet](https://neteru-nyukin.eltociear.workers.dev/services/lifeai/): Testnet points (daily USDT draws; token and NFT rewards for top players). The Phase 1 testnet of Life AI, a healthcare AI project building its own chain on Avalanche (Passive apps; available in Japan and worldwide; verification: No verification)
+- [Refrax ($REFRAX)](https://neteru-nyukin.eltociear.workers.dev/services/refrax/): Pending $REFRAX points (no token yet). Season 0 quest rewards from Refrax, a project that presents itself as decentralized object storage coordinated on Solana (Passive apps; available in Japan and worldwide; verification: No verification)
 
 ## Guides
 

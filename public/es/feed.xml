@@ -8,6 +8,13 @@
     <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/es/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Añadido Refrax ($REFRAX)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/services/refrax/</link>
+      <guid isPermaLink="false">news-2026-10-30-8434916b5c8a</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Añadido Refrax ($REFRAX): Puntos $REFRAX pendientes (aún sin token)</description>
+    </item>
+    <item>
       <title>Añadida la testnet de Life AI</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/es/services/lifeai/</link>
       <guid isPermaLink="false">news-2026-10-30-02b5a6a9a1b8</guid>

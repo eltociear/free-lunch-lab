@@ -696,6 +696,29 @@ What you need: Log in through the referral link with X or another account and re
 
 Cautions: Points are not money. The campaign terms say the amount, timing and method of rewards are decided solely by the Life AI team, and that the campaign can be changed or cancelled at any time, so nothing is guaranteed. As of October 2026 there is no official tradable LIFE token, and the official site does not promise a token or an airdrop. The lifeai.io terms say Life Points have no cash value and that converting them may require KYC. We could not confirm from independent sources that the USDT draws actually pay out. Never share your seed phrase or private key with anyone. Only enter a receiving address: don’t connect a wallet that holds your funds, and don’t sign anything you don’t understand. You never need to pay. If you are asked to pay, treat it as a scam. There are many unrelated tokens and fake sites called “LIFE”. Whoever invited you earns points from your activity, and that includes this site’s operator, who invited you through this link. The tasks include posting on X every day, and the operator also runs health businesses, including genetic testing, so check how your data is handled
 
+### Refrax ($REFRAX)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/refrax/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: No; Market price: No; Public operator: Unverified
+- Last checked: 2026-10
+- Official URL: https://refrax.xyz/
+- Referral link (maintainer's own referral; not covered by the content license): https://refrax.xyz/?ref=freelunchlab
+- Referral code (maintainer's own): freelunchlab
+
+Season 0 quest rewards from Refrax, a project that presents itself as decentralized object storage coordinated on Solana. It says each file is cut into 16 pieces held by different nodes, and any 5 of them rebuild it. Sign in with X and earn points for quests: follow the official X account, like, repost and comment on the launch post, post your own invite link, add a Solana wallet address, and invite 3 friends. There is also a daily check-in, with a bonus every 7th day in a row. The site says points are a pending allocation counted on its server, to be paid as $REFRAX to the Solana wallet you add, at launch. The site is closed behind an access code, but an invite link lets you in. When someone signs in through your link and finishes a quest, you earn points
+
+What you get: Pending $REFRAX points (no token yet)
+
+What you need: Open the referral link (it skips the access code) and sign in with X (very new X accounts can’t join). Add a Solana wallet address to receive rewards (no signature, wallet connection or ID needed). Then do the quests and the daily check-in
+
+Warning: The domain was registered on October 26, 2026, and the operator is anonymous. There are no terms, no privacy policy, no docs, and no $REFRAX token yet. The site’s code looks like a reusable launch template where the name, ticker and links are swapped in. Don’t pay anything, don’t connect a wallet that holds your funds, and don’t sign anything presented as a “claim”.
+
+Cautions: The domain was registered on October 26, 2026, and the operator is anonymous. There are no terms, no privacy policy, no docs, and no $REFRAX token yet. The site’s code looks like a reusable launch template where the name, ticker and links are swapped in. Don’t pay anything, don’t connect a wallet that holds your funds, and don’t sign anything presented as a “claim”. Points are neither money nor tokens. The site itself says they stay pending until launch, are not tokens, and that amounts are final only at launch, so nothing is guaranteed. As of October 2026 the $REFRAX contract address still says “Launching soon”, and there is no price. We could not find the operator’s name, location or funding, or any independent news or reviews. The GitHub organization and code were all published at once on October 27, 2026; the node only runs as a local devnet on your own computer and does not earn points. The official X account was created in October 2026 and has about two posts. The X quests count as done once you open the link and wait a few seconds; nothing checks that you actually did them. On October 30, 2026 every quest was reset as “Round 2”, so they pay again. Signing in with X asks only for read access (your profile and posts), but quests ask you to follow the account and post promotions. With no terms there are no stated country restrictions, and we have not confirmed that it works from Japan. Only enter a receiving address, and never share your seed phrase or private key. Fake claim sites and copycat tokens with the same name are common around launches, so only use links from the official X account and refrax.xyz. Whoever invited you earns points when you finish a quest, and that includes this site’s operator, who invited you through this link
+
 ## Essays
 
 ### Universal high income: who pays?
