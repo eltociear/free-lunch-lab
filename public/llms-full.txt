@@ -675,6 +675,27 @@ What you need: Adults living in Japan (foreign nationals need a special permanen
 
 Cautions: The shares are unlisted: right now they cannot be sold or cashed, and their future value and liquidity are uncertain. The official site itself says a listing is not guaranteed, and the value may fall below the issue price. Vouchers basically come only from paying for services, so switching only makes sense if the price and terms of the service itself suit you. Vouchers can be exchanged for shares only during set offering periods, and they expire one year after the end of the month of your latest grant. Check the terms, the prospectus and when vouchers turn into shares before applying. The official referral notes say rewards may be voided if referral codes are spread on social media. KABU& also warns that offers to sell you its shares by phone, social media or email are very likely investment fraud: the shares can only be obtained with vouchers
 
+### Life AI Testnet
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/lifeai/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: With conditions; Market price: No; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://lifeai.io/
+- Referral link (maintainer's own referral; not covered by the content license): https://testnet.lifeai.io/ref?code=TH2ZQFX
+- Referral code (maintainer's own): TH2ZQFX
+
+The Phase 1 testnet of Life AI, a healthcare AI project building its own chain on Avalanche. According to the terms on lifeai.io, it is run by LIFE AI Foundation, a non-profit in Singapore. Its co-founder and CEO is Dr. Tuan Cao, who also heads the genetic testing company Genetica. Answer one daily Yes/No quiz about health, AI and life, record your answer on-chain and post it on X to earn points. A daily streak earns more, and missing a day resets it. Invite friends and you earn points based on their activity. Staking the test tokens the site hands out raises your multiplier. The rewards listed on the official site are daily USDT draws (some draws win nothing), weekly leaderboard rewards, token rewards and exclusive NFTs for top performers, and seasonal prizes. You register an EVM wallet address to receive rewards
+
+What you get: Testnet points (daily USDT draws; token and NFT rewards for top players)
+
+What you need: Log in through the referral link with X or another account and register an EVM wallet address for rewards (no ID needed). Then answer the quiz and post every day (sign-up from Japan confirmed in Oct 2026)
+
+Cautions: Points are not money. The campaign terms say the amount, timing and method of rewards are decided solely by the Life AI team, and that the campaign can be changed or cancelled at any time, so nothing is guaranteed. As of October 2026 there is no official tradable LIFE token, and the official site does not promise a token or an airdrop. The lifeai.io terms say Life Points have no cash value and that converting them may require KYC. We could not confirm from independent sources that the USDT draws actually pay out. Never share your seed phrase or private key with anyone. Only enter a receiving address: don’t connect a wallet that holds your funds, and don’t sign anything you don’t understand. You never need to pay. If you are asked to pay, treat it as a scam. There are many unrelated tokens and fake sites called “LIFE”. Whoever invited you earns points from your activity, and that includes this site’s operator, who invited you through this link. The tasks include posting on X every day, and the operator also runs health businesses, including genetic testing, so check how your data is handled
+
 ## Essays
 
 ### Universal high income: who pays?

@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/es/</link>
     <description>Apps y proyectos que te pagan solo por existir, tipo renta básica: Ğ1, Circles, Gradido, Idena y más. Con riesgos y cómo cobrar. Hay enlaces de referido.</description>
     <language>es</language>
-    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/es/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Añadida la testnet de Life AI</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/services/lifeai/</link>
+      <guid isPermaLink="false">news-2026-10-30-02b5a6a9a1b8</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Añadida la testnet de Life AI: Puntos de la testnet (sorteos diarios de USDT; tokens y NFT para los mejores)</description>
+    </item>
     <item>
       <title>Añadido UBI4ALL</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/es/services/ubi4all/</link>

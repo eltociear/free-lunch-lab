@@ -15,7 +15,7 @@
     "de",
     "ar"
   ],
-  "count": 33,
+  "count": 34,
   "services": [
     {
       "id": "aidac",
@@ -1699,6 +1699,96 @@
           "need": "البالغون المقيمون في اليابان (يحتاج الأجانب إلى شهادة إقامة دائمة خاصة أو بطاقة إقامة بلا تاريخ انتهاء). سجّل عضوًا في KABU&، ثم تعاقد على خدمة وادفع مقابلها. لاستبدال القسائم بأسهم عليك التقديم خلال فترة الطرح، واجتياز التحقق الإلكتروني من الهوية (eKYC) بوثيقة (رخصة قيادة أو بطاقة My Number وغيرهما)، وفتح حساب لدى Daiwa Connect Securities وربطه (حتى 6 ديسمبر 2026 للطرح الرابع)",
           "caution": "الأسهم غير مدرجة: لا يمكن بيعها ولا تحويلها إلى نقود الآن، وقيمتها وسيولتها في المستقبل غير مؤكدتين. يقول الموقع الرسمي نفسه إن الإدراج غير مضمون، وقد تنخفض القيمة عن سعر الإصدار. لا تحصل على القسائم في الأساس إلا بالدفع مقابل الخدمات، لذا لا يكون الانتقال منطقيًا إلا إذا كان سعر الخدمة نفسها وشروطها مناسبة لك. لا تُستبدل القسائم بأسهم إلا في فترات طرح محددة، وتنتهي صلاحيتها بعد سنة من نهاية الشهر الذي حصلت فيه على آخر قسائم. راجع الشروط ونشرة الإصدار وموعد تحوّل القسائم إلى أسهم قبل التقديم. تقول الملاحظات الرسمية لبرنامج الإحالة إن المكافأة قد تُلغى إذا نُشرت رموز الإحالة على وسائل التواصل الاجتماعي. وتحذّر KABU& أيضًا من أن عروض بيع أسهمها عبر الهاتف أو وسائل التواصل أو البريد الإلكتروني هي على الأرجح احتيال استثماري: لا يمكن الحصول على الأسهم إلا بالقسائم",
           "contactRef": "تريد رمز إحالة؟ راسل @FreeLunchLab على X برسالة خاصة (المُحيل، أي مشغّل هذا الموقع، يحصل أيضًا على قسائم أسهم)."
+        }
+      }
+    },
+    {
+      "id": "lifeai",
+      "name": "Life AI Testnet",
+      "nameJa": "Life AI Testnet",
+      "category": "app",
+      "categoryName": "Passive apps",
+      "payout": "loop",
+      "officialUrl": "https://lifeai.io/",
+      "referral": {
+        "url": "https://testnet.lifeai.io/ref?code=TH2ZQFX",
+        "code": "TH2ZQFX",
+        "note": "Maintainer's referral link; not covered by the content license"
+      },
+      "region": "global",
+      "availableFromJapan": true,
+      "verify": [
+        {
+          "method": "none",
+          "optional": false
+        }
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "no",
+        "operator": "yes"
+      },
+      "ease": 3,
+      "added": "2026-10-30",
+      "checked": "2026-10",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/lifeai/",
+      "pageUrls": {
+        "en": "https://neteru-nyukin.eltociear.workers.dev/services/lifeai/",
+        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/lifeai/",
+        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/lifeai/",
+        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/lifeai/",
+        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/lifeai/",
+        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/lifeai/",
+        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/lifeai/"
+      },
+      "badge": {
+        "url": "https://neteru-nyukin.eltociear.workers.dev/services/lifeai/?ref=badge",
+        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
+        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/lifeai/?ref=badge)",
+        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/lifeai/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
+      },
+      "descriptions": {
+        "en": {
+          "gain": "Testnet points (daily USDT draws; token and NFT rewards for top players)",
+          "note": "The Phase 1 testnet of Life AI, a healthcare AI project building its own chain on Avalanche. According to the terms on lifeai.io, it is run by LIFE AI Foundation, a non-profit in Singapore. Its co-founder and CEO is Dr. Tuan Cao, who also heads the genetic testing company Genetica. Answer one daily Yes/No quiz about health, AI and life, record your answer on-chain and post it on X to earn points. A daily streak earns more, and missing a day resets it. Invite friends and you earn points based on their activity. Staking the test tokens the site hands out raises your multiplier. The rewards listed on the official site are daily USDT draws (some draws win nothing), weekly leaderboard rewards, token rewards and exclusive NFTs for top performers, and seasonal prizes. You register an EVM wallet address to receive rewards",
+          "need": "Log in through the referral link with X or another account and register an EVM wallet address for rewards (no ID needed). Then answer the quiz and post every day (sign-up from Japan confirmed in Oct 2026)",
+          "caution": "Points are not money. The campaign terms say the amount, timing and method of rewards are decided solely by the Life AI team, and that the campaign can be changed or cancelled at any time, so nothing is guaranteed. As of October 2026 there is no official tradable LIFE token, and the official site does not promise a token or an airdrop. The lifeai.io terms say Life Points have no cash value and that converting them may require KYC. We could not confirm from independent sources that the USDT draws actually pay out. Never share your seed phrase or private key with anyone. Only enter a receiving address: don’t connect a wallet that holds your funds, and don’t sign anything you don’t understand. You never need to pay. If you are asked to pay, treat it as a scam. There are many unrelated tokens and fake sites called “LIFE”. Whoever invited you earns points from your activity, and that includes this site’s operator, who invited you through this link. The tasks include posting on X every day, and the operator also runs health businesses, including genetic testing, so check how your data is handled"
+        },
+        "ja": {
+          "gain": "テストネットのポイント（抽選でUSDT、上位者にトークン・NFTの報酬）",
+          "note": "ヘルスケアAIのプロジェクト「Life AI」が、Avalanche上に作る独自チェーンのテストネット（Phase 1）。lifeai.io の利用規約によると、運営はシンガポールの非営利団体 LIFE AI Foundation。共同創業者兼CEOは、遺伝子検査のGeneticaも率いるTuan Cao博士。健康・AI・暮らしについての1日1問のYes/Noクイズに答え、回答をチェーンに記録してXに投稿すると、ポイントがたまる。毎日続けるとポイントが増え、1日休むと連続記録はリセットされる。友だちを招待すると、その人の活動に応じて招待した側にポイントが入る。サイトで配られるテスト用トークンをステークすると倍率が上がる。公式サイトに書かれている報酬は、毎日の抽選でもらえるUSDT（ハズレもある）、週ごとのランキング報酬、上位者向けのトークン報酬と限定NFT、シーズンごとの特典。報酬を受け取るEVMウォレットのアドレスを登録する",
+          "need": "紹介リンクからXアカウントなどでログインし、報酬を受け取るEVMウォレットのアドレスを登録する（身分証は不要）。あとは毎日クイズに答えて投稿する（2026年10月に日本から登録できることを確認）",
+          "caution": "ポイントはお金ではありません。キャンペーン規約には「報酬の額・時期・方法はLife AIのチームだけが決める」「キャンペーンはいつでも変更・中止できる」とあり、受け取れる保証はありません。2026年10月時点で、公式に取引できるLIFEトークンは見つからず、公式サイトもトークンやエアドロップを約束していません。lifeai.io の規約では、Life Pointsに現金価値はなく、交換には本人確認（KYC）が必要になる場合があるとされています。USDTの抽選が実際に支払われているかは、第三者の情報では確認できていません。シードフレーズや秘密鍵は誰にも教えないでください。登録するのは受け取り用のアドレスだけで、資産の入ったメインのウォレットを接続したり、よくわからない署名をしたりしないでください。お金を払う必要はありません。支払いを求められたら詐欺を疑ってください。「LIFE」という名前の無関係なトークンや偽サイトが多数あります。招待した側（このリンクの紹介者である当サイト運営者を含む）には、あなたの活動に応じてポイントが入ります。毎日Xに投稿するタスクがあり、運営元は遺伝子検査を扱う健康関連の事業も手がけているので、プライバシーの扱いも確認してください"
+        },
+        "zh": {
+          "gain": "测试网积分（每日抽 USDT，排名靠前者有代币和 NFT 奖励）",
+          "note": "医疗健康 AI 项目「Life AI」在 Avalanche 上建设的自有链的测试网（Phase 1）。根据 lifeai.io 的使用条款，运营方是新加坡的非营利组织 LIFE AI Foundation。联合创始人兼 CEO 是 Tuan Cao 博士，他也领导基因检测公司 Genetica。每天回答一道关于健康、AI 和生活的是非题，把答案记录到链上并发到 X，即可获得积分。连续每天参与积分更多，中断一天连续记录就会重置。邀请朋友后，会根据对方的活动给邀请人积分。质押网站发放的测试代币可以提高倍率。官网列出的奖励有：每日 USDT 抽奖（也可能没抽中）、每周排行榜奖励、给排名靠前者的代币奖励和限定 NFT，以及每季特别奖励。需要登记用于接收奖励的 EVM 钱包地址",
+          "need": "通过邀请链接用 X 等账号登录，并登记接收奖励的 EVM 钱包地址（无需身份证件）。之后每天答题并发帖（已于 2026 年 10 月确认可从日本注册）",
+          "caution": "积分不是钱。活动条款写明，奖励的金额、时间和方式完全由 Life AI 团队决定，活动也可以随时修改或取消，因此无法保证能拿到。截至 2026 年 10 月，没有找到官方可交易的 LIFE 代币，官网也没有承诺代币或空投。lifeai.io 的条款写明 Life Points 没有现金价值，兑换时可能需要身份验证（KYC）。我们无法从第三方信息确认 USDT 抽奖是否真的发放。绝不要把助记词或私钥告诉任何人。只登记接收地址，不要连接存有资产的主钱包，也不要签署看不懂的内容。完全不需要付费，如果被要求付款，请怀疑是诈骗。有许多无关的同名「LIFE」代币和假网站。邀请人（也包括通过此链接邀请你的本站运营者）会根据你的活动获得积分。任务包括每天在 X 发帖，而且运营方也经营基因检测等健康业务，请确认数据的处理方式"
+        },
+        "hi": {
+          "gain": "टेस्टनेट पॉइंट (रोज़ USDT का ड्रॉ; टॉप खिलाड़ियों को टोकन और NFT इनाम)",
+          "note": "Life AI का Phase 1 टेस्टनेट। Life AI एक हेल्थकेयर AI प्रोजेक्ट है, जो Avalanche पर अपनी चेन बना रहा है। lifeai.io की शर्तों के अनुसार इसे सिंगापुर की गैर-लाभकारी संस्था LIFE AI Foundation चलाती है। इसके सह-संस्थापक और CEO डॉ. Tuan Cao हैं, जो जेनेटिक टेस्टिंग कंपनी Genetica के भी प्रमुख हैं। सेहत, AI और ज़िंदगी पर रोज़ एक हाँ/ना क्विज़ का जवाब दें, जवाब ऑन-चेन दर्ज करें और X पर पोस्ट करें, तो पॉइंट मिलते हैं। लगातार हर दिन करने पर ज़्यादा पॉइंट मिलते हैं, और एक दिन छूटने पर सिलसिला रीसेट हो जाता है। दोस्तों को इनवाइट करने पर उनकी गतिविधि के हिसाब से आपको पॉइंट मिलते हैं। साइट से मिलने वाले टेस्ट टोकन स्टेक करने पर मल्टीप्लायर बढ़ता है। आधिकारिक साइट पर लिखे इनाम: रोज़ का USDT ड्रॉ (कभी-कभी कुछ नहीं मिलता), हफ़्तेवार लीडरबोर्ड इनाम, टॉप प्रदर्शन करने वालों के लिए टोकन इनाम और खास NFT, और हर सीज़न के इनाम। इनाम पाने के लिए एक EVM वॉलेट पता दर्ज करना होता है",
+          "need": "रेफ़रल लिंक से X या किसी दूसरे अकाउंट से लॉग इन करें और इनाम के लिए EVM वॉलेट पता दर्ज करें (पहचान पत्र ज़रूरी नहीं)। फिर हर दिन क्विज़ का जवाब दें और पोस्ट करें (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)",
+          "caution": "पॉइंट पैसा नहीं हैं। कैंपेन की शर्तों में लिखा है कि इनाम की रकम, समय और तरीका सिर्फ़ Life AI टीम तय करती है, और कैंपेन कभी भी बदला या रद्द किया जा सकता है, इसलिए कुछ भी पक्का नहीं है। अक्टूबर 2026 तक कोई आधिकारिक ट्रेड होने वाला LIFE टोकन नहीं मिला, और आधिकारिक साइट टोकन या एयरड्रॉप का वादा नहीं करती। lifeai.io की शर्तों के अनुसार Life Points की कोई नकद क़ीमत नहीं है, और उन्हें बदलने के लिए KYC ज़रूरी हो सकता है। USDT ड्रॉ का भुगतान सच में होता है या नहीं, यह हम स्वतंत्र स्रोतों से पक्का नहीं कर सके। अपना सीड फ़्रेज़ या प्राइवेट की कभी किसी को न बताएँ। सिर्फ़ पैसे पाने वाला पता दर्ज करें: जिस वॉलेट में आपके पैसे हैं उसे कनेक्ट न करें, और जो समझ न आए उस पर साइन न करें। आपको कभी पैसे देने की ज़रूरत नहीं है। अगर पैसे माँगे जाएँ, तो उसे धोखा समझें। “LIFE” नाम के कई असंबंधित टोकन और नकली साइटें हैं। जिसने आपको इनवाइट किया, उसे आपकी गतिविधि से पॉइंट मिलते हैं, और इसमें इस साइट का संचालक भी शामिल है, जिसने इस लिंक से आपको इनवाइट किया है। कामों में हर दिन X पर पोस्ट करना शामिल है, और संचालक जेनेटिक टेस्टिंग समेत सेहत से जुड़े कारोबार भी चलाता है, इसलिए देख लें कि आपका डेटा कैसे संभाला जाता है"
+        },
+        "es": {
+          "gain": "Puntos de la testnet (sorteos diarios de USDT; tokens y NFT para los mejores)",
+          "note": "La testnet (Phase 1) de Life AI, un proyecto de IA para la salud que construye su propia cadena en Avalanche. Según las condiciones de lifeai.io, la gestiona LIFE AI Foundation, una organización sin ánimo de lucro de Singapur. Su cofundador y CEO es el Dr. Tuan Cao, que también dirige la empresa de pruebas genéticas Genetica. Responde cada día una pregunta de sí o no sobre salud, IA y vida, registra tu respuesta en la cadena y publícala en X para ganar puntos. Mantener la racha diaria da más puntos, y saltarte un día la reinicia. Si invitas a amigos, ganas puntos según su actividad. Hacer staking de los tokens de prueba que reparte el sitio sube tu multiplicador. Las recompensas que indica el sitio oficial son sorteos diarios de USDT (en algunos no se gana nada), premios semanales de la clasificación, recompensas en tokens y NFT exclusivos para los mejores, y premios por temporada. Registras una dirección de cartera EVM para recibir las recompensas",
+          "need": "Entra con el enlace de invitación usando X u otra cuenta y registra una dirección de cartera EVM para las recompensas (sin documento de identidad). Después, responde la pregunta y publica cada día (se comprobó en octubre de 2026 que el registro funciona desde Japón)",
+          "caution": "Los puntos no son dinero. Las condiciones de la campaña dicen que el importe, el momento y la forma de las recompensas los decide solo el equipo de Life AI, y que la campaña puede cambiarse o cancelarse en cualquier momento, así que nada está garantizado. En octubre de 2026 no existe un token LIFE oficial que se pueda negociar, y el sitio oficial no promete ningún token ni airdrop. Las condiciones de lifeai.io dicen que los Life Points no tienen valor en efectivo y que canjearlos puede requerir KYC. No hemos podido confirmar con fuentes independientes que los sorteos de USDT se paguen de verdad. Nunca compartas tu frase semilla ni tu clave privada. Introduce solo una dirección para recibir: no conectes una cartera con tus fondos ni firmes nada que no entiendas. Nunca tienes que pagar. Si te piden dinero, sospecha que es una estafa. Hay muchos tokens sin relación y sitios falsos llamados «LIFE». Quien te invita gana puntos con tu actividad, y eso incluye al responsable de este sitio, que te invita con este enlace. Las tareas incluyen publicar en X cada día, y el operador también tiene negocios de salud, entre ellos pruebas genéticas, así que revisa cómo se tratan tus datos"
+        },
+        "de": {
+          "gain": "Testnet-Punkte (tägliche USDT-Verlosungen; Token- und NFT-Belohnungen für die Besten)",
+          "note": "Das Testnet (Phase 1) von Life AI, einem Gesundheits-KI-Projekt, das eine eigene Chain auf Avalanche baut. Laut den Bedingungen auf lifeai.io wird es von der LIFE AI Foundation betrieben, einer gemeinnützigen Organisation in Singapur. Mitgründer und CEO ist Dr. Tuan Cao, der auch das Gentest-Unternehmen Genetica leitet. Beantworte jeden Tag eine Ja/Nein-Frage zu Gesundheit, KI und Leben, speichere die Antwort on-chain und poste sie auf X, um Punkte zu sammeln. Eine tägliche Serie bringt mehr, und ein ausgelassener Tag setzt sie zurück. Wer Freunde einlädt, bekommt Punkte je nach deren Aktivität. Wer die Test-Token staket, die die Seite verteilt, erhöht seinen Multiplikator. Als Belohnungen nennt die offizielle Seite tägliche USDT-Verlosungen (manchmal gewinnt man nichts), wöchentliche Ranglisten-Prämien, Token-Belohnungen und exklusive NFTs für die Besten sowie Prämien je Saison. Für die Belohnungen hinterlegst du eine EVM-Wallet-Adresse",
+          "need": "Über den Einladungslink mit X oder einem anderen Konto einloggen und eine EVM-Wallet-Adresse für Belohnungen hinterlegen (kein Ausweis nötig). Danach jeden Tag die Frage beantworten und posten (im Oktober 2026 bestätigt: Anmeldung aus Japan möglich)",
+          "caution": "Punkte sind kein Geld. Laut den Kampagnenbedingungen entscheidet allein das Life-AI-Team über Höhe, Zeitpunkt und Art der Belohnungen, und die Kampagne kann jederzeit geändert oder beendet werden; garantiert ist also nichts. Stand Oktober 2026 gibt es keinen offiziellen handelbaren LIFE-Token, und die offizielle Seite verspricht weder einen Token noch einen Airdrop. Laut den Bedingungen auf lifeai.io haben Life Points keinen Geldwert, und ein Umtausch kann ein KYC erfordern. Ob die USDT-Verlosungen wirklich ausgezahlt werden, konnten wir mit unabhängigen Quellen nicht bestätigen. Gib deine Seed-Phrase oder deinen privaten Schlüssel niemals weiter. Hinterlege nur eine Empfangsadresse: Verbinde keine Wallet, auf der dein Geld liegt, und signiere nichts, was du nicht verstehst. Du musst nie etwas bezahlen. Wenn jemand Geld verlangt, geh von Betrug aus. Es gibt viele fremde Token und gefälschte Seiten namens „LIFE“. Wer dich eingeladen hat, bekommt Punkte für deine Aktivität, und dazu gehört auch der Betreiber dieser Seite, der dich über diesen Link einlädt. Zu den Aufgaben gehört, jeden Tag auf X zu posten, und der Betreiber hat auch Gesundheitsgeschäfte, darunter Gentests; prüfe also, wie deine Daten behandelt werden"
+        },
+        "ar": {
+          "gain": "نقاط الشبكة التجريبية (سحب يومي على USDT؛ ومكافآت رموز وNFT للأوائل)",
+          "note": "الشبكة التجريبية (المرحلة الأولى) لمشروع Life AI، وهو مشروع ذكاء اصطناعي للرعاية الصحية يبني سلسلته الخاصة على Avalanche. بحسب الشروط على lifeai.io تديره LIFE AI Foundation، وهي منظمة غير ربحية في سنغافورة. المؤسس المشارك والرئيس التنفيذي هو الدكتور Tuan Cao، الذي يرأس أيضًا شركة الفحوص الجينية Genetica. أجب كل يوم عن سؤال بنعم أو لا عن الصحة والذكاء الاصطناعي والحياة، وسجّل إجابتك على السلسلة وانشرها على X لتجمع النقاط. المواظبة اليومية تمنحك نقاطًا أكثر، وتفويت يوم واحد يعيد السلسلة إلى الصفر. إذا دعوت أصدقاء تحصل على نقاط بحسب نشاطهم. تخزين (staking) الرموز التجريبية التي يوزعها الموقع يرفع المضاعِف. المكافآت المذكورة على الموقع الرسمي: سحب يومي على USDT (قد لا تربح شيئًا)، ومكافآت أسبوعية لقائمة المتصدرين، ومكافآت رموز وNFT حصرية لأصحاب الأداء الأعلى، وجوائز موسمية. تسجّل عنوان محفظة EVM لاستلام المكافآت",
+          "need": "سجّل الدخول عبر رابط الإحالة بحساب X أو حساب آخر، وسجّل عنوان محفظة EVM لاستلام المكافآت (لا حاجة لوثيقة هوية). ثم أجب عن السؤال وانشر كل يوم (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)",
+          "caution": "النقاط ليست مالًا. تقول شروط الحملة إن فريق Life AI وحده يقرر قيمة المكافآت وموعدها وطريقتها، وإن الحملة يمكن تغييرها أو إلغاؤها في أي وقت، فلا شيء مضمون. حتى أكتوبر 2026 لا يوجد رمز LIFE رسمي قابل للتداول، ولا يعد الموقع الرسمي برمز أو إسقاط جوي. تقول شروط lifeai.io إن Life Points ليست لها قيمة نقدية وإن استبدالها قد يتطلب التحقق من الهوية (KYC). لم نتمكن من التأكد من مصادر مستقلة أن سحوبات USDT تُدفع فعلًا. لا تشارك عبارة الاسترداد أو مفتاحك الخاص مع أي أحد. أدخل عنوان استلام فقط: لا تربط محفظة فيها أموالك، ولا توقّع على شيء لا تفهمه. لا تحتاج إلى الدفع أبدًا، وإذا طُلب منك الدفع فاعتبره احتيالًا. توجد رموز كثيرة لا علاقة لها ومواقع مزيفة باسم «LIFE». يحصل من دعاك على نقاط من نشاطك، ويشمل ذلك مشغّل هذا الموقع الذي يدعوك عبر هذا الرابط. من المهام النشر على X كل يوم، كما أن المشغّل يدير أعمالًا صحية منها الفحوص الجينية، فتحقّق من طريقة التعامل مع بياناتك"
         }
       }
     },
