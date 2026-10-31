@@ -115,6 +115,16 @@ const byMethod = m => ({
 });
 const verifyPages = VERIFY_ORDER.filter(m => { const b = byMethod(m); return b.req.length + b.opt.length >= 2; });
 for (const s of live) for (const v of (s.verify || [])) if (!VERIFY[v.method]) throw new Error(`${s.id}: unknown verify method ${v.method}`);
+// SNS 用の画像: 個別ページ・エッセイは node og.js で作る src/og/svc|essay/{lang}/{id}.jpg。まだなければ言語のトップの画像を使う
+const OG_DIR = path.join(__dirname, 'src/og');
+const ogMissing = [];
+const ogImage = (rel, lang) => { if (fs.existsSync(path.join(OG_DIR, rel))) return `${SITE_URL}/og/${rel}`; ogMissing.push(rel); return `${SITE_URL}/og/${lang}.png`; };
+// ファビコン・ホーム画面アイコン・テーマ色（src/static/ をそのままサイトの直下へ）
+const ICONS = `<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0E1320">
+<meta name="color-scheme" content="dark">`;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 function meter(n) {
@@ -302,6 +312,7 @@ function head(lang) {
 <link rel="canonical" href="${abs(lang)}">
 <link rel="alternate" type="application/rss+xml" title="${esc(L.title)} RSS" href="${feedAbs(lang)}">
 <meta name="google-site-verification" content="n5VlzRi2FPlfwdfg9RcoApbpTtxkHIoB2ws5jWbPF9s">
+${ICONS}
 ${alts}
 <link rel="alternate" hreflang="x-default" href="${abs(DEFAULT_LANG)}">
 <meta property="og:site_name" content="${esc(L.brandPlain)}">
@@ -718,7 +729,7 @@ ${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#or
 <p class="back"><a class="btn line" href="${home}#list">${rtl ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   const script = copyScript(L);
-  return shell(lang, { title, desc, hrefFor: l => svcAbs(l, s), pathFor: l => svcPath(l, s), ld, ogType: 'article', body, script, pr: true });
+  return shell(lang, { title, desc, hrefFor: l => svcAbs(l, s), pathFor: l => svcPath(l, s), ld, ogType: 'article', body, script, pr: true, image: ogImage(`svc/${lang}/${s.id}.jpg`, lang) });
 }
 function copyScript(L) {
   const i18n = { copied: L.copied, selected: L.selected };
@@ -737,7 +748,7 @@ function copyScript(L) {
 }
 
 // 個別ページ・団体ページで共通の外枠（head、上のバー、フッター）
-function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script = '', pr = false }) {
+function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script = '', pr = false, image = `${SITE_URL}/og/${lang}.png` }) {
   const L = T[lang];
   const rtl = RTL.has(lang);
   const home = urlPath(lang);
@@ -752,6 +763,7 @@ function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script =
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
 <link rel="alternate" type="application/rss+xml" title="${esc(L.title)} RSS" href="${feedAbs(lang)}">
+${ICONS}
 ${alts}
 <link rel="alternate" hreflang="x-default" href="${hrefFor(DEFAULT_LANG)}">
 <meta property="og:site_name" content="${esc(L.brandPlain)}">
@@ -760,12 +772,12 @@ ${alts}
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${url}">
 <meta property="og:locale" content="${OG_LOCALE[lang]}">
-<meta property="og:image" content="${SITE_URL}/og/${lang}.png">
+<meta property="og:image" content="${image}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@FreeLunchLab">
-<meta name="twitter:image" content="${SITE_URL}/og/${lang}.png">
+<meta name="twitter:image" content="${image}">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
 <!--@fonts@-->
 <style>${CSS}${DETAIL_CSS}</style>
@@ -847,7 +859,7 @@ function essayPage(e, lang) {
       { '@type': 'ListItem', position: 3, name: ttl, item: url } ] },
     { '@context': 'https://schema.org', '@type': 'Article', headline: ttl, description: desc, inLanguage: LANG_TAG[lang], datePublished: e.date, dateModified: e.date,
       author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
-      mainEntityOfPage: url, image: `${SITE_URL}/og/${lang}.png` },
+      mainEntityOfPage: url, image: ogImage(`essay/${lang}/${e.id}.jpg`, lang) },
   ];
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a></li><li aria-current="page">${esc(ttl)}</li></ol></nav>
 <main class="essay">
@@ -859,7 +871,7 @@ ${rel ? `<p class="related">${esc(L.essayRelated)}: <a href="${essayPath(lang, r
 </article>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title: `${ttl} | ${L.title}`, desc, hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body });
+  return shell(lang, { title: `${ttl} | ${L.title}`, desc, hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, image: ogImage(`essay/${lang}/${e.id}.jpg`, lang) });
 }
 function essaysIndex(lang) {
   const L = T[lang];
@@ -1155,8 +1167,10 @@ fs.mkdirSync(path.join(OUT, 'fonts'), { recursive: true });
 for (const f of fs.readdirSync(FONT_DIR)) if (f.endsWith('.woff2')) fs.copyFileSync(path.join(FONT_DIR, f), path.join(OUT, 'fonts', f));
 
 // SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
-const OG_SRC = path.join(__dirname, 'src/og');
-if (fs.existsSync(OG_SRC)) fs.cpSync(OG_SRC, path.join(OUT, 'og'), { recursive: true });
+if (fs.existsSync(OG_DIR)) fs.cpSync(OG_DIR, path.join(OUT, 'og'), { recursive: true, filter: f => !f.endsWith('manifest.json') });
+if (ogMissing.length) console.warn(`WARNING: ${new Set(ogMissing).size} share images are missing (pages fall back to the language image); run node og.js`);
+const STATIC_DIR = path.join(__dirname, 'src/static');
+for (const f of fs.readdirSync(STATIC_DIR)) fs.copyFileSync(path.join(STATIC_DIR, f), path.join(OUT, f));
 // バッジの SVG（src/badge.js で作る）
 for (const [f, b] of Object.entries(BADGES)) fs.writeFileSync(path.join(OUT, 'badge', f), b.svg);
 

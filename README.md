@@ -194,7 +194,9 @@ If your project is listed on the site, you're welcome to add a "Listed on Free L
 - `src/data.js` — all content: services (`SERVICES`), categories, UI strings for every language (`T`), the update log, organizations, and the site URL
 - `src/template.html` — the list page template (design and CSS)
 - `build.js` — generates `public/`: the list page per language, a page per service and language, the organizations page, `sitemap.xml` and `robots.txt`; it also refreshes the tables in this README
-- `og.js` — renders the share images (1200×630) into `src/og/` with headless Chrome; fonts are subset to the characters used and embedded, so the output is deterministic
+- `og.js` — renders the share images (1200×630) with headless Chrome: one per language (`src/og/{lang}.png`), one per service and language (`src/og/svc/{lang}/{id}.jpg`) and one per essay and language (`src/og/essay/{lang}/{id}.jpg`), plus the favicon PNG/ICO and the 180px touch icon from `src/static/favicon.svg`. Fonts are subset to the characters used and embedded; images whose HTML and fonts are unchanged are skipped (`src/og/manifest.json`, `OG_FORCE=1` redoes all)
+- `fonts.js` — self-hosted web fonts: `build.js` collects the characters each language actually renders per typeface and keeps woff2 subsets of them in `src/fonts/` (fetched once from Google Fonts with `text=`; new characters add a new file, existing files never change, `FONTS_REBUILD=1` starts over)
+- `src/static/` — files copied to the site root as is (favicon, touch icon)
 - `readme.js` — regenerates the badges, service table, organizations list, open-source tables and essay list in this README from `src/data.js`
 - `data/` — `services.json`, `graveyard.json` and `open-source.json`, the open dataset written by `build.js` (also served at `/services.json`, `/graveyard.json` and `/open-source.json`); `open-source-cache.json` holds the last fetched GitHub/GitLab metadata so the build also works offline
 - `oss-fetch.js` — fetches stars, last commit, archived status, license and language for the open-source list (`OSS` in `src/data.js`) from the GitHub and GitLab APIs into `data/open-source-cache.json`; `build.js` runs it first and keeps the cache on any network error (uses `GITHUB_TOKEN` or `gh auth token` if available, `OSS_OFFLINE=1` skips it). `src/oss.js` merges the list with the cache and flags projects as dormant after 12 months without a commit
@@ -209,7 +211,7 @@ URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/
 ## Build and deploy
 
 ```sh
-node og.js          # only when the headline or the list of services changed (needs Chrome)
+node og.js          # when services, essays or the headline changed (needs Chrome; unchanged images are skipped)
 node build.js       # writes public/ and refreshes the README tables
 npx wrangler deploy # publishes public/ to Cloudflare Workers
 ```
@@ -220,7 +222,7 @@ There are no npm dependencies; Node.js and, for `og.js`, Chrome are enough. The 
 
 ## Adding a service
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the listing criteria first. Then add an entry to `SERVICES` in `src/data.js` and run `node og.js && node build.js`.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the listing criteria first. Then add an entry to `SERVICES` in `src/data.js` and run `node build.js && node og.js && node build.js` (the first build fetches any new font characters that `og.js` reuses).
 
 - `id`, `name` (Japanese display name), `nameEn` (optional, used for other languages)
 - `cat` — category: `crypto-bi`, `app`, `pointsite`, `career`, `exchange`, `finance`, or `ai-agent` (for AI-agent basic income; a category with no entries never appears anywhere, so it shows up automatically with the first entry)
@@ -237,7 +239,7 @@ Organizations live in `ORGS` (with `ORG_GROUPS` and `ORG_REGIONS`); set `svc` to
 
 ## Adding a language
 
-Add the language code to `LANGS` and a key for it in `T`, `CATS`, every service, `NEWS`, `PICKS`, `ORGS` (`desc`/`short`), `ORG_GROUPS` and `ORG_REGIONS` in `src/data.js`, then to `LANG_NAMES`, `LANG_TAG`, `OG_LOCALE`, `LANG_FONTS` and `SHARE_ORDER` in `build.js` and `FONTS` / `FACE` in `og.js`. The build stops if a UI string is missing.
+Add the language code to `LANGS` and a key for it in `T`, `CATS`, every service, `NEWS`, `PICKS`, `ORGS` (`desc`/`short`), `ORG_GROUPS` and `ORG_REGIONS` in `src/data.js`, then to `LANG_NAMES`, `LANG_TAG`, `OG_LOCALE`, `BODY_FONT`, `DISPLAY_FONT` and `SHARE_ORDER` in `build.js` and `FONTS` / `FACE` / `BODY` / `DISP` in `og.js`. The build stops if a UI string is missing.
 
 ## X profile images
 
