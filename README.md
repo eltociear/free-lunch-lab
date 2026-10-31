@@ -41,10 +41,10 @@ Some links on the site are referral links or codes. If you sign up through them,
 
 | Service | Category | What you get | Region | Checked |
 | --- | --- | --- | --- | --- |
-| [GoodDollar](https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/) | Crypto UBI | G$ tokens every day | Global (海外OK) | 2026-10 |
-| [Circles (Gnosis App)](https://neteru-nyukin.eltociear.workers.dev/services/circles/) | Crypto UBI | 1 CRC per hour (24 per day) | Global (海外OK) | 2026-10 |
-| [ME Pass](https://neteru-nyukin.eltociear.workers.dev/services/mepass/) | Crypto UBI | MEC tokens every day | Global (海外OK) | 2026-10 |
-| [BioMatrix](https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/) | Crypto UBI | PoY tokens every month | Global (海外OK) | 2026-10 |
+| [GoodDollar](https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/) | Crypto basic income | G$ tokens every day | Global (海外OK) | 2026-10 |
+| [Circles (Gnosis App)](https://neteru-nyukin.eltociear.workers.dev/services/circles/) | Crypto basic income | 1 CRC per hour (24 per day) | Global (海外OK) | 2026-10 |
+| [ME Pass](https://neteru-nyukin.eltociear.workers.dev/services/mepass/) | Crypto basic income | MEC tokens every day | Global (海外OK) | 2026-10 |
+| [BioMatrix](https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/) | Crypto basic income | PoY tokens every month | Global (海外OK) | 2026-10 |
 | [Hapitas](https://neteru-nyukin.eltociear.workers.dev/services/hapitas/) | Cashback sites | Up to 2,300 points | Japan only | 2026-10 |
 | [WAVEE](https://neteru-nyukin.eltociear.workers.dev/services/wavee/) | Job matching | A matching reward each time you land a job | Global (海外OK) | 2026-10 |
 | [Trima](https://neteru-nyukin.eltociear.workers.dev/services/trima/) | Passive apps | 5,000 miles + miles for moving and walking | Japan only | 2026-10 |
@@ -52,25 +52,25 @@ Some links on the site are referral links or codes. If you sign up through them,
 | [Grass](https://neteru-nyukin.eltociear.workers.dev/services/grass/) | Passive apps | Points (later GRASS tokens) | Global (海外OK) | 2026-10 |
 | [Honeygain](https://neteru-nyukin.eltociear.workers.dev/services/honeygain/) | Passive apps | Cash for the traffic you share | Global (海外OK) | 2026-10 |
 | [Pawns.app](https://neteru-nyukin.eltociear.workers.dev/services/pawns/) | Passive apps | Cash for the traffic you share | Global (海外OK) | 2026-10 |
-| [Pi Network](https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/) | Crypto UBI | PI every day | Global (海外OK) | 2026-10 |
-| [Delta Kim](https://neteru-nyukin.eltociear.workers.dev/services/deltakim/) | Crypto UBI | KIM every day | Global (海外OK) | 2026-10 |
-| [InterLink](https://neteru-nyukin.eltociear.workers.dev/services/interlink/) | Crypto UBI | ITLG tokens every day | Global (海外OK) | 2026-10 |
+| [Pi Network](https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/) | Crypto basic income | PI every day | Global (海外OK) | 2026-10 |
+| [Delta Kim](https://neteru-nyukin.eltociear.workers.dev/services/deltakim/) | Crypto basic income | KIM every day | Global (海外OK) | 2026-10 |
+| [InterLink](https://neteru-nyukin.eltociear.workers.dev/services/interlink/) | Crypto basic income | ITLG tokens every day | Global (海外OK) | 2026-10 |
 | [Mein Grundeinkommen](https://neteru-nyukin.eltociear.workers.dev/services/meingrundeinkommen/) | Passive apps | €1,000 a month for a year if you win | Global (海外OK) | 2026-10 |
 | [UBI4ALL](https://neteru-nyukin.eltociear.workers.dev/services/ubi4all/) | Passive apps | €9,600 if you win (in Japan: €800 a month for a year) | Global (海外OK) | 2026-10 |
-| [Ğ1 (June)](https://neteru-nyukin.eltociear.workers.dev/services/g1/) | Crypto UBI | Ğ1 every day once you are a member (Universal Dividend) | Global (海外OK) | 2026-10 |
+| [Ğ1 (June)](https://neteru-nyukin.eltociear.workers.dev/services/g1/) | Crypto basic income | Ğ1 every day once you are a member (Universal Dividend) | Global (海外OK) | 2026-10 |
 | [Palai](https://neteru-nyukin.eltociear.workers.dev/services/palai/) | Passive apps | Palai (¶) basic income every day | Global (海外OK) | 2026-10 |
-| [Dotare](https://neteru-nyukin.eltociear.workers.dev/services/dotare/) | Crypto UBI | 10 ADA a month for a year if you are chosen (2027 cycle) | Global (海外OK) | 2026-10 |
-| [ORO (World App)](https://neteru-nyukin.eltociear.workers.dev/services/oro/) | Crypto UBI | ORO tokens every day | Global (海外OK) | 2026-10 |
-| [AXO (World App)](https://neteru-nyukin.eltociear.workers.dev/services/axo/) | Crypto UBI | AXO tokens every day | Global (海外OK) | 2026-10 |
-| [AI-DAC (World App)](https://neteru-nyukin.eltociear.workers.dev/services/aidac/) | Crypto UBI | UBI in DAC tokens | Global (海外OK) | 2026-10 |
+| [Dotare](https://neteru-nyukin.eltociear.workers.dev/services/dotare/) | Crypto basic income | 10 ADA a month for a year if you are chosen (2027 cycle) | Global (海外OK) | 2026-10 |
+| [ORO (World App)](https://neteru-nyukin.eltociear.workers.dev/services/oro/) | Crypto basic income | ORO tokens every day | Global (海外OK) | 2026-10 |
+| [AXO (World App)](https://neteru-nyukin.eltociear.workers.dev/services/axo/) | Crypto basic income | AXO tokens every day | Global (海外OK) | 2026-10 |
+| [AI-DAC (World App)](https://neteru-nyukin.eltociear.workers.dev/services/aidac/) | Crypto basic income | UBI in DAC tokens | Global (海外OK) | 2026-10 |
 | [Ubiquitus](https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/) | Passive apps | A small equal cash share on the 1st of each month (Venmo) | US residents only | 2026-10 |
 | [Gradido](https://neteru-nyukin.eltociear.workers.dev/services/gradido/) | Passive apps | 20 GDD per hour of common-good work (up to 1,000 GDD a month) | Global (海外OK) | 2026-10 |
 | [WowApp](https://neteru-nyukin.eltociear.workers.dev/services/wowapp/) | Passive apps | Small rewards for daily use, games, shopping and more | Global (海外OK) | 2026-10 |
 | [Humad (World App)](https://neteru-nyukin.eltociear.workers.dev/services/humad/) | Cashback sites | Points for tapping ads and answering questions (gift cards from 1,500 pt = ¥150) | Japan only | 2026-10 |
-| [Billions](https://neteru-nyukin.eltociear.workers.dev/services/billions/) | Crypto UBI | Power points (for verifying, referring friends and taking part) | Global (海外OK) | 2026-10 |
-| [Idena (iDNA)](https://neteru-nyukin.eltociear.workers.dev/services/idena/) | Crypto UBI | iDNA (mining rewards while your node runs, plus validation rewards) | Global (海外OK) | 2026-10 |
+| [Billions](https://neteru-nyukin.eltociear.workers.dev/services/billions/) | Crypto basic income | Power points (for verifying, referring friends and taking part) | Global (海外OK) | 2026-10 |
+| [Idena (iDNA)](https://neteru-nyukin.eltociear.workers.dev/services/idena/) | Crypto basic income | iDNA (mining rewards while your node runs, plus validation rewards) | Global (海外OK) | 2026-10 |
 | [RewardMe](https://neteru-nyukin.eltociear.workers.dev/services/rewardme/) | Passive apps | Up to 5% cashback found in your email receipts (Reward Dollars / MDT crypto) | Global (海外OK) | 2026-10 |
-| [FheID (Privasea)](https://neteru-nyukin.eltociear.workers.dev/services/fheid/) | Crypto UBI | Airdrops and rewards for proving you are human (e.g. campaign “stars”) | Global (海外OK) | 2026-10 |
+| [FheID (Privasea)](https://neteru-nyukin.eltociear.workers.dev/services/fheid/) | Crypto basic income | Airdrops and rewards for proving you are human (e.g. campaign “stars”) | Global (海外OK) | 2026-10 |
 | [JrKripto (JR)](https://neteru-nyukin.eltociear.workers.dev/services/jrkripto/) | Passive apps | JR points every day (50 JR sign-up bonus) | Global (海外OK) | 2026-10 |
 | [Mining Machine ($ORE)](https://neteru-nyukin.eltociear.workers.dev/services/miningmachine/) | Passive apps | $ORE mining balance (free 24-hour sessions) | Global (海外OK) | 2026-10 |
 | [KABU&](https://neteru-nyukin.eltociear.workers.dev/services/kabuand/) | Cashback sites | Share vouchers based on what you pay for electricity, gas, mobile and more (used to apply for unlisted shares) | Japan only | 2026-10 |

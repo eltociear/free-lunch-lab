@@ -12,7 +12,7 @@
 ### GoodDollar
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: Face scan / liveness
@@ -33,7 +33,7 @@ Cautions: A security incident in May 2026 put its reserve under review. The dail
 ### Circles (Gnosis App)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/circles/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: Web of trust / invites
@@ -52,7 +52,7 @@ Cautions: You can’t start without a member to invite you. CRC’s market price
 ### ME Pass
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/mepass/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: ID document KYC
@@ -73,7 +73,7 @@ Cautions: As of Oct 2026, MEC is not listed on any exchange and has no market pr
 ### BioMatrix
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: not specified
@@ -237,7 +237,7 @@ Cautions: Mobile bandwidth sharing ended in April 2026, so passive earning is de
 ### Pi Network
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: ID document KYC
@@ -258,7 +258,7 @@ Cautions: The price is down about 97% from its 2025 high of $2.99 (about $0.08 a
 ### Delta Kim
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/deltakim/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: No verification
@@ -279,7 +279,7 @@ Cautions: As of October 2026, no exchange listing or market price could be confi
 ### InterLink
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/interlink/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: Face scan / liveness
@@ -339,7 +339,7 @@ Cautions: It’s a raffle, so the odds are low and depend on how many people tak
 ### Ğ1 (June)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: Web of trust / invites
@@ -378,7 +378,7 @@ Cautions: As of Oct 2026 there is no way to cash Palai out into euros or other m
 ### Dotare
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/dotare/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: not specified
@@ -397,7 +397,7 @@ Cautions: For the 2027 cycle, applications closed on 31 Aug 2026 and enrollment 
 ### ORO (World App)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/oro/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: World ID (Orb)
@@ -416,7 +416,7 @@ Cautions: The daily amount is not stated officially. It is unknown whether a ver
 ### AXO (World App)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/axo/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: World ID (Orb)
@@ -437,7 +437,7 @@ Cautions: The daily amount and what the referral reward is are not stated offici
 ### AI-DAC (World App)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/aidac/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: World ID (Orb)
@@ -534,7 +534,7 @@ Cautions: Points can only be exchanged for gift cards, not cash, and exchanges c
 ### Billions
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/billions/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: Face scan / liveness, NFC passport
@@ -554,7 +554,7 @@ Cautions: Whether Power can be exchanged for $BILL or cash is not stated officia
 ### Idena (iDNA)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/idena/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: Validation ceremony, Web of trust / invites
@@ -594,7 +594,7 @@ Cautions: It reads the commercial emails in your linked inbox, and its privacy p
 ### FheID (Privasea)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/fheid/
-- Category: Crypto UBI
+- Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
 - Verification: Face scan / liveness

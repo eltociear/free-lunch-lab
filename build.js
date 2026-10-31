@@ -16,18 +16,21 @@ const LANG_NAMES = { en: 'EN', ja: '日本語', zh: '中文', hi: 'हिन्�
 const LANG_TAG = { en: 'en', ja: 'ja', zh: 'zh-Hans', hi: 'hi', es: 'es', de: 'de', ar: 'ar' }; // html lang / hreflang
 const OG_LOCALE = { en: 'en_US', ja: 'ja_JP', zh: 'zh_CN', hi: 'hi_IN', es: 'es_ES', de: 'de_DE', ar: 'ar_AR' };
 const RTL = new Set(['ar']);
-// 共通: 見出しの Dela Gothic One と数字の DotGothic16。本文フォントは言語ごと
-const BASE_FONTS = 'family=Dela+Gothic+One&family=DotGothic16';
-const LANG_FONTS = {
-  en: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
-  ja: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
-  es: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
-  de: 'family=Zen+Kaku+Gothic+New:wght@400;500;700',
-  zh: 'family=Noto+Sans+SC:wght@400;500;700;900',
-  hi: 'family=Noto+Sans+Devanagari:wght@400;500;700',
-  ar: 'family=Noto+Kufi+Arabic:wght@700&family=Noto+Sans+Arabic:wght@400;500;700',
-};
-const fontsUrl = l => `https://fonts.googleapis.com/css2?${BASE_FONTS}&${LANG_FONTS[l]}&display=swap`;
+// フォントは自前で配る（fonts.js）。見出しは Dela Gothic One（zh/hi/ar はその言語の太字）、数字は DotGothic16、本文は言語ごと、ロゴは Zen Kaku Gothic New 900
+const { ensureFonts, fontFaceCss, FONT_DIR } = require('./fonts.js');
+const BODY_FONT = { en: 'Zen Kaku Gothic New', ja: 'Zen Kaku Gothic New', es: 'Zen Kaku Gothic New', de: 'Zen Kaku Gothic New', zh: 'Noto Sans SC', hi: 'Noto Sans Devanagari', ar: 'Noto Sans Arabic' };
+// 見出しの書体。hi は本文と同じ書体の 700 を使うので別に持たない。ar と英字の言語の見出しは字幅で行数が変わりやすいので optional（間に合わなければ差し替えない＝ずれない）。日本語は全角で字幅が同じなので swap
+const DISPLAY_FONT = { en: ['Dela Gothic One', 400, 'swap'], ja: ['Dela Gothic One', 400, 'swap'], es: ['Dela Gothic One', 400, 'swap'], de: ['Dela Gothic One', 400, 'swap'], zh: ['Noto Sans SC', 900, 'swap'], ar: ['Noto Kufi Arabic', 700, 'optional'] };
+// 言語メニュー（🌐 日本語 ▾）。JS がなくても details で開閉できる
+const LANG_LABEL = { ...LANG_NAMES, en: 'English' };
+const GLOBE = '<svg class="globe" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm-9 9h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg>';
+function langMenu(lang, pathFor) {
+  const L = T[lang];
+  const links = LANGS.map(l => `<a href="${pathFor(l)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}"${RTL.has(l) ? ' dir="rtl"' : ''}${l === lang ? ' aria-current="page"' : ''}>${LANG_LABEL[l]}</a>`).join('');
+  return `<details class="lm"><summary>${GLOBE}<span class="vh">${esc(L.langLabel)}: </span><span class="lm-name">${LANG_LABEL[lang]}</span></summary><div class="lang" role="group" aria-label="${esc(L.langLabel)}">${links}</div></details>`;
+}
+// 言語メニューの外を押すか Esc で閉じる
+const MENU_JS = `<script>(function(){function close(f){document.querySelectorAll('details.lm[open]').forEach(function(d){d.removeAttribute('open');if(f)d.querySelector('summary').focus()})}document.addEventListener('click',function(e){if(!e.target.closest('details.lm'))close()});document.addEventListener('keydown',function(e){if(e.key==='Escape')close(true)})})()</script>`;
 
 const live = SERVICES.filter(s => s.ref || s.noRef); // 紹介リンクがあるもの（と紹介制度のない noRef）だけ表示
 // 表示するサービスには「最終確認月」（checked: "YYYY-MM"）が必須
@@ -457,8 +460,7 @@ for (const lang of LANGS) {
   });
   const vars = {
     head: head(lang),
-    langSwitch: LANGS.map(l => `<a href="${urlPath(l)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}"${RTL.has(l) ? ' dir="rtl"' : ''}${l === lang ? ' aria-current="page"' : ''}>${LANG_NAMES[l]}</a>`).join(''),
-    fonts: fontsUrl(lang),
+    langMenu: langMenu(lang, urlPath) + MENU_JS,
     filters: filters(lang),
     cards: live.map(s => card(s, lang)).join('\n'),
     count: esc(L.count.replace('{n}', live.length)),
@@ -545,7 +547,7 @@ const DETAIL_CSS = `
 .org-link span{font-size:.8125rem}
 /* 団体ページ: お金のカードと区別するため、色の帯やボタンのない落ち着いた行で並べる */
 .orgs{max-width:820px;margin-inline:auto}
-.orgs-head{padding-block:24px 8px;display:grid;gap:12px}
+.orgs-head{padding-block:24px 8px;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
 .orgs-head h1{font-size:clamp(1.6rem,5vw,2.4rem)}
 .orgs-intro{color:var(--muted);max-width:44em}
 .org-toc{display:flex;flex-wrap:wrap;gap:6px}
@@ -758,17 +760,15 @@ ${alts}
 <meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="${SITE_URL}/og/${lang}.png">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="${fontsUrl(lang)}">
+<!--@fonts@-->
 <style>${CSS}${DETAIL_CSS}</style>
 </head>
 <body>
 <div class="bar">
   <div class="bar-in">
     <a class="brand" href="${home}">${L.brand}${L.brandSub ? `<small dir="auto">${esc(L.brandSub)}</small>` : ''}</a>
-    <nav class="nav" aria-label="${esc(L.navLabel)}"><a href="${home}#list">${esc(L.navList)}</a><a href="${home}#how">${esc(L.navHow)}</a><a href="${home}#faq">${esc(L.navFaq)}</a></nav>
-    <div class="lang" role="group" aria-label="${esc(L.langLabel)}">${LANGS.map(l => `<a href="${pathFor(l)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}"${RTL.has(l) ? ' dir="rtl"' : ''}${l === lang ? ' aria-current="page"' : ''}>${LANG_NAMES[l]}</a>`).join('')}</div>
+    <nav class="nav" aria-label="${esc(L.navLabel)}"><a href="${home}#list">${esc(L.navList)}</a><a class="nav-how" href="${home}#how">${esc(L.navHow)}</a><a href="${home}#faq"><span class="nav-l">${esc(L.navFaq)}</span><span class="nav-s">${esc(L.navFaqS)}</span></a></nav>
+    ${langMenu(lang, pathFor)}${MENU_JS}
   </div>
 </div>
 <div class="wrap">
@@ -1091,6 +1091,62 @@ for (const lang of LANGS) {
   }
 }
 
+// ---- フォント: 書き出した HTML から、言語ごと・書体ごとに実際に出る文字を集め、そのサブセットを用意して <!--@fonts@--> を埋める
+const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
+const decodeEnt = t => t.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e) => e[0] === '#' ? String.fromCodePoint(e[1] === 'x' || e[1] === 'X' ? parseInt(e.slice(2), 16) : +e.slice(1)) : ENT[e] ?? m);
+const textOf = h => decodeEnt(h.replace(/<style[\s\S]*?<\/style>/g, '').replace(/<script[\s\S]*?<\/script>/g, '').replace(/<!--[\s\S]*?-->/g, '').replace(/<[^>]+>/g, ''));
+const innerAll = (h, re) => [...h.matchAll(re)].map(m => textOf(m[m.length - 1])).join('');
+// CSS の content: で出す記号（::before / ::after）
+const PSEUDO = '!›‹→←↑↓↗↩✓△✗?i+−Q✦…';
+function htmlFiles(dir, out = []) {
+  for (const f of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, f.name);
+    if (f.isDirectory()) htmlFiles(p, out); else if (f.name.endsWith('.html')) out.push(p);
+  }
+  return out;
+}
+const TAG_LANG = Object.fromEntries(Object.entries(LANG_TAG).map(([k, v]) => [v, k]));
+const pages = htmlFiles(OUT).map(file => { const html = fs.readFileSync(file, 'utf8'); return { file, html, lang: TAG_LANG[(html.match(/<html lang="([^"]+)"/) || [])[1]] }; });
+const roles = Object.fromEntries(LANGS.map(l => [l, { body: new Set(), display: new Set(), ava: new Set('zZ'), dot: new Set(), home: { body: new Set(), display: new Set(), dot: new Set() } }]));
+const add = (set, str) => { for (const c of str) set.add(c); };
+const ASCII = Array.from({ length: 95 }, (_, i) => String.fromCharCode(32 + i)).join('');
+for (const { html, lang, file } of pages) {
+  const r = roles[lang];
+  const body = textOf(html) + PSEUDO;
+  const display = innerAll(html, /<(h1|h2|h3)\b[^>]*>([\s\S]*?)<\/\1>/g) + innerAll(html, /<div class="hanko">([\s\S]*?)<\/div>/g) + innerAll(html, /<div class="book-head"><b>([\s\S]*?)<\/b>/g) + innerAll(html, /<div class="tape-in">([\s\S]*?)<\/div>/g);
+  const dotRe = lang === 'ja' || lang === 'en' ? /<(\w+)\b[^>]*\bclass="[^"]*\b(?:dot|gain)\b[^"]*"[^>]*>([\s\S]*?)<\/\1>/g : /<(\w+)\b[^>]*\bclass="[^"]*\bdot\b[^"]*"[^>]*>([\s\S]*?)<\/\1>/g;
+  const dot = innerAll(html, dotRe) + ASCII + PSEUDO;
+  add(r.body, body); add(r.display, display); add(r.dot, dot); add(r.ava, innerAll(html, /<span class="ava"[^>]*>([^<]*)<\/span>/g));
+  if (file === path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'index.html')) { add(r.home.body, body); add(r.home.display, display); add(r.home.dot, dot); }
+}
+// JS で出す文言（トーストなど）も本文の文字に入れる
+for (const l of LANGS) for (const v of Object.values(T[l])) add(roles[l].body, textOf(String(v)));
+const logoChars = new Set(LANGS.flatMap(l => [...textOf(T[l].brand)]));
+const faceList = l => {
+  const r = roles[l], disp = DISPLAY_FONT[l];
+  const list = [
+    { key: `${l}:body:400`, family: BODY_FONT[l], weight: 400, chars: r.body, first: r.home.body, preload: true },
+    { key: `${l}:body:700`, family: BODY_FONT[l], weight: 700, chars: r.body, first: r.home.body },
+    { key: `${l}:dot`, family: 'DotGothic16', weight: 400, chars: r.dot, first: r.home.dot },
+  ];
+  if (disp && disp[0] === 'Dela Gothic One') list.push({ key: `${l}:display`, family: disp[0], weight: disp[1], display: disp[2], chars: new Set([...r.display, ...r.ava]), first: new Set([...r.home.display, ...r.ava]), preload: true });
+  else {
+    if (disp) list.push({ key: `${l}:display`, family: disp[0], weight: disp[1], display: disp[2], chars: r.display, first: r.home.display, preload: true });
+    list.push({ key: `${l}:ava`, family: 'Dela Gothic One', weight: 400, chars: r.ava });
+  }
+  list.push({ key: 'logo', family: 'Zen Kaku Gothic New', cssFamily: 'FLL Logo', weight: 900, display: 'block', chars: logoChars, preload: true });
+  return list;
+};
+const FACES = ensureFonts(LANGS.flatMap(faceList).filter((f, i, a) => a.findIndex(x => x.key === f.key) === i));
+const fontHead = Object.fromEntries(LANGS.map(l => {
+  const list = faceList(l);
+  const pre = list.filter(f => f.preload && FACES[f.key] && FACES[f.key][0]).map(f => `<link rel="preload" href="/fonts/${FACES[f.key][0].file}" as="font" type="font/woff2" crossorigin>`);
+  return [l, `${pre.join('\n')}\n<style>${fontFaceCss(FACES, list)}</style>`];
+}));
+for (const { file, html, lang } of pages) fs.writeFileSync(file, html.replace('<!--@fonts@-->', fontHead[lang]));
+fs.mkdirSync(path.join(OUT, 'fonts'), { recursive: true });
+for (const f of fs.readdirSync(FONT_DIR)) if (f.endsWith('.woff2')) fs.copyFileSync(path.join(FONT_DIR, f), path.join(OUT, 'fonts', f));
+
 // SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
 const OG_SRC = path.join(__dirname, 'src/og');
 if (fs.existsSync(OG_SRC)) fs.cpSync(OG_SRC, path.join(OUT, 'og'), { recursive: true });
@@ -1411,7 +1467,7 @@ for (const [file, txt] of [['llms.txt', llmsTxt], ['llms-full.txt', llmsFull]]) 
   fs.writeFileSync(path.join(OUT, file), txt);
 }
 // Cloudflare の静的アセットは .txt を charset なしの text/plain で返すので、_headers で utf-8 を明示する（_headers 自体は配信されない）
-fs.writeFileSync(path.join(OUT, '_headers'), ['/llms.txt', '/llms-full.txt'].map(p => `${p}\n  Content-Type: text/plain; charset=utf-8\n`).join(''));
+fs.writeFileSync(path.join(OUT, '_headers'), ['/llms.txt', '/llms-full.txt'].map(p => `${p}\n  Content-Type: text/plain; charset=utf-8\n`).join('') + '/fonts/*\n  Cache-Control: public, max-age=31536000, immutable\n');
 
 // README.md のサービス表・団体一覧も同期する
 require('./readme.js').updateReadme();

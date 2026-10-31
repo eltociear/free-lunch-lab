@@ -2962,7 +2962,7 @@ module.exports = {
   "CATS": {
     "ja": {
       "all": "すべて",
-      "crypto-bi": "暗号資産BI",
+      "crypto-bi": "暗号資産ベーシックインカム",
       "exchange": "暗号資産取引所",
       "finance": "カード・銀行",
       "pointsite": "ポイントサイト",
@@ -2972,7 +2972,7 @@ module.exports = {
     },
     "en": {
       "all": "All",
-      "crypto-bi": "Crypto UBI",
+      "crypto-bi": "Crypto basic income",
       "exchange": "Crypto exchanges",
       "finance": "Cards & banks",
       "pointsite": "Cashback sites",
@@ -2982,7 +2982,7 @@ module.exports = {
     },
     "hi": {
       "all": "सभी",
-      "crypto-bi": "क्रिप्टो UBI",
+      "crypto-bi": "क्रिप्टो बेसिक इनकम",
       "exchange": "क्रिप्टो एक्सचेंज",
       "finance": "कार्ड और बैंक",
       "pointsite": "कैशबैक साइट",
@@ -2992,7 +2992,7 @@ module.exports = {
     },
     "zh": {
       "all": "全部",
-      "crypto-bi": "加密货币 UBI",
+      "crypto-bi": "加密货币基本收入",
       "exchange": "加密货币交易所",
       "finance": "信用卡与银行",
       "pointsite": "返利网站",
@@ -3002,7 +3002,7 @@ module.exports = {
     },
     "es": {
       "all": "Todos",
-      "crypto-bi": "UBI cripto",
+      "crypto-bi": "Renta básica cripto",
       "exchange": "Exchanges cripto",
       "finance": "Tarjetas y bancos",
       "pointsite": "Cashback",
@@ -3245,7 +3245,8 @@ module.exports = {
       "ebTimeline": "年表",
       "ebBadge": "バッジ",
       "riskBadge": "要注意",
-      "goWarn": "注意点を読んでから登録"
+      "goWarn": "注意点を読んでから登録",
+      "navFaqS": "Q&A"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3460,7 +3461,8 @@ module.exports = {
       "ebTimeline": "Timeline",
       "ebBadge": "Badge",
       "riskBadge": "High risk",
-      "goWarn": "Read the warnings before signing up"
+      "goWarn": "Read the warnings before signing up",
+      "navFaqS": "FAQ"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3675,7 +3677,8 @@ module.exports = {
       "ebTimeline": "समयरेखा",
       "ebBadge": "बैज",
       "riskBadge": "ज़्यादा जोखिम",
-      "goWarn": "साइन अप से पहले चेतावनी पढ़ें"
+      "goWarn": "साइन अप से पहले चेतावनी पढ़ें",
+      "navFaqS": "सवाल"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3890,7 +3893,8 @@ module.exports = {
       "ebTimeline": "时间线",
       "ebBadge": "徽章",
       "riskBadge": "高风险",
-      "goWarn": "先看注意事项再注册"
+      "goWarn": "先看注意事项再注册",
+      "navFaqS": "问答"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4105,7 +4109,8 @@ module.exports = {
       "ebTimeline": "Cronología",
       "ebBadge": "Insignia",
       "riskBadge": "Riesgo alto",
-      "goWarn": "Lee las advertencias antes de registrarte"
+      "goWarn": "Lee las advertencias antes de registrarte",
+      "navFaqS": "FAQ"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4320,7 +4325,8 @@ module.exports = {
       "ebTimeline": "الخط الزمني",
       "ebBadge": "الشارة",
       "riskBadge": "مخاطرة عالية",
-      "goWarn": "اقرأ التحذيرات قبل التسجيل"
+      "goWarn": "اقرأ التحذيرات قبل التسجيل",
+      "navFaqS": "أسئلة"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4535,7 +4541,8 @@ module.exports = {
       "ebTimeline": "Zeitleiste",
       "ebBadge": "Badge",
       "riskBadge": "Hohes Risiko",
-      "goWarn": "Erst die Warnhinweise lesen"
+      "goWarn": "Erst die Warnhinweise lesen",
+      "navFaqS": "FAQ"
     }
   },
   "ORG_REGIONS": {
