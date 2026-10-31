@@ -155,10 +155,22 @@ function contactLine(s, lang) {
 }
 
 // 申し込みボタン。codeOnly と noRef はリンク先が公式ページなので sponsored を付けない
-function cta(s, L) {
+// 紹介（リンクかコード）は金→緑の主ボタン、紹介のない noRef の「公式サイトを見る」は枠だけの副ボタン
+// warning のあるサービスは、一覧・おすすめでは紹介リンクに直接飛ばさず、個別ページの注意書きへ（toWarn）
+const warnOf = (s, lang) => (s[lang] || s.en).warning;
+function cta(s, L, { lang, toWarn = false } = {}) {
+  if (toWarn && warnOf(s, lang)) return `<a class="btn warn-go" href="${svcPath(lang, s)}#warn">${esc(L.goWarn)}</a>`;
   const label = s.codeOnly ? L.goCode : s.ref ? L.goRef : L.goOff;
-  return `<a class="btn solid" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener${s.ref && !s.codeOnly ? ' sponsored' : ''}">${esc(label)}</a>`;
+  const kind = s.ref || s.code ? 'ref' : 'off';
+  return `<a class="btn solid ${kind}" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener${s.ref && !s.codeOnly ? ' sponsored' : ''}">${esc(label)}</a>`;
 }
+// 注意書きの強さ: danger（warning のあるサービスだけ）/ caution（換金・市場価格が「なし」か運営元が不明）/ info（それ以外）
+function cautionLevel(s, lang) {
+  if (warnOf(s, lang)) return 'danger';
+  const t = s.trust || {};
+  return t.cash === 'no' || t.price === 'no' || t.operator === 'unknown' ? 'caution' : 'info';
+}
+const cautionBox = (s, lang, text) => `<p class="caution lv-${cautionLevel(s, lang)}"><span><b>${esc(T[lang].cautionP.trim())}</b> ${esc(text)}</span></p>`;
 
 // アイコン代わりのモノグラム（ロゴは使わない）。日本語名は頭の1文字、英字は大文字2つか頭2文字
 const MONO = { honeygain: 'Hg', pinetwork: 'Pi', wavee: 'W' };
@@ -174,15 +186,15 @@ function card(s, lang) {
   const d = s[lang] || s.en;
   const name = lang === 'ja' ? s.name : s.nameEn || s.name;
   return `<article class="svc rv" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top">${ava(s, name)}<div class="svc-id"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span><a href="${svcPath(lang, s)}">${nameHtml(name)}</a></h3>${tags(s, L)}</div></div>
+<div class="svc-top">${ava(s, name)}<div class="svc-id"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span><a href="${svcPath(lang, s)}">${nameHtml(name)}</a></h3>${tags(s, L, lang)}</div></div>
 <p class="gain">${esc(d.gain)}</p>
 <div class="desc"><p id="d-${s.id}">${esc(d.note)}</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-${s.id}" hidden>${esc(L.more)}</button></div>
 <p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
 ${meta(s, lang)}
-${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
+${d.caution ? cautionBox(s, lang, d.caution) : ''}
 ${contactLine(s, lang)}
 ${checkedLine(s, lang)}
-${slip(s, L)}
+${slip(s, L, { lang, toWarn: true })}
 </article>`;
 }
 
@@ -193,18 +205,19 @@ function nameHtml(name) {
 }
 // カードと個別ページで共通の部品
 const ava = (s, name) => `<span class="ava" aria-hidden="true" dir="auto">${esc(mono(s, name))}</span>`;
-const tags = (s, L) => `<div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div>`;
+const tags = (s, L, lang) => `<div class="tags">${warnOf(s, lang) ? `<span class="risk">${esc(L.riskBadge)}</span>` : ''}${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div>`;
 function meta(s, lang) {
   const L = T[lang];
   return `<div class="meta"><span class="ease"><span>${esc(L.ease)}</span>${meter(s.ease)}</span><span class="region${s.global ? ' world' : ''}"><span class="vh">${esc(L.region)}: </span>${esc(s.onlyIn ? L['only_' + s.onlyIn] : s.global ? L.global : L.jp)}</span>${trust(s, lang)}</div>`;
 }
-function slip(s, L) {
+function slip(s, L, opt = {}) {
   const has = !!s.code;
+  if (opt.toWarn && warnOf(s, opt.lang)) return `<div class="slip">${cta(s, L, opt)}</div>`;
   // 紹介リンクがあるものはコード欄・コピーボタンを出さない。codeOnly はリンクが公式ページだけなのでコードを出す
   // noRef は紹介制度がないのでコード欄も出さない
   // showCode: true は、紹介リンクに加えて登録時にコード入力も求められるサービス（アプリストア経由だとリンクが効かないことがある）
   const showCode = (!s.ref && !s.noRef) || s.codeOnly || s.showCode;
-  return `<div class="slip">${showCode ? `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot"${has ? ' dir="ltr"' : ''}>${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>` : ''}${cta(s, L)}</div>`;
+  return `<div class="slip">${showCode ? `<div class="code${has ? '' : ' empty'}"><span class="label">${esc(L.code)}</span><span class="dot"${has ? ' dir="ltr"' : ''}>${has ? esc(s.code) : esc(L.pending)}</span></div><button class="btn line" type="button"${has ? ` data-code="${esc(s.code)}"` : ' disabled'}>${esc(L.copy)}</button>` : ''}${cta(s, L, opt)}</div>`;
 }
 
 // 流れるテープ（サービス名＋もらえるもの）
@@ -222,7 +235,7 @@ function picks(lang) {
     const name = lang === 'ja' ? s.name : s.nameEn || s.name;
     return `<article class="pick rv"><div class="pick-top"><span class="rank dot">${i + 1}</span><div><span class="cat">${esc(CATS[lang][s.cat])}</span><h3>${nameHtml(name)}</h3></div></div>
 <p>${esc(p[lang] || p.en)}</p>
-${cta(s, L)}
+${cta(s, L, { lang, toWarn: true })}
 <a class="more" href="#svc-${s.id}">${esc(L.pickMore)} ↓</a>
 </article>`;
   }).join('\n');
@@ -502,10 +515,18 @@ const DETAIL_CSS = `
 .detail .body{font-size:.98rem;line-height:1.9}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
-.detail .caution{font-size:.88rem}
+.detail .caution{font-size:.92rem}
+/* 個別ページの上: もらえるもの・ラク度・信頼の目安・ボタンをひとまとめに（スマホでも最初の画面に） */
+.sum{display:grid;gap:10px;padding:16px;border-radius:14px;border:1px solid color-mix(in srgb,var(--c) 35%,var(--line));background:color-mix(in srgb,var(--c) 6%,var(--surface))}
+.sum h2{margin-top:0}
+.sum .slip{padding-top:2px}
+.slip-end{padding-top:4px}
 /* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
 .svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
 .svc-warn p{margin:0}
+.svc-warn .warn-more{font-size:.9rem;color:var(--ink);padding-top:8px;border-top:1px dashed color-mix(in srgb,var(--stamp) 35%,var(--line))}
+.svc-warn .warn-more b{color:var(--stamp)}
+.svc-warn{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 .svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
 .svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8125rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
@@ -662,20 +683,23 @@ function servicePage(s, lang) {
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${home}#list">${esc(L.listH)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
 <main>
 <article class="svc detail" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top">${ava(s, name)}<div class="svc-id"><span class="cat">${esc(CATS[lang][s.cat])}</span><h1>${nameHtml(name)}</h1>${tags(s, L)}</div></div>
-${d.warning ? `<div class="warn svc-warn" role="note"><p class="warn-h">${esc(L.svcWarnH)}</p><p>${esc(d.warning)}</p></div>` : ''}
+<div class="svc-top">${ava(s, name)}<div class="svc-id"><span class="cat">${esc(CATS[lang][s.cat])}</span><h1>${nameHtml(name)}</h1>${tags(s, L, lang)}</div></div>
+${d.warning ? `<div class="warn svc-warn" id="warn" role="note"><p class="warn-h">${esc(L.svcWarnH)}</p><p>${esc(d.warning)}</p>${d.caution ? `<p class="warn-more"><b>${esc(L.cautionP.trim())}</b> ${esc(d.caution)}</p>` : ''}</div>` : ''}
+<div class="sum">
 <h2>${esc(L.hGain)}</h2>
 <p class="gain">${esc(d.gain)}</p>
+${meta(s, lang)}
+${slip(s, L)}
+</div>
 <h2>${esc(L.hAbout.replace('{name}', name))}</h2>
 <p class="body">${esc(d.note)}</p>
 <h2>${esc(L.hNeed)}</h2>
 <p class="body">${esc(d.need)}</p>
-${meta(s, lang)}
-${d.caution ? `<p class="caution">${esc(L.cautionP + d.caution)}</p>` : ''}
+${d.caution && !d.warning ? cautionBox(s, lang, d.caution) : ''}
 ${contactLine(s, lang)}
 ${checkedLine(s, lang)}
 ${(s.verify || []).length ? `<p class="verify-line"><b>${esc(L.verifyLabel)}</b>${s.verify.map(v => { const nm = esc(VERIFY[v.method].name[lang]) + (v.optional ? (lang === 'ja' || lang === 'zh' ? `（${esc(L.verifyOpt)}）` : ` (${esc(L.verifyOpt)})`) : ''); return verifyPages.includes(v.method) ? `<a href="${verifyPath(lang, v.method)}" dir="auto">${nm}</a>` : `<span dir="auto">${nm}</span>`; }).join('')}</p>` : ''}
-${slip(s, L)}
+<div class="slip slip-end">${cta(s, L)}</div>
 ${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#org-${org.id}">${esc(org.name)}</a> <span>(${esc(L.orgsTitle)})</span></p>` : ''}
 </article>
 <section id="related">

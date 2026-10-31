@@ -3243,7 +3243,9 @@ module.exports = {
       "ebDawn": "おはよう",
       "ebEssay": "エッセイ",
       "ebTimeline": "年表",
-      "ebBadge": "バッジ"
+      "ebBadge": "バッジ",
+      "riskBadge": "要注意",
+      "goWarn": "注意点を読んでから登録"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3456,7 +3458,9 @@ module.exports = {
       "ebDawn": "Good morning",
       "ebEssay": "Essay",
       "ebTimeline": "Timeline",
-      "ebBadge": "Badge"
+      "ebBadge": "Badge",
+      "riskBadge": "High risk",
+      "goWarn": "Read the warnings before signing up"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3669,7 +3673,9 @@ module.exports = {
       "ebDawn": "सुप्रभात",
       "ebEssay": "निबंध",
       "ebTimeline": "समयरेखा",
-      "ebBadge": "बैज"
+      "ebBadge": "बैज",
+      "riskBadge": "ज़्यादा जोखिम",
+      "goWarn": "साइन अप से पहले चेतावनी पढ़ें"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3882,7 +3888,9 @@ module.exports = {
       "ebDawn": "早安",
       "ebEssay": "随笔",
       "ebTimeline": "时间线",
-      "ebBadge": "徽章"
+      "ebBadge": "徽章",
+      "riskBadge": "高风险",
+      "goWarn": "先看注意事项再注册"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4095,7 +4103,9 @@ module.exports = {
       "ebDawn": "Buenos días",
       "ebEssay": "Ensayo",
       "ebTimeline": "Cronología",
-      "ebBadge": "Insignia"
+      "ebBadge": "Insignia",
+      "riskBadge": "Riesgo alto",
+      "goWarn": "Lee las advertencias antes de registrarte"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4308,7 +4318,9 @@ module.exports = {
       "ebDawn": "صباح الخير",
       "ebEssay": "مقالة",
       "ebTimeline": "الخط الزمني",
-      "ebBadge": "الشارة"
+      "ebBadge": "الشارة",
+      "riskBadge": "مخاطرة عالية",
+      "goWarn": "اقرأ التحذيرات قبل التسجيل"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4521,7 +4533,9 @@ module.exports = {
       "ebDawn": "Guten Morgen",
       "ebEssay": "Essay",
       "ebTimeline": "Zeitleiste",
-      "ebBadge": "Badge"
+      "ebBadge": "Badge",
+      "riskBadge": "Hohes Risiko",
+      "goWarn": "Erst die Warnhinweise lesen"
     }
   },
   "ORG_REGIONS": {

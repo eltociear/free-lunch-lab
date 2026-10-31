@@ -223,8 +223,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .meter i.on{background:var(--c,var(--accent))}
 .region{border:1px solid var(--line);color:var(--muted);font-weight:400;line-height:1.5;padding-block:1px}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
-.caution{display:flex;gap:9px;align-items:flex-start;font-size:.8125rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
-.caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.8125rem;line-height:1}
+/* 注意書きは3段階。本文はふつうの文字色で、色は左の線とアイコンだけ。info（灰）/ caution（琥珀）/ danger（赤: warning のあるサービスだけ） */
+.caution{--lv:#8D97AE;display:flex;gap:10px;align-items:flex-start;font-size:.875rem;line-height:1.7;color:var(--ink);padding:10px 12px;border-radius:10px;
+  border:1px solid color-mix(in srgb,var(--lv) 30%,var(--line));border-inline-start:3px solid var(--lv);background:color-mix(in srgb,var(--lv) 7%,var(--surface))}
+.caution::before{content:"i";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--lv);color:#0E1320;font-weight:700;font-size:.8125rem;line-height:1;font-family:var(--f-body)}
+.caution b{color:var(--lv);font-weight:700}
+.caution.lv-info b{color:var(--muted)}
+.caution.lv-caution{--lv:var(--amber)}
+.caution.lv-caution::before,.caution.lv-danger::before{content:"!"}
+.caution.lv-danger{--lv:var(--stamp)}
+/* warning のあるサービスの「要注意」バッジ */
+.risk{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;font-weight:700;line-height:1.5;padding:1px 9px 1px 4px;border-radius:999px;white-space:nowrap;color:#2A0B07;background:var(--stamp)}
+.risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
 .checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
@@ -364,12 +374,20 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 /* card CTA */
 .max{font-size:.8125rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.45)}
-.slip .btn.solid{background:var(--pos);color:var(--paper);border-radius:12px;padding-block:12px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
-.slip .btn.solid::after{content:"→";transition:transform .2s ease}
-[dir="rtl"] .slip .btn.solid::after{content:"←"}
-.slip .btn.solid:hover{background:var(--pos);filter:brightness(1.08)}
-.slip .btn.solid:hover::after{transform:translateX(4px)}
-[dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
+/* 紹介ボタンはサイト全体でひとつの見た目（金→緑、濃い文字）。紹介のない公式サイトへのリンクは枠だけ、warning のあるものは赤枠で個別ページへ */
+.btn.ref,.btn.off,.btn.warn-go{border-radius:12px;padding:12px 16px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
+.btn.ref{background:var(--cta);color:var(--cta-ink);box-shadow:0 10px 28px -14px rgba(108,240,176,.7)}
+.btn.ref:hover{background:var(--cta);filter:brightness(1.06)}
+.btn.ref::after{content:"→";transition:transform .2s ease}
+[dir="rtl"] .btn.ref::after{content:"←"}
+.btn.ref:hover::after{transform:translateX(4px)}
+[dir="rtl"] .btn.ref:hover::after{transform:translateX(-4px)}
+.btn.off{background:transparent;color:var(--ink);border:1.5px solid color-mix(in srgb,var(--gold) 55%,var(--line))}
+.btn.off:hover{background:color-mix(in srgb,var(--gold) 10%,transparent)}
+.btn.off::after{content:"↗";font-weight:400}
+.btn.warn-go{background:color-mix(in srgb,var(--stamp) 10%,transparent);color:var(--ink);border:1.5px solid var(--stamp)}
+.btn.warn-go::before{content:"!";flex:none;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:#2A0B07;font-size:.8125rem;line-height:1}
+.btn.warn-go:hover{background:color-mix(in srgb,var(--stamp) 18%,transparent)}
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
@@ -393,10 +411,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .pick .cat{color:#A9B2D8}
 .pick h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:1.3rem;line-height:1.3;color:#fff}
 .pick p{font-size:.9rem;color:#C9D0EE;line-height:1.65}
-.pick .btn.solid{margin-top:auto;background:#FFD66B;color:#141A3A;padding-block:10px;gap:8px;white-space:normal;text-align:center}
-.pick .btn.solid::after{content:"→"}
-[dir="rtl"] .pick .btn.solid::after{content:"←"}
-.pick .btn.solid:hover{background:#FFE59A}
+.pick .btn{margin-top:auto}
+.pick .btn.off{color:#fff}
 .pick .more{font-size:.8125rem;color:#A9B2D8;text-align:center;text-underline-offset:3px;display:flex;align-items:center;justify-content:center;min-height:44px;margin-block:-6px}
 .pick .more:hover{color:#fff}
 
@@ -482,10 +498,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .body{font-size:.98rem;line-height:1.9}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
-.detail .caution{font-size:.88rem}
+.detail .caution{font-size:.92rem}
+/* 個別ページの上: もらえるもの・ラク度・信頼の目安・ボタンをひとまとめに（スマホでも最初の画面に） */
+.sum{display:grid;gap:10px;padding:16px;border-radius:14px;border:1px solid color-mix(in srgb,var(--c) 35%,var(--line));background:color-mix(in srgb,var(--c) 6%,var(--surface))}
+.sum h2{margin-top:0}
+.sum .slip{padding-top:2px}
+.slip-end{padding-top:4px}
 /* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
 .svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
 .svc-warn p{margin:0}
+.svc-warn .warn-more{font-size:.9rem;color:var(--ink);padding-top:8px;border-top:1px dashed color-mix(in srgb,var(--stamp) 35%,var(--line))}
+.svc-warn .warn-more b{color:var(--stamp)}
+.svc-warn{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 .svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
 .svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8125rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
@@ -625,7 +649,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-wavee" data-cat="career" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><h3><span class="cat">जॉब मैचिंग</span><a href="/hi/services/wavee/">WAVEE</a></h3><div class="tags"><span class="type loop">बार-बार</span></div></div></div>
@@ -633,10 +657,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-wavee">इनवाइट-ओनली जॉब मैचिंग। आपके बुलाए व्यक्ति (या उनके बुलाए व्यक्ति) को जब भी नौकरी मिले, आपको बार-बार रेफ़रल हिस्सा मिलता है (7.5–15%)। DMM, GMO Pepabo जैसी कंपनियाँ नौकरियाँ डालती हैं</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wavee" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>इनवाइट लिंक से साइन अप करें</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: कमाई नौकरी मैच होने पर ही होती है। दरें जून 2024 के आधिकारिक नोट से हैं</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> कमाई नौकरी मैच होने पर ही होती है। दरें जून 2024 के आधिकारिक नोट से हैं</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-trima" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Tr</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/trima/">Trima</a></h3><div class="tags"><span class="max">सेट करो, भूल जाओ</span><span class="type loop">बार-बार</span></div></div></div>
@@ -644,10 +668,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-trima">एक ऐप जिसमें बस फ़ोन साथ लेकर सफ़र करने या पैदल चलने से माइल जमा होते हैं। इनवाइट कोड डालने पर बुलाने वाले और नए यूज़र, दोनों को 5,000 माइल मिलते हैं (जुलाई 2026 की जानकारी)। माइल को गिफ़्ट कार्ड, नकद आदि में बदल सकते हैं</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-trima" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>ऐप इंस्टॉल करें और रजिस्ट्रेशन के समय इनवाइट कोड 49‑icnRep डालें</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region"><span class="vh">क्षेत्र: </span>सिर्फ़ जापान</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-yes" title="नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✓</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: बोनस की राशि और समय बदल सकते हैं। लोकेशन की अनुमति हमेशा चालू रखनी होती है और बैटरी थोड़ी ज़्यादा खर्च होती है</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> बोनस की राशि और समय बदल सकते हैं। लोकेशन की अनुमति हमेशा चालू रखनी होती है और बैटरी थोड़ी ज़्यादा खर्च होती है</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">कॉपी</button><a class="btn solid" href="https://www.trip-mile.com/" target="_blank" rel="noopener">ऐप इंस्टॉल करें और कोड डालें</a></div>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">कॉपी</button><a class="btn solid ref" href="https://www.trip-mile.com/" target="_blank" rel="noopener">ऐप इंस्टॉल करें और कोड डालें</a></div>
 </article>
 <article class="svc rv" id="svc-sweatcoin" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Sw</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/sweatcoin/">Sweatcoin</a></h3><div class="tags"><span class="max">सेट करो, भूल जाओ</span><span class="type loop">बार-बार</span></div></div></div>
@@ -655,10 +679,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-sweatcoin">फ़ोन साथ लेकर चलें, आपके कदम अपने-आप कॉइन में बदल जाते हैं। इन्हें ऐप के मार्केटप्लेस में सामान, छूट या दान के लिए इस्तेमाल करें</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-sweatcoin" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>ऐप इंस्टॉल करें और कदम व लोकेशन की अनुमति दें</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: नकद में बदलने की कोई तय दर नहीं है। फ़्री प्लान में रोज़ बदले जा सकने वाले कदमों की सीमा है</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> नकद में बदलने की कोई तय दर नहीं है। फ़्री प्लान में रोज़ बदले जा सकने वाले कदमों की सीमा है</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-grass" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/grass/">Grass</a></h3><div class="tags"><span class="max">सेट करो, भूल जाओ</span><span class="type loop">बार-बार</span></div></div></div>
@@ -666,10 +690,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-grass">एक DePIN जो आपकी बिना इस्तेमाल हुई बैंडविड्थ को AI वेब स्क्रैपिंग के लिए किराए पर देता है। ब्राउज़र एक्सटेंशन या ऐप चालू रखें; अपटाइम और असल में इस्तेमाल हुई बैंडविड्थ के हिसाब से पॉइंट मिलते हैं, जो सीज़न वाले एयरड्रॉप में बँटते हैं</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-grass" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>ईमेल से साइन अप करें, एक्सटेंशन या ऐप इंस्टॉल करें और कनेक्ट रहें</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✓</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। इनाम एयरड्रॉप पर निर्भर है, इसलिए रकम और समय तय नहीं</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। इनाम एयरड्रॉप पर निर्भर है, इसलिए रकम और समय तय नहीं</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-honeygain" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Hg</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/honeygain/">Honeygain</a></h3><div class="tags"><span class="max">सेट करो, भूल जाओ</span><span class="type loop">बार-बार</span></div></div></div>
@@ -677,10 +701,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-honeygain">बैंडविड्थ शेयर करने वाला सबसे जाना-माना ऐप: यह आपके खाली इंटरनेट कनेक्शन को कंपनियों को वेब डेटा जुटाने के लिए किराए पर देता है। रेफ़रल से साइन अप करने पर $3 वेलकम बोनस (आधिकारिक ब्लॉग के अनुसार)। $20 होने पर PayPal आदि से निकाल सकते हैं</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-honeygain" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>ईमेल से साइन अप करें, PC या फ़ोन पर ऐप इंस्टॉल करें और चालू छोड़ दें</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-yes" title="नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✓</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। कमाई आपके इलाक़े की माँग पर निर्भर है और कुछ जगहों पर बहुत कम होती है</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं। कमाई आपके इलाक़े की माँग पर निर्भर है और कुछ जगहों पर बहुत कम होती है</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-pawns" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/pawns/">Pawns.app</a></h3><div class="tags"><span class="type loop">बार-बार</span></div></div></div>
@@ -688,10 +712,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-pawns">IPRoyal का बैंडविड्थ शेयर करने वाला ऐप। डेस्कटॉप ऐप चालू छोड़ दें, आपका खाली कनेक्शन कमाई करता है। सर्वे और गेम से भी कमाई होती है। $5 से PayPal, Bitcoin आदि से निकालें</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pawns" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>ईमेल से साइन अप करें, डेस्कटॉप ऐप इंस्टॉल करें और चालू छोड़ दें</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-yes" title="नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✓</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: मोबाइल पर बैंडविड्थ शेयरिंग अप्रैल 2026 में बंद हो गई, इसलिए पैसिव कमाई सिर्फ़ डेस्कटॉप पर है। आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं, और कमाई कम होती है</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> मोबाइल पर बैंडविड्थ शेयरिंग अप्रैल 2026 में बंद हो गई, इसलिए पैसिव कमाई सिर्फ़ डेस्कटॉप पर है। आपका IP पता दूसरे लोग डेटा जुटाने के लिए इस्तेमाल करते हैं, और कमाई कम होती है</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">DK</span><div class="svc-id"><h3><span class="cat">क्रिप्टो UBI</span><a href="/hi/services/deltakim/">Delta Kim</a></h3><div class="tags"><span class="type loop">बार-बार</span></div></div></div>
@@ -699,10 +723,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-deltakim">Pi Network जैसा एक क्रिप्टो ऐप, जिसमें आप फ़ोन पर रोज़ “माइनिंग” करते हैं। कहा जाता है कि रेफ़रल कोड से साइन अप करने पर माइनिंग की रफ़्तार बढ़ जाती है</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-deltakim" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>इनवाइट लिंक से साइन अप करें और ऐप में रोज़ माइनिंग बटन दबाएँ</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-unknown" title="नकदी (क्या इसे पैसे में बदल सकते हैं): अपुष्ट"><span aria-hidden="true">नकदी</span><b aria-hidden="true">?</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): अपुष्ट</span></li><li class="t-no" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✗</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं</span></li><li class="t-unknown" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट"><span aria-hidden="true">संचालक</span><b aria-hidden="true">?</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट</span></li></ul></div>
-<p class="caution">ध्यान दें: अक्टूबर 2026 तक किसी एक्सचेंज पर लिस्टिंग या बाज़ार मूल्य की पुष्टि नहीं हो सकी, इसलिए यह साफ़ नहीं कि इसे नकद में बदला जा सकेगा या नहीं। कुछ लोगों का कहना है कि माइनिंग के बावजूद बैलेंस बढ़ना बंद हो गया। रोज़ ऐप चलाना ज़रूरी है</p>
+<p class="caution lv-caution"><span><b>ध्यान दें:</b> अक्टूबर 2026 तक किसी एक्सचेंज पर लिस्टिंग या बाज़ार मूल्य की पुष्टि नहीं हो सकी, इसलिए यह साफ़ नहीं कि इसे नकद में बदला जा सकेगा या नहीं। कुछ लोगों का कहना है कि माइनिंग के बावजूद बैलेंस बढ़ना बंद हो गया। रोज़ ऐप चलाना ज़रूरी है</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-meingrundeinkommen" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
@@ -710,10 +734,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-meingrundeinkommen">बर्लिन की एक नॉन-प्रॉफ़िट संस्था की मुफ़्त लॉटरी, जो क्राउडफ़ंडिंग दान से चलती है। ड्रॉ नियमित रूप से होते हैं, और हर विजेता को 12 महीने तक हर महीने €1,000 बिना किसी शर्त के मिलते हैं (असली नकद, क्रिप्टो नहीं)</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-meingrundeinkommen" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>ईमेल से रजिस्टर करें और हर ड्रॉ के लिए अपनी भागीदारी कन्फ़र्म करें। उम्र 16 साल या ज़्यादा होनी चाहिए, और जीतने पर नाम व जन्मतिथि आपकी ID से मेल खानी चाहिए</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-yes" title="नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✓</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: संस्था ने 2020 में कहा था कि उम्र या रहने की जगह से फ़र्क नहीं पड़ता, कोई भी भाग ले सकता है, लेकिन जर्मनी के बाहर रहने वालों के मौजूदा नियम और विदेश में भुगतान की पुष्टि नहीं हुई है। साइट जर्मन भाषा में है। यह लॉटरी है, इसलिए ज़्यादातर लोगों को कुछ नहीं मिलता। जीती हुई रकम पर आपके देश में टैक्स लग सकता है</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> संस्था ने 2020 में कहा था कि उम्र या रहने की जगह से फ़र्क नहीं पड़ता, कोई भी भाग ले सकता है, लेकिन जर्मनी के बाहर रहने वालों के मौजूदा नियम और विदेश में भुगतान की पुष्टि नहीं हुई है। साइट जर्मन भाषा में है। यह लॉटरी है, इसलिए ज़्यादातर लोगों को कुछ नहीं मिलता। जीती हुई रकम पर आपके देश में टैक्स लग सकता है</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-ubi4all" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/ubi4all/">UBI4ALL</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
@@ -721,10 +745,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-ubi4all">एक जर्मन नॉन-प्रॉफ़िट का मुफ़्त ड्रॉ। हर बार दान से €9,600 जमा होने पर कुल €9,600 की बेसिक इनकम का ड्रॉ होता है, जो बिना शर्त नकद मिलती है। जापान जैसे ऊँची आय वाले देशों को 1 साल तक €800 महीना, कम आय वाले देशों को 5 साल तक €160 महीना। कोई रेफ़रल बोनस नहीं</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-ubi4all" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>आधिकारिक साइट पर मुफ़्त अकाउंट बनाएँ और हर ड्रॉ के लिए रजिस्टर करें (€1 से मासिक दान करने वाले अपने-आप शामिल)। उम्र 16+ होनी चाहिए, और विजेताओं की ID से जाँच होती है। इस साइट ने जापान से साइन-अप अभी आज़माया नहीं है</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-yes" title="नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✓</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: यह लॉटरी है, इसलिए जीतने की संभावना कम है और भाग लेने वालों की संख्या पर निर्भर है। ड्रॉ तभी होता है जब दान से €9,600 पूरे हो जाते हैं, इसलिए समय तय नहीं है। UBI Beaver न हों तो हर ड्रॉ के लिए रजिस्टर करना पड़ता है। पिछले विजेता के देश के निवासी अगले ड्रॉ में शामिल नहीं हो सकते। भुगतान SEPA बैंक खातों में होता है; दूसरे तरीकों की फ़ीस इनाम से काटी जाती है। इनाम पर टैक्स आपके देश पर निर्भर है</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> यह लॉटरी है, इसलिए जीतने की संभावना कम है और भाग लेने वालों की संख्या पर निर्भर है। ड्रॉ तभी होता है जब दान से €9,600 पूरे हो जाते हैं, इसलिए समय तय नहीं है। UBI Beaver न हों तो हर ड्रॉ के लिए रजिस्टर करना पड़ता है। पिछले विजेता के देश के निवासी अगले ड्रॉ में शामिल नहीं हो सकते। भुगतान SEPA बैंक खातों में होता है; दूसरे तरीकों की फ़ीस इनाम से काटी जाती है। इनाम पर टैक्स आपके देश पर निर्भर है</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://www.ubi4all.org/" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div>
+<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div>
 </article>
 <article class="svc rv" id="svc-gradido" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/gradido/">Gradido</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
@@ -732,10 +756,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-gradido">एक मुद्रा व्यवस्था जो ख़ुद को “प्राकृतिक अर्थव्यवस्था” कहती है। जनहित के काम पर “एक्टिव बेसिक इनकम” मिलती है: 20 GDD प्रति घंटा, महीने में अधिकतम 1,000 GDD। बिना ख़र्च किया पैसा साल में 50% की दर से घटता है। संचालक ऑस्ट्रिया की Gradido Akademie</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-gradido" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>रेफ़रल लिंक से मुफ़्त Gradido अकाउंट बनाएँ, जनहित के योगदान दर्ज करें और GDD पाएँ (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-unknown" title="नकदी (क्या इसे पैसे में बदल सकते हैं): अपुष्ट"><span aria-hidden="true">नकदी</span><b aria-hidden="true">?</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): अपुष्ट</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: आधिकारिक FAQ के अनुसार अभी यह “धन्यवाद पॉइंट इनाम व्यवस्था” है, क्रिप्टोकरेंसी नहीं। GDD को यूरो या दूसरे पैसे में बदलने का कोई आधिकारिक तरीक़ा नहीं बताया गया। आपका रेफ़र किया व्यक्ति बाद में आर्थिक योगदान (जैसे दान) दे, तो आपको GDT मिलता है; सिर्फ़ साइन अप पर कुछ नहीं</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> आधिकारिक FAQ के अनुसार अभी यह “धन्यवाद पॉइंट इनाम व्यवस्था” है, क्रिप्टोकरेंसी नहीं। GDD को यूरो या दूसरे पैसे में बदलने का कोई आधिकारिक तरीक़ा नहीं बताया गया। आपका रेफ़र किया व्यक्ति बाद में आर्थिक योगदान (जैसे दान) दे, तो आपको GDT मिलता है; सिर्फ़ साइन अप पर कुछ नहीं</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-wowapp" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">WA</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/wowapp/">WowApp</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
@@ -743,10 +767,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-wowapp">चैट और कॉलिंग ऐप के साथ इनाम व्यवस्था। रोज़ की “UBI”, गेम, शॉपिंग कैशबैक वग़ैरह से इनाम जमा होते हैं, जिन्हें निकाल सकते हैं या चैरिटी को दान कर सकते हैं। आपके बुलाए दोस्तों जैसा आपका नेटवर्क सक्रिय हो, तो आपका इनाम भी बढ़ता है</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wowapp" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>रेफ़रल लिंक से मुफ़्त साइन अप करें और रोज़ ऐप इस्तेमाल करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-partial" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">△</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ</span></li></ul></div>
-<p class="caution">ध्यान दें: इनाम आपके बुलाए लोगों से आगे के लोगों की गतिविधि से भी मिलते हैं: यह मल्टी-लेवल व्यवस्था है। रोज़ की रकम बहुत कम है और असली आय नहीं बनेगी। PayPal निकासी पर न्यूनतम रकम जैसी शर्तें बताई जाती हैं। जापान में App Store रेटिंग 3.2 है, और निकासी न होने की शिकायतें हैं</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> इनाम आपके बुलाए लोगों से आगे के लोगों की गतिविधि से भी मिलते हैं: यह मल्टी-लेवल व्यवस्था है। रोज़ की रकम बहुत कम है और असली आय नहीं बनेगी। PayPal निकासी पर न्यूनतम रकम जैसी शर्तें बताई जाती हैं। जापान में App Store रेटिंग 3.2 है, और निकासी न होने की शिकायतें हैं</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-rewardme" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/rewardme/">RewardMe</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
@@ -754,10 +778,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-rewardme">ईमेल जोड़ें, और यह रसीद वाले ईमेल से Amazon, Uber जैसे पार्टनर स्टोर की ख़रीदारी ढूँढकर 5% तक इनाम देता है। इनाम गिफ़्ट कार्ड में ले सकते हैं या क्रिप्टो टोकन MDT के रूप में निकाल सकते हैं। रेफ़रल कोड से साइन अप पर दोनों तरफ़ बोनस। प्रकाशक हांगकांग की Magic Crystal Limited</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-rewardme" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>रेफ़रल लिंक से साइन अप करें और रजिस्ट्रेशन के समय रेफ़रल कोड 7HOdyg डालें। ईमेल अकाउंट जोड़ें और योग्य दुकानों पर ख़रीदारी करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✓</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ</span></li><li class="t-partial" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">△</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ</span></li></ul></div>
-<p class="caution">ध्यान दें: यह जोड़े गए इनबॉक्स के व्यावसायिक ईमेल पढ़ता है, और इसकी प्राइवेसी पॉलिसी कहती है कि पहचान हटाया गया डेटा कंपनियों को बेचा या साझा किया जाता है। गिफ़्ट कार्ड की मंज़ूरी में 7–14 कार्यदिवस लगते हैं। 6 महीने इस्तेमाल न करने पर बैलेंस ख़त्म हो सकता है। बोनस की रकम आधिकारिक तौर पर नहीं बताई गई</p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> यह जोड़े गए इनबॉक्स के व्यावसायिक ईमेल पढ़ता है, और इसकी प्राइवेसी पॉलिसी कहती है कि पहचान हटाया गया डेटा कंपनियों को बेचा या साझा किया जाता है। गिफ़्ट कार्ड की मंज़ूरी में 7–14 कार्यदिवस लगते हैं। 6 महीने इस्तेमाल न करने पर बैलेंस ख़त्म हो सकता है। बोनस की रकम आधिकारिक तौर पर नहीं बताई गई</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">कॉपी</button><a class="btn solid" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">कॉपी</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-jrkripto" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
@@ -765,21 +789,21 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-jrkripto">JrKripto का मोबाइल ऐप, जो तुर्की की एक क्रिप्टो न्यूज़, विश्लेषण और प्राइस-ट्रैकिंग साइट है; इसके संस्थापक शेयर बाज़ार की साइट JrHisse भी चलाते हैं। ऐप में दिन में एक बार टैप करें, और अगले 24 घंटों में JR पॉइंट जमा होते हैं। इनवाइट कोड से साइन अप करके ईमेल वेरिफ़ाई करने पर 50 JR का बोनस मिलता है</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-jrkripto" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>इनवाइट लिंक से साइन अप करें और अपना ईमेल वेरिफ़ाई करें (पहचान पत्र ज़रूरी नहीं)। फिर ऐप में रोज़ एक बार टैप करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-no" title="नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✗</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं</span></li><li class="t-partial" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">△</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ</span></li></ul></div>
-<p class="caution">ध्यान दें: इनवाइट पेज पर ही लिखा है कि “JR एक इन-ऐप पॉइंट है; इसे न बेचा जा सकता है, न ट्रांसफ़र किया जा सकता है।” अक्टूबर 2026 तक इसे नकद में बदलने का कोई तरीका नहीं है, इसलिए इसकी कोई भी क़ीमत भविष्य के संभावित इस्तेमाल पर निर्भर है। रोज़ टैप न करें तो पॉइंट जमा नहीं होते। Google Play पर पैकेज का नाम “com.yourcompany.jrkripto” है, जो बिना बदले टेम्पलेट नाम जैसा लगता है</p>
+<p class="caution lv-caution"><span><b>ध्यान दें:</b> इनवाइट पेज पर ही लिखा है कि “JR एक इन-ऐप पॉइंट है; इसे न बेचा जा सकता है, न ट्रांसफ़र किया जा सकता है।” अक्टूबर 2026 तक इसे नकद में बदलने का कोई तरीका नहीं है, इसलिए इसकी कोई भी क़ीमत भविष्य के संभावित इस्तेमाल पर निर्भर है। रोज़ टैप न करें तो पॉइंट जमा नहीं होते। Google Play पर पैकेज का नाम “com.yourcompany.jrkripto” है, जो बिना बदले टेम्पलेट नाम जैसा लगता है</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3><div class="tags"><span class="risk">ज़्यादा जोखिम</span><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
 <p class="gain">$ORE माइनिंग बैलेंस (मुफ़्त, हर बार 24 घंटे)</p>
 <div class="desc"><p id="d-miningmachine">एक साइट जहाँ ब्राउज़र में “माइनिंग मशीन” $ORE बैलेंस जमा करती है। जुड़ना मुफ़्त है, न जमा राशि, न इंस्टॉल। एक मुफ़्त मशीन 24 घंटे के सत्र में चलती है। पैसे देकर मशीनें जोड़ सकते हैं। बुलाने वाले को बुलाए गए व्यक्ति की माइनिंग का 10% और उसके ख़र्च का 10% मिलता है</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>इनवाइट लिंक से मुफ़्त साइन अप करें (ईमेल या X से लॉग इन, पहचान पत्र ज़रूरी नहीं)। फिर हर 24 घंटे में माइनिंग सेशन शुरू करें (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-no" title="नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✗</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं</span></li><li class="t-no" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✗</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं</span></li><li class="t-unknown" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट"><span aria-hidden="true">संचालक</span><b aria-hidden="true">?</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट</span></li></ul></div>
-<p class="caution">ध्यान दें: $ORE अभी टोकन नहीं है, और साइट ख़ुद कहती है कि बैलेंस टोकन का वादा नहीं है। संचालक का नाम, पता या व्हाइटपेपर नहीं है। काउंटडाउन से जल्दी साइन अप का दबाव डाला जाता है। हर 24 घंटे में माइनिंग ख़ुद फिर शुरू करनी होती है</p>
+<p class="caution lv-danger"><span><b>ध्यान दें:</b> $ORE अभी टोकन नहीं है, और साइट ख़ुद कहती है कि बैलेंस टोकन का वादा नहीं है। संचालक का नाम, पता या व्हाइटपेपर नहीं है। काउंटडाउन से जल्दी साइन अप का दबाव डाला जाता है। हर 24 घंटे में माइनिंग ख़ुद फिर शुरू करनी होती है</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://miningmachine.io/r/aS80bLRm" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn warn-go" href="/hi/services/miningmachine/#warn">साइन अप से पहले चेतावनी पढ़ें</a></div>
 </article>
 <article class="svc rv" id="svc-lifeai" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">LA</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/lifeai/">Life AI Testnet</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
@@ -787,21 +811,21 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-lifeai">हेल्थकेयर AI प्रोजेक्ट Life AI का टेस्टनेट। रोज़ एक Yes/No क्विज़ का जवाब दें और X पर पोस्ट करें, पॉइंट मिलेंगे; लगातार दिनों पर ज़्यादा। आधिकारिक साइट पर USDT ड्रॉ और लीडरबोर्ड इनाम जैसे इनाम लिखे हैं। संचालक सिंगापुर का नॉन-प्रॉफ़िट LIFE AI Foundation</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-lifeai" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>रेफ़रल लिंक से X या किसी दूसरे अकाउंट से लॉग इन करें और इनाम के लिए EVM वॉलेट पता दर्ज करें (पहचान पत्र ज़रूरी नहीं)। फिर हर दिन क्विज़ का जवाब दें और पोस्ट करें (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-no" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✗</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution">ध्यान दें: पॉइंट पैसा नहीं हैं, और कुछ भी पक्का नहीं। कोई आधिकारिक ट्रेड होने वाला LIFE टोकन नहीं है, और टोकन या एयरड्रॉप का वादा नहीं। अपनी सीड फ़्रेज़ किसी को न बताएँ, और पैसे वाला वॉलेट न जोड़ें। भुगतान माँगा जाए तो धोखा समझें। आपको बुलाने वाले (इस साइट के संचालक समेत) को आपकी गतिविधि से पॉइंट मिलते हैं</p>
+<p class="caution lv-caution"><span><b>ध्यान दें:</b> पॉइंट पैसा नहीं हैं, और कुछ भी पक्का नहीं। कोई आधिकारिक ट्रेड होने वाला LIFE टोकन नहीं है, और टोकन या एयरड्रॉप का वादा नहीं। अपनी सीड फ़्रेज़ किसी को न बताएँ, और पैसे वाला वॉलेट न जोड़ें। भुगतान माँगा जाए तो धोखा समझें। आपको बुलाने वाले (इस साइट के संचालक समेत) को आपकी गतिविधि से पॉइंट मिलते हैं</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn solid ref" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
 </article>
 <article class="svc rv" id="svc-refrax" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3><div class="tags"><span class="risk">ज़्यादा जोखिम</span><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
 <p class="gain">पेंडिंग $REFRAX पॉइंट (अभी टोकन नहीं)</p>
 <div class="desc"><p id="d-refrax">Solana पर विकेंद्रीकृत स्टोरेज होने का दावा करने वाले प्रोजेक्ट Refrax के सीज़न 0 के काम। X से साइन इन करें और फ़ॉलो, पोस्ट, दोस्तों को बुलाने और रोज़ के चेक-इन से पॉइंट कमाएँ। साइट के अनुसार लॉन्च पर पॉइंट आपके जोड़े Solana वॉलेट में $REFRAX के रूप में दिए जाएँगे</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-refrax" hidden>और पढ़ें</button></div>
 <p class="need"><b>कैसे मिलेगा</b><span>रेफ़रल लिंक खोलें और X से साइन इन करें (बहुत नए X अकाउंट शामिल नहीं हो सकते)। इनाम के लिए Solana पता जोड़ें, फिर काम और रोज़ का चेक-इन करें (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-no" title="नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✗</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं</span></li><li class="t-no" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✗</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं</span></li><li class="t-unknown" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट"><span aria-hidden="true">संचालक</span><b aria-hidden="true">?</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट</span></li></ul></div>
-<p class="caution">ध्यान दें: पॉइंट न पैसा हैं न टोकन, और कुछ भी पक्का नहीं। सिर्फ़ पाने वाला पता डालें, और सीड फ़्रेज़ किसी को न बताएँ। लॉन्च के आसपास नकली क्लेम साइटें आम हैं, इसलिए सिर्फ़ आधिकारिक X और refrax.xyz के लिंक इस्तेमाल करें। आपको बुलाने वाले (इस साइट के संचालक समेत) को आपके काम पूरा करने पर पॉइंट मिलते हैं</p>
+<p class="caution lv-danger"><span><b>ध्यान दें:</b> पॉइंट न पैसा हैं न टोकन, और कुछ भी पक्का नहीं। सिर्फ़ पाने वाला पता डालें, और सीड फ़्रेज़ किसी को न बताएँ। लॉन्च के आसपास नकली क्लेम साइटें आम हैं, इसलिए सिर्फ़ आधिकारिक X और refrax.xyz के लिंक इस्तेमाल करें। आपको बुलाने वाले (इस साइट के संचालक समेत) को आपके काम पूरा करने पर पॉइंट मिलते हैं</span></p>
 
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://refrax.xyz/?ref=freelunchlab" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<div class="slip"><a class="btn warn-go" href="/hi/services/refrax/#warn">साइन अप से पहले चेतावनी पढ़ें</a></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="सभी वेरिफ़िकेशन तरीके"><a href="/hi/verify/world-id/" dir="auto">World ID (Orb)</a><a href="/hi/verify/face/" dir="auto">चेहरा स्कैन / लाइवनेस</a><a href="/hi/verify/kyc-id/" dir="auto">ID दस्तावेज़ KYC</a><a href="/hi/verify/web-of-trust/" dir="auto">वेब ऑफ़ ट्रस्ट / इनवाइट</a></nav>

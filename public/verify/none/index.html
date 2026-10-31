@@ -223,8 +223,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .meter i.on{background:var(--c,var(--accent))}
 .region{border:1px solid var(--line);color:var(--muted);font-weight:400;line-height:1.5;padding-block:1px}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
-.caution{display:flex;gap:9px;align-items:flex-start;font-size:.8125rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
-.caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.8125rem;line-height:1}
+/* 注意書きは3段階。本文はふつうの文字色で、色は左の線とアイコンだけ。info（灰）/ caution（琥珀）/ danger（赤: warning のあるサービスだけ） */
+.caution{--lv:#8D97AE;display:flex;gap:10px;align-items:flex-start;font-size:.875rem;line-height:1.7;color:var(--ink);padding:10px 12px;border-radius:10px;
+  border:1px solid color-mix(in srgb,var(--lv) 30%,var(--line));border-inline-start:3px solid var(--lv);background:color-mix(in srgb,var(--lv) 7%,var(--surface))}
+.caution::before{content:"i";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--lv);color:#0E1320;font-weight:700;font-size:.8125rem;line-height:1;font-family:var(--f-body)}
+.caution b{color:var(--lv);font-weight:700}
+.caution.lv-info b{color:var(--muted)}
+.caution.lv-caution{--lv:var(--amber)}
+.caution.lv-caution::before,.caution.lv-danger::before{content:"!"}
+.caution.lv-danger{--lv:var(--stamp)}
+/* warning のあるサービスの「要注意」バッジ */
+.risk{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;font-weight:700;line-height:1.5;padding:1px 9px 1px 4px;border-radius:999px;white-space:nowrap;color:#2A0B07;background:var(--stamp)}
+.risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
 .checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
@@ -364,12 +374,20 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 /* card CTA */
 .max{font-size:.8125rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.45)}
-.slip .btn.solid{background:var(--pos);color:var(--paper);border-radius:12px;padding-block:12px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
-.slip .btn.solid::after{content:"→";transition:transform .2s ease}
-[dir="rtl"] .slip .btn.solid::after{content:"←"}
-.slip .btn.solid:hover{background:var(--pos);filter:brightness(1.08)}
-.slip .btn.solid:hover::after{transform:translateX(4px)}
-[dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
+/* 紹介ボタンはサイト全体でひとつの見た目（金→緑、濃い文字）。紹介のない公式サイトへのリンクは枠だけ、warning のあるものは赤枠で個別ページへ */
+.btn.ref,.btn.off,.btn.warn-go{border-radius:12px;padding:12px 16px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
+.btn.ref{background:var(--cta);color:var(--cta-ink);box-shadow:0 10px 28px -14px rgba(108,240,176,.7)}
+.btn.ref:hover{background:var(--cta);filter:brightness(1.06)}
+.btn.ref::after{content:"→";transition:transform .2s ease}
+[dir="rtl"] .btn.ref::after{content:"←"}
+.btn.ref:hover::after{transform:translateX(4px)}
+[dir="rtl"] .btn.ref:hover::after{transform:translateX(-4px)}
+.btn.off{background:transparent;color:var(--ink);border:1.5px solid color-mix(in srgb,var(--gold) 55%,var(--line))}
+.btn.off:hover{background:color-mix(in srgb,var(--gold) 10%,transparent)}
+.btn.off::after{content:"↗";font-weight:400}
+.btn.warn-go{background:color-mix(in srgb,var(--stamp) 10%,transparent);color:var(--ink);border:1.5px solid var(--stamp)}
+.btn.warn-go::before{content:"!";flex:none;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:#2A0B07;font-size:.8125rem;line-height:1}
+.btn.warn-go:hover{background:color-mix(in srgb,var(--stamp) 18%,transparent)}
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
@@ -393,10 +411,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .pick .cat{color:#A9B2D8}
 .pick h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:1.3rem;line-height:1.3;color:#fff}
 .pick p{font-size:.9rem;color:#C9D0EE;line-height:1.65}
-.pick .btn.solid{margin-top:auto;background:#FFD66B;color:#141A3A;padding-block:10px;gap:8px;white-space:normal;text-align:center}
-.pick .btn.solid::after{content:"→"}
-[dir="rtl"] .pick .btn.solid::after{content:"←"}
-.pick .btn.solid:hover{background:#FFE59A}
+.pick .btn{margin-top:auto}
+.pick .btn.off{color:#fff}
 .pick .more{font-size:.8125rem;color:#A9B2D8;text-align:center;text-underline-offset:3px;display:flex;align-items:center;justify-content:center;min-height:44px;margin-block:-6px}
 .pick .more:hover{color:#fff}
 
@@ -482,10 +498,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .body{font-size:.98rem;line-height:1.9}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
-.detail .caution{font-size:.88rem}
+.detail .caution{font-size:.92rem}
+/* 個別ページの上: もらえるもの・ラク度・信頼の目安・ボタンをひとまとめに（スマホでも最初の画面に） */
+.sum{display:grid;gap:10px;padding:16px;border-radius:14px;border:1px solid color-mix(in srgb,var(--c) 35%,var(--line));background:color-mix(in srgb,var(--c) 6%,var(--surface))}
+.sum h2{margin-top:0}
+.sum .slip{padding-top:2px}
+.slip-end{padding-top:4px}
 /* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
 .svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
 .svc-warn p{margin:0}
+.svc-warn .warn-more{font-size:.9rem;color:var(--ink);padding-top:8px;border-top:1px dashed color-mix(in srgb,var(--stamp) 35%,var(--line))}
+.svc-warn .warn-more b{color:var(--stamp)}
+.svc-warn{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 .svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
 .svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8125rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
@@ -625,7 +649,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-wavee" data-cat="career" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><h3><span class="cat">Job matching</span><a href="/services/wavee/">WAVEE</a></h3><div class="tags"><span class="type loop">Recurring</span></div></div></div>
@@ -633,10 +657,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-wavee">Invite-only job matching. Every time someone you invited (or someone they invited) lands a job, you earn a referral share again and again (7.5–15%). DMM, GMO Pepabo and others post jobs</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wavee" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up via the invite link</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: You earn when a job is matched. Rates are from the official note of June 2024</p>
+<p class="caution lv-info"><span><b>Note:</b> You earn when a job is matched. Rates are from the official note of June 2024</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-trima" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Tr</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/trima/">Trima</a></h3><div class="tags"><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div></div>
@@ -644,10 +668,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-trima">An app that earns miles just by carrying your phone as you travel and walk. Enter an invite code and both you and the person who invited you get 5,000 miles (as of July 2026). Miles can be exchanged for gift cards, cash and more</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-trima" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Install the app and enter the invite code 49‑icnRep when you register</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region"><span class="vh">Region: </span>Japan only</span><ul class="trust" aria-label="Trust check"><li class="t-yes" title="Cash out (can it become real money): Yes"><span aria-hidden="true">Cash</span><b aria-hidden="true">✓</b><span class="vh">Cash out (can it become real money): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: The bonus amount and timing may change. It needs “always on” location access and uses a bit more battery</p>
+<p class="caution lv-info"><span><b>Note:</b> The bonus amount and timing may change. It needs “always on” location access and uses a bit more battery</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">Copy</button><a class="btn solid" href="https://www.trip-mile.com/" target="_blank" rel="noopener">Get the app &amp; enter the code</a></div>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">Copy</button><a class="btn solid ref" href="https://www.trip-mile.com/" target="_blank" rel="noopener">Get the app &amp; enter the code</a></div>
 </article>
 <article class="svc rv" id="svc-sweatcoin" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Sw</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/sweatcoin/">Sweatcoin</a></h3><div class="tags"><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div></div>
@@ -655,10 +679,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-sweatcoin">Carry your phone and your steps turn into coins automatically. Spend them in the in-app marketplace on products, discounts or donations</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-sweatcoin" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Install the app and allow access to steps and location</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: There is no fixed cash conversion rate. The free plan caps how many steps convert each day</p>
+<p class="caution lv-info"><span><b>Note:</b> There is no fixed cash conversion rate. The free plan caps how many steps convert each day</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-grass" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/grass/">Grass</a></h3><div class="tags"><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div></div>
@@ -666,10 +690,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-grass">A DePIN that rents out your unused bandwidth for AI web scraping. Keep the browser extension or app running and earn points for uptime and bandwidth actually used, paid out through seasonal airdrops</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-grass" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up with email, install the extension or app, and stay connected</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-yes" title="Market price (does the token trade at a price): Yes"><span aria-hidden="true">Price</span><b aria-hidden="true">✓</b><span class="vh">Market price (does the token trade at a price): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: Your IP address is used by others for data collection. Rewards depend on airdrops, so amount and timing are unpredictable</p>
+<p class="caution lv-info"><span><b>Note:</b> Your IP address is used by others for data collection. Rewards depend on airdrops, so amount and timing are unpredictable</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-honeygain" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Hg</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/honeygain/">Honeygain</a></h3><div class="tags"><span class="max">Set &amp; forget</span><span class="type loop">Recurring</span></div></div></div>
@@ -677,10 +701,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-honeygain">The best-known bandwidth-sharing app: it rents your unused connection to businesses for web data collection. Signing up via a referral gives a $3 welcome bonus (per the official blog). Cash out via PayPal and more once you reach $20</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-honeygain" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up with email, install the app on your PC or phone, and leave it running</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-yes" title="Cash out (can it become real money): Yes"><span aria-hidden="true">Cash</span><b aria-hidden="true">✓</b><span class="vh">Cash out (can it become real money): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: Your IP address is used by others for data collection. Earnings depend on demand in your region and can be very low in some areas</p>
+<p class="caution lv-info"><span><b>Note:</b> Your IP address is used by others for data collection. Earnings depend on demand in your region and can be very low in some areas</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-pawns" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/pawns/">Pawns.app</a></h3><div class="tags"><span class="type loop">Recurring</span></div></div></div>
@@ -688,10 +712,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-pawns">IPRoyal’s bandwidth-sharing app. Leave the desktop app running and your spare connection earns money. Surveys and games pay too. Cash out from $5 via PayPal, Bitcoin and more</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pawns" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up with email, install the desktop app and leave it running</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-yes" title="Cash out (can it become real money): Yes"><span aria-hidden="true">Cash</span><b aria-hidden="true">✓</b><span class="vh">Cash out (can it become real money): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: Mobile bandwidth sharing ended in April 2026, so passive earning is desktop only. Your IP address is used by others for data collection, and payouts are small</p>
+<p class="caution lv-info"><span><b>Note:</b> Mobile bandwidth sharing ended in April 2026, so passive earning is desktop only. Your IP address is used by others for data collection, and payouts are small</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">DK</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/deltakim/">Delta Kim</a></h3><div class="tags"><span class="type loop">Recurring</span></div></div></div>
@@ -699,10 +723,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-deltakim">A crypto app similar to Pi Network where you “mine” daily on your phone. Signing up with a referral code is said to boost your mining rate</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-deltakim" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up via the invite link and tap the mining button in the app every day</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-unknown" title="Cash out (can it become real money): Unverified"><span aria-hidden="true">Cash</span><b aria-hidden="true">?</b><span class="vh">Cash out (can it become real money): Unverified</span></li><li class="t-no" title="Market price (does the token trade at a price): No"><span aria-hidden="true">Price</span><b aria-hidden="true">✗</b><span class="vh">Market price (does the token trade at a price): No</span></li><li class="t-unknown" title="Operator (is the company behind it public): Unverified"><span aria-hidden="true">Operator</span><b aria-hidden="true">?</b><span class="vh">Operator (is the company behind it public): Unverified</span></li></ul></div>
-<p class="caution">Note: As of October 2026, no exchange listing or market price could be confirmed, so it’s unclear whether KIM can be cashed out. Some users report their balance stopped growing despite mining. Needs daily action</p>
+<p class="caution lv-caution"><span><b>Note:</b> As of October 2026, no exchange listing or market price could be confirmed, so it’s unclear whether KIM can be cashed out. Some users report their balance stopped growing despite mining. Needs daily action</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-meingrundeinkommen" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
@@ -710,10 +734,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-meingrundeinkommen">A free lottery run by a nonprofit association in Berlin and funded by crowdfunding donations. Draws are held regularly, and each winner gets €1,000 a month for 12 months, no strings attached (real cash, not crypto)</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-meingrundeinkommen" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Register with your email and confirm your participation for each draw. You must be 16 or older, and your name and date of birth must match your ID if you win</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-yes" title="Cash out (can it become real money): Yes"><span aria-hidden="true">Cash</span><b aria-hidden="true">✓</b><span class="vh">Cash out (can it become real money): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: A 2020 statement from the organisation said anyone can take part regardless of age or where they live, but current rules for people outside Germany and payouts abroad are not confirmed. The site is in German. It's a lottery, so most entrants receive nothing. Winnings may be taxed in your country</p>
+<p class="caution lv-info"><span><b>Note:</b> A 2020 statement from the organisation said anyone can take part regardless of age or where they live, but current rules for people outside Germany and payouts abroad are not confirmed. The site is in German. It's a lottery, so most entrants receive nothing. Winnings may be taxed in your country</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-ubi4all" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/ubi4all/">UBI4ALL</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
@@ -721,10 +745,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-ubi4all">A free raffle run by a German non-profit. Each time donations reach €9,600, a basic income worth €9,600 in total is raffled off, paid in cash with no strings attached. High-income countries such as Japan get €800 a month for 1 year, low-income countries €160 a month for 5 years. No referral bonus</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-ubi4all" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Create a free account on the official site and register for each raffle (monthly donors from €1 are entered automatically). You must be 16 or older, and winners are verified with ID. Sign-up from Japan has not yet been tested by this site</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-yes" title="Cash out (can it become real money): Yes"><span aria-hidden="true">Cash</span><b aria-hidden="true">✓</b><span class="vh">Cash out (can it become real money): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: It’s a raffle, so the odds are low and depend on how many people take part. Raffles only happen when donations fill the €9,600 pot, so the timing is irregular. Unless you are a UBI Beaver, you have to register for each raffle. Residents of the previous winner’s country are excluded from the next draw. Payouts go to SEPA bank accounts; other methods have their fees taken from the prize. How the prize is taxed depends on your country</p>
+<p class="caution lv-info"><span><b>Note:</b> It’s a raffle, so the odds are low and depend on how many people take part. Raffles only happen when donations fill the €9,600 pot, so the timing is irregular. Unless you are a UBI Beaver, you have to register for each raffle. Residents of the previous winner’s country are excluded from the next draw. Payouts go to SEPA bank accounts; other methods have their fees taken from the prize. How the prize is taxed depends on your country</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://www.ubi4all.org/" target="_blank" rel="noopener">Visit official site</a></div>
+<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">Visit official site</a></div>
 </article>
 <article class="svc rv" id="svc-gradido" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/gradido/">Gradido</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
@@ -732,10 +756,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-gradido">A currency system that calls itself a “natural economy”. Work for the common good earns an “active basic income” of 20 GDD an hour, up to 1,000 GDD a month. Unspent money shrinks at 50% a year. Run by Gradido Akademie in Austria</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-gradido" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Create a free Gradido account through the referral link, record your contributions to the common good and receive GDD (tested first-hand from Japan in Oct 2026)</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-unknown" title="Cash out (can it become real money): Unverified"><span aria-hidden="true">Cash</span><b aria-hidden="true">?</b><span class="vh">Cash out (can it become real money): Unverified</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: The official FAQ says it is for now a “gratitude points reward system”, not a cryptocurrency. There is no official way stated to exchange GDD for euros or other money. If someone you referred later contributes money (e.g. a donation), you receive GDT; signing up alone earns nothing</p>
+<p class="caution lv-info"><span><b>Note:</b> The official FAQ says it is for now a “gratitude points reward system”, not a cryptocurrency. There is no official way stated to exchange GDD for euros or other money. If someone you referred later contributes money (e.g. a donation), you receive GDT; signing up alone earns nothing</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-wowapp" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">WA</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/wowapp/">WowApp</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
@@ -743,10 +767,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-wowapp">A chat and calling app combined with a rewards system. Earn from a daily “UBI”, games, shopping cashback and more, then withdraw or donate to charities. When your network, such as friends you invited, is active, your rewards grow too</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wowapp" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up free through the referral link and use the app every day (confirmed usable from Japan in Oct 2026, first-hand)</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-partial" title="Operator (is the company behind it public): With conditions"><span aria-hidden="true">Operator</span><b aria-hidden="true">△</b><span class="vh">Operator (is the company behind it public): With conditions</span></li></ul></div>
-<p class="caution">Note: Rewards also come from the activity of people further down your invite chain: a multi-level system. Daily amounts are tiny and will not add up to real income. PayPal withdrawals reportedly have conditions such as a minimum. App Store rating in Japan is 3.2, with complaints about failed withdrawals</p>
+<p class="caution lv-info"><span><b>Note:</b> Rewards also come from the activity of people further down your invite chain: a multi-level system. Daily amounts are tiny and will not add up to real income. PayPal withdrawals reportedly have conditions such as a minimum. App Store rating in Japan is 3.2, with complaints about failed withdrawals</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-rewardme" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/rewardme/">RewardMe</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
@@ -754,10 +778,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-rewardme">Link your email and it finds purchases at Amazon, Uber and other partner stores from receipt emails, earning up to 5% back. Rewards can be taken as gift cards or withdrawn as the crypto token MDT. Signing up with a referral code gives both sides a bonus. Published by Magic Crystal Limited in Hong Kong</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-rewardme" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up through the referral link and enter the referral code 7HOdyg when you register. Link an email account and shop at eligible merchants (confirmed usable from Japan in Oct 2026, first-hand)</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-yes" title="Market price (does the token trade at a price): Yes"><span aria-hidden="true">Price</span><b aria-hidden="true">✓</b><span class="vh">Market price (does the token trade at a price): Yes</span></li><li class="t-partial" title="Operator (is the company behind it public): With conditions"><span aria-hidden="true">Operator</span><b aria-hidden="true">△</b><span class="vh">Operator (is the company behind it public): With conditions</span></li></ul></div>
-<p class="caution">Note: It reads the commercial emails in your linked inbox, and its privacy policy says de-identified data is sold to or shared with companies. Gift card redemptions take 7–14 business days to approve. Balances may expire after 6 months of inactivity. Bonus amounts are not stated officially</p>
+<p class="caution lv-info"><span><b>Note:</b> It reads the commercial emails in your linked inbox, and its privacy policy says de-identified data is sold to or shared with companies. Gift card redemptions take 7–14 business days to approve. Balances may expire after 6 months of inactivity. Bonus amounts are not stated officially</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">Copy</button><a class="btn solid" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">Copy</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-jrkripto" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
@@ -765,21 +789,21 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-jrkripto">The mobile app of JrKripto, a Turkish crypto news, analysis and price-tracking site whose founder also runs the stock site JrHisse. Tap once a day in the app and JR points accrue over the next 24 hours. Sign up with an invite code and verify your email to get a 50 JR bonus</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-jrkripto" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up via the invite link and verify your email address (no ID needed). Then tap once a day in the app (confirmed usable from Japan in Oct 2026, first-hand)</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-no" title="Cash out (can it become real money): No"><span aria-hidden="true">Cash</span><b aria-hidden="true">✗</b><span class="vh">Cash out (can it become real money): No</span></li><li class="t-partial" title="Operator (is the company behind it public): With conditions"><span aria-hidden="true">Operator</span><b aria-hidden="true">△</b><span class="vh">Operator (is the company behind it public): With conditions</span></li></ul></div>
-<p class="caution">Note: The invite page itself says “JR is an in-app point; it cannot be sold or transferred.” As of October 2026 there is no way to cash it out, so any value depends on a possible future use. Points only accrue if you tap every day. The Google Play package name is “com.yourcompany.jrkripto”, which looks like an unchanged template name</p>
+<p class="caution lv-caution"><span><b>Note:</b> The invite page itself says “JR is an in-app point; it cannot be sold or transferred.” As of October 2026 there is no way to cash it out, so any value depends on a possible future use. Points only accrue if you tap every day. The Google Play package name is “com.yourcompany.jrkripto”, which looks like an unchanged template name</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3><div class="tags"><span class="risk">High risk</span><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">$ORE mining balance (free 24-hour sessions)</p>
 <div class="desc"><p id="d-miningmachine">A site where a “mining machine” in your browser builds up a $ORE balance. Joining is free, with no deposit or install. A free machine runs in 24-hour sessions. You can pay to add machines. Inviters get 10% of what their invitees mine and 10% of what they spend</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up for free via the invite link (log in with email or X, no ID needed). Then start a mining session every 24 hours (sign-up from Japan confirmed in Oct 2026)</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-no" title="Cash out (can it become real money): No"><span aria-hidden="true">Cash</span><b aria-hidden="true">✗</b><span class="vh">Cash out (can it become real money): No</span></li><li class="t-no" title="Market price (does the token trade at a price): No"><span aria-hidden="true">Price</span><b aria-hidden="true">✗</b><span class="vh">Market price (does the token trade at a price): No</span></li><li class="t-unknown" title="Operator (is the company behind it public): Unverified"><span aria-hidden="true">Operator</span><b aria-hidden="true">?</b><span class="vh">Operator (is the company behind it public): Unverified</span></li></ul></div>
-<p class="caution">Note: $ORE is not a token yet, and the site itself says balances are not a promise of tokens. There is no operator name, address or whitepaper. A countdown pushes you to sign up quickly. You have to restart mining yourself every 24 hours</p>
+<p class="caution lv-danger"><span><b>Note:</b> $ORE is not a token yet, and the site itself says balances are not a promise of tokens. There is no operator name, address or whitepaper. A countdown pushes you to sign up quickly. You have to restart mining yourself every 24 hours</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://miningmachine.io/r/aS80bLRm" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn warn-go" href="/services/miningmachine/#warn">Read the warnings before signing up</a></div>
 </article>
 <article class="svc rv" id="svc-lifeai" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">LA</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/lifeai/">Life AI Testnet</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
@@ -787,21 +811,21 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-lifeai">The testnet of Life AI, a healthcare AI project. Answer one daily Yes/No quiz and post your answer on X to earn points; daily streaks earn more. The official site lists rewards such as USDT draws and leaderboard prizes. Run by LIFE AI Foundation, a non-profit in Singapore</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-lifeai" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Log in through the referral link with X or another account and register an EVM wallet address for rewards (no ID needed). Then answer the quiz and post every day (sign-up from Japan confirmed in Oct 2026)</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-partial" title="Cash out (can it become real money): With conditions"><span aria-hidden="true">Cash</span><b aria-hidden="true">△</b><span class="vh">Cash out (can it become real money): With conditions</span></li><li class="t-no" title="Market price (does the token trade at a price): No"><span aria-hidden="true">Price</span><b aria-hidden="true">✗</b><span class="vh">Market price (does the token trade at a price): No</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
-<p class="caution">Note: Points are not money, and nothing is guaranteed. There is no official tradable LIFE token, and no token or airdrop is promised. Never share your seed phrase, and don’t connect a wallet that holds funds. If asked to pay, suspect a scam. Whoever invited you, including this site’s operator, earns points from your activity</p>
+<p class="caution lv-caution"><span><b>Note:</b> Points are not money, and nothing is guaranteed. There is no official tradable LIFE token, and no token or airdrop is promised. Never share your seed phrase, and don’t connect a wallet that holds funds. If asked to pay, suspect a scam. Whoever invited you, including this site’s operator, earns points from your activity</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn solid ref" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-refrax" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3><div class="tags"><span class="risk">High risk</span><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">Pending $REFRAX points (no token yet)</p>
 <div class="desc"><p id="d-refrax">Season 0 quests from Refrax, a project presenting itself as decentralized storage on Solana. Sign in with X and earn points by following, posting, inviting friends and checking in daily. The site says points are to be paid as $REFRAX to the Solana wallet you add, at launch</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-refrax" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Open the referral link and sign in with X (very new X accounts can’t join). Add a Solana address to receive rewards, then do the quests and the daily check-in (sign-up from Japan confirmed in Oct 2026)</span></p>
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-no" title="Cash out (can it become real money): No"><span aria-hidden="true">Cash</span><b aria-hidden="true">✗</b><span class="vh">Cash out (can it become real money): No</span></li><li class="t-no" title="Market price (does the token trade at a price): No"><span aria-hidden="true">Price</span><b aria-hidden="true">✗</b><span class="vh">Market price (does the token trade at a price): No</span></li><li class="t-unknown" title="Operator (is the company behind it public): Unverified"><span aria-hidden="true">Operator</span><b aria-hidden="true">?</b><span class="vh">Operator (is the company behind it public): Unverified</span></li></ul></div>
-<p class="caution">Note: Points are neither money nor tokens, and nothing is guaranteed. Only enter a receiving address, and never share your seed phrase. Fake claim sites are common around launches, so only use links from the official X account and refrax.xyz. Whoever invited you, including this site’s operator, earns points when you finish a quest</p>
+<p class="caution lv-danger"><span><b>Note:</b> Points are neither money nor tokens, and nothing is guaranteed. Only enter a receiving address, and never share your seed phrase. Fake claim sites are common around launches, so only use links from the official X account and refrax.xyz. Whoever invited you, including this site’s operator, earns points when you finish a quest</span></p>
 
 <p class="checked"><time datetime="2026-10">Checked Oct 2026</time></p>
-<div class="slip"><a class="btn solid" href="https://refrax.xyz/?ref=freelunchlab" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
+<div class="slip"><a class="btn warn-go" href="/services/refrax/#warn">Read the warnings before signing up</a></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="All verification methods"><a href="/verify/world-id/" dir="auto">World ID (Orb)</a><a href="/verify/face/" dir="auto">Face scan / liveness</a><a href="/verify/kyc-id/" dir="auto">ID document KYC</a><a href="/verify/web-of-trust/" dir="auto">Web of trust / invites</a></nav>

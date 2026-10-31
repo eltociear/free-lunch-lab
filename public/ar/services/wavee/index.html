@@ -223,8 +223,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .meter i.on{background:var(--c,var(--accent))}
 .region{border:1px solid var(--line);color:var(--muted);font-weight:400;line-height:1.5;padding-block:1px}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
-.caution{display:flex;gap:9px;align-items:flex-start;font-size:.8125rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
-.caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.8125rem;line-height:1}
+/* 注意書きは3段階。本文はふつうの文字色で、色は左の線とアイコンだけ。info（灰）/ caution（琥珀）/ danger（赤: warning のあるサービスだけ） */
+.caution{--lv:#8D97AE;display:flex;gap:10px;align-items:flex-start;font-size:.875rem;line-height:1.7;color:var(--ink);padding:10px 12px;border-radius:10px;
+  border:1px solid color-mix(in srgb,var(--lv) 30%,var(--line));border-inline-start:3px solid var(--lv);background:color-mix(in srgb,var(--lv) 7%,var(--surface))}
+.caution::before{content:"i";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--lv);color:#0E1320;font-weight:700;font-size:.8125rem;line-height:1;font-family:var(--f-body)}
+.caution b{color:var(--lv);font-weight:700}
+.caution.lv-info b{color:var(--muted)}
+.caution.lv-caution{--lv:var(--amber)}
+.caution.lv-caution::before,.caution.lv-danger::before{content:"!"}
+.caution.lv-danger{--lv:var(--stamp)}
+/* warning のあるサービスの「要注意」バッジ */
+.risk{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;font-weight:700;line-height:1.5;padding:1px 9px 1px 4px;border-radius:999px;white-space:nowrap;color:#2A0B07;background:var(--stamp)}
+.risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
 .checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
@@ -364,12 +374,20 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 /* card CTA */
 .max{font-size:.8125rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.45)}
-.slip .btn.solid{background:var(--pos);color:var(--paper);border-radius:12px;padding-block:12px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
-.slip .btn.solid::after{content:"→";transition:transform .2s ease}
-[dir="rtl"] .slip .btn.solid::after{content:"←"}
-.slip .btn.solid:hover{background:var(--pos);filter:brightness(1.08)}
-.slip .btn.solid:hover::after{transform:translateX(4px)}
-[dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
+/* 紹介ボタンはサイト全体でひとつの見た目（金→緑、濃い文字）。紹介のない公式サイトへのリンクは枠だけ、warning のあるものは赤枠で個別ページへ */
+.btn.ref,.btn.off,.btn.warn-go{border-radius:12px;padding:12px 16px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
+.btn.ref{background:var(--cta);color:var(--cta-ink);box-shadow:0 10px 28px -14px rgba(108,240,176,.7)}
+.btn.ref:hover{background:var(--cta);filter:brightness(1.06)}
+.btn.ref::after{content:"→";transition:transform .2s ease}
+[dir="rtl"] .btn.ref::after{content:"←"}
+.btn.ref:hover::after{transform:translateX(4px)}
+[dir="rtl"] .btn.ref:hover::after{transform:translateX(-4px)}
+.btn.off{background:transparent;color:var(--ink);border:1.5px solid color-mix(in srgb,var(--gold) 55%,var(--line))}
+.btn.off:hover{background:color-mix(in srgb,var(--gold) 10%,transparent)}
+.btn.off::after{content:"↗";font-weight:400}
+.btn.warn-go{background:color-mix(in srgb,var(--stamp) 10%,transparent);color:var(--ink);border:1.5px solid var(--stamp)}
+.btn.warn-go::before{content:"!";flex:none;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:#2A0B07;font-size:.8125rem;line-height:1}
+.btn.warn-go:hover{background:color-mix(in srgb,var(--stamp) 18%,transparent)}
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
@@ -393,10 +411,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .pick .cat{color:#A9B2D8}
 .pick h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:1.3rem;line-height:1.3;color:#fff}
 .pick p{font-size:.9rem;color:#C9D0EE;line-height:1.65}
-.pick .btn.solid{margin-top:auto;background:#FFD66B;color:#141A3A;padding-block:10px;gap:8px;white-space:normal;text-align:center}
-.pick .btn.solid::after{content:"→"}
-[dir="rtl"] .pick .btn.solid::after{content:"←"}
-.pick .btn.solid:hover{background:#FFE59A}
+.pick .btn{margin-top:auto}
+.pick .btn.off{color:#fff}
 .pick .more{font-size:.8125rem;color:#A9B2D8;text-align:center;text-underline-offset:3px;display:flex;align-items:center;justify-content:center;min-height:44px;margin-block:-6px}
 .pick .more:hover{color:#fff}
 
@@ -482,10 +498,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .body{font-size:.98rem;line-height:1.9}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
-.detail .caution{font-size:.88rem}
+.detail .caution{font-size:.92rem}
+/* 個別ページの上: もらえるもの・ラク度・信頼の目安・ボタンをひとまとめに（スマホでも最初の画面に） */
+.sum{display:grid;gap:10px;padding:16px;border-radius:14px;border:1px solid color-mix(in srgb,var(--c) 35%,var(--line));background:color-mix(in srgb,var(--c) 6%,var(--surface))}
+.sum h2{margin-top:0}
+.sum .slip{padding-top:2px}
+.slip-end{padding-top:4px}
 /* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
 .svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
 .svc-warn p{margin:0}
+.svc-warn .warn-more{font-size:.9rem;color:var(--ink);padding-top:8px;border-top:1px dashed color-mix(in srgb,var(--stamp) 35%,var(--line))}
+.svc-warn .warn-more b{color:var(--stamp)}
+.svc-warn{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 .svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
 .svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8125rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
@@ -618,18 +642,21 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <article class="svc detail" id="svc-wavee" data-cat="career" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><span class="cat">توظيف</span><h1>WAVEE</h1><div class="tags"><span class="type loop">متكرر</span></div></div></div>
 
+<div class="sum">
 <h2>ما الذي تحصل عليه</h2>
 <p class="gain">مكافأة في كل مرة تحصل فيها على وظيفة</p>
+<div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
+<div class="slip"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+</div>
 <h2>ما هو WAVEE؟</h2>
 <p class="body">منصة توظيف بالدعوة فقط. في كل مرة يحصل فيها شخص دعوته (أو شخص دعاه) على وظيفة، تحصل على حصة إحالة مرارًا وتكرارًا (7.5–15%). تنشر فيها شركات مثل DMM وGMO Pepabo وظائفها</p>
 <h2>كيف تبدأ</h2>
 <p class="body">سجّل عبر رابط الدعوة</p>
-<div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution">تنبيه: تكسب فقط عند إتمام التوظيف. النسب مأخوذة من المنشور الرسمي في يونيو 2024</p>
+<p class="caution lv-info"><span><b>تنبيه:</b> تكسب فقط عند إتمام التوظيف. النسب مأخوذة من المنشور الرسمي في يونيو 2024</span></p>
 
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
 <p class="verify-line"><b>طريقة التحقق</b><a href="/ar/verify/none/" dir="auto">دون تحقق</a></p>
-<div class="slip"><a class="btn solid" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<div class="slip slip-end"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
 
 </article>
 <section id="related">

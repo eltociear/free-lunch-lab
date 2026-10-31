@@ -223,8 +223,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .meter i.on{background:var(--c,var(--accent))}
 .region{border:1px solid var(--line);color:var(--muted);font-weight:400;line-height:1.5;padding-block:1px}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
-.caution{display:flex;gap:9px;align-items:flex-start;font-size:.8125rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
-.caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.8125rem;line-height:1}
+/* 注意書きは3段階。本文はふつうの文字色で、色は左の線とアイコンだけ。info（灰）/ caution（琥珀）/ danger（赤: warning のあるサービスだけ） */
+.caution{--lv:#8D97AE;display:flex;gap:10px;align-items:flex-start;font-size:.875rem;line-height:1.7;color:var(--ink);padding:10px 12px;border-radius:10px;
+  border:1px solid color-mix(in srgb,var(--lv) 30%,var(--line));border-inline-start:3px solid var(--lv);background:color-mix(in srgb,var(--lv) 7%,var(--surface))}
+.caution::before{content:"i";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--lv);color:#0E1320;font-weight:700;font-size:.8125rem;line-height:1;font-family:var(--f-body)}
+.caution b{color:var(--lv);font-weight:700}
+.caution.lv-info b{color:var(--muted)}
+.caution.lv-caution{--lv:var(--amber)}
+.caution.lv-caution::before,.caution.lv-danger::before{content:"!"}
+.caution.lv-danger{--lv:var(--stamp)}
+/* warning のあるサービスの「要注意」バッジ */
+.risk{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;font-weight:700;line-height:1.5;padding:1px 9px 1px 4px;border-radius:999px;white-space:nowrap;color:#2A0B07;background:var(--stamp)}
+.risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
 .checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
@@ -364,12 +374,20 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 /* card CTA */
 .max{font-size:.8125rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.45)}
-.slip .btn.solid{background:var(--pos);color:var(--paper);border-radius:12px;padding-block:12px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
-.slip .btn.solid::after{content:"→";transition:transform .2s ease}
-[dir="rtl"] .slip .btn.solid::after{content:"←"}
-.slip .btn.solid:hover{background:var(--pos);filter:brightness(1.08)}
-.slip .btn.solid:hover::after{transform:translateX(4px)}
-[dir="rtl"] .slip .btn.solid:hover::after{transform:translateX(-4px)}
+/* 紹介ボタンはサイト全体でひとつの見た目（金→緑、濃い文字）。紹介のない公式サイトへのリンクは枠だけ、warning のあるものは赤枠で個別ページへ */
+.btn.ref,.btn.off,.btn.warn-go{border-radius:12px;padding:12px 16px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
+.btn.ref{background:var(--cta);color:var(--cta-ink);box-shadow:0 10px 28px -14px rgba(108,240,176,.7)}
+.btn.ref:hover{background:var(--cta);filter:brightness(1.06)}
+.btn.ref::after{content:"→";transition:transform .2s ease}
+[dir="rtl"] .btn.ref::after{content:"←"}
+.btn.ref:hover::after{transform:translateX(4px)}
+[dir="rtl"] .btn.ref:hover::after{transform:translateX(-4px)}
+.btn.off{background:transparent;color:var(--ink);border:1.5px solid color-mix(in srgb,var(--gold) 55%,var(--line))}
+.btn.off:hover{background:color-mix(in srgb,var(--gold) 10%,transparent)}
+.btn.off::after{content:"↗";font-weight:400}
+.btn.warn-go{background:color-mix(in srgb,var(--stamp) 10%,transparent);color:var(--ink);border:1.5px solid var(--stamp)}
+.btn.warn-go::before{content:"!";flex:none;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:#2A0B07;font-size:.8125rem;line-height:1}
+.btn.warn-go:hover{background:color-mix(in srgb,var(--stamp) 18%,transparent)}
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
@@ -393,10 +411,8 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .pick .cat{color:#A9B2D8}
 .pick h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:1.3rem;line-height:1.3;color:#fff}
 .pick p{font-size:.9rem;color:#C9D0EE;line-height:1.65}
-.pick .btn.solid{margin-top:auto;background:#FFD66B;color:#141A3A;padding-block:10px;gap:8px;white-space:normal;text-align:center}
-.pick .btn.solid::after{content:"→"}
-[dir="rtl"] .pick .btn.solid::after{content:"←"}
-.pick .btn.solid:hover{background:#FFE59A}
+.pick .btn{margin-top:auto}
+.pick .btn.off{color:#fff}
 .pick .more{font-size:.8125rem;color:#A9B2D8;text-align:center;text-underline-offset:3px;display:flex;align-items:center;justify-content:center;min-height:44px;margin-block:-6px}
 .pick .more:hover{color:#fff}
 
@@ -482,10 +498,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .detail .body{font-size:.98rem;line-height:1.9}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
-.detail .caution{font-size:.88rem}
+.detail .caution{font-size:.92rem}
+/* 個別ページの上: もらえるもの・ラク度・信頼の目安・ボタンをひとまとめに（スマホでも最初の画面に） */
+.sum{display:grid;gap:10px;padding:16px;border-radius:14px;border:1px solid color-mix(in srgb,var(--c) 35%,var(--line));background:color-mix(in srgb,var(--c) 6%,var(--surface))}
+.sum h2{margin-top:0}
+.sum .slip{padding-top:2px}
+.slip-end{padding-top:4px}
 /* 任意の warning: 個別ページの上に出す強い注意の箱。トップの .warn と同じ見た目（RTL では太線が右に来る）を小さめにして使う */
 .svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
 .svc-warn p{margin:0}
+.svc-warn .warn-more{font-size:.9rem;color:var(--ink);padding-top:8px;border-top:1px dashed color-mix(in srgb,var(--stamp) 35%,var(--line))}
+.svc-warn .warn-more b{color:var(--stamp)}
+.svc-warn{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 .svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
 .svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8125rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
@@ -622,10 +646,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-mepass">Meta Earthのウォレットアプリ。本人確認すると「無条件のベーシックインカム」として1 MECが付与され、毎日のチェックインでも少しずつ増える</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-mepass" hidden>もっと見る</button></div>
 <p class="need"><b>条件</b><span>招待リンクから登録し、アプリで本人確認（KYC）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-no" title="市場価格（トークンに値段がついているか）：なし"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✗</b><span class="vh">市場価格（トークンに値段がついているか）：なし</span></li><li class="t-unknown" title="運営元公開（運営元が公開されているか）：未確認"><span aria-hidden="true">運営元</span><b aria-hidden="true">?</b><span class="vh">運営元公開（運営元が公開されているか）：未確認</span></li></ul></div>
-<p class="caution">注意：MECは2026年10月時点で取引所に上場しておらず、市場価格がない。換金は個人間取引のみ</p>
+<p class="caution lv-caution"><span><b>注意：</b> MECは2026年10月時点で取引所に上場しておらず、市場価格がない。換金は個人間取引のみ</span></p>
 
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<div class="slip"><a class="btn solid ref" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
 </article>
 <article class="svc rv" id="svc-pinetwork" data-cat="crypto-bi" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pi</span><div class="svc-id"><h3><span class="cat">暗号資産BI</span><a href="/ja/services/pinetwork/">Pi Network</a></h3><div class="tags"><span class="type loop">継続</span></div></div></div>
@@ -633,10 +657,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-pinetwork">アプリで24時間に1回ボタンを押すとPIがたまる。紹介した人が増えるほど採掘ペースも上がる。2025年2月に一般公開され、OKX・Bitget・MEXCなどで取引されている</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pinetwork" hidden>もっと見る</button></div>
 <p class="need"><b>条件</b><span>招待リンクから登録（招待コード：eltociear）。PIを動かすには本人確認とメインネットのウォレットへの移行が必要</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution">注意：価格は2025年の最高値$2.99から約97%下落（2026年10月時点で約$0.08）。BinanceやCoinbase、日本の取引所では扱いがない。毎日の操作が必要で、ほったらかしでは貯まらない</p>
+<p class="caution lv-info"><span><b>注意：</b> 価格は2025年の最高値$2.99から約97%下落（2026年10月時点で約$0.08）。BinanceやCoinbase、日本の取引所では扱いがない。毎日の操作が必要で、ほったらかしでは貯まらない</span></p>
 
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<div class="slip"><a class="btn solid ref" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
 </article>
 <article class="svc rv" id="svc-kabuand" data-cat="pointsite" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">KA</span><div class="svc-id"><h3><span class="cat">ポイントサイト</span><a href="/ja/services/kabuand/">KABU&amp; <span class="q">カブアンド</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
@@ -644,10 +668,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-kabuand">前澤友作氏が社長を務める株式会社カブ＆ピースのサービス。KABU&amp;でんき・ガス・モバイルなどの料金やKABU&amp;カードの利用額に応じて「株引換券」がもらえ、募集期間に申し込むと同社の未上場株に交換できる。1枚1円の割引券にもできる。紹介した人・された人の両方に株引換券が付く</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-kabuand" hidden>もっと見る</button></div>
 <p class="need"><b>条件</b><span>日本在住の成人（外国籍の方は在留資格の条件あり）。会員登録し、サービスを契約して料金を払う。株への交換には、募集期間中の申込み、eKYC、大和コネクト証券の口座開設が必要</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region"><span class="vh">地域: </span>日本在住者向け</span><ul class="trust" aria-label="信頼の目安"><li class="t-no" title="換金（現金にできるか）：なし"><span aria-hidden="true">換金</span><b aria-hidden="true">✗</b><span class="vh">換金（現金にできるか）：なし</span></li><li class="t-no" title="市場価格（トークンに値段がついているか）：なし"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✗</b><span class="vh">市場価格（トークンに値段がついているか）：なし</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution">注意：株は未上場で、今は売ることも現金にすることもできず、将来の価値は不確か。株引換券は基本的に料金を払わないともらえない。公式は紹介コードのSNSでの拡散を特典の対象外としている。電話・SNS・メールでの「株が買える」という勧誘は詐欺の可能性が高い（株は株引換券でしか取得できない）</p>
+<p class="caution lv-caution"><span><b>注意：</b> 株は未上場で、今は売ることも現金にすることもできず、将来の価値は不確か。株引換券は基本的に料金を払わないともらえない。公式は紹介コードのSNSでの拡散を特典の対象外としている。電話・SNS・メールでの「株が買える」という勧誘は詐欺の可能性が高い（株は株引換券でしか取得できない）</span></p>
 <p class="contact-ref">紹介コードが欲しい方は、Xの <a href="https://x.com/FreeLunchLab" target="_blank" rel="noopener" dir="ltr">@FreeLunchLab</a> にDMしてください（紹介した側である当サイト運営者にも株引換券が入ります）。</p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid" href="https://kabuand.com/" target="_blank" rel="noopener">公式サイトを見る</a></div>
+<div class="slip"><a class="btn solid off" href="https://kabuand.com/" target="_blank" rel="noopener">公式サイトを見る</a></div>
 </article></div></section>
 <section class="vsec"><h2>この認証を任意で使えるサービス<span class="dot">2</span></h2><div class="grid"><article class="svc rv" id="svc-meingrundeinkommen" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
@@ -655,10 +679,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-meingrundeinkommen">ベルリンの非営利団体が、クラウドファンディングの寄付を元手に開く無料の抽選。定期的に抽選があり、当たった人は月1,000ユーロを12か月、条件なしで受け取れる（暗号資産ではなく現金）</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-meingrundeinkommen" hidden>もっと見る</button></div>
 <p class="need"><b>条件</b><span>メールアドレスで登録し、抽選ごとに参加を確認する。16歳以上で、当選時は名前と生年月日が身分証と一致している必要がある</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-yes" title="換金（現金にできるか）：あり"><span aria-hidden="true">換金</span><b aria-hidden="true">✓</b><span class="vh">換金（現金にできるか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution">注意：2020年に運営は「年齢や居住地に関係なく誰でも参加できる」と説明しているが、ドイツ国外在住者の現在の条件や海外への送金は確認できていない。サイトはドイツ語。抽選なので、ほとんどの人は何も受け取れない。当選金は住んでいる国で税金がかかることがある</p>
+<p class="caution lv-info"><span><b>注意：</b> 2020年に運営は「年齢や居住地に関係なく誰でも参加できる」と説明しているが、ドイツ国外在住者の現在の条件や海外への送金は確認できていない。サイトはドイツ語。抽選なので、ほとんどの人は何も受け取れない。当選金は住んでいる国で税金がかかることがある</span></p>
 
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
 </article>
 <article class="svc rv" id="svc-ubi4all" data-cat="app" data-type="loop">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/ubi4all/">UBI4ALL</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
@@ -666,10 +690,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="desc"><p id="d-ubi4all">ドイツの非営利団体が開く無料の抽選。寄付で9,600ユーロ集まるたびに抽選し、当選者は総額9,600ユーロのベーシックインカムを条件なしに現金で受け取る。日本など高所得国は月800ユーロを1年、低所得国は月160ユーロを5年。紹介特典はない</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-ubi4all" hidden>もっと見る</button></div>
 <p class="need"><b>条件</b><span>公式サイトで無料登録し、抽選ごとに参加を登録する（月1ユーロからの定期寄付者は自動で参加）。16歳以上で、当選したら身分証で本人確認。日本からの登録は当サイトではまだ確かめていない</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-yes" title="換金（現金にできるか）：あり"><span aria-hidden="true">換金</span><b aria-hidden="true">✓</b><span class="vh">換金（現金にできるか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution">注意：抽選なので当たる確率は低く、参加者の数で変わる。抽選は寄付で9,600ユーロが集まったときだけ行われるので、時期は不定期。UBI Beaverでなければ抽選ごとに参加登録が必要。前回の当選者と同じ国の人は次の抽選に参加できない。振込はSEPA口座が基本で、ほかの方法だと手数料が賞金から引かれる。当選金の税金の扱いは住んでいる国による</p>
+<p class="caution lv-info"><span><b>注意：</b> 抽選なので当たる確率は低く、参加者の数で変わる。抽選は寄付で9,600ユーロが集まったときだけ行われるので、時期は不定期。UBI Beaverでなければ抽選ごとに参加登録が必要。前回の当選者と同じ国の人は次の抽選に参加できない。振込はSEPA口座が基本で、ほかの方法だと手数料が賞金から引かれる。当選金の税金の扱いは住んでいる国による</span></p>
 
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid" href="https://www.ubi4all.org/" target="_blank" rel="noopener">公式サイトを見る</a></div>
+<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">公式サイトを見る</a></div>
 </article></div></section>
 <nav class="vchips vother" aria-label="認証方法の一覧"><a href="/ja/verify/world-id/" dir="auto">World ID（Orb認証）</a><a href="/ja/verify/face/" dir="auto">顔認証・ライブネス</a><a href="/ja/verify/web-of-trust/" dir="auto">信頼の網・招待</a><a href="/ja/verify/none/" dir="auto">認証なし</a></nav>
 <p class="back"><a class="btn line" href="/ja/#list">← サービス一覧に戻る</a></p>
