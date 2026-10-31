@@ -1,4 +1,4 @@
-// 使い方: node og.js  →  SNS 用の画像（1200x630）とアイコンを Chrome で作る。サービスや見出しを変えたら作り直す
+// 使い方: node og.js  →  SNS 用の画像（1200x630）とアイコンを Chrome で作る。node build.js が毎回これを呼ぶ（足りない・変わった画像だけ作る）
 //   src/og/{lang}.png              言語ごとのトップページ
 //   src/og/svc/{lang}/{id}.jpg     サービスの個別ページ（名前・もらえるもの・目安）
 //   src/og/essay/{lang}/{id}.jpg   エッセイ（題・要約）
@@ -172,7 +172,7 @@ async function launch() {
   const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'og-prof-'));
   const { spawn } = require('child_process');
   const proc = spawn(CHROME, ['--headless=new', '--hide-scrollbars', '--disable-gpu', '--remote-debugging-port=0', `--user-data-dir=${profile}`, 'about:blank'], { stdio: ['ignore', 'ignore', 'pipe'] });
-  const wsUrl = await new Promise((ok, ng) => { let b = ''; const t = setTimeout(() => ng(new Error('Chrome did not start')), 30000); proc.stderr.on('data', d => { b += d; const m = b.match(/DevTools listening on (ws:\/\/\S+)/); if (m) { clearTimeout(t); ok(m[1]); } }); });
+  const wsUrl = await new Promise((ok, ng) => { let b = ''; const t = setTimeout(() => ng(new Error('Chrome did not start')), 30000); proc.on('exit', c => { clearTimeout(t); ng(new Error(`Chrome exited (${c})`)); }); proc.on('error', e => { clearTimeout(t); ng(e); }); proc.stderr.on('data', d => { b += d; const m = b.match(/DevTools listening on (ws:\/\/\S+)/); if (m) { clearTimeout(t); ok(m[1]); } }); });
   const port = new URL(wsUrl).port;
   const target = (await (await fetch(`http://127.0.0.1:${port}/json/list`)).json()).find(t => t.type === 'page');
   const ws = new WebSocket(target.webSocketDebuggerUrl);
@@ -180,7 +180,7 @@ async function launch() {
   let id = 0; const pending = new Map(), waiters = [];
   ws.onmessage = ev => { const m = JSON.parse(ev.data); if (m.id && pending.has(m.id)) { const [ok, ng] = pending.get(m.id); pending.delete(m.id); m.error ? ng(new Error(m.error.message)) : ok(m.result); } else if (m.method) for (const w of waiters.splice(0)) w.method === m.method ? w.ok(m.params) : waiters.push(w); };
   const send = (method, params = {}) => new Promise((ok, ng) => { pending.set(++id, [ok, ng]); ws.send(JSON.stringify({ id, method, params })); });
-  const once = method => Promise.race([new Promise(ok => waiters.push({ method, ok })), new Promise((_, ng) => setTimeout(() => ng(new Error('timeout ' + method)), 60000))]);
+  const once = method => Promise.race([new Promise(ok => waiters.push({ method, ok })), new Promise((_, ng) => setTimeout(() => ng(new Error('timeout ' + method)), 60000).unref())]);
   await send('Page.enable');
   await send('Emulation.setDeviceMetricsOverride', { width: 1200, height: 630, deviceScaleFactor: 1, mobile: false });
   return { send, once, close: () => { ws.close(); proc.kill(); try { fs.rmSync(profile, { recursive: true, force: true }); } catch {} } };
@@ -237,28 +237,37 @@ async function icons(cdp) {
   console.log('static/apple-touch-icon.png, favicon.ico, favicon-32.png');
 }
 
+// ---- 作る必要のある画像を先に数える（全部そろっていれば Chrome も起動しない）
+const saveManifest = () => fs.writeFileSync(MANIFEST, JSON.stringify(Object.fromEntries(Object.keys(manifest).sort().map(k => [k, manifest[k]])), null, 1) + '\n');
+const ONLY = process.env.OG_LANGS ? process.env.OG_LANGS.split(',') : LANGS;
+const todo = [];
+let kept = 0;
+for (const lang of ONLY) {
+  // トップページ（Google Fonts のサブセットを埋め込む従来の画像）
+  // 指紋はフォントを取りに行く前の HTML で取る（変わっていなければネットワークも使わない）
+  const homeRel = `${lang}.png`, homeKey = hash(page(lang, false));
+  if (fresh(homeRel, homeKey)) kept++; else todo.push({ rel: homeRel, key: homeKey, mk: () => page(lang), format: 'png' });
+  for (const s of live) { const html = svcHtml(s, lang); const rel = `svc/${lang}/${s.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+  for (const e of ESSAYS) { const html = essayHtml(e, lang); const rel = `essay/${lang}/${e.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+}
+const iconsFresh = () => !FORCE && manifest['static/icons'] === hash(fs.readFileSync(path.join(STATIC, 'favicon.svg'), 'utf8')) && fs.existsSync(path.join(STATIC, 'favicon.ico'));
+if (!todo.length && iconsFresh()) { console.log(`og: 0 made, ${kept} unchanged`); process.exit(0); }
+// Chrome が無い環境（寄稿者など）では作らずに終わる。build.js はこの終了コード 2 ではやり直さない
+if (!fs.existsSync(CHROME)) { console.warn(`og: ${todo.length} image(s) to make, but Chrome was not found at ${CHROME} (set CHROME=...)`); process.exit(2); }
+
 fs.mkdirSync(OUT, { recursive: true });
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'og-'));
 (async () => {
   const cdp = await launch();
-  let made = 0, kept = 0;
+  let made = 0;
   try {
     await icons(cdp);
-    const ONLY = process.env.OG_LANGS ? process.env.OG_LANGS.split(',') : LANGS;
-    for (const lang of ONLY) {
-      // トップページ（Google Fonts のサブセットを埋め込む従来の画像）
-      // 指紋はフォントを取りに行く前の HTML で取る（変わっていなければネットワークも使わない）
-      const homeRel = `${lang}.png`, homeKey = hash(page(lang, false));
-      if (fresh(homeRel, homeKey)) kept++; else { await shoot(cdp, page(lang), path.join(OUT, homeRel), 'png'); manifest[homeRel] = homeKey; made++; console.log('og/' + homeRel); }
-      const jobs = [...live.map(s => [`svc/${lang}/${s.id}.jpg`, () => svcHtml(s, lang)]), ...ESSAYS.map(e => [`essay/${lang}/${e.id}.jpg`, () => essayHtml(e, lang)])];
-      for (const [rel, mk] of jobs) {
-        const html = mk(), key = hash(html);
-        if (fresh(rel, key)) { kept++; continue; }
-        await shoot(cdp, html, path.join(OUT, rel), 'jpeg');
-        manifest[rel] = key; made++;
-        if (made % 20 === 0) console.log(`... ${made} images`);
-      }
-      fs.writeFileSync(MANIFEST, JSON.stringify(Object.fromEntries(Object.keys(manifest).sort().map(k => [k, manifest[k]])), null, 1) + '\n');
+    saveManifest();
+    for (const { rel, key, mk, format } of todo) {
+      await shoot(cdp, mk(), path.join(OUT, rel), format);
+      // 1枚ごとに指紋を書く（途中で失敗しても、次は続きから）
+      manifest[rel] = key; made++; saveManifest();
+      if (format === 'png') console.log('og/' + rel); else if (made % 20 === 0) console.log(`... ${made} images`);
     }
     console.log(`og: ${made} made, ${kept} unchanged`);
   } finally {

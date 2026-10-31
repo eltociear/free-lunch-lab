@@ -195,7 +195,7 @@ If your project is listed on the site, you're welcome to add a "Listed on Free L
 - `src/data.js` — all content: services (`SERVICES`), categories, UI strings for every language (`T`), the update log, organizations, and the site URL
 - `src/template.html` — the list page template (design and CSS)
 - `build.js` — generates `public/`: the list page per language, a page per service and language, the organizations page, `sitemap.xml` and `robots.txt`; it also refreshes the tables in this README
-- `og.js` — renders the share images (1200×630) with headless Chrome: one per language (`src/og/{lang}.png`), one per service and language (`src/og/svc/{lang}/{id}.jpg`) and one per essay and language (`src/og/essay/{lang}/{id}.jpg`), plus the favicon PNG/ICO and the 180px touch icon from `src/static/favicon.svg`. Fonts are subset to the characters used and embedded; images whose HTML and fonts are unchanged are skipped (`src/og/manifest.json`, `OG_FORCE=1` redoes all)
+- `og.js` — renders the share images (1200×630) with headless Chrome: one per language (`src/og/{lang}.png`), one per service and language (`src/og/svc/{lang}/{id}.jpg`) and one per essay and language (`src/og/essay/{lang}/{id}.jpg`), plus the favicon PNG/ICO and the 180px touch icon from `src/static/favicon.svg`. Fonts are subset to the characters used and embedded; images whose HTML and fonts are unchanged are skipped (`src/og/manifest.json`, `OG_FORCE=1` redoes all). `build.js` runs it after the font subsets are ready, retrying up to 3 times (progress is saved per image, so a retry resumes); `OG_SKIP=1` skips it
 - `fonts.js` — self-hosted web fonts: `build.js` collects the characters each language actually renders per typeface and keeps woff2 subsets of them in `src/fonts/` (fetched once from Google Fonts with `text=`; new characters add a new file, existing files never change, `FONTS_REBUILD=1` starts over)
 - `src/static/` — files copied to the site root as is (favicon, touch icon)
 - `readme.js` — regenerates the badges, service table, organizations list, open-source tables and essay list in this README from `src/data.js`
@@ -212,18 +212,17 @@ URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/
 ## Build and deploy
 
 ```sh
-node og.js          # when services, essays or the headline changed (needs Chrome; unchanged images are skipped)
-node build.js       # writes public/ and refreshes the README tables
+node build.js       # writes public/, refreshes the README tables and runs og.js for missing or changed share images
 npx wrangler deploy # publishes public/ to Cloudflare Workers
 ```
 
 Maintenance: `node liveness.js` re-checks that every listed service still resolves and that no "checked" date has gone stale (run it periodically; it never blocks a build or deploy).
 
-There are no npm dependencies; Node.js and, for `og.js`, Chrome are enough. The Chrome path can be set with the `CHROME` environment variable.
+There are no npm dependencies; Node.js and, for the share images, Chrome are enough (without Chrome the build still finishes and warns about missing share images). The Chrome path can be set with the `CHROME` environment variable.
 
 ## Adding a service
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the listing criteria first. Then add an entry to `SERVICES` in `src/data.js` and run `node build.js && node og.js && node build.js` (the first build fetches any new font characters that `og.js` reuses).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the listing criteria first. Then add an entry to `SERVICES` in `src/data.js` and run `node build.js` (it also makes the new share images).
 
 - `id`, `name` (Japanese display name), `nameEn` (optional, used for other languages)
 - `cat` — category: `crypto-bi`, `app`, `pointsite`, `career`, `exchange`, `finance`, or `ai-agent` (for AI-agent basic income; a category with no entries never appears anywhere, so it shows up automatically with the first entry)

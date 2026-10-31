@@ -246,10 +246,6 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
-/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
-.svc.over{display:none}
-.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
-.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -589,7 +585,6 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
   </div>
   <p class="count" id="count" aria-live="polite">{{count}}</p>
   <div class="grid" id="grid">{{cards}}<p class="empty-state" id="empty" hidden>{{t.none}}</p></div>
-  <p class="show-all-wrap"><button class="btn line show-all" type="button" id="showAll" hidden></button></p>
 </section>
 
 <section id="verify">

@@ -23,6 +23,7 @@ Referral links and codes on the site are the maintainer's own. **Pull requests m
 
 - **One service per pull request.** Keep changes focused.
 - Edit `src/data.js` only (plus `CATS` or `T` if a new label is truly needed). Run `node build.js`; it regenerates `public/` and the README tables. Do not edit the generated parts of `README.md` by hand.
+- `node build.js` also makes the share images (`src/og/`) through `og.js`: only images that are missing or whose content changed are drawn, it resumes and retries up to 3 times if Chrome fails partway, and it does nothing when every image is up to date. It needs Chrome (set `CHROME=/path/to/chrome` if it is not Chrome Canary on macOS); without Chrome, or with `OG_SKIP=1`, the build still finishes and warns that share images are missing, and the maintainer will add them.
 - Provide text in English at least. Other languages fall back to English; translations into Japanese, Simplified Chinese, Hindi, Spanish, German and Arabic are welcome.
 - Set `verify` from the service’s own documentation only (see README); mark a method `"optional": true` if it is not required, and leave the array empty if the method is not stated.
 - Set `checked` to the month you verified the entry against official sources, as `"YYYY-MM"` (e.g. `"2026-10"`). It is shown on the site as “Checked Oct 2026”, and the build fails if a visible entry lacks it. Update it only when you actually re-check the facts.

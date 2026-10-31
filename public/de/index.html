@@ -298,10 +298,6 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
-/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
-.svc.over{display:none}
-.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
-.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -1159,7 +1155,6 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 </div></details>
 <div class="slip"><a class="btn warn-go" href="/de/services/refrax/#warn">Erst die Warnhinweise lesen</a></div></div>
 </article><p class="empty-state" id="empty" hidden>Keine Dienste passen zu diesen Filtern.</p></div>
-  <p class="show-all-wrap"><button class="btn line show-all" type="button" id="showAll" hidden></button></p>
 </section>
 
 <section id="verify">
@@ -1246,30 +1241,19 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 <div class="toast" id="toast" role="status" hidden></div>
 <script>
 (function(){
-  var I18N={"count":"{n} Dienste angezeigt","showAll":"Alle anzeigen ({n} weitere)","copied":"Code kopiert","selected":"Code markiert. Kopier ihn über das Menü","linkCopied":"Link kopiert","shareText":"Apps, die dich im Schlaf bezahlen 😴💰 Krypto-Grundeinkommen und passive Einkommens-Apps in einer Liste","url":"https://neteru-nyukin.eltociear.workers.dev/de/"};
+  var I18N={"count":"{n} Dienste angezeigt","copied":"Code kopiert","selected":"Code markiert. Kopier ihn über das Menü","linkCopied":"Link kopiert","shareText":"Apps, die dich im Schlaf bezahlen 😴💰 Krypto-Grundeinkommen und passive Einkommens-Apps in einer Liste","url":"https://neteru-nyukin.eltociear.workers.dev/de/"};
   var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
       countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
-  // スマホでは最初の LIMIT 件だけ出す（「すべて表示」を押すか、#svc-… で来たら全部出す）
-  var LIMIT=12,mq=window.matchMedia('(max-width:760px)'),all=false,showAll=document.getElementById('showAll');
   function apply(){
-    var n=0,lim=mq.matches&&!all;
+    var n=0;
     grid.querySelectorAll('.svc').forEach(function(el){
       var show=(cat==='all'||el.getAttribute('data-cat')===cat)&&(!loopOnly.checked||el.getAttribute('data-type')==='loop');
       el.hidden=!show; if(show)n++;
-      el.classList.toggle('over',show&&lim&&n>LIMIT);
     });
     empty.hidden=n>0;
     countEl.textContent=I18N.count.replace('{n}',n);
-    showAll.hidden=!(lim&&n>LIMIT);
-    if(!showAll.hidden) showAll.textContent=I18N.showAll.replace('{n}',n-LIMIT);
   }
-  function expand(){if(!all){all=true;apply()}}
-  showAll.addEventListener('click',function(){var first=grid.querySelector('.svc.over');expand();if(first){var a=first.querySelector('h3 a');if(a)a.focus({preventScroll:true})}});
-  if(mq.addEventListener) mq.addEventListener('change',apply);
-  function fromHash(){var h=location.hash.slice(1),el=h&&document.getElementById(h);if(el&&el.classList.contains('over')){expand();el.scrollIntoView()}}
-  window.addEventListener('hashchange',fromHash);
-  document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#svc-"]');if(!a)return;var el=document.getElementById(a.getAttribute('href').slice(1));if(el&&el.classList.contains('over'))expand()});
-  apply(); fromHash();
+  apply();
   filters.addEventListener('click',function(e){
     var b=e.target.closest('button'); if(!b) return;
     cat=b.getAttribute('data-cat');

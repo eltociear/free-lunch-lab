@@ -115,10 +115,12 @@ const byMethod = m => ({
 });
 const verifyPages = VERIFY_ORDER.filter(m => { const b = byMethod(m); return b.req.length + b.opt.length >= 2; });
 for (const s of live) for (const v of (s.verify || [])) if (!VERIFY[v.method]) throw new Error(`${s.id}: unknown verify method ${v.method}`);
-// SNS 用の画像: 個別ページ・エッセイは node og.js で作る src/og/svc|essay/{lang}/{id}.jpg。まだなければ言語のトップの画像を使う
+// SNS 用の画像: 個別ページ・エッセイは og.js で作る src/og/svc|essay/{lang}/{id}.jpg（build の後半で呼ぶ）。
+// ページにはいったん印（@@og:…@@）を入れておき、画像を作ったあとで URL にする。まだなければ言語のトップの画像を使う
 const OG_DIR = path.join(__dirname, 'src/og');
 const ogMissing = [];
-const ogImage = (rel, lang) => { if (fs.existsSync(path.join(OG_DIR, rel))) return `${SITE_URL}/og/${rel}`; ogMissing.push(rel); return `${SITE_URL}/og/${lang}.png`; };
+const ogImage = rel => `@@og:${rel}@@`;
+const ogResolve = html => html.replace(/@@og:([^@]+)@@/g, (m, rel) => { if (fs.existsSync(path.join(OG_DIR, rel))) return `${SITE_URL}/og/${rel}`; ogMissing.push(rel); return `${SITE_URL}/og/${rel.split('/')[1]}.png`; });
 // ファビコン・ホーム画面アイコン・テーマ色（src/static/ をそのままサイトの直下へ）
 const ICONS = `<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -344,33 +346,22 @@ function siteLd(lang) {
 
 function clientScript(lang) {
   const L = T[lang];
-  const i18n = { count: L.count, showAll: L.showAll, copied: L.copied, selected: L.selected, linkCopied: L.linkCopied, shareText: L.shareText, url: abs(lang) };
+  const i18n = { count: L.count, copied: L.copied, selected: L.selected, linkCopied: L.linkCopied, shareText: L.shareText, url: abs(lang) };
   return `<script>
 (function(){
   var I18N=${JSON.stringify(i18n)};
   var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
       countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
-  // スマホでは最初の LIMIT 件だけ出す（「すべて表示」を押すか、#svc-… で来たら全部出す）
-  var LIMIT=12,mq=window.matchMedia('(max-width:760px)'),all=false,showAll=document.getElementById('showAll');
   function apply(){
-    var n=0,lim=mq.matches&&!all;
+    var n=0;
     grid.querySelectorAll('.svc').forEach(function(el){
       var show=(cat==='all'||el.getAttribute('data-cat')===cat)&&(!loopOnly.checked||el.getAttribute('data-type')==='loop');
       el.hidden=!show; if(show)n++;
-      el.classList.toggle('over',show&&lim&&n>LIMIT);
     });
     empty.hidden=n>0;
     countEl.textContent=I18N.count.replace('{n}',n);
-    showAll.hidden=!(lim&&n>LIMIT);
-    if(!showAll.hidden) showAll.textContent=I18N.showAll.replace('{n}',n-LIMIT);
   }
-  function expand(){if(!all){all=true;apply()}}
-  showAll.addEventListener('click',function(){var first=grid.querySelector('.svc.over');expand();if(first){var a=first.querySelector('h3 a');if(a)a.focus({preventScroll:true})}});
-  if(mq.addEventListener) mq.addEventListener('change',apply);
-  function fromHash(){var h=location.hash.slice(1),el=h&&document.getElementById(h);if(el&&el.classList.contains('over')){expand();el.scrollIntoView()}}
-  window.addEventListener('hashchange',fromHash);
-  document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#svc-"]');if(!a)return;var el=document.getElementById(a.getAttribute('href').slice(1));if(el&&el.classList.contains('over'))expand()});
-  apply(); fromHash();
+  apply();
   filters.addEventListener('click',function(e){
     var b=e.target.closest('button'); if(!b) return;
     cat=b.getAttribute('data-cat');
@@ -731,7 +722,7 @@ ${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#or
 <p class="back"><a class="btn line" href="${home}#list">${rtl ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   const script = copyScript(L);
-  return shell(lang, { title, desc, hrefFor: l => svcAbs(l, s), pathFor: l => svcPath(l, s), ld, ogType: 'article', body, script, pr: true, image: ogImage(`svc/${lang}/${s.id}.jpg`, lang) });
+  return shell(lang, { title, desc, hrefFor: l => svcAbs(l, s), pathFor: l => svcPath(l, s), ld, ogType: 'article', body, script, pr: true, image: ogImage(`svc/${lang}/${s.id}.jpg`) });
 }
 function copyScript(L) {
   const i18n = { copied: L.copied, selected: L.selected };
@@ -861,7 +852,7 @@ function essayPage(e, lang) {
       { '@type': 'ListItem', position: 3, name: ttl, item: url } ] },
     { '@context': 'https://schema.org', '@type': 'Article', headline: ttl, description: desc, inLanguage: LANG_TAG[lang], datePublished: e.date, dateModified: e.date,
       author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
-      mainEntityOfPage: url, image: ogImage(`essay/${lang}/${e.id}.jpg`, lang) },
+      mainEntityOfPage: url, image: ogImage(`essay/${lang}/${e.id}.jpg`) },
   ];
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a></li><li aria-current="page">${esc(ttl)}</li></ol></nav>
 <main class="essay">
@@ -873,7 +864,7 @@ ${rel ? `<p class="related">${esc(L.essayRelated)}: <a href="${essayPath(lang, r
 </article>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title: `${ttl} | ${L.title}`, desc, hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, image: ogImage(`essay/${lang}/${e.id}.jpg`, lang) });
+  return shell(lang, { title: `${ttl} | ${L.title}`, desc, hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, image: ogImage(`essay/${lang}/${e.id}.jpg`) });
 }
 function essaysIndex(lang) {
   const L = T[lang];
@@ -1164,13 +1155,20 @@ const fontHead = Object.fromEntries(LANGS.map(l => {
   const pre = list.filter(f => f.preload && FACES[f.key] && FACES[f.key][0]).map(f => `<link rel="preload" href="/fonts/${FACES[f.key][0].file}" as="font" type="font/woff2" crossorigin>`);
   return [l, `${pre.join('\n')}\n<style>${fontFaceCss(FACES, list)}</style>`];
 }));
-for (const { file, html, lang } of pages) fs.writeFileSync(file, html.replace('<!--@fonts@-->', fontHead[lang]));
+// ---- SNS 用の画像: フォントのサブセットがそろったところで og.js を呼び、足りない・変わった画像だけ作る。
+// 失敗したら続きから最大3回やり直す。OG_SKIP=1 で飛ばす（Chrome が無ければ og.js が何もせず終わる）
+if (process.env.OG_SKIP) console.warn('og: skipped (OG_SKIP=1)');
+else for (let i = 1; i <= 3; i++) {
+  try { execFileSync(process.execPath, [path.join(__dirname, 'og.js')], { stdio: 'inherit', timeout: 20 * 60000 }); break; }
+  catch (e) { if (e.status === 2) break; console.warn(`og: attempt ${i} of 3 failed${i < 3 ? ', retrying' : ''}`); }
+}
+for (const { file, html, lang } of pages) fs.writeFileSync(file, ogResolve(html.replace('<!--@fonts@-->', fontHead[lang])));
 fs.mkdirSync(path.join(OUT, 'fonts'), { recursive: true });
 for (const f of fs.readdirSync(FONT_DIR)) if (f.endsWith('.woff2')) fs.copyFileSync(path.join(FONT_DIR, f), path.join(OUT, 'fonts', f));
 
-// SNS 用の画像（node og.js で src/og/ に作る）をそのままコピー
+// SNS 用の画像（og.js で src/og/ に作る）をそのままコピー
 if (fs.existsSync(OG_DIR)) fs.cpSync(OG_DIR, path.join(OUT, 'og'), { recursive: true, filter: f => !f.endsWith('manifest.json') });
-if (ogMissing.length) console.warn(`WARNING: ${new Set(ogMissing).size} share images are missing (pages fall back to the language image); run node og.js`);
+if (ogMissing.length) console.warn(`WARNING: ${new Set(ogMissing).size} share images are missing (pages fall back to the language image); run node build.js again on a machine with Chrome (or node og.js)`);
 const STATIC_DIR = path.join(__dirname, 'src/static');
 for (const f of fs.readdirSync(STATIC_DIR)) fs.copyFileSync(path.join(STATIC_DIR, f), path.join(OUT, f));
 // バッジの SVG（src/badge.js で作る）
