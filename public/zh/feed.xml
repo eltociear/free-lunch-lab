@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/zh/</link>
     <description>收录只要存在就能领钱的基本收入型应用与项目（如 Ğ1、Circles、Gradido、Idena），并注明风险和能否兑现。部分为推荐链接。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/zh/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>新增 Mercari（メルカリ）</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/services/mercari/</link>
+      <guid isPermaLink="false">news-2026-10-31-113748219b60</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description>新增 Mercari（メルカリ）: 价值 500 日元的积分（可自动换成比特币等）</description>
+    </item>
     <item>
       <title>新增 Refrax（$REFRAX）</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/zh/services/refrax/</link>

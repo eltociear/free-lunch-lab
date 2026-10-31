@@ -109,6 +109,27 @@ What you get: Up to 2,300 points
 
 What you need: Join via referral by Oct 31 and meet the conditions by Nov 30
 
+### Mercari
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/mercari/
+- Category: Cashback sites
+- Payout: one-time
+- Region: Japan only
+- Verification: Phone number, ID document KYC (optional)
+- Trust check: Cash out: Yes; Market price: Yes; Public operator: Yes
+- Last checked: 2026-10
+- Official URL: https://jp.mercari.com/
+- Referral link (maintainer's own referral; not covered by the content license): https://link.jp.mercari.com/70tO/lpthbfqe
+- Referral code (maintainer's own): AJVWZX
+
+Mercari’s friend invite for its flea-market app. Sign up with an invite code and both you and the inviter get ¥500 in points (within 14 days). Turn on “Point Investment”, launched on Sept 15, 2026, and free points you receive automatically buy Bitcoin or Ethereum
+
+What you get: ¥500 in points (can be auto-converted into Bitcoin and more)
+
+What you need: Japan residents. Enter the invite code on the sign-up screen (it can’t be added later). Point Investment needs ID verification and age 18 to 74 (sign-up from Japan confirmed in Oct 2026)
+
+Cautions: Points expire 30 days after you get them (counting that day). Point Investment only uses free points granted after you turn it on. There is no fee, but prices include a spread, and crypto can fall in value. Points obtained improperly are cancelled
+
 ### WAVEE
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/wavee/

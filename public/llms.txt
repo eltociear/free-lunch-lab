@@ -27,6 +27,7 @@
 - [ME Pass](https://neteru-nyukin.eltociear.workers.dev/services/mepass/): MEC tokens every day. Meta Earth's wallet app (Crypto basic income; available in Japan and worldwide; verification: ID document KYC)
 - [BioMatrix](https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/): PoY tokens every month. A UBI token that promises monthly payouts for 60 years (Crypto basic income; available in Japan and worldwide; verification: not specified)
 - [Hapitas](https://neteru-nyukin.eltociear.workers.dev/services/hapitas/): Up to 2,300 points. October 2026 offer (1 point = ¥1) (Cashback sites; Japan only; verification: No verification)
+- [Mercari](https://neteru-nyukin.eltociear.workers.dev/services/mercari/): ¥500 in points (can be auto-converted into Bitcoin and more). Mercari’s friend invite for its flea-market app (Cashback sites; Japan only; verification: Phone number, ID document KYC (optional))
 - [WAVEE](https://neteru-nyukin.eltociear.workers.dev/services/wavee/): A matching reward each time you land a job. Invite-only job matching (Job matching; available in Japan and worldwide; verification: No verification)
 - [Trima](https://neteru-nyukin.eltociear.workers.dev/services/trima/): 5,000 miles + miles for moving and walking. An app that earns miles just by carrying your phone as you travel and walk (Passive apps; Japan only; verification: No verification)
 - [Sweatcoin](https://neteru-nyukin.eltociear.workers.dev/services/sweatcoin/): 0.95 coins per 1,000 steps. Carry your phone and your steps turn into coins automatically (Passive apps; available in Japan and worldwide; verification: No verification)
@@ -63,6 +64,7 @@
 - [What can you do with World ID? Apps that use Orb verification](https://neteru-nyukin.eltociear.workers.dev/verify/world-id/): services that use World ID (Orb)
 - [Apps that verify you with a face scan](https://neteru-nyukin.eltociear.workers.dev/verify/face/): services that use Face scan / liveness
 - [Apps that require ID document KYC](https://neteru-nyukin.eltociear.workers.dev/verify/kyc-id/): services that use ID document KYC
+- [Apps that verify you by phone number](https://neteru-nyukin.eltociear.workers.dev/verify/phone/): services that use Phone number
 - [Apps you join through invites or a web of trust](https://neteru-nyukin.eltociear.workers.dev/verify/web-of-trust/): services that use Web of trust / invites
 - [Apps that need no identity verification](https://neteru-nyukin.eltociear.workers.dev/verify/none/): services that use No verification
 - [Basic income organizations & projects](https://neteru-nyukin.eltociear.workers.dev/organizations/): A curated list of organizations and projects around the world and in Japan that advocate, research or practise basic income (UBI), grouped by type. Checked in October 2026.

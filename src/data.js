@@ -429,6 +429,77 @@ module.exports = {
       }
     },
     {
+      "id": "mercari",
+      "name": "メルカリ（Mercari）",
+      "nameEn": "Mercari",
+      "cat": "pointsite",
+      "type": "once",
+      "global": false,
+      "ease": 4,
+      "official": "https://jp.mercari.com/",
+      "code": "AJVWZX",
+      "ref": "https://link.jp.mercari.com/70tO/lpthbfqe",
+      "showCode": true,
+      "added": "2026-10-31",
+      "checked": "2026-10",
+      "trust": {
+        "cash": "yes",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "verify": [
+        {
+          "method": "phone"
+        },
+        {
+          "method": "kyc-id",
+          "optional": true
+        }
+      ],
+      "ja": {
+        "gain": "500円分のポイント（ビットコインなどに自動で替えることもできる）",
+        "note": "フリマアプリの友達招待。招待コードを入れて新規登録すると、招待された側・した側にそれぞれ500円分のポイント（登録から14日以内）。2026年9月15日に始まった「ポイント運用」をオンにすると、もらった無償ポイントで自動的にビットコインやイーサリアムを買える",
+        "need": "日本在住。新規登録の画面で招待コードを入力する（登録後は入力不可）。ポイント運用は本人確認済みの18歳以上75歳未満が対象（2026年10月に日本から登録できることを確認）",
+        "caution": "ポイントの有効期限は獲得日を含めて30日。ポイント運用で使われるのは、オンにした後に付与された無償ポイントだけ。手数料は無料だが価格にスプレッド（取引コスト）が含まれ、暗号資産は値下がりして損をすることもある。不正な取得と判断されるとポイントは取り消される"
+      },
+      "en": {
+        "gain": "¥500 in points (can be auto-converted into Bitcoin and more)",
+        "note": "Mercari’s friend invite for its flea-market app. Sign up with an invite code and both you and the inviter get ¥500 in points (within 14 days). Turn on “Point Investment”, launched on Sept 15, 2026, and free points you receive automatically buy Bitcoin or Ethereum",
+        "need": "Japan residents. Enter the invite code on the sign-up screen (it can’t be added later). Point Investment needs ID verification and age 18 to 74 (sign-up from Japan confirmed in Oct 2026)",
+        "caution": "Points expire 30 days after you get them (counting that day). Point Investment only uses free points granted after you turn it on. There is no fee, but prices include a spread, and crypto can fall in value. Points obtained improperly are cancelled"
+      },
+      "zh": {
+        "gain": "价值 500 日元的积分（可自动换成比特币等）",
+        "note": "二手交易应用 Mercari 的好友邀请。输入邀请码新注册后，被邀请人和邀请人各得价值 500 日元的积分（注册后 14 天内发放）。打开 2026 年 9 月 15 日推出的“积分投资”功能后，收到的免费积分会自动买入比特币或以太坊",
+        "need": "居住在日本。在注册页面输入邀请码（注册后无法补填）。积分投资需完成身份验证，且年满 18 岁、未满 75 岁（已于 2026 年 10 月确认可从日本注册）",
+        "caution": "积分有效期为获得当天起 30 天。积分投资只使用开启后发放的免费积分。不收手续费，但价格中含有点差（交易成本），加密资产可能下跌造成亏损。以不正当方式获得的积分会被取消"
+      },
+      "hi": {
+        "gain": "¥500 के पॉइंट (Bitcoin वग़ैरह में अपने आप बदल सकते हैं)",
+        "note": "फ़्ली-मार्केट ऐप Mercari का दोस्त इनवाइट। इनवाइट कोड डालकर नया साइन अप करने पर आपको और बुलाने वाले, दोनों को ¥500 के पॉइंट (14 दिन के भीतर)। 15 सितंबर 2026 से शुरू “पॉइंट निवेश” चालू करें तो मिले मुफ़्त पॉइंट से अपने आप Bitcoin या Ethereum ख़रीदा जाता है",
+        "need": "जापान के निवासी। साइन अप स्क्रीन पर इनवाइट कोड डालें (बाद में नहीं जुड़ता)। पॉइंट निवेश के लिए पहचान सत्यापन और 18 से 74 वर्ष की उम्र ज़रूरी (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)",
+        "caution": "पॉइंट मिलने के दिन से 30 दिन में ख़त्म हो जाते हैं। पॉइंट निवेश सिर्फ़ चालू करने के बाद मिले मुफ़्त पॉइंट इस्तेमाल करता है। फ़ीस नहीं है, पर क़ीमत में स्प्रेड शामिल है, और क्रिप्टो का दाम गिर सकता है। ग़लत तरीक़े से लिए गए पॉइंट रद्द होते हैं"
+      },
+      "es": {
+        "gain": "500 ¥ en puntos (se pueden convertir solos en Bitcoin y más)",
+        "note": "La invitación de amigos de Mercari, la app de segunda mano. Si te registras con un código, tú y quien te invita recibís 500 ¥ en puntos (en 14 días). Con la «Inversión de puntos», lanzada el 15 de septiembre de 2026, los puntos gratis que recibes compran Bitcoin o Ethereum automáticamente",
+        "need": "Residentes en Japón. Escribe el código en la pantalla de registro (no se puede añadir después). La Inversión de puntos exige verificar tu identidad y tener de 18 a 74 años (se comprobó en octubre de 2026 que el registro funciona desde Japón)",
+        "caution": "Los puntos caducan a los 30 días de recibirlos (contando ese día). La Inversión de puntos solo usa puntos gratis recibidos después de activarla. No hay comisión, pero el precio incluye un diferencial y las cripto pueden bajar. Los puntos obtenidos de forma indebida se anulan"
+      },
+      "de": {
+        "gain": "500 ¥ in Punkten (automatisch in Bitcoin u. a. umwandelbar)",
+        "note": "Die Freundeseinladung der Flohmarkt-App Mercari. Wer sich mit einem Einladungscode neu anmeldet, bekommt wie der Einladende 500 ¥ in Punkten (binnen 14 Tagen). Mit der am 15. September 2026 gestarteten „Punkte-Anlage“ kaufen erhaltene Gratispunkte automatisch Bitcoin oder Ethereum",
+        "need": "Wohnsitz in Japan. Den Code im Anmeldebildschirm eingeben (später nicht möglich). Die Punkte-Anlage erfordert eine Identitätsprüfung und ein Alter von 18 bis 74 (im Oktober 2026 bestätigt: Anmeldung aus Japan möglich)",
+        "caution": "Punkte verfallen 30 Tage nach Erhalt (der Tag zählt mit). Die Punkte-Anlage nutzt nur Gratispunkte, die nach dem Einschalten gutgeschrieben werden. Keine Gebühr, aber im Preis steckt ein Spread, und Krypto kann an Wert verlieren. Unrechtmäßig erhaltene Punkte werden storniert"
+      },
+      "ar": {
+        "gain": "نقاط بقيمة 500 ين (يمكن تحويلها تلقائيًا إلى بيتكوين وغيرها)",
+        "note": "برنامج دعوة الأصدقاء في تطبيق السوق المستعمل ⁦Mercari⁩. عند التسجيل الجديد برمز دعوة تحصل أنت ومن دعاك على نقاط بقيمة 500 ين لكلٍّ منكما (خلال 14 يومًا). وعند تفعيل «استثمار النقاط» الذي بدأ في 15 سبتمبر 2026، تشتري النقاط المجانية التي تصلك بيتكوين أو إيثريوم تلقائيًا",
+        "need": "للمقيمين في اليابان. أدخل رمز الدعوة في شاشة التسجيل (لا يمكن إضافته لاحقًا). يتطلب استثمار النقاط التحقق من الهوية وعمرًا من 18 إلى 74 عامًا (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)",
+        "caution": "تنتهي صلاحية النقاط بعد 30 يومًا من الحصول عليها (مع احتساب ذلك اليوم). لا يستخدم استثمار النقاط إلا النقاط المجانية الممنوحة بعد تفعيله. لا توجد رسوم، لكن السعر يشمل فارقًا (تكلفة تداول)، وقد تنخفض قيمة العملات المشفرة. تُلغى النقاط المكتسبة بطرق غير مشروعة"
+      }
+    },
+    {
       "id": "moppy",
       "name": "モッピー",
       "nameEn": "Moppy",
@@ -2518,6 +2589,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-10-31",
+      "ja": "メルカリ（Mercari）を追加",
+      "en": "Added Mercari",
+      "zh": "新增 Mercari（メルカリ）",
+      "hi": "Mercari जोड़ा",
+      "es": "Añadido Mercari",
+      "de": "Mercari hinzugefügt",
+      "ar": "أضفنا ⁦Mercari⁩"
+    },
     {
       "date": "2026-10-30",
       "ja": "Refrax（$REFRAX）を追加",
