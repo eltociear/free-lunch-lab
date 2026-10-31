@@ -41,22 +41,18 @@
 @font-face{font-family:"GBreve";src:url(https://fonts.gstatic.com/l/font?kit=o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc1azXvFujBSg6T775xg&skey=2b960fe17823056f&v=v42) format("woff2");unicode-range:U+011E;font-display:swap}
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
 :root{
-  --paper:#E9EDF6; --paper-2:#F8ECE0; --surface:#FFFFFF; --ink:#18213B; --muted:#56627A; --line:#CFD6E4;
-  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B; --gold:#D99A1E;
-  --shadow:0 1px 2px rgba(20,28,60,.06),0 12px 32px -22px rgba(20,28,60,.4);
+  /* 夜空のダーク一色（X の画像と同じ）。システムのライトモードには切り替えない */
+  --paper:#0E1320; --paper-2:#1D1733; --surface:#161D2D; --ink:#E5EAF3; --muted:#A3ADC2; --line:#2A3448;
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; --gold:#FFD66B;
+  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 14px 34px -22px rgba(0,0,0,.8); color-scheme:dark;
   --f-display:"GBreve","Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
   --f-body:"GBreve","Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
   --f-dot:"GBreve","DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
-  --s1:clamp(2.3rem,6.4vw,4.3rem); --s2:clamp(1.45rem,3.4vw,2.1rem); --s4:.8rem;
+  --f-logo:"FLL Logo","Zen Kaku Gothic New","Hiragino Sans",system-ui,sans-serif;
+  --s1:clamp(2.3rem,6.4vw,4.3rem); --s2:clamp(1.3rem,3.4vw,2.1rem); --s4:.8125rem;
+  /* 主ボタン（紹介リンク）は金から緑のグラデーションに濃い文字 */
+  --cta:linear-gradient(100deg,#FFD66B 0%,#B9E58C 55%,#6CF0B0 100%); --cta-ink:#141A3A;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#0E1320; --paper-2:#1D1733; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; --gold:#FFD66B;
-  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 14px 34px -22px rgba(0,0,0,.8); color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#0E1320; --paper-2:#1D1733; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; --gold:#FFD66B;
-  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 14px 34px -22px rgba(0,0,0,.8); color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -66,7 +62,11 @@ body{background:linear-gradient(180deg,var(--paper) 25%,var(--paper-2)) var(--pa
 .wrap{max-width:1080px;margin-inline:auto}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
-h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;line-height:1.25}
+h1,h2{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.25}
+/* 見出しは単語の途中で折り返さない（日本語は文節で、行の長さはそろえる） */
+h1,h2,h3{text-wrap:balance;word-break:auto-phrase;overflow-wrap:break-word}
+/* 名前のかっこ書き（カブアンド、$REFRAX など）は小さく別の行に */
+.q{display:block;font-family:var(--f-body);font-weight:700;font-size:.62em;line-height:1.4;color:var(--muted);letter-spacing:.02em;margin-top:2px}
 p{margin:0}
 .dot{font-family:var(--f-dot);font-variant-numeric:tabular-nums}
 .label{font-size:var(--s4);letter-spacing:.12em;color:var(--muted)}
@@ -76,21 +76,21 @@ section[id],header[id]{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 /* top bar */
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 84%,transparent);-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);border-bottom:2px solid var(--ink);margin-inline:-16px;padding:10px 16px}
 .bar-in{max-width:1080px;margin-inline:auto;display:flex;align-items:center;gap:16px}
-.brand{font-family:var(--f-display);font-size:1.05rem;text-decoration:none;color:var(--ink);white-space:nowrap}
+.brand{font-family:var(--f-logo);font-weight:900;font-size:1.1rem;letter-spacing:.02em;text-decoration:none;color:var(--ink);white-space:nowrap}
 .brand span{color:var(--accent)}
-.brand small{display:inline-block;margin-inline-start:8px;font-family:var(--f-body);font-size:.66rem;font-weight:700;letter-spacing:.08em;color:var(--muted);vertical-align:middle}
+.brand small{display:inline-block;margin-inline-start:8px;font-family:var(--f-body);font-size:.8125rem;font-weight:700;letter-spacing:.08em;color:var(--muted);vertical-align:middle}
 .tagline{margin-top:10px;font-family:var(--f-body);font-weight:700;font-size:clamp(1.1rem,2.6vw,1.4rem);color:#FFD66B;letter-spacing:.02em}
 .nav{display:flex;gap:18px;margin-inline-start:auto;font-size:.88rem}
 .nav a{color:var(--ink);text-decoration:none}
 .nav a:hover{color:var(--accent)}
 .lang{display:inline-flex;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden;flex:none}
 .lang{margin-inline-start:auto;max-width:100%}
-.lang a{font-size:.8rem;font-weight:700;color:var(--ink);text-decoration:none;padding:3px 11px;white-space:nowrap}
+.lang a{font-size:.8125rem;font-weight:700;color:var(--ink);text-decoration:none;padding:3px 11px;white-space:nowrap}
 .nav+.lang{margin-inline-start:0}
 .lang a[aria-current="page"]{background:var(--ink);color:var(--paper)}
 
-.pr{font-size:.78rem;color:var(--muted);padding-block:12px 0}
-.pr b{display:inline-block;background:var(--ink);color:var(--paper);font-size:.7rem;padding:0 7px;border-radius:3px;margin-inline-end:6px;letter-spacing:.08em}
+.pr{font-size:.8125rem;color:var(--muted);padding-block:12px 0}
+.pr b{display:inline-block;background:var(--ink);color:var(--paper);font-size:.8125rem;padding:0 7px;border-radius:3px;margin-inline-end:6px;letter-spacing:.08em}
 
 /* hero */
 .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,5vw,56px);align-items:center;padding-block:clamp(32px,6vw,72px) clamp(28px,5vw,48px)}
@@ -116,10 +116,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
 .lede b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.stats{display:flex;flex-wrap:wrap;gap:20px 28px;margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:16px 28px;margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
 .stats div{display:grid}
 .stats .dot{font-size:1.7rem;line-height:1.1}
-.stats span:last-child{font-size:.78rem;color:var(--muted)}
+.stats span:last-child{font-size:.8125rem;color:var(--muted)}
 
 .book{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 16px 22px;
   background-image:repeating-radial-gradient(circle at 100% 0,transparent 0 9px,var(--accent-soft) 9px 10px);
@@ -128,7 +128,7 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .book-head b{font-family:var(--f-display);font-weight:400;font-size:1rem}
 .ledger{overflow-x:auto}
 .ledger table{width:100%;border-collapse:collapse;min-width:340px;font-size:.9rem}
-.ledger th{font-family:var(--f-body);font-weight:500;font-size:.68rem;color:var(--muted);text-align:start;padding:6px;border-bottom:1px solid var(--line)}
+.ledger th{font-family:var(--f-body);font-weight:400;font-size:.8125rem;color:var(--muted);text-align:start;padding:6px;border-bottom:1px solid var(--line)}
 .ledger td{padding:9px 6px;border-bottom:1px dashed var(--line);white-space:nowrap}
 .ledger .n{text-align:end}
 .ledger td.in{color:var(--pos)}
@@ -137,8 +137,8 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .ledger tbody tr:nth-child(4){animation-delay:1.05s}.ledger tbody tr:nth-child(5){animation-delay:1.4s}
 @keyframes print{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 .hanko{position:absolute;inset-inline-end:14px;bottom:-22px;width:86px;height:86px;border:3px solid var(--stamp);border-radius:50%;color:var(--stamp);
-  display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-size:.74rem;line-height:1.2;transform:rotate(14deg);background:var(--surface)}
-.note{font-size:.72rem;color:var(--muted);margin-top:10px}
+  display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-size:.8125rem;line-height:1.2;transform:rotate(14deg);background:var(--surface)}
+.note{font-size:.8125rem;color:var(--muted);margin-top:10px}
 
 /* sections: 見出しの上に夜の時刻。読み進めるほど朝に近づく */
 section{padding-block:clamp(60px,8vw,100px) 0}
@@ -148,12 +148,12 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .sec-head::before{content:"";position:absolute;top:-2px;inset-inline-start:0;width:88px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--sky1),var(--sky2))}
 [dir="rtl"] .sec-head::before{background:linear-gradient(-90deg,var(--sky1),var(--sky2))}
 .sec-head h2{font-size:var(--s2)}
-.eyebrow{display:flex;align-items:center;gap:10px;margin:0;font-size:.72rem;font-weight:700;letter-spacing:.18em;color:var(--muted)}
+.eyebrow{display:flex;align-items:center;gap:10px;margin:0;text-transform:uppercase;font-size:.8125rem;font-weight:700;letter-spacing:.18em;color:var(--muted)}
 .eyebrow .dot{font-size:.9rem;font-weight:400;letter-spacing:.04em;color:var(--sky2,var(--accent));padding:1px 8px;border-radius:999px;border:1px solid currentColor}
 .intro{max-width:44em;color:var(--muted);margin-bottom:22px}
 
 /* buttons */
-.btn{font:inherit;font-weight:700;font-size:.9rem;border:0;border-radius:8px;padding:8px 16px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+.btn{font:inherit;font-weight:700;font-size:.9rem;border:0;border-radius:8px;padding:8px 16px;min-height:44px;max-width:100%;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
 .btn.solid{background:var(--ink);color:var(--paper)}
 .btn.solid:hover{background:var(--accent)}
 .btn.line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
@@ -167,20 +167,27 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* 貼りついている間は上のバーとのすき間から下の文字が見えないようにする */
 .tools.stuck::before{content:"";position:absolute;z-index:-1;inset-inline:-100vmax;bottom:100%;height:10px;background:color-mix(in srgb,var(--paper) 84%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
 .filters{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
-.filters button{font:inherit;font-size:.84rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:3px 12px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;transition:border-color .15s ease,background .15s ease}
+.filters button{font:inherit;font-size:.875rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:0 14px;min-height:44px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;transition:border-color .15s ease,background .15s ease}
 .filters button::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c,var(--muted));flex:none}
 .filters button[data-cat="all"]::before{display:none}
 .filters button:hover{border-color:var(--c,var(--ink))}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .filters button span{font-family:var(--f-dot);opacity:.65}
-.switch{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;margin-inline-start:auto;cursor:pointer;white-space:nowrap}
-.switch input{width:18px;height:18px;accent-color:var(--pos);margin:0}
-.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.78rem;color:var(--muted);margin-bottom:22px}
+/* 「継続して入るものだけ」: ラベル全体（44px）を押せるスイッチ。本物のチェックボックスを透明にして全面に重ねる */
+.switch{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding-inline:2px 6px;font-size:.875rem;margin-inline-start:auto;cursor:pointer;white-space:nowrap}
+.switch input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.switch .tg{position:relative;flex:none;width:40px;height:24px;border-radius:999px;background:var(--line);transition:background .2s ease}
+.switch .tg::after{content:"";position:absolute;top:3px;inset-inline-start:3px;width:18px;height:18px;border-radius:50%;background:var(--ink);transition:transform .2s ease}
+.switch input:checked+.tg{background:var(--pos)}
+.switch input:checked+.tg::after{transform:translateX(16px);background:#0E1320}
+[dir="rtl"] .switch input:checked+.tg::after{transform:translateX(-16px)}
+.switch input:focus-visible+.tg{outline:3px solid var(--accent);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.8125rem;color:var(--muted);margin-bottom:22px}
 .legend .meter i.on{background:var(--accent)}
-.count{font-size:.8rem;color:var(--muted);margin-bottom:12px}
+.count{font-size:.8125rem;color:var(--muted);margin-bottom:12px}
 
 /* service cards: アプリストア風。アイコン＋名前、大きな入金、説明は3行、目安はひとまとめ */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:18px;align-items:start}
 .svc{--c:var(--accent)}
 [data-cat="crypto-bi"]{--c:#7C5CFF}[data-cat="ai-agent"]{--c:#22B8CF}[data-cat="app"]{--c:#1FB57A}[data-cat="pointsite"]{--c:#F08A24}
 [data-cat="career"]{--c:#E2457A}[data-cat="exchange"]{--c:#2F7BEA}[data-cat="finance"]{--c:#14A3A3}
@@ -195,37 +202,37 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   background:radial-gradient(120% 90% at 25% 0%,rgba(255,255,255,.4),transparent 55%),linear-gradient(150deg,var(--c),color-mix(in srgb,var(--c) 50%,#0A0F24));
   box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.15),0 10px 20px -12px var(--c);text-shadow:0 1px 2px rgba(0,0,0,.25)}
 .svc-id{flex:1;min-width:0;display:grid;gap:6px}
-.svc h3{margin:0;font-size:1.2rem;line-height:1.3;overflow-wrap:anywhere}
+.svc h3{margin:0;font-size:1.2rem;line-height:1.3}
 .svc h3 a{color:inherit;text-decoration:none}
 .svc h3 a:hover{color:var(--c);text-decoration:underline;text-underline-offset:3px}
-.cat{font-size:.72rem;color:var(--muted);display:block;font-weight:400;letter-spacing:.06em}
-.svc .cat{color:var(--c);font-weight:700;margin-bottom:2px}
+.cat{font-size:.8125rem;color:var(--muted);display:block;font-weight:400;letter-spacing:.06em}
+.svc .cat{color:color-mix(in srgb,var(--c) 62%,#fff);font-weight:700;margin-bottom:2px}
 .tags{display:flex;flex-wrap:wrap;gap:4px}
-.type,.region{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.type,.region{font-size:.8125rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
 .type.loop{background:var(--pos-soft);color:var(--pos)}
 .type.once{background:var(--accent-soft);color:var(--accent)}
 .gain{font-family:var(--f-dot);font-size:1.5rem;line-height:1.35;color:var(--pos);overflow-wrap:anywhere}
 .desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
 .js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.78rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
 .expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
 .desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
 .expand:hover{text-decoration:underline;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
-.need b{flex:none;font-size:.68rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
-.meta{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
+.need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
-.region{border:1px solid var(--line);color:var(--muted);font-weight:500;line-height:1.5;padding-block:1px}
+.region{border:1px solid var(--line);color:var(--muted);font-weight:400;line-height:1.5;padding-block:1px}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
-.caution{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
-.caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.72rem;line-height:1}
-.contact-ref{font-size:.8rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
+.caution{display:flex;gap:9px;align-items:flex-start;font-size:.8125rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
+.caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.8125rem;line-height:1}
+.contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.72rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -258,20 +265,20 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 #orgs{--sky1:#EC6F6A;--sky2:#F08A4B}#oss{--sky1:#EE7E5C;--sky2:#F39C4A}
 #verify{--sky1:#9B5CF0;--sky2:#C04FA0}
 .vchips{display:flex;flex-wrap:wrap;gap:8px}
-.vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
+.vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
 .vchips a:hover{border-color:var(--accent);color:var(--accent)}
 .vchips a span{font-family:var(--f-dot);font-weight:400;color:var(--muted)}
-.orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;gap:16px}
+.orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
 .orgs-lead{color:var(--muted);max-width:46em}
 .orgs-mini{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:0 22px}
 .orgs-mini li{display:grid;gap:2px;padding:12px 0;border-top:1px solid var(--line)}
-.orgs-mini a{font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.orgs-mini a{font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere;display:inline-flex;align-items:center;min-height:44px;margin-block:-8px}
 .orgs-mini a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
-.orgs-mini span{font-size:.72rem;color:var(--muted)}
+.orgs-mini span{font-size:.8125rem;color:var(--muted)}
 .orgs-mini p{font-size:.84rem;color:var(--muted);line-height:1.6}
-.orgs-btn{justify-self:start;border-radius:999px;padding:10px 22px}
-.orgs-tl{justify-self:start;font-size:.9rem;font-weight:700;text-underline-offset:3px}
-.foot a{color:inherit;text-underline-offset:3px}
+.orgs-btn{justify-self:start;border-radius:999px;padding:10px 22px;white-space:normal;max-width:100%;text-align:center}
+.orgs-tl{justify-self:start;font-size:.9rem;font-weight:700;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
+.foot a{color:inherit;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
 .xlink{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
 .xlink:hover span{text-decoration:underline}
 .xicon{flex:none}
@@ -289,12 +296,13 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 @media (max-width:760px){
   .hero{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px}
   .book{transform:none}
   .nav{display:none}
   .bar-in{flex-wrap:wrap;row-gap:8px}
   .lang{order:3;overflow-x:auto;scrollbar-width:none}
   .lang::-webkit-scrollbar{display:none}
-  .lang a{padding:3px 7px;font-size:.74rem}
+  .lang a{padding:3px 7px;font-size:.8125rem}
   .tools{padding:8px 10px;gap:8px;border-radius:14px}
   .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:2px 10px;
     -webkit-mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent);mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent)}
@@ -347,7 +355,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .awake{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding:10px 16px;border-radius:14px;
   background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);font-size:.82rem;color:var(--muted)}
 .awake .dot{font-size:1.35rem;color:#6CF0B0;letter-spacing:.04em}
-.awake small{flex-basis:100%;font-size:.76rem}
+.awake small{flex-basis:100%;font-size:.8125rem}
 
 /* ticker tape */
 .tape{margin-inline:-16px;background:#FFD66B;color:#141A3A;border-block:2px solid #141A3A;overflow:hidden;transform:rotate(-1.2deg);margin-top:-14px;position:relative;z-index:2}
@@ -360,7 +368,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 @keyframes tape-rtl{to{transform:translateX(50%)}}
 
 /* card CTA */
-.max{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.45)}
+.max{font-size:.8125rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.45)}
 .slip .btn.solid{background:var(--pos);color:var(--paper);border-radius:12px;padding-block:12px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
 .slip .btn.solid::after{content:"→";transition:transform .2s ease}
 [dir="rtl"] .slip .btn.solid::after{content:"←"}
@@ -370,12 +378,12 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
 .tr-leg>span:first-child{color:var(--ink);font-weight:700}
-.new{font-size:.68rem;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:999px;background:var(--stamp);color:#fff;white-space:nowrap}
+.new{font-size:.8125rem;font-weight:700;letter-spacing:.08em;padding:1px 8px;border-radius:999px;background:var(--stamp);color:#2A0B07;white-space:nowrap}
 
 /* top picks */
 #picks{position:relative;z-index:1}
@@ -394,7 +402,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .pick .btn.solid::after{content:"→"}
 [dir="rtl"] .pick .btn.solid::after{content:"←"}
 .pick .btn.solid:hover{background:#FFE59A}
-.pick .more{font-size:.8rem;color:#A9B2D8;text-align:center;text-underline-offset:3px}
+.pick .more{font-size:.8125rem;color:#A9B2D8;text-align:center;text-underline-offset:3px;display:flex;align-items:center;justify-content:center;min-height:44px;margin-block:-6px}
 .pick .more:hover{color:#fff}
 
 /* news: 夜の時間軸のようなタイムライン */
@@ -415,8 +423,9 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .share p{color:#A9B2D8;margin-top:6px;max-width:36em}
 .share-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
 .share-btns .btn{color:#fff;border-radius:999px;padding:10px 20px}
-.sb-x{background:#000;border:1px solid #444}.sb-line{background:#06C755}.sb-wa{background:#25D366}.sb-tg{background:#229ED9}
-.sb-wb{background:#E6162D}.sb-fb{background:#1877F2}.sb-copy,.sb-native{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.3)!important}
+/* 白い文字が 4.5:1 に届かない色は、文字を濃くするか背景を少し暗くする */
+.sb-x{background:#000;border:1px solid #444}.share-btns .sb-line{background:#06C755;color:#062A14}.share-btns .sb-wa{background:#25D366;color:#062A14}.sb-tg{background:#1A6FA0}
+.sb-wb{background:#C8102E}.sb-fb{background:#1464D0}.sb-copy,.sb-native{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.3)!important}
 .share-btns .btn:hover{filter:brightness(1.12)}
 .share .eyebrow{color:#A9B2D8;margin-bottom:10px}
 .share .eyebrow .dot{color:#FFD66B}
@@ -446,7 +455,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .dawn .btn.solid:focus-visible{outline-color:#fff}
 .foot-band{background:#160F2E;margin-inline:-16px;padding-inline:16px}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:6px 0 calc(22px + env(safe-area-inset-bottom,0px));
-  font-size:.8rem;color:rgba(255,236,214,.85);text-align:start}
+  font-size:.8125rem;color:rgba(255,236,214,.85);text-align:start}
 .foot .dot{color:#FFE08A}
 
 /* scroll reveal: JSがあるときだけ隠してから出す。位置は変えず透明度と移動だけ */
@@ -530,7 +539,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="wrap">
 
 <section id="picks">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">23:00</span>TOP 3</p><h2>Start with these 3</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">23:00</span>Top 3</p><h2>Start with these 3</h2></div>
   <p class="intro">Picked for low effort, working outside Japan, and a real way to cash out or redeem.</p>
   <div class="picks"><article class="pick rv"><div class="pick-top"><span class="rank dot">1</span><div><span class="cat">Passive apps</span><h3>Honeygain</h3></div></div>
 <p>Just install it on your PC or phone. Cash out via PayPal once you reach $20</p>
@@ -550,10 +559,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="list">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">00:30</span>REFERRAL LIST</p><h2>Services</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">00:30</span>Referral list</p><h2>Services</h2></div>
   <div class="tools" id="tools">
     <div class="filters" role="group" id="filters" aria-label="Filter by category"><button type="button" data-cat="all" aria-pressed="true">All<span>35</span></button><button type="button" data-cat="crypto-bi" aria-pressed="false">Crypto UBI<span>15</span></button><button type="button" data-cat="pointsite" aria-pressed="false">Cashback sites<span>3</span></button><button type="button" data-cat="career" aria-pressed="false">Job matching<span>1</span></button><button type="button" data-cat="app" aria-pressed="false">Passive apps<span>16</span></button></div>
-    <label class="switch" for="loopOnly"><input type="checkbox" id="loopOnly"><span>Recurring only</span></label>
+    <label class="switch" for="loopOnly"><input type="checkbox" id="loopOnly"><span class="tg" aria-hidden="true"></span><span>Recurring only</span></label>
   </div>
   <div class="legend">
     <span><span class="type loop">Recurring</span>&nbsp; <span>Pays out again and again after you sign up</span></span>
@@ -574,7 +583,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-circles" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/circles/">Circles (Gnosis App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/circles/">Circles <span class="q">Gnosis App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">1 CRC per hour (24 per day)</p>
 <div class="desc"><p id="d-circles">A Gnosis project where every person issues their own currency. Circles 2.0 launched in May 2025, and in June 2026 the Gnosis App was rebuilt around Circles. This site has no referral link for it yet</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-circles" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up in the Gnosis App and get invited by an existing Circles member. The inviter pays 96 CRC and the newcomer gets 48 CRC as a welcome bonus</span></p>
@@ -739,7 +748,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://www.ubi4all.org/" target="_blank" rel="noopener">Visit official site</a></div>
 </article>
 <article class="svc rv" id="svc-g1" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/g1/">Ğ1 (June)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/g1/">Ğ1 <span class="q">June</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">Ğ1 every day once you are a member (Universal Dividend)</p>
 <div class="desc"><p id="d-g1">A libre currency based on the Relative Theory of Money. It runs on the open-source Duniter software, and every member receives newly created Ğ1 each day as a “Universal Dividend”. Launched in March 2017 and moved to Duniter v2 in March 2026. There is no referral link or referral bonus</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-g1" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Create a wallet and get certified by at least 5 existing members through the Web of Trust. Certifiers are expected to know you in person</span></p>
@@ -772,7 +781,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://dotare.io/" target="_blank" rel="noopener">Visit official site</a></div>
 </article>
 <article class="svc rv" id="svc-oro" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/oro/">ORO (World App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/oro/">ORO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">ORO tokens every day</p>
 <div class="desc"><p id="d-oro">A mini app inside World App that lets you claim the World Chain token ORO once a day. World’s listing says inviting friends earns more ORO, but as of Oct 2026 we found no invite link in the app. Developed by Grupo de Fiesta</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-oro" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Install World App, prove you are human with World ID (confirmed from Japan with Orb verification), then open the ORO mini app and claim every day</span></p>
@@ -783,7 +792,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645" target="_blank" rel="noopener">Visit official site</a></div>
 </article>
 <article class="svc rv" id="svc-axo" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/axo/">AXO (World App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/axo/">AXO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">AXO tokens every day</p>
 <div class="desc"><p id="d-axo">A mini app inside World App: tap once a day to claim the World Chain token AXO. The “Premium” plan (1 WLD a month) triples the daily amount. There is also a referral system. The founder is David Mateos</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-axo" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Open the mini app in World App via the referral link (referral code 932BDA), prove you are human with World ID (confirmed from Japan with Orb verification), and claim every day</span></p>
@@ -794,7 +803,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&amp;path=?ref=932BDA" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-aidac" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/aidac/">AI-DAC (World App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/aidac/">AI-DAC <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">UBI in DAC tokens</p>
 <div class="desc"><p id="d-aidac">A mini app inside World App that calls itself an “AI-powered universal basic income platform”. People verified as human with World ID receive DAC and use it to back autonomous “AI CEOs” that build apps, and to vote on releases. Run by its founder, Kei Iwami. No referral bonus</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-aidac" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Open the AI-DAC mini app in World App and prove you are human with World ID (confirmed from Japan with Orb verification)</span></p>
@@ -838,7 +847,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-humad" data-cat="pointsite" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><h3><span class="cat">Cashback sites</span><a href="/services/humad/">Humad (World App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><h3><span class="cat">Cashback sites</span><a href="/services/humad/">Humad <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">Points for tapping ads and answering questions (gift cards from 1,500 pt = ¥150)</p>
 <div class="desc"><p id="d-humad">A mini app inside World App. Tap ads and answer questions to earn points, then exchange them for gift cards. Proving you are human with World ID gives 6× points for ad taps. Run by Ads for Humanity Inc., part of Hakuhodo DY Holdings. No referral bonus found</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-humad" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Open the Humad mini app in World App. Exchanging points for gift cards requires proof of human with an Orb-verified World ID</span></p>
@@ -860,7 +869,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://official.app/rc/ECMHPWI7AG" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-idena" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/idena/">Idena (iDNA)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/idena/">Idena <span class="q">iDNA</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">iDNA (mining rewards while your node runs, plus validation rewards)</p>
 <div class="desc"><p id="d-idena">A Proof-of-Person blockchain that proves you are human on a “one person, one vote” basis. You get validated by solving picture puzzles called FLIPs in a worldwide “validation ceremony”. Once validated, you earn iDNA mining rewards while your node runs. Open source. No referral link</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-idena" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Follow the official Telegram to get a free invite code. Join with the web app or your own node, and solve FLIPs online at ceremony time (tested first-hand from Japan in Oct 2026)</span></p>
@@ -882,7 +891,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">Copy</button><a class="btn solid" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-fheid" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/fheid/">FheID (Privasea)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><h3><span class="cat">Crypto UBI</span><a href="/services/fheid/">FheID <span class="q">Privasea</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">Airdrops and rewards for proving you are human (e.g. campaign “stars”)</p>
 <div class="desc"><p id="d-fheid">An app that scans your face with your phone camera to prove you are a real human. Face features are encrypted on the device and processed with fully homomorphic encryption (FHE), so the original image is said never to be sent. Verifying mints a proof-of-humanity NFT that can receive airdrops and other rewards. Run by Privasea</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-fheid" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Install the FheID app, enter the invite code QVedKjg, and verify you are human with a face scan (confirmed usable from Japan in Oct 2026, first-hand)</span></p>
@@ -893,7 +902,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">QVedKjg</span></div><button class="btn line" type="button" data-code="QVedKjg">Copy</button><a class="btn solid" href="https://www.privasea.ai/download-app" target="_blank" rel="noopener">Get the app &amp; enter the code</a></div>
 </article>
 <article class="svc rv" id="svc-jrkripto" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/jrkripto/">JrKripto (JR)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">JR points every day (50 JR sign-up bonus)</p>
 <div class="desc"><p id="d-jrkripto">The mobile app of JrKripto, a Turkish crypto news, analysis and price-tracking site whose founder also runs the stock site JrHisse. Tap once a day in the app and JR points accrue over the next 24 hours. Sign up with an invite code and verify your email to get a 50 JR bonus</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-jrkripto" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up via the invite link and verify your email address (no ID needed). Then tap once a day in the app (confirmed usable from Japan in Oct 2026, first-hand)</span></p>
@@ -904,7 +913,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/miningmachine/">Mining Machine ($ORE)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">$ORE mining balance (free 24-hour sessions)</p>
 <div class="desc"><p id="d-miningmachine">A site where a “mining machine” in your browser builds up a $ORE balance. Joining is free, with no deposit or install. A free machine runs in 24-hour sessions. You can pay to add machines. Inviters get 10% of what their invitees mine and 10% of what they spend</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Sign up for free via the invite link (log in with email or X, no ID needed). Then start a mining session every 24 hours (sign-up from Japan confirmed in Oct 2026)</span></p>
@@ -937,7 +946,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </article>
 <article class="svc rv" id="svc-refrax" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/refrax/">Refrax ($REFRAX)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">Passive apps</span><a href="/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">Recurring</span></div></div></div>
 <p class="gain">Pending $REFRAX points (no token yet)</p>
 <div class="desc"><p id="d-refrax">Season 0 quests from Refrax, a project presenting itself as decentralized storage on Solana. Sign in with X and earn points by following, posting, inviting friends and checking in daily. The site says points are to be paid as $REFRAX to the Solana wallet you add, at launch</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-refrax" hidden>Show more</button></div>
 <p class="need"><b>To get it</b><span>Open the referral link and sign in with X (very new X accounts can’t join). Add a Solana address to receive rewards, then do the quests and the daily check-in (sign-up from Japan confirmed in Oct 2026)</span></p>
@@ -950,18 +959,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="verify">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">01:30</span>VERIFICATION</p><h2>Browse by verification method</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">01:30</span>Verification</p><h2>Browse by verification method</h2></div>
   <nav class="vchips rv" aria-label="Browse by verification method"><a href="verify/world-id/" dir="auto">World ID (Orb)<span>5</span></a><a href="verify/face/" dir="auto">Face scan / liveness<span>4</span></a><a href="verify/kyc-id/" dir="auto">ID document KYC<span>5</span></a><a href="verify/web-of-trust/" dir="auto">Web of trust / invites<span>3</span></a><a href="verify/none/" dir="auto">No verification<span>17</span></a></nav>
 </section>
 
 <section id="news">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>UPDATES</p><h2>What’s new</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>Updates</p><h2>What’s new</h2></div>
   <ol class="news rv"><li><time class="dot" datetime="2026-10-30">2026.10.30</time><ul><li>Added Refrax ($REFRAX)</li><li>Added Life AI Testnet</li></ul></li><li><time class="dot" datetime="2026-10-29">2026.10.29</time><ul><li>Added UBI4ALL</li><li>Added KABU&amp;</li><li>Added Mining Machine ($ORE)</li><li>Added JrKripto (JR)</li><li>Published the essay “Universal high income: who pays?”</li></ul></li><li><time class="dot" datetime="2026-10-28">2026.10.28</time><ul><li>Added badges for listed projects</li><li>Added a list of open-source basic income projects</li><li>Added RSS feeds for updates</li><li>Published the essay “Should AI agents get a basic income?”</li><li>Added a timeline of basic income experiments</li><li>Added pages by verification method (World ID and more)</li><li>Added The Free Lunch Graveyard page</li></ul></li><li><time class="dot" datetime="2026-10-26">2026.10.26</time><ul><li>Added FheID (Privasea)</li><li>Added RewardMe</li><li>Added Idena (iDNA)</li><li>Added Billions</li><li>Added Humad (World App)</li></ul></li><li><time class="dot" datetime="2026-10-25">2026.10.25</time><ul><li>Renamed the site to Free Lunch Lab</li><li>Added a German version</li></ul></li></ol>
 </section>
 
 <section id="share">
   <div class="share rv">
-    <p class="eyebrow"><span class="dot">03:00</span>SHARE</p>
+    <p class="eyebrow"><span class="dot">03:00</span>Share</p>
     <h2>Share this list</h2>
     <p>Know someone who would rather earn in their sleep? Send it their way.</p>
     <div class="share-btns"><a class="btn sb-x" href="https://x.com/intent/post?text=Apps%20that%20pay%20you%20while%20you%20sleep%20%F0%9F%98%B4%F0%9F%92%B0%20Crypto%20UBI%20and%20passive%20income%20apps%2C%20all%20in%20one%20list&amp;url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2F" target="_blank" rel="noopener">X</a><a class="btn sb-wa" href="https://wa.me/?text=Apps%20that%20pay%20you%20while%20you%20sleep%20%F0%9F%98%B4%F0%9F%92%B0%20Crypto%20UBI%20and%20passive%20income%20apps%2C%20all%20in%20one%20list%20https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2F" target="_blank" rel="noopener">WhatsApp</a><a class="btn sb-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2F&amp;text=Apps%20that%20pay%20you%20while%20you%20sleep%20%F0%9F%98%B4%F0%9F%92%B0%20Crypto%20UBI%20and%20passive%20income%20apps%2C%20all%20in%20one%20list" target="_blank" rel="noopener">Telegram</a><a class="btn sb-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2F" target="_blank" rel="noopener">Facebook</a><button class="btn sb-native" type="button" id="nativeShare" hidden>Share</button><button class="btn sb-copy" type="button" id="copyLink">Copy link</button></div>
@@ -969,7 +978,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="how">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">03:30</span>HOW TO</p><h2>How to sign up</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">03:30</span>How to</p><h2>How to sign up</h2></div>
   <div class="steps">
     <div class="step rv"><b>1</b><h3>Tap the button</h3><p>Tap “Sign up with referral” on a card to open the official site or app. For most services, opening the link is all it takes to apply the referral.</p></div>
     <div class="step rv"><b>2</b><h3>Sign up right there</h3><p>Finish signing up on the page that opens. Switching to another browser or app midway can lose the referral, so stay on the same screen.</p></div>
@@ -978,7 +987,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="orgs">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:00</span>ORGANIZATIONS</p><h2>Organizations working on basic income</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:00</span>Organizations</p><h2>Organizations working on basic income</h2></div>
   <div class="orgs-box rv">
     <p class="orgs-lead">These are not services you sign up to for money, but organizations that research, campaign for or actually run basic income and cash transfers.</p>
     <ul class="orgs-mini"><li><a href="organizations/#org-bien" dir="auto">Basic Income Earth Network (BIEN)</a><span>Global</span><p>International basic income network, since 1986</p></li><li><a href="organizations/#org-givedirectly" dir="auto">GiveDirectly</a><span>United States</span><p>Sends donations as cash directly to people in poverty</p></li><li><a href="organizations/#org-openresearch" dir="auto">OpenResearch</a><span>United States</span><p>Ran a three-year cash study with 3,000 people</p></li><li><a href="organizations/#org-jabi" dir="auto">日本ベーシックインカム学会（JABI）</a><span>Japan</span><p>Japanese academic society studying basic income</p></li></ul>
@@ -988,7 +997,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="oss">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:15</span>OPEN SOURCE</p><h2>Open-source code behind basic income</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:15</span>Open source</p><h2>Open-source code behind basic income</h2></div>
   <div class="orgs-box rv">
     <p class="orgs-lead">UBI protocols, wallets, proof-of-personhood systems and policy simulators whose source code is public. Read it, run it or contribute.</p>
     <ul class="orgs-mini"><li><a href="open-source/#oss-group-income" dir="auto">Group Income</a><span>Protocols</span><p>End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum</p></li><li><a href="open-source/#oss-ubi2" dir="auto">UBI2</a><span>Protocols</span><p>Experimental new UBI chain from Democracy Earth, started in June 2026: personhood is checked by AI, and 1 UBI per hour streams to every human</p></li><li><a href="open-source/#oss-duniter-v2s" dir="auto">Duniter v2s</a><span>Protocols</span><p>Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of its web of trust creates a universal dividend each day</p></li><li><a href="open-source/#oss-policyengine-us" dir="auto">PolicyEngine US</a><span>Simulators &amp; research</span><p>Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms</p></li></ul>
@@ -1007,7 +1016,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="warn">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">05:30</span>CAUTION</p><h2>Before you sign up</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">05:30</span>Caution</p><h2>Before you sign up</h2></div>
   <div class="warn rv">
     <h3>Good to know</h3>
     <ul>
@@ -1022,7 +1031,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 <footer class="dawn rise" id="dawn">
   <div class="wrap dawn-in rv">
-    <p class="eyebrow"><span class="dot">06:00</span>GOOD MORNING</p>
+    <p class="eyebrow"><span class="dot">06:00</span>Good morning</p>
     <h2>Good morning.<br>Something may have landed while you slept.</h2>
     <p class="dawn-sub">Open your apps and peek at the balance. Haven’t started yet? Set one up for tonight.</p>
     <a class="btn solid" href="#list">Back to the list</a>

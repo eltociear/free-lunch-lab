@@ -41,22 +41,18 @@
 @font-face{font-family:"GBreve";src:url(https://fonts.gstatic.com/l/font?kit=o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc1azXvFujBSg6T775xg&skey=2b960fe17823056f&v=v42) format("woff2");unicode-range:U+011E;font-display:swap}
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
 :root{
-  --paper:#E9EDF6; --paper-2:#F8ECE0; --surface:#FFFFFF; --ink:#18213B; --muted:#56627A; --line:#CFD6E4;
-  --accent:#2944C4; --accent-soft:#DCE3FB; --stamp:#C2322A; --pos:#1E7A55; --pos-soft:#D7EFE3; --amber:#A8650B; --gold:#D99A1E;
-  --shadow:0 1px 2px rgba(20,28,60,.06),0 12px 32px -22px rgba(20,28,60,.4);
+  /* 夜空のダーク一色（X の画像と同じ）。システムのライトモードには切り替えない */
+  --paper:#0E1320; --paper-2:#1D1733; --surface:#161D2D; --ink:#E5EAF3; --muted:#A3ADC2; --line:#2A3448;
+  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; --gold:#FFD66B;
+  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 14px 34px -22px rgba(0,0,0,.8); color-scheme:dark;
   --f-display:"GBreve","Dela Gothic One","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",sans-serif;
   --f-body:"GBreve","Zen Kaku Gothic New","Noto Sans Devanagari","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
   --f-dot:"GBreve","DotGothic16","Noto Sans Devanagari","Osaka-Mono","MS Gothic",monospace;
-  --s1:clamp(2.3rem,6.4vw,4.3rem); --s2:clamp(1.45rem,3.4vw,2.1rem); --s4:.8rem;
+  --f-logo:"FLL Logo","Zen Kaku Gothic New","Hiragino Sans",system-ui,sans-serif;
+  --s1:clamp(2.3rem,6.4vw,4.3rem); --s2:clamp(1.3rem,3.4vw,2.1rem); --s4:.8125rem;
+  /* 主ボタン（紹介リンク）は金から緑のグラデーションに濃い文字 */
+  --cta:linear-gradient(100deg,#FFD66B 0%,#B9E58C 55%,#6CF0B0 100%); --cta-ink:#141A3A;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#0E1320; --paper-2:#1D1733; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; --gold:#FFD66B;
-  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 14px 34px -22px rgba(0,0,0,.8); color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#0E1320; --paper-2:#1D1733; --surface:#161D2D; --ink:#E5EAF3; --muted:#97A1B6; --line:#2A3448;
-  --accent:#93A8FF; --accent-soft:#222C4A; --stamp:#FF6E61; --pos:#5FD3A0; --pos-soft:#173328; --amber:#F2B84B; --gold:#FFD66B;
-  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 14px 34px -22px rgba(0,0,0,.8); color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -66,7 +62,11 @@ body{background:linear-gradient(180deg,var(--paper) 25%,var(--paper-2)) var(--pa
 .wrap{max-width:1080px;margin-inline:auto}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
-h1,h2{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;line-height:1.25}
+h1,h2{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.25}
+/* 見出しは単語の途中で折り返さない（日本語は文節で、行の長さはそろえる） */
+h1,h2,h3{text-wrap:balance;word-break:auto-phrase;overflow-wrap:break-word}
+/* 名前のかっこ書き（カブアンド、$REFRAX など）は小さく別の行に */
+.q{display:block;font-family:var(--f-body);font-weight:700;font-size:.62em;line-height:1.4;color:var(--muted);letter-spacing:.02em;margin-top:2px}
 p{margin:0}
 .dot{font-family:var(--f-dot);font-variant-numeric:tabular-nums}
 .label{font-size:var(--s4);letter-spacing:.12em;color:var(--muted)}
@@ -76,21 +76,21 @@ section[id],header[id]{scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 /* top bar */
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 84%,transparent);-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);border-bottom:2px solid var(--ink);margin-inline:-16px;padding:10px 16px}
 .bar-in{max-width:1080px;margin-inline:auto;display:flex;align-items:center;gap:16px}
-.brand{font-family:var(--f-display);font-size:1.05rem;text-decoration:none;color:var(--ink);white-space:nowrap}
+.brand{font-family:var(--f-logo);font-weight:900;font-size:1.1rem;letter-spacing:.02em;text-decoration:none;color:var(--ink);white-space:nowrap}
 .brand span{color:var(--accent)}
-.brand small{display:inline-block;margin-inline-start:8px;font-family:var(--f-body);font-size:.66rem;font-weight:700;letter-spacing:.08em;color:var(--muted);vertical-align:middle}
+.brand small{display:inline-block;margin-inline-start:8px;font-family:var(--f-body);font-size:.8125rem;font-weight:700;letter-spacing:.08em;color:var(--muted);vertical-align:middle}
 .tagline{margin-top:10px;font-family:var(--f-body);font-weight:700;font-size:clamp(1.1rem,2.6vw,1.4rem);color:#FFD66B;letter-spacing:.02em}
 .nav{display:flex;gap:18px;margin-inline-start:auto;font-size:.88rem}
 .nav a{color:var(--ink);text-decoration:none}
 .nav a:hover{color:var(--accent)}
 .lang{display:inline-flex;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden;flex:none}
 .lang{margin-inline-start:auto;max-width:100%}
-.lang a{font-size:.8rem;font-weight:700;color:var(--ink);text-decoration:none;padding:3px 11px;white-space:nowrap}
+.lang a{font-size:.8125rem;font-weight:700;color:var(--ink);text-decoration:none;padding:3px 11px;white-space:nowrap}
 .nav+.lang{margin-inline-start:0}
 .lang a[aria-current="page"]{background:var(--ink);color:var(--paper)}
 
-.pr{font-size:.78rem;color:var(--muted);padding-block:12px 0}
-.pr b{display:inline-block;background:var(--ink);color:var(--paper);font-size:.7rem;padding:0 7px;border-radius:3px;margin-inline-end:6px;letter-spacing:.08em}
+.pr{font-size:.8125rem;color:var(--muted);padding-block:12px 0}
+.pr b{display:inline-block;background:var(--ink);color:var(--paper);font-size:.8125rem;padding:0 7px;border-radius:3px;margin-inline-end:6px;letter-spacing:.08em}
 
 /* hero */
 .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,5vw,56px);align-items:center;padding-block:clamp(32px,6vw,72px) clamp(28px,5vw,48px)}
@@ -116,10 +116,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
 .lede b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.stats{display:flex;flex-wrap:wrap;gap:20px 28px;margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:16px 28px;margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
 .stats div{display:grid}
 .stats .dot{font-size:1.7rem;line-height:1.1}
-.stats span:last-child{font-size:.78rem;color:var(--muted)}
+.stats span:last-child{font-size:.8125rem;color:var(--muted)}
 
 .book{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 16px 22px;
   background-image:repeating-radial-gradient(circle at 100% 0,transparent 0 9px,var(--accent-soft) 9px 10px);
@@ -128,7 +128,7 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .book-head b{font-family:var(--f-display);font-weight:400;font-size:1rem}
 .ledger{overflow-x:auto}
 .ledger table{width:100%;border-collapse:collapse;min-width:340px;font-size:.9rem}
-.ledger th{font-family:var(--f-body);font-weight:500;font-size:.68rem;color:var(--muted);text-align:start;padding:6px;border-bottom:1px solid var(--line)}
+.ledger th{font-family:var(--f-body);font-weight:400;font-size:.8125rem;color:var(--muted);text-align:start;padding:6px;border-bottom:1px solid var(--line)}
 .ledger td{padding:9px 6px;border-bottom:1px dashed var(--line);white-space:nowrap}
 .ledger .n{text-align:end}
 .ledger td.in{color:var(--pos)}
@@ -137,8 +137,8 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .ledger tbody tr:nth-child(4){animation-delay:1.05s}.ledger tbody tr:nth-child(5){animation-delay:1.4s}
 @keyframes print{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 .hanko{position:absolute;inset-inline-end:14px;bottom:-22px;width:86px;height:86px;border:3px solid var(--stamp);border-radius:50%;color:var(--stamp);
-  display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-size:.74rem;line-height:1.2;transform:rotate(14deg);background:var(--surface)}
-.note{font-size:.72rem;color:var(--muted);margin-top:10px}
+  display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-size:.8125rem;line-height:1.2;transform:rotate(14deg);background:var(--surface)}
+.note{font-size:.8125rem;color:var(--muted);margin-top:10px}
 
 /* sections: 見出しの上に夜の時刻。読み進めるほど朝に近づく */
 section{padding-block:clamp(60px,8vw,100px) 0}
@@ -148,12 +148,12 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .sec-head::before{content:"";position:absolute;top:-2px;inset-inline-start:0;width:88px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--sky1),var(--sky2))}
 [dir="rtl"] .sec-head::before{background:linear-gradient(-90deg,var(--sky1),var(--sky2))}
 .sec-head h2{font-size:var(--s2)}
-.eyebrow{display:flex;align-items:center;gap:10px;margin:0;font-size:.72rem;font-weight:700;letter-spacing:.18em;color:var(--muted)}
+.eyebrow{display:flex;align-items:center;gap:10px;margin:0;text-transform:uppercase;font-size:.8125rem;font-weight:700;letter-spacing:.18em;color:var(--muted)}
 .eyebrow .dot{font-size:.9rem;font-weight:400;letter-spacing:.04em;color:var(--sky2,var(--accent));padding:1px 8px;border-radius:999px;border:1px solid currentColor}
 .intro{max-width:44em;color:var(--muted);margin-bottom:22px}
 
 /* buttons */
-.btn{font:inherit;font-weight:700;font-size:.9rem;border:0;border-radius:8px;padding:8px 16px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+.btn{font:inherit;font-weight:700;font-size:.9rem;border:0;border-radius:8px;padding:8px 16px;min-height:44px;max-width:100%;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
 .btn.solid{background:var(--ink);color:var(--paper)}
 .btn.solid:hover{background:var(--accent)}
 .btn.line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
@@ -167,20 +167,27 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* 貼りついている間は上のバーとのすき間から下の文字が見えないようにする */
 .tools.stuck::before{content:"";position:absolute;z-index:-1;inset-inline:-100vmax;bottom:100%;height:10px;background:color-mix(in srgb,var(--paper) 84%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
 .filters{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
-.filters button{font:inherit;font-size:.84rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:3px 12px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;transition:border-color .15s ease,background .15s ease}
+.filters button{font:inherit;font-size:.875rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:0 14px;min-height:44px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;transition:border-color .15s ease,background .15s ease}
 .filters button::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c,var(--muted));flex:none}
 .filters button[data-cat="all"]::before{display:none}
 .filters button:hover{border-color:var(--c,var(--ink))}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .filters button span{font-family:var(--f-dot);opacity:.65}
-.switch{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;margin-inline-start:auto;cursor:pointer;white-space:nowrap}
-.switch input{width:18px;height:18px;accent-color:var(--pos);margin:0}
-.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.78rem;color:var(--muted);margin-bottom:22px}
+/* 「継続して入るものだけ」: ラベル全体（44px）を押せるスイッチ。本物のチェックボックスを透明にして全面に重ねる */
+.switch{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding-inline:2px 6px;font-size:.875rem;margin-inline-start:auto;cursor:pointer;white-space:nowrap}
+.switch input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.switch .tg{position:relative;flex:none;width:40px;height:24px;border-radius:999px;background:var(--line);transition:background .2s ease}
+.switch .tg::after{content:"";position:absolute;top:3px;inset-inline-start:3px;width:18px;height:18px;border-radius:50%;background:var(--ink);transition:transform .2s ease}
+.switch input:checked+.tg{background:var(--pos)}
+.switch input:checked+.tg::after{transform:translateX(16px);background:#0E1320}
+[dir="rtl"] .switch input:checked+.tg::after{transform:translateX(-16px)}
+.switch input:focus-visible+.tg{outline:3px solid var(--accent);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.8125rem;color:var(--muted);margin-bottom:22px}
 .legend .meter i.on{background:var(--accent)}
-.count{font-size:.8rem;color:var(--muted);margin-bottom:12px}
+.count{font-size:.8125rem;color:var(--muted);margin-bottom:12px}
 
 /* service cards: アプリストア風。アイコン＋名前、大きな入金、説明は3行、目安はひとまとめ */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:18px;align-items:start}
 .svc{--c:var(--accent)}
 [data-cat="crypto-bi"]{--c:#7C5CFF}[data-cat="ai-agent"]{--c:#22B8CF}[data-cat="app"]{--c:#1FB57A}[data-cat="pointsite"]{--c:#F08A24}
 [data-cat="career"]{--c:#E2457A}[data-cat="exchange"]{--c:#2F7BEA}[data-cat="finance"]{--c:#14A3A3}
@@ -195,37 +202,37 @@ section{padding-block:clamp(60px,8vw,100px) 0}
   background:radial-gradient(120% 90% at 25% 0%,rgba(255,255,255,.4),transparent 55%),linear-gradient(150deg,var(--c),color-mix(in srgb,var(--c) 50%,#0A0F24));
   box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.15),0 10px 20px -12px var(--c);text-shadow:0 1px 2px rgba(0,0,0,.25)}
 .svc-id{flex:1;min-width:0;display:grid;gap:6px}
-.svc h3{margin:0;font-size:1.2rem;line-height:1.3;overflow-wrap:anywhere}
+.svc h3{margin:0;font-size:1.2rem;line-height:1.3}
 .svc h3 a{color:inherit;text-decoration:none}
 .svc h3 a:hover{color:var(--c);text-decoration:underline;text-underline-offset:3px}
-.cat{font-size:.72rem;color:var(--muted);display:block;font-weight:400;letter-spacing:.06em}
-.svc .cat{color:var(--c);font-weight:700;margin-bottom:2px}
+.cat{font-size:.8125rem;color:var(--muted);display:block;font-weight:400;letter-spacing:.06em}
+.svc .cat{color:color-mix(in srgb,var(--c) 62%,#fff);font-weight:700;margin-bottom:2px}
 .tags{display:flex;flex-wrap:wrap;gap:4px}
-.type,.region{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.type,.region{font-size:.8125rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap}
 .type.loop{background:var(--pos-soft);color:var(--pos)}
 .type.once{background:var(--accent-soft);color:var(--accent)}
 .gain{font-family:var(--f-dot);font-size:1.5rem;line-height:1.35;color:var(--pos);overflow-wrap:anywhere}
 .desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
 .js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.78rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
 .expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
 .desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
 .expand:hover{text-decoration:underline;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
-.need b{flex:none;font-size:.68rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
-.meta{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
+.need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
-.region{border:1px solid var(--line);color:var(--muted);font-weight:500;line-height:1.5;padding-block:1px}
+.region{border:1px solid var(--line);color:var(--muted);font-weight:400;line-height:1.5;padding-block:1px}
 .region.world{color:var(--pos);border-color:color-mix(in srgb,var(--pos) 40%,var(--line))}
-.caution{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
-.caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.72rem;line-height:1}
-.contact-ref{font-size:.8rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
+.caution{display:flex;gap:9px;align-items:flex-start;font-size:.8125rem;line-height:1.65;color:var(--stamp);padding:9px 12px;border-radius:12px;background:color-mix(in srgb,var(--stamp) 9%,transparent)}
+.caution::before{content:"!";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-weight:700;font-size:.8125rem;line-height:1}
+.contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.72rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -258,20 +265,20 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 #orgs{--sky1:#EC6F6A;--sky2:#F08A4B}#oss{--sky1:#EE7E5C;--sky2:#F39C4A}
 #verify{--sky1:#9B5CF0;--sky2:#C04FA0}
 .vchips{display:flex;flex-wrap:wrap;gap:8px}
-.vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
+.vchips a{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:700}
 .vchips a:hover{border-color:var(--accent);color:var(--accent)}
 .vchips a span{font-family:var(--f-dot);font-weight:400;color:var(--muted)}
-.orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;gap:16px}
+.orgs-box{border:1px dashed var(--line);border-radius:16px;padding:clamp(18px,3vw,26px);background:color-mix(in srgb,var(--surface) 70%,transparent);display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
 .orgs-lead{color:var(--muted);max-width:46em}
 .orgs-mini{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:0 22px}
 .orgs-mini li{display:grid;gap:2px;padding:12px 0;border-top:1px solid var(--line)}
-.orgs-mini a{font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.orgs-mini a{font-weight:700;color:var(--ink);text-decoration:none;overflow-wrap:anywhere;display:inline-flex;align-items:center;min-height:44px;margin-block:-8px}
 .orgs-mini a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
-.orgs-mini span{font-size:.72rem;color:var(--muted)}
+.orgs-mini span{font-size:.8125rem;color:var(--muted)}
 .orgs-mini p{font-size:.84rem;color:var(--muted);line-height:1.6}
-.orgs-btn{justify-self:start;border-radius:999px;padding:10px 22px}
-.orgs-tl{justify-self:start;font-size:.9rem;font-weight:700;text-underline-offset:3px}
-.foot a{color:inherit;text-underline-offset:3px}
+.orgs-btn{justify-self:start;border-radius:999px;padding:10px 22px;white-space:normal;max-width:100%;text-align:center}
+.orgs-tl{justify-self:start;font-size:.9rem;font-weight:700;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
+.foot a{color:inherit;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
 .xlink{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
 .xlink:hover span{text-decoration:underline}
 .xicon{flex:none}
@@ -289,12 +296,13 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 @media (max-width:760px){
   .hero{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px}
   .book{transform:none}
   .nav{display:none}
   .bar-in{flex-wrap:wrap;row-gap:8px}
   .lang{order:3;overflow-x:auto;scrollbar-width:none}
   .lang::-webkit-scrollbar{display:none}
-  .lang a{padding:3px 7px;font-size:.74rem}
+  .lang a{padding:3px 7px;font-size:.8125rem}
   .tools{padding:8px 10px;gap:8px;border-radius:14px}
   .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:2px 10px;
     -webkit-mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent);mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 16px),transparent)}
@@ -347,7 +355,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .awake{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding:10px 16px;border-radius:14px;
   background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);font-size:.82rem;color:var(--muted)}
 .awake .dot{font-size:1.35rem;color:#6CF0B0;letter-spacing:.04em}
-.awake small{flex-basis:100%;font-size:.76rem}
+.awake small{flex-basis:100%;font-size:.8125rem}
 
 /* ticker tape */
 .tape{margin-inline:-16px;background:#FFD66B;color:#141A3A;border-block:2px solid #141A3A;overflow:hidden;transform:rotate(-1.2deg);margin-top:-14px;position:relative;z-index:2}
@@ -360,7 +368,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 @keyframes tape-rtl{to{transform:translateX(50%)}}
 
 /* card CTA */
-.max{font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.45)}
+.max{font-size:.8125rem;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;color:#3A2A00;background:linear-gradient(90deg,#FFD66B,#FFB347);box-shadow:0 0 14px rgba(255,190,80,.45)}
 .slip .btn.solid{background:var(--pos);color:var(--paper);border-radius:12px;padding-block:12px;font-size:.95rem;gap:8px;white-space:normal;text-align:center}
 .slip .btn.solid::after{content:"→";transition:transform .2s ease}
 [dir="rtl"] .slip .btn.solid::after{content:"←"}
@@ -370,12 +378,12 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
 .tr-leg>span:first-child{color:var(--ink);font-weight:700}
-.new{font-size:.68rem;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:999px;background:var(--stamp);color:#fff;white-space:nowrap}
+.new{font-size:.8125rem;font-weight:700;letter-spacing:.08em;padding:1px 8px;border-radius:999px;background:var(--stamp);color:#2A0B07;white-space:nowrap}
 
 /* top picks */
 #picks{position:relative;z-index:1}
@@ -394,7 +402,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .pick .btn.solid::after{content:"→"}
 [dir="rtl"] .pick .btn.solid::after{content:"←"}
 .pick .btn.solid:hover{background:#FFE59A}
-.pick .more{font-size:.8rem;color:#A9B2D8;text-align:center;text-underline-offset:3px}
+.pick .more{font-size:.8125rem;color:#A9B2D8;text-align:center;text-underline-offset:3px;display:flex;align-items:center;justify-content:center;min-height:44px;margin-block:-6px}
 .pick .more:hover{color:#fff}
 
 /* news: 夜の時間軸のようなタイムライン */
@@ -415,8 +423,9 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .share p{color:#A9B2D8;margin-top:6px;max-width:36em}
 .share-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
 .share-btns .btn{color:#fff;border-radius:999px;padding:10px 20px}
-.sb-x{background:#000;border:1px solid #444}.sb-line{background:#06C755}.sb-wa{background:#25D366}.sb-tg{background:#229ED9}
-.sb-wb{background:#E6162D}.sb-fb{background:#1877F2}.sb-copy,.sb-native{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.3)!important}
+/* 白い文字が 4.5:1 に届かない色は、文字を濃くするか背景を少し暗くする */
+.sb-x{background:#000;border:1px solid #444}.share-btns .sb-line{background:#06C755;color:#062A14}.share-btns .sb-wa{background:#25D366;color:#062A14}.sb-tg{background:#1A6FA0}
+.sb-wb{background:#C8102E}.sb-fb{background:#1464D0}.sb-copy,.sb-native{background:rgba(255,255,255,.12)!important;border:1px solid rgba(255,255,255,.3)!important}
 .share-btns .btn:hover{filter:brightness(1.12)}
 .share .eyebrow{color:#A9B2D8;margin-bottom:10px}
 .share .eyebrow .dot{color:#FFD66B}
@@ -446,7 +455,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 .dawn .btn.solid:focus-visible{outline-color:#fff}
 .foot-band{background:#160F2E;margin-inline:-16px;padding-inline:16px}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:6px 0 calc(22px + env(safe-area-inset-bottom,0px));
-  font-size:.8rem;color:rgba(255,236,214,.85);text-align:start}
+  font-size:.8125rem;color:rgba(255,236,214,.85);text-align:start}
 .foot .dot{color:#FFE08A}
 
 /* scroll reveal: JSがあるときだけ隠してから出す。位置は変えず透明度と移動だけ */
@@ -530,7 +539,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="wrap">
 
 <section id="picks">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">23:00</span>TOP 3</p><h2>先装这 3 个</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">23:00</span>精选 3 个</p><h2>先装这 3 个</h2></div>
   <p class="intro">按省事、海外可用、能真正兑换这三点挑选。</p>
   <div class="picks"><article class="pick rv"><div class="pick-top"><span class="rank dot">1</span><div><span class="cat">躺赚应用</span><h3>Honeygain</h3></div></div>
 <p>装在电脑或手机上就行。攒满 $20 可通过 PayPal 提现</p>
@@ -550,10 +559,10 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="list">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">00:30</span>REFERRAL LIST</p><h2>服务一览</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">00:30</span>推荐列表</p><h2>服务一览</h2></div>
   <div class="tools" id="tools">
     <div class="filters" role="group" id="filters" aria-label="按类别筛选"><button type="button" data-cat="all" aria-pressed="true">全部<span>35</span></button><button type="button" data-cat="crypto-bi" aria-pressed="false">加密货币 UBI<span>15</span></button><button type="button" data-cat="pointsite" aria-pressed="false">返利网站<span>3</span></button><button type="button" data-cat="career" aria-pressed="false">工作匹配<span>1</span></button><button type="button" data-cat="app" aria-pressed="false">躺赚应用<span>16</span></button></div>
-    <label class="switch" for="loopOnly"><input type="checkbox" id="loopOnly"><span>只看持续到账</span></label>
+    <label class="switch" for="loopOnly"><input type="checkbox" id="loopOnly"><span class="tg" aria-hidden="true"></span><span>只看持续到账</span></label>
   </div>
   <div class="legend">
     <span><span class="type loop">持续</span>&nbsp; <span>注册后可反复获得</span></span>
@@ -574,7 +583,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
 <article class="svc rv" id="svc-circles" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/circles/">Circles (Gnosis App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/circles/">Circles <span class="q">Gnosis App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">每小时 1 CRC（每天 24 CRC）</p>
 <div class="desc"><p id="d-circles">由 Gnosis 推出、每个人发行自己货币的机制。Circles 2.0 于 2025 年 5 月上线，2026 年 6 月 Gnosis App 围绕 Circles 进行了重建。本站暂时没有它的推荐链接</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-circles" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>在 Gnosis App 注册，并接受现有 Circles 成员的邀请。邀请人支付 96 CRC，被邀请人获得 48 CRC 欢迎奖励</span></p>
@@ -739,7 +748,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://www.ubi4all.org/" target="_blank" rel="noopener">查看官方网站</a></div>
 </article>
 <article class="svc rv" id="svc-g1" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/g1/">Ğ1 (June)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/g1/">Ğ1 <span class="q">June</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">成为成员后每天获得 Ğ1（全民红利）</p>
 <div class="desc"><p id="d-g1">基于“货币相对论”的自由货币。运行在开源软件 Duniter 上，每位成员每天都会以“全民红利”的形式获得新发行的 Ğ1。2017 年 3 月启动，2026 年 3 月迁移到 Duniter v2。没有推荐链接，也没有推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-g1" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>创建钱包，并通过“信任网（Web of Trust）”获得至少 5 位现有成员的认证。认证人原则上应当与你本人相识</span></p>
@@ -772,7 +781,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://dotare.io/" target="_blank" rel="noopener">查看官方网站</a></div>
 </article>
 <article class="svc rv" id="svc-oro" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/oro/">ORO (World App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/oro/">ORO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">每天领取 ORO 代币</p>
 <div class="desc"><p id="d-oro">在 World App 中运行的小程序，每天可领取一次 World Chain 上的代币 ORO。World 的介绍页写着邀请朋友可多得 ORO，但截至 2026 年 10 月在应用内未找到邀请链接。开发方为 Grupo de Fiesta</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-oro" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>安装 World App，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后打开 ORO 小程序每天领取</span></p>
@@ -783,7 +792,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645" target="_blank" rel="noopener">查看官方网站</a></div>
 </article>
 <article class="svc rv" id="svc-axo" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/axo/">AXO (World App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/axo/">AXO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">每天领取 AXO 代币</p>
 <div class="desc"><p id="d-axo">在 World App 中运行的小程序，每天点一下即可领取 World Chain 上的代币 AXO。加入每月 1 WLD 的“Premium”后每日数量变为 3 倍。也有推荐机制。创始人为 David Mateos</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-axo" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>通过推荐链接（推荐码 932BDA）在 World App 中打开小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后每天领取</span></p>
@@ -794,7 +803,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&amp;path=?ref=932BDA" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
 <article class="svc rv" id="svc-aidac" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/aidac/">AI-DAC (World App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/aidac/">AI-DAC <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">DAC 代币形式的 UBI</p>
 <div class="desc"><p id="d-aidac">在 World App 中运行的小程序，自称“AI 驱动的全民基本收入平台”。经 World ID 确认为真人的用户领取 DAC，用来支持开发应用的自主“AI CEO”并参与投票。运营者为创始人 Kei Iwami。没有推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-aidac" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>在 World App 中打开 AI-DAC 小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用）</span></p>
@@ -838,7 +847,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
 <article class="svc rv" id="svc-humad" data-cat="pointsite" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><h3><span class="cat">返利网站</span><a href="/zh/services/humad/">Humad (World App)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><h3><span class="cat">返利网站</span><a href="/zh/services/humad/">Humad <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">点击广告、回答问题可得积分（1,500 积分＝150 日元起可换礼品卡）</p>
 <div class="desc"><p id="d-humad">在 World App 中运行的小程序。点击广告、回答问题即可积累积分，并兑换礼品券。用 World ID 证明真人身份后，广告积分变为 6 倍。运营方为博报堂 DY 控股旗下的 Ads for Humanity 株式会社。未发现推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-humad" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>在 World App 中打开 Humad 小程序使用。兑换礼品卡需要用经 Orb 验证的 World ID 完成真人证明</span></p>
@@ -860,7 +869,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://official.app/rc/ECMHPWI7AG" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
 <article class="svc rv" id="svc-idena" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/idena/">Idena (iDNA)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/idena/">Idena <span class="q">iDNA</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">iDNA（节点运行期间的挖矿奖励，以及验证奖励）</p>
 <div class="desc"><p id="d-idena">以“一人一票”证明你是真人的 Proof of Person 区块链。在全球同步举行的“验证仪式”中解开名为 FLIP 的图片谜题即可通过验证。通过后，在运行节点期间可获得 iDNA 挖矿奖励。开源项目。没有推荐链接</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-idena" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>按官方 Telegram 的说明免费获取邀请码。用网页应用或自己的节点参加，在仪式时间在线解 FLIP（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
@@ -882,7 +891,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">复制</button><a class="btn solid" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
 <article class="svc rv" id="svc-fheid" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/fheid/">FheID (Privasea)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><h3><span class="cat">加密货币 UBI</span><a href="/zh/services/fheid/">FheID <span class="q">Privasea</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">证明你是真人即可获得空投和奖励（如活动“星星”）</p>
 <div class="desc"><p id="d-fheid">用手机摄像头读取面部、证明你是“真人”的应用。面部特征在设备上加密，并用全同态加密（FHE）处理，据称原始图像不会被发送。验证后会生成真人证明 NFT，可领取空投等奖励。运营方为 Privasea</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-fheid" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>安装 FheID 应用，输入邀请码 QVedKjg，并用人脸完成真人验证（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
@@ -893,7 +902,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">QVedKjg</span></div><button class="btn line" type="button" data-code="QVedKjg">复制</button><a class="btn solid" href="https://www.privasea.ai/download-app" target="_blank" rel="noopener">安装应用并填写邀请码</a></div>
 </article>
 <article class="svc rv" id="svc-jrkripto" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/jrkripto/">JrKripto (JR)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">每天获得 JR 积分（注册送 50 JR）</p>
 <div class="desc"><p id="d-jrkripto">土耳其加密资产新闻、分析和行情网站 JrKripto 的手机应用，创始人还运营股票信息网站 JrHisse。每天在应用中点一次，接下来 24 小时内会累积 JR 积分。使用邀请码注册并验证邮箱，可获得 50 JR 奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-jrkripto" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>通过邀请链接注册并验证邮箱（无需身份证件）。之后每天在应用中点一次即可（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
@@ -904,7 +913,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
 <article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/miningmachine/">Mining Machine ($ORE)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">$ORE 挖矿余额（免费，每次 24 小时）</p>
 <div class="desc"><p id="d-miningmachine">在浏览器中用“挖矿机”积累 $ORE 余额的网站。注册免费，无需充值或安装。免费矿机每次运行 24 小时。付费可以增加矿机。邀请人可获得被邀请人挖矿量的 10% 和其付费金额的 10%</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>通过邀请链接免费注册（用邮箱或 X 登录，无需身份证件）。之后每 24 小时开始一次挖矿（已于 2026 年 10 月确认可从日本注册）</span></p>
@@ -937,7 +946,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 <div class="slip"><a class="btn solid" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
 </article>
 <article class="svc rv" id="svc-refrax" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/refrax/">Refrax ($REFRAX)</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
 <p class="gain">待定的 $REFRAX 积分（代币尚未发行）</p>
 <div class="desc"><p id="d-refrax">自称 Solana 上去中心化存储的项目“Refrax”的第 0 季任务。用 X 登录，通过关注、发帖、邀请朋友和每日签到积累积分。网站称积分将在上线时以 $REFRAX 发放到你登记的 Solana 钱包</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-refrax" hidden>展开</button></div>
 <p class="need"><b>获取方式</b><span>打开邀请链接，用 X 登录（刚注册的 X 账号不能参加）。登记接收奖励的 Solana 地址，然后完成任务并每日签到（已于 2026 年 10 月确认可从日本注册）</span></p>
@@ -950,18 +959,18 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="verify">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">01:30</span>VERIFICATION</p><h2>按验证方式查找</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">01:30</span>身份验证</p><h2>按验证方式查找</h2></div>
   <nav class="vchips rv" aria-label="按验证方式查找"><a href="verify/world-id/" dir="auto">World ID（Orb 验证）<span>5</span></a><a href="verify/face/" dir="auto">人脸识别／活体检测<span>4</span></a><a href="verify/kyc-id/" dir="auto">身份证件 KYC<span>5</span></a><a href="verify/web-of-trust/" dir="auto">信任网／邀请<span>3</span></a><a href="verify/none/" dir="auto">无需验证<span>17</span></a></nav>
 </section>
 
 <section id="news">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>UPDATES</p><h2>最新动态</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">02:00</span>更新</p><h2>最新动态</h2></div>
   <ol class="news rv"><li><time class="dot" datetime="2026-10-30">2026.10.30</time><ul><li>新增 Refrax（$REFRAX）</li><li>新增 Life AI 测试网</li></ul></li><li><time class="dot" datetime="2026-10-29">2026.10.29</time><ul><li>新增 UBI4ALL</li><li>新增 KABU&amp;（カブアンド）</li><li>新增 Mining Machine（$ORE）</li><li>新增 JrKripto（JR）</li><li>发布随笔《全民高收入：谁来买单？》</li></ul></li><li><time class="dot" datetime="2026-10-28">2026.10.28</time><ul><li>新增给已收录项目的徽章</li><li>新增基本收入开源项目列表</li><li>新增更新信息的 RSS 订阅</li><li>发布随笔《AI 智能体需要基本收入吗？》</li><li>新增基本收入实验年表</li><li>新增按验证方式分类的页面（World ID 等）</li><li>新增已结束服务的墓地页面</li></ul></li><li><time class="dot" datetime="2026-10-26">2026.10.26</time><ul><li>新增 FheID（Privasea）</li><li>新增 RewardMe</li><li>新增 Idena（iDNA）</li><li>新增 Billions</li><li>新增 Humad（World App）</li></ul></li><li><time class="dot" datetime="2026-10-25">2026.10.25</time><ul><li>网站更名为 Free Lunch Lab（免费午餐研究所）</li><li>新增德语版</li></ul></li></ol>
 </section>
 
 <section id="share">
   <div class="share rv">
-    <p class="eyebrow"><span class="dot">03:00</span>SHARE</p>
+    <p class="eyebrow"><span class="dot">03:00</span>分享</p>
     <h2>分享给朋友</h2>
     <p>身边有想躺着赚钱的朋友吗？把这份清单发给 TA。</p>
     <div class="share-btns"><a class="btn sb-wb" href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F&amp;title=Free%20Lunch%20Lab%EF%BC%88%E5%85%8D%E8%B4%B9%E5%8D%88%E9%A4%90%E7%A0%94%E7%A9%B6%E6%89%80%EF%BC%89%F0%9F%98%B4%F0%9F%92%B0%20%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%20UBI%20%E5%92%8C%E8%BA%BA%E8%B5%9A%E5%BA%94%E7%94%A8%E4%B8%80%E8%A7%88" target="_blank" rel="noopener">微博</a><a class="btn sb-x" href="https://x.com/intent/post?text=Free%20Lunch%20Lab%EF%BC%88%E5%85%8D%E8%B4%B9%E5%8D%88%E9%A4%90%E7%A0%94%E7%A9%B6%E6%89%80%EF%BC%89%F0%9F%98%B4%F0%9F%92%B0%20%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%20UBI%20%E5%92%8C%E8%BA%BA%E8%B5%9A%E5%BA%94%E7%94%A8%E4%B8%80%E8%A7%88&amp;url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F" target="_blank" rel="noopener">X</a><a class="btn sb-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F&amp;text=Free%20Lunch%20Lab%EF%BC%88%E5%85%8D%E8%B4%B9%E5%8D%88%E9%A4%90%E7%A0%94%E7%A9%B6%E6%89%80%EF%BC%89%F0%9F%98%B4%F0%9F%92%B0%20%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81%20UBI%20%E5%92%8C%E8%BA%BA%E8%B5%9A%E5%BA%94%E7%94%A8%E4%B8%80%E8%A7%88" target="_blank" rel="noopener">Telegram</a><a class="btn sb-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2F" target="_blank" rel="noopener">Facebook</a><button class="btn sb-native" type="button" id="nativeShare" hidden>分享</button><button class="btn sb-copy" type="button" id="copyLink">复制链接</button></div>
@@ -969,7 +978,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="how">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">03:30</span>HOW TO</p><h2>注册方法</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">03:30</span>使用方法</p><h2>注册方法</h2></div>
   <div class="steps">
     <div class="step rv"><b>1</b><h3>点击按钮打开</h3><p>点击卡片上的“通过推荐链接注册”，即可打开官方网站或应用。大多数服务只要通过链接打开，推荐就会自动生效。</p></div>
     <div class="step rv"><b>2</b><h3>直接完成注册</h3><p>在打开的页面上直接完成注册。中途切换到其他浏览器或应用可能导致推荐失效，请在同一页面内完成。</p></div>
@@ -978,7 +987,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="orgs">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:00</span>ORGANIZATIONS</p><h2>致力于基本收入的团体</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:00</span>组织</p><h2>致力于基本收入的团体</h2></div>
   <div class="orgs-box rv">
     <p class="orgs-lead">这里介绍的不是能领钱的服务，而是研究、推动或实际发放基本收入与现金的团体，并不是注册后就能拿到钱的。</p>
     <ul class="orgs-mini"><li><a href="organizations/#org-bien" dir="auto">Basic Income Earth Network (BIEN)</a><span>全球</span><p>自 1986 年起的基本收入国际网络</p></li><li><a href="organizations/#org-givedirectly" dir="auto">GiveDirectly</a><span>美国</span><p>将捐款以现金直接送到贫困家庭的 NGO</p></li><li><a href="organizations/#org-openresearch" dir="auto">OpenResearch</a><span>美国</span><p>对 3,000 人进行三年现金发放研究的机构</p></li><li><a href="organizations/#org-jabi" dir="auto">日本ベーシックインカム学会（JABI）</a><span>日本</span><p>以中立立场研究基本收入的日本学会</p></li></ul>
@@ -988,7 +997,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="oss">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:15</span>OPEN SOURCE</p><h2>支撑基本收入的开源代码</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:15</span>开源</p><h2>支撑基本收入的开源代码</h2></div>
   <div class="orgs-box rv">
     <p class="orgs-lead">源代码公开的 UBI 协议、钱包、人格证明系统和政策模拟器。可以阅读、运行，也欢迎参与贡献。</p>
     <ul class="orgs-mini"><li><a href="open-source/#oss-group-income" dir="auto">Group Income</a><span>协议</span><p>端到端加密的点对点基本收入应用：朋友们每月认捐，让群组里每个人的收入都不低于约定的最低额</p></li><li><a href="open-source/#oss-ubi2" dir="auto">UBI2</a><span>协议</span><p>Democracy Earth 于 2026 年 6 月创建的实验性新 UBI 链：由 AI 核验人格，每小时向每个人持续流入 1 UBI</p></li><li><a href="open-source/#oss-duniter-v2s" dir="auto">Duniter v2s</a><span>协议</span><p>用 Substrate 重写的自由货币 Ğ1 节点软件：信任网络中的每位成员每天都会产生一份全民红利</p></li><li><a href="open-source/#oss-policyengine-us" dir="auto">PolicyEngine US</a><span>模拟器与研究</span><p>美国税收与福利制度的规则引擎，用于测算 UBI 等改革的成本及其对贫困的影响</p></li></ul>
@@ -997,7 +1006,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="faq">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:30</span>FAQ</p><h2>常见问题</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">04:30</span>问答</p><h2>常见问题</h2></div>
   <div class="faq rv">
     <details><summary>这是真正的基本收入吗？</summary><p>不是政府发放的那种。这里的“UBI”指的是像 GoodDollar 和 BioMatrix 这样，无条件、反复向每位注册者发放代币的项目。日本目前还没有国家层面的基本收入。</p></details>
     <details><summary>使用推荐码会吃亏吗？</summary><p>通常不会。手续费和条件都一样，而且大多数服务也会给新用户奖励。推荐人同样会获得奖励，因此本页标注了 PR。</p></details>
@@ -1007,7 +1016,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 </section>
 
 <section id="warn">
-  <div class="sec-head rv"><p class="eyebrow"><span class="dot">05:30</span>CAUTION</p><h2>注册之前</h2></div>
+  <div class="sec-head rv"><p class="eyebrow"><span class="dot">05:30</span>注意</p><h2>注册之前</h2></div>
   <div class="warn rv">
     <h3>需要了解的事</h3>
     <ul>
@@ -1022,7 +1031,7 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 
 <footer class="dawn rise" id="dawn">
   <div class="wrap dawn-in rv">
-    <p class="eyebrow"><span class="dot">06:00</span>GOOD MORNING</p>
+    <p class="eyebrow"><span class="dot">06:00</span>早安</p>
     <h2>早上好。<br>睡着的时候，说不定已经到账了。</h2>
     <p class="dawn-sub">打开应用看看余额吧。还没开始的话，现在就为今晚做好准备。</p>
     <a class="btn solid" href="#list">查看服务列表</a>

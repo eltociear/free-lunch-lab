@@ -174,7 +174,7 @@ function card(s, lang) {
   const d = s[lang] || s.en;
   const name = lang === 'ja' ? s.name : s.nameEn || s.name;
   return `<article class="svc rv" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top">${ava(s, name)}<div class="svc-id"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span><a href="${svcPath(lang, s)}">${esc(name)}</a></h3>${tags(s, L)}</div></div>
+<div class="svc-top">${ava(s, name)}<div class="svc-id"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span><a href="${svcPath(lang, s)}">${nameHtml(name)}</a></h3>${tags(s, L)}</div></div>
 <p class="gain">${esc(d.gain)}</p>
 <div class="desc"><p id="d-${s.id}">${esc(d.note)}</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-${s.id}" hidden>${esc(L.more)}</button></div>
 <p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
@@ -186,6 +186,11 @@ ${slip(s, L)}
 </article>`;
 }
 
+// 名前のかっこ書きは小さく別の行に（「KABU&（カブアンド）」→ KABU& と、下に小さく カブアンド）
+function nameHtml(name) {
+  const m = name.match(/^(.+?)(?:（(.+)）| \((.+)\))$/);
+  return m ? `${esc(m[1])} <span class="q">${esc(m[2] || m[3])}</span>` : esc(name);
+}
 // カードと個別ページで共通の部品
 const ava = (s, name) => `<span class="ava" aria-hidden="true" dir="auto">${esc(mono(s, name))}</span>`;
 const tags = (s, L) => `<div class="tags">${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div>`;
@@ -215,7 +220,7 @@ function picks(lang) {
   const L = T[lang];
   return PICKS.map(p => [p, live.find(s => s.id === p.id)]).filter(([, s]) => s).map(([p, s], i) => {
     const name = lang === 'ja' ? s.name : s.nameEn || s.name;
-    return `<article class="pick rv"><div class="pick-top"><span class="rank dot">${i + 1}</span><div><span class="cat">${esc(CATS[lang][s.cat])}</span><h3>${esc(name)}</h3></div></div>
+    return `<article class="pick rv"><div class="pick-top"><span class="rank dot">${i + 1}</span><div><span class="cat">${esc(CATS[lang][s.cat])}</span><h3>${nameHtml(name)}</h3></div></div>
 <p>${esc(p[lang] || p.en)}</p>
 ${cta(s, L)}
 <a class="more" href="#svc-${s.id}">${esc(L.pickMore)} ↓</a>
@@ -485,15 +490,15 @@ ${body.slice(cut).trim()}
 // ---- サービスごとの個別ページ（検索で「サービス名 とは」などから来る人向け）。中身は SERVICES のデータだけで作る
 const CSS = template.slice(template.indexOf('<style>') + 7, template.indexOf('</style>'));
 const DETAIL_CSS = `
-.crumbs ol{list-style:none;margin:0;padding:14px 0 0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.8rem;color:var(--muted)}
+.crumbs ol{list-style:none;margin:0;padding:4px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:0 8px;font-size:.8125rem;color:var(--muted)}
 .crumbs li+li::before{content:"›";margin-inline-end:8px;opacity:.7}
 [dir="rtl"] .crumbs li+li::before{content:"‹"}
-.crumbs a{color:var(--muted);text-underline-offset:3px}
+.crumbs a{color:var(--muted);text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}
 .detail{max-width:760px;margin:20px auto 0;gap:16px;padding:clamp(20px,4vw,32px)}
 .detail:hover{transform:none}
 .detail h1{font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.3;overflow-wrap:break-word;hyphens:auto}
 .detail .ava{width:64px;height:64px;font-size:1.4rem}
-.detail h2{font-family:var(--f-body);font-weight:700;font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin-top:4px}
+.detail h2{font-family:var(--f-body);font-weight:700;font-size:.8125rem;letter-spacing:.08em;color:var(--muted);margin-top:4px}
 .detail .body{font-size:.98rem;line-height:1.9}
 .detail .gain{font-size:clamp(1.4rem,4vw,1.9rem)}
 .detail .meta{margin-top:4px}
@@ -502,7 +507,7 @@ const DETAIL_CSS = `
 .svc-warn{display:grid;gap:8px;padding:16px 18px;font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
 .svc-warn p{margin:0}
 .svc-warn .warn-h{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--stamp);font-size:.92rem;line-height:1.5}
-.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8rem;line-height:1}
+.svc-warn .warn-h::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--stamp);color:var(--surface);font-size:.8125rem;line-height:1}
 #related{--sky1:#7C5CFF;--sky2:#C04FA0;max-width:760px;margin-inline:auto;padding-top:clamp(40px,6vw,64px)}
 .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}
 .rel{--c:var(--accent);display:flex;gap:12px;align-items:center;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;box-shadow:var(--shadow);min-width:0;transition:border-color .2s ease}
@@ -510,20 +515,20 @@ const DETAIL_CSS = `
 .rel .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
 .rel>span:last-child{display:grid;min-width:0}
 .rel b{font-size:.98rem;line-height:1.35;overflow-wrap:anywhere}
-.rel small{font-size:.78rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rel small{font-size:.8125rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .back{max-width:760px;margin:28px auto 0;display:flex;justify-content:center}
 .back .btn{border-radius:999px;padding:10px 22px}
 .detail-foot{margin-top:clamp(48px,7vw,80px)}
 .detail-foot .foot{padding-top:18px}
 .org-link{font-size:.84rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px}
-.org-link span{font-size:.78rem}
+.org-link span{font-size:.8125rem}
 /* 団体ページ: お金のカードと区別するため、色の帯やボタンのない落ち着いた行で並べる */
 .orgs{max-width:820px;margin-inline:auto}
 .orgs-head{padding-block:24px 8px;display:grid;gap:12px}
 .orgs-head h1{font-size:clamp(1.6rem,5vw,2.4rem)}
 .orgs-intro{color:var(--muted);max-width:44em}
 .org-toc{display:flex;flex-wrap:wrap;gap:6px}
-.org-toc a{font-size:.8rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 12px;background:var(--surface)}
+.org-toc a{font-size:.8125rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 14px;min-height:44px;display:inline-flex;align-items:center;background:var(--surface)}
 .org-toc a:hover{border-color:var(--accent);color:var(--accent)}
 .org-group{padding-top:clamp(32px,5vw,48px)}
 .org-group h2{font-size:1.25rem;display:flex;align-items:center;gap:10px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
@@ -532,43 +537,47 @@ const DETAIL_CSS = `
 .org{padding:16px 2px;border-bottom:1px solid var(--line);display:grid;gap:6px;scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
 .org:target{background:color-mix(in srgb,var(--accent) 8%,transparent);border-radius:8px;padding-inline:10px}
 .org-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
-.org-name{font-weight:700;font-size:1.02rem;text-underline-offset:3px;overflow-wrap:anywhere}
+.org-name{font-weight:700;font-size:1.02rem;text-underline-offset:3px;overflow-wrap:anywhere;display:inline-block;padding-block:10px;margin-block:-10px}
 .org-name::after{content:"↗";font-size:.8em;margin-inline-start:4px;opacity:.7}
-.org-meta{font-size:.78rem;color:var(--muted)}
+.org-meta{font-size:.8125rem;color:var(--muted)}
 .org p{font-size:.9rem;line-height:1.8;color:var(--ink)}
-.org-svc{justify-self:start;font-size:.8rem;font-weight:700;color:var(--pos);text-underline-offset:3px}
+.org-svc{justify-self:start;font-size:.8125rem;font-weight:700;color:var(--pos);text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px;margin-block:-6px}
 /* オープンソースのページ: 団体ページと同じ行に、言語・ライセンス・スター・最終コミットを小さく添える */
-.oss-repo{font-size:.76rem;color:var(--muted);overflow-wrap:anywhere}
-.oss-badge{font-size:.7rem;font-weight:700;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid currentColor;color:var(--muted);white-space:nowrap}
+.oss-repo{font-size:.8125rem;color:var(--muted);overflow-wrap:anywhere}
+.oss-badge{font-size:.8125rem;font-weight:700;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid currentColor;color:var(--muted);white-space:nowrap}
 .oss-badge.archived{color:var(--accent)}
-.oss-facts{margin:0;display:flex;flex-wrap:wrap;gap:2px 16px;font-size:.78rem;color:var(--muted)}
+.oss-facts{margin:0;display:flex;flex-wrap:wrap;gap:2px 16px;font-size:.8125rem;color:var(--muted)}
 .oss-facts div{display:flex;gap:6px;align-items:baseline;min-width:0}
-.oss-facts dt{font-size:.72rem}
+.oss-facts dt{font-size:.8125rem}
 .oss-facts dd{margin:0;color:var(--ink);overflow-wrap:anywhere}
 .oss-links{display:flex;flex-wrap:wrap;gap:4px 16px}
-.oss-note{font-size:.78rem;color:var(--muted)}
+.oss-note{font-size:.8125rem;color:var(--muted)}
 .foot a{color:inherit;text-underline-offset:3px}
 .vmain{max-width:1080px;margin-inline:auto}
 .vsec{padding-top:28px}
 .vsec h2{font-size:1.15rem;display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .vsec h2 .dot{font-size:.85rem;color:var(--muted);font-weight:400}
 .verify-line{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.82rem}
-.verify-line b{font-size:.72rem;color:var(--muted);margin-inline-end:4px}
-.verify-line a,.verify-line span{padding:2px 10px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
+.verify-line b{font-size:.8125rem;color:var(--muted);margin-inline-end:4px}
+.verify-line a,.verify-line span{padding:2px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
-.essay{max-width:720px;margin-inline:auto}
+/* エッセイは1行およそ38字（日本語）まで */
+.essay{max-width:38rem;margin-inline:auto}
 .byline{font-size:.84rem;color:var(--muted)}
 .essay-body{display:grid;gap:16px;margin-top:12px}
 .essay-body p{font-size:1rem;line-height:1.95}
 .essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
-.op-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.06em;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
-.fnref a{text-decoration:none;font-weight:700;padding-inline:1px}
+.op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:.06em;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
+/* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
+.fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
+.fnref a::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
 .fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 .fn h2{font-size:1rem;margin-bottom:8px}
 .fn ol{margin:0;padding-inline-start:22px;display:grid;gap:6px;font-size:.84rem;overflow-wrap:anywhere}
-.fnback{text-decoration:none;margin-inline-start:4px}
+.fnback{text-decoration:none;margin-inline-start:4px;display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-block:-12px}
+.fn ol a{overflow-wrap:anywhere}
 .related{margin-top:24px;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-weight:700}
 .tl{list-style:none;margin:16px 0 0;padding:0;position:relative}
 .tl::before{content:"";position:absolute;top:6px;bottom:6px;inset-inline-start:7px;width:2px;background:linear-gradient(var(--accent),var(--gold));opacity:.6}
@@ -577,14 +586,15 @@ const DETAIL_CSS = `
 .tl-crypto::before{border-color:#7C5CFF}.tl-gov::before{border-color:#2F7BEA}.tl-ngo::before{border-color:#1FB57A}.tl-private::before{border-color:#F08A24}
 .tl-when{font-size:1rem;color:var(--accent);margin-bottom:6px}
 .tl-card{padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);display:grid;gap:6px;box-shadow:var(--shadow)}
-.tl-type{justify-self:start;font-size:.7rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.tl-type{justify-self:start;font-size:.8125rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
 .tl-card h2{font-family:var(--f-body);font-weight:700;font-size:1.08rem;overflow-wrap:anywhere}
-.tl-place{font-size:.8rem;color:var(--muted)}
+.tl-place{font-size:.8125rem;color:var(--muted)}
 .tl-card dl{margin:4px 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.86rem;line-height:1.7}
-.tl-card dt{color:var(--muted);font-size:.74rem;padding-top:.15em;white-space:nowrap}
+.tl-card dt{color:var(--muted);font-size:.8125rem;padding-top:.15em;white-space:nowrap}
 .tl-card dd{margin:0;min-width:0;overflow-wrap:anywhere}
-.tl-links{font-size:.8rem}.tl-links span{color:var(--muted)}
+.tl-links{font-size:.8125rem}.tl-links span{color:var(--muted)}
 .tl-more{margin-top:24px;font-size:.92rem}
+.tl-more a,.tl-links a,.related a{display:inline-block;padding-block:11px;margin-block:-11px}
 @media (max-width:520px){.tl-card dl{grid-template-columns:1fr}.tl-card dt{padding-top:6px}}
 .graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
 .grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
@@ -592,7 +602,7 @@ const DETAIL_CSS = `
 .grave-body{min-width:0;display:grid;gap:8px}
 .grave h2{font-family:var(--f-body);font-weight:700;font-size:1.08rem;overflow-wrap:anywhere}
 .grave dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.88rem;line-height:1.7}
-.grave dt{color:var(--muted);font-size:.76rem;padding-top:.15em;white-space:nowrap}
+.grave dt{color:var(--muted);font-size:.8125rem;padding-top:.15em;white-space:nowrap}
 .grave dd{margin:0;min-width:0;overflow-wrap:anywhere}
 @media (max-width:520px){.grave dl{grid-template-columns:1fr}.grave dt{padding-top:6px}}
 /* バッジのページ: 見本は明るい背景と暗い背景の両方に置く。コードの箱は中で折り返し、ページは横にスクロールさせない */
@@ -602,14 +612,15 @@ const DETAIL_CSS = `
 .bdg-show span{display:grid;place-items:center;padding:16px 10px;min-width:0}
 .bdg-show .on-l{background:#FFFFFF}.bdg-show .on-d{background:#0D1117}
 .bdg-show img{max-width:100%;height:auto}
-.bdg-tile figcaption{padding:10px 12px;display:grid;gap:2px;font-size:.8rem;min-width:0}
-.bdg-tile figcaption a{font-size:.74rem;overflow-wrap:anywhere}
+.bdg-tile figcaption{padding:10px 12px;display:grid;gap:2px;font-size:.8125rem;min-width:0}
+.bdg-tile figcaption a{font-size:.8125rem;overflow-wrap:anywhere}
 .bdg-note{font-size:.84rem;color:var(--muted);max-width:44em}
-.bdg-name{font-weight:700;font-size:1.02rem;text-underline-offset:3px;overflow-wrap:anywhere}
+.bdg-name{font-weight:700;font-size:1.02rem;text-underline-offset:3px;overflow-wrap:anywhere;display:inline-block;padding-block:10px;margin-block:-10px}
 .snip{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 8px;align-items:start;min-width:0}
-.snip-k{grid-column:1/-1;font-size:.68rem;font-weight:700;letter-spacing:.08em;color:var(--muted)}
-.snip pre{margin:0;min-width:0;max-height:9em;overflow:auto;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:color-mix(in srgb,var(--paper) 60%,var(--surface));color:var(--ink);font:.74rem/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all;text-align:left;user-select:all;-webkit-user-select:all}
-.snip .btn{font-size:.78rem;padding:6px 12px}
+.snip-k{grid-column:1/-1;font-size:.8125rem;font-weight:700;letter-spacing:.08em;color:var(--muted)}
+.snip pre{margin:0;min-width:0;max-height:9em;overflow:auto;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:color-mix(in srgb,var(--paper) 60%,var(--surface));color:var(--ink);font:.8125rem/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all;text-align:left;user-select:all;-webkit-user-select:all}
+.snip .btn{font-size:.8125rem;padding:6px 12px}
+.bdg-tile figcaption a{display:inline-block;padding-block:10px;margin-block:-10px}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
 // meta description 用に長さをそろえる（日本語・中国語は短め）
@@ -646,12 +657,12 @@ function servicePage(s, lang) {
       { '@type': 'ListItem', position: 2, name, item: url },
     ],
   };
-  const rel = related(s).map(x => `<a class="rel" data-cat="${x.cat}" href="${svcPath(lang, x)}">${ava(x, sName(x, lang))}<span><span class="cat">${esc(CATS[lang][x.cat])}</span><b>${esc(sName(x, lang))}</b><small>${esc((x[lang] || x.en).gain)}</small></span></a>`).join('');
+  const rel = related(s).map(x => `<a class="rel" data-cat="${x.cat}" href="${svcPath(lang, x)}">${ava(x, sName(x, lang))}<span><span class="cat">${esc(CATS[lang][x.cat])}</span><b>${nameHtml(sName(x, lang))}</b><small>${esc((x[lang] || x.en).gain)}</small></span></a>`).join('');
   const org = ORGS.find(o => o.svc === s.id);
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${home}#list">${esc(L.listH)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
 <main>
 <article class="svc detail" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top">${ava(s, name)}<div class="svc-id"><span class="cat">${esc(CATS[lang][s.cat])}</span><h1>${esc(name)}</h1>${tags(s, L)}</div></div>
+<div class="svc-top">${ava(s, name)}<div class="svc-id"><span class="cat">${esc(CATS[lang][s.cat])}</span><h1>${nameHtml(name)}</h1>${tags(s, L)}</div></div>
 ${d.warning ? `<div class="warn svc-warn" role="note"><p class="warn-h">${esc(L.svcWarnH)}</p><p>${esc(d.warning)}</p></div>` : ''}
 <h2>${esc(L.hGain)}</h2>
 <p class="gain">${esc(d.gain)}</p>
@@ -770,7 +781,7 @@ function orgsPage(lang) {
   }).join('\n');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.orgsTitle)}</li></ol></nav>
 <main class="orgs">
-<header class="orgs-head"><p class="eyebrow">ORGANIZATIONS</p><h1>${esc(L.orgsH1)}</h1><p class="orgs-intro">${esc(L.orgsIntro)}</p>
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebOrgs)}</p><h1>${esc(L.orgsH1)}</h1><p class="orgs-intro">${esc(L.orgsIntro)}</p>
 <nav class="org-toc" aria-label="${esc(L.navLabel)}">${ORG_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}</nav></header>
 ${groups}
 <p class="tl-more"><a href="${tlPath(lang)}">${esc(L.tlLink)} →</a></p>
@@ -787,7 +798,15 @@ function essayPage(e, lang) {
   const desc = e.desc[lang] || e.desc.en;
   const url = essayAbs(lang, e);
   const fn = t => esc(t).replace(ESSAY_LINK, (_, txt, href) => `<a href="${urlPath(lang)}${href.slice(1)}">${txt}</a>`).replace(/\[(\d+)\]/g, (_, n) => `<sup class="fnref"><a href="#fn-${n}" id="ref-${n}">${n}</a></sup>`);
-  const blocks = (e.blocks[lang] || e.blocks.en).map(([k, t]) => k === 'h' ? `<h2>${esc(t)}</h2>` : k === 'o' ? `<p class="op"><span class="op-tag">${esc(L.essayOpinion)}</span>${fn(t)}</p>` : `<p>${fn(t)}</p>`).join('\n');
+  // 「意見」の札は、見出しごとの最初の意見の段落にだけ付ける（毎段落だとうるさいので）
+  let tagged = false;
+  const blocks = (e.blocks[lang] || e.blocks.en).map(([k, t]) => {
+    if (k === 'h') { tagged = false; return `<h2>${esc(t)}</h2>`; }
+    if (k !== 'o') return `<p>${fn(t)}</p>`;
+    const tag = tagged ? '' : `<span class="op-tag">${esc(L.essayOpinion)}</span>`;
+    tagged = true;
+    return `<p class="op">${tag}${fn(t)}</p>`;
+  }).join('\n');
   const rel = e.related && ESSAYS.find(x => x.id === e.related);
   const sources = e.sources.map(s => `<li id="fn-${s.n}"><a href="${esc(s.url)}" target="_blank" rel="noopener" dir="auto">${esc(s.label)}</a>${s.url2 ? ` · <a href="${esc(s.url2)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(s.url2).hostname.replace(/^www\./, ''))}</a>` : ''} <a class="fnback" href="#ref-${s.n}" aria-label="↩">↩</a></li>`).join('');
   const ld = [
@@ -802,7 +821,7 @@ function essayPage(e, lang) {
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a></li><li aria-current="page">${esc(ttl)}</li></ol></nav>
 <main class="essay">
 <article>
-<header class="orgs-head"><p class="eyebrow">ESSAY</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p></header>
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p></header>
 <div class="essay-body">${blocks}</div>
 ${rel ? `<p class="related">${esc(L.essayRelated)}: <a href="${essayPath(lang, rel)}">${esc(rel.title[lang] || rel.title.en)}</a></p>` : ''}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
@@ -819,7 +838,7 @@ function essaysIndex(lang) {
     { '@type': 'ListItem', position: 2, name: L.essaysTitle, item: essaysAbs(lang) } ] };
   const items = ESSAYS.map(e => `<li class="org"><div class="org-head"><a class="org-name essay-link" href="${essayPath(lang, e)}">${esc(e.title[lang] || e.title.en)}</a><span class="org-meta"><time datetime="${e.date}">${esc(longDate(e.date, lang))}</time></span></div><p>${esc(e.desc[lang] || e.desc.en)}</p></li>`).join('');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.essaysTitle)}</li></ol></nav>
-<main class="orgs"><header class="orgs-head"><p class="eyebrow">ESSAYS</p><h1>${esc(L.essaysTitle)}</h1></header><ul class="org-list">${items}</ul>
+<main class="orgs"><header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(L.essaysTitle)}</h1></header><ul class="org-list">${items}</ul>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p></main>`;
   return shell(lang, { title: `${L.essaysTitle} | ${L.title}`, desc: ESSAYS.map(e => e.desc[lang] || e.desc.en).join(' ').slice(0, 160), hrefFor: essaysAbs, pathFor: essaysPath, ld, ogType: 'website', body });
 }
@@ -850,7 +869,7 @@ function timelinePage(lang) {
   }).join('\n');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.tlTitle)}</li></ol></nav>
 <main class="orgs">
-<header class="orgs-head"><p class="eyebrow">TIMELINE</p><h1>${esc(L.tlTitle)}</h1><p class="orgs-intro">${esc(L.tlIntro)}</p></header>
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebTimeline)}</p><h1>${esc(L.tlTitle)}</h1><p class="orgs-intro">${esc(L.tlIntro)}</p></header>
 <ol class="tl">${items}</ol>
 <p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${ossPath(lang)}">${esc(L.ossTitle)}</a></p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
@@ -877,7 +896,7 @@ function verifyPage(m, lang) {
   const intro = V.intro[lang] || V.intro.en;
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(V.name[lang])}</li></ol></nav>
 <main class="vmain">
-<header class="orgs-head"><p class="eyebrow">VERIFICATION</p><h1>${esc(V.title[lang])}</h1>${intro ? `<p class="orgs-intro">${esc(intro)}</p>` : ''}</header>
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebVerify)}</p><h1>${esc(V.title[lang])}</h1>${intro ? `<p class="orgs-intro">${esc(intro)}</p>` : ''}</header>
 ${section(L.verifyReqH, req)}
 ${section(L.verifyOptH, opt)}
 <nav class="vchips vother" aria-label="${esc(L.verifyAll)}">${others}</nav>
@@ -953,7 +972,7 @@ function ossPage(lang) {
   }).join('\n');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.ossTitle)}</li></ol></nav>
 <main class="orgs">
-<header class="orgs-head"><p class="eyebrow" dir="ltr">OPEN SOURCE</p><h1>${esc(L.ossH1)}</h1><p class="orgs-intro">${esc(L.ossIntro)}</p>
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebOss)}</p><h1>${esc(L.ossH1)}</h1><p class="orgs-intro">${esc(L.ossIntro)}</p>
 ${ossFetchedOn ? `<p class="oss-note">${esc(L.ossFetched).replace('{date}', `<time datetime="${ossFetchedOn}">${esc(longDate(ossFetchedOn, lang))}</time>`)} · <a href="${SITE_URL}/open-source.json" dir="ltr">open-source.json</a></p>\n` : ''}<nav class="org-toc" aria-label="${esc(L.navLabel)}">${OSS_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}</nav></header>
 ${groups}
 <p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a></p>
@@ -988,7 +1007,7 @@ ${snip('HTML', badgeHtml(url))}</li>`;
   const orgItems = ORGS.map(o => item('org', o, o.name, `${orgPath(lang)}#org-${o.id}`, (ORG_GROUPS.find(g => g.id === o.group) || { name: {} }).name[lang]));
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.badgeTitle)}</li></ol></nav>
 <main class="orgs">
-<header class="orgs-head"><p class="eyebrow" dir="ltr">BADGE</p><h1>${esc(L.badgeH1)}</h1><p class="orgs-intro">${esc(L.badgeIntro)}</p><p class="bdg-note">${esc(L.badgeNote)}</p>
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebBadge)}</p><h1>${esc(L.badgeH1)}</h1><p class="orgs-intro">${esc(L.badgeIntro)}</p><p class="bdg-note">${esc(L.badgeNote)}</p>
 <nav class="org-toc" aria-label="${esc(L.navLabel)}"><a href="#b-prev">${esc(L.badgePreviewH)}</a><a href="#b-svc">${esc(L.badgeSvcH)}</a><a href="#b-oss">${esc(L.badgeOssH)}</a><a href="#b-org">${esc(L.badgeOrgH)}</a></nav></header>
 <section class="org-group" id="b-prev"><h2>${esc(L.badgePreviewH)}</h2><div class="bdg-prev">${tile('listed.svg', L.badgeFlat, L.badgeDark)}${tile('listed-light.svg', L.badgeFlat, L.badgeLight)}${tile('listed-card.svg', L.badgeCard, L.badgeDark)}${tile('listed-card-light.svg', L.badgeCard, L.badgeLight)}</div></section>
 ${sec('b-svc', L.badgeSvcH, svcItems)}
