@@ -3246,7 +3246,10 @@ module.exports = {
       "ebBadge": "バッジ",
       "riskBadge": "要注意",
       "goWarn": "注意点を読んでから登録",
-      "navFaqS": "Q&A"
+      "navFaqS": "Q&A",
+      "moreInfo": "くわしく",
+      "toPage": "このサービスのページを見る",
+      "showAll": "すべて表示（あと{n}件）"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3462,7 +3465,10 @@ module.exports = {
       "ebBadge": "Badge",
       "riskBadge": "High risk",
       "goWarn": "Read the warnings before signing up",
-      "navFaqS": "FAQ"
+      "navFaqS": "FAQ",
+      "moreInfo": "Details",
+      "toPage": "Open the full page",
+      "showAll": "Show all ({n} more)"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3678,7 +3684,10 @@ module.exports = {
       "ebBadge": "बैज",
       "riskBadge": "ज़्यादा जोखिम",
       "goWarn": "साइन अप से पहले चेतावनी पढ़ें",
-      "navFaqS": "सवाल"
+      "navFaqS": "सवाल",
+      "moreInfo": "विवरण",
+      "toPage": "पूरा पेज देखें",
+      "showAll": "सभी दिखाएँ ({n} और)"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3894,7 +3903,10 @@ module.exports = {
       "ebBadge": "徽章",
       "riskBadge": "高风险",
       "goWarn": "先看注意事项再注册",
-      "navFaqS": "问答"
+      "navFaqS": "问答",
+      "moreInfo": "详情",
+      "toPage": "查看完整页面",
+      "showAll": "显示全部（还有 {n} 个）"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4110,7 +4122,10 @@ module.exports = {
       "ebBadge": "Insignia",
       "riskBadge": "Riesgo alto",
       "goWarn": "Lee las advertencias antes de registrarte",
-      "navFaqS": "FAQ"
+      "navFaqS": "FAQ",
+      "moreInfo": "Detalles",
+      "toPage": "Ver la página completa",
+      "showAll": "Ver todos ({n} más)"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4326,7 +4341,10 @@ module.exports = {
       "ebBadge": "الشارة",
       "riskBadge": "مخاطرة عالية",
       "goWarn": "اقرأ التحذيرات قبل التسجيل",
-      "navFaqS": "أسئلة"
+      "navFaqS": "أسئلة",
+      "moreInfo": "التفاصيل",
+      "toPage": "عرض الصفحة كاملة",
+      "showAll": "عرض الكل ({n} أخرى)"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4542,7 +4560,10 @@ module.exports = {
       "ebBadge": "Badge",
       "riskBadge": "Hohes Risiko",
       "goWarn": "Erst die Warnhinweise lesen",
-      "navFaqS": "FAQ"
+      "navFaqS": "FAQ",
+      "moreInfo": "Details",
+      "toPage": "Ganze Seite ansehen",
+      "showAll": "Alle anzeigen ({n} weitere)"
     }
   },
   "ORG_REGIONS": {

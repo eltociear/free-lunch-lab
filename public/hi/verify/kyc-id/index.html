@@ -224,17 +224,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -254,7 +276,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -262,6 +284,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -326,9 +352,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -408,7 +445,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -492,6 +529,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -658,59 +700,74 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">सत्यापन</p><h1>ID दस्तावेज़ KYC माँगने वाले ऐप</h1><p class="orgs-intro">पासपोर्ट या ड्राइविंग लाइसेंस जैसे पहचान दस्तावेज़ से KYC होता है, यानी नाम और जन्मतिथि जैसी निजी जानकारी ऑपरेटर को देनी होती है। ME Pass में साइन-अप पर और Pi Network में PI भेजने के लिए ज़रूरी है; Mein Grundeinkommen सिर्फ़ जीतने पर ID मिलाता है। KABU&amp; में शेयर वाउचर को शेयर में बदलते समय यह ज़रूरी है।</p></header>
 <section class="vsec"><h2>जिन सेवाओं में यह ज़रूरी है<span class="dot">3</span></h2><div class="grid"><article class="svc rv" id="svc-mepass" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ME</span><div class="svc-id"><h3><span class="cat">क्रिप्टो बेसिक इनकम</span><a href="/hi/services/mepass/">ME Pass</a></h3><div class="tags"><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ME</span><div class="svc-id"><div class="svc-line"><span class="cat">क्रिप्टो बेसिक इनकम</span><div class="tags"><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/mepass/">ME Pass</a></h3></div></div>
 <p class="gain">हर दिन MEC टोकन</p>
-<div class="desc"><p id="d-mepass">Meta Earth का वॉलेट ऐप। सत्यापित यूज़र को “बिना शर्त बेसिक इनकम” के तौर पर 1 MEC मिलता है, साथ में रोज़ चेक-इन पर थोड़े इनाम</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-mepass" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>इनवाइट लिंक से साइन अप करें और ऐप में KYC पूरा करें</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-no" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✗</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं</span></li><li class="t-unknown" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट"><span aria-hidden="true">संचालक</span><b aria-hidden="true">?</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट</span></li></ul></div>
-<p class="caution lv-caution"><span><b>ध्यान दें:</b> अक्टूबर 2026 तक MEC किसी एक्सचेंज पर लिस्टेड नहीं है और इसकी कोई बाज़ार कीमत नहीं है। कैश निकालना सिर्फ़ पीयर-टू-पीयर से संभव है</span></p>
 
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">Meta Earth का वॉलेट ऐप। सत्यापित यूज़र को “बिना शर्त बेसिक इनकम” के तौर पर 1 MEC मिलता है, साथ में रोज़ चेक-इन पर थोड़े इनाम</p>
+<p class="need"><b>कैसे मिलेगा</b><span>इनवाइट लिंक से साइन अप करें और ऐप में KYC पूरा करें</span></p>
+<p class="caution lv-caution"><span><b>ध्यान दें:</b> अक्टूबर 2026 तक MEC किसी एक्सचेंज पर लिस्टेड नहीं है और इसकी कोई बाज़ार कीमत नहीं है। कैश निकालना सिर्फ़ पीयर-टू-पीयर से संभव है</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<a class="to-page" href="/hi/services/mepass/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div></div>
 </article>
 <article class="svc rv" id="svc-pinetwork" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pi</span><div class="svc-id"><h3><span class="cat">क्रिप्टो बेसिक इनकम</span><a href="/hi/services/pinetwork/">Pi Network</a></h3><div class="tags"><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pi</span><div class="svc-id"><div class="svc-line"><span class="cat">क्रिप्टो बेसिक इनकम</span><div class="tags"><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/pinetwork/">Pi Network</a></h3></div></div>
 <p class="gain">हर दिन PI</p>
-<div class="desc"><p id="d-pinetwork">ऐप में हर 24 घंटे में एक बार बटन दबाने पर PI जमा होता है। जितने ज़्यादा लोगों को रेफ़र करेंगे, माइनिंग उतनी तेज़ होगी। फ़रवरी 2025 में आम लोगों के लिए खुला और OKX, Bitget, MEXC आदि पर ट्रेड होता है</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pinetwork" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>इनवाइट लिंक से साइन अप करें (इनवाइट कोड: eltociear)। PI को ट्रांसफ़र करने के लिए पहचान सत्यापन और मेननेट वॉलेट में माइग्रेशन ज़रूरी है</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✓</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution lv-info"><span><b>ध्यान दें:</b> कीमत 2025 के उच्चतम स्तर $2.99 से लगभग 97% गिर चुकी है (अक्टूबर 2026 तक लगभग $0.08)। Binance, Coinbase या जापानी एक्सचेंजों पर उपलब्ध नहीं। रोज़ बटन दबाना पड़ता है, यूँ ही छोड़ देने पर कुछ जमा नहीं होता</span></p>
 
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">ऐप में हर 24 घंटे में एक बार बटन दबाने पर PI जमा होता है। जितने ज़्यादा लोगों को रेफ़र करेंगे, माइनिंग उतनी तेज़ होगी। फ़रवरी 2025 में आम लोगों के लिए खुला और OKX, Bitget, MEXC आदि पर ट्रेड होता है</p>
+<p class="need"><b>कैसे मिलेगा</b><span>इनवाइट लिंक से साइन अप करें (इनवाइट कोड: eltociear)। PI को ट्रांसफ़र करने के लिए पहचान सत्यापन और मेननेट वॉलेट में माइग्रेशन ज़रूरी है</span></p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> कीमत 2025 के उच्चतम स्तर $2.99 से लगभग 97% गिर चुकी है (अक्टूबर 2026 तक लगभग $0.08)। Binance, Coinbase या जापानी एक्सचेंजों पर उपलब्ध नहीं। रोज़ बटन दबाना पड़ता है, यूँ ही छोड़ देने पर कुछ जमा नहीं होता</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<a class="to-page" href="/hi/services/pinetwork/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div></div>
 </article>
 <article class="svc rv" id="svc-kabuand" data-cat="pointsite" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">KA</span><div class="svc-id"><h3><span class="cat">कैशबैक साइट</span><a href="/hi/services/kabuand/">KABU&amp;</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">KA</span><div class="svc-id"><div class="svc-line"><span class="cat">कैशबैक साइट</span><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/kabuand/">KABU&amp;</a></h3></div></div>
 <p class="gain">बिजली, गैस, मोबाइल आदि के भुगतान के हिसाब से शेयर वाउचर (बिना लिस्टिंग वाले शेयरों के आवेदन में इस्तेमाल)</p>
-<div class="desc"><p id="d-kabuand">Kabu &amp; Peace Inc. की सेवा, जिसके प्रमुख Yusaku Maezawa हैं। KABU&amp; की बिजली, गैस, मोबाइल जैसी सेवाओं के भुगतान या KABU&amp; कार्ड से ख़र्च पर “शेयर वाउचर” मिलते हैं, जिन्हें ऑफ़रिंग अवधि में कंपनी के अनलिस्टेड शेयरों में बदल सकते हैं। ये ¥1 के डिस्काउंट वाउचर की तरह भी चलते हैं। रेफ़रल पर दोनों तरफ़ वाउचर</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-kabuand" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>जापान में रहने वाले वयस्क (विदेशी नागरिकों के लिए निवास स्थिति की शर्तें)। सदस्य बनें, फिर कोई सेवा लेकर भुगतान करें। शेयर पाने के लिए ऑफ़रिंग अवधि में आवेदन, eKYC और Daiwa Connect Securities खाता खोलना ज़रूरी है</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region"><span class="vh">क्षेत्र: </span>सिर्फ़ जापान</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-no" title="नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✗</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): नहीं</span></li><li class="t-no" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✗</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): नहीं</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution lv-caution"><span><b>ध्यान दें:</b> शेयर अनलिस्टेड हैं: अभी इन्हें बेचा या नकद नहीं किया जा सकता, और भविष्य का मूल्य अनिश्चित है। वाउचर मूल रूप से सिर्फ़ सेवाओं के भुगतान से मिलते हैं। आधिकारिक रेफ़रल नोट्स कहते हैं कि सोशल मीडिया पर रेफ़रल कोड फैलाने पर इनाम रद्द हो सकता है। फ़ोन, सोशल मीडिया या ईमेल से इसके शेयर बेचने के प्रस्ताव बहुत संभवतः धोखाधड़ी हैं: शेयर सिर्फ़ वाउचर से ही मिलते हैं</span></p>
 <p class="contact-ref">रेफ़रल कोड चाहिए? X पर <a href="https://x.com/FreeLunchLab" target="_blank" rel="noopener" dir="ltr">@FreeLunchLab</a> को DM करें (रेफ़र करने वाले, यानी इस साइट के संचालक, को भी शेयर वाउचर मिलते हैं)।</p>
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">Kabu &amp; Peace Inc. की सेवा, जिसके प्रमुख Yusaku Maezawa हैं। KABU&amp; की बिजली, गैस, मोबाइल जैसी सेवाओं के भुगतान या KABU&amp; कार्ड से ख़र्च पर “शेयर वाउचर” मिलते हैं, जिन्हें ऑफ़रिंग अवधि में कंपनी के अनलिस्टेड शेयरों में बदल सकते हैं। ये ¥1 के डिस्काउंट वाउचर की तरह भी चलते हैं। रेफ़रल पर दोनों तरफ़ वाउचर</p>
+<p class="need"><b>कैसे मिलेगा</b><span>जापान में रहने वाले वयस्क (विदेशी नागरिकों के लिए निवास स्थिति की शर्तें)। सदस्य बनें, फिर कोई सेवा लेकर भुगतान करें। शेयर पाने के लिए ऑफ़रिंग अवधि में आवेदन, eKYC और Daiwa Connect Securities खाता खोलना ज़रूरी है</span></p>
+<p class="caution lv-caution"><span><b>ध्यान दें:</b> शेयर अनलिस्टेड हैं: अभी इन्हें बेचा या नकद नहीं किया जा सकता, और भविष्य का मूल्य अनिश्चित है। वाउचर मूल रूप से सिर्फ़ सेवाओं के भुगतान से मिलते हैं। आधिकारिक रेफ़रल नोट्स कहते हैं कि सोशल मीडिया पर रेफ़रल कोड फैलाने पर इनाम रद्द हो सकता है। फ़ोन, सोशल मीडिया या ईमेल से इसके शेयर बेचने के प्रस्ताव बहुत संभवतः धोखाधड़ी हैं: शेयर सिर्फ़ वाउचर से ही मिलते हैं</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid off" href="https://kabuand.com/" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div>
+<a class="to-page" href="/hi/services/kabuand/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://kabuand.com/" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div></div>
 </article></div></section>
 <section class="vsec"><h2>जिन सेवाओं में यह वैकल्पिक है<span class="dot">2</span></h2><div class="grid"><article class="svc rv" id="svc-meingrundeinkommen" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><div class="svc-line"><span class="cat">पैसिव ऐप</span><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3></div></div>
 <p class="gain">जीतने पर एक साल तक हर महीने €1,000</p>
-<div class="desc"><p id="d-meingrundeinkommen">बर्लिन की एक नॉन-प्रॉफ़िट संस्था की मुफ़्त लॉटरी, जो क्राउडफ़ंडिंग दान से चलती है। ड्रॉ नियमित रूप से होते हैं, और हर विजेता को 12 महीने तक हर महीने €1,000 बिना किसी शर्त के मिलते हैं (असली नकद, क्रिप्टो नहीं)</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-meingrundeinkommen" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>ईमेल से रजिस्टर करें और हर ड्रॉ के लिए अपनी भागीदारी कन्फ़र्म करें। उम्र 16 साल या ज़्यादा होनी चाहिए, और जीतने पर नाम व जन्मतिथि आपकी ID से मेल खानी चाहिए</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-yes" title="नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✓</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution lv-info"><span><b>ध्यान दें:</b> संस्था ने 2020 में कहा था कि उम्र या रहने की जगह से फ़र्क नहीं पड़ता, कोई भी भाग ले सकता है, लेकिन जर्मनी के बाहर रहने वालों के मौजूदा नियम और विदेश में भुगतान की पुष्टि नहीं हुई है। साइट जर्मन भाषा में है। यह लॉटरी है, इसलिए ज़्यादातर लोगों को कुछ नहीं मिलता। जीती हुई रकम पर आपके देश में टैक्स लग सकता है</span></p>
 
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">बर्लिन की एक नॉन-प्रॉफ़िट संस्था की मुफ़्त लॉटरी, जो क्राउडफ़ंडिंग दान से चलती है। ड्रॉ नियमित रूप से होते हैं, और हर विजेता को 12 महीने तक हर महीने €1,000 बिना किसी शर्त के मिलते हैं (असली नकद, क्रिप्टो नहीं)</p>
+<p class="need"><b>कैसे मिलेगा</b><span>ईमेल से रजिस्टर करें और हर ड्रॉ के लिए अपनी भागीदारी कन्फ़र्म करें। उम्र 16 साल या ज़्यादा होनी चाहिए, और जीतने पर नाम व जन्मतिथि आपकी ID से मेल खानी चाहिए</span></p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> संस्था ने 2020 में कहा था कि उम्र या रहने की जगह से फ़र्क नहीं पड़ता, कोई भी भाग ले सकता है, लेकिन जर्मनी के बाहर रहने वालों के मौजूदा नियम और विदेश में भुगतान की पुष्टि नहीं हुई है। साइट जर्मन भाषा में है। यह लॉटरी है, इसलिए ज़्यादातर लोगों को कुछ नहीं मिलता। जीती हुई रकम पर आपके देश में टैक्स लग सकता है</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<a class="to-page" href="/hi/services/meingrundeinkommen/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div></div>
 </article>
 <article class="svc rv" id="svc-ubi4all" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/ubi4all/">UBI4ALL</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><div class="svc-line"><span class="cat">पैसिव ऐप</span><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/ubi4all/">UBI4ALL</a></h3></div></div>
 <p class="gain">जीतने पर कुल €9,600 (जापान में: एक साल तक हर महीने €800)</p>
-<div class="desc"><p id="d-ubi4all">एक जर्मन नॉन-प्रॉफ़िट का मुफ़्त ड्रॉ। हर बार दान से €9,600 जमा होने पर कुल €9,600 की बेसिक इनकम का ड्रॉ होता है, जो बिना शर्त नकद मिलती है। जापान जैसे ऊँची आय वाले देशों को 1 साल तक €800 महीना, कम आय वाले देशों को 5 साल तक €160 महीना। कोई रेफ़रल बोनस नहीं</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-ubi4all" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>आधिकारिक साइट पर मुफ़्त अकाउंट बनाएँ और हर ड्रॉ के लिए रजिस्टर करें (€1 से मासिक दान करने वाले अपने-आप शामिल)। उम्र 16+ होनी चाहिए, और विजेताओं की ID से जाँच होती है। इस साइट ने जापान से साइन-अप अभी आज़माया नहीं है</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-yes" title="नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">✓</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution lv-info"><span><b>ध्यान दें:</b> यह लॉटरी है, इसलिए जीतने की संभावना कम है और भाग लेने वालों की संख्या पर निर्भर है। ड्रॉ तभी होता है जब दान से €9,600 पूरे हो जाते हैं, इसलिए समय तय नहीं है। UBI Beaver न हों तो हर ड्रॉ के लिए रजिस्टर करना पड़ता है। पिछले विजेता के देश के निवासी अगले ड्रॉ में शामिल नहीं हो सकते। भुगतान SEPA बैंक खातों में होता है; दूसरे तरीकों की फ़ीस इनाम से काटी जाती है। इनाम पर टैक्स आपके देश पर निर्भर है</span></p>
 
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">एक जर्मन नॉन-प्रॉफ़िट का मुफ़्त ड्रॉ। हर बार दान से €9,600 जमा होने पर कुल €9,600 की बेसिक इनकम का ड्रॉ होता है, जो बिना शर्त नकद मिलती है। जापान जैसे ऊँची आय वाले देशों को 1 साल तक €800 महीना, कम आय वाले देशों को 5 साल तक €160 महीना। कोई रेफ़रल बोनस नहीं</p>
+<p class="need"><b>कैसे मिलेगा</b><span>आधिकारिक साइट पर मुफ़्त अकाउंट बनाएँ और हर ड्रॉ के लिए रजिस्टर करें (€1 से मासिक दान करने वाले अपने-आप शामिल)। उम्र 16+ होनी चाहिए, और विजेताओं की ID से जाँच होती है। इस साइट ने जापान से साइन-अप अभी आज़माया नहीं है</span></p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> यह लॉटरी है, इसलिए जीतने की संभावना कम है और भाग लेने वालों की संख्या पर निर्भर है। ड्रॉ तभी होता है जब दान से €9,600 पूरे हो जाते हैं, इसलिए समय तय नहीं है। UBI Beaver न हों तो हर ड्रॉ के लिए रजिस्टर करना पड़ता है। पिछले विजेता के देश के निवासी अगले ड्रॉ में शामिल नहीं हो सकते। भुगतान SEPA बैंक खातों में होता है; दूसरे तरीकों की फ़ीस इनाम से काटी जाती है। इनाम पर टैक्स आपके देश पर निर्भर है</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div>
+<a class="to-page" href="/hi/services/ubi4all/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div></div>
 </article></div></section>
 <nav class="vchips vother" aria-label="सभी वेरिफ़िकेशन तरीके"><a href="/hi/verify/world-id/" dir="auto">World ID (Orb)</a><a href="/hi/verify/face/" dir="auto">चेहरा स्कैन / लाइवनेस</a><a href="/hi/verify/web-of-trust/" dir="auto">वेब ऑफ़ ट्रस्ट / इनवाइट</a><a href="/hi/verify/none/" dir="auto">कोई वेरिफ़िकेशन नहीं</a></nav>
 <p class="back"><a class="btn line" href="/hi/#list">← सूची पर वापस जाएँ</a></p>

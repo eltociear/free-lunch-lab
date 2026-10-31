@@ -229,17 +229,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -259,7 +281,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -267,6 +289,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -331,9 +357,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -413,7 +450,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -497,6 +534,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -663,59 +705,74 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">身份验证</p><h1>需要身份证件 KYC 的应用一览</h1><p class="orgs-intro">用护照、驾照等身份证件完成实名认证（KYC），需要把姓名、出生日期等个人信息交给运营方。ME Pass 注册时需要，Pi Network 转移 PI 时需要；Mein Grundeinkommen 只在中奖时核对证件。KABU&amp; 在把股票兑换券换成股票时需要。</p></header>
 <section class="vsec"><h2>需要此验证的服务<span class="dot">3</span></h2><div class="grid"><article class="svc rv" id="svc-mepass" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ME</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/mepass/">ME Pass</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ME</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/mepass/">ME Pass</a></h3></div></div>
 <p class="gain">每天领取 MEC 代币</p>
-<div class="desc"><p id="d-mepass">Meta Earth 的钱包应用。完成验证的用户可获得 1 MEC 作为“无条件基本收入”，每日签到也有少量奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-mepass" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接注册，并在应用中完成 KYC</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 截至 2026 年 10 月，MEC 尚未在任何交易所上市，没有市场价格。只能通过点对点交易变现</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">Meta Earth 的钱包应用。完成验证的用户可获得 1 MEC 作为“无条件基本收入”，每日签到也有少量奖励</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册，并在应用中完成 KYC</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 截至 2026 年 10 月，MEC 尚未在任何交易所上市，没有市场价格。只能通过点对点交易变现</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/mepass/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-pinetwork" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pi</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/pinetwork/">Pi Network</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pi</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/pinetwork/">Pi Network</a></h3></div></div>
 <p class="gain">每天获得 PI</p>
-<div class="desc"><p id="d-pinetwork">每 24 小时在应用中点一次按钮即可累积 PI。邀请的人越多，挖矿速度越快。2025 年 2 月向公众开放，在 OKX、Bitget、MEXC 等交易所交易</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pinetwork" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接注册（邀请码：eltociear）。要转移 PI，需要完成身份验证并迁移到主网钱包</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 价格较 2025 年最高点 $2.99 下跌约 97%（截至 2026 年 10 月约为 $0.08）。Binance、Coinbase 和日本交易所均未上架。需要每天操作，放着不管不会累积</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">每 24 小时在应用中点一次按钮即可累积 PI。邀请的人越多，挖矿速度越快。2025 年 2 月向公众开放，在 OKX、Bitget、MEXC 等交易所交易</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册（邀请码：eltociear）。要转移 PI，需要完成身份验证并迁移到主网钱包</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 价格较 2025 年最高点 $2.99 下跌约 97%（截至 2026 年 10 月约为 $0.08）。Binance、Coinbase 和日本交易所均未上架。需要每天操作，放着不管不会累积</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/pinetwork/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-kabuand" data-cat="pointsite" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">KA</span><div class="svc-id"><h3><span class="cat">返利网站</span><a href="/zh/services/kabuand/">KABU&amp;</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">KA</span><div class="svc-id"><div class="svc-line"><span class="cat">返利网站</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/kabuand/">KABU&amp;</a></h3></div></div>
 <p class="gain">按电费、燃气费、手机费等支付金额获得的股票兑换券（用于申购未上市股票）</p>
-<div class="desc"><p id="d-kabuand">由前泽友作担任社长的 Kabu &amp; Peace 株式会社提供的服务。根据 KABU&amp; 电力、燃气、手机等服务的费用或 KABU&amp; 卡消费额获得“股票兑换券”，在募集期内申请即可换成该公司的未上市股票。也可当作每张 1 日元的折扣券。推荐人和被推荐人双方都能获得兑换券</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-kabuand" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>居住在日本的成年人（外国籍人士须满足在留资格条件）。注册会员，签约服务并付费。兑换股票需在募集期内申请、完成 eKYC，并开设大和 Connect 证券账户</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region"><span class="vh">地区: </span>仅限日本</span><ul class="trust" aria-label="可信度参考"><li class="t-no" title="变现（能否换成现金）：无"><span aria-hidden="true">变现</span><b aria-hidden="true">✗</b><span class="vh">变现（能否换成现金）：无</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 这些股票未上市：目前无法出售或变现，将来的价值不确定。兑换券基本上只有付费使用服务才能获得。官方推荐说明写明，在社交媒体上扩散推荐码可能导致奖励无效。通过电话、社交媒体或邮件推销其股票的很可能是诈骗：这些股票只能用兑换券获得</span></p>
 <p class="contact-ref">想要推荐码的话，请在 X 上私信 <a href="https://x.com/FreeLunchLab" target="_blank" rel="noopener" dir="ltr">@FreeLunchLab</a>（推荐人，即本站运营者，也会获得股票兑换券）。</p>
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">由前泽友作担任社长的 Kabu &amp; Peace 株式会社提供的服务。根据 KABU&amp; 电力、燃气、手机等服务的费用或 KABU&amp; 卡消费额获得“股票兑换券”，在募集期内申请即可换成该公司的未上市股票。也可当作每张 1 日元的折扣券。推荐人和被推荐人双方都能获得兑换券</p>
+<p class="need"><b>获取方式</b><span>居住在日本的成年人（外国籍人士须满足在留资格条件）。注册会员，签约服务并付费。兑换股票需在募集期内申请、完成 eKYC，并开设大和 Connect 证券账户</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 这些股票未上市：目前无法出售或变现，将来的价值不确定。兑换券基本上只有付费使用服务才能获得。官方推荐说明写明，在社交媒体上扩散推荐码可能导致奖励无效。通过电话、社交媒体或邮件推销其股票的很可能是诈骗：这些股票只能用兑换券获得</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://kabuand.com/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/kabuand/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://kabuand.com/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article></div></section>
 <section class="vsec"><h2>可选择使用此验证的服务<span class="dot">2</span></h2><div class="grid"><article class="svc rv" id="svc-meingrundeinkommen" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3></div></div>
 <p class="gain">中奖后每月 1,000 欧元，持续一年</p>
-<div class="desc"><p id="d-meingrundeinkommen">由柏林的非营利协会举办、以众筹捐款为资金的免费抽奖。定期开奖，每位中奖者可无条件连续 12 个月每月领取 1,000 欧元（是现金，不是加密货币）</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-meingrundeinkommen" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>用邮箱注册，并在每次抽奖前确认参加。需年满 16 岁，中奖时姓名和出生日期须与身份证件一致</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 主办方在 2020 年表示，不论年龄和居住地，任何人都可参加，但目前对德国境外居民的规定以及能否向海外付款尚未确认。网站为德语。这是抽奖，大多数参加者什么也拿不到。奖金在你所在的国家可能需要缴税</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">由柏林的非营利协会举办、以众筹捐款为资金的免费抽奖。定期开奖，每位中奖者可无条件连续 12 个月每月领取 1,000 欧元（是现金，不是加密货币）</p>
+<p class="need"><b>获取方式</b><span>用邮箱注册，并在每次抽奖前确认参加。需年满 16 岁，中奖时姓名和出生日期须与身份证件一致</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 主办方在 2020 年表示，不论年龄和居住地，任何人都可参加，但目前对德国境外居民的规定以及能否向海外付款尚未确认。网站为德语。这是抽奖，大多数参加者什么也拿不到。奖金在你所在的国家可能需要缴税</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/meingrundeinkommen/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-ubi4all" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/ubi4all/">UBI4ALL</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/ubi4all/">UBI4ALL</a></h3></div></div>
 <p class="gain">中奖后共得 9,600 欧元（在日本为每月 800 欧元，持续一年）</p>
-<div class="desc"><p id="d-ubi4all">由德国非营利组织举办的免费抽奖。每当捐款凑满 9,600 欧元就抽奖一次，中奖者无条件获得总计 9,600 欧元的现金基本收入。日本等高收入国家为每月 800 欧元、持续 1 年，低收入国家为每月 160 欧元、持续 5 年。没有推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-ubi4all" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>在官网免费注册，并为每次抽奖登记参加（每月捐款 1 欧元起的人自动参加）。需年满 16 岁，中奖后要用身份证件核实身份。本站尚未确认能否从日本注册</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 这是抽奖，中奖概率低，并取决于参加人数。只有捐款凑满 9,600 欧元才会开奖，时间不固定。不是 UBI Beaver 的话，每次抽奖都要登记参加。与上一位中奖者同一国家的居民不能参加下一次抽奖。奖金汇入 SEPA 银行账户，其他方式的手续费会从奖金中扣除。奖金如何纳税取决于你所在的国家</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">由德国非营利组织举办的免费抽奖。每当捐款凑满 9,600 欧元就抽奖一次，中奖者无条件获得总计 9,600 欧元的现金基本收入。日本等高收入国家为每月 800 欧元、持续 1 年，低收入国家为每月 160 欧元、持续 5 年。没有推荐奖励</p>
+<p class="need"><b>获取方式</b><span>在官网免费注册，并为每次抽奖登记参加（每月捐款 1 欧元起的人自动参加）。需年满 16 岁，中奖后要用身份证件核实身份。本站尚未确认能否从日本注册</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 这是抽奖，中奖概率低，并取决于参加人数。只有捐款凑满 9,600 欧元才会开奖，时间不固定。不是 UBI Beaver 的话，每次抽奖都要登记参加。与上一位中奖者同一国家的居民不能参加下一次抽奖。奖金汇入 SEPA 银行账户，其他方式的手续费会从奖金中扣除。奖金如何纳税取决于你所在的国家</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/ubi4all/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article></div></section>
 <nav class="vchips vother" aria-label="全部验证方式"><a href="/zh/verify/world-id/" dir="auto">World ID（Orb 验证）</a><a href="/zh/verify/face/" dir="auto">人脸识别／活体检测</a><a href="/zh/verify/web-of-trust/" dir="auto">信任网／邀请</a><a href="/zh/verify/none/" dir="auto">无需验证</a></nav>
 <p class="back"><a class="btn line" href="/zh/#list">← 返回服务列表</a></p>

@@ -228,17 +228,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -258,7 +280,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -266,6 +288,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -330,9 +356,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -412,7 +449,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -496,6 +533,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -662,191 +704,242 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">本人確認</p><h1>本人確認なしで使えるアプリ・サービス一覧</h1><p class="orgs-intro">メールアドレスの登録やアプリのインストールだけで始められ、特別な本人確認がいらないサービスです。手軽な分、もらえる額は小さめで、回線（帯域）の共有やメールの読み取りなど、別の形でデータや回線を提供するものもあります。条件は各カードの「注意」を確認してください。RewardMe の World ID は、ギフト券をすぐ受け取りたいときの任意の認証です。</p></header>
 <section class="vsec"><h2>この認証が必要なサービス<span class="dot">17</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ハ</span><div class="svc-id"><h3><span class="cat">ポイントサイト</span><a href="/ja/services/hapitas/">ハピタス</a></h3><div class="tags"><span class="type once">1回</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ハ</span><div class="svc-id"><div class="svc-line"><span class="cat">ポイントサイト</span><div class="tags"><span class="type once">1回</span></div></div><h3><a href="/ja/services/hapitas/">ハピタス</a></h3></div></div>
 <p class="gain">最大2,300ポイント</p>
-<div class="desc"><p id="d-hapitas">2026年10月の内容（1ポイント＝1円）。3日連続ログインで100ポイント、広告利用で合計3,000ポイントたまると1,000ポイントなど</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-hapitas" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>10月31日までに紹介経由で登録し、11月30日までに条件を達成</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region"><span class="vh">地域: </span>日本在住者向け</span><ul class="trust" aria-label="信頼の目安"><li class="t-yes" title="換金（現金にできるか）：あり"><span aria-hidden="true">換金</span><b aria-hidden="true">✓</b><span class="vh">換金（現金にできるか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">2026年10月の内容（1ポイント＝1円）。3日連続ログインで100ポイント、広告利用で合計3,000ポイントたまると1,000ポイントなど</p>
+<p class="need"><b>条件</b><span>10月31日までに紹介経由で登録し、11月30日までに条件を達成</span></p>
 
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/hapitas/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-wavee" data-cat="career" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><h3><span class="cat">仕事マッチング</span><a href="/ja/services/wavee/">WAVEE</a></h3><div class="tags"><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><div class="svc-line"><span class="cat">仕事マッチング</span><div class="tags"><span class="type loop">継続</span></div></div><h3><a href="/ja/services/wavee/">WAVEE</a></h3></div></div>
 <p class="gain">仕事が決まるたびにマッチング報酬</p>
-<div class="desc"><p id="d-wavee">完全招待制の仕事マッチング。自分が招待した人や、その先の人が仕事に決まるたび、招待報酬が何度でも入る（分配率7.5〜15%）。DMMやGMOペパボなどが求人を掲載</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wavee" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>招待リンクから登録</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> お金が入るのは仕事が決まったとき。報酬率は2024年6月の公式noteの内容</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">完全招待制の仕事マッチング。自分が招待した人や、その先の人が仕事に決まるたび、招待報酬が何度でも入る（分配率7.5〜15%）。DMMやGMOペパボなどが求人を掲載</p>
+<p class="need"><b>条件</b><span>招待リンクから登録</span></p>
+<p class="caution lv-info"><span><b>注意：</b> お金が入るのは仕事が決まったとき。報酬率は2024年6月の公式noteの内容</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/wavee/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-trima" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ト</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/trima/">トリマ</a></h3><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ト</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/trima/">トリマ</a></h3></div></div>
 <p class="gain">5,000マイル ＋ 移動や歩数でマイル</p>
-<div class="desc"><p id="d-trima">スマホを持って移動したり歩いたりするだけでマイルがたまるアプリ。招待コードを入れると、紹介した側・された側の両方に5,000マイル（2026年7月時点の情報）。マイルはギフト券や現金などに交換できる</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-trima" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>アプリを入れて、登録時に招待コード 49‑icnRep を入力する</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region"><span class="vh">地域: </span>日本在住者向け</span><ul class="trust" aria-label="信頼の目安"><li class="t-yes" title="換金（現金にできるか）：あり"><span aria-hidden="true">換金</span><b aria-hidden="true">✓</b><span class="vh">換金（現金にできるか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 特典の額やタイミングは変わることがある。位置情報の常時許可が必要で、電池を少し多く使う</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">スマホを持って移動したり歩いたりするだけでマイルがたまるアプリ。招待コードを入れると、紹介した側・された側の両方に5,000マイル（2026年7月時点の情報）。マイルはギフト券や現金などに交換できる</p>
+<p class="need"><b>条件</b><span>アプリを入れて、登録時に招待コード 49‑icnRep を入力する</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 特典の額やタイミングは変わることがある。位置情報の常時許可が必要で、電池を少し多く使う</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">コピー</button><a class="btn solid ref" href="https://www.trip-mile.com/" target="_blank" rel="noopener">アプリを入れてコードを入力</a></div>
+<a class="to-page" href="/ja/services/trima/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">コピー</button><a class="btn solid ref" href="https://www.trip-mile.com/" target="_blank" rel="noopener">アプリを入れてコードを入力</a></div></div>
 </article>
 <article class="svc rv" id="svc-sweatcoin" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Sw</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/sweatcoin/">Sweatcoin</a></h3><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Sw</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/sweatcoin/">Sweatcoin</a></h3></div></div>
 <p class="gain">1,000歩で0.95コイン</p>
-<div class="desc"><p id="d-sweatcoin">スマホを持って歩くだけで、歩数が自動でコインになる。コインはアプリ内のマーケットで商品や割引、寄付と交換できる</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-sweatcoin" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>アプリを入れて、歩数と位置情報へのアクセスを許可する</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 現金への換金レートは決まっていない。無料プランは1日に換算できる歩数に上限がある</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">スマホを持って歩くだけで、歩数が自動でコインになる。コインはアプリ内のマーケットで商品や割引、寄付と交換できる</p>
+<p class="need"><b>条件</b><span>アプリを入れて、歩数と位置情報へのアクセスを許可する</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 現金への換金レートは決まっていない。無料プランは1日に換算できる歩数に上限がある</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/sweatcoin/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-grass" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/grass/">Grass</a></h3><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/grass/">Grass</a></h3></div></div>
 <p class="gain">ポイント（のちにGRASSトークン）</p>
-<div class="desc"><p id="d-grass">使っていない回線の帯域をAIのWebデータ収集に貸し出すDePIN。PCのブラウザ拡張やアプリを入れておくだけで、接続時間と実際に使われた帯域に応じてポイントがたまり、シーズンごとのエアドロップで配られる</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-grass" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>メールで登録し、ブラウザ拡張またはアプリを入れて接続したままにする</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 自分のIPアドレスを他社のデータ収集に使わせるしくみ。報酬はエアドロップ次第で、額も時期も読めない</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">使っていない回線の帯域をAIのWebデータ収集に貸し出すDePIN。PCのブラウザ拡張やアプリを入れておくだけで、接続時間と実際に使われた帯域に応じてポイントがたまり、シーズンごとのエアドロップで配られる</p>
+<p class="need"><b>条件</b><span>メールで登録し、ブラウザ拡張またはアプリを入れて接続したままにする</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 自分のIPアドレスを他社のデータ収集に使わせるしくみ。報酬はエアドロップ次第で、額も時期も読めない</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/grass/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-honeygain" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Hg</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/honeygain/">Honeygain</a></h3><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Hg</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="max">ほったらかし度MAX</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/honeygain/">Honeygain</a></h3></div></div>
 <p class="gain">共有した通信量に応じて現金</p>
-<div class="desc"><p id="d-honeygain">使っていない回線を企業のWebデータ収集に貸し出す、通信量シェアの定番アプリ。紹介経由の登録で$3のウェルカムボーナス（公式ブログより）。$20たまるとPayPalなどで出金できる</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-honeygain" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>メールで登録し、PCやスマホにアプリを入れて動かしたままにする</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-yes" title="換金（現金にできるか）：あり"><span aria-hidden="true">換金</span><b aria-hidden="true">✓</b><span class="vh">換金（現金にできるか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 自分のIPアドレスを他社のデータ収集に使わせるしくみ。稼げる額は地域の需要次第で、地域によってはかなり少ない</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">使っていない回線を企業のWebデータ収集に貸し出す、通信量シェアの定番アプリ。紹介経由の登録で$3のウェルカムボーナス（公式ブログより）。$20たまるとPayPalなどで出金できる</p>
+<p class="need"><b>条件</b><span>メールで登録し、PCやスマホにアプリを入れて動かしたままにする</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 自分のIPアドレスを他社のデータ収集に使わせるしくみ。稼げる額は地域の需要次第で、地域によってはかなり少ない</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/honeygain/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-pawns" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/pawns/">Pawns.app</a></h3><div class="tags"><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="type loop">継続</span></div></div><h3><a href="/ja/services/pawns/">Pawns.app</a></h3></div></div>
 <p class="gain">共有した通信量に応じて現金</p>
-<div class="desc"><p id="d-pawns">IPRoyal社の通信量シェアアプリ。PCアプリを入れておくと回線の空きが報酬になる。アンケートやゲームでも稼げる。$5からPayPal・ビットコインなどで出金できる</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pawns" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>メールで登録し、PCにアプリを入れて動かしたままにする</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-yes" title="換金（現金にできるか）：あり"><span aria-hidden="true">換金</span><b aria-hidden="true">✓</b><span class="vh">換金（現金にできるか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> スマホでの通信量シェアは2026年4月に終了し、ほったらかしで稼げるのはPCだけ。自分のIPアドレスを他社のデータ収集に使わせるしくみで、額も少なめ</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">IPRoyal社の通信量シェアアプリ。PCアプリを入れておくと回線の空きが報酬になる。アンケートやゲームでも稼げる。$5からPayPal・ビットコインなどで出金できる</p>
+<p class="need"><b>条件</b><span>メールで登録し、PCにアプリを入れて動かしたままにする</span></p>
+<p class="caution lv-info"><span><b>注意：</b> スマホでの通信量シェアは2026年4月に終了し、ほったらかしで稼げるのはPCだけ。自分のIPアドレスを他社のデータ収集に使わせるしくみで、額も少なめ</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/pawns/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">DK</span><div class="svc-id"><h3><span class="cat">暗号資産ベーシックインカム</span><a href="/ja/services/deltakim/">Delta Kim</a></h3><div class="tags"><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">DK</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="type loop">継続</span></div></div><h3><a href="/ja/services/deltakim/">Delta Kim</a></h3></div></div>
 <p class="gain">KIMを毎日</p>
-<div class="desc"><p id="d-deltakim">Pi Networkに似た、スマホで毎日“採掘”する暗号資産アプリ。紹介コードを使って登録すると採掘ペースが上がるとされる</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-deltakim" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>招待リンクから登録し、アプリで毎日採掘ボタンを押す</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-unknown" title="換金（現金にできるか）：未確認"><span aria-hidden="true">換金</span><b aria-hidden="true">?</b><span class="vh">換金（現金にできるか）：未確認</span></li><li class="t-no" title="市場価格（トークンに値段がついているか）：なし"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✗</b><span class="vh">市場価格（トークンに値段がついているか）：なし</span></li><li class="t-unknown" title="運営元公開（運営元が公開されているか）：未確認"><span aria-hidden="true">運営元</span><b aria-hidden="true">?</b><span class="vh">運営元公開（運営元が公開されているか）：未確認</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 2026年10月時点で取引所への上場や市場価格は確認できず、換金できるかは不明。採掘しても残高が増えなくなったという声もある。毎日の操作が必要</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">Pi Networkに似た、スマホで毎日“採掘”する暗号資産アプリ。紹介コードを使って登録すると採掘ペースが上がるとされる</p>
+<p class="need"><b>条件</b><span>招待リンクから登録し、アプリで毎日採掘ボタンを押す</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 2026年10月時点で取引所への上場や市場価格は確認できず、換金できるかは不明。採掘しても残高が増えなくなったという声もある。毎日の操作が必要</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/deltakim/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-meingrundeinkommen" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3></div></div>
 <p class="gain">当選すると月1,000ユーロを1年間</p>
-<div class="desc"><p id="d-meingrundeinkommen">ベルリンの非営利団体が、クラウドファンディングの寄付を元手に開く無料の抽選。定期的に抽選があり、当たった人は月1,000ユーロを12か月、条件なしで受け取れる（暗号資産ではなく現金）</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-meingrundeinkommen" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>メールアドレスで登録し、抽選ごとに参加を確認する。16歳以上で、当選時は名前と生年月日が身分証と一致している必要がある</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-yes" title="換金（現金にできるか）：あり"><span aria-hidden="true">換金</span><b aria-hidden="true">✓</b><span class="vh">換金（現金にできるか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 2020年に運営は「年齢や居住地に関係なく誰でも参加できる」と説明しているが、ドイツ国外在住者の現在の条件や海外への送金は確認できていない。サイトはドイツ語。抽選なので、ほとんどの人は何も受け取れない。当選金は住んでいる国で税金がかかることがある</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">ベルリンの非営利団体が、クラウドファンディングの寄付を元手に開く無料の抽選。定期的に抽選があり、当たった人は月1,000ユーロを12か月、条件なしで受け取れる（暗号資産ではなく現金）</p>
+<p class="need"><b>条件</b><span>メールアドレスで登録し、抽選ごとに参加を確認する。16歳以上で、当選時は名前と生年月日が身分証と一致している必要がある</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 2020年に運営は「年齢や居住地に関係なく誰でも参加できる」と説明しているが、ドイツ国外在住者の現在の条件や海外への送金は確認できていない。サイトはドイツ語。抽選なので、ほとんどの人は何も受け取れない。当選金は住んでいる国で税金がかかることがある</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/meingrundeinkommen/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-ubi4all" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/ubi4all/">UBI4ALL</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/ubi4all/">UBI4ALL</a></h3></div></div>
 <p class="gain">当選すると総額9,600ユーロ（日本なら月800ユーロ×1年）</p>
-<div class="desc"><p id="d-ubi4all">ドイツの非営利団体が開く無料の抽選。寄付で9,600ユーロ集まるたびに抽選し、当選者は総額9,600ユーロのベーシックインカムを条件なしに現金で受け取る。日本など高所得国は月800ユーロを1年、低所得国は月160ユーロを5年。紹介特典はない</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-ubi4all" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>公式サイトで無料登録し、抽選ごとに参加を登録する（月1ユーロからの定期寄付者は自動で参加）。16歳以上で、当選したら身分証で本人確認。日本からの登録は当サイトではまだ確かめていない</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-yes" title="換金（現金にできるか）：あり"><span aria-hidden="true">換金</span><b aria-hidden="true">✓</b><span class="vh">換金（現金にできるか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 抽選なので当たる確率は低く、参加者の数で変わる。抽選は寄付で9,600ユーロが集まったときだけ行われるので、時期は不定期。UBI Beaverでなければ抽選ごとに参加登録が必要。前回の当選者と同じ国の人は次の抽選に参加できない。振込はSEPA口座が基本で、ほかの方法だと手数料が賞金から引かれる。当選金の税金の扱いは住んでいる国による</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">ドイツの非営利団体が開く無料の抽選。寄付で9,600ユーロ集まるたびに抽選し、当選者は総額9,600ユーロのベーシックインカムを条件なしに現金で受け取る。日本など高所得国は月800ユーロを1年、低所得国は月160ユーロを5年。紹介特典はない</p>
+<p class="need"><b>条件</b><span>公式サイトで無料登録し、抽選ごとに参加を登録する（月1ユーロからの定期寄付者は自動で参加）。16歳以上で、当選したら身分証で本人確認。日本からの登録は当サイトではまだ確かめていない</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 抽選なので当たる確率は低く、参加者の数で変わる。抽選は寄付で9,600ユーロが集まったときだけ行われるので、時期は不定期。UBI Beaverでなければ抽選ごとに参加登録が必要。前回の当選者と同じ国の人は次の抽選に参加できない。振込はSEPA口座が基本で、ほかの方法だと手数料が賞金から引かれる。当選金の税金の扱いは住んでいる国による</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">公式サイトを見る</a></div>
+<a class="to-page" href="/ja/services/ubi4all/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">公式サイトを見る</a></div></div>
 </article>
 <article class="svc rv" id="svc-gradido" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/gradido/">Gradido</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/gradido/">Gradido</a></h3></div></div>
 <p class="gain">公益への貢献1時間につき20 GDD（月最大1,000 GDD）</p>
-<div class="desc"><p id="d-gradido">「自然の経済」をうたう独自通貨のしくみ。公益になる活動をすると「アクティブ・ベーシックインカム」として1時間20 GDD、月1,000 GDDまで受け取れる。使わないお金は年50%の割合で目減りする。運営はオーストリアの Gradido Akademie</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-gradido" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>紹介リンクから無料で Gradido アカウントを作り、公益への貢献を申告して GDD を受け取る（日本からの利用は2026年10月に実際に確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-unknown" title="換金（現金にできるか）：未確認"><span aria-hidden="true">換金</span><b aria-hidden="true">?</b><span class="vh">換金（現金にできるか）：未確認</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 公式FAQでは今は「感謝のポイント報酬システム」で、暗号資産ではないとしている。GDDをユーロなどに換金する方法は公式に書かれていない。紹介した人がのちに寄付などをすると、紹介した側に GDT が付く（登録だけでは付かない）</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">「自然の経済」をうたう独自通貨のしくみ。公益になる活動をすると「アクティブ・ベーシックインカム」として1時間20 GDD、月1,000 GDDまで受け取れる。使わないお金は年50%の割合で目減りする。運営はオーストリアの Gradido Akademie</p>
+<p class="need"><b>条件</b><span>紹介リンクから無料で Gradido アカウントを作り、公益への貢献を申告して GDD を受け取る（日本からの利用は2026年10月に実際に確認）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 公式FAQでは今は「感謝のポイント報酬システム」で、暗号資産ではないとしている。GDDをユーロなどに換金する方法は公式に書かれていない。紹介した人がのちに寄付などをすると、紹介した側に GDT が付く（登録だけでは付かない）</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/gradido/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-wowapp" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">WA</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/wowapp/">WowApp</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">WA</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/wowapp/">WowApp</a></h3></div></div>
 <p class="gain">毎日の利用やゲーム・買い物などで少額の報酬</p>
-<div class="desc"><p id="d-wowapp">チャット・通話アプリに報酬のしくみを組み合わせたサービス。毎日の「UBI」、ゲーム、買い物のキャッシュバックなどで報酬がたまり、出金するか慈善団体に寄付できる。招待した友だちなど自分のネットワークが活動すると、自分の報酬も増える</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wowapp" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>紹介リンクから無料で登録し、アプリを毎日使う（日本からの利用は2026年10月に実際に確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-partial" title="運営元公開（運営元が公開されているか）：条件つき"><span aria-hidden="true">運営元</span><b aria-hidden="true">△</b><span class="vh">運営元公開（運営元が公開されているか）：条件つき</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 報酬は招待した人の先の人たちの活動にも応じて入る多段階（マルチレベル）型。1日の額はごくわずかで、まとまった収入にはならない。PayPal への出金には最低額などの条件があるとされる。App Store の評価は日本で3.2で、出金できないという声もある</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">チャット・通話アプリに報酬のしくみを組み合わせたサービス。毎日の「UBI」、ゲーム、買い物のキャッシュバックなどで報酬がたまり、出金するか慈善団体に寄付できる。招待した友だちなど自分のネットワークが活動すると、自分の報酬も増える</p>
+<p class="need"><b>条件</b><span>紹介リンクから無料で登録し、アプリを毎日使う（日本からの利用は2026年10月に実際に確認）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 報酬は招待した人の先の人たちの活動にも応じて入る多段階（マルチレベル）型。1日の額はごくわずかで、まとまった収入にはならない。PayPal への出金には最低額などの条件があるとされる。App Store の評価は日本で3.2で、出金できないという声もある</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/wowapp/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-rewardme" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/rewardme/">RewardMe</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/rewardme/">RewardMe</a></h3></div></div>
 <p class="gain">受信メールのレシートから最大5%のキャッシュバック（Reward Dollars／暗号資産MDT）</p>
-<div class="desc"><p id="d-rewardme">メールを連携すると、Amazon・Uber など対象店での買い物をレシートメールから自動で見つけ、最大5%の報酬がたまる。報酬はギフト券か暗号資産 MDT にして出金できる。紹介コードで登録すると、紹介した側・された側の両方に特典がある。提供元は香港の Magic Crystal Limited</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-rewardme" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>紹介リンクから登録し、登録時に紹介コード 7HOdyg を入力する。メールアカウントを連携して、対象のお店で買い物する（日本からの利用は2026年10月に実際に確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-partial" title="運営元公開（運営元が公開されているか）：条件つき"><span aria-hidden="true">運営元</span><b aria-hidden="true">△</b><span class="vh">運営元公開（運営元が公開されているか）：条件つき</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 連携したメールのうち商用メールの中身が読み取られ、個人を特定できない形にしたデータが企業に販売・共有されるとプライバシーポリシーにある。ギフト券の交換は承認に7〜14営業日。6か月使わないと残高が消えることがある。特典の額は公式に書かれていない</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">メールを連携すると、Amazon・Uber など対象店での買い物をレシートメールから自動で見つけ、最大5%の報酬がたまる。報酬はギフト券か暗号資産 MDT にして出金できる。紹介コードで登録すると、紹介した側・された側の両方に特典がある。提供元は香港の Magic Crystal Limited</p>
+<p class="need"><b>条件</b><span>紹介リンクから登録し、登録時に紹介コード 7HOdyg を入力する。メールアカウントを連携して、対象のお店で買い物する（日本からの利用は2026年10月に実際に確認）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 連携したメールのうち商用メールの中身が読み取られ、個人を特定できない形にしたデータが企業に販売・共有されるとプライバシーポリシーにある。ギフト券の交換は承認に7〜14営業日。6か月使わないと残高が消えることがある。特典の額は公式に書かれていない</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">コピー</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/rewardme/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">コピー</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-jrkripto" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3></div></div>
 <p class="gain">毎日JRポイント（登録で50JR）</p>
-<div class="desc"><p id="d-jrkripto">トルコの暗号資産ニュース・分析・価格チャートのサイト「JrKripto」のスマホアプリ。創業者は株式情報サイト「JrHisse」も運営している。アプリで1日1回タップすると、そこから24時間かけてJRポイントがたまる。招待コード付きで登録してメールアドレスを認証すると、50JRのボーナスがもらえる</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-jrkripto" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>招待リンクから登録し、メールアドレスを認証する（身分証は不要）。あとはアプリで毎日1回タップする（日本からの利用は2026年10月に実際に確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-no" title="換金（現金にできるか）：なし"><span aria-hidden="true">換金</span><b aria-hidden="true">✗</b><span class="vh">換金（現金にできるか）：なし</span></li><li class="t-partial" title="運営元公開（運営元が公開されているか）：条件つき"><span aria-hidden="true">運営元</span><b aria-hidden="true">△</b><span class="vh">運営元公開（運営元が公開されているか）：条件つき</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 招待ページ自体に「JRはアプリ内ポイントで、売ることも送ることもできない」と書かれている。2026年10月時点で換金の手段はなく、価値は将来の使い道しだい。毎日タップしないとたまらない。Google Playのパッケージ名が「com.yourcompany.jrkripto」と、ひな形のままのような名前になっている</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">トルコの暗号資産ニュース・分析・価格チャートのサイト「JrKripto」のスマホアプリ。創業者は株式情報サイト「JrHisse」も運営している。アプリで1日1回タップすると、そこから24時間かけてJRポイントがたまる。招待コード付きで登録してメールアドレスを認証すると、50JRのボーナスがもらえる</p>
+<p class="need"><b>条件</b><span>招待リンクから登録し、メールアドレスを認証する（身分証は不要）。あとはアプリで毎日1回タップする（日本からの利用は2026年10月に実際に確認）</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 招待ページ自体に「JRはアプリ内ポイントで、売ることも送ることもできない」と書かれている。2026年10月時点で換金の手段はなく、価値は将来の使い道しだい。毎日タップしないとたまらない。Google Playのパッケージ名が「com.yourcompany.jrkripto」と、ひな形のままのような名前になっている</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/jrkripto/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3><div class="tags"><span class="risk">要注意</span><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="risk">要注意</span><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3></div></div>
 <p class="gain">$OREのマイニング残高（無料で24時間ずつ）</p>
-<div class="desc"><p id="d-miningmachine">ブラウザ上の「マイニングマシン」で$OREの残高をためるサイト。登録は無料で、入金やインストールは不要。無料のマシンが24時間ずつ動く。お金を払うとマシンを足せる。招待した人には、招待された人の採掘量の10%と、支払い額の10%が入る</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>紹介リンクから無料で登録する（メールアドレスかXでログイン、身分証は不要）。あとは24時間ごとにマイニングを開始する（日本から登録できることは2026年10月に確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-no" title="換金（現金にできるか）：なし"><span aria-hidden="true">換金</span><b aria-hidden="true">✗</b><span class="vh">換金（現金にできるか）：なし</span></li><li class="t-no" title="市場価格（トークンに値段がついているか）：なし"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✗</b><span class="vh">市場価格（トークンに値段がついているか）：なし</span></li><li class="t-unknown" title="運営元公開（運営元が公開されているか）：未確認"><span aria-hidden="true">運営元</span><b aria-hidden="true">?</b><span class="vh">運営元公開（運営元が公開されているか）：未確認</span></li></ul></div>
-<p class="caution lv-danger"><span><b>注意：</b> $OREはまだトークンではなく、サイト自身が「残高はトークンの約束ではない」と書いている。運営者の名前・所在地やホワイトペーパーはない。カウントダウンで登録を急がせる表示がある。マイニングは24時間ごとに自分で再開する必要がある</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">ブラウザ上の「マイニングマシン」で$OREの残高をためるサイト。登録は無料で、入金やインストールは不要。無料のマシンが24時間ずつ動く。お金を払うとマシンを足せる。招待した人には、招待された人の採掘量の10%と、支払い額の10%が入る</p>
+<p class="need"><b>条件</b><span>紹介リンクから無料で登録する（メールアドレスかXでログイン、身分証は不要）。あとは24時間ごとにマイニングを開始する（日本から登録できることは2026年10月に確認）</span></p>
+<p class="caution lv-danger"><span><b>注意：</b> $OREはまだトークンではなく、サイト自身が「残高はトークンの約束ではない」と書いている。運営者の名前・所在地やホワイトペーパーはない。カウントダウンで登録を急がせる表示がある。マイニングは24時間ごとに自分で再開する必要がある</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn warn-go" href="/ja/services/miningmachine/#warn">注意点を読んでから登録</a></div>
+<a class="to-page" href="/ja/services/miningmachine/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn warn-go" href="/ja/services/miningmachine/#warn">注意点を読んでから登録</a></div></div>
 </article>
 <article class="svc rv" id="svc-lifeai" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">LA</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/lifeai/">Life AI Testnet</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">LA</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/lifeai/">Life AI Testnet</a></h3></div></div>
 <p class="gain">テストネットのポイント（抽選でUSDT、上位者にトークン・NFTの報酬）</p>
-<div class="desc"><p id="d-lifeai">ヘルスケアAIのプロジェクト「Life AI」のテストネット。1日1問のYes/Noクイズに答えて回答をXに投稿するとポイントがたまり、毎日続けると増える。公式サイトには抽選のUSDTやランキング報酬などが書かれている。運営はシンガポールの非営利団体 LIFE AI Foundation</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-lifeai" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>紹介リンクからXアカウントなどでログインし、報酬を受け取るEVMウォレットのアドレスを登録する（身分証は不要）。あとは毎日クイズに答えて投稿する（2026年10月に日本から登録できることを確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-no" title="市場価格（トークンに値段がついているか）：なし"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✗</b><span class="vh">市場価格（トークンに値段がついているか）：なし</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> ポイントはお金ではなく、受け取れる保証はない。公式に取引できるLIFEトークンはなく、トークンやエアドロップの約束もない。シードフレーズは誰にも教えず、資産の入ったウォレットは接続しないこと。支払いを求められたら詐欺を疑う。招待した側（当サイト運営者を含む）には、あなたの活動に応じてポイントが入る</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">ヘルスケアAIのプロジェクト「Life AI」のテストネット。1日1問のYes/Noクイズに答えて回答をXに投稿するとポイントがたまり、毎日続けると増える。公式サイトには抽選のUSDTやランキング報酬などが書かれている。運営はシンガポールの非営利団体 LIFE AI Foundation</p>
+<p class="need"><b>条件</b><span>紹介リンクからXアカウントなどでログインし、報酬を受け取るEVMウォレットのアドレスを登録する（身分証は不要）。あとは毎日クイズに答えて投稿する（2026年10月に日本から登録できることを確認）</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> ポイントはお金ではなく、受け取れる保証はない。公式に取引できるLIFEトークンはなく、トークンやエアドロップの約束もない。シードフレーズは誰にも教えず、資産の入ったウォレットは接続しないこと。支払いを求められたら詐欺を疑う。招待した側（当サイト運営者を含む）には、あなたの活動に応じてポイントが入る</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/lifeai/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-refrax" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">ほったらかしアプリ</span><a href="/ja/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3><div class="tags"><span class="risk">要注意</span><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><div class="svc-line"><span class="cat">ほったらかしアプリ</span><div class="tags"><span class="risk">要注意</span><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3></div></div>
 <p class="gain">$REFRAXの未確定ポイント（トークンは未発行）</p>
-<div class="desc"><p id="d-refrax">Solana上の分散型ストレージを掲げる「Refrax」のシーズン0クエスト。Xでログインし、フォローや投稿、友だちの招待、毎日のチェックインでポイントがたまる。ポイントはローンチ時に、登録したSolanaウォレットへ$REFRAXとして支払われる予定とされる</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-refrax" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>紹介リンクを開き、Xアカウントでログインする（新しいXアカウントは不可）。受け取り用のSolanaアドレスを登録し、クエストとチェックインをこなす（2026年10月に日本から登録できることを確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-no" title="換金（現金にできるか）：なし"><span aria-hidden="true">換金</span><b aria-hidden="true">✗</b><span class="vh">換金（現金にできるか）：なし</span></li><li class="t-no" title="市場価格（トークンに値段がついているか）：なし"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✗</b><span class="vh">市場価格（トークンに値段がついているか）：なし</span></li><li class="t-unknown" title="運営元公開（運営元が公開されているか）：未確認"><span aria-hidden="true">運営元</span><b aria-hidden="true">?</b><span class="vh">運営元公開（運営元が公開されているか）：未確認</span></li></ul></div>
-<p class="caution lv-danger"><span><b>注意：</b> ポイントはお金でもトークンでもなく、受け取れる保証はない。登録するのは受け取り用のアドレスだけにし、シードフレーズは誰にも教えないこと。ローンチ前後は偽の請求サイトが出やすいので、公式Xとrefrax.xyz以外のリンクは使わない。招待した側（当サイト運営者を含む）には、あなたがクエストを終えるとポイントが入る</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">Solana上の分散型ストレージを掲げる「Refrax」のシーズン0クエスト。Xでログインし、フォローや投稿、友だちの招待、毎日のチェックインでポイントがたまる。ポイントはローンチ時に、登録したSolanaウォレットへ$REFRAXとして支払われる予定とされる</p>
+<p class="need"><b>条件</b><span>紹介リンクを開き、Xアカウントでログインする（新しいXアカウントは不可）。受け取り用のSolanaアドレスを登録し、クエストとチェックインをこなす（2026年10月に日本から登録できることを確認）</span></p>
+<p class="caution lv-danger"><span><b>注意：</b> ポイントはお金でもトークンでもなく、受け取れる保証はない。登録するのは受け取り用のアドレスだけにし、シードフレーズは誰にも教えないこと。ローンチ前後は偽の請求サイトが出やすいので、公式Xとrefrax.xyz以外のリンクは使わない。招待した側（当サイト運営者を含む）には、あなたがクエストを終えるとポイントが入る</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn warn-go" href="/ja/services/refrax/#warn">注意点を読んでから登録</a></div>
+<a class="to-page" href="/ja/services/refrax/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn warn-go" href="/ja/services/refrax/#warn">注意点を読んでから登録</a></div></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="認証方法の一覧"><a href="/ja/verify/world-id/" dir="auto">World ID（Orb認証）</a><a href="/ja/verify/face/" dir="auto">顔認証・ライブネス</a><a href="/ja/verify/kyc-id/" dir="auto">身分証のKYC</a><a href="/ja/verify/web-of-trust/" dir="auto">信頼の網・招待</a></nav>

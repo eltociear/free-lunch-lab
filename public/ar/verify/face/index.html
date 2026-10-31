@@ -227,17 +227,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -257,7 +279,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -265,6 +287,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -329,9 +355,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -411,7 +448,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -495,6 +532,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -661,48 +703,60 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">التحقق</p><h1>تطبيقات تتحقق منك بمسح الوجه</h1><p class="orgs-intro">تقرأ كاميرا الهاتف وجهك لتتأكد أنك شخص حقيقي. الأمر سهل، لكنك تسلّم شيئًا لا يمكنك تغييره، فتحقق من طريقة تعامل كل خدمة مع البيانات. تأكدنا في أكتوبر 2026 أن ⁦Billions⁩ و⁦FheID⁩ يعملان من اليابان.</p></header>
 <section class="vsec"><h2>خدمات تتطلبه<span class="dot">4</span></h2><div class="grid"><article class="svc rv" id="svc-gooddollar" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">GD</span><div class="svc-id"><h3><span class="cat">دخل أساسي مشفّر</span><a href="/ar/services/gooddollar/">GoodDollar</a></h3><div class="tags"><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">GD</span><div class="svc-id"><div class="svc-line"><span class="cat">دخل أساسي مشفّر</span><div class="tags"><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/gooddollar/">GoodDollar</a></h3></div></div>
 <p class="gain">رموز ⁦G$⁩ كل يوم</p>
-<div class="desc"><p id="d-gooddollar">بروتوكول دخل أساسي غير ربحي. اطلبها مرة كل 24 ساعة، ويُقسَّم رصيد كل يوم على جميع من يطلبونها</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-gooddollar" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>التحقق من الوجه داخل التطبيق</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="سعر السوق (هل للرمز سعر متداول): نعم"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✓</b><span class="vh">سعر السوق (هل للرمز سعر متداول): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> وقعت حادثة أمنية في مايو 2026 وُضع بعدها الاحتياطي قيد المراجعة. المبلغ اليومي صغير جدًا</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">بروتوكول دخل أساسي غير ربحي. اطلبها مرة كل 24 ساعة، ويُقسَّم رصيد كل يوم على جميع من يطلبونها</p>
+<p class="need"><b>طريقة الحصول</b><span>التحقق من الوجه داخل التطبيق</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> وقعت حادثة أمنية في مايو 2026 وُضع بعدها الاحتياطي قيد المراجعة. المبلغ اليومي صغير جدًا</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/gooddollar/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-interlink" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">IL</span><div class="svc-id"><h3><span class="cat">دخل أساسي مشفّر</span><a href="/ar/services/interlink/">InterLink</a></h3><div class="tags"><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">IL</span><div class="svc-id"><div class="svc-line"><span class="cat">دخل أساسي مشفّر</span><div class="tags"><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/interlink/">InterLink</a></h3></div></div>
 <p class="gain">رموز ITLG كل يوم</p>
-<div class="desc"><p id="d-interlink">مشروع يوزّع رموز ITLG على من تحقّقوا من أنهم بشر حقيقيون عبر التحقق بالوجه (⁦Human Node⁩). سجّل حضورك في التطبيق كل 4 ساعات تقريبًا (حتى 6 مرات يوميًا) لتجميعها</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-interlink" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الدعوة وأكمل التحقق بالوجه في التطبيق</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-unknown" title="صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">?</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد</span></li><li class="t-unknown" title="سعر السوق (هل للرمز سعر متداول): غير مؤكد"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">?</b><span class="vh">سعر السوق (هل للرمز سعر متداول): غير مؤكد</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> حتى مايو 2026 لم تُدرج ITLG في أي منصة تداول وليس لها سعر سوقي. يتطلب تسجيل حضور متكررًا. استخدمه فقط إن كنت مطمئنًا لطريقة التعامل مع بيانات وجهك البيومترية</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">مشروع يوزّع رموز ITLG على من تحقّقوا من أنهم بشر حقيقيون عبر التحقق بالوجه (⁦Human Node⁩). سجّل حضورك في التطبيق كل 4 ساعات تقريبًا (حتى 6 مرات يوميًا) لتجميعها</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الدعوة وأكمل التحقق بالوجه في التطبيق</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> حتى مايو 2026 لم تُدرج ITLG في أي منصة تداول وليس لها سعر سوقي. يتطلب تسجيل حضور متكررًا. استخدمه فقط إن كنت مطمئنًا لطريقة التعامل مع بيانات وجهك البيومترية</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://interlinklabs.ai/541682748130" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/interlink/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://interlinklabs.ai/541682748130" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-billions" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Bi</span><div class="svc-id"><h3><span class="cat">دخل أساسي مشفّر</span><a href="/ar/services/billions/">Billions</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Bi</span><div class="svc-id"><div class="svc-line"><span class="cat">دخل أساسي مشفّر</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/billions/">Billions</a></h3></div></div>
 <p class="gain">نقاط ⁦Power⁩ (مقابل التحقق ودعوة الأصدقاء والمشاركة)</p>
-<div class="desc"><p id="d-billions">تطبيق هوية رقمية يثبت بهاتفك ووثيقة هويتك أنك إنسان حقيقي. التحقق ودعوة الأصدقاء يمنحان نقاط ⁦Power⁩ لفتح المكافآت. بناه فريق ⁦Polygon ID⁩، ورمزه ⁦$BILL⁩ مدرج في ⁦Coinbase⁩ وغيرها. الناشر ⁦ZKID Labs AG⁩</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-billions" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الإحالة وتحقق بفحص حيوية الوجه أو بجواز سفر يدعم ⁦NFC⁩ (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-unknown" title="صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">?</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد</span></li><li class="t-yes" title="سعر السوق (هل للرمز سعر متداول): نعم"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✓</b><span class="vh">سعر السوق (هل للرمز سعر متداول): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> لا يُذكر رسميًا إن كان يمكن تحويل ⁦Power⁩ إلى ⁦$BILL⁩ أو نقود. تقول بعض المصادر إنك تحصل أيضًا على جزء من إحالات من أحلتهم، لكن ذلك غير مؤكد رسميًا. انخفض ⁦$BILL⁩ كثيرًا عن أعلى سعر له. تقييمات ⁦App Store⁩ منخفضة. يتعامل مع بيانات الوجه وجواز السفر، فراجع سياسة الخصوصية</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق هوية رقمية يثبت بهاتفك ووثيقة هويتك أنك إنسان حقيقي. التحقق ودعوة الأصدقاء يمنحان نقاط ⁦Power⁩ لفتح المكافآت. بناه فريق ⁦Polygon ID⁩، ورمزه ⁦$BILL⁩ مدرج في ⁦Coinbase⁩ وغيرها. الناشر ⁦ZKID Labs AG⁩</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الإحالة وتحقق بفحص حيوية الوجه أو بجواز سفر يدعم ⁦NFC⁩ (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> لا يُذكر رسميًا إن كان يمكن تحويل ⁦Power⁩ إلى ⁦$BILL⁩ أو نقود. تقول بعض المصادر إنك تحصل أيضًا على جزء من إحالات من أحلتهم، لكن ذلك غير مؤكد رسميًا. انخفض ⁦$BILL⁩ كثيرًا عن أعلى سعر له. تقييمات ⁦App Store⁩ منخفضة. يتعامل مع بيانات الوجه وجواز السفر، فراجع سياسة الخصوصية</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://official.app/rc/ECMHPWI7AG" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/billions/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://official.app/rc/ECMHPWI7AG" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-fheid" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><h3><span class="cat">دخل أساسي مشفّر</span><a href="/ar/services/fheid/">FheID <span class="q">Privasea</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><div class="svc-line"><span class="cat">دخل أساسي مشفّر</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/fheid/">FheID <span class="q">Privasea</span></a></h3></div></div>
 <p class="gain">إسقاطات جوية ومكافآت مقابل إثبات أنك إنسان (مثل «نجوم» الحملات)</p>
-<div class="desc"><p id="d-fheid">تطبيق يمسح وجهك بكاميرا الهاتف ليثبت أنك إنسان حقيقي. تُشفَّر ملامح الوجه على الجهاز وتُعالَج بالتشفير المتماثل الكامل (⁦FHE⁩)، فيقال إن الصورة الأصلية لا تُرسل أبدًا. التحقق يُنشئ رمز ⁦NFT⁩ لإثبات الإنسانية يتلقى الإنزالات الجوية ومكافآت أخرى. تديره ⁦Privasea⁩</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-fheid" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>ثبّت تطبيق ⁦FheID⁩ وأدخل رمز الدعوة ⁦QVedKjg⁩ وتحقق من أنك إنسان بمسح الوجه (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-unknown" title="صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">?</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد</span></li><li class="t-yes" title="سعر السوق (هل للرمز سعر متداول): نعم"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✓</b><span class="vh">سعر السوق (هل للرمز سعر متداول): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> لا يُذكر رسميًا ما المكافآت المتاحة الآن ولا قدرها. حملة سابقة (2024) منحت «نجومًا» على الإحالات حتى 3 مستويات. انخفض ⁦PRAI⁩ كثيرًا عن أعلى سعر له. يتعامل مع بيانات الوجه، فراجع سياسة الخصوصية قبل الاستخدام</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق يمسح وجهك بكاميرا الهاتف ليثبت أنك إنسان حقيقي. تُشفَّر ملامح الوجه على الجهاز وتُعالَج بالتشفير المتماثل الكامل (⁦FHE⁩)، فيقال إن الصورة الأصلية لا تُرسل أبدًا. التحقق يُنشئ رمز ⁦NFT⁩ لإثبات الإنسانية يتلقى الإنزالات الجوية ومكافآت أخرى. تديره ⁦Privasea⁩</p>
+<p class="need"><b>طريقة الحصول</b><span>ثبّت تطبيق ⁦FheID⁩ وأدخل رمز الدعوة ⁦QVedKjg⁩ وتحقق من أنك إنسان بمسح الوجه (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> لا يُذكر رسميًا ما المكافآت المتاحة الآن ولا قدرها. حملة سابقة (2024) منحت «نجومًا» على الإحالات حتى 3 مستويات. انخفض ⁦PRAI⁩ كثيرًا عن أعلى سعر له. يتعامل مع بيانات الوجه، فراجع سياسة الخصوصية قبل الاستخدام</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot" dir="ltr">QVedKjg</span></div><button class="btn line" type="button" data-code="QVedKjg">نسخ</button><a class="btn solid ref" href="https://www.privasea.ai/download-app" target="_blank" rel="noopener">ثبّت التطبيق وأدخل الرمز</a></div>
+<a class="to-page" href="/ar/services/fheid/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot" dir="ltr">QVedKjg</span></div><button class="btn line" type="button" data-code="QVedKjg">نسخ</button><a class="btn solid ref" href="https://www.privasea.ai/download-app" target="_blank" rel="noopener">ثبّت التطبيق وأدخل الرمز</a></div></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="كل طرق التحقق"><a href="/ar/verify/world-id/" dir="auto">⁦World ID⁩ (⁦Orb⁩)</a><a href="/ar/verify/kyc-id/" dir="auto">التحقق بوثيقة هوية (⁦KYC⁩)</a><a href="/ar/verify/web-of-trust/" dir="auto">شبكة الثقة / الدعوات</a><a href="/ar/verify/none/" dir="auto">دون تحقق</a></nav>

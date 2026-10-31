@@ -224,17 +224,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -254,7 +276,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -262,6 +284,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -326,9 +352,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -408,7 +445,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -492,6 +529,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -658,59 +700,74 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">सत्यापन</p><h1>World ID से क्या कर सकते हैं? Orb वेरिफ़िकेशन वाले ऐप</h1><p class="orgs-intro">World ID एक डिजिटल ID है, जो Orb नाम के उपकरण से आपका चेहरा और आँखें स्कैन करके साबित करती है कि आप एक अनोखे, असली इंसान हैं। World के अनुसार तस्वीरें एन्क्रिप्टेड रूप में प्रोसेस होती हैं, फिर भी यह बायोमेट्रिक डेटा है, इसे ध्यान में रखें। यहाँ दिए World App मिनी ऐप (ORO, AXO, AI-DAC) अक्टूबर 2026 में Orb से वेरिफ़ाई किए गए अकाउंट से जापान में चलते पाए गए; Orb से कम लेवल काफ़ी है या नहीं, यह पता नहीं। Humad सिर्फ़ जापान के लिए है।</p></header>
 <section class="vsec"><h2>जिन सेवाओं में यह ज़रूरी है<span class="dot">4</span></h2><div class="grid"><article class="svc rv" id="svc-oro" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><h3><span class="cat">क्रिप्टो बेसिक इनकम</span><a href="/hi/services/oro/">ORO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><div class="svc-line"><span class="cat">क्रिप्टो बेसिक इनकम</span><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/oro/">ORO <span class="q">World App</span></a></h3></div></div>
 <p class="gain">हर दिन ORO टोकन</p>
-<div class="desc"><p id="d-oro">World App के अंदर एक मिनी ऐप, जिसमें World Chain टोकन ORO दिन में एक बार क्लेम कर सकते हैं। World की लिस्टिंग कहती है कि दोस्तों को बुलाने पर ज़्यादा ORO मिलता है, पर अक्टूबर 2026 तक ऐप में कोई इनवाइट लिंक नहीं मिला। डेवलपर Grupo de Fiesta</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-oro" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>World App इंस्टॉल करें, World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि), फिर ORO मिनी ऐप खोलकर रोज़ क्लेम करें</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✓</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ</span></li><li class="t-unknown" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट"><span aria-hidden="true">संचालक</span><b aria-hidden="true">?</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): अपुष्ट</span></li></ul></div>
-<p class="caution lv-caution"><span><b>ध्यान दें:</b> रोज़ की मात्रा आधिकारिक तौर पर नहीं बताई गई। Orb से निचला वेरिफ़िकेशन लेवल काफ़ी है या नहीं, पता नहीं। ORO DEX पर ट्रेड होता है पर लिक्विडिटी कम है, और 1 ORO की क़ीमत ¥1 से कम है (अक्टूबर 2026)। संचालक कंपनी की कोई जानकारी नहीं मिली</span></p>
 
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">World App के अंदर एक मिनी ऐप, जिसमें World Chain टोकन ORO दिन में एक बार क्लेम कर सकते हैं। World की लिस्टिंग कहती है कि दोस्तों को बुलाने पर ज़्यादा ORO मिलता है, पर अक्टूबर 2026 तक ऐप में कोई इनवाइट लिंक नहीं मिला। डेवलपर Grupo de Fiesta</p>
+<p class="need"><b>कैसे मिलेगा</b><span>World App इंस्टॉल करें, World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि), फिर ORO मिनी ऐप खोलकर रोज़ क्लेम करें</span></p>
+<p class="caution lv-caution"><span><b>ध्यान दें:</b> रोज़ की मात्रा आधिकारिक तौर पर नहीं बताई गई। Orb से निचला वेरिफ़िकेशन लेवल काफ़ी है या नहीं, पता नहीं। ORO DEX पर ट्रेड होता है पर लिक्विडिटी कम है, और 1 ORO की क़ीमत ¥1 से कम है (अक्टूबर 2026)। संचालक कंपनी की कोई जानकारी नहीं मिली</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid off" href="https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div>
+<a class="to-page" href="/hi/services/oro/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div></div>
 </article>
 <article class="svc rv" id="svc-axo" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><h3><span class="cat">क्रिप्टो बेसिक इनकम</span><a href="/hi/services/axo/">AXO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><div class="svc-line"><span class="cat">क्रिप्टो बेसिक इनकम</span><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/axo/">AXO <span class="q">World App</span></a></h3></div></div>
 <p class="gain">हर दिन AXO टोकन</p>
-<div class="desc"><p id="d-axo">World App के अंदर एक मिनी ऐप: दिन में एक बार टैप करके World Chain टोकन AXO क्लेम करें। “Premium” (1 WLD महीना) लेने पर रोज़ की मात्रा तीन गुना हो जाती है। रेफ़रल सिस्टम भी है। संस्थापक David Mateos</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-axo" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>रेफ़रल लिंक (रेफ़रल कोड 932BDA) से World App में मिनी ऐप खोलें, World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि), और रोज़ क्लेम करें</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✓</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ</span></li><li class="t-partial" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">△</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ</span></li></ul></div>
-<p class="caution lv-info"><span><b>ध्यान दें:</b> रोज़ की रकम और रेफ़रल इनाम क्या है, यह आधिकारिक तौर पर नहीं लिखा है। अक्टूबर 2026 में पुष्टि हुई कि Orb से वेरिफ़ाई की गई World ID वाले अकाउंट से यह जापान में चलता है; Orb से कम वेरिफ़िकेशन लेवल काफ़ी है या नहीं, यह पता नहीं। AXO को डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर WLD से बदला जा सकता है, पर अक्टूबर 2026 में लिक्विडिटी सिर्फ़ लगभग $2,000 है और 1 AXO की कीमत एक सेंट का बहुत छोटा हिस्सा है। ऑपरेटर कंपनी की जानकारी नहीं मिली</span></p>
 
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">World App के अंदर एक मिनी ऐप: दिन में एक बार टैप करके World Chain टोकन AXO क्लेम करें। “Premium” (1 WLD महीना) लेने पर रोज़ की मात्रा तीन गुना हो जाती है। रेफ़रल सिस्टम भी है। संस्थापक David Mateos</p>
+<p class="need"><b>कैसे मिलेगा</b><span>रेफ़रल लिंक (रेफ़रल कोड 932BDA) से World App में मिनी ऐप खोलें, World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि), और रोज़ क्लेम करें</span></p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> रोज़ की रकम और रेफ़रल इनाम क्या है, यह आधिकारिक तौर पर नहीं लिखा है। अक्टूबर 2026 में पुष्टि हुई कि Orb से वेरिफ़ाई की गई World ID वाले अकाउंट से यह जापान में चलता है; Orb से कम वेरिफ़िकेशन लेवल काफ़ी है या नहीं, यह पता नहीं। AXO को डीसेंट्रलाइज़्ड एक्सचेंज (DEX) पर WLD से बदला जा सकता है, पर अक्टूबर 2026 में लिक्विडिटी सिर्फ़ लगभग $2,000 है और 1 AXO की कीमत एक सेंट का बहुत छोटा हिस्सा है। ऑपरेटर कंपनी की जानकारी नहीं मिली</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&amp;path=?ref=932BDA" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<a class="to-page" href="/hi/services/axo/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&amp;path=?ref=932BDA" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div></div>
 </article>
 <article class="svc rv" id="svc-aidac" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><h3><span class="cat">क्रिप्टो बेसिक इनकम</span><a href="/hi/services/aidac/">AI-DAC <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><div class="svc-line"><span class="cat">क्रिप्टो बेसिक इनकम</span><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/aidac/">AI-DAC <span class="q">World App</span></a></h3></div></div>
 <p class="gain">DAC टोकन में UBI</p>
-<div class="desc"><p id="d-aidac">World App के अंदर एक मिनी ऐप, जो ख़ुद को “AI से चलने वाला यूनिवर्सल बेसिक इनकम प्लेटफ़ॉर्म” कहता है। World ID से इंसान साबित हुए लोग DAC पाते हैं और उससे ऐप बनाने वाले “AI CEO” का साथ देते और वोट करते हैं। संचालक संस्थापक Kei Iwami। कोई रेफ़रल बोनस नहीं</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-aidac" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>World App में AI-DAC मिनी ऐप खोलें और World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि)</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✓</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution lv-info"><span><b>ध्यान दें:</b> मात्रा, आवृत्ति और नकद में बदलने का तरीक़ा आधिकारिक तौर पर नहीं बताया गया। Orb से निचला वेरिफ़िकेशन लेवल काफ़ी है या नहीं, पता नहीं। DAC की कोई सप्लाई सीमा नहीं: संचालक कभी भी और मिंट कर सकता है, जिससे मूल्य घट सकता है। आधिकारिक तौर पर मूल्य की गारंटी नहीं, और DEX लिक्विडिटी बहुत कम है (अक्टूबर 2026)</span></p>
 
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">World App के अंदर एक मिनी ऐप, जो ख़ुद को “AI से चलने वाला यूनिवर्सल बेसिक इनकम प्लेटफ़ॉर्म” कहता है। World ID से इंसान साबित हुए लोग DAC पाते हैं और उससे ऐप बनाने वाले “AI CEO” का साथ देते और वोट करते हैं। संचालक संस्थापक Kei Iwami। कोई रेफ़रल बोनस नहीं</p>
+<p class="need"><b>कैसे मिलेगा</b><span>World App में AI-DAC मिनी ऐप खोलें और World ID से साबित करें कि आप इंसान हैं (जापान से Orb वेरिफ़िकेशन के साथ चलने की पुष्टि)</span></p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> मात्रा, आवृत्ति और नकद में बदलने का तरीक़ा आधिकारिक तौर पर नहीं बताया गया। Orb से निचला वेरिफ़िकेशन लेवल काफ़ी है या नहीं, पता नहीं। DAC की कोई सप्लाई सीमा नहीं: संचालक कभी भी और मिंट कर सकता है, जिससे मूल्य घट सकता है। आधिकारिक तौर पर मूल्य की गारंटी नहीं, और DEX लिक्विडिटी बहुत कम है (अक्टूबर 2026)</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid off" href="https://lp.ai-dac.com/" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div>
+<a class="to-page" href="/hi/services/aidac/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://lp.ai-dac.com/" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div></div>
 </article>
 <article class="svc rv" id="svc-humad" data-cat="pointsite" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><h3><span class="cat">कैशबैक साइट</span><a href="/hi/services/humad/">Humad <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><div class="svc-line"><span class="cat">कैशबैक साइट</span><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/humad/">Humad <span class="q">World App</span></a></h3></div></div>
 <p class="gain">विज्ञापन टैप करने और सवालों के जवाब देने पर पॉइंट (1,500 pt = ¥150 से गिफ़्ट कार्ड)</p>
-<div class="desc"><p id="d-humad">World App के अंदर एक मिनी ऐप। विज्ञापनों पर टैप करें और सवालों के जवाब दें, पॉइंट जमा करें और गिफ़्ट कार्ड में बदलें। World ID से इंसान साबित करने पर विज्ञापन टैप के पॉइंट 6 गुना। संचालक Hakuhodo DY Holdings की कंपनी Ads for Humanity Inc.। कोई रेफ़रल बोनस नहीं मिला</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-humad" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>World App में Humad मिनी ऐप खोलकर इस्तेमाल करें। पॉइंट को गिफ़्ट कार्ड में बदलने के लिए Orb से वेरिफ़ाई की गई World ID से इंसान होने का सबूत चाहिए</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region"><span class="vh">क्षेत्र: </span>सिर्फ़ जापान</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">✓</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): हाँ</span></li></ul></div>
-<p class="caution lv-info"><span><b>ध्यान दें:</b> पॉइंट सिर्फ़ गिफ़्ट कार्ड में बदलते हैं, नकद में नहीं, और बदलने के बाद रद्द नहीं होते। यह जापान में उपलब्ध है और सिर्फ़ जापान के लिए है (प्रेस रिलीज़ में भी पहुँच सिर्फ़ जापान के अंदर से बताई गई है)। यह बीटा है, इसलिए चीज़ें बदल सकती हैं। आपके जवाब और जोड़ा गया डेटा विज्ञापन दिखाने में इस्तेमाल होता है</span></p>
 
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">World App के अंदर एक मिनी ऐप। विज्ञापनों पर टैप करें और सवालों के जवाब दें, पॉइंट जमा करें और गिफ़्ट कार्ड में बदलें। World ID से इंसान साबित करने पर विज्ञापन टैप के पॉइंट 6 गुना। संचालक Hakuhodo DY Holdings की कंपनी Ads for Humanity Inc.। कोई रेफ़रल बोनस नहीं मिला</p>
+<p class="need"><b>कैसे मिलेगा</b><span>World App में Humad मिनी ऐप खोलकर इस्तेमाल करें। पॉइंट को गिफ़्ट कार्ड में बदलने के लिए Orb से वेरिफ़ाई की गई World ID से इंसान होने का सबूत चाहिए</span></p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> पॉइंट सिर्फ़ गिफ़्ट कार्ड में बदलते हैं, नकद में नहीं, और बदलने के बाद रद्द नहीं होते। यह जापान में उपलब्ध है और सिर्फ़ जापान के लिए है (प्रेस रिलीज़ में भी पहुँच सिर्फ़ जापान के अंदर से बताई गई है)। यह बीटा है, इसलिए चीज़ें बदल सकती हैं। आपके जवाब और जोड़ा गया डेटा विज्ञापन दिखाने में इस्तेमाल होता है</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><a class="btn solid off" href="https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div>
+<a class="to-page" href="/hi/services/humad/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1" target="_blank" rel="noopener">आधिकारिक साइट देखें</a></div></div>
 </article></div></section>
 <section class="vsec"><h2>जिन सेवाओं में यह वैकल्पिक है<span class="dot">1</span></h2><div class="grid"><article class="svc rv" id="svc-rewardme" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><h3><span class="cat">पैसिव ऐप</span><a href="/hi/services/rewardme/">RewardMe</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><div class="svc-line"><span class="cat">पैसिव ऐप</span><div class="tags"><span class="new">NEW</span><span class="type loop">बार-बार</span></div></div><h3><a href="/hi/services/rewardme/">RewardMe</a></h3></div></div>
 <p class="gain">ईमेल रसीदों से मिला ज़्यादा से ज़्यादा 5% कैशबैक (Reward Dollars / MDT क्रिप्टो)</p>
-<div class="desc"><p id="d-rewardme">ईमेल जोड़ें, और यह रसीद वाले ईमेल से Amazon, Uber जैसे पार्टनर स्टोर की ख़रीदारी ढूँढकर 5% तक इनाम देता है। इनाम गिफ़्ट कार्ड में ले सकते हैं या क्रिप्टो टोकन MDT के रूप में निकाल सकते हैं। रेफ़रल कोड से साइन अप पर दोनों तरफ़ बोनस। प्रकाशक हांगकांग की Magic Crystal Limited</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-rewardme" hidden>और पढ़ें</button></div>
-<p class="need"><b>कैसे मिलेगा</b><span>रेफ़रल लिंक से साइन अप करें और रजिस्ट्रेशन के समय रेफ़रल कोड 7HOdyg डालें। ईमेल अकाउंट जोड़ें और योग्य दुकानों पर ख़रीदारी करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)</span></p>
 <div class="meta"><span class="ease"><span>आसानी</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">क्षेत्र: </span>ग्लोबल</span><ul class="trust" aria-label="भरोसे के संकेत"><li class="t-partial" title="नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ"><span aria-hidden="true">नकदी</span><b aria-hidden="true">△</b><span class="vh">नकदी (क्या इसे पैसे में बदल सकते हैं): शर्तों के साथ</span></li><li class="t-yes" title="बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ"><span aria-hidden="true">बाज़ार भाव</span><b aria-hidden="true">✓</b><span class="vh">बाज़ार भाव (क्या टोकन का बाज़ार में दाम है): हाँ</span></li><li class="t-partial" title="संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ"><span aria-hidden="true">संचालक</span><b aria-hidden="true">△</b><span class="vh">संचालक (क्या चलाने वाली कंपनी सार्वजनिक है): शर्तों के साथ</span></li></ul></div>
-<p class="caution lv-info"><span><b>ध्यान दें:</b> यह जोड़े गए इनबॉक्स के व्यावसायिक ईमेल पढ़ता है, और इसकी प्राइवेसी पॉलिसी कहती है कि पहचान हटाया गया डेटा कंपनियों को बेचा या साझा किया जाता है। गिफ़्ट कार्ड की मंज़ूरी में 7–14 कार्यदिवस लगते हैं। 6 महीने इस्तेमाल न करने पर बैलेंस ख़त्म हो सकता है। बोनस की रकम आधिकारिक तौर पर नहीं बताई गई</span></p>
 
+<div class="svc-foot"><details class="more"><summary>विवरण</summary><div class="more-in">
+<p class="note">ईमेल जोड़ें, और यह रसीद वाले ईमेल से Amazon, Uber जैसे पार्टनर स्टोर की ख़रीदारी ढूँढकर 5% तक इनाम देता है। इनाम गिफ़्ट कार्ड में ले सकते हैं या क्रिप्टो टोकन MDT के रूप में निकाल सकते हैं। रेफ़रल कोड से साइन अप पर दोनों तरफ़ बोनस। प्रकाशक हांगकांग की Magic Crystal Limited</p>
+<p class="need"><b>कैसे मिलेगा</b><span>रेफ़रल लिंक से साइन अप करें और रजिस्ट्रेशन के समय रेफ़रल कोड 7HOdyg डालें। ईमेल अकाउंट जोड़ें और योग्य दुकानों पर ख़रीदारी करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)</span></p>
+<p class="caution lv-info"><span><b>ध्यान दें:</b> यह जोड़े गए इनबॉक्स के व्यावसायिक ईमेल पढ़ता है, और इसकी प्राइवेसी पॉलिसी कहती है कि पहचान हटाया गया डेटा कंपनियों को बेचा या साझा किया जाता है। गिफ़्ट कार्ड की मंज़ूरी में 7–14 कार्यदिवस लगते हैं। 6 महीने इस्तेमाल न करने पर बैलेंस ख़त्म हो सकता है। बोनस की रकम आधिकारिक तौर पर नहीं बताई गई</span></p>
 <p class="checked"><time datetime="2026-10">जाँचा गया: अक्टूबर 2026</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">कॉपी</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div>
+<a class="to-page" href="/hi/services/rewardme/">पूरा पेज देखें →</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">कॉपी</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">रेफ़रल से साइन अप करें</a></div></div>
 </article></div></section>
 <nav class="vchips vother" aria-label="सभी वेरिफ़िकेशन तरीके"><a href="/hi/verify/face/" dir="auto">चेहरा स्कैन / लाइवनेस</a><a href="/hi/verify/kyc-id/" dir="auto">ID दस्तावेज़ KYC</a><a href="/hi/verify/web-of-trust/" dir="auto">वेब ऑफ़ ट्रस्ट / इनवाइट</a><a href="/hi/verify/none/" dir="auto">कोई वेरिफ़िकेशन नहीं</a></nav>
 <p class="back"><a class="btn line" href="/hi/#list">← सूची पर वापस जाएँ</a></p>

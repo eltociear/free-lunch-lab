@@ -229,17 +229,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -259,7 +281,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -267,6 +289,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -331,9 +357,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -413,7 +450,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -497,6 +534,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -663,37 +705,46 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">身份验证</p><h1>通过邀请或信任网加入的应用一览</h1><p class="orgs-intro">由已加入的成员邀请或为你担保（认证）后加入。无需人脸或证件，但没有认识的成员就很难开始。Idena 已于 2026 年 10 月确认可在日本使用；Ğ1 以法语圈为主，从日本加入相当困难；Circles 也需要有成员邀请。</p></header>
 <section class="vsec"><h2>需要此验证的服务<span class="dot">3</span></h2><div class="grid"><article class="svc rv" id="svc-circles" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/circles/">Circles <span class="q">Gnosis App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/circles/">Circles <span class="q">Gnosis App</span></a></h3></div></div>
 <p class="gain">每小时 1 CRC（每天 24 CRC）</p>
-<div class="desc"><p id="d-circles">由 Gnosis 推出、每个人发行自己货币的机制。Circles 2.0 于 2025 年 5 月上线，2026 年 6 月 Gnosis App 围绕 Circles 进行了重建。本站暂时没有它的推荐链接</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-circles" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>在 Gnosis App 注册，并接受现有 Circles 成员的邀请。邀请人支付 96 CRC，被邀请人获得 48 CRC 欢迎奖励</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 没有成员邀请就无法开始。CRC 的市场价格和兑现方式尚未确认。Gnosis 已宣布计划将 Gnosis App 从 Gnosis Ltd 分拆为独立公司，内容可能会有变化</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">由 Gnosis 推出、每个人发行自己货币的机制。Circles 2.0 于 2025 年 5 月上线，2026 年 6 月 Gnosis App 围绕 Circles 进行了重建。本站暂时没有它的推荐链接</p>
+<p class="need"><b>获取方式</b><span>在 Gnosis App 注册，并接受现有 Circles 成员的邀请。邀请人支付 96 CRC，被邀请人获得 48 CRC 欢迎奖励</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 没有成员邀请就无法开始。CRC 的市场价格和兑现方式尚未确认。Gnosis 已宣布计划将 Gnosis App 从 Gnosis Ltd 分拆为独立公司，内容可能会有变化</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://app.gnosis.io/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/circles/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://app.gnosis.io/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-g1" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/g1/">Ğ1 <span class="q">June</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/g1/">Ğ1 <span class="q">June</span></a></h3></div></div>
 <p class="gain">成为成员后每天获得 Ğ1（全民红利）</p>
-<div class="desc"><p id="d-g1">基于“货币相对论”的自由货币。运行在开源软件 Duniter 上，每位成员每天都会以“全民红利”的形式获得新发行的 Ğ1。2017 年 3 月启动，2026 年 3 月迁移到 Duniter v2。没有推荐链接，也没有推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-g1" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>创建钱包，并通过“信任网（Web of Trust）”获得至少 5 位现有成员的认证。认证人原则上应当与你本人相识</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 社区以法语圈为主，并以线下交往为基础，从日本等地加入相当困难。非成员也可以用钱包持有 Ğ1，但领不到每日红利。Ğ1 主要用于交换商品和服务，兑换成法币只能在个人之间进行</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">基于“货币相对论”的自由货币。运行在开源软件 Duniter 上，每位成员每天都会以“全民红利”的形式获得新发行的 Ğ1。2017 年 3 月启动，2026 年 3 月迁移到 Duniter v2。没有推荐链接，也没有推荐奖励</p>
+<p class="need"><b>获取方式</b><span>创建钱包，并通过“信任网（Web of Trust）”获得至少 5 位现有成员的认证。认证人原则上应当与你本人相识</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 社区以法语圈为主，并以线下交往为基础，从日本等地加入相当困难。非成员也可以用钱包持有 Ğ1，但领不到每日红利。Ğ1 主要用于交换商品和服务，兑换成法币只能在个人之间进行</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://duniter.org/g1/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/g1/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://duniter.org/g1/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-idena" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/idena/">Idena <span class="q">iDNA</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/idena/">Idena <span class="q">iDNA</span></a></h3></div></div>
 <p class="gain">iDNA（节点运行期间的挖矿奖励，以及验证奖励）</p>
-<div class="desc"><p id="d-idena">以“一人一票”证明你是真人的 Proof of Person 区块链。在全球同步举行的“验证仪式”中解开名为 FLIP 的图片谜题即可通过验证。通过后，在运行节点期间可获得 iDNA 挖矿奖励。开源项目。没有推荐链接</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-idena" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>按官方 Telegram 的说明免费获取邀请码。用网页应用或自己的节点参加，在仪式时间在线解 FLIP（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-partial" title="运营方公开（是否公开运营公司）：有条件"><span aria-hidden="true">运营方</span><b aria-hidden="true">△</b><span class="vh">运营方公开（是否公开运营公司）：有条件</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 必须在仪式时间（截至 2026 年 10 月为日本时间午夜 0 点）在线，否则无法通过验证，比较费事。网络很小，iDNA 的价格和流动性都很低。禁止买卖邀请码。把奖励交给他人的“矿池”，对方可能卷走你的质押</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">以“一人一票”证明你是真人的 Proof of Person 区块链。在全球同步举行的“验证仪式”中解开名为 FLIP 的图片谜题即可通过验证。通过后，在运行节点期间可获得 iDNA 挖矿奖励。开源项目。没有推荐链接</p>
+<p class="need"><b>获取方式</b><span>按官方 Telegram 的说明免费获取邀请码。用网页应用或自己的节点参加，在仪式时间在线解 FLIP（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 必须在仪式时间（截至 2026 年 10 月为日本时间午夜 0 点）在线，否则无法通过验证，比较费事。网络很小，iDNA 的价格和流动性都很低。禁止买卖邀请码。把奖励交给他人的“矿池”，对方可能卷走你的质押</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://www.idena.io/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/idena/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://www.idena.io/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="全部验证方式"><a href="/zh/verify/world-id/" dir="auto">World ID（Orb 验证）</a><a href="/zh/verify/face/" dir="auto">人脸识别／活体检测</a><a href="/zh/verify/kyc-id/" dir="auto">身份证件 KYC</a><a href="/zh/verify/none/" dir="auto">无需验证</a></nav>

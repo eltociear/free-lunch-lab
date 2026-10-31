@@ -227,17 +227,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -257,7 +279,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -265,6 +287,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -329,9 +355,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -411,7 +448,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -495,6 +532,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -661,59 +703,74 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">التحقق</p><h1>ماذا يمكنك أن تفعل بـ⁦World ID⁩؟ تطبيقات تستخدم تحقق ⁦Orb⁩</h1><p class="orgs-intro">⁦World ID⁩ هوية رقمية تثبت أنك شخص حقيقي وفريد عبر مسح وجهك وعينيك بجهاز يُسمى ⁦Orb⁩. تقول ⁦World⁩ إن الصور تُعالَج مشفّرة، لكنها تبقى بيانات حيوية، فضع ذلك في الحسبان. تأكدنا في أكتوبر 2026 أن تطبيقات ⁦World App⁩ المصغّرة المدرجة هنا (⁦ORO⁩ و⁦AXO⁩ و⁦AI-DAC⁩) تعمل من اليابان بحساب موثَّق بـ⁦Orb⁩، ولا يُعرف إن كان مستوى أدنى كافيًا. أما ⁦Humad⁩ فمقتصر على اليابان.</p></header>
 <section class="vsec"><h2>خدمات تتطلبه<span class="dot">4</span></h2><div class="grid"><article class="svc rv" id="svc-oro" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><h3><span class="cat">دخل أساسي مشفّر</span><a href="/ar/services/oro/">ORO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><div class="svc-line"><span class="cat">دخل أساسي مشفّر</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/oro/">ORO <span class="q">World App</span></a></h3></div></div>
 <p class="gain">رموز ⁦ORO⁩ كل يوم</p>
-<div class="desc"><p id="d-oro">تطبيق مصغّر داخل ⁦World App⁩ يتيح المطالبة برمز ⁦ORO⁩ على ⁦World Chain⁩ مرة يوميًا. تقول صفحة ⁦World⁩ إن دعوة الأصدقاء تمنح مزيدًا من ⁦ORO⁩، لكننا لم نجد رابط دعوة في التطبيق حتى أكتوبر 2026. المطوّر ⁦Grupo de Fiesta⁩</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-oro" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>ثبّت ⁦World App⁩ وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)، ثم افتح تطبيق ⁦ORO⁩ المصغّر وطالب كل يوم</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="سعر السوق (هل للرمز سعر متداول): نعم"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✓</b><span class="vh">سعر السوق (هل للرمز سعر متداول): نعم</span></li><li class="t-unknown" title="المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">?</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد</span></li></ul></div>
-<p class="caution lv-caution"><span><b>تنبيه:</b> الكمية اليومية غير مذكورة رسميًا. لا يُعرف إن كان مستوى تحقق أدنى من ⁦Orb⁩ يكفي. يُتداول ⁦ORO⁩ في منصات لامركزية (⁦DEX⁩) لكن السيولة ضئيلة، وقيمة ⁦1 ORO⁩ أقل من ين واحد (أكتوبر 2026). لم نجد معلومات عن الشركة المشغّلة</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق مصغّر داخل ⁦World App⁩ يتيح المطالبة برمز ⁦ORO⁩ على ⁦World Chain⁩ مرة يوميًا. تقول صفحة ⁦World⁩ إن دعوة الأصدقاء تمنح مزيدًا من ⁦ORO⁩، لكننا لم نجد رابط دعوة في التطبيق حتى أكتوبر 2026. المطوّر ⁦Grupo de Fiesta⁩</p>
+<p class="need"><b>طريقة الحصول</b><span>ثبّت ⁦World App⁩ وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)، ثم افتح تطبيق ⁦ORO⁩ المصغّر وطالب كل يوم</span></p>
+<p class="caution lv-caution"><span><b>تنبيه:</b> الكمية اليومية غير مذكورة رسميًا. لا يُعرف إن كان مستوى تحقق أدنى من ⁦Orb⁩ يكفي. يُتداول ⁦ORO⁩ في منصات لامركزية (⁦DEX⁩) لكن السيولة ضئيلة، وقيمة ⁦1 ORO⁩ أقل من ين واحد (أكتوبر 2026). لم نجد معلومات عن الشركة المشغّلة</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid off" href="https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645" target="_blank" rel="noopener">زيارة الموقع الرسمي</a></div>
+<a class="to-page" href="/ar/services/oro/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645" target="_blank" rel="noopener">زيارة الموقع الرسمي</a></div></div>
 </article>
 <article class="svc rv" id="svc-axo" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><h3><span class="cat">دخل أساسي مشفّر</span><a href="/ar/services/axo/">AXO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><div class="svc-line"><span class="cat">دخل أساسي مشفّر</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/axo/">AXO <span class="q">World App</span></a></h3></div></div>
 <p class="gain">رموز ⁦AXO⁩ كل يوم</p>
-<div class="desc"><p id="d-axo">تطبيق مصغّر داخل ⁦World App⁩: انقر مرة يوميًا للمطالبة برمز ⁦AXO⁩ على ⁦World Chain⁩. اشتراك «⁦Premium⁩» (⁦1 WLD⁩ شهريًا) يضاعف الكمية اليومية ثلاث مرات. يوجد أيضًا نظام إحالة. المؤسس ⁦David Mateos⁩</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-axo" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>افتح التطبيق المصغّر في ⁦World App⁩ عبر رابط الإحالة (رمز الإحالة ⁦932BDA⁩)، وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)، وطالب كل يوم</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="سعر السوق (هل للرمز سعر متداول): نعم"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✓</b><span class="vh">سعر السوق (هل للرمز سعر متداول): نعم</span></li><li class="t-partial" title="المشغّل (هل الجهة المشغّلة معلنة): بشروط"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">△</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): بشروط</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> لا يُذكر رسميًا المقدار اليومي ولا ماهية مكافأة الإحالة. تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب ⁦World ID⁩ موثَّق عبر ⁦Orb⁩، ولا يُعرف إن كان مستوى تحقق أدنى (دون ⁦Orb⁩) كافيًا. يمكن مبادلة ⁦AXO⁩ بـ⁦WLD⁩ في منصة تداول لامركزية (⁦DEX⁩)، لكن السيولة في أكتوبر 2026 نحو ⁦$2,000⁩ فقط، وقيمة ⁦1 AXO⁩ جزء ضئيل جدًا من السنت. لم نعثر على معلومات عن الشركة المشغّلة</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق مصغّر داخل ⁦World App⁩: انقر مرة يوميًا للمطالبة برمز ⁦AXO⁩ على ⁦World Chain⁩. اشتراك «⁦Premium⁩» (⁦1 WLD⁩ شهريًا) يضاعف الكمية اليومية ثلاث مرات. يوجد أيضًا نظام إحالة. المؤسس ⁦David Mateos⁩</p>
+<p class="need"><b>طريقة الحصول</b><span>افتح التطبيق المصغّر في ⁦World App⁩ عبر رابط الإحالة (رمز الإحالة ⁦932BDA⁩)، وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)، وطالب كل يوم</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> لا يُذكر رسميًا المقدار اليومي ولا ماهية مكافأة الإحالة. تأكدنا في أكتوبر 2026 أنه يعمل من اليابان بحساب ⁦World ID⁩ موثَّق عبر ⁦Orb⁩، ولا يُعرف إن كان مستوى تحقق أدنى (دون ⁦Orb⁩) كافيًا. يمكن مبادلة ⁦AXO⁩ بـ⁦WLD⁩ في منصة تداول لامركزية (⁦DEX⁩)، لكن السيولة في أكتوبر 2026 نحو ⁦$2,000⁩ فقط، وقيمة ⁦1 AXO⁩ جزء ضئيل جدًا من السنت. لم نعثر على معلومات عن الشركة المشغّلة</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&amp;path=?ref=932BDA" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/axo/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&amp;path=?ref=932BDA" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-aidac" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><h3><span class="cat">دخل أساسي مشفّر</span><a href="/ar/services/aidac/">AI-DAC <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><div class="svc-line"><span class="cat">دخل أساسي مشفّر</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/aidac/">AI-DAC <span class="q">World App</span></a></h3></div></div>
 <p class="gain">دخل أساسي بعملة ⁦DAC⁩</p>
-<div class="desc"><p id="d-aidac">تطبيق مصغّر داخل ⁦World App⁩ يقدّم نفسه «منصة دخل أساسي شامل مدعومة بالذكاء الاصطناعي». من يثبت أنه إنسان عبر ⁦World ID⁩ يتلقى ⁦DAC⁩ ويستخدمه لدعم «مديرين تنفيذيين بالذكاء الاصطناعي» يبنون التطبيقات وللتصويت. يديره مؤسسه ⁦Kei Iwami⁩. لا توجد مكافأة إحالة</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-aidac" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>افتح تطبيق ⁦AI-DAC⁩ المصغّر في ⁦World App⁩ وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="سعر السوق (هل للرمز سعر متداول): نعم"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✓</b><span class="vh">سعر السوق (هل للرمز سعر متداول): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> الكمية والتكرار وطريقة الصرف غير مذكورة رسميًا. لا يُعرف إن كان مستوى تحقق أدنى من ⁦Orb⁩ يكفي. لا يوجد حد أقصى لإصدار ⁦DAC⁩: يمكن للمشغّل سكّ المزيد في أي وقت، ما قد يخفض قيمته. تقول الجهة الرسمية إن القيمة غير مضمونة، والسيولة في ⁦DEX⁩ ضئيلة جدًا (أكتوبر 2026)</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق مصغّر داخل ⁦World App⁩ يقدّم نفسه «منصة دخل أساسي شامل مدعومة بالذكاء الاصطناعي». من يثبت أنه إنسان عبر ⁦World ID⁩ يتلقى ⁦DAC⁩ ويستخدمه لدعم «مديرين تنفيذيين بالذكاء الاصطناعي» يبنون التطبيقات وللتصويت. يديره مؤسسه ⁦Kei Iwami⁩. لا توجد مكافأة إحالة</p>
+<p class="need"><b>طريقة الحصول</b><span>افتح تطبيق ⁦AI-DAC⁩ المصغّر في ⁦World App⁩ وأثبت أنك إنسان عبر ⁦World ID⁩ (تأكد عمله من اليابان مع التحقق عبر ⁦Orb⁩)</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> الكمية والتكرار وطريقة الصرف غير مذكورة رسميًا. لا يُعرف إن كان مستوى تحقق أدنى من ⁦Orb⁩ يكفي. لا يوجد حد أقصى لإصدار ⁦DAC⁩: يمكن للمشغّل سكّ المزيد في أي وقت، ما قد يخفض قيمته. تقول الجهة الرسمية إن القيمة غير مضمونة، والسيولة في ⁦DEX⁩ ضئيلة جدًا (أكتوبر 2026)</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid off" href="https://lp.ai-dac.com/" target="_blank" rel="noopener">زيارة الموقع الرسمي</a></div>
+<a class="to-page" href="/ar/services/aidac/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://lp.ai-dac.com/" target="_blank" rel="noopener">زيارة الموقع الرسمي</a></div></div>
 </article>
 <article class="svc rv" id="svc-humad" data-cat="pointsite" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><h3><span class="cat">استرداد نقدي</span><a href="/ar/services/humad/">Humad <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><div class="svc-line"><span class="cat">استرداد نقدي</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/humad/">Humad <span class="q">World App</span></a></h3></div></div>
 <p class="gain">نقاط مقابل النقر على الإعلانات والإجابة عن الأسئلة (بطاقات هدايا بدءًا من ⁦1,500 pt⁩ = 150 ين)</p>
-<div class="desc"><p id="d-humad">تطبيق مصغّر داخل ⁦World App⁩. انقر على الإعلانات وأجب عن الأسئلة لتجمع نقاطًا تستبدلها ببطاقات هدايا. إثبات أنك إنسان عبر ⁦World ID⁩ يضاعف نقاط الإعلانات 6 مرات. تشغّله ⁦Ads for Humanity Inc.⁩ التابعة لـ⁦Hakuhodo DY Holdings⁩. لم نجد مكافأة إحالة</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-humad" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>افتح تطبيق ⁦Humad⁩ المصغّر في ⁦World App⁩. استبدال النقاط ببطاقات الهدايا يتطلب إثبات أنك إنسان عبر ⁦World ID⁩ موثَّق بـ⁦Orb⁩</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region"><span class="vh">المنطقة: </span>اليابان فقط</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> لا تُستبدل النقاط إلا ببطاقات هدايا وليس بنقود، ولا يمكن التراجع عن الاستبدال. متاح في اليابان ومقتصر عليها (ويذكر البيان الصحفي أيضًا أن الوصول مقتصر على اليابان). إنه إصدار تجريبي، لذا قد تتغير التفاصيل. تُستخدم إجاباتك والبيانات التي تربطها لاستهداف الإعلانات</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق مصغّر داخل ⁦World App⁩. انقر على الإعلانات وأجب عن الأسئلة لتجمع نقاطًا تستبدلها ببطاقات هدايا. إثبات أنك إنسان عبر ⁦World ID⁩ يضاعف نقاط الإعلانات 6 مرات. تشغّله ⁦Ads for Humanity Inc.⁩ التابعة لـ⁦Hakuhodo DY Holdings⁩. لم نجد مكافأة إحالة</p>
+<p class="need"><b>طريقة الحصول</b><span>افتح تطبيق ⁦Humad⁩ المصغّر في ⁦World App⁩. استبدال النقاط ببطاقات الهدايا يتطلب إثبات أنك إنسان عبر ⁦World ID⁩ موثَّق بـ⁦Orb⁩</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> لا تُستبدل النقاط إلا ببطاقات هدايا وليس بنقود، ولا يمكن التراجع عن الاستبدال. متاح في اليابان ومقتصر عليها (ويذكر البيان الصحفي أيضًا أن الوصول مقتصر على اليابان). إنه إصدار تجريبي، لذا قد تتغير التفاصيل. تُستخدم إجاباتك والبيانات التي تربطها لاستهداف الإعلانات</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid off" href="https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1" target="_blank" rel="noopener">زيارة الموقع الرسمي</a></div>
+<a class="to-page" href="/ar/services/humad/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1" target="_blank" rel="noopener">زيارة الموقع الرسمي</a></div></div>
 </article></div></section>
 <section class="vsec"><h2>خدمات يكون فيها اختياريًا<span class="dot">1</span></h2><div class="grid"><article class="svc rv" id="svc-rewardme" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/rewardme/">RewardMe</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/rewardme/">RewardMe</a></h3></div></div>
 <p class="gain">استرداد نقدي حتى 5% من إيصالات الشراء في بريدك (⁦Reward Dollars⁩ / عملة ⁦MDT⁩ المشفرة)</p>
-<div class="desc"><p id="d-rewardme">اربط بريدك الإلكتروني فيكتشف من رسائل الإيصالات مشترياتك من ⁦Amazon⁩ و⁦Uber⁩ ومتاجر شريكة أخرى، بمكافأة تصل إلى 5%. يمكن أخذ المكافآت بطاقات هدايا أو سحبها كرمز ⁦MDT⁩ المشفر. التسجيل برمز إحالة يمنح الطرفين مكافأة. الناشر ⁦Magic Crystal Limited⁩ في هونغ كونغ</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-rewardme" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الإحالة وأدخل رمز الإحالة ⁦7HOdyg⁩ عند التسجيل. اربط حساب بريد إلكتروني وتسوّق من المتاجر المشمولة (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="سعر السوق (هل للرمز سعر متداول): نعم"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✓</b><span class="vh">سعر السوق (هل للرمز سعر متداول): نعم</span></li><li class="t-partial" title="المشغّل (هل الجهة المشغّلة معلنة): بشروط"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">△</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): بشروط</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> يقرأ الرسائل التجارية في البريد المربوط، وتقول سياسة الخصوصية إن البيانات بعد إزالة ما يحدد الهوية تُباع للشركات أو تُشارك معها. تستغرق الموافقة على بطاقات الهدايا 7–14 يوم عمل. قد ينتهي الرصيد بعد 6 أشهر دون استخدام. مبالغ المكافآت غير مذكورة رسميًا</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">اربط بريدك الإلكتروني فيكتشف من رسائل الإيصالات مشترياتك من ⁦Amazon⁩ و⁦Uber⁩ ومتاجر شريكة أخرى، بمكافأة تصل إلى 5%. يمكن أخذ المكافآت بطاقات هدايا أو سحبها كرمز ⁦MDT⁩ المشفر. التسجيل برمز إحالة يمنح الطرفين مكافأة. الناشر ⁦Magic Crystal Limited⁩ في هونغ كونغ</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الإحالة وأدخل رمز الإحالة ⁦7HOdyg⁩ عند التسجيل. اربط حساب بريد إلكتروني وتسوّق من المتاجر المشمولة (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> يقرأ الرسائل التجارية في البريد المربوط، وتقول سياسة الخصوصية إن البيانات بعد إزالة ما يحدد الهوية تُباع للشركات أو تُشارك معها. تستغرق الموافقة على بطاقات الهدايا 7–14 يوم عمل. قد ينتهي الرصيد بعد 6 أشهر دون استخدام. مبالغ المكافآت غير مذكورة رسميًا</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">نسخ</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/rewardme/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">نسخ</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article></div></section>
 <nav class="vchips vother" aria-label="كل طرق التحقق"><a href="/ar/verify/face/" dir="auto">مسح الوجه / فحص الحيوية</a><a href="/ar/verify/kyc-id/" dir="auto">التحقق بوثيقة هوية (⁦KYC⁩)</a><a href="/ar/verify/web-of-trust/" dir="auto">شبكة الثقة / الدعوات</a><a href="/ar/verify/none/" dir="auto">دون تحقق</a></nav>
 <p class="back"><a class="btn line" href="/ar/#list">→ العودة إلى القائمة</a></p>

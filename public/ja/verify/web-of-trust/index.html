@@ -228,17 +228,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -258,7 +280,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -266,6 +288,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -330,9 +356,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -412,7 +449,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -496,6 +533,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -662,37 +704,46 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">本人確認</p><h1>招待・信頼の網で参加するアプリ・サービス一覧</h1><p class="orgs-intro">すでに参加している人に招待されたり、認証（保証）してもらったりして参加する方式です。顔や身分証を出さずに済む一方、知り合いのメンバーがいないと始めにくいのが難点です。Idena は2026年10月に日本から使えることを確認していますが、Ğ1 はフランス語圏が中心で日本からの参加はかなり難しく、Circles も招待してくれるメンバーが必要です。</p></header>
 <section class="vsec"><h2>この認証が必要なサービス<span class="dot">3</span></h2><div class="grid"><article class="svc rv" id="svc-circles" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><h3><span class="cat">暗号資産ベーシックインカム</span><a href="/ja/services/circles/">Circles <span class="q">Gnosis App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/circles/">Circles <span class="q">Gnosis App</span></a></h3></div></div>
 <p class="gain">1時間に1 CRC（1日24 CRC）</p>
-<div class="desc"><p id="d-circles">Gnosisが手がける、一人ひとりが自分の通貨を発行するしくみ。2025年5月にCircles 2.0が公開され、2026年6月にはGnosis AppがCircles中心に作り直された。このサイトの紹介リンクはまだない</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-circles" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>Gnosis Appで登録し、既存のCirclesメンバーから招待を受ける。招待する側が96 CRCを払い、招待された側は歓迎ボーナスとして48 CRCを受け取る</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-unknown" title="換金（現金にできるか）：未確認"><span aria-hidden="true">換金</span><b aria-hidden="true">?</b><span class="vh">換金（現金にできるか）：未確認</span></li><li class="t-unknown" title="市場価格（トークンに値段がついているか）：未確認"><span aria-hidden="true">市場価格</span><b aria-hidden="true">?</b><span class="vh">市場価格（トークンに値段がついているか）：未確認</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 招待してくれるメンバーがいないと始められない。CRCの市場価格や換金方法は確認できていない。Gnosis AppはGnosis Ltdから独立した会社に移る予定と発表されていて、内容が変わることがある</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">Gnosisが手がける、一人ひとりが自分の通貨を発行するしくみ。2025年5月にCircles 2.0が公開され、2026年6月にはGnosis AppがCircles中心に作り直された。このサイトの紹介リンクはまだない</p>
+<p class="need"><b>条件</b><span>Gnosis Appで登録し、既存のCirclesメンバーから招待を受ける。招待する側が96 CRCを払い、招待された側は歓迎ボーナスとして48 CRCを受け取る</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 招待してくれるメンバーがいないと始められない。CRCの市場価格や換金方法は確認できていない。Gnosis AppはGnosis Ltdから独立した会社に移る予定と発表されていて、内容が変わることがある</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid off" href="https://app.gnosis.io/" target="_blank" rel="noopener">公式サイトを見る</a></div>
+<a class="to-page" href="/ja/services/circles/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://app.gnosis.io/" target="_blank" rel="noopener">公式サイトを見る</a></div></div>
 </article>
 <article class="svc rv" id="svc-g1" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><h3><span class="cat">暗号資産ベーシックインカム</span><a href="/ja/services/g1/">Ğ1 <span class="q">ジューン</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/g1/">Ğ1 <span class="q">ジューン</span></a></h3></div></div>
 <p class="gain">メンバーになるとĞ1を毎日（ユニバーサル・ディビデンド）</p>
-<div class="desc"><p id="d-g1">「貨幣の相対性理論」にもとづく自由通貨。Duniterというオープンソースのソフトで動き、メンバー全員に「ユニバーサル・ディビデンド」としてĞ1が毎日新しく発行される。2017年3月に始まり、2026年3月にDuniter v2へ移行した。紹介リンクや紹介特典はない</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-g1" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>ウォレットを作り、「信頼の網（Web of Trust）」で既存メンバー5人以上から認証を受ける。認証する人は、あなたを直接知っていることが前提</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-unknown" title="市場価格（トークンに値段がついているか）：未確認"><span aria-hidden="true">市場価格</span><b aria-hidden="true">?</b><span class="vh">市場価格（トークンに値段がついているか）：未確認</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> コミュニティはフランス語圏が中心で、対面のつながりが基本なので、日本から参加するのはかなり難しい。メンバーでなくてもウォレットでĞ1を持つことはできるが、毎日のĞ1はもらえない。Ğ1は主に商品やサービスとの交換で使われ、円などへの換金は個人間に限られる</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">「貨幣の相対性理論」にもとづく自由通貨。Duniterというオープンソースのソフトで動き、メンバー全員に「ユニバーサル・ディビデンド」としてĞ1が毎日新しく発行される。2017年3月に始まり、2026年3月にDuniter v2へ移行した。紹介リンクや紹介特典はない</p>
+<p class="need"><b>条件</b><span>ウォレットを作り、「信頼の網（Web of Trust）」で既存メンバー5人以上から認証を受ける。認証する人は、あなたを直接知っていることが前提</span></p>
+<p class="caution lv-info"><span><b>注意：</b> コミュニティはフランス語圏が中心で、対面のつながりが基本なので、日本から参加するのはかなり難しい。メンバーでなくてもウォレットでĞ1を持つことはできるが、毎日のĞ1はもらえない。Ğ1は主に商品やサービスとの交換で使われ、円などへの換金は個人間に限られる</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid off" href="https://duniter.org/g1/" target="_blank" rel="noopener">公式サイトを見る</a></div>
+<a class="to-page" href="/ja/services/g1/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://duniter.org/g1/" target="_blank" rel="noopener">公式サイトを見る</a></div></div>
 </article>
 <article class="svc rv" id="svc-idena" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><h3><span class="cat">暗号資産ベーシックインカム</span><a href="/ja/services/idena/">Idena <span class="q">iDNA</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/idena/">Idena <span class="q">iDNA</span></a></h3></div></div>
 <p class="gain">iDNA（ノードを動かしている間のマイニング報酬と、認証セッションの報酬）</p>
-<div class="desc"><p id="d-idena">「一人一票」で人間であることを証明する Proof of Person 型のブロックチェーン。世界同時の「認証セレモニー」で FLIP という絵のパズルを解いて認証される。認証されると、ノードを動かしている間 iDNA のマイニング報酬が入る。オープンソース。紹介リンクはない</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-idena" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>公式 Telegram の案内に従い、無料の招待コードをもらう。Webアプリか自分のノードで参加し、セレモニーの時間に FLIP を解く（日本からの利用は2026年10月に実際に確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-partial" title="運営元公開（運営元が公開されているか）：条件つき"><span aria-hidden="true">運営元</span><b aria-hidden="true">△</b><span class="vh">運営元公開（運営元が公開されているか）：条件つき</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> セレモニーの時刻（2026年10月時点で日本時間の深夜0時）にオンラインでないと認証されず、手間がかかる。ネットワークは小さく、iDNA の価格も流動性も低い。招待コードの売買は禁止。報酬を他人の「プール」に任せると、ステークを持ち去られるおそれがある</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">「一人一票」で人間であることを証明する Proof of Person 型のブロックチェーン。世界同時の「認証セレモニー」で FLIP という絵のパズルを解いて認証される。認証されると、ノードを動かしている間 iDNA のマイニング報酬が入る。オープンソース。紹介リンクはない</p>
+<p class="need"><b>条件</b><span>公式 Telegram の案内に従い、無料の招待コードをもらう。Webアプリか自分のノードで参加し、セレモニーの時間に FLIP を解く（日本からの利用は2026年10月に実際に確認）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> セレモニーの時刻（2026年10月時点で日本時間の深夜0時）にオンラインでないと認証されず、手間がかかる。ネットワークは小さく、iDNA の価格も流動性も低い。招待コードの売買は禁止。報酬を他人の「プール」に任せると、ステークを持ち去られるおそれがある</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid off" href="https://www.idena.io/" target="_blank" rel="noopener">公式サイトを見る</a></div>
+<a class="to-page" href="/ja/services/idena/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://www.idena.io/" target="_blank" rel="noopener">公式サイトを見る</a></div></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="認証方法の一覧"><a href="/ja/verify/world-id/" dir="auto">World ID（Orb認証）</a><a href="/ja/verify/face/" dir="auto">顔認証・ライブネス</a><a href="/ja/verify/kyc-id/" dir="auto">身分証のKYC</a><a href="/ja/verify/none/" dir="auto">認証なし</a></nav>

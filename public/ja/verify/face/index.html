@@ -228,17 +228,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -258,7 +280,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -266,6 +288,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -330,9 +356,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -412,7 +449,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -496,6 +533,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -662,48 +704,60 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">本人確認</p><h1>顔認証で使えるアプリ・サービス一覧</h1><p class="orgs-intro">スマホのカメラで顔を読み取り、本人や実在の人間であることを確かめる方式です。手軽な反面、顔という変えられない情報を渡すことになるので、各サービスのデータの扱いを確認しましょう。Billions と FheID は2026年10月に日本から使えることを確認しています。</p></header>
 <section class="vsec"><h2>この認証が必要なサービス<span class="dot">4</span></h2><div class="grid"><article class="svc rv" id="svc-gooddollar" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">GD</span><div class="svc-id"><h3><span class="cat">暗号資産ベーシックインカム</span><a href="/ja/services/gooddollar/">GoodDollar</a></h3><div class="tags"><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">GD</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="type loop">継続</span></div></div><h3><a href="/ja/services/gooddollar/">GoodDollar</a></h3></div></div>
 <p class="gain">G$トークンを毎日</p>
-<div class="desc"><p id="d-gooddollar">24時間に1回、アプリで受け取る非営利のUBIプロジェクト。その日に受け取った人数で配分を分ける</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-gooddollar" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>アプリで顔による本人確認</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 2026年5月にセキュリティ事故があり、準備金を見直し中。1日の額もかなり少なめ</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">24時間に1回、アプリで受け取る非営利のUBIプロジェクト。その日に受け取った人数で配分を分ける</p>
+<p class="need"><b>条件</b><span>アプリで顔による本人確認</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 2026年5月にセキュリティ事故があり、準備金を見直し中。1日の額もかなり少なめ</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/gooddollar/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-interlink" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">IL</span><div class="svc-id"><h3><span class="cat">暗号資産ベーシックインカム</span><a href="/ja/services/interlink/">InterLink</a></h3><div class="tags"><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">IL</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="type loop">継続</span></div></div><h3><a href="/ja/services/interlink/">InterLink</a></h3></div></div>
 <p class="gain">ITLGトークンを毎日</p>
-<div class="desc"><p id="d-interlink">顔認証で“本人であること”を確かめた人（Human Node）に、ITLGトークンを配るプロジェクト。アプリで約4時間ごと（1日最大6回）にチェックインするとたまる</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-interlink" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>招待リンクから登録し、アプリで顔認証をする</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-unknown" title="換金（現金にできるか）：未確認"><span aria-hidden="true">換金</span><b aria-hidden="true">?</b><span class="vh">換金（現金にできるか）：未確認</span></li><li class="t-unknown" title="市場価格（トークンに値段がついているか）：未確認"><span aria-hidden="true">市場価格</span><b aria-hidden="true">?</b><span class="vh">市場価格（トークンに値段がついているか）：未確認</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 2026年5月時点でITLGは取引所に上場しておらず、市場価格がない。こまめなチェックインが必要。顔の生体情報の扱いに納得したうえで使う</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">顔認証で“本人であること”を確かめた人（Human Node）に、ITLGトークンを配るプロジェクト。アプリで約4時間ごと（1日最大6回）にチェックインするとたまる</p>
+<p class="need"><b>条件</b><span>招待リンクから登録し、アプリで顔認証をする</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 2026年5月時点でITLGは取引所に上場しておらず、市場価格がない。こまめなチェックインが必要。顔の生体情報の扱いに納得したうえで使う</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://interlinklabs.ai/541682748130" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/interlink/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://interlinklabs.ai/541682748130" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-billions" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Bi</span><div class="svc-id"><h3><span class="cat">暗号資産ベーシックインカム</span><a href="/ja/services/billions/">Billions</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Bi</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/billions/">Billions</a></h3></div></div>
 <p class="gain">Power ポイント（認証・友だち紹介・参加で貯まる）</p>
-<div class="desc"><p id="d-billions">スマホと身分証で「本物の人間」であることを証明するデジタルIDアプリ。認証や友だちの紹介で Power ポイントが貯まり、特典の解放に使える。Polygon ID のチームによるもので、暗号資産 $BILL は Coinbase などに上場している。提供元は ZKID Labs AG</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-billions" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>紹介リンクから登録し、顔のライブネスチェック、またはNFC対応のパスポートで認証する（日本からの利用は2026年10月に実際に確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-unknown" title="換金（現金にできるか）：未確認"><span aria-hidden="true">換金</span><b aria-hidden="true">?</b><span class="vh">換金（現金にできるか）：未確認</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> Power を $BILL や現金に交換できるかは公式に書かれていない。紹介した人がさらに紹介した分の一部も入るとする情報があるが、公式には未確認。$BILL は最高値から大きく下がっている。App Store の評価は低い。顔やパスポートの情報を扱うので、プライバシーの扱いを確認したい</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">スマホと身分証で「本物の人間」であることを証明するデジタルIDアプリ。認証や友だちの紹介で Power ポイントが貯まり、特典の解放に使える。Polygon ID のチームによるもので、暗号資産 $BILL は Coinbase などに上場している。提供元は ZKID Labs AG</p>
+<p class="need"><b>条件</b><span>紹介リンクから登録し、顔のライブネスチェック、またはNFC対応のパスポートで認証する（日本からの利用は2026年10月に実際に確認）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> Power を $BILL や現金に交換できるかは公式に書かれていない。紹介した人がさらに紹介した分の一部も入るとする情報があるが、公式には未確認。$BILL は最高値から大きく下がっている。App Store の評価は低い。顔やパスポートの情報を扱うので、プライバシーの扱いを確認したい</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><a class="btn solid ref" href="https://official.app/rc/ECMHPWI7AG" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div>
+<a class="to-page" href="/ja/services/billions/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://official.app/rc/ECMHPWI7AG" target="_blank" rel="noopener sponsored">紹介リンクから登録する</a></div></div>
 </article>
 <article class="svc rv" id="svc-fheid" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><h3><span class="cat">暗号資産ベーシックインカム</span><a href="/ja/services/fheid/">FheID <span class="q">Privasea</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/fheid/">FheID <span class="q">Privasea</span></a></h3></div></div>
 <p class="gain">人間証明でエアドロップや報酬（キャンペーンの「スター」など）</p>
-<div class="desc"><p id="d-fheid">スマホのカメラで顔を読み取り、「本物の人間」であることを証明するアプリ。顔の特徴は端末で暗号化され、完全準同型暗号（FHE）で処理されるので元の画像は送られないとされる。認証すると人間証明のNFTが作られ、エアドロップなどを受け取れる。運営は Privasea</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-fheid" hidden>もっと見る</button></div>
-<p class="need"><b>条件</b><span>アプリ FheID を入れて招待コード QVedKjg を入力し、顔で人間証明をする（日本からの利用は2026年10月に実際に確認）</span></p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><ul class="trust" aria-label="信頼の目安"><li class="t-unknown" title="換金（現金にできるか）：未確認"><span aria-hidden="true">換金</span><b aria-hidden="true">?</b><span class="vh">換金（現金にできるか）：未確認</span></li><li class="t-yes" title="市場価格（トークンに値段がついているか）：あり"><span aria-hidden="true">市場価格</span><b aria-hidden="true">✓</b><span class="vh">市場価格（トークンに値段がついているか）：あり</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 今どんな報酬がどれくらいもらえるかは公式に書かれていない。過去のキャンペーン（2024年）では、3段階までの紹介で「スター」がたまるしくみだった。PRAI は最高値から大きく下がっている。顔の情報を扱うので、プライバシーの扱いを確認してから使いたい</span></p>
 
+<div class="svc-foot"><details class="more"><summary>くわしく</summary><div class="more-in">
+<p class="note">スマホのカメラで顔を読み取り、「本物の人間」であることを証明するアプリ。顔の特徴は端末で暗号化され、完全準同型暗号（FHE）で処理されるので元の画像は送られないとされる。認証すると人間証明のNFTが作られ、エアドロップなどを受け取れる。運営は Privasea</p>
+<p class="need"><b>条件</b><span>アプリ FheID を入れて招待コード QVedKjg を入力し、顔で人間証明をする（日本からの利用は2026年10月に実際に確認）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 今どんな報酬がどれくらいもらえるかは公式に書かれていない。過去のキャンペーン（2024年）では、3段階までの紹介で「スター」がたまるしくみだった。PRAI は最高値から大きく下がっている。顔の情報を扱うので、プライバシーの扱いを確認してから使いたい</span></p>
 <p class="checked"><time datetime="2026-10">2026年10月に確認</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">QVedKjg</span></div><button class="btn line" type="button" data-code="QVedKjg">コピー</button><a class="btn solid ref" href="https://www.privasea.ai/download-app" target="_blank" rel="noopener">アプリを入れてコードを入力</a></div>
+<a class="to-page" href="/ja/services/fheid/">このサービスのページを見る →</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">QVedKjg</span></div><button class="btn line" type="button" data-code="QVedKjg">コピー</button><a class="btn solid ref" href="https://www.privasea.ai/download-app" target="_blank" rel="noopener">アプリを入れてコードを入力</a></div></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="認証方法の一覧"><a href="/ja/verify/world-id/" dir="auto">World ID（Orb認証）</a><a href="/ja/verify/kyc-id/" dir="auto">身分証のKYC</a><a href="/ja/verify/web-of-trust/" dir="auto">信頼の網・招待</a><a href="/ja/verify/none/" dir="auto">認証なし</a></nav>

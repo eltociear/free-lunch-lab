@@ -234,17 +234,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -264,7 +286,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -272,6 +294,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -336,9 +362,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -418,7 +455,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -502,6 +539,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -610,390 +652,496 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   </div>
   <p class="count" id="count" aria-live="polite">显示 35 项服务</p>
   <div class="grid" id="grid"><article class="svc rv" id="svc-gooddollar" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">GD</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/gooddollar/">GoodDollar</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">GD</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/gooddollar/">GoodDollar</a></h3></div></div>
 <p class="gain">每天领取 G$ 代币</p>
-<div class="desc"><p id="d-gooddollar">非营利 UBI 协议。每 24 小时可在应用中领取一次，当天的奖池由所有领取者平分</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-gooddollar" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>在应用中进行人脸身份验证</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 2026 年 5 月发生安全事件，储备金正在审查中。每日金额也很少</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">非营利 UBI 协议。每 24 小时可在应用中领取一次，当天的奖池由所有领取者平分</p>
+<p class="need"><b>获取方式</b><span>在应用中进行人脸身份验证</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 2026 年 5 月发生安全事件，储备金正在审查中。每日金额也很少</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/gooddollar/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://goodwallet.xyz?inviteCode=KgChqUuJic&amp;chainId=50" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-circles" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/circles/">Circles <span class="q">Gnosis App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/circles/">Circles <span class="q">Gnosis App</span></a></h3></div></div>
 <p class="gain">每小时 1 CRC（每天 24 CRC）</p>
-<div class="desc"><p id="d-circles">由 Gnosis 推出、每个人发行自己货币的机制。Circles 2.0 于 2025 年 5 月上线，2026 年 6 月 Gnosis App 围绕 Circles 进行了重建。本站暂时没有它的推荐链接</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-circles" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>在 Gnosis App 注册，并接受现有 Circles 成员的邀请。邀请人支付 96 CRC，被邀请人获得 48 CRC 欢迎奖励</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 没有成员邀请就无法开始。CRC 的市场价格和兑现方式尚未确认。Gnosis 已宣布计划将 Gnosis App 从 Gnosis Ltd 分拆为独立公司，内容可能会有变化</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">由 Gnosis 推出、每个人发行自己货币的机制。Circles 2.0 于 2025 年 5 月上线，2026 年 6 月 Gnosis App 围绕 Circles 进行了重建。本站暂时没有它的推荐链接</p>
+<p class="need"><b>获取方式</b><span>在 Gnosis App 注册，并接受现有 Circles 成员的邀请。邀请人支付 96 CRC，被邀请人获得 48 CRC 欢迎奖励</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 没有成员邀请就无法开始。CRC 的市场价格和兑现方式尚未确认。Gnosis 已宣布计划将 Gnosis App 从 Gnosis Ltd 分拆为独立公司，内容可能会有变化</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://app.gnosis.io/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/circles/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://app.gnosis.io/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-mepass" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ME</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/mepass/">ME Pass</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ME</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/mepass/">ME Pass</a></h3></div></div>
 <p class="gain">每天领取 MEC 代币</p>
-<div class="desc"><p id="d-mepass">Meta Earth 的钱包应用。完成验证的用户可获得 1 MEC 作为“无条件基本收入”，每日签到也有少量奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-mepass" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接注册，并在应用中完成 KYC</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 截至 2026 年 10 月，MEC 尚未在任何交易所上市，没有市场价格。只能通过点对点交易变现</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">Meta Earth 的钱包应用。完成验证的用户可获得 1 MEC 作为“无条件基本收入”，每日签到也有少量奖励</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册，并在应用中完成 KYC</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 截至 2026 年 10 月，MEC 尚未在任何交易所上市，没有市场价格。只能通过点对点交易变现</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/mepass/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://i.mec.me/ja-JP/?c=d22fj9hx" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-biomatrix" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">BM</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/biomatrix/">BioMatrix</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">BM</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/biomatrix/">BioMatrix</a></h3></div></div>
 <p class="gain">每月领取 PoY 代币</p>
-<div class="desc"><p id="d-biomatrix">承诺 60 年每月发放的 UBI 代币。使用推荐码注册可获得 5 枚代币奖励（截至 2026 年 1 月）。越早注册分配越多</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-biomatrix" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>在应用中通过生物识别验证后，每月领取</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 我们未能确认 PoY 的市场价格。请在接受其生物识别数据处理方式后再使用</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">承诺 60 年每月发放的 UBI 代币。使用推荐码注册可获得 5 枚代币奖励（截至 2026 年 1 月）。越早注册分配越多</p>
+<p class="need"><b>获取方式</b><span>在应用中通过生物识别验证后，每月领取</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 我们未能确认 PoY 的市场价格。请在接受其生物识别数据处理方式后再使用</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&amp;af_dp=biomatrix%3A%2F%2F&amp;deep_link_sub1=C66SPN" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/biomatrix/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://ac-tech.onelink.me/8enJ/qwujwndl?pid=source&amp;af_dp=biomatrix%3A%2F%2F&amp;deep_link_sub1=C66SPN" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><h3><span class="cat">返利网站</span><a href="/zh/services/hapitas/">Hapitas</a></h3><div class="tags"><span class="type once">一次性</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><div class="svc-line"><span class="cat">返利网站</span><div class="tags"><span class="type once">一次性</span></div></div><h3><a href="/zh/services/hapitas/">Hapitas</a></h3></div></div>
 <p class="gain">最高 2,300 积分</p>
-<div class="desc"><p id="d-hapitas">2026 年 10 月活动（1 积分 = 1 日元）。连续登录 3 天得 100 积分，通过广告累计获得 3,000 积分再得 1,000 积分等</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-hapitas" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>10 月 31 日前通过推荐注册，并于 11 月 30 日前达成条件</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region"><span class="vh">地区: </span>仅限日本</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">2026 年 10 月活动（1 积分 = 1 日元）。连续登录 3 天得 100 积分，通过广告累计获得 3,000 积分再得 1,000 积分等</p>
+<p class="need"><b>获取方式</b><span>10 月 31 日前通过推荐注册，并于 11 月 30 日前达成条件</span></p>
 
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/hapitas/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-wavee" data-cat="career" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><h3><span class="cat">工作匹配</span><a href="/zh/services/wavee/">WAVEE</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><div class="svc-line"><span class="cat">工作匹配</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/wavee/">WAVEE</a></h3></div></div>
 <p class="gain">每次找到工作都有匹配奖励</p>
-<div class="desc"><p id="d-wavee">完全邀请制的工作匹配平台。你邀请的人（或其邀请的人）每次找到工作，你都能反复获得推荐分成（7.5–15%）。DMM、GMO Pepabo 等公司在此发布职位</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wavee" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接注册</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 只有在工作匹配成功时才有收入。分成比例来自 2024 年 6 月的官方 note</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">完全邀请制的工作匹配平台。你邀请的人（或其邀请的人）每次找到工作，你都能反复获得推荐分成（7.5–15%）。DMM、GMO Pepabo 等公司在此发布职位</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 只有在工作匹配成功时才有收入。分成比例来自 2024 年 6 月的官方 note</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/wavee/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-trima" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Tr</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/trima/">Trima</a></h3><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Tr</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/trima/">Trima</a></h3></div></div>
 <p class="gain">5,000 里程 ＋ 移动和步数也能赚里程</p>
-<div class="desc"><p id="d-trima">只要带着手机移动或走路就能累积里程的应用。填写邀请码后，邀请人和被邀请人双方各得 5,000 里程（2026 年 7 月的信息）。里程可兑换礼品卡、现金等</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-trima" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>安装应用，注册时填写邀请码 49‑icnRep</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region"><span class="vh">地区: </span>仅限日本</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 奖励金额和发放时间可能会变。需要始终允许位置信息，耗电会稍多一些</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">只要带着手机移动或走路就能累积里程的应用。填写邀请码后，邀请人和被邀请人双方各得 5,000 里程（2026 年 7 月的信息）。里程可兑换礼品卡、现金等</p>
+<p class="need"><b>获取方式</b><span>安装应用，注册时填写邀请码 49‑icnRep</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 奖励金额和发放时间可能会变。需要始终允许位置信息，耗电会稍多一些</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">复制</button><a class="btn solid ref" href="https://www.trip-mile.com/" target="_blank" rel="noopener">安装应用并填写邀请码</a></div>
+<a class="to-page" href="/zh/services/trima/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">复制</button><a class="btn solid ref" href="https://www.trip-mile.com/" target="_blank" rel="noopener">安装应用并填写邀请码</a></div></div>
 </article>
 <article class="svc rv" id="svc-sweatcoin" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Sw</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/sweatcoin/">Sweatcoin</a></h3><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Sw</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/sweatcoin/">Sweatcoin</a></h3></div></div>
 <p class="gain">每 1,000 步 0.95 枚币</p>
-<div class="desc"><p id="d-sweatcoin">带着手机走路，步数就会自动变成币。可在应用内商城兑换商品、折扣或用于捐赠</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-sweatcoin" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>安装应用，并允许访问步数和位置信息</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 没有固定的现金兑换比例。免费版每天可兑换的步数有上限</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">带着手机走路，步数就会自动变成币。可在应用内商城兑换商品、折扣或用于捐赠</p>
+<p class="need"><b>获取方式</b><span>安装应用，并允许访问步数和位置信息</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 没有固定的现金兑换比例。免费版每天可兑换的步数有上限</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/sweatcoin/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-grass" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/grass/">Grass</a></h3><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/grass/">Grass</a></h3></div></div>
 <p class="gain">积分（之后换成 GRASS 代币）</p>
-<div class="desc"><p id="d-grass">把闲置带宽出租给 AI 网页数据采集的 DePIN 项目。保持浏览器扩展或应用在线，即可按在线时长和实际被使用的带宽累积积分，并通过每季空投发放</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-grass" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>用邮箱注册，安装扩展或应用并保持连接</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 你的 IP 地址会被他人用于数据采集。收益取决于空投，金额和时间都无法预估</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">把闲置带宽出租给 AI 网页数据采集的 DePIN 项目。保持浏览器扩展或应用在线，即可按在线时长和实际被使用的带宽累积积分，并通过每季空投发放</p>
+<p class="need"><b>获取方式</b><span>用邮箱注册，安装扩展或应用并保持连接</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 你的 IP 地址会被他人用于数据采集。收益取决于空投，金额和时间都无法预估</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/grass/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-honeygain" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Hg</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/honeygain/">Honeygain</a></h3><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Hg</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="max">最省心</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/honeygain/">Honeygain</a></h3></div></div>
 <p class="gain">按共享流量获得现金</p>
-<div class="desc"><p id="d-honeygain">最知名的带宽共享应用：把闲置网络出租给企业做网页数据采集。通过推荐注册可获得 $3 欢迎奖励（据官方博客）。满 $20 可通过 PayPal 等提现</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-honeygain" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>用邮箱注册，在电脑或手机上安装应用并保持运行</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 你的 IP 地址会被他人用于数据采集。收益取决于所在地区的需求，有些地区非常少</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">最知名的带宽共享应用：把闲置网络出租给企业做网页数据采集。通过推荐注册可获得 $3 欢迎奖励（据官方博客）。满 $20 可通过 PayPal 等提现</p>
+<p class="need"><b>获取方式</b><span>用邮箱注册，在电脑或手机上安装应用并保持运行</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 你的 IP 地址会被他人用于数据采集。收益取决于所在地区的需求，有些地区非常少</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/honeygain/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-pawns" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/pawns/">Pawns.app</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/pawns/">Pawns.app</a></h3></div></div>
 <p class="gain">按共享流量获得现金</p>
-<div class="desc"><p id="d-pawns">IPRoyal 旗下的带宽共享应用。让电脑端应用保持运行，闲置网络就能赚钱。问卷和游戏也能赚。满 $5 可通过 PayPal、比特币等提现</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pawns" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>用邮箱注册，在电脑上安装应用并保持运行</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 手机端带宽共享已于 2026 年 4 月停止，躺赚只能用电脑。你的 IP 地址会被他人用于数据采集，收益也不多</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">IPRoyal 旗下的带宽共享应用。让电脑端应用保持运行，闲置网络就能赚钱。问卷和游戏也能赚。满 $5 可通过 PayPal、比特币等提现</p>
+<p class="need"><b>获取方式</b><span>用邮箱注册，在电脑上安装应用并保持运行</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 手机端带宽共享已于 2026 年 4 月停止，躺赚只能用电脑。你的 IP 地址会被他人用于数据采集，收益也不多</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/pawns/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-pinetwork" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pi</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/pinetwork/">Pi Network</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pi</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/pinetwork/">Pi Network</a></h3></div></div>
 <p class="gain">每天获得 PI</p>
-<div class="desc"><p id="d-pinetwork">每 24 小时在应用中点一次按钮即可累积 PI。邀请的人越多，挖矿速度越快。2025 年 2 月向公众开放，在 OKX、Bitget、MEXC 等交易所交易</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pinetwork" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接注册（邀请码：eltociear）。要转移 PI，需要完成身份验证并迁移到主网钱包</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 价格较 2025 年最高点 $2.99 下跌约 97%（截至 2026 年 10 月约为 $0.08）。Binance、Coinbase 和日本交易所均未上架。需要每天操作，放着不管不会累积</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">每 24 小时在应用中点一次按钮即可累积 PI。邀请的人越多，挖矿速度越快。2025 年 2 月向公众开放，在 OKX、Bitget、MEXC 等交易所交易</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册（邀请码：eltociear）。要转移 PI，需要完成身份验证并迁移到主网钱包</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 价格较 2025 年最高点 $2.99 下跌约 97%（截至 2026 年 10 月约为 $0.08）。Binance、Coinbase 和日本交易所均未上架。需要每天操作，放着不管不会累积</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/pinetwork/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://minepi.com/eltociear" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">DK</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/deltakim/">Delta Kim</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">DK</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/deltakim/">Delta Kim</a></h3></div></div>
 <p class="gain">每天获得 KIM</p>
-<div class="desc"><p id="d-deltakim">类似 Pi Network 的加密资产应用，每天用手机“挖矿”。据称使用邀请码注册后挖矿速度会提高</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-deltakim" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接注册，每天在应用中点击挖矿按钮</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 截至 2026 年 10 月，尚未确认在任何交易所上架或有市场价格，能否兑现尚不清楚。也有用户反映挖矿后余额不再增加。需要每天操作</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">类似 Pi Network 的加密资产应用，每天用手机“挖矿”。据称使用邀请码注册后挖矿速度会提高</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册，每天在应用中点击挖矿按钮</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 截至 2026 年 10 月，尚未确认在任何交易所上架或有市场价格，能否兑现尚不清楚。也有用户反映挖矿后余额不再增加。需要每天操作</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/deltakim/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-interlink" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">IL</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/interlink/">InterLink</a></h3><div class="tags"><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">IL</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/interlink/">InterLink</a></h3></div></div>
 <p class="gain">每天获得 ITLG 代币</p>
-<div class="desc"><p id="d-interlink">向通过人脸验证确认“本人身份”的用户（Human Node）发放 ITLG 代币的项目。在应用中约每 4 小时签到一次（每天最多 6 次）即可累积</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-interlink" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接注册，并在应用中完成人脸验证</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 截至 2026 年 5 月，ITLG 尚未在交易所上架，没有市场价格。需要经常签到。请在认可其人脸生物信息处理方式的前提下使用</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">向通过人脸验证确认“本人身份”的用户（Human Node）发放 ITLG 代币的项目。在应用中约每 4 小时签到一次（每天最多 6 次）即可累积</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册，并在应用中完成人脸验证</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 截至 2026 年 5 月，ITLG 尚未在交易所上架，没有市场价格。需要经常签到。请在认可其人脸生物信息处理方式的前提下使用</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://interlinklabs.ai/541682748130" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/interlink/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://interlinklabs.ai/541682748130" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-meingrundeinkommen" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3></div></div>
 <p class="gain">中奖后每月 1,000 欧元，持续一年</p>
-<div class="desc"><p id="d-meingrundeinkommen">由柏林的非营利协会举办、以众筹捐款为资金的免费抽奖。定期开奖，每位中奖者可无条件连续 12 个月每月领取 1,000 欧元（是现金，不是加密货币）</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-meingrundeinkommen" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>用邮箱注册，并在每次抽奖前确认参加。需年满 16 岁，中奖时姓名和出生日期须与身份证件一致</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 主办方在 2020 年表示，不论年龄和居住地，任何人都可参加，但目前对德国境外居民的规定以及能否向海外付款尚未确认。网站为德语。这是抽奖，大多数参加者什么也拿不到。奖金在你所在的国家可能需要缴税</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">由柏林的非营利协会举办、以众筹捐款为资金的免费抽奖。定期开奖，每位中奖者可无条件连续 12 个月每月领取 1,000 欧元（是现金，不是加密货币）</p>
+<p class="need"><b>获取方式</b><span>用邮箱注册，并在每次抽奖前确认参加。需年满 16 岁，中奖时姓名和出生日期须与身份证件一致</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 主办方在 2020 年表示，不论年龄和居住地，任何人都可参加，但目前对德国境外居民的规定以及能否向海外付款尚未确认。网站为德语。这是抽奖，大多数参加者什么也拿不到。奖金在你所在的国家可能需要缴税</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/meingrundeinkommen/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-ubi4all" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/ubi4all/">UBI4ALL</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/ubi4all/">UBI4ALL</a></h3></div></div>
 <p class="gain">中奖后共得 9,600 欧元（在日本为每月 800 欧元，持续一年）</p>
-<div class="desc"><p id="d-ubi4all">由德国非营利组织举办的免费抽奖。每当捐款凑满 9,600 欧元就抽奖一次，中奖者无条件获得总计 9,600 欧元的现金基本收入。日本等高收入国家为每月 800 欧元、持续 1 年，低收入国家为每月 160 欧元、持续 5 年。没有推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-ubi4all" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>在官网免费注册，并为每次抽奖登记参加（每月捐款 1 欧元起的人自动参加）。需年满 16 岁，中奖后要用身份证件核实身份。本站尚未确认能否从日本注册</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 这是抽奖，中奖概率低，并取决于参加人数。只有捐款凑满 9,600 欧元才会开奖，时间不固定。不是 UBI Beaver 的话，每次抽奖都要登记参加。与上一位中奖者同一国家的居民不能参加下一次抽奖。奖金汇入 SEPA 银行账户，其他方式的手续费会从奖金中扣除。奖金如何纳税取决于你所在的国家</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">由德国非营利组织举办的免费抽奖。每当捐款凑满 9,600 欧元就抽奖一次，中奖者无条件获得总计 9,600 欧元的现金基本收入。日本等高收入国家为每月 800 欧元、持续 1 年，低收入国家为每月 160 欧元、持续 5 年。没有推荐奖励</p>
+<p class="need"><b>获取方式</b><span>在官网免费注册，并为每次抽奖登记参加（每月捐款 1 欧元起的人自动参加）。需年满 16 岁，中奖后要用身份证件核实身份。本站尚未确认能否从日本注册</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 这是抽奖，中奖概率低，并取决于参加人数。只有捐款凑满 9,600 欧元才会开奖，时间不固定。不是 UBI Beaver 的话，每次抽奖都要登记参加。与上一位中奖者同一国家的居民不能参加下一次抽奖。奖金汇入 SEPA 银行账户，其他方式的手续费会从奖金中扣除。奖金如何纳税取决于你所在的国家</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/ubi4all/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-g1" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/g1/">Ğ1 <span class="q">June</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/g1/">Ğ1 <span class="q">June</span></a></h3></div></div>
 <p class="gain">成为成员后每天获得 Ğ1（全民红利）</p>
-<div class="desc"><p id="d-g1">基于“货币相对论”的自由货币。运行在开源软件 Duniter 上，每位成员每天都会以“全民红利”的形式获得新发行的 Ğ1。2017 年 3 月启动，2026 年 3 月迁移到 Duniter v2。没有推荐链接，也没有推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-g1" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>创建钱包，并通过“信任网（Web of Trust）”获得至少 5 位现有成员的认证。认证人原则上应当与你本人相识</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 社区以法语圈为主，并以线下交往为基础，从日本等地加入相当困难。非成员也可以用钱包持有 Ğ1，但领不到每日红利。Ğ1 主要用于交换商品和服务，兑换成法币只能在个人之间进行</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">基于“货币相对论”的自由货币。运行在开源软件 Duniter 上，每位成员每天都会以“全民红利”的形式获得新发行的 Ğ1。2017 年 3 月启动，2026 年 3 月迁移到 Duniter v2。没有推荐链接，也没有推荐奖励</p>
+<p class="need"><b>获取方式</b><span>创建钱包，并通过“信任网（Web of Trust）”获得至少 5 位现有成员的认证。认证人原则上应当与你本人相识</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 社区以法语圈为主，并以线下交往为基础，从日本等地加入相当困难。非成员也可以用钱包持有 Ğ1，但领不到每日红利。Ğ1 主要用于交换商品和服务，兑换成法币只能在个人之间进行</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://duniter.org/g1/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/g1/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://duniter.org/g1/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-palai" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/palai/">Palai</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/palai/">Palai</a></h3></div></div>
 <p class="gain">每天领取 Palai（¶）基本收入</p>
-<div class="desc"><p id="d-palai">一种只因“你是人”就每天发放基本收入的独立货币。无需安装应用，也不用付钱。闲置的余额会慢慢“蒸发”，蒸发的部分作为基本收入重新分配。推荐朋友时，推荐人可额外获得 1 天的基本收入</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-palai" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过推荐链接注册，并登记手机号码完成认证（不需要身份证件）。收入需要自己申领，10 天内未申领的部分会作废</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-no" title="变现（能否换成现金）：无"><span aria-hidden="true">变现</span><b aria-hidden="true">✗</b><span class="vh">变现（能否换成现金）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 截至 2026 年 10 月，Palai 还无法兑换成欧元等货币，也没有官方汇率，只能与接受 Palai 的人交换商品或服务。官网没有写明运营方，只写着“由 Social Impact Lab Leipzig 支持”</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">一种只因“你是人”就每天发放基本收入的独立货币。无需安装应用，也不用付钱。闲置的余额会慢慢“蒸发”，蒸发的部分作为基本收入重新分配。推荐朋友时，推荐人可额外获得 1 天的基本收入</p>
+<p class="need"><b>获取方式</b><span>通过推荐链接注册，并登记手机号码完成认证（不需要身份证件）。收入需要自己申领，10 天内未申领的部分会作废</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 截至 2026 年 10 月，Palai 还无法兑换成欧元等货币，也没有官方汇率，只能与接受 Palai 的人交换商品或服务。官网没有写明运营方，只写着“由 Social Impact Lab Leipzig 支持”</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://palai.org/en?referrer=eltociear%2B856536b6d-da3a-4f27-9bcf-8eef2ce05bc2" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/palai/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://palai.org/en?referrer=eltociear%2B856536b6d-da3a-4f27-9bcf-8eef2ce05bc2" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-dotare" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Do</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/dotare/">Dotare</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Do</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/dotare/">Dotare</a></h3></div></div>
 <p class="gain">入选受益人后每月 10 ADA，持续一年（2027 年度）</p>
-<div class="desc"><p id="d-dotare">Cardano 上面向全球的基本收入基金。把捐赠的 ADA 通过质押等方式运作，收益每月以 ADA 发给领取者。2027 年度为每月 10 ADA，共 12 个月。没有收入审查。运营方为美国的 Dotare, LLC。没有推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-dotare" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>须年满 18 岁。在官网注册，并为想参加的每一年分别申请。轮到你时完成简单的身份验证（确认你是真人），并准备用于收款的 Cardano 钱包</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 2027 年度的申请已于 2026 年 8 月 31 日截止，登记将于 11 月 30 日截止；现在注册的人从何时开始领取尚未确认。按排队顺序发放，截至 2026 年 10 月 24 日网站显示登记 147 人、受益人 2 人。ADA 价格波动很大</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">Cardano 上面向全球的基本收入基金。把捐赠的 ADA 通过质押等方式运作，收益每月以 ADA 发给领取者。2027 年度为每月 10 ADA，共 12 个月。没有收入审查。运营方为美国的 Dotare, LLC。没有推荐奖励</p>
+<p class="need"><b>获取方式</b><span>须年满 18 岁。在官网注册，并为想参加的每一年分别申请。轮到你时完成简单的身份验证（确认你是真人），并准备用于收款的 Cardano 钱包</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 2027 年度的申请已于 2026 年 8 月 31 日截止，登记将于 11 月 30 日截止；现在注册的人从何时开始领取尚未确认。按排队顺序发放，截至 2026 年 10 月 24 日网站显示登记 147 人、受益人 2 人。ADA 价格波动很大</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://dotare.io/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/dotare/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://dotare.io/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-oro" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/oro/">ORO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">OR</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/oro/">ORO <span class="q">World App</span></a></h3></div></div>
 <p class="gain">每天领取 ORO 代币</p>
-<div class="desc"><p id="d-oro">在 World App 中运行的小程序，每天可领取一次 World Chain 上的代币 ORO。World 的介绍页写着邀请朋友可多得 ORO，但截至 2026 年 10 月在应用内未找到邀请链接。开发方为 Grupo de Fiesta</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-oro" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>安装 World App，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后打开 ORO 小程序每天领取</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 官方没有写明每天能领多少。低于 Orb 的验证等级是否足够尚不清楚。ORO 在去中心化交易所（DEX）交易，但流动性很小，1 ORO 不到 1 日元（2026 年 10 月）。找不到运营公司的信息</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">在 World App 中运行的小程序，每天可领取一次 World Chain 上的代币 ORO。World 的介绍页写着邀请朋友可多得 ORO，但截至 2026 年 10 月在应用内未找到邀请链接。开发方为 Grupo de Fiesta</p>
+<p class="need"><b>获取方式</b><span>安装 World App，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后打开 ORO 小程序每天领取</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 官方没有写明每天能领多少。低于 Orb 的验证等级是否足够尚不清楚。ORO 在去中心化交易所（DEX）交易，但流动性很小，1 ORO 不到 1 日元（2026 年 10 月）。找不到运营公司的信息</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/oro/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://world.org/ecosystem/app_f1e44837a5e3c2af4da8925b46027645" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-axo" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/axo/">AXO <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AX</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/axo/">AXO <span class="q">World App</span></a></h3></div></div>
 <p class="gain">每天领取 AXO 代币</p>
-<div class="desc"><p id="d-axo">在 World App 中运行的小程序，每天点一下即可领取 World Chain 上的代币 AXO。加入每月 1 WLD 的“Premium”后每日数量变为 3 倍。也有推荐机制。创始人为 David Mateos</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-axo" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过推荐链接（推荐码 932BDA）在 World App 中打开小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后每天领取</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-partial" title="运营方公开（是否公开运营公司）：有条件"><span aria-hidden="true">运营方</span><b aria-hidden="true">△</b><span class="vh">运营方公开（是否公开运营公司）：有条件</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 官方没有写明每天能领多少，也没有写明推荐奖励的内容。2026 年 10 月已确认，使用经 Orb 验证的 World ID 账户可在日本使用；低于 Orb 的验证等级是否足够尚不清楚。AXO 可在去中心化交易所（DEX）换成 WLD，但截至 2026 年 10 月流动性只有约 2,000 美元，1 AXO 远不到 1 美分。未找到运营公司的信息</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">在 World App 中运行的小程序，每天点一下即可领取 World Chain 上的代币 AXO。加入每月 1 WLD 的“Premium”后每日数量变为 3 倍。也有推荐机制。创始人为 David Mateos</p>
+<p class="need"><b>获取方式</b><span>通过推荐链接（推荐码 932BDA）在 World App 中打开小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用），然后每天领取</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 官方没有写明每天能领多少，也没有写明推荐奖励的内容。2026 年 10 月已确认，使用经 Orb 验证的 World ID 账户可在日本使用；低于 Orb 的验证等级是否足够尚不清楚。AXO 可在去中心化交易所（DEX）换成 WLD，但截至 2026 年 10 月流动性只有约 2,000 美元，1 AXO 远不到 1 美分。未找到运营公司的信息</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&amp;path=?ref=932BDA" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/axo/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://world.org/mini-app?app_id=app_8aeb55d57b7be834fb8d67e2f803d258&amp;path=?ref=932BDA" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-aidac" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/aidac/">AI-DAC <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">AI</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/aidac/">AI-DAC <span class="q">World App</span></a></h3></div></div>
 <p class="gain">DAC 代币形式的 UBI</p>
-<div class="desc"><p id="d-aidac">在 World App 中运行的小程序，自称“AI 驱动的全民基本收入平台”。经 World ID 确认为真人的用户领取 DAC，用来支持开发应用的自主“AI CEO”并参与投票。运营者为创始人 Kei Iwami。没有推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-aidac" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>在 World App 中打开 AI-DAC 小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 官方没有写明数量、频率和兑现方法。低于 Orb 的验证等级是否足够尚不清楚。DAC 没有发行上限，运营者可随时增发，价值可能被稀释。官方写明“价值不受保证”，DEX 上的流动性也极少（2026 年 10 月）</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">在 World App 中运行的小程序，自称“AI 驱动的全民基本收入平台”。经 World ID 确认为真人的用户领取 DAC，用来支持开发应用的自主“AI CEO”并参与投票。运营者为创始人 Kei Iwami。没有推荐奖励</p>
+<p class="need"><b>获取方式</b><span>在 World App 中打开 AI-DAC 小程序，用 World ID 证明你是真人（已确认在日本可用 Orb 验证的账户使用）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 官方没有写明数量、频率和兑现方法。低于 Orb 的验证等级是否足够尚不清楚。DAC 没有发行上限，运营者可随时增发，价值可能被稀释。官方写明“价值不受保证”，DEX 上的流动性也极少（2026 年 10 月）</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://lp.ai-dac.com/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/aidac/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://lp.ai-dac.com/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-ubiquitus" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ub</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/ubiquitus/">Ubiquitus</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ub</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/ubiquitus/">Ubiquitus</a></h3></div></div>
 <p class="gain">每月 1 日按人数平分的少量现金（Venmo）</p>
-<div class="desc"><p id="d-ubiquitus">美国的“人人可参加的基本收入”社会实验。把捐款作为基金进行投资，每月将其 0.5% 平分给所有参与者，通过 Venmo 发放。捐款不会让你领到更多。创始人为 Ryan Frigo。没有推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-ubiquitus" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>年满 18 岁的美国居民。用 Venmo 账户转账 1 美分完成验证（无需上传证件，也不审查收入）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region"><span class="vh">地区: </span>仅限美国居民</span><ul class="trust" aria-label="可信度参考"><li class="t-yes" title="变现（能否换成现金）：有"><span aria-hidden="true">变现</span><b aria-hidden="true">✓</b><span class="vh">变现（能否换成现金）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 截至 2026 年 10 月无法在日本使用（使用条款只面向美国居民；已亲自确认在日本无法使用）。每人金额极少，会随基金表现减少，官方明确发放不受保证、随时可能停止。运营方自称“非正式的社会实验”，并非公司。收到的钱需自行申报为收入</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">美国的“人人可参加的基本收入”社会实验。把捐款作为基金进行投资，每月将其 0.5% 平分给所有参与者，通过 Venmo 发放。捐款不会让你领到更多。创始人为 Ryan Frigo。没有推荐奖励</p>
+<p class="need"><b>获取方式</b><span>年满 18 岁的美国居民。用 Venmo 账户转账 1 美分完成验证（无需上传证件，也不审查收入）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 截至 2026 年 10 月无法在日本使用（使用条款只面向美国居民；已亲自确认在日本无法使用）。每人金额极少，会随基金表现减少，官方明确发放不受保证、随时可能停止。运营方自称“非正式的社会实验”，并非公司。收到的钱需自行申报为收入</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://www.ubiquitus.org/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/ubiquitus/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://www.ubiquitus.org/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-gradido" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/gradido/">Gradido</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/gradido/">Gradido</a></h3></div></div>
 <p class="gain">每做 1 小时公益贡献得 20 GDD（每月最多 1,000 GDD）</p>
-<div class="desc"><p id="d-gradido">自称“自然经济”的独立货币体系。从事公益活动可获得“主动基本收入”，每小时 20 GDD，每月最多 1,000 GDD。闲置的钱每年按 50% 的比例减少。运营方为奥地利的 Gradido Akademie</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-gradido" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过推荐链接免费注册 Gradido 账户，申报公益贡献并领取 GDD（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 官方 FAQ 称目前它是“感谢积分奖励系统”，并非加密货币。官方没有说明 GDD 能否兑换成欧元等货币。你推荐的人日后若做出资金贡献（如捐款），推荐人会获得 GDT（仅注册不会获得）</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">自称“自然经济”的独立货币体系。从事公益活动可获得“主动基本收入”，每小时 20 GDD，每月最多 1,000 GDD。闲置的钱每年按 50% 的比例减少。运营方为奥地利的 Gradido Akademie</p>
+<p class="need"><b>获取方式</b><span>通过推荐链接免费注册 Gradido 账户，申报公益贡献并领取 GDD（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 官方 FAQ 称目前它是“感谢积分奖励系统”，并非加密货币。官方没有说明 GDD 能否兑换成欧元等货币。你推荐的人日后若做出资金贡献（如捐款），推荐人会获得 GDT（仅注册不会获得）</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/gradido/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-wowapp" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">WA</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/wowapp/">WowApp</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">WA</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/wowapp/">WowApp</a></h3></div></div>
 <p class="gain">每天使用、游戏、购物等可得少量奖励</p>
-<div class="desc"><p id="d-wowapp">把聊天、通话应用与奖励机制结合的服务。通过每日“UBI”、游戏、购物返现等积累奖励，可以提现或捐给慈善机构。你邀请的朋友等自己的网络越活跃，你的奖励也越多</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wowapp" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过推荐链接免费注册，每天使用应用（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-partial" title="运营方公开（是否公开运营公司）：有条件"><span aria-hidden="true">运营方</span><b aria-hidden="true">△</b><span class="vh">运营方公开（是否公开运营公司）：有条件</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 奖励还会根据你邀请的人再往下的人的活动而发放，属于多层级（多级）模式。每天的金额极少，不会成为可观的收入。据称 PayPal 提现有最低金额等条件。日本 App Store 评分为 3.2，也有人反映无法提现</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">把聊天、通话应用与奖励机制结合的服务。通过每日“UBI”、游戏、购物返现等积累奖励，可以提现或捐给慈善机构。你邀请的朋友等自己的网络越活跃，你的奖励也越多</p>
+<p class="need"><b>获取方式</b><span>通过推荐链接免费注册，每天使用应用（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 奖励还会根据你邀请的人再往下的人的活动而发放，属于多层级（多级）模式。每天的金额极少，不会成为可观的收入。据称 PayPal 提现有最低金额等条件。日本 App Store 评分为 3.2，也有人反映无法提现</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/wowapp/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-humad" data-cat="pointsite" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><h3><span class="cat">返利网站</span><a href="/zh/services/humad/">Humad <span class="q">World App</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">HW</span><div class="svc-id"><div class="svc-line"><span class="cat">返利网站</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/humad/">Humad <span class="q">World App</span></a></h3></div></div>
 <p class="gain">点击广告、回答问题可得积分（1,500 积分＝150 日元起可换礼品卡）</p>
-<div class="desc"><p id="d-humad">在 World App 中运行的小程序。点击广告、回答问题即可积累积分，并兑换礼品券。用 World ID 证明真人身份后，广告积分变为 6 倍。运营方为博报堂 DY 控股旗下的 Ads for Humanity 株式会社。未发现推荐奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-humad" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>在 World App 中打开 Humad 小程序使用。兑换礼品卡需要用经 Orb 验证的 World ID 完成真人证明</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region"><span class="vh">地区: </span>仅限日本</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 积分只能兑换礼品卡，不能换现金，兑换后无法撤销。可在日本使用，且仅限日本（新闻稿也称仅限日本国内访问）。目前为测试版，内容可能变化。你的回答和关联的数据会被用于投放广告</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">在 World App 中运行的小程序。点击广告、回答问题即可积累积分，并兑换礼品券。用 World ID 证明真人身份后，广告积分变为 6 倍。运营方为博报堂 DY 控股旗下的 Ads for Humanity 株式会社。未发现推荐奖励</p>
+<p class="need"><b>获取方式</b><span>在 World App 中打开 Humad 小程序使用。兑换礼品卡需要用经 Orb 验证的 World ID 完成真人证明</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 积分只能兑换礼品卡，不能换现金，兑换后无法撤销。可在日本使用，且仅限日本（新闻稿也称仅限日本国内访问）。目前为测试版，内容可能变化。你的回答和关联的数据会被用于投放广告</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/humad/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://world.org/ja-jp/ecosystem/app_4969dec23e1fb4a7065935614a86d1e1" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-billions" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Bi</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/billions/">Billions</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Bi</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/billions/">Billions</a></h3></div></div>
 <p class="gain">Power 积分（通过验证、邀请好友和参与积累）</p>
-<div class="desc"><p id="d-billions">用手机和身份证件证明你是“真人”的数字身份应用。完成验证和推荐朋友可积累 Power 积分，用于解锁奖励。由 Polygon ID 团队打造，代币 $BILL 已在 Coinbase 等上市。发行方为 ZKID Labs AG</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-billions" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过推荐链接注册，并用人脸活体检测或支持 NFC 的护照完成验证（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 官方没有写明 Power 能否兑换成 $BILL 或现金。有信息称你推荐的人再推荐的人也会给你带来一部分，但官方未确认。$BILL 已从高点大幅下跌。App Store 评分很低。应用会处理面部和护照信息，请先确认隐私条款</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">用手机和身份证件证明你是“真人”的数字身份应用。完成验证和推荐朋友可积累 Power 积分，用于解锁奖励。由 Polygon ID 团队打造，代币 $BILL 已在 Coinbase 等上市。发行方为 ZKID Labs AG</p>
+<p class="need"><b>获取方式</b><span>通过推荐链接注册，并用人脸活体检测或支持 NFC 的护照完成验证（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 官方没有写明 Power 能否兑换成 $BILL 或现金。有信息称你推荐的人再推荐的人也会给你带来一部分，但官方未确认。$BILL 已从高点大幅下跌。App Store 评分很低。应用会处理面部和护照信息，请先确认隐私条款</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://official.app/rc/ECMHPWI7AG" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/billions/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://official.app/rc/ECMHPWI7AG" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-idena" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/idena/">Idena <span class="q">iDNA</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">ID</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/idena/">Idena <span class="q">iDNA</span></a></h3></div></div>
 <p class="gain">iDNA（节点运行期间的挖矿奖励，以及验证奖励）</p>
-<div class="desc"><p id="d-idena">以“一人一票”证明你是真人的 Proof of Person 区块链。在全球同步举行的“验证仪式”中解开名为 FLIP 的图片谜题即可通过验证。通过后，在运行节点期间可获得 iDNA 挖矿奖励。开源项目。没有推荐链接</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-idena" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>按官方 Telegram 的说明免费获取邀请码。用网页应用或自己的节点参加，在仪式时间在线解 FLIP（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-partial" title="运营方公开（是否公开运营公司）：有条件"><span aria-hidden="true">运营方</span><b aria-hidden="true">△</b><span class="vh">运营方公开（是否公开运营公司）：有条件</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 必须在仪式时间（截至 2026 年 10 月为日本时间午夜 0 点）在线，否则无法通过验证，比较费事。网络很小，iDNA 的价格和流动性都很低。禁止买卖邀请码。把奖励交给他人的“矿池”，对方可能卷走你的质押</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">以“一人一票”证明你是真人的 Proof of Person 区块链。在全球同步举行的“验证仪式”中解开名为 FLIP 的图片谜题即可通过验证。通过后，在运行节点期间可获得 iDNA 挖矿奖励。开源项目。没有推荐链接</p>
+<p class="need"><b>获取方式</b><span>按官方 Telegram 的说明免费获取邀请码。用网页应用或自己的节点参加，在仪式时间在线解 FLIP（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 必须在仪式时间（截至 2026 年 10 月为日本时间午夜 0 点）在线，否则无法通过验证，比较费事。网络很小，iDNA 的价格和流动性都很低。禁止买卖邀请码。把奖励交给他人的“矿池”，对方可能卷走你的质押</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://www.idena.io/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/idena/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://www.idena.io/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-rewardme" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/rewardme/">RewardMe</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/rewardme/">RewardMe</a></h3></div></div>
 <p class="gain">从收件箱的购物收据中自动获得最高 5% 返现（Reward Dollars／加密货币 MDT）</p>
-<div class="desc"><p id="d-rewardme">关联邮箱后，它会从收据邮件中自动找出在 Amazon、Uber 等合作商店的购物，积累最高 5% 的奖励。奖励可换成礼品券，或换成加密货币 MDT 提现。用推荐码注册时，推荐人和被推荐人双方都有奖励。发行方为香港的 Magic Crystal Limited</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-rewardme" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过推荐链接注册，并在注册时输入推荐码 7HOdyg。关联邮箱，在合作商户购物（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-partial" title="运营方公开（是否公开运营公司）：有条件"><span aria-hidden="true">运营方</span><b aria-hidden="true">△</b><span class="vh">运营方公开（是否公开运营公司）：有条件</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 它会读取所关联邮箱中的商业邮件内容，隐私政策写明会把去标识化的数据出售或共享给企业。兑换礼品券需 7–14 个工作日审核。6 个月不使用余额可能被清零。官方没有写明奖励金额</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">关联邮箱后，它会从收据邮件中自动找出在 Amazon、Uber 等合作商店的购物，积累最高 5% 的奖励。奖励可换成礼品券，或换成加密货币 MDT 提现。用推荐码注册时，推荐人和被推荐人双方都有奖励。发行方为香港的 Magic Crystal Limited</p>
+<p class="need"><b>获取方式</b><span>通过推荐链接注册，并在注册时输入推荐码 7HOdyg。关联邮箱，在合作商户购物（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 它会读取所关联邮箱中的商业邮件内容，隐私政策写明会把去标识化的数据出售或共享给企业。兑换礼品券需 7–14 个工作日审核。6 个月不使用余额可能被清零。官方没有写明奖励金额</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">复制</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/rewardme/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">复制</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-fheid" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><h3><span class="cat">加密货币基本收入</span><a href="/zh/services/fheid/">FheID <span class="q">Privasea</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">FI</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/fheid/">FheID <span class="q">Privasea</span></a></h3></div></div>
 <p class="gain">证明你是真人即可获得空投和奖励（如活动“星星”）</p>
-<div class="desc"><p id="d-fheid">用手机摄像头读取面部、证明你是“真人”的应用。面部特征在设备上加密，并用全同态加密（FHE）处理，据称原始图像不会被发送。验证后会生成真人证明 NFT，可领取空投等奖励。运营方为 Privasea</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-fheid" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>安装 FheID 应用，输入邀请码 QVedKjg，并用人脸完成真人验证（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-yes" title="市价（代币是否有市场价格）：有"><span aria-hidden="true">市价</span><b aria-hidden="true">✓</b><span class="vh">市价（代币是否有市场价格）：有</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-info"><span><b>注意：</b> 官方没有写明现在能获得什么奖励、多少。过去的活动（2024 年）是通过最多 3 层的推荐积累“星星”。PRAI 已从高点大幅下跌。应用会处理面部信息，使用前请确认隐私条款</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">用手机摄像头读取面部、证明你是“真人”的应用。面部特征在设备上加密，并用全同态加密（FHE）处理，据称原始图像不会被发送。验证后会生成真人证明 NFT，可领取空投等奖励。运营方为 Privasea</p>
+<p class="need"><b>获取方式</b><span>安装 FheID 应用，输入邀请码 QVedKjg，并用人脸完成真人验证（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
+<p class="caution lv-info"><span><b>注意：</b> 官方没有写明现在能获得什么奖励、多少。过去的活动（2024 年）是通过最多 3 层的推荐积累“星星”。PRAI 已从高点大幅下跌。应用会处理面部信息，使用前请确认隐私条款</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">QVedKjg</span></div><button class="btn line" type="button" data-code="QVedKjg">复制</button><a class="btn solid ref" href="https://www.privasea.ai/download-app" target="_blank" rel="noopener">安装应用并填写邀请码</a></div>
+<a class="to-page" href="/zh/services/fheid/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">CODE</span><span class="dot" dir="ltr">QVedKjg</span></div><button class="btn line" type="button" data-code="QVedKjg">复制</button><a class="btn solid ref" href="https://www.privasea.ai/download-app" target="_blank" rel="noopener">安装应用并填写邀请码</a></div></div>
 </article>
 <article class="svc rv" id="svc-jrkripto" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3></div></div>
 <p class="gain">每天获得 JR 积分（注册送 50 JR）</p>
-<div class="desc"><p id="d-jrkripto">土耳其加密资产新闻、分析和行情网站 JrKripto 的手机应用，创始人还运营股票信息网站 JrHisse。每天在应用中点一次，接下来 24 小时内会累积 JR 积分。使用邀请码注册并验证邮箱，可获得 50 JR 奖励</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-jrkripto" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接注册并验证邮箱（无需身份证件）。之后每天在应用中点一次即可（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-no" title="变现（能否换成现金）：无"><span aria-hidden="true">变现</span><b aria-hidden="true">✗</b><span class="vh">变现（能否换成现金）：无</span></li><li class="t-partial" title="运营方公开（是否公开运营公司）：有条件"><span aria-hidden="true">运营方</span><b aria-hidden="true">△</b><span class="vh">运营方公开（是否公开运营公司）：有条件</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 邀请页面本身写明“JR 是应用内积分，不能出售或转让”。截至 2026 年 10 月没有任何兑现途径，价值取决于将来可能的用途。不每天点击就不会累积。Google Play 上的包名是“com.yourcompany.jrkripto”，看起来像是未修改的模板名称</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">土耳其加密资产新闻、分析和行情网站 JrKripto 的手机应用，创始人还运营股票信息网站 JrHisse。每天在应用中点一次，接下来 24 小时内会累积 JR 积分。使用邀请码注册并验证邮箱，可获得 50 JR 奖励</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接注册并验证邮箱（无需身份证件）。之后每天在应用中点一次即可（已于 2026 年 10 月亲自确认可在日本使用）</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 邀请页面本身写明“JR 是应用内积分，不能出售或转让”。截至 2026 年 10 月没有任何兑现途径，价值取决于将来可能的用途。不每天点击就不会累积。Google Play 上的包名是“com.yourcompany.jrkripto”，看起来像是未修改的模板名称</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/jrkripto/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3><div class="tags"><span class="risk">高风险</span><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="risk">高风险</span><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3></div></div>
 <p class="gain">$ORE 挖矿余额（免费，每次 24 小时）</p>
-<div class="desc"><p id="d-miningmachine">在浏览器中用“挖矿机”积累 $ORE 余额的网站。注册免费，无需充值或安装。免费矿机每次运行 24 小时。付费可以增加矿机。邀请人可获得被邀请人挖矿量的 10% 和其付费金额的 10%</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接免费注册（用邮箱或 X 登录，无需身份证件）。之后每 24 小时开始一次挖矿（已于 2026 年 10 月确认可从日本注册）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-no" title="变现（能否换成现金）：无"><span aria-hidden="true">变现</span><b aria-hidden="true">✗</b><span class="vh">变现（能否换成现金）：无</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
-<p class="caution lv-danger"><span><b>注意：</b> $ORE 还不是代币，网站自己也写明“余额不是对代币的承诺”。没有运营者的姓名、所在地或白皮书。页面用倒计时催你尽快注册。每 24 小时需要自己重新开始挖矿</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">在浏览器中用“挖矿机”积累 $ORE 余额的网站。注册免费，无需充值或安装。免费矿机每次运行 24 小时。付费可以增加矿机。邀请人可获得被邀请人挖矿量的 10% 和其付费金额的 10%</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接免费注册（用邮箱或 X 登录，无需身份证件）。之后每 24 小时开始一次挖矿（已于 2026 年 10 月确认可从日本注册）</span></p>
+<p class="caution lv-danger"><span><b>注意：</b> $ORE 还不是代币，网站自己也写明“余额不是对代币的承诺”。没有运营者的姓名、所在地或白皮书。页面用倒计时催你尽快注册。每 24 小时需要自己重新开始挖矿</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn warn-go" href="/zh/services/miningmachine/#warn">先看注意事项再注册</a></div>
+<a class="to-page" href="/zh/services/miningmachine/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn warn-go" href="/zh/services/miningmachine/#warn">先看注意事项再注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-kabuand" data-cat="pointsite" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">KA</span><div class="svc-id"><h3><span class="cat">返利网站</span><a href="/zh/services/kabuand/">KABU&amp;</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">KA</span><div class="svc-id"><div class="svc-line"><span class="cat">返利网站</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/kabuand/">KABU&amp;</a></h3></div></div>
 <p class="gain">按电费、燃气费、手机费等支付金额获得的股票兑换券（用于申购未上市股票）</p>
-<div class="desc"><p id="d-kabuand">由前泽友作担任社长的 Kabu &amp; Peace 株式会社提供的服务。根据 KABU&amp; 电力、燃气、手机等服务的费用或 KABU&amp; 卡消费额获得“股票兑换券”，在募集期内申请即可换成该公司的未上市股票。也可当作每张 1 日元的折扣券。推荐人和被推荐人双方都能获得兑换券</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-kabuand" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>居住在日本的成年人（外国籍人士须满足在留资格条件）。注册会员，签约服务并付费。兑换股票需在募集期内申请、完成 eKYC，并开设大和 Connect 证券账户</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region"><span class="vh">地区: </span>仅限日本</span><ul class="trust" aria-label="可信度参考"><li class="t-no" title="变现（能否换成现金）：无"><span aria-hidden="true">变现</span><b aria-hidden="true">✗</b><span class="vh">变现（能否换成现金）：无</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 这些股票未上市：目前无法出售或变现，将来的价值不确定。兑换券基本上只有付费使用服务才能获得。官方推荐说明写明，在社交媒体上扩散推荐码可能导致奖励无效。通过电话、社交媒体或邮件推销其股票的很可能是诈骗：这些股票只能用兑换券获得</span></p>
 <p class="contact-ref">想要推荐码的话，请在 X 上私信 <a href="https://x.com/FreeLunchLab" target="_blank" rel="noopener" dir="ltr">@FreeLunchLab</a>（推荐人，即本站运营者，也会获得股票兑换券）。</p>
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">由前泽友作担任社长的 Kabu &amp; Peace 株式会社提供的服务。根据 KABU&amp; 电力、燃气、手机等服务的费用或 KABU&amp; 卡消费额获得“股票兑换券”，在募集期内申请即可换成该公司的未上市股票。也可当作每张 1 日元的折扣券。推荐人和被推荐人双方都能获得兑换券</p>
+<p class="need"><b>获取方式</b><span>居住在日本的成年人（外国籍人士须满足在留资格条件）。注册会员，签约服务并付费。兑换股票需在募集期内申请、完成 eKYC，并开设大和 Connect 证券账户</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 这些股票未上市：目前无法出售或变现，将来的价值不确定。兑换券基本上只有付费使用服务才能获得。官方推荐说明写明，在社交媒体上扩散推荐码可能导致奖励无效。通过电话、社交媒体或邮件推销其股票的很可能是诈骗：这些股票只能用兑换券获得</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid off" href="https://kabuand.com/" target="_blank" rel="noopener">查看官方网站</a></div>
+<a class="to-page" href="/zh/services/kabuand/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://kabuand.com/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-lifeai" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">LA</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/lifeai/">Life AI Testnet</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">LA</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/lifeai/">Life AI Testnet</a></h3></div></div>
 <p class="gain">测试网积分（每日抽 USDT，排名靠前者有代币和 NFT 奖励）</p>
-<div class="desc"><p id="d-lifeai">医疗健康 AI 项目“Life AI”的测试网。每天回答一道 Yes/No 小测验，并把答案发到 X 上即可积累积分，每天坚持积分更多。官网列出的奖励有 USDT 抽奖和排行榜奖励等。运营方为新加坡非营利组织 LIFE AI Foundation</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-lifeai" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>通过邀请链接用 X 等账号登录，并登记接收奖励的 EVM 钱包地址（无需身份证件）。之后每天答题并发帖（已于 2026 年 10 月确认可从日本注册）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
-<p class="caution lv-caution"><span><b>注意：</b> 积分不是钱，不保证能领到。官方没有可交易的 LIFE 代币，也没有承诺代币或空投。不要把助记词告诉任何人，也不要连接存有资产的钱包。被要求付款时请怀疑是诈骗。邀请人（包括本站运营者）会根据你的活动获得积分</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">医疗健康 AI 项目“Life AI”的测试网。每天回答一道 Yes/No 小测验，并把答案发到 X 上即可积累积分，每天坚持积分更多。官网列出的奖励有 USDT 抽奖和排行榜奖励等。运营方为新加坡非营利组织 LIFE AI Foundation</p>
+<p class="need"><b>获取方式</b><span>通过邀请链接用 X 等账号登录，并登记接收奖励的 EVM 钱包地址（无需身份证件）。之后每天答题并发帖（已于 2026 年 10 月确认可从日本注册）</span></p>
+<p class="caution lv-caution"><span><b>注意：</b> 积分不是钱，不保证能领到。官方没有可交易的 LIFE 代币，也没有承诺代币或空投。不要把助记词告诉任何人，也不要连接存有资产的钱包。被要求付款时请怀疑是诈骗。邀请人（包括本站运营者）会根据你的活动获得积分</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn solid ref" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div>
+<a class="to-page" href="/zh/services/lifeai/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">通过推荐链接注册</a></div></div>
 </article>
 <article class="svc rv" id="svc-refrax" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">躺赚应用</span><a href="/zh/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3><div class="tags"><span class="risk">高风险</span><span class="new">NEW</span><span class="type loop">持续</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><div class="svc-line"><span class="cat">躺赚应用</span><div class="tags"><span class="risk">高风险</span><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3></div></div>
 <p class="gain">待定的 $REFRAX 积分（代币尚未发行）</p>
-<div class="desc"><p id="d-refrax">自称 Solana 上去中心化存储的项目“Refrax”的第 0 季任务。用 X 登录，通过关注、发帖、邀请朋友和每日签到积累积分。网站称积分将在上线时以 $REFRAX 发放到你登记的 Solana 钱包</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-refrax" hidden>展开</button></div>
-<p class="need"><b>获取方式</b><span>打开邀请链接，用 X 登录（刚注册的 X 账号不能参加）。登记接收奖励的 Solana 地址，然后完成任务并每日签到（已于 2026 年 10 月确认可从日本注册）</span></p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><ul class="trust" aria-label="可信度参考"><li class="t-no" title="变现（能否换成现金）：无"><span aria-hidden="true">变现</span><b aria-hidden="true">✗</b><span class="vh">变现（能否换成现金）：无</span></li><li class="t-no" title="市价（代币是否有市场价格）：无"><span aria-hidden="true">市价</span><b aria-hidden="true">✗</b><span class="vh">市价（代币是否有市场价格）：无</span></li><li class="t-unknown" title="运营方公开（是否公开运营公司）：未确认"><span aria-hidden="true">运营方</span><b aria-hidden="true">?</b><span class="vh">运营方公开（是否公开运营公司）：未确认</span></li></ul></div>
-<p class="caution lv-danger"><span><b>注意：</b> 积分既不是钱也不是代币，不保证能领到。只登记接收地址，不要把助记词告诉任何人。上线前后常出现假的领取网站，请只使用官方 X 和 refrax.xyz 的链接。邀请人（包括本站运营者）会在你完成任务时获得积分</span></p>
 
+<div class="svc-foot"><details class="more"><summary>详情</summary><div class="more-in">
+<p class="note">自称 Solana 上去中心化存储的项目“Refrax”的第 0 季任务。用 X 登录，通过关注、发帖、邀请朋友和每日签到积累积分。网站称积分将在上线时以 $REFRAX 发放到你登记的 Solana 钱包</p>
+<p class="need"><b>获取方式</b><span>打开邀请链接，用 X 登录（刚注册的 X 账号不能参加）。登记接收奖励的 Solana 地址，然后完成任务并每日签到（已于 2026 年 10 月确认可从日本注册）</span></p>
+<p class="caution lv-danger"><span><b>注意：</b> 积分既不是钱也不是代币，不保证能领到。只登记接收地址，不要把助记词告诉任何人。上线前后常出现假的领取网站，请只使用官方 X 和 refrax.xyz 的链接。邀请人（包括本站运营者）会在你完成任务时获得积分</span></p>
 <p class="checked"><time datetime="2026-10">核实于2026年10月</time></p>
-<div class="slip"><a class="btn warn-go" href="/zh/services/refrax/#warn">先看注意事项再注册</a></div>
+<a class="to-page" href="/zh/services/refrax/">查看完整页面 →</a>
+</div></details>
+<div class="slip"><a class="btn warn-go" href="/zh/services/refrax/#warn">先看注意事项再注册</a></div></div>
 </article><p class="empty-state" id="empty" hidden>没有符合条件的服务。</p></div>
+  <p class="show-all-wrap"><button class="btn line show-all" type="button" id="showAll" hidden></button></p>
 </section>
 
 <section id="verify">
@@ -1080,18 +1228,30 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <div class="toast" id="toast" role="status" hidden></div>
 <script>
 (function(){
-  var I18N={"more":"展开","less":"收起","count":"显示 {n} 项服务","copied":"推荐码已复制","selected":"已选中推荐码，请从菜单中复制","linkCopied":"链接已复制","shareText":"Free Lunch Lab（免费午餐研究所）😴💰 加密货币 UBI 和躺赚应用一览","url":"https://neteru-nyukin.eltociear.workers.dev/zh/"};
+  var I18N={"count":"显示 {n} 项服务","showAll":"显示全部（还有 {n} 个）","copied":"推荐码已复制","selected":"已选中推荐码，请从菜单中复制","linkCopied":"链接已复制","shareText":"Free Lunch Lab（免费午餐研究所）😴💰 加密货币 UBI 和躺赚应用一览","url":"https://neteru-nyukin.eltociear.workers.dev/zh/"};
   var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
       countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
+  // スマホでは最初の LIMIT 件だけ出す（「すべて表示」を押すか、#svc-… で来たら全部出す）
+  var LIMIT=12,mq=window.matchMedia('(max-width:760px)'),all=false,showAll=document.getElementById('showAll');
   function apply(){
-    var n=0;
+    var n=0,lim=mq.matches&&!all;
     grid.querySelectorAll('.svc').forEach(function(el){
       var show=(cat==='all'||el.getAttribute('data-cat')===cat)&&(!loopOnly.checked||el.getAttribute('data-type')==='loop');
       el.hidden=!show; if(show)n++;
+      el.classList.toggle('over',show&&lim&&n>LIMIT);
     });
     empty.hidden=n>0;
     countEl.textContent=I18N.count.replace('{n}',n);
+    showAll.hidden=!(lim&&n>LIMIT);
+    if(!showAll.hidden) showAll.textContent=I18N.showAll.replace('{n}',n-LIMIT);
   }
+  function expand(){if(!all){all=true;apply()}}
+  showAll.addEventListener('click',function(){var first=grid.querySelector('.svc.over');expand();if(first){var a=first.querySelector('h3 a');if(a)a.focus({preventScroll:true})}});
+  if(mq.addEventListener) mq.addEventListener('change',apply);
+  function fromHash(){var h=location.hash.slice(1),el=h&&document.getElementById(h);if(el&&el.classList.contains('over')){expand();el.scrollIntoView()}}
+  window.addEventListener('hashchange',fromHash);
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#svc-"]');if(!a)return;var el=document.getElementById(a.getAttribute('href').slice(1));if(el&&el.classList.contains('over'))expand()});
+  apply(); fromHash();
   filters.addEventListener('click',function(e){
     var b=e.target.closest('button'); if(!b) return;
     cat=b.getAttribute('data-cat');
@@ -1099,6 +1259,9 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
     apply();
   });
   loopOnly.addEventListener('change',apply);
+  // カテゴリの横スクロール: 右端（RTL では左端）まで来たら、ぼかしを消す
+  function edge(){var max=filters.scrollWidth-filters.clientWidth;filters.classList.toggle('at-end',max<2||Math.abs(filters.scrollLeft)>=max-2)}
+  filters.addEventListener('scroll',edge,{passive:true}); window.addEventListener('resize',edge); edge();
   function say(msg){toast.textContent=msg;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
   grid.addEventListener('click',function(e){
     var b=e.target.closest('[data-code]'); if(!b) return;
@@ -1111,21 +1274,6 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   });
   var ns=document.getElementById('nativeShare');
   if(navigator.share){ns.hidden=false;ns.addEventListener('click',function(){navigator.share({text:I18N.shareText,url:I18N.url}).catch(function(){})})}
-  // 説明文は3行で畳む。はみ出すものだけ「もっと見る」を出す
-  function clampAll(){
-    grid.querySelectorAll('.desc').forEach(function(d){
-      if(d.classList.contains('open')) return;
-      var p=d.firstChild,b=d.lastChild;
-      b.hidden=!(p.scrollHeight>p.clientHeight+1);
-    });
-  }
-  clampAll();
-  if(document.fonts) document.fonts.ready.then(clampAll);
-  grid.addEventListener('click',function(e){
-    var b=e.target.closest('.expand'); if(!b) return;
-    var d=b.parentNode,open=d.classList.toggle('open');
-    b.setAttribute('aria-expanded',open); b.textContent=open?I18N.less:I18N.more;
-  });
   // スクロールで少しずつ出す（一度だけ）。動きを減らす設定や非対応のときはそのまま見せる
   var rv=document.querySelectorAll('.rv,.rise');
   if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
@@ -1154,7 +1302,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   function measure(){root.style.setProperty('--bar-h',(bar?bar.offsetHeight:0)+'px');root.style.setProperty('--tools-h',tools.offsetHeight+'px')}
   function onScroll(){tools.classList.toggle('stuck',stuck())}
   measure(); onScroll();
-  window.addEventListener('resize',function(){measure();onScroll();clampAll()});
+  window.addEventListener('resize',function(){measure();onScroll()});
   window.addEventListener('scroll',onScroll,{passive:true});
   document.querySelector('.lang').addEventListener('click',function(e){
     var a=e.target.closest('a'); if(!a||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey) return;
@@ -1174,6 +1322,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
     if(fb&&s.cat!=='all') fb.click();
     if(s.loop){loopOnly.checked=true;apply()}
     var el=s.id&&document.getElementById(s.id),goneY;
+    if(el&&el.classList.contains('over')) expand();
     function go(){
       if(!el||el.hidden) return;
       root.style.scrollBehavior='auto';
@@ -1184,7 +1333,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
     go();
     // フォント等の読込で位置がずれたら、まだ動かしていなければ合わせ直す
     window.addEventListener('load',function(){if(window.scrollY===goneY)go()});
-    if(document.fonts) document.fonts.ready.then(function(){clampAll();if(window.scrollY===goneY)go()});
+    if(document.fonts) document.fonts.ready.then(function(){if(window.scrollY===goneY)go()});
   }
 })();
 </script>

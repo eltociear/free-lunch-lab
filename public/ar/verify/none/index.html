@@ -227,17 +227,39 @@ section{padding-block:clamp(60px,8vw,100px) 0}
 /* もらえるもの: ドットの書体は日本語と英語だけ（ほかの言語は字形がないので本文の太字） */
 .gain{font-family:var(--f-body);font-weight:700;font-size:1.4rem;line-height:1.4;color:var(--pos);overflow-wrap:break-word}
 html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight:400;font-size:1.5rem}
-.desc p{font-size:.86rem;line-height:1.75;color:var(--muted)}
-.js .desc:not(.open) p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
-.expand{font:inherit;font-size:.8125rem;font-weight:700;color:var(--accent);background:none;border:0;padding:2px 0;margin-top:2px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
-.expand::after{content:"";width:6px;height:6px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.desc.open .expand::after{transform:translateY(1px) rotate(-135deg)}
-.expand:hover{text-decoration:underline;text-underline-offset:3px}
+/* 一覧のカードは短く: アイコン・名前・もらえるもの・目安・ボタンだけ。説明・条件・注意は「くわしく」の中（details） */
+.grid .svc{gap:8px;padding:12px 14px}
+.grid .svc .ava{width:42px;height:42px;border-radius:12px;font-size:.95rem}
+.grid .svc .svc-top{gap:12px;align-items:center}
+.grid .svc .svc-id{gap:2px}
+.svc-line{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.svc-line .cat{margin:0}
+.grid .svc h3{font-size:1.12rem;line-height:1.35}
+.grid .svc h3 .q{display:inline;margin-inline-start:6px;font-size:.72em;vertical-align:.08em}
+.grid .svc .gain{font-size:1.12rem;line-height:1.4}
+html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18rem;line-height:1.35}
+.grid .svc .meta{padding:0;background:none;gap:5px}
+.grid .svc .meta>*{background:transparent}
+/* 下の段: 「くわしく」とボタンを横に並べる。開くと説明が下の段いっぱいに広がる */
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:2px}
+.svc-foot .slip{order:1;flex:1 1 180px;padding-top:0}
+.svc-foot .more{order:0;flex:none}
+.svc-foot .more[open]{order:2;flex-basis:100%;border-top:1px dashed var(--line)}
+.svc-foot:has(.code) .slip{flex-basis:100%;order:-1}
+.grid .slip .btn.ref,.grid .slip .btn.off,.grid .slip .btn.warn-go{padding-block:10px;font-size:.92rem}
+.more summary{display:flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--accent)}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.more[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.more summary:hover{text-decoration:underline;text-underline-offset:3px}
+.more-in{display:grid;gap:10px;padding-bottom:8px}
+.more-in .note{font-size:.92rem;line-height:1.75}
+.to-page{justify-self:start;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.9rem;text-underline-offset:3px}
 .need{display:flex;gap:10px;align-items:baseline;font-size:.86rem;line-height:1.6}
 .need b{flex:none;font-size:.8125rem;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 7px;letter-spacing:.04em}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px;border-radius:12px;background:color-mix(in srgb,var(--paper) 65%,var(--surface))}
 .meta>*,.trust li{background:var(--surface)}
-.ease{display:inline-flex;align-items:center;gap:7px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:1px 10px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.ease{display:inline-flex;align-items:center;gap:6px;font-size:.8125rem;line-height:1.5;color:var(--muted);padding:0 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
 .meter{display:inline-flex;gap:3px;vertical-align:middle}
 .meter i{width:9px;height:9px;border-radius:2px;background:var(--line)}
 .meter i.on{background:var(--c,var(--accent))}
@@ -257,7 +279,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .risk::before{content:"!";width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#2A0B07;color:var(--stamp);font-size:.75rem;line-height:1}
 .contact-ref{font-size:.8125rem;line-height:1.65;color:var(--ink);padding:9px 12px;border-radius:12px;border:1px dashed var(--line);overflow-wrap:anywhere}
 .contact-ref a{font-weight:700;color:var(--accent);text-underline-offset:3px}
-.checked{font-size:.8125rem;color:var(--muted);margin-top:-4px}
+.checked{font-size:.8125rem;color:var(--muted)}
 .slip{display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:6px}
 .code{border:1.5px dashed var(--muted);border-radius:10px;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
 .code .dot{font-size:1.05rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -265,6 +287,10 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .code.empty .dot{color:var(--muted);font-size:.88rem}
 .slip .btn.line{border-radius:10px}
 .slip .solid{grid-column:1/-1}
+/* スマホでは最初の12件だけ出して「すべて表示」で残りを開く（JS があるときだけ） */
+.svc.over{display:none}
+.show-all-wrap{display:flex;justify-content:center;margin-top:16px}
+.show-all{border-radius:999px;padding:10px 24px;border-color:var(--line)}
 .empty-state{grid-column:1/-1;border:1.5px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
 
 /* steps: 金色の数字を線でつなぐ（スマホは縦） */
@@ -329,9 +355,20 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
   .nav a{padding-inline:8px}
   .brand{font-size:1rem}
   .lm summary{padding:0 10px}
-  /* スマホではカテゴリを折り返して全部見せる（横スクロールで途中が切れないように）。そのぶん上に貼りつけない */
-  .tools{position:static;padding:10px;gap:8px;border-radius:14px}
-  .filters{flex:1 1 100%}
+  /* スマホではカテゴリを1行で横にスクロール。続きがあるときは端をぼかして、スクロールできることを見せる。上には貼りつけない */
+  .tools{position:static;padding:8px 10px;gap:4px;border-radius:14px}
+  .filters{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-10px;padding:0 10px;scroll-padding-inline:10px;scroll-snap-type:x proximity;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+  [dir="rtl"] .filters{-webkit-mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(-90deg,#000 calc(100% - 48px),transparent)}
+  .filters.at-end{-webkit-mask-image:none;mask-image:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;scroll-snap-align:start}
+  section{padding-block:44px 0}
+  .grid{gap:12px}
+  .news>li:nth-child(n+4){display:none}
+  .orgs-mini p{display:none}
+  .orgs-mini li{padding-block:4px}
+  .legend{gap:4px 14px;margin-bottom:14px}
   .switch{margin-inline-start:0}
   .svc{padding:18px}
   .steps{grid-template-columns:1fr;gap:0}
@@ -411,7 +448,7 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 
 /* trust chips / NEW badge */
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;background:none!important}
-.trust li{display:inline-flex;align-items:center;gap:5px;font-size:.8125rem;line-height:1.5;padding:1px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
+.trust li{display:inline-flex;align-items:center;gap:4px;font-size:.8125rem;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;cursor:help}
 .trust b,.tr-leg b{font-weight:700}
 .t-yes>b,b.t-yes{color:var(--pos)}.t-partial>b,b.t-partial{color:var(--amber)}.t-no>b,b.t-no{color:var(--stamp)}.t-unknown>b,b.t-unknown{color:var(--muted)}
 .tr-leg{display:inline-flex;flex-wrap:wrap;gap:2px 10px}
@@ -495,6 +532,11 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 .js .svc.rv.done{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 
 @media (max-width:760px){
+  /* スマホでは通帳と滞在タイマーを出さない（飾りなので、おすすめと一覧を先に） */
+  .hero-side{display:none}
+  .foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}
+  .foot>span:first-child,.foot>span:last-child{grid-column:1/-1;padding-block:8px}
+  .horizon{height:110px}
   .picks{grid-template-columns:1fr}
   .moon{width:76px;height:76px;top:150px;inset-inline-end:4px;opacity:.85}
   .zzz{top:140px;inset-inline-end:80px}
@@ -661,191 +703,242 @@ html[lang="ja"] .gain,html[lang="en"] .gain{font-family:var(--f-dot);font-weight
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">التحقق</p><h1>تطبيقات لا تتطلب التحقق من الهوية</h1><p class="orgs-intro">يمكنك البدء ببريد إلكتروني أو بتثبيت تطبيق فقط، دون تحقق من الهوية. في المقابل تكون المبالغ أصغر، وبعض الخدمات تأخذ شيئًا آخر، كمشاركة النطاق الترددي أو قراءة بريدك. راجع ملاحظات كل بطاقة. في ⁦RewardMe⁩ يكون ⁦World ID⁩ اختياريًا ويُسرّع استبدال بطاقات الهدايا فقط.</p></header>
 <section class="vsec"><h2>خدمات تتطلبه<span class="dot">17</span></h2><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><h3><span class="cat">استرداد نقدي</span><a href="/ar/services/hapitas/">Hapitas</a></h3><div class="tags"><span class="type once">مرة واحدة</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><div class="svc-line"><span class="cat">استرداد نقدي</span><div class="tags"><span class="type once">مرة واحدة</span></div></div><h3><a href="/ar/services/hapitas/">Hapitas</a></h3></div></div>
 <p class="gain">حتى 2,300 نقطة</p>
-<div class="desc"><p id="d-hapitas">عرض أكتوبر 2026 (النقطة = 1 ين). 100 نقطة لتسجيل الدخول 3 أيام متتالية، و1,000 عند جمع 3,000 نقطة من العروض، وغير ذلك</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-hapitas" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>انضم عبر الإحالة قبل 31 أكتوبر واستوفِ الشروط قبل 30 نوفمبر</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region"><span class="vh">المنطقة: </span>اليابان فقط</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-yes" title="صرف نقدي (هل يمكن تحويله إلى نقود): نعم"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✓</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">عرض أكتوبر 2026 (النقطة = 1 ين). 100 نقطة لتسجيل الدخول 3 أيام متتالية، و1,000 عند جمع 3,000 نقطة من العروض، وغير ذلك</p>
+<p class="need"><b>طريقة الحصول</b><span>انضم عبر الإحالة قبل 31 أكتوبر واستوفِ الشروط قبل 30 نوفمبر</span></p>
 
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/hapitas/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://hapitas.jp/appinvite/?i=25819964" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-wavee" data-cat="career" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><h3><span class="cat">توظيف</span><a href="/ar/services/wavee/">WAVEE</a></h3><div class="tags"><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">W</span><div class="svc-id"><div class="svc-line"><span class="cat">توظيف</span><div class="tags"><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/wavee/">WAVEE</a></h3></div></div>
 <p class="gain">مكافأة في كل مرة تحصل فيها على وظيفة</p>
-<div class="desc"><p id="d-wavee">منصة توظيف بالدعوة فقط. في كل مرة يحصل فيها شخص دعوته (أو شخص دعاه) على وظيفة، تحصل على حصة إحالة مرارًا وتكرارًا (7.5–15%). تنشر فيها شركات مثل DMM وGMO Pepabo وظائفها</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wavee" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الدعوة</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> تكسب فقط عند إتمام التوظيف. النسب مأخوذة من المنشور الرسمي في يونيو 2024</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">منصة توظيف بالدعوة فقط. في كل مرة يحصل فيها شخص دعوته (أو شخص دعاه) على وظيفة، تحصل على حصة إحالة مرارًا وتكرارًا (7.5–15%). تنشر فيها شركات مثل DMM وGMO Pepabo وظائفها</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الدعوة</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> تكسب فقط عند إتمام التوظيف. النسب مأخوذة من المنشور الرسمي في يونيو 2024</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/wavee/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://wavee.world/invitation/b96d00e6-b802-4a1b-8a66-2e3854a01ffd" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-trima" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Tr</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/trima/">Trima</a></h3><div class="tags"><span class="max">ثبّت وانسَ</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Tr</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="max">ثبّت وانسَ</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/trima/">Trima</a></h3></div></div>
 <p class="gain">5,000 ميل + أميال مقابل التنقل والمشي</p>
-<div class="desc"><p id="d-trima">تطبيق تجمع فيه الأميال بمجرد حمل هاتفك أثناء التنقل أو المشي. عند إدخال رمز الدعوة يحصل كلٌّ من الداعي والمستخدم الجديد على 5,000 ميل (معلومات يوليو 2026). يمكن استبدال الأميال ببطاقات هدايا أو نقود وغيرها</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-trima" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>ثبّت التطبيق وأدخل رمز الدعوة ⁦49‑icnRep⁩ عند التسجيل</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region"><span class="vh">المنطقة: </span>اليابان فقط</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-yes" title="صرف نقدي (هل يمكن تحويله إلى نقود): نعم"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✓</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> قد يتغير مبلغ المكافأة وموعدها. يتطلب السماح بالموقع دائمًا ويستهلك البطارية أكثر قليلًا</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق تجمع فيه الأميال بمجرد حمل هاتفك أثناء التنقل أو المشي. عند إدخال رمز الدعوة يحصل كلٌّ من الداعي والمستخدم الجديد على 5,000 ميل (معلومات يوليو 2026). يمكن استبدال الأميال ببطاقات هدايا أو نقود وغيرها</p>
+<p class="need"><b>طريقة الحصول</b><span>ثبّت التطبيق وأدخل رمز الدعوة ⁦49‑icnRep⁩ عند التسجيل</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> قد يتغير مبلغ المكافأة وموعدها. يتطلب السماح بالموقع دائمًا ويستهلك البطارية أكثر قليلًا</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">نسخ</button><a class="btn solid ref" href="https://www.trip-mile.com/" target="_blank" rel="noopener">ثبّت التطبيق وأدخل الرمز</a></div>
+<a class="to-page" href="/ar/services/trima/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot" dir="ltr">49-icnRep</span></div><button class="btn line" type="button" data-code="49-icnRep">نسخ</button><a class="btn solid ref" href="https://www.trip-mile.com/" target="_blank" rel="noopener">ثبّت التطبيق وأدخل الرمز</a></div></div>
 </article>
 <article class="svc rv" id="svc-sweatcoin" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Sw</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/sweatcoin/">Sweatcoin</a></h3><div class="tags"><span class="max">ثبّت وانسَ</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Sw</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="max">ثبّت وانسَ</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/sweatcoin/">Sweatcoin</a></h3></div></div>
 <p class="gain">0.95 عملة لكل 1,000 خطوة</p>
-<div class="desc"><p id="d-sweatcoin">احمل هاتفك وامشِ، فتتحوّل خطواتك إلى عملات تلقائيًا. استخدمها في متجر التطبيق للحصول على منتجات أو خصومات أو للتبرّع</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-sweatcoin" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>ثبّت التطبيق واسمح بالوصول إلى الخطوات والموقع</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> لا يوجد سعر ثابت لتحويلها إلى نقد. الخطة المجانية تحدّ عدد الخطوات التي تُحوَّل يوميًا</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">احمل هاتفك وامشِ، فتتحوّل خطواتك إلى عملات تلقائيًا. استخدمها في متجر التطبيق للحصول على منتجات أو خصومات أو للتبرّع</p>
+<p class="need"><b>طريقة الحصول</b><span>ثبّت التطبيق واسمح بالوصول إلى الخطوات والموقع</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> لا يوجد سعر ثابت لتحويلها إلى نقد. الخطة المجانية تحدّ عدد الخطوات التي تُحوَّل يوميًا</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/sweatcoin/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://swcapp.com/i/mover77273393923" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-grass" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/grass/">Grass</a></h3><div class="tags"><span class="max">ثبّت وانسَ</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="max">ثبّت وانسَ</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/grass/">Grass</a></h3></div></div>
 <p class="gain">نقاط (ثم رموز GRASS لاحقًا)</p>
-<div class="desc"><p id="d-grass">شبكة DePIN تؤجّر عرض النطاق غير المستخدم لديك لجمع بيانات الويب للذكاء الاصطناعي. أبقِ الإضافة أو التطبيق قيد التشغيل لتجمع نقاطًا حسب مدة الاتصال وعرض النطاق المستخدم فعلًا، وتُوزَّع عبر إسقاطات جوية موسمية</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-grass" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل بالبريد الإلكتروني، وثبّت الإضافة أو التطبيق وابقَ متصلًا</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="سعر السوق (هل للرمز سعر متداول): نعم"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✓</b><span class="vh">سعر السوق (هل للرمز سعر متداول): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> يستخدم آخرون عنوان IP الخاص بك لجمع البيانات. المكافآت تعتمد على الإسقاطات الجوية، فلا يمكن توقّع قيمتها أو موعدها</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">شبكة DePIN تؤجّر عرض النطاق غير المستخدم لديك لجمع بيانات الويب للذكاء الاصطناعي. أبقِ الإضافة أو التطبيق قيد التشغيل لتجمع نقاطًا حسب مدة الاتصال وعرض النطاق المستخدم فعلًا، وتُوزَّع عبر إسقاطات جوية موسمية</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل بالبريد الإلكتروني، وثبّت الإضافة أو التطبيق وابقَ متصلًا</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> يستخدم آخرون عنوان IP الخاص بك لجمع البيانات. المكافآت تعتمد على الإسقاطات الجوية، فلا يمكن توقّع قيمتها أو موعدها</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/grass/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://app.grass.io/register?referralCode=97_MD5PEysoBbJ7" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-honeygain" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Hg</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/honeygain/">Honeygain</a></h3><div class="tags"><span class="max">ثبّت وانسَ</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Hg</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="max">ثبّت وانسَ</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/honeygain/">Honeygain</a></h3></div></div>
 <p class="gain">نقود مقابل حركة البيانات التي تشاركها</p>
-<div class="desc"><p id="d-honeygain">أشهر تطبيق لمشاركة عرض النطاق: يؤجّر اتصالك غير المستخدم للشركات لجمع بيانات الويب. التسجيل عبر رابط إحالة يمنح مكافأة ترحيبية قدرها ⁦$3⁩ (حسب المدونة الرسمية). اسحب أرباحك عبر PayPal وغيره عند بلوغ ⁦$20⁩</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-honeygain" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل بالبريد الإلكتروني، وثبّت التطبيق على حاسوبك أو هاتفك واتركه يعمل</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="5/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-yes" title="صرف نقدي (هل يمكن تحويله إلى نقود): نعم"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✓</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> يستخدم آخرون عنوان IP الخاص بك لجمع البيانات. الأرباح تعتمد على الطلب في منطقتك وقد تكون ضئيلة جدًا في بعض المناطق</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">أشهر تطبيق لمشاركة عرض النطاق: يؤجّر اتصالك غير المستخدم للشركات لجمع بيانات الويب. التسجيل عبر رابط إحالة يمنح مكافأة ترحيبية قدرها ⁦$3⁩ (حسب المدونة الرسمية). اسحب أرباحك عبر PayPal وغيره عند بلوغ ⁦$20⁩</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل بالبريد الإلكتروني، وثبّت التطبيق على حاسوبك أو هاتفك واتركه يعمل</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> يستخدم آخرون عنوان IP الخاص بك لجمع البيانات. الأرباح تعتمد على الطلب في منطقتك وقد تكون ضئيلة جدًا في بعض المناطق</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/honeygain/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://join.honeygain.com/ELTOCD89E5" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-pawns" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/pawns/">Pawns.app</a></h3><div class="tags"><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Pa</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/pawns/">Pawns.app</a></h3></div></div>
 <p class="gain">نقود مقابل حركة البيانات التي تشاركها</p>
-<div class="desc"><p id="d-pawns">تطبيق مشاركة عرض النطاق من IPRoyal. اترك تطبيق الحاسوب يعمل ليكسب اتصالك غير المستخدم مالًا. الاستبيانات والألعاب تدفع أيضًا. اسحب أرباحك من ⁦$5⁩ عبر PayPal وبيتكوين وغيرها</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-pawns" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل بالبريد الإلكتروني، وثبّت تطبيق الحاسوب واتركه يعمل</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-yes" title="صرف نقدي (هل يمكن تحويله إلى نقود): نعم"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✓</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> توقفت مشاركة عرض النطاق على الهاتف في أبريل 2026، فالكسب السلبي على الحاسوب فقط. يستخدم آخرون عنوان IP الخاص بك لجمع البيانات، والأرباح قليلة</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق مشاركة عرض النطاق من IPRoyal. اترك تطبيق الحاسوب يعمل ليكسب اتصالك غير المستخدم مالًا. الاستبيانات والألعاب تدفع أيضًا. اسحب أرباحك من ⁦$5⁩ عبر PayPal وبيتكوين وغيرها</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل بالبريد الإلكتروني، وثبّت تطبيق الحاسوب واتركه يعمل</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> توقفت مشاركة عرض النطاق على الهاتف في أبريل 2026، فالكسب السلبي على الحاسوب فقط. يستخدم آخرون عنوان IP الخاص بك لجمع البيانات، والأرباح قليلة</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/pawns/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-deltakim" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">DK</span><div class="svc-id"><h3><span class="cat">دخل أساسي مشفّر</span><a href="/ar/services/deltakim/">Delta Kim</a></h3><div class="tags"><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">DK</span><div class="svc-id"><div class="svc-line"><span class="cat">دخل أساسي مشفّر</span><div class="tags"><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/deltakim/">Delta Kim</a></h3></div></div>
 <p class="gain">عملة KIM كل يوم</p>
-<div class="desc"><p id="d-deltakim">تطبيق عملات مشفرة يشبه Pi Network، «تعدّن» فيه يوميًا من هاتفك. يُقال إن التسجيل برمز إحالة يرفع سرعة التعدين</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-deltakim" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الدعوة واضغط زر التعدين في التطبيق كل يوم</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-unknown" title="صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">?</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد</span></li><li class="t-no" title="سعر السوق (هل للرمز سعر متداول): لا"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✗</b><span class="vh">سعر السوق (هل للرمز سعر متداول): لا</span></li><li class="t-unknown" title="المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">?</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد</span></li></ul></div>
-<p class="caution lv-caution"><span><b>تنبيه:</b> حتى أكتوبر 2026 لم يتسنَّ التأكد من إدراجها في أي منصة تداول أو من وجود سعر سوقي، لذا ليس واضحًا إن كان يمكن تحويلها إلى نقود. يذكر بعض المستخدمين أن رصيدهم توقف عن الزيادة رغم التعدين. يتطلب إجراءً يوميًا</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق عملات مشفرة يشبه Pi Network، «تعدّن» فيه يوميًا من هاتفك. يُقال إن التسجيل برمز إحالة يرفع سرعة التعدين</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الدعوة واضغط زر التعدين في التطبيق كل يوم</span></p>
+<p class="caution lv-caution"><span><b>تنبيه:</b> حتى أكتوبر 2026 لم يتسنَّ التأكد من إدراجها في أي منصة تداول أو من وجود سعر سوقي، لذا ليس واضحًا إن كان يمكن تحويلها إلى نقود. يذكر بعض المستخدمين أن رصيدهم توقف عن الزيادة رغم التعدين. يتطلب إجراءً يوميًا</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/deltakim/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://www.delta.kim/?referrer=E7XK90P8N2AX9" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-meingrundeinkommen" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MG</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/meingrundeinkommen/">Mein Grundeinkommen</a></h3></div></div>
 <p class="gain">⁦€1,000⁩ شهريًا لمدة سنة إن فزت</p>
-<div class="desc"><p id="d-meingrundeinkommen">سحب مجاني تنظمه جمعية غير ربحية في برلين ويُموَّل بتبرعات التمويل الجماعي. تُجرى السحوبات بانتظام، ويحصل كل فائز على ⁦€1,000⁩ شهريًا لمدة 12 شهرًا دون أي شروط (نقود حقيقية، لا عملات مشفرة)</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-meingrundeinkommen" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل ببريدك الإلكتروني وأكّد مشاركتك في كل سحب. يجب أن يكون عمرك 16 عامًا أو أكثر، وعند الفوز يجب أن يطابق اسمك وتاريخ ميلادك وثيقة هويتك</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-yes" title="صرف نقدي (هل يمكن تحويله إلى نقود): نعم"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✓</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> ذكرت الجهة المنظمة في 2020 أن المشاركة متاحة للجميع بغض النظر عن العمر أو مكان الإقامة، لكن القواعد الحالية للمقيمين خارج ألمانيا والدفع إلى الخارج غير مؤكدة. الموقع باللغة الألمانية. إنه سحب، لذا لا يحصل معظم المشاركين على شيء. قد تخضع الجوائز للضريبة في بلدك</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">سحب مجاني تنظمه جمعية غير ربحية في برلين ويُموَّل بتبرعات التمويل الجماعي. تُجرى السحوبات بانتظام، ويحصل كل فائز على ⁦€1,000⁩ شهريًا لمدة 12 شهرًا دون أي شروط (نقود حقيقية، لا عملات مشفرة)</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل ببريدك الإلكتروني وأكّد مشاركتك في كل سحب. يجب أن يكون عمرك 16 عامًا أو أكثر، وعند الفوز يجب أن يطابق اسمك وتاريخ ميلادك وثيقة هويتك</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> ذكرت الجهة المنظمة في 2020 أن المشاركة متاحة للجميع بغض النظر عن العمر أو مكان الإقامة، لكن القواعد الحالية للمقيمين خارج ألمانيا والدفع إلى الخارج غير مؤكدة. الموقع باللغة الألمانية. إنه سحب، لذا لا يحصل معظم المشاركين على شيء. قد تخضع الجوائز للضريبة في بلدك</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/meingrundeinkommen/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://meinbge.de/fuer-dich/4143ce95b90cf10386f4?utm_campaign=freundschaft" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-ubi4all" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/ubi4all/">UBI4ALL</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">UB</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/ubi4all/">UBI4ALL</a></h3></div></div>
 <p class="gain">⁦€9,600⁩ إن فزت (في اليابان: ⁦€800⁩ شهريًا لمدة سنة)</p>
-<div class="desc"><p id="d-ubi4all">سحب مجاني تنظّمه جمعية ألمانية غير ربحية. كلما بلغت التبرعات ⁦€9,600⁩ يُسحب دخل أساسي بقيمة ⁦€9,600⁩ إجمالًا، يُدفع نقدًا ودون شروط. الدول المرتفعة الدخل مثل اليابان تحصل على ⁦€800⁩ شهريًا لمدة سنة، والدول المنخفضة الدخل على ⁦€160⁩ شهريًا لمدة 5 سنوات. لا توجد مكافأة إحالة</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-ubi4all" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>أنشئ حسابًا مجانيًا في الموقع الرسمي وسجّل في كل سحب (المتبرعون الشهريون من ⁦€1⁩ يشاركون تلقائيًا). يجب أن يكون عمرك 16 عامًا أو أكثر، ويُتحقق من هوية الفائزين. لم يجرّب هذا الموقع التسجيل من اليابان بعد</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-yes" title="صرف نقدي (هل يمكن تحويله إلى نقود): نعم"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✓</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): نعم</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> إنه سحب، لذا فرص الفوز ضئيلة وتعتمد على عدد المشاركين. لا يُجرى السحب إلا عندما تملأ التبرعات مبلغ ⁦€9,600⁩، لذا مواعيده غير منتظمة. إن لم تكن من ⁦UBI Beavers⁩ فعليك التسجيل في كل سحب. يُستبعد المقيمون في بلد الفائز السابق من السحب التالي. تُحوَّل المدفوعات إلى حسابات مصرفية ⁦SEPA⁩، ورسوم الطرق الأخرى تُخصم من الجائزة. تختلف ضريبة الجائزة حسب بلدك</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">سحب مجاني تنظّمه جمعية ألمانية غير ربحية. كلما بلغت التبرعات ⁦€9,600⁩ يُسحب دخل أساسي بقيمة ⁦€9,600⁩ إجمالًا، يُدفع نقدًا ودون شروط. الدول المرتفعة الدخل مثل اليابان تحصل على ⁦€800⁩ شهريًا لمدة سنة، والدول المنخفضة الدخل على ⁦€160⁩ شهريًا لمدة 5 سنوات. لا توجد مكافأة إحالة</p>
+<p class="need"><b>طريقة الحصول</b><span>أنشئ حسابًا مجانيًا في الموقع الرسمي وسجّل في كل سحب (المتبرعون الشهريون من ⁦€1⁩ يشاركون تلقائيًا). يجب أن يكون عمرك 16 عامًا أو أكثر، ويُتحقق من هوية الفائزين. لم يجرّب هذا الموقع التسجيل من اليابان بعد</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> إنه سحب، لذا فرص الفوز ضئيلة وتعتمد على عدد المشاركين. لا يُجرى السحب إلا عندما تملأ التبرعات مبلغ ⁦€9,600⁩، لذا مواعيده غير منتظمة. إن لم تكن من ⁦UBI Beavers⁩ فعليك التسجيل في كل سحب. يُستبعد المقيمون في بلد الفائز السابق من السحب التالي. تُحوَّل المدفوعات إلى حسابات مصرفية ⁦SEPA⁩، ورسوم الطرق الأخرى تُخصم من الجائزة. تختلف ضريبة الجائزة حسب بلدك</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">زيارة الموقع الرسمي</a></div>
+<a class="to-page" href="/ar/services/ubi4all/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid off" href="https://www.ubi4all.org/" target="_blank" rel="noopener">زيارة الموقع الرسمي</a></div></div>
 </article>
 <article class="svc rv" id="svc-gradido" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/gradido/">Gradido</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Gr</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/gradido/">Gradido</a></h3></div></div>
 <p class="gain">⁦20 GDD⁩ عن كل ساعة عمل للصالح العام (حتى ⁦1,000 GDD⁩ شهريًا)</p>
-<div class="desc"><p id="d-gradido">نظام عملة يقدّم نفسه «اقتصادًا طبيعيًا». العمل للصالح العام يمنح «دخلًا أساسيًا نشطًا» قدره ⁦20 GDD⁩ في الساعة، حتى ⁦1,000 GDD⁩ شهريًا. المال غير المستخدم يتناقص بنسبة 50% سنويًا. تديره ⁦Gradido Akademie⁩ في النمسا</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-gradido" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>أنشئ حساب ⁦Gradido⁩ مجانًا عبر رابط الإحالة، وسجّل مساهماتك في الصالح العام واستلم ⁦GDD⁩ (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-unknown" title="صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">?</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): غير مؤكد</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> تقول الأسئلة الشائعة الرسمية إنه حاليًا «نظام نقاط شكر» وليس عملة مشفرة. لا توجد طريقة رسمية معلنة لتحويل ⁦GDD⁩ إلى يورو أو نقود أخرى. إذا قدّم من أحلته لاحقًا مساهمة مالية (كالتبرع) تحصل على ⁦GDT⁩؛ ولا شيء لمجرد التسجيل</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">نظام عملة يقدّم نفسه «اقتصادًا طبيعيًا». العمل للصالح العام يمنح «دخلًا أساسيًا نشطًا» قدره ⁦20 GDD⁩ في الساعة، حتى ⁦1,000 GDD⁩ شهريًا. المال غير المستخدم يتناقص بنسبة 50% سنويًا. تديره ⁦Gradido Akademie⁩ في النمسا</p>
+<p class="need"><b>طريقة الحصول</b><span>أنشئ حساب ⁦Gradido⁩ مجانًا عبر رابط الإحالة، وسجّل مساهماتك في الصالح العام واستلم ⁦GDD⁩ (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> تقول الأسئلة الشائعة الرسمية إنه حاليًا «نظام نقاط شكر» وليس عملة مشفرة. لا توجد طريقة رسمية معلنة لتحويل ⁦GDD⁩ إلى يورو أو نقود أخرى. إذا قدّم من أحلته لاحقًا مساهمة مالية (كالتبرع) تحصل على ⁦GDT⁩؛ ولا شيء لمجرد التسجيل</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/gradido/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://gdd.gradido.net/u/eltociear" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-wowapp" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">WA</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/wowapp/">WowApp</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">WA</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/wowapp/">WowApp</a></h3></div></div>
 <p class="gain">مكافآت صغيرة مقابل الاستخدام اليومي والألعاب والتسوق وغيرها</p>
-<div class="desc"><p id="d-wowapp">تطبيق دردشة ومكالمات مع نظام مكافآت. تجمع المكافآت من «دخل أساسي» يومي وألعاب واسترداد نقدي على المشتريات وغيرها، ثم تسحبها أو تتبرع بها لجمعيات خيرية. عندما تنشط شبكتك، كالأصدقاء الذين دعوتهم، تزيد مكافآتك أيضًا</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-wowapp" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل مجانًا عبر رابط الإحالة واستخدم التطبيق يوميًا (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-partial" title="المشغّل (هل الجهة المشغّلة معلنة): بشروط"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">△</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): بشروط</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> تأتي المكافآت أيضًا من نشاط الأشخاص الأبعد في سلسلة دعواتك: نظام متعدد المستويات. المبالغ اليومية ضئيلة جدًا ولن تصبح دخلًا حقيقيًا. يقال إن السحب إلى ⁦PayPal⁩ له شروط مثل حد أدنى. تقييم ⁦App Store⁩ في اليابان 3.2، مع شكاوى من تعذّر السحب</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق دردشة ومكالمات مع نظام مكافآت. تجمع المكافآت من «دخل أساسي» يومي وألعاب واسترداد نقدي على المشتريات وغيرها، ثم تسحبها أو تتبرع بها لجمعيات خيرية. عندما تنشط شبكتك، كالأصدقاء الذين دعوتهم، تزيد مكافآتك أيضًا</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل مجانًا عبر رابط الإحالة واستخدم التطبيق يوميًا (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> تأتي المكافآت أيضًا من نشاط الأشخاص الأبعد في سلسلة دعواتك: نظام متعدد المستويات. المبالغ اليومية ضئيلة جدًا ولن تصبح دخلًا حقيقيًا. يقال إن السحب إلى ⁦PayPal⁩ له شروط مثل حد أدنى. تقييم ⁦App Store⁩ في اليابان 3.2، مع شكاوى من تعذّر السحب</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/wowapp/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://www.wowapp.com/w/eltociear/Ikko-Ashimine" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-rewardme" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/rewardme/">RewardMe</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RM</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/rewardme/">RewardMe</a></h3></div></div>
 <p class="gain">استرداد نقدي حتى 5% من إيصالات الشراء في بريدك (⁦Reward Dollars⁩ / عملة ⁦MDT⁩ المشفرة)</p>
-<div class="desc"><p id="d-rewardme">اربط بريدك الإلكتروني فيكتشف من رسائل الإيصالات مشترياتك من ⁦Amazon⁩ و⁦Uber⁩ ومتاجر شريكة أخرى، بمكافأة تصل إلى 5%. يمكن أخذ المكافآت بطاقات هدايا أو سحبها كرمز ⁦MDT⁩ المشفر. التسجيل برمز إحالة يمنح الطرفين مكافأة. الناشر ⁦Magic Crystal Limited⁩ في هونغ كونغ</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-rewardme" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الإحالة وأدخل رمز الإحالة ⁦7HOdyg⁩ عند التسجيل. اربط حساب بريد إلكتروني وتسوّق من المتاجر المشمولة (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-yes" title="سعر السوق (هل للرمز سعر متداول): نعم"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✓</b><span class="vh">سعر السوق (هل للرمز سعر متداول): نعم</span></li><li class="t-partial" title="المشغّل (هل الجهة المشغّلة معلنة): بشروط"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">△</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): بشروط</span></li></ul></div>
-<p class="caution lv-info"><span><b>تنبيه:</b> يقرأ الرسائل التجارية في البريد المربوط، وتقول سياسة الخصوصية إن البيانات بعد إزالة ما يحدد الهوية تُباع للشركات أو تُشارك معها. تستغرق الموافقة على بطاقات الهدايا 7–14 يوم عمل. قد ينتهي الرصيد بعد 6 أشهر دون استخدام. مبالغ المكافآت غير مذكورة رسميًا</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">اربط بريدك الإلكتروني فيكتشف من رسائل الإيصالات مشترياتك من ⁦Amazon⁩ و⁦Uber⁩ ومتاجر شريكة أخرى، بمكافأة تصل إلى 5%. يمكن أخذ المكافآت بطاقات هدايا أو سحبها كرمز ⁦MDT⁩ المشفر. التسجيل برمز إحالة يمنح الطرفين مكافأة. الناشر ⁦Magic Crystal Limited⁩ في هونغ كونغ</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الإحالة وأدخل رمز الإحالة ⁦7HOdyg⁩ عند التسجيل. اربط حساب بريد إلكتروني وتسوّق من المتاجر المشمولة (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
+<p class="caution lv-info"><span><b>تنبيه:</b> يقرأ الرسائل التجارية في البريد المربوط، وتقول سياسة الخصوصية إن البيانات بعد إزالة ما يحدد الهوية تُباع للشركات أو تُشارك معها. تستغرق الموافقة على بطاقات الهدايا 7–14 يوم عمل. قد ينتهي الرصيد بعد 6 أشهر دون استخدام. مبالغ المكافآت غير مذكورة رسميًا</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">نسخ</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/rewardme/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><div class="code"><span class="label">الرمز</span><span class="dot" dir="ltr">7HOdyg</span></div><button class="btn line" type="button" data-code="7HOdyg">نسخ</button><a class="btn solid ref" href="https://app.reward.me/s6hS/z8a4ajc1" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-jrkripto" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">JK</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/jrkripto/">JrKripto <span class="q">JR</span></a></h3></div></div>
 <p class="gain">نقاط ⁦JR⁩ كل يوم (⁦50 JR⁩ عند التسجيل)</p>
-<div class="desc"><p id="d-jrkripto">تطبيق الهاتف لموقع ⁦JrKripto⁩، وهو موقع تركي لأخبار العملات المشفرة وتحليلاتها وتتبّع أسعارها، ويدير مؤسسه أيضًا موقع الأسهم ⁦JrHisse⁩. اضغط مرة واحدة يوميًا في التطبيق لتتجمع نقاط ⁦JR⁩ على مدى الـ24 ساعة التالية. إذا سجّلت برمز دعوة وأكّدت بريدك الإلكتروني تحصل على مكافأة ⁦50 JR⁩</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-jrkripto" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الدعوة وأكّد بريدك الإلكتروني (لا حاجة لوثيقة هوية). ثم اضغط مرة واحدة يوميًا في التطبيق (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-no" title="صرف نقدي (هل يمكن تحويله إلى نقود): لا"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✗</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): لا</span></li><li class="t-partial" title="المشغّل (هل الجهة المشغّلة معلنة): بشروط"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">△</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): بشروط</span></li></ul></div>
-<p class="caution lv-caution"><span><b>تنبيه:</b> تقول صفحة الدعوة نفسها: «⁦JR⁩ نقطة داخل التطبيق، ولا يمكن بيعها أو تحويلها». حتى أكتوبر 2026 لا توجد طريقة لتحويلها إلى نقود، فأي قيمة لها تعتمد على استخدام محتمل في المستقبل. لا تتجمع النقاط إلا إذا ضغطت كل يوم. اسم الحزمة في ⁦Google Play⁩ هو ⁦“com.yourcompany.jrkripto”⁩، ويبدو كأنه اسم قالب لم يُغيَّر</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">تطبيق الهاتف لموقع ⁦JrKripto⁩، وهو موقع تركي لأخبار العملات المشفرة وتحليلاتها وتتبّع أسعارها، ويدير مؤسسه أيضًا موقع الأسهم ⁦JrHisse⁩. اضغط مرة واحدة يوميًا في التطبيق لتتجمع نقاط ⁦JR⁩ على مدى الـ24 ساعة التالية. إذا سجّلت برمز دعوة وأكّدت بريدك الإلكتروني تحصل على مكافأة ⁦50 JR⁩</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل عبر رابط الدعوة وأكّد بريدك الإلكتروني (لا حاجة لوثيقة هوية). ثم اضغط مرة واحدة يوميًا في التطبيق (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)</span></p>
+<p class="caution lv-caution"><span><b>تنبيه:</b> تقول صفحة الدعوة نفسها: «⁦JR⁩ نقطة داخل التطبيق، ولا يمكن بيعها أو تحويلها». حتى أكتوبر 2026 لا توجد طريقة لتحويلها إلى نقود، فأي قيمة لها تعتمد على استخدام محتمل في المستقبل. لا تتجمع النقاط إلا إذا ضغطت كل يوم. اسم الحزمة في ⁦Google Play⁩ هو ⁦“com.yourcompany.jrkripto”⁩، ويبدو كأنه اسم قالب لم يُغيَّر</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/jrkripto/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://jrkripto.com/r/JR-9C9T57" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-miningmachine" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3><div class="tags"><span class="risk">مخاطرة عالية</span><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">MM</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="risk">مخاطرة عالية</span><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/miningmachine/">Mining Machine <span class="q">$ORE</span></a></h3></div></div>
 <p class="gain">رصيد تعدين ⁦$ORE⁩ (جلسات مجانية مدة كل منها 24 ساعة)</p>
-<div class="desc"><p id="d-miningmachine">موقع تجمع فيه «آلة تعدين» داخل المتصفح رصيدًا من ⁦$ORE⁩. الانضمام مجاني، دون إيداع أو تثبيت. تعمل آلة مجانية في جلسات مدتها 24 ساعة. يمكنك الدفع لإضافة آلات. يحصل الداعي على 10% مما يعدّنه المدعوون و10% مما ينفقونه</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-miningmachine" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل مجانًا عبر رابط الدعوة (تسجيل الدخول بالبريد الإلكتروني أو ⁦X⁩، ولا حاجة لوثيقة هوية). ثم ابدأ جلسة تعدين كل 24 ساعة (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-no" title="صرف نقدي (هل يمكن تحويله إلى نقود): لا"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✗</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): لا</span></li><li class="t-no" title="سعر السوق (هل للرمز سعر متداول): لا"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✗</b><span class="vh">سعر السوق (هل للرمز سعر متداول): لا</span></li><li class="t-unknown" title="المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">?</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد</span></li></ul></div>
-<p class="caution lv-danger"><span><b>تنبيه:</b> ⁦$ORE⁩ ليس رمزًا بعد، ويقول الموقع نفسه إن الأرصدة ليست وعدًا برموز. لا يوجد اسم أو عنوان للمشغّل ولا ورقة بيضاء. عدّ تنازلي يدفعك إلى التسجيل بسرعة. عليك إعادة تشغيل التعدين بنفسك كل 24 ساعة</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">موقع تجمع فيه «آلة تعدين» داخل المتصفح رصيدًا من ⁦$ORE⁩. الانضمام مجاني، دون إيداع أو تثبيت. تعمل آلة مجانية في جلسات مدتها 24 ساعة. يمكنك الدفع لإضافة آلات. يحصل الداعي على 10% مما يعدّنه المدعوون و10% مما ينفقونه</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل مجانًا عبر رابط الدعوة (تسجيل الدخول بالبريد الإلكتروني أو ⁦X⁩، ولا حاجة لوثيقة هوية). ثم ابدأ جلسة تعدين كل 24 ساعة (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)</span></p>
+<p class="caution lv-danger"><span><b>تنبيه:</b> ⁦$ORE⁩ ليس رمزًا بعد، ويقول الموقع نفسه إن الأرصدة ليست وعدًا برموز. لا يوجد اسم أو عنوان للمشغّل ولا ورقة بيضاء. عدّ تنازلي يدفعك إلى التسجيل بسرعة. عليك إعادة تشغيل التعدين بنفسك كل 24 ساعة</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn warn-go" href="/ar/services/miningmachine/#warn">اقرأ التحذيرات قبل التسجيل</a></div>
+<a class="to-page" href="/ar/services/miningmachine/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn warn-go" href="/ar/services/miningmachine/#warn">اقرأ التحذيرات قبل التسجيل</a></div></div>
 </article>
 <article class="svc rv" id="svc-lifeai" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">LA</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/lifeai/">Life AI Testnet</a></h3><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">LA</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/lifeai/">Life AI Testnet</a></h3></div></div>
 <p class="gain">نقاط الشبكة التجريبية (سحب يومي على ⁦USDT⁩؛ ومكافآت رموز و⁦NFT⁩ للأوائل)</p>
-<div class="desc"><p id="d-lifeai">الشبكة التجريبية لـ⁦Life AI⁩، مشروع ذكاء اصطناعي للرعاية الصحية. أجب عن سؤال يومي بنعم أو لا وانشر إجابتك على ⁦X⁩ لتكسب نقاطًا، والأيام المتتالية تمنح المزيد. يذكر الموقع الرسمي مكافآت مثل سحوبات ⁦USDT⁩ وجوائز لوحة الصدارة. تديره ⁦LIFE AI Foundation⁩، جهة غير ربحية في سنغافورة</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-lifeai" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>سجّل الدخول عبر رابط الإحالة بحساب ⁦X⁩ أو حساب آخر، وسجّل عنوان محفظة ⁦EVM⁩ لاستلام المكافآت (لا حاجة لوثيقة هوية). ثم أجب عن السؤال وانشر كل يوم (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-partial" title="صرف نقدي (هل يمكن تحويله إلى نقود): بشروط"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">△</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): بشروط</span></li><li class="t-no" title="سعر السوق (هل للرمز سعر متداول): لا"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✗</b><span class="vh">سعر السوق (هل للرمز سعر متداول): لا</span></li><li class="t-yes" title="المشغّل (هل الجهة المشغّلة معلنة): نعم"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">✓</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): نعم</span></li></ul></div>
-<p class="caution lv-caution"><span><b>تنبيه:</b> النقاط ليست مالًا، ولا شيء مضمون. لا يوجد رمز ⁦LIFE⁩ رسمي قابل للتداول، ولا وعد برمز أو إنزال جوي. لا تشارك عبارة الاسترداد مع أحد، ولا تربط محفظة فيها أموال. إن طُلب منك الدفع فاشتبه في احتيال. من دعاك، بمن فيهم مشغّل هذا الموقع، يكسب نقاطًا من نشاطك</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">الشبكة التجريبية لـ⁦Life AI⁩، مشروع ذكاء اصطناعي للرعاية الصحية. أجب عن سؤال يومي بنعم أو لا وانشر إجابتك على ⁦X⁩ لتكسب نقاطًا، والأيام المتتالية تمنح المزيد. يذكر الموقع الرسمي مكافآت مثل سحوبات ⁦USDT⁩ وجوائز لوحة الصدارة. تديره ⁦LIFE AI Foundation⁩، جهة غير ربحية في سنغافورة</p>
+<p class="need"><b>طريقة الحصول</b><span>سجّل الدخول عبر رابط الإحالة بحساب ⁦X⁩ أو حساب آخر، وسجّل عنوان محفظة ⁦EVM⁩ لاستلام المكافآت (لا حاجة لوثيقة هوية). ثم أجب عن السؤال وانشر كل يوم (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)</span></p>
+<p class="caution lv-caution"><span><b>تنبيه:</b> النقاط ليست مالًا، ولا شيء مضمون. لا يوجد رمز ⁦LIFE⁩ رسمي قابل للتداول، ولا وعد برمز أو إنزال جوي. لا تشارك عبارة الاسترداد مع أحد، ولا تربط محفظة فيها أموال. إن طُلب منك الدفع فاشتبه في احتيال. من دعاك، بمن فيهم مشغّل هذا الموقع، يكسب نقاطًا من نشاطك</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn solid ref" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div>
+<a class="to-page" href="/ar/services/lifeai/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn solid ref" href="https://testnet.lifeai.io/ref?code=TH2ZQFX" target="_blank" rel="noopener sponsored">سجّل عبر الإحالة</a></div></div>
 </article>
 <article class="svc rv" id="svc-refrax" data-cat="app" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><h3><span class="cat">تطبيقات سلبية</span><a href="/ar/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3><div class="tags"><span class="risk">مخاطرة عالية</span><span class="new">NEW</span><span class="type loop">متكرر</span></div></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">RR</span><div class="svc-id"><div class="svc-line"><span class="cat">تطبيقات سلبية</span><div class="tags"><span class="risk">مخاطرة عالية</span><span class="new">NEW</span><span class="type loop">متكرر</span></div></div><h3><a href="/ar/services/refrax/">Refrax <span class="q">$REFRAX</span></a></h3></div></div>
 <p class="gain">نقاط ⁦$REFRAX⁩ معلّقة (لا يوجد رمز بعد)</p>
-<div class="desc"><p id="d-refrax">مهام الموسم 0 من ⁦Refrax⁩، مشروع يقدّم نفسه تخزينًا لامركزيًا على ⁦Solana⁩. سجّل الدخول بحساب ⁦X⁩ واكسب نقاطًا بالمتابعة والنشر ودعوة الأصدقاء وتسجيل الحضور اليومي. يقول الموقع إن النقاط ستُدفع عند الإطلاق بعملة ⁦$REFRAX⁩ إلى محفظة ⁦Solana⁩ التي تضيفها</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-refrax" hidden>عرض المزيد</button></div>
-<p class="need"><b>طريقة الحصول</b><span>افتح رابط الإحالة وسجّل الدخول بحساب ⁦X⁩ (لا يمكن للحسابات الجديدة جدًا المشاركة). أضف عنوان ⁦Solana⁩ للاستلام، ثم أنجز المهام وتسجيل الحضور اليومي (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)</span></p>
 <div class="meta"><span class="ease"><span>السهولة</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">المنطقة: </span>عالمي</span><ul class="trust" aria-label="مؤشرات الثقة"><li class="t-no" title="صرف نقدي (هل يمكن تحويله إلى نقود): لا"><span aria-hidden="true">صرف نقدي</span><b aria-hidden="true">✗</b><span class="vh">صرف نقدي (هل يمكن تحويله إلى نقود): لا</span></li><li class="t-no" title="سعر السوق (هل للرمز سعر متداول): لا"><span aria-hidden="true">سعر السوق</span><b aria-hidden="true">✗</b><span class="vh">سعر السوق (هل للرمز سعر متداول): لا</span></li><li class="t-unknown" title="المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد"><span aria-hidden="true">المشغّل</span><b aria-hidden="true">?</b><span class="vh">المشغّل (هل الجهة المشغّلة معلنة): غير مؤكد</span></li></ul></div>
-<p class="caution lv-danger"><span><b>تنبيه:</b> النقاط ليست مالًا ولا رموزًا، ولا شيء مضمون. أدخل عنوان استلام فقط، ولا تشارك عبارة الاسترداد أبدًا. مواقع المطالبة المزيفة شائعة حول الإطلاقات، فاستخدم فقط روابط حساب ⁦X⁩ الرسمي و⁦refrax.xyz⁩. من دعاك، بمن فيهم مشغّل هذا الموقع، يكسب نقاطًا عندما تُنهي مهمة</span></p>
 
+<div class="svc-foot"><details class="more"><summary>التفاصيل</summary><div class="more-in">
+<p class="note">مهام الموسم 0 من ⁦Refrax⁩، مشروع يقدّم نفسه تخزينًا لامركزيًا على ⁦Solana⁩. سجّل الدخول بحساب ⁦X⁩ واكسب نقاطًا بالمتابعة والنشر ودعوة الأصدقاء وتسجيل الحضور اليومي. يقول الموقع إن النقاط ستُدفع عند الإطلاق بعملة ⁦$REFRAX⁩ إلى محفظة ⁦Solana⁩ التي تضيفها</p>
+<p class="need"><b>طريقة الحصول</b><span>افتح رابط الإحالة وسجّل الدخول بحساب ⁦X⁩ (لا يمكن للحسابات الجديدة جدًا المشاركة). أضف عنوان ⁦Solana⁩ للاستلام، ثم أنجز المهام وتسجيل الحضور اليومي (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)</span></p>
+<p class="caution lv-danger"><span><b>تنبيه:</b> النقاط ليست مالًا ولا رموزًا، ولا شيء مضمون. أدخل عنوان استلام فقط، ولا تشارك عبارة الاسترداد أبدًا. مواقع المطالبة المزيفة شائعة حول الإطلاقات، فاستخدم فقط روابط حساب ⁦X⁩ الرسمي و⁦refrax.xyz⁩. من دعاك، بمن فيهم مشغّل هذا الموقع، يكسب نقاطًا عندما تُنهي مهمة</span></p>
 <p class="checked"><time datetime="2026-10">تم التحقق: أكتوبر 2026</time></p>
-<div class="slip"><a class="btn warn-go" href="/ar/services/refrax/#warn">اقرأ التحذيرات قبل التسجيل</a></div>
+<a class="to-page" href="/ar/services/refrax/">عرض الصفحة كاملة ←</a>
+</div></details>
+<div class="slip"><a class="btn warn-go" href="/ar/services/refrax/#warn">اقرأ التحذيرات قبل التسجيل</a></div></div>
 </article></div></section>
 
 <nav class="vchips vother" aria-label="كل طرق التحقق"><a href="/ar/verify/world-id/" dir="auto">⁦World ID⁩ (⁦Orb⁩)</a><a href="/ar/verify/face/" dir="auto">مسح الوجه / فحص الحيوية</a><a href="/ar/verify/kyc-id/" dir="auto">التحقق بوثيقة هوية (⁦KYC⁩)</a><a href="/ar/verify/web-of-trust/" dir="auto">شبكة الثقة / الدعوات</a></nav>

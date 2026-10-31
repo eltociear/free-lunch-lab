@@ -18,9 +18,12 @@ const OG_LOCALE = { en: 'en_US', ja: 'ja_JP', zh: 'zh_CN', hi: 'hi_IN', es: 'es_
 const RTL = new Set(['ar']);
 // フォントは自前で配る（fonts.js）。見出しは Dela Gothic One（zh/hi/ar はその言語の太字）、数字は DotGothic16、本文は言語ごと、ロゴは Zen Kaku Gothic New 900
 const { ensureFonts, fontFaceCss, FONT_DIR } = require('./fonts.js');
+const BODY_DISPLAY = { en: 'block', es: 'block', de: 'block' };
 const BODY_FONT = { en: 'Zen Kaku Gothic New', ja: 'Zen Kaku Gothic New', es: 'Zen Kaku Gothic New', de: 'Zen Kaku Gothic New', zh: 'Noto Sans SC', hi: 'Noto Sans Devanagari', ar: 'Noto Sans Arabic' };
-// 見出しの書体。hi は本文と同じ書体の 700 を使うので別に持たない。ar と英字の言語の見出しは字幅で行数が変わりやすいので optional（間に合わなければ差し替えない＝ずれない）。日本語は全角で字幅が同じなので swap
-const DISPLAY_FONT = { en: ['Dela Gothic One', 400, 'swap'], ja: ['Dela Gothic One', 400, 'swap'], es: ['Dela Gothic One', 400, 'swap'], de: ['Dela Gothic One', 400, 'swap'], zh: ['Noto Sans SC', 900, 'swap'], ar: ['Noto Kufi Arabic', 700, 'optional'] };
+// 見出しの書体。hi は本文と同じ書体の 700 を使うので別に持たない。日本語は全角で字幅が代わりの書体と同じなので swap。
+// ar の見出しは字幅で行数が変わりやすいので optional（間に合わなければ差し替えない＝ずれない）。
+// 英字の言語（en/es/de）は代わりの書体との字幅の差で段落ごと動くので、小さいサブセットを先読みして block（届くまで文字を出さない、最長3秒）
+const DISPLAY_FONT = { en: ['Dela Gothic One', 400, 'block'], ja: ['Dela Gothic One', 400, 'swap'], es: ['Dela Gothic One', 400, 'block'], de: ['Dela Gothic One', 400, 'block'], zh: ['Noto Sans SC', 900, 'swap'], ar: ['Noto Kufi Arabic', 700, 'optional'] };
 // 言語メニュー（🌐 日本語 ▾）。JS がなくても details で開閉できる
 const LANG_LABEL = { ...LANG_NAMES, en: 'English' };
 const GLOBE = '<svg class="globe" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm-9 9h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg>';
@@ -189,15 +192,18 @@ function card(s, lang) {
   const d = s[lang] || s.en;
   const name = lang === 'ja' ? s.name : s.nameEn || s.name;
   return `<article class="svc rv" id="svc-${s.id}" data-cat="${s.cat}" data-type="${s.type}">
-<div class="svc-top">${ava(s, name)}<div class="svc-id"><h3><span class="cat">${esc(CATS[lang][s.cat])}</span><a href="${svcPath(lang, s)}">${nameHtml(name)}</a></h3>${tags(s, L, lang)}</div></div>
+<div class="svc-top">${ava(s, name)}<div class="svc-id"><div class="svc-line"><span class="cat">${esc(CATS[lang][s.cat])}</span>${tags(s, L, lang)}</div><h3><a href="${svcPath(lang, s)}">${nameHtml(name)}</a></h3></div></div>
 <p class="gain">${esc(d.gain)}</p>
-<div class="desc"><p id="d-${s.id}">${esc(d.note)}</p><button class="expand" type="button" aria-expanded="false" aria-controls="d-${s.id}" hidden>${esc(L.more)}</button></div>
-<p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
 ${meta(s, lang)}
-${d.caution ? cautionBox(s, lang, d.caution) : ''}
 ${contactLine(s, lang)}
+<div class="svc-foot"><details class="more"><summary>${esc(L.moreInfo)}</summary><div class="more-in">
+<p class="note">${esc(d.note)}</p>
+<p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
+${d.caution ? cautionBox(s, lang, d.caution) : ''}
 ${checkedLine(s, lang)}
-${slip(s, L, { lang, toWarn: true })}
+<a class="to-page" href="${svcPath(lang, s)}">${esc(L.toPage)} ${RTL.has(lang) ? '←' : '→'}</a>
+</div></details>
+${slip(s, L, { lang, toWarn: true })}</div>
 </article>`;
 }
 
@@ -327,21 +333,33 @@ function siteLd(lang) {
 
 function clientScript(lang) {
   const L = T[lang];
-  const i18n = { more: L.more, less: L.less, count: L.count, copied: L.copied, selected: L.selected, linkCopied: L.linkCopied, shareText: L.shareText, url: abs(lang) };
+  const i18n = { count: L.count, showAll: L.showAll, copied: L.copied, selected: L.selected, linkCopied: L.linkCopied, shareText: L.shareText, url: abs(lang) };
   return `<script>
 (function(){
   var I18N=${JSON.stringify(i18n)};
   var grid=document.getElementById('grid'),filters=document.getElementById('filters'),loopOnly=document.getElementById('loopOnly'),
       countEl=document.getElementById('count'),empty=document.getElementById('empty'),toast=document.getElementById('toast'),cat='all',timer;
+  // スマホでは最初の LIMIT 件だけ出す（「すべて表示」を押すか、#svc-… で来たら全部出す）
+  var LIMIT=12,mq=window.matchMedia('(max-width:760px)'),all=false,showAll=document.getElementById('showAll');
   function apply(){
-    var n=0;
+    var n=0,lim=mq.matches&&!all;
     grid.querySelectorAll('.svc').forEach(function(el){
       var show=(cat==='all'||el.getAttribute('data-cat')===cat)&&(!loopOnly.checked||el.getAttribute('data-type')==='loop');
       el.hidden=!show; if(show)n++;
+      el.classList.toggle('over',show&&lim&&n>LIMIT);
     });
     empty.hidden=n>0;
     countEl.textContent=I18N.count.replace('{n}',n);
+    showAll.hidden=!(lim&&n>LIMIT);
+    if(!showAll.hidden) showAll.textContent=I18N.showAll.replace('{n}',n-LIMIT);
   }
+  function expand(){if(!all){all=true;apply()}}
+  showAll.addEventListener('click',function(){var first=grid.querySelector('.svc.over');expand();if(first){var a=first.querySelector('h3 a');if(a)a.focus({preventScroll:true})}});
+  if(mq.addEventListener) mq.addEventListener('change',apply);
+  function fromHash(){var h=location.hash.slice(1),el=h&&document.getElementById(h);if(el&&el.classList.contains('over')){expand();el.scrollIntoView()}}
+  window.addEventListener('hashchange',fromHash);
+  document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#svc-"]');if(!a)return;var el=document.getElementById(a.getAttribute('href').slice(1));if(el&&el.classList.contains('over'))expand()});
+  apply(); fromHash();
   filters.addEventListener('click',function(e){
     var b=e.target.closest('button'); if(!b) return;
     cat=b.getAttribute('data-cat');
@@ -349,6 +367,9 @@ function clientScript(lang) {
     apply();
   });
   loopOnly.addEventListener('change',apply);
+  // カテゴリの横スクロール: 右端（RTL では左端）まで来たら、ぼかしを消す
+  function edge(){var max=filters.scrollWidth-filters.clientWidth;filters.classList.toggle('at-end',max<2||Math.abs(filters.scrollLeft)>=max-2)}
+  filters.addEventListener('scroll',edge,{passive:true}); window.addEventListener('resize',edge); edge();
   function say(msg){toast.textContent=msg;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
   grid.addEventListener('click',function(e){
     var b=e.target.closest('[data-code]'); if(!b) return;
@@ -361,21 +382,6 @@ function clientScript(lang) {
   });
   var ns=document.getElementById('nativeShare');
   if(navigator.share){ns.hidden=false;ns.addEventListener('click',function(){navigator.share({text:I18N.shareText,url:I18N.url}).catch(function(){})})}
-  // 説明文は3行で畳む。はみ出すものだけ「もっと見る」を出す
-  function clampAll(){
-    grid.querySelectorAll('.desc').forEach(function(d){
-      if(d.classList.contains('open')) return;
-      var p=d.firstChild,b=d.lastChild;
-      b.hidden=!(p.scrollHeight>p.clientHeight+1);
-    });
-  }
-  clampAll();
-  if(document.fonts) document.fonts.ready.then(clampAll);
-  grid.addEventListener('click',function(e){
-    var b=e.target.closest('.expand'); if(!b) return;
-    var d=b.parentNode,open=d.classList.toggle('open');
-    b.setAttribute('aria-expanded',open); b.textContent=open?I18N.less:I18N.more;
-  });
   // スクロールで少しずつ出す（一度だけ）。動きを減らす設定や非対応のときはそのまま見せる
   var rv=document.querySelectorAll('.rv,.rise');
   if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
@@ -404,7 +410,7 @@ function clientScript(lang) {
   function measure(){root.style.setProperty('--bar-h',(bar?bar.offsetHeight:0)+'px');root.style.setProperty('--tools-h',tools.offsetHeight+'px')}
   function onScroll(){tools.classList.toggle('stuck',stuck())}
   measure(); onScroll();
-  window.addEventListener('resize',function(){measure();onScroll();clampAll()});
+  window.addEventListener('resize',function(){measure();onScroll()});
   window.addEventListener('scroll',onScroll,{passive:true});
   document.querySelector('.lang').addEventListener('click',function(e){
     var a=e.target.closest('a'); if(!a||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey) return;
@@ -424,6 +430,7 @@ function clientScript(lang) {
     if(fb&&s.cat!=='all') fb.click();
     if(s.loop){loopOnly.checked=true;apply()}
     var el=s.id&&document.getElementById(s.id),goneY;
+    if(el&&el.classList.contains('over')) expand();
     function go(){
       if(!el||el.hidden) return;
       root.style.scrollBehavior='auto';
@@ -434,7 +441,7 @@ function clientScript(lang) {
     go();
     // フォント等の読込で位置がずれたら、まだ動かしていなければ合わせ直す
     window.addEventListener('load',function(){if(window.scrollY===goneY)go()});
-    if(document.fonts) document.fonts.ready.then(function(){clampAll();if(window.scrollY===goneY)go()});
+    if(document.fonts) document.fonts.ready.then(function(){if(window.scrollY===goneY)go()});
   }
 })();
 </script>`;
@@ -1125,8 +1132,8 @@ const logoChars = new Set(LANGS.flatMap(l => [...textOf(T[l].brand)]));
 const faceList = l => {
   const r = roles[l], disp = DISPLAY_FONT[l];
   const list = [
-    { key: `${l}:body:400`, family: BODY_FONT[l], weight: 400, chars: r.body, first: r.home.body, preload: true },
-    { key: `${l}:body:700`, family: BODY_FONT[l], weight: 700, chars: r.body, first: r.home.body },
+    { key: `${l}:body:400`, family: BODY_FONT[l], weight: 400, display: BODY_DISPLAY[l], chars: r.body, first: r.home.body, preload: true },
+    { key: `${l}:body:700`, family: BODY_FONT[l], weight: 700, display: BODY_DISPLAY[l], chars: r.body, first: r.home.body, preload: !!BODY_DISPLAY[l] },
     { key: `${l}:dot`, family: 'DotGothic16', weight: 400, chars: r.dot, first: r.home.dot },
   ];
   if (disp && disp[0] === 'Dela Gothic One') list.push({ key: `${l}:display`, family: disp[0], weight: disp[1], display: disp[2], chars: new Set([...r.display, ...r.ava]), first: new Set([...r.home.display, ...r.ava]), preload: true });
