@@ -9,6 +9,10 @@
    {
     "file": "dela-gothic-one-400-ar-db092fbc2a.woff2",
     "chars": "e"
+   },
+   {
+    "file": "dela-gothic-one-400-ar-11be7147c8.woff2",
+    "chars": "N"
    }
   ],
   "ar:body:400": [
@@ -259,6 +263,10 @@
    {
     "file": "dela-gothic-one-400-hi-db092fbc2a.woff2",
     "chars": "e"
+   },
+   {
+    "file": "dela-gothic-one-400-hi-11be7147c8.woff2",
+    "chars": "N"
    }
   ],
   "hi:body:400": [
@@ -359,6 +367,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-77d8436d54.woff2",
     "chars": "並仮冒想慎橋派負避銭"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-d80a7ed36a.woff2",
+    "chars": "速"
    }
   ],
   "ja:body:700": [
@@ -413,6 +425,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-6c46d95db2.woff2",
     "chars": "並仮冒想慎橋派負避銭"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-c936cc594f.woff2",
+    "chars": "速"
    }
   ],
   "ja:display": [
@@ -457,6 +473,10 @@
    {
     "file": "dotgothic16-400-ja-bd8db6b477.woff2",
     "chars": "えこも替自"
+   },
+   {
+    "file": "dotgothic16-400-ja-ad6774cc4d.woff2",
+    "chars": "取"
    }
   ],
   "logo": [
@@ -473,6 +493,10 @@
    {
     "file": "dela-gothic-one-400-zh-db092fbc2a.woff2",
     "chars": "e"
+   },
+   {
+    "file": "dela-gothic-one-400-zh-11be7147c8.woff2",
+    "chars": "N"
    }
   ],
   "zh:body:400": [
@@ -519,6 +543,14 @@
    {
     "file": "noto-sans-sc-400-zh-ecc198bd99.woff2",
     "chars": "光冒刷右妥左弄怕慎扎搞梭碰谨避钟"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-08c317cc5e.woff2",
+    "chars": "仿淆混"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-b888537bc8.woff2",
+    "chars": "帕洛"
    }
   ],
   "zh:body:700": [
@@ -565,6 +597,14 @@
    {
     "file": "noto-sans-sc-700-zh-23e0b16018.woff2",
     "chars": "光冒刷右妥左弄怕慎扎搞梭碰谨避钟"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-a3421fda36.woff2",
+    "chars": "仿淆混"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-5b27b54fa5.woff2",
+    "chars": "帕洛"
    }
   ],
   "zh:display": [
@@ -595,6 +635,10 @@
    {
     "file": "noto-sans-sc-900-zh-38046f1a57.woff2",
     "chars": "三他其冒当思扎攒稳类而认部"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-e5e1f0b197.woff2",
+    "chars": "交易"
    }
   ],
   "zh:dot": [

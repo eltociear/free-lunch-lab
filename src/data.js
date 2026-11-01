@@ -2557,6 +2557,76 @@ module.exports = {
         "warning": "سُجّل النطاق في أكتوبر 2026، والمشغّل مجهول الهوية، ولا توجد شروط ولا رمز بعد. لا تدفع أي شيء، ولا تربط محفظة فيها أموالك، ولا توقّع على أي شيء يُقدَّم على أنه «مطالبة».",
         "caution": "النقاط ليست مالًا ولا رموزًا، ولا شيء مضمون. أدخل عنوان استلام فقط، ولا تشارك عبارة الاسترداد أبدًا. مواقع المطالبة المزيفة شائعة حول الإطلاقات، فاستخدم فقط روابط حساب ⁦X⁩ الرسمي و⁦refrax.xyz⁩. من دعاك، بمن فيهم مشغّل هذا الموقع، يكسب نقاطًا عندما تُنهي مهمة"
       }
+    },
+    {
+      "id": "siblenetwork",
+      "name": "Sible Network（$SIB）",
+      "nameEn": "Sible Network ($SIB)",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://sible.network/",
+      "code": "eltociear",
+      "ref": "https://mine.sible.network/eltociear",
+      "showCode": true,
+      "added": "2026-11-01",
+      "checked": "2026-11",
+      "trust": {
+        "cash": "no",
+        "price": "no",
+        "operator": "unknown"
+      },
+      "verify": [],
+      "ja": {
+        "gain": "SIBLE（$SIB）のマイニング残高（取引はできない）",
+        "note": "タップで採掘セッションを始める、Pi Network型「AIマイニング」アプリ。最初は1時間0.1 SIBLE。紹介した人が増えるほど速くなる。総発行量10億枚、4か月ごとに半減とされる。2026年8月ごろ開始。Google Play・App Storeとweb.sible.networkで使える",
+        "need": "紹介リンクから登録し、招待コード「eltociear」を入れると10 SIBLEがもらえる。あとはタップして採掘を始める（2026年10月に日本から登録できることを確認）",
+        "warning": "SIBLEは取引できず、支払いの実績も確認できていません。「元OpenAI・Netflixの人材による米パロアルトのSible Labs」という運営の説明も未確認です。お金を払わないでください。",
+        "caution": "どれも運営自身の説明で、裏付けはない。トークンは取引できず、価値がつく保証もない。紹介で採掘が速くなるため、勧誘が中心になりやすい。公式Xは「Scale Network（$SCALE）」の名前も使っていて紛らわしい。アプリの権限やデータの扱いは確認できていない。招待した側（当サイト運営者を含む）は採掘が速くなる"
+      },
+      "en": {
+        "gain": "SIBLE ($SIB) mining balance (not tradable)",
+        "note": "A Pi Network-style “AI mining” app where you tap to start mining sessions. It starts at 0.1 SIBLE per hour and speeds up as your referral network grows. Claimed total supply is 1 billion, halving every 4 months. Launched around August 2026. On Google Play, the App Store and web.sible.network",
+        "need": "Sign up via the referral link and enter invite code eltociear to get 10 SIBLE. Then tap to start mining (sign-up from Japan confirmed in Oct 2026)",
+        "warning": "SIBLE can’t be traded and no payouts have been verified. The claim that it is run by Sible Labs, a Palo Alto AI company founded by former OpenAI and Netflix talent, is unverified. Don’t pay anything.",
+        "caution": "All of this is the project’s own unverified claims. The token can’t be traded and may never be worth anything. Referrals speed up mining, so growth relies on recruiting. Its X account also uses the name “Scale Network ($SCALE)”, which is confusing. App permissions and data handling have not been checked. Whoever invited you, including this site’s operator, mines faster"
+      },
+      "zh": {
+        "gain": "SIBLE（$SIB）挖矿余额（不可交易）",
+        "note": "仿 Pi Network 的“AI 挖矿”应用，点一下即可开始挖矿。初始每小时 0.1 SIBLE，邀请的人越多挖得越快。自称总量 10 亿枚，每 4 个月减半。约 2026 年 8 月上线。可在 Google Play、App Store 和 web.sible.network 使用",
+        "need": "通过邀请链接注册，输入邀请码 eltociear 可获得 10 SIBLE。之后点一下开始挖矿（已于 2026 年 10 月确认可从日本注册）",
+        "warning": "SIBLE 无法交易，也没有确认过任何实际支付。其自称由“前 OpenAI 和 Netflix 人才在美国帕洛阿尔托创办的 Sible Labs”运营，未经证实。请不要付任何钱。",
+        "caution": "以上均为项目方自己的说法，未经证实。代币无法交易，不保证会有价值。邀请能加快挖矿，因此增长依赖拉人。官方 X 还使用“Scale Network（$SCALE）”这个名字，容易混淆。应用的权限和数据处理未经确认。邀请人（包括本站运营者）会挖得更快"
+      },
+      "hi": {
+        "gain": "SIBLE ($SIB) माइनिंग बैलेंस (ट्रेड नहीं हो सकता)",
+        "note": "Pi Network जैसा “AI माइनिंग” ऐप, जिसमें टैप करके माइनिंग सेशन शुरू होता है। शुरुआत 0.1 SIBLE प्रति घंटा से होती है और रेफ़रल नेटवर्क बढ़ने पर रफ़्तार बढ़ती है। दावा: कुल सप्लाई 1 अरब, हर 4 महीने में हॉल्विंग। लगभग अगस्त 2026 में शुरू हुआ। Google Play, App Store और web.sible.network पर उपलब्ध",
+        "need": "रेफ़रल लिंक से साइन अप करें और इनवाइट कोड eltociear डालकर 10 SIBLE पाएँ। फिर टैप करके माइनिंग शुरू करें (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)",
+        "warning": "SIBLE ट्रेड नहीं हो सकता और किसी भुगतान की पुष्टि नहीं हुई है। यह दावा कि इसे पूर्व OpenAI और Netflix लोगों की पालो आल्टो की Sible Labs चलाती है, असत्यापित है। कोई भुगतान न करें।",
+        "caution": "ये सब प्रोजेक्ट के अपने असत्यापित दावे हैं। टोकन ट्रेड नहीं हो सकता और शायद कभी कोई क़ीमत न हो। रेफ़रल से माइनिंग तेज़ होती है, इसलिए बढ़त लोगों को जोड़ने पर टिकी है। इसका X अकाउंट “Scale Network ($SCALE)” नाम भी इस्तेमाल करता है, जो भ्रामक है। ऐप की अनुमतियों और डेटा के इस्तेमाल की जाँच नहीं हुई है। आपको बुलाने वाले (इस साइट के संचालक समेत) की माइनिंग तेज़ होती है"
+      },
+      "es": {
+        "gain": "Saldo de minería de SIBLE ($SIB) (no negociable)",
+        "note": "Una app de «minería con IA» al estilo de Pi Network: tocas para iniciar sesiones de minado. Empieza en 0,1 SIBLE por hora y acelera a medida que crece tu red de referidos. Dice tener un suministro total de 1.000 millones, con halving cada 4 meses. Lanzada hacia agosto de 2026. En Google Play, App Store y web.sible.network",
+        "need": "Regístrate con el enlace de invitación e introduce el código eltociear para recibir 10 SIBLE. Luego toca para empezar a minar (se comprobó en octubre de 2026 que el registro funciona desde Japón)",
+        "warning": "SIBLE no se puede negociar y no se ha verificado ningún pago. No está verificado que la gestione Sible Labs, una empresa de IA de Palo Alto fundada por exempleados de OpenAI y Netflix. No pagues nada.",
+        "caution": "Todo esto son afirmaciones del propio proyecto, sin verificar. El token no se puede negociar y puede que nunca valga nada. Los referidos aceleran la minería, así que el crecimiento depende de reclutar. Su cuenta de X también usa el nombre «Scale Network ($SCALE)», lo que confunde. No se han revisado los permisos ni el uso de datos de la app. Quien te invitó, incluido el operador de este sitio, mina más rápido"
+      },
+      "de": {
+        "gain": "SIBLE-Mining-Guthaben ($SIB, nicht handelbar)",
+        "note": "Eine „KI-Mining“-App im Stil von Pi Network: Per Tippen startest du Mining-Sitzungen. Start mit 0,1 SIBLE pro Stunde, schneller mit wachsendem Empfehlungsnetz. Angeblich 1 Milliarde Gesamtmenge, Halbierung alle 4 Monate. Gestartet etwa im August 2026. Bei Google Play, im App Store und unter web.sible.network",
+        "need": "Über den Einladungslink anmelden und den Einladungscode eltociear eingeben, um 10 SIBLE zu bekommen. Dann tippen, um das Mining zu starten (im Oktober 2026 bestätigt: Anmeldung aus Japan möglich)",
+        "warning": "SIBLE ist nicht handelbar, und keine Auszahlung ist belegt. Die Angabe, dahinter stehe Sible Labs, eine KI-Firma aus Palo Alto, gegründet von früheren OpenAI- und Netflix-Leuten, ist unbestätigt. Zahle nichts.",
+        "caution": "Das alles sind unbestätigte Angaben des Projekts selbst. Der Token ist nicht handelbar und ist vielleicht nie etwas wert. Empfehlungen beschleunigen das Mining, das Wachstum beruht also aufs Anwerben. Das X-Konto nutzt auch den Namen „Scale Network ($SCALE)“, was verwirrt. App-Berechtigungen und Datennutzung wurden nicht geprüft. Wer dich eingeladen hat, auch der Betreiber dieser Seite, mint schneller"
+      },
+      "ar": {
+        "gain": "رصيد تعدين ⁦SIBLE ($SIB)⁩ (غير قابل للتداول)",
+        "note": "تطبيق «تعدين بالذكاء الاصطناعي» على طريقة ⁦Pi Network⁩، تنقر فيه لبدء جلسات التعدين. يبدأ بـ⁦0.1 SIBLE⁩ في الساعة ويتسارع كلما كبرت شبكة إحالاتك. يزعم أن المعروض الكلي مليار وحدة مع تنصيف كل 4 أشهر. انطلق نحو أغسطس 2026. متاح على ⁦Google Play⁩ و⁦App Store⁩ و⁦web.sible.network⁩",
+        "need": "سجّل عبر رابط الإحالة وأدخل رمز الدعوة ⁦eltociear⁩ لتحصل على ⁦10 SIBLE⁩. ثم انقر لبدء التعدين (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)",
+        "warning": "لا يمكن تداول ⁦SIBLE⁩ ولم يثبت أي دفع فعلي. الادعاء بأن من يديره هو ⁦Sible Labs⁩، شركة ذكاء اصطناعي في بالو ألتو أسسها موظفون سابقون في ⁦OpenAI⁩ و⁦Netflix⁩، غير مؤكد. لا تدفع أي شيء.",
+        "caution": "كل هذا ادعاءات غير مؤكدة من المشروع نفسه. الرمز غير قابل للتداول وقد لا تكون له قيمة أبدًا. الإحالات تسرّع التعدين، فيعتمد النمو على التجنيد. يستخدم حسابه على ⁦X⁩ أيضًا اسم ⁦Scale Network ($SCALE)⁩، وهذا مربك. لم تُفحص أذونات التطبيق ولا طريقة استخدامه للبيانات. من دعاك، بمن فيهم مشغّل هذا الموقع، يعدّن أسرع"
+      }
     }
   ],
   "PICKS": [
@@ -2592,6 +2662,26 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-11-01",
+      "ja": "ベーシックインカム実験の年表に、マーシャル諸島の全国民向けベーシックインカム（Enra）とクック郡の保証所得を追加",
+      "en": "Added the Marshall Islands’ nationwide basic income (Enra) and Cook County’s guaranteed income to the basic income timeline",
+      "zh": "在基本收入实验年表中新增马绍尔群岛的全民基本收入（Enra）和库克县的保障收入",
+      "hi": "बेसिक इनकम प्रयोगों की समयरेखा में मार्शल द्वीप की राष्ट्रव्यापी बेसिक इनकम (Enra) और कुक काउंटी की गारंटीड इनकम जोड़ी",
+      "es": "Añadidas a la cronología de la renta básica la renta básica nacional de las Islas Marshall (Enra) y el ingreso garantizado del condado de Cook",
+      "de": "Das landesweite Grundeinkommen der Marshallinseln (Enra) und das garantierte Einkommen von Cook County zur Zeitleiste hinzugefügt",
+      "ar": "أضفنا إلى الخط الزمني للدخل الأساسي الدخل الأساسي الوطني لجزر مارشال (⁦Enra⁩) والدخل المضمون في مقاطعة كوك"
+    },
+    {
+      "date": "2026-11-01",
+      "ja": "Sible Network（$SIB）を追加",
+      "en": "Added Sible Network ($SIB)",
+      "zh": "新增 Sible Network（$SIB）",
+      "hi": "Sible Network ($SIB) जोड़ा",
+      "es": "Añadido Sible Network ($SIB)",
+      "de": "Sible Network ($SIB) hinzugefügt",
+      "ar": "أضفنا ⁦Sible Network ($SIB)⁩"
+    },
     {
       "date": "2026-11-01",
       "ja": "「タダ飯診断」を公開（5つの質問で6タイプ。結果ごとに合うサービスを表示し、Xでシェアできます）",
@@ -7544,6 +7634,92 @@ module.exports = {
       "source": "https://www.diw.de/de/diw_01.c.945271.de/pilotprojekt_grundeinkommen__feldstudie_entkraeftet_mythos_von_der_sozialen_haengematte.html",
       "svc": "meingrundeinkommen",
       "org": "mgk"
+    },
+    {
+      "id": "cook-county",
+      "years": "2022–",
+      "type": "gov",
+      "name": "Cook County Promise Guaranteed Income",
+      "place": {
+        "ja": "アメリカ・イリノイ州クック郡",
+        "en": "Cook County, Illinois, USA",
+        "zh": "美国伊利诺伊州库克县",
+        "hi": "कुक काउंटी, इलिनॉय, अमेरिका",
+        "es": "Condado de Cook, Illinois (EE. UU.)",
+        "de": "Cook County, Illinois (USA)",
+        "ar": "مقاطعة كوك، إلينوي، الولايات المتحدة"
+      },
+      "who": {
+        "ja": "クック郡（シカゴを含む）",
+        "en": "Cook County government (which includes Chicago)",
+        "zh": "库克县政府（含芝加哥）",
+        "hi": "कुक काउंटी सरकार (शिकागो सहित)",
+        "es": "Gobierno del condado de Cook (incluye Chicago)",
+        "de": "Verwaltung von Cook County (mit Chicago)",
+        "ar": "حكومة مقاطعة كوك (التي تضم شيكاغو)"
+      },
+      "paid": {
+        "ja": "抽選で選ばれた低・中所得の3,250世帯に、条件なしで月500ドルを2年間（2022年12月〜2025年1月）。財源は連邦のコロナ対策資金（ARPA）4,200万ドル",
+        "en": "$500 a month with no conditions for two years (Dec 2022–Jan 2025) to 3,250 low-to-moderate-income households chosen by lottery, funded with $42 million of federal pandemic relief (ARPA)",
+        "zh": "通过抽签选出 3,250 个中低收入家庭，无条件每月发放 500 美元，为期两年（2022 年 12 月至 2025 年 1 月），资金为 4,200 万美元联邦疫情纾困款（ARPA）",
+        "hi": "लॉटरी से चुने गए 3,250 कम-से-मध्यम आय वाले परिवारों को दो साल (दिसंबर 2022–जनवरी 2025) तक बिना शर्त हर महीने $500; पैसा $4.2 करोड़ की संघीय महामारी राहत (ARPA) से",
+        "es": "500 $ al mes sin condiciones durante dos años (dic. 2022–ene. 2025) para 3.250 hogares de ingresos bajos y medios elegidos por sorteo, con 42 millones de dólares de fondos federales de alivio por la pandemia (ARPA)",
+        "de": "500 $ im Monat ohne Bedingungen für zwei Jahre (Dez. 2022 bis Jan. 2025) an 3.250 per Los ausgewählte Haushalte mit niedrigem bis mittlerem Einkommen, finanziert mit 42 Mio. $ Corona-Hilfe des Bundes (ARPA)",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عامين (ديسمبر 2022–يناير 2025) لـ3,250 أسرة منخفضة ومتوسطة الدخل اختيرت بالقرعة، بتمويل 42 مليون دولار من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)"
+      },
+      "result": {
+        "ja": "2025年11月、郡議会が2026年度予算に保証所得の750万ドルを計上。支援団体は米国初の恒久的な郡の保証所得と呼ぶ。次の段階の対象や金額は設計中で、2026年後半にまとまる予定",
+        "en": "In November 2025 the county board approved $7.5 million for guaranteed income in the 2026 budget, which advocates call the first permanent county program in the US; eligibility and amounts for the next phase are still being designed (due late 2026)",
+        "zh": "2025 年 11 月，县委员会在 2026 年度预算中批准 750 万美元用于保障收入，倡导团体称之为美国首个永久性县级项目；下一阶段的资格和金额仍在设计中（预计 2026 年底完成）",
+        "hi": "नवंबर 2025 में काउंटी बोर्ड ने 2026 के बजट में गारंटीड इनकम के लिए $75 लाख मंज़ूर किए, जिसे समर्थक अमेरिका का पहला स्थायी काउंटी कार्यक्रम कहते हैं; अगले चरण की पात्रता और राशि अभी तय हो रही है (2026 के अंत तक)",
+        "es": "En noviembre de 2025 la junta del condado aprobó 7,5 millones de dólares para ingreso garantizado en el presupuesto de 2026, que sus defensores llaman el primer programa permanente de un condado en EE. UU.; los requisitos y montos de la siguiente fase aún se están diseñando (previsto para finales de 2026)",
+        "de": "Im November 2025 bewilligte der Kreisrat im Haushalt 2026 7,5 Mio. $ für garantiertes Einkommen, laut Befürwortern das erste dauerhafte Programm eines US-Countys; Berechtigung und Beträge der nächsten Phase werden noch ausgearbeitet (bis Ende 2026)",
+        "ar": "في نوفمبر 2025 أقر مجلس المقاطعة 7.5 مليون دولار للدخل المضمون في ميزانية 2026، ويصفه المؤيدون بأنه أول برنامج دائم على مستوى مقاطعة في الولايات المتحدة؛ ولا تزال شروط الأهلية والمبالغ للمرحلة التالية قيد التصميم (حتى أواخر 2026)"
+      },
+      "source": "https://www.cookcountyil.gov/promise"
+    },
+    {
+      "id": "marshall-islands",
+      "years": "2025–",
+      "type": "gov",
+      "name": "Enra (Individual Support Distribution)",
+      "place": {
+        "ja": "マーシャル諸島",
+        "en": "Marshall Islands",
+        "zh": "马绍尔群岛",
+        "hi": "मार्शल द्वीप समूह",
+        "es": "Islas Marshall",
+        "de": "Marshallinseln",
+        "ar": "جزر مارشال"
+      },
+      "who": {
+        "ja": "マーシャル諸島政府（支給はマーシャル諸島社会保障局 MISSA）",
+        "en": "Government of the Marshall Islands; paid out by the Marshall Islands Social Security Administration (MISSA)",
+        "zh": "马绍尔群岛政府（由马绍尔群岛社会保障局 MISSA 发放）",
+        "hi": "मार्शल द्वीप सरकार; भुगतान मार्शल द्वीप सामाजिक सुरक्षा प्रशासन (MISSA) करता है",
+        "es": "Gobierno de las Islas Marshall; paga la Administración de la Seguridad Social (MISSA)",
+        "de": "Regierung der Marshallinseln; ausgezahlt von der Sozialversicherungsbehörde MISSA",
+        "ar": "حكومة جزر مارشال؛ وتصرفها إدارة الضمان الاجتماعي (⁦MISSA⁩)"
+      },
+      "paid": {
+        "ja": "国内に住む国民全員（子どもを含む）に3か月ごとに約200ドル（年約800ドル）。米国との自由連合盟約（コンパクト）の資金が財源。銀行振込、小切手、希望者は政府のデジタルウォレットで受け取れる。2025年11月26日に開始",
+        "en": "About US$200 every quarter (about $800 a year) to every Marshallese citizen living in the country, children included, funded through the Compact of Free Association with the US; paid by bank deposit, cheque or an opt-in government digital wallet. Started 26 November 2025",
+        "zh": "向居住在国内的全体国民（含儿童）每季度发放约 200 美元（每年约 800 美元），资金来自与美国的《自由联合条约》；可选择银行转账、支票或政府数字钱包领取。2025 年 11 月 26 日开始",
+        "hi": "देश में रहने वाले हर मार्शली नागरिक (बच्चों सहित) को हर तिमाही लगभग US$200 (साल में लगभग $800), अमेरिका के साथ कॉम्पैक्ट ऑफ़ फ़्री एसोसिएशन से वित्त पोषित; बैंक जमा, चेक या वैकल्पिक सरकारी डिजिटल वॉलेट से। 26 नवंबर 2025 को शुरू",
+        "es": "Unos 200 US$ por trimestre (unos 800 $ al año) para cada ciudadano marshalés que vive en el país, niños incluidos, financiados a través del Pacto de Libre Asociación con EE. UU.; se cobra por banco, cheque o una billetera digital pública opcional. Empezó el 26 de noviembre de 2025",
+        "de": "Rund 200 US$ pro Quartal (rund 800 $ im Jahr) für alle im Land lebenden Staatsbürger, Kinder eingeschlossen, finanziert über den Compact of Free Association mit den USA; per Überweisung, Scheck oder optionaler staatlicher Digital-Wallet. Start am 26. November 2025",
+        "ar": "نحو ⁦US$200⁩ كل ربع سنة (نحو ⁦$800⁩ سنويًا) لكل مواطن مارشالي يعيش في البلاد بمن فيهم الأطفال، بتمويل عبر اتفاق الارتباط الحر مع الولايات المتحدة؛ يُصرف بإيداع مصرفي أو شيك أو محفظة رقمية حكومية اختيارية. بدأ في 26 نوفمبر 2025"
+      },
+      "result": {
+        "ja": "ABCニュースは世界初と報道。初回は約3万3,000人が登録。マーシャル諸島ジャーナルによると、2026年8月の4回目は40,714人に1人215.85ドル（1人あたりの額は登録者数で変わる）",
+        "en": "ABC News called it a world first. About 33,000 registered for the first payment; the Marshall Islands Journal reported $215.85 each to 40,714 people in August 2026 (the amount per person varies with enrolment)",
+        "zh": "ABC 新闻称其为世界首例。首次发放约 33,000 人登记；据《马绍尔群岛日报》，2026 年 8 月第四次向 40,714 人每人发放 215.85 美元（人均金额随登记人数变化）",
+        "hi": "ABC न्यूज़ ने इसे दुनिया में पहला बताया। पहले भुगतान के लिए लगभग 33,000 लोगों ने पंजीकरण कराया; मार्शल आइलैंड्स जर्नल के अनुसार अगस्त 2026 में 40,714 लोगों को $215.85 प्रति व्यक्ति मिले (प्रति व्यक्ति राशि पंजीकरण के साथ बदलती है)",
+        "es": "ABC News lo calificó de primicia mundial. Unas 33.000 personas se registraron para el primer pago; el Marshall Islands Journal informó de 215,85 $ por persona a 40.714 personas en agosto de 2026 (la cantidad varía con el número de inscritos)",
+        "de": "ABC News nannte es eine Weltpremiere. Rund 33.000 registrierten sich für die erste Zahlung; laut Marshall Islands Journal gingen im August 2026 je 215,85 $ an 40.714 Menschen (der Betrag pro Kopf hängt von der Zahl der Angemeldeten ab)",
+        "ar": "وصفته ⁦ABC News⁩ بأنه الأول من نوعه عالميًا. سجّل نحو 33,000 شخص للدفعة الأولى، وأفادت ⁦Marshall Islands Journal⁩ بصرف ⁦$215.85⁩ لكل من 40,714 شخصًا في أغسطس 2026 (يتغير المبلغ للفرد بحسب عدد المسجلين)"
+      },
+      "source": "https://www.lowyinstitute.org/the-interpreter/marshall-islands-experiment-universal-basic-income"
     },
     {
       "id": "g1",

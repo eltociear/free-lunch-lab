@@ -4,7 +4,7 @@
 
 - Referral links: some sign-up links are the maintainer's referral links. They are marked in the data (`referral` in services.json) and labelled "Referral link" below; official URLs are always given too.
 - License: content is CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), referral links excluded.
-- Data last checked: 2026-10
+- Data last checked: 2026-11
 - Short index: https://neteru-nyukin.eltociear.workers.dev/llms.txt
 
 ## Services
@@ -741,6 +741,29 @@ What you need: Open the referral link and sign in with X (very new X accounts ca
 Warning: The domain was registered in October 2026, the operator is anonymous, and there are no terms and no token yet. Don’t pay anything, don’t connect a wallet that holds your funds, and don’t sign anything presented as a “claim”.
 
 Cautions: Points are neither money nor tokens, and nothing is guaranteed. Only enter a receiving address, and never share your seed phrase. Fake claim sites are common around launches, so only use links from the official X account and refrax.xyz. Whoever invited you, including this site’s operator, earns points when you finish a quest
+
+### Sible Network ($SIB)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/siblenetwork/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: not specified
+- Trust check: Cash out: No; Market price: No; Public operator: Unverified
+- Last checked: 2026-11
+- Official URL: https://sible.network/
+- Referral link (maintainer's own referral; not covered by the content license): https://mine.sible.network/eltociear
+- Referral code (maintainer's own): eltociear
+
+A Pi Network-style “AI mining” app where you tap to start mining sessions. It starts at 0.1 SIBLE per hour and speeds up as your referral network grows. Claimed total supply is 1 billion, halving every 4 months. Launched around August 2026. On Google Play, the App Store and web.sible.network
+
+What you get: SIBLE ($SIB) mining balance (not tradable)
+
+What you need: Sign up via the referral link and enter invite code eltociear to get 10 SIBLE. Then tap to start mining (sign-up from Japan confirmed in Oct 2026)
+
+Warning: SIBLE can’t be traded and no payouts have been verified. The claim that it is run by Sible Labs, a Palo Alto AI company founded by former OpenAI and Netflix talent, is unverified. Don’t pay anything.
+
+Cautions: All of this is the project’s own unverified claims. The token can’t be traded and may never be worth anything. Referrals speed up mining, so growth relies on recruiting. Its X account also uses the name “Scale Network ($SCALE)”, which is confusing. App permissions and data handling have not been checked. Whoever invited you, including this site’s operator, mines faster
 
 ## Essays
 
