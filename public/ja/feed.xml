@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/ja/</link>
     <description>存在するだけでお金がもらえる、ベーシックインカム型のアプリやプロジェクト（Ğ1、Circles、Gradido、Idena など）の一覧。リスクや換金のしやすさもあわせて紹介。一部は紹介リンクです。</description>
     <language>ja</language>
-    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ja/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Brave Rewards（Braveブラウザ）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/braverewards/</link>
+      <guid isPermaLink="false">news-2026-11-02-0efb212a97ec</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Brave Rewards（Braveブラウザ）を追加: BAT（Basic Attention Token）</description>
+    </item>
     <item>
       <title>Perceptron Network（旧BlockMesh）を追加</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/perceptron/</link>

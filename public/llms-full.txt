@@ -786,6 +786,25 @@ What you need: Sign up with email, install the Chrome extension or Android app, 
 
 Cautions: Rewards are only points for now. No token (ticker PERC) launch or airdrop has been announced (as of Nov 2026), so whether they will be worth anything, and when, is unknown. The extension lets others use your internet connection for data collection. Don’t pay anything
 
+### Brave Rewards (Brave browser)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/braverewards/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: ID document KYC
+- Trust check: Cash out: Yes; Market price: Yes; Public operator: Yes
+- Last checked: 2026-11
+- Official URL: https://brave.com/brave-rewards/
+
+Opt in to privacy-preserving Brave Ads in the Brave browser to earn BAT. Ads are off by default. Works on desktop and Android; on iOS it only supports creators. Officially supported in Japan via bitFlyer, with BAT usually paid to your bitFlyer account early the next month
+
+What you get: BAT (Basic Attention Token)
+
+What you need: Install Brave, turn on Brave Rewards and Brave Ads, and link a verified (KYC) bitFlyer account (bitFlyer is the payout account in Japan)
+
+Cautions: Amounts are small. Brave’s BAT Roadmap 4.0 (Jul 2026) says notification ads will begin a gradual sunset by the end of 2026, with rewards shifting to offers, purchases and wallet activity (it says users will keep earning from eligible Brave Ads). The BAT price fluctuates; to get yen you sell it on bitFlyer
+
 ## Essays
 
 ### Use it, own it: from Rochdale to airdrops to KABU&

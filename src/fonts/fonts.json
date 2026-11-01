@@ -383,6 +383,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-d2a6327df2.woff2",
     "chars": "習"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-a87153b7fa.woff2",
+    "chars": "慮旬翌"
    }
   ],
   "ja:body:700": [
@@ -453,6 +457,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-72a9378227.woff2",
     "chars": "習"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-e22bcef166.woff2",
+    "chars": "慮旬翌"
    }
   ],
   "ja:display": [
@@ -487,6 +495,10 @@
    {
     "file": "dela-gothic-one-400-ja-56e2f45732.woff2",
     "chars": "旧"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-91a4f3ec9b.woff2",
+    "chars": "ザラ"
    }
   ],
   "ja:dot": [
@@ -591,6 +603,10 @@
    {
     "file": "noto-sans-sc-400-zh-68f1cfe661.woff2",
     "chars": "练"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-e9880c087a.woff2",
+    "chars": "默"
    }
   ],
   "zh:body:700": [
@@ -657,6 +673,10 @@
    {
     "file": "noto-sans-sc-700-zh-4871efb25c.woff2",
     "chars": "练"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-482d23531e.woff2",
+    "chars": "默"
    }
   ],
   "zh:display": [

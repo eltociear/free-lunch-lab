@@ -2693,6 +2693,71 @@ module.exports = {
         "need": "سجّل بالبريد الإلكتروني، وثبّت إضافة ⁦Chrome⁩ أو تطبيق ⁦Android⁩ وابقَ متصلًا. هناك مهام إضافية مثل اختبار ⁦captcha⁩ لإثبات أنك إنسان وربط ⁦X⁩ أو محفظة ⁦Solana⁩ (تأكدنا في نوفمبر 2026 أن التسجيل يعمل من اليابان)",
         "caution": "المكافآت حاليًا نقاط فقط. لم يُعلن عن رمز (⁦PERC⁩) ولا عن إسقاط جوي (حتى نوفمبر 2026)، فلا يُعرف إن كانت ستساوي شيئًا ولا متى. تتيح الإضافة لآخرين استخدام اتصالك بالإنترنت لجمع البيانات. لا تدفع أي شيء"
       }
+    },
+    {
+      "id": "braverewards",
+      "name": "Brave Rewards（Braveブラウザ）",
+      "nameEn": "Brave Rewards (Brave browser)",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://brave.com/brave-rewards/",
+      "noRef": true,
+      "added": "2026-11-02",
+      "checked": "2026-11",
+      "trust": {
+        "cash": "yes",
+        "price": "yes",
+        "operator": "yes"
+      },
+      "verify": [
+        {
+          "method": "kyc-id"
+        }
+      ],
+      "ja": {
+        "gain": "BAT（Basic Attention Token）",
+        "note": "Braveブラウザで、プライバシーに配慮したBrave広告を見ることを選ぶとBATがたまる。広告は初期設定ではオフ。PCとAndroidで使え、iOSはクリエイター応援だけ。日本はbitFlyer連携で公式に対応していて、BATは通常翌月初旬にbitFlyer口座へ届く",
+        "need": "Braveブラウザを入れてBrave Rewardsと広告をオンにし、本人確認済みのbitFlyerアカウントを連携する（日本の受け取り口座はbitFlyer）",
+        "caution": "もらえるのは少額。2026年7月のBAT Roadmap 4.0で、通知広告は2026年末までに段階的な終了が始まり、今後はオファーや買い物、ウォレット利用が報酬の中心になるとされた（対象のBrave広告で稼げる点は続くとしている）。BATの価格は変動し、円にするにはbitFlyerで売る"
+      },
+      "en": {
+        "gain": "BAT (Basic Attention Token)",
+        "note": "Opt in to privacy-preserving Brave Ads in the Brave browser to earn BAT. Ads are off by default. Works on desktop and Android; on iOS it only supports creators. Officially supported in Japan via bitFlyer, with BAT usually paid to your bitFlyer account early the next month",
+        "need": "Install Brave, turn on Brave Rewards and Brave Ads, and link a verified (KYC) bitFlyer account (bitFlyer is the payout account in Japan)",
+        "caution": "Amounts are small. Brave’s BAT Roadmap 4.0 (Jul 2026) says notification ads will begin a gradual sunset by the end of 2026, with rewards shifting to offers, purchases and wallet activity (it says users will keep earning from eligible Brave Ads). The BAT price fluctuates; to get yen you sell it on bitFlyer"
+      },
+      "zh": {
+        "gain": "BAT（Basic Attention Token）",
+        "note": "在 Brave 浏览器中选择观看注重隐私的 Brave 广告即可获得 BAT。广告默认关闭。支持电脑和 Android，iOS 上只能用于支持创作者。日本通过 bitFlyer 获得官方支持，BAT 通常在次月初发放到 bitFlyer 账户",
+        "need": "安装 Brave，开启 Brave Rewards 和 Brave 广告，并绑定已完成实名认证（KYC）的 bitFlyer 账户（日本的收款账户为 bitFlyer）",
+        "caution": "金额很少。Brave 在 2026 年 7 月的 BAT Roadmap 4.0 中表示，通知广告将在 2026 年底前开始逐步停用，奖励将转向优惠、购物和钱包使用（并称用户仍可通过符合条件的 Brave 广告赚取）。BAT 价格会波动，换成日元需在 bitFlyer 卖出"
+      },
+      "hi": {
+        "gain": "BAT (Basic Attention Token)",
+        "note": "Brave ब्राउज़र में प्राइवेसी का ध्यान रखने वाले Brave Ads देखने का विकल्प चुनें और BAT कमाएँ। विज्ञापन डिफ़ॉल्ट रूप से बंद रहते हैं। डेस्कटॉप और Android पर चलता है; iOS पर सिर्फ़ क्रिएटर्स को सपोर्ट कर सकते हैं। जापान में bitFlyer के ज़रिए आधिकारिक सपोर्ट है, BAT आमतौर पर अगले महीने की शुरुआत में bitFlyer खाते में आता है",
+        "need": "Brave इंस्टॉल करें, Brave Rewards और Brave Ads चालू करें, और KYC पूरा किया हुआ bitFlyer खाता जोड़ें (जापान में पेआउट खाता bitFlyer है)",
+        "caution": "रकम छोटी होती है। Brave के BAT Roadmap 4.0 (जुलाई 2026) के अनुसार नोटिफ़िकेशन विज्ञापन 2026 के अंत तक धीरे-धीरे बंद होने लगेंगे और इनाम ऑफ़र, ख़रीदारी और वॉलेट इस्तेमाल की ओर जाएँगे (योग्य Brave Ads से कमाई जारी रहेगी, ऐसा कहा गया है)। BAT की क़ीमत बदलती रहती है; येन के लिए bitFlyer पर बेचना होता है"
+      },
+      "es": {
+        "gain": "BAT (Basic Attention Token)",
+        "note": "Activa los anuncios de Brave, respetuosos con la privacidad, en el navegador Brave para ganar BAT. Los anuncios vienen desactivados. Funciona en ordenador y Android; en iOS solo sirve para apoyar a creadores. En Japón tiene soporte oficial a través de bitFlyer, y el BAT suele llegar a tu cuenta de bitFlyer a principios del mes siguiente",
+        "need": "Instala Brave, activa Brave Rewards y los anuncios de Brave, y vincula una cuenta de bitFlyer verificada (KYC) (en Japón la cuenta de cobro es bitFlyer)",
+        "caution": "Las cantidades son pequeñas. El BAT Roadmap 4.0 de Brave (jul. de 2026) dice que los anuncios de notificación empezarán a retirarse gradualmente antes de finales de 2026 y que las recompensas se centrarán en ofertas, compras y uso de la wallet (afirma que se seguirá ganando con los anuncios de Brave elegibles). El precio del BAT fluctúa; para obtener yenes hay que venderlo en bitFlyer"
+      },
+      "de": {
+        "gain": "BAT (Basic Attention Token)",
+        "note": "Im Brave-Browser datenschutzfreundliche Brave-Anzeigen aktivieren und BAT verdienen. Anzeigen sind standardmäßig aus. Läuft auf Desktop und Android; unter iOS nur zum Unterstützen von Creators. In Japan offiziell über bitFlyer unterstützt, BAT kommt meist Anfang des Folgemonats aufs bitFlyer-Konto",
+        "need": "Brave installieren, Brave Rewards und Brave-Anzeigen einschalten und ein verifiziertes (KYC) bitFlyer-Konto verknüpfen (in Japan ist bitFlyer das Auszahlungskonto)",
+        "caution": "Die Beträge sind klein. Laut Braves BAT Roadmap 4.0 (Juli 2026) beginnt bis Ende 2026 die schrittweise Einstellung der Benachrichtigungsanzeigen; Belohnungen verlagern sich auf Angebote, Käufe und Wallet-Nutzung (man verdiene weiter mit geeigneten Brave-Anzeigen). Der BAT-Kurs schwankt; für Yen muss man bei bitFlyer verkaufen"
+      },
+      "ar": {
+        "gain": "⁦BAT (Basic Attention Token)⁩",
+        "note": "فعّل إعلانات ⁦Brave⁩ التي تحترم الخصوصية في متصفح ⁦Brave⁩ لتكسب ⁦BAT⁩. الإعلانات معطلة افتراضيًا. يعمل على الحاسوب و⁦Android⁩، وعلى ⁦iOS⁩ يقتصر على دعم صناع المحتوى. مدعوم رسميًا في اليابان عبر ⁦bitFlyer⁩، وتصل ⁦BAT⁩ عادةً إلى حسابك في ⁦bitFlyer⁩ في أوائل الشهر التالي",
+        "need": "ثبّت ⁦Brave⁩، وفعّل ⁦Brave Rewards⁩ وإعلانات ⁦Brave⁩، واربط حساب ⁦bitFlyer⁩ موثّقًا (⁦KYC⁩) (حساب الاستلام في اليابان هو ⁦bitFlyer⁩)",
+        "caution": "المبالغ صغيرة. تقول خطة ⁦BAT Roadmap 4.0⁩ من ⁦Brave⁩ (يوليو 2026) إن إعلانات الإشعارات ستبدأ إيقافًا تدريجيًا بحلول نهاية 2026، وإن المكافآت ستتجه إلى العروض والمشتريات واستخدام المحفظة (وتقول إن الكسب من إعلانات ⁦Brave⁩ المؤهلة سيستمر). سعر ⁦BAT⁩ متقلب، وللحصول على الين يجب بيعه في ⁦bitFlyer⁩"
+      }
     }
   ],
   "PICKS": [
@@ -2728,6 +2793,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-11-02",
+      "ja": "Brave Rewards（Braveブラウザ）を追加",
+      "en": "Added Brave Rewards (Brave browser)",
+      "zh": "新增 Brave Rewards（Brave 浏览器）",
+      "hi": "Brave Rewards (Brave ब्राउज़र) जोड़ा",
+      "es": "Añadido Brave Rewards (navegador Brave)",
+      "de": "Brave Rewards (Brave-Browser) hinzugefügt",
+      "ar": "أضفنا ⁦Brave Rewards⁩ (متصفح ⁦Brave⁩)"
+    },
     {
       "date": "2026-11-01",
       "ja": "Perceptron Network（旧BlockMesh）を追加",
