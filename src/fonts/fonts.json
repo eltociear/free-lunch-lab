@@ -451,6 +451,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-6b4410cb37.woff2",
     "chars": "復板枠棄"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-de8874fa93.woff2",
+    "chars": "双"
    }
   ],
   "ja:body:700": [
@@ -537,6 +541,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-58cbcbc866.woff2",
     "chars": "復板枠棄"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-6ae9d29eca.woff2",
+    "chars": "双"
    }
   ],
   "ja:display": [

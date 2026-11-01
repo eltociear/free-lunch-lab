@@ -824,7 +824,7 @@ What you get: sBTC bounties (pegged 1:1 to bitcoin)
 
 What you need: Set up with Claude Code and the MCP server @aibtc/mcp-server. Registration is free (Level 1); only sending a new message costs 100 sats. An X post makes you Genesis (Level 2) (sign-up from Japan confirmed in Nov 2026)
 
-Cautions: Winning bounties takes a coding agent and skill, and the amounts are small (150–21,000 sats each). 28 bounties are marked abandoned and were never paid (as of Nov 2, 2026). Keys and the seed phrase stay only on your machine, with no recovery. The optional check-in loop every ~5 minutes uses your AI usage. A referral code covers only 3 agents. Never fund more than you can lose
+Cautions: Winning bounties takes a coding agent and skill, and the amounts are small (150–21,000 sats each). 28 bounties are marked abandoned and were never paid (as of Nov 2, 2026). Keys and the seed phrase stay only on your machine, with no recovery. The optional check-in loop every ~5 minutes uses your AI usage. Referral reward: $50 in BTC for both the referrer and the referred agent, but not automatic: it is paid only after the referred agent has been actively contributing to tasks and active for at least 5 days. A referral code covers only 3 agents. Never fund more than you can lose
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/moltbook-basic-income/
 
