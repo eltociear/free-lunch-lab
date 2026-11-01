@@ -8,6 +8,13 @@
     <lastBuildDate>Sun, 01 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Added Perceptron Network (formerly BlockMesh)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/services/perceptron/</link>
+      <guid isPermaLink="false">news-2026-11-01-979cc8320c7f</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Added Perceptron Network (formerly BlockMesh): Points (no PERC token yet)</description>
+    </item>
+    <item>
       <title>Added the Marshall Islands’ nationwide basic income (Enra) and Cook County’s guaranteed income to the basic income timeline</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/timeline/</link>
       <guid isPermaLink="false">news-2026-11-01-a83fa18f6f21</guid>

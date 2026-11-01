@@ -379,6 +379,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-5fd9001391.woff2",
     "chars": "恒盟銀"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-d2a6327df2.woff2",
+    "chars": "習"
    }
   ],
   "ja:body:700": [
@@ -445,6 +449,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-f50f44427b.woff2",
     "chars": "恒盟銀"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-72a9378227.woff2",
+    "chars": "習"
    }
   ],
   "ja:display": [
@@ -475,6 +483,10 @@
    {
     "file": "dela-gothic-one-400-ja-4420482b78.woff2",
     "chars": "ツ冒放断橋活石置診険"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-56e2f45732.woff2",
+    "chars": "旧"
    }
   ],
   "ja:dot": [
@@ -575,6 +587,10 @@
    {
     "file": "noto-sans-sc-400-zh-e2ffd6474f.woff2",
     "chars": "哥四委疫纾芝阶"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-68f1cfe661.woff2",
+    "chars": "练"
    }
   ],
   "zh:body:700": [
@@ -637,6 +653,10 @@
    {
     "file": "noto-sans-sc-700-zh-3df2bcb632.woff2",
     "chars": "哥四委疫纾芝阶"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-4871efb25c.woff2",
+    "chars": "练"
    }
   ],
   "zh:display": [

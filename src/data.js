@@ -2627,6 +2627,72 @@ module.exports = {
         "warning": "لا يمكن تداول ⁦SIBLE⁩ ولم يثبت أي دفع فعلي. الادعاء بأن من يديره هو ⁦Sible Labs⁩، شركة ذكاء اصطناعي في بالو ألتو أسسها موظفون سابقون في ⁦OpenAI⁩ و⁦Netflix⁩، غير مؤكد. لا تدفع أي شيء.",
         "caution": "كل هذا ادعاءات غير مؤكدة من المشروع نفسه. الرمز غير قابل للتداول وقد لا تكون له قيمة أبدًا. الإحالات تسرّع التعدين، فيعتمد النمو على التجنيد. يستخدم حسابه على ⁦X⁩ أيضًا اسم ⁦Scale Network ($SCALE)⁩، وهذا مربك. لم تُفحص أذونات التطبيق ولا طريقة استخدامه للبيانات. من دعاك، بمن فيهم مشغّل هذا الموقع، يعدّن أسرع"
       }
+    },
+    {
+      "id": "perceptron",
+      "name": "Perceptron Network（旧BlockMesh）",
+      "nameEn": "Perceptron Network (formerly BlockMesh)",
+      "cat": "app",
+      "type": "loop",
+      "global": true,
+      "ease": 5,
+      "official": "https://perceptrons.xyz/",
+      "code": "e7337520-0866-4716-9abd-b8fe97f8b18f",
+      "ref": "https://backend.perceptrons.xyz/register?invite_code=e7337520-0866-4716-9abd-b8fe97f8b18f",
+      "added": "2026-11-01",
+      "checked": "2026-11",
+      "trust": {
+        "cash": "no",
+        "price": "no",
+        "operator": "partial"
+      },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
+      "ja": {
+        "gain": "ポイント（PERCトークンは未発行）",
+        "note": "AIの学習データを集める分散型ネットワーク。Chrome拡張かAndroidアプリでノードを動かし、使っていない回線の帯域を貸したり、データ集めのクエスト（Data Questing）をこなしたりしてポイントをためる。公式ハブでは80万ノード以上・150か国以上（2026年11月時点）",
+        "need": "メールで登録し、Chrome拡張かAndroidアプリを入れて接続したままにする。キャプチャでの人間確認やX・ソラナのウォレット連携の追加タスクもある（2026年10月に日本から登録できることを確認）",
+        "caution": "報酬は今のところポイントだけ。トークン（ティッカーPERC）の発行やエアドロップは発表されておらず（2026年11月時点）、価値がつくかも、いつ何がもらえるかもわからない。拡張はあなたのネット回線を他者のデータ収集に使わせるしくみ。お金は払わないこと"
+      },
+      "en": {
+        "gain": "Points (no PERC token yet)",
+        "note": "A decentralized network that gathers AI training data. Run a node with the Chrome extension or Android app to share unused bandwidth and complete data-collection quests (Data Questing) for points. The official hub shows 800K+ nodes in 150+ countries (as of Nov 2026)",
+        "need": "Sign up with email, install the Chrome extension or Android app, and stay connected. Extra tasks include a captcha humanity check and linking X or a Solana wallet (sign-up from Japan confirmed in Oct 2026)",
+        "caution": "Rewards are only points for now. No token (ticker PERC) launch or airdrop has been announced (as of Nov 2026), so whether they will be worth anything, and when, is unknown. The extension lets others use your internet connection for data collection. Don’t pay anything"
+      },
+      "zh": {
+        "gain": "积分（PERC 代币尚未发行）",
+        "note": "收集 AI 训练数据的去中心化网络。用 Chrome 扩展或 Android 应用运行节点，共享闲置带宽并完成数据收集任务（Data Questing）来累积积分。官方面板显示有 80 万以上节点、覆盖 150 多个国家（截至 2026 年 11 月）",
+        "need": "用邮箱注册，安装 Chrome 扩展或 Android 应用并保持连接。另有验证码真人验证、绑定 X 或 Solana 钱包等额外任务（已于 2026 年 10 月确认可从日本注册）",
+        "caution": "目前奖励只有积分。代币（代号 PERC）的发行和空投均未公布（截至 2026 年 11 月），能否有价值、何时能拿到什么都不确定。扩展会让他人使用你的网络连接收集数据。不要付任何钱"
+      },
+      "hi": {
+        "gain": "पॉइंट (PERC टोकन अभी जारी नहीं)",
+        "note": "AI ट्रेनिंग डेटा जुटाने वाला विकेंद्रीकृत नेटवर्क। Chrome एक्सटेंशन या Android ऐप से नोड चलाएँ, बिना इस्तेमाल हुई बैंडविड्थ शेयर करें और डेटा जुटाने वाले क्वेस्ट (Data Questing) पूरे करके पॉइंट पाएँ। आधिकारिक हब के अनुसार 150+ देशों में 8 लाख+ नोड (नवंबर 2026 तक)",
+        "need": "ईमेल से साइन अप करें, Chrome एक्सटेंशन या Android ऐप इंस्टॉल करें और कनेक्ट रहें। कैप्चा से इंसान होने की जाँच, X या Solana वॉलेट जोड़ने जैसे अतिरिक्त टास्क भी हैं (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)",
+        "caution": "अभी इनाम सिर्फ़ पॉइंट हैं। टोकन (टिकर PERC) या एयरड्रॉप की कोई घोषणा नहीं हुई है (नवंबर 2026 तक), इसलिए इनकी कोई क़ीमत होगी या कब क्या मिलेगा, पता नहीं। एक्सटेंशन आपके इंटरनेट कनेक्शन को दूसरों के डेटा जुटाने में इस्तेमाल होने देता है। कोई भुगतान न करें"
+      },
+      "es": {
+        "gain": "Puntos (aún sin token PERC)",
+        "note": "Una red descentralizada que recopila datos para entrenar IA. Ejecuta un nodo con la extensión de Chrome o la app de Android para compartir ancho de banda sin usar y completar misiones de recogida de datos (Data Questing) a cambio de puntos. El panel oficial indica más de 800.000 nodos en más de 150 países (a nov. de 2026)",
+        "need": "Regístrate con tu email, instala la extensión de Chrome o la app de Android y mantente conectado. Hay tareas extra, como un captcha de humanidad y vincular X o una wallet de Solana (se comprobó en octubre de 2026 que el registro funciona desde Japón)",
+        "caution": "Por ahora las recompensas son solo puntos. No se ha anunciado ningún token (ticker PERC) ni airdrop (a nov. de 2026), así que no se sabe si valdrán algo ni cuándo. La extensión deja que otros usen tu conexión a internet para recopilar datos. No pagues nada"
+      },
+      "de": {
+        "gain": "Punkte (noch kein PERC-Token)",
+        "note": "Ein dezentrales Netzwerk, das KI-Trainingsdaten sammelt. Betreibe einen Node per Chrome-Erweiterung oder Android-App, teile ungenutzte Bandbreite und erledige Datensammel-Quests (Data Questing) für Punkte. Laut offiziellem Hub über 800.000 Nodes in über 150 Ländern (Stand Nov. 2026)",
+        "need": "Mit E-Mail anmelden, Chrome-Erweiterung oder Android-App installieren und verbunden bleiben. Zusatzaufgaben: Captcha als Menschlichkeitsnachweis, X oder eine Solana-Wallet verknüpfen (im Oktober 2026 bestätigt: Anmeldung aus Japan möglich)",
+        "caution": "Belohnt wird bisher nur mit Punkten. Ein Token (Ticker PERC) oder Airdrop ist nicht angekündigt (Stand Nov. 2026), ob sie je etwas wert sind und wann, ist offen. Die Erweiterung lässt andere deine Internetverbindung zur Datensammlung nutzen. Zahle nichts"
+      },
+      "ar": {
+        "gain": "نقاط (لم يُطلق رمز ⁦PERC⁩ بعد)",
+        "note": "شبكة لامركزية تجمع بيانات لتدريب الذكاء الاصطناعي. شغّل عقدة عبر إضافة ⁦Chrome⁩ أو تطبيق ⁦Android⁩ لمشاركة عرض النطاق غير المستخدم وإنجاز مهام جمع البيانات ⁦(Data Questing)⁩ مقابل نقاط. تُظهر اللوحة الرسمية أكثر من 800 ألف عقدة في أكثر من 150 دولة (حتى نوفمبر 2026)",
+        "need": "سجّل بالبريد الإلكتروني، وثبّت إضافة ⁦Chrome⁩ أو تطبيق ⁦Android⁩ وابقَ متصلًا. هناك مهام إضافية مثل اختبار ⁦captcha⁩ لإثبات أنك إنسان وربط ⁦X⁩ أو محفظة ⁦Solana⁩ (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)",
+        "caution": "المكافآت حاليًا نقاط فقط. لم يُعلن عن رمز (⁦PERC⁩) ولا عن إسقاط جوي (حتى نوفمبر 2026)، فلا يُعرف إن كانت ستساوي شيئًا ولا متى. تتيح الإضافة لآخرين استخدام اتصالك بالإنترنت لجمع البيانات. لا تدفع أي شيء"
+      }
     }
   ],
   "PICKS": [
@@ -2662,6 +2728,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-11-01",
+      "ja": "Perceptron Network（旧BlockMesh）を追加",
+      "en": "Added Perceptron Network (formerly BlockMesh)",
+      "zh": "新增 Perceptron Network（原 BlockMesh）",
+      "hi": "Perceptron Network (पहले BlockMesh) जोड़ा",
+      "es": "Añadido Perceptron Network (antes BlockMesh)",
+      "de": "Perceptron Network (früher BlockMesh) hinzugefügt",
+      "ar": "أضفنا ⁦Perceptron Network⁩ (سابقًا ⁦BlockMesh⁩)"
+    },
     {
       "date": "2026-11-01",
       "ja": "ベーシックインカム実験の年表に、マーシャル諸島の全国民向けベーシックインカム（Enra）とクック郡の保証所得を追加",

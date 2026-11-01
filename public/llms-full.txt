@@ -765,6 +765,27 @@ Warning: SIBLE can’t be traded and no payouts have been verified. The claim th
 
 Cautions: All of this is the project’s own unverified claims. The token can’t be traded and may never be worth anything. Referrals speed up mining, so growth relies on recruiting. Its X account also uses the name “Scale Network ($SCALE)”, which is confusing. App permissions and data handling have not been checked. Whoever invited you, including this site’s operator, mines faster
 
+### Perceptron Network (formerly BlockMesh)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/perceptron/
+- Category: Passive apps
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: No; Market price: No; Public operator: With conditions
+- Last checked: 2026-11
+- Official URL: https://perceptrons.xyz/
+- Referral link (maintainer's own referral; not covered by the content license): https://backend.perceptrons.xyz/register?invite_code=e7337520-0866-4716-9abd-b8fe97f8b18f
+- Referral code (maintainer's own): e7337520-0866-4716-9abd-b8fe97f8b18f
+
+A decentralized network that gathers AI training data. Run a node with the Chrome extension or Android app to share unused bandwidth and complete data-collection quests (Data Questing) for points. The official hub shows 800K+ nodes in 150+ countries (as of Nov 2026)
+
+What you get: Points (no PERC token yet)
+
+What you need: Sign up with email, install the Chrome extension or Android app, and stay connected. Extra tasks include a captcha humanity check and linking X or a Solana wallet (sign-up from Japan confirmed in Oct 2026)
+
+Cautions: Rewards are only points for now. No token (ticker PERC) launch or airdrop has been announced (as of Nov 2026), so whether they will be worth anything, and when, is unknown. The extension lets others use your internet connection for data collection. Don’t pay anything
+
 ## Essays
 
 ### Use it, own it: from Rochdale to airdrops to KABU&
