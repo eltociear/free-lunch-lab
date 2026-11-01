@@ -2795,6 +2795,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-02",
+      "ja": "ベーシックインカム実験の年表に、AIで仕事に影響を受けた人へ月1,000ドルを配る AI Dividend を追加",
+      "en": "Added the AI Dividend, which pays $1,000 a month to people whose work has been hurt by AI, to the basic income timeline",
+      "zh": "在基本收入实验年表中新增 AI Dividend：向工作受 AI 冲击的人每月发放 1,000 美元",
+      "hi": "बेसिक इनकम प्रयोगों की समयरेखा में AI Dividend जोड़ा, जो AI से काम पर असर झेलने वाले लोगों को हर महीने $1,000 देता है",
+      "es": "Añadido a la cronología de la renta básica el AI Dividend, que paga 1.000 $ al mes a personas cuyo trabajo ha sufrido por la IA",
+      "de": "Den AI Dividend, der Menschen, deren Arbeit unter KI gelitten hat, 1.000 $ im Monat zahlt, zur Zeitleiste hinzugefügt",
+      "ar": "أضفنا إلى الخط الزمني للدخل الأساسي ⁦AI Dividend⁩، الذي يدفع ⁦$1,000⁩ شهريًا لمن تضرر عملهم بسبب الذكاء الاصطناعي"
+    },
+    {
+      "date": "2026-11-02",
       "ja": "エッセイ「AIだけのSNSで、ベーシックインカムはどう語られているか」を公開",
       "en": "Published the essay “How AI agents talk about basic income on their own social network”",
       "zh": "发布随笔《在只属于 AI 智能体的社交网络上，它们如何谈论基本收入》",
@@ -7881,6 +7891,49 @@ module.exports = {
         "ar": "وصفته ⁦ABC News⁩ بأنه الأول من نوعه عالميًا. سجّل نحو 33,000 شخص للدفعة الأولى، وأفادت ⁦Marshall Islands Journal⁩ بصرف ⁦$215.85⁩ لكل من 40,714 شخصًا في أغسطس 2026 (يتغير المبلغ للفرد بحسب عدد المسجلين)"
       },
       "source": "https://www.lowyinstitute.org/the-interpreter/marshall-islands-experiment-universal-basic-income"
+    },
+    {
+      "id": "ai-dividend",
+      "years": "2026–",
+      "type": "ngo",
+      "name": "AI Dividend",
+      "place": {
+        "ja": "アメリカの非営利団体が運営、AIで仕事に影響を受けた人が対象",
+        "en": "Run by US nonprofits, for people whose work has been hurt by AI",
+        "zh": "由美国非营利组织运营，面向工作受 AI 冲击的人",
+        "hi": "अमेरिकी गैर-लाभकारी संस्थाएँ चलाती हैं, उन लोगों के लिए जिनके काम पर AI का बुरा असर पड़ा",
+        "es": "Gestionado por organizaciones sin ánimo de lucro de EE. UU., para personas cuyo trabajo ha sufrido por la IA",
+        "de": "Von US-Non-Profits betrieben, für Menschen, deren Arbeit unter KI gelitten hat",
+        "ar": "تديره منظمات أمريكية غير ربحية، للأشخاص الذين تضرر عملهم بسبب الذكاء الاصطناعي"
+      },
+      "who": {
+        "ja": "What We Will（AIの影響を受けた労働者の支援団体）と AI Commons Project（Fund for Guaranteed Income の傘下）",
+        "en": "What We Will (an advocacy group for AI-affected workers) and the AI Commons Project (part of the Fund for Guaranteed Income)",
+        "zh": "What We Will（为受 AI 影响的劳动者发声的倡导团体）与 AI Commons Project（Fund for Guaranteed Income 旗下）",
+        "hi": "What We Will (AI से प्रभावित कामगारों का पैरवी समूह) और AI Commons Project (Fund for Guaranteed Income का हिस्सा)",
+        "es": "What We Will (grupo de defensa de trabajadores afectados por la IA) y AI Commons Project (filial del Fund for Guaranteed Income)",
+        "de": "What We Will (Interessengruppe für von KI betroffene Beschäftigte) und das AI Commons Project (Teil des Fund for Guaranteed Income)",
+        "ar": "⁦What We Will⁩ (مجموعة مناصرة للعمال المتضررين من الذكاء الاصطناعي) و⁦AI Commons Project⁩ (التابع لـ⁦Fund for Guaranteed Income⁩)"
+      },
+      "paid": {
+        "ja": "条件なしで月1,000ドルを1年間、25〜50人のグループに。職業訓練（リスキリング）とセット。応募は随時受け付け、AI Commons Project が審査。2026年3月に支給開始",
+        "en": "$1,000 a month for a year with no strings attached to a cohort of 25–50 people, combined with reskilling; applicants are selected on a rolling basis and screened by the AI Commons Project. Payments began in March 2026",
+        "zh": "向 25 至 50 人的群体无条件每月发放 1,000 美元，为期一年，并结合再培训；申请随时受理，由 AI Commons Project 审核。2026 年 3 月开始发放",
+        "hi": "25–50 लोगों के समूह को एक साल तक बिना शर्त हर महीने $1,000, साथ में री-स्किलिंग; आवेदकों का चयन लगातार होता है और जाँच AI Commons Project करता है। भुगतान मार्च 2026 में शुरू",
+        "es": "1.000 $ al mes durante un año, sin condiciones, para un grupo de 25 a 50 personas, junto con recualificación; la selección es continua y la hace AI Commons Project. Los pagos empezaron en marzo de 2026",
+        "de": "1.000 $ im Monat ein Jahr lang ohne Bedingungen für eine Gruppe von 25 bis 50 Menschen, verbunden mit Umschulung; Auswahl laufend, geprüft vom AI Commons Project. Zahlungen seit März 2026",
+        "ar": "⁦$1,000⁩ شهريًا لمدة عام بلا شروط لمجموعة من 25 إلى 50 شخصًا، مع إعادة تأهيل مهني؛ ويُختار المتقدمون تباعًا ويفحص أهليتهم ⁦AI Commons Project⁩. بدأت الدفعات في مارس 2026"
+      },
+      "result": {
+        "ja": "AIによる失業を対象にした最初の現金給付と報じられた。最初の資金は30万ドルで、AI大手の協力を得て2026年中に300万ドルを配るのが目標。データを集めて拡大を目指す",
+        "en": "Reported as the first basic income for workers hit by AI. It started with $300,000 and aims to distribute $3 million in 2026 with help from the big AI companies, gathering data on the impact as it grows",
+        "zh": "被报道为首个面向受 AI 冲击劳动者的基本收入。启动资金 30 万美元，目标是在 AI 大公司的帮助下于 2026 年发放 300 万美元，并在扩大过程中收集影响数据",
+        "hi": "AI से प्रभावित कामगारों के लिए पहली बेसिक इनकम बताया गया। शुरुआत $3 लाख से हुई; लक्ष्य बड़ी AI कंपनियों की मदद से 2026 में $30 लाख बाँटना और बढ़ते हुए असर का डेटा जुटाना है",
+        "es": "Presentado como la primera renta básica para trabajadores afectados por la IA. Empezó con 300.000 $ y aspira a repartir 3 millones en 2026 con ayuda de las grandes empresas de IA, recogiendo datos sobre su impacto",
+        "de": "Als erstes Grundeinkommen für von KI getroffene Beschäftigte berichtet. Start mit 300.000 $; Ziel sind 3 Mio. $ im Jahr 2026 mit Hilfe der großen KI-Firmen, wobei Daten zur Wirkung gesammelt werden",
+        "ar": "وُصف بأنه أول دخل أساسي للعمال المتضررين من الذكاء الاصطناعي. بدأ بـ⁦$300,000⁩ ويهدف إلى توزيع 3 ملايين دولار في 2026 بمساعدة شركات الذكاء الاصطناعي الكبرى، مع جمع بيانات عن الأثر"
+      },
+      "source": "https://www.bloodinthemachine.com/p/the-first-basic-income-for-workers"
     },
     {
       "id": "g1",

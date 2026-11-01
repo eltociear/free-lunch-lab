@@ -419,6 +419,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-c7eb962184.woff2",
     "chars": "ぜぬぴ丸借儲剣固字己床彼拠捨服死狙略癖省真神窓窮節索累触超都鍵阻領黙"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-07f9a0cadf.woff2",
+    "chars": "練職訓随"
    }
   ],
   "ja:body:700": [
@@ -497,6 +501,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-ccd6691765.woff2",
     "chars": "ぜぬぴ丸借儲剣固字己床彼拠捨服死狙略癖省真神窓窮節索累触超都鍵阻領黙"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-489fcb78f3.woff2",
+    "chars": "練職訓随"
    }
   ],
   "ja:display": [
@@ -651,6 +659,10 @@
    {
     "file": "noto-sans-sc-400-zh-04fe85f0bf.woff2",
     "chars": "‘习借升压句味圾垃岗悖惯执挣搜断旁梯灭爬百神索衣诚谓赏赤述钥错陈陌驳齐"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-4449ca1566.woff2",
+    "chars": "声"
    }
   ],
   "zh:body:700": [
@@ -725,6 +737,10 @@
    {
     "file": "noto-sans-sc-700-zh-336c341354.woff2",
     "chars": "‘习借升压句味圾垃岗悖惯执挣搜断旁梯灭爬百神索衣诚谓赏赤述钥错陈陌驳齐"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-1e5b6edfe0.woff2",
+    "chars": "声"
    }
   ],
   "zh:display": [
