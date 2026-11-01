@@ -138,6 +138,8 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
 .lede b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.qz-home{margin-top:10px}
+.qz-home a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;color:var(--gold);text-underline-offset:4px}
 .stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:16px 28px;margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
 .stats div{display:grid}
 .stats .dot{font-size:1.7rem;line-height:1.1}
@@ -743,6 +745,32 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .g-link-top a{color:var(--gold)}
 .g-rel{margin-top:12px}
 .guide .fnref{font-size:.8125rem}
+/* タダ飯診断 */
+.qz{max-width:40rem;margin-inline:auto}
+.qz-box{margin-top:16px;padding:20px;border-radius:18px;border:1px solid color-mix(in srgb,var(--gold) 35%,var(--line));background:var(--surface);box-shadow:var(--shadow);display:none;gap:16px}
+.qz-box.on{display:grid}
+.qz-bar{height:6px;border-radius:999px;background:var(--line);overflow:hidden}
+.qz-bar i{display:block;height:100%;width:0;background:var(--cta);transition:width .25s ease}
+.qz-q{border:0;margin:0;padding:0;min-width:0}
+.qz-q legend{padding:0;display:grid;gap:6px;margin-bottom:14px}
+.qz-n{font-size:.8125rem;color:var(--muted)}
+.qz-t{font-family:var(--f-display);font-size:clamp(1.3rem,4.6vw,1.7rem);line-height:1.35}
+html[lang="zh-Hans"] .qz-t{font-weight:900}html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weight:700}
+.qz-a{display:grid;gap:10px}
+.qz-a .btn{min-height:56px;justify-content:flex-start;text-align:start;white-space:normal;font-size:1rem;border-radius:12px;border-color:var(--line);padding:12px 16px}
+.qz-a .btn:hover,.qz-a .btn:focus-visible{border-color:var(--gold);color:var(--gold)}
+.qz-back{justify-self:start;font:inherit;font-size:.9rem;color:var(--muted);background:none;border:0;min-height:44px;padding:0 4px;cursor:pointer}
+.qz-types a{gap:8px}
+.qz-types a[aria-current]{border-color:var(--gold);color:var(--gold)}
+.qz-types .dot{font-size:.8125rem;color:var(--muted)}
+.qz-res{margin-top:16px;padding:clamp(22px,5vw,40px);border-radius:20px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:radial-gradient(80% 120% at 100% 0%,color-mix(in srgb,#7C5CFF 30%,transparent),transparent 60%),var(--surface);display:grid;gap:10px;text-align:center;justify-items:center}
+.qz-you{font-size:.95rem;color:var(--muted)}
+.qz-res h1{font-size:clamp(2rem,8vw,3.2rem);line-height:1.2;color:var(--gold)}
+.qz-desc{max-width:34em;font-size:1rem;line-height:1.9}
+.qz-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
+.qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important}
+.qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
+.vsec .g-link-top{margin-bottom:12px}
 .guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
 </style>
 </head>
@@ -788,7 +816,7 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 <p class="back"><a class="btn line" href="/#list">← Back to the list</a></p>
 </main>
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>Information as of October 2026. This is not investment advice.</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: Open data on GitHub"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Open data on GitHub</span></a><a class="xlink" href="/feed.xml" aria-label="RSS feed"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/essays/">Essays</a><a href="/badge/">Badge</a><span class="dot">Free Lunch Lab</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>Information as of October 2026. This is not investment advice.</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: Open data on GitHub"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Open data on GitHub</span></a><a class="xlink" href="/feed.xml" aria-label="RSS feed"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/essays/">Essays</a><a href="/shindan/">Free Lunch Quiz</a><a href="/badge/">Badge</a><span class="dot">Free Lunch Lab</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
 </body>

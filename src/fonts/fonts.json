@@ -55,6 +55,10 @@
    {
     "file": "noto-kufi-arabic-700-ar-1e3f04765f.woff2",
     "chars": "j؟ؤـ—’"
+   },
+   {
+    "file": "noto-kufi-arabic-700-ar-90518c6ad0.woff2",
+    "chars": "َ"
    }
   ],
   "ar:dot": [
@@ -199,6 +203,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-9472c26c21.woff2",
     "chars": "Ö"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-df071f6d5f.woff2",
+    "chars": "¡"
    }
   ],
   "es:body:700": [
@@ -217,6 +225,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-6d81663edc.woff2",
     "chars": "Ö"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-a4dd794a70.woff2",
+    "chars": "¡"
    }
   ],
   "es:display": [
@@ -339,6 +351,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-d9c8d42603.woff2",
     "chars": "思抗抵駄"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-a0d657aae5.woff2",
+    "chars": "秒診"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-77d8436d54.woff2",
+    "chars": "並仮冒想慎橋派負避銭"
    }
   ],
   "ja:body:700": [
@@ -385,6 +405,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-678cc678a2.woff2",
     "chars": "思抗抵駄"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-dc7b687070.woff2",
+    "chars": "秒診"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-6c46d95db2.woff2",
+    "chars": "並仮冒想慎橋派負避銭"
    }
   ],
   "ja:display": [
@@ -411,6 +439,10 @@
    {
     "file": "dela-gothic-one-400-ja-ba729fe934.woff2",
     "chars": "併全合完式早注点程良見"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-4420482b78.woff2",
+    "chars": "ツ冒放断橋活石置診険"
    }
   ],
   "ja:dot": [
@@ -479,6 +511,14 @@
    {
     "file": "noto-sans-sc-400-zh-e7eaa0aa49.woff2",
     "chars": "优急浪涵花"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-5f10e93609.woff2",
+    "chars": "秒"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-ecc198bd99.woff2",
+    "chars": "光冒刷右妥左弄怕慎扎搞梭碰谨避钟"
    }
   ],
   "zh:body:700": [
@@ -517,6 +557,14 @@
    {
     "file": "noto-sans-sc-700-zh-3eb678ba71.woff2",
     "chars": "优急浪涵花"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-8e86463490.woff2",
+    "chars": "秒"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-23e0b16018.woff2",
+    "chars": "光冒刷右妥左弄怕慎扎搞梭碰谨避钟"
    }
   ],
   "zh:display": [
@@ -543,6 +591,10 @@
    {
     "file": "noto-sans-sc-900-zh-550ab8de48.woff2",
     "chars": "主优南合并想意指更果记适险风"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-38046f1a57.woff2",
+    "chars": "三他其冒当思扎攒稳类而认部"
    }
   ],
   "zh:dot": [
@@ -553,6 +605,10 @@
    {
     "file": "dotgothic16-400-zh-722cee16bd.woff2",
     "chars": "–"
+   },
+   {
+    "file": "dotgothic16-400-zh-ceec62b13e.woff2",
+    "chars": "共第题"
    }
   ]
  }

@@ -2,7 +2,8 @@
 // build.js の最後でも呼ばれるので、ふだんは node build.js だけでよい
 const fs = require('fs');
 const path = require('path');
-const { SITE_URL, SERVICES, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, OSS_GROUPS, ESSAYS, OPEN_DATA, GUIDES = [] } = require('./src/data.js');
+const { SITE_URL, SERVICES, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, OSS_GROUPS, ESSAYS, OPEN_DATA, GUIDES = [], QUIZ } = require('./src/data.js');
+const { servicesFor } = require('./src/shindan.js');
 const { ossProjects, DORMANT_MONTHS } = require('./src/oss.js');
 
 const README = path.join(__dirname, 'README.md');
@@ -86,7 +87,8 @@ function essaysList() {
 
 // ガイド一覧（最終更新日つき）
 function guidesList() {
-  return GUIDES.map(g => `- [${cell(g.en.title)}](${SITE_URL}/guides/${g.id}/) (updated ${g.updated}; [日本語](${SITE_URL}/ja/guides/${g.id}/)): ${cell(g.en.desc)}`).join('\n') + '\n\nEach guide is available in 7 languages and has an update log at the bottom.';
+  return GUIDES.map(g => `- [${cell(g.en.title)}](${SITE_URL}/guides/${g.id}/) (updated ${g.updated}; [日本語](${SITE_URL}/ja/guides/${g.id}/)): ${cell(g.en.desc)}`).join('\n') + '\n\nEach guide is available in 7 languages and has an update log at the bottom.'
+    + (QUIZ ? `\n\n**[${cell(T.en.shindanTitle)}](${SITE_URL}/shindan/)** ([日本語: ${cell(T.ja.shindanTitle)}](${SITE_URL}/ja/shindan/)): ${cell(T.en.shindanDesc)} Result types, with the number of matching services picked from \`src/data.js\` on every build: ${QUIZ.types.map(t => `[${cell(t.name.en)}](${SITE_URL}/shindan/${t.id}/) (${servicesFor(t, live).length})`).join(', ')}.` : '');
 }
 
 function replaceBlock(text, name, body) {

@@ -2,7 +2,8 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [] } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [], QUIZ } = require('./src/data.js');
+const { servicesFor } = require('./src/shindan.js');
 const { execFileSync } = require('child_process');
 // オープンソース一覧のスター数・最終コミット日などを取りに行く（失敗してもキャッシュで続ける。OSS_OFFLINE=1 で取得しない）
 try { execFileSync(process.execPath, [path.join(__dirname, 'oss-fetch.js')], { stdio: 'inherit', timeout: 120000 }); } catch (e) { console.warn('open-source metadata: fetch failed, using cache'); }
@@ -100,6 +101,15 @@ for (const g of GUIDES) {
     for (const r of refs) if (!g.sources.some(x => `[${x.n}]` === r)) throw new Error(`guide ${g.id}.${l}: unknown source ${r}`);
   }
 }
+// タダ飯診断: /shindan/（質問）と /shindan/{type}/（結果）。結果のサービスは src/shindan.js の条件で live から毎回選ぶ
+const qzPath = l => `${urlPath(l)}shindan/`;
+const qzAbs = l => SITE_URL + qzPath(l);
+const qzTypePath = (l, t) => `${qzPath(l)}${t.id}/`;
+const qzTypeAbs = (l, t) => SITE_URL + qzTypePath(l, t);
+const QZ_KEYS = ['shindanTitle', 'shindanH1', 'shindanDesc', 'shindanIntro', 'shindanQ', 'shindanBack', 'shindanEb', 'shindanYouAre', 'shindanMatch', 'shindanShareX', 'shindanShareText', 'shindanRetry', 'shindanOthers', 'shindanHome', 'shindanAll', 'shindanNote'];
+for (const l of LANGS) for (const k of QZ_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const l of LANGS) for (const q of QUIZ.questions) { if (!q.q[l]) throw new Error(`quiz ${q.id}: missing q.${l}`); for (const a of q.a) { if (!a.t[l]) throw new Error(`quiz ${q.id}: missing answer ${l}`); for (const k of Object.keys(a.s)) if (!QUIZ.types.some(t => t.id === k)) throw new Error(`quiz ${q.id}: unknown type ${k}`); } }
+for (const t of QUIZ.types) { for (const l of LANGS) for (const f of ['name', 'desc']) if (!t[f][l]) throw new Error(`quiz type ${t.id}: missing ${f}.${l}`); if (!servicesFor(t, live).length) throw new Error(`quiz type ${t.id}: no matching services`); }
 // サービスのカード・個別ページ・エッセイから、そのサービスのガイドへ
 const guideOf = s => GUIDES.find(g => g.svc === s.id);
 const guideLink = (lang, g, cls = 'g-link') => g ? `<p class="${cls}"><a href="${guidePath(lang, g)}">${esc(T[lang].guideRead.replace('{name}', g[lang].short))} ${RTL.has(lang) ? '←' : '→'}</a></p>` : '';
@@ -739,6 +749,32 @@ const DETAIL_CSS = `
 .g-link-top a{color:var(--gold)}
 .g-rel{margin-top:12px}
 .guide .fnref{font-size:.8125rem}
+/* タダ飯診断 */
+.qz{max-width:40rem;margin-inline:auto}
+.qz-box{margin-top:16px;padding:20px;border-radius:18px;border:1px solid color-mix(in srgb,var(--gold) 35%,var(--line));background:var(--surface);box-shadow:var(--shadow);display:none;gap:16px}
+.qz-box.on{display:grid}
+.qz-bar{height:6px;border-radius:999px;background:var(--line);overflow:hidden}
+.qz-bar i{display:block;height:100%;width:0;background:var(--cta);transition:width .25s ease}
+.qz-q{border:0;margin:0;padding:0;min-width:0}
+.qz-q legend{padding:0;display:grid;gap:6px;margin-bottom:14px}
+.qz-n{font-size:.8125rem;color:var(--muted)}
+.qz-t{font-family:var(--f-display);font-size:clamp(1.3rem,4.6vw,1.7rem);line-height:1.35}
+html[lang="zh-Hans"] .qz-t{font-weight:900}html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weight:700}
+.qz-a{display:grid;gap:10px}
+.qz-a .btn{min-height:56px;justify-content:flex-start;text-align:start;white-space:normal;font-size:1rem;border-radius:12px;border-color:var(--line);padding:12px 16px}
+.qz-a .btn:hover,.qz-a .btn:focus-visible{border-color:var(--gold);color:var(--gold)}
+.qz-back{justify-self:start;font:inherit;font-size:.9rem;color:var(--muted);background:none;border:0;min-height:44px;padding:0 4px;cursor:pointer}
+.qz-types a{gap:8px}
+.qz-types a[aria-current]{border-color:var(--gold);color:var(--gold)}
+.qz-types .dot{font-size:.8125rem;color:var(--muted)}
+.qz-res{margin-top:16px;padding:clamp(22px,5vw,40px);border-radius:20px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:radial-gradient(80% 120% at 100% 0%,color-mix(in srgb,#7C5CFF 30%,transparent),transparent 60%),var(--surface);display:grid;gap:10px;text-align:center;justify-items:center}
+.qz-you{font-size:.95rem;color:var(--muted)}
+.qz-res h1{font-size:clamp(2rem,8vw,3.2rem);line-height:1.2;color:var(--gold)}
+.qz-desc{max-width:34em;font-size:1rem;line-height:1.9}
+.qz-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
+.qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important}
+.qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
+.vsec .g-link-top{margin-bottom:12px}
 .guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
@@ -872,7 +908,7 @@ ${alts}
 <div class="wrap">
 ${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 ${script}
 </body>
@@ -1018,6 +1054,72 @@ ${sec('g-log', H.log, `<ol class="g-log">${g.log.map(x => `<li><time datetime="$
 </main>`;
   if (lastLog.date !== g.updated) throw new Error(`guide ${g.id}: the newest log entry must have the date of updated (${g.updated})`);
   return shell(lang, { title: `${G.title} | ${L.title}`, desc: clip(G.desc, lang), hrefFor: l => guideAbs(l, g), pathFor: l => guidePath(l, g), ld, ogType: 'article', body, script: copyScript(L), pr: true, image: ogImage(`guide/${lang}/${g.id}.jpg`) });
+}
+
+// ---- タダ飯診断（/shindan/）。質問はタップで1問ずつ（JS）。答えごとの点数を足し、いちばん高いタイプの結果ページへ移る
+// 同点なら QUIZ.types の順で先のもの。回答はどこにも送らない。JS が無くてもタイプの一覧から結果ページを開ける
+const qzChips = (lang, cur) => `<nav class="org-toc qz-types" aria-label="${esc(T[lang].shindanAll)}">${QUIZ.types.map(t => `<a href="${qzTypePath(lang, t)}"${t === cur ? ' aria-current="page"' : ''}>${esc(t.name[lang])}<span class="dot">${servicesFor(t, live).length}</span></a>`).join('')}</nav>`;
+function quizPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const n = QUIZ.questions.length;
+  const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.shindanTitle, item: qzAbs(lang) } ] };
+  const qs = QUIZ.questions.map((q, i) => `<fieldset class="qz-q" data-i="${i}" hidden><legend><span class="qz-n">${esc(L.shindanQ.replace('{n}', i + 1).replace('{total}', n))}</span><span class="qz-t">${esc(q.q[lang])}</span></legend><div class="qz-a">${q.a.map(a => `<button class="btn line" type="button" data-s="${esc(JSON.stringify(a.s))}">${esc(a.t[lang])}</button>`).join('')}</div></fieldset>`).join('\n');
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.shindanTitle)}</li></ol></nav>
+<main class="qz">
+<header class="orgs-head"><p class="eyebrow">${esc(L.shindanTitle)}</p><h1>${esc(L.shindanH1)}</h1><p class="orgs-intro">${esc(L.shindanIntro)}</p></header>
+<form class="qz-box" id="qz" data-types="${esc(JSON.stringify(QUIZ.types.map(t => [t.id, qzTypePath(lang, t)])))}" onsubmit="return false">
+<div class="qz-bar" aria-hidden="true"><i id="qzBar"></i></div>
+${qs}
+<button class="qz-back" type="button" id="qzBack" hidden>${RTL.has(lang) ? '→' : '←'} ${esc(L.shindanBack)}</button>
+</form>
+<section class="g-sec"><h2>${esc(L.shindanAll)}</h2>${qzChips(lang)}</section>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  const script = `<script>
+(function(){
+  var f=document.getElementById('qz'),qs=f.querySelectorAll('.qz-q'),back=document.getElementById('qzBack'),bar=document.getElementById('qzBar'),types=JSON.parse(f.getAttribute('data-types')),picks=[],i=0;
+  function show(){qs.forEach(function(q,k){q.hidden=k!==i});back.hidden=i===0;bar.style.width=(i/qs.length*100)+'%';var b=qs[i]&&qs[i].querySelector('button');if(b&&picks.length)b.focus()}
+  function finish(){
+    var score={};types.forEach(function(t){score[t[0]]=0});
+    picks.forEach(function(s){for(var k in s)score[k]+=s[k]});
+    var best=types[0];types.forEach(function(t){if(score[t[0]]>score[best[0]])best=t});
+    bar.style.width='100%';location.href=best[1];
+  }
+  f.addEventListener('click',function(e){
+    var b=e.target.closest('button[data-s]');if(!b)return;
+    picks[i]=JSON.parse(b.getAttribute('data-s'));
+    if(++i>=qs.length)finish();else show();
+  });
+  back.addEventListener('click',function(){if(i>0){i--;picks.length=i;show();qs[i].querySelector('button').focus()}});
+  f.classList.add('on');show();
+})();
+</script>`;
+  return shell(lang, { title: `${L.shindanH1} | ${L.title}`, desc: clip(L.shindanDesc, lang), hrefFor: qzAbs, pathFor: qzPath, ld, ogType: 'website', body, script, image: ogImage(`shindan/${lang}/index.jpg`) });
+}
+function quizResultPage(t, lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const list = servicesFor(t, live);
+  const name = t.name[lang];
+  const url = qzTypeAbs(lang, t);
+  const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.shindanTitle, item: qzAbs(lang) },
+    { '@type': 'ListItem', position: 3, name, item: url } ] };
+  const xUrl = `https://x.com/intent/post?text=${encodeURIComponent(L.shindanShareText.replace('{type}', name))}&url=${encodeURIComponent(url)}`;
+  const guides = GUIDES.filter(g => list.some(s => s.id === g.svc));
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
+<main class="vmain">
+<header class="qz-res"><p class="eyebrow">${esc(L.shindanEb)}</p><p class="qz-you">${esc(L.shindanYouAre)}</p><h1>${esc(name)}</h1><p class="qz-desc">${esc(t.desc[lang])}</p>
+<div class="qz-acts"><a class="btn solid qz-x" href="${esc(xUrl)}" target="_blank" rel="noopener">${esc(L.shindanShareX)}</a><a class="btn line" href="${qzPath(lang)}">${esc(L.shindanRetry)}</a></div></header>
+<section class="vsec"><h2>${esc(L.shindanMatch.replace('{n}', list.length))}</h2><p class="qz-note">${esc(L.shindanNote)}</p>${guides.map(g => guideLink(lang, g, 'g-link g-link-top')).join('')}<div class="grid">${list.map(s => card(s, lang)).join('\n')}</div></section>
+<section class="vsec"><h2>${esc(L.shindanOthers)}</h2>${qzChips(lang, t)}</section>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  return shell(lang, { title: `${L.shindanTitle}: ${name} | ${L.title}`, desc: clip(`${L.shindanTitle}: ${name}. ${t.desc[lang]}`, lang), hrefFor: l => qzTypeAbs(l, t), pathFor: l => qzTypePath(l, t), ld, ogType: 'website', body, script: copyScript(L), pr: true, image: ogImage(`shindan/${lang}/${t.id}.jpg`) });
 }
 
 // ---- ベーシックインカム社会実験の年表（/timeline/）。縦のタイムライン（RTLでは左右が反転）
@@ -1250,6 +1352,13 @@ for (const lang of LANGS) {
     fs.mkdirSync(gdir2, { recursive: true });
     fs.writeFileSync(path.join(gdir2, 'index.html'), guidePage(g, lang));
   }
+  const qdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'shindan');
+  fs.mkdirSync(qdir, { recursive: true });
+  fs.writeFileSync(path.join(qdir, 'index.html'), quizPage(lang));
+  for (const t of QUIZ.types) {
+    fs.mkdirSync(path.join(qdir, t.id), { recursive: true });
+    fs.writeFileSync(path.join(qdir, t.id, 'index.html'), quizResultPage(t, lang));
+  }
   const osdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'open-source');
   fs.mkdirSync(osdir, { recursive: true });
   fs.writeFileSync(path.join(osdir, 'index.html'), ossPage(lang));
@@ -1342,6 +1451,7 @@ const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, 
 function newsLink(n, lang) {
   const en = n.en || '';
   if (/badge/i.test(en)) return badgeAbs(lang);
+  if (/quiz/i.test(en)) return qzAbs(lang);
   const guide = GUIDES.find(g => /guide/i.test(en) && en.includes(g.en.short));
   if (guide) return guideAbs(lang, guide);
   if (/open-source/i.test(en)) return ossAbs(lang);
@@ -1399,7 +1509,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
@@ -1578,6 +1688,7 @@ ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LA
 - [${md(T.en.badgeH1)}](${badgeAbs(DEFAULT_LANG)}): ${md(T.en.badgeDesc)} Image: ${badgeImg('listed.svg')}. Each entry in services.json and open-source.json has a \`badge\` object with the Markdown snippet and target URL.
 ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}): ${md(e.desc.en)}`).join('\n')}
 ${GUIDES.map(g => `- [${mdLink(g.en.title)}](${guideAbs(DEFAULT_LANG, g)}): ${md(g.en.desc)} Last updated ${g.updated}.`).join('\n')}
+- [${md(T.en.shindanH1)}](${qzAbs(DEFAULT_LANG)}): ${md(T.en.shindanDesc)} Result types: ${QUIZ.types.map(t => `[${mdLink(t.name.en)}](${qzTypeAbs(DEFAULT_LANG, t)}) (${servicesFor(t, live).length} services)`).join(', ')}.
 
 ## Open-source projects
 

@@ -2594,6 +2594,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-01",
+      "ja": "「タダ飯診断」を公開（5つの質問で6タイプ。結果ごとに合うサービスを表示し、Xでシェアできます）",
+      "en": "Launched the Free Lunch Quiz (five questions, six types; each result lists the services that fit and can be shared on X)",
+      "zh": "上线「免费午餐测试」（5 个问题、6 种类型；每个结果都会列出适合的服务，并可分享到 X）",
+      "hi": "फ़्री लंच क्विज़ शुरू की (5 सवाल, 6 टाइप; हर नतीजे में आपके लिए सही सेवाएँ, और X पर शेयर करने का बटन)",
+      "es": "Lanzado el Test del almuerzo gratis (cinco preguntas, seis tipos; cada resultado muestra los servicios que encajan y se puede compartir en X)",
+      "de": "Gratis-Mittagessen-Test gestartet (fünf Fragen, sechs Typen; jedes Ergebnis zeigt die passenden Dienste und lässt sich auf X teilen)",
+      "ar": "أطلقنا «اختبار الغداء المجاني» (خمسة أسئلة وستة أنواع؛ تعرض كل نتيجة الخدمات المناسبة ويمكن مشاركتها على ⁦X⁩)"
+    },
+    {
+      "date": "2026-11-01",
       "ja": "「カブアンド完全ガイド」を公開（株のもらい方、株の権利、株式併合、主な日程、よくある質問）",
       "en": "Published the KABU& complete guide (how to get the shares, what they can do, the consolidation, key dates and FAQ)",
       "zh": "发布《KABU& 完全指南》（如何获得股票、股票权利、股票合并、重要日期和常见问题）",
@@ -3382,7 +3392,23 @@ module.exports = {
       "moreInfo": "くわしく",
       "toPage": "このサービスのページを見る",
       "guideEb": "完全ガイド",
-      "guideRead": "完全ガイドを読む"
+      "guideRead": "完全ガイドを読む",
+      "shindanTitle": "タダ飯診断",
+      "shindanH1": "あなたは何型？タダ飯診断",
+      "shindanDesc": "5つの質問に答えるだけで、あなたに合う「タダ飯」のタイプがわかります。結果のページには、そのタイプに合うサービスを掲載中の一覧から並べます。登録不要・30秒。",
+      "shindanIntro": "5つの質問に、タップで答えるだけ。回答はこの端末の中だけで使い、どこにも送りません。",
+      "shindanQ": "質問 {n} / {total}",
+      "shindanBack": "ひとつ戻る",
+      "shindanEb": "診断結果",
+      "shindanYouAre": "あなたは",
+      "shindanMatch": "このタイプに合うサービス {n}件",
+      "shindanShareX": "Xでシェア",
+      "shindanShareText": "私は「{type}」でした #タダ飯診断",
+      "shindanRetry": "もう一度診断する",
+      "shindanOthers": "ほかのタイプ",
+      "shindanHome": "30秒でわかる「タダ飯診断」",
+      "shindanAll": "タイプの一覧",
+      "shindanNote": "結果は回答から機械的に選んだ目安です。登録する前に、各サービスの注意書きを必ず読んでください。"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3620,7 +3646,23 @@ module.exports = {
       "moreInfo": "Details",
       "toPage": "Open the full page",
       "guideEb": "Complete guide",
-      "guideRead": "Read the complete guide"
+      "guideRead": "Read the complete guide",
+      "shindanTitle": "Free Lunch Quiz",
+      "shindanH1": "What type are you? The Free Lunch Quiz",
+      "shindanDesc": "Answer five questions to find your free lunch type. Each result page lists the services on this site that fit that type. No sign-up, 30 seconds.",
+      "shindanIntro": "Five questions, one tap each. Your answers stay on this device and are not sent anywhere.",
+      "shindanQ": "Question {n} of {total}",
+      "shindanBack": "Back",
+      "shindanEb": "Your result",
+      "shindanYouAre": "You are",
+      "shindanMatch": "Services that fit this type: {n}",
+      "shindanShareX": "Share on X",
+      "shindanShareText": "I’m “{type}” in the Free Lunch Quiz #FreeLunchLab",
+      "shindanRetry": "Take the quiz again",
+      "shindanOthers": "Other types",
+      "shindanHome": "30-second Free Lunch Quiz",
+      "shindanAll": "All types",
+      "shindanNote": "The result is a rough match picked automatically from your answers. Read each service’s cautions before you sign up."
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3858,7 +3900,23 @@ module.exports = {
       "moreInfo": "विवरण",
       "toPage": "पूरा पेज देखें",
       "guideEb": "पूरी गाइड",
-      "guideRead": "पूरी गाइड पढ़ें"
+      "guideRead": "पूरी गाइड पढ़ें",
+      "shindanTitle": "फ़्री लंच क्विज़",
+      "shindanH1": "आप किस टाइप के हैं? फ़्री लंच क्विज़",
+      "shindanDesc": "सिर्फ़ 5 सवालों के जवाब दें और जानें कि आपका “फ़्री लंच” टाइप कौन-सा है। हर नतीजे के पेज पर इस साइट की वे सेवाएँ दिखती हैं जो उस टाइप पर फ़िट बैठती हैं। साइन-अप नहीं, बस 30 सेकंड।",
+      "shindanIntro": "5 सवाल, हर एक का जवाब एक टैप में। आपके जवाब इसी डिवाइस पर रहते हैं और कहीं नहीं भेजे जाते।",
+      "shindanQ": "सवाल {n} / {total}",
+      "shindanBack": "पीछे जाएँ",
+      "shindanEb": "आपका नतीजा",
+      "shindanYouAre": "आप हैं",
+      "shindanMatch": "इस टाइप के लिए सही सेवाएँ: {n}",
+      "shindanShareX": "X पर शेयर करें",
+      "shindanShareText": "फ़्री लंच क्विज़ में मेरा टाइप: “{type}” #FreeLunchLab",
+      "shindanRetry": "क्विज़ फिर से दें",
+      "shindanOthers": "दूसरे टाइप",
+      "shindanHome": "30 सेकंड का “फ़्री लंच क्विज़”",
+      "shindanAll": "सभी टाइप",
+      "shindanNote": "नतीजा आपके जवाबों से अपने-आप चुना गया एक मोटा अंदाज़ा है। साइन-अप करने से पहले हर सेवा की चेतावनियाँ ज़रूर पढ़ें।"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4096,7 +4154,23 @@ module.exports = {
       "moreInfo": "详情",
       "toPage": "查看完整页面",
       "guideEb": "完全指南",
-      "guideRead": "阅读完全指南"
+      "guideRead": "阅读完全指南",
+      "shindanTitle": "免费午餐测试",
+      "shindanH1": "你是哪一型？免费午餐测试",
+      "shindanDesc": "只需回答 5 个问题，就能知道最适合你的“免费午餐”类型。结果页会从本站收录的服务中，列出适合该类型的那些。无需注册，30 秒搞定。",
+      "shindanIntro": "5 个问题，点一下就能作答。答案只在这台设备上使用，不会发送到任何地方。",
+      "shindanQ": "第 {n} 题 / 共 {total} 题",
+      "shindanBack": "上一题",
+      "shindanEb": "测试结果",
+      "shindanYouAre": "你是",
+      "shindanMatch": "适合这一型的服务 {n} 个",
+      "shindanShareX": "分享到 X",
+      "shindanShareText": "我在免费午餐测试中是“{type}” #FreeLunchLab",
+      "shindanRetry": "再测一次",
+      "shindanOthers": "其他类型",
+      "shindanHome": "30 秒“免费午餐测试”",
+      "shindanAll": "全部类型",
+      "shindanNote": "结果只是根据你的回答自动挑出的参考。注册前，请务必阅读各服务的注意事项。"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4334,7 +4408,23 @@ module.exports = {
       "moreInfo": "Detalles",
       "toPage": "Ver la página completa",
       "guideEb": "Guía completa",
-      "guideRead": "Leer la guía completa"
+      "guideRead": "Leer la guía completa",
+      "shindanTitle": "Test del almuerzo gratis",
+      "shindanH1": "¿De qué tipo eres? El test del almuerzo gratis",
+      "shindanDesc": "Responde cinco preguntas y descubre tu tipo de «almuerzo gratis». Cada página de resultado muestra los servicios de este sitio que encajan con ese tipo. Sin registro, 30 segundos.",
+      "shindanIntro": "Cinco preguntas, un toque cada una. Tus respuestas se quedan en este dispositivo y no se envían a ningún sitio.",
+      "shindanQ": "Pregunta {n} de {total}",
+      "shindanBack": "Atrás",
+      "shindanEb": "Tu resultado",
+      "shindanYouAre": "Eres",
+      "shindanMatch": "Servicios para este tipo: {n}",
+      "shindanShareX": "Compartir en X",
+      "shindanShareText": "Soy «{type}» en el test del almuerzo gratis #FreeLunchLab",
+      "shindanRetry": "Repetir el test",
+      "shindanOthers": "Otros tipos",
+      "shindanHome": "Test del almuerzo gratis en 30 segundos",
+      "shindanAll": "Todos los tipos",
+      "shindanNote": "El resultado es una orientación elegida automáticamente a partir de tus respuestas. Antes de registrarte, lee siempre las advertencias de cada servicio."
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4572,7 +4662,23 @@ module.exports = {
       "moreInfo": "التفاصيل",
       "toPage": "عرض الصفحة كاملة",
       "guideEb": "الدليل الكامل",
-      "guideRead": "اقرأ الدليل الكامل"
+      "guideRead": "اقرأ الدليل الكامل",
+      "shindanTitle": "اختبار الغداء المجاني",
+      "shindanH1": "ما نوعك؟ اختبار الغداء المجاني",
+      "shindanDesc": "أجب عن خمسة أسئلة لتعرف نوعك في «الغداء المجاني». تعرض كل صفحة نتيجة الخدمات المدرجة في هذا الموقع التي تناسب ذلك النوع. بلا تسجيل، في 30 ثانية.",
+      "shindanIntro": "خمسة أسئلة، ونقرة واحدة لكل منها. تبقى إجاباتك على هذا الجهاز ولا تُرسل إلى أي مكان.",
+      "shindanQ": "السؤال {n} من {total}",
+      "shindanBack": "رجوع",
+      "shindanEb": "نتيجتك",
+      "shindanYouAre": "أنت",
+      "shindanMatch": "الخدمات المناسبة لهذا النوع: {n}",
+      "shindanShareX": "شارك على ⁦X⁩",
+      "shindanShareText": "أنا «{type}» في اختبار الغداء المجاني ⁦#FreeLunchLab⁩",
+      "shindanRetry": "أعد الاختبار",
+      "shindanOthers": "أنواع أخرى",
+      "shindanHome": "اختبار الغداء المجاني في 30 ثانية",
+      "shindanAll": "كل الأنواع",
+      "shindanNote": "النتيجة تقدير تقريبي يُختار آليًا من إجاباتك. اقرأ تحذيرات كل خدمة قبل التسجيل."
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4810,7 +4916,23 @@ module.exports = {
       "moreInfo": "Details",
       "toPage": "Ganze Seite ansehen",
       "guideEb": "Kompletter Guide",
-      "guideRead": "Den kompletten Guide lesen"
+      "guideRead": "Den kompletten Guide lesen",
+      "shindanTitle": "Gratis-Mittagessen-Test",
+      "shindanH1": "Welcher Typ bist du? Der Gratis-Mittagessen-Test",
+      "shindanDesc": "Beantworte fünf Fragen und finde deinen „Gratis-Mittagessen“-Typ. Jede Ergebnisseite listet die Dienste dieser Seite, die zu diesem Typ passen. Ohne Anmeldung, 30 Sekunden.",
+      "shindanIntro": "Fünf Fragen, jeweils ein Tipp. Deine Antworten bleiben auf diesem Gerät und werden nirgendwohin gesendet.",
+      "shindanQ": "Frage {n} von {total}",
+      "shindanBack": "Zurück",
+      "shindanEb": "Dein Ergebnis",
+      "shindanYouAre": "Du bist",
+      "shindanMatch": "Passende Dienste für diesen Typ: {n}",
+      "shindanShareX": "Auf X teilen",
+      "shindanShareText": "Ich bin „{type}“ im Gratis-Mittagessen-Test #FreeLunchLab",
+      "shindanRetry": "Test wiederholen",
+      "shindanOthers": "Andere Typen",
+      "shindanHome": "Der 30-Sekunden-Gratis-Mittagessen-Test",
+      "shindanAll": "Alle Typen",
+      "shindanNote": "Das Ergebnis ist eine grobe Einschätzung, automatisch aus deinen Antworten ermittelt. Lies vor der Anmeldung unbedingt die Warnhinweise des jeweiligen Dienstes."
     }
   },
   "ORG_REGIONS": {
@@ -11007,5 +11129,476 @@ module.exports = {
         "ctaText": "تحقق أولًا من الموقع الرسمي أن أسعار ⁦KABU&⁩ ليست أعلى مما تدفعه الآن، ثم قرّر هل تشترك."
       }
     }
-  ]
+  ],
+  "QUIZ": {
+    "questions": [
+      {
+        "id": "jp",
+        "q": {
+          "en": "Do you live in Japan?",
+          "ja": "日本に住んでいますか？",
+          "zh": "你住在日本吗？",
+          "hi": "क्या आप जापान में रहते हैं?",
+          "es": "¿Vives en Japón?",
+          "de": "Wohnst du in Japan?",
+          "ar": "هل تعيش في اليابان؟"
+        },
+        "a": [
+          {
+            "t": {
+              "en": "Yes",
+              "ja": "はい",
+              "zh": "是",
+              "hi": "हाँ",
+              "es": "Sí",
+              "de": "Ja",
+              "ar": "نعم"
+            },
+            "s": {}
+          },
+          {
+            "t": {
+              "en": "No",
+              "ja": "いいえ",
+              "zh": "不是",
+              "hi": "नहीं",
+              "es": "No",
+              "de": "Nein",
+              "ar": "لا"
+            },
+            "s": {
+              "poikatsu": -99,
+              "shareholder": -99
+            }
+          }
+        ]
+      },
+      {
+        "id": "time",
+        "q": {
+          "en": "How much time can you spend a day?",
+          "ja": "1日に使える時間は？",
+          "zh": "你每天能花多少时间？",
+          "hi": "आप रोज़ कितना समय दे सकते हैं?",
+          "es": "¿Cuánto tiempo puedes dedicarle al día?",
+          "de": "Wie viel Zeit hast du pro Tag?",
+          "ar": "كم من الوقت يمكنك تخصيصه يوميًا؟"
+        },
+        "a": [
+          {
+            "t": {
+              "en": "Close to zero. Set it and forget it",
+              "ja": "ほぼゼロ。入れたら放置したい",
+              "zh": "几乎为零。装上就不想管",
+              "hi": "लगभग ज़ीरो। इंस्टॉल करो और भूल जाओ",
+              "es": "Casi nada. Instalar y olvidar",
+              "de": "Fast null. Installieren und vergessen",
+              "ar": "تقريبًا لا شيء. ثبّت وانسَ"
+            },
+            "s": {
+              "sleeper": 3,
+              "careful": 1
+            }
+          },
+          {
+            "t": {
+              "en": "About five minutes",
+              "ja": "5分くらいなら",
+              "zh": "5 分钟左右还行",
+              "hi": "5 मिनट तक चलेगा",
+              "es": "Unos cinco minutos",
+              "de": "So etwa fünf Minuten",
+              "ar": "نحو خمس دقائق"
+            },
+            "s": {
+              "human": 2,
+              "poikatsu": 1,
+              "shareholder": 1
+            }
+          },
+          {
+            "t": {
+              "en": "Thirty minutes or more is fine",
+              "ja": "30分以上でもいい",
+              "zh": "30 分钟以上也可以",
+              "hi": "30 मिनट या ज़्यादा भी चलेगा",
+              "es": "Media hora o más, sin problema",
+              "de": "Auch 30 Minuten oder mehr",
+              "ar": "نصف ساعة أو أكثر، لا مانع"
+            },
+            "s": {
+              "crypto": 2,
+              "poikatsu": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "crypto",
+        "q": {
+          "en": "How do you feel about crypto?",
+          "ja": "暗号資産（仮想通貨）は？",
+          "zh": "你对加密货币怎么看？",
+          "hi": "क्रिप्टो के बारे में आपकी क्या राय है?",
+          "es": "¿Qué tal te llevas con las cripto?",
+          "de": "Wie stehst du zu Krypto?",
+          "ar": "ما رأيك في العملات المشفّرة؟"
+        },
+        "a": [
+          {
+            "t": {
+              "en": "Bring it on",
+              "ja": "どんとこい",
+              "zh": "放马过来",
+              "hi": "आने दो!",
+              "es": "¡Venga, que vengan!",
+              "de": "Her damit",
+              "ar": "هاتِها!"
+            },
+            "s": {
+              "crypto": 3,
+              "human": 2
+            }
+          },
+          {
+            "t": {
+              "en": "A little is fine",
+              "ja": "少しならいい",
+              "zh": "一点点可以",
+              "hi": "थोड़ा-बहुत ठीक है",
+              "es": "Un poco, vale",
+              "de": "Ein bisschen ist okay",
+              "ar": "القليل لا بأس به"
+            },
+            "s": {
+              "human": 1,
+              "sleeper": 1
+            }
+          },
+          {
+            "t": {
+              "en": "I’d rather avoid it",
+              "ja": "できれば避けたい",
+              "zh": "能避开就避开",
+              "hi": "हो सके तो दूर ही रहूँ",
+              "es": "Prefiero evitarlas",
+              "de": "Lieber nicht",
+              "ar": "أفضّل تجنّبها"
+            },
+            "s": {
+              "crypto": -99,
+              "human": -99,
+              "careful": 2,
+              "poikatsu": 1,
+              "shareholder": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "kyc",
+        "q": {
+          "en": "Are you OK with face scans or ID checks?",
+          "ja": "顔認証や身分証での本人確認は？",
+          "zh": "能接受人脸识别或证件实名认证吗？",
+          "hi": "क्या चेहरे की स्कैनिंग या पहचान पत्र से वेरिफ़िकेशन ठीक है?",
+          "es": "¿Te parece bien escanear tu cara o verificar tu identidad con un documento?",
+          "de": "Ist ein Gesichtsscan oder eine Ausweisprüfung für dich okay?",
+          "ar": "هل تقبل مسح الوجه أو التحقق من الهوية بوثيقة رسمية؟"
+        },
+        "a": [
+          {
+            "t": {
+              "en": "Yes, if needed",
+              "ja": "必要ならやる",
+              "zh": "需要的话就做",
+              "hi": "ज़रूरत हो तो हाँ",
+              "es": "Sí, si hace falta",
+              "de": "Ja, wenn nötig",
+              "ar": "نعم، إن لزم الأمر"
+            },
+            "s": {
+              "human": 3,
+              "shareholder": 1
+            }
+          },
+          {
+            "t": {
+              "en": "No, I’d rather not",
+              "ja": "やりたくない",
+              "zh": "不想做",
+              "hi": "नहीं, बेहतर है न करूँ",
+              "es": "No, prefiero que no",
+              "de": "Nein, lieber nicht",
+              "ar": "لا، أفضّل ألّا أفعل"
+            },
+            "s": {
+              "human": -99,
+              "shareholder": -99,
+              "sleeper": 1,
+              "crypto": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "want",
+        "q": {
+          "en": "What do you want most?",
+          "ja": "いちばんほしいのは？",
+          "zh": "你最想要的是？",
+          "hi": "आपको सबसे ज़्यादा क्या चाहिए?",
+          "es": "¿Qué es lo que más quieres?",
+          "de": "Was willst du am liebsten?",
+          "ar": "ما الذي تريده أكثر؟"
+        },
+        "a": [
+          {
+            "t": {
+              "en": "Cash",
+              "ja": "現金",
+              "zh": "现金",
+              "hi": "नकद",
+              "es": "Dinero",
+              "de": "Bargeld",
+              "ar": "نقود"
+            },
+            "s": {
+              "careful": 3,
+              "sleeper": 2
+            }
+          },
+          {
+            "t": {
+              "en": "Points",
+              "ja": "ポイント",
+              "zh": "积分",
+              "hi": "पॉइंट्स",
+              "es": "Puntos",
+              "de": "Punkte",
+              "ar": "نقاط"
+            },
+            "s": {
+              "poikatsu": 3,
+              "sleeper": 1
+            }
+          },
+          {
+            "t": {
+              "en": "Shares",
+              "ja": "株",
+              "zh": "股票",
+              "hi": "शेयर",
+              "es": "Acciones",
+              "de": "Aktien",
+              "ar": "أسهم"
+            },
+            "s": {
+              "shareholder": 5
+            }
+          },
+          {
+            "t": {
+              "en": "Tokens",
+              "ja": "トークン",
+              "zh": "代币",
+              "hi": "टोकन",
+              "es": "Tokens",
+              "de": "Tokens",
+              "ar": "رموز رقمية"
+            },
+            "s": {
+              "crypto": 2,
+              "human": 2
+            }
+          }
+        ]
+      }
+    ],
+    "types": [
+      {
+        "id": "sleeper",
+        "match": {
+          "cat": [
+            "app"
+          ],
+          "easeMin": 4,
+          "noVerify": [
+            "kyc-id",
+            "face",
+            "world-id",
+            "passport-nfc"
+          ]
+        },
+        "name": {
+          "en": "Phone-in-a-drawer",
+          "ja": "スマホ放置型",
+          "zh": "手机躺赚型",
+          "hi": "फ़ोन रखो, भूल जाओ",
+          "es": "Móvil en el cajón",
+          "de": "Schubladen-Handy-Typ",
+          "ar": "هاتف في الدرج"
+        },
+        "desc": {
+          "en": "You let your phone work while you sleep. Install, forget, and find a little piled up later. Just check what you are handing over in return: your bandwidth, your steps or your data.",
+          "ja": "寝ている間もスマホに働いてもらう派。入れたらあとは放置、気づけば少したまっている。差し出しているのが回線なのか歩数なのか、それだけは確かめておこう。",
+          "zh": "睡觉时也让手机替你打工。装上就不管，回头一看已经攒了一点。不过你交出去的是网络带宽、步数还是数据，这一点一定要弄清楚。",
+          "hi": "आप सोते समय भी फ़ोन से काम करवाते हैं। इंस्टॉल किया, भूल गए, और बाद में देखा तो थोड़ा-सा जमा हो गया। बस यह ज़रूर देख लें कि बदले में आप क्या दे रहे हैं: इंटरनेट बैंडविड्थ, क़दम या डेटा।",
+          "es": "Dejas que el móvil trabaje mientras duermes. Instalas, te olvidas y luego encuentras un poquito acumulado. Eso sí, comprueba qué entregas a cambio: tu ancho de banda, tus pasos o tus datos.",
+          "de": "Dein Handy arbeitet, während du schläfst. Installieren, vergessen und später ein bisschen angesammelt finden. Prüf nur, was du dafür hergibst: deine Bandbreite, deine Schritte oder deine Daten.",
+          "ar": "تترك هاتفك يعمل وأنت نائم. ثبّت، وانسَ، ثم تجد شيئًا قليلًا قد تجمّع لاحقًا. فقط تحقّق مما تقدّمه في المقابل: سعة إنترنتك أو خطواتك أو بياناتك."
+        }
+      },
+      {
+        "id": "poikatsu",
+        "match": {
+          "cat": [
+            "pointsite",
+            "career"
+          ],
+          "excludeIds": [
+            "kabuand"
+          ]
+        },
+        "name": {
+          "en": "Steady points collector",
+          "ja": "コツコツポイ活型",
+          "zh": "稳扎稳打攒积分型",
+          "hi": "धीमे-पक्के पॉइंट्स कलेक्टर",
+          "es": "Hormiguita de puntos",
+          "de": "Fleißiges Punkte-Eichhörnchen",
+          "ar": "جامع النقاط الصبور"
+        },
+        "desc": {
+          "en": "You stack up small, sure rewards on point sites and marketplaces. Not flashy, but the road to real money is the clearest of all. Quietly strong.",
+          "ja": "ポイントサイトやフリマで、確実な小銭を積み上げる派。派手さはないけれど、換金までの道がいちばんはっきりしている。地味に強い。",
+          "zh": "在返利网站和二手平台上，一点点攒下稳妥的小钱。不起眼，但通往现金的路最清楚。低调的实力派。",
+          "hi": "आप कैशबैक साइटों और मार्केटप्लेस पर छोटी लेकिन पक्की कमाई जोड़ते जाते हैं। चमक-दमक नहीं, पर असली पैसे तक का रास्ता सबसे साफ़ यहीं है। चुपचाप दमदार।",
+          "es": "Vas sumando recompensas pequeñas y seguras en webs de cashback y mercados de segunda mano. Nada vistoso, pero el camino hasta el dinero de verdad es el más claro de todos. Discreto, pero fuerte.",
+          "de": "Du sammelst kleine, sichere Beträge auf Cashback-Seiten und Marktplätzen. Nicht spektakulär, aber der Weg zu echtem Geld ist hier am klarsten. Unauffällig stark.",
+          "ar": "تجمع مكافآت صغيرة ومضمونة من مواقع الاسترداد النقدي والأسواق الإلكترونية. لا بريق فيها، لكن طريقها إلى المال الحقيقي هو الأوضح على الإطلاق. قوة هادئة."
+        }
+      },
+      {
+        "id": "shareholder",
+        "match": {
+          "ids": [
+            "kabuand"
+          ]
+        },
+        "name": {
+          "en": "Would-be shareholder",
+          "ja": "株主になりたい型",
+          "zh": "想当股东型",
+          "hi": "शेयरहोल्डर बनने के शौक़ीन",
+          "es": "Aspirante a accionista",
+          "de": "Aktionär in spe",
+          "ar": "مساهم المستقبل"
+        },
+        "desc": {
+          "en": "Becoming a shareholder by paying your bills sounds exciting to you. But for now the shares cannot be sold and have paid no dividend. The question is whether you can wait a few years.",
+          "ja": "公共料金を払って株主になる、という発想にときめく派。ただし今の株は売れず、配当もまだない。何年か待てるかどうかが勝負。",
+          "zh": "交水电费就能当股东？光是这个点子就让你心动。不过现在的股票还不能卖，也还没有分红。能不能等上几年，才是关键。",
+          "hi": "बिल भरते-भरते शेयरहोल्डर बन जाना, यह आइडिया ही आपको रोमांचित करता है। लेकिन अभी ये शेयर बेचे नहीं जा सकते और अब तक कोई डिविडेंड नहीं मिला है। असली सवाल यह है कि क्या आप कुछ साल इंतज़ार कर सकते हैं।",
+          "es": "Hacerte accionista pagando tus facturas te parece emocionante. Pero, por ahora, las acciones no se pueden vender y todavía no han dado dividendos. La clave es si puedes esperar unos años.",
+          "de": "Aktionär werden, indem du deine Rechnungen bezahlst, klingt für dich aufregend. Aber vorerst lassen sich die Aktien nicht verkaufen, und eine Dividende gab es auch noch nicht. Die Frage ist, ob du ein paar Jahre warten kannst.",
+          "ar": "أن تصبح مساهمًا بمجرد دفع فواتيرك فكرة تثير حماسك. لكن الأسهم لا يمكن بيعها حاليًا، ولم توزّع أي أرباح بعد. السؤال هو: هل تستطيع الانتظار بضع سنوات؟"
+        }
+      },
+      {
+        "id": "crypto",
+        "match": {
+          "cat": [
+            "crypto-bi"
+          ],
+          "noVerify": [
+            "kyc-id",
+            "face",
+            "world-id",
+            "passport-nfc"
+          ]
+        },
+        "name": {
+          "en": "Crypto explorer",
+          "ja": "クリプト冒険型",
+          "zh": "加密冒险型",
+          "hi": "क्रिप्टो खोजी",
+          "es": "Explorador cripto",
+          "de": "Krypto-Abenteurer",
+          "ar": "مغامر العملات المشفّرة"
+        },
+        "desc": {
+          "en": "You join first, even when nobody knows if the token will ever have a price. You roam the crypto basic incomes that need no face scan or ID. Check the price and the cash-out yourself.",
+          "ja": "値段がつくかわからないトークンでも、まず参加してみる派。顔も身分証も出さずに始められる暗号資産ベーシックインカムを渡り歩く。価格と換金は自分の目で。",
+          "zh": "哪怕不知道代币将来有没有价格，也先加入再说。你穿梭在不用刷脸、不用证件就能开始的加密货币基本收入之间。价格和兑现，要靠自己亲眼确认。",
+          "hi": "टोकन की कभी कोई क़ीमत होगी या नहीं, यह किसी को पता न हो, तब भी आप पहले जुड़ जाते हैं। आप उन क्रिप्टो बेसिक इनकम के बीच घूमते हैं जिनमें न चेहरा स्कैन करना पड़ता है, न पहचान पत्र देना। क़ीमत और कैश-आउट ख़ुद जाँच लें।",
+          "es": "Te apuntas primero, aunque nadie sepa si el token llegará a tener precio. Vas de una renta básica cripto a otra, de las que no piden escanear la cara ni documento. El precio y el cobro, compruébalos tú mismo.",
+          "de": "Du machst erst mal mit, auch wenn niemand weiß, ob der Token je einen Preis haben wird. Du ziehst durch die Krypto-Grundeinkommen, die weder Gesichtsscan noch Ausweis verlangen. Preis und Auszahlung prüfst du am besten selbst.",
+          "ar": "تنضمّ أولًا، حتى لو لم يعرف أحد إن كان للرمز سعر يومًا ما. تتنقّل بين مشاريع الدخل الأساسي المشفّر التي لا تطلب مسح الوجه ولا وثيقة هوية. تحقّق بنفسك من السعر وطريقة الصرف."
+        }
+      },
+      {
+        "id": "human",
+        "match": {
+          "cat": [
+            "crypto-bi"
+          ],
+          "anyVerify": [
+            "kyc-id",
+            "face",
+            "world-id",
+            "passport-nfc"
+          ]
+        },
+        "name": {
+          "en": "Proof-of-human earner",
+          "ja": "人間証明型",
+          "zh": "真人认证型",
+          "hi": "इंसान होने की कमाई",
+          "es": "Humano verificado",
+          "de": "Verifizierter Mensch",
+          "ar": "إنسان موثَّق"
+        },
+        "desc": {
+          "en": "You prove you are one unique human, by face or ID, and collect a daily share. Being human is your income. Check how each service handles your biometric data.",
+          "ja": "顔や身分証で「自分はひとりの人間です」と証明して、毎日の配布を受け取る派。人間であること自体が収入源。生体データの扱いは、サービスごとに確かめよう。",
+          "zh": "用脸或证件证明“我是独一无二的真人”，每天领取一份发放。身为人类本身就是收入来源。至于生物特征数据怎么处理，要逐个服务确认。",
+          "hi": "आप चेहरे या पहचान पत्र से साबित करते हैं कि आप एक अनोखे इंसान हैं, और रोज़ अपना हिस्सा पाते हैं। इंसान होना ही आपकी कमाई है। हर सेवा आपके बायोमेट्रिक डेटा के साथ क्या करती है, यह ज़रूर जाँचें।",
+          "es": "Demuestras con tu cara o tu documento que eres un humano único y cobras tu parte cada día. Ser humano es tu fuente de ingresos. Comprueba cómo trata cada servicio tus datos biométricos.",
+          "de": "Du beweist per Gesicht oder Ausweis, dass du ein einzigartiger Mensch bist, und holst dir täglich deinen Anteil ab. Mensch sein ist dein Einkommen. Prüf bei jedem Dienst, wie er mit deinen biometrischen Daten umgeht.",
+          "ar": "تُثبت بوجهك أو بوثيقة هويتك أنك إنسان فريد، وتستلم حصتك كل يوم. كونك إنسانًا هو مصدر دخلك. تحقّق من طريقة تعامل كل خدمة مع بياناتك الحيوية."
+        }
+      },
+      {
+        "id": "careful",
+        "match": {
+          "cash": [
+            "yes"
+          ],
+          "operator": [
+            "yes"
+          ],
+          "noWarning": true
+        },
+        "name": {
+          "en": "Bridge-tapper",
+          "ja": "石橋たたき型",
+          "zh": "三思而行型",
+          "hi": "फूँक-फूँककर चलने वाले",
+          "es": "Pies de plomo",
+          "de": "Nummer-sicher-Typ",
+          "ar": "الحذر المتأنّي"
+        },
+        "desc": {
+          "en": "You test every bridge before you cross it. You pick only what can be cashed out and has a known operator. Even so, there is such a thing as a free lunch.",
+          "ja": "あやしいものには近寄らない慎重派。現金にできて、運営元もはっきりしているものだけを選ぶ。それでもタダ飯は、ちゃんとある。",
+          "zh": "可疑的东西一概不碰，谨慎派。只挑能兑现、运营方也清清楚楚的。即便如此，天下竟然还是有免费的午餐。",
+          "hi": "आप संदिग्ध चीज़ों से दूर रहने वाले सावधान इंसान हैं। आप सिर्फ़ वही चुनते हैं जो नकद में बदला जा सके और जिसका संचालक साफ़-साफ़ पता हो। फिर भी, मुफ़्त का लंच भी होता है।",
+          "es": "Vas con pies de plomo y no te acercas a nada sospechoso. Solo eliges lo que se puede pasar a dinero y tiene un operador conocido. Aun así: hay almuerzo gratis.",
+          "de": "Du gehst auf Nummer sicher und hältst dich von allem Dubiosen fern. Du wählst nur, was sich auszahlen lässt und einen bekannten Betreiber hat. Und trotzdem: Es gibt doch ein kostenloses Mittagessen.",
+          "ar": "أنت حذر لا تقترب من أي شيء مريب. تختار فقط ما يمكن صرفه نقدًا وما كانت الجهة المشغّلة له معروفة. ومع ذلك، الغداء المجاني موجود فعلًا."
+        }
+      }
+    ]
+  }
 };

@@ -228,6 +228,8 @@ Evergreen guides to a single service, built from the facts in `src/data.js` and 
 - [KABU& complete guide: how to get the shares, what they can do, the consolidation and the listing timeline](https://neteru-nyukin.eltociear.workers.dev/guides/kabuand/) (updated 2026-11-01; [日本語](https://neteru-nyukin.eltociear.workers.dev/ja/guides/kabuand/)): KABU& gives you share vouchers for paying your power, gas and phone bills. Why you need a Daiwa Connect Securities account, the 10-to-1 share consolidation on 22 December 2026, what the shares can and cannot do, and the 2028 buyback capped at 1.2×, from official documents only.
 
 Each guide is available in 7 languages and has an update log at the bottom.
+
+**[Free Lunch Quiz](https://neteru-nyukin.eltociear.workers.dev/shindan/)** ([日本語: タダ飯診断](https://neteru-nyukin.eltociear.workers.dev/ja/shindan/)): Answer five questions to find your free lunch type. Each result page lists the services on this site that fit that type. No sign-up, 30 seconds. Result types, with the number of matching services picked from `src/data.js` on every build: [Phone-in-a-drawer](https://neteru-nyukin.eltociear.workers.dev/shindan/sleeper/) (12), [Steady points collector](https://neteru-nyukin.eltociear.workers.dev/shindan/poikatsu/) (4), [Would-be shareholder](https://neteru-nyukin.eltociear.workers.dev/shindan/shareholder/) (1), [Crypto explorer](https://neteru-nyukin.eltociear.workers.dev/shindan/crypto/) (6), [Proof-of-human earner](https://neteru-nyukin.eltociear.workers.dev/shindan/human/) (9), [Bridge-tapper](https://neteru-nyukin.eltociear.workers.dev/shindan/careful/) (9).
 <!-- guides:end -->
 
 ## Badge
