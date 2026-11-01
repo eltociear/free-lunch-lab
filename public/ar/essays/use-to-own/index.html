@@ -701,6 +701,50 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .snip pre{margin:0;min-width:0;max-height:9em;overflow:auto;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:color-mix(in srgb,var(--paper) 60%,var(--surface));color:var(--ink);font:.8125rem/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all;text-align:left;user-select:all;-webkit-user-select:all}
 .snip .btn{font-size:.8125rem;padding:6px 12px}
 .bdg-tile figcaption a{display:inline-block;padding-block:10px;margin-block:-10px}
+/* 完全ガイド（/guides/{id}/）: エッセイより少し広め。向き・不向き、できる・できないは2列（狭い画面では1列） */
+.guide{max-width:46rem;margin-inline:auto}
+.guide article{display:grid;gap:8px}
+.guide p{font-size:1rem;line-height:1.9}
+.g-sum{display:grid;gap:12px;margin-top:8px}
+.g-sec{padding-top:28px;display:grid;gap:12px;scroll-margin-top:calc(var(--bar-h,56px) + 12px)}
+.g-sec>h2,.g-fit h2{font-family:var(--f-body);font-weight:700;font-size:1.25rem}
+.g-fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.g-fit>div{padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:var(--surface);display:grid;gap:8px;align-content:start}
+.g-fit h2,.g-fit h3{font-family:var(--f-body);font-weight:700;font-size:1rem}
+.g-yes{border-color:color-mix(in srgb,var(--pos) 40%,var(--line))!important}.g-yes h2,.g-yes h3{color:var(--pos)}
+.g-no{border-color:color-mix(in srgb,var(--amber) 40%,var(--line))!important}.g-no h2,.g-no h3{color:var(--amber)}
+.g-list{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:.94rem;line-height:1.75}
+.g-list li{position:relative;padding-inline-start:20px;overflow-wrap:anywhere}
+.g-list li::before{content:"";position:absolute;inset-inline-start:3px;top:.8em;width:8px;height:2px;border-radius:2px;background:var(--muted)}
+.g-can li::before,.g-cannot li::before{width:auto;height:auto;background:none;top:0;font-weight:700}
+.g-can li::before{content:"✓";color:var(--pos)}
+.g-cannot li::before{content:"✗";color:var(--amber)}
+.g-warn{padding:18px 20px}
+.g-warn .g-list li::before{background:var(--stamp)}
+.g-glance{margin:0;display:grid;border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
+.g-glance div{display:grid;grid-template-columns:minmax(7.5em,30%) 1fr;gap:4px 14px;padding:10px 16px;border-top:1px solid var(--line)}
+.g-glance div:first-child{border-top:0}
+.g-glance dt{font-size:.8125rem;font-weight:700;color:var(--muted);padding-top:.2em}
+.g-glance dd{margin:0;font-size:.94rem;line-height:1.7;min-width:0;overflow-wrap:anywhere}
+@media (max-width:520px){.g-glance div{grid-template-columns:1fr}}
+.g-toc{margin-top:20px}
+.g-steps{margin:0;padding:0;list-style:none;counter-reset:st;display:grid;gap:10px}
+.g-steps li{counter-increment:st;position:relative;padding:12px 14px;padding-inline-start:52px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.94rem;line-height:1.75;overflow-wrap:anywhere}
+.g-steps li::before{content:counter(st);position:absolute;inset-inline-start:14px;top:12px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-size:.95rem}
+.g-tl{margin-top:4px}
+.g-tl .tl-item{padding-bottom:16px}
+.g-tl .tl-when{font-weight:700;font-size:.95rem;margin-bottom:2px}
+.g-tl p{font-size:.94rem;line-height:1.75}
+.guide .faq p{color:var(--ink);font-size:.94rem;line-height:1.85}
+#g-start .slip{display:flex;flex-wrap:wrap;gap:8px}
+.g-more a,.g-link a,.g-log a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;text-underline-offset:3px}
+.g-log{margin:0;padding-inline-start:20px;display:grid;gap:6px;font-size:.9rem;line-height:1.7}
+.g-log time{color:var(--muted);margin-inline-end:6px}
+.g-link-top{padding:4px 14px;border-radius:12px;border:1px dashed color-mix(in srgb,var(--gold) 55%,var(--line));background:color-mix(in srgb,var(--gold) 6%,transparent)}
+.g-link-top a{color:var(--gold)}
+.g-rel{margin-top:12px}
+.guide .fnref{font-size:.8125rem}
+.guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
 </style>
 </head>
 <body>
@@ -741,6 +785,7 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 <p class="op">ما الذي سيجعله غداءً مجانيًا؟ الإدراج، كي تُباع الأسهم. العائد، كي تدفع وأنت تنتظر. وإن غاب الاثنان، إعادة الشراء في 2028. أيٌّ منها يمنح السهم قيمة يمكنك تحصيلها فعلًا. وحتى ذلك الحين، تعني «الاستخدام = الملكية» هنا ملكية بالآجل.</p>
 <p class="op">في مقالتنا عن <a href="/ar/essays/universal-high-income/">الدخل المرتفع الشامل</a> قلنا إن الجزء المثير هو الأنبوب الذي يحمل القيمة إلى الناس. كان أنبوب روتشديل فائض المتجر، وأنبوب ⁦Uniswap⁩ رمزًا يمكنك بيعه. أما أنبوب ⁦KABU&amp;⁩ فيمر عبر فواتير المرافق وينتهي بسهم ما زال ينتظر سوقه. إنها فكرة قديمة، وجيدة. فقط تحقق من قيمة هذه الملكية في اليوم الذي تريد استخدامها فيه.</p></div>
 <p class="related">مقال ذو صلة: <a href="/ar/essays/universal-high-income/">الدخل المرتفع الشامل: من يدفع؟</a></p>
+<p class="related g-rel"><a href="/ar/guides/kabuand/">اقرأ الدليل الكامل ←</a></p>
 <section class="fn"><h2>المصادر</h2><ol><li id="fn-1"><a href="https://www.co-operativeheritage.coop/Blog/the-co-op-dividend-what-is-it" target="_blank" rel="noopener" dir="auto">Co-operative Heritage Trust — The co-op dividend: what is it?; Visit Rochdale — Rochdale Pioneers Museum (31 Toad Lane, opened 21 Dec 1844)</a> · <a href="https://www.visitrochdale.com/things-to-do/rochdale-pioneers-museum-p85681" target="_blank" rel="noopener" dir="ltr">visitrochdale.com</a> <a class="fnback" href="#ref-1" aria-label="↩">↩</a></li><li id="fn-2"><a href="https://ica.coop/en/cooperatives/cooperative-identity" target="_blank" rel="noopener" dir="auto">International Cooperative Alliance — Cooperative identity, values &amp; principles (3rd principle: member economic participation); History of the cooperative movement</a> · <a href="https://ica.coop/en/cooperatives/history-cooperative-movement" target="_blank" rel="noopener" dir="ltr">ica.coop</a> <a class="fnback" href="#ref-2" aria-label="↩">↩</a></li><li id="fn-3"><a href="https://laws.e-gov.go.jp/law/323AC0000000200" target="_blank" rel="noopener" dir="auto">Consumer Co-operative Act (Japan), Art. 52: return of surplus (e-Gov, in Japanese)</a> <a class="fnback" href="#ref-3" aria-label="↩">↩</a></li><li id="fn-4"><a href="https://blog.uniswap.org/uni" target="_blank" rel="noopener" dir="auto">Uniswap Labs — Introducing UNI (16 Sep 2020)</a> <a class="fnback" href="#ref-4" aria-label="↩">↩</a></li><li id="fn-5"><a href="https://kabuand.com/" target="_blank" rel="noopener" dir="auto">KABU&amp; official site: share voucher rates, issue price, “listing is not guaranteed” (in Japanese)</a> <a class="fnback" href="#ref-5" aria-label="↩">↩</a></li><li id="fn-6"><a href="https://kabuand.com/documents/prospectus4.pdf" target="_blank" rel="noopener" dir="auto">Kabu &amp; Peace — Prospectus for the 4th offering of KABU&amp; class shares (Oct 2026, in Japanese)</a> <a class="fnback" href="#ref-6" aria-label="↩">↩</a></li><li id="fn-7"><a href="https://kabuand.com/documents/shareholder-terms.pdf" target="_blank" rel="noopener" dir="auto">Kabu &amp; Peace — KABU&amp; shareholder terms: transfer, compulsory acquisition, 2028 buyback (in Japanese)</a> <a class="fnback" href="#ref-7" aria-label="↩">↩</a></li><li id="fn-8"><a href="https://kabuand.com/mz/articles/astvmrb0c68r7xzz06gqrdz0m4" target="_blank" rel="noopener" dir="auto">Yusaku Maezawa — An important request ahead of the listing (KABU&amp;, 29 Oct 2026, in Japanese)</a> <a class="fnback" href="#ref-8" aria-label="↩">↩</a></li></ol></section>
 </article>
 <p class="back"><a class="btn line" href="/ar/#list">→ العودة إلى القائمة</a></p>

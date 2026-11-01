@@ -700,6 +700,50 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .snip pre{margin:0;min-width:0;max-height:9em;overflow:auto;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:color-mix(in srgb,var(--paper) 60%,var(--surface));color:var(--ink);font:.8125rem/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all;text-align:left;user-select:all;-webkit-user-select:all}
 .snip .btn{font-size:.8125rem;padding:6px 12px}
 .bdg-tile figcaption a{display:inline-block;padding-block:10px;margin-block:-10px}
+/* 完全ガイド（/guides/{id}/）: エッセイより少し広め。向き・不向き、できる・できないは2列（狭い画面では1列） */
+.guide{max-width:46rem;margin-inline:auto}
+.guide article{display:grid;gap:8px}
+.guide p{font-size:1rem;line-height:1.9}
+.g-sum{display:grid;gap:12px;margin-top:8px}
+.g-sec{padding-top:28px;display:grid;gap:12px;scroll-margin-top:calc(var(--bar-h,56px) + 12px)}
+.g-sec>h2,.g-fit h2{font-family:var(--f-body);font-weight:700;font-size:1.25rem}
+.g-fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.g-fit>div{padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:var(--surface);display:grid;gap:8px;align-content:start}
+.g-fit h2,.g-fit h3{font-family:var(--f-body);font-weight:700;font-size:1rem}
+.g-yes{border-color:color-mix(in srgb,var(--pos) 40%,var(--line))!important}.g-yes h2,.g-yes h3{color:var(--pos)}
+.g-no{border-color:color-mix(in srgb,var(--amber) 40%,var(--line))!important}.g-no h2,.g-no h3{color:var(--amber)}
+.g-list{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:.94rem;line-height:1.75}
+.g-list li{position:relative;padding-inline-start:20px;overflow-wrap:anywhere}
+.g-list li::before{content:"";position:absolute;inset-inline-start:3px;top:.8em;width:8px;height:2px;border-radius:2px;background:var(--muted)}
+.g-can li::before,.g-cannot li::before{width:auto;height:auto;background:none;top:0;font-weight:700}
+.g-can li::before{content:"✓";color:var(--pos)}
+.g-cannot li::before{content:"✗";color:var(--amber)}
+.g-warn{padding:18px 20px}
+.g-warn .g-list li::before{background:var(--stamp)}
+.g-glance{margin:0;display:grid;border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
+.g-glance div{display:grid;grid-template-columns:minmax(7.5em,30%) 1fr;gap:4px 14px;padding:10px 16px;border-top:1px solid var(--line)}
+.g-glance div:first-child{border-top:0}
+.g-glance dt{font-size:.8125rem;font-weight:700;color:var(--muted);padding-top:.2em}
+.g-glance dd{margin:0;font-size:.94rem;line-height:1.7;min-width:0;overflow-wrap:anywhere}
+@media (max-width:520px){.g-glance div{grid-template-columns:1fr}}
+.g-toc{margin-top:20px}
+.g-steps{margin:0;padding:0;list-style:none;counter-reset:st;display:grid;gap:10px}
+.g-steps li{counter-increment:st;position:relative;padding:12px 14px;padding-inline-start:52px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.94rem;line-height:1.75;overflow-wrap:anywhere}
+.g-steps li::before{content:counter(st);position:absolute;inset-inline-start:14px;top:12px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-size:.95rem}
+.g-tl{margin-top:4px}
+.g-tl .tl-item{padding-bottom:16px}
+.g-tl .tl-when{font-weight:700;font-size:.95rem;margin-bottom:2px}
+.g-tl p{font-size:.94rem;line-height:1.75}
+.guide .faq p{color:var(--ink);font-size:.94rem;line-height:1.85}
+#g-start .slip{display:flex;flex-wrap:wrap;gap:8px}
+.g-more a,.g-link a,.g-log a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;text-underline-offset:3px}
+.g-log{margin:0;padding-inline-start:20px;display:grid;gap:6px;font-size:.9rem;line-height:1.7}
+.g-log time{color:var(--muted);margin-inline-end:6px}
+.g-link-top{padding:4px 14px;border-radius:12px;border:1px dashed color-mix(in srgb,var(--gold) 55%,var(--line));background:color-mix(in srgb,var(--gold) 6%,transparent)}
+.g-link-top a{color:var(--gold)}
+.g-rel{margin-top:12px}
+.guide .fnref{font-size:.8125rem}
+.guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
 </style>
 </head>
 <body>
@@ -723,6 +767,7 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 <div class="meta"><span class="ease"><span>Ease</span><span class="meter" role="img" aria-label="4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span><span class="region world"><span class="vh">Region: </span>Global</span><ul class="trust" aria-label="Trust check"><li class="t-yes" title="Cash out (can it become real money): Yes"><span aria-hidden="true">Cash</span><b aria-hidden="true">✓</b><span class="vh">Cash out (can it become real money): Yes</span></li><li class="t-yes" title="Operator (is the company behind it public): Yes"><span aria-hidden="true">Operator</span><b aria-hidden="true">✓</b><span class="vh">Operator (is the company behind it public): Yes</span></li></ul></div>
 <div class="slip"><a class="btn solid ref" href="https://pawns.app/?r=20659471" target="_blank" rel="noopener sponsored">Sign up with referral</a></div>
 </div>
+
 <h2>What is Pawns.app?</h2>
 <p class="body">IPRoyal’s bandwidth-sharing app. Leave the desktop app running and your spare connection earns money. Surveys and games pay too. Cash out from $5 via PayPal, Bitcoin and more</p>
 <h2>How to start</h2>

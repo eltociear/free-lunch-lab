@@ -2,7 +2,7 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [] } = require('./src/data.js');
 const { execFileSync } = require('child_process');
 // オープンソース一覧のスター数・最終コミット日などを取りに行く（失敗してもキャッシュで続ける。OSS_OFFLINE=1 で取得しない）
 try { execFileSync(process.execPath, [path.join(__dirname, 'oss-fetch.js')], { stdio: 'inherit', timeout: 120000 }); } catch (e) { console.warn('open-source metadata: fetch failed, using cache'); }
@@ -83,6 +83,26 @@ for (const e of ESSAYS) {
     if (m && !ESSAYS.some(x => x.id === m[1])) throw new Error(`${e.id}.${l}: link to unknown essay ${href}`);
   }
 }
+// サービスの完全ガイド: /guides/{id}/（言語ごとに接頭辞）。全言語の本文と、表示中のサービスが必要
+const guidePath = (l, g) => `${urlPath(l)}guides/${g.id}/`;
+const guideAbs = (l, g) => SITE_URL + guidePath(l, g);
+for (const l of LANGS) for (const k of ['guideEb', 'guideRead']) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+const GUIDE_FIELDS = ['title', 'short', 'desc', 'h', 'lead', 'glance', 'suits', 'notSuits', 'steps', 'howAfter', 'can', 'cannot', 'rightsNote', 'timeline', 'faq', 'pros', 'risks', 'ctaText'];
+for (const g of GUIDES) {
+  if (!live.some(x => x.id === g.svc)) throw new Error(`guide ${g.id}: unknown or hidden service ${g.svc}`);
+  if (g.essay && !ESSAYS.some(e => e.id === g.essay)) throw new Error(`guide ${g.id}: unknown essay ${g.essay}`);
+  if (!/^\d{4}-\d\d-\d\d$/.test(g.updated || '') || !g.log || !g.log.length) throw new Error(`guide ${g.id}: needs updated (YYYY-MM-DD) and a log`);
+  for (const l of LANGS) {
+    if (!g[l]) throw new Error(`guide ${g.id}: missing ${l}`);
+    for (const f of GUIDE_FIELDS) if (!g[l][f]) throw new Error(`guide ${g.id}: missing ${l}.${f}`);
+    for (const x of g.log) if (!x[l]) throw new Error(`guide ${g.id}: log ${x.date} missing ${l}`);
+    const refs = JSON.stringify(g[l]).match(/\[(\d+)\]/g) || [];
+    for (const r of refs) if (!g.sources.some(x => `[${x.n}]` === r)) throw new Error(`guide ${g.id}.${l}: unknown source ${r}`);
+  }
+}
+// サービスのカード・個別ページ・エッセイから、そのサービスのガイドへ
+const guideOf = s => GUIDES.find(g => g.svc === s.id);
+const guideLink = (lang, g, cls = 'g-link') => g ? `<p class="${cls}"><a href="${guidePath(lang, g)}">${esc(T[lang].guideRead.replace('{name}', g[lang].short))} ${RTL.has(lang) ? '←' : '→'}</a></p>` : '';
 const longDate = (iso, lang) => new Intl.DateTimeFormat(LANG_TAG[lang], { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(iso + 'T00:00:00Z'));
 // ベーシックインカム社会実験の年表: /timeline/ と /{lang}/timeline/
 const tlPath = l => `${urlPath(l)}timeline/`;
@@ -227,7 +247,7 @@ ${contactLine(s, lang)}
 <p class="need"><b>${esc(L.need)}</b><span>${esc(d.need)}</span></p>
 ${d.caution ? cautionBox(s, lang, d.caution) : ''}
 ${checkedLine(s, lang)}
-<a class="to-page" href="${svcPath(lang, s)}">${esc(L.toPage)} ${RTL.has(lang) ? '←' : '→'}</a>
+<a class="to-page" href="${svcPath(lang, s)}">${esc(L.toPage)} ${RTL.has(lang) ? '←' : '→'}</a>${guideOf(s) ? `<a class="to-page to-guide" href="${guidePath(lang, guideOf(s))}">${esc(L.guideRead.replace('{name}', guideOf(s)[lang].short))} ${RTL.has(lang) ? '←' : '→'}</a>` : ''}
 </div></details>
 ${slip(s, L, { lang, toWarn: true })}</div>
 </article>`;
@@ -676,6 +696,50 @@ const DETAIL_CSS = `
 .snip pre{margin:0;min-width:0;max-height:9em;overflow:auto;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:color-mix(in srgb,var(--paper) 60%,var(--surface));color:var(--ink);font:.8125rem/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-all;text-align:left;user-select:all;-webkit-user-select:all}
 .snip .btn{font-size:.8125rem;padding:6px 12px}
 .bdg-tile figcaption a{display:inline-block;padding-block:10px;margin-block:-10px}
+/* 完全ガイド（/guides/{id}/）: エッセイより少し広め。向き・不向き、できる・できないは2列（狭い画面では1列） */
+.guide{max-width:46rem;margin-inline:auto}
+.guide article{display:grid;gap:8px}
+.guide p{font-size:1rem;line-height:1.9}
+.g-sum{display:grid;gap:12px;margin-top:8px}
+.g-sec{padding-top:28px;display:grid;gap:12px;scroll-margin-top:calc(var(--bar-h,56px) + 12px)}
+.g-sec>h2,.g-fit h2{font-family:var(--f-body);font-weight:700;font-size:1.25rem}
+.g-fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.g-fit>div{padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:var(--surface);display:grid;gap:8px;align-content:start}
+.g-fit h2,.g-fit h3{font-family:var(--f-body);font-weight:700;font-size:1rem}
+.g-yes{border-color:color-mix(in srgb,var(--pos) 40%,var(--line))!important}.g-yes h2,.g-yes h3{color:var(--pos)}
+.g-no{border-color:color-mix(in srgb,var(--amber) 40%,var(--line))!important}.g-no h2,.g-no h3{color:var(--amber)}
+.g-list{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:.94rem;line-height:1.75}
+.g-list li{position:relative;padding-inline-start:20px;overflow-wrap:anywhere}
+.g-list li::before{content:"";position:absolute;inset-inline-start:3px;top:.8em;width:8px;height:2px;border-radius:2px;background:var(--muted)}
+.g-can li::before,.g-cannot li::before{width:auto;height:auto;background:none;top:0;font-weight:700}
+.g-can li::before{content:"✓";color:var(--pos)}
+.g-cannot li::before{content:"✗";color:var(--amber)}
+.g-warn{padding:18px 20px}
+.g-warn .g-list li::before{background:var(--stamp)}
+.g-glance{margin:0;display:grid;border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
+.g-glance div{display:grid;grid-template-columns:minmax(7.5em,30%) 1fr;gap:4px 14px;padding:10px 16px;border-top:1px solid var(--line)}
+.g-glance div:first-child{border-top:0}
+.g-glance dt{font-size:.8125rem;font-weight:700;color:var(--muted);padding-top:.2em}
+.g-glance dd{margin:0;font-size:.94rem;line-height:1.7;min-width:0;overflow-wrap:anywhere}
+@media (max-width:520px){.g-glance div{grid-template-columns:1fr}}
+.g-toc{margin-top:20px}
+.g-steps{margin:0;padding:0;list-style:none;counter-reset:st;display:grid;gap:10px}
+.g-steps li{counter-increment:st;position:relative;padding:12px 14px;padding-inline-start:52px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.94rem;line-height:1.75;overflow-wrap:anywhere}
+.g-steps li::before{content:counter(st);position:absolute;inset-inline-start:14px;top:12px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-family:var(--f-dot);font-size:.95rem}
+.g-tl{margin-top:4px}
+.g-tl .tl-item{padding-bottom:16px}
+.g-tl .tl-when{font-weight:700;font-size:.95rem;margin-bottom:2px}
+.g-tl p{font-size:.94rem;line-height:1.75}
+.guide .faq p{color:var(--ink);font-size:.94rem;line-height:1.85}
+#g-start .slip{display:flex;flex-wrap:wrap;gap:8px}
+.g-more a,.g-link a,.g-log a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;text-underline-offset:3px}
+.g-log{margin:0;padding-inline-start:20px;display:grid;gap:6px;font-size:.9rem;line-height:1.7}
+.g-log time{color:var(--muted);margin-inline-end:6px}
+.g-link-top{padding:4px 14px;border-radius:12px;border:1px dashed color-mix(in srgb,var(--gold) 55%,var(--line));background:color-mix(in srgb,var(--gold) 6%,transparent)}
+.g-link-top a{color:var(--gold)}
+.g-rel{margin-top:12px}
+.guide .fnref{font-size:.8125rem}
+.guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
 // meta description 用に長さをそろえる（日本語・中国語は短め）
@@ -725,6 +789,7 @@ ${d.warning ? `<div class="warn svc-warn" id="warn" role="note"><p class="warn-h
 ${meta(s, lang)}
 ${slip(s, L)}
 </div>
+${guideLink(lang, guideOf(s), 'g-link g-link-top')}
 <h2>${esc(L.hAbout.replace('{name}', name))}</h2>
 <p class="body">${esc(d.note)}</p>
 <h2>${esc(L.hNeed)}</h2>
@@ -880,6 +945,7 @@ function essayPage(e, lang) {
 <header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p></header>
 <div class="essay-body">${blocks}</div>
 ${relatedLinks(lang, essayList(e.related))}
+${GUIDES.filter(g => g.essay === e.id).map(g => guideLink(lang, g, 'related g-rel')).join('')}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
 </article>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
@@ -897,6 +963,61 @@ function essaysIndex(lang) {
 <main class="orgs"><header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(L.essaysTitle)}</h1></header><ul class="org-list">${items}</ul>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p></main>`;
   return shell(lang, { title: `${L.essaysTitle} | ${L.title}`, desc: ESSAYS.map(e => e.desc[lang] || e.desc.en).join(' ').slice(0, 160), hrefFor: essaysAbs, pathFor: essaysPath, ld, ogType: 'website', body });
+}
+
+// ---- サービスの完全ガイド（/guides/{id}/）。あとから情報を足していく常設ページ。[n] は出典の番号
+// 中身は GUIDES（data.js）だけで作る。最終更新日と更新履歴（log）を出すので、内容を足したら updated と log も足す
+function guidePage(g, lang) {
+  const L = T[lang];
+  const G = g[lang];
+  const H = G.h;
+  const home = urlPath(lang);
+  const s = live.find(x => x.id === g.svc);
+  const url = guideAbs(lang, g);
+  const seen = new Set();
+  const fn = t => esc(t).replace(/\[(\d+)\]/g, (_, n) => { const first = !seen.has(n); seen.add(n); return `<sup class="fnref"><a href="#fn-${n}"${first ? ` id="ref-${n}"` : ''}>${n}</a></sup>`; });
+  const plain = t => String(t).replace(/\s*\[\d+\]/g, '').trim();
+  const list = (items, cls = '') => `<ul class="g-list${cls ? ' ' + cls : ''}">${items.map(x => `<li>${fn(x)}</li>`).join('')}</ul>`;
+  const sec = (id, h, inner) => `<section class="g-sec" id="${id}"><h2>${esc(h)}</h2>${inner}</section>`;
+  const toc = [['g-how', H.how], ['g-rights', H.rights], ['g-dates', H.timeline], ['g-faq', H.faq], ['g-pros', H.pros], ['g-risks', H.risks], ['g-start', H.cta], ['g-log', H.log]];
+  const essay = g.essay && ESSAYS.find(e => e.id === g.essay);
+  const lastLog = g.log[0];
+  const ld = [
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: sName(s, lang), item: svcAbs(lang, s) },
+      { '@type': 'ListItem', position: 3, name: G.short, item: url } ] },
+    { '@context': 'https://schema.org', '@type': 'Article', headline: G.title, description: G.desc, inLanguage: LANG_TAG[lang], datePublished: g.published, dateModified: g.updated,
+      author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
+      mainEntityOfPage: url, image: ogImage(`guide/${lang}/${g.id}.jpg`) },
+    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: G.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: plain(a) } })) },
+  ];
+  const sources = g.sources.map(x => `<li id="fn-${x.n}"><a href="${esc(x.url)}" target="_blank" rel="noopener" dir="auto">${esc(x.label)}</a> <a class="fnback" href="#ref-${x.n}" aria-label="↩">↩</a></li>`).join('');
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${svcPath(lang, s)}">${esc(sName(s, lang))}</a></li><li aria-current="page">${esc(G.short)}</li></ol></nav>
+<main class="guide" data-cat="${s.cat}">
+<article>
+<header class="orgs-head"><p class="eyebrow">${esc(L.guideEb)}</p><h1>${esc(G.title)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${g.updated}">${esc(H.updated)} ${esc(longDate(g.updated, lang))}</time></p></header>
+<section class="g-sum" id="g-summary" aria-label="${esc(H.summary)}">
+${G.lead.map(p => `<p>${fn(p)}</p>`).join('\n')}
+<div class="g-fit"><div class="g-yes"><h2>${esc(H.suits)}</h2>${list(G.suits)}</div><div class="g-no"><h2>${esc(H.notSuits)}</h2>${list(G.notSuits)}</div></div>
+</section>
+<section class="g-sec" id="g-glance"><h2>${esc(H.glance)}</h2><dl class="g-glance">${G.glance.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${fn(v)}</dd></div>`).join('')}</dl></section>
+<nav class="org-toc g-toc" aria-label="${esc(H.toc)}">${toc.map(([id, h]) => `<a href="#${id}">${esc(h)}</a>`).join('')}</nav>
+${sec('g-how', H.how, `<ol class="g-steps">${G.steps.map(x => `<li>${fn(x)}</li>`).join('')}</ol>${G.howAfter.map(p => `<p>${fn(p)}</p>`).join('')}`)}
+${sec('g-rights', H.rights, `<div class="g-fit"><div class="g-yes"><h3>${esc(H.can)}</h3>${list(G.can, 'g-can')}</div><div class="g-no"><h3>${esc(H.cannot)}</h3>${list(G.cannot, 'g-cannot')}</div></div>${G.rightsNote.map(p => `<p>${fn(p)}</p>`).join('')}`)}
+${sec('g-dates', H.timeline, `<ol class="tl g-tl">${G.timeline.map(([iso, when, t]) => `<li class="tl-item"><div class="tl-when"><time${/^\d{4}(-\d\d-\d\d)?$/.test(iso) ? ` datetime="${iso}"` : ''}>${esc(when)}</time></div><p>${fn(t)}</p></li>`).join('')}</ol>`)}
+${sec('g-faq', H.faq, `<div class="faq">${G.faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${fn(a)}</p></details>`).join('')}</div>`)}
+${sec('g-pros', H.pros, list(G.pros, 'g-can'))}
+${sec('g-risks', H.risks, `<div class="warn g-warn">${list(G.risks)}</div>`)}
+<section class="g-sec sum" id="g-start"><h2>${esc(H.cta)}</h2><p>${esc(G.ctaText)}</p>${contactLine(s, lang)}<div class="slip">${cta(s, L, { lang })}</div><p class="g-more"><a href="${svcPath(lang, s)}">${esc(L.toPage)} ${RTL.has(lang) ? '←' : '→'}</a></p></section>
+${essay ? relatedLinks(lang, [essay]) : ''}
+${sec('g-log', H.log, `<ol class="g-log">${g.log.map(x => `<li><time datetime="${x.date}">${esc(longDate(x.date, lang))}</time> ${esc(x[lang] || x.en)}</li>`).join('')}</ol>`)}
+<section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
+</article>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  if (lastLog.date !== g.updated) throw new Error(`guide ${g.id}: the newest log entry must have the date of updated (${g.updated})`);
+  return shell(lang, { title: `${G.title} | ${L.title}`, desc: clip(G.desc, lang), hrefFor: l => guideAbs(l, g), pathFor: l => guidePath(l, g), ld, ogType: 'article', body, script: copyScript(L), pr: true, image: ogImage(`guide/${lang}/${g.id}.jpg`) });
 }
 
 // ---- ベーシックインカム社会実験の年表（/timeline/）。縦のタイムライン（RTLでは左右が反転）
@@ -1124,6 +1245,11 @@ for (const lang of LANGS) {
     fs.mkdirSync(path.join(edir, e.id), { recursive: true });
     fs.writeFileSync(path.join(edir, e.id, 'index.html'), essayPage(e, lang));
   }
+  for (const g of GUIDES) {
+    const gdir2 = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'guides', g.id);
+    fs.mkdirSync(gdir2, { recursive: true });
+    fs.writeFileSync(path.join(gdir2, 'index.html'), guidePage(g, lang));
+  }
   const osdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'open-source');
   fs.mkdirSync(osdir, { recursive: true });
   fs.writeFileSync(path.join(osdir, 'index.html'), ossPage(lang));
@@ -1216,6 +1342,8 @@ const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, 
 function newsLink(n, lang) {
   const en = n.en || '';
   if (/badge/i.test(en)) return badgeAbs(lang);
+  const guide = GUIDES.find(g => /guide/i.test(en) && en.includes(g.en.short));
+  if (guide) return guideAbs(lang, guide);
   if (/open-source/i.test(en)) return ossAbs(lang);
   if (/essay/i.test(en)) return essayAbs(lang, ESSAYS.find(e => en.includes(e.title.en)) || ESSAYS[ESSAYS.length - 1]);
   if (/timeline/i.test(en)) return tlAbs(lang);
@@ -1271,7 +1399,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
@@ -1449,6 +1577,7 @@ ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LA
 - [${md(T.en.ossTitle)}](${ossAbs(DEFAULT_LANG)}): ${md(T.en.ossDesc)}
 - [${md(T.en.badgeH1)}](${badgeAbs(DEFAULT_LANG)}): ${md(T.en.badgeDesc)} Image: ${badgeImg('listed.svg')}. Each entry in services.json and open-source.json has a \`badge\` object with the Markdown snippet and target URL.
 ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}): ${md(e.desc.en)}`).join('\n')}
+${GUIDES.map(g => `- [${mdLink(g.en.title)}](${guideAbs(DEFAULT_LANG, g)}): ${md(g.en.desc)} Last updated ${g.updated}.`).join('\n')}
 
 ## Open-source projects
 

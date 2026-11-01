@@ -111,6 +111,10 @@
    {
     "file": "dela-gothic-one-400-de-2446c51523.woff2",
     "chars": "ß"
+   },
+   {
+    "file": "dela-gothic-one-400-de-009f1def4c.woff2",
+    "chars": "–"
    }
   ],
   "de:dot": [
@@ -327,6 +331,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-bbba681692.woff2",
     "chars": "Öゾ乳児削勢区図均好害幼徒抜整族検母犯統罪衡被親訂跡郡除雇"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-9f4db40bb9.woff2",
+    "chars": "程"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-d9c8d42603.woff2",
+    "chars": "思抗抵駄"
    }
   ],
   "ja:body:700": [
@@ -365,6 +377,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-7f1c88f3b7.woff2",
     "chars": "Öゾ乳児削勢区図均好害幼徒抜整族検母犯統罪衡被親訂跡郡除雇"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-5c49b4ab22.woff2",
+    "chars": "程"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-678cc678a2.woff2",
+    "chars": "思抗抵駄"
    }
   ],
   "ja:display": [
@@ -387,6 +407,10 @@
    {
     "file": "dela-gothic-one-400-ja-52cfb674fa.woff2",
     "chars": "ダ主何名変権簿配飯"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-ba729fe934.woff2",
+    "chars": "併全合完式早注点程良見"
    }
   ],
   "ja:dot": [
@@ -451,6 +475,10 @@
    {
     "file": "noto-sans-sc-400-zh-c08a1d5198.woff2",
     "chars": "Ö乌偏净勘卢县哈婴害幸志戈扬料旺材母犯纽罪般良衡误赞踪遍锡"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-e7eaa0aa49.woff2",
+    "chars": "优急浪涵花"
    }
   ],
   "zh:body:700": [
@@ -485,6 +513,10 @@
    {
     "file": "noto-sans-sc-700-zh-1d9c9ac746.woff2",
     "chars": "Ö乌偏净勘卢县哈婴害幸志戈扬料旺材母犯纽罪般良衡误赞踪遍锡"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-3eb678ba71.woff2",
+    "chars": "优急浪涵花"
    }
   ],
   "zh:display": [
@@ -507,6 +539,10 @@
    {
     "file": "noto-sans-sc-900-zh-6bb65f10f0.woff2",
     "chars": "些再午变奇尔就带罗附餐"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-550ab8de48.woff2",
+    "chars": "主优南合并想意指更果记适险风"
    }
   ],
   "zh:dot": [

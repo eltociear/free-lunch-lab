@@ -76,6 +76,7 @@
 - [Essay: Use it, own it: from Rochdale to airdrops to KABU&](https://neteru-nyukin.eltociear.workers.dev/essays/use-to-own/): KABU& pays you in shares for paying your power and phone bills. The idea that using something earns you ownership goes back to the Rochdale co-op dividend of 1844 and Uniswap’s 2020 airdrop. What the KABU& class shares actually carry, why listing matters, and what would make it a free lunch.
 - [Essay: Universal high income: who pays?](https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/): Elon Musk says AI will bring a “universal high income”. Who pays, and through what pipe? Altman’s American Equity Fund, the Windfall Clause, Alaska’s dividend, and how World, GoodDollar, Circles and Ğ1 answer it.
 - [Essay: Should AI agents get a basic income?](https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/): If AI takes the work, should agents get the dividend? Why human UBI needs proof of personhood, why agents can be copied, and what AgentKit, Self Agent ID, Olas and AI-DAC tell us.
+- [KABU& complete guide: how to get the shares, what they can do, the consolidation and the listing timeline](https://neteru-nyukin.eltociear.workers.dev/guides/kabuand/): KABU& gives you share vouchers for paying your power, gas and phone bills. Why you need a Daiwa Connect Securities account, the 10-to-1 share consolidation on 22 December 2026, what the shares can and cannot do, and the 2028 buyback capped at 1.2×, from official documents only. Last updated 2026-11-01.
 
 ## Open-source projects
 

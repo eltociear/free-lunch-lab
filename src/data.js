@@ -2594,6 +2594,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-01",
+      "ja": "「カブアンド完全ガイド」を公開（株のもらい方、株の権利、株式併合、主な日程、よくある質問）",
+      "en": "Published the KABU& complete guide (how to get the shares, what they can do, the consolidation, key dates and FAQ)",
+      "zh": "发布《KABU& 完全指南》（如何获得股票、股票权利、股票合并、重要日期和常见问题）",
+      "hi": "KABU& की पूरी गाइड प्रकाशित (शेयर कैसे मिलते हैं, उनके अधिकार, शेयरों का विलय, अहम तारीख़ें और सवाल-जवाब)",
+      "es": "Publicada la guía completa de KABU& (cómo conseguir las acciones, qué derechos tienen, la agrupación, fechas clave y preguntas frecuentes)",
+      "de": "Kompletten Guide zu KABU& veröffentlicht (wie du die Aktien bekommst, ihre Rechte, die Zusammenlegung, wichtige Termine und FAQ)",
+      "ar": "نشرنا الدليل الكامل لـ⁦KABU&⁩ (كيف تحصل على الأسهم، وحقوقها، ودمج الأسهم، والمواعيد المهمة، والأسئلة الشائعة)"
+    },
+    {
+      "date": "2026-11-01",
       "ja": "オープンソースの一覧に9件のプロジェクトを追加し、ベーシックインカム実験の公開データ（19件）の欄を新設",
       "en": "Added 9 projects to the open-source list and a new section of open data from basic income experiments (19 datasets)",
       "zh": "开源列表新增 9 个项目，并新设基本收入实验公开数据栏目（19 个数据集）",
@@ -3370,7 +3380,9 @@ module.exports = {
       "goWarn": "注意点を読んでから登録",
       "navFaqS": "Q&A",
       "moreInfo": "くわしく",
-      "toPage": "このサービスのページを見る"
+      "toPage": "このサービスのページを見る",
+      "guideEb": "完全ガイド",
+      "guideRead": "完全ガイドを読む"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3606,7 +3618,9 @@ module.exports = {
       "goWarn": "Read the warnings before signing up",
       "navFaqS": "FAQ",
       "moreInfo": "Details",
-      "toPage": "Open the full page"
+      "toPage": "Open the full page",
+      "guideEb": "Complete guide",
+      "guideRead": "Read the complete guide"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -3842,7 +3856,9 @@ module.exports = {
       "goWarn": "साइन अप से पहले चेतावनी पढ़ें",
       "navFaqS": "सवाल",
       "moreInfo": "विवरण",
-      "toPage": "पूरा पेज देखें"
+      "toPage": "पूरा पेज देखें",
+      "guideEb": "पूरी गाइड",
+      "guideRead": "पूरी गाइड पढ़ें"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4078,7 +4094,9 @@ module.exports = {
       "goWarn": "先看注意事项再注册",
       "navFaqS": "问答",
       "moreInfo": "详情",
-      "toPage": "查看完整页面"
+      "toPage": "查看完整页面",
+      "guideEb": "完全指南",
+      "guideRead": "阅读完全指南"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4314,7 +4332,9 @@ module.exports = {
       "goWarn": "Lee las advertencias antes de registrarte",
       "navFaqS": "FAQ",
       "moreInfo": "Detalles",
-      "toPage": "Ver la página completa"
+      "toPage": "Ver la página completa",
+      "guideEb": "Guía completa",
+      "guideRead": "Leer la guía completa"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4550,7 +4570,9 @@ module.exports = {
       "goWarn": "اقرأ التحذيرات قبل التسجيل",
       "navFaqS": "أسئلة",
       "moreInfo": "التفاصيل",
-      "toPage": "عرض الصفحة كاملة"
+      "toPage": "عرض الصفحة كاملة",
+      "guideEb": "الدليل الكامل",
+      "guideRead": "اقرأ الدليل الكامل"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4786,7 +4808,9 @@ module.exports = {
       "goWarn": "Erst die Warnhinweise lesen",
       "navFaqS": "FAQ",
       "moreInfo": "Details",
-      "toPage": "Ganze Seite ansehen"
+      "toPage": "Ganze Seite ansehen",
+      "guideEb": "Kompletter Guide",
+      "guideRead": "Den kompletten Guide lesen"
     }
   },
   "ORG_REGIONS": {
@@ -9644,6 +9668,1344 @@ module.exports = {
           "url": "https://github.com/eltociear/awesome-molt-ecosystem"
         }
       ]
+    }
+  ],
+  "GUIDES": [
+    {
+      "id": "kabuand",
+      "svc": "kabuand",
+      "essay": "use-to-own",
+      "published": "2026-11-01",
+      "updated": "2026-11-01",
+      "log": [
+        {
+          "date": "2026-11-01",
+          "ja": "公開。第4期募集、2026年12月22日の株式併合、上場の見通し、2028年の買取りまでを反映",
+          "en": "Published, covering the 4th offering, the 22 December 2026 share consolidation, the listing outlook and the 2028 buyback",
+          "zh": "发布，涵盖第 4 期募集、2026 年 12 月 22 日的股票合并、上市展望和 2028 年的回购",
+          "hi": "प्रकाशित; इसमें चौथी ऑफ़रिंग, 22 दिसंबर 2026 का शेयर विलय, लिस्टिंग की संभावना और 2028 का बायबैक शामिल हैं",
+          "es": "Publicación, con la cuarta oferta, la agrupación de acciones del 22 de diciembre de 2026, las perspectivas de salida a bolsa y la recompra de 2028",
+          "de": "Veröffentlicht, mit dem vierten Angebot, der Aktienzusammenlegung am 22. Dezember 2026, den Aussichten auf einen Börsengang und dem Rückkauf 2028",
+          "ar": "النشر الأول، ويشمل الطرح الرابع، ودمج الأسهم في 22 ديسمبر 2026، وتوقعات الإدراج، وإعادة الشراء في 2028"
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "label": "KABU& official site: share voucher rates, issue price, “listing is not guaranteed” (in Japanese)",
+          "url": "https://kabuand.com/"
+        },
+        {
+          "n": 2,
+          "label": "Kabu & Peace — Prospectus for the 4th offering of KABU& class shares (Oct 2026, in Japanese)",
+          "url": "https://kabuand.com/documents/prospectus4.pdf"
+        },
+        {
+          "n": 3,
+          "label": "Kabu & Peace — KABU& shareholder terms: transfer, compulsory acquisition, 2028 buyback (in Japanese)",
+          "url": "https://kabuand.com/documents/shareholder-terms.pdf"
+        },
+        {
+          "n": 4,
+          "label": "Yusaku Maezawa — An important request ahead of the listing (KABU&, 29 Oct 2026, in Japanese)",
+          "url": "https://kabuand.com/mz/articles/astvmrb0c68r7xzz06gqrdz0m4"
+        }
+      ],
+      "en": {
+        "title": "KABU& complete guide: how to get the shares, what they can do, the consolidation and the listing timeline",
+        "short": "KABU& complete guide",
+        "desc": "KABU& gives you share vouchers for paying your power, gas and phone bills. Why you need a Daiwa Connect Securities account, the 10-to-1 share consolidation on 22 December 2026, what the shares can and cannot do, and the 2028 buyback capped at 1.2×, from official documents only.",
+        "h": {
+          "summary": "Summary",
+          "glance": "At a glance",
+          "suits": "Good fit if you",
+          "notSuits": "Not a good fit if you",
+          "toc": "Contents",
+          "how": "How you get the shares",
+          "rights": "What the shares can and cannot do",
+          "can": "Can",
+          "cannot": "Cannot",
+          "timeline": "Key dates",
+          "faq": "FAQ",
+          "pros": "The good parts",
+          "risks": "Risks and cautions",
+          "cta": "If you want to start",
+          "log": "Update log",
+          "updated": "Last updated"
+        },
+        "lead": [
+          "KABU& is a service from Kabu & Peace Inc., led by Yusaku Maezawa. Paying for KABU& electricity, gas, mobile and other services, or spending with the KABU& Card, earns “share vouchers”, which you can exchange during an offering period for newly issued, unlisted “KABU& class shares” in the company.[1][2]",
+          "In short, it pays the rebate on bills you would pay anyway in unlisted shares instead of cash or points. Right now the shares cannot be sold, carry no vote and have never paid a dividend. Whether they turn into real value depends on a listing, or on the 2028 buyback if there is no listing."
+        ],
+        "glance": [
+          [
+            "Operator",
+            "Kabu & Peace Inc. (CEO: Yusaku Maezawa)"
+          ],
+          [
+            "What you get",
+            "Share vouchers (each counts as ¥1), exchangeable for unlisted shares during offering periods [1][2]"
+          ],
+          [
+            "Rate (regular members)",
+            "1% of the bill for electricity and gas, 5% for mobile; more for paying members [1]"
+          ],
+          [
+            "4th offering",
+            "¥8 a share; applications from 6 to 26 November 2026 [2]"
+          ],
+          [
+            "Needed for shares",
+            "An application during the offering, eKYC and a Daiwa Connect Securities account [2]"
+          ],
+          [
+            "Who can join",
+            "Adults living in Japan (foreign nationals must meet residence status conditions)"
+          ],
+          [
+            "Cash out",
+            "Not possible for now (unlisted)"
+          ]
+        ],
+        "suits": [
+          "already pay for power, gas or a phone and KABU&’s prices are no higher than what you pay now",
+          "can wait several years without using the rebate",
+          "are fine with identity checks and opening a brokerage account",
+          "find it interesting to be a shareholder in an unlisted company"
+        ],
+        "notSuits": [
+          "want a sure rebate now, in cash or points",
+          "want to be able to sell your shares at any time",
+          "do not live in Japan (only adults living in Japan can join)",
+          "would switch to a more expensive plan just to collect vouchers"
+        ],
+        "steps": [
+          "Register as a member. Only adults living in Japan can join; foreign nationals must meet residence status conditions",
+          "Sign up for KABU& electricity, gas, mobile or other services and pay for them (spending with the KABU& Card also counts). Regular members get vouchers worth 1% of the bill for electricity and gas and 5% for mobile; paying members get more [1]",
+          "Apply during an offering period. The 4th offering is priced at ¥8 a share and takes applications from 6 to 26 November 2026 [2]",
+          "Pass eKYC, open a Daiwa Connect Securities account and link it to KABU& by 6 December. Without the link, no shares are allotted [2]",
+          "Receive your allotment. In the 4th offering the number of shares is rounded down to a multiple of 10, and unused vouchers (up to 79) are returned [2]"
+        ],
+        "howAfter": [
+          "Example: a ¥10,000 monthly power bill at 1% earns 100 vouchers a month, or 1,200 a year. At ¥8 a share that is 150 shares, worth ¥1,200 at the issue price. After the consolidation on 22 December 2026 the same holding is 15 shares.",
+          "Vouchers can also be turned into ¥1 discount vouchers for the group’s services, but discount vouchers cannot be turned back into share vouchers.[2]",
+          "Referrals give vouchers to both sides. The official notes say rewards do not apply if referral codes are spread on social media."
+        ],
+        "can": [
+          "Receive dividends: if the company pays a dividend on common shares, these get the same amount per share at the same rank (but it has never paid one since it was founded, and whether or when it will is undecided) [2]",
+          "Become common shares at a listing: if the board approves a listing application, the company can convert them one-for-one into common shares with voting rights (the class shares themselves are not listed) [2]",
+          "Be bought back if there is no listing: if the company is not listed by 31 December 2028, holders who got shares in the 3rd or 4th offering can ask the company to buy them at an appraised value, capped at 1.2 times the amount paid [3]"
+        ],
+        "cannot": [
+          "Vote at shareholder meetings (no voting rights) [2]",
+          "Receive leftover assets if the company is wound up (none are distributed) [2]",
+          "Sell or transfer freely (they are unlisted with no market, and a transfer needs board approval) [2]",
+          "Be bought with money (the shares can only be obtained with vouchers)"
+        ],
+        "rightsNote": [
+          "The company also has a right to buy them: if you are expelled as a member, or do not answer its notices for six months or more, it can acquire your shares for the amount paid in.[2]"
+        ],
+        "timeline": [
+          [
+            "2025",
+            "2025",
+            "1st and 2nd offerings. Afterwards the company had 823,947 shareholders [2]"
+          ],
+          [
+            "2026-10-29",
+            "29 Oct 2026",
+            "Maezawa writes that listing preparations aim at spring 2027 at the earliest, without guaranteeing a listing or its timing [4]"
+          ],
+          [
+            "2026-11-06",
+            "6–26 Nov 2026",
+            "Application period of the 4th offering (¥8 a share) [2]"
+          ],
+          [
+            "2026-12-06",
+            "6 Dec 2026",
+            "Deadline to link a Daiwa Connect Securities account to KABU& for the 4th offering’s allotment [2]"
+          ],
+          [
+            "2026-12-22",
+            "22 Dec 2026",
+            "Every 10 shares become 1. The share count drops to one-tenth; the company says the consolidation itself does not change the value of a holding [2][4]"
+          ],
+          [
+            "2027",
+            "Spring 2027",
+            "Earliest target for a listing (not guaranteed) [4]"
+          ],
+          [
+            "2028-12-31",
+            "31 Dec 2028",
+            "If not listed by this date, holders from the 3rd and 4th offerings can ask for a buyback at appraised value, capped at 1.2 times the amount paid [3]"
+          ]
+        ],
+        "faq": [
+          [
+            "What is the KABU& share consolidation? Do I lose shares?",
+            "On 22 December 2026 every 10 shares are combined into 1. The share count drops to one-tenth, but the company says the consolidation itself does not change the value of a holding: 150 shares become 15. To prepare, the 4th offering rounds allotments down to multiples of 10 and returns unused vouchers (up to 79).[2][4]"
+          ],
+          [
+            "Do I need a Daiwa Connect Securities account?",
+            "Yes, to receive shares. You must pass eKYC, open a Daiwa Connect Securities account and link it to KABU&. For the 4th offering the deadline is 6 December, and without the link no shares are allotted. The account is needed for the exchange; collecting vouchers starts with membership and paying for services.[2]"
+          ],
+          [
+            "What happens if KABU& never lists?",
+            "If the company is not listed by 31 December 2028, holders who got shares in the 3rd or 4th offering can ask the company to buy them back at a value set by an appraiser, capped at 1.2 times the amount paid. It is an appraised price, not a guaranteed one.[3]"
+          ],
+          [
+            "Do KABU& shares pay dividends?",
+            "On paper, if the company pays a dividend on common shares, these get the same amount per share. But it has never paid a dividend since it was founded, and says whether or when it will is undecided.[2]"
+          ],
+          [
+            "When will KABU& list?",
+            "On 29 October 2026 Maezawa wrote that preparations aim at spring 2027 at the earliest, while saying this does not guarantee a listing or its timing. Even after a listing, there is no guarantee the market price will beat the issue price. The class shares themselves are not listed; at a listing the company converts them one-for-one into common shares.[1][2][4]"
+          ],
+          [
+            "Can I sell the shares or cash them out?",
+            "Not now. They are unlisted with no market, and a transfer needs board approval. The ways to cash out are selling common shares after a listing, or the 2028 buyback if there is none.[2][3]"
+          ],
+          [
+            "Can I buy KABU& shares with money?",
+            "No. The shares can only be obtained with vouchers. Anyone offering to sell you KABU& shares by phone, social media or email is very likely a scammer."
+          ],
+          [
+            "Are vouchers wasted if I do not exchange them?",
+            "You can turn them into ¥1 discount vouchers for the group’s services instead. Discount vouchers cannot be turned back, so decide first whether you want shares or a discount.[2]"
+          ]
+        ],
+        "pros": [
+          "You earn it on bills you would pay anyway; if the price is the same or lower than now, it costs nothing extra",
+          "These are real shares, issued under a securities registration statement filed with the Kanto Local Finance Bureau, unlike tokens with no legal claim [2]",
+          "There is an exit if there is no listing (the 2028 buyback, capped at 1.2 times the amount paid) [3]",
+          "Vouchers you do not exchange still work as ¥1 discounts [2]",
+          "Referrals give vouchers to both sides"
+        ],
+        "risks": [
+          "No cash out for now: the shares are unlisted and cannot be sold or cashed",
+          "No guaranteed listing: there is a target, but neither the listing nor its timing is guaranteed [1][4]",
+          "No guaranteed gain even after a listing: the market price may not beat the issue price [2]",
+          "Weak rights: no vote, no share of leftover assets, and no dividend so far [2]",
+          "The 2028 buyback is at an appraised value, not a guaranteed price, and is capped at 1.2 times the amount paid [3]",
+          "Vouchers basically come only from paying bills. If KABU&’s prices are higher than yours, you are buying shares through your power bill",
+          "Unlike a cash or points rebate, the value stays inside the company; what you hold is a promise",
+          "Deadlines matter: miss the Daiwa Connect account link and no shares are allotted [2]",
+          "Offers to sell you shares by phone, social media or email are very likely fraud"
+        ],
+        "ctaText": "First check on the official site that KABU&’s prices are no higher than what you pay now, then decide whether to sign up."
+      },
+      "ja": {
+        "title": "カブアンド（KABU&）完全ガイド：株のもらい方・株の権利・株式併合・上場までの日程",
+        "short": "カブアンド完全ガイド",
+        "desc": "カブアンドは電気・ガス・スマホ代の支払いで株引換券がもらえるサービス。大和コネクト証券の口座が必要なこと、2026年12月22日の10株→1株の併合、議決権・残余財産・配当のない株の権利、上場しなかった場合の買取り（上限1.2倍）まで、公式資料だけで整理しました。",
+        "h": {
+          "summary": "まとめ",
+          "glance": "早見表",
+          "suits": "向いている人",
+          "notSuits": "向いていない人",
+          "toc": "目次",
+          "how": "株のもらい方",
+          "rights": "株でできること・できないこと",
+          "can": "できること",
+          "cannot": "できないこと",
+          "timeline": "主な日程",
+          "faq": "よくある質問",
+          "pros": "良いところ",
+          "risks": "リスクと注意点",
+          "cta": "始めるなら",
+          "log": "更新履歴",
+          "updated": "最終更新日"
+        },
+        "lead": [
+          "KABU&（カブアンド）は、前澤友作氏が社長を務める株式会社カブ＆ピースのサービスです。KABU&でんき・ガス・モバイルなどの料金やKABU&カードの利用額に応じて「株引換券」がもらえ、募集期間に申し込むと、同社が新しく発行する未上場の「カブアンド種類株式」と交換できます。[1][2]",
+          "ひとことで言えば、どうせ払う公共料金の還元を、現金やポイントではなく未上場の株で受け取るしくみです。今の株は売れず、議決権もなく、配当もまだ出たことがありません。価値が形になるかどうかは、上場するか、上場しなかった場合の2028年の買取りにかかっています。"
+        ],
+        "glance": [
+          [
+            "運営",
+            "株式会社カブ＆ピース（社長：前澤友作氏）"
+          ],
+          [
+            "もらえるもの",
+            "株引換券（1枚1円の扱い）。募集期間に未上場株と交換できる [1][2]"
+          ],
+          [
+            "還元率（通常会員）",
+            "電気・ガスは料金の1%、モバイルは5%。有料会員はもっと多い [1]"
+          ],
+          [
+            "第4期募集",
+            "1株8円。申込期間は2026年11月6日〜26日 [2]"
+          ],
+          [
+            "株に必要なもの",
+            "募集期間中の申込み、eKYC（本人確認）、大和コネクト証券の口座 [2]"
+          ],
+          [
+            "対象",
+            "日本在住の成人（外国籍の方は在留資格の条件あり）"
+          ],
+          [
+            "現金化",
+            "今はできない（未上場）"
+          ]
+        ],
+        "suits": [
+          "すでに電気・ガス・スマホ代を払っていて、カブアンドの料金が今の料金より高くない人",
+          "還元をすぐに使えなくても、何年か待てる人",
+          "本人確認と証券口座の開設に抵抗がない人",
+          "未上場の会社の株主になること自体をおもしろいと思える人"
+        ],
+        "notSuits": [
+          "現金やポイントで、確実な還元をすぐにほしい人",
+          "株をいつでも売れる状態にしておきたい人",
+          "日本に住んでいない人（対象は日本在住の成人）",
+          "今より高い料金に乗り換えてまで株引換券を集めようとしている人"
+        ],
+        "steps": [
+          "会員登録する。対象は日本在住の成人で、外国籍の方は在留資格の条件がある",
+          "KABU&でんき・ガス・モバイルなどを契約して料金を払う（KABU&カードの利用でもたまる）。通常会員なら電気・ガスは料金の1%、モバイルは5%の株引換券がもらえ、有料会員はもっと多い [1]",
+          "募集期間に申し込む。第4期は発行価格1株8円、申込期間は2026年11月6日〜26日 [2]",
+          "eKYC（本人確認）を済ませ、大和コネクト証券で口座を開いて、12月6日までにカブアンドと連携する。連携しないと株は割り当てられない [2]",
+          "株の割り当てを受ける。第4期では株数を10株単位に切り下げ、使われなかった株引換券（最大79枚）は返される [2]"
+        ],
+        "howAfter": [
+          "計算例：月1万円の電気代なら、1%で毎月100枚、年1,200枚の株引換券になります。1株8円なら150株で、発行価格で1,200円分です。2026年12月22日の併合のあとは、同じ持ち分が15株になります。",
+          "株引換券は、グループのサービスで使える1枚1円の割引券に替えることもできます。ただし、割引券から株引換券には戻せません。[2]",
+          "紹介した人・された人の両方に株引換券が付きます。公式は、紹介コードをSNSで拡散した場合を特典の対象外としています。"
+        ],
+        "can": [
+          "配当を受け取る：会社が普通株式に配当を出すときは、1株あたり普通株式と同じ額を同じ順位で受け取れる（ただし創業以来配当は出ておらず、するかどうか・いつするかは未定）[2]",
+          "上場のときに普通株式になる：取締役会が上場申請を承認すれば、会社はこの株を1対1で議決権のある普通株式に替えられる（種類株式そのものは上場しない）[2]",
+          "上場しなかったときに買い取ってもらう：2028年12月31日までに上場しなければ、第3期・第4期で株を得た人は、希望すれば評価額で会社に買い取ってもらえる（上限は払込金額の1.2倍）[3]"
+        ],
+        "cannot": [
+          "株主総会で投票する（議決権がない）[2]",
+          "会社を清算したときに残余財産を受け取る（分配されない）[2]",
+          "自由に売る・譲る（未上場で市場がなく、譲渡には取締役会の承認が要る）[2]",
+          "お金を払って株を買う（株は株引換券でしか取得できない）"
+        ],
+        "rightsNote": [
+          "会社の側にも買い取る権利があります。会員から強制退会になったときや、会社からの通知に6か月以上返事がないときは、会社は払込金額と同じ額で株を取得できます。[2]"
+        ],
+        "timeline": [
+          [
+            "2025",
+            "2025年",
+            "第1期・第2期募集。終了後の株主は82万3,947人 [2]"
+          ],
+          [
+            "2026-10-29",
+            "2026年10月29日",
+            "前澤氏が、2027年春ごろを最短の目安として上場の準備を進めていると表明。上場の実現や時期の保証ではない [4]"
+          ],
+          [
+            "2026-11-06",
+            "2026年11月6日〜26日",
+            "第4期募集の申込期間（発行価格1株8円）[2]"
+          ],
+          [
+            "2026-12-06",
+            "2026年12月6日",
+            "第4期の割り当てに必要な、大和コネクト証券の口座とカブアンドの連携の期限 [2]"
+          ],
+          [
+            "2026-12-22",
+            "2026年12月22日",
+            "10株を1株に併合。株数は10分の1になるが、会社は併合そのもので持ち分の価値は変わらないと説明 [2][4]"
+          ],
+          [
+            "2027",
+            "2027年春ごろ",
+            "上場の最短の目安（保証なし）[4]"
+          ],
+          [
+            "2028-12-31",
+            "2028年12月31日",
+            "この日までに上場しなければ、第3期・第4期の株主は評価額での買取りを希望できる（上限は払込金額の1.2倍）[3]"
+          ]
+        ],
+        "faq": [
+          [
+            "カブアンドの株式併合とは？株は減るの？",
+            "2026年12月22日に、10株が1株にまとめられます。株数は10分の1になりますが、会社は併合そのもので持ち分の価値は変わらないと説明しています。たとえば150株なら15株になります。これに備えて第4期では、割り当てる株数を10株単位に切り下げ、使われなかった株引換券（最大79枚）を返します。[2][4]"
+          ],
+          [
+            "大和コネクト証券の口座は必要？",
+            "株を受け取るなら必要です。本人確認（eKYC）のうえ大和コネクト証券で口座を開き、カブアンドと連携しなければなりません。第4期の連携の期限は12月6日で、連携しないと株は割り当てられません。口座が要るのは株に交換するときで、株引換券をためるのは会員登録とサービスの利用から始まります。[2]"
+          ],
+          [
+            "カブアンドが上場しなかったらどうなる？",
+            "2028年12月31日までに上場しなかった場合、第3期・第4期で株を得た人のうち希望者は、評価機関が出す評価額で会社に買い取ってもらえます。上限は払込金額の1.2倍です。保証された値段ではなく、評価額での買取りです。[3]"
+          ],
+          [
+            "カブアンドの株に配当はある？",
+            "権利としては、会社が普通株式に配当を出すときに、1株あたり普通株式と同じ額を受け取れます。ただし会社は創業以来配当を出したことがなく、配当をするかどうか、いつするかは未定としています。[2]"
+          ],
+          [
+            "カブアンドはいつ上場する？",
+            "前澤氏は2026年10月29日、2027年春ごろを最短の目安として上場の準備を進めていると書きましたが、上場の実現や時期を保証するものではないとしています。上場しても、市場価格が発行価格を上回る保証はありません。種類株式そのものは上場せず、上場のときは会社が1対1で普通株式に替えるしくみです。[1][2][4]"
+          ],
+          [
+            "カブアンドの株は売れる？現金にできる？",
+            "今はできません。株は未上場で市場がなく、譲渡には取締役会の承認が要ります。現金にする道は、上場したあとに普通株式として売るか、上場しなかった場合の2028年の買取りです。[2][3]"
+          ],
+          [
+            "お金を払ってカブアンドの株を買える？",
+            "買えません。株は株引換券でしか取得できません。電話・SNS・メールで「カブアンドの株が買える」と勧誘してくるものは、詐欺の可能性が高いと考えてください。"
+          ],
+          [
+            "株引換券は株にしないと無駄になる？",
+            "1枚1円の割引券に替えて、グループのサービスで使うこともできます。ただし割引券から株引換券には戻せないので、株にするか値引きにするかは先に決めておきましょう。[2]"
+          ]
+        ],
+        "pros": [
+          "どうせ払う料金の上乗せとしてもらえる。料金が今と同じか安ければ、追加の出費はない",
+          "本物の株である。関東財務局に提出された有価証券届出書にもとづいて発行され、法的な請求権のないトークンとは違う [2]",
+          "上場しなかったときの出口がある（2028年の買取り。上限は払込金額の1.2倍）[3]",
+          "株にしない分は、1枚1円の割引券として使える [2]",
+          "紹介した人・された人の両方に株引換券が付く"
+        ],
+        "risks": [
+          "今は換金できない。株は未上場で、売ることも現金にすることもできない",
+          "上場の保証がない。目安は示されているが、実現も時期も保証されていない [1][4]",
+          "上場しても値上がりの保証はない。市場価格が発行価格を上回る保証はない [2]",
+          "株の権利が弱い。議決権も残余財産の分配もなく、これまで配当も出ていない [2]",
+          "2028年の買取りは評価額で、保証された値段ではない。上限は払込金額の1.2倍 [3]",
+          "株引換券は基本的に料金を払わないともらえない。カブアンドの料金が今より高ければ、電気代を通して株を買っているのと同じになる",
+          "現金やポイントの還元と違い、価値は会社の中にとどまる。手元にあるのは、将来の約束",
+          "手続きの期限がある。大和コネクト証券の口座の連携に遅れると、株は割り当てられない [2]",
+          "「株が買える」という電話・SNS・メールでの勧誘は詐欺の可能性が高い"
+        ],
+        "ctaText": "まずはカブアンドの料金が今の料金より高くないかを公式サイトで確かめてから、申し込むかどうかを決めてください。"
+      },
+      "zh": {
+        "title": "KABU& 完全指南：如何获得股票、股票能做什么、股票合并与上市时间表",
+        "short": "KABU& 完全指南",
+        "desc": "KABU& 会因为你缴电费、燃气费和手机费而发给你股票兑换券。为什么需要大和 Connect 证券账户、2026 年 12 月 22 日的 10 股合 1 股、这些股票能做什么和不能做什么，以及 2028 年上限为 1.2 倍的回购，全部只依据官方文件。",
+        "h": {
+          "summary": "要点",
+          "glance": "一览",
+          "suits": "适合的人",
+          "notSuits": "不适合的人",
+          "toc": "目录",
+          "how": "如何获得股票",
+          "rights": "股票能做什么、不能做什么",
+          "can": "能做的",
+          "cannot": "不能做的",
+          "timeline": "主要日程",
+          "faq": "常见问题",
+          "pros": "优点",
+          "risks": "风险与注意事项",
+          "cta": "如果想开始",
+          "log": "更新记录",
+          "updated": "最后更新"
+        },
+        "lead": [
+          "KABU& 是由前泽友作担任社长的 Kabu & Peace 株式会社提供的服务。支付 KABU& 电力、燃气、手机等服务的费用，或使用 KABU& 卡消费，就能获得“股票兑换券”，在募集期内可以换成该公司新发行的未上市“KABU& 种类股票”。[1][2]",
+          "简单说，就是把你本来就要付的账单返利，用未上市股票而不是现金或积分来发放。目前这些股票不能出售、没有表决权，也从未分过红。它们能否变成真正的价值，取决于上市；如果不上市，则取决于 2028 年的回购。"
+        ],
+        "glance": [
+          [
+            "运营方",
+            "Kabu & Peace 株式会社（社长：前泽友作）"
+          ],
+          [
+            "获得什么",
+            "股票兑换券（每张按 1 日元计算），可在募集期内换成未上市股票 [1][2]"
+          ],
+          [
+            "返还比例（普通会员）",
+            "电费和燃气费为账单的 1%，手机费为 5%；付费会员更多 [1]"
+          ],
+          [
+            "第 4 期募集",
+            "每股 8 日元；申请期为 2026 年 11 月 6 日至 26 日 [2]"
+          ],
+          [
+            "换股所需",
+            "在募集期内申请、完成 eKYC（身份验证）、拥有大和 Connect 证券账户 [2]"
+          ],
+          [
+            "谁可以参加",
+            "居住在日本的成年人（外国籍人士须满足在留资格条件）"
+          ],
+          [
+            "变现",
+            "目前不可（未上市）"
+          ]
+        ],
+        "suits": [
+          "本来就在付电费、燃气费或手机费，而且 KABU& 的价格不比现在付的更贵",
+          "能等上几年，不急着用这笔返利",
+          "不介意做身份验证、开证券账户",
+          "觉得成为一家未上市公司的股东很有意思"
+        ],
+        "notSuits": [
+          "想要现在就拿到确定的现金或积分返利",
+          "希望股票随时都能卖掉",
+          "不住在日本（只有居住在日本的成年人才能参加）",
+          "会为了攒兑换券而换成更贵的套餐"
+        ],
+        "steps": [
+          "注册会员。只有居住在日本的成年人才能参加；外国籍人士须满足在留资格条件",
+          "签约 KABU& 的电力、燃气、手机等服务并付费（用 KABU& 卡消费也算）。普通会员的电费和燃气费可获得账单 1% 的兑换券，手机费为 5%；付费会员更多 [1]",
+          "在募集期内申请。第 4 期募集的发行价为每股 8 日元，申请期为 2026 年 11 月 6 日至 26 日 [2]",
+          "完成 eKYC，开设大和 Connect 证券账户，并在 12 月 6 日前与 KABU& 关联。未关联则不予配售 [2]",
+          "获得配售。第 4 期的配售股数向下取整到 10 股的倍数，未用的兑换券（最多 79 张）会退回 [2]"
+        ],
+        "howAfter": [
+          "举例：每月电费 1 万日元，按 1% 每月得到 100 张兑换券，一年 1,200 张。按每股 8 日元就是 150 股，按发行价值 1,200 日元。2026 年 12 月 22 日合并之后，同样的持股变为 15 股。",
+          "兑换券也可以换成集团服务里每张 1 日元的折扣券，但折扣券不能再换回股票兑换券。[2]",
+          "推荐人和被推荐人双方都能获得兑换券。官方说明写明，在社交媒体上扩散推荐码的，不在奖励范围内。"
+        ],
+        "can": [
+          "获得分红：公司向普通股派息时，这些股票按每股相同金额、相同顺位获得分红（但公司自创立以来从未分红，是否分红、何时分红尚未确定）[2]",
+          "上市时转为普通股：若董事会批准申请上市，公司可以按 1 比 1 将其转换为有表决权的普通股（种类股票本身不会上市）[2]",
+          "不上市时由公司回购：如果到 2028 年 12 月 31 日公司仍未上市，在第 3 期或第 4 期取得股票的人可以要求公司按评估价值回购，上限为缴款金额的 1.2 倍 [3]"
+        ],
+        "cannot": [
+          "在股东大会上投票（没有表决权）[2]",
+          "公司清算时分得剩余财产（不参与分配）[2]",
+          "自由出售或转让（未上市、没有交易市场，转让须经董事会批准）[2]",
+          "用钱购买（这些股票只能用兑换券获得）"
+        ],
+        "rightsNote": [
+          "公司也有回购权：如果你被除名，或六个月以上不回复公司的通知，公司可以按缴款金额取得你的股票。[2]"
+        ],
+        "timeline": [
+          [
+            "2025",
+            "2025 年",
+            "第 1、2 期募集。结束后公司股东达 823,947 人 [2]"
+          ],
+          [
+            "2026-10-29",
+            "2026 年 10 月 29 日",
+            "前泽友作表示，上市准备以最早 2027 年春为目标，但并不保证一定上市或上市时间 [4]"
+          ],
+          [
+            "2026-11-06",
+            "2026 年 11 月 6 日至 26 日",
+            "第 4 期募集申请期（每股 8 日元）[2]"
+          ],
+          [
+            "2026-12-06",
+            "2026 年 12 月 6 日",
+            "为获得第 4 期配售，将大和 Connect 证券账户与 KABU& 关联的截止日 [2]"
+          ],
+          [
+            "2026-12-22",
+            "2026 年 12 月 22 日",
+            "每 10 股合并为 1 股。股数变为十分之一；公司说明合并本身不改变持股价值 [2][4]"
+          ],
+          [
+            "2027",
+            "2027 年春",
+            "上市的最早目标（不保证）[4]"
+          ],
+          [
+            "2028-12-31",
+            "2028 年 12 月 31 日",
+            "如到此日仍未上市，第 3、4 期的股东可要求按评估价值回购，上限为缴款金额的 1.2 倍 [3]"
+          ]
+        ],
+        "faq": [
+          [
+            "KABU& 股票合并是什么？股票会变少吗？",
+            "2026 年 12 月 22 日起，每 10 股合并为 1 股。股数变为十分之一，但公司说明合并本身不改变持股价值：150 股变成 15 股。为此，第 4 期把配售股数向下取整到 10 股的倍数，并退回未用的兑换券（最多 79 张）。[2][4]"
+          ],
+          [
+            "必须开大和 Connect 证券账户吗？",
+            "要拿到股票就必须开。你需要完成 eKYC，开设大和 Connect 证券账户并与 KABU& 关联。第 4 期的截止日是 12 月 6 日，未关联则不予配售。账户是换股时才需要的；攒兑换券只需注册会员并付费使用服务。[2]"
+          ],
+          [
+            "KABU& 一直不上市怎么办？",
+            "如果到 2028 年 12 月 31 日公司仍未上市，在第 3 期或第 4 期取得股票的人可以要求公司按评估机构给出的估值回购，上限为缴款金额的 1.2 倍。这是评估价，不是保证价。[3]"
+          ],
+          [
+            "KABU& 的股票有分红吗？",
+            "按规定，公司向普通股派息时，这些股票每股可获得相同金额。但公司自创立以来从未分红，并表示是否分红、何时分红尚未确定。[2]"
+          ],
+          [
+            "KABU& 什么时候上市？",
+            "前泽友作在 2026 年 10 月 29 日写道，上市准备以最早 2027 年春为目标，同时注明这并不保证一定上市或上市时间。即使上市，也不保证市价高于发行价。种类股票本身不会上市；上市时公司会按 1 比 1 把它们转换为普通股。[1][2][4]"
+          ],
+          [
+            "KABU& 的股票能卖吗？能变现吗？",
+            "现在不能。它们未上市、没有交易市场，转让须经董事会批准。变现的途径是上市后卖出普通股，或者在不上市的情况下等 2028 年的回购。[2][3]"
+          ],
+          [
+            "能花钱买 KABU& 的股票吗？",
+            "不能。这些股票只能用兑换券获得。通过电话、社交媒体或邮件向你推销 KABU& 股票的，很可能是骗子。"
+          ],
+          [
+            "兑换券不换成股票会浪费吗？",
+            "可以改换成集团服务里每张 1 日元的折扣券。折扣券不能再换回来，所以先想好要股票还是要折扣。[2]"
+          ]
+        ],
+        "pros": [
+          "靠本来就要付的账单获得；只要价格与现在相同或更便宜，就不会多花钱",
+          "这些是依据向关东财务局提交的有价证券申报书发行的真正股票，不是没有任何法律权利的代币 [2]",
+          "不上市也有出口（2028 年的回购，上限为缴款金额的 1.2 倍）[3]",
+          "不换股的兑换券也能当 1 日元的折扣用 [2]",
+          "推荐人和被推荐人双方都能获得兑换券"
+        ],
+        "risks": [
+          "目前无法变现：股票未上市，不能出售或换成现金",
+          "不保证上市：虽有目标，但上市本身和上市时间都不保证 [1][4]",
+          "上市后也不保证赚钱：市价未必高于发行价 [2]",
+          "权利有限：没有表决权，不参与剩余财产分配，至今也没有分红 [2]",
+          "2028 年的回购按评估价值而非保证价格，且上限为缴款金额的 1.2 倍 [3]",
+          "兑换券基本上只有付账单才能获得。如果 KABU& 的价格比你现在的更贵，你就是在通过电费买股票",
+          "与现金或积分返利不同，价值留在公司里；你手里拿的是一个承诺",
+          "注意截止日：没在期限内关联大和 Connect 证券账户，就不予配售 [2]",
+          "通过电话、社交媒体或邮件推销股票的，很可能是诈骗"
+        ],
+        "ctaText": "先在官网确认 KABU& 的价格不比你现在付的更贵，再决定是否注册。"
+      },
+      "hi": {
+        "title": "KABU& पूरी गाइड: शेयर कैसे मिलते हैं, उनसे क्या कर सकते हैं, शेयरों का विलय और लिस्टिंग की टाइमलाइन",
+        "short": "KABU& पूरी गाइड",
+        "desc": "KABU& बिजली, गैस और फ़ोन के बिल चुकाने पर शेयर वाउचर देता है। Daiwa Connect Securities खाता क्यों ज़रूरी है, 22 दिसंबर 2026 को 10 शेयरों का 1 में विलय, शेयरों से क्या हो सकता है और क्या नहीं, और 2028 का बायबैक जिसकी सीमा 1.2 गुना है, सब कुछ सिर्फ़ आधिकारिक दस्तावेज़ों के आधार पर।",
+        "h": {
+          "summary": "सार",
+          "glance": "एक नज़र में",
+          "suits": "किसके लिए सही",
+          "notSuits": "किसके लिए सही नहीं",
+          "toc": "विषय सूची",
+          "how": "शेयर कैसे मिलते हैं",
+          "rights": "शेयरों से क्या हो सकता है और क्या नहीं",
+          "can": "क्या हो सकता है",
+          "cannot": "क्या नहीं हो सकता",
+          "timeline": "मुख्य तारीख़ें",
+          "faq": "अक्सर पूछे जाने वाले सवाल",
+          "pros": "अच्छी बातें",
+          "risks": "जोखिम और सावधानियाँ",
+          "cta": "शुरू करना चाहें तो",
+          "log": "अपडेट लॉग",
+          "updated": "आख़िरी अपडेट"
+        },
+        "lead": [
+          "KABU& कंपनी Kabu & Peace Inc. की सेवा है, जिसके प्रमुख Yusaku Maezawa हैं। KABU& की बिजली, गैस, मोबाइल जैसी सेवाओं के भुगतान या KABU& कार्ड से ख़र्च पर “शेयर वाउचर” मिलते हैं, जिन्हें ऑफ़रिंग अवधि में कंपनी के नए जारी, अनलिस्टेड “KABU& क्लास शेयरों” में बदला जा सकता है।[1][2]",
+          "सीधे शब्दों में, जो बिल आप वैसे भी चुकाते, उन पर रिबेट नकद या पॉइंट की जगह अनलिस्टेड शेयरों में मिलता है। अभी ये शेयर बेचे नहीं जा सकते, इनमें वोट का अधिकार नहीं है, और इन पर कभी डिविडेंड नहीं मिला। ये असली मूल्य में बदलेंगे या नहीं, यह लिस्टिंग पर निर्भर है, और लिस्टिंग न हो तो 2028 के बायबैक पर।"
+        ],
+        "glance": [
+          [
+            "संचालक",
+            "Kabu & Peace Inc. (CEO: Yusaku Maezawa)"
+          ],
+          [
+            "क्या मिलता है",
+            "शेयर वाउचर (हर वाउचर ¥1 का माना जाता है), जिन्हें ऑफ़रिंग अवधि में अनलिस्टेड शेयरों में बदला जा सकता है [1][2]"
+          ],
+          [
+            "दर (सामान्य सदस्य)",
+            "बिजली और गैस पर बिल का 1%, मोबाइल पर 5%; पेड सदस्यों को ज़्यादा [1]"
+          ],
+          [
+            "चौथी ऑफ़रिंग",
+            "¥8 प्रति शेयर; आवेदन 6 से 26 नवंबर 2026 तक [2]"
+          ],
+          [
+            "शेयर के लिए ज़रूरी",
+            "ऑफ़रिंग अवधि में आवेदन, eKYC और Daiwa Connect Securities खाता [2]"
+          ],
+          [
+            "कौन जुड़ सकता है",
+            "जापान में रहने वाले वयस्क (विदेशी नागरिकों के लिए निवास स्थिति की शर्तें)"
+          ],
+          [
+            "नकद में बदलना",
+            "अभी संभव नहीं (अनलिस्टेड)"
+          ]
+        ],
+        "suits": [
+          "आप पहले से बिजली, गैस या फ़ोन का बिल भरते हैं, और KABU& की क़ीमतें आपके मौजूदा बिल से ज़्यादा नहीं हैं",
+          "आप रिबेट इस्तेमाल किए बिना कई साल इंतज़ार कर सकते हैं",
+          "आपको पहचान की जाँच और ब्रोकरेज खाता खोलने से कोई दिक़्क़त नहीं",
+          "आपको किसी अनलिस्टेड कंपनी का शेयरधारक बनना दिलचस्प लगता है"
+        ],
+        "notSuits": [
+          "आपको अभी पक्का रिबेट चाहिए, नकद या पॉइंट में",
+          "आप चाहते हैं कि शेयर कभी भी बेच सकें",
+          "आप जापान में नहीं रहते (सिर्फ़ जापान में रहने वाले वयस्क जुड़ सकते हैं)",
+          "आप सिर्फ़ वाउचर जमा करने के लिए महँगे प्लान पर चले जाएँगे"
+        ],
+        "steps": [
+          "सदस्य के रूप में रजिस्टर करें। सिर्फ़ जापान में रहने वाले वयस्क जुड़ सकते हैं; विदेशी नागरिकों को निवास स्थिति की शर्तें पूरी करनी होती हैं",
+          "KABU& की बिजली, गैस, मोबाइल या दूसरी सेवाएँ लें और उनका भुगतान करें (KABU& कार्ड से ख़र्च भी गिना जाता है)। सामान्य सदस्यों को बिजली और गैस पर बिल के 1% और मोबाइल पर 5% के वाउचर मिलते हैं; पेड सदस्यों को ज़्यादा [1]",
+          "ऑफ़रिंग अवधि में आवेदन करें। चौथी ऑफ़रिंग की क़ीमत ¥8 प्रति शेयर है और आवेदन 6 से 26 नवंबर 2026 तक लिए जाते हैं [2]",
+          "eKYC पास करें, Daiwa Connect Securities में खाता खोलें और 6 दिसंबर तक उसे KABU& से लिंक करें। लिंक न होने पर कोई शेयर आवंटित नहीं होता [2]",
+          "आवंटन पाएँ। चौथी ऑफ़रिंग में शेयरों की संख्या नीचे की ओर 10 के गुणज तक घटाई जाती है, और बचे हुए वाउचर (79 तक) लौटा दिए जाते हैं [2]"
+        ],
+        "howAfter": [
+          "उदाहरण: ¥10,000 महीने के बिजली बिल पर 1% से हर महीने 100 वाउचर, यानी साल में 1,200 वाउचर मिलते हैं। ¥8 प्रति शेयर के हिसाब से ये 150 शेयर हुए, जिनकी इश्यू प्राइस पर क़ीमत ¥1,200 है। 22 दिसंबर 2026 के विलय के बाद वही होल्डिंग 15 शेयर रह जाती है।",
+          "वाउचरों को ग्रुप की सेवाओं के लिए ¥1 के डिस्काउंट वाउचर में भी बदला जा सकता है, पर डिस्काउंट वाउचर वापस शेयर वाउचर में नहीं बदले जा सकते।[2]",
+          "रेफ़रल पर दोनों तरफ़ वाउचर मिलते हैं। आधिकारिक नोट्स कहते हैं कि सोशल मीडिया पर रेफ़रल कोड फैलाने पर इनाम लागू नहीं होता।"
+        ],
+        "can": [
+          "डिविडेंड पाना: अगर कंपनी सामान्य शेयरों पर डिविडेंड दे, तो इन्हें प्रति शेयर उतना ही, उसी दर्जे पर मिलता है (पर कंपनी ने स्थापना से अब तक कोई डिविडेंड नहीं दिया, और देगी या नहीं और कब, यह तय नहीं है) [2]",
+          "लिस्टिंग पर सामान्य शेयर बनना: अगर बोर्ड लिस्टिंग के आवेदन को मंज़ूरी दे, तो कंपनी इन्हें एक के बदले एक वोट वाले सामान्य शेयरों में बदल सकती है (क्लास शेयर ख़ुद लिस्ट नहीं होते) [2]",
+          "लिस्टिंग न होने पर बायबैक: अगर 31 दिसंबर 2028 तक कंपनी लिस्ट नहीं होती, तो तीसरी या चौथी ऑफ़रिंग में शेयर पाने वाले कंपनी से उन्हें मूल्यांकित क़ीमत पर ख़रीदने को कह सकते हैं, अधिकतम चुकाई गई रक़म के 1.2 गुना तक [3]"
+        ],
+        "cannot": [
+          "शेयरधारकों की बैठक में वोट देना (वोट का अधिकार नहीं) [2]",
+          "कंपनी बंद होने पर बची संपत्ति में हिस्सा पाना (कुछ नहीं बाँटा जाता) [2]",
+          "आज़ादी से बेचना या ट्रांसफ़र करना (अनलिस्टेड हैं, कोई बाज़ार नहीं, और ट्रांसफ़र के लिए बोर्ड की मंज़ूरी चाहिए) [2]",
+          "पैसे से ख़रीदना (शेयर सिर्फ़ वाउचर से ही मिलते हैं)"
+        ],
+        "rightsNote": [
+          "कंपनी के पास भी ख़रीदने का अधिकार है: अगर आपको सदस्यता से निकाल दिया जाए, या आप छह महीने या उससे ज़्यादा समय तक उसकी सूचनाओं का जवाब न दें, तो वह आपके शेयर चुकाई गई रक़म पर ले सकती है।[2]"
+        ],
+        "timeline": [
+          [
+            "2025",
+            "2025",
+            "पहली और दूसरी ऑफ़रिंग। इसके बाद कंपनी के 8,23,947 शेयरधारक थे [2]"
+          ],
+          [
+            "2026-10-29",
+            "29 अक्टूबर 2026",
+            "Maezawa ने लिखा कि लिस्टिंग की तैयारी सबसे जल्दी 2027 के वसंत को लक्ष्य करके हो रही है, पर लिस्टिंग या उसके समय की कोई गारंटी नहीं [4]"
+          ],
+          [
+            "2026-11-06",
+            "6–26 नवंबर 2026",
+            "चौथी ऑफ़रिंग की आवेदन अवधि (¥8 प्रति शेयर) [2]"
+          ],
+          [
+            "2026-12-06",
+            "6 दिसंबर 2026",
+            "चौथी ऑफ़रिंग के आवंटन के लिए Daiwa Connect Securities खाते को KABU& से लिंक करने की आख़िरी तारीख़ [2]"
+          ],
+          [
+            "2026-12-22",
+            "22 दिसंबर 2026",
+            "हर 10 शेयर मिलकर 1 बनते हैं। शेयरों की संख्या दसवाँ हिस्सा रह जाती है; कंपनी कहती है कि विलय अपने-आप में होल्डिंग का मूल्य नहीं बदलता [2][4]"
+          ],
+          [
+            "2027",
+            "वसंत 2027",
+            "लिस्टिंग का सबसे जल्दी लक्ष्य (गारंटी नहीं) [4]"
+          ],
+          [
+            "2028-12-31",
+            "31 दिसंबर 2028",
+            "इस तारीख़ तक लिस्टिंग न हो, तो तीसरी और चौथी ऑफ़रिंग के शेयरधारक मूल्यांकित क़ीमत पर बायबैक माँग सकते हैं, अधिकतम चुकाई गई रक़म के 1.2 गुना तक [3]"
+          ]
+        ],
+        "faq": [
+          [
+            "KABU& शेयरों का विलय क्या है? क्या मेरे शेयर कम हो जाएँगे?",
+            "22 दिसंबर 2026 को हर 10 शेयर मिलाकर 1 कर दिए जाएँगे। शेयरों की संख्या दसवाँ हिस्सा रह जाएगी, पर कंपनी कहती है कि विलय अपने-आप में होल्डिंग का मूल्य नहीं बदलता: 150 शेयर 15 बन जाते हैं। इसकी तैयारी में चौथी ऑफ़रिंग आवंटन को नीचे की ओर 10 के गुणज तक घटाती है और बचे हुए वाउचर (79 तक) लौटा देती है।[2][4]"
+          ],
+          [
+            "क्या Daiwa Connect Securities खाता ज़रूरी है?",
+            "हाँ, शेयर पाने के लिए। आपको eKYC पास करना होगा, Daiwa Connect Securities में खाता खोलना होगा और उसे KABU& से लिंक करना होगा। चौथी ऑफ़रिंग के लिए आख़िरी तारीख़ 6 दिसंबर है, और लिंक न होने पर कोई शेयर आवंटित नहीं होता। खाता शेयरों में बदलने के लिए चाहिए; वाउचर जमा करना सदस्यता और सेवाओं के भुगतान से शुरू होता है।[2]"
+          ],
+          [
+            "अगर KABU& कभी लिस्ट न हो तो क्या होगा?",
+            "अगर 31 दिसंबर 2028 तक कंपनी लिस्ट नहीं होती, तो तीसरी या चौथी ऑफ़रिंग में शेयर पाने वाले कंपनी से उन्हें एक मूल्यांकक द्वारा तय क़ीमत पर वापस ख़रीदने को कह सकते हैं, अधिकतम चुकाई गई रक़म के 1.2 गुना तक। यह मूल्यांकित क़ीमत है, गारंटीशुदा नहीं।[3]"
+          ],
+          [
+            "क्या KABU& शेयरों पर डिविडेंड मिलता है?",
+            "काग़ज़ पर, अगर कंपनी सामान्य शेयरों पर डिविडेंड दे, तो इन्हें प्रति शेयर उतना ही मिलता है। पर कंपनी ने स्थापना से अब तक कोई डिविडेंड नहीं दिया, और कहती है कि देगी या नहीं और कब, यह तय नहीं है।[2]"
+          ],
+          [
+            "KABU& कब लिस्ट होगा?",
+            "29 अक्टूबर 2026 को Maezawa ने लिखा कि तैयारी सबसे जल्दी 2027 के वसंत को लक्ष्य करके हो रही है, और साथ में कहा कि इससे लिस्टिंग या उसके समय की कोई गारंटी नहीं है। लिस्टिंग के बाद भी बाज़ार भाव इश्यू प्राइस से ऊपर रहने की कोई गारंटी नहीं। क्लास शेयर ख़ुद लिस्ट नहीं होते; लिस्टिंग पर कंपनी इन्हें एक के बदले एक सामान्य शेयरों में बदलती है।[1][2][4]"
+          ],
+          [
+            "क्या KABU& शेयर बेचे या नकद में बदले जा सकते हैं?",
+            "अभी नहीं। ये अनलिस्टेड हैं, इनका कोई बाज़ार नहीं, और ट्रांसफ़र के लिए बोर्ड की मंज़ूरी चाहिए। नकद पाने के रास्ते हैं: लिस्टिंग के बाद सामान्य शेयर बेचना, या लिस्टिंग न हो तो 2028 का बायबैक।[2][3]"
+          ],
+          [
+            "क्या KABU& शेयर पैसे से ख़रीदे जा सकते हैं?",
+            "नहीं। शेयर सिर्फ़ वाउचर से ही मिलते हैं। फ़ोन, सोशल मीडिया या ईमेल से KABU& शेयर बेचने की पेशकश करने वाला बहुत संभवतः धोखेबाज़ है।"
+          ],
+          [
+            "अगर वाउचर शेयरों में न बदलें तो क्या वे बेकार हो जाते हैं?",
+            "आप उन्हें ग्रुप की सेवाओं के लिए ¥1 के डिस्काउंट वाउचर में बदल सकते हैं। डिस्काउंट वाउचर वापस नहीं बदले जा सकते, इसलिए पहले तय कर लें कि आपको शेयर चाहिए या छूट।[2]"
+          ]
+        ],
+        "pros": [
+          "यह उन बिलों पर मिलता है जो आप वैसे भी चुकाते; अगर क़ीमत अभी जितनी या उससे कम है, तो कोई अतिरिक्त ख़र्च नहीं",
+          "ये असली शेयर हैं, जो कांतो लोकल फ़ाइनेंस ब्यूरो में दाख़िल सिक्योरिटीज़ रजिस्ट्रेशन स्टेटमेंट के तहत जारी हुए हैं, कोई ऐसे टोकन नहीं जिन पर कोई क़ानूनी दावा न हो [2]",
+          "लिस्टिंग न होने पर भी निकलने का रास्ता है (2028 का बायबैक, अधिकतम चुकाई गई रक़म के 1.2 गुना तक) [3]",
+          "जो वाउचर शेयरों में नहीं बदलते, वे भी ¥1 की छूट के काम आते हैं [2]",
+          "रेफ़रल पर दोनों तरफ़ वाउचर मिलते हैं"
+        ],
+        "risks": [
+          "अभी नकद नहीं: शेयर अनलिस्टेड हैं, इन्हें बेचा या नकद नहीं किया जा सकता",
+          "लिस्टिंग की गारंटी नहीं: लक्ष्य है, पर न लिस्टिंग की गारंटी है, न उसके समय की [1][4]",
+          "लिस्टिंग के बाद भी फ़ायदे की गारंटी नहीं: बाज़ार भाव इश्यू प्राइस से ऊपर न भी हो [2]",
+          "कमज़ोर अधिकार: वोट नहीं, बची संपत्ति में हिस्सा नहीं, और अब तक कोई डिविडेंड नहीं [2]",
+          "2028 का बायबैक मूल्यांकित क़ीमत पर है, गारंटीशुदा क़ीमत पर नहीं, और इसकी सीमा चुकाई गई रक़म का 1.2 गुना है [3]",
+          "वाउचर मूल रूप से सिर्फ़ बिल चुकाने से मिलते हैं। अगर KABU& की क़ीमतें आपकी मौजूदा क़ीमतों से ज़्यादा हैं, तो आप अपने बिजली बिल के ज़रिए शेयर ख़रीद रहे हैं",
+          "नकद या पॉइंट रिबेट के उलट, मूल्य कंपनी के अंदर रहता है; आपके हाथ में एक वादा है",
+          "तारीख़ें अहम हैं: Daiwa Connect खाता लिंक करने से चूके, तो कोई शेयर आवंटित नहीं होता [2]",
+          "फ़ोन, सोशल मीडिया या ईमेल से शेयर बेचने के प्रस्ताव बहुत संभवतः धोखाधड़ी हैं"
+        ],
+        "ctaText": "पहले आधिकारिक साइट पर जाँच लें कि KABU& की क़ीमतें आपके मौजूदा बिल से ज़्यादा न हों, फिर तय करें कि जुड़ना है या नहीं।"
+      },
+      "es": {
+        "title": "Guía completa de KABU&: cómo conseguir las acciones, qué derechos dan, la agrupación y el calendario hasta la salida a bolsa",
+        "short": "Guía completa de KABU&",
+        "desc": "KABU& te da vales de acciones por pagar la luz, el gas y el móvil. Por qué necesitas una cuenta en Daiwa Connect Securities, la agrupación de 10 acciones en 1 del 22 de diciembre de 2026, qué pueden y qué no pueden hacer las acciones y la recompra de 2028 con tope de 1,2 veces, solo con documentos oficiales.",
+        "h": {
+          "summary": "Resumen",
+          "glance": "De un vistazo",
+          "suits": "Te conviene si",
+          "notSuits": "No te conviene si",
+          "toc": "Índice",
+          "how": "Cómo conseguir las acciones",
+          "rights": "Qué pueden y qué no pueden hacer las acciones",
+          "can": "Pueden",
+          "cannot": "No pueden",
+          "timeline": "Fechas clave",
+          "faq": "Preguntas frecuentes",
+          "pros": "Lo bueno",
+          "risks": "Riesgos y precauciones",
+          "cta": "Si quieres empezar",
+          "log": "Historial de cambios",
+          "updated": "Última actualización"
+        },
+        "lead": [
+          "KABU& es un servicio de Kabu & Peace Inc., dirigida por Yusaku Maezawa. Al pagar la luz, el gas, el móvil y otros servicios de KABU&, o gastar con la tarjeta KABU&, recibes «vales de acciones», que en un periodo de oferta puedes cambiar por «acciones de clase KABU&» no cotizadas y de nueva emisión de la empresa.[1][2]",
+          "En resumen: el reembolso de facturas que pagarías de todos modos te llega en acciones no cotizadas en lugar de dinero o puntos. Hoy las acciones no se pueden vender, no tienen voto y nunca han pagado dividendo. Que acaben valiendo algo real depende de una salida a bolsa o, si no la hay, de la recompra de 2028."
+        ],
+        "glance": [
+          [
+            "Empresa",
+            "Kabu & Peace Inc. (consejero delegado: Yusaku Maezawa)"
+          ],
+          [
+            "Qué recibes",
+            "Vales de acciones (cada uno cuenta como 1 ¥), canjeables por acciones no cotizadas en los periodos de oferta [1][2]"
+          ],
+          [
+            "Tasa (miembros normales)",
+            "1% de la factura en luz y gas, 5% en móvil; más para los miembros de pago [1]"
+          ],
+          [
+            "Cuarta oferta",
+            "8 ¥ por acción; solicitudes del 6 al 26 de noviembre de 2026 [2]"
+          ],
+          [
+            "Requisitos para las acciones",
+            "Solicitarlo en el periodo de oferta, pasar el eKYC y tener una cuenta en Daiwa Connect Securities [2]"
+          ],
+          [
+            "Quién puede unirse",
+            "Adultos residentes en Japón (los extranjeros deben cumplir condiciones de residencia)"
+          ],
+          [
+            "Convertir en dinero",
+            "Por ahora no es posible (no cotizan)"
+          ]
+        ],
+        "suits": [
+          "ya pagas luz, gas o móvil y las tarifas de KABU& no son más caras que las que pagas ahora",
+          "puedes esperar varios años sin usar el reembolso",
+          "no te importa verificar tu identidad ni abrir una cuenta de valores",
+          "te parece interesante ser accionista de una empresa no cotizada"
+        ],
+        "notSuits": [
+          "quieres un reembolso seguro ya, en dinero o en puntos",
+          "quieres poder vender tus acciones en cualquier momento",
+          "no vives en Japón (solo pueden unirse adultos residentes en Japón)",
+          "te cambiarías a una tarifa más cara solo para juntar vales"
+        ],
+        "steps": [
+          "Hazte miembro. Solo pueden unirse adultos residentes en Japón; los extranjeros deben cumplir condiciones de residencia",
+          "Contrata la luz, el gas, el móvil u otros servicios de KABU& y págalos (gastar con la tarjeta KABU& también cuenta). Los miembros normales reciben vales por el 1% de la factura en luz y gas y el 5% en móvil; los de pago, más [1]",
+          "Solicítalo en un periodo de oferta. La cuarta oferta tiene un precio de 8 ¥ por acción y acepta solicitudes del 6 al 26 de noviembre de 2026 [2]",
+          "Pasa el eKYC, abre una cuenta en Daiwa Connect Securities y vincúlala a KABU& antes del 6 de diciembre. Sin el vínculo no se asignan acciones [2]",
+          "Recibe tu asignación. En la cuarta oferta el número de acciones se redondea hacia abajo a un múltiplo de 10 y se devuelven los vales sin usar (hasta 79) [2]"
+        ],
+        "howAfter": [
+          "Ejemplo: una factura de luz de 10.000 ¥ al mes, al 1%, da 100 vales al mes, o 1.200 al año. A 8 ¥ por acción son 150 acciones, que valen 1.200 ¥ al precio de emisión. Tras la agrupación del 22 de diciembre de 2026, esa misma posición queda en 15 acciones.",
+          "Los vales también se pueden convertir en cupones de descuento de 1 ¥ para los servicios del grupo, pero los cupones de descuento no vuelven a ser vales de acciones.[2]",
+          "Las invitaciones dan vales a ambas partes. Las notas oficiales dicen que no hay recompensa si los códigos de referido se difunden en redes sociales."
+        ],
+        "can": [
+          "Cobrar dividendos: si la empresa paga dividendo a las acciones ordinarias, estas reciben el mismo importe por acción y con el mismo rango (pero nunca ha pagado ninguno desde su fundación, y si lo hará y cuándo está por decidir) [2]",
+          "Convertirse en acciones ordinarias al salir a bolsa: si el consejo aprueba pedir la salida a bolsa, la empresa puede convertirlas una por una en acciones ordinarias con voto (las acciones de clase no cotizan) [2]",
+          "Ser recompradas si no hay salida a bolsa: si la empresa no cotiza antes del 31 de diciembre de 2028, quienes obtuvieron acciones en la tercera o cuarta oferta pueden pedir que se las recompre a un valor tasado, con un tope de 1,2 veces lo desembolsado [3]"
+        ],
+        "cannot": [
+          "Votar en las juntas de accionistas (no tienen derecho a voto) [2]",
+          "Recibir el patrimonio restante si la empresa se liquida (no se reparte) [2]",
+          "Venderse o transmitirse libremente (no cotizan, no hay mercado y una transmisión necesita la aprobación del consejo) [2]",
+          "Comprarse con dinero (las acciones solo se obtienen con vales)"
+        ],
+        "rightsNote": [
+          "La empresa también tiene derecho a recomprarlas: si te expulsa como miembro, o si no respondes a sus avisos durante seis meses o más, puede quedarse con tus acciones por el importe desembolsado.[2]"
+        ],
+        "timeline": [
+          [
+            "2025",
+            "2025",
+            "Primera y segunda oferta. Después, la empresa tenía 823.947 accionistas [2]"
+          ],
+          [
+            "2026-10-29",
+            "29 oct 2026",
+            "Maezawa escribe que la preparación para cotizar apunta a la primavera de 2027 como pronto, sin garantizar la salida a bolsa ni su fecha [4]"
+          ],
+          [
+            "2026-11-06",
+            "6–26 nov 2026",
+            "Periodo de solicitud de la cuarta oferta (8 ¥ por acción) [2]"
+          ],
+          [
+            "2026-12-06",
+            "6 dic 2026",
+            "Fecha límite para vincular una cuenta de Daiwa Connect Securities a KABU& y recibir la asignación de la cuarta oferta [2]"
+          ],
+          [
+            "2026-12-22",
+            "22 dic 2026",
+            "Cada 10 acciones pasan a ser 1. El número de acciones baja a la décima parte; la empresa dice que la agrupación por sí misma no cambia el valor de lo que tienes [2][4]"
+          ],
+          [
+            "2027",
+            "Primavera de 2027",
+            "Fecha más temprana prevista para la salida a bolsa (sin garantía) [4]"
+          ],
+          [
+            "2028-12-31",
+            "31 dic 2028",
+            "Si no cotiza antes de esta fecha, los accionistas de la tercera y cuarta oferta pueden pedir una recompra a valor tasado, con un tope de 1,2 veces lo desembolsado [3]"
+          ]
+        ],
+        "faq": [
+          [
+            "¿Qué es la agrupación de acciones de KABU&? ¿Pierdo acciones?",
+            "El 22 de diciembre de 2026 cada 10 acciones se agrupan en 1. El número de acciones baja a la décima parte, pero la empresa dice que la agrupación por sí misma no cambia el valor de lo que tienes: 150 acciones pasan a ser 15. Para prepararla, la cuarta oferta redondea las asignaciones hacia abajo a múltiplos de 10 y devuelve los vales sin usar (hasta 79).[2][4]"
+          ],
+          [
+            "¿Necesito una cuenta en Daiwa Connect Securities para KABU&?",
+            "Sí, para recibir acciones. Tienes que pasar el eKYC, abrir una cuenta en Daiwa Connect Securities y vincularla a KABU&. En la cuarta oferta el plazo acaba el 6 de diciembre, y sin el vínculo no se asignan acciones. La cuenta hace falta para el canje; juntar vales empieza al hacerte miembro y pagar los servicios.[2]"
+          ],
+          [
+            "¿Qué pasa si KABU& no sale a bolsa?",
+            "Si la empresa no cotiza antes del 31 de diciembre de 2028, quienes obtuvieron acciones en la tercera o cuarta oferta pueden pedir que se las recompre a un valor fijado por un tasador, con un tope de 1,2 veces lo desembolsado. Es un precio tasado, no garantizado.[3]"
+          ],
+          [
+            "¿Las acciones de KABU& pagan dividendos?",
+            "Sobre el papel, si la empresa paga dividendo a las acciones ordinarias, estas reciben el mismo importe por acción. Pero nunca ha pagado dividendo desde su fundación, y dice que si lo hará y cuándo está por decidir.[2]"
+          ],
+          [
+            "¿Cuándo sale a bolsa KABU&?",
+            "El 29 de octubre de 2026 Maezawa escribió que la preparación apunta a la primavera de 2027 como pronto, y aclaró que eso no garantiza la salida a bolsa ni su fecha. Incluso después de cotizar, nada garantiza que el precio de mercado supere al de emisión. Las acciones de clase no cotizan; al salir a bolsa, la empresa las convierte una por una en acciones ordinarias.[1][2][4]"
+          ],
+          [
+            "¿Puedo vender las acciones de KABU& o convertirlas en dinero?",
+            "Ahora no. No cotizan, no hay mercado y una transmisión necesita la aprobación del consejo. Las vías para cobrar son vender acciones ordinarias tras una salida a bolsa o, si no la hay, la recompra de 2028.[2][3]"
+          ],
+          [
+            "¿Se pueden comprar acciones de KABU& con dinero?",
+            "No. Las acciones solo se obtienen con vales. Quien te ofrezca acciones de KABU& por teléfono, redes sociales o correo es muy probablemente un estafador."
+          ],
+          [
+            "¿Pierdo los vales si no los cambio por acciones?",
+            "Puedes convertirlos en cupones de descuento de 1 ¥ para los servicios del grupo. Los cupones no se pueden volver a convertir, así que decide antes si quieres acciones o descuento.[2]"
+          ]
+        ],
+        "pros": [
+          "Lo ganas con facturas que pagarías de todos modos; si la tarifa es igual o más barata que la actual, no te cuesta nada extra",
+          "Son acciones de verdad, emitidas con una declaración de registro de valores presentada ante la Oficina Financiera Local de Kanto, no tokens sin ningún derecho legal [2]",
+          "Hay una vía de salida aunque no llegue a cotizar (la recompra de 2028, con un tope de 1,2 veces lo desembolsado) [3]",
+          "Los vales que no cambies siguen valiendo como descuentos de 1 ¥ [2]",
+          "Las invitaciones dan vales a ambas partes"
+        ],
+        "risks": [
+          "Por ahora no se puede cobrar: las acciones no cotizan y no se pueden vender ni convertir en dinero",
+          "La salida a bolsa no está garantizada: hay una fecha prevista, pero ni la salida ni su fecha están garantizadas [1][4]",
+          "Tampoco hay ganancia garantizada tras cotizar: el precio de mercado puede no superar al de emisión [2]",
+          "Derechos débiles: sin voto, sin parte del patrimonio restante y sin dividendo hasta ahora [2]",
+          "La recompra de 2028 es a un valor tasado, no a un precio garantizado, y tiene un tope de 1,2 veces lo desembolsado [3]",
+          "Los vales básicamente solo llegan pagando facturas. Si las tarifas de KABU& son más caras que las tuyas, estás comprando acciones a través de tu factura de la luz",
+          "A diferencia de un reembolso en dinero o puntos, el valor se queda dentro de la empresa; lo que tienes es una promesa",
+          "Los plazos importan: si no vinculas a tiempo la cuenta de Daiwa Connect, no se asignan acciones [2]",
+          "Las ofertas de venta de acciones por teléfono, redes sociales o correo son muy probablemente fraudes"
+        ],
+        "ctaText": "Primero comprueba en la web oficial que las tarifas de KABU& no sean más caras que las que pagas ahora y luego decide si te das de alta."
+      },
+      "de": {
+        "title": "KABU& – der komplette Leitfaden: wie du an die Aktien kommst, was sie können, die Zusammenlegung und der Zeitplan bis zum Börsengang",
+        "short": "KABU& – kompletter Leitfaden",
+        "desc": "KABU& gibt dir Aktiengutscheine dafür, dass du Strom, Gas und Handy bezahlst. Warum du ein Konto bei Daiwa Connect Securities brauchst, die Zusammenlegung von 10 Aktien zu 1 am 22. Dezember 2026, was die Aktien können und was nicht, und der Rückkauf 2028 bis höchstens zum 1,2-Fachen – nur aus offiziellen Unterlagen.",
+        "h": {
+          "summary": "Zusammenfassung",
+          "glance": "Auf einen Blick",
+          "suits": "Passt zu dir, wenn du",
+          "notSuits": "Passt nicht zu dir, wenn du",
+          "toc": "Inhalt",
+          "how": "So bekommst du die Aktien",
+          "rights": "Was die Aktien können und was nicht",
+          "can": "Können",
+          "cannot": "Können nicht",
+          "timeline": "Wichtige Termine",
+          "faq": "Häufige Fragen",
+          "pros": "Was dafür spricht",
+          "risks": "Risiken und Hinweise",
+          "cta": "Wenn du einsteigen willst",
+          "log": "Änderungsverlauf",
+          "updated": "Zuletzt aktualisiert"
+        },
+        "lead": [
+          "KABU& ist ein Dienst der Kabu & Peace Inc. unter Yusaku Maezawa. Wer für KABU&-Strom, -Gas, -Mobilfunk und andere Dienste zahlt oder mit der KABU&-Karte bezahlt, bekommt „Aktiengutscheine“, die sich in einem Angebotszeitraum gegen neu ausgegebene, nicht börsennotierte „KABU&-Gattungsaktien“ des Unternehmens tauschen lassen.[1][2]",
+          "Kurz gesagt: Die Rückvergütung auf Rechnungen, die du ohnehin zahlst, gibt es in nicht börsennotierten Aktien statt in Geld oder Punkten. Derzeit lassen sich die Aktien nicht verkaufen, haben kein Stimmrecht und haben noch nie eine Dividende gebracht. Ob daraus echter Wert wird, hängt von einem Börsengang ab – oder, falls es keinen gibt, vom Rückkauf 2028."
+        ],
+        "glance": [
+          [
+            "Betreiber",
+            "Kabu & Peace Inc. (CEO: Yusaku Maezawa)"
+          ],
+          [
+            "Was du bekommst",
+            "Aktiengutscheine (je 1 ¥), in Angebotszeiträumen gegen nicht börsennotierte Aktien tauschbar [1][2]"
+          ],
+          [
+            "Satz (normale Mitglieder)",
+            "1 % der Rechnung bei Strom und Gas, 5 % beim Mobilfunk; mehr für zahlende Mitglieder [1]"
+          ],
+          [
+            "Viertes Angebot",
+            "8 ¥ je Aktie; Anträge vom 6. bis 26. November 2026 [2]"
+          ],
+          [
+            "Nötig für Aktien",
+            "Antrag im Angebotszeitraum, eKYC und ein Konto bei Daiwa Connect Securities [2]"
+          ],
+          [
+            "Wer mitmachen kann",
+            "Erwachsene mit Wohnsitz in Japan (für ausländische Staatsangehörige gelten Aufenthaltsbedingungen)"
+          ],
+          [
+            "Auszahlung",
+            "Derzeit nicht möglich (nicht börsennotiert)"
+          ]
+        ],
+        "suits": [
+          "schon für Strom, Gas oder Handy zahlst und die Preise von KABU& nicht höher sind als deine jetzigen",
+          "einige Jahre warten kannst, ohne die Rückvergütung zu nutzen",
+          "kein Problem mit Identitätsprüfung und der Eröffnung eines Depotkontos hast",
+          "es spannend findest, Aktionär eines nicht börsennotierten Unternehmens zu sein"
+        ],
+        "notSuits": [
+          "jetzt eine sichere Rückvergütung willst, in Geld oder Punkten",
+          "deine Aktien jederzeit verkaufen können willst",
+          "nicht in Japan lebst (mitmachen können nur Erwachsene mit Wohnsitz in Japan)",
+          "nur zum Gutscheinsammeln in einen teureren Tarif wechseln würdest"
+        ],
+        "steps": [
+          "Werde Mitglied. Mitmachen können nur Erwachsene mit Wohnsitz in Japan; für ausländische Staatsangehörige gelten Aufenthaltsbedingungen",
+          "Schließ KABU&-Strom, -Gas, -Mobilfunk oder andere Dienste ab und bezahle sie (Zahlungen mit der KABU&-Karte zählen auch). Normale Mitglieder bekommen Gutscheine über 1 % der Rechnung bei Strom und Gas und 5 % beim Mobilfunk; zahlende Mitglieder mehr [1]",
+          "Stell im Angebotszeitraum einen Antrag. Das vierte Angebot kostet 8 ¥ je Aktie und nimmt Anträge vom 6. bis 26. November 2026 an [2]",
+          "Durchlaufe das eKYC, eröffne ein Konto bei Daiwa Connect Securities und verknüpfe es bis zum 6. Dezember mit KABU&. Ohne Verknüpfung werden keine Aktien zugeteilt [2]",
+          "Erhalte deine Zuteilung. Im vierten Angebot wird die Aktienzahl auf ein Vielfaches von 10 abgerundet, ungenutzte Gutscheine (bis zu 79) gehen zurück [2]"
+        ],
+        "howAfter": [
+          "Beispiel: Eine Stromrechnung von 10.000 ¥ im Monat bringt bei 1 % 100 Gutscheine im Monat, also 1.200 im Jahr. Bei 8 ¥ je Aktie sind das 150 Aktien, zum Ausgabepreis 1.200 ¥ wert. Nach der Zusammenlegung am 22. Dezember 2026 sind es beim selben Bestand 15 Aktien.",
+          "Gutscheine lassen sich auch in 1-¥-Rabattgutscheine für die Dienste der Gruppe umwandeln, Rabattgutscheine aber nicht zurück in Aktiengutscheine.[2]",
+          "Empfehlungen bringen beiden Seiten Gutscheine. Laut offiziellen Hinweisen gibt es keine Prämie, wenn Empfehlungscodes in sozialen Medien verbreitet werden."
+        ],
+        "can": [
+          "Dividenden erhalten: Zahlt das Unternehmen auf Stammaktien eine Dividende, bekommen diese je Aktie denselben Betrag im selben Rang (es hat aber seit der Gründung noch nie eine gezahlt, und ob und wann, ist offen) [2]",
+          "Beim Börsengang zu Stammaktien werden: Beschließt der Vorstand einen Börsenantrag, kann das Unternehmen sie eins zu eins in stimmberechtigte Stammaktien umwandeln (die Gattungsaktien selbst werden nicht notiert) [2]",
+          "Ohne Börsengang zurückgekauft werden: Ist das Unternehmen bis zum 31. Dezember 2028 nicht notiert, können Halter von Aktien aus dem dritten oder vierten Angebot einen Rückkauf zu einem Schätzwert verlangen, höchstens zum 1,2-Fachen des eingezahlten Betrags [3]"
+        ],
+        "cannot": [
+          "In der Hauptversammlung abstimmen (kein Stimmrecht) [2]",
+          "Bei einer Auflösung des Unternehmens Restvermögen erhalten (es wird nichts verteilt) [2]",
+          "Frei verkauft oder übertragen werden (nicht notiert, kein Markt, und eine Übertragung braucht die Zustimmung des Vorstands) [2]",
+          "Mit Geld gekauft werden (die Aktien gibt es nur gegen Gutscheine)"
+        ],
+        "rightsNote": [
+          "Auch das Unternehmen hat ein Rückkaufrecht: Wirst du als Mitglied ausgeschlossen oder antwortest sechs Monate oder länger nicht auf seine Mitteilungen, kann es deine Aktien zum eingezahlten Betrag übernehmen.[2]"
+        ],
+        "timeline": [
+          [
+            "2025",
+            "2025",
+            "Erstes und zweites Angebot. Danach hatte das Unternehmen 823.947 Aktionäre [2]"
+          ],
+          [
+            "2026-10-29",
+            "29. Okt. 2026",
+            "Maezawa schreibt, die Vorbereitungen für einen Börsengang zielten frühestens auf das Frühjahr 2027, ohne Notierung oder Zeitpunkt zu garantieren [4]"
+          ],
+          [
+            "2026-11-06",
+            "6.–26. Nov. 2026",
+            "Antragszeitraum des vierten Angebots (8 ¥ je Aktie) [2]"
+          ],
+          [
+            "2026-12-06",
+            "6. Dez. 2026",
+            "Frist, um ein Konto bei Daiwa Connect Securities für die Zuteilung im vierten Angebot mit KABU& zu verknüpfen [2]"
+          ],
+          [
+            "2026-12-22",
+            "22. Dez. 2026",
+            "Je 10 Aktien werden zu 1. Die Stückzahl sinkt auf ein Zehntel; laut Unternehmen ändert die Zusammenlegung selbst den Wert des Bestands nicht [2][4]"
+          ],
+          [
+            "2027",
+            "Frühjahr 2027",
+            "Frühestes Ziel für einen Börsengang (nicht garantiert) [4]"
+          ],
+          [
+            "2028-12-31",
+            "31. Dez. 2028",
+            "Ist das Unternehmen bis dahin nicht notiert, können Halter aus dem dritten und vierten Angebot einen Rückkauf zum Schätzwert verlangen, höchstens zum 1,2-Fachen des eingezahlten Betrags [3]"
+          ]
+        ],
+        "faq": [
+          [
+            "KABU& Aktienzusammenlegung: Verliere ich Aktien?",
+            "Am 22. Dezember 2026 werden je 10 Aktien zu 1 zusammengelegt. Die Stückzahl sinkt auf ein Zehntel, laut Unternehmen ändert die Zusammenlegung selbst aber nichts am Wert des Bestands: Aus 150 Aktien werden 15. Zur Vorbereitung rundet das vierte Angebot Zuteilungen auf Vielfache von 10 ab und gibt ungenutzte Gutscheine (bis zu 79) zurück.[2][4]"
+          ],
+          [
+            "Brauche ich für KABU& ein Konto bei Daiwa Connect Securities?",
+            "Ja, um Aktien zu erhalten. Du musst das eKYC durchlaufen, ein Konto bei Daiwa Connect Securities eröffnen und es mit KABU& verknüpfen. Im vierten Angebot ist die Frist der 6. Dezember, und ohne Verknüpfung werden keine Aktien zugeteilt. Das Konto brauchst du für den Tausch; Gutscheine sammelst du schon ab der Mitgliedschaft und mit bezahlten Diensten.[2]"
+          ],
+          [
+            "Was passiert, wenn KABU& nicht an die Börse geht?",
+            "Ist das Unternehmen bis zum 31. Dezember 2028 nicht notiert, können Halter von Aktien aus dem dritten oder vierten Angebot verlangen, dass es sie zu einem von einem Gutachter ermittelten Wert zurückkauft, höchstens zum 1,2-Fachen des eingezahlten Betrags. Das ist ein Schätzpreis, kein garantierter.[3]"
+          ],
+          [
+            "Zahlen KABU&-Aktien eine Dividende?",
+            "Auf dem Papier ja: Zahlt das Unternehmen auf Stammaktien eine Dividende, bekommen diese je Aktie denselben Betrag. Seit der Gründung hat es aber noch nie eine Dividende gezahlt, und ob und wann, ist laut eigener Aussage offen.[2]"
+          ],
+          [
+            "Wann geht KABU& an die Börse?",
+            "Am 29. Oktober 2026 schrieb Maezawa, die Vorbereitungen zielten frühestens auf das Frühjahr 2027, und betonte, dass das weder die Notierung noch ihren Zeitpunkt garantiere. Auch nach einem Börsengang ist nicht garantiert, dass der Marktpreis über dem Ausgabepreis liegt. Die Gattungsaktien selbst werden nicht notiert; beim Börsengang wandelt das Unternehmen sie eins zu eins in Stammaktien um.[1][2][4]"
+          ],
+          [
+            "Kann ich KABU&-Aktien verkaufen oder auszahlen lassen?",
+            "Derzeit nicht. Sie sind nicht notiert, es gibt keinen Markt, und eine Übertragung braucht die Zustimmung des Vorstands. Zu Geld machen lassen sie sich durch den Verkauf von Stammaktien nach einem Börsengang oder, falls es keinen gibt, über den Rückkauf 2028.[2][3]"
+          ],
+          [
+            "Kann man KABU&-Aktien mit Geld kaufen?",
+            "Nein. Die Aktien gibt es nur gegen Gutscheine. Wer dir per Telefon, sozialen Medien oder E-Mail KABU&-Aktien zum Kauf anbietet, ist sehr wahrscheinlich ein Betrüger."
+          ],
+          [
+            "Verfallen die Gutscheine, wenn ich sie nicht eintausche?",
+            "Du kannst sie stattdessen in 1-¥-Rabattgutscheine für die Dienste der Gruppe umwandeln. Rabattgutscheine lassen sich nicht zurückwandeln, also entscheide vorher, ob du Aktien oder Rabatt willst.[2]"
+          ]
+        ],
+        "pros": [
+          "Du bekommst es für Rechnungen, die du ohnehin zahlst; ist der Preis gleich oder niedriger als jetzt, kostet es nichts extra",
+          "Es sind echte Aktien, ausgegeben auf Grundlage einer beim Kanto Local Finance Bureau eingereichten Wertpapier-Registrierungserklärung, keine Token ohne jeden Rechtsanspruch [2]",
+          "Es gibt einen Ausweg, falls der Börsengang ausbleibt (Rückkauf 2028, höchstens zum 1,2-Fachen des eingezahlten Betrags) [3]",
+          "Nicht eingetauschte Gutscheine gelten weiter als 1-¥-Rabatt [2]",
+          "Empfehlungen bringen beiden Seiten Gutscheine"
+        ],
+        "risks": [
+          "Derzeit keine Auszahlung: Die Aktien sind nicht notiert und lassen sich weder verkaufen noch zu Geld machen",
+          "Kein garantierter Börsengang: Es gibt ein Ziel, aber weder die Notierung noch ihr Zeitpunkt ist garantiert [1][4]",
+          "Auch nach einem Börsengang kein garantierter Gewinn: Der Marktpreis liegt womöglich nicht über dem Ausgabepreis [2]",
+          "Schwache Rechte: kein Stimmrecht, kein Anteil am Restvermögen und bisher keine Dividende [2]",
+          "Der Rückkauf 2028 erfolgt zu einem Schätzwert, nicht zu einem garantierten Preis, und höchstens zum 1,2-Fachen des eingezahlten Betrags [3]",
+          "Gutscheine gibt es im Grunde nur gegen bezahlte Rechnungen. Sind die Preise von KABU& höher als deine, kaufst du Aktien über deine Stromrechnung",
+          "Anders als bei einer Rückvergütung in Geld oder Punkten bleibt der Wert im Unternehmen; was du hältst, ist ein Versprechen",
+          "Fristen zählen: Verpasst du die Verknüpfung mit dem Daiwa-Connect-Konto, werden keine Aktien zugeteilt [2]",
+          "Angebote, dir Aktien per Telefon, sozialen Medien oder E-Mail zu verkaufen, sind sehr wahrscheinlich Betrug"
+        ],
+        "ctaText": "Prüfe zuerst auf der offiziellen Website, ob die Preise von KABU& nicht höher sind als deine jetzigen, und entscheide dann, ob du dich anmeldest."
+      },
+      "ar": {
+        "title": "الدليل الكامل إلى ⁦KABU&⁩: كيف تحصل على الأسهم، وما الذي تتيحه، والدمج، والجدول الزمني للإدراج",
+        "short": "الدليل الكامل إلى ⁦KABU&⁩",
+        "desc": "تمنحك ⁦KABU&⁩ قسائم أسهم مقابل دفع فواتير الكهرباء والغاز والهاتف. لماذا تحتاج إلى حساب في ⁦Daiwa Connect Securities⁩، ودمج كل 10 أسهم في سهم واحد في 22 ديسمبر 2026، وما الذي تتيحه الأسهم وما لا تتيحه، وإعادة الشراء في 2028 بحد أقصى 1.2 ضعف، من الوثائق الرسمية وحدها.",
+        "h": {
+          "summary": "الخلاصة",
+          "glance": "لمحة سريعة",
+          "suits": "مناسب لك إذا كنت",
+          "notSuits": "غير مناسب لك إذا كنت",
+          "toc": "المحتويات",
+          "how": "كيف تحصل على الأسهم",
+          "rights": "ما الذي تتيحه الأسهم وما لا تتيحه",
+          "can": "تتيح",
+          "cannot": "لا تتيح",
+          "timeline": "مواعيد مهمة",
+          "faq": "أسئلة شائعة",
+          "pros": "الإيجابيات",
+          "risks": "المخاطر والتنبيهات",
+          "cta": "إن أردت البدء",
+          "log": "سجل التحديثات",
+          "updated": "آخر تحديث"
+        },
+        "lead": [
+          "⁦KABU&⁩ خدمة من شركة ⁦Kabu & Peace Inc.⁩ التي يقودها ⁦Yusaku Maezawa⁩. عند الدفع مقابل كهرباء وغاز وهاتف ⁦KABU&⁩ وخدمات أخرى، أو الإنفاق ببطاقة ⁦KABU&⁩، تحصل على «قسائم أسهم» يمكنك خلال فترة الطرح استبدالها بـ«أسهم ⁦KABU&⁩ من الفئة الخاصة» غير المدرجة التي تصدرها الشركة حديثًا.[1][2]",
+          "باختصار، تدفع لك الخدمة الاسترداد على فواتير كنت ستدفعها على أي حال بأسهم غير مدرجة بدلًا من النقد أو النقاط. والأسهم حاليًا لا يمكن بيعها، ولا تمنح حق التصويت، ولم يُدفع عنها عائد قط. أما تحوّلها إلى قيمة حقيقية فيتوقف على الإدراج، أو على إعادة الشراء في 2028 إن لم يحدث الإدراج."
+        ],
+        "glance": [
+          [
+            "المشغّل",
+            "شركة ⁦Kabu & Peace Inc.⁩ (الرئيس التنفيذي: ⁦Yusaku Maezawa⁩)"
+          ],
+          [
+            "ما تحصل عليه",
+            "قسائم أسهم (تُحتسب كل قسيمة بين واحد)، تُستبدل بأسهم غير مدرجة خلال فترات الطرح [1][2]"
+          ],
+          [
+            "النسبة (الأعضاء العاديون)",
+            "1% من الفاتورة للكهرباء والغاز، و5% للهاتف؛ وأكثر للأعضاء باشتراك مدفوع [1]"
+          ],
+          [
+            "الطرح الرابع",
+            "8 ينات للسهم؛ الطلبات من 6 إلى 26 نوفمبر 2026 [2]"
+          ],
+          [
+            "المطلوب للأسهم",
+            "التقديم خلال فترة الطرح، واجتياز ⁦eKYC⁩، وحساب في ⁦Daiwa Connect Securities⁩ [2]"
+          ],
+          [
+            "من يمكنه الانضمام",
+            "البالغون المقيمون في اليابان (للأجانب شروط تتعلق بوضع الإقامة)"
+          ],
+          [
+            "التحويل إلى نقد",
+            "غير ممكن حاليًا (الأسهم غير مدرجة)"
+          ]
+        ],
+        "suits": [
+          "تدفع أصلًا فواتير الكهرباء أو الغاز أو الهاتف، وأسعار ⁦KABU&⁩ ليست أعلى مما تدفعه الآن",
+          "تستطيع الانتظار بضع سنوات دون أن تستخدم الاسترداد",
+          "لا تمانع التحقق من الهوية وفتح حساب وساطة",
+          "تجد فكرة أن تكون مساهمًا في شركة غير مدرجة ممتعة"
+        ],
+        "notSuits": [
+          "تريد استردادًا مضمونًا الآن، نقدًا أو بالنقاط",
+          "تريد أن تتمكن من بيع أسهمك في أي وقت",
+          "لا تقيم في اليابان (الانضمام متاح فقط للبالغين المقيمين فيها)",
+          "مستعدًا للانتقال إلى خطة أغلى لمجرد جمع القسائم"
+        ],
+        "steps": [
+          "سجّل عضوًا. الانضمام متاح فقط للبالغين المقيمين في اليابان، وللأجانب شروط تتعلق بوضع الإقامة",
+          "اشترك في خدمات الكهرباء أو الغاز أو الهاتف أو غيرها من ⁦KABU&⁩ وادفع مقابلها (الإنفاق ببطاقة ⁦KABU&⁩ يُحتسب أيضًا). يحصل الأعضاء العاديون على قسائم بقيمة 1% من الفاتورة للكهرباء والغاز و5% للهاتف، والأعضاء باشتراك مدفوع على أكثر [1]",
+          "قدّم طلبك خلال فترة الطرح. سعر الطرح الرابع 8 ينات للسهم، وتُقبل الطلبات من 6 إلى 26 نوفمبر 2026 [2]",
+          "اجتز ⁦eKYC⁩، وافتح حسابًا في ⁦Daiwa Connect Securities⁩، واربطه بـ⁦KABU&⁩ قبل 6 ديسمبر. من دون الربط لا تُخصَّص لك أسهم [2]",
+          "تسلّم تخصيصك. في الطرح الرابع يُقرَّب عدد الأسهم نزولًا إلى مضاعف 10، وتُعاد القسائم غير المستخدمة (حتى 79 قسيمة) [2]"
+        ],
+        "howAfter": [
+          "مثال: فاتورة كهرباء شهرية بـ10,000 ين بنسبة 1% تمنح 100 قسيمة شهريًا، أي 1,200 في السنة. وبسعر 8 ينات للسهم تكون 150 سهمًا قيمتها 1,200 ين بسعر الإصدار. وبعد الدمج في 22 ديسمبر 2026 تصبح الحصة نفسها 15 سهمًا.",
+          "يمكن أيضًا تحويل القسائم إلى قسائم خصم بين واحد لخدمات المجموعة، لكن لا يمكن تحويل قسائم الخصم مرة أخرى إلى قسائم أسهم.[2]",
+          "الإحالة تمنح الطرفين قسائم. وتقول الملاحظات الرسمية إن المكافآت لا تُمنح إذا نُشرت رموز الإحالة على وسائل التواصل."
+        ],
+        "can": [
+          "الحصول على عائد: إذا دفعت الشركة عائدًا على الأسهم العادية، تحصل هذه الأسهم على المبلغ نفسه للسهم وبالمرتبة نفسها (لكن الشركة لم تدفع عائدًا قط منذ تأسيسها، ولم يُحسم هل ستدفع ولا متى) [2]",
+          "التحول إلى أسهم عادية عند الإدراج: إذا وافق مجلس الإدارة على طلب الإدراج، يمكن للشركة تحويلها سهمًا بسهم إلى أسهم عادية بحق تصويت (أسهم الفئة الخاصة نفسها لا تُدرج) [2]",
+          "إعادة شرائها إن لم يحدث الإدراج: إذا لم تُدرج الشركة بحلول 31 ديسمبر 2028، يمكن لمن حصلوا على أسهم في الطرح الثالث أو الرابع أن يطلبوا من الشركة شراءها بقيمة تقديرية، بحد أقصى 1.2 ضعف المبلغ المدفوع [3]"
+        ],
+        "cannot": [
+          "التصويت في جمعيات المساهمين (لا حق تصويت) [2]",
+          "الحصول على الأصول المتبقية إذا صُفّيت الشركة (لا تُوزَّع) [2]",
+          "البيع أو النقل بحرية (فهي غير مدرجة بلا سوق، ويحتاج نقل ملكيتها إلى موافقة مجلس الإدارة) [2]",
+          "شراؤها بالمال (لا يمكن الحصول على الأسهم إلا بالقسائم)"
+        ],
+        "rightsNote": [
+          "وللشركة أيضًا حق في شرائها: إذا أُنهيت عضويتك قسرًا، أو لم ترد على إشعاراتها ستة أشهر أو أكثر، يمكنها الاستحواذ على أسهمك بالمبلغ المدفوع.[2]"
+        ],
+        "timeline": [
+          [
+            "2025",
+            "2025",
+            "الطرحان الأول والثاني. وبعدهما بلغ عدد مساهمي الشركة 823,947 [2]"
+          ],
+          [
+            "2026-10-29",
+            "29 أكتوبر 2026",
+            "يكتب ⁦Maezawa⁩ أن الاستعداد للإدراج يستهدف ربيع 2027 كأبكر موعد، دون ضمان الإدراج أو توقيته [4]"
+          ],
+          [
+            "2026-11-06",
+            "6–26 نوفمبر 2026",
+            "فترة تقديم الطلبات للطرح الرابع (8 ينات للسهم) [2]"
+          ],
+          [
+            "2026-12-06",
+            "6 ديسمبر 2026",
+            "آخر موعد لربط حساب ⁦Daiwa Connect Securities⁩ بـ⁦KABU&⁩ للحصول على تخصيص الطرح الرابع [2]"
+          ],
+          [
+            "2026-12-22",
+            "22 ديسمبر 2026",
+            "يصبح كل 10 أسهم سهمًا واحدًا. ينخفض عدد الأسهم إلى العُشر؛ وتقول الشركة إن الدمج في حد ذاته لا يغير قيمة الحصة [2][4]"
+          ],
+          [
+            "2027",
+            "ربيع 2027",
+            "أبكر موعد مستهدف للإدراج (غير مضمون) [4]"
+          ],
+          [
+            "2028-12-31",
+            "31 ديسمبر 2028",
+            "إذا لم تُدرج الشركة بحلول هذا التاريخ، يمكن لحاملي أسهم الطرحين الثالث والرابع طلب إعادة الشراء بقيمة تقديرية، بحد أقصى 1.2 ضعف المبلغ المدفوع [3]"
+          ]
+        ],
+        "faq": [
+          [
+            "ما هو دمج أسهم ⁦KABU&⁩؟ هل سأخسر أسهمًا؟",
+            "في 22 ديسمبر 2026 يُدمج كل 10 أسهم في سهم واحد. ينخفض عدد الأسهم إلى العُشر، لكن الشركة تقول إن الدمج في حد ذاته لا يغير قيمة الحصة: 150 سهمًا تصبح 15. واستعدادًا لذلك يقرّب الطرح الرابع التخصيصات نزولًا إلى مضاعفات 10، ويعيد القسائم غير المستخدمة (حتى 79 قسيمة).[2][4]"
+          ],
+          [
+            "هل أحتاج إلى حساب في ⁦Daiwa Connect Securities⁩؟",
+            "نعم، لتسلّم الأسهم. عليك اجتياز ⁦eKYC⁩، وفتح حساب في ⁦Daiwa Connect Securities⁩، وربطه بـ⁦KABU&⁩. آخر موعد للطرح الرابع هو 6 ديسمبر، ومن دون الربط لا تُخصَّص أسهم. الحساب مطلوب للاستبدال؛ أما جمع القسائم فيبدأ بالعضوية والدفع مقابل الخدمات.[2]"
+          ],
+          [
+            "ماذا يحدث إذا لم تُدرج ⁦KABU&⁩ أبدًا؟",
+            "إذا لم تُدرج الشركة بحلول 31 ديسمبر 2028، يمكن لمن حصلوا على أسهم في الطرح الثالث أو الرابع أن يطلبوا من الشركة إعادة شرائها بقيمة يحددها مُقيِّم، بحد أقصى 1.2 ضعف المبلغ المدفوع. إنه سعر تقديري لا سعر مضمون.[3]"
+          ],
+          [
+            "هل تدفع أسهم ⁦KABU&⁩ عائدًا؟",
+            "نظريًا، إذا دفعت الشركة عائدًا على الأسهم العادية، تحصل هذه الأسهم على المبلغ نفسه للسهم. لكنها لم تدفع عائدًا قط منذ تأسيسها، وتقول إنه لم يُحسم هل ستدفع ولا متى.[2]"
+          ],
+          [
+            "متى تُدرج ⁦KABU&⁩ في البورصة؟",
+            "في 29 أكتوبر 2026 كتب ⁦Maezawa⁩ أن الاستعداد يستهدف ربيع 2027 كأبكر موعد، وقال إن ذلك لا يضمن الإدراج ولا توقيته. وحتى بعد الإدراج لا شيء يضمن أن يتجاوز سعر السوق سعر الإصدار. ولا تُدرج أسهم الفئة الخاصة نفسها؛ بل تحوّلها الشركة عند الإدراج سهمًا بسهم إلى أسهم عادية.[1][2][4]"
+          ],
+          [
+            "هل يمكنني بيع الأسهم أو تحويلها إلى نقد؟",
+            "ليس الآن. فهي غير مدرجة بلا سوق، ويحتاج نقل ملكيتها إلى موافقة مجلس الإدارة. وطرق تحويلها إلى نقد هي بيع الأسهم العادية بعد الإدراج، أو إعادة الشراء في 2028 إن لم يحدث الإدراج.[2][3]"
+          ],
+          [
+            "هل يمكنني شراء أسهم ⁦KABU&⁩ بالمال؟",
+            "لا. لا يمكن الحصول على الأسهم إلا بالقسائم. ومن يعرض عليك بيع أسهم ⁦KABU&⁩ عبر الهاتف أو وسائل التواصل أو البريد الإلكتروني فهو على الأرجح محتال."
+          ],
+          [
+            "هل تضيع القسائم إن لم أستبدلها بأسهم؟",
+            "يمكنك بدلًا من ذلك تحويلها إلى قسائم خصم بين واحد لخدمات المجموعة. ولا يمكن عكس هذا التحويل، فقرّر أولًا هل تريد أسهمًا أم خصمًا.[2]"
+          ]
+        ],
+        "pros": [
+          "تكسبها على فواتير كنت ستدفعها على أي حال؛ وإن كان السعر مساويًا لما تدفعه الآن أو أقل، فلا تكلفة إضافية",
+          "هذه أسهم حقيقية صدرت بموجب بيان تسجيل أوراق مالية قُدِّم إلى مكتب كانتو المحلي للمالية، لا رموز بلا أي حق قانوني [2]",
+          "هناك مخرج إن لم يحدث الإدراج (إعادة الشراء في 2028، بحد أقصى 1.2 ضعف المبلغ المدفوع) [3]",
+          "القسائم التي لا تستبدلها تبقى صالحة كخصم بين واحد [2]",
+          "الإحالة تمنح الطرفين قسائم"
+        ],
+        "risks": [
+          "لا تحويل إلى نقد حاليًا: الأسهم غير مدرجة ولا يمكن بيعها أو صرفها",
+          "لا ضمان للإدراج: هناك موعد مستهدف، لكن لا الإدراج ولا توقيته مضمونان [1][4]",
+          "لا ربح مضمون حتى بعد الإدراج: قد لا يتجاوز سعر السوق سعر الإصدار [2]",
+          "حقوق ضعيفة: لا تصويت، ولا حصة في الأصول المتبقية، ولا عائد حتى الآن [2]",
+          "إعادة الشراء في 2028 بقيمة تقديرية لا بسعر مضمون، وبحد أقصى 1.2 ضعف المبلغ المدفوع [3]",
+          "القسائم لا تأتي أساسًا إلا من دفع الفواتير. فإن كانت أسعار ⁦KABU&⁩ أعلى من أسعارك الحالية، فأنت تشتري أسهمًا عبر فاتورة الكهرباء",
+          "على عكس الاسترداد النقدي أو بالنقاط، تبقى القيمة داخل الشركة؛ وما تملكه هو وعد",
+          "المواعيد مهمة: إن فاتك ربط حساب ⁦Daiwa Connect Securities⁩ فلن تُخصَّص لك أسهم [2]",
+          "عروض بيع الأسهم عبر الهاتف أو وسائل التواصل أو البريد الإلكتروني هي على الأرجح احتيال"
+        ],
+        "ctaText": "تحقق أولًا من الموقع الرسمي أن أسعار ⁦KABU&⁩ ليست أعلى مما تدفعه الآن، ثم قرّر هل تشترك."
+      }
     }
   ]
 };
