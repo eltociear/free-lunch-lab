@@ -71,9 +71,13 @@ const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
 const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
 const ESSAY_KEYS = ['essaysTitle', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated'];
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+// related（エッセイ）と essays（サービス）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
+const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
+const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
+for (const s of SERVICES) for (const id of [].concat(s.essays || [])) if (!ESSAYS.some(x => x.id === id)) throw new Error(`${s.id}: unknown essay ${id}`);
 for (const e of ESSAYS) {
   for (const l of LANGS) for (const f of ['title', 'desc', 'blocks']) if (!e[f][l]) throw new Error(`${e.id}: missing ${f}.${l}`);
-  if (e.related && !ESSAYS.some(x => x.id === e.related)) throw new Error(`${e.id}: unknown related essay ${e.related}`);
+  for (const id of [].concat(e.related || [])) if (!ESSAYS.some(x => x.id === id)) throw new Error(`${e.id}: unknown related essay ${id}`);
   for (const l of LANGS) for (const [, t] of e.blocks[l]) for (const [, , href] of t.matchAll(ESSAY_LINK)) {
     const m = href.match(/^\/essays\/([^/]+)\//);
     if (m && !ESSAYS.some(x => x.id === m[1])) throw new Error(`${e.id}.${l}: link to unknown essay ${href}`);
@@ -713,7 +717,7 @@ ${contactLine(s, lang)}
 ${checkedLine(s, lang)}
 ${(s.verify || []).length ? `<p class="verify-line"><b>${esc(L.verifyLabel)}</b>${s.verify.map(v => { const nm = esc(VERIFY[v.method].name[lang]) + (v.optional ? (lang === 'ja' || lang === 'zh' ? `（${esc(L.verifyOpt)}）` : ` (${esc(L.verifyOpt)})`) : ''); return verifyPages.includes(v.method) ? `<a href="${verifyPath(lang, v.method)}" dir="auto">${nm}</a>` : `<span dir="auto">${nm}</span>`; }).join('')}</p>` : ''}
 <div class="slip slip-end">${cta(s, L)}</div>
-${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#org-${org.id}">${esc(org.name)}</a> <span>(${esc(L.orgsTitle)})</span></p>` : ''}
+${relatedLinks(lang, essayList(s.essays))}${org ? `<p class="org-link">${esc(L.orgsRelated)}: <a href="${orgPath(lang)}#org-${org.id}">${esc(org.name)}</a> <span>(${esc(L.orgsTitle)})</span></p>` : ''}
 </article>
 <section id="related">
   <div class="sec-head"><h2>${esc(L.hRelated)}</h2></div>
@@ -843,7 +847,6 @@ function essayPage(e, lang) {
     tagged = true;
     return `<p class="op">${tag}${fn(t)}</p>`;
   }).join('\n');
-  const rel = e.related && ESSAYS.find(x => x.id === e.related);
   const sources = e.sources.map(s => `<li id="fn-${s.n}"><a href="${esc(s.url)}" target="_blank" rel="noopener" dir="auto">${esc(s.label)}</a>${s.url2 ? ` · <a href="${esc(s.url2)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(s.url2).hostname.replace(/^www\./, ''))}</a>` : ''} <a class="fnback" href="#ref-${s.n}" aria-label="↩">↩</a></li>`).join('');
   const ld = [
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
@@ -859,7 +862,7 @@ function essayPage(e, lang) {
 <article>
 <header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p></header>
 <div class="essay-body">${blocks}</div>
-${rel ? `<p class="related">${esc(L.essayRelated)}: <a href="${essayPath(lang, rel)}">${esc(rel.title[lang] || rel.title.en)}</a></p>` : ''}
+${relatedLinks(lang, essayList(e.related))}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
 </article>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
@@ -1421,6 +1424,7 @@ const svcFull = s => {
     `What you need: ${md(d.need)}`,
     ...(d.warning ? ['', `Warning: ${md(d.warning)}`] : []),
     ...(d.caution ? ['', `Cautions: ${md(d.caution)}`] : []),
+    ...essayList(s.essays).flatMap(x => ['', `Related essay: ${essayAbs(DEFAULT_LANG, x)}`]),
   ].join('\n');
 };
 const essayFull = e => [
@@ -1430,7 +1434,7 @@ const essayFull = e => [
   `- Published: ${e.date}`,
   '',
   ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : md(t)).flatMap(x => [x, '']),
-  ...(e.related ? [`Related essay: ${essayAbs(DEFAULT_LANG, ESSAYS.find(x => x.id === e.related))}`, ''] : []),
+  ...essayList(e.related).flatMap(x => [`Related essay: ${essayAbs(DEFAULT_LANG, x)}`, '']),
   'Sources:',
   '',
   ...e.sources.map(s => `${s.n}. ${md(s.label)}: ${s.url}${s.url2 ? ` (also ${s.url2})` : ''}`),

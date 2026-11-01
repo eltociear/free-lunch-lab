@@ -2348,6 +2348,9 @@ module.exports = {
       "global": false,
       "ease": 2,
       "official": "https://kabuand.com/",
+      "essays": [
+        "use-to-own"
+      ],
       "code": "",
       "ref": "",
       "noRef": true,
@@ -2371,49 +2374,49 @@ module.exports = {
         "gain": "電気・ガス・スマホなどの利用料金に応じた株引換券（未上場株の申込みに使う）",
         "note": "前澤友作氏が社長を務める株式会社カブ＆ピースのサービス。KABU&でんき・ガス・モバイルなどの料金やKABU&カードの利用額に応じて「株引換券」がもらえ、募集期間に申し込むと同社の未上場株に交換できる。1枚1円の割引券にもできる。紹介した人・された人の両方に株引換券が付く",
         "need": "日本在住の成人（外国籍の方は在留資格の条件あり）。会員登録し、サービスを契約して料金を払う。株への交換には、募集期間中の申込み、eKYC、大和コネクト証券の口座開設が必要",
-        "caution": "株は未上場で、今は売ることも現金にすることもできず、将来の価値は不確か。株引換券は基本的に料金を払わないともらえない。公式は紹介コードのSNSでの拡散を特典の対象外としている。電話・SNS・メールでの「株が買える」という勧誘は詐欺の可能性が高い（株は株引換券でしか取得できない）",
+        "caution": "株は未上場で、今は売ることも現金にすることもできず、将来の価値は不確か。2026年12月22日に10株を1株に併合するので、株数は10分の1になるが持ち分の価値は変わらない。株引換券は基本的に料金を払わないともらえない。公式は紹介コードのSNSでの拡散を特典の対象外としている。電話・SNS・メールでの「株が買える」という勧誘は詐欺の可能性が高い（株は株引換券でしか取得できない）",
         "contactRef": "紹介コードが欲しい方は、Xの @FreeLunchLab にDMしてください（紹介した側である当サイト運営者にも株引換券が入ります）。"
       },
       "en": {
         "gain": "Share vouchers based on what you pay for electricity, gas, mobile and more (used to apply for unlisted shares)",
         "note": "A service from Kabu & Peace Inc., led by Yusaku Maezawa. Paying for KABU& electricity, gas, mobile and other services, or spending with the KABU& Card, earns “share vouchers”, which you can exchange for the company’s unlisted shares during offering periods. They also work as ¥1 discount vouchers. Referrals give vouchers to both sides",
         "need": "Adults living in Japan (foreign nationals must meet residence status conditions). Register as a member, then contract a service and pay for it. To get shares you must apply during the offering period, pass eKYC and open a Daiwa Connect Securities account",
-        "caution": "The shares are unlisted: right now they cannot be sold or cashed, and their future value is uncertain. Vouchers basically come only from paying for services. The official referral notes say rewards may be voided if referral codes are spread on social media. Offers to sell you its shares by phone, social media or email are very likely fraud: the shares can only be obtained with vouchers",
+        "caution": "The shares are unlisted: right now they cannot be sold or cashed, and their future value is uncertain. On 22 December 2026 every 10 shares are consolidated into 1: the share count drops to one-tenth, but the value of the holding stays the same. Vouchers basically come only from paying for services. The official referral notes say rewards may be voided if referral codes are spread on social media. Offers to sell you its shares by phone, social media or email are very likely fraud: the shares can only be obtained with vouchers",
         "contactRef": "Want a referral code? DM @FreeLunchLab on X (the referrer, this site’s operator, also receives share vouchers)."
       },
       "zh": {
         "gain": "按电费、燃气费、手机费等支付金额获得的股票兑换券（用于申购未上市股票）",
         "note": "由前泽友作担任社长的 Kabu & Peace 株式会社提供的服务。根据 KABU& 电力、燃气、手机等服务的费用或 KABU& 卡消费额获得“股票兑换券”，在募集期内申请即可换成该公司的未上市股票。也可当作每张 1 日元的折扣券。推荐人和被推荐人双方都能获得兑换券",
         "need": "居住在日本的成年人（外国籍人士须满足在留资格条件）。注册会员，签约服务并付费。兑换股票需在募集期内申请、完成 eKYC，并开设大和 Connect 证券账户",
-        "caution": "这些股票未上市：目前无法出售或变现，将来的价值不确定。兑换券基本上只有付费使用服务才能获得。官方推荐说明写明，在社交媒体上扩散推荐码可能导致奖励无效。通过电话、社交媒体或邮件推销其股票的很可能是诈骗：这些股票只能用兑换券获得",
+        "caution": "这些股票未上市：目前无法出售或变现，将来的价值不确定。2026 年 12 月 22 日起每 10 股合并为 1 股，股数变为十分之一，但持股价值不变。兑换券基本上只有付费使用服务才能获得。官方推荐说明写明，在社交媒体上扩散推荐码可能导致奖励无效。通过电话、社交媒体或邮件推销其股票的很可能是诈骗：这些股票只能用兑换券获得",
         "contactRef": "想要推荐码的话，请在 X 上私信 @FreeLunchLab（推荐人，即本站运营者，也会获得股票兑换券）。"
       },
       "hi": {
         "gain": "बिजली, गैस, मोबाइल आदि के भुगतान के हिसाब से शेयर वाउचर (बिना लिस्टिंग वाले शेयरों के आवेदन में इस्तेमाल)",
         "note": "Kabu & Peace Inc. की सेवा, जिसके प्रमुख Yusaku Maezawa हैं। KABU& की बिजली, गैस, मोबाइल जैसी सेवाओं के भुगतान या KABU& कार्ड से ख़र्च पर “शेयर वाउचर” मिलते हैं, जिन्हें ऑफ़रिंग अवधि में कंपनी के अनलिस्टेड शेयरों में बदल सकते हैं। ये ¥1 के डिस्काउंट वाउचर की तरह भी चलते हैं। रेफ़रल पर दोनों तरफ़ वाउचर",
         "need": "जापान में रहने वाले वयस्क (विदेशी नागरिकों के लिए निवास स्थिति की शर्तें)। सदस्य बनें, फिर कोई सेवा लेकर भुगतान करें। शेयर पाने के लिए ऑफ़रिंग अवधि में आवेदन, eKYC और Daiwa Connect Securities खाता खोलना ज़रूरी है",
-        "caution": "शेयर अनलिस्टेड हैं: अभी इन्हें बेचा या नकद नहीं किया जा सकता, और भविष्य का मूल्य अनिश्चित है। वाउचर मूल रूप से सिर्फ़ सेवाओं के भुगतान से मिलते हैं। आधिकारिक रेफ़रल नोट्स कहते हैं कि सोशल मीडिया पर रेफ़रल कोड फैलाने पर इनाम रद्द हो सकता है। फ़ोन, सोशल मीडिया या ईमेल से इसके शेयर बेचने के प्रस्ताव बहुत संभवतः धोखाधड़ी हैं: शेयर सिर्फ़ वाउचर से ही मिलते हैं",
+        "caution": "शेयर अनलिस्टेड हैं: अभी इन्हें बेचा या नकद नहीं किया जा सकता, और भविष्य का मूल्य अनिश्चित है। 22 दिसंबर 2026 को हर 10 शेयर मिलाकर 1 शेयर कर दिए जाएँगे: शेयरों की संख्या दसवाँ हिस्सा रह जाएगी, पर होल्डिंग का मूल्य वही रहेगा। वाउचर मूल रूप से सिर्फ़ सेवाओं के भुगतान से मिलते हैं। आधिकारिक रेफ़रल नोट्स कहते हैं कि सोशल मीडिया पर रेफ़रल कोड फैलाने पर इनाम रद्द हो सकता है। फ़ोन, सोशल मीडिया या ईमेल से इसके शेयर बेचने के प्रस्ताव बहुत संभवतः धोखाधड़ी हैं: शेयर सिर्फ़ वाउचर से ही मिलते हैं",
         "contactRef": "रेफ़रल कोड चाहिए? X पर @FreeLunchLab को DM करें (रेफ़र करने वाले, यानी इस साइट के संचालक, को भी शेयर वाउचर मिलते हैं)।"
       },
       "es": {
         "gain": "Vales de acciones según lo que pagas de luz, gas, móvil y más (sirven para solicitar acciones no cotizadas)",
         "note": "Un servicio de Kabu & Peace Inc., dirigida por Yusaku Maezawa. Al pagar la luz, el gas, el móvil y otros servicios de KABU&, o gastar con la tarjeta KABU&, recibes «vales de acciones», que puedes cambiar por acciones no cotizadas de la empresa en los periodos de oferta. También valen como descuentos de 1 ¥. Las invitaciones dan vales a ambas partes",
         "need": "Adultos residentes en Japón (los extranjeros deben cumplir condiciones de residencia). Hazte miembro, contrata un servicio y págalo. Para obtener acciones hay que solicitarlo en el periodo de oferta, pasar el eKYC y abrir una cuenta en Daiwa Connect Securities",
-        "caution": "Las acciones no cotizan: ahora no se pueden vender ni convertir en dinero, y su valor futuro es incierto. Los vales básicamente solo se obtienen pagando servicios. Las notas oficiales de referidos dicen que la recompensa puede anularse si se difunden códigos en redes sociales. Las ofertas de venta de sus acciones por teléfono, redes o correo son muy probablemente fraudes: las acciones solo se obtienen con vales",
+        "caution": "Las acciones no cotizan: ahora no se pueden vender ni convertir en dinero, y su valor futuro es incierto. El 22 de diciembre de 2026 se agrupan 10 acciones en 1: el número de acciones baja a la décima parte, pero el valor de lo que tienes no cambia. Los vales básicamente solo se obtienen pagando servicios. Las notas oficiales de referidos dicen que la recompensa puede anularse si se difunden códigos en redes sociales. Las ofertas de venta de sus acciones por teléfono, redes o correo son muy probablemente fraudes: las acciones solo se obtienen con vales",
         "contactRef": "¿Quieres un código de referido? Escribe por DM a @FreeLunchLab en X (quien te invita, el responsable de este sitio, también recibe vales de acciones)."
       },
       "de": {
         "gain": "Aktiengutscheine je nach Ausgaben für Strom, Gas, Mobilfunk und mehr (für die Zeichnung nicht börsennotierter Aktien)",
         "note": "Ein Dienst der Kabu & Peace Inc. unter Yusaku Maezawa. Wer für KABU&-Strom, -Gas, -Mobilfunk und andere Dienste zahlt oder mit der KABU&-Karte bezahlt, bekommt „Aktiengutscheine“, die sich in Angebotszeiträumen gegen nicht börsennotierte Aktien des Unternehmens tauschen lassen. Sie gelten auch als 1-¥-Rabattgutscheine. Empfehlungen bringen beiden Seiten Gutscheine",
         "need": "Erwachsene mit Wohnsitz in Japan (für ausländische Staatsangehörige gelten Aufenthaltsbedingungen). Mitglied werden, einen Dienst abschließen und bezahlen. Für Aktien: Antrag im Angebotszeitraum, eKYC und ein Konto bei Daiwa Connect Securities",
-        "caution": "Die Aktien sind nicht börsennotiert: Derzeit lassen sie sich weder verkaufen noch zu Geld machen, ihr künftiger Wert ist ungewiss. Gutscheine gibt es im Grunde nur gegen bezahlte Dienste. Laut offiziellen Hinweisen kann die Prämie entfallen, wenn Empfehlungscodes in sozialen Medien verbreitet werden. Angebote, Aktien per Telefon, sozialen Medien oder E-Mail zu kaufen, sind sehr wahrscheinlich Betrug: Die Aktien gibt es nur gegen Gutscheine",
+        "caution": "Die Aktien sind nicht börsennotiert: Derzeit lassen sie sich weder verkaufen noch zu Geld machen, ihr künftiger Wert ist ungewiss. Am 22. Dezember 2026 werden je 10 Aktien zu 1 zusammengelegt: Die Stückzahl sinkt auf ein Zehntel, der Wert des Bestands bleibt gleich. Gutscheine gibt es im Grunde nur gegen bezahlte Dienste. Laut offiziellen Hinweisen kann die Prämie entfallen, wenn Empfehlungscodes in sozialen Medien verbreitet werden. Angebote, Aktien per Telefon, sozialen Medien oder E-Mail zu kaufen, sind sehr wahrscheinlich Betrug: Die Aktien gibt es nur gegen Gutscheine",
         "contactRef": "Du möchtest einen Empfehlungscode? Schreib @FreeLunchLab auf X per DM (wer dich empfiehlt, also der Betreiber dieser Seite, bekommt ebenfalls Aktiengutscheine)."
       },
       "ar": {
         "gain": "قسائم أسهم بحسب ما تدفعه للكهرباء والغاز والهاتف وغيرها (تُستخدم للاكتتاب في أسهم غير مدرجة)",
         "note": "خدمة من شركة ⁦Kabu & Peace Inc.⁩ التي يقودها ⁦Yusaku Maezawa⁩. عند الدفع مقابل كهرباء وغاز وهاتف ⁦KABU&⁩ وخدمات أخرى، أو الإنفاق ببطاقة ⁦KABU&⁩، تحصل على «قسائم أسهم» يمكن استبدالها بأسهم الشركة غير المدرجة خلال فترات الطرح. وتصلح أيضًا قسائم خصم بقيمة ين واحد. الإحالة تمنح الطرفين قسائم",
         "need": "البالغون المقيمون في اليابان (للأجانب شروط تتعلق بوضع الإقامة). سجّل عضوًا ثم تعاقد على خدمة وادفع مقابلها. للحصول على الأسهم يجب التقديم خلال فترة الطرح واجتياز ⁦eKYC⁩ وفتح حساب في ⁦Daiwa Connect Securities⁩",
-        "caution": "الأسهم غير مدرجة: لا يمكن الآن بيعها أو تحويلها إلى نقود، وقيمتها المستقبلية غير مؤكدة. القسائم لا تأتي أساسًا إلا من الدفع مقابل الخدمات. تقول الملاحظات الرسمية لبرنامج الإحالة إن المكافأة قد تُلغى إذا نُشرت رموز الإحالة على وسائل التواصل. عروض بيع أسهمها عبر الهاتف أو وسائل التواصل أو البريد هي على الأرجح احتيال: لا يمكن الحصول على الأسهم إلا بالقسائم",
+        "caution": "الأسهم غير مدرجة: لا يمكن الآن بيعها أو تحويلها إلى نقود، وقيمتها المستقبلية غير مؤكدة. في 22 ديسمبر 2026 يُدمج كل 10 أسهم في سهم واحد: ينخفض عدد الأسهم إلى العُشر، لكن قيمة ما تملكه تبقى كما هي. القسائم لا تأتي أساسًا إلا من الدفع مقابل الخدمات. تقول الملاحظات الرسمية لبرنامج الإحالة إن المكافأة قد تُلغى إذا نُشرت رموز الإحالة على وسائل التواصل. عروض بيع أسهمها عبر الهاتف أو وسائل التواصل أو البريد هي على الأرجح احتيال: لا يمكن الحصول على الأسهم إلا بالقسائم",
         "contactRef": "تريد رمز إحالة؟ راسل ⁦@FreeLunchLab⁩ على ⁦X⁩ برسالة خاصة (المُحيل، أي مشغّل هذا الموقع، يحصل أيضًا على قسائم أسهم)."
       }
     },
@@ -6526,7 +6529,9 @@ module.exports = {
     {
       "id": "use-to-own",
       "date": "2026-11-01",
-      "related": "universal-high-income",
+      "related": [
+        "universal-high-income"
+      ],
       "title": {
         "ja": "使えば株主：ロッチデールからエアドロップ、そしてカブアンドへ",
         "en": "Use it, own it: from Rochdale to airdrops to KABU&",
@@ -6597,7 +6602,7 @@ module.exports = {
           ],
           [
             "p",
-            "株を受け取るには、本人確認のうえ、会社が指定する証券会社で口座を開き、12月6日までに連携する必要があります。連携しないと割り当てはありません。[6] 会社は上場に向けて、大和コネクト証券と株を証券口座に移すしくみを作っています。[6]"
+            "株を受け取るには、本人確認のうえ、大和コネクト証券で口座を開き、12月6日までにカブアンドと連携する必要があります。連携しないと割り当てはありません。[6]"
           ],
           [
             "h",
@@ -6695,7 +6700,7 @@ module.exports = {
           ],
           [
             "p",
-            "To receive shares, applicants pass an identity check, then open an account at a securities firm the company designates and link it by 6 December; otherwise nothing is allotted.[6] The company has set up a scheme with Daiwa Connect Securities to move shares into brokerage accounts when it lists.[6]"
+            "To receive shares, applicants pass an identity check, then open a Daiwa Connect Securities account and link it to KABU& by 6 December; otherwise nothing is allotted.[6]"
           ],
           [
             "h",
@@ -6793,7 +6798,7 @@ module.exports = {
           ],
           [
             "p",
-            "要拿到股票，申请人须通过身份验证，在公司指定的证券公司开户，并在 12 月 6 日前完成关联，否则不予配售。[6] 公司已与大和 Connect 证券建立了一套在上市时把股票转入证券账户的机制。[6]"
+            "要拿到股票，申请人须通过身份验证，在大和 Connect 证券开户，并在 12 月 6 日前与 KABU& 完成关联，否则不予配售。[6]"
           ],
           [
             "h",
@@ -6891,7 +6896,7 @@ module.exports = {
           ],
           [
             "p",
-            "शेयर पाने के लिए आवेदकों को पहचान की जाँच पास करनी होती है, फिर कंपनी द्वारा तय किसी सिक्योरिटीज़ फ़र्म में खाता खोलकर 6 दिसंबर तक उसे लिंक करना होता है; वरना कोई आवंटन नहीं होता।[6] लिस्टिंग के समय शेयरों को ब्रोकरेज खातों में ले जाने के लिए कंपनी ने Daiwa Connect Securities के साथ एक व्यवस्था बनाई है।[6]"
+            "शेयर पाने के लिए आवेदकों को पहचान की जाँच पास करनी होती है, फिर Daiwa Connect Securities में खाता खोलकर 6 दिसंबर तक उसे KABU& से लिंक करना होता है; वरना कोई आवंटन नहीं होता।[6]"
           ],
           [
             "h",
@@ -6989,7 +6994,7 @@ module.exports = {
           ],
           [
             "p",
-            "Para recibir acciones hay que pasar una verificación de identidad, abrir una cuenta en una sociedad de valores que designa la empresa y vincularla antes del 6 de diciembre; si no, no se asigna nada.[6] La empresa ha montado con Daiwa Connect Securities un sistema para pasar las acciones a cuentas de valores cuando salga a bolsa.[6]"
+            "Para recibir acciones hay que pasar una verificación de identidad, abrir una cuenta en Daiwa Connect Securities y vincularla a KABU& antes del 6 de diciembre; si no, no se asigna nada.[6]"
           ],
           [
             "h",
@@ -7087,7 +7092,7 @@ module.exports = {
           ],
           [
             "p",
-            "Wer Aktien erhalten will, muss sich ausweisen, ein Konto bei einem vom Unternehmen benannten Wertpapierhaus eröffnen und es bis zum 6. Dezember verknüpfen; sonst wird nichts zugeteilt.[6] Mit Daiwa Connect Securities hat das Unternehmen ein Verfahren aufgebaut, um die Aktien beim Börsengang in Depots zu übertragen.[6]"
+            "Wer Aktien erhalten will, muss sich ausweisen, ein Konto bei Daiwa Connect Securities eröffnen und es bis zum 6. Dezember mit KABU& verknüpfen; sonst wird nichts zugeteilt.[6]"
           ],
           [
             "h",
@@ -7185,7 +7190,7 @@ module.exports = {
           ],
           [
             "p",
-            "لتسلُّم الأسهم يجتاز المتقدمون التحقق من الهوية، ثم يفتحون حسابًا لدى شركة أوراق مالية تحددها الشركة ويربطونه قبل 6 ديسمبر؛ وإلا فلا تخصيص.[6] وقد أعدّت الشركة مع ⁦Daiwa Connect Securities⁩ آلية لنقل الأسهم إلى حسابات الوساطة عند الإدراج.[6]"
+            "لتسلُّم الأسهم يجتاز المتقدمون التحقق من الهوية، ثم يفتحون حسابًا لدى ⁦Daiwa Connect Securities⁩ ويربطونه بـ⁦KABU&⁩ قبل 6 ديسمبر؛ وإلا فلا تخصيص.[6]"
           ],
           [
             "h",
@@ -7281,7 +7286,10 @@ module.exports = {
     {
       "id": "universal-high-income",
       "date": "2026-10-29",
-      "related": "ai-agent-basic-income",
+      "related": [
+        "ai-agent-basic-income",
+        "use-to-own"
+      ],
       "title": {
         "ja": "ユニバーサルハイインカムは来るのか：誰が払う？",
         "en": "Universal high income: who pays?",

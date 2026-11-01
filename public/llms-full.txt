@@ -694,7 +694,9 @@ What you get: Share vouchers based on what you pay for electricity, gas, mobile 
 
 What you need: Adults living in Japan (foreign nationals must meet residence status conditions). Register as a member, then contract a service and pay for it. To get shares you must apply during the offering period, pass eKYC and open a Daiwa Connect Securities account
 
-Cautions: The shares are unlisted: right now they cannot be sold or cashed, and their future value is uncertain. Vouchers basically come only from paying for services. The official referral notes say rewards may be voided if referral codes are spread on social media. Offers to sell you its shares by phone, social media or email are very likely fraud: the shares can only be obtained with vouchers
+Cautions: The shares are unlisted: right now they cannot be sold or cashed, and their future value is uncertain. On 22 December 2026 every 10 shares are consolidated into 1: the share count drops to one-tenth, but the value of the holding stays the same. Vouchers basically come only from paying for services. The official referral notes say rewards may be voided if referral codes are spread on social media. Offers to sell you its shares by phone, social media or email are very likely fraud: the shares can only be obtained with vouchers
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/use-to-own/
 
 ### Life AI Testnet
 
@@ -771,7 +773,7 @@ KABU& carries the airdrop’s logic over to a company’s share register. Custom
 
 A simple example. A ¥10,000 monthly electricity bill at 1% earns 100 vouchers a month, or 1,200 a year. At ¥8, that is 150 shares, worth ¥1,200 at the issue price. On 22 December 2026 every 10 shares become 1, so the same holding becomes 15 shares; the company says the consolidation does not change their value by itself.[8] To prepare for it, the fourth offering rounds each allocation down to a multiple of 10 shares and returns up to 79 unused vouchers.[6] Vouchers can also be turned into ¥1 discount coupons for the group’s services, but not turned back.[6]
 
-To receive shares, applicants pass an identity check, then open an account at a securities firm the company designates and link it by 6 December; otherwise nothing is allotted.[6] The company has set up a scheme with Daiwa Connect Securities to move shares into brokerage accounts when it lists.[6]
+To receive shares, applicants pass an identity check, then open a Daiwa Connect Securities account and link it to KABU& by 6 December; otherwise nothing is allotted.[6]
 
 #### What the shares carry
 
@@ -858,6 +860,8 @@ Opinion: Universal high income is a forecast, not a policy. It may even be a goo
 Opinion: In our previous essay (https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/), we argued that AI agents need operating budgets, not a basic income. Put the two together and the picture is simple: agents get budgets, humans get dividends, and someone has to build the pipe in between. Until someone does, treat any promise of a high income the way this site treats every free lunch. Check who is paying.
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/use-to-own/
 
 Sources:
 
