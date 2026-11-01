@@ -935,7 +935,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-10-29. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-01. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -949,6 +949,18 @@ The code behind basic income that anyone can read, run or improve: protocols tha
 
 Smart contracts for Circles v2 on Gnosis Chain: every person mints their own currency each hour, and trust between people lets it circulate
 
+### Circles v1 contracts
+
+- Repository: https://github.com/CirclesUBI/circles-contracts
+- Group: Protocols
+- Language: JavaScript
+- License: AGPL-3.0
+- Stars: 78
+- Last commit: 2023-07-03 (dormant: no commits in over 12 months)
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/circles/
+
+The original Circles UBI contracts (v1): each person has a personal currency, minted continuously as a basic income and passed on through trust between people. Circles v2 has since succeeded them
+
 ### GoodProtocol
 
 - Repository: https://github.com/GoodDollar/GoodProtocol
@@ -961,6 +973,18 @@ Smart contracts for Circles v2 on Gnosis Chain: every person mints their own cur
 
 GoodDollar’s smart contracts (version 2): the G$ token, the reserve funded by staking yield, and the daily UBI claim
 
+### GoodCollective
+
+- Repository: https://github.com/GoodDollar/GoodCollective
+- Group: Protocols
+- Language: TypeScript
+- License: MIT
+- Stars: 16
+- Last commit: 2026-10-28
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/
+
+Contracts for GoodCollective, built on GoodDollar: segmented UBI pools that pay a basic income to a defined group of people, and direct-payment pools that pay recipients directly
+
 ### Duniter v2s
 
 - Repository: https://git.duniter.org/nodes/rust/duniter-v2s
@@ -968,10 +992,22 @@ GoodDollar’s smart contracts (version 2): the G$ token, the reserve funded by 
 - Language: Rust
 - License: AGPL-3.0
 - Stars: 10
-- Last commit: 2026-10-16
+- Last commit: 2026-10-30
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of its web of trust creates a universal dividend each day
+
+### Duniter v1
+
+- Repository: https://git.duniter.org/nodes/typescript/duniter
+- Group: Protocols
+- Language: TypeScript
+- License: AGPL-3.0
+- Stars: 8
+- Last commit: 2023-06-12 (dormant: no commits in over 12 months)
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
+
+The original Duniter node, written in TypeScript, that has run the Ğ1 libre currency and paid its universal dividend since 2017; Duniter v2s is its successor
 
 ### Gradido
 
@@ -980,7 +1016,7 @@ Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of 
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-10-29
+- Last commit: 2026-10-31
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -1008,13 +1044,24 @@ Node for Idena, a blockchain where people prove they are human by solving AI-res
 
 Substrate pallets behind Encointer: local community currencies that pay a UBI to everyone who attends regular in-person meetups
 
+### Encointer node
+
+- Repository: https://github.com/encointer/encointer-node
+- Group: Protocols
+- Language: Rust
+- License: Apache-2.0
+- Stars: 25
+- Last commit: 2026-02-22
+
+The Encointer blockchain node and its command-line client, which run the community-currency UBI built from the Encointer pallets
+
 ### Group Income
 
 - Repository: https://github.com/okTurtles/group-income
 - Group: Protocols
 - Language: JavaScript
 - License: AGPL-3.0
-- Stars: 349
+- Stars: 350
 - Last commit: 2026-10-26
 
 End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum
@@ -1072,10 +1119,22 @@ The GoodDollar wallet: the web and React Native app where people claim their dai
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-10-28
+- Last commit: 2026-10-31
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s
+
+### Ğ1nkgo
+
+- Repository: https://git.duniter.org/clients/ginkgo
+- Group: Apps & wallets
+- Language: Dart
+- License: AGPL-3.0
+- Stars: 8
+- Last commit: 2026-10-31
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
+
+Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
 
 ### Encointer wallet
 
@@ -1087,6 +1146,17 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Last commit: 2026-06-29
 
 Mobile wallet for Encointer: join the in-person meetups, receive the community currency UBI and pay locally
+
+### Social Income
+
+- Repository: https://github.com/socialincome-san/public
+- Group: Apps & wallets
+- Language: TypeScript
+- License: MIT (LICENSE)
+- Stars: 162
+- Last commit: 2026-10-31
+
+Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
 ### World ID protocol
 
@@ -1110,6 +1180,17 @@ Core protocol and developer docs for World ID, the anonymous proof of personhood
 
 Smart contracts for Proof of Humanity v2: a registry of humans built on video submissions, vouching and Kleros disputes, which UBI tokens build on
 
+### Proof of Humanity v1 contracts
+
+- Repository: https://github.com/Proof-Of-Humanity/Proof-Of-Humanity
+- Group: Proof of personhood
+- Language: JavaScript
+- License: MIT
+- Stars: 169
+- Last commit: 2021-07-24 (dormant: no commits in over 12 months)
+
+Smart contracts for the original Proof of Humanity (v1) by Kleros: the registry of humans that the original $UBI token depended on. Proof of Humanity v2 has since succeeded it
+
 ### PolicyEngine US
 
 - Repository: https://github.com/PolicyEngine/policyengine-us
@@ -1117,9 +1198,31 @@ Smart contracts for Proof of Humanity v2: a registry of humans built on video su
 - Language: Python
 - License: AGPL-3.0
 - Stars: 170
-- Last commit: 2026-10-29
+- Last commit: 2026-11-01
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
+
+### PolicyEngine UK
+
+- Repository: https://github.com/PolicyEngine/policyengine-uk
+- Group: Simulators & research
+- Language: Python
+- License: AGPL-3.0
+- Stars: 53
+- Last commit: 2026-10-31
+
+Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
+
+### Tax-Calculator
+
+- Repository: https://github.com/PSLmodels/Tax-Calculator
+- Group: Simulators & research
+- Language: Python
+- License: CC0-1.0 (LICENSE)
+- Stars: 315
+- Last commit: 2026-10-31
+
+Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
 
 ### OpenFisca
 

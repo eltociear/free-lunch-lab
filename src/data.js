@@ -5247,6 +5247,23 @@ module.exports = {
       }
     },
     {
+      "id": "circles-contracts-v1",
+      "group": "protocols",
+      "name": "Circles v1 contracts",
+      "host": "github.com",
+      "repo": "CirclesUBI/circles-contracts",
+      "svc": "circles",
+      "desc": {
+        "ja": "最初の Circles（v1）の UBI コントラクト。一人ひとりの個人通貨がベーシックインカムとして発行され続け、人どうしの信頼で受け渡される。現在は Circles v2 が後を継いでいる",
+        "en": "The original Circles UBI contracts (v1): each person has a personal currency, minted continuously as a basic income and passed on through trust between people. Circles v2 has since succeeded them",
+        "zh": "最初的 Circles（v1）UBI 合约：每个人都有自己的个人货币，作为基本收入持续铸造，并通过人与人之间的信任流转。现已由 Circles v2 接替",
+        "hi": "Circles (v1) के मूल UBI कॉन्ट्रैक्ट: हर व्यक्ति की अपनी निजी मुद्रा, जो बेसिक इनकम के रूप में लगातार बनती है और लोगों के बीच भरोसे से आगे बढ़ती है। अब इसकी जगह Circles v2 ने ले ली है",
+        "es": "Los contratos originales de RBU de Circles (v1): cada persona tiene su propia moneda personal, acuñada de forma continua como renta básica y transmitida gracias a la confianza entre personas. Hoy los sucede Circles v2",
+        "ar": "عقود الدخل الأساسي الأصلية لـ⁦Circles⁩ (الإصدار 1): لكل شخص عملته الشخصية الخاصة، تُصكّ باستمرار كدخل أساسي وتنتقل عبر الثقة بين الناس. حلّت محلها اليوم ⁦Circles v2⁩",
+        "de": "Die ursprünglichen Grundeinkommens-Contracts von Circles (v1): Jeder Mensch hat eine eigene persönliche Währung, die laufend als Grundeinkommen geprägt und über Vertrauen zwischen Menschen weitergegeben wird. Nachfolger ist heute Circles v2"
+      }
+    },
+    {
       "id": "goodprotocol",
       "group": "protocols",
       "name": "GoodProtocol",
@@ -5264,6 +5281,23 @@ module.exports = {
       }
     },
     {
+      "id": "goodcollective",
+      "group": "protocols",
+      "name": "GoodCollective",
+      "host": "github.com",
+      "repo": "GoodDollar/GoodCollective",
+      "svc": "gooddollar",
+      "desc": {
+        "ja": "GoodDollar の上に作られた GoodCollective のコントラクト。決まった人々のグループにベーシックインカムを配る「セグメント型 UBI プール」と、受け取る人に直接支払う「ダイレクトペイメントプール」",
+        "en": "Contracts for GoodCollective, built on GoodDollar: segmented UBI pools that pay a basic income to a defined group of people, and direct-payment pools that pay recipients directly",
+        "zh": "构建在 GoodDollar 之上的 GoodCollective 合约：向特定人群发放基本收入的“分群 UBI 池”，以及直接向收款人付款的“直接支付池”",
+        "hi": "GoodDollar पर बने GoodCollective के कॉन्ट्रैक्ट: तय समूह के लोगों को बेसिक इनकम देने वाले “सेगमेंटेड UBI पूल” और पाने वालों को सीधे भुगतान करने वाले “डायरेक्ट पेमेंट पूल”",
+        "es": "Contratos de GoodCollective, construido sobre GoodDollar: fondos de RBU segmentada que pagan una renta básica a un grupo definido de personas y fondos de pago directo que pagan directamente a quienes la reciben",
+        "ar": "عقود ⁦GoodCollective⁩ المبنية على ⁦GoodDollar⁩: مجمّعات دخل أساسي مجزّأة تدفع دخلًا أساسيًا لمجموعة محددة من الناس، ومجمّعات دفع مباشر تدفع للمستفيدين مباشرة",
+        "de": "Contracts für GoodCollective auf Basis von GoodDollar: segmentierte UBI-Pools, die einer festgelegten Gruppe von Menschen ein Grundeinkommen zahlen, und Direktzahlungs-Pools, die Empfängern direkt auszahlen"
+      }
+    },
+    {
       "id": "duniter-v2s",
       "group": "protocols",
       "name": "Duniter v2s",
@@ -5278,6 +5312,23 @@ module.exports = {
         "es": "Software de nodo de la moneda libre Ğ1, reescrito sobre Substrate: cada miembro de su red de confianza crea un dividendo universal cada día",
         "ar": "برنامج العُقد للعملة الحرة ⁦Ğ1⁩، أعيد بناؤه على ⁦Substrate⁩: ينشئ كل عضو في شبكة الثقة الخاصة بها حصة أرباح شاملة كل يوم",
         "de": "Node-Software der freien Währung Ğ1, neu gebaut auf Substrate: Jedes Mitglied ihres Vertrauensnetzes erzeugt täglich eine universelle Dividende"
+      }
+    },
+    {
+      "id": "duniter-v1",
+      "group": "protocols",
+      "name": "Duniter v1",
+      "host": "git.duniter.org",
+      "repo": "nodes/typescript/duniter",
+      "svc": "g1",
+      "desc": {
+        "ja": "2017年から自由通貨 Ğ1 を動かし、ユニバーサル配当を生み出してきた最初の Duniter ノード（TypeScript 製）。後継は Duniter v2s",
+        "en": "The original Duniter node, written in TypeScript, that has run the Ğ1 libre currency and paid its universal dividend since 2017; Duniter v2s is its successor",
+        "zh": "最初的 Duniter 节点（用 TypeScript 编写），自 2017 年起运行自由货币 Ğ1 并发放全民红利。其后继者是 Duniter v2s",
+        "hi": "मूल Duniter नोड (TypeScript में), जो 2017 से Ğ1 मुक्त मुद्रा चलाता और उसका सार्वभौमिक लाभांश देता आया है; इसका उत्तराधिकारी Duniter v2s है",
+        "es": "El nodo original de Duniter (en TypeScript), que hace funcionar la moneda libre Ğ1 y paga su dividendo universal desde 2017; su sucesor es Duniter v2s",
+        "ar": "عقدة ⁦Duniter⁩ الأصلية (مكتوبة بلغة ⁦TypeScript⁩)، التي تشغّل العملة الحرة ⁦Ğ1⁩ وتدفع حصة أرباحها الشاملة منذ 2017؛ وخليفتها هي ⁦Duniter v2s⁩",
+        "de": "Der ursprüngliche Duniter-Node (in TypeScript), der seit 2017 die freie Währung Ğ1 betreibt und ihre universelle Dividende auszahlt; sein Nachfolger ist Duniter v2s"
       }
     },
     {
@@ -5328,6 +5379,22 @@ module.exports = {
         "es": "Pallets de Substrate detrás de Encointer: monedas comunitarias locales que pagan una RBU a todos los que asisten a encuentros presenciales periódicos",
         "ar": "وحدات ⁦Substrate⁩ التي يقوم عليها ⁦Encointer⁩: عملات مجتمعية محلية تدفع دخلًا أساسيًا لكل من يحضر لقاءات وجاهية دورية",
         "de": "Substrate-Pallets hinter Encointer: lokale Gemeinschaftswährungen, die allen, die regelmäßig zu persönlichen Treffen kommen, ein Grundeinkommen zahlen"
+      }
+    },
+    {
+      "id": "encointer-node",
+      "group": "protocols",
+      "name": "Encointer node",
+      "host": "github.com",
+      "repo": "encointer/encointer-node",
+      "desc": {
+        "ja": "Encointer のブロックチェーンのノードと、コマンドラインのクライアント。Encointer pallets を組み合わせた地域通貨の UBI を動かす",
+        "en": "The Encointer blockchain node and its command-line client, which run the community-currency UBI built from the Encointer pallets",
+        "zh": "Encointer 区块链节点及其命令行客户端，运行由 Encointer pallets 构成的社区货币 UBI",
+        "hi": "Encointer ब्लॉकचेन का नोड और उसका कमांड-लाइन क्लाइंट, जो Encointer पैलेट से बनी सामुदायिक मुद्रा वाली UBI चलाते हैं",
+        "es": "El nodo de la blockchain de Encointer y su cliente de línea de comandos, que hacen funcionar la RBU en monedas comunitarias construida con los pallets de Encointer",
+        "ar": "عقدة سلسلة كتل ⁦Encointer⁩ وعميلها لسطر الأوامر، اللذان يشغّلان الدخل الأساسي بالعملات المجتمعية المبني من وحدات ⁦Encointer⁩",
+        "de": "Der Node der Encointer-Blockchain samt Kommandozeilen-Client, der das aus den Encointer-Pallets gebaute Grundeinkommen in Gemeinschaftswährungen betreibt"
       }
     },
     {
@@ -5432,6 +5499,23 @@ module.exports = {
       }
     },
     {
+      "id": "ginkgo",
+      "group": "apps",
+      "name": "Ğ1nkgo",
+      "host": "git.duniter.org",
+      "repo": "clients/ginkgo",
+      "svc": "g1",
+      "desc": {
+        "ja": "Flutter 製の、シンプルで軽い Ğ1 のウォレット。Android とブラウザで Duniter v2 につながり、QR コードで支払える。金額は Ğ1 でもユニバーサル配当の単位でも表示でき、信頼の網の認証も管理できる",
+        "en": "Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications",
+        "zh": "用 Flutter 开发的简洁轻量 Ğ1 钱包，可在 Android 和浏览器中使用，运行于 Duniter v2：扫二维码付款，金额可按 Ğ1 或全民红利单位显示，还能管理信任网络的认证",
+        "hi": "Flutter में बना सरल, हल्का Ğ1 वॉलेट, जो Android और ब्राउज़र में Duniter v2 पर चलता है: QR कोड से भुगतान, रकम Ğ1 या सार्वभौमिक लाभांश की इकाई में दिखाना, और भरोसे के जाल के प्रमाणन संभालना",
+        "es": "Monedero de Ğ1 sencillo y ligero, hecho con Flutter para Android y el navegador, que funciona sobre Duniter v2: paga con código QR, muestra los importes en Ğ1 o en dividendos universales y gestiona las certificaciones de la red de confianza",
+        "ar": "محفظة ⁦Ğ1⁩ بسيطة وخفيفة مبنية بـ⁦Flutter⁩ لنظام ⁦Android⁩ والمتصفح، تعمل على ⁦Duniter v2⁩: ادفع برمز ⁦QR⁩، واعرض المبالغ بـ⁦Ğ1⁩ أو بوحدات حصة الأرباح الشاملة، وأدِر شهادات شبكة الثقة",
+        "de": "Schlanke, einfache Ğ1-Wallet, mit Flutter gebaut, für Android und den Browser auf Duniter v2: per QR-Code bezahlen, Beträge in Ğ1 oder in universellen Dividenden anzeigen und Zertifizierungen im Vertrauensnetz verwalten"
+      }
+    },
+    {
       "id": "encointer-wallet",
       "group": "apps",
       "name": "Encointer wallet",
@@ -5445,6 +5529,23 @@ module.exports = {
         "es": "Billetera móvil de Encointer: únete a los encuentros presenciales, recibe la RBU en moneda comunitaria y paga en tu zona",
         "ar": "محفظة جوال لـ⁦Encointer⁩: انضم إلى اللقاءات الوجاهية، واستلم الدخل الأساسي بالعملة المجتمعية، وادفع محليًا",
         "de": "Mobile Wallet für Encointer: an den persönlichen Treffen teilnehmen, das Grundeinkommen in Gemeinschaftswährung erhalten und vor Ort bezahlen"
+      }
+    },
+    {
+      "id": "social-income",
+      "group": "apps",
+      "name": "Social Income",
+      "host": "github.com",
+      "repo": "socialincome-san/public",
+      "licenseNote": "MIT (LICENSE)",
+      "desc": {
+        "ja": "NGO「Social Income」のコード。寄付を、シエラレオネなどグローバルサウスの人々のスマートフォンに届く無条件のベーシックインカムに変える。ウェブサイト、管理ツール、受け取る人のアプリが入っている",
+        "en": "Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app",
+        "zh": "NGO Social Income 的代码：把捐款变成无条件基本收入，直接发到全球南方（塞拉利昂）人们的手机上。仓库包含网站、管理工具和受助者应用",
+        "hi": "NGO Social Income का कोड: यह दान को बिना शर्त बेसिक इनकम में बदलकर ग्लोबल साउथ (सिएरा लियोन) के लोगों के मोबाइल फ़ोन पर भेजता है; रिपॉज़िटरी में वेबसाइट, एडमिन टूल और पाने वालों का ऐप है",
+        "es": "Código de la ONG Social Income, que convierte donaciones en una renta básica incondicional enviada a teléfonos móviles en el Sur Global (Sierra Leona); el repositorio incluye la web, las herramientas de administración y la app para quienes la reciben",
+        "ar": "شيفرة منظمة ⁦Social Income⁩ غير الربحية، التي تحوّل التبرعات إلى دخل أساسي غير مشروط يُرسل إلى الهواتف المحمولة في دول الجنوب العالمي (سيراليون)؛ يضم المستودع الموقع وأدوات الإدارة وتطبيق المستفيدين",
+        "de": "Code der NGO Social Income, die Spenden in ein bedingungsloses Grundeinkommen verwandelt, das aufs Handy von Menschen im Globalen Süden (Sierra Leone) geht; das Repository enthält Website, Admin-Werkzeuge und die App für die Empfänger"
       }
     },
     {
@@ -5482,6 +5583,22 @@ module.exports = {
       }
     },
     {
+      "id": "poh-v1",
+      "group": "personhood",
+      "name": "Proof of Humanity v1 contracts",
+      "host": "github.com",
+      "repo": "Proof-Of-Humanity/Proof-Of-Humanity",
+      "desc": {
+        "ja": "Kleros による最初の Proof of Humanity（v1）のスマートコントラクト。最初の $UBI トークンが頼っていた人間の名簿。現在は Proof of Humanity v2 が後を継いでいる",
+        "en": "Smart contracts for the original Proof of Humanity (v1) by Kleros: the registry of humans that the original $UBI token depended on. Proof of Humanity v2 has since succeeded it",
+        "zh": "Kleros 最初的 Proof of Humanity（v1）智能合约：最早的 $UBI 代币所依赖的人类登记名册。现已由 Proof of Humanity v2 接替",
+        "hi": "Kleros के मूल Proof of Humanity (v1) के स्मार्ट कॉन्ट्रैक्ट: इंसानों की वह रजिस्ट्री जिस पर पहला $UBI टोकन निर्भर था। अब इसकी जगह Proof of Humanity v2 ने ले ली है",
+        "es": "Contratos inteligentes del Proof of Humanity original (v1) de Kleros: el registro de humanos del que dependía el primer token $UBI. Hoy lo sucede Proof of Humanity v2",
+        "ar": "العقود الذكية لـ⁦Proof of Humanity⁩ الأصلي (الإصدار 1) من ⁦Kleros⁩: سجل البشر الذي اعتمد عليه رمز ⁦$UBI⁩ الأول. حلّ محله اليوم ⁦Proof of Humanity v2⁩",
+        "de": "Smart Contracts des ursprünglichen Proof of Humanity (v1) von Kleros: das Register von Menschen, auf das der erste $UBI-Token angewiesen war. Nachfolger ist heute Proof of Humanity v2"
+      }
+    },
+    {
       "id": "policyengine-us",
       "group": "research",
       "name": "PolicyEngine US",
@@ -5495,6 +5612,39 @@ module.exports = {
         "es": "Motor de reglas del sistema fiscal y de prestaciones de EE. UU., usado para modelar el coste y el efecto sobre la pobreza de la RBU y otras reformas",
         "ar": "محرك قواعد لنظام الضرائب والإعانات الأمريكي، يُستخدم لنمذجة تكلفة الدخل الأساسي وغيره من الإصلاحات وأثرها على الفقر",
         "de": "Regel-Engine für das US-Steuer- und Sozialleistungssystem, mit der Kosten und Armutswirkung eines Grundeinkommens und anderer Reformen modelliert werden"
+      }
+    },
+    {
+      "id": "policyengine-uk",
+      "group": "research",
+      "name": "PolicyEngine UK",
+      "host": "github.com",
+      "repo": "PolicyEngine/policyengine-uk",
+      "desc": {
+        "ja": "英国の税と社会保障の制度を再現するマイクロシミュレーションのモデル。UBI Center のベーシックインカムのパラメーターを含み、UBI 案の費用や貧困への影響の試算に使われる",
+        "en": "Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals",
+        "zh": "英国税收与福利制度的微观模拟模型，包含 UBI Center 的基本收入参数，用于估算 UBI 方案的成本及其对贫困的影响",
+        "hi": "ब्रिटेन की कर और लाभ व्यवस्था का माइक्रोसिमुलेशन मॉडल, जिसमें UBI Center के बेसिक इनकम पैरामीटर शामिल हैं; इसका इस्तेमाल UBI प्रस्तावों की लागत और ग़रीबी पर असर के अनुमान में होता है",
+        "es": "Modelo de microsimulación del sistema fiscal y de prestaciones del Reino Unido, con los parámetros de renta básica del UBI Center; se usa para estimar el coste y el efecto sobre la pobreza de propuestas de RBU",
+        "ar": "نموذج محاكاة جزئية لنظام الضرائب والإعانات في المملكة المتحدة، يضم معلمات الدخل الأساسي الخاصة بـ⁦UBI Center⁩، ويُستخدم لتقدير تكلفة مقترحات الدخل الأساسي وأثرها على الفقر",
+        "de": "Mikrosimulationsmodell des britischen Steuer- und Sozialleistungssystems mit den Grundeinkommens-Parametern des UBI Center; damit werden Kosten und Armutswirkung von Grundeinkommensvorschlägen geschätzt"
+      }
+    },
+    {
+      "id": "tax-calculator",
+      "group": "research",
+      "name": "Tax-Calculator",
+      "host": "github.com",
+      "repo": "PSLmodels/Tax-Calculator",
+      "licenseNote": "CC0-1.0 (LICENSE)",
+      "desc": {
+        "ja": "米国の連邦所得税と給与税のマイクロシミュレーションのモデル。子ども向けの UBI_u18 などの UBI パラメーターが組み込まれていて、ベーシックインカムの費用や分配への影響を試算できる",
+        "en": "Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income",
+        "zh": "美国联邦所得税和工资税的微观模拟模型，内置 UBI 参数（如面向儿童的 UBI_u18），可用来估算基本收入的成本和分配效应",
+        "hi": "अमेरिका के संघीय आयकर और पेरोल टैक्स का माइक्रोसिमुलेशन मॉडल, जिसमें UBI के पैरामीटर (जैसे बच्चों के लिए UBI_u18) पहले से हैं; इससे बेसिक इनकम की लागत और वितरण पर असर का अनुमान लगाया जा सकता है",
+        "es": "Modelo de microsimulación de los impuestos federales de EE. UU. sobre la renta y la nómina, con parámetros de RBU incorporados (como UBI_u18 para menores) para estimar el coste y los efectos distributivos de una renta básica",
+        "ar": "نموذج محاكاة جزئية لضرائب الدخل والرواتب الفيدرالية في الولايات المتحدة، مزوّد بمعلمات دخل أساسي مدمجة (مثل ⁦UBI_u18⁩ للأطفال) لتقدير تكلفة الدخل الأساسي وآثاره التوزيعية",
+        "de": "Mikrosimulationsmodell der US-Bundeseinkommen- und Lohnsteuern mit eingebauten Grundeinkommens-Parametern (etwa UBI_u18 für Kinder), um Kosten und Verteilungswirkung eines Grundeinkommens zu schätzen"
       }
     },
     {

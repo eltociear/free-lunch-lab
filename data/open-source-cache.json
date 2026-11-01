@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-10-29",
+  "fetchedOn": "2026-11-01",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium2s": {
       "stars": 6,
@@ -10,17 +10,38 @@
     },
     "git.duniter.org:clients/gecko": {
       "stars": 8,
-      "lastCommit": "2026-10-28",
+      "lastCommit": "2026-10-31",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "Dart"
+    },
+    "git.duniter.org:clients/ginkgo": {
+      "stars": 8,
+      "lastCommit": "2026-10-31",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Dart"
     },
     "git.duniter.org:nodes/rust/duniter-v2s": {
       "stars": 10,
-      "lastCommit": "2026-10-16",
+      "lastCommit": "2026-10-30",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Rust"
+    },
+    "git.duniter.org:nodes/typescript/duniter": {
+      "stars": 8,
+      "lastCommit": "2023-06-12",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "TypeScript"
+    },
+    "github.com:CirclesUBI/circles-contracts": {
+      "stars": 78,
+      "lastCommit": "2023-07-03",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "JavaScript"
     },
     "github.com:DemocracyEarth/ubi": {
       "stars": 231,
@@ -35,6 +56,13 @@
       "archived": false,
       "license": "MIT",
       "language": "Rust"
+    },
+    "github.com:GoodDollar/GoodCollective": {
+      "stars": 16,
+      "lastCommit": "2026-10-28",
+      "archived": false,
+      "license": "MIT",
+      "language": "TypeScript"
     },
     "github.com:GoodDollar/GoodDAPP": {
       "stars": 135,
@@ -57,12 +85,33 @@
       "license": "MIT",
       "language": "Jupyter Notebook"
     },
-    "github.com:PolicyEngine/policyengine-us": {
-      "stars": 170,
-      "lastCommit": "2026-10-29",
+    "github.com:PSLmodels/Tax-Calculator": {
+      "stars": 315,
+      "lastCommit": "2026-10-31",
+      "archived": false,
+      "license": null,
+      "language": "Python"
+    },
+    "github.com:PolicyEngine/policyengine-uk": {
+      "stars": 53,
+      "lastCommit": "2026-10-31",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
+    },
+    "github.com:PolicyEngine/policyengine-us": {
+      "stars": 170,
+      "lastCommit": "2026-11-01",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "Python"
+    },
+    "github.com:Proof-Of-Humanity/Proof-Of-Humanity": {
+      "stars": 169,
+      "lastCommit": "2021-07-24",
+      "archived": false,
+      "license": "MIT",
+      "language": "JavaScript"
     },
     "github.com:Proof-Of-Humanity/proof-of-humanity-v2-contracts": {
       "stars": 22,
@@ -77,6 +126,13 @@
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Solidity"
+    },
+    "github.com:encointer/encointer-node": {
+      "stars": 25,
+      "lastCommit": "2026-02-22",
+      "archived": false,
+      "license": "Apache-2.0",
+      "language": "Rust"
     },
     "github.com:encointer/encointer-wallet-flutter": {
       "stars": 27,
@@ -94,7 +150,7 @@
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-10-29",
+      "lastCommit": "2026-10-31",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"
@@ -107,7 +163,7 @@
       "language": "Go"
     },
     "github.com:okTurtles/group-income": {
-      "stars": 349,
+      "stars": 350,
       "lastCommit": "2026-10-26",
       "archived": false,
       "license": "AGPL-3.0",
@@ -119,6 +175,13 @@
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
+    },
+    "github.com:socialincome-san/public": {
+      "stars": 162,
+      "lastCommit": "2026-10-31",
+      "archived": false,
+      "license": null,
+      "language": "TypeScript"
     },
     "github.com:worldcoin/world-id-protocol": {
       "stars": 42,
