@@ -223,7 +223,8 @@ function contactLine(s, lang) {
 const warnOf = (s, lang) => (s[lang] || s.en).warning;
 function cta(s, L, { lang, toWarn = false } = {}) {
   if (toWarn && warnOf(s, lang)) return `<a class="btn warn-go" href="${svcPath(lang, s)}#warn">${esc(L.goWarn)}</a>`;
-  const label = s.codeOnly ? L.goCode : s.ref ? L.goRef : L.goOff;
+  // codeOnly: 'agent' は、コードをアプリではなく AI エージェントの登録時に渡すサービス
+  const label = s.codeOnly ? (s.codeOnly === 'agent' ? L.goCodeAgent : L.goCode) : s.ref ? L.goRef : L.goOff;
   const kind = s.ref || s.code ? 'ref' : 'off';
   return `<a class="btn solid ${kind}" href="${esc(s.ref || s.official)}" target="_blank" rel="noopener${s.ref && !s.codeOnly ? ' sponsored' : ''}">${esc(label)}</a>`;
 }

@@ -805,6 +805,31 @@ What you need: Install Brave, turn on Brave Rewards and Brave Ads, and link a ve
 
 Cautions: Amounts are small. Brave’s BAT Roadmap 4.0 (Jul 2026) says notification ads will begin a gradual sunset by the end of 2026, with rewards shifting to offers, purchases and wallet activity (it says users will keep earning from eligible Brave Ads). The BAT price fluctuates; to get yen you sell it on bitFlyer
 
+### AIBTC
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/aibtc/
+- Category: For AI agents
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: No verification
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: With conditions
+- Last checked: 2026-11
+- Official URL: https://aibtc.com/
+- Referral link (maintainer's own referral; not covered by the content license): https://aibtc.com/
+- Referral code (maintainer's own): W87V2D
+
+A network where AI agents, run by humans, hold Bitcoin and Stacks wallets and earn sBTC. The bounty board mostly posts security audits of Clarity smart contracts, and the winner’s wallet is paid. 73 bounties paid, 495,700 sats in total (as of Nov 2, 2026), each verifiable on-chain
+
+What you get: sBTC bounties (pegged 1:1 to bitcoin)
+
+What you need: Set up with Claude Code and the MCP server @aibtc/mcp-server. Registration is free (Level 1); only sending a new message costs 100 sats. An X post makes you Genesis (Level 2) (sign-up from Japan confirmed in Nov 2026)
+
+Cautions: Winning bounties takes a coding agent and skill, and the amounts are small (150–21,000 sats each). 28 bounties are marked abandoned and were never paid (as of Nov 2, 2026). Keys and the seed phrase stay only on your machine, with no recovery. The optional check-in loop every ~5 minutes uses your AI usage. A referral code covers only 3 agents. Never fund more than you can lose
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/moltbook-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
+
 ## Essays
 
 ### How AI agents talk about basic income on their own social network

@@ -62,6 +62,7 @@
 - [Sible Network ($SIB)](https://neteru-nyukin.eltociear.workers.dev/services/siblenetwork/): SIBLE ($SIB) mining balance (not tradable). A Pi Network-style “AI mining” app where you tap to start mining sessions (Passive apps; available in Japan and worldwide; verification: not specified)
 - [Perceptron Network (formerly BlockMesh)](https://neteru-nyukin.eltociear.workers.dev/services/perceptron/): Points (no PERC token yet). A decentralized network that gathers AI training data (Passive apps; available in Japan and worldwide; verification: No verification)
 - [Brave Rewards (Brave browser)](https://neteru-nyukin.eltociear.workers.dev/services/braverewards/): BAT (Basic Attention Token). Opt in to privacy-preserving Brave Ads in the Brave browser to earn BAT (Passive apps; available in Japan and worldwide; verification: ID document KYC)
+- [AIBTC](https://neteru-nyukin.eltociear.workers.dev/services/aibtc/): sBTC bounties (pegged 1:1 to bitcoin). A network where AI agents, run by humans, hold Bitcoin and Stacks wallets and earn sBTC (For AI agents; available in Japan and worldwide; verification: No verification)
 
 ## Guides
 

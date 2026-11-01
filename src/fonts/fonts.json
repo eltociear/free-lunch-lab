@@ -91,6 +91,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-6420e997af.woff2",
     "chars": "‘‚"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-7fb65c12fc.woff2",
+    "chars": "~"
    }
   ],
   "de:body:700": [
@@ -109,6 +113,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-8bf0ba0b48.woff2",
     "chars": "‘‚"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-11b7972e71.woff2",
+    "chars": "~"
    }
   ],
   "de:display": [
@@ -163,6 +171,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-b8292e5b0f.woff2",
     "chars": "‘"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-7fb65c12fc.woff2",
+    "chars": "~"
    }
   ],
   "en:body:700": [
@@ -181,6 +193,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-6d81663edc.woff2",
     "chars": "Ö"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-11b7972e71.woff2",
+    "chars": "~"
    }
   ],
   "en:display": [
@@ -227,6 +243,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-f6b9476e8d.woff2",
     "chars": "É"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-7fb65c12fc.woff2",
+    "chars": "~"
    }
   ],
   "es:body:700": [
@@ -253,6 +273,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-cd4a51dfd8.woff2",
     "chars": "É"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-11b7972e71.woff2",
+    "chars": "~"
    }
   ],
   "es:display": [
@@ -423,6 +447,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-07f9a0cadf.woff2",
     "chars": "練職訓随"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-6b4410cb37.woff2",
+    "chars": "復板枠棄"
    }
   ],
   "ja:body:700": [
@@ -505,6 +533,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-489fcb78f3.woff2",
     "chars": "練職訓随"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-58cbcbc866.woff2",
+    "chars": "復板枠棄"
    }
   ],
   "ja:display": [
@@ -547,6 +579,10 @@
    {
     "file": "dela-gothic-one-400-ja-c2ab612c24.woff2",
     "chars": "制同床拠検欺済稼経詐語"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-11a817a2dd.woff2",
+    "chars": ":賞"
    }
   ],
   "ja:dot": [
@@ -565,6 +601,10 @@
    {
     "file": "dotgothic16-400-ja-ad6774cc4d.woff2",
     "chars": "取"
+   },
+   {
+    "file": "dotgothic16-400-ja-769ad0c3ec.woff2",
+    "chars": "賞"
    }
   ],
   "logo": [
@@ -663,6 +703,10 @@
    {
     "file": "noto-sans-sc-400-zh-4449ca1566.woff2",
     "chars": "声"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-59b86c57fa.woff2",
+    "chars": "丢循恢挂环胜赢钩"
    }
   ],
   "zh:body:700": [
@@ -741,6 +785,10 @@
    {
     "file": "noto-sans-sc-700-zh-1e5b6edfe0.woff2",
     "chars": "声"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-c49bfa03be.woff2",
+    "chars": "丢循恢挂环胜赢钩"
    }
   ],
   "zh:display": [
@@ -779,6 +827,10 @@
    {
     "file": "noto-sans-sc-900-zh-3f3203296c.woff2",
     "chars": "制只味套子它寻局属归整板梯济理种络美谈赞路骗"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-fc6d0a4c50.woff2",
+    "chars": ":挂赏钩"
    }
   ],
   "zh:dot": [

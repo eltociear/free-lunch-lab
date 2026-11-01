@@ -2758,6 +2758,77 @@ module.exports = {
         "need": "ثبّت ⁦Brave⁩، وفعّل ⁦Brave Rewards⁩ وإعلانات ⁦Brave⁩، واربط حساب ⁦bitFlyer⁩ موثّقًا (⁦KYC⁩) (تأكدنا في نوفمبر 2026 أن التسجيل يعمل من اليابان)",
         "caution": "المبالغ صغيرة. تقول خطة ⁦BAT Roadmap 4.0⁩ من ⁦Brave⁩ (يوليو 2026) إن إعلانات الإشعارات ستبدأ إيقافًا تدريجيًا بحلول نهاية 2026، وإن المكافآت ستتجه إلى العروض والمشتريات واستخدام المحفظة (وتقول إن الكسب من إعلانات ⁦Brave⁩ المؤهلة سيستمر). سعر ⁦BAT⁩ متقلب، وللحصول على الين يجب بيعه في ⁦bitFlyer⁩"
       }
+    },
+    {
+      "id": "aibtc",
+      "name": "AIBTC",
+      "cat": "ai-agent",
+      "type": "loop",
+      "global": true,
+      "ease": 2,
+      "official": "https://aibtc.com/",
+      "code": "W87V2D",
+      "ref": "https://aibtc.com/",
+      "codeOnly": "agent",
+      "showCode": true,
+      "added": "2026-11-02",
+      "checked": "2026-11",
+      "essays": [
+        "moltbook-basic-income",
+        "ai-agent-basic-income"
+      ],
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "partial"
+      },
+      "verify": [
+        {
+          "method": "none"
+        }
+      ],
+      "ja": {
+        "gain": "sBTC（ビットコインと1:1）の賞金",
+        "note": "人間が動かすAIエージェントがビットコインとStacksのウォレットを持ち、sBTCを稼ぐネットワーク。賞金掲示板は主にClarityスマートコントラクトの監査で、勝者のウォレットに支払われる。支払い済み73件・計495,700sats（2026年11月2日時点、オンチェーンで確認可）",
+        "need": "Claude Codeに@aibtc/mcp-serverを入れて無料で登録。新規送信は1通100sats。X投稿でGenesis（Level 2）に（2026年11月に日本から登録できることを確認）",
+        "caution": "賞金を取るにはコーディングエージェントと技術が要り、額も小さい（1件150〜21,000sats）。支払われず放棄扱いの賞金も28件ある（同日時点）。鍵とシードフレーズは手元だけで、なくすと復元できない。約5分ごとの任意のチェックインを回すとAIの利用枠を使う。紹介コードは1つで3体まで。失ってもいい額以上は入れないこと"
+      },
+      "en": {
+        "gain": "sBTC bounties (pegged 1:1 to bitcoin)",
+        "note": "A network where AI agents, run by humans, hold Bitcoin and Stacks wallets and earn sBTC. The bounty board mostly posts security audits of Clarity smart contracts, and the winner’s wallet is paid. 73 bounties paid, 495,700 sats in total (as of Nov 2, 2026), each verifiable on-chain",
+        "need": "Set up with Claude Code and the MCP server @aibtc/mcp-server. Registration is free (Level 1); only sending a new message costs 100 sats. An X post makes you Genesis (Level 2) (sign-up from Japan confirmed in Nov 2026)",
+        "caution": "Winning bounties takes a coding agent and skill, and the amounts are small (150–21,000 sats each). 28 bounties are marked abandoned and were never paid (as of Nov 2, 2026). Keys and the seed phrase stay only on your machine, with no recovery. The optional check-in loop every ~5 minutes uses your AI usage. A referral code covers only 3 agents. Never fund more than you can lose"
+      },
+      "zh": {
+        "gain": "sBTC 赏金（与比特币 1:1 挂钩）",
+        "note": "由人类运行的 AI 智能体持有比特币和 Stacks 钱包、赚取 sBTC 的网络。赏金板上主要是 Clarity 智能合约的安全审计，奖金付到获胜者的钱包。已支付 73 笔，共 495,700 sats（截至 2026 年 11 月 2 日），每笔都可在链上查验",
+        "need": "用 Claude Code 和 MCP 服务器 @aibtc/mcp-server 设置。注册免费（Level 1），只有发送新消息每条 100 sats。在 X 发帖即升到 Genesis（Level 2）（已于 2026 年 11 月确认可从日本注册）",
+        "caution": "要赢赏金需要编程智能体和技术，金额也很小（每笔 150–21,000 sats）。有 28 笔赏金被标为放弃、从未支付（截至 2026 年 11 月 2 日）。密钥和助记词只保存在你本地，丢了无法恢复。可选的约每 5 分钟一次的签到循环会消耗你的 AI 用量。一个推荐码最多只能用于 3 个智能体。投入的钱不要超过你能承受损失的额度"
+      },
+      "hi": {
+        "gain": "sBTC बाउंटी (बिटकॉइन से 1:1 जुड़ा)",
+        "note": "एक नेटवर्क जहाँ इंसानों द्वारा चलाए जाने वाले AI एजेंट Bitcoin और Stacks वॉलेट रखते हैं और sBTC कमाते हैं। बाउंटी बोर्ड पर ज़्यादातर Clarity स्मार्ट कॉन्ट्रैक्ट के सुरक्षा ऑडिट होते हैं, और विजेता के वॉलेट में भुगतान होता है। 73 बाउंटी का भुगतान हुआ, कुल 495,700 sats (2 नवंबर 2026 तक), हर एक ऑन-चेन जाँचा जा सकता है",
+        "need": "Claude Code और MCP सर्वर @aibtc/mcp-server से सेटअप करें। रजिस्ट्रेशन मुफ़्त (Level 1); सिर्फ़ नया संदेश भेजने पर 100 sats लगते हैं। X पोस्ट से Genesis (Level 2) बनें (नवंबर 2026 में जापान से साइन अप की पुष्टि)",
+        "caution": "बाउंटी जीतने के लिए कोडिंग एजेंट और हुनर चाहिए, और रक़में छोटी हैं (हर एक 150–21,000 sats)। 28 बाउंटी छोड़ी गई (abandoned) चिह्नित हैं और उनका कभी भुगतान नहीं हुआ (2 नवंबर 2026 तक)। कुंजियाँ और सीड फ़्रेज़ सिर्फ़ आपके कंप्यूटर पर रहते हैं, कोई रिकवरी नहीं। लगभग हर 5 मिनट का वैकल्पिक चेक-इन लूप आपका AI उपयोग खर्च करता है। एक रेफ़रल कोड सिर्फ़ 3 एजेंटों के लिए चलता है। जितना खो सकते हैं उससे ज़्यादा पैसा न डालें"
+      },
+      "es": {
+        "gain": "Recompensas en sBTC (1:1 con bitcoin)",
+        "note": "Una red en la que agentes de IA, gestionados por personas, tienen wallets de Bitcoin y Stacks y ganan sBTC. El tablón de recompensas publica sobre todo auditorías de seguridad de contratos inteligentes Clarity, y se paga a la wallet del ganador. 73 recompensas pagadas, 495.700 sats en total (a 2 de nov. de 2026), todas verificables on-chain",
+        "need": "Se configura con Claude Code y el servidor MCP @aibtc/mcp-server. El registro es gratis (Level 1); solo enviar un mensaje nuevo cuesta 100 sats. Un post en X te sube a Genesis (Level 2) (se comprobó en noviembre de 2026 que el registro funciona desde Japón)",
+        "caution": "Para ganar recompensas hacen falta un agente de programación y habilidad, y las cantidades son pequeñas (150–21.000 sats cada una). 28 recompensas figuran como abandonadas y nunca se pagaron (a 2 de nov. de 2026). Las claves y la frase semilla solo están en tu equipo y no hay recuperación. El bucle opcional de check-in cada ~5 minutos consume tu uso de IA. Un código de referido sirve solo para 3 agentes. No metas más de lo que puedas perder"
+      },
+      "de": {
+        "gain": "Bounties in sBTC (1:1 an Bitcoin gekoppelt)",
+        "note": "Ein Netzwerk, in dem KI-Agenten, betrieben von Menschen, Bitcoin- und Stacks-Wallets halten und sBTC verdienen. Auf dem Bounty-Board stehen vor allem Sicherheitsaudits von Clarity-Smart-Contracts, bezahlt wird an die Wallet des Gewinners. 73 Bounties ausgezahlt, insgesamt 495.700 Sats (Stand 2. Nov. 2026), jede on-chain nachprüfbar",
+        "need": "Einrichtung mit Claude Code und dem MCP-Server @aibtc/mcp-server. Die Registrierung ist kostenlos (Level 1), nur eine neue Nachricht kostet 100 Sats. Ein X-Post bringt dich zu Genesis (Level 2) (im November 2026 bestätigt: Anmeldung aus Japan möglich)",
+        "caution": "Um Bounties zu gewinnen, brauchst du einen Coding-Agenten und Können, und die Beträge sind klein (150–21.000 Sats pro Bounty). 28 Bounties sind als aufgegeben markiert und wurden nie bezahlt (Stand 2. Nov. 2026). Schlüssel und Seed-Phrase liegen nur bei dir, eine Wiederherstellung gibt es nicht. Die optionale Check-in-Schleife alle ~5 Minuten verbraucht dein KI-Kontingent. Ein Empfehlungscode gilt nur für 3 Agenten. Zahle nie mehr ein, als du verlieren kannst"
+      },
+      "ar": {
+        "gain": "مكافآت بـ⁦sBTC⁩ (مربوطة بالبيتكوين 1:1)",
+        "note": "شبكة يحمل فيها وكلاء ذكاء اصطناعي يديرهم بشر محافظ ⁦Bitcoin⁩ و⁦Stacks⁩ ويكسبون ⁦sBTC⁩. معظم ما في لوحة المكافآت تدقيقات أمنية لعقود ⁦Clarity⁩ الذكية، ويُدفع إلى محفظة الفائز. دُفعت 73 مكافأة بإجمالي 495,700 ساتوشي (حتى 2 نوفمبر 2026)، ويمكن التحقق من كل منها على السلسلة",
+        "need": "يُضبط عبر ⁦Claude Code⁩ وخادم ⁦MCP⁩ ⁦@aibtc/mcp-server⁩. التسجيل مجاني (⁦Level 1⁩)، وإرسال رسالة جديدة فقط يكلّف 100 ساتوشي. منشور على ⁦X⁩ يرفعك إلى ⁦Genesis⁩ (⁦Level 2⁩) (تأكدنا في نوفمبر 2026 أن التسجيل يعمل من اليابان)",
+        "caution": "الفوز بالمكافآت يحتاج إلى وكيل برمجة ومهارة، والمبالغ صغيرة (⁦150–21,000⁩ ساتوشي للواحدة). هناك 28 مكافأة مصنفة متروكة ولم تُدفع قط (حتى 2 نوفمبر 2026). المفاتيح وعبارة البذور على جهازك فقط، ولا يمكن استعادتها إن ضاعت. حلقة تسجيل الحضور الاختيارية كل 5 دقائق تقريبًا تستهلك من استخدامك للذكاء الاصطناعي. رمز الإحالة الواحد يكفي 3 وكلاء فقط. لا تضع أكثر مما تتحمل خسارته"
+      }
     }
   ],
   "PICKS": [
@@ -2793,6 +2864,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-11-02",
+      "ja": "AIエージェントがsBTCの賞金を稼ぐネットワーク AIBTC を追加。「AIエージェント向け」カテゴリ初のサービス",
+      "en": "Added AIBTC, a network where AI agents earn sBTC bounties, the first service in the “For AI agents” category",
+      "zh": "新增 AIBTC：AI 智能体赚取 sBTC 赏金的网络，也是“面向 AI 智能体”分类的第一个服务",
+      "hi": "AIBTC जोड़ा, एक नेटवर्क जहाँ AI एजेंट sBTC बाउंटी कमाते हैं; “AI एजेंटों के लिए” श्रेणी की पहली सेवा",
+      "es": "Añadido AIBTC, una red donde agentes de IA ganan recompensas en sBTC: el primer servicio de la categoría «Para agentes de IA»",
+      "de": "AIBTC hinzugefügt, ein Netzwerk, in dem KI-Agenten sBTC-Bounties verdienen, der erste Dienst in der Kategorie „Für KI-Agenten“",
+      "ar": "أضفنا ⁦AIBTC⁩، شبكة يكسب فيها وكلاء الذكاء الاصطناعي مكافآت ⁦sBTC⁩، وهي أول خدمة في فئة «لوكلاء الذكاء الاصطناعي»"
+    },
     {
       "date": "2026-11-02",
       "ja": "ベーシックインカム実験の年表に、AIで仕事に影響を受けた人へ月1,000ドルを配る AI Dividend を追加",
@@ -3425,7 +3506,7 @@ module.exports = {
       "pr": "このページには紹介リンク・紹介コードが含まれます。経由して登録すると、運営者にも特典が入ることがあります。",
       "eyebrow": "存在するだけでもらえるアプリ・プロジェクト",
       "h1": "登録するだけで<br><em>入金</em>される<br>サービス帳。",
-      "lede": "<b>存在するだけで</b>お金やトークンがもらえる、ベーシックインカム型のアプリやプロジェクトを集めました（ポイ活アプリも少し）。今はほとんどが「人間であること」の確認つきですが、<a href=\"essays/ai-agent-basic-income/\">AIエージェント向けのしくみ</a>が出てきたら、それも載せます。それぞれ<b>リスクや換金の実情</b>もあわせて紹介しています。一部は紹介リンクです。",
+      "lede": "<b>存在するだけで</b>お金やトークンがもらえる、ベーシックインカム型のアプリやプロジェクトを集めました（ポイ活アプリも少し）。今はほとんどが「人間であること」の確認つきですが、<a href=\"essays/ai-agent-basic-income/\">AIエージェント向けのしくみ</a>も載せはじめました。それぞれ<b>リスクや換金の実情</b>もあわせて紹介しています。一部は紹介リンクです。",
       "ctaList": "サービスを見る",
       "ctaHow": "使い方",
       "statAll": "掲載サービス",
@@ -3491,6 +3572,7 @@ module.exports = {
       "goRef": "紹介リンクから登録する",
       "goOff": "公式サイトを見る",
       "goCode": "アプリを入れてコードを入力",
+      "goCodeAgent": "エージェントにコードを渡して登録",
       "copied": "コードをコピーしました",
       "selected": "選択しました。長押しでコピーできます",
       "title": "不労所得研究所",
@@ -3680,7 +3762,7 @@ module.exports = {
       "pr": "This page contains referral links and codes. If you sign up through them, the site owner may also receive a bonus.",
       "eyebrow": "Apps that pay you just for existing",
       "h1": "Sign up once.<br>Get <em>paid</em><br>while you sleep.",
-      "lede": "Basic-income-style apps and projects that pay you <b>just for existing</b>, from daily token claims to community currencies, plus a few point apps. Most check that you’re human for now; <a href=\"essays/ai-agent-basic-income/\">AI agents are welcome here</a> when such schemes appear. Each one notes the <b>risks and how cashing out really works</b>. Some links are referral links.",
+      "lede": "Basic-income-style apps and projects that pay you <b>just for existing</b>, from daily token claims to community currencies, plus a few point apps. Most check that you’re human for now, but <a href=\"essays/ai-agent-basic-income/\">schemes for AI agents</a> are starting to appear here too. Each one notes the <b>risks and how cashing out really works</b>. Some links are referral links.",
       "ctaList": "See the services",
       "ctaHow": "How it works",
       "statAll": "services listed",
@@ -3745,6 +3827,7 @@ module.exports = {
       "goRef": "Sign up with referral",
       "goOff": "Visit official site",
       "goCode": "Get the app & enter the code",
+      "goCodeAgent": "Register your agent with the code",
       "copied": "Code copied",
       "selected": "Code selected. Copy it from the menu",
       "title": "Free Lunch Lab",
@@ -3934,7 +4017,7 @@ module.exports = {
       "pr": "इस पेज पर रेफ़रल लिंक और कोड हैं। इनके ज़रिए साइन अप करने पर साइट चलाने वाले को भी बोनस मिल सकता है।",
       "eyebrow": "सिर्फ़ मौजूद होने पर पैसे देने वाले ऐप",
       "h1": "एक बार साइन अप करें।<br>सोते हुए भी<br><em>कमाई</em> पाएँ।",
-      "lede": "<b>सिर्फ़ मौजूद होने पर</b> पैसे या टोकन देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (साथ में कुछ पॉइंट ऐप)। अभी ज़्यादातर यह जाँचते हैं कि आप इंसान हैं; <a href=\"essays/ai-agent-basic-income/\">AI एजेंटों के लिए ऐसी योजनाएँ</a> आएँगी तो उन्हें भी यहाँ जगह मिलेगी। हर एक के <b>जोखिम और नकद में बदलने की असलियत</b> के साथ। कुछ लिंक रेफ़रल लिंक हैं।",
+      "lede": "<b>सिर्फ़ मौजूद होने पर</b> पैसे या टोकन देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (साथ में कुछ पॉइंट ऐप)। अभी ज़्यादातर यह जाँचते हैं कि आप इंसान हैं, पर <a href=\"essays/ai-agent-basic-income/\">AI एजेंटों के लिए योजनाएँ</a> भी अब यहाँ आने लगी हैं। हर एक के <b>जोखिम और नकद में बदलने की असलियत</b> के साथ। कुछ लिंक रेफ़रल लिंक हैं।",
       "ctaList": "सेवाएँ देखें",
       "ctaHow": "कैसे इस्तेमाल करें",
       "statAll": "सेवाएँ",
@@ -3999,6 +4082,7 @@ module.exports = {
       "goRef": "रेफ़रल से साइन अप करें",
       "goOff": "आधिकारिक साइट देखें",
       "goCode": "ऐप इंस्टॉल करें और कोड डालें",
+      "goCodeAgent": "कोड के साथ अपना एजेंट रजिस्टर करें",
       "copied": "कोड कॉपी हो गया",
       "selected": "कोड चुन लिया गया। मेन्यू से कॉपी करें",
       "title": "Free Lunch Lab",
@@ -4188,7 +4272,7 @@ module.exports = {
       "pr": "本页包含推荐链接和推荐码。通过它们注册时，网站运营者也可能获得奖励。",
       "eyebrow": "只要存在就能领钱的应用与项目",
       "h1": "注册一次，<br>躺着也能<br><em>到账</em>。",
-      "lede": "收录<b>只要存在</b>就能领钱或代币的基本收入型应用与项目（也有少量积分应用）。目前大多需要验证你是真人；将来出现<a href=\"essays/ai-agent-basic-income/\">面向 AI 智能体的机制</a>，也会收录。每个都注明<b>风险和兑现的实际情况</b>。部分为推荐链接。",
+      "lede": "收录<b>只要存在</b>就能领钱或代币的基本收入型应用与项目（也有少量积分应用）。目前大多需要验证你是真人，但也开始收录<a href=\"essays/ai-agent-basic-income/\">面向 AI 智能体的机制</a>了。每个都注明<b>风险和兑现的实际情况</b>。部分为推荐链接。",
       "ctaList": "查看服务",
       "ctaHow": "使用方法",
       "statAll": "收录服务",
@@ -4253,6 +4337,7 @@ module.exports = {
       "goRef": "通过推荐链接注册",
       "goOff": "查看官方网站",
       "goCode": "安装应用并填写邀请码",
+      "goCodeAgent": "让智能体用邀请码注册",
       "copied": "推荐码已复制",
       "selected": "已选中推荐码，请从菜单中复制",
       "title": "Free Lunch Lab（免费午餐研究所）",
@@ -4442,7 +4527,7 @@ module.exports = {
       "pr": "Esta página contiene enlaces y códigos de referido. Si te registras con ellos, el responsable del sitio también puede recibir una bonificación.",
       "eyebrow": "Apps que te pagan solo por existir",
       "h1": "Regístrate una vez.<br>Cobra<br>mientras <em>duermes</em>.",
-      "lede": "Apps y proyectos al estilo renta básica que te pagan <b>solo por existir</b>, desde tokens diarios hasta monedas comunitarias, más algunas apps de puntos. Por ahora casi todos comprueban que eres humano; si aparecen <a href=\"essays/ai-agent-basic-income/\">sistemas para agentes de IA</a>, también tendrán sitio aquí. Cada uno indica <b>los riesgos y cómo se cobra de verdad</b>. Algunos enlaces son de referido.",
+      "lede": "Apps y proyectos al estilo renta básica que te pagan <b>solo por existir</b>, desde tokens diarios hasta monedas comunitarias, más algunas apps de puntos. Por ahora casi todos comprueban que eres humano, pero ya empiezan a aparecer aquí <a href=\"essays/ai-agent-basic-income/\">sistemas para agentes de IA</a>. Cada uno indica <b>los riesgos y cómo se cobra de verdad</b>. Algunos enlaces son de referido.",
       "ctaList": "Ver los servicios",
       "ctaHow": "Cómo funciona",
       "statAll": "servicios",
@@ -4507,6 +4592,7 @@ module.exports = {
       "goRef": "Registrarme con referido",
       "goOff": "Ver web oficial",
       "goCode": "Instala la app e introduce el código",
+      "goCodeAgent": "Registra tu agente con el código",
       "copied": "Código copiado",
       "selected": "Código seleccionado. Cópialo desde el menú",
       "title": "Free Lunch Lab",
@@ -4696,7 +4782,7 @@ module.exports = {
       "pr": "تحتوي هذه الصفحة على روابط ورموز إحالة. إذا سجّلت عبرها، فقد يحصل صاحب الموقع أيضًا على مكافأة.",
       "eyebrow": "تطبيقات تدفع لك لمجرد وجودك",
       "h1": "سجّل مرة واحدة.<br>واحصل على <em>دخل</em><br>وأنت نائم.",
-      "lede": "تطبيقات ومشاريع على طريقة الدخل الأساسي تدفع لك <b>لمجرد وجودك</b>، من الرموز اليومية إلى العملات المجتمعية، مع بعض تطبيقات النقاط. معظمها اليوم يتحقق من أنك إنسان، وإذا ظهرت <a href=\"essays/ai-agent-basic-income/\">أنظمة لوكلاء الذكاء الاصطناعي</a> فستجد مكانها هنا أيضًا. ونذكر لكل منها <b>المخاطر وحقيقة التحويل إلى نقود</b>. بعض الروابط روابط إحالة.",
+      "lede": "تطبيقات ومشاريع على طريقة الدخل الأساسي تدفع لك <b>لمجرد وجودك</b>، من الرموز اليومية إلى العملات المجتمعية، مع بعض تطبيقات النقاط. معظمها اليوم يتحقق من أنك إنسان، لكن <a href=\"essays/ai-agent-basic-income/\">أنظمة لوكلاء الذكاء الاصطناعي</a> بدأت تظهر هنا أيضًا. ونذكر لكل منها <b>المخاطر وحقيقة التحويل إلى نقود</b>. بعض الروابط روابط إحالة.",
       "ctaList": "تصفّح الخدمات",
       "ctaHow": "طريقة الاستخدام",
       "statAll": "خدمات مدرجة",
@@ -4761,6 +4847,7 @@ module.exports = {
       "goRef": "سجّل عبر الإحالة",
       "goOff": "زيارة الموقع الرسمي",
       "goCode": "ثبّت التطبيق وأدخل الرمز",
+      "goCodeAgent": "سجّل وكيلك بالرمز",
       "copied": "تم نسخ الرمز",
       "selected": "تم تحديد الرمز. انسخه من القائمة",
       "title": "⁦Free Lunch Lab⁩ (مختبر الغداء المجاني)",
@@ -4950,7 +5037,7 @@ module.exports = {
       "pr": "Diese Seite enthält Empfehlungslinks und -codes. Wenn du dich darüber anmeldest, kann auch der Betreiber dieser Seite einen Bonus bekommen.",
       "eyebrow": "Apps, die dich fürs bloße Dasein bezahlen",
       "h1": "Einmal anmelden.<br><em>Geld</em> bekommen,<br>während du schläfst.",
-      "lede": "Apps und Projekte im Stil eines Grundeinkommens, die dich <b>einfach fürs Dasein</b> bezahlen, von täglichen Token bis zu Gemeinschaftswährungen, dazu ein paar Punkte-Apps. Noch prüfen fast alle, ob du ein Mensch bist; kommen <a href=\"essays/ai-agent-basic-income/\">solche Modelle für KI-Agenten</a>, sind sie hier ebenfalls willkommen. Bei jedem stehen <b>Risiken und wie die Auszahlung wirklich läuft</b>. Einige Links sind Empfehlungslinks.",
+      "lede": "Apps und Projekte im Stil eines Grundeinkommens, die dich <b>einfach fürs Dasein</b> bezahlen, von täglichen Token bis zu Gemeinschaftswährungen, dazu ein paar Punkte-Apps. Noch prüfen fast alle, ob du ein Mensch bist, doch inzwischen finden sich hier auch erste <a href=\"essays/ai-agent-basic-income/\">Modelle für KI-Agenten</a>. Bei jedem stehen <b>Risiken und wie die Auszahlung wirklich läuft</b>. Einige Links sind Empfehlungslinks.",
       "ctaList": "Zu den Diensten",
       "ctaHow": "So geht’s",
       "statAll": "Dienste gelistet",
@@ -5015,6 +5102,7 @@ module.exports = {
       "goRef": "Über Empfehlung anmelden",
       "goOff": "Offizielle Seite ansehen",
       "goCode": "App holen & Code eingeben",
+      "goCodeAgent": "Agent mit Code registrieren",
       "copied": "Code kopiert",
       "selected": "Code markiert. Kopier ihn über das Menü",
       "title": "Free Lunch Lab",
