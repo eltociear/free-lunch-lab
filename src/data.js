@@ -7417,6 +7417,7 @@ module.exports = {
     },
     {
       "id": "alaska",
+      "essays": ["universal-high-income"],
       "years": "1982–",
       "type": "gov",
       "name": "Alaska Permanent Fund Dividend",
@@ -7546,6 +7547,7 @@ module.exports = {
     },
     {
       "id": "kenya",
+      "essays": ["moltbook-basic-income"],
       "years": "2017–",
       "type": "ngo",
       "name": "GiveDirectly basic income study",
@@ -7719,6 +7721,7 @@ module.exports = {
     },
     {
       "id": "openresearch",
+      "essays": ["universal-high-income", "moltbook-basic-income"],
       "years": "2020–2023",
       "type": "ngo",
       "name": "OpenResearch Unconditional Cash Study",
@@ -7763,6 +7766,7 @@ module.exports = {
     },
     {
       "id": "pilotprojekt",
+      "essays": ["moltbook-basic-income"],
       "years": "2021–2024",
       "type": "ngo",
       "name": "Pilotprojekt Grundeinkommen",
@@ -7851,6 +7855,7 @@ module.exports = {
     },
     {
       "id": "marshall-islands",
+      "essays": ["moltbook-basic-income"],
       "years": "2025–",
       "type": "gov",
       "name": "Enra (Individual Support Distribution)",
@@ -7894,6 +7899,7 @@ module.exports = {
     },
     {
       "id": "ai-dividend",
+      "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income"],
       "years": "2026–",
       "type": "ngo",
       "name": "AI Dividend",
@@ -7937,6 +7943,7 @@ module.exports = {
     },
     {
       "id": "g1",
+      "essays": ["universal-high-income"],
       "years": "2017",
       "type": "crypto",
       "name": "Ğ1 (Duniter)",
@@ -7982,6 +7989,7 @@ module.exports = {
     },
     {
       "id": "circles2",
+      "essays": ["universal-high-income"],
       "years": "2025",
       "type": "crypto",
       "name": "Circles 2.0",
@@ -8027,6 +8035,7 @@ module.exports = {
     },
     {
       "id": "wld-end",
+      "essays": ["universal-high-income"],
       "years": "2026",
       "type": "crypto",
       "name": "World — WLD Airdrop",

@@ -72,10 +72,11 @@ const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
 const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
 const ESSAY_KEYS = ['essaysTitle', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated'];
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
-// related（エッセイ）と essays（サービス）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
+// related（エッセイ）と essays（サービス・年表）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
 const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
 for (const s of SERVICES) for (const id of [].concat(s.essays || [])) if (!ESSAYS.some(x => x.id === id)) throw new Error(`${s.id}: unknown essay ${id}`);
+for (const i of TIMELINE) for (const id of [].concat(i.essays || [])) if (!ESSAYS.some(x => x.id === id)) throw new Error(`timeline ${i.id}: unknown essay ${id}`);
 for (const e of ESSAYS) {
   for (const l of LANGS) for (const f of ['title', 'desc', 'blocks']) if (!e[f][l]) throw new Error(`${e.id}: missing ${f}.${l}`);
   for (const id of [].concat(e.related || [])) if (!ESSAYS.some(x => x.id === id)) throw new Error(`${e.id}: unknown related essay ${id}`);
@@ -1143,8 +1144,9 @@ function timelinePage(lang) {
     const org = i.org && ORGS.find(o => o.id === i.org);
     if (org) links.push(`<a href="${orgPath(lang)}#org-${org.id}">${esc(L.orgsTitle)}: ${esc(org.name)}</a>`);
     if (i.grave) links.push(`<a href="${gravePath(lang)}#grave-${i.grave}">${esc(L.graveTitle)}</a>`);
+    const essays = essayList(i.essays);
     return `<li class="tl-item tl-${i.type}" id="tl-${i.id}"><div class="tl-when"><span class="dot" dir="ltr">${esc(i.years)}</span></div><div class="tl-card"><p class="tl-type">${esc(TYPE[i.type])}</p><h2 dir="auto">${esc(i.name)}</h2><p class="tl-place">${esc(t(i.place))}</p>
-<dl><dt>${esc(L.tlWho)}</dt><dd>${esc(t(i.who))}</dd><dt>${esc(L.tlPaid)}</dt><dd>${esc(t(i.paid))}</dd>${t(i.result) ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(t(i.result))}</dd>` : ''}<dt>${esc(L.tlSource)}</dt><dd><a href="${esc(i.source)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(i.source).hostname.replace(/^www\./, ''))}</a></dd></dl>${links.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${links.join(' · ')}</p>` : ''}</div></li>`;
+<dl><dt>${esc(L.tlWho)}</dt><dd>${esc(t(i.who))}</dd><dt>${esc(L.tlPaid)}</dt><dd>${esc(t(i.paid))}</dd>${t(i.result) ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(t(i.result))}</dd>` : ''}<dt>${esc(L.tlSource)}</dt><dd><a href="${esc(i.source)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(i.source).hostname.replace(/^www\./, ''))}</a></dd></dl>${links.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${links.join(' · ')}</p>` : ''}${essays.length ? `<p class="tl-links"><span>${esc(L.essayRelated)}:</span> ${essays.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : ''}</div></li>`;
   }).join('\n');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.tlTitle)}</li></ol></nav>
 <main class="orgs">
