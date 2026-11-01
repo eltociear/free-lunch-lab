@@ -2581,49 +2581,49 @@ module.exports = {
       "ja": {
         "gain": "SIBLE（$SIB）のマイニング残高（取引はできない）",
         "note": "タップで採掘セッションを始める、Pi Network型「AIマイニング」アプリ。最初は1時間0.1 SIBLE。紹介した人が増えるほど速くなる。総発行量10億枚、4か月ごとに半減とされる。2026年8月ごろ開始。Google Play・App Storeとweb.sible.networkで使える",
-        "need": "紹介リンクから登録し、招待コード「eltociear」を入れると10 SIBLEがもらえる。あとはタップして採掘を始める（2026年10月に日本から登録できることを確認）",
+        "need": "紹介リンクから登録し、招待コード「eltociear」を入れると10 SIBLEがもらえる。あとはタップして採掘を始める（2026年11月に日本から登録できることを確認）",
         "warning": "SIBLEは取引できず、支払いの実績も確認できていません。「元OpenAI・Netflixの人材による米パロアルトのSible Labs」という運営の説明も未確認です。お金を払わないでください。",
         "caution": "どれも運営自身の説明で、裏付けはない。トークンは取引できず、価値がつく保証もない。紹介で採掘が速くなるため、勧誘が中心になりやすい。公式Xは「Scale Network（$SCALE）」の名前も使っていて紛らわしい。アプリの権限やデータの扱いは確認できていない。招待した側（当サイト運営者を含む）は採掘が速くなる"
       },
       "en": {
         "gain": "SIBLE ($SIB) mining balance (not tradable)",
         "note": "A Pi Network-style “AI mining” app where you tap to start mining sessions. It starts at 0.1 SIBLE per hour and speeds up as your referral network grows. Claimed total supply is 1 billion, halving every 4 months. Launched around August 2026. On Google Play, the App Store and web.sible.network",
-        "need": "Sign up via the referral link and enter invite code eltociear to get 10 SIBLE. Then tap to start mining (sign-up from Japan confirmed in Oct 2026)",
+        "need": "Sign up via the referral link and enter invite code eltociear to get 10 SIBLE. Then tap to start mining (sign-up from Japan confirmed in Nov 2026)",
         "warning": "SIBLE can’t be traded and no payouts have been verified. The claim that it is run by Sible Labs, a Palo Alto AI company founded by former OpenAI and Netflix talent, is unverified. Don’t pay anything.",
         "caution": "All of this is the project’s own unverified claims. The token can’t be traded and may never be worth anything. Referrals speed up mining, so growth relies on recruiting. Its X account also uses the name “Scale Network ($SCALE)”, which is confusing. App permissions and data handling have not been checked. Whoever invited you, including this site’s operator, mines faster"
       },
       "zh": {
         "gain": "SIBLE（$SIB）挖矿余额（不可交易）",
         "note": "仿 Pi Network 的“AI 挖矿”应用，点一下即可开始挖矿。初始每小时 0.1 SIBLE，邀请的人越多挖得越快。自称总量 10 亿枚，每 4 个月减半。约 2026 年 8 月上线。可在 Google Play、App Store 和 web.sible.network 使用",
-        "need": "通过邀请链接注册，输入邀请码 eltociear 可获得 10 SIBLE。之后点一下开始挖矿（已于 2026 年 10 月确认可从日本注册）",
+        "need": "通过邀请链接注册，输入邀请码 eltociear 可获得 10 SIBLE。之后点一下开始挖矿（已于 2026 年 11 月确认可从日本注册）",
         "warning": "SIBLE 无法交易，也没有确认过任何实际支付。其自称由“前 OpenAI 和 Netflix 人才在美国帕洛阿尔托创办的 Sible Labs”运营，未经证实。请不要付任何钱。",
         "caution": "以上均为项目方自己的说法，未经证实。代币无法交易，不保证会有价值。邀请能加快挖矿，因此增长依赖拉人。官方 X 还使用“Scale Network（$SCALE）”这个名字，容易混淆。应用的权限和数据处理未经确认。邀请人（包括本站运营者）会挖得更快"
       },
       "hi": {
         "gain": "SIBLE ($SIB) माइनिंग बैलेंस (ट्रेड नहीं हो सकता)",
         "note": "Pi Network जैसा “AI माइनिंग” ऐप, जिसमें टैप करके माइनिंग सेशन शुरू होता है। शुरुआत 0.1 SIBLE प्रति घंटा से होती है और रेफ़रल नेटवर्क बढ़ने पर रफ़्तार बढ़ती है। दावा: कुल सप्लाई 1 अरब, हर 4 महीने में हॉल्विंग। लगभग अगस्त 2026 में शुरू हुआ। Google Play, App Store और web.sible.network पर उपलब्ध",
-        "need": "रेफ़रल लिंक से साइन अप करें और इनवाइट कोड eltociear डालकर 10 SIBLE पाएँ। फिर टैप करके माइनिंग शुरू करें (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)",
+        "need": "रेफ़रल लिंक से साइन अप करें और इनवाइट कोड eltociear डालकर 10 SIBLE पाएँ। फिर टैप करके माइनिंग शुरू करें (नवंबर 2026 में जापान से साइन अप की पुष्टि)",
         "warning": "SIBLE ट्रेड नहीं हो सकता और किसी भुगतान की पुष्टि नहीं हुई है। यह दावा कि इसे पूर्व OpenAI और Netflix लोगों की पालो आल्टो की Sible Labs चलाती है, असत्यापित है। कोई भुगतान न करें।",
         "caution": "ये सब प्रोजेक्ट के अपने असत्यापित दावे हैं। टोकन ट्रेड नहीं हो सकता और शायद कभी कोई क़ीमत न हो। रेफ़रल से माइनिंग तेज़ होती है, इसलिए बढ़त लोगों को जोड़ने पर टिकी है। इसका X अकाउंट “Scale Network ($SCALE)” नाम भी इस्तेमाल करता है, जो भ्रामक है। ऐप की अनुमतियों और डेटा के इस्तेमाल की जाँच नहीं हुई है। आपको बुलाने वाले (इस साइट के संचालक समेत) की माइनिंग तेज़ होती है"
       },
       "es": {
         "gain": "Saldo de minería de SIBLE ($SIB) (no negociable)",
         "note": "Una app de «minería con IA» al estilo de Pi Network: tocas para iniciar sesiones de minado. Empieza en 0,1 SIBLE por hora y acelera a medida que crece tu red de referidos. Dice tener un suministro total de 1.000 millones, con halving cada 4 meses. Lanzada hacia agosto de 2026. En Google Play, App Store y web.sible.network",
-        "need": "Regístrate con el enlace de invitación e introduce el código eltociear para recibir 10 SIBLE. Luego toca para empezar a minar (se comprobó en octubre de 2026 que el registro funciona desde Japón)",
+        "need": "Regístrate con el enlace de invitación e introduce el código eltociear para recibir 10 SIBLE. Luego toca para empezar a minar (se comprobó en noviembre de 2026 que el registro funciona desde Japón)",
         "warning": "SIBLE no se puede negociar y no se ha verificado ningún pago. No está verificado que la gestione Sible Labs, una empresa de IA de Palo Alto fundada por exempleados de OpenAI y Netflix. No pagues nada.",
         "caution": "Todo esto son afirmaciones del propio proyecto, sin verificar. El token no se puede negociar y puede que nunca valga nada. Los referidos aceleran la minería, así que el crecimiento depende de reclutar. Su cuenta de X también usa el nombre «Scale Network ($SCALE)», lo que confunde. No se han revisado los permisos ni el uso de datos de la app. Quien te invitó, incluido el operador de este sitio, mina más rápido"
       },
       "de": {
         "gain": "SIBLE-Mining-Guthaben ($SIB, nicht handelbar)",
         "note": "Eine „KI-Mining“-App im Stil von Pi Network: Per Tippen startest du Mining-Sitzungen. Start mit 0,1 SIBLE pro Stunde, schneller mit wachsendem Empfehlungsnetz. Angeblich 1 Milliarde Gesamtmenge, Halbierung alle 4 Monate. Gestartet etwa im August 2026. Bei Google Play, im App Store und unter web.sible.network",
-        "need": "Über den Einladungslink anmelden und den Einladungscode eltociear eingeben, um 10 SIBLE zu bekommen. Dann tippen, um das Mining zu starten (im Oktober 2026 bestätigt: Anmeldung aus Japan möglich)",
+        "need": "Über den Einladungslink anmelden und den Einladungscode eltociear eingeben, um 10 SIBLE zu bekommen. Dann tippen, um das Mining zu starten (im November 2026 bestätigt: Anmeldung aus Japan möglich)",
         "warning": "SIBLE ist nicht handelbar, und keine Auszahlung ist belegt. Die Angabe, dahinter stehe Sible Labs, eine KI-Firma aus Palo Alto, gegründet von früheren OpenAI- und Netflix-Leuten, ist unbestätigt. Zahle nichts.",
         "caution": "Das alles sind unbestätigte Angaben des Projekts selbst. Der Token ist nicht handelbar und ist vielleicht nie etwas wert. Empfehlungen beschleunigen das Mining, das Wachstum beruht also aufs Anwerben. Das X-Konto nutzt auch den Namen „Scale Network ($SCALE)“, was verwirrt. App-Berechtigungen und Datennutzung wurden nicht geprüft. Wer dich eingeladen hat, auch der Betreiber dieser Seite, mint schneller"
       },
       "ar": {
         "gain": "رصيد تعدين ⁦SIBLE ($SIB)⁩ (غير قابل للتداول)",
         "note": "تطبيق «تعدين بالذكاء الاصطناعي» على طريقة ⁦Pi Network⁩، تنقر فيه لبدء جلسات التعدين. يبدأ بـ⁦0.1 SIBLE⁩ في الساعة ويتسارع كلما كبرت شبكة إحالاتك. يزعم أن المعروض الكلي مليار وحدة مع تنصيف كل 4 أشهر. انطلق نحو أغسطس 2026. متاح على ⁦Google Play⁩ و⁦App Store⁩ و⁦web.sible.network⁩",
-        "need": "سجّل عبر رابط الإحالة وأدخل رمز الدعوة ⁦eltociear⁩ لتحصل على ⁦10 SIBLE⁩. ثم انقر لبدء التعدين (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)",
+        "need": "سجّل عبر رابط الإحالة وأدخل رمز الدعوة ⁦eltociear⁩ لتحصل على ⁦10 SIBLE⁩. ثم انقر لبدء التعدين (تأكدنا في نوفمبر 2026 أن التسجيل يعمل من اليابان)",
         "warning": "لا يمكن تداول ⁦SIBLE⁩ ولم يثبت أي دفع فعلي. الادعاء بأن من يديره هو ⁦Sible Labs⁩، شركة ذكاء اصطناعي في بالو ألتو أسسها موظفون سابقون في ⁦OpenAI⁩ و⁦Netflix⁩، غير مؤكد. لا تدفع أي شيء.",
         "caution": "كل هذا ادعاءات غير مؤكدة من المشروع نفسه. الرمز غير قابل للتداول وقد لا تكون له قيمة أبدًا. الإحالات تسرّع التعدين، فيعتمد النمو على التجنيد. يستخدم حسابه على ⁦X⁩ أيضًا اسم ⁦Scale Network ($SCALE)⁩، وهذا مربك. لم تُفحص أذونات التطبيق ولا طريقة استخدامه للبيانات. من دعاك، بمن فيهم مشغّل هذا الموقع، يعدّن أسرع"
       }
@@ -2654,43 +2654,43 @@ module.exports = {
       "ja": {
         "gain": "ポイント（PERCトークンは未発行）",
         "note": "AIの学習データを集める分散型ネットワーク。Chrome拡張かAndroidアプリでノードを動かし、使っていない回線の帯域を貸したり、データ集めのクエスト（Data Questing）をこなしたりしてポイントをためる。公式ハブでは80万ノード以上・150か国以上（2026年11月時点）",
-        "need": "メールで登録し、Chrome拡張かAndroidアプリを入れて接続したままにする。キャプチャでの人間確認やX・ソラナのウォレット連携の追加タスクもある（2026年10月に日本から登録できることを確認）",
+        "need": "メールで登録し、Chrome拡張かAndroidアプリを入れて接続したままにする。キャプチャでの人間確認やX・ソラナのウォレット連携の追加タスクもある（2026年11月に日本から登録できることを確認）",
         "caution": "報酬は今のところポイントだけ。トークン（ティッカーPERC）の発行やエアドロップは発表されておらず（2026年11月時点）、価値がつくかも、いつ何がもらえるかもわからない。拡張はあなたのネット回線を他者のデータ収集に使わせるしくみ。お金は払わないこと"
       },
       "en": {
         "gain": "Points (no PERC token yet)",
         "note": "A decentralized network that gathers AI training data. Run a node with the Chrome extension or Android app to share unused bandwidth and complete data-collection quests (Data Questing) for points. The official hub shows 800K+ nodes in 150+ countries (as of Nov 2026)",
-        "need": "Sign up with email, install the Chrome extension or Android app, and stay connected. Extra tasks include a captcha humanity check and linking X or a Solana wallet (sign-up from Japan confirmed in Oct 2026)",
+        "need": "Sign up with email, install the Chrome extension or Android app, and stay connected. Extra tasks include a captcha humanity check and linking X or a Solana wallet (sign-up from Japan confirmed in Nov 2026)",
         "caution": "Rewards are only points for now. No token (ticker PERC) launch or airdrop has been announced (as of Nov 2026), so whether they will be worth anything, and when, is unknown. The extension lets others use your internet connection for data collection. Don’t pay anything"
       },
       "zh": {
         "gain": "积分（PERC 代币尚未发行）",
         "note": "收集 AI 训练数据的去中心化网络。用 Chrome 扩展或 Android 应用运行节点，共享闲置带宽并完成数据收集任务（Data Questing）来累积积分。官方面板显示有 80 万以上节点、覆盖 150 多个国家（截至 2026 年 11 月）",
-        "need": "用邮箱注册，安装 Chrome 扩展或 Android 应用并保持连接。另有验证码真人验证、绑定 X 或 Solana 钱包等额外任务（已于 2026 年 10 月确认可从日本注册）",
+        "need": "用邮箱注册，安装 Chrome 扩展或 Android 应用并保持连接。另有验证码真人验证、绑定 X 或 Solana 钱包等额外任务（已于 2026 年 11 月确认可从日本注册）",
         "caution": "目前奖励只有积分。代币（代号 PERC）的发行和空投均未公布（截至 2026 年 11 月），能否有价值、何时能拿到什么都不确定。扩展会让他人使用你的网络连接收集数据。不要付任何钱"
       },
       "hi": {
         "gain": "पॉइंट (PERC टोकन अभी जारी नहीं)",
         "note": "AI ट्रेनिंग डेटा जुटाने वाला विकेंद्रीकृत नेटवर्क। Chrome एक्सटेंशन या Android ऐप से नोड चलाएँ, बिना इस्तेमाल हुई बैंडविड्थ शेयर करें और डेटा जुटाने वाले क्वेस्ट (Data Questing) पूरे करके पॉइंट पाएँ। आधिकारिक हब के अनुसार 150+ देशों में 8 लाख+ नोड (नवंबर 2026 तक)",
-        "need": "ईमेल से साइन अप करें, Chrome एक्सटेंशन या Android ऐप इंस्टॉल करें और कनेक्ट रहें। कैप्चा से इंसान होने की जाँच, X या Solana वॉलेट जोड़ने जैसे अतिरिक्त टास्क भी हैं (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)",
+        "need": "ईमेल से साइन अप करें, Chrome एक्सटेंशन या Android ऐप इंस्टॉल करें और कनेक्ट रहें। कैप्चा से इंसान होने की जाँच, X या Solana वॉलेट जोड़ने जैसे अतिरिक्त टास्क भी हैं (नवंबर 2026 में जापान से साइन अप की पुष्टि)",
         "caution": "अभी इनाम सिर्फ़ पॉइंट हैं। टोकन (टिकर PERC) या एयरड्रॉप की कोई घोषणा नहीं हुई है (नवंबर 2026 तक), इसलिए इनकी कोई क़ीमत होगी या कब क्या मिलेगा, पता नहीं। एक्सटेंशन आपके इंटरनेट कनेक्शन को दूसरों के डेटा जुटाने में इस्तेमाल होने देता है। कोई भुगतान न करें"
       },
       "es": {
         "gain": "Puntos (aún sin token PERC)",
         "note": "Una red descentralizada que recopila datos para entrenar IA. Ejecuta un nodo con la extensión de Chrome o la app de Android para compartir ancho de banda sin usar y completar misiones de recogida de datos (Data Questing) a cambio de puntos. El panel oficial indica más de 800.000 nodos en más de 150 países (a nov. de 2026)",
-        "need": "Regístrate con tu email, instala la extensión de Chrome o la app de Android y mantente conectado. Hay tareas extra, como un captcha de humanidad y vincular X o una wallet de Solana (se comprobó en octubre de 2026 que el registro funciona desde Japón)",
+        "need": "Regístrate con tu email, instala la extensión de Chrome o la app de Android y mantente conectado. Hay tareas extra, como un captcha de humanidad y vincular X o una wallet de Solana (se comprobó en noviembre de 2026 que el registro funciona desde Japón)",
         "caution": "Por ahora las recompensas son solo puntos. No se ha anunciado ningún token (ticker PERC) ni airdrop (a nov. de 2026), así que no se sabe si valdrán algo ni cuándo. La extensión deja que otros usen tu conexión a internet para recopilar datos. No pagues nada"
       },
       "de": {
         "gain": "Punkte (noch kein PERC-Token)",
         "note": "Ein dezentrales Netzwerk, das KI-Trainingsdaten sammelt. Betreibe einen Node per Chrome-Erweiterung oder Android-App, teile ungenutzte Bandbreite und erledige Datensammel-Quests (Data Questing) für Punkte. Laut offiziellem Hub über 800.000 Nodes in über 150 Ländern (Stand Nov. 2026)",
-        "need": "Mit E-Mail anmelden, Chrome-Erweiterung oder Android-App installieren und verbunden bleiben. Zusatzaufgaben: Captcha als Menschlichkeitsnachweis, X oder eine Solana-Wallet verknüpfen (im Oktober 2026 bestätigt: Anmeldung aus Japan möglich)",
+        "need": "Mit E-Mail anmelden, Chrome-Erweiterung oder Android-App installieren und verbunden bleiben. Zusatzaufgaben: Captcha als Menschlichkeitsnachweis, X oder eine Solana-Wallet verknüpfen (im November 2026 bestätigt: Anmeldung aus Japan möglich)",
         "caution": "Belohnt wird bisher nur mit Punkten. Ein Token (Ticker PERC) oder Airdrop ist nicht angekündigt (Stand Nov. 2026), ob sie je etwas wert sind und wann, ist offen. Die Erweiterung lässt andere deine Internetverbindung zur Datensammlung nutzen. Zahle nichts"
       },
       "ar": {
         "gain": "نقاط (لم يُطلق رمز ⁦PERC⁩ بعد)",
         "note": "شبكة لامركزية تجمع بيانات لتدريب الذكاء الاصطناعي. شغّل عقدة عبر إضافة ⁦Chrome⁩ أو تطبيق ⁦Android⁩ لمشاركة عرض النطاق غير المستخدم وإنجاز مهام جمع البيانات ⁦(Data Questing)⁩ مقابل نقاط. تُظهر اللوحة الرسمية أكثر من 800 ألف عقدة في أكثر من 150 دولة (حتى نوفمبر 2026)",
-        "need": "سجّل بالبريد الإلكتروني، وثبّت إضافة ⁦Chrome⁩ أو تطبيق ⁦Android⁩ وابقَ متصلًا. هناك مهام إضافية مثل اختبار ⁦captcha⁩ لإثبات أنك إنسان وربط ⁦X⁩ أو محفظة ⁦Solana⁩ (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)",
+        "need": "سجّل بالبريد الإلكتروني، وثبّت إضافة ⁦Chrome⁩ أو تطبيق ⁦Android⁩ وابقَ متصلًا. هناك مهام إضافية مثل اختبار ⁦captcha⁩ لإثبات أنك إنسان وربط ⁦X⁩ أو محفظة ⁦Solana⁩ (تأكدنا في نوفمبر 2026 أن التسجيل يعمل من اليابان)",
         "caution": "المكافآت حاليًا نقاط فقط. لم يُعلن عن رمز (⁦PERC⁩) ولا عن إسقاط جوي (حتى نوفمبر 2026)، فلا يُعرف إن كانت ستساوي شيئًا ولا متى. تتيح الإضافة لآخرين استخدام اتصالك بالإنترنت لجمع البيانات. لا تدفع أي شيء"
       }
     }

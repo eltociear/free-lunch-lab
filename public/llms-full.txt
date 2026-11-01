@@ -759,7 +759,7 @@ A Pi Network-style “AI mining” app where you tap to start mining sessions. I
 
 What you get: SIBLE ($SIB) mining balance (not tradable)
 
-What you need: Sign up via the referral link and enter invite code eltociear to get 10 SIBLE. Then tap to start mining (sign-up from Japan confirmed in Oct 2026)
+What you need: Sign up via the referral link and enter invite code eltociear to get 10 SIBLE. Then tap to start mining (sign-up from Japan confirmed in Nov 2026)
 
 Warning: SIBLE can’t be traded and no payouts have been verified. The claim that it is run by Sible Labs, a Palo Alto AI company founded by former OpenAI and Netflix talent, is unverified. Don’t pay anything.
 
@@ -782,7 +782,7 @@ A decentralized network that gathers AI training data. Run a node with the Chrom
 
 What you get: Points (no PERC token yet)
 
-What you need: Sign up with email, install the Chrome extension or Android app, and stay connected. Extra tasks include a captcha humanity check and linking X or a Solana wallet (sign-up from Japan confirmed in Oct 2026)
+What you need: Sign up with email, install the Chrome extension or Android app, and stay connected. Extra tasks include a captcha humanity check and linking X or a Solana wallet (sign-up from Japan confirmed in Nov 2026)
 
 Cautions: Rewards are only points for now. No token (ticker PERC) launch or airdrop has been announced (as of Nov 2026), so whether they will be worth anything, and when, is unknown. The extension lets others use your internet connection for data collection. Don’t pay anything
 
