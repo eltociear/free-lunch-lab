@@ -1247,6 +1247,275 @@ Open engine for writing tax and benefit rules as code; country models built on i
 
 Economic model for funding a universal basic income from AI-automation dividends
 
+## Basic income experiment data
+
+Basic income, guaranteed income and unconditional cash experiments that have published their data. The survey answers, administrative records and replication code live in research archives such as Harvard Dataverse, ICPSR and the Finnish Social Science Data Archive, not on GitHub. Each entry links to the archive’s official landing page, and the badge shows how to get the files: open download, free registration, or an application to the archive. Each dataset keeps its own license and terms. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/#data
+
+### Finnish basic income experiment: recipient survey (FSD3488)
+
+- Country: Finland
+- Years: 2017–2018
+- Sample size: 1597
+- Run by: Kela
+- Archive: Finnish Social Science Data Archive (FSD)
+- Landing page: https://doi.org/10.60686/t-fsd3488
+- DOI: 10.60686/t-fsd3488
+- Access: registration
+- License or terms: FSD terms, access category C (research use)
+- Checked: 2026-11
+
+What's in it: Survey microdata from recipients and the control group, collected in late 2018: employment, well-being, health, finances, trust and attitudes to basic income (no register data)
+
+### Finnish basic income experiment: voter turnout replication
+
+- Country: Finland
+- Years: 2017–2019
+- Run by: Jerome Schafer et al.
+- Archive: Harvard Dataverse
+- Landing page: https://doi.org/10.7910/DVN/RL5N9Y
+- DOI: 10.7910/DVN/RL5N9Y
+- Access: open
+- License or terms: Custom terms (contact the author before use)
+- Checked: 2026-11
+
+What's in it: Stata code and logs, municipal-level data and the FSD3488 survey file; register microdata are not included (access notes provided)
+
+### Finnish basic income experiment: crime study replication
+
+- Country: Finland
+- Years: 2017–2018
+- Run by: Mikko Aaltonen, Martti Kaila, Emily Nix
+- Archive: Harvard Dataverse
+- Landing page: https://doi.org/10.7910/DVN/RL3LTT
+- DOI: 10.7910/DVN/RL3LTT
+- Access: open
+- License or terms: CC0 1.0
+- Checked: 2026-11
+
+What's in it: Replication package for a study of effects on committing crime and being a victim of crime; check the README for which register data are included
+
+### OpenResearch Unconditional Cash Study: public-use survey data
+
+- Country: USA (Illinois, Texas)
+- Years: 2020–2023
+- Sample size: 3000
+- Run by: OpenResearch
+- Archive: OpenResearch data portal
+- Landing page: https://www.openresearchlab.org/datasets/5f1eaa9f-97ee-41e1-9e61-9b9fe814d96e
+- Access: restricted
+- License or terms: OpenResearch Data Access and Use Agreement (non-commercial)
+- Checked: 2026-11
+
+What's in it: Survey microdata from 39 waves (baseline, 36 monthly surveys, midline, endline) in R, Stata and CSV; 1,000 people got $1,000 a month, 2,000 controls got $50. Admin and transaction data are not included
+
+### OpenResearch Unconditional Cash Study: employment paper replication code
+
+- Country: USA
+- Years: 2020–2023
+- Run by: Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause, Sarah Miller
+- Archive: Harvard Dataverse
+- Landing page: https://doi.org/10.7910/DVN/RKX4QX
+- DOI: 10.7910/DVN/RKX4QX
+- Access: open
+- License or terms: CC0 1.0
+- Checked: 2026-11
+
+What's in it: Code that reproduces “The Employment Effects of a Guaranteed Income”; the data themselves come from the OpenResearch portal
+
+### GiveDirectly Kenya cash transfers (Haushofer & Shapiro 2016)
+
+- Country: Kenya
+- Years: 2011–2013
+- Run by: Johannes Haushofer, Jeremy Shapiro; GiveDirectly
+- Archive: Harvard Dataverse
+- Landing page: https://doi.org/10.7910/DVN/M2GAZN
+- DOI: 10.7910/DVN/M2GAZN
+- Access: open
+- License or terms: CC0 1.0
+- Checked: 2026-11
+
+What's in it: Household survey microdata from Rarieda, Stata do-files, tables and figures for the study of the short-term impact of large unconditional transfers
+
+### GiveDirectly Kenya general equilibrium study (Egger et al. 2022)
+
+- Country: Kenya
+- Years: 2014–2017
+- Run by: Dennis Egger, Johannes Haushofer, Edward Miguel, Paul Niehaus, Michael Walker
+- Archive: Zenodo
+- Landing page: https://doi.org/10.5281/zenodo.16548593
+- DOI: 10.5281/zenodo.16548593
+- Access: open
+- License or terms: CC BY 4.0
+- Checked: 2026-11
+
+What's in it: Data and code replication package for the study of how cash transfers in Siaya spread through the local economy, updated for the 2026 corrigendum
+
+### GiveDirectly Kenya general equilibrium study: children’s follow-up
+
+- Country: Kenya
+- Sample size: 4022
+- Run by: Johannes Haushofer, Magdalena Larreboure, Sara Lowes, Daniel Mait
+- Archive: Mendeley Data
+- Landing page: https://doi.org/10.17632/xt9g8tmsvg
+- DOI: 10.17632/xt9g8tmsvg
+- Access: open
+- License or terms: CC BY 4.0
+- Checked: 2026-11
+
+What's in it: Data on 4,022 children’s social preferences, measured with surveys and incentivized games about three years after the transfers
+
+### Cash transfers and an aspirations workshop, rural Kenya (Orkin et al.)
+
+- Country: Kenya
+- Run by: Kate Orkin, Robert Garlick, Mahreen Mahmud, Richard Sedlmayr, Stefan Dercon, Johannes Haushofer
+- Archive: Zenodo
+- Landing page: https://doi.org/10.5281/zenodo.15839378
+- DOI: 10.5281/zenodo.15839378
+- Access: open
+- License or terms: CC BY 4.0
+- Checked: 2026-11
+
+What's in it: Census, baseline, midline and endline survey data and code for a trial of a lump-sum unconditional transfer, an aspirations workshop, and both together
+
+### GiveDirectly cash for refugees and hosts, Kiryandongo
+
+- Country: Uganda
+- Years: 2019–2022
+- Run by: IDinsight for GiveDirectly
+- Archive: Harvard Dataverse
+- Landing page: https://doi.org/10.7910/DVN/XBVYXA
+- DOI: 10.7910/DVN/XBVYXA
+- Access: open
+- License or terms: CC0 1.0
+- Checked: 2026-11
+
+What's in it: Anonymized baseline and endline survey microdata, survey instruments and a ReadMe from the evaluation of about $1,000 unconditional transfers in a refugee settlement
+
+### Cash benchmarking in Rwanda: GiveDirectly vs. a nutrition program
+
+- Country: Rwanda
+- Run by: Craig McIntosh, Andrew Zeitlin
+- Archive: Zenodo
+- Landing page: https://doi.org/10.5281/zenodo.15881328
+- DOI: 10.5281/zenodo.15881328
+- Access: open
+- License or terms: CC BY 4.0
+- Checked: 2026-11
+
+What's in it: Replication materials and survey instruments, with personal identifiers removed, comparing an in-kind nutrition program with unconditional cash of the same cost
+
+### Mincome (Manitoba Basic Annual Income Experiment)
+
+- Country: Canada
+- Years: 1974–1979
+- Run by: Governments of Canada and Manitoba
+- Archive: Borealis (Canadian Dataverse)
+- Landing page: https://borealisdata.ca/dataverse/mincome
+- Access: open
+- License or terms: CC0 1.0
+- Checked: 2026-11
+
+What's in it: Original microdata in six files (baseline, payments, labour market, income and net worth, family and attitudes), with codebooks, a user manual and the original technical reports
+
+### Mincome in Dauphin: replication data
+
+- Country: Canada
+- Years: 1974–1979
+- Run by: David Calnitsky, Jonathan Latner
+- Archive: Harvard Dataverse
+- Landing page: https://doi.org/10.7910/DVN/YQDAEC
+- DOI: 10.7910/DVN/YQDAEC
+- Access: open
+- License or terms: CC0 1.0
+- Checked: 2026-11
+
+What's in it: Aggregated census data (1971, 1976, 1981) and R code for a study of the work effects in the town where everyone could take part
+
+### Baby’s First Years
+
+- Country: USA (New York City, New Orleans, Omaha, Twin Cities)
+- Years: 2018–2023
+- Sample size: 1000
+- Run by: Katherine Magnuson, Kimberly Noble, Greg Duncan, Nathan Fox, Lisa Gennetian, Hirokazu Yoshikawa, Sarah Halpern-Meekin
+- Archive: ICPSR
+- Landing page: https://doi.org/10.3886/ICPSR37871.v9
+- DOI: 10.3886/ICPSR37871.v9
+- Access: registration
+- License or terms: ICPSR terms of use
+- Checked: 2026-11
+
+What's in it: Survey and child-assessment data from baseline to age 4, with user guides; 1,000 low-income mothers of newborns got an unconditional $333 or $20 a month
+
+### Alaska Permanent Fund Dividend: labor market effects (Jones & Marinescu)
+
+- Country: USA (Alaska)
+- Years: 1982–
+- Run by: Damon Jones, Ioana Marinescu
+- Archive: openICPSR (AEA Data and Code Repository)
+- Landing page: https://doi.org/10.3886/E140121V2
+- DOI: 10.3886/E140121V2
+- Access: registration
+- License or terms: AEA / openICPSR terms
+- Checked: 2026-11
+
+What's in it: Data, code and README for a study of the universal, permanent cash dividend, built on public CPS, Census, BLS and CDC data
+
+### Alaska Permanent Fund Dividend: voter turnout (Loeffler)
+
+- Country: USA (Alaska)
+- Years: 1982–
+- Run by: Hannah Loeffler
+- Archive: Harvard Dataverse
+- Landing page: https://doi.org/10.7910/DVN/BDCP2T
+- DOI: 10.7910/DVN/BDCP2T
+- Access: open
+- License or terms: CC0 1.0
+- Checked: 2026-11
+
+What's in it: CPS extracts, aggregate and individual turnout data, dividend payment data, Stata code and logs for a study of whether a basic income changes voter turnout
+
+### Unconditional cash framed for child nutrition, India
+
+- Country: India
+- Years: 2018–2019
+- Run by: Karthik Muralidharan, Paul Niehaus, Sandip Sukhtankar, Jeffrey Weaver
+- Archive: Harvard Dataverse
+- Landing page: https://doi.org/10.7910/DVN/VAFYV1
+- DOI: 10.7910/DVN/VAFYV1
+- Access: open
+- License or terms: CC0 1.0 (guestbook form before download)
+- Checked: 2026-11
+
+What's in it: Cleaned household and child survey data, anthropometrics, survey instruments and a codebook from a trial of unconditional transfers labeled for early childhood health and nutrition
+
+### Zomba Cash Transfer Program: conditional vs. unconditional (“Cash or Condition”)
+
+- Country: Malawi
+- Years: 2007–2009
+- Run by: Sarah Baird, Craig McIntosh, Berk Özler
+- Archive: Harvard Dataverse
+- Landing page: https://doi.org/10.7910/DVN/7K1A25
+- DOI: 10.7910/DVN/7K1A25
+- Access: open
+- License or terms: CC0 1.0
+- Checked: 2026-11
+
+What's in it: De-identified public dataset, Stata analysis code and data notes from a trial that gave schoolgirls either conditional or unconditional transfers
+
+### Zambia Child Grant Programme evaluation
+
+- Country: Zambia
+- Years: 2010–2014
+- Run by: Government of Zambia; data from the Carolina Population Center (UNC)
+- Archive: UNC Dataverse
+- Landing page: https://doi.org/10.15139/S3/Z7WF9D
+- DOI: 10.15139/S3/Z7WF9D
+- Access: restricted
+- License or terms: Metadata CC0; data files by application
+- Checked: 2026-11
+
+What's in it: Five-wave panel survey microdata (household, individual, community and health-facility files) from the evaluation of an unconditional child grant
+
 ## Graveyard
 
 A record of services and programmes that once handed out money or points and have since ended. Only endings confirmed by an official announcement or a credible source are listed. Thanks for the lunches. Rest in peace.

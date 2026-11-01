@@ -2,7 +2,7 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA } = require('./src/data.js');
 const { execFileSync } = require('child_process');
 // オープンソース一覧のスター数・最終コミット日などを取りに行く（失敗してもキャッシュで続ける。OSS_OFFLINE=1 で取得しない）
 try { execFileSync(process.execPath, [path.join(__dirname, 'oss-fetch.js')], { stdio: 'inherit', timeout: 120000 }); } catch (e) { console.warn('open-source metadata: fetch failed, using cache'); }
@@ -97,6 +97,16 @@ for (const p of OSSP) {
   if (!OSS_GROUPS.some(g => g.id === p.group)) throw new Error(`${p.id}: unknown group ${p.group}`);
   for (const l of LANGS) if (!p.desc[l]) throw new Error(`${p.id}: missing desc.${l}`);
   for (const l of LANGS) if (!OSS_GROUPS.find(g => g.id === p.group).name[l]) throw new Error(`${p.group}: missing name.${l}`);
+}
+// ベーシックインカム社会実験の公開データ（OPEN_DATA）。GitHub からは取らず、data.js に手で書いた内容だけで作る
+const DATA_KEYS = ['dataH', 'dataIntro', 'dataToc', 'dataHome', 'dataCountry', 'dataYears', 'dataN', 'dataBy', 'dataArchive', 'dataLicense', 'dataIncludes', 'dataChecked', 'access_open', 'access_registration', 'access_restricted', 'access_openTip', 'access_registrationTip', 'access_restrictedTip'];
+for (const l of LANGS) for (const k of DATA_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+const ACCESS = ['open', 'registration', 'restricted'];
+for (const x of OPEN_DATA) {
+  for (const k of ['id', 'by', 'archive', 'url', 'access', 'checked']) if (!x[k]) throw new Error(`data ${x.id}: missing ${k}`);
+  if (!ACCESS.includes(x.access)) throw new Error(`data ${x.id}: unknown access ${x.access}`);
+  for (const f of ['name', 'country', 'includes']) for (const l of LANGS) if (!x[f] || !x[f][l]) throw new Error(`data ${x.id}: missing ${f}.${l}`);
+  if (OPEN_DATA.filter(y => y.id === x.id).length > 1) throw new Error(`data ${x.id}: duplicate id`);
 }
 // 掲載中のプロジェクト向けバッジ: /badge/ と /{lang}/badge/（SVG は /badge/*.svg に1つだけ）
 const badgePath = l => `${urlPath(l)}badge/`;
@@ -490,6 +500,7 @@ for (const lang of LANGS) {
     orgsBtn: esc(L.orgsSecBtn.replace('{n}', ORGS.length)),
     ossPreview: OSS_PREVIEW.map(id => OSSP.find(p => p.id === id)).filter(Boolean).map(p => `<li><a href="open-source/#oss-${p.id}" dir="auto">${esc(p.name)}</a><span>${esc(OSS_GROUPS.find(g => g.id === p.group).name[lang])}</span><p>${esc(p.desc[lang])}</p></li>`).join(''),
     ossBtn: esc(L.ossSecBtn.replace('{n}', OSSP.length)),
+    dataHome: OPEN_DATA.length ? `<a class="orgs-tl" href="open-source/#data">${esc(L.dataHome.replace('{n}', OPEN_DATA.length))} →</a>` : '',
     verifyBlock: verifyPages.map(m => { const b = byMethod(m); return `<a href="verify/${m}/" dir="auto">${esc(VERIFY[m].name[lang])}<span>${b.req.length + b.opt.length}</span></a>`; }).join(''),
     script: clientScript(lang),
   };
@@ -582,12 +593,18 @@ const DETAIL_CSS = `
 .oss-repo{font-size:.8125rem;color:var(--muted);overflow-wrap:anywhere}
 .oss-badge{font-size:.8125rem;font-weight:700;line-height:1.5;padding:0 8px;border-radius:999px;border:1px solid currentColor;color:var(--muted);white-space:nowrap}
 .oss-badge.archived{color:var(--accent)}
+.oss-badge.acc-open{color:var(--pos)}
+.oss-badge.acc-registration{color:var(--amber)}
+.oss-badge.acc-restricted{color:var(--stamp)}
+.data-intro{font-size:.9rem;margin-top:12px}
+.data-inc{font-size:.8125rem;color:var(--muted);font-weight:700}
 .oss-facts{margin:0;display:flex;flex-wrap:wrap;gap:2px 16px;font-size:.8125rem;color:var(--muted)}
 .oss-facts div{display:flex;gap:6px;align-items:baseline;min-width:0}
 .oss-facts dt{font-size:.8125rem}
 .oss-facts dd{margin:0;color:var(--ink);overflow-wrap:anywhere}
 .oss-links{display:flex;flex-wrap:wrap;gap:4px 16px}
 .oss-note{font-size:.8125rem;color:var(--muted)}
+.oss-note a{display:inline-flex;align-items:center;min-height:44px}
 .foot a{color:inherit;text-underline-offset:3px}
 .vmain{max-width:1080px;margin-inline:auto}
 .vsec{padding-top:28px}
@@ -1009,11 +1026,28 @@ function ossPage(lang) {
     }).join('\n');
     return `<section class="org-group" id="g-${g.id}"><h2>${esc(g.name[lang])}<span class="dot">${list.length}</span></h2><ul class="org-list">${items}</ul></section>`;
   }).join('\n');
+  // 社会実験の公開データ: コードの一覧の下に、国・年・人数・中身・保管先・利用条件を添えて並べる
+  const dataItems = OPEN_DATA.map(x => {
+    const facts = [
+      fact(L.dataCountry, esc(x.country[lang])),
+      ...(x.years ? [fact(L.dataYears, `<span dir="ltr">${esc(x.years)}</span>`)] : []),
+      ...(x.n != null ? [fact(L.dataN, `<span dir="ltr">${esc(typeof x.n === 'number' ? num(x.n) : x.n)}</span>`)] : []),
+      fact(L.dataBy, `<span dir="auto">${esc(x.by)}</span>`),
+      fact(L.dataArchive, `<span dir="ltr">${esc(x.archive)}</span>`),
+      ...(x.license ? [fact(L.dataLicense, `<span dir="ltr">${esc(x.license)}</span>`)] : []),
+    ].join('');
+    const badge = `<span class="oss-badge acc-${x.access}" title="${esc(L['access_' + x.access + 'Tip'])}">${esc(L['access_' + x.access])}</span>`;
+    return `<li class="org" id="data-${x.id}"><div class="org-head"><a class="org-name" href="${esc(x.url)}" target="_blank" rel="noopener" dir="auto">${esc(x.name[lang])}</a>${badge}</div>
+<p><b class="data-inc">${esc(L.dataIncludes)}:</b> ${esc(x.includes[lang])}</p><dl class="oss-facts">${facts}</dl><span class="oss-repo" dir="ltr">${esc(x.doi ? 'doi:' + x.doi : x.url.replace(/^https?:\/\//, ''))}</span></li>`;
+  }).join('\n');
+  const dataChecked = OPEN_DATA.map(x => x.checked).sort().pop();
+  const dataSec = OPEN_DATA.length ? `<section class="org-group" id="data"><h2>${esc(L.dataH)}<span class="dot">${OPEN_DATA.length}</span></h2><p class="orgs-intro data-intro">${esc(L.dataIntro)}</p><p class="oss-note">${esc(L.dataChecked).replace('{date}', `<time datetime="${dataChecked}">${esc(new Intl.DateTimeFormat(LANG_TAG[lang], { year: 'numeric', month: 'long', timeZone: 'UTC' }).format(new Date(dataChecked + '-01T00:00:00Z')))}</time>`)} · <a href="${SITE_URL}/open-data.json" dir="ltr">open-data.json</a></p><ul class="org-list">${dataItems}</ul></section>` : '';
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.ossTitle)}</li></ol></nav>
 <main class="orgs">
 <header class="orgs-head"><p class="eyebrow">${esc(L.ebOss)}</p><h1>${esc(L.ossH1)}</h1><p class="orgs-intro">${esc(L.ossIntro)}</p>
-${ossFetchedOn ? `<p class="oss-note">${esc(L.ossFetched).replace('{date}', `<time datetime="${ossFetchedOn}">${esc(longDate(ossFetchedOn, lang))}</time>`)} · <a href="${SITE_URL}/open-source.json" dir="ltr">open-source.json</a></p>\n` : ''}<nav class="org-toc" aria-label="${esc(L.navLabel)}">${OSS_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}</nav></header>
+${ossFetchedOn ? `<p class="oss-note">${esc(L.ossFetched).replace('{date}', `<time datetime="${ossFetchedOn}">${esc(longDate(ossFetchedOn, lang))}</time>`)} · <a href="${SITE_URL}/open-source.json" dir="ltr">open-source.json</a></p>\n` : ''}<nav class="org-toc" aria-label="${esc(L.navLabel)}">${OSS_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}${OPEN_DATA.length ? `<a href="#data">${esc(L.dataToc)}</a>` : ''}</nav></header>
 ${groups}
+${dataSec}
 <p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a></p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
@@ -1339,7 +1373,37 @@ const ossJson = {
 };
 const DATA_DIR = path.join(__dirname, 'data');
 fs.mkdirSync(DATA_DIR, { recursive: true });
-for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson], ['open-source.json', ossJson]]) {
+const dataJson = {
+  name: 'Free Lunch Lab basic income experiment data',
+  description: 'Open datasets and replication packages from basic income, guaranteed income and unconditional cash transfer experiments, as listed on Free Lunch Lab. Each entry links to its official archive landing page; access is "open" (direct download), "registration" (free account needed) or "restricted" (application or data use agreement needed). The datasets themselves are not redistributed here and keep their own licenses.',
+  source: ossAbs(DEFAULT_LANG) + '#data',
+  repository: 'https://github.com/eltociear/free-lunch-lab',
+  license: 'CC BY 4.0 (this list only)',
+  licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+  generatedAt: OPEN_DATA.map(x => x.checked).sort().pop() || null,
+  languages: LANGS,
+  count: OPEN_DATA.length,
+  accessLevels: ACCESS,
+  datasets: OPEN_DATA.slice().sort(byId).map(x => ({
+    id: x.id,
+    name: clean(x.name.en),
+    country: clean(x.country.en),
+    years: x.years || null,
+    sampleSize: x.n ?? null,
+    runBy: clean(x.by),
+    archive: x.archive,
+    url: x.url,
+    doi: x.doi || null,
+    access: x.access,
+    license: x.license || null,
+    checked: x.checked,
+    pageUrl: ossAbs(DEFAULT_LANG) + '#data-' + x.id,
+    names: Object.fromEntries(LANGS.map(l => [l, clean(x.name[l])])),
+    countries: Object.fromEntries(LANGS.map(l => [l, clean(x.country[l])])),
+    includes: Object.fromEntries(LANGS.map(l => [l, clean(x.includes[l])])),
+  })),
+};
+for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson], ['open-source.json', ossJson], ['open-data.json', dataJson]]) {
   const txt = JSON.stringify(obj, null, 2) + '\n';
   fs.writeFileSync(path.join(DATA_DIR, file), txt);
   fs.writeFileSync(path.join(OUT, file), txt);
@@ -1362,12 +1426,14 @@ const llmsHead = full => `# Free Lunch Lab
 - ${full ? `Short index: ${SITE_URL}/llms.txt` : `Full text: ${SITE_URL}/llms-full.txt`}
 `;
 const ossFacts = p => [OSS_GROUPS.find(g => g.id === p.group).name.en, p.language, p.license && `license ${p.license}`, p.stars != null && `${p.stars} stars`, p.lastCommit && `last commit ${p.lastCommit}`, p.dormant && 'dormant', p.archived && 'archived'].filter(Boolean).map(md).join('; ');
+const dataFacts = x => [x.country.en, x.years, x.n != null && `n = ${x.n}`, `run by ${x.by}`, x.archive, `access: ${x.access}`, x.license && `license ${x.license}`].filter(Boolean).map(md).join('; ');
 const llmsTxt = `${llmsHead(false)}
 ## Data
 
 - [services.json](${SITE_URL}/services.json): all visible services as JSON, with descriptions in every language, region, verification, trust check and referral info
 - [graveyard.json](${SITE_URL}/graveyard.json): ended basic-income-style programs, each with a source
 - [open-source.json](${SITE_URL}/open-source.json): open-source code projects related to basic income, with license, language, stars, last commit and dormant flag
+- [open-data.json](${SITE_URL}/open-data.json): open datasets and replication packages from basic income experiments, with archive, access level and license
 ${LANGS.map(l => `- [RSS feed (${l})](${feedAbs(l)}): update log in ${LANG_NAMES[l] === 'EN' ? 'English' : LANG_NAMES[l]}`).join('\n')}
 
 ## Services
@@ -1387,6 +1453,10 @@ ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}
 ## Open-source projects
 
 ${OSSP.map(p => `- [${mdLink(p.name)}](${p.url}): ${md(p.desc.en)} (${ossFacts(p)})`).join('\n')}
+
+## Basic income experiment data
+
+${OPEN_DATA.map(x => `- [${mdLink(x.name.en)}](${x.url}): ${md(x.includes.en)} (${dataFacts(x)})`).join('\n')}
 
 ## Other languages
 
@@ -1466,6 +1536,22 @@ const ossFull = p => {
     md(p.desc.en),
   ].join('\n');
 };
+const dataFull = x => [
+  `### ${md(x.name.en)}`,
+  '',
+  `- Country: ${md(x.country.en)}`,
+  ...(x.years ? [`- Years: ${x.years}`] : []),
+  ...(x.n != null ? [`- Sample size: ${x.n}`] : []),
+  `- Run by: ${md(x.by)}`,
+  `- Archive: ${md(x.archive)}`,
+  `- Landing page: ${x.url}`,
+  ...(x.doi ? [`- DOI: ${x.doi}`] : []),
+  `- Access: ${x.access}`,
+  ...(x.license ? [`- License or terms: ${md(x.license)}`] : []),
+  `- Checked: ${x.checked}`,
+  '',
+  `What's in it: ${md(x.includes.en)}`,
+].join('\n');
 const llmsFull = `${llmsHead(true)}
 ## Services
 
@@ -1480,6 +1566,12 @@ ${ESSAYS.map(essayFull).join('\n\n')}
 ${md(T.en.ossIntro)}${ossFetchedOn ? ` Metadata fetched on ${ossFetchedOn}.` : ''} Page: ${ossAbs(DEFAULT_LANG)}
 
 ${OSSP.map(ossFull).join('\n\n')}
+
+## Basic income experiment data
+
+${md(T.en.dataIntro)} Page: ${ossAbs(DEFAULT_LANG)}#data
+
+${OPEN_DATA.map(dataFull).join('\n\n')}
 
 ## Graveyard
 
@@ -1496,4 +1588,4 @@ fs.writeFileSync(path.join(OUT, '_headers'), ['/llms.txt', '/llms-full.txt'].map
 
 // README.md のサービス表・団体一覧も同期する
 require('./readme.js').updateReadme();
-console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages + ${LANGS.length} organization pages + ${LANGS.length} open-source pages (${OSSP.length} projects, ${OSSP.filter(p => p.dormant).length} dormant), ${live.length} services shown (${SERVICES.length - live.length} hidden)`);
+console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages + ${LANGS.length} organization pages + ${LANGS.length} open-source pages (${OSSP.length} projects, ${OSSP.filter(p => p.dormant).length} dormant, ${OPEN_DATA.length} datasets), ${live.length} services shown (${SERVICES.length - live.length} hidden)`);

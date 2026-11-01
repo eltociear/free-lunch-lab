@@ -23,6 +23,10 @@
    {
     "file": "noto-sans-arabic-400-ar-478184edc3.woff2",
     "chars": "_"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-b1c4c96cb0.woff2",
+    "chars": "Ö"
    }
   ],
   "ar:body:700": [
@@ -37,6 +41,10 @@
    {
     "file": "noto-sans-arabic-700-ar-acc3fb62df.woff2",
     "chars": "_"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-b04e43c905.woff2",
+    "chars": "Ö"
    }
   ],
   "ar:display": [
@@ -127,6 +135,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-ed2d6977c5.woff2",
     "chars": "_"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-9472c26c21.woff2",
+    "chars": "Ö"
    }
   ],
   "en:body:700": [
@@ -141,6 +153,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-27f0cea5f7.woff2",
     "chars": "_"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-6d81663edc.woff2",
+    "chars": "Ö"
    }
   ],
   "en:display": [
@@ -175,6 +191,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-ed2d6977c5.woff2",
     "chars": "_"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-9472c26c21.woff2",
+    "chars": "Ö"
    }
   ],
   "es:body:700": [
@@ -189,6 +209,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-27f0cea5f7.woff2",
     "chars": "_"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-6d81663edc.woff2",
+    "chars": "Ö"
    }
   ],
   "es:display": [
@@ -233,6 +257,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-8e245406b4.woff2",
     "chars": "_"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-966a7da59c.woff2",
+    "chars": "Ö"
    }
   ],
   "hi:body:700": [
@@ -247,6 +275,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-ea03381182.woff2",
     "chars": "_"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-f44597ad6e.woff2",
+    "chars": "Ö"
    }
   ],
   "hi:dot": [
@@ -283,6 +315,18 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-ed2d6977c5.woff2",
     "chars": "_"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-705186dfdb.woff2",
+    "chars": "科"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-0492f7532c.woff2",
+    "chars": "欄"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-bbba681692.woff2",
+    "chars": "Öゾ乳児削勢区図均好害幼徒抜整族検母犯統罪衡被親訂跡郡除雇"
    }
   ],
   "ja:body:700": [
@@ -309,6 +353,18 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-27f0cea5f7.woff2",
     "chars": "_"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-c6368aee33.woff2",
+    "chars": "科"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-e24155295e.woff2",
+    "chars": "欄"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-7f1c88f3b7.woff2",
+    "chars": "Öゾ乳児削勢区図均好害幼徒抜整族検母犯統罪衡被親訂跡郡除雇"
    }
   ],
   "ja:display": [
@@ -387,6 +443,14 @@
    {
     "file": "noto-sans-sc-400-zh-f9fd079672.woff2",
     "chars": "_仓令南命塞库昂替洁维编赖"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-326416f932.woff2",
+    "chars": "科载馆"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-c08a1d5198.woff2",
+    "chars": "Ö乌偏净勘卢县哈婴害幸志戈扬料旺材母犯纽罪般良衡误赞踪遍锡"
    }
   ],
   "zh:body:700": [
@@ -413,6 +477,14 @@
    {
     "file": "noto-sans-sc-700-zh-51f2415355.woff2",
     "chars": "_仓令南命塞库昂替洁维编赖"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-c3f930b27e.woff2",
+    "chars": "科载馆"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-1d9c9ac746.woff2",
+    "chars": "Ö乌偏净勘卢县哈婴害幸志戈扬料旺材母犯纽罪般良衡误赞踪遍锡"
    }
   ],
   "zh:display": [

@@ -2,7 +2,7 @@
 // build.js の最後でも呼ばれるので、ふだんは node build.js だけでよい
 const fs = require('fs');
 const path = require('path');
-const { SITE_URL, SERVICES, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, OSS_GROUPS, ESSAYS } = require('./src/data.js');
+const { SITE_URL, SERVICES, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, OSS_GROUPS, ESSAYS, OPEN_DATA } = require('./src/data.js');
 const { ossProjects, DORMANT_MONTHS } = require('./src/oss.js');
 
 const README = path.join(__dirname, 'README.md');
@@ -60,6 +60,22 @@ function ossList() {
     tables.join('\n\n'),
     '',
     `Full list in 7 languages: ${SITE_URL}/open-source/ · JSON: [\`data/open-source.json\`](data/open-source.json)`,
+    ...(OPEN_DATA.length ? ['', dataTable()] : []),
+  ].join('\n');
+}
+
+// ベーシックインカム社会実験の公開データ（GitHub からは取らない。data.js に書いた内容だけ）
+function dataTable() {
+  const access = { open: 'Open download', registration: 'Free registration', restricted: 'Restricted (application)' };
+  const rows = OPEN_DATA.map(x => `| [${cell(x.name.en)}](${x.url}) | ${cell(x.country.en)} | ${cell(x.years || '')} | ${x.n ?? ''} | ${cell(x.includes.en)} | ${cell(x.archive)} | ${access[x.access]} |`);
+  return [
+    `**Basic income experiment data** (${OPEN_DATA.length} datasets and replication packages; links go to each archive's landing page)`,
+    '',
+    '| Experiment | Country | Years | n | What\'s in it | Archive | Access |',
+    '| --- | --- | --- | --- | --- | --- | --- |',
+    ...rows,
+    '',
+    `On the site: ${SITE_URL}/open-source/#data · JSON: [\`data/open-data.json\`](data/open-data.json)`,
   ].join('\n');
 }
 
