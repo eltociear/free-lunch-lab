@@ -87,6 +87,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-ed2d6977c5.woff2",
     "chars": "_"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-6420e997af.woff2",
+    "chars": "‘‚"
    }
   ],
   "de:body:700": [
@@ -101,6 +105,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-27f0cea5f7.woff2",
     "chars": "_"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-8bf0ba0b48.woff2",
+    "chars": "‘‚"
    }
   ],
   "de:display": [
@@ -151,6 +159,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-9472c26c21.woff2",
     "chars": "Ö"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-b8292e5b0f.woff2",
+    "chars": "‘"
    }
   ],
   "en:body:700": [
@@ -211,6 +223,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-df071f6d5f.woff2",
     "chars": "¡"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-f6b9476e8d.woff2",
+    "chars": "É"
    }
   ],
   "es:body:700": [
@@ -233,6 +249,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-a4dd794a70.woff2",
     "chars": "¡"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-cd4a51dfd8.woff2",
+    "chars": "É"
    }
   ],
   "es:display": [
@@ -285,6 +305,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-966a7da59c.woff2",
     "chars": "Ö"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-2405bbeee1.woff2",
+    "chars": "‘"
    }
   ],
   "hi:body:700": [
@@ -303,6 +327,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-f44597ad6e.woff2",
     "chars": "Ö"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-c876a8c2da.woff2",
+    "chars": "‘"
    }
   ],
   "hi:dot": [
@@ -387,6 +415,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-a87153b7fa.woff2",
     "chars": "慮旬翌"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-c7eb962184.woff2",
+    "chars": "ぜぬぴ丸借儲剣固字己床彼拠捨服死狙略癖省真神窓窮節索累触超都鍵阻領黙"
    }
   ],
   "ja:body:700": [
@@ -461,6 +493,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-e22bcef166.woff2",
     "chars": "慮旬翌"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-ccd6691765.woff2",
+    "chars": "ぜぬぴ丸借儲剣固字己床彼拠捨服死狙略癖省真神窓窮節索累触超都鍵阻領黙"
    }
   ],
   "ja:display": [
@@ -499,6 +535,10 @@
    {
     "file": "dela-gothic-one-400-ja-91a4f3ec9b.woff2",
     "chars": "ザラ"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-c2ab612c24.woff2",
+    "chars": "制同床拠検欺済稼経詐語"
    }
   ],
   "ja:dot": [
@@ -607,6 +647,10 @@
    {
     "file": "noto-sans-sc-400-zh-e9880c087a.woff2",
     "chars": "默"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-04fe85f0bf.woff2",
+    "chars": "‘习借升压句味圾垃岗悖惯执挣搜断旁梯灭爬百神索衣诚谓赏赤述钥错陈陌驳齐"
    }
   ],
   "zh:body:700": [
@@ -677,6 +721,10 @@
    {
     "file": "noto-sans-sc-700-zh-482d23531e.woff2",
     "chars": "默"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-336c341354.woff2",
+    "chars": "‘习借升压句味圾垃岗悖惯执挣搜断旁梯灭爬百神索衣诚谓赏赤述钥错陈陌驳齐"
    }
   ],
   "zh:display": [
@@ -711,6 +759,10 @@
    {
     "file": "noto-sans-sc-900-zh-e5e1f0b197.woff2",
     "chars": "交易"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-3f3203296c.woff2",
+    "chars": "制只味套子它寻局属归整板梯济理种络美谈赞路骗"
    }
   ],
   "zh:dot": [
