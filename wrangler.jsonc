@@ -5,7 +5,15 @@
   "observability": {
     "enabled": true
   },
+  // ページの表示数を数える Worker（src/worker.js）。記録先は Workers Analytics Engine のデータセット free_lunch_lab_pageviews
+  "main": "src/worker.js",
   "assets": {
-    "directory": "public"
-  }
+    "directory": "public",
+    "binding": "ASSETS",
+    // Worker を通すのはページだけ（フォント・画像・JSON などは静的ファイルとして直接返す）
+    "run_worker_first": ["/*", "!/fonts/*", "!/og/*", "!/badge/*", "!/*.png", "!/*.ico", "!/*.svg", "!/*.json", "!/*.xml", "!/*.txt"]
+  },
+  "analytics_engine_datasets": [
+    { "binding": "PAGEVIEWS", "dataset": "free_lunch_lab_pageviews" }
+  ]
 }
