@@ -83,6 +83,10 @@
    {
     "file": "dela-gothic-one-400-de-5758f4b53c.woff2",
     "chars": "¥"
+   },
+   {
+    "file": "dela-gothic-one-400-de-2446c51523.woff2",
+    "chars": "ß"
    }
   ],
   "de:dot": [
@@ -231,6 +235,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-0301a6e8fb.woff2",
     "chars": "償判獲"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-5393f398ae.woff2",
+    "chars": "々ね余併剰北即古史希強戦挙望東添清短覚輩退還駆"
    }
   ],
   "ja:body:700": [
@@ -249,6 +257,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-c48a40343d.woff2",
     "chars": "償判獲"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-bfc6f1e204.woff2",
+    "chars": "々ね余併剰北即古史希強戦挙望東添清短覚輩退還駆"
    }
   ],
   "ja:display": [
@@ -267,6 +279,10 @@
    {
     "file": "dela-gothic-one-400-ja-0455ed804c.woff2",
     "chars": "番話"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-52cfb674fa.woff2",
+    "chars": "ダ主何名変権簿配飯"
    }
   ],
   "ja:dot": [
@@ -315,6 +331,10 @@
    {
     "file": "noto-sans-sc-400-zh-e83318b0f3.woff2",
     "chars": "メリル坊太差损"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-7a7bfac10e.woff2",
+    "chars": "予六凡剩北古套巷希弃弱强招搬普望派盈穿董虽赊辈辑迄退逻锋键镇馈"
    }
   ],
   "zh:body:700": [
@@ -333,6 +353,10 @@
    {
     "file": "noto-sans-sc-700-zh-6907287282.woff2",
     "chars": "メリル坊太差损"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-508552f0cc.woff2",
+    "chars": "予六凡剩北古套巷希弃弱强招搬普望派盈穿董虽赊辈辑迄退逻锋键镇馈"
    }
   ],
   "zh:display": [
@@ -351,6 +375,10 @@
    {
     "file": "noto-sans-sc-900-zh-38d817af7e.woff2",
     "chars": "号"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-6bb65f10f0.woff2",
+    "chars": "些再午变奇尔就带罗附餐"
    }
   ],
   "zh:dot": [

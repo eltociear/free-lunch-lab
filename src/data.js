@@ -2590,6 +2590,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-01",
+      "ja": "エッセイ「使えば株主：ロッチデールからエアドロップ、そしてカブアンドへ」を公開",
+      "en": "Published the essay “Use it, own it: from Rochdale to airdrops to KABU&”",
+      "zh": "发布随笔《用了就成股东：从罗奇代尔到空投，再到 KABU&》",
+      "hi": "निबंध “इस्तेमाल करो, मालिक बनो: रॉचडेल से एयरड्रॉप और KABU& तक” प्रकाशित",
+      "es": "Publicado el ensayo «Usar para ser dueño: de Rochdale a los airdrops y KABU&»",
+      "de": "Essay „Nutzen heißt besitzen: von Rochdale über Airdrops zu KABU&“ veröffentlicht",
+      "ar": "نشرنا مقال «استخدِم لتملك: من روتشديل إلى الإسقاطات الجوية وصولًا إلى ⁦KABU&⁩»"
+    },
+    {
       "date": "2026-10-31",
       "ja": "メルカリ（Mercari）を追加",
       "en": "Added Mercari",
@@ -6513,6 +6523,761 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "use-to-own",
+      "date": "2026-11-01",
+      "related": "universal-high-income",
+      "title": {
+        "ja": "使えば株主：ロッチデールからエアドロップ、そしてカブアンドへ",
+        "en": "Use it, own it: from Rochdale to airdrops to KABU&",
+        "zh": "用了就成股东：从罗奇代尔到空投，再到 KABU&",
+        "hi": "इस्तेमाल करो, मालिक बनो: रॉचडेल से एयरड्रॉप और KABU& तक",
+        "es": "Usar para ser dueño: de Rochdale a los airdrops y KABU&",
+        "de": "Nutzen heißt besitzen: von Rochdale über Airdrops zu KABU&",
+        "ar": "استخدِم لتملك: من روتشديل إلى الإسقاطات الجوية وصولًا إلى ⁦KABU&⁩"
+      },
+      "desc": {
+        "ja": "KABU&（カブアンド）は、電気代やスマホ代を払うと株をくれます。「使えば持ち主になれる」という考えは、1844年のロッチデールの利用高配当や、2020年の Uniswap のエアドロップにさかのぼります。カブアンド種類株式に実際についている権利、上場の意味、そして何があればタダ飯になるのかを考えます。",
+        "en": "KABU& pays you in shares for paying your power and phone bills. The idea that using something earns you ownership goes back to the Rochdale co-op dividend of 1844 and Uniswap’s 2020 airdrop. What the KABU& class shares actually carry, why listing matters, and what would make it a free lunch.",
+        "zh": "KABU& 在你缴电费和手机费时给你股票。“用了就成为所有者”的想法，可以追溯到 1844 年罗奇代尔合作社的按购买额分红，以及 2020 年 Uniswap 的空投。KABU& 种类股票实际附带哪些权利、上市为什么关键，以及怎样才算一顿免费午餐。",
+        "hi": "KABU& बिजली और फ़ोन के बिल चुकाने पर आपको शेयर देता है। “इस्तेमाल करने से मालिकाना हक़” का विचार 1844 में रॉचडेल को-ऑप के ख़रीद पर डिविडेंड और 2020 में Uniswap के एयरड्रॉप तक जाता है। KABU& के क्लास शेयरों में असल में कौन-से अधिकार हैं, लिस्टिंग क्यों अहम है, और इसे मुफ़्त का खाना क्या बनाएगा।",
+        "es": "KABU& te paga en acciones por pagar la luz y el móvil. La idea de que usar algo te hace dueño viene del dividendo por compras de la cooperativa de Rochdale (1844) y del airdrop de Uniswap (2020). Qué derechos tienen de verdad las acciones de clase de KABU&, por qué importa la salida a bolsa y qué haría falta para que fuera una comida gratis.",
+        "de": "KABU& zahlt dir Aktien dafür, dass du Strom- und Handyrechnungen bezahlst. Die Idee, dass Nutzung zu Eigentum führt, reicht von der Einkaufsdividende der Rochdale-Genossenschaft (1844) bis zum Uniswap-Airdrop (2020). Welche Rechte die KABU&-Gattungsaktien wirklich haben, warum der Börsengang entscheidet und was daraus ein Gratis-Mittagessen machen würde.",
+        "ar": "تمنحك ⁦KABU&⁩ أسهمًا مقابل دفع فواتير الكهرباء والهاتف. وفكرة أن الاستخدام يمنحك الملكية تعود إلى عائد المشتريات في تعاونية روتشديل عام 1844 وإلى الإسقاط الجوي لـ⁦Uniswap⁩ عام 2020. ما الحقوق التي تحملها فعلًا أسهم ⁦KABU&⁩ من الفئة الخاصة، ولماذا يهم الإدراج، وما الذي يجعلها غداءً مجانيًا."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "{KABU&（カブアンド）|/services/kabuand/}は、料金を払うと株をくれるサービスです。電気・ガス・スマホなどを契約すると、払った額に応じて「株引換券」がもらえます。通常会員なら電気とガスは1%、モバイルは5%で、有料会員はもっと多くなります。[5] 株引換券は1枚1円の扱いです。募集期間に申し込むと、前澤友作氏が社長を務める株式会社カブ＆ピースが新しく発行する株と交換できます。第4期募集の発行価格は1株8円、申込期間は2026年11月6日〜26日です。[6]"
+          ],
+          [
+            "p",
+            "これがベーシックインカムと言えるかは別の問いで、答えはおおむね「言えない」です。このエッセイでは違う問いを立てます。「使った人が持ち主になる」という考えには長い歴史があり、カブアンドはそのいちばん新しい形です。先輩たちから何を受け継ぎ、何を変えたのでしょうか。"
+          ],
+          [
+            "h",
+            "1844年：買った分だけの配当"
+          ],
+          [
+            "p",
+            "1844年12月21日、イングランド北部の町ロッチデールのトード・レーン31番地に、ロッチデール公正先駆者組合が小さな店を開きました。組合員の買い物は帳面に記録され、年に何度か利益を計算して、それぞれが買った額に応じて組合員に分けました。[1] これが協同組合の「利用高配当」です。出資した額ではなく、買った額に応じて払われる配当でした。この考えは今も協同組合原則に残っていて、剰余金の使い道のひとつとして「組合との取引高に応じて組合員に還元すること」が挙げられています。[2]"
+          ],
+          [
+            "p",
+            "日本では法律に同じしくみがあります。消費生活協同組合法では、生協が剰余金を割り戻せるのは、組合員が事業を利用した分量か、払い込んだ出資額に応じる場合だけで、出資額に応じる割戻しは年1割までと決まっています。[3] 利用高配当には、覚えておきたい特徴がもうひとつあります。店がすでに稼いだ利益の分け前だった、ということです。"
+          ],
+          [
+            "h",
+            "2020年：エアドロップ"
+          ],
+          [
+            "p",
+            "2020年9月16日、イーサリアム上の分散型取引所 Uniswap が、ガバナンストークン UNI を発表しました。供給量の15%にあたる1億5,000万UNIが、過去の利用者、流動性の提供者、SOCKS の保有者に配られました。9月1日のスナップショットまでに Uniswap v1 か v2 のコントラクトを一度でも使ったアドレスは、それぞれ400 UNIを受け取れました。対象は25万1,534アドレスです。[4] 何かを約束されていた人はいません。アプリを使ったことがある、それだけで十分でした。"
+          ],
+          [
+            "p",
+            "Uniswap の発表によれば、UNIの保有者は Uniswap のガバナンスの「即時の所有権」を得て、トークンはすぐに受け取れました。[4] ほかのトークンと同じく、受け取ったその場で送ることも売ることもできました。"
+          ],
+          [
+            "o",
+            "エアドロップは「使う＝持つ」を成長の戦術に変えました。ロッチデールは利益から組合員に払いました。エアドロップは、新しく作ったトークンを利用者に配ります。利益があるとは限らない段階で、です。その後、多くの暗号資産プロジェクトがこのやり方をまね、人々は「いつかエアドロップがあるかも」と期待して新しいアプリを試すようになりました。"
+          ],
+          [
+            "h",
+            "いま：株主名簿の上のエアドロップ"
+          ],
+          [
+            "p",
+            "カブアンドは、エアドロップの理屈を会社の株主名簿に持ち込みました。利用者はお金で株を買うわけではありません。料金の支払いでもらった株引換券を、新しく発行される「カブアンド種類株式」と交換します。目論見書には、この発行は資金調達が目的ではない、とあります。株の払込みは、会社自身が配った株引換券に対応するものだからです。[6] 2025年の第1期・第2期募集のあと、株主は82万3,947人になりました。[6]"
+          ],
+          [
+            "p",
+            "簡単な例で考えます。月1万円の電気代なら、1%で毎月100枚、年1,200枚の株引換券になります。1株8円なら150株で、発行価格で1,200円分です。2026年12月22日には10株が1株にまとめられるので、同じ持ち分は15株になります。会社は、株式併合そのものでは価値は変わらないと説明しています。[8] これに備えて、第4期では割り当てる株数を10株単位に切り下げ、使われなかった株引換券（最大79枚）は返されます。[6] 株引換券は、グループのサービスで使える1枚1円の割引券に替えることもできますが、割引券から株引換券には戻せません。[6]"
+          ],
+          [
+            "p",
+            "株を受け取るには、本人確認のうえ、会社が指定する証券会社で口座を開き、12月6日までに連携する必要があります。連携しないと割り当てはありません。[6] 会社は上場に向けて、大和コネクト証券と株を証券口座に移すしくみを作っています。[6]"
+          ],
+          [
+            "h",
+            "株についている権利"
+          ],
+          [
+            "p",
+            "ここは公式の書類がはっきりしていて、読む価値があります。第4期募集の目論見書によると、カブアンド種類株式には株主総会での議決権がありません。会社が普通株式に配当を出すときは、1株あたり普通株式と同じ額の配当を同じ順位で受け取れます。ただし会社は創業以来配当を出したことがなく、配当をするかどうか、いつするかは未定としています。会社を清算するときの残余財産は分配されません。譲渡には取締役会の承認が要ります。種類株式そのものは上場しませんが、取締役会が上場申請を承認すれば、会社はこれを1対1で議決権のある普通株式に替えられます。また、会社があなたを会員から強制退会させたときや、会社からの通知に6か月以上返事がないときは、払込金額と同じ額で株を買い取ることができます。[6]"
+          ],
+          [
+            "p",
+            "要になるのは上場です。前澤氏は2026年10月29日、2027年春ごろを最短の目安として上場の準備を進めていると書き、上場の実現や時期を保証するものではないと添えました。[8] 公式サイトにも同じ注意書きがあり、目論見書は、上場しても市場価格が発行価格を上回る保証はないとしています。[5][6] 上場しなくても出口がひとつあります。2028年12月31日までに上場しなかった場合、第3期・第4期で株を得た人のうち希望者は、評価機関が出す評価額で会社に買い取ってもらえます。ただし上限は払込金額の1.2倍です。[7]"
+          ],
+          [
+            "h",
+            "何が変わったのか"
+          ],
+          [
+            "o",
+            "還元が現金ではなく株になる。カブアンドの中での本当の選択は、「次の請求から1円引き」か「1円を株に回す」かです。現金やポイントの還元は小さくても確実です。株引換券は、その確実さを手放して、今は売れず、議決権も残余財産の取り分もなく、今のところ配当もない株を受け取ります。実質的には、利用者が自分の還元分で会社を支えている形です。ポイントなら手元に戻ってきたはずの価値が会社の中にとどまり、利用者は代わりに約束を持つことになります。"
+          ],
+          [
+            "o",
+            "エアドロップよりも、利用高配当よりも弱い。Uniswap の利用者は、初日に UNI を売ることも、それで投票することもできました。カブアンドの株主は、上場するまでどちらもできません。ロッチデールは稼いだ剰余金から払いましたが、カブアンドが渡すのは、まだ配当を出したことのない会社の新しい株です。三つのうち、何を受け取ったのかがわかるまで待たなければならないのは、カブアンドだけです。"
+          ],
+          [
+            "o",
+            "公平のために言えば、カブアンドに有利な違いもあります。これは本物の株で、関東財務局に提出された有価証券届出書にもとづいて発行されています。法的に何の請求権もないトークンとは違います。株引換券は、どうせ払う料金の上乗せとしてもらえます。そして2028年の買取りは、上場しなかったときの出口になります。ただし保証された値段ではなく、評価額での買取りです。"
+          ],
+          [
+            "h",
+            "結論：もうタダ飯か"
+          ],
+          [
+            "o",
+            "まだです。タダ飯とは、食べられるもののことです。今の株引換券は、1円の値引き（小さいけれど本物の還元）か、売れない株のどちらかです。それに株引換券は、サービスにお金を払わないともらえません。まずはカブアンドの料金が今払っている料金より高くないかを確かめてください。高ければ、電気代を通して株を買っているのと同じです。"
+          ],
+          [
+            "o",
+            "何があればタダ飯になるか。株を売れるようにする上場。待っている間にもお金を生む配当。どちらもなければ、2028年の買取り。どれかひとつでもあれば、株は実際に受け取れる価値を持ちます。それまでは、ここでの「使う＝持つ」は、つけ払いの所有です。"
+          ],
+          [
+            "o",
+            "{ユニバーサルハイインカムのエッセイ|/essays/universal-high-income/}で私たちは、おもしろいのは価値を人に届けるパイプのほうだと書きました。ロッチデールのパイプは店の剰余金でした。Uniswap のパイプは、売れるトークンでした。カブアンドのパイプは毎月の公共料金を通って、まだ市場を待っている株にたどり着きます。古くて、いい考えです。ただ、その所有に、使いたい日にどれだけの値打ちがあるのかは確かめておきましょう。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "{KABU&|/services/kabuand/} pays you in shares for paying your bills. Sign up for its electricity, gas or mobile service and every bill earns “share vouchers”: 1% of the bill for electricity and gas, 5% for mobile, and more for paying members.[5] Each voucher counts as ¥1. During an offering window you can swap them for newly issued shares in the company behind it, Kabu & Peace, led by Yusaku Maezawa. The fourth offering is priced at ¥8 a share and takes applications from 6 to 26 November 2026.[6]"
+          ],
+          [
+            "p",
+            "Whether this counts as a basic income is a separate question, and mostly it does not. This essay asks a different one. The idea that using something should make you one of its owners has a long history, and KABU& is its newest form. What does it keep from its ancestors, and what does it change?"
+          ],
+          [
+            "h",
+            "1844: a dividend on what you buy"
+          ],
+          [
+            "p",
+            "On 21 December 1844 the Rochdale Equitable Pioneers Society opened a small shop at 31 Toad Lane in Rochdale, in the north of England. Members’ purchases were written in a book, and several times a year the profits were worked out and shared among the members according to how much each had bought.[1] This was the co-op “divi”: a dividend on purchases, not on capital. It lives on in the cooperative principles, where one agreed use of a surplus is “benefiting members in proportion to their transactions with the cooperative”.[2]"
+          ],
+          [
+            "p",
+            "Japan has the same mechanism in law. Under the Consumer Co-operative Act, a co-op may hand back its surplus only in proportion to how much members used its business or how much capital they paid in, and a return on capital may not exceed 10% a year.[3] The divi had one more feature worth remembering: it was a share of profits the shop had already made."
+          ],
+          [
+            "h",
+            "2020: the airdrop"
+          ],
+          [
+            "p",
+            "On 16 September 2020 Uniswap, a decentralised exchange on Ethereum, launched its governance token, UNI. 15% of the supply, 150 million UNI, went to past users, liquidity providers and SOCKS holders. Every address that had ever called the Uniswap v1 or v2 contracts before a snapshot on 1 September could claim 400 UNI: 251,534 addresses in all.[4] Nobody had been promised anything. Having used the app was enough."
+          ],
+          [
+            "p",
+            "According to Uniswap’s announcement, UNI holders got “immediate ownership” of Uniswap governance, and the tokens were claimable at once.[4] Like any token, they could be sent or sold as soon as they were claimed."
+          ],
+          [
+            "o",
+            "The airdrop turned “use = ownership” into a growth tactic. Rochdale paid members out of profit. An airdrop pays users out of newly created tokens, before there is necessarily any profit at all. Many crypto projects have copied the move since, and people now try new apps partly in the hope of a future drop."
+          ],
+          [
+            "h",
+            "Now: an airdrop on a share register"
+          ],
+          [
+            "p",
+            "KABU& carries the airdrop’s logic over to a company’s share register. Customers do not buy shares with money. Vouchers earned from bills are exchanged for newly issued “KABU& class shares”. The prospectus says the issue is not meant to raise funds: the payment for the shares corresponds to vouchers the company itself granted.[6] After its first two offerings in 2025, the company counted 823,947 shareholders.[6]"
+          ],
+          [
+            "p",
+            "A simple example. A ¥10,000 monthly electricity bill at 1% earns 100 vouchers a month, or 1,200 a year. At ¥8, that is 150 shares, worth ¥1,200 at the issue price. On 22 December 2026 every 10 shares become 1, so the same holding becomes 15 shares; the company says the consolidation does not change their value by itself.[8] To prepare for it, the fourth offering rounds each allocation down to a multiple of 10 shares and returns up to 79 unused vouchers.[6] Vouchers can also be turned into ¥1 discount coupons for the group’s services, but not turned back.[6]"
+          ],
+          [
+            "p",
+            "To receive shares, applicants pass an identity check, then open an account at a securities firm the company designates and link it by 6 December; otherwise nothing is allotted.[6] The company has set up a scheme with Daiwa Connect Securities to move shares into brokerage accounts when it lists.[6]"
+          ],
+          [
+            "h",
+            "What the shares carry"
+          ],
+          [
+            "p",
+            "Here the official documents are clear, and worth reading. According to the fourth-offering prospectus, KABU& class shares have no voting rights at shareholders’ meetings. They receive the same dividend per share as common shares, at the same rank, whenever the company pays one on common shares; but it has never paid a dividend, and says whether and when it will is undecided. They get nothing from the remaining assets if the company is wound up. A transfer needs the board’s approval. The class shares themselves will not be listed, but if the board approves applying for a listing, the company can convert them one-for-one into voting common shares. And it can buy them back at the original paid-in price if it expels you as a member, or if you do not answer its notices for six months.[6]"
+          ],
+          [
+            "p",
+            "Listing is the hinge. On 29 October 2026 Maezawa wrote that the company is preparing to list, with spring 2027 as the earliest target, and noted that this does not guarantee a listing or its timing.[8] The website says the same, and the prospectus adds that even after a listing, nothing guarantees a market price above the issue price.[5][6] There is one exit without a listing. If the company has not listed by 31 December 2028, holders of shares from the third and fourth offerings who want out can sell them back at an independent valuation, capped at 1.2 times what they paid in.[7]"
+          ],
+          [
+            "h",
+            "What changes"
+          ],
+          [
+            "o",
+            "A rebate in equity, not cash. The real choice inside KABU& is between ¥1 off your next bill and ¥1 put into shares. A cash rebate or a point is small but certain. A share voucher trades that certainty for a share you cannot sell yet, with no vote, no claim on the assets and, so far, no dividend. In effect, customers fund the company with their rebates: value that a points programme would hand back stays inside the business, and the customer holds a promise instead."
+          ],
+          [
+            "o",
+            "Less than an airdrop, and less than the divi. A Uniswap user could sell UNI on day one, or vote with it. A KABU& shareholder can do neither until a listing. Rochdale paid out of a surplus already earned; KABU& pays in new shares of a company that has not yet paid a dividend. Of the three, it is the only one where you have to wait to find out what you got."
+          ],
+          [
+            "o",
+            "To be fair, some differences favour KABU&. These are real shares, sold under a securities registration statement filed with the Kanto Local Finance Bureau, not tokens with no legal claim on anything. The vouchers come on top of bills you would pay anyway. And the 2028 buyback gives a way out even if the listing never happens, though at a valuation, not at a guaranteed price."
+          ],
+          [
+            "h",
+            "Conclusion: a free lunch yet?"
+          ],
+          [
+            "o",
+            "Not yet. A free lunch is one you can eat. Today a voucher is either ¥1 off a bill, a real but modest rebate, or a share you cannot sell. And vouchers only come if you pay for the service, so first check that KABU&’s tariff is no higher than what you pay now. Otherwise you are buying shares through your power bill."
+          ],
+          [
+            "o",
+            "What would make it one? A listing, so the shares can be sold. A dividend, so they pay while you wait. Failing both, the 2028 buyback. Any of these would give the share a value you can actually collect. Until then, “use = ownership” here means ownership on credit."
+          ],
+          [
+            "o",
+            "In our essay on {universal high income|/essays/universal-high-income/}, we argued that the interesting part is the pipe that carries value to people. Rochdale’s pipe was the shop’s surplus. Uniswap’s was a token you could sell. KABU&’s pipe runs through your utility bills and ends in a share that is still waiting for its market. It is an old idea, and a good one. Just check what the ownership is worth on the day you want to use it."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "{KABU&|/services/kabuand/} 会因为你付账单而给你股票。签约它的电力、燃气或手机服务后，每次付费都能获得“股票兑换券”：普通会员的电费和燃气费为 1%，手机费为 5%，付费会员更多。[5] 每张兑换券按 1 日元计算。在募集期内，你可以把它们换成运营公司 Kabu & Peace（社长为前泽友作）新发行的股票。第 4 期募集的发行价为每股 8 日元，申请期为 2026 年 11 月 6 日至 26 日。[6]"
+          ],
+          [
+            "p",
+            "这算不算基本收入，是另一个问题，答案大体上是“不算”。本文要问的是另一件事。“使用者应当成为所有者之一”这个想法由来已久，KABU& 只是它最新的形态。它从前辈那里继承了什么，又改变了什么？"
+          ],
+          [
+            "h",
+            "1844 年：按购买额分红"
+          ],
+          [
+            "p",
+            "1844 年 12 月 21 日，罗奇代尔公平先锋社在英格兰北部罗奇代尔镇的托德巷 31 号开了一家小店。社员的购物都记在账本上，每年几次计算利润，并按每人购买的多少分给社员。[1] 这就是合作社的“分红”（divi）：按购买额而不是按出资额分红。这个想法至今仍写在合作社原则里：盈余的一种用途，是“按社员与合作社的交易量回馈社员”。[2]"
+          ],
+          [
+            "p",
+            "日本把同样的机制写进了法律。根据《消费生活协同组合法》，合作社只能按社员利用其业务的分量或已缴纳的出资额返还盈余，按出资额返还每年不得超过 10%。[3] 这种分红还有一个值得记住的特点：它分的是小店已经赚到的利润。"
+          ],
+          [
+            "h",
+            "2020 年：空投"
+          ],
+          [
+            "p",
+            "2020 年 9 月 16 日，以太坊上的去中心化交易所 Uniswap 推出治理代币 UNI。总量的 15%，即 1.5 亿枚 UNI，分给了过去的用户、流动性提供者和 SOCKS 持有者。凡是在 9 月 1 日快照之前调用过 Uniswap v1 或 v2 合约的地址，都可以领取 400 枚 UNI，共 251,534 个地址。[4] 没有人事先得到过任何承诺。用过这个应用，就足够了。"
+          ],
+          [
+            "p",
+            "按照 Uniswap 的公告，UNI 持有者获得了对 Uniswap 治理的“即时所有权”，代币可以马上领取。[4] 和其他代币一样，领到之后就能转账或卖出。"
+          ],
+          [
+            "o",
+            "空投把“使用＝拥有”变成了一种增长手段。罗奇代尔用利润给社员分红；空投则把新造出来的代币发给用户，而那时未必已经有任何利润。此后许多加密项目都照搬了这一招，人们试用新应用时，多少也怀着“将来也许有空投”的期待。"
+          ],
+          [
+            "h",
+            "现在：股东名册上的空投"
+          ],
+          [
+            "p",
+            "KABU& 把空投的逻辑搬到了公司的股东名册上。用户不是用钱买股票，而是用付账单得到的兑换券，换取新发行的“KABU& 种类股票”。招股说明书写明，这次发行不以筹资为目的：股票的缴款对应的是公司自己发放的兑换券。[6] 2025 年前两期募集之后，公司的股东达到 823,947 人。[6]"
+          ],
+          [
+            "p",
+            "举个简单的例子。每月电费 1 万日元，按 1% 每月得到 100 张兑换券，一年 1,200 张。按每股 8 日元，就是 150 股，按发行价值 1,200 日元。2026 年 12 月 22 日起每 10 股合并为 1 股，同样的持股就变成 15 股；公司说明，合并本身不会改变价值。[8] 为此，第 4 期会把配售股数向下取整到 10 股的倍数，未用的兑换券（最多 79 张）会退回。[6] 兑换券也可以换成集团服务里每张 1 日元的折扣券，但不能再换回来。[6]"
+          ],
+          [
+            "p",
+            "要拿到股票，申请人须通过身份验证，在公司指定的证券公司开户，并在 12 月 6 日前完成关联，否则不予配售。[6] 公司已与大和 Connect 证券建立了一套在上市时把股票转入证券账户的机制。[6]"
+          ],
+          [
+            "h",
+            "这些股票附带什么"
+          ],
+          [
+            "p",
+            "这一点官方文件写得很清楚，值得一读。根据第 4 期招股说明书，KABU& 种类股票在股东大会上没有表决权。公司向普通股派息时，它按每股与普通股相同的金额、相同的顺位获得分红；但公司自创立以来从未分红，并表示是否分红、何时分红尚未确定。公司清算时，它不参与剩余财产分配。转让须经董事会批准。种类股票本身不会上市，但若董事会批准申请上市，公司可以按 1 比 1 把它转换为有表决权的普通股。此外，如果公司强制让你退会，或者你六个月以上不回复公司的通知，公司可以按原缴款金额回购这些股票。[6]"
+          ],
+          [
+            "p",
+            "关键在于上市。前泽友作在 2026 年 10 月 29 日写道，公司正以最早 2027 年春为目标准备上市，并注明这并不保证一定上市或上市时间。[8] 官网也有同样的说明，招股说明书还补充说，即使上市，也不保证市价高于发行价。[5][6] 不上市也有一个出口：如果到 2028 年 12 月 31 日仍未上市，第 3、4 期取得股票的人中希望退出的，可以按评估机构给出的估值卖回给公司，上限为缴款金额的 1.2 倍。[7]"
+          ],
+          [
+            "h",
+            "变了什么"
+          ],
+          [
+            "o",
+            "返利变成股权，而不是现金。在 KABU& 里，真正的选择是“下次账单便宜 1 日元”还是“把 1 日元投进股票”。现金或积分返利虽小，但确定。股票兑换券放弃了这份确定，换来一张目前卖不掉、没有表决权、不参与剩余财产、迄今也没有分红的股票。实际上，用户是在用自己的返利支撑公司：积分计划本会还给用户的价值留在了公司里，用户手里拿的是一个承诺。"
+          ],
+          [
+            "o",
+            "比空投弱，也比合作社分红弱。Uniswap 用户第一天就能卖掉 UNI，或者用它投票。KABU& 的股东在上市之前两样都做不到。罗奇代尔用已经赚到的盈余分红；KABU& 给的是一家尚未分过红的公司的新股。三者之中，只有它要等一段时间才知道自己到底得到了什么。"
+          ],
+          [
+            "o",
+            "公平地说，也有对 KABU& 有利的差别。这些是真正的股票，依据向关东财务局提交的有价证券申报书发行，不是没有任何法律权利的代币。兑换券是在你本来就要付的账单之外额外得到的。而 2028 年的回购，即使上市始终没有实现，也提供了一个出口，只不过按估值，而不是按保证的价格。"
+          ],
+          [
+            "h",
+            "结论：已经是免费午餐了吗？"
+          ],
+          [
+            "o",
+            "还不是。免费午餐，得是能吃的。如今一张兑换券，要么是账单上 1 日元的折扣（小，但真实），要么是一股卖不掉的股票。而且兑换券只有付费使用服务才会有，所以先确认 KABU& 的价格不比你现在付的更贵。否则，你就是在通过电费买股票。"
+          ],
+          [
+            "o",
+            "怎样才能变成免费午餐？上市，让股票可以卖。分红，让你在等待时也有收入。两者都没有的话，还有 2028 年的回购。只要有其中一样，这只股票就有了你真正能拿到手的价值。在那之前，这里的“使用＝拥有”，是赊账的拥有。"
+          ],
+          [
+            "o",
+            "在{关于全民高收入的随笔|/essays/universal-high-income/}里，我们说过，有意思的是把价值送到人手里的那根管道。罗奇代尔的管道是小店的盈余，Uniswap 的管道是可以卖掉的代币。KABU& 的管道穿过你的水电账单，通向一只仍在等待市场的股票。这是个古老的好主意。只是要确认，在你想用它的那天，这份所有权值多少钱。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "{KABU&|/services/kabuand/} बिल चुकाने पर आपको शेयर देता है। इसकी बिजली, गैस या मोबाइल सेवा लेने पर हर बिल पर “शेयर वाउचर” मिलते हैं: बिजली और गैस पर बिल का 1%, मोबाइल पर 5%, और पेड सदस्यों को इससे ज़्यादा।[5] हर वाउचर ¥1 का माना जाता है। ऑफ़रिंग की अवधि में इन्हें इसके पीछे की कंपनी Kabu & Peace के नए जारी शेयरों में बदला जा सकता है, जिसके प्रमुख Yusaku Maezawa हैं। चौथी ऑफ़रिंग की क़ीमत ¥8 प्रति शेयर है और आवेदन 6 से 26 नवंबर 2026 तक लिए जा रहे हैं।[6]"
+          ],
+          [
+            "p",
+            "यह बेसिक इनकम है या नहीं, यह अलग सवाल है, और ज़्यादातर जवाब “नहीं” है। यह निबंध दूसरा सवाल पूछता है। “जो इस्तेमाल करे, वह मालिकों में से एक बने” यह विचार बहुत पुराना है, और KABU& इसका सबसे नया रूप है। इसने अपने पुरखों से क्या लिया, और क्या बदला?"
+          ],
+          [
+            "h",
+            "1844: जितना ख़रीदा, उस पर डिविडेंड"
+          ],
+          [
+            "p",
+            "21 दिसंबर 1844 को रॉचडेल इक्विटेबल पायनियर्स सोसाइटी ने उत्तरी इंग्लैंड के रॉचडेल में 31 टोड लेन पर एक छोटी दुकान खोली। सदस्यों की ख़रीद एक बही में लिखी जाती थी, और साल में कई बार मुनाफ़ा निकालकर सदस्यों में इस हिसाब से बाँटा जाता था कि किसने कितना ख़रीदा।[1] यही को-ऑप का “डिवी” था: पूँजी पर नहीं, ख़रीद पर डिविडेंड। यह आज भी सहकारी सिद्धांतों में ज़िंदा है, जहाँ अधिशेष का एक तय इस्तेमाल है “सदस्यों को सहकारी संस्था के साथ उनके लेन-देन के अनुपात में लाभ देना”।[2]"
+          ],
+          [
+            "p",
+            "जापान में यही तरीक़ा क़ानून में है। उपभोक्ता सहकारी समिति क़ानून के तहत को-ऑप अपना अधिशेष सिर्फ़ सदस्यों के इस्तेमाल की मात्रा या उनकी जमा पूँजी के अनुपात में लौटा सकता है, और पूँजी पर रिटर्न साल में 10% से ज़्यादा नहीं हो सकता।[3] डिवी की एक और बात याद रखने लायक है: यह उस मुनाफ़े का हिस्सा था जो दुकान पहले ही कमा चुकी थी।"
+          ],
+          [
+            "h",
+            "2020: एयरड्रॉप"
+          ],
+          [
+            "p",
+            "16 सितंबर 2020 को Ethereum पर चलने वाले विकेंद्रीकृत एक्सचेंज Uniswap ने अपना गवर्नेंस टोकन UNI लॉन्च किया। कुल सप्लाई का 15%, यानी 15 करोड़ UNI, पुराने यूज़र्स, लिक्विडिटी देने वालों और SOCKS रखने वालों को मिला। 1 सितंबर के स्नैपशॉट से पहले जिस भी पते ने कभी Uniswap v1 या v2 के कॉन्ट्रैक्ट इस्तेमाल किए थे, वह 400 UNI ले सकता था: कुल 2,51,534 पते।[4] किसी से कोई वादा नहीं किया गया था। ऐप इस्तेमाल किया होना ही काफ़ी था।"
+          ],
+          [
+            "p",
+            "Uniswap की घोषणा के मुताबिक़, UNI रखने वालों को Uniswap गवर्नेंस का “तुरंत मालिकाना हक़” मिला, और टोकन फ़ौरन क्लेम किए जा सकते थे।[4] किसी भी टोकन की तरह, क्लेम करते ही इन्हें भेजा या बेचा जा सकता था।"
+          ],
+          [
+            "o",
+            "एयरड्रॉप ने “इस्तेमाल = मालिकाना हक़” को बढ़ने की एक तरकीब बना दिया। रॉचडेल सदस्यों को मुनाफ़े से पैसा देता था। एयरड्रॉप यूज़र्स को नए बनाए गए टोकन देता है, अक्सर तब, जब कोई मुनाफ़ा हो यह ज़रूरी भी नहीं। तब से कई क्रिप्टो प्रोजेक्ट यही चाल अपना चुके हैं, और लोग नए ऐप कुछ हद तक इसी उम्मीद में आज़माते हैं कि आगे एयरड्रॉप मिलेगा।"
+          ],
+          [
+            "h",
+            "अब: शेयर रजिस्टर पर एयरड्रॉप"
+          ],
+          [
+            "p",
+            "KABU& एयरड्रॉप के तर्क को एक कंपनी के शेयर रजिस्टर तक ले आता है। ग्राहक पैसे से शेयर नहीं ख़रीदते। बिलों से मिले वाउचर नए जारी “KABU& क्लास शेयरों” में बदले जाते हैं। प्रॉस्पेक्टस कहता है कि यह इश्यू पूँजी जुटाने के लिए नहीं है: शेयरों का भुगतान उन वाउचरों के बराबर है जो कंपनी ने ख़ुद दिए।[6] 2025 की पहली दो ऑफ़रिंग के बाद कंपनी के 8,23,947 शेयरधारक थे।[6]"
+          ],
+          [
+            "p",
+            "एक आसान उदाहरण। ¥10,000 महीने के बिजली बिल पर 1% से हर महीने 100 वाउचर, यानी साल में 1,200 वाउचर मिलते हैं। ¥8 के हिसाब से यह 150 शेयर हुए, जिनकी इश्यू प्राइस पर क़ीमत ¥1,200 है। 22 दिसंबर 2026 को हर 10 शेयर मिलकर 1 हो जाएँगे, तो वही होल्डिंग 15 शेयर बन जाएगी; कंपनी कहती है कि शेयरों के इस विलय से अपने-आप में मूल्य नहीं बदलता।[8] इसकी तैयारी में चौथी ऑफ़रिंग हर आवंटन को नीचे की ओर 10 शेयरों के गुणज तक घटाती है और बचे हुए 79 तक वाउचर लौटा देती है।[6] वाउचरों को ग्रुप की सेवाओं के लिए ¥1 के डिस्काउंट कूपन में भी बदला जा सकता है, पर वापस नहीं।[6]"
+          ],
+          [
+            "p",
+            "शेयर पाने के लिए आवेदकों को पहचान की जाँच पास करनी होती है, फिर कंपनी द्वारा तय किसी सिक्योरिटीज़ फ़र्म में खाता खोलकर 6 दिसंबर तक उसे लिंक करना होता है; वरना कोई आवंटन नहीं होता।[6] लिस्टिंग के समय शेयरों को ब्रोकरेज खातों में ले जाने के लिए कंपनी ने Daiwa Connect Securities के साथ एक व्यवस्था बनाई है।[6]"
+          ],
+          [
+            "h",
+            "शेयरों में क्या-क्या है"
+          ],
+          [
+            "p",
+            "यहाँ आधिकारिक दस्तावेज़ साफ़ हैं, और पढ़ने लायक हैं। चौथी ऑफ़रिंग के प्रॉस्पेक्टस के मुताबिक़, KABU& क्लास शेयरों को शेयरधारकों की बैठक में वोट का अधिकार नहीं है। जब भी कंपनी सामान्य शेयरों पर डिविडेंड दे, इन्हें प्रति शेयर उतना ही डिविडेंड उसी दर्जे पर मिलता है; पर कंपनी ने आज तक कोई डिविडेंड नहीं दिया, और कहती है कि देगी या नहीं और कब, यह तय नहीं है। कंपनी बंद होने पर बची संपत्ति में से इन्हें कुछ नहीं मिलता। ट्रांसफ़र के लिए बोर्ड की मंज़ूरी चाहिए। क्लास शेयर ख़ुद लिस्ट नहीं होंगे, पर अगर बोर्ड लिस्टिंग के आवेदन को मंज़ूरी दे, तो कंपनी इन्हें एक के बदले एक वोट वाले सामान्य शेयरों में बदल सकती है। और अगर कंपनी आपको सदस्यता से निकाल दे, या आप छह महीने तक उसकी सूचनाओं का जवाब न दें, तो वह इन्हें मूल भुगतान वाली क़ीमत पर वापस ख़रीद सकती है।[6]"
+          ],
+          [
+            "p",
+            "सारा दारोमदार लिस्टिंग पर है। 29 अक्टूबर 2026 को Maezawa ने लिखा कि कंपनी लिस्टिंग की तैयारी कर रही है, सबसे जल्दी 2027 के वसंत तक, और साथ में लिखा कि इससे लिस्टिंग या उसके समय की कोई गारंटी नहीं है।[8] वेबसाइट भी यही कहती है, और प्रॉस्पेक्टस जोड़ता है कि लिस्टिंग के बाद भी बाज़ार भाव इश्यू प्राइस से ऊपर रहने की कोई गारंटी नहीं।[5][6] लिस्टिंग के बिना भी एक रास्ता है। अगर 31 दिसंबर 2028 तक कंपनी लिस्ट नहीं होती, तो तीसरी और चौथी ऑफ़रिंग के शेयरधारक, जो निकलना चाहें, उन्हें एक स्वतंत्र मूल्यांकन पर वापस बेच सकते हैं, अधिकतम चुकाई गई रक़म के 1.2 गुना तक।[7]"
+          ],
+          [
+            "h",
+            "क्या बदलता है"
+          ],
+          [
+            "o",
+            "नकद नहीं, शेयर में रिबेट। KABU& के अंदर असली चुनाव यह है: अगले बिल पर ¥1 की छूट, या ¥1 शेयरों में। नकद या पॉइंट वाला रिबेट छोटा पर पक्का होता है। शेयर वाउचर उस पक्केपन के बदले एक ऐसा शेयर देता है जिसे आप अभी बेच नहीं सकते, जिसमें न वोट है, न संपत्ति पर दावा, और अब तक कोई डिविडेंड भी नहीं। असल में ग्राहक अपने रिबेट से कंपनी को पैसा दे रहे हैं: जो मूल्य कोई पॉइंट प्रोग्राम लौटा देता, वह कंपनी के अंदर रहता है, और ग्राहक के हाथ में एक वादा होता है।"
+          ],
+          [
+            "o",
+            "एयरड्रॉप से भी कम, डिवी से भी कम। Uniswap यूज़र पहले ही दिन UNI बेच सकता था, या उससे वोट कर सकता था। KABU& शेयरधारक लिस्टिंग तक इनमें से कुछ नहीं कर सकता। रॉचडेल पहले से कमाए अधिशेष से देता था; KABU& एक ऐसी कंपनी के नए शेयर देता है जिसने अभी तक डिविडेंड नहीं दिया। तीनों में यही अकेला है जिसमें आपको इंतज़ार करना पड़ता है यह जानने के लिए कि आपको मिला क्या।"
+          ],
+          [
+            "o",
+            "इंसाफ़ के लिए कहें तो कुछ फ़र्क़ KABU& के पक्ष में भी हैं। ये असली शेयर हैं, जो कांतो लोकल फ़ाइनेंस ब्यूरो में दाख़िल सिक्योरिटीज़ रजिस्ट्रेशन स्टेटमेंट के तहत जारी हुए हैं, कोई ऐसे टोकन नहीं जिन पर कोई क़ानूनी दावा न हो। वाउचर उन बिलों के ऊपर मिलते हैं जो आप वैसे भी चुकाते। और 2028 का बायबैक लिस्टिंग कभी न होने पर भी एक रास्ता देता है, हालाँकि मूल्यांकन पर, किसी गारंटीशुदा क़ीमत पर नहीं।"
+          ],
+          [
+            "h",
+            "निष्कर्ष: क्या यह मुफ़्त का खाना है?"
+          ],
+          [
+            "o",
+            "अभी नहीं। मुफ़्त का खाना वह है जिसे खाया जा सके। आज एक वाउचर या तो बिल पर ¥1 की छूट है, जो असली पर मामूली रिबेट है, या एक ऐसा शेयर जिसे आप बेच नहीं सकते। और वाउचर तभी मिलते हैं जब आप सेवा के पैसे दें, इसलिए पहले जाँच लें कि KABU& का टैरिफ़ आपके मौजूदा बिल से महँगा न हो। वरना आप अपने बिजली बिल के ज़रिए शेयर ख़रीद रहे हैं।"
+          ],
+          [
+            "o",
+            "इसे मुफ़्त का खाना क्या बनाएगा? लिस्टिंग, ताकि शेयर बेचे जा सकें। डिविडेंड, ताकि इंतज़ार में भी कुछ मिले। दोनों न हों, तो 2028 का बायबैक। इनमें से कोई भी शेयर को ऐसा मूल्य देगा जिसे आप सच में पा सकें। तब तक यहाँ “इस्तेमाल = मालिकाना हक़” का मतलब है उधार का मालिकाना हक़।"
+          ],
+          [
+            "o",
+            "{यूनिवर्सल हाई इनकम|/essays/universal-high-income/} वाले निबंध में हमने कहा था कि दिलचस्प चीज़ वह पाइप है जो लोगों तक मूल्य पहुँचाता है। रॉचडेल का पाइप दुकान का अधिशेष था। Uniswap का पाइप एक ऐसा टोकन था जिसे बेचा जा सकता था। KABU& का पाइप आपके बिजली-पानी के बिलों से होकर एक ऐसे शेयर तक जाता है जो अब भी अपने बाज़ार का इंतज़ार कर रहा है। विचार पुराना है, और अच्छा है। बस यह जाँच लें कि जिस दिन आप इस मालिकाना हक़ को इस्तेमाल करना चाहें, उस दिन इसकी क़ीमत क्या होगी।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "{KABU&|/services/kabuand/} te paga en acciones por pagar tus facturas. Si contratas su luz, gas o móvil, cada factura te da «vales de acciones»: el 1% de la factura en luz y gas, el 5% en móvil, y más para los miembros de pago.[5] Cada vale cuenta como 1 ¥. En un periodo de oferta puedes cambiarlos por acciones nuevas de la empresa que hay detrás, Kabu & Peace, dirigida por Yusaku Maezawa. La cuarta oferta tiene un precio de 8 ¥ por acción y acepta solicitudes del 6 al 26 de noviembre de 2026.[6]"
+          ],
+          [
+            "p",
+            "Si esto cuenta como renta básica es otra cuestión, y en general la respuesta es no. Este ensayo hace otra pregunta. La idea de que usar algo debería hacerte uno de sus dueños tiene una larga historia, y KABU& es su forma más reciente. ¿Qué conserva de sus antecesores y qué cambia?"
+          ],
+          [
+            "h",
+            "1844: un dividendo sobre lo que compras"
+          ],
+          [
+            "p",
+            "El 21 de diciembre de 1844, la Rochdale Equitable Pioneers Society abrió una pequeña tienda en el número 31 de Toad Lane, en Rochdale, en el norte de Inglaterra. Las compras de los socios se anotaban en un libro, y varias veces al año se calculaban los beneficios y se repartían entre los socios según lo que cada uno había comprado.[1] Era el «divi» de la cooperativa: un dividendo sobre las compras, no sobre el capital. Sigue vivo en los principios cooperativos, donde uno de los usos acordados del excedente es «beneficiar a los socios en proporción a sus transacciones con la cooperativa».[2]"
+          ],
+          [
+            "p",
+            "Japón tiene el mismo mecanismo en la ley. Según la Ley de Cooperativas de Consumo, una cooperativa solo puede devolver su excedente en proporción a cuánto usaron los socios sus servicios o al capital que aportaron, y el retorno sobre el capital no puede superar el 10% anual.[3] El divi tenía otro rasgo que conviene recordar: era una parte de beneficios que la tienda ya había obtenido."
+          ],
+          [
+            "h",
+            "2020: el airdrop"
+          ],
+          [
+            "p",
+            "El 16 de septiembre de 2020, Uniswap, un exchange descentralizado en Ethereum, lanzó su token de gobernanza, UNI. El 15% del suministro, 150 millones de UNI, fue para usuarios pasados, proveedores de liquidez y poseedores de SOCKS. Cada dirección que hubiera usado alguna vez los contratos de Uniswap v1 o v2 antes de una instantánea del 1 de septiembre podía reclamar 400 UNI: 251.534 direcciones en total.[4] A nadie se le había prometido nada. Haber usado la aplicación bastaba."
+          ],
+          [
+            "p",
+            "Según el anuncio de Uniswap, los poseedores de UNI obtuvieron «propiedad inmediata» de la gobernanza de Uniswap, y los tokens se podían reclamar al instante.[4] Como cualquier token, se podían enviar o vender en cuanto se reclamaban."
+          ],
+          [
+            "o",
+            "El airdrop convirtió «usar = poseer» en una táctica de crecimiento. Rochdale pagaba a sus socios con beneficios. Un airdrop paga a los usuarios con tokens recién creados, antes incluso de que haya necesariamente algún beneficio. Muchos proyectos cripto han copiado la jugada desde entonces, y hoy la gente prueba aplicaciones nuevas en parte con la esperanza de un futuro airdrop."
+          ],
+          [
+            "h",
+            "Hoy: un airdrop en el registro de accionistas"
+          ],
+          [
+            "p",
+            "KABU& lleva la lógica del airdrop al registro de accionistas de una empresa. Los clientes no compran acciones con dinero. Los vales que ganan con sus facturas se cambian por «acciones de clase KABU&» de nueva emisión. El folleto dice que la emisión no busca captar fondos: el pago de las acciones corresponde a vales que la propia empresa concedió.[6] Tras sus dos primeras ofertas en 2025, la empresa contaba 823.947 accionistas.[6]"
+          ],
+          [
+            "p",
+            "Un ejemplo sencillo. Una factura de luz de 10.000 ¥ al mes, al 1%, da 100 vales al mes, o 1.200 al año. A 8 ¥, son 150 acciones, que valen 1.200 ¥ al precio de emisión. El 22 de diciembre de 2026 cada 10 acciones pasan a ser 1, así que esa misma posición queda en 15 acciones; la empresa dice que la agrupación no cambia su valor por sí misma.[8] Para prepararla, la cuarta oferta redondea cada asignación hacia abajo a un múltiplo de 10 acciones y devuelve hasta 79 vales sin usar.[6] Los vales también se pueden convertir en cupones de descuento de 1 ¥ para los servicios del grupo, pero no al revés.[6]"
+          ],
+          [
+            "p",
+            "Para recibir acciones hay que pasar una verificación de identidad, abrir una cuenta en una sociedad de valores que designa la empresa y vincularla antes del 6 de diciembre; si no, no se asigna nada.[6] La empresa ha montado con Daiwa Connect Securities un sistema para pasar las acciones a cuentas de valores cuando salga a bolsa.[6]"
+          ],
+          [
+            "h",
+            "Qué derechos tienen las acciones"
+          ],
+          [
+            "p",
+            "Aquí los documentos oficiales son claros y vale la pena leerlos. Según el folleto de la cuarta oferta, las acciones de clase KABU& no tienen derecho a voto en las juntas de accionistas. Reciben el mismo dividendo por acción que las ordinarias, con el mismo rango, cuando la empresa paga dividendo a las ordinarias; pero nunca lo ha pagado, y dice que si lo hará y cuándo está por decidir. No reciben nada del patrimonio restante si la empresa se liquida. Una transmisión necesita la aprobación del consejo. Las acciones de clase no cotizarán, pero si el consejo aprueba pedir la salida a bolsa, la empresa puede convertirlas una por una en acciones ordinarias con voto. Y puede recomprarlas al precio desembolsado si te expulsa como miembro o si no respondes a sus avisos durante seis meses.[6]"
+          ],
+          [
+            "p",
+            "La salida a bolsa es la bisagra. El 29 de octubre de 2026 Maezawa escribió que la empresa se prepara para cotizar, con la primavera de 2027 como fecha más temprana, y aclaró que eso no garantiza ni la salida a bolsa ni su fecha.[8] La web dice lo mismo, y el folleto añade que, incluso después de cotizar, nada garantiza un precio de mercado por encima del de emisión.[5][6] Hay una salida sin cotización. Si la empresa no cotiza antes del 31 de diciembre de 2028, quienes tengan acciones de la tercera y cuarta oferta y quieran salir podrán revendérselas a una valoración independiente, con un tope de 1,2 veces lo desembolsado.[7]"
+          ],
+          [
+            "h",
+            "Qué cambia"
+          ],
+          [
+            "o",
+            "Un reembolso en acciones, no en dinero. La elección real dentro de KABU& es entre 1 ¥ menos en tu próxima factura y 1 ¥ invertido en acciones. Un reembolso en efectivo o en puntos es pequeño pero seguro. Un vale de acciones cambia esa seguridad por una acción que todavía no puedes vender, sin voto, sin derecho al patrimonio y, de momento, sin dividendo. En la práctica, los clientes financian a la empresa con sus reembolsos: el valor que un programa de puntos devolvería se queda dentro del negocio, y el cliente se queda con una promesa."
+          ],
+          [
+            "o",
+            "Menos que un airdrop y menos que el divi. Un usuario de Uniswap podía vender UNI el primer día, o votar con él. Un accionista de KABU& no puede hacer ninguna de las dos cosas hasta la salida a bolsa. Rochdale pagaba con un excedente ya ganado; KABU& paga con acciones nuevas de una empresa que aún no ha repartido dividendos. De los tres, es el único en el que hay que esperar para saber qué te ha tocado."
+          ],
+          [
+            "o",
+            "Para ser justos, algunas diferencias favorecen a KABU&. Son acciones de verdad, emitidas con una declaración de registro de valores presentada ante la Oficina Financiera Local de Kanto, no tokens sin ningún derecho legal. Los vales llegan además de facturas que pagarías de todos modos. Y la recompra de 2028 ofrece una salida aunque la cotización no llegue nunca, aunque a una valoración, no a un precio garantizado."
+          ],
+          [
+            "h",
+            "Conclusión: ¿ya es una comida gratis?"
+          ],
+          [
+            "o",
+            "Todavía no. Una comida gratis es una que se puede comer. Hoy un vale es o 1 ¥ de descuento en una factura, un reembolso real pero modesto, o una acción que no puedes vender. Y los vales solo llegan si pagas el servicio, así que primero comprueba que la tarifa de KABU& no sea más cara que la que pagas ahora. Si no, estás comprando acciones a través de tu factura de la luz."
+          ],
+          [
+            "o",
+            "¿Qué la convertiría en una? Una salida a bolsa, para poder vender las acciones. Un dividendo, para que paguen mientras esperas. A falta de ambos, la recompra de 2028. Cualquiera de ellos daría a la acción un valor que de verdad puedes cobrar. Hasta entonces, aquí «usar = poseer» significa poseer a crédito."
+          ],
+          [
+            "o",
+            "En nuestro ensayo sobre el {ingreso universal alto|/essays/universal-high-income/} dijimos que lo interesante es la tubería que lleva el valor a la gente. La de Rochdale era el excedente de la tienda. La de Uniswap, un token que podías vender. La de KABU& pasa por tus facturas y termina en una acción que todavía espera su mercado. Es una idea antigua, y buena. Solo comprueba cuánto vale esa propiedad el día que quieras usarla."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "{KABU&|/services/kabuand/} zahlt dir Aktien dafür, dass du deine Rechnungen bezahlst. Wer dort Strom, Gas oder Mobilfunk abschließt, bekommt für jede Rechnung „Aktiengutscheine“: 1 % der Rechnung bei Strom und Gas, 5 % beim Mobilfunk, mehr für zahlende Mitglieder.[5] Jeder Gutschein zählt als 1 ¥. In einem Angebotszeitraum lassen sie sich gegen neu ausgegebene Aktien des Unternehmens dahinter tauschen, Kabu & Peace unter Yusaku Maezawa. Das vierte Angebot kostet 8 ¥ je Aktie und nimmt Anträge vom 6. bis 26. November 2026 an.[6]"
+          ],
+          [
+            "p",
+            "Ob das als Grundeinkommen zählt, ist eine andere Frage, und meist lautet die Antwort Nein. Dieser Essay stellt eine andere Frage. Die Idee, dass wer etwas nutzt, auch Miteigentümer werden sollte, hat eine lange Geschichte, und KABU& ist ihre neueste Form. Was übernimmt es von seinen Vorfahren, und was ändert es?"
+          ],
+          [
+            "h",
+            "1844: eine Dividende auf das, was du kaufst"
+          ],
+          [
+            "p",
+            "Am 21. Dezember 1844 eröffnete die Rochdale Equitable Pioneers Society einen kleinen Laden in der Toad Lane 31 in Rochdale im Norden Englands. Die Einkäufe der Mitglieder wurden in ein Buch eingetragen, und mehrmals im Jahr wurde der Gewinn berechnet und unter den Mitgliedern danach verteilt, wie viel jedes gekauft hatte.[1] Das war die „Divi“ der Genossenschaft: eine Dividende auf Einkäufe, nicht auf Kapital. Sie lebt in den Genossenschaftsprinzipien weiter, wo eine vereinbarte Verwendung von Überschüssen lautet, „die Mitglieder im Verhältnis zu ihren Geschäften mit der Genossenschaft zu begünstigen“.[2]"
+          ],
+          [
+            "p",
+            "Japan hat denselben Mechanismus im Gesetz. Nach dem Gesetz über Verbrauchergenossenschaften darf eine Genossenschaft ihren Überschuss nur im Verhältnis zur Nutzung ihrer Leistungen oder zum eingezahlten Kapital zurückgeben, und die Rendite auf Kapital darf 10 % im Jahr nicht übersteigen.[3] Die Divi hatte noch ein Merkmal, das man sich merken sollte: Sie war ein Anteil an Gewinnen, die der Laden schon erwirtschaftet hatte."
+          ],
+          [
+            "h",
+            "2020: der Airdrop"
+          ],
+          [
+            "p",
+            "Am 16. September 2020 brachte Uniswap, eine dezentrale Börse auf Ethereum, seinen Governance-Token UNI heraus. 15 % des Angebots, 150 Millionen UNI, gingen an frühere Nutzer, Liquiditätsanbieter und SOCKS-Halter. Jede Adresse, die vor einem Snapshot am 1. September jemals die Verträge von Uniswap v1 oder v2 aufgerufen hatte, konnte 400 UNI abholen: insgesamt 251.534 Adressen.[4] Niemandem war etwas versprochen worden. Die App benutzt zu haben, genügte."
+          ],
+          [
+            "p",
+            "Laut der Ankündigung von Uniswap bekamen UNI-Halter „sofortiges Eigentum“ an der Governance von Uniswap, und die Token ließen sich sofort abholen.[4] Wie jeder Token konnten sie gleich nach dem Abholen verschickt oder verkauft werden."
+          ],
+          [
+            "o",
+            "Der Airdrop machte aus „Nutzen = Besitzen“ eine Wachstumstaktik. Rochdale zahlte Mitglieder aus dem Gewinn. Ein Airdrop zahlt Nutzer mit neu geschaffenen Token, bevor es überhaupt zwingend einen Gewinn gibt. Viele Kryptoprojekte haben das seither kopiert, und Menschen probieren neue Apps inzwischen auch in der Hoffnung auf einen künftigen Airdrop aus."
+          ],
+          [
+            "h",
+            "Heute: ein Airdrop im Aktienregister"
+          ],
+          [
+            "p",
+            "KABU& überträgt die Logik des Airdrops auf das Aktienregister eines Unternehmens. Kunden kaufen keine Aktien mit Geld. Die Gutscheine aus ihren Rechnungen werden gegen neu ausgegebene „KABU&-Gattungsaktien“ (eine eigene Aktiengattung) getauscht. Laut Prospekt dient die Ausgabe nicht der Kapitalbeschaffung: Die Zahlung für die Aktien entspricht Gutscheinen, die das Unternehmen selbst vergeben hat.[6] Nach den ersten beiden Angeboten 2025 zählte es 823.947 Aktionäre.[6]"
+          ],
+          [
+            "p",
+            "Ein einfaches Beispiel. Eine Stromrechnung von 10.000 ¥ im Monat bringt bei 1 % 100 Gutscheine im Monat, also 1.200 im Jahr. Bei 8 ¥ sind das 150 Aktien, zum Ausgabepreis 1.200 ¥ wert. Am 22. Dezember 2026 werden je 10 Aktien zu einer zusammengelegt, aus demselben Bestand werden also 15 Aktien; laut Unternehmen ändert die Zusammenlegung den Wert für sich genommen nicht.[8] Deshalb rundet das vierte Angebot jede Zuteilung auf ein Vielfaches von 10 Aktien ab und gibt bis zu 79 ungenutzte Gutscheine zurück.[6] Gutscheine lassen sich auch in 1-¥-Rabattgutscheine für die Dienste der Gruppe umwandeln, aber nicht zurück.[6]"
+          ],
+          [
+            "p",
+            "Wer Aktien erhalten will, muss sich ausweisen, ein Konto bei einem vom Unternehmen benannten Wertpapierhaus eröffnen und es bis zum 6. Dezember verknüpfen; sonst wird nichts zugeteilt.[6] Mit Daiwa Connect Securities hat das Unternehmen ein Verfahren aufgebaut, um die Aktien beim Börsengang in Depots zu übertragen.[6]"
+          ],
+          [
+            "h",
+            "Was die Aktien mitbringen"
+          ],
+          [
+            "p",
+            "Hier sind die offiziellen Unterlagen klar, und es lohnt sich, sie zu lesen. Laut Prospekt zum vierten Angebot haben KABU&-Gattungsaktien kein Stimmrecht in der Hauptversammlung. Sie erhalten je Aktie dieselbe Dividende wie Stammaktien, im selben Rang, wann immer das Unternehmen auf Stammaktien eine zahlt; es hat aber noch nie eine Dividende gezahlt und nennt Ob und Wann offen. Bei einer Auflösung des Unternehmens erhalten sie nichts vom verbleibenden Vermögen. Eine Übertragung braucht die Zustimmung des Vorstands. Die Gattungsaktien selbst werden nicht notiert; beschließt der Vorstand aber einen Börsenantrag, kann das Unternehmen sie eins zu eins in stimmberechtigte Stammaktien umwandeln. Und es kann sie zum ursprünglich eingezahlten Betrag zurückkaufen, wenn es dich als Mitglied ausschließt oder du sechs Monate lang nicht auf seine Mitteilungen antwortest.[6]"
+          ],
+          [
+            "p",
+            "Der Börsengang ist das Scharnier. Am 29. Oktober 2026 schrieb Maezawa, das Unternehmen bereite eine Notierung vor, frühestens im Frühjahr 2027, und fügte hinzu, dass weder die Notierung noch ihr Zeitpunkt garantiert sei.[8] Die Website sagt dasselbe, und der Prospekt ergänzt, dass auch nach einer Notierung nichts einen Marktpreis über dem Ausgabepreis garantiert.[5][6] Einen Ausweg ohne Börsengang gibt es. Ist das Unternehmen bis zum 31. Dezember 2028 nicht notiert, können Halter von Aktien aus dem dritten und vierten Angebot, die aussteigen wollen, sie zu einer unabhängigen Bewertung zurückverkaufen, höchstens zum 1,2-Fachen des eingezahlten Betrags.[7]"
+          ],
+          [
+            "h",
+            "Was sich ändert"
+          ],
+          [
+            "o",
+            "Eine Rückvergütung in Aktien statt in Geld. Die eigentliche Wahl bei KABU& lautet: 1 ¥ weniger auf der nächsten Rechnung oder 1 ¥ in Aktien. Eine Rückvergütung in Geld oder Punkten ist klein, aber sicher. Ein Aktiengutschein tauscht diese Sicherheit gegen eine Aktie, die du noch nicht verkaufen kannst, ohne Stimme, ohne Anspruch auf das Vermögen und bisher ohne Dividende. Im Grunde finanzieren die Kunden das Unternehmen mit ihren Rückvergütungen: Was ein Punkteprogramm zurückgeben würde, bleibt im Unternehmen, und der Kunde hält stattdessen ein Versprechen."
+          ],
+          [
+            "o",
+            "Weniger als ein Airdrop, weniger als die Divi. Ein Uniswap-Nutzer konnte UNI am ersten Tag verkaufen oder damit abstimmen. Ein KABU&-Aktionär kann bis zu einem Börsengang weder das eine noch das andere. Rochdale zahlte aus einem bereits erwirtschafteten Überschuss; KABU& zahlt mit neuen Aktien eines Unternehmens, das noch nie eine Dividende ausgeschüttet hat. Von den dreien ist es das einzige, bei dem du warten musst, um zu erfahren, was du bekommen hast."
+          ],
+          [
+            "o",
+            "Fairerweise: Manche Unterschiede sprechen für KABU&. Es sind echte Aktien, ausgegeben auf Grundlage einer beim Kanto Local Finance Bureau eingereichten Wertpapier-Registrierungserklärung, keine Token ohne jeden Rechtsanspruch. Die Gutscheine kommen zusätzlich zu Rechnungen, die du ohnehin zahlst. Und der Rückkauf 2028 bietet einen Ausweg, selbst wenn der Börsengang nie kommt, allerdings zu einer Bewertung, nicht zu einem garantierten Preis."
+          ],
+          [
+            "h",
+            "Fazit: schon ein Gratis-Mittagessen?"
+          ],
+          [
+            "o",
+            "Noch nicht. Ein Gratis-Mittagessen ist eines, das man essen kann. Heute ist ein Gutschein entweder 1 ¥ Rabatt auf eine Rechnung, eine echte, aber bescheidene Rückvergütung, oder eine Aktie, die du nicht verkaufen kannst. Und Gutscheine gibt es nur, wenn du für den Dienst bezahlst. Prüfe also zuerst, ob der Tarif von KABU& nicht teurer ist als dein jetziger. Sonst kaufst du Aktien über deine Stromrechnung."
+          ],
+          [
+            "o",
+            "Was würde eines daraus machen? Ein Börsengang, damit sich die Aktien verkaufen lassen. Eine Dividende, damit sie zahlen, während du wartest. Fehlt beides, der Rückkauf 2028. Jedes davon gäbe der Aktie einen Wert, den du tatsächlich einlösen kannst. Bis dahin heißt „Nutzen = Besitzen“ hier: Besitz auf Pump."
+          ],
+          [
+            "o",
+            "In unserem Essay über das {universelle Hocheinkommen|/essays/universal-high-income/} haben wir argumentiert, dass das Interessante die Leitung ist, die Wert zu den Menschen bringt. In Rochdale war es der Überschuss des Ladens. Bei Uniswap ein Token, den man verkaufen konnte. Bei KABU& läuft die Leitung über deine Nebenkosten und endet in einer Aktie, die noch auf ihren Markt wartet. Eine alte Idee, und eine gute. Prüfe nur, was das Eigentum an dem Tag wert ist, an dem du es nutzen willst."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "تدفع لك {⁦KABU&⁩|/services/kabuand/} أسهمًا مقابل دفع فواتيرك. اشترك في خدمة الكهرباء أو الغاز أو الهاتف لديها، وستكسب مع كل فاتورة «قسائم أسهم»: 1% من الفاتورة للكهرباء والغاز، و5% للهاتف، وأكثر للأعضاء المشتركين باشتراك مدفوع.[5] تُحتسب كل قسيمة بين واحد. وخلال فترة الطرح يمكنك استبدالها بأسهم جديدة الإصدار في الشركة التي تقف وراءها، ⁦Kabu & Peace⁩، التي يقودها ⁦Yusaku Maezawa⁩. سعر الطرح الرابع 8 ينات للسهم، وتُقبل الطلبات من 6 إلى 26 نوفمبر 2026.[6]"
+          ],
+          [
+            "p",
+            "أما هل يُعد هذا دخلًا أساسيًا فسؤال آخر، والجواب في الغالب: لا. هذه المقالة تطرح سؤالًا مختلفًا. ففكرة أن من يستخدم شيئًا ينبغي أن يصبح أحد مالكيه قديمة، و⁦KABU&⁩ أحدث صورها. ماذا ورثت عن أسلافها، وماذا غيّرت؟"
+          ],
+          [
+            "h",
+            "1844: عائد على ما تشتريه"
+          ],
+          [
+            "p",
+            "في 21 ديسمبر 1844 افتتحت «جمعية روتشديل لرواد العدالة» متجرًا صغيرًا في 31 شارع تود لين ببلدة روتشديل شمال إنجلترا. كانت مشتريات الأعضاء تُسجَّل في دفتر، وعدة مرات في السنة كانت الأرباح تُحسب وتُوزَّع على الأعضاء بحسب ما اشتراه كل منهم.[1] هذا هو «عائد» التعاونية: عائد على المشتريات لا على رأس المال. وما زال حيًا في المبادئ التعاونية، حيث من الاستخدامات المتفق عليها للفائض «إفادة الأعضاء بنسبة تعاملاتهم مع التعاونية».[2]"
+          ],
+          [
+            "p",
+            "وفي اليابان الآلية نفسها منصوص عليها في القانون. فبموجب قانون التعاونيات الاستهلاكية لا يجوز للتعاونية أن تردّ فائضها إلا بنسبة استخدام الأعضاء لخدماتها أو بنسبة رأس المال الذي دفعوه، ولا يجوز أن يتجاوز العائد على رأس المال 10% سنويًا.[3] وللعائد سمة أخرى تستحق التذكر: كان حصة من أرباح حققها المتجر بالفعل."
+          ],
+          [
+            "h",
+            "2020: الإسقاط الجوي"
+          ],
+          [
+            "p",
+            "في 16 سبتمبر 2020 أطلقت ⁦Uniswap⁩، وهي منصة تداول لامركزية على ⁦Ethereum⁩، رمز الحوكمة الخاص بها ⁦UNI⁩. ذهبت 15% من المعروض، أي 150 مليون ⁦UNI⁩، إلى المستخدمين السابقين ومزودي السيولة وحاملي ⁦SOCKS⁩. وكان بوسع كل عنوان استخدم عقود ⁦Uniswap v1⁩ أو ⁦v2⁩ ولو مرة قبل لقطة 1 سبتمبر أن يطالب بـ400 ⁦UNI⁩: 251,534 عنوانًا في المجموع.[4] لم يُوعَد أحد بشيء. كان يكفي أنك استخدمت التطبيق."
+          ],
+          [
+            "p",
+            "وبحسب إعلان ⁦Uniswap⁩ حصل حاملو ⁦UNI⁩ على «ملكية فورية» لحوكمة ⁦Uniswap⁩، وكان بالإمكان المطالبة بالرموز فورًا.[4] ومثل أي رمز، كان يمكن إرسالها أو بيعها بمجرد المطالبة بها."
+          ],
+          [
+            "o",
+            "حوّل الإسقاط الجوي معادلة «الاستخدام = الملكية» إلى تكتيك للنمو. كانت روتشديل تدفع للأعضاء من الربح. أما الإسقاط الجوي فيدفع للمستخدمين رموزًا جديدة الإصدار، قبل أن يوجد بالضرورة أي ربح. ومنذ ذلك الحين قلّدت مشاريع مشفرة كثيرة هذه الخطوة، وصار الناس يجربون التطبيقات الجديدة جزئيًا على أمل إسقاط جوي قادم."
+          ],
+          [
+            "h",
+            "اليوم: إسقاط جوي في سجل المساهمين"
+          ],
+          [
+            "p",
+            "تنقل ⁦KABU&⁩ منطق الإسقاط الجوي إلى سجل مساهمي شركة. لا يشتري العملاء الأسهم بالمال، بل تُستبدل القسائم التي كسبوها من فواتيرهم بـ«أسهم ⁦KABU&⁩ من الفئة الخاصة» جديدة الإصدار. وتقول نشرة الاكتتاب إن الإصدار لا يهدف إلى جمع الأموال: فدفع ثمن الأسهم يقابل قسائم منحتها الشركة نفسها.[6] وبعد طرحيها الأولين في 2025 بلغ عدد مساهميها 823,947.[6]"
+          ],
+          [
+            "p",
+            "مثال بسيط. فاتورة كهرباء شهرية بـ10,000 ين بنسبة 1% تمنح 100 قسيمة شهريًا، أي 1,200 في السنة. وبسعر 8 ينات تكون 150 سهمًا قيمتها 1,200 ين بسعر الإصدار. وفي 22 ديسمبر 2026 يصبح كل 10 أسهم سهمًا واحدًا، فتصبح الحصة نفسها 15 سهمًا؛ وتقول الشركة إن الدمج لا يغير قيمتها في حد ذاته.[8] واستعدادًا لذلك يقرّب الطرح الرابع كل تخصيص نزولًا إلى مضاعف 10 أسهم، ويعيد ما يصل إلى 79 قسيمة غير مستخدمة.[6] ويمكن أيضًا تحويل القسائم إلى قسائم خصم بين واحد لخدمات المجموعة، لكن لا يمكن عكس ذلك.[6]"
+          ],
+          [
+            "p",
+            "لتسلُّم الأسهم يجتاز المتقدمون التحقق من الهوية، ثم يفتحون حسابًا لدى شركة أوراق مالية تحددها الشركة ويربطونه قبل 6 ديسمبر؛ وإلا فلا تخصيص.[6] وقد أعدّت الشركة مع ⁦Daiwa Connect Securities⁩ آلية لنقل الأسهم إلى حسابات الوساطة عند الإدراج.[6]"
+          ],
+          [
+            "h",
+            "ما الذي تحمله الأسهم"
+          ],
+          [
+            "p",
+            "الوثائق الرسمية هنا واضحة وتستحق القراءة. فبحسب نشرة الطرح الرابع، لا تمنح أسهم ⁦KABU&⁩ من الفئة الخاصة حق التصويت في جمعيات المساهمين. وتحصل على العائد نفسه للسهم الذي تحصل عليه الأسهم العادية وبالمرتبة نفسها، متى دفعت الشركة عائدًا على الأسهم العادية؛ لكنها لم تدفع عائدًا قط، وتقول إن مسألة الدفع وموعده لم تُحسم. ولا تحصل على شيء من الأصول المتبقية إذا صُفّيت الشركة. ويحتاج نقل ملكيتها إلى موافقة مجلس الإدارة. ولن تُدرج أسهم الفئة الخاصة نفسها، لكن إذا وافق المجلس على طلب الإدراج يمكن للشركة تحويلها سهمًا بسهم إلى أسهم عادية بحق تصويت. ويمكنها أيضًا أن تعيد شراءها بسعر الاكتتاب الأصلي إذا أنهت عضويتك قسرًا، أو إذا لم ترد على إشعاراتها ستة أشهر.[6]"
+          ],
+          [
+            "p",
+            "الإدراج هو المفصل. ففي 29 أكتوبر 2026 كتب ⁦Maezawa⁩ أن الشركة تستعد للإدراج، وأن ربيع 2027 هو أبكر موعد مستهدف، وأضاف أن ذلك لا يضمن الإدراج ولا توقيته.[8] ويقول الموقع الأمر نفسه، وتضيف النشرة أنه حتى بعد الإدراج لا شيء يضمن سعرًا سوقيًا أعلى من سعر الإصدار.[5][6] وهناك مخرج واحد دون إدراج. فإذا لم تُدرج الشركة بحلول 31 ديسمبر 2028، يمكن لحاملي أسهم الطرحين الثالث والرابع الراغبين في الخروج أن يبيعوها لها بتقييم مستقل، بحد أقصى 1.2 ضعف ما دفعوه.[7]"
+          ],
+          [
+            "h",
+            "ما الذي يتغير"
+          ],
+          [
+            "o",
+            "استرداد بالأسهم لا بالنقد. الخيار الحقيقي داخل ⁦KABU&⁩ هو بين خصم ين واحد من فاتورتك القادمة ووضع ين واحد في الأسهم. الاسترداد النقدي أو بالنقاط صغير لكنه مؤكد. أما قسيمة الأسهم فتقايض هذا اليقين بسهم لا يمكنك بيعه بعد، بلا تصويت ولا حق في الأصول، وحتى الآن بلا عائد. في الواقع، يموّل العملاء الشركة باستردادهم: القيمة التي كان برنامج نقاط سيعيدها تبقى داخل الشركة، ويحمل العميل وعدًا بدلًا منها."
+          ],
+          [
+            "o",
+            "أقل من إسقاط جوي، وأقل من عائد التعاونية. كان مستخدم ⁦Uniswap⁩ يستطيع بيع ⁦UNI⁩ في اليوم الأول أو التصويت بها. أما مساهم ⁦KABU&⁩ فلا يستطيع هذا ولا ذاك حتى الإدراج. وكانت روتشديل تدفع من فائض تحقق بالفعل؛ بينما تدفع ⁦KABU&⁩ بأسهم جديدة في شركة لم توزع عائدًا بعد. ومن بين الثلاثة، هي الوحيدة التي عليك أن تنتظر فيها لتعرف ماذا حصلت."
+          ],
+          [
+            "o",
+            "وللإنصاف، بعض الفروق في صالح ⁦KABU&⁩. فهذه أسهم حقيقية صدرت بموجب بيان تسجيل أوراق مالية قُدِّم إلى مكتب كانتو المحلي للمالية، لا رموز بلا أي حق قانوني. والقسائم تأتي فوق فواتير كنت ستدفعها على أي حال. وإعادة الشراء في 2028 تتيح مخرجًا حتى لو لم يحدث الإدراج أبدًا، وإن كانت بتقييم لا بسعر مضمون."
+          ],
+          [
+            "h",
+            "الخلاصة: هل صار غداءً مجانيًا؟"
+          ],
+          [
+            "o",
+            "ليس بعد. الغداء المجاني هو ما يمكنك أكله. اليوم القسيمة إما خصم ين واحد من فاتورة، وهو استرداد حقيقي لكنه متواضع، وإما سهم لا يمكنك بيعه. ولا تأتي القسائم إلا إذا دفعت مقابل الخدمة، فتحقق أولًا من أن تعرفة ⁦KABU&⁩ ليست أعلى مما تدفعه الآن. وإلا فأنت تشتري أسهمًا عبر فاتورة الكهرباء."
+          ],
+          [
+            "o",
+            "ما الذي سيجعله غداءً مجانيًا؟ الإدراج، كي تُباع الأسهم. العائد، كي تدفع وأنت تنتظر. وإن غاب الاثنان، إعادة الشراء في 2028. أيٌّ منها يمنح السهم قيمة يمكنك تحصيلها فعلًا. وحتى ذلك الحين، تعني «الاستخدام = الملكية» هنا ملكية بالآجل."
+          ],
+          [
+            "o",
+            "في مقالتنا عن {الدخل المرتفع الشامل|/essays/universal-high-income/} قلنا إن الجزء المثير هو الأنبوب الذي يحمل القيمة إلى الناس. كان أنبوب روتشديل فائض المتجر، وأنبوب ⁦Uniswap⁩ رمزًا يمكنك بيعه. أما أنبوب ⁦KABU&⁩ فيمر عبر فواتير المرافق وينتهي بسهم ما زال ينتظر سوقه. إنها فكرة قديمة، وجيدة. فقط تحقق من قيمة هذه الملكية في اليوم الذي تريد استخدامها فيه."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Co-operative Heritage Trust — The co-op dividend: what is it?; Visit Rochdale — Rochdale Pioneers Museum (31 Toad Lane, opened 21 Dec 1844)",
+          "url": "https://www.co-operativeheritage.coop/Blog/the-co-op-dividend-what-is-it",
+          "url2": "https://www.visitrochdale.com/things-to-do/rochdale-pioneers-museum-p85681"
+        },
+        {
+          "n": 2,
+          "label": "International Cooperative Alliance — Cooperative identity, values & principles (3rd principle: member economic participation); History of the cooperative movement",
+          "url": "https://ica.coop/en/cooperatives/cooperative-identity",
+          "url2": "https://ica.coop/en/cooperatives/history-cooperative-movement"
+        },
+        {
+          "n": 3,
+          "label": "Consumer Co-operative Act (Japan), Art. 52: return of surplus (e-Gov, in Japanese)",
+          "url": "https://laws.e-gov.go.jp/law/323AC0000000200"
+        },
+        {
+          "n": 4,
+          "label": "Uniswap Labs — Introducing UNI (16 Sep 2020)",
+          "url": "https://blog.uniswap.org/uni"
+        },
+        {
+          "n": 5,
+          "label": "KABU& official site: share voucher rates, issue price, “listing is not guaranteed” (in Japanese)",
+          "url": "https://kabuand.com/"
+        },
+        {
+          "n": 6,
+          "label": "Kabu & Peace — Prospectus for the 4th offering of KABU& class shares (Oct 2026, in Japanese)",
+          "url": "https://kabuand.com/documents/prospectus4.pdf"
+        },
+        {
+          "n": 7,
+          "label": "Kabu & Peace — KABU& shareholder terms: transfer, compulsory acquisition, 2028 buyback (in Japanese)",
+          "url": "https://kabuand.com/documents/shareholder-terms.pdf"
+        },
+        {
+          "n": 8,
+          "label": "Yusaku Maezawa — An important request ahead of the listing (KABU&, 29 Oct 2026, in Japanese)",
+          "url": "https://kabuand.com/mz/articles/astvmrb0c68r7xzz06gqrdz0m4"
+        }
+      ]
+    },
     {
       "id": "universal-high-income",
       "date": "2026-10-29",
