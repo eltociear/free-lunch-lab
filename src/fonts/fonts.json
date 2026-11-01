@@ -371,6 +371,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-d80a7ed36a.woff2",
     "chars": "速"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-bfb1116868.woff2",
+    "chars": "島諸"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-5fd9001391.woff2",
+    "chars": "恒盟銀"
    }
   ],
   "ja:body:700": [
@@ -429,6 +437,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-c936cc594f.woff2",
     "chars": "速"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-4cf988686b.woff2",
+    "chars": "島諸"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-f50f44427b.woff2",
+    "chars": "恒盟銀"
    }
   ],
   "ja:display": [
@@ -551,6 +567,14 @@
    {
     "file": "noto-sans-sc-400-zh-b888537bc8.woff2",
     "chars": "帕洛"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-88ad0406f1.woff2",
+    "chars": "岛"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-e2ffd6474f.woff2",
+    "chars": "哥四委疫纾芝阶"
    }
   ],
   "zh:body:700": [
@@ -605,6 +629,14 @@
    {
     "file": "noto-sans-sc-700-zh-5b27b54fa5.woff2",
     "chars": "帕洛"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-c20335d32d.woff2",
+    "chars": "岛"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-3df2bcb632.woff2",
+    "chars": "哥四委疫纾芝阶"
    }
   ],
   "zh:display": [
