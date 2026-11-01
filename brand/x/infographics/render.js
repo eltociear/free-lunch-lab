@@ -373,6 +373,41 @@ h1{font-size:${ja ? 64 : 52}px}
       };
     },
   },
+  // note.com header for the article on the WEF "Great Reset" and basic income. Same 1100x560 safe area and
+  // kicker / two-line hero / footer layout as note-uhi and note-kabuand; the famous quote is the subtitle.
+  'note-greatreset': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => ({
+      bare: true,
+      moon: [1192, 92, 44],
+      body: `
+<div class="wrap">
+  <p class="kicker">世界経済フォーラム（ダボス会議）</p>
+  <h1 class="hero"><span class="l1">グレートリセットと</span><span class="l2"><em>ベーシックインカム</em></span></h1>
+  <p class="quote">「何も所有せず、幸せになる」は<b>誰の言葉か</b></p>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+      css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:92px;width:1060px}
+.kicker{display:inline-block;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px}
+.hero{margin-top:24px;padding-right:0;white-space:nowrap}
+.hero span{display:block}
+.hero .l1{font-size:72px;line-height:1.12}
+.hero .l2{margin-top:4px;font-size:100px;line-height:1.12}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote{margin-top:26px;font-size:40px;line-height:1.2;font-weight:900;color:#E3E8FF;white-space:nowrap}
+.quote b{color:#FFD66B}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+    }),
+  },
   // note.com profile header for 「不労所得で生きていきたい」. note shows roughly a centre crop on mobile, so every
   // text element stays inside a centred 1000x600 box (stricter than the 1400x600 desktop safe area); the constellation
   // icons, moon and glow are atmosphere and may sit outside it.
