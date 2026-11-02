@@ -71,7 +71,7 @@ const essayPath = (l, e) => `${essaysPath(l)}${e.id}/`;
 const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
 // エッセイ本文の {文字|/path/} はサイト内リンク（言語の接頭辞は自動で付く）。/essays/{id}/ への参照と related は実在を確かめる
 const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
-const ESSAY_KEYS = ['essaysTitle', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated'];
+const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated'];
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 // related（エッセイ）と essays（サービス・年表）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
 const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
@@ -364,7 +364,7 @@ function filters(lang) {
 
 function head(lang) {
   const L = T[lang];
-  const title = `${L.title} | ${L.eyebrow}`;
+  const title = `${L.title} | ${L.homeTitle}`;
   const alts = LANGS.map(l => `<link rel="alternate" hreflang="${LANG_TAG[l]}" href="${abs(l)}">`).join('\n');
   const ld = {
     '@context': 'https://schema.org', '@type': 'ItemList', name: title, inLanguage: LANG_TAG[lang],
@@ -819,12 +819,23 @@ html[lang="zh-Hans"] .qz-t{font-weight:900}html[lang="hi"] .qz-t,html[lang="ar"]
 .guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
-// meta description 用に長さをそろえる（日本語・中国語は短め）
+// meta description 用に長さをそろえる（日本語・中国語は 80〜120 字、それ以外は 110〜160 字が目安）。
+// 長すぎるときは、目安の下限より後ろに文の区切りがあればそこで切り、なければ途中で切って … を付ける
+const DESC_RANGE = lang => (lang === 'ja' || lang === 'zh' ? [80, 120] : [110, 160]);
 function clip(str, lang) {
-  const n = lang === 'ja' || lang === 'zh' ? 110 : 155;
+  const [min, n] = DESC_RANGE(lang);
   const a = [...str];
-  return a.length <= n ? str : a.slice(0, n - 1).join('').trimEnd() + '…';
+  if (a.length <= n) return str;
+  const head = a.slice(0, n).join('');
+  let cut = -1;
+  for (const m of head.matchAll(/[。！？]|[.!?।؟](?=\s)/g)) if ([...head.slice(0, m.index + 1)].length >= min) cut = m.index + 1;
+  return cut > 0 ? head.slice(0, cut) : a.slice(0, n - 1).join('').trimEnd() + '…';
 }
+// 一覧ページの meta description（T の *Desc）が目安から外れていたら警告する
+const DESC_KEYS = ['metaDesc', 'orgsDesc', 'graveDesc', 'tlDesc', 'ossDesc', 'badgeDesc', 'shindanDesc', 'essaysDesc'];
+const descOff = LANGS.flatMap(l => DESC_KEYS.filter(k => T[l][k]).map(k => { const n = [...T[l][k]].length, [lo, hi] = DESC_RANGE(l); return n < lo || n > hi ? `${l}.${k} (${n}, ${lo}-${hi})` : ''; }).filter(Boolean));
+if (descOff.length) console.warn(`WARNING: meta description outside the length guideline: ${descOff.join(', ')}`);
+for (const l of LANGS) if (!T[l].homeTitle) throw new Error(`missing ${l}.homeTitle`);
 // 関連サービス: 同じカテゴリから最大4つ。3つに満たなければ同じ種類（継続/1回）→その他で埋める
 function related(s) {
   const others = live.filter(x => x.id !== s.id);
@@ -1027,7 +1038,7 @@ ${GUIDES.filter(g => g.essay === e.id).map(g => guideLink(lang, g, 'related g-re
 </article>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title: `${ttl} | ${L.title}`, desc, hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, image: ogImage(`essay/${lang}/${e.id}.jpg`) });
+  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, image: ogImage(`essay/${lang}/${e.id}.jpg`) });
 }
 function essaysIndex(lang) {
   const L = T[lang];
@@ -1039,7 +1050,7 @@ function essaysIndex(lang) {
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.essaysTitle)}</li></ol></nav>
 <main class="orgs"><header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(L.essaysTitle)}</h1></header><ul class="org-list">${items}</ul>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p></main>`;
-  return shell(lang, { title: `${L.essaysTitle} | ${L.title}`, desc: ESSAYS.map(e => e.desc[lang] || e.desc.en).join(' ').slice(0, 160), hrefFor: essaysAbs, pathFor: essaysPath, ld, ogType: 'website', body });
+  return shell(lang, { title: `${L.essaysTitle} | ${L.title}`, desc: clip(T[lang].essaysDesc, lang), hrefFor: essaysAbs, pathFor: essaysPath, ld, ogType: 'website', body });
 }
 
 // ---- サービスの完全ガイド（/guides/{id}/）。あとから情報を足していく常設ページ。[n] は出典の番号
@@ -1258,7 +1269,7 @@ ${section(L.verifyOptH, opt)}
 <nav class="vchips vother" aria-label="${esc(L.verifyAll)}">${others}</nav>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title, desc: (intro || V.title[lang]).slice(0, 160), hrefFor: l => verifyAbs(l, m), pathFor: l => verifyPath(l, m), ld, ogType: 'website', body, script: copyScript(L), pr: true });
+  return shell(lang, { title, desc: clip(intro || V.title[lang], lang), hrefFor: l => verifyAbs(l, m), pathFor: l => verifyPath(l, m), ld, ogType: 'website', body, script: copyScript(L), pr: true });
 }
 
 // ---- 終了したサービスの墓場（/graveyard/）。終了が確かめられたものだけ。紹介ボタンや sponsored は付けない

@@ -7,9 +7,19 @@ const BOT = /bot|crawl|spider|slurp|preview|fetch|monitor|headless|lighthouse|cu
 
 export default {
   async fetch(request, env, ctx) {
+    const url = new URL(request.url);
     const res = await env.ASSETS.fetch(request);
+    // 末尾の / がない URL（/ja → /ja/ など）には静的ファイル側が 307 を返す。検索エンジン向けに 301 にそろえる（クエリはそのまま）。
+    // 存在しないパスはリダイレクトされず、そのまま 404 になる。リダイレクトはページの表示として数えない
+    if ((res.status === 307 || res.status === 308) && !url.pathname.endsWith('/')) {
+      let to = null;
+      try { to = new URL(res.headers.get('location') || '', url); } catch {}
+      if (to && to.origin === url.origin && to.pathname === url.pathname + '/') {
+        to.search = url.search;
+        return new Response(null, { status: 301, headers: { location: to.pathname + to.search } });
+      }
+    }
     try {
-      const url = new URL(request.url);
       const type = res.headers.get('content-type') || '';
       if (request.method === 'GET' && res.status === 200 && type.startsWith('text/html') && env.PAGEVIEWS) {
         const first = url.pathname.split('/')[1];

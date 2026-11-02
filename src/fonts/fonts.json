@@ -583,6 +583,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-8283098374.woff2",
     "chars": "軍"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-bbf43756fb.woff2",
+    "chars": "概"
    }
   ],
   "ja:body:700": [
@@ -701,6 +705,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-435debe04f.woff2",
     "chars": "軍"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-344203051b.woff2",
+    "chars": "概"
    }
   ],
   "ja:display": [
