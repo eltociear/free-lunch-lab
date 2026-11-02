@@ -290,7 +290,7 @@ const ava = (s, name) => `<span class="ava" aria-hidden="true" dir="auto">${esc(
 const tags = (s, L, lang) => `<div class="tags">${warnOf(s, lang) ? `<span class="risk">${esc(L.riskBadge)}</span>` : ''}${isNew(s) ? '<span class="new">NEW</span>' : ''}${s.ease >= 5 ? `<span class="max">${esc(L.badgeMax)}</span>` : ''}<span class="type ${s.type}">${esc(s.type === 'loop' ? L.tagLoop : L.tagOnce)}</span></div>`;
 function meta(s, lang) {
   const L = T[lang];
-  return `<div class="meta"><span class="ease"><span>${esc(L.ease)}</span>${meter(s.ease)}</span><span class="region${s.global ? ' world' : ''}"><span class="vh">${esc(L.region)}: </span>${esc(s.onlyIn ? L['only_' + s.onlyIn] : s.global ? L.global : L.jp)}</span>${trust(s, lang)}</div>`;
+  return `<div class="meta"><span class="ease"><span>${esc(L.ease)}</span>${meter(s.ease)}</span><span class="region${s.global ? ' world' : ''}"><span class="vh">${esc(L.region)}: </span>${esc(s.onlyIn ? L['only_' + s.onlyIn] : s.global ? L.global : L.jp)}</span>${s.inviteOnly ? `<span class="region invite">${esc(L.invite)}</span>` : ''}${trust(s, lang)}</div>`;
 }
 function slip(s, L, opt = {}) {
   const has = !!s.code;
@@ -1624,6 +1624,7 @@ const servicesJson = {
     ...(s.contactRef ? { referralByDM: { contact: s.contactRef.url, handle: s.contactRef.handle, note: "No referral code is published. Ask the maintainer by DM on X; the maintainer, as referrer, also receives the referral reward" } } : {}),
     region: REGION(s),
     availableFromJapan: !s.onlyIn,
+    inviteOnly: !!s.inviteOnly,
     verify: (s.verify || []).map(v => ({ method: v.method, optional: !!v.optional })),
     trust: s.trust || null,
     ease: s.ease ?? null,
@@ -1749,7 +1750,7 @@ const dataFacts = x => [x.country.en, x.years, x.n != null && `n = ${x.n}`, `run
 const llmsTxt = `${llmsHead(false)}
 ## Data
 
-- [services.json](${SITE_URL}/services.json): all visible services as JSON, with descriptions in every language, region, verification, trust check and referral info
+- [services.json](${SITE_URL}/services.json): all visible services as JSON, with descriptions in every language, region, invite-only flag, verification, trust check and referral info
 - [graveyard.json](${SITE_URL}/graveyard.json): ended basic-income-style programs, each with a source
 - [open-source.json](${SITE_URL}/open-source.json): open-source code projects related to basic income, with license, language, stars, last commit and dormant flag
 - [open-data.json](${SITE_URL}/open-data.json): open datasets and replication packages from basic income experiments, with archive, access level and license
@@ -1757,7 +1758,7 @@ ${LANGS.map(l => `- [RSS feed (${l})](${feedAbs(l)}): update log in ${LANG_NAMES
 
 ## Services
 
-${live.map(s => `- [${mdLink(s.nameEn || s.name)}](${svcAbs(DEFAULT_LANG, s)}): ${md(s.en.gain)}. ${firstSentence(s.en.note)} (${md(CATS.en[s.cat])}; ${regionEn(s)}; verification: ${verifyEn(s)})`).join('\n')}
+${live.map(s => `- [${mdLink(s.nameEn || s.name)}](${svcAbs(DEFAULT_LANG, s)}): ${md(s.en.gain)}. ${firstSentence(s.en.note)} (${md(CATS.en[s.cat])}; ${regionEn(s)}${s.inviteOnly ? '; invite only' : ''}; verification: ${verifyEn(s)})`).join('\n')}
 
 ## Guides
 
@@ -1801,6 +1802,7 @@ const svcFull = s => {
     `- Category: ${md(CATS.en[s.cat])}`,
     `- Payout: ${s.type === 'loop' ? 'recurring' : 'one-time'}`,
     `- Region: ${regionEn(s)}`,
+    ...(s.inviteOnly ? ['- Sign-up: invite only (needs an invitation, code or approval from an existing member)'] : []),
     `- Verification: ${verifyEn(s)}`,
     ...(trustLine ? [`- Trust check: ${trustLine}`] : []),
     `- Last checked: ${s.checked}`,

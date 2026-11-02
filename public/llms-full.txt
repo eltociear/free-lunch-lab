@@ -36,6 +36,7 @@ Cautions: A security incident in May 2026 put its reserve under review. The dail
 - Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
+- Sign-up: invite only (needs an invitation, code or approval from an existing member)
 - Verification: Web of trust / invites
 - Trust check: Cash out: Unverified; Market price: Unverified; Public operator: Yes
 - Last checked: 2026-10
@@ -136,6 +137,7 @@ Cautions: Points expire 30 days after you get them (counting that day). Point In
 - Category: Job matching
 - Payout: recurring
 - Region: available in Japan and worldwide
+- Sign-up: invite only (needs an invitation, code or approval from an existing member)
 - Verification: No verification
 - Trust check: Cash out: With conditions; Public operator: Yes
 - Last checked: 2026-10
@@ -261,6 +263,7 @@ Cautions: Mobile bandwidth sharing ended in April 2026, so passive earning is de
 - Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
+- Sign-up: invite only (needs an invitation, code or approval from an existing member)
 - Verification: ID document KYC
 - Trust check: Cash out: With conditions; Market price: Yes; Public operator: Yes
 - Last checked: 2026-10
@@ -363,6 +366,7 @@ Cautions: It’s a raffle, so the odds are low and depend on how many people tak
 - Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
+- Sign-up: invite only (needs an invitation, code or approval from an existing member)
 - Verification: Web of trust / invites
 - Trust check: Cash out: With conditions; Market price: Unverified; Public operator: Yes
 - Last checked: 2026-10
@@ -578,6 +582,7 @@ Cautions: Whether Power can be exchanged for $BILL or cash is not stated officia
 - Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
+- Sign-up: invite only (needs an invitation, code or approval from an existing member)
 - Verification: Validation ceremony, Web of trust / invites
 - Trust check: Cash out: With conditions; Market price: Yes; Public operator: With conditions
 - Last checked: 2026-10
