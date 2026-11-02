@@ -4,6 +4,7 @@
 //   src/og/essay/{lang}/{id}.jpg   エッセイ（題・要約）
 //   src/og/guide/{lang}/{id}.jpg   サービスの完全ガイド（題・最終更新日）
 //   src/og/shindan/{lang}/index.jpg, {type}.jpg   タダ飯診断（入口と、タイプごとの結果カード）
+//   src/og/calc/{lang}/index.jpg   BI計算機（題・説明・国の名前）
 //   src/static/apple-touch-icon.png, favicon.ico, favicon-32.png   src/static/favicon.svg から
 // 中身（HTML とフォント）が前回と同じ画像は作り直さない（src/og/manifest.json に指紋を記録）。全部作り直すときは OG_FORCE=1
 // Chrome の場所は環境変数 CHROME で変えられる
@@ -12,7 +13,7 @@ const os = require('os');
 const path = require('path');
 const { execFileSync } = require('child_process');
 const crypto = require('crypto');
-const { LANGS, SERVICES, T, CATS, ESSAYS, GUIDES = [], QUIZ } = require('./src/data.js');
+const { LANGS, SERVICES, T, CATS, ESSAYS, GUIDES = [], QUIZ, CALC } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
 
 const CHROME = process.env.CHROME || '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary';
@@ -204,6 +205,17 @@ function quizTypeHtml(t, lang) {
 <div class="chips"><span class="loop">${esc(L.shindanMatch.replace('{n}', servicesFor(t, live).length))}</span><span dir="ltr">${esc(L.shindanShareText.replace('{type}', t.name[lang]).replace(/^.*?(#[^\s\u2066-\u2069]+)[\s\u2066-\u2069]*$/, '$1'))}</span></div>`).replace('</style>', '.qz-name{background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}</style>');
 }
 
+// BI計算機: 題・説明と、選べる国の名前
+function calcHtml(lang) {
+  const L = T[lang];
+  return frame(lang, 'essay', `<div class="mid">
+<p class="cat" style="--c:#FFD66B">${esc(L.calcTitle)}</p>
+<h1 data-fit="80,44,250">${esc(L.calcH1)}</h1>
+<p class="desc" style="-webkit-line-clamp:2" data-fit="30,22,110">${esc(L.calcDesc)}</p>
+</div>
+<div class="chips">${CALC.countries.map(c => `<span>${esc(c.name[lang])}</span>`).join('')}</div>`);
+}
+
 // ---- Chrome（DevTools プロトコル）を1回だけ起動して全部撮る
 async function launch() {
   const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'og-prof-'));
@@ -287,6 +299,7 @@ for (const lang of ONLY) {
   for (const s of live) { const html = svcHtml(s, lang); const rel = `svc/${lang}/${s.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const e of ESSAYS) { const html = essayHtml(e, lang); const rel = `essay/${lang}/${e.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const [rel, html] of [[`shindan/${lang}/index.jpg`, quizHtml(lang)], ...QUIZ.types.map(t => [`shindan/${lang}/${t.id}.jpg`, quizTypeHtml(t, lang)])]) { const key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+  { const html = calcHtml(lang), rel = `calc/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const g of GUIDES) { const html = guideHtml(g, lang); const rel = `guide/${lang}/${g.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
 }
 const iconsFresh = () => !FORCE && manifest['static/icons'] === hash(fs.readFileSync(path.join(STATIC, 'favicon.svg'), 'utf8')) && fs.existsSync(path.join(STATIC, 'favicon.ico'));

@@ -35,6 +35,10 @@
    {
     "file": "noto-sans-arabic-400-ar-e42258d095.woff2",
     "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-3094db8735.woff2",
+    "chars": " £¥‎‏"
    }
   ],
   "ar:body:700": [
@@ -57,6 +61,10 @@
    {
     "file": "noto-sans-arabic-700-ar-efa7d20e35.woff2",
     "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-43bea2cc9a.woff2",
+    "chars": " £¥‎‏"
    }
   ],
   "ar:display": [
@@ -75,6 +83,10 @@
    {
     "file": "noto-kufi-arabic-700-ar-2dd713b95b.woff2",
     "chars": "ٌ"
+   },
+   {
+    "file": "noto-kufi-arabic-700-ar-adaa029bda.woff2",
+    "chars": "'"
    }
   ],
   "ar:dot": [
@@ -111,6 +123,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-52dd1eed84.woff2",
     "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-044f26b29e.woff2",
+    "chars": " "
    }
   ],
   "de:body:700": [
@@ -137,6 +153,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-6e06fdd498.woff2",
     "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-22da07f1e7.woff2",
+    "chars": " "
    }
   ],
   "de:display": [
@@ -163,6 +183,10 @@
    {
     "file": "dela-gothic-one-400-de-513ec216f1.woff2",
     "chars": "Ü"
+   },
+   {
+    "file": "dela-gothic-one-400-de-a9c79872b3.woff2",
+    "chars": "'"
    }
   ],
   "de:dot": [
@@ -247,6 +271,10 @@
    {
     "file": "dela-gothic-one-400-en-2c4f09ba3c.woff2",
     "chars": "‘"
+   },
+   {
+    "file": "dela-gothic-one-400-en-a9c79872b3.woff2",
+    "chars": "'"
    }
   ],
   "en:dot": [
@@ -291,6 +319,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-52dd1eed84.woff2",
     "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-044f26b29e.woff2",
+    "chars": " "
    }
   ],
   "es:body:700": [
@@ -325,6 +357,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-6e06fdd498.woff2",
     "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-22da07f1e7.woff2",
+    "chars": " "
    }
   ],
   "es:display": [
@@ -339,6 +375,10 @@
    {
     "file": "dela-gothic-one-400-es-6d7b1257ef.woff2",
     "chars": "“”"
+   },
+   {
+    "file": "dela-gothic-one-400-es-a9c79872b3.woff2",
+    "chars": "'"
    }
   ],
   "es:dot": [
@@ -385,6 +425,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-2405bbeee1.woff2",
     "chars": "‘"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-42b4bdbf4f.woff2",
+    "chars": "₹。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
    }
   ],
   "hi:body:700": [
@@ -407,6 +451,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-c876a8c2da.woff2",
     "chars": "‘"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-e7f0f14bdc.woff2",
+    "chars": "₹。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
    }
   ],
   "hi:dot": [
@@ -523,6 +571,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-9d3d88c5bc.woff2",
     "chars": "伸助妊娠察扶捕暴縮警逮"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-f80187c597.woff2",
+    "chars": "令印及控租紙級融"
    }
   ],
   "ja:body:700": [
@@ -629,6 +681,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-2ebff3802c.woff2",
     "chars": "伸助妊娠察扶捕暴縮警逮"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-a49011387a.woff2",
+    "chars": "令印及控租紙級融"
    }
   ],
   "ja:display": [
@@ -679,6 +735,10 @@
    {
     "file": "dela-gothic-one-400-ja-81b7742fe8.woff2",
     "chars": "べ万例呼律束比約起返"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-277bcf9f51.woff2",
+    "chars": "'+字機算計読"
    }
   ],
   "ja:dot": [
@@ -831,6 +891,10 @@
    {
     "file": "noto-sans-sc-400-zh-86445d5315.woff2",
     "chars": "伴侣冠吉夕孕孩察弗徒捕救暴粮育蓄薪警距逮食"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-8c5b440292.woff2",
+    "chars": "¥毛牙班"
    }
   ],
   "zh:body:700": [
@@ -941,6 +1005,10 @@
    {
     "file": "noto-sans-sc-700-zh-b497a52c8b.woff2",
     "chars": "伴侣冠吉夕孕孩察弗徒捕救暴粮育蓄薪警距逮食"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-b5a3a24a1c.woff2",
+    "chars": "¥毛牙班"
    }
   ],
   "zh:display": [
@@ -987,6 +1055,10 @@
    {
     "file": "noto-sans-sc-900-zh-11ea496017.woff2",
     "chars": "万五例写初国均复承放标泰生称被诺铢际"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-e5cac53cf8.woff2",
+    "chars": "'+字算花计"
    }
   ],
   "zh:dot": [

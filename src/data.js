@@ -2866,6 +2866,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-02",
+      "ja": "「BI計算機」を公開（国・配る相手・月額を選ぶと、ベーシックインカムの年間総額を国の予算やGDPとくらべます。公的統計の出典つきで、結果はXでシェアできます）",
+      "en": "Launched the basic income cost calculator (pick a country, who gets it and a monthly amount to see the yearly cost next to the national budget or GDP, with official sources; results can be shared on X)",
+      "zh": "上线「基本收入计算器」（选择国家、发放对象和每月金额，即可看到一年的总费用并与国家预算或 GDP 比较；附官方统计出处，结果可分享到 X）",
+      "hi": "“बेसिक इनकम कैलकुलेटर” शुरू किया (देश, किसे मिलेगा और हर महीने की रकम चुनें; सालाना खर्च राष्ट्रीय बजट या GDP के साथ दिखता है, आधिकारिक स्रोतों के साथ; नतीजा X पर शेयर कर सकते हैं)",
+      "es": "Lanzada la calculadora de la renta básica (elige país, quién la recibe y cantidad mensual para ver el coste anual junto al presupuesto nacional o el PIB, con fuentes oficiales; el resultado se puede compartir en X)",
+      "de": "Grundeinkommen-Rechner gestartet (Land, Empfänger und Monatsbetrag wählen und die jährlichen Kosten neben Staatshaushalt oder BIP sehen, mit amtlichen Quellen; das Ergebnis lässt sich auf X teilen)",
+      "ar": "أطلقنا «حاسبة الدخل الأساسي» (اختر البلد ومن يحصل عليه والمبلغ الشهري لترى التكلفة السنوية بجانب الموازنة الوطنية أو الناتج المحلي الإجمالي، مع مصادر رسمية؛ ويمكن مشاركة النتيجة على ⁦X⁩)"
+    },
+    {
+      "date": "2026-11-02",
       "ja": "ベーシックインカム実験の年表に、ロサンゼルスの2つの事業を追加：市の BIG:LEAP（3,202世帯に月1,000ドルを1年）と、郡の TAYportunity（18〜24歳の300人に月1,000ドルを3年）",
       "en": "Added two Los Angeles programs to the basic income timeline: the city’s BIG:LEAP ($1,000 a month for a year to 3,202 households) and the county’s TAYportunity ($1,000 a month for three years to 300 people aged 18–24)",
       "zh": "在基本收入实验年表中新增洛杉矶的两个项目：市级的 BIG:LEAP（向 3,202 个家庭每月发放 1,000 美元，为期一年）和县级的 TAYportunity（向 300 名 18 至 24 岁青年每月发放 1,000 美元，为期三年）",
@@ -3791,7 +3801,44 @@ module.exports = {
       "shindanOthers": "ほかのタイプ",
       "shindanHome": "30秒でわかる「タダ飯診断」",
       "shindanAll": "タイプの一覧",
-      "shindanNote": "結果は回答から機械的に選んだ目安です。登録する前に、各サービスの注意書きを必ず読んでください。"
+      "shindanNote": "結果は回答から機械的に選んだ目安です。登録する前に、各サービスの注意書きを必ず読んでください。",
+      "calcTitle": "BI計算機",
+      "calcH1": "ベーシックインカム、配るといくら？計算機",
+      "calcDesc": "国・配る相手・月額を選ぶと、ベーシックインカムを配る1年間の総額を計算し、国の予算やGDPとくらべます。数字はすべて公的統計で、出典と年つき。結果はURLごとXでシェアできます。",
+      "calcIntro": "国、誰に配るか、月いくらかを選ぶだけ。計算はこの端末の中だけで行い、どこにも送りません。",
+      "calcCountry": "国",
+      "calcWho": "誰に配る？",
+      "calcWhoAll": "全員",
+      "calcWhoAdults": "大人だけ（{age}歳以上）",
+      "calcWhoKids": "子どもだけ（{age}歳未満）",
+      "calcAmount": "1人あたり月いくら？",
+      "calcCustom": "金額を入力",
+      "calcResultEb": "1年でかかる総額",
+      "calcFormula": "{people} × 月{amount} × 12か月",
+      "calcPeople": "{n}人",
+      "calcCmpH": "くらべると",
+      "calcCmpBudget": "国の一般会計予算（歳出総額）",
+      "calcCmpSocial": "社会保障関係費",
+      "calcCmpTax": "税収（租税及印紙収入）",
+      "calcCmpGdp": "GDP（名目）",
+      "calcOf": "{cmp}の{pct}",
+      "calcShortBudget": "国の一般会計予算",
+      "calcShortGdp": "GDP",
+      "calcShareX": "Xでシェア",
+      "calcShare": "{country}で{who}に月{amount}配ると年{total}（{cmp}）#BI計算機",
+      "calcShareAll": "全員",
+      "calcShareAdults": "{age}歳以上の全員",
+      "calcShareKids": "{age}歳未満の子ども全員",
+      "calcNoteH": "この数字の読み方",
+      "calcNote": "これは配る金額の合計（グロスの費用）です。実際の負担（ネット）は、どの税でまかなうか、どの給付や控除を置き換えるか、給付に税がかかるかで大きく変わります。人口・予算・GDPは同じ年の数字ではありません（出典の年を見てください）。",
+      "calcMore": "各地の実験は{tl}に、論点は{es}にまとめています。",
+      "calcSources": "数字の出典",
+      "calcSrcPop": "人口",
+      "calcSrcBudget": "予算・税収",
+      "calcSrcGdp": "GDP",
+      "calcHome": "ベーシックインカム、配るといくら？「BI計算機」",
+      "calcUnits": "1e12:兆|1e8:億|1e4:万",
+      "calcMoney": "{n}{unit}{cur}"
     },
     "en": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4046,7 +4093,44 @@ module.exports = {
       "shindanOthers": "Other types",
       "shindanHome": "30-second Free Lunch Quiz",
       "shindanAll": "All types",
-      "shindanNote": "The result is a rough match picked automatically from your answers. Read each service’s cautions before you sign up."
+      "shindanNote": "The result is a rough match picked automatically from your answers. Read each service’s cautions before you sign up.",
+      "calcTitle": "Basic income cost calculator",
+      "calcH1": "What would a basic income cost? The calculator",
+      "calcDesc": "Pick a country, who gets it and a monthly amount to see the yearly cost of a basic income, compared with the national budget or GDP. Every figure is official, with its source and year. Share the result on X with a link that brings it back.",
+      "calcIntro": "Pick a country, who gets it and how much a month. Everything is calculated on this device; nothing is sent anywhere.",
+      "calcCountry": "Country",
+      "calcWho": "Who gets it?",
+      "calcWhoAll": "Everyone",
+      "calcWhoAdults": "Adults only ({age}+)",
+      "calcWhoKids": "Children only (under {age})",
+      "calcAmount": "How much a month per person?",
+      "calcCustom": "Enter an amount",
+      "calcResultEb": "Total cost per year",
+      "calcFormula": "{people} × {amount} a month × 12 months",
+      "calcPeople": "{n} people",
+      "calcCmpH": "Compared with",
+      "calcCmpBudget": "National general-account budget (spending)",
+      "calcCmpSocial": "Social security spending in the budget",
+      "calcCmpTax": "Tax revenue (taxes and stamp revenue)",
+      "calcCmpGdp": "GDP (nominal)",
+      "calcOf": "{pct} of {cmp}",
+      "calcShortBudget": "the national budget",
+      "calcShortGdp": "GDP",
+      "calcShareX": "Share on X",
+      "calcShare": "Giving {who} in {country} {amount} a month would cost {total} a year ({cmp}) #UBI",
+      "calcShareAll": "everyone",
+      "calcShareAdults": "every adult ({age}+)",
+      "calcShareKids": "every child under {age}",
+      "calcNoteH": "How to read this",
+      "calcNote": "This is the gross cost: the total paid out. The real net cost depends on which taxes fund it, which benefits or tax breaks it replaces and whether the payment is taxed. The population, budget and GDP figures are not all from the same year (see the sources).",
+      "calcMore": "Real-world trials are in {tl}; the debates are in {es}.",
+      "calcSources": "Sources for the figures",
+      "calcSrcPop": "Population",
+      "calcSrcBudget": "Budget and tax revenue",
+      "calcSrcGdp": "GDP",
+      "calcHome": "What would a basic income cost? Try the calculator",
+      "calcUnits": "1e12:trillion|1e9:billion|1e6:million",
+      "calcMoney": "{n} {unit} {cur}"
     },
     "hi": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4301,7 +4385,44 @@ module.exports = {
       "shindanOthers": "दूसरे टाइप",
       "shindanHome": "30 सेकंड का “फ़्री लंच क्विज़”",
       "shindanAll": "सभी टाइप",
-      "shindanNote": "नतीजा आपके जवाबों से अपने-आप चुना गया एक मोटा अंदाज़ा है। साइन-अप करने से पहले हर सेवा की चेतावनियाँ ज़रूर पढ़ें।"
+      "shindanNote": "नतीजा आपके जवाबों से अपने-आप चुना गया एक मोटा अंदाज़ा है। साइन-अप करने से पहले हर सेवा की चेतावनियाँ ज़रूर पढ़ें।",
+      "calcTitle": "बेसिक इनकम कैलकुलेटर",
+      "calcH1": "बेसिक इनकम देने में कितना खर्च? कैलकुलेटर",
+      "calcDesc": "देश, किसे मिलेगा और हर महीने कितनी रकम, यह चुनें और देखें कि बेसिक इनकम का सालाना खर्च कितना होगा, राष्ट्रीय बजट या GDP की तुलना में। हर आँकड़ा आधिकारिक है, स्रोत और साल के साथ। नतीजा ऐसे लिंक के साथ X पर शेयर करें जो उसे फिर से दिखाता है।",
+      "calcIntro": "देश, किसे देना है और हर महीने कितना, बस इतना चुनें। हिसाब इसी डिवाइस पर होता है, कुछ भी कहीं नहीं भेजा जाता।",
+      "calcCountry": "देश",
+      "calcWho": "किसे मिलेगा?",
+      "calcWhoAll": "सभी को",
+      "calcWhoAdults": "सिर्फ़ वयस्कों को ({age}+ साल)",
+      "calcWhoKids": "सिर्फ़ बच्चों को ({age} साल से कम)",
+      "calcAmount": "हर व्यक्ति को हर महीने कितना?",
+      "calcCustom": "रकम लिखें",
+      "calcResultEb": "एक साल का कुल खर्च",
+      "calcFormula": "{people} × हर महीने {amount} × 12 महीने",
+      "calcPeople": "{n} लोग",
+      "calcCmpH": "तुलना में",
+      "calcCmpBudget": "राष्ट्रीय सामान्य खाते का बजट (कुल खर्च)",
+      "calcCmpSocial": "बजट में सामाजिक सुरक्षा खर्च",
+      "calcCmpTax": "कर राजस्व (कर और स्टाम्प राजस्व)",
+      "calcCmpGdp": "GDP (नाममात्र)",
+      "calcOf": "{cmp} का {pct}",
+      "calcShortBudget": "राष्ट्रीय बजट",
+      "calcShortGdp": "GDP",
+      "calcShareX": "X पर शेयर करें",
+      "calcShare": "{country} में {who} हर महीने {amount} देने पर सालाना खर्च {total} ({cmp}) #UBI",
+      "calcShareAll": "सभी को",
+      "calcShareAdults": "{age}+ साल के सभी वयस्कों को",
+      "calcShareKids": "{age} साल से कम के सभी बच्चों को",
+      "calcNoteH": "इस आँकड़े को कैसे पढ़ें",
+      "calcNote": "यह बाँटी गई कुल रकम (ग्रॉस खर्च) है। असली शुद्ध खर्च इस पर निर्भर करता है कि पैसा किन करों से आएगा, यह किन योजनाओं या कर छूटों की जगह लेगा और क्या इस भुगतान पर कर लगेगा। जनसंख्या, बजट और GDP के आँकड़े एक ही साल के नहीं हैं (स्रोतों में साल देखें)।",
+      "calcMore": "असली प्रयोग {tl} में हैं, और बहसें {es} में।",
+      "calcSources": "आँकड़ों के स्रोत",
+      "calcSrcPop": "जनसंख्या",
+      "calcSrcBudget": "बजट और कर राजस्व",
+      "calcSrcGdp": "GDP",
+      "calcHome": "बेसिक इनकम देने में कितना खर्च? कैलकुलेटर आज़माएँ",
+      "calcUnits": "1e12:लाख करोड़|1e7:करोड़|1e5:लाख",
+      "calcMoney": "{n} {unit} {cur}"
     },
     "zh": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4556,7 +4677,44 @@ module.exports = {
       "shindanOthers": "其他类型",
       "shindanHome": "30 秒“免费午餐测试”",
       "shindanAll": "全部类型",
-      "shindanNote": "结果只是根据你的回答自动挑出的参考。注册前，请务必阅读各服务的注意事项。"
+      "shindanNote": "结果只是根据你的回答自动挑出的参考。注册前，请务必阅读各服务的注意事项。",
+      "calcTitle": "基本收入计算器",
+      "calcH1": "发放基本收入要花多少钱？计算器",
+      "calcDesc": "选择国家、发放对象和每月金额，即可算出发放基本收入一年的总费用，并与国家预算或 GDP 比较。所有数字都来自官方统计，并注明出处和年份。结果可以连同链接分享到 X。",
+      "calcIntro": "只需选择国家、发给谁、每月多少。计算只在这台设备上进行，不会发送到任何地方。",
+      "calcCountry": "国家",
+      "calcWho": "发给谁？",
+      "calcWhoAll": "所有人",
+      "calcWhoAdults": "仅成年人（{age} 岁及以上）",
+      "calcWhoKids": "仅儿童（未满 {age} 岁）",
+      "calcAmount": "每人每月多少？",
+      "calcCustom": "输入金额",
+      "calcResultEb": "每年总费用",
+      "calcFormula": "{people} × 每月 {amount} × 12 个月",
+      "calcPeople": "{n}人",
+      "calcCmpH": "相当于",
+      "calcCmpBudget": "国家一般会计预算（支出总额）",
+      "calcCmpSocial": "预算中的社会保障支出",
+      "calcCmpTax": "税收（租税及印花收入）",
+      "calcCmpGdp": "GDP（名义）",
+      "calcOf": "{cmp}的 {pct}",
+      "calcShortBudget": "国家一般会计预算",
+      "calcShortGdp": "GDP",
+      "calcShareX": "分享到 X",
+      "calcShare": "在{country}给{who}每月发 {amount}，一年要 {total}（{cmp}）#基本收入",
+      "calcShareAll": "所有人",
+      "calcShareAdults": "所有 {age} 岁及以上的成年人",
+      "calcShareKids": "所有未满 {age} 岁的儿童",
+      "calcNoteH": "如何理解这个数字",
+      "calcNote": "这是发放的总额（毛成本）。实际的净成本取决于用哪些税来筹资、取代哪些福利或税收减免，以及这笔钱是否计税。人口、预算和 GDP 的数字并非同一年份（请看出处中的年份）。",
+      "calcMore": "各地的实验见{tl}，相关争论见{es}。",
+      "calcSources": "数字出处",
+      "calcSrcPop": "人口",
+      "calcSrcBudget": "预算与税收",
+      "calcSrcGdp": "GDP",
+      "calcHome": "发放基本收入要花多少钱？试试计算器",
+      "calcUnits": "1e12:万亿|1e8:亿|1e4:万",
+      "calcMoney": "{n}{unit}{cur}"
     },
     "es": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -4811,7 +4969,44 @@ module.exports = {
       "shindanOthers": "Otros tipos",
       "shindanHome": "Test del almuerzo gratis en 30 segundos",
       "shindanAll": "Todos los tipos",
-      "shindanNote": "El resultado es una orientación elegida automáticamente a partir de tus respuestas. Antes de registrarte, lee siempre las advertencias de cada servicio."
+      "shindanNote": "El resultado es una orientación elegida automáticamente a partir de tus respuestas. Antes de registrarte, lee siempre las advertencias de cada servicio.",
+      "calcTitle": "Calculadora de la renta básica",
+      "calcH1": "¿Cuánto costaría una renta básica? La calculadora",
+      "calcDesc": "Elige un país, quién la recibe y una cantidad mensual para ver el coste anual de una renta básica, comparado con el presupuesto nacional o el PIB. Todas las cifras son oficiales, con fuente y año. Comparte el resultado en X con un enlace que lo reproduce.",
+      "calcIntro": "Elige el país, quién la recibe y cuánto al mes. Todo se calcula en este dispositivo; no se envía nada.",
+      "calcCountry": "País",
+      "calcWho": "¿Quién la recibe?",
+      "calcWhoAll": "Todo el mundo",
+      "calcWhoAdults": "Solo adultos ({age}+)",
+      "calcWhoKids": "Solo menores (menos de {age})",
+      "calcAmount": "¿Cuánto al mes por persona?",
+      "calcCustom": "Escribe una cantidad",
+      "calcResultEb": "Coste total al año",
+      "calcFormula": "{people} × {amount} al mes × 12 meses",
+      "calcPeople": "{n} personas",
+      "calcCmpH": "Comparado con",
+      "calcCmpBudget": "Presupuesto de la cuenta general del Estado (gasto)",
+      "calcCmpSocial": "Gasto en seguridad social del presupuesto",
+      "calcCmpTax": "Ingresos tributarios (impuestos y timbres)",
+      "calcCmpGdp": "PIB (nominal)",
+      "calcOf": "el {pct} del {cmp}",
+      "calcShortBudget": "presupuesto nacional",
+      "calcShortGdp": "PIB",
+      "calcShareX": "Compartir en X",
+      "calcShare": "Dar {amount} al mes a {who} en {country} costaría {total} al año ({cmp}) #RentaBásica",
+      "calcShareAll": "todo el mundo",
+      "calcShareAdults": "cada adulto ({age}+)",
+      "calcShareKids": "cada menor de {age} años",
+      "calcNoteH": "Cómo leer esta cifra",
+      "calcNote": "Es el coste bruto: el total que se reparte. El coste neto real depende de qué impuestos lo financien, qué prestaciones o deducciones sustituya y si el pago tributa. Las cifras de población, presupuesto y PIB no son todas del mismo año (mira el año en las fuentes).",
+      "calcMore": "Los experimentos reales están en {tl}; los debates, en {es}.",
+      "calcSources": "Fuentes de las cifras",
+      "calcSrcPop": "Población",
+      "calcSrcBudget": "Presupuesto e ingresos tributarios",
+      "calcSrcGdp": "PIB",
+      "calcHome": "¿Cuánto costaría una renta básica? Prueba la calculadora",
+      "calcUnits": "1e12:billones|1e9:mil millones|1e6:millones",
+      "calcMoney": "{n} {unit} de {cur}"
     },
     "ar": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -5066,7 +5261,44 @@ module.exports = {
       "shindanOthers": "أنواع أخرى",
       "shindanHome": "اختبار الغداء المجاني في 30 ثانية",
       "shindanAll": "كل الأنواع",
-      "shindanNote": "النتيجة تقدير تقريبي يُختار آليًا من إجاباتك. اقرأ تحذيرات كل خدمة قبل التسجيل."
+      "shindanNote": "النتيجة تقدير تقريبي يُختار آليًا من إجاباتك. اقرأ تحذيرات كل خدمة قبل التسجيل.",
+      "calcTitle": "حاسبة الدخل الأساسي",
+      "calcH1": "كم يكلّف الدخل الأساسي؟ الحاسبة",
+      "calcDesc": "اختر بلدًا ومن يحصل عليه ومبلغًا شهريًا لترى التكلفة السنوية للدخل الأساسي مقارنةً بالموازنة الوطنية أو الناتج المحلي الإجمالي. كل الأرقام رسمية مع مصدرها وسنتها. شارك النتيجة على ⁦X⁩ برابط يعيد إظهارها.",
+      "calcIntro": "اختر البلد ومن يحصل عليه وكم شهريًا. يجري الحساب على هذا الجهاز فقط ولا يُرسل أي شيء.",
+      "calcCountry": "البلد",
+      "calcWho": "من يحصل عليه؟",
+      "calcWhoAll": "الجميع",
+      "calcWhoAdults": "البالغون فقط ({age}+)",
+      "calcWhoKids": "الأطفال فقط (أقل من {age})",
+      "calcAmount": "كم شهريًا للفرد؟",
+      "calcCustom": "اكتب مبلغًا",
+      "calcResultEb": "التكلفة الإجمالية في السنة",
+      "calcFormula": "{people} × {amount} شهريًا × 12 شهرًا",
+      "calcPeople": "{n} نسمة",
+      "calcCmpH": "بالمقارنة مع",
+      "calcCmpBudget": "الموازنة العامة للدولة (النفقات)",
+      "calcCmpSocial": "نفقات الضمان الاجتماعي في الموازنة",
+      "calcCmpTax": "الإيرادات الضريبية (الضرائب ورسوم الدمغة)",
+      "calcCmpGdp": "الناتج المحلي الإجمالي (الاسمي)",
+      "calcOf": "{pct} من {cmp}",
+      "calcShortBudget": "الموازنة الوطنية",
+      "calcShortGdp": "الناتج المحلي الإجمالي",
+      "calcShareX": "شارك على ⁦X⁩",
+      "calcShare": "إعطاء {who} في {country} مبلغ {amount} شهريًا يكلّف {total} في السنة ({cmp}) #الدخل_الأساسي",
+      "calcShareAll": "الجميع",
+      "calcShareAdults": "كل بالغ ({age}+)",
+      "calcShareKids": "كل طفل أقل من {age}",
+      "calcNoteH": "كيف تقرأ هذا الرقم",
+      "calcNote": "هذه هي التكلفة الإجمالية: مجموع ما يُدفع. أما التكلفة الصافية الفعلية فتتوقف على الضرائب التي تموّله، والإعانات أو الإعفاءات الضريبية التي يحل محلها، وهل يخضع المبلغ للضريبة. أرقام السكان والموازنة والناتج ليست كلها من السنة نفسها (انظر السنة في المصادر).",
+      "calcMore": "التجارب الفعلية في {tl}، والنقاشات في {es}.",
+      "calcSources": "مصادر الأرقام",
+      "calcSrcPop": "السكان",
+      "calcSrcBudget": "الموازنة والإيرادات الضريبية",
+      "calcSrcGdp": "الناتج المحلي الإجمالي",
+      "calcHome": "كم يكلّف الدخل الأساسي؟ جرّب الحاسبة",
+      "calcUnits": "1e12:تريليون|1e9:مليار|1e6:مليون",
+      "calcMoney": "{n} {unit} {cur}"
     },
     "de": {
       "brand": "Free Lunch <span>Lab</span>",
@@ -5321,7 +5553,44 @@ module.exports = {
       "shindanOthers": "Andere Typen",
       "shindanHome": "Der 30-Sekunden-Gratis-Mittagessen-Test",
       "shindanAll": "Alle Typen",
-      "shindanNote": "Das Ergebnis ist eine grobe Einschätzung, automatisch aus deinen Antworten ermittelt. Lies vor der Anmeldung unbedingt die Warnhinweise des jeweiligen Dienstes."
+      "shindanNote": "Das Ergebnis ist eine grobe Einschätzung, automatisch aus deinen Antworten ermittelt. Lies vor der Anmeldung unbedingt die Warnhinweise des jeweiligen Dienstes.",
+      "calcTitle": "Grundeinkommen-Rechner",
+      "calcH1": "Was würde ein Grundeinkommen kosten? Der Rechner",
+      "calcDesc": "Land, Empfänger und Monatsbetrag wählen und die jährlichen Kosten eines Grundeinkommens sehen, verglichen mit dem Staatshaushalt oder dem BIP. Alle Zahlen sind amtlich, mit Quelle und Jahr. Das Ergebnis lässt sich auf X mit einem Link teilen, der es wiederherstellt.",
+      "calcIntro": "Land, Empfänger und Betrag pro Monat wählen. Alles wird auf diesem Gerät berechnet; nichts wird gesendet.",
+      "calcCountry": "Land",
+      "calcWho": "Wer bekommt es?",
+      "calcWhoAll": "Alle",
+      "calcWhoAdults": "Nur Erwachsene ({age}+)",
+      "calcWhoKids": "Nur Kinder (unter {age})",
+      "calcAmount": "Wie viel pro Person und Monat?",
+      "calcCustom": "Betrag eingeben",
+      "calcResultEb": "Gesamtkosten pro Jahr",
+      "calcFormula": "{people} × {amount} im Monat × 12 Monate",
+      "calcPeople": "{n} Menschen",
+      "calcCmpH": "Im Vergleich",
+      "calcCmpBudget": "Allgemeiner Staatshaushalt (Ausgaben)",
+      "calcCmpSocial": "Sozialausgaben im Haushalt",
+      "calcCmpTax": "Steuereinnahmen (Steuern und Stempelabgaben)",
+      "calcCmpGdp": "BIP (nominal)",
+      "calcOf": "{pct} {cmp}",
+      "calcShortBudget": "des Staatshaushalts",
+      "calcShortGdp": "des BIP",
+      "calcShareX": "Auf X teilen",
+      "calcShare": "{amount} im Monat für {who} in {country} kosten {total} im Jahr ({cmp}) #Grundeinkommen",
+      "calcShareAll": "alle",
+      "calcShareAdults": "alle Erwachsenen ({age}+)",
+      "calcShareKids": "alle Kinder unter {age}",
+      "calcNoteH": "So ist die Zahl zu lesen",
+      "calcNote": "Das sind die Bruttokosten: die ausgezahlte Summe. Die echten Nettokosten hängen davon ab, welche Steuern es finanzieren, welche Leistungen oder Steuervergünstigungen es ersetzt und ob die Zahlung besteuert wird. Bevölkerung, Haushalt und BIP stammen nicht alle aus demselben Jahr (siehe das Jahr bei den Quellen).",
+      "calcMore": "Echte Versuche stehen in {tl}, die Debatten in {es}.",
+      "calcSources": "Quellen der Zahlen",
+      "calcSrcPop": "Bevölkerung",
+      "calcSrcBudget": "Haushalt und Steuereinnahmen",
+      "calcSrcGdp": "BIP",
+      "calcHome": "Was würde ein Grundeinkommen kosten? Zum Rechner",
+      "calcUnits": "1e12:Billionen|1e9:Milliarden|1e6:Millionen",
+      "calcMoney": "{n} {unit} {cur}"
     }
   },
   "ORG_REGIONS": {
@@ -14189,5 +14458,358 @@ module.exports = {
         }
       }
     ]
+  },
+  // BI計算機（/calc/）の数字。人口・GDP・予算はすべて公的統計で、出典は sources（url・年）。更新したら updated と sources の文言も直す
+  // pop: 人口（人）。adults は adultAge 歳以上、kids は kidAge 歳未満。gdp: 名目GDP（現地通貨）。budget: 日本だけ（円、当初予算）
+  // presets: 月額の候補（現地通貨）、def: 最初に選ばれている月額。inName: シェア文で「in ○○」に入れる名前（無ければ name）。defaults: 言語ごとに最初に選ばれている国
+  "CALC": {
+    "updated": "2026-11-02",
+    "defaults": {
+      "ja": "jp",
+      "en": "us",
+      "zh": "cn",
+      "hi": "in",
+      "es": "es",
+      "de": "de",
+      "ar": "eg"
+    },
+    "countries": [
+      {
+        "id": "jp",
+        "currency": "JPY",
+        "name": {
+          "ja": "日本",
+          "en": "Japan",
+          "zh": "日本",
+          "hi": "जापान",
+          "es": "Japón",
+          "de": "Japan",
+          "ar": "اليابان"
+        },
+        "cur": {
+          "ja": "円",
+          "en": "yen",
+          "zh": "日元",
+          "hi": "येन",
+          "es": "yenes",
+          "de": "Yen",
+          "ar": "ين"
+        },
+        "presets": [
+          10000,
+          30000,
+          50000,
+          70000,
+          100000
+        ],
+        "def": 30000,
+        "pop": {
+          "all": 122812000,
+          "adults": 104069000,
+          "adultAge": 20,
+          "kids": 13263000,
+          "kidAge": 15,
+          "src": "jpPop"
+        },
+        "gdp": {
+          "value": 663757300000000,
+          "year": 2025,
+          "src": "wbGdp"
+        },
+        "budget": {
+          "total": 122309247035000,
+          "social": 39055888714000,
+          "tax": 83735000000000,
+          "src": "mofBudget"
+        }
+      },
+      {
+        "id": "us",
+        "currency": "USD",
+        "inName": {
+          "en": "the United States"
+        },
+        "name": {
+          "ja": "アメリカ",
+          "en": "United States",
+          "zh": "美国",
+          "hi": "अमेरिका",
+          "es": "Estados Unidos",
+          "de": "USA",
+          "ar": "الولايات المتحدة"
+        },
+        "cur": {
+          "ja": "ドル",
+          "en": "US dollars",
+          "zh": "美元",
+          "hi": "अमेरिकी डॉलर",
+          "es": "dólares",
+          "de": "US-Dollar",
+          "ar": "دولار"
+        },
+        "presets": [
+          250,
+          500,
+          1000,
+          1500,
+          2000
+        ],
+        "def": 1000,
+        "pop": {
+          "all": 347275811,
+          "adults": 274383878,
+          "adultAge": 18,
+          "kids": 72891933,
+          "kidAge": 18,
+          "src": "wpp"
+        },
+        "gdp": {
+          "value": 30769700000000,
+          "year": 2025,
+          "src": "wbGdp"
+        }
+      },
+      {
+        "id": "cn",
+        "currency": "CNY",
+        "name": {
+          "ja": "中国",
+          "en": "China",
+          "zh": "中国",
+          "hi": "चीन",
+          "es": "China",
+          "de": "China",
+          "ar": "الصين"
+        },
+        "cur": {
+          "ja": "人民元",
+          "en": "yuan",
+          "zh": "元",
+          "hi": "युआन",
+          "es": "yuanes",
+          "de": "Yuan",
+          "ar": "يوان"
+        },
+        "presets": [
+          500,
+          1000,
+          2000,
+          3000,
+          5000
+        ],
+        "def": 1000,
+        "pop": {
+          "all": 1416096093,
+          "adults": 1145889628,
+          "adultAge": 18,
+          "kids": 270206465,
+          "kidAge": 18,
+          "src": "wpp"
+        },
+        "gdp": {
+          "value": 140187920000000,
+          "year": 2025,
+          "src": "wbGdp"
+        }
+      },
+      {
+        "id": "in",
+        "currency": "INR",
+        "name": {
+          "ja": "インド",
+          "en": "India",
+          "zh": "印度",
+          "hi": "भारत",
+          "es": "India",
+          "de": "Indien",
+          "ar": "الهند"
+        },
+        "cur": {
+          "ja": "ルピー",
+          "en": "rupees",
+          "zh": "卢比",
+          "hi": "रुपये",
+          "es": "rupias",
+          "de": "Rupien",
+          "ar": "روبية"
+        },
+        "presets": [
+          1000,
+          2000,
+          3000,
+          5000,
+          10000
+        ],
+        "def": 2000,
+        "pop": {
+          "all": 1463865527,
+          "adults": 1033757209,
+          "adultAge": 18,
+          "kids": 430108318,
+          "kidAge": 18,
+          "src": "wpp"
+        },
+        "gdp": {
+          "value": 345471567964600,
+          "year": 2025,
+          "src": "wbGdp"
+        }
+      },
+      {
+        "id": "es",
+        "currency": "EUR",
+        "name": {
+          "ja": "スペイン",
+          "en": "Spain",
+          "zh": "西班牙",
+          "hi": "स्पेन",
+          "es": "España",
+          "de": "Spanien",
+          "ar": "إسبانيا"
+        },
+        "cur": {
+          "ja": "ユーロ",
+          "en": "euros",
+          "zh": "欧元",
+          "hi": "यूरो",
+          "es": "euros",
+          "de": "Euro",
+          "ar": "يورو"
+        },
+        "presets": [
+          200,
+          500,
+          800,
+          1000,
+          1500
+        ],
+        "def": 500,
+        "pop": {
+          "all": 47889962,
+          "adults": 40302441,
+          "adultAge": 18,
+          "kids": 7587521,
+          "kidAge": 18,
+          "src": "wpp"
+        },
+        "gdp": {
+          "value": 1687152000000,
+          "year": 2025,
+          "src": "wbGdp"
+        }
+      },
+      {
+        "id": "de",
+        "currency": "EUR",
+        "name": {
+          "ja": "ドイツ",
+          "en": "Germany",
+          "zh": "德国",
+          "hi": "जर्मनी",
+          "es": "Alemania",
+          "de": "Deutschland",
+          "ar": "ألمانيا"
+        },
+        "cur": {
+          "ja": "ユーロ",
+          "en": "euros",
+          "zh": "欧元",
+          "hi": "यूरो",
+          "es": "euros",
+          "de": "Euro",
+          "ar": "يورو"
+        },
+        "presets": [
+          200,
+          500,
+          1000,
+          1200,
+          1500
+        ],
+        "def": 1000,
+        "pop": {
+          "all": 84075075,
+          "adults": 70086991,
+          "adultAge": 18,
+          "kids": 13988084,
+          "kidAge": 18,
+          "src": "wpp"
+        },
+        "gdp": {
+          "value": 4469910000000,
+          "year": 2025,
+          "src": "wbGdp"
+        }
+      },
+      {
+        "id": "eg",
+        "currency": "EGP",
+        "name": {
+          "ja": "エジプト",
+          "en": "Egypt",
+          "zh": "埃及",
+          "hi": "मिस्र",
+          "es": "Egipto",
+          "de": "Ägypten",
+          "ar": "مصر"
+        },
+        "cur": {
+          "ja": "エジプト・ポンド",
+          "en": "Egyptian pounds",
+          "zh": "埃及镑",
+          "hi": "मिस्री पाउंड",
+          "es": "libras egipcias",
+          "de": "ägyptische Pfund",
+          "ar": "جنيه"
+        },
+        "presets": [
+          500,
+          1000,
+          2000,
+          3000,
+          5000
+        ],
+        "def": 1000,
+        "pop": {
+          "all": 118365996,
+          "adults": 74206127,
+          "adultAge": 18,
+          "kids": 44159869,
+          "kidAge": 18,
+          "src": "wpp"
+        },
+        "gdp": {
+          "value": 18136200000000,
+          "year": 2025,
+          "src": "wbGdp"
+        }
+      }
+    ],
+    "sources": {
+      "jpPop": {
+        "year": "2026",
+        "url": "https://www.stat.go.jp/data/jinsui/pdf/202610.pdf",
+        "ja": "総務省統計局「人口推計」2026年10月報（2026年10月20日公表）。2026年5月1日現在の確定値：総人口1億2281万2千人。大人は5歳階級の20歳以上の合計（1億406万9千人）、子どもは15歳未満人口（1326万3千人）",
+        "en": "Statistics Bureau of Japan, Population Estimates, October 2026 report (released 20 Oct 2026). Final estimates as of 1 May 2026: total 122,812,000; adults = sum of the five-year age groups 20 and over (104,069,000); children = population under 15 (13,263,000)"
+      },
+      "mofBudget": {
+        "year": "FY2026",
+        "url": "https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/20260220.html",
+        "ja": "財務省「令和8年度予算及び財政投融資計画の説明」。令和8年度（2026年度）当初予算：一般会計歳出総額122兆3,092億円、社会保障関係費39兆559億円、租税及印紙収入83兆7,350億円",
+        "en": "Ministry of Finance Japan, explanation of the FY2026 budget. FY2026 initial budget: general-account spending ¥122.3092 trillion; social security ¥39.0559 trillion; taxes and stamp revenue ¥83.735 trillion"
+      },
+      "wbGdp": {
+        "year": "2025",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CN",
+        "ja": "世界銀行「世界開発指標」GDP（名目・現地通貨、NY.GDP.MKTP.CN）2025年。2026年10月8日更新。インドとエジプトは会計年度ベース",
+        "en": "World Bank, World Development Indicators: GDP in current local currency units (NY.GDP.MKTP.CN), 2025. Updated 8 Oct 2026. India and Egypt report on a fiscal-year basis"
+      },
+      "wpp": {
+        "year": "2025",
+        "url": "https://population.un.org/wpp/",
+        "ja": "国連経済社会局「World Population Prospects 2024」各歳別人口（2025年7月1日、中位推計）。大人は18歳以上、子どもは18歳未満",
+        "en": "UN DESA, World Population Prospects 2024: population by single age, 1 July 2025 (medium variant). Adults = 18 and over; children = under 18"
+      }
+    }
   }
 };

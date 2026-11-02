@@ -2,8 +2,9 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [], QUIZ } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [], QUIZ, CALC } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
+const calcJs = require('./src/calc.js');
 const { execFileSync } = require('child_process');
 // オープンソース一覧のスター数・最終コミット日などを取りに行く（失敗してもキャッシュで続ける。OSS_OFFLINE=1 で取得しない）
 try { execFileSync(process.execPath, [path.join(__dirname, 'oss-fetch.js')], { stdio: 'inherit', timeout: 120000 }); } catch (e) { console.warn('open-source metadata: fetch failed, using cache'); }
@@ -111,6 +112,20 @@ const QZ_KEYS = ['shindanTitle', 'shindanH1', 'shindanDesc', 'shindanIntro', 'sh
 for (const l of LANGS) for (const k of QZ_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 for (const l of LANGS) for (const q of QUIZ.questions) { if (!q.q[l]) throw new Error(`quiz ${q.id}: missing q.${l}`); for (const a of q.a) { if (!a.t[l]) throw new Error(`quiz ${q.id}: missing answer ${l}`); for (const k of Object.keys(a.s)) if (!QUIZ.types.some(t => t.id === k)) throw new Error(`quiz ${q.id}: unknown type ${k}`); } }
 for (const t of QUIZ.types) { for (const l of LANGS) for (const f of ['name', 'desc']) if (!t[f][l]) throw new Error(`quiz type ${t.id}: missing ${f}.${l}`); if (!servicesFor(t, live).length) throw new Error(`quiz type ${t.id}: no matching services`); }
+// BI計算機: /calc/。数字は CALC（data.js）、計算と描画は src/calc.js（ブラウザと同じコード）
+const calcPath = l => `${urlPath(l)}calc/`;
+const calcAbs = l => SITE_URL + calcPath(l);
+const CALC_KEYS = ['calcTitle', 'calcH1', 'calcDesc', 'calcIntro', 'calcCountry', 'calcWho', 'calcWhoAll', 'calcWhoAdults', 'calcWhoKids', 'calcAmount', 'calcCustom', 'calcResultEb', 'calcFormula', 'calcPeople', 'calcCmpH', 'calcCmpBudget', 'calcCmpSocial', 'calcCmpTax', 'calcCmpGdp', 'calcOf', 'calcShortBudget', 'calcShortGdp', 'calcShareX', 'calcShare', 'calcShareAll', 'calcShareAdults', 'calcShareKids', 'calcNoteH', 'calcNote', 'calcMore', 'calcSources', 'calcSrcPop', 'calcSrcBudget', 'calcSrcGdp', 'calcHome', 'calcUnits', 'calcMoney'];
+for (const l of LANGS) for (const k of CALC_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const l of LANGS) if (!CALC.countries.some(c => c.id === CALC.defaults[l])) throw new Error(`calc: no default country for ${l}`);
+for (const c of CALC.countries) {
+  for (const l of LANGS) for (const f of ['name', 'cur']) if (!c[f][l]) throw new Error(`calc ${c.id}: missing ${f}.${l}`);
+  const p = c.pop || {};
+  if (!(p.all > 0 && p.adults > 0 && p.kids > 0 && p.adults + p.kids <= p.all && p.adultAge && p.kidAge)) throw new Error(`calc ${c.id}: bad pop`);
+  if (!(c.gdp && c.gdp.value > 0 && c.gdp.year)) throw new Error(`calc ${c.id}: bad gdp`);
+  if (!c.presets.includes(c.def)) throw new Error(`calc ${c.id}: def not in presets`);
+  for (const k of [p.src, c.gdp.src, c.budget && c.budget.src].filter(Boolean)) if (!CALC.sources[k] || !CALC.sources[k].url || !CALC.sources[k].year) throw new Error(`calc ${c.id}: unknown source ${k}`);
+}
 // サービスのカード・個別ページ・エッセイから、そのサービスのガイドへ
 const guideOf = s => GUIDES.find(g => g.svc === s.id);
 const guideLink = (lang, g, cls = 'g-link') => g ? `<p class="${cls}"><a href="${guidePath(lang, g)}">${esc(T[lang].guideRead.replace('{name}', g[lang].short))} ${RTL.has(lang) ? '←' : '→'}</a></p>` : '';
@@ -766,6 +781,41 @@ html[lang="zh-Hans"] .qz-t{font-weight:900}html[lang="hi"] .qz-t,html[lang="ar"]
 .qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important}
 .qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
 .vsec .g-link-top{margin-bottom:12px}
+/* BI計算機 */
+.cx{max-width:44rem;margin-inline:auto}
+.cx-form{display:grid;gap:20px;margin-top:16px;padding:clamp(16px,4vw,24px);border-radius:18px;border:1px solid var(--line);background:var(--surface)}
+.cx-f{border:0;margin:0;padding:0;min-width:0}
+.cx-f legend{padding:0;margin-bottom:10px;font-weight:700;font-size:1rem}
+.cx-chips{display:flex;flex-wrap:wrap;gap:8px}
+.cx-chip{position:relative;display:inline-flex;max-width:100%}
+.cx-chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.cx-chip span{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);font-size:.92rem;font-weight:700;line-height:1.3;cursor:pointer;overflow-wrap:anywhere}
+.cx-chip span:hover{border-color:var(--muted)}
+.cx-chip input:checked+span{border-color:var(--gold);color:var(--gold);background:color-mix(in srgb,var(--gold) 12%,transparent)}
+.cx-chip input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.cx-own{display:grid;gap:6px;margin-top:12px;max-width:22rem}
+.cx-own-l{font-size:.875rem;color:var(--muted)}
+.cx-own-in{display:flex;align-items:center;gap:8px}
+.cx-num{flex:1;min-width:0;min-height:44px;font:inherit;font-size:1rem;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink)}
+.cx-num:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+.cx-cur{font-size:.875rem;color:var(--muted);font-weight:700}
+.cx-res{margin-top:16px;padding:clamp(20px,5vw,36px);border-radius:20px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:radial-gradient(80% 120% at 100% 0%,color-mix(in srgb,#7C5CFF 26%,transparent),transparent 60%),var(--surface);display:grid;gap:10px;min-width:0}
+.cx-total{margin:0;font-weight:700;font-size:clamp(2rem,9vw,3.4rem);line-height:1.15;color:var(--gold);overflow-wrap:anywhere}
+.cx-formula{margin:0;color:var(--muted);font-size:.9rem;line-height:1.7}
+.cx-cmph{font-size:1.05rem;margin-top:10px}
+.cx-rows{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.cx-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:.92rem;line-height:1.5}
+.cx-row small{font-size:.8125rem;color:var(--muted)}
+.cx-row b{font-size:1.2rem;white-space:nowrap;color:var(--ink)}
+.cx-bar{display:block;height:8px;border-radius:999px;background:var(--line);overflow:hidden;margin-top:6px}
+.cx-bar i{display:block;height:100%;background:var(--cta);border-radius:999px}
+.cx .qz-acts{justify-content:flex-start}
+.cx-note p{font-size:.95rem;line-height:1.9;margin:0 0 10px}
+.cx-src dl{margin:0;display:grid;gap:12px;font-size:.8125rem;line-height:1.7;color:var(--muted)}
+.cx-src dt{font-weight:700;color:var(--ink)}
+.cx-src dd{margin:0}
+.cx-src dd+dd{margin-top:6px}
+.cx-src a{display:inline-block;padding-block:12px;margin-block:-12px;color:var(--accent);overflow-wrap:anywhere}
 .guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
@@ -899,7 +949,7 @@ ${alts}
 <div class="wrap">
 ${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 ${script}
 </body>
@@ -1111,6 +1161,41 @@ function quizResultPage(t, lang) {
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   return shell(lang, { title: `${L.shindanTitle}: ${name} | ${L.title}`, desc: clip(`${L.shindanTitle}: ${name}. ${t.desc[lang]}`, lang), hrefFor: l => qzTypeAbs(l, t), pathFor: l => qzTypePath(l, t), ld, ogType: 'website', body, script: copyScript(L), pr: true, image: ogImage(`shindan/${lang}/${t.id}.jpg`) });
+}
+
+// ---- BI計算機（/calc/）。国・配る相手・月額を選ぶと年額と、予算・GDP との比を出す（JS）。?c=&w=&m= で結果を再現できる
+// JS が無くても、その言語の既定の国・全員・既定の月額の結果を読める
+function calcPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const ini = calcJs.initial(lang, CALC, L, calcAbs(lang));
+  const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.calcTitle, item: calcAbs(lang) } ] };
+  const srcLabel = k => esc(CALC.sources[k][lang] || CALC.sources[k].en);
+  const srcItem = (k, who) => `<dd>${who ? `${esc(who)}: ` : ''}<a href="${esc(CALC.sources[k].url)}" target="_blank" rel="noopener">${srcLabel(k)}</a></dd>`;
+  const names = ids => CALC.countries.filter(c => ids.includes(c.id)).map(c => c.name[lang]).join(L.calcMoney.startsWith('{n}{unit}') ? '、' : ', ');
+  const popOther = CALC.countries.filter(c => c.pop.src === 'wpp').map(c => c.id);
+  const more = esc(L.calcMore).replace('{tl}', `<a href="${tlPath(lang)}">${esc(L.tlTitle)}</a>`).replace('{es}', `<a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a>`);
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.calcTitle)}</li></ol></nav>
+<main class="cx">
+<header class="orgs-head"><p class="eyebrow">${esc(L.calcTitle)}</p><h1>${esc(L.calcH1)}</h1><p class="orgs-intro">${esc(L.calcIntro)}</p></header>
+<form class="cx-form" id="cx" data-url="${esc(calcAbs(lang))}" onsubmit="return false"><div id="cxCtl" style="display:grid;gap:20px">${ini.controls}</div></form>
+<section class="cx-res" id="cxRes" aria-live="polite">${ini.result}</section>
+<section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p><p>${more}</p></section>
+<section class="g-sec cx-src"><h2>${esc(L.calcSources)}</h2><dl>
+<div><dt>${esc(L.calcSrcPop)}</dt>${srcItem('jpPop', names(['jp']))}${srcItem('wpp', names(popOther))}</div>
+<div><dt>${esc(L.calcSrcBudget)}</dt>${srcItem('mofBudget', names(['jp']))}</div>
+<div><dt>${esc(L.calcSrcGdp)}</dt>${srcItem('wbGdp')}</div>
+</dl></section>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  const script = `<script>
+var D=${JSON.stringify(CALC).replace(/</g, '\\u003c')},L=${JSON.stringify(Object.fromEntries(CALC_KEYS.map(k => [k, L[k]]))).replace(/</g, '\\u003c')},LANG=${JSON.stringify(lang)},LOC=${JSON.stringify(calcJs.LOCALE[lang])};
+${calcJs.CLIENT}
+${calcJs.BOOT}
+</script>`;
+  return shell(lang, { title: `${L.calcH1} | ${L.title}`, desc: clip(L.calcDesc, lang), hrefFor: calcAbs, pathFor: calcPath, ld, ogType: 'website', body, script, image: ogImage(`calc/${lang}/index.jpg`) });
 }
 
 // ---- ベーシックインカム社会実験の年表（/timeline/）。縦のタイムライン（RTLでは左右が反転）
@@ -1351,6 +1436,9 @@ for (const lang of LANGS) {
     fs.mkdirSync(path.join(qdir, t.id), { recursive: true });
     fs.writeFileSync(path.join(qdir, t.id, 'index.html'), quizResultPage(t, lang));
   }
+  const cdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'calc');
+  fs.mkdirSync(cdir, { recursive: true });
+  fs.writeFileSync(path.join(cdir, 'index.html'), calcPage(lang));
   const osdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'open-source');
   fs.mkdirSync(osdir, { recursive: true });
   fs.writeFileSync(path.join(osdir, 'index.html'), ossPage(lang));
@@ -1443,6 +1531,7 @@ const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, 
 function newsLink(n, lang) {
   const en = n.en || '';
   if (/badge/i.test(en)) return badgeAbs(lang);
+  if (/calculator/i.test(en)) return calcAbs(lang);
   if (/quiz/i.test(en)) return qzAbs(lang);
   const guide = GUIDES.find(g => /guide/i.test(en) && en.includes(g.en.short));
   if (guide) return guideAbs(lang, guide);
@@ -1501,7 +1590,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
@@ -1681,6 +1770,7 @@ ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LA
 ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}): ${md(e.desc.en)}`).join('\n')}
 ${GUIDES.map(g => `- [${mdLink(g.en.title)}](${guideAbs(DEFAULT_LANG, g)}): ${md(g.en.desc)} Last updated ${g.updated}.`).join('\n')}
 - [${md(T.en.shindanH1)}](${qzAbs(DEFAULT_LANG)}): ${md(T.en.shindanDesc)} Result types: ${QUIZ.types.map(t => `[${mdLink(t.name.en)}](${qzTypeAbs(DEFAULT_LANG, t)}) (${servicesFor(t, live).length} services)`).join(', ')}.
+- [${md(T.en.calcH1)}](${calcAbs(DEFAULT_LANG)}): ${md(T.en.calcDesc)} Countries: ${CALC.countries.map(c => `${c.name.en} (${c.id})`).join(', ')}. Inputs are reproducible from the URL: \`?c={country id}&w=all|adults|kids&m={monthly amount in local currency}\`. Figures: ${Object.values(CALC.sources).map(x => `[${mdLink(x.en.split('. ')[0])}](${x.url}) (${x.year})`).join('; ')}.
 
 ## Open-source projects
 
