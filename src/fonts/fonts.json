@@ -455,6 +455,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-de8874fa93.woff2",
     "chars": "双"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-3de7a45755.woff2",
+    "chars": "優芸"
    }
   ],
   "ja:body:700": [
@@ -545,6 +549,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-6ae9d29eca.woff2",
     "chars": "双"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-a69540d8a9.woff2",
+    "chars": "優芸"
    }
   ],
   "ja:display": [
@@ -715,6 +723,14 @@
    {
     "file": "noto-sans-sc-400-zh-59b86c57fa.woff2",
     "chars": "丢循恢挂环胜赢钩"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-e23bda2699.woff2",
+    "chars": "艺"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-7bb0416a27.woff2",
+    "chars": "梅著"
    }
   ],
   "zh:body:700": [
@@ -797,6 +813,14 @@
    {
     "file": "noto-sans-sc-700-zh-c49bfa03be.woff2",
     "chars": "丢循恢挂环胜赢钩"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-69799c813a.woff2",
+    "chars": "艺"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-b231f8e63e.woff2",
+    "chars": "梅著"
    }
   ],
   "zh:display": [

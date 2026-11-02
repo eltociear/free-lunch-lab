@@ -2866,6 +2866,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-02",
+      "ja": "ベーシックインカム実験の年表に、ニューヨーク州のアーティスト2,400人へ月1,000ドルを18か月配った Guaranteed Income for Artists（CRNY）を追加",
+      "en": "Added Guaranteed Income for Artists (CRNY), which paid 2,400 New York State artists $1,000 a month for 18 months, to the basic income timeline",
+      "zh": "在基本收入实验年表中新增 Guaranteed Income for Artists（CRNY）：向纽约州 2,400 名艺术家每月发放 1,000 美元，为期 18 个月",
+      "hi": "बेसिक इनकम प्रयोगों की समयरेखा में Guaranteed Income for Artists (CRNY) जोड़ा, जिसने न्यूयॉर्क राज्य के 2,400 कलाकारों को 18 महीने तक हर महीने $1,000 दिए",
+      "es": "Añadido a la cronología de la renta básica Guaranteed Income for Artists (CRNY), que pagó 1.000 $ al mes durante 18 meses a 2.400 artistas del estado de Nueva York",
+      "de": "Guaranteed Income for Artists (CRNY), das 2.400 Kunstschaffenden im Bundesstaat New York 18 Monate lang 1.000 $ im Monat zahlte, zur Zeitleiste hinzugefügt",
+      "ar": "أضفنا إلى الخط الزمني للدخل الأساسي ⁦Guaranteed Income for Artists⁩ (⁦CRNY⁩)، الذي دفع ⁦$1,000⁩ شهريًا لمدة 18 شهرًا لـ2,400 فنان في ولاية نيويورك"
+    },
+    {
+      "date": "2026-11-02",
       "ja": "AIエージェントがsBTCの賞金を稼ぐネットワーク AIBTC を追加。「AIエージェント向け」カテゴリ初のサービス",
       "en": "Added AIBTC, a network where AI agents earn sBTC bounties, the first service in the “For AI agents” category",
       "zh": "新增 AIBTC：AI 智能体赚取 sBTC 赏金的网络，也是“面向 AI 智能体”分类的第一个服务",
@@ -7940,6 +7950,49 @@ module.exports = {
         "ar": "في نوفمبر 2025 أقر مجلس المقاطعة 7.5 مليون دولار للدخل المضمون في ميزانية 2026، ويصفه المؤيدون بأنه أول برنامج دائم على مستوى مقاطعة في الولايات المتحدة؛ ولا تزال شروط الأهلية والمبالغ للمرحلة التالية قيد التصميم (حتى أواخر 2026)"
       },
       "source": "https://www.cookcountyil.gov/promise"
+    },
+    {
+      "id": "crny-artists",
+      "years": "2022–2024",
+      "type": "ngo",
+      "name": "Guaranteed Income for Artists (CRNY)",
+      "place": {
+        "ja": "アメリカ・ニューヨーク州",
+        "en": "New York State, USA",
+        "zh": "美国纽约州",
+        "hi": "न्यूयॉर्क राज्य, अमेरिका",
+        "es": "Estado de Nueva York (EE. UU.)",
+        "de": "Bundesstaat New York (USA)",
+        "ar": "ولاية نيويورك، الولايات المتحدة"
+      },
+      "who": {
+        "ja": "Creatives Rebuild New York（CRNY、主にメロン財団が出資するアーティスト支援の取り組み）",
+        "en": "Creatives Rebuild New York (CRNY), an artist-support initiative funded mainly by the Andrew W. Mellon Foundation",
+        "zh": "Creatives Rebuild New York（CRNY，主要由梅隆基金会出资的艺术家支持计划）",
+        "hi": "Creatives Rebuild New York (CRNY), कलाकारों की मदद की पहल, जिसका पैसा मुख्य रूप से एंड्रयू डब्ल्यू. मेलन फ़ाउंडेशन देता है",
+        "es": "Creatives Rebuild New York (CRNY), iniciativa de apoyo a artistas financiada sobre todo por la Fundación Andrew W. Mellon",
+        "de": "Creatives Rebuild New York (CRNY), eine Initiative zur Förderung von Kunstschaffenden, vor allem finanziert von der Andrew W. Mellon Foundation",
+        "ar": "⁦Creatives Rebuild New York⁩ (⁦CRNY⁩)، مبادرة لدعم الفنانين تموّلها أساسًا مؤسسة أندرو و. ميلون"
+      },
+      "paid": {
+        "ja": "州内の低所得アーティスト2,400人に、条件なしで月1,000ドルを18か月（2022年6月〜2024年3月）。約2万2,000人の応募者から重み付き抽選で選んだ（優先グループは当選しやすい）",
+        "en": "$1,000 a month with no strings for 18 months (June 2022–March 2024) to 2,400 low-income artists in the state, picked by a weighted lottery from about 22,000 applicants (priority groups had better odds)",
+        "zh": "向州内 2,400 名低收入艺术家无条件每月发放 1,000 美元，为期 18 个月（2022 年 6 月至 2024 年 3 月）；从约 22,000 名申请者中通过加权抽签选出（优先群体中签率更高）",
+        "hi": "राज्य के 2,400 कम आय वाले कलाकारों को 18 महीने (जून 2022–मार्च 2024) तक बिना शर्त हर महीने $1,000; लगभग 22,000 आवेदकों में से भारित लॉटरी से चुने गए (प्राथमिकता समूहों की संभावना ज़्यादा थी)",
+        "es": "1.000 $ al mes sin condiciones durante 18 meses (junio 2022–marzo 2024) para 2.400 artistas de bajos ingresos del estado, elegidos por sorteo ponderado entre unos 22.000 solicitantes (los grupos prioritarios tenían más opciones)",
+        "de": "1.000 $ im Monat ohne Bedingungen für 18 Monate (Juni 2022 bis März 2024) an 2.400 Kunstschaffende mit niedrigem Einkommen im Bundesstaat, per gewichtetem Los aus rund 22.000 Bewerbungen gezogen (Prioritätsgruppen hatten bessere Chancen)",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 18 شهرًا (يونيو 2022–مارس 2024) لـ2,400 فنان منخفضي الدخل في الولاية، اختيروا بقرعة مرجّحة من بين نحو 22,000 متقدم (فرص أعلى للفئات ذات الأولوية)"
+      },
+      "result": {
+        "ja": "インディアナ大学の研究（2026年、査読誌）は落選者と比べ、芸術の仕事が週3.9時間増え、それ以外の仕事が週2.4時間減ったと報告。総収入は年約1万1,600ドル減と推計されたが統計的に有意ではない",
+        "en": "An Indiana University study (peer-reviewed, 2026) compared recipients with unselected applicants: 3.9 more hours a week on arts work and 2.4 fewer on other work. Total earnings were estimated about $11,600 a year lower, close to the $12,000 paid, but not statistically significant",
+        "zh": "印第安纳大学的研究（2026 年，经同行评审）与落选申请者比较：艺术工作每周增加 3.9 小时，其他工作减少 2.4 小时。总收入估计每年减少约 11,600 美元，接近领取的 12,000 美元，但统计上不显著",
+        "hi": "इंडियाना यूनिवर्सिटी के अध्ययन (2026, पीयर-रिव्यूड) ने न चुने गए आवेदकों से तुलना की: कला के काम में हफ़्ते में 3.9 घंटे ज़्यादा, बाकी काम में 2.4 घंटे कम। कुल कमाई साल में लगभग $11,600 कम आँकी गई, जो मिले $12,000 के करीब है, पर सांख्यिकीय रूप से महत्वपूर्ण नहीं",
+        "es": "Un estudio de la Universidad de Indiana (revisado por pares, 2026) comparó a los receptores con solicitantes no elegidos: 3,9 horas semanales más de trabajo artístico y 2,4 menos de otro trabajo. Los ingresos totales se estimaron unos 11.600 $ al año menores, cerca de los 12.000 $ recibidos, pero sin significación estadística",
+        "de": "Eine Studie der Indiana University (begutachtet, 2026) verglich mit nicht gezogenen Bewerbern: 3,9 Stunden pro Woche mehr künstlerische Arbeit, 2,4 weniger andere Arbeit. Das Gesamteinkommen lag geschätzt rund 11.600 $ im Jahr niedriger, nahe an den erhaltenen 12.000 $, aber nicht statistisch signifikant",
+        "ar": "قارنت دراسة لجامعة إنديانا (محكّمة، 2026) المستفيدين بالمتقدمين غير المختارين: 3.9 ساعات أسبوعيًا إضافية في العمل الفني و2.4 ساعة أقل في الأعمال الأخرى. وقُدّر إجمالي الدخل بنحو ⁦$11,600⁩ أقل سنويًا، قريبًا من ⁦$12,000⁩ المدفوعة، لكن الفرق غير دال إحصائيًا"
+      },
+      "source": "https://link.springer.com/article/10.1007/s10824-026-09594-0"
     },
     {
       "id": "marshall-islands",
