@@ -575,6 +575,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-f80187c597.woff2",
     "chars": "令印及控租紙級融"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-28eb003ff3.woff2",
+    "chars": "託"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-8283098374.woff2",
+    "chars": "軍"
    }
   ],
   "ja:body:700": [
@@ -685,6 +693,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-a49011387a.woff2",
     "chars": "令印及控租紙級融"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-c9b53b30e4.woff2",
+    "chars": "託"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-435debe04f.woff2",
+    "chars": "軍"
    }
   ],
   "ja:display": [
@@ -895,6 +911,10 @@
    {
     "file": "noto-sans-sc-400-zh-8c5b440292.woff2",
     "chars": "¥毛牙班"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-3da452d1e4.woff2",
+    "chars": "军滕"
    }
   ],
   "zh:body:700": [
@@ -1009,6 +1029,10 @@
    {
     "file": "noto-sans-sc-700-zh-b5a3a24a1c.woff2",
     "chars": "¥毛牙班"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-e100bb7187.woff2",
+    "chars": "军滕"
    }
   ],
   "zh:display": [

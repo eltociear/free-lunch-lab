@@ -2870,6 +2870,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-02",
+      "ja": "ベーシックインカム実験の年表で、マーシャル諸島の Enra を更新：財源の信託基金（米国の拠出は2027年で終わる予定）、推計の費用（GDPの約8%）、IMFの指摘を追加",
+      "en": "Updated the Marshall Islands’ Enra in the basic income timeline: where the money comes from (a trust fund whose scheduled US payments end in 2027), its estimated cost (about 8% of GDP) and the IMF’s concerns",
+      "zh": "更新基本收入实验年表中的马绍尔群岛 Enra：补充资金来源（美国按计划注资到 2027 年为止的信托基金）、估算费用（约为 GDP 的 8%）以及 IMF 的意见",
+      "hi": "बेसिक इनकम प्रयोगों की समयरेखा में मार्शल द्वीप का Enra अपडेट किया: पैसा कहाँ से आता है (ट्रस्ट फ़ंड, जिसमें तय अमेरिकी योगदान 2027 में ख़त्म), अनुमानित ख़र्च (GDP का लगभग 8%) और IMF की चिंताएँ जोड़ीं",
+      "es": "Actualizado Enra de las Islas Marshall en la cronología de la renta básica: de dónde sale el dinero (un fondo fiduciario cuyas aportaciones previstas de EE. UU. terminan en 2027), su coste estimado (cerca del 8 % del PIB) y las dudas del FMI",
+      "de": "Enra der Marshallinseln in der Zeitleiste aktualisiert: woher das Geld kommt (ein Treuhandfonds, dessen geplante US-Zahlungen 2027 enden), die geschätzten Kosten (rund 8 % des BIP) und die Bedenken des IWF",
+      "ar": "حدّثنا ⁦Enra⁩ في جزر مارشال ضمن الخط الزمني للدخل الأساسي: مصدر المال (صندوق استئماني تنتهي مساهمات الولايات المتحدة المقررة فيه في 2027)، والتكلفة المقدّرة (نحو 8% من الناتج المحلي الإجمالي)، ومخاوف صندوق النقد الدولي"
+    },
+    {
+      "date": "2026-11-02",
       "ja": "「BI計算機」を公開（国・配る相手・月額を選ぶと、ベーシックインカムの年間総額を国の予算やGDPとくらべます。公的統計の出典つきで、結果はXでシェアできます）",
       "en": "Launched the basic income cost calculator (pick a country, who gets it and a monthly amount to see the yearly cost next to the national budget or GDP, with official sources; results can be shared on X)",
       "zh": "上线「基本收入计算器」（选择国家、发放对象和每月金额，即可看到一年的总费用并与国家预算或 GDP 比较；附官方统计出处，结果可分享到 X）",
@@ -8431,13 +8441,13 @@ module.exports = {
       "type": "gov",
       "name": "Enra (Individual Support Distribution)",
       "place": {
-        "ja": "マーシャル諸島",
-        "en": "Marshall Islands",
-        "zh": "马绍尔群岛",
-        "hi": "मार्शल द्वीप समूह",
-        "es": "Islas Marshall",
-        "de": "Marshallinseln",
-        "ar": "جزر مارشال"
+        "ja": "マーシャル諸島（人口約4万2,000人）",
+        "en": "Marshall Islands (population about 42,000)",
+        "zh": "马绍尔群岛（人口约 4.2 万）",
+        "hi": "मार्शल द्वीप समूह (आबादी लगभग 42,000)",
+        "es": "Islas Marshall (unos 42.000 habitantes)",
+        "de": "Marshallinseln (rund 42.000 Einwohner)",
+        "ar": "جزر مارشال (نحو 42,000 نسمة)"
       },
       "who": {
         "ja": "マーシャル諸島政府（支給はマーシャル諸島社会保障局 MISSA）",
@@ -8449,22 +8459,22 @@ module.exports = {
         "ar": "حكومة جزر مارشال؛ وتصرفها إدارة الضمان الاجتماعي (⁦MISSA⁩)"
       },
       "paid": {
-        "ja": "国内に住む国民全員（子どもを含む）に3か月ごとに約200ドル（年約800ドル）。米国との自由連合盟約（コンパクト）の資金が財源。銀行振込、小切手、希望者は政府のデジタルウォレットで受け取れる。2025年11月26日に開始",
-        "en": "About US$200 every quarter (about $800 a year) to every Marshallese citizen living in the country, children included, funded through the Compact of Free Association with the US; paid by bank deposit, cheque or an opt-in government digital wallet. Started 26 November 2025",
-        "zh": "向居住在国内的全体国民（含儿童）每季度发放约 200 美元（每年约 800 美元），资金来自与美国的《自由联合条约》；可选择银行转账、支票或政府数字钱包领取。2025 年 11 月 26 日开始",
-        "hi": "देश में रहने वाले हर मार्शली नागरिक (बच्चों सहित) को हर तिमाही लगभग US$200 (साल में लगभग $800), अमेरिका के साथ कॉम्पैक्ट ऑफ़ फ़्री एसोसिएशन से वित्त पोषित; बैंक जमा, चेक या वैकल्पिक सरकारी डिजिटल वॉलेट से। 26 नवंबर 2025 को शुरू",
-        "es": "Unos 200 US$ por trimestre (unos 800 $ al año) para cada ciudadano marshalés que vive en el país, niños incluidos, financiados a través del Pacto de Libre Asociación con EE. UU.; se cobra por banco, cheque o una billetera digital pública opcional. Empezó el 26 de noviembre de 2025",
-        "de": "Rund 200 US$ pro Quartal (rund 800 $ im Jahr) für alle im Land lebenden Staatsbürger, Kinder eingeschlossen, finanziert über den Compact of Free Association mit den USA; per Überweisung, Scheck oder optionaler staatlicher Digital-Wallet. Start am 26. November 2025",
-        "ar": "نحو ⁦US$200⁩ كل ربع سنة (نحو ⁦$800⁩ سنويًا) لكل مواطن مارشالي يعيش في البلاد بمن فيهم الأطفال، بتمويل عبر اتفاق الارتباط الحر مع الولايات المتحدة؛ يُصرف بإيداع مصرفي أو شيك أو محفظة رقمية حكومية اختيارية. بدأ في 26 نوفمبر 2025"
+        "ja": "国内に住む国民全員（子どもを含む）に3か月ごとに約200ドル（年約800ドル）。財源は米国との自由連合盟約（コンパクト：米軍の利用と引き換えの援助）でつくられた信託基金。米国は1946〜58年にここで67回の核実験を行った。スコット・サンテンスの推計では年約2,700万ドルでGDPの約8%、1人分の年額は1人あたりGDPの約10〜11%。銀行振込、小切手、希望者は政府のデジタルウォレットで受け取れる。2025年11月26日に開始",
+        "en": "About US$200 every quarter (about $800 a year) to every Marshallese citizen living in the country, children included, paid from the Trust Fund for the People of the Republic of the Marshall Islands, set up under the Compact of Free Association with the US (US military access in exchange for aid); the US carried out 67 nuclear tests here in 1946–1958. Scott Santens estimates the cost at about $27 million a year, roughly 8% of GDP, with the yearly amount per person about 10–11% of GDP per capita. Paid by bank deposit, cheque or an opt-in government digital wallet. Started 26 November 2025",
+        "zh": "向居住在国内的全体国民（含儿童）每季度发放约 200 美元（每年约 800 美元），资金来自根据与美国的《自由联合条约》（美军使用权换取援助）设立的马绍尔群岛共和国人民信托基金；美国曾于 1946 至 1958 年在此进行 67 次核试验。据斯科特·桑滕斯估算，每年费用约 2,700 万美元，约为 GDP 的 8%，每人每年金额约为人均 GDP 的 10% 至 11%。可选择银行转账、支票或政府数字钱包领取。2025 年 11 月 26 日开始",
+        "hi": "देश में रहने वाले हर मार्शली नागरिक (बच्चों सहित) को हर तिमाही लगभग US$200 (साल में लगभग $800); पैसा मार्शल द्वीप गणराज्य के लोगों के ट्रस्ट फ़ंड से, जो अमेरिका के साथ कॉम्पैक्ट ऑफ़ फ़्री एसोसिएशन (अमेरिकी सेना को पहुँच के बदले मदद) के तहत बना; अमेरिका ने 1946–1958 में यहाँ 67 परमाणु परीक्षण किए थे। स्कॉट सैंटेंस के अनुमान से ख़र्च सालाना लगभग $2.7 करोड़, यानी GDP का लगभग 8%, और प्रति व्यक्ति सालाना रकम प्रति व्यक्ति GDP का लगभग 10–11%। बैंक जमा, चेक या वैकल्पिक सरकारी डिजिटल वॉलेट से। 26 नवंबर 2025 को शुरू",
+        "es": "Unos 200 US$ por trimestre (unos 800 $ al año) para cada ciudadano marshalés que vive en el país, niños incluidos, pagados por el Fondo Fiduciario para el Pueblo de la República de las Islas Marshall, creado bajo el Pacto de Libre Asociación con EE. UU. (acceso militar a cambio de ayuda); EE. UU. hizo aquí 67 pruebas nucleares entre 1946 y 1958. Según una estimación de Scott Santens, cuesta unos 27 millones de dólares al año, cerca del 8 % del PIB, y lo que recibe cada persona al año equivale a un 10–11 % del PIB per cápita. Se cobra por banco, cheque o una billetera digital pública opcional. Empezó el 26 de noviembre de 2025",
+        "de": "Rund 200 US$ pro Quartal (rund 800 $ im Jahr) für alle im Land lebenden Staatsbürger, Kinder eingeschlossen, bezahlt aus dem Treuhandfonds für die Bevölkerung der Republik Marshallinseln, eingerichtet unter dem Compact of Free Association mit den USA (Militärzugang gegen Hilfe); die USA führten hier 1946–1958 67 Atomtests durch. Nach einer Schätzung von Scott Santens kostet es rund 27 Mio. $ im Jahr, etwa 8 % des BIP; der Jahresbetrag pro Kopf entspricht etwa 10–11 % des BIP pro Kopf. Per Überweisung, Scheck oder optionaler staatlicher Digital-Wallet. Start am 26. November 2025",
+        "ar": "نحو ⁦US$200⁩ كل ربع سنة (نحو ⁦$800⁩ سنويًا) لكل مواطن مارشالي يعيش في البلاد بمن فيهم الأطفال، من الصندوق الاستئماني لشعب جمهورية جزر مارشال الذي أُنشئ بموجب اتفاق الارتباط الحر مع الولايات المتحدة (وصول عسكري أمريكي مقابل مساعدات)؛ وقد أجرت الولايات المتحدة هنا 67 تجربة نووية بين 1946 و1958. يقدّر سكوت سانتنز التكلفة بنحو 27 مليون دولار سنويًا، أي نحو 8% من الناتج المحلي الإجمالي، ويعادل المبلغ السنوي للفرد نحو 10–11% من نصيب الفرد من الناتج. يُصرف بإيداع مصرفي أو شيك أو محفظة رقمية حكومية اختيارية. بدأ في 26 نوفمبر 2025"
       },
       "result": {
-        "ja": "ABCニュースは世界初と報道。初回は約3万3,000人が登録。マーシャル諸島ジャーナルによると、2026年8月の4回目は40,714人に1人215.85ドル（1人あたりの額は登録者数で変わる）",
-        "en": "ABC News called it a world first. About 33,000 registered for the first payment; the Marshall Islands Journal reported $215.85 each to 40,714 people in August 2026 (the amount per person varies with enrolment)",
-        "zh": "ABC 新闻称其为世界首例。首次发放约 33,000 人登记；据《马绍尔群岛日报》，2026 年 8 月第四次向 40,714 人每人发放 215.85 美元（人均金额随登记人数变化）",
-        "hi": "ABC न्यूज़ ने इसे दुनिया में पहला बताया। पहले भुगतान के लिए लगभग 33,000 लोगों ने पंजीकरण कराया; मार्शल आइलैंड्स जर्नल के अनुसार अगस्त 2026 में 40,714 लोगों को $215.85 प्रति व्यक्ति मिले (प्रति व्यक्ति राशि पंजीकरण के साथ बदलती है)",
-        "es": "ABC News lo calificó de primicia mundial. Unas 33.000 personas se registraron para el primer pago; el Marshall Islands Journal informó de 215,85 $ por persona a 40.714 personas en agosto de 2026 (la cantidad varía con el número de inscritos)",
-        "de": "ABC News nannte es eine Weltpremiere. Rund 33.000 registrierten sich für die erste Zahlung; laut Marshall Islands Journal gingen im August 2026 je 215,85 $ an 40.714 Menschen (der Betrag pro Kopf hängt von der Zahl der Angemeldeten ab)",
-        "ar": "وصفته ⁦ABC News⁩ بأنه الأول من نوعه عالميًا. سجّل نحو 33,000 شخص للدفعة الأولى، وأفادت ⁦Marshall Islands Journal⁩ بصرف ⁦$215.85⁩ لكل من 40,714 شخصًا في أغسطس 2026 (يتغير المبلغ للفرد بحسب عدد المسجلين)"
+        "ja": "ABCニュースは世界初と報道。初回は約3万3,000人が登録。マーシャル諸島ジャーナルによると、2026年8月の4回目は40,714人に1人215.85ドル。エコノミスト誌によると、決まった総額を登録者全員で均等に分けるため、1人あたりの額は登録者数で変わる。2023年のコンパクト改定で、米国は基金に2024〜26年は年2億ドル、2027年は1億ドルを払うが、その後の拠出予定はない。基金は2025年半ばに約13億ドル。IMFは全員への給付を対象を絞った給付に替えるよう勧め、デジタル資産USDM1にも懸念を示した",
+        "en": "ABC News called it a world first. About 33,000 registered for the first payment; the Marshall Islands Journal reported $215.85 each to 40,714 people in August 2026. The amount per person varies because, as The Economist explains, the government splits a fixed pot equally among everyone enrolled. Under the 2023 Compact renewal the US pays $200 million a year into the fund for 2024–2026 and $100 million in 2027, with no US payments scheduled after that; the fund held about $1.3 billion in mid-2025. The IMF advised replacing the universal payment with a targeted one and raised concerns about the USDM1 digital asset",
+        "zh": "ABC 新闻称其为世界首例。首次发放约 33,000 人登记；据《马绍尔群岛日报》，2026 年 8 月第四次向 40,714 人每人发放 215.85 美元。据《经济学人》，政府把固定总额平均分给所有登记者，所以人均金额会变化。根据 2023 年条约续签，美国在 2024 至 2026 年每年向基金注资 2 亿美元，2027 年注资 1 亿美元，此后没有安排美国注资；基金在 2025 年年中约有 13 亿美元。IMF 建议把全民发放改为针对性发放，并对数字资产 USDM1 表示担忧",
+        "hi": "ABC न्यूज़ ने इसे दुनिया में पहला बताया। पहले भुगतान के लिए लगभग 33,000 लोगों ने पंजीकरण कराया; मार्शल आइलैंड्स जर्नल के अनुसार अगस्त 2026 में 40,714 लोगों को $215.85 प्रति व्यक्ति मिले। द इकोनॉमिस्ट के अनुसार सरकार एक तय रकम सभी पंजीकृत लोगों में बराबर बाँटती है, इसलिए प्रति व्यक्ति राशि बदलती है। 2023 के कॉम्पैक्ट नवीनीकरण के तहत अमेरिका 2024–2026 में हर साल $20 करोड़ और 2027 में $10 करोड़ फ़ंड में डालेगा, उसके बाद कोई अमेरिकी योगदान तय नहीं; 2025 के मध्य में फ़ंड में लगभग $1.3 अरब थे। IMF ने सबको मिलने वाले भुगतान की जगह लक्षित योजना की सलाह दी और USDM1 डिजिटल एसेट पर चिंता जताई",
+        "es": "ABC News lo calificó de primicia mundial. Unas 33.000 personas se registraron para el primer pago; el Marshall Islands Journal informó de 215,85 $ por persona a 40.714 personas en agosto de 2026. La cantidad varía porque, según The Economist, el gobierno reparte un fondo fijo a partes iguales entre todos los inscritos. Con la renovación del Pacto de 2023, EE. UU. aporta al fondo 200 millones de dólares al año en 2024–2026 y 100 millones en 2027, sin aportaciones previstas después; el fondo tenía unos 1.300 millones a mediados de 2025. El FMI recomendó sustituir el pago universal por uno focalizado y expresó dudas sobre el activo digital USDM1",
+        "de": "ABC News nannte es eine Weltpremiere. Rund 33.000 registrierten sich für die erste Zahlung; laut Marshall Islands Journal gingen im August 2026 je 215,85 $ an 40.714 Menschen. Der Betrag pro Kopf schwankt, weil die Regierung laut The Economist einen festen Topf gleichmäßig unter allen Angemeldeten aufteilt. Nach der Compact-Neuverhandlung 2023 zahlen die USA 2024–2026 jährlich 200 Mio. $ und 2027 100 Mio. $ in den Fonds, danach sind keine US-Zahlungen geplant; Mitte 2025 lag der Fonds bei rund 1,3 Mrd. $. Der IWF empfahl, die Zahlung an alle durch eine gezielte zu ersetzen, und äußerte Bedenken zum digitalen Vermögenswert USDM1",
+        "ar": "وصفته ⁦ABC News⁩ بأنه الأول من نوعه عالميًا. سجّل نحو 33,000 شخص للدفعة الأولى، وأفادت ⁦Marshall Islands Journal⁩ بصرف ⁦$215.85⁩ لكل من 40,714 شخصًا في أغسطس 2026. ويتغير المبلغ للفرد لأن الحكومة، بحسب ⁦The Economist⁩، تقسم مبلغًا ثابتًا بالتساوي على جميع المسجلين. وبموجب تجديد الاتفاق في 2023 تدفع الولايات المتحدة للصندوق 200 مليون دولار سنويًا في 2024–2026 و100 مليون في 2027، ولا مساهمات أمريكية مقررة بعد ذلك؛ وبلغ الصندوق نحو 1.3 مليار دولار في منتصف 2025. وأوصى صندوق النقد الدولي باستبدال الدفع للجميع ببرنامج موجّه، وأبدى مخاوف بشأن الأصل الرقمي ⁦USDM1⁩"
       },
       "source": "https://www.lowyinstitute.org/the-interpreter/marshall-islands-experiment-universal-basic-income"
     },
