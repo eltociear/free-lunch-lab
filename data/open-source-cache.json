@@ -1,9 +1,9 @@
 {
-  "fetchedOn": "2026-11-01",
+  "fetchedOn": "2026-11-02",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium2s": {
       "stars": 6,
-      "lastCommit": "2026-10-26",
+      "lastCommit": "2026-11-01",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "TypeScript"
@@ -66,7 +66,7 @@
     },
     "github.com:GoodDollar/GoodDAPP": {
       "stars": 135,
-      "lastCommit": "2026-09-01",
+      "lastCommit": "2026-11-01",
       "archived": false,
       "license": "MIT",
       "language": "JavaScript"
@@ -87,21 +87,21 @@
     },
     "github.com:PSLmodels/Tax-Calculator": {
       "stars": 315,
-      "lastCommit": "2026-10-31",
+      "lastCommit": "2026-11-02",
       "archived": false,
       "license": null,
       "language": "Python"
     },
     "github.com:PolicyEngine/policyengine-uk": {
       "stars": 53,
-      "lastCommit": "2026-10-31",
+      "lastCommit": "2026-11-02",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
     },
     "github.com:PolicyEngine/policyengine-us": {
       "stars": 170,
-      "lastCommit": "2026-11-01",
+      "lastCommit": "2026-11-02",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
@@ -150,7 +150,7 @@
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-10-31",
+      "lastCommit": "2026-11-02",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"
@@ -178,14 +178,14 @@
     },
     "github.com:socialincome-san/public": {
       "stars": 162,
-      "lastCommit": "2026-10-31",
+      "lastCommit": "2026-11-02",
       "archived": false,
       "license": null,
       "language": "TypeScript"
     },
     "github.com:worldcoin/world-id-protocol": {
       "stars": 42,
-      "lastCommit": "2026-10-28",
+      "lastCommit": "2026-11-02",
       "archived": false,
       "license": "MIT",
       "language": "Rust"
