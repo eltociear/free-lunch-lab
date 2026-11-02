@@ -263,7 +263,6 @@ Cautions: Mobile bandwidth sharing ended in April 2026, so passive earning is de
 - Category: Crypto basic income
 - Payout: recurring
 - Region: available in Japan and worldwide
-- Sign-up: invite only (needs an invitation, code or approval from an existing member)
 - Verification: ID document KYC
 - Trust check: Cash out: With conditions; Market price: Yes; Public operator: Yes
 - Last checked: 2026-10

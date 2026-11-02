@@ -946,7 +946,6 @@ module.exports = {
       "cat": "crypto-bi",
       "type": "loop",
       "global": true,
-      "inviteOnly": true,
       "ease": 3,
       "official": "https://minepi.com/",
       "code": "eltociear",

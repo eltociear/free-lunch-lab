@@ -2744,7 +2744,7 @@
       },
       "region": "global",
       "availableFromJapan": true,
-      "inviteOnly": true,
+      "inviteOnly": false,
       "verify": [
         {
           "method": "kyc-id",
