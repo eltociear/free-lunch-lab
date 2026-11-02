@@ -31,6 +31,10 @@
    {
     "file": "noto-sans-arabic-400-ar-b1c4c96cb0.woff2",
     "chars": "Ö"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-e42258d095.woff2",
+    "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
    }
   ],
   "ar:body:700": [
@@ -49,6 +53,10 @@
    {
     "file": "noto-sans-arabic-700-ar-b04e43c905.woff2",
     "chars": "Ö"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-efa7d20e35.woff2",
+    "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
    }
   ],
   "ar:display": [
@@ -63,6 +71,10 @@
    {
     "file": "noto-kufi-arabic-700-ar-90518c6ad0.woff2",
     "chars": "َ"
+   },
+   {
+    "file": "noto-kufi-arabic-700-ar-2dd713b95b.woff2",
+    "chars": "ٌ"
    }
   ],
   "ar:dot": [
@@ -95,6 +107,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-7fb65c12fc.woff2",
     "chars": "~"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-52dd1eed84.woff2",
+    "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
    }
   ],
   "de:body:700": [
@@ -117,6 +133,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-11b7972e71.woff2",
     "chars": "~"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-6e06fdd498.woff2",
+    "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
    }
   ],
   "de:display": [
@@ -139,6 +159,10 @@
    {
     "file": "dela-gothic-one-400-de-009f1def4c.woff2",
     "chars": "–"
+   },
+   {
+    "file": "dela-gothic-one-400-de-513ec216f1.woff2",
+    "chars": "Ü"
    }
   ],
   "de:dot": [
@@ -175,6 +199,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-7fb65c12fc.woff2",
     "chars": "~"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-52dd1eed84.woff2",
+    "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
    }
   ],
   "en:body:700": [
@@ -197,6 +225,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-11b7972e71.woff2",
     "chars": "~"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-d719f8807b.woff2",
+    "chars": "‘"
    }
   ],
   "en:display": [
@@ -247,6 +279,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-7fb65c12fc.woff2",
     "chars": "~"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-52dd1eed84.woff2",
+    "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
    }
   ],
   "es:body:700": [
@@ -277,6 +313,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-11b7972e71.woff2",
     "chars": "~"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-6e06fdd498.woff2",
+    "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
    }
   ],
   "es:display": [
@@ -287,6 +327,10 @@
    {
     "file": "dela-gothic-one-400-es-f73557ae43.woff2",
     "chars": "?¿—’"
+   },
+   {
+    "file": "dela-gothic-one-400-es-6d7b1257ef.woff2",
+    "chars": "“”"
    }
   ],
   "es:dot": [
@@ -463,6 +507,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-526dc71160.woff2",
     "chars": "光央弾景水輸"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-eb1166b8c2.woff2",
+    "chars": "兆党刺密念憲懸批揺敗染根激燃璧症祉福筋緊義蓄裁詳遍酒野閣隔骨"
    }
   ],
   "ja:body:700": [
@@ -561,6 +609,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-3b276e3f4e.woff2",
     "chars": "光央弾景水輸"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-4d36fdccac.woff2",
+    "chars": "兆党刺密念憲懸批揺敗染根激燃璧症祉福筋緊義蓄裁詳遍酒野閣隔骨"
    }
   ],
   "ja:display": [
@@ -607,6 +659,10 @@
    {
     "file": "dela-gothic-one-400-ja-11a817a2dd.woff2",
     "chars": ":賞"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-81b7742fe8.woff2",
+    "chars": "べ万例呼律束比約起返"
    }
   ],
   "ja:dot": [
@@ -747,6 +803,10 @@
    {
     "file": "noto-sans-sc-400-zh-caf2366b0a.woff2",
     "chars": "扶措旅暗青"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-4f39297f35.woff2",
+    "chars": "がでにのウコジスタデナロ亮佩党判別势務匀历嘲塔奏威宪対忧忽搭摆摇敲染残済烟猜瓦症約経給緊総纸触象貨败連酒针関阁隔音額骨"
    }
   ],
   "zh:body:700": [
@@ -845,6 +905,10 @@
    {
     "file": "noto-sans-sc-700-zh-21224cbe9e.woff2",
     "chars": "扶措旅暗青"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-da165a60e4.woff2",
+    "chars": "がでにのウコジスタデナロ亮佩党判別势務匀历嘲塔奏威宪対忧忽搭摆摇敲染残済烟猜瓦症約経給緊総纸触象貨败連酒针関阁隔音額骨"
    }
   ],
   "zh:display": [
@@ -887,6 +951,10 @@
    {
     "file": "noto-sans-sc-900-zh-fc6d0a4c50.woff2",
     "chars": ":挂赏钩"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-11ea496017.woff2",
+    "chars": "万五例写初国均复承放标泰生称被诺铢际"
    }
   ],
   "zh:dot": [

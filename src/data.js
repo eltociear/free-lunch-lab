@@ -2866,6 +2866,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-02",
+      "ja": "エッセイ「「ベーシックインカム」と呼ばれたもの：タイの1万バーツはどうなったか」を公開",
+      "en": "Published the essay “The handout called ‘basic income’: what became of Thailand’s 10,000 baht”",
+      "zh": "发布随笔《被称为“基本收入”的东西：泰国的 1 万泰铢后来怎样了》",
+      "hi": "निबंध “जिसे ‘बेसिक इनकम’ कहा गया: थाईलैंड के 10,000 बाट का क्या हुआ” प्रकाशित",
+      "es": "Publicado el ensayo «Lo que llamaron “renta básica”: qué fue de los 10.000 bahts de Tailandia»",
+      "de": "Essay „Was man ‚Grundeinkommen‘ nannte: Was aus Thailands 10.000 Baht wurde“ veröffentlicht",
+      "ar": "نشرنا مقال «ما سُمّي دخلًا أساسيًا: ماذا حدث لمبلغ الـ10,000 بات في تايلاند»"
+    },
+    {
+      "date": "2026-11-02",
       "ja": "終了したサービスの墓場に、タイの1万バーツ「デジタルウォレット」給付を追加（ウォレットでの支給は2025年5月に無期限延期）",
       "en": "Added Thailand’s 10,000-baht “digital wallet” handout to the graveyard (the wallet payout was postponed indefinitely in May 2025)",
       "zh": "在墓地中新增泰国的 1 万泰铢“数字钱包”发放（通过钱包发放的部分于 2025 年 5 月被无限期推迟）",
@@ -7559,7 +7569,7 @@ module.exports = {
     },
     {
       "id": "alaska",
-      "essays": ["universal-high-income"],
+      "essays": ["universal-high-income", "thailand-digital-wallet"],
       "years": "1982–",
       "type": "gov",
       "name": "Alaska Permanent Fund Dividend",
@@ -8040,7 +8050,7 @@ module.exports = {
     },
     {
       "id": "marshall-islands",
-      "essays": ["moltbook-basic-income"],
+      "essays": ["moltbook-basic-income", "thailand-digital-wallet"],
       "years": "2025–",
       "type": "gov",
       "name": "Enra (Individual Support Distribution)",
@@ -8265,6 +8275,995 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "thailand-digital-wallet",
+      "date": "2026-11-02",
+      "related": [
+        "universal-high-income"
+      ],
+      "title": {
+        "ja": "「ベーシックインカム」と呼ばれたもの：タイの1万バーツはどうなったか",
+        "en": "The handout called ‘basic income’: what became of Thailand’s 10,000 baht",
+        "zh": "被称为“基本收入”的东西：泰国的 1 万泰铢后来怎样了",
+        "hi": "जिसे “बेसिक इनकम” कहा गया: थाईलैंड के 10,000 बाट का क्या हुआ",
+        "es": "Lo que llamaron “renta básica”: qué fue de los 10.000 bahts de Tailandia",
+        "de": "Was man „Grundeinkommen“ nannte: Was aus Thailands 10.000 Baht wurde",
+        "ar": "ما سُمّي «دخلًا أساسيًا»: ماذا حدث لمبلغ الـ10,000 بات في تايلاند"
+      },
+      "desc": {
+        "ja": "2024年、タイの「1万バーツのデジタルウォレット」は、日本で「ベーシックインカム」として紹介されました。約束と実際の経過をたどり、BIENの5つの条件に当てはめ、日本の一律10万円や、アラスカ、マーシャル諸島のようにくり返し払われる例と比べます。",
+        "en": "In 2024, Thailand’s 10,000-baht “digital wallet” was introduced in Japan as basic income. We trace what was promised against what happened, run it through BIEN’s five criteria, and compare it with Japan’s ¥100,000 for everyone and with schemes that really pay again and again, like Alaska and the Marshall Islands.",
+        "zh": "2024 年，泰国的“1 万泰铢数字钱包”在日本被当作基本收入介绍。我们对照当初的承诺和实际经过，用 BIEN 的五个条件检验，并与日本的人均 10 万日元，以及阿拉斯加、马绍尔群岛这类真正反复发放的例子比较。",
+        "hi": "2024 में थाईलैंड के 10,000 बाट वाले “डिजिटल वॉलेट” को जापान में बेसिक इनकम के रूप में पेश किया गया। हम वादे को असल घटनाओं से मिलाते हैं, उसे BIEN की पाँच कसौटियों पर परखते हैं, और जापान के सबके लिए 1,00,000 येन तथा अलास्का और मार्शल द्वीप जैसी सचमुच बार-बार भुगतान करने वाली योजनाओं से तुलना करते हैं।",
+        "es": "En 2024, la «billetera digital» de 10.000 bahts de Tailandia se presentó en Japón como renta básica. Comparamos lo prometido con lo que pasó, la pasamos por los cinco criterios de BIEN y la comparamos con los 100.000 yenes para todos de Japón y con programas que sí pagan una y otra vez, como Alaska y las Islas Marshall.",
+        "de": "2024 wurde Thailands 10.000-Baht-„Digital-Wallet“ in Japan als Grundeinkommen vorgestellt. Wir vergleichen das Versprechen mit dem, was geschah, prüfen es an den fünf Kriterien von BIEN und stellen es Japans 100.000 Yen für alle sowie Programmen gegenüber, die wirklich immer wieder zahlen, wie Alaska und den Marshallinseln.",
+        "ar": "في 2024 قُدّمت «المحفظة الرقمية» التايلاندية بقيمة 10,000 بات في اليابان على أنها دخل أساسي. نقارن ما وُعد به بما حدث فعلًا، ونختبرها بمعايير ⁦BIEN⁩ الخمسة، ونقارنها بمبلغ 100,000 ين للجميع في اليابان وببرامج تدفع حقًا مرة بعد مرة مثل ألاسكا وجزر مارشال."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2024年8月21日、IDEAS FOR GOOD は「デジタル通貨でベーシックインカム。タイの約5,000万人が対象に」という記事を載せました。タイ政府が16歳以上の国民に、1人1万バーツ（記事の換算で約4万2,000円）をデジタル通貨で配る、という内容です。[1] 公平のために書いておくと、この記事自身も、所得や貯蓄に上限があるので、ふつうのベーシックインカムの定義とは違うと断っています。それでも、見出しに残ったのは「ベーシックインカム」という言葉でした。"
+          ],
+          [
+            "p",
+            "それから2年あまりたちました。あの1万バーツは、どうなったのでしょうか。約束と実際の経過をたどり、ベーシックインカムの定義と照らし合わせます。"
+          ],
+          [
+            "h",
+            "約束されたこと"
+          ],
+          [
+            "p",
+            "2024年4月、セター・タウィシン首相の政府は計画を固め、4月23日に閣議で大筋を承認しました。対象は16歳以上のタイ国民で、年収84万バーツ未満、預金50万バーツ未満の人。政府は約5,000万人が対象になると見込み、予算は最終的に4,500億バーツとされました。[3] お金は政府のアプリの中のデジタルウォレットに入り、使えるのは住んでいる地域の、登録した小さな店だけ。期限は6か月で、酒、たばこ、燃料、ネットでの買い物には使えません。[2][3] ねらいは、お金を経済のすみずみに行き渡らせることでした。財務省は、GDP成長率を1.2〜1.8ポイント押し上げると見込んでいました。[2]"
+          ],
+          [
+            "p",
+            "反対の声も最初からありました。タイ中央銀行は景気刺激策のリスクに懸念を示し、中央銀行、経済学者、最大野党は、当初の財源の作り方は法律に触れるおそれがあり、これほどの刺激策を正当化する根拠もない、と批判しました。[2]"
+          ],
+          [
+            "h",
+            "実際に起きたこと"
+          ],
+          [
+            "p",
+            "2024年8月14日、憲法裁判所がセター首相を失職させ、後を継いだペートンタン・シナワット首相が計画を引き継ぎました。[3]"
+          ],
+          [
+            "p",
+            "第1弾は2024年9月25日に始まりました。対象は福祉カードを持つ人と障害のある人、あわせて約1,455万人で、総額は約1,450億バーツ。ただし、配られたのはデジタルウォレットではなく、銀行口座への現金でした。政府は、ウォレットの仕組みはまだ準備中で、次の回からはウォレットで配ると説明していました。[4]"
+          ],
+          [
+            "p",
+            "第2弾は2025年1月27日。60歳以上の約300万人に、やはり1人1万バーツを、国民ID番号にひもづけた送金サービス PromptPay で振り込みました。これも現金です。[5]"
+          ],
+          [
+            "p",
+            "第3弾は、16〜20歳の約270万人に、今度こそウォレットで配る予定でした。予算は270億バーツです。[6] ところが2025年5月16日、ピチャイ財務相が計画を取りやめたと報じられ、ザ・ネーションは、国家経済社会開発評議会（NESDC）とタイ中央銀行がそろって第3弾に反対していたと伝えました。[6] 5月19日の会議のあと、ピチャイ財務相は言い直します。「中止ではない。景気がよくなれば、いつでも進める」。給付用に確保されていた1,570億バーツは、水管理、交通、観光、輸出企業と中小企業の支援、雇用などに回されることになりました。米国の関税で世界経済の先行きが暗くなり、NESDC は成長率を1.8%と見込んでいました。[7]"
+          ],
+          [
+            "p",
+            "2025年8月末には、ペートンタン首相も憲法裁判所の判断で失職しました。[3] それでも「1万バーツがもうすぐ届く」という話は消えません。2025年11月、タイの公共放送 Thai PBS のファクトチェック部門は、年末に1万バーツが配られるとするTikTokの動画を偽情報と判定しました。財務省は、そうした政策の発表も、運用の詳細もないと答えています。[8] 2026年11月の時点で、ウォレットでの給付が再開されたという発表は見つかりませんでした。"
+          ],
+          [
+            "o",
+            "まとめると、私たちが調べた範囲では、ウォレットで1万バーツが配られた回はありませんでした。実際に届いたのは、福祉カードを持つ人、障害のある人、高齢者への、1回きりの現金です。それは小さなことではありません。あわせて約1,750万人に現金が届いたのです。でも、それはベーシックインカムではありませんでした。"
+          ],
+          [
+            "h",
+            "ベーシックインカムの5つの条件"
+          ],
+          [
+            "p",
+            "ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義し、5つの性質を挙げています。定期的（毎月など決まった間隔で払われ、一度きりではない）、現金（受け取った人が使い道を決められる形で払われる）、個人（世帯ではなく一人ひとりに払われる）、普遍的（すべての人に払われる）、無条件（所得の審査も、働くことや働く意思を示すことも求めない）の5つです。[9]"
+          ],
+          [
+            "p",
+            "タイの1万バーツを、一つずつ当てはめてみます。"
+          ],
+          [
+            "p",
+            "定期的か。いいえ。どの回も1人1回きりで、次の支給の約束もありませんでした。"
+          ],
+          [
+            "p",
+            "現金か。計画の本体だったウォレットは、いいえ。使える場所も、期限も、品目も決められたお金は、BIENの言う「使い道を自分で決められる」お金ではありません。実際に届いた2回の現金は、この条件だけは満たしていました。"
+          ],
+          [
+            "p",
+            "個人単位か。はい。1人ずつに配られました。"
+          ],
+          [
+            "p",
+            "普遍的か。いいえ。もともと16歳以上で、所得と預金に上限がありました。実際に受け取れたのは、福祉カードを持つ人、障害のある人、60歳以上の人だけです。"
+          ],
+          [
+            "p",
+            "無条件か。いいえ。働くことは求められませんでしたが、所得と預金の審査がありました。"
+          ],
+          [
+            "o",
+            "5つのうち、はっきり満たしたのは「個人」だけで、「現金」は実際に届いた2回だけでした。これは、生活が苦しい人と景気に向けた、1回きりの給付金です。給付金は、どこの国でもよくある政策です。評価するなら、給付金として評価するのが筋でしょう。"
+          ],
+          [
+            "h",
+            "日本の一律10万円と比べる"
+          ],
+          [
+            "p",
+            "日本にも近い経験があります。2020年の特別定額給付金です。2020年4月27日に住民基本台帳に記録されていた人を対象に、1人10万円を配りました。事業費は約12兆8,803億円で、2021年3月31日までに約12兆6,700億円が給付されています。[10]"
+          ],
+          [
+            "p",
+            "5つの条件で見ると、10万円は「普遍的」にかなり近く、所得の審査もなく、使い道も自由な現金でした。ただし1回きりで、「定期的」ではありません。もう一つ、見落とされがちな点があります。受け取る権利を持っていたのは世帯主で、お金は原則として、申請した世帯主の口座に、世帯の人数分まとめて振り込まれました。[10] 厳密に言えば、「個人」の条件も満たしていなかったのです。"
+          ],
+          [
+            "o",
+            "10万円も、ベーシックインカムではありませんでした。それでも、タイの1万バーツよりはずっと近いところにいました。違いは、誰が受け取れたかと、使い道を誰が決めたかです。"
+          ],
+          [
+            "h",
+            "くり返し払われている例"
+          ],
+          [
+            "p",
+            "このサイトの年表には、実際にくり返し払われている例があります。{アラスカ州の永久基金配当|/timeline/#tl-alaska}は、1982年から、条件を満たす住民に州の基金から毎年配当を払っています。最初の配当は1人1,000ドルでした。{マーシャル諸島の Enra|/timeline/#tl-marshall-islands}は、2025年11月から、国内に住む国民全員に、子どもも含めて3か月ごとに約200ドルを払っています。"
+          ],
+          [
+            "o",
+            "どちらも、金額は暮らしをまるごと支えるほどではありません。対象も、アラスカは条件を満たす州の住民、Enra は国内に住む国民に限られ、5つの条件を完璧に満たしているとは言えません。それでも、決まった間隔で、ほぼ全員が、所得の審査なしで受け取るという骨組みはあります。タイの1万バーツになかったのは、まさにこの骨組みでした。"
+          ],
+          [
+            "h",
+            "見出しに「ベーシックインカム」とあったら"
+          ],
+          [
+            "o",
+            "「ベーシックインカム」は、見出しで強く響く言葉です。期待も反発も呼びます。だからこそ、見かけたら5つの条件で確かめてみてください。くり返し払われるか。使い道を自分で決められるか。一人ひとりに届くか。全員が受け取れるか。審査や条件はないか。"
+          ],
+          [
+            "o",
+            "なんでもベーシックインカムと呼んでしまうと、支持する人にも、批判する人にも損になります。1回きりの給付金が期待ほど景気を押し上げなくても、それはベーシックインカムが失敗した証拠にはなりません。逆に、給付金がうまくいっても、ベーシックインカムがうまくいく証拠にはなりません。言葉の揺れは、タイの報道にもありました。同じ第3弾が、5月16日には「取りやめ」、19日には「中止ではなく延期」と伝えられています。[6][7]"
+          ],
+          [
+            "o",
+            "タイの計画を笑うつもりはありません。約1,750万人に、実際に現金が届きました。ただ、それを何と呼ぶかで、そこから学べることが変わります。タイが残したのは、ベーシックインカムの実験ではなく、大きな給付金の計画が、財源と景気の変化のなかでどう形を変えていくかの記録です。この記録は、{終了したサービスの墓場|/graveyard/#grave-thailand-digital-wallet}にも置いておきます。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "On 21 August 2024, the Japanese site IDEAS FOR GOOD ran a story headlined “Basic income in digital currency: about 50 million people in Thailand eligible.” The Thai government, it said, would give citizens aged 16 and over 10,000 baht each (about ¥42,000 at the article’s rate) in digital money.[1] To be fair, the article itself noted that the income and savings caps set the scheme apart from the usual definition of basic income. Still, the words that stayed in the headline were “basic income.”"
+          ],
+          [
+            "p",
+            "More than two years on, what became of those 10,000 baht? We trace what was promised against what actually happened, then check it against the definition of basic income."
+          ],
+          [
+            "h",
+            "What was promised"
+          ],
+          [
+            "p",
+            "In April 2024, Prime Minister Srettha Thavisin’s government finalised the plan, and the cabinet approved it in principle on 23 April. It covered Thai citizens aged 16 and over earning under 840,000 baht a year with less than 500,000 baht in the bank. The government expected about 50 million people to qualify, and the budget settled at 450 billion baht.[3] The money would go into a digital wallet in a government app and could be spent only at registered small shops in the area where the recipient lived, within six months, and not on alcohol, cigarettes, fuel or online purchases.[2][3] The idea was to spread cash evenly across the economy; the Finance Ministry expected it to add 1.2 to 1.8 percentage points to GDP growth.[2]"
+          ],
+          [
+            "p",
+            "There was opposition from the start. The Bank of Thailand voiced concern about the risks of the stimulus, and the central bank, economists and the main opposition party argued that the original funding plan could run afoul of various laws and that there was no basis to justify such a stimulus.[2]"
+          ],
+          [
+            "h",
+            "What actually happened"
+          ],
+          [
+            "p",
+            "On 14 August 2024, the Constitutional Court removed Srettha from office, and his successor, Paetongtarn Shinawatra, kept the scheme.[3]"
+          ],
+          [
+            "p",
+            "Phase one began on 25 September 2024: about 14.55 million welfare-card holders and people with disabilities, roughly 145 billion baht in all. But it was not paid through the digital wallet. It went out as cash to bank accounts; the government said the wallet system was still being set up and later phases would use it.[4]"
+          ],
+          [
+            "p",
+            "Phase two came on 27 January 2025: 10,000 baht each to about 3 million people aged 60 and over, transferred through PromptPay, the payment service linked to national ID numbers. Again, cash.[5]"
+          ],
+          [
+            "p",
+            "Phase three was finally meant to use the wallet: 10,000 baht for about 2.7 million people aged 16 to 20, a budget of 27 billion baht.[6] On 16 May 2025, Finance Minister Pichai Chunhavajira was reported to have scrapped it, and The Nation reported that both the NESDC planning agency and the Bank of Thailand had opposed the third phase.[6] After a committee meeting on 19 May, he rephrased: “It is not a cancellation. If the economic situation improves, we are ready to proceed.” The 157 billion baht set aside for the handouts would go instead to water management, transport, tourism, support for exporters and SMEs, and jobs. US tariffs had darkened the global outlook, and the NESDC was forecasting just 1.8% growth.[7]"
+          ],
+          [
+            "p",
+            "At the end of August 2025, Paetongtarn too was removed by the Constitutional Court.[3] The idea that 10,000 baht was about to arrive did not go away. In November 2025, Thai PBS Verify flagged as false TikTok clips claiming the money would be paid at the end of the year; the Finance Ministry said there was no policy announcement and no official operational detail for any such handout.[8] As of November 2026, we could find no announcement that wallet payments had resumed."
+          ],
+          [
+            "o",
+            "So, as far as we could find, no round of the 10,000 baht was ever paid through the wallet. What actually arrived was one-off cash for welfare-card holders, people with disabilities and older people. That is not nothing: around 17.5 million people received money. But it was not basic income."
+          ],
+          [
+            "h",
+            "Basic income’s five criteria"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement,” and lists five characteristics: periodic (paid at regular intervals, for example every month, not as a one-off grant), cash (paid in a medium that lets recipients decide what to spend it on), individual (paid to each person, not to households), universal (paid to all) and unconditional (no means test and no requirement to work or show willingness to work).[9]"
+          ],
+          [
+            "p",
+            "Let’s run Thailand’s 10,000 baht through them one by one."
+          ],
+          [
+            "p",
+            "Periodic? No. Every round paid each person once, with no promise of another."
+          ],
+          [
+            "p",
+            "Cash? Not the wallet that was the heart of the plan. Money that can be spent only in one area, before a deadline, on approved items does not let recipients “decide what they spend it on.” The two rounds that did arrive as cash met this test."
+          ],
+          [
+            "p",
+            "Individual? Yes. It was paid person by person."
+          ],
+          [
+            "p",
+            "Universal? No. Even on paper it was for people aged 16 and over under income and savings caps; in practice only welfare-card holders, people with disabilities and people aged 60 and over got it."
+          ],
+          [
+            "p",
+            "Unconditional? No. Nobody had to work, but there were income and savings tests."
+          ],
+          [
+            "o",
+            "Out of five, only “individual” was clearly met, and “cash” only for the two rounds actually paid. This was a one-off handout aimed at people on low incomes and at the economy. Handouts like this are common policy everywhere, and if we judge it, we should judge it as a handout."
+          ],
+          [
+            "h",
+            "Compared with Japan’s ¥100,000 for everyone"
+          ],
+          [
+            "p",
+            "Japan has a close parallel: the 2020 Special Cash Payment (tokubetsu teigaku kyūfukin). Everyone recorded in the Basic Resident Register on 27 April 2020 was eligible for ¥100,000. The programme was budgeted at about ¥12.88 trillion, and about ¥12.67 trillion had been paid out by 31 March 2021.[10]"
+          ],
+          [
+            "p",
+            "Against the five criteria, the ¥100,000 came close to universal, had no means test and was cash people could spend freely. But it was paid once, so it was not periodic. And one point is often missed: the person entitled to receive it was the head of household, and the money was in principle paid in one sum for the whole household into the account of the household head who applied.[10] Strictly speaking, it did not meet “individual” either."
+          ],
+          [
+            "o",
+            "The ¥100,000 was not basic income either. But it was far closer than Thailand’s 10,000 baht. The difference was who could receive it, and who decided how it was spent."
+          ],
+          [
+            "h",
+            "Schemes that do pay again and again"
+          ],
+          [
+            "p",
+            "Our timeline includes schemes that really are paid repeatedly. The {Alaska Permanent Fund Dividend|/timeline/#tl-alaska} has paid eligible residents an annual dividend from the state fund since 1982; the first was $1,000 each. The {Marshall Islands’ Enra|/timeline/#tl-marshall-islands} has paid about $200 every quarter since November 2025 to every citizen living in the country, children included."
+          ],
+          [
+            "o",
+            "Neither pays enough to live on, and neither meets all five criteria perfectly: Alaska pays eligible state residents, and Enra pays citizens who live in the country. Still, both have the skeleton: payments at regular intervals, to nearly everyone, without a means test. That skeleton is exactly what Thailand’s 10,000 baht lacked."
+          ],
+          [
+            "h",
+            "When a headline says “basic income”"
+          ],
+          [
+            "o",
+            "“Basic income” is a loud phrase in a headline. It draws hope and backlash alike. So when you see it, run the five checks. Is it paid again and again? Can you decide how to spend it? Does it reach each person? Does everyone get it? Is it free of tests and conditions?"
+          ],
+          [
+            "o",
+            "Calling everything basic income hurts supporters and critics alike. If a one-off handout fails to lift the economy as hoped, that is not evidence that basic income failed. And if a handout works, that is not evidence that basic income will. Even the Thai coverage wobbled on words: the same third phase was “scrapped” on 16 May and “not a cancellation” but a delay on 19 May.[6][7]"
+          ],
+          [
+            "o",
+            "We are not laughing at Thailand’s plan. Around 17.5 million people really did receive cash. But what we call it changes what we can learn from it. What Thailand left behind is not a basic income experiment; it is a record of how a big handout plan changes shape as budgets and the economy shift. We have also placed that record in {the graveyard|/graveyard/#grave-thailand-digital-wallet}."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2024 年 8 月 21 日，日本网站 IDEAS FOR GOOD 发表了一篇题为《用数字货币发放基本收入：泰国约 5,000 万人符合资格》的文章，说泰国政府将以数字货币向 16 岁以上国民每人发放 1 万泰铢（按文中汇率约 4.2 万日元）。[1] 公平地说，文章本身也指出，由于设有收入和存款上限，这个方案与通常的基本收入定义不同。尽管如此，留在标题里的仍是“基本收入”这几个字。"
+          ],
+          [
+            "p",
+            "两年多过去了，那 1 万泰铢后来怎样了？我们把当初的承诺和实际经过对照，再用基本收入的定义来检验。"
+          ],
+          [
+            "h",
+            "当初承诺了什么"
+          ],
+          [
+            "p",
+            "2024 年 4 月，赛塔·他威信总理的政府敲定了计划，内阁于 4 月 23 日原则上批准。对象是 16 岁以上、年收入低于 84 万泰铢、存款少于 50 万泰铢的泰国公民。政府预计约 5,000 万人符合资格，预算最终定为 4,500 亿泰铢。[3] 钱会存入政府应用程序中的数字钱包，只能在居住地区内登记的小商店使用，期限六个月，不能用于酒类、香烟、燃油或网购。[2][3] 目的是让现金均匀地流向整个经济；财政部预计能把 GDP 增速提高 1.2 到 1.8 个百分点。[2]"
+          ],
+          [
+            "p",
+            "反对声音从一开始就存在。泰国央行对刺激措施的风险表示担忧；央行、经济学家和最大反对党批评说，最初的融资方式可能触犯多项法律，也没有理由需要如此规模的刺激。[2]"
+          ],
+          [
+            "h",
+            "实际发生了什么"
+          ],
+          [
+            "p",
+            "2024 年 8 月 14 日，宪法法院解除了赛塔的总理职务，继任的佩通坦·西那瓦延续了这项计划。[3]"
+          ],
+          [
+            "p",
+            "第一轮于 2024 年 9 月 25 日开始：约 1,455 万名福利卡持有人和残障人士，总额约 1,450 亿泰铢。但发放方式不是数字钱包，而是把现金打入银行账户；政府表示钱包系统仍在搭建中，之后几轮会使用钱包。[4]"
+          ],
+          [
+            "p",
+            "第二轮在 2025 年 1 月 27 日：向约 300 万名 60 岁以上的老人每人发放 1 万泰铢，通过与身份证号码绑定的转账服务 PromptPay 汇入。这同样是现金。[5]"
+          ],
+          [
+            "p",
+            "第三轮终于要用钱包发放：约 270 万名 16 到 20 岁的青年，每人 1 万泰铢，预算 270 亿泰铢。[6] 2025 年 5 月 16 日，有报道称财政部长皮猜（Pichai Chunhavajira）已取消这一轮，《国家报》（The Nation）还报道说，国家经济和社会发展委员会（NESDC）和泰国央行都反对第三轮。[6] 5 月 19 日的委员会会议后，他改口说：“这不是取消。如果经济形势好转，我们随时准备推进。”原本为发放预留的 1,570 亿泰铢，改用于水利管理、交通、旅游、扶持出口企业和中小企业以及就业。美国关税令全球前景转暗，NESDC 预测泰国经济增速只有 1.8%。[7]"
+          ],
+          [
+            "p",
+            "2025 年 8 月底，佩通坦也被宪法法院解职。[3] 但“1 万泰铢马上就到”的说法并没有消失。2025 年 11 月，泰国公共电视台的事实核查部门 Thai PBS Verify 判定，声称年底将发放 1 万泰铢的 TikTok 视频是假消息；财政部表示，没有任何此类政策公告或正式执行细节。[8] 截至 2026 年 11 月，我们没有找到恢复钱包发放的公告。"
+          ],
+          [
+            "o",
+            "也就是说，就我们查到的范围，1 万泰铢没有任何一轮是通过钱包发出的。真正到手的，是发给福利卡持有人、残障人士和老人的一次性现金。这并非小事：约 1,750 万人拿到了钱。但它不是基本收入。"
+          ],
+          [
+            "h",
+            "基本收入的五个条件"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）把基本收入定义为“无需经济状况调查或工作要求，无条件地以个人为单位向所有人发放的定期现金”，并列出五个特征：定期（按固定间隔发放，例如每月，而不是一次性补助）、现金（以能让领取者自己决定用途的方式发放）、个人（发给每个人，而不是发给家庭）、普遍（发给所有人）、无条件（不做经济状况调查，也不要求工作或表现出工作意愿）。[9]"
+          ],
+          [
+            "p",
+            "我们把泰国的 1 万泰铢逐条对照一下。"
+          ],
+          [
+            "p",
+            "定期吗？不是。每一轮都是每人一次，也没有下一次的承诺。"
+          ],
+          [
+            "p",
+            "现金吗？作为计划核心的钱包不是。只能在特定地区、限期内、购买特定商品的钱，不是 BIEN 所说“让领取者自己决定用途”的钱。实际发出的两轮现金倒是符合这一条。"
+          ],
+          [
+            "p",
+            "个人吗？是的。按人发放。"
+          ],
+          [
+            "p",
+            "普遍吗？不是。纸面上就只限 16 岁以上、受收入和存款上限约束的人；实际上只有福利卡持有人、残障人士和 60 岁以上的人拿到了。"
+          ],
+          [
+            "p",
+            "无条件吗？不是。虽然不要求工作，但有收入和存款审查。"
+          ],
+          [
+            "o",
+            "五条中，只有“个人”明确符合，“现金”也只适用于实际发出的两轮。这是一笔针对低收入人群和经济的一次性补贴。这类补贴在各国都很常见；要评价它，就应当把它当作补贴来评价。"
+          ],
+          [
+            "h",
+            "与日本的人均 10 万日元相比"
+          ],
+          [
+            "p",
+            "日本也有相近的经历：2020 年的“特别定额给付金”。2020 年 4 月 27 日登记在居民基本台账上的所有人，每人 10 万日元。项目经费约 12.88 万亿日元，截至 2021 年 3 月 31 日已发放约 12.67 万亿日元。[10]"
+          ],
+          [
+            "p",
+            "按五个条件看，10 万日元接近“普遍”，没有经济状况调查，也是可以自由使用的现金。但它只发了一次，不是“定期”的。还有一点常被忽略：有权领取的是户主，钱原则上会把全家的份额一次性打进提出申请的户主本人的账户。[10] 严格来说，它也不符合“个人”这一条。"
+          ],
+          [
+            "o",
+            "10 万日元同样不是基本收入。但它比泰国的 1 万泰铢接近得多。差别在于谁能领到，以及谁来决定怎么花。"
+          ],
+          [
+            "h",
+            "真正反复发放的例子"
+          ],
+          [
+            "p",
+            "本站年表里有真正反复发放的例子。{阿拉斯加永久基金分红|/timeline/#tl-alaska}自 1982 年起每年从州基金向符合条件的居民发放分红，首次为每人 1,000 美元。{马绍尔群岛的 Enra|/timeline/#tl-marshall-islands}自 2025 年 11 月起，每季度向居住在国内的全体国民（含儿童）发放约 200 美元。"
+          ],
+          [
+            "o",
+            "两者的金额都不足以维持生活，也都不能说完全满足五个条件：阿拉斯加发给符合条件的州居民，Enra 发给住在国内的国民。但它们都有那副骨架：按固定间隔、发给几乎所有人、不做经济状况调查。泰国的 1 万泰铢所缺的，恰恰就是这副骨架。"
+          ],
+          [
+            "h",
+            "当标题写着“基本收入”时"
+          ],
+          [
+            "o",
+            "“基本收入”在标题里是个响亮的词，既招来期待，也招来反感。所以，看到它时，请用五个条件检查一下：会反复发放吗？能自己决定怎么花吗？发给每个人吗？所有人都能领吗？没有审查和条件吗？"
+          ],
+          [
+            "o",
+            "什么都叫基本收入，对支持者和批评者都没有好处。一次性补贴没能如愿拉动经济，并不能证明基本收入失败；补贴奏效了，也不能证明基本收入会奏效。连泰国的报道用词也在摇摆：同一个第三轮，5 月 16 日被说成“取消”，19 日又成了“不是取消”而是推迟。[6][7]"
+          ],
+          [
+            "o",
+            "我们无意嘲笑泰国的计划。约 1,750 万人确实拿到了现金。但我们怎么称呼它，决定了我们能从中学到什么。泰国留下的不是一次基本收入实验，而是一份记录：一项大规模补贴计划如何随着财政和经济的变化而改变形态。这份记录我们也放进了{墓地|/graveyard/#grave-thailand-digital-wallet}。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "21 अगस्त 2024 को जापानी वेबसाइट IDEAS FOR GOOD ने एक लेख छापा, जिसका शीर्षक था “डिजिटल मुद्रा में बेसिक इनकम: थाईलैंड के लगभग 5 करोड़ लोग पात्र”। लेख के मुताबिक़ थाई सरकार 16 साल और उससे ऊपर के नागरिकों को डिजिटल पैसे में 10,000 बाट (लेख की दर से लगभग 42,000 येन) देने वाली थी।[1] निष्पक्षता के लिए: लेख ने ख़ुद माना कि आय और बचत की सीमाओं के कारण यह योजना बेसिक इनकम की आम परिभाषा से अलग है। फिर भी, शीर्षक में “बेसिक इनकम” शब्द ही रहा।"
+          ],
+          [
+            "p",
+            "दो साल से ज़्यादा बीत चुके हैं। उन 10,000 बाट का क्या हुआ? हम वादे को असल घटनाओं से मिलाते हैं, और फिर बेसिक इनकम की परिभाषा पर परखते हैं।"
+          ],
+          [
+            "h",
+            "क्या वादा किया गया था"
+          ],
+          [
+            "p",
+            "अप्रैल 2024 में प्रधानमंत्री स्रेथा थाविसिन की सरकार ने योजना तय की, और 23 अप्रैल को कैबिनेट ने सैद्धांतिक मंज़ूरी दी। इसमें 16 साल और उससे ऊपर के वे थाई नागरिक आते थे जिनकी सालाना आय 8,40,000 बाट से कम और बैंक में जमा 5,00,000 बाट से कम हो। सरकार को लगभग 5 करोड़ पात्र लोगों की उम्मीद थी, और बजट आख़िर में 450 अरब बाट रखा गया।[3] पैसा एक सरकारी ऐप के डिजिटल वॉलेट में आता और सिर्फ़ अपने इलाक़े की पंजीकृत छोटी दुकानों पर, छह महीने के भीतर ख़र्च हो सकता था; शराब, सिगरेट, ईंधन या ऑनलाइन ख़रीदारी पर नहीं।[2][3] मक़सद था कि पैसा पूरी अर्थव्यवस्था में बराबर फैले; वित्त मंत्रालय को उम्मीद थी कि इससे GDP वृद्धि में 1.2 से 1.8 प्रतिशत अंक जुड़ेंगे।[2]"
+          ],
+          [
+            "p",
+            "विरोध शुरू से था। बैंक ऑफ़ थाईलैंड ने इस प्रोत्साहन के जोखिमों पर चिंता जताई, और केंद्रीय बैंक, अर्थशास्त्रियों और मुख्य विपक्षी दल ने कहा कि मूल फ़ंडिंग योजना कई क़ानूनों से टकरा सकती है और इतने बड़े प्रोत्साहन का कोई आधार नहीं है।[2]"
+          ],
+          [
+            "h",
+            "असल में क्या हुआ"
+          ],
+          [
+            "p",
+            "14 अगस्त 2024 को संवैधानिक अदालत ने स्रेथा को पद से हटा दिया, और उनकी उत्तराधिकारी पैतोंगतार्न शिनावात्रा ने योजना जारी रखी।[3]"
+          ],
+          [
+            "p",
+            "पहला चरण 25 सितंबर 2024 को शुरू हुआ: लगभग 1.455 करोड़ कल्याण कार्डधारक और दिव्यांग लोग, कुल लगभग 145 अरब बाट। लेकिन यह डिजिटल वॉलेट से नहीं दिया गया, बल्कि बैंक खातों में नकद भेजा गया; सरकार ने कहा कि वॉलेट सिस्टम अभी तैयार हो रहा है और आगे के चरणों में इसका इस्तेमाल होगा।[4]"
+          ],
+          [
+            "p",
+            "दूसरा चरण 27 जनवरी 2025 को आया: 60 साल और उससे ऊपर के लगभग 30 लाख लोगों को 10,000 बाट, PromptPay से भेजे गए, जो राष्ट्रीय पहचान संख्या से जुड़ी भुगतान सेवा है। फिर से नकद।[5]"
+          ],
+          [
+            "p",
+            "तीसरे चरण में आख़िरकार वॉलेट का इस्तेमाल होना था: 16 से 20 साल के लगभग 27 लाख युवाओं को 10,000 बाट, बजट 27 अरब बाट।[6] 16 मई 2025 को ख़बर आई कि वित्त मंत्री पिचाई चुनहवजिरा ने इसे रद्द कर दिया है, और The Nation ने बताया कि योजना एजेंसी NESDC और बैंक ऑफ़ थाईलैंड, दोनों तीसरे चरण के ख़िलाफ़ थे।[6] 19 मई की बैठक के बाद उन्होंने बात बदली: “यह रद्द करना नहीं है। अगर आर्थिक हालात सुधरते हैं, तो हम आगे बढ़ने को तैयार हैं।” भुगतानों के लिए रखे 157 अरब बाट अब जल प्रबंधन, परिवहन, पर्यटन, निर्यातकों और छोटे-मझोले कारोबारों की मदद, और रोज़गार में जाने थे। अमेरिकी टैरिफ़ ने दुनिया की आर्थिक तस्वीर धुंधली कर दी थी, और NESDC सिर्फ़ 1.8% वृद्धि का अनुमान लगा रहा था।[7]"
+          ],
+          [
+            "p",
+            "अगस्त 2025 के आख़िर में संवैधानिक अदालत ने पैतोंगतार्न को भी हटा दिया।[3] फिर भी यह बात ख़त्म नहीं हुई कि 10,000 बाट बस आने वाले हैं। नवंबर 2025 में Thai PBS Verify ने उन TikTok क्लिपों को झूठा बताया जिनमें साल के अंत में भुगतान का दावा था; वित्त मंत्रालय ने कहा कि ऐसे किसी भुगतान की न कोई नीतिगत घोषणा है, न कोई आधिकारिक ब्योरा।[8] नवंबर 2026 तक हमें वॉलेट भुगतान फिर शुरू होने की कोई घोषणा नहीं मिली।"
+          ],
+          [
+            "o",
+            "यानी जहाँ तक हम पता कर सके, 10,000 बाट का कोई भी दौर वॉलेट से नहीं दिया गया। असल में जो पहुँचा, वह कल्याण कार्डधारकों, दिव्यांग लोगों और बुज़ुर्गों को एक बार का नकद था। यह कोई छोटी बात नहीं: लगभग 1.75 करोड़ लोगों को पैसा मिला। लेकिन यह बेसिक इनकम नहीं थी।"
+          ],
+          [
+            "h",
+            "बेसिक इनकम की पाँच कसौटियाँ"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को “एक नियमित नकद भुगतान, जो बिना आय-जाँच या काम की शर्त के, बिना शर्त सभी को व्यक्तिगत आधार पर दिया जाए” के रूप में परिभाषित करता है, और पाँच विशेषताएँ गिनाता है: नियमित (तय अंतराल पर, जैसे हर महीने, एक बार का अनुदान नहीं), नकद (ऐसे माध्यम में कि पाने वाला ख़ुद तय करे कि किस पर ख़र्च करे), व्यक्तिगत (हर व्यक्ति को, परिवार को नहीं), सार्वभौमिक (सबको) और बिना शर्त (न आय-जाँच, न काम करने या काम की इच्छा दिखाने की शर्त)।[9]"
+          ],
+          [
+            "p",
+            "आइए थाईलैंड के 10,000 बाट को एक-एक करके इन पर परखें।"
+          ],
+          [
+            "p",
+            "नियमित? नहीं। हर दौर में हर व्यक्ति को एक ही बार मिला, अगली बार का कोई वादा नहीं।"
+          ],
+          [
+            "p",
+            "नकद? योजना का दिल, यानी वॉलेट, नहीं। जो पैसा सिर्फ़ एक इलाक़े में, एक समय-सीमा में, मंज़ूर सामान पर ही ख़र्च हो सके, वह पाने वाले को “ख़ुद तय करने” नहीं देता। जो दो दौर सचमुच नकद पहुँचे, वे इस कसौटी पर खरे थे।"
+          ],
+          [
+            "p",
+            "व्यक्तिगत? हाँ। भुगतान व्यक्ति-दर-व्यक्ति हुआ।"
+          ],
+          [
+            "p",
+            "सार्वभौमिक? नहीं। काग़ज़ पर भी यह सिर्फ़ 16 साल से ऊपर और आय-बचत सीमा के भीतर वालों के लिए था; व्यवहार में सिर्फ़ कल्याण कार्डधारकों, दिव्यांगों और 60 से ऊपर के लोगों को मिला।"
+          ],
+          [
+            "p",
+            "बिना शर्त? नहीं। काम करने की शर्त नहीं थी, लेकिन आय और बचत की जाँच थी।"
+          ],
+          [
+            "o",
+            "पाँच में से सिर्फ़ “व्यक्तिगत” साफ़ तौर पर पूरी हुई, और “नकद” सिर्फ़ उन दो दौरों में जो असल में दिए गए। यह कम आय वाले लोगों और अर्थव्यवस्था के लिए एक बार का भुगतान था। ऐसे भुगतान हर जगह आम नीति हैं, और अगर इसे परखना है, तो एक बार के भुगतान के रूप में ही परखना चाहिए।"
+          ],
+          [
+            "h",
+            "जापान के सबके लिए 1,00,000 येन से तुलना"
+          ],
+          [
+            "p",
+            "जापान का अनुभव इससे मिलता-जुलता है: 2020 का विशेष नकद भुगतान (तोकुबेत्सु तेइगाकु क्यूफ़ुकिन)। 27 अप्रैल 2020 को बुनियादी निवासी रजिस्टर में दर्ज हर व्यक्ति 1,00,000 येन का हक़दार था। कार्यक्रम का बजट लगभग 12.88 ट्रिलियन येन था, और 31 मार्च 2021 तक लगभग 12.67 ट्रिलियन येन बाँटे जा चुके थे।[10]"
+          ],
+          [
+            "p",
+            "पाँच कसौटियों पर 1,00,000 येन सार्वभौमिक के क़रीब था, उसमें आय-जाँच नहीं थी, और वह आज़ादी से ख़र्च होने वाला नकद था। लेकिन वह एक बार दिया गया, इसलिए नियमित नहीं था। और एक बात अक्सर छूट जाती है: पाने का हक़ परिवार के मुखिया का था, और पैसा सिद्धांततः पूरे परिवार का एक साथ, आवेदन करने वाले मुखिया के खाते में जाता था।[10] सख़्ती से देखें तो “व्यक्तिगत” कसौटी भी पूरी नहीं हुई।"
+          ],
+          [
+            "o",
+            "1,00,000 येन भी बेसिक इनकम नहीं था। लेकिन वह थाईलैंड के 10,000 बाट से कहीं ज़्यादा क़रीब था। फ़र्क़ इसमें था कि कौन पा सकता था, और ख़र्च कैसे हो, यह कौन तय करता था।"
+          ],
+          [
+            "h",
+            "वे योजनाएँ जो सचमुच बार-बार देती हैं"
+          ],
+          [
+            "p",
+            "हमारी समयरेखा में ऐसी योजनाएँ हैं जो सचमुच बार-बार भुगतान करती हैं। {अलास्का परमानेंट फ़ंड डिविडेंड|/timeline/#tl-alaska} 1982 से योग्य निवासियों को राज्य कोष से हर साल डिविडेंड देता है; पहला $1,000 प्रति व्यक्ति था। {मार्शल द्वीप का Enra|/timeline/#tl-marshall-islands} नवंबर 2025 से देश में रहने वाले हर नागरिक को, बच्चों सहित, हर तिमाही लगभग $200 देता है।"
+          ],
+          [
+            "o",
+            "दोनों में से कोई भी इतना नहीं देता कि गुज़ारा हो सके, और कोई भी पाँचों कसौटियाँ पूरी तरह नहीं निभाता: अलास्का योग्य राज्य-निवासियों को देता है, और Enra देश में रहने वाले नागरिकों को। फिर भी दोनों में ढाँचा है: तय अंतराल पर, लगभग सबको, बिना आय-जाँच के भुगतान। थाईलैंड के 10,000 बाट में ठीक यही ढाँचा नहीं था।"
+          ],
+          [
+            "h",
+            "जब शीर्षक में “बेसिक इनकम” लिखा हो"
+          ],
+          [
+            "o",
+            "शीर्षक में “बेसिक इनकम” एक ज़ोरदार शब्द है। यह उम्मीद भी जगाता है और विरोध भी। इसलिए जब आप इसे देखें, तो पाँच जाँचें करें। क्या यह बार-बार मिलता है? क्या आप ख़ुद तय कर सकते हैं कि किस पर ख़र्च करें? क्या यह हर व्यक्ति तक पहुँचता है? क्या सबको मिलता है? क्या यह जाँच और शर्तों से मुक्त है?"
+          ],
+          [
+            "o",
+            "हर चीज़ को बेसिक इनकम कहना समर्थकों और आलोचकों, दोनों का नुक़सान करता है। अगर एक बार का भुगतान उम्मीद के मुताबिक़ अर्थव्यवस्था को न उठाए, तो यह बेसिक इनकम की विफलता का सबूत नहीं है। और अगर भुगतान काम कर जाए, तो यह इस बात का सबूत नहीं कि बेसिक इनकम काम करेगी। थाई ख़बरों में भी शब्द डगमगाए: वही तीसरा चरण 16 मई को “रद्द” था और 19 मई को “रद्द नहीं”, बल्कि टला हुआ।[6][7]"
+          ],
+          [
+            "o",
+            "हम थाईलैंड की योजना का मज़ाक़ नहीं उड़ा रहे। लगभग 1.75 करोड़ लोगों को सचमुच नकद मिला। लेकिन हम इसे क्या कहते हैं, इससे तय होता है कि हम इससे क्या सीख सकते हैं। थाईलैंड ने बेसिक इनकम का प्रयोग नहीं छोड़ा, बल्कि इस बात का रिकॉर्ड छोड़ा कि बजट और अर्थव्यवस्था बदलने पर एक बड़ी भुगतान योजना कैसे अपना रूप बदलती है। यह रिकॉर्ड हमने {क़ब्रिस्तान|/graveyard/#grave-thailand-digital-wallet} में भी रखा है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "El 21 de agosto de 2024, la web japonesa IDEAS FOR GOOD publicó un artículo titulado «Renta básica en moneda digital: unos 50 millones de personas en Tailandia, con derecho». Según el texto, el gobierno tailandés daría a cada ciudadano de 16 años o más 10.000 bahts (unos 42.000 yenes al cambio del artículo) en dinero digital.[1] Para ser justos, el propio artículo señalaba que los topes de ingresos y ahorros apartaban el plan de la definición habitual de renta básica. Aun así, las palabras que quedaron en el titular fueron «renta básica»."
+          ],
+          [
+            "p",
+            "Han pasado más de dos años. ¿Qué fue de esos 10.000 bahts? Comparamos lo prometido con lo que pasó de verdad y lo contrastamos con la definición de renta básica."
+          ],
+          [
+            "h",
+            "Lo que se prometió"
+          ],
+          [
+            "p",
+            "En abril de 2024, el gobierno del primer ministro Srettha Thavisin cerró el plan, y el consejo de ministros lo aprobó en principio el 23 de abril. Cubría a ciudadanos tailandeses de 16 años o más que ganaran menos de 840.000 bahts al año y tuvieran menos de 500.000 bahts en el banco. El gobierno calculaba que unos 50 millones de personas cumplirían los requisitos, y el presupuesto quedó en 450.000 millones de bahts.[3] El dinero iría a una billetera digital en una app del gobierno y solo podría gastarse en pequeños comercios registrados de la zona donde vivía cada persona, en un plazo de seis meses, y no en alcohol, tabaco, combustible ni compras por internet.[2][3] La idea era repartir el dinero por toda la economía; el Ministerio de Finanzas esperaba que sumara entre 1,2 y 1,8 puntos al crecimiento del PIB.[2]"
+          ],
+          [
+            "p",
+            "Hubo oposición desde el principio. El Banco de Tailandia expresó su preocupación por los riesgos del estímulo, y el banco central, economistas y el principal partido de la oposición sostuvieron que el plan de financiación original podía chocar con varias leyes y que nada justificaba un estímulo así.[2]"
+          ],
+          [
+            "h",
+            "Lo que pasó de verdad"
+          ],
+          [
+            "p",
+            "El 14 de agosto de 2024, el Tribunal Constitucional destituyó a Srettha, y su sucesora, Paetongtarn Shinawatra, mantuvo el plan.[3]"
+          ],
+          [
+            "p",
+            "La primera fase empezó el 25 de septiembre de 2024: unos 14,55 millones de titulares de tarjetas de bienestar social y personas con discapacidad, unos 145.000 millones de bahts en total. Pero no se pagó con la billetera digital, sino en efectivo en cuentas bancarias; el gobierno dijo que el sistema de la billetera aún se estaba montando y que las fases siguientes lo usarían.[4]"
+          ],
+          [
+            "p",
+            "La segunda fase llegó el 27 de enero de 2025: 10.000 bahts para cada una de unos 3 millones de personas de 60 años o más, transferidos por PromptPay, el servicio de pagos vinculado al número de identidad. Otra vez, efectivo.[5]"
+          ],
+          [
+            "p",
+            "La tercera fase iba a usar por fin la billetera: 10.000 bahts para unos 2,7 millones de jóvenes de 16 a 20 años, con un presupuesto de 27.000 millones de bahts.[6] El 16 de mayo de 2025 se informó de que el ministro de Finanzas, Pichai Chunhavajira, la había descartado, y The Nation contó que tanto la agencia de planificación NESDC como el Banco de Tailandia se habían opuesto a la tercera fase.[6] Tras una reunión el 19 de mayo, el ministro matizó: «No es una cancelación. Si la situación económica mejora, estamos listos para seguir adelante». Los 157.000 millones de bahts reservados para los pagos irían a gestión del agua, transporte, turismo, ayuda a exportadores y pymes, y empleo. Los aranceles de EE. UU. habían oscurecido las perspectivas mundiales y la NESDC preveía un crecimiento de solo el 1,8 %.[7]"
+          ],
+          [
+            "p",
+            "A finales de agosto de 2025, también Paetongtarn fue destituida por el Tribunal Constitucional.[3] La idea de que los 10.000 bahts estaban a punto de llegar no desapareció. En noviembre de 2025, Thai PBS Verify calificó de falsos unos vídeos de TikTok que anunciaban el pago para final de año; el Ministerio de Finanzas dijo que no había ningún anuncio de política ni detalle operativo oficial de un reparto así.[8] En noviembre de 2026 no encontramos ningún anuncio de que se hayan reanudado los pagos por billetera."
+          ],
+          [
+            "o",
+            "En resumen, hasta donde pudimos comprobar, ninguna ronda de los 10.000 bahts se pagó con la billetera. Lo que llegó de verdad fue efectivo, una sola vez, para titulares de tarjetas de bienestar, personas con discapacidad y mayores. No es poca cosa: unos 17,5 millones de personas recibieron dinero. Pero no fue una renta básica."
+          ],
+          [
+            "h",
+            "Los cinco criterios de la renta básica"
+          ],
+          [
+            "p",
+            "La Red Mundial de Renta Básica (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todos de forma individual, sin comprobación de recursos ni exigencia de trabajo», y enumera cinco características: periódica (se paga a intervalos regulares, por ejemplo cada mes, no como una ayuda única), en efectivo (en un medio que permite a quien la recibe decidir en qué gastarla), individual (a cada persona, no a los hogares), universal (a todos) e incondicional (sin comprobación de recursos ni obligación de trabajar o de mostrar disposición a hacerlo).[9]"
+          ],
+          [
+            "p",
+            "Pasemos los 10.000 bahts de Tailandia por ellos uno a uno."
+          ],
+          [
+            "p",
+            "¿Periódica? No. Cada ronda pagó a cada persona una sola vez, sin promesa de otra."
+          ],
+          [
+            "p",
+            "¿En efectivo? No la billetera, que era el corazón del plan. Un dinero que solo se puede gastar en una zona, con fecha límite y en artículos autorizados no permite «decidir en qué gastarlo». Las dos rondas que sí llegaron en efectivo cumplían este criterio."
+          ],
+          [
+            "p",
+            "¿Individual? Sí. Se pagó persona a persona."
+          ],
+          [
+            "p",
+            "¿Universal? No. Ya sobre el papel era para mayores de 16 años bajo topes de ingresos y ahorros; en la práctica solo lo recibieron titulares de tarjetas de bienestar, personas con discapacidad y mayores de 60."
+          ],
+          [
+            "p",
+            "¿Incondicional? No. Nadie tenía que trabajar, pero había comprobación de ingresos y ahorros."
+          ],
+          [
+            "o",
+            "De cinco, solo «individual» se cumplió con claridad, y «en efectivo» solo en las dos rondas pagadas. Esto fue un pago único dirigido a personas con bajos ingresos y a la economía. Estos pagos son una política habitual en todas partes, y si lo juzgamos, debemos juzgarlo como tal."
+          ],
+          [
+            "h",
+            "Frente a los 100.000 yenes para todos de Japón"
+          ],
+          [
+            "p",
+            "Japón tiene un caso parecido: el Pago Especial en Efectivo de 2020 (tokubetsu teigaku kyūfukin). Toda persona inscrita en el Registro Básico de Residentes el 27 de abril de 2020 tenía derecho a 100.000 yenes. El programa tenía un presupuesto de unos 12,88 billones de yenes, y a 31 de marzo de 2021 se habían pagado unos 12,67 billones.[10]"
+          ],
+          [
+            "p",
+            "Según los cinco criterios, los 100.000 yenes se acercaron a lo universal, no tuvieron comprobación de recursos y eran efectivo de libre uso. Pero se pagaron una sola vez, así que no eran periódicos. Y hay un detalle que suele pasarse por alto: quien tenía derecho a cobrar era el cabeza de familia, y el dinero se ingresaba en principio de una vez, por todo el hogar, en la cuenta del cabeza de familia que lo solicitaba.[10] En sentido estricto, tampoco cumplía el criterio «individual»."
+          ],
+          [
+            "o",
+            "Los 100.000 yenes tampoco fueron una renta básica. Pero estuvieron mucho más cerca que los 10.000 bahts de Tailandia. La diferencia fue quién podía recibirlos y quién decidía en qué gastarlos."
+          ],
+          [
+            "h",
+            "Programas que sí pagan una y otra vez"
+          ],
+          [
+            "p",
+            "Nuestra cronología recoge programas que de verdad pagan de forma repetida. El {Dividendo del Fondo Permanente de Alaska|/timeline/#tl-alaska} paga desde 1982 un dividendo anual del fondo estatal a los residentes que cumplen los requisitos; el primero fue de 1.000 $ por persona. {Enra, de las Islas Marshall|/timeline/#tl-marshall-islands}, paga desde noviembre de 2025 unos 200 $ cada trimestre a todos los ciudadanos que viven en el país, niños incluidos."
+          ],
+          [
+            "o",
+            "Ninguno de los dos da para vivir, y ninguno cumple a la perfección los cinco criterios: Alaska paga a residentes que cumplen requisitos, y Enra a los ciudadanos que viven en el país. Aun así, ambos tienen el esqueleto: pagos a intervalos regulares, a casi todos, sin comprobación de recursos. Ese esqueleto es justo lo que les faltaba a los 10.000 bahts de Tailandia."
+          ],
+          [
+            "h",
+            "Cuando un titular dice «renta básica»"
+          ],
+          [
+            "o",
+            "«Renta básica» suena fuerte en un titular. Despierta esperanza y rechazo por igual. Por eso, cuando la veas, haz las cinco comprobaciones. ¿Se paga una y otra vez? ¿Puedes decidir en qué gastarlo? ¿Llega a cada persona? ¿Lo recibe todo el mundo? ¿Está libre de pruebas y condiciones?"
+          ],
+          [
+            "o",
+            "Llamar renta básica a cualquier cosa perjudica tanto a sus defensores como a sus críticos. Si un pago único no impulsa la economía como se esperaba, eso no demuestra que la renta básica haya fracasado. Y si un pago funciona, eso no demuestra que la renta básica vaya a funcionar. Hasta la prensa tailandesa vaciló con las palabras: la misma tercera fase estaba «descartada» el 16 de mayo y el 19 «no era una cancelación», sino un aplazamiento.[6][7]"
+          ],
+          [
+            "o",
+            "No nos reímos del plan de Tailandia. Unos 17,5 millones de personas recibieron efectivo de verdad. Pero cómo lo llamamos cambia lo que podemos aprender de ello. Lo que dejó Tailandia no es un experimento de renta básica, sino el registro de cómo un gran plan de pagos cambia de forma a medida que cambian el presupuesto y la economía. Ese registro también está en {el cementerio|/graveyard/#grave-thailand-digital-wallet}."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Am 21. August 2024 veröffentlichte die japanische Website IDEAS FOR GOOD einen Artikel mit der Überschrift „Grundeinkommen in Digitalwährung: rund 50 Millionen Menschen in Thailand berechtigt“. Die thailändische Regierung, hieß es, werde Staatsangehörigen ab 16 Jahren je 10.000 Baht (laut Artikel rund 42.000 Yen) in Digitalgeld geben.[1] Fairerweise: Der Artikel selbst merkte an, dass die Einkommens- und Spargrenzen das Programm von der üblichen Definition des Grundeinkommens unterscheiden. Trotzdem blieb in der Überschrift das Wort „Grundeinkommen“ stehen."
+          ],
+          [
+            "p",
+            "Mehr als zwei Jahre später: Was wurde aus diesen 10.000 Baht? Wir stellen das Versprechen dem tatsächlichen Verlauf gegenüber und prüfen beides an der Definition des Grundeinkommens."
+          ],
+          [
+            "h",
+            "Was versprochen wurde"
+          ],
+          [
+            "p",
+            "Im April 2024 legte die Regierung von Premierminister Srettha Thavisin den Plan fest, am 23. April billigte ihn das Kabinett grundsätzlich. Berechtigt sein sollten thailändische Staatsangehörige ab 16 Jahren mit weniger als 840.000 Baht Jahreseinkommen und weniger als 500.000 Baht auf der Bank. Die Regierung rechnete mit rund 50 Millionen Berechtigten, das Budget lag am Ende bei 450 Milliarden Baht.[3] Das Geld sollte in eine Digital-Wallet in einer Regierungs-App fließen und nur bei registrierten kleinen Läden in der Wohngegend ausgegeben werden können, innerhalb von sechs Monaten und nicht für Alkohol, Zigaretten, Treibstoff oder Online-Einkäufe.[2][3] Die Idee war, das Geld gleichmäßig über die ganze Wirtschaft zu verteilen; das Finanzministerium erwartete 1,2 bis 1,8 Prozentpunkte zusätzliches Wachstum.[2]"
+          ],
+          [
+            "p",
+            "Widerspruch gab es von Anfang an. Die Bank of Thailand äußerte Sorge über die Risiken des Konjunkturpakets, und Zentralbank, Ökonomen und die größte Oppositionspartei argumentierten, die ursprüngliche Finanzierung könne gegen mehrere Gesetze verstoßen und es gebe keine Grundlage für ein solches Paket.[2]"
+          ],
+          [
+            "h",
+            "Was tatsächlich geschah"
+          ],
+          [
+            "p",
+            "Am 14. August 2024 setzte das Verfassungsgericht Srettha ab; seine Nachfolgerin Paetongtarn Shinawatra hielt an dem Programm fest.[3]"
+          ],
+          [
+            "p",
+            "Phase eins begann am 25. September 2024: rund 14,55 Millionen Inhaber von Sozialkarten und Menschen mit Behinderung, insgesamt rund 145 Milliarden Baht. Gezahlt wurde aber nicht über die Digital-Wallet, sondern bar auf Bankkonten; die Regierung erklärte, das Wallet-System werde noch aufgebaut und spätere Phasen würden es nutzen.[4]"
+          ],
+          [
+            "p",
+            "Phase zwei folgte am 27. Januar 2025: je 10.000 Baht für rund 3 Millionen Menschen ab 60, überwiesen über PromptPay, den an die Personalausweisnummer gekoppelten Zahlungsdienst. Wieder Bargeld.[5]"
+          ],
+          [
+            "p",
+            "Phase drei sollte endlich die Wallet nutzen: 10.000 Baht für rund 2,7 Millionen junge Menschen von 16 bis 20, Budget 27 Milliarden Baht.[6] Am 16. Mai 2025 hieß es, Finanzminister Pichai Chunhavajira habe sie gestrichen, und The Nation berichtete, dass sowohl die Planungsbehörde NESDC als auch die Bank of Thailand gegen die dritte Phase gewesen seien.[6] Nach einer Sitzung am 19. Mai formulierte er es anders: „Es ist keine Absage. Wenn sich die Wirtschaftslage verbessert, sind wir bereit weiterzumachen.“ Die 157 Milliarden Baht für die Auszahlungen sollten stattdessen in Wassermanagement, Verkehr, Tourismus, Hilfe für Exporteure und KMU sowie Arbeitsplätze fließen. US-Zölle hatten die Weltwirtschaft eingetrübt, und die NESDC rechnete mit nur 1,8 % Wachstum.[7]"
+          ],
+          [
+            "p",
+            "Ende August 2025 wurde auch Paetongtarn vom Verfassungsgericht abgesetzt.[3] Die Vorstellung, die 10.000 Baht kämen bald, verschwand nicht. Im November 2025 stufte Thai PBS Verify TikTok-Clips, die eine Auszahlung zum Jahresende versprachen, als falsch ein; das Finanzministerium erklärte, es gebe weder eine Ankündigung noch offizielle Details zu einer solchen Auszahlung.[8] Stand November 2026 fanden wir keine Ankündigung, dass Wallet-Zahlungen wieder aufgenommen wurden."
+          ],
+          [
+            "o",
+            "Soweit wir es prüfen konnten, wurde also keine Runde der 10.000 Baht über die Wallet ausgezahlt. Tatsächlich kam einmaliges Bargeld bei Sozialkarteninhabern, Menschen mit Behinderung und Älteren an. Das ist nicht wenig: Rund 17,5 Millionen Menschen erhielten Geld. Ein Grundeinkommen war es aber nicht."
+          ],
+          [
+            "h",
+            "Die fünf Kriterien des Grundeinkommens"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitspflicht“, und nennt fünf Merkmale: regelmäßig (in festen Abständen, etwa monatlich, nicht als einmalige Zahlung), Geld (in einem Zahlungsmittel, über dessen Verwendung die Empfänger selbst entscheiden), individuell (an jede Person, nicht an Haushalte), universell (an alle) und bedingungslos (ohne Bedürftigkeitsprüfung und ohne Pflicht, zu arbeiten oder Arbeitsbereitschaft zu zeigen).[9]"
+          ],
+          [
+            "p",
+            "Prüfen wir Thailands 10.000 Baht Punkt für Punkt."
+          ],
+          [
+            "p",
+            "Regelmäßig? Nein. Jede Runde zahlte jeder Person einmal, ohne Versprechen auf eine weitere."
+          ],
+          [
+            "p",
+            "Geld? Nicht die Wallet, die das Herzstück des Plans war. Geld, das nur in einer Gegend, bis zu einer Frist und für zugelassene Waren ausgegeben werden kann, lässt die Empfänger nicht selbst „entscheiden, wofür sie es ausgeben“. Die beiden Runden, die tatsächlich bar ankamen, erfüllten dieses Kriterium."
+          ],
+          [
+            "p",
+            "Individuell? Ja. Gezahlt wurde Person für Person."
+          ],
+          [
+            "p",
+            "Universell? Nein. Schon auf dem Papier galt es nur ab 16 Jahren und unter Einkommens- und Spargrenzen; in der Praxis bekamen es nur Sozialkarteninhaber, Menschen mit Behinderung und Menschen ab 60."
+          ],
+          [
+            "p",
+            "Bedingungslos? Nein. Arbeiten musste niemand, aber Einkommen und Ersparnisse wurden geprüft."
+          ],
+          [
+            "o",
+            "Von fünf Kriterien war nur „individuell“ klar erfüllt, „Geld“ nur bei den zwei tatsächlich gezahlten Runden. Das war eine einmalige Zahlung an Menschen mit wenig Einkommen und an die Konjunktur. Solche Zahlungen sind überall gängige Politik, und wenn wir sie beurteilen, dann als solche."
+          ],
+          [
+            "h",
+            "Im Vergleich mit Japans 100.000 Yen für alle"
+          ],
+          [
+            "p",
+            "Japan hat ein nahes Gegenstück: die Sonderzahlung von 2020 (tokubetsu teigaku kyūfukin). Wer am 27. April 2020 im Melderegister (Basic Resident Register) eingetragen war, hatte Anspruch auf 100.000 Yen. Das Programm war mit rund 12,88 Billionen Yen veranschlagt, bis zum 31. März 2021 waren rund 12,67 Billionen ausgezahlt.[10]"
+          ],
+          [
+            "p",
+            "Gemessen an den fünf Kriterien kamen die 100.000 Yen dem Universellen nahe, hatten keine Bedürftigkeitsprüfung und waren frei verwendbares Geld. Aber sie wurden einmal gezahlt, also nicht regelmäßig. Und ein Punkt wird oft übersehen: Anspruchsberechtigt war das Haushaltsoberhaupt, und das Geld ging grundsätzlich für den ganzen Haushalt auf einmal auf das Konto des Haushaltsoberhaupts, das den Antrag stellte.[10] Streng genommen war auch „individuell“ nicht erfüllt."
+          ],
+          [
+            "o",
+            "Auch die 100.000 Yen waren kein Grundeinkommen. Aber sie kamen ihm viel näher als Thailands 10.000 Baht. Der Unterschied lag darin, wer sie bekommen konnte und wer über ihre Verwendung entschied."
+          ],
+          [
+            "h",
+            "Programme, die wirklich immer wieder zahlen"
+          ],
+          [
+            "p",
+            "Unsere Zeitleiste enthält Programme, die tatsächlich wiederholt zahlen. Die {Alaska Permanent Fund Dividend|/timeline/#tl-alaska} zahlt berechtigten Einwohnern seit 1982 jährlich eine Dividende aus dem Staatsfonds; die erste betrug 1.000 $ pro Person. {Enra auf den Marshallinseln|/timeline/#tl-marshall-islands} zahlt seit November 2025 allen im Land lebenden Staatsbürgern, Kinder eingeschlossen, rund 200 $ pro Quartal."
+          ],
+          [
+            "o",
+            "Keines von beiden reicht zum Leben, und keines erfüllt alle fünf Kriterien perfekt: Alaska zahlt an berechtigte Einwohner, Enra an Staatsbürger, die im Land leben. Doch beide haben das Gerüst: Zahlungen in festen Abständen, an fast alle, ohne Bedürftigkeitsprüfung. Genau dieses Gerüst fehlte Thailands 10.000 Baht."
+          ],
+          [
+            "h",
+            "Wenn in einer Überschrift „Grundeinkommen“ steht"
+          ],
+          [
+            "o",
+            "„Grundeinkommen“ ist ein lautes Wort in einer Überschrift. Es weckt Hoffnung und Ablehnung zugleich. Wenn Sie es lesen, machen Sie deshalb die fünf Proben. Wird es immer wieder gezahlt? Können Sie selbst entscheiden, wofür Sie es ausgeben? Erreicht es jede Person? Bekommen es alle? Ist es frei von Prüfungen und Bedingungen?"
+          ],
+          [
+            "o",
+            "Alles Grundeinkommen zu nennen, schadet Befürwortern wie Kritikern. Wenn eine einmalige Zahlung die Wirtschaft nicht wie erhofft ankurbelt, beweist das nicht, dass das Grundeinkommen gescheitert ist. Und wenn eine Zahlung wirkt, beweist das nicht, dass ein Grundeinkommen wirken wird. Selbst in thailändischen Berichten schwankten die Begriffe: Dieselbe dritte Phase war am 16. Mai „gestrichen“ und am 19. Mai „keine Absage“, sondern eine Verschiebung.[6][7]"
+          ],
+          [
+            "o",
+            "Wir machen uns nicht über Thailands Plan lustig. Rund 17,5 Millionen Menschen haben wirklich Geld bekommen. Aber wie wir es nennen, bestimmt, was wir daraus lernen können. Thailand hat kein Grundeinkommens-Experiment hinterlassen, sondern ein Protokoll dessen, wie ein großer Auszahlungsplan seine Form ändert, wenn sich Haushalt und Wirtschaft ändern. Dieses Protokoll liegt auch auf {dem Friedhof|/graveyard/#grave-thailand-digital-wallet}."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في 21 أغسطس 2024 نشر الموقع الياباني ⁦IDEAS FOR GOOD⁩ مقالًا بعنوان «دخل أساسي بالعملة الرقمية: نحو 50 مليون شخص في تايلاند مؤهلون». وقال إن الحكومة التايلاندية ستمنح المواطنين في سن 16 عامًا فأكثر 10,000 بات لكل منهم (نحو 42,000 ين بحسب سعر المقال) بأموال رقمية.[1] وللإنصاف، أشار المقال نفسه إلى أن سقوف الدخل والمدخرات تجعل البرنامج مختلفًا عن التعريف المعتاد للدخل الأساسي. ومع ذلك، بقيت عبارة «دخل أساسي» في العنوان."
+          ],
+          [
+            "p",
+            "مضى أكثر من عامين. فماذا حدث لتلك الـ10,000 بات؟ نقارن ما وُعد به بما حدث فعلًا، ثم نختبره بتعريف الدخل الأساسي."
+          ],
+          [
+            "h",
+            "ما الذي وُعد به"
+          ],
+          [
+            "p",
+            "في أبريل 2024 أقرّت حكومة رئيس الوزراء سريثا تافيسين الخطة، ووافق عليها مجلس الوزراء مبدئيًا في 23 أبريل. وشملت المواطنين التايلانديين في سن 16 عامًا فأكثر ممن يقل دخلهم السنوي عن 840,000 بات وودائعهم المصرفية عن 500,000 بات. وتوقعت الحكومة نحو 50 مليون مؤهل، واستقرت الميزانية على 450 مليار بات.[3] كان المال سيُودَع في محفظة رقمية داخل تطبيق حكومي، ولا يُنفق إلا في المتاجر الصغيرة المسجلة في منطقة سكن المستفيد، خلال ستة أشهر، ولا يجوز إنفاقه على الكحول أو السجائر أو الوقود أو المشتريات عبر الإنترنت.[2][3] وكانت الفكرة نشر المال بالتساوي في الاقتصاد كله، وتوقعت وزارة المالية أن يضيف ما بين 1.2 و1.8 نقطة مئوية إلى نمو الناتج المحلي الإجمالي.[2]"
+          ],
+          [
+            "p",
+            "كانت هناك معارضة منذ البداية. فقد أبدى بنك تايلاند قلقه من مخاطر التحفيز، ورأى البنك المركزي واقتصاديون وحزب المعارضة الرئيسي أن خطة التمويل الأصلية قد تخالف عدة قوانين وأنه لا أساس لتبرير تحفيز كهذا.[2]"
+          ],
+          [
+            "h",
+            "ما الذي حدث فعلًا"
+          ],
+          [
+            "p",
+            "في 14 أغسطس 2024 عزلت المحكمة الدستورية سريثا، وأبقت خليفته بايتونغتارن شيناواترا على البرنامج.[3]"
+          ],
+          [
+            "p",
+            "بدأت المرحلة الأولى في 25 سبتمبر 2024: نحو 14.55 مليون من حاملي بطاقات الرعاية الاجتماعية وذوي الإعاقة، بنحو 145 مليار بات إجمالًا. لكنها لم تُدفع عبر المحفظة الرقمية، بل نقدًا في الحسابات المصرفية؛ وقالت الحكومة إن نظام المحفظة لا يزال قيد الإعداد وإن المراحل التالية ستستخدمه.[4]"
+          ],
+          [
+            "p",
+            "وجاءت المرحلة الثانية في 27 يناير 2025: 10,000 بات لكل واحد من نحو 3 ملايين شخص في سن 60 فأكثر، حُوّلت عبر ⁦PromptPay⁩، خدمة الدفع المرتبطة برقم الهوية الوطنية. ومرة أخرى، نقدًا.[5]"
+          ],
+          [
+            "p",
+            "كان من المقرر أن تستخدم المرحلة الثالثة المحفظة أخيرًا: 10,000 بات لنحو 2.7 مليون شاب بين 16 و20 عامًا، بميزانية 27 مليار بات.[6] وفي 16 مايو 2025 أُفيد بأن وزير المالية بيتشاي تشونهافاجيرا ألغاها، وذكرت صحيفة ⁦The Nation⁩ أن هيئة التخطيط ⁦NESDC⁩ وبنك تايلاند عارضا المرحلة الثالثة.[6] وبعد اجتماع في 19 مايو أعاد صياغة الأمر: «ليس إلغاءً. إذا تحسن الوضع الاقتصادي فنحن مستعدون للمضي قدمًا». أما الـ157 مليار بات المخصصة للصرف فستذهب إلى إدارة المياه والنقل والسياحة ودعم المصدّرين والشركات الصغيرة والمتوسطة والتوظيف. كانت الرسوم الجمركية الأمريكية قد أظلمت آفاق الاقتصاد العالمي، وتوقعت ⁦NESDC⁩ نموًا لا يتجاوز 1.8%.[7]"
+          ],
+          [
+            "p",
+            "وفي أواخر أغسطس 2025 عزلت المحكمة الدستورية بايتونغتارن أيضًا.[3] لكن فكرة أن الـ10,000 بات على وشك الوصول لم تختفِ. ففي نوفمبر 2025 صنّفت ⁦Thai PBS Verify⁩ مقاطع على ⁦TikTok⁩ تزعم صرف المبلغ في نهاية العام بأنها كاذبة، وقالت وزارة المالية إنه لا يوجد أي إعلان سياسي أو تفاصيل تشغيلية رسمية لمثل هذا الصرف.[8] وحتى نوفمبر 2026 لم نجد أي إعلان عن استئناف الصرف عبر المحفظة."
+          ],
+          [
+            "o",
+            "أي إنه، بقدر ما استطعنا التحقق، لم تُصرف أي جولة من الـ10,000 بات عبر المحفظة. ما وصل فعلًا كان نقدًا لمرة واحدة لحاملي بطاقات الرعاية وذوي الإعاقة وكبار السن. وهذا ليس قليلًا: نحو 17.5 مليون شخص حصلوا على المال. لكنه لم يكن دخلًا أساسيًا."
+          ],
+          [
+            "h",
+            "المعايير الخمسة للدخل الأساسي"
+          ],
+          [
+            "p",
+            "تعرّف الشبكة العالمية للدخل الأساسي (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُسلَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو شرط للعمل»، وتذكر خمس سمات: دوري (يُدفع على فترات منتظمة، شهريًا مثلًا، لا منحةً لمرة واحدة)، ونقدي (بوسيلة تتيح للمستفيد أن يقرر بنفسه فيمَ ينفقه)، وفردي (لكل شخص، لا للأسر)، وشامل (للجميع)، وغير مشروط (بلا اختبار للموارد ولا شرط للعمل أو لإبداء الاستعداد له).[9]"
+          ],
+          [
+            "p",
+            "لنمرّر الـ10,000 بات التايلاندية على هذه المعايير واحدًا واحدًا."
+          ],
+          [
+            "p",
+            "دوري؟ لا. كل جولة دفعت لكل شخص مرة واحدة، دون وعد بأخرى."
+          ],
+          [
+            "p",
+            "نقدي؟ ليس المحفظة التي كانت جوهر الخطة. فالمال الذي لا يُنفق إلا في منطقة واحدة وقبل موعد محدد وعلى سلع معتمدة لا يتيح للمستفيد أن «يقرر فيمَ ينفقه». أما الجولتان اللتان وصلتا نقدًا فقد استوفتا هذا المعيار."
+          ],
+          [
+            "p",
+            "فردي؟ نعم. دُفع لكل شخص على حدة."
+          ],
+          [
+            "p",
+            "شامل؟ لا. حتى على الورق كان لمن هم في سن 16 فأكثر ضمن سقوف الدخل والمدخرات، وفي الواقع لم يحصل عليه إلا حاملو بطاقات الرعاية وذوو الإعاقة ومن هم في سن 60 فأكثر."
+          ],
+          [
+            "p",
+            "غير مشروط؟ لا. لم يُطلب من أحد أن يعمل، لكن كان هناك اختبار للدخل والمدخرات."
+          ],
+          [
+            "o",
+            "من بين خمسة معايير، لم يُستوفَ بوضوح إلا «فردي»، و«نقدي» في الجولتين المدفوعتين فقط. كانت هذه منحة لمرة واحدة موجهة إلى ذوي الدخل المحدود وإلى الاقتصاد. ومثل هذه المنح سياسة شائعة في كل مكان، وإن أردنا تقييمها فلنقيّمها بوصفها منحة."
+          ],
+          [
+            "h",
+            "مقارنةً بمبلغ 100,000 ين للجميع في اليابان"
+          ],
+          [
+            "p",
+            "لدى اليابان تجربة قريبة: الدفعة النقدية الخاصة لعام 2020 (⁦tokubetsu teigaku kyūfukin⁩). كان لكل شخص مسجل في سجل السكان الأساسي في 27 أبريل 2020 الحق في 100,000 ين. وخُصص للبرنامج نحو 12.88 تريليون ين، وصُرف منها نحو 12.67 تريليون ين حتى 31 مارس 2021.[10]"
+          ],
+          [
+            "p",
+            "وفق المعايير الخمسة، اقترب مبلغ الـ100,000 ين من الشمول، ولم يكن فيه اختبار للموارد، وكان نقدًا يُنفق بحرية. لكنه دُفع مرة واحدة، فلم يكن دوريًا. وهناك نقطة كثيرًا ما تُغفل: صاحب الحق في الاستلام كان رب الأسرة، وكان المال يُحوَّل من حيث المبدأ دفعة واحدة عن الأسرة كلها إلى حساب رب الأسرة الذي قدّم الطلب.[10] وبالمعنى الدقيق، لم يستوفِ معيار «فردي» أيضًا."
+          ],
+          [
+            "o",
+            "لم يكن الـ100,000 ين دخلًا أساسيًا هو الآخر. لكنه كان أقرب بكثير من الـ10,000 بات التايلاندية. والفرق في من كان يحق له الحصول عليه، ومن يقرر كيف يُنفق."
+          ],
+          [
+            "h",
+            "برامج تدفع حقًا مرة بعد مرة"
+          ],
+          [
+            "p",
+            "يضم خطنا الزمني برامج تدفع فعلًا بشكل متكرر. فـ{عائد صندوق ألاسكا الدائم|/timeline/#tl-alaska} يدفع منذ 1982 عائدًا سنويًا من صندوق الولاية للمقيمين المستحقين، وكان الأول ⁦$1,000⁩ للفرد. أما {برنامج ⁦Enra⁩ في جزر مارشال|/timeline/#tl-marshall-islands} فيدفع منذ نوفمبر 2025 نحو ⁦$200⁩ كل ربع سنة لكل مواطن يعيش في البلاد، بمن فيهم الأطفال."
+          ],
+          [
+            "o",
+            "لا يكفي أيٌّ منهما للعيش، ولا يستوفي أيٌّ منهما المعايير الخمسة تمامًا: ألاسكا تدفع للمقيمين المستحقين، و⁦Enra⁩ للمواطنين المقيمين في البلاد. ومع ذلك فلكليهما الهيكل: دفعات على فترات منتظمة، لكل الناس تقريبًا، دون اختبار للموارد. وهذا الهيكل بالضبط هو ما افتقرت إليه الـ10,000 بات التايلاندية."
+          ],
+          [
+            "h",
+            "حين يقول عنوانٌ «دخل أساسي»"
+          ],
+          [
+            "o",
+            "«الدخل الأساسي» عبارة صاخبة في العناوين، تثير الأمل والرفض معًا. لذلك حين تراها، أجرِ الاختبارات الخمسة: هل يُدفع مرة بعد مرة؟ هل تقرر بنفسك فيمَ تنفقه؟ هل يصل إلى كل شخص؟ هل يحصل عليه الجميع؟ هل هو خالٍ من الاختبارات والشروط؟"
+          ],
+          [
+            "o",
+            "تسمية كل شيء دخلًا أساسيًا تضر المؤيدين والمنتقدين معًا. فإذا لم تنعش منحةٌ لمرة واحدة الاقتصادَ كما كان مأمولًا، فهذا ليس دليلًا على فشل الدخل الأساسي. وإذا نجحت منحة، فهذا ليس دليلًا على أن الدخل الأساسي سينجح. حتى التغطية التايلاندية تذبذبت في الكلمات: فالمرحلة الثالثة نفسها كانت «مُلغاة» في 16 مايو، ثم «ليست إلغاءً» بل تأجيلًا في 19 مايو.[6][7]"
+          ],
+          [
+            "o",
+            "لا نسخر من خطة تايلاند. فنحو 17.5 مليون شخص حصلوا فعلًا على نقود. لكن ما نسميه به يغيّر ما يمكن أن نتعلمه منه. ما تركته تايلاند ليس تجربة دخل أساسي، بل سجلٌّ لكيف تتغير خطة منح كبيرة مع تغير الميزانية والاقتصاد. وقد وضعنا هذا السجل أيضًا في {المقبرة|/graveyard/#grave-thailand-digital-wallet}."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "IDEAS FOR GOOD — 「デジタル通貨でベーシックインカム。タイの約5,000万人が対象に」 (21 Aug 2024)",
+          "url": "https://ideasforgood.jp/2024/08/21/thailand-basic-income/"
+        },
+        {
+          "n": 2,
+          "label": "TIME — “Thailand’s $14 Billion Handout: Everything to Know” (11 Apr 2024)",
+          "url": "https://time.com/6965705/thailand-srettha-digital-wallet-cash-handout-srettha-economy/"
+        },
+        {
+          "n": 3,
+          "label": "Wikipedia — Digital wallet scheme (accessed Nov 2026)",
+          "url": "https://en.wikipedia.org/wiki/Digital_wallet_scheme"
+        },
+        {
+          "n": 4,
+          "label": "Asia News Network (The Nation) — “Thai PM Paetongtarn launches first phase of 10,000-baht disbursement” (26 Sep 2024)",
+          "url": "https://asianews.network/thai-pm-paetongtarn-launches-first-phase-of-10000-baht-disbursement/"
+        },
+        {
+          "n": 5,
+          "label": "The Thaiger — “Three million Thai elderly to receive 10,000 baht cash handout” (21 Jan 2025)",
+          "url": "https://thethaiger.com/news/business/three-million-thai-elderly-to-receive-10000-baht-cash-handout"
+        },
+        {
+          "n": 6,
+          "label": "The Nation — “Thai govt scraps 10,000-baht handout, redirects budget to new economic stimulus plan” (16 May 2025)",
+          "url": "https://www.nationthailand.com/news/policy/40050047"
+        },
+        {
+          "n": 7,
+          "label": "The Nation — “Thai Government Pulls Back on 10,000 Baht Digital Handout Scheme Amid Economic Headwinds” (19 May 2025)",
+          "url": "https://www.nationthailand.com/news/policy/40050186"
+        },
+        {
+          "n": 8,
+          "label": "Thai PBS Verify — “Rumor Alert! The 10,000-baht digital wallet giveaway is actually a fake-news page created to lure people into clicking on gambling websites” (12 Nov 2025)",
+          "url": "https://www.thaipbs.or.th/verify/en/content/7051"
+        },
+        {
+          "n": 9,
+          "label": "Basic Income Earth Network (BIEN) — About Basic Income",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 10,
+          "label": "総務省 (Ministry of Internal Affairs and Communications) — 特別定額給付金（新型コロナウイルス感染症緊急経済対策関連）",
+          "url": "https://www.soumu.go.jp/menu_seisaku/gyoumukanri_sonota/covid-19/kyufukin.html"
+        }
+      ]
+    },
     {
       "id": "moltbook-basic-income",
       "date": "2026-11-02",
