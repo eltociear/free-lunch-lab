@@ -2866,6 +2866,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-02",
+      "ja": "ベーシックインカム実験の年表に、ロサンゼルスの2つの事業を追加：市の BIG:LEAP（3,202世帯に月1,000ドルを1年）と、郡の TAYportunity（18〜24歳の300人に月1,000ドルを3年）",
+      "en": "Added two Los Angeles programs to the basic income timeline: the city’s BIG:LEAP ($1,000 a month for a year to 3,202 households) and the county’s TAYportunity ($1,000 a month for three years to 300 people aged 18–24)",
+      "zh": "在基本收入实验年表中新增洛杉矶的两个项目：市级的 BIG:LEAP（向 3,202 个家庭每月发放 1,000 美元，为期一年）和县级的 TAYportunity（向 300 名 18 至 24 岁青年每月发放 1,000 美元，为期三年）",
+      "hi": "बेसिक इनकम प्रयोगों की समयरेखा में लॉस एंजेलिस के दो कार्यक्रम जोड़े: शहर का BIG:LEAP (3,202 परिवारों को एक साल तक हर महीने $1,000) और काउंटी का TAYportunity (18–24 साल के 300 लोगों को तीन साल तक हर महीने $1,000)",
+      "es": "Añadidos a la cronología de la renta básica dos programas de Los Ángeles: BIG:LEAP de la ciudad (1.000 $ al mes durante un año para 3.202 hogares) y TAYportunity del condado (1.000 $ al mes durante tres años para 300 jóvenes de 18 a 24 años)",
+      "de": "Zwei Programme aus Los Angeles zur Zeitleiste hinzugefügt: BIG:LEAP der Stadt (1.000 $ im Monat für ein Jahr an 3.202 Haushalte) und TAYportunity des Countys (1.000 $ im Monat für drei Jahre an 300 Menschen zwischen 18 und 24)",
+      "ar": "أضفنا إلى الخط الزمني للدخل الأساسي برنامجين من لوس أنجلوس: ⁦BIG:LEAP⁩ التابع للمدينة (⁦$1,000⁩ شهريًا لمدة عام لـ3,202 أسرة) و⁦TAYportunity⁩ التابع للمقاطعة (⁦$1,000⁩ شهريًا لمدة ثلاث سنوات لـ300 شخص بين 18 و24 عامًا)"
+    },
+    {
+      "date": "2026-11-02",
       "ja": "エッセイ「「ベーシックインカム」と呼ばれたもの：タイの1万バーツはどうなったか」を公開",
       "en": "Published the essay “The handout called ‘basic income’: what became of Thailand’s 10,000 baht”",
       "zh": "发布随笔《被称为“基本收入”的东西：泰国的 1 万泰铢后来怎样了》",
@@ -7961,6 +7971,92 @@ module.exports = {
       "source": "https://www.diw.de/de/diw_01.c.945271.de/pilotprojekt_grundeinkommen__feldstudie_entkraeftet_mythos_von_der_sozialen_haengematte.html",
       "svc": "meingrundeinkommen",
       "org": "mgk"
+    },
+    {
+      "id": "la-bigleap",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "BIG:LEAP",
+      "place": {
+        "ja": "アメリカ・カリフォルニア州ロサンゼルス市",
+        "en": "City of Los Angeles, California, USA",
+        "zh": "美国加利福尼亚州洛杉矶市",
+        "hi": "लॉस एंजेलिस शहर, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Ciudad de Los Ángeles, California (EE. UU.)",
+        "de": "Stadt Los Angeles, Kalifornien (USA)",
+        "ar": "مدينة لوس أنجلوس، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "ja": "ロサンゼルス市（家族支援局 CIFD）。財源は市の一般会計（警察予算から回した分を含む）と市議会の各選挙区の資金",
+        "en": "City of Los Angeles (Community Investment for Families Department), paid from the city’s general fund (partly money moved from the police budget) and council district funds",
+        "zh": "洛杉矶市（家庭社区投资局 CIFD），资金来自市一般基金（部分从警察预算调拨）和各市议会选区的资金",
+        "hi": "लॉस एंजेलिस शहर (Community Investment for Families Department); पैसा शहर के सामान्य कोष (कुछ हिस्सा पुलिस बजट से हटाया गया) और काउंसिल डिस्ट्रिक्ट के फ़ंड से",
+        "es": "Ciudad de Los Ángeles (Departamento de Inversión Comunitaria para Familias, CIFD), con dinero del fondo general municipal (en parte retirado del presupuesto policial) y de los distritos del concejo",
+        "de": "Stadt Los Angeles (Community Investment for Families Department), bezahlt aus dem städtischen Haushalt (teils aus dem Polizeibudget umgeschichtet) und Mitteln der Ratsbezirke",
+        "ar": "مدينة لوس أنجلوس (إدارة الاستثمار المجتمعي للأسر ⁦CIFD⁩)، بتمويل من الصندوق العام للمدينة (جزء منه نُقل من ميزانية الشرطة) وأموال دوائر مجلس المدينة"
+      },
+      "paid": {
+        "ja": "貧困線を下回り、子どもがいるか妊娠中でコロナの影響を受けた3,202世帯に、条件なしで月1,000ドルを12か月（支給は2022年1月〜2023年3月）。5万人超の応募から無作為に割り当て、4,992人を比較対照群とした",
+        "en": "$1,000 a month with no conditions for 12 months (payments January 2022–March 2023) to 3,202 households below the poverty line with a child or a pregnancy and hit by COVID-19; over 50,000 applied, and 4,992 others were randomly assigned to a control group",
+        "zh": "向 3,202 个低于贫困线、有孩子或正在怀孕且受新冠影响的家庭无条件每月发放 1,000 美元，为期 12 个月（2022 年 1 月至 2023 年 3 月发放）；申请者超过 5 万人，另有 4,992 人被随机分入对照组",
+        "hi": "ग़रीबी रेखा से नीचे, बच्चे वाले या गर्भवती और कोविड से प्रभावित 3,202 परिवारों को 12 महीने (भुगतान जनवरी 2022–मार्च 2023) तक बिना शर्त हर महीने $1,000; 50,000 से ज़्यादा ने आवेदन किया, और 4,992 अन्य को बिना पैसे वाले तुलना समूह में रैंडम रूप से रखा गया",
+        "es": "1.000 $ al mes sin condiciones durante 12 meses (pagos de enero de 2022 a marzo de 2023) para 3.202 hogares bajo el umbral de pobreza, con hijos o embarazo y afectados por la COVID-19; hubo más de 50.000 solicitudes y otros 4.992 fueron asignados al azar a un grupo de control",
+        "de": "1.000 $ im Monat ohne Bedingungen für 12 Monate (Zahlungen Januar 2022 bis März 2023) an 3.202 Haushalte unter der Armutsgrenze, mit Kind oder Schwangerschaft und von Corona betroffen; über 50.000 bewarben sich, weitere 4.992 kamen per Zufall in eine Kontrollgruppe",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 12 شهرًا (الدفعات من يناير 2022 إلى مارس 2023) لـ3,202 أسرة تحت خط الفقر لديها طفل أو حمل وتضررت من كوفيد-19؛ تقدّم أكثر من 50,000 شخص، ووُزّع 4,992 آخرون عشوائيًا على مجموعة ضابطة"
+      },
+      "result": {
+        "ja": "ペンシルベニア大学CGIRの報告（2024年7月）では、対照群より400ドルの急な出費を払える人が多く（6か月時点16%対6%）、食料不安も減った。500ドル超の貯蓄は当初2倍（5.3%対2.4%）だが18か月で差が縮小（4.6%対3.2%）。パートナー間暴力の減少が有意なのは18か月時点のみで、その時点のストレスはやや高かった",
+        "en": "Penn’s Center for Guaranteed Income Research (July 2024), vs the control group: more could cover a $400 emergency (16% vs 6% at 6 months) and food insecurity fell. Savings over $500 doubled at first (5.3% vs 2.4%) but the gap narrowed by 18 months (4.6% vs 3.2%). Partner violence fell, significantly only at 18 months, when stress was slightly higher",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2024 年 7 月）与对照组比较：能应付 400 美元急用的人更多（6 个月时 16% 对 6%），粮食不安全减少。储蓄超过 500 美元的比例起初翻倍（5.3% 对 2.4%），到 18 个月差距缩小（4.6% 对 3.2%）。伴侣暴力减少，但仅在 18 个月时显著，而此时压力略高于对照组",
+        "hi": "पेन के Center for Guaranteed Income Research (जुलाई 2024) ने तुलना समूह से मिलाया: $400 के अचानक ख़र्च को झेल पाने वाले ज़्यादा थे (6 महीने पर 16% बनाम 6%) और खाने की असुरक्षा घटी। $500 से ज़्यादा बचत पहले दोगुनी रही (5.3% बनाम 2.4%), पर 18 महीने तक फ़ासला घटा (4.6% बनाम 3.2%)। साथी की हिंसा घटी, पर सांख्यिकीय रूप से सिर्फ़ 18 महीने पर, जब तनाव थोड़ा ज़्यादा था",
+        "es": "El Center for Guaranteed Income Research de Penn (julio de 2024), frente al grupo de control: más hogares podían cubrir un imprevisto de 400 $ (16 % frente a 6 % a los 6 meses) y bajó la inseguridad alimentaria. El ahorro de más de 500 $ se duplicó al principio (5,3 % frente a 2,4 %), pero la brecha se redujo a los 18 meses (4,6 % frente a 3,2 %). La violencia de pareja bajó, de forma significativa solo a los 18 meses, cuando el estrés era algo mayor",
+        "de": "Das Center for Guaranteed Income Research der Penn (Juli 2024) im Vergleich zur Kontrollgruppe: Mehr Haushalte konnten eine Notausgabe von 400 $ decken (16 % zu 6 % nach 6 Monaten), Ernährungsunsicherheit sank. Ersparnisse über 500 $ verdoppelten sich anfangs (5,3 % zu 2,4 %), der Abstand schrumpfte bis Monat 18 (4,6 % zu 3,2 %). Partnergewalt sank, signifikant nur nach 18 Monaten, als der Stress etwas höher lag",
+        "ar": "قارن ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (يوليو 2024) بالمجموعة الضابطة: قدر عدد أكبر على تغطية طارئ بقيمة ⁦$400⁩ (16% مقابل 6% بعد 6 أشهر) وتراجع انعدام الأمن الغذائي. تضاعفت المدخرات فوق ⁦$500⁩ في البداية (5.3% مقابل 2.4%) ثم ضاق الفارق بعد 18 شهرًا (4.6% مقابل 3.2%). وانخفض عنف الشريك، لكن بدلالة إحصائية عند 18 شهرًا فقط، حين كان التوتر أعلى قليلًا"
+      },
+      "source": "https://sp2.upenn.edu/report-landmark-guaranteed-income-program-in-city-of-los-angeles-produces-overwhelmingly-positive-results/"
+    },
+    {
+      "id": "la-tayportunity",
+      "years": "2022–2025",
+      "type": "gov",
+      "name": "TAYportunity Guaranteed Income",
+      "place": {
+        "ja": "アメリカ・カリフォルニア州ロサンゼルス郡",
+        "en": "Los Angeles County, California, USA",
+        "zh": "美国加利福尼亚州洛杉矶县",
+        "hi": "लॉस एंजेलिस काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Los Ángeles, California (EE. UU.)",
+        "de": "Los Angeles County, Kalifornien (USA)",
+        "ar": "مقاطعة لوس أنجلوس، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "ja": "ロサンゼルス郡の公共社会サービス局（DPSS）。市ではなく郡の事業",
+        "en": "Los Angeles County Department of Public Social Services (DPSS), a county program, not the city’s",
+        "zh": "洛杉矶县公共社会服务局（DPSS），属于县而非市的项目",
+        "hi": "लॉस एंजेलिस काउंटी का Department of Public Social Services (DPSS); यह शहर का नहीं, काउंटी का कार्यक्रम है",
+        "es": "Departamento de Servicios Sociales Públicos (DPSS) del condado de Los Ángeles; es un programa del condado, no de la ciudad",
+        "de": "Sozialbehörde (DPSS) des Los Angeles County, ein Programm des Countys, nicht der Stadt",
+        "ar": "إدارة الخدمات الاجتماعية العامة (⁦DPSS⁩) في مقاطعة لوس أنجلوس، وهو برنامج للمقاطعة لا للمدينة"
+      },
+      "paid": {
+        "ja": "郡の生活扶助（General Relief）を受ける18〜24歳から抽選で選んだ300人に、条件なしで月1,000ドルを36か月（2022年8月から）。有給の職業訓練、見習い、起業支援にも任意で参加できる。650人を比較対照群とした",
+        "en": "$1,000 a month with no conditions for 36 months from August 2022 to 300 young adults aged 18–24 on the county’s General Relief aid, picked by lottery, with optional paid job training, apprenticeships or business support; 650 others formed the control group",
+        "zh": "从领取县级一般救济（General Relief）的 18 至 24 岁青年中抽签选出 300 人，自 2022 年 8 月起无条件每月发放 1,000 美元，为期 36 个月，并可自愿参加带薪职业培训、学徒或创业支持；另有 650 人为对照组",
+        "hi": "काउंटी की General Relief सहायता पाने वाले 18–24 साल के 300 युवाओं को, लॉटरी से चुनकर, अगस्त 2022 से 36 महीने तक बिना शर्त हर महीने $1,000; साथ में वैकल्पिक सवेतन जॉब ट्रेनिंग, अप्रेंटिसशिप या कारोबार सहायता; 650 अन्य तुलना समूह में रहे",
+        "es": "1.000 $ al mes sin condiciones durante 36 meses desde agosto de 2022 para 300 jóvenes de 18 a 24 años con la ayuda General Relief del condado, elegidos por sorteo, con formación laboral remunerada, aprendizajes o apoyo para emprender opcionales; otros 650 formaron el grupo de control",
+        "de": "1.000 $ im Monat ohne Bedingungen für 36 Monate ab August 2022 an 300 per Los gezogene 18- bis 24-Jährige mit der County-Sozialhilfe General Relief, dazu freiwillig bezahlte Jobtrainings, Ausbildungsplätze oder Gründungshilfe; 650 weitere bildeten die Kontrollgruppe",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 36 شهرًا ابتداءً من أغسطس 2022 لـ300 شاب بين 18 و24 عامًا يتلقون إعانة ⁦General Relief⁩ في المقاطعة، اختيروا بالقرعة، مع تدريب مهني مدفوع أو تلمذة مهنية أو دعم لبدء مشروع بشكل اختياري؛ وشكّل 650 آخرون المجموعة الضابطة"
+      },
+      "result": {
+        "ja": "バージニア大学の経済学者の論文（2025年11月、査読前）は、対照群566人と比べ就業率が7ポイント（対照群39%）、月収が約94ドル（30%）上がり、重罪での逮捕は4割、出産は半分に減ったと報告。就業の伸びの多くは職業訓練に参加した人によるもので、現金だけでは主に支出と住まいの安定が改善した",
+        "en": "A University of Virginia economist’s working paper (November 2025, not yet peer-reviewed), vs 566 controls: employment up 7 points (control 39%), earnings up about $94 a month (30%), felony arrests down 40% and births down by half. Most of the job gains came via the training; cash alone mainly raised spending and housing security",
+        "zh": "弗吉尼亚大学一位经济学者的工作论文（2025 年 11 月，尚未经同行评审）与 566 名对照组成员比较：就业率提高 7 个百分点（对照组 39%），月收入增加约 94 美元（30%），重罪逮捕减少 40%，生育减少一半。就业增长大多来自参加培训的人；仅靠现金主要改善了支出和住房稳定",
+        "hi": "यूनिवर्सिटी ऑफ़ वर्जीनिया के एक अर्थशास्त्री के वर्किंग पेपर (नवंबर 2025, अभी पीयर-रिव्यू नहीं) ने 566 तुलना वालों से मिलाया: रोज़गार 7 अंक बढ़ा (तुलना समूह 39%), मासिक कमाई लगभग $94 (30%) बढ़ी, गंभीर अपराध में गिरफ़्तारी 40% और जन्म आधे घटे। रोज़गार की ज़्यादातर बढ़त ट्रेनिंग से आई; सिर्फ़ नकद से मुख्य रूप से ख़र्च और आवास की स्थिरता सुधरी",
+        "es": "Un documento de trabajo de una economista de la Universidad de Virginia (noviembre de 2025, aún sin revisión por pares), frente a 566 controles: empleo +7 puntos (control 39 %), ingresos unos 94 $ más al mes (30 %), detenciones por delitos graves −40 % y nacimientos a la mitad. La mayor parte del aumento del empleo vino de la formación; el dinero solo mejoró sobre todo el gasto y la estabilidad de vivienda",
+        "de": "Ein Arbeitspapier einer Ökonomin der University of Virginia (November 2025, noch nicht begutachtet) im Vergleich zu 566 Kontrollpersonen: Beschäftigung +7 Punkte (Kontrolle 39 %), Einkommen rund 94 $ mehr im Monat (30 %), Festnahmen wegen Verbrechen −40 %, Geburten halbiert. Der Großteil des Jobzuwachses kam über das Training; Geld allein hob vor allem Ausgaben und Wohnsicherheit",
+        "ar": "ورقة عمل لاقتصادية في جامعة فيرجينيا (نوفمبر 2025، لم تُحكَّم بعد) قارنت بـ566 من المجموعة الضابطة: ارتفع التوظيف 7 نقاط (39% في المجموعة الضابطة)، وزاد الدخل نحو ⁦$94⁩ شهريًا (30%)، وتراجعت الاعتقالات بجنايات 40% والولادات إلى النصف. جاء معظم مكسب التوظيف عبر التدريب؛ أما النقد وحده فحسّن أساسًا الإنفاق واستقرار السكن"
+      },
+      "source": "https://www.marcellacartledge.com/research"
     },
     {
       "id": "cook-county",
