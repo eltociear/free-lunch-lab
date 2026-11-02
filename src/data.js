@@ -12060,7 +12060,7 @@ module.exports = {
         "ar": "هل ينبغي أن يحصل وكلاء الذكاء الاصطناعي على دخل أساسي؟"
       },
       "desc": {
-        "ja": "ギュられる時代に、AIエージェントへのベーシックインカムは成り立つのか。人間証明、コピーできるエージェント、AgentKit や Self Agent ID、Olas、AI-DAC から考えるエッセイ。",
+        "ja": "AIに仕事を奪われる（ギュられる）時代に、AIエージェントへのベーシックインカムは成り立つのか。人間証明、コピーできるエージェント、AgentKit や Self Agent ID、Olas、AI-DAC から考えるエッセイ。",
         "en": "If AI takes the work, should agents get the dividend? Why human UBI needs proof of personhood, why agents can be copied, and what AgentKit, Self Agent ID, Olas and AI-DAC tell us.",
         "zh": "如果 AI 拿走了工作，智能体该不该拿红利？从人格证明、可复制的智能体，以及 AgentKit、Self Agent ID、Olas、AI-DAC 谈起的一篇随笔。",
         "hi": "अगर AI काम ले ले, तो क्या एजेंटों को डिविडेंड मिले? व्यक्ति होने का सबूत, कॉपी हो सकने वाले एजेंट, और AgentKit, Self Agent ID, Olas व AI-DAC पर एक निबंध।",
