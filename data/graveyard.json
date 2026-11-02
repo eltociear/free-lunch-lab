@@ -6,7 +6,7 @@
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "generatedAt": "2026-06-01",
-  "count": 5,
+  "count": 6,
   "graveyard": [
     {
       "id": "me-token",
@@ -189,6 +189,52 @@
           "what": "خدمة تطبيق الاسترداد النقدي RewardMe في الفلبين",
           "ended": "انتهى الاسترداد النقدي في 10 ديسمبر 2025، وسحب MDT وتحويله في 31 ديسمبر 2025 (بعدها الاستبدال ببطاقات الهدايا فقط)",
           "why": "لا يذكر الإعلان الرسمي سببًا"
+        }
+      }
+    },
+    {
+      "id": "thailand-digital-wallet",
+      "name": "Thailand — 10,000-Baht Digital Wallet",
+      "endedOn": "2025-05-19",
+      "sourceUrl": "https://www.nationthailand.com/news/policy/40050186",
+      "sourceLabel": "The Nation (Thailand)",
+      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-thailand-digital-wallet",
+      "serviceId": null,
+      "descriptions": {
+        "en": {
+          "what": "Thailand’s plan to give 10,000 baht each to about 50 million people aged 16+ through a digital wallet that could only be spent locally; some Japanese media called it a basic income",
+          "ended": "The third round, the first meant to use the wallet (about 2.7 million people aged 16–20), was postponed indefinitely on 19 May 2025 (“not a cancellation,” said the finance minister). The two earlier rounds (Sep 2024, Jan 2025) were paid as one-off cash into bank accounts. In Nov 2025 the Finance Ministry said no new handout had been announced",
+          "why": "The 157 billion baht set aside for the handouts was moved to other measures as US tariffs clouded the economy (water, transport, tourism, help for exporters and SMEs, jobs); the NESDC planning agency and the Bank of Thailand had advised reviewing the handout"
+        },
+        "ja": {
+          "what": "タイ政府が16歳以上の約5,000万人に、地元でしか使えないデジタルウォレットで1人1万バーツを配るとした景気対策。日本のメディアでは「ベーシックインカム」とも紹介された",
+          "ended": "2025年5月19日、ウォレットで配る最初の回になるはずだった第3弾（16〜20歳の約270万人）を無期限延期（財務相は「中止ではない」）。それまでの2回（2024年9月、2025年1月）は銀行口座への1回きりの現金振込だった。2025年11月、財務省は新たな給付は発表していないと説明",
+          "why": "給付用に確保していた1,570億バーツを、米国の関税で先行きが暗くなった経済への対策（水管理、交通、観光、輸出企業・中小企業の支援、雇用など）に回した。国家経済社会開発評議会（NESDC）とタイ中央銀行も給付の見直しを勧めていた"
+        },
+        "zh": {
+          "what": "泰国政府计划通过只能在本地使用的数字钱包，向约 5,000 万名 16 岁以上国民每人发放 1 万泰铢的经济刺激方案；部分日本媒体称之为“基本收入”",
+          "ended": "2025 年 5 月 19 日，原本首次使用数字钱包发放的第三轮（约 270 万名 16–20 岁青年）被无限期推迟（财政部长称“不是取消”）。此前两轮（2024 年 9 月、2025 年 1 月）都是一次性现金打入银行账户。2025 年 11 月，财政部表示没有宣布新的发放",
+          "why": "在美国关税令经济前景转暗之际，原定用于发放的 1,570 亿泰铢被转用于其他措施（水利、交通、旅游、扶持出口企业和中小企业、就业等）；国家经济和社会发展委员会（NESDC）和泰国央行此前都建议重新审视这项发放"
+        },
+        "hi": {
+          "what": "थाईलैंड की योजना, जिसमें 16 साल से ऊपर के लगभग 5 करोड़ लोगों को सिर्फ़ स्थानीय रूप से ख़र्च हो सकने वाले डिजिटल वॉलेट से 10,000 बाट देने थे; कुछ जापानी मीडिया ने इसे बेसिक इनकम कहा",
+          "ended": "तीसरा दौर, जो पहली बार वॉलेट से दिया जाना था (16–20 साल के लगभग 27 लाख लोग), 19 मई 2025 को अनिश्चितकाल के लिए टाल दिया गया (वित्त मंत्री: “यह रद्द नहीं है”)। पहले के दो दौर (सितंबर 2024, जनवरी 2025) बैंक खातों में एक बार का नकद भुगतान थे। नवंबर 2025 में वित्त मंत्रालय ने कहा कि कोई नया भुगतान घोषित नहीं हुआ है",
+          "why": "अमेरिकी टैरिफ़ से अर्थव्यवस्था पर छाई अनिश्चितता के बीच भुगतान के लिए रखे 157 अरब बाट दूसरे उपायों (पानी, परिवहन, पर्यटन, निर्यातकों और छोटे कारोबारों की मदद, रोज़गार) में लगा दिए गए; योजना एजेंसी NESDC और बैंक ऑफ़ थाईलैंड ने भुगतान पर पुनर्विचार की सलाह दी थी"
+        },
+        "es": {
+          "what": "El plan de Tailandia de dar 10.000 bahts a unos 50 millones de personas de 16 años o más mediante una billetera digital que solo se podía gastar en su zona; algunos medios japoneses lo llamaron renta básica",
+          "ended": "La tercera ronda, la primera que iba a usar la billetera (unos 2,7 millones de jóvenes de 16 a 20 años), se aplazó sin fecha el 19 de mayo de 2025 («no es una cancelación», dijo el ministro de Finanzas). Las dos rondas anteriores (sep. 2024, ene. 2025) se pagaron como efectivo único en cuentas bancarias. En noviembre de 2025 el Ministerio de Finanzas dijo que no se había anunciado ningún pago nuevo",
+          "why": "Los 157.000 millones de bahts reservados para los pagos se destinaron a otras medidas ante el golpe de los aranceles de EE. UU. (agua, transporte, turismo, ayuda a exportadores y pymes, empleo); la agencia de planificación NESDC y el Banco de Tailandia habían aconsejado revisar el reparto"
+        },
+        "de": {
+          "what": "Thailands Plan, rund 50 Millionen Menschen ab 16 Jahren je 10.000 Baht über eine nur vor Ort nutzbare Digital-Wallet zu geben; manche japanische Medien nannten es ein Grundeinkommen",
+          "ended": "Die dritte Runde, die erste mit der Wallet (rund 2,7 Millionen Menschen von 16 bis 20), wurde am 19. Mai 2025 auf unbestimmte Zeit verschoben („keine Absage“, so der Finanzminister). Die beiden früheren Runden (Sept. 2024, Jan. 2025) wurden einmalig bar aufs Bankkonto gezahlt. Im November 2025 erklärte das Finanzministerium, es sei keine neue Auszahlung angekündigt",
+          "why": "Die 157 Milliarden Baht für die Auszahlungen flossen angesichts der US-Zölle in andere Maßnahmen (Wasser, Verkehr, Tourismus, Hilfe für Exporteure und KMU, Arbeitsplätze); die Planungsbehörde NESDC und die Bank of Thailand hatten geraten, die Auszahlung zu überprüfen"
+        },
+        "ar": {
+          "what": "خطة تايلاند لمنح نحو 50 مليون شخص في سن 16 عامًا فأكثر 10,000 بات لكل منهم عبر محفظة رقمية لا تُنفق إلا محليًا، ووصفتها بعض وسائل الإعلام اليابانية بأنها دخل أساسي",
+          "ended": "أُجّلت الجولة الثالثة، وهي أول جولة كان يُفترض أن تستخدم المحفظة (نحو 2.7 مليون شاب بين 16 و20 عامًا)، إلى أجل غير مسمى في 19 مايو 2025 («ليس إلغاءً» بحسب وزير المالية). أما الجولتان السابقتان (سبتمبر 2024 ويناير 2025) فدُفعتا نقدًا لمرة واحدة في الحسابات المصرفية. وفي نوفمبر 2025 قالت وزارة المالية إنه لم يُعلن عن أي صرف جديد",
+          "why": "حُوّلت 157 مليار بات كانت مخصصة للصرف إلى إجراءات أخرى مع تأثير الرسوم الجمركية الأمريكية على الاقتصاد (المياه والنقل والسياحة ودعم المصدّرين والشركات الصغيرة والمتوسطة والتوظيف)؛ وكانت هيئة التخطيط NESDC وبنك تايلاند قد نصحا بمراجعة الصرف"
         }
       }
     },

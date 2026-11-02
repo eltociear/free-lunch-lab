@@ -1690,6 +1690,18 @@ What's in it: Five-wave panel survey microdata (household, individual, community
 
 A record of services and programmes that once handed out money or points and have since ended. Only endings confirmed by an official announcement or a credible source are listed. Thanks for the lunches. Rest in peace.
 
+### Thailand — 10,000-Baht Digital Wallet
+
+- Ended: 2025-05-19
+- Source: The Nation (Thailand), https://www.nationthailand.com/news/policy/40050186
+- Page: https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-thailand-digital-wallet
+
+What it was: Thailand’s plan to give 10,000 baht each to about 50 million people aged 16+ through a digital wallet that could only be spent locally; some Japanese media called it a basic income
+
+Ended: The third round, the first meant to use the wallet (about 2.7 million people aged 16–20), was postponed indefinitely on 19 May 2025 (“not a cancellation,” said the finance minister). The two earlier rounds (Sep 2024, Jan 2025) were paid as one-off cash into bank accounts. In Nov 2025 the Finance Ministry said no new handout had been announced
+
+Why: The 157 billion baht set aside for the handouts was moved to other measures as US tariffs clouded the economy (water, transport, tourism, help for exporters and SMEs, jobs); the NESDC planning agency and the Bank of Thailand had advised reviewing the handout
+
 ### World — WLD Airdrop (Grants)
 
 - Ended: 2026-06-01

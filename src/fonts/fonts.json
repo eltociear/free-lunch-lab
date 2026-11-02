@@ -459,6 +459,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-3de7a45755.woff2",
     "chars": "優芸"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-526dc71160.woff2",
+    "chars": "光央弾景水輸"
    }
   ],
   "ja:body:700": [
@@ -553,6 +557,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-a69540d8a9.woff2",
     "chars": "優芸"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-3b276e3f4e.woff2",
+    "chars": "光央弾景水輸"
    }
   ],
   "ja:display": [
@@ -731,6 +739,14 @@
    {
     "file": "noto-sans-sc-400-zh-7bb0416a27.woff2",
     "chars": "梅著"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-d42c0b351d.woff2",
+    "chars": "泰铢"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-caf2366b0a.woff2",
+    "chars": "扶措旅暗青"
    }
   ],
   "zh:body:700": [
@@ -821,6 +837,14 @@
    {
     "file": "noto-sans-sc-700-zh-b231f8e63e.woff2",
     "chars": "梅著"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-6f1250bd1c.woff2",
+    "chars": "泰铢"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-21224cbe9e.woff2",
+    "chars": "扶措旅暗青"
    }
   ],
   "zh:display": [
