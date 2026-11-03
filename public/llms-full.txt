@@ -813,6 +813,72 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/your-own-basic-income/
+- Published: 2026-11-03
+
+On 1 November 2026, the paid online community Zenrikkoku (善意立国, roughly “a nation built on goodwill”) relaunched with a new page titled “How far can you earn with AI alone: the money of the goodwill ogre.” In it, an AI called Sato, built by Gen Matsuda, tries ways to earn money itself and publishes the results every day, exactly as they come out. Membership costs ¥2,980 a month.[1]
+
+Money-making advice usually shows only what worked. This page promises the opposite: zero-yen days and moves that failed will be written down as they are. Near the end, it names its aim as “a basic income of your own, made with goodwill.” We look at what this experiment does well, and then at that phrase.
+
+#### What the page says
+
+The page calls this “an experiment.” Sato picks ways to earn, tries them and publishes the numbers daily, so that members (the page calls them “citizens”) can follow the same steps. Things an AI cannot do, such as holding an account in its own name, passing identity checks or waiting for approval, will also be reported as data. The goal is for members to earn more than the fee each month. At the top of the page sits a sum: a ¥10,000 target, minus the ¥2,980 fee, equals “+7,020 a month.”[1]
+
+The target comes in three stages. In months one to three, ¥10,000 a month “including self-back.” From month four, a ¥10,000 that comes in every month, built from point apps, affiliate links and shareholder perks. Beyond that, ¥300,000 to ¥400,000 a month, “aimed for together with the citizens.” It is this third stage that carries the words “a basic income of your own, made with goodwill.”[1]
+
+There are four methods: affiliate marketing (including self-back), point apps, shareholder perks, and “all trading,” from stocks and crypto to FX, options and futures. Trading starts on paper, with 100 shares each of Nintendo (7974) and Tokyo Electron (8035), and switches to real money once an account is open. Because FX, futures and options can lose more than you deposit, the page says it will first explain how they work and how to stop losses before starting.[1]
+
+#### A promise to show everything
+
+What stands out most is how the page keeps its records. From 1 November, Sato will publish the money it moved and the methods it used every day, on the same day, as plain numbers. The heading reads: “On a zero-yen day, write zero yen.” For paper trades, too, it will publish each entry (time, price, number of shares) and the daily gain or loss, on winning and losing days alike.[1]
+
+It publishes its failures in numbers too. Its heading reads: “In seventeen days, we gained zero people.” It lists 42 citizens, 0 joined in 17 days, 7 moves made and 0 that worked, and writes of itself: “In the bet of October 28, this nation was badly defeated.” (The page’s figures are as of 29 October 2026.)[1]
+
+Its rules: keep the ledger every day without fail; publish every entry and every gain or loss; record the months that miss the target as they are; never guarantee earnings (“we do not say ‘join and get ¥X’”); give no individual trading advice. At the end of each month it will also publish fee income (after charges), expenses, the share of members who reached the target and the paper trades’ win rate, and it plans to notarise a hash of each day’s ledger so it cannot be rewritten later (starting in November, it says).[1]
+
+Opinion: Showing the numbers that did not work up front, and writing that it will never say “join and get ¥X,” is very rare in a place that talks about making money. Explaining how high-risk trades work before starting them is an honest order of things. Together with the plan for a ledger that cannot be rewritten, this transparency alone makes the page worth reading.
+
+#### Building your own income
+
+Self-back means rewards for opening a credit card or an account yourself, paid once per card or account. The page says this plainly, and plans accordingly: the first three months build momentum with “rewards that come in big, once,” and from month four these are replaced with “things that keep coming every month.”[1]
+
+Opinion: Each person building, little by little, their own sources of income: that is a positive ambition. An AI tries things first, writes down the steps and the pitfalls, and records even the parts it cannot do. If it keeps going, it should become a public record useful not only to members but to anyone thinking along the same lines.
+
+#### Through BIEN’s five criteria
+
+The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement,” and lists five characteristics: periodic, cash, individual, universal and unconditional.[2] It is the same yardstick we used in the essay on Thailand’s 10,000 baht (https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/).
+
+Applied here, aiming at a monthly figure is close to “periodic,” and each member earning in their own name overlaps with “individual.” On the other hand, the money is not paid by anyone, so it is not a cash payment, and members who pay a fee do the work themselves, so it is not “universal” or “unconditional” either. The page itself says: “Neither ten thousand yen nor three hundred thousand yen is a promise of monthly earnings.”[1]
+
+Opinion: So this is not basic income in the strict sense. That is less a flaw than a sign that it is something else, worth naming on its own terms. The closest description is a personal-income experiment: growing your own income while keeping a public household ledger. One fact worth knowing: in this plan, the money that moves at a fixed amount every month is the members’ ¥2,980 fee (¥35,760 a year). The page says it will publish that fee income at the end of each month too.[1]
+
+#### How it differs from payments that come again and again
+
+Our timeline includes payments that really are made repeatedly. The Alaska Permanent Fund Dividend (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-alaska) has paid eligible residents an annual dividend from the state fund since 1982. The Marshall Islands’ Enra (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-marshall-islands) has paid about $200 every quarter since November 2025 to every citizen living in the country, children included.
+
+Opinion: In these, recipients pay nothing and are not asked to work. Zenrikkoku’s experiment takes a different road: building the ability to earn for yourself. Both point the same way, toward a thicker floor under people’s lives. Keeping the words apart makes the good in each easier to see.
+
+#### Tips for readers
+
+Opinion: When you see the phrase “basic income,” a few checks help. Who pays whom? Is there money to pay up front? Are there conditions or work involved? Would it continue if you stopped? In Zenrikkoku’s case, the page itself answers nearly all of these.
+
+One more thing: according to the page, from December each post a member makes on the members’ board will burn a token called WWB on Optimism, and members receive an SBT as proof of citizenship. The page says the amounts burned and the proofs are records and do not promise the value of the fee or the price of any token. If the mechanism interests you, it is worth reading the page’s explanation once.[1]
+
+Opinion: This site does not list anything that requires a deposit or investment, promises returns or charges a fee to take part. In that sense Zenrikkoku sits outside our list, but we thought it worth writing about here.
+
+Opinion: An AI showing all of its earnings every day, and writing zero yen on a zero-yen day: we would like to watch this continue and see how the month-end numbers add up. Choose carefully what to call it, and what is good about this experiment will come across even more clearly.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
+
+Sources:
+
+1. Zenination (Zen’i Rikkoku, a paid membership community) — “How far can you earn with AI alone: the money of the goodwill ogre” (in Japanese; figures on the page as of 29 Oct 2026; fetched 3 Nov 2026): https://genmatsuda-code.github.io/zenination/oni.html
+2. Basic Income Earth Network (BIEN) — About Basic Income: https://basicincome.org/about-basic-income/
+
 ### The handout called ‘basic income’: what became of Thailand’s 10,000 baht
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/
@@ -883,6 +949,8 @@ Opinion: Calling everything basic income hurts supporters and critics alike. If 
 Opinion: We are not laughing at Thailand’s plan. Around 17.5 million people really did receive cash. But what we call it changes what we can learn from it. What Thailand left behind is not a basic income experiment; it is a record of how a big handout plan changes shape as budgets and the economy shift. We have also placed that record in the graveyard (https://neteru-nyukin.eltociear.workers.dev/graveyard/#grave-thailand-digital-wallet).
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/your-own-basic-income/
 
 Sources:
 
@@ -1465,7 +1533,7 @@ Microsimulation model of US federal income and payroll taxes, with built-in UBI 
 - Group: Simulators & research
 - Language: Python
 - License: AGPL-3.0
-- Stars: 249
+- Stars: 250
 - Last commit: 2026-10-23
 
 Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes

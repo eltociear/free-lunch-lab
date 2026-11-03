@@ -127,6 +127,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-044f26b29e.woff2",
     "chars": " "
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-809a0d243d.woff2",
+    "chars": "─かけげこだどまネ善国意稼立鬼"
    }
   ],
   "de:body:700": [
@@ -157,6 +161,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-22da07f1e7.woff2",
     "chars": " "
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-145ad4f6ef.woff2",
+    "chars": "─かけげこだどまネ善国意稼立鬼"
    }
   ],
   "de:display": [
@@ -227,6 +235,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-52dd1eed84.woff2",
     "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-809a0d243d.woff2",
+    "chars": "─かけげこだどまネ善国意稼立鬼"
    }
   ],
   "en:body:700": [
@@ -257,6 +269,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-6e06fdd498.woff2",
     "chars": "ū。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-145ad4f6ef.woff2",
+    "chars": "─かけげこだどまネ善国意稼立鬼"
    }
   ],
   "en:display": [
@@ -323,6 +339,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-044f26b29e.woff2",
     "chars": " "
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-809a0d243d.woff2",
+    "chars": "─かけげこだどまネ善国意稼立鬼"
    }
   ],
   "es:body:700": [
@@ -361,6 +381,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-22da07f1e7.woff2",
     "chars": " "
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-145ad4f6ef.woff2",
+    "chars": "─かけげこだどまネ善国意稼立鬼"
    }
   ],
   "es:display": [
@@ -587,6 +611,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-bbf43756fb.woff2",
     "chars": "概"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-93df63dd98.woff2",
+    "chars": "─七京佐八副却四天姿掟松柄構欠焼珍田緒藤透銘隠頭鬼"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-78944716dd.woff2",
+    "chars": "ヒ丁厚寧志柱穴育誠"
    }
   ],
   "ja:body:700": [
@@ -709,6 +741,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-344203051b.woff2",
     "chars": "概"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-c8a5ffe0a2.woff2",
+    "chars": "─七京佐八副却四天姿掟松柄構欠焼珍田緒藤透銘隠頭鬼"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-7597284257.woff2",
+    "chars": "ヒ丁厚寧志柱穴育誠"
    }
   ],
   "ja:display": [
@@ -763,6 +803,14 @@
    {
     "file": "dela-gothic-one-400-ja-277bcf9f51.woff2",
     "chars": "'+字機算計読"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-f810f3c6c1.woff2",
+    "chars": "初失指敗書目葉違"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-957313d383.woff2",
+    "chars": "ぐせヒ収部"
    }
   ],
   "ja:dot": [
@@ -923,6 +971,14 @@
    {
     "file": "noto-sans-sc-400-zh-3da452d1e4.woff2",
     "chars": "军滕"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-e4c6745f5d.woff2",
+    "chars": "─かけげこだどまネ七京佐八咨姿尺尾战末毁泛田瞄瞒矩稼藤询透醒骤鬼"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-678b9c2034.woff2",
+    "chars": "仔兴凭妨恳故朝柱赔趣阱陷"
    }
   ],
   "zh:body:700": [
@@ -1041,6 +1097,14 @@
    {
     "file": "noto-sans-sc-700-zh-e100bb7187.woff2",
     "chars": "军滕"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-f4df9f9941.woff2",
+    "chars": "─かけげこだどまネ七京佐八咨姿尺尾战末毁泛田瞄瞒矩稼藤询透醒骤鬼"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-57fa256503.woff2",
+    "chars": "仔兴凭妨恳故朝柱赔趣阱陷"
    }
   ],
   "zh:display": [
@@ -1091,6 +1155,14 @@
    {
     "file": "noto-sans-sc-900-zh-e5cac53cf8.woff2",
     "chars": "'+字算花计"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-e70245b2fc.woff2",
+    "chars": "同失宽己帖某毁看词败越重销页"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-9cfac5a8cc.woff2",
+    "chars": "示读造"
    }
   ],
   "zh:dot": [

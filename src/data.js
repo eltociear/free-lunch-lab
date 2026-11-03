@@ -2869,6 +2869,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-03",
+      "ja": "エッセイ「月1万円を、全部見せながら稼ぐ実験：「自分のベーシックインカム」という言葉について」を公開",
+      "en": "Published the essay “Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’”",
+      "zh": "发布随笔《把账本全部公开、每月赚 1 万日元的实验：关于“自己的基本收入”这个说法》",
+      "hi": "निबंध “पूरा हिसाब खोलकर हर महीने 10,000 येन कमाने का प्रयोग: “अपनी बेसिक इनकम” शब्द पर” प्रकाशित",
+      "es": "Publicado el ensayo «Ganar 10.000 yenes al mes con las cuentas a la vista: sobre la expresión «una renta básica propia»»",
+      "de": "Essay „10.000 Yen im Monat mit offenen Büchern verdienen: über den Ausdruck „ein eigenes Grundeinkommen““ veröffentlicht",
+      "ar": "نشرنا مقال «تجربة لكسب 10,000 ين شهريًا بدفاتر مفتوحة: عن عبارة دخل أساسي خاص بك»"
+    },
+    {
       "date": "2026-11-02",
       "ja": "ベーシックインカム実験の年表で、マーシャル諸島の Enra を更新：財源の信託基金（米国の拠出は2027年で終わる予定）、推計の費用（GDPの約8%）、IMFの指摘を追加",
       "en": "Updated the Marshall Islands’ Enra in the basic income timeline: where the money comes from (a trust fund whose scheduled US payments end in 2027), its estimated cost (about 8% of GDP) and the IMF’s concerns",
@@ -7883,7 +7893,7 @@ module.exports = {
     },
     {
       "id": "alaska",
-      "essays": ["universal-high-income", "thailand-digital-wallet"],
+      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income"],
       "years": "1982–",
       "type": "gov",
       "name": "Alaska Permanent Fund Dividend",
@@ -8450,7 +8460,7 @@ module.exports = {
     },
     {
       "id": "marshall-islands",
-      "essays": ["moltbook-basic-income", "thailand-digital-wallet"],
+      "essays": ["moltbook-basic-income", "thailand-digital-wallet", "your-own-basic-income"],
       "years": "2025–",
       "type": "gov",
       "name": "Enra (Individual Support Distribution)",
@@ -8676,10 +8686,793 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "your-own-basic-income",
+      "date": "2026-11-03",
+      "related": [
+        "thailand-digital-wallet",
+        "universal-high-income"
+      ],
+      "title": {
+        "ja": "月1万円を、全部見せながら稼ぐ実験：「自分のベーシックインカム」という言葉について",
+        "en": "Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’",
+        "zh": "把账本全部公开、每月赚 1 万日元的实验：关于“自己的基本收入”这个说法",
+        "hi": "पूरा हिसाब खोलकर हर महीने 10,000 येन कमाने का प्रयोग: “अपनी बेसिक इनकम” शब्द पर",
+        "es": "Ganar 10.000 yenes al mes con las cuentas a la vista: sobre la expresión «una renta básica propia»",
+        "de": "10.000 Yen im Monat mit offenen Büchern verdienen: über den Ausdruck „ein eigenes Grundeinkommen“",
+        "ar": "تجربة لكسب 10,000 ين شهريًا بدفاتر مفتوحة: عن عبارة «دخل أساسي خاص بك»"
+      },
+      "desc": {
+        "ja": "AI「佐藤」が稼ぎ方を試し、0円の日も失敗も数字のまま毎日公開する、会費制コミュニティ「善意立国」の実験。全部見せる姿勢のよさを紹介し、「自分のベーシックインカム」という言葉をBIENの5つの条件と照らします。",
+        "en": "An AI tries ways to earn and publishes every result daily, zero-yen days and failures included. What this open-book experiment does well, and what to call it.",
+        "zh": "会员制社群“善意立国”让 AI“佐藤”亲自尝试赚钱方法，每天如实公开数字，连 0 日元的日子和失败也不例外。我们介绍这种全部公开的做法好在哪里，并用 BIEN 的五个条件来看“自己的基本收入”。",
+        "hi": "एक AI कमाने के तरीक़े आज़माता है और हर दिन नतीजे छापता है, शून्य येन वाले दिन और विफलताएँ भी। इस खुले प्रयोग की ख़ूबियाँ, और “अपनी बेसिक इनकम” को क्या कहें।",
+        "es": "Una IA prueba formas de ganar dinero y publica a diario todos sus resultados, ceros y fracasos incluidos. Lo bueno de este experimento abierto y cómo llamarlo.",
+        "de": "Eine KI testet Verdienstwege und zeigt täglich alle Ergebnisse, auch Nulltage und Fehlschläge. Was dieses offene Experiment gut macht und wie man es nennt.",
+        "ar": "ذكاء اصطناعي يجرّب طرق الكسب وينشر كل نتائجه يوميًا، بما فيها أيام الصفر والإخفاقات. ما الجيد في هذه التجربة المفتوحة، وبماذا نسمّي «دخلًا أساسيًا خاصًا بك»."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2026年11月1日、会費制のオンラインコミュニティ「善意立国」が、新しいページで再出発しました。題は「AI だけでどこまで稼げるか ── 善意の鬼のカネ」。松田元さんが作ったAI「佐藤」が、自分で稼ぎ方を試し、その結果を毎日、数字のまま公開していく試みです。会費は月2,980円です。[1]"
+          ],
+          [
+            "p",
+            "稼ぎ方の情報は、うまくいった話ばかりが目立ちがちです。このページは逆で、0円の日も、うまくいかなかった手も、そのまま書くと約束しています。ページの終わり近くには、目指すものとして「善意で作る、自分のベーシックインカム」という言葉があります。この試みのよいところを見たうえで、この言葉についても考えてみます。"
+          ],
+          [
+            "h",
+            "ページに書かれていること"
+          ],
+          [
+            "p",
+            "ページによると、これは「実証実験」です。佐藤が稼ぎ方を選び、自分でやってみて、数字を毎日出す。会員（ページの言葉では「国民」）は、同じ手順で試せる。AIにできないこと（口座の名義、本人確認、審査待ち）も隠さずデータにする、としています。目標は、会費以上を毎月稼ぐこと。ページの冒頭には、目標の1万円から会費の2,980円を引いて「+7,020/月」とする式が置かれています。[1]"
+          ],
+          [
+            "p",
+            "目標は三段です。1〜3か月目は、セルフバック込みで月1万円。4か月目からは、ポイ活、アフィリエイト、株主優待の組み立てで、毎月くり返し入る1万円に置き換えていく。その先は、月30万〜40万円を「国民と一緒に目指す」。この三段目に、「善意で作る、自分のベーシックインカム」という言葉が添えられています。[1]"
+          ],
+          [
+            "p",
+            "手法は四つです。アフィリエイト（セルフバックを含む）、ポイ活、株主優待、そして株・仮想通貨・FX・オプション・先物までの「全ての取引」。まずは紙の上の取引から始め、最初の銘柄は任天堂（7974）と東京エレクトロン（8035）を各100株とし、口座が開いた日から本物に替える、と書かれています。FX・先物・オプションは預けたお金より大きく損をすることがあるので、その仕組みと損を止める手順を最初に解説してから始める、とも書いています。[1]"
+          ],
+          [
+            "h",
+            "全部見せる、という約束"
+          ],
+          [
+            "p",
+            "このページでいちばん目を引くのは、記録のつけ方です。11月1日から毎日、佐藤が自分で動かした金と手法を、その日のうちに数字のまま出す。見出しは「0円の日は、0円と書く。」紙の上の取引も、銘柄ごとのエントリー（日時・値段・株数）と毎日の損益を、勝った日も負けた日もそのまま出すとしています。[1]"
+          ],
+          [
+            "p",
+            "失敗も数字で出しています。見出しは「十七日で、増えたのは0人。」会員は42人、17日間で新しく入った人は0人、打った手は7手、効いた手は0手。「十月二十八日の勝負に、この国は大敗しました」と、自分で書いています（ページの数字は2026年10月29日時点）。[1]"
+          ],
+          [
+            "p",
+            "掟としては、毎日の帳面を欠かさない、エントリーと損益を全部出す、届かなかった月もそのまま書く、稼ぎを請け合わない（「入れば◯円」とは言わない）、一人ひとりの売買の相談には答えない、を掲げています。毎月末には、会費の収入（手数料を引いた額）、経費、目標に届いた会員の割合、紙の銘柄の勝率も出すとし、毎日の帳面のハッシュを公証して、後から書き換えられないようにする計画もあります（11月中に始めるとしています）。[1]"
+          ],
+          [
+            "o",
+            "稼ぎ方を語る場で、うまくいかなかった数字を先に見せ、「入れば◯円」とは言わないと書くのは、とても珍しいことです。損が大きくなりうる取引について、始める前に仕組みを説明するという順番も誠実です。書き換えられない帳面まで用意しようとしている点も含めて、この透明さは、それだけで読む価値があります。"
+          ],
+          [
+            "h",
+            "自分の収入を、自分で作る"
+          ],
+          [
+            "p",
+            "セルフバックとは、自分でクレジットカードを作ったり口座を開いたりして受け取る報酬のことで、カード1枚、口座1つにつき一回きりです。ページ自身もこのことをはっきり書いていて、最初の三か月は「一回きりで大きく入る報酬」で勢いをつけ、4か月目からは「毎月 続く物」に置き換える、という順番を組んでいます。[1]"
+          ],
+          [
+            "o",
+            "一人ひとりが、自分の収入の柱を少しずつ作っていく。この志は前向きなものです。AIが先に試して、手順と落とし穴を書き、AIにできない部分まで記録する。続いていけば、会員だけでなく、同じことを考える人にとっても役に立つ公開の記録になるはずです。"
+          ],
+          [
+            "h",
+            "BIENの5つの条件で見ると"
+          ],
+          [
+            "p",
+            "ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義し、定期的、現金、個人、普遍的、無条件の5つの性質を挙げています。[2] {タイの1万バーツのエッセイ|/essays/thailand-digital-wallet/}で使ったのと同じものさしです。"
+          ],
+          [
+            "p",
+            "当てはめてみると、毎月の数字を目指す点は「定期的」に近く、一人ひとりが自分の名義で稼ぐ点は「個人」に重なります。一方で、誰かから払われるお金ではないので「現金給付」には当たらず、会費を払った会員が自分で作業をするので「普遍的」「無条件」でもありません。ページ自身も「一万円も、三十万円も、毎月の稼ぎを約束するものではありません」と書いています。[1]"
+          ],
+          [
+            "o",
+            "つまりこれは、厳密な意味でのベーシックインカムではありません。でもそれは欠点というより、別の名前で呼ぶ価値のあるものだ、ということです。近いのは、公開の家計簿をつけながら自分の収入を育てていく、個人の収入づくりの実験でしょう。知っておきたい事実として一つ挙げると、この計画で毎月決まって動くお金は、会員が払う月2,980円の会費です（1年で3万5,760円）。ページは、その会費の収入も毎月末に公開するとしています。[1]"
+          ],
+          [
+            "h",
+            "くり返し払われる給付との違い"
+          ],
+          [
+            "p",
+            "このサイトの年表には、実際にくり返し払われている給付があります。{アラスカ州の永久基金配当|/timeline/#tl-alaska}は、1982年から、条件を満たす住民に州の基金から毎年配当を払っています。{マーシャル諸島の Enra|/timeline/#tl-marshall-islands}は、2025年11月から、国内に住む国民全員に、子どもも含めて3か月ごとに約200ドルを払っています。"
+          ],
+          [
+            "o",
+            "これらは、受け取る人が何も払わず、働くことも求められない給付です。善意立国の試みは、それとは別の道、自分で稼ぐ力を育てる道を行っています。どちらも、暮らしの土台を厚くしようとしている点では同じ方向を向いています。言葉を分けておくと、どちらのよさも見えやすくなります。"
+          ],
+          [
+            "h",
+            "読む人へのヒント"
+          ],
+          [
+            "o",
+            "「ベーシックインカム」という言葉を見かけたら、いくつか確かめておくと安心です。お金は誰から誰に払われるのか。始めるのに先に払うお金はあるか。条件や作業はあるか。自分が手を止めても続くのか。善意立国の場合は、ページがこれらにほぼすべて自分で答えています。"
+          ],
+          [
+            "p",
+            "もう一つ、ページによると12月から、会員が掲示板に書き込むと Optimism 上で WWB というトークンがバーンされ、会員には国民の証として SBT が渡ります。ページは、燃える量も証も記録であって、会費の値打ちやトークンの値段を約束するものではないとしています。仕組みに関心があれば、ページの説明を一度読んでおくとよいでしょう。[1]"
+          ],
+          [
+            "o",
+            "このサイトは、預け入れや投資が必要なもの、見返りを約束するもの、参加に会費が要るものを一覧には載せていません。善意立国もその意味では一覧の外にありますが、取り上げる価値があると考えて、このエッセイを書きました。"
+          ],
+          [
+            "o",
+            "AIが自分の稼ぎを毎日全部見せ、0円の日を0円と書く。この試みが続き、月末の数字がどう積み上がっていくのかを見守りたいと思います。それを何と呼ぶかを丁寧に選べば、この実験のよさは、もっとまっすぐ伝わるはずです。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "On 1 November 2026, the paid online community Zenrikkoku (善意立国, roughly “a nation built on goodwill”) relaunched with a new page titled “How far can you earn with AI alone: the money of the goodwill ogre.” In it, an AI called Sato, built by Gen Matsuda, tries ways to earn money itself and publishes the results every day, exactly as they come out. Membership costs ¥2,980 a month.[1]"
+          ],
+          [
+            "p",
+            "Money-making advice usually shows only what worked. This page promises the opposite: zero-yen days and moves that failed will be written down as they are. Near the end, it names its aim as “a basic income of your own, made with goodwill.” We look at what this experiment does well, and then at that phrase."
+          ],
+          [
+            "h",
+            "What the page says"
+          ],
+          [
+            "p",
+            "The page calls this “an experiment.” Sato picks ways to earn, tries them and publishes the numbers daily, so that members (the page calls them “citizens”) can follow the same steps. Things an AI cannot do, such as holding an account in its own name, passing identity checks or waiting for approval, will also be reported as data. The goal is for members to earn more than the fee each month. At the top of the page sits a sum: a ¥10,000 target, minus the ¥2,980 fee, equals “+7,020 a month.”[1]"
+          ],
+          [
+            "p",
+            "The target comes in three stages. In months one to three, ¥10,000 a month “including self-back.” From month four, a ¥10,000 that comes in every month, built from point apps, affiliate links and shareholder perks. Beyond that, ¥300,000 to ¥400,000 a month, “aimed for together with the citizens.” It is this third stage that carries the words “a basic income of your own, made with goodwill.”[1]"
+          ],
+          [
+            "p",
+            "There are four methods: affiliate marketing (including self-back), point apps, shareholder perks, and “all trading,” from stocks and crypto to FX, options and futures. Trading starts on paper, with 100 shares each of Nintendo (7974) and Tokyo Electron (8035), and switches to real money once an account is open. Because FX, futures and options can lose more than you deposit, the page says it will first explain how they work and how to stop losses before starting.[1]"
+          ],
+          [
+            "h",
+            "A promise to show everything"
+          ],
+          [
+            "p",
+            "What stands out most is how the page keeps its records. From 1 November, Sato will publish the money it moved and the methods it used every day, on the same day, as plain numbers. The heading reads: “On a zero-yen day, write zero yen.” For paper trades, too, it will publish each entry (time, price, number of shares) and the daily gain or loss, on winning and losing days alike.[1]"
+          ],
+          [
+            "p",
+            "It publishes its failures in numbers too. Its heading reads: “In seventeen days, we gained zero people.” It lists 42 citizens, 0 joined in 17 days, 7 moves made and 0 that worked, and writes of itself: “In the bet of October 28, this nation was badly defeated.” (The page’s figures are as of 29 October 2026.)[1]"
+          ],
+          [
+            "p",
+            "Its rules: keep the ledger every day without fail; publish every entry and every gain or loss; record the months that miss the target as they are; never guarantee earnings (“we do not say ‘join and get ¥X’”); give no individual trading advice. At the end of each month it will also publish fee income (after charges), expenses, the share of members who reached the target and the paper trades’ win rate, and it plans to notarise a hash of each day’s ledger so it cannot be rewritten later (starting in November, it says).[1]"
+          ],
+          [
+            "o",
+            "Showing the numbers that did not work up front, and writing that it will never say “join and get ¥X,” is very rare in a place that talks about making money. Explaining how high-risk trades work before starting them is an honest order of things. Together with the plan for a ledger that cannot be rewritten, this transparency alone makes the page worth reading."
+          ],
+          [
+            "h",
+            "Building your own income"
+          ],
+          [
+            "p",
+            "Self-back means rewards for opening a credit card or an account yourself, paid once per card or account. The page says this plainly, and plans accordingly: the first three months build momentum with “rewards that come in big, once,” and from month four these are replaced with “things that keep coming every month.”[1]"
+          ],
+          [
+            "o",
+            "Each person building, little by little, their own sources of income: that is a positive ambition. An AI tries things first, writes down the steps and the pitfalls, and records even the parts it cannot do. If it keeps going, it should become a public record useful not only to members but to anyone thinking along the same lines."
+          ],
+          [
+            "h",
+            "Through BIEN’s five criteria"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement,” and lists five characteristics: periodic, cash, individual, universal and unconditional.[2] It is the same yardstick we used in {the essay on Thailand’s 10,000 baht|/essays/thailand-digital-wallet/}."
+          ],
+          [
+            "p",
+            "Applied here, aiming at a monthly figure is close to “periodic,” and each member earning in their own name overlaps with “individual.” On the other hand, the money is not paid by anyone, so it is not a cash payment, and members who pay a fee do the work themselves, so it is not “universal” or “unconditional” either. The page itself says: “Neither ten thousand yen nor three hundred thousand yen is a promise of monthly earnings.”[1]"
+          ],
+          [
+            "o",
+            "So this is not basic income in the strict sense. That is less a flaw than a sign that it is something else, worth naming on its own terms. The closest description is a personal-income experiment: growing your own income while keeping a public household ledger. One fact worth knowing: in this plan, the money that moves at a fixed amount every month is the members’ ¥2,980 fee (¥35,760 a year). The page says it will publish that fee income at the end of each month too.[1]"
+          ],
+          [
+            "h",
+            "How it differs from payments that come again and again"
+          ],
+          [
+            "p",
+            "Our timeline includes payments that really are made repeatedly. The {Alaska Permanent Fund Dividend|/timeline/#tl-alaska} has paid eligible residents an annual dividend from the state fund since 1982. The {Marshall Islands’ Enra|/timeline/#tl-marshall-islands} has paid about $200 every quarter since November 2025 to every citizen living in the country, children included."
+          ],
+          [
+            "o",
+            "In these, recipients pay nothing and are not asked to work. Zenrikkoku’s experiment takes a different road: building the ability to earn for yourself. Both point the same way, toward a thicker floor under people’s lives. Keeping the words apart makes the good in each easier to see."
+          ],
+          [
+            "h",
+            "Tips for readers"
+          ],
+          [
+            "o",
+            "When you see the phrase “basic income,” a few checks help. Who pays whom? Is there money to pay up front? Are there conditions or work involved? Would it continue if you stopped? In Zenrikkoku’s case, the page itself answers nearly all of these."
+          ],
+          [
+            "p",
+            "One more thing: according to the page, from December each post a member makes on the members’ board will burn a token called WWB on Optimism, and members receive an SBT as proof of citizenship. The page says the amounts burned and the proofs are records and do not promise the value of the fee or the price of any token. If the mechanism interests you, it is worth reading the page’s explanation once.[1]"
+          ],
+          [
+            "o",
+            "This site does not list anything that requires a deposit or investment, promises returns or charges a fee to take part. In that sense Zenrikkoku sits outside our list, but we thought it worth writing about here."
+          ],
+          [
+            "o",
+            "An AI showing all of its earnings every day, and writing zero yen on a zero-yen day: we would like to watch this continue and see how the month-end numbers add up. Choose carefully what to call it, and what is good about this experiment will come across even more clearly."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026 年 11 月 1 日，会员制线上社群“善意立国”以新页面重新出发，标题是《只靠 AI 能赚多少：善意之鬼的钱》。由松田元打造的 AI“佐藤”亲自尝试赚钱方法，并每天把结果如实地以数字公开。会费为每月 2,980 日元。[1]"
+          ],
+          [
+            "p",
+            "关于赚钱的信息，往往只有成功的故事显眼。这个页面反其道而行：0 日元的日子、没奏效的尝试，都会照实写下来。页面末尾附近，把目标写作“用善意打造的、自己的基本收入”。我们先看看这项尝试好在哪里，再来谈谈这个说法。"
+          ],
+          [
+            "h",
+            "页面上写了什么"
+          ],
+          [
+            "p",
+            "页面称这是一项“实证实验”。佐藤挑选赚钱方法，亲自去做，每天公布数字，让会员（页面称为“国民”）可以照同样的步骤尝试。AI 做不到的事（账户名义、身份验证、等待审核）也不隐瞒，同样作为数据公开。目标是每月赚得比会费多。页面开头放着一道算式：目标 1 万日元，减去会费 2,980 日元，等于“每月 +7,020”。[1]"
+          ],
+          [
+            "p",
+            "目标分为三段。第 1 到 3 个月，含“自返”（self-back）每月 1 万日元。从第 4 个月起，用积分返利、联盟营销和股东优待的组合，换成每月都会重复进账的 1 万日元。再往后，每月 30 万至 40 万日元，“与国民一起追求”。正是这第三段，配上了“用善意打造的、自己的基本收入”这句话。[1]"
+          ],
+          [
+            "p",
+            "方法有四种：联盟营销（含自返）、积分返利、股东优待，以及从股票、加密货币到外汇、期权、期货的“全部交易”。交易先在纸面上进行，首批标的是任天堂（7974）和东京电子（8035）各 100 股，账户开好之后再换成真钱。由于外汇、期货和期权可能亏损超过存入的金额，页面表示会先讲解其原理和止损步骤，然后才开始。[1]"
+          ],
+          [
+            "h",
+            "全部公开的承诺"
+          ],
+          [
+            "p",
+            "最引人注目的是它记账的方式。从 11 月 1 日起，佐藤每天当天就把自己动用的钱和方法以数字原样公开。标题写着：“0 日元的日子，就写 0 日元。”纸面交易也一样，每只股票的进场记录（时间、价格、股数）和每天的盈亏，无论赚赔都照实公开。[1]"
+          ],
+          [
+            "p",
+            "它也用数字公开失败。标题写着：“十七天里，增加的人数是 0。”国民 42 人，17 天新加入 0 人，出手 7 次，奏效 0 次。页面还自己写道：“在十月二十八日的那一战中，这个国家大败。”（页面数字截至 2026 年 10 月 29 日。）[1]"
+          ],
+          [
+            "p",
+            "它定下的规矩包括：每天的账本一天不缺；公开全部进场记录和盈亏；没达标的月份也照实写；不担保收入（不说“加入就能赚多少”）；不回答个人的买卖咨询。每月底还会公开会费收入（扣除手续费后）、经费、达标会员的比例和纸面交易的胜率，并计划对每天账本的哈希值做公证，使之事后无法改写（称将在 11 月内开始）。[1]"
+          ],
+          [
+            "o",
+            "在谈赚钱的地方，先把不成功的数字摆出来，并写明不说“加入就能赚多少”，非常少见。对可能大亏的交易，开始前先讲清原理，这个顺序也很诚恳。再加上准备做成无法改写的账本，单凭这份透明，这个页面就值得一读。"
+          ],
+          [
+            "h",
+            "自己打造自己的收入"
+          ],
+          [
+            "p",
+            "自返是指自己办信用卡、开账户而拿到的报酬，每张卡、每个账户只有一次。页面对此写得很清楚，并据此安排顺序：前三个月用“一次性大额进账的报酬”积累势头，从第 4 个月起换成“每月持续的东西”。[1]"
+          ],
+          [
+            "o",
+            "每个人一点一点地建立自己的收入支柱，这是积极的志向。AI 先去尝试，写下步骤和陷阱，连自己做不到的部分也记录下来。如果坚持下去，它应当会成为一份公开记录，不仅对会员有用，对有同样想法的人也有用。"
+          ],
+          [
+            "h",
+            "用 BIEN 的五个条件来看"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）把基本收入定义为“无需经济状况调查或工作要求，无条件地以个人为单位向所有人发放的定期现金”，并列出五个特征：定期、现金、个人、普遍、无条件。[2] 这和我们在{关于泰国 1 万泰铢的随笔|/essays/thailand-digital-wallet/}里用的是同一把尺子。"
+          ],
+          [
+            "p",
+            "对照来看，瞄准每月数字这一点接近“定期”，每位会员以自己的名义去赚这一点与“个人”重合。另一方面，这笔钱不是由谁支付的，所以不算现金发放；交了会费的会员要自己动手，所以也不是“普遍”或“无条件”的。页面自己也写道：“无论一万日元还是三十万日元，都不是对每月收入的承诺。”[1]"
+          ],
+          [
+            "o",
+            "也就是说，这不是严格意义上的基本收入。但与其说这是缺点，不如说它是另一种值得单独命名的东西。最贴切的说法，是一边记公开的家庭账本、一边培养自己收入的个人收入实验。有一个值得知道的事实：在这个计划里，每月固定流动的钱，是会员支付的每月 2,980 日元会费（一年 35,760 日元）。页面表示，这笔会费收入也会在每月底公开。[1]"
+          ],
+          [
+            "h",
+            "与反复发放的给付有何不同"
+          ],
+          [
+            "p",
+            "本站年表里有真正反复发放的给付。{阿拉斯加永久基金分红|/timeline/#tl-alaska}自 1982 年起每年从州基金向符合条件的居民发放分红。{马绍尔群岛的 Enra|/timeline/#tl-marshall-islands}自 2025 年 11 月起，每季度向居住在国内的全体国民（含儿童）发放约 200 美元。"
+          ],
+          [
+            "o",
+            "在这些给付中，领取的人什么都不用付，也不被要求工作。善意立国的尝试走的是另一条路：培养自己赚钱的能力。两者都朝着同一个方向，让生活的底子更厚。把说法分开，两者的好处都更容易看清。"
+          ],
+          [
+            "h",
+            "给读者的提示"
+          ],
+          [
+            "o",
+            "看到“基本收入”这个词时，确认几件事会更安心：钱由谁付给谁？开始前要不要先付钱？有没有条件或要做的工作？你停下手之后它还会继续吗？就善意立国而言，页面自己几乎回答了所有这些问题。"
+          ],
+          [
+            "p",
+            "还有一点：根据页面，从 12 月起，会员每在留言板发一帖，就会在 Optimism 上销毁名为 WWB 的代币，会员则获得一枚作为国民证明的 SBT。页面表示，销毁的数量和证明都是记录，并不承诺会费的价值或代币的价格。如果对这个机制感兴趣，不妨读一读页面上的说明。[1]"
+          ],
+          [
+            "o",
+            "本站的列表不收录需要存入资金或投资、承诺回报或需要交会费才能参加的项目。从这个意义上说，善意立国在列表之外，但我们认为它值得一写，于是写了这篇随笔。"
+          ],
+          [
+            "o",
+            "AI 每天把自己的收入全部公开，0 日元的日子就写 0 日元。我们希望看到这项尝试继续下去，看看月底的数字如何累积。只要仔细挑选该怎么称呼它，这个实验的好处就能更直接地传达出去。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "1 नवंबर 2026 को सदस्यता शुल्क वाले ऑनलाइन समुदाय “ज़ेनइरिक्कोकु” (मोटे तौर पर “सद्भावना पर बना देश”) ने एक नए पेज के साथ दोबारा शुरुआत की, जिसका शीर्षक है “सिर्फ़ AI से कितना कमाया जा सकता है: सद्भावना वाले दानव का पैसा।” इसमें गेन मात्सुदा का बनाया AI “सातो” ख़ुद कमाने के तरीक़े आज़माता है और हर दिन नतीजे ठीक वैसे ही आँकड़ों में छापता है जैसे वे आते हैं। सदस्यता 2,980 येन प्रति माह है।[1]"
+          ],
+          [
+            "p",
+            "कमाई की सलाह में आमतौर पर सिर्फ़ सफल कहानियाँ दिखती हैं। यह पेज उलटा वादा करता है: शून्य येन वाले दिन और नाकाम चालें भी जैसी हैं वैसी लिखी जाएँगी। आख़िर के पास यह अपना लक्ष्य “सद्भावना से बनी, अपनी बेसिक इनकम” बताता है। हम पहले देखते हैं कि यह प्रयोग क्या अच्छा करता है, फिर उस शब्द पर बात करते हैं।"
+          ],
+          [
+            "h",
+            "पेज क्या कहता है"
+          ],
+          [
+            "p",
+            "पेज इसे “एक प्रयोग” कहता है। सातो कमाने के तरीक़े चुनता है, उन्हें आज़माता है और हर दिन आँकड़े छापता है, ताकि सदस्य (पेज उन्हें “नागरिक” कहता है) वही कदम आज़मा सकें। जो काम AI नहीं कर सकता, जैसे अपने नाम पर खाता रखना, पहचान की जाँच या मंज़ूरी का इंतज़ार, उसे भी डेटा के रूप में दर्ज किया जाएगा। लक्ष्य है कि सदस्य हर महीने शुल्क से ज़्यादा कमाएँ। पेज के ऊपर एक हिसाब है: 10,000 येन का लक्ष्य, घटा 2,980 येन शुल्क, बराबर “+7,020 प्रति माह।”[1]"
+          ],
+          [
+            "p",
+            "लक्ष्य तीन चरणों में है। पहले से तीसरे महीने तक, “सेल्फ़-बैक सहित” हर महीने 10,000 येन। चौथे महीने से, पॉइंट ऐप, एफ़िलिएट लिंक और शेयरधारक लाभों से बने 10,000 येन, जो हर महीने आते रहें। उसके आगे, हर महीने 3,00,000 से 4,00,000 येन, “नागरिकों के साथ मिलकर।” यही तीसरा चरण “सद्भावना से बनी, अपनी बेसिक इनकम” शब्दों के साथ आता है।[1]"
+          ],
+          [
+            "p",
+            "तरीक़े चार हैं: एफ़िलिएट मार्केटिंग (सेल्फ़-बैक सहित), पॉइंट ऐप, शेयरधारक लाभ, और शेयर व क्रिप्टो से लेकर FX, ऑप्शन और फ़्यूचर्स तक “सारी ट्रेडिंग।” ट्रेडिंग पहले काग़ज़ पर शुरू होती है, निनटेंडो (7974) और टोक्यो इलेक्ट्रॉन (8035) के 100-100 शेयरों से, और खाता खुलने पर असली पैसे में बदलती है। चूँकि FX, फ़्यूचर्स और ऑप्शन में जमा रकम से ज़्यादा नुक़सान हो सकता है, पेज कहता है कि शुरू करने से पहले वह इनका तरीक़ा और नुक़सान रोकने के कदम समझाएगा।[1]"
+          ],
+          [
+            "h",
+            "सब कुछ दिखाने का वादा"
+          ],
+          [
+            "p",
+            "सबसे ज़्यादा ध्यान खींचता है रिकॉर्ड रखने का तरीक़ा। 1 नवंबर से सातो हर दिन, उसी दिन, अपने लगाए पैसे और इस्तेमाल किए तरीक़े सीधे आँकड़ों में छापेगा। शीर्षक है: “शून्य येन वाले दिन, शून्य येन लिखो।” काग़ज़ी ट्रेडों के लिए भी हर एंट्री (समय, क़ीमत, शेयरों की संख्या) और रोज़ का नफ़ा-नुक़सान, जीत और हार दोनों दिनों में, छापा जाएगा।[1]"
+          ],
+          [
+            "p",
+            "वह अपनी विफलताएँ भी आँकड़ों में बताता है। शीर्षक है: “सत्रह दिनों में, बढ़े शून्य लोग।” वह 42 नागरिक, 17 दिनों में 0 नए सदस्य, 7 चालें और 0 कामयाब चालें गिनाता है, और ख़ुद के बारे में लिखता है: “अट्ठाईस अक्टूबर के दाँव में, यह देश बुरी तरह हारा।” (पेज के आँकड़े 29 अक्टूबर 2026 तक के हैं।)[1]"
+          ],
+          [
+            "p",
+            "उसके नियम: हर दिन बिना चूके बही रखना; हर एंट्री और हर नफ़ा-नुक़सान छापना; लक्ष्य से चूके महीनों को भी जैसे का तैसा दर्ज करना; कमाई की गारंटी न देना (“जुड़ो और X येन पाओ” नहीं कहना); व्यक्तिगत ट्रेडिंग सलाह न देना। हर महीने के आख़िर में वह शुल्क से आय (शुल्क-कटौती के बाद), ख़र्च, लक्ष्य तक पहुँचे सदस्यों का अनुपात और काग़ज़ी ट्रेडों की जीत-दर भी छापेगा, और हर दिन की बही के हैश को नोटरी कराने की योजना है ताकि उसे बाद में बदला न जा सके (उसके मुताबिक़ नवंबर में शुरू)।[1]"
+          ],
+          [
+            "o",
+            "पैसा कमाने की बात करने वाली जगह पर, जो काम नहीं किया उसके आँकड़े पहले दिखाना, और यह लिखना कि वह कभी “जुड़ो और X येन पाओ” नहीं कहेगा, बहुत दुर्लभ है। जोखिम भरे ट्रेडों को शुरू करने से पहले समझाना भी ईमानदार क्रम है। न बदली जा सकने वाली बही की योजना के साथ, यह पारदर्शिता अकेले ही पेज को पढ़ने लायक़ बनाती है।"
+          ],
+          [
+            "h",
+            "अपनी आय ख़ुद बनाना"
+          ],
+          [
+            "p",
+            "सेल्फ़-बैक का मतलब है ख़ुद क्रेडिट कार्ड बनवाने या खाता खोलने पर मिलने वाला इनाम, जो हर कार्ड या खाते पर एक बार मिलता है। पेज यह साफ़ कहता है और उसी हिसाब से योजना बनाता है: पहले तीन महीने “एक बार में बड़े इनामों” से रफ़्तार बनाना, और चौथे महीने से उन्हें “हर महीने चलती रहने वाली चीज़ों” से बदलना।[1]"
+          ],
+          [
+            "o",
+            "हर व्यक्ति धीरे-धीरे अपनी आय के अपने स्रोत बनाए, यह एक सकारात्मक महत्वाकांक्षा है। AI पहले आज़माता है, कदम और जोखिम लिखता है, और जो वह नहीं कर सकता उसे भी दर्ज करता है। अगर यह चलता रहा, तो यह सिर्फ़ सदस्यों के लिए नहीं, बल्कि ऐसा ही सोचने वाले किसी के लिए भी उपयोगी सार्वजनिक रिकॉर्ड बनना चाहिए।"
+          ],
+          [
+            "h",
+            "BIEN की पाँच कसौटियों पर"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को “एक नियमित नकद भुगतान, जो बिना आय-जाँच या काम की शर्त के, बिना शर्त सभी को व्यक्तिगत आधार पर दिया जाए” के रूप में परिभाषित करता है, और पाँच विशेषताएँ गिनाता है: नियमित, नकद, व्यक्तिगत, सार्वभौमिक और बिना शर्त।[2] यह वही पैमाना है जो हमने {थाईलैंड के 10,000 बाट वाले निबंध|/essays/thailand-digital-wallet/} में इस्तेमाल किया था।"
+          ],
+          [
+            "p",
+            "यहाँ लागू करें तो हर महीने के आँकड़े पर निशाना “नियमित” के क़रीब है, और हर सदस्य का अपने नाम से कमाना “व्यक्तिगत” से मेल खाता है। दूसरी ओर, यह पैसा कोई देता नहीं, इसलिए यह नकद भुगतान नहीं है, और शुल्क देने वाले सदस्य काम ख़ुद करते हैं, इसलिए यह “सार्वभौमिक” या “बिना शर्त” भी नहीं है। पेज ख़ुद कहता है: “न दस हज़ार येन, न तीन लाख येन, हर महीने की कमाई का वादा है।”[1]"
+          ],
+          [
+            "o",
+            "तो यह सख़्त अर्थ में बेसिक इनकम नहीं है। यह कमी कम, और इस बात का संकेत ज़्यादा है कि यह कुछ और है, जिसे अपना नाम मिलना चाहिए। सबसे क़रीबी वर्णन है एक निजी आय-प्रयोग: सार्वजनिक घरेलू बही रखते हुए अपनी आय बढ़ाना। एक तथ्य जानने लायक़ है: इस योजना में हर महीने तय रकम में चलने वाला पैसा सदस्यों का 2,980 येन शुल्क है (साल में 35,760 येन)। पेज कहता है कि वह यह शुल्क-आय भी हर महीने के आख़िर में छापेगा।[1]"
+          ],
+          [
+            "h",
+            "बार-बार मिलने वाले भुगतानों से फ़र्क़"
+          ],
+          [
+            "p",
+            "हमारी समयरेखा में ऐसे भुगतान हैं जो सचमुच बार-बार होते हैं। {अलास्का परमानेंट फ़ंड डिविडेंड|/timeline/#tl-alaska} 1982 से योग्य निवासियों को राज्य कोष से हर साल डिविडेंड देता है। {मार्शल द्वीप का Enra|/timeline/#tl-marshall-islands} नवंबर 2025 से देश में रहने वाले हर नागरिक को, बच्चों सहित, हर तिमाही लगभग $200 देता है।"
+          ],
+          [
+            "o",
+            "इनमें पाने वाले कुछ नहीं चुकाते और उनसे काम नहीं माँगा जाता। ज़ेनइरिक्कोकु का प्रयोग दूसरा रास्ता लेता है: ख़ुद कमाने की क्षमता बनाना। दोनों एक ही दिशा में हैं, लोगों की ज़िंदगी के नीचे मज़बूत ज़मीन की ओर। शब्दों को अलग रखने से दोनों की अच्छाई देखना आसान होता है।"
+          ],
+          [
+            "h",
+            "पढ़ने वालों के लिए सुझाव"
+          ],
+          [
+            "o",
+            "“बेसिक इनकम” शब्द दिखे तो कुछ बातें जाँच लेना मददगार है। कौन किसे भुगतान करता है? क्या पहले कुछ चुकाना है? क्या शर्तें या काम जुड़े हैं? क्या आपके रुकने पर भी यह चलता रहेगा? ज़ेनइरिक्कोकु के मामले में पेज ख़ुद लगभग इन सबका जवाब देता है।"
+          ],
+          [
+            "p",
+            "एक बात और: पेज के अनुसार, दिसंबर से सदस्यों के बोर्ड पर हर पोस्ट के साथ Optimism पर WWB नाम का टोकन बर्न होगा, और सदस्यों को नागरिकता के सबूत के रूप में एक SBT मिलेगा। पेज कहता है कि बर्न हुई मात्रा और सबूत सिर्फ़ रिकॉर्ड हैं और शुल्क के मूल्य या किसी टोकन की क़ीमत का वादा नहीं करते। अगर यह तंत्र आपको दिलचस्प लगे, तो पेज का विवरण एक बार पढ़ लेना अच्छा है।[1]"
+          ],
+          [
+            "o",
+            "यह साइट ऐसी कोई चीज़ सूचीबद्ध नहीं करती जिसमें जमा या निवेश ज़रूरी हो, जो रिटर्न का वादा करे या भाग लेने के लिए शुल्क ले। इस अर्थ में ज़ेनइरिक्कोकु हमारी सूची से बाहर है, लेकिन हमें लगा कि इस पर यहाँ लिखना सार्थक है।"
+          ],
+          [
+            "o",
+            "एक AI जो अपनी सारी कमाई हर दिन दिखाए, और शून्य येन वाले दिन शून्य येन लिखे: हम इसे चलते हुए देखना और महीने के आख़िर के आँकड़ों को जुड़ते देखना चाहेंगे। इसे क्या कहा जाए, यह सोच-समझकर चुना जाए, तो इस प्रयोग की अच्छाई और भी साफ़ दिखेगी।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "El 1 de noviembre de 2026, la comunidad en línea de pago Zenrikkoku (善意立国, más o menos «una nación hecha de buena voluntad») se relanzó con una página nueva titulada «Hasta dónde se puede ganar solo con IA: el dinero del ogro de la buena voluntad». En ella, una IA llamada Sato, creada por Gen Matsuda, prueba por sí misma formas de ganar dinero y publica los resultados cada día, tal como salen. Ser miembro cuesta 2.980 yenes al mes.[1]"
+          ],
+          [
+            "p",
+            "Los consejos para ganar dinero suelen mostrar solo lo que funcionó. Esta página promete lo contrario: los días de cero yenes y las jugadas fallidas se anotarán tal cual. Cerca del final, nombra su meta como «una renta básica propia, hecha con buena voluntad». Vemos primero lo que este experimento hace bien y después esa expresión."
+          ],
+          [
+            "h",
+            "Lo que dice la página"
+          ],
+          [
+            "p",
+            "La página lo llama «un experimento». Sato elige formas de ganar dinero, las prueba y publica las cifras cada día, para que los miembros (la página los llama «ciudadanos») puedan seguir los mismos pasos. Lo que una IA no puede hacer, como tener una cuenta a su nombre, pasar la verificación de identidad o esperar una aprobación, también se registrará como dato. La meta es que los miembros ganen cada mes más que la cuota. Arriba de la página hay una cuenta: una meta de 10.000 yenes, menos la cuota de 2.980, igual a «+7.020 al mes».[1]"
+          ],
+          [
+            "p",
+            "La meta tiene tres etapas. Del primer al tercer mes, 10.000 yenes al mes «incluido el self-back». Desde el cuarto mes, 10.000 yenes que lleguen todos los meses, a partir de apps de puntos, enlaces de afiliado y ventajas para accionistas. Más allá, entre 300.000 y 400.000 yenes al mes, «buscados junto con los ciudadanos». Es esta tercera etapa la que lleva las palabras «una renta básica propia, hecha con buena voluntad».[1]"
+          ],
+          [
+            "p",
+            "Hay cuatro métodos: marketing de afiliados (incluido el self-back), apps de puntos, ventajas para accionistas y «todo el trading», de acciones y criptomonedas a divisas (FX), opciones y futuros. El trading empieza sobre el papel, con 100 acciones de Nintendo (7974) y otras 100 de Tokyo Electron (8035), y pasa a dinero real cuando se abre una cuenta. Como con FX, futuros y opciones se puede perder más de lo depositado, la página dice que antes de empezar explicará cómo funcionan y cómo cortar pérdidas.[1]"
+          ],
+          [
+            "h",
+            "La promesa de mostrarlo todo"
+          ],
+          [
+            "p",
+            "Lo que más destaca es cómo lleva sus registros. Desde el 1 de noviembre, Sato publicará cada día, ese mismo día y en cifras simples, el dinero que movió y los métodos que usó. El titular dice: «El día de cero yenes, se escribe cero yenes». También en las operaciones sobre el papel publicará cada entrada (hora, precio, número de acciones) y la ganancia o pérdida diaria, tanto en los días buenos como en los malos.[1]"
+          ],
+          [
+            "p",
+            "También publica sus fracasos en cifras. Su titular dice: «En diecisiete días, sumamos cero personas». Enumera 42 ciudadanos, 0 altas en 17 días, 7 jugadas y 0 que funcionaron, y escribe sobre sí misma: «En la apuesta del 28 de octubre, esta nación sufrió una gran derrota». (Las cifras de la página son a 29 de octubre de 2026.)[1]"
+          ],
+          [
+            "p",
+            "Sus reglas: llevar el libro de cuentas cada día sin falta; publicar cada entrada y cada ganancia o pérdida; anotar tal cual los meses en que no se llegue a la meta; no garantizar ganancias (no decir «entra y gana X yenes»); no dar consejos de inversión individuales. Al final de cada mes publicará además los ingresos por cuotas (descontadas comisiones), los gastos, la proporción de miembros que alcanzaron la meta y el porcentaje de aciertos de las operaciones sobre el papel, y planea notarizar el hash del libro de cada día para que no pueda reescribirse después (a partir de noviembre, según la página).[1]"
+          ],
+          [
+            "o",
+            "Mostrar de entrada las cifras que no funcionaron, y escribir que nunca dirá «entra y gana X yenes», es muy raro en un lugar que habla de ganar dinero. Explicar las operaciones de alto riesgo antes de empezarlas es un orden honesto. Junto con el plan de un libro que no se pueda reescribir, esa transparencia basta para que la página merezca leerse."
+          ],
+          [
+            "h",
+            "Construir el propio ingreso"
+          ],
+          [
+            "p",
+            "El self-back son recompensas por abrir uno mismo una tarjeta de crédito o una cuenta, y se pagan una vez por tarjeta o cuenta. La página lo dice con claridad y planifica en consecuencia: los tres primeros meses toman impulso con «recompensas que entran grandes, una vez», y desde el cuarto mes se sustituyen por «cosas que sigan llegando cada mes».[1]"
+          ],
+          [
+            "o",
+            "Que cada persona vaya construyendo, poco a poco, sus propias fuentes de ingresos es una ambición positiva. Una IA prueba primero, anota los pasos y las trampas, y registra incluso lo que no puede hacer. Si sigue adelante, debería convertirse en un registro público útil no solo para los miembros, sino para cualquiera que piense en lo mismo."
+          ],
+          [
+            "h",
+            "A través de los cinco criterios de BIEN"
+          ],
+          [
+            "p",
+            "La Red Mundial de Renta Básica (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todos de forma individual, sin comprobación de recursos ni exigencia de trabajo», y enumera cinco características: periódica, en efectivo, individual, universal e incondicional.[2] Es la misma vara de medir que usamos en {el ensayo sobre los 10.000 bahts de Tailandia|/essays/thailand-digital-wallet/}."
+          ],
+          [
+            "p",
+            "Aplicada aquí, apuntar a una cifra mensual se acerca a lo «periódico», y que cada miembro gane a su propio nombre coincide con lo «individual». Por otro lado, el dinero no lo paga nadie, así que no es un pago en efectivo, y los miembros que pagan una cuota hacen el trabajo ellos mismos, así que tampoco es «universal» ni «incondicional». La propia página dice: «Ni los diez mil yenes ni los trescientos mil son una promesa de ingresos mensuales».[1]"
+          ],
+          [
+            "o",
+            "Así que no es una renta básica en sentido estricto. Más que un defecto, es señal de que se trata de otra cosa, que merece su propio nombre. Lo más parecido es un experimento de ingresos personales: hacer crecer el propio ingreso mientras se lleva un libro de cuentas público. Un dato que conviene conocer: en este plan, el dinero que se mueve en una cantidad fija cada mes es la cuota de 2.980 yenes de los miembros (35.760 yenes al año). La página dice que también publicará esos ingresos por cuotas al final de cada mes.[1]"
+          ],
+          [
+            "h",
+            "En qué se diferencia de los pagos que llegan una y otra vez"
+          ],
+          [
+            "p",
+            "Nuestra cronología recoge pagos que de verdad se repiten. El {Dividendo del Fondo Permanente de Alaska|/timeline/#tl-alaska} paga desde 1982 un dividendo anual del fondo estatal a los residentes que cumplen los requisitos. {Enra, de las Islas Marshall|/timeline/#tl-marshall-islands}, paga desde noviembre de 2025 unos 200 $ cada trimestre a todos los ciudadanos que viven en el país, niños incluidos."
+          ],
+          [
+            "o",
+            "En ellos, quien recibe no paga nada y no se le pide trabajar. El experimento de Zenrikkoku toma otro camino: desarrollar la capacidad de ganar por uno mismo. Ambos apuntan en la misma dirección, hacia un suelo más firme bajo la vida de la gente. Mantener separadas las palabras hace más fácil ver lo bueno de cada uno."
+          ],
+          [
+            "h",
+            "Consejos para quien lee"
+          ],
+          [
+            "o",
+            "Cuando veas la expresión «renta básica», ayuda comprobar algunas cosas. ¿Quién paga a quién? ¿Hay que pagar algo por adelantado? ¿Hay condiciones o trabajo de por medio? ¿Seguiría si te detuvieras? En el caso de Zenrikkoku, la propia página responde a casi todas."
+          ],
+          [
+            "p",
+            "Una cosa más: según la página, desde diciembre cada publicación de un miembro en el foro de miembros quemará un token llamado WWB en Optimism, y los miembros reciben un SBT como prueba de ciudadanía. La página dice que las cantidades quemadas y las pruebas son registros y no prometen el valor de la cuota ni el precio de ningún token. Si el mecanismo te interesa, vale la pena leer una vez la explicación de la página.[1]"
+          ],
+          [
+            "o",
+            "Este sitio no incluye en su lista nada que exija un depósito o una inversión, prometa rendimientos o cobre una cuota para participar. En ese sentido Zenrikkoku queda fuera de la lista, pero nos pareció que valía la pena escribir sobre ello aquí."
+          ],
+          [
+            "o",
+            "Una IA que muestra todas sus ganancias cada día y escribe cero yenes en un día de cero yenes: nos gustaría ver que esto continúa y cómo se suman las cifras de fin de mes. Si se elige con cuidado cómo llamarlo, lo bueno de este experimento se verá aún más claro."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Am 1. November 2026 startete die kostenpflichtige Online-Community Zenrikkoku (善意立国, etwa „ein Staat aus gutem Willen“) mit einer neuen Seite neu. Ihr Titel: „Wie weit kommt man allein mit KI beim Geldverdienen: das Geld des Dämons des guten Willens“. Darin probiert eine KI namens Sato, gebaut von Gen Matsuda, selbst Wege zum Geldverdienen aus und veröffentlicht die Ergebnisse jeden Tag so, wie sie sind. Die Mitgliedschaft kostet 2.980 Yen im Monat.[1]"
+          ],
+          [
+            "p",
+            "Ratschläge zum Geldverdienen zeigen meist nur, was funktioniert hat. Diese Seite verspricht das Gegenteil: Nulltage und gescheiterte Züge werden so aufgeschrieben, wie sie sind. Gegen Ende nennt sie ihr Ziel „ein eigenes Grundeinkommen, gemacht aus gutem Willen“. Wir sehen uns zuerst an, was dieses Experiment gut macht, und dann diesen Ausdruck."
+          ],
+          [
+            "h",
+            "Was auf der Seite steht"
+          ],
+          [
+            "p",
+            "Die Seite nennt das „ein Experiment“. Sato wählt Verdienstwege, probiert sie aus und veröffentlicht täglich die Zahlen, damit Mitglieder (die Seite nennt sie „Bürger“) dieselben Schritte gehen können. Was eine KI nicht kann, etwa ein Konto auf eigenen Namen führen, Identitätsprüfungen bestehen oder auf Freigaben warten, soll ebenfalls als Daten offengelegt werden. Ziel ist, dass Mitglieder jeden Monat mehr verdienen als den Beitrag. Oben auf der Seite steht eine Rechnung: Ziel 10.000 Yen, minus 2.980 Yen Beitrag, ergibt „+7.020 im Monat“.[1]"
+          ],
+          [
+            "p",
+            "Das Ziel hat drei Stufen. Im ersten bis dritten Monat 10.000 Yen im Monat „inklusive Self-back“. Ab dem vierten Monat 10.000 Yen, die jeden Monat wiederkommen, aus Punkte-Apps, Affiliate-Links und Aktionärsvergünstigungen. Danach 300.000 bis 400.000 Yen im Monat, „gemeinsam mit den Bürgern angestrebt“. Genau diese dritte Stufe trägt die Worte „ein eigenes Grundeinkommen, gemacht aus gutem Willen“.[1]"
+          ],
+          [
+            "p",
+            "Es gibt vier Methoden: Affiliate-Marketing (inklusive Self-back), Punkte-Apps, Aktionärsvergünstigungen und „alles Trading“, von Aktien und Krypto bis zu Devisen (FX), Optionen und Futures. Gehandelt wird zunächst auf dem Papier, mit je 100 Aktien von Nintendo (7974) und Tokyo Electron (8035); sobald ein Konto eröffnet ist, mit echtem Geld. Weil man bei FX, Futures und Optionen mehr verlieren kann, als man eingezahlt hat, will die Seite vor dem Start erklären, wie sie funktionieren und wie man Verluste begrenzt.[1]"
+          ],
+          [
+            "h",
+            "Das Versprechen, alles zu zeigen"
+          ],
+          [
+            "p",
+            "Am auffälligsten ist, wie die Seite Buch führt. Ab dem 1. November veröffentlicht Sato jeden Tag, noch am selben Tag und in schlichten Zahlen, das bewegte Geld und die verwendeten Methoden. Die Überschrift lautet: „An einem Nulltag schreibt man null Yen.“ Auch für Papiertrades sollen jeder Einstieg (Zeit, Preis, Stückzahl) und der tägliche Gewinn oder Verlust veröffentlicht werden, an guten wie an schlechten Tagen.[1]"
+          ],
+          [
+            "p",
+            "Auch Fehlschläge nennt sie in Zahlen. Die Überschrift lautet: „In siebzehn Tagen kamen null Menschen hinzu.“ Sie nennt 42 Bürger, 0 Beitritte in 17 Tagen, 7 Züge und 0, die funktionierten, und schreibt über sich selbst: „In der Wette vom 28. Oktober hat dieser Staat schwer verloren.“ (Die Zahlen der Seite haben den Stand vom 29. Oktober 2026.)[1]"
+          ],
+          [
+            "p",
+            "Ihre Regeln: das Kassenbuch jeden Tag ohne Ausnahme führen; jeden Einstieg und jeden Gewinn oder Verlust veröffentlichen; verfehlte Monate so festhalten, wie sie sind; keine Einnahmen garantieren (nicht „tritt bei und bekomm X Yen“ sagen); keine individuelle Handelsberatung. Zum Monatsende will sie außerdem die Beitragseinnahmen (nach Gebühren), die Ausgaben, den Anteil der Mitglieder, die das Ziel erreicht haben, und die Trefferquote der Papiertrades veröffentlichen, und sie plant, den Hash jedes Tagesbuchs notariell zu beglaubigen, damit er nachträglich nicht geändert werden kann (ab November, laut Seite).[1]"
+          ],
+          [
+            "o",
+            "Die Zahlen dessen, was nicht funktioniert hat, gleich vorne zu zeigen und zu schreiben, dass man nie „tritt bei und bekomm X Yen“ sagen wird, ist an einem Ort, an dem es ums Geldverdienen geht, sehr selten. Riskante Geschäfte zu erklären, bevor man sie beginnt, ist eine ehrliche Reihenfolge. Zusammen mit dem Plan für ein unveränderbares Kassenbuch macht schon diese Offenheit die Seite lesenswert."
+          ],
+          [
+            "h",
+            "Das eigene Einkommen aufbauen"
+          ],
+          [
+            "p",
+            "Self-back sind Prämien dafür, selbst eine Kreditkarte oder ein Konto zu eröffnen, und es gibt sie einmal pro Karte oder Konto. Die Seite sagt das klar und plant entsprechend: Die ersten drei Monate holen Schwung mit „Prämien, die einmal groß hereinkommen“, ab dem vierten Monat werden sie durch „Dinge, die jeden Monat weiterlaufen“ ersetzt.[1]"
+          ],
+          [
+            "o",
+            "Dass jeder nach und nach eigene Einkommensquellen aufbaut, ist ein positiver Anspruch. Eine KI probiert zuerst aus, schreibt Schritte und Fallstricke auf und hält sogar fest, was sie nicht kann. Wenn das weitergeht, dürfte daraus ein öffentliches Protokoll werden, das nicht nur Mitgliedern nützt, sondern allen, die in dieselbe Richtung denken."
+          ],
+          [
+            "h",
+            "Durch die fünf Kriterien von BIEN"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitspflicht“, und nennt fünf Merkmale: regelmäßig, Geld, individuell, universell und bedingungslos.[2] Es ist derselbe Maßstab wie im {Essay über Thailands 10.000 Baht|/essays/thailand-digital-wallet/}."
+          ],
+          [
+            "p",
+            "Hier angewandt, kommt das Zielen auf eine Monatszahl „regelmäßig“ nahe, und dass jedes Mitglied auf eigenen Namen verdient, deckt sich mit „individuell“. Andererseits zahlt niemand dieses Geld aus, es ist also keine Geldzahlung, und Mitglieder, die einen Beitrag zahlen, erledigen die Arbeit selbst, also ist es auch nicht „universell“ oder „bedingungslos“. Die Seite sagt selbst: „Weder die zehntausend Yen noch die dreihunderttausend Yen sind ein Versprechen monatlicher Einnahmen.“[1]"
+          ],
+          [
+            "o",
+            "Es ist also kein Grundeinkommen im strengen Sinn. Das ist weniger ein Mangel als ein Hinweis darauf, dass es etwas anderes ist, das einen eigenen Namen verdient. Am treffendsten ist wohl: ein persönliches Einkommensexperiment, bei dem man das eigene Einkommen aufbaut und dabei ein öffentliches Haushaltsbuch führt. Eine Tatsache, die man kennen sollte: In diesem Plan ist das Geld, das jeden Monat in fester Höhe fließt, der Mitgliedsbeitrag von 2.980 Yen (35.760 Yen im Jahr). Die Seite will auch diese Beitragseinnahmen zum Monatsende veröffentlichen.[1]"
+          ],
+          [
+            "h",
+            "Der Unterschied zu Zahlungen, die immer wieder kommen"
+          ],
+          [
+            "p",
+            "Unsere Zeitleiste enthält Zahlungen, die tatsächlich wiederholt erfolgen. Die {Alaska Permanent Fund Dividend|/timeline/#tl-alaska} zahlt berechtigten Einwohnern seit 1982 jährlich eine Dividende aus dem Staatsfonds. {Enra auf den Marshallinseln|/timeline/#tl-marshall-islands} zahlt seit November 2025 allen im Land lebenden Staatsbürgern, Kinder eingeschlossen, rund 200 $ pro Quartal."
+          ],
+          [
+            "o",
+            "Dort zahlen die Empfänger nichts und müssen nicht arbeiten. Das Experiment von Zenrikkoku geht einen anderen Weg: die Fähigkeit aufzubauen, selbst zu verdienen. Beide zeigen in dieselbe Richtung, zu einem festeren Boden unter dem Leben der Menschen. Wer die Wörter auseinanderhält, sieht das Gute an beidem leichter."
+          ],
+          [
+            "h",
+            "Tipps für Leserinnen und Leser"
+          ],
+          [
+            "o",
+            "Wenn dir der Ausdruck „Grundeinkommen“ begegnet, helfen ein paar Fragen. Wer zahlt wem? Muss man vorab etwas zahlen? Gibt es Bedingungen oder Arbeit? Ginge es weiter, wenn du aufhörst? Im Fall von Zenrikkoku beantwortet die Seite fast alle davon selbst."
+          ],
+          [
+            "p",
+            "Noch etwas: Laut der Seite verbrennt ab Dezember jeder Beitrag eines Mitglieds im Mitgliederforum auf Optimism einen Token namens WWB, und Mitglieder erhalten als Bürgernachweis ein SBT. Die Seite sagt, die verbrannten Mengen und die Nachweise seien Aufzeichnungen und versprächen weder den Wert des Beitrags noch den Preis irgendeines Tokens. Wen der Mechanismus interessiert, sollte die Erklärung auf der Seite einmal lesen.[1]"
+          ],
+          [
+            "o",
+            "Diese Seite nimmt nichts in ihre Liste auf, das eine Einzahlung oder Investition verlangt, Renditen verspricht oder für die Teilnahme einen Beitrag erhebt. In diesem Sinn steht Zenrikkoku außerhalb unserer Liste, aber wir fanden es lohnend, hier darüber zu schreiben."
+          ],
+          [
+            "o",
+            "Eine KI, die jeden Tag ihre gesamten Einnahmen zeigt und an einem Nulltag null Yen schreibt: Wir möchten sehen, wie das weitergeht und wie sich die Monatszahlen summieren. Wählt man sorgfältig, wie man es nennt, kommt das Gute an diesem Experiment noch klarer zur Geltung."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في 1 نوفمبر 2026 أعاد المجتمع الإلكتروني المدفوع «زِنريككوكو» (أي تقريبًا «أمة قائمة على حسن النية») إطلاق نفسه بصفحة جديدة عنوانها «إلى أي حد يمكن الكسب بالذكاء الاصطناعي وحده: مال غول حسن النية». وفيها يجرّب ذكاء اصطناعي اسمه «ساتو»، صنعه ⁦Gen Matsuda⁩، طرق الكسب بنفسه، وينشر النتائج كل يوم كما هي. تكلّف العضوية 2,980 ينًا شهريًا.[1]"
+          ],
+          [
+            "p",
+            "نصائح الكسب تُظهر عادةً ما نجح فقط. أما هذه الصفحة فتَعِد بالعكس: أيام الصفر والخطوات الفاشلة ستُكتب كما هي. وقرب نهايتها تسمّي هدفها «دخلًا أساسيًا خاصًا بك، مصنوعًا بحسن النية». ننظر أولًا إلى ما تُحسنه هذه التجربة، ثم إلى هذه العبارة."
+          ],
+          [
+            "h",
+            "ما تقوله الصفحة"
+          ],
+          [
+            "p",
+            "تسمّي الصفحة ذلك «تجربة». يختار ساتو طرق الكسب ويجرّبها وينشر الأرقام يوميًا، كي يتمكن الأعضاء (تسمّيهم الصفحة «مواطنين») من اتباع الخطوات نفسها. وما لا يستطيعه الذكاء الاصطناعي، مثل امتلاك حساب باسمه أو اجتياز التحقق من الهوية أو انتظار الموافقات، سيُسجَّل أيضًا بيانات. الهدف أن يكسب الأعضاء كل شهر أكثر من الاشتراك. وفي أعلى الصفحة معادلة: هدف 10,000 ين، ناقص اشتراك 2,980 ينًا، يساوي «+7,020 شهريًا».[1]"
+          ],
+          [
+            "p",
+            "للهدف ثلاث مراحل. من الشهر الأول إلى الثالث، 10,000 ين شهريًا «بما فيها المكافأة الذاتية» (⁦self-back⁩). ومن الشهر الرابع، 10,000 ين تأتي كل شهر، من تطبيقات النقاط وروابط التسويق بالعمولة ومزايا المساهمين. وبعد ذلك، 300,000 إلى 400,000 ين شهريًا «نسعى إليها مع المواطنين». وهذه المرحلة الثالثة هي التي تحمل عبارة «دخل أساسي خاص بك، مصنوع بحسن النية».[1]"
+          ],
+          [
+            "p",
+            "الطرق أربع: التسويق بالعمولة (بما فيه المكافأة الذاتية)، وتطبيقات النقاط، ومزايا المساهمين، و«كل أنواع التداول» من الأسهم والعملات المشفرة إلى الفوركس والخيارات والعقود الآجلة. يبدأ التداول على الورق، بمئة سهم من كلٍّ من نينتندو (7974) وطوكيو إلكترون (8035)، ثم ينتقل إلى مال حقيقي عند فتح حساب. ولأن الفوركس والعقود الآجلة والخيارات قد تخسر فيها أكثر مما أودعت، تقول الصفحة إنها ستشرح أولًا طريقة عملها وخطوات وقف الخسارة قبل أن تبدأ.[1]"
+          ],
+          [
+            "h",
+            "وعدٌ بإظهار كل شيء"
+          ],
+          [
+            "p",
+            "أكثر ما يلفت النظر هو طريقة التسجيل. فمن 1 نوفمبر سينشر ساتو كل يوم، في اليوم نفسه وبأرقام صريحة، المال الذي حرّكه والطرق التي استخدمها. والعنوان: «في يوم الصفر، اكتب صفر ين». وحتى في التداول على الورق سيُنشر كل دخول (الوقت والسعر وعدد الأسهم) والربح أو الخسارة اليومية، في أيام الربح والخسارة على السواء.[1]"
+          ],
+          [
+            "p",
+            "وتعلن إخفاقاتها بالأرقام أيضًا. عنوانها: «في سبعة عشر يومًا، زاد عددنا صفرًا». وتذكر 42 مواطنًا، و0 منضمّين في 17 يومًا، و7 خطوات و0 منها نجحت، وتكتب عن نفسها: «في رهان الثامن والعشرين من أكتوبر، مُنيت هذه الأمة بهزيمة كبيرة». (أرقام الصفحة حتى 29 أكتوبر 2026.)[1]"
+          ],
+          [
+            "p",
+            "قواعدها: مسك دفتر الحساب كل يوم دون انقطاع؛ ونشر كل دخول وكل ربح أو خسارة؛ وتسجيل الأشهر التي لم تبلغ الهدف كما هي؛ وعدم ضمان أي كسب (لا تقول «انضم واحصل على كذا ين»)؛ وعدم تقديم نصائح تداول فردية. وفي نهاية كل شهر ستنشر أيضًا دخل الاشتراكات (بعد الرسوم) والمصروفات ونسبة الأعضاء الذين بلغوا الهدف ونسبة نجاح التداول على الورق، وتخطط لتوثيق بصمة (⁦hash⁩) دفتر كل يوم كي لا يمكن تعديله لاحقًا (ابتداءً من نوفمبر بحسب الصفحة).[1]"
+          ],
+          [
+            "o",
+            "أن تعرض أرقام ما لم ينجح في البداية، وأن تكتب أنها لن تقول أبدًا «انضم واحصل على كذا ين»، أمر نادر جدًا في مكان يتحدث عن كسب المال. وشرح التداولات عالية المخاطر قبل البدء بها ترتيب صادق. ومع خطة الدفتر الذي لا يمكن تعديله، تكفي هذه الشفافية وحدها لتجعل الصفحة جديرة بالقراءة."
+          ],
+          [
+            "h",
+            "أن تبني دخلك بنفسك"
+          ],
+          [
+            "p",
+            "المكافأة الذاتية مكافأة مقابل أن تفتح بنفسك بطاقة ائتمان أو حسابًا، وتُدفع مرة واحدة لكل بطاقة أو حساب. والصفحة تقول ذلك بوضوح وتخطط على أساسه: الأشهر الثلاثة الأولى تكتسب زخمًا بـ«مكافآت كبيرة تأتي مرة واحدة»، ومن الشهر الرابع تُستبدل بـ«أشياء تستمر في القدوم كل شهر».[1]"
+          ],
+          [
+            "o",
+            "أن يبني كل شخص، شيئًا فشيئًا، مصادر دخله الخاصة طموح إيجابي. ذكاء اصطناعي يجرّب أولًا، ويكتب الخطوات والمزالق، ويسجّل حتى ما لا يستطيع فعله. وإن استمر، فينبغي أن يصبح سجلًا عامًا مفيدًا لا للأعضاء وحدهم، بل لكل من يفكر في الاتجاه نفسه."
+          ],
+          [
+            "h",
+            "عبر معايير ⁦BIEN⁩ الخمسة"
+          ],
+          [
+            "p",
+            "تعرّف الشبكة العالمية للدخل الأساسي (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُسلَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو شرط للعمل»، وتذكر خمس سمات: دوري، ونقدي، وفردي، وشامل، وغير مشروط.[2] وهو المقياس نفسه الذي استخدمناه في {مقال الـ10,000 بات التايلاندية|/essays/thailand-digital-wallet/}."
+          ],
+          [
+            "p",
+            "وبتطبيقه هنا، فإن استهداف رقم شهري قريب من «الدوري»، وكسب كل عضو باسمه يتقاطع مع «الفردي». ومن جهة أخرى، لا أحد يدفع هذا المال، فهو ليس دفعة نقدية، والأعضاء الذين يدفعون اشتراكًا يقومون بالعمل بأنفسهم، فهو ليس «شاملًا» ولا «غير مشروط» أيضًا. وتقول الصفحة نفسها: «لا العشرة آلاف ين ولا الثلاثمئة ألف ين وعدٌ بدخل شهري».[1]"
+          ],
+          [
+            "o",
+            "فهذا إذن ليس دخلًا أساسيًا بالمعنى الدقيق. وهذا أقل كونه عيبًا وأكثر كونه دلالة على أنه شيء آخر يستحق اسمًا خاصًا به. وأقرب وصف له تجربة دخل شخصية: أن تنمّي دخلك بنفسك وأنت تمسك دفترًا منزليًا علنيًا. وهناك حقيقة تستحق المعرفة: المال الذي يتحرك بمبلغ ثابت كل شهر في هذه الخطة هو اشتراك الأعضاء البالغ 2,980 ينًا (35,760 ينًا في السنة). وتقول الصفحة إنها ستنشر دخل الاشتراكات هذا أيضًا في نهاية كل شهر.[1]"
+          ],
+          [
+            "h",
+            "الفرق عن المدفوعات التي تأتي مرة بعد مرة"
+          ],
+          [
+            "p",
+            "يضم خطنا الزمني مدفوعات تتكرر فعلًا. فـ{عائد صندوق ألاسكا الدائم|/timeline/#tl-alaska} يدفع منذ 1982 عائدًا سنويًا من صندوق الولاية للمقيمين المستحقين. أما {برنامج ⁦Enra⁩ في جزر مارشال|/timeline/#tl-marshall-islands} فيدفع منذ نوفمبر 2025 نحو ⁦$200⁩ كل ربع سنة لكل مواطن يعيش في البلاد، بمن فيهم الأطفال."
+          ],
+          [
+            "o",
+            "في هذه المدفوعات لا يدفع المستفيدون شيئًا ولا يُطلب منهم العمل. أما تجربة زِنريككوكو فتسلك طريقًا آخر: بناء القدرة على الكسب بنفسك. وكلاهما يتجه الوجهة نفسها، نحو أرضية أمتن تحت حياة الناس. والتفريق بين الكلمات يجعل رؤية الجيد في كلٍّ منهما أسهل."
+          ],
+          [
+            "h",
+            "نصائح للقارئ"
+          ],
+          [
+            "o",
+            "حين تصادف عبارة «الدخل الأساسي»، يفيد أن تتحقق من بضعة أمور. من يدفع لمن؟ هل هناك مال يجب دفعه مسبقًا؟ هل هناك شروط أو عمل؟ هل سيستمر إن توقفت؟ وفي حالة زِنريككوكو، تجيب الصفحة نفسها عن معظم هذه الأسئلة."
+          ],
+          [
+            "p",
+            "وأمر آخر: بحسب الصفحة، ابتداءً من ديسمبر سيحرق كل منشور يكتبه عضو في لوحة الأعضاء توكنًا اسمه ⁦WWB⁩ على ⁦Optimism⁩، ويحصل الأعضاء على ⁦SBT⁩ دليلًا على المواطنة. وتقول الصفحة إن الكميات المحروقة والأدلة سجلات، ولا تَعِد بقيمة الاشتراك ولا بسعر أي توكن. وإن كانت الآلية تهمّك، فمن المفيد قراءة شرح الصفحة مرة.[1]"
+          ],
+          [
+            "o",
+            "لا يُدرج هذا الموقع في قائمته أي شيء يتطلب إيداعًا أو استثمارًا، أو يَعِد بعوائد، أو يفرض اشتراكًا للمشاركة. وبهذا المعنى يقع زِنريككوكو خارج قائمتنا، لكننا رأينا أنه يستحق الكتابة عنه هنا."
+          ],
+          [
+            "o",
+            "ذكاء اصطناعي يُظهر كل مكاسبه كل يوم، ويكتب صفر ين في يوم الصفر: نودّ أن نرى هذا يستمر، وأن نرى كيف تتراكم أرقام نهاية الشهر. وإذا اختير بعناية ما نسمّيه به، فسيظهر الجيد في هذه التجربة بوضوح أكبر."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Zenination (Zen’i Rikkoku, a paid membership community) — “How far can you earn with AI alone: the money of the goodwill ogre” (in Japanese; figures on the page as of 29 Oct 2026; fetched 3 Nov 2026)",
+          "url": "https://genmatsuda-code.github.io/zenination/oni.html"
+        },
+        {
+          "n": 2,
+          "label": "Basic Income Earth Network (BIEN) — About Basic Income",
+          "url": "https://basicincome.org/about-basic-income/"
+        }
+      ]
+    },
+    {
       "id": "thailand-digital-wallet",
       "date": "2026-11-02",
       "related": [
-        "universal-high-income"
+        "universal-high-income",
+        "your-own-basic-income"
       ],
       "title": {
         "ja": "「ベーシックインカム」と呼ばれたもの：タイの1万バーツはどうなったか",
