@@ -5,6 +5,7 @@
 //   src/og/guide/{lang}/{id}.jpg   サービスの完全ガイド（題・最終更新日）
 //   src/og/shindan/{lang}/index.jpg, {type}.jpg   タダ飯診断（入口と、タイプごとの結果カード）
 //   src/og/calc/{lang}/index.jpg   BI計算機（題・説明・国の名前）
+//   src/og/calc/{lang}/{国}-{all|adults|kids}-{金額}.jpg   BI計算機の結果カード（国 × 配る相手 × プリセット金額。src/worker.js が差し替える）
 //   src/static/apple-touch-icon.png, favicon.ico, favicon-32.png   src/static/favicon.svg から
 // 中身（HTML とフォント）が前回と同じ画像は作り直さない（src/og/manifest.json に指紋を記録）。全部作り直すときは OG_FORCE=1
 // Chrome の場所は環境変数 CHROME で変えられる
@@ -31,7 +32,8 @@ const FACE = {
   ja: '"Dela Gothic One"', en: '"Dela Gothic One"', es: '"Dela Gothic One"', de: '"Dela Gothic One"',
   zh: '"Noto Sans SC"', hi: '"Noto Sans Devanagari"', ar: '"Noto Kufi Arabic"',
 };
-const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const escHtml = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const esc = escHtml;
 const live = SERVICES.filter(s => s.ref || s.noRef);
 
 // フォントは画面に出る文字だけのサブセット（Google Fonts の text=）を先に取ってきて data: URI で埋め込む。
@@ -106,13 +108,13 @@ function siteFonts(lang) {
 const { unicodeRange } = require('./fonts.js');
 const CAT_COLOR = { 'crypto-bi': '#9B82FF', 'ai-agent': '#22B8CF', app: '#3FCF92', pointsite: '#F59A3C', career: '#EE6A93', exchange: '#5B97F0', finance: '#2BC0C0' };
 const SKY = `background:radial-gradient(70% 90% at 88% 0%,#3B2A86 0%,transparent 60%),radial-gradient(60% 70% at 0% 100%,#0F3B5C 0%,transparent 60%),linear-gradient(180deg,#0A0F24,#121741)`;
-function frame(lang, cls, inner) {
+function frame(lang, cls, inner, fonts) {
   const L = T[lang];
   const rtl = lang === 'ar';
   const [df, dw] = DISP[lang];
   const dot = lang === 'ja' || lang === 'en';
   return `<!doctype html><html lang="${lang}"${rtl ? ' dir="rtl"' : ''}><head><meta charset="utf-8"><style>
-${siteFonts(lang)}
+${fonts === undefined ? siteFonts(lang) : fonts}
 *{box-sizing:border-box;margin:0}
 body{width:1200px;height:630px;overflow:hidden;position:relative;display:flex;flex-direction:column;padding:56px 72px 52px;color:#EEF1FF;font-family:"${BODY[lang]}",sans-serif;font-weight:700;${SKY}}
 body::before{content:"";position:absolute;inset:0;background-image:radial-gradient(2px 2px at 30px 40px,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 150px 110px,#fff 50%,transparent 51%),radial-gradient(2px 2px at 260px 30px,#fff7d6 50%,transparent 51%),radial-gradient(1.5px 1.5px at 90px 200px,#cfd6ff 50%,transparent 51%);background-size:320px 240px;opacity:.75}
@@ -216,6 +218,42 @@ function calcHtml(lang) {
 <div class="chips">${CALC.countries.map(c => `<span>${esc(c.name[lang])}</span>`).join('')}</div>`);
 }
 
+// BI計算機の結果カード（国 × 配る相手 × プリセット金額）: 国と相手・年の総額を大きく・式・予算と GDP との比。
+// ?c=&w=&m= がこの組み合わせのとき、Worker（src/worker.js）が og:image をこの画像に差し替える
+const calcJs = require('./src/calc.js');
+const calcAbs = l => `${require('./src/data.js').SITE_URL}${l === 'en' ? '' : '/' + l}/calc/`;
+// フォントは、サイトのサブセット（文字が増えるたびに変わり、735枚が全部作り直しになる）ではなく、
+// その言語の全カードの文字だけを Google Fonts（text=）から1回取って埋め込む。指紋はフォントを入れる前の HTML で取るので、
+// カードの中身が変わらないかぎり作り直さない
+const CARD_FONTS = l => `family=${BODY[l].replace(/ /g, '+')}:wght@400;700&family=Zen+Kaku+Gothic+New:wght@900`;
+const cardFontCache = {};
+function cardFonts(lang) {
+  if (cardFontCache[lang]) return cardFontCache[lang];
+  const L = T[lang];
+  const text = [L.brandPlain, L.tagline, L.calcResultEb, L.calcTitle, ' ·×%0123456789', ...calcCards[lang].flatMap(k => [k.place, k.who, k.total, k.formula, ...k.rows.flat()])].join('').replace(/\s/g, ' ');
+  const chars = [...new Set(text)].join('');
+  let css = curl(`https://fonts.googleapis.com/css2?${CARD_FONTS(lang)}&text=${encodeURIComponent(chars)}&display=block`, 'utf8');
+  // ロゴ（.top b）は Zen Kaku Gothic New の 900 を "FLL Logo" という名前で使う
+  css = css.replace(/@font-face\s*\{[^}]*\}/g, b => /font-weight:\s*900/.test(b) ? b.replace(/font-family:\s*'[^']+'/, "font-family: 'FLL Logo'") : b);
+  for (const u of new Set(css.match(/https:\/\/fonts\.gstatic\.com\/[^)'"\s]+/g) || [])) css = css.split(u).join(dataUri(u));
+  return (cardFontCache[lang] = css);
+}
+function calcCardHtml(k, lang, fonts = `/* ${CARD_FONTS(lang)} */`) {
+  // Intl の数字にはノーブレークスペース（U+00A0 / U+202F）が入る。カードでは普通の空白にする
+  const esc = s => escHtml(String(s).replace(/[\u00a0\u202f]/g, ' '));
+  const L = T[lang];
+  const rows = k.rows.length > 1 ? [k.rows[0], k.rows[k.rows.length - 1]] : k.rows;
+  return frame(lang, 'essay', `<div class="mid">
+<p class="lbl cxc-who"><bdi>${esc(k.place)}</bdi> · <bdi>${esc(k.who)}</bdi></p>
+<div class="cxc-res"><p class="lbl cxc-eb">${esc(L.calcResultEb)}</p>
+<p class="cxc-total" data-fit="${lang === 'ar' || lang === 'hi' ? '92,48,130' : '108,52,140'}"><bdi>${esc(k.total)}</bdi></p></div>
+<p class="desc cxc-f" data-fit="30,22,100"><bdi>${esc(k.formula)}</bdi></p>
+</div>
+<div class="chips">${rows.map(r => `<span>${esc(r[0])} <b class="cxc-pct"><bdi>${esc(r[1])}</bdi></b></span>`).join('')}<span class="site">${esc(L.calcTitle)}</span></div>`, fonts)
+    .replace('</style>', `.cxc-who{letter-spacing:0;font-size:32px;color:#EEF1FF}.cxc-eb{letter-spacing:0;font-size:22px}.cxc-res{display:grid;gap:2px}.cxc-total{font-family:"${BODY[lang]}",sans-serif;font-weight:700;line-height:1.15;color:#FFD66B;overflow-wrap:anywhere}.cxc-f{-webkit-line-clamp:2}.cxc-pct{color:#FFD66B;margin-inline-start:6px}</style>`);
+}
+const calcCards = Object.fromEntries(LANGS.map(l => [l, calcJs.cards(l, CALC, T[l], calcAbs(l))]));
+
 // ---- Chrome（DevTools プロトコル）を1回だけ起動して全部撮る
 async function launch() {
   const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'og-prof-'));
@@ -234,7 +272,7 @@ async function launch() {
   await send('Emulation.setDeviceMetricsOverride', { width: 1200, height: 630, deviceScaleFactor: 1, mobile: false });
   return { send, once, close: () => { ws.close(); proc.kill(); try { fs.rmSync(profile, { recursive: true, force: true }); } catch {} } };
 }
-async function shoot(cdp, html, file, format) {
+async function shoot(cdp, html, file, format, quality = 82) {
   const tmpFile = path.join(tmp, 'p.html');
   fs.writeFileSync(tmpFile, html);
   const loaded = cdp.once('Page.loadEventFired');
@@ -242,7 +280,7 @@ async function shoot(cdp, html, file, format) {
   await loaded;
   const { result } = await cdp.send('Runtime.evaluate', { awaitPromise: true, returnByValue: true, expression: `document.fonts.ready.then(()=>[...document.fonts].filter(f=>f.status==='error').length)` });
   if (result.value) throw new Error(`${file}: ${result.value} font(s) failed`);
-  const r = await cdp.send('Page.captureScreenshot', format === 'png' ? { format: 'png' } : { format: 'jpeg', quality: 82 });
+  const r = await cdp.send('Page.captureScreenshot', format === 'png' ? { format: 'png' } : { format: 'jpeg', quality });
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, Buffer.from(r.data, 'base64'));
 }
@@ -300,6 +338,7 @@ for (const lang of ONLY) {
   for (const e of ESSAYS) { const html = essayHtml(e, lang); const rel = `essay/${lang}/${e.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const [rel, html] of [[`shindan/${lang}/index.jpg`, quizHtml(lang)], ...QUIZ.types.map(t => [`shindan/${lang}/${t.id}.jpg`, quizTypeHtml(t, lang)])]) { const key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = calcHtml(lang), rel = `calc/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+  for (const k of calcCards[lang]) { const rel = `calc/${lang}/${k.id}.jpg`, key = hash(calcCardHtml(k, lang)); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => calcCardHtml(k, lang, cardFonts(lang)), format: 'jpeg', quality: 72 }); }
   for (const g of GUIDES) { const html = guideHtml(g, lang); const rel = `guide/${lang}/${g.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
 }
 const iconsFresh = () => !FORCE && manifest['static/icons'] === hash(fs.readFileSync(path.join(STATIC, 'favicon.svg'), 'utf8')) && fs.existsSync(path.join(STATIC, 'favicon.ico'));
@@ -315,8 +354,8 @@ const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'og-'));
   try {
     await icons(cdp);
     saveManifest();
-    for (const { rel, key, mk, format } of todo) {
-      await shoot(cdp, mk(), path.join(OUT, rel), format);
+    for (const { rel, key, mk, format, quality } of todo) {
+      await shoot(cdp, mk(), path.join(OUT, rel), format, quality);
       // 1枚ごとに指紋を書く（途中で失敗しても、次は続きから）
       manifest[rel] = key; made++; saveManifest();
       if (format === 'png') console.log('og/' + rel); else if (made % 20 === 0) console.log(`... ${made} images`);

@@ -143,6 +143,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-7c7b3c244c.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-1508bfe2a6.woff2",
+    "chars": "£"
    }
   ],
   "de:body:700": [
@@ -181,6 +185,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-80460f62f0.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-0cefd3743c.woff2",
+    "chars": "£"
    }
   ],
   "de:display": [
@@ -259,6 +267,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-7c7b3c244c.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-1508bfe2a6.woff2",
+    "chars": "£"
    }
   ],
   "en:body:700": [
@@ -297,6 +309,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-80460f62f0.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-0cefd3743c.woff2",
+    "chars": "£"
    }
   ],
   "en:display": [
@@ -493,6 +509,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-42b4bdbf4f.woff2",
     "chars": "₹。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-f076eddaaa.woff2",
+    "chars": "£"
    }
   ],
   "hi:body:700": [
@@ -519,6 +539,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-e7f0f14bdc.woff2",
     "chars": "₹。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-adfa358b5b.woff2",
+    "chars": "£"
    }
   ],
   "hi:dot": [
@@ -683,6 +707,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-a5a00b33c1.woff2",
     "chars": "‘亡便債刷午噂執夢太奉師恐沼洋火父祖秘箝緯複責購逃郵針陪願"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-f33cfbc343.woff2",
+    "chars": "£€￥"
    }
   ],
   "ja:body:700": [
@@ -837,6 +865,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-24ec82f675.woff2",
     "chars": "‘亡便債刷午噂執夢太奉師恐沼洋火父祖秘箝緯複責購逃郵針陪願"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-1254d4e5f1.woff2",
+    "chars": "£€￥"
    }
   ],
   "ja:display": [
@@ -1103,6 +1135,10 @@
    {
     "file": "noto-sans-sc-400-zh-86d7977b58.woff2",
     "chars": "伪债偿兼努勾匙危唯妮宫寄巨捆旦朗梦欺沙沼洋渠温烦父盼盾祖秘纪胡脱茄莱虚衰袭谣谴贷陪鸽麻"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-aa5298e41e.woff2",
+    "chars": "£€镑"
    }
   ],
   "zh:body:700": [
@@ -1253,6 +1289,10 @@
    {
     "file": "noto-sans-sc-700-zh-eb5419da94.woff2",
     "chars": "伪债偿兼努勾匙危唯妮宫寄巨捆旦朗梦欺沙沼洋渠温烦父盼盾祖秘纪胡脱茄莱虚衰袭谣谴贷陪鸽麻"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-c11f705e8b.woff2",
+    "chars": "£€镑"
    }
   ],
   "zh:display": [
