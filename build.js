@@ -115,7 +115,7 @@ for (const t of QUIZ.types) { for (const l of LANGS) for (const f of ['name', 'd
 // BI計算機: /calc/。数字は CALC（data.js）、計算と描画は src/calc.js（ブラウザと同じコード）
 const calcPath = l => `${urlPath(l)}calc/`;
 const calcAbs = l => SITE_URL + calcPath(l);
-const CALC_KEYS = ['calcTitle', 'calcH1', 'calcDesc', 'calcIntro', 'calcCountry', 'calcWho', 'calcWhoAll', 'calcWhoAdults', 'calcWhoKids', 'calcAmount', 'calcCustom', 'calcResultEb', 'calcFormula', 'calcPeople', 'calcCmpH', 'calcCmpBudget', 'calcCmpSocial', 'calcCmpTax', 'calcCmpGdp', 'calcOf', 'calcShortBudget', 'calcShortGdp', 'calcShareX', 'calcShare', 'calcShareAll', 'calcShareAdults', 'calcShareKids', 'calcNoteH', 'calcNote', 'calcMore', 'calcSources', 'calcSrcPop', 'calcSrcBudget', 'calcSrcGdp', 'calcHome', 'calcUnits', 'calcMoney'];
+const CALC_KEYS = ['calcTitle', 'calcH1', 'calcDesc', 'calcIntro', 'calcCountry', 'calcWho', 'calcWhoAll', 'calcWhoAdults', 'calcWhoKids', 'calcAmount', 'calcCustom', 'calcResultEb', 'calcFormula', 'calcPeople', 'calcCmpH', 'calcCmpBudget', 'calcCmpSocial', 'calcCmpTax', 'calcCmpGdp', 'calcShareX', 'calcShare', 'calcAsk', 'calcTag', 'copyLink', 'linkCopied', 'calcShareAll', 'calcShareAdults', 'calcShareKids', 'calcNoteH', 'calcNote', 'calcMore', 'calcSources', 'calcSrcPop', 'calcSrcBudget', 'calcSrcGdp', 'calcHome', 'calcUnits', 'calcMoney'];
 for (const l of LANGS) for (const k of CALC_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 for (const l of LANGS) if (!CALC.countries.some(c => c.id === CALC.defaults[l])) throw new Error(`calc: no default country for ${l}`);
 for (const c of CALC.countries) {
@@ -126,6 +126,9 @@ for (const c of CALC.countries) {
   if (!c.presets.includes(c.def)) throw new Error(`calc ${c.id}: def not in presets`);
   for (const k of [p.src, c.gdp.src, c.budget && c.budget.src].filter(Boolean)) if (!CALC.sources[k] || !CALC.sources[k].url || !CALC.sources[k].year) throw new Error(`calc ${c.id}: unknown source ${k}`);
 }
+// 結果カード（国 × 配る相手 × プリセット金額）の文字と X に入れる文。X の上限（重み付き280字、CJK は2・URL は23）に収まるか確かめる
+const CALC_CARDS = Object.fromEntries(LANGS.map(l => [l, calcJs.cards(l, CALC, T[l], calcAbs(l))]));
+for (const l of LANGS) for (const k of CALC_CARDS[l]) { const n = calcJs.weighted(k.text); if (n > 280) throw new Error(`calc share text too long (${l} ${k.id}: ${n})`); }
 // サービスのカード・個別ページ・エッセイから、そのサービスのガイドへ
 const guideOf = s => GUIDES.find(g => g.svc === s.id);
 const guideLink = (lang, g, cls = 'g-link') => g ? `<p class="${cls}"><a href="${guidePath(lang, g)}">${esc(T[lang].guideRead.replace('{name}', g[lang].short))} ${RTL.has(lang) ? '←' : '→'}</a></p>` : '';
@@ -811,6 +814,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .cx-bar{display:block;height:8px;border-radius:999px;background:var(--line);overflow:hidden;margin-top:6px}
 .cx-bar i{display:block;height:100%;background:var(--cta);border-radius:999px}
 .cx .qz-acts{justify-content:flex-start}
+.cx-copy{min-height:52px;padding-inline:22px}
+.cx-copied{margin:0;min-height:1.5em;font-size:.875rem;color:var(--muted)}
 .cx-note p{font-size:.95rem;line-height:1.9;margin:0 0 10px}
 .cx-src dl{margin:0;display:grid;gap:12px;font-size:.8125rem;line-height:1.7;color:var(--muted)}
 .cx-src dt{font-weight:700;color:var(--ink)}
@@ -1497,6 +1502,12 @@ for (const { html, lang, file } of pages) {
 }
 // JS で出す文言（トーストなど）も本文の文字に入れる
 for (const l of LANGS) for (const v of Object.values(T[l])) add(roles[l].body, textOf(String(v)));
+// BI計算機が JS で出す国名・通貨名と、結果カード（og.js）の文字
+for (const l of LANGS) {
+  for (const c of CALC.countries) add(roles[l].body, c.name[l] + c.cur[l] + ((c.inName && c.inName[l]) || ''));
+  // ₹ はサイトの本文フォントに無い（Google Fonts が 400 を返す）ので、端末のフォントに任せる
+  for (const k of CALC_CARDS[l]) add(roles[l].body, [k.total, k.formula, k.place, k.who, k.text, ...k.rows.flat()].join('').replace(/₹/g, ''));
+}
 const logoChars = new Set(LANGS.flatMap(l => [...textOf(T[l].brand)]));
 const faceList = l => {
   const r = roles[l], disp = DISPLAY_FONT[l];
@@ -1525,6 +1536,13 @@ if (process.env.OG_SKIP) console.warn('og: skipped (OG_SKIP=1)');
 else for (let i = 1; i <= 3; i++) {
   try { execFileSync(process.execPath, [path.join(__dirname, 'og.js')], { stdio: 'inherit', timeout: 20 * 60000 }); break; }
   catch (e) { if (e.status === 2) break; console.warn(`og: attempt ${i} of 3 failed${i < 3 ? ', retrying' : ''}`); }
+}
+// BI計算機の結果カードの一覧（src/calc-cards.json）。src/worker.js が読み込み、/calc/?c=&w=&m= がこの組み合わせなら
+// og:image・twitter:image・og:title・og:description をそのカードに差し替える。画像ができているものだけ載せる
+{
+  const list = Object.fromEntries(LANGS.map(l => [l, Object.fromEntries(CALC_CARDS[l].filter(k => fs.existsSync(path.join(OG_DIR, 'calc', l, `${k.id}.jpg`))).map(k => [k.id, [k.title, k.desc]]))]));
+  const file = path.join(__dirname, 'src/calc-cards.json'), json = JSON.stringify(list) + '\n';
+  if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== json) fs.writeFileSync(file, json);
 }
 for (const { file, html, lang } of pages) fs.writeFileSync(file, ogResolve(html.replace('<!--@fonts@-->', fontHead[lang])));
 fs.mkdirSync(path.join(OUT, 'fonts'), { recursive: true });

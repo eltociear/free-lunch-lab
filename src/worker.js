@@ -2,6 +2,7 @@
 // 記録するのは パス・言語・?s=N（X の投稿ごとの印）・参照元のホスト名・ボットらしいかどうか だけ。
 // IP アドレス、ユーザーエージェントの文字列、Cookie、参照元のパスやクエリは記録しない。
 // フォントや画像などはこの Worker を通らない（wrangler.jsonc の run_worker_first で、ページのパスだけ通す）
+import CARDS from './calc-cards.json';
 const LANGS = new Set(['ja', 'zh', 'hi', 'es', 'de', 'ar']);
 const BOT = /bot|crawl|spider|slurp|preview|fetch|monitor|headless|lighthouse|curl|wget|python|httpclient|java\/|go-http|node/i;
 
@@ -32,6 +33,34 @@ export default {
         env.PAGEVIEWS.writeDataPoint({ indexes: [lang], blobs: [url.pathname.slice(0, 200), lang, s, ref.slice(0, 100), bot], doubles: [1] });
       }
     } catch {}
-    return res;
+    return calcCard(request, url, res);
   },
 };
+
+// BI計算機の結果カード: /calc/?c=jp&w=all&m=30000 のように、og.js が画像を作った組み合わせなら
+// og:image・twitter:image・og:title・og:description をその結果のものに書き換える（X などのリンクのプレビュー用）。
+// それ以外（パラメータなし・自由な金額・おかしな値）は元のページのまま
+const SITE = 'https://neteru-nyukin.eltociear.workers.dev';
+const CALC_PATH = /^\/(?:(ja|zh|hi|es|de|ar)\/)?calc\/$/;
+function calcCard(request, url, res) {
+  const m = request.method === 'GET' && res.status === 200 && url.search ? url.pathname.match(CALC_PATH) : null;
+  if (!m) return res;
+  const lang = m[1] || 'en';
+  const q = url.searchParams, amount = Number(q.get('m'));
+  const id = `${q.get('c')}-${q.get('w')}-${amount}`;
+  const hit = Object.prototype.hasOwnProperty.call(CARDS[lang] || {}, id) ? CARDS[lang][id] : null;
+  if (!hit) return res;
+  const [title, desc] = hit;
+  const image = `${SITE}/og/calc/${lang}/${id}.jpg`;
+  const set = v => ({ element(el) { el.setAttribute('content', v); } });
+  const out = new HTMLRewriter()
+    .on('meta[property="og:image"]', set(image))
+    .on('meta[name="twitter:image"]', set(image))
+    .on('meta[property="og:title"]', set(title))
+    .on('meta[property="og:description"]', set(desc))
+    .transform(res);
+  // 中身が元のファイルと変わるので、静的ファイルの ETag は付けない
+  const r = new Response(out.body, out);
+  r.headers.delete('etag');
+  return r;
+}

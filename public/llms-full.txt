@@ -1448,7 +1448,7 @@ The original Duniter node, written in TypeScript, that has run the Ğ1 libre cur
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-02
+- Last commit: 2026-11-03
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -1597,7 +1597,7 @@ Code of the NGO Social Income, which turns donations into an unconditional basic
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-11-02
+- Last commit: 2026-11-03
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 

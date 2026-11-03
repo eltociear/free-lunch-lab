@@ -135,6 +135,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-7c7b3c244c.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-e8f7133890.woff2",
+    "chars": "£₹"
    }
   ],
   "de:body:700": [
@@ -173,6 +177,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-80460f62f0.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-e9fbc232f8.woff2",
+    "chars": "£₹"
    }
   ],
   "de:display": [
@@ -251,6 +259,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-7c7b3c244c.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-e8f7133890.woff2",
+    "chars": "£₹"
    }
   ],
   "en:body:700": [
@@ -289,6 +301,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-80460f62f0.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-e9fbc232f8.woff2",
+    "chars": "£₹"
    }
   ],
   "en:display": [
@@ -477,6 +493,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-42b4bdbf4f.woff2",
     "chars": "₹。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-f076eddaaa.woff2",
+    "chars": "£"
    }
   ],
   "hi:body:700": [
@@ -503,6 +523,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-e7f0f14bdc.woff2",
     "chars": "₹。がでにのウコジスタデナルロ万人付別務型定対急感新染済特症省策約経給緊総象貨通連金関額"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-adfa358b5b.woff2",
+    "chars": "£"
    }
   ],
   "hi:dot": [
@@ -663,6 +687,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-164f4aa2b8.woff2",
     "chars": "倫否徳怠惰懐拾波演盤秋臨講軸遣"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-b51634c6b2.woff2",
+    "chars": "£€₹￥"
    }
   ],
   "ja:body:700": [
@@ -813,6 +841,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-399ab45939.woff2",
     "chars": "倫否徳怠惰懐拾波演盤秋臨講軸遣"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-60523ef23a.woff2",
+    "chars": "£€₹￥"
    }
   ],
   "ja:display": [
@@ -1067,6 +1099,10 @@
    {
     "file": "noto-sans-sc-400-zh-275a89f3e4.woff2",
     "chars": "伦佣吻彩恶惰懒揽欠演焦秋轴辩闪"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-421df19465.woff2",
+    "chars": "£€₹镑"
    }
   ],
   "zh:body:700": [
@@ -1209,6 +1245,10 @@
    {
     "file": "noto-sans-sc-700-zh-ce38eae6e1.woff2",
     "chars": "伦佣吻彩恶惰懒揽欠演焦秋轴辩闪"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-d607b05759.woff2",
+    "chars": "£€₹镑"
    }
   ],
   "zh:display": [
