@@ -8820,7 +8820,7 @@ module.exports = {
         "en": [
           [
             "p",
-            "On 1 November 2026, the paid online community Zenrikkoku (善意立国, roughly “a nation built on goodwill”) relaunched with a new page titled “How far can you earn with AI alone: the money of the goodwill ogre.” In it, an AI called Sato, built by Gen Matsuda, tries ways to earn money itself and publishes the results every day, exactly as they come out. Membership costs ¥2,980 a month.[1]"
+            "On 1 November 2026, the paid online community Zenination (善意立国, roughly “a nation built on goodwill”) relaunched with a new page titled “How far can you earn with AI alone: the money of the goodwill ogre.” In it, an AI called Sato, built by Gen Matsuda, tries ways to earn money itself and publishes the results every day, exactly as they come out. Membership costs ¥2,980 a month.[1]"
           ],
           [
             "p",
@@ -8900,7 +8900,7 @@ module.exports = {
           ],
           [
             "o",
-            "In these, recipients pay nothing and are not asked to work. Zenrikkoku’s experiment takes a different road: building the ability to earn for yourself. Both point the same way, toward a thicker floor under people’s lives. Keeping the words apart makes the good in each easier to see."
+            "In these, recipients pay nothing and are not asked to work. Zenination’s experiment takes a different road: building the ability to earn for yourself. Both point the same way, toward a thicker floor under people’s lives. Keeping the words apart makes the good in each easier to see."
           ],
           [
             "h",
@@ -8908,7 +8908,7 @@ module.exports = {
           ],
           [
             "o",
-            "When you see the phrase “basic income,” a few checks help. Who pays whom? Is there money to pay up front? Are there conditions or work involved? Would it continue if you stopped? In Zenrikkoku’s case, the page itself answers nearly all of these."
+            "When you see the phrase “basic income,” a few checks help. Who pays whom? Is there money to pay up front? Are there conditions or work involved? Would it continue if you stopped? In Zenination’s case, the page itself answers nearly all of these."
           ],
           [
             "p",
@@ -8916,7 +8916,7 @@ module.exports = {
           ],
           [
             "o",
-            "This site does not list anything that requires a deposit or investment, promises returns or charges a fee to take part. In that sense Zenrikkoku sits outside our list, but we thought it worth writing about here."
+            "This site does not list anything that requires a deposit or investment, promises returns or charges a fee to take part. In that sense Zenination sits outside our list, but we thought it worth writing about here."
           ],
           [
             "o",
@@ -9032,7 +9032,7 @@ module.exports = {
         "hi": [
           [
             "p",
-            "1 नवंबर 2026 को सदस्यता शुल्क वाले ऑनलाइन समुदाय “ज़ेनइरिक्कोकु” (मोटे तौर पर “सद्भावना पर बना देश”) ने एक नए पेज के साथ दोबारा शुरुआत की, जिसका शीर्षक है “सिर्फ़ AI से कितना कमाया जा सकता है: सद्भावना वाले दानव का पैसा।” इसमें गेन मात्सुदा का बनाया AI “सातो” ख़ुद कमाने के तरीक़े आज़माता है और हर दिन नतीजे ठीक वैसे ही आँकड़ों में छापता है जैसे वे आते हैं। सदस्यता 2,980 येन प्रति माह है।[1]"
+            "1 नवंबर 2026 को सदस्यता शुल्क वाले ऑनलाइन समुदाय “Zenination” (मोटे तौर पर “सद्भावना पर बना देश”) ने एक नए पेज के साथ दोबारा शुरुआत की, जिसका शीर्षक है “सिर्फ़ AI से कितना कमाया जा सकता है: सद्भावना वाले दानव का पैसा।” इसमें गेन मात्सुदा का बनाया AI “सातो” ख़ुद कमाने के तरीक़े आज़माता है और हर दिन नतीजे ठीक वैसे ही आँकड़ों में छापता है जैसे वे आते हैं। सदस्यता 2,980 येन प्रति माह है।[1]"
           ],
           [
             "p",
@@ -9112,7 +9112,7 @@ module.exports = {
           ],
           [
             "o",
-            "इनमें पाने वाले कुछ नहीं चुकाते और उनसे काम नहीं माँगा जाता। ज़ेनइरिक्कोकु का प्रयोग दूसरा रास्ता लेता है: ख़ुद कमाने की क्षमता बनाना। दोनों एक ही दिशा में हैं, लोगों की ज़िंदगी के नीचे मज़बूत ज़मीन की ओर। शब्दों को अलग रखने से दोनों की अच्छाई देखना आसान होता है।"
+            "इनमें पाने वाले कुछ नहीं चुकाते और उनसे काम नहीं माँगा जाता। Zenination का प्रयोग दूसरा रास्ता लेता है: ख़ुद कमाने की क्षमता बनाना। दोनों एक ही दिशा में हैं, लोगों की ज़िंदगी के नीचे मज़बूत ज़मीन की ओर। शब्दों को अलग रखने से दोनों की अच्छाई देखना आसान होता है।"
           ],
           [
             "h",
@@ -9120,7 +9120,7 @@ module.exports = {
           ],
           [
             "o",
-            "“बेसिक इनकम” शब्द दिखे तो कुछ बातें जाँच लेना मददगार है। कौन किसे भुगतान करता है? क्या पहले कुछ चुकाना है? क्या शर्तें या काम जुड़े हैं? क्या आपके रुकने पर भी यह चलता रहेगा? ज़ेनइरिक्कोकु के मामले में पेज ख़ुद लगभग इन सबका जवाब देता है।"
+            "“बेसिक इनकम” शब्द दिखे तो कुछ बातें जाँच लेना मददगार है। कौन किसे भुगतान करता है? क्या पहले कुछ चुकाना है? क्या शर्तें या काम जुड़े हैं? क्या आपके रुकने पर भी यह चलता रहेगा? Zenination के मामले में पेज ख़ुद लगभग इन सबका जवाब देता है।"
           ],
           [
             "p",
@@ -9128,7 +9128,7 @@ module.exports = {
           ],
           [
             "o",
-            "यह साइट ऐसी कोई चीज़ सूचीबद्ध नहीं करती जिसमें जमा या निवेश ज़रूरी हो, जो रिटर्न का वादा करे या भाग लेने के लिए शुल्क ले। इस अर्थ में ज़ेनइरिक्कोकु हमारी सूची से बाहर है, लेकिन हमें लगा कि इस पर यहाँ लिखना सार्थक है।"
+            "यह साइट ऐसी कोई चीज़ सूचीबद्ध नहीं करती जिसमें जमा या निवेश ज़रूरी हो, जो रिटर्न का वादा करे या भाग लेने के लिए शुल्क ले। इस अर्थ में Zenination हमारी सूची से बाहर है, लेकिन हमें लगा कि इस पर यहाँ लिखना सार्थक है।"
           ],
           [
             "o",
@@ -9138,7 +9138,7 @@ module.exports = {
         "es": [
           [
             "p",
-            "El 1 de noviembre de 2026, la comunidad en línea de pago Zenrikkoku (善意立国, más o menos «una nación hecha de buena voluntad») se relanzó con una página nueva titulada «Hasta dónde se puede ganar solo con IA: el dinero del ogro de la buena voluntad». En ella, una IA llamada Sato, creada por Gen Matsuda, prueba por sí misma formas de ganar dinero y publica los resultados cada día, tal como salen. Ser miembro cuesta 2.980 yenes al mes.[1]"
+            "El 1 de noviembre de 2026, la comunidad en línea de pago Zenination (善意立国, más o menos «una nación hecha de buena voluntad») se relanzó con una página nueva titulada «Hasta dónde se puede ganar solo con IA: el dinero del ogro de la buena voluntad». En ella, una IA llamada Sato, creada por Gen Matsuda, prueba por sí misma formas de ganar dinero y publica los resultados cada día, tal como salen. Ser miembro cuesta 2.980 yenes al mes.[1]"
           ],
           [
             "p",
@@ -9218,7 +9218,7 @@ module.exports = {
           ],
           [
             "o",
-            "En ellos, quien recibe no paga nada y no se le pide trabajar. El experimento de Zenrikkoku toma otro camino: desarrollar la capacidad de ganar por uno mismo. Ambos apuntan en la misma dirección, hacia un suelo más firme bajo la vida de la gente. Mantener separadas las palabras hace más fácil ver lo bueno de cada uno."
+            "En ellos, quien recibe no paga nada y no se le pide trabajar. El experimento de Zenination toma otro camino: desarrollar la capacidad de ganar por uno mismo. Ambos apuntan en la misma dirección, hacia un suelo más firme bajo la vida de la gente. Mantener separadas las palabras hace más fácil ver lo bueno de cada uno."
           ],
           [
             "h",
@@ -9226,7 +9226,7 @@ module.exports = {
           ],
           [
             "o",
-            "Cuando veas la expresión «renta básica», ayuda comprobar algunas cosas. ¿Quién paga a quién? ¿Hay que pagar algo por adelantado? ¿Hay condiciones o trabajo de por medio? ¿Seguiría si te detuvieras? En el caso de Zenrikkoku, la propia página responde a casi todas."
+            "Cuando veas la expresión «renta básica», ayuda comprobar algunas cosas. ¿Quién paga a quién? ¿Hay que pagar algo por adelantado? ¿Hay condiciones o trabajo de por medio? ¿Seguiría si te detuvieras? En el caso de Zenination, la propia página responde a casi todas."
           ],
           [
             "p",
@@ -9234,7 +9234,7 @@ module.exports = {
           ],
           [
             "o",
-            "Este sitio no incluye en su lista nada que exija un depósito o una inversión, prometa rendimientos o cobre una cuota para participar. En ese sentido Zenrikkoku queda fuera de la lista, pero nos pareció que valía la pena escribir sobre ello aquí."
+            "Este sitio no incluye en su lista nada que exija un depósito o una inversión, prometa rendimientos o cobre una cuota para participar. En ese sentido Zenination queda fuera de la lista, pero nos pareció que valía la pena escribir sobre ello aquí."
           ],
           [
             "o",
@@ -9244,7 +9244,7 @@ module.exports = {
         "de": [
           [
             "p",
-            "Am 1. November 2026 startete die kostenpflichtige Online-Community Zenrikkoku (善意立国, etwa „ein Staat aus gutem Willen“) mit einer neuen Seite neu. Ihr Titel: „Wie weit kommt man allein mit KI beim Geldverdienen: das Geld des Dämons des guten Willens“. Darin probiert eine KI namens Sato, gebaut von Gen Matsuda, selbst Wege zum Geldverdienen aus und veröffentlicht die Ergebnisse jeden Tag so, wie sie sind. Die Mitgliedschaft kostet 2.980 Yen im Monat.[1]"
+            "Am 1. November 2026 startete die kostenpflichtige Online-Community Zenination (善意立国, etwa „ein Staat aus gutem Willen“) mit einer neuen Seite neu. Ihr Titel: „Wie weit kommt man allein mit KI beim Geldverdienen: das Geld des Dämons des guten Willens“. Darin probiert eine KI namens Sato, gebaut von Gen Matsuda, selbst Wege zum Geldverdienen aus und veröffentlicht die Ergebnisse jeden Tag so, wie sie sind. Die Mitgliedschaft kostet 2.980 Yen im Monat.[1]"
           ],
           [
             "p",
@@ -9324,7 +9324,7 @@ module.exports = {
           ],
           [
             "o",
-            "Dort zahlen die Empfänger nichts und müssen nicht arbeiten. Das Experiment von Zenrikkoku geht einen anderen Weg: die Fähigkeit aufzubauen, selbst zu verdienen. Beide zeigen in dieselbe Richtung, zu einem festeren Boden unter dem Leben der Menschen. Wer die Wörter auseinanderhält, sieht das Gute an beidem leichter."
+            "Dort zahlen die Empfänger nichts und müssen nicht arbeiten. Das Experiment von Zenination geht einen anderen Weg: die Fähigkeit aufzubauen, selbst zu verdienen. Beide zeigen in dieselbe Richtung, zu einem festeren Boden unter dem Leben der Menschen. Wer die Wörter auseinanderhält, sieht das Gute an beidem leichter."
           ],
           [
             "h",
@@ -9332,7 +9332,7 @@ module.exports = {
           ],
           [
             "o",
-            "Wenn dir der Ausdruck „Grundeinkommen“ begegnet, helfen ein paar Fragen. Wer zahlt wem? Muss man vorab etwas zahlen? Gibt es Bedingungen oder Arbeit? Ginge es weiter, wenn du aufhörst? Im Fall von Zenrikkoku beantwortet die Seite fast alle davon selbst."
+            "Wenn dir der Ausdruck „Grundeinkommen“ begegnet, helfen ein paar Fragen. Wer zahlt wem? Muss man vorab etwas zahlen? Gibt es Bedingungen oder Arbeit? Ginge es weiter, wenn du aufhörst? Im Fall von Zenination beantwortet die Seite fast alle davon selbst."
           ],
           [
             "p",
@@ -9340,7 +9340,7 @@ module.exports = {
           ],
           [
             "o",
-            "Diese Seite nimmt nichts in ihre Liste auf, das eine Einzahlung oder Investition verlangt, Renditen verspricht oder für die Teilnahme einen Beitrag erhebt. In diesem Sinn steht Zenrikkoku außerhalb unserer Liste, aber wir fanden es lohnend, hier darüber zu schreiben."
+            "Diese Seite nimmt nichts in ihre Liste auf, das eine Einzahlung oder Investition verlangt, Renditen verspricht oder für die Teilnahme einen Beitrag erhebt. In diesem Sinn steht Zenination außerhalb unserer Liste, aber wir fanden es lohnend, hier darüber zu schreiben."
           ],
           [
             "o",
@@ -9350,7 +9350,7 @@ module.exports = {
         "ar": [
           [
             "p",
-            "في 1 نوفمبر 2026 أعاد المجتمع الإلكتروني المدفوع «زِنريككوكو» (أي تقريبًا «أمة قائمة على حسن النية») إطلاق نفسه بصفحة جديدة عنوانها «إلى أي حد يمكن الكسب بالذكاء الاصطناعي وحده: مال غول حسن النية». وفيها يجرّب ذكاء اصطناعي اسمه «ساتو»، صنعه ⁦Gen Matsuda⁩، طرق الكسب بنفسه، وينشر النتائج كل يوم كما هي. تكلّف العضوية 2,980 ينًا شهريًا.[1]"
+            "في 1 نوفمبر 2026 أعاد المجتمع الإلكتروني المدفوع «⁦Zenination⁩» (أي تقريبًا «أمة قائمة على حسن النية») إطلاق نفسه بصفحة جديدة عنوانها «إلى أي حد يمكن الكسب بالذكاء الاصطناعي وحده: مال غول حسن النية». وفيها يجرّب ذكاء اصطناعي اسمه «ساتو»، صنعه ⁦Gen Matsuda⁩، طرق الكسب بنفسه، وينشر النتائج كل يوم كما هي. تكلّف العضوية 2,980 ينًا شهريًا.[1]"
           ],
           [
             "p",
@@ -9430,7 +9430,7 @@ module.exports = {
           ],
           [
             "o",
-            "في هذه المدفوعات لا يدفع المستفيدون شيئًا ولا يُطلب منهم العمل. أما تجربة زِنريككوكو فتسلك طريقًا آخر: بناء القدرة على الكسب بنفسك. وكلاهما يتجه الوجهة نفسها، نحو أرضية أمتن تحت حياة الناس. والتفريق بين الكلمات يجعل رؤية الجيد في كلٍّ منهما أسهل."
+            "في هذه المدفوعات لا يدفع المستفيدون شيئًا ولا يُطلب منهم العمل. أما تجربة ⁦Zenination⁩ فتسلك طريقًا آخر: بناء القدرة على الكسب بنفسك. وكلاهما يتجه الوجهة نفسها، نحو أرضية أمتن تحت حياة الناس. والتفريق بين الكلمات يجعل رؤية الجيد في كلٍّ منهما أسهل."
           ],
           [
             "h",
@@ -9438,7 +9438,7 @@ module.exports = {
           ],
           [
             "o",
-            "حين تصادف عبارة «الدخل الأساسي»، يفيد أن تتحقق من بضعة أمور. من يدفع لمن؟ هل هناك مال يجب دفعه مسبقًا؟ هل هناك شروط أو عمل؟ هل سيستمر إن توقفت؟ وفي حالة زِنريككوكو، تجيب الصفحة نفسها عن معظم هذه الأسئلة."
+            "حين تصادف عبارة «الدخل الأساسي»، يفيد أن تتحقق من بضعة أمور. من يدفع لمن؟ هل هناك مال يجب دفعه مسبقًا؟ هل هناك شروط أو عمل؟ هل سيستمر إن توقفت؟ وفي حالة ⁦Zenination⁩، تجيب الصفحة نفسها عن معظم هذه الأسئلة."
           ],
           [
             "p",
@@ -9446,7 +9446,7 @@ module.exports = {
           ],
           [
             "o",
-            "لا يُدرج هذا الموقع في قائمته أي شيء يتطلب إيداعًا أو استثمارًا، أو يَعِد بعوائد، أو يفرض اشتراكًا للمشاركة. وبهذا المعنى يقع زِنريككوكو خارج قائمتنا، لكننا رأينا أنه يستحق الكتابة عنه هنا."
+            "لا يُدرج هذا الموقع في قائمته أي شيء يتطلب إيداعًا أو استثمارًا، أو يَعِد بعوائد، أو يفرض اشتراكًا للمشاركة. وبهذا المعنى يقع ⁦Zenination⁩ خارج قائمتنا، لكننا رأينا أنه يستحق الكتابة عنه هنا."
           ],
           [
             "o",
@@ -9457,7 +9457,7 @@ module.exports = {
       "sources": [
         {
           "n": 1,
-          "label": "Zenination (Zen’i Rikkoku, a paid membership community) — “How far can you earn with AI alone: the money of the goodwill ogre” (in Japanese; figures on the page as of 29 Oct 2026; fetched 3 Nov 2026)",
+          "label": "Zenination (a paid membership community) — “How far can you earn with AI alone: the money of the goodwill ogre” (in Japanese; figures on the page as of 29 Oct 2026; fetched 3 Nov 2026)",
           "url": "https://genmatsuda-code.github.io/zenination/oni.html"
         },
         {
