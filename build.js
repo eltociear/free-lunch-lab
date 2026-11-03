@@ -1606,6 +1606,9 @@ ${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlA
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+// IndexNow の鍵ファイル（/{key}.txt に鍵そのものを置く）。鍵は src/indexnow-key.txt に一度だけ作ったもの。送信は indexnow.js
+const INDEXNOW_KEY = fs.readFileSync(path.join(__dirname, 'src/indexnow-key.txt'), 'utf8').trim();
+fs.writeFileSync(path.join(OUT, `${INDEXNOW_KEY}.txt`), `${INDEXNOW_KEY}\n`);
 // ---- オープンデータ: 表示中のサービスと墓場を JSON で。data/（リポジトリに入れる）と public/（サイトで配る）の両方へ
 // generatedAt は確認月の最新値にして、中身が変わらないかぎり再ビルドで差分が出ないようにする
 const clean = t => String(t).replace(/[\u2066-\u2069\u200e\u200f\u202a-\u202e]/g, '');
