@@ -2870,6 +2870,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-03",
+      "ja": "ベーシックインカム実験の年表に、韓国の農漁村基本所得モデル事業を追加（人口減少地域の17郡の住民全員に、月15万ウォンを地域商品券で2年間）",
+      "en": "Added South Korea’s Rural Basic Income Pilot to the basic income timeline (150,000 won a month in local vouchers for two years to every resident of 17 depopulating counties)",
+      "zh": "在基本收入实验年表中新增韩国的农渔村基本收入试点（向人口减少地区 17 个郡的全体居民，以地区商品券每月发放 15 万韩元，为期两年）",
+      "hi": "बेसिक इनकम प्रयोगों की समयरेखा में दक्षिण कोरिया का ग्रामीण बेसिक इनकम पायलट जोड़ा (घटती आबादी वाले 17 काउंटी के हर निवासी को दो साल तक हर महीने 1,50,000 वॉन, स्थानीय वाउचर में)",
+      "es": "Añadido a la cronología de la renta básica el piloto de renta básica rural de Corea del Sur (150.000 wones al mes en vales locales durante dos años para todos los residentes de 17 condados en declive demográfico)",
+      "de": "Südkoreas ländliches Grundeinkommen-Pilotprojekt zur Zeitleiste hinzugefügt (150.000 Won im Monat in lokalen Gutscheinen für zwei Jahre an alle Einwohner von 17 schrumpfenden Landkreisen)",
+      "ar": "أضفنا إلى الخط الزمني للدخل الأساسي تجربة الدخل الأساسي الريفي في كوريا الجنوبية (150,000 وون شهريًا بقسائم محلية لمدة عامين لكل سكان 17 مقاطعة يتناقص سكانها)"
+    },
+    {
+      "date": "2026-11-03",
       "ja": "エッセイ「月1万円を、全部見せながら稼ぐ実験：「自分のベーシックインカム」という言葉について」を公開",
       "en": "Published the essay “Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’”",
       "zh": "发布随笔《把账本全部公开、每月赚 1 万日元的实验：关于“自己的基本收入”这个说法》",
@@ -8501,6 +8511,49 @@ module.exports = {
         "ar": "وصفته ⁦ABC News⁩ بأنه الأول من نوعه عالميًا. سجّل نحو 33,000 شخص للدفعة الأولى، وأفادت ⁦Marshall Islands Journal⁩ بصرف ⁦$215.85⁩ لكل من 40,714 شخصًا في أغسطس 2026. ويتغير المبلغ للفرد لأن الحكومة، بحسب ⁦The Economist⁩، تقسم مبلغًا ثابتًا بالتساوي على جميع المسجلين. وبموجب تجديد الاتفاق في 2023 تدفع الولايات المتحدة للصندوق 200 مليون دولار سنويًا في 2024–2026 و100 مليون في 2027، ولا مساهمات أمريكية مقررة بعد ذلك؛ وبلغ الصندوق نحو 1.3 مليار دولار في منتصف 2025. وأوصى صندوق النقد الدولي باستبدال الدفع للجميع ببرنامج موجّه، وأبدى مخاوف بشأن الأصل الرقمي ⁦USDM1⁩"
       },
       "source": "https://www.lowyinstitute.org/the-interpreter/marshall-islands-experiment-universal-basic-income"
+    },
+    {
+      "id": "korea-rural",
+      "years": "2026–2027",
+      "type": "gov",
+      "name": "Rural Basic Income Pilot",
+      "place": {
+        "ja": "韓国の人口減少地域の17郡（当初10郡、2026年6月に7郡を追加）",
+        "en": "17 depopulating rural counties in South Korea (10 at first, 7 more added in June 2026)",
+        "zh": "韩国人口减少地区的 17 个郡（最初 10 个，2026 年 6 月新增 7 个）",
+        "hi": "दक्षिण कोरिया के घटती आबादी वाले 17 ग्रामीण काउंटी (शुरू में 10, जून 2026 में 7 और जुड़े)",
+        "es": "17 condados rurales en declive demográfico de Corea del Sur (10 al principio, 7 más desde junio de 2026)",
+        "de": "17 schrumpfende Landkreise in Südkorea (anfangs 10, im Juni 2026 kamen 7 hinzu)",
+        "ar": "17 مقاطعة ريفية يتناقص سكانها في كوريا الجنوبية (10 في البداية، وأُضيفت 7 في يونيو 2026)"
+      },
+      "who": {
+        "ja": "韓国の農林畜産食品部と道・郡。費用は国が40%、道が30%、郡が30%を負担",
+        "en": "South Korea’s Ministry of Agriculture, Food and Rural Affairs (MAFRA) with provincial and county governments; the central government pays 40%, provinces 30% and counties 30%",
+        "zh": "韩国农林畜产食品部与道、郡政府；费用由中央政府承担 40%，道承担 30%，郡承担 30%",
+        "hi": "दक्षिण कोरिया का कृषि, खाद्य और ग्रामीण मामलों का मंत्रालय (MAFRA), प्रांतीय और काउंटी सरकारों के साथ; ख़र्च का 40% केंद्र सरकार, 30% प्रांत और 30% काउंटी देते हैं",
+        "es": "Ministerio de Agricultura, Alimentación y Asuntos Rurales de Corea del Sur (MAFRA), con las provincias y los condados; el gobierno central paga el 40 %, las provincias el 30 % y los condados el 30 %",
+        "de": "Südkoreas Ministerium für Landwirtschaft, Ernährung und ländliche Angelegenheiten (MAFRA) mit Provinzen und Landkreisen; der Zentralstaat zahlt 40 %, die Provinzen 30 % und die Landkreise 30 %",
+        "ar": "وزارة الزراعة والغذاء والشؤون الريفية في كوريا الجنوبية (⁦MAFRA⁩) مع حكومات المقاطعات والأقاليم؛ تدفع الحكومة المركزية 40% والأقاليم 30% والمقاطعات 30%"
+      },
+      "paid": {
+        "ja": "郡に住民登録して30日以上住む韓国国民全員に、所得の審査も就労要件もなく、1人月15万ウォン（約100ドル）を、その地域でだけ使える地域商品券（カード型かモバイル型）で2年間（2026〜2027年）。2025年10月に7郡を選び、12月に3郡を追加。この10郡は2026年2月26〜27日に初回を支給し、2026年6月11日に追加された7郡は8月から。新しく転入した人は、90日の実居住の確認後に3か月分をさかのぼって受け取る。宝城郡は独自財源で5万ウォンを上乗せして月20万ウォン、報恩郡は1万ウォンを上乗せ",
+        "en": "150,000 won (about US$100) a month per person for two years (2026–2027), in local gift certificates (card or mobile) that can only be spent in the area, to every Korean national registered and living in the county for at least 30 days, with no income test or work requirement. Seven counties were picked in October 2025 and three added in December; those 10 made their first payments on 26–27 February 2026, and the 7 added on 11 June 2026 began in August. Newcomers are paid only after 90 days of verified residence, with three months back-paid. Boseong adds 50,000 won from its own funds (200,000 won in total) and Boeun 10,000 won",
+        "zh": "向在郡内登记户籍并居住 30 天以上的全体韩国国民，不审查收入、不要求工作，每人每月发放 15 万韩元（约 100 美元），以只能在当地使用的地区商品券（卡或手机）发放，为期两年（2026 至 2027 年）。2025 年 10 月选出 7 个郡，12 月追加 3 个；这 10 个郡于 2026 年 2 月 26 至 27 日首次发放，2026 年 6 月 11 日新增的 7 个郡从 8 月开始。新迁入者须经 90 天实际居住确认后，才补发 3 个月的金额。宝城郡用自有资金每月多发 5 万韩元（共 20 万韩元），报恩郡多发 1 万韩元",
+        "hi": "काउंटी में पंजीकृत और कम से कम 30 दिन से रह रहे हर कोरियाई नागरिक को, बिना आय-जाँच या काम की शर्त के, दो साल (2026–2027) तक हर महीने प्रति व्यक्ति 1,50,000 वॉन (लगभग US$100), स्थानीय गिफ़्ट सर्टिफ़िकेट (कार्ड या मोबाइल) में, जो सिर्फ़ उसी इलाके में ख़र्च हो सकते हैं। अक्टूबर 2025 में 7 काउंटी चुने गए और दिसंबर में 3 जुड़े; इन 10 ने 26–27 फ़रवरी 2026 को पहला भुगतान किया, और 11 जून 2026 को जुड़े 7 ने अगस्त से। नए आने वालों को 90 दिन के सत्यापित निवास के बाद ही, तीन महीने का बकाया एक साथ मिलता है। बोसोंग अपने पैसे से 50,000 वॉन और जोड़ता है (कुल 2,00,000 वॉन), बोउन 10,000 वॉन",
+        "es": "150.000 wones (unos 100 US$) al mes por persona durante dos años (2026–2027), en vales locales (tarjeta o móvil) que solo se pueden gastar en la zona, para todos los ciudadanos coreanos empadronados y residentes en el condado desde hace al menos 30 días, sin comprobación de ingresos ni exigencia de trabajo. Se eligieron 7 condados en octubre de 2025 y se añadieron 3 en diciembre; esos 10 hicieron el primer pago el 26 y 27 de febrero de 2026, y los 7 añadidos el 11 de junio de 2026 empezaron en agosto. Los recién llegados solo cobran tras 90 días de residencia comprobada, con tres meses con carácter retroactivo. Boseong añade 50.000 wones con fondos propios (200.000 en total) y Boeun 10.000",
+        "de": "150.000 Won (rund 100 US$) im Monat pro Person für zwei Jahre (2026–2027), als lokale Gutscheine (Karte oder Handy), die nur in der Region gelten, an alle koreanischen Staatsbürger, die seit mindestens 30 Tagen im Landkreis gemeldet sind und dort wohnen, ohne Einkommensprüfung oder Arbeitspflicht. Im Oktober 2025 wurden 7 Landkreise ausgewählt, im Dezember kamen 3 hinzu; diese 10 zahlten erstmals am 26. und 27. Februar 2026, die am 11. Juni 2026 hinzugekommenen 7 ab August. Neu Zugezogene erhalten erst nach 90 Tagen nachgewiesenen Wohnens Geld, dann drei Monate rückwirkend. Boseong legt aus eigenen Mitteln 50.000 Won drauf (insgesamt 200.000 Won), Boeun 10.000 Won",
+        "ar": "150,000 وون (نحو ⁦US$100⁩) شهريًا للفرد لمدة عامين (2026–2027)، في صورة قسائم محلية (بطاقة أو هاتف) لا تُنفق إلا في المنطقة، لكل مواطن كوري مسجّل في المقاطعة ومقيم فيها منذ 30 يومًا على الأقل، دون اختبار للدخل أو شرط للعمل. اختيرت 7 مقاطعات في أكتوبر 2025 وأُضيفت 3 في ديسمبر؛ وصرفت هذه المقاطعات العشر أول دفعة في 26 و27 فبراير 2026، وبدأت المقاطعات السبع المضافة في 11 يونيو 2026 في أغسطس. ولا يحصل القادمون الجدد على المال إلا بعد التحقق من إقامتهم 90 يومًا، ثم تُصرف لهم ثلاثة أشهر بأثر رجعي. وتضيف بوسونغ 50,000 وون من مواردها (200,000 وون في المجموع)، وبوون 10,000 وون"
+      },
+      "result": {
+        "ja": "農林畜産食品部によると、最初の10郡の人口は事業開始後に4.7%増え、地域商品券の加盟店は13.7%増えた。沃川郡には2025年12月の1か月で1,491人が転入（転出は290人）、青松郡には選定後の1週間で318人が転入した。一方、沃川郡は2年間で約530億ウォン、郡の予算の約30%を用意する必要があり、ほかの事業を止めている。BIENは、この形はBIENの定義（全員への定期的な現金給付）に当たらないとしている。対象は一部の郡に限られ、払われるのは地域商品券",
+        "en": "The ministry says the population of the first 10 counties rose 4.7% after the pilot began, and local-currency merchants 13.7%. Okcheon gained 1,491 new residents in December 2025 (290 left), and Cheongsong 318 in the week after it was selected. Okcheon must find about 53 billion won over two years, roughly 30% of its budget, and has suspended other programs. BIEN says this version does not meet its definition, a periodic cash payment to all; the pilot is limited to some counties and paid in local vouchers",
+        "zh": "据农林畜产食品部，最初 10 个郡的人口在项目开始后增加 4.7%，地区商品券加盟店增加 13.7%。沃川郡在 2025 年 12 月一个月内迁入 1,491 人（迁出 290 人），青松郡在入选后一周内迁入 318 人。另一方面，沃川郡两年内需筹措约 530 亿韩元，约占郡预算的 30%，已暂停其他项目。BIEN 认为这种形式不符合其定义（向所有人定期发放现金）；该试点只限部分郡，并以地区商品券发放",
+        "hi": "मंत्रालय के अनुसार पहले 10 काउंटी की आबादी पायलट शुरू होने के बाद 4.7% बढ़ी, और स्थानीय मुद्रा लेने वाली दुकानें 13.7%। ओकचॉन में दिसंबर 2025 में 1,491 नए निवासी आए (290 गए), और चोंगसोंग में चुने जाने के बाद एक हफ़्ते में 318। ओकचॉन को दो साल में लगभग 5,300 करोड़ वॉन जुटाने हैं, जो उसके बजट का लगभग 30% है, और उसने दूसरे कार्यक्रम रोक दिए हैं। BIEN के अनुसार यह रूप उसकी परिभाषा (सबको नियमित नकद भुगतान) पर खरा नहीं उतरता; पायलट कुछ काउंटी तक सीमित है और स्थानीय वाउचर में दिया जाता है",
+        "es": "Según el ministerio, la población de los 10 primeros condados creció un 4,7 % tras el inicio del piloto, y los comercios que aceptan la moneda local un 13,7 %. Okcheon ganó 1.491 nuevos residentes en diciembre de 2025 (se fueron 290) y Cheongsong 318 en la semana siguiente a su selección. Okcheon debe reunir unos 53.000 millones de wones en dos años, cerca del 30 % de su presupuesto, y ha suspendido otros programas. BIEN señala que esta versión no cumple su definición, un pago periódico en efectivo para todos; el piloto se limita a algunos condados y se paga en vales locales",
+        "de": "Laut Ministerium stieg die Bevölkerung der ersten 10 Landkreise nach Start des Pilotprojekts um 4,7 %, die Zahl der Geschäfte mit Lokalwährung um 13,7 %. Okcheon gewann im Dezember 2025 1.491 neue Einwohner (290 zogen weg), Cheongsong 318 in der Woche nach seiner Auswahl. Okcheon muss in zwei Jahren rund 53 Mrd. Won aufbringen, etwa 30 % seines Haushalts, und hat andere Programme ausgesetzt. BIEN hält fest, dass diese Form nicht seiner Definition entspricht, einer regelmäßigen Geldzahlung an alle; das Pilotprojekt ist auf einige Landkreise beschränkt und zahlt in lokalen Gutscheinen",
+        "ar": "تقول الوزارة إن سكان المقاطعات العشر الأولى زادوا 4.7% بعد بدء التجربة، وزادت المتاجر التي تقبل العملة المحلية 13.7%. واستقبلت أوكتشون 1,491 ساكنًا جديدًا في ديسمبر 2025 (وغادر 290)، وتشونغسونغ 318 في الأسبوع التالي لاختيارها. وعلى أوكتشون أن تؤمّن نحو 53 مليار وون خلال عامين، أي نحو 30% من ميزانيتها، وقد علّقت برامج أخرى. وترى ⁦BIEN⁩ أن هذه الصيغة لا تطابق تعريفها (دفعة نقدية دورية للجميع)؛ فالتجربة مقصورة على بعض المقاطعات وتُدفع بقسائم محلية"
+      },
+      "source": "https://www.mafra.go.kr/bbs/home/792/578154/artclView.do"
     },
     {
       "id": "ai-dividend",

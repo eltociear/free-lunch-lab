@@ -619,6 +619,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-78944716dd.woff2",
     "chars": "ヒ丁厚寧志柱穴育誠"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-d698e034fe.woff2",
+    "chars": "漁韓"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-2820b94f56.woff2",
+    "chars": "城宝川林沃畜青"
    }
   ],
   "ja:body:700": [
@@ -749,6 +757,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-7597284257.woff2",
     "chars": "ヒ丁厚寧志柱穴育誠"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-23d6ca829d.woff2",
+    "chars": "漁韓"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-6b270c35b8.woff2",
+    "chars": "城宝川林沃畜青"
    }
   ],
   "ja:display": [
@@ -979,6 +995,14 @@
    {
     "file": "noto-sans-sc-400-zh-678b9c2034.woff2",
     "chars": "仔兴凭妨恳故朝柱赔趣阱陷"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-b3a0ed01a8.woff2",
+    "chars": "渔郡韩"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-e703bd1efe.woff2",
+    "chars": "占宝川恩沃畜"
    }
   ],
   "zh:body:700": [
@@ -1105,6 +1129,14 @@
    {
     "file": "noto-sans-sc-700-zh-57fa256503.woff2",
     "chars": "仔兴凭妨恳故朝柱赔趣阱陷"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-895a084d49.woff2",
+    "chars": "渔郡韩"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-ac1fc79ea8.woff2",
+    "chars": "占宝川恩沃畜"
    }
   ],
   "zh:display": [
