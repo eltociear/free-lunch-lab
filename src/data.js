@@ -2870,6 +2870,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-03",
+      "ja": "エッセイ「AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム」を公開",
+      "en": "Published the essay “When an AI company sets aside shares: Anthropic’s Public Benefit Fund and basic income”",
+      "zh": "发布随笔《当 AI 公司拿出股份：Anthropic 的公益基金与基本收入》",
+      "hi": "निबंध “जब एक AI कंपनी अपने शेयर अलग रखती है: Anthropic का पब्लिक बेनिफ़िट फ़ंड और बेसिक इनकम” प्रकाशित",
+      "es": "Publicado el ensayo «Cuando una empresa de IA aparta acciones: el Public Benefit Fund de Anthropic y la renta básica»",
+      "de": "Essay „Wenn ein KI-Unternehmen Aktien beiseitelegt: Anthropics Public Benefit Fund und das Grundeinkommen“ veröffentlicht",
+      "ar": "نشرنا مقال «حين تخصص شركة ذكاء اصطناعي جزءًا من أسهمها: صندوق ⁦Anthropic⁩ للمنفعة العامة والدخل الأساسي»"
+    },
+    {
+      "date": "2026-11-03",
       "ja": "ベーシックインカム実験の年表で、マーシャル諸島の Enra を更新：登録者が増えて2026年3月の支給が約160ドルに下がったこと、世界銀行の320万ドルで約200ドルに戻したこと、2027年度予算案の年3,250万ドルを追加",
       "en": "Updated the Marshall Islands’ Enra in the basic income timeline: the March 2026 payment fell to about $160 as enrolment grew, $3.2 million from the World Bank brought it back to about $200, and the FY2027 budget proposes $32.5 million a year",
       "zh": "更新基本收入实验年表中的马绍尔群岛 Enra：登记人数增加使 2026 年 3 月的发放降到约 160 美元，世界银行的 320 万美元使其恢复到约 200 美元，2027 财年预算提案拟每年拨款 3,250 万美元",
@@ -7913,7 +7923,7 @@ module.exports = {
     },
     {
       "id": "alaska",
-      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income"],
+      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund"],
       "years": "1982–",
       "type": "gov",
       "name": "Alaska Permanent Fund Dividend",
@@ -8567,7 +8577,7 @@ module.exports = {
     },
     {
       "id": "ai-dividend",
-      "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income"],
+      "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income", "public-benefit-fund"],
       "years": "2026–",
       "type": "ngo",
       "name": "AI Dividend",
@@ -8748,6 +8758,1073 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "public-benefit-fund",
+      "date": "2026-11-03",
+      "related": [
+        "universal-high-income",
+        "use-to-own",
+        "ai-agent-basic-income"
+      ],
+      "title": {
+        "ja": "AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム",
+        "en": "When an AI company sets aside shares: Anthropic’s Public Benefit Fund and basic income",
+        "zh": "当 AI 公司拿出股份：Anthropic 的公益基金与基本收入",
+        "hi": "जब एक AI कंपनी अपने शेयर अलग रखती है: Anthropic का पब्लिक बेनिफ़िट फ़ंड और बेसिक इनकम",
+        "es": "Cuando una empresa de IA aparta acciones: el Public Benefit Fund de Anthropic y la renta básica",
+        "de": "Wenn ein KI-Unternehmen Aktien beiseitelegt: Anthropics Public Benefit Fund und das Grundeinkommen",
+        "ar": "حين تخصص شركة ذكاء اصطناعي جزءًا من أسهمها: صندوق ⁦Anthropic⁩ للمنفعة العامة والدخل الأساسي"
+      },
+      "desc": {
+        "ja": "Anthropicは株式の5%を公益基金に充てると発表し、使い道に「特定の集団への直接の分配」を挙げました。約束されたことと未定のことを整理し、BIENの5つの条件、アラスカの配当、バスーの「ベーシック株」と比べます。",
+        "en": "Anthropic commits 5% of its shares to a fund that may make direct distributions to specific populations. Is it basic income? BIEN’s test, Alaska, basic shares.",
+        "zh": "Anthropic 宣布把 5% 的股份投入公益基金，用途之一是“向特定人群直接分配”。我们整理已承诺和尚未决定的内容，并用 BIEN 的五个条件、阿拉斯加的分红和巴苏的“基本股份”来比较。",
+        "hi": "Anthropic अपने 5% शेयर एक फ़ंड को दे रही है, जो “ख़ास आबादी को सीधा वितरण” कर सकता है। क्या यह बेसिक इनकम है? BIEN की कसौटी, अलास्का, और बसु के बेसिक शेयर।",
+        "es": "Anthropic destina el 5 % de sus acciones a un fondo que podría pagar a grupos concretos. ¿Es renta básica? El test de BIEN, Alaska y las acciones básicas.",
+        "de": "Anthropic widmet 5 % seiner Aktien einem Fonds, der direkt an bestimmte Gruppen ausschütten könnte. Grundeinkommen? BIENs Test, Alaska und Basisaktien.",
+        "ar": "تخصص ⁦Anthropic⁩ ‏5% من أسهمها لصندوق قد يقدّم «توزيعات مباشرة لفئات سكانية محددة». فهل هذا دخل أساسي؟ معايير ⁦BIEN⁩، وألاسكا، و«الأسهم الأساسية» عند باسو."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "On 18 October 2026, Anthropic announced that it is committing part of its shares to a new Anthropic Public Benefit Fund. Subject to stockholder approval, 5% of its shares are committed now, and the board may add 2% for every 50% increase in the company’s value above a set baseline.[1] CNBC noted that the baseline has not been disclosed, and that the announcement comes ahead of an initial public offering reportedly slated for November.[2]"
+          ],
+          [
+            "p",
+            "Among the possible uses, the announcement names “large donations to traditional nonprofits or direct distributions to specific populations”. The second phrase is why this site is writing about it. When a company that builds AI talks about handing part of its value directly to people, it sounds close to basic income. This essay sets out what was promised, what is still open, and how the idea compares with basic income."
+          ],
+          [
+            "h",
+            "What was promised"
+          ],
+          [
+            "p",
+            "The fund is an LLC wholly owned by Anthropic, not a 501(c)(3) charity; Anthropic says it chose this form “to give adjustability between different forms of giving”. None of the Anthropic equity held by the LLC will be used for lobbying or political giving, in the US or abroad.[1]"
+          ],
+          [
+            "p",
+            "The first example of a cause is AI’s effect on jobs. Anthropic writes that AI “could also cause instability for many workers”, that it has already committed $200 million to studying and addressing this, and that “bolder approaches may be needed”.[1]"
+          ],
+          [
+            "p",
+            "The fund builds on earlier pledges: the co-founders pledged to donate 80% of their equity, and employees can pledge equity that Anthropic matches. Counting those, Anthropic says roughly 20% of its shares will be dedicated to the public good, plus whatever the valuation milestones add.[1]"
+          ],
+          [
+            "p",
+            "What is not decided yet: the fund’s structure and governance, and the valuation milestones that would add to its stake. Anthropic says it will share more “in the coming months”.[1]"
+          ],
+          [
+            "o",
+            "Credit first. A commitment made in shares grows with the company, unlike a fixed donation. The announcement says plainly that AI may hurt workers and ties part of the upside to that problem. The rule against lobbying and political giving closes one obvious way such a fund could end up serving its owner. And the post names its own open questions instead of leaving readers to discover them."
+          ],
+          [
+            "h",
+            "How it was received"
+          ],
+          [
+            "p",
+            "Reactions were mixed. IPO adviser Lise Buyer told CNBC the announcement was “mandatory to prepare for an initial public offering” and “beneficial from an image perspective”. It could be seen favourably if the money supports retraining or helps workers find other jobs, she said, adding: “Of course, it is also to burnish their reputation at a time when AI is coming under significant scrutiny.”[2] Elon Musk replied on X: “I recommend giving the shares directly to the public.” David Sacks wrote: “Whether it serves the public good remains to be seen.”[3]"
+          ],
+          [
+            "o",
+            "These are fair questions, and the fund cannot answer them yet, because the parts that would answer them, who decides and by what rules, have not been published. That is not a reason to assume the worst. It is a reason to wait for the governance details before calling the fund anything."
+          ],
+          [
+            "h",
+            "Through BIEN’s five criteria"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”, and lists five characteristics: periodic, cash, individual, universal and unconditional.[4] It is the yardstick we used in {the essay on Thailand’s 10,000 baht|/essays/thailand-digital-wallet/}. The fund has not paid anything yet, so we can only test the idea as written: “direct distributions to specific populations”."
+          ],
+          [
+            "p",
+            "Periodic? Unknown. Nothing says whether distributions would recur."
+          ],
+          [
+            "p",
+            "Cash? Unknown. A “direct distribution” could be cash, shares or something else; the form is not stated."
+          ],
+          [
+            "p",
+            "Individual? Possibly. That depends on the design."
+          ],
+          [
+            "p",
+            "Universal? No, as written. “Specific populations” means groups that someone chooses, not everyone."
+          ],
+          [
+            "p",
+            "Unconditional? Unknown. Belonging to a chosen group is itself a condition, and any further rules have not been published."
+          ],
+          [
+            "o",
+            "As described, this is closer to targeted philanthropy than to basic income: a funder chooses a group and gives to it. That is not a criticism. Targeted giving can do a great deal of good. But unless the fund one day pays everyone in a defined population, regularly and without conditions, it is not basic income, and it is fairer to judge it as what it is."
+          ],
+          [
+            "h",
+            "Models already on this site"
+          ],
+          [
+            "p",
+            "Since 1982, {Alaska|/timeline/#tl-alaska} has paid eligible residents an annual dividend from its Permanent Fund, which preserves the state’s oil and mineral wealth as a renewable financial resource; the first dividend was $1,000 each.[5] The fund belongs to the public through the state, the rules are written in law, and everyone who qualifies gets the same amount."
+          ],
+          [
+            "p",
+            "Since March 2026, {the AI Dividend|/timeline/#tl-ai-dividend} has paid $1,000 a month for a year, with no strings, to a cohort of 25 to 50 workers whose jobs or pay have been hurt by AI. It started with $300,000 and aims to distribute $3 million in 2026. Its organisers plan to ask AI companies to contribute and said talks had been initiated “with firms like Anthropic”.[6] This is what direct distributions to a specific population look like at small scale: real cash, a chosen group, a fixed term."
+          ],
+          [
+            "o",
+            "Alaska shows what a fund that pays everyone needs: public ownership, and a rule that nobody has to decide afresh each year. The AI Dividend shows what targeted cash looks like. Anthropic’s fund could move toward either, or neither. In {our essay on universal high income|/essays/universal-high-income/} we asked who pays. Here a payer has appeared, so the open question moves on: who decides?"
+          ],
+          [
+            "h",
+            "The ownership route: basic shares"
+          ],
+          [
+            "p",
+            "Musk’s reply points to a different route: instead of a fund that gives money, give people the shares. A week later, in Mumbai, the economist Kaushik Basu, a former chief economist of the World Bank, made a related case. AI “could dramatically reduce the demand for human labour within the next five to 10 years”, he warned, and governments may have to consider “universal basic shares”: not a one-time transfer, but “a continuing stake in the wealth generated by productive assets and automated enterprises”. His suggestion was to “take away a part of the shares from the super rich (and distribute it) across the population”, through “an intelligent system of taxation and redistribution”.[7]"
+          ],
+          [
+            "o",
+            "The ownership route and the cash route answer different worries. Cash pays this month’s rent. Shares give a claim on future profits, and a say if they carry votes, but their value moves with the market, and someone who has to sell in a bad month sells low. {Use it, own it|/essays/use-to-own/} looked at how thin that claim can be when shares carry few rights. A dividend paid on wealth that everyone owns, as in Alaska, is one way to combine the two."
+          ],
+          [
+            "h",
+            "The case against cash"
+          ],
+          [
+            "p",
+            "Not everyone thinks cash is the right answer to AI. In a research brief published by the ILO in May 2026, Tuğba Özay and Ekkehard Ernst argue that AI mostly changes tasks rather than wiping out occupations, and that a universal transfer would send spending into sectors where supply cannot grow quickly, such as housing and healthcare, pushing up prices there. They favour reskilling, active labour market policies, more housing supply and taxing AI-generated rents, with universal social protection designed to keep work incentives, for instance through an earned-income tax credit.[8]"
+          ],
+          [
+            "o",
+            "This is a basic income site, but that argument deserves a fair hearing, and it fits a fund aimed at “specific populations” better than a universal payment would. Whichever side you take, money for the AI transition will have to be judged by what it can buy, not by the number on the cheque."
+          ],
+          [
+            "h",
+            "What to watch for"
+          ],
+          [
+            "o",
+            "Governance. When the structure is published, who runs the fund, how independent they are from Anthropic, and whether the rules are public."
+          ],
+          [
+            "o",
+            "Who decides recipients. Whether people are chosen case by case, or by a published rule that anyone can check."
+          ],
+          [
+            "o",
+            "Universal and recurring, or not. One-off grants to chosen groups are philanthropy. Regular payments to everyone in a defined population would be the first step toward a dividend."
+          ],
+          [
+            "o",
+            "The numbers. Stockholder approval, the undisclosed baseline, and how much is actually paid out each year, not only committed."
+          ],
+          [
+            "o",
+            "Until then, the fund is a promise with an unfinished design. Read it the way this site reads every free lunch. Who pays: here, we know. Who decides, and who receives: not yet."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "2026年10月18日、Anthropicは、自社の株式の一部を新しい「Anthropic公益基金（Anthropic Public Benefit Fund）」に充てると発表しました。株主の承認を条件に、まず株式の5%を拠出し、会社の価値があらかじめ決めた基準から50%増えるごとに、取締役会の判断で2%ずつ上乗せできます。[1] CNBCは、その基準がまだ公表されていないこと、そして11月と報じられている新規株式公開（IPO）を前にした発表であることを伝えています。[2]"
+          ],
+          [
+            "p",
+            "使い道の例として、発表は「伝統的な非営利団体への大口の寄付、あるいは特定の集団への直接の分配」を挙げています。このサイトが取り上げる理由は、後半の言葉です。AIをつくる会社が、自分の価値の一部を人に直接渡すと言うと、ベーシックインカムに近く聞こえます。このエッセイでは、約束されたこと、まだ決まっていないこと、そしてベーシックインカムとの違いを整理します。"
+          ],
+          [
+            "h",
+            "約束されたこと"
+          ],
+          [
+            "p",
+            "基金は、Anthropicが100%所有するLLC（合同会社）で、501(c)(3)のような慈善団体ではありません。Anthropicは、この形を選んだのは「さまざまな形の寄付の間で調整がきくようにするため」だと説明しています。LLCが持つAnthropicの株式は、米国でも国外でも、ロビー活動や政治献金には使わないとしています。[1]"
+          ],
+          [
+            "p",
+            "最初に挙げられた課題は、AIが仕事に与える影響です。Anthropicは、AIが「多くの働き手を不安定にするおそれもある」と書き、この問題の研究と対策にすでに2億ドルを約束したうえで、「もっと大胆なやり方が必要になるかもしれない」としています。[1]"
+          ],
+          [
+            "p",
+            "基金は、これまでの約束の上に重なります。共同創業者は自分の持ち株の80%を寄付すると約束しており、社員が株式の寄付を約束するとAnthropicが同じだけ上乗せする制度もあります。これらを合わせると、株式のおよそ20%が公益に充てられ、評価額の節目に応じてさらに増えうる、とAnthropicは説明しています。[1]"
+          ],
+          [
+            "p",
+            "まだ決まっていないのは、基金の仕組みと統治（ガバナンス）、そして上乗せの条件になる評価額の節目です。Anthropicは「今後数か月のうちに」詳しく示すとしています。[1]"
+          ],
+          [
+            "o",
+            "まずは評価すべき点から。株で約束すると、決まった額の寄付と違って、会社が大きくなるほど中身も大きくなります。AIが働き手を傷つけうることをはっきり書き、利益の一部をその問題に結びつけています。ロビー活動と政治献金に使わないという決まりは、こうした基金が持ち主のために使われてしまう、わかりやすい道の一つをふさいでいます。そして、未定の点を隠さず、自分から書いています。"
+          ],
+          [
+            "h",
+            "受け止められ方"
+          ],
+          [
+            "p",
+            "反応は分かれました。IPOの助言をするリズ・バイヤーはCNBCに、この発表は「IPOの準備として欠かせない」もので「イメージの面でも得になる」と話しました。お金が学び直しや再就職の支援に使われれば好意的に受け止められるだろうとしつつ、「もちろん、AIが厳しい目を向けられている時期に評判を磨くためでもある」と付け加えています。[2] イーロン・マスクはXで「株を直接、一般の人々に渡すことを勧める」と返しました。デービッド・サックスは「それが公益にかなうかどうかは、これから見ることになる」と書いています。[3]"
+          ],
+          [
+            "o",
+            "どれももっともな問いで、基金はまだ答えられません。答えになるはずの部分、つまり誰がどんなルールで決めるのかが、まだ公表されていないからです。だからといって最悪を前提にする理由にはなりません。基金を何と呼ぶかは、統治の中身が出てから決めればいい、という理由になります。"
+          ],
+          [
+            "h",
+            "BIENの5つの条件で見ると"
+          ],
+          [
+            "p",
+            "ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義し、定期的、現金、個人、普遍的、無条件の5つの性質を挙げています。[4] {タイの1万バーツのエッセイ|/essays/thailand-digital-wallet/}で使ったのと同じものさしです。基金はまだ何も払っていないので、確かめられるのは書かれた考え、「特定の集団への直接の分配」だけです。"
+          ],
+          [
+            "p",
+            "定期的か。不明です。分配がくり返されるかどうかは書かれていません。"
+          ],
+          [
+            "p",
+            "現金か。不明です。「直接の分配」は現金かもしれませんし、株やほかのものかもしれません。形は示されていません。"
+          ],
+          [
+            "p",
+            "個人単位か。ありえます。設計しだいです。"
+          ],
+          [
+            "p",
+            "普遍的か。書かれた範囲では、いいえ。「特定の集団」とは、誰かが選ぶ集団のことで、全員ではありません。"
+          ],
+          [
+            "p",
+            "無条件か。不明です。選ばれた集団に属すること自体が一つの条件で、ほかのルールはまだ公表されていません。"
+          ],
+          [
+            "o",
+            "書かれたとおりなら、これはベーシックインカムよりも、対象を絞った慈善活動に近いものです。お金を出す側が集団を選び、そこに渡す。これは批判ではありません。対象を絞った支援は、大きな助けになりえます。ただ、決まった集団の全員に、定期的に、条件なしで払う日が来ないかぎり、ベーシックインカムではありません。その本来の姿のまま評価するほうが公平でしょう。"
+          ],
+          [
+            "h",
+            "このサイトにある先例"
+          ],
+          [
+            "p",
+            "{アラスカ州|/timeline/#tl-alaska}は1982年から、条件を満たす住民に永久基金から毎年配当を払っています。この基金は、州の石油と鉱物の富を、なくならない金融資産として残すためのものです。最初の配当は1人1,000ドルでした。[5] 基金は州を通じて住民のものであり、ルールは法律に書かれ、条件を満たす人は全員が同じ額を受け取ります。"
+          ],
+          [
+            "p",
+            "{AI Dividend|/timeline/#tl-ai-dividend}は2026年3月から、AIで仕事や収入に影響を受けた25〜50人のグループに、条件なしで月1,000ドルを1年間払っています。最初の資金は30万ドルで、2026年中に300万ドルを配るのが目標です。運営側はAI企業に協力を求めるつもりで、「Anthropicのような企業」とも話を始めたと伝えられています。[6] 特定の集団への直接の分配を小さな規模でやると、こうなります。本物の現金、選ばれた集団、決まった期間です。"
+          ],
+          [
+            "o",
+            "アラスカは、全員に払う基金に何が要るかを教えてくれます。公共の持ち物であることと、毎年だれかが決め直さなくていいルールです。AI Dividendは、対象を絞った現金給付の姿を見せてくれます。Anthropicの基金は、どちらにも、どちらでもないものにもなりえます。{ユニバーサルハイインカムのエッセイ|/essays/universal-high-income/}で、私たちは「誰が払うのか」と問いました。ここでは払う人が現れました。だから問いは次へ進みます。誰が決めるのか、です。"
+          ],
+          [
+            "h",
+            "持ち分の道：ベーシック株"
+          ],
+          [
+            "p",
+            "マスクの返答は、別の道を指しています。お金を配る基金ではなく、株そのものを人に渡す道です。1週間後、ムンバイで、世界銀行の元チーフエコノミストで経済学者のカウシック・バスーが、これに近い議論をしました。AIは「今後5〜10年のうちに、人間の労働への需要を大きく減らしうる」と警告し、各国政府は「ユニバーサル・ベーシック株（universal basic shares）」を考えなければならないかもしれない、と述べています。1回きりのお金ではなく、「生産的な資産と自動化された企業が生む富への、続いていく持ち分」です。そのために、「超富裕層から株の一部を取り、人々に広く分ける」こと、そして「賢い課税と再分配のしくみ」が要る、としています。[7]"
+          ],
+          [
+            "o",
+            "持ち分の道と現金の道は、別の心配に答えています。現金は今月の家賃を払えます。株は将来の利益への取り分と、議決権がついていれば発言権をくれます。でも価値は市場しだいで動き、悪い月に売らざるをえない人は安く売ることになります。{KABU&のエッセイ|/essays/use-to-own/}では、権利の少ない株だと、その取り分がどれほど薄くなりうるかを見ました。アラスカのように、全員が持つ富から配当を払うのは、二つを組み合わせる一つの方法です。"
+          ],
+          [
+            "h",
+            "現金に反対する立場"
+          ],
+          [
+            "p",
+            "AIへの答えが現金だと考える人ばかりではありません。国際労働機関（ILO）が2026年5月に出した研究ブリーフで、トゥバ・オザイとエクハルト・エルンストは、AIは職業そのものを消すよりも仕事の中身（タスク）を変えるのだと論じています。そして全員への給付は、住宅や医療のように供給がすぐには増えない分野にお金を流し込み、そこの値段を押し上げると指摘します。二人が勧めるのは、学び直し、積極的な労働市場政策、住宅の供給を増やすこと、AIが生む超過利潤（レント）への課税、そして働く意欲を保つ形の普遍的な社会保護、たとえば給付付き勤労税額控除です。[8]"
+          ],
+          [
+            "o",
+            "ここはベーシックインカムのサイトですが、この議論は公平に聞くべきものです。それに、全員への給付よりも「特定の集団」に向けた基金のほうに、よく当てはまります。どちらの立場でも、AIへの移行のためのお金は、小切手に書かれた数字ではなく、それで何が買えるかで評価されることになるでしょう。"
+          ],
+          [
+            "h",
+            "これから見ておきたいこと"
+          ],
+          [
+            "o",
+            "統治。仕組みが公表されたら、誰が基金を動かすのか、Anthropicからどれだけ独立しているのか、ルールは公開されるのか。"
+          ],
+          [
+            "o",
+            "受け取る人を誰が決めるか。一件ずつ選ぶのか、誰でも確かめられる公開のルールで決まるのか。"
+          ],
+          [
+            "o",
+            "全員に、くり返し払われるか。選んだ集団への1回きりの助成なら慈善活動です。決まった集団の全員への定期的な支払いなら、配当への第一歩になります。"
+          ],
+          [
+            "o",
+            "数字。株主の承認、まだ公表されていない基準、そして約束した額ではなく、毎年実際に払われた額。"
+          ],
+          [
+            "o",
+            "それまでは、この基金は設計の途中にある約束です。このサイトがあらゆるタダ飯を見るのと同じように見てください。誰が払うのか。ここはわかっています。誰が決め、誰が受け取るのか。それはまだです。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026 年 10 月 18 日，Anthropic 宣布把部分股份投入新设立的“Anthropic 公益基金”（Anthropic Public Benefit Fund）。在股东批准的前提下，先投入 5% 的股份；公司价值每比既定基准增加 50%，董事会可酌情再追加 2%。[1] CNBC 指出，这个基准尚未公布，而且这项宣布正值据报道定于 11 月的首次公开募股（IPO）之前。[2]"
+          ],
+          [
+            "p",
+            "在可能的用途中，公告提到“向传统非营利组织大额捐赠，或向特定人群直接分配”。本站关注的正是后半句。一家开发 AI 的公司说要把自身价值的一部分直接交给人们，听起来很像基本收入。这篇随笔整理已经承诺的内容、尚未决定的部分，以及它与基本收入的异同。"
+          ],
+          [
+            "h",
+            "承诺了什么"
+          ],
+          [
+            "p",
+            "该基金是 Anthropic 全资拥有的有限责任公司（LLC），不是 501(c)(3) 慈善机构；Anthropic 说选择这种形式是“为了在不同的捐赠形式之间保留调整空间”。LLC 持有的 Anthropic 股权不会用于游说或政治捐款，无论在美国还是海外。[1]"
+          ],
+          [
+            "p",
+            "列出的第一个议题是 AI 对就业的影响。Anthropic 写道，AI “也可能给许多劳动者带来不稳定”，公司已承诺投入 2 亿美元研究和应对这一问题，并认为“可能需要更大胆的做法”。[1]"
+          ],
+          [
+            "p",
+            "基金建立在此前的承诺之上：联合创始人承诺捐出各自 80% 的股权，员工承诺捐出股权时公司会等额配捐。合计起来，Anthropic 表示约 20% 的股份将专用于公共利益，并可能随估值里程碑进一步增加。[1]"
+          ],
+          [
+            "p",
+            "尚未决定的是：基金的结构和治理，以及触发追加份额的估值里程碑。Anthropic 表示将在“未来几个月”公布更多细节。[1]"
+          ],
+          [
+            "o",
+            "先说值得肯定的地方。以股份承诺，会随公司成长而变大，不像固定金额的捐款。公告明白写出 AI 可能伤害劳动者，并把部分收益与这个问题挂钩。不得用于游说和政治捐款的规定，堵住了这类基金最终为所有者服务的一条明显途径。而且公告自己列出了尚未解决的问题，而不是留给读者去发现。"
+          ],
+          [
+            "h",
+            "外界的反应"
+          ],
+          [
+            "p",
+            "反应不一。IPO 顾问莉丝·拜尔对 CNBC 说，这项宣布是“为首次公开募股做准备所必需的”，也“有利于形象”。她说，如果资金用于再培训或帮助劳动者找到其他工作，可能会受到好评，又补充道：“当然，这也是为了在 AI 受到严格审视之际擦亮自己的声誉。”[2] 埃隆·马斯克在 X 上回应：“我建议把股份直接交给公众。”戴维·萨克斯写道：“它是否服务于公共利益，还有待观察。”[3]"
+          ],
+          [
+            "o",
+            "这些都是合理的问题，而基金目前还无法回答，因为能回答它们的部分，也就是由谁决定、按什么规则决定，还没有公布。这不是往最坏处想的理由，而是在治理细节公布之前先别急着给它下定义的理由。"
+          ],
+          [
+            "h",
+            "用 BIEN 的五个条件来看"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）把基本收入定义为“无需经济状况调查或工作要求，无条件地以个人为单位向所有人发放的定期现金”，并列出五个特征：定期、现金、个人、普遍、无条件。[4] 这和我们在{关于泰国 1 万泰铢的随笔|/essays/thailand-digital-wallet/}里用的是同一把尺子。基金还没有支付任何款项，所以我们只能检验写出来的设想：“向特定人群直接分配”。"
+          ],
+          [
+            "p",
+            "定期吗？不清楚。没有说明分配是否会重复进行。"
+          ],
+          [
+            "p",
+            "现金吗？不清楚。“直接分配”可能是现金，也可能是股份或其他东西；形式没有说明。"
+          ],
+          [
+            "p",
+            "以个人为单位吗？有可能，取决于设计。"
+          ],
+          [
+            "p",
+            "普遍吗？按目前的写法，不是。“特定人群”指由某人挑选的群体，而不是所有人。"
+          ],
+          [
+            "p",
+            "无条件吗？不清楚。属于被选中的群体本身就是一个条件，其他规则尚未公布。"
+          ],
+          [
+            "o",
+            "按照描述，它更接近有针对性的慈善，而不是基本收入：出资者选定一个群体并给予资助。这不是批评，有针对性的资助可以做很多好事。但除非有一天它定期、无条件地支付给某个明确人群中的每一个人，它就不是基本收入，按它本来的样子来评价才更公平。"
+          ],
+          [
+            "h",
+            "本站已有的先例"
+          ],
+          [
+            "p",
+            "自 1982 年起，{阿拉斯加|/timeline/#tl-alaska}每年从永久基金向符合条件的居民发放分红；这个基金把州的石油和矿产财富保存为可再生的金融资源，首次分红为每人 1,000 美元。[5] 基金通过州属于公众，规则写进法律，所有符合条件的人领到同样的金额。"
+          ],
+          [
+            "p",
+            "自 2026 年 3 月起，{AI Dividend|/timeline/#tl-ai-dividend} 向 25 至 50 名工作或收入受 AI 冲击的劳动者，无条件每月发放 1,000 美元，为期一年。启动资金 30 万美元，目标是在 2026 年发放 300 万美元。组织者计划请 AI 公司出资，并表示已与“Anthropic 等公司”开始接触。[6] 这就是小规模的“向特定人群直接分配”：真金白银、选定的群体、固定的期限。"
+          ],
+          [
+            "o",
+            "阿拉斯加告诉我们，一个向所有人支付的基金需要什么：公共所有，以及一条不必每年重新决定的规则。AI Dividend 展示了有针对性的现金发放是什么样子。Anthropic 的基金可能走向其中之一，也可能都不是。在{关于全民高收入的随笔|/essays/universal-high-income/}里，我们问的是“谁来付钱”。现在付钱的人出现了，问题也随之推进：由谁来决定？"
+          ],
+          [
+            "h",
+            "所有权之路：基本股份"
+          ],
+          [
+            "p",
+            "马斯克的回应指向另一条路：不是由基金发钱，而是把股份交给人们。一周后，前世界银行首席经济学家、经济学家考希克·巴苏在孟买提出了相近的主张。他警告，AI “可能在未来五到十年内大幅减少对人类劳动的需求”，各国政府或许必须考虑“全民基本股份”：不是一次性的转移，而是“对生产性资产和自动化企业所创造财富的持续份额”。他的建议是“从超级富豪手中拿走一部分股份，（分配）给全体人口”，并通过“一套聪明的税收和再分配体系”来实现。[7]"
+          ],
+          [
+            "o",
+            "所有权之路和现金之路回应的是不同的担忧。现金能付这个月的房租。股份带来对未来利润的权利，若附带投票权还能带来发言权；但它的价值随市场波动，在糟糕的月份不得不卖的人只能低价卖出。{《用了就成股东》那篇随笔|/essays/use-to-own/}看到，当股份几乎不带权利时，这种权利可以有多薄。像阿拉斯加那样，从人人共有的财富中支付分红，是把两者结合起来的一种方式。"
+          ],
+          [
+            "h",
+            "反对发现金的观点"
+          ],
+          [
+            "p",
+            "并不是每个人都认为现金是应对 AI 的正确答案。在国际劳工组织（ILO）2026 年 5 月发布的一份研究简报中，图巴·厄扎伊和埃克哈德·恩斯特认为，AI 主要改变的是工作任务，而不是消灭整个职业；全民转移支付会把支出推向住房、医疗等供给难以迅速增加的领域，推高那里的价格。他们主张再培训、积极的劳动力市场政策、增加住房供给、对 AI 产生的超额利润征税，以及以保持工作激励为前提设计的普遍社会保护，例如劳动所得税抵免。[8]"
+          ],
+          [
+            "o",
+            "本站是关于基本收入的网站，但这种观点值得公平地倾听，而且它更适用于面向“特定人群”的基金，而不是全民发放。无论站在哪一边，为 AI 转型准备的钱，都要看它能买到什么，而不是支票上的数字。"
+          ],
+          [
+            "h",
+            "接下来值得关注的"
+          ],
+          [
+            "o",
+            "治理。结构公布后，由谁来运营基金，他们相对 Anthropic 有多独立，规则是否公开。"
+          ],
+          [
+            "o",
+            "谁来决定领取者。是逐案挑选，还是按任何人都能核查的公开规则。"
+          ],
+          [
+            "o",
+            "是否面向所有人、定期发放。向选定群体的一次性资助属于慈善；向某个明确人群中每个人的定期支付，才是迈向分红的第一步。"
+          ],
+          [
+            "o",
+            "数字。股东批准、尚未公布的基准，以及每年实际支付的金额，而不只是承诺的金额。"
+          ],
+          [
+            "o",
+            "在那之前，这个基金是一个设计尚未完成的承诺。请像本站看待每一份“免费午餐”那样看待它：谁付钱，这里我们知道；谁决定、谁领取，还不知道。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "18 अक्टूबर 2026 को Anthropic ने घोषणा की कि वह अपने शेयरों का एक हिस्सा नए Anthropic पब्लिक बेनिफ़िट फ़ंड को दे रही है। शेयरधारकों की मंज़ूरी की शर्त पर अभी 5% शेयर दिए जा रहे हैं, और कंपनी का मूल्य एक तय आधार से हर 50% बढ़ने पर बोर्ड अपने विवेक से 2% और जोड़ सकता है।[1] CNBC ने बताया कि यह आधार अभी सार्वजनिक नहीं किया गया है, और यह घोषणा नवंबर में होने वाले बताए जा रहे IPO से पहले आई है।[2]"
+          ],
+          [
+            "p",
+            "संभावित उपयोगों में घोषणा “पारंपरिक गैर-लाभकारी संस्थाओं को बड़े दान या ख़ास आबादी को सीधे वितरण” का नाम लेती है। यही दूसरा वाक्यांश वजह है कि यह साइट इस पर लिख रही है। जब AI बनाने वाली कंपनी अपनी कीमत का हिस्सा सीधे लोगों को देने की बात करती है, तो यह बेसिक इनकम जैसा लगता है। यह निबंध बताता है कि क्या वादा हुआ, क्या अभी खुला है, और यह विचार बेसिक इनकम से कैसे तुलना करता है।"
+          ],
+          [
+            "h",
+            "क्या वादा किया गया"
+          ],
+          [
+            "p",
+            "फ़ंड एक LLC है जिसका पूरा स्वामित्व Anthropic के पास है; यह 501(c)(3) चैरिटी नहीं है। Anthropic कहती है कि यह रूप “देने के अलग-अलग तरीक़ों के बीच बदलाव की गुंजाइश” के लिए चुना गया। LLC के पास रखे Anthropic के शेयर अमेरिका या विदेश में लॉबिंग या राजनीतिक चंदे में इस्तेमाल नहीं होंगे।[1]"
+          ],
+          [
+            "p",
+            "पहला उदाहरण नौकरियों पर AI का असर है। Anthropic लिखती है कि AI “कई कामगारों के लिए अस्थिरता भी पैदा कर सकता है”, कि वह इसे समझने और सुलझाने के लिए पहले ही $20 करोड़ देने का वादा कर चुकी है, और कि “और साहसी तरीक़ों की ज़रूरत पड़ सकती है”।[1]"
+          ],
+          [
+            "p",
+            "फ़ंड पहले के वादों पर टिका है: सह-संस्थापकों ने अपने शेयरों का 80% दान करने का वादा किया है, और कर्मचारी जो शेयर दान करने का वादा करते हैं, Anthropic उतना ही मिलाती है। इन्हें जोड़कर Anthropic कहती है कि लगभग 20% शेयर सार्वजनिक भलाई के लिए होंगे, और मूल्यांकन के पड़ावों के साथ यह और बढ़ सकता है।[1]"
+          ],
+          [
+            "p",
+            "अभी तय नहीं: फ़ंड का ढाँचा और संचालन (गवर्नेंस), और वे मूल्यांकन पड़ाव जिन पर हिस्सा बढ़ेगा। Anthropic कहती है कि वह “आने वाले महीनों में” और जानकारी देगी।[1]"
+          ],
+          [
+            "o",
+            "पहले तारीफ़। शेयरों में किया गया वादा कंपनी के साथ बढ़ता है, तय रकम के दान की तरह नहीं। घोषणा साफ़ कहती है कि AI कामगारों को नुक़सान पहुँचा सकता है, और फ़ायदे का एक हिस्सा उसी समस्या से जोड़ती है। लॉबिंग और राजनीतिक चंदे पर रोक उस सीधे रास्ते को बंद करती है जिससे ऐसा फ़ंड अपने मालिक के काम आ सकता था। और पोस्ट अपने खुले सवाल ख़ुद गिनाती है, पाठकों पर नहीं छोड़ती।"
+          ],
+          [
+            "h",
+            "प्रतिक्रियाएँ"
+          ],
+          [
+            "p",
+            "प्रतिक्रियाएँ मिली-जुली रहीं। IPO सलाहकार लीज़ बायर ने CNBC से कहा कि यह घोषणा “IPO की तैयारी के लिए ज़रूरी” और “छवि के लिहाज़ से फ़ायदेमंद” है। उन्होंने कहा कि अगर पैसा री-स्किलिंग या कामगारों को दूसरा काम दिलाने में लगे तो इसे अच्छा माना जा सकता है, और जोड़ा: “बेशक, यह ऐसे समय में अपनी साख चमकाने के लिए भी है जब AI पर कड़ी नज़र है।”[2] एलन मस्क ने X पर जवाब दिया: “मेरी सलाह है कि शेयर सीधे जनता को दिए जाएँ।” डेविड सैक्स ने लिखा: “यह सार्वजनिक भलाई करेगा या नहीं, यह देखना बाक़ी है।”[3]"
+          ],
+          [
+            "o",
+            "ये जायज़ सवाल हैं, और फ़ंड अभी इनका जवाब नहीं दे सकता, क्योंकि जो हिस्से जवाब देंगे, यानी कौन तय करेगा और किन नियमों से, वे अभी प्रकाशित नहीं हुए। यह सबसे बुरा मान लेने की वजह नहीं है। यह फ़ंड को कोई नाम देने से पहले गवर्नेंस के ब्योरे का इंतज़ार करने की वजह है।"
+          ],
+          [
+            "h",
+            "BIEN की पाँच कसौटियों पर"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को “एक नियमित नकद भुगतान, जो बिना आय-जाँच या काम की शर्त के, बिना शर्त सभी को व्यक्तिगत आधार पर दिया जाए” के रूप में परिभाषित करता है, और पाँच विशेषताएँ गिनाता है: नियमित, नकद, व्यक्तिगत, सार्वभौमिक और बिना शर्त।[4] यह वही पैमाना है जो हमने {थाईलैंड के 10,000 बाट वाले निबंध|/essays/thailand-digital-wallet/} में इस्तेमाल किया था। फ़ंड ने अभी कुछ नहीं दिया है, इसलिए हम सिर्फ़ लिखे हुए विचार को परख सकते हैं: “ख़ास आबादी को सीधा वितरण”।"
+          ],
+          [
+            "p",
+            "नियमित? पता नहीं। कहीं नहीं लिखा कि वितरण दोहराया जाएगा या नहीं।"
+          ],
+          [
+            "p",
+            "नकद? पता नहीं। “सीधा वितरण” नकद, शेयर या कुछ और हो सकता है; रूप नहीं बताया गया।"
+          ],
+          [
+            "p",
+            "व्यक्तिगत? शायद। यह डिज़ाइन पर निर्भर है।"
+          ],
+          [
+            "p",
+            "सार्वभौमिक? जैसा लिखा है, नहीं। “ख़ास आबादी” का मतलब है वे समूह जिन्हें कोई चुनता है, सब लोग नहीं।"
+          ],
+          [
+            "p",
+            "बिना शर्त? पता नहीं। चुने गए समूह में होना अपने आप में एक शर्त है, और बाक़ी नियम प्रकाशित नहीं हुए।"
+          ],
+          [
+            "o",
+            "जैसा बताया गया है, यह बेसिक इनकम से ज़्यादा लक्षित परोपकार के क़रीब है: देने वाला एक समूह चुनता है और उसे देता है। यह आलोचना नहीं है। लक्षित मदद बहुत भला कर सकती है। लेकिन जब तक फ़ंड किसी तय आबादी के हर व्यक्ति को नियमित रूप से और बिना शर्त भुगतान नहीं करता, यह बेसिक इनकम नहीं है, और इसे वही मानकर परखना ज़्यादा न्यायसंगत है जो यह है।"
+          ],
+          [
+            "h",
+            "इस साइट पर पहले से मौजूद मॉडल"
+          ],
+          [
+            "p",
+            "1982 से {अलास्का|/timeline/#tl-alaska} योग्य निवासियों को अपने परमानेंट फ़ंड से हर साल डिविडेंड देता है; यह फ़ंड राज्य की तेल और खनिज संपदा को एक टिकाऊ वित्तीय संसाधन के रूप में बचाता है। पहला डिविडेंड $1,000 प्रति व्यक्ति था।[5] फ़ंड राज्य के ज़रिए जनता का है, नियम क़ानून में लिखे हैं, और हर योग्य व्यक्ति को बराबर रकम मिलती है।"
+          ],
+          [
+            "p",
+            "मार्च 2026 से {AI Dividend|/timeline/#tl-ai-dividend} उन 25 से 50 कामगारों के समूह को, जिनकी नौकरी या कमाई पर AI का बुरा असर पड़ा, एक साल तक बिना शर्त हर महीने $1,000 देता है। शुरुआत $3 लाख से हुई और लक्ष्य 2026 में $30 लाख बाँटना है। आयोजक AI कंपनियों से योगदान माँगने की योजना बना रहे हैं और कहा गया कि “Anthropic जैसी कंपनियों” से बातचीत शुरू हुई है।[6] छोटे पैमाने पर ख़ास आबादी को सीधा वितरण ऐसा दिखता है: असली नकद, चुना हुआ समूह, तय अवधि।"
+          ],
+          [
+            "o",
+            "अलास्का बताता है कि सबको भुगतान करने वाले फ़ंड को क्या चाहिए: सार्वजनिक स्वामित्व, और ऐसा नियम जिसे हर साल नए सिरे से तय न करना पड़े। AI Dividend दिखाता है कि लक्षित नकद कैसा होता है। Anthropic का फ़ंड इनमें से किसी एक की ओर बढ़ सकता है, या किसी की ओर नहीं। {यूनिवर्सल हाई इनकम वाले निबंध|/essays/universal-high-income/} में हमने पूछा था कि पैसा कौन देगा। यहाँ देने वाला सामने आया है, इसलिए खुला सवाल आगे बढ़ता है: तय कौन करेगा?"
+          ],
+          [
+            "h",
+            "स्वामित्व का रास्ता: बेसिक शेयर"
+          ],
+          [
+            "p",
+            "मस्क का जवाब एक अलग रास्ते की ओर इशारा करता है: पैसा देने वाले फ़ंड की जगह लोगों को शेयर ही दे दिए जाएँ। एक हफ़्ते बाद मुंबई में विश्व बैंक के पूर्व मुख्य अर्थशास्त्री कौशिक बसु ने मिलती-जुलती बात कही। उन्होंने चेताया कि AI “अगले पाँच से 10 साल में इंसानी श्रम की माँग को नाटकीय रूप से घटा सकता है”, और सरकारों को “यूनिवर्सल बेसिक शेयर” पर विचार करना पड़ सकता है: एक बार का पैसा नहीं, बल्कि “उत्पादक संपत्तियों और स्वचालित उद्यमों से बनी संपदा में लगातार हिस्सेदारी”। उनका सुझाव था कि “बहुत अमीरों से शेयरों का एक हिस्सा लेकर (उसे) पूरी आबादी में बाँटा जाए”, “कराधान और पुनर्वितरण की एक समझदार व्यवस्था” के ज़रिए।[7]"
+          ],
+          [
+            "o",
+            "स्वामित्व का रास्ता और नकद का रास्ता अलग-अलग चिंताओं का जवाब देते हैं। नकद इस महीने का किराया चुकाता है। शेयर भविष्य के मुनाफ़े पर दावा देते हैं, और वोटिंग अधिकार हों तो आवाज़ भी; पर उनकी क़ीमत बाज़ार के साथ बदलती है, और जिसे बुरे महीने में बेचना पड़े, वह सस्ते में बेचता है। {“इस्तेमाल करो, मालिक बनो” वाले निबंध|/essays/use-to-own/} में हमने देखा कि कम अधिकार वाले शेयरों में यह दावा कितना पतला हो सकता है। अलास्का की तरह, सबकी साझा संपदा से डिविडेंड देना दोनों को जोड़ने का एक तरीक़ा है।"
+          ],
+          [
+            "h",
+            "नकद के ख़िलाफ़ तर्क"
+          ],
+          [
+            "p",
+            "हर कोई नहीं मानता कि AI का सही जवाब नकद है। अंतरराष्ट्रीय श्रम संगठन (ILO) के मई 2026 में प्रकाशित एक रिसर्च ब्रीफ़ में तुग्बा ओज़ाय और एकहार्ड अर्न्स्ट तर्क देते हैं कि AI ज़्यादातर पूरे पेशे ख़त्म करने की बजाय काम के हिस्से (टास्क) बदलता है, और सबको दिया गया भुगतान ख़र्च को ऐसे क्षेत्रों में धकेलेगा जहाँ आपूर्ति जल्दी नहीं बढ़ सकती, जैसे आवास और स्वास्थ्य, जिससे वहाँ दाम बढ़ेंगे। वे री-स्किलिंग, सक्रिय श्रम-बाज़ार नीतियों, ज़्यादा आवास आपूर्ति और AI से पैदा अतिरिक्त मुनाफ़े पर कर के पक्ष में हैं, साथ में ऐसी सार्वभौमिक सामाजिक सुरक्षा जो काम की प्रेरणा बनाए रखे, जैसे अर्जित आय कर क्रेडिट।[8]"
+          ],
+          [
+            "o",
+            "यह बेसिक इनकम की साइट है, फिर भी यह तर्क निष्पक्ष सुनवाई का हक़दार है, और यह सबको दिए जाने वाले भुगतान से ज़्यादा “ख़ास आबादी” पर केंद्रित फ़ंड पर लागू होता है। आप किसी भी पक्ष में हों, AI के बदलाव के लिए पैसे को इस बात से आँका जाएगा कि उससे क्या ख़रीदा जा सकता है, चेक पर लिखी संख्या से नहीं।"
+          ],
+          [
+            "h",
+            "आगे किन बातों पर नज़र रखें"
+          ],
+          [
+            "o",
+            "गवर्नेंस। ढाँचा प्रकाशित होने पर: फ़ंड कौन चलाएगा, वे Anthropic से कितने स्वतंत्र हैं, और क्या नियम सार्वजनिक होंगे।"
+          ],
+          [
+            "o",
+            "पाने वालों को कौन चुनता है। क्या लोग एक-एक मामले में चुने जाएँगे, या ऐसे प्रकाशित नियम से जिसे कोई भी जाँच सके।"
+          ],
+          [
+            "o",
+            "सबको और बार-बार, या नहीं। चुने गए समूहों को एक बार का अनुदान परोपकार है। किसी तय आबादी के हर व्यक्ति को नियमित भुगतान डिविडेंड की ओर पहला क़दम होगा।"
+          ],
+          [
+            "o",
+            "आँकड़े। शेयरधारकों की मंज़ूरी, अघोषित आधार, और हर साल असल में कितना भुगतान हुआ, सिर्फ़ कितने का वादा हुआ वह नहीं।"
+          ],
+          [
+            "o",
+            "तब तक यह फ़ंड एक अधूरे डिज़ाइन वाला वादा है। इसे वैसे पढ़ें जैसे यह साइट हर मुफ़्त भोजन को पढ़ती है। पैसा कौन देता है: यहाँ हमें पता है। कौन तय करता है और किसे मिलता है: अभी नहीं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "El 18 de octubre de 2026, Anthropic anunció que destina parte de sus acciones a un nuevo Anthropic Public Benefit Fund. Sujeto a la aprobación de los accionistas, compromete ya el 5 % de sus acciones, y el consejo puede añadir un 2 % por cada aumento del 50 % en el valor de la empresa por encima de una base fijada.[1] CNBC señaló que esa base no se ha revelado y que el anuncio llega antes de una salida a bolsa prevista, según la prensa, para noviembre.[2]"
+          ],
+          [
+            "p",
+            "Entre los posibles usos, el anuncio menciona «grandes donaciones a organizaciones sin ánimo de lucro tradicionales o distribuciones directas a poblaciones específicas». La segunda expresión es la razón de que este sitio escriba sobre ello. Cuando una empresa que construye IA habla de entregar parte de su valor directamente a las personas, suena parecido a una renta básica. Este ensayo expone lo prometido, lo que sigue abierto y cómo se compara la idea con la renta básica."
+          ],
+          [
+            "h",
+            "Lo que se prometió"
+          ],
+          [
+            "p",
+            "El fondo es una LLC propiedad al cien por cien de Anthropic, no una entidad benéfica 501(c)(3); Anthropic dice que eligió esta forma «para poder ajustar entre distintas formas de donación». Las acciones de Anthropic que tenga la LLC no se usarán para lobby ni donaciones políticas, ni en EE. UU. ni en el extranjero.[1]"
+          ],
+          [
+            "p",
+            "El primer ejemplo de causa es el efecto de la IA en el empleo. Anthropic escribe que la IA «también podría causar inestabilidad a muchos trabajadores», que ya ha comprometido 200 millones de dólares para estudiar y abordar el problema y que «quizá hagan falta enfoques más audaces».[1]"
+          ],
+          [
+            "p",
+            "El fondo se suma a compromisos anteriores: los cofundadores se comprometieron a donar el 80 % de sus acciones, y la empresa iguala las acciones que sus empleados se comprometen a donar. Sumándolo todo, Anthropic dice que alrededor del 20 % de sus acciones se dedicará al bien público, más lo que añadan los hitos de valoración.[1]"
+          ],
+          [
+            "p",
+            "Lo que aún no está decidido: la estructura y la gobernanza del fondo, y los hitos de valoración que ampliarían su participación. Anthropic dice que dará más detalles «en los próximos meses».[1]"
+          ],
+          [
+            "o",
+            "Primero, lo que está bien. Un compromiso en acciones crece con la empresa, a diferencia de una donación fija. El anuncio dice con claridad que la IA puede perjudicar a los trabajadores y vincula parte de las ganancias a ese problema. La prohibición del lobby y de las donaciones políticas cierra una vía evidente por la que un fondo así podría acabar sirviendo a su dueño. Y el texto nombra sus propias preguntas abiertas en lugar de dejar que los lectores las descubran."
+          ],
+          [
+            "h",
+            "Cómo se recibió"
+          ],
+          [
+            "p",
+            "Las reacciones fueron diversas. La asesora de salidas a bolsa Lise Buyer dijo a CNBC que el anuncio era «obligatorio para preparar una oferta pública inicial» y «beneficioso desde el punto de vista de la imagen». Podría verse con buenos ojos si el dinero apoya la recualificación o ayuda a los trabajadores a encontrar otro empleo, dijo, y añadió: «Por supuesto, también sirve para pulir su reputación en un momento en que la IA está bajo un escrutinio considerable».[2] Elon Musk respondió en X: «Recomiendo dar las acciones directamente al público». David Sacks escribió: «Está por ver si sirve al bien público».[3]"
+          ],
+          [
+            "o",
+            "Son preguntas razonables, y el fondo aún no puede responderlas, porque lo que las respondería, quién decide y con qué reglas, no se ha publicado. Eso no es motivo para suponer lo peor. Es motivo para esperar a los detalles de gobernanza antes de ponerle nombre."
+          ],
+          [
+            "h",
+            "A través de los cinco criterios de BIEN"
+          ],
+          [
+            "p",
+            "La Red Mundial de Renta Básica (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todos de forma individual, sin comprobación de recursos ni exigencia de trabajo», y enumera cinco características: periódica, en efectivo, individual, universal e incondicional.[4] Es la vara de medir que usamos en {el ensayo sobre los 10.000 bahts de Tailandia|/essays/thailand-digital-wallet/}. El fondo aún no ha pagado nada, así que solo podemos poner a prueba la idea tal como está escrita: «distribuciones directas a poblaciones específicas»."
+          ],
+          [
+            "p",
+            "¿Periódica? No se sabe. Nada indica si las distribuciones se repetirían."
+          ],
+          [
+            "p",
+            "¿En efectivo? No se sabe. Una «distribución directa» podría ser dinero, acciones u otra cosa; la forma no se indica."
+          ],
+          [
+            "p",
+            "¿Individual? Posiblemente. Depende del diseño."
+          ],
+          [
+            "p",
+            "¿Universal? No, tal como está escrito. «Poblaciones específicas» son grupos que alguien elige, no todo el mundo."
+          ],
+          [
+            "p",
+            "¿Incondicional? No se sabe. Pertenecer a un grupo elegido ya es una condición, y otras reglas no se han publicado."
+          ],
+          [
+            "o",
+            "Tal como se describe, se parece más a la filantropía focalizada que a la renta básica: quien financia elige un grupo y le da. No es una crítica; la ayuda focalizada puede hacer mucho bien. Pero mientras el fondo no pague a todas las personas de una población definida, con regularidad y sin condiciones, no es renta básica, y es más justo juzgarlo por lo que es."
+          ],
+          [
+            "h",
+            "Modelos que ya están en este sitio"
+          ],
+          [
+            "p",
+            "Desde 1982, {Alaska|/timeline/#tl-alaska} paga a los residentes que cumplen los requisitos un dividendo anual de su Fondo Permanente, que conserva la riqueza petrolera y mineral del estado como un recurso financiero renovable; el primer dividendo fue de 1.000 $ por persona.[5] El fondo pertenece al público a través del estado, las reglas están en la ley y todos los que cumplen los requisitos reciben lo mismo."
+          ],
+          [
+            "p",
+            "Desde marzo de 2026, {el AI Dividend|/timeline/#tl-ai-dividend} paga 1.000 $ al mes durante un año, sin condiciones, a un grupo de 25 a 50 trabajadores cuyo empleo o ingresos han sufrido por la IA. Empezó con 300.000 $ y aspira a repartir 3 millones en 2026. Sus organizadores piensan pedir aportaciones a las empresas de IA y dijeron que habían iniciado conversaciones «con empresas como Anthropic».[6] Así se ven las distribuciones directas a una población específica a pequeña escala: dinero real, un grupo elegido, un plazo fijo."
+          ],
+          [
+            "o",
+            "Alaska muestra lo que necesita un fondo que paga a todos: propiedad pública y una regla que nadie tenga que decidir de nuevo cada año. El AI Dividend muestra cómo es el efectivo focalizado. El fondo de Anthropic podría acercarse a uno, al otro o a ninguno. En {nuestro ensayo sobre el ingreso universal alto|/essays/universal-high-income/} preguntamos quién paga. Aquí ha aparecido alguien que paga, así que la pregunta abierta avanza: ¿quién decide?"
+          ],
+          [
+            "h",
+            "La vía de la propiedad: acciones básicas"
+          ],
+          [
+            "p",
+            "La respuesta de Musk apunta a otra vía: en lugar de un fondo que da dinero, dar a la gente las acciones. Una semana después, en Bombay, el economista Kaushik Basu, ex economista jefe del Banco Mundial, defendió algo parecido. La IA «podría reducir drásticamente la demanda de trabajo humano en los próximos cinco a diez años», advirtió, y los gobiernos quizá deban plantearse unas «acciones básicas universales»: no una transferencia única, sino «una participación continua en la riqueza generada por los activos productivos y las empresas automatizadas». Su propuesta era «quitar una parte de las acciones a los superricos (y repartirla) entre la población», mediante «un sistema inteligente de impuestos y redistribución».[7]"
+          ],
+          [
+            "o",
+            "La vía de la propiedad y la del efectivo responden a preocupaciones distintas. El efectivo paga el alquiler de este mes. Las acciones dan derecho a beneficios futuros, y voz si llevan voto, pero su valor se mueve con el mercado, y quien tiene que vender en un mal mes vende barato. {Usar para ser dueño|/essays/use-to-own/} mostró lo delgado que puede ser ese derecho cuando las acciones llevan pocos derechos. Un dividendo pagado sobre una riqueza que es de todos, como en Alaska, es una forma de combinar ambas."
+          ],
+          [
+            "h",
+            "Los argumentos contra el efectivo"
+          ],
+          [
+            "p",
+            "No todos creen que el efectivo sea la respuesta correcta a la IA. En un informe de investigación publicado por la OIT en mayo de 2026, Tuğba Özay y Ekkehard Ernst sostienen que la IA cambia sobre todo tareas, no elimina ocupaciones enteras, y que una transferencia universal llevaría el gasto a sectores donde la oferta no puede crecer deprisa, como la vivienda y la sanidad, y subiría allí los precios. Defienden la recualificación, las políticas activas de empleo, más oferta de vivienda y gravar las rentas generadas por la IA, con una protección social universal diseñada para mantener los incentivos al trabajo, por ejemplo mediante un crédito fiscal por ingresos del trabajo.[8]"
+          ],
+          [
+            "o",
+            "Este es un sitio sobre renta básica, pero ese argumento merece una escucha justa, y encaja mejor con un fondo dirigido a «poblaciones específicas» que con un pago universal. Se esté del lado que se esté, el dinero para la transición a la IA habrá que juzgarlo por lo que puede comprar, no por la cifra del cheque."
+          ],
+          [
+            "h",
+            "Qué vigilar"
+          ],
+          [
+            "o",
+            "La gobernanza. Cuando se publique la estructura: quién dirige el fondo, qué independencia tiene respecto de Anthropic y si las reglas son públicas."
+          ],
+          [
+            "o",
+            "Quién decide los destinatarios. Si se elige caso por caso o con una regla publicada que cualquiera pueda comprobar."
+          ],
+          [
+            "o",
+            "Universal y periódico, o no. Las ayudas únicas a grupos elegidos son filantropía. Los pagos regulares a todas las personas de una población definida serían el primer paso hacia un dividendo."
+          ],
+          [
+            "o",
+            "Las cifras. La aprobación de los accionistas, la base sin revelar y cuánto se paga de verdad cada año, no solo cuánto se compromete."
+          ],
+          [
+            "o",
+            "Hasta entonces, el fondo es una promesa con un diseño a medio hacer. Léalo como este sitio lee cualquier almuerzo gratis. Quién paga: aquí lo sabemos. Quién decide y quién recibe: todavía no."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Am 18. Oktober 2026 kündigte Anthropic an, einen Teil seiner Aktien einem neuen Anthropic Public Benefit Fund zu widmen. Vorbehaltlich der Zustimmung der Aktionäre werden jetzt 5 % der Aktien zugesagt, und der Vorstand kann für jede Steigerung des Unternehmenswerts um 50 % über eine festgelegte Basis hinaus weitere 2 % hinzufügen.[1] CNBC wies darauf hin, dass diese Basis nicht offengelegt wurde und die Ankündigung vor einem Börsengang kommt, der Berichten zufolge für November geplant ist.[2]"
+          ],
+          [
+            "p",
+            "Als mögliche Verwendungen nennt die Ankündigung „große Spenden an klassische gemeinnützige Organisationen oder direkte Ausschüttungen an bestimmte Bevölkerungsgruppen“. Der zweite Ausdruck ist der Grund, warum diese Seite darüber schreibt. Wenn ein Unternehmen, das KI baut, davon spricht, einen Teil seines Werts direkt an Menschen zu geben, klingt das nach Grundeinkommen. Dieser Essay ordnet ein, was versprochen wurde, was offen ist und wie sich die Idee zum Grundeinkommen verhält."
+          ],
+          [
+            "h",
+            "Was versprochen wurde"
+          ],
+          [
+            "p",
+            "Der Fonds ist eine LLC, die vollständig Anthropic gehört, keine gemeinnützige 501(c)(3)-Organisation; Anthropic sagt, es habe diese Form gewählt, „um zwischen verschiedenen Formen des Gebens anpassen zu können“. Keine der Anthropic-Aktien, die die LLC hält, wird für Lobbyarbeit oder politische Spenden verwendet, weder in den USA noch im Ausland.[1]"
+          ],
+          [
+            "p",
+            "Das erste Beispiel ist die Wirkung von KI auf Arbeitsplätze. Anthropic schreibt, KI „könnte für viele Beschäftigte auch Instabilität verursachen“, es habe bereits 200 Mio. $ zugesagt, um dies zu untersuchen und anzugehen, und „mutigere Ansätze könnten nötig sein“.[1]"
+          ],
+          [
+            "p",
+            "Der Fonds baut auf früheren Zusagen auf: Die Mitgründer haben versprochen, 80 % ihrer Anteile zu spenden, und Anthropic verdoppelt Aktien, deren Spende Beschäftigte zusagen. Zusammengerechnet sollen laut Anthropic rund 20 % der Aktien dem Gemeinwohl gewidmet sein, plus das, was Bewertungsschwellen hinzufügen.[1]"
+          ],
+          [
+            "p",
+            "Noch nicht entschieden sind die Struktur und Governance des Fonds sowie die Bewertungsschwellen, die seinen Anteil erhöhen würden. Anthropic will „in den kommenden Monaten“ mehr dazu sagen.[1]"
+          ],
+          [
+            "o",
+            "Zuerst das Positive. Eine Zusage in Aktien wächst mit dem Unternehmen, anders als eine feste Spende. Die Ankündigung sagt offen, dass KI Beschäftigten schaden kann, und verknüpft einen Teil des Gewinns mit diesem Problem. Das Verbot von Lobbyarbeit und politischen Spenden schließt einen naheliegenden Weg, auf dem ein solcher Fonds am Ende seinem Eigentümer dienen könnte. Und der Text nennt seine offenen Fragen selbst, statt sie den Lesern zu überlassen."
+          ],
+          [
+            "h",
+            "Wie es aufgenommen wurde"
+          ],
+          [
+            "p",
+            "Die Reaktionen waren gemischt. Die Börsengang-Beraterin Lise Buyer sagte CNBC, die Ankündigung sei „zwingend zur Vorbereitung eines Börsengangs“ und „vorteilhaft für das Image“. Sie könne positiv gesehen werden, wenn das Geld Umschulungen unterstütze oder Beschäftigten zu anderer Arbeit verhelfe, und fügte hinzu: „Natürlich dient es auch dazu, den eigenen Ruf aufzupolieren, in einer Zeit, in der KI genau beobachtet wird.“[2] Elon Musk antwortete auf X: „Ich empfehle, die Aktien direkt der Öffentlichkeit zu geben.“ David Sacks schrieb: „Ob es dem Gemeinwohl dient, bleibt abzuwarten.“[3]"
+          ],
+          [
+            "o",
+            "Das sind berechtigte Fragen, und der Fonds kann sie noch nicht beantworten, weil die Teile, die sie beantworten würden, wer entscheidet und nach welchen Regeln, nicht veröffentlicht sind. Das ist kein Grund, das Schlimmste anzunehmen. Es ist ein Grund, die Details der Governance abzuwarten, bevor man den Fonds irgendwie nennt."
+          ],
+          [
+            "h",
+            "Durch die fünf Kriterien von BIEN"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitspflicht“, und nennt fünf Merkmale: regelmäßig, Geld, individuell, universell und bedingungslos.[4] Es ist derselbe Maßstab wie im {Essay über Thailands 10.000 Baht|/essays/thailand-digital-wallet/}. Der Fonds hat noch nichts ausgezahlt, also können wir nur die Idee prüfen, wie sie dasteht: „direkte Ausschüttungen an bestimmte Bevölkerungsgruppen“."
+          ],
+          [
+            "p",
+            "Regelmäßig? Unbekannt. Nichts sagt, ob sich Ausschüttungen wiederholen würden."
+          ],
+          [
+            "p",
+            "Geld? Unbekannt. Eine „direkte Ausschüttung“ könnte Geld, Aktien oder etwas anderes sein; die Form ist nicht genannt."
+          ],
+          [
+            "p",
+            "Individuell? Möglich. Das hängt vom Design ab."
+          ],
+          [
+            "p",
+            "Universell? So wie es dasteht, nein. „Bestimmte Bevölkerungsgruppen“ sind Gruppen, die jemand auswählt, nicht alle."
+          ],
+          [
+            "p",
+            "Bedingungslos? Unbekannt. Zu einer ausgewählten Gruppe zu gehören ist bereits eine Bedingung, und weitere Regeln sind nicht veröffentlicht."
+          ],
+          [
+            "o",
+            "So beschrieben, ähnelt das eher gezielter Philanthropie als einem Grundeinkommen: Ein Geldgeber wählt eine Gruppe aus und gibt ihr etwas. Das ist keine Kritik; gezielte Hilfe kann viel Gutes bewirken. Aber solange der Fonds nicht allen Menschen einer festgelegten Gruppe regelmäßig und bedingungslos zahlt, ist er kein Grundeinkommen, und es ist fairer, ihn als das zu beurteilen, was er ist."
+          ],
+          [
+            "h",
+            "Modelle, die schon auf dieser Seite stehen"
+          ],
+          [
+            "p",
+            "Seit 1982 zahlt {Alaska|/timeline/#tl-alaska} berechtigten Einwohnern jährlich eine Dividende aus seinem Permanent Fund, der den Öl- und Mineralreichtum des Staates als erneuerbare Finanzquelle bewahrt; die erste Dividende betrug 1.000 $ pro Person.[5] Der Fonds gehört über den Staat der Öffentlichkeit, die Regeln stehen im Gesetz, und alle Berechtigten erhalten denselben Betrag."
+          ],
+          [
+            "p",
+            "Seit März 2026 zahlt {der AI Dividend|/timeline/#tl-ai-dividend} einer Gruppe von 25 bis 50 Beschäftigten, deren Arbeit oder Einkommen unter KI gelitten hat, ein Jahr lang 1.000 $ im Monat ohne Bedingungen. Er startete mit 300.000 $ und will 2026 3 Mio. $ verteilen. Die Organisatoren wollen KI-Firmen um Beiträge bitten und sagten, Gespräche „mit Firmen wie Anthropic“ seien aufgenommen worden.[6] So sehen direkte Ausschüttungen an eine bestimmte Gruppe im Kleinen aus: echtes Geld, eine ausgewählte Gruppe, eine feste Laufzeit."
+          ],
+          [
+            "o",
+            "Alaska zeigt, was ein Fonds braucht, der allen zahlt: öffentliches Eigentum und eine Regel, die niemand jedes Jahr neu entscheiden muss. Der AI Dividend zeigt, wie gezielte Geldzahlungen aussehen. Anthropics Fonds könnte sich in die eine oder andere Richtung entwickeln, oder in keine. In {unserem Essay über universelles Hocheinkommen|/essays/universal-high-income/} fragten wir, wer zahlt. Hier ist ein Zahler aufgetaucht, also rückt die offene Frage weiter: Wer entscheidet?"
+          ],
+          [
+            "h",
+            "Der Weg über Eigentum: Basisaktien"
+          ],
+          [
+            "p",
+            "Musks Antwort deutet auf einen anderen Weg: statt eines Fonds, der Geld gibt, den Menschen die Aktien geben. Eine Woche später vertrat der Ökonom Kaushik Basu, früher Chefökonom der Weltbank, in Mumbai etwas Ähnliches. KI „könnte die Nachfrage nach menschlicher Arbeit in den nächsten fünf bis zehn Jahren drastisch verringern“, warnte er, und Regierungen müssten womöglich „universelle Basisaktien“ erwägen: keine einmalige Überweisung, sondern „eine fortlaufende Beteiligung an dem Wohlstand, den produktive Vermögenswerte und automatisierte Unternehmen erzeugen“. Sein Vorschlag war, „den Superreichen einen Teil der Aktien zu nehmen (und ihn) über die Bevölkerung zu verteilen“, durch „ein intelligentes System von Besteuerung und Umverteilung“.[7]"
+          ],
+          [
+            "o",
+            "Der Weg über Eigentum und der Weg über Geld beantworten verschiedene Sorgen. Geld bezahlt die Miete dieses Monats. Aktien geben einen Anspruch auf künftige Gewinne und, wenn sie Stimmrechte tragen, ein Mitspracherecht; aber ihr Wert schwankt mit dem Markt, und wer in einem schlechten Monat verkaufen muss, verkauft billig. {Nutzen heißt besitzen|/essays/use-to-own/} zeigte, wie dünn dieser Anspruch sein kann, wenn Aktien wenige Rechte tragen. Eine Dividende aus einem Vermögen, das allen gehört, wie in Alaska, ist ein Weg, beides zu verbinden."
+          ],
+          [
+            "h",
+            "Die Argumente gegen Geld"
+          ],
+          [
+            "p",
+            "Nicht alle halten Geld für die richtige Antwort auf KI. In einem im Mai 2026 von der ILO veröffentlichten Research Brief argumentieren Tuğba Özay und Ekkehard Ernst, dass KI vor allem Tätigkeiten verändert, statt ganze Berufe auszulöschen, und dass eine universelle Zahlung die Ausgaben in Bereiche lenken würde, in denen das Angebot nicht schnell wachsen kann, etwa Wohnen und Gesundheit, und dort die Preise treiben würde. Sie setzen auf Umschulung, aktive Arbeitsmarktpolitik, mehr Wohnungsangebot und die Besteuerung von KI-Renten, mit einer universellen sozialen Absicherung, die Arbeitsanreize erhält, etwa über eine Steuergutschrift für Erwerbseinkommen.[8]"
+          ],
+          [
+            "o",
+            "Dies ist eine Seite über Grundeinkommen, aber dieses Argument verdient faires Gehör, und es passt besser zu einem Fonds für „bestimmte Bevölkerungsgruppen“ als zu einer Zahlung an alle. Auf welcher Seite man auch steht: Geld für den Übergang zur KI wird man daran messen müssen, was es kaufen kann, nicht an der Zahl auf dem Scheck."
+          ],
+          [
+            "h",
+            "Worauf man achten sollte"
+          ],
+          [
+            "o",
+            "Governance. Sobald die Struktur veröffentlicht ist: Wer leitet den Fonds, wie unabhängig ist er von Anthropic, und sind die Regeln öffentlich?"
+          ],
+          [
+            "o",
+            "Wer über Empfänger entscheidet. Werden Menschen Fall für Fall ausgewählt oder nach einer veröffentlichten Regel, die jeder prüfen kann?"
+          ],
+          [
+            "o",
+            "Universell und wiederkehrend, oder nicht. Einmalige Zuwendungen an ausgewählte Gruppen sind Philanthropie. Regelmäßige Zahlungen an alle Menschen einer festgelegten Gruppe wären der erste Schritt zu einer Dividende."
+          ],
+          [
+            "o",
+            "Die Zahlen. Die Zustimmung der Aktionäre, die nicht offengelegte Basis und wie viel jedes Jahr tatsächlich ausgezahlt wird, nicht nur zugesagt."
+          ],
+          [
+            "o",
+            "Bis dahin ist der Fonds ein Versprechen mit unfertigem Design. Lies es so, wie diese Seite jedes kostenlose Mittagessen liest. Wer zahlt: Das wissen wir hier. Wer entscheidet und wer bekommt: noch nicht."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في 18 أكتوبر 2026 أعلنت ⁦Anthropic⁩ أنها تخصص جزءًا من أسهمها لصندوق جديد هو «صندوق ⁦Anthropic⁩ للمنفعة العامة» (⁦Anthropic Public Benefit Fund⁩). وبشرط موافقة المساهمين، تُخصَّص الآن 5% من الأسهم، ويجوز لمجلس الإدارة أن يضيف 2% مع كل زيادة بنسبة 50% في قيمة الشركة فوق خط أساس محدد.[1] وأشارت ⁦CNBC⁩ إلى أن خط الأساس هذا لم يُكشف بعد، وأن الإعلان جاء قبل طرح عام أولي يُقال إنه مقرر في نوفمبر.[2]"
+          ],
+          [
+            "p",
+            "ومن الاستخدامات الممكنة يذكر الإعلان «تبرعات كبيرة لمنظمات غير ربحية تقليدية أو توزيعات مباشرة لفئات سكانية محددة». والعبارة الثانية هي سبب كتابتنا عن الأمر. فحين تتحدث شركة تبني الذكاء الاصطناعي عن منح جزء من قيمتها للناس مباشرة، يبدو ذلك قريبًا من الدخل الأساسي. يعرض هذا المقال ما وُعد به، وما لا يزال مفتوحًا، وكيف تُقارَن الفكرة بالدخل الأساسي."
+          ],
+          [
+            "h",
+            "ما الذي وُعد به"
+          ],
+          [
+            "p",
+            "الصندوق شركة ذات مسؤولية محدودة (⁦LLC⁩) تملكها ⁦Anthropic⁩ بالكامل، وليس جمعية خيرية من نوع ⁦501(c)(3)⁩؛ وتقول الشركة إنها اختارت هذا الشكل «لإتاحة المرونة بين أشكال العطاء المختلفة». ولن تُستخدم أسهم ⁦Anthropic⁩ التي تملكها الشركة في الضغط السياسي أو التبرعات السياسية، داخل الولايات المتحدة أو خارجها.[1]"
+          ],
+          [
+            "p",
+            "أول مثال على القضايا هو أثر الذكاء الاصطناعي في الوظائف. تكتب ⁦Anthropic⁩ أن الذكاء الاصطناعي «قد يسبب أيضًا عدم استقرار لكثير من العاملين»، وأنها التزمت بالفعل بمبلغ 200 مليون دولار لدراسة هذه المسألة ومعالجتها، وأن «مقاربات أجرأ قد تكون لازمة».[1]"
+          ],
+          [
+            "p",
+            "ويُبنى الصندوق على تعهدات سابقة: فقد تعهد المؤسسون المشاركون بالتبرع بـ80% من حصصهم، وتضاعف الشركة الأسهم التي يتعهد الموظفون بالتبرع بها. وبجمع ذلك تقول ⁦Anthropic⁩ إن نحو 20% من أسهمها ستُخصص للصالح العام، إضافة إلى ما قد تضيفه عتبات التقييم.[1]"
+          ],
+          [
+            "p",
+            "وما لم يُحسم بعد: هيكل الصندوق وحوكمته، وعتبات التقييم التي تزيد حصته. وتقول ⁦Anthropic⁩ إنها ستكشف المزيد «في الأشهر المقبلة».[1]"
+          ],
+          [
+            "o",
+            "لنبدأ بما يُحسب له. التعهد بالأسهم يكبر مع الشركة، بخلاف تبرع بمبلغ ثابت. ويقول الإعلان صراحة إن الذكاء الاصطناعي قد يضر العاملين، ويربط جزءًا من المكاسب بهذه المشكلة. ويسدّ حظر الضغط السياسي والتبرعات السياسية طريقًا واضحًا قد ينتهي فيه صندوق كهذا إلى خدمة مالكه. كما يذكر النص أسئلته المفتوحة بنفسه بدل أن يترك القراء يكتشفونها."
+          ],
+          [
+            "h",
+            "كيف استُقبل"
+          ],
+          [
+            "p",
+            "جاءت ردود الفعل متباينة. قالت مستشارة الطروحات العامة ليز باير لـ⁦CNBC⁩ إن الإعلان «إلزامي للتحضير لطرح عام أولي» و«مفيد من ناحية الصورة»، وإنه قد يُنظر إليه بإيجابية إذا دعم المال إعادة التأهيل أو ساعد العاملين على إيجاد عمل آخر، وأضافت: «بالطبع، هو أيضًا لتلميع سمعتهم في وقت يخضع فيه الذكاء الاصطناعي لتدقيق كبير».[2] وردّ إيلون ماسك على ⁦X⁩: «أوصي بمنح الأسهم للجمهور مباشرة». وكتب ديفيد ساكس: «يبقى أن نرى إن كان سيخدم الصالح العام».[3]"
+          ],
+          [
+            "o",
+            "هذه أسئلة منصفة، ولا يستطيع الصندوق الإجابة عنها بعد، لأن الأجزاء التي تجيب عنها، أي من يقرر وبأي قواعد، لم تُنشر. وليس هذا سببًا لافتراض الأسوأ، بل سببًا لانتظار تفاصيل الحوكمة قبل إطلاق أي وصف على الصندوق."
+          ],
+          [
+            "h",
+            "عبر معايير ⁦BIEN⁩ الخمسة"
+          ],
+          [
+            "p",
+            "تعرّف الشبكة العالمية للدخل الأساسي (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُسلَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو شرط للعمل»، وتذكر خمس سمات: دوري، ونقدي، وفردي، وشامل، وغير مشروط.[4] وهو المقياس نفسه الذي استخدمناه في {مقال الـ10,000 بات التايلاندية|/essays/thailand-digital-wallet/}. لم يدفع الصندوق شيئًا بعد، لذا لا يمكننا إلا اختبار الفكرة كما كُتبت: «توزيعات مباشرة لفئات سكانية محددة»."
+          ],
+          [
+            "p",
+            "دوري؟ غير معروف. لا شيء يقول إن التوزيعات ستتكرر."
+          ],
+          [
+            "p",
+            "نقدي؟ غير معروف. قد يكون «التوزيع المباشر» نقدًا أو أسهمًا أو شيئًا آخر؛ ولم يُذكر الشكل."
+          ],
+          [
+            "p",
+            "فردي؟ ممكن. يتوقف ذلك على التصميم."
+          ],
+          [
+            "p",
+            "شامل؟ كما هو مكتوب، لا. «فئات سكانية محددة» تعني مجموعات يختارها أحد ما، لا الجميع."
+          ],
+          [
+            "p",
+            "غير مشروط؟ غير معروف. الانتماء إلى مجموعة مختارة شرط في حد ذاته، ولم تُنشر قواعد أخرى."
+          ],
+          [
+            "o",
+            "بحسب الوصف، هذا أقرب إلى العمل الخيري الموجّه منه إلى الدخل الأساسي: جهة ممولة تختار مجموعة وتعطيها. وليس هذا انتقادًا، فالعطاء الموجّه قد يصنع خيرًا كثيرًا. لكن ما لم يدفع الصندوق يومًا لكل فرد في فئة محددة، بانتظام ودون شروط، فهو ليس دخلًا أساسيًا، ومن الإنصاف أن يُقيَّم على حقيقته."
+          ],
+          [
+            "h",
+            "نماذج موجودة على هذا الموقع"
+          ],
+          [
+            "p",
+            "منذ 1982 تدفع {ألاسكا|/timeline/#tl-alaska} للمقيمين المستحقين عائدًا سنويًا من صندوقها الدائم، الذي يحفظ ثروة الولاية من النفط والمعادن موردًا ماليًا متجددًا؛ وكان أول عائد ⁦$1,000⁩ للفرد.[5] الصندوق ملك للجمهور عبر الولاية، والقواعد مكتوبة في القانون، وكل مستحق يحصل على المبلغ نفسه."
+          ],
+          [
+            "p",
+            "ومنذ مارس 2026 يدفع {⁦AI Dividend⁩|/timeline/#tl-ai-dividend} ‏⁦$1,000⁩ شهريًا لمدة عام، بلا شروط، لمجموعة من 25 إلى 50 عاملًا تضررت وظائفهم أو دخولهم بسبب الذكاء الاصطناعي. بدأ بـ⁦$300,000⁩ ويهدف إلى توزيع 3 ملايين دولار في 2026. ويعتزم منظموه طلب مساهمات من شركات الذكاء الاصطناعي، وقالوا إن محادثات بدأت «مع شركات مثل ⁦Anthropic⁩».[6] هكذا تبدو التوزيعات المباشرة لفئة محددة على نطاق صغير: نقد حقيقي، ومجموعة مختارة، ومدة ثابتة."
+          ],
+          [
+            "o",
+            "تُبيّن ألاسكا ما يحتاجه صندوق يدفع للجميع: ملكية عامة، وقاعدة لا يحتاج أحد إلى إعادة تقريرها كل عام. ويُبيّن ⁦AI Dividend⁩ شكل النقد الموجّه. وقد يتجه صندوق ⁦Anthropic⁩ نحو أحدهما أو لا نحو أيٍّ منهما. في {مقالنا عن الدخل المرتفع الشامل|/essays/universal-high-income/} سألنا: من يدفع؟ وهنا ظهر من يدفع، فينتقل السؤال المفتوح خطوة: من يقرر؟"
+          ],
+          [
+            "h",
+            "طريق الملكية: الأسهم الأساسية"
+          ],
+          [
+            "p",
+            "يشير رد ماسك إلى طريق آخر: بدل صندوق يعطي مالًا، تُعطى الأسهم نفسها للناس. وبعد أسبوع، في مومباي، طرح الاقتصادي كوشيك باسو، كبير الاقتصاديين السابق في البنك الدولي، فكرة قريبة. فقد حذّر من أن الذكاء الاصطناعي «قد يخفض الطلب على العمل البشري بشكل كبير خلال السنوات الخمس إلى العشر المقبلة»، وأن الحكومات قد تضطر إلى النظر في «أسهم أساسية شاملة»: لا تحويلًا لمرة واحدة، بل «حصة مستمرة في الثروة التي تولّدها الأصول المنتجة والمؤسسات المؤتمتة». واقترح «أخذ جزء من الأسهم من فاحشي الثراء (وتوزيعه) على السكان»، عبر «نظام ذكي للضرائب وإعادة التوزيع».[7]"
+          ],
+          [
+            "o",
+            "طريق الملكية وطريق النقد يجيبان عن مخاوف مختلفة. النقد يدفع إيجار هذا الشهر. والأسهم تمنح حقًا في الأرباح المستقبلية، وصوتًا إن كانت تحمل حق التصويت، لكن قيمتها تتحرك مع السوق، ومن يضطر إلى البيع في شهر سيئ يبيع بثمن بخس. وقد رأينا في {مقال «استخدِم لتملك»|/essays/use-to-own/} كم يمكن أن يكون هذا الحق ضئيلًا حين تحمل الأسهم حقوقًا قليلة. والعائد المدفوع من ثروة يملكها الجميع، كما في ألاسكا، طريقة للجمع بين الاثنين."
+          ],
+          [
+            "h",
+            "الحجج ضد النقد"
+          ],
+          [
+            "p",
+            "لا يرى الجميع أن النقد هو الجواب الصحيح عن الذكاء الاصطناعي. ففي موجز بحثي نشرته منظمة العمل الدولية في مايو 2026، يرى توغبا أوزاي وإكهارد إرنست أن الذكاء الاصطناعي يغيّر المهام في الغالب ولا يمحو مهنًا بأكملها، وأن التحويل الشامل سيدفع الإنفاق إلى قطاعات لا يمكن أن ينمو فيها العرض بسرعة، كالسكن والرعاية الصحية، فترتفع الأسعار فيها. ويفضّلان إعادة التأهيل، وسياسات سوق العمل النشطة، وزيادة المعروض من المساكن، وفرض ضرائب على الريوع التي يولّدها الذكاء الاصطناعي، مع حماية اجتماعية شاملة مصممة للحفاظ على حوافز العمل، كالإعفاء الضريبي على دخل العمل.[8]"
+          ],
+          [
+            "o",
+            "هذا موقع عن الدخل الأساسي، لكن هذه الحجة تستحق إنصاتًا عادلًا، وهي تنطبق على صندوق موجّه إلى «فئات سكانية محددة» أكثر مما تنطبق على دفعة للجميع. وأيًّا كان موقفك، فإن المال المخصص للانتقال إلى الذكاء الاصطناعي سيُقاس بما يمكنه شراؤه، لا بالرقم المكتوب على الشيك."
+          ],
+          [
+            "h",
+            "ما الذي يستحق المتابعة"
+          ],
+          [
+            "o",
+            "الحوكمة. حين يُنشر الهيكل: من يدير الصندوق، وما مدى استقلاله عن ⁦Anthropic⁩، وهل القواعد علنية؟"
+          ],
+          [
+            "o",
+            "من يقرر المستفيدين. هل يُختار الناس حالةً بحالة، أم وفق قاعدة منشورة يستطيع أي أحد التحقق منها؟"
+          ],
+          [
+            "o",
+            "شامل ومتكرر أم لا. المنح لمرة واحدة لمجموعات مختارة عمل خيري. أما الدفعات المنتظمة لكل فرد في فئة محددة فستكون الخطوة الأولى نحو عائد."
+          ],
+          [
+            "o",
+            "الأرقام. موافقة المساهمين، وخط الأساس غير المعلن، وكم يُدفع فعلًا كل عام، لا كم يُتعهَّد به فقط."
+          ],
+          [
+            "o",
+            "وإلى ذلك الحين، يبقى الصندوق وعدًا بتصميم غير مكتمل. اقرأه كما يقرأ هذا الموقع كل غداء مجاني. من يدفع: هنا نعرف. من يقرر ومن يحصل: ليس بعد."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Anthropic — Investing in the public benefit (18 Oct 2026)",
+          "url": "https://www.anthropic.com/news/public-benefit-fund"
+        },
+        {
+          "n": 2,
+          "label": "CNBC — Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption (18 Oct 2026)",
+          "url": "https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html"
+        },
+        {
+          "n": 3,
+          "label": "Stocktwits via Yahoo Finance — Anthropic IPO: Musk wants AI firm to hand shares directly to public (19 Oct 2026)",
+          "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-musk-wants-ai-032242549.html"
+        },
+        {
+          "n": 4,
+          "label": "Basic Income Earth Network (BIEN) — About Basic Income",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 5,
+          "label": "Alaska Permanent Fund Dividend Division — Historical Timeline; Alaska Permanent Fund Corporation",
+          "url": "https://pfd.alaska.gov/Division-Info/Historical-Timeline",
+          "url2": "https://apfc.org/who-we-are/"
+        },
+        {
+          "n": 6,
+          "label": "Blood in the Machine — The first basic income for workers hit by AI (24 Mar 2026)",
+          "url": "https://www.bloodinthemachine.com/p/the-first-basic-income-for-workers"
+        },
+        {
+          "n": 7,
+          "label": "The Week — AI could wipe out demand for labour in 5-10 years, warns economist Kaushik Basu (26 Oct 2026)",
+          "url": "https://www.theweek.in/news/biz-tech/2026/10/26/ai-could-wipe-out-demand-for-labour-in-5-10-years-warns-economist-kaushik-basu.html"
+        },
+        {
+          "n": 8,
+          "label": "ILO — Why UBI is not the answer to the impact of AI on the labour market (Özay and Ernst, research brief, May 2026)",
+          "url": "https://www.ilo.org/publications/why-universal-basic-income-not-answer-impact-ai-labour-market",
+          "url2": "https://doi.org/10.54394/00034454"
+        }
+      ]
+    },
     {
       "id": "your-own-basic-income",
       "date": "2026-11-03",
@@ -12189,7 +13266,8 @@ module.exports = {
       "date": "2026-10-29",
       "related": [
         "ai-agent-basic-income",
-        "use-to-own"
+        "use-to-own",
+        "public-benefit-fund"
       ],
       "title": {
         "ja": "ユニバーサルハイインカムは来るのか：誰が払う？",

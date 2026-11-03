@@ -813,6 +813,98 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### When an AI company sets aside shares: Anthropic’s Public Benefit Fund and basic income
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
+- Published: 2026-11-03
+
+On 18 October 2026, Anthropic announced that it is committing part of its shares to a new Anthropic Public Benefit Fund. Subject to stockholder approval, 5% of its shares are committed now, and the board may add 2% for every 50% increase in the company’s value above a set baseline.[1] CNBC noted that the baseline has not been disclosed, and that the announcement comes ahead of an initial public offering reportedly slated for November.[2]
+
+Among the possible uses, the announcement names “large donations to traditional nonprofits or direct distributions to specific populations”. The second phrase is why this site is writing about it. When a company that builds AI talks about handing part of its value directly to people, it sounds close to basic income. This essay sets out what was promised, what is still open, and how the idea compares with basic income.
+
+#### What was promised
+
+The fund is an LLC wholly owned by Anthropic, not a 501(c)(3) charity; Anthropic says it chose this form “to give adjustability between different forms of giving”. None of the Anthropic equity held by the LLC will be used for lobbying or political giving, in the US or abroad.[1]
+
+The first example of a cause is AI’s effect on jobs. Anthropic writes that AI “could also cause instability for many workers”, that it has already committed $200 million to studying and addressing this, and that “bolder approaches may be needed”.[1]
+
+The fund builds on earlier pledges: the co-founders pledged to donate 80% of their equity, and employees can pledge equity that Anthropic matches. Counting those, Anthropic says roughly 20% of its shares will be dedicated to the public good, plus whatever the valuation milestones add.[1]
+
+What is not decided yet: the fund’s structure and governance, and the valuation milestones that would add to its stake. Anthropic says it will share more “in the coming months”.[1]
+
+Opinion: Credit first. A commitment made in shares grows with the company, unlike a fixed donation. The announcement says plainly that AI may hurt workers and ties part of the upside to that problem. The rule against lobbying and political giving closes one obvious way such a fund could end up serving its owner. And the post names its own open questions instead of leaving readers to discover them.
+
+#### How it was received
+
+Reactions were mixed. IPO adviser Lise Buyer told CNBC the announcement was “mandatory to prepare for an initial public offering” and “beneficial from an image perspective”. It could be seen favourably if the money supports retraining or helps workers find other jobs, she said, adding: “Of course, it is also to burnish their reputation at a time when AI is coming under significant scrutiny.”[2] Elon Musk replied on X: “I recommend giving the shares directly to the public.” David Sacks wrote: “Whether it serves the public good remains to be seen.”[3]
+
+Opinion: These are fair questions, and the fund cannot answer them yet, because the parts that would answer them, who decides and by what rules, have not been published. That is not a reason to assume the worst. It is a reason to wait for the governance details before calling the fund anything.
+
+#### Through BIEN’s five criteria
+
+The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”, and lists five characteristics: periodic, cash, individual, universal and unconditional.[4] It is the yardstick we used in the essay on Thailand’s 10,000 baht (https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/). The fund has not paid anything yet, so we can only test the idea as written: “direct distributions to specific populations”.
+
+Periodic? Unknown. Nothing says whether distributions would recur.
+
+Cash? Unknown. A “direct distribution” could be cash, shares or something else; the form is not stated.
+
+Individual? Possibly. That depends on the design.
+
+Universal? No, as written. “Specific populations” means groups that someone chooses, not everyone.
+
+Unconditional? Unknown. Belonging to a chosen group is itself a condition, and any further rules have not been published.
+
+Opinion: As described, this is closer to targeted philanthropy than to basic income: a funder chooses a group and gives to it. That is not a criticism. Targeted giving can do a great deal of good. But unless the fund one day pays everyone in a defined population, regularly and without conditions, it is not basic income, and it is fairer to judge it as what it is.
+
+#### Models already on this site
+
+Since 1982, Alaska (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-alaska) has paid eligible residents an annual dividend from its Permanent Fund, which preserves the state’s oil and mineral wealth as a renewable financial resource; the first dividend was $1,000 each.[5] The fund belongs to the public through the state, the rules are written in law, and everyone who qualifies gets the same amount.
+
+Since March 2026, the AI Dividend (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-ai-dividend) has paid $1,000 a month for a year, with no strings, to a cohort of 25 to 50 workers whose jobs or pay have been hurt by AI. It started with $300,000 and aims to distribute $3 million in 2026. Its organisers plan to ask AI companies to contribute and said talks had been initiated “with firms like Anthropic”.[6] This is what direct distributions to a specific population look like at small scale: real cash, a chosen group, a fixed term.
+
+Opinion: Alaska shows what a fund that pays everyone needs: public ownership, and a rule that nobody has to decide afresh each year. The AI Dividend shows what targeted cash looks like. Anthropic’s fund could move toward either, or neither. In our essay on universal high income (https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/) we asked who pays. Here a payer has appeared, so the open question moves on: who decides?
+
+#### The ownership route: basic shares
+
+Musk’s reply points to a different route: instead of a fund that gives money, give people the shares. A week later, in Mumbai, the economist Kaushik Basu, a former chief economist of the World Bank, made a related case. AI “could dramatically reduce the demand for human labour within the next five to 10 years”, he warned, and governments may have to consider “universal basic shares”: not a one-time transfer, but “a continuing stake in the wealth generated by productive assets and automated enterprises”. His suggestion was to “take away a part of the shares from the super rich (and distribute it) across the population”, through “an intelligent system of taxation and redistribution”.[7]
+
+Opinion: The ownership route and the cash route answer different worries. Cash pays this month’s rent. Shares give a claim on future profits, and a say if they carry votes, but their value moves with the market, and someone who has to sell in a bad month sells low. Use it, own it (https://neteru-nyukin.eltociear.workers.dev/essays/use-to-own/) looked at how thin that claim can be when shares carry few rights. A dividend paid on wealth that everyone owns, as in Alaska, is one way to combine the two.
+
+#### The case against cash
+
+Not everyone thinks cash is the right answer to AI. In a research brief published by the ILO in May 2026, Tuğba Özay and Ekkehard Ernst argue that AI mostly changes tasks rather than wiping out occupations, and that a universal transfer would send spending into sectors where supply cannot grow quickly, such as housing and healthcare, pushing up prices there. They favour reskilling, active labour market policies, more housing supply and taxing AI-generated rents, with universal social protection designed to keep work incentives, for instance through an earned-income tax credit.[8]
+
+Opinion: This is a basic income site, but that argument deserves a fair hearing, and it fits a fund aimed at “specific populations” better than a universal payment would. Whichever side you take, money for the AI transition will have to be judged by what it can buy, not by the number on the cheque.
+
+#### What to watch for
+
+Opinion: Governance. When the structure is published, who runs the fund, how independent they are from Anthropic, and whether the rules are public.
+
+Opinion: Who decides recipients. Whether people are chosen case by case, or by a published rule that anyone can check.
+
+Opinion: Universal and recurring, or not. One-off grants to chosen groups are philanthropy. Regular payments to everyone in a defined population would be the first step toward a dividend.
+
+Opinion: The numbers. Stockholder approval, the undisclosed baseline, and how much is actually paid out each year, not only committed.
+
+Opinion: Until then, the fund is a promise with an unfinished design. Read it the way this site reads every free lunch. Who pays: here, we know. Who decides, and who receives: not yet.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/use-to-own/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
+
+Sources:
+
+1. Anthropic — Investing in the public benefit (18 Oct 2026): https://www.anthropic.com/news/public-benefit-fund
+2. CNBC — Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption (18 Oct 2026): https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html
+3. Stocktwits via Yahoo Finance — Anthropic IPO: Musk wants AI firm to hand shares directly to public (19 Oct 2026): https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-musk-wants-ai-032242549.html
+4. Basic Income Earth Network (BIEN) — About Basic Income: https://basicincome.org/about-basic-income/
+5. Alaska Permanent Fund Dividend Division — Historical Timeline; Alaska Permanent Fund Corporation: https://pfd.alaska.gov/Division-Info/Historical-Timeline (also https://apfc.org/who-we-are/)
+6. Blood in the Machine — The first basic income for workers hit by AI (24 Mar 2026): https://www.bloodinthemachine.com/p/the-first-basic-income-for-workers
+7. The Week — AI could wipe out demand for labour in 5-10 years, warns economist Kaushik Basu (26 Oct 2026): https://www.theweek.in/news/biz-tech/2026/10/26/ai-could-wipe-out-demand-for-labour-in-5-10-years-warns-economist-kaushik-basu.html
+8. ILO — Why UBI is not the answer to the impact of AI on the labour market (Özay and Ernst, research brief, May 2026): https://www.ilo.org/publications/why-universal-basic-income-not-answer-impact-ai-labour-market (also https://doi.org/10.54394/00034454)
+
 ### Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/your-own-basic-income/
@@ -1163,6 +1255,8 @@ Opinion: In our previous essay (https://neteru-nyukin.eltociear.workers.dev/essa
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/use-to-own/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
 
 Sources:
 

@@ -131,6 +131,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-809a0d243d.woff2",
     "chars": "─かけげこだどまネ善国意稼立鬼"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-7c7b3c244c.woff2",
+    "chars": "ğ"
    }
   ],
   "de:body:700": [
@@ -165,6 +169,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-145ad4f6ef.woff2",
     "chars": "─かけげこだどまネ善国意稼立鬼"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-80460f62f0.woff2",
+    "chars": "ğ"
    }
   ],
   "de:display": [
@@ -239,6 +247,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-809a0d243d.woff2",
     "chars": "─かけげこだどまネ善国意稼立鬼"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-7c7b3c244c.woff2",
+    "chars": "ğ"
    }
   ],
   "en:body:700": [
@@ -273,6 +285,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-145ad4f6ef.woff2",
     "chars": "─かけげこだどまネ善国意稼立鬼"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-80460f62f0.woff2",
+    "chars": "ğ"
    }
   ],
   "en:display": [
@@ -343,6 +359,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-809a0d243d.woff2",
     "chars": "─かけげこだどまネ善国意稼立鬼"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-7c7b3c244c.woff2",
+    "chars": "ğ"
    }
   ],
   "es:body:700": [
@@ -385,6 +405,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-145ad4f6ef.woff2",
     "chars": "─かけげこだどまネ善国意稼立鬼"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-80460f62f0.woff2",
+    "chars": "ğ"
    }
   ],
   "es:display": [
@@ -627,6 +651,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-2820b94f56.woff2",
     "chars": "城宝川林沃畜青"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-4ff0e616d0.woff2",
+    "chars": "ゥ傷医属層極潤療磨胆裕護賢述"
    }
   ],
   "ja:body:700": [
@@ -765,6 +793,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-6b270c35b8.woff2",
     "chars": "城宝川林沃畜青"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-912e5837a8.woff2",
+    "chars": "ゥ傷医属層極潤療磨胆裕護賢述"
    }
   ],
   "ja:display": [
@@ -827,6 +859,10 @@
    {
     "file": "dela-gothic-one-400-ja-957313d383.woff2",
     "chars": "ぐせヒ収部"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-fe70e721d9.woff2",
+    "chars": "企先基差持業止道"
    }
   ],
   "ja:dot": [
@@ -1003,6 +1039,10 @@
    {
     "file": "noto-sans-sc-400-zh-e703bd1efe.woff2",
     "chars": "占宝川恩沃畜"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-fd18ef2176.woff2",
+    "chars": "丝伤倾厄坏堵她孟席戴抵拜擦碑聪胆莉薄虑誉豪责迅迈酌顾"
    }
   ],
   "zh:body:700": [
@@ -1137,6 +1177,10 @@
    {
     "file": "noto-sans-sc-700-zh-ac1fc79ea8.woff2",
     "chars": "占宝川恩沃畜"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-528e79a826.woff2",
+    "chars": "丝伤倾厄坏堵她孟席戴抵拜擦碑聪胆莉薄虑誉豪责迅迈酌顾"
    }
   ],
   "zh:display": [
@@ -1195,6 +1239,10 @@
    {
     "file": "noto-sans-sc-900-zh-9cfac5a8cc.woff2",
     "chars": "示读造"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-5c8f528bd9.woff2",
+    "chars": "下司外所拿权界观"
    }
   ],
   "zh:dot": [
