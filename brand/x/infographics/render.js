@@ -443,6 +443,60 @@ h1{font-size:${ja ? 64 : 52}px}
 `,
     }),
   },
+  // note.com header for the article on NESARA/GESARA and basic income. Same 1100x560 safe area and kicker /
+  // two-line hero / footer layout as note-greatreset; the .deco motif contrasts a stamped payment record (real BI:
+  // law, budget, payments) with an unstamped "まもなく発表" slip.
+  'note-nesara': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => ({
+      bare: true,
+      moon: [1192, 92, 44],
+      body: `
+<div class="wrap">
+  <p class="kicker">SNSで広がる「借金チャラ」の噂</p>
+  <h1 class="hero"><span class="l1">ネサラ・ゲサラと</span><span class="l2"><em>ベーシックインカム</em></span></h1>
+  <p class="quote">「全員にお金が配られる」話の<b>見分け方</b></p>
+</div>
+<div class="deco">
+  <div class="slip"><span>まもなく発表</span><i>記録なし</i></div>
+  <div class="book">
+    <p class="bh">支給記録</p>
+    <p class="row"><span>法律</span><svg width="22" height="22" viewBox="0 0 22 22"><path d="M4 11.5 L9 16 L18 6" fill="none" stroke="#1B6B52" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+    <p class="row"><span>予算</span><svg width="22" height="22" viewBox="0 0 22 22"><path d="M4 11.5 L9 16 L18 6" fill="none" stroke="#1B6B52" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+    <p class="row"><span>支給日</span><svg width="22" height="22" viewBox="0 0 22 22"><path d="M4 11.5 L9 16 L18 6" fill="none" stroke="#1B6B52" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+    <div class="stamp">支給済</div>
+  </div>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+      css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:92px;width:1060px}
+.kicker{display:inline-block;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px}
+.hero{margin-top:24px;padding-right:0;white-space:nowrap}
+.hero span{display:block}
+.hero .l1{font-size:72px;line-height:1.12}
+.hero .l2{margin-top:4px;font-size:100px;line-height:1.12}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote{margin-top:26px;font-size:40px;line-height:1.2;font-weight:900;color:#E3E8FF;white-space:nowrap}
+.quote b{color:#FFD66B}
+.deco{position:absolute;right:110px;bottom:60px;width:440px;height:170px}
+.slip{position:absolute;left:0;top:34px;width:190px;height:118px;transform:rotate(-5deg);border:3px dashed rgba(207,214,255,.45);border-radius:14px;background:rgba(20,26,58,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.slip span{font-size:26px;line-height:1;color:#C9D0F0;white-space:nowrap}
+.slip i{font-style:normal;font-size:20px;line-height:1;color:#8790B8;white-space:nowrap}
+.book{position:absolute;right:0;top:0;width:230px;height:166px;transform:rotate(3deg);background:#F6F2E6;border-radius:14px;padding:0 18px 0;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden}
+.book .bh{margin:0 -18px 8px;padding:9px 18px;background:#1B6B52;color:#F6F2E6;font-size:22px;line-height:1}
+.book .row{width:112px;display:flex;gap:8px;align-items:center;padding:5px 0;border-bottom:2px solid #DED6BF;font-size:22px;line-height:1.1;color:#141A3A}
+.stamp{position:absolute;right:12px;bottom:22px;width:88px;height:88px;border-radius:50%;border:4px solid #E8505B;color:#E8505B;font-size:21px;font-weight:900;display:flex;align-items:center;justify-content:center;transform:rotate(-14deg);background:rgba(246,242,230,.75)}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+    }),
+  },
   // note.com profile header for 「不労所得で生きていきたい」. note shows roughly a centre crop on mobile, so every
   // text element stays inside a centred 1000x600 box (stricter than the 1400x600 desktop safe area); the constellation
   // icons, moon and glow are atmosphere and may sit outside it.
