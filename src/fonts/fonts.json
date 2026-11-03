@@ -39,6 +39,10 @@
    {
     "file": "noto-sans-arabic-400-ar-3094db8735.woff2",
     "chars": " £¥‎‏"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-760c9a5fa7.woff2",
+    "chars": "‘"
    }
   ],
   "ar:body:700": [
@@ -65,6 +69,10 @@
    {
     "file": "noto-sans-arabic-700-ar-43bea2cc9a.woff2",
     "chars": " £¥‎‏"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-d7d0db1f81.woff2",
+    "chars": "‘"
    }
   ],
   "ar:display": [
@@ -363,6 +371,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-7c7b3c244c.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-b8292e5b0f.woff2",
+    "chars": "‘"
    }
   ],
   "es:body:700": [
@@ -409,6 +421,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-80460f62f0.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-d719f8807b.woff2",
+    "chars": "‘"
    }
   ],
   "es:display": [
@@ -663,6 +679,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-164f4aa2b8.woff2",
     "chars": "倫否徳怠惰懐拾波演盤秋臨講軸遣"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-a5a00b33c1.woff2",
+    "chars": "‘亡便債刷午噂執夢太奉師恐沼洋火父祖秘箝緯複責購逃郵針陪願"
    }
   ],
   "ja:body:700": [
@@ -813,6 +833,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-399ab45939.woff2",
     "chars": "倫否徳怠惰懐拾波演盤秋臨講軸遣"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-24ec82f675.woff2",
+    "chars": "‘亡便債刷午噂執夢太奉師恐沼洋火父祖秘箝緯複責購逃郵針陪願"
    }
   ],
   "ja:display": [
@@ -883,6 +907,10 @@
    {
     "file": "dela-gothic-one-400-ja-2bc149d8d6.woff2",
     "chars": "山記追"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-2c0ff3360e.woff2",
+    "chars": "員夢守害密戻投改秘裏近革"
    }
   ],
   "ja:dot": [
@@ -1067,6 +1095,14 @@
    {
     "file": "noto-sans-sc-400-zh-275a89f3e4.woff2",
     "chars": "伦佣吻彩恶惰懒揽欠演焦秋轴辩闪"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-c212124391.woff2",
+    "chars": "辨"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-86d7977b58.woff2",
+    "chars": "伪债偿兼努勾匙危唯妮宫寄巨捆旦朗梦欺沙沼洋渠温烦父盼盾祖秘纪胡脱茄莱虚衰袭谣谴贷陪鸽麻"
    }
   ],
   "zh:body:700": [
@@ -1209,6 +1245,14 @@
    {
     "file": "noto-sans-sc-700-zh-ce38eae6e1.woff2",
     "chars": "伦佣吻彩恶惰懒揽欠演焦秋轴辩闪"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-63ccdba5c2.woff2",
+    "chars": "辨"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-eb5419da94.woff2",
+    "chars": "伪债偿兼努勾匙危唯妮宫寄巨捆旦朗梦欺沙沼洋渠温烦父盼盾祖秘纪胡脱茄莱虚衰袭谣谴贷陪鸽麻"
    }
   ],
   "zh:display": [
@@ -1275,6 +1319,10 @@
    {
     "file": "noto-sans-sc-900-zh-fa3f2ba75d.woff2",
     "chars": "峰补"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-1b3f04e677.woff2",
+    "chars": "/位假危却四守宣害布师护改故核梦秘诈资辨革"
    }
   ],
   "zh:dot": [

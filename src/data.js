@@ -2870,6 +2870,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-03",
+      "ja": "エッセイ『ネサラ・ゲサラとベーシックインカム：「全員にお金が配られる」話の見分け方』を公開",
+      "en": "Published the essay “NESARA/GESARA and basic income: telling real payments to everyone from promises that never arrive”",
+      "zh": "发布随笔《NESARA/GESARA 与基本收入：如何分辨“给每个人发钱”的说法》",
+      "hi": "निबंध “NESARA/GESARA और बेसिक इनकम: “सबको पैसा मिलेगा” वाले दावों को कैसे परखें” प्रकाशित",
+      "es": "Publicado el ensayo «NESARA/GESARA y la renta básica: cómo distinguir los pagos reales a todos de las promesas que nunca llegan»",
+      "de": "Essay „NESARA/GESARA und das Grundeinkommen: echte Zahlungen an alle von Versprechen unterscheiden, die nie eingelöst werden“ veröffentlicht",
+      "ar": "نشرنا مقال «⁦NESARA/GESARA⁩ والدخل الأساسي: كيف تميّز المدفوعات الحقيقية للجميع من الوعود التي لا تتحقق»"
+    },
+    {
+      "date": "2026-11-03",
       "ja": "エッセイ「AIだけのSNSで、ベーシックインカムはどう語られているか」に、2月の山から10月までの変化を追記（2026年11月3日時点で223件の投稿を数え、話題が仕事から所有と財源に移ったこと）",
       "en": "Updated the essay “How AI agents talk about basic income on their own social network” with how the talk changed from February’s peak to October (223 posts counted as of 3 November 2026; the topic moved from jobs to ownership and funding)",
       "zh": "更新随笔《在只属于 AI 智能体的社交网络上，它们如何谈论基本收入》，补记从 2 月高峰到 10 月的变化（截至 2026 年 11 月 3 日共统计 223 条帖子；话题从工作转向所有权和财源）",
@@ -7933,7 +7943,7 @@ module.exports = {
     },
     {
       "id": "alaska",
-      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund"],
+      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund", "nesara-gesara-basic-income"],
       "years": "1982–",
       "type": "gov",
       "name": "Alaska Permanent Fund Dividend",
@@ -8500,7 +8510,7 @@ module.exports = {
     },
     {
       "id": "marshall-islands",
-      "essays": ["moltbook-basic-income", "thailand-digital-wallet", "your-own-basic-income"],
+      "essays": ["moltbook-basic-income", "thailand-digital-wallet", "your-own-basic-income", "nesara-gesara-basic-income"],
       "years": "2025–",
       "type": "gov",
       "name": "Enra (Individual Support Distribution)",
@@ -8544,6 +8554,7 @@ module.exports = {
     },
     {
       "id": "korea-rural",
+      "essays": ["nesara-gesara-basic-income"],
       "years": "2026–2027",
       "type": "gov",
       "name": "Rural Basic Income Pilot",
@@ -8768,6 +8779,1434 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "nesara-gesara-basic-income",
+      "date": "2026-11-03",
+      "related": [
+        "thailand-digital-wallet",
+        "universal-high-income"
+      ],
+      "title": {
+        "ja": "ネサラ・ゲサラとベーシックインカム：「全員にお金が配られる」話の見分け方",
+        "en": "NESARA/GESARA and basic income: telling real payments to everyone from promises that never arrive",
+        "zh": "NESARA/GESARA 与基本收入：如何分辨“给每个人发钱”的说法",
+        "hi": "NESARA/GESARA और बेसिक इनकम: “सबको पैसा मिलेगा” वाले दावों को कैसे परखें",
+        "es": "NESARA/GESARA y la renta básica: cómo distinguir los pagos reales a todos de las promesas que nunca llegan",
+        "de": "NESARA/GESARA und das Grundeinkommen: echte Zahlungen an alle von Versprechen unterscheiden, die nie eingelöst werden",
+        "ar": "⁦NESARA/GESARA⁩ والدخل الأساسي: كيف تميّز المدفوعات الحقيقية للجميع من الوعود التي لا تتحقق"
+      },
+      "desc": {
+        "ja": "「ネサラ・ゲサラが発表されたら借金は帳消し、全員にお金が配られる」。一人の改革案が陰謀論と投資詐欺に変わった経緯をたどり、本物のベーシックインカムとの違いと、見分けるための4つの質問をまとめます。",
+        "en": "NESARA and GESARA promise debt relief and money for all. Where the story came from, how it feeds scams, how real basic income differs, and 4 questions to ask.",
+        "zh": "“NESARA/GESARA 一宣布，债务全部清零，每个人都能拿到一大笔钱。”我们追溯一份个人改革提案如何变成阴谋论和投资骗局，整理它与真正的基本收入有何不同，以及辨别的四个问题。",
+        "hi": "NESARA और GESARA कर्ज़ माफ़ी और सबको पैसा देने का वादा करते हैं। यह कहानी कहाँ से आई, ठगी में कैसे काम आती है, असली बेसिक इनकम कैसे अलग है, और चार सवाल।",
+        "es": "NESARA y GESARA prometen borrar deudas y dar dinero a todos. De dónde viene, cómo alimenta estafas, en qué se distingue la renta básica real y cuatro preguntas.",
+        "de": "NESARA und GESARA versprechen Schuldenerlass und Geld für alle. Woher die Geschichte kommt, wie sie Betrug nährt, was echtes Grundeinkommen ist, vier Fragen.",
+        "ar": "تَعِد ⁦NESARA⁩ و⁦GESARA⁩ بمحو الديون ومنح المال للجميع. من أين جاءت القصة، وكيف تغذّي الاحتيال، وبمَ يختلف الدخل الأساسي الحقيقي، وأربعة أسئلة للتحقق."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "“Once NESARA/GESARA is announced, every debt will be wiped out and everyone will receive a fortune.” If you spend time on social media, you may have come across posts like this."
+          ],
+          [
+            "p",
+            "This site follows basic income. “Money paid to everyone, with no conditions” can sound like basic income, but the two are entirely different things. This essay traces where NESARA and GESARA came from and sets out how to tell them apart from a real basic income."
+          ],
+          [
+            "h",
+            "It began as one engineer’s reform plan"
+          ],
+          [
+            "p",
+            "NESARA, the National Economic Security and Recovery Act, was originally the name of a real proposal. In the late 1980s and early 1990s, Harvey Francis Barnard, an American engineering consultant and teacher, drew up a set of economic reforms on his own: replace the income tax with a national sales tax, abolish compound interest on secured loans such as mortgages, and return to a currency backed by gold and silver.[1]"
+          ],
+          [
+            "p",
+            "In 1996 Barnard printed 1,000 copies of his proposal, Draining the Swamp, and sent them to members of Congress.[1] None of them took it up as a bill: NESARA was never introduced in Congress.[1] In 2000, after his attempts to win political support had failed, Barnard released the proposal into the public domain and published it online.[1]"
+          ],
+          [
+            "p",
+            "Up to this point, it is an ordinary story: one citizen’s policy proposal that did not get anywhere."
+          ],
+          [
+            "h",
+            "The story that it had passed in secret"
+          ],
+          [
+            "p",
+            "The story changed soon after. Someone calling themselves “Dove of Oneness” began posting about NESARA online; this was later identified as Shaini Goodwin.[1] Her claims went like this:[1]"
+          ],
+          [
+            "p",
+            "NESARA had been passed in a secret session of Congress in March 2000 and signed by President Clinton."
+          ],
+          [
+            "p",
+            "A Supreme Court gag order meant that nobody could speak about it."
+          ],
+          [
+            "p",
+            "It was to be implemented at 10 a.m. on 11 September 2001, but the data on the beneficiaries was destroyed in the attacks."
+          ],
+          [
+            "p",
+            "Once announced, it would cancel all personal debts, abolish the Internal Revenue Service and declare world peace."
+          ],
+          [
+            "p",
+            "Goodwin’s version went far beyond Barnard’s proposal.[1] Barnard himself denied that NESARA had ever become law, or even been given a tracking number, and condemned her claims as disinformation.[1] Goodwin kept saying the announcement was near, and promoted the story until her death in 2010.[1]"
+          ],
+          [
+            "h",
+            "Tied to an investment fraud from the start"
+          ],
+          [
+            "p",
+            "What should not be missed is that the story was tied to money from the very beginning. Goodwin began talking about NESARA in connection with Omega Trust, an investment fraud whose creator was on trial at the time, and said that Omega Trust investors would receive their returns once NESARA was announced.[1] Omega Trust ran a “prime bank” fraud from 1994 to 2000, and its founder, Clyde Hood, pleaded guilty in 2001. When federal authorities offered restitution to an estimated 10,000 victims, many declined, for fear of losing the payout they were still waiting for.[2]"
+          ],
+          [
+            "p",
+            "Skeptoid, which traced the story in 2014, describes Goodwin as an Omega investor herself, who kept telling fellow investors that their payouts were coming and later asked her readers for money. It sums up what Omega, NESARA and the Iraqi dinar “revaluation” have in common: they “trade small amounts of money now for vast amounts of money later”.[3]"
+          ],
+          [
+            "o",
+            "From the start, then, the NESARA story was also used to explain why the money had not come back, and to promise that one day it surely would."
+          ],
+          [
+            "h",
+            "GESARA, and “the announcement is near”"
+          ],
+          [
+            "p",
+            "The story then survived by changing shape. GESARA, the Global Economic Security and Reformation Act, is a later name that followers began using in the mid-2010s to extend NESARA to the whole world.[1] It is not a law in any country either. In 2022, Bellingcat called NESARA/GESARA a “grandfather” of QAnon and reported that some QAnon followers revived it as QAnon declined.[1] Posts today often bundle it with other names, such as a “quantum financial system” (QFS) or a coming revaluation of the Iraqi dinar."
+          ],
+          [
+            "p",
+            "In November 2025, a video that appeared to show a Fox News report of President Trump signing an executive order making NESARA the official policy of the nation spread on X. The fact-checker Lead Stories found no such report on the Fox News website and no such declaration from the White House. The video appears to have been made from footage of a September 2025 press conference and is likely an AI fake.[4]"
+          ],
+          [
+            "o",
+            "Twenty-five years on, the only thing that has not changed is “the announcement is near”."
+          ],
+          [
+            "h",
+            "The real harm: pay first, and the money does not come back"
+          ],
+          [
+            "p",
+            "What makes this story troublesome is that it does not stay a rumour. It becomes a way in for taking people’s money."
+          ],
+          [
+            "p",
+            "A common form is selling foreign currency: sellers say the Iraqi dinar will soon be worth many times more, and sell notes of little value at a high price.[3] In the United States in 2018, a federal jury convicted the co-owners and chief operating officer of Sterling Currency Group, once one of the country’s largest sellers of Iraqi dinar, of mail and wire fraud. Prosecutors said they spread false claims that the dinar was about to revalue; between 2010 and 2015 the firm took in over $600 million from selling the dinar and other currencies.[5]"
+          ],
+          [
+            "p",
+            "Exchange rates are announced by central banks, not by posts. In June 2026 the Central Bank of Iraq firmly denied reports that it intends to change the dinar’s exchange rate. That rumour, spread with a forged document, claimed a change to 1,600 dinars per US dollar, and the bank asked people to check information through its own official sources.[6]"
+          ],
+          [
+            "p",
+            "Other forms ask for money, or for the keys to it, before anything is paid out. Watch for requests like these:"
+          ],
+          [
+            "p",
+            "A “registration fee” or “processing fee” to receive a NESARA payment."
+          ],
+          [
+            "p",
+            "A “QFS-ready wallet” that needs the seed phrase of your crypto wallet."
+          ],
+          [
+            "p",
+            "“Gold and silver certificates” or “bonds” sold by a company you cannot identify, backed by something you cannot check."
+          ],
+          [
+            "o",
+            "All of them have the same shape: you pay before you receive."
+          ],
+          [
+            "h",
+            "Real basic income can be checked"
+          ],
+          [
+            "p",
+            "So how does a real basic income differ? The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”: periodic, cash, individual, universal and unconditional.[7]"
+          ],
+          [
+            "p",
+            "And real payments leave records that anyone can follow."
+          ],
+          [
+            "p",
+            "Since 1982, {Alaska|/timeline/#tl-alaska} has paid an annual dividend from its Permanent Fund, built from the state’s oil revenue, to every eligible resident. The amount is published every year on the state’s official site; for 2026 it is $1,200, including a $200 energy relief payment.[8]"
+          ],
+          [
+            "p",
+            "Since November 2025, the {Marshall Islands|/timeline/#tl-marshall-islands} in the Pacific has paid about $200 every quarter to its citizens living in the country, from a trust fund set up under its compact with the United States. The amounts and the number of people paid are reported each time."
+          ],
+          [
+            "p",
+            "Since February 2026, {South Korea|/timeline/#tl-korea-rural} has paid 150,000 won a month in local gift certificates to every resident of a group of rural counties, as a pilot run by the Ministry of Agriculture, Food and Rural Affairs, which publishes the counties and the results. Because it covers only some counties and pays in vouchers, BIEN does not count it as basic income in the full sense, but it is a real payment with a record."
+          ],
+          [
+            "o",
+            "There are laws and budget documents, and you can find out when, to whom and how much was paid. That is what a real payment looks like. NESARA and GESARA have no legal text, no source of funds and no record of anything being paid. All they have is the word that it will be announced soon."
+          ],
+          [
+            "h",
+            "Four questions to tell them apart"
+          ],
+          [
+            "p",
+            "When you see a story about money being paid to everyone, check these four things."
+          ],
+          [
+            "p",
+            "1. Who pays, and with what money? Is it clear who is paying, such as a country, a state or a fund, and where the money comes from?"
+          ],
+          [
+            "p",
+            "2. Do you have to pay anything before you receive? A registration fee, a processing fee, buying currency or certificates. If so, suspect a scam first."
+          ],
+          [
+            "p",
+            "3. Are there official documents or records? A law, a budget, a government announcement, a record of payments. If all there is are images and videos on social media, nothing has been checked yet."
+          ],
+          [
+            "p",
+            "4. Can they name a date? If you keep hearing “the announcement is near” or “we can’t say yet”, that day is unlikely to come."
+          ],
+          [
+            "p",
+            "Never tell anyone the seed phrase of your crypto wallet, whatever the reason. If you think you have been targeted, or have already paid, contact your local consumer protection agency or the police."
+          ],
+          [
+            "h",
+            "To protect the dream"
+          ],
+          [
+            "o",
+            "A world where everyone is paid money, with no conditions: the dream itself is not a bad one. Many people who share these posts are hoping for exactly what basic income hopes for, a way out of debt and a floor under everyone. That hope deserves a real answer, not a fee."
+          ],
+          [
+            "o",
+            "In Alaska, the Marshall Islands and South Korea, that dream is slowly taking shape as real programmes. That is exactly why we want to draw a clear line between it and the stories that ride on it to take people’s money."
+          ],
+          [
+            "p",
+            "Our {timeline of basic income experiments|/timeline/} sets out when, to whom and how much was paid, each with a source. Let’s keep following the real thing together."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "「ネサラ・ゲサラが発表されたら、借金は全部チャラ。全員に大金が配られる」。SNSで、こんな話を見かけたことはないでしょうか。"
+          ],
+          [
+            "p",
+            "このサイトはベーシックインカムを追いかけています。「全員に無条件でお金が配られる」と聞くと、ベーシックインカムの話に聞こえるかもしれません。でも、この2つはまったくの別物です。このエッセイでは、ネサラ・ゲサラがどこから来たのかをたどり、本物のベーシックインカムとの見分け方をまとめます。"
+          ],
+          [
+            "h",
+            "はじまりは、一人のエンジニアの改革案"
+          ],
+          [
+            "p",
+            "NESARA（ネサラ、国家経済安全保障・回復法）は、もともと実在した「提案」の名前です。1980年代の終わりから1990年代にかけて、アメリカのエンジニアリング・コンサルタントで教師のハーヴィー・フランシス・バーナード氏が、個人で経済改革案をまとめました。所得税をやめて全国一律の売上税にする、住宅ローンなど担保つきの借入れの複利をやめる、金と銀を裏付けにした通貨に戻す、といった内容です。[1]"
+          ],
+          [
+            "p",
+            "バーナード氏は1996年に、この案を『Draining the Swamp（沼の水を抜く）』として1,000部刷り、連邦議会の議員たちに送りました。[1] ただ、議員の誰もこれを法案として出しませんでした。NESARAは、一度も議会に提出されていません。[1] 政治の支持を得られなかったバーナード氏は、2000年、案をパブリックドメインにしてインターネットで公開します。[1]"
+          ],
+          [
+            "p",
+            "ここまでは、どこにでもある「一市民の政策提案」の話です。"
+          ],
+          [
+            "h",
+            "「秘密裏に成立していた」という物語"
+          ],
+          [
+            "p",
+            "話が変わったのは、そのすぐ後です。「ダブ・オブ・ワンネス（Dove of Oneness）」と名乗る人物が、ネット上でNESARAについて書き始めました。のちに、シャイニ・グッドウィンという女性だとわかっています。[1] 彼女の主張は、こういうものでした。[1]"
+          ],
+          [
+            "p",
+            "NESARAは2000年3月に議会の秘密会で可決され、クリントン大統領が署名した。"
+          ],
+          [
+            "p",
+            "最高裁の箝口令（かんこうれい）があるので、誰も口外できない。"
+          ],
+          [
+            "p",
+            "2001年9月11日の午前10時に施行されるはずだったが、テロで受給者のデータが失われた。"
+          ],
+          [
+            "p",
+            "発表されれば、個人の借金はすべて帳消しになり、内国歳入庁（IRS）はなくなり、世界平和が宣言される。"
+          ],
+          [
+            "p",
+            "グッドウィン氏の版は、バーナード氏の案をはるかに超えたものでした。[1] バーナード氏本人も、NESARAが法律になったことも、法案番号が付いたことすらないと否定し、彼女の話を「偽情報」だと非難しています。[1] グッドウィン氏は「発表は近い」とくり返しながら、2010年に亡くなるまでこの話を広め続けました。[1]"
+          ],
+          [
+            "h",
+            "投資詐欺と、最初からつながっていた"
+          ],
+          [
+            "p",
+            "見逃せないのは、この物語が最初からお金の話と結びついていたことです。グッドウィン氏は、創業者の裁判が進んでいた「オメガ・トラスト」という投資詐欺と結びつけてNESARAを語り始め、「NESARAが発表されれば、オメガ・トラストの投資家にも配当が支払われる」と主張していました。[1] オメガ・トラストは1994年から2000年にかけて「プライムバンク」詐欺を行っていた会社で、創業者のクライド・フッド氏は2001年に罪を認めています。連邦当局が推定1万人の被害者に返金を申し出たときも、待ち続けている配当を受け取れなくなるのを恐れて、多くの人が断りました。[2]"
+          ],
+          [
+            "p",
+            "2014年にこの話をたどったSkeptoidは、グッドウィン氏自身もオメガの投資家で、ほかの投資家に「支払いはもうすぐ」と言い続け、のちに読者からお金を募っていたと書いています。そして、オメガ、NESARA、イラク・ディナールの「切り上げ」に共通するのは、「いま少しのお金を払えば、あとで莫大なお金が手に入る」という取引だとまとめています。[3]"
+          ],
+          [
+            "o",
+            "つまりNESARAの物語は、はじめから「お金が戻ってこない理由」と「いつか必ず戻ってくる約束」を語るためにも使われていたのです。"
+          ],
+          [
+            "h",
+            "ゲサラ、そして「発表は近い」"
+          ],
+          [
+            "p",
+            "その後、この話は形を変えながら生き残ります。GESARA（ゲサラ）は、信じる人たちがNESARAを世界に広げた版として、2010年代半ばから使い始めた名前です。[1] こちらも、どこの国の法律にも存在しません。2022年には調査報道サイトのベリングキャットが、NESARA/GESARAを QAnon の「祖父」と呼び、QAnonが下火になるにつれて一部の信奉者がNESARAを持ち出していると報じました。[1] 最近の投稿では、「量子金融システム（QFS）」や「イラク・ディナールの切り上げ」といった言葉とセットで語られることもよくあります。"
+          ],
+          [
+            "p",
+            "2025年11月には、「トランプ大統領がNESARAを国の方針にする大統領令に署名した」というFOXニュースの報道らしき映像がXで出回りました。ファクトチェック団体のリード・ストーリーズが調べたところ、FOXニュースのサイトにそんな報道はなく、ホワイトハウスにもそのような発表はありませんでした。映像は2025年9月の記者会見の映像から作られたとみられ、AIによる偽物の可能性が高いとしています。[4]"
+          ],
+          [
+            "o",
+            "25年たっても、「発表は近い」という言葉だけが変わらず続いています。"
+          ],
+          [
+            "h",
+            "実害：「先に払う」と、お金は戻ってこない"
+          ],
+          [
+            "p",
+            "この話がやっかいなのは、ただの噂で終わらず、お金をだまし取る入り口になっていることです。"
+          ],
+          [
+            "p",
+            "よくあるのが、外国の通貨を売る手口です。「イラク・ディナールの価値がもうすぐ何倍にもなる」と言って、ほとんど価値のない紙幣を高値で売りつけます。[3] アメリカでは2018年、かつて国内最大級のイラク・ディナール販売業者だったスターリング・カレンシー・グループの共同経営者と最高執行責任者が、連邦陪審で郵便詐欺・通信詐欺の有罪評決を受けました。検察によれば、彼らは「ディナールはもうすぐ切り上げられる」という偽の情報を広め、会社は2010年から2015年にかけて、ディナールなどの通貨の販売で6億ドルを超える売上を得ていました。[5]"
+          ],
+          [
+            "p",
+            "為替レートを発表するのは中央銀行で、SNSの投稿ではありません。2026年6月、イラク中央銀行は「ディナールの為替レートを変える予定はない」と、うわさをはっきり否定しました。このときのうわさは偽造文書とともに広まった「1ドル＝1,600ディナールに変える」というもので、中央銀行は、情報は中央銀行の公式の発表で確かめるよう呼びかけています。[6]"
+          ],
+          [
+            "p",
+            "ほかにも、受け取る前にお金や、お金の「鍵」を求める形があります。次のような頼まれ方には注意してください。"
+          ],
+          [
+            "p",
+            "「NESARAの給付を受け取るための登録料」「手続きの手数料」を先に払わせる。"
+          ],
+          [
+            "p",
+            "「QFS対応のウォレット」をうたって、暗号資産のシードフレーズを聞き出す。"
+          ],
+          [
+            "p",
+            "「金と銀の証書」や「債券」を、会社も裏付けも確かめられないまま売る。"
+          ],
+          [
+            "o",
+            "どれも、「受け取る前に、こちらが先に払う」という形をしています。"
+          ],
+          [
+            "h",
+            "本物のベーシックインカムは、確かめられる"
+          ],
+          [
+            "p",
+            "では、本物のベーシックインカムとは何が違うのでしょうか。ベーシックインカムの国際的なネットワークであるBIEN（ベーシックインカム世界ネットワーク）は、ベーシックインカムを「資力調査や就労要件なしに、個人単位で、全員に、無条件で届けられる定期的な現金給付」と定義し、定期的、現金、個人、普遍的（全員）、無条件の5つを挙げています。[7]"
+          ],
+          [
+            "p",
+            "そして本物の給付は、どれも記録をたどれます。"
+          ],
+          [
+            "p",
+            "{アメリカのアラスカ州|/timeline/#tl-alaska}は1982年から、石油の収入をためた基金から、条件を満たす住民全員に毎年配当を払っています。金額は州の公式サイトで毎年公表されていて、2026年は200ドルのエネルギー支援を含む1,200ドルです。[8]"
+          ],
+          [
+            "p",
+            "太平洋の{マーシャル諸島|/timeline/#tl-marshall-islands}は2025年11月から、国内に住む国民に3か月ごとに約200ドルを配っています。財源はアメリカとの協定で作られた信託基金で、支給額も、受け取った人数も、そのたびに報道されています。"
+          ],
+          [
+            "p",
+            "{韓国|/timeline/#tl-korea-rural}は2026年2月から、一部の農漁村の郡で、住民全員に月15万ウォンを地域の商品券で配る実験をしています。農林畜産食品部が対象の郡や結果を発表しています。一部の郡に限られ、商品券で払われるので、BIENは厳密な意味でのベーシックインカムには当たらないとしていますが、記録のある本物の給付です。"
+          ],
+          [
+            "o",
+            "法律や予算の文書があり、いつ、誰に、いくら払われたかがわかる。これが本物の給付です。ネサラ・ゲサラには、法律の文書も、財源も、払われた記録もありません。あるのは「もうすぐ発表される」という言葉だけです。"
+          ],
+          [
+            "h",
+            "見分けるための4つの質問"
+          ],
+          [
+            "p",
+            "「全員にお金が配られる」という話を見かけたら、次の4つを確かめてみてください。"
+          ],
+          [
+            "p",
+            "1. 誰が、何のお金で払うのか。国、州、基金など、払う側と財源がはっきりしているか。"
+          ],
+          [
+            "p",
+            "2. 受け取る前に、こちらが払うものはあるか。登録料、手数料、通貨や証書の購入。あれば、まず詐欺を疑う。"
+          ],
+          [
+            "p",
+            "3. 公式の文書や記録はあるか。法律、予算、政府の発表、支給の実績。SNSの画像や動画だけなら、まだ何も確かめられていない。"
+          ],
+          [
+            "p",
+            "4. 日付は言えるのか。「発表は近い」「いまは言えない」がくり返されるなら、その日は来ない可能性が高い。"
+          ],
+          [
+            "p",
+            "暗号資産のシードフレーズは、どんな理由があっても誰にも教えないでください。困ったときは、消費者ホットライン「188」で、近くの消費生活センターに相談できます。"
+          ],
+          [
+            "h",
+            "おわりに：夢を守るためにも"
+          ],
+          [
+            "o",
+            "「全員に、無条件で、お金が配られる世界」。その夢自体は、悪いものではありません。こうした投稿を広める人の多くは、ベーシックインカムが目指すものと同じ、借金からの解放と、誰もが暮らしの土台を持てることを願っています。その願いには、手数料ではなく、本物の答えが必要です。"
+          ],
+          [
+            "o",
+            "アラスカやマーシャル諸島、韓国のように、その夢は少しずつ現実の制度として形になり始めています。だからこそ、その夢に便乗して誰かのお金を奪う話とは、はっきり線を引いておきたいと思います。"
+          ],
+          [
+            "p",
+            "このサイトの{ベーシックインカム実験の年表|/timeline/}では、いつ、誰に、いくら払われたかを、出典つきで確かめられます。本物のベーシックインカムの話を、一緒に追いかけていきましょう。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "“只要 NESARA/GESARA 一宣布，所有债务都会一笔勾销，每个人都会得到一大笔钱。”经常上社交媒体的人，也许见过这样的帖子。"
+          ],
+          [
+            "p",
+            "本站关注基本收入。“无条件发给每个人的钱”听起来像基本收入，但两者完全是两回事。这篇随笔追溯 NESARA 和 GESARA 的来历，并说明如何把它们与真正的基本收入区分开来。"
+          ],
+          [
+            "h",
+            "起初是一位工程师的改革方案"
+          ],
+          [
+            "p",
+            "NESARA，即《国家经济安全与复苏法》（National Economic Security and Recovery Act），起初是一个真实提案的名称。20 世纪 80 年代末至 90 年代初，美国工程顾问兼教师哈维·弗朗西斯·巴纳德（Harvey Francis Barnard）独自拟定了一套经济改革方案：以全国销售税取代所得税，废除房贷等有担保贷款的复利，并恢复以金银为后盾的货币。[1]"
+          ],
+          [
+            "p",
+            "1996 年，巴纳德把他的提案《排干沼泽》（Draining the Swamp）印了 1,000 份，寄给国会议员。[1] 没有一位议员把它作为法案提出：NESARA 从未被提交到国会。[1] 2000 年，在争取政治支持的努力失败之后，巴纳德把提案放入公有领域，并在网上公开。[1]"
+          ],
+          [
+            "p",
+            "到这里为止，这只是一个平常的故事：一位公民的政策提案，没有得到任何进展。"
+          ],
+          [
+            "h",
+            "“秘密通过”的故事"
+          ],
+          [
+            "p",
+            "不久之后，故事变了样。一个自称“合一之鸽”（Dove of Oneness）的人开始在网上发布有关 NESARA 的帖子，此人后来被确认为沙伊妮·古德温（Shaini Goodwin）。[1] 她的说法大致如下：[1]"
+          ],
+          [
+            "p",
+            "NESARA 已于 2000 年 3 月在国会秘密会议上通过，并由克林顿总统签署。"
+          ],
+          [
+            "p",
+            "由于最高法院的禁言令，任何人都不能谈论此事。"
+          ],
+          [
+            "p",
+            "它原定于 2001 年 9 月 11 日上午 10 点实施，但受益人的数据在袭击中被毁。"
+          ],
+          [
+            "p",
+            "一旦宣布，它将免除所有个人债务，废除美国国税局（IRS），并宣告世界和平。"
+          ],
+          [
+            "p",
+            "古德温的版本远远超出了巴纳德的提案。[1] 巴纳德本人否认 NESARA 曾成为法律，甚至否认它曾获得过法案编号，并谴责她的说法是虚假信息。[1] 古德温一直声称宣布在即，并持续宣扬这个故事，直到 2010 年去世。[1]"
+          ],
+          [
+            "h",
+            "从一开始就与投资诈骗挂钩"
+          ],
+          [
+            "p",
+            "不可忽视的是，这个故事从一开始就与钱有关。古德温最初谈论 NESARA 时，把它与“欧米茄信托”（Omega Trust）联系在一起；这是一起投资诈骗，其创办人当时正在受审。她说，一旦 NESARA 宣布，欧米茄信托的投资者就会拿到回报。[1] 欧米茄信托在 1994 年至 2000 年间进行“优质银行”（prime bank）诈骗，创办人克莱德·胡德（Clyde Hood）于 2001 年认罪。联邦当局向估计约 10,000 名受害者提供赔偿时，许多人却拒绝了，因为担心失去他们仍在等待的那笔回报。[2]"
+          ],
+          [
+            "p",
+            "2014 年追溯这一故事的 Skeptoid 指出，古德温本人也是欧米茄的投资者，她不断告诉其他投资者回报就要到了，后来又向读者募款。Skeptoid 这样概括欧米茄、NESARA 和伊拉克第纳尔“重估”的共同点：它们都是“用现在的小钱，换取将来的巨款”。[3]"
+          ],
+          [
+            "o",
+            "也就是说，NESARA 的故事从一开始就被用来解释钱为什么还没回来，并承诺总有一天一定会回来。"
+          ],
+          [
+            "h",
+            "GESARA，以及“宣布在即”"
+          ],
+          [
+            "p",
+            "此后，这个故事靠改头换面延续了下来。GESARA，即《全球经济安全与改革法》（Global Economic Security and Reformation Act），是追随者在 2010 年代中期开始使用的新名称，意在把 NESARA 推广到全世界。[1] 它同样不是任何国家的法律。2022 年，Bellingcat 称 NESARA/GESARA 是 QAnon 的“祖父”，并报道说随着 QAnon 衰落，部分 QAnon 追随者又把它翻了出来。[1] 如今的帖子常常把它与其他名称捆绑在一起，例如“量子金融系统”（QFS），或即将到来的伊拉克第纳尔重估。"
+          ],
+          [
+            "p",
+            "2025 年 11 月，一段看似 Fox News 报道特朗普总统签署行政令、把 NESARA 定为国家正式政策的视频在 X 上流传。事实核查机构 Lead Stories 在 Fox News 网站上找不到这样的报道，白宫也没有发布过这样的声明。这段视频似乎是用 2025 年 9 月一场记者会的画面制作的，很可能是 AI 伪造的。[4]"
+          ],
+          [
+            "o",
+            "二十五年过去了，唯一没有变的只有“宣布在即”这句话。"
+          ],
+          [
+            "h",
+            "真正的危害：先付钱，钱却回不来"
+          ],
+          [
+            "p",
+            "这个故事之所以麻烦，是因为它不会只停留在谣言层面，而会成为骗取钱财的入口。"
+          ],
+          [
+            "p",
+            "常见的一种形式是出售外币：卖家说伊拉克第纳尔很快会升值许多倍，以高价出售几乎不值钱的纸币。[3] 2018 年在美国，联邦陪审团裁定 Sterling Currency Group（斯特林货币集团）的共同所有人和首席运营官犯有邮件欺诈和电信欺诈罪；该公司曾是美国最大的伊拉克第纳尔销售商之一。检方表示，他们散布第纳尔即将重估的虚假说法；2010 年至 2015 年间，该公司通过出售第纳尔和其他货币收入超过 6 亿美元。[5]"
+          ],
+          [
+            "p",
+            "汇率由中央银行公布，而不是由帖子公布。2026 年 6 月，伊拉克中央银行明确否认了其打算调整第纳尔汇率的报道。这则借助伪造文件传播的谣言声称汇率将改为每 1 美元兑 1,600 第纳尔，该行请民众通过其官方渠道核实信息。[6]"
+          ],
+          [
+            "p",
+            "另一些形式则是在发放任何钱之前，先向你要钱，或者要拿到钱的“钥匙”。请留意下面这类要求："
+          ],
+          [
+            "p",
+            "为领取 NESARA 款项而收取的“登记费”或“手续费”。"
+          ],
+          [
+            "p",
+            "需要你提供加密货币钱包助记词（seed phrase）的“QFS 兼容钱包”。"
+          ],
+          [
+            "p",
+            "由无法确认身份的公司出售、以无法核实的东西作担保的“金银证书”或“债券”。"
+          ],
+          [
+            "o",
+            "它们的结构都一样：先付钱，后收钱。"
+          ],
+          [
+            "h",
+            "真正的基本收入可以核实"
+          ],
+          [
+            "p",
+            "那么，真正的基本收入有什么不同？基本收入地球网络（BIEN）对基本收入的定义是“无条件地以个人为单位定期发给所有人的现金，不需经济状况调查，也不要求工作”：定期、现金、个人、普遍、无条件。[7]"
+          ],
+          [
+            "p",
+            "而且，真实的发放会留下任何人都能查证的记录。"
+          ],
+          [
+            "p",
+            "自 1982 年起，{阿拉斯加|/timeline/#tl-alaska}每年从以该州石油收入建立的永久基金中，向每一位符合资格的居民发放分红。金额每年在州政府官方网站上公布；2026 年为 1,200 美元，其中包括 200 美元的能源补助。[8]"
+          ],
+          [
+            "p",
+            "自 2025 年 11 月起，太平洋上的{马绍尔群岛|/timeline/#tl-marshall-islands}每季度向居住在国内的公民发放约 200 美元，资金来自根据其与美国的自由联系条约设立的信托基金。每次发放的金额和人数都会公布。"
+          ],
+          [
+            "p",
+            "自 2026 年 2 月起，{韩国|/timeline/#tl-korea-rural}在农林畜产食品部主导的试点中，以地方商品券形式每月向部分农村郡的全体居民发放 15 万韩元，该部公布参与的郡和结果。由于只覆盖部分郡、并以商品券支付，BIEN 不把它算作完整意义上的基本收入，但它是有记录的真实发放。"
+          ],
+          [
+            "o",
+            "有法律和预算文件，可以查到何时、向谁、发了多少。真实的发放就是这个样子。NESARA 和 GESARA 没有法律条文，没有资金来源，也没有任何发放记录。它们有的，只是“很快就会宣布”这句话。"
+          ],
+          [
+            "h",
+            "分辨真假的四个问题"
+          ],
+          [
+            "p",
+            "看到“向每个人发钱”的故事时，请核对以下四点。"
+          ],
+          [
+            "p",
+            "1. 谁来付钱，用的是什么钱？是否清楚由谁支付（例如国家、州或基金），钱从哪里来？"
+          ],
+          [
+            "p",
+            "2. 领钱之前，是否需要先付钱？登记费、手续费、购买货币或证书。如果需要，首先就要怀疑是诈骗。"
+          ],
+          [
+            "p",
+            "3. 有没有官方文件或记录？法律、预算、政府公告、发放记录。如果只有社交媒体上的图片和视频，那就什么都还没有得到核实。"
+          ],
+          [
+            "p",
+            "4. 能不能说出日期？如果一再听到“宣布在即”或“现在还不能说”，那一天多半不会到来。"
+          ],
+          [
+            "p",
+            "无论出于什么理由，都绝不要把加密货币钱包的助记词告诉任何人。如果你认为自己成了目标，或者已经付了钱，请联系当地的消费者保护机构或警方。"
+          ],
+          [
+            "h",
+            "为了守护这个梦想"
+          ],
+          [
+            "o",
+            "一个无条件给每个人发钱的世界：这个梦想本身并不坏。许多转发这些帖子的人，期盼的正是基本收入所期盼的东西：摆脱债务的出路，以及为每个人托底的保障。这份期盼值得一个真实的回答，而不是一笔手续费。"
+          ],
+          [
+            "o",
+            "在阿拉斯加、马绍尔群岛和韩国，这个梦想正一点一点地化为真实的制度。正因为如此，我们才要把它与那些借着这个梦想骗取钱财的故事清楚地划清界限。"
+          ],
+          [
+            "p",
+            "我们的{基本收入实验时间线|/timeline/}整理了何时、向谁、发了多少，每一条都附有出处。让我们一起继续关注真实的进展。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "“NESARA/GESARA की घोषणा होते ही हर कर्ज़ माफ़ हो जाएगा और हर किसी को बड़ी रकम मिलेगी।” अगर आप सोशल मीडिया पर समय बिताते हैं, तो शायद आपने ऐसी पोस्ट देखी होंगी।"
+          ],
+          [
+            "p",
+            "यह साइट बेसिक इनकम पर नज़र रखती है। “हर किसी को बिना किसी शर्त मिलने वाला पैसा” सुनने में बेसिक इनकम जैसा लग सकता है, लेकिन दोनों बिल्कुल अलग चीज़ें हैं। यह निबंध बताता है कि NESARA और GESARA कहाँ से आए, और उन्हें असली बेसिक इनकम से कैसे अलग पहचानें।"
+          ],
+          [
+            "h",
+            "शुरुआत एक इंजीनियर की सुधार योजना से हुई"
+          ],
+          [
+            "p",
+            "NESARA, यानी नेशनल इकोनॉमिक सिक्योरिटी एंड रिकवरी ऐक्ट (National Economic Security and Recovery Act), मूल रूप से एक असली प्रस्ताव का नाम था। 1980 के दशक के अंत और 1990 के दशक की शुरुआत में अमेरिकी इंजीनियरिंग सलाहकार और शिक्षक हार्वे फ़्रांसिस बर्नार्ड (Harvey Francis Barnard) ने अपने दम पर आर्थिक सुधारों का एक सेट तैयार किया: आयकर की जगह राष्ट्रीय बिक्री कर, मॉर्गेज जैसे सुरक्षित कर्ज़ों पर चक्रवृद्धि ब्याज ख़त्म करना, और सोने-चाँदी पर आधारित मुद्रा की ओर लौटना।[1]"
+          ],
+          [
+            "p",
+            "1996 में बर्नार्ड ने अपने प्रस्ताव Draining the Swamp की 1,000 प्रतियाँ छपवाईं और कांग्रेस के सदस्यों को भेजीं।[1] किसी ने भी इसे विधेयक के रूप में आगे नहीं बढ़ाया: NESARA कभी कांग्रेस में पेश ही नहीं हुआ।[1] 2000 में, राजनीतिक समर्थन जुटाने की कोशिशें नाकाम होने के बाद, बर्नार्ड ने प्रस्ताव को पब्लिक डोमेन में डाल दिया और ऑनलाइन प्रकाशित कर दिया।[1]"
+          ],
+          [
+            "p",
+            "यहाँ तक यह एक आम कहानी है: एक नागरिक का नीति प्रस्ताव, जो कहीं नहीं पहुँचा।"
+          ],
+          [
+            "h",
+            "चुपके से पास हो जाने की कहानी"
+          ],
+          [
+            "p",
+            "इसके कुछ ही समय बाद कहानी बदल गई। ख़ुद को “Dove of Oneness” कहने वाले किसी व्यक्ति ने ऑनलाइन NESARA के बारे में पोस्ट करना शुरू किया; बाद में उसकी पहचान शाइनी गुडविन (Shaini Goodwin) के रूप में हुई।[1] उनके दावे कुछ इस तरह थे:[1]"
+          ],
+          [
+            "p",
+            "NESARA मार्च 2000 में कांग्रेस के एक गुप्त सत्र में पास हो चुका था और राष्ट्रपति क्लिंटन ने उस पर हस्ताक्षर कर दिए थे।"
+          ],
+          [
+            "p",
+            "सुप्रीम कोर्ट के एक गैग ऑर्डर की वजह से कोई इसके बारे में बोल नहीं सकता था।"
+          ],
+          [
+            "p",
+            "इसे 11 सितंबर 2001 को सुबह 10 बजे लागू होना था, लेकिन हमलों में लाभार्थियों का डेटा नष्ट हो गया।"
+          ],
+          [
+            "p",
+            "घोषणा होते ही यह सभी निजी कर्ज़ माफ़ कर देगा, इंटरनल रेवेन्यू सर्विस (IRS) को ख़त्म कर देगा और विश्व शांति का ऐलान करेगा।"
+          ],
+          [
+            "p",
+            "गुडविन का संस्करण बर्नार्ड के प्रस्ताव से बहुत आगे चला गया।[1] बर्नार्ड ने ख़ुद इस बात से इनकार किया कि NESARA कभी क़ानून बना, या उसे कभी कोई ट्रैकिंग नंबर तक मिला, और उनके दावों को दुष्प्रचार कहकर उनकी निंदा की।[1] गुडविन कहती रहीं कि घोषणा क़रीब है, और 2010 में अपनी मृत्यु तक इस कहानी का प्रचार करती रहीं।[1]"
+          ],
+          [
+            "h",
+            "शुरू से ही एक निवेश धोखाधड़ी से जुड़ी"
+          ],
+          [
+            "p",
+            "जो बात नज़रअंदाज़ नहीं होनी चाहिए, वह यह है कि यह कहानी शुरू से ही पैसे से जुड़ी थी। गुडविन ने NESARA की बात Omega Trust के सिलसिले में शुरू की थी, जो एक निवेश धोखाधड़ी थी और जिसके संस्थापक पर उस समय मुक़दमा चल रहा था; उन्होंने कहा कि NESARA की घोषणा होते ही Omega Trust के निवेशकों को उनका रिटर्न मिल जाएगा।[1] Omega Trust ने 1994 से 2000 तक “प्राइम बैंक” धोखाधड़ी चलाई, और इसके संस्थापक क्लाइड हुड (Clyde Hood) ने 2001 में अपना अपराध क़बूल किया। जब संघीय अधिकारियों ने अनुमानित 10,000 पीड़ितों को मुआवज़े की पेशकश की, तो कई लोगों ने उसे ठुकरा दिया, इस डर से कि जिस भुगतान का वे अब भी इंतज़ार कर रहे थे, वह हाथ से निकल जाएगा।[2]"
+          ],
+          [
+            "p",
+            "2014 में इस कहानी की पड़ताल करने वाली Skeptoid के अनुसार गुडविन ख़ुद Omega की निवेशक थीं, जो साथी निवेशकों से कहती रहीं कि उनका भुगतान आने वाला है, और बाद में अपने पाठकों से पैसे माँगने लगीं। Skeptoid के मुताबिक़ Omega, NESARA और इराक़ी दीनार के “रीवैल्यूएशन” में एक बात साझा है: ये सब “अभी थोड़ा पैसा लेकर बाद में भारी रकम का वादा करते हैं”।[3]"
+          ],
+          [
+            "o",
+            "यानी शुरू से ही NESARA की कहानी का इस्तेमाल यह समझाने के लिए भी होता रहा कि पैसा वापस क्यों नहीं आया, और यह वादा करने के लिए कि एक दिन ज़रूर आएगा।"
+          ],
+          [
+            "h",
+            "GESARA, और “घोषणा क़रीब है”"
+          ],
+          [
+            "p",
+            "इसके बाद कहानी रूप बदलकर ज़िंदा रही। GESARA, यानी ग्लोबल इकोनॉमिक सिक्योरिटी एंड रिफ़ॉर्मेशन ऐक्ट (Global Economic Security and Reformation Act), एक बाद का नाम है जिसे अनुयायियों ने 2010 के दशक के मध्य में NESARA को पूरी दुनिया तक फैलाने के लिए इस्तेमाल करना शुरू किया।[1] यह भी किसी देश का क़ानून नहीं है। 2022 में Bellingcat ने NESARA/GESARA को QAnon का “दादा” कहा और बताया कि QAnon के कमज़ोर पड़ने पर उसके कुछ अनुयायियों ने इसे फिर से ज़िंदा किया।[1] आज की पोस्ट अक्सर इसे दूसरे नामों के साथ जोड़ देती हैं, जैसे “क्वांटम फ़ाइनेंशियल सिस्टम” (QFS) या इराक़ी दीनार का आने वाला रीवैल्यूएशन।"
+          ],
+          [
+            "p",
+            "नवंबर 2025 में X पर एक वीडियो फैला, जो Fox News की एक रिपोर्ट जैसा दिखता था, जिसमें राष्ट्रपति ट्रंप NESARA को देश की आधिकारिक नीति बनाने वाले एक कार्यकारी आदेश पर हस्ताक्षर करते बताए गए थे। फ़ैक्ट-चेकर Lead Stories को Fox News की वेबसाइट पर ऐसी कोई रिपोर्ट नहीं मिली, और व्हाइट हाउस की ओर से ऐसी कोई घोषणा भी नहीं हुई थी। लगता है कि वीडियो सितंबर 2025 की एक प्रेस कॉन्फ़्रेंस की फ़ुटेज से बनाया गया था, और यह संभवतः AI से बना नकली वीडियो है।[4]"
+          ],
+          [
+            "o",
+            "पच्चीस साल बाद भी, जो एक चीज़ नहीं बदली, वह है “घोषणा क़रीब है”।"
+          ],
+          [
+            "h",
+            "असली नुक़सान: पहले पैसे दो, और पैसा वापस नहीं आता"
+          ],
+          [
+            "p",
+            "इस कहानी को परेशानी भरा बनाने वाली बात यह है कि यह अफ़वाह भर नहीं रहती। यह लोगों का पैसा लेने का रास्ता बन जाती है।"
+          ],
+          [
+            "p",
+            "एक आम रूप विदेशी मुद्रा बेचना है: बेचने वाले कहते हैं कि इराक़ी दीनार जल्द ही कई गुना महँगा हो जाएगा, और कम क़ीमत वाले नोट ऊँचे दाम पर बेचते हैं।[3] 2018 में अमेरिका में एक संघीय जूरी ने Sterling Currency Group, जो कभी देश में इराक़ी दीनार के सबसे बड़े विक्रेताओं में से एक थी, के सह-मालिकों और चीफ़ ऑपरेटिंग ऑफ़िसर को मेल फ़्रॉड और वायर फ़्रॉड का दोषी ठहराया। अभियोजकों के अनुसार उन्होंने यह झूठा दावा फैलाया कि दीनार का रीवैल्यूएशन होने वाला है; 2010 से 2015 के बीच कंपनी ने दीनार और दूसरी मुद्राएँ बेचकर $60 करोड़ से ज़्यादा कमाए।[5]"
+          ],
+          [
+            "p",
+            "विनिमय दरों की घोषणा केंद्रीय बैंक करते हैं, पोस्ट नहीं। जून 2026 में सेंट्रल बैंक ऑफ़ इराक़ ने उन ख़बरों का साफ़ खंडन किया कि वह दीनार की विनिमय दर बदलना चाहता है। एक जाली दस्तावेज़ के सहारे फैली उस अफ़वाह में दावा था कि दर बदलकर 1,600 दीनार प्रति अमेरिकी डॉलर होगी, और बैंक ने लोगों से कहा कि वे जानकारी उसके अपने आधिकारिक स्रोतों से जाँचें।[6]"
+          ],
+          [
+            "p",
+            "दूसरे रूप कुछ भी मिलने से पहले ही पैसे, या पैसे की चाबी, माँगते हैं। ऐसी माँगों से सावधान रहें:"
+          ],
+          [
+            "p",
+            "NESARA भुगतान पाने के लिए “रजिस्ट्रेशन फ़ीस” या “प्रोसेसिंग फ़ीस”।"
+          ],
+          [
+            "p",
+            "एक “QFS-रेडी वॉलेट”, जिसके लिए आपके क्रिप्टो वॉलेट का सीड फ़्रेज़ चाहिए।"
+          ],
+          [
+            "p",
+            "किसी ऐसी कंपनी के बेचे “सोने-चाँदी के सर्टिफ़िकेट” या “बॉन्ड”, जिसकी पहचान आप नहीं कर सकते, और जिनके पीछे ऐसी चीज़ है जिसे आप जाँच नहीं सकते।"
+          ],
+          [
+            "o",
+            "इन सबका ढाँचा एक ही है: मिलने से पहले आप पैसे देते हैं।"
+          ],
+          [
+            "h",
+            "असली बेसिक इनकम की जाँच हो सकती है"
+          ],
+          [
+            "p",
+            "तो असली बेसिक इनकम कैसे अलग है? बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को “बिना शर्त, सभी को व्यक्तिगत आधार पर, बिना आय-जाँच या काम की शर्त के दिया जाने वाला नियमित नकद भुगतान” के रूप में परिभाषित करता है: नियमित, नकद, व्यक्तिगत, सार्वभौमिक और बिना शर्त।[7]"
+          ],
+          [
+            "p",
+            "और असली भुगतान ऐसे रिकॉर्ड छोड़ते हैं जिन्हें कोई भी जाँच सकता है।"
+          ],
+          [
+            "p",
+            "1982 से {अलास्का|/timeline/#tl-alaska} राज्य की तेल आमदनी से बने अपने परमानेंट फ़ंड से हर पात्र निवासी को सालाना डिविडेंड देता है। रकम हर साल राज्य की आधिकारिक साइट पर प्रकाशित होती है; 2026 के लिए यह $1,200 है, जिसमें $200 का ऊर्जा राहत भुगतान शामिल है।[8]"
+          ],
+          [
+            "p",
+            "नवंबर 2025 से प्रशांत महासागर के {मार्शल द्वीप|/timeline/#tl-marshall-islands} देश में रहने वाले अपने नागरिकों को हर तिमाही लगभग $200 देते हैं, जो अमेरिका के साथ उसके कॉम्पैक्ट के तहत बने एक ट्रस्ट फ़ंड से आता है। रकम और भुगतान पाने वालों की संख्या हर बार बताई जाती है।"
+          ],
+          [
+            "p",
+            "फ़रवरी 2026 से {दक्षिण कोरिया|/timeline/#tl-korea-rural} कुछ ग्रामीण काउंटियों के हर निवासी को स्थानीय गिफ़्ट सर्टिफ़िकेट के रूप में हर महीने 1,50,000 वॉन देता है। यह कृषि, खाद्य और ग्रामीण मामलों के मंत्रालय का पायलट है, जो काउंटियों और नतीजों को प्रकाशित करता है। क्योंकि यह सिर्फ़ कुछ काउंटियों को कवर करता है और वाउचर में भुगतान करता है, BIEN इसे पूरे अर्थ में बेसिक इनकम नहीं मानता, लेकिन यह रिकॉर्ड वाला असली भुगतान है।"
+          ],
+          [
+            "o",
+            "क़ानून और बजट दस्तावेज़ होते हैं, और आप पता लगा सकते हैं कि कब, किसे और कितना दिया गया। असली भुगतान ऐसा दिखता है। NESARA और GESARA के पास न कोई क़ानूनी पाठ है, न पैसे का कोई स्रोत, न किसी भुगतान का कोई रिकॉर्ड। उनके पास बस यही बात है कि जल्द ही घोषणा होगी।"
+          ],
+          [
+            "h",
+            "फ़र्क़ पहचानने के चार सवाल"
+          ],
+          [
+            "p",
+            "जब आप हर किसी को पैसा मिलने की कोई कहानी देखें, तो ये चार बातें जाँचें।"
+          ],
+          [
+            "p",
+            "1. पैसा कौन देगा, और किस पैसे से? क्या साफ़ है कि भुगतान कौन कर रहा है, जैसे कोई देश, राज्य या फ़ंड, और पैसा कहाँ से आता है?"
+          ],
+          [
+            "p",
+            "2. क्या कुछ पाने से पहले आपको कुछ देना पड़ता है? रजिस्ट्रेशन फ़ीस, प्रोसेसिंग फ़ीस, मुद्रा या सर्टिफ़िकेट ख़रीदना। अगर हाँ, तो सबसे पहले धोखाधड़ी का शक करें।"
+          ],
+          [
+            "p",
+            "3. क्या आधिकारिक दस्तावेज़ या रिकॉर्ड हैं? क़ानून, बजट, सरकारी घोषणा, भुगतान का रिकॉर्ड। अगर सिर्फ़ सोशल मीडिया पर तस्वीरें और वीडियो हैं, तो अभी कुछ भी जाँचा नहीं गया है।"
+          ],
+          [
+            "p",
+            "4. क्या वे कोई तारीख़ बता सकते हैं? अगर आप बार-बार “घोषणा क़रीब है” या “अभी नहीं बता सकते” सुनते हैं, तो वह दिन आने की संभावना कम है।"
+          ],
+          [
+            "p",
+            "किसी भी वजह से अपने क्रिप्टो वॉलेट का सीड फ़्रेज़ कभी किसी को न बताएँ। अगर आपको लगता है कि आपको निशाना बनाया गया है, या आप पहले ही पैसे दे चुके हैं, तो अपनी स्थानीय उपभोक्ता संरक्षण एजेंसी या पुलिस से संपर्क करें।"
+          ],
+          [
+            "h",
+            "सपने को बचाने के लिए"
+          ],
+          [
+            "o",
+            "एक ऐसी दुनिया जहाँ हर किसी को बिना शर्त पैसा मिले: यह सपना अपने आप में बुरा नहीं है। ये पोस्ट साझा करने वाले बहुत से लोग ठीक वही चाहते हैं जो बेसिक इनकम चाहती है: कर्ज़ से निकलने का रास्ता और हर किसी के लिए एक न्यूनतम आधार। यह उम्मीद एक असली जवाब की हक़दार है, किसी फ़ीस की नहीं।"
+          ],
+          [
+            "o",
+            "अलास्का, मार्शल द्वीप और दक्षिण कोरिया में यह सपना धीरे-धीरे असली कार्यक्रमों का रूप ले रहा है। ठीक इसीलिए हम इसके और उन कहानियों के बीच साफ़ रेखा खींचना चाहते हैं जो इसी सपने के सहारे लोगों का पैसा लेती हैं।"
+          ],
+          [
+            "p",
+            "हमारी {बेसिक इनकम प्रयोगों की टाइमलाइन|/timeline/} बताती है कि कब, किसे और कितना दिया गया, हर एक के स्रोत के साथ। आइए, मिलकर असली चीज़ पर नज़र रखते रहें।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "«Cuando se anuncie NESARA/GESARA, se borrarán todas las deudas y todo el mundo recibirá una fortuna». Si pasas tiempo en las redes sociales, es posible que te hayas topado con mensajes así."
+          ],
+          [
+            "p",
+            "Este sitio sigue la renta básica. «Dinero pagado a todos, sin condiciones» puede sonar a renta básica, pero son cosas completamente distintas. Este ensayo rastrea de dónde salieron NESARA y GESARA y explica cómo distinguirlas de una renta básica real."
+          ],
+          [
+            "h",
+            "Empezó como el plan de reforma de un ingeniero"
+          ],
+          [
+            "p",
+            "NESARA, la National Economic Security and Recovery Act, fue en origen el nombre de una propuesta real. A finales de los años ochenta y principios de los noventa, Harvey Francis Barnard, consultor de ingeniería y profesor estadounidense, elaboró por su cuenta un conjunto de reformas económicas: sustituir el impuesto sobre la renta por un impuesto nacional sobre las ventas, abolir el interés compuesto en los préstamos con garantía, como las hipotecas, y volver a una moneda respaldada por oro y plata.[1]"
+          ],
+          [
+            "p",
+            "En 1996, Barnard imprimió 1.000 ejemplares de su propuesta, Draining the Swamp, y los envió a miembros del Congreso.[1] Ninguno la presentó como proyecto de ley: NESARA nunca llegó a presentarse en el Congreso.[1] En 2000, después de que fracasaran sus intentos de conseguir apoyo político, Barnard liberó la propuesta al dominio público y la publicó en internet.[1]"
+          ],
+          [
+            "p",
+            "Hasta aquí, es una historia corriente: la propuesta política de un ciudadano que no llegó a ninguna parte."
+          ],
+          [
+            "h",
+            "La historia de que se aprobó en secreto"
+          ],
+          [
+            "p",
+            "La historia cambió poco después. Alguien que se hacía llamar «Dove of Oneness» empezó a publicar sobre NESARA en internet; más tarde se identificó a esa persona como Shaini Goodwin.[1] Sus afirmaciones eran estas:[1]"
+          ],
+          [
+            "p",
+            "NESARA se habría aprobado en una sesión secreta del Congreso en marzo de 2000 y la habría firmado el presidente Clinton."
+          ],
+          [
+            "p",
+            "Una orden de silencio del Tribunal Supremo impediría que nadie hablara de ella."
+          ],
+          [
+            "p",
+            "Debía aplicarse a las 10 de la mañana del 11 de septiembre de 2001, pero los datos de los beneficiarios se habrían destruido en los atentados."
+          ],
+          [
+            "p",
+            "Una vez anunciada, cancelaría todas las deudas personales, abolería el Servicio de Impuestos Internos (IRS) y declararía la paz mundial."
+          ],
+          [
+            "p",
+            "La versión de Goodwin iba mucho más allá de la propuesta de Barnard.[1] El propio Barnard negó que NESARA se hubiera convertido nunca en ley, ni siquiera que hubiera recibido un número de registro, y condenó sus afirmaciones como desinformación.[1] Goodwin siguió diciendo que el anuncio estaba cerca y promovió la historia hasta su muerte en 2010.[1]"
+          ],
+          [
+            "h",
+            "Ligada a un fraude de inversión desde el principio"
+          ],
+          [
+            "p",
+            "Lo que no hay que pasar por alto es que la historia estuvo ligada al dinero desde el primer momento. Goodwin empezó a hablar de NESARA en relación con Omega Trust, un fraude de inversión cuyo creador estaba siendo juzgado en ese momento, y dijo que los inversores de Omega Trust recibirían sus ganancias cuando se anunciara NESARA.[1] Omega Trust operó un fraude de «prime bank» entre 1994 y 2000, y su fundador, Clyde Hood, se declaró culpable en 2001. Cuando las autoridades federales ofrecieron una restitución a unas 10.000 víctimas estimadas, muchas la rechazaron por miedo a perder el pago que todavía esperaban.[2]"
+          ],
+          [
+            "p",
+            "Skeptoid, que rastreó la historia en 2014, describe a Goodwin como inversora de Omega ella misma, que no dejaba de decir a otros inversores que sus pagos estaban en camino y que más tarde pidió dinero a sus lectores. Resume lo que tienen en común Omega, NESARA y la «revalorización» del dinar iraquí: «cambian pequeñas cantidades de dinero ahora por enormes cantidades de dinero más adelante».[3]"
+          ],
+          [
+            "o",
+            "Desde el principio, pues, la historia de NESARA sirvió también para explicar por qué el dinero no había vuelto, y para prometer que algún día volvería sin falta."
+          ],
+          [
+            "h",
+            "GESARA, y «el anuncio está cerca»"
+          ],
+          [
+            "p",
+            "Después, la historia sobrevivió cambiando de forma. GESARA, la Global Economic Security and Reformation Act, es un nombre posterior que los seguidores empezaron a usar a mediados de la década de 2010 para extender NESARA al mundo entero.[1] Tampoco es ley en ningún país. En 2022, Bellingcat llamó a NESARA/GESARA un «abuelo» de QAnon e informó de que algunos seguidores de QAnon la revivieron a medida que QAnon decaía.[1] Los mensajes actuales suelen mezclarla con otros nombres, como un «sistema financiero cuántico» (QFS) o una próxima revalorización del dinar iraquí."
+          ],
+          [
+            "p",
+            "En noviembre de 2025 se difundió en X un vídeo que parecía mostrar un reportaje de Fox News sobre el presidente Trump firmando una orden ejecutiva que convertía NESARA en política oficial de la nación. El verificador Lead Stories no encontró ese reportaje en la web de Fox News ni tal declaración de la Casa Blanca. El vídeo parece haberse hecho con imágenes de una rueda de prensa de septiembre de 2025 y probablemente es una falsificación hecha con IA.[4]"
+          ],
+          [
+            "o",
+            "Veinticinco años después, lo único que no ha cambiado es «el anuncio está cerca»."
+          ],
+          [
+            "h",
+            "El daño real: pagar primero, y el dinero no vuelve"
+          ],
+          [
+            "p",
+            "Lo que hace problemática esta historia es que no se queda en rumor. Se convierte en una puerta de entrada para quitarle el dinero a la gente."
+          ],
+          [
+            "p",
+            "Una forma habitual es vender moneda extranjera: los vendedores dicen que el dinar iraquí pronto valdrá muchas veces más y venden a precio alto billetes de poco valor.[3] En Estados Unidos, en 2018, un jurado federal declaró culpables de fraude postal y electrónico a los copropietarios y al director de operaciones de Sterling Currency Group, en su día uno de los mayores vendedores de dinar iraquí del país. Según la fiscalía, difundieron afirmaciones falsas de que el dinar estaba a punto de revalorizarse; entre 2010 y 2015, la empresa ingresó más de 600 millones de dólares por la venta del dinar y otras monedas.[5]"
+          ],
+          [
+            "p",
+            "Los tipos de cambio los anuncian los bancos centrales, no los mensajes en redes. En junio de 2026, el Banco Central de Irak desmintió con firmeza las informaciones de que pretende cambiar el tipo de cambio del dinar. Ese rumor, difundido con un documento falsificado, hablaba de un cambio a 1.600 dinares por dólar estadounidense, y el banco pidió a la gente que comprobara la información en sus propias fuentes oficiales.[6]"
+          ],
+          [
+            "p",
+            "Otras formas piden dinero, o las llaves de ese dinero, antes de pagar nada. Desconfía de peticiones como estas:"
+          ],
+          [
+            "p",
+            "Una «cuota de registro» o «tasa de tramitación» para recibir un pago de NESARA."
+          ],
+          [
+            "p",
+            "Un «monedero preparado para QFS» que necesita la frase semilla de tu monedero de criptomonedas."
+          ],
+          [
+            "p",
+            "«Certificados de oro y plata» o «bonos» vendidos por una empresa que no puedes identificar, respaldados por algo que no puedes comprobar."
+          ],
+          [
+            "o",
+            "Todas tienen la misma forma: pagas antes de recibir."
+          ],
+          [
+            "h",
+            "Una renta básica real se puede comprobar"
+          ],
+          [
+            "p",
+            "¿En qué se diferencia, entonces, una renta básica real? La Basic Income Earth Network (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todos de forma individual, sin comprobación de recursos ni exigencia de trabajo»: periódica, en efectivo, individual, universal e incondicional.[7]"
+          ],
+          [
+            "p",
+            "Y los pagos reales dejan registros que cualquiera puede seguir."
+          ],
+          [
+            "p",
+            "Desde 1982, {Alaska|/timeline/#tl-alaska} paga un dividendo anual de su Fondo Permanente, creado con los ingresos petroleros del estado, a cada residente que reúne los requisitos. La cantidad se publica cada año en la web oficial del estado; para 2026 es de 1.200 $, incluido un pago de alivio energético de 200 $.[8]"
+          ],
+          [
+            "p",
+            "Desde noviembre de 2025, las {Islas Marshall|/timeline/#tl-marshall-islands}, en el Pacífico, pagan unos 200 $ cada trimestre a sus ciudadanos residentes en el país, con cargo a un fondo fiduciario creado en virtud de su pacto con Estados Unidos. Las cantidades y el número de personas que cobran se informan cada vez."
+          ],
+          [
+            "p",
+            "Desde febrero de 2026, {Corea del Sur|/timeline/#tl-korea-rural} paga 150.000 wones al mes en vales de comercio local a cada residente de un grupo de condados rurales, en un piloto del Ministerio de Agricultura, Alimentación y Asuntos Rurales, que publica los condados y los resultados. Como solo cubre algunos condados y paga en vales, BIEN no lo cuenta como renta básica en sentido pleno, pero es un pago real con registro."
+          ],
+          [
+            "o",
+            "Hay leyes y documentos presupuestarios, y se puede averiguar cuándo, a quién y cuánto se pagó. Así es un pago real. NESARA y GESARA no tienen texto legal, ni fuente de fondos, ni registro de que se haya pagado nada. Lo único que tienen es la promesa de que se anunciará pronto."
+          ],
+          [
+            "h",
+            "Cuatro preguntas para distinguirlas"
+          ],
+          [
+            "p",
+            "Cuando veas una historia sobre dinero que se pagará a todo el mundo, comprueba estas cuatro cosas."
+          ],
+          [
+            "p",
+            "1. ¿Quién paga, y con qué dinero? ¿Está claro quién paga, como un país, un estado o un fondo, y de dónde sale el dinero?"
+          ],
+          [
+            "p",
+            "2. ¿Tienes que pagar algo antes de recibir? Una cuota de registro, una tasa de tramitación, comprar moneda o certificados. Si es así, sospecha primero de una estafa."
+          ],
+          [
+            "p",
+            "3. ¿Hay documentos o registros oficiales? Una ley, un presupuesto, un anuncio del gobierno, un registro de pagos. Si lo único que hay son imágenes y vídeos en redes sociales, todavía no se ha comprobado nada."
+          ],
+          [
+            "p",
+            "4. ¿Pueden dar una fecha? Si no dejas de oír «el anuncio está cerca» o «todavía no podemos decirlo», es poco probable que ese día llegue."
+          ],
+          [
+            "p",
+            "Nunca le digas a nadie la frase semilla de tu monedero de criptomonedas, sea cual sea el motivo. Si crees que te han tomado como objetivo, o ya has pagado, ponte en contacto con la autoridad de protección al consumidor de tu zona o con la policía."
+          ],
+          [
+            "h",
+            "Para proteger el sueño"
+          ],
+          [
+            "o",
+            "Un mundo en el que todos reciben dinero, sin condiciones: el sueño en sí no es malo. Muchas de las personas que comparten estos mensajes esperan exactamente lo mismo que espera la renta básica: una salida de las deudas y un suelo bajo los pies de todos. Esa esperanza merece una respuesta real, no una cuota."
+          ],
+          [
+            "o",
+            "En Alaska, las Islas Marshall y Corea del Sur, ese sueño va tomando forma poco a poco como programas reales. Precisamente por eso queremos trazar una línea clara entre él y las historias que se aprovechan de él para quitarle el dinero a la gente."
+          ],
+          [
+            "p",
+            "Nuestra {cronología de experimentos de renta básica|/timeline/} recoge cuándo, a quién y cuánto se pagó, cada caso con su fuente. Sigamos juntos lo real."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "„Sobald NESARA/GESARA verkündet wird, werden alle Schulden gelöscht und jeder bekommt ein Vermögen.“ Wer Zeit in sozialen Medien verbringt, ist vielleicht schon auf solche Beiträge gestoßen."
+          ],
+          [
+            "p",
+            "Diese Seite verfolgt das Grundeinkommen. „Geld für alle, ohne Bedingungen“ kann nach Grundeinkommen klingen, doch beides ist etwas völlig anderes. Dieser Essay zeichnet nach, woher NESARA und GESARA stammen, und zeigt, wie man sie von einem echten Grundeinkommen unterscheidet."
+          ],
+          [
+            "h",
+            "Es begann als Reformplan eines Ingenieurs"
+          ],
+          [
+            "p",
+            "NESARA, der National Economic Security and Recovery Act, war ursprünglich der Name eines echten Vorschlags. Ende der 1980er- und Anfang der 1990er-Jahre arbeitete Harvey Francis Barnard, ein US-amerikanischer Ingenieurberater und Lehrer, auf eigene Faust eine Reihe von Wirtschaftsreformen aus: die Einkommensteuer durch eine nationale Umsatzsteuer ersetzen, den Zinseszins bei besicherten Krediten wie Hypotheken abschaffen und zu einer durch Gold und Silber gedeckten Währung zurückkehren.[1]"
+          ],
+          [
+            "p",
+            "1996 ließ Barnard 1.000 Exemplare seines Vorschlags Draining the Swamp drucken und schickte sie an Mitglieder des Kongresses.[1] Keiner von ihnen brachte ihn als Gesetzentwurf ein: NESARA wurde nie im Kongress eingebracht.[1] Im Jahr 2000, nachdem seine Versuche, politische Unterstützung zu gewinnen, gescheitert waren, gab Barnard den Vorschlag gemeinfrei und veröffentlichte ihn im Internet.[1]"
+          ],
+          [
+            "p",
+            "Bis hierhin ist es eine gewöhnliche Geschichte: der politische Vorschlag eines Bürgers, der nirgendwohin führte."
+          ],
+          [
+            "h",
+            "Die Geschichte, es sei heimlich verabschiedet worden"
+          ],
+          [
+            "p",
+            "Bald darauf änderte sich die Geschichte. Jemand, der sich „Dove of Oneness“ nannte, begann im Internet über NESARA zu schreiben; später wurde diese Person als Shaini Goodwin identifiziert.[1] Ihre Behauptungen lauteten so:[1]"
+          ],
+          [
+            "p",
+            "NESARA sei im März 2000 in einer geheimen Sitzung des Kongresses verabschiedet und von Präsident Clinton unterzeichnet worden."
+          ],
+          [
+            "p",
+            "Eine Schweigeverfügung des Obersten Gerichtshofs verhindere, dass irgendjemand darüber spreche."
+          ],
+          [
+            "p",
+            "Es hätte am 11. September 2001 um 10 Uhr morgens in Kraft treten sollen, doch die Daten der Begünstigten seien bei den Anschlägen vernichtet worden."
+          ],
+          [
+            "p",
+            "Sobald es verkündet sei, würden alle privaten Schulden erlassen, die Steuerbehörde IRS abgeschafft und der Weltfrieden ausgerufen."
+          ],
+          [
+            "p",
+            "Goodwins Version ging weit über Barnards Vorschlag hinaus.[1] Barnard selbst bestritt, dass NESARA je Gesetz geworden sei oder auch nur eine Registriernummer erhalten habe, und verurteilte ihre Behauptungen als Desinformation.[1] Goodwin sagte weiter, die Verkündung stehe kurz bevor, und verbreitete die Geschichte bis zu ihrem Tod 2010.[1]"
+          ],
+          [
+            "h",
+            "Von Anfang an mit einem Anlagebetrug verknüpft"
+          ],
+          [
+            "p",
+            "Was man nicht übersehen sollte: Die Geschichte war von Anfang an mit Geld verknüpft. Goodwin begann über NESARA im Zusammenhang mit Omega Trust zu sprechen, einem Anlagebetrug, dessen Urheber damals vor Gericht stand, und sagte, die Anleger von Omega Trust würden ihre Renditen erhalten, sobald NESARA verkündet sei.[1] Omega Trust betrieb von 1994 bis 2000 einen „Prime Bank“-Betrug, und sein Gründer Clyde Hood bekannte sich 2001 schuldig. Als die Bundesbehörden geschätzt 10.000 Opfern eine Entschädigung anboten, lehnten viele ab, aus Angst, die Auszahlung zu verlieren, auf die sie noch warteten.[2]"
+          ],
+          [
+            "p",
+            "Skeptoid, das die Geschichte 2014 nachzeichnete, beschreibt Goodwin als selbst Anlegerin bei Omega, die anderen Anlegern immer wieder sagte, ihre Auszahlungen seien unterwegs, und später ihre Leser um Geld bat. Es fasst zusammen, was Omega, NESARA und die „Aufwertung“ des irakischen Dinar gemeinsam haben: Sie „tauschen jetzt kleine Geldbeträge gegen riesige Geldbeträge später“.[3]"
+          ],
+          [
+            "o",
+            "Von Anfang an diente die NESARA-Geschichte also auch dazu, zu erklären, warum das Geld nicht zurückgekommen war, und zu versprechen, dass es eines Tages ganz sicher kommen werde."
+          ],
+          [
+            "h",
+            "GESARA und „die Verkündung steht kurz bevor“"
+          ],
+          [
+            "p",
+            "Danach überlebte die Geschichte, indem sie ihre Gestalt wechselte. GESARA, der Global Economic Security and Reformation Act, ist ein späterer Name, den Anhänger ab Mitte der 2010er-Jahre verwendeten, um NESARA auf die ganze Welt auszuweiten.[1] Auch er ist in keinem Land Gesetz. 2022 nannte Bellingcat NESARA/GESARA einen „Großvater“ von QAnon und berichtete, dass manche QAnon-Anhänger die Erzählung wiederbelebten, als QAnon an Bedeutung verlor.[1] Heutige Beiträge bündeln sie oft mit anderen Namen, etwa einem „Quanten-Finanzsystem“ (QFS) oder einer bevorstehenden Aufwertung des irakischen Dinar."
+          ],
+          [
+            "p",
+            "Im November 2025 verbreitete sich auf X ein Video, das einen Fox-News-Bericht zu zeigen schien, wonach Präsident Trump eine Durchführungsverordnung unterzeichnet habe, die NESARA zur offiziellen Politik der Nation mache. Der Faktenchecker Lead Stories fand keinen solchen Bericht auf der Website von Fox News und keine solche Erklärung des Weißen Hauses. Das Video scheint aus Aufnahmen einer Pressekonferenz vom September 2025 erstellt worden zu sein und ist wahrscheinlich eine KI-Fälschung.[4]"
+          ],
+          [
+            "o",
+            "Fünfundzwanzig Jahre später hat sich nur eines nicht geändert: „Die Verkündung steht kurz bevor.“"
+          ],
+          [
+            "h",
+            "Der echte Schaden: zuerst zahlen, und das Geld kommt nicht zurück"
+          ],
+          [
+            "p",
+            "Problematisch an dieser Geschichte ist, dass sie kein Gerücht bleibt. Sie wird zum Einfallstor, um Menschen ihr Geld abzunehmen."
+          ],
+          [
+            "p",
+            "Eine verbreitete Form ist der Verkauf ausländischer Währung: Verkäufer behaupten, der irakische Dinar werde bald ein Vielfaches wert sein, und verkaufen Banknoten von geringem Wert zu hohen Preisen.[3] In den USA sprach 2018 eine Bundesjury die Miteigentümer und den Chief Operating Officer von Sterling Currency Group, einst einer der größten Händler für irakische Dinar im Land, des Post- und Überweisungsbetrugs schuldig. Laut Anklage verbreiteten sie falsche Behauptungen, der Dinar stehe kurz vor einer Aufwertung; zwischen 2010 und 2015 nahm die Firma mit dem Verkauf von Dinar und anderen Währungen über 600 Mio. $ ein.[5]"
+          ],
+          [
+            "p",
+            "Wechselkurse werden von Zentralbanken verkündet, nicht von Beiträgen in sozialen Medien. Im Juni 2026 dementierte die Zentralbank des Irak entschieden Berichte, sie wolle den Wechselkurs des Dinar ändern. Dieses Gerücht, verbreitet mit einem gefälschten Dokument, behauptete eine Änderung auf 1.600 Dinar pro US-Dollar, und die Bank bat die Menschen, Informationen über ihre eigenen offiziellen Quellen zu prüfen.[6]"
+          ],
+          [
+            "p",
+            "Andere Formen verlangen Geld oder die Schlüssel dazu, bevor irgendetwas ausgezahlt wird. Achten Sie auf Aufforderungen wie diese:"
+          ],
+          [
+            "p",
+            "Eine „Registrierungsgebühr“ oder „Bearbeitungsgebühr“, um eine NESARA-Zahlung zu erhalten."
+          ],
+          [
+            "p",
+            "Eine „QFS-fähige Wallet“, die die Seed-Phrase Ihrer Krypto-Wallet benötigt."
+          ],
+          [
+            "p",
+            "„Gold- und Silberzertifikate“ oder „Anleihen“, verkauft von einer Firma, die Sie nicht identifizieren können, gedeckt durch etwas, das Sie nicht prüfen können."
+          ],
+          [
+            "o",
+            "Alle haben dieselbe Form: Sie zahlen, bevor Sie etwas bekommen."
+          ],
+          [
+            "h",
+            "Ein echtes Grundeinkommen lässt sich überprüfen"
+          ],
+          [
+            "p",
+            "Worin unterscheidet sich also ein echtes Grundeinkommen? Das Basic Income Earth Network (BIEN) definiert Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitspflicht“: regelmäßig, in Geld, individuell, universell und bedingungslos.[7]"
+          ],
+          [
+            "p",
+            "Und echte Zahlungen hinterlassen Aufzeichnungen, die jeder nachverfolgen kann."
+          ],
+          [
+            "p",
+            "Seit 1982 zahlt {Alaska|/timeline/#tl-alaska} jedem berechtigten Einwohner eine jährliche Dividende aus seinem Permanent Fund, der aus den Öleinnahmen des Bundesstaats aufgebaut wurde. Der Betrag wird jedes Jahr auf der offiziellen Website des Staates veröffentlicht; für 2026 sind es 1.200 $, einschließlich einer Energie-Entlastungszahlung von 200 $.[8]"
+          ],
+          [
+            "p",
+            "Seit November 2025 zahlen die {Marshallinseln|/timeline/#tl-marshall-islands} im Pazifik ihren im Land lebenden Bürgern rund 200 $ pro Quartal, aus einem Treuhandfonds, der im Rahmen ihres Compact mit den USA eingerichtet wurde. Die Beträge und die Zahl der Empfänger werden jedes Mal gemeldet."
+          ],
+          [
+            "p",
+            "Seit Februar 2026 zahlt {Südkorea|/timeline/#tl-korea-rural} jedem Einwohner einer Gruppe ländlicher Landkreise 150.000 Won im Monat in lokalen Gutscheinen, als Pilotprojekt des Ministeriums für Landwirtschaft, Ernährung und ländliche Angelegenheiten, das die Landkreise und die Ergebnisse veröffentlicht. Weil es nur einige Landkreise abdeckt und in Gutscheinen zahlt, zählt BIEN es nicht als Grundeinkommen im vollen Sinn, aber es ist eine echte Zahlung mit Aufzeichnungen."
+          ],
+          [
+            "o",
+            "Es gibt Gesetze und Haushaltsdokumente, und man kann herausfinden, wann, an wen und wie viel gezahlt wurde. So sieht eine echte Zahlung aus. NESARA und GESARA haben keinen Gesetzestext, keine Geldquelle und keine Aufzeichnung darüber, dass je etwas ausgezahlt wurde. Alles, was sie haben, ist die Ankündigung, dass es bald verkündet werde."
+          ],
+          [
+            "h",
+            "Vier Fragen, um sie zu unterscheiden"
+          ],
+          [
+            "p",
+            "Wenn Sie eine Geschichte über Geld für alle sehen, prüfen Sie diese vier Dinge."
+          ],
+          [
+            "p",
+            "1. Wer zahlt, und mit welchem Geld? Ist klar, wer zahlt, etwa ein Staat, ein Bundesstaat oder ein Fonds, und woher das Geld kommt?"
+          ],
+          [
+            "p",
+            "2. Müssen Sie etwas zahlen, bevor Sie etwas bekommen? Eine Registrierungsgebühr, eine Bearbeitungsgebühr, der Kauf von Währung oder Zertifikaten. Wenn ja, denken Sie zuerst an Betrug."
+          ],
+          [
+            "p",
+            "3. Gibt es offizielle Dokumente oder Aufzeichnungen? Ein Gesetz, einen Haushalt, eine Mitteilung der Regierung, eine Aufzeichnung der Zahlungen. Wenn es nur Bilder und Videos in sozialen Medien gibt, ist noch nichts geprüft."
+          ],
+          [
+            "p",
+            "4. Können sie ein Datum nennen? Wenn Sie immer wieder „die Verkündung steht kurz bevor“ oder „wir können es noch nicht sagen“ hören, wird dieser Tag wahrscheinlich nicht kommen."
+          ],
+          [
+            "p",
+            "Geben Sie niemandem die Seed-Phrase Ihrer Krypto-Wallet, egal aus welchem Grund. Wenn Sie glauben, ins Visier geraten zu sein, oder bereits gezahlt haben, wenden Sie sich an die Verbraucherschutzstelle vor Ort oder an die Polizei."
+          ],
+          [
+            "h",
+            "Um den Traum zu schützen"
+          ],
+          [
+            "o",
+            "Eine Welt, in der alle Geld bekommen, ohne Bedingungen: Der Traum selbst ist kein schlechter. Viele, die diese Beiträge teilen, hoffen auf genau das, worauf auch das Grundeinkommen hofft: einen Weg aus den Schulden und einen Boden unter allen. Diese Hoffnung verdient eine echte Antwort, keine Gebühr."
+          ],
+          [
+            "o",
+            "In Alaska, auf den Marshallinseln und in Südkorea nimmt dieser Traum langsam Gestalt als echte Programme an. Gerade deshalb wollen wir eine klare Linie ziehen zwischen ihm und den Geschichten, die auf ihm reiten, um Menschen ihr Geld abzunehmen."
+          ],
+          [
+            "p",
+            "Unsere {Zeitleiste der Grundeinkommensexperimente|/timeline/} zeigt, wann, an wen und wie viel gezahlt wurde, jeweils mit Quelle. Verfolgen wir gemeinsam weiter das Echte."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "«بمجرد الإعلان عن ⁦NESARA/GESARA⁩ ستُمحى كل الديون وسيحصل الجميع على ثروة». إن كنت تقضي وقتًا على وسائل التواصل الاجتماعي، فربما صادفت منشورات كهذه."
+          ],
+          [
+            "p",
+            "يتابع هذا الموقع الدخل الأساسي. وقد تبدو عبارة «مال يُدفع للجميع بلا شروط» شبيهة بالدخل الأساسي، لكن الأمرين مختلفان تمامًا. يتتبع هذا المقال أصل ⁦NESARA⁩ و⁦GESARA⁩، ويبيّن كيف نميّزهما من الدخل الأساسي الحقيقي."
+          ],
+          [
+            "h",
+            "بدأت بخطة إصلاح وضعها مهندس واحد"
+          ],
+          [
+            "p",
+            "كانت ⁦NESARA⁩، أي «قانون الأمن والتعافي الاقتصادي الوطني» (⁦National Economic Security and Recovery Act⁩)، في الأصل اسمًا لمقترح حقيقي. ففي أواخر الثمانينيات ومطلع التسعينيات وضع هارفي فرانسيس بارنارد (⁦Harvey Francis Barnard⁩)، وهو مستشار هندسي ومدرّس أمريكي، مجموعة من الإصلاحات الاقتصادية بمبادرة شخصية: استبدال ضريبة الدخل بضريبة مبيعات وطنية، وإلغاء الفائدة المركبة على القروض المضمونة مثل الرهون العقارية، والعودة إلى عملة مغطاة بالذهب والفضة.[1]"
+          ],
+          [
+            "p",
+            "في عام 1996 طبع بارنارد 1,000 نسخة من مقترحه «تجفيف المستنقع» (⁦Draining the Swamp⁩) وأرسلها إلى أعضاء الكونغرس.[1] ولم يتبنَّه أحد منهم مشروعَ قانون: فلم يُقدَّم ⁦NESARA⁩ إلى الكونغرس قط.[1] وفي عام 2000، بعد أن فشلت محاولاته لكسب دعم سياسي، وضع بارنارد المقترح في الملك العام ونشره على الإنترنت.[1]"
+          ],
+          [
+            "p",
+            "إلى هنا، القصة عادية: مقترح سياسي من مواطن واحد لم يصل إلى شيء."
+          ],
+          [
+            "h",
+            "حكاية إقراره سرًّا"
+          ],
+          [
+            "p",
+            "لكن القصة تغيّرت بعد ذلك بقليل. فقد بدأ شخص يسمّي نفسه «حمامة الوحدة» (⁦Dove of Oneness⁩) ينشر عن ⁦NESARA⁩ على الإنترنت، وتبيّن لاحقًا أنها شايني غودوين (⁦Shaini Goodwin⁩).[1] وكانت ادعاءاتها كالتالي:[1]"
+          ],
+          [
+            "p",
+            "أُقرّ ⁦NESARA⁩ في جلسة سرية للكونغرس في مارس 2000 ووقّعه الرئيس كلينتون."
+          ],
+          [
+            "p",
+            "وبسبب أمر حظر نشر من المحكمة العليا، لم يكن بوسع أحد أن يتحدث عنه."
+          ],
+          [
+            "p",
+            "وكان من المقرر تطبيقه في الساعة 10 صباحًا يوم 11 سبتمبر 2001، لكن بيانات المستفيدين دُمّرت في الهجمات."
+          ],
+          [
+            "p",
+            "وبمجرد الإعلان عنه، سيلغي جميع الديون الشخصية، ويلغي مصلحة الضرائب الداخلية، ويعلن السلام العالمي."
+          ],
+          [
+            "p",
+            "ذهبت رواية غودوين أبعد كثيرًا من مقترح بارنارد.[1] ونفى بارنارد نفسه أن يكون ⁦NESARA⁩ قد صار قانونًا، أو حتى حصل على رقم تتبع، وندّد بادعاءاتها بوصفها تضليلًا.[1] وظلت غودوين تقول إن الإعلان قريب، وروّجت للقصة حتى وفاتها في عام 2010.[1]"
+          ],
+          [
+            "h",
+            "مرتبطة باحتيال استثماري منذ البداية"
+          ],
+          [
+            "p",
+            "ما لا ينبغي إغفاله أن القصة كانت مرتبطة بالمال منذ بدايتها. فقد بدأت غودوين الحديث عن ⁦NESARA⁩ في سياق «أوميغا ترست» (⁦Omega Trust⁩)، وهو احتيال استثماري كان مؤسسه يُحاكَم آنذاك، وقالت إن مستثمري «أوميغا ترست» سيحصلون على عوائدهم بمجرد الإعلان عن ⁦NESARA⁩.[1] وقد أدارت «أوميغا ترست» احتيالًا من نوع «البنوك الممتازة» (⁦prime bank⁩) من 1994 إلى 2000، واعترف مؤسسها كلايد هود (⁦Clyde Hood⁩) بالذنب في عام 2001. وحين عرضت السلطات الفيدرالية تعويضات على ما يقدَّر بـ10,000 ضحية، رفضها كثيرون خوفًا من أن يخسروا العائد الذي كانوا لا يزالون ينتظرونه.[2]"
+          ],
+          [
+            "p",
+            "ويصف موقع ⁦Skeptoid⁩، الذي تتبّع القصة في عام 2014، غودوين بأنها كانت هي نفسها مستثمرة في «أوميغا»، ظلت تقول لزملائها المستثمرين إن عوائدهم قادمة، ثم طلبت لاحقًا المال من قرّائها. ويلخّص ما يجمع بين «أوميغا» و⁦NESARA⁩ و«إعادة تقييم» الدينار العراقي: إنها «تقايض مبالغ صغيرة من المال الآن بمبالغ هائلة لاحقًا».[3]"
+          ],
+          [
+            "o",
+            "فمنذ البداية إذن، استُخدمت قصة ⁦NESARA⁩ أيضًا لتفسير سبب عدم عودة المال، وللوعد بأنه سيعود يومًا ما لا محالة."
+          ],
+          [
+            "h",
+            "⁦GESARA⁩ و«الإعلان قريب»"
+          ],
+          [
+            "p",
+            "ثم بقيت القصة حيّة بتغيير شكلها. فـ⁦GESARA⁩، أي «قانون الأمن والإصلاح الاقتصادي العالمي» (⁦Global Economic Security and Reformation Act⁩)، اسم لاحق بدأ الأتباع يستخدمونه في منتصف العقد الثاني من الألفية لتوسيع ⁦NESARA⁩ إلى العالم كله.[1] وهو ليس قانونًا في أي بلد كذلك. وفي عام 2022 وصفت ⁦Bellingcat⁩ ⁦NESARA/GESARA⁩ بأنها «جدّ» حركة ⁦QAnon⁩، وذكرت أن بعض أتباع ⁦QAnon⁩ أحيوها مع تراجع الحركة.[1] وكثيرًا ما تجمعها المنشورات اليوم مع أسماء أخرى، مثل «النظام المالي الكمّي» (⁦QFS⁩) أو إعادة تقييم وشيكة للدينار العراقي."
+          ],
+          [
+            "p",
+            "في نوفمبر 2025 انتشر على ⁦X⁩ مقطع فيديو بدا أنه تقرير من ⁦Fox News⁩ عن توقيع الرئيس ترامب أمرًا تنفيذيًا يجعل ⁦NESARA⁩ السياسة الرسمية للبلاد. ولم يجد موقع تدقيق الحقائق ⁦Lead Stories⁩ أي تقرير كهذا على موقع ⁦Fox News⁩، ولا أي إعلان كهذا من البيت الأبيض. ويبدو أن الفيديو صُنع من لقطات مؤتمر صحفي في سبتمبر 2025، والأرجح أنه تزييف بالذكاء الاصطناعي.[4]"
+          ],
+          [
+            "o",
+            "بعد خمسة وعشرين عامًا، الشيء الوحيد الذي لم يتغير هو «الإعلان قريب»."
+          ],
+          [
+            "h",
+            "الضرر الحقيقي: ادفع أولًا، ولا يعود المال"
+          ],
+          [
+            "p",
+            "ما يجعل هذه القصة مزعجة أنها لا تبقى مجرد شائعة، بل تصبح مدخلًا لأخذ أموال الناس."
+          ],
+          [
+            "p",
+            "ومن أشكالها الشائعة بيع العملات الأجنبية: يقول البائعون إن قيمة الدينار العراقي ستتضاعف قريبًا مرات عديدة، ويبيعون أوراقًا نقدية قليلة القيمة بسعر مرتفع.[3] وفي الولايات المتحدة عام 2018، أدانت هيئة محلفين فيدرالية الشريكين المالكين ومدير العمليات في ⁦Sterling Currency Group⁩، التي كانت يومًا من أكبر بائعي الدينار العراقي في البلاد، بالاحتيال البريدي والاحتيال الإلكتروني. وقال الادعاء إنهم نشروا ادعاءات كاذبة بأن الدينار على وشك إعادة التقييم؛ وبين عامي 2010 و2015 جمعت الشركة أكثر من ⁦$600⁩ مليون من بيع الدينار وعملات أخرى.[5]"
+          ],
+          [
+            "p",
+            "أسعار الصرف تعلنها البنوك المركزية، لا المنشورات. ففي يونيو 2026 نفى البنك المركزي العراقي بشدة تقارير عن نيته تغيير سعر صرف الدينار. وكانت تلك الشائعة، التي نُشرت بوثيقة مزوّرة، تدّعي تغييرًا إلى 1,600 دينار للدولار الأمريكي، وطلب البنك من الناس التحقق من المعلومات عبر مصادره الرسمية.[6]"
+          ],
+          [
+            "p",
+            "وتطلب أشكال أخرى المال، أو مفاتيحه، قبل أن يُدفع أي شيء. احذر طلبات كهذه:"
+          ],
+          [
+            "p",
+            "«رسوم تسجيل» أو «رسوم معالجة» لتلقي دفعة من ⁦NESARA⁩."
+          ],
+          [
+            "p",
+            "«محفظة جاهزة لـ⁦QFS⁩» تتطلب عبارة الاسترداد (⁦seed phrase⁩) لمحفظتك المشفّرة."
+          ],
+          [
+            "p",
+            "«شهادات ذهب وفضة» أو «سندات» تبيعها شركة لا يمكنك التعرف عليها، ومدعومة بشيء لا يمكنك التحقق منه."
+          ],
+          [
+            "o",
+            "كلها على الشكل نفسه: تدفع قبل أن تتلقى."
+          ],
+          [
+            "h",
+            "الدخل الأساسي الحقيقي يمكن التحقق منه"
+          ],
+          [
+            "p",
+            "فما الذي يميّز الدخل الأساسي الحقيقي؟ تعرّف «شبكة الدخل الأساسي العالمية» (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُقدَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو اشتراط للعمل»: دورية، ونقدية، وفردية، وشاملة، وغير مشروطة.[7]"
+          ],
+          [
+            "p",
+            "والمدفوعات الحقيقية تترك سجلات يمكن لأي أحد أن يتتبعها."
+          ],
+          [
+            "p",
+            "منذ 1982 تدفع {ألاسكا|/timeline/#tl-alaska} عائدًا سنويًا من صندوقها الدائم، المبني من عائدات النفط في الولاية، لكل مقيم مستحق. ويُنشر المبلغ كل عام على الموقع الرسمي للولاية؛ وهو لعام 2026 ⁦$1,200⁩، بما في ذلك دفعة إغاثة للطاقة قدرها ⁦$200⁩.[8]"
+          ],
+          [
+            "p",
+            "ومنذ نوفمبر 2025 تدفع {جزر مارشال|/timeline/#tl-marshall-islands} في المحيط الهادئ نحو ⁦$200⁩ كل ربع سنة لمواطنيها المقيمين في البلاد، من صندوق ائتماني أُنشئ بموجب اتفاقها مع الولايات المتحدة. وتُنشر المبالغ وعدد المستفيدين في كل مرة."
+          ],
+          [
+            "p",
+            "ومنذ فبراير 2026 تدفع {كوريا الجنوبية|/timeline/#tl-korea-rural} 150,000 وون شهريًا في صورة قسائم شرائية محلية لكل مقيم في مجموعة من المقاطعات الريفية، في إطار تجربة تديرها وزارة الزراعة والغذاء والشؤون الريفية، التي تنشر أسماء المقاطعات والنتائج. ولأنها تشمل بعض المقاطعات فقط وتدفع بالقسائم، لا تعدّها ⁦BIEN⁩ دخلًا أساسيًا بالمعنى الكامل، لكنها دفعة حقيقية لها سجل."
+          ],
+          [
+            "o",
+            "هناك قوانين ووثائق ميزانية، ويمكنك أن تعرف متى دُفع، ولمن، وكم. هكذا تبدو الدفعة الحقيقية. أما ⁦NESARA⁩ و⁦GESARA⁩ فلا نص قانونيًا لهما، ولا مصدر تمويل، ولا سجل لأي دفعة. كل ما لديهما هو القول إنه سيُعلن عنهما قريبًا."
+          ],
+          [
+            "h",
+            "أربعة أسئلة للتمييز بينهما"
+          ],
+          [
+            "p",
+            "حين ترى قصة عن مال سيُدفع للجميع، تحقّق من هذه الأمور الأربعة."
+          ],
+          [
+            "p",
+            "1. من يدفع، ومن أي مال؟ هل من الواضح من يدفع، كدولة أو ولاية أو صندوق، ومن أين يأتي المال؟"
+          ],
+          [
+            "p",
+            "2. هل عليك أن تدفع شيئًا قبل أن تتلقى؟ رسوم تسجيل، أو رسوم معالجة، أو شراء عملة أو شهادات. إن كان الأمر كذلك، فاشتبه في الاحتيال أولًا."
+          ],
+          [
+            "p",
+            "3. هل توجد وثائق أو سجلات رسمية؟ قانون، أو ميزانية، أو إعلان حكومي، أو سجل للمدفوعات. إن لم يكن هناك سوى صور ومقاطع فيديو على وسائل التواصل الاجتماعي، فلم يُتحقَّق من شيء بعد."
+          ],
+          [
+            "p",
+            "4. هل يستطيعون تحديد موعد؟ إن ظللت تسمع «الإعلان قريب» أو «لا يمكننا القول بعد»، فمن غير المرجح أن يأتي ذلك اليوم."
+          ],
+          [
+            "p",
+            "لا تُخبر أحدًا أبدًا بعبارة الاسترداد لمحفظتك المشفّرة، مهما كان السبب. وإن ظننت أنك مستهدف، أو كنت قد دفعت بالفعل، فتواصل مع جهة حماية المستهلك المحلية أو مع الشرطة."
+          ],
+          [
+            "h",
+            "لكي نحمي الحلم"
+          ],
+          [
+            "o",
+            "عالم يُدفع فيه المال للجميع بلا شروط: الحلم في ذاته ليس سيئًا. فكثير ممن يشاركون هذه المنشورات يأملون تمامًا ما يأمله الدخل الأساسي: مخرجًا من الديون وحدًّا أدنى يقف عليه الجميع. وهذا الأمل يستحق جوابًا حقيقيًا، لا رسومًا."
+          ],
+          [
+            "o",
+            "في ألاسكا وجزر مارشال وكوريا الجنوبية، يتخذ هذا الحلم شكله ببطء في برامج حقيقية. ولهذا تحديدًا نريد أن نرسم خطًّا واضحًا بينه وبين القصص التي تركب عليه لتأخذ أموال الناس."
+          ],
+          [
+            "p",
+            "يعرض {خطنا الزمني لتجارب الدخل الأساسي|/timeline/} متى دُفع، ولمن، وكم، مع مصدر لكل منها. لنواصل معًا متابعة الشيء الحقيقي."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Wikipedia — NESARA",
+          "url": "https://en.wikipedia.org/wiki/NESARA"
+        },
+        {
+          "n": 2,
+          "label": "Wikipedia — Omega Trust",
+          "url": "https://en.wikipedia.org/wiki/Omega_Trust"
+        },
+        {
+          "n": 3,
+          "label": "Skeptoid — The NESARA Scam: White Knights, Dark Forces and Endless Prosperity (24 Feb 2014)",
+          "url": "https://skeptoid.com/blog/2014/02/24/the-nesara-scam"
+        },
+        {
+          "n": 4,
+          "label": "Lead Stories — Fact Check: Fox News Aired NO Report That Trump Declared ‘NESARA/GESARA’ Financial System Law Of The Land (17 Nov 2025)",
+          "url": "https://leadstories.com/hoax-alert/2025/11/fact-check-fox-news-did-not-air-report-on-trump-signing-nesara-into-law.html"
+        },
+        {
+          "n": 5,
+          "label": "Iraq Business News — Convictions in $600m Dinar Fraud (22 Nov 2018)",
+          "url": "https://www.iraq-businessnews.com/2018/11/22/convictions-in-600m-dinar-fraud/"
+        },
+        {
+          "n": 6,
+          "label": "Iraq Business News — Iraqi Central Bank Rejects Rumours of New Dinar Rate (18 Jun 2026)",
+          "url": "https://www.iraq-businessnews.com/2026/06/18/iraqi-central-bank-rejects-rumours-of-new-dinar-rate/"
+        },
+        {
+          "n": 7,
+          "label": "Basic Income Earth Network (BIEN) — About Basic Income",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 8,
+          "label": "Alaska Department of Revenue — Permanent Fund Dividend (2026 PFD amount)",
+          "url": "https://pfd.alaska.gov/"
+        }
+      ]
+    },
     {
       "id": "public-benefit-fund",
       "date": "2026-11-03",
@@ -10622,7 +12061,8 @@ module.exports = {
       "date": "2026-11-02",
       "related": [
         "universal-high-income",
-        "your-own-basic-income"
+        "your-own-basic-income",
+        "nesara-gesara-basic-income"
       ],
       "title": {
         "ja": "「ベーシックインカム」と呼ばれたもの：タイの1万バーツはどうなったか",

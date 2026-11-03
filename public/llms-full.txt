@@ -813,6 +813,122 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### NESARA/GESARA and basic income: telling real payments to everyone from promises that never arrive
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/nesara-gesara-basic-income/
+- Published: 2026-11-03
+
+“Once NESARA/GESARA is announced, every debt will be wiped out and everyone will receive a fortune.” If you spend time on social media, you may have come across posts like this.
+
+This site follows basic income. “Money paid to everyone, with no conditions” can sound like basic income, but the two are entirely different things. This essay traces where NESARA and GESARA came from and sets out how to tell them apart from a real basic income.
+
+#### It began as one engineer’s reform plan
+
+NESARA, the National Economic Security and Recovery Act, was originally the name of a real proposal. In the late 1980s and early 1990s, Harvey Francis Barnard, an American engineering consultant and teacher, drew up a set of economic reforms on his own: replace the income tax with a national sales tax, abolish compound interest on secured loans such as mortgages, and return to a currency backed by gold and silver.[1]
+
+In 1996 Barnard printed 1,000 copies of his proposal, Draining the Swamp, and sent them to members of Congress.[1] None of them took it up as a bill: NESARA was never introduced in Congress.[1] In 2000, after his attempts to win political support had failed, Barnard released the proposal into the public domain and published it online.[1]
+
+Up to this point, it is an ordinary story: one citizen’s policy proposal that did not get anywhere.
+
+#### The story that it had passed in secret
+
+The story changed soon after. Someone calling themselves “Dove of Oneness” began posting about NESARA online; this was later identified as Shaini Goodwin.[1] Her claims went like this:[1]
+
+NESARA had been passed in a secret session of Congress in March 2000 and signed by President Clinton.
+
+A Supreme Court gag order meant that nobody could speak about it.
+
+It was to be implemented at 10 a.m. on 11 September 2001, but the data on the beneficiaries was destroyed in the attacks.
+
+Once announced, it would cancel all personal debts, abolish the Internal Revenue Service and declare world peace.
+
+Goodwin’s version went far beyond Barnard’s proposal.[1] Barnard himself denied that NESARA had ever become law, or even been given a tracking number, and condemned her claims as disinformation.[1] Goodwin kept saying the announcement was near, and promoted the story until her death in 2010.[1]
+
+#### Tied to an investment fraud from the start
+
+What should not be missed is that the story was tied to money from the very beginning. Goodwin began talking about NESARA in connection with Omega Trust, an investment fraud whose creator was on trial at the time, and said that Omega Trust investors would receive their returns once NESARA was announced.[1] Omega Trust ran a “prime bank” fraud from 1994 to 2000, and its founder, Clyde Hood, pleaded guilty in 2001. When federal authorities offered restitution to an estimated 10,000 victims, many declined, for fear of losing the payout they were still waiting for.[2]
+
+Skeptoid, which traced the story in 2014, describes Goodwin as an Omega investor herself, who kept telling fellow investors that their payouts were coming and later asked her readers for money. It sums up what Omega, NESARA and the Iraqi dinar “revaluation” have in common: they “trade small amounts of money now for vast amounts of money later”.[3]
+
+Opinion: From the start, then, the NESARA story was also used to explain why the money had not come back, and to promise that one day it surely would.
+
+#### GESARA, and “the announcement is near”
+
+The story then survived by changing shape. GESARA, the Global Economic Security and Reformation Act, is a later name that followers began using in the mid-2010s to extend NESARA to the whole world.[1] It is not a law in any country either. In 2022, Bellingcat called NESARA/GESARA a “grandfather” of QAnon and reported that some QAnon followers revived it as QAnon declined.[1] Posts today often bundle it with other names, such as a “quantum financial system” (QFS) or a coming revaluation of the Iraqi dinar.
+
+In November 2025, a video that appeared to show a Fox News report of President Trump signing an executive order making NESARA the official policy of the nation spread on X. The fact-checker Lead Stories found no such report on the Fox News website and no such declaration from the White House. The video appears to have been made from footage of a September 2025 press conference and is likely an AI fake.[4]
+
+Opinion: Twenty-five years on, the only thing that has not changed is “the announcement is near”.
+
+#### The real harm: pay first, and the money does not come back
+
+What makes this story troublesome is that it does not stay a rumour. It becomes a way in for taking people’s money.
+
+A common form is selling foreign currency: sellers say the Iraqi dinar will soon be worth many times more, and sell notes of little value at a high price.[3] In the United States in 2018, a federal jury convicted the co-owners and chief operating officer of Sterling Currency Group, once one of the country’s largest sellers of Iraqi dinar, of mail and wire fraud. Prosecutors said they spread false claims that the dinar was about to revalue; between 2010 and 2015 the firm took in over $600 million from selling the dinar and other currencies.[5]
+
+Exchange rates are announced by central banks, not by posts. In June 2026 the Central Bank of Iraq firmly denied reports that it intends to change the dinar’s exchange rate. That rumour, spread with a forged document, claimed a change to 1,600 dinars per US dollar, and the bank asked people to check information through its own official sources.[6]
+
+Other forms ask for money, or for the keys to it, before anything is paid out. Watch for requests like these:
+
+A “registration fee” or “processing fee” to receive a NESARA payment.
+
+A “QFS-ready wallet” that needs the seed phrase of your crypto wallet.
+
+“Gold and silver certificates” or “bonds” sold by a company you cannot identify, backed by something you cannot check.
+
+Opinion: All of them have the same shape: you pay before you receive.
+
+#### Real basic income can be checked
+
+So how does a real basic income differ? The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”: periodic, cash, individual, universal and unconditional.[7]
+
+And real payments leave records that anyone can follow.
+
+Since 1982, Alaska (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-alaska) has paid an annual dividend from its Permanent Fund, built from the state’s oil revenue, to every eligible resident. The amount is published every year on the state’s official site; for 2026 it is $1,200, including a $200 energy relief payment.[8]
+
+Since November 2025, the Marshall Islands (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-marshall-islands) in the Pacific has paid about $200 every quarter to its citizens living in the country, from a trust fund set up under its compact with the United States. The amounts and the number of people paid are reported each time.
+
+Since February 2026, South Korea (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-korea-rural) has paid 150,000 won a month in local gift certificates to every resident of a group of rural counties, as a pilot run by the Ministry of Agriculture, Food and Rural Affairs, which publishes the counties and the results. Because it covers only some counties and pays in vouchers, BIEN does not count it as basic income in the full sense, but it is a real payment with a record.
+
+Opinion: There are laws and budget documents, and you can find out when, to whom and how much was paid. That is what a real payment looks like. NESARA and GESARA have no legal text, no source of funds and no record of anything being paid. All they have is the word that it will be announced soon.
+
+#### Four questions to tell them apart
+
+When you see a story about money being paid to everyone, check these four things.
+
+1. Who pays, and with what money? Is it clear who is paying, such as a country, a state or a fund, and where the money comes from?
+
+2. Do you have to pay anything before you receive? A registration fee, a processing fee, buying currency or certificates. If so, suspect a scam first.
+
+3. Are there official documents or records? A law, a budget, a government announcement, a record of payments. If all there is are images and videos on social media, nothing has been checked yet.
+
+4. Can they name a date? If you keep hearing “the announcement is near” or “we can’t say yet”, that day is unlikely to come.
+
+Never tell anyone the seed phrase of your crypto wallet, whatever the reason. If you think you have been targeted, or have already paid, contact your local consumer protection agency or the police.
+
+#### To protect the dream
+
+Opinion: A world where everyone is paid money, with no conditions: the dream itself is not a bad one. Many people who share these posts are hoping for exactly what basic income hopes for, a way out of debt and a floor under everyone. That hope deserves a real answer, not a fee.
+
+Opinion: In Alaska, the Marshall Islands and South Korea, that dream is slowly taking shape as real programmes. That is exactly why we want to draw a clear line between it and the stories that ride on it to take people’s money.
+
+Our timeline of basic income experiments (https://neteru-nyukin.eltociear.workers.dev/timeline/) sets out when, to whom and how much was paid, each with a source. Let’s keep following the real thing together.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
+
+Sources:
+
+1. Wikipedia — NESARA: https://en.wikipedia.org/wiki/NESARA
+2. Wikipedia — Omega Trust: https://en.wikipedia.org/wiki/Omega_Trust
+3. Skeptoid — The NESARA Scam: White Knights, Dark Forces and Endless Prosperity (24 Feb 2014): https://skeptoid.com/blog/2014/02/24/the-nesara-scam
+4. Lead Stories — Fact Check: Fox News Aired NO Report That Trump Declared ‘NESARA/GESARA’ Financial System Law Of The Land (17 Nov 2025): https://leadstories.com/hoax-alert/2025/11/fact-check-fox-news-did-not-air-report-on-trump-signing-nesara-into-law.html
+5. Iraq Business News — Convictions in $600m Dinar Fraud (22 Nov 2018): https://www.iraq-businessnews.com/2018/11/22/convictions-in-600m-dinar-fraud/
+6. Iraq Business News — Iraqi Central Bank Rejects Rumours of New Dinar Rate (18 Jun 2026): https://www.iraq-businessnews.com/2026/06/18/iraqi-central-bank-rejects-rumours-of-new-dinar-rate/
+7. Basic Income Earth Network (BIEN) — About Basic Income: https://basicincome.org/about-basic-income/
+8. Alaska Department of Revenue — Permanent Fund Dividend (2026 PFD amount): https://pfd.alaska.gov/
+
 ### When an AI company sets aside shares: Anthropic’s Public Benefit Fund and basic income
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
@@ -1043,6 +1159,8 @@ Opinion: We are not laughing at Thailand’s plan. Around 17.5 million people re
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/your-own-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/nesara-gesara-basic-income/
 
 Sources:
 
@@ -1448,7 +1566,7 @@ The original Duniter node, written in TypeScript, that has run the Ğ1 libre cur
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-02
+- Last commit: 2026-11-03
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -1597,7 +1715,7 @@ Code of the NGO Social Income, which turns donations into an unconditional basic
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-11-02
+- Last commit: 2026-11-03
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
