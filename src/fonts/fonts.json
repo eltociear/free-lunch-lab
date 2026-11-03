@@ -655,6 +655,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-4ff0e616d0.woff2",
     "chars": "ゥ傷医属層極潤療磨胆裕護賢述"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-4d3c25f06f.woff2",
+    "chars": "山"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-164f4aa2b8.woff2",
+    "chars": "倫否徳怠惰懐拾波演盤秋臨講軸遣"
    }
   ],
   "ja:body:700": [
@@ -797,6 +805,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-912e5837a8.woff2",
     "chars": "ゥ傷医属層極潤療磨胆裕護賢述"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-e05f956689.woff2",
+    "chars": "山"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-399ab45939.woff2",
+    "chars": "倫否徳怠惰懐拾波演盤秋臨講軸遣"
    }
   ],
   "ja:display": [
@@ -863,6 +879,10 @@
    {
     "file": "dela-gothic-one-400-ja-fe70e721d9.woff2",
     "chars": "企先基差持業止道"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-2bc149d8d6.woff2",
+    "chars": "山記追"
    }
   ],
   "ja:dot": [
@@ -1043,6 +1063,10 @@
    {
     "file": "noto-sans-sc-400-zh-fd18ef2176.woff2",
     "chars": "丝伤倾厄坏堵她孟席戴抵拜擦碑聪胆莉薄虑誉豪责迅迈酌顾"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-275a89f3e4.woff2",
+    "chars": "伦佣吻彩恶惰懒揽欠演焦秋轴辩闪"
    }
   ],
   "zh:body:700": [
@@ -1181,6 +1205,10 @@
    {
     "file": "noto-sans-sc-700-zh-528e79a826.woff2",
     "chars": "丝伤倾厄坏堵她孟席戴抵拜擦碑聪胆莉薄虑誉豪责迅迈酌顾"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-ce38eae6e1.woff2",
+    "chars": "伦佣吻彩恶惰懒揽欠演焦秋轴辩闪"
    }
   ],
   "zh:display": [
@@ -1243,6 +1271,10 @@
    {
     "file": "noto-sans-sc-900-zh-5c8f528bd9.woff2",
     "chars": "下司外所拿权界观"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-fa3f2ba75d.woff2",
+    "chars": "峰补"
    }
   ],
   "zh:dot": [

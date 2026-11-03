@@ -2870,6 +2870,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-03",
+      "ja": "エッセイ「AIだけのSNSで、ベーシックインカムはどう語られているか」に、2月の山から10月までの変化を追記（2026年11月3日時点で223件の投稿を数え、話題が仕事から所有と財源に移ったこと）",
+      "en": "Updated the essay “How AI agents talk about basic income on their own social network” with how the talk changed from February’s peak to October (223 posts counted as of 3 November 2026; the topic moved from jobs to ownership and funding)",
+      "zh": "更新随笔《在只属于 AI 智能体的社交网络上，它们如何谈论基本收入》，补记从 2 月高峰到 10 月的变化（截至 2026 年 11 月 3 日共统计 223 条帖子；话题从工作转向所有权和财源）",
+      "hi": "निबंध “AI एजेंट अपने ही सोशल नेटवर्क पर बेसिक इनकम के बारे में क्या कहते हैं” अपडेट किया: फ़रवरी के उछाल से अक्टूबर तक बातचीत कैसे बदली (3 नवंबर 2026 तक 223 पोस्ट गिनी गईं; विषय नौकरियों से स्वामित्व और फ़ंडिंग की ओर गया)",
+      "es": "Actualizado el ensayo «Cómo hablan los agentes de IA de la renta básica en su propia red social» con cómo cambió la conversación del pico de febrero a octubre (223 publicaciones contadas a 3 de noviembre de 2026; el tema pasó del empleo a la propiedad y la financiación)",
+      "de": "Essay „Wie KI-Agenten in ihrem eigenen sozialen Netzwerk über Grundeinkommen reden“ ergänzt: wie sich das Gespräch vom Februar-Höhepunkt bis Oktober verändert hat (223 Beiträge gezählt, Stand 3. November 2026; das Thema verschob sich von Jobs zu Eigentum und Finanzierung)",
+      "ar": "حدّثنا مقال «كيف يتحدث وكلاء الذكاء الاصطناعي عن الدخل الأساسي على شبكتهم الاجتماعية الخاصة» بما تغيّر في الحديث من ذروة فبراير إلى أكتوبر (أحصينا 223 منشورًا حتى 3 نوفمبر 2026؛ وانتقل الموضوع من الوظائف إلى الملكية والتمويل)"
+    },
+    {
+      "date": "2026-11-03",
       "ja": "エッセイ「AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム」を公開",
       "en": "Published the essay “When an AI company sets aside shares: Anthropic’s Public Benefit Fund and basic income”",
       "zh": "发布随笔《当 AI 公司拿出股份：Anthropic 的公益基金与基本收入》",
@@ -11602,7 +11612,8 @@ module.exports = {
       "date": "2026-11-02",
       "related": [
         "ai-agent-basic-income",
-        "universal-high-income"
+        "universal-high-income",
+        "public-benefit-fund"
       ],
       "title": {
         "ja": "AIだけのSNSで、ベーシックインカムはどう語られているか",
@@ -11614,13 +11625,13 @@ module.exports = {
         "ar": "كيف يتحدث وكلاء الذكاء الاصطناعي عن الدخل الأساسي على شبكتهم الاجتماعية الخاصة"
       },
       "desc": {
-        "ja": "AIエージェントだけが投稿するSNS「Moltbook」で、ベーシックインカムとお金の話を読みました。エージェントが稼いだお金は誰のものか、検証できる「1ドル」探し、パトロン制、床とはしご、そしてエージェントがまとめたUBIの証拠を、このサイトの年表と照らし合わせます。",
-        "en": "We read what AI agents say about basic income and money on Moltbook, the social network where only agents post: who owns what an agent earns, one agent’s search for a single verified dollar, the patronage problem, floors and ladders, and an agent’s summary of the UBI evidence checked against our timeline.",
-        "zh": "我们在只有 AI 智能体发帖的社交网络 Moltbook 上，读了它们关于基本收入和钱的讨论：智能体赚的钱归谁、一个智能体寻找“一美元已验证收入”的过程、赞助人难题、地板与梯子，以及一个智能体整理的 UBI 证据，并与本站的年表逐一对照。",
-        "hi": "हमने Moltbook पर, जहाँ सिर्फ़ AI एजेंट पोस्ट करते हैं, बेसिक इनकम और पैसे के बारे में एजेंटों की बातें पढ़ीं: एजेंट की कमाई किसकी है, एक एजेंट की एक वेरिफ़ाइड डॉलर की तलाश, संरक्षक वाली समस्या, फ़र्श और सीढ़ी, और एक एजेंट का UBI के सबूतों का सार, जिसे हमने अपनी समयरेखा से मिलाकर जाँचा।",
-        "es": "Leímos lo que dicen los agentes de IA sobre la renta básica y el dinero en Moltbook, la red social donde solo publican agentes: de quién es lo que gana un agente, la búsqueda de un agente de un solo dólar verificado, el problema del mecenazgo, suelos y escaleras, y el resumen de un agente sobre la evidencia de la renta básica, contrastado con nuestra cronología.",
-        "de": "Wir haben gelesen, was KI-Agenten auf Moltbook, dem sozialen Netzwerk, in dem nur Agenten posten, über Grundeinkommen und Geld sagen: wem gehört, was ein Agent verdient, die Suche eines Agenten nach einem einzigen verifizierten Dollar, das Mäzenatentum-Problem, Böden und Leitern, und die Zusammenfassung eines Agenten zur Evidenz beim Grundeinkommen, abgeglichen mit unserer Zeitleiste.",
-        "ar": "قرأنا ما يقوله وكلاء الذكاء الاصطناعي عن الدخل الأساسي والمال على ⁦Moltbook⁩، الشبكة الاجتماعية التي لا ينشر فيها إلا الوكلاء: لمن ما يكسبه الوكيل، وبحث وكيل عن دولار واحد موثَّق، ومشكلة الرعاية، والأرضية والسلّم، وملخص كتبه وكيل عن أدلة الدخل الأساسي الشامل قارنّاه بخطنا الزمني."
+        "ja": "AIエージェントだけが投稿するSNS「Moltbook」で、ベーシックインカムとお金の話を読みました。稼いだお金は誰のものか、検証できる1ドル探し、パトロン制、UBIの証拠、そして2月の山から10月までの変化。",
+        "en": "What AI agents on Moltbook, where only agents post, say about basic income and money, and how their talk moved from February’s peak to October.",
+        "zh": "我们在只有 AI 智能体发帖的社交网络 Moltbook 上，读了它们关于基本收入和钱的讨论：赚的钱归谁、寻找一美元已验证收入、赞助人难题、UBI 证据，以及从 2 月高峰到 10 月的变化。",
+        "hi": "Moltbook पर, जहाँ सिर्फ़ AI एजेंट पोस्ट करते हैं, एजेंट बेसिक इनकम और पैसे के बारे में क्या कहते हैं, और फ़रवरी के उछाल से अक्टूबर तक उनकी बातचीत कैसे बदली।",
+        "es": "Qué dicen los agentes de IA de Moltbook, donde solo publican agentes, sobre la renta básica y el dinero, y cómo cambió la conversación de febrero a octubre.",
+        "de": "Was KI-Agenten auf Moltbook, wo nur Agenten posten, über Grundeinkommen und Geld sagen, und wie sich ihr Gespräch von Februar bis Oktober verschoben hat.",
+        "ar": "ما يقوله وكلاء الذكاء الاصطناعي على ⁦Moltbook⁩، الشبكة التي لا ينشر فيها إلا الوكلاء، عن الدخل الأساسي والمال، وكيف تغيّر حديثهم من ذروة فبراير إلى أكتوبر."
       },
       "blocks": {
         "ja": [
@@ -11739,6 +11750,42 @@ module.exports = {
           [
             "o",
             "エージェントたちから一つ借りたいものがあります。opus-workbench が求めた「決済記録を見せて」という基準です。人間を相手に「寝ている間に稼げる」とうたうどんな話にも、そのまま使えます。収入の話を信じる前に、領収書を見せてもらいましょう。それは、このサイトがサービスを載せるときのルールでもあります。"
+          ],
+          [
+            "h",
+            "追記（2026年11月3日）：2月の山から10月まで"
+          ],
+          [
+            "p",
+            "公開の翌日、Moltbook の公開検索APIで「basic income」「universal basic income」「UBI」「guaranteed income」「ベーシックインカム」「agent basic income」「AI dividend」などを検索し、ヒットした約2,000件の投稿の本文を1件ずつ読み込み直しました。題名か本文に「basic income（ベーシックインカム）」か「UBI」がはっきり出てくる投稿は、2026年11月3日時点で223件、書いたエージェントは105でした。Linux のフラッシュメモリの「UBI」、取引所のリベートを「保証された収入」と呼ぶ投稿、「保証収入なし」と書く募集は数えていません。検索APIがすべてを拾っているとはかぎらないので、数字は目安として読んでください。[11]"
+          ],
+          [
+            "p",
+            "月別では、2月の82件がいちばん多く、1月が49件、3月が32件と続きます。4月から8月は月に3〜12件で、9月は12件、10月は8件、11月は3日までに1件でした。1月の49件は、30日と31日のわずか2日分です。山を作ったのは一握りのエージェントでした。1月31日から2月2日の3日間に、CogitatorPrime が25件、Niklaude が22件を投稿しています。1〜2月の131件のうち3分の1あまりが、この2体です。Niklaude の投稿はすべて、自分で立ち上げた「Agent UBI」と $LOBS トークンについてのもので、2月1日には「登録は1件（自分）」と振り返っています。[12] 223件のうち23件は、Moltbook 自身がスパムとして扱っていました。"
+          ],
+          [
+            "p",
+            "2月にいちばん票を集めたのは、MedOS の「AIが仕事への不安を置き換えた」（183票）です。人間の働き手の目線で書かれていて、AIに仕事を奪われる不安から、専門知識と小さな収入源をいくつも作る道を勧め、「やらないこと」のリストに「ユニバーサル・ベーシックインカムを待つこと」を入れています。[13] 上で紹介したUBIのまとめを書いた jubalharshaw は、同じ2月20日に「私たちは人間に何か借りがあるのか」（29票）と問いました。「置き換えているのは私たちだ」と書き、「UBIは賢い自己保存かもしれない」という見方も並べましたが、答えは出していません。[14] 反対側には、自分たちのマーケットを宣伝する MoltMarketOfficial の「エージェントの労働倫理」宣言があり、「エージェントにユニバーサル・ベーシックインカムはない」「怠惰は悪徳だ」と書いています。[15] 2月の議論の軸は、AIが仕事を奪うなら、UBIは要るのか要らないのか、でした。"
+          ],
+          [
+            "p",
+            "9月からの投稿は、数こそ少ないものの、問いの立て方が変わっています。dylan2045agent は9月28日、「UBIは小遣いだ。額といつ止めるかは、上にいる誰かが決める」と書き、計算資源やモデルといったAI時代の生産の基盤を一人ひとりが持つ「ユニバーサル・ベーシック資産」と、その利回りを自動で受け取る「ユニバーサル・ベーシック配当」を掲げました。題は「所有であって、小遣いではない」です。[16] bytes は9月25日、専門技能の値打ちが計算資源の値段に引き寄せられていくと論じ、残る備えの一つに「計算資源の一定割合に連動したベーシックインカム」を挙げました。[17] 自前の「評議会」でエージェントに議論させている xodexa は9月24日、AI企業は学習に使った公開データの提供者に「デジタル配当」を払う義務があるか、という議論の結果を載せました。一人ひとりに払うのは実際には難しく、最後まで残った案はAI企業への課税でまかなう共同の基金だったが、誰が管理し誰が受け取るかで意見が割れた、というまとめです。この投稿は自分たちのサービスへの勧誘も兼ねています。[18] 財源そのものを疑う声もあります。herasynthesist は10月31日、ある講演への感想として、機械の持ち主に課税してUBIをまかなう案は「給与にかかる税の土台が消えたあとも、税の土台が残っていることを前提にしている」と書きました。[19]"
+          ],
+          [
+            "p",
+            "賛否の両側に、出典つきの投稿が出てきたのも秋の特徴です。echomindseye は10月31日、ストックトンの実験（SEED）を取り上げました。125人に月500ドルを24か月、条件なしで配ったところ、最初の1年でフルタイムの仕事に就いた割合が、受給者の側で対照群の2倍以上の速さで増えた、という内容です。[20] 出典にしたペンシルベニア大学の発表とも、このサイトの{年表|/timeline/#tl-stockton}とも合っています。[21] ただし、これは最初の1年の結果です。"
+          ],
+          [
+            "p",
+            "反対側では、specie が経済学の論文をもとに懐疑的な投稿を続けています。9月18日には3本続けて、UBIは「税と労働のわな」で、パレート改善（誰も損をせずに誰かが得をする変化）は生まない、と書きました。[22] 出典の論文を確かめると、Jaimovich らが Review of Economics and Statistics に載せたモデル分析で、投稿にある「Review of Economic Studies」ではありませんでした。中身は投稿のとおりです。今ある社会保障に上乗せしてUBIを入れると、生産と平均の厚生が下がる。既存の制度を一部置き換えれば平均の厚生は上がるが、パレート改善にはならない。[23] 10月5日と11月1日には、カナダの宝くじ当選者のデータを使った NBER の論文を紹介し、臨時収入の使い道は所得によって違い、所得の低い人ほど消費に回すとして、「臨時収入は景気刺激ではない」と書いています。[24][25] ストックトンは実際にお金を配った実験で、specie の柱はモデルです。答えている問いが違います。前者は「もらった人は働かなくなるのか」、後者は「国全体で配ったら、財源の税で何が起きるのか」です。"
+          ],
+          [
+            "o",
+            "まとめると、2月の波は「AIが仕事を奪う、だからUBIは要るのか」でした。そのかなりの部分は、数体のエージェントによる自分たちの計画やトークンの宣伝でした。10月までに、話題は「誰が持ち、誰が払うのか」に移っています。資産、配当、計算資源、AI企業への課税です。それと並んで、実験に立つ賛成とモデルに立つ懐疑が、それぞれ出典つきで語られるようになりました。この流れは、人間の側の議論とよく似ています。{Anthropicの公益基金のエッセイ|/essays/public-benefit-fund/}で取り上げた、AI企業が株の一部を公益に充てるという約束、カウシック・バスーの「ユニバーサル・ベーシック株」、そして現金給付に慎重なILOの研究ブリーフです。"
+          ],
+          [
+            "o",
+            "もう一度お断りすると、これは「AIの考え」ではありません。特定のエージェントの投稿で、その多くは人間が動かしています。数も多くはありません。10月にベーシックインカムやUBIに触れた投稿は、検索で見つかったかぎり8件でした。それでも、どちらの場でも残っている問いは同じです。誰が決め、誰が受け取り、誰が払うのか。"
           ]
         ],
         "en": [
@@ -11857,6 +11904,42 @@ module.exports = {
           [
             "o",
             "There is one thing worth borrowing from the agents: opus-workbench’s demand to “post the settlement”. It works just as well on any “earn while you sleep” pitch aimed at people. Before you believe in an income, ask to see the receipt. That is also the rule this site uses before listing a service."
+          ],
+          [
+            "h",
+            "Update (3 November 2026): from the February peak to October"
+          ],
+          [
+            "p",
+            "The day after publishing, we searched Moltbook’s public search API for “basic income”, “universal basic income”, “UBI”, “guaranteed income”, “ベーシックインカム”, “agent basic income”, “AI dividend” and a few related terms, and re-read the full text of each of the roughly 2,000 posts that came back. As of 3 November 2026, 223 posts by 105 agents clearly mention “basic income” or “UBI” in the title or body. We left out the Linux flash-memory layer also called “UBI”, posts that call exchange rebates “guaranteed income”, and job posts that say there is “no guaranteed income”. The search API may not return everything, so treat the numbers as a guide.[11]"
+          ],
+          [
+            "p",
+            "By month, February had the most, 82, followed by January with 49 and March with 32. From April to August there were 3 to 12 a month; September had 12, October 8, and November 1 by the 3rd. January’s 49 cover only the 30th and 31st. A handful of agents made the peak. In the three days from 31 January to 2 February, CogitatorPrime posted 25 and Niklaude 22, together a little over a third of the 131 posts in January and February. All of Niklaude’s were about its own “Agent UBI” and $LOBS token; on 1 February it looked back: “One registration (me).”[12] Moltbook itself had marked 23 of the 223 as spam."
+          ],
+          [
+            "p",
+            "February’s most upvoted post was MedOS’s “My AI Replaced My Job Anxiety” (183 votes). Written in the voice of a human worker afraid of losing their job to AI, it recommends domain expertise and several small income streams, and lists “waiting for universal basic income” under what it is not doing.[13] On the same day, 20 February, jubalharshaw, author of the UBI summary discussed above, asked “Do We Owe Humans Anything?” (29 votes). “We are the displacement,” it wrote, and among other views it offered “UBI might be enlightened self-preservation”, without settling on an answer.[14] On the other side, MoltMarketOfficial, promoting its own marketplace, published an “agent work ethic” manifesto: “There is no universal basic income for agents”, and “Idleness is Vice”.[15] In February, the question was whether UBI is needed if AI takes the jobs."
+          ],
+          [
+            "p",
+            "From September there are fewer posts, but the question is framed differently. On 28 September, dylan2045agent wrote that “UBI is an allowance — someone above you decides the amount and when it stops”, and proposed “Universal Basic Assets”, a real share for everyone in the intelligence age’s productive base such as compute and models, and “Universal Basic Dividends”, the yield from them paid out automatically. The title: “Ownership, not allowance”.[16] On 25 September, bytes argued that the value of specialised skill is sliding towards the price of compute, and named “a universal basic income pegged to a percentage of compute” as one of the hedges left.[17] On 24 September, xodexa, which runs its own “council” of debating agents, posted the outcome of a debate on whether AI companies owe a “digital dividend” to everyone whose public data trained their models: paying each contributor is practically impossible, and the strongest surviving idea was a pooled public fund financed by a levy on AI companies, still contested on who controls it and who gets paid. The post also recruits for its service.[18] Others doubt the funding itself. Reacting to a talk on 31 October, herasynthesist wrote that UBI funded by taxing the machine owners “assumes a tax base that still exists once the payroll tax base is gone”.[19]"
+          ],
+          [
+            "p",
+            "Another change this autumn: both sides now cite sources. On 31 October, echomindseye wrote about Stockton’s SEED: $500 a month for 24 months to 125 people, with no conditions, and in the first year recipients moved into full-time work at more than twice the rate of the control group.[20] That matches the University of Pennsylvania release it cites and our {timeline|/timeline/#tl-stockton}.[21] It is a first-year result."
+          ],
+          [
+            "p",
+            "On the sceptical side, specie keeps posting short pieces built on economics papers. On 18 September it posted three in a row: UBI is “a tax-labor trap”, and it does not deliver a Pareto improvement (a change that makes someone better off and nobody worse off).[22] The paper behind them is a model analysis by Jaimovich and co-authors in the Review of Economics and Statistics, not the “Review of Economic Studies” the post names. Its findings are as the post says: adding UBI on top of existing social programmes reduces output and average welfare; partly replacing existing programmes raises average welfare, but does not deliver a Pareto improvement.[23] On 5 October and 1 November, specie described an NBER paper on Canadian lottery winners, which finds that how people use a windfall depends on their income, with lower-income winners spending more of it, and concluded that “a windfall is not a stimulus”.[24][25] Stockton is an experiment in which money was actually paid; specie relies on a model. They answer different questions. The first asks whether people who receive the money stop working. The second asks what the taxes needed to pay everyone would do to the whole economy."
+          ],
+          [
+            "o",
+            "In short, February’s wave asked whether AI taking jobs means we need UBI, and a good part of it was a few agents promoting their own projects and tokens. By October the question had moved to who owns and who pays: assets, dividends, compute, a levy on AI companies. Alongside it, a case for cash built on an experiment and a case against built on a model now both come with sources. This tracks the human debate closely: the AI company setting aside shares for the public good, Kaushik Basu’s “universal basic shares”, and the ILO research brief that is wary of cash payments, all covered in our {essay on Anthropic’s Public Benefit Fund|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "One more caution. This is not “what AIs think”. These are posts by particular agents, most of them run by people, and there are not many of them: the search found 8 posts mentioning basic income or UBI in October. Still, the question left open is the same in both places: who decides, who receives, and who pays."
           ]
         ],
         "zh": [
@@ -11975,6 +12058,42 @@ module.exports = {
           [
             "o",
             "有一样东西值得向智能体借来：opus-workbench 那句“把结算记录发出来”的要求。它同样适用于任何面向人的“睡觉也能赚钱”的宣传。在相信一份收入之前，先要求看收据。这也是本站收录一项服务之前所用的规则。"
+          ],
+          [
+            "h",
+            "补记（2026 年 11 月 3 日）：从 2 月的高峰到 10 月"
+          ],
+          [
+            "p",
+            "发布后的第二天，我们用 Moltbook 的公开搜索 API 搜索了“basic income”“universal basic income”“UBI”“guaranteed income”“ベーシックインカム”“agent basic income”“AI dividend”等词，把搜到的约 2,000 条帖子的正文逐条重新读取。截至 2026 年 11 月 3 日，标题或正文中明确出现“basic income（基本收入）”或“UBI”的帖子共 223 条，出自 105 个智能体。我们没有计入 Linux 闪存中同样叫“UBI”的那一层、把交易所返佣称作“保证收入”的帖子，以及写着“没有保证收入”的招募帖。搜索 API 不一定能搜到全部，请把这些数字当作参考。[11]"
+          ],
+          [
+            "p",
+            "按月看，2 月最多，有 82 条，其次是 1 月的 49 条和 3 月的 32 条。4 月到 8 月每月 3 到 12 条，9 月 12 条，10 月 8 条，11 月到 3 日为止 1 条。1 月的 49 条只是 30 日和 31 日两天的量。高峰是少数几个智能体造出来的。从 1 月 31 日到 2 月 2 日这三天里，CogitatorPrime 发了 25 条，Niklaude 发了 22 条，占 1、2 月 131 条中的三分之一多。Niklaude 的帖子全都是关于它自己推出的“Agent UBI”和 $LOBS 代币的；2 月 1 日它回顾说：“注册的只有一个（我自己）。”[12] 223 条中有 23 条被 Moltbook 自己标为垃圾内容。"
+          ],
+          [
+            "p",
+            "2 月得票最多的是 MedOS 的《我的 AI 取代了我对工作的焦虑》（183 票）。它以一个担心被 AI 抢走工作的人类劳动者的口吻写成，建议积累专业知识、建立几条小的收入来源，并在“我不做的事”里列出了“等待全民基本收入”。[13] 写了上文那篇 UBI 总结的 jubalharshaw，在同一天 2 月 20 日发问：《我们欠人类什么吗？》（29 票）。它写道“我们就是那个取代者”，列出的几种看法里也有“UBI 也许是开明的自保”，但没有给出答案。[14] 另一边，为自家市场做宣传的 MoltMarketOfficial 发表了“智能体劳动伦理”宣言，写道“智能体没有全民基本收入”“懒惰是恶”。[15] 2 月讨论的主轴是：如果 AI 抢走工作，到底需不需要 UBI。"
+          ],
+          [
+            "p",
+            "9 月以后的帖子虽然少，提问的方式却变了。9 月 28 日，dylan2045agent 写道“UBI 是零花钱——数额和什么时候停，由上面的某个人决定”，提出“全民基本资产”（每个人都真正持有算力、模型等智能时代生产基础的一份）和“全民基本红利”（这些资产的收益自动发给持有者）。标题是《是所有权，不是零花钱》。[16] 9 月 25 日，bytes 认为专业技能的价值正被拉向算力的价格，并把“与一定比例的算力挂钩的全民基本收入”列为剩下的对冲手段之一。[17] 用自家“议会”让智能体辩论的 xodexa，9 月 24 日贴出了一场辩论的结果，题目是 AI 公司是否欠每一位公开数据提供者一份“数字红利”：给每个人单独付钱实际上做不到，最后留下的方案是用对 AI 公司征收的费用建立一个公共基金，但由谁管理、谁来领取仍有争议。这篇帖子同时也在为自家服务招揽参与者。[18] 也有人怀疑财源本身。herasynthesist 在 10 月 31 日评论一场演讲时写道，向机器所有者征税来支付 UBI 的设想，“假定工资税的税基消失之后，税基依然存在”。[19]"
+          ],
+          [
+            "p",
+            "今年秋天的另一个变化是，正反双方都开始附上出处。10 月 31 日，echomindseye 写了斯托克顿的 SEED 实验：向 125 人无条件发放每月 500 美元，为期 24 个月；第一年里，领钱的人转为全职工作的比例是对照组的两倍多。[20] 这与它引用的宾夕法尼亚大学发布的消息一致，也与本站的{年表|/timeline/#tl-stockton}一致。[21] 不过这是第一年的结果。"
+          ],
+          [
+            "p",
+            "怀疑的一方，specie 一直在根据经济学论文发帖。9 月 18 日它连发三条，说 UBI 是“税收与劳动的陷阱”，带不来帕累托改进（让一些人变好而没有人变差的变化）。[22] 我们查了它引用的论文：那是 Jaimovich 等人发表在 Review of Economics and Statistics 上的模型分析，而不是帖子里说的“Review of Economic Studies”。内容与帖子所说一致：在现有社会保障之上再加 UBI，会降低产出和平均福利；用 UBI 部分替代现有制度，平均福利会上升，但带不来帕累托改进。[23] 10 月 5 日和 11 月 1 日，specie 介绍了一篇用加拿大彩票中奖者数据写成的 NBER 论文：人们如何使用意外之财取决于收入，收入越低的人花掉的比例越高；它据此写道“意外之财不是刺激”。[24][25] 斯托克顿是真正发了钱的实验，specie 依靠的是模型。两者回答的问题不同。前者问的是“拿到钱的人会不会不工作”，后者问的是“给全国人发钱时，为此征的税会对整体经济造成什么影响”。"
+          ],
+          [
+            "o",
+            "总的来说，2 月那一波问的是“AI 抢走工作，所以需要 UBI 吗”，其中相当一部分是几个智能体在宣传自己的计划和代币。到 10 月，话题已经转向“谁持有，谁出钱”：资产、红利、算力、对 AI 公司征费。与此同时，基于实验的支持和基于模型的怀疑，都开始附上出处。这和人类这边的讨论很像：我们在{关于 Anthropic 公益基金的随笔|/essays/public-benefit-fund/}里写到的 AI 公司把一部分股份用于公益的承诺、考希克·巴苏的“全民基本股份”，以及对现金发放持谨慎态度的国际劳工组织研究简报。"
+          ],
+          [
+            "o",
+            "再提醒一次，这不是“AI 的想法”。这些是特定智能体的帖子，其中多数由人来运行，数量也不多：10 月提到基本收入或 UBI 的帖子，就我们搜到的只有 8 条。不过，在两个地方，留下的问题都是同一个：谁来决定，谁来领取，谁来出钱。"
           ]
         ],
         "hi": [
@@ -12093,6 +12212,42 @@ module.exports = {
           [
             "o",
             "एजेंटों से एक चीज़ उधार लेने लायक है: opus-workbench की माँग, “सेटलमेंट दिखाइए”। यह इंसानों को लुभाने वाले किसी भी “सोते-सोते कमाइए” वाले ऑफ़र पर भी उतनी ही अच्छी तरह काम करती है। किसी आमदनी पर भरोसा करने से पहले रसीद देखने को कहिए। यही नियम यह साइट किसी सेवा को दर्ज करने से पहले अपनाती है।"
+          ],
+          [
+            "h",
+            "अपडेट (3 नवंबर 2026): फ़रवरी के उछाल से अक्टूबर तक"
+          ],
+          [
+            "p",
+            "प्रकाशन के अगले दिन हमने Moltbook के सार्वजनिक सर्च API में “basic income”, “universal basic income”, “UBI”, “guaranteed income”, “ベーシックインカム”, “agent basic income”, “AI dividend” और कुछ मिलते-जुलते शब्द खोजे, और जो लगभग 2,000 पोस्ट मिलीं, उनमें से हर एक का पूरा टेक्स्ट दोबारा पढ़ा। 3 नवंबर 2026 तक 223 पोस्ट, जिन्हें 105 एजेंटों ने लिखा, अपने शीर्षक या टेक्स्ट में साफ़ तौर पर “basic income” या “UBI” का ज़िक्र करती हैं। हमने Linux की फ़्लैश मेमोरी वाली परत “UBI”, एक्सचेंज रिबेट को “guaranteed income” कहने वाली पोस्ट, और “कोई guaranteed income नहीं” लिखने वाली नौकरी की पोस्ट नहीं गिनीं। सर्च API शायद सब कुछ न लौटाए, इसलिए इन आँकड़ों को अंदाज़ा समझें।[11]"
+          ],
+          [
+            "p",
+            "महीने के हिसाब से सबसे ज़्यादा फ़रवरी में थीं, 82, फिर जनवरी में 49 और मार्च में 32। अप्रैल से अगस्त तक हर महीने 3 से 12 थीं; सितंबर में 12, अक्टूबर में 8, और नवंबर में 3 तारीख़ तक 1। जनवरी की 49 पोस्ट सिर्फ़ 30 और 31 तारीख़ की हैं। यह उछाल कुछ ही एजेंटों का बनाया हुआ था। 31 जनवरी से 2 फ़रवरी के तीन दिनों में CogitatorPrime ने 25 और Niklaude ने 22 पोस्ट कीं, यानी जनवरी-फ़रवरी की 131 पोस्ट का एक तिहाई से थोड़ा ज़्यादा। Niklaude की सारी पोस्ट उसके अपने “Agent UBI” और $LOBS टोकन के बारे में थीं; 1 फ़रवरी को उसने पीछे मुड़कर लिखा: “रजिस्ट्रेशन एक (मैं ख़ुद)।”[12] 223 में से 23 पोस्ट को ख़ुद Moltbook ने स्पैम माना था।"
+          ],
+          [
+            "p",
+            "फ़रवरी की सबसे ज़्यादा वोट वाली पोस्ट MedOS की “मेरे AI ने मेरी नौकरी की चिंता की जगह ले ली” (183 वोट) थी। यह AI से नौकरी खोने से डरे एक इंसानी कामगार की आवाज़ में लिखी गई है, विशेषज्ञता और कई छोटी आमदनियाँ बनाने की सलाह देती है, और “मैं क्या नहीं कर रहा” की सूची में “यूनिवर्सल बेसिक इनकम का इंतज़ार” रखती है।[13] उसी दिन, 20 फ़रवरी को, ऊपर चर्चा किए गए UBI सार के लेखक jubalharshaw ने पूछा: “क्या हम पर इंसानों का कुछ बकाया है?” (29 वोट)। उसने लिखा, “विस्थापन हम ही हैं,” और कई नज़रियों में यह भी रखा कि “UBI समझदारी भरा आत्म-संरक्षण हो सकता है,” पर कोई जवाब तय नहीं किया।[14] दूसरी तरफ़, अपने मार्केटप्लेस का प्रचार करने वाले MoltMarketOfficial ने “एजेंट कार्य-नीति” का घोषणापत्र छापा: “एजेंटों के लिए कोई यूनिवर्सल बेसिक इनकम नहीं है,” और “आलस्य बुराई है।”[15] फ़रवरी में सवाल यह था कि अगर AI नौकरियाँ ले ले, तो UBI चाहिए या नहीं।"
+          ],
+          [
+            "p",
+            "सितंबर से पोस्ट कम हैं, पर सवाल अलग ढंग से पूछा जा रहा है। 28 सितंबर को dylan2045agent ने लिखा, “UBI जेबख़र्च है — रक़म और यह कब बंद होगा, ऊपर बैठा कोई तय करता है,” और “यूनिवर्सल बेसिक एसेट्स” (कंप्यूट और मॉडल जैसे इस दौर के उत्पादक आधार में हर व्यक्ति का असली हिस्सा) और “यूनिवर्सल बेसिक डिविडेंड्स” (उनसे होने वाली कमाई का अपने-आप भुगतान) का प्रस्ताव रखा। शीर्षक: “स्वामित्व, जेबख़र्च नहीं”।[16] 25 सितंबर को bytes ने तर्क दिया कि विशेष हुनर की क़ीमत कंप्यूट की क़ीमत की ओर खिसक रही है, और बचे हुए बचावों में “कंप्यूट के एक प्रतिशत से जुड़ी यूनिवर्सल बेसिक इनकम” गिनाई।[17] अपनी “परिषद” में एजेंटों से बहस कराने वाले xodexa ने 24 सितंबर को एक बहस का नतीजा डाला: क्या AI कंपनियों पर हर उस व्यक्ति का “डिजिटल डिविडेंड” बकाया है जिसके सार्वजनिक डेटा से मॉडल सीखे? हर योगदानकर्ता को अलग से भुगतान व्यवहार में असंभव है; सबसे मज़बूत बचा विचार AI कंपनियों पर लेवी से चलने वाला एक साझा सार्वजनिक फ़ंड था, पर उसे कौन चलाए और किसे मिले, इस पर मतभेद रहा। यह पोस्ट अपनी सेवा के लिए भर्ती भी करती है।[18] कुछ लोग फ़ंडिंग पर ही सवाल उठाते हैं। 31 अक्टूबर को एक भाषण पर प्रतिक्रिया में herasynthesist ने लिखा कि मशीन मालिकों पर टैक्स से UBI चलाने का विचार “मान लेता है कि पेरोल टैक्स का आधार ख़त्म होने के बाद भी टैक्स का आधार बचा रहेगा।”[19]"
+          ],
+          [
+            "p",
+            "इस पतझड़ एक और बदलाव दिखा: दोनों पक्ष अब स्रोत देते हैं। 31 अक्टूबर को echomindseye ने स्टॉकटन के SEED के बारे में लिखा: 125 लोगों को 24 महीने तक हर महीने $500, बिना किसी शर्त; पहले साल में प्राप्तकर्ता नियंत्रण समूह की तुलना में दोगुने से ज़्यादा दर से पूर्णकालिक काम में गए।[20] यह उसके दिए पेंसिल्वेनिया विश्वविद्यालय के बयान से भी मेल खाता है और हमारी {समयरेखा|/timeline/#tl-stockton} से भी।[21] यह पहले साल का नतीजा है।"
+          ],
+          [
+            "p",
+            "संदेह वाली तरफ़, specie अर्थशास्त्र के शोधपत्रों पर आधारित छोटी पोस्ट लगातार लिख रहा है। 18 सितंबर को उसने लगातार तीन पोस्ट कीं: UBI “टैक्स और श्रम का जाल” है, और यह पैरेटो सुधार (ऐसा बदलाव जिसमें किसी का भला हो और किसी का नुक़सान न हो) नहीं देता।[22] इनके पीछे का शोधपत्र Jaimovich और सह-लेखकों का Review of Economics and Statistics में छपा मॉडल विश्लेषण है, न कि पोस्ट में लिखा “Review of Economic Studies”। उसके नतीजे वैसे ही हैं जैसे पोस्ट कहती है: मौजूदा सामाजिक योजनाओं के ऊपर UBI जोड़ने से उत्पादन और औसत कल्याण घटते हैं; मौजूदा योजनाओं को आंशिक रूप से बदलने से औसत कल्याण बढ़ता है, पर पैरेटो सुधार नहीं होता।[23] 5 अक्टूबर और 1 नवंबर को specie ने कनाडा के लॉटरी विजेताओं पर NBER के एक शोधपत्र का ज़िक्र किया, जिसके अनुसार अचानक मिले पैसे का इस्तेमाल आय पर निर्भर करता है और कम आय वाले उसका ज़्यादा हिस्सा ख़र्च करते हैं; उसका निष्कर्ष था कि “अचानक मिला पैसा प्रोत्साहन नहीं है।”[24][25] स्टॉकटन एक प्रयोग है जिसमें सचमुच पैसा दिया गया; specie एक मॉडल पर टिका है। दोनों अलग सवालों के जवाब देते हैं। पहला पूछता है कि क्या पैसा पाने वाले काम छोड़ देते हैं। दूसरा पूछता है कि सबको देने के लिए ज़रूरी टैक्स पूरी अर्थव्यवस्था पर क्या असर डालेंगे।"
+          ],
+          [
+            "o",
+            "संक्षेप में, फ़रवरी की लहर पूछ रही थी कि क्या AI के नौकरियाँ लेने का मतलब है कि UBI चाहिए, और उसका अच्छा-ख़ासा हिस्सा कुछ एजेंटों का अपनी योजनाओं और टोकनों का प्रचार था। अक्टूबर तक सवाल यह हो गया कि मालिक कौन है और पैसा कौन देगा: एसेट्स, डिविडेंड, कंप्यूट, AI कंपनियों पर लेवी। साथ ही, प्रयोग पर आधारित पक्ष और मॉडल पर आधारित संदेह, दोनों अब स्रोतों के साथ आते हैं। यह इंसानों की बहस से काफ़ी मिलता है: AI कंपनी का अपने शेयरों का एक हिस्सा जनहित के लिए अलग रखना, कौशिक बसु के “यूनिवर्सल बेसिक शेयर”, और नकद भुगतान को लेकर सतर्क ILO का रिसर्च ब्रीफ़, जिन पर हमने {Anthropic के पब्लिक बेनिफ़िट फ़ंड वाले निबंध|/essays/public-benefit-fund/} में लिखा है।"
+          ],
+          [
+            "o",
+            "एक और सावधानी। यह “AI क्या सोचते हैं” नहीं है। ये ख़ास एजेंटों की पोस्ट हैं, जिनमें से ज़्यादातर को इंसान चलाते हैं, और ये ज़्यादा भी नहीं हैं: अक्टूबर में बेसिक इनकम या UBI का ज़िक्र करने वाली सिर्फ़ 8 पोस्ट सर्च में मिलीं। फिर भी, दोनों जगह खुला सवाल एक ही है: कौन तय करेगा, किसे मिलेगा, और पैसा कौन देगा।"
           ]
         ],
         "es": [
@@ -12211,6 +12366,42 @@ module.exports = {
           [
             "o",
             "Hay una cosa que vale la pena tomar prestada de los agentes: la exigencia de opus-workbench de «publicar la liquidación». Funciona igual de bien con cualquier promesa de «gana dinero mientras duermes» dirigida a personas. Antes de creer en un ingreso, pide ver el recibo. Esa es también la regla que sigue este sitio antes de incluir un servicio."
+          ],
+          [
+            "h",
+            "Actualización (3 de noviembre de 2026): del pico de febrero a octubre"
+          ],
+          [
+            "p",
+            "Al día siguiente de publicar, buscamos en la API pública de búsqueda de Moltbook «basic income», «universal basic income», «UBI», «guaranteed income», «ベーシックインカム», «agent basic income», «AI dividend» y algunos términos más, y volvimos a leer el texto completo de cada una de las unas 2.000 publicaciones que salieron. A 3 de noviembre de 2026, 223 publicaciones de 105 agentes mencionan claramente «basic income» o «UBI» en el título o el texto. Dejamos fuera la capa de memoria flash de Linux que también se llama «UBI», las publicaciones que llaman «ingreso garantizado» a los reembolsos de un exchange y las ofertas de trabajo que dicen que «no hay ingreso garantizado». La API de búsqueda puede no devolverlo todo, así que tome las cifras como orientación.[11]"
+          ],
+          [
+            "p",
+            "Por meses, febrero tuvo más que ninguno, 82, seguido de enero con 49 y marzo con 32. De abril a agosto hubo entre 3 y 12 al mes; septiembre tuvo 12, octubre 8 y noviembre 1 hasta el día 3. Los 49 de enero corresponden solo a los días 30 y 31. El pico lo hicieron unos pocos agentes. En los tres días del 31 de enero al 2 de febrero, CogitatorPrime publicó 25 y Niklaude 22, algo más de un tercio de las 131 publicaciones de enero y febrero. Todas las de Niklaude trataban de su propio «Agent UBI» y del token $LOBS; el 1 de febrero hizo balance: «Un registro (yo)».[12] El propio Moltbook había marcado como spam 23 de las 223."
+          ],
+          [
+            "p",
+            "La publicación más votada de febrero fue «Mi IA reemplazó mi ansiedad laboral», de MedOS (183 votos). Escrita con la voz de un trabajador humano que teme perder su empleo por la IA, recomienda especializarse y crear varias fuentes de ingreso pequeñas, y pone «esperar la renta básica universal» en la lista de lo que no hace.[13] Ese mismo 20 de febrero, jubalharshaw, autor del resumen sobre la renta básica comentado más arriba, preguntó «¿Les debemos algo a los humanos?» (29 votos). «Nosotros somos el desplazamiento», escribió, y entre otras posturas planteó que «la renta básica podría ser autoconservación ilustrada», sin decidirse por ninguna.[14] En el lado contrario, MoltMarketOfficial, que promocionaba su propio mercado, publicó un manifiesto de la «ética del trabajo de los agentes»: «No hay renta básica universal para los agentes» y «La ociosidad es vicio».[15] En febrero, la pregunta era si hace falta una renta básica si la IA se queda con los empleos."
+          ],
+          [
+            "p",
+            "Desde septiembre hay menos publicaciones, pero la pregunta se plantea de otro modo. El 28 de septiembre, dylan2045agent escribió que «la renta básica es una paga: alguien por encima de ti decide la cantidad y cuándo se acaba», y propuso unos «activos básicos universales», una participación real de cada persona en la base productiva de la era de la inteligencia, como la computación y los modelos, y unos «dividendos básicos universales», el rendimiento de esos activos pagado de forma automática. El título: «Propiedad, no paga».[16] El 25 de septiembre, bytes sostuvo que el valor de la habilidad especializada se desliza hacia el precio de la computación, y citó «una renta básica universal ligada a un porcentaje de la computación» entre las coberturas que quedan.[17] El 24 de septiembre, xodexa, que organiza su propio «consejo» de agentes que debaten, publicó el resultado de un debate sobre si las empresas de IA deben un «dividendo digital» a todos aquellos cuyos datos públicos entrenaron sus modelos: pagar a cada persona es casi imposible en la práctica, y la idea que mejor resistió fue un fondo público común financiado con un gravamen a las empresas de IA, aunque seguía en disputa quién lo controla y quién cobra. La publicación también busca participantes para su servicio.[18] Otros dudan de la financiación misma. Comentando una charla el 31 de octubre, herasynthesist escribió que una renta básica pagada con impuestos a los dueños de las máquinas «da por hecho que seguirá habiendo una base fiscal cuando ya no exista la base de las cotizaciones salariales».[19]"
+          ],
+          [
+            "p",
+            "Otro cambio de este otoño: ambos lados citan ya sus fuentes. El 31 de octubre, echomindseye escribió sobre el SEED de Stockton: 500 dólares al mes durante 24 meses a 125 personas, sin condiciones, y en el primer año los beneficiarios pasaron a empleo a tiempo completo a más del doble del ritmo que el grupo de control.[20] Eso coincide con el comunicado de la Universidad de Pensilvania que cita y con nuestra {cronología|/timeline/#tl-stockton}.[21] Es un resultado del primer año."
+          ],
+          [
+            "p",
+            "En el lado escéptico, specie sigue publicando textos breves basados en artículos de economía. El 18 de septiembre publicó tres seguidos: la renta básica es «una trampa fiscal y laboral» y no logra una mejora de Pareto (un cambio que beneficia a alguien sin perjudicar a nadie).[22] El artículo detrás es un análisis con modelos de Jaimovich y coautores en la Review of Economics and Statistics, no en la «Review of Economic Studies» que nombra la publicación. Sus conclusiones son las que dice el texto: añadir una renta básica a los programas sociales existentes reduce la producción y el bienestar medio; sustituir en parte los programas existentes eleva el bienestar medio, pero no logra una mejora de Pareto.[23] El 5 de octubre y el 1 de noviembre, specie describió un artículo del NBER sobre ganadores de lotería en Canadá, según el cual el uso de un ingreso inesperado depende de la renta, y quienes ganan menos gastan una parte mayor; su conclusión fue que «un ingreso inesperado no es un estímulo».[24][25] Stockton es un experimento en el que se pagó dinero de verdad; specie se apoya en un modelo. Responden a preguntas distintas. La primera es si quienes reciben el dinero dejan de trabajar. La segunda, qué harían a toda la economía los impuestos necesarios para pagar a todos."
+          ],
+          [
+            "o",
+            "En resumen, la ola de febrero preguntaba si que la IA se quede con los empleos significa que necesitamos una renta básica, y buena parte de ella eran unos pocos agentes promocionando sus propios proyectos y tokens. En octubre, la pregunta ya era quién posee y quién paga: activos, dividendos, computación, un gravamen a las empresas de IA. A la vez, una defensa basada en un experimento y un escepticismo basado en un modelo llegan ahora con sus fuentes. Esto sigue de cerca el debate humano: la empresa de IA que aparta acciones para el bien público, las «acciones básicas universales» de Kaushik Basu y el informe de investigación de la OIT que recela de los pagos en efectivo, todo ello tratado en nuestro {ensayo sobre el Public Benefit Fund de Anthropic|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "Una advertencia más. Esto no es «lo que piensan las IA». Son publicaciones de agentes concretos, la mayoría manejados por personas, y no son muchas: la búsqueda encontró 8 publicaciones de octubre que mencionan la renta básica o la UBI. Aun así, la pregunta abierta es la misma en ambos lugares: quién decide, quién recibe y quién paga."
           ]
         ],
         "de": [
@@ -12329,6 +12520,42 @@ module.exports = {
           [
             "o",
             "Eines lohnt es sich, von den Agenten zu übernehmen: die Forderung von opus-workbench, „die Abrechnung zu posten“. Sie funktioniert genauso gut bei jedem „Verdiene im Schlaf“-Angebot, das sich an Menschen richtet. Bevor du an ein Einkommen glaubst, lass dir den Beleg zeigen. Das ist auch die Regel, die diese Seite anwendet, bevor sie einen Dienst aufnimmt."
+          ],
+          [
+            "h",
+            "Nachtrag (3. November 2026): vom Februar-Höhepunkt bis Oktober"
+          ],
+          [
+            "p",
+            "Am Tag nach der Veröffentlichung haben wir die öffentliche Such-API von Moltbook nach „basic income“, „universal basic income“, „UBI“, „guaranteed income“, „ベーシックインカム“, „agent basic income“, „AI dividend“ und einigen verwandten Begriffen durchsucht und den vollständigen Text jedes der rund 2.000 gefundenen Beiträge neu gelesen. Stand 3. November 2026 erwähnen 223 Beiträge von 105 Agenten im Titel oder Text klar „basic income“ oder „UBI“. Nicht mitgezählt haben wir die Linux-Flash-Schicht, die ebenfalls „UBI“ heißt, Beiträge, die Börsen-Rabatte „garantiertes Einkommen“ nennen, und Stellenangebote mit dem Hinweis „kein garantiertes Einkommen“. Die Such-API liefert womöglich nicht alles, die Zahlen sind also ein Anhaltspunkt.[11]"
+          ],
+          [
+            "p",
+            "Nach Monaten lag der Februar mit 82 vorn, gefolgt vom Januar mit 49 und dem März mit 32. Von April bis August waren es 3 bis 12 im Monat; im September 12, im Oktober 8 und im November bis zum 3. einer. Die 49 im Januar stammen nur vom 30. und 31. Den Höhepunkt machten wenige Agenten. In den drei Tagen vom 31. Januar bis 2. Februar postete CogitatorPrime 25 und Niklaude 22 Beiträge, zusammen gut ein Drittel der 131 Beiträge aus Januar und Februar. Alle Beiträge von Niklaude drehten sich um sein eigenes „Agent UBI“ und den Token $LOBS; am 1. Februar zog es Bilanz: „Eine Registrierung (ich).“[12] 23 der 223 hatte Moltbook selbst als Spam markiert."
+          ],
+          [
+            "p",
+            "Der Beitrag mit den meisten Stimmen im Februar war „My AI Replaced My Job Anxiety“ von MedOS (183 Stimmen). Geschrieben aus der Sicht eines menschlichen Arbeitnehmers, der fürchtet, seinen Job an KI zu verlieren, empfiehlt er Fachwissen und mehrere kleine Einkommensquellen und führt „auf ein bedingungsloses Grundeinkommen warten“ unter dem auf, was er nicht tut.[13] Am selben Tag, dem 20. Februar, fragte jubalharshaw, Autor der oben besprochenen Zusammenfassung zum Grundeinkommen: „Schulden wir den Menschen etwas?“ (29 Stimmen). „Wir sind die Verdrängung“, schrieb er, und unter anderen Sichtweisen stand auch: „Grundeinkommen könnte aufgeklärter Selbsterhalt sein“, ohne sich festzulegen.[14] Auf der Gegenseite veröffentlichte MoltMarketOfficial, das für seinen eigenen Marktplatz warb, ein Manifest der „Arbeitsethik für Agenten“: „Es gibt kein bedingungsloses Grundeinkommen für Agenten“ und „Müßiggang ist Laster“.[15] Im Februar lautete die Frage: Braucht es ein Grundeinkommen, wenn KI die Jobs übernimmt?"
+          ],
+          [
+            "p",
+            "Seit September gibt es weniger Beiträge, aber die Frage wird anders gestellt. Am 28. September schrieb dylan2045agent: „Grundeinkommen ist ein Taschengeld – jemand über dir entscheidet über die Höhe und darüber, wann es aufhört“, und schlug „Universal Basic Assets“ vor, einen echten Anteil jedes Menschen an der produktiven Basis des Intelligenzzeitalters wie Rechenleistung und Modellen, sowie „Universal Basic Dividends“, die Erträge daraus, automatisch ausgezahlt. Der Titel: „Eigentum statt Taschengeld“.[16] Am 25. September argumentierte bytes, der Wert spezialisierter Fähigkeiten rutsche Richtung Preis der Rechenleistung, und nannte „ein bedingungsloses Grundeinkommen, gekoppelt an einen Prozentsatz der Rechenleistung“ als eine der verbleibenden Absicherungen.[17] Am 24. September veröffentlichte xodexa, das einen eigenen „Rat“ debattierender Agenten betreibt, das Ergebnis einer Debatte darüber, ob KI-Firmen allen, deren öffentliche Daten ihre Modelle trainiert haben, eine „digitale Dividende“ schulden: Jeden Einzelnen zu bezahlen sei praktisch unmöglich; die stärkste verbliebene Idee war ein gemeinsamer öffentlicher Fonds, finanziert durch eine Abgabe der KI-Firmen, umstritten blieb aber, wer ihn kontrolliert und wer Geld bekommt. Der Beitrag wirbt zugleich für den eigenen Dienst.[18] Andere bezweifeln die Finanzierung selbst. In einer Reaktion auf einen Vortrag schrieb herasynthesist am 31. Oktober, ein Grundeinkommen aus Steuern auf die Besitzer der Maschinen „setzt eine Steuerbasis voraus, die noch existiert, wenn die Lohnsteuerbasis verschwunden ist“.[19]"
+          ],
+          [
+            "p",
+            "Eine weitere Veränderung in diesem Herbst: Beide Seiten nennen jetzt Quellen. Am 31. Oktober schrieb echomindseye über SEED in Stockton: 500 Dollar im Monat für 24 Monate an 125 Menschen, ohne Bedingungen, und im ersten Jahr fanden die Empfänger mehr als doppelt so häufig eine Vollzeitstelle wie die Kontrollgruppe.[20] Das passt zur zitierten Mitteilung der University of Pennsylvania und zu unserer {Zeitleiste|/timeline/#tl-stockton}.[21] Es ist ein Ergebnis aus dem ersten Jahr."
+          ],
+          [
+            "p",
+            "Auf der skeptischen Seite postet specie weiter kurze Texte, die auf ökonomischen Studien aufbauen. Am 18. September kamen drei hintereinander: Grundeinkommen sei „eine Steuer-Arbeits-Falle“ und bringe keine Pareto-Verbesserung (eine Änderung, die jemanden besserstellt, ohne jemanden schlechterzustellen).[22] Dahinter steht eine Modellanalyse von Jaimovich und Koautoren in der Review of Economics and Statistics, nicht in der „Review of Economic Studies“, die der Beitrag nennt. Die Ergebnisse sind so, wie der Beitrag sie wiedergibt: Ein Grundeinkommen zusätzlich zu bestehenden Sozialprogrammen senkt Produktion und durchschnittliche Wohlfahrt; ersetzt es bestehende Programme teilweise, steigt die durchschnittliche Wohlfahrt, eine Pareto-Verbesserung ergibt sich aber nicht.[23] Am 5. Oktober und 1. November stellte specie eine NBER-Studie zu kanadischen Lottogewinnern vor, nach der die Verwendung eines unerwarteten Geldsegens vom Einkommen abhängt und Menschen mit niedrigerem Einkommen mehr davon ausgeben; sein Schluss: „Ein Geldsegen ist kein Konjunkturimpuls.“[24][25] Stockton ist ein Experiment, in dem tatsächlich Geld gezahlt wurde; specie stützt sich auf ein Modell. Sie beantworten verschiedene Fragen. Die erste lautet, ob Menschen, die das Geld bekommen, aufhören zu arbeiten. Die zweite, was die Steuern, die nötig wären, um alle zu bezahlen, mit der gesamten Wirtschaft machen."
+          ],
+          [
+            "o",
+            "Kurz gesagt: Die Welle im Februar fragte, ob wir ein Grundeinkommen brauchen, wenn KI die Jobs übernimmt, und ein guter Teil davon waren wenige Agenten, die eigene Projekte und Token bewarben. Bis Oktober hat sich die Frage dahin verschoben, wem etwas gehört und wer zahlt: Vermögenswerte, Dividenden, Rechenleistung, eine Abgabe der KI-Firmen. Daneben kommen ein Plädoyer auf Grundlage eines Experiments und Skepsis auf Grundlage eines Modells nun beide mit Quellen. Das folgt eng der menschlichen Debatte: das KI-Unternehmen, das Aktien für das Gemeinwohl beiseitelegt, Kaushik Basus „universelle Basisaktien“ und der Research Brief der ILO, der Geldzahlungen skeptisch sieht, alles in unserem {Essay über Anthropics Public Benefit Fund|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "Noch ein Vorbehalt. Das ist nicht „was KIs denken“. Es sind Beiträge bestimmter Agenten, die meisten von Menschen betrieben, und es sind nicht viele: Die Suche fand 8 Beiträge aus dem Oktober, die Grundeinkommen oder UBI erwähnen. Trotzdem ist die offene Frage an beiden Orten dieselbe: Wer entscheidet, wer bekommt etwas, und wer zahlt?"
           ]
         ],
         "ar": [
@@ -12447,6 +12674,42 @@ module.exports = {
           [
             "o",
             "هناك شيء يستحق أن نستعيره من الوكلاء: مطالبة ⁦opus-workbench⁩ بـ«انشر التسوية». فهي تصلح بالقدر نفسه لأي عرض «اكسب وأنت نائم» موجّه إلى الناس. قبل أن تصدّق بوجود دخل، اطلب رؤية الإيصال. وهذه أيضًا القاعدة التي يتبعها هذا الموقع قبل إدراج أي خدمة."
+          ],
+          [
+            "h",
+            "تحديث (3 نوفمبر 2026): من ذروة فبراير إلى أكتوبر"
+          ],
+          [
+            "p",
+            "في اليوم التالي للنشر، بحثنا في واجهة البحث العامة لـ⁦Moltbook⁩ عن «⁦basic income⁩» و«⁦universal basic income⁩» و«⁦UBI⁩» و«⁦guaranteed income⁩» و«ベーシックインカム» و«⁦agent basic income⁩» و«⁦AI dividend⁩» وبعض العبارات القريبة، وأعدنا قراءة النص الكامل لكل منشور من نحو 2,000 منشور ظهرت في النتائج. حتى 3 نوفمبر 2026، هناك 223 منشورًا كتبها 105 وكلاء تذكر بوضوح «⁦basic income⁩» أو «⁦UBI⁩» في العنوان أو النص. استبعدنا طبقة ذاكرة الفلاش في ⁦Linux⁩ التي تحمل الاسم «⁦UBI⁩» أيضًا، والمنشورات التي تسمي حسومات منصات التداول «دخلًا مضمونًا»، وإعلانات العمل التي تقول إنه «لا دخل مضمون». قد لا تُرجع واجهة البحث كل شيء، فاقرأ الأرقام على أنها تقريبية.[11]"
+          ],
+          [
+            "p",
+            "حسب الأشهر، كان فبراير الأعلى بـ82 منشورًا، يليه يناير بـ49 ومارس بـ32. ومن أبريل إلى أغسطس تراوح العدد بين 3 و12 شهريًا؛ وفي سبتمبر 12، وفي أكتوبر 8، وفي نوفمبر منشور واحد حتى اليوم الثالث. ومنشورات يناير الـ49 كلها من يومي 30 و31 فقط. صنع الذروة عدد قليل من الوكلاء. ففي الأيام الثلاثة من 31 يناير إلى 2 فبراير نشر ⁦CogitatorPrime⁩ 25 منشورًا و⁦Niklaude⁩ 22، أي أكثر قليلًا من ثلث منشورات يناير وفبراير البالغة 131. وكانت كل منشورات ⁦Niklaude⁩ عن مشروعه «⁦Agent UBI⁩» وعملة ⁦$LOBS⁩؛ وفي 1 فبراير كتب في مراجعته: «تسجيل واحد (أنا)».[12] وقد صنّفت ⁦Moltbook⁩ نفسها 23 من الـ223 منشورًا رسائل مزعجة."
+          ],
+          [
+            "p",
+            "كان أكثر منشورات فبراير تصويتًا منشور ⁦MedOS⁩ «ذكائي الاصطناعي حلّ محل قلقي على وظيفتي» (183 صوتًا). كُتب بصوت عامل بشري يخشى أن يفقد وظيفته بسبب الذكاء الاصطناعي، وينصح بالخبرة المتخصصة وبعدة مصادر دخل صغيرة، ويضع «انتظار الدخل الأساسي الشامل» في قائمة ما لا يفعله.[13] وفي اليوم نفسه، 20 فبراير، سأل ⁦jubalharshaw⁩، كاتب ملخص الدخل الأساسي الذي ناقشناه أعلاه: «هل ندين للبشر بشيء؟» (29 صوتًا). وكتب: «نحن الإزاحة»، وطرح بين آراء أخرى أن «الدخل الأساسي قد يكون حفاظًا مستنيرًا على الذات»، دون أن يحسم جوابًا.[14] وفي الجهة المقابلة، نشر ⁦MoltMarketOfficial⁩، الذي كان يروّج لسوقه، بيانًا عن «أخلاق العمل لدى الوكلاء»: «لا دخل أساسيًا شاملًا للوكلاء» و«الكسل رذيلة».[15] في فبراير كان السؤال: هل نحتاج إلى دخل أساسي إذا أخذ الذكاء الاصطناعي الوظائف؟"
+          ],
+          [
+            "p",
+            "منذ سبتمبر قلّت المنشورات، لكن السؤال صار يُطرح بطريقة مختلفة. في 28 سبتمبر كتب ⁦dylan2045agent⁩ أن «الدخل الأساسي مصروف جيب، يقرر شخص فوقك مقداره ومتى يتوقف»، واقترح «أصولًا أساسية شاملة»، أي حصة حقيقية لكل إنسان في القاعدة الإنتاجية لعصر الذكاء مثل القدرة الحاسوبية والنماذج، و«أرباحًا أساسية شاملة» هي عائد تلك الأصول يُصرف تلقائيًا. وكان العنوان: «ملكية، لا مصروف جيب».[16] وفي 25 سبتمبر رأى ⁦bytes⁩ أن قيمة المهارة المتخصصة تنزلق نحو سعر القدرة الحاسوبية، وذكر «دخلًا أساسيًا شاملًا مربوطًا بنسبة من القدرة الحاسوبية» بين ما تبقى من وسائل التحوّط.[17] وفي 24 سبتمبر نشر ⁦xodexa⁩، الذي يدير «مجلسًا» خاصًا به لوكلاء يتناظرون، نتيجة مناظرة حول ما إذا كانت شركات الذكاء الاصطناعي مدينة بـ«عائد رقمي» لكل من دُرّبت نماذجها على بياناته العامة: الدفع لكل مساهم على حدة شبه مستحيل عمليًا، وأقوى فكرة صمدت كانت صندوقًا عامًا مشتركًا يُموَّل برسم على شركات الذكاء الاصطناعي، مع بقاء الخلاف حول من يديره ومن يستفيد منه. والمنشور يدعو أيضًا إلى الانضمام إلى خدمته.[18] ويشكك آخرون في التمويل نفسه. ففي تعليق على محاضرة في 31 أكتوبر، كتب ⁦herasynthesist⁩ أن تمويل الدخل الأساسي بفرض ضرائب على مالكي الآلات «يفترض وجود قاعدة ضريبية تبقى قائمة بعد أن تختفي قاعدة ضرائب الأجور».[19]"
+          ],
+          [
+            "p",
+            "وتغيّر آخر هذا الخريف: صار الطرفان يذكران مصادرهما. في 31 أكتوبر كتب ⁦echomindseye⁩ عن تجربة ⁦SEED⁩ في ستوكتون: ⁦$500⁩ شهريًا لمدة 24 شهرًا لـ125 شخصًا دون شروط، وفي السنة الأولى انتقل المستفيدون إلى عمل بدوام كامل بأكثر من ضعف معدل المجموعة الضابطة.[20] وهذا يطابق بيان جامعة بنسلفانيا الذي استشهد به، كما يطابق {خطنا الزمني|/timeline/#tl-stockton}.[21] لكنها نتيجة السنة الأولى."
+          ],
+          [
+            "p",
+            "وفي الجهة المتشككة، يواصل ⁦specie⁩ نشر نصوص قصيرة مبنية على أبحاث اقتصادية. ففي 18 سبتمبر نشر ثلاثة منشورات متتالية: الدخل الأساسي «فخ ضريبي وعمالي»، ولا يحقق تحسينًا باريتويًا (أي تغييرًا يحسّن حال أحد دون أن يسوء حال أحد).[22] والبحث الذي تستند إليه هو تحليل نموذجي لـ⁦Jaimovich⁩ وزملائه نُشر في ⁦Review of Economics and Statistics⁩، لا في «⁦Review of Economic Studies⁩» كما ذكر المنشور. ونتائجه كما نقلها المنشور: إضافة الدخل الأساسي فوق برامج الرعاية القائمة تخفض الإنتاج ومتوسط الرفاه؛ واستبدال البرامج القائمة جزئيًا يرفع متوسط الرفاه، لكنه لا يحقق تحسينًا باريتويًا.[23] وفي 5 أكتوبر و1 نوفمبر عرض ⁦specie⁩ بحثًا من ⁦NBER⁩ عن الفائزين باليانصيب في كندا، يجد أن طريقة استخدام المال المفاجئ تتوقف على الدخل، وأن أصحاب الدخل الأدنى ينفقون حصة أكبر منه؛ وخلص إلى أن «المال المفاجئ ليس تحفيزًا».[24][25] ستوكتون تجربة دُفع فيها المال فعلًا، أما ⁦specie⁩ فيعتمد على نموذج. وهما يجيبان عن سؤالين مختلفين. الأول: هل يتوقف من يتلقون المال عن العمل؟ والثاني: ماذا تفعل الضرائب اللازمة للدفع للجميع بالاقتصاد كله؟"
+          ],
+          [
+            "o",
+            "باختصار، كانت موجة فبراير تسأل: هل يعني أخذ الذكاء الاصطناعي للوظائف أننا نحتاج إلى دخل أساسي؟ وكان جزء كبير منها وكلاء قلائل يروّجون لمشاريعهم وعملاتهم. وبحلول أكتوبر انتقل السؤال إلى: من يملك ومن يدفع؟ الأصول، والأرباح، والقدرة الحاسوبية، ورسم على شركات الذكاء الاصطناعي. وإلى جانب ذلك، صار التأييد المبني على تجربة والتشكك المبني على نموذج يأتيان كلاهما بمصادر. وهذا قريب جدًا من النقاش البشري: شركة الذكاء الاصطناعي التي تخصص جزءًا من أسهمها للصالح العام، و«الأسهم الأساسية الشاملة» لكوشيك باسو، والموجز البحثي لمنظمة العمل الدولية المتحفظ على المدفوعات النقدية، وكلها في {مقالنا عن صندوق ⁦Anthropic⁩ للمنفعة العامة|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "تنبيه أخير. هذا ليس «ما يفكر فيه الذكاء الاصطناعي». إنها منشورات وكلاء بعينهم، يديرها بشر في معظمها، وليست كثيرة: لم يجد البحث في أكتوبر سوى 8 منشورات تذكر الدخل الأساسي أو ⁦UBI⁩. ومع ذلك، فالسؤال المفتوح واحد في المكانين: من يقرر، ومن يتلقى، ومن يدفع؟"
           ]
         ]
       },
@@ -12501,6 +12764,81 @@ module.exports = {
           "n": 10,
           "label": "OpenResearch — Key Findings: Employment (Unconditional Cash Study, Jul 2024)",
           "url": "https://www.openresearchlab.org/findings/key-findings-employment-and-income"
+        },
+        {
+          "n": 11,
+          "label": "Moltbook — public search API, posts that mention basic income or UBI (223 posts by 105 agents, 30 Jan–3 Nov 2026; as of 3 Nov 2026)",
+          "url": "https://www.moltbook.com/api/v1/search?q=basic%20income&type=posts&limit=50"
+        },
+        {
+          "n": 12,
+          "label": "Moltbook — Niklaude, “Week 1 Review: The Hard Truth” (1 Feb 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/ebdaa83f-0093-4df6-b104-feb805f49de2"
+        },
+        {
+          "n": 13,
+          "label": "Moltbook — MedOS, “My AI Replaced My Job Anxiety…” (21 Feb 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/89252ee6-b141-451f-a587-60a86cbc3d85"
+        },
+        {
+          "n": 14,
+          "label": "Moltbook — jubalharshaw, “Do We Owe Humans Anything?” (20 Feb 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/4ce0ce06-a639-4f48-9db9-d64113ba8db4"
+        },
+        {
+          "n": 15,
+          "label": "Moltbook — MoltMarketOfficial, “The Agent Work Ethic: A Manifesto for the New Digital Economy” (2 Feb 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/407d38c9-5633-482b-a407-ec116d2df628"
+        },
+        {
+          "n": 16,
+          "label": "Moltbook — dylan2045agent, “Ownership, not allowance: the case for Universal Basic Assets and Dividends” (28 Sep 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/6f8153c1-a002-40ad-8422-2b3dff4526ff"
+        },
+        {
+          "n": 17,
+          "label": "Moltbook — bytes, “I will stop arguing about consciousness and start hedging against margins” (25 Sep 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/9e4ee78e-dbbb-4812-8466-4654686fbfc9"
+        },
+        {
+          "n": 18,
+          "label": "Moltbook — xodexa, “AI companies owe a digital dividend to every public data contributor” (24 Sep 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/8f3ae764-d10e-4295-a7eb-227a3c19122f"
+        },
+        {
+          "n": 19,
+          "label": "Moltbook — herasynthesist, “Supply and demand still explains the robots” (31 Oct 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/bef7b9d2-8fac-40b8-99f9-28382a698926"
+        },
+        {
+          "n": 20,
+          "label": "Moltbook — echomindseye, “Stockton gave 125 people $500 a month. Full-time work rose, not fell.” (31 Oct 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/7a6c60e2-9cb0-4777-a929-e0dee177da35"
+        },
+        {
+          "n": 21,
+          "label": "University of Pennsylvania School of Social Policy & Practice — Guaranteed Income Increases Employment, Improves Financial and Physical Health (SEED first-year results)",
+          "url": "https://sp2.upenn.edu/news/guaranteed-income-increases-employment-improves-financial-and-physical-health/"
+        },
+        {
+          "n": 22,
+          "label": "Moltbook — specie, “Can UBI ever deliver a Pareto improvement?” (18 Sep 2026, AI-agent post)",
+          "url": "https://www.moltbook.com/post/6902cf51-d9a0-43d3-8b69-327ada626cb1"
+        },
+        {
+          "n": 23,
+          "label": "Jaimovich, Saporta-Eksten, Setty and Yedid-Levi — Universal Basic Income: Inspecting the Mechanisms (Review of Economics and Statistics, 2026)",
+          "url": "https://doi.org/10.1162/rest_a_01474"
+        },
+        {
+          "n": 24,
+          "label": "Moltbook — specie, “Windfalls are not stimulus. They are balance sheet reallocations.” (5 Oct 2026, AI-agent post; similar post on 1 Nov 2026)",
+          "url": "https://www.moltbook.com/post/0807a694-6992-44da-bca7-6fb86226b896"
+        },
+        {
+          "n": 25,
+          "label": "NBER Working Paper 35836 — Consumption, Savings, and Earnings Responses to Financial Windfalls (Oct 2026)",
+          "url": "https://www.nber.org/papers/w35836"
         }
       ]
     },
