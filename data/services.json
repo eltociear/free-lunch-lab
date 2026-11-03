@@ -15,7 +15,7 @@
     "de",
     "ar"
   ],
-  "count": 40,
+  "count": 39,
   "services": [
     {
       "id": "aibtc",
@@ -2817,104 +2817,6 @@
           "note": "اضغط زرًا في التطبيق مرة كل 24 ساعة لتجميع PI. كلما دعوت أشخاصًا أكثر زادت سرعة التعدين. فُتح للعامة في فبراير 2025 ويُتداول في OKX وBitget وMEXC وغيرها",
           "need": "سجّل عبر رابط الدعوة (رمز الدعوة: eltociear). لنقل عملات PI يلزم التحقق من الهوية والانتقال إلى محفظة الشبكة الرئيسية",
           "caution": "انخفض السعر بنحو 97% عن أعلى مستوى له في 2025 وهو $2.99 (نحو $0.08 في أكتوبر 2026). غير مدرج في Binance أو Coinbase أو منصات التداول اليابانية. يتطلب ضغطة يومية، فلا يتراكم إن تركته"
-        }
-      }
-    },
-    {
-      "id": "refrax",
-      "name": "Refrax ($REFRAX)",
-      "nameJa": "Refrax（$REFRAX）",
-      "category": "app",
-      "categoryName": "Passive apps",
-      "payout": "loop",
-      "officialUrl": "https://refrax.xyz/",
-      "referral": {
-        "url": "https://refrax.xyz/?ref=freelunchlab",
-        "code": "freelunchlab",
-        "note": "Maintainer's referral link; not covered by the content license"
-      },
-      "region": "global",
-      "availableFromJapan": true,
-      "inviteOnly": false,
-      "verify": [
-        {
-          "method": "none",
-          "optional": false
-        }
-      ],
-      "trust": {
-        "cash": "no",
-        "price": "no",
-        "operator": "unknown"
-      },
-      "ease": 4,
-      "added": "2026-10-30",
-      "checked": "2026-10",
-      "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/refrax/",
-      "pageUrls": {
-        "en": "https://neteru-nyukin.eltociear.workers.dev/services/refrax/",
-        "ja": "https://neteru-nyukin.eltociear.workers.dev/ja/services/refrax/",
-        "zh": "https://neteru-nyukin.eltociear.workers.dev/zh/services/refrax/",
-        "hi": "https://neteru-nyukin.eltociear.workers.dev/hi/services/refrax/",
-        "es": "https://neteru-nyukin.eltociear.workers.dev/es/services/refrax/",
-        "de": "https://neteru-nyukin.eltociear.workers.dev/de/services/refrax/",
-        "ar": "https://neteru-nyukin.eltociear.workers.dev/ar/services/refrax/"
-      },
-      "badge": {
-        "url": "https://neteru-nyukin.eltociear.workers.dev/services/refrax/?ref=badge",
-        "image": "https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg",
-        "markdown": "[![Listed on Free Lunch Lab](https://neteru-nyukin.eltociear.workers.dev/badge/listed.svg)](https://neteru-nyukin.eltociear.workers.dev/services/refrax/?ref=badge)",
-        "html": "<a href=\"https://neteru-nyukin.eltociear.workers.dev/services/refrax/?ref=badge\"><img src=\"https://neteru-nyukin.eltociear.workers.dev/badge/listed-card.svg\" alt=\"Listed on Free Lunch Lab\" width=\"240\" height=\"60\"></a>"
-      },
-      "descriptions": {
-        "en": {
-          "gain": "Pending $REFRAX points (no token yet)",
-          "note": "Season 0 quests from Refrax, a project presenting itself as decentralized storage on Solana. Sign in with X and earn points by following, posting, inviting friends and checking in daily. The site says points are to be paid as $REFRAX to the Solana wallet you add, at launch",
-          "need": "Open the referral link and sign in with X (very new X accounts can’t join). Add a Solana address to receive rewards, then do the quests and the daily check-in (sign-up from Japan confirmed in Oct 2026)",
-          "warning": "The domain was registered in October 2026, the operator is anonymous, and there are no terms and no token yet. Don’t pay anything, don’t connect a wallet that holds your funds, and don’t sign anything presented as a “claim”.",
-          "caution": "Points are neither money nor tokens, and nothing is guaranteed. Only enter a receiving address, and never share your seed phrase. Fake claim sites are common around launches, so only use links from the official X account and refrax.xyz. Whoever invited you, including this site’s operator, earns points when you finish a quest"
-        },
-        "ja": {
-          "gain": "$REFRAXの未確定ポイント（トークンは未発行）",
-          "note": "Solana上の分散型ストレージを掲げる「Refrax」のシーズン0クエスト。Xでログインし、フォローや投稿、友だちの招待、毎日のチェックインでポイントがたまる。ポイントはローンチ時に、登録したSolanaウォレットへ$REFRAXとして支払われる予定とされる",
-          "need": "紹介リンクを開き、Xアカウントでログインする（新しいXアカウントは不可）。受け取り用のSolanaアドレスを登録し、クエストとチェックインをこなす（2026年10月に日本から登録できることを確認）",
-          "warning": "ドメインは2026年10月に取得されたばかりで、運営者は匿名、規約もトークンもまだありません。お金を払ったり、資産の入ったウォレットを接続したり、「請求（claim）」と称するものに署名したりしないでください。",
-          "caution": "ポイントはお金でもトークンでもなく、受け取れる保証はない。登録するのは受け取り用のアドレスだけにし、シードフレーズは誰にも教えないこと。ローンチ前後は偽の請求サイトが出やすいので、公式Xとrefrax.xyz以外のリンクは使わない。招待した側（当サイト運営者を含む）には、あなたがクエストを終えるとポイントが入る"
-        },
-        "zh": {
-          "gain": "待定的 $REFRAX 积分（代币尚未发行）",
-          "note": "自称 Solana 上去中心化存储的项目“Refrax”的第 0 季任务。用 X 登录，通过关注、发帖、邀请朋友和每日签到积累积分。网站称积分将在上线时以 $REFRAX 发放到你登记的 Solana 钱包",
-          "need": "打开邀请链接，用 X 登录（刚注册的 X 账号不能参加）。登记接收奖励的 Solana 地址，然后完成任务并每日签到（已于 2026 年 10 月确认可从日本注册）",
-          "warning": "域名是 2026 年 10 月才注册的，运营者匿名，也还没有条款和代币。请不要付款，不要连接存有资产的钱包，也不要签署任何号称“领取（claim）”的东西。",
-          "caution": "积分既不是钱也不是代币，不保证能领到。只登记接收地址，不要把助记词告诉任何人。上线前后常出现假的领取网站，请只使用官方 X 和 refrax.xyz 的链接。邀请人（包括本站运营者）会在你完成任务时获得积分"
-        },
-        "hi": {
-          "gain": "पेंडिंग $REFRAX पॉइंट (अभी टोकन नहीं)",
-          "note": "Solana पर विकेंद्रीकृत स्टोरेज होने का दावा करने वाले प्रोजेक्ट Refrax के सीज़न 0 के काम। X से साइन इन करें और फ़ॉलो, पोस्ट, दोस्तों को बुलाने और रोज़ के चेक-इन से पॉइंट कमाएँ। साइट के अनुसार लॉन्च पर पॉइंट आपके जोड़े Solana वॉलेट में $REFRAX के रूप में दिए जाएँगे",
-          "need": "रेफ़रल लिंक खोलें और X से साइन इन करें (बहुत नए X अकाउंट शामिल नहीं हो सकते)। इनाम के लिए Solana पता जोड़ें, फिर काम और रोज़ का चेक-इन करें (अक्टूबर 2026 में जापान से साइन अप की पुष्टि)",
-          "warning": "डोमेन अक्टूबर 2026 में ही रजिस्टर हुआ है, संचालक गुमनाम है, और अभी न शर्तें हैं न टोकन। कोई भुगतान न करें, पैसे वाला वॉलेट न जोड़ें, और “क्लेम” बताई गई किसी चीज़ पर साइन न करें।",
-          "caution": "पॉइंट न पैसा हैं न टोकन, और कुछ भी पक्का नहीं। सिर्फ़ पाने वाला पता डालें, और सीड फ़्रेज़ किसी को न बताएँ। लॉन्च के आसपास नकली क्लेम साइटें आम हैं, इसलिए सिर्फ़ आधिकारिक X और refrax.xyz के लिंक इस्तेमाल करें। आपको बुलाने वाले (इस साइट के संचालक समेत) को आपके काम पूरा करने पर पॉइंट मिलते हैं"
-        },
-        "es": {
-          "gain": "Puntos $REFRAX pendientes (aún sin token)",
-          "note": "Misiones de la temporada 0 de Refrax, un proyecto que se presenta como almacenamiento descentralizado en Solana. Inicia sesión con X y gana puntos siguiendo, publicando, invitando a amigos y con el registro diario. El sitio dice que los puntos se pagarán como $REFRAX en la cartera de Solana que añadas, en el lanzamiento",
-          "need": "Abre el enlace de invitación e inicia sesión con X (las cuentas de X muy nuevas no pueden participar). Añade una dirección de Solana para recibir y haz las misiones y el registro diario (se comprobó en octubre de 2026 que el registro funciona desde Japón)",
-          "warning": "El dominio se registró en octubre de 2026, el operador es anónimo y aún no hay términos ni token. No pagues nada, no conectes una cartera con fondos y no firmes nada que se presente como «claim».",
-          "caution": "Los puntos no son dinero ni tokens, y nada está garantizado. Introduce solo una dirección de recepción y nunca compartas tu frase semilla. En los lanzamientos abundan los sitios de «claim» falsos, así que usa solo enlaces del X oficial y de refrax.xyz. Quien te invitó, incluido el operador de este sitio, gana puntos cuando completas una misión"
-        },
-        "de": {
-          "gain": "Vorläufige $REFRAX-Punkte (noch kein Token)",
-          "note": "Season-0-Aufgaben von Refrax, einem Projekt, das sich als dezentraler Speicher auf Solana präsentiert. Mit X anmelden und Punkte sammeln durch Folgen, Posten, Einladen und den täglichen Check-in. Laut Seite werden die Punkte beim Launch als $REFRAX an die hinterlegte Solana-Wallet ausgezahlt",
-          "need": "Den Einladungslink öffnen und mit X anmelden (sehr neue X-Konten können nicht teilnehmen). Eine Solana-Adresse zum Empfang hinterlegen, dann die Aufgaben und den täglichen Check-in erledigen (im Oktober 2026 bestätigt: Anmeldung aus Japan möglich)",
-          "warning": "Die Domain wurde im Oktober 2026 registriert, der Betreiber ist anonym, und es gibt noch keine Bedingungen und keinen Token. Zahle nichts, verbinde keine Wallet mit Guthaben und signiere nichts, was als „Claim“ bezeichnet wird.",
-          "caution": "Punkte sind weder Geld noch Token, und nichts ist garantiert. Nur eine Empfangsadresse eintragen und die Seed-Phrase nie weitergeben. Rund um Launches sind gefälschte Claim-Seiten häufig, nutze daher nur Links vom offiziellen X-Konto und von refrax.xyz. Wer dich eingeladen hat, auch der Betreiber dieser Seite, bekommt Punkte, wenn du eine Aufgabe erledigst"
-        },
-        "ar": {
-          "gain": "نقاط $REFRAX معلّقة (لا يوجد رمز بعد)",
-          "note": "مهام الموسم 0 من Refrax، مشروع يقدّم نفسه تخزينًا لامركزيًا على Solana. سجّل الدخول بحساب X واكسب نقاطًا بالمتابعة والنشر ودعوة الأصدقاء وتسجيل الحضور اليومي. يقول الموقع إن النقاط ستُدفع عند الإطلاق بعملة $REFRAX إلى محفظة Solana التي تضيفها",
-          "need": "افتح رابط الإحالة وسجّل الدخول بحساب X (لا يمكن للحسابات الجديدة جدًا المشاركة). أضف عنوان Solana للاستلام، ثم أنجز المهام وتسجيل الحضور اليومي (تأكدنا في أكتوبر 2026 أن التسجيل يعمل من اليابان)",
-          "warning": "سُجّل النطاق في أكتوبر 2026، والمشغّل مجهول الهوية، ولا توجد شروط ولا رمز بعد. لا تدفع أي شيء، ولا تربط محفظة فيها أموالك، ولا توقّع على أي شيء يُقدَّم على أنه «مطالبة».",
-          "caution": "النقاط ليست مالًا ولا رموزًا، ولا شيء مضمون. أدخل عنوان استلام فقط، ولا تشارك عبارة الاسترداد أبدًا. مواقع المطالبة المزيفة شائعة حول الإطلاقات، فاستخدم فقط روابط حساب X الرسمي وrefrax.xyz. من دعاك، بمن فيهم مشغّل هذا الموقع، يكسب نقاطًا عندما تُنهي مهمة"
         }
       }
     },

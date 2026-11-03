@@ -723,29 +723,6 @@ What you need: Log in through the referral link with X or another account and re
 
 Cautions: Points are not money, and nothing is guaranteed. There is no official tradable LIFE token, and no token or airdrop is promised. Never share your seed phrase, and don’t connect a wallet that holds funds. If asked to pay, suspect a scam. Whoever invited you, including this site’s operator, earns points from your activity
 
-### Refrax ($REFRAX)
-
-- Page: https://neteru-nyukin.eltociear.workers.dev/services/refrax/
-- Category: Passive apps
-- Payout: recurring
-- Region: available in Japan and worldwide
-- Verification: No verification
-- Trust check: Cash out: No; Market price: No; Public operator: Unverified
-- Last checked: 2026-10
-- Official URL: https://refrax.xyz/
-- Referral link (maintainer's own referral; not covered by the content license): https://refrax.xyz/?ref=freelunchlab
-- Referral code (maintainer's own): freelunchlab
-
-Season 0 quests from Refrax, a project presenting itself as decentralized storage on Solana. Sign in with X and earn points by following, posting, inviting friends and checking in daily. The site says points are to be paid as $REFRAX to the Solana wallet you add, at launch
-
-What you get: Pending $REFRAX points (no token yet)
-
-What you need: Open the referral link and sign in with X (very new X accounts can’t join). Add a Solana address to receive rewards, then do the quests and the daily check-in (sign-up from Japan confirmed in Oct 2026)
-
-Warning: The domain was registered in October 2026, the operator is anonymous, and there are no terms and no token yet. Don’t pay anything, don’t connect a wallet that holds your funds, and don’t sign anything presented as a “claim”.
-
-Cautions: Points are neither money nor tokens, and nothing is guaranteed. Only enter a receiving address, and never share your seed phrase. Fake claim sites are common around launches, so only use links from the official X account and refrax.xyz. Whoever invited you, including this site’s operator, earns points when you finish a quest
-
 ### Sible Network ($SIB)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/services/siblenetwork/
@@ -1193,7 +1170,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-02. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-03. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -1320,7 +1297,7 @@ The Encointer blockchain node and its command-line client, which run the communi
 - Language: JavaScript
 - License: AGPL-3.0
 - Stars: 350
-- Last commit: 2026-10-26
+- Last commit: 2026-11-02
 
 End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum
 
@@ -1365,7 +1342,7 @@ The GoodDollar wallet: the web and React Native app where people claim their dai
 - Language: TypeScript
 - License: AGPL-3.0
 - Stars: 6
-- Last commit: 2026-11-01
+- Last commit: 2026-11-02
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app
@@ -1412,7 +1389,7 @@ Mobile wallet for Encointer: join the in-person meetups, receive the community c
 - Language: TypeScript
 - License: MIT (LICENSE)
 - Stars: 162
-- Last commit: 2026-11-02
+- Last commit: 2026-11-03
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
@@ -1456,7 +1433,7 @@ Smart contracts for the original Proof of Humanity (v1) by Kleros: the registry 
 - Language: Python
 - License: AGPL-3.0
 - Stars: 170
-- Last commit: 2026-11-02
+- Last commit: 2026-11-03
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 
@@ -1467,7 +1444,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-02
+- Last commit: 2026-11-03
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 

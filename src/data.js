@@ -2489,6 +2489,8 @@ module.exports = {
         "caution": "النقاط ليست مالًا، ولا شيء مضمون. لا يوجد رمز ⁦LIFE⁩ رسمي قابل للتداول، ولا وعد برمز أو إنزال جوي. لا تشارك عبارة الاسترداد مع أحد، ولا تربط محفظة فيها أموال. إن طُلب منك الدفع فاشتبه في احتيال. من دعاك، بمن فيهم مشغّل هذا الموقع، يكسب نقاطًا من نشاطك"
       }
     },
+    // 2026-11-03 非表示: refrax.xyz（サイト・紹介リンク・robots.txt）が 404。復活したら
+    // "ref": "https://refrax.xyz/?ref=freelunchlab" と "code": "freelunchlab" を戻せば再表示される
     {
       "id": "refrax",
       "name": "Refrax（$REFRAX）",
@@ -2498,8 +2500,6 @@ module.exports = {
       "global": true,
       "ease": 4,
       "official": "https://refrax.xyz/",
-      "code": "freelunchlab",
-      "ref": "https://refrax.xyz/?ref=freelunchlab",
       "added": "2026-10-30",
       "checked": "2026-10",
       "trust": {

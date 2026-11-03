@@ -1,9 +1,9 @@
 {
-  "fetchedOn": "2026-11-02",
+  "fetchedOn": "2026-11-03",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium2s": {
       "stars": 6,
-      "lastCommit": "2026-11-01",
+      "lastCommit": "2026-11-02",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "TypeScript"
@@ -94,14 +94,14 @@
     },
     "github.com:PolicyEngine/policyengine-uk": {
       "stars": 53,
-      "lastCommit": "2026-11-02",
+      "lastCommit": "2026-11-03",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
     },
     "github.com:PolicyEngine/policyengine-us": {
       "stars": 170,
-      "lastCommit": "2026-11-02",
+      "lastCommit": "2026-11-03",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
@@ -164,7 +164,7 @@
     },
     "github.com:okTurtles/group-income": {
       "stars": 350,
-      "lastCommit": "2026-10-26",
+      "lastCommit": "2026-11-02",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "JavaScript"
@@ -178,7 +178,7 @@
     },
     "github.com:socialincome-san/public": {
       "stars": 162,
-      "lastCommit": "2026-11-02",
+      "lastCommit": "2026-11-03",
       "archived": false,
       "license": null,
       "language": "TypeScript"
