@@ -3,7 +3,7 @@
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium2s": {
       "stars": 6,
-      "lastCommit": "2026-11-02",
+      "lastCommit": "2026-11-04",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "TypeScript"
@@ -17,7 +17,7 @@
     },
     "git.duniter.org:clients/ginkgo": {
       "stars": 8,
-      "lastCommit": "2026-11-03",
+      "lastCommit": "2026-11-04",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Dart"
@@ -86,7 +86,7 @@
       "language": "Jupyter Notebook"
     },
     "github.com:PSLmodels/Tax-Calculator": {
-      "stars": 315,
+      "stars": 316,
       "lastCommit": "2026-11-03",
       "archived": false,
       "license": null,
@@ -185,7 +185,7 @@
     },
     "github.com:worldcoin/world-id-protocol": {
       "stars": 42,
-      "lastCommit": "2026-11-03",
+      "lastCommit": "2026-11-04",
       "archived": false,
       "license": "MIT",
       "language": "Rust"

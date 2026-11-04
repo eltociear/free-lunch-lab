@@ -394,6 +394,63 @@ function shareBtns(lang) {
     + `<button class="btn sb-copy" type="button" id="copyLink">${esc(L.copyLink)}</button>`;
 }
 
+// ---- 読みもののシェア（エッセイ・年表・ニュース）。X の投稿画面（intent）・リンクのコピー・端末のシェア。外部スクリプトなし
+// URL には ?s=share を付けて、Worker の記録（blob3）で計算機の s=calc と分けて数える
+const XSVG = '<svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>';
+const shareUrlOf = (url, hash = '') => `${url}?s=share${hash ? `#${hash}` : ''}`;
+// X の文字数（twitter-text v3）: URL は 23、下の範囲の文字は 1、それ以外（漢字・かな・絵文字・…など）は 2。上限 280
+const X_LIGHT = [[0, 4351], [8192, 8205], [8208, 8223], [8242, 8247]];
+const xWeight = t => [...t.normalize('NFC')].reduce((n, ch) => { const c = ch.codePointAt(0); return n + (X_LIGHT.some(([a, b]) => c >= a && c <= b) ? 1 : 2); }, 0);
+const X_MAX = 280, X_URL = 23;
+const SHARE_LOG = [];
+// 投稿文は「見出し + 改行 + URL + 空白 + ハッシュタグ1つ」。長ければ見出しを … で切る（空白で区切る言語は語の切れ目で）
+function xShare(head, url, lang) {
+  const tag = T[lang].calcTag;
+  const fixed = 1 + X_URL + 1 + xWeight(tag);
+  let h = head.trim(), cut = false;
+  if (xWeight(h) + fixed > X_MAX) {
+    cut = true;
+    let cs = [...h];
+    while (cs.length && xWeight(cs.join('')) + 2 + fixed > X_MAX) cs.pop();
+    let s = cs.join('');
+    const sp = s.lastIndexOf(' ');
+    if (!['ja', 'zh'].includes(lang) && sp > s.length - 24 && sp > 0) s = s.slice(0, sp);
+    h = s.replace(/[\s,.:;、，。：・\-–—]+$/u, '') + '…';
+  }
+  const text = `${h}\n${url} ${tag}`;
+  const w = xWeight(h) + fixed;
+  if (w > X_MAX) throw new Error(`share text over ${X_MAX} on X (${w}): ${url}`);
+  SHARE_LOG.push({ lang, url, w, cut });
+  return { text, head: h, tag, w, intent: `https://x.com/intent/post?text=${encodeURIComponent(text)}` };
+}
+// 年表のカードは「内容」の最初の文だけを使う（長い説明は投稿に向かないので）
+const firstClause = t => t.split(/[。；;؛]|\.\s(?=\D)/u)[0].trim();
+// 行（primary の X ボタンは金、ほかは静かな枠線）。compact は見出しの下に置く小さい版
+function shareRow(lang, head, url, { compact = false, label = '', id = '' } = {}) {
+  const L = T[lang], x = xShare(head, url, lang);
+  const native = `${x.head} ${x.tag}`;
+  return `<div class="shr${compact ? ' shr-top' : ''}"${id ? ` id="${id}"` : ''}>${label ? `<p class="shr-h">${esc(label)}</p>` : ''}<a class="btn ${compact ? 'shr-o' : 'shr-x'}" href="${esc(x.intent)}" target="_blank" rel="noopener">${XSVG}<span>${esc(L.calcShareX)}</span></a><button class="btn shr-o" type="button" data-copy="${esc(url)}">${esc(L.copyLink)}</button><button class="btn shr-o" type="button" data-native="${esc(url)}" data-text="${esc(native)}" hidden>${esc(L.share)}</button></div>`;
+}
+// カードやニュース1件ごとの小さいリンク
+function shareMini(lang, head, url) {
+  const L = T[lang], x = xShare(head, url, lang);
+  return `<p class="shr-mini"><a href="${esc(x.intent)}" target="_blank" rel="noopener">${XSVG}<span>${esc(L.calcShareX)}</span></a><button type="button" data-copy="${esc(url)}">${esc(L.copyLink)}</button></p>`;
+}
+function shareScript(L) {
+  return `<script>
+(function(){
+  var toast=document.getElementById('toast'),timer,done=${JSON.stringify(L.linkCopied)};
+  function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
+  if(navigator.share)[].forEach.call(document.querySelectorAll('[data-native]'),function(b){b.hidden=false});
+  document.addEventListener('click',function(e){
+    var c=e.target.closest('[data-copy]'),n=e.target.closest('[data-native]');
+    if(c){var u=c.getAttribute('data-copy');try{navigator.clipboard.writeText(u).then(function(){say(done)},function(){prompt('',u)})}catch(err){prompt('',u)}}
+    if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
+  });
+})();
+</script>`;
+}
+
 function filters(lang) {
   const cats = Object.keys(CATS.en).filter(c => c === 'all' || live.some(s => s.cat === c));
   return cats.map(c => {
@@ -731,6 +788,18 @@ const DETAIL_CSS = `
 .bn-week>.oss-note{margin-top:8px}
 .tl-more a,.tl-links a,.related a{display:inline-block;padding-block:11px;margin-block:-11px}
 @media (max-width:520px){.tl-card dl{grid-template-columns:1fr}.tl-card dt{padding-top:6px}}
+.shr{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
+.shr-h{flex-basis:100%;font-weight:700;font-size:.95rem}
+.shr .btn{gap:8px;border-radius:999px;padding:10px 20px;min-height:44px}
+.shr-x{background:var(--cta);color:var(--cta-ink);transition:background-color .15s ease}
+.shr-x:hover{background:var(--cta-hover)}
+.shr-o{background:transparent;color:var(--ink);border:1px solid #4A5672!important;transition:border-color .15s ease}
+.shr-o:hover{border-color:var(--muted)!important}
+.orgs-head .shr{margin-top:16px;padding-top:0;border-top:0}
+.shr-top{gap:8px}.shr-top .btn{min-height:40px;padding:6px 14px;font-size:.84rem}
+.shr-mini{display:flex;flex-wrap:wrap;gap:4px 8px;margin-top:4px;font-size:.8125rem}
+.shr-mini a,.shr-mini button{font:inherit;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);text-decoration:none;cursor:pointer;transition:color .15s ease,border-color .15s ease}
+.shr-mini a:hover,.shr-mini button:hover{color:var(--ink);border-color:#4A5672}
 .graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
 .grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .tomb{flex:none;color:var(--muted);margin-top:2px}
@@ -1077,15 +1146,17 @@ function essayPage(e, lang) {
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a></li><li aria-current="page">${esc(ttl)}</li></ol></nav>
 <main class="essay">
 <article>
-<header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p></header>
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p>
+${shareRow(lang, ttl, shareUrlOf(url), { compact: true })}</header>
 <div class="essay-body">${blocks}</div>
+${shareRow(lang, ttl, shareUrlOf(url), { label: L.essayShare, id: 'share' })}
 ${relatedLinks(lang, essayList(e.related))}
 ${GUIDES.filter(g => g.essay === e.id).map(g => guideLink(lang, g, 'related g-rel')).join('')}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
 </article>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, image: ogImage(`essay/${lang}/${e.id}.jpg`) });
+  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L), image: ogImage(`essay/${lang}/${e.id}.jpg`) });
 }
 function essaysIndex(lang) {
   const L = T[lang];
@@ -1279,16 +1350,17 @@ function timelinePage(lang) {
     if (i.grave) links.push(`<a href="${gravePath(lang)}#grave-${i.grave}">${esc(L.graveTitle)}</a>`);
     const essays = essayList(i.essays);
     return `<li class="tl-item tl-${i.type}" id="tl-${i.id}"><div class="tl-when"><span class="dot" dir="ltr">${esc(i.years)}</span></div><div class="tl-card"><p class="tl-type">${esc(TYPE[i.type])}</p><h2 dir="auto">${esc(i.name)}</h2><p class="tl-place">${esc(t(i.place))}</p>
-<dl><dt>${esc(L.tlWho)}</dt><dd>${esc(t(i.who))}</dd><dt>${esc(L.tlPaid)}</dt><dd>${esc(t(i.paid))}</dd>${t(i.result) ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(t(i.result))}</dd>` : ''}<dt>${esc(L.tlSource)}</dt><dd><a href="${esc(i.source)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(i.source).hostname.replace(/^www\./, ''))}</a></dd></dl>${links.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${links.join(' · ')}</p>` : ''}${essays.length ? `<p class="tl-links"><span>${esc(L.essayRelated)}:</span> ${essays.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : ''}</div></li>`;
+<dl><dt>${esc(L.tlWho)}</dt><dd>${esc(t(i.who))}</dd><dt>${esc(L.tlPaid)}</dt><dd>${esc(t(i.paid))}</dd>${t(i.result) ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(t(i.result))}</dd>` : ''}<dt>${esc(L.tlSource)}</dt><dd><a href="${esc(i.source)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(i.source).hostname.replace(/^www\./, ''))}</a></dd></dl>${links.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${links.join(' · ')}</p>` : ''}${essays.length ? `<p class="tl-links"><span>${esc(L.essayRelated)}:</span> ${essays.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : ''}${shareMini(lang, `${i.name}: ${firstClause(t(i.paid))}`, shareUrlOf(tlAbs(lang), `tl-${i.id}`))}</div></li>`;
   }).join('\n');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.tlTitle)}</li></ol></nav>
 <main class="orgs">
-<header class="orgs-head"><p class="eyebrow">${esc(L.ebTimeline)}</p><h1>${esc(L.tlTitle)}</h1><p class="orgs-intro">${esc(L.tlIntro)}</p></header>
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebTimeline)}</p><h1>${esc(L.tlTitle)}</h1><p class="orgs-intro">${esc(L.tlIntro)}</p>
+${shareRow(lang, L.tlTitle, shareUrlOf(tlAbs(lang)))}</header>
 <ol class="tl">${items}</ol>
 <p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${ossPath(lang)}">${esc(L.ossTitle)}</a> · <a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a></p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title, desc: L.tlDesc, hrefFor: tlAbs, pathFor: tlPath, ld, ogType: 'website', body });
+  return shell(lang, { title, desc: L.tlDesc, hrefFor: tlAbs, pathFor: tlPath, ld, ogType: 'website', body, script: shareScript(L) });
 }
 
 // ---- ベーシックインカム・ニュース（/news/）。外部のニュースを週ごとにまとめる（BI_NEWS）。要約は自分たちの言葉で、出典つき
@@ -1302,7 +1374,7 @@ function biNewsItem(x, lang) {
   return `<li class="org bn" id="n-${x.id}"><p class="bn-meta"><time datetime="${x.date}">${esc(longDate(x.date, lang))}</time><span>${esc(BI_NEWS_REGIONS[x.region][lang])}</span><span class="tl-type">${esc(L['biNewsTag_' + x.tag])}</span></p>
 <h3 class="bn-h">${esc(x.title[lang])}</h3>
 <p>${esc(x.summary[lang])}</p>
-<p class="tl-links"><span>${esc(L.biNewsSource)}:</span> ${srcs}</p>${onSite.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${onSite.join(' · ')}</p>` : ''}</li>`;
+<p class="tl-links"><span>${esc(L.biNewsSource)}:</span> ${srcs}</p>${onSite.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${onSite.join(' · ')}</p>` : ''}${shareMini(lang, x.title[lang], shareUrlOf(biNewsAbs(lang), `n-${x.id}`))}</li>`;
 }
 function biNewsPage(lang) {
   const L = T[lang];
@@ -1332,7 +1404,7 @@ ${weeks}
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   const extraHead = `<link rel="alternate" type="application/rss+xml" title="${esc(L.biNewsTitle)} RSS" href="${biNewsFeedAbs(lang)}">\n`;
-  return shell(lang, { title, desc: clip(L.biNewsDesc, lang), hrefFor: biNewsAbs, pathFor: biNewsPath, ld, ogType: 'website', body, extraHead, image: ogImage(`news/${lang}/index.jpg`) });
+  return shell(lang, { title, desc: clip(L.biNewsDesc, lang), hrefFor: biNewsAbs, pathFor: biNewsPath, ld, ogType: 'website', body, extraHead, script: shareScript(L), image: ogImage(`news/${lang}/index.jpg`) });
 }
 
 // ---- 認証方法ごとのページ（/verify/{method}/）。カードは一覧と同じ部品を使う。必須を先、任意を後に
@@ -2097,6 +2169,7 @@ for (const [file, txt] of [['llms.txt', llmsTxt], ['llms-full.txt', llmsFull]]) 
 // Cloudflare の静的アセットは .txt を charset なしの text/plain で返すので、_headers で utf-8 を明示する（_headers 自体は配信されない）
 fs.writeFileSync(path.join(OUT, '_headers'), ['/llms.txt', '/llms-full.txt'].map(p => `${p}\n  Content-Type: text/plain; charset=utf-8\n`).join('') + '/fonts/*\n  Cache-Control: public, max-age=31536000, immutable\n');
 
+{ const max = SHARE_LOG.reduce((a, b) => (b.w > a.w ? b : a)); console.log(`share texts: ${SHARE_LOG.length} (X weighted max ${max.w}/${X_MAX}, ${SHARE_LOG.filter(x => x.cut).length} titles trimmed)`); }
 // README.md のサービス表・団体一覧も同期する
 require('./readme.js').updateReadme();
 console.log(`built ${LANGS.length} pages + ${LANGS.length * live.length} service pages + ${LANGS.length} organization pages + ${LANGS.length} open-source pages (${OSSP.length} projects, ${OSSP.filter(p => p.dormant).length} dormant, ${OPEN_DATA.length} datasets), ${live.length} services shown (${SERVICES.length - live.length} hidden)`);

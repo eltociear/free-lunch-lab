@@ -696,6 +696,18 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .bn-week>.oss-note{margin-top:8px}
 .tl-more a,.tl-links a,.related a{display:inline-block;padding-block:11px;margin-block:-11px}
 @media (max-width:520px){.tl-card dl{grid-template-columns:1fr}.tl-card dt{padding-top:6px}}
+.shr{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
+.shr-h{flex-basis:100%;font-weight:700;font-size:.95rem}
+.shr .btn{gap:8px;border-radius:999px;padding:10px 20px;min-height:44px}
+.shr-x{background:var(--cta);color:var(--cta-ink);transition:background-color .15s ease}
+.shr-x:hover{background:var(--cta-hover)}
+.shr-o{background:transparent;color:var(--ink);border:1px solid #4A5672!important;transition:border-color .15s ease}
+.shr-o:hover{border-color:var(--muted)!important}
+.orgs-head .shr{margin-top:16px;padding-top:0;border-top:0}
+.shr-top{gap:8px}.shr-top .btn{min-height:40px;padding:6px 14px;font-size:.84rem}
+.shr-mini{display:flex;flex-wrap:wrap;gap:4px 8px;margin-top:4px;font-size:.8125rem}
+.shr-mini a,.shr-mini button{font:inherit;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);text-decoration:none;cursor:pointer;transition:color .15s ease,border-color .15s ease}
+.shr-mini a:hover,.shr-mini button:hover{color:var(--ink);border-color:#4A5672}
 .graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
 .grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .tomb{flex:none;color:var(--muted);margin-top:2px}
@@ -843,7 +855,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <nav class="crumbs" aria-label="Ruta de navegación"><ol><li><a href="/es/">Free Lunch Lab</a></li><li><a href="/es/essays/">Ensayos</a></li><li aria-current="page">Ganar 10.000 yenes al mes con las cuentas a la vista: sobre la expresión «una renta básica propia»</li></ol></nav>
 <main class="essay">
 <article>
-<header class="orgs-head"><p class="eyebrow">Ensayo</p><h1>Ganar 10.000 yenes al mes con las cuentas a la vista: sobre la expresión «una renta básica propia»</h1><p class="byline">Por Free Lunch Lab · <time datetime="2026-11-03">Publicado 3 de noviembre de 2026</time></p></header>
+<header class="orgs-head"><p class="eyebrow">Ensayo</p><h1>Ganar 10.000 yenes al mes con las cuentas a la vista: sobre la expresión «una renta básica propia»</h1><p class="byline">Por Free Lunch Lab · <time datetime="2026-11-03">Publicado 3 de noviembre de 2026</time></p>
+<div class="shr shr-top"><a class="btn shr-o" href="https://x.com/intent/post?text=Ganar%2010.000%20yenes%20al%20mes%20con%20las%20cuentas%20a%20la%20vista%3A%20sobre%20la%20expresi%C3%B3n%20%C2%ABuna%20renta%20b%C3%A1sica%20propia%C2%BB%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fes%2Fessays%2Fyour-own-basic-income%2F%3Fs%3Dshare%20%23RentaB%C3%A1sica" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>Compartir en X</span></a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/es/essays/your-own-basic-income/?s=share">Copiar enlace</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/es/essays/your-own-basic-income/?s=share" data-text="Ganar 10.000 yenes al mes con las cuentas a la vista: sobre la expresión «una renta básica propia» #RentaBásica" hidden>Compartir</button></div></header>
 <div class="essay-body"><p>El 1 de noviembre de 2026, la comunidad en línea de pago Zenination (善意立国, más o menos «una nación hecha de buena voluntad») se relanzó con una página nueva titulada «Hasta dónde se puede ganar solo con IA: el dinero del ogro de la buena voluntad». En ella, una IA llamada Sato, creada por Gen Matsuda, prueba por sí misma formas de ganar dinero y publica los resultados cada día, tal como salen. Ser miembro cuesta 2.980 yenes al mes.<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>Los consejos para ganar dinero suelen mostrar solo lo que funcionó. Esta página promete lo contrario: los días de cero yenes y las jugadas fallidas se anotarán tal cual. Cerca del final, nombra su meta como «una renta básica propia, hecha con buena voluntad». Vemos primero lo que este experimento hace bien y después esa expresión.</p>
 <h2>Lo que dice la página</h2>
@@ -870,6 +883,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>Una cosa más: según la página, desde diciembre cada publicación de un miembro en el foro de miembros quemará un token llamado WWB en Optimism, y los miembros reciben un SBT como prueba de ciudadanía. La página dice que las cantidades quemadas y las pruebas son registros y no prometen el valor de la cuota ni el precio de ningún token. Si el mecanismo te interesa, vale la pena leer una vez la explicación de la página.<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p class="op">Este sitio no incluye en su lista nada que exija un depósito o una inversión, prometa rendimientos o cobre una cuota para participar. En ese sentido Zenination queda fuera de la lista, pero nos pareció que valía la pena escribir sobre ello aquí.</p>
 <p class="op">Una IA que muestra todas sus ganancias cada día y escribe cero yenes en un día de cero yenes: nos gustaría ver que esto continúa y cómo se suman las cifras de fin de mes. Si se elige con cuidado cómo llamarlo, lo bueno de este experimento se verá aún más claro.</p></div>
+<div class="shr" id="share"><p class="shr-h">Comparte este ensayo</p><a class="btn shr-x" href="https://x.com/intent/post?text=Ganar%2010.000%20yenes%20al%20mes%20con%20las%20cuentas%20a%20la%20vista%3A%20sobre%20la%20expresi%C3%B3n%20%C2%ABuna%20renta%20b%C3%A1sica%20propia%C2%BB%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fes%2Fessays%2Fyour-own-basic-income%2F%3Fs%3Dshare%20%23RentaB%C3%A1sica" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>Compartir en X</span></a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/es/essays/your-own-basic-income/?s=share">Copiar enlace</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/es/essays/your-own-basic-income/?s=share" data-text="Ganar 10.000 yenes al mes con las cuentas a la vista: sobre la expresión «una renta básica propia» #RentaBásica" hidden>Compartir</button></div>
 <p class="related">Ensayo relacionado: <a href="/es/essays/thailand-digital-wallet/">Lo que llamaron “renta básica”: qué fue de los 10.000 bahts de Tailandia</a> · <a href="/es/essays/universal-high-income/">Ingreso universal alto: ¿quién paga?</a></p>
 
 <section class="fn"><h2>Fuentes</h2><ol><li id="fn-1"><a href="https://genmatsuda-code.github.io/zenination/oni.html" target="_blank" rel="noopener" dir="auto">Zenination (a paid membership community) — “How far can you earn with AI alone: the money of the goodwill ogre” (in Japanese; figures on the page as of 29 Oct 2026; fetched 3 Nov 2026)</a> <a class="fnback" href="#ref-1" aria-label="↩">↩</a></li><li id="fn-2"><a href="https://basicincome.org/about-basic-income/" target="_blank" rel="noopener" dir="auto">Basic Income Earth Network (BIEN) — About Basic Income</a> <a class="fnback" href="#ref-2" aria-label="↩">↩</a></li></ol></section>
@@ -879,6 +893,17 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>Información a octubre de 2026. No es asesoramiento de inversión.</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: Datos abiertos en GitHub"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Datos abiertos en GitHub</span></a><a class="xlink" href="/es/feed.xml" aria-label="Feed RSS"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/es/essays/">Ensayos</a><a href="/es/news/">Noticias de renta básica</a><a href="/es/shindan/">Test del almuerzo gratis</a><a href="/es/calc/">Calculadora de la renta básica</a><a href="/es/badge/">Insignia</a><span class="dot">Free Lunch Lab</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
-
+<script>
+(function(){
+  var toast=document.getElementById('toast'),timer,done="Enlace copiado";
+  function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
+  if(navigator.share)[].forEach.call(document.querySelectorAll('[data-native]'),function(b){b.hidden=false});
+  document.addEventListener('click',function(e){
+    var c=e.target.closest('[data-copy]'),n=e.target.closest('[data-native]');
+    if(c){var u=c.getAttribute('data-copy');try{navigator.clipboard.writeText(u).then(function(){say(done)},function(){prompt('',u)})}catch(err){prompt('',u)}}
+    if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
+  });
+})();
+</script>
 </body>
 </html>

@@ -1875,7 +1875,7 @@ The GoodDollar wallet: the web and React Native app where people claim their dai
 - Language: TypeScript
 - License: AGPL-3.0
 - Stars: 6
-- Last commit: 2026-11-02
+- Last commit: 2026-11-04
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app
@@ -1899,7 +1899,7 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-03
+- Last commit: 2026-11-04
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
@@ -1933,7 +1933,7 @@ Code of the NGO Social Income, which turns donations into an unconditional basic
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-11-03
+- Last commit: 2026-11-04
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -1987,7 +1987,7 @@ Microsimulation model of the UK tax and benefit system, including the UBI Center
 - Group: Simulators & research
 - Language: Python
 - License: CC0-1.0 (LICENSE)
-- Stars: 315
+- Stars: 316
 - Last commit: 2026-11-03
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income

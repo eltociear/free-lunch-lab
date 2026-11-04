@@ -694,6 +694,18 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .bn-week>.oss-note{margin-top:8px}
 .tl-more a,.tl-links a,.related a{display:inline-block;padding-block:11px;margin-block:-11px}
 @media (max-width:520px){.tl-card dl{grid-template-columns:1fr}.tl-card dt{padding-top:6px}}
+.shr{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
+.shr-h{flex-basis:100%;font-weight:700;font-size:.95rem}
+.shr .btn{gap:8px;border-radius:999px;padding:10px 20px;min-height:44px}
+.shr-x{background:var(--cta);color:var(--cta-ink);transition:background-color .15s ease}
+.shr-x:hover{background:var(--cta-hover)}
+.shr-o{background:transparent;color:var(--ink);border:1px solid #4A5672!important;transition:border-color .15s ease}
+.shr-o:hover{border-color:var(--muted)!important}
+.orgs-head .shr{margin-top:16px;padding-top:0;border-top:0}
+.shr-top{gap:8px}.shr-top .btn{min-height:40px;padding:6px 14px;font-size:.84rem}
+.shr-mini{display:flex;flex-wrap:wrap;gap:4px 8px;margin-top:4px;font-size:.8125rem}
+.shr-mini a,.shr-mini button{font:inherit;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);text-decoration:none;cursor:pointer;transition:color .15s ease,border-color .15s ease}
+.shr-mini a:hover,.shr-mini button:hover{color:var(--ink);border-color:#4A5672}
 .graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
 .grave{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .tomb{flex:none;color:var(--muted);margin-top:2px}
@@ -841,7 +853,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Free Lunch Lab</a></li><li><a href="/essays/">Essays</a></li><li aria-current="page">Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’</li></ol></nav>
 <main class="essay">
 <article>
-<header class="orgs-head"><p class="eyebrow">Essay</p><h1>Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’</h1><p class="byline">By Free Lunch Lab · <time datetime="2026-11-03">Published November 3, 2026</time></p></header>
+<header class="orgs-head"><p class="eyebrow">Essay</p><h1>Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’</h1><p class="byline">By Free Lunch Lab · <time datetime="2026-11-03">Published November 3, 2026</time></p>
+<div class="shr shr-top"><a class="btn shr-o" href="https://x.com/intent/post?text=Earning%20%C2%A510%2C000%20a%20month%20with%20the%20books%20open%3A%20on%20the%20phrase%20%E2%80%98a%20basic%20income%20of%20your%20own%E2%80%99%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fessays%2Fyour-own-basic-income%2F%3Fs%3Dshare%20%23BasicIncome" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>Share on X</span></a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/essays/your-own-basic-income/?s=share">Copy link</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/essays/your-own-basic-income/?s=share" data-text="Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’ #BasicIncome" hidden>Share</button></div></header>
 <div class="essay-body"><p>On 1 November 2026, the paid online community Zenination (善意立国, roughly “a nation built on goodwill”) relaunched with a new page titled “How far can you earn with AI alone: the money of the goodwill ogre.” In it, an AI called Sato, built by Gen Matsuda, tries ways to earn money itself and publishes the results every day, exactly as they come out. Membership costs ¥2,980 a month.<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>Money-making advice usually shows only what worked. This page promises the opposite: zero-yen days and moves that failed will be written down as they are. Near the end, it names its aim as “a basic income of your own, made with goodwill.” We look at what this experiment does well, and then at that phrase.</p>
 <h2>What the page says</h2>
@@ -868,6 +881,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>One more thing: according to the page, from December each post a member makes on the members’ board will burn a token called WWB on Optimism, and members receive an SBT as proof of citizenship. The page says the amounts burned and the proofs are records and do not promise the value of the fee or the price of any token. If the mechanism interests you, it is worth reading the page’s explanation once.<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p class="op">This site does not list anything that requires a deposit or investment, promises returns or charges a fee to take part. In that sense Zenination sits outside our list, but we thought it worth writing about here.</p>
 <p class="op">An AI showing all of its earnings every day, and writing zero yen on a zero-yen day: we would like to watch this continue and see how the month-end numbers add up. Choose carefully what to call it, and what is good about this experiment will come across even more clearly.</p></div>
+<div class="shr" id="share"><p class="shr-h">Share this essay</p><a class="btn shr-x" href="https://x.com/intent/post?text=Earning%20%C2%A510%2C000%20a%20month%20with%20the%20books%20open%3A%20on%20the%20phrase%20%E2%80%98a%20basic%20income%20of%20your%20own%E2%80%99%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fessays%2Fyour-own-basic-income%2F%3Fs%3Dshare%20%23BasicIncome" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>Share on X</span></a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/essays/your-own-basic-income/?s=share">Copy link</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/essays/your-own-basic-income/?s=share" data-text="Earning ¥10,000 a month with the books open: on the phrase ‘a basic income of your own’ #BasicIncome" hidden>Share</button></div>
 <p class="related">Related essay: <a href="/essays/thailand-digital-wallet/">The handout called ‘basic income’: what became of Thailand’s 10,000 baht</a> · <a href="/essays/universal-high-income/">Universal high income: who pays?</a></p>
 
 <section class="fn"><h2>Sources</h2><ol><li id="fn-1"><a href="https://genmatsuda-code.github.io/zenination/oni.html" target="_blank" rel="noopener" dir="auto">Zenination (a paid membership community) — “How far can you earn with AI alone: the money of the goodwill ogre” (in Japanese; figures on the page as of 29 Oct 2026; fetched 3 Nov 2026)</a> <a class="fnback" href="#ref-1" aria-label="↩">↩</a></li><li id="fn-2"><a href="https://basicincome.org/about-basic-income/" target="_blank" rel="noopener" dir="auto">Basic Income Earth Network (BIEN) — About Basic Income</a> <a class="fnback" href="#ref-2" aria-label="↩">↩</a></li></ol></section>
@@ -877,6 +891,17 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>Information as of October 2026. This is not investment advice.</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: Open data on GitHub"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Open data on GitHub</span></a><a class="xlink" href="/feed.xml" aria-label="RSS feed"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/essays/">Essays</a><a href="/news/">Basic income news</a><a href="/shindan/">Free Lunch Quiz</a><a href="/calc/">Basic income cost calculator</a><a href="/badge/">Badge</a><span class="dot">Free Lunch Lab</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
-
+<script>
+(function(){
+  var toast=document.getElementById('toast'),timer,done="Link copied";
+  function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
+  if(navigator.share)[].forEach.call(document.querySelectorAll('[data-native]'),function(b){b.hidden=false});
+  document.addEventListener('click',function(e){
+    var c=e.target.closest('[data-copy]'),n=e.target.closest('[data-native]');
+    if(c){var u=c.getAttribute('data-copy');try{navigator.clipboard.writeText(u).then(function(){say(done)},function(){prompt('',u)})}catch(err){prompt('',u)}}
+    if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
+  });
+})();
+</script>
 </body>
 </html>

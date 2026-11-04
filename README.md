@@ -158,9 +158,9 @@ Open-source code behind basic income: UBI protocols, wallets, proof of personhoo
 | Project | What it is | Language | License | Stars | Last commit |
 | --- | --- | --- | --- | --- | --- |
 | [GoodDAPP](https://github.com/GoodDollar/GoodDAPP) | The GoodDollar wallet: the web and React Native app where people claim their daily G$ ([on the site](https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/)) | JavaScript | MIT | 135 | 2026-11-01 |
-| [Cesium²](https://git.duniter.org/clients/cesium-grp/cesium2s) | Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app ([on the site](https://neteru-nyukin.eltociear.workers.dev/services/g1/)) | TypeScript | AGPL-3.0 | 6 | 2026-11-02 |
+| [Cesium²](https://git.duniter.org/clients/cesium-grp/cesium2s) | Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app ([on the site](https://neteru-nyukin.eltociear.workers.dev/services/g1/)) | TypeScript | AGPL-3.0 | 6 | 2026-11-04 |
 | [Ğecko](https://git.duniter.org/clients/gecko) | Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s ([on the site](https://neteru-nyukin.eltociear.workers.dev/services/g1/)) | Dart | AGPL-3.0 | 8 | 2026-10-31 |
-| [Ğ1nkgo](https://git.duniter.org/clients/ginkgo) | Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications ([on the site](https://neteru-nyukin.eltociear.workers.dev/services/g1/)) | Dart | AGPL-3.0 | 8 | 2026-11-03 |
+| [Ğ1nkgo](https://git.duniter.org/clients/ginkgo) | Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications ([on the site](https://neteru-nyukin.eltociear.workers.dev/services/g1/)) | Dart | AGPL-3.0 | 8 | 2026-11-04 |
 | [Encointer wallet](https://github.com/encointer/encointer-wallet-flutter) | Mobile wallet for Encointer: join the in-person meetups, receive the community currency UBI and pay locally | Dart | Apache-2.0 | 27 | 2026-06-29 |
 | [Social Income](https://github.com/socialincome-san/public) | Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app | TypeScript | MIT (LICENSE) | 162 | 2026-11-04 |
 
@@ -168,7 +168,7 @@ Open-source code behind basic income: UBI protocols, wallets, proof of personhoo
 
 | Project | What it is | Language | License | Stars | Last commit |
 | --- | --- | --- | --- | --- | --- |
-| [World ID protocol](https://github.com/worldcoin/world-id-protocol) | Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin) | Rust | MIT | 42 | 2026-11-03 |
+| [World ID protocol](https://github.com/worldcoin/world-id-protocol) | Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin) | Rust | MIT | 42 | 2026-11-04 |
 | [Proof of Humanity v2 contracts](https://github.com/Proof-Of-Humanity/proof-of-humanity-v2-contracts) | Smart contracts for Proof of Humanity v2: a registry of humans built on video submissions, vouching and Kleros disputes, which UBI tokens build on | TypeScript | MIT (package.json) | 22 | 2026-05-07 |
 | [Proof of Humanity v1 contracts](https://github.com/Proof-Of-Humanity/Proof-Of-Humanity) 💤 | Smart contracts for the original Proof of Humanity (v1) by Kleros: the registry of humans that the original $UBI token depended on. Proof of Humanity v2 has since succeeded it | JavaScript | MIT | 169 | 2021-07-24 |
 
@@ -178,7 +178,7 @@ Open-source code behind basic income: UBI protocols, wallets, proof of personhoo
 | --- | --- | --- | --- | --- | --- |
 | [PolicyEngine US](https://github.com/PolicyEngine/policyengine-us) | Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms | Python | AGPL-3.0 | 171 | 2026-11-03 |
 | [PolicyEngine UK](https://github.com/PolicyEngine/policyengine-uk) | Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals | Python | AGPL-3.0 | 53 | 2026-11-04 |
-| [Tax-Calculator](https://github.com/PSLmodels/Tax-Calculator) | Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income | Python | CC0-1.0 (LICENSE) | 315 | 2026-11-03 |
+| [Tax-Calculator](https://github.com/PSLmodels/Tax-Calculator) | Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income | Python | CC0-1.0 (LICENSE) | 316 | 2026-11-03 |
 | [OpenFisca](https://github.com/openfisca/openfisca-core) | Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes | Python | AGPL-3.0 | 252 | 2026-10-23 |
 | [MOSAIC model](https://github.com/Mosaic-AI-Policy-Institute/mosaic-model) | Economic model for funding a universal basic income from AI-automation dividends | Jupyter Notebook | MIT | 2 | 2026-01-28 |
 
