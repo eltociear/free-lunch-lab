@@ -159,6 +159,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-aec55575c4.woff2",
     "chars": "ú"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-d076e62d0b.woff2",
+    "chars": "á"
    }
   ],
   "de:body:700": [
@@ -205,6 +209,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-e1699fbe0e.woff2",
     "chars": "ú"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-bd340756a4.woff2",
+    "chars": "á"
    }
   ],
   "de:display": [
@@ -291,6 +299,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-aec55575c4.woff2",
     "chars": "ú"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-d076e62d0b.woff2",
+    "chars": "á"
    }
   ],
   "en:body:700": [
@@ -337,6 +349,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-e1699fbe0e.woff2",
     "chars": "ú"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-bd340756a4.woff2",
+    "chars": "á"
    }
   ],
   "en:display": [
@@ -415,6 +431,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-b8292e5b0f.woff2",
     "chars": "‘"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-1508bfe2a6.woff2",
+    "chars": "£"
    }
   ],
   "es:body:700": [
@@ -465,6 +485,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-d719f8807b.woff2",
     "chars": "‘"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-0cefd3743c.woff2",
+    "chars": "£"
    }
   ],
   "es:display": [
@@ -751,6 +775,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-d3e3e70cd1.woff2",
     "chars": "úぱ俸傾周尽幸息救旨昇暇歯殺況液滞病白純血越車辞辺郊鑽降黒"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-067c594106.woff2",
+    "chars": "　委慶李森湾視討訪"
    }
   ],
   "ja:body:700": [
@@ -917,6 +945,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-f73cb81b0e.woff2",
     "chars": "úぱ俸傾周尽幸息救旨昇暇歯殺況液滞病白純血越車辞辺郊鑽降黒"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-d2f42e7d5d.woff2",
+    "chars": "　委慶李森湾視討訪"
    }
   ],
   "ja:display": [
@@ -999,6 +1031,10 @@
    {
     "file": "dela-gothic-one-400-ja-e80eb1d8e7.woff2",
     "chars": "ぜん健働労子康果減考"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-87568ed345.woff2",
+    "chars": "　げァゾ久予保党募台善国在委家察審州市度得恒戦所挙李村林査森氏民永湾生米統芸術視試護贈農週郡野韓領食"
    }
   ],
   "ja:dot": [
@@ -1203,6 +1239,10 @@
    {
     "file": "noto-sans-sc-400-zh-ee1c6114dd.woff2",
     "chars": "ú串乐削叠坐垮娱掩撰暇杰森植汰汽淘炼痛绘缘肖苦血角诊贯赎车逾郊锻阵雷黑"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-20b1968be1.woff2",
+    "chars": "孙宁庆李湾爱盘竞草负野饮鲁"
    }
   ],
   "zh:body:700": [
@@ -1365,6 +1405,10 @@
    {
     "file": "noto-sans-sc-700-zh-0549e0ecb7.woff2",
     "chars": "ú串乐削叠坐垮娱掩撰暇杰森植汰汽淘炼痛绘缘肖苦血角诊贯赎车逾郊锻阵雷黑"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-47c3812a12.woff2",
+    "chars": "孙宁庆李湾爱盘竞草负野饮鲁"
    }
   ],
   "zh:display": [
@@ -1443,6 +1487,10 @@
    {
     "file": "noto-sans-sc-900-zh-2eb5a53e5c.woff2",
     "chars": "·两健减头姆孩山康曼略连阿"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-ed14784b63.woff2",
+    "chars": "久亚保克党兰农划台启周善增委孙审家察将征总报拉斯普术李村林森永湾爱版统艺视设进郡野闻集韩预食饮马鲁"
    }
   ],
   "zh:dot": [

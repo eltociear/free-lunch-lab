@@ -337,6 +337,90 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/timeline/"/>
   </url>
   <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/news/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/news/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/news/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/news/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/news/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/news/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/news/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/ja/news/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/news/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/news/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/news/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/news/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/news/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/news/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/zh/news/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/news/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/news/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/news/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/news/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/news/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/news/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/hi/news/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/news/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/news/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/news/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/news/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/news/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/news/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/es/news/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/news/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/news/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/news/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/news/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/news/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/news/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/de/news/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/news/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/news/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/news/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/news/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/news/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/news/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/ar/news/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/news/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/news/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/news/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/news/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/news/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/news/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/news/"/>
+  </url>
+  <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/open-source/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/open-source/"/>

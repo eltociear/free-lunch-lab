@@ -66,7 +66,7 @@ Some links on the site are referral links or codes. If you sign up through them,
 | [AI-DAC (World App)](https://neteru-nyukin.eltociear.workers.dev/services/aidac/) | Crypto basic income | UBI in DAC tokens | Global (海外OK) | 2026-10 |
 | [Ubiquitus](https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/) | Passive apps | A small equal cash share on the 1st of each month (Venmo) | US residents only | 2026-10 |
 | [Gradido](https://neteru-nyukin.eltociear.workers.dev/services/gradido/) | Passive apps | 20 GDD per hour of common-good work (up to 1,000 GDD a month) | Global (海外OK) | 2026-10 |
-| [WowApp](https://neteru-nyukin.eltociear.workers.dev/services/wowapp/) | Passive apps | Small rewards for daily use, games, shopping and more | Global (海外OK) | 2026-10 |
+| [WowApp](https://neteru-nyukin.eltociear.workers.dev/services/wowapp/) | Passive apps | Small rewards for daily use, games, shopping and more | Global (海外OK) | 2026-11 |
 | [Humad (World App)](https://neteru-nyukin.eltociear.workers.dev/services/humad/) | Cashback sites | Points for tapping ads and answering questions (gift cards from 1,500 pt = ¥150) | Japan only | 2026-10 |
 | [Billions](https://neteru-nyukin.eltociear.workers.dev/services/billions/) | Crypto basic income | Power points (for verifying, referring friends and taking part) | Global (海外OK) | 2026-10 |
 | [Idena (iDNA)](https://neteru-nyukin.eltociear.workers.dev/services/idena/) | Crypto basic income | iDNA (mining rewards while your node runs, plus validation rewards) | Global (海外OK) | 2026-10 |
@@ -259,7 +259,7 @@ If your project is listed on the site, you're welcome to add a "Listed on Free L
 - `fonts.js` — self-hosted web fonts: `build.js` collects the characters each language actually renders per typeface and keeps woff2 subsets of them in `src/fonts/` (fetched once from Google Fonts with `text=`; new characters add a new file, existing files never change, `FONTS_REBUILD=1` starts over)
 - `src/static/` — files copied to the site root as is (favicon, touch icon)
 - `readme.js` — regenerates the badges, service table, organizations list, open-source tables and essay list in this README from `src/data.js`
-- `data/` — `services.json`, `graveyard.json` and `open-source.json`, the open dataset written by `build.js` (also served at `/services.json`, `/graveyard.json` and `/open-source.json`); `open-source-cache.json` holds the last fetched GitHub/GitLab metadata so the build also works offline
+- `data/` — `services.json`, `graveyard.json`, `open-source.json`, `open-data.json` and `news.json`, the open dataset written by `build.js` (also served at the site root, e.g. `/services.json`, `/news.json`); `open-source-cache.json` holds the last fetched GitHub/GitLab metadata so the build also works offline
 - `oss-fetch.js` — fetches stars, last commit, archived status, license and language for the open-source list (`OSS` in `src/data.js`) from the GitHub and GitLab APIs into `data/open-source-cache.json`; `build.js` runs it first and keeps the cache on any network error (uses `GITHUB_TOKEN` or `gh auth token` if available, `OSS_OFFLINE=1` skips it). `src/oss.js` merges the list with the cache and flags projects as dormant after 12 months without a commit
 - `liveness.js` — reach-tests every listed service's `official` URL and flags dead links and stale "checked" dates into `data/liveness-cache.json` (`403`/`429` count as live — a refused bot, not a gone page; `LIVENESS_OFFLINE=1` skips it; never fails the build). The companion list [awesome-molt-ecosystem](https://github.com/eltociear/awesome-molt-ecosystem) runs the mirror of this — it re-checks its *dead* entries for revival (reading this site's `/services.json` and `/graveyard.json`), while this checks the *live* ones for death
 - `indexnow.js` — after a deploy, tells search engines that use [IndexNow](https://www.indexnow.org/) (Bing, Yandex, Naver, Seznam and others) which pages are new or changed, in one POST to `api.indexnow.org`. It hashes each sitemap page's HTML, with the volatile open-source metadata (fetch date, star counts, commit dates) blanked out so a routine rebuild resubmits nothing, and compares with `data/indexnow-cache.json`; URLs dropped from the sitemap are sent too. The first run sends the whole sitemap (up to IndexNow's 10,000-URL limit). The cache is updated only after a `200`/`202`, so a failed submit retries next time; `403`/`422` print what went wrong and it never fails the deploy (`INDEXNOW_DRY_RUN=1` or `--dry-run` lists the URLs without sending, `INDEXNOW_OFFLINE=1` skips it). The key lives in `src/indexnow-key.txt` and `build.js` publishes it as `/{key}.txt`
@@ -269,7 +269,7 @@ If your project is listed on the site, you're welcome to add a "Listed on Free L
 - `src/worker.js` — a small Worker in front of the static files that counts page views in Workers Analytics Engine (see [Page view analytics](#page-view-analytics)); fonts, images and JSON skip it (`run_worker_first` in `wrangler.jsonc`)
 - `public/` — build output, deployed to Cloudflare Workers (static assets)
 
-URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/services/{id}/` for each service, `/organizations/` and `/{lang}/organizations/` for organizations, `/verify/{method}/` and `/{lang}/verify/{method}/` for services by verification method (e.g. [World ID](https://neteru-nyukin.eltociear.workers.dev/verify/world-id/)), `/essays/` and `/essays/{id}/` (with language prefixes) for essays (data in `ESSAYS`), `/timeline/` and `/{lang}/timeline/` for a timeline of basic income experiments (data in `TIMELINE`; every item cites a source), `/open-source/` and `/{lang}/open-source/` for open-source projects (data in `OSS`, `OSS_GROUPS`), `/graveyard/` and `/{lang}/graveyard/` for ended services (data in `GRAVE`; only endings confirmed by an official or credible source).
+URLs: `/` (English) and `/{lang}/` for the list, `/services/{id}/` and `/{lang}/services/{id}/` for each service, `/organizations/` and `/{lang}/organizations/` for organizations, `/verify/{method}/` and `/{lang}/verify/{method}/` for services by verification method (e.g. [World ID](https://neteru-nyukin.eltociear.workers.dev/verify/world-id/)), `/essays/` and `/essays/{id}/` (with language prefixes) for essays (data in `ESSAYS`), `/timeline/` and `/{lang}/timeline/` for a timeline of basic income experiments (data in `TIMELINE`; every item cites a source), `/open-source/` and `/{lang}/open-source/` for open-source projects (data in `OSS`, `OSS_GROUPS`), `/graveyard/` and `/{lang}/graveyard/` for ended services (data in `GRAVE`; only endings confirmed by an official or credible source), `/news/` and `/{lang}/news/` for the weekly basic income news roundup (data in `BI_NEWS`, feed at `/news/feed.xml`, JSON at `/news.json`; separate from the site's own update log `NEWS`).
 
 ## Build and deploy
 
@@ -345,6 +345,25 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the listing criteria first. Then add 
 - `ja`, `en`, `zh`, `hi`, `es`, `de`, `ar` — `gain`, `note`, `need`, `caution` per language (English is the fallback); optional `warning` shows a highlighted box at the top of the service page, for strong warnings that should be read before signing up (start the `caution` with the same text so cards show it too)
 
 Organizations live in `ORGS` (with `ORG_GROUPS` and `ORG_REGIONS`); set `svc` to a service `id` to cross-link the two pages.
+
+## Adding a weekly news batch
+
+The basic income news page (`/news/`) is a data-only change: add one object at the **top** of `BI_NEWS` in `src/data.js` and run `node build.js`. The page, the per-language feeds (`/news/feed.xml`), `news.json`, llms.txt, the sitemap and the share image all follow.
+
+```js
+{ "updated": "2026-11-10",            // the day the batch was checked; the heading shows the week (Monday) it falls in
+  "items": [                           // newest first
+    { "id": "kr-rural-pilot-results",  // unique, lowercase a-z 0-9 -; becomes the #n-{id} anchor and the feed guid
+      "date": "2026-11-06",            // date of the event or report, not after "updated"
+      "region": "kr",                  // a key of BI_NEWS_REGIONS (add new countries there, in all 7 languages)
+      "tag": "pilot",                  // pilot | policy | research | ai (AI & funding) | other
+      "sources": [{ "name": "Ministry of ...", "url": "https://..." }],  // 1 or 2; reputable outlets, governments, research institutions
+      "timeline": ["korea-rural"], "essays": ["public-benefit-fund"],    // optional internal links (TIMELINE ids, ESSAYS ids)
+      "title":   { "en": "...", "ja": "...", "zh": "...", "hi": "...", "es": "...", "de": "...", "ar": "..." },
+      "summary": { "en": "1-2 sentences", "ja": "...", ... } } ] }
+```
+
+Rules: check every item against its source; write headlines and summaries in our own words (never copy article text); call proposals proposals; leave out scams, token promotions, NESARA-style claims and unrelated "UBI" (e.g. Linux UBI). In Arabic, wrap Latin names and amounts in U+2066/U+2069 as elsewhere in the data. The build stops on a missing language, unknown region, tag, timeline id or essay, a duplicate id, or out-of-order dates, and warns when a summary runs long (ja 160 / en 360 characters). Then deploy and run `node indexnow.js` as usual.
 
 ## Adding a language
 

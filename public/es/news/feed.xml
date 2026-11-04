@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Noticias de renta básica | Free Lunch Lab</title>
+    <link>https://neteru-nyukin.eltociear.workers.dev/es/news/</link>
+    <description>Resumen semanal, revisado a mano, de noticias de renta básica, ingreso garantizado y transferencias de efectivo en el mundo, con nuestras palabras y fuentes.</description>
+    <language>es</language>
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://neteru-nyukin.eltociear.workers.dev/es/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>El presidente Lee visita el piloto de renta básica rural de Corea del Sur</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-kr-lee-visits-rural-pilot</link>
+      <guid isPermaLink="false">bi-news-kr-lee-visits-rural-pilot</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Piloto</category>
+      <description>El presidente Lee Jae-myung visitó sin previo aviso la provincia de Gyeongsang del Norte para ver el piloto de renta básica rural, que paga a los residentes 150.000 wones al mes en vales locales. El piloto funciona ya en 17 de los 69 condados que el Gobierno considera en despoblación. Fuente: Korea JoongAng Daily (Yonhap) https://www.koreajoongangdaily.com/korea/lee-visits-southeastern-province-to-inspect-pilot-basic-income-scheme/12948336</description>
+    </item>
+    <item>
+      <title>El Opportunity Party de Nueva Zelanda hace campaña con una renta ciudadana</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-nz-opportunity-citizens-income</link>
+      <guid isPermaLink="false">bi-news-nz-opportunity-citizens-income</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Política</category>
+      <description>Antes de las elecciones del 7 de noviembre, el partido propone un pago libre de impuestos de hasta 370 NZ$ a la semana para casi todos los adultos, que sustituiría a la mayoría de las prestaciones y se pagaría con un impuesto sobre el valor del suelo. Es una propuesta electoral, no una política del Gobierno. Fuente: BIEN https://basicincome.org/news/2026/10/a-universal-basic-income-proposal-might-be-on-the-table-in-new-zealand/, 1News https://www.1news.co.nz/2026/08/15/what-are-the-opportunity-partys-land-tax-and-citizens-income/</description>
+    </item>
+    <item>
+      <title>El pago de 10.000 NT$ de Taiwán pasa a comisión, junto a un proyecto rival de 20.000 NT$</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-tw-cash-handout-budget</link>
+      <guid isPermaLink="false">bi-news-tw-cash-handout-budget</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Política</category>
+      <description>El Parlamento envió a comisión el presupuesto de 2027, que incluye 235.700 millones de NT$ para pagar 10.000 NT$ a cada residente con derecho. El opositor KMT defiende su propio proyecto de 20.000 NT$; ambos siguen siendo propuestas antes de las elecciones locales del 28 de noviembre. Fuente: Focus Taiwan (CNA) https://focustaiwan.tw/politics/202610270020, Taipei Times https://www.taipeitimes.com/News/taiwan/archives/2026/10/16/2003866092</description>
+    </item>
+    <item>
+      <title>Perú: un piloto de renta básica en la Amazonía muestra mejor alimentación y más protección del bosque</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-pe-conservation-basic-income</link>
+      <guid isPermaLink="false">bi-news-pe-conservation-basic-income</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Investigación</category>
+      <description>Una evaluación de la Universidad de Bath del piloto de dos años de Cool Earth, que pagó unas 2 £ al día a 211 personas de tres comunidades asháninkas, halló que la proporción de hogares que no podían costear comida nutritiva bajó del 73% al 26%. El estudio no tuvo grupo de control. Fuente: University of Bath https://www.bath.ac.uk/announcements/world-first-basic-income-trial-boosts-indigenous-livelihoods-and-amazon-rainforest-protection/</description>
+    </item>
+    <item>
+      <title>Musk promete una acción de SpaceX para cada niño de Estados Unidos</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-us-musk-spacex-shares</link>
+      <guid isPermaLink="false">bi-news-us-musk-spacex-shares</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>IA y financiación</category>
+      <description>Tras el anuncio de Anthropic, Elon Musk dijo que el año próximo dará una acción de SpaceX a cada niño estadounidense, unos 10.700 millones de dólares en total al último precio de cierre. No ha dicho quién tendría derecho ni cómo se entregarían las acciones. Fuente: Al Jazeera https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains</description>
+    </item>
+    <item>
+      <title>Anthropic destina el 5% de sus acciones a un fondo de beneficio público</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-us-anthropic-public-benefit-fund</link>
+      <guid isPermaLink="false">bi-news-us-anthropic-public-benefit-fund</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>IA y financiación</category>
+      <description>La empresa de IA aportará el 5% de sus acciones, sujeto a la aprobación de los accionistas, a un nuevo fondo que podría hacer grandes donaciones y quizá explorar distribuciones directas a poblaciones concretas. No es una renta básica, y los detalles de su gobierno llegarán en los próximos meses. Fuente: Anthropic https://www.anthropic.com/news/public-benefit-fund</description>
+    </item>
+    <item>
+      <title>Arranca la renta básica permanente para artistas de Irlanda</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-ie-basic-income-arts-permanent</link>
+      <guid isPermaLink="false">bi-news-ie-basic-income-arts-permanent</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Política</category>
+      <description>2.000 artistas elegidos entre más de 10.000 solicitantes recibirán 325 € a la semana durante tres años, con los primeros pagos con efecto desde septiembre. La National Campaign for the Arts dice que 34 millones de euros del presupuesto de 2027 financian el programa. Fuente: MusicRadar https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years</description>
+    </item>
+    <item>
+      <title>Corea del Sur invita a más condados a sumarse en 2027 a su piloto de renta básica rural</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-kr-rural-pilot-2027-call</link>
+      <guid isPermaLink="false">bi-news-kr-rural-pilot-2027-call</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Piloto</category>
+      <description>El Ministerio de Agricultura abrió una convocatoria para unos 18 condados más en despoblación, con solicitudes del 20 de octubre al 3 de noviembre; los residentes recibirían 150.000 wones al mes en vales locales. El proyecto de presupuesto de 2027 eleva la parte del Gobierno central del 40% al 50%, a falta de la aprobación parlamentaria. Fuente: Ministry of Agriculture, Food and Rural Affairs (Korea) https://www.mafra.go.kr/bbs/home/792/579390/artclView.do</description>
+    </item>
+    <item>
+      <title>Alaska paga su Dividendo del Fondo Permanente de 2026: 1.200 dólares</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-us-alaska-pfd-2026</link>
+      <guid isPermaLink="false">bi-news-us-alaska-pfd-2026</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Política</category>
+      <description>El dividendo de este año es de 1.000 dólares más un pago de 200 dólares por alivio energético. Los depósitos directos empezaron el 1 de octubre, con más fechas de pago el 22 de octubre, el 19 de noviembre y el 17 de diciembre. Fuente: Alaska Department of Revenue, PFD Division https://pfd.alaska.gov/, Alaska’s News Source https://www.alaskasnewssource.com/2026/09/30/permanent-fund-dividends-will-be-distributed-alaskans-starting-this-week/</description>
+    </item>
+  </channel>
+</rss>

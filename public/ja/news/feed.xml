@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ベーシックインカム・ニュース | 不労所得研究所</title>
+    <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/</link>
+    <description>世界のベーシックインカム、保障所得、現金給付のニュースを毎週まとめています。実験、政策、研究、AIと財源の動きを、出典を確かめたうえで自分たちの言葉で要約し、元の記事へのリンクを添えています。</description>
+    <language>ja</language>
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ja/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>李在明大統領、韓国の農村基本所得の試験事業を視察</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-kr-lee-visits-rural-pilot</link>
+      <guid isPermaLink="false">bi-news-kr-lee-visits-rural-pilot</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <category>実験</category>
+      <description>李在明大統領が事前の告知なしに慶尚北道を訪れ、住民に月15万ウォンを地域商品券で配る農村基本所得の試験事業を視察しました。試験事業は現在、政府が人口減少地域に指定する69の郡のうち17郡で行われています。 出典: Korea JoongAng Daily (Yonhap) https://www.koreajoongangdaily.com/korea/lee-visits-southeastern-province-to-inspect-pilot-basic-income-scheme/12948336</description>
+    </item>
+    <item>
+      <title>ニュージーランドのオポチュニティ党、「市民所得」を掲げて選挙戦</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-nz-opportunity-citizens-income</link>
+      <guid isPermaLink="false">bi-news-nz-opportunity-citizens-income</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>11月7日の総選挙を前に、同党はほぼすべての成人に週最大370NZドルを非課税で配り、多くの給付を置き換え、財源は土地価値税でまかなう案を掲げています。政府の政策ではなく、選挙公約です。 出典: BIEN https://basicincome.org/news/2026/10/a-universal-basic-income-proposal-might-be-on-the-table-in-new-zealand/, 1News https://www.1news.co.nz/2026/08/15/what-are-the-opportunity-partys-land-tax-and-citizens-income/</description>
+    </item>
+    <item>
+      <title>台湾の1万台湾ドル給付、予算案が委員会審査へ　野党は2万台湾ドル案</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-tw-cash-handout-budget</link>
+      <guid isPermaLink="false">bi-news-tw-cash-handout-budget</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>立法院は、対象となる住民1人あたり1万台湾ドルを配る費用2,357億台湾ドルを含む2027年度予算案を委員会審査に回しました。野党・国民党は2万台湾ドルを配る独自法案を推しており、11月28日の地方選挙を前に、どちらもまだ案の段階です。 出典: Focus Taiwan (CNA) https://focustaiwan.tw/politics/202610270020, Taipei Times https://www.taipeitimes.com/News/taiwan/archives/2026/10/16/2003866092</description>
+    </item>
+    <item>
+      <title>ペルー：アマゾンのベーシックインカム実験、食生活の改善と森林保護を報告</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-pe-conservation-basic-income</link>
+      <guid isPermaLink="false">bi-news-pe-conservation-basic-income</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <category>研究</category>
+      <description>英バース大学が、Cool Earthによる2年間の試験（アシャニンカ地域の3つの共同体の211人に1日約2ポンド相当を支給）を評価し、栄養のある食事をまかなえない世帯の割合が73%から26%に下がったと報告しました。対照群のない調査です。 出典: University of Bath https://www.bath.ac.uk/announcements/world-first-basic-income-trial-boosts-indigenous-livelihoods-and-amazon-rainforest-protection/</description>
+    </item>
+    <item>
+      <title>マスク氏、米国のすべての子どもにSpaceX株1株を贈ると表明</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-us-musk-spacex-shares</link>
+      <guid isPermaLink="false">bi-news-us-musk-spacex-shares</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AIと財源</category>
+      <description>Anthropicの発表を受け、イーロン・マスク氏は来年、米国のすべての子どもにSpaceX株を1株ずつ贈ると述べました。直近の終値で合計約107億ドルです。対象となる子どもの範囲や受け渡しの方法は明らかにしていません。 出典: Al Jazeera https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains</description>
+    </item>
+    <item>
+      <title>Anthropic、株式の5%を公益ファンドに拠出すると発表</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-us-anthropic-public-benefit-fund</link>
+      <guid isPermaLink="false">bi-news-us-anthropic-public-benefit-fund</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AIと財源</category>
+      <description>AI企業のAnthropicは、株主の承認を条件に株式の5%を新しいファンドに拠出します。ファンドは大口の寄付を行うほか、特定の人々への直接分配を検討する可能性もあるとしています。ベーシックインカムではなく、運営体制の詳細は今後数か月で示される予定です。 出典: Anthropic https://www.anthropic.com/news/public-benefit-fund</description>
+    </item>
+    <item>
+      <title>アイルランドの芸術家向けベーシックインカム、恒久制度が始動</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-ie-basic-income-arts-permanent</link>
+      <guid isPermaLink="false">bi-news-ie-basic-income-arts-permanent</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>1万人を超える応募者から選ばれた2,000人の芸術家が、3年間にわたり週325ユーロを受け取ります。初回の支払いは9月にさかのぼります。芸術団体National Campaign for the Artsによると、2027年度予算の3,400万ユーロが財源です。 出典: MusicRadar https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years</description>
+    </item>
+    <item>
+      <title>韓国、農村基本所得の試験事業に2027年から加わる郡を公募</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-kr-rural-pilot-2027-call</link>
+      <guid isPermaLink="false">bi-news-kr-rural-pilot-2027-call</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <category>実験</category>
+      <description>農林畜産食品部が、人口減少地域の郡からさらに18郡程度を選ぶ公募を始めました（受付は10月20日〜11月3日）。住民には月15万ウォンが地域商品券で支給されます。2027年度政府予算案では国の負担率を40%から50%に上げますが、国会での予算確定が前提です。 出典: Ministry of Agriculture, Food and Rural Affairs (Korea) https://www.mafra.go.kr/bbs/home/792/579390/artclView.do</description>
+    </item>
+    <item>
+      <title>アラスカ州、2026年の永久基金配当1,200ドルを支給</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-us-alaska-pfd-2026</link>
+      <guid isPermaLink="false">bi-news-us-alaska-pfd-2026</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>今年の配当は1,000ドルに、エネルギー救済金200ドルを加えた額です。10月1日に口座振込が始まり、その後も10月22日、11月19日、12月17日に支払い日があります。 出典: Alaska Department of Revenue, PFD Division https://pfd.alaska.gov/, Alaska’s News Source https://www.alaskasnewssource.com/2026/09/30/permanent-fund-dividends-will-be-distributed-alaskans-starting-this-week/</description>
+    </item>
+  </channel>
+</rss>

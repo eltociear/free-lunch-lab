@@ -522,9 +522,10 @@ Cautions: The official FAQ says it is for now a “gratitude points reward syste
 - Category: Passive apps
 - Payout: recurring
 - Region: available in Japan and worldwide
+- Sign-up: invite only (needs an invitation, code or approval from an existing member)
 - Verification: No verification
 - Trust check: Cash out: With conditions; Public operator: With conditions
-- Last checked: 2026-10
+- Last checked: 2026-11
 - Official URL: https://www.wowapp.com/
 - Referral link (maintainer's own referral; not covered by the content license): https://www.wowapp.com/w/eltociear/Ikko-Ashimine
 
@@ -532,7 +533,7 @@ A chat and calling app combined with a rewards system. Earn from a daily “UBI�
 
 What you get: Small rewards for daily use, games, shopping and more
 
-What you need: Sign up free through the referral link and use the app every day (confirmed usable from Japan in Oct 2026, first-hand)
+What you need: Invite only: sign up free through the referral link, then use the app every day (confirmed usable from Japan in Oct 2026, first-hand)
 
 Cautions: Rewards also come from the activity of people further down your invite chain: a multi-level system. Daily amounts are tiny and will not add up to real income. PayPal withdrawals reportedly have conditions such as a minimum. App Store rating in Japan is 3.2, with complaints about failed withdrawals
 
@@ -2282,6 +2283,25 @@ What's in it: De-identified public dataset, Stata analysis code and data notes f
 - Checked: 2026-11
 
 What's in it: Five-wave panel survey microdata (household, individual, community and health-facility files) from the evaluation of an unconditional child grant
+
+## Basic income news
+
+A weekly roundup of basic income, guaranteed income and cash transfer news, checked by hand. Each item is summarised in our own words and links to its source; proposals are labelled as proposals. For changes to this site itself, see the update log on the home page. Page: https://neteru-nyukin.eltociear.workers.dev/news/
+
+### Week of 2026-11-02 (updated 2026-11-03)
+
+- 2026-10-31, South Korea (Pilot): President Lee visits South Korea’s rural basic income pilot. President Lee Jae-myung made an unannounced visit to North Gyeongsang Province to see the rural basic income pilot, which pays residents 150,000 won a month in local vouchers. The pilot now runs in 17 of the 69 counties the government classes as depopulating. Source: Korea JoongAng Daily (Yonhap), https://www.koreajoongangdaily.com/korea/lee-visits-southeastern-province-to-inspect-pilot-basic-income-scheme/12948336
+- 2026-10-28, New Zealand (Policy): New Zealand’s Opportunity Party campaigns on a citizen’s income. Ahead of the 7 November election, the party proposes a tax-free payment of up to NZ$370 a week for almost all adults, replacing most benefits and paid for with a land value tax. It is a campaign proposal, not government policy. Source: BIEN, https://basicincome.org/news/2026/10/a-universal-basic-income-proposal-might-be-on-the-table-in-new-zealand/; 1News, https://www.1news.co.nz/2026/08/15/what-are-the-opportunity-partys-land-tax-and-citizens-income/
+- 2026-10-27, Taiwan (Policy): Taiwan’s NT$10,000 handout goes to committee, alongside a rival NT$20,000 bill. The legislature sent the 2027 budget, which includes NT$235.7 billion for a NT$10,000 payment to every eligible resident, to committee review. The opposition KMT backs its own bill for NT$20,000; both remain proposals ahead of the 28 November local elections. Source: Focus Taiwan (CNA), https://focustaiwan.tw/politics/202610270020; Taipei Times, https://www.taipeitimes.com/News/taiwan/archives/2026/10/16/2003866092
+
+### Week of 2026-10-26 (updated 2026-10-27)
+
+- 2026-10-20, Peru (Research): Peru: an Amazon basic income pilot reports better diets and more forest protection. A University of Bath evaluation of Cool Earth’s two-year pilot, which paid 211 people in three Asháninka communities about £2 a day, found the share of households unable to afford nutritious food fell from 73% to 26%. The study had no control group. Source: University of Bath, https://www.bath.ac.uk/announcements/world-first-basic-income-trial-boosts-indigenous-livelihoods-and-amazon-rainforest-protection/
+- 2026-10-19, United States (AI & funding): Musk pledges one SpaceX share for every child in the US. After Anthropic’s announcement, Elon Musk said he would give a SpaceX share to every American child next year, about $10.7 billion in total at the latest closing price. He has not said who qualifies or how the shares would be delivered. Source: Al Jazeera, https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains
+- 2026-10-18, United States (AI & funding): Anthropic commits 5% of its shares to a public benefit fund. The AI company is placing 5% of its shares, subject to stockholder approval, in a new fund that could make large donations and might explore direct distributions to specific populations. It is not a basic income, and details on governance are due in the coming months. Source: Anthropic, https://www.anthropic.com/news/public-benefit-fund
+- 2026-10-14, Ireland (Policy): Ireland’s permanent basic income for artists gets under way. 2,000 artists chosen from more than 10,000 applicants will receive €325 a week for three years, with first payments backdated to September. The National Campaign for the Arts says €34 million in the 2027 budget funds the scheme. Source: MusicRadar, https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years
+- 2026-10-08, South Korea (Pilot): South Korea invites more counties to join its rural basic income pilot in 2027. The agriculture ministry opened a call for about 18 more depopulating counties, with applications from 20 October to 3 November; residents would get 150,000 won a month in local vouchers. The 2027 budget proposal raises the central government’s share of the cost from 40% to 50%, pending parliament. Source: Ministry of Agriculture, Food and Rural Affairs (Korea), https://www.mafra.go.kr/bbs/home/792/579390/artclView.do
+- 2026-10-01, United States (Policy): Alaska pays its 2026 Permanent Fund Dividend of $1,200. This year’s dividend is $1,000 plus a $200 energy relief payment. Direct deposits began on 1 October, with later payment dates on 22 October, 19 November and 17 December. Source: Alaska Department of Revenue, PFD Division, https://pfd.alaska.gov/; Alaska’s News Source, https://www.alaskasnewssource.com/2026/09/30/permanent-fund-dividends-will-be-distributed-alaskans-starting-this-week/
 
 ## Graveyard
 

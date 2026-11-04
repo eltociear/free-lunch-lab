@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基本收入新闻 | Free Lunch Lab（免费午餐研究所）</title>
+    <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/</link>
+    <description>每周汇总全球基本收入、保障收入和现金转移的新闻：试点、政策、研究以及 AI 与资金的动向。每条新闻都经人工核实来源，用我们自己的话概括，并附上原文链接，方便查证。</description>
+    <language>zh-Hans</language>
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://neteru-nyukin.eltociear.workers.dev/zh/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>李在明总统视察韩国农村基本收入试点</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-kr-lee-visits-rural-pilot</link>
+      <guid isPermaLink="false">bi-news-kr-lee-visits-rural-pilot</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <category>试点</category>
+      <description>韩国总统李在明未经事先公布前往庆尚北道，视察每月向居民发放15万韩元地方消费券的农村基本收入试点。该试点目前在政府认定的69个人口减少郡中的17个郡实施。 来源: Korea JoongAng Daily (Yonhap) https://www.koreajoongangdaily.com/korea/lee-visits-southeastern-province-to-inspect-pilot-basic-income-scheme/12948336</description>
+    </item>
+    <item>
+      <title>新西兰机会党以“公民收入”参选</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-nz-opportunity-citizens-income</link>
+      <guid isPermaLink="false">bi-news-nz-opportunity-citizens-income</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>在11月7日大选前，该党提出向几乎所有成年人每周发放最多370新西兰元的免税款项，取代大部分福利，资金来自土地价值税。这只是竞选主张，并非政府政策。 来源: BIEN https://basicincome.org/news/2026/10/a-universal-basic-income-proposal-might-be-on-the-table-in-new-zealand/, 1News https://www.1news.co.nz/2026/08/15/what-are-the-opportunity-partys-land-tax-and-citizens-income/</description>
+    </item>
+    <item>
+      <title>台湾每人1万元普发案随预算进入委员会审查，在野党提2万元版本</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-tw-cash-handout-budget</link>
+      <guid isPermaLink="false">bi-news-tw-cash-handout-budget</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>立法院将2027年度总预算送交委员会审查，其中编列2,357亿新台币，用于向每位符合资格的居民发放1万元新台币。在野的国民党则推动发放2万元的特别条例草案；在11月28日地方选举前，两者都仍是提案。 来源: Focus Taiwan (CNA) https://focustaiwan.tw/politics/202610270020, Taipei Times https://www.taipeitimes.com/News/taiwan/archives/2026/10/16/2003866092</description>
+    </item>
+    <item>
+      <title>秘鲁：亚马孙基本收入试点报告饮食改善、森林保护增加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-pe-conservation-basic-income</link>
+      <guid isPermaLink="false">bi-news-pe-conservation-basic-income</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <category>研究</category>
+      <description>英国巴斯大学评估了 Cool Earth 为期两年的试点（向阿沙宁卡地区三个社区的211人每天发放约2英镑），发现买不起营养食物的家庭比例从73%降至26%。该研究没有对照组。 来源: University of Bath https://www.bath.ac.uk/announcements/world-first-basic-income-trial-boosts-indigenous-livelihoods-and-amazon-rainforest-protection/</description>
+    </item>
+    <item>
+      <title>马斯克承诺向美国每个孩子赠送一股 SpaceX 股票</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-us-musk-spacex-shares</link>
+      <guid isPermaLink="false">bi-news-us-musk-spacex-shares</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AI 与资金</category>
+      <description>在 Anthropic 宣布之后，埃隆·马斯克表示明年将向每个美国孩子赠送一股 SpaceX 股票，按最近收盘价合计约107亿美元。他尚未说明哪些孩子符合条件、股票如何交付。 来源: Al Jazeera https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains</description>
+    </item>
+    <item>
+      <title>Anthropic 将5%股份投入公益基金</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-us-anthropic-public-benefit-fund</link>
+      <guid isPermaLink="false">bi-news-us-anthropic-public-benefit-fund</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AI 与资金</category>
+      <description>这家 AI 公司将把5%的股份（须经股东批准）投入一个新基金，该基金可进行大额捐赠，也可能探索向特定人群直接分配。这并非基本收入，治理细节将在未来几个月公布。 来源: Anthropic https://www.anthropic.com/news/public-benefit-fund</description>
+    </item>
+    <item>
+      <title>爱尔兰艺术家基本收入常设计划启动</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-ie-basic-income-arts-permanent</link>
+      <guid isPermaLink="false">bi-news-ie-basic-income-arts-permanent</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>从一万多名申请者中选出的2,000名艺术家将在三年内每周领取325欧元，首批款项追溯至9月。爱尔兰全国艺术运动（National Campaign for the Arts）称，2027年预算中的3,400万欧元为该计划提供资金。 来源: MusicRadar https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years</description>
+    </item>
+    <item>
+      <title>韩国公开征集2027年加入农村基本收入试点的郡</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-kr-rural-pilot-2027-call</link>
+      <guid isPermaLink="false">bi-news-kr-rural-pilot-2027-call</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <category>试点</category>
+      <description>农林畜产食品部启动公开征集，将再从人口减少地区选出约18个郡，申请受理期为10月20日至11月3日；居民每月将获得15万韩元地方消费券。2027年政府预算案把中央政府负担比例从40%提高到50%，尚待国会确定。 来源: Ministry of Agriculture, Food and Rural Affairs (Korea) https://www.mafra.go.kr/bbs/home/792/579390/artclView.do</description>
+    </item>
+    <item>
+      <title>阿拉斯加发放2026年永久基金红利1,200美元</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-us-alaska-pfd-2026</link>
+      <guid isPermaLink="false">bi-news-us-alaska-pfd-2026</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>今年的红利为1,000美元，外加200美元能源补助。直接存款于10月1日开始，此后还有10月22日、11月19日和12月17日三个发放日。 来源: Alaska Department of Revenue, PFD Division https://pfd.alaska.gov/, Alaska’s News Source https://www.alaskasnewssource.com/2026/09/30/permanent-fund-dividends-will-be-distributed-alaskans-starting-this-week/</description>
+    </item>
+  </channel>
+</rss>

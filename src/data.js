@@ -1803,12 +1803,13 @@ module.exports = {
       "cat": "app",
       "type": "loop",
       "global": true,
+      "inviteOnly": true,
       "ease": 4,
       "official": "https://www.wowapp.com/",
       "code": "",
       "ref": "https://www.wowapp.com/w/eltociear/Ikko-Ashimine",
       "added": "2026-10-24",
-      "checked": "2026-10",
+      "checked": "2026-11",
       "trust": {
         "cash": "partial",
         "price": "na",
@@ -1822,43 +1823,43 @@ module.exports = {
       "ja": {
         "gain": "毎日の利用やゲーム・買い物などで少額の報酬",
         "note": "チャット・通話アプリに報酬のしくみを組み合わせたサービス。毎日の「UBI」、ゲーム、買い物のキャッシュバックなどで報酬がたまり、出金するか慈善団体に寄付できる。招待した友だちなど自分のネットワークが活動すると、自分の報酬も増える",
-        "need": "紹介リンクから無料で登録し、アプリを毎日使う（日本からの利用は2026年10月に実際に確認）",
+        "need": "招待制で、紹介リンクから無料で登録する。登録後はアプリを毎日使う（日本からの利用は2026年10月に実際に確認）",
         "caution": "報酬は招待した人の先の人たちの活動にも応じて入る多段階（マルチレベル）型。1日の額はごくわずかで、まとまった収入にはならない。PayPal への出金には最低額などの条件があるとされる。App Store の評価は日本で3.2で、出金できないという声もある"
       },
       "en": {
         "gain": "Small rewards for daily use, games, shopping and more",
         "note": "A chat and calling app combined with a rewards system. Earn from a daily “UBI”, games, shopping cashback and more, then withdraw or donate to charities. When your network, such as friends you invited, is active, your rewards grow too",
-        "need": "Sign up free through the referral link and use the app every day (confirmed usable from Japan in Oct 2026, first-hand)",
+        "need": "Invite only: sign up free through the referral link, then use the app every day (confirmed usable from Japan in Oct 2026, first-hand)",
         "caution": "Rewards also come from the activity of people further down your invite chain: a multi-level system. Daily amounts are tiny and will not add up to real income. PayPal withdrawals reportedly have conditions such as a minimum. App Store rating in Japan is 3.2, with complaints about failed withdrawals"
       },
       "zh": {
         "gain": "每天使用、游戏、购物等可得少量奖励",
         "note": "把聊天、通话应用与奖励机制结合的服务。通过每日“UBI”、游戏、购物返现等积累奖励，可以提现或捐给慈善机构。你邀请的朋友等自己的网络越活跃，你的奖励也越多",
-        "need": "通过推荐链接免费注册，每天使用应用（已于 2026 年 10 月亲自确认可在日本使用）",
+        "need": "仅限邀请：通过推荐链接免费注册，之后每天使用应用（已于 2026 年 10 月亲自确认可在日本使用）",
         "caution": "奖励还会根据你邀请的人再往下的人的活动而发放，属于多层级（多级）模式。每天的金额极少，不会成为可观的收入。据称 PayPal 提现有最低金额等条件。日本 App Store 评分为 3.2，也有人反映无法提现"
       },
       "hi": {
         "gain": "रोज़ के इस्तेमाल, गेम, शॉपिंग आदि पर थोड़े इनाम",
         "note": "चैट और कॉलिंग ऐप के साथ इनाम व्यवस्था। रोज़ की “UBI”, गेम, शॉपिंग कैशबैक वग़ैरह से इनाम जमा होते हैं, जिन्हें निकाल सकते हैं या चैरिटी को दान कर सकते हैं। आपके बुलाए दोस्तों जैसा आपका नेटवर्क सक्रिय हो, तो आपका इनाम भी बढ़ता है",
-        "need": "रेफ़रल लिंक से मुफ़्त साइन अप करें और रोज़ ऐप इस्तेमाल करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+        "need": "सिर्फ़ निमंत्रण से: रेफ़रल लिंक से मुफ़्त साइन अप करें, फिर रोज़ ऐप इस्तेमाल करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
         "caution": "इनाम आपके बुलाए लोगों से आगे के लोगों की गतिविधि से भी मिलते हैं: यह मल्टी-लेवल व्यवस्था है। रोज़ की रकम बहुत कम है और असली आय नहीं बनेगी। PayPal निकासी पर न्यूनतम रकम जैसी शर्तें बताई जाती हैं। जापान में App Store रेटिंग 3.2 है, और निकासी न होने की शिकायतें हैं"
       },
       "es": {
         "gain": "Pequeñas recompensas por usarla a diario, jugar, comprar y más",
         "note": "Una app de chat y llamadas combinada con un sistema de recompensas. Ganas con la «UBI» diaria, juegos, reembolsos por compras y más, y puedes retirarlo o donarlo a organizaciones benéficas. Cuando tu red (por ejemplo, amigos que invitaste) está activa, tus recompensas también crecen",
-        "need": "Regístrate gratis con el enlace de referido y usa la app cada día (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+        "need": "Solo por invitación: regístrate gratis con el enlace de referido y luego usa la app cada día (se comprobó en persona que funciona desde Japón en octubre de 2026)",
         "caution": "Las recompensas también dependen de la actividad de personas más abajo en tu cadena de invitaciones: es un sistema multinivel. Los importes diarios son mínimos y no serán un ingreso real. Se dice que retirar a PayPal tiene condiciones como un mínimo. En la App Store de Japón tiene un 3,2, con quejas de retiros fallidos"
       },
       "de": {
         "gain": "Kleine Belohnungen für tägliche Nutzung, Spiele, Einkäufe und mehr",
         "note": "Eine Chat- und Telefonie-App mit Prämiensystem. Prämien gibt es für ein tägliches „UBI“, Spiele, Shopping-Cashback und mehr; du kannst sie auszahlen oder an Hilfsorganisationen spenden. Ist dein Netzwerk, etwa eingeladene Freunde, aktiv, wachsen auch deine Prämien",
-        "need": "Über den Empfehlungslink kostenlos anmelden und die App jeden Tag nutzen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+        "need": "Nur auf Einladung: über den Empfehlungslink kostenlos anmelden und die App dann jeden Tag nutzen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
         "caution": "Prämien kommen auch aus der Aktivität von Leuten weiter unten in deiner Einladungskette: ein mehrstufiges (Multi-Level-)System. Die Tagesbeträge sind winzig und ergeben kein echtes Einkommen. Für PayPal-Auszahlungen gelten angeblich Bedingungen wie ein Mindestbetrag. App-Store-Bewertung in Japan 3,2, mit Beschwerden über gescheiterte Auszahlungen"
       },
       "ar": {
         "gain": "مكافآت صغيرة مقابل الاستخدام اليومي والألعاب والتسوق وغيرها",
         "note": "تطبيق دردشة ومكالمات مع نظام مكافآت. تجمع المكافآت من «دخل أساسي» يومي وألعاب واسترداد نقدي على المشتريات وغيرها، ثم تسحبها أو تتبرع بها لجمعيات خيرية. عندما تنشط شبكتك، كالأصدقاء الذين دعوتهم، تزيد مكافآتك أيضًا",
-        "need": "سجّل مجانًا عبر رابط الإحالة واستخدم التطبيق يوميًا (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+        "need": "بالدعوة فقط: سجّل مجانًا عبر رابط الإحالة، ثم استخدم التطبيق يوميًا (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
         "caution": "تأتي المكافآت أيضًا من نشاط الأشخاص الأبعد في سلسلة دعواتك: نظام متعدد المستويات. المبالغ اليومية ضئيلة جدًا ولن تصبح دخلًا حقيقيًا. يقال إن السحب إلى ⁦PayPal⁩ له شروط مثل حد أدنى. تقييم ⁦App Store⁩ في اليابان 3.2، مع شكاوى من تعذّر السحب"
       }
     },
@@ -2870,6 +2871,26 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-04",
+      "ja": "ベーシックインカム・ニュースのページを追加（実験・政策・研究・AIと財源の動きを毎週、出典つきでまとめます）",
+      "en": "Added a weekly basic income news page: hand-checked news on pilots, policy, research and AI funding, with sources",
+      "zh": "新增“基本收入新闻”页面：每周汇总试点、政策、研究及 AI 与资金动向，附来源",
+      "hi": "बेसिक इनकम समाचार पेज जोड़ा: पायलट, नीति, शोध और AI फ़ंडिंग की हाथ से जाँची साप्ताहिक ख़बरें, स्रोतों के साथ",
+      "es": "Nueva página de noticias de renta básica: cada semana, pilotos, política, investigación y financiación con IA, revisados a mano y con fuentes",
+      "de": "Neue Seite mit Grundeinkommen-Nachrichten: jede Woche geprüfte Meldungen zu Pilotprojekten, Politik, Forschung und KI-Finanzierung, mit Quellen",
+      "ar": "أضفنا صفحة أخبار الدخل الأساسي: أخبار أسبوعية نتحقق منها عن التجارب والسياسات والأبحاث وتمويل الذكاء الاصطناعي، مع المصادر"
+    },
+    {
+      "date": "2026-11-04",
+      "ja": "WowAppを更新：登録が招待制になりました",
+      "en": "Updated WowApp: sign-up is now invite-only",
+      "zh": "更新 WowApp：注册改为仅限邀请",
+      "hi": "WowApp अपडेट किया: साइन अप अब सिर्फ़ निमंत्रण से",
+      "es": "Actualizado WowApp: el registro ahora es solo por invitación",
+      "de": "WowApp aktualisiert: Anmeldung jetzt nur auf Einladung",
+      "ar": "حدّثنا ⁦WowApp⁩: التسجيل أصبح بالدعوة فقط"
+    },
+    {
+      "date": "2026-11-04",
       "ja": "エッセイ『サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか』を公開",
       "en": "Published the essay “What happened when Sam Altman’s study gave people $1,000 a month for three years”",
       "zh": "发布随笔《当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么》",
@@ -3569,6 +3590,461 @@ module.exports = {
       "de": "Grass hinzugefügt"
     }
   ],
+  "BI_NEWS_REGIONS": {
+    "global": {
+      "en": "Worldwide",
+      "ja": "世界",
+      "zh": "全球",
+      "hi": "दुनिया भर",
+      "es": "Mundo",
+      "de": "Weltweit",
+      "ar": "العالم"
+    },
+    "us": {
+      "en": "United States",
+      "ja": "アメリカ",
+      "zh": "美国",
+      "hi": "अमेरिका",
+      "es": "Estados Unidos",
+      "de": "USA",
+      "ar": "الولايات المتحدة"
+    },
+    "ca": {
+      "en": "Canada",
+      "ja": "カナダ",
+      "zh": "加拿大",
+      "hi": "कनाडा",
+      "es": "Canadá",
+      "de": "Kanada",
+      "ar": "كندا"
+    },
+    "br": {
+      "en": "Brazil",
+      "ja": "ブラジル",
+      "zh": "巴西",
+      "hi": "ब्राज़ील",
+      "es": "Brasil",
+      "de": "Brasilien",
+      "ar": "البرازيل"
+    },
+    "pe": {
+      "en": "Peru",
+      "ja": "ペルー",
+      "zh": "秘鲁",
+      "hi": "पेरू",
+      "es": "Perú",
+      "de": "Peru",
+      "ar": "بيرو"
+    },
+    "uk": {
+      "en": "United Kingdom",
+      "ja": "イギリス",
+      "zh": "英国",
+      "hi": "ब्रिटेन",
+      "es": "Reino Unido",
+      "de": "Vereinigtes Königreich",
+      "ar": "المملكة المتحدة"
+    },
+    "ie": {
+      "en": "Ireland",
+      "ja": "アイルランド",
+      "zh": "爱尔兰",
+      "hi": "आयरलैंड",
+      "es": "Irlanda",
+      "de": "Irland",
+      "ar": "أيرلندا"
+    },
+    "de": {
+      "en": "Germany",
+      "ja": "ドイツ",
+      "zh": "德国",
+      "hi": "जर्मनी",
+      "es": "Alemania",
+      "de": "Deutschland",
+      "ar": "ألمانيا"
+    },
+    "fi": {
+      "en": "Finland",
+      "ja": "フィンランド",
+      "zh": "芬兰",
+      "hi": "फ़िनलैंड",
+      "es": "Finlandia",
+      "de": "Finnland",
+      "ar": "فنلندا"
+    },
+    "ke": {
+      "en": "Kenya",
+      "ja": "ケニア",
+      "zh": "肯尼亚",
+      "hi": "केन्या",
+      "es": "Kenia",
+      "de": "Kenia",
+      "ar": "كينيا"
+    },
+    "in": {
+      "en": "India",
+      "ja": "インド",
+      "zh": "印度",
+      "hi": "भारत",
+      "es": "India",
+      "de": "Indien",
+      "ar": "الهند"
+    },
+    "jp": {
+      "en": "Japan",
+      "ja": "日本",
+      "zh": "日本",
+      "hi": "जापान",
+      "es": "Japón",
+      "de": "Japan",
+      "ar": "اليابان"
+    },
+    "kr": {
+      "en": "South Korea",
+      "ja": "韓国",
+      "zh": "韩国",
+      "hi": "दक्षिण कोरिया",
+      "es": "Corea del Sur",
+      "de": "Südkorea",
+      "ar": "كوريا الجنوبية"
+    },
+    "tw": {
+      "en": "Taiwan",
+      "ja": "台湾",
+      "zh": "台湾",
+      "hi": "ताइवान",
+      "es": "Taiwán",
+      "de": "Taiwan",
+      "ar": "تايوان"
+    },
+    "mh": {
+      "en": "Marshall Islands",
+      "ja": "マーシャル諸島",
+      "zh": "马绍尔群岛",
+      "hi": "मार्शल द्वीप",
+      "es": "Islas Marshall",
+      "de": "Marshallinseln",
+      "ar": "جزر مارشال"
+    },
+    "nz": {
+      "en": "New Zealand",
+      "ja": "ニュージーランド",
+      "zh": "新西兰",
+      "hi": "न्यूज़ीलैंड",
+      "es": "Nueva Zelanda",
+      "de": "Neuseeland",
+      "ar": "نيوزيلندا"
+    }
+  },
+  "BI_NEWS": [
+    {
+      "updated": "2026-11-03",
+      "items": [
+        {
+          "id": "kr-lee-visits-rural-pilot",
+          "date": "2026-10-31",
+          "region": "kr",
+          "tag": "pilot",
+          "timeline": [
+            "korea-rural"
+          ],
+          "sources": [
+            {
+              "name": "Korea JoongAng Daily (Yonhap)",
+              "url": "https://www.koreajoongangdaily.com/korea/lee-visits-southeastern-province-to-inspect-pilot-basic-income-scheme/12948336"
+            }
+          ],
+          "title": {
+            "en": "President Lee visits South Korea’s rural basic income pilot",
+            "ja": "李在明大統領、韓国の農村基本所得の試験事業を視察",
+            "zh": "李在明总统视察韩国农村基本收入试点",
+            "hi": "राष्ट्रपति ली ने दक्षिण कोरिया के ग्रामीण बेसिक इनकम पायलट का दौरा किया",
+            "es": "El presidente Lee visita el piloto de renta básica rural de Corea del Sur",
+            "de": "Präsident Lee besucht Südkoreas ländliches Grundeinkommen-Pilotprojekt",
+            "ar": "الرئيس لي يزور تجربة الدخل الأساسي الريفي في كوريا الجنوبية"
+          },
+          "summary": {
+            "en": "President Lee Jae-myung made an unannounced visit to North Gyeongsang Province to see the rural basic income pilot, which pays residents 150,000 won a month in local vouchers. The pilot now runs in 17 of the 69 counties the government classes as depopulating.",
+            "ja": "李在明大統領が事前の告知なしに慶尚北道を訪れ、住民に月15万ウォンを地域商品券で配る農村基本所得の試験事業を視察しました。試験事業は現在、政府が人口減少地域に指定する69の郡のうち17郡で行われています。",
+            "zh": "韩国总统李在明未经事先公布前往庆尚北道，视察每月向居民发放15万韩元地方消费券的农村基本收入试点。该试点目前在政府认定的69个人口减少郡中的17个郡实施。",
+            "hi": "राष्ट्रपति ली जे-म्योंग बिना पूर्व घोषणा के उत्तरी ग्योंगसांग प्रांत पहुँचे और ग्रामीण बेसिक इनकम पायलट देखा, जिसमें निवासियों को हर महीने 1,50,000 वॉन स्थानीय वाउचर में मिलते हैं। यह पायलट अब उन 69 काउंटियों में से 17 में चल रहा है जिन्हें सरकार घटती आबादी वाली मानती है।",
+            "es": "El presidente Lee Jae-myung visitó sin previo aviso la provincia de Gyeongsang del Norte para ver el piloto de renta básica rural, que paga a los residentes 150.000 wones al mes en vales locales. El piloto funciona ya en 17 de los 69 condados que el Gobierno considera en despoblación.",
+            "de": "Präsident Lee Jae-myung besuchte unangekündigt die Provinz Nord-Gyeongsang, um sich das ländliche Grundeinkommen-Pilotprojekt anzusehen, das Einwohnern monatlich 150.000 Won in lokalen Gutscheinen zahlt. Es läuft inzwischen in 17 der 69 Landkreise, die die Regierung als schrumpfend einstuft.",
+            "ar": "زار الرئيس لي جاي-ميونغ مقاطعة غيونغسانغ الشمالية دون إعلان مسبق للاطلاع على تجربة الدخل الأساسي الريفي، التي تدفع للسكان 150,000 وون شهريًا في صورة قسائم محلية. وتجري التجربة الآن في 17 من أصل 69 مقاطعة تصنّفها الحكومة مناطق يتناقص سكانها."
+          }
+        },
+        {
+          "id": "nz-opportunity-citizens-income",
+          "date": "2026-10-28",
+          "region": "nz",
+          "tag": "policy",
+          "sources": [
+            {
+              "name": "BIEN",
+              "url": "https://basicincome.org/news/2026/10/a-universal-basic-income-proposal-might-be-on-the-table-in-new-zealand/"
+            },
+            {
+              "name": "1News",
+              "url": "https://www.1news.co.nz/2026/08/15/what-are-the-opportunity-partys-land-tax-and-citizens-income/"
+            }
+          ],
+          "title": {
+            "en": "New Zealand’s Opportunity Party campaigns on a citizen’s income",
+            "ja": "ニュージーランドのオポチュニティ党、「市民所得」を掲げて選挙戦",
+            "zh": "新西兰机会党以“公民收入”参选",
+            "hi": "न्यूज़ीलैंड की ऑपर्च्युनिटी पार्टी नागरिक आय के वादे के साथ चुनाव में",
+            "es": "El Opportunity Party de Nueva Zelanda hace campaña con una renta ciudadana",
+            "de": "Neuseelands Opportunity Party wirbt mit einem Bürgereinkommen",
+            "ar": "حزب الفرصة في نيوزيلندا يخوض الانتخابات بوعد «دخل المواطن»"
+          },
+          "summary": {
+            "en": "Ahead of the 7 November election, the party proposes a tax-free payment of up to NZ$370 a week for almost all adults, replacing most benefits and paid for with a land value tax. It is a campaign proposal, not government policy.",
+            "ja": "11月7日の総選挙を前に、同党はほぼすべての成人に週最大370NZドルを非課税で配り、多くの給付を置き換え、財源は土地価値税でまかなう案を掲げています。政府の政策ではなく、選挙公約です。",
+            "zh": "在11月7日大选前，该党提出向几乎所有成年人每周发放最多370新西兰元的免税款项，取代大部分福利，资金来自土地价值税。这只是竞选主张，并非政府政策。",
+            "hi": "7 नवंबर के चुनाव से पहले पार्टी लगभग सभी वयस्कों को हर हफ़्ते अधिकतम NZ$370 का कर-मुक्त भुगतान देने का प्रस्ताव रख रही है, जो ज़्यादातर भत्तों की जगह लेगा और जिसका ख़र्च भूमि मूल्य कर से आएगा। यह चुनावी प्रस्ताव है, सरकारी नीति नहीं।",
+            "es": "Antes de las elecciones del 7 de noviembre, el partido propone un pago libre de impuestos de hasta 370 NZ$ a la semana para casi todos los adultos, que sustituiría a la mayoría de las prestaciones y se pagaría con un impuesto sobre el valor del suelo. Es una propuesta electoral, no una política del Gobierno.",
+            "de": "Vor der Wahl am 7. November schlägt die Partei eine steuerfreie Zahlung von bis zu 370 NZ$ pro Woche für fast alle Erwachsenen vor, die die meisten Sozialleistungen ersetzen und über eine Bodenwertsteuer finanziert werden soll. Es ist ein Wahlvorschlag, keine Regierungspolitik.",
+            "ar": "قبل انتخابات 7 نوفمبر، يقترح الحزب دفعة معفاة من الضرائب تصل إلى ⁦NZ$370⁩ أسبوعيًا لكل البالغين تقريبًا، تحل محل معظم الإعانات وتُموَّل بضريبة على قيمة الأراضي. إنه اقتراح انتخابي وليس سياسة حكومية."
+          }
+        },
+        {
+          "id": "tw-cash-handout-budget",
+          "date": "2026-10-27",
+          "region": "tw",
+          "tag": "policy",
+          "sources": [
+            {
+              "name": "Focus Taiwan (CNA)",
+              "url": "https://focustaiwan.tw/politics/202610270020"
+            },
+            {
+              "name": "Taipei Times",
+              "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/16/2003866092"
+            }
+          ],
+          "title": {
+            "en": "Taiwan’s NT$10,000 handout goes to committee, alongside a rival NT$20,000 bill",
+            "ja": "台湾の1万台湾ドル給付、予算案が委員会審査へ　野党は2万台湾ドル案",
+            "zh": "台湾每人1万元普发案随预算进入委员会审查，在野党提2万元版本",
+            "hi": "ताइवान का NT$10,000 नकद भुगतान समिति के पास, साथ में NT$20,000 का प्रतिद्वंद्वी विधेयक",
+            "es": "El pago de 10.000 NT$ de Taiwán pasa a comisión, junto a un proyecto rival de 20.000 NT$",
+            "de": "Taiwans Zahlung von 10.000 NT$ geht in den Ausschuss, neben einem Gegenentwurf über 20.000 NT$",
+            "ar": "دفعة تايوان النقدية البالغة ⁦NT$10,000⁩ تُحال إلى اللجان، ومعها مشروع منافس بقيمة ⁦NT$20,000⁩"
+          },
+          "summary": {
+            "en": "The legislature sent the 2027 budget, which includes NT$235.7 billion for a NT$10,000 payment to every eligible resident, to committee review. The opposition KMT backs its own bill for NT$20,000; both remain proposals ahead of the 28 November local elections.",
+            "ja": "立法院は、対象となる住民1人あたり1万台湾ドルを配る費用2,357億台湾ドルを含む2027年度予算案を委員会審査に回しました。野党・国民党は2万台湾ドルを配る独自法案を推しており、11月28日の地方選挙を前に、どちらもまだ案の段階です。",
+            "zh": "立法院将2027年度总预算送交委员会审查，其中编列2,357亿新台币，用于向每位符合资格的居民发放1万元新台币。在野的国民党则推动发放2万元的特别条例草案；在11月28日地方选举前，两者都仍是提案。",
+            "hi": "विधायिका ने 2027 का बजट समिति समीक्षा के लिए भेजा, जिसमें हर पात्र निवासी को NT$10,000 देने के लिए NT$235.7 अरब रखे गए हैं। विपक्षी KMT NT$20,000 वाले अपने विधेयक का समर्थन करती है; 28 नवंबर के स्थानीय चुनावों से पहले दोनों अभी प्रस्ताव ही हैं।",
+            "es": "El Parlamento envió a comisión el presupuesto de 2027, que incluye 235.700 millones de NT$ para pagar 10.000 NT$ a cada residente con derecho. El opositor KMT defiende su propio proyecto de 20.000 NT$; ambos siguen siendo propuestas antes de las elecciones locales del 28 de noviembre.",
+            "de": "Das Parlament überwies den Haushalt 2027, der 235,7 Milliarden NT$ für eine Zahlung von 10.000 NT$ an jeden berechtigten Einwohner enthält, an die Ausschüsse. Die oppositionelle KMT unterstützt einen eigenen Entwurf über 20.000 NT$; vor den Kommunalwahlen am 28. November sind beide noch Vorschläge.",
+            "ar": "أحال البرلمان موازنة 2027 إلى مراجعة اللجان، وهي تتضمن ⁦NT$235.7⁩ مليار لدفع ⁦NT$10,000⁩ لكل مقيم مؤهل. ويدعم حزب ⁦KMT⁩ المعارض مشروعه الخاص بقيمة ⁦NT$20,000⁩؛ ولا يزال الاثنان مجرد مقترحات قبل الانتخابات المحلية في 28 نوفمبر."
+          }
+        }
+      ]
+    },
+    {
+      "updated": "2026-10-27",
+      "items": [
+        {
+          "id": "pe-conservation-basic-income",
+          "date": "2026-10-20",
+          "region": "pe",
+          "tag": "research",
+          "sources": [
+            {
+              "name": "University of Bath",
+              "url": "https://www.bath.ac.uk/announcements/world-first-basic-income-trial-boosts-indigenous-livelihoods-and-amazon-rainforest-protection/"
+            }
+          ],
+          "title": {
+            "en": "Peru: an Amazon basic income pilot reports better diets and more forest protection",
+            "ja": "ペルー：アマゾンのベーシックインカム実験、食生活の改善と森林保護を報告",
+            "zh": "秘鲁：亚马孙基本收入试点报告饮食改善、森林保护增加",
+            "hi": "पेरू: अमेज़न के बेसिक इनकम पायलट में बेहतर खान-पान और ज़्यादा वन संरक्षण दर्ज",
+            "es": "Perú: un piloto de renta básica en la Amazonía muestra mejor alimentación y más protección del bosque",
+            "de": "Peru: Grundeinkommen-Pilot im Amazonas meldet bessere Ernährung und mehr Waldschutz",
+            "ar": "بيرو: تجربة للدخل الأساسي في الأمازون تُظهر غذاءً أفضل وحماية أكبر للغابات"
+          },
+          "summary": {
+            "en": "A University of Bath evaluation of Cool Earth’s two-year pilot, which paid 211 people in three Asháninka communities about £2 a day, found the share of households unable to afford nutritious food fell from 73% to 26%. The study had no control group.",
+            "ja": "英バース大学が、Cool Earthによる2年間の試験（アシャニンカ地域の3つの共同体の211人に1日約2ポンド相当を支給）を評価し、栄養のある食事をまかなえない世帯の割合が73%から26%に下がったと報告しました。対照群のない調査です。",
+            "zh": "英国巴斯大学评估了 Cool Earth 为期两年的试点（向阿沙宁卡地区三个社区的211人每天发放约2英镑），发现买不起营养食物的家庭比例从73%降至26%。该研究没有对照组。",
+            "hi": "बाथ विश्वविद्यालय ने Cool Earth के दो साल के पायलट का मूल्यांकन किया, जिसमें तीन आशानिंका समुदायों के 211 लोगों को रोज़ लगभग £2 मिले; पौष्टिक भोजन न जुटा पाने वाले परिवारों का हिस्सा 73% से घटकर 26% रह गया। इस अध्ययन में कोई कंट्रोल ग्रुप नहीं था।",
+            "es": "Una evaluación de la Universidad de Bath del piloto de dos años de Cool Earth, que pagó unas 2 £ al día a 211 personas de tres comunidades asháninkas, halló que la proporción de hogares que no podían costear comida nutritiva bajó del 73% al 26%. El estudio no tuvo grupo de control.",
+            "de": "Eine Auswertung der University of Bath zum zweijährigen Pilotprojekt von Cool Earth, das 211 Menschen in drei Asháninka-Gemeinden rund 2 £ pro Tag zahlte, ergab, dass der Anteil der Haushalte, die sich keine nahrhafte Kost leisten konnten, von 73 % auf 26 % sank. Die Studie hatte keine Kontrollgruppe.",
+            "ar": "وجد تقييم أجرته جامعة باث لتجربة ⁦Cool Earth⁩ التي استمرت عامين، ودفعت لـ211 شخصًا في ثلاث مجتمعات من شعب الأشانينكا نحو ⁦£2⁩ يوميًا، أن نسبة الأسر العاجزة عن تحمّل غذاء مغذٍّ انخفضت من 73% إلى 26%. ولم تتضمن الدراسة مجموعة ضابطة."
+          }
+        },
+        {
+          "id": "us-musk-spacex-shares",
+          "date": "2026-10-19",
+          "region": "us",
+          "tag": "ai",
+          "essays": [
+            "public-benefit-fund"
+          ],
+          "sources": [
+            {
+              "name": "Al Jazeera",
+              "url": "https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains"
+            }
+          ],
+          "title": {
+            "en": "Musk pledges one SpaceX share for every child in the US",
+            "ja": "マスク氏、米国のすべての子どもにSpaceX株1株を贈ると表明",
+            "zh": "马斯克承诺向美国每个孩子赠送一股 SpaceX 股票",
+            "hi": "मस्क ने अमेरिका के हर बच्चे को SpaceX का एक शेयर देने का वादा किया",
+            "es": "Musk promete una acción de SpaceX para cada niño de Estados Unidos",
+            "de": "Musk verspricht jedem Kind in den USA eine SpaceX-Aktie",
+            "ar": "ماسك يتعهد بسهم من ⁦SpaceX⁩ لكل طفل في الولايات المتحدة"
+          },
+          "summary": {
+            "en": "After Anthropic’s announcement, Elon Musk said he would give a SpaceX share to every American child next year, about $10.7 billion in total at the latest closing price. He has not said who qualifies or how the shares would be delivered.",
+            "ja": "Anthropicの発表を受け、イーロン・マスク氏は来年、米国のすべての子どもにSpaceX株を1株ずつ贈ると述べました。直近の終値で合計約107億ドルです。対象となる子どもの範囲や受け渡しの方法は明らかにしていません。",
+            "zh": "在 Anthropic 宣布之后，埃隆·马斯克表示明年将向每个美国孩子赠送一股 SpaceX 股票，按最近收盘价合计约107亿美元。他尚未说明哪些孩子符合条件、股票如何交付。",
+            "hi": "Anthropic की घोषणा के बाद एलन मस्क ने कहा कि वे अगले साल हर अमेरिकी बच्चे को SpaceX का एक शेयर देंगे, जो पिछले क्लोज़िंग भाव पर कुल लगभग $10.7 अरब है। उन्होंने यह नहीं बताया कि कौन पात्र होगा या शेयर कैसे दिए जाएँगे।",
+            "es": "Tras el anuncio de Anthropic, Elon Musk dijo que el año próximo dará una acción de SpaceX a cada niño estadounidense, unos 10.700 millones de dólares en total al último precio de cierre. No ha dicho quién tendría derecho ni cómo se entregarían las acciones.",
+            "de": "Nach der Ankündigung von Anthropic sagte Elon Musk, er werde im nächsten Jahr jedem amerikanischen Kind eine SpaceX-Aktie schenken, zum letzten Schlusskurs insgesamt rund 10,7 Milliarden Dollar. Wer berechtigt ist und wie die Aktien übergeben werden, hat er nicht gesagt.",
+            "ar": "بعد إعلان ⁦Anthropic⁩، قال إيلون ماسك إنه سيمنح كل طفل أمريكي سهمًا من ⁦SpaceX⁩ العام المقبل، بقيمة إجمالية تقارب ⁦$10.7⁩ مليار بسعر الإغلاق الأخير. ولم يحدد من يستحقه ولا كيف ستُسلَّم الأسهم."
+          }
+        },
+        {
+          "id": "us-anthropic-public-benefit-fund",
+          "date": "2026-10-18",
+          "region": "us",
+          "tag": "ai",
+          "essays": [
+            "public-benefit-fund"
+          ],
+          "sources": [
+            {
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news/public-benefit-fund"
+            }
+          ],
+          "title": {
+            "en": "Anthropic commits 5% of its shares to a public benefit fund",
+            "ja": "Anthropic、株式の5%を公益ファンドに拠出すると発表",
+            "zh": "Anthropic 将5%股份投入公益基金",
+            "hi": "Anthropic ने अपने 5% शेयर एक पब्लिक बेनिफ़िट फ़ंड को देने का वादा किया",
+            "es": "Anthropic destina el 5% de sus acciones a un fondo de beneficio público",
+            "de": "Anthropic bringt 5 % seiner Aktien in einen Gemeinwohlfonds ein",
+            "ar": "⁦Anthropic⁩ تخصص 5% من أسهمها لصندوق للمنفعة العامة"
+          },
+          "summary": {
+            "en": "The AI company is placing 5% of its shares, subject to stockholder approval, in a new fund that could make large donations and might explore direct distributions to specific populations. It is not a basic income, and details on governance are due in the coming months.",
+            "ja": "AI企業のAnthropicは、株主の承認を条件に株式の5%を新しいファンドに拠出します。ファンドは大口の寄付を行うほか、特定の人々への直接分配を検討する可能性もあるとしています。ベーシックインカムではなく、運営体制の詳細は今後数か月で示される予定です。",
+            "zh": "这家 AI 公司将把5%的股份（须经股东批准）投入一个新基金，该基金可进行大额捐赠，也可能探索向特定人群直接分配。这并非基本收入，治理细节将在未来几个月公布。",
+            "hi": "यह AI कंपनी शेयरधारकों की मंज़ूरी की शर्त पर अपने 5% शेयर एक नए फ़ंड में डाल रही है, जो बड़े दान दे सकता है और कुछ ख़ास आबादियों को सीधे वितरण पर भी विचार कर सकता है। यह बेसिक इनकम नहीं है, और संचालन के ब्यौरे आने वाले महीनों में आएँगे।",
+            "es": "La empresa de IA aportará el 5% de sus acciones, sujeto a la aprobación de los accionistas, a un nuevo fondo que podría hacer grandes donaciones y quizá explorar distribuciones directas a poblaciones concretas. No es una renta básica, y los detalles de su gobierno llegarán en los próximos meses.",
+            "de": "Das KI-Unternehmen legt 5 % seiner Aktien, vorbehaltlich der Zustimmung der Aktionäre, in einen neuen Fonds, der große Spenden leisten und womöglich direkte Ausschüttungen an bestimmte Gruppen prüfen könnte. Ein Grundeinkommen ist das nicht; Einzelheiten zur Steuerung sollen in den kommenden Monaten folgen.",
+            "ar": "تضع شركة الذكاء الاصطناعي 5% من أسهمها، رهنًا بموافقة المساهمين، في صندوق جديد قد يقدّم تبرعات كبيرة وربما يدرس توزيعات مباشرة على فئات سكانية محددة. وهذا ليس دخلًا أساسيًا، وستُعلن تفاصيل الحوكمة في الأشهر المقبلة."
+          }
+        },
+        {
+          "id": "ie-basic-income-arts-permanent",
+          "date": "2026-10-14",
+          "region": "ie",
+          "tag": "policy",
+          "sources": [
+            {
+              "name": "MusicRadar",
+              "url": "https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years"
+            }
+          ],
+          "title": {
+            "en": "Ireland’s permanent basic income for artists gets under way",
+            "ja": "アイルランドの芸術家向けベーシックインカム、恒久制度が始動",
+            "zh": "爱尔兰艺术家基本收入常设计划启动",
+            "hi": "आयरलैंड में कलाकारों के लिए स्थायी बेसिक इनकम शुरू",
+            "es": "Arranca la renta básica permanente para artistas de Irlanda",
+            "de": "Irlands dauerhaftes Grundeinkommen für Kunstschaffende startet",
+            "ar": "انطلاق الدخل الأساسي الدائم للفنانين في أيرلندا"
+          },
+          "summary": {
+            "en": "2,000 artists chosen from more than 10,000 applicants will receive €325 a week for three years, with first payments backdated to September. The National Campaign for the Arts says €34 million in the 2027 budget funds the scheme.",
+            "ja": "1万人を超える応募者から選ばれた2,000人の芸術家が、3年間にわたり週325ユーロを受け取ります。初回の支払いは9月にさかのぼります。芸術団体National Campaign for the Artsによると、2027年度予算の3,400万ユーロが財源です。",
+            "zh": "从一万多名申请者中选出的2,000名艺术家将在三年内每周领取325欧元，首批款项追溯至9月。爱尔兰全国艺术运动（National Campaign for the Arts）称，2027年预算中的3,400万欧元为该计划提供资金。",
+            "hi": "10,000 से ज़्यादा आवेदकों में से चुने गए 2,000 कलाकारों को तीन साल तक हर हफ़्ते €325 मिलेंगे, और पहले भुगतान सितंबर से लागू माने जाएँगे। National Campaign for the Arts के अनुसार 2027 के बजट में €3.4 करोड़ इस योजना के लिए हैं।",
+            "es": "2.000 artistas elegidos entre más de 10.000 solicitantes recibirán 325 € a la semana durante tres años, con los primeros pagos con efecto desde septiembre. La National Campaign for the Arts dice que 34 millones de euros del presupuesto de 2027 financian el programa.",
+            "de": "2.000 aus mehr als 10.000 Bewerbungen ausgewählte Kunstschaffende erhalten drei Jahre lang 325 € pro Woche; die ersten Zahlungen gelten rückwirkend ab September. Laut der National Campaign for the Arts finanzieren 34 Millionen Euro im Haushalt 2027 das Programm.",
+            "ar": "سيحصل 2,000 فنان اختيروا من بين أكثر من 10,000 متقدم على ⁦€325⁩ أسبوعيًا لمدة ثلاث سنوات، على أن تُحتسب الدفعات الأولى بأثر رجعي من سبتمبر. وتقول حملة ⁦National Campaign for the Arts⁩ إن 34 مليون يورو في موازنة 2027 تموّل البرنامج."
+          }
+        },
+        {
+          "id": "kr-rural-pilot-2027-call",
+          "date": "2026-10-08",
+          "region": "kr",
+          "tag": "pilot",
+          "timeline": [
+            "korea-rural"
+          ],
+          "sources": [
+            {
+              "name": "Ministry of Agriculture, Food and Rural Affairs (Korea)",
+              "url": "https://www.mafra.go.kr/bbs/home/792/579390/artclView.do"
+            }
+          ],
+          "title": {
+            "en": "South Korea invites more counties to join its rural basic income pilot in 2027",
+            "ja": "韓国、農村基本所得の試験事業に2027年から加わる郡を公募",
+            "zh": "韩国公开征集2027年加入农村基本收入试点的郡",
+            "hi": "दक्षिण कोरिया ने 2027 में ग्रामीण बेसिक इनकम पायलट से जुड़ने के लिए और काउंटियों को बुलाया",
+            "es": "Corea del Sur invita a más condados a sumarse en 2027 a su piloto de renta básica rural",
+            "de": "Südkorea lädt weitere Landkreise ein, 2027 beim ländlichen Grundeinkommen mitzumachen",
+            "ar": "كوريا الجنوبية تدعو مزيدًا من المقاطعات إلى الانضمام لتجربة الدخل الأساسي الريفي في 2027"
+          },
+          "summary": {
+            "en": "The agriculture ministry opened a call for about 18 more depopulating counties, with applications from 20 October to 3 November; residents would get 150,000 won a month in local vouchers. The 2027 budget proposal raises the central government’s share of the cost from 40% to 50%, pending parliament.",
+            "ja": "農林畜産食品部が、人口減少地域の郡からさらに18郡程度を選ぶ公募を始めました（受付は10月20日〜11月3日）。住民には月15万ウォンが地域商品券で支給されます。2027年度政府予算案では国の負担率を40%から50%に上げますが、国会での予算確定が前提です。",
+            "zh": "农林畜产食品部启动公开征集，将再从人口减少地区选出约18个郡，申请受理期为10月20日至11月3日；居民每月将获得15万韩元地方消费券。2027年政府预算案把中央政府负担比例从40%提高到50%，尚待国会确定。",
+            "hi": "कृषि मंत्रालय ने घटती आबादी वाली लगभग 18 और काउंटियों के लिए आवेदन माँगे, जिनकी अवधि 20 अक्टूबर से 3 नवंबर तक थी; निवासियों को हर महीने 1,50,000 वॉन स्थानीय वाउचर में मिलेंगे। 2027 के बजट प्रस्ताव में केंद्र सरकार का हिस्सा 40% से बढ़ाकर 50% किया गया है, जो संसद की मंज़ूरी पर निर्भर है।",
+            "es": "El Ministerio de Agricultura abrió una convocatoria para unos 18 condados más en despoblación, con solicitudes del 20 de octubre al 3 de noviembre; los residentes recibirían 150.000 wones al mes en vales locales. El proyecto de presupuesto de 2027 eleva la parte del Gobierno central del 40% al 50%, a falta de la aprobación parlamentaria.",
+            "de": "Das Agrarministerium startete eine Ausschreibung für etwa 18 weitere schrumpfende Landkreise, Bewerbungen vom 20. Oktober bis 3. November; Einwohner bekämen monatlich 150.000 Won in lokalen Gutscheinen. Der Haushaltsentwurf 2027 erhöht den Anteil der Zentralregierung von 40 % auf 50 %, sofern das Parlament zustimmt.",
+            "ar": "فتحت وزارة الزراعة باب التقدّم أمام نحو 18 مقاطعة أخرى يتناقص سكانها، مع قبول الطلبات من 20 أكتوبر إلى 3 نوفمبر؛ وسيحصل السكان على 150,000 وون شهريًا في صورة قسائم محلية. ويرفع مشروع موازنة 2027 حصة الحكومة المركزية من التكلفة من 40% إلى 50%، رهنًا بموافقة البرلمان."
+          }
+        },
+        {
+          "id": "us-alaska-pfd-2026",
+          "date": "2026-10-01",
+          "region": "us",
+          "tag": "policy",
+          "timeline": [
+            "alaska"
+          ],
+          "sources": [
+            {
+              "name": "Alaska Department of Revenue, PFD Division",
+              "url": "https://pfd.alaska.gov/"
+            },
+            {
+              "name": "Alaska’s News Source",
+              "url": "https://www.alaskasnewssource.com/2026/09/30/permanent-fund-dividends-will-be-distributed-alaskans-starting-this-week/"
+            }
+          ],
+          "title": {
+            "en": "Alaska pays its 2026 Permanent Fund Dividend of $1,200",
+            "ja": "アラスカ州、2026年の永久基金配当1,200ドルを支給",
+            "zh": "阿拉斯加发放2026年永久基金红利1,200美元",
+            "hi": "अलास्का ने 2026 का $1,200 का परमानेंट फ़ंड डिविडेंड दिया",
+            "es": "Alaska paga su Dividendo del Fondo Permanente de 2026: 1.200 dólares",
+            "de": "Alaska zahlt die Permanent Fund Dividend 2026 von 1.200 Dollar",
+            "ar": "ألاسكا تدفع عائد الصندوق الدائم لعام 2026: ⁦$1,200⁩"
+          },
+          "summary": {
+            "en": "This year’s dividend is $1,000 plus a $200 energy relief payment. Direct deposits began on 1 October, with later payment dates on 22 October, 19 November and 17 December.",
+            "ja": "今年の配当は1,000ドルに、エネルギー救済金200ドルを加えた額です。10月1日に口座振込が始まり、その後も10月22日、11月19日、12月17日に支払い日があります。",
+            "zh": "今年的红利为1,000美元，外加200美元能源补助。直接存款于10月1日开始，此后还有10月22日、11月19日和12月17日三个发放日。",
+            "hi": "इस साल का डिविडेंड $1,000 है, साथ में $200 का ऊर्जा राहत भुगतान। सीधे खाते में भुगतान 1 अक्टूबर से शुरू हुए, और आगे 22 अक्टूबर, 19 नवंबर और 17 दिसंबर को भी भुगतान की तारीख़ें हैं।",
+            "es": "El dividendo de este año es de 1.000 dólares más un pago de 200 dólares por alivio energético. Los depósitos directos empezaron el 1 de octubre, con más fechas de pago el 22 de octubre, el 19 de noviembre y el 17 de diciembre.",
+            "de": "Die diesjährige Dividende beträgt 1.000 Dollar plus 200 Dollar Energie-Entlastung. Die Direktüberweisungen begannen am 1. Oktober, weitere Zahltage sind der 22. Oktober, der 19. November und der 17. Dezember.",
+            "ar": "عائد هذا العام ⁦$1,000⁩ إضافة إلى دفعة ⁦$200⁩ للإغاثة من تكاليف الطاقة. وبدأت الإيداعات المباشرة في 1 أكتوبر، مع مواعيد دفع لاحقة في 22 أكتوبر و19 نوفمبر و17 ديسمبر."
+          }
+        }
+      ]
+    }
+  ],
   "CATS": {
     "ja": {
       "all": "すべて",
@@ -3793,6 +4269,20 @@ module.exports = {
       "verifyReqH": "この認証が必要なサービス",
       "verifyOptH": "この認証を任意で使えるサービス",
       "verifyAll": "認証方法の一覧",
+      "biNewsTitle": "ベーシックインカム・ニュース",
+      "biNewsH1": "ベーシックインカム・ニュース（毎週更新）",
+      "biNewsDesc": "世界のベーシックインカム、保障所得、現金給付のニュースを毎週まとめています。実験、政策、研究、AIと財源の動きを、出典を確かめたうえで自分たちの言葉で要約し、元の記事へのリンクを添えています。",
+      "biNewsIntro": "ベーシックインカム、保障所得、現金給付のニュースを毎週、手作業で確かめてまとめています。各項目は自分たちの言葉で要約し、出典にリンクしています。提案や公約は、その旨を明記しています。このサイト自体の更新は、トップページの更新情報をご覧ください。",
+      "biNewsWeek": "{date}の週",
+      "biNewsUpdated": "{date}更新",
+      "biNewsSource": "出典",
+      "biNewsHome": "ベーシックインカム・ニュース（毎週更新）",
+      "biNewsFeed": "このページのRSS",
+      "biNewsTag_pilot": "実験",
+      "biNewsTag_policy": "政策",
+      "biNewsTag_research": "研究",
+      "biNewsTag_ai": "AIと財源",
+      "biNewsTag_other": "その他",
       "tlTitle": "ベーシックインカム社会実験の年表",
       "tlIntro": "世界で行われてきたベーシックインカムや現金給付の主な実験・制度を、年代順にまとめました。結果はそれぞれの発表元の説明をもとにしています。出典が確かめられたものだけを載せています。",
       "tlDesc": "Mincome、アラスカの配当、ナミビア、フィンランド、ストックトン、OpenResearch、ドイツのパイロットなど、ベーシックインカム実験と制度の年表。実施者・給付・結果・出典つき。",
@@ -4087,6 +4577,20 @@ module.exports = {
       "verifyReqH": "Services that require it",
       "verifyOptH": "Services where it is optional",
       "verifyAll": "All verification methods",
+      "biNewsTitle": "Basic income news",
+      "biNewsH1": "Basic income news, week by week",
+      "biNewsDesc": "A weekly, hand-checked roundup of basic income, guaranteed income and cash transfer news from around the world, summarised in our own words with sources.",
+      "biNewsIntro": "A weekly roundup of basic income, guaranteed income and cash transfer news, checked by hand. Each item is summarised in our own words and links to its source; proposals are labelled as proposals. For changes to this site itself, see the update log on the home page.",
+      "biNewsWeek": "Week of {date}",
+      "biNewsUpdated": "Updated {date}",
+      "biNewsSource": "Source",
+      "biNewsHome": "Basic income news, updated weekly",
+      "biNewsFeed": "RSS for this page",
+      "biNewsTag_pilot": "Pilot",
+      "biNewsTag_policy": "Policy",
+      "biNewsTag_research": "Research",
+      "biNewsTag_ai": "AI & funding",
+      "biNewsTag_other": "Other",
       "tlTitle": "Basic income experiments: a timeline",
       "tlIntro": "Major basic income and cash-transfer experiments and schemes around the world, in order. Results are as reported by each source, and only items we could source are listed.",
       "tlDesc": "A timeline of basic income experiments, from Mincome and Alaska’s dividend to Finland, Stockton and Germany’s pilot: who ran them, what was paid and results.",
@@ -4381,6 +4885,20 @@ module.exports = {
       "verifyReqH": "जिन सेवाओं में यह ज़रूरी है",
       "verifyOptH": "जिन सेवाओं में यह वैकल्पिक है",
       "verifyAll": "सभी वेरिफ़िकेशन तरीके",
+      "biNewsTitle": "बेसिक इनकम समाचार",
+      "biNewsH1": "बेसिक इनकम समाचार, हर हफ़्ते",
+      "biNewsDesc": "दुनिया भर की बेसिक इनकम, गारंटीड इनकम और नकद हस्तांतरण की ख़बरों का साप्ताहिक संग्रह, हाथ से जाँचा हुआ, हमारे अपने शब्दों में सार और स्रोतों के साथ।",
+      "biNewsIntro": "बेसिक इनकम, गारंटीड इनकम और नकद हस्तांतरण की ख़बरों का साप्ताहिक संग्रह, जिसे हाथ से जाँचा जाता है। हर ख़बर का सार हमारे अपने शब्दों में है और उसके स्रोत का लिंक दिया गया है; प्रस्तावों को प्रस्ताव ही लिखा गया है। इस साइट के अपने बदलावों के लिए होम पेज पर अपडेट देखें।",
+      "biNewsWeek": "{date} वाला सप्ताह",
+      "biNewsUpdated": "{date} को अपडेट किया गया",
+      "biNewsSource": "स्रोत",
+      "biNewsHome": "बेसिक इनकम समाचार, हर हफ़्ते अपडेट",
+      "biNewsFeed": "इस पेज का RSS",
+      "biNewsTag_pilot": "पायलट",
+      "biNewsTag_policy": "नीति",
+      "biNewsTag_research": "शोध",
+      "biNewsTag_ai": "AI और फ़ंडिंग",
+      "biNewsTag_other": "अन्य",
       "tlTitle": "बेसिक इनकम प्रयोगों की समयरेखा",
       "tlIntro": "दुनिया भर के प्रमुख बेसिक इनकम और नकद सहायता प्रयोग और योजनाएँ, क्रम से। नतीजे हर स्रोत के बताए अनुसार हैं, और सिर्फ़ वही शामिल हैं जिनका स्रोत मिल सका।",
       "tlDesc": "बेसिक इनकम प्रयोगों और योजनाओं की समयरेखा: Mincome, अलास्का डिविडेंड, नामीबिया, फ़िनलैंड, स्टॉकटन और जर्मन पायलट, संचालक, भुगतान, नतीजे और स्रोत के साथ।",
@@ -4675,6 +5193,20 @@ module.exports = {
       "verifyReqH": "需要此验证的服务",
       "verifyOptH": "可选择使用此验证的服务",
       "verifyAll": "全部验证方式",
+      "biNewsTitle": "基本收入新闻",
+      "biNewsH1": "基本收入新闻（每周更新）",
+      "biNewsDesc": "每周汇总全球基本收入、保障收入和现金转移的新闻：试点、政策、研究以及 AI 与资金的动向。每条新闻都经人工核实来源，用我们自己的话概括，并附上原文链接，方便查证。",
+      "biNewsIntro": "每周人工核实并汇总基本收入、保障收入和现金转移的新闻。每条都用我们自己的话概括并链接到来源；提案会注明是提案。本站自身的更新请看首页的更新记录。",
+      "biNewsWeek": "{date} 当周",
+      "biNewsUpdated": "{date} 更新",
+      "biNewsSource": "来源",
+      "biNewsHome": "基本收入新闻（每周更新）",
+      "biNewsFeed": "本页 RSS",
+      "biNewsTag_pilot": "试点",
+      "biNewsTag_policy": "政策",
+      "biNewsTag_research": "研究",
+      "biNewsTag_ai": "AI 与资金",
+      "biNewsTag_other": "其他",
       "tlTitle": "基本收入实验年表",
       "tlIntro": "按时间顺序整理世界各地主要的基本收入和现金发放实验与制度。结果均依据各来源的说明，仅收录能核实出处的项目。",
       "tlDesc": "全民基本收入实验与制度年表：Mincome、阿拉斯加永久基金红利、纳米比亚、芬兰、斯托克顿、OpenResearch、德国试点等，附实施方、发放内容、结果和出处。",
@@ -4969,6 +5501,20 @@ module.exports = {
       "verifyReqH": "Servicios que lo exigen",
       "verifyOptH": "Servicios donde es opcional",
       "verifyAll": "Todos los métodos de verificación",
+      "biNewsTitle": "Noticias de renta básica",
+      "biNewsH1": "Noticias de renta básica, semana a semana",
+      "biNewsDesc": "Resumen semanal, revisado a mano, de noticias de renta básica, ingreso garantizado y transferencias de efectivo en el mundo, con nuestras palabras y fuentes.",
+      "biNewsIntro": "Un resumen semanal, revisado a mano, de noticias sobre renta básica, ingreso garantizado y transferencias de efectivo. Cada noticia está resumida con nuestras palabras y enlaza a su fuente; las propuestas se señalan como propuestas. Para los cambios de este sitio, consulta las novedades en la portada.",
+      "biNewsWeek": "Semana del {date}",
+      "biNewsUpdated": "Actualizado el {date}",
+      "biNewsSource": "Fuente",
+      "biNewsHome": "Noticias de renta básica, cada semana",
+      "biNewsFeed": "RSS de esta página",
+      "biNewsTag_pilot": "Piloto",
+      "biNewsTag_policy": "Política",
+      "biNewsTag_research": "Investigación",
+      "biNewsTag_ai": "IA y financiación",
+      "biNewsTag_other": "Otros",
       "tlTitle": "Experimentos de renta básica: una cronología",
       "tlIntro": "Los principales experimentos y programas de renta básica y transferencias de efectivo del mundo, en orden. Los resultados son los que informa cada fuente y solo incluimos lo que pudimos documentar.",
       "tlDesc": "Cronología de experimentos de renta básica, de Mincome y el dividendo de Alaska a Finlandia, Stockton y Alemania: quién los hizo, qué se pagó y resultados.",
@@ -5263,6 +5809,20 @@ module.exports = {
       "verifyReqH": "خدمات تتطلبه",
       "verifyOptH": "خدمات يكون فيها اختياريًا",
       "verifyAll": "كل طرق التحقق",
+      "biNewsTitle": "أخبار الدخل الأساسي",
+      "biNewsH1": "أخبار الدخل الأساسي أسبوعًا بأسبوع",
+      "biNewsDesc": "حصاد أسبوعي نتحقق منه يدويًا لأخبار الدخل الأساسي والدخل المضمون والتحويلات النقدية من حول العالم، نلخّصها بكلماتنا الخاصة ونرفق بكل خبر رابط مصدره.",
+      "biNewsIntro": "حصاد أسبوعي، نتحقق منه يدويًا، لأخبار الدخل الأساسي والدخل المضمون والتحويلات النقدية. نلخّص كل خبر بكلماتنا ونربطه بمصدره، ونشير إلى المقترحات على أنها مقترحات. أما تحديثات هذا الموقع نفسه فتجدها في قسم التحديثات على الصفحة الرئيسية.",
+      "biNewsWeek": "أسبوع {date}",
+      "biNewsUpdated": "حُدّث في {date}",
+      "biNewsSource": "المصدر",
+      "biNewsHome": "أخبار الدخل الأساسي، تُحدَّث أسبوعيًا",
+      "biNewsFeed": "خلاصة ⁦RSS⁩ لهذه الصفحة",
+      "biNewsTag_pilot": "تجربة",
+      "biNewsTag_policy": "سياسات",
+      "biNewsTag_research": "بحث",
+      "biNewsTag_ai": "الذكاء الاصطناعي والتمويل",
+      "biNewsTag_other": "أخرى",
       "tlTitle": "تجارب الدخل الأساسي: خط زمني",
       "tlIntro": "أبرز تجارب وبرامج الدخل الأساسي والتحويلات النقدية حول العالم، مرتبة زمنيًا. النتائج كما أوردها كل مصدر، ولا ندرج إلا ما استطعنا توثيقه.",
       "tlDesc": "خط زمني لتجارب الدخل الأساسي، من ⁦Mincome⁩ وعائد ألاسكا إلى ناميبيا وفنلندا وستوكتون و⁦OpenResearch⁩ والتجربة الألمانية، مع الجهة المنفذة والنتائج والمصادر.",
@@ -5557,6 +6117,20 @@ module.exports = {
       "verifyReqH": "Dienste, die das verlangen",
       "verifyOptH": "Dienste, bei denen es optional ist",
       "verifyAll": "Alle Verifizierungsmethoden",
+      "biNewsTitle": "Grundeinkommen-Nachrichten",
+      "biNewsH1": "Grundeinkommen-Nachrichten, Woche für Woche",
+      "biNewsDesc": "Wöchentlicher, von Hand geprüfter Überblick über Meldungen zu Grundeinkommen, garantiertem Einkommen und Geldtransfers weltweit, mit Quellen.",
+      "biNewsIntro": "Ein wöchentlicher, von Hand geprüfter Überblick über Nachrichten zu Grundeinkommen, garantiertem Einkommen und Geldtransfers. Jede Meldung ist in eigenen Worten zusammengefasst und verlinkt ihre Quelle; Vorschläge sind als Vorschläge gekennzeichnet. Änderungen an dieser Website selbst stehen in den Neuigkeiten auf der Startseite.",
+      "biNewsWeek": "Woche vom {date}",
+      "biNewsUpdated": "Aktualisiert am {date}",
+      "biNewsSource": "Quelle",
+      "biNewsHome": "Grundeinkommen-Nachrichten, jede Woche",
+      "biNewsFeed": "RSS für diese Seite",
+      "biNewsTag_pilot": "Pilotprojekt",
+      "biNewsTag_policy": "Politik",
+      "biNewsTag_research": "Forschung",
+      "biNewsTag_ai": "KI und Finanzierung",
+      "biNewsTag_other": "Sonstiges",
       "tlTitle": "Grundeinkommen-Experimente: eine Zeitleiste",
       "tlIntro": "Die wichtigsten Experimente und Programme zu Grundeinkommen und Geldtransfers weltweit, chronologisch. Die Ergebnisse geben wieder, was die jeweilige Quelle berichtet; aufgeführt ist nur, was wir belegen konnten.",
       "tlDesc": "Zeitleiste der Grundeinkommen-Experimente: von Mincome und Alaskas Dividende über Finnland und Stockton bis zum deutschen Pilotprojekt, mit Ergebnissen.",

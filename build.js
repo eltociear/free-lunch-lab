@@ -2,7 +2,7 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [], QUIZ, CALC } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {} } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
 const calcJs = require('./src/calc.js');
 const { execFileSync } = require('child_process');
@@ -136,6 +136,43 @@ const longDate = (iso, lang) => new Intl.DateTimeFormat(LANG_TAG[lang], { year: 
 // ベーシックインカム社会実験の年表: /timeline/ と /{lang}/timeline/
 const tlPath = l => `${urlPath(l)}timeline/`;
 const tlAbs = l => SITE_URL + tlPath(l);
+// ベーシックインカム・ニュース（外部のニュースを毎週まとめる）: /news/ と /{lang}/news/、フィードは news/feed.xml。
+// サイト自身の更新履歴（NEWS・トップの「更新情報」）とは別のデータ BI_NEWS。週ごとのまとまり（updated）の新しい順
+const biNewsPath = l => `${urlPath(l)}news/`;
+const biNewsAbs = l => SITE_URL + biNewsPath(l);
+const biNewsFeedPath = l => `${biNewsPath(l)}feed.xml`;
+const biNewsFeedAbs = l => SITE_URL + biNewsFeedPath(l);
+const BI_NEWS_TAGS = ['pilot', 'policy', 'research', 'ai', 'other'];
+const BI_NEWS_KEYS = ['biNewsTitle', 'biNewsH1', 'biNewsDesc', 'biNewsIntro', 'biNewsWeek', 'biNewsUpdated', 'biNewsSource', 'biNewsHome', 'biNewsFeed', ...BI_NEWS_TAGS.map(t => 'biNewsTag_' + t)];
+for (const l of LANGS) for (const k of BI_NEWS_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const [k, r] of Object.entries(BI_NEWS_REGIONS)) for (const l of LANGS) if (!r[l]) throw new Error(`news region ${k}: missing ${l}`);
+{
+  const ISO = /^\d{4}-\d\d-\d\d$/, seen = new Set();
+  BI_NEWS.forEach((b, i) => {
+    if (!ISO.test(b.updated || '')) throw new Error(`news batch ${i}: updated must be YYYY-MM-DD`);
+    if (i && !(b.updated < BI_NEWS[i - 1].updated)) throw new Error(`news batch ${b.updated}: batches must be newest first`);
+    if (!b.items || !b.items.length) throw new Error(`news batch ${b.updated}: no items`);
+    b.items.forEach((x, j) => {
+      const at = `news ${x.id || `${b.updated}#${j}`}`;
+      if (!/^[a-z0-9-]+$/.test(x.id || '') || seen.has(x.id)) throw new Error(`${at}: id must be unique, lowercase a-z 0-9 -`);
+      seen.add(x.id);
+      if (!ISO.test(x.date || '') || x.date > b.updated) throw new Error(`${at}: date must be YYYY-MM-DD and not after the batch's updated date`);
+      if (j && x.date > b.items[j - 1].date) throw new Error(`${at}: items must be newest first within a batch`);
+      if (!BI_NEWS_REGIONS[x.region]) throw new Error(`${at}: unknown region ${x.region} (add it to BI_NEWS_REGIONS)`);
+      if (!BI_NEWS_TAGS.includes(x.tag)) throw new Error(`${at}: tag must be one of ${BI_NEWS_TAGS.join(', ')}`);
+      if (!(x.sources || []).length || x.sources.some(s => !s.name || !/^https:\/\//.test(s.url || ''))) throw new Error(`${at}: needs sources [{ name, url (https) }]`);
+      for (const l of LANGS) for (const f of ['title', 'summary']) if (!(x[f] || {})[l]) throw new Error(`${at}: missing ${f}.${l}`);
+      for (const id of [].concat(x.timeline || [])) if (!TIMELINE.some(t => t.id === id)) throw new Error(`${at}: unknown timeline id ${id}`);
+      for (const id of [].concat(x.essays || [])) if (!ESSAYS.some(e => e.id === id)) throw new Error(`${at}: unknown essay ${id}`);
+    });
+  });
+  // 要約は1〜2文が目安。長すぎたら警告する（ビルドは止めない）
+  const long = BI_NEWS.flatMap(b => b.items).filter(x => [...x.summary.ja].length > 160 || x.summary.en.length > 360).map(x => x.id);
+  if (long.length) console.warn(`WARNING: news summary over the length guideline (ja 160 / en 360 chars): ${long.join(', ')}`);
+}
+const BI_NEWS_ITEMS = BI_NEWS.flatMap(b => b.items.map(x => ({ ...x, updated: b.updated })));
+// 週の見出しは updated の日を含む週の月曜日
+const weekOf = iso => { const d = new Date(iso + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() - (d.getUTCDay() + 6) % 7); return d.toISOString().slice(0, 10); };
 // ベーシックインカムにかかわるオープンソースのコード: /open-source/ と /{lang}/open-source/
 const ossPath = l => `${urlPath(l)}open-source/`;
 const ossAbs = l => SITE_URL + ossPath(l);
@@ -688,6 +725,10 @@ const DETAIL_CSS = `
 .tl-card dd{margin:0;min-width:0;overflow-wrap:anywhere}
 .tl-links{font-size:.8125rem}.tl-links span{color:var(--muted)}
 .tl-more{margin-top:24px;font-size:.92rem}
+.bn-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;font-size:.8125rem;color:var(--muted)}
+.bn-meta time{color:var(--accent)}
+.bn-h{font-family:var(--f-body);font-weight:700;font-size:1.05rem;line-height:1.55;overflow-wrap:anywhere}
+.bn-week>.oss-note{margin-top:8px}
 .tl-more a,.tl-links a,.related a{display:inline-block;padding-block:11px;margin-block:-11px}
 @media (max-width:520px){.tl-card dl{grid-template-columns:1fr}.tl-card dt{padding-top:6px}}
 .graves{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:14px}
@@ -838,7 +879,7 @@ function clip(str, lang) {
   return cut > 0 ? head.slice(0, cut) : a.slice(0, n - 1).join('').trimEnd() + '…';
 }
 // 一覧ページの meta description（T の *Desc）が目安から外れていたら警告する
-const DESC_KEYS = ['metaDesc', 'orgsDesc', 'graveDesc', 'tlDesc', 'ossDesc', 'badgeDesc', 'shindanDesc', 'essaysDesc'];
+const DESC_KEYS = ['metaDesc', 'orgsDesc', 'graveDesc', 'tlDesc', 'ossDesc', 'badgeDesc', 'shindanDesc', 'essaysDesc', 'biNewsDesc'];
 const descOff = LANGS.flatMap(l => DESC_KEYS.filter(k => T[l][k]).map(k => { const n = [...T[l][k]].length, [lo, hi] = DESC_RANGE(l); return n < lo || n > hi ? `${l}.${k} (${n}, ${lo}-${hi})` : ''; }).filter(Boolean));
 if (descOff.length) console.warn(`WARNING: meta description outside the length guideline: ${descOff.join(', ')}`);
 for (const l of LANGS) if (!T[l].homeTitle) throw new Error(`missing ${l}.homeTitle`);
@@ -921,7 +962,7 @@ function copyScript(L) {
 }
 
 // 個別ページ・団体ページで共通の外枠（head、上のバー、フッター）
-function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script = '', pr = false, image = `${SITE_URL}/og/${lang}.png` }) {
+function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script = '', pr = false, image = `${SITE_URL}/og/${lang}.png`, extraHead = '' }) {
   const L = T[lang];
   const rtl = RTL.has(lang);
   const home = urlPath(lang);
@@ -936,7 +977,7 @@ function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script =
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
 <link rel="alternate" type="application/rss+xml" title="${esc(L.title)} RSS" href="${feedAbs(lang)}">
-${ICONS}
+${extraHead}${ICONS}
 ${alts}
 <link rel="alternate" hreflang="x-default" href="${hrefFor(DEFAULT_LANG)}">
 <meta property="og:site_name" content="${esc(L.brandPlain)}">
@@ -966,7 +1007,7 @@ ${alts}
 <div class="wrap">
 ${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 ${script}
 </body>
@@ -1244,10 +1285,54 @@ function timelinePage(lang) {
 <main class="orgs">
 <header class="orgs-head"><p class="eyebrow">${esc(L.ebTimeline)}</p><h1>${esc(L.tlTitle)}</h1><p class="orgs-intro">${esc(L.tlIntro)}</p></header>
 <ol class="tl">${items}</ol>
-<p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${ossPath(lang)}">${esc(L.ossTitle)}</a></p>
+<p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${ossPath(lang)}">${esc(L.ossTitle)}</a> · <a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a></p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   return shell(lang, { title, desc: L.tlDesc, hrefFor: tlAbs, pathFor: tlPath, ld, ogType: 'website', body });
+}
+
+// ---- ベーシックインカム・ニュース（/news/）。外部のニュースを週ごとにまとめる（BI_NEWS）。要約は自分たちの言葉で、出典つき
+function biNewsItem(x, lang) {
+  const L = T[lang];
+  const srcs = x.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener" dir="auto">${esc(s.name)}</a>`).join(' · ');
+  const onSite = [
+    ...[].concat(x.timeline || []).map(id => TIMELINE.find(t => t.id === id)).map(t => `<a href="${tlPath(lang)}#tl-${t.id}" dir="auto">${esc(L.tlTitle)}: ${esc(t.name)}</a>`),
+    ...essayList(x.essays).map(e => `<a href="${essayPath(lang, e)}">${esc(e.title[lang] || e.title.en)}</a>`),
+  ];
+  return `<li class="org bn" id="n-${x.id}"><p class="bn-meta"><time datetime="${x.date}">${esc(longDate(x.date, lang))}</time><span>${esc(BI_NEWS_REGIONS[x.region][lang])}</span><span class="tl-type">${esc(L['biNewsTag_' + x.tag])}</span></p>
+<h3 class="bn-h">${esc(x.title[lang])}</h3>
+<p>${esc(x.summary[lang])}</p>
+<p class="tl-links"><span>${esc(L.biNewsSource)}:</span> ${srcs}</p>${onSite.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${onSite.join(' · ')}</p>` : ''}</li>`;
+}
+function biNewsPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const title = `${L.biNewsH1} | ${L.title}`;
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: L.biNewsTitle, item: biNewsAbs(lang) },
+    ],
+  };
+  const weeks = BI_NEWS.map(b => {
+    const w = weekOf(b.updated);
+    return `<section class="org-group bn-week" id="w-${w}"><h2>${esc(L.biNewsWeek.replace('{date}', longDate(w, lang)))}<span class="dot">${b.items.length}</span></h2>
+<p class="oss-note"><time datetime="${b.updated}">${esc(L.biNewsUpdated.replace('{date}', longDate(b.updated, lang)))}</time></p>
+<ul class="org-list">${b.items.map(x => biNewsItem(x, lang)).join('\n')}</ul></section>`;
+  }).join('\n');
+  const toc = BI_NEWS.map(b => { const w = weekOf(b.updated); return `<a href="#w-${w}">${esc(L.biNewsWeek.replace('{date}', longDate(w, lang)))}</a>`; }).join('');
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.biNewsTitle)}</li></ol></nav>
+<main class="orgs">
+<header class="orgs-head"><p class="eyebrow">${esc(L.biNewsTitle)}</p><h1>${esc(L.biNewsH1)}</h1><p class="orgs-intro">${esc(L.biNewsIntro)}</p>
+<p class="oss-note"><a href="${biNewsFeedPath(lang)}">${esc(L.biNewsFeed)}</a> · <a href="${SITE_URL}/news.json" dir="ltr">news.json</a></p>
+${BI_NEWS.length > 1 ? `<nav class="org-toc" aria-label="${esc(L.navLabel)}">${toc}</nav>` : ''}</header>
+${weeks}
+<p class="tl-more"><a href="${tlPath(lang)}">${esc(L.tlTitle)}</a> · <a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a> · <a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a></p>
+<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+</main>`;
+  const extraHead = `<link rel="alternate" type="application/rss+xml" title="${esc(L.biNewsTitle)} RSS" href="${biNewsFeedAbs(lang)}">\n`;
+  return shell(lang, { title, desc: clip(L.biNewsDesc, lang), hrefFor: biNewsAbs, pathFor: biNewsPath, ld, ogType: 'website', body, extraHead, image: ogImage(`news/${lang}/index.jpg`) });
 }
 
 // ---- 認証方法ごとのページ（/verify/{method}/）。カードは一覧と同じ部品を使う。必須を先、任意を後に
@@ -1462,6 +1547,9 @@ for (const lang of LANGS) {
   const bdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'badge');
   fs.mkdirSync(bdir, { recursive: true });
   fs.writeFileSync(path.join(bdir, 'index.html'), badgePage(lang));
+  const ndir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'news');
+  fs.mkdirSync(ndir, { recursive: true });
+  fs.writeFileSync(path.join(ndir, 'index.html'), biNewsPage(lang));
   const tdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'timeline');
   fs.mkdirSync(tdir, { recursive: true });
   fs.writeFileSync(path.join(tdir, 'index.html'), timelinePage(lang));
@@ -1560,6 +1648,7 @@ for (const [f, b] of Object.entries(BADGES)) fs.writeFileSync(path.join(OUT, 'ba
 const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 function newsLink(n, lang) {
   const en = n.en || '';
+  if (/basic income news page/i.test(en)) return biNewsAbs(lang);
   if (/badge/i.test(en)) return badgeAbs(lang);
   if (/calculator/i.test(en)) return calcAbs(lang);
   if (/quiz/i.test(en)) return qzAbs(lang);
@@ -1609,6 +1698,33 @@ ${items}
 `;
 }
 for (const lang of LANGS) fs.writeFileSync(path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'feed.xml'), feedXml(lang));
+// ベーシックインカム・ニュースの RSS（/news/feed.xml）。更新履歴のフィードとは別。guid は項目の id なので文を直しても変わらない
+function biNewsFeedXml(lang) {
+  const L = T[lang];
+  const items = BI_NEWS_ITEMS.map(x => `    <item>
+      <title>${xesc(x.title[lang])}</title>
+      <link>${xesc(biNewsAbs(lang) + '#n-' + x.id)}</link>
+      <guid isPermaLink="false">bi-news-${x.id}</guid>
+      <pubDate>${new Date(x.date + 'T00:00:00Z').toUTCString()}</pubDate>
+      <category>${xesc(L['biNewsTag_' + x.tag])}</category>
+      <description>${xesc(`${x.summary[lang]} ${L.biNewsSource}: ${x.sources.map(s => `${s.name} ${s.url}`).join(', ')}`)}</description>
+    </item>`).join('\n');
+  const last = new Date(((BI_NEWS[0] || {}).updated || '2026-01-01') + 'T00:00:00Z').toUTCString();
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${xesc(`${L.biNewsTitle} | ${L.brandPlain}`)}</title>
+    <link>${xesc(biNewsAbs(lang))}</link>
+    <description>${xesc(L.biNewsDesc)}</description>
+    <language>${LANG_TAG[lang]}</language>
+    <lastBuildDate>${last}</lastBuildDate>
+    <atom:link href="${xesc(biNewsFeedAbs(lang))}" rel="self" type="application/rss+xml"/>
+${items}
+  </channel>
+</rss>
+`;
+}
+for (const lang of LANGS) fs.writeFileSync(path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'news', 'feed.xml'), biNewsFeedXml(lang));
 
 const today = new Date().toISOString().slice(0, 10);
 // 1ページ分の <url>。href(l) で各言語版の URL を返す
@@ -1620,7 +1736,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
@@ -1756,7 +1872,36 @@ const dataJson = {
     includes: Object.fromEntries(LANGS.map(l => [l, clean(x.includes[l])])),
   })),
 };
-for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson], ['open-source.json', ossJson], ['open-data.json', dataJson]]) {
+const biNewsJson = {
+  name: 'Free Lunch Lab basic income news',
+  description: 'A weekly, hand-checked roundup of external basic income, guaranteed income and cash transfer news, grouped by weekly batch (newest first). Headlines and summaries are written by Free Lunch Lab in its own words; each item links to its source. This is separate from the site\'s own update log (the RSS feed at /feed.xml).',
+  source: biNewsAbs(DEFAULT_LANG),
+  repository: 'https://github.com/eltociear/free-lunch-lab',
+  license: 'CC BY 4.0',
+  licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+  generatedAt: (BI_NEWS[0] || {}).updated || null,
+  languages: LANGS,
+  count: BI_NEWS_ITEMS.length,
+  tags: Object.fromEntries(BI_NEWS_TAGS.map(t => [t, clean(T.en['biNewsTag_' + t])])),
+  weeks: BI_NEWS.map(b => ({
+    weekOf: weekOf(b.updated),
+    updated: b.updated,
+    items: b.items.map(x => ({
+      id: x.id,
+      date: x.date,
+      region: x.region,
+      regionName: clean(BI_NEWS_REGIONS[x.region].en),
+      tag: x.tag,
+      sources: x.sources.map(s => ({ name: clean(s.name), url: s.url })),
+      pageUrl: biNewsAbs(DEFAULT_LANG) + '#n-' + x.id,
+      timeline: [].concat(x.timeline || []).map(id => ({ id, url: tlAbs(DEFAULT_LANG) + '#tl-' + id })),
+      essays: essayList(x.essays).map(e => ({ id: e.id, url: essayAbs(DEFAULT_LANG, e) })),
+      titles: Object.fromEntries(LANGS.map(l => [l, clean(x.title[l])])),
+      summaries: Object.fromEntries(LANGS.map(l => [l, clean(x.summary[l])])),
+    })),
+  })),
+};
+for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson], ['open-source.json', ossJson], ['open-data.json', dataJson], ['news.json', biNewsJson]]) {
   const txt = JSON.stringify(obj, null, 2) + '\n';
   fs.writeFileSync(path.join(DATA_DIR, file), txt);
   fs.writeFileSync(path.join(OUT, file), txt);
@@ -1787,6 +1932,8 @@ const llmsTxt = `${llmsHead(false)}
 - [graveyard.json](${SITE_URL}/graveyard.json): ended basic-income-style programs, each with a source
 - [open-source.json](${SITE_URL}/open-source.json): open-source code projects related to basic income, with license, language, stars, last commit and dormant flag
 - [open-data.json](${SITE_URL}/open-data.json): open datasets and replication packages from basic income experiments, with archive, access level and license
+- [news.json](${SITE_URL}/news.json): the weekly basic income news roundup, with headlines and summaries in every language, region, tag and source links
+- [Basic income news RSS (en)](${biNewsFeedAbs(DEFAULT_LANG)}): the weekly news roundup as a feed (other languages at /{lang}/news/feed.xml)
 ${LANGS.map(l => `- [RSS feed (${l})](${feedAbs(l)}): update log in ${LANG_NAMES[l] === 'EN' ? 'English' : LANG_NAMES[l]}`).join('\n')}
 
 ## Services
@@ -1798,6 +1945,7 @@ ${live.map(s => `- [${mdLink(s.nameEn || s.name)}](${svcAbs(DEFAULT_LANG, s)}): 
 ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LANG, m)}): services that use ${md(VERIFY[m].name.en)}`).join('\n')}
 - [${md(T.en.orgsH1)}](${orgAbs(DEFAULT_LANG)}): ${md(T.en.orgsDesc)}
 - [${md(T.en.tlTitle)}](${tlAbs(DEFAULT_LANG)}): ${md(T.en.tlDesc)}
+- [${md(T.en.biNewsH1)}](${biNewsAbs(DEFAULT_LANG)}): ${md(T.en.biNewsDesc)}${BI_NEWS.length ? ` Last updated ${BI_NEWS[0].updated}.` : ''}
 - [${md(T.en.graveTitle)}](${graveAbs(DEFAULT_LANG)}): ${md(T.en.graveDesc)}
 - [${md(T.en.ossTitle)}](${ossAbs(DEFAULT_LANG)}): ${md(T.en.ossDesc)}
 - [${md(T.en.badgeH1)}](${badgeAbs(DEFAULT_LANG)}): ${md(T.en.badgeDesc)} Image: ${badgeImg('listed.svg')}. Each entry in services.json and open-source.json has a \`badge\` object with the Markdown snippet and target URL.
@@ -1929,6 +2077,12 @@ ${OSSP.map(ossFull).join('\n\n')}
 ${md(T.en.dataIntro)} Page: ${ossAbs(DEFAULT_LANG)}#data
 
 ${OPEN_DATA.map(dataFull).join('\n\n')}
+
+## Basic income news
+
+${md(T.en.biNewsIntro)} Page: ${biNewsAbs(DEFAULT_LANG)}
+
+${BI_NEWS.map(b => [`### Week of ${weekOf(b.updated)} (updated ${b.updated})`, '', ...b.items.map(x => `- ${x.date}, ${md(BI_NEWS_REGIONS[x.region].en)} (${md(T.en['biNewsTag_' + x.tag])}): ${md(x.title.en)}. ${md(x.summary.en)} Source: ${x.sources.map(s => `${md(s.name)}, ${s.url}`).join('; ')}`)].join('\n')).join('\n\n')}
 
 ## Graveyard
 

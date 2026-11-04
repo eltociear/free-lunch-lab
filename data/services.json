@@ -3469,7 +3469,7 @@
       },
       "region": "global",
       "availableFromJapan": true,
-      "inviteOnly": false,
+      "inviteOnly": true,
       "verify": [
         {
           "method": "none",
@@ -3483,7 +3483,7 @@
       },
       "ease": 4,
       "added": "2026-10-24",
-      "checked": "2026-10",
+      "checked": "2026-11",
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/services/wowapp/",
       "pageUrls": {
         "en": "https://neteru-nyukin.eltociear.workers.dev/services/wowapp/",
@@ -3504,43 +3504,43 @@
         "en": {
           "gain": "Small rewards for daily use, games, shopping and more",
           "note": "A chat and calling app combined with a rewards system. Earn from a daily “UBI”, games, shopping cashback and more, then withdraw or donate to charities. When your network, such as friends you invited, is active, your rewards grow too",
-          "need": "Sign up free through the referral link and use the app every day (confirmed usable from Japan in Oct 2026, first-hand)",
+          "need": "Invite only: sign up free through the referral link, then use the app every day (confirmed usable from Japan in Oct 2026, first-hand)",
           "caution": "Rewards also come from the activity of people further down your invite chain: a multi-level system. Daily amounts are tiny and will not add up to real income. PayPal withdrawals reportedly have conditions such as a minimum. App Store rating in Japan is 3.2, with complaints about failed withdrawals"
         },
         "ja": {
           "gain": "毎日の利用やゲーム・買い物などで少額の報酬",
           "note": "チャット・通話アプリに報酬のしくみを組み合わせたサービス。毎日の「UBI」、ゲーム、買い物のキャッシュバックなどで報酬がたまり、出金するか慈善団体に寄付できる。招待した友だちなど自分のネットワークが活動すると、自分の報酬も増える",
-          "need": "紹介リンクから無料で登録し、アプリを毎日使う（日本からの利用は2026年10月に実際に確認）",
+          "need": "招待制で、紹介リンクから無料で登録する。登録後はアプリを毎日使う（日本からの利用は2026年10月に実際に確認）",
           "caution": "報酬は招待した人の先の人たちの活動にも応じて入る多段階（マルチレベル）型。1日の額はごくわずかで、まとまった収入にはならない。PayPal への出金には最低額などの条件があるとされる。App Store の評価は日本で3.2で、出金できないという声もある"
         },
         "zh": {
           "gain": "每天使用、游戏、购物等可得少量奖励",
           "note": "把聊天、通话应用与奖励机制结合的服务。通过每日“UBI”、游戏、购物返现等积累奖励，可以提现或捐给慈善机构。你邀请的朋友等自己的网络越活跃，你的奖励也越多",
-          "need": "通过推荐链接免费注册，每天使用应用（已于 2026 年 10 月亲自确认可在日本使用）",
+          "need": "仅限邀请：通过推荐链接免费注册，之后每天使用应用（已于 2026 年 10 月亲自确认可在日本使用）",
           "caution": "奖励还会根据你邀请的人再往下的人的活动而发放，属于多层级（多级）模式。每天的金额极少，不会成为可观的收入。据称 PayPal 提现有最低金额等条件。日本 App Store 评分为 3.2，也有人反映无法提现"
         },
         "hi": {
           "gain": "रोज़ के इस्तेमाल, गेम, शॉपिंग आदि पर थोड़े इनाम",
           "note": "चैट और कॉलिंग ऐप के साथ इनाम व्यवस्था। रोज़ की “UBI”, गेम, शॉपिंग कैशबैक वग़ैरह से इनाम जमा होते हैं, जिन्हें निकाल सकते हैं या चैरिटी को दान कर सकते हैं। आपके बुलाए दोस्तों जैसा आपका नेटवर्क सक्रिय हो, तो आपका इनाम भी बढ़ता है",
-          "need": "रेफ़रल लिंक से मुफ़्त साइन अप करें और रोज़ ऐप इस्तेमाल करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
+          "need": "सिर्फ़ निमंत्रण से: रेफ़रल लिंक से मुफ़्त साइन अप करें, फिर रोज़ ऐप इस्तेमाल करें (अक्टूबर 2026 में खुद आज़माकर जापान से चलने की पुष्टि)",
           "caution": "इनाम आपके बुलाए लोगों से आगे के लोगों की गतिविधि से भी मिलते हैं: यह मल्टी-लेवल व्यवस्था है। रोज़ की रकम बहुत कम है और असली आय नहीं बनेगी। PayPal निकासी पर न्यूनतम रकम जैसी शर्तें बताई जाती हैं। जापान में App Store रेटिंग 3.2 है, और निकासी न होने की शिकायतें हैं"
         },
         "es": {
           "gain": "Pequeñas recompensas por usarla a diario, jugar, comprar y más",
           "note": "Una app de chat y llamadas combinada con un sistema de recompensas. Ganas con la «UBI» diaria, juegos, reembolsos por compras y más, y puedes retirarlo o donarlo a organizaciones benéficas. Cuando tu red (por ejemplo, amigos que invitaste) está activa, tus recompensas también crecen",
-          "need": "Regístrate gratis con el enlace de referido y usa la app cada día (se comprobó en persona que funciona desde Japón en octubre de 2026)",
+          "need": "Solo por invitación: regístrate gratis con el enlace de referido y luego usa la app cada día (se comprobó en persona que funciona desde Japón en octubre de 2026)",
           "caution": "Las recompensas también dependen de la actividad de personas más abajo en tu cadena de invitaciones: es un sistema multinivel. Los importes diarios son mínimos y no serán un ingreso real. Se dice que retirar a PayPal tiene condiciones como un mínimo. En la App Store de Japón tiene un 3,2, con quejas de retiros fallidos"
         },
         "de": {
           "gain": "Kleine Belohnungen für tägliche Nutzung, Spiele, Einkäufe und mehr",
           "note": "Eine Chat- und Telefonie-App mit Prämiensystem. Prämien gibt es für ein tägliches „UBI“, Spiele, Shopping-Cashback und mehr; du kannst sie auszahlen oder an Hilfsorganisationen spenden. Ist dein Netzwerk, etwa eingeladene Freunde, aktiv, wachsen auch deine Prämien",
-          "need": "Über den Empfehlungslink kostenlos anmelden und die App jeden Tag nutzen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
+          "need": "Nur auf Einladung: über den Empfehlungslink kostenlos anmelden und die App dann jeden Tag nutzen (im Oktober 2026 selbst bestätigt: aus Japan nutzbar)",
           "caution": "Prämien kommen auch aus der Aktivität von Leuten weiter unten in deiner Einladungskette: ein mehrstufiges (Multi-Level-)System. Die Tagesbeträge sind winzig und ergeben kein echtes Einkommen. Für PayPal-Auszahlungen gelten angeblich Bedingungen wie ein Mindestbetrag. App-Store-Bewertung in Japan 3,2, mit Beschwerden über gescheiterte Auszahlungen"
         },
         "ar": {
           "gain": "مكافآت صغيرة مقابل الاستخدام اليومي والألعاب والتسوق وغيرها",
           "note": "تطبيق دردشة ومكالمات مع نظام مكافآت. تجمع المكافآت من «دخل أساسي» يومي وألعاب واسترداد نقدي على المشتريات وغيرها، ثم تسحبها أو تتبرع بها لجمعيات خيرية. عندما تنشط شبكتك، كالأصدقاء الذين دعوتهم، تزيد مكافآتك أيضًا",
-          "need": "سجّل مجانًا عبر رابط الإحالة واستخدم التطبيق يوميًا (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
+          "need": "بالدعوة فقط: سجّل مجانًا عبر رابط الإحالة، ثم استخدم التطبيق يوميًا (تأكدنا بالتجربة في أكتوبر 2026 أنه يعمل من اليابان)",
           "caution": "تأتي المكافآت أيضًا من نشاط الأشخاص الأبعد في سلسلة دعواتك: نظام متعدد المستويات. المبالغ اليومية ضئيلة جدًا ولن تصبح دخلًا حقيقيًا. يقال إن السحب إلى PayPal له شروط مثل حد أدنى. تقييم App Store في اليابان 3.2، مع شكاوى من تعذّر السحب"
         }
       }

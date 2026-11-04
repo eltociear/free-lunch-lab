@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basic income news | Free Lunch Lab</title>
+    <link>https://neteru-nyukin.eltociear.workers.dev/news/</link>
+    <description>A weekly, hand-checked roundup of basic income, guaranteed income and cash transfer news from around the world, summarised in our own words with sources.</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://neteru-nyukin.eltociear.workers.dev/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>President Lee visits South Korea’s rural basic income pilot</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-kr-lee-visits-rural-pilot</link>
+      <guid isPermaLink="false">bi-news-kr-lee-visits-rural-pilot</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Pilot</category>
+      <description>President Lee Jae-myung made an unannounced visit to North Gyeongsang Province to see the rural basic income pilot, which pays residents 150,000 won a month in local vouchers. The pilot now runs in 17 of the 69 counties the government classes as depopulating. Source: Korea JoongAng Daily (Yonhap) https://www.koreajoongangdaily.com/korea/lee-visits-southeastern-province-to-inspect-pilot-basic-income-scheme/12948336</description>
+    </item>
+    <item>
+      <title>New Zealand’s Opportunity Party campaigns on a citizen’s income</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-nz-opportunity-citizens-income</link>
+      <guid isPermaLink="false">bi-news-nz-opportunity-citizens-income</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Policy</category>
+      <description>Ahead of the 7 November election, the party proposes a tax-free payment of up to NZ$370 a week for almost all adults, replacing most benefits and paid for with a land value tax. It is a campaign proposal, not government policy. Source: BIEN https://basicincome.org/news/2026/10/a-universal-basic-income-proposal-might-be-on-the-table-in-new-zealand/, 1News https://www.1news.co.nz/2026/08/15/what-are-the-opportunity-partys-land-tax-and-citizens-income/</description>
+    </item>
+    <item>
+      <title>Taiwan’s NT$10,000 handout goes to committee, alongside a rival NT$20,000 bill</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-tw-cash-handout-budget</link>
+      <guid isPermaLink="false">bi-news-tw-cash-handout-budget</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Policy</category>
+      <description>The legislature sent the 2027 budget, which includes NT$235.7 billion for a NT$10,000 payment to every eligible resident, to committee review. The opposition KMT backs its own bill for NT$20,000; both remain proposals ahead of the 28 November local elections. Source: Focus Taiwan (CNA) https://focustaiwan.tw/politics/202610270020, Taipei Times https://www.taipeitimes.com/News/taiwan/archives/2026/10/16/2003866092</description>
+    </item>
+    <item>
+      <title>Peru: an Amazon basic income pilot reports better diets and more forest protection</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-pe-conservation-basic-income</link>
+      <guid isPermaLink="false">bi-news-pe-conservation-basic-income</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Research</category>
+      <description>A University of Bath evaluation of Cool Earth’s two-year pilot, which paid 211 people in three Asháninka communities about £2 a day, found the share of households unable to afford nutritious food fell from 73% to 26%. The study had no control group. Source: University of Bath https://www.bath.ac.uk/announcements/world-first-basic-income-trial-boosts-indigenous-livelihoods-and-amazon-rainforest-protection/</description>
+    </item>
+    <item>
+      <title>Musk pledges one SpaceX share for every child in the US</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-us-musk-spacex-shares</link>
+      <guid isPermaLink="false">bi-news-us-musk-spacex-shares</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AI &amp; funding</category>
+      <description>After Anthropic’s announcement, Elon Musk said he would give a SpaceX share to every American child next year, about $10.7 billion in total at the latest closing price. He has not said who qualifies or how the shares would be delivered. Source: Al Jazeera https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains</description>
+    </item>
+    <item>
+      <title>Anthropic commits 5% of its shares to a public benefit fund</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-us-anthropic-public-benefit-fund</link>
+      <guid isPermaLink="false">bi-news-us-anthropic-public-benefit-fund</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AI &amp; funding</category>
+      <description>The AI company is placing 5% of its shares, subject to stockholder approval, in a new fund that could make large donations and might explore direct distributions to specific populations. It is not a basic income, and details on governance are due in the coming months. Source: Anthropic https://www.anthropic.com/news/public-benefit-fund</description>
+    </item>
+    <item>
+      <title>Ireland’s permanent basic income for artists gets under way</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-ie-basic-income-arts-permanent</link>
+      <guid isPermaLink="false">bi-news-ie-basic-income-arts-permanent</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Policy</category>
+      <description>2,000 artists chosen from more than 10,000 applicants will receive €325 a week for three years, with first payments backdated to September. The National Campaign for the Arts says €34 million in the 2027 budget funds the scheme. Source: MusicRadar https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years</description>
+    </item>
+    <item>
+      <title>South Korea invites more counties to join its rural basic income pilot in 2027</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-kr-rural-pilot-2027-call</link>
+      <guid isPermaLink="false">bi-news-kr-rural-pilot-2027-call</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Pilot</category>
+      <description>The agriculture ministry opened a call for about 18 more depopulating counties, with applications from 20 October to 3 November; residents would get 150,000 won a month in local vouchers. The 2027 budget proposal raises the central government’s share of the cost from 40% to 50%, pending parliament. Source: Ministry of Agriculture, Food and Rural Affairs (Korea) https://www.mafra.go.kr/bbs/home/792/579390/artclView.do</description>
+    </item>
+    <item>
+      <title>Alaska pays its 2026 Permanent Fund Dividend of $1,200</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-us-alaska-pfd-2026</link>
+      <guid isPermaLink="false">bi-news-us-alaska-pfd-2026</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <category>Policy</category>
+      <description>This year’s dividend is $1,000 plus a $200 energy relief payment. Direct deposits began on 1 October, with later payment dates on 22 October, 19 November and 17 December. Source: Alaska Department of Revenue, PFD Division https://pfd.alaska.gov/, Alaska’s News Source https://www.alaskasnewssource.com/2026/09/30/permanent-fund-dividends-will-be-distributed-alaskans-starting-this-week/</description>
+    </item>
+  </channel>
+</rss>

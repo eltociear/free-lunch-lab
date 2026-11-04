@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>बेसिक इनकम समाचार | Free Lunch Lab</title>
+    <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/</link>
+    <description>दुनिया भर की बेसिक इनकम, गारंटीड इनकम और नकद हस्तांतरण की ख़बरों का साप्ताहिक संग्रह, हाथ से जाँचा हुआ, हमारे अपने शब्दों में सार और स्रोतों के साथ।</description>
+    <language>hi</language>
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://neteru-nyukin.eltociear.workers.dev/hi/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>राष्ट्रपति ली ने दक्षिण कोरिया के ग्रामीण बेसिक इनकम पायलट का दौरा किया</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/#n-kr-lee-visits-rural-pilot</link>
+      <guid isPermaLink="false">bi-news-kr-lee-visits-rural-pilot</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <category>पायलट</category>
+      <description>राष्ट्रपति ली जे-म्योंग बिना पूर्व घोषणा के उत्तरी ग्योंगसांग प्रांत पहुँचे और ग्रामीण बेसिक इनकम पायलट देखा, जिसमें निवासियों को हर महीने 1,50,000 वॉन स्थानीय वाउचर में मिलते हैं। यह पायलट अब उन 69 काउंटियों में से 17 में चल रहा है जिन्हें सरकार घटती आबादी वाली मानती है। स्रोत: Korea JoongAng Daily (Yonhap) https://www.koreajoongangdaily.com/korea/lee-visits-southeastern-province-to-inspect-pilot-basic-income-scheme/12948336</description>
+    </item>
+    <item>
+      <title>न्यूज़ीलैंड की ऑपर्च्युनिटी पार्टी नागरिक आय के वादे के साथ चुनाव में</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/#n-nz-opportunity-citizens-income</link>
+      <guid isPermaLink="false">bi-news-nz-opportunity-citizens-income</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <category>नीति</category>
+      <description>7 नवंबर के चुनाव से पहले पार्टी लगभग सभी वयस्कों को हर हफ़्ते अधिकतम NZ$370 का कर-मुक्त भुगतान देने का प्रस्ताव रख रही है, जो ज़्यादातर भत्तों की जगह लेगा और जिसका ख़र्च भूमि मूल्य कर से आएगा। यह चुनावी प्रस्ताव है, सरकारी नीति नहीं। स्रोत: BIEN https://basicincome.org/news/2026/10/a-universal-basic-income-proposal-might-be-on-the-table-in-new-zealand/, 1News https://www.1news.co.nz/2026/08/15/what-are-the-opportunity-partys-land-tax-and-citizens-income/</description>
+    </item>
+    <item>
+      <title>ताइवान का NT$10,000 नकद भुगतान समिति के पास, साथ में NT$20,000 का प्रतिद्वंद्वी विधेयक</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/#n-tw-cash-handout-budget</link>
+      <guid isPermaLink="false">bi-news-tw-cash-handout-budget</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <category>नीति</category>
+      <description>विधायिका ने 2027 का बजट समिति समीक्षा के लिए भेजा, जिसमें हर पात्र निवासी को NT$10,000 देने के लिए NT$235.7 अरब रखे गए हैं। विपक्षी KMT NT$20,000 वाले अपने विधेयक का समर्थन करती है; 28 नवंबर के स्थानीय चुनावों से पहले दोनों अभी प्रस्ताव ही हैं। स्रोत: Focus Taiwan (CNA) https://focustaiwan.tw/politics/202610270020, Taipei Times https://www.taipeitimes.com/News/taiwan/archives/2026/10/16/2003866092</description>
+    </item>
+    <item>
+      <title>पेरू: अमेज़न के बेसिक इनकम पायलट में बेहतर खान-पान और ज़्यादा वन संरक्षण दर्ज</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/#n-pe-conservation-basic-income</link>
+      <guid isPermaLink="false">bi-news-pe-conservation-basic-income</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <category>शोध</category>
+      <description>बाथ विश्वविद्यालय ने Cool Earth के दो साल के पायलट का मूल्यांकन किया, जिसमें तीन आशानिंका समुदायों के 211 लोगों को रोज़ लगभग £2 मिले; पौष्टिक भोजन न जुटा पाने वाले परिवारों का हिस्सा 73% से घटकर 26% रह गया। इस अध्ययन में कोई कंट्रोल ग्रुप नहीं था। स्रोत: University of Bath https://www.bath.ac.uk/announcements/world-first-basic-income-trial-boosts-indigenous-livelihoods-and-amazon-rainforest-protection/</description>
+    </item>
+    <item>
+      <title>मस्क ने अमेरिका के हर बच्चे को SpaceX का एक शेयर देने का वादा किया</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/#n-us-musk-spacex-shares</link>
+      <guid isPermaLink="false">bi-news-us-musk-spacex-shares</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AI और फ़ंडिंग</category>
+      <description>Anthropic की घोषणा के बाद एलन मस्क ने कहा कि वे अगले साल हर अमेरिकी बच्चे को SpaceX का एक शेयर देंगे, जो पिछले क्लोज़िंग भाव पर कुल लगभग $10.7 अरब है। उन्होंने यह नहीं बताया कि कौन पात्र होगा या शेयर कैसे दिए जाएँगे। स्रोत: Al Jazeera https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains</description>
+    </item>
+    <item>
+      <title>Anthropic ने अपने 5% शेयर एक पब्लिक बेनिफ़िट फ़ंड को देने का वादा किया</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/#n-us-anthropic-public-benefit-fund</link>
+      <guid isPermaLink="false">bi-news-us-anthropic-public-benefit-fund</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <category>AI और फ़ंडिंग</category>
+      <description>यह AI कंपनी शेयरधारकों की मंज़ूरी की शर्त पर अपने 5% शेयर एक नए फ़ंड में डाल रही है, जो बड़े दान दे सकता है और कुछ ख़ास आबादियों को सीधे वितरण पर भी विचार कर सकता है। यह बेसिक इनकम नहीं है, और संचालन के ब्यौरे आने वाले महीनों में आएँगे। स्रोत: Anthropic https://www.anthropic.com/news/public-benefit-fund</description>
+    </item>
+    <item>
+      <title>आयरलैंड में कलाकारों के लिए स्थायी बेसिक इनकम शुरू</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/#n-ie-basic-income-arts-permanent</link>
+      <guid isPermaLink="false">bi-news-ie-basic-income-arts-permanent</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <category>नीति</category>
+      <description>10,000 से ज़्यादा आवेदकों में से चुने गए 2,000 कलाकारों को तीन साल तक हर हफ़्ते €325 मिलेंगे, और पहले भुगतान सितंबर से लागू माने जाएँगे। National Campaign for the Arts के अनुसार 2027 के बजट में €3.4 करोड़ इस योजना के लिए हैं। स्रोत: MusicRadar https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years</description>
+    </item>
+    <item>
+      <title>दक्षिण कोरिया ने 2027 में ग्रामीण बेसिक इनकम पायलट से जुड़ने के लिए और काउंटियों को बुलाया</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/#n-kr-rural-pilot-2027-call</link>
+      <guid isPermaLink="false">bi-news-kr-rural-pilot-2027-call</guid>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <category>पायलट</category>
+      <description>कृषि मंत्रालय ने घटती आबादी वाली लगभग 18 और काउंटियों के लिए आवेदन माँगे, जिनकी अवधि 20 अक्टूबर से 3 नवंबर तक थी; निवासियों को हर महीने 1,50,000 वॉन स्थानीय वाउचर में मिलेंगे। 2027 के बजट प्रस्ताव में केंद्र सरकार का हिस्सा 40% से बढ़ाकर 50% किया गया है, जो संसद की मंज़ूरी पर निर्भर है। स्रोत: Ministry of Agriculture, Food and Rural Affairs (Korea) https://www.mafra.go.kr/bbs/home/792/579390/artclView.do</description>
+    </item>
+    <item>
+      <title>अलास्का ने 2026 का $1,200 का परमानेंट फ़ंड डिविडेंड दिया</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/news/#n-us-alaska-pfd-2026</link>
+      <guid isPermaLink="false">bi-news-us-alaska-pfd-2026</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <category>नीति</category>
+      <description>इस साल का डिविडेंड $1,000 है, साथ में $200 का ऊर्जा राहत भुगतान। सीधे खाते में भुगतान 1 अक्टूबर से शुरू हुए, और आगे 22 अक्टूबर, 19 नवंबर और 17 दिसंबर को भी भुगतान की तारीख़ें हैं। स्रोत: Alaska Department of Revenue, PFD Division https://pfd.alaska.gov/, Alaska’s News Source https://www.alaskasnewssource.com/2026/09/30/permanent-fund-dividends-will-be-distributed-alaskans-starting-this-week/</description>
+    </item>
+  </channel>
+</rss>
