@@ -2869,6 +2869,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-04",
+      "ja": "エッセイ『10万円の給付金は、何に使われたのか：特別定額給付金をデータで振り返る』を公開",
+      "en": "Published the essay “Where did the ¥100,000 go? Japan’s 2020 Special Cash Payment, by the data”",
+      "zh": "发布随笔《那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金》",
+      "hi": "निबंध “1,00,000 येन कहाँ गए? आँकड़ों में जापान का 2020 का विशेष नकद भुगतान” प्रकाशित",
+      "es": "Publicado el ensayo «¿Adónde fueron los 100.000 yenes? El Pago Especial en Efectivo de Japón de 2020, según los datos»",
+      "de": "Essay „Wohin gingen die 100.000 Yen? Japans Sonderzahlung von 2020 im Spiegel der Daten“ veröffentlicht",
+      "ar": "نشرنا مقال «أين ذهبت الـ100,000 ين؟ الدفعة النقدية الخاصة في اليابان عام 2020 بلغة البيانات»"
+    },
+    {
       "date": "2026-11-03",
       "ja": "エッセイ『ネサラ・ゲサラとベーシックインカム：「全員にお金が配られる」話の見分け方』を公開",
       "en": "Published the essay “NESARA/GESARA and basic income: telling real payments to everyone from promises that never arrive”",
@@ -7936,7 +7946,7 @@ module.exports = {
     },
     {
       "id": "alaska",
-      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund", "nesara-gesara-basic-income"],
+      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund", "nesara-gesara-basic-income", "japan-special-cash-payment"],
       "years": "1982–",
       "type": "gov",
       "name": "Alaska Permanent Fund Dividend",
@@ -8066,7 +8076,7 @@ module.exports = {
     },
     {
       "id": "kenya",
-      "essays": ["moltbook-basic-income"],
+      "essays": ["moltbook-basic-income", "japan-special-cash-payment"],
       "years": "2017–",
       "type": "ngo",
       "name": "GiveDirectly basic income study",
@@ -8503,7 +8513,7 @@ module.exports = {
     },
     {
       "id": "marshall-islands",
-      "essays": ["moltbook-basic-income", "thailand-digital-wallet", "your-own-basic-income", "nesara-gesara-basic-income"],
+      "essays": ["moltbook-basic-income", "thailand-digital-wallet", "your-own-basic-income", "nesara-gesara-basic-income", "japan-special-cash-payment"],
       "years": "2025–",
       "type": "gov",
       "name": "Enra (Individual Support Distribution)",
@@ -8547,7 +8557,7 @@ module.exports = {
     },
     {
       "id": "korea-rural",
-      "essays": ["nesara-gesara-basic-income"],
+      "essays": ["nesara-gesara-basic-income", "japan-special-cash-payment"],
       "years": "2026–2027",
       "type": "gov",
       "name": "Rural Basic Income Pilot",
@@ -8772,6 +8782,1253 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "japan-special-cash-payment",
+      "date": "2026-11-04",
+      "related": [
+        "thailand-digital-wallet",
+        "nesara-gesara-basic-income"
+      ],
+      "title": {
+        "ja": "10万円の給付金は、何に使われたのか：特別定額給付金をデータで振り返る",
+        "en": "Where did the ¥100,000 go? Japan’s 2020 Special Cash Payment, by the data",
+        "zh": "那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金",
+        "hi": "1,00,000 येन कहाँ गए? आँकड़ों में जापान का 2020 का विशेष नकद भुगतान",
+        "es": "¿Adónde fueron los 100.000 yenes? El Pago Especial en Efectivo de Japón de 2020, según los datos",
+        "de": "Wohin gingen die 100.000 Yen? Japans Sonderzahlung von 2020 im Spiegel der Daten",
+        "ar": "أين ذهبت الـ100,000 ين؟ الدفعة النقدية الخاصة في اليابان عام 2020 بلغة البيانات"
+      },
+      "desc": {
+        "ja": "2020年、日本に住むほぼ全員に配られた10万円。銀行口座と家計簿アプリのデータから、何割がいつ使われ、誰が多く使い、なぜ残されたのかをたどり、1回きりの給付金とベーシックインカムの違いを考えます。",
+        "en": "In 2020 Japan gave ¥100,000 to nearly every resident. What bank and app data show about how much was spent, by whom, and why a one-off is not basic income.",
+        "zh": "2020 年，日本向几乎每位居民发放了 10 万日元。我们从银行账户和记账应用的数据，看花掉了多少、何时花掉、由谁花掉，最后再想一想为什么一次性的给付不是基本收入。",
+        "hi": "2020 में जापान ने लगभग हर निवासी को 1,00,000 येन दिए। बैंक और ऐप के आँकड़े बताते हैं कि कितना ख़र्च हुआ, किसने किया, और एक बार का भुगतान बेसिक इनकम क्यों नहीं।",
+        "es": "En 2020 Japón dio 100.000 yenes a casi cada residente. Datos de bancos y apps: cuánto se gastó, quién lo gastó y por qué un pago único no es renta básica.",
+        "de": "2020 zahlte Japan fast allen Einwohnern 100.000 Yen. Bank- und App-Daten zeigen, wie viel wer ausgab und warum eine Einmalzahlung kein Grundeinkommen ist.",
+        "ar": "في 2020 منحت اليابان 100,000 ين لكل مقيم تقريبًا. ماذا تقول بيانات البنوك والتطبيقات عن مقدار ما أُنفق، ومن أنفقه، ولماذا لا تكون دفعة واحدة دخلًا أساسيًا."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2020年の春から夏にかけて、日本に住むほぼすべての人に10万円が配られました。特別定額給付金です。配られたお金は、あわせて約12兆6,700億円。あの10万円は、何に使われたのでしょうか。「ほとんど貯金に回った」という声もあれば、「生活の支えになった」という声もあります。"
+          ],
+          [
+            "p",
+            "この問いには、ある程度データで答えることができます。銀行口座や家計簿アプリの記録を使った研究と、政府の分析を読んで、何割が、いつ、どんな家計で使われたのかを確かめます。そのうえで、この経験がベーシックインカムについて教えてくれることと、教えてくれないことを分けて考えます。"
+          ],
+          [
+            "h",
+            "10万円は、どう配られたか"
+          ],
+          [
+            "p",
+            "対象は、2020年4月27日に住民基本台帳に記録されていた人で、外国籍の住民も含まれます。金額は1人10万円。受け取る権利を持つのは、その人が属する世帯の世帯主でした。世帯主は、市区町村から郵送された申請書に振込先の口座を書いて送り返すか、マイナポータルからオンラインで申請し、お金は原則として申請者本人名義の口座に振り込まれました。事業費は12兆8,802億9,300万円（給付12兆7,344億1,400万円、事務費1,458億7,900万円）で、国が全額を負担しました。[1]"
+          ],
+          [
+            "p",
+            "最初の案は違いました。政府は当初、新型コロナで収入が大きく減った世帯に1世帯30万円を配る計画を示していましたが、2020年4月16日、全員に1人10万円を配る形に切り替わりました。[2]"
+          ],
+          [
+            "p",
+            "振り込みは5月に始まり、6月26日までに約9.12兆円（71.6%）、7月31日までに約12.32兆円が支払われました。最終的な給付額は約12.67兆円で、市区町村が予定していた給付額の合計の99.7%です。対象者のほぼ全員に届いた計算です。[3]"
+          ],
+          [
+            "p",
+            "ただし、届く時期は住んでいる場所によってかなり違いました。日本では銀行口座と住民の記録がつながっておらず、市区町村は口座番号を一つひとつ集めて確かめる必要があったからです。[2] 東京都内でも、練馬区では申請した人の85%が6月30日までに受け取っていたのに対し、江戸川区では34.5%でした。[4]"
+          ],
+          [
+            "p",
+            "この遅れが、研究者には思わぬ手がかりになりました。同じ週に、もう受け取った家計とまだ受け取っていない家計がいれば、両者を比べることで、感染の広がりや外出の自粛の影響と切り分けて、給付金そのものの効果を取り出せます。以下で紹介する研究は、どれもこの「自然実験」を使っています。[2][4]"
+          ],
+          [
+            "h",
+            "何割が使われたのか"
+          ],
+          [
+            "p",
+            "早稲田大学の久保田荘さん、大西宏一郎さん、遠山祐太さんは、みずほ銀行の約280万口座のデータを調べました。給付金が入った週に支出が跳ね上がり、そのあとも1か月以上、やや高い状態が続きました。6週間で口座から出ていったお金は給付額の49%で、そのうちATMでの現金引き出しだけを数えると31%です。ただし、この「出ていったお金」には振込や口座振替も含まれるので、著者自身、消費の上限に近い推計だと断っています。[4]"
+          ],
+          [
+            "p",
+            "兼田充さん、久保田荘さん、田中聡史さんは、家計簿アプリ「マネーフォワード ME」の利用者23万2,589人のデータを使いました。6週間で消費に回ったのは、基準となる定義で給付額の16%。狭く数えると6%、広く数えると27%でした。[2][5]"
+          ],
+          [
+            "p",
+            "服部孝洋さんらは、総務省の家計調査の都市ごとの集計を使い、給付金が届いた月に消費に回ったのは約10%と推計しました。家での買い物とお店での買い物は増えましたが、対面のサービスへの支出は増えていません。[6]"
+          ],
+          [
+            "p",
+            "内閣府は2023年、別の家計簿アプリ（マネーツリー）のデータで、支給の5週間前から10週間後までの16週間を見て、消費に回ったのは給付額の22%程度と推計しました。家計調査の個票で確かめると、約16週間で17%程度と、おおむね同じ結果でした。[7]"
+          ],
+          [
+            "o",
+            "数字は6%から49%まで開いています。何を「消費」と数えるか（引き出した現金を使ったとみなすか、振込まで入れるか）と、何週間を見るかで変わるからです。それでも、向きはそろっています。受け取ってから数週間から数か月のあいだに使われたのは、消費を狭く数える研究では1割から3割弱、口座から出ていったお金を広く数える研究でも半分ほどでした。残りは、少なくともすぐには使われていません。"
+          ],
+          [
+            "p",
+            "これはコロナの時期だけの特別な数字ではないかもしれません。内閣府の報告によると、1999年の地域振興券では消費の増加は支給額の32%程度、2009年の定額給付金ではアンケートで33%程度、家計調査を使った分析では受け取る前の月から2か月後までで25%程度と推計されています。[7] 服部さんらも、約10%という結果はコロナ以前の研究と変わらないと書いています。[6]"
+          ],
+          [
+            "h",
+            "誰が使ったのか"
+          ],
+          [
+            "p",
+            "どの研究でもはっきり出たのは、すぐに使えるお金の少ない家計ほど、給付金を多く使ったことです。マネーフォワードのデータでは、預金などの流動資産が月の労働所得より少ない家計（利用者の19%）が、とくに振り込まれた週に大きく反応しました。[2] みずほ銀行のデータでは、資金繰りに余裕のない家計は給付額の6割近くを使っていました。効いていたのは金融資産の総額ではなく普通預金の残高で、株や保険などは持っていても普通預金が少ない「裕福なその日暮らし（wealthy hand-to-mouth）」の家計も、多く使っていました。[4]"
+          ],
+          [
+            "p",
+            "所得との関係は、研究によって見え方が違います。内閣府の推計では、世帯の人数を考えに入れた所得（等価所得）で下位3分の1の世帯は給付額の32%程度を使い、中位と上位でははっきりした効果が出ませんでした。[7] マネーフォワードのデータでも、労働所得が最も低い4分の1の家計の反応が大きく出ています。[2] 一方、みずほ銀行のデータでは、所得の高さによる差はほとんどなく、差が出たのは、前の年より収入が半分以上減った家計（54%）でした。[4]"
+          ],
+          [
+            "p",
+            "年齢と世帯の形については、マネーフォワードのデータが手がかりになります。世帯主の年齢が高いほど反応が大きく、一人暮らしの反応は他の世帯より弱く、結婚している世帯は単身の世帯より大きく反応しました。子どもがいるかどうかは、あまり関係がありませんでした。[2] ただし、家計簿アプリの利用者は若い人と東京に住む人に偏っていて、女性が少なく（給付金が世帯主に払われたことも理由かもしれない、と著者は書いています）、高齢の世帯の姿はつかみにくいデータです。[2][7]"
+          ],
+          [
+            "h",
+            "使われなかったお金は、どこへ行ったのか"
+          ],
+          [
+            "p",
+            "人々に直接聞いた調査もあります。ニッセイ基礎研究所が2020年6月に20〜69歳の2,062人に使い道を聞いたところ（複数回答）、「生活費の補填」が53.7%で最も多く、「貯蓄」26.1%、「国内旅行」10.1%、「家電製品の購入」と「マスクなどの衛生用品の購入」が各9.7%、「外食」9.0%、「子どもの教育」7.0%と続きました。全額を貯蓄に回したと答えたのは9.7%です。ただ、この調査は金額を聞いていないので、金額で見ればもっと多くが貯蓄に残った可能性があると、調査した久我尚子さん自身が書いています。[8]"
+          ],
+          [
+            "p",
+            "なぜ残したのでしょうか。同じ調査では、貯蓄を選んだ人は、収入が減ることや仕事を失うことへの不安を持つ割合が全体より高めでした。久我さんは、外出の自粛で使い道がなかったというより、不安から意識して残した色合いが強いとみています。[9] 内閣府も、すぐに使われなかった分は、行動の制限もあって「超過貯蓄」としてたまったと考えられ、いずれ取り崩されて後の支出を支えると期待される、としています。[7]"
+          ],
+          [
+            "o",
+            "「貯金に回ったのだから無駄だった」と言い切るのは早すぎると思います。生活費の穴を埋めたのは、それ自体が使ったということです。先が見えないときに手元に残した10万円は、家計にとってお守りのようなものでした。景気を押し上げる効果と、暮らしを支える効果は、別のものさしで測る必要があります。内閣府の報告自身、この事業は必ずしも消費を喚起することを直接の目的としたものではなかった、と書いています。[7]"
+          ],
+          [
+            "h",
+            "1回きりの10万円と、ベーシックインカム"
+          ],
+          [
+            "p",
+            "ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義し、定期的、現金、個人、普遍的、無条件の5つの性質を挙げています。[10] {タイの1万バーツのエッセイ|/essays/thailand-digital-wallet/}でも使ったものさしです。10万円を、一つずつ当てはめてみます。"
+          ],
+          [
+            "p",
+            "普遍的か。ほぼ、はい。外国籍の人も含め、住民登録のある人全員が対象でした。"
+          ],
+          [
+            "p",
+            "無条件か。はい。所得の審査も、働く条件もありませんでした。"
+          ],
+          [
+            "p",
+            "現金か。はい。使い道は自由でした。"
+          ],
+          [
+            "p",
+            "定期的か。いいえ。1回きりです。"
+          ],
+          [
+            "p",
+            "個人単位か。厳密には、いいえ。世帯主が家族全員の分をまとめて申請し、お金は世帯主の口座に入りました。[1][4] 配偶者の暴力から避難している人には、申し出れば、住民票のある市区町村ではなく避難先の自治体から、自分と同伴する家族の分を受け取れる特別な扱いが設けられました。[11]"
+          ],
+          [
+            "o",
+            "5つのうち3つを満たし、2つを満たしていません。ベーシックインカムを考えるうえで大事なのは、満たしていない「定期的」のほうです。内閣府の報告も紹介しているように、経済学には、人は一時的な収入を長い人生にならして使うという考え方があります。[7] 一度きりの10万円なら、先の不安に備えて残しておくのは自然なことです。毎月必ず届くお金なら、それを前提に暮らしを組み立てられます。2020年のデータが測ったのは、パンデミックの最中に一度だけ届いたお金への反応であって、毎月届くお金とともに暮らすときの反応ではありません。"
+          ],
+          [
+            "o",
+            "だから、10万円の多くがすぐには使われなかったことは、ベーシックインカムも貯金されるだけだという証拠にはなりません。逆に、10万円で生活が助かった人がいたことも、ベーシックインカムがうまくいく証拠にはなりません。どちらも、別の問いへの答えです。"
+          ],
+          [
+            "p",
+            "一括払いには、一括払いの良さもあります。{ケニアの GiveDirectly の研究|/timeline/#tl-kenya}は、12年間毎月払うグループ、2年間毎月払うグループ、一度にまとめて払うグループを比べていて、2023年の初期結果では、多くの経済指標で一括払いのグループの効果が大きく出ました。"
+          ],
+          [
+            "p",
+            "くり返し払われている例も、このサイトの年表にあります。{アラスカ州の永久基金配当|/timeline/#tl-alaska}は1982年から毎年、{マーシャル諸島の Enra|/timeline/#tl-marshall-islands}は2025年11月から3か月ごとに約200ドルを払っています。{韓国の農村基本所得モデル事業|/timeline/#tl-korea-rural}は2026〜2027年、対象の郡に住む国民に月15万ウォンを地域商品券で払っています（BIENは、この形は自らの定義に当たらないとしています）。"
+          ],
+          [
+            "h",
+            "10万円1回と、月3万円"
+          ],
+          [
+            "p",
+            "お金の大きさも比べてみます。{ベーシックインカム計算機|/calc/?c=jp&w=all&m=30000}で、今の日本の人口（約1億2,281万人）の全員に月3万円を配ると、年に約44.2兆円、GDPの約6.7%になります。2020年に配った約12.7兆円は、その約3か月半分です。"
+          ],
+          [
+            "o",
+            "月3万円は、暮らしをまるごと支える額ではありません。それでも、年44兆円は、2020年に一度だけ配った額の3倍を超えます。2020年の10万円は、全員に配る仕組みを国がつくれることを示しました。ただ、それを毎月続けるには、どこからお金を出すのかという、まったく別の議論が必要になります。"
+          ],
+          [
+            "h",
+            "あの10万円が残したもの"
+          ],
+          [
+            "o",
+            "2020年の10万円は、日本に住むほぼ全員に、同じ額の現金を、条件をつけずに配った大きな経験でした。しかも、届く時期のばらつきのおかげで、何割が使われ、どんな家計が使ったのかが、データで分かるようになりました。手元のお金が少ない家計ほどすぐに使い、不安なときは人は残す。口座と住民の記録がつながっていないと、届くまでに時間がかかる。どれも、次に何かを配るときに役立つ教訓です。"
+          ],
+          [
+            "o",
+            "ただ、あれはベーシックインカムの実験ではありませんでした。1回きりで、世帯主の口座に、パンデミックの最中に届いたお金です。毎月必ず届くお金で人の働き方や暮らしがどう変わるのか、という問いには、10万円は答えていません。それを知るには、くり返し払われている例を見ていく必要があります。"
+          ],
+          [
+            "o",
+            "あの10万円を「無駄だった」とも「ベーシックインカムの予行演習だった」とも呼ばず、正確な名前で覚えておきたいと思います。全員への、1回きりの、非常時の給付金です。それだけでも、十分に大きな出来事でした。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "Between the spring and summer of 2020, almost everyone living in Japan received ¥100,000. It was called the Special Cash Payment (tokubetsu teigaku kyūfukin), and about ¥12.67 trillion was paid out in all. So what did people do with it? Some say it mostly ended up in savings accounts; others say it kept households afloat."
+          ],
+          [
+            "p",
+            "This question can, to a fair degree, be answered with data. We read the studies that used bank-account and budgeting-app records, along with the government’s own analysis, to see how much was spent, when, and by which households. Then we separate what this experience tells us about basic income from what it does not."
+          ],
+          [
+            "h",
+            "How the ¥100,000 was paid"
+          ],
+          [
+            "p",
+            "Everyone recorded in the Basic Resident Register on 27 April 2020 was eligible, foreign residents included, for ¥100,000 each. The person entitled to receive it was the head of the household the person belonged to. Heads of household either mailed back the form their municipality had sent them with their bank details, or applied online through Mynaportal, and the money was in principle paid into an account in the applicant’s own name. The programme was budgeted at ¥12,880.293 billion (¥12,734.414 billion in payments and ¥145.879 billion in administration), all of it paid by the national government.[1]"
+          ],
+          [
+            "p",
+            "The first plan was different. The government initially proposed ¥300,000 per household for households whose income had fallen sharply because of COVID-19; on 16 April 2020 it switched to ¥100,000 for every person.[2]"
+          ],
+          [
+            "p",
+            "Payments began in May. By 26 June about ¥9.12 trillion (71.6%) had been paid, and by 31 July about ¥12.32 trillion. The final total was about ¥12.67 trillion, 99.7% of the amount municipalities had planned to pay: nearly everyone eligible was reached.[3]"
+          ],
+          [
+            "p",
+            "When it arrived, though, depended a lot on where you lived. In Japan, bank accounts are not linked to resident records, so municipalities had to collect and check account numbers one by one.[2] Even within Tokyo, 85% of applicants in Nerima ward had been paid by 30 June, against 34.5% in Edogawa ward.[4]"
+          ],
+          [
+            "p",
+            "Those delays turned out to be a gift to researchers. If, in the same week, some households have already been paid and others have not, comparing them separates the effect of the payment itself from the spread of the virus and the stay-at-home requests. All the studies below use this “natural experiment.”[2][4]"
+          ],
+          [
+            "h",
+            "How much was spent?"
+          ],
+          [
+            "p",
+            "So Kubota, Koichiro Onishi and Yuta Toyama of Waseda University studied about 2.8 million accounts at Mizuho Bank. Spending jumped in the week the money arrived and stayed moderately higher for more than a month. Within six weeks, outflows from the accounts equalled 49% of the payment; counting only cash withdrawals, 31%. Because those outflows include transfers and direct debits, the authors present this as an upper bound on spending.[4]"
+          ],
+          [
+            "p",
+            "Michiru Kaneda, So Kubota and Satoshi Tanaka used data from 232,589 users of the budgeting app Money Forward ME. Within six weeks, 16% of the payment was spent under their baseline definition: 6% counted narrowly and 27% counted broadly.[2][5]"
+          ],
+          [
+            "p",
+            "Takahiro Hattori and colleagues used the city-level figures of the government’s Family Income and Expenditure Survey and estimated that about 10% was spent in the month the payment arrived. Spending on things bought at home and in shops rose; spending on face-to-face services did not.[6]"
+          ],
+          [
+            "p",
+            "In 2023 the Cabinet Office looked at data from another budgeting app, Moneytree, over 16 weeks from five weeks before to ten weeks after payment, and estimated that about 22% of the payment was spent. A check with the household survey’s individual records gave about 17% over roughly 16 weeks, broadly the same.[7]"
+          ],
+          [
+            "o",
+            "The numbers range from 6% to 49%. They depend on what counts as spending (whether withdrawn cash is assumed to be spent, whether transfers are included) and on how many weeks are measured. But they point the same way. In the weeks and months after the money arrived, studies that count spending narrowly found between a tenth and just under 30% spent, and even those that count every outflow found about half. The rest, at least, was not spent straight away."
+          ],
+          [
+            "p",
+            "This may not be a pandemic-only number. According to the Cabinet Office report, the 1999 regional promotion vouchers raised spending by about 32% of the amount given, and the 2009 fixed-sum benefit by about 33% in a survey, or about 25% from the month before receipt to two months after in an analysis of the household survey.[7] Hattori and colleagues also write that their roughly 10% is no different from estimates made before the pandemic.[6]"
+          ],
+          [
+            "h",
+            "Who spent it?"
+          ],
+          [
+            "p",
+            "The clearest finding, in every study, is that households with little money at hand spent more of the payment. In the Money Forward data, households whose liquid assets were smaller than their monthly earnings (19% of users) responded strongly, especially in the week of payment.[2] In the Mizuho data, households short of liquid funds spent nearly 60% of the payment. What mattered was not total financial assets but the balance in ordinary deposit accounts: “wealthy hand-to-mouth” households, with shares or insurance but little in their ordinary accounts, also spent a lot.[4]"
+          ],
+          [
+            "p",
+            "On income, the studies disagree. The Cabinet Office found that households in the bottom third by equivalised income (income adjusted for household size) spent about 32% of the payment, with no clear effect for the middle and top thirds.[7] The Money Forward data also show a larger response in the quarter of households with the lowest earnings.[2] The Mizuho data, by contrast, show almost no difference by income; the difference there was for households whose income had fallen by more than half from the year before (54%).[4]"
+          ],
+          [
+            "p",
+            "On age and household type, the Money Forward data give some clues. The older the household head, the bigger the response; people living alone responded less than other households, and married households more than single ones. Having children made little difference.[2] But budgeting-app users skew young and towards Tokyo, and include few women (partly, the authors suggest, because the payment went to household heads), so older households are hard to see in these data.[2][7]"
+          ],
+          [
+            "h",
+            "Where did the unspent money go?"
+          ],
+          [
+            "p",
+            "Some surveys simply asked people. In June 2020 the NLI Research Institute asked 2,062 people aged 20 to 69 what they used it for (more than one answer allowed). “Covering living costs” came first at 53.7%, followed by “savings” at 26.1%, “domestic travel” at 10.1%, “buying home appliances” and “buying masks and other hygiene products” at 9.7% each, “eating out” at 9.0% and “children’s education” at 7.0%. Only 9.7% said they saved all of it. The survey did not ask about amounts, however, and the researcher, Naoko Kuga, notes that measured in yen, more may have stayed in savings.[8]"
+          ],
+          [
+            "p",
+            "Why keep it? In the same survey, people who chose savings were more likely than average to worry about losing income or their job. Kuga reads this as saving on purpose out of anxiety rather than having nothing to spend on during the stay-at-home period.[9] The Cabinet Office likewise says the part not spent right away probably built up as “excess savings,” helped by the restrictions on going out, and is expected to be drawn down later to support spending.[7]"
+          ],
+          [
+            "o",
+            "It is too early to say the money was wasted because it was saved. Covering living costs is itself spending. And ¥100,000 kept aside when no one could see what was coming was a kind of safety net for a household. Lifting the economy and supporting people’s lives have to be measured with different yardsticks. The Cabinet Office report itself says the programme did not necessarily have stimulating consumption as its direct aim.[7]"
+          ],
+          [
+            "h",
+            "One-off ¥100,000 and basic income"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement,” and lists five characteristics: periodic, cash, individual, universal and unconditional.[10] It is the same yardstick we used in {the essay on Thailand’s 10,000 baht|/essays/thailand-digital-wallet/}. Let’s run the ¥100,000 through it one by one."
+          ],
+          [
+            "p",
+            "Universal? Nearly, yes. Everyone on the resident register was eligible, foreign residents included."
+          ],
+          [
+            "p",
+            "Unconditional? Yes. There was no means test and no work requirement."
+          ],
+          [
+            "p",
+            "Cash? Yes. It could be spent on anything."
+          ],
+          [
+            "p",
+            "Periodic? No. It was paid once."
+          ],
+          [
+            "p",
+            "Individual? Strictly speaking, no. The household head applied for the whole family, and the money went into the household head’s account.[1][4] People who had fled domestic violence could, if they came forward, receive their own share and that of family members with them from the municipality they had fled to rather than the one where they were registered.[11]"
+          ],
+          [
+            "o",
+            "Three out of five met, two not. And for thinking about basic income, the one that matters is “periodic.” As the Cabinet Office report also explains, one idea in economics is that people spread a temporary windfall over the rest of their lives.[7] With a one-off ¥100,000, putting it aside against an uncertain future is only natural. Money that is certain to arrive every month is something people can build their lives around. What the 2020 data measured was how people respond to money that arrives once, in the middle of a pandemic, not how they live with money that keeps arriving."
+          ],
+          [
+            "o",
+            "So the fact that much of the ¥100,000 was not spent right away is not evidence that a basic income would just be saved. Nor is the fact that the ¥100,000 helped many people get by evidence that a basic income would work. Both answer a different question."
+          ],
+          [
+            "p",
+            "A lump sum has its own strengths. {GiveDirectly’s study in Kenya|/timeline/#tl-kenya} compares a group paid monthly for 12 years, a group paid monthly for two years and a group paid in one lump sum, and early results in 2023 found the lump-sum group did better on many economic measures."
+          ],
+          [
+            "p",
+            "Our timeline also has schemes that pay again and again. The {Alaska Permanent Fund Dividend|/timeline/#tl-alaska} has paid every year since 1982, and the {Marshall Islands’ Enra|/timeline/#tl-marshall-islands} has paid about $200 every quarter since November 2025. {South Korea’s rural basic income pilot|/timeline/#tl-korea-rural} pays 150,000 won a month in local vouchers to citizens living in selected counties in 2026–2027 (BIEN says this form does not meet its definition)."
+          ],
+          [
+            "h",
+            "¥100,000 once, or ¥30,000 a month"
+          ],
+          [
+            "p",
+            "Compare the sizes, too. With {the basic income calculator|/calc/?c=jp&w=all&m=30000}, paying ¥30,000 a month to everyone in Japan’s current population (about 122.81 million) comes to about ¥44.2 trillion a year, about 6.7% of GDP. The roughly ¥12.7 trillion paid in 2020 is about three and a half months of that."
+          ],
+          [
+            "o",
+            "¥30,000 a month is not enough to live on. Even so, ¥44 trillion a year is more than three times what was paid out once in 2020. The ¥100,000 showed that the state can build a way to pay everyone. Doing it every month, though, needs an entirely different debate about where the money comes from."
+          ],
+          [
+            "h",
+            "What the ¥100,000 left behind"
+          ],
+          [
+            "o",
+            "The 2020 payment was a big experience: the same amount of cash, with no conditions, to almost everyone living in Japan. And thanks to the uneven timing, we now know from data how much was spent and which households spent it. Households with little money at hand spend quickly; people in anxious times hold on to money; when bank accounts and resident records are not linked, payments take time to arrive. All of these are lessons for the next time something is paid out."
+          ],
+          [
+            "o",
+            "But it was not a basic income experiment. It was money paid once, into the household head’s account, in the middle of a pandemic. It does not answer the question of how people’s work and lives change when money is certain to arrive every month. For that we need to keep looking at schemes that pay again and again."
+          ],
+          [
+            "o",
+            "We would rather not remember the ¥100,000 as “wasted,” or as “a rehearsal for basic income,” but by its proper name: a one-off emergency payment to everyone. That alone was a big enough event."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2020 年春夏之间，几乎所有住在日本的人都领到了 10 万日元。这笔钱叫作“特别定额给付金”，总共发放了约 12.67 万亿日元。那么，人们拿它做了什么？有人说大多进了储蓄账户，也有人说它撑住了家里的生活。"
+          ],
+          [
+            "p",
+            "这个问题在相当程度上可以用数据回答。我们读了利用银行账户和记账应用记录的研究，以及政府自己的分析，看看花掉了多少、在什么时候、由哪些家庭花掉。然后，我们把这段经历能告诉我们的关于基本收入的事，和它不能告诉我们的事分开来看。"
+          ],
+          [
+            "h",
+            "10 万日元是怎么发的"
+          ],
+          [
+            "p",
+            "2020 年 4 月 27 日登记在居民基本台账上的所有人都有资格领取，包括外国籍居民，每人 10 万日元。有权领取的是本人所属家庭的户主。户主要么在市区町村寄来的申请表上填好银行账户寄回，要么通过政府网站 Mynaportal 在线申请，钱原则上打入申请人本人名下的账户。项目预算为 12.880293 万亿日元（其中给付 12.734414 万亿日元，事务费 1,458.79 亿日元），全部由中央政府承担。[1]"
+          ],
+          [
+            "p",
+            "最初的方案并不是这样。政府起初提出，向因新冠收入大幅减少的家庭每户发放 30 万日元；2020 年 4 月 16 日，改为向每个人发放 10 万日元。[2]"
+          ],
+          [
+            "p",
+            "发放从 5 月开始。到 6 月 26 日已发放约 9.12 万亿日元（71.6%），到 7 月 31 日约 12.32 万亿日元。最终总额约 12.67 万亿日元，是市区町村计划发放金额的 99.7%：几乎所有符合资格的人都领到了。[3]"
+          ],
+          [
+            "p",
+            "不过，钱什么时候到，很大程度上取决于住在哪里。在日本，银行账户和居民记录没有关联，所以市区町村只能一个个收集、核对账号。[2] 即使在东京都内，练马区到 6 月 30 日已有 85% 的申请人领到钱，江户川区只有 34.5%。[4]"
+          ],
+          [
+            "p",
+            "这些延迟反而成了研究者的礼物。如果在同一周里，有的家庭已经领到、有的还没有，比较两者，就能把给付本身的效果，和疫情扩散、居家要求的影响分开。下面的研究都用了这种“自然实验”。[2][4]"
+          ],
+          [
+            "h",
+            "花掉了多少？"
+          ],
+          [
+            "p",
+            "早稻田大学的久保田荘、大西宏一郎和远山祐太研究了瑞穗银行约 280 万个账户。钱到账的那一周支出猛增，之后一个多月里都保持在略高的水平。六周内，从账户流出的钱相当于给付额的 49%；只算现金提取则是 31%。由于这些流出包括转账和自动扣款，作者把它作为消费的上限。[4]"
+          ],
+          [
+            "p",
+            "兼田充、久保田荘和田中聪史使用了记账应用 Money Forward ME 的 232,589 名用户的数据。六周内，按基准定义，给付额的 16% 被花掉：窄口径为 6%，宽口径为 27%。[2][5]"
+          ],
+          [
+            "p",
+            "服部孝洋等人使用政府家计调查中按城市汇总的数据，估计在给付到账的那个月花掉了约 10%。在家和在商店买东西的支出增加了，面对面服务的支出没有增加。[6]"
+          ],
+          [
+            "p",
+            "2023 年，内阁府查看了另一个记账应用 Moneytree 的数据，覆盖从发放前 5 周到发放后 10 周共 16 周，估计给付额的约 22% 被花掉。用家计调查的个人记录核对，约 16 周内约为 17%，结果大致相同。[7]"
+          ],
+          [
+            "o",
+            "数字从 6% 到 49% 不等。这取决于什么算作消费（是否假定提取的现金都花掉了，是否计入转账），以及看了多少周。但它们的方向一致。在钱到账后的几周到几个月里，窄口径计算消费的研究发现花掉了一成到不到三成，即使把所有流出都算进去的研究，也只有一半左右。其余的钱，至少没有马上花掉。"
+          ],
+          [
+            "p",
+            "这可能不只是疫情期间的数字。根据内阁府的报告，1999 年的地域振兴券使消费增加了发放额的约 32%；2009 年的定额给付金在问卷调查中约为 33%，在用家计调查做的分析中，从领取前一个月到领取后两个月约为 25%。[7] 服部等人也写道，他们约 10% 的结果与疫情前的估计没有差别。[6]"
+          ],
+          [
+            "h",
+            "谁花掉了？"
+          ],
+          [
+            "p",
+            "每项研究里最清楚的发现是：手头钱少的家庭，花掉的比例更高。在 Money Forward 的数据中，流动资产少于月收入的家庭（占用户的 19%）反应强烈，尤其是在到账的那一周。[2] 在瑞穗银行的数据中，资金紧张的家庭花掉了给付额的近 60%。起作用的不是金融资产总额，而是普通存款账户的余额：持有股票或保险、但普通账户里钱不多的“富裕的月光族”（wealthy hand-to-mouth）家庭，也花得很多。[4]"
+          ],
+          [
+            "p",
+            "至于收入，各项研究的结论不一致。内阁府发现，按等价收入（按家庭人数调整后的收入）排在最低三分之一的家庭，花掉了给付额的约 32%，中间和最高三分之一的家庭没有明显效果。[7] Money Forward 的数据也显示，收入最低的四分之一家庭反应更大。[2] 相比之下，瑞穗银行的数据几乎看不出收入高低的差别；那里的差别出现在收入比前一年减少一半以上的家庭（54%）。[4]"
+          ],
+          [
+            "p",
+            "关于年龄和家庭类型，Money Forward 的数据提供了一些线索。户主年龄越大，反应越大；独居的人反应弱于其他家庭，已婚家庭强于单身家庭。有没有孩子差别不大。[2] 但记账应用的用户偏年轻、偏东京，女性很少（作者认为部分原因是给付发给了户主），所以这些数据很难看清老年家庭的情况。[2][7]"
+          ],
+          [
+            "h",
+            "没花掉的钱去了哪里？"
+          ],
+          [
+            "p",
+            "也有调查直接问了人们。2020 年 6 月，日本生命基础研究所（NLI Research Institute）询问了 2,062 名 20 至 69 岁的人用这笔钱做了什么（可多选）。“补贴生活费”以 53.7% 居首，其次是“储蓄”26.1%、“国内旅行”10.1%、“购买家电”和“购买口罩等卫生用品”各 9.7%、“外出就餐”9.0%、“孩子的教育”7.0%。说全部存起来的只有 9.7%。不过，调查没有问金额，研究者久我尚子指出，按金额计算，留在储蓄里的可能更多。[8]"
+          ],
+          [
+            "p",
+            "为什么要留着？在同一项调查中，选择储蓄的人比平均水平更担心收入减少或失业。久我认为，这与其说是居家期间没地方花钱，不如说是出于不安而有意存起来。[9] 内阁府同样表示，没有马上花掉的部分，加上外出受限，可能积累成了“超额储蓄”，预计以后会被动用，支撑消费。[7]"
+          ],
+          [
+            "o",
+            "因为存起来了就说这笔钱浪费了，还为时过早。补贴生活费本身就是花钱。在谁也看不清前路的时候留在手边的 10 万日元，对一个家庭来说是一种安全网。拉动经济和支撑生活，需要用不同的尺子来衡量。内阁府的报告本身也说，这个项目不一定以刺激消费为直接目的。[7]"
+          ],
+          [
+            "h",
+            "一次性的 10 万日元与基本收入"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）把基本收入定义为“无需经济状况调查或工作要求，无条件地以个人为单位向所有人发放的定期现金”，并列出五个特征：定期、现金、个人、普遍、无条件。[10] 这和我们在{关于泰国 1 万泰铢的随笔|/essays/thailand-digital-wallet/}里用的是同一把尺子。我们把 10 万日元逐条对照一下。"
+          ],
+          [
+            "p",
+            "普遍吗？差不多，是的。居民登记上的所有人都有资格，包括外国籍居民。"
+          ],
+          [
+            "p",
+            "无条件吗？是的。没有经济状况调查，也没有工作要求。"
+          ],
+          [
+            "p",
+            "现金吗？是的。可以用在任何地方。"
+          ],
+          [
+            "p",
+            "定期吗？不是。只发了一次。"
+          ],
+          [
+            "p",
+            "以个人为单位吗？严格来说，不是。户主替全家申请，钱打进户主的账户。[1][4] 逃离家庭暴力的人如果提出申请，可以从避难地的市区町村领取自己以及同行家人的份额，而不是从住民登记所在地领取。[11]"
+          ],
+          [
+            "o",
+            "五条中满足三条，两条不满足。而思考基本收入时，关键的是“定期”这一条。正如内阁府的报告也介绍的，经济学里有一种观点：人们会把一笔临时的意外收入分摊到余生中使用。[7] 一次性的 10 万日元，为不确定的未来存起来再自然不过。每个月一定会到的钱，人们才能以它为前提安排生活。2020 年的数据测量的，是人们对疫情中只来一次的钱的反应，而不是人们如何与持续到来的钱一起生活。"
+          ],
+          [
+            "o",
+            "所以，10 万日元大多没有马上花掉，并不能证明基本收入只会被存起来。10 万日元帮许多人渡过了难关，也不能证明基本收入就会成功。两者回答的都是另一个问题。"
+          ],
+          [
+            "p",
+            "一次性发放也有自己的长处。{GiveDirectly 在肯尼亚的研究|/timeline/#tl-kenya}比较了连续 12 年每月领取的一组、连续两年每月领取的一组和一次性领取的一组，2023 年的初步结果发现，一次性领取的一组在许多经济指标上表现更好。"
+          ],
+          [
+            "p",
+            "本站年表里也有反复发放的例子。{阿拉斯加永久基金分红|/timeline/#tl-alaska}自 1982 年起每年发放，{马绍尔群岛的 Enra|/timeline/#tl-marshall-islands}自 2025 年 11 月起每季度发放约 200 美元。{韩国的农村基本收入试点|/timeline/#tl-korea-rural}在 2026–2027 年，以地方商品券形式每月向住在选定郡的国民发放 15 万韩元（BIEN 表示，这种形式不符合它的定义）。"
+          ],
+          [
+            "h",
+            "一次 10 万日元，还是每月 3 万日元"
+          ],
+          [
+            "p",
+            "也比一比规模。用{基本收入计算器|/calc/?c=jp&w=all&m=30000}算，向日本现有人口（约 1.2281 亿）中的每个人每月发放 3 万日元，一年约 44.2 万亿日元，约为 GDP 的 6.7%。2020 年发放的约 12.7 万亿日元，大约相当于其中三个半月。"
+          ],
+          [
+            "o",
+            "每月 3 万日元不够生活。即便如此，一年 44 万亿日元也是 2020 年一次性发放金额的三倍多。10 万日元表明，国家能够建立一套给每个人发钱的办法。但要每个月都这样做，就需要一场完全不同的讨论：钱从哪里来。"
+          ],
+          [
+            "h",
+            "10 万日元留下了什么"
+          ],
+          [
+            "o",
+            "2020 年的给付是一次重大的经历：向几乎所有住在日本的人发放同样数额的现金，不附任何条件。而且多亏到账时间参差不齐，我们现在能从数据中知道花掉了多少、哪些家庭花掉了。手头钱少的家庭花得快；在不安的时候，人们会留住钱；银行账户和居民记录不关联时，钱要很久才能到。这些都是下次发放时的教训。"
+          ],
+          [
+            "o",
+            "但它不是基本收入实验。它是在疫情中只发一次、打进户主账户的钱。它回答不了这样的问题：当每个月一定有钱到账时，人们的工作和生活会怎样改变。要回答这个问题，我们需要继续关注反复发放的制度。"
+          ],
+          [
+            "o",
+            "我们不想把这 10 万日元记成“浪费”，也不想记成“基本收入的预演”，而想用它本来的名字记住它：一次面向所有人的、一次性的紧急给付。光是这样，就已经是一件足够大的事。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "2020 के वसंत और गर्मियों के बीच जापान में रहने वाले लगभग हर व्यक्ति को 1,00,000 येन मिले। इसे विशेष नकद भुगतान (तोकुबेत्सु तेइगाकु क्यूफ़ुकिन) कहा गया, और कुल मिलाकर लगभग 12.67 ट्रिलियन येन बाँटे गए। तो लोगों ने इसका क्या किया? कुछ कहते हैं कि ज़्यादातर पैसा बचत खातों में चला गया; कुछ कहते हैं कि इसी ने घरों को सहारा दिया।"
+          ],
+          [
+            "p",
+            "इस सवाल का जवाब काफ़ी हद तक आँकड़ों से दिया जा सकता है। हमने वे अध्ययन पढ़े जिनमें बैंक खातों और बजट ऐप के रिकॉर्ड इस्तेमाल हुए, और साथ में सरकार का अपना विश्लेषण भी, ताकि देख सकें कि कितना ख़र्च हुआ, कब, और किन परिवारों ने किया। फिर हम अलग करते हैं कि यह अनुभव बेसिक इनकम के बारे में क्या बताता है और क्या नहीं।"
+          ],
+          [
+            "h",
+            "1,00,000 येन कैसे दिए गए"
+          ],
+          [
+            "p",
+            "27 अप्रैल 2020 को बुनियादी निवासी रजिस्टर में दर्ज हर व्यक्ति, विदेशी निवासियों समेत, 1,00,000 येन का हक़दार था। पाने का हक़ उस परिवार के मुखिया का था जिसका वह व्यक्ति सदस्य था। परिवार के मुखिया या तो नगरपालिका से भेजे गए फ़ॉर्म में अपने बैंक खाते का ब्योरा भरकर डाक से लौटाते थे, या सरकारी पोर्टल Mynaportal से ऑनलाइन आवेदन करते थे, और पैसा सिद्धांततः आवेदक के अपने नाम के खाते में जाता था। कार्यक्रम का बजट 12,880.293 अरब येन था (12,734.414 अरब येन भुगतान और 145.879 अरब येन प्रशासन), और पूरा ख़र्च राष्ट्रीय सरकार ने उठाया।[1]"
+          ],
+          [
+            "p",
+            "पहली योजना अलग थी। सरकार ने शुरू में उन परिवारों को प्रति परिवार 3,00,000 येन देने का प्रस्ताव रखा था जिनकी आमदनी COVID-19 की वजह से बहुत गिर गई थी; 16 अप्रैल 2020 को इसे बदलकर हर व्यक्ति को 1,00,000 येन कर दिया गया।[2]"
+          ],
+          [
+            "p",
+            "भुगतान मई में शुरू हुए। 26 जून तक लगभग 9.12 ट्रिलियन येन (71.6%) दिए जा चुके थे, और 31 जुलाई तक लगभग 12.32 ट्रिलियन येन। अंतिम कुल लगभग 12.67 ट्रिलियन येन था, यानी नगरपालिकाओं की तय रकम का 99.7%: लगभग हर पात्र व्यक्ति तक पैसा पहुँचा।[3]"
+          ],
+          [
+            "p",
+            "लेकिन पैसा कब पहुँचा, यह काफ़ी हद तक इस पर निर्भर था कि आप कहाँ रहते थे। जापान में बैंक खाते निवासी रिकॉर्ड से जुड़े नहीं हैं, इसलिए नगरपालिकाओं को खाता नंबर एक-एक करके जमा करने और जाँचने पड़े।[2] टोक्यो के भीतर भी, नेरिमा वार्ड में 30 जून तक 85% आवेदकों को पैसा मिल चुका था, जबकि एदोगावा वार्ड में 34.5% को।[4]"
+          ],
+          [
+            "p",
+            "ये देरी शोधकर्ताओं के लिए एक तोहफ़ा साबित हुई। अगर एक ही हफ़्ते में कुछ परिवारों को पैसा मिल चुका हो और कुछ को नहीं, तो उनकी तुलना से भुगतान का असर वायरस के फैलाव और घर पर रहने के अनुरोधों के असर से अलग किया जा सकता है। नीचे के सभी अध्ययन इसी “प्राकृतिक प्रयोग” का इस्तेमाल करते हैं।[2][4]"
+          ],
+          [
+            "h",
+            "कितना ख़र्च हुआ?"
+          ],
+          [
+            "p",
+            "वासेदा विश्वविद्यालय के सो कुबोता, कोइचिरो ओनिशी और युता तोयामा ने मिज़ुहो बैंक के लगभग 28 लाख खातों का अध्ययन किया। जिस हफ़्ते पैसा आया, उस हफ़्ते ख़र्च उछल गया और एक महीने से ज़्यादा समय तक थोड़ा ऊँचा बना रहा। छह हफ़्तों में खातों से निकली रकम भुगतान के 49% के बराबर थी; सिर्फ़ नकद निकासी गिनें तो 31%। क्योंकि इन निकासियों में ट्रांसफ़र और ऑटो-डेबिट भी शामिल हैं, लेखक इसे ख़र्च की ऊपरी सीमा के रूप में पेश करते हैं।[4]"
+          ],
+          [
+            "p",
+            "मिचिरु कानेदा, सो कुबोता और सातोशी तानाका ने बजट ऐप Money Forward ME के 2,32,589 उपयोगकर्ताओं के आँकड़े इस्तेमाल किए। छह हफ़्तों में, उनकी मूल परिभाषा के हिसाब से, भुगतान का 16% ख़र्च हुआ: संकरी गिनती में 6% और चौड़ी गिनती में 27%।[2][5]"
+          ],
+          [
+            "p",
+            "ताकाहिरो हात्तोरी और साथियों ने सरकार के पारिवारिक आय और व्यय सर्वेक्षण के शहर-स्तर के आँकड़े इस्तेमाल किए और अनुमान लगाया कि भुगतान वाले महीने में लगभग 10% ख़र्च हुआ। घर पर और दुकानों में ख़रीदी गई चीज़ों पर ख़र्च बढ़ा; आमने-सामने की सेवाओं पर ख़र्च नहीं बढ़ा।[6]"
+          ],
+          [
+            "p",
+            "2023 में कैबिनेट ऑफ़िस ने एक और बजट ऐप Moneytree के आँकड़े देखे, भुगतान से पाँच हफ़्ते पहले से दस हफ़्ते बाद तक कुल 16 हफ़्तों के, और अनुमान लगाया कि भुगतान का लगभग 22% ख़र्च हुआ। घरेलू सर्वेक्षण के व्यक्तिगत रिकॉर्ड से जाँचने पर लगभग 16 हफ़्तों में लगभग 17% निकला, मोटे तौर पर वही।[7]"
+          ],
+          [
+            "o",
+            "आँकड़े 6% से 49% तक फैले हैं। यह इस पर निर्भर है कि ख़र्च में क्या गिना जाए (क्या निकाली गई नकदी को ख़र्च मान लिया जाए, क्या ट्रांसफ़र शामिल हों) और कितने हफ़्ते नापे जाएँ। लेकिन सबकी दिशा एक है। पैसा आने के बाद के हफ़्तों और महीनों में, ख़र्च को संकरे तरीक़े से गिनने वाले अध्ययनों ने दसवें हिस्से से लेकर 30% से थोड़ा कम तक ख़र्च पाया, और हर निकासी गिनने वाले अध्ययनों ने भी लगभग आधा। बाक़ी पैसा, कम से कम, तुरंत ख़र्च नहीं हुआ।"
+          ],
+          [
+            "p",
+            "हो सकता है कि यह सिर्फ़ महामारी के समय का आँकड़ा न हो। कैबिनेट ऑफ़िस की रिपोर्ट के अनुसार, 1999 के क्षेत्रीय प्रोत्साहन वाउचरों ने ख़र्च को दी गई रकम के लगभग 32% तक बढ़ाया, और 2009 के निश्चित राशि लाभ ने एक सर्वेक्षण में लगभग 33%, या घरेलू सर्वेक्षण के विश्लेषण में पाने से पहले के महीने से दो महीने बाद तक लगभग 25%।[7] हात्तोरी और साथी भी लिखते हैं कि उनका लगभग 10% महामारी से पहले के अनुमानों से अलग नहीं है।[6]"
+          ],
+          [
+            "h",
+            "किसने ख़र्च किया?"
+          ],
+          [
+            "p",
+            "हर अध्ययन में सबसे साफ़ नतीजा यह है कि जिन परिवारों के पास हाथ में कम पैसा था, उन्होंने भुगतान का ज़्यादा हिस्सा ख़र्च किया। Money Forward के आँकड़ों में, जिन परिवारों की तरल संपत्ति उनकी मासिक कमाई से कम थी (19% उपयोगकर्ता), उन्होंने ज़ोरदार प्रतिक्रिया दी, ख़ासकर भुगतान वाले हफ़्ते में।[2] मिज़ुहो के आँकड़ों में, नकदी की तंगी वाले परिवारों ने भुगतान का लगभग 60% ख़र्च किया। मायने कुल वित्तीय संपत्ति के नहीं, बल्कि सामान्य बचत खाते के बैलेंस के थे: शेयर या बीमा रखने वाले लेकिन सामान्य खाते में कम पैसे वाले “अमीर हैंड-टू-माउथ” (wealthy hand-to-mouth) परिवारों ने भी ख़ूब ख़र्च किया।[4]"
+          ],
+          [
+            "p",
+            "आमदनी के मामले में अध्ययन एकमत नहीं हैं। कैबिनेट ऑफ़िस ने पाया कि समतुल्य आय (परिवार के आकार के हिसाब से समायोजित आय) में सबसे नीचे के एक-तिहाई परिवारों ने भुगतान का लगभग 32% ख़र्च किया, जबकि बीच और ऊपर के एक-तिहाई में कोई साफ़ असर नहीं दिखा।[7] Money Forward के आँकड़े भी सबसे कम कमाई वाले एक-चौथाई परिवारों में बड़ी प्रतिक्रिया दिखाते हैं।[2] इसके उलट, मिज़ुहो के आँकड़ों में आय के हिसाब से लगभग कोई फ़र्क़ नहीं दिखता; वहाँ फ़र्क़ उन परिवारों में था जिनकी आमदनी पिछले साल से आधी से ज़्यादा गिर गई थी (54%)।[4]"
+          ],
+          [
+            "p",
+            "उम्र और परिवार के प्रकार पर Money Forward के आँकड़े कुछ संकेत देते हैं। परिवार का मुखिया जितना उम्रदराज़, प्रतिक्रिया उतनी बड़ी; अकेले रहने वालों ने दूसरे परिवारों से कम प्रतिक्रिया दी, और विवाहित परिवारों ने अविवाहितों से ज़्यादा। बच्चों के होने से ज़्यादा फ़र्क़ नहीं पड़ा।[2] लेकिन बजट ऐप के उपयोगकर्ता ज़्यादातर युवा और टोक्यो की ओर झुके हैं, और उनमें महिलाएँ कम हैं (लेखकों का सुझाव है कि कुछ हद तक इसलिए कि भुगतान परिवार के मुखिया को गया), इसलिए इन आँकड़ों में बुज़ुर्ग परिवारों को देखना मुश्किल है।[2][7]"
+          ],
+          [
+            "h",
+            "जो पैसा ख़र्च नहीं हुआ, वह कहाँ गया?"
+          ],
+          [
+            "p",
+            "कुछ सर्वेक्षणों ने सीधे लोगों से पूछा। जून 2020 में NLI Research Institute (निप्पॉन लाइफ़ का शोध संस्थान) ने 20 से 69 साल के 2,062 लोगों से पूछा कि उन्होंने पैसा किस काम में लगाया (एक से ज़्यादा जवाब की छूट थी)। “रोज़मर्रा के ख़र्च पूरे करना” 53.7% के साथ सबसे ऊपर रहा, फिर “बचत” 26.1%, “देश के भीतर यात्रा” 10.1%, “घरेलू उपकरण ख़रीदना” और “मास्क और दूसरी स्वच्छता की चीज़ें ख़रीदना” 9.7% हर एक, “बाहर खाना” 9.0% और “बच्चों की पढ़ाई” 7.0%। सिर्फ़ 9.7% ने कहा कि उन्होंने पूरा पैसा बचा लिया। लेकिन सर्वेक्षण ने रकम के बारे में नहीं पूछा, और शोधकर्ता नाओको कुगा कहती हैं कि येन में नापें तो शायद ज़्यादा पैसा बचत में रहा हो।[8]"
+          ],
+          [
+            "p",
+            "पैसा रखा क्यों? उसी सर्वेक्षण में, बचत चुनने वालों में आय घटने या नौकरी जाने की चिंता औसत से ज़्यादा थी। कुगा इसे घर पर रहने के दौर में ख़र्च करने को कुछ न होने के बजाय, चिंता की वजह से जानबूझकर की गई बचत मानती हैं।[9] कैबिनेट ऑफ़िस भी कहता है कि जो हिस्सा तुरंत ख़र्च नहीं हुआ, वह बाहर जाने की पाबंदियों के साथ मिलकर शायद “अतिरिक्त बचत” के रूप में जमा हुआ, और उम्मीद है कि बाद में निकाला जाकर ख़र्च को सहारा देगा।[7]"
+          ],
+          [
+            "o",
+            "सिर्फ़ इसलिए कि पैसा बचा लिया गया, उसे बर्बाद कहना जल्दबाज़ी होगी। रोज़मर्रा के ख़र्च पूरे करना भी अपने आप में ख़र्च है। और जब किसी को आगे का कुछ नहीं दिख रहा था, तब अलग रखे गए 1,00,000 येन परिवार के लिए एक तरह का सुरक्षा जाल थे। अर्थव्यवस्था को उठाना और लोगों की ज़िंदगी को सहारा देना, दोनों को अलग-अलग पैमानों से नापना होगा। कैबिनेट ऑफ़िस की रिपोर्ट ख़ुद कहती है कि कार्यक्रम का सीधा मक़सद ज़रूरी नहीं कि ख़र्च बढ़ाना था।[7]"
+          ],
+          [
+            "h",
+            "एक बार के 1,00,000 येन और बेसिक इनकम"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को “एक नियमित नकद भुगतान, जो बिना आय-जाँच या काम की शर्त के, बिना शर्त सभी को व्यक्तिगत आधार पर दिया जाए” के रूप में परिभाषित करता है, और पाँच विशेषताएँ गिनाता है: नियमित, नकद, व्यक्तिगत, सार्वभौमिक और बिना शर्त।[10] यह वही पैमाना है जो हमने {थाईलैंड के 10,000 बाट वाले निबंध|/essays/thailand-digital-wallet/} में इस्तेमाल किया था। आइए 1,00,000 येन को एक-एक करके इस पर परखें।"
+          ],
+          [
+            "p",
+            "सार्वभौमिक? लगभग, हाँ। निवासी रजिस्टर में दर्ज हर व्यक्ति पात्र था, विदेशी निवासियों समेत।"
+          ],
+          [
+            "p",
+            "बिना शर्त? हाँ। न आय-जाँच थी, न काम की शर्त।"
+          ],
+          [
+            "p",
+            "नकद? हाँ। इसे किसी भी चीज़ पर ख़र्च किया जा सकता था।"
+          ],
+          [
+            "p",
+            "नियमित? नहीं। यह एक बार दिया गया।"
+          ],
+          [
+            "p",
+            "व्यक्तिगत? सख़्ती से देखें तो नहीं। परिवार के मुखिया ने पूरे परिवार के लिए आवेदन किया, और पैसा मुखिया के खाते में गया।[1][4] घरेलू हिंसा से भागे लोग, अगर सामने आते, तो अपना और साथ रह रहे परिवार के सदस्यों का हिस्सा उस नगरपालिका से ले सकते थे जहाँ वे भागकर गए थे, न कि वहाँ से जहाँ वे पंजीकृत थे।[11]"
+          ],
+          [
+            "o",
+            "पाँच में से तीन कसौटियाँ पूरी, दो नहीं। और बेसिक इनकम के बारे में सोचने के लिए जो मायने रखती है, वह है “नियमित”। जैसा कि कैबिनेट ऑफ़िस की रिपोर्ट भी समझाती है, अर्थशास्त्र में एक विचार है कि लोग अचानक मिली एक बार की रकम को बाक़ी ज़िंदगी पर फैला देते हैं।[7] एक बार के 1,00,000 येन को अनिश्चित भविष्य के लिए अलग रखना बिल्कुल स्वाभाविक है। जो पैसा हर महीने पक्के तौर पर आता है, उसके इर्द-गिर्द लोग अपनी ज़िंदगी बना सकते हैं। 2020 के आँकड़ों ने यह नापा कि महामारी के बीच एक बार आने वाले पैसे पर लोग कैसी प्रतिक्रिया देते हैं, यह नहीं कि लगातार आते रहने वाले पैसे के साथ वे कैसे जीते हैं।"
+          ],
+          [
+            "o",
+            "इसलिए यह बात कि 1,00,000 येन का बड़ा हिस्सा तुरंत ख़र्च नहीं हुआ, इसका सबूत नहीं है कि बेसिक इनकम बस बचा ली जाएगी। और यह बात कि 1,00,000 येन ने बहुत लोगों को गुज़ारा करने में मदद की, इसका सबूत भी नहीं है कि बेसिक इनकम कामयाब होगी। दोनों किसी और सवाल का जवाब हैं।"
+          ],
+          [
+            "p",
+            "एकमुश्त रकम की अपनी ख़ूबियाँ हैं। {केन्या में GiveDirectly का अध्ययन|/timeline/#tl-kenya} तीन समूहों की तुलना करता है: एक को 12 साल तक हर महीने, एक को दो साल तक हर महीने, और एक को एक ही बार में एकमुश्त भुगतान; 2023 के शुरुआती नतीजों में एकमुश्त वाले समूह ने कई आर्थिक पैमानों पर बेहतर किया।"
+          ],
+          [
+            "p",
+            "हमारी समयरेखा में ऐसी योजनाएँ भी हैं जो बार-बार भुगतान करती हैं। {अलास्का परमानेंट फ़ंड डिविडेंड|/timeline/#tl-alaska} 1982 से हर साल भुगतान करता है, और {मार्शल द्वीप का Enra|/timeline/#tl-marshall-islands} नवंबर 2025 से हर तिमाही लगभग $200 देता है। {दक्षिण कोरिया का ग्रामीण बेसिक इनकम पायलट|/timeline/#tl-korea-rural} 2026–2027 में चुनी गई काउंटियों में रहने वाले नागरिकों को स्थानीय वाउचर में हर महीने 1,50,000 वॉन देता है (BIEN कहता है कि यह रूप उसकी परिभाषा पर खरा नहीं उतरता)।"
+          ],
+          [
+            "h",
+            "एक बार 1,00,000 येन, या हर महीने 30,000 येन"
+          ],
+          [
+            "p",
+            "आकार की भी तुलना करें। {बेसिक इनकम कैलकुलेटर|/calc/?c=jp&w=all&m=30000} के हिसाब से, जापान की मौजूदा आबादी (लगभग 12.28 करोड़) में हर व्यक्ति को हर महीने 30,000 येन देने का ख़र्च साल में लगभग 44.2 ट्रिलियन येन आता है, यानी GDP का लगभग 6.7%। 2020 में दिए गए लगभग 12.7 ट्रिलियन येन उसके लगभग साढ़े तीन महीने के बराबर हैं।"
+          ],
+          [
+            "o",
+            "हर महीने 30,000 येन से गुज़ारा नहीं हो सकता। फिर भी, साल के 44 ट्रिलियन येन 2020 में एक बार दी गई रकम के तीन गुने से ज़्यादा हैं। 1,00,000 येन ने दिखाया कि सरकार सबको पैसा पहुँचाने का तरीक़ा बना सकती है। लेकिन इसे हर महीने करने के लिए एक बिल्कुल अलग बहस चाहिए: पैसा कहाँ से आएगा।"
+          ],
+          [
+            "h",
+            "1,00,000 येन क्या छोड़ गए"
+          ],
+          [
+            "o",
+            "2020 का भुगतान एक बड़ा अनुभव था: जापान में रहने वाले लगभग हर व्यक्ति को, बिना किसी शर्त के, एक जैसी नकद रकम। और भुगतान के असमान समय की बदौलत, अब हम आँकड़ों से जानते हैं कि कितना ख़र्च हुआ और किन परिवारों ने किया। जिन परिवारों के हाथ में कम पैसा होता है, वे जल्दी ख़र्च करते हैं; चिंता के समय लोग पैसा रोककर रखते हैं; जब बैंक खाते और निवासी रिकॉर्ड जुड़े न हों, तो भुगतान पहुँचने में समय लगता है। ये सब अगली बार कुछ बाँटने के लिए सबक़ हैं।"
+          ],
+          [
+            "o",
+            "लेकिन यह बेसिक इनकम का प्रयोग नहीं था। यह महामारी के बीच, परिवार के मुखिया के खाते में, एक बार दिया गया पैसा था। यह इस सवाल का जवाब नहीं देता कि जब हर महीने पैसा पक्के तौर पर आता है, तो लोगों का काम और ज़िंदगी कैसे बदलती है। उसके लिए हमें बार-बार भुगतान करने वाली योजनाओं को देखते रहना होगा।"
+          ],
+          [
+            "o",
+            "हम 1,00,000 येन को न “बर्बादी” के रूप में याद रखना चाहेंगे, न “बेसिक इनकम के पूर्वाभ्यास” के रूप में, बल्कि उसके सही नाम से: सबके लिए एक बार का आपातकालीन भुगतान। अपने आप में यही एक काफ़ी बड़ी घटना थी।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "Entre la primavera y el verano de 2020, casi todas las personas que vivían en Japón recibieron 100.000 yenes. Se llamó Pago Especial en Efectivo (tokubetsu teigaku kyūfukin), y en total se pagaron unos 12,67 billones de yenes. ¿Qué hizo la gente con ese dinero? Unos dicen que acabó sobre todo en cuentas de ahorro; otros, que ayudó a los hogares a mantenerse a flote."
+          ],
+          [
+            "p",
+            "Esta pregunta se puede responder, en buena medida, con datos. Leímos los estudios que usaron registros de cuentas bancarias y de apps de finanzas personales, junto con el propio análisis del gobierno, para ver cuánto se gastó, cuándo y en qué hogares. Después separamos lo que esta experiencia nos dice sobre la renta básica de lo que no nos dice."
+          ],
+          [
+            "h",
+            "Cómo se pagaron los 100.000 yenes"
+          ],
+          [
+            "p",
+            "Tenía derecho toda persona inscrita en el Registro Básico de Residentes el 27 de abril de 2020, incluidos los residentes extranjeros: 100.000 yenes por persona. Quien tenía derecho a cobrarlo era el cabeza de familia del hogar al que pertenecía cada persona. Los cabezas de familia devolvían por correo, con sus datos bancarios, el formulario que les había enviado su municipio, o lo solicitaban por internet a través de Mynaportal, y el dinero se ingresaba en principio en una cuenta a nombre del solicitante. El programa tenía un presupuesto de 12.880.293 millones de yenes (12.734.414 millones en pagos y 145.879 millones en gastos de gestión), todo a cargo del gobierno nacional.[1]"
+          ],
+          [
+            "p",
+            "El primer plan era otro. Al principio, el gobierno propuso 300.000 yenes por hogar para los hogares cuyos ingresos hubieran caído mucho por la COVID-19; el 16 de abril de 2020 cambió a 100.000 yenes para cada persona.[2]"
+          ],
+          [
+            "p",
+            "Los pagos empezaron en mayo. A 26 de junio se habían pagado unos 9,12 billones de yenes (el 71,6 %), y a 31 de julio, unos 12,32 billones. El total final fue de unos 12,67 billones de yenes, el 99,7 % de lo que los municipios tenían previsto pagar: el pago llegó a casi todas las personas con derecho a él.[3]"
+          ],
+          [
+            "p",
+            "Pero cuándo llegaba dependía mucho de dónde se viviera. En Japón, las cuentas bancarias no están vinculadas al registro de residentes, así que los municipios tuvieron que reunir y comprobar los números de cuenta uno a uno.[2] Incluso dentro de Tokio, a 30 de junio se había pagado al 85 % de los solicitantes del distrito de Nerima, frente al 34,5 % en el distrito de Edogawa.[4]"
+          ],
+          [
+            "p",
+            "Esos retrasos resultaron ser un regalo para los investigadores. Si en la misma semana unos hogares ya han cobrado y otros no, compararlos permite separar el efecto del propio pago del avance del virus y de las peticiones de quedarse en casa. Todos los estudios que siguen usan este «experimento natural».[2][4]"
+          ],
+          [
+            "h",
+            "¿Cuánto se gastó?"
+          ],
+          [
+            "p",
+            "So Kubota, Koichiro Onishi y Yuta Toyama, de la Universidad de Waseda, estudiaron unos 2,8 millones de cuentas del Mizuho Bank. El gasto dio un salto la semana en que llegó el dinero y se mantuvo algo más alto durante más de un mes. En seis semanas, las salidas de dinero de las cuentas equivalieron al 49 % del pago; contando solo las retiradas de efectivo, al 31 %. Como esas salidas incluyen transferencias y domiciliaciones, los autores presentan esta cifra como un límite superior del gasto.[4]"
+          ],
+          [
+            "p",
+            "Michiru Kaneda, So Kubota y Satoshi Tanaka usaron datos de 232.589 usuarios de la app de finanzas personales Money Forward ME. En seis semanas se gastó el 16 % del pago según su definición de referencia: el 6 % contando en sentido estricto y el 27 % en sentido amplio.[2][5]"
+          ],
+          [
+            "p",
+            "Takahiro Hattori y sus colegas usaron las cifras por ciudades de la Encuesta de Ingresos y Gastos Familiares del gobierno y estimaron que se gastó alrededor del 10 % en el mes en que llegó el pago. Subió el gasto en cosas que se compran desde casa y en tiendas; el gasto en servicios presenciales, no.[6]"
+          ],
+          [
+            "p",
+            "En 2023, la Oficina del Gabinete analizó datos de otra app de finanzas personales, Moneytree, durante 16 semanas, desde cinco semanas antes hasta diez semanas después del pago, y estimó que se gastó alrededor del 22 % del pago. Una comprobación con los registros individuales de la encuesta de hogares dio alrededor del 17 % en unas 16 semanas, más o menos lo mismo.[7]"
+          ],
+          [
+            "o",
+            "Las cifras van del 6 % al 49 %. Dependen de qué se cuenta como gasto (si se da por gastado el efectivo retirado, si se incluyen las transferencias) y de cuántas semanas se miden. Pero apuntan en la misma dirección. En las semanas y meses posteriores a la llegada del dinero, los estudios que cuentan el gasto en sentido estricto encontraron que se gastó entre una décima parte y algo menos del 30 %, e incluso los que cuentan todas las salidas encontraron alrededor de la mitad. El resto, al menos, no se gastó enseguida."
+          ],
+          [
+            "p",
+            "Puede que esta no sea una cifra exclusiva de la pandemia. Según el informe de la Oficina del Gabinete, los vales de promoción regional de 1999 aumentaron el gasto en alrededor del 32 % de la cantidad entregada, y la prestación de cuantía fija de 2009 en alrededor del 33 % según una encuesta, o alrededor del 25 % desde el mes anterior a recibirla hasta dos meses después según un análisis de la encuesta de hogares.[7] Hattori y sus colegas también escriben que su cifra de alrededor del 10 % no difiere de las estimaciones hechas antes de la pandemia.[6]"
+          ],
+          [
+            "h",
+            "¿Quién lo gastó?"
+          ],
+          [
+            "p",
+            "El resultado más claro, en todos los estudios, es que los hogares con poco dinero a mano gastaron una parte mayor del pago. En los datos de Money Forward, los hogares cuyos activos líquidos eran menores que sus ingresos mensuales (el 19 % de los usuarios) respondieron con fuerza, sobre todo en la semana del pago.[2] En los datos de Mizuho, los hogares con poca liquidez gastaron casi el 60 % del pago. Lo que contaba no era el total de activos financieros, sino el saldo de las cuentas de depósito ordinarias: los hogares «ricos que viven al día», con acciones o seguros pero poco en sus cuentas ordinarias, también gastaron mucho.[4]"
+          ],
+          [
+            "p",
+            "En cuanto a los ingresos, los estudios no coinciden. La Oficina del Gabinete encontró que los hogares del tercio inferior por ingreso equivalente (el ingreso ajustado al tamaño del hogar) gastaron alrededor del 32 % del pago, sin un efecto claro en los tercios medio y superior.[7] Los datos de Money Forward también muestran una respuesta mayor en la cuarta parte de los hogares con menos ingresos.[2] Los datos de Mizuho, en cambio, casi no muestran diferencias por ingresos; allí la diferencia estuvo en los hogares cuyos ingresos habían caído más de la mitad respecto al año anterior (54 %).[4]"
+          ],
+          [
+            "p",
+            "Sobre la edad y el tipo de hogar, los datos de Money Forward dan algunas pistas. Cuanto mayor era el cabeza de familia, mayor era la respuesta; las personas que vivían solas respondieron menos que otros hogares, y los hogares de personas casadas más que los de personas solteras. Tener hijos apenas cambiaba nada.[2] Pero los usuarios de apps de finanzas personales tienden a ser jóvenes y de Tokio, y entre ellos hay pocas mujeres (en parte, sugieren los autores, porque el pago iba al cabeza de familia), así que los hogares de más edad apenas se ven en estos datos.[2][7]"
+          ],
+          [
+            "h",
+            "¿Adónde fue el dinero que no se gastó?"
+          ],
+          [
+            "p",
+            "Algunas encuestas se lo preguntaron directamente a la gente. En junio de 2020, el NLI Research Institute preguntó a 2.062 personas de 20 a 69 años en qué lo habían usado (se permitía más de una respuesta). «Cubrir gastos de la vida diaria» quedó en primer lugar con el 53,7 %, seguido de «ahorro» con el 26,1 %, «viajes nacionales» con el 10,1 %, «comprar electrodomésticos» y «comprar mascarillas y otros productos de higiene» con el 9,7 % cada uno, «comer fuera» con el 9,0 % y «educación de los hijos» con el 7,0 %. Solo el 9,7 % dijo haberlo ahorrado todo. Sin embargo, la encuesta no preguntaba por cantidades, y la investigadora, Naoko Kuga, señala que, medido en yenes, puede que se quedara más en el ahorro.[8]"
+          ],
+          [
+            "p",
+            "¿Por qué guardarlo? En la misma encuesta, quienes eligieron el ahorro tendían más que la media a preocuparse por perder ingresos o el empleo. Kuga lo interpreta como un ahorro deliberado por inquietud, más que como no tener en qué gastar durante el periodo de quedarse en casa.[9] La Oficina del Gabinete también dice que la parte que no se gastó enseguida probablemente se acumuló como «exceso de ahorro», favorecido por las restricciones para salir, y que se espera que se vaya usando más adelante y sostenga el consumo.[7]"
+          ],
+          [
+            "o",
+            "Es demasiado pronto para decir que el dinero se desperdició porque se ahorró. Cubrir los gastos de la vida diaria ya es gastar. Y 100.000 yenes guardados cuando nadie sabía lo que venía fueron una especie de red de seguridad para el hogar. Reactivar la economía y sostener la vida de las personas son cosas que hay que medir con varas distintas. El propio informe de la Oficina del Gabinete dice que el programa no tenía necesariamente como objetivo directo estimular el consumo.[7]"
+          ],
+          [
+            "h",
+            "Un pago único de 100.000 yenes y la renta básica"
+          ],
+          [
+            "p",
+            "La Red Mundial de Renta Básica (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todos de forma individual, sin comprobación de recursos ni exigencia de trabajo», y enumera cinco características: periódica, en efectivo, individual, universal e incondicional.[10] Es la misma vara de medir que usamos en {el ensayo sobre los 10.000 bahts de Tailandia|/essays/thailand-digital-wallet/}. Pasemos los 100.000 yenes por ella punto por punto."
+          ],
+          [
+            "p",
+            "¿Universal? Casi, sí. Tenía derecho toda persona inscrita en el registro de residentes, incluidos los residentes extranjeros."
+          ],
+          [
+            "p",
+            "¿Incondicional? Sí. No hubo comprobación de recursos ni exigencia de trabajo."
+          ],
+          [
+            "p",
+            "¿En efectivo? Sí. Se podía gastar en cualquier cosa."
+          ],
+          [
+            "p",
+            "¿Periódica? No. Se pagó una sola vez."
+          ],
+          [
+            "p",
+            "¿Individual? En sentido estricto, no. El cabeza de familia lo solicitaba por toda la familia, y el dinero iba a la cuenta del cabeza de familia.[1][4] Las personas que habían huido de la violencia doméstica podían, si lo comunicaban, recibir su parte y la de los familiares que estaban con ellas del municipio al que habían huido, en lugar del de su registro.[11]"
+          ],
+          [
+            "o",
+            "Se cumplen tres de cinco y fallan dos. Y para pensar en la renta básica, la que importa es «periódica». Como también explica el informe de la Oficina del Gabinete, una idea de la economía es que las personas reparten un ingreso extra temporal a lo largo del resto de su vida.[7] Con un pago único de 100.000 yenes, guardarlo ante un futuro incierto es lo más natural. Un dinero que llega con seguridad cada mes es algo sobre lo que se puede construir la vida. Lo que midieron los datos de 2020 fue cómo responde la gente a un dinero que llega una vez, en plena pandemia, no cómo vive con un dinero que sigue llegando."
+          ],
+          [
+            "o",
+            "Así que el hecho de que buena parte de los 100.000 yenes no se gastara enseguida no demuestra que una renta básica se fuera a ahorrar sin más. Y el hecho de que los 100.000 yenes ayudaran a mucha gente a salir adelante tampoco demuestra que una renta básica vaya a funcionar. Las dos cosas responden a otra pregunta."
+          ],
+          [
+            "p",
+            "Un pago único tiene sus propias ventajas. {El estudio de GiveDirectly en Kenia|/timeline/#tl-kenya} compara un grupo que cobra cada mes durante 12 años, un grupo que cobra cada mes durante dos años y un grupo que cobra una sola suma, y los primeros resultados, de 2023, mostraron que al grupo de la suma única le iba mejor en muchos indicadores económicos."
+          ],
+          [
+            "p",
+            "Nuestra cronología también recoge programas que pagan una y otra vez. El {Dividendo del Fondo Permanente de Alaska|/timeline/#tl-alaska} paga cada año desde 1982, y {Enra, de las Islas Marshall|/timeline/#tl-marshall-islands}, paga unos 200 $ cada trimestre desde noviembre de 2025. {El piloto de renta básica rural de Corea del Sur|/timeline/#tl-korea-rural} paga 150.000 wones al mes en vales de comercio local a los ciudadanos que viven en los condados seleccionados en 2026–2027 (BIEN dice que esta forma no cumple su definición)."
+          ],
+          [
+            "h",
+            "100.000 yenes una vez, o 30.000 yenes al mes"
+          ],
+          [
+            "p",
+            "Comparemos también los tamaños. Con {la calculadora de renta básica|/calc/?c=jp&w=all&m=30000}, pagar 30.000 yenes al mes a todas las personas de la población actual de Japón (unos 122,81 millones) supone unos 44,2 billones de yenes al año, alrededor del 6,7 % del PIB. Los cerca de 12,7 billones de yenes pagados en 2020 equivalen a unos tres meses y medio de eso."
+          ],
+          [
+            "o",
+            "30.000 yenes al mes no dan para vivir. Aun así, 44 billones de yenes al año son más del triple de lo que se pagó una sola vez en 2020. Los 100.000 yenes demostraron que el Estado puede montar una forma de pagar a todo el mundo. Hacerlo cada mes, en cambio, exige un debate completamente distinto sobre de dónde sale el dinero."
+          ],
+          [
+            "h",
+            "Lo que dejaron los 100.000 yenes"
+          ],
+          [
+            "o",
+            "El pago de 2020 fue una gran experiencia: la misma cantidad de efectivo, sin condiciones, para casi todas las personas que vivían en Japón. Y gracias a que no llegó a todos a la vez, ahora sabemos por los datos cuánto se gastó y qué hogares lo gastaron. Los hogares con poco dinero a mano gastan rápido; en tiempos de inquietud, la gente se aferra al dinero; cuando las cuentas bancarias y el registro de residentes no están vinculados, los pagos tardan en llegar. Todo esto son lecciones para la próxima vez que se pague algo."
+          ],
+          [
+            "o",
+            "Pero no fue un experimento de renta básica. Fue un dinero pagado una vez, en la cuenta del cabeza de familia, en plena pandemia. No responde a la pregunta de cómo cambian el trabajo y la vida de las personas cuando el dinero llega con seguridad cada mes. Para eso hay que seguir mirando los programas que pagan una y otra vez."
+          ],
+          [
+            "o",
+            "Preferimos no recordar los 100.000 yenes como «dinero desperdiciado», ni como «un ensayo general de la renta básica», sino por su nombre: un pago de emergencia único para todos. Eso solo ya fue un acontecimiento bastante grande."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Zwischen Frühjahr und Sommer 2020 bekam fast jeder, der in Japan lebte, 100.000 Yen. Das Programm hieß Sonderzahlung (tokubetsu teigaku kyūfukin), und insgesamt wurden rund 12,67 Billionen Yen ausgezahlt. Was haben die Menschen damit gemacht? Die einen sagen, das Geld sei vor allem auf Sparkonten gelandet; die anderen, es habe Haushalte über Wasser gehalten."
+          ],
+          [
+            "p",
+            "Diese Frage lässt sich zu einem guten Teil mit Daten beantworten. Wir haben die Studien gelesen, die Bankkonto- und Haushaltsbuch-App-Daten ausgewertet haben, dazu die Analyse der Regierung selbst, um zu sehen, wie viel ausgegeben wurde, wann und von welchen Haushalten. Dann trennen wir, was diese Erfahrung über das Grundeinkommen sagt und was nicht."
+          ],
+          [
+            "h",
+            "Wie die 100.000 Yen gezahlt wurden"
+          ],
+          [
+            "p",
+            "Anspruch hatte jeder, der am 27. April 2020 im Melderegister (Basic Resident Register) eingetragen war, ausländische Einwohner eingeschlossen: 100.000 Yen pro Person. Empfangsberechtigt war das Haushaltsoberhaupt des Haushalts, zu dem die Person gehörte. Die Haushaltsoberhäupter schickten entweder das Formular, das ihnen ihre Gemeinde zugesandt hatte, mit ihren Kontodaten zurück oder beantragten online über Mynaportal, und das Geld ging grundsätzlich auf ein Konto auf den Namen des Antragstellers. Das Programm war mit 12.880,293 Milliarden Yen veranschlagt (12.734,414 Milliarden für die Zahlungen und 145,879 Milliarden für die Verwaltung), vollständig vom Staat getragen.[1]"
+          ],
+          [
+            "p",
+            "Der erste Plan sah anders aus. Zunächst schlug die Regierung 300.000 Yen pro Haushalt für Haushalte vor, deren Einkommen wegen COVID-19 stark gesunken war; am 16. April 2020 schwenkte sie auf 100.000 Yen für jede Person um.[2]"
+          ],
+          [
+            "p",
+            "Die Auszahlungen begannen im Mai. Bis zum 26. Juni waren rund 9,12 Billionen Yen (71,6 %) ausgezahlt, bis zum 31. Juli rund 12,32 Billionen. Am Ende waren es rund 12,67 Billionen Yen, 99,7 % dessen, was die Gemeinden auszuzahlen geplant hatten: Fast alle Berechtigten wurden erreicht.[3]"
+          ],
+          [
+            "p",
+            "Wann das Geld ankam, hing aber stark vom Wohnort ab. In Japan sind Bankkonten nicht mit dem Melderegister verknüpft, also mussten die Gemeinden die Kontonummern einzeln einsammeln und prüfen.[2] Selbst innerhalb Tokios hatten im Bezirk Nerima bis zum 30. Juni 85 % der Antragsteller ihr Geld, im Bezirk Edogawa 34,5 %.[4]"
+          ],
+          [
+            "p",
+            "Diese Verzögerungen erwiesen sich als Geschenk für die Forschung. Wenn in derselben Woche manche Haushalte schon bezahlt sind und andere noch nicht, lässt sich durch den Vergleich die Wirkung der Zahlung selbst von der Ausbreitung des Virus und den Aufrufen, zu Hause zu bleiben, trennen. Alle folgenden Studien nutzen dieses „natürliche Experiment“.[2][4]"
+          ],
+          [
+            "h",
+            "Wie viel wurde ausgegeben?"
+          ],
+          [
+            "p",
+            "So Kubota, Koichiro Onishi und Yuta Toyama von der Waseda-Universität untersuchten rund 2,8 Millionen Konten bei der Mizuho Bank. Die Ausgaben sprangen in der Woche, in der das Geld ankam, nach oben und blieben mehr als einen Monat lang etwas höher. Innerhalb von sechs Wochen entsprachen die Abflüsse von den Konten 49 % der Zahlung; zählt man nur Barabhebungen, 31 %. Weil diese Abflüsse Überweisungen und Lastschriften enthalten, stellen die Autoren den Wert als Obergrenze der Ausgaben dar.[4]"
+          ],
+          [
+            "p",
+            "Michiru Kaneda, So Kubota und Satoshi Tanaka nutzten Daten von 232.589 Nutzern der Haushaltsbuch-App Money Forward ME. Innerhalb von sechs Wochen wurden nach ihrer Basisdefinition 16 % der Zahlung ausgegeben: 6 % eng gezählt und 27 % weit gezählt.[2][5]"
+          ],
+          [
+            "p",
+            "Takahiro Hattori und Kollegen nutzten die städtischen Zahlen der staatlichen Einkommens- und Verbrauchsstichprobe (Family Income and Expenditure Survey) und schätzten, dass im Monat der Auszahlung rund 10 % ausgegeben wurden. Die Ausgaben für Dinge, die man von zu Hause aus oder in Läden kauft, stiegen; die für persönliche Dienstleistungen nicht.[6]"
+          ],
+          [
+            "p",
+            "2023 wertete das Kabinettsbüro Daten einer anderen Haushaltsbuch-App, Moneytree, über 16 Wochen aus, von fünf Wochen vor bis zehn Wochen nach der Auszahlung, und schätzte, dass rund 22 % der Zahlung ausgegeben wurden. Eine Gegenprobe mit den Einzeldaten der Haushaltsbefragung ergab rund 17 % über etwa 16 Wochen, also ungefähr dasselbe.[7]"
+          ],
+          [
+            "o",
+            "Die Zahlen reichen von 6 % bis 49 %. Sie hängen davon ab, was als Ausgabe zählt (ob abgehobenes Bargeld als ausgegeben gilt, ob Überweisungen mitgezählt werden) und wie viele Wochen gemessen werden. Aber sie zeigen in dieselbe Richtung. In den Wochen und Monaten nach dem Eingang des Geldes fanden Studien, die Ausgaben eng zählen, zwischen einem Zehntel und knapp 30 % ausgegeben, und selbst die, die jeden Abfluss zählen, rund die Hälfte. Der Rest wurde zumindest nicht sofort ausgegeben."
+          ],
+          [
+            "p",
+            "Das ist womöglich keine reine Pandemiezahl. Laut dem Bericht des Kabinettsbüros erhöhten die regionalen Förder-Gutscheine von 1999 die Ausgaben um rund 32 % des ausgegebenen Betrags und die Pauschalzahlung von 2009 um rund 33 % laut einer Umfrage, oder um rund 25 % vom Monat vor dem Erhalt bis zwei Monate danach laut einer Auswertung der Haushaltsbefragung.[7] Auch Hattori und Kollegen schreiben, ihre rund 10 % unterschieden sich nicht von Schätzungen aus der Zeit vor der Pandemie.[6]"
+          ],
+          [
+            "h",
+            "Wer hat es ausgegeben?"
+          ],
+          [
+            "p",
+            "Das klarste Ergebnis aller Studien: Haushalte mit wenig verfügbarem Geld gaben einen größeren Teil der Zahlung aus. In den Money-Forward-Daten reagierten Haushalte, deren liquides Vermögen kleiner war als ihr Monatseinkommen (19 % der Nutzer), stark, vor allem in der Woche der Auszahlung.[2] In den Mizuho-Daten gaben Haushalte mit wenig liquiden Mitteln fast 60 % der Zahlung aus. Entscheidend war nicht das gesamte Geldvermögen, sondern das Guthaben auf den gewöhnlichen Girokonten: Auch „wohlhabende Von-der-Hand-in-den-Mund“-Haushalte, mit Aktien oder Versicherungen, aber wenig auf den gewöhnlichen Konten, gaben viel aus.[4]"
+          ],
+          [
+            "p",
+            "Beim Einkommen sind sich die Studien nicht einig. Das Kabinettsbüro fand, dass Haushalte im untersten Drittel nach Äquivalenzeinkommen (dem an die Haushaltsgröße angepassten Einkommen) rund 32 % der Zahlung ausgaben, ohne klaren Effekt im mittleren und oberen Drittel.[7] Auch die Money-Forward-Daten zeigen eine stärkere Reaktion im Viertel der Haushalte mit den niedrigsten Einkommen.[2] Die Mizuho-Daten dagegen zeigen kaum Unterschiede nach Einkommen; der Unterschied lag dort bei Haushalten, deren Einkommen gegenüber dem Vorjahr um mehr als die Hälfte gesunken war (54 %).[4]"
+          ],
+          [
+            "p",
+            "Zu Alter und Haushaltsform geben die Money-Forward-Daten einige Hinweise. Je älter das Haushaltsoberhaupt, desto stärker die Reaktion; Alleinlebende reagierten schwächer als andere Haushalte, Verheiratete stärker als Alleinstehende. Kinder machten kaum einen Unterschied.[2] Nutzer von Haushaltsbuch-Apps sind aber eher jung und eher in Tokio, und unter ihnen sind wenige Frauen (teils, so vermuten die Autoren, weil die Zahlung an das Haushaltsoberhaupt ging), sodass ältere Haushalte in diesen Daten schwer zu erkennen sind.[2][7]"
+          ],
+          [
+            "h",
+            "Wohin ging das nicht ausgegebene Geld?"
+          ],
+          [
+            "p",
+            "Manche Umfragen haben die Menschen einfach gefragt. Im Juni 2020 fragte das NLI Research Institute 2.062 Menschen zwischen 20 und 69 Jahren, wofür sie das Geld verwendet hatten (Mehrfachnennungen möglich). „Lebenshaltungskosten decken“ lag mit 53,7 % vorn, gefolgt von „Sparen“ mit 26,1 %, „Reisen im Inland“ mit 10,1 %, „Haushaltsgeräte kaufen“ und „Masken und andere Hygieneartikel kaufen“ mit je 9,7 %, „Essen gehen“ mit 9,0 % und „Bildung der Kinder“ mit 7,0 %. Nur 9,7 % sagten, sie hätten alles gespart. Nach Beträgen fragte die Umfrage allerdings nicht, und die Forscherin Naoko Kuga merkt an, dass in Yen gemessen mehr im Ersparten geblieben sein könnte.[8]"
+          ],
+          [
+            "p",
+            "Warum behalten? In derselben Umfrage machten sich Menschen, die Sparen angaben, häufiger als der Durchschnitt Sorgen, Einkommen oder Arbeitsplatz zu verlieren. Kuga deutet das als bewusstes Sparen aus Sorge, nicht als Mangel an Gelegenheiten zum Ausgeben während der Zeit zu Hause.[9] Auch das Kabinettsbüro schreibt, der nicht sofort ausgegebene Teil habe sich, begünstigt durch die Ausgangsbeschränkungen, wahrscheinlich als „Überschussersparnis“ angesammelt und werde voraussichtlich später abgebaut und den Konsum stützen.[7]"
+          ],
+          [
+            "o",
+            "Es ist zu früh, das Geld als verschwendet abzutun, weil es gespart wurde. Lebenshaltungskosten zu decken ist selbst schon Ausgeben. Und 100.000 Yen auf der hohen Kante, als niemand wusste, was kommt, waren für einen Haushalt eine Art Sicherheitsnetz. Die Wirtschaft anzukurbeln und das Leben der Menschen zu stützen, muss man mit verschiedenen Maßstäben messen. Der Bericht des Kabinettsbüros selbst sagt, das Programm habe nicht unbedingt die Ankurbelung des Konsums als direktes Ziel gehabt.[7]"
+          ],
+          [
+            "h",
+            "Einmalige 100.000 Yen und das Grundeinkommen"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitspflicht“, und nennt fünf Merkmale: regelmäßig, Geld, individuell, universell und bedingungslos.[10] Es ist derselbe Maßstab wie im {Essay über Thailands 10.000 Baht|/essays/thailand-digital-wallet/}. Prüfen wir die 100.000 Yen Punkt für Punkt."
+          ],
+          [
+            "p",
+            "Universell? Fast, ja. Anspruch hatte jeder im Melderegister, ausländische Einwohner eingeschlossen."
+          ],
+          [
+            "p",
+            "Bedingungslos? Ja. Es gab keine Bedürftigkeitsprüfung und keine Arbeitspflicht."
+          ],
+          [
+            "p",
+            "Geld? Ja. Es ließ sich für alles ausgeben."
+          ],
+          [
+            "p",
+            "Regelmäßig? Nein. Es wurde einmal gezahlt."
+          ],
+          [
+            "p",
+            "Individuell? Streng genommen nein. Das Haushaltsoberhaupt beantragte für die ganze Familie, und das Geld ging auf das Konto des Haushaltsoberhaupts.[1][4] Wer vor häuslicher Gewalt geflohen war, konnte, wenn er sich meldete, seinen eigenen Anteil und den der mitgekommenen Familienmitglieder von der Gemeinde erhalten, in die er geflohen war, statt von der, in der er gemeldet war.[11]"
+          ],
+          [
+            "o",
+            "Drei von fünf erfüllt, zwei nicht. Und wenn man über das Grundeinkommen nachdenkt, kommt es auf „regelmäßig“ an. Wie auch der Bericht des Kabinettsbüros erklärt, gibt es in der Ökonomie die Vorstellung, dass Menschen einen vorübergehenden Geldsegen auf ihr restliches Leben verteilen.[7] Bei einmaligen 100.000 Yen ist es nur natürlich, sie für eine ungewisse Zukunft zurückzulegen. Geld, das sicher jeden Monat kommt, ist etwas, worauf Menschen ihr Leben aufbauen können. Gemessen haben die Daten von 2020, wie Menschen auf Geld reagieren, das einmal kommt, mitten in einer Pandemie, nicht, wie sie mit Geld leben, das immer wieder kommt."
+          ],
+          [
+            "o",
+            "Dass ein großer Teil der 100.000 Yen nicht sofort ausgegeben wurde, ist also kein Beleg dafür, dass ein Grundeinkommen einfach gespart würde. Und dass die 100.000 Yen vielen Menschen über die Runden halfen, ist auch kein Beleg dafür, dass ein Grundeinkommen funktionieren würde. Beides beantwortet eine andere Frage."
+          ],
+          [
+            "p",
+            "Eine Einmalzahlung hat ihre eigenen Stärken. {Die Studie von GiveDirectly in Kenia|/timeline/#tl-kenya} vergleicht eine Gruppe, die 12 Jahre lang monatlich Geld bekommt, eine Gruppe, die zwei Jahre lang monatlich Geld bekommt, und eine Gruppe, die eine einmalige Summe bekommt, und erste Ergebnisse von 2023 zeigten, dass die Gruppe mit der einmaligen Summe bei vielen wirtschaftlichen Kennzahlen besser abschnitt."
+          ],
+          [
+            "p",
+            "Unsere Zeitleiste enthält auch Programme, die immer wieder zahlen. Die {Alaska Permanent Fund Dividend|/timeline/#tl-alaska} zahlt seit 1982 jedes Jahr, und {Enra auf den Marshallinseln|/timeline/#tl-marshall-islands} zahlt seit November 2025 rund 200 $ pro Quartal. {Südkoreas Pilotprojekt für ein ländliches Grundeinkommen|/timeline/#tl-korea-rural} zahlt 2026–2027 Staatsbürgern, die in ausgewählten Landkreisen leben, 150.000 Won im Monat in lokalen Gutscheinen (laut BIEN erfüllt diese Form seine Definition nicht)."
+          ],
+          [
+            "h",
+            "100.000 Yen einmal oder 30.000 Yen im Monat"
+          ],
+          [
+            "p",
+            "Vergleichen wir auch die Größenordnungen. Mit {dem Grundeinkommensrechner|/calc/?c=jp&w=all&m=30000} kommt man, wenn alle Menschen in Japans heutiger Bevölkerung (rund 122,81 Millionen) 30.000 Yen im Monat bekommen, auf rund 44,2 Billionen Yen im Jahr, etwa 6,7 % des BIP. Die rund 12,7 Billionen Yen von 2020 entsprechen davon etwa dreieinhalb Monaten."
+          ],
+          [
+            "o",
+            "30.000 Yen im Monat reichen nicht zum Leben. Trotzdem sind 44 Billionen Yen im Jahr mehr als das Dreifache dessen, was 2020 einmal ausgezahlt wurde. Die 100.000 Yen haben gezeigt, dass der Staat einen Weg schaffen kann, allen Geld zu zahlen. Das jeden Monat zu tun, verlangt aber eine ganz andere Debatte darüber, woher das Geld kommt."
+          ],
+          [
+            "h",
+            "Was die 100.000 Yen hinterlassen haben"
+          ],
+          [
+            "o",
+            "Die Zahlung von 2020 war eine große Erfahrung: derselbe Betrag in bar, ohne Bedingungen, für fast alle, die in Japan lebten. Und dank der ungleichen Auszahlungszeitpunkte wissen wir jetzt aus Daten, wie viel ausgegeben wurde und welche Haushalte es ausgaben. Haushalte mit wenig verfügbarem Geld geben schnell aus; in unsicheren Zeiten halten Menschen ihr Geld fest; wenn Bankkonten und Melderegister nicht verknüpft sind, dauert es, bis Zahlungen ankommen. All das sind Lehren für das nächste Mal, wenn etwas ausgezahlt wird."
+          ],
+          [
+            "o",
+            "Ein Grundeinkommensexperiment war es aber nicht. Es war Geld, das einmal gezahlt wurde, auf das Konto des Haushaltsoberhaupts, mitten in einer Pandemie. Es beantwortet nicht die Frage, wie sich Arbeit und Leben der Menschen verändern, wenn sicher jeden Monat Geld kommt. Dafür müssen wir weiter auf Programme schauen, die immer wieder zahlen."
+          ],
+          [
+            "o",
+            "Wir möchten die 100.000 Yen lieber weder als „verschwendet“ noch als „Generalprobe für das Grundeinkommen“ in Erinnerung behalten, sondern unter ihrem richtigen Namen: eine einmalige Notzahlung an alle. Schon das war ein großes Ereignis."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "بين ربيع 2020 وصيفه، حصل كل من يعيش في اليابان تقريبًا على 100,000 ين. سُمّيت الدفعة النقدية الخاصة (⁦tokubetsu teigaku kyūfukin⁩)، وصُرف منها نحو 12.67 تريليون ين إجمالًا. فماذا فعل الناس بها؟ يقول بعضهم إن معظمها انتهى في حسابات الادخار، ويقول آخرون إنها أبقت الأسر صامدة."
+          ],
+          [
+            "p",
+            "يمكن الإجابة عن هذا السؤال بالبيانات إلى حد معقول. قرأنا الدراسات التي استخدمت سجلات الحسابات المصرفية وتطبيقات الميزانية المنزلية، إلى جانب تحليل الحكومة نفسها، لنرى كم أُنفق، ومتى، وفي أي الأسر. ثم نفصل ما تخبرنا به هذه التجربة عن الدخل الأساسي عمّا لا تخبرنا به."
+          ],
+          [
+            "h",
+            "كيف دُفعت الـ100,000 ين"
+          ],
+          [
+            "p",
+            "كان لكل شخص مسجل في سجل السكان الأساسي في 27 أبريل 2020 الحق في 100,000 ين، بمن فيهم المقيمون الأجانب. وكان صاحب الحق في الاستلام رب الأسرة التي ينتمي إليها الشخص. فإما أن يعيد رب الأسرة بالبريد الاستمارة التي أرسلتها إليه البلدية مع بيانات حسابه المصرفي، وإما أن يقدّم الطلب عبر الإنترنت من خلال ⁦Mynaportal⁩، وكان المال يُحوَّل من حيث المبدأ إلى حساب باسم مقدّم الطلب نفسه. وخُصص للبرنامج 12,880.293 مليار ين (12,734.414 مليار ين للدفعات و145.879 مليار ين للإدارة)، تحملتها الحكومة الوطنية كلها.[1]"
+          ],
+          [
+            "p",
+            "كانت الخطة الأولى مختلفة. فقد اقترحت الحكومة في البداية 300,000 ين لكل أسرة للأسر التي انخفض دخلها بشدة بسبب كوفيد-19، ثم تحولت في 16 أبريل 2020 إلى 100,000 ين لكل شخص.[2]"
+          ],
+          [
+            "p",
+            "بدأ الصرف في مايو. وبحلول 26 يونيو كان قد دُفع نحو 9.12 تريليون ين (71.6%)، وبحلول 31 يوليو نحو 12.32 تريليون ين. وبلغ المجموع النهائي نحو 12.67 تريليون ين، أي 99.7% من المبلغ الذي خططت البلديات لدفعه: وصلت الدفعة إلى كل المستحقين تقريبًا.[3]"
+          ],
+          [
+            "p",
+            "لكن موعد وصولها كان يتوقف كثيرًا على مكان السكن. ففي اليابان لا ترتبط الحسابات المصرفية بسجلات السكان، فاضطرت البلديات إلى جمع أرقام الحسابات والتحقق منها واحدًا واحدًا.[2] وحتى داخل طوكيو، كان 85% من مقدمي الطلبات في حي نيريما قد تسلّموا المال بحلول 30 يونيو، مقابل 34.5% في حي إيدوغاوا.[4]"
+          ],
+          [
+            "p",
+            "تبيّن أن هذا التأخير هديةٌ للباحثين. فإذا كانت بعض الأسر قد تسلّمت المال في الأسبوع نفسه وأخرى لم تتسلّمه بعد، فإن المقارنة بينها تفصل أثر الدفعة نفسها عن أثر انتشار الفيروس وطلبات البقاء في المنزل. وكل الدراسات التالية تستخدم هذه «التجربة الطبيعية».[2][4]"
+          ],
+          [
+            "h",
+            "كم أُنفق؟"
+          ],
+          [
+            "p",
+            "درس سو كوبوتا وكويتشيرو أونيشي ويوتا توياما من جامعة واسيدا نحو 2.8 مليون حساب في بنك ميزوهو. قفز الإنفاق في الأسبوع الذي وصل فيه المال، وبقي مرتفعًا بعض الشيء لأكثر من شهر. وخلال ستة أسابيع، عادلت الأموال الخارجة من الحسابات 49% من الدفعة، و31% إذا احتُسبت السحوبات النقدية وحدها. ولأن هذه الأموال الخارجة تشمل التحويلات والخصم المباشر، يقدّمها المؤلفون بوصفها حدًا أعلى للإنفاق.[4]"
+          ],
+          [
+            "p",
+            "واستخدم ميتشيرو كانيدا وسو كوبوتا وساتوشي تاناكا بيانات 232,589 مستخدمًا لتطبيق الميزانية المنزلية ⁦Money Forward ME⁩. وخلال ستة أسابيع، أُنفق 16% من الدفعة وفق تعريفهم الأساسي: 6% بالاحتساب الضيق و27% بالاحتساب الواسع.[2][5]"
+          ],
+          [
+            "p",
+            "واستخدم تاكاهيرو هاتوري وزملاؤه أرقام المدن في مسح دخل الأسر ونفقاتها الحكومي، وقدّروا أن نحو 10% أُنفق في الشهر الذي وصلت فيه الدفعة. وارتفع الإنفاق على ما يُشترى للمنزل وفي المتاجر، ولم يرتفع الإنفاق على الخدمات التي تتطلب لقاءً وجهًا لوجه.[6]"
+          ],
+          [
+            "p",
+            "وفي 2023 نظر مكتب مجلس الوزراء في بيانات تطبيق آخر للميزانية المنزلية، ⁦Moneytree⁩، على مدى 16 أسبوعًا من خمسة أسابيع قبل الدفع إلى عشرة أسابيع بعده، وقدّر أن نحو 22% من الدفعة أُنفق. وأعطى التحقق بالسجلات الفردية لمسح الأسر نحو 17% على مدى 16 أسبوعًا تقريبًا، وهي نتيجة متقاربة في مجملها.[7]"
+          ],
+          [
+            "o",
+            "تتراوح الأرقام بين 6% و49%. وهي تتوقف على ما يُعدّ إنفاقًا (هل يُفترض أن النقد المسحوب أُنفق، وهل تدخل التحويلات) وعلى عدد الأسابيع المقيسة. لكنها تشير إلى الاتجاه نفسه. ففي الأسابيع والأشهر التي تلت وصول المال، وجدت الدراسات التي تحتسب الإنفاق احتسابًا ضيقًا أن ما بين العُشر وأقل بقليل من 30% أُنفق، وحتى الدراسات التي تحتسب كل الأموال الخارجة وجدت نحو النصف. أما الباقي فلم يُنفق فورًا على الأقل."
+          ],
+          [
+            "p",
+            "وقد لا يكون هذا رقمًا خاصًا بالجائحة. فبحسب تقرير مكتب مجلس الوزراء، رفعت قسائم تنشيط المناطق لعام 1999 الإنفاق بنحو 32% من المبلغ الممنوح، ورفعته المنحة ثابتة المبلغ لعام 2009 بنحو 33% وفق استطلاع، أو بنحو 25% من الشهر السابق للاستلام إلى الشهر الثاني بعده وفق تحليل لمسح الأسر.[7] ويكتب هاتوري وزملاؤه أيضًا أن نسبتهم البالغة نحو 10% لا تختلف عن التقديرات التي سبقت الجائحة.[6]"
+          ],
+          [
+            "h",
+            "من أنفقها؟"
+          ],
+          [
+            "p",
+            "أوضح نتيجة في كل الدراسات هي أن الأسر التي لديها قليل من المال في متناولها أنفقت جزءًا أكبر من الدفعة. ففي بيانات ⁦Money Forward⁩، استجابت بقوة الأسر التي كانت أصولها السائلة أقل من دخلها الشهري (19% من المستخدمين)، ولا سيما في أسبوع الدفع.[2] وفي بيانات ميزوهو، أنفقت الأسر التي تعاني نقصًا في السيولة نحو 60% من الدفعة. ولم يكن المهم مجموع الأصول المالية، بل الرصيد في حسابات الودائع العادية: فالأسر «الثرية التي تعيش من اليد إلى الفم»، التي تملك أسهمًا أو تأمينًا لكن رصيدها قليل في حساباتها العادية، أنفقت كثيرًا أيضًا.[4]"
+          ],
+          [
+            "p",
+            "أما في الدخل، فالدراسات مختلفة. وجد مكتب مجلس الوزراء أن الأسر في الثلث الأدنى من حيث الدخل المكافئ (الدخل المعدّل بحسب حجم الأسرة) أنفقت نحو 32% من الدفعة، دون أثر واضح للثلثين الأوسط والأعلى.[7] وتُظهر بيانات ⁦Money Forward⁩ أيضًا استجابة أكبر لدى ربع الأسر الأقل دخلًا.[2] أما بيانات ميزوهو فلا تُظهر فرقًا يُذكر بحسب الدخل؛ وكان الفرق هناك لدى الأسر التي انخفض دخلها بأكثر من النصف عن العام السابق (54%).[4]"
+          ],
+          [
+            "p",
+            "وفي العمر ونوع الأسرة، تقدّم بيانات ⁦Money Forward⁩ بعض المؤشرات. فكلما كبر سن رب الأسرة كبرت الاستجابة؛ واستجاب من يعيشون وحدهم أقل من سائر الأسر، والأسر المتزوجة أكثر من غير المتزوجين. ولم يُحدث وجود الأطفال فرقًا يُذكر.[2] لكن مستخدمي تطبيقات الميزانية المنزلية يميلون إلى صغر السن وإلى طوكيو، وبينهم قليل من النساء (ويرجّح المؤلفون أن ذلك يعود جزئيًا إلى أن الدفعة ذهبت إلى أرباب الأسر)، لذا يصعب رؤية الأسر الأكبر سنًا في هذه البيانات.[2][7]"
+          ],
+          [
+            "h",
+            "أين ذهب المال الذي لم يُنفق؟"
+          ],
+          [
+            "p",
+            "سألت بعض الاستطلاعات الناس مباشرة. ففي يونيو 2020 سأل معهد ⁦NLI⁩ للأبحاث 2,062 شخصًا تتراوح أعمارهم بين 20 و69 عامًا فيمَ استخدموها (مع السماح بأكثر من إجابة). جاءت «تغطية نفقات المعيشة» أولًا بنسبة 53.7%، تلتها «الادخار» بنسبة 26.1%، ثم «السفر الداخلي» بنسبة 10.1%، و«شراء الأجهزة المنزلية» و«شراء الكمامات ومنتجات النظافة الأخرى» بنسبة 9.7% لكل منهما، و«الأكل خارج المنزل» بنسبة 9.0%، و«تعليم الأطفال» بنسبة 7.0%. ولم يقل إنه ادّخرها كلها إلا 9.7%. لكن الاستطلاع لم يسأل عن المبالغ، وتلاحظ الباحثة ناؤكو كوغا أنه إذا قيس الأمر بالين، فربما بقي في الادخار أكثر من ذلك.[8]"
+          ],
+          [
+            "p",
+            "لماذا احتفظوا بها؟ في الاستطلاع نفسه، كان من اختاروا الادخار أكثر من المتوسط قلقًا من فقدان الدخل أو العمل. وتقرأ كوغا ذلك على أنه ادخار مقصود بدافع القلق، لا لعدم وجود ما يُنفق عليه في فترة البقاء في المنزل.[9] ويقول مكتب مجلس الوزراء كذلك إن الجزء الذي لم يُنفق فورًا تراكم على الأرجح بوصفه «مدخرات فائضة»، بمساعدة القيود على الخروج، ويُتوقع أن يُسحب منه لاحقًا ليدعم الإنفاق.[7]"
+          ],
+          [
+            "o",
+            "من المبكر القول إن المال أُهدر لأنه ادُّخر. فتغطية نفقات المعيشة إنفاق في حد ذاتها. والـ100,000 ين المحفوظة جانبًا حين لم يكن أحد يرى ما هو آتٍ كانت نوعًا من شبكة الأمان للأسرة. وإنعاش الاقتصاد ودعم حياة الناس يجب أن يُقاسا بمقياسين مختلفين. ويقول تقرير مكتب مجلس الوزراء نفسه إن البرنامج لم يكن هدفه المباشر بالضرورة تحفيز الاستهلاك.[7]"
+          ],
+          [
+            "h",
+            "100,000 ين لمرة واحدة والدخل الأساسي"
+          ],
+          [
+            "p",
+            "تعرّف الشبكة العالمية للدخل الأساسي (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُسلَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو شرط للعمل»، وتذكر خمس سمات: دوري، ونقدي، وفردي، وشامل، وغير مشروط.[10] وهو المقياس نفسه الذي استخدمناه في {مقال الـ10,000 بات التايلاندية|/essays/thailand-digital-wallet/}. لنمرّر الـ100,000 ين على هذه المعايير واحدًا واحدًا."
+          ],
+          [
+            "p",
+            "شامل؟ تقريبًا، نعم. كان لكل مسجل في سجل السكان الحق فيه، بمن فيهم المقيمون الأجانب."
+          ],
+          [
+            "p",
+            "غير مشروط؟ نعم. لم يكن هناك اختبار للموارد ولا شرط للعمل."
+          ],
+          [
+            "p",
+            "نقدي؟ نعم. كان يمكن إنفاقه على أي شيء."
+          ],
+          [
+            "p",
+            "دوري؟ لا. دُفع مرة واحدة."
+          ],
+          [
+            "p",
+            "فردي؟ بالمعنى الدقيق، لا. قدّم رب الأسرة الطلب عن الأسرة كلها، وذهب المال إلى حساب رب الأسرة.[1][4] أما من فرّوا من العنف الأسري فكان بإمكانهم، إن تقدموا بطلب، أن يتسلّموا حصتهم وحصة أفراد الأسرة الذين معهم من البلدية التي فرّوا إليها، لا من البلدية المسجلين فيها.[11]"
+          ],
+          [
+            "o",
+            "ثلاثة من خمسة مستوفاة، واثنان لا. وبالنسبة إلى التفكير في الدخل الأساسي، فالمعيار المهم هو «دوري». وكما يشرح تقرير مكتب مجلس الوزراء أيضًا، ثمة فكرة في علم الاقتصاد مفادها أن الناس يوزعون المكسب المؤقت على بقية حياتهم.[7] ومع 100,000 ين لمرة واحدة، من الطبيعي تمامًا أن يُدّخر المال تحسبًا لمستقبل غير مؤكد. أما المال الذي يصل بالتأكيد كل شهر فيمكن للناس أن يبنوا حياتهم حوله. ما قاسته بيانات 2020 هو كيف يستجيب الناس لمال يصل مرة واحدة في خضم جائحة، لا كيف يعيشون مع مال يواصل الوصول."
+          ],
+          [
+            "o",
+            "لذلك فإن عدم إنفاق جزء كبير من الـ100,000 ين فورًا ليس دليلًا على أن الدخل الأساسي سيُدّخر فحسب. كما أن مساعدة الـ100,000 ين لكثير من الناس على تدبير أمورهم ليست دليلًا على أن الدخل الأساسي سينجح. فكلاهما يجيب عن سؤال آخر."
+          ],
+          [
+            "p",
+            "وللمبلغ المقطوع مزاياه الخاصة. فـ{دراسة ⁦GiveDirectly⁩ في كينيا|/timeline/#tl-kenya} تقارن بين مجموعة تتسلّم دفعات شهرية لمدة 12 عامًا، ومجموعة تتسلّم دفعات شهرية لمدة عامين، ومجموعة تتسلّم مبلغًا مقطوعًا واحدًا، ووجدت النتائج الأولية في 2023 أن مجموعة المبلغ المقطوع كانت أفضل حالًا في كثير من المقاييس الاقتصادية."
+          ],
+          [
+            "p",
+            "ويضم خطنا الزمني أيضًا برامج تدفع مرة بعد مرة. فـ{عائد صندوق ألاسكا الدائم|/timeline/#tl-alaska} يُدفع كل عام منذ 1982، و{برنامج ⁦Enra⁩ في جزر مارشال|/timeline/#tl-marshall-islands} يدفع نحو ⁦$200⁩ كل ربع سنة منذ نوفمبر 2025. أما {تجربة الدخل الأساسي الريفي في كوريا الجنوبية|/timeline/#tl-korea-rural} فتدفع 150,000 وون شهريًا في صورة قسائم شرائية محلية للمواطنين المقيمين في مقاطعات مختارة في 2026–2027 (وتقول ⁦BIEN⁩ إن هذه الصيغة لا تستوفي تعريفها)."
+          ],
+          [
+            "h",
+            "100,000 ين مرة واحدة، أو 30,000 ين شهريًا"
+          ],
+          [
+            "p",
+            "قارن الأحجام أيضًا. فبحسب {حاسبة الدخل الأساسي|/calc/?c=jp&w=all&m=30000}، يبلغ دفع 30,000 ين شهريًا لكل سكان اليابان الحاليين (نحو 122.81 مليون) نحو 44.2 تريليون ين في السنة، أي نحو 6.7% من الناتج المحلي الإجمالي. والـ12.7 تريليون ين تقريبًا التي دُفعت في 2020 تعادل نحو ثلاثة أشهر ونصف من ذلك."
+          ],
+          [
+            "o",
+            "30,000 ين شهريًا لا تكفي للعيش. ومع ذلك فإن 44 تريليون ين في السنة تزيد على ثلاثة أضعاف ما دُفع مرة واحدة في 2020. لقد أظهرت الـ100,000 ين أن الدولة تستطيع بناء طريقة للدفع للجميع. لكن فعل ذلك كل شهر يحتاج إلى نقاش مختلف تمامًا حول مصدر المال."
+          ],
+          [
+            "h",
+            "ما الذي تركته الـ100,000 ين"
+          ],
+          [
+            "o",
+            "كانت دفعة 2020 تجربة كبيرة: المبلغ النقدي نفسه، دون شروط، لكل من يعيش في اليابان تقريبًا. وبفضل تفاوت المواعيد، نعرف الآن من البيانات كم أُنفق وأي الأسر أنفقته. الأسر التي لديها قليل من المال في متناولها تنفق بسرعة؛ والناس في أوقات القلق يتمسكون بالمال؛ وحين لا ترتبط الحسابات المصرفية بسجلات السكان تتأخر الدفعات في الوصول. وكل هذه دروس للمرة القادمة التي يُصرف فيها شيء."
+          ],
+          [
+            "o",
+            "لكنها لم تكن تجربة دخل أساسي. كانت مالًا دُفع مرة واحدة، في حساب رب الأسرة، في خضم جائحة. وهي لا تجيب عن سؤال كيف يتغير عمل الناس وحياتهم حين يصل المال بالتأكيد كل شهر. ولهذا نحتاج إلى مواصلة النظر في البرامج التي تدفع مرة بعد مرة."
+          ],
+          [
+            "o",
+            "نفضّل ألا نتذكر الـ100,000 ين على أنها «مال مُهدر»، ولا على أنها «بروفة للدخل الأساسي»، بل باسمها الصحيح: دفعة طارئة لمرة واحدة للجميع. وهذا وحده كان حدثًا كبيرًا بما يكفي."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "総務省 (Ministry of Internal Affairs and Communications) — 特別定額給付金（新型コロナウイルス感染症緊急経済対策関連）",
+          "url": "https://www.soumu.go.jp/menu_seisaku/gyoumukanri_sonota/covid-19/kyufukin.html"
+        },
+        {
+          "n": 2,
+          "label": "Michiru Kaneda, So Kubota and Satoshi Tanaka — “Who spent their COVID-19 stimulus payment? Evidence from personal finance software in Japan”, The Japanese Economic Review 72, 409–437 (2021)",
+          "url": "https://doi.org/10.1007/s42973-021-00080-0"
+        },
+        {
+          "n": 3,
+          "label": "Ministry of Internal Affairs and Communications — Special Cash Payment: amounts paid to date (final figure as of 31 Mar 2021; PDF, in Japanese)",
+          "url": "https://www.soumu.go.jp/main_content/000715720.pdf"
+        },
+        {
+          "n": 4,
+          "label": "So Kubota, Koichiro Onishi and Yuta Toyama — “Consumption responses to COVID-19 payments: Evidence from a natural experiment and bank account data”, Journal of Economic Behavior & Organization 188, 1–17 (2021)",
+          "url": "https://doi.org/10.1016/j.jebo.2021.05.006"
+        },
+        {
+          "n": 5,
+          "label": "RIETI Special Report — Michiru Kaneda, So Kubota and Satoshi Tanaka, “The effect of the Special Cash Payment on household consumption during COVID-19: evidence from budgeting-app data” (17 May 2021, in Japanese)",
+          "url": "https://www.rieti.go.jp/jp/special/special_report/135.html"
+        },
+        {
+          "n": 6,
+          "label": "Takahiro Hattori, Norihiro Komura and Takashi Unayama — “Impact of Cash Transfers on Consumption during the COVID-19 Pandemic: Evidence from Japanese Special Cash Payments”, RIETI Discussion Paper 21-E-043 (2021)",
+          "url": "https://www.rieti.go.jp/en/publications/summary/21060001.html"
+        },
+        {
+          "n": 7,
+          "label": "Cabinet Office, Policy Issue Analysis Series 22 — “The effect of the Special Cash Payment on household consumption: an analysis of budgeting-app data recorded in real time” (16 Aug 2023, in Japanese)",
+          "url": "https://www5.cao.go.jp/keizai3/2023/08seisakukadai22-0.pdf"
+        },
+        {
+          "n": 8,
+          "label": "NLI Research Institute — Naoko Kuga, “How households with children used the cash payments” (12 Nov 2021, in Japanese; survey of 2,062 people aged 20–69, June 2020)",
+          "url": "https://www.nli-research.co.jp/files/topics/69350_ext_18_0.pdf?site=nli"
+        },
+        {
+          "n": 9,
+          "label": "NLI Research Institute — Naoko Kuga, “How the Special Cash Payment was used (2): saving out of economic anxiety, or for lack of places to go?” (17 Nov 2020, in Japanese)",
+          "url": "https://www.nli-research.co.jp/files/topics/66114_ext_18_0.pdf?site=nli"
+        },
+        {
+          "n": 10,
+          "label": "Basic Income Earth Network (BIEN) — About Basic Income",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 11,
+          "label": "Ministry of Internal Affairs and Communications — Special Cash Payment: arrangements for people who fled domestic violence and for children in care (summary, Apr 2020, in Japanese)",
+          "url": "https://www.soumu.go.jp/main_content/000715534.pdf"
+        }
+      ]
+    },
     {
       "id": "nesara-gesara-basic-income",
       "date": "2026-11-03",
@@ -12055,7 +13312,8 @@ module.exports = {
       "related": [
         "universal-high-income",
         "your-own-basic-income",
-        "nesara-gesara-basic-income"
+        "nesara-gesara-basic-income",
+        "japan-special-cash-payment"
       ],
       "title": {
         "ja": "「ベーシックインカム」と呼ばれたもの：タイの1万バーツはどうなったか",
@@ -12175,7 +13433,7 @@ module.exports = {
           ],
           [
             "o",
-            "10万円も、ベーシックインカムではありませんでした。それでも、タイの1万バーツよりはずっと近いところにいました。違いは、誰が受け取れたかと、使い道を誰が決めたかです。"
+            "10万円も、ベーシックインカムではありませんでした。それでも、タイの1万バーツよりはずっと近いところにいました。違いは、誰が受け取れたかと、使い道を誰が決めたかです。10万円が実際に何に使われたのかは、{特別定額給付金のエッセイ|/essays/japan-special-cash-payment/}で、研究のデータをもとにたどりました。"
           ],
           [
             "h",
@@ -12305,7 +13563,7 @@ module.exports = {
           ],
           [
             "o",
-            "The ¥100,000 was not basic income either. But it was far closer than Thailand’s 10,000 baht. The difference was who could receive it, and who decided how it was spent."
+            "The ¥100,000 was not basic income either. But it was far closer than Thailand’s 10,000 baht. The difference was who could receive it, and who decided how it was spent. What the ¥100,000 was actually spent on is traced, study by study, in {our essay on the Special Cash Payment|/essays/japan-special-cash-payment/}."
           ],
           [
             "h",
@@ -12435,7 +13693,7 @@ module.exports = {
           ],
           [
             "o",
-            "10 万日元同样不是基本收入。但它比泰国的 1 万泰铢接近得多。差别在于谁能领到，以及谁来决定怎么花。"
+            "10 万日元同样不是基本收入。但它比泰国的 1 万泰铢接近得多。差别在于谁能领到，以及谁来决定怎么花。这 10 万日元实际花在了哪里，我们在{关于特别定额给付金的随笔|/essays/japan-special-cash-payment/}里根据研究数据作了梳理。"
           ],
           [
             "h",
@@ -12565,7 +13823,7 @@ module.exports = {
           ],
           [
             "o",
-            "1,00,000 येन भी बेसिक इनकम नहीं था। लेकिन वह थाईलैंड के 10,000 बाट से कहीं ज़्यादा क़रीब था। फ़र्क़ इसमें था कि कौन पा सकता था, और ख़र्च कैसे हो, यह कौन तय करता था।"
+            "1,00,000 येन भी बेसिक इनकम नहीं था। लेकिन वह थाईलैंड के 10,000 बाट से कहीं ज़्यादा क़रीब था। फ़र्क़ इसमें था कि कौन पा सकता था, और ख़र्च कैसे हो, यह कौन तय करता था। ये 1,00,000 येन असल में किस पर ख़र्च हुए, यह हमने {विशेष नकद भुगतान वाले निबंध|/essays/japan-special-cash-payment/} में अध्ययनों के आँकड़ों से देखा है।"
           ],
           [
             "h",
@@ -12695,7 +13953,7 @@ module.exports = {
           ],
           [
             "o",
-            "Los 100.000 yenes tampoco fueron una renta básica. Pero estuvieron mucho más cerca que los 10.000 bahts de Tailandia. La diferencia fue quién podía recibirlos y quién decidía en qué gastarlos."
+            "Los 100.000 yenes tampoco fueron una renta básica. Pero estuvieron mucho más cerca que los 10.000 bahts de Tailandia. La diferencia fue quién podía recibirlos y quién decidía en qué gastarlos. En qué se gastaron de verdad esos 100.000 yenes lo repasamos, estudio por estudio, en {el ensayo sobre el Pago Especial en Efectivo|/essays/japan-special-cash-payment/}."
           ],
           [
             "h",
@@ -12825,7 +14083,7 @@ module.exports = {
           ],
           [
             "o",
-            "Auch die 100.000 Yen waren kein Grundeinkommen. Aber sie kamen ihm viel näher als Thailands 10.000 Baht. Der Unterschied lag darin, wer sie bekommen konnte und wer über ihre Verwendung entschied."
+            "Auch die 100.000 Yen waren kein Grundeinkommen. Aber sie kamen ihm viel näher als Thailands 10.000 Baht. Der Unterschied lag darin, wer sie bekommen konnte und wer über ihre Verwendung entschied. Wofür die 100.000 Yen tatsächlich ausgegeben wurden, zeichnen wir Studie für Studie im {Essay über die Sonderzahlung|/essays/japan-special-cash-payment/} nach."
           ],
           [
             "h",
@@ -12955,7 +14213,7 @@ module.exports = {
           ],
           [
             "o",
-            "لم يكن الـ100,000 ين دخلًا أساسيًا هو الآخر. لكنه كان أقرب بكثير من الـ10,000 بات التايلاندية. والفرق في من كان يحق له الحصول عليه، ومن يقرر كيف يُنفق."
+            "لم يكن الـ100,000 ين دخلًا أساسيًا هو الآخر. لكنه كان أقرب بكثير من الـ10,000 بات التايلاندية. والفرق في من كان يحق له الحصول عليه، ومن يقرر كيف يُنفق. أما فيمَ أُنفقت الـ100,000 ين فعلًا، فنتتبعه دراسةً بعد دراسة في {مقالنا عن الدفعة النقدية الخاصة|/essays/japan-special-cash-payment/}."
           ],
           [
             "h",

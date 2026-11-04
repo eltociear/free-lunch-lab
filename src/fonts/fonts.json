@@ -711,6 +711,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-f33cfbc343.woff2",
     "chars": "£€￥"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-d575e2f9ce.woff2",
+    "chars": "伴偏偶喚埋填夏婚孝宏尚崩我戸旅江狭礎祐稲粛繰聡興色若荘著衛西跳郎馬"
    }
   ],
   "ja:body:700": [
@@ -869,6 +873,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-1254d4e5f1.woff2",
     "chars": "£€￥"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-e8779936b5.woff2",
+    "chars": "伴偏偶喚埋填夏婚孝宏尚崩我戸旅江狭礎祐稲粛繰聡興色若荘著衛西跳郎馬"
    }
   ],
   "ja:display": [
@@ -943,6 +951,10 @@
    {
     "file": "dela-gothic-one-400-ja-2c0ff3360e.woff2",
     "chars": "員夢守害密戻投改秘裏近革"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-992f1c16ed.woff2",
+    "chars": "別割振特"
    }
   ],
   "ja:dot": [
@@ -1139,6 +1151,10 @@
    {
     "file": "noto-sans-sc-400-zh-aa5298e41e.woff2",
     "chars": "£€镑"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-a17caefe2a.woff2",
+    "chars": "卫史夏婚孝宏尤振摊族梳江渡烈猛瑞町祐离稻穗窄紧罩荘裕逃郎"
    }
   ],
   "zh:body:700": [
@@ -1293,6 +1309,10 @@
    {
     "file": "noto-sans-sc-700-zh-c11f705e8b.woff2",
     "chars": "£€镑"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-c1725d860f.woff2",
+    "chars": "卫史夏婚孝宏尤振摊族梳江渡烈猛瑞町祐离稻穗窄紧罩荘裕逃郎"
    }
   ],
   "zh:display": [
@@ -1363,6 +1383,10 @@
    {
     "file": "noto-sans-sc-900-zh-1b3f04e677.woff2",
     "chars": "/位假危却四守宣害布师护改故核梦秘诈资辨革"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-4fc75a8211.woff2",
+    "chars": "去性掉没留还那"
    }
   ],
   "zh:dot": [
