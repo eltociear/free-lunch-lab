@@ -571,6 +571,99 @@ ${bentoArt}`,
       };
     },
   },
+  // X post image: "Does free cash make people stop working?" Three experiments side by side (Finland, Stockton SEED,
+  // OpenResearch), numbers from TIMELINE + the openresearch-cash-study essay in src/data.js; Stockton's 28->40 vs
+  // 32->37 full-time figures are SEED's first-year analysis (Feb 2019-Feb 2020). 1200x1500 (4:5) for the mobile
+  // timeline. Flat palette only: solid navy, solid gold #FFD66B, ink #141A3A on gold; no gradients, glows or moon.
+  'work-effect': {
+    w: 1200, h: 1500, langs: ['ja', 'en'],
+    build: lang => {
+      const ja = lang === 'ja';
+      const arrow = `<svg class="ar" width="34" height="20" viewBox="0 0 34 20"><path d="M2 10 H29 M21 3 L29 10 L21 17" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      const cmp = (label, a, b, cls = '') => `<p class="cmp ${cls}"><span class="cl">${label}</span><span class="cv">${a}</span>${arrow}<span class="cv b">${b}</span></p>`;
+      const R = ja ? '受給者' : 'Recipients', C = ja ? '対照群' : 'Control group';
+      const rows = [
+        { name: ja ? 'フィンランド' : 'Finland', meta: ja ? '2017–2018 ・ 政府（Kela）' : '2017–2018 · Government (Kela)',
+          pay: ja ? '月560ユーロ × 2年' : '€560 a month × 2 years', who: ja ? '無作為に選んだ失業者2,000人' : '2,000 unemployed people',
+          res: ja ? '仕事への効果は小さかった' : 'Small effect on work',
+          more: `<p class="det">${ja ? '生活の満足度と心の健康は改善' : 'Wellbeing and mental health improved'}</p>` },
+        { name: ja ? 'ストックトン（米国）' : 'Stockton, USA', meta: ja ? '2019–2021 ・ SEED' : '2019–2021 · SEED',
+          pay: ja ? '月500ドル × 2年' : '$500 a month × 2 years', who: ja ? '住民125人' : '125 residents',
+          res: ja ? 'フルタイムで働く人が増えた' : 'More people got full-time jobs',
+          more: `<p class="det">${ja ? '1年目のフルタイム就業率' : 'Full-time work in the first year'}</p>${cmp(R, '28%', '40%', 'hi')}${cmp(C, '32%', '37%')}` },
+        { name: 'OpenResearch', meta: ja ? '2020–2023 ・ サム・アルトマン出資' : '2020–2023 · backed by Sam Altman',
+          pay: ja ? '月1,000ドル × 3年' : '$1,000 a month × 3 years', who: ja ? '21〜40歳の1,000人' : '1,000 people aged 21–40',
+          res: ja ? '労働時間は週1.3時間減った' : '1.3 fewer hours of work a week',
+          more: `<p class="det">${ja ? 'それでも就業率は両群で上がった' : 'Employment still rose in both groups'}</p>${cmp(R, '58%', '72%', 'hi')}${cmp(C, '59%', '74%')}` },
+      ];
+      const mark = bento.replace('url(#grad)', '#FFD66B');
+      return {
+        bare: true,
+        moon: [-999, -999, 1],
+        body: `
+<p class="kicker">${ja ? '3つの社会実験のデータから' : 'What three cash experiments found'}</p>
+<h1 class="q">${ja ? 'お金を配ったら、<br>人は働かなくなる？' : 'Does free cash make<br>people stop working?'}</h1>
+<div class="rows">${rows.map(r => `
+  <section class="row">
+    <div class="lc">
+      <p class="nm">${r.name}</p>
+      <p class="meta">${r.meta}</p>
+      <p class="pay">${r.pay}</p>
+      <p class="who">${r.who}</p>
+    </div>
+    <div class="rc">
+      <p class="res">${r.res}</p>
+      ${r.more}
+    </div>
+  </section>`).join('')}
+</div>
+<div class="take">
+  <p class="t1">${ja ? '人は働くのをやめなかった' : 'People did not stop working'}</p>
+  <p class="t2">${ja ? '変化は小さかった。ストックトンではフルタイム就業が増え、<br>OpenResearch では労働時間が少し減った' : 'The effects were small. Full-time work rose in Stockton;<br>in OpenResearch, hours fell a little.'}</p>
+</div>
+<div class="foot3">
+  <p class="src">${ja ? '出典：Kela・フィンランド社会保健省（2020）／ SEED 1年目分析（2021）／ Vivalt ほか、NBER w32719（OpenResearch）' : 'Sources: Kela and Finland’s Ministry of Social Affairs and Health (2020) / SEED first-year analysis (2021) / Vivalt et al., NBER w32719 (OpenResearch)'}</p>
+  <div class="brand">
+    <svg width="64" height="45" viewBox="-8 -8 256 184">${mark}</svg>
+    <p class="wm2">${ja ? '不労所得研究所' : 'Free Lunch Lab'}</p>
+    <p class="url">neteru-nyukin.eltociear.workers.dev/timeline/</p>
+  </div>
+</div>`,
+        css: `
+body{background:#0E1330}
+svg.sky g{opacity:.45}
+.page{padding:64px 64px 52px}
+.kicker{align-self:flex-start;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:11px 24px 13px;border-radius:999px;font-weight:900}
+.q{margin-top:26px;padding-right:0;text-shadow:none;font-size:${ja ? 84 : 80}px;line-height:1.16;color:#FFFFFF;white-space:nowrap}
+.rows{margin-top:38px;display:flex;flex-direction:column;gap:18px}
+.row{display:flex;gap:30px;background:#171D45;border:2px solid #262E62;border-radius:22px;padding:26px 30px}
+.lc{flex:0 0 392px;display:flex;flex-direction:column}
+.nm{font-size:${ja ? 38 : 40}px;line-height:1.15;font-weight:900;color:#FFFFFF;white-space:nowrap}
+.meta{margin-top:6px;font-size:23px;line-height:1.3;color:#9AA3CF;font-weight:700;white-space:nowrap}
+.pay{margin-top:14px;font-size:30px;line-height:1.2;color:#FFFFFF;font-weight:900;white-space:nowrap}
+.who{margin-top:6px;font-size:23px;line-height:1.3;color:#C9D0F0;font-weight:500}
+.rc{flex:1;min-width:0;border-left:3px solid #2E3772;padding-left:30px;display:flex;flex-direction:column;justify-content:center}
+.res{font-size:${ja ? 38 : 39}px;line-height:1.2;font-weight:900;color:#FFD66B}
+.det{margin-top:8px;font-size:26px;line-height:1.3;color:#E3E8FF;font-weight:700}
+.cmp{margin-top:8px;display:flex;align-items:center;gap:12px;font-size:28px;line-height:1.2;color:#C9D0F0;font-weight:700}
+.cmp .cl{width:${ja ? 110 : 186}px;font-size:23px;color:#9AA3CF}
+.cmp .cv{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:32px;min-width:64px;text-align:right}
+.cmp .ar{color:#6C76A8}
+.cmp.hi .cl{color:#FFD66B}
+.cmp.hi .cv{color:#FFFFFF}
+.cmp.hi .cv.b{color:#FFD66B}
+.take{margin-top:30px;margin-bottom:24px;background:#FFD66B;color:#141A3A;border-radius:22px;padding:24px 32px 26px}
+.t1{font-size:${ja ? 46 : 48}px;line-height:1.15;font-weight:900;white-space:nowrap}
+.t2{margin-top:8px;font-size:26px;line-height:1.4;font-weight:700}
+.foot3{margin-top:auto;padding-top:20px;border-top:2px solid #262E62}
+.src{font-size:19px;line-height:1.4;color:#9AA3CF;font-weight:500}
+.brand{margin-top:14px;display:flex;align-items:center;gap:16px}
+.wm2{font-size:30px;line-height:1;font-weight:900;color:#FFFFFF;${ja ? '' : 'font-family:"Dela Gothic One",sans-serif;font-weight:400;'}}
+.url{margin-left:auto;font-size:24px;line-height:1;color:#FFD66B;font-weight:700}
+`,
+      };
+    },
+  },
 };
 
 // Screenshots go through the DevTools protocol, not `chrome --screenshot`: the one-shot CLI capture can fire before
