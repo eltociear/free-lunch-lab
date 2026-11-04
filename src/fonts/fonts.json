@@ -43,6 +43,10 @@
    {
     "file": "noto-sans-arabic-400-ar-760c9a5fa7.woff2",
     "chars": "‘"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-6861a3227a.woff2",
+    "chars": "ú"
    }
   ],
   "ar:body:700": [
@@ -73,6 +77,10 @@
    {
     "file": "noto-sans-arabic-700-ar-d7d0db1f81.woff2",
     "chars": "‘"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-5c71ddab55.woff2",
+    "chars": "ú"
    }
   ],
   "ar:display": [
@@ -147,6 +155,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-1508bfe2a6.woff2",
     "chars": "£"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-aec55575c4.woff2",
+    "chars": "ú"
    }
   ],
   "de:body:700": [
@@ -189,6 +201,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-0cefd3743c.woff2",
     "chars": "£"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-e1699fbe0e.woff2",
+    "chars": "ú"
    }
   ],
   "de:display": [
@@ -271,6 +287,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-1508bfe2a6.woff2",
     "chars": "£"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-aec55575c4.woff2",
+    "chars": "ú"
    }
   ],
   "en:body:700": [
@@ -313,6 +333,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-0cefd3743c.woff2",
     "chars": "£"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-e1699fbe0e.woff2",
+    "chars": "ú"
    }
   ],
   "en:display": [
@@ -513,6 +537,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-f076eddaaa.woff2",
     "chars": "£"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-e094f6c395.woff2",
+    "chars": "ú"
    }
   ],
   "hi:body:700": [
@@ -543,6 +571,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-adfa358b5b.woff2",
     "chars": "£"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-6e642e5f0c.woff2",
+    "chars": "ú"
    }
   ],
   "hi:dot": [
@@ -711,6 +743,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-f33cfbc343.woff2",
     "chars": "£€￥"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-b926a2349a.woff2",
+    "chars": "úぱ俸傾周埋尽幸息救旨昇暇歯殺況液滞病白純若著血越車辞辺郊鑽降黒"
    }
   ],
   "ja:body:700": [
@@ -869,6 +905,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-1254d4e5f1.woff2",
     "chars": "£€￥"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-3a1570fa0b.woff2",
+    "chars": "úぱ俸傾周埋尽幸息救旨昇暇歯殺況液滞病白純若著血越車辞辺郊鑽降黒"
    }
   ],
   "ja:display": [
@@ -943,6 +983,10 @@
    {
     "file": "dela-gothic-one-400-ja-2c0ff3360e.woff2",
     "chars": "員夢守害密戻投改秘裏近革"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-e80eb1d8e7.woff2",
+    "chars": "ぜん健働労子康果減考"
    }
   ],
   "ja:dot": [
@@ -1139,6 +1183,10 @@
    {
     "file": "noto-sans-sc-400-zh-aa5298e41e.woff2",
     "chars": "£€镑"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-ee1c6114dd.woff2",
+    "chars": "ú串乐削叠坐垮娱掩撰暇杰森植汰汽淘炼痛绘缘肖苦血角诊贯赎车逾郊锻阵雷黑"
    }
   ],
   "zh:body:700": [
@@ -1293,6 +1341,10 @@
    {
     "file": "noto-sans-sc-700-zh-c11f705e8b.woff2",
     "chars": "£€镑"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-0549e0ecb7.woff2",
+    "chars": "ú串乐削叠坐垮娱掩撰暇杰森植汰汽淘炼痛绘缘肖苦血角诊贯赎车逾郊锻阵雷黑"
    }
   ],
   "zh:display": [
@@ -1363,6 +1415,10 @@
    {
     "file": "noto-sans-sc-900-zh-1b3f04e677.woff2",
     "chars": "/位假危却四守宣害布师护改故核梦秘诈资辨革"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-2eb5a53e5c.woff2",
+    "chars": "·两健减头姆孩山康曼略连阿"
    }
   ],
   "zh:dot": [

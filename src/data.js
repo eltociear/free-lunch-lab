@@ -2869,6 +2869,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-04",
+      "ja": "エッセイ『サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか』を公開",
+      "en": "Published the essay “What happened when Sam Altman’s study gave people $1,000 a month for three years”",
+      "zh": "发布随笔《当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么》",
+      "hi": "निबंध “जब सैम ऑल्टमैन के अध्ययन ने लोगों को तीन साल तक हर महीने $1,000 दिए, तो क्या हुआ” प्रकाशित",
+      "es": "Publicado el ensayo «Qué pasó cuando el estudio de Sam Altman dio a la gente 1.000 $ al mes durante tres años»",
+      "de": "Essay „Was geschah, als Sam Altmans Studie Menschen drei Jahre lang 1.000 $ im Monat gab“ veröffentlicht",
+      "ar": "نشرنا مقال «ماذا حدث حين أعطت دراسة سام ألتمان الناس ⁦$1,000⁩ شهريًا لثلاث سنوات»"
+    },
+    {
       "date": "2026-11-03",
       "ja": "エッセイ『ネサラ・ゲサラとベーシックインカム：「全員にお金が配られる」話の見分け方』を公開",
       "en": "Published the essay “NESARA/GESARA and basic income: telling real payments to everyone from promises that never arrive”",
@@ -8240,7 +8250,7 @@ module.exports = {
     },
     {
       "id": "openresearch",
-      "essays": ["universal-high-income", "moltbook-basic-income"],
+      "essays": ["universal-high-income", "moltbook-basic-income", "openresearch-cash-study"],
       "years": "2020–2023",
       "type": "ngo",
       "name": "OpenResearch Unconditional Cash Study",
@@ -8591,7 +8601,7 @@ module.exports = {
     },
     {
       "id": "ai-dividend",
-      "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income", "public-benefit-fund"],
+      "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income", "public-benefit-fund", "openresearch-cash-study"],
       "years": "2026–",
       "type": "ngo",
       "name": "AI Dividend",
@@ -8772,6 +8782,1197 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "openresearch-cash-study",
+      "date": "2026-11-04",
+      "related": [
+        "universal-high-income",
+        "public-benefit-fund",
+        "moltbook-basic-income"
+      ],
+      "title": {
+        "ja": "サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか",
+        "en": "What happened when Sam Altman’s study gave people $1,000 a month for three years",
+        "zh": "当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么",
+        "hi": "जब सैम ऑल्टमैन के अध्ययन ने लोगों को तीन साल तक हर महीने $1,000 दिए, तो क्या हुआ",
+        "es": "Qué pasó cuando el estudio de Sam Altman dio a la gente 1.000 $ al mes durante tres años",
+        "de": "Was geschah, als Sam Altmans Studie Menschen drei Jahre lang 1.000 $ im Monat gab",
+        "ar": "ماذا حدث حين أعطت دراسة سام ألتمان الناس ⁦$1,000⁩ شهريًا لثلاث سنوات"
+      },
+      "desc": {
+        "ja": "1,000人が3年間、月1,000ドルを無条件で受け取りました。働く時間は少し減り、お金の多くは食費や家賃に使われ、時間を買い戻した人もいました。サム・アルトマンが支援した研究の論文からわかったことと、わからないことを整理します。",
+        "en": "1,000 people got $1,000 a month for three years. They worked a little less, spent on basics and some bought time. What the papers found, and what they don’t.",
+        "zh": "OpenResearch 向 1,000 人每月发放 1,000 美元，为期三年。受助者每周少工作约 1.3 小时，钱主要花在基本开支上，有些人用它买回了时间。论文发现了什么、没发现什么，以及它算不算基本收入。",
+        "hi": "1,000 लोगों को तीन साल तक हर महीने $1,000 मिले। उन्होंने थोड़ा कम काम किया, ज़रूरी चीज़ों पर ख़र्च किया, कुछ ने समय ख़रीदा। शोध में क्या मिला, क्या नहीं।",
+        "es": "1.000 personas recibieron 1.000 $ al mes durante tres años. Trabajaron algo menos, gastaron en lo básico y algunas ganaron tiempo. Qué hallaron los estudios.",
+        "de": "1.000 Menschen bekamen drei Jahre lang 1.000 $ im Monat. Sie arbeiteten etwas weniger, kauften Nötiges, manche gewannen Zeit. Was die Studien zeigen, was nicht.",
+        "ar": "حصل 1,000 شخص على ⁦$1,000⁩ شهريًا لثلاث سنوات. عملوا أقل قليلًا، وأنفقوا على الأساسيات، واشترى بعضهم وقتًا. ما وجدته الدراسات، وما لم تجده."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2024年7月、サム・アルトマンが支援した、米国で最大規模の無条件現金給付研究の結果が出ました。数日のうちに、同じ数字に正反対の見出しがつきました。一方は「タダのお金をもらうと人は働かなくなる」と読み、もう一方は「現金は人に自由を与える」と読みました。どちらも同じ論文を引用していました。"
+          ],
+          [
+            "p",
+            "このエッセイでは、その論文に立ち返ります。研究がどんなものだったか、受給者がお金と時間を何に使ったか、何が変わらなかったか、そしてベーシックインカムについて何がわかり、何がわからないのか。あわせて、なぜAI企業の最高経営責任者がそれを知りたがったのかも考えます。"
+          ],
+          [
+            "h",
+            "どんな研究だったか"
+          ],
+          [
+            "p",
+            "Y Combinator Researchとして始まった研究所OpenResearchは、2019年の世帯収入が連邦貧困基準の300%以下だった21歳から40歳の3,000人を、イリノイ州北部（シカゴ周辺を含む）とテキサス州北中部（ダラス周辺を含む）の19の郡から集めました。都市、郊外、農村に住む人たちです。[1][2] 登録は2019年10月から2020年10月まで行われました。その後、参加者は無作為に分けられ、2020年11月から2023年10月まで、1,000人が月1,000ドルを、対照群の2,000人が月50ドルを受け取りました。支払いは地元の2つの非営利団体が担いました。[2]"
+          ],
+          [
+            "p",
+            "お金には一切の条件がありませんでした。働くことや使い道について何も求められず、調査に答え続けるかどうかにかかわらず支払いは続きました。[1][2] 参加者の2019年の世帯収入は平均約29,900ドルだったので、月1,000ドルは世帯にとっておよそ40%の収入増でした。[2] 分析は事前登録されており、最後の調査には参加者の96%が回答しました。[2]"
+          ],
+          [
+            "p",
+            "私たちの計算では、給付だけで約3,960万ドルになります。受給者1,000人に3,600万ドル、対照群に360万ドルです。Forbesによると、OpenResearchとその関連団体は2015年以降に約6,000万ドルを集めており、その中にはアルトマンが寄付した1,400万ドル、OpenAIの非営利部門からの1,000万ドル、ジャック・ドーシーのStart Smallからの1,500万ドル、GitLab共同創業者のシッド・シブランディからの650万ドルが含まれます。[3] 研究そのものも、全米科学財団（National Science Foundation）の助成を謝辞に挙げています。[2]"
+          ],
+          [
+            "p",
+            "なぜこの研究が行われたのかは、2016年1月にさかのぼります。アルトマンはY Combinatorのブログでこの研究を発表しました。彼は「技術が従来の仕事をなくし続け、莫大な新しい富が生まれるにつれて」、何らかの形のベーシックインカムが国の規模で現れる可能性が高いと書き、それが「どう機能するかについてのデータはかなり少ない」と述べました。さらにこう問いかけています。「人はぶらぶらしてビデオゲームをするのか、それとも新しいものを生み出すのか」。[4]"
+          ],
+          [
+            "h",
+            "見出しの数字：労働がわずかに減った"
+          ],
+          [
+            "p",
+            "エバ・ビバルト、エリザベス・ローズ、アレクサンダー・バーティク、デビッド・ブルックマン、パトリック・クラウゼ、サラ・ミラーによる雇用の論文によると、受給者の労働時間は、調査では対照群より週約1.3時間短く、スマートフォンアプリの時間日誌と生活時間調査では週1.4〜1.5時間短くなりました。調査では、就業している割合が2.3ポイント低くなりました。給付を除いた本人の収入は、年約1,900ドル少なくなりました。パートナーも同じくらい労働時間を減らし、参加者とパートナーを合わせると週2.1時間短く働いていました。[2]"
+          ],
+          [
+            "p",
+            "言い換えると、受け取った1ドルごとに、ほかの収入源からの世帯収入が約28セント、本人の収入が約16セント減りました。著者らは、労働時間と収入への影響を対照群に比べて5〜6%の減少とし、「中程度の効果」と呼んでいます。[2]"
+          ],
+          [
+            "p",
+            "見出しを読むうえで、2つの点が大事です。第一に、3年間で就業率は両方のグループで上がりました。受給者では58%から72%へ、対照群では59%から74%へと上がり、対照群のほうが上がり幅が大きかっただけです。[5] 給付を含めると、3年目の受給者本人の収入は、それでも対照群より約1万ドル多くなっていました。[5] 第二に、数字は変わってきています。論文の最初の版（2024年7月）では、収入の減少は年約1,500ドル、労働市場への参加の低下は2.0ポイントでした。2026年8月の改訂版は、調査の回答と州の失業保険の記録を組み合わせた指標を優先しており、それぞれ約1,900ドルと4.2ポイントとしています。[2]"
+          ],
+          [
+            "o",
+            "評価すべき点は評価しておきます。研究者たちは、この研究と結びつけられがちな主張にとって都合の悪い方向に、自分たちの見出しの効果を大きく改訂し、大きいほうの数字を要旨に載せました。研究とは本来そういうものです。"
+          ],
+          [
+            "h",
+            "時間を何に使ったか"
+          ],
+          [
+            "p",
+            "論文によると、仕事から解放された時間は主に余暇に使われ、運転やその他の活動に使う時間も少し増えました。保育、運動、求職活動、自己研鑽にかける時間については、小さな変化すらなかったと言えるとしています。[2] OpenResearchのまとめは、余暇をさらに細かく分けています。いちばん増えたのは、運転、社交的な余暇（人と過ごす時間：交流、レクリエーション、食事）、そして食料品の買い物などの用事でした。[5]"
+          ],
+          [
+            "p",
+            "求職活動は止まったのではなく、形を変えました。仕事のない期間は、対照群の平均7.8か月より約0.8か月長くなりました。受給者は、最近仕事に応募した割合が高い一方で、応募した件数は少なくなりました。[2] 仕事を探している人のうち、受給者は、どんな仕事に就くにしても面白さや意味が欠かせないと答える割合が5.5ポイント高くなりました。[5] それでも、数多くの指標で見て、仕事の質は良くなりませんでした。論文は、仕事の質の小さな改善も、時給58セントを超える賃金の上昇もなかったと言えるとしています。[2]"
+          ],
+          [
+            "p",
+            "平均の裏には、まったく違う暮らしがあります。受給者のネイサンは、4歳の息子と過ごすために週50時間の仕事を半分にしました。リサは、給料は低くても伸びしろのある仕事に移り、差額を給付で埋め、2年後には10万ドル近い年俸を得ていました。週72時間働いていたショーンは、燃え尽きる前に休むことにしました。[5] グループ別の傾向は探索的なものですが、労働の減少は、30歳未満、ひとり親、そして開始時の世帯収入が最も高かった人たちに集中していました。30歳を超える受給者では、就業や労働時間への有意な効果はありませんでした。[5] 若い参加者では、進学などの教育への推定効果も大きくなりましたが、全体として学位の取得への有意な効果はありませんでした。[2]"
+          ],
+          [
+            "h",
+            "お金を何に使ったか"
+          ],
+          [
+            "p",
+            "平均すると、受給者は対照群より月310ドル多く支出し、その半分以上は基本的なものに使われました。食費（67ドル）、家賃（52ドル）、交通費（50ドル）です。対照群の支出と比べて最も大きく増えたのは、家族や友人への贈り物や貸し付けといった、ほかの人への金銭的な援助で、月22ドル、26%の増加でした。[6] 支出の増加を引っぱったのは、開始時に貧困線より下かその近くにいた人たちで、最も収入の高いグループでは、総支出への効果は小さく、有意ではありませんでした。[6]"
+          ],
+          [
+            "p",
+            "消費の論文は、支出が月300ドル以上増え、その多くが住まい、食べ物、車に使われたと推定しています。受給者は、新しい家や新しい地域に引っ越す割合も高くなりました。自己申告の家計の健全さと信用スコアは改善しました。しかし、資産のわずかな増加は借金の増加で相殺され、純資産はほとんど変わりませんでした。延滞、破産、差し押さえへの影響もありませんでした。著者らは、大きな一時的な給付は「若い低所得世帯の財務状況を持続的に改善するとは限らない」と結論づけています。[7]"
+          ],
+          [
+            "h",
+            "健康、子ども、仕事への考え方"
+          ],
+          [
+            "p",
+            "健康：給付は、ストレスと食料の確保に大きな改善をもたらしましたが、長続きしませんでした。病院、救急、歯科の利用も増えました。1年目より後は、自己申告の身体の健康、血液検査の指標、心の健康は改善せず、世帯の子どもの健康への影響もありませんでした。[8] OpenResearchは、1年目がパンデミックの支援策と重なっていたこと、物価の上昇とその支援の終了が初期の改善を目減りさせた可能性があることを指摘していますが、なぜ改善が消えたのかは確かではないとしています。[8]"
+          ],
+          [
+            "p",
+            "子ども：2025年の論文によると、月1,000ドルを受け取った親は、子どもへの支出を増やし、より目を配るようになったと答えました。同時に、子どもの発達上の困難やストレスが増えたとも答えており、著者らは、よく見るようになったことが原因かもしれないとしています。学校の記録にあるほとんどの結果には、意味のある変化はありませんでした。[9]"
+          ],
+          [
+            "p",
+            "政治と仕事：2024年12月の論文は、投票や政治参加への影響はなく、政治的な考え方の変化もほとんどないとしています。固定観念に反する結果が一つあります。受給者は、仕事が個人にとっても社会にとっても少しだけ大切だと考えるようになり、メディケイドの就労要件を支持する割合も高くなりました。[10] アルトマンのもう一つの問い、新しいものを生み出すかどうかについては、受給者はビジネスのアイデアを持ち、起業するつもりだと答える割合が高かったものの、平均すると実際に起業する割合が有意に高いわけではありませんでした。探索的な内訳では、黒人と女性の受給者は、3年目までに起業した、または起業を手伝った割合が高くなっていました。[11]"
+          ],
+          [
+            "h",
+            "同じ結果に、2つの見出し"
+          ],
+          [
+            "p",
+            "当時の報道の多くは慎重でした。NPRは、受給者の労働が「平均で週1時間ほど少なかった」こと、支出の多くは基本的なものだったこと、そして報告書自体が、結果は「両方の立場を支持する」と述べていることを伝えました。保証所得を求めて活動するEconomic Security Projectの共同創業者クリス・ヒューズは、「この研究やほかの研究から、保証所得だけではうまくいかないということを受け取ってもらえればと思います」と話しました。American Enterprise Instituteのマイケル・ストレインは、仕事に就いた人だけに支払われる、低所得の働き手向けの税額控除の拡大のほうを支持しました。[12]"
+          ],
+          [
+            "p",
+            "CBSはビバルトの言葉を伝えました。「経済学者から見れば、中程度の効果です」。彼女は、減った労働時間を失敗とは見ていませんでした。「人々はより多くのことをしています。もし結果が、人々は余暇の時間が増えることを大切にしていて、それが幸福を高めるのだと示しているなら、それは良いことです」。しかし、生活の余裕がより良い仕事につながるという期待については、「仕事の質への効果はまったく見つかっていません」と述べました。[13] 同じCBSの記事は、3,000人の参加者が月1,000ドルを受け取ったとも書いていましたが、実際に受け取ったのは1,000人で、残りの2,000人は50ドルでした。よくある間違いですが、研究を実際の3倍の規模に見せてしまいます。[13][2] 同じ年の9月、非営利団体UpTogetherの最高経営責任者ヘスス・ヘレナはFortuneに寄稿し、記者や研究者が導いた結論は「貧困の中にいる人々を怠け者として描くような、つらい固定観念に根ざしている」と論じました。[14]"
+          ],
+          [
+            "o",
+            "どちらの短いまとめも、何かを取りこぼしています。「タダのお金は人を怠けさせる」は、両方のグループで就業が増えた時期に、仕事を少しだけ大切に思うようになった人たちの労働時間が約5%減ったという結果には合いません。「現金は人生を変える」は、より良い仕事も、健康や幸福の長続きする改善も見つからず、純資産がほとんど動かなかった研究には合いません。証拠が示しているのは、もっと小さく、もっと役に立つことです。人々はお金を収入として扱い、その多くを基本的なものに使い、一部の人はそれで時間を買い戻しました。その時間が「無駄」なのか「自由」なのかは価値判断であり、データが代わりに決めてくれるものではありません。"
+          ],
+          [
+            "h",
+            "これはベーシックインカムなのか"
+          ],
+          [
+            "p",
+            "BIEN（ベーシックインカム世界ネットワーク）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義し、定期性、現金、個人単位、普遍性、無条件性の5つの特徴を挙げています。[15]"
+          ],
+          [
+            "p",
+            "定期的か？はい、毎月です。現金か？はい。個人単位か？はい、世帯ではなく本人に支払われました。無条件か？はい、仕事や使い道のルールはありませんでした。普遍的か？いいえ。無作為に選ばれた、21歳から40歳の比較的収入の低い大人1,000人に、3年間支払われただけです。"
+          ],
+          [
+            "o",
+            "つまり、これはベーシックインカムではなく保証所得の試験であり、そこから3つの限界が出てきます。第一に、期間限定で、誰もがいつ終わるかを知っていました。給付が一生続くなら、人々の行動はどちらの方向にも違っていたかもしれません。第二に、それぞれの地域で受け取ったのはごく一部の人だけだったので、全員への給付が家賃や物価、賃金に何をもたらすのか、財源となる税が何を変えるのかは示せません。アルトマン自身の投稿も、生活費全体についての問いは「私たちの範囲を超えるが、明らかに重要だ」と書いていました。[4] 第三に、研究はパンデミックとその後の時期にまたがっていました。ただし論文は、推定値の大部分が2022年と2023年を反映していると述べています。[2] 無作為化試験がよく示せるのは、個人が追加の収入にどう反応するかであり、それこそが、より大きな制度を設計するときに必要な数字です。"
+          ],
+          [
+            "p",
+            "OpenResearchは、支払いが終わった後も2025年まで参加者への調査を続けたとしています。[1] その時期の結果は、公表されたものをまだ見つけられていません。また、調査データをデータ利用契約のもとで研究者に提供しており、雇用の論文のコードも公開されています。どちらも{オープンデータの一覧|/open-source/#data-openresearch-ucs}に載せています。"
+          ],
+          [
+            "h",
+            "AIにとってなぜ大事なのか"
+          ],
+          [
+            "p",
+            "アルトマンの2016年の問いは、技術と仕事についての懸念から生まれました。[4] 2021年の「Moore’s Law for Everything」では、さらに踏み込み、大企業と土地への課税で積み立てる「アメリカ株式基金（American Equity Fund）」を提案しました。すべての大人に毎年その持ち分を配るというものです。[16] {ユニバーサルハイインカムのエッセイ|/essays/universal-high-income/}では、この案を取り上げ、誰が払うのかを考えました。その後、お金は小さな規模で現れ始めています。{AI Dividend|/timeline/#tl-ai-dividend}は、AIで打撃を受けた働き手に月1,000ドルを1年間支払っており、Anthropicは{特定の集団への直接の分配|/essays/public-benefit-fund/}を行いうる基金に株式を充てています。"
+          ],
+          [
+            "o",
+            "AIの資金による給付を設計する人にとって、この研究が与えるのは評決ではなく、計画のための数字です。お金の大部分は家賃、食べ物、交通に使われます。受給者とパートナーは少しだけ働く時間を減らすので、費用の計算では、1ドル払うごとにほかの世帯収入が約28セント失われることを見込む必要があります。短期的な助けは大きく、本物です。健康、仕事、資産の長続きする変化は、3年間の月1,000ドルだけでもたらされたものではありません。全員に支払われる恒久的な配当は別の政策であり、違う結果になるかもしれませんが、人々がどう反応するかについて、これが私たちの持つ最良の証拠です。"
+          ],
+          [
+            "h",
+            "ここから何を受け取るか"
+          ],
+          [
+            "o",
+            "アルトマンは2016年に正直な問いを立て、丁寧な答えにお金を払いました。そしてその答えは、この考えを単純に持ち上げるものではありませんでした。研究者たちは、良い結果と並べて効果がなかった結果も公表し、主な推定値を大きいほうに改訂し、データを公開しました。それは、どんな見出しよりも価値があります。"
+          ],
+          [
+            "o",
+            "この研究から一行だけ伝えるなら、正確なものにしてください。比較的収入の低い1,000人が3年間、月1,000ドルを受け取りました。週の労働時間は約1.3時間減り、お金の多くは基本的なものに使われ、1年ほどは暮らしの実感が良くなり、多くの人はそのお金で時間の使い方を選びました。このサイトがあらゆるタダ飯を読むのと同じように読んでください。誰が払い、誰が受け取り、どれだけの期間続いたのか。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "In July 2024, the results came out of the largest study of no-strings cash in the United States, the one Sam Altman had backed. Within days the same numbers carried opposite headlines. One camp read “free money makes people work less”. The other read “cash gives people freedom”. Both were quoting the same papers."
+          ],
+          [
+            "p",
+            "This essay goes back to those papers: what the study was, what recipients did with the money and the time, what did not change, and what it does and does not tell us about basic income. It also asks why an AI company’s chief executive wanted to know."
+          ],
+          [
+            "h",
+            "What the study was"
+          ],
+          [
+            "p",
+            "OpenResearch, a lab that began as Y Combinator Research, enrolled 3,000 people aged 21 to 40 whose household income in 2019 was no more than 300% of the federal poverty level, in 19 counties of northern Illinois (including the Chicago area) and north central Texas (including the Dallas area), in cities, suburbs and rural places.[1][2] Enrolment ran from October 2019 to October 2020. People were then randomly split: 1,000 received $1,000 a month and 2,000 received $50 a month as the control group, from November 2020 to October 2023. Two local non-profits made the payments.[2]"
+          ],
+          [
+            "p",
+            "The money was fully unconditional. Nothing was required about work or spending, and payments continued whether or not someone kept answering the surveys.[1][2] Participants’ household income averaged about $29,900 in 2019, so $1,000 a month was roughly a 40% raise for the household.[2] The analysis was pre-registered, and the surveys reached 96% of participants at the end.[2]"
+          ],
+          [
+            "p",
+            "By our arithmetic the transfers alone come to about $39.6 million: $36 million for the 1,000 recipients and $3.6 million for the control group. Forbes reported that OpenResearch and its entities had raised some $60 million since 2015, including $14 million donated by Altman, $10 million from OpenAI’s non-profit arm, $15 million from Jack Dorsey’s Start Small and $6.5 million from the GitLab co-founder Sid Sijbrandij.[3] The research itself also acknowledges a National Science Foundation grant.[2]"
+          ],
+          [
+            "p",
+            "The reason goes back to January 2016, when Altman announced the study on Y Combinator’s blog. He wrote that “as technology continues to eliminate traditional jobs and massive new wealth gets created”, some version of basic income was likely to appear at a national scale, and that there was “fairly little data about how it would work”. He also asked: “Do people sit around and play video games, or do they create new things?”[4]"
+          ],
+          [
+            "h",
+            "The headline: a little less work"
+          ],
+          [
+            "p",
+            "The employment paper, by Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause and Sarah Miller, finds that recipients worked about 1.3 hours a week less than the control group in the surveys, and 1.4 to 1.5 hours less in the phone-app time diaries and time-use surveys. In the surveys they were 2.3 percentage points less likely to be employed. Their own income, not counting the transfers, was about $1,900 a year lower. Their partners cut their hours by a similar amount: together, participant and partner worked 2.1 hours a week less.[2]"
+          ],
+          [
+            "p",
+            "Put another way, for every dollar received, household income from other sources fell by about 28 cents, and the participant’s own income by about 16 cents. The authors call the effect on hours and income a 5 to 6% decline relative to the control group, “a moderate effect”.[2]"
+          ],
+          [
+            "p",
+            "Two details matter for the headline. First, employment rose in both groups over the three years, from 58% to 72% among recipients and from 59% to 74% in the control group; the controls simply rose further.[5] Counting the transfers, recipients’ own income in the third year was still about $10,000 higher than the control group’s.[5] Second, the numbers have moved. The first version of the paper (July 2024) put the fall in income at about $1,500 a year and the drop in labour market participation at 2.0 percentage points. The revision of August 2026, whose preferred measures combine survey answers with state unemployment-insurance records, puts them at about $1,900 and 4.2 percentage points.[2]"
+          ],
+          [
+            "o",
+            "Credit where it is due: the researchers revised their own headline effect upward, in the direction that is less convenient for the cause the study is associated with, and put the larger numbers in the abstract. That is what a study is for."
+          ],
+          [
+            "h",
+            "What they did with the time"
+          ],
+          [
+            "p",
+            "According to the paper, the hours freed from work went mostly to leisure, along with some extra time driving and on other activities. The authors can rule out even small changes in time spent on childcare, exercise, job search or self-improvement.[2] The OpenResearch summary breaks the leisure down further: the largest increases were in driving, social leisure (time with other people: socialising, recreation, meals) and errands such as grocery shopping.[5]"
+          ],
+          [
+            "p",
+            "Job search changed shape rather than stopping. Spells without work were about 0.8 months longer than the control group’s average of 7.8 months, and recipients were more likely to have recently applied for a job but applied to fewer positions.[2] Among those looking for work, recipients were 5.5 percentage points more likely to say that interesting or meaningful work was essential for any job they would take.[5] Even so, across a long list of measures, job quality did not improve, and the paper can rule out even small improvements in it, or wage gains above 58 cents an hour.[2]"
+          ],
+          [
+            "p",
+            "Averages hide very different lives. One recipient, Nathan, cut his 50-hour week in half to spend time with his four-year-old son. Lisa took a lower-paid job with room to grow, used the transfers to cover the gap, and two years later was on a salary close to six figures. Shawn, who had been working 72 hours a week, decided to take a break before he burned out.[5] The patterns by group are exploratory, but the drop in work was concentrated among people under 30, single parents and those with the highest household incomes at the start; for recipients over 30 there was no significant effect on employment or hours.[5] Younger participants also showed larger estimated effects on further education, although there was no significant effect on degrees overall.[2]"
+          ],
+          [
+            "h",
+            "What they did with the money"
+          ],
+          [
+            "p",
+            "On average, recipients spent $310 a month more than the control group, and more than half of that went to basics: food ($67), rent ($52) and transport ($50). The biggest increase relative to what the control group spent was in financial support to others, such as gifts and loans to family and friends: $22 a month, 26% more.[6] People who started out below or near the poverty line drove the increase in spending; for the highest-income group the effect on total spending was small and not significant.[6]"
+          ],
+          [
+            "p",
+            "The consumption paper estimates that spending rose by at least $300 a month, mostly on housing, food and cars, and that recipients were more likely to move to a new home and a new neighbourhood. Self-reported financial health and credit scores improved. But small gains in assets were offset by more debt, leaving net worth almost unchanged, and there was no effect on delinquencies, bankruptcies or foreclosures. The authors conclude that large temporary transfers “may not cause persistent improvements in the financial position of young, low-income households”.[7]"
+          ],
+          [
+            "h",
+            "Health, children and attitudes to work"
+          ],
+          [
+            "p",
+            "Health: the transfers brought large but short-lived improvements in stress and food security, and more use of hospital, emergency and dental care. They did not improve self-reported physical health, blood-test measures or mental health after the first year, and there was no effect on the health of children in the household.[8] OpenResearch notes that the first year overlapped with pandemic relief and that rising prices and the end of that aid may have worn the early gains down, but it says it cannot be sure why they faded.[8]"
+          ],
+          [
+            "p",
+            "Children: a 2025 paper finds that parents who received $1,000 a month spent more on their children and reported closer supervision. They also reported more developmental difficulties and stress in their children, which the authors suggest may come from watching them more closely. Most outcomes in school records did not change meaningfully.[9]"
+          ],
+          [
+            "p",
+            "Politics and work: a paper from December 2024 finds no effect on voting or political engagement and few changes in political views. One result runs against the stereotype: recipients came to see work as slightly more important for individuals and for society, and were more likely to support work requirements for Medicaid.[10] On Altman’s other question, creating new things, recipients were more likely to have a business idea and to say they intended to start one, but on average they were not significantly more likely to start a business. In an exploratory breakdown, Black and female recipients were more likely to have started or helped start one by the third year.[11]"
+          ],
+          [
+            "h",
+            "The same results, two headlines"
+          ],
+          [
+            "p",
+            "Coverage at the time was mostly careful. NPR reported that recipients worked “an hour or so less a week on average” and spent mostly on basics, and that the report itself says its results “provide support for both sides”. Chris Hughes, a co-founder of the Economic Security Project, which campaigns for guaranteed income, said: “I hope that people are taking away from this study and other studies that a guaranteed income will not work alone.” Michael Strain of the American Enterprise Institute preferred bigger tax credits for low-income workers, paid only to those who take a job.[12]"
+          ],
+          [
+            "p",
+            "CBS quoted Vivalt: “From an economist’s point of view, it’s a moderate effect.” She did not see the lost hours as a failure: “People are doing more stuff, and if the results say people value having more leisure time — that this is what increases their well-being — that’s positive.” But on the hope that a cushion would lead to better jobs, she said: “we don’t find any effects on the quality of employment whatsoever.”[13] The same CBS article also said that 3,000 participants received $1,000 a month; in fact 1,000 did, and the other 2,000 got $50. It is a common slip, and it makes the study sound three times bigger than it was.[13][2] Writing in Fortune that September, Jesús Gerena, chief executive of the non-profit UpTogether, argued that the conclusions reporters and researchers drew were “rooted in painful stereotypes about people experiencing poverty, such as depicting them as lazy”.[14]"
+          ],
+          [
+            "o",
+            "Both short versions lose something. “Free money makes people lazy” does not fit a drop of about 5% in hours, in a period when employment rose in both groups, among people who came to value work a little more. “Cash transforms lives” does not fit a study that found no better jobs, no lasting gains in health or well-being, and net worth that barely moved. What the evidence shows is smaller and more useful: people treated the money as income, spent most of it on basics, and some of them used it to buy back time. Whether that time is “waste” or “freedom” is a value judgement the data cannot make for you."
+          ],
+          [
+            "h",
+            "Is this basic income?"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”, and lists five characteristics: periodic, cash, individual, universal and unconditional.[15]"
+          ],
+          [
+            "p",
+            "Periodic? Yes, every month. Cash? Yes. Individual? Yes, it was paid to the person, not the household. Unconditional? Yes, with no work or spending rules. Universal? No. It went to 1,000 randomly chosen lower-income adults aged 21 to 40, for three years."
+          ],
+          [
+            "o",
+            "So this was a guaranteed income trial, not a basic income, and three limits follow. First, it was temporary, and everyone knew when it would end; people might act differently, in either direction, if the payment were for life. Second, only a few people in each place received it, so it cannot show what a payment to everyone would do to rents, prices or wages, or what the taxes to fund it would change. Altman’s own post said that questions about the overall cost of living were “beyond our scope, but obviously important”.[4] Third, it ran through the pandemic and its aftermath, although the paper notes that its estimates mostly reflect 2022 and 2023.[2] What a randomised trial can show well is how individuals respond to extra income, and that is exactly the number any design for a larger scheme needs."
+          ],
+          [
+            "p",
+            "OpenResearch says it kept surveying participants after the payments ended, through 2025.[1] We have not yet found published results from that period. It has also made the survey data available to researchers under a data use agreement, and the code for the employment paper is open; both are on {our open data list|/open-source/#data-openresearch-ucs}."
+          ],
+          [
+            "h",
+            "Why it matters for AI"
+          ],
+          [
+            "p",
+            "Altman’s 2016 question came from a worry about technology and jobs.[4] In 2021, in “Moore’s Law for Everything”, he went further and proposed an American Equity Fund, filled by taxing large companies and land, that would pay every adult a yearly share.[16] {Our essay on universal high income|/essays/universal-high-income/} looked at that plan and asked who pays. Since then, the money has started to appear on a small scale: {the AI Dividend|/timeline/#tl-ai-dividend} pays $1,000 a month for a year to workers hurt by AI, and Anthropic has set aside shares in a fund that could make {direct distributions to specific populations|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "For anyone designing an AI-funded payment, this study gives planning numbers rather than a verdict. Most of the money goes on rent, food and transport. Recipients and their partners work a little less, so the cost has to count about 28 cents of other household income lost for each dollar paid. Short-term relief is large and real; lasting change in health, jobs or wealth is not something three years of $1,000 delivered on its own. A permanent dividend paid to everyone is a different policy and may behave differently, but this is the best evidence we have about how people respond."
+          ],
+          [
+            "h",
+            "What to take from it"
+          ],
+          [
+            "o",
+            "Altman asked an honest question in 2016 and paid for a careful answer, and the answer did not simply flatter the idea. The researchers published the null results alongside the good ones, revised their main estimate upward, and opened their data. That is worth more than any single headline."
+          ],
+          [
+            "o",
+            "If you share one line from this study, make it the accurate one: 1,000 lower-income people received $1,000 a month for three years; they worked about 1.3 hours a week less, spent mostly on basics, felt better for a year, and many used the money to choose how they spent their time. Read it the way this site reads every free lunch: who paid, who received, and for how long."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2024 年 7 月，美国规模最大的无条件现金研究公布了结果，这项研究由山姆·阿尔特曼资助。几天之内，同样的数字配上了相反的标题。一方读出的是“白给的钱让人少干活”，另一方读出的是“现金给人自由”。两方引用的是同一批论文。"
+          ],
+          [
+            "p",
+            "这篇随笔回到这些论文本身：这项研究是什么，受助者用这笔钱和时间做了什么，什么没有改变，以及它在基本收入问题上能告诉我们什么、不能告诉我们什么。它也会追问：一家 AI 公司的首席执行官为什么想知道答案。"
+          ],
+          [
+            "h",
+            "这项研究是什么"
+          ],
+          [
+            "p",
+            "OpenResearch 是由 Y Combinator Research 发展而来的研究机构。它在伊利诺伊州北部（包括芝加哥地区）和得克萨斯州中北部（包括达拉斯地区）的 19 个县，招募了 3,000 名 21 至 40 岁、2019 年家庭收入不超过联邦贫困线 300% 的人，覆盖城市、郊区和农村。[1][2] 招募从 2019 年 10 月持续到 2020 年 10 月。随后参与者被随机分组：从 2020 年 11 月到 2023 年 10 月，1,000 人每月领取 1,000 美元，作为对照组的 2,000 人每月领取 50 美元。款项由两家当地非营利组织发放。[2]"
+          ],
+          [
+            "p",
+            "这笔钱完全无条件。对工作和花销没有任何要求，无论是否继续回答问卷，款项都照发。[1][2] 参与者 2019 年的家庭收入平均约为 29,900 美元，因此每月 1,000 美元大约相当于家庭收入增加 40%。[2] 分析方案事先登记，最后一轮问卷覆盖了 96% 的参与者。[2]"
+          ],
+          [
+            "p",
+            "按我们的计算，仅发放的现金就约有 3,960 万美元：1,000 名受助者 3,600 万美元，对照组 360 万美元。据《福布斯》报道，OpenResearch 及其相关实体自 2015 年以来共筹集约 6,000 万美元，其中包括阿尔特曼捐赠的 1,400 万美元、OpenAI 非营利部门的 1,000 万美元、杰克·多尔西的 Start Small 的 1,500 万美元，以及 GitLab 联合创始人 Sid Sijbrandij 的 650 万美元。[3] 研究本身也致谢了美国国家科学基金会的资助。[2]"
+          ],
+          [
+            "p",
+            "缘由要追溯到 2016 年 1 月，阿尔特曼在 Y Combinator 的博客上宣布了这项研究。他写道，“随着技术不断淘汰传统工作、创造出巨大的新财富”，某种形式的基本收入很可能会在全国范围内出现，而“关于它如何运作的数据相当少”。他还问：“人们会坐着打电子游戏，还是会创造新东西？”[4]"
+          ],
+          [
+            "h",
+            "头条：工作略有减少"
+          ],
+          [
+            "p",
+            "就业论文的作者是 Eva Vivalt、Elizabeth Rhodes、Alexander Bartik、David Broockman、Patrick Krause 和 Sarah Miller。论文发现，在问卷中受助者每周比对照组少工作约 1.3 小时，在手机应用的时间日志和时间使用调查中少 1.4 到 1.5 小时。在问卷中，他们就业的可能性低 2.3 个百分点。不计现金发放，他们自己的收入每年少约 1,900 美元。他们的伴侣也减少了相近的工时：参与者与伴侣合计每周少工作 2.1 小时。[2]"
+          ],
+          [
+            "p",
+            "换个说法，每收到 1 美元，家庭来自其他来源的收入下降约 28 美分，参与者本人的收入下降约 16 美分。作者把对工时和收入的影响描述为相对对照组下降 5% 到 6%，“中等程度的影响”。[2]"
+          ],
+          [
+            "p",
+            "有两个细节对头条很重要。第一，三年间两组的就业率都上升了，受助者从 58% 升到 72%，对照组从 59% 升到 74%；只是对照组升得更多。[5] 算上现金发放，受助者第三年的个人收入仍比对照组高约 10,000 美元。[5] 第二，数字有过变动。论文第一版（2024 年 7 月）给出的收入降幅约为每年 1,500 美元，劳动力市场参与率下降 2.0 个百分点。2026 年 8 月的修订版首选的指标把问卷回答与州失业保险记录结合起来，给出的数字约为 1,900 美元和 4.2 个百分点。[2]"
+          ],
+          [
+            "o",
+            "该肯定的要肯定：研究者把自己的主要效应估计往上修正了，而这个方向对与这项研究相关联的主张更不利，他们还把更大的数字写进了摘要。研究本来就该这样做。"
+          ],
+          [
+            "h",
+            "他们怎么用多出来的时间"
+          ],
+          [
+            "p",
+            "根据论文，从工作中省下的时间主要用于休闲，另有一些额外的时间花在开车和其他活动上。作者可以排除育儿、锻炼、找工作或自我提升所花的时间出现哪怕很小的变化。[2] OpenResearch 的摘要对休闲做了进一步拆分：增加最多的是开车、社交休闲（与他人相处的时间：社交、娱乐、用餐）以及买菜等日常杂事。[5]"
+          ],
+          [
+            "p",
+            "找工作并没有停止，而是换了方式。没有工作的时段比对照组平均的 7.8 个月长约 0.8 个月；受助者更可能在近期申请过工作，但申请的职位更少。[2] 在找工作的人当中，受助者表示任何工作都必须有趣或有意义的比例高出 5.5 个百分点。[5] 即便如此，在一长串指标上，工作质量都没有改善，论文可以排除哪怕很小的改善，也可以排除每小时超过 58 美分的工资增长。[2]"
+          ],
+          [
+            "p",
+            "平均数掩盖了截然不同的生活。一位受助者内森把每周 50 小时的工作减半，以便陪伴四岁的儿子。莉萨接受了一份工资较低但有成长空间的工作，用这笔钱填补差额，两年后年薪已接近六位数。原本每周工作 72 小时的肖恩决定在累垮之前休息一阵。[5] 按群体划分的规律属于探索性分析，但工作减少集中在 30 岁以下的人、单亲父母以及起初家庭收入最高的人身上；对 30 岁以上的受助者，就业和工时都没有显著变化。[5] 较年轻的参与者在继续教育方面的估计效应也更大，不过总体上对取得学位没有显著影响。[2]"
+          ],
+          [
+            "h",
+            "他们怎么用这笔钱"
+          ],
+          [
+            "p",
+            "平均而言，受助者每月比对照组多花 310 美元，其中一半以上用于基本开支：食品（67 美元）、房租（52 美元）和交通（50 美元）。相对于对照组的支出，增幅最大的是对他人的经济支持，比如给家人和朋友的赠礼和借款：每月 22 美元，多 26%。[6] 支出的增加主要来自起初处于或接近贫困线的人；对收入最高的群体，总支出的变化很小且不显著。[6]"
+          ],
+          [
+            "p",
+            "消费论文估计，支出每月至少增加 300 美元，主要用于住房、食品和汽车，受助者也更可能搬进新家、搬到新社区。自评的财务健康状况和信用评分有所改善。但资产的小幅增加被更多债务抵消，净资产几乎没有变化，对逾期、破产或止赎也没有影响。作者的结论是，大额的临时现金发放“可能不会让年轻的低收入家庭的财务状况得到持久改善”。[7]"
+          ],
+          [
+            "h",
+            "健康、孩子和对工作的态度"
+          ],
+          [
+            "p",
+            "健康：现金发放带来了压力和粮食安全方面幅度大但短暂的改善，也增加了医院、急诊和牙科服务的使用。第一年之后，它没有改善自评的身体健康、血检指标或心理健康，对家中孩子的健康也没有影响。[8] OpenResearch 指出，第一年与疫情救济重叠，物价上涨和救助结束可能削弱了早期的改善，但它表示无法确定这些改善为何消退。[8]"
+          ],
+          [
+            "p",
+            "孩子：2025 年的一篇论文发现，每月领取 1,000 美元的父母在孩子身上花得更多，并报告对孩子的看管更加细致。他们也报告孩子有更多发育方面的困难和压力，作者认为这可能是因为他们观察得更仔细。学校记录中的大多数结果没有明显变化。[9]"
+          ],
+          [
+            "p",
+            "政治与工作：2024 年 12 月的一篇论文发现，对投票和政治参与没有影响，政治观点也几乎没有变化。有一个结果与刻板印象相反：受助者变得稍微更认为工作对个人和社会重要，也更可能支持对 Medicaid（联邦医疗补助）设置工作要求。[10] 至于阿尔特曼的另一个问题——创造新东西——受助者更可能有创业想法，也更可能说自己打算创业，但平均而言，他们实际创业的可能性并没有显著提高。在一项探索性分析中，黑人和女性受助者到第三年更可能已经创业或帮助他人创业。[11]"
+          ],
+          [
+            "h",
+            "同样的结果，两种标题"
+          ],
+          [
+            "p",
+            "当时的报道大多是谨慎的。NPR 报道说，受助者“平均每周少工作一小时左右”，钱主要花在基本开支上，并指出报告本身说其结果“为双方都提供了支持”。倡导保障收入的经济安全项目（Economic Security Project）联合创始人克里斯·休斯说：“我希望人们从这项研究和其他研究中得出的结论是，保障收入单靠自己是不行的。”美国企业研究所的迈克尔·斯特雷恩则更倾向于提高面向低收入劳动者的税收抵免，并且只发给有工作的人。[12]"
+          ],
+          [
+            "p",
+            "CBS 引用了 Vivalt 的话：“从经济学家的角度看，这是一个中等程度的影响。”她不认为减少的工时是失败：“人们在做更多的事情，如果结果表明人们看重拥有更多闲暇时间——这正是提升他们幸福感的东西——那是积极的。”但对于有了缓冲就能找到更好工作的期望，她说：“我们完全没有发现对就业质量的任何影响。”[13] 同一篇 CBS 文章还说 3,000 名参与者每月领取 1,000 美元；实际上领取的是 1,000 人，另外 2,000 人领的是 50 美元。这是常见的错误，它让研究听起来比实际大了三倍。[13][2] 同年 9 月，非营利组织 UpTogether 的首席执行官 Jesús Gerena 在《财富》杂志撰文认为，记者和研究者得出的结论“植根于对贫困者的痛苦刻板印象，比如把他们描绘成懒惰的人”。[14]"
+          ],
+          [
+            "o",
+            "两种简短说法都丢掉了一些东西。“白给的钱让人变懒”对不上这样的事实：工时下降约 5%，同一时期两组的就业率都在上升，而且这些人变得稍微更看重工作。“现金改变人生”也对不上这样一项研究：没有找到更好的工作，健康和幸福感没有持久改善，净资产几乎没动。证据显示的东西更小，也更有用：人们把这笔钱当作收入，大部分花在基本开支上，其中一些人用它买回了时间。这些时间是“浪费”还是“自由”，是数据无法替你做出的价值判断。"
+          ],
+          [
+            "h",
+            "这算基本收入吗？"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）对基本收入的定义是“无条件地以个人为单位定期发给所有人的现金，不需经济状况调查，也不要求工作”，并列出五个特征：定期、现金、个人、普遍和无条件。[15]"
+          ],
+          [
+            "p",
+            "定期？是，每月一次。现金？是。个人？是，发给个人而不是家庭。无条件？是，没有工作或花销上的规定。普遍？不是。它发给了 1,000 名随机选出的 21 至 40 岁较低收入成年人，为期三年。"
+          ],
+          [
+            "o",
+            "所以这是一项保障收入试验，而不是基本收入，由此有三个局限。第一，它是临时的，每个人都知道何时结束；如果是终身发放，人们的行为可能会不同，往哪个方向都有可能。第二，每个地方只有少数人领取，所以它无法显示发给所有人会对房租、物价或工资产生什么影响，也无法显示为此筹资的税收会改变什么。阿尔特曼自己的博文说，关于整体生活成本的问题“超出了我们的范围，但显然很重要”。[4] 第三，它贯穿了疫情及其后续时期，不过论文指出，其估计主要反映的是 2022 年和 2023 年。[2] 随机试验能很好地显示的是个人对额外收入如何反应，而这正是设计任何更大规模方案都需要的数字。"
+          ],
+          [
+            "p",
+            "OpenResearch 表示，在发放结束后它继续对参与者进行问卷调查，一直到 2025 年。[1] 我们尚未找到这一时期已发表的结果。它还根据数据使用协议向研究者提供问卷数据，就业论文的代码也已公开；两者都在{我们的开放数据列表|/open-source/#data-openresearch-ucs}中。"
+          ],
+          [
+            "h",
+            "这对 AI 为什么重要"
+          ],
+          [
+            "p",
+            "阿尔特曼 2016 年的问题源于对技术与就业的担忧。[4] 2021 年，他在《Moore’s Law for Everything》中更进一步，提出设立“美国股权基金”，通过对大公司和土地征税来充实，每年向每个成年人发放一份。[16] {我们关于全民高收入的随笔|/essays/universal-high-income/}考察过这个方案，并追问由谁买单。此后，钱开始以小规模出现：{AI Dividend|/timeline/#tl-ai-dividend} 向受 AI 冲击的劳动者每月发放 1,000 美元，为期一年；Anthropic 也把股份投入一个基金，该基金可能会{向特定人群直接分配|/essays/public-benefit-fund/}。"
+          ],
+          [
+            "o",
+            "对于任何设计由 AI 出资的发放方案的人，这项研究提供的是规划用的数字，而不是定论。大部分钱花在房租、食品和交通上。受助者和伴侣会稍微少工作一些，所以成本核算要考虑到每发放 1 美元，家庭其他收入约损失 28 美分。短期缓解幅度大而且真实；健康、工作或财富上的持久改变，则不是三年每月 1,000 美元单靠自己就能带来的。永久性地发给所有人的分红是另一种政策，表现可能不同，但关于人们如何反应，这是我们手中最好的证据。"
+          ],
+          [
+            "h",
+            "能从中得到什么"
+          ],
+          [
+            "o",
+            "阿尔特曼在 2016 年提出了一个诚实的问题，并为一个认真的答案出了钱，而答案并没有简单地迎合这个想法。研究者把无效结果和好的结果一起发表，把主要估计往上修正，还开放了数据。这比任何单个标题都更有价值。"
+          ],
+          [
+            "o",
+            "如果你要转述这项研究的一句话，请说准确的那句：1,000 名较低收入的人连续三年每月领取 1,000 美元；他们每周少工作约 1.3 小时，钱主要花在基本开支上，有一年时间感觉更好，许多人用这笔钱来选择如何安排自己的时间。像本站看待每一份免费午餐那样来读它：谁出钱，谁领钱，持续多久。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "जुलाई 2024 में अमेरिका में बिना शर्त नकद पर हुए सबसे बड़े अध्ययन के नतीजे आए, वही अध्ययन जिसे सैम ऑल्टमैन का समर्थन था। कुछ ही दिनों में उन्हीं आँकड़ों पर उलटी सुर्ख़ियाँ छपीं। एक खेमे ने पढ़ा “मुफ़्त पैसा लोगों से कम काम करवाता है”। दूसरे ने पढ़ा “नकद लोगों को आज़ादी देता है”। दोनों एक ही शोधपत्रों का हवाला दे रहे थे।"
+          ],
+          [
+            "p",
+            "यह निबंध उन्हीं शोधपत्रों पर लौटता है: अध्ययन क्या था, प्राप्तकर्ताओं ने पैसे और समय के साथ क्या किया, क्या नहीं बदला, और यह बेसिक इनकम के बारे में क्या बताता है और क्या नहीं। यह यह भी पूछता है कि एक AI कंपनी के मुख्य कार्यकारी इसे क्यों जानना चाहते थे।"
+          ],
+          [
+            "h",
+            "अध्ययन क्या था"
+          ],
+          [
+            "p",
+            "OpenResearch, एक लैब जो Y Combinator Research के रूप में शुरू हुई थी, ने उत्तरी इलिनॉय (शिकागो क्षेत्र समेत) और उत्तर-मध्य टेक्सस (डलास क्षेत्र समेत) की 19 काउंटियों के शहरों, उपनगरों और ग्रामीण इलाक़ों से 21 से 40 साल के 3,000 ऐसे लोगों को शामिल किया जिनकी 2019 की घरेलू आय संघीय गरीबी रेखा के 300% से ज़्यादा नहीं थी।[1][2] नामांकन अक्टूबर 2019 से अक्टूबर 2020 तक चला। फिर लोगों को बेतरतीब ढंग से बाँटा गया: नवंबर 2020 से अक्टूबर 2023 तक 1,000 लोगों को हर महीने $1,000 मिले और नियंत्रण समूह के 2,000 लोगों को हर महीने $50। भुगतान दो स्थानीय गैर-लाभकारी संस्थाओं ने किए।[2]"
+          ],
+          [
+            "p",
+            "पैसा पूरी तरह बिना शर्त था। काम या ख़र्च को लेकर कोई शर्त नहीं थी, और कोई सर्वे का जवाब देता रहे या नहीं, भुगतान जारी रहे।[1][2] 2019 में प्रतिभागियों की घरेलू आय औसतन लगभग $29,900 थी, इसलिए $1,000 महीना घर की आय में लगभग 40% की बढ़ोतरी थी।[2] विश्लेषण पहले से पंजीकृत था, और अंत में सर्वे 96% प्रतिभागियों तक पहुँचा।[2]"
+          ],
+          [
+            "p",
+            "हमारे हिसाब से सिर्फ़ भुगतान ही लगभग $3.96 करोड़ बनते हैं: 1,000 प्राप्तकर्ताओं के लिए $3.6 करोड़ और नियंत्रण समूह के लिए $36 लाख। Forbes ने बताया कि OpenResearch और उससे जुड़ी संस्थाओं ने 2015 से लगभग $6 करोड़ जुटाए, जिनमें ऑल्टमैन के दान किए $1.4 करोड़, OpenAI की गैर-लाभकारी शाखा के $1 करोड़, जैक डोर्सी के Start Small के $1.5 करोड़ और GitLab के सह-संस्थापक सिड सिजब्रांडिज के $65 लाख शामिल हैं।[3] शोध में नेशनल साइंस फ़ाउंडेशन के अनुदान का भी आभार जताया गया है।[2]"
+          ],
+          [
+            "p",
+            "इसकी वजह जनवरी 2016 तक जाती है, जब ऑल्टमैन ने Y Combinator के ब्लॉग पर इस अध्ययन की घोषणा की। उन्होंने लिखा कि “जैसे-जैसे तकनीक पारंपरिक नौकरियाँ ख़त्म करती जा रही है और भारी नई दौलत पैदा हो रही है”, बेसिक इनकम का कोई न कोई रूप राष्ट्रीय स्तर पर आने की संभावना है, और “यह कैसे काम करेगी, इस पर काफ़ी कम डेटा है”। उन्होंने यह भी पूछा: “क्या लोग बैठकर वीडियो गेम खेलते हैं, या नई चीज़ें बनाते हैं?”[4]"
+          ],
+          [
+            "h",
+            "सुर्ख़ी: थोड़ा कम काम"
+          ],
+          [
+            "p",
+            "एवा विवाल्ट, एलिज़ाबेथ रोड्स, अलेक्ज़ेंडर बार्टिक, डेविड ब्रूकमैन, पैट्रिक क्राउज़ और सारा मिलर का रोज़गार वाला शोधपत्र पाता है कि सर्वे में प्राप्तकर्ताओं ने नियंत्रण समूह से हफ़्ते में लगभग 1.3 घंटे कम काम किया, और फ़ोन ऐप की टाइम डायरी और समय-उपयोग सर्वे में 1.4 से 1.5 घंटे कम। सर्वे में उनके रोज़गार में होने की संभावना 2.3 प्रतिशत अंक कम थी। भुगतान को छोड़कर उनकी अपनी आय साल में लगभग $1,900 कम थी। उनके साथियों ने भी लगभग उतने ही घंटे घटाए: प्रतिभागी और साथी ने मिलकर हफ़्ते में 2.1 घंटे कम काम किया।[2]"
+          ],
+          [
+            "p",
+            "दूसरे शब्दों में, मिले हर डॉलर पर घर की दूसरे स्रोतों से आय लगभग 28 सेंट घटी, और प्रतिभागी की अपनी आय लगभग 16 सेंट। लेखक घंटों और आय पर असर को नियंत्रण समूह के मुक़ाबले 5 से 6% की गिरावट बताते हैं, “एक मध्यम असर”।[2]"
+          ],
+          [
+            "p",
+            "सुर्ख़ी के लिए दो बातें मायने रखती हैं। पहली, तीन सालों में दोनों समूहों में रोज़गार बढ़ा, प्राप्तकर्ताओं में 58% से 72% और नियंत्रण समूह में 59% से 74%; बस नियंत्रण समूह में ज़्यादा बढ़ा।[5] भुगतान जोड़कर तीसरे साल में प्राप्तकर्ताओं की अपनी आय फिर भी नियंत्रण समूह से लगभग $10,000 ज़्यादा थी।[5] दूसरी, आँकड़े बदले हैं। शोधपत्र के पहले संस्करण (जुलाई 2024) में आय में गिरावट लगभग $1,500 सालाना और श्रम बाज़ार भागीदारी में गिरावट 2.0 प्रतिशत अंक थी। अगस्त 2026 का संशोधन, जिसके पसंदीदा माप सर्वे के जवाबों को राज्य के बेरोज़गारी बीमा रिकॉर्ड से जोड़ते हैं, इन्हें लगभग $1,900 और 4.2 प्रतिशत अंक बताता है।[2]"
+          ],
+          [
+            "o",
+            "जहाँ श्रेय बनता है, वहाँ देना चाहिए: शोधकर्ताओं ने अपना मुख्य असर ख़ुद ऊपर संशोधित किया, उस दिशा में जो इस अध्ययन से जुड़े मक़सद के लिए कम सुविधाजनक है, और बड़े आँकड़े सार में रखे। अध्ययन इसी के लिए होता है।"
+          ],
+          [
+            "h",
+            "उन्होंने समय का क्या किया"
+          ],
+          [
+            "p",
+            "शोधपत्र के अनुसार, काम से बचे घंटे ज़्यादातर फ़ुरसत में गए, साथ में कुछ अतिरिक्त समय गाड़ी चलाने और दूसरी गतिविधियों में। लेखक बच्चों की देखभाल, व्यायाम, नौकरी की तलाश या आत्म-सुधार में लगे समय में छोटे बदलावों को भी ख़ारिज कर सकते हैं।[2] OpenResearch का सारांश फ़ुरसत को और बाँटता है: सबसे ज़्यादा बढ़ोतरी गाड़ी चलाने, सामाजिक फ़ुरसत (दूसरों के साथ बिताया समय: मेलजोल, मनोरंजन, भोजन) और किराने की ख़रीदारी जैसे रोज़मर्रा के कामों में हुई।[5]"
+          ],
+          [
+            "p",
+            "नौकरी की तलाश रुकी नहीं, उसका रूप बदला। बिना काम के दौर नियंत्रण समूह के औसत 7.8 महीनों से लगभग 0.8 महीने लंबे थे, और प्राप्तकर्ताओं के हाल में किसी नौकरी के लिए आवेदन करने की संभावना ज़्यादा थी, पर उन्होंने कम पदों के लिए आवेदन किया।[2] काम ढूँढ़ने वालों में प्राप्तकर्ताओं के यह कहने की संभावना 5.5 प्रतिशत अंक ज़्यादा थी कि वे जो भी नौकरी लें, उसमें दिलचस्प या सार्थक काम होना ज़रूरी है।[5] फिर भी, मापों की एक लंबी सूची में नौकरी की गुणवत्ता नहीं सुधरी, और शोधपत्र उसमें छोटे सुधार को भी, या 58 सेंट प्रति घंटे से ज़्यादा की वेतन बढ़ोतरी को भी, ख़ारिज कर सकता है।[2]"
+          ],
+          [
+            "p",
+            "औसत बहुत अलग-अलग ज़िंदगियों को छिपा देते हैं। एक प्राप्तकर्ता, नेथन, ने अपने चार साल के बेटे के साथ समय बिताने के लिए अपना 50 घंटे का हफ़्ता आधा कर दिया। लीसा ने आगे बढ़ने की गुंजाइश वाली कम वेतन की नौकरी ली, अंतर भुगतान से पूरा किया, और दो साल बाद उसका वेतन छह अंकों के क़रीब था। हफ़्ते में 72 घंटे काम कर रहे शॉन ने थककर टूटने से पहले विराम लेने का फ़ैसला किया।[5] समूहों के हिसाब से पैटर्न खोजपरक हैं, लेकिन काम में गिरावट 30 से कम उम्र वालों, अकेले माता-पिता और शुरुआत में सबसे ज़्यादा घरेलू आय वालों में केंद्रित थी; 30 से ऊपर के प्राप्तकर्ताओं के रोज़गार या घंटों पर कोई उल्लेखनीय असर नहीं था।[5] कम उम्र के प्रतिभागियों में आगे की पढ़ाई पर अनुमानित असर भी बड़ा था, हालाँकि कुल मिलाकर डिग्रियों पर कोई उल्लेखनीय असर नहीं था।[2]"
+          ],
+          [
+            "h",
+            "उन्होंने पैसे का क्या किया"
+          ],
+          [
+            "p",
+            "औसतन प्राप्तकर्ताओं ने नियंत्रण समूह से हर महीने $310 ज़्यादा ख़र्च किए, और उसका आधे से ज़्यादा हिस्सा बुनियादी ज़रूरतों पर गया: खाना ($67), किराया ($52) और परिवहन ($50)। नियंत्रण समूह के ख़र्च की तुलना में सबसे बड़ी बढ़ोतरी दूसरों को आर्थिक मदद में थी, जैसे परिवार और दोस्तों को तोहफ़े और उधार: हर महीने $22, यानी 26% ज़्यादा।[6] ख़र्च में बढ़ोतरी उन लोगों से आई जो शुरुआत में गरीबी रेखा से नीचे या उसके क़रीब थे; सबसे ज़्यादा आय वाले समूह में कुल ख़र्च पर असर छोटा था और उल्लेखनीय नहीं था।[6]"
+          ],
+          [
+            "p",
+            "उपभोग वाला शोधपत्र अनुमान लगाता है कि ख़र्च हर महीने कम से कम $300 बढ़ा, ज़्यादातर आवास, खाने और गाड़ियों पर, और प्राप्तकर्ताओं के नए घर और नए मोहल्ले में जाने की संभावना ज़्यादा थी। ख़ुद बताई गई वित्तीय सेहत और क्रेडिट स्कोर सुधरे। लेकिन संपत्ति में छोटी बढ़त ज़्यादा क़र्ज़ से बराबर हो गई, जिससे कुल संपत्ति लगभग नहीं बदली, और बकाया भुगतानों, दिवालियापन या फ़ोरक्लोज़र पर कोई असर नहीं पड़ा। लेखक निष्कर्ष निकालते हैं कि बड़े अस्थायी भुगतान “युवा, कम आय वाले परिवारों की वित्तीय स्थिति में शायद स्थायी सुधार न लाएँ”।[7]"
+          ],
+          [
+            "h",
+            "सेहत, बच्चे और काम के प्रति नज़रिया"
+          ],
+          [
+            "p",
+            "सेहत: भुगतान से तनाव और खाद्य सुरक्षा में बड़े लेकिन कम समय के सुधार आए, और अस्पताल, आपातकालीन और दाँतों की देखभाल का ज़्यादा इस्तेमाल हुआ। पहले साल के बाद इनसे ख़ुद बताई गई शारीरिक सेहत, ख़ून की जाँच के माप या मानसिक सेहत में सुधार नहीं हुआ, और घर के बच्चों की सेहत पर कोई असर नहीं पड़ा।[8] OpenResearch बताता है कि पहला साल महामारी राहत के साथ पड़ा और बढ़ती क़ीमतों और उस मदद के ख़त्म होने ने शुरुआती बढ़त को घिस दिया हो सकता है, लेकिन वह कहता है कि वह पक्के तौर पर नहीं कह सकता कि ये सुधार क्यों फीके पड़े।[8]"
+          ],
+          [
+            "p",
+            "बच्चे: 2025 का एक शोधपत्र पाता है कि हर महीने $1,000 पाने वाले माता-पिता ने बच्चों पर ज़्यादा ख़र्च किया और उन पर ज़्यादा क़रीबी निगरानी की बात कही। उन्होंने बच्चों में विकास से जुड़ी ज़्यादा कठिनाइयाँ और तनाव भी बताए, जो लेखकों के मुताबिक़ उन्हें ज़्यादा ध्यान से देखने का नतीजा हो सकता है। स्कूल के रिकॉर्ड में ज़्यादातर नतीजे उल्लेखनीय रूप से नहीं बदले।[9]"
+          ],
+          [
+            "p",
+            "राजनीति और काम: दिसंबर 2024 का एक शोधपत्र पाता है कि मतदान या राजनीतिक भागीदारी पर कोई असर नहीं पड़ा और राजनीतिक विचारों में कम ही बदलाव आए। एक नतीजा रूढ़ धारणा के उलट जाता है: प्राप्तकर्ता काम को व्यक्तियों और समाज के लिए थोड़ा ज़्यादा अहम मानने लगे, और Medicaid के लिए काम की शर्तों का समर्थन करने की उनकी संभावना ज़्यादा थी।[10] ऑल्टमैन के दूसरे सवाल, यानी नई चीज़ें बनाने, पर: प्राप्तकर्ताओं के पास कारोबार का कोई विचार होने और उसे शुरू करने का इरादा बताने की संभावना ज़्यादा थी, लेकिन औसतन उनके कारोबार शुरू करने की संभावना उल्लेखनीय रूप से ज़्यादा नहीं थी। एक खोजपरक विश्लेषण में अश्वेत और महिला प्राप्तकर्ताओं के तीसरे साल तक कोई कारोबार शुरू करने या शुरू करने में मदद करने की संभावना ज़्यादा थी।[11]"
+          ],
+          [
+            "h",
+            "एक ही नतीजे, दो सुर्ख़ियाँ"
+          ],
+          [
+            "p",
+            "उस समय की कवरेज ज़्यादातर सावधान थी। NPR ने बताया कि प्राप्तकर्ताओं ने “औसतन हफ़्ते में लगभग एक घंटा कम” काम किया और ज़्यादातर बुनियादी ज़रूरतों पर ख़र्च किया, और कि रिपोर्ट ख़ुद कहती है कि उसके नतीजे “दोनों पक्षों को समर्थन देते हैं”। गारंटीड इनकम के लिए अभियान चलाने वाले Economic Security Project के सह-संस्थापक क्रिस ह्यूज़ ने कहा: “मुझे उम्मीद है कि लोग इस अध्ययन और दूसरे अध्ययनों से यह सीख ले रहे हैं कि गारंटीड इनकम अकेले काम नहीं करेगी।” American Enterprise Institute के माइकल स्ट्रेन ने कम आय वाले कामगारों के लिए बड़े टैक्स क्रेडिट को बेहतर माना, जो सिर्फ़ नौकरी करने वालों को मिलें।[12]"
+          ],
+          [
+            "p",
+            "CBS ने विवाल्ट को उद्धृत किया: “एक अर्थशास्त्री के नज़रिए से यह एक मध्यम असर है।” उन्होंने खोए घंटों को नाकामी नहीं माना: “लोग ज़्यादा चीज़ें कर रहे हैं, और अगर नतीजे कहते हैं कि लोग ज़्यादा फ़ुरसत को अहमियत देते हैं — कि यही उनकी भलाई बढ़ाता है — तो यह सकारात्मक है।” लेकिन इस उम्मीद पर कि सहारा मिलने से बेहतर नौकरियाँ मिलेंगी, उन्होंने कहा: “हमें रोज़गार की गुणवत्ता पर कोई भी असर बिल्कुल नहीं मिला।”[13] उसी CBS लेख में यह भी कहा गया कि 3,000 प्रतिभागियों को हर महीने $1,000 मिले; असल में 1,000 को मिले, और बाक़ी 2,000 को $50। यह आम चूक है, और इससे अध्ययन असल से तीन गुना बड़ा लगता है।[13][2] उसी सितंबर Fortune में लिखते हुए गैर-लाभकारी संस्था UpTogether के मुख्य कार्यकारी हेसूस गेरेना ने तर्क दिया कि पत्रकारों और शोधकर्ताओं के निकाले निष्कर्ष “गरीबी झेल रहे लोगों के बारे में दर्दनाक रूढ़ धारणाओं में जड़े हैं, जैसे उन्हें आलसी दिखाना”।[14]"
+          ],
+          [
+            "o",
+            "दोनों छोटे संस्करण कुछ न कुछ खो देते हैं। “मुफ़्त पैसा लोगों को आलसी बनाता है” घंटों में लगभग 5% की गिरावट से मेल नहीं खाता, उस दौर में जब दोनों समूहों में रोज़गार बढ़ा, उन लोगों में जो काम को थोड़ा ज़्यादा अहमियत देने लगे। “नकद ज़िंदगियाँ बदल देता है” उस अध्ययन से मेल नहीं खाता जिसमें बेहतर नौकरियाँ नहीं मिलीं, सेहत या भलाई में कोई स्थायी बढ़त नहीं हुई, और कुल संपत्ति मुश्किल से हिली। सबूत जो दिखाते हैं वह छोटा और ज़्यादा काम का है: लोगों ने पैसे को आय की तरह लिया, उसका ज़्यादातर हिस्सा बुनियादी ज़रूरतों पर ख़र्च किया, और उनमें से कुछ ने उससे अपना समय वापस ख़रीदा। वह समय “बर्बादी” है या “आज़ादी”, यह मूल्यों का फ़ैसला है जो डेटा आपके लिए नहीं कर सकता।"
+          ],
+          [
+            "h",
+            "क्या यह बेसिक इनकम है?"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को “एक नियमित नकद भुगतान, जो बिना आय-जाँच या काम की शर्त के, बिना शर्त सभी को व्यक्तिगत आधार पर दिया जाए” के रूप में परिभाषित करता है, और पाँच विशेषताएँ गिनाता है: नियमित, नकद, व्यक्तिगत, सार्वभौमिक और बिना शर्त।[15]"
+          ],
+          [
+            "p",
+            "नियमित? हाँ, हर महीने। नकद? हाँ। व्यक्तिगत? हाँ, भुगतान व्यक्ति को हुआ, घर को नहीं। बिना शर्त? हाँ, काम या ख़र्च का कोई नियम नहीं। सार्वभौमिक? नहीं। यह 21 से 40 साल के, बेतरतीब ढंग से चुने गए 1,000 कम आय वाले वयस्कों को तीन साल के लिए मिला।"
+          ],
+          [
+            "o",
+            "तो यह गारंटीड इनकम का परीक्षण था, बेसिक इनकम नहीं, और इससे तीन सीमाएँ निकलती हैं। पहली, यह अस्थायी था, और सबको पता था कि यह कब ख़त्म होगा; अगर भुगतान जीवन भर के लिए होता, तो लोग किसी भी दिशा में अलग व्यवहार कर सकते थे। दूसरी, हर जगह कुछ ही लोगों को यह मिला, इसलिए यह नहीं दिखा सकता कि सबको भुगतान करने से किराए, क़ीमतों या वेतन पर क्या असर होगा, या उसके लिए पैसा जुटाने वाले टैक्स क्या बदलेंगे। ऑल्टमैन की अपनी पोस्ट ने कहा था कि जीवन-यापन की कुल लागत से जुड़े सवाल “हमारे दायरे से बाहर हैं, पर ज़ाहिर है अहम हैं”।[4] तीसरी, यह महामारी और उसके बाद के दौर से गुज़रा, हालाँकि शोधपत्र नोट करता है कि उसके अनुमान ज़्यादातर 2022 और 2023 को दर्शाते हैं।[2] एक रैंडमाइज़्ड परीक्षण जो अच्छी तरह दिखा सकता है, वह यह है कि लोग अतिरिक्त आय पर व्यक्तिगत रूप से कैसी प्रतिक्रिया देते हैं, और किसी बड़ी योजना के किसी भी डिज़ाइन को ठीक यही आँकड़ा चाहिए।"
+          ],
+          [
+            "p",
+            "OpenResearch कहता है कि भुगतान ख़त्म होने के बाद भी उसने 2025 तक प्रतिभागियों का सर्वे जारी रखा।[1] हमें उस दौर के प्रकाशित नतीजे अभी नहीं मिले हैं। उसने डेटा उपयोग समझौते के तहत सर्वे डेटा शोधकर्ताओं को उपलब्ध कराया है, और रोज़गार वाले शोधपत्र का कोड खुला है; दोनों {हमारी ओपन डेटा सूची|/open-source/#data-openresearch-ucs} में हैं।"
+          ],
+          [
+            "h",
+            "AI के लिए यह क्यों मायने रखता है"
+          ],
+          [
+            "p",
+            "ऑल्टमैन का 2016 का सवाल तकनीक और नौकरियों को लेकर चिंता से आया था।[4] 2021 में “Moore’s Law for Everything” में वे और आगे गए और अमेरिकन इक्विटी फ़ंड का प्रस्ताव रखा, जो बड़ी कंपनियों और ज़मीन पर टैक्स से भरा जाए और हर वयस्क को सालाना हिस्सा दे।[16] {यूनिवर्सल हाई इनकम पर हमारे निबंध|/essays/universal-high-income/} ने उस योजना को देखा और पूछा कि पैसा कौन देगा। तब से पैसा छोटे पैमाने पर दिखने लगा है: {AI Dividend|/timeline/#tl-ai-dividend} AI से प्रभावित कामगारों को एक साल तक हर महीने $1,000 देता है, और Anthropic ने एक फ़ंड के लिए शेयर अलग रखे हैं जो {ख़ास आबादी को सीधा वितरण|/essays/public-benefit-fund/} कर सकता है।"
+          ],
+          [
+            "o",
+            "AI से वित्तपोषित भुगतान डिज़ाइन करने वाले किसी भी व्यक्ति के लिए यह अध्ययन फ़ैसला नहीं, योजना बनाने के आँकड़े देता है। ज़्यादातर पैसा किराए, खाने और परिवहन पर जाता है। प्राप्तकर्ता और उनके साथी थोड़ा कम काम करते हैं, इसलिए लागत में हर चुकाए गए डॉलर पर घर की दूसरी आय का लगभग 28 सेंट का नुक़सान गिनना होगा। कम समय की राहत बड़ी और असली है; सेहत, नौकरियों या दौलत में स्थायी बदलाव ऐसा कुछ नहीं है जो तीन साल के $1,000 ने अपने दम पर दिया हो। सबको मिलने वाला स्थायी डिविडेंड एक अलग नीति है और अलग व्यवहार कर सकता है, लेकिन लोग कैसी प्रतिक्रिया देते हैं, इस पर यह हमारे पास सबसे अच्छा सबूत है।"
+          ],
+          [
+            "h",
+            "इससे क्या सीखें"
+          ],
+          [
+            "o",
+            "ऑल्टमैन ने 2016 में एक ईमानदार सवाल पूछा और एक सावधान जवाब के लिए पैसा दिया, और जवाब ने इस विचार की बस तारीफ़ नहीं की। शोधकर्ताओं ने अच्छे नतीजों के साथ शून्य नतीजे भी प्रकाशित किए, अपना मुख्य अनुमान ऊपर संशोधित किया, और अपना डेटा खोला। यह किसी भी एक सुर्ख़ी से ज़्यादा क़ीमती है।"
+          ],
+          [
+            "o",
+            "अगर आप इस अध्ययन से एक पंक्ति साझा करें, तो सही वाली करें: कम आय वाले 1,000 लोगों को तीन साल तक हर महीने $1,000 मिले; उन्होंने हफ़्ते में लगभग 1.3 घंटे कम काम किया, ज़्यादातर बुनियादी ज़रूरतों पर ख़र्च किया, एक साल तक बेहतर महसूस किया, और कई ने पैसे से यह चुना कि वे अपना समय कैसे बिताएँ। इसे वैसे पढ़ें जैसे यह साइट हर फ़्री लंच को पढ़ती है: पैसा किसने दिया, किसे मिला, और कितने समय तक।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "En julio de 2024 se publicaron los resultados del mayor estudio sobre dinero sin condiciones de Estados Unidos, el que había respaldado Sam Altman. En pocos días, las mismas cifras sirvieron para titulares opuestos. Un bando leyó «el dinero gratis hace que la gente trabaje menos». El otro leyó «el dinero da libertad a la gente». Los dos citaban los mismos estudios."
+          ],
+          [
+            "p",
+            "Este ensayo vuelve a esos estudios: qué fue el estudio, qué hicieron los beneficiarios con el dinero y con el tiempo, qué no cambió y qué nos dice, y qué no, sobre la renta básica. También se pregunta por qué el director ejecutivo de una empresa de IA quería saberlo."
+          ],
+          [
+            "h",
+            "Qué fue el estudio"
+          ],
+          [
+            "p",
+            "OpenResearch, un laboratorio que nació como Y Combinator Research, inscribió a 3.000 personas de 21 a 40 años cuyos ingresos familiares en 2019 no superaban el 300 % del umbral federal de pobreza, en 19 condados del norte de Illinois (incluida la zona de Chicago) y del centro-norte de Texas (incluida la zona de Dallas), en ciudades, suburbios y zonas rurales.[1][2] La inscripción se hizo de octubre de 2019 a octubre de 2020. Después se repartió a las personas al azar: 1.000 recibieron 1.000 $ al mes y 2.000 recibieron 50 $ al mes como grupo de control, de noviembre de 2020 a octubre de 2023. Dos organizaciones locales sin ánimo de lucro hicieron los pagos.[2]"
+          ],
+          [
+            "p",
+            "El dinero era totalmente incondicional. No se exigía nada sobre el trabajo ni el gasto, y los pagos continuaban aunque alguien dejara de responder a las encuestas.[1][2] Los ingresos familiares de los participantes eran en promedio de unos 29.900 $ en 2019, así que 1.000 $ al mes suponían aproximadamente un aumento del 40 % para el hogar.[2] El análisis se registró previamente, y al final las encuestas llegaron al 96 % de los participantes.[2]"
+          ],
+          [
+            "p",
+            "Según nuestras cuentas, solo las transferencias suman unos 39,6 millones de dólares: 36 millones para los 1.000 beneficiarios y 3,6 millones para el grupo de control. Forbes informó de que OpenResearch y sus entidades habían recaudado unos 60 millones de dólares desde 2015, entre ellos 14 millones donados por Altman, 10 millones del brazo sin ánimo de lucro de OpenAI, 15 millones de Start Small, de Jack Dorsey, y 6,5 millones del cofundador de GitLab Sid Sijbrandij.[3] La propia investigación también agradece una subvención de la National Science Foundation.[2]"
+          ],
+          [
+            "p",
+            "El motivo se remonta a enero de 2016, cuando Altman anunció el estudio en el blog de Y Combinator. Escribió que, «a medida que la tecnología siga eliminando empleos tradicionales y se cree una enorme riqueza nueva», era probable que alguna versión de la renta básica apareciera a escala nacional, y que había «bastante pocos datos sobre cómo funcionaría». También preguntó: «¿La gente se queda sentada jugando a videojuegos o crea cosas nuevas?»[4]"
+          ],
+          [
+            "h",
+            "El titular: un poco menos de trabajo"
+          ],
+          [
+            "p",
+            "El estudio sobre empleo, de Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause y Sarah Miller, halla que los beneficiarios trabajaron unas 1,3 horas semanales menos que el grupo de control según las encuestas, y entre 1,4 y 1,5 horas menos según los diarios de tiempo de la aplicación móvil y las encuestas de uso del tiempo. En las encuestas, su probabilidad de tener empleo era 2,3 puntos porcentuales menor. Sus propios ingresos, sin contar las transferencias, fueron unos 1.900 $ al año más bajos. Sus parejas redujeron sus horas en una cantidad similar: juntos, participante y pareja trabajaron 2,1 horas semanales menos.[2]"
+          ],
+          [
+            "p",
+            "Dicho de otro modo, por cada dólar recibido, los ingresos del hogar de otras fuentes bajaron unos 28 centavos, y los ingresos propios del participante, unos 16 centavos. Los autores describen el efecto sobre las horas y los ingresos como un descenso del 5 al 6 % respecto al grupo de control, «un efecto moderado».[2]"
+          ],
+          [
+            "p",
+            "Dos detalles importan para el titular. Primero, el empleo aumentó en ambos grupos durante los tres años, del 58 % al 72 % entre los beneficiarios y del 59 % al 74 % en el grupo de control; simplemente, el grupo de control subió más.[5] Contando las transferencias, los ingresos propios de los beneficiarios en el tercer año seguían siendo unos 10.000 $ más altos que los del grupo de control.[5] Segundo, las cifras han cambiado. La primera versión del estudio (julio de 2024) situaba la caída de ingresos en unos 1.500 $ al año y la bajada de la participación en el mercado laboral en 2,0 puntos porcentuales. La revisión de agosto de 2026, cuyas medidas preferidas combinan las respuestas a las encuestas con los registros estatales del seguro de desempleo, las sitúa en unos 1.900 $ y 4,2 puntos porcentuales.[2]"
+          ],
+          [
+            "o",
+            "Hay que reconocerlo: los investigadores corrigieron al alza su propio efecto principal, en la dirección menos conveniente para la causa a la que se asocia el estudio, y pusieron las cifras más altas en el resumen. Para eso sirve un estudio."
+          ],
+          [
+            "h",
+            "Qué hicieron con el tiempo"
+          ],
+          [
+            "p",
+            "Según el estudio, las horas liberadas del trabajo se dedicaron sobre todo al ocio, junto con algo más de tiempo conduciendo y en otras actividades. Los autores pueden descartar incluso cambios pequeños en el tiempo dedicado al cuidado de los hijos, el ejercicio, la búsqueda de empleo o la superación personal.[2] El resumen de OpenResearch desglosa más el ocio: los mayores aumentos se dieron en conducir, el ocio social (tiempo con otras personas: vida social, recreo, comidas) y los recados, como hacer la compra.[5]"
+          ],
+          [
+            "p",
+            "La búsqueda de empleo cambió de forma en lugar de detenerse. Los periodos sin trabajo fueron unos 0,8 meses más largos que la media de 7,8 meses del grupo de control, y los beneficiarios tenían más probabilidad de haber solicitado un empleo recientemente, pero solicitaron menos puestos.[2] Entre quienes buscaban trabajo, los beneficiarios tenían 5,5 puntos porcentuales más de probabilidad de decir que un trabajo interesante o con sentido era imprescindible en cualquier empleo que aceptaran.[5] Aun así, en una larga lista de medidas, la calidad del empleo no mejoró, y el estudio puede descartar incluso pequeñas mejoras en ella, o subidas salariales de más de 58 centavos por hora.[2]"
+          ],
+          [
+            "p",
+            "Los promedios esconden vidas muy distintas. Un beneficiario, Nathan, redujo a la mitad su semana de 50 horas para pasar tiempo con su hijo de cuatro años. Lisa aceptó un empleo peor pagado con margen para crecer, usó las transferencias para cubrir la diferencia y, dos años después, tenía un sueldo cercano a las seis cifras. Shawn, que trabajaba 72 horas a la semana, decidió tomarse un descanso antes de quemarse.[5] Los patrones por grupo son exploratorios, pero la caída del trabajo se concentró entre los menores de 30 años, las familias monoparentales y quienes tenían los ingresos familiares más altos al principio; para los beneficiarios mayores de 30 no hubo un efecto significativo en el empleo ni en las horas.[5] Los participantes más jóvenes también mostraron mayores efectos estimados en la continuación de los estudios, aunque no hubo un efecto significativo en los títulos en general.[2]"
+          ],
+          [
+            "h",
+            "Qué hicieron con el dinero"
+          ],
+          [
+            "p",
+            "En promedio, los beneficiarios gastaron 310 $ al mes más que el grupo de control, y más de la mitad fue a lo básico: comida (67 $), alquiler (52 $) y transporte (50 $). El mayor aumento en relación con lo que gastaba el grupo de control fue el apoyo económico a otras personas, como regalos y préstamos a familiares y amigos: 22 $ al mes, un 26 % más.[6] Quienes partían por debajo del umbral de pobreza o cerca de él impulsaron el aumento del gasto; en el grupo de ingresos más altos, el efecto sobre el gasto total fue pequeño y no significativo.[6]"
+          ],
+          [
+            "p",
+            "El estudio sobre consumo estima que el gasto aumentó al menos 300 $ al mes, sobre todo en vivienda, comida y coches, y que los beneficiarios tenían más probabilidad de mudarse a una nueva casa y a un nuevo barrio. La salud financiera declarada y la puntuación de crédito mejoraron. Pero los pequeños aumentos de activos se compensaron con más deuda, de modo que el patrimonio neto apenas cambió, y no hubo efecto en impagos, quiebras ni ejecuciones hipotecarias. Los autores concluyen que las grandes transferencias temporales «pueden no causar mejoras persistentes en la situación financiera de los hogares jóvenes de bajos ingresos».[7]"
+          ],
+          [
+            "h",
+            "Salud, hijos y actitudes ante el trabajo"
+          ],
+          [
+            "p",
+            "Salud: las transferencias trajeron mejoras grandes pero breves en el estrés y la seguridad alimentaria, y un mayor uso de la atención hospitalaria, de urgencias y dental. No mejoraron la salud física declarada, los indicadores de los análisis de sangre ni la salud mental después del primer año, y no hubo efecto en la salud de los niños del hogar.[8] OpenResearch señala que el primer año coincidió con las ayudas de la pandemia y que la subida de precios y el fin de esas ayudas pueden haber erosionado las primeras mejoras, pero dice que no puede saber con certeza por qué se desvanecieron.[8]"
+          ],
+          [
+            "p",
+            "Hijos: un estudio de 2025 halla que los padres que recibieron 1.000 $ al mes gastaron más en sus hijos y declararon una supervisión más cercana. También declararon más dificultades de desarrollo y estrés en sus hijos, algo que, según sugieren los autores, puede deberse a que los observaban más de cerca. La mayoría de los resultados de los registros escolares no cambiaron de forma apreciable.[9]"
+          ],
+          [
+            "p",
+            "Política y trabajo: un estudio de diciembre de 2024 no halla efecto en el voto ni en la participación política, y pocos cambios en las opiniones políticas. Un resultado va contra el estereotipo: los beneficiarios pasaron a considerar el trabajo algo más importante para las personas y para la sociedad, y tenían más probabilidad de apoyar requisitos de trabajo para Medicaid.[10] Sobre la otra pregunta de Altman, crear cosas nuevas, los beneficiarios tenían más probabilidad de tener una idea de negocio y de decir que pensaban montar uno, pero en promedio no tenían una probabilidad significativamente mayor de crear una empresa. En un desglose exploratorio, los beneficiarios negros y las mujeres tenían más probabilidad de haber creado o ayudado a crear una para el tercer año.[11]"
+          ],
+          [
+            "h",
+            "Los mismos resultados, dos titulares"
+          ],
+          [
+            "p",
+            "La cobertura de entonces fue en general cuidadosa. NPR informó de que los beneficiarios trabajaron «una hora o así menos a la semana de media» y gastaron sobre todo en lo básico, y de que el propio informe dice que sus resultados «dan argumentos a ambas partes». Chris Hughes, cofundador del Economic Security Project, que hace campaña por la renta garantizada, dijo: «Espero que la gente saque de este estudio y de otros que una renta garantizada no funcionará sola». Michael Strain, del American Enterprise Institute, prefería créditos fiscales mayores para los trabajadores de bajos ingresos, pagados solo a quienes aceptan un empleo.[12]"
+          ],
+          [
+            "p",
+            "CBS citó a Vivalt: «Desde el punto de vista de un economista, es un efecto moderado». No veía las horas perdidas como un fracaso: «La gente hace más cosas, y si los resultados dicen que la gente valora tener más tiempo libre —que eso es lo que aumenta su bienestar—, eso es positivo». Pero sobre la esperanza de que un colchón llevara a mejores empleos, dijo: «no encontramos ningún efecto en absoluto en la calidad del empleo».[13] El mismo artículo de CBS decía también que 3.000 participantes recibieron 1.000 $ al mes; en realidad fueron 1.000, y los otros 2.000 recibieron 50 $. Es un error frecuente, y hace que el estudio parezca tres veces mayor de lo que fue.[13][2] En Fortune, ese septiembre, Jesús Gerena, director ejecutivo de la organización sin ánimo de lucro UpTogether, sostuvo que las conclusiones que sacaron periodistas e investigadores estaban «arraigadas en estereotipos dolorosos sobre las personas que viven en la pobreza, como presentarlas como perezosas».[14]"
+          ],
+          [
+            "o",
+            "Las dos versiones cortas pierden algo. «El dinero gratis vuelve perezosa a la gente» no encaja con una caída de alrededor del 5 % en las horas, en un periodo en que el empleo subió en ambos grupos, entre personas que llegaron a valorar el trabajo un poco más. «El dinero transforma vidas» no encaja con un estudio que no encontró mejores empleos, ni mejoras duraderas en salud o bienestar, y sí un patrimonio neto que apenas se movió. Lo que muestran los datos es más pequeño y más útil: la gente trató el dinero como ingreso, gastó la mayor parte en lo básico y algunos lo usaron para recuperar tiempo. Si ese tiempo es «desperdicio» o «libertad» es un juicio de valor que los datos no pueden hacer por ti."
+          ],
+          [
+            "h",
+            "¿Es esto renta básica?"
+          ],
+          [
+            "p",
+            "La Red Mundial de Renta Básica (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todos de forma individual, sin comprobación de recursos ni exigencia de trabajo», y enumera cinco características: periódica, en efectivo, individual, universal e incondicional.[15]"
+          ],
+          [
+            "p",
+            "¿Periódica? Sí, cada mes. ¿En efectivo? Sí. ¿Individual? Sí, se pagaba a la persona, no al hogar. ¿Incondicional? Sí, sin reglas sobre trabajo ni gasto. ¿Universal? No. Fue para 1.000 adultos de bajos ingresos de 21 a 40 años elegidos al azar, durante tres años."
+          ],
+          [
+            "o",
+            "Así que fue una prueba de renta garantizada, no una renta básica, y de ello se derivan tres límites. Primero, era temporal, y todos sabían cuándo terminaría; la gente podría actuar de otra manera, en cualquier dirección, si el pago fuera de por vida. Segundo, solo unas pocas personas en cada lugar lo recibían, así que no puede mostrar qué haría un pago a todo el mundo con los alquileres, los precios o los salarios, ni qué cambiarían los impuestos para financiarlo. El propio texto de Altman decía que las preguntas sobre el coste de la vida en general quedaban «fuera de nuestro alcance, pero obviamente son importantes».[4] Tercero, se desarrolló durante la pandemia y sus secuelas, aunque el estudio señala que sus estimaciones reflejan sobre todo 2022 y 2023.[2] Lo que un experimento aleatorizado puede mostrar bien es cómo responden las personas a un ingreso extra, y esa es justo la cifra que necesita cualquier diseño de un programa mayor."
+          ],
+          [
+            "p",
+            "OpenResearch dice que siguió encuestando a los participantes tras el fin de los pagos, hasta 2025.[1] Todavía no hemos encontrado resultados publicados de ese periodo. También ha puesto los datos de las encuestas a disposición de los investigadores mediante un acuerdo de uso de datos, y el código del estudio sobre empleo es abierto; ambos están en {nuestra lista de datos abiertos|/open-source/#data-openresearch-ucs}."
+          ],
+          [
+            "h",
+            "Por qué importa para la IA"
+          ],
+          [
+            "p",
+            "La pregunta de Altman en 2016 nació de una preocupación por la tecnología y el empleo.[4] En 2021, en «Moore’s Law for Everything», fue más allá y propuso un American Equity Fund, alimentado con impuestos a las grandes empresas y al suelo, que pagaría a cada adulto una parte anual.[16] {Nuestro ensayo sobre el ingreso universal alto|/essays/universal-high-income/} examinó ese plan y preguntó quién paga. Desde entonces, el dinero ha empezado a aparecer a pequeña escala: {el AI Dividend|/timeline/#tl-ai-dividend} paga 1.000 $ al mes durante un año a trabajadores perjudicados por la IA, y Anthropic ha apartado acciones en un fondo que podría hacer {distribuciones directas a poblaciones específicas|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "Para quien diseñe un pago financiado por la IA, este estudio da cifras de planificación más que un veredicto. La mayor parte del dinero va a alquiler, comida y transporte. Los beneficiarios y sus parejas trabajan un poco menos, así que el cálculo del coste debe contar unos 28 centavos de otros ingresos del hogar perdidos por cada dólar pagado. El alivio a corto plazo es grande y real; un cambio duradero en salud, empleo o riqueza no es algo que tres años de 1.000 $ lograran por sí solos. Un dividendo permanente pagado a todos es una política distinta y puede comportarse de otra manera, pero estos son los mejores datos que tenemos sobre cómo responde la gente."
+          ],
+          [
+            "h",
+            "Qué sacar de todo esto"
+          ],
+          [
+            "o",
+            "Altman hizo una pregunta honesta en 2016 y pagó por una respuesta cuidadosa, y la respuesta no se limitó a halagar la idea. Los investigadores publicaron los resultados nulos junto a los buenos, corrigieron al alza su estimación principal y abrieron sus datos. Eso vale más que cualquier titular."
+          ],
+          [
+            "o",
+            "Si compartes una sola frase de este estudio, que sea la precisa: 1.000 personas de bajos ingresos recibieron 1.000 $ al mes durante tres años; trabajaron unas 1,3 horas semanales menos, gastaron sobre todo en lo básico, se sintieron mejor durante un año y muchas usaron el dinero para elegir cómo pasar su tiempo. Léelo como este sitio lee cualquier almuerzo gratis: quién pagó, quién recibió y durante cuánto tiempo."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Im Juli 2024 erschienen die Ergebnisse der größten Studie zu bedingungslosem Geld in den USA, der Studie, die Sam Altman unterstützt hatte. Binnen Tagen trugen dieselben Zahlen gegensätzliche Schlagzeilen. Das eine Lager las „geschenktes Geld lässt Menschen weniger arbeiten“. Das andere las „Geld gibt Menschen Freiheit“. Beide zitierten dieselben Studien."
+          ],
+          [
+            "p",
+            "Dieser Essay geht zu diesen Studien zurück: was die Studie war, was die Empfänger mit dem Geld und der Zeit machten, was sich nicht änderte und was sie über das Grundeinkommen aussagt und was nicht. Er fragt auch, warum der Chef eines KI-Unternehmens es wissen wollte."
+          ],
+          [
+            "h",
+            "Was die Studie war"
+          ],
+          [
+            "p",
+            "OpenResearch, ein Labor, das als Y Combinator Research begann, nahm 3.000 Menschen zwischen 21 und 40 Jahren auf, deren Haushaltseinkommen 2019 höchstens 300 % der bundesweiten Armutsgrenze betrug, in 19 Countys im Norden von Illinois (einschließlich der Region Chicago) und im nördlichen Zentraltexas (einschließlich der Region Dallas), in Städten, Vororten und ländlichen Gegenden.[1][2] Die Aufnahme lief von Oktober 2019 bis Oktober 2020. Dann wurden die Menschen per Zufall aufgeteilt: 1.000 erhielten 1.000 $ im Monat und 2.000 als Kontrollgruppe 50 $ im Monat, von November 2020 bis Oktober 2023. Zwei örtliche gemeinnützige Organisationen leisteten die Zahlungen.[2]"
+          ],
+          [
+            "p",
+            "Das Geld war vollständig bedingungslos. Es gab keine Vorgaben zu Arbeit oder Ausgaben, und die Zahlungen liefen weiter, ob jemand die Umfragen weiter beantwortete oder nicht.[1][2] Das Haushaltseinkommen der Teilnehmenden lag 2019 im Schnitt bei etwa 29.900 $, 1.000 $ im Monat waren für den Haushalt also rund 40 % mehr.[2] Die Auswertung war vorab registriert, und die Umfragen erreichten am Ende 96 % der Teilnehmenden.[2]"
+          ],
+          [
+            "p",
+            "Nach unserer Rechnung kommen allein die Zahlungen auf etwa 39,6 Mio. $: 36 Mio. $ für die 1.000 Empfänger und 3,6 Mio. $ für die Kontrollgruppe. Forbes berichtete, OpenResearch und seine Einheiten hätten seit 2015 rund 60 Mio. $ eingeworben, darunter 14 Mio. $ als Spende von Altman, 10 Mio. $ vom gemeinnützigen Zweig von OpenAI, 15 Mio. $ von Jack Dorseys Start Small und 6,5 Mio. $ vom GitLab-Mitgründer Sid Sijbrandij.[3] Die Forschung selbst nennt außerdem eine Förderung der National Science Foundation.[2]"
+          ],
+          [
+            "p",
+            "Der Grund reicht zurück in den Januar 2016, als Altman die Studie im Blog von Y Combinator ankündigte. Er schrieb, „während die Technologie weiter traditionelle Arbeitsplätze abschafft und gewaltiger neuer Wohlstand entsteht“, werde wahrscheinlich irgendeine Form von Grundeinkommen auf nationaler Ebene kommen, und es gebe „ziemlich wenige Daten darüber, wie es funktionieren würde“. Er fragte auch: „Sitzen die Leute herum und spielen Videospiele, oder schaffen sie Neues?“[4]"
+          ],
+          [
+            "h",
+            "Die Schlagzeile: etwas weniger Arbeit"
+          ],
+          [
+            "p",
+            "Die Beschäftigungsstudie von Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause und Sarah Miller findet, dass die Empfänger laut Umfragen etwa 1,3 Stunden pro Woche weniger arbeiteten als die Kontrollgruppe und laut den Zeittagebüchern in der Handy-App und den Zeitverwendungsumfragen 1,4 bis 1,5 Stunden weniger. In den Umfragen waren sie mit einer um 2,3 Prozentpunkte geringeren Wahrscheinlichkeit erwerbstätig. Ihr eigenes Einkommen ohne die Zahlungen lag um etwa 1.900 $ im Jahr niedriger. Ihre Partner reduzierten ihre Stunden in ähnlichem Umfang: Zusammen arbeiteten Teilnehmende und Partner 2,1 Stunden pro Woche weniger.[2]"
+          ],
+          [
+            "p",
+            "Anders gesagt: Für jeden erhaltenen Dollar sank das Haushaltseinkommen aus anderen Quellen um etwa 28 Cent und das eigene Einkommen der Teilnehmenden um etwa 16 Cent. Die Autoren bezeichnen den Effekt auf Stunden und Einkommen als Rückgang um 5 bis 6 % gegenüber der Kontrollgruppe, „einen moderaten Effekt“.[2]"
+          ],
+          [
+            "p",
+            "Zwei Details sind für die Schlagzeile wichtig. Erstens stieg die Beschäftigung in beiden Gruppen über die drei Jahre, von 58 % auf 72 % bei den Empfängern und von 59 % auf 74 % in der Kontrollgruppe; die Kontrollgruppe stieg nur stärker.[5] Rechnet man die Zahlungen mit, lag das eigene Einkommen der Empfänger im dritten Jahr immer noch etwa 10.000 $ über dem der Kontrollgruppe.[5] Zweitens haben sich die Zahlen verschoben. Die erste Fassung der Studie (Juli 2024) bezifferte den Einkommensrückgang auf etwa 1.500 $ im Jahr und den Rückgang der Erwerbsbeteiligung auf 2,0 Prozentpunkte. Die Überarbeitung vom August 2026, deren bevorzugte Maße Umfrageantworten mit Daten der staatlichen Arbeitslosenversicherung verbinden, kommt auf etwa 1.900 $ und 4,2 Prozentpunkte.[2]"
+          ],
+          [
+            "o",
+            "Das muss man anerkennen: Die Forschenden haben ihren eigenen Haupteffekt nach oben korrigiert, in die Richtung, die für die Sache, mit der die Studie verbunden wird, weniger bequem ist, und die größeren Zahlen in die Zusammenfassung geschrieben. Genau dafür ist eine Studie da."
+          ],
+          [
+            "h",
+            "Was sie mit der Zeit machten"
+          ],
+          [
+            "p",
+            "Laut der Studie gingen die von der Arbeit frei gewordenen Stunden vor allem in Freizeit, dazu etwas mehr Zeit beim Autofahren und für andere Tätigkeiten. Die Autoren können selbst kleine Veränderungen bei der Zeit für Kinderbetreuung, Sport, Jobsuche oder persönliche Weiterentwicklung ausschließen.[2] Die Zusammenfassung von OpenResearch schlüsselt die Freizeit weiter auf: Am stärksten stiegen Autofahren, soziale Freizeit (Zeit mit anderen Menschen: Geselligkeit, Erholung, Mahlzeiten) und Besorgungen wie Lebensmitteleinkäufe.[5]"
+          ],
+          [
+            "p",
+            "Die Jobsuche änderte ihre Form, statt aufzuhören. Phasen ohne Arbeit waren etwa 0,8 Monate länger als der Durchschnitt der Kontrollgruppe von 7,8 Monaten, und die Empfänger hatten sich häufiger kürzlich auf eine Stelle beworben, bewarben sich aber auf weniger Stellen.[2] Unter den Arbeitssuchenden sagten die Empfänger mit einer um 5,5 Prozentpunkte höheren Wahrscheinlichkeit, interessante oder sinnvolle Arbeit sei für jede Stelle, die sie annehmen würden, unverzichtbar.[5] Trotzdem verbesserte sich die Qualität der Arbeit über eine lange Liste von Maßen nicht, und die Studie kann selbst kleine Verbesserungen ausschließen, ebenso Lohnzuwächse von mehr als 58 Cent pro Stunde.[2]"
+          ],
+          [
+            "p",
+            "Durchschnitte verdecken sehr unterschiedliche Leben. Ein Empfänger, Nathan, halbierte seine 50-Stunden-Woche, um Zeit mit seinem vierjährigen Sohn zu verbringen. Lisa nahm eine schlechter bezahlte Stelle mit Entwicklungsmöglichkeiten an, glich die Lücke mit den Zahlungen aus und verdiente zwei Jahre später ein fast sechsstelliges Gehalt. Shawn, der 72 Stunden pro Woche gearbeitet hatte, beschloss, eine Pause einzulegen, bevor er ausbrannte.[5] Die Muster nach Gruppen sind explorativ, aber der Rückgang der Arbeit konzentrierte sich auf Menschen unter 30, Alleinerziehende und diejenigen mit den höchsten Haushaltseinkommen zu Beginn; bei Empfängern über 30 gab es keinen signifikanten Effekt auf Beschäftigung oder Stunden.[5] Jüngere Teilnehmende zeigten auch größere geschätzte Effekte auf weitere Bildung, auch wenn es insgesamt keinen signifikanten Effekt auf Abschlüsse gab.[2]"
+          ],
+          [
+            "h",
+            "Was sie mit dem Geld machten"
+          ],
+          [
+            "p",
+            "Im Schnitt gaben die Empfänger 310 $ im Monat mehr aus als die Kontrollgruppe, und mehr als die Hälfte davon ging in das Nötigste: Lebensmittel (67 $), Miete (52 $) und Verkehr (50 $). Den größten Anstieg gemessen an den Ausgaben der Kontrollgruppe gab es bei finanzieller Unterstützung für andere, etwa Geschenken und Darlehen an Familie und Freunde: 22 $ im Monat, 26 % mehr.[6] Wer anfangs unter oder nahe der Armutsgrenze lag, trieb den Anstieg der Ausgaben; in der Gruppe mit den höchsten Einkommen war der Effekt auf die Gesamtausgaben klein und nicht signifikant.[6]"
+          ],
+          [
+            "p",
+            "Die Konsumstudie schätzt, dass die Ausgaben um mindestens 300 $ im Monat stiegen, vor allem für Wohnen, Lebensmittel und Autos, und dass die Empfänger häufiger in eine neue Wohnung und ein neues Viertel zogen. Die selbst eingeschätzte finanzielle Gesundheit und die Kredit-Scores verbesserten sich. Doch kleine Zuwächse beim Vermögen wurden durch mehr Schulden aufgewogen, sodass das Nettovermögen fast unverändert blieb, und es gab keinen Effekt auf Zahlungsrückstände, Insolvenzen oder Zwangsvollstreckungen. Die Autoren folgern, dass große befristete Zahlungen „möglicherweise keine dauerhaften Verbesserungen der finanziellen Lage junger Haushalte mit geringem Einkommen bewirken“.[7]"
+          ],
+          [
+            "h",
+            "Gesundheit, Kinder und Einstellung zur Arbeit"
+          ],
+          [
+            "p",
+            "Gesundheit: Die Zahlungen brachten große, aber kurzlebige Verbesserungen bei Stress und Ernährungssicherheit sowie eine stärkere Nutzung von Krankenhaus-, Notfall- und Zahnbehandlungen. Sie verbesserten weder die selbst eingeschätzte körperliche Gesundheit noch Blutwerte oder die psychische Gesundheit nach dem ersten Jahr, und es gab keinen Effekt auf die Gesundheit der Kinder im Haushalt.[8] OpenResearch merkt an, dass sich das erste Jahr mit Pandemiehilfen überschnitt und dass steigende Preise und das Ende dieser Hilfen die frühen Zuwächse aufgezehrt haben könnten, sagt aber, es könne nicht sicher sagen, warum sie verblassten.[8]"
+          ],
+          [
+            "p",
+            "Kinder: Eine Studie von 2025 findet, dass Eltern, die 1.000 $ im Monat erhielten, mehr für ihre Kinder ausgaben und von engerer Beaufsichtigung berichteten. Sie berichteten auch von mehr Entwicklungsschwierigkeiten und Stress bei ihren Kindern, was nach Vermutung der Autoren daher kommen könnte, dass sie sie genauer beobachteten. Die meisten Ergebnisse in Schulakten änderten sich nicht nennenswert.[9]"
+          ],
+          [
+            "p",
+            "Politik und Arbeit: Eine Studie vom Dezember 2024 findet keinen Effekt auf Wahlbeteiligung oder politisches Engagement und wenige Veränderungen politischer Ansichten. Ein Ergebnis widerspricht dem Klischee: Die Empfänger hielten Arbeit danach für etwas wichtiger, für den Einzelnen und für die Gesellschaft, und befürworteten häufiger Arbeitspflichten für Medicaid.[10] Zu Altmans anderer Frage, Neues zu schaffen: Die Empfänger hatten häufiger eine Geschäftsidee und sagten häufiger, sie wollten ein Unternehmen gründen, gründeten im Schnitt aber nicht signifikant häufiger eines. In einer explorativen Aufschlüsselung hatten Schwarze und weibliche Empfänger bis zum dritten Jahr häufiger eines gegründet oder bei einer Gründung geholfen.[11]"
+          ],
+          [
+            "h",
+            "Dieselben Ergebnisse, zwei Schlagzeilen"
+          ],
+          [
+            "p",
+            "Die Berichterstattung war damals überwiegend sorgfältig. NPR berichtete, die Empfänger hätten „im Schnitt etwa eine Stunde pro Woche weniger“ gearbeitet und vor allem für das Nötigste ausgegeben, und der Bericht selbst sage, seine Ergebnisse „stützen beide Seiten“. Chris Hughes, Mitgründer des Economic Security Project, das sich für ein garantiertes Einkommen einsetzt, sagte: „Ich hoffe, die Leute nehmen aus dieser und anderen Studien mit, dass ein garantiertes Einkommen allein nicht funktionieren wird.“ Michael Strain vom American Enterprise Institute bevorzugte höhere Steuergutschriften für Geringverdiener, die nur an diejenigen gezahlt werden, die eine Arbeit aufnehmen.[12]"
+          ],
+          [
+            "p",
+            "CBS zitierte Vivalt: „Aus Sicht eines Ökonomen ist es ein moderater Effekt.“ Die weggefallenen Stunden sah sie nicht als Scheitern: „Die Menschen unternehmen mehr, und wenn die Ergebnisse sagen, dass Menschen mehr Freizeit schätzen – dass genau das ihr Wohlbefinden steigert –, dann ist das positiv.“ Zur Hoffnung aber, ein finanzielles Polster würde zu besseren Jobs führen, sagte sie: „Wir finden überhaupt keine Effekte auf die Qualität der Beschäftigung.“[13] Derselbe CBS-Artikel schrieb außerdem, 3.000 Teilnehmende hätten 1.000 $ im Monat erhalten; tatsächlich waren es 1.000, die anderen 2.000 bekamen 50 $. Der Fehler ist verbreitet, und er lässt die Studie dreimal so groß erscheinen, wie sie war.[13][2] Im September desselben Jahres schrieb Jesús Gerena, Chef der gemeinnützigen Organisation UpTogether, in Fortune, die Schlüsse, die Journalisten und Forschende zogen, seien „in schmerzhaften Klischees über Menschen in Armut verwurzelt, etwa der Darstellung, sie seien faul“.[14]"
+          ],
+          [
+            "o",
+            "Beide Kurzfassungen verlieren etwas. „Geschenktes Geld macht faul“ passt nicht zu einem Rückgang der Stunden um etwa 5 %, in einer Zeit, in der die Beschäftigung in beiden Gruppen stieg, bei Menschen, die Arbeit danach etwas mehr schätzten. „Geld verändert Leben“ passt nicht zu einer Studie, die keine besseren Jobs, keine dauerhaften Verbesserungen bei Gesundheit oder Wohlbefinden und ein kaum verändertes Nettovermögen fand. Was die Belege zeigen, ist kleiner und nützlicher: Die Menschen behandelten das Geld als Einkommen, gaben das meiste für das Nötigste aus, und manche kauften sich damit Zeit zurück. Ob diese Zeit „Verschwendung“ oder „Freiheit“ ist, ist ein Werturteil, das die Daten dir nicht abnehmen können."
+          ],
+          [
+            "h",
+            "Ist das Grundeinkommen?"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitspflicht“, und nennt fünf Merkmale: regelmäßig, Geld, individuell, universell und bedingungslos.[15]"
+          ],
+          [
+            "p",
+            "Regelmäßig? Ja, jeden Monat. Geld? Ja. Individuell? Ja, gezahlt an die Person, nicht an den Haushalt. Bedingungslos? Ja, ohne Regeln zu Arbeit oder Ausgaben. Universell? Nein. Es ging an 1.000 zufällig ausgewählte Erwachsene mit geringerem Einkommen zwischen 21 und 40, für drei Jahre."
+          ],
+          [
+            "o",
+            "Es war also ein Versuch mit garantiertem Einkommen, kein Grundeinkommen, und daraus folgen drei Grenzen. Erstens war es befristet, und alle wussten, wann es enden würde; Menschen könnten sich anders verhalten, in beide Richtungen, wenn die Zahlung lebenslang wäre. Zweitens erhielten es nur wenige Menschen an jedem Ort, also kann es nicht zeigen, was eine Zahlung an alle mit Mieten, Preisen oder Löhnen machen würde oder was die Steuern zu ihrer Finanzierung verändern würden. Altmans eigener Beitrag sagte, Fragen zu den gesamten Lebenshaltungskosten lägen „außerhalb unseres Rahmens, sind aber offensichtlich wichtig“.[4] Drittens lief es durch die Pandemie und ihre Nachwirkungen, auch wenn die Studie anmerkt, dass ihre Schätzungen vor allem 2022 und 2023 widerspiegeln.[2] Was ein randomisierter Versuch gut zeigen kann, ist, wie Einzelne auf zusätzliches Einkommen reagieren, und genau diese Zahl braucht jeder Entwurf eines größeren Programms."
+          ],
+          [
+            "p",
+            "OpenResearch sagt, es habe die Teilnehmenden nach dem Ende der Zahlungen bis 2025 weiter befragt.[1] Veröffentlichte Ergebnisse aus dieser Zeit haben wir noch nicht gefunden. Es hat die Umfragedaten außerdem Forschenden im Rahmen einer Datennutzungsvereinbarung zugänglich gemacht, und der Code der Beschäftigungsstudie ist offen; beides steht auf {unserer Liste offener Daten|/open-source/#data-openresearch-ucs}."
+          ],
+          [
+            "h",
+            "Warum es für KI wichtig ist"
+          ],
+          [
+            "p",
+            "Altmans Frage von 2016 kam aus einer Sorge um Technologie und Arbeitsplätze.[4] 2021 ging er in „Moore’s Law for Everything“ weiter und schlug einen American Equity Fund vor, gespeist aus Steuern auf große Unternehmen und Boden, der jedem Erwachsenen jährlich einen Anteil auszahlen würde.[16] {Unser Essay über das universelle Hocheinkommen|/essays/universal-high-income/} hat diesen Plan betrachtet und gefragt, wer zahlt. Seitdem taucht das Geld in kleinem Maßstab auf: {Der AI Dividend|/timeline/#tl-ai-dividend} zahlt Beschäftigten, denen KI geschadet hat, ein Jahr lang 1.000 $ im Monat, und Anthropic hat Aktien in einem Fonds beiseitegelegt, der {direkte Ausschüttungen an bestimmte Bevölkerungsgruppen|/essays/public-benefit-fund/} leisten könnte."
+          ],
+          [
+            "o",
+            "Wer eine durch KI finanzierte Zahlung entwirft, bekommt von dieser Studie Planungszahlen statt eines Urteils. Das meiste Geld geht in Miete, Lebensmittel und Verkehr. Empfänger und ihre Partner arbeiten etwas weniger, also muss die Kostenrechnung pro gezahltem Dollar etwa 28 Cent verlorenes sonstiges Haushaltseinkommen berücksichtigen. Die kurzfristige Entlastung ist groß und echt; dauerhafte Veränderungen bei Gesundheit, Arbeit oder Vermögen haben drei Jahre mit 1.000 $ allein nicht gebracht. Eine dauerhafte Dividende an alle ist eine andere Politik und kann sich anders auswirken, aber dies sind die besten Belege, die wir dazu haben, wie Menschen reagieren."
+          ],
+          [
+            "h",
+            "Was man daraus mitnehmen kann"
+          ],
+          [
+            "o",
+            "Altman stellte 2016 eine ehrliche Frage und bezahlte für eine sorgfältige Antwort, und die Antwort schmeichelte der Idee nicht einfach. Die Forschenden veröffentlichten die Nullergebnisse neben den guten, korrigierten ihre Hauptschätzung nach oben und öffneten ihre Daten. Das ist mehr wert als jede einzelne Schlagzeile."
+          ],
+          [
+            "o",
+            "Wenn du einen Satz aus dieser Studie teilst, dann den genauen: 1.000 Menschen mit geringerem Einkommen erhielten drei Jahre lang 1.000 $ im Monat; sie arbeiteten etwa 1,3 Stunden pro Woche weniger, gaben vor allem für das Nötigste aus, fühlten sich ein Jahr lang besser, und viele nutzten das Geld, um selbst zu wählen, wie sie ihre Zeit verbringen. Lies sie so, wie diese Seite jedes kostenlose Mittagessen liest: Wer hat bezahlt, wer hat erhalten, und wie lange?"
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في يوليو 2024 صدرت نتائج أكبر دراسة عن المال غير المشروط في الولايات المتحدة، تلك التي دعمها سام ألتمان. وفي غضون أيام حملت الأرقام نفسها عناوين متناقضة. قرأ فريق «المال المجاني يجعل الناس يعملون أقل». وقرأ الآخر «المال يمنح الناس الحرية». وكان الطرفان يقتبسان من الدراسات نفسها."
+          ],
+          [
+            "p",
+            "يعود هذا المقال إلى تلك الدراسات: ما كانت الدراسة، وماذا فعل المستفيدون بالمال والوقت، وما الذي لم يتغير، وما الذي تخبرنا به عن الدخل الأساسي وما لا تخبرنا به. ويسأل أيضًا لماذا أراد الرئيس التنفيذي لشركة ذكاء اصطناعي أن يعرف."
+          ],
+          [
+            "h",
+            "ما كانت الدراسة"
+          ],
+          [
+            "p",
+            "سجّلت ⁦OpenResearch⁩، وهو مختبر بدأ باسم ⁦Y Combinator Research⁩، ‏3,000 شخص بين 21 و40 عامًا لم يتجاوز دخل أسرهم في 2019 نسبة 300% من خط الفقر الفيدرالي، في 19 مقاطعة في شمال إلينوي (بما فيها منطقة شيكاغو) وشمال وسط تكساس (بما فيها منطقة دالاس)، في مدن وضواحٍ ومناطق ريفية.[1][2] وجرى التسجيل من أكتوبر 2019 إلى أكتوبر 2020. ثم قُسِّم المشاركون عشوائيًا: حصل 1,000 على ⁦$1,000⁩ شهريًا، وحصل 2,000 على ⁦$50⁩ شهريًا بوصفهم المجموعة الضابطة، من نوفمبر 2020 إلى أكتوبر 2023. وتولّت منظمتان محليتان غير ربحيتين الدفع.[2]"
+          ],
+          [
+            "p",
+            "كان المال غير مشروط تمامًا. لم يُطلب شيء بشأن العمل أو الإنفاق، واستمرت الدفعات سواء واصل الشخص الإجابة عن الاستبيانات أم لا.[1][2] وكان متوسط دخل أسر المشاركين نحو ⁦$29,900⁩ في 2019، فكانت ⁦$1,000⁩ شهريًا زيادة بنحو 40% في دخل الأسرة.[2] وسُجِّلت خطة التحليل مسبقًا، ووصلت الاستبيانات في النهاية إلى 96% من المشاركين.[2]"
+          ],
+          [
+            "p",
+            "بحسب حسابنا، تبلغ التحويلات وحدها نحو 39.6 مليون دولار: 36 مليونًا للمستفيدين الألف و3.6 مليون للمجموعة الضابطة. وأفادت ⁦Forbes⁩ بأن ⁦OpenResearch⁩ والكيانات التابعة لها جمعت نحو 60 مليون دولار منذ 2015، منها 14 مليونًا تبرّع بها ألتمان، و10 ملايين من الذراع غير الربحية لـ⁦OpenAI⁩، و15 مليونًا من ⁦Start Small⁩ التابعة لجاك دورسي، و6.5 مليون من سيد سيبرانديج، أحد مؤسسي ⁦GitLab⁩.[3] ويشير البحث نفسه أيضًا إلى منحة من المؤسسة الوطنية للعلوم (⁦National Science Foundation⁩).[2]"
+          ],
+          [
+            "p",
+            "يعود السبب إلى يناير 2016، حين أعلن ألتمان الدراسة في مدونة ⁦Y Combinator⁩. كتب أنه «مع استمرار التكنولوجيا في إلغاء الوظائف التقليدية وخلق ثروة جديدة هائلة»، يُرجَّح أن تظهر صيغة ما من الدخل الأساسي على نطاق وطني، وأن هناك «بيانات قليلة نسبيًا عن كيفية عمله». وسأل أيضًا: «هل يجلس الناس ويلعبون ألعاب الفيديو، أم يصنعون أشياء جديدة؟»[4]"
+          ],
+          [
+            "h",
+            "العنوان الرئيسي: عمل أقل قليلًا"
+          ],
+          [
+            "p",
+            "تجد دراسة التوظيف، التي أعدّتها إيفا فيفالت وإليزابيث رودز وألكسندر بارتيك وديفيد بروكمان وباتريك كراوزه وسارة ميلر، أن المستفيدين عملوا نحو 1.3 ساعة أسبوعيًا أقل من المجموعة الضابطة في الاستبيانات، وأقل بـ1.4 إلى 1.5 ساعة في يوميات الوقت عبر تطبيق الهاتف واستبيانات استخدام الوقت. وفي الاستبيانات كان احتمال أن يكونوا عاملين أقل بـ2.3 نقطة مئوية. وكان دخلهم الخاص، دون احتساب التحويلات، أقل بنحو ⁦$1,900⁩ سنويًا. وخفّض شركاؤهم ساعاتهم بمقدار مماثل: فمعًا عمل المشارك وشريكه 2.1 ساعة أسبوعيًا أقل.[2]"
+          ],
+          [
+            "p",
+            "وبعبارة أخرى، مقابل كل دولار مُستلَم، انخفض دخل الأسرة من مصادر أخرى بنحو 28 سنتًا، ودخل المشارك نفسه بنحو 16 سنتًا. ويصف المؤلفون الأثر في الساعات والدخل بأنه تراجع بنسبة 5 إلى 6% مقارنة بالمجموعة الضابطة، و«أثر معتدل».[2]"
+          ],
+          [
+            "p",
+            "تفصيلان مهمان للعنوان. أولًا، ارتفع التوظيف في المجموعتين خلال السنوات الثلاث، من 58% إلى 72% بين المستفيدين ومن 59% إلى 74% في المجموعة الضابطة؛ كل ما في الأمر أن المجموعة الضابطة ارتفعت أكثر.[5] وباحتساب التحويلات، ظل دخل المستفيدين في السنة الثالثة أعلى بنحو ⁦$10,000⁩ من دخل المجموعة الضابطة.[5] ثانيًا، تغيّرت الأرقام. فقد قدّرت النسخة الأولى من الدراسة (يوليو 2024) انخفاض الدخل بنحو ⁦$1,500⁩ سنويًا وتراجع المشاركة في سوق العمل بـ2.0 نقطة مئوية. أما مراجعة أغسطس 2026، التي تجمع مقاييسها المفضلة بين إجابات الاستبيانات وسجلات تأمين البطالة في الولايات، فتقدّرهما بنحو ⁦$1,900⁩ و4.2 نقطة مئوية.[2]"
+          ],
+          [
+            "o",
+            "لنعترف بالفضل لأهله: صحّح الباحثون أثرهم الرئيسي بأنفسهم نحو الأعلى، في الاتجاه الأقل ملاءمة للقضية التي ترتبط بها الدراسة، ووضعوا الأرقام الأكبر في الملخص. ولهذا بالضبط تُجرى الدراسات."
+          ],
+          [
+            "h",
+            "ماذا فعلوا بالوقت"
+          ],
+          [
+            "p",
+            "بحسب الدراسة، ذهبت الساعات التي تحررت من العمل في الغالب إلى وقت الفراغ، مع قليل من الوقت الإضافي في القيادة وأنشطة أخرى. ويستطيع المؤلفون استبعاد حتى التغيرات الصغيرة في الوقت المخصص لرعاية الأطفال أو الرياضة أو البحث عن عمل أو تطوير الذات.[2] ويفصّل ملخص ⁦OpenResearch⁩ وقت الفراغ أكثر: كانت أكبر الزيادات في القيادة، ووقت الفراغ الاجتماعي (الوقت مع الآخرين: التواصل الاجتماعي والاستجمام والوجبات)، والمشاوير مثل شراء البقالة.[5]"
+          ],
+          [
+            "p",
+            "تغيّر شكل البحث عن عمل ولم يتوقف. فقد كانت فترات البقاء بلا عمل أطول بنحو 0.8 شهر من متوسط المجموعة الضابطة البالغ 7.8 أشهر، وكان المستفيدون أكثر احتمالًا لأن يكونوا قد تقدموا مؤخرًا لوظيفة، لكنهم تقدموا لعدد أقل من الوظائف.[2] ومن بين الباحثين عن عمل، كان المستفيدون أكثر احتمالًا بـ5.5 نقطة مئوية لأن يقولوا إن العمل الممتع أو ذا المعنى شرط أساسي لأي وظيفة يقبلونها.[5] ومع ذلك، لم تتحسن جودة الوظائف عبر قائمة طويلة من المقاييس، وتستطيع الدراسة استبعاد حتى التحسينات الصغيرة فيها، أو زيادات في الأجور تتجاوز 58 سنتًا في الساعة.[2]"
+          ],
+          [
+            "p",
+            "تُخفي المتوسطات حيوات مختلفة جدًا. خفّض أحد المستفيدين، ناثان، أسبوع عمله البالغ 50 ساعة إلى النصف ليقضي وقتًا مع ابنه ذي الأربع سنوات. وقبلت ليزا وظيفة بأجر أقل لكن فيها مجال للتقدم، واستخدمت التحويلات لسد الفجوة، وبعد عامين كان راتبها يقترب من ستة أرقام. أما شون، الذي كان يعمل 72 ساعة أسبوعيًا، فقرر أن يأخذ استراحة قبل أن يصل إلى الاحتراق.[5] الأنماط حسب الفئات استكشافية، لكن تراجع العمل تركّز بين من هم دون الثلاثين، والآباء والأمهات الذين يربّون أطفالهم وحدهم، وأصحاب أعلى دخل أسري في البداية؛ أما المستفيدون فوق الثلاثين فلم يظهر لديهم أثر دال إحصائيًا في التوظيف أو الساعات.[5] وأظهر المشاركون الأصغر سنًا أيضًا آثارًا مقدّرة أكبر في مواصلة التعليم، وإن لم يكن هناك أثر دال إحصائيًا في الحصول على الشهادات عمومًا.[2]"
+          ],
+          [
+            "h",
+            "ماذا فعلوا بالمال"
+          ],
+          [
+            "p",
+            "في المتوسط، أنفق المستفيدون ⁦$310⁩ شهريًا أكثر من المجموعة الضابطة، وذهب أكثر من نصف ذلك إلى الأساسيات: الطعام (⁦$67⁩)، والإيجار (⁦$52⁩)، والمواصلات (⁦$50⁩). وكانت أكبر زيادة نسبةً إلى ما أنفقته المجموعة الضابطة في الدعم المالي للآخرين، مثل الهدايا والقروض للأهل والأصدقاء: ⁦$22⁩ شهريًا، أي 26% أكثر.[6] وكان من بدأوا تحت خط الفقر أو قريبًا منه هم من دفعوا زيادة الإنفاق؛ أما في الفئة الأعلى دخلًا فكان الأثر في إجمالي الإنفاق صغيرًا وغير دال إحصائيًا.[6]"
+          ],
+          [
+            "p",
+            "تقدّر دراسة الاستهلاك أن الإنفاق ارتفع بما لا يقل عن ⁦$300⁩ شهريًا، معظمه على السكن والطعام والسيارات، وأن المستفيدين كانوا أكثر احتمالًا للانتقال إلى منزل جديد وحي جديد. وتحسّنت الصحة المالية كما يقدّرها أصحابها، وتحسّنت درجاتهم الائتمانية. لكن المكاسب الصغيرة في الأصول قابلها دين أكبر، فبقي صافي الثروة دون تغيير يُذكر، ولم يكن هناك أثر في حالات التأخر عن السداد أو الإفلاس أو نزع ملكية العقارات المرهونة. ويخلص المؤلفون إلى أن التحويلات الكبيرة المؤقتة «قد لا تُحدث تحسينات دائمة في الوضع المالي للأسر الشابة منخفضة الدخل».[7]"
+          ],
+          [
+            "h",
+            "الصحة والأطفال والمواقف من العمل"
+          ],
+          [
+            "p",
+            "الصحة: جلبت التحويلات تحسنًا كبيرًا لكنه قصير الأمد في التوتر والأمن الغذائي، واستخدامًا أكبر لرعاية المستشفيات والطوارئ والأسنان. ولم تحسّن الصحة الجسدية كما يقدّرها أصحابها، ولا مؤشرات تحاليل الدم، ولا الصحة النفسية بعد السنة الأولى، ولم يكن هناك أثر في صحة الأطفال في الأسرة.[8] وتشير ⁦OpenResearch⁩ إلى أن السنة الأولى تزامنت مع إعانات الجائحة، وأن ارتفاع الأسعار وانتهاء تلك الإعانات ربما أضعفا المكاسب المبكرة، لكنها تقول إنها لا تستطيع الجزم بسبب تلاشيها.[8]"
+          ],
+          [
+            "p",
+            "الأطفال: تجد دراسة من 2025 أن الآباء الذين حصلوا على ⁦$1,000⁩ شهريًا أنفقوا أكثر على أطفالهم وأفادوا بإشراف أقرب عليهم. كما أفادوا بصعوبات نمائية وتوتر أكثر لدى أطفالهم، وهو ما يرجّح المؤلفون أنه قد يأتي من مراقبتهم عن كثب أكثر. ولم تتغير معظم النتائج في السجلات المدرسية تغيرًا يُعتدّ به.[9]"
+          ],
+          [
+            "p",
+            "السياسة والعمل: تجد دراسة من ديسمبر 2024 أنه لا أثر في التصويت أو المشاركة السياسية، وأن التغيرات في الآراء السياسية قليلة. ونتيجة واحدة تسير عكس الصورة النمطية: صار المستفيدون يرون العمل أهم قليلًا للأفراد وللمجتمع، وكانوا أكثر احتمالًا لتأييد شروط العمل في برنامج ⁦Medicaid⁩.[10] وعن سؤال ألتمان الآخر، أي صنع أشياء جديدة، كان المستفيدون أكثر احتمالًا لأن تكون لديهم فكرة مشروع وأن يقولوا إنهم ينوون بدء واحد، لكنهم في المتوسط لم يكونوا أكثر احتمالًا بشكل دال إحصائيًا لأن يبدأوا مشروعًا فعلًا. وفي تحليل استكشافي، كان المستفيدون السود والمستفيدات النساء أكثر احتمالًا لأن يكونوا قد بدأوا مشروعًا أو ساعدوا في بدئه بحلول السنة الثالثة.[11]"
+          ],
+          [
+            "h",
+            "النتائج نفسها، وعنوانان"
+          ],
+          [
+            "p",
+            "كانت التغطية في حينها حذرة في الغالب. أفادت ⁦NPR⁩ بأن المستفيدين عملوا «ساعة أو نحوها أقل أسبوعيًا في المتوسط» وأنفقوا في الغالب على الأساسيات، وبأن التقرير نفسه يقول إن نتائجه «تقدم دعمًا للطرفين». وقال كريس هيوز، أحد مؤسسي ⁦Economic Security Project⁩ الذي يناصر الدخل المضمون: «آمل أن يستخلص الناس من هذه الدراسة ومن دراسات أخرى أن الدخل المضمون لن ينجح وحده». أما مايكل سترين من ⁦American Enterprise Institute⁩ ففضّل خصومات ضريبية أكبر للعمال منخفضي الدخل، تُدفع فقط لمن يقبلون وظيفة.[12]"
+          ],
+          [
+            "p",
+            "واقتبست ⁦CBS⁩ عن فيفالت: «من وجهة نظر اقتصادي، إنه أثر معتدل». ولم ترَ الساعات المفقودة فشلًا: «الناس يفعلون أشياء أكثر، وإذا قالت النتائج إن الناس يقدّرون الحصول على وقت فراغ أكثر — وإن هذا ما يزيد رفاههم — فهذا أمر إيجابي». لكن عن الأمل في أن تقود الوسادة المالية إلى وظائف أفضل، قالت: «لا نجد أي آثار على الإطلاق في جودة العمل».[13] وذكر مقال ⁦CBS⁩ نفسه أيضًا أن 3,000 مشارك حصلوا على ⁦$1,000⁩ شهريًا؛ والواقع أن 1,000 فقط حصلوا عليها، وحصل الـ2,000 الآخرون على ⁦$50⁩. إنه خطأ شائع، ويجعل الدراسة تبدو أكبر بثلاث مرات مما كانت.[13][2] وفي سبتمبر من ذلك العام، كتب خيسوس جيرينا، الرئيس التنفيذي للمنظمة غير الربحية ⁦UpTogether⁩، في ⁦Fortune⁩ أن الاستنتاجات التي خلص إليها الصحفيون والباحثون «متجذرة في صور نمطية مؤلمة عن الناس الذين يعيشون في الفقر، مثل تصويرهم كسالى».[14]"
+          ],
+          [
+            "o",
+            "كلتا الروايتين المختصرتين تفقد شيئًا. «المال المجاني يجعل الناس كسالى» لا تنسجم مع تراجع في الساعات بنحو 5%، في فترة ارتفع فيها التوظيف في المجموعتين، بين أناس صاروا يقدّرون العمل أكثر قليلًا. و«المال يغيّر الحياة» لا تنسجم مع دراسة لم تجد وظائف أفضل، ولا مكاسب دائمة في الصحة أو الرفاه، ووجدت صافي ثروة بالكاد تحرّك. ما تُظهره الأدلة أصغر وأنفع: تعامل الناس مع المال بوصفه دخلًا، وأنفقوا معظمه على الأساسيات، واستخدمه بعضهم لاسترداد وقتهم. أما هل ذلك الوقت «هدر» أم «حرية» فهو حكم قيمي لا تستطيع البيانات أن تصدره نيابةً عنك."
+          ],
+          [
+            "h",
+            "هل هذا دخل أساسي؟"
+          ],
+          [
+            "p",
+            "تعرّف الشبكة العالمية للدخل الأساسي (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُسلَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو شرط للعمل»، وتذكر خمس سمات: دوري، ونقدي، وفردي، وشامل، وغير مشروط.[15]"
+          ],
+          [
+            "p",
+            "دوري؟ نعم، كل شهر. نقدي؟ نعم. فردي؟ نعم، دُفع للشخص لا للأسرة. غير مشروط؟ نعم، بلا قواعد للعمل أو الإنفاق. شامل؟ لا. ذهب إلى 1,000 بالغ منخفضي الدخل بين 21 و40 عامًا اختيروا عشوائيًا، لمدة ثلاث سنوات."
+          ],
+          [
+            "o",
+            "إذن كانت هذه تجربة دخل مضمون، لا دخلًا أساسيًا، وتترتب على ذلك ثلاثة حدود. أولًا، كانت مؤقتة، وكان الجميع يعرف متى تنتهي؛ وقد يتصرف الناس بشكل مختلف، في أي من الاتجاهين، لو كانت الدفعة مدى الحياة. ثانيًا، لم يحصل عليها إلا قلة في كل مكان، فلا يمكنها أن تُظهر ما ستفعله دفعة للجميع بالإيجارات أو الأسعار أو الأجور، ولا ما ستغيّره الضرائب اللازمة لتمويلها. وقد قال منشور ألتمان نفسه إن الأسئلة عن تكلفة المعيشة الإجمالية «خارج نطاقنا، لكنها مهمة بوضوح».[4] ثالثًا، جرت خلال الجائحة وما بعدها، وإن كانت الدراسة تشير إلى أن تقديراتها تعكس في الغالب عامي 2022 و2023.[2] ما تستطيع التجربة العشوائية أن تُظهره جيدًا هو كيف يستجيب الأفراد لدخل إضافي، وهذا بالضبط الرقم الذي يحتاجه أي تصميم لبرنامج أكبر."
+          ],
+          [
+            "p",
+            "تقول ⁦OpenResearch⁩ إنها واصلت استطلاع المشاركين بعد انتهاء الدفعات، حتى 2025.[1] ولم نعثر بعد على نتائج منشورة من تلك الفترة. كما أتاحت بيانات الاستبيانات للباحثين بموجب اتفاقية لاستخدام البيانات، وشيفرة دراسة التوظيف مفتوحة؛ وكلاهما في {قائمتنا للبيانات المفتوحة|/open-source/#data-openresearch-ucs}."
+          ],
+          [
+            "h",
+            "لماذا يهم هذا في نقاش الذكاء الاصطناعي"
+          ],
+          [
+            "p",
+            "نشأ سؤال ألتمان في 2016 من قلق بشأن التكنولوجيا والوظائف.[4] وفي 2021، في مقال «⁦Moore’s Law for Everything⁩»، ذهب أبعد واقترح «صندوق الأسهم الأمريكي»، يُموَّل بضرائب على الشركات الكبيرة والأراضي، ويدفع لكل بالغ حصة سنوية.[16] وقد تناول {مقالنا عن الدخل المرتفع الشامل|/essays/universal-high-income/} تلك الخطة وسأل من يدفع. ومنذ ذلك الحين بدأ المال يظهر على نطاق صغير: يدفع {⁦AI Dividend⁩|/timeline/#tl-ai-dividend} ‏⁦$1,000⁩ شهريًا لمدة عام لعاملين تضرروا من الذكاء الاصطناعي، وخصّصت ⁦Anthropic⁩ أسهمًا في صندوق قد يقدّم {توزيعات مباشرة لفئات سكانية محددة|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "لمن يصمم دفعة ممولة من الذكاء الاصطناعي، تقدم هذه الدراسة أرقامًا للتخطيط لا حكمًا نهائيًا. يذهب معظم المال إلى الإيجار والطعام والمواصلات. ويعمل المستفيدون وشركاؤهم أقل قليلًا، لذا يجب أن يحتسب حساب التكلفة نحو 28 سنتًا من دخل الأسرة الآخر تضيع مقابل كل دولار يُدفع. الإغاثة قصيرة الأمد كبيرة وحقيقية؛ أما التغير الدائم في الصحة أو الوظائف أو الثروة فليس شيئًا حققته ثلاث سنوات من ⁦$1,000⁩ وحدها. والعائد الدائم المدفوع للجميع سياسة مختلفة وقد تكون آثاره مختلفة، لكن هذه أفضل الأدلة لدينا عن كيفية استجابة الناس."
+          ],
+          [
+            "h",
+            "ما الذي نستخلصه"
+          ],
+          [
+            "o",
+            "طرح ألتمان سؤالًا صادقًا في 2016 ودفع ثمن إجابة متأنية، ولم تكتفِ الإجابة بمجاملة الفكرة. نشر الباحثون النتائج الصفرية إلى جانب الجيدة، وصحّحوا تقديرهم الرئيسي نحو الأعلى، وفتحوا بياناتهم. وهذا أثمن من أي عنوان منفرد."
+          ],
+          [
+            "o",
+            "إن شاركت سطرًا واحدًا من هذه الدراسة، فليكن السطر الدقيق: حصل 1,000 شخص منخفضي الدخل على ⁦$1,000⁩ شهريًا لثلاث سنوات؛ عملوا نحو 1.3 ساعة أسبوعيًا أقل، وأنفقوا معظمه على الأساسيات، وشعروا بتحسن لمدة عام، واستخدم كثيرون منهم المال ليختاروا كيف يقضون وقتهم. اقرأها كما يقرأ هذا الموقع كل غداء مجاني: من دفع، ومن حصل، ولأي مدة."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "OpenResearch — Unconditional Cash Study (study overview)",
+          "url": "https://www.openresearchlab.org/projects/unconditional-cash-study"
+        },
+        {
+          "n": 2,
+          "label": "Vivalt, Rhodes, Bartik, Broockman, Krause and Miller — The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States (NBER w32719, Jul 2024, revised Aug 2026)",
+          "url": "https://www.nber.org/papers/w32719"
+        },
+        {
+          "n": 3,
+          "label": "Forbes (via Forbes Australia) — OpenAI founder Sam Altman gave thousands of people free money. Here’s what happened (Sarah Emerson, 22 Jul 2024)",
+          "url": "https://www.forbes.com.au/news/innovation/openai-founder-sam-altman-gave-thousands-of-people-free-money/"
+        },
+        {
+          "n": 4,
+          "label": "Sam Altman — Basic Income (Y Combinator blog, 27 Jan 2016)",
+          "url": "https://www.ycombinator.com/blog/basic-income"
+        },
+        {
+          "n": 5,
+          "label": "OpenResearch — Key Findings: Employment (21 Jul 2024)",
+          "url": "https://www.openresearchlab.org/findings/key-findings-employment-and-income"
+        },
+        {
+          "n": 6,
+          "label": "OpenResearch — Key Findings: Spending (21 Jul 2024)",
+          "url": "https://www.openresearchlab.org/findings/key-findings-spending"
+        },
+        {
+          "n": 7,
+          "label": "Bartik et al. — The Impact of Unconditional Cash Transfers on Consumption and Household Balance Sheets: Experimental Evidence from Two US States (NBER w32784, Aug 2024)",
+          "url": "https://www.nber.org/papers/w32784"
+        },
+        {
+          "n": 8,
+          "label": "Miller et al. — Does Income Affect Health? Evidence from a Randomized Controlled Trial of a Guaranteed Income (NBER w32711, Jul 2024); OpenResearch — Key Findings: Health",
+          "url": "https://www.nber.org/papers/w32711",
+          "url2": "https://www.openresearchlab.org/findings/how-does-unconditional-cash-affect-health-2"
+        },
+        {
+          "n": 9,
+          "label": "Krause et al. — The Impact of Unconditional Cash Transfers on Parenting and Children (NBER w34040, Jul 2025)",
+          "url": "https://www.nber.org/papers/w34040"
+        },
+        {
+          "n": 10,
+          "label": "Broockman et al. — The Causal Effects of Income on Political Attitudes and Behavior: A Randomized Field Experiment (NBER w33214, Dec 2024); OpenResearch — Key Findings: The Impact of the Cash on Attitudes Towards Work",
+          "url": "https://www.nber.org/papers/w33214",
+          "url2": "https://www.openresearchlab.org/findings/key-findings-the-impact-of-the-cash-on-attitudes-towards-work"
+        },
+        {
+          "n": 11,
+          "label": "OpenResearch — Key Findings: Entrepreneurship (21 Jul 2024)",
+          "url": "https://www.openresearchlab.org/findings/entrepreneurship"
+        },
+        {
+          "n": 12,
+          "label": "NPR — As new tech threatens jobs, Silicon Valley promotes no-strings cash aid (Jennifer Ludden, 22 Jul 2024)",
+          "url": "https://www.npr.org/transcripts/nx-s1-5035263"
+        },
+        {
+          "n": 13,
+          "label": "CBS MoneyWatch — Here’s what a Sam Altman-backed basic income experiment found (Megan Cerullo, 23 Jul 2024)",
+          "url": "https://www.cbsnews.com/news/sam-altman-universal-basic-income-study-open-research/"
+        },
+        {
+          "n": 14,
+          "label": "Fortune — How a Sam Altman-backed study into guaranteed income was widely misinterpreted (Jesús Gerena, 4 Sep 2024)",
+          "url": "https://fortune.com/2024/09/04/sam-altman-backed-study-guaranteed-income-widely-misinterpreted-ubi-personal-finance/"
+        },
+        {
+          "n": 15,
+          "label": "Basic Income Earth Network (BIEN) — About Basic Income",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 16,
+          "label": "Sam Altman — Moore’s Law for Everything (16 Mar 2021)",
+          "url": "https://moores.samaltman.com/"
+        }
+      ]
+    },
     {
       "id": "nesara-gesara-basic-income",
       "date": "2026-11-03",
@@ -10206,7 +11407,8 @@ module.exports = {
       "related": [
         "universal-high-income",
         "use-to-own",
-        "ai-agent-basic-income"
+        "ai-agent-basic-income",
+        "openresearch-cash-study"
       ],
       "title": {
         "ja": "AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム",
@@ -15038,7 +16240,8 @@ module.exports = {
       "related": [
         "ai-agent-basic-income",
         "use-to-own",
-        "public-benefit-fund"
+        "public-benefit-fund",
+        "openresearch-cash-study"
       ],
       "title": {
         "ja": "ユニバーサルハイインカムは来るのか：誰が払う？",

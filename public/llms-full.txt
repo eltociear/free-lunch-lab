@@ -813,6 +813,112 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### What happened when Sam Altman’s study gave people $1,000 a month for three years
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+- Published: 2026-11-04
+
+In July 2024, the results came out of the largest study of no-strings cash in the United States, the one Sam Altman had backed. Within days the same numbers carried opposite headlines. One camp read “free money makes people work less”. The other read “cash gives people freedom”. Both were quoting the same papers.
+
+This essay goes back to those papers: what the study was, what recipients did with the money and the time, what did not change, and what it does and does not tell us about basic income. It also asks why an AI company’s chief executive wanted to know.
+
+#### What the study was
+
+OpenResearch, a lab that began as Y Combinator Research, enrolled 3,000 people aged 21 to 40 whose household income in 2019 was no more than 300% of the federal poverty level, in 19 counties of northern Illinois (including the Chicago area) and north central Texas (including the Dallas area), in cities, suburbs and rural places.[1][2] Enrolment ran from October 2019 to October 2020. People were then randomly split: 1,000 received $1,000 a month and 2,000 received $50 a month as the control group, from November 2020 to October 2023. Two local non-profits made the payments.[2]
+
+The money was fully unconditional. Nothing was required about work or spending, and payments continued whether or not someone kept answering the surveys.[1][2] Participants’ household income averaged about $29,900 in 2019, so $1,000 a month was roughly a 40% raise for the household.[2] The analysis was pre-registered, and the surveys reached 96% of participants at the end.[2]
+
+By our arithmetic the transfers alone come to about $39.6 million: $36 million for the 1,000 recipients and $3.6 million for the control group. Forbes reported that OpenResearch and its entities had raised some $60 million since 2015, including $14 million donated by Altman, $10 million from OpenAI’s non-profit arm, $15 million from Jack Dorsey’s Start Small and $6.5 million from the GitLab co-founder Sid Sijbrandij.[3] The research itself also acknowledges a National Science Foundation grant.[2]
+
+The reason goes back to January 2016, when Altman announced the study on Y Combinator’s blog. He wrote that “as technology continues to eliminate traditional jobs and massive new wealth gets created”, some version of basic income was likely to appear at a national scale, and that there was “fairly little data about how it would work”. He also asked: “Do people sit around and play video games, or do they create new things?”[4]
+
+#### The headline: a little less work
+
+The employment paper, by Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause and Sarah Miller, finds that recipients worked about 1.3 hours a week less than the control group in the surveys, and 1.4 to 1.5 hours less in the phone-app time diaries and time-use surveys. In the surveys they were 2.3 percentage points less likely to be employed. Their own income, not counting the transfers, was about $1,900 a year lower. Their partners cut their hours by a similar amount: together, participant and partner worked 2.1 hours a week less.[2]
+
+Put another way, for every dollar received, household income from other sources fell by about 28 cents, and the participant’s own income by about 16 cents. The authors call the effect on hours and income a 5 to 6% decline relative to the control group, “a moderate effect”.[2]
+
+Two details matter for the headline. First, employment rose in both groups over the three years, from 58% to 72% among recipients and from 59% to 74% in the control group; the controls simply rose further.[5] Counting the transfers, recipients’ own income in the third year was still about $10,000 higher than the control group’s.[5] Second, the numbers have moved. The first version of the paper (July 2024) put the fall in income at about $1,500 a year and the drop in labour market participation at 2.0 percentage points. The revision of August 2026, whose preferred measures combine survey answers with state unemployment-insurance records, puts them at about $1,900 and 4.2 percentage points.[2]
+
+Opinion: Credit where it is due: the researchers revised their own headline effect upward, in the direction that is less convenient for the cause the study is associated with, and put the larger numbers in the abstract. That is what a study is for.
+
+#### What they did with the time
+
+According to the paper, the hours freed from work went mostly to leisure, along with some extra time driving and on other activities. The authors can rule out even small changes in time spent on childcare, exercise, job search or self-improvement.[2] The OpenResearch summary breaks the leisure down further: the largest increases were in driving, social leisure (time with other people: socialising, recreation, meals) and errands such as grocery shopping.[5]
+
+Job search changed shape rather than stopping. Spells without work were about 0.8 months longer than the control group’s average of 7.8 months, and recipients were more likely to have recently applied for a job but applied to fewer positions.[2] Among those looking for work, recipients were 5.5 percentage points more likely to say that interesting or meaningful work was essential for any job they would take.[5] Even so, across a long list of measures, job quality did not improve, and the paper can rule out even small improvements in it, or wage gains above 58 cents an hour.[2]
+
+Averages hide very different lives. One recipient, Nathan, cut his 50-hour week in half to spend time with his four-year-old son. Lisa took a lower-paid job with room to grow, used the transfers to cover the gap, and two years later was on a salary close to six figures. Shawn, who had been working 72 hours a week, decided to take a break before he burned out.[5] The patterns by group are exploratory, but the drop in work was concentrated among people under 30, single parents and those with the highest household incomes at the start; for recipients over 30 there was no significant effect on employment or hours.[5] Younger participants also showed larger estimated effects on further education, although there was no significant effect on degrees overall.[2]
+
+#### What they did with the money
+
+On average, recipients spent $310 a month more than the control group, and more than half of that went to basics: food ($67), rent ($52) and transport ($50). The biggest increase relative to what the control group spent was in financial support to others, such as gifts and loans to family and friends: $22 a month, 26% more.[6] People who started out below or near the poverty line drove the increase in spending; for the highest-income group the effect on total spending was small and not significant.[6]
+
+The consumption paper estimates that spending rose by at least $300 a month, mostly on housing, food and cars, and that recipients were more likely to move to a new home and a new neighbourhood. Self-reported financial health and credit scores improved. But small gains in assets were offset by more debt, leaving net worth almost unchanged, and there was no effect on delinquencies, bankruptcies or foreclosures. The authors conclude that large temporary transfers “may not cause persistent improvements in the financial position of young, low-income households”.[7]
+
+#### Health, children and attitudes to work
+
+Health: the transfers brought large but short-lived improvements in stress and food security, and more use of hospital, emergency and dental care. They did not improve self-reported physical health, blood-test measures or mental health after the first year, and there was no effect on the health of children in the household.[8] OpenResearch notes that the first year overlapped with pandemic relief and that rising prices and the end of that aid may have worn the early gains down, but it says it cannot be sure why they faded.[8]
+
+Children: a 2025 paper finds that parents who received $1,000 a month spent more on their children and reported closer supervision. They also reported more developmental difficulties and stress in their children, which the authors suggest may come from watching them more closely. Most outcomes in school records did not change meaningfully.[9]
+
+Politics and work: a paper from December 2024 finds no effect on voting or political engagement and few changes in political views. One result runs against the stereotype: recipients came to see work as slightly more important for individuals and for society, and were more likely to support work requirements for Medicaid.[10] On Altman’s other question, creating new things, recipients were more likely to have a business idea and to say they intended to start one, but on average they were not significantly more likely to start a business. In an exploratory breakdown, Black and female recipients were more likely to have started or helped start one by the third year.[11]
+
+#### The same results, two headlines
+
+Coverage at the time was mostly careful. NPR reported that recipients worked “an hour or so less a week on average” and spent mostly on basics, and that the report itself says its results “provide support for both sides”. Chris Hughes, a co-founder of the Economic Security Project, which campaigns for guaranteed income, said: “I hope that people are taking away from this study and other studies that a guaranteed income will not work alone.” Michael Strain of the American Enterprise Institute preferred bigger tax credits for low-income workers, paid only to those who take a job.[12]
+
+CBS quoted Vivalt: “From an economist’s point of view, it’s a moderate effect.” She did not see the lost hours as a failure: “People are doing more stuff, and if the results say people value having more leisure time — that this is what increases their well-being — that’s positive.” But on the hope that a cushion would lead to better jobs, she said: “we don’t find any effects on the quality of employment whatsoever.”[13] The same CBS article also said that 3,000 participants received $1,000 a month; in fact 1,000 did, and the other 2,000 got $50. It is a common slip, and it makes the study sound three times bigger than it was.[13][2] Writing in Fortune that September, Jesús Gerena, chief executive of the non-profit UpTogether, argued that the conclusions reporters and researchers drew were “rooted in painful stereotypes about people experiencing poverty, such as depicting them as lazy”.[14]
+
+Opinion: Both short versions lose something. “Free money makes people lazy” does not fit a drop of about 5% in hours, in a period when employment rose in both groups, among people who came to value work a little more. “Cash transforms lives” does not fit a study that found no better jobs, no lasting gains in health or well-being, and net worth that barely moved. What the evidence shows is smaller and more useful: people treated the money as income, spent most of it on basics, and some of them used it to buy back time. Whether that time is “waste” or “freedom” is a value judgement the data cannot make for you.
+
+#### Is this basic income?
+
+The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”, and lists five characteristics: periodic, cash, individual, universal and unconditional.[15]
+
+Periodic? Yes, every month. Cash? Yes. Individual? Yes, it was paid to the person, not the household. Unconditional? Yes, with no work or spending rules. Universal? No. It went to 1,000 randomly chosen lower-income adults aged 21 to 40, for three years.
+
+Opinion: So this was a guaranteed income trial, not a basic income, and three limits follow. First, it was temporary, and everyone knew when it would end; people might act differently, in either direction, if the payment were for life. Second, only a few people in each place received it, so it cannot show what a payment to everyone would do to rents, prices or wages, or what the taxes to fund it would change. Altman’s own post said that questions about the overall cost of living were “beyond our scope, but obviously important”.[4] Third, it ran through the pandemic and its aftermath, although the paper notes that its estimates mostly reflect 2022 and 2023.[2] What a randomised trial can show well is how individuals respond to extra income, and that is exactly the number any design for a larger scheme needs.
+
+OpenResearch says it kept surveying participants after the payments ended, through 2025.[1] We have not yet found published results from that period. It has also made the survey data available to researchers under a data use agreement, and the code for the employment paper is open; both are on our open data list (https://neteru-nyukin.eltociear.workers.dev/open-source/#data-openresearch-ucs).
+
+#### Why it matters for AI
+
+Altman’s 2016 question came from a worry about technology and jobs.[4] In 2021, in “Moore’s Law for Everything”, he went further and proposed an American Equity Fund, filled by taxing large companies and land, that would pay every adult a yearly share.[16] Our essay on universal high income (https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/) looked at that plan and asked who pays. Since then, the money has started to appear on a small scale: the AI Dividend (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-ai-dividend) pays $1,000 a month for a year to workers hurt by AI, and Anthropic has set aside shares in a fund that could make direct distributions to specific populations (https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/).
+
+Opinion: For anyone designing an AI-funded payment, this study gives planning numbers rather than a verdict. Most of the money goes on rent, food and transport. Recipients and their partners work a little less, so the cost has to count about 28 cents of other household income lost for each dollar paid. Short-term relief is large and real; lasting change in health, jobs or wealth is not something three years of $1,000 delivered on its own. A permanent dividend paid to everyone is a different policy and may behave differently, but this is the best evidence we have about how people respond.
+
+#### What to take from it
+
+Opinion: Altman asked an honest question in 2016 and paid for a careful answer, and the answer did not simply flatter the idea. The researchers published the null results alongside the good ones, revised their main estimate upward, and opened their data. That is worth more than any single headline.
+
+Opinion: If you share one line from this study, make it the accurate one: 1,000 lower-income people received $1,000 a month for three years; they worked about 1.3 hours a week less, spent mostly on basics, felt better for a year, and many used the money to choose how they spent their time. Read it the way this site reads every free lunch: who paid, who received, and for how long.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/moltbook-basic-income/
+
+Sources:
+
+1. OpenResearch — Unconditional Cash Study (study overview): https://www.openresearchlab.org/projects/unconditional-cash-study
+2. Vivalt, Rhodes, Bartik, Broockman, Krause and Miller — The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States (NBER w32719, Jul 2024, revised Aug 2026): https://www.nber.org/papers/w32719
+3. Forbes (via Forbes Australia) — OpenAI founder Sam Altman gave thousands of people free money. Here’s what happened (Sarah Emerson, 22 Jul 2024): https://www.forbes.com.au/news/innovation/openai-founder-sam-altman-gave-thousands-of-people-free-money/
+4. Sam Altman — Basic Income (Y Combinator blog, 27 Jan 2016): https://www.ycombinator.com/blog/basic-income
+5. OpenResearch — Key Findings: Employment (21 Jul 2024): https://www.openresearchlab.org/findings/key-findings-employment-and-income
+6. OpenResearch — Key Findings: Spending (21 Jul 2024): https://www.openresearchlab.org/findings/key-findings-spending
+7. Bartik et al. — The Impact of Unconditional Cash Transfers on Consumption and Household Balance Sheets: Experimental Evidence from Two US States (NBER w32784, Aug 2024): https://www.nber.org/papers/w32784
+8. Miller et al. — Does Income Affect Health? Evidence from a Randomized Controlled Trial of a Guaranteed Income (NBER w32711, Jul 2024); OpenResearch — Key Findings: Health: https://www.nber.org/papers/w32711 (also https://www.openresearchlab.org/findings/how-does-unconditional-cash-affect-health-2)
+9. Krause et al. — The Impact of Unconditional Cash Transfers on Parenting and Children (NBER w34040, Jul 2025): https://www.nber.org/papers/w34040
+10. Broockman et al. — The Causal Effects of Income on Political Attitudes and Behavior: A Randomized Field Experiment (NBER w33214, Dec 2024); OpenResearch — Key Findings: The Impact of the Cash on Attitudes Towards Work: https://www.nber.org/papers/w33214 (also https://www.openresearchlab.org/findings/key-findings-the-impact-of-the-cash-on-attitudes-towards-work)
+11. OpenResearch — Key Findings: Entrepreneurship (21 Jul 2024): https://www.openresearchlab.org/findings/entrepreneurship
+12. NPR — As new tech threatens jobs, Silicon Valley promotes no-strings cash aid (Jennifer Ludden, 22 Jul 2024): https://www.npr.org/transcripts/nx-s1-5035263
+13. CBS MoneyWatch — Here’s what a Sam Altman-backed basic income experiment found (Megan Cerullo, 23 Jul 2024): https://www.cbsnews.com/news/sam-altman-universal-basic-income-study-open-research/
+14. Fortune — How a Sam Altman-backed study into guaranteed income was widely misinterpreted (Jesús Gerena, 4 Sep 2024): https://fortune.com/2024/09/04/sam-altman-backed-study-guaranteed-income-widely-misinterpreted-ubi-personal-finance/
+15. Basic Income Earth Network (BIEN) — About Basic Income: https://basicincome.org/about-basic-income/
+16. Sam Altman — Moore’s Law for Everything (16 Mar 2021): https://moores.samaltman.com/
+
 ### NESARA/GESARA and basic income: telling real payments to everyone from promises that never arrive
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/nesara-gesara-basic-income/
@@ -1009,6 +1115,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/use-to-own/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
 
 Sources:
 
@@ -1411,6 +1519,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/use-to-own/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
 Sources:
 
 1. The National — Elon Musk warns of a future where “no job is needed” in conversation with Rishi Sunak (2 Nov 2023): https://www.thenationalnews.com/world/uk-news/2023/11/02/elon-musk-warns-of-a-future-where-no-job-is-needed-in-conversation-with-rishi-sunak/
@@ -1485,7 +1595,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-03. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-04. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -1681,7 +1791,7 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-10-31
+- Last commit: 2026-11-03
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
@@ -1704,7 +1814,7 @@ Mobile wallet for Encointer: join the in-person meetups, receive the community c
 - Language: TypeScript
 - License: MIT (LICENSE)
 - Stars: 162
-- Last commit: 2026-11-03
+- Last commit: 2026-11-04
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
@@ -1747,7 +1857,7 @@ Smart contracts for the original Proof of Humanity (v1) by Kleros: the registry 
 - Group: Simulators & research
 - Language: Python
 - License: AGPL-3.0
-- Stars: 170
+- Stars: 171
 - Last commit: 2026-11-03
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
@@ -1759,7 +1869,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-03
+- Last commit: 2026-11-04
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 
@@ -1770,7 +1880,7 @@ Microsimulation model of the UK tax and benefit system, including the UBI Center
 - Language: Python
 - License: CC0-1.0 (LICENSE)
 - Stars: 315
-- Last commit: 2026-11-02
+- Last commit: 2026-11-03
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
 
@@ -1780,7 +1890,7 @@ Microsimulation model of US federal income and payroll taxes, with built-in UBI 
 - Group: Simulators & research
 - Language: Python
 - License: AGPL-3.0
-- Stars: 250
+- Stars: 252
 - Last commit: 2026-10-23
 
 Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes
