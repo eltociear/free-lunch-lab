@@ -1,6 +1,13 @@
 {
   "fetchedOn": "2026-11-04",
   "repos": {
+    "git.duniter.org:clients/cesium-grp/cesium": {
+      "stars": 8,
+      "lastCommit": "2026-03-10",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "JavaScript"
+    },
     "git.duniter.org:clients/cesium-grp/cesium2s": {
       "stars": 6,
       "lastCommit": "2026-11-04",
@@ -22,6 +29,20 @@
       "license": "AGPL-3.0",
       "language": "Dart"
     },
+    "git.duniter.org:clients/python/sakia": {
+      "stars": 1,
+      "lastCommit": "2021-01-18",
+      "archived": false,
+      "license": "GPL-3.0",
+      "language": "Python"
+    },
+    "git.duniter.org:clients/python/silkaj": {
+      "stars": 5,
+      "lastCommit": "2026-04-30",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "Python"
+    },
     "git.duniter.org:nodes/rust/duniter-v2s": {
       "stars": 10,
       "lastCommit": "2026-10-30",
@@ -36,9 +57,23 @@
       "license": "AGPL-3.0",
       "language": "TypeScript"
     },
+    "github.com:BrightID/BrightID": {
+      "stars": 245,
+      "lastCommit": "2025-10-20",
+      "archived": false,
+      "license": "ISC",
+      "language": "TypeScript"
+    },
     "github.com:CirclesUBI/circles-contracts": {
       "stars": 78,
       "lastCommit": "2023-07-03",
+      "archived": false,
+      "license": "AGPL-3.0",
+      "language": "JavaScript"
+    },
+    "github.com:CirclesUBI/circles-myxogastria": {
+      "stars": 37,
+      "lastCommit": "2025-07-17",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "JavaScript"
@@ -64,6 +99,13 @@
       "license": "MIT",
       "language": "TypeScript"
     },
+    "github.com:GoodDollar/GoodContracts": {
+      "stars": 39,
+      "lastCommit": "2022-10-27",
+      "archived": true,
+      "license": "MIT",
+      "language": "JavaScript"
+    },
     "github.com:GoodDollar/GoodDAPP": {
       "stars": 135,
       "lastCommit": "2026-11-01",
@@ -85,12 +127,26 @@
       "license": "MIT",
       "language": "Jupyter Notebook"
     },
+    "github.com:Open-UDC/open-udc": {
+      "stars": 78,
+      "lastCommit": "2024-06-07",
+      "archived": false,
+      "license": "LGPL-2.1",
+      "language": "JavaScript"
+    },
     "github.com:PSLmodels/Tax-Calculator": {
       "stars": 316,
       "lastCommit": "2026-11-03",
       "archived": false,
       "license": null,
       "language": "Python"
+    },
+    "github.com:PSLmodels/UBI-examples": {
+      "stars": 4,
+      "lastCommit": "2020-01-10",
+      "archived": false,
+      "license": "MIT",
+      "language": "Jupyter Notebook"
     },
     "github.com:PolicyEngine/policyengine-uk": {
       "stars": 53,
@@ -120,6 +176,34 @@
       "license": null,
       "language": "TypeScript"
     },
+    "github.com:Proof-Of-Humanity/proof-of-humanity-v2-web": {
+      "stars": 3,
+      "lastCommit": "2026-09-15",
+      "archived": false,
+      "license": null,
+      "language": "TypeScript"
+    },
+    "github.com:Proof-Of-Humanity/proof-of-humanity-web": {
+      "stars": 85,
+      "lastCommit": "2025-01-30",
+      "archived": false,
+      "license": "MIT",
+      "language": "JavaScript"
+    },
+    "github.com:UBIC-repo/core": {
+      "stars": 42,
+      "lastCommit": "2020-08-10",
+      "archived": false,
+      "license": "MIT",
+      "language": "C++"
+    },
+    "github.com:UBICenter/uk": {
+      "stars": 3,
+      "lastCommit": "2021-08-29",
+      "archived": false,
+      "license": "MIT",
+      "language": "Jupyter Notebook"
+    },
     "github.com:aboutcircles/circles-contracts-v2": {
       "stars": 12,
       "lastCommit": "2026-03-05",
@@ -127,11 +211,32 @@
       "license": "AGPL-3.0",
       "language": "Solidity"
     },
+    "github.com:aboutcircles/circlesubi-simulation": {
+      "stars": 3,
+      "lastCommit": "2026-09-30",
+      "archived": false,
+      "license": null,
+      "language": "Jupyter Notebook"
+    },
+    "github.com:ec-jrc/JRC-EUROMOD-software-source-code": {
+      "stars": 21,
+      "lastCommit": "2026-10-23",
+      "archived": false,
+      "license": "EUPL-1.2",
+      "language": "C#"
+    },
     "github.com:encointer/encointer-node": {
       "stars": 25,
       "lastCommit": "2026-02-22",
       "archived": false,
       "license": "Apache-2.0",
+      "language": "Rust"
+    },
+    "github.com:encointer/encointer-parachain": {
+      "stars": 9,
+      "lastCommit": "2026-05-25",
+      "archived": false,
+      "license": "GPL-3.0",
       "language": "Rust"
     },
     "github.com:encointer/encointer-wallet-flutter": {
@@ -155,12 +260,40 @@
       "license": "Apache-2.0",
       "language": "TypeScript"
     },
+    "github.com:holgern/steembasicincome": {
+      "stars": 6,
+      "lastCommit": "2020-04-02",
+      "archived": true,
+      "license": "MIT",
+      "language": "Python"
+    },
+    "github.com:idena-network/idena-desktop": {
+      "stars": 102,
+      "lastCommit": "2023-08-04",
+      "archived": false,
+      "license": "MIT",
+      "language": "JavaScript"
+    },
     "github.com:idena-network/idena-go": {
       "stars": 152,
       "lastCommit": "2025-12-22",
       "archived": false,
       "license": "LGPL-3.0",
       "language": "Go"
+    },
+    "github.com:idena-network/idena-web": {
+      "stars": 27,
+      "lastCommit": "2025-05-29",
+      "archived": false,
+      "license": "MIT",
+      "language": "JavaScript"
+    },
+    "github.com:impactMarket/smart-contracts-dao": {
+      "stars": 8,
+      "lastCommit": "2024-07-04",
+      "archived": false,
+      "license": null,
+      "language": "TypeScript"
     },
     "github.com:okTurtles/group-income": {
       "stars": 350,
@@ -189,6 +322,13 @@
       "archived": false,
       "license": "MIT",
       "language": "Rust"
+    },
+    "github.com:worldcoin/worldcoin-grants-contracts": {
+      "stars": 17,
+      "lastCommit": "2025-12-16",
+      "archived": false,
+      "license": "MIT",
+      "language": "Solidity"
     }
   }
 }

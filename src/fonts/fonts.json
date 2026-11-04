@@ -779,6 +779,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-067c594106.woff2",
     "chars": "　委慶李森湾視討訪"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-565441575a.woff2",
+    "chars": "写適"
    }
   ],
   "ja:body:700": [
@@ -949,6 +953,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-d2f42e7d5d.woff2",
     "chars": "　委慶李森湾視討訪"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-28ec7947eb.woff2",
+    "chars": "写適"
    }
   ],
   "ja:display": [
@@ -1243,6 +1251,10 @@
    {
     "file": "noto-sans-sc-400-zh-20b1968be1.woff2",
     "chars": "孙宁庆李湾爱盘竞草负野饮鲁"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-4e7735db02.woff2",
+    "chars": "桌脚芯露"
    }
   ],
   "zh:body:700": [
@@ -1409,6 +1421,10 @@
    {
     "file": "noto-sans-sc-700-zh-47c3812a12.woff2",
     "chars": "孙宁庆李湾爱盘竞草负野饮鲁"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-e1cbc4bd05.woff2",
+    "chars": "桌脚芯露"
    }
   ],
   "zh:display": [

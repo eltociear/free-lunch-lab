@@ -2870,6 +2870,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-05",
+      "ja": "オープンソースの一覧に20件のプロジェクトを追加（OpenUDC、GoodDollar v1、impactMarket、World のグラント、UBIC、Cesium、Silkaj、Idena のアプリ、Proof of Humanity のアプリ、BrightID、EUROMOD など）",
+      "en": "Added 20 projects to the open-source list (OpenUDC, GoodDollar v1, impactMarket, World’s grants, UBIC, Cesium, Silkaj, the Idena and Proof of Humanity apps, BrightID, EUROMOD and more)",
+      "zh": "开源列表新增 20 个项目（OpenUDC、GoodDollar v1、impactMarket、World 赠款、UBIC、Cesium、Silkaj、Idena 和 Proof of Humanity 的应用、BrightID、EUROMOD 等）",
+      "hi": "ओपन-सोर्स सूची में 20 प्रोजेक्ट जोड़े (OpenUDC, GoodDollar v1, impactMarket, World के ग्रांट, UBIC, Cesium, Silkaj, Idena और Proof of Humanity के ऐप, BrightID, EUROMOD और अन्य)",
+      "es": "Añadidos 20 proyectos a la lista de código abierto (OpenUDC, GoodDollar v1, impactMarket, las subvenciones de World, UBIC, Cesium, Silkaj, las apps de Idena y Proof of Humanity, BrightID, EUROMOD y más)",
+      "de": "20 Projekte zur Open-Source-Liste hinzugefügt (OpenUDC, GoodDollar v1, impactMarket, die Grants von World, UBIC, Cesium, Silkaj, die Apps von Idena und Proof of Humanity, BrightID, EUROMOD und mehr)",
+      "ar": "أضفنا 20 مشروعًا إلى قائمة المصادر المفتوحة (⁦OpenUDC⁩ و⁦GoodDollar v1⁩ و⁦impactMarket⁩ ومنح ⁦World⁩ و⁦UBIC⁩ و⁦Cesium⁩ و⁦Silkaj⁩ وتطبيقات ⁦Idena⁩ و⁦Proof of Humanity⁩ و⁦BrightID⁩ و⁦EUROMOD⁩ وغيرها)"
+    },
+    {
       "date": "2026-11-04",
       "ja": "ベーシックインカム・ニュースのページを追加（実験・政策・研究・AIと財源の動きを毎週、出典つきでまとめます）",
       "en": "Added a weekly basic income news page: hand-checked news on pilots, policy, research and AI funding, with sources",
@@ -6927,6 +6937,23 @@ module.exports = {
       }
     },
     {
+      "id": "goodcontracts-v1",
+      "group": "protocols",
+      "name": "GoodDollar v1 contracts",
+      "host": "github.com",
+      "repo": "GoodDollar/GoodContracts",
+      "svc": "gooddollar",
+      "desc": {
+        "ja": "DAOstack の上に作られた最初の GoodDollar（v1）のスマートコントラクト。G$ トークンと毎日の UBI 受け取りのしくみ。現在は GoodProtocol が後を継いでいる",
+        "en": "GoodDollar’s first smart contracts (v1), built on DAOstack: the G$ token and the daily UBI claim. GoodProtocol has since succeeded them",
+        "zh": "基于 DAOstack 构建的 GoodDollar 最初（v1）智能合约：G$ 代币和每日领取 UBI 的机制。现已由 GoodProtocol 接替",
+        "hi": "DAOstack पर बने GoodDollar के पहले (v1) स्मार्ट कॉन्ट्रैक्ट: G$ टोकन और रोज़ाना UBI क्लेम। अब इनकी जगह GoodProtocol ने ले ली है",
+        "es": "Los primeros contratos inteligentes de GoodDollar (v1), construidos sobre DAOstack: el token G$ y el cobro diario de la RBU. Hoy los sucede GoodProtocol",
+        "ar": "أول العقود الذكية لـ⁦GoodDollar⁩ (الإصدار 1)، المبنية على ⁦DAOstack⁩: رمز ⁦G$⁩ والمطالبة اليومية بالدخل الأساسي. حلّ محلها اليوم ⁦GoodProtocol⁩",
+        "de": "Die ersten Smart Contracts von GoodDollar (v1) auf Basis von DAOstack: der G$-Token und das tägliche Abholen des Grundeinkommens. Nachfolger ist heute GoodProtocol"
+      }
+    },
+    {
       "id": "duniter-v2s",
       "group": "protocols",
       "name": "Duniter v2s",
@@ -6958,6 +6985,22 @@ module.exports = {
         "es": "El nodo original de Duniter (en TypeScript), que hace funcionar la moneda libre Ğ1 y paga su dividendo universal desde 2017; su sucesor es Duniter v2s",
         "ar": "عقدة ⁦Duniter⁩ الأصلية (مكتوبة بلغة ⁦TypeScript⁩)، التي تشغّل العملة الحرة ⁦Ğ1⁩ وتدفع حصة أرباحها الشاملة منذ 2017؛ وخليفتها هي ⁦Duniter v2s⁩",
         "de": "Der ursprüngliche Duniter-Node (in TypeScript), der seit 2017 die freie Währung Ğ1 betreibt und ihre universelle Dividende auszahlt; sein Nachfolger ist Duniter v2s"
+      }
+    },
+    {
+      "id": "open-udc",
+      "group": "protocols",
+      "name": "OpenUDC",
+      "host": "github.com",
+      "repo": "Open-UDC/open-udc",
+      "desc": {
+        "ja": "「ユニバーサル配当つき通貨」をつくるための初期のオープンなプロトコル（2010〜2012年、OpenPGP ベース）。貨幣相対性理論に着想を得ており、uCoin・Duniter・Ğ1 より前の試み",
+        "en": "Early open protocol (2010–2012, built on OpenPGP) for currencies that pay every member a universal dividend, inspired by the Relative Theory of Money; it came before uCoin, Duniter and Ğ1",
+        "zh": "早期的开放协议（2010–2012 年，基于 OpenPGP），用于创建向每位成员发放全民红利的货币，受《货币相对论》启发，早于 uCoin、Duniter 和 Ğ1",
+        "hi": "शुरुआती खुला प्रोटोकॉल (2010–2012, OpenPGP पर आधारित), ऐसी मुद्राओं के लिए जो हर सदस्य को सार्वभौमिक लाभांश देती हैं; मुद्रा के सापेक्षता सिद्धांत से प्रेरित, uCoin, Duniter और Ğ1 से पहले का प्रयास",
+        "es": "Protocolo abierto temprano (2010–2012, basado en OpenPGP) para monedas que pagan un dividendo universal a cada miembro, inspirado en la Teoría Relativa de la Moneda; anterior a uCoin, Duniter y Ğ1",
+        "ar": "بروتوكول مفتوح مبكر (2010–2012، مبني على ⁦OpenPGP⁩) لعملات تدفع لكل عضو حصة أرباح شاملة، مستوحى من «النظرية النسبية للنقود»؛ سبق ⁦uCoin⁩ و⁦Duniter⁩ و⁦Ğ1⁩",
+        "de": "Frühes offenes Protokoll (2010–2012, auf Basis von OpenPGP) für Währungen, die jedem Mitglied eine universelle Dividende zahlen, inspiriert von der Relativen Geldtheorie; es entstand vor uCoin, Duniter und Ğ1"
       }
     },
     {
@@ -7027,6 +7070,22 @@ module.exports = {
       }
     },
     {
+      "id": "encointer-parachain",
+      "group": "protocols",
+      "name": "Encointer parachain",
+      "host": "github.com",
+      "repo": "encointer/encointer-parachain",
+      "desc": {
+        "ja": "Kusama 上の公共財パラチェーン Encointer のランタイム。地域通貨と、集まりに参加した人への UBI が実際に動いているチェーン",
+        "en": "Runtime of Encointer’s common-good parachain on Kusama, the chain where its community currencies and their meetup UBI actually run",
+        "zh": "Kusama 上 Encointer 公益平行链的运行时：其社区货币及面向聚会参与者的 UBI 实际运行在这条链上",
+        "hi": "Kusama पर Encointer की कॉमन-गुड पैराचेन का रनटाइम: वह चेन जिस पर उसकी सामुदायिक मुद्राएँ और मीटअप वाला UBI असल में चलते हैं",
+        "es": "Runtime de la parachain de bien común de Encointer en Kusama, la cadena donde funcionan de verdad sus monedas comunitarias y la RBU de los encuentros",
+        "ar": "بيئة التشغيل لسلسلة ⁦Encointer⁩ الموازية للصالح العام على ⁦Kusama⁩، وهي السلسلة التي تعمل عليها فعليًا عملاتها المجتمعية ودخلها الأساسي المرتبط باللقاءات",
+        "de": "Runtime der Gemeinwohl-Parachain von Encointer auf Kusama, der Chain, auf der die Gemeinschaftswährungen und ihr Treffen-Grundeinkommen tatsächlich laufen"
+      }
+    },
+    {
       "id": "group-income",
       "group": "protocols",
       "name": "Group Income",
@@ -7077,6 +7136,56 @@ module.exports = {
       }
     },
     {
+      "id": "impactmarket-contracts",
+      "group": "protocols",
+      "name": "impactMarket contracts",
+      "host": "github.com",
+      "repo": "impactMarket/smart-contracts-dao",
+      "licenseNote": "Apache-2.0 (package.json)",
+      "desc": {
+        "ja": "Celo 上の impactMarket のスマートコントラクト。寄付で「UBI コミュニティ」に資金を入れ、登録された受け取る人が一定の間隔で少額を受け取る",
+        "en": "Smart contracts for impactMarket on Celo: donations fund “UBI communities”, and each registered beneficiary claims a small amount at regular intervals",
+        "zh": "Celo 上 impactMarket 的智能合约：捐款注入“UBI 社区”，每位登记的受助者按固定间隔领取一小笔钱",
+        "hi": "Celo पर impactMarket के स्मार्ट कॉन्ट्रैक्ट: दान से “UBI समुदायों” में पैसा आता है, और हर पंजीकृत लाभार्थी तय अंतराल पर छोटी रक़म क्लेम करता है",
+        "es": "Contratos inteligentes de impactMarket en Celo: las donaciones financian «comunidades de RBU» y cada beneficiario registrado cobra una pequeña cantidad a intervalos regulares",
+        "ar": "العقود الذكية لـ⁦impactMarket⁩ على ⁦Celo⁩: تموّل التبرعات «مجتمعات الدخل الأساسي»، ويطالب كل مستفيد مسجل بمبلغ صغير على فترات منتظمة",
+        "de": "Smart Contracts für impactMarket auf Celo: Spenden finanzieren „UBI-Gemeinschaften“, und alle registrierten Begünstigten holen in festen Abständen einen kleinen Betrag ab"
+      }
+    },
+    {
+      "id": "world-grants",
+      "group": "protocols",
+      "name": "World grants contracts",
+      "host": "github.com",
+      "repo": "worldcoin/worldcoin-grants-contracts",
+      "verify": "world-id",
+      "desc": {
+        "ja": "World ID で認証した人が定期的に WLD を受け取る「グラント」のコントラクト。毎月のエアドロップは2026年6月1日に新規・更新とも停止した",
+        "en": "Contracts behind World’s recurring WLD grants that people verified with World ID could claim; the monthly airdrops stopped taking new or renewed cycles on 1 June 2026",
+        "zh": "World 定期 WLD 赠款背后的合约，经 World ID 验证的人可以领取；每月空投已于 2026 年 6 月 1 日停止新建和续期",
+        "hi": "World के नियमित WLD ग्रांट के पीछे के कॉन्ट्रैक्ट, जिन्हें World ID से वेरिफ़ाई लोग क्लेम कर सकते थे; मासिक एयरड्रॉप में 1 जून 2026 से नए या नवीनीकृत चक्र बंद हैं",
+        "es": "Contratos de las subvenciones periódicas de WLD de World que podían cobrar las personas verificadas con World ID; los airdrops mensuales dejaron de abrir ciclos nuevos o renovados el 1 de junio de 2026",
+        "ar": "العقود التي تقوم عليها منح ⁦WLD⁩ الدورية من ⁦World⁩، والتي كان بوسع من تحققوا عبر ⁦World ID⁩ المطالبة بها؛ توقفت الإسقاطات الشهرية عن فتح دورات جديدة أو مجددة في 1 يونيو 2026",
+        "de": "Contracts hinter den wiederkehrenden WLD-Grants von World, die per World ID verifizierte Menschen abholen konnten; die monatlichen Airdrops nehmen seit 1. Juni 2026 keine neuen oder verlängerten Zyklen mehr an"
+      }
+    },
+    {
+      "id": "ubic",
+      "group": "protocols",
+      "name": "UBIC",
+      "host": "github.com",
+      "repo": "UBIC-repo/core",
+      "desc": {
+        "ja": "実験的な暗号通貨 UBIC のノード（2017〜2020年）。IC チップ付きパスポートの署名で、身元を明かさずに一人であることを示すと、新しく発行された UBIC をベーシックインカムとして受け取れる",
+        "en": "Node for UBIC, an experimental cryptocurrency (2017–2020): people prove they are unique with their e-passport’s chip signature, without revealing who they are, and receive newly minted UBIC as a basic income",
+        "zh": "实验性加密货币 UBIC 的节点（2017–2020 年）：人们用电子护照芯片的签名证明自己独一无二且无需透露身份，即可领取新铸造的 UBIC 作为基本收入",
+        "hi": "प्रयोगात्मक क्रिप्टोकरेंसी UBIC का नोड (2017–2020): लोग अपनी पहचान बताए बिना ई-पासपोर्ट की चिप के सिग्नेचर से साबित करते हैं कि वे एक ही हैं, और नया बना UBIC बेसिक इनकम के रूप में पाते हैं",
+        "es": "Nodo de UBIC, una criptomoneda experimental (2017–2020): las personas demuestran que son únicas con la firma del chip de su pasaporte electrónico, sin revelar quiénes son, y reciben UBIC recién acuñado como renta básica",
+        "ar": "عقدة ⁦UBIC⁩، وهي عملة مشفرة تجريبية (2017–2020): يثبت الناس أنهم أشخاص فريدون بتوقيع شريحة جواز السفر الإلكتروني دون كشف هويتهم، ويحصلون على ⁦UBIC⁩ مصكوك حديثًا كدخل أساسي",
+        "de": "Node für UBIC, eine experimentelle Kryptowährung (2017–2020): Menschen weisen mit der Chip-Signatur ihres E-Passes nach, dass sie einzigartig sind, ohne preiszugeben, wer sie sind, und erhalten neu geprägte UBIC als Grundeinkommen"
+      }
+    },
+    {
       "id": "gooddapp",
       "group": "apps",
       "name": "GoodDAPP",
@@ -7091,6 +7200,23 @@ module.exports = {
         "es": "La billetera de GoodDollar: la app web y React Native donde se cobra el G$ diario",
         "ar": "محفظة ⁦GoodDollar⁩: تطبيق الويب و⁦React Native⁩ الذي يطالب فيه الناس بحصتهم اليومية من ⁦G$⁩",
         "de": "Die GoodDollar-Wallet: die Web- und React-Native-App, mit der man sein tägliches G$ abholt"
+      }
+    },
+    {
+      "id": "circles-garden",
+      "group": "apps",
+      "name": "Circles v1 web wallet",
+      "host": "github.com",
+      "repo": "CirclesUBI/circles-myxogastria",
+      "svc": "circles",
+      "desc": {
+        "ja": "最初の Circles（v1）のウェブウォレット兼モバイルクライアント（circles.garden）。登録して友だちを信頼し、毎時間たまる Circles の UBI を受け取って送れる",
+        "en": "Web wallet and mobile client for the original Circles (v1) at circles.garden: sign up, trust friends, and receive and send the Circles UBI that accrues every hour",
+        "zh": "最初的 Circles（v1）网页钱包兼移动客户端（circles.garden）：注册、信任朋友，并领取和发送每小时累积的 Circles UBI",
+        "hi": "मूल Circles (v1) का वेब वॉलेट और मोबाइल क्लाइंट (circles.garden): साइन अप करें, दोस्तों पर भरोसा जताएँ, और हर घंटे जुड़ने वाला Circles UBI पाएँ और भेजें",
+        "es": "Billetera web y cliente móvil del Circles original (v1) en circles.garden: regístrate, confía en tus amigos y recibe y envía la RBU de Circles que se acumula cada hora",
+        "ar": "محفظة ويب وعميل جوال لـ⁦Circles⁩ الأصلي (الإصدار 1) على ⁦circles.garden⁩: سجّل، وامنح الثقة لأصدقائك، واستلم وأرسل دخل ⁦Circles⁩ الأساسي الذي يتراكم كل ساعة",
+        "de": "Web-Wallet und mobiler Client für das ursprüngliche Circles (v1) auf circles.garden: registrieren, Freunden vertrauen und das stündlich anwachsende Circles-Grundeinkommen empfangen und senden"
       }
     },
     {
@@ -7145,6 +7271,57 @@ module.exports = {
       }
     },
     {
+      "id": "cesium-v1",
+      "group": "apps",
+      "name": "Cesium",
+      "host": "git.duniter.org",
+      "repo": "clients/cesium-grp/cesium",
+      "svc": "g1",
+      "desc": {
+        "ja": "自由通貨 Ğ1 の最初の定番ウォレット（ウェブ、Android、iOS）。ユニバーサル配当の受け取り、支払い、信頼の網の認証ができた。現在は Cesium² が後を継いでいる",
+        "en": "The original go-to wallet for the Ğ1 libre currency (web, Android, iOS) for receiving the universal dividend, paying and certifying others in the web of trust. Cesium² has since succeeded it",
+        "zh": "自由货币 Ğ1 最早的主流钱包（网页、Android、iOS），用于领取全民红利、付款以及在信任网络中认证他人。现已由 Cesium² 接替",
+        "hi": "Ğ1 मुक्त मुद्रा का मूल लोकप्रिय वॉलेट (वेब, Android, iOS): सार्वभौमिक लाभांश पाने, भुगतान करने और भरोसे के जाल में दूसरों को प्रमाणित करने के लिए। अब इसकी जगह Cesium² ने ले ली है",
+        "es": "La billetera de referencia original de la moneda libre Ğ1 (web, Android, iOS) para recibir el dividendo universal, pagar y certificar a otros en la red de confianza. Hoy la sucede Cesium²",
+        "ar": "المحفظة الأصلية الأكثر استخدامًا للعملة الحرة ⁦Ğ1⁩ (ويب و⁦Android⁩ و⁦iOS⁩) لاستلام حصة الأرباح الشاملة والدفع والتصديق على الآخرين في شبكة الثقة. حلّت محلها اليوم ⁦Cesium²⁩",
+        "de": "Die ursprüngliche Standard-Wallet für die freie Währung Ğ1 (Web, Android, iOS), um die universelle Dividende zu empfangen, zu bezahlen und andere im Vertrauensnetz zu zertifizieren. Nachfolger ist heute Cesium²"
+      }
+    },
+    {
+      "id": "silkaj",
+      "group": "apps",
+      "name": "Silkaj",
+      "host": "git.duniter.org",
+      "repo": "clients/python/silkaj",
+      "svc": "g1",
+      "desc": {
+        "ja": "自由通貨 Ğ1 のコマンドラインクライアント（Python 製）。残高の確認、送金、信頼の網での認証をターミナルからできる",
+        "en": "Command-line client for the Ğ1 libre currency, written in Python: check balances, send payments and certify others in the web of trust from the terminal",
+        "zh": "用 Python 编写的自由货币 Ğ1 命令行客户端：在终端中查询余额、转账并在信任网络中认证他人",
+        "hi": "Ğ1 मुक्त मुद्रा का कमांड-लाइन क्लाइंट (Python में): टर्मिनल से बैलेंस देखें, भुगतान भेजें और भरोसे के जाल में दूसरों को प्रमाणित करें",
+        "es": "Cliente de línea de comandos de la moneda libre Ğ1, escrito en Python: consulta saldos, envía pagos y certifica a otros en la red de confianza desde la terminal",
+        "ar": "عميل سطر أوامر للعملة الحرة ⁦Ğ1⁩ مكتوب بلغة ⁦Python⁩: اطّلع على الأرصدة وأرسل المدفوعات وصدّق على الآخرين في شبكة الثقة من الطرفية",
+        "de": "Kommandozeilen-Client für die freie Währung Ğ1, in Python geschrieben: Kontostände prüfen, Zahlungen senden und andere im Vertrauensnetz zertifizieren, alles im Terminal"
+      }
+    },
+    {
+      "id": "sakia",
+      "group": "apps",
+      "name": "Sakia",
+      "host": "git.duniter.org",
+      "repo": "clients/python/sakia",
+      "svc": "g1",
+      "desc": {
+        "ja": "自由通貨 Ğ1 の初期のデスクトップクライアント（Python と PyQt 製）。現在はメンテナンスされていない",
+        "en": "Early desktop client for the Ğ1 libre currency, written in Python and PyQt; it is no longer maintained",
+        "zh": "自由货币 Ğ1 早期的桌面客户端（用 Python 和 PyQt 编写），现已不再维护",
+        "hi": "Ğ1 मुक्त मुद्रा का शुरुआती डेस्कटॉप क्लाइंट (Python और PyQt में); अब इसका रखरखाव नहीं होता",
+        "es": "Uno de los primeros clientes de escritorio de la moneda libre Ğ1, escrito en Python y PyQt; ya no se mantiene",
+        "ar": "عميل سطح مكتب مبكر للعملة الحرة ⁦Ğ1⁩، مكتوب بلغة ⁦Python⁩ و⁦PyQt⁩؛ لم تعد صيانته مستمرة",
+        "de": "Früher Desktop-Client für die freie Währung Ğ1, in Python und PyQt geschrieben; er wird nicht mehr gepflegt"
+      }
+    },
+    {
       "id": "encointer-wallet",
       "group": "apps",
       "name": "Encointer wallet",
@@ -7158,6 +7335,40 @@ module.exports = {
         "es": "Billetera móvil de Encointer: únete a los encuentros presenciales, recibe la RBU en moneda comunitaria y paga en tu zona",
         "ar": "محفظة جوال لـ⁦Encointer⁩: انضم إلى اللقاءات الوجاهية، واستلم الدخل الأساسي بالعملة المجتمعية، وادفع محليًا",
         "de": "Mobile Wallet für Encointer: an den persönlichen Treffen teilnehmen, das Grundeinkommen in Gemeinschaftswährung erhalten und vor Ort bezahlen"
+      }
+    },
+    {
+      "id": "idena-desktop",
+      "group": "apps",
+      "name": "Idena desktop app",
+      "host": "github.com",
+      "repo": "idena-network/idena-desktop",
+      "svc": "idena",
+      "desc": {
+        "ja": "Idena のデスクトップアプリ（Windows、Mac、Linux）。ノードを動かし、人間であることを確かめる検証セッションに参加し、ID とウォレットを管理する",
+        "en": "Desktop app for Idena (Windows, Mac, Linux): run a node, take part in the validation sessions that check you are human, and manage your identity and wallet",
+        "zh": "Idena 的桌面应用（Windows、Mac、Linux）：运行节点、参加验证你是真人的验证环节，并管理身份和钱包",
+        "hi": "Idena का डेस्कटॉप ऐप (Windows, Mac, Linux): नोड चलाएँ, इंसान होने की जाँच वाले वैलिडेशन सत्रों में हिस्सा लें और अपनी पहचान व वॉलेट सँभालें",
+        "es": "App de escritorio de Idena (Windows, Mac, Linux): ejecuta un nodo, participa en las sesiones de validación que comprueban que eres humano y gestiona tu identidad y tu billetera",
+        "ar": "تطبيق سطح المكتب لـ⁦Idena⁩ (⁦Windows⁩ و⁦Mac⁩ و⁦Linux⁩): شغّل عقدة، وشارك في جلسات التحقق التي تثبت أنك إنسان، وأدر هويتك ومحفظتك",
+        "de": "Desktop-App für Idena (Windows, Mac, Linux): einen Node betreiben, an den Validierungssitzungen teilnehmen, die prüfen, dass du ein Mensch bist, und Identität und Wallet verwalten"
+      }
+    },
+    {
+      "id": "idena-web",
+      "group": "apps",
+      "name": "Idena web app",
+      "host": "github.com",
+      "repo": "idena-network/idena-web",
+      "svc": "idena",
+      "desc": {
+        "ja": "Idena のウェブアプリ（app.idena.io）。ノードを自分で動かさずに、ブラウザから検証セッションに参加し、ID とウォレットを管理できる",
+        "en": "Web app for Idena at app.idena.io: take part in validation sessions and manage your identity and wallet from the browser, without running your own node",
+        "zh": "Idena 的网页应用（app.idena.io）：无需自己运行节点，即可在浏览器中参加验证环节并管理身份和钱包",
+        "hi": "Idena का वेब ऐप (app.idena.io): अपना नोड चलाए बिना ब्राउज़र से वैलिडेशन सत्रों में हिस्सा लें और अपनी पहचान व वॉलेट सँभालें",
+        "es": "App web de Idena en app.idena.io: participa en las sesiones de validación y gestiona tu identidad y tu billetera desde el navegador, sin ejecutar tu propio nodo",
+        "ar": "تطبيق ويب لـ⁦Idena⁩ على ⁦app.idena.io⁩: شارك في جلسات التحقق وأدر هويتك ومحفظتك من المتصفح دون تشغيل عقدتك الخاصة",
+        "de": "Web-App für Idena unter app.idena.io: an Validierungssitzungen teilnehmen und Identität und Wallet im Browser verwalten, ohne einen eigenen Node zu betreiben"
       }
     },
     {
@@ -7175,6 +7386,22 @@ module.exports = {
         "es": "Código de la ONG Social Income, que convierte donaciones en una renta básica incondicional enviada a teléfonos móviles en el Sur Global (Sierra Leona); el repositorio incluye la web, las herramientas de administración y la app para quienes la reciben",
         "ar": "شيفرة منظمة ⁦Social Income⁩ غير الربحية، التي تحوّل التبرعات إلى دخل أساسي غير مشروط يُرسل إلى الهواتف المحمولة في دول الجنوب العالمي (سيراليون)؛ يضم المستودع الموقع وأدوات الإدارة وتطبيق المستفيدين",
         "de": "Code der NGO Social Income, die Spenden in ein bedingungsloses Grundeinkommen verwandelt, das aufs Handy von Menschen im Globalen Süden (Sierra Leone) geht; das Repository enthält Website, Admin-Werkzeuge und die App für die Empfänger"
+      }
+    },
+    {
+      "id": "steem-basic-income",
+      "group": "apps",
+      "name": "Steem Basic Income",
+      "host": "github.com",
+      "repo": "holgern/steembasicincome",
+      "desc": {
+        "ja": "Steem ブロックチェーン上の「Steem Basic Income（SBI）」を動かしていたスクリプト。スポンサーが自分や他の人の持ち分を買い、メンバーは投稿への定期的なアップボートという形で収入を受け取る",
+        "en": "Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors bought shares for themselves or others, and members earned income as regular upvotes on their posts",
+        "zh": "在 Steem 区块链上运行“Steem Basic Income（SBI）”的脚本：赞助者为自己或他人购买份额，成员则以帖子定期获得点赞的形式取得收入",
+        "hi": "Steem ब्लॉकचेन पर Steem Basic Income (SBI) चलाने वाली स्क्रिप्ट: स्पॉन्सर अपने या दूसरों के लिए शेयर ख़रीदते थे, और सदस्यों को उनकी पोस्ट पर नियमित अपवोट के रूप में आय मिलती थी",
+        "es": "Scripts que hacían funcionar Steem Basic Income (SBI) en la blockchain de Steem: los patrocinadores compraban participaciones para sí o para otros, y los miembros recibían ingresos como votos positivos periódicos en sus publicaciones",
+        "ar": "النصوص البرمجية التي شغّلت ⁦Steem Basic Income (SBI)⁩ على سلسلة ⁦Steem⁩: كان الرعاة يشترون حصصًا لأنفسهم أو لغيرهم، ويحصل الأعضاء على دخل في صورة تصويتات إيجابية منتظمة على منشوراتهم",
+        "de": "Skripte, die Steem Basic Income (SBI) auf der Steem-Blockchain betrieben: Sponsoren kauften Anteile für sich oder andere, und Mitglieder erhielten Einkommen in Form regelmäßiger Upvotes auf ihre Beiträge"
       }
     },
     {
@@ -7212,6 +7439,23 @@ module.exports = {
       }
     },
     {
+      "id": "poh-web-v2",
+      "group": "personhood",
+      "name": "Proof of Humanity v2 web app",
+      "host": "github.com",
+      "repo": "Proof-Of-Humanity/proof-of-humanity-v2-web",
+      "licenseNote": "MIT (package.json)",
+      "desc": {
+        "ja": "Proof of Humanity v2 のウェブアプリ（v2.proofofhumanity.id）。写真と動画で登録を申し込み、ほかの人を保証し、登録に異議を申し立てられる",
+        "en": "Web app for Proof of Humanity v2 at v2.proofofhumanity.id: apply with a photo and video, vouch for others and challenge registrations",
+        "zh": "Proof of Humanity v2 的网页应用（v2.proofofhumanity.id）：提交照片和视频申请注册、为他人担保，并对注册提出质疑",
+        "hi": "Proof of Humanity v2 का वेब ऐप (v2.proofofhumanity.id): फ़ोटो और वीडियो के साथ आवेदन करें, दूसरों की ज़मानत दें और पंजीकरण को चुनौती दें",
+        "es": "App web de Proof of Humanity v2 en v2.proofofhumanity.id: solicita el registro con una foto y un vídeo, avala a otras personas e impugna registros",
+        "ar": "تطبيق ويب لـ⁦Proof of Humanity v2⁩ على ⁦v2.proofofhumanity.id⁩: قدّم طلبك بصورة ومقطع فيديو، وازكِّ الآخرين، واعترض على التسجيلات",
+        "de": "Web-App für Proof of Humanity v2 unter v2.proofofhumanity.id: mit Foto und Video bewerben, für andere bürgen und Registrierungen anfechten"
+      }
+    },
+    {
       "id": "poh-v1",
       "group": "personhood",
       "name": "Proof of Humanity v1 contracts",
@@ -7225,6 +7469,38 @@ module.exports = {
         "es": "Contratos inteligentes del Proof of Humanity original (v1) de Kleros: el registro de humanos del que dependía el primer token $UBI. Hoy lo sucede Proof of Humanity v2",
         "ar": "العقود الذكية لـ⁦Proof of Humanity⁩ الأصلي (الإصدار 1) من ⁦Kleros⁩: سجل البشر الذي اعتمد عليه رمز ⁦$UBI⁩ الأول. حلّ محله اليوم ⁦Proof of Humanity v2⁩",
         "de": "Smart Contracts des ursprünglichen Proof of Humanity (v1) von Kleros: das Register von Menschen, auf das der erste $UBI-Token angewiesen war. Nachfolger ist heute Proof of Humanity v2"
+      }
+    },
+    {
+      "id": "poh-web-v1",
+      "group": "personhood",
+      "name": "Proof of Humanity v1 web app",
+      "host": "github.com",
+      "repo": "Proof-Of-Humanity/proof-of-humanity-web",
+      "desc": {
+        "ja": "最初の Proof of Humanity（v1）のウェブアプリ。動画つきのプロフィールを出し、保証を受けて人間として登録されると、最初の $UBI トークンの流れを受け取れた",
+        "en": "Web app for the original Proof of Humanity (v1): people submitted a profile with a video, got vouched for, and once registered as human could receive the original $UBI stream",
+        "zh": "最初的 Proof of Humanity（v1）网页应用：人们提交附视频的个人资料、获得担保，登记为真人后即可领取最初的 $UBI 流",
+        "hi": "मूल Proof of Humanity (v1) का वेब ऐप: लोग वीडियो के साथ प्रोफ़ाइल देते, ज़मानत पाते और इंसान के रूप में पंजीकृत होने पर पहले $UBI की धारा पा सकते थे",
+        "es": "App web del Proof of Humanity original (v1): las personas enviaban un perfil con vídeo, recibían avales y, una vez registradas como humanas, podían recibir el flujo del primer $UBI",
+        "ar": "تطبيق ويب لـ⁦Proof of Humanity⁩ الأصلي (الإصدار 1): كان الناس يقدّمون ملفًا شخصيًا مع مقطع فيديو ويحصلون على تزكية، وبعد تسجيلهم كبشر يمكنهم استلام تدفق ⁦$UBI⁩ الأول",
+        "de": "Web-App des ursprünglichen Proof of Humanity (v1): Menschen reichten ein Profil mit Video ein, bekamen Bürgschaften und konnten nach der Registrierung als Mensch den ersten $UBI-Stream erhalten"
+      }
+    },
+    {
+      "id": "brightid",
+      "group": "personhood",
+      "name": "BrightID",
+      "host": "github.com",
+      "repo": "BrightID/BrightID",
+      "desc": {
+        "ja": "BrightID の参照モバイルアプリ。知っている人どうしがつながり、そのつながりの分析によって、アプリが一人一アカウントかを確かめられる。UBI の配布も想定された使いみちの一つ",
+        "en": "Reference mobile app for BrightID: people connect with others they know, and analysis of that social graph lets apps check that each account is a unique person, with UBI distribution among its intended uses",
+        "zh": "BrightID 的参考移动应用：人们与认识的人建立连接，通过分析这张社交图，应用可以确认每个账户都对应唯一的人；UBI 发放也是其设想的用途之一",
+        "hi": "BrightID का संदर्भ मोबाइल ऐप: लोग जान-पहचान वालों से जुड़ते हैं, और इस सामाजिक ग्राफ़ के विश्लेषण से ऐप जाँच पाते हैं कि हर खाता एक अलग इंसान का है; UBI बाँटना भी इसके तय उपयोगों में है",
+        "es": "App móvil de referencia de BrightID: las personas se conectan con gente que conocen y el análisis de ese grafo social permite a las apps comprobar que cada cuenta es una persona única; repartir una RBU es uno de sus usos previstos",
+        "ar": "تطبيق الجوال المرجعي لـ⁦BrightID⁩: يتصل الناس بمن يعرفونهم، ويتيح تحليل هذا الرسم الاجتماعي للتطبيقات التحقق من أن كل حساب يعود لشخص فريد، ومن استخداماته المقصودة توزيع الدخل الأساسي",
+        "de": "Referenz-App für BrightID: Menschen verbinden sich mit Leuten, die sie kennen, und die Analyse dieses sozialen Graphen lässt Apps prüfen, ob jedes Konto ein eigener Mensch ist; die Verteilung eines Grundeinkommens gehört zu den vorgesehenen Zwecken"
       }
     },
     {
@@ -7260,6 +7536,22 @@ module.exports = {
       }
     },
     {
+      "id": "ubicenter-uk",
+      "group": "research",
+      "name": "UBI Center: UK blank-slate UBI",
+      "host": "github.com",
+      "repo": "UBICenter/uk",
+      "desc": {
+        "ja": "UBI Center の報告書「Blank Slate UBI」（英国）を再現するコード。多くの給付を UBI に置き換える案について、最適な支給額を探して結果の表と図を作る",
+        "en": "Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it searches for the best UBI amounts in reforms that replace most benefits, and builds the report’s tables and figures",
+        "zh": "复现 UBI Center 英国报告《Blank Slate UBI》的代码：在用 UBI 取代大部分福利的改革方案中寻找最优发放额，并生成报告的表格与图表",
+        "hi": "UBI Center की ब्रिटेन वाली Blank Slate UBI रिपोर्ट को दोहराने वाला कोड: ज़्यादातर लाभों की जगह UBI लाने वाले सुधारों में सबसे अच्छी UBI राशि खोजता है और रिपोर्ट की तालिकाएँ व चित्र बनाता है",
+        "es": "Código que reproduce el informe Blank Slate UBI del UBI Center para el Reino Unido: busca las mejores cuantías de RBU en reformas que sustituyen la mayoría de las prestaciones y genera las tablas y gráficos del informe",
+        "ar": "شيفرة تعيد إنتاج تقرير ⁦Blank Slate UBI⁩ من ⁦UBI Center⁩ عن المملكة المتحدة: تبحث عن أفضل مبالغ للدخل الأساسي في إصلاحات تستبدل معظم الإعانات، وتُنشئ جداول التقرير ورسومه",
+        "de": "Code, der den Blank-Slate-UBI-Bericht des UBI Center für Großbritannien reproduziert: Er sucht die besten Grundeinkommensbeträge für Reformen, die die meisten Leistungen ersetzen, und erstellt Tabellen und Grafiken des Berichts"
+      }
+    },
+    {
       "id": "tax-calculator",
       "group": "research",
       "name": "Tax-Calculator",
@@ -7274,6 +7566,22 @@ module.exports = {
         "es": "Modelo de microsimulación de los impuestos federales de EE. UU. sobre la renta y la nómina, con parámetros de RBU incorporados (como UBI_u18 para menores) para estimar el coste y los efectos distributivos de una renta básica",
         "ar": "نموذج محاكاة جزئية لضرائب الدخل والرواتب الفيدرالية في الولايات المتحدة، مزوّد بمعلمات دخل أساسي مدمجة (مثل ⁦UBI_u18⁩ للأطفال) لتقدير تكلفة الدخل الأساسي وآثاره التوزيعية",
         "de": "Mikrosimulationsmodell der US-Bundeseinkommen- und Lohnsteuern mit eingebauten Grundeinkommens-Parametern (etwa UBI_u18 für Kinder), um Kosten und Verteilungswirkung eines Grundeinkommens zu schätzen"
+      }
+    },
+    {
+      "id": "pslmodels-ubi-examples",
+      "group": "research",
+      "name": "UBI examples (PSL)",
+      "host": "github.com",
+      "repo": "PSLmodels/UBI-examples",
+      "desc": {
+        "ja": "Policy Simulation Library の UBI 分析の例。ほとんどの福祉制度を廃止して予算中立の UBI に置き換える AEI のワーキングペーパー（2017年）の表を、Tax-Calculator と C-TAM で作り直すコード",
+        "en": "UBI analyses from the Policy Simulation Library, including the code behind an AEI working paper (2017) on a budget-neutral UBI that replaces most welfare programs, built with Tax-Calculator and C-TAM",
+        "zh": "Policy Simulation Library 的 UBI 分析示例，包括一篇 AEI 工作论文（2017 年）背后的代码：用预算中性的 UBI 取代大部分福利项目，基于 Tax-Calculator 和 C-TAM",
+        "hi": "Policy Simulation Library के UBI विश्लेषण, जिनमें AEI के एक वर्किंग पेपर (2017) का कोड भी है: ज़्यादातर कल्याण कार्यक्रमों की जगह बजट-तटस्थ UBI, Tax-Calculator और C-TAM से बना",
+        "es": "Análisis de RBU de la Policy Simulation Library, incluido el código de un documento de trabajo de AEI (2017) sobre una RBU de presupuesto neutro que sustituye la mayoría de los programas sociales, hecho con Tax-Calculator y C-TAM",
+        "ar": "تحليلات للدخل الأساسي من ⁦Policy Simulation Library⁩، منها الشيفرة التي تقوم عليها ورقة عمل من ⁦AEI⁩ (2017) عن دخل أساسي محايد للميزانية يحل محل معظم برامج الرعاية، مبنية بـ⁦Tax-Calculator⁩ و⁦C-TAM⁩",
+        "de": "UBI-Analysen der Policy Simulation Library, darunter der Code zu einem AEI-Arbeitspapier (2017) über ein haushaltsneutrales Grundeinkommen, das die meisten Sozialprogramme ersetzt, gebaut mit Tax-Calculator und C-TAM"
       }
     },
     {
@@ -7293,6 +7601,22 @@ module.exports = {
       }
     },
     {
+      "id": "euromod",
+      "group": "research",
+      "name": "EUROMOD",
+      "host": "github.com",
+      "repo": "ec-jrc/JRC-EUROMOD-software-source-code",
+      "desc": {
+        "ja": "EU の税と給付のマイクロシミュレーションモデル EUROMOD のソースコード（欧州委員会共同研究センター）。ベーシックインカムを含む改革の費用や所得分配への影響を EU 各国で試算できる",
+        "en": "Source code of EUROMOD, the EU tax-benefit microsimulation model maintained by the European Commission’s Joint Research Centre, used to estimate the cost and distributional effects of reforms, basic income included, across EU countries",
+        "zh": "欧盟税收与福利微观模拟模型 EUROMOD 的源代码（由欧盟委员会联合研究中心维护），可用于测算包括基本收入在内的改革在欧盟各国的成本和收入分配效应",
+        "hi": "EUROMOD का सोर्स कोड, यूरोपीय आयोग के संयुक्त अनुसंधान केंद्र का EU कर-लाभ माइक्रोसिमुलेशन मॉडल; इससे EU देशों में बेसिक इनकम समेत सुधारों की लागत और आय-वितरण पर असर का अनुमान लगाया जाता है",
+        "es": "Código fuente de EUROMOD, el modelo de microsimulación fiscal y de prestaciones de la UE que mantiene el Centro Común de Investigación de la Comisión Europea, usado para estimar el coste y los efectos distributivos de reformas, incluida la renta básica, en los países de la UE",
+        "ar": "الشيفرة المصدرية لـ⁦EUROMOD⁩، نموذج المحاكاة الدقيقة للضرائب والإعانات في الاتحاد الأوروبي الذي يتولاه مركز البحوث المشترك التابع للمفوضية الأوروبية، ويُستخدم لتقدير تكلفة الإصلاحات، ومنها الدخل الأساسي، وآثارها التوزيعية في دول الاتحاد",
+        "de": "Quellcode von EUROMOD, dem Steuer-Transfer-Mikrosimulationsmodell der EU, gepflegt von der Gemeinsamen Forschungsstelle der Europäischen Kommission; damit werden Kosten und Verteilungswirkungen von Reformen, auch eines Grundeinkommens, in den EU-Ländern geschätzt"
+      }
+    },
+    {
       "id": "mosaic-model",
       "group": "research",
       "name": "MOSAIC model",
@@ -7307,6 +7631,22 @@ module.exports = {
         "es": "Modelo económico para financiar una renta básica universal con dividendos de la automatización por IA",
         "ar": "نموذج اقتصادي لتمويل دخل أساسي شامل من أرباح الأتمتة بالذكاء الاصطناعي",
         "de": "Wirtschaftsmodell, um ein bedingungsloses Grundeinkommen aus Dividenden der KI-Automatisierung zu finanzieren"
+      }
+    },
+    {
+      "id": "circles-simulation",
+      "group": "research",
+      "name": "Circles UBI simulation",
+      "host": "github.com",
+      "repo": "aboutcircles/circlesubi-simulation",
+      "desc": {
+        "ja": "Circles の UBI のしくみをエージェントベースで再現するシミュレーション（Mesa 製）。時間とともに発行される通貨が、信頼のネットワークの中でどう生まれ、どう移っていくかを試せる",
+        "en": "Agent-based simulation of the Circles UBI system, built with Mesa: explore how its time-based currency is minted and moves through a network of trust",
+        "zh": "用 Mesa 构建的 Circles UBI 系统智能体模拟：探索其按时间发行的货币如何铸造并在信任网络中流动",
+        "hi": "Mesa से बना Circles UBI प्रणाली का एजेंट-आधारित सिमुलेशन: देखें कि समय के साथ बनने वाली उसकी मुद्रा कैसे बनती है और भरोसे के जाल में कैसे आगे बढ़ती है",
+        "es": "Simulación basada en agentes del sistema de RBU de Circles, hecha con Mesa: explora cómo se acuña su moneda basada en el tiempo y cómo circula por una red de confianza",
+        "ar": "محاكاة قائمة على الوكلاء لنظام الدخل الأساسي في ⁦Circles⁩، مبنية بـ⁦Mesa⁩: استكشف كيف تُصك عملته المرتبطة بالزمن وكيف تنتقل عبر شبكة من الثقة",
+        "de": "Agentenbasierte Simulation des Circles-Grundeinkommens, gebaut mit Mesa: erkunden, wie die zeitbasierte Währung geprägt wird und sich durch ein Vertrauensnetz bewegt"
       }
     }
   ],

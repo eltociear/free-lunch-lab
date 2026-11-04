@@ -1753,6 +1753,19 @@ GoodDollar’s smart contracts (version 2): the G$ token, the reserve funded by 
 
 Contracts for GoodCollective, built on GoodDollar: segmented UBI pools that pay a basic income to a defined group of people, and direct-payment pools that pay recipients directly
 
+### GoodDollar v1 contracts
+
+- Repository: https://github.com/GoodDollar/GoodContracts
+- Group: Protocols
+- Language: JavaScript
+- License: MIT
+- Stars: 39
+- Last commit: 2022-10-27 (dormant: no commits in over 12 months)
+- Archived: yes
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/
+
+GoodDollar’s first smart contracts (v1), built on DAOstack: the G$ token and the daily UBI claim. GoodProtocol has since succeeded them
+
 ### Duniter v2s
 
 - Repository: https://git.duniter.org/nodes/rust/duniter-v2s
@@ -1776,6 +1789,17 @@ Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of 
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 The original Duniter node, written in TypeScript, that has run the Ğ1 libre currency and paid its universal dividend since 2017; Duniter v2s is its successor
+
+### OpenUDC
+
+- Repository: https://github.com/Open-UDC/open-udc
+- Group: Protocols
+- Language: JavaScript
+- License: LGPL-2.1
+- Stars: 78
+- Last commit: 2024-06-07 (dormant: no commits in over 12 months)
+
+Early open protocol (2010–2012, built on OpenPGP) for currencies that pay every member a universal dividend, inspired by the Relative Theory of Money; it came before uCoin, Duniter and Ğ1
 
 ### Gradido
 
@@ -1823,6 +1847,17 @@ Substrate pallets behind Encointer: local community currencies that pay a UBI to
 
 The Encointer blockchain node and its command-line client, which run the community-currency UBI built from the Encointer pallets
 
+### Encointer parachain
+
+- Repository: https://github.com/encointer/encointer-parachain
+- Group: Protocols
+- Language: Rust
+- License: GPL-3.0
+- Stars: 9
+- Last commit: 2026-05-25
+
+Runtime of Encointer’s common-good parachain on Kusama, the chain where its community currencies and their meetup UBI actually run
+
 ### Group Income
 
 - Repository: https://github.com/okTurtles/group-income
@@ -1856,6 +1891,39 @@ Experimental new UBI chain from Democracy Earth, started in June 2026: personhoo
 
 The original $UBI token for Proof of Humanity: an ERC-20 that streams newly minted UBI to every registered human
 
+### impactMarket contracts
+
+- Repository: https://github.com/impactMarket/smart-contracts-dao
+- Group: Protocols
+- Language: TypeScript
+- License: Apache-2.0 (package.json)
+- Stars: 8
+- Last commit: 2024-07-04 (dormant: no commits in over 12 months)
+
+Smart contracts for impactMarket on Celo: donations fund “UBI communities”, and each registered beneficiary claims a small amount at regular intervals
+
+### World grants contracts
+
+- Repository: https://github.com/worldcoin/worldcoin-grants-contracts
+- Group: Protocols
+- Language: Solidity
+- License: MIT
+- Stars: 17
+- Last commit: 2025-12-16
+
+Contracts behind World’s recurring WLD grants that people verified with World ID could claim; the monthly airdrops stopped taking new or renewed cycles on 1 June 2026
+
+### UBIC
+
+- Repository: https://github.com/UBIC-repo/core
+- Group: Protocols
+- Language: C++
+- License: MIT
+- Stars: 42
+- Last commit: 2020-08-10 (dormant: no commits in over 12 months)
+
+Node for UBIC, an experimental cryptocurrency (2017–2020): people prove they are unique with their e-passport’s chip signature, without revealing who they are, and receive newly minted UBIC as a basic income
+
 ### GoodDAPP
 
 - Repository: https://github.com/GoodDollar/GoodDAPP
@@ -1867,6 +1935,18 @@ The original $UBI token for Proof of Humanity: an ERC-20 that streams newly mint
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/
 
 The GoodDollar wallet: the web and React Native app where people claim their daily G$
+
+### Circles v1 web wallet
+
+- Repository: https://github.com/CirclesUBI/circles-myxogastria
+- Group: Apps & wallets
+- Language: JavaScript
+- License: AGPL-3.0
+- Stars: 37
+- Last commit: 2025-07-17 (dormant: no commits in over 12 months)
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/circles/
+
+Web wallet and mobile client for the original Circles (v1) at circles.garden: sign up, trust friends, and receive and send the Circles UBI that accrues every hour
 
 ### Cesium²
 
@@ -1904,6 +1984,42 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
 
+### Cesium
+
+- Repository: https://git.duniter.org/clients/cesium-grp/cesium
+- Group: Apps & wallets
+- Language: JavaScript
+- License: AGPL-3.0
+- Stars: 8
+- Last commit: 2026-03-10
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
+
+The original go-to wallet for the Ğ1 libre currency (web, Android, iOS) for receiving the universal dividend, paying and certifying others in the web of trust. Cesium² has since succeeded it
+
+### Silkaj
+
+- Repository: https://git.duniter.org/clients/python/silkaj
+- Group: Apps & wallets
+- Language: Python
+- License: AGPL-3.0
+- Stars: 5
+- Last commit: 2026-04-30
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
+
+Command-line client for the Ğ1 libre currency, written in Python: check balances, send payments and certify others in the web of trust from the terminal
+
+### Sakia
+
+- Repository: https://git.duniter.org/clients/python/sakia
+- Group: Apps & wallets
+- Language: Python
+- License: GPL-3.0
+- Stars: 1
+- Last commit: 2021-01-18 (dormant: no commits in over 12 months)
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
+
+Early desktop client for the Ğ1 libre currency, written in Python and PyQt; it is no longer maintained
+
 ### Encointer wallet
 
 - Repository: https://github.com/encointer/encointer-wallet-flutter
@@ -1915,6 +2031,30 @@ Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, r
 
 Mobile wallet for Encointer: join the in-person meetups, receive the community currency UBI and pay locally
 
+### Idena desktop app
+
+- Repository: https://github.com/idena-network/idena-desktop
+- Group: Apps & wallets
+- Language: JavaScript
+- License: MIT
+- Stars: 102
+- Last commit: 2023-08-04 (dormant: no commits in over 12 months)
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/idena/
+
+Desktop app for Idena (Windows, Mac, Linux): run a node, take part in the validation sessions that check you are human, and manage your identity and wallet
+
+### Idena web app
+
+- Repository: https://github.com/idena-network/idena-web
+- Group: Apps & wallets
+- Language: JavaScript
+- License: MIT
+- Stars: 27
+- Last commit: 2025-05-29 (dormant: no commits in over 12 months)
+- Service page: https://neteru-nyukin.eltociear.workers.dev/services/idena/
+
+Web app for Idena at app.idena.io: take part in validation sessions and manage your identity and wallet from the browser, without running your own node
+
 ### Social Income
 
 - Repository: https://github.com/socialincome-san/public
@@ -1925,6 +2065,18 @@ Mobile wallet for Encointer: join the in-person meetups, receive the community c
 - Last commit: 2026-11-04
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
+
+### Steem Basic Income
+
+- Repository: https://github.com/holgern/steembasicincome
+- Group: Apps & wallets
+- Language: Python
+- License: MIT
+- Stars: 6
+- Last commit: 2020-04-02 (dormant: no commits in over 12 months)
+- Archived: yes
+
+Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors bought shares for themselves or others, and members earned income as regular upvotes on their posts
 
 ### World ID protocol
 
@@ -1948,6 +2100,17 @@ Core protocol and developer docs for World ID, the anonymous proof of personhood
 
 Smart contracts for Proof of Humanity v2: a registry of humans built on video submissions, vouching and Kleros disputes, which UBI tokens build on
 
+### Proof of Humanity v2 web app
+
+- Repository: https://github.com/Proof-Of-Humanity/proof-of-humanity-v2-web
+- Group: Proof of personhood
+- Language: TypeScript
+- License: MIT (package.json)
+- Stars: 3
+- Last commit: 2026-09-15
+
+Web app for Proof of Humanity v2 at v2.proofofhumanity.id: apply with a photo and video, vouch for others and challenge registrations
+
 ### Proof of Humanity v1 contracts
 
 - Repository: https://github.com/Proof-Of-Humanity/Proof-Of-Humanity
@@ -1958,6 +2121,28 @@ Smart contracts for Proof of Humanity v2: a registry of humans built on video su
 - Last commit: 2021-07-24 (dormant: no commits in over 12 months)
 
 Smart contracts for the original Proof of Humanity (v1) by Kleros: the registry of humans that the original $UBI token depended on. Proof of Humanity v2 has since succeeded it
+
+### Proof of Humanity v1 web app
+
+- Repository: https://github.com/Proof-Of-Humanity/proof-of-humanity-web
+- Group: Proof of personhood
+- Language: JavaScript
+- License: MIT
+- Stars: 85
+- Last commit: 2025-01-30 (dormant: no commits in over 12 months)
+
+Web app for the original Proof of Humanity (v1): people submitted a profile with a video, got vouched for, and once registered as human could receive the original $UBI stream
+
+### BrightID
+
+- Repository: https://github.com/BrightID/BrightID
+- Group: Proof of personhood
+- Language: TypeScript
+- License: ISC
+- Stars: 245
+- Last commit: 2025-10-20 (dormant: no commits in over 12 months)
+
+Reference mobile app for BrightID: people connect with others they know, and analysis of that social graph lets apps check that each account is a unique person, with UBI distribution among its intended uses
 
 ### PolicyEngine US
 
@@ -1981,6 +2166,17 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 
+### UBI Center: UK blank-slate UBI
+
+- Repository: https://github.com/UBICenter/uk
+- Group: Simulators & research
+- Language: Jupyter Notebook
+- License: MIT
+- Stars: 3
+- Last commit: 2021-08-29 (dormant: no commits in over 12 months)
+
+Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it searches for the best UBI amounts in reforms that replace most benefits, and builds the report’s tables and figures
+
 ### Tax-Calculator
 
 - Repository: https://github.com/PSLmodels/Tax-Calculator
@@ -1991,6 +2187,17 @@ Microsimulation model of the UK tax and benefit system, including the UBI Center
 - Last commit: 2026-11-03
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
+
+### UBI examples (PSL)
+
+- Repository: https://github.com/PSLmodels/UBI-examples
+- Group: Simulators & research
+- Language: Jupyter Notebook
+- License: MIT
+- Stars: 4
+- Last commit: 2020-01-10 (dormant: no commits in over 12 months)
+
+UBI analyses from the Policy Simulation Library, including the code behind an AEI working paper (2017) on a budget-neutral UBI that replaces most welfare programs, built with Tax-Calculator and C-TAM
 
 ### OpenFisca
 
@@ -2003,6 +2210,17 @@ Microsimulation model of US federal income and payroll taxes, with built-in UBI 
 
 Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes
 
+### EUROMOD
+
+- Repository: https://github.com/ec-jrc/JRC-EUROMOD-software-source-code
+- Group: Simulators & research
+- Language: C#
+- License: EUPL-1.2
+- Stars: 21
+- Last commit: 2026-10-23
+
+Source code of EUROMOD, the EU tax-benefit microsimulation model maintained by the European Commission’s Joint Research Centre, used to estimate the cost and distributional effects of reforms, basic income included, across EU countries
+
 ### MOSAIC model
 
 - Repository: https://github.com/Mosaic-AI-Policy-Institute/mosaic-model
@@ -2014,6 +2232,17 @@ Open engine for writing tax and benefit rules as code; country models built on i
 - Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
 
 Economic model for funding a universal basic income from AI-automation dividends
+
+### Circles UBI simulation
+
+- Repository: https://github.com/aboutcircles/circlesubi-simulation
+- Group: Simulators & research
+- Language: Jupyter Notebook
+- License: unknown
+- Stars: 3
+- Last commit: 2026-09-30
+
+Agent-based simulation of the Circles UBI system, built with Mesa: explore how its time-based currency is minted and moves through a network of trust
 
 ## Basic income experiment data
 
