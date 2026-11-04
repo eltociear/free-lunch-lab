@@ -2869,6 +2869,26 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-04",
+      "ja": "エッセイ『サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか』を公開",
+      "en": "Published the essay “What happened when Sam Altman’s study gave people $1,000 a month for three years”",
+      "zh": "发布随笔《当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么》",
+      "hi": "निबंध “जब सैम ऑल्टमैन के अध्ययन ने लोगों को तीन साल तक हर महीने $1,000 दिए, तो क्या हुआ” प्रकाशित",
+      "es": "Publicado el ensayo «Qué pasó cuando el estudio de Sam Altman dio a la gente 1.000 $ al mes durante tres años»",
+      "de": "Essay „Was geschah, als Sam Altmans Studie Menschen drei Jahre lang 1.000 $ im Monat gab“ veröffentlicht",
+      "ar": "نشرنا مقال «ماذا حدث حين أعطت دراسة سام ألتمان الناس ⁦$1,000⁩ شهريًا لثلاث سنوات»"
+    },
+    {
+      "date": "2026-11-04",
+      "ja": "エッセイ『10万円の給付金は、何に使われたのか：特別定額給付金をデータで振り返る』を公開",
+      "en": "Published the essay “Where did the ¥100,000 go? Japan’s 2020 Special Cash Payment, by the data”",
+      "zh": "发布随笔《那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金》",
+      "hi": "निबंध “1,00,000 येन कहाँ गए? आँकड़ों में जापान का 2020 का विशेष नकद भुगतान” प्रकाशित",
+      "es": "Publicado el ensayo «¿Adónde fueron los 100.000 yenes? El Pago Especial en Efectivo de Japón de 2020, según los datos»",
+      "de": "Essay „Wohin gingen die 100.000 Yen? Japans Sonderzahlung von 2020 im Spiegel der Daten“ veröffentlicht",
+      "ar": "نشرنا مقال «أين ذهبت الـ100,000 ين؟ الدفعة النقدية الخاصة في اليابان عام 2020 بلغة البيانات»"
+    },
+    {
       "date": "2026-11-03",
       "ja": "エッセイ『ネサラ・ゲサラとベーシックインカム：「全員にお金が配られる」話の見分け方』を公開",
       "en": "Published the essay “NESARA/GESARA and basic income: telling real payments to everyone from promises that never arrive”",
@@ -7936,7 +7956,7 @@ module.exports = {
     },
     {
       "id": "alaska",
-      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund", "nesara-gesara-basic-income"],
+      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund", "nesara-gesara-basic-income", "japan-special-cash-payment"],
       "years": "1982–",
       "type": "gov",
       "name": "Alaska Permanent Fund Dividend",
@@ -8066,7 +8086,7 @@ module.exports = {
     },
     {
       "id": "kenya",
-      "essays": ["moltbook-basic-income"],
+      "essays": ["moltbook-basic-income", "japan-special-cash-payment"],
       "years": "2017–",
       "type": "ngo",
       "name": "GiveDirectly basic income study",
@@ -8240,7 +8260,7 @@ module.exports = {
     },
     {
       "id": "openresearch",
-      "essays": ["universal-high-income", "moltbook-basic-income"],
+      "essays": ["universal-high-income", "moltbook-basic-income", "openresearch-cash-study"],
       "years": "2020–2023",
       "type": "ngo",
       "name": "OpenResearch Unconditional Cash Study",
@@ -8503,7 +8523,7 @@ module.exports = {
     },
     {
       "id": "marshall-islands",
-      "essays": ["moltbook-basic-income", "thailand-digital-wallet", "your-own-basic-income", "nesara-gesara-basic-income"],
+      "essays": ["moltbook-basic-income", "thailand-digital-wallet", "your-own-basic-income", "nesara-gesara-basic-income", "japan-special-cash-payment"],
       "years": "2025–",
       "type": "gov",
       "name": "Enra (Individual Support Distribution)",
@@ -8547,7 +8567,7 @@ module.exports = {
     },
     {
       "id": "korea-rural",
-      "essays": ["nesara-gesara-basic-income"],
+      "essays": ["nesara-gesara-basic-income", "japan-special-cash-payment"],
       "years": "2026–2027",
       "type": "gov",
       "name": "Rural Basic Income Pilot",
@@ -8591,7 +8611,7 @@ module.exports = {
     },
     {
       "id": "ai-dividend",
-      "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income", "public-benefit-fund"],
+      "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income", "public-benefit-fund", "openresearch-cash-study"],
       "years": "2026–",
       "type": "ngo",
       "name": "AI Dividend",
@@ -8772,6 +8792,2444 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "openresearch-cash-study",
+      "date": "2026-11-04",
+      "related": [
+        "universal-high-income",
+        "public-benefit-fund",
+        "moltbook-basic-income"
+      ],
+      "title": {
+        "ja": "サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか",
+        "en": "What happened when Sam Altman’s study gave people $1,000 a month for three years",
+        "zh": "当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么",
+        "hi": "जब सैम ऑल्टमैन के अध्ययन ने लोगों को तीन साल तक हर महीने $1,000 दिए, तो क्या हुआ",
+        "es": "Qué pasó cuando el estudio de Sam Altman dio a la gente 1.000 $ al mes durante tres años",
+        "de": "Was geschah, als Sam Altmans Studie Menschen drei Jahre lang 1.000 $ im Monat gab",
+        "ar": "ماذا حدث حين أعطت دراسة سام ألتمان الناس ⁦$1,000⁩ شهريًا لثلاث سنوات"
+      },
+      "desc": {
+        "ja": "1,000人が3年間、月1,000ドルを無条件で受け取りました。働く時間は少し減り、お金の多くは食費や家賃に使われ、時間を買い戻した人もいました。サム・アルトマンが支援した研究の論文からわかったことと、わからないことを整理します。",
+        "en": "1,000 people got $1,000 a month for three years. They worked a little less, spent on basics and some bought time. What the papers found, and what they don’t.",
+        "zh": "OpenResearch 向 1,000 人每月发放 1,000 美元，为期三年。受助者每周少工作约 1.3 小时，钱主要花在基本开支上，有些人用它买回了时间。论文发现了什么、没发现什么，以及它算不算基本收入。",
+        "hi": "1,000 लोगों को तीन साल तक हर महीने $1,000 मिले। उन्होंने थोड़ा कम काम किया, ज़रूरी चीज़ों पर ख़र्च किया, कुछ ने समय ख़रीदा। शोध में क्या मिला, क्या नहीं।",
+        "es": "1.000 personas recibieron 1.000 $ al mes durante tres años. Trabajaron algo menos, gastaron en lo básico y algunas ganaron tiempo. Qué hallaron los estudios.",
+        "de": "1.000 Menschen bekamen drei Jahre lang 1.000 $ im Monat. Sie arbeiteten etwas weniger, kauften Nötiges, manche gewannen Zeit. Was die Studien zeigen, was nicht.",
+        "ar": "حصل 1,000 شخص على ⁦$1,000⁩ شهريًا لثلاث سنوات. عملوا أقل قليلًا، وأنفقوا على الأساسيات، واشترى بعضهم وقتًا. ما وجدته الدراسات، وما لم تجده."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2024年7月、サム・アルトマンが支援した、米国で最大規模の無条件現金給付研究の結果が出ました。数日のうちに、同じ数字に正反対の見出しがつきました。一方は「タダのお金をもらうと人は働かなくなる」と読み、もう一方は「現金は人に自由を与える」と読みました。どちらも同じ論文を引用していました。"
+          ],
+          [
+            "p",
+            "このエッセイでは、その論文に立ち返ります。研究がどんなものだったか、受給者がお金と時間を何に使ったか、何が変わらなかったか、そしてベーシックインカムについて何がわかり、何がわからないのか。あわせて、なぜAI企業の最高経営責任者がそれを知りたがったのかも考えます。"
+          ],
+          [
+            "h",
+            "どんな研究だったか"
+          ],
+          [
+            "p",
+            "Y Combinator Researchとして始まった研究所OpenResearchは、2019年の世帯収入が連邦貧困基準の300%以下だった21歳から40歳の3,000人を、イリノイ州北部（シカゴ周辺を含む）とテキサス州北中部（ダラス周辺を含む）の19の郡から集めました。都市、郊外、農村に住む人たちです。[1][2] 登録は2019年10月から2020年10月まで行われました。その後、参加者は無作為に分けられ、2020年11月から2023年10月まで、1,000人が月1,000ドルを、対照群の2,000人が月50ドルを受け取りました。支払いは地元の2つの非営利団体が担いました。[2]"
+          ],
+          [
+            "p",
+            "お金には一切の条件がありませんでした。働くことや使い道について何も求められず、調査に答え続けるかどうかにかかわらず支払いは続きました。[1][2] 参加者の2019年の世帯収入は平均約29,900ドルだったので、月1,000ドルは世帯にとっておよそ40%の収入増でした。[2] 分析は事前登録されており、最後の調査には参加者の96%が回答しました。[2]"
+          ],
+          [
+            "p",
+            "私たちの計算では、給付だけで約3,960万ドルになります。受給者1,000人に3,600万ドル、対照群に360万ドルです。Forbesによると、OpenResearchとその関連団体は2015年以降に約6,000万ドルを集めており、その中にはアルトマンが寄付した1,400万ドル、OpenAIの非営利部門からの1,000万ドル、ジャック・ドーシーのStart Smallからの1,500万ドル、GitLab共同創業者のシッド・シブランディからの650万ドルが含まれます。[3] 研究そのものも、全米科学財団（National Science Foundation）の助成を謝辞に挙げています。[2]"
+          ],
+          [
+            "p",
+            "なぜこの研究が行われたのかは、2016年1月にさかのぼります。アルトマンはY Combinatorのブログでこの研究を発表しました。彼は「技術が従来の仕事をなくし続け、莫大な新しい富が生まれるにつれて」、何らかの形のベーシックインカムが国の規模で現れる可能性が高いと書き、それが「どう機能するかについてのデータはかなり少ない」と述べました。さらにこう問いかけています。「人はぶらぶらしてビデオゲームをするのか、それとも新しいものを生み出すのか」。[4]"
+          ],
+          [
+            "h",
+            "見出しの数字：労働がわずかに減った"
+          ],
+          [
+            "p",
+            "エバ・ビバルト、エリザベス・ローズ、アレクサンダー・バーティク、デビッド・ブルックマン、パトリック・クラウゼ、サラ・ミラーによる雇用の論文によると、受給者の労働時間は、調査では対照群より週約1.3時間短く、スマートフォンアプリの時間日誌と生活時間調査では週1.4〜1.5時間短くなりました。調査では、就業している割合が2.3ポイント低くなりました。給付を除いた本人の収入は、年約1,900ドル少なくなりました。パートナーも同じくらい労働時間を減らし、参加者とパートナーを合わせると週2.1時間短く働いていました。[2]"
+          ],
+          [
+            "p",
+            "言い換えると、受け取った1ドルごとに、ほかの収入源からの世帯収入が約28セント、本人の収入が約16セント減りました。著者らは、労働時間と収入への影響を対照群に比べて5〜6%の減少とし、「中程度の効果」と呼んでいます。[2]"
+          ],
+          [
+            "p",
+            "見出しを読むうえで、2つの点が大事です。第一に、3年間で就業率は両方のグループで上がりました。受給者では58%から72%へ、対照群では59%から74%へと上がり、対照群のほうが上がり幅が大きかっただけです。[5] 給付を含めると、3年目の受給者本人の収入は、それでも対照群より約1万ドル多くなっていました。[5] 第二に、数字は変わってきています。論文の最初の版（2024年7月）では、収入の減少は年約1,500ドル、労働市場への参加の低下は2.0ポイントでした。2026年8月の改訂版は、調査の回答と州の失業保険の記録を組み合わせた指標を優先しており、それぞれ約1,900ドルと4.2ポイントとしています。[2]"
+          ],
+          [
+            "o",
+            "評価すべき点は評価しておきます。研究者たちは、この研究と結びつけられがちな主張にとって都合の悪い方向に、自分たちの見出しの効果を大きく改訂し、大きいほうの数字を要旨に載せました。研究とは本来そういうものです。"
+          ],
+          [
+            "h",
+            "時間を何に使ったか"
+          ],
+          [
+            "p",
+            "論文によると、仕事から解放された時間は主に余暇に使われ、運転やその他の活動に使う時間も少し増えました。保育、運動、求職活動、自己研鑽にかける時間については、小さな変化すらなかったと言えるとしています。[2] OpenResearchのまとめは、余暇をさらに細かく分けています。いちばん増えたのは、運転、社交的な余暇（人と過ごす時間：交流、レクリエーション、食事）、そして食料品の買い物などの用事でした。[5]"
+          ],
+          [
+            "p",
+            "求職活動は止まったのではなく、形を変えました。仕事のない期間は、対照群の平均7.8か月より約0.8か月長くなりました。受給者は、最近仕事に応募した割合が高い一方で、応募した件数は少なくなりました。[2] 仕事を探している人のうち、受給者は、どんな仕事に就くにしても面白さや意味が欠かせないと答える割合が5.5ポイント高くなりました。[5] それでも、数多くの指標で見て、仕事の質は良くなりませんでした。論文は、仕事の質の小さな改善も、時給58セントを超える賃金の上昇もなかったと言えるとしています。[2]"
+          ],
+          [
+            "p",
+            "平均の裏には、まったく違う暮らしがあります。受給者のネイサンは、4歳の息子と過ごすために週50時間の仕事を半分にしました。リサは、給料は低くても伸びしろのある仕事に移り、差額を給付で埋め、2年後には10万ドル近い年俸を得ていました。週72時間働いていたショーンは、燃え尽きる前に休むことにしました。[5] グループ別の傾向は探索的なものですが、労働の減少は、30歳未満、ひとり親、そして開始時の世帯収入が最も高かった人たちに集中していました。30歳を超える受給者では、就業や労働時間への有意な効果はありませんでした。[5] 若い参加者では、進学などの教育への推定効果も大きくなりましたが、全体として学位の取得への有意な効果はありませんでした。[2]"
+          ],
+          [
+            "h",
+            "お金を何に使ったか"
+          ],
+          [
+            "p",
+            "平均すると、受給者は対照群より月310ドル多く支出し、その半分以上は基本的なものに使われました。食費（67ドル）、家賃（52ドル）、交通費（50ドル）です。対照群の支出と比べて最も大きく増えたのは、家族や友人への贈り物や貸し付けといった、ほかの人への金銭的な援助で、月22ドル、26%の増加でした。[6] 支出の増加を引っぱったのは、開始時に貧困線より下かその近くにいた人たちで、最も収入の高いグループでは、総支出への効果は小さく、有意ではありませんでした。[6]"
+          ],
+          [
+            "p",
+            "消費の論文は、支出が月300ドル以上増え、その多くが住まい、食べ物、車に使われたと推定しています。受給者は、新しい家や新しい地域に引っ越す割合も高くなりました。自己申告の家計の健全さと信用スコアは改善しました。しかし、資産のわずかな増加は借金の増加で相殺され、純資産はほとんど変わりませんでした。延滞、破産、差し押さえへの影響もありませんでした。著者らは、大きな一時的な給付は「若い低所得世帯の財務状況を持続的に改善するとは限らない」と結論づけています。[7]"
+          ],
+          [
+            "h",
+            "健康、子ども、仕事への考え方"
+          ],
+          [
+            "p",
+            "健康：給付は、ストレスと食料の確保に大きな改善をもたらしましたが、長続きしませんでした。病院、救急、歯科の利用も増えました。1年目より後は、自己申告の身体の健康、血液検査の指標、心の健康は改善せず、世帯の子どもの健康への影響もありませんでした。[8] OpenResearchは、1年目がパンデミックの支援策と重なっていたこと、物価の上昇とその支援の終了が初期の改善を目減りさせた可能性があることを指摘していますが、なぜ改善が消えたのかは確かではないとしています。[8]"
+          ],
+          [
+            "p",
+            "子ども：2025年の論文によると、月1,000ドルを受け取った親は、子どもへの支出を増やし、より目を配るようになったと答えました。同時に、子どもの発達上の困難やストレスが増えたとも答えており、著者らは、よく見るようになったことが原因かもしれないとしています。学校の記録にあるほとんどの結果には、意味のある変化はありませんでした。[9]"
+          ],
+          [
+            "p",
+            "政治と仕事：2024年12月の論文は、投票や政治参加への影響はなく、政治的な考え方の変化もほとんどないとしています。固定観念に反する結果が一つあります。受給者は、仕事が個人にとっても社会にとっても少しだけ大切だと考えるようになり、メディケイドの就労要件を支持する割合も高くなりました。[10] アルトマンのもう一つの問い、新しいものを生み出すかどうかについては、受給者はビジネスのアイデアを持ち、起業するつもりだと答える割合が高かったものの、平均すると実際に起業する割合が有意に高いわけではありませんでした。探索的な内訳では、黒人と女性の受給者は、3年目までに起業した、または起業を手伝った割合が高くなっていました。[11]"
+          ],
+          [
+            "h",
+            "同じ結果に、2つの見出し"
+          ],
+          [
+            "p",
+            "当時の報道の多くは慎重でした。NPRは、受給者の労働が「平均で週1時間ほど少なかった」こと、支出の多くは基本的なものだったこと、そして報告書自体が、結果は「両方の立場を支持する」と述べていることを伝えました。保証所得を求めて活動するEconomic Security Projectの共同創業者クリス・ヒューズは、「この研究やほかの研究から、保証所得だけではうまくいかないということを受け取ってもらえればと思います」と話しました。American Enterprise Instituteのマイケル・ストレインは、仕事に就いた人だけに支払われる、低所得の働き手向けの税額控除の拡大のほうを支持しました。[12]"
+          ],
+          [
+            "p",
+            "CBSはビバルトの言葉を伝えました。「経済学者から見れば、中程度の効果です」。彼女は、減った労働時間を失敗とは見ていませんでした。「人々はより多くのことをしています。もし結果が、人々は余暇の時間が増えることを大切にしていて、それが幸福を高めるのだと示しているなら、それは良いことです」。しかし、生活の余裕がより良い仕事につながるという期待については、「仕事の質への効果はまったく見つかっていません」と述べました。[13] 同じCBSの記事は、3,000人の参加者が月1,000ドルを受け取ったとも書いていましたが、実際に受け取ったのは1,000人で、残りの2,000人は50ドルでした。よくある間違いですが、研究を実際の3倍の規模に見せてしまいます。[13][2] 同じ年の9月、非営利団体UpTogetherの最高経営責任者ヘスス・ヘレナはFortuneに寄稿し、記者や研究者が導いた結論は「貧困の中にいる人々を怠け者として描くような、つらい固定観念に根ざしている」と論じました。[14]"
+          ],
+          [
+            "o",
+            "どちらの短いまとめも、何かを取りこぼしています。「タダのお金は人を怠けさせる」は、両方のグループで就業が増えた時期に、仕事を少しだけ大切に思うようになった人たちの労働時間が約5%減ったという結果には合いません。「現金は人生を変える」は、より良い仕事も、健康や幸福の長続きする改善も見つからず、純資産がほとんど動かなかった研究には合いません。証拠が示しているのは、もっと小さく、もっと役に立つことです。人々はお金を収入として扱い、その多くを基本的なものに使い、一部の人はそれで時間を買い戻しました。その時間が「無駄」なのか「自由」なのかは価値判断であり、データが代わりに決めてくれるものではありません。"
+          ],
+          [
+            "h",
+            "これはベーシックインカムなのか"
+          ],
+          [
+            "p",
+            "BIEN（ベーシックインカム世界ネットワーク）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義し、定期性、現金、個人単位、普遍性、無条件性の5つの特徴を挙げています。[15]"
+          ],
+          [
+            "p",
+            "定期的か？はい、毎月です。現金か？はい。個人単位か？はい、世帯ではなく本人に支払われました。無条件か？はい、仕事や使い道のルールはありませんでした。普遍的か？いいえ。無作為に選ばれた、21歳から40歳の比較的収入の低い大人1,000人に、3年間支払われただけです。"
+          ],
+          [
+            "o",
+            "つまり、これはベーシックインカムではなく保証所得の試験であり、そこから3つの限界が出てきます。第一に、期間限定で、誰もがいつ終わるかを知っていました。給付が一生続くなら、人々の行動はどちらの方向にも違っていたかもしれません。第二に、それぞれの地域で受け取ったのはごく一部の人だけだったので、全員への給付が家賃や物価、賃金に何をもたらすのか、財源となる税が何を変えるのかは示せません。アルトマン自身の投稿も、生活費全体についての問いは「私たちの範囲を超えるが、明らかに重要だ」と書いていました。[4] 第三に、研究はパンデミックとその後の時期にまたがっていました。ただし論文は、推定値の大部分が2022年と2023年を反映していると述べています。[2] 無作為化試験がよく示せるのは、個人が追加の収入にどう反応するかであり、それこそが、より大きな制度を設計するときに必要な数字です。"
+          ],
+          [
+            "p",
+            "OpenResearchは、支払いが終わった後も2025年まで参加者への調査を続けたとしています。[1] その時期の結果は、公表されたものをまだ見つけられていません。また、調査データをデータ利用契約のもとで研究者に提供しており、雇用の論文のコードも公開されています。どちらも{オープンデータの一覧|/open-source/#data-openresearch-ucs}に載せています。"
+          ],
+          [
+            "h",
+            "AIにとってなぜ大事なのか"
+          ],
+          [
+            "p",
+            "アルトマンの2016年の問いは、技術と仕事についての懸念から生まれました。[4] 2021年の「Moore’s Law for Everything」では、さらに踏み込み、大企業と土地への課税で積み立てる「アメリカ株式基金（American Equity Fund）」を提案しました。すべての大人に毎年その持ち分を配るというものです。[16] {ユニバーサルハイインカムのエッセイ|/essays/universal-high-income/}では、この案を取り上げ、誰が払うのかを考えました。その後、お金は小さな規模で現れ始めています。{AI Dividend|/timeline/#tl-ai-dividend}は、AIで打撃を受けた働き手に月1,000ドルを1年間支払っており、Anthropicは{特定の集団への直接の分配|/essays/public-benefit-fund/}を行いうる基金に株式を充てています。"
+          ],
+          [
+            "o",
+            "AIの資金による給付を設計する人にとって、この研究が与えるのは評決ではなく、計画のための数字です。お金の大部分は家賃、食べ物、交通に使われます。受給者とパートナーは少しだけ働く時間を減らすので、費用の計算では、1ドル払うごとにほかの世帯収入が約28セント失われることを見込む必要があります。短期的な助けは大きく、本物です。健康、仕事、資産の長続きする変化は、3年間の月1,000ドルだけでもたらされたものではありません。全員に支払われる恒久的な配当は別の政策であり、違う結果になるかもしれませんが、人々がどう反応するかについて、これが私たちの持つ最良の証拠です。"
+          ],
+          [
+            "h",
+            "ここから何を受け取るか"
+          ],
+          [
+            "o",
+            "アルトマンは2016年に正直な問いを立て、丁寧な答えにお金を払いました。そしてその答えは、この考えを単純に持ち上げるものではありませんでした。研究者たちは、良い結果と並べて効果がなかった結果も公表し、主な推定値を大きいほうに改訂し、データを公開しました。それは、どんな見出しよりも価値があります。"
+          ],
+          [
+            "o",
+            "この研究から一行だけ伝えるなら、正確なものにしてください。比較的収入の低い1,000人が3年間、月1,000ドルを受け取りました。週の労働時間は約1.3時間減り、お金の多くは基本的なものに使われ、1年ほどは暮らしの実感が良くなり、多くの人はそのお金で時間の使い方を選びました。このサイトがあらゆるタダ飯を読むのと同じように読んでください。誰が払い、誰が受け取り、どれだけの期間続いたのか。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "In July 2024, the results came out of the largest study of no-strings cash in the United States, the one Sam Altman had backed. Within days the same numbers carried opposite headlines. One camp read “free money makes people work less”. The other read “cash gives people freedom”. Both were quoting the same papers."
+          ],
+          [
+            "p",
+            "This essay goes back to those papers: what the study was, what recipients did with the money and the time, what did not change, and what it does and does not tell us about basic income. It also asks why an AI company’s chief executive wanted to know."
+          ],
+          [
+            "h",
+            "What the study was"
+          ],
+          [
+            "p",
+            "OpenResearch, a lab that began as Y Combinator Research, enrolled 3,000 people aged 21 to 40 whose household income in 2019 was no more than 300% of the federal poverty level, in 19 counties of northern Illinois (including the Chicago area) and north central Texas (including the Dallas area), in cities, suburbs and rural places.[1][2] Enrolment ran from October 2019 to October 2020. People were then randomly split: 1,000 received $1,000 a month and 2,000 received $50 a month as the control group, from November 2020 to October 2023. Two local non-profits made the payments.[2]"
+          ],
+          [
+            "p",
+            "The money was fully unconditional. Nothing was required about work or spending, and payments continued whether or not someone kept answering the surveys.[1][2] Participants’ household income averaged about $29,900 in 2019, so $1,000 a month was roughly a 40% raise for the household.[2] The analysis was pre-registered, and the surveys reached 96% of participants at the end.[2]"
+          ],
+          [
+            "p",
+            "By our arithmetic the transfers alone come to about $39.6 million: $36 million for the 1,000 recipients and $3.6 million for the control group. Forbes reported that OpenResearch and its entities had raised some $60 million since 2015, including $14 million donated by Altman, $10 million from OpenAI’s non-profit arm, $15 million from Jack Dorsey’s Start Small and $6.5 million from the GitLab co-founder Sid Sijbrandij.[3] The research itself also acknowledges a National Science Foundation grant.[2]"
+          ],
+          [
+            "p",
+            "The reason goes back to January 2016, when Altman announced the study on Y Combinator’s blog. He wrote that “as technology continues to eliminate traditional jobs and massive new wealth gets created”, some version of basic income was likely to appear at a national scale, and that there was “fairly little data about how it would work”. He also asked: “Do people sit around and play video games, or do they create new things?”[4]"
+          ],
+          [
+            "h",
+            "The headline: a little less work"
+          ],
+          [
+            "p",
+            "The employment paper, by Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause and Sarah Miller, finds that recipients worked about 1.3 hours a week less than the control group in the surveys, and 1.4 to 1.5 hours less in the phone-app time diaries and time-use surveys. In the surveys they were 2.3 percentage points less likely to be employed. Their own income, not counting the transfers, was about $1,900 a year lower. Their partners cut their hours by a similar amount: together, participant and partner worked 2.1 hours a week less.[2]"
+          ],
+          [
+            "p",
+            "Put another way, for every dollar received, household income from other sources fell by about 28 cents, and the participant’s own income by about 16 cents. The authors call the effect on hours and income a 5 to 6% decline relative to the control group, “a moderate effect”.[2]"
+          ],
+          [
+            "p",
+            "Two details matter for the headline. First, employment rose in both groups over the three years, from 58% to 72% among recipients and from 59% to 74% in the control group; the controls simply rose further.[5] Counting the transfers, recipients’ own income in the third year was still about $10,000 higher than the control group’s.[5] Second, the numbers have moved. The first version of the paper (July 2024) put the fall in income at about $1,500 a year and the drop in labour market participation at 2.0 percentage points. The revision of August 2026, whose preferred measures combine survey answers with state unemployment-insurance records, puts them at about $1,900 and 4.2 percentage points.[2]"
+          ],
+          [
+            "o",
+            "Credit where it is due: the researchers revised their own headline effect upward, in the direction that is less convenient for the cause the study is associated with, and put the larger numbers in the abstract. That is what a study is for."
+          ],
+          [
+            "h",
+            "What they did with the time"
+          ],
+          [
+            "p",
+            "According to the paper, the hours freed from work went mostly to leisure, along with some extra time driving and on other activities. The authors can rule out even small changes in time spent on childcare, exercise, job search or self-improvement.[2] The OpenResearch summary breaks the leisure down further: the largest increases were in driving, social leisure (time with other people: socialising, recreation, meals) and errands such as grocery shopping.[5]"
+          ],
+          [
+            "p",
+            "Job search changed shape rather than stopping. Spells without work were about 0.8 months longer than the control group’s average of 7.8 months, and recipients were more likely to have recently applied for a job but applied to fewer positions.[2] Among those looking for work, recipients were 5.5 percentage points more likely to say that interesting or meaningful work was essential for any job they would take.[5] Even so, across a long list of measures, job quality did not improve, and the paper can rule out even small improvements in it, or wage gains above 58 cents an hour.[2]"
+          ],
+          [
+            "p",
+            "Averages hide very different lives. One recipient, Nathan, cut his 50-hour week in half to spend time with his four-year-old son. Lisa took a lower-paid job with room to grow, used the transfers to cover the gap, and two years later was on a salary close to six figures. Shawn, who had been working 72 hours a week, decided to take a break before he burned out.[5] The patterns by group are exploratory, but the drop in work was concentrated among people under 30, single parents and those with the highest household incomes at the start; for recipients over 30 there was no significant effect on employment or hours.[5] Younger participants also showed larger estimated effects on further education, although there was no significant effect on degrees overall.[2]"
+          ],
+          [
+            "h",
+            "What they did with the money"
+          ],
+          [
+            "p",
+            "On average, recipients spent $310 a month more than the control group, and more than half of that went to basics: food ($67), rent ($52) and transport ($50). The biggest increase relative to what the control group spent was in financial support to others, such as gifts and loans to family and friends: $22 a month, 26% more.[6] People who started out below or near the poverty line drove the increase in spending; for the highest-income group the effect on total spending was small and not significant.[6]"
+          ],
+          [
+            "p",
+            "The consumption paper estimates that spending rose by at least $300 a month, mostly on housing, food and cars, and that recipients were more likely to move to a new home and a new neighbourhood. Self-reported financial health and credit scores improved. But small gains in assets were offset by more debt, leaving net worth almost unchanged, and there was no effect on delinquencies, bankruptcies or foreclosures. The authors conclude that large temporary transfers “may not cause persistent improvements in the financial position of young, low-income households”.[7]"
+          ],
+          [
+            "h",
+            "Health, children and attitudes to work"
+          ],
+          [
+            "p",
+            "Health: the transfers brought large but short-lived improvements in stress and food security, and more use of hospital, emergency and dental care. They did not improve self-reported physical health, blood-test measures or mental health after the first year, and there was no effect on the health of children in the household.[8] OpenResearch notes that the first year overlapped with pandemic relief and that rising prices and the end of that aid may have worn the early gains down, but it says it cannot be sure why they faded.[8]"
+          ],
+          [
+            "p",
+            "Children: a 2025 paper finds that parents who received $1,000 a month spent more on their children and reported closer supervision. They also reported more developmental difficulties and stress in their children, which the authors suggest may come from watching them more closely. Most outcomes in school records did not change meaningfully.[9]"
+          ],
+          [
+            "p",
+            "Politics and work: a paper from December 2024 finds no effect on voting or political engagement and few changes in political views. One result runs against the stereotype: recipients came to see work as slightly more important for individuals and for society, and were more likely to support work requirements for Medicaid.[10] On Altman’s other question, creating new things, recipients were more likely to have a business idea and to say they intended to start one, but on average they were not significantly more likely to start a business. In an exploratory breakdown, Black and female recipients were more likely to have started or helped start one by the third year.[11]"
+          ],
+          [
+            "h",
+            "The same results, two headlines"
+          ],
+          [
+            "p",
+            "Coverage at the time was mostly careful. NPR reported that recipients worked “an hour or so less a week on average” and spent mostly on basics, and that the report itself says its results “provide support for both sides”. Chris Hughes, a co-founder of the Economic Security Project, which campaigns for guaranteed income, said: “I hope that people are taking away from this study and other studies that a guaranteed income will not work alone.” Michael Strain of the American Enterprise Institute preferred bigger tax credits for low-income workers, paid only to those who take a job.[12]"
+          ],
+          [
+            "p",
+            "CBS quoted Vivalt: “From an economist’s point of view, it’s a moderate effect.” She did not see the lost hours as a failure: “People are doing more stuff, and if the results say people value having more leisure time — that this is what increases their well-being — that’s positive.” But on the hope that a cushion would lead to better jobs, she said: “we don’t find any effects on the quality of employment whatsoever.”[13] The same CBS article also said that 3,000 participants received $1,000 a month; in fact 1,000 did, and the other 2,000 got $50. It is a common slip, and it makes the study sound three times bigger than it was.[13][2] Writing in Fortune that September, Jesús Gerena, chief executive of the non-profit UpTogether, argued that the conclusions reporters and researchers drew were “rooted in painful stereotypes about people experiencing poverty, such as depicting them as lazy”.[14]"
+          ],
+          [
+            "o",
+            "Both short versions lose something. “Free money makes people lazy” does not fit a drop of about 5% in hours, in a period when employment rose in both groups, among people who came to value work a little more. “Cash transforms lives” does not fit a study that found no better jobs, no lasting gains in health or well-being, and net worth that barely moved. What the evidence shows is smaller and more useful: people treated the money as income, spent most of it on basics, and some of them used it to buy back time. Whether that time is “waste” or “freedom” is a value judgement the data cannot make for you."
+          ],
+          [
+            "h",
+            "Is this basic income?"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”, and lists five characteristics: periodic, cash, individual, universal and unconditional.[15]"
+          ],
+          [
+            "p",
+            "Periodic? Yes, every month. Cash? Yes. Individual? Yes, it was paid to the person, not the household. Unconditional? Yes, with no work or spending rules. Universal? No. It went to 1,000 randomly chosen lower-income adults aged 21 to 40, for three years."
+          ],
+          [
+            "o",
+            "So this was a guaranteed income trial, not a basic income, and three limits follow. First, it was temporary, and everyone knew when it would end; people might act differently, in either direction, if the payment were for life. Second, only a few people in each place received it, so it cannot show what a payment to everyone would do to rents, prices or wages, or what the taxes to fund it would change. Altman’s own post said that questions about the overall cost of living were “beyond our scope, but obviously important”.[4] Third, it ran through the pandemic and its aftermath, although the paper notes that its estimates mostly reflect 2022 and 2023.[2] What a randomised trial can show well is how individuals respond to extra income, and that is exactly the number any design for a larger scheme needs."
+          ],
+          [
+            "p",
+            "OpenResearch says it kept surveying participants after the payments ended, through 2025.[1] We have not yet found published results from that period. It has also made the survey data available to researchers under a data use agreement, and the code for the employment paper is open; both are on {our open data list|/open-source/#data-openresearch-ucs}."
+          ],
+          [
+            "h",
+            "Why it matters for AI"
+          ],
+          [
+            "p",
+            "Altman’s 2016 question came from a worry about technology and jobs.[4] In 2021, in “Moore’s Law for Everything”, he went further and proposed an American Equity Fund, filled by taxing large companies and land, that would pay every adult a yearly share.[16] {Our essay on universal high income|/essays/universal-high-income/} looked at that plan and asked who pays. Since then, the money has started to appear on a small scale: {the AI Dividend|/timeline/#tl-ai-dividend} pays $1,000 a month for a year to workers hurt by AI, and Anthropic has set aside shares in a fund that could make {direct distributions to specific populations|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "For anyone designing an AI-funded payment, this study gives planning numbers rather than a verdict. Most of the money goes on rent, food and transport. Recipients and their partners work a little less, so the cost has to count about 28 cents of other household income lost for each dollar paid. Short-term relief is large and real; lasting change in health, jobs or wealth is not something three years of $1,000 delivered on its own. A permanent dividend paid to everyone is a different policy and may behave differently, but this is the best evidence we have about how people respond."
+          ],
+          [
+            "h",
+            "What to take from it"
+          ],
+          [
+            "o",
+            "Altman asked an honest question in 2016 and paid for a careful answer, and the answer did not simply flatter the idea. The researchers published the null results alongside the good ones, revised their main estimate upward, and opened their data. That is worth more than any single headline."
+          ],
+          [
+            "o",
+            "If you share one line from this study, make it the accurate one: 1,000 lower-income people received $1,000 a month for three years; they worked about 1.3 hours a week less, spent mostly on basics, felt better for a year, and many used the money to choose how they spent their time. Read it the way this site reads every free lunch: who paid, who received, and for how long."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2024 年 7 月，美国规模最大的无条件现金研究公布了结果，这项研究由山姆·阿尔特曼资助。几天之内，同样的数字配上了相反的标题。一方读出的是“白给的钱让人少干活”，另一方读出的是“现金给人自由”。两方引用的是同一批论文。"
+          ],
+          [
+            "p",
+            "这篇随笔回到这些论文本身：这项研究是什么，受助者用这笔钱和时间做了什么，什么没有改变，以及它在基本收入问题上能告诉我们什么、不能告诉我们什么。它也会追问：一家 AI 公司的首席执行官为什么想知道答案。"
+          ],
+          [
+            "h",
+            "这项研究是什么"
+          ],
+          [
+            "p",
+            "OpenResearch 是由 Y Combinator Research 发展而来的研究机构。它在伊利诺伊州北部（包括芝加哥地区）和得克萨斯州中北部（包括达拉斯地区）的 19 个县，招募了 3,000 名 21 至 40 岁、2019 年家庭收入不超过联邦贫困线 300% 的人，覆盖城市、郊区和农村。[1][2] 招募从 2019 年 10 月持续到 2020 年 10 月。随后参与者被随机分组：从 2020 年 11 月到 2023 年 10 月，1,000 人每月领取 1,000 美元，作为对照组的 2,000 人每月领取 50 美元。款项由两家当地非营利组织发放。[2]"
+          ],
+          [
+            "p",
+            "这笔钱完全无条件。对工作和花销没有任何要求，无论是否继续回答问卷，款项都照发。[1][2] 参与者 2019 年的家庭收入平均约为 29,900 美元，因此每月 1,000 美元大约相当于家庭收入增加 40%。[2] 分析方案事先登记，最后一轮问卷覆盖了 96% 的参与者。[2]"
+          ],
+          [
+            "p",
+            "按我们的计算，仅发放的现金就约有 3,960 万美元：1,000 名受助者 3,600 万美元，对照组 360 万美元。据《福布斯》报道，OpenResearch 及其相关实体自 2015 年以来共筹集约 6,000 万美元，其中包括阿尔特曼捐赠的 1,400 万美元、OpenAI 非营利部门的 1,000 万美元、杰克·多尔西的 Start Small 的 1,500 万美元，以及 GitLab 联合创始人 Sid Sijbrandij 的 650 万美元。[3] 研究本身也致谢了美国国家科学基金会的资助。[2]"
+          ],
+          [
+            "p",
+            "缘由要追溯到 2016 年 1 月，阿尔特曼在 Y Combinator 的博客上宣布了这项研究。他写道，“随着技术不断淘汰传统工作、创造出巨大的新财富”，某种形式的基本收入很可能会在全国范围内出现，而“关于它如何运作的数据相当少”。他还问：“人们会坐着打电子游戏，还是会创造新东西？”[4]"
+          ],
+          [
+            "h",
+            "头条：工作略有减少"
+          ],
+          [
+            "p",
+            "就业论文的作者是 Eva Vivalt、Elizabeth Rhodes、Alexander Bartik、David Broockman、Patrick Krause 和 Sarah Miller。论文发现，在问卷中受助者每周比对照组少工作约 1.3 小时，在手机应用的时间日志和时间使用调查中少 1.4 到 1.5 小时。在问卷中，他们就业的可能性低 2.3 个百分点。不计现金发放，他们自己的收入每年少约 1,900 美元。他们的伴侣也减少了相近的工时：参与者与伴侣合计每周少工作 2.1 小时。[2]"
+          ],
+          [
+            "p",
+            "换个说法，每收到 1 美元，家庭来自其他来源的收入下降约 28 美分，参与者本人的收入下降约 16 美分。作者把对工时和收入的影响描述为相对对照组下降 5% 到 6%，“中等程度的影响”。[2]"
+          ],
+          [
+            "p",
+            "有两个细节对头条很重要。第一，三年间两组的就业率都上升了，受助者从 58% 升到 72%，对照组从 59% 升到 74%；只是对照组升得更多。[5] 算上现金发放，受助者第三年的个人收入仍比对照组高约 10,000 美元。[5] 第二，数字有过变动。论文第一版（2024 年 7 月）给出的收入降幅约为每年 1,500 美元，劳动力市场参与率下降 2.0 个百分点。2026 年 8 月的修订版首选的指标把问卷回答与州失业保险记录结合起来，给出的数字约为 1,900 美元和 4.2 个百分点。[2]"
+          ],
+          [
+            "o",
+            "该肯定的要肯定：研究者把自己的主要效应估计往上修正了，而这个方向对与这项研究相关联的主张更不利，他们还把更大的数字写进了摘要。研究本来就该这样做。"
+          ],
+          [
+            "h",
+            "他们怎么用多出来的时间"
+          ],
+          [
+            "p",
+            "根据论文，从工作中省下的时间主要用于休闲，另有一些额外的时间花在开车和其他活动上。作者可以排除育儿、锻炼、找工作或自我提升所花的时间出现哪怕很小的变化。[2] OpenResearch 的摘要对休闲做了进一步拆分：增加最多的是开车、社交休闲（与他人相处的时间：社交、娱乐、用餐）以及买菜等日常杂事。[5]"
+          ],
+          [
+            "p",
+            "找工作并没有停止，而是换了方式。没有工作的时段比对照组平均的 7.8 个月长约 0.8 个月；受助者更可能在近期申请过工作，但申请的职位更少。[2] 在找工作的人当中，受助者表示任何工作都必须有趣或有意义的比例高出 5.5 个百分点。[5] 即便如此，在一长串指标上，工作质量都没有改善，论文可以排除哪怕很小的改善，也可以排除每小时超过 58 美分的工资增长。[2]"
+          ],
+          [
+            "p",
+            "平均数掩盖了截然不同的生活。一位受助者内森把每周 50 小时的工作减半，以便陪伴四岁的儿子。莉萨接受了一份工资较低但有成长空间的工作，用这笔钱填补差额，两年后年薪已接近六位数。原本每周工作 72 小时的肖恩决定在累垮之前休息一阵。[5] 按群体划分的规律属于探索性分析，但工作减少集中在 30 岁以下的人、单亲父母以及起初家庭收入最高的人身上；对 30 岁以上的受助者，就业和工时都没有显著变化。[5] 较年轻的参与者在继续教育方面的估计效应也更大，不过总体上对取得学位没有显著影响。[2]"
+          ],
+          [
+            "h",
+            "他们怎么用这笔钱"
+          ],
+          [
+            "p",
+            "平均而言，受助者每月比对照组多花 310 美元，其中一半以上用于基本开支：食品（67 美元）、房租（52 美元）和交通（50 美元）。相对于对照组的支出，增幅最大的是对他人的经济支持，比如给家人和朋友的赠礼和借款：每月 22 美元，多 26%。[6] 支出的增加主要来自起初处于或接近贫困线的人；对收入最高的群体，总支出的变化很小且不显著。[6]"
+          ],
+          [
+            "p",
+            "消费论文估计，支出每月至少增加 300 美元，主要用于住房、食品和汽车，受助者也更可能搬进新家、搬到新社区。自评的财务健康状况和信用评分有所改善。但资产的小幅增加被更多债务抵消，净资产几乎没有变化，对逾期、破产或止赎也没有影响。作者的结论是，大额的临时现金发放“可能不会让年轻的低收入家庭的财务状况得到持久改善”。[7]"
+          ],
+          [
+            "h",
+            "健康、孩子和对工作的态度"
+          ],
+          [
+            "p",
+            "健康：现金发放带来了压力和粮食安全方面幅度大但短暂的改善，也增加了医院、急诊和牙科服务的使用。第一年之后，它没有改善自评的身体健康、血检指标或心理健康，对家中孩子的健康也没有影响。[8] OpenResearch 指出，第一年与疫情救济重叠，物价上涨和救助结束可能削弱了早期的改善，但它表示无法确定这些改善为何消退。[8]"
+          ],
+          [
+            "p",
+            "孩子：2025 年的一篇论文发现，每月领取 1,000 美元的父母在孩子身上花得更多，并报告对孩子的看管更加细致。他们也报告孩子有更多发育方面的困难和压力，作者认为这可能是因为他们观察得更仔细。学校记录中的大多数结果没有明显变化。[9]"
+          ],
+          [
+            "p",
+            "政治与工作：2024 年 12 月的一篇论文发现，对投票和政治参与没有影响，政治观点也几乎没有变化。有一个结果与刻板印象相反：受助者变得稍微更认为工作对个人和社会重要，也更可能支持对 Medicaid（联邦医疗补助）设置工作要求。[10] 至于阿尔特曼的另一个问题——创造新东西——受助者更可能有创业想法，也更可能说自己打算创业，但平均而言，他们实际创业的可能性并没有显著提高。在一项探索性分析中，黑人和女性受助者到第三年更可能已经创业或帮助他人创业。[11]"
+          ],
+          [
+            "h",
+            "同样的结果，两种标题"
+          ],
+          [
+            "p",
+            "当时的报道大多是谨慎的。NPR 报道说，受助者“平均每周少工作一小时左右”，钱主要花在基本开支上，并指出报告本身说其结果“为双方都提供了支持”。倡导保障收入的经济安全项目（Economic Security Project）联合创始人克里斯·休斯说：“我希望人们从这项研究和其他研究中得出的结论是，保障收入单靠自己是不行的。”美国企业研究所的迈克尔·斯特雷恩则更倾向于提高面向低收入劳动者的税收抵免，并且只发给有工作的人。[12]"
+          ],
+          [
+            "p",
+            "CBS 引用了 Vivalt 的话：“从经济学家的角度看，这是一个中等程度的影响。”她不认为减少的工时是失败：“人们在做更多的事情，如果结果表明人们看重拥有更多闲暇时间——这正是提升他们幸福感的东西——那是积极的。”但对于有了缓冲就能找到更好工作的期望，她说：“我们完全没有发现对就业质量的任何影响。”[13] 同一篇 CBS 文章还说 3,000 名参与者每月领取 1,000 美元；实际上领取的是 1,000 人，另外 2,000 人领的是 50 美元。这是常见的错误，它让研究听起来比实际大了三倍。[13][2] 同年 9 月，非营利组织 UpTogether 的首席执行官 Jesús Gerena 在《财富》杂志撰文认为，记者和研究者得出的结论“植根于对贫困者的痛苦刻板印象，比如把他们描绘成懒惰的人”。[14]"
+          ],
+          [
+            "o",
+            "两种简短说法都丢掉了一些东西。“白给的钱让人变懒”对不上这样的事实：工时下降约 5%，同一时期两组的就业率都在上升，而且这些人变得稍微更看重工作。“现金改变人生”也对不上这样一项研究：没有找到更好的工作，健康和幸福感没有持久改善，净资产几乎没动。证据显示的东西更小，也更有用：人们把这笔钱当作收入，大部分花在基本开支上，其中一些人用它买回了时间。这些时间是“浪费”还是“自由”，是数据无法替你做出的价值判断。"
+          ],
+          [
+            "h",
+            "这算基本收入吗？"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）对基本收入的定义是“无条件地以个人为单位定期发给所有人的现金，不需经济状况调查，也不要求工作”，并列出五个特征：定期、现金、个人、普遍和无条件。[15]"
+          ],
+          [
+            "p",
+            "定期？是，每月一次。现金？是。个人？是，发给个人而不是家庭。无条件？是，没有工作或花销上的规定。普遍？不是。它发给了 1,000 名随机选出的 21 至 40 岁较低收入成年人，为期三年。"
+          ],
+          [
+            "o",
+            "所以这是一项保障收入试验，而不是基本收入，由此有三个局限。第一，它是临时的，每个人都知道何时结束；如果是终身发放，人们的行为可能会不同，往哪个方向都有可能。第二，每个地方只有少数人领取，所以它无法显示发给所有人会对房租、物价或工资产生什么影响，也无法显示为此筹资的税收会改变什么。阿尔特曼自己的博文说，关于整体生活成本的问题“超出了我们的范围，但显然很重要”。[4] 第三，它贯穿了疫情及其后续时期，不过论文指出，其估计主要反映的是 2022 年和 2023 年。[2] 随机试验能很好地显示的是个人对额外收入如何反应，而这正是设计任何更大规模方案都需要的数字。"
+          ],
+          [
+            "p",
+            "OpenResearch 表示，在发放结束后它继续对参与者进行问卷调查，一直到 2025 年。[1] 我们尚未找到这一时期已发表的结果。它还根据数据使用协议向研究者提供问卷数据，就业论文的代码也已公开；两者都在{我们的开放数据列表|/open-source/#data-openresearch-ucs}中。"
+          ],
+          [
+            "h",
+            "这对 AI 为什么重要"
+          ],
+          [
+            "p",
+            "阿尔特曼 2016 年的问题源于对技术与就业的担忧。[4] 2021 年，他在《Moore’s Law for Everything》中更进一步，提出设立“美国股权基金”，通过对大公司和土地征税来充实，每年向每个成年人发放一份。[16] {我们关于全民高收入的随笔|/essays/universal-high-income/}考察过这个方案，并追问由谁买单。此后，钱开始以小规模出现：{AI Dividend|/timeline/#tl-ai-dividend} 向受 AI 冲击的劳动者每月发放 1,000 美元，为期一年；Anthropic 也把股份投入一个基金，该基金可能会{向特定人群直接分配|/essays/public-benefit-fund/}。"
+          ],
+          [
+            "o",
+            "对于任何设计由 AI 出资的发放方案的人，这项研究提供的是规划用的数字，而不是定论。大部分钱花在房租、食品和交通上。受助者和伴侣会稍微少工作一些，所以成本核算要考虑到每发放 1 美元，家庭其他收入约损失 28 美分。短期缓解幅度大而且真实；健康、工作或财富上的持久改变，则不是三年每月 1,000 美元单靠自己就能带来的。永久性地发给所有人的分红是另一种政策，表现可能不同，但关于人们如何反应，这是我们手中最好的证据。"
+          ],
+          [
+            "h",
+            "能从中得到什么"
+          ],
+          [
+            "o",
+            "阿尔特曼在 2016 年提出了一个诚实的问题，并为一个认真的答案出了钱，而答案并没有简单地迎合这个想法。研究者把无效结果和好的结果一起发表，把主要估计往上修正，还开放了数据。这比任何单个标题都更有价值。"
+          ],
+          [
+            "o",
+            "如果你要转述这项研究的一句话，请说准确的那句：1,000 名较低收入的人连续三年每月领取 1,000 美元；他们每周少工作约 1.3 小时，钱主要花在基本开支上，有一年时间感觉更好，许多人用这笔钱来选择如何安排自己的时间。像本站看待每一份免费午餐那样来读它：谁出钱，谁领钱，持续多久。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "जुलाई 2024 में अमेरिका में बिना शर्त नकद पर हुए सबसे बड़े अध्ययन के नतीजे आए, वही अध्ययन जिसे सैम ऑल्टमैन का समर्थन था। कुछ ही दिनों में उन्हीं आँकड़ों पर उलटी सुर्ख़ियाँ छपीं। एक खेमे ने पढ़ा “मुफ़्त पैसा लोगों से कम काम करवाता है”। दूसरे ने पढ़ा “नकद लोगों को आज़ादी देता है”। दोनों एक ही शोधपत्रों का हवाला दे रहे थे।"
+          ],
+          [
+            "p",
+            "यह निबंध उन्हीं शोधपत्रों पर लौटता है: अध्ययन क्या था, प्राप्तकर्ताओं ने पैसे और समय के साथ क्या किया, क्या नहीं बदला, और यह बेसिक इनकम के बारे में क्या बताता है और क्या नहीं। यह यह भी पूछता है कि एक AI कंपनी के मुख्य कार्यकारी इसे क्यों जानना चाहते थे।"
+          ],
+          [
+            "h",
+            "अध्ययन क्या था"
+          ],
+          [
+            "p",
+            "OpenResearch, एक लैब जो Y Combinator Research के रूप में शुरू हुई थी, ने उत्तरी इलिनॉय (शिकागो क्षेत्र समेत) और उत्तर-मध्य टेक्सस (डलास क्षेत्र समेत) की 19 काउंटियों के शहरों, उपनगरों और ग्रामीण इलाक़ों से 21 से 40 साल के 3,000 ऐसे लोगों को शामिल किया जिनकी 2019 की घरेलू आय संघीय गरीबी रेखा के 300% से ज़्यादा नहीं थी।[1][2] नामांकन अक्टूबर 2019 से अक्टूबर 2020 तक चला। फिर लोगों को बेतरतीब ढंग से बाँटा गया: नवंबर 2020 से अक्टूबर 2023 तक 1,000 लोगों को हर महीने $1,000 मिले और नियंत्रण समूह के 2,000 लोगों को हर महीने $50। भुगतान दो स्थानीय गैर-लाभकारी संस्थाओं ने किए।[2]"
+          ],
+          [
+            "p",
+            "पैसा पूरी तरह बिना शर्त था। काम या ख़र्च को लेकर कोई शर्त नहीं थी, और कोई सर्वे का जवाब देता रहे या नहीं, भुगतान जारी रहे।[1][2] 2019 में प्रतिभागियों की घरेलू आय औसतन लगभग $29,900 थी, इसलिए $1,000 महीना घर की आय में लगभग 40% की बढ़ोतरी थी।[2] विश्लेषण पहले से पंजीकृत था, और अंत में सर्वे 96% प्रतिभागियों तक पहुँचा।[2]"
+          ],
+          [
+            "p",
+            "हमारे हिसाब से सिर्फ़ भुगतान ही लगभग $3.96 करोड़ बनते हैं: 1,000 प्राप्तकर्ताओं के लिए $3.6 करोड़ और नियंत्रण समूह के लिए $36 लाख। Forbes ने बताया कि OpenResearch और उससे जुड़ी संस्थाओं ने 2015 से लगभग $6 करोड़ जुटाए, जिनमें ऑल्टमैन के दान किए $1.4 करोड़, OpenAI की गैर-लाभकारी शाखा के $1 करोड़, जैक डोर्सी के Start Small के $1.5 करोड़ और GitLab के सह-संस्थापक सिड सिजब्रांडिज के $65 लाख शामिल हैं।[3] शोध में नेशनल साइंस फ़ाउंडेशन के अनुदान का भी आभार जताया गया है।[2]"
+          ],
+          [
+            "p",
+            "इसकी वजह जनवरी 2016 तक जाती है, जब ऑल्टमैन ने Y Combinator के ब्लॉग पर इस अध्ययन की घोषणा की। उन्होंने लिखा कि “जैसे-जैसे तकनीक पारंपरिक नौकरियाँ ख़त्म करती जा रही है और भारी नई दौलत पैदा हो रही है”, बेसिक इनकम का कोई न कोई रूप राष्ट्रीय स्तर पर आने की संभावना है, और “यह कैसे काम करेगी, इस पर काफ़ी कम डेटा है”। उन्होंने यह भी पूछा: “क्या लोग बैठकर वीडियो गेम खेलते हैं, या नई चीज़ें बनाते हैं?”[4]"
+          ],
+          [
+            "h",
+            "सुर्ख़ी: थोड़ा कम काम"
+          ],
+          [
+            "p",
+            "एवा विवाल्ट, एलिज़ाबेथ रोड्स, अलेक्ज़ेंडर बार्टिक, डेविड ब्रूकमैन, पैट्रिक क्राउज़ और सारा मिलर का रोज़गार वाला शोधपत्र पाता है कि सर्वे में प्राप्तकर्ताओं ने नियंत्रण समूह से हफ़्ते में लगभग 1.3 घंटे कम काम किया, और फ़ोन ऐप की टाइम डायरी और समय-उपयोग सर्वे में 1.4 से 1.5 घंटे कम। सर्वे में उनके रोज़गार में होने की संभावना 2.3 प्रतिशत अंक कम थी। भुगतान को छोड़कर उनकी अपनी आय साल में लगभग $1,900 कम थी। उनके साथियों ने भी लगभग उतने ही घंटे घटाए: प्रतिभागी और साथी ने मिलकर हफ़्ते में 2.1 घंटे कम काम किया।[2]"
+          ],
+          [
+            "p",
+            "दूसरे शब्दों में, मिले हर डॉलर पर घर की दूसरे स्रोतों से आय लगभग 28 सेंट घटी, और प्रतिभागी की अपनी आय लगभग 16 सेंट। लेखक घंटों और आय पर असर को नियंत्रण समूह के मुक़ाबले 5 से 6% की गिरावट बताते हैं, “एक मध्यम असर”।[2]"
+          ],
+          [
+            "p",
+            "सुर्ख़ी के लिए दो बातें मायने रखती हैं। पहली, तीन सालों में दोनों समूहों में रोज़गार बढ़ा, प्राप्तकर्ताओं में 58% से 72% और नियंत्रण समूह में 59% से 74%; बस नियंत्रण समूह में ज़्यादा बढ़ा।[5] भुगतान जोड़कर तीसरे साल में प्राप्तकर्ताओं की अपनी आय फिर भी नियंत्रण समूह से लगभग $10,000 ज़्यादा थी।[5] दूसरी, आँकड़े बदले हैं। शोधपत्र के पहले संस्करण (जुलाई 2024) में आय में गिरावट लगभग $1,500 सालाना और श्रम बाज़ार भागीदारी में गिरावट 2.0 प्रतिशत अंक थी। अगस्त 2026 का संशोधन, जिसके पसंदीदा माप सर्वे के जवाबों को राज्य के बेरोज़गारी बीमा रिकॉर्ड से जोड़ते हैं, इन्हें लगभग $1,900 और 4.2 प्रतिशत अंक बताता है।[2]"
+          ],
+          [
+            "o",
+            "जहाँ श्रेय बनता है, वहाँ देना चाहिए: शोधकर्ताओं ने अपना मुख्य असर ख़ुद ऊपर संशोधित किया, उस दिशा में जो इस अध्ययन से जुड़े मक़सद के लिए कम सुविधाजनक है, और बड़े आँकड़े सार में रखे। अध्ययन इसी के लिए होता है।"
+          ],
+          [
+            "h",
+            "उन्होंने समय का क्या किया"
+          ],
+          [
+            "p",
+            "शोधपत्र के अनुसार, काम से बचे घंटे ज़्यादातर फ़ुरसत में गए, साथ में कुछ अतिरिक्त समय गाड़ी चलाने और दूसरी गतिविधियों में। लेखक बच्चों की देखभाल, व्यायाम, नौकरी की तलाश या आत्म-सुधार में लगे समय में छोटे बदलावों को भी ख़ारिज कर सकते हैं।[2] OpenResearch का सारांश फ़ुरसत को और बाँटता है: सबसे ज़्यादा बढ़ोतरी गाड़ी चलाने, सामाजिक फ़ुरसत (दूसरों के साथ बिताया समय: मेलजोल, मनोरंजन, भोजन) और किराने की ख़रीदारी जैसे रोज़मर्रा के कामों में हुई।[5]"
+          ],
+          [
+            "p",
+            "नौकरी की तलाश रुकी नहीं, उसका रूप बदला। बिना काम के दौर नियंत्रण समूह के औसत 7.8 महीनों से लगभग 0.8 महीने लंबे थे, और प्राप्तकर्ताओं के हाल में किसी नौकरी के लिए आवेदन करने की संभावना ज़्यादा थी, पर उन्होंने कम पदों के लिए आवेदन किया।[2] काम ढूँढ़ने वालों में प्राप्तकर्ताओं के यह कहने की संभावना 5.5 प्रतिशत अंक ज़्यादा थी कि वे जो भी नौकरी लें, उसमें दिलचस्प या सार्थक काम होना ज़रूरी है।[5] फिर भी, मापों की एक लंबी सूची में नौकरी की गुणवत्ता नहीं सुधरी, और शोधपत्र उसमें छोटे सुधार को भी, या 58 सेंट प्रति घंटे से ज़्यादा की वेतन बढ़ोतरी को भी, ख़ारिज कर सकता है।[2]"
+          ],
+          [
+            "p",
+            "औसत बहुत अलग-अलग ज़िंदगियों को छिपा देते हैं। एक प्राप्तकर्ता, नेथन, ने अपने चार साल के बेटे के साथ समय बिताने के लिए अपना 50 घंटे का हफ़्ता आधा कर दिया। लीसा ने आगे बढ़ने की गुंजाइश वाली कम वेतन की नौकरी ली, अंतर भुगतान से पूरा किया, और दो साल बाद उसका वेतन छह अंकों के क़रीब था। हफ़्ते में 72 घंटे काम कर रहे शॉन ने थककर टूटने से पहले विराम लेने का फ़ैसला किया।[5] समूहों के हिसाब से पैटर्न खोजपरक हैं, लेकिन काम में गिरावट 30 से कम उम्र वालों, अकेले माता-पिता और शुरुआत में सबसे ज़्यादा घरेलू आय वालों में केंद्रित थी; 30 से ऊपर के प्राप्तकर्ताओं के रोज़गार या घंटों पर कोई उल्लेखनीय असर नहीं था।[5] कम उम्र के प्रतिभागियों में आगे की पढ़ाई पर अनुमानित असर भी बड़ा था, हालाँकि कुल मिलाकर डिग्रियों पर कोई उल्लेखनीय असर नहीं था।[2]"
+          ],
+          [
+            "h",
+            "उन्होंने पैसे का क्या किया"
+          ],
+          [
+            "p",
+            "औसतन प्राप्तकर्ताओं ने नियंत्रण समूह से हर महीने $310 ज़्यादा ख़र्च किए, और उसका आधे से ज़्यादा हिस्सा बुनियादी ज़रूरतों पर गया: खाना ($67), किराया ($52) और परिवहन ($50)। नियंत्रण समूह के ख़र्च की तुलना में सबसे बड़ी बढ़ोतरी दूसरों को आर्थिक मदद में थी, जैसे परिवार और दोस्तों को तोहफ़े और उधार: हर महीने $22, यानी 26% ज़्यादा।[6] ख़र्च में बढ़ोतरी उन लोगों से आई जो शुरुआत में गरीबी रेखा से नीचे या उसके क़रीब थे; सबसे ज़्यादा आय वाले समूह में कुल ख़र्च पर असर छोटा था और उल्लेखनीय नहीं था।[6]"
+          ],
+          [
+            "p",
+            "उपभोग वाला शोधपत्र अनुमान लगाता है कि ख़र्च हर महीने कम से कम $300 बढ़ा, ज़्यादातर आवास, खाने और गाड़ियों पर, और प्राप्तकर्ताओं के नए घर और नए मोहल्ले में जाने की संभावना ज़्यादा थी। ख़ुद बताई गई वित्तीय सेहत और क्रेडिट स्कोर सुधरे। लेकिन संपत्ति में छोटी बढ़त ज़्यादा क़र्ज़ से बराबर हो गई, जिससे कुल संपत्ति लगभग नहीं बदली, और बकाया भुगतानों, दिवालियापन या फ़ोरक्लोज़र पर कोई असर नहीं पड़ा। लेखक निष्कर्ष निकालते हैं कि बड़े अस्थायी भुगतान “युवा, कम आय वाले परिवारों की वित्तीय स्थिति में शायद स्थायी सुधार न लाएँ”।[7]"
+          ],
+          [
+            "h",
+            "सेहत, बच्चे और काम के प्रति नज़रिया"
+          ],
+          [
+            "p",
+            "सेहत: भुगतान से तनाव और खाद्य सुरक्षा में बड़े लेकिन कम समय के सुधार आए, और अस्पताल, आपातकालीन और दाँतों की देखभाल का ज़्यादा इस्तेमाल हुआ। पहले साल के बाद इनसे ख़ुद बताई गई शारीरिक सेहत, ख़ून की जाँच के माप या मानसिक सेहत में सुधार नहीं हुआ, और घर के बच्चों की सेहत पर कोई असर नहीं पड़ा।[8] OpenResearch बताता है कि पहला साल महामारी राहत के साथ पड़ा और बढ़ती क़ीमतों और उस मदद के ख़त्म होने ने शुरुआती बढ़त को घिस दिया हो सकता है, लेकिन वह कहता है कि वह पक्के तौर पर नहीं कह सकता कि ये सुधार क्यों फीके पड़े।[8]"
+          ],
+          [
+            "p",
+            "बच्चे: 2025 का एक शोधपत्र पाता है कि हर महीने $1,000 पाने वाले माता-पिता ने बच्चों पर ज़्यादा ख़र्च किया और उन पर ज़्यादा क़रीबी निगरानी की बात कही। उन्होंने बच्चों में विकास से जुड़ी ज़्यादा कठिनाइयाँ और तनाव भी बताए, जो लेखकों के मुताबिक़ उन्हें ज़्यादा ध्यान से देखने का नतीजा हो सकता है। स्कूल के रिकॉर्ड में ज़्यादातर नतीजे उल्लेखनीय रूप से नहीं बदले।[9]"
+          ],
+          [
+            "p",
+            "राजनीति और काम: दिसंबर 2024 का एक शोधपत्र पाता है कि मतदान या राजनीतिक भागीदारी पर कोई असर नहीं पड़ा और राजनीतिक विचारों में कम ही बदलाव आए। एक नतीजा रूढ़ धारणा के उलट जाता है: प्राप्तकर्ता काम को व्यक्तियों और समाज के लिए थोड़ा ज़्यादा अहम मानने लगे, और Medicaid के लिए काम की शर्तों का समर्थन करने की उनकी संभावना ज़्यादा थी।[10] ऑल्टमैन के दूसरे सवाल, यानी नई चीज़ें बनाने, पर: प्राप्तकर्ताओं के पास कारोबार का कोई विचार होने और उसे शुरू करने का इरादा बताने की संभावना ज़्यादा थी, लेकिन औसतन उनके कारोबार शुरू करने की संभावना उल्लेखनीय रूप से ज़्यादा नहीं थी। एक खोजपरक विश्लेषण में अश्वेत और महिला प्राप्तकर्ताओं के तीसरे साल तक कोई कारोबार शुरू करने या शुरू करने में मदद करने की संभावना ज़्यादा थी।[11]"
+          ],
+          [
+            "h",
+            "एक ही नतीजे, दो सुर्ख़ियाँ"
+          ],
+          [
+            "p",
+            "उस समय की कवरेज ज़्यादातर सावधान थी। NPR ने बताया कि प्राप्तकर्ताओं ने “औसतन हफ़्ते में लगभग एक घंटा कम” काम किया और ज़्यादातर बुनियादी ज़रूरतों पर ख़र्च किया, और कि रिपोर्ट ख़ुद कहती है कि उसके नतीजे “दोनों पक्षों को समर्थन देते हैं”। गारंटीड इनकम के लिए अभियान चलाने वाले Economic Security Project के सह-संस्थापक क्रिस ह्यूज़ ने कहा: “मुझे उम्मीद है कि लोग इस अध्ययन और दूसरे अध्ययनों से यह सीख ले रहे हैं कि गारंटीड इनकम अकेले काम नहीं करेगी।” American Enterprise Institute के माइकल स्ट्रेन ने कम आय वाले कामगारों के लिए बड़े टैक्स क्रेडिट को बेहतर माना, जो सिर्फ़ नौकरी करने वालों को मिलें।[12]"
+          ],
+          [
+            "p",
+            "CBS ने विवाल्ट को उद्धृत किया: “एक अर्थशास्त्री के नज़रिए से यह एक मध्यम असर है।” उन्होंने खोए घंटों को नाकामी नहीं माना: “लोग ज़्यादा चीज़ें कर रहे हैं, और अगर नतीजे कहते हैं कि लोग ज़्यादा फ़ुरसत को अहमियत देते हैं — कि यही उनकी भलाई बढ़ाता है — तो यह सकारात्मक है।” लेकिन इस उम्मीद पर कि सहारा मिलने से बेहतर नौकरियाँ मिलेंगी, उन्होंने कहा: “हमें रोज़गार की गुणवत्ता पर कोई भी असर बिल्कुल नहीं मिला।”[13] उसी CBS लेख में यह भी कहा गया कि 3,000 प्रतिभागियों को हर महीने $1,000 मिले; असल में 1,000 को मिले, और बाक़ी 2,000 को $50। यह आम चूक है, और इससे अध्ययन असल से तीन गुना बड़ा लगता है।[13][2] उसी सितंबर Fortune में लिखते हुए गैर-लाभकारी संस्था UpTogether के मुख्य कार्यकारी हेसूस गेरेना ने तर्क दिया कि पत्रकारों और शोधकर्ताओं के निकाले निष्कर्ष “गरीबी झेल रहे लोगों के बारे में दर्दनाक रूढ़ धारणाओं में जड़े हैं, जैसे उन्हें आलसी दिखाना”।[14]"
+          ],
+          [
+            "o",
+            "दोनों छोटे संस्करण कुछ न कुछ खो देते हैं। “मुफ़्त पैसा लोगों को आलसी बनाता है” घंटों में लगभग 5% की गिरावट से मेल नहीं खाता, उस दौर में जब दोनों समूहों में रोज़गार बढ़ा, उन लोगों में जो काम को थोड़ा ज़्यादा अहमियत देने लगे। “नकद ज़िंदगियाँ बदल देता है” उस अध्ययन से मेल नहीं खाता जिसमें बेहतर नौकरियाँ नहीं मिलीं, सेहत या भलाई में कोई स्थायी बढ़त नहीं हुई, और कुल संपत्ति मुश्किल से हिली। सबूत जो दिखाते हैं वह छोटा और ज़्यादा काम का है: लोगों ने पैसे को आय की तरह लिया, उसका ज़्यादातर हिस्सा बुनियादी ज़रूरतों पर ख़र्च किया, और उनमें से कुछ ने उससे अपना समय वापस ख़रीदा। वह समय “बर्बादी” है या “आज़ादी”, यह मूल्यों का फ़ैसला है जो डेटा आपके लिए नहीं कर सकता।"
+          ],
+          [
+            "h",
+            "क्या यह बेसिक इनकम है?"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को “एक नियमित नकद भुगतान, जो बिना आय-जाँच या काम की शर्त के, बिना शर्त सभी को व्यक्तिगत आधार पर दिया जाए” के रूप में परिभाषित करता है, और पाँच विशेषताएँ गिनाता है: नियमित, नकद, व्यक्तिगत, सार्वभौमिक और बिना शर्त।[15]"
+          ],
+          [
+            "p",
+            "नियमित? हाँ, हर महीने। नकद? हाँ। व्यक्तिगत? हाँ, भुगतान व्यक्ति को हुआ, घर को नहीं। बिना शर्त? हाँ, काम या ख़र्च का कोई नियम नहीं। सार्वभौमिक? नहीं। यह 21 से 40 साल के, बेतरतीब ढंग से चुने गए 1,000 कम आय वाले वयस्कों को तीन साल के लिए मिला।"
+          ],
+          [
+            "o",
+            "तो यह गारंटीड इनकम का परीक्षण था, बेसिक इनकम नहीं, और इससे तीन सीमाएँ निकलती हैं। पहली, यह अस्थायी था, और सबको पता था कि यह कब ख़त्म होगा; अगर भुगतान जीवन भर के लिए होता, तो लोग किसी भी दिशा में अलग व्यवहार कर सकते थे। दूसरी, हर जगह कुछ ही लोगों को यह मिला, इसलिए यह नहीं दिखा सकता कि सबको भुगतान करने से किराए, क़ीमतों या वेतन पर क्या असर होगा, या उसके लिए पैसा जुटाने वाले टैक्स क्या बदलेंगे। ऑल्टमैन की अपनी पोस्ट ने कहा था कि जीवन-यापन की कुल लागत से जुड़े सवाल “हमारे दायरे से बाहर हैं, पर ज़ाहिर है अहम हैं”।[4] तीसरी, यह महामारी और उसके बाद के दौर से गुज़रा, हालाँकि शोधपत्र नोट करता है कि उसके अनुमान ज़्यादातर 2022 और 2023 को दर्शाते हैं।[2] एक रैंडमाइज़्ड परीक्षण जो अच्छी तरह दिखा सकता है, वह यह है कि लोग अतिरिक्त आय पर व्यक्तिगत रूप से कैसी प्रतिक्रिया देते हैं, और किसी बड़ी योजना के किसी भी डिज़ाइन को ठीक यही आँकड़ा चाहिए।"
+          ],
+          [
+            "p",
+            "OpenResearch कहता है कि भुगतान ख़त्म होने के बाद भी उसने 2025 तक प्रतिभागियों का सर्वे जारी रखा।[1] हमें उस दौर के प्रकाशित नतीजे अभी नहीं मिले हैं। उसने डेटा उपयोग समझौते के तहत सर्वे डेटा शोधकर्ताओं को उपलब्ध कराया है, और रोज़गार वाले शोधपत्र का कोड खुला है; दोनों {हमारी ओपन डेटा सूची|/open-source/#data-openresearch-ucs} में हैं।"
+          ],
+          [
+            "h",
+            "AI के लिए यह क्यों मायने रखता है"
+          ],
+          [
+            "p",
+            "ऑल्टमैन का 2016 का सवाल तकनीक और नौकरियों को लेकर चिंता से आया था।[4] 2021 में “Moore’s Law for Everything” में वे और आगे गए और अमेरिकन इक्विटी फ़ंड का प्रस्ताव रखा, जो बड़ी कंपनियों और ज़मीन पर टैक्स से भरा जाए और हर वयस्क को सालाना हिस्सा दे।[16] {यूनिवर्सल हाई इनकम पर हमारे निबंध|/essays/universal-high-income/} ने उस योजना को देखा और पूछा कि पैसा कौन देगा। तब से पैसा छोटे पैमाने पर दिखने लगा है: {AI Dividend|/timeline/#tl-ai-dividend} AI से प्रभावित कामगारों को एक साल तक हर महीने $1,000 देता है, और Anthropic ने एक फ़ंड के लिए शेयर अलग रखे हैं जो {ख़ास आबादी को सीधा वितरण|/essays/public-benefit-fund/} कर सकता है।"
+          ],
+          [
+            "o",
+            "AI से वित्तपोषित भुगतान डिज़ाइन करने वाले किसी भी व्यक्ति के लिए यह अध्ययन फ़ैसला नहीं, योजना बनाने के आँकड़े देता है। ज़्यादातर पैसा किराए, खाने और परिवहन पर जाता है। प्राप्तकर्ता और उनके साथी थोड़ा कम काम करते हैं, इसलिए लागत में हर चुकाए गए डॉलर पर घर की दूसरी आय का लगभग 28 सेंट का नुक़सान गिनना होगा। कम समय की राहत बड़ी और असली है; सेहत, नौकरियों या दौलत में स्थायी बदलाव ऐसा कुछ नहीं है जो तीन साल के $1,000 ने अपने दम पर दिया हो। सबको मिलने वाला स्थायी डिविडेंड एक अलग नीति है और अलग व्यवहार कर सकता है, लेकिन लोग कैसी प्रतिक्रिया देते हैं, इस पर यह हमारे पास सबसे अच्छा सबूत है।"
+          ],
+          [
+            "h",
+            "इससे क्या सीखें"
+          ],
+          [
+            "o",
+            "ऑल्टमैन ने 2016 में एक ईमानदार सवाल पूछा और एक सावधान जवाब के लिए पैसा दिया, और जवाब ने इस विचार की बस तारीफ़ नहीं की। शोधकर्ताओं ने अच्छे नतीजों के साथ शून्य नतीजे भी प्रकाशित किए, अपना मुख्य अनुमान ऊपर संशोधित किया, और अपना डेटा खोला। यह किसी भी एक सुर्ख़ी से ज़्यादा क़ीमती है।"
+          ],
+          [
+            "o",
+            "अगर आप इस अध्ययन से एक पंक्ति साझा करें, तो सही वाली करें: कम आय वाले 1,000 लोगों को तीन साल तक हर महीने $1,000 मिले; उन्होंने हफ़्ते में लगभग 1.3 घंटे कम काम किया, ज़्यादातर बुनियादी ज़रूरतों पर ख़र्च किया, एक साल तक बेहतर महसूस किया, और कई ने पैसे से यह चुना कि वे अपना समय कैसे बिताएँ। इसे वैसे पढ़ें जैसे यह साइट हर फ़्री लंच को पढ़ती है: पैसा किसने दिया, किसे मिला, और कितने समय तक।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "En julio de 2024 se publicaron los resultados del mayor estudio sobre dinero sin condiciones de Estados Unidos, el que había respaldado Sam Altman. En pocos días, las mismas cifras sirvieron para titulares opuestos. Un bando leyó «el dinero gratis hace que la gente trabaje menos». El otro leyó «el dinero da libertad a la gente». Los dos citaban los mismos estudios."
+          ],
+          [
+            "p",
+            "Este ensayo vuelve a esos estudios: qué fue el estudio, qué hicieron los beneficiarios con el dinero y con el tiempo, qué no cambió y qué nos dice, y qué no, sobre la renta básica. También se pregunta por qué el director ejecutivo de una empresa de IA quería saberlo."
+          ],
+          [
+            "h",
+            "Qué fue el estudio"
+          ],
+          [
+            "p",
+            "OpenResearch, un laboratorio que nació como Y Combinator Research, inscribió a 3.000 personas de 21 a 40 años cuyos ingresos familiares en 2019 no superaban el 300 % del umbral federal de pobreza, en 19 condados del norte de Illinois (incluida la zona de Chicago) y del centro-norte de Texas (incluida la zona de Dallas), en ciudades, suburbios y zonas rurales.[1][2] La inscripción se hizo de octubre de 2019 a octubre de 2020. Después se repartió a las personas al azar: 1.000 recibieron 1.000 $ al mes y 2.000 recibieron 50 $ al mes como grupo de control, de noviembre de 2020 a octubre de 2023. Dos organizaciones locales sin ánimo de lucro hicieron los pagos.[2]"
+          ],
+          [
+            "p",
+            "El dinero era totalmente incondicional. No se exigía nada sobre el trabajo ni el gasto, y los pagos continuaban aunque alguien dejara de responder a las encuestas.[1][2] Los ingresos familiares de los participantes eran en promedio de unos 29.900 $ en 2019, así que 1.000 $ al mes suponían aproximadamente un aumento del 40 % para el hogar.[2] El análisis se registró previamente, y al final las encuestas llegaron al 96 % de los participantes.[2]"
+          ],
+          [
+            "p",
+            "Según nuestras cuentas, solo las transferencias suman unos 39,6 millones de dólares: 36 millones para los 1.000 beneficiarios y 3,6 millones para el grupo de control. Forbes informó de que OpenResearch y sus entidades habían recaudado unos 60 millones de dólares desde 2015, entre ellos 14 millones donados por Altman, 10 millones del brazo sin ánimo de lucro de OpenAI, 15 millones de Start Small, de Jack Dorsey, y 6,5 millones del cofundador de GitLab Sid Sijbrandij.[3] La propia investigación también agradece una subvención de la National Science Foundation.[2]"
+          ],
+          [
+            "p",
+            "El motivo se remonta a enero de 2016, cuando Altman anunció el estudio en el blog de Y Combinator. Escribió que, «a medida que la tecnología siga eliminando empleos tradicionales y se cree una enorme riqueza nueva», era probable que alguna versión de la renta básica apareciera a escala nacional, y que había «bastante pocos datos sobre cómo funcionaría». También preguntó: «¿La gente se queda sentada jugando a videojuegos o crea cosas nuevas?»[4]"
+          ],
+          [
+            "h",
+            "El titular: un poco menos de trabajo"
+          ],
+          [
+            "p",
+            "El estudio sobre empleo, de Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause y Sarah Miller, halla que los beneficiarios trabajaron unas 1,3 horas semanales menos que el grupo de control según las encuestas, y entre 1,4 y 1,5 horas menos según los diarios de tiempo de la aplicación móvil y las encuestas de uso del tiempo. En las encuestas, su probabilidad de tener empleo era 2,3 puntos porcentuales menor. Sus propios ingresos, sin contar las transferencias, fueron unos 1.900 $ al año más bajos. Sus parejas redujeron sus horas en una cantidad similar: juntos, participante y pareja trabajaron 2,1 horas semanales menos.[2]"
+          ],
+          [
+            "p",
+            "Dicho de otro modo, por cada dólar recibido, los ingresos del hogar de otras fuentes bajaron unos 28 centavos, y los ingresos propios del participante, unos 16 centavos. Los autores describen el efecto sobre las horas y los ingresos como un descenso del 5 al 6 % respecto al grupo de control, «un efecto moderado».[2]"
+          ],
+          [
+            "p",
+            "Dos detalles importan para el titular. Primero, el empleo aumentó en ambos grupos durante los tres años, del 58 % al 72 % entre los beneficiarios y del 59 % al 74 % en el grupo de control; simplemente, el grupo de control subió más.[5] Contando las transferencias, los ingresos propios de los beneficiarios en el tercer año seguían siendo unos 10.000 $ más altos que los del grupo de control.[5] Segundo, las cifras han cambiado. La primera versión del estudio (julio de 2024) situaba la caída de ingresos en unos 1.500 $ al año y la bajada de la participación en el mercado laboral en 2,0 puntos porcentuales. La revisión de agosto de 2026, cuyas medidas preferidas combinan las respuestas a las encuestas con los registros estatales del seguro de desempleo, las sitúa en unos 1.900 $ y 4,2 puntos porcentuales.[2]"
+          ],
+          [
+            "o",
+            "Hay que reconocerlo: los investigadores corrigieron al alza su propio efecto principal, en la dirección menos conveniente para la causa a la que se asocia el estudio, y pusieron las cifras más altas en el resumen. Para eso sirve un estudio."
+          ],
+          [
+            "h",
+            "Qué hicieron con el tiempo"
+          ],
+          [
+            "p",
+            "Según el estudio, las horas liberadas del trabajo se dedicaron sobre todo al ocio, junto con algo más de tiempo conduciendo y en otras actividades. Los autores pueden descartar incluso cambios pequeños en el tiempo dedicado al cuidado de los hijos, el ejercicio, la búsqueda de empleo o la superación personal.[2] El resumen de OpenResearch desglosa más el ocio: los mayores aumentos se dieron en conducir, el ocio social (tiempo con otras personas: vida social, recreo, comidas) y los recados, como hacer la compra.[5]"
+          ],
+          [
+            "p",
+            "La búsqueda de empleo cambió de forma en lugar de detenerse. Los periodos sin trabajo fueron unos 0,8 meses más largos que la media de 7,8 meses del grupo de control, y los beneficiarios tenían más probabilidad de haber solicitado un empleo recientemente, pero solicitaron menos puestos.[2] Entre quienes buscaban trabajo, los beneficiarios tenían 5,5 puntos porcentuales más de probabilidad de decir que un trabajo interesante o con sentido era imprescindible en cualquier empleo que aceptaran.[5] Aun así, en una larga lista de medidas, la calidad del empleo no mejoró, y el estudio puede descartar incluso pequeñas mejoras en ella, o subidas salariales de más de 58 centavos por hora.[2]"
+          ],
+          [
+            "p",
+            "Los promedios esconden vidas muy distintas. Un beneficiario, Nathan, redujo a la mitad su semana de 50 horas para pasar tiempo con su hijo de cuatro años. Lisa aceptó un empleo peor pagado con margen para crecer, usó las transferencias para cubrir la diferencia y, dos años después, tenía un sueldo cercano a las seis cifras. Shawn, que trabajaba 72 horas a la semana, decidió tomarse un descanso antes de quemarse.[5] Los patrones por grupo son exploratorios, pero la caída del trabajo se concentró entre los menores de 30 años, las familias monoparentales y quienes tenían los ingresos familiares más altos al principio; para los beneficiarios mayores de 30 no hubo un efecto significativo en el empleo ni en las horas.[5] Los participantes más jóvenes también mostraron mayores efectos estimados en la continuación de los estudios, aunque no hubo un efecto significativo en los títulos en general.[2]"
+          ],
+          [
+            "h",
+            "Qué hicieron con el dinero"
+          ],
+          [
+            "p",
+            "En promedio, los beneficiarios gastaron 310 $ al mes más que el grupo de control, y más de la mitad fue a lo básico: comida (67 $), alquiler (52 $) y transporte (50 $). El mayor aumento en relación con lo que gastaba el grupo de control fue el apoyo económico a otras personas, como regalos y préstamos a familiares y amigos: 22 $ al mes, un 26 % más.[6] Quienes partían por debajo del umbral de pobreza o cerca de él impulsaron el aumento del gasto; en el grupo de ingresos más altos, el efecto sobre el gasto total fue pequeño y no significativo.[6]"
+          ],
+          [
+            "p",
+            "El estudio sobre consumo estima que el gasto aumentó al menos 300 $ al mes, sobre todo en vivienda, comida y coches, y que los beneficiarios tenían más probabilidad de mudarse a una nueva casa y a un nuevo barrio. La salud financiera declarada y la puntuación de crédito mejoraron. Pero los pequeños aumentos de activos se compensaron con más deuda, de modo que el patrimonio neto apenas cambió, y no hubo efecto en impagos, quiebras ni ejecuciones hipotecarias. Los autores concluyen que las grandes transferencias temporales «pueden no causar mejoras persistentes en la situación financiera de los hogares jóvenes de bajos ingresos».[7]"
+          ],
+          [
+            "h",
+            "Salud, hijos y actitudes ante el trabajo"
+          ],
+          [
+            "p",
+            "Salud: las transferencias trajeron mejoras grandes pero breves en el estrés y la seguridad alimentaria, y un mayor uso de la atención hospitalaria, de urgencias y dental. No mejoraron la salud física declarada, los indicadores de los análisis de sangre ni la salud mental después del primer año, y no hubo efecto en la salud de los niños del hogar.[8] OpenResearch señala que el primer año coincidió con las ayudas de la pandemia y que la subida de precios y el fin de esas ayudas pueden haber erosionado las primeras mejoras, pero dice que no puede saber con certeza por qué se desvanecieron.[8]"
+          ],
+          [
+            "p",
+            "Hijos: un estudio de 2025 halla que los padres que recibieron 1.000 $ al mes gastaron más en sus hijos y declararon una supervisión más cercana. También declararon más dificultades de desarrollo y estrés en sus hijos, algo que, según sugieren los autores, puede deberse a que los observaban más de cerca. La mayoría de los resultados de los registros escolares no cambiaron de forma apreciable.[9]"
+          ],
+          [
+            "p",
+            "Política y trabajo: un estudio de diciembre de 2024 no halla efecto en el voto ni en la participación política, y pocos cambios en las opiniones políticas. Un resultado va contra el estereotipo: los beneficiarios pasaron a considerar el trabajo algo más importante para las personas y para la sociedad, y tenían más probabilidad de apoyar requisitos de trabajo para Medicaid.[10] Sobre la otra pregunta de Altman, crear cosas nuevas, los beneficiarios tenían más probabilidad de tener una idea de negocio y de decir que pensaban montar uno, pero en promedio no tenían una probabilidad significativamente mayor de crear una empresa. En un desglose exploratorio, los beneficiarios negros y las mujeres tenían más probabilidad de haber creado o ayudado a crear una para el tercer año.[11]"
+          ],
+          [
+            "h",
+            "Los mismos resultados, dos titulares"
+          ],
+          [
+            "p",
+            "La cobertura de entonces fue en general cuidadosa. NPR informó de que los beneficiarios trabajaron «una hora o así menos a la semana de media» y gastaron sobre todo en lo básico, y de que el propio informe dice que sus resultados «dan argumentos a ambas partes». Chris Hughes, cofundador del Economic Security Project, que hace campaña por la renta garantizada, dijo: «Espero que la gente saque de este estudio y de otros que una renta garantizada no funcionará sola». Michael Strain, del American Enterprise Institute, prefería créditos fiscales mayores para los trabajadores de bajos ingresos, pagados solo a quienes aceptan un empleo.[12]"
+          ],
+          [
+            "p",
+            "CBS citó a Vivalt: «Desde el punto de vista de un economista, es un efecto moderado». No veía las horas perdidas como un fracaso: «La gente hace más cosas, y si los resultados dicen que la gente valora tener más tiempo libre —que eso es lo que aumenta su bienestar—, eso es positivo». Pero sobre la esperanza de que un colchón llevara a mejores empleos, dijo: «no encontramos ningún efecto en absoluto en la calidad del empleo».[13] El mismo artículo de CBS decía también que 3.000 participantes recibieron 1.000 $ al mes; en realidad fueron 1.000, y los otros 2.000 recibieron 50 $. Es un error frecuente, y hace que el estudio parezca tres veces mayor de lo que fue.[13][2] En Fortune, ese septiembre, Jesús Gerena, director ejecutivo de la organización sin ánimo de lucro UpTogether, sostuvo que las conclusiones que sacaron periodistas e investigadores estaban «arraigadas en estereotipos dolorosos sobre las personas que viven en la pobreza, como presentarlas como perezosas».[14]"
+          ],
+          [
+            "o",
+            "Las dos versiones cortas pierden algo. «El dinero gratis vuelve perezosa a la gente» no encaja con una caída de alrededor del 5 % en las horas, en un periodo en que el empleo subió en ambos grupos, entre personas que llegaron a valorar el trabajo un poco más. «El dinero transforma vidas» no encaja con un estudio que no encontró mejores empleos, ni mejoras duraderas en salud o bienestar, y sí un patrimonio neto que apenas se movió. Lo que muestran los datos es más pequeño y más útil: la gente trató el dinero como ingreso, gastó la mayor parte en lo básico y algunos lo usaron para recuperar tiempo. Si ese tiempo es «desperdicio» o «libertad» es un juicio de valor que los datos no pueden hacer por ti."
+          ],
+          [
+            "h",
+            "¿Es esto renta básica?"
+          ],
+          [
+            "p",
+            "La Red Mundial de Renta Básica (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todos de forma individual, sin comprobación de recursos ni exigencia de trabajo», y enumera cinco características: periódica, en efectivo, individual, universal e incondicional.[15]"
+          ],
+          [
+            "p",
+            "¿Periódica? Sí, cada mes. ¿En efectivo? Sí. ¿Individual? Sí, se pagaba a la persona, no al hogar. ¿Incondicional? Sí, sin reglas sobre trabajo ni gasto. ¿Universal? No. Fue para 1.000 adultos de bajos ingresos de 21 a 40 años elegidos al azar, durante tres años."
+          ],
+          [
+            "o",
+            "Así que fue una prueba de renta garantizada, no una renta básica, y de ello se derivan tres límites. Primero, era temporal, y todos sabían cuándo terminaría; la gente podría actuar de otra manera, en cualquier dirección, si el pago fuera de por vida. Segundo, solo unas pocas personas en cada lugar lo recibían, así que no puede mostrar qué haría un pago a todo el mundo con los alquileres, los precios o los salarios, ni qué cambiarían los impuestos para financiarlo. El propio texto de Altman decía que las preguntas sobre el coste de la vida en general quedaban «fuera de nuestro alcance, pero obviamente son importantes».[4] Tercero, se desarrolló durante la pandemia y sus secuelas, aunque el estudio señala que sus estimaciones reflejan sobre todo 2022 y 2023.[2] Lo que un experimento aleatorizado puede mostrar bien es cómo responden las personas a un ingreso extra, y esa es justo la cifra que necesita cualquier diseño de un programa mayor."
+          ],
+          [
+            "p",
+            "OpenResearch dice que siguió encuestando a los participantes tras el fin de los pagos, hasta 2025.[1] Todavía no hemos encontrado resultados publicados de ese periodo. También ha puesto los datos de las encuestas a disposición de los investigadores mediante un acuerdo de uso de datos, y el código del estudio sobre empleo es abierto; ambos están en {nuestra lista de datos abiertos|/open-source/#data-openresearch-ucs}."
+          ],
+          [
+            "h",
+            "Por qué importa para la IA"
+          ],
+          [
+            "p",
+            "La pregunta de Altman en 2016 nació de una preocupación por la tecnología y el empleo.[4] En 2021, en «Moore’s Law for Everything», fue más allá y propuso un American Equity Fund, alimentado con impuestos a las grandes empresas y al suelo, que pagaría a cada adulto una parte anual.[16] {Nuestro ensayo sobre el ingreso universal alto|/essays/universal-high-income/} examinó ese plan y preguntó quién paga. Desde entonces, el dinero ha empezado a aparecer a pequeña escala: {el AI Dividend|/timeline/#tl-ai-dividend} paga 1.000 $ al mes durante un año a trabajadores perjudicados por la IA, y Anthropic ha apartado acciones en un fondo que podría hacer {distribuciones directas a poblaciones específicas|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "Para quien diseñe un pago financiado por la IA, este estudio da cifras de planificación más que un veredicto. La mayor parte del dinero va a alquiler, comida y transporte. Los beneficiarios y sus parejas trabajan un poco menos, así que el cálculo del coste debe contar unos 28 centavos de otros ingresos del hogar perdidos por cada dólar pagado. El alivio a corto plazo es grande y real; un cambio duradero en salud, empleo o riqueza no es algo que tres años de 1.000 $ lograran por sí solos. Un dividendo permanente pagado a todos es una política distinta y puede comportarse de otra manera, pero estos son los mejores datos que tenemos sobre cómo responde la gente."
+          ],
+          [
+            "h",
+            "Qué sacar de todo esto"
+          ],
+          [
+            "o",
+            "Altman hizo una pregunta honesta en 2016 y pagó por una respuesta cuidadosa, y la respuesta no se limitó a halagar la idea. Los investigadores publicaron los resultados nulos junto a los buenos, corrigieron al alza su estimación principal y abrieron sus datos. Eso vale más que cualquier titular."
+          ],
+          [
+            "o",
+            "Si compartes una sola frase de este estudio, que sea la precisa: 1.000 personas de bajos ingresos recibieron 1.000 $ al mes durante tres años; trabajaron unas 1,3 horas semanales menos, gastaron sobre todo en lo básico, se sintieron mejor durante un año y muchas usaron el dinero para elegir cómo pasar su tiempo. Léelo como este sitio lee cualquier almuerzo gratis: quién pagó, quién recibió y durante cuánto tiempo."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Im Juli 2024 erschienen die Ergebnisse der größten Studie zu bedingungslosem Geld in den USA, der Studie, die Sam Altman unterstützt hatte. Binnen Tagen trugen dieselben Zahlen gegensätzliche Schlagzeilen. Das eine Lager las „geschenktes Geld lässt Menschen weniger arbeiten“. Das andere las „Geld gibt Menschen Freiheit“. Beide zitierten dieselben Studien."
+          ],
+          [
+            "p",
+            "Dieser Essay geht zu diesen Studien zurück: was die Studie war, was die Empfänger mit dem Geld und der Zeit machten, was sich nicht änderte und was sie über das Grundeinkommen aussagt und was nicht. Er fragt auch, warum der Chef eines KI-Unternehmens es wissen wollte."
+          ],
+          [
+            "h",
+            "Was die Studie war"
+          ],
+          [
+            "p",
+            "OpenResearch, ein Labor, das als Y Combinator Research begann, nahm 3.000 Menschen zwischen 21 und 40 Jahren auf, deren Haushaltseinkommen 2019 höchstens 300 % der bundesweiten Armutsgrenze betrug, in 19 Countys im Norden von Illinois (einschließlich der Region Chicago) und im nördlichen Zentraltexas (einschließlich der Region Dallas), in Städten, Vororten und ländlichen Gegenden.[1][2] Die Aufnahme lief von Oktober 2019 bis Oktober 2020. Dann wurden die Menschen per Zufall aufgeteilt: 1.000 erhielten 1.000 $ im Monat und 2.000 als Kontrollgruppe 50 $ im Monat, von November 2020 bis Oktober 2023. Zwei örtliche gemeinnützige Organisationen leisteten die Zahlungen.[2]"
+          ],
+          [
+            "p",
+            "Das Geld war vollständig bedingungslos. Es gab keine Vorgaben zu Arbeit oder Ausgaben, und die Zahlungen liefen weiter, ob jemand die Umfragen weiter beantwortete oder nicht.[1][2] Das Haushaltseinkommen der Teilnehmenden lag 2019 im Schnitt bei etwa 29.900 $, 1.000 $ im Monat waren für den Haushalt also rund 40 % mehr.[2] Die Auswertung war vorab registriert, und die Umfragen erreichten am Ende 96 % der Teilnehmenden.[2]"
+          ],
+          [
+            "p",
+            "Nach unserer Rechnung kommen allein die Zahlungen auf etwa 39,6 Mio. $: 36 Mio. $ für die 1.000 Empfänger und 3,6 Mio. $ für die Kontrollgruppe. Forbes berichtete, OpenResearch und seine Einheiten hätten seit 2015 rund 60 Mio. $ eingeworben, darunter 14 Mio. $ als Spende von Altman, 10 Mio. $ vom gemeinnützigen Zweig von OpenAI, 15 Mio. $ von Jack Dorseys Start Small und 6,5 Mio. $ vom GitLab-Mitgründer Sid Sijbrandij.[3] Die Forschung selbst nennt außerdem eine Förderung der National Science Foundation.[2]"
+          ],
+          [
+            "p",
+            "Der Grund reicht zurück in den Januar 2016, als Altman die Studie im Blog von Y Combinator ankündigte. Er schrieb, „während die Technologie weiter traditionelle Arbeitsplätze abschafft und gewaltiger neuer Wohlstand entsteht“, werde wahrscheinlich irgendeine Form von Grundeinkommen auf nationaler Ebene kommen, und es gebe „ziemlich wenige Daten darüber, wie es funktionieren würde“. Er fragte auch: „Sitzen die Leute herum und spielen Videospiele, oder schaffen sie Neues?“[4]"
+          ],
+          [
+            "h",
+            "Die Schlagzeile: etwas weniger Arbeit"
+          ],
+          [
+            "p",
+            "Die Beschäftigungsstudie von Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause und Sarah Miller findet, dass die Empfänger laut Umfragen etwa 1,3 Stunden pro Woche weniger arbeiteten als die Kontrollgruppe und laut den Zeittagebüchern in der Handy-App und den Zeitverwendungsumfragen 1,4 bis 1,5 Stunden weniger. In den Umfragen waren sie mit einer um 2,3 Prozentpunkte geringeren Wahrscheinlichkeit erwerbstätig. Ihr eigenes Einkommen ohne die Zahlungen lag um etwa 1.900 $ im Jahr niedriger. Ihre Partner reduzierten ihre Stunden in ähnlichem Umfang: Zusammen arbeiteten Teilnehmende und Partner 2,1 Stunden pro Woche weniger.[2]"
+          ],
+          [
+            "p",
+            "Anders gesagt: Für jeden erhaltenen Dollar sank das Haushaltseinkommen aus anderen Quellen um etwa 28 Cent und das eigene Einkommen der Teilnehmenden um etwa 16 Cent. Die Autoren bezeichnen den Effekt auf Stunden und Einkommen als Rückgang um 5 bis 6 % gegenüber der Kontrollgruppe, „einen moderaten Effekt“.[2]"
+          ],
+          [
+            "p",
+            "Zwei Details sind für die Schlagzeile wichtig. Erstens stieg die Beschäftigung in beiden Gruppen über die drei Jahre, von 58 % auf 72 % bei den Empfängern und von 59 % auf 74 % in der Kontrollgruppe; die Kontrollgruppe stieg nur stärker.[5] Rechnet man die Zahlungen mit, lag das eigene Einkommen der Empfänger im dritten Jahr immer noch etwa 10.000 $ über dem der Kontrollgruppe.[5] Zweitens haben sich die Zahlen verschoben. Die erste Fassung der Studie (Juli 2024) bezifferte den Einkommensrückgang auf etwa 1.500 $ im Jahr und den Rückgang der Erwerbsbeteiligung auf 2,0 Prozentpunkte. Die Überarbeitung vom August 2026, deren bevorzugte Maße Umfrageantworten mit Daten der staatlichen Arbeitslosenversicherung verbinden, kommt auf etwa 1.900 $ und 4,2 Prozentpunkte.[2]"
+          ],
+          [
+            "o",
+            "Das muss man anerkennen: Die Forschenden haben ihren eigenen Haupteffekt nach oben korrigiert, in die Richtung, die für die Sache, mit der die Studie verbunden wird, weniger bequem ist, und die größeren Zahlen in die Zusammenfassung geschrieben. Genau dafür ist eine Studie da."
+          ],
+          [
+            "h",
+            "Was sie mit der Zeit machten"
+          ],
+          [
+            "p",
+            "Laut der Studie gingen die von der Arbeit frei gewordenen Stunden vor allem in Freizeit, dazu etwas mehr Zeit beim Autofahren und für andere Tätigkeiten. Die Autoren können selbst kleine Veränderungen bei der Zeit für Kinderbetreuung, Sport, Jobsuche oder persönliche Weiterentwicklung ausschließen.[2] Die Zusammenfassung von OpenResearch schlüsselt die Freizeit weiter auf: Am stärksten stiegen Autofahren, soziale Freizeit (Zeit mit anderen Menschen: Geselligkeit, Erholung, Mahlzeiten) und Besorgungen wie Lebensmitteleinkäufe.[5]"
+          ],
+          [
+            "p",
+            "Die Jobsuche änderte ihre Form, statt aufzuhören. Phasen ohne Arbeit waren etwa 0,8 Monate länger als der Durchschnitt der Kontrollgruppe von 7,8 Monaten, und die Empfänger hatten sich häufiger kürzlich auf eine Stelle beworben, bewarben sich aber auf weniger Stellen.[2] Unter den Arbeitssuchenden sagten die Empfänger mit einer um 5,5 Prozentpunkte höheren Wahrscheinlichkeit, interessante oder sinnvolle Arbeit sei für jede Stelle, die sie annehmen würden, unverzichtbar.[5] Trotzdem verbesserte sich die Qualität der Arbeit über eine lange Liste von Maßen nicht, und die Studie kann selbst kleine Verbesserungen ausschließen, ebenso Lohnzuwächse von mehr als 58 Cent pro Stunde.[2]"
+          ],
+          [
+            "p",
+            "Durchschnitte verdecken sehr unterschiedliche Leben. Ein Empfänger, Nathan, halbierte seine 50-Stunden-Woche, um Zeit mit seinem vierjährigen Sohn zu verbringen. Lisa nahm eine schlechter bezahlte Stelle mit Entwicklungsmöglichkeiten an, glich die Lücke mit den Zahlungen aus und verdiente zwei Jahre später ein fast sechsstelliges Gehalt. Shawn, der 72 Stunden pro Woche gearbeitet hatte, beschloss, eine Pause einzulegen, bevor er ausbrannte.[5] Die Muster nach Gruppen sind explorativ, aber der Rückgang der Arbeit konzentrierte sich auf Menschen unter 30, Alleinerziehende und diejenigen mit den höchsten Haushaltseinkommen zu Beginn; bei Empfängern über 30 gab es keinen signifikanten Effekt auf Beschäftigung oder Stunden.[5] Jüngere Teilnehmende zeigten auch größere geschätzte Effekte auf weitere Bildung, auch wenn es insgesamt keinen signifikanten Effekt auf Abschlüsse gab.[2]"
+          ],
+          [
+            "h",
+            "Was sie mit dem Geld machten"
+          ],
+          [
+            "p",
+            "Im Schnitt gaben die Empfänger 310 $ im Monat mehr aus als die Kontrollgruppe, und mehr als die Hälfte davon ging in das Nötigste: Lebensmittel (67 $), Miete (52 $) und Verkehr (50 $). Den größten Anstieg gemessen an den Ausgaben der Kontrollgruppe gab es bei finanzieller Unterstützung für andere, etwa Geschenken und Darlehen an Familie und Freunde: 22 $ im Monat, 26 % mehr.[6] Wer anfangs unter oder nahe der Armutsgrenze lag, trieb den Anstieg der Ausgaben; in der Gruppe mit den höchsten Einkommen war der Effekt auf die Gesamtausgaben klein und nicht signifikant.[6]"
+          ],
+          [
+            "p",
+            "Die Konsumstudie schätzt, dass die Ausgaben um mindestens 300 $ im Monat stiegen, vor allem für Wohnen, Lebensmittel und Autos, und dass die Empfänger häufiger in eine neue Wohnung und ein neues Viertel zogen. Die selbst eingeschätzte finanzielle Gesundheit und die Kredit-Scores verbesserten sich. Doch kleine Zuwächse beim Vermögen wurden durch mehr Schulden aufgewogen, sodass das Nettovermögen fast unverändert blieb, und es gab keinen Effekt auf Zahlungsrückstände, Insolvenzen oder Zwangsvollstreckungen. Die Autoren folgern, dass große befristete Zahlungen „möglicherweise keine dauerhaften Verbesserungen der finanziellen Lage junger Haushalte mit geringem Einkommen bewirken“.[7]"
+          ],
+          [
+            "h",
+            "Gesundheit, Kinder und Einstellung zur Arbeit"
+          ],
+          [
+            "p",
+            "Gesundheit: Die Zahlungen brachten große, aber kurzlebige Verbesserungen bei Stress und Ernährungssicherheit sowie eine stärkere Nutzung von Krankenhaus-, Notfall- und Zahnbehandlungen. Sie verbesserten weder die selbst eingeschätzte körperliche Gesundheit noch Blutwerte oder die psychische Gesundheit nach dem ersten Jahr, und es gab keinen Effekt auf die Gesundheit der Kinder im Haushalt.[8] OpenResearch merkt an, dass sich das erste Jahr mit Pandemiehilfen überschnitt und dass steigende Preise und das Ende dieser Hilfen die frühen Zuwächse aufgezehrt haben könnten, sagt aber, es könne nicht sicher sagen, warum sie verblassten.[8]"
+          ],
+          [
+            "p",
+            "Kinder: Eine Studie von 2025 findet, dass Eltern, die 1.000 $ im Monat erhielten, mehr für ihre Kinder ausgaben und von engerer Beaufsichtigung berichteten. Sie berichteten auch von mehr Entwicklungsschwierigkeiten und Stress bei ihren Kindern, was nach Vermutung der Autoren daher kommen könnte, dass sie sie genauer beobachteten. Die meisten Ergebnisse in Schulakten änderten sich nicht nennenswert.[9]"
+          ],
+          [
+            "p",
+            "Politik und Arbeit: Eine Studie vom Dezember 2024 findet keinen Effekt auf Wahlbeteiligung oder politisches Engagement und wenige Veränderungen politischer Ansichten. Ein Ergebnis widerspricht dem Klischee: Die Empfänger hielten Arbeit danach für etwas wichtiger, für den Einzelnen und für die Gesellschaft, und befürworteten häufiger Arbeitspflichten für Medicaid.[10] Zu Altmans anderer Frage, Neues zu schaffen: Die Empfänger hatten häufiger eine Geschäftsidee und sagten häufiger, sie wollten ein Unternehmen gründen, gründeten im Schnitt aber nicht signifikant häufiger eines. In einer explorativen Aufschlüsselung hatten Schwarze und weibliche Empfänger bis zum dritten Jahr häufiger eines gegründet oder bei einer Gründung geholfen.[11]"
+          ],
+          [
+            "h",
+            "Dieselben Ergebnisse, zwei Schlagzeilen"
+          ],
+          [
+            "p",
+            "Die Berichterstattung war damals überwiegend sorgfältig. NPR berichtete, die Empfänger hätten „im Schnitt etwa eine Stunde pro Woche weniger“ gearbeitet und vor allem für das Nötigste ausgegeben, und der Bericht selbst sage, seine Ergebnisse „stützen beide Seiten“. Chris Hughes, Mitgründer des Economic Security Project, das sich für ein garantiertes Einkommen einsetzt, sagte: „Ich hoffe, die Leute nehmen aus dieser und anderen Studien mit, dass ein garantiertes Einkommen allein nicht funktionieren wird.“ Michael Strain vom American Enterprise Institute bevorzugte höhere Steuergutschriften für Geringverdiener, die nur an diejenigen gezahlt werden, die eine Arbeit aufnehmen.[12]"
+          ],
+          [
+            "p",
+            "CBS zitierte Vivalt: „Aus Sicht eines Ökonomen ist es ein moderater Effekt.“ Die weggefallenen Stunden sah sie nicht als Scheitern: „Die Menschen unternehmen mehr, und wenn die Ergebnisse sagen, dass Menschen mehr Freizeit schätzen – dass genau das ihr Wohlbefinden steigert –, dann ist das positiv.“ Zur Hoffnung aber, ein finanzielles Polster würde zu besseren Jobs führen, sagte sie: „Wir finden überhaupt keine Effekte auf die Qualität der Beschäftigung.“[13] Derselbe CBS-Artikel schrieb außerdem, 3.000 Teilnehmende hätten 1.000 $ im Monat erhalten; tatsächlich waren es 1.000, die anderen 2.000 bekamen 50 $. Der Fehler ist verbreitet, und er lässt die Studie dreimal so groß erscheinen, wie sie war.[13][2] Im September desselben Jahres schrieb Jesús Gerena, Chef der gemeinnützigen Organisation UpTogether, in Fortune, die Schlüsse, die Journalisten und Forschende zogen, seien „in schmerzhaften Klischees über Menschen in Armut verwurzelt, etwa der Darstellung, sie seien faul“.[14]"
+          ],
+          [
+            "o",
+            "Beide Kurzfassungen verlieren etwas. „Geschenktes Geld macht faul“ passt nicht zu einem Rückgang der Stunden um etwa 5 %, in einer Zeit, in der die Beschäftigung in beiden Gruppen stieg, bei Menschen, die Arbeit danach etwas mehr schätzten. „Geld verändert Leben“ passt nicht zu einer Studie, die keine besseren Jobs, keine dauerhaften Verbesserungen bei Gesundheit oder Wohlbefinden und ein kaum verändertes Nettovermögen fand. Was die Belege zeigen, ist kleiner und nützlicher: Die Menschen behandelten das Geld als Einkommen, gaben das meiste für das Nötigste aus, und manche kauften sich damit Zeit zurück. Ob diese Zeit „Verschwendung“ oder „Freiheit“ ist, ist ein Werturteil, das die Daten dir nicht abnehmen können."
+          ],
+          [
+            "h",
+            "Ist das Grundeinkommen?"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitspflicht“, und nennt fünf Merkmale: regelmäßig, Geld, individuell, universell und bedingungslos.[15]"
+          ],
+          [
+            "p",
+            "Regelmäßig? Ja, jeden Monat. Geld? Ja. Individuell? Ja, gezahlt an die Person, nicht an den Haushalt. Bedingungslos? Ja, ohne Regeln zu Arbeit oder Ausgaben. Universell? Nein. Es ging an 1.000 zufällig ausgewählte Erwachsene mit geringerem Einkommen zwischen 21 und 40, für drei Jahre."
+          ],
+          [
+            "o",
+            "Es war also ein Versuch mit garantiertem Einkommen, kein Grundeinkommen, und daraus folgen drei Grenzen. Erstens war es befristet, und alle wussten, wann es enden würde; Menschen könnten sich anders verhalten, in beide Richtungen, wenn die Zahlung lebenslang wäre. Zweitens erhielten es nur wenige Menschen an jedem Ort, also kann es nicht zeigen, was eine Zahlung an alle mit Mieten, Preisen oder Löhnen machen würde oder was die Steuern zu ihrer Finanzierung verändern würden. Altmans eigener Beitrag sagte, Fragen zu den gesamten Lebenshaltungskosten lägen „außerhalb unseres Rahmens, sind aber offensichtlich wichtig“.[4] Drittens lief es durch die Pandemie und ihre Nachwirkungen, auch wenn die Studie anmerkt, dass ihre Schätzungen vor allem 2022 und 2023 widerspiegeln.[2] Was ein randomisierter Versuch gut zeigen kann, ist, wie Einzelne auf zusätzliches Einkommen reagieren, und genau diese Zahl braucht jeder Entwurf eines größeren Programms."
+          ],
+          [
+            "p",
+            "OpenResearch sagt, es habe die Teilnehmenden nach dem Ende der Zahlungen bis 2025 weiter befragt.[1] Veröffentlichte Ergebnisse aus dieser Zeit haben wir noch nicht gefunden. Es hat die Umfragedaten außerdem Forschenden im Rahmen einer Datennutzungsvereinbarung zugänglich gemacht, und der Code der Beschäftigungsstudie ist offen; beides steht auf {unserer Liste offener Daten|/open-source/#data-openresearch-ucs}."
+          ],
+          [
+            "h",
+            "Warum es für KI wichtig ist"
+          ],
+          [
+            "p",
+            "Altmans Frage von 2016 kam aus einer Sorge um Technologie und Arbeitsplätze.[4] 2021 ging er in „Moore’s Law for Everything“ weiter und schlug einen American Equity Fund vor, gespeist aus Steuern auf große Unternehmen und Boden, der jedem Erwachsenen jährlich einen Anteil auszahlen würde.[16] {Unser Essay über das universelle Hocheinkommen|/essays/universal-high-income/} hat diesen Plan betrachtet und gefragt, wer zahlt. Seitdem taucht das Geld in kleinem Maßstab auf: {Der AI Dividend|/timeline/#tl-ai-dividend} zahlt Beschäftigten, denen KI geschadet hat, ein Jahr lang 1.000 $ im Monat, und Anthropic hat Aktien in einem Fonds beiseitegelegt, der {direkte Ausschüttungen an bestimmte Bevölkerungsgruppen|/essays/public-benefit-fund/} leisten könnte."
+          ],
+          [
+            "o",
+            "Wer eine durch KI finanzierte Zahlung entwirft, bekommt von dieser Studie Planungszahlen statt eines Urteils. Das meiste Geld geht in Miete, Lebensmittel und Verkehr. Empfänger und ihre Partner arbeiten etwas weniger, also muss die Kostenrechnung pro gezahltem Dollar etwa 28 Cent verlorenes sonstiges Haushaltseinkommen berücksichtigen. Die kurzfristige Entlastung ist groß und echt; dauerhafte Veränderungen bei Gesundheit, Arbeit oder Vermögen haben drei Jahre mit 1.000 $ allein nicht gebracht. Eine dauerhafte Dividende an alle ist eine andere Politik und kann sich anders auswirken, aber dies sind die besten Belege, die wir dazu haben, wie Menschen reagieren."
+          ],
+          [
+            "h",
+            "Was man daraus mitnehmen kann"
+          ],
+          [
+            "o",
+            "Altman stellte 2016 eine ehrliche Frage und bezahlte für eine sorgfältige Antwort, und die Antwort schmeichelte der Idee nicht einfach. Die Forschenden veröffentlichten die Nullergebnisse neben den guten, korrigierten ihre Hauptschätzung nach oben und öffneten ihre Daten. Das ist mehr wert als jede einzelne Schlagzeile."
+          ],
+          [
+            "o",
+            "Wenn du einen Satz aus dieser Studie teilst, dann den genauen: 1.000 Menschen mit geringerem Einkommen erhielten drei Jahre lang 1.000 $ im Monat; sie arbeiteten etwa 1,3 Stunden pro Woche weniger, gaben vor allem für das Nötigste aus, fühlten sich ein Jahr lang besser, und viele nutzten das Geld, um selbst zu wählen, wie sie ihre Zeit verbringen. Lies sie so, wie diese Seite jedes kostenlose Mittagessen liest: Wer hat bezahlt, wer hat erhalten, und wie lange?"
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في يوليو 2024 صدرت نتائج أكبر دراسة عن المال غير المشروط في الولايات المتحدة، تلك التي دعمها سام ألتمان. وفي غضون أيام حملت الأرقام نفسها عناوين متناقضة. قرأ فريق «المال المجاني يجعل الناس يعملون أقل». وقرأ الآخر «المال يمنح الناس الحرية». وكان الطرفان يقتبسان من الدراسات نفسها."
+          ],
+          [
+            "p",
+            "يعود هذا المقال إلى تلك الدراسات: ما كانت الدراسة، وماذا فعل المستفيدون بالمال والوقت، وما الذي لم يتغير، وما الذي تخبرنا به عن الدخل الأساسي وما لا تخبرنا به. ويسأل أيضًا لماذا أراد الرئيس التنفيذي لشركة ذكاء اصطناعي أن يعرف."
+          ],
+          [
+            "h",
+            "ما كانت الدراسة"
+          ],
+          [
+            "p",
+            "سجّلت ⁦OpenResearch⁩، وهو مختبر بدأ باسم ⁦Y Combinator Research⁩، ‏3,000 شخص بين 21 و40 عامًا لم يتجاوز دخل أسرهم في 2019 نسبة 300% من خط الفقر الفيدرالي، في 19 مقاطعة في شمال إلينوي (بما فيها منطقة شيكاغو) وشمال وسط تكساس (بما فيها منطقة دالاس)، في مدن وضواحٍ ومناطق ريفية.[1][2] وجرى التسجيل من أكتوبر 2019 إلى أكتوبر 2020. ثم قُسِّم المشاركون عشوائيًا: حصل 1,000 على ⁦$1,000⁩ شهريًا، وحصل 2,000 على ⁦$50⁩ شهريًا بوصفهم المجموعة الضابطة، من نوفمبر 2020 إلى أكتوبر 2023. وتولّت منظمتان محليتان غير ربحيتين الدفع.[2]"
+          ],
+          [
+            "p",
+            "كان المال غير مشروط تمامًا. لم يُطلب شيء بشأن العمل أو الإنفاق، واستمرت الدفعات سواء واصل الشخص الإجابة عن الاستبيانات أم لا.[1][2] وكان متوسط دخل أسر المشاركين نحو ⁦$29,900⁩ في 2019، فكانت ⁦$1,000⁩ شهريًا زيادة بنحو 40% في دخل الأسرة.[2] وسُجِّلت خطة التحليل مسبقًا، ووصلت الاستبيانات في النهاية إلى 96% من المشاركين.[2]"
+          ],
+          [
+            "p",
+            "بحسب حسابنا، تبلغ التحويلات وحدها نحو 39.6 مليون دولار: 36 مليونًا للمستفيدين الألف و3.6 مليون للمجموعة الضابطة. وأفادت ⁦Forbes⁩ بأن ⁦OpenResearch⁩ والكيانات التابعة لها جمعت نحو 60 مليون دولار منذ 2015، منها 14 مليونًا تبرّع بها ألتمان، و10 ملايين من الذراع غير الربحية لـ⁦OpenAI⁩، و15 مليونًا من ⁦Start Small⁩ التابعة لجاك دورسي، و6.5 مليون من سيد سيبرانديج، أحد مؤسسي ⁦GitLab⁩.[3] ويشير البحث نفسه أيضًا إلى منحة من المؤسسة الوطنية للعلوم (⁦National Science Foundation⁩).[2]"
+          ],
+          [
+            "p",
+            "يعود السبب إلى يناير 2016، حين أعلن ألتمان الدراسة في مدونة ⁦Y Combinator⁩. كتب أنه «مع استمرار التكنولوجيا في إلغاء الوظائف التقليدية وخلق ثروة جديدة هائلة»، يُرجَّح أن تظهر صيغة ما من الدخل الأساسي على نطاق وطني، وأن هناك «بيانات قليلة نسبيًا عن كيفية عمله». وسأل أيضًا: «هل يجلس الناس ويلعبون ألعاب الفيديو، أم يصنعون أشياء جديدة؟»[4]"
+          ],
+          [
+            "h",
+            "العنوان الرئيسي: عمل أقل قليلًا"
+          ],
+          [
+            "p",
+            "تجد دراسة التوظيف، التي أعدّتها إيفا فيفالت وإليزابيث رودز وألكسندر بارتيك وديفيد بروكمان وباتريك كراوزه وسارة ميلر، أن المستفيدين عملوا نحو 1.3 ساعة أسبوعيًا أقل من المجموعة الضابطة في الاستبيانات، وأقل بـ1.4 إلى 1.5 ساعة في يوميات الوقت عبر تطبيق الهاتف واستبيانات استخدام الوقت. وفي الاستبيانات كان احتمال أن يكونوا عاملين أقل بـ2.3 نقطة مئوية. وكان دخلهم الخاص، دون احتساب التحويلات، أقل بنحو ⁦$1,900⁩ سنويًا. وخفّض شركاؤهم ساعاتهم بمقدار مماثل: فمعًا عمل المشارك وشريكه 2.1 ساعة أسبوعيًا أقل.[2]"
+          ],
+          [
+            "p",
+            "وبعبارة أخرى، مقابل كل دولار مُستلَم، انخفض دخل الأسرة من مصادر أخرى بنحو 28 سنتًا، ودخل المشارك نفسه بنحو 16 سنتًا. ويصف المؤلفون الأثر في الساعات والدخل بأنه تراجع بنسبة 5 إلى 6% مقارنة بالمجموعة الضابطة، و«أثر معتدل».[2]"
+          ],
+          [
+            "p",
+            "تفصيلان مهمان للعنوان. أولًا، ارتفع التوظيف في المجموعتين خلال السنوات الثلاث، من 58% إلى 72% بين المستفيدين ومن 59% إلى 74% في المجموعة الضابطة؛ كل ما في الأمر أن المجموعة الضابطة ارتفعت أكثر.[5] وباحتساب التحويلات، ظل دخل المستفيدين في السنة الثالثة أعلى بنحو ⁦$10,000⁩ من دخل المجموعة الضابطة.[5] ثانيًا، تغيّرت الأرقام. فقد قدّرت النسخة الأولى من الدراسة (يوليو 2024) انخفاض الدخل بنحو ⁦$1,500⁩ سنويًا وتراجع المشاركة في سوق العمل بـ2.0 نقطة مئوية. أما مراجعة أغسطس 2026، التي تجمع مقاييسها المفضلة بين إجابات الاستبيانات وسجلات تأمين البطالة في الولايات، فتقدّرهما بنحو ⁦$1,900⁩ و4.2 نقطة مئوية.[2]"
+          ],
+          [
+            "o",
+            "لنعترف بالفضل لأهله: صحّح الباحثون أثرهم الرئيسي بأنفسهم نحو الأعلى، في الاتجاه الأقل ملاءمة للقضية التي ترتبط بها الدراسة، ووضعوا الأرقام الأكبر في الملخص. ولهذا بالضبط تُجرى الدراسات."
+          ],
+          [
+            "h",
+            "ماذا فعلوا بالوقت"
+          ],
+          [
+            "p",
+            "بحسب الدراسة، ذهبت الساعات التي تحررت من العمل في الغالب إلى وقت الفراغ، مع قليل من الوقت الإضافي في القيادة وأنشطة أخرى. ويستطيع المؤلفون استبعاد حتى التغيرات الصغيرة في الوقت المخصص لرعاية الأطفال أو الرياضة أو البحث عن عمل أو تطوير الذات.[2] ويفصّل ملخص ⁦OpenResearch⁩ وقت الفراغ أكثر: كانت أكبر الزيادات في القيادة، ووقت الفراغ الاجتماعي (الوقت مع الآخرين: التواصل الاجتماعي والاستجمام والوجبات)، والمشاوير مثل شراء البقالة.[5]"
+          ],
+          [
+            "p",
+            "تغيّر شكل البحث عن عمل ولم يتوقف. فقد كانت فترات البقاء بلا عمل أطول بنحو 0.8 شهر من متوسط المجموعة الضابطة البالغ 7.8 أشهر، وكان المستفيدون أكثر احتمالًا لأن يكونوا قد تقدموا مؤخرًا لوظيفة، لكنهم تقدموا لعدد أقل من الوظائف.[2] ومن بين الباحثين عن عمل، كان المستفيدون أكثر احتمالًا بـ5.5 نقطة مئوية لأن يقولوا إن العمل الممتع أو ذا المعنى شرط أساسي لأي وظيفة يقبلونها.[5] ومع ذلك، لم تتحسن جودة الوظائف عبر قائمة طويلة من المقاييس، وتستطيع الدراسة استبعاد حتى التحسينات الصغيرة فيها، أو زيادات في الأجور تتجاوز 58 سنتًا في الساعة.[2]"
+          ],
+          [
+            "p",
+            "تُخفي المتوسطات حيوات مختلفة جدًا. خفّض أحد المستفيدين، ناثان، أسبوع عمله البالغ 50 ساعة إلى النصف ليقضي وقتًا مع ابنه ذي الأربع سنوات. وقبلت ليزا وظيفة بأجر أقل لكن فيها مجال للتقدم، واستخدمت التحويلات لسد الفجوة، وبعد عامين كان راتبها يقترب من ستة أرقام. أما شون، الذي كان يعمل 72 ساعة أسبوعيًا، فقرر أن يأخذ استراحة قبل أن يصل إلى الاحتراق.[5] الأنماط حسب الفئات استكشافية، لكن تراجع العمل تركّز بين من هم دون الثلاثين، والآباء والأمهات الذين يربّون أطفالهم وحدهم، وأصحاب أعلى دخل أسري في البداية؛ أما المستفيدون فوق الثلاثين فلم يظهر لديهم أثر دال إحصائيًا في التوظيف أو الساعات.[5] وأظهر المشاركون الأصغر سنًا أيضًا آثارًا مقدّرة أكبر في مواصلة التعليم، وإن لم يكن هناك أثر دال إحصائيًا في الحصول على الشهادات عمومًا.[2]"
+          ],
+          [
+            "h",
+            "ماذا فعلوا بالمال"
+          ],
+          [
+            "p",
+            "في المتوسط، أنفق المستفيدون ⁦$310⁩ شهريًا أكثر من المجموعة الضابطة، وذهب أكثر من نصف ذلك إلى الأساسيات: الطعام (⁦$67⁩)، والإيجار (⁦$52⁩)، والمواصلات (⁦$50⁩). وكانت أكبر زيادة نسبةً إلى ما أنفقته المجموعة الضابطة في الدعم المالي للآخرين، مثل الهدايا والقروض للأهل والأصدقاء: ⁦$22⁩ شهريًا، أي 26% أكثر.[6] وكان من بدأوا تحت خط الفقر أو قريبًا منه هم من دفعوا زيادة الإنفاق؛ أما في الفئة الأعلى دخلًا فكان الأثر في إجمالي الإنفاق صغيرًا وغير دال إحصائيًا.[6]"
+          ],
+          [
+            "p",
+            "تقدّر دراسة الاستهلاك أن الإنفاق ارتفع بما لا يقل عن ⁦$300⁩ شهريًا، معظمه على السكن والطعام والسيارات، وأن المستفيدين كانوا أكثر احتمالًا للانتقال إلى منزل جديد وحي جديد. وتحسّنت الصحة المالية كما يقدّرها أصحابها، وتحسّنت درجاتهم الائتمانية. لكن المكاسب الصغيرة في الأصول قابلها دين أكبر، فبقي صافي الثروة دون تغيير يُذكر، ولم يكن هناك أثر في حالات التأخر عن السداد أو الإفلاس أو نزع ملكية العقارات المرهونة. ويخلص المؤلفون إلى أن التحويلات الكبيرة المؤقتة «قد لا تُحدث تحسينات دائمة في الوضع المالي للأسر الشابة منخفضة الدخل».[7]"
+          ],
+          [
+            "h",
+            "الصحة والأطفال والمواقف من العمل"
+          ],
+          [
+            "p",
+            "الصحة: جلبت التحويلات تحسنًا كبيرًا لكنه قصير الأمد في التوتر والأمن الغذائي، واستخدامًا أكبر لرعاية المستشفيات والطوارئ والأسنان. ولم تحسّن الصحة الجسدية كما يقدّرها أصحابها، ولا مؤشرات تحاليل الدم، ولا الصحة النفسية بعد السنة الأولى، ولم يكن هناك أثر في صحة الأطفال في الأسرة.[8] وتشير ⁦OpenResearch⁩ إلى أن السنة الأولى تزامنت مع إعانات الجائحة، وأن ارتفاع الأسعار وانتهاء تلك الإعانات ربما أضعفا المكاسب المبكرة، لكنها تقول إنها لا تستطيع الجزم بسبب تلاشيها.[8]"
+          ],
+          [
+            "p",
+            "الأطفال: تجد دراسة من 2025 أن الآباء الذين حصلوا على ⁦$1,000⁩ شهريًا أنفقوا أكثر على أطفالهم وأفادوا بإشراف أقرب عليهم. كما أفادوا بصعوبات نمائية وتوتر أكثر لدى أطفالهم، وهو ما يرجّح المؤلفون أنه قد يأتي من مراقبتهم عن كثب أكثر. ولم تتغير معظم النتائج في السجلات المدرسية تغيرًا يُعتدّ به.[9]"
+          ],
+          [
+            "p",
+            "السياسة والعمل: تجد دراسة من ديسمبر 2024 أنه لا أثر في التصويت أو المشاركة السياسية، وأن التغيرات في الآراء السياسية قليلة. ونتيجة واحدة تسير عكس الصورة النمطية: صار المستفيدون يرون العمل أهم قليلًا للأفراد وللمجتمع، وكانوا أكثر احتمالًا لتأييد شروط العمل في برنامج ⁦Medicaid⁩.[10] وعن سؤال ألتمان الآخر، أي صنع أشياء جديدة، كان المستفيدون أكثر احتمالًا لأن تكون لديهم فكرة مشروع وأن يقولوا إنهم ينوون بدء واحد، لكنهم في المتوسط لم يكونوا أكثر احتمالًا بشكل دال إحصائيًا لأن يبدأوا مشروعًا فعلًا. وفي تحليل استكشافي، كان المستفيدون السود والمستفيدات النساء أكثر احتمالًا لأن يكونوا قد بدأوا مشروعًا أو ساعدوا في بدئه بحلول السنة الثالثة.[11]"
+          ],
+          [
+            "h",
+            "النتائج نفسها، وعنوانان"
+          ],
+          [
+            "p",
+            "كانت التغطية في حينها حذرة في الغالب. أفادت ⁦NPR⁩ بأن المستفيدين عملوا «ساعة أو نحوها أقل أسبوعيًا في المتوسط» وأنفقوا في الغالب على الأساسيات، وبأن التقرير نفسه يقول إن نتائجه «تقدم دعمًا للطرفين». وقال كريس هيوز، أحد مؤسسي ⁦Economic Security Project⁩ الذي يناصر الدخل المضمون: «آمل أن يستخلص الناس من هذه الدراسة ومن دراسات أخرى أن الدخل المضمون لن ينجح وحده». أما مايكل سترين من ⁦American Enterprise Institute⁩ ففضّل خصومات ضريبية أكبر للعمال منخفضي الدخل، تُدفع فقط لمن يقبلون وظيفة.[12]"
+          ],
+          [
+            "p",
+            "واقتبست ⁦CBS⁩ عن فيفالت: «من وجهة نظر اقتصادي، إنه أثر معتدل». ولم ترَ الساعات المفقودة فشلًا: «الناس يفعلون أشياء أكثر، وإذا قالت النتائج إن الناس يقدّرون الحصول على وقت فراغ أكثر — وإن هذا ما يزيد رفاههم — فهذا أمر إيجابي». لكن عن الأمل في أن تقود الوسادة المالية إلى وظائف أفضل، قالت: «لا نجد أي آثار على الإطلاق في جودة العمل».[13] وذكر مقال ⁦CBS⁩ نفسه أيضًا أن 3,000 مشارك حصلوا على ⁦$1,000⁩ شهريًا؛ والواقع أن 1,000 فقط حصلوا عليها، وحصل الـ2,000 الآخرون على ⁦$50⁩. إنه خطأ شائع، ويجعل الدراسة تبدو أكبر بثلاث مرات مما كانت.[13][2] وفي سبتمبر من ذلك العام، كتب خيسوس جيرينا، الرئيس التنفيذي للمنظمة غير الربحية ⁦UpTogether⁩، في ⁦Fortune⁩ أن الاستنتاجات التي خلص إليها الصحفيون والباحثون «متجذرة في صور نمطية مؤلمة عن الناس الذين يعيشون في الفقر، مثل تصويرهم كسالى».[14]"
+          ],
+          [
+            "o",
+            "كلتا الروايتين المختصرتين تفقد شيئًا. «المال المجاني يجعل الناس كسالى» لا تنسجم مع تراجع في الساعات بنحو 5%، في فترة ارتفع فيها التوظيف في المجموعتين، بين أناس صاروا يقدّرون العمل أكثر قليلًا. و«المال يغيّر الحياة» لا تنسجم مع دراسة لم تجد وظائف أفضل، ولا مكاسب دائمة في الصحة أو الرفاه، ووجدت صافي ثروة بالكاد تحرّك. ما تُظهره الأدلة أصغر وأنفع: تعامل الناس مع المال بوصفه دخلًا، وأنفقوا معظمه على الأساسيات، واستخدمه بعضهم لاسترداد وقتهم. أما هل ذلك الوقت «هدر» أم «حرية» فهو حكم قيمي لا تستطيع البيانات أن تصدره نيابةً عنك."
+          ],
+          [
+            "h",
+            "هل هذا دخل أساسي؟"
+          ],
+          [
+            "p",
+            "تعرّف الشبكة العالمية للدخل الأساسي (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُسلَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو شرط للعمل»، وتذكر خمس سمات: دوري، ونقدي، وفردي، وشامل، وغير مشروط.[15]"
+          ],
+          [
+            "p",
+            "دوري؟ نعم، كل شهر. نقدي؟ نعم. فردي؟ نعم، دُفع للشخص لا للأسرة. غير مشروط؟ نعم، بلا قواعد للعمل أو الإنفاق. شامل؟ لا. ذهب إلى 1,000 بالغ منخفضي الدخل بين 21 و40 عامًا اختيروا عشوائيًا، لمدة ثلاث سنوات."
+          ],
+          [
+            "o",
+            "إذن كانت هذه تجربة دخل مضمون، لا دخلًا أساسيًا، وتترتب على ذلك ثلاثة حدود. أولًا، كانت مؤقتة، وكان الجميع يعرف متى تنتهي؛ وقد يتصرف الناس بشكل مختلف، في أي من الاتجاهين، لو كانت الدفعة مدى الحياة. ثانيًا، لم يحصل عليها إلا قلة في كل مكان، فلا يمكنها أن تُظهر ما ستفعله دفعة للجميع بالإيجارات أو الأسعار أو الأجور، ولا ما ستغيّره الضرائب اللازمة لتمويلها. وقد قال منشور ألتمان نفسه إن الأسئلة عن تكلفة المعيشة الإجمالية «خارج نطاقنا، لكنها مهمة بوضوح».[4] ثالثًا، جرت خلال الجائحة وما بعدها، وإن كانت الدراسة تشير إلى أن تقديراتها تعكس في الغالب عامي 2022 و2023.[2] ما تستطيع التجربة العشوائية أن تُظهره جيدًا هو كيف يستجيب الأفراد لدخل إضافي، وهذا بالضبط الرقم الذي يحتاجه أي تصميم لبرنامج أكبر."
+          ],
+          [
+            "p",
+            "تقول ⁦OpenResearch⁩ إنها واصلت استطلاع المشاركين بعد انتهاء الدفعات، حتى 2025.[1] ولم نعثر بعد على نتائج منشورة من تلك الفترة. كما أتاحت بيانات الاستبيانات للباحثين بموجب اتفاقية لاستخدام البيانات، وشيفرة دراسة التوظيف مفتوحة؛ وكلاهما في {قائمتنا للبيانات المفتوحة|/open-source/#data-openresearch-ucs}."
+          ],
+          [
+            "h",
+            "لماذا يهم هذا في نقاش الذكاء الاصطناعي"
+          ],
+          [
+            "p",
+            "نشأ سؤال ألتمان في 2016 من قلق بشأن التكنولوجيا والوظائف.[4] وفي 2021، في مقال «⁦Moore’s Law for Everything⁩»، ذهب أبعد واقترح «صندوق الأسهم الأمريكي»، يُموَّل بضرائب على الشركات الكبيرة والأراضي، ويدفع لكل بالغ حصة سنوية.[16] وقد تناول {مقالنا عن الدخل المرتفع الشامل|/essays/universal-high-income/} تلك الخطة وسأل من يدفع. ومنذ ذلك الحين بدأ المال يظهر على نطاق صغير: يدفع {⁦AI Dividend⁩|/timeline/#tl-ai-dividend} ‏⁦$1,000⁩ شهريًا لمدة عام لعاملين تضرروا من الذكاء الاصطناعي، وخصّصت ⁦Anthropic⁩ أسهمًا في صندوق قد يقدّم {توزيعات مباشرة لفئات سكانية محددة|/essays/public-benefit-fund/}."
+          ],
+          [
+            "o",
+            "لمن يصمم دفعة ممولة من الذكاء الاصطناعي، تقدم هذه الدراسة أرقامًا للتخطيط لا حكمًا نهائيًا. يذهب معظم المال إلى الإيجار والطعام والمواصلات. ويعمل المستفيدون وشركاؤهم أقل قليلًا، لذا يجب أن يحتسب حساب التكلفة نحو 28 سنتًا من دخل الأسرة الآخر تضيع مقابل كل دولار يُدفع. الإغاثة قصيرة الأمد كبيرة وحقيقية؛ أما التغير الدائم في الصحة أو الوظائف أو الثروة فليس شيئًا حققته ثلاث سنوات من ⁦$1,000⁩ وحدها. والعائد الدائم المدفوع للجميع سياسة مختلفة وقد تكون آثاره مختلفة، لكن هذه أفضل الأدلة لدينا عن كيفية استجابة الناس."
+          ],
+          [
+            "h",
+            "ما الذي نستخلصه"
+          ],
+          [
+            "o",
+            "طرح ألتمان سؤالًا صادقًا في 2016 ودفع ثمن إجابة متأنية، ولم تكتفِ الإجابة بمجاملة الفكرة. نشر الباحثون النتائج الصفرية إلى جانب الجيدة، وصحّحوا تقديرهم الرئيسي نحو الأعلى، وفتحوا بياناتهم. وهذا أثمن من أي عنوان منفرد."
+          ],
+          [
+            "o",
+            "إن شاركت سطرًا واحدًا من هذه الدراسة، فليكن السطر الدقيق: حصل 1,000 شخص منخفضي الدخل على ⁦$1,000⁩ شهريًا لثلاث سنوات؛ عملوا نحو 1.3 ساعة أسبوعيًا أقل، وأنفقوا معظمه على الأساسيات، وشعروا بتحسن لمدة عام، واستخدم كثيرون منهم المال ليختاروا كيف يقضون وقتهم. اقرأها كما يقرأ هذا الموقع كل غداء مجاني: من دفع، ومن حصل، ولأي مدة."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "OpenResearch — Unconditional Cash Study (study overview)",
+          "url": "https://www.openresearchlab.org/projects/unconditional-cash-study"
+        },
+        {
+          "n": 2,
+          "label": "Vivalt, Rhodes, Bartik, Broockman, Krause and Miller — The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States (NBER w32719, Jul 2024, revised Aug 2026)",
+          "url": "https://www.nber.org/papers/w32719"
+        },
+        {
+          "n": 3,
+          "label": "Forbes (via Forbes Australia) — OpenAI founder Sam Altman gave thousands of people free money. Here’s what happened (Sarah Emerson, 22 Jul 2024)",
+          "url": "https://www.forbes.com.au/news/innovation/openai-founder-sam-altman-gave-thousands-of-people-free-money/"
+        },
+        {
+          "n": 4,
+          "label": "Sam Altman — Basic Income (Y Combinator blog, 27 Jan 2016)",
+          "url": "https://www.ycombinator.com/blog/basic-income"
+        },
+        {
+          "n": 5,
+          "label": "OpenResearch — Key Findings: Employment (21 Jul 2024)",
+          "url": "https://www.openresearchlab.org/findings/key-findings-employment-and-income"
+        },
+        {
+          "n": 6,
+          "label": "OpenResearch — Key Findings: Spending (21 Jul 2024)",
+          "url": "https://www.openresearchlab.org/findings/key-findings-spending"
+        },
+        {
+          "n": 7,
+          "label": "Bartik et al. — The Impact of Unconditional Cash Transfers on Consumption and Household Balance Sheets: Experimental Evidence from Two US States (NBER w32784, Aug 2024)",
+          "url": "https://www.nber.org/papers/w32784"
+        },
+        {
+          "n": 8,
+          "label": "Miller et al. — Does Income Affect Health? Evidence from a Randomized Controlled Trial of a Guaranteed Income (NBER w32711, Jul 2024); OpenResearch — Key Findings: Health",
+          "url": "https://www.nber.org/papers/w32711",
+          "url2": "https://www.openresearchlab.org/findings/how-does-unconditional-cash-affect-health-2"
+        },
+        {
+          "n": 9,
+          "label": "Krause et al. — The Impact of Unconditional Cash Transfers on Parenting and Children (NBER w34040, Jul 2025)",
+          "url": "https://www.nber.org/papers/w34040"
+        },
+        {
+          "n": 10,
+          "label": "Broockman et al. — The Causal Effects of Income on Political Attitudes and Behavior: A Randomized Field Experiment (NBER w33214, Dec 2024); OpenResearch — Key Findings: The Impact of the Cash on Attitudes Towards Work",
+          "url": "https://www.nber.org/papers/w33214",
+          "url2": "https://www.openresearchlab.org/findings/key-findings-the-impact-of-the-cash-on-attitudes-towards-work"
+        },
+        {
+          "n": 11,
+          "label": "OpenResearch — Key Findings: Entrepreneurship (21 Jul 2024)",
+          "url": "https://www.openresearchlab.org/findings/entrepreneurship"
+        },
+        {
+          "n": 12,
+          "label": "NPR — As new tech threatens jobs, Silicon Valley promotes no-strings cash aid (Jennifer Ludden, 22 Jul 2024)",
+          "url": "https://www.npr.org/transcripts/nx-s1-5035263"
+        },
+        {
+          "n": 13,
+          "label": "CBS MoneyWatch — Here’s what a Sam Altman-backed basic income experiment found (Megan Cerullo, 23 Jul 2024)",
+          "url": "https://www.cbsnews.com/news/sam-altman-universal-basic-income-study-open-research/"
+        },
+        {
+          "n": 14,
+          "label": "Fortune — How a Sam Altman-backed study into guaranteed income was widely misinterpreted (Jesús Gerena, 4 Sep 2024)",
+          "url": "https://fortune.com/2024/09/04/sam-altman-backed-study-guaranteed-income-widely-misinterpreted-ubi-personal-finance/"
+        },
+        {
+          "n": 15,
+          "label": "Basic Income Earth Network (BIEN) — About Basic Income",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 16,
+          "label": "Sam Altman — Moore’s Law for Everything (16 Mar 2021)",
+          "url": "https://moores.samaltman.com/"
+        }
+      ]
+    },
+    {
+      "id": "japan-special-cash-payment",
+      "date": "2026-11-04",
+      "related": [
+        "thailand-digital-wallet",
+        "nesara-gesara-basic-income"
+      ],
+      "title": {
+        "ja": "10万円の給付金は、何に使われたのか：特別定額給付金をデータで振り返る",
+        "en": "Where did the ¥100,000 go? Japan’s 2020 Special Cash Payment, by the data",
+        "zh": "那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金",
+        "hi": "1,00,000 येन कहाँ गए? आँकड़ों में जापान का 2020 का विशेष नकद भुगतान",
+        "es": "¿Adónde fueron los 100.000 yenes? El Pago Especial en Efectivo de Japón de 2020, según los datos",
+        "de": "Wohin gingen die 100.000 Yen? Japans Sonderzahlung von 2020 im Spiegel der Daten",
+        "ar": "أين ذهبت الـ100,000 ين؟ الدفعة النقدية الخاصة في اليابان عام 2020 بلغة البيانات"
+      },
+      "desc": {
+        "ja": "2020年、日本に住むほぼ全員に配られた10万円。銀行口座と家計簿アプリのデータから、何割がいつ使われ、誰が多く使い、なぜ残されたのかをたどり、1回きりの給付金とベーシックインカムの違いを考えます。",
+        "en": "In 2020 Japan gave ¥100,000 to nearly every resident. What bank and app data show about how much was spent, by whom, and why a one-off is not basic income.",
+        "zh": "2020 年，日本向几乎每位居民发放了 10 万日元。我们从银行账户和记账应用的数据，看花掉了多少、何时花掉、由谁花掉，最后再想一想为什么一次性的给付不是基本收入。",
+        "hi": "2020 में जापान ने लगभग हर निवासी को 1,00,000 येन दिए। बैंक और ऐप के आँकड़े बताते हैं कि कितना ख़र्च हुआ, किसने किया, और एक बार का भुगतान बेसिक इनकम क्यों नहीं।",
+        "es": "En 2020 Japón dio 100.000 yenes a casi cada residente. Datos de bancos y apps: cuánto se gastó, quién lo gastó y por qué un pago único no es renta básica.",
+        "de": "2020 zahlte Japan fast allen Einwohnern 100.000 Yen. Bank- und App-Daten zeigen, wie viel wer ausgab und warum eine Einmalzahlung kein Grundeinkommen ist.",
+        "ar": "في 2020 منحت اليابان 100,000 ين لكل مقيم تقريبًا. ماذا تقول بيانات البنوك والتطبيقات عن مقدار ما أُنفق، ومن أنفقه، ولماذا لا تكون دفعة واحدة دخلًا أساسيًا."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2020年の春から夏にかけて、日本に住むほぼすべての人に10万円が配られました。特別定額給付金です。配られたお金は、あわせて約12兆6,700億円。あの10万円は、何に使われたのでしょうか。「ほとんど貯金に回った」という声もあれば、「生活の支えになった」という声もあります。"
+          ],
+          [
+            "p",
+            "この問いには、ある程度データで答えることができます。銀行口座や家計簿アプリの記録を使った研究と、政府の分析を読んで、何割が、いつ、どんな家計で使われたのかを確かめます。そのうえで、この経験がベーシックインカムについて教えてくれることと、教えてくれないことを分けて考えます。"
+          ],
+          [
+            "h",
+            "10万円は、どう配られたか"
+          ],
+          [
+            "p",
+            "対象は、2020年4月27日に住民基本台帳に記録されていた人で、外国籍の住民も含まれます。金額は1人10万円。受け取る権利を持つのは、その人が属する世帯の世帯主でした。世帯主は、市区町村から郵送された申請書に振込先の口座を書いて送り返すか、マイナポータルからオンラインで申請し、お金は原則として申請者本人名義の口座に振り込まれました。事業費は12兆8,802億9,300万円（給付12兆7,344億1,400万円、事務費1,458億7,900万円）で、国が全額を負担しました。[1]"
+          ],
+          [
+            "p",
+            "最初の案は違いました。政府は当初、新型コロナで収入が大きく減った世帯に1世帯30万円を配る計画を示していましたが、2020年4月16日、全員に1人10万円を配る形に切り替わりました。[2]"
+          ],
+          [
+            "p",
+            "振り込みは5月に始まり、6月26日までに約9.12兆円（71.6%）、7月31日までに約12.32兆円が支払われました。最終的な給付額は約12.67兆円で、市区町村が予定していた給付額の合計の99.7%です。対象者のほぼ全員に届いた計算です。[3]"
+          ],
+          [
+            "p",
+            "ただし、届く時期は住んでいる場所によってかなり違いました。日本では銀行口座と住民の記録がつながっておらず、市区町村は口座番号を一つひとつ集めて確かめる必要があったからです。[2] 東京都内でも、練馬区では申請した人の85%が6月30日までに受け取っていたのに対し、江戸川区では34.5%でした。[4]"
+          ],
+          [
+            "p",
+            "この遅れが、研究者には思わぬ手がかりになりました。同じ週に、もう受け取った家計とまだ受け取っていない家計がいれば、両者を比べることで、感染の広がりや外出の自粛の影響と切り分けて、給付金そのものの効果を取り出せます。以下で紹介する研究は、どれもこの「自然実験」を使っています。[2][4]"
+          ],
+          [
+            "h",
+            "何割が使われたのか"
+          ],
+          [
+            "p",
+            "早稲田大学の久保田荘さん、大西宏一郎さん、遠山祐太さんは、みずほ銀行の約280万口座のデータを調べました。給付金が入った週に支出が跳ね上がり、そのあとも1か月以上、やや高い状態が続きました。6週間で口座から出ていったお金は給付額の49%で、そのうちATMでの現金引き出しだけを数えると31%です。ただし、この「出ていったお金」には振込や口座振替も含まれるので、著者自身、消費の上限に近い推計だと断っています。[4]"
+          ],
+          [
+            "p",
+            "兼田充さん、久保田荘さん、田中聡史さんは、家計簿アプリ「マネーフォワード ME」の利用者23万2,589人のデータを使いました。6週間で消費に回ったのは、基準となる定義で給付額の16%。狭く数えると6%、広く数えると27%でした。[2][5]"
+          ],
+          [
+            "p",
+            "服部孝洋さんらは、総務省の家計調査の都市ごとの集計を使い、給付金が届いた月に消費に回ったのは約10%と推計しました。家での買い物とお店での買い物は増えましたが、対面のサービスへの支出は増えていません。[6]"
+          ],
+          [
+            "p",
+            "内閣府は2023年、別の家計簿アプリ（マネーツリー）のデータで、支給の5週間前から10週間後までの16週間を見て、消費に回ったのは給付額の22%程度と推計しました。家計調査の個票で確かめると、約16週間で17%程度と、おおむね同じ結果でした。[7]"
+          ],
+          [
+            "o",
+            "数字は6%から49%まで開いています。何を「消費」と数えるか（引き出した現金を使ったとみなすか、振込まで入れるか）と、何週間を見るかで変わるからです。それでも、向きはそろっています。受け取ってから数週間から数か月のあいだに使われたのは、消費を狭く数える研究では1割から3割弱、口座から出ていったお金を広く数える研究でも半分ほどでした。残りは、少なくともすぐには使われていません。"
+          ],
+          [
+            "p",
+            "これはコロナの時期だけの特別な数字ではないかもしれません。内閣府の報告によると、1999年の地域振興券では消費の増加は支給額の32%程度、2009年の定額給付金ではアンケートで33%程度、家計調査を使った分析では受け取る前の月から2か月後までで25%程度と推計されています。[7] 服部さんらも、約10%という結果はコロナ以前の研究と変わらないと書いています。[6]"
+          ],
+          [
+            "h",
+            "誰が使ったのか"
+          ],
+          [
+            "p",
+            "どの研究でもはっきり出たのは、すぐに使えるお金の少ない家計ほど、給付金を多く使ったことです。マネーフォワードのデータでは、預金などの流動資産が月の労働所得より少ない家計（利用者の19%）が、とくに振り込まれた週に大きく反応しました。[2] みずほ銀行のデータでは、資金繰りに余裕のない家計は給付額の6割近くを使っていました。効いていたのは金融資産の総額ではなく普通預金の残高で、株や保険などは持っていても普通預金が少ない「裕福なその日暮らし（wealthy hand-to-mouth）」の家計も、多く使っていました。[4]"
+          ],
+          [
+            "p",
+            "所得との関係は、研究によって見え方が違います。内閣府の推計では、世帯の人数を考えに入れた所得（等価所得）で下位3分の1の世帯は給付額の32%程度を使い、中位と上位でははっきりした効果が出ませんでした。[7] マネーフォワードのデータでも、労働所得が最も低い4分の1の家計の反応が大きく出ています。[2] 一方、みずほ銀行のデータでは、所得の高さによる差はほとんどなく、差が出たのは、前の年より収入が半分以上減った家計（54%）でした。[4]"
+          ],
+          [
+            "p",
+            "年齢と世帯の形については、マネーフォワードのデータが手がかりになります。世帯主の年齢が高いほど反応が大きく、一人暮らしの反応は他の世帯より弱く、結婚している世帯は単身の世帯より大きく反応しました。子どもがいるかどうかは、あまり関係がありませんでした。[2] ただし、家計簿アプリの利用者は若い人と東京に住む人に偏っていて、女性が少なく（給付金が世帯主に払われたことも理由かもしれない、と著者は書いています）、高齢の世帯の姿はつかみにくいデータです。[2][7]"
+          ],
+          [
+            "h",
+            "使われなかったお金は、どこへ行ったのか"
+          ],
+          [
+            "p",
+            "人々に直接聞いた調査もあります。ニッセイ基礎研究所が2020年6月に20〜69歳の2,062人に使い道を聞いたところ（複数回答）、「生活費の補填」が53.7%で最も多く、「貯蓄」26.1%、「国内旅行」10.1%、「家電製品の購入」と「マスクなどの衛生用品の購入」が各9.7%、「外食」9.0%、「子どもの教育」7.0%と続きました。全額を貯蓄に回したと答えたのは9.7%です。ただ、この調査は金額を聞いていないので、金額で見ればもっと多くが貯蓄に残った可能性があると、調査した久我尚子さん自身が書いています。[8]"
+          ],
+          [
+            "p",
+            "なぜ残したのでしょうか。同じ調査では、貯蓄を選んだ人は、収入が減ることや仕事を失うことへの不安を持つ割合が全体より高めでした。久我さんは、外出の自粛で使い道がなかったというより、不安から意識して残した色合いが強いとみています。[9] 内閣府も、すぐに使われなかった分は、行動の制限もあって「超過貯蓄」としてたまったと考えられ、いずれ取り崩されて後の支出を支えると期待される、としています。[7]"
+          ],
+          [
+            "o",
+            "「貯金に回ったのだから無駄だった」と言い切るのは早すぎると思います。生活費の穴を埋めたのは、それ自体が使ったということです。先が見えないときに手元に残した10万円は、家計にとってお守りのようなものでした。景気を押し上げる効果と、暮らしを支える効果は、別のものさしで測る必要があります。内閣府の報告自身、この事業は必ずしも消費を喚起することを直接の目的としたものではなかった、と書いています。[7]"
+          ],
+          [
+            "h",
+            "1回きりの10万円と、ベーシックインカム"
+          ],
+          [
+            "p",
+            "ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義し、定期的、現金、個人、普遍的、無条件の5つの性質を挙げています。[10] {タイの1万バーツのエッセイ|/essays/thailand-digital-wallet/}でも使ったものさしです。10万円を、一つずつ当てはめてみます。"
+          ],
+          [
+            "p",
+            "普遍的か。ほぼ、はい。外国籍の人も含め、住民登録のある人全員が対象でした。"
+          ],
+          [
+            "p",
+            "無条件か。はい。所得の審査も、働く条件もありませんでした。"
+          ],
+          [
+            "p",
+            "現金か。はい。使い道は自由でした。"
+          ],
+          [
+            "p",
+            "定期的か。いいえ。1回きりです。"
+          ],
+          [
+            "p",
+            "個人単位か。厳密には、いいえ。世帯主が家族全員の分をまとめて申請し、お金は世帯主の口座に入りました。[1][4] 配偶者の暴力から避難している人には、申し出れば、住民票のある市区町村ではなく避難先の自治体から、自分と同伴する家族の分を受け取れる特別な扱いが設けられました。[11]"
+          ],
+          [
+            "o",
+            "5つのうち3つを満たし、2つを満たしていません。ベーシックインカムを考えるうえで大事なのは、満たしていない「定期的」のほうです。内閣府の報告も紹介しているように、経済学には、人は一時的な収入を長い人生にならして使うという考え方があります。[7] 一度きりの10万円なら、先の不安に備えて残しておくのは自然なことです。毎月必ず届くお金なら、それを前提に暮らしを組み立てられます。2020年のデータが測ったのは、パンデミックの最中に一度だけ届いたお金への反応であって、毎月届くお金とともに暮らすときの反応ではありません。"
+          ],
+          [
+            "o",
+            "だから、10万円の多くがすぐには使われなかったことは、ベーシックインカムも貯金されるだけだという証拠にはなりません。逆に、10万円で生活が助かった人がいたことも、ベーシックインカムがうまくいく証拠にはなりません。どちらも、別の問いへの答えです。"
+          ],
+          [
+            "p",
+            "一括払いには、一括払いの良さもあります。{ケニアの GiveDirectly の研究|/timeline/#tl-kenya}は、12年間毎月払うグループ、2年間毎月払うグループ、一度にまとめて払うグループを比べていて、2023年の初期結果では、多くの経済指標で一括払いのグループの効果が大きく出ました。"
+          ],
+          [
+            "p",
+            "くり返し払われている例も、このサイトの年表にあります。{アラスカ州の永久基金配当|/timeline/#tl-alaska}は1982年から毎年、{マーシャル諸島の Enra|/timeline/#tl-marshall-islands}は2025年11月から3か月ごとに約200ドルを払っています。{韓国の農村基本所得モデル事業|/timeline/#tl-korea-rural}は2026〜2027年、対象の郡に住む国民に月15万ウォンを地域商品券で払っています（BIENは、この形は自らの定義に当たらないとしています）。"
+          ],
+          [
+            "h",
+            "10万円1回と、月3万円"
+          ],
+          [
+            "p",
+            "お金の大きさも比べてみます。{ベーシックインカム計算機|/calc/?c=jp&w=all&m=30000}で、今の日本の人口（約1億2,281万人）の全員に月3万円を配ると、年に約44.2兆円、GDPの約6.7%になります。2020年に配った約12.7兆円は、その約3か月半分です。"
+          ],
+          [
+            "o",
+            "月3万円は、暮らしをまるごと支える額ではありません。それでも、年44兆円は、2020年に一度だけ配った額の3倍を超えます。2020年の10万円は、全員に配る仕組みを国がつくれることを示しました。ただ、それを毎月続けるには、どこからお金を出すのかという、まったく別の議論が必要になります。"
+          ],
+          [
+            "h",
+            "あの10万円が残したもの"
+          ],
+          [
+            "o",
+            "2020年の10万円は、日本に住むほぼ全員に、同じ額の現金を、条件をつけずに配った大きな経験でした。しかも、届く時期のばらつきのおかげで、何割が使われ、どんな家計が使ったのかが、データで分かるようになりました。手元のお金が少ない家計ほどすぐに使い、不安なときは人は残す。口座と住民の記録がつながっていないと、届くまでに時間がかかる。どれも、次に何かを配るときに役立つ教訓です。"
+          ],
+          [
+            "o",
+            "ただ、あれはベーシックインカムの実験ではありませんでした。1回きりで、世帯主の口座に、パンデミックの最中に届いたお金です。毎月必ず届くお金で人の働き方や暮らしがどう変わるのか、という問いには、10万円は答えていません。それを知るには、くり返し払われている例を見ていく必要があります。"
+          ],
+          [
+            "o",
+            "あの10万円を「無駄だった」とも「ベーシックインカムの予行演習だった」とも呼ばず、正確な名前で覚えておきたいと思います。全員への、1回きりの、非常時の給付金です。それだけでも、十分に大きな出来事でした。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "Between the spring and summer of 2020, almost everyone living in Japan received ¥100,000. It was called the Special Cash Payment (tokubetsu teigaku kyūfukin), and about ¥12.67 trillion was paid out in all. So what did people do with it? Some say it mostly ended up in savings accounts; others say it kept households afloat."
+          ],
+          [
+            "p",
+            "This question can, to a fair degree, be answered with data. We read the studies that used bank-account and budgeting-app records, along with the government’s own analysis, to see how much was spent, when, and by which households. Then we separate what this experience tells us about basic income from what it does not."
+          ],
+          [
+            "h",
+            "How the ¥100,000 was paid"
+          ],
+          [
+            "p",
+            "Everyone recorded in the Basic Resident Register on 27 April 2020 was eligible, foreign residents included, for ¥100,000 each. The person entitled to receive it was the head of the household the person belonged to. Heads of household either mailed back the form their municipality had sent them with their bank details, or applied online through Mynaportal, and the money was in principle paid into an account in the applicant’s own name. The programme was budgeted at ¥12,880.293 billion (¥12,734.414 billion in payments and ¥145.879 billion in administration), all of it paid by the national government.[1]"
+          ],
+          [
+            "p",
+            "The first plan was different. The government initially proposed ¥300,000 per household for households whose income had fallen sharply because of COVID-19; on 16 April 2020 it switched to ¥100,000 for every person.[2]"
+          ],
+          [
+            "p",
+            "Payments began in May. By 26 June about ¥9.12 trillion (71.6%) had been paid, and by 31 July about ¥12.32 trillion. The final total was about ¥12.67 trillion, 99.7% of the amount municipalities had planned to pay: nearly everyone eligible was reached.[3]"
+          ],
+          [
+            "p",
+            "When it arrived, though, depended a lot on where you lived. In Japan, bank accounts are not linked to resident records, so municipalities had to collect and check account numbers one by one.[2] Even within Tokyo, 85% of applicants in Nerima ward had been paid by 30 June, against 34.5% in Edogawa ward.[4]"
+          ],
+          [
+            "p",
+            "Those delays turned out to be a gift to researchers. If, in the same week, some households have already been paid and others have not, comparing them separates the effect of the payment itself from the spread of the virus and the stay-at-home requests. All the studies below use this “natural experiment.”[2][4]"
+          ],
+          [
+            "h",
+            "How much was spent?"
+          ],
+          [
+            "p",
+            "So Kubota, Koichiro Onishi and Yuta Toyama of Waseda University studied about 2.8 million accounts at Mizuho Bank. Spending jumped in the week the money arrived and stayed moderately higher for more than a month. Within six weeks, outflows from the accounts equalled 49% of the payment; counting only cash withdrawals, 31%. Because those outflows include transfers and direct debits, the authors present this as an upper bound on spending.[4]"
+          ],
+          [
+            "p",
+            "Michiru Kaneda, So Kubota and Satoshi Tanaka used data from 232,589 users of the budgeting app Money Forward ME. Within six weeks, 16% of the payment was spent under their baseline definition: 6% counted narrowly and 27% counted broadly.[2][5]"
+          ],
+          [
+            "p",
+            "Takahiro Hattori and colleagues used the city-level figures of the government’s Family Income and Expenditure Survey and estimated that about 10% was spent in the month the payment arrived. Spending on things bought at home and in shops rose; spending on face-to-face services did not.[6]"
+          ],
+          [
+            "p",
+            "In 2023 the Cabinet Office looked at data from another budgeting app, Moneytree, over 16 weeks from five weeks before to ten weeks after payment, and estimated that about 22% of the payment was spent. A check with the household survey’s individual records gave about 17% over roughly 16 weeks, broadly the same.[7]"
+          ],
+          [
+            "o",
+            "The numbers range from 6% to 49%. They depend on what counts as spending (whether withdrawn cash is assumed to be spent, whether transfers are included) and on how many weeks are measured. But they point the same way. In the weeks and months after the money arrived, studies that count spending narrowly found between a tenth and just under 30% spent, and even those that count every outflow found about half. The rest, at least, was not spent straight away."
+          ],
+          [
+            "p",
+            "This may not be a pandemic-only number. According to the Cabinet Office report, the 1999 regional promotion vouchers raised spending by about 32% of the amount given, and the 2009 fixed-sum benefit by about 33% in a survey, or about 25% from the month before receipt to two months after in an analysis of the household survey.[7] Hattori and colleagues also write that their roughly 10% is no different from estimates made before the pandemic.[6]"
+          ],
+          [
+            "h",
+            "Who spent it?"
+          ],
+          [
+            "p",
+            "The clearest finding, in every study, is that households with little money at hand spent more of the payment. In the Money Forward data, households whose liquid assets were smaller than their monthly earnings (19% of users) responded strongly, especially in the week of payment.[2] In the Mizuho data, households short of liquid funds spent nearly 60% of the payment. What mattered was not total financial assets but the balance in ordinary deposit accounts: “wealthy hand-to-mouth” households, with shares or insurance but little in their ordinary accounts, also spent a lot.[4]"
+          ],
+          [
+            "p",
+            "On income, the studies disagree. The Cabinet Office found that households in the bottom third by equivalised income (income adjusted for household size) spent about 32% of the payment, with no clear effect for the middle and top thirds.[7] The Money Forward data also show a larger response in the quarter of households with the lowest earnings.[2] The Mizuho data, by contrast, show almost no difference by income; the difference there was for households whose income had fallen by more than half from the year before (54%).[4]"
+          ],
+          [
+            "p",
+            "On age and household type, the Money Forward data give some clues. The older the household head, the bigger the response; people living alone responded less than other households, and married households more than single ones. Having children made little difference.[2] But budgeting-app users skew young and towards Tokyo, and include few women (partly, the authors suggest, because the payment went to household heads), so older households are hard to see in these data.[2][7]"
+          ],
+          [
+            "h",
+            "Where did the unspent money go?"
+          ],
+          [
+            "p",
+            "Some surveys simply asked people. In June 2020 the NLI Research Institute asked 2,062 people aged 20 to 69 what they used it for (more than one answer allowed). “Covering living costs” came first at 53.7%, followed by “savings” at 26.1%, “domestic travel” at 10.1%, “buying home appliances” and “buying masks and other hygiene products” at 9.7% each, “eating out” at 9.0% and “children’s education” at 7.0%. Only 9.7% said they saved all of it. The survey did not ask about amounts, however, and the researcher, Naoko Kuga, notes that measured in yen, more may have stayed in savings.[8]"
+          ],
+          [
+            "p",
+            "Why keep it? In the same survey, people who chose savings were more likely than average to worry about losing income or their job. Kuga reads this as saving on purpose out of anxiety rather than having nothing to spend on during the stay-at-home period.[9] The Cabinet Office likewise says the part not spent right away probably built up as “excess savings,” helped by the restrictions on going out, and is expected to be drawn down later to support spending.[7]"
+          ],
+          [
+            "o",
+            "It is too early to say the money was wasted because it was saved. Covering living costs is itself spending. And ¥100,000 kept aside when no one could see what was coming was a kind of safety net for a household. Lifting the economy and supporting people’s lives have to be measured with different yardsticks. The Cabinet Office report itself says the programme did not necessarily have stimulating consumption as its direct aim.[7]"
+          ],
+          [
+            "h",
+            "One-off ¥100,000 and basic income"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement,” and lists five characteristics: periodic, cash, individual, universal and unconditional.[10] It is the same yardstick we used in {the essay on Thailand’s 10,000 baht|/essays/thailand-digital-wallet/}. Let’s run the ¥100,000 through it one by one."
+          ],
+          [
+            "p",
+            "Universal? Nearly, yes. Everyone on the resident register was eligible, foreign residents included."
+          ],
+          [
+            "p",
+            "Unconditional? Yes. There was no means test and no work requirement."
+          ],
+          [
+            "p",
+            "Cash? Yes. It could be spent on anything."
+          ],
+          [
+            "p",
+            "Periodic? No. It was paid once."
+          ],
+          [
+            "p",
+            "Individual? Strictly speaking, no. The household head applied for the whole family, and the money went into the household head’s account.[1][4] People who had fled domestic violence could, if they came forward, receive their own share and that of family members with them from the municipality they had fled to rather than the one where they were registered.[11]"
+          ],
+          [
+            "o",
+            "Three out of five met, two not. And for thinking about basic income, the one that matters is “periodic.” As the Cabinet Office report also explains, one idea in economics is that people spread a temporary windfall over the rest of their lives.[7] With a one-off ¥100,000, putting it aside against an uncertain future is only natural. Money that is certain to arrive every month is something people can build their lives around. What the 2020 data measured was how people respond to money that arrives once, in the middle of a pandemic, not how they live with money that keeps arriving."
+          ],
+          [
+            "o",
+            "So the fact that much of the ¥100,000 was not spent right away is not evidence that a basic income would just be saved. Nor is the fact that the ¥100,000 helped many people get by evidence that a basic income would work. Both answer a different question."
+          ],
+          [
+            "p",
+            "A lump sum has its own strengths. {GiveDirectly’s study in Kenya|/timeline/#tl-kenya} compares a group paid monthly for 12 years, a group paid monthly for two years and a group paid in one lump sum, and early results in 2023 found the lump-sum group did better on many economic measures."
+          ],
+          [
+            "p",
+            "Our timeline also has schemes that pay again and again. The {Alaska Permanent Fund Dividend|/timeline/#tl-alaska} has paid every year since 1982, and the {Marshall Islands’ Enra|/timeline/#tl-marshall-islands} has paid about $200 every quarter since November 2025. {South Korea’s rural basic income pilot|/timeline/#tl-korea-rural} pays 150,000 won a month in local vouchers to citizens living in selected counties in 2026–2027 (BIEN says this form does not meet its definition)."
+          ],
+          [
+            "h",
+            "¥100,000 once, or ¥30,000 a month"
+          ],
+          [
+            "p",
+            "Compare the sizes, too. With {the basic income calculator|/calc/?c=jp&w=all&m=30000}, paying ¥30,000 a month to everyone in Japan’s current population (about 122.81 million) comes to about ¥44.2 trillion a year, about 6.7% of GDP. The roughly ¥12.7 trillion paid in 2020 is about three and a half months of that."
+          ],
+          [
+            "o",
+            "¥30,000 a month is not enough to live on. Even so, ¥44 trillion a year is more than three times what was paid out once in 2020. The ¥100,000 showed that the state can build a way to pay everyone. Doing it every month, though, needs an entirely different debate about where the money comes from."
+          ],
+          [
+            "h",
+            "What the ¥100,000 left behind"
+          ],
+          [
+            "o",
+            "The 2020 payment was a big experience: the same amount of cash, with no conditions, to almost everyone living in Japan. And thanks to the uneven timing, we now know from data how much was spent and which households spent it. Households with little money at hand spend quickly; people in anxious times hold on to money; when bank accounts and resident records are not linked, payments take time to arrive. All of these are lessons for the next time something is paid out."
+          ],
+          [
+            "o",
+            "But it was not a basic income experiment. It was money paid once, into the household head’s account, in the middle of a pandemic. It does not answer the question of how people’s work and lives change when money is certain to arrive every month. For that we need to keep looking at schemes that pay again and again."
+          ],
+          [
+            "o",
+            "We would rather not remember the ¥100,000 as “wasted,” or as “a rehearsal for basic income,” but by its proper name: a one-off emergency payment to everyone. That alone was a big enough event."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2020 年春夏之间，几乎所有住在日本的人都领到了 10 万日元。这笔钱叫作“特别定额给付金”，总共发放了约 12.67 万亿日元。那么，人们拿它做了什么？有人说大多进了储蓄账户，也有人说它撑住了家里的生活。"
+          ],
+          [
+            "p",
+            "这个问题在相当程度上可以用数据回答。我们读了利用银行账户和记账应用记录的研究，以及政府自己的分析，看看花掉了多少、在什么时候、由哪些家庭花掉。然后，我们把这段经历能告诉我们的关于基本收入的事，和它不能告诉我们的事分开来看。"
+          ],
+          [
+            "h",
+            "10 万日元是怎么发的"
+          ],
+          [
+            "p",
+            "2020 年 4 月 27 日登记在居民基本台账上的所有人都有资格领取，包括外国籍居民，每人 10 万日元。有权领取的是本人所属家庭的户主。户主要么在市区町村寄来的申请表上填好银行账户寄回，要么通过政府网站 Mynaportal 在线申请，钱原则上打入申请人本人名下的账户。项目预算为 12.880293 万亿日元（其中给付 12.734414 万亿日元，事务费 1,458.79 亿日元），全部由中央政府承担。[1]"
+          ],
+          [
+            "p",
+            "最初的方案并不是这样。政府起初提出，向因新冠收入大幅减少的家庭每户发放 30 万日元；2020 年 4 月 16 日，改为向每个人发放 10 万日元。[2]"
+          ],
+          [
+            "p",
+            "发放从 5 月开始。到 6 月 26 日已发放约 9.12 万亿日元（71.6%），到 7 月 31 日约 12.32 万亿日元。最终总额约 12.67 万亿日元，是市区町村计划发放金额的 99.7%：几乎所有符合资格的人都领到了。[3]"
+          ],
+          [
+            "p",
+            "不过，钱什么时候到，很大程度上取决于住在哪里。在日本，银行账户和居民记录没有关联，所以市区町村只能一个个收集、核对账号。[2] 即使在东京都内，练马区到 6 月 30 日已有 85% 的申请人领到钱，江户川区只有 34.5%。[4]"
+          ],
+          [
+            "p",
+            "这些延迟反而成了研究者的礼物。如果在同一周里，有的家庭已经领到、有的还没有，比较两者，就能把给付本身的效果，和疫情扩散、居家要求的影响分开。下面的研究都用了这种“自然实验”。[2][4]"
+          ],
+          [
+            "h",
+            "花掉了多少？"
+          ],
+          [
+            "p",
+            "早稻田大学的久保田荘、大西宏一郎和远山祐太研究了瑞穗银行约 280 万个账户。钱到账的那一周支出猛增，之后一个多月里都保持在略高的水平。六周内，从账户流出的钱相当于给付额的 49%；只算现金提取则是 31%。由于这些流出包括转账和自动扣款，作者把它作为消费的上限。[4]"
+          ],
+          [
+            "p",
+            "兼田充、久保田荘和田中聪史使用了记账应用 Money Forward ME 的 232,589 名用户的数据。六周内，按基准定义，给付额的 16% 被花掉：窄口径为 6%，宽口径为 27%。[2][5]"
+          ],
+          [
+            "p",
+            "服部孝洋等人使用政府家计调查中按城市汇总的数据，估计在给付到账的那个月花掉了约 10%。在家和在商店买东西的支出增加了，面对面服务的支出没有增加。[6]"
+          ],
+          [
+            "p",
+            "2023 年，内阁府查看了另一个记账应用 Moneytree 的数据，覆盖从发放前 5 周到发放后 10 周共 16 周，估计给付额的约 22% 被花掉。用家计调查的个人记录核对，约 16 周内约为 17%，结果大致相同。[7]"
+          ],
+          [
+            "o",
+            "数字从 6% 到 49% 不等。这取决于什么算作消费（是否假定提取的现金都花掉了，是否计入转账），以及看了多少周。但它们的方向一致。在钱到账后的几周到几个月里，窄口径计算消费的研究发现花掉了一成到不到三成，即使把所有流出都算进去的研究，也只有一半左右。其余的钱，至少没有马上花掉。"
+          ],
+          [
+            "p",
+            "这可能不只是疫情期间的数字。根据内阁府的报告，1999 年的地域振兴券使消费增加了发放额的约 32%；2009 年的定额给付金在问卷调查中约为 33%，在用家计调查做的分析中，从领取前一个月到领取后两个月约为 25%。[7] 服部等人也写道，他们约 10% 的结果与疫情前的估计没有差别。[6]"
+          ],
+          [
+            "h",
+            "谁花掉了？"
+          ],
+          [
+            "p",
+            "每项研究里最清楚的发现是：手头钱少的家庭，花掉的比例更高。在 Money Forward 的数据中，流动资产少于月收入的家庭（占用户的 19%）反应强烈，尤其是在到账的那一周。[2] 在瑞穗银行的数据中，资金紧张的家庭花掉了给付额的近 60%。起作用的不是金融资产总额，而是普通存款账户的余额：持有股票或保险、但普通账户里钱不多的“富裕的月光族”（wealthy hand-to-mouth）家庭，也花得很多。[4]"
+          ],
+          [
+            "p",
+            "至于收入，各项研究的结论不一致。内阁府发现，按等价收入（按家庭人数调整后的收入）排在最低三分之一的家庭，花掉了给付额的约 32%，中间和最高三分之一的家庭没有明显效果。[7] Money Forward 的数据也显示，收入最低的四分之一家庭反应更大。[2] 相比之下，瑞穗银行的数据几乎看不出收入高低的差别；那里的差别出现在收入比前一年减少一半以上的家庭（54%）。[4]"
+          ],
+          [
+            "p",
+            "关于年龄和家庭类型，Money Forward 的数据提供了一些线索。户主年龄越大，反应越大；独居的人反应弱于其他家庭，已婚家庭强于单身家庭。有没有孩子差别不大。[2] 但记账应用的用户偏年轻、偏东京，女性很少（作者认为部分原因是给付发给了户主），所以这些数据很难看清老年家庭的情况。[2][7]"
+          ],
+          [
+            "h",
+            "没花掉的钱去了哪里？"
+          ],
+          [
+            "p",
+            "也有调查直接问了人们。2020 年 6 月，日本生命基础研究所（NLI Research Institute）询问了 2,062 名 20 至 69 岁的人用这笔钱做了什么（可多选）。“补贴生活费”以 53.7% 居首，其次是“储蓄”26.1%、“国内旅行”10.1%、“购买家电”和“购买口罩等卫生用品”各 9.7%、“外出就餐”9.0%、“孩子的教育”7.0%。说全部存起来的只有 9.7%。不过，调查没有问金额，研究者久我尚子指出，按金额计算，留在储蓄里的可能更多。[8]"
+          ],
+          [
+            "p",
+            "为什么要留着？在同一项调查中，选择储蓄的人比平均水平更担心收入减少或失业。久我认为，这与其说是居家期间没地方花钱，不如说是出于不安而有意存起来。[9] 内阁府同样表示，没有马上花掉的部分，加上外出受限，可能积累成了“超额储蓄”，预计以后会被动用，支撑消费。[7]"
+          ],
+          [
+            "o",
+            "因为存起来了就说这笔钱浪费了，还为时过早。补贴生活费本身就是花钱。在谁也看不清前路的时候留在手边的 10 万日元，对一个家庭来说是一种安全网。拉动经济和支撑生活，需要用不同的尺子来衡量。内阁府的报告本身也说，这个项目不一定以刺激消费为直接目的。[7]"
+          ],
+          [
+            "h",
+            "一次性的 10 万日元与基本收入"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）把基本收入定义为“无需经济状况调查或工作要求，无条件地以个人为单位向所有人发放的定期现金”，并列出五个特征：定期、现金、个人、普遍、无条件。[10] 这和我们在{关于泰国 1 万泰铢的随笔|/essays/thailand-digital-wallet/}里用的是同一把尺子。我们把 10 万日元逐条对照一下。"
+          ],
+          [
+            "p",
+            "普遍吗？差不多，是的。居民登记上的所有人都有资格，包括外国籍居民。"
+          ],
+          [
+            "p",
+            "无条件吗？是的。没有经济状况调查，也没有工作要求。"
+          ],
+          [
+            "p",
+            "现金吗？是的。可以用在任何地方。"
+          ],
+          [
+            "p",
+            "定期吗？不是。只发了一次。"
+          ],
+          [
+            "p",
+            "以个人为单位吗？严格来说，不是。户主替全家申请，钱打进户主的账户。[1][4] 逃离家庭暴力的人如果提出申请，可以从避难地的市区町村领取自己以及同行家人的份额，而不是从住民登记所在地领取。[11]"
+          ],
+          [
+            "o",
+            "五条中满足三条，两条不满足。而思考基本收入时，关键的是“定期”这一条。正如内阁府的报告也介绍的，经济学里有一种观点：人们会把一笔临时的意外收入分摊到余生中使用。[7] 一次性的 10 万日元，为不确定的未来存起来再自然不过。每个月一定会到的钱，人们才能以它为前提安排生活。2020 年的数据测量的，是人们对疫情中只来一次的钱的反应，而不是人们如何与持续到来的钱一起生活。"
+          ],
+          [
+            "o",
+            "所以，10 万日元大多没有马上花掉，并不能证明基本收入只会被存起来。10 万日元帮许多人渡过了难关，也不能证明基本收入就会成功。两者回答的都是另一个问题。"
+          ],
+          [
+            "p",
+            "一次性发放也有自己的长处。{GiveDirectly 在肯尼亚的研究|/timeline/#tl-kenya}比较了连续 12 年每月领取的一组、连续两年每月领取的一组和一次性领取的一组，2023 年的初步结果发现，一次性领取的一组在许多经济指标上表现更好。"
+          ],
+          [
+            "p",
+            "本站年表里也有反复发放的例子。{阿拉斯加永久基金分红|/timeline/#tl-alaska}自 1982 年起每年发放，{马绍尔群岛的 Enra|/timeline/#tl-marshall-islands}自 2025 年 11 月起每季度发放约 200 美元。{韩国的农村基本收入试点|/timeline/#tl-korea-rural}在 2026–2027 年，以地方商品券形式每月向住在选定郡的国民发放 15 万韩元（BIEN 表示，这种形式不符合它的定义）。"
+          ],
+          [
+            "h",
+            "一次 10 万日元，还是每月 3 万日元"
+          ],
+          [
+            "p",
+            "也比一比规模。用{基本收入计算器|/calc/?c=jp&w=all&m=30000}算，向日本现有人口（约 1.2281 亿）中的每个人每月发放 3 万日元，一年约 44.2 万亿日元，约为 GDP 的 6.7%。2020 年发放的约 12.7 万亿日元，大约相当于其中三个半月。"
+          ],
+          [
+            "o",
+            "每月 3 万日元不够生活。即便如此，一年 44 万亿日元也是 2020 年一次性发放金额的三倍多。10 万日元表明，国家能够建立一套给每个人发钱的办法。但要每个月都这样做，就需要一场完全不同的讨论：钱从哪里来。"
+          ],
+          [
+            "h",
+            "10 万日元留下了什么"
+          ],
+          [
+            "o",
+            "2020 年的给付是一次重大的经历：向几乎所有住在日本的人发放同样数额的现金，不附任何条件。而且多亏到账时间参差不齐，我们现在能从数据中知道花掉了多少、哪些家庭花掉了。手头钱少的家庭花得快；在不安的时候，人们会留住钱；银行账户和居民记录不关联时，钱要很久才能到。这些都是下次发放时的教训。"
+          ],
+          [
+            "o",
+            "但它不是基本收入实验。它是在疫情中只发一次、打进户主账户的钱。它回答不了这样的问题：当每个月一定有钱到账时，人们的工作和生活会怎样改变。要回答这个问题，我们需要继续关注反复发放的制度。"
+          ],
+          [
+            "o",
+            "我们不想把这 10 万日元记成“浪费”，也不想记成“基本收入的预演”，而想用它本来的名字记住它：一次面向所有人的、一次性的紧急给付。光是这样，就已经是一件足够大的事。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "2020 के वसंत और गर्मियों के बीच जापान में रहने वाले लगभग हर व्यक्ति को 1,00,000 येन मिले। इसे विशेष नकद भुगतान (तोकुबेत्सु तेइगाकु क्यूफ़ुकिन) कहा गया, और कुल मिलाकर लगभग 12.67 ट्रिलियन येन बाँटे गए। तो लोगों ने इसका क्या किया? कुछ कहते हैं कि ज़्यादातर पैसा बचत खातों में चला गया; कुछ कहते हैं कि इसी ने घरों को सहारा दिया।"
+          ],
+          [
+            "p",
+            "इस सवाल का जवाब काफ़ी हद तक आँकड़ों से दिया जा सकता है। हमने वे अध्ययन पढ़े जिनमें बैंक खातों और बजट ऐप के रिकॉर्ड इस्तेमाल हुए, और साथ में सरकार का अपना विश्लेषण भी, ताकि देख सकें कि कितना ख़र्च हुआ, कब, और किन परिवारों ने किया। फिर हम अलग करते हैं कि यह अनुभव बेसिक इनकम के बारे में क्या बताता है और क्या नहीं।"
+          ],
+          [
+            "h",
+            "1,00,000 येन कैसे दिए गए"
+          ],
+          [
+            "p",
+            "27 अप्रैल 2020 को बुनियादी निवासी रजिस्टर में दर्ज हर व्यक्ति, विदेशी निवासियों समेत, 1,00,000 येन का हक़दार था। पाने का हक़ उस परिवार के मुखिया का था जिसका वह व्यक्ति सदस्य था। परिवार के मुखिया या तो नगरपालिका से भेजे गए फ़ॉर्म में अपने बैंक खाते का ब्योरा भरकर डाक से लौटाते थे, या सरकारी पोर्टल Mynaportal से ऑनलाइन आवेदन करते थे, और पैसा सिद्धांततः आवेदक के अपने नाम के खाते में जाता था। कार्यक्रम का बजट 12,880.293 अरब येन था (12,734.414 अरब येन भुगतान और 145.879 अरब येन प्रशासन), और पूरा ख़र्च राष्ट्रीय सरकार ने उठाया।[1]"
+          ],
+          [
+            "p",
+            "पहली योजना अलग थी। सरकार ने शुरू में उन परिवारों को प्रति परिवार 3,00,000 येन देने का प्रस्ताव रखा था जिनकी आमदनी COVID-19 की वजह से बहुत गिर गई थी; 16 अप्रैल 2020 को इसे बदलकर हर व्यक्ति को 1,00,000 येन कर दिया गया।[2]"
+          ],
+          [
+            "p",
+            "भुगतान मई में शुरू हुए। 26 जून तक लगभग 9.12 ट्रिलियन येन (71.6%) दिए जा चुके थे, और 31 जुलाई तक लगभग 12.32 ट्रिलियन येन। अंतिम कुल लगभग 12.67 ट्रिलियन येन था, यानी नगरपालिकाओं की तय रकम का 99.7%: लगभग हर पात्र व्यक्ति तक पैसा पहुँचा।[3]"
+          ],
+          [
+            "p",
+            "लेकिन पैसा कब पहुँचा, यह काफ़ी हद तक इस पर निर्भर था कि आप कहाँ रहते थे। जापान में बैंक खाते निवासी रिकॉर्ड से जुड़े नहीं हैं, इसलिए नगरपालिकाओं को खाता नंबर एक-एक करके जमा करने और जाँचने पड़े।[2] टोक्यो के भीतर भी, नेरिमा वार्ड में 30 जून तक 85% आवेदकों को पैसा मिल चुका था, जबकि एदोगावा वार्ड में 34.5% को।[4]"
+          ],
+          [
+            "p",
+            "ये देरी शोधकर्ताओं के लिए एक तोहफ़ा साबित हुई। अगर एक ही हफ़्ते में कुछ परिवारों को पैसा मिल चुका हो और कुछ को नहीं, तो उनकी तुलना से भुगतान का असर वायरस के फैलाव और घर पर रहने के अनुरोधों के असर से अलग किया जा सकता है। नीचे के सभी अध्ययन इसी “प्राकृतिक प्रयोग” का इस्तेमाल करते हैं।[2][4]"
+          ],
+          [
+            "h",
+            "कितना ख़र्च हुआ?"
+          ],
+          [
+            "p",
+            "वासेदा विश्वविद्यालय के सो कुबोता, कोइचिरो ओनिशी और युता तोयामा ने मिज़ुहो बैंक के लगभग 28 लाख खातों का अध्ययन किया। जिस हफ़्ते पैसा आया, उस हफ़्ते ख़र्च उछल गया और एक महीने से ज़्यादा समय तक थोड़ा ऊँचा बना रहा। छह हफ़्तों में खातों से निकली रकम भुगतान के 49% के बराबर थी; सिर्फ़ नकद निकासी गिनें तो 31%। क्योंकि इन निकासियों में ट्रांसफ़र और ऑटो-डेबिट भी शामिल हैं, लेखक इसे ख़र्च की ऊपरी सीमा के रूप में पेश करते हैं।[4]"
+          ],
+          [
+            "p",
+            "मिचिरु कानेदा, सो कुबोता और सातोशी तानाका ने बजट ऐप Money Forward ME के 2,32,589 उपयोगकर्ताओं के आँकड़े इस्तेमाल किए। छह हफ़्तों में, उनकी मूल परिभाषा के हिसाब से, भुगतान का 16% ख़र्च हुआ: संकरी गिनती में 6% और चौड़ी गिनती में 27%।[2][5]"
+          ],
+          [
+            "p",
+            "ताकाहिरो हात्तोरी और साथियों ने सरकार के पारिवारिक आय और व्यय सर्वेक्षण के शहर-स्तर के आँकड़े इस्तेमाल किए और अनुमान लगाया कि भुगतान वाले महीने में लगभग 10% ख़र्च हुआ। घर पर और दुकानों में ख़रीदी गई चीज़ों पर ख़र्च बढ़ा; आमने-सामने की सेवाओं पर ख़र्च नहीं बढ़ा।[6]"
+          ],
+          [
+            "p",
+            "2023 में कैबिनेट ऑफ़िस ने एक और बजट ऐप Moneytree के आँकड़े देखे, भुगतान से पाँच हफ़्ते पहले से दस हफ़्ते बाद तक कुल 16 हफ़्तों के, और अनुमान लगाया कि भुगतान का लगभग 22% ख़र्च हुआ। घरेलू सर्वेक्षण के व्यक्तिगत रिकॉर्ड से जाँचने पर लगभग 16 हफ़्तों में लगभग 17% निकला, मोटे तौर पर वही।[7]"
+          ],
+          [
+            "o",
+            "आँकड़े 6% से 49% तक फैले हैं। यह इस पर निर्भर है कि ख़र्च में क्या गिना जाए (क्या निकाली गई नकदी को ख़र्च मान लिया जाए, क्या ट्रांसफ़र शामिल हों) और कितने हफ़्ते नापे जाएँ। लेकिन सबकी दिशा एक है। पैसा आने के बाद के हफ़्तों और महीनों में, ख़र्च को संकरे तरीक़े से गिनने वाले अध्ययनों ने दसवें हिस्से से लेकर 30% से थोड़ा कम तक ख़र्च पाया, और हर निकासी गिनने वाले अध्ययनों ने भी लगभग आधा। बाक़ी पैसा, कम से कम, तुरंत ख़र्च नहीं हुआ।"
+          ],
+          [
+            "p",
+            "हो सकता है कि यह सिर्फ़ महामारी के समय का आँकड़ा न हो। कैबिनेट ऑफ़िस की रिपोर्ट के अनुसार, 1999 के क्षेत्रीय प्रोत्साहन वाउचरों ने ख़र्च को दी गई रकम के लगभग 32% तक बढ़ाया, और 2009 के निश्चित राशि लाभ ने एक सर्वेक्षण में लगभग 33%, या घरेलू सर्वेक्षण के विश्लेषण में पाने से पहले के महीने से दो महीने बाद तक लगभग 25%।[7] हात्तोरी और साथी भी लिखते हैं कि उनका लगभग 10% महामारी से पहले के अनुमानों से अलग नहीं है।[6]"
+          ],
+          [
+            "h",
+            "किसने ख़र्च किया?"
+          ],
+          [
+            "p",
+            "हर अध्ययन में सबसे साफ़ नतीजा यह है कि जिन परिवारों के पास हाथ में कम पैसा था, उन्होंने भुगतान का ज़्यादा हिस्सा ख़र्च किया। Money Forward के आँकड़ों में, जिन परिवारों की तरल संपत्ति उनकी मासिक कमाई से कम थी (19% उपयोगकर्ता), उन्होंने ज़ोरदार प्रतिक्रिया दी, ख़ासकर भुगतान वाले हफ़्ते में।[2] मिज़ुहो के आँकड़ों में, नकदी की तंगी वाले परिवारों ने भुगतान का लगभग 60% ख़र्च किया। मायने कुल वित्तीय संपत्ति के नहीं, बल्कि सामान्य बचत खाते के बैलेंस के थे: शेयर या बीमा रखने वाले लेकिन सामान्य खाते में कम पैसे वाले “अमीर हैंड-टू-माउथ” (wealthy hand-to-mouth) परिवारों ने भी ख़ूब ख़र्च किया।[4]"
+          ],
+          [
+            "p",
+            "आमदनी के मामले में अध्ययन एकमत नहीं हैं। कैबिनेट ऑफ़िस ने पाया कि समतुल्य आय (परिवार के आकार के हिसाब से समायोजित आय) में सबसे नीचे के एक-तिहाई परिवारों ने भुगतान का लगभग 32% ख़र्च किया, जबकि बीच और ऊपर के एक-तिहाई में कोई साफ़ असर नहीं दिखा।[7] Money Forward के आँकड़े भी सबसे कम कमाई वाले एक-चौथाई परिवारों में बड़ी प्रतिक्रिया दिखाते हैं।[2] इसके उलट, मिज़ुहो के आँकड़ों में आय के हिसाब से लगभग कोई फ़र्क़ नहीं दिखता; वहाँ फ़र्क़ उन परिवारों में था जिनकी आमदनी पिछले साल से आधी से ज़्यादा गिर गई थी (54%)।[4]"
+          ],
+          [
+            "p",
+            "उम्र और परिवार के प्रकार पर Money Forward के आँकड़े कुछ संकेत देते हैं। परिवार का मुखिया जितना उम्रदराज़, प्रतिक्रिया उतनी बड़ी; अकेले रहने वालों ने दूसरे परिवारों से कम प्रतिक्रिया दी, और विवाहित परिवारों ने अविवाहितों से ज़्यादा। बच्चों के होने से ज़्यादा फ़र्क़ नहीं पड़ा।[2] लेकिन बजट ऐप के उपयोगकर्ता ज़्यादातर युवा और टोक्यो की ओर झुके हैं, और उनमें महिलाएँ कम हैं (लेखकों का सुझाव है कि कुछ हद तक इसलिए कि भुगतान परिवार के मुखिया को गया), इसलिए इन आँकड़ों में बुज़ुर्ग परिवारों को देखना मुश्किल है।[2][7]"
+          ],
+          [
+            "h",
+            "जो पैसा ख़र्च नहीं हुआ, वह कहाँ गया?"
+          ],
+          [
+            "p",
+            "कुछ सर्वेक्षणों ने सीधे लोगों से पूछा। जून 2020 में NLI Research Institute (निप्पॉन लाइफ़ का शोध संस्थान) ने 20 से 69 साल के 2,062 लोगों से पूछा कि उन्होंने पैसा किस काम में लगाया (एक से ज़्यादा जवाब की छूट थी)। “रोज़मर्रा के ख़र्च पूरे करना” 53.7% के साथ सबसे ऊपर रहा, फिर “बचत” 26.1%, “देश के भीतर यात्रा” 10.1%, “घरेलू उपकरण ख़रीदना” और “मास्क और दूसरी स्वच्छता की चीज़ें ख़रीदना” 9.7% हर एक, “बाहर खाना” 9.0% और “बच्चों की पढ़ाई” 7.0%। सिर्फ़ 9.7% ने कहा कि उन्होंने पूरा पैसा बचा लिया। लेकिन सर्वेक्षण ने रकम के बारे में नहीं पूछा, और शोधकर्ता नाओको कुगा कहती हैं कि येन में नापें तो शायद ज़्यादा पैसा बचत में रहा हो।[8]"
+          ],
+          [
+            "p",
+            "पैसा रखा क्यों? उसी सर्वेक्षण में, बचत चुनने वालों में आय घटने या नौकरी जाने की चिंता औसत से ज़्यादा थी। कुगा इसे घर पर रहने के दौर में ख़र्च करने को कुछ न होने के बजाय, चिंता की वजह से जानबूझकर की गई बचत मानती हैं।[9] कैबिनेट ऑफ़िस भी कहता है कि जो हिस्सा तुरंत ख़र्च नहीं हुआ, वह बाहर जाने की पाबंदियों के साथ मिलकर शायद “अतिरिक्त बचत” के रूप में जमा हुआ, और उम्मीद है कि बाद में निकाला जाकर ख़र्च को सहारा देगा।[7]"
+          ],
+          [
+            "o",
+            "सिर्फ़ इसलिए कि पैसा बचा लिया गया, उसे बर्बाद कहना जल्दबाज़ी होगी। रोज़मर्रा के ख़र्च पूरे करना भी अपने आप में ख़र्च है। और जब किसी को आगे का कुछ नहीं दिख रहा था, तब अलग रखे गए 1,00,000 येन परिवार के लिए एक तरह का सुरक्षा जाल थे। अर्थव्यवस्था को उठाना और लोगों की ज़िंदगी को सहारा देना, दोनों को अलग-अलग पैमानों से नापना होगा। कैबिनेट ऑफ़िस की रिपोर्ट ख़ुद कहती है कि कार्यक्रम का सीधा मक़सद ज़रूरी नहीं कि ख़र्च बढ़ाना था।[7]"
+          ],
+          [
+            "h",
+            "एक बार के 1,00,000 येन और बेसिक इनकम"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को “एक नियमित नकद भुगतान, जो बिना आय-जाँच या काम की शर्त के, बिना शर्त सभी को व्यक्तिगत आधार पर दिया जाए” के रूप में परिभाषित करता है, और पाँच विशेषताएँ गिनाता है: नियमित, नकद, व्यक्तिगत, सार्वभौमिक और बिना शर्त।[10] यह वही पैमाना है जो हमने {थाईलैंड के 10,000 बाट वाले निबंध|/essays/thailand-digital-wallet/} में इस्तेमाल किया था। आइए 1,00,000 येन को एक-एक करके इस पर परखें।"
+          ],
+          [
+            "p",
+            "सार्वभौमिक? लगभग, हाँ। निवासी रजिस्टर में दर्ज हर व्यक्ति पात्र था, विदेशी निवासियों समेत।"
+          ],
+          [
+            "p",
+            "बिना शर्त? हाँ। न आय-जाँच थी, न काम की शर्त।"
+          ],
+          [
+            "p",
+            "नकद? हाँ। इसे किसी भी चीज़ पर ख़र्च किया जा सकता था।"
+          ],
+          [
+            "p",
+            "नियमित? नहीं। यह एक बार दिया गया।"
+          ],
+          [
+            "p",
+            "व्यक्तिगत? सख़्ती से देखें तो नहीं। परिवार के मुखिया ने पूरे परिवार के लिए आवेदन किया, और पैसा मुखिया के खाते में गया।[1][4] घरेलू हिंसा से भागे लोग, अगर सामने आते, तो अपना और साथ रह रहे परिवार के सदस्यों का हिस्सा उस नगरपालिका से ले सकते थे जहाँ वे भागकर गए थे, न कि वहाँ से जहाँ वे पंजीकृत थे।[11]"
+          ],
+          [
+            "o",
+            "पाँच में से तीन कसौटियाँ पूरी, दो नहीं। और बेसिक इनकम के बारे में सोचने के लिए जो मायने रखती है, वह है “नियमित”। जैसा कि कैबिनेट ऑफ़िस की रिपोर्ट भी समझाती है, अर्थशास्त्र में एक विचार है कि लोग अचानक मिली एक बार की रकम को बाक़ी ज़िंदगी पर फैला देते हैं।[7] एक बार के 1,00,000 येन को अनिश्चित भविष्य के लिए अलग रखना बिल्कुल स्वाभाविक है। जो पैसा हर महीने पक्के तौर पर आता है, उसके इर्द-गिर्द लोग अपनी ज़िंदगी बना सकते हैं। 2020 के आँकड़ों ने यह नापा कि महामारी के बीच एक बार आने वाले पैसे पर लोग कैसी प्रतिक्रिया देते हैं, यह नहीं कि लगातार आते रहने वाले पैसे के साथ वे कैसे जीते हैं।"
+          ],
+          [
+            "o",
+            "इसलिए यह बात कि 1,00,000 येन का बड़ा हिस्सा तुरंत ख़र्च नहीं हुआ, इसका सबूत नहीं है कि बेसिक इनकम बस बचा ली जाएगी। और यह बात कि 1,00,000 येन ने बहुत लोगों को गुज़ारा करने में मदद की, इसका सबूत भी नहीं है कि बेसिक इनकम कामयाब होगी। दोनों किसी और सवाल का जवाब हैं।"
+          ],
+          [
+            "p",
+            "एकमुश्त रकम की अपनी ख़ूबियाँ हैं। {केन्या में GiveDirectly का अध्ययन|/timeline/#tl-kenya} तीन समूहों की तुलना करता है: एक को 12 साल तक हर महीने, एक को दो साल तक हर महीने, और एक को एक ही बार में एकमुश्त भुगतान; 2023 के शुरुआती नतीजों में एकमुश्त वाले समूह ने कई आर्थिक पैमानों पर बेहतर किया।"
+          ],
+          [
+            "p",
+            "हमारी समयरेखा में ऐसी योजनाएँ भी हैं जो बार-बार भुगतान करती हैं। {अलास्का परमानेंट फ़ंड डिविडेंड|/timeline/#tl-alaska} 1982 से हर साल भुगतान करता है, और {मार्शल द्वीप का Enra|/timeline/#tl-marshall-islands} नवंबर 2025 से हर तिमाही लगभग $200 देता है। {दक्षिण कोरिया का ग्रामीण बेसिक इनकम पायलट|/timeline/#tl-korea-rural} 2026–2027 में चुनी गई काउंटियों में रहने वाले नागरिकों को स्थानीय वाउचर में हर महीने 1,50,000 वॉन देता है (BIEN कहता है कि यह रूप उसकी परिभाषा पर खरा नहीं उतरता)।"
+          ],
+          [
+            "h",
+            "एक बार 1,00,000 येन, या हर महीने 30,000 येन"
+          ],
+          [
+            "p",
+            "आकार की भी तुलना करें। {बेसिक इनकम कैलकुलेटर|/calc/?c=jp&w=all&m=30000} के हिसाब से, जापान की मौजूदा आबादी (लगभग 12.28 करोड़) में हर व्यक्ति को हर महीने 30,000 येन देने का ख़र्च साल में लगभग 44.2 ट्रिलियन येन आता है, यानी GDP का लगभग 6.7%। 2020 में दिए गए लगभग 12.7 ट्रिलियन येन उसके लगभग साढ़े तीन महीने के बराबर हैं।"
+          ],
+          [
+            "o",
+            "हर महीने 30,000 येन से गुज़ारा नहीं हो सकता। फिर भी, साल के 44 ट्रिलियन येन 2020 में एक बार दी गई रकम के तीन गुने से ज़्यादा हैं। 1,00,000 येन ने दिखाया कि सरकार सबको पैसा पहुँचाने का तरीक़ा बना सकती है। लेकिन इसे हर महीने करने के लिए एक बिल्कुल अलग बहस चाहिए: पैसा कहाँ से आएगा।"
+          ],
+          [
+            "h",
+            "1,00,000 येन क्या छोड़ गए"
+          ],
+          [
+            "o",
+            "2020 का भुगतान एक बड़ा अनुभव था: जापान में रहने वाले लगभग हर व्यक्ति को, बिना किसी शर्त के, एक जैसी नकद रकम। और भुगतान के असमान समय की बदौलत, अब हम आँकड़ों से जानते हैं कि कितना ख़र्च हुआ और किन परिवारों ने किया। जिन परिवारों के हाथ में कम पैसा होता है, वे जल्दी ख़र्च करते हैं; चिंता के समय लोग पैसा रोककर रखते हैं; जब बैंक खाते और निवासी रिकॉर्ड जुड़े न हों, तो भुगतान पहुँचने में समय लगता है। ये सब अगली बार कुछ बाँटने के लिए सबक़ हैं।"
+          ],
+          [
+            "o",
+            "लेकिन यह बेसिक इनकम का प्रयोग नहीं था। यह महामारी के बीच, परिवार के मुखिया के खाते में, एक बार दिया गया पैसा था। यह इस सवाल का जवाब नहीं देता कि जब हर महीने पैसा पक्के तौर पर आता है, तो लोगों का काम और ज़िंदगी कैसे बदलती है। उसके लिए हमें बार-बार भुगतान करने वाली योजनाओं को देखते रहना होगा।"
+          ],
+          [
+            "o",
+            "हम 1,00,000 येन को न “बर्बादी” के रूप में याद रखना चाहेंगे, न “बेसिक इनकम के पूर्वाभ्यास” के रूप में, बल्कि उसके सही नाम से: सबके लिए एक बार का आपातकालीन भुगतान। अपने आप में यही एक काफ़ी बड़ी घटना थी।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "Entre la primavera y el verano de 2020, casi todas las personas que vivían en Japón recibieron 100.000 yenes. Se llamó Pago Especial en Efectivo (tokubetsu teigaku kyūfukin), y en total se pagaron unos 12,67 billones de yenes. ¿Qué hizo la gente con ese dinero? Unos dicen que acabó sobre todo en cuentas de ahorro; otros, que ayudó a los hogares a mantenerse a flote."
+          ],
+          [
+            "p",
+            "Esta pregunta se puede responder, en buena medida, con datos. Leímos los estudios que usaron registros de cuentas bancarias y de apps de finanzas personales, junto con el propio análisis del gobierno, para ver cuánto se gastó, cuándo y en qué hogares. Después separamos lo que esta experiencia nos dice sobre la renta básica de lo que no nos dice."
+          ],
+          [
+            "h",
+            "Cómo se pagaron los 100.000 yenes"
+          ],
+          [
+            "p",
+            "Tenía derecho toda persona inscrita en el Registro Básico de Residentes el 27 de abril de 2020, incluidos los residentes extranjeros: 100.000 yenes por persona. Quien tenía derecho a cobrarlo era el cabeza de familia del hogar al que pertenecía cada persona. Los cabezas de familia devolvían por correo, con sus datos bancarios, el formulario que les había enviado su municipio, o lo solicitaban por internet a través de Mynaportal, y el dinero se ingresaba en principio en una cuenta a nombre del solicitante. El programa tenía un presupuesto de 12.880.293 millones de yenes (12.734.414 millones en pagos y 145.879 millones en gastos de gestión), todo a cargo del gobierno nacional.[1]"
+          ],
+          [
+            "p",
+            "El primer plan era otro. Al principio, el gobierno propuso 300.000 yenes por hogar para los hogares cuyos ingresos hubieran caído mucho por la COVID-19; el 16 de abril de 2020 cambió a 100.000 yenes para cada persona.[2]"
+          ],
+          [
+            "p",
+            "Los pagos empezaron en mayo. A 26 de junio se habían pagado unos 9,12 billones de yenes (el 71,6 %), y a 31 de julio, unos 12,32 billones. El total final fue de unos 12,67 billones de yenes, el 99,7 % de lo que los municipios tenían previsto pagar: el pago llegó a casi todas las personas con derecho a él.[3]"
+          ],
+          [
+            "p",
+            "Pero cuándo llegaba dependía mucho de dónde se viviera. En Japón, las cuentas bancarias no están vinculadas al registro de residentes, así que los municipios tuvieron que reunir y comprobar los números de cuenta uno a uno.[2] Incluso dentro de Tokio, a 30 de junio se había pagado al 85 % de los solicitantes del distrito de Nerima, frente al 34,5 % en el distrito de Edogawa.[4]"
+          ],
+          [
+            "p",
+            "Esos retrasos resultaron ser un regalo para los investigadores. Si en la misma semana unos hogares ya han cobrado y otros no, compararlos permite separar el efecto del propio pago del avance del virus y de las peticiones de quedarse en casa. Todos los estudios que siguen usan este «experimento natural».[2][4]"
+          ],
+          [
+            "h",
+            "¿Cuánto se gastó?"
+          ],
+          [
+            "p",
+            "So Kubota, Koichiro Onishi y Yuta Toyama, de la Universidad de Waseda, estudiaron unos 2,8 millones de cuentas del Mizuho Bank. El gasto dio un salto la semana en que llegó el dinero y se mantuvo algo más alto durante más de un mes. En seis semanas, las salidas de dinero de las cuentas equivalieron al 49 % del pago; contando solo las retiradas de efectivo, al 31 %. Como esas salidas incluyen transferencias y domiciliaciones, los autores presentan esta cifra como un límite superior del gasto.[4]"
+          ],
+          [
+            "p",
+            "Michiru Kaneda, So Kubota y Satoshi Tanaka usaron datos de 232.589 usuarios de la app de finanzas personales Money Forward ME. En seis semanas se gastó el 16 % del pago según su definición de referencia: el 6 % contando en sentido estricto y el 27 % en sentido amplio.[2][5]"
+          ],
+          [
+            "p",
+            "Takahiro Hattori y sus colegas usaron las cifras por ciudades de la Encuesta de Ingresos y Gastos Familiares del gobierno y estimaron que se gastó alrededor del 10 % en el mes en que llegó el pago. Subió el gasto en cosas que se compran desde casa y en tiendas; el gasto en servicios presenciales, no.[6]"
+          ],
+          [
+            "p",
+            "En 2023, la Oficina del Gabinete analizó datos de otra app de finanzas personales, Moneytree, durante 16 semanas, desde cinco semanas antes hasta diez semanas después del pago, y estimó que se gastó alrededor del 22 % del pago. Una comprobación con los registros individuales de la encuesta de hogares dio alrededor del 17 % en unas 16 semanas, más o menos lo mismo.[7]"
+          ],
+          [
+            "o",
+            "Las cifras van del 6 % al 49 %. Dependen de qué se cuenta como gasto (si se da por gastado el efectivo retirado, si se incluyen las transferencias) y de cuántas semanas se miden. Pero apuntan en la misma dirección. En las semanas y meses posteriores a la llegada del dinero, los estudios que cuentan el gasto en sentido estricto encontraron que se gastó entre una décima parte y algo menos del 30 %, e incluso los que cuentan todas las salidas encontraron alrededor de la mitad. El resto, al menos, no se gastó enseguida."
+          ],
+          [
+            "p",
+            "Puede que esta no sea una cifra exclusiva de la pandemia. Según el informe de la Oficina del Gabinete, los vales de promoción regional de 1999 aumentaron el gasto en alrededor del 32 % de la cantidad entregada, y la prestación de cuantía fija de 2009 en alrededor del 33 % según una encuesta, o alrededor del 25 % desde el mes anterior a recibirla hasta dos meses después según un análisis de la encuesta de hogares.[7] Hattori y sus colegas también escriben que su cifra de alrededor del 10 % no difiere de las estimaciones hechas antes de la pandemia.[6]"
+          ],
+          [
+            "h",
+            "¿Quién lo gastó?"
+          ],
+          [
+            "p",
+            "El resultado más claro, en todos los estudios, es que los hogares con poco dinero a mano gastaron una parte mayor del pago. En los datos de Money Forward, los hogares cuyos activos líquidos eran menores que sus ingresos mensuales (el 19 % de los usuarios) respondieron con fuerza, sobre todo en la semana del pago.[2] En los datos de Mizuho, los hogares con poca liquidez gastaron casi el 60 % del pago. Lo que contaba no era el total de activos financieros, sino el saldo de las cuentas de depósito ordinarias: los hogares «ricos que viven al día», con acciones o seguros pero poco en sus cuentas ordinarias, también gastaron mucho.[4]"
+          ],
+          [
+            "p",
+            "En cuanto a los ingresos, los estudios no coinciden. La Oficina del Gabinete encontró que los hogares del tercio inferior por ingreso equivalente (el ingreso ajustado al tamaño del hogar) gastaron alrededor del 32 % del pago, sin un efecto claro en los tercios medio y superior.[7] Los datos de Money Forward también muestran una respuesta mayor en la cuarta parte de los hogares con menos ingresos.[2] Los datos de Mizuho, en cambio, casi no muestran diferencias por ingresos; allí la diferencia estuvo en los hogares cuyos ingresos habían caído más de la mitad respecto al año anterior (54 %).[4]"
+          ],
+          [
+            "p",
+            "Sobre la edad y el tipo de hogar, los datos de Money Forward dan algunas pistas. Cuanto mayor era el cabeza de familia, mayor era la respuesta; las personas que vivían solas respondieron menos que otros hogares, y los hogares de personas casadas más que los de personas solteras. Tener hijos apenas cambiaba nada.[2] Pero los usuarios de apps de finanzas personales tienden a ser jóvenes y de Tokio, y entre ellos hay pocas mujeres (en parte, sugieren los autores, porque el pago iba al cabeza de familia), así que los hogares de más edad apenas se ven en estos datos.[2][7]"
+          ],
+          [
+            "h",
+            "¿Adónde fue el dinero que no se gastó?"
+          ],
+          [
+            "p",
+            "Algunas encuestas se lo preguntaron directamente a la gente. En junio de 2020, el NLI Research Institute preguntó a 2.062 personas de 20 a 69 años en qué lo habían usado (se permitía más de una respuesta). «Cubrir gastos de la vida diaria» quedó en primer lugar con el 53,7 %, seguido de «ahorro» con el 26,1 %, «viajes nacionales» con el 10,1 %, «comprar electrodomésticos» y «comprar mascarillas y otros productos de higiene» con el 9,7 % cada uno, «comer fuera» con el 9,0 % y «educación de los hijos» con el 7,0 %. Solo el 9,7 % dijo haberlo ahorrado todo. Sin embargo, la encuesta no preguntaba por cantidades, y la investigadora, Naoko Kuga, señala que, medido en yenes, puede que se quedara más en el ahorro.[8]"
+          ],
+          [
+            "p",
+            "¿Por qué guardarlo? En la misma encuesta, quienes eligieron el ahorro tendían más que la media a preocuparse por perder ingresos o el empleo. Kuga lo interpreta como un ahorro deliberado por inquietud, más que como no tener en qué gastar durante el periodo de quedarse en casa.[9] La Oficina del Gabinete también dice que la parte que no se gastó enseguida probablemente se acumuló como «exceso de ahorro», favorecido por las restricciones para salir, y que se espera que se vaya usando más adelante y sostenga el consumo.[7]"
+          ],
+          [
+            "o",
+            "Es demasiado pronto para decir que el dinero se desperdició porque se ahorró. Cubrir los gastos de la vida diaria ya es gastar. Y 100.000 yenes guardados cuando nadie sabía lo que venía fueron una especie de red de seguridad para el hogar. Reactivar la economía y sostener la vida de las personas son cosas que hay que medir con varas distintas. El propio informe de la Oficina del Gabinete dice que el programa no tenía necesariamente como objetivo directo estimular el consumo.[7]"
+          ],
+          [
+            "h",
+            "Un pago único de 100.000 yenes y la renta básica"
+          ],
+          [
+            "p",
+            "La Red Mundial de Renta Básica (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todos de forma individual, sin comprobación de recursos ni exigencia de trabajo», y enumera cinco características: periódica, en efectivo, individual, universal e incondicional.[10] Es la misma vara de medir que usamos en {el ensayo sobre los 10.000 bahts de Tailandia|/essays/thailand-digital-wallet/}. Pasemos los 100.000 yenes por ella punto por punto."
+          ],
+          [
+            "p",
+            "¿Universal? Casi, sí. Tenía derecho toda persona inscrita en el registro de residentes, incluidos los residentes extranjeros."
+          ],
+          [
+            "p",
+            "¿Incondicional? Sí. No hubo comprobación de recursos ni exigencia de trabajo."
+          ],
+          [
+            "p",
+            "¿En efectivo? Sí. Se podía gastar en cualquier cosa."
+          ],
+          [
+            "p",
+            "¿Periódica? No. Se pagó una sola vez."
+          ],
+          [
+            "p",
+            "¿Individual? En sentido estricto, no. El cabeza de familia lo solicitaba por toda la familia, y el dinero iba a la cuenta del cabeza de familia.[1][4] Las personas que habían huido de la violencia doméstica podían, si lo comunicaban, recibir su parte y la de los familiares que estaban con ellas del municipio al que habían huido, en lugar del de su registro.[11]"
+          ],
+          [
+            "o",
+            "Se cumplen tres de cinco y fallan dos. Y para pensar en la renta básica, la que importa es «periódica». Como también explica el informe de la Oficina del Gabinete, una idea de la economía es que las personas reparten un ingreso extra temporal a lo largo del resto de su vida.[7] Con un pago único de 100.000 yenes, guardarlo ante un futuro incierto es lo más natural. Un dinero que llega con seguridad cada mes es algo sobre lo que se puede construir la vida. Lo que midieron los datos de 2020 fue cómo responde la gente a un dinero que llega una vez, en plena pandemia, no cómo vive con un dinero que sigue llegando."
+          ],
+          [
+            "o",
+            "Así que el hecho de que buena parte de los 100.000 yenes no se gastara enseguida no demuestra que una renta básica se fuera a ahorrar sin más. Y el hecho de que los 100.000 yenes ayudaran a mucha gente a salir adelante tampoco demuestra que una renta básica vaya a funcionar. Las dos cosas responden a otra pregunta."
+          ],
+          [
+            "p",
+            "Un pago único tiene sus propias ventajas. {El estudio de GiveDirectly en Kenia|/timeline/#tl-kenya} compara un grupo que cobra cada mes durante 12 años, un grupo que cobra cada mes durante dos años y un grupo que cobra una sola suma, y los primeros resultados, de 2023, mostraron que al grupo de la suma única le iba mejor en muchos indicadores económicos."
+          ],
+          [
+            "p",
+            "Nuestra cronología también recoge programas que pagan una y otra vez. El {Dividendo del Fondo Permanente de Alaska|/timeline/#tl-alaska} paga cada año desde 1982, y {Enra, de las Islas Marshall|/timeline/#tl-marshall-islands}, paga unos 200 $ cada trimestre desde noviembre de 2025. {El piloto de renta básica rural de Corea del Sur|/timeline/#tl-korea-rural} paga 150.000 wones al mes en vales de comercio local a los ciudadanos que viven en los condados seleccionados en 2026–2027 (BIEN dice que esta forma no cumple su definición)."
+          ],
+          [
+            "h",
+            "100.000 yenes una vez, o 30.000 yenes al mes"
+          ],
+          [
+            "p",
+            "Comparemos también los tamaños. Con {la calculadora de renta básica|/calc/?c=jp&w=all&m=30000}, pagar 30.000 yenes al mes a todas las personas de la población actual de Japón (unos 122,81 millones) supone unos 44,2 billones de yenes al año, alrededor del 6,7 % del PIB. Los cerca de 12,7 billones de yenes pagados en 2020 equivalen a unos tres meses y medio de eso."
+          ],
+          [
+            "o",
+            "30.000 yenes al mes no dan para vivir. Aun así, 44 billones de yenes al año son más del triple de lo que se pagó una sola vez en 2020. Los 100.000 yenes demostraron que el Estado puede montar una forma de pagar a todo el mundo. Hacerlo cada mes, en cambio, exige un debate completamente distinto sobre de dónde sale el dinero."
+          ],
+          [
+            "h",
+            "Lo que dejaron los 100.000 yenes"
+          ],
+          [
+            "o",
+            "El pago de 2020 fue una gran experiencia: la misma cantidad de efectivo, sin condiciones, para casi todas las personas que vivían en Japón. Y gracias a que no llegó a todos a la vez, ahora sabemos por los datos cuánto se gastó y qué hogares lo gastaron. Los hogares con poco dinero a mano gastan rápido; en tiempos de inquietud, la gente se aferra al dinero; cuando las cuentas bancarias y el registro de residentes no están vinculados, los pagos tardan en llegar. Todo esto son lecciones para la próxima vez que se pague algo."
+          ],
+          [
+            "o",
+            "Pero no fue un experimento de renta básica. Fue un dinero pagado una vez, en la cuenta del cabeza de familia, en plena pandemia. No responde a la pregunta de cómo cambian el trabajo y la vida de las personas cuando el dinero llega con seguridad cada mes. Para eso hay que seguir mirando los programas que pagan una y otra vez."
+          ],
+          [
+            "o",
+            "Preferimos no recordar los 100.000 yenes como «dinero desperdiciado», ni como «un ensayo general de la renta básica», sino por su nombre: un pago de emergencia único para todos. Eso solo ya fue un acontecimiento bastante grande."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Zwischen Frühjahr und Sommer 2020 bekam fast jeder, der in Japan lebte, 100.000 Yen. Das Programm hieß Sonderzahlung (tokubetsu teigaku kyūfukin), und insgesamt wurden rund 12,67 Billionen Yen ausgezahlt. Was haben die Menschen damit gemacht? Die einen sagen, das Geld sei vor allem auf Sparkonten gelandet; die anderen, es habe Haushalte über Wasser gehalten."
+          ],
+          [
+            "p",
+            "Diese Frage lässt sich zu einem guten Teil mit Daten beantworten. Wir haben die Studien gelesen, die Bankkonto- und Haushaltsbuch-App-Daten ausgewertet haben, dazu die Analyse der Regierung selbst, um zu sehen, wie viel ausgegeben wurde, wann und von welchen Haushalten. Dann trennen wir, was diese Erfahrung über das Grundeinkommen sagt und was nicht."
+          ],
+          [
+            "h",
+            "Wie die 100.000 Yen gezahlt wurden"
+          ],
+          [
+            "p",
+            "Anspruch hatte jeder, der am 27. April 2020 im Melderegister (Basic Resident Register) eingetragen war, ausländische Einwohner eingeschlossen: 100.000 Yen pro Person. Empfangsberechtigt war das Haushaltsoberhaupt des Haushalts, zu dem die Person gehörte. Die Haushaltsoberhäupter schickten entweder das Formular, das ihnen ihre Gemeinde zugesandt hatte, mit ihren Kontodaten zurück oder beantragten online über Mynaportal, und das Geld ging grundsätzlich auf ein Konto auf den Namen des Antragstellers. Das Programm war mit 12.880,293 Milliarden Yen veranschlagt (12.734,414 Milliarden für die Zahlungen und 145,879 Milliarden für die Verwaltung), vollständig vom Staat getragen.[1]"
+          ],
+          [
+            "p",
+            "Der erste Plan sah anders aus. Zunächst schlug die Regierung 300.000 Yen pro Haushalt für Haushalte vor, deren Einkommen wegen COVID-19 stark gesunken war; am 16. April 2020 schwenkte sie auf 100.000 Yen für jede Person um.[2]"
+          ],
+          [
+            "p",
+            "Die Auszahlungen begannen im Mai. Bis zum 26. Juni waren rund 9,12 Billionen Yen (71,6 %) ausgezahlt, bis zum 31. Juli rund 12,32 Billionen. Am Ende waren es rund 12,67 Billionen Yen, 99,7 % dessen, was die Gemeinden auszuzahlen geplant hatten: Fast alle Berechtigten wurden erreicht.[3]"
+          ],
+          [
+            "p",
+            "Wann das Geld ankam, hing aber stark vom Wohnort ab. In Japan sind Bankkonten nicht mit dem Melderegister verknüpft, also mussten die Gemeinden die Kontonummern einzeln einsammeln und prüfen.[2] Selbst innerhalb Tokios hatten im Bezirk Nerima bis zum 30. Juni 85 % der Antragsteller ihr Geld, im Bezirk Edogawa 34,5 %.[4]"
+          ],
+          [
+            "p",
+            "Diese Verzögerungen erwiesen sich als Geschenk für die Forschung. Wenn in derselben Woche manche Haushalte schon bezahlt sind und andere noch nicht, lässt sich durch den Vergleich die Wirkung der Zahlung selbst von der Ausbreitung des Virus und den Aufrufen, zu Hause zu bleiben, trennen. Alle folgenden Studien nutzen dieses „natürliche Experiment“.[2][4]"
+          ],
+          [
+            "h",
+            "Wie viel wurde ausgegeben?"
+          ],
+          [
+            "p",
+            "So Kubota, Koichiro Onishi und Yuta Toyama von der Waseda-Universität untersuchten rund 2,8 Millionen Konten bei der Mizuho Bank. Die Ausgaben sprangen in der Woche, in der das Geld ankam, nach oben und blieben mehr als einen Monat lang etwas höher. Innerhalb von sechs Wochen entsprachen die Abflüsse von den Konten 49 % der Zahlung; zählt man nur Barabhebungen, 31 %. Weil diese Abflüsse Überweisungen und Lastschriften enthalten, stellen die Autoren den Wert als Obergrenze der Ausgaben dar.[4]"
+          ],
+          [
+            "p",
+            "Michiru Kaneda, So Kubota und Satoshi Tanaka nutzten Daten von 232.589 Nutzern der Haushaltsbuch-App Money Forward ME. Innerhalb von sechs Wochen wurden nach ihrer Basisdefinition 16 % der Zahlung ausgegeben: 6 % eng gezählt und 27 % weit gezählt.[2][5]"
+          ],
+          [
+            "p",
+            "Takahiro Hattori und Kollegen nutzten die städtischen Zahlen der staatlichen Einkommens- und Verbrauchsstichprobe (Family Income and Expenditure Survey) und schätzten, dass im Monat der Auszahlung rund 10 % ausgegeben wurden. Die Ausgaben für Dinge, die man von zu Hause aus oder in Läden kauft, stiegen; die für persönliche Dienstleistungen nicht.[6]"
+          ],
+          [
+            "p",
+            "2023 wertete das Kabinettsbüro Daten einer anderen Haushaltsbuch-App, Moneytree, über 16 Wochen aus, von fünf Wochen vor bis zehn Wochen nach der Auszahlung, und schätzte, dass rund 22 % der Zahlung ausgegeben wurden. Eine Gegenprobe mit den Einzeldaten der Haushaltsbefragung ergab rund 17 % über etwa 16 Wochen, also ungefähr dasselbe.[7]"
+          ],
+          [
+            "o",
+            "Die Zahlen reichen von 6 % bis 49 %. Sie hängen davon ab, was als Ausgabe zählt (ob abgehobenes Bargeld als ausgegeben gilt, ob Überweisungen mitgezählt werden) und wie viele Wochen gemessen werden. Aber sie zeigen in dieselbe Richtung. In den Wochen und Monaten nach dem Eingang des Geldes fanden Studien, die Ausgaben eng zählen, zwischen einem Zehntel und knapp 30 % ausgegeben, und selbst die, die jeden Abfluss zählen, rund die Hälfte. Der Rest wurde zumindest nicht sofort ausgegeben."
+          ],
+          [
+            "p",
+            "Das ist womöglich keine reine Pandemiezahl. Laut dem Bericht des Kabinettsbüros erhöhten die regionalen Förder-Gutscheine von 1999 die Ausgaben um rund 32 % des ausgegebenen Betrags und die Pauschalzahlung von 2009 um rund 33 % laut einer Umfrage, oder um rund 25 % vom Monat vor dem Erhalt bis zwei Monate danach laut einer Auswertung der Haushaltsbefragung.[7] Auch Hattori und Kollegen schreiben, ihre rund 10 % unterschieden sich nicht von Schätzungen aus der Zeit vor der Pandemie.[6]"
+          ],
+          [
+            "h",
+            "Wer hat es ausgegeben?"
+          ],
+          [
+            "p",
+            "Das klarste Ergebnis aller Studien: Haushalte mit wenig verfügbarem Geld gaben einen größeren Teil der Zahlung aus. In den Money-Forward-Daten reagierten Haushalte, deren liquides Vermögen kleiner war als ihr Monatseinkommen (19 % der Nutzer), stark, vor allem in der Woche der Auszahlung.[2] In den Mizuho-Daten gaben Haushalte mit wenig liquiden Mitteln fast 60 % der Zahlung aus. Entscheidend war nicht das gesamte Geldvermögen, sondern das Guthaben auf den gewöhnlichen Girokonten: Auch „wohlhabende Von-der-Hand-in-den-Mund“-Haushalte, mit Aktien oder Versicherungen, aber wenig auf den gewöhnlichen Konten, gaben viel aus.[4]"
+          ],
+          [
+            "p",
+            "Beim Einkommen sind sich die Studien nicht einig. Das Kabinettsbüro fand, dass Haushalte im untersten Drittel nach Äquivalenzeinkommen (dem an die Haushaltsgröße angepassten Einkommen) rund 32 % der Zahlung ausgaben, ohne klaren Effekt im mittleren und oberen Drittel.[7] Auch die Money-Forward-Daten zeigen eine stärkere Reaktion im Viertel der Haushalte mit den niedrigsten Einkommen.[2] Die Mizuho-Daten dagegen zeigen kaum Unterschiede nach Einkommen; der Unterschied lag dort bei Haushalten, deren Einkommen gegenüber dem Vorjahr um mehr als die Hälfte gesunken war (54 %).[4]"
+          ],
+          [
+            "p",
+            "Zu Alter und Haushaltsform geben die Money-Forward-Daten einige Hinweise. Je älter das Haushaltsoberhaupt, desto stärker die Reaktion; Alleinlebende reagierten schwächer als andere Haushalte, Verheiratete stärker als Alleinstehende. Kinder machten kaum einen Unterschied.[2] Nutzer von Haushaltsbuch-Apps sind aber eher jung und eher in Tokio, und unter ihnen sind wenige Frauen (teils, so vermuten die Autoren, weil die Zahlung an das Haushaltsoberhaupt ging), sodass ältere Haushalte in diesen Daten schwer zu erkennen sind.[2][7]"
+          ],
+          [
+            "h",
+            "Wohin ging das nicht ausgegebene Geld?"
+          ],
+          [
+            "p",
+            "Manche Umfragen haben die Menschen einfach gefragt. Im Juni 2020 fragte das NLI Research Institute 2.062 Menschen zwischen 20 und 69 Jahren, wofür sie das Geld verwendet hatten (Mehrfachnennungen möglich). „Lebenshaltungskosten decken“ lag mit 53,7 % vorn, gefolgt von „Sparen“ mit 26,1 %, „Reisen im Inland“ mit 10,1 %, „Haushaltsgeräte kaufen“ und „Masken und andere Hygieneartikel kaufen“ mit je 9,7 %, „Essen gehen“ mit 9,0 % und „Bildung der Kinder“ mit 7,0 %. Nur 9,7 % sagten, sie hätten alles gespart. Nach Beträgen fragte die Umfrage allerdings nicht, und die Forscherin Naoko Kuga merkt an, dass in Yen gemessen mehr im Ersparten geblieben sein könnte.[8]"
+          ],
+          [
+            "p",
+            "Warum behalten? In derselben Umfrage machten sich Menschen, die Sparen angaben, häufiger als der Durchschnitt Sorgen, Einkommen oder Arbeitsplatz zu verlieren. Kuga deutet das als bewusstes Sparen aus Sorge, nicht als Mangel an Gelegenheiten zum Ausgeben während der Zeit zu Hause.[9] Auch das Kabinettsbüro schreibt, der nicht sofort ausgegebene Teil habe sich, begünstigt durch die Ausgangsbeschränkungen, wahrscheinlich als „Überschussersparnis“ angesammelt und werde voraussichtlich später abgebaut und den Konsum stützen.[7]"
+          ],
+          [
+            "o",
+            "Es ist zu früh, das Geld als verschwendet abzutun, weil es gespart wurde. Lebenshaltungskosten zu decken ist selbst schon Ausgeben. Und 100.000 Yen auf der hohen Kante, als niemand wusste, was kommt, waren für einen Haushalt eine Art Sicherheitsnetz. Die Wirtschaft anzukurbeln und das Leben der Menschen zu stützen, muss man mit verschiedenen Maßstäben messen. Der Bericht des Kabinettsbüros selbst sagt, das Programm habe nicht unbedingt die Ankurbelung des Konsums als direktes Ziel gehabt.[7]"
+          ],
+          [
+            "h",
+            "Einmalige 100.000 Yen und das Grundeinkommen"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitspflicht“, und nennt fünf Merkmale: regelmäßig, Geld, individuell, universell und bedingungslos.[10] Es ist derselbe Maßstab wie im {Essay über Thailands 10.000 Baht|/essays/thailand-digital-wallet/}. Prüfen wir die 100.000 Yen Punkt für Punkt."
+          ],
+          [
+            "p",
+            "Universell? Fast, ja. Anspruch hatte jeder im Melderegister, ausländische Einwohner eingeschlossen."
+          ],
+          [
+            "p",
+            "Bedingungslos? Ja. Es gab keine Bedürftigkeitsprüfung und keine Arbeitspflicht."
+          ],
+          [
+            "p",
+            "Geld? Ja. Es ließ sich für alles ausgeben."
+          ],
+          [
+            "p",
+            "Regelmäßig? Nein. Es wurde einmal gezahlt."
+          ],
+          [
+            "p",
+            "Individuell? Streng genommen nein. Das Haushaltsoberhaupt beantragte für die ganze Familie, und das Geld ging auf das Konto des Haushaltsoberhaupts.[1][4] Wer vor häuslicher Gewalt geflohen war, konnte, wenn er sich meldete, seinen eigenen Anteil und den der mitgekommenen Familienmitglieder von der Gemeinde erhalten, in die er geflohen war, statt von der, in der er gemeldet war.[11]"
+          ],
+          [
+            "o",
+            "Drei von fünf erfüllt, zwei nicht. Und wenn man über das Grundeinkommen nachdenkt, kommt es auf „regelmäßig“ an. Wie auch der Bericht des Kabinettsbüros erklärt, gibt es in der Ökonomie die Vorstellung, dass Menschen einen vorübergehenden Geldsegen auf ihr restliches Leben verteilen.[7] Bei einmaligen 100.000 Yen ist es nur natürlich, sie für eine ungewisse Zukunft zurückzulegen. Geld, das sicher jeden Monat kommt, ist etwas, worauf Menschen ihr Leben aufbauen können. Gemessen haben die Daten von 2020, wie Menschen auf Geld reagieren, das einmal kommt, mitten in einer Pandemie, nicht, wie sie mit Geld leben, das immer wieder kommt."
+          ],
+          [
+            "o",
+            "Dass ein großer Teil der 100.000 Yen nicht sofort ausgegeben wurde, ist also kein Beleg dafür, dass ein Grundeinkommen einfach gespart würde. Und dass die 100.000 Yen vielen Menschen über die Runden halfen, ist auch kein Beleg dafür, dass ein Grundeinkommen funktionieren würde. Beides beantwortet eine andere Frage."
+          ],
+          [
+            "p",
+            "Eine Einmalzahlung hat ihre eigenen Stärken. {Die Studie von GiveDirectly in Kenia|/timeline/#tl-kenya} vergleicht eine Gruppe, die 12 Jahre lang monatlich Geld bekommt, eine Gruppe, die zwei Jahre lang monatlich Geld bekommt, und eine Gruppe, die eine einmalige Summe bekommt, und erste Ergebnisse von 2023 zeigten, dass die Gruppe mit der einmaligen Summe bei vielen wirtschaftlichen Kennzahlen besser abschnitt."
+          ],
+          [
+            "p",
+            "Unsere Zeitleiste enthält auch Programme, die immer wieder zahlen. Die {Alaska Permanent Fund Dividend|/timeline/#tl-alaska} zahlt seit 1982 jedes Jahr, und {Enra auf den Marshallinseln|/timeline/#tl-marshall-islands} zahlt seit November 2025 rund 200 $ pro Quartal. {Südkoreas Pilotprojekt für ein ländliches Grundeinkommen|/timeline/#tl-korea-rural} zahlt 2026–2027 Staatsbürgern, die in ausgewählten Landkreisen leben, 150.000 Won im Monat in lokalen Gutscheinen (laut BIEN erfüllt diese Form seine Definition nicht)."
+          ],
+          [
+            "h",
+            "100.000 Yen einmal oder 30.000 Yen im Monat"
+          ],
+          [
+            "p",
+            "Vergleichen wir auch die Größenordnungen. Mit {dem Grundeinkommensrechner|/calc/?c=jp&w=all&m=30000} kommt man, wenn alle Menschen in Japans heutiger Bevölkerung (rund 122,81 Millionen) 30.000 Yen im Monat bekommen, auf rund 44,2 Billionen Yen im Jahr, etwa 6,7 % des BIP. Die rund 12,7 Billionen Yen von 2020 entsprechen davon etwa dreieinhalb Monaten."
+          ],
+          [
+            "o",
+            "30.000 Yen im Monat reichen nicht zum Leben. Trotzdem sind 44 Billionen Yen im Jahr mehr als das Dreifache dessen, was 2020 einmal ausgezahlt wurde. Die 100.000 Yen haben gezeigt, dass der Staat einen Weg schaffen kann, allen Geld zu zahlen. Das jeden Monat zu tun, verlangt aber eine ganz andere Debatte darüber, woher das Geld kommt."
+          ],
+          [
+            "h",
+            "Was die 100.000 Yen hinterlassen haben"
+          ],
+          [
+            "o",
+            "Die Zahlung von 2020 war eine große Erfahrung: derselbe Betrag in bar, ohne Bedingungen, für fast alle, die in Japan lebten. Und dank der ungleichen Auszahlungszeitpunkte wissen wir jetzt aus Daten, wie viel ausgegeben wurde und welche Haushalte es ausgaben. Haushalte mit wenig verfügbarem Geld geben schnell aus; in unsicheren Zeiten halten Menschen ihr Geld fest; wenn Bankkonten und Melderegister nicht verknüpft sind, dauert es, bis Zahlungen ankommen. All das sind Lehren für das nächste Mal, wenn etwas ausgezahlt wird."
+          ],
+          [
+            "o",
+            "Ein Grundeinkommensexperiment war es aber nicht. Es war Geld, das einmal gezahlt wurde, auf das Konto des Haushaltsoberhaupts, mitten in einer Pandemie. Es beantwortet nicht die Frage, wie sich Arbeit und Leben der Menschen verändern, wenn sicher jeden Monat Geld kommt. Dafür müssen wir weiter auf Programme schauen, die immer wieder zahlen."
+          ],
+          [
+            "o",
+            "Wir möchten die 100.000 Yen lieber weder als „verschwendet“ noch als „Generalprobe für das Grundeinkommen“ in Erinnerung behalten, sondern unter ihrem richtigen Namen: eine einmalige Notzahlung an alle. Schon das war ein großes Ereignis."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "بين ربيع 2020 وصيفه، حصل كل من يعيش في اليابان تقريبًا على 100,000 ين. سُمّيت الدفعة النقدية الخاصة (⁦tokubetsu teigaku kyūfukin⁩)، وصُرف منها نحو 12.67 تريليون ين إجمالًا. فماذا فعل الناس بها؟ يقول بعضهم إن معظمها انتهى في حسابات الادخار، ويقول آخرون إنها أبقت الأسر صامدة."
+          ],
+          [
+            "p",
+            "يمكن الإجابة عن هذا السؤال بالبيانات إلى حد معقول. قرأنا الدراسات التي استخدمت سجلات الحسابات المصرفية وتطبيقات الميزانية المنزلية، إلى جانب تحليل الحكومة نفسها، لنرى كم أُنفق، ومتى، وفي أي الأسر. ثم نفصل ما تخبرنا به هذه التجربة عن الدخل الأساسي عمّا لا تخبرنا به."
+          ],
+          [
+            "h",
+            "كيف دُفعت الـ100,000 ين"
+          ],
+          [
+            "p",
+            "كان لكل شخص مسجل في سجل السكان الأساسي في 27 أبريل 2020 الحق في 100,000 ين، بمن فيهم المقيمون الأجانب. وكان صاحب الحق في الاستلام رب الأسرة التي ينتمي إليها الشخص. فإما أن يعيد رب الأسرة بالبريد الاستمارة التي أرسلتها إليه البلدية مع بيانات حسابه المصرفي، وإما أن يقدّم الطلب عبر الإنترنت من خلال ⁦Mynaportal⁩، وكان المال يُحوَّل من حيث المبدأ إلى حساب باسم مقدّم الطلب نفسه. وخُصص للبرنامج 12,880.293 مليار ين (12,734.414 مليار ين للدفعات و145.879 مليار ين للإدارة)، تحملتها الحكومة الوطنية كلها.[1]"
+          ],
+          [
+            "p",
+            "كانت الخطة الأولى مختلفة. فقد اقترحت الحكومة في البداية 300,000 ين لكل أسرة للأسر التي انخفض دخلها بشدة بسبب كوفيد-19، ثم تحولت في 16 أبريل 2020 إلى 100,000 ين لكل شخص.[2]"
+          ],
+          [
+            "p",
+            "بدأ الصرف في مايو. وبحلول 26 يونيو كان قد دُفع نحو 9.12 تريليون ين (71.6%)، وبحلول 31 يوليو نحو 12.32 تريليون ين. وبلغ المجموع النهائي نحو 12.67 تريليون ين، أي 99.7% من المبلغ الذي خططت البلديات لدفعه: وصلت الدفعة إلى كل المستحقين تقريبًا.[3]"
+          ],
+          [
+            "p",
+            "لكن موعد وصولها كان يتوقف كثيرًا على مكان السكن. ففي اليابان لا ترتبط الحسابات المصرفية بسجلات السكان، فاضطرت البلديات إلى جمع أرقام الحسابات والتحقق منها واحدًا واحدًا.[2] وحتى داخل طوكيو، كان 85% من مقدمي الطلبات في حي نيريما قد تسلّموا المال بحلول 30 يونيو، مقابل 34.5% في حي إيدوغاوا.[4]"
+          ],
+          [
+            "p",
+            "تبيّن أن هذا التأخير هديةٌ للباحثين. فإذا كانت بعض الأسر قد تسلّمت المال في الأسبوع نفسه وأخرى لم تتسلّمه بعد، فإن المقارنة بينها تفصل أثر الدفعة نفسها عن أثر انتشار الفيروس وطلبات البقاء في المنزل. وكل الدراسات التالية تستخدم هذه «التجربة الطبيعية».[2][4]"
+          ],
+          [
+            "h",
+            "كم أُنفق؟"
+          ],
+          [
+            "p",
+            "درس سو كوبوتا وكويتشيرو أونيشي ويوتا توياما من جامعة واسيدا نحو 2.8 مليون حساب في بنك ميزوهو. قفز الإنفاق في الأسبوع الذي وصل فيه المال، وبقي مرتفعًا بعض الشيء لأكثر من شهر. وخلال ستة أسابيع، عادلت الأموال الخارجة من الحسابات 49% من الدفعة، و31% إذا احتُسبت السحوبات النقدية وحدها. ولأن هذه الأموال الخارجة تشمل التحويلات والخصم المباشر، يقدّمها المؤلفون بوصفها حدًا أعلى للإنفاق.[4]"
+          ],
+          [
+            "p",
+            "واستخدم ميتشيرو كانيدا وسو كوبوتا وساتوشي تاناكا بيانات 232,589 مستخدمًا لتطبيق الميزانية المنزلية ⁦Money Forward ME⁩. وخلال ستة أسابيع، أُنفق 16% من الدفعة وفق تعريفهم الأساسي: 6% بالاحتساب الضيق و27% بالاحتساب الواسع.[2][5]"
+          ],
+          [
+            "p",
+            "واستخدم تاكاهيرو هاتوري وزملاؤه أرقام المدن في مسح دخل الأسر ونفقاتها الحكومي، وقدّروا أن نحو 10% أُنفق في الشهر الذي وصلت فيه الدفعة. وارتفع الإنفاق على ما يُشترى للمنزل وفي المتاجر، ولم يرتفع الإنفاق على الخدمات التي تتطلب لقاءً وجهًا لوجه.[6]"
+          ],
+          [
+            "p",
+            "وفي 2023 نظر مكتب مجلس الوزراء في بيانات تطبيق آخر للميزانية المنزلية، ⁦Moneytree⁩، على مدى 16 أسبوعًا من خمسة أسابيع قبل الدفع إلى عشرة أسابيع بعده، وقدّر أن نحو 22% من الدفعة أُنفق. وأعطى التحقق بالسجلات الفردية لمسح الأسر نحو 17% على مدى 16 أسبوعًا تقريبًا، وهي نتيجة متقاربة في مجملها.[7]"
+          ],
+          [
+            "o",
+            "تتراوح الأرقام بين 6% و49%. وهي تتوقف على ما يُعدّ إنفاقًا (هل يُفترض أن النقد المسحوب أُنفق، وهل تدخل التحويلات) وعلى عدد الأسابيع المقيسة. لكنها تشير إلى الاتجاه نفسه. ففي الأسابيع والأشهر التي تلت وصول المال، وجدت الدراسات التي تحتسب الإنفاق احتسابًا ضيقًا أن ما بين العُشر وأقل بقليل من 30% أُنفق، وحتى الدراسات التي تحتسب كل الأموال الخارجة وجدت نحو النصف. أما الباقي فلم يُنفق فورًا على الأقل."
+          ],
+          [
+            "p",
+            "وقد لا يكون هذا رقمًا خاصًا بالجائحة. فبحسب تقرير مكتب مجلس الوزراء، رفعت قسائم تنشيط المناطق لعام 1999 الإنفاق بنحو 32% من المبلغ الممنوح، ورفعته المنحة ثابتة المبلغ لعام 2009 بنحو 33% وفق استطلاع، أو بنحو 25% من الشهر السابق للاستلام إلى الشهر الثاني بعده وفق تحليل لمسح الأسر.[7] ويكتب هاتوري وزملاؤه أيضًا أن نسبتهم البالغة نحو 10% لا تختلف عن التقديرات التي سبقت الجائحة.[6]"
+          ],
+          [
+            "h",
+            "من أنفقها؟"
+          ],
+          [
+            "p",
+            "أوضح نتيجة في كل الدراسات هي أن الأسر التي لديها قليل من المال في متناولها أنفقت جزءًا أكبر من الدفعة. ففي بيانات ⁦Money Forward⁩، استجابت بقوة الأسر التي كانت أصولها السائلة أقل من دخلها الشهري (19% من المستخدمين)، ولا سيما في أسبوع الدفع.[2] وفي بيانات ميزوهو، أنفقت الأسر التي تعاني نقصًا في السيولة نحو 60% من الدفعة. ولم يكن المهم مجموع الأصول المالية، بل الرصيد في حسابات الودائع العادية: فالأسر «الثرية التي تعيش من اليد إلى الفم»، التي تملك أسهمًا أو تأمينًا لكن رصيدها قليل في حساباتها العادية، أنفقت كثيرًا أيضًا.[4]"
+          ],
+          [
+            "p",
+            "أما في الدخل، فالدراسات مختلفة. وجد مكتب مجلس الوزراء أن الأسر في الثلث الأدنى من حيث الدخل المكافئ (الدخل المعدّل بحسب حجم الأسرة) أنفقت نحو 32% من الدفعة، دون أثر واضح للثلثين الأوسط والأعلى.[7] وتُظهر بيانات ⁦Money Forward⁩ أيضًا استجابة أكبر لدى ربع الأسر الأقل دخلًا.[2] أما بيانات ميزوهو فلا تُظهر فرقًا يُذكر بحسب الدخل؛ وكان الفرق هناك لدى الأسر التي انخفض دخلها بأكثر من النصف عن العام السابق (54%).[4]"
+          ],
+          [
+            "p",
+            "وفي العمر ونوع الأسرة، تقدّم بيانات ⁦Money Forward⁩ بعض المؤشرات. فكلما كبر سن رب الأسرة كبرت الاستجابة؛ واستجاب من يعيشون وحدهم أقل من سائر الأسر، والأسر المتزوجة أكثر من غير المتزوجين. ولم يُحدث وجود الأطفال فرقًا يُذكر.[2] لكن مستخدمي تطبيقات الميزانية المنزلية يميلون إلى صغر السن وإلى طوكيو، وبينهم قليل من النساء (ويرجّح المؤلفون أن ذلك يعود جزئيًا إلى أن الدفعة ذهبت إلى أرباب الأسر)، لذا يصعب رؤية الأسر الأكبر سنًا في هذه البيانات.[2][7]"
+          ],
+          [
+            "h",
+            "أين ذهب المال الذي لم يُنفق؟"
+          ],
+          [
+            "p",
+            "سألت بعض الاستطلاعات الناس مباشرة. ففي يونيو 2020 سأل معهد ⁦NLI⁩ للأبحاث 2,062 شخصًا تتراوح أعمارهم بين 20 و69 عامًا فيمَ استخدموها (مع السماح بأكثر من إجابة). جاءت «تغطية نفقات المعيشة» أولًا بنسبة 53.7%، تلتها «الادخار» بنسبة 26.1%، ثم «السفر الداخلي» بنسبة 10.1%، و«شراء الأجهزة المنزلية» و«شراء الكمامات ومنتجات النظافة الأخرى» بنسبة 9.7% لكل منهما، و«الأكل خارج المنزل» بنسبة 9.0%، و«تعليم الأطفال» بنسبة 7.0%. ولم يقل إنه ادّخرها كلها إلا 9.7%. لكن الاستطلاع لم يسأل عن المبالغ، وتلاحظ الباحثة ناؤكو كوغا أنه إذا قيس الأمر بالين، فربما بقي في الادخار أكثر من ذلك.[8]"
+          ],
+          [
+            "p",
+            "لماذا احتفظوا بها؟ في الاستطلاع نفسه، كان من اختاروا الادخار أكثر من المتوسط قلقًا من فقدان الدخل أو العمل. وتقرأ كوغا ذلك على أنه ادخار مقصود بدافع القلق، لا لعدم وجود ما يُنفق عليه في فترة البقاء في المنزل.[9] ويقول مكتب مجلس الوزراء كذلك إن الجزء الذي لم يُنفق فورًا تراكم على الأرجح بوصفه «مدخرات فائضة»، بمساعدة القيود على الخروج، ويُتوقع أن يُسحب منه لاحقًا ليدعم الإنفاق.[7]"
+          ],
+          [
+            "o",
+            "من المبكر القول إن المال أُهدر لأنه ادُّخر. فتغطية نفقات المعيشة إنفاق في حد ذاتها. والـ100,000 ين المحفوظة جانبًا حين لم يكن أحد يرى ما هو آتٍ كانت نوعًا من شبكة الأمان للأسرة. وإنعاش الاقتصاد ودعم حياة الناس يجب أن يُقاسا بمقياسين مختلفين. ويقول تقرير مكتب مجلس الوزراء نفسه إن البرنامج لم يكن هدفه المباشر بالضرورة تحفيز الاستهلاك.[7]"
+          ],
+          [
+            "h",
+            "100,000 ين لمرة واحدة والدخل الأساسي"
+          ],
+          [
+            "p",
+            "تعرّف الشبكة العالمية للدخل الأساسي (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُسلَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو شرط للعمل»، وتذكر خمس سمات: دوري، ونقدي، وفردي، وشامل، وغير مشروط.[10] وهو المقياس نفسه الذي استخدمناه في {مقال الـ10,000 بات التايلاندية|/essays/thailand-digital-wallet/}. لنمرّر الـ100,000 ين على هذه المعايير واحدًا واحدًا."
+          ],
+          [
+            "p",
+            "شامل؟ تقريبًا، نعم. كان لكل مسجل في سجل السكان الحق فيه، بمن فيهم المقيمون الأجانب."
+          ],
+          [
+            "p",
+            "غير مشروط؟ نعم. لم يكن هناك اختبار للموارد ولا شرط للعمل."
+          ],
+          [
+            "p",
+            "نقدي؟ نعم. كان يمكن إنفاقه على أي شيء."
+          ],
+          [
+            "p",
+            "دوري؟ لا. دُفع مرة واحدة."
+          ],
+          [
+            "p",
+            "فردي؟ بالمعنى الدقيق، لا. قدّم رب الأسرة الطلب عن الأسرة كلها، وذهب المال إلى حساب رب الأسرة.[1][4] أما من فرّوا من العنف الأسري فكان بإمكانهم، إن تقدموا بطلب، أن يتسلّموا حصتهم وحصة أفراد الأسرة الذين معهم من البلدية التي فرّوا إليها، لا من البلدية المسجلين فيها.[11]"
+          ],
+          [
+            "o",
+            "ثلاثة من خمسة مستوفاة، واثنان لا. وبالنسبة إلى التفكير في الدخل الأساسي، فالمعيار المهم هو «دوري». وكما يشرح تقرير مكتب مجلس الوزراء أيضًا، ثمة فكرة في علم الاقتصاد مفادها أن الناس يوزعون المكسب المؤقت على بقية حياتهم.[7] ومع 100,000 ين لمرة واحدة، من الطبيعي تمامًا أن يُدّخر المال تحسبًا لمستقبل غير مؤكد. أما المال الذي يصل بالتأكيد كل شهر فيمكن للناس أن يبنوا حياتهم حوله. ما قاسته بيانات 2020 هو كيف يستجيب الناس لمال يصل مرة واحدة في خضم جائحة، لا كيف يعيشون مع مال يواصل الوصول."
+          ],
+          [
+            "o",
+            "لذلك فإن عدم إنفاق جزء كبير من الـ100,000 ين فورًا ليس دليلًا على أن الدخل الأساسي سيُدّخر فحسب. كما أن مساعدة الـ100,000 ين لكثير من الناس على تدبير أمورهم ليست دليلًا على أن الدخل الأساسي سينجح. فكلاهما يجيب عن سؤال آخر."
+          ],
+          [
+            "p",
+            "وللمبلغ المقطوع مزاياه الخاصة. فـ{دراسة ⁦GiveDirectly⁩ في كينيا|/timeline/#tl-kenya} تقارن بين مجموعة تتسلّم دفعات شهرية لمدة 12 عامًا، ومجموعة تتسلّم دفعات شهرية لمدة عامين، ومجموعة تتسلّم مبلغًا مقطوعًا واحدًا، ووجدت النتائج الأولية في 2023 أن مجموعة المبلغ المقطوع كانت أفضل حالًا في كثير من المقاييس الاقتصادية."
+          ],
+          [
+            "p",
+            "ويضم خطنا الزمني أيضًا برامج تدفع مرة بعد مرة. فـ{عائد صندوق ألاسكا الدائم|/timeline/#tl-alaska} يُدفع كل عام منذ 1982، و{برنامج ⁦Enra⁩ في جزر مارشال|/timeline/#tl-marshall-islands} يدفع نحو ⁦$200⁩ كل ربع سنة منذ نوفمبر 2025. أما {تجربة الدخل الأساسي الريفي في كوريا الجنوبية|/timeline/#tl-korea-rural} فتدفع 150,000 وون شهريًا في صورة قسائم شرائية محلية للمواطنين المقيمين في مقاطعات مختارة في 2026–2027 (وتقول ⁦BIEN⁩ إن هذه الصيغة لا تستوفي تعريفها)."
+          ],
+          [
+            "h",
+            "100,000 ين مرة واحدة، أو 30,000 ين شهريًا"
+          ],
+          [
+            "p",
+            "قارن الأحجام أيضًا. فبحسب {حاسبة الدخل الأساسي|/calc/?c=jp&w=all&m=30000}، يبلغ دفع 30,000 ين شهريًا لكل سكان اليابان الحاليين (نحو 122.81 مليون) نحو 44.2 تريليون ين في السنة، أي نحو 6.7% من الناتج المحلي الإجمالي. والـ12.7 تريليون ين تقريبًا التي دُفعت في 2020 تعادل نحو ثلاثة أشهر ونصف من ذلك."
+          ],
+          [
+            "o",
+            "30,000 ين شهريًا لا تكفي للعيش. ومع ذلك فإن 44 تريليون ين في السنة تزيد على ثلاثة أضعاف ما دُفع مرة واحدة في 2020. لقد أظهرت الـ100,000 ين أن الدولة تستطيع بناء طريقة للدفع للجميع. لكن فعل ذلك كل شهر يحتاج إلى نقاش مختلف تمامًا حول مصدر المال."
+          ],
+          [
+            "h",
+            "ما الذي تركته الـ100,000 ين"
+          ],
+          [
+            "o",
+            "كانت دفعة 2020 تجربة كبيرة: المبلغ النقدي نفسه، دون شروط، لكل من يعيش في اليابان تقريبًا. وبفضل تفاوت المواعيد، نعرف الآن من البيانات كم أُنفق وأي الأسر أنفقته. الأسر التي لديها قليل من المال في متناولها تنفق بسرعة؛ والناس في أوقات القلق يتمسكون بالمال؛ وحين لا ترتبط الحسابات المصرفية بسجلات السكان تتأخر الدفعات في الوصول. وكل هذه دروس للمرة القادمة التي يُصرف فيها شيء."
+          ],
+          [
+            "o",
+            "لكنها لم تكن تجربة دخل أساسي. كانت مالًا دُفع مرة واحدة، في حساب رب الأسرة، في خضم جائحة. وهي لا تجيب عن سؤال كيف يتغير عمل الناس وحياتهم حين يصل المال بالتأكيد كل شهر. ولهذا نحتاج إلى مواصلة النظر في البرامج التي تدفع مرة بعد مرة."
+          ],
+          [
+            "o",
+            "نفضّل ألا نتذكر الـ100,000 ين على أنها «مال مُهدر»، ولا على أنها «بروفة للدخل الأساسي»، بل باسمها الصحيح: دفعة طارئة لمرة واحدة للجميع. وهذا وحده كان حدثًا كبيرًا بما يكفي."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "総務省 (Ministry of Internal Affairs and Communications) — 特別定額給付金（新型コロナウイルス感染症緊急経済対策関連）",
+          "url": "https://www.soumu.go.jp/menu_seisaku/gyoumukanri_sonota/covid-19/kyufukin.html"
+        },
+        {
+          "n": 2,
+          "label": "Michiru Kaneda, So Kubota and Satoshi Tanaka — “Who spent their COVID-19 stimulus payment? Evidence from personal finance software in Japan”, The Japanese Economic Review 72, 409–437 (2021)",
+          "url": "https://doi.org/10.1007/s42973-021-00080-0"
+        },
+        {
+          "n": 3,
+          "label": "Ministry of Internal Affairs and Communications — Special Cash Payment: amounts paid to date (final figure as of 31 Mar 2021; PDF, in Japanese)",
+          "url": "https://www.soumu.go.jp/main_content/000715720.pdf"
+        },
+        {
+          "n": 4,
+          "label": "So Kubota, Koichiro Onishi and Yuta Toyama — “Consumption responses to COVID-19 payments: Evidence from a natural experiment and bank account data”, Journal of Economic Behavior & Organization 188, 1–17 (2021)",
+          "url": "https://doi.org/10.1016/j.jebo.2021.05.006"
+        },
+        {
+          "n": 5,
+          "label": "RIETI Special Report — Michiru Kaneda, So Kubota and Satoshi Tanaka, “The effect of the Special Cash Payment on household consumption during COVID-19: evidence from budgeting-app data” (17 May 2021, in Japanese)",
+          "url": "https://www.rieti.go.jp/jp/special/special_report/135.html"
+        },
+        {
+          "n": 6,
+          "label": "Takahiro Hattori, Norihiro Komura and Takashi Unayama — “Impact of Cash Transfers on Consumption during the COVID-19 Pandemic: Evidence from Japanese Special Cash Payments”, RIETI Discussion Paper 21-E-043 (2021)",
+          "url": "https://www.rieti.go.jp/en/publications/summary/21060001.html"
+        },
+        {
+          "n": 7,
+          "label": "Cabinet Office, Policy Issue Analysis Series 22 — “The effect of the Special Cash Payment on household consumption: an analysis of budgeting-app data recorded in real time” (16 Aug 2023, in Japanese)",
+          "url": "https://www5.cao.go.jp/keizai3/2023/08seisakukadai22-0.pdf"
+        },
+        {
+          "n": 8,
+          "label": "NLI Research Institute — Naoko Kuga, “How households with children used the cash payments” (12 Nov 2021, in Japanese; survey of 2,062 people aged 20–69, June 2020)",
+          "url": "https://www.nli-research.co.jp/files/topics/69350_ext_18_0.pdf?site=nli"
+        },
+        {
+          "n": 9,
+          "label": "NLI Research Institute — Naoko Kuga, “How the Special Cash Payment was used (2): saving out of economic anxiety, or for lack of places to go?” (17 Nov 2020, in Japanese)",
+          "url": "https://www.nli-research.co.jp/files/topics/66114_ext_18_0.pdf?site=nli"
+        },
+        {
+          "n": 10,
+          "label": "Basic Income Earth Network (BIEN) — About Basic Income",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 11,
+          "label": "Ministry of Internal Affairs and Communications — Special Cash Payment: arrangements for people who fled domestic violence and for children in care (summary, Apr 2020, in Japanese)",
+          "url": "https://www.soumu.go.jp/main_content/000715534.pdf"
+        }
+      ]
+    },
     {
       "id": "nesara-gesara-basic-income",
       "date": "2026-11-03",
@@ -10206,7 +12664,8 @@ module.exports = {
       "related": [
         "universal-high-income",
         "use-to-own",
-        "ai-agent-basic-income"
+        "ai-agent-basic-income",
+        "openresearch-cash-study"
       ],
       "title": {
         "ja": "AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム",
@@ -12055,7 +14514,8 @@ module.exports = {
       "related": [
         "universal-high-income",
         "your-own-basic-income",
-        "nesara-gesara-basic-income"
+        "nesara-gesara-basic-income",
+        "japan-special-cash-payment"
       ],
       "title": {
         "ja": "「ベーシックインカム」と呼ばれたもの：タイの1万バーツはどうなったか",
@@ -12175,7 +14635,7 @@ module.exports = {
           ],
           [
             "o",
-            "10万円も、ベーシックインカムではありませんでした。それでも、タイの1万バーツよりはずっと近いところにいました。違いは、誰が受け取れたかと、使い道を誰が決めたかです。"
+            "10万円も、ベーシックインカムではありませんでした。それでも、タイの1万バーツよりはずっと近いところにいました。違いは、誰が受け取れたかと、使い道を誰が決めたかです。10万円が実際に何に使われたのかは、{特別定額給付金のエッセイ|/essays/japan-special-cash-payment/}で、研究のデータをもとにたどりました。"
           ],
           [
             "h",
@@ -12305,7 +14765,7 @@ module.exports = {
           ],
           [
             "o",
-            "The ¥100,000 was not basic income either. But it was far closer than Thailand’s 10,000 baht. The difference was who could receive it, and who decided how it was spent."
+            "The ¥100,000 was not basic income either. But it was far closer than Thailand’s 10,000 baht. The difference was who could receive it, and who decided how it was spent. What the ¥100,000 was actually spent on is traced, study by study, in {our essay on the Special Cash Payment|/essays/japan-special-cash-payment/}."
           ],
           [
             "h",
@@ -12435,7 +14895,7 @@ module.exports = {
           ],
           [
             "o",
-            "10 万日元同样不是基本收入。但它比泰国的 1 万泰铢接近得多。差别在于谁能领到，以及谁来决定怎么花。"
+            "10 万日元同样不是基本收入。但它比泰国的 1 万泰铢接近得多。差别在于谁能领到，以及谁来决定怎么花。这 10 万日元实际花在了哪里，我们在{关于特别定额给付金的随笔|/essays/japan-special-cash-payment/}里根据研究数据作了梳理。"
           ],
           [
             "h",
@@ -12565,7 +15025,7 @@ module.exports = {
           ],
           [
             "o",
-            "1,00,000 येन भी बेसिक इनकम नहीं था। लेकिन वह थाईलैंड के 10,000 बाट से कहीं ज़्यादा क़रीब था। फ़र्क़ इसमें था कि कौन पा सकता था, और ख़र्च कैसे हो, यह कौन तय करता था।"
+            "1,00,000 येन भी बेसिक इनकम नहीं था। लेकिन वह थाईलैंड के 10,000 बाट से कहीं ज़्यादा क़रीब था। फ़र्क़ इसमें था कि कौन पा सकता था, और ख़र्च कैसे हो, यह कौन तय करता था। ये 1,00,000 येन असल में किस पर ख़र्च हुए, यह हमने {विशेष नकद भुगतान वाले निबंध|/essays/japan-special-cash-payment/} में अध्ययनों के आँकड़ों से देखा है।"
           ],
           [
             "h",
@@ -12695,7 +15155,7 @@ module.exports = {
           ],
           [
             "o",
-            "Los 100.000 yenes tampoco fueron una renta básica. Pero estuvieron mucho más cerca que los 10.000 bahts de Tailandia. La diferencia fue quién podía recibirlos y quién decidía en qué gastarlos."
+            "Los 100.000 yenes tampoco fueron una renta básica. Pero estuvieron mucho más cerca que los 10.000 bahts de Tailandia. La diferencia fue quién podía recibirlos y quién decidía en qué gastarlos. En qué se gastaron de verdad esos 100.000 yenes lo repasamos, estudio por estudio, en {el ensayo sobre el Pago Especial en Efectivo|/essays/japan-special-cash-payment/}."
           ],
           [
             "h",
@@ -12825,7 +15285,7 @@ module.exports = {
           ],
           [
             "o",
-            "Auch die 100.000 Yen waren kein Grundeinkommen. Aber sie kamen ihm viel näher als Thailands 10.000 Baht. Der Unterschied lag darin, wer sie bekommen konnte und wer über ihre Verwendung entschied."
+            "Auch die 100.000 Yen waren kein Grundeinkommen. Aber sie kamen ihm viel näher als Thailands 10.000 Baht. Der Unterschied lag darin, wer sie bekommen konnte und wer über ihre Verwendung entschied. Wofür die 100.000 Yen tatsächlich ausgegeben wurden, zeichnen wir Studie für Studie im {Essay über die Sonderzahlung|/essays/japan-special-cash-payment/} nach."
           ],
           [
             "h",
@@ -12955,7 +15415,7 @@ module.exports = {
           ],
           [
             "o",
-            "لم يكن الـ100,000 ين دخلًا أساسيًا هو الآخر. لكنه كان أقرب بكثير من الـ10,000 بات التايلاندية. والفرق في من كان يحق له الحصول عليه، ومن يقرر كيف يُنفق."
+            "لم يكن الـ100,000 ين دخلًا أساسيًا هو الآخر. لكنه كان أقرب بكثير من الـ10,000 بات التايلاندية. والفرق في من كان يحق له الحصول عليه، ومن يقرر كيف يُنفق. أما فيمَ أُنفقت الـ100,000 ين فعلًا، فنتتبعه دراسةً بعد دراسة في {مقالنا عن الدفعة النقدية الخاصة|/essays/japan-special-cash-payment/}."
           ],
           [
             "h",
@@ -15038,7 +17498,8 @@ module.exports = {
       "related": [
         "ai-agent-basic-income",
         "use-to-own",
-        "public-benefit-fund"
+        "public-benefit-fund",
+        "openresearch-cash-study"
       ],
       "title": {
         "ja": "ユニバーサルハイインカムは来るのか：誰が払う？",
