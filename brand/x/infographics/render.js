@@ -578,6 +578,156 @@ h1{font-size:${ja ? 64 : 52}px}
 `,
     }),
   },
+  // note.com header for the article that works out Takenaka Heizo's 月7万円 BI plan for five model households. Same
+  // 1100x560 safe area and kicker / two-line hero / footer layout as note-greatreset; the .deco motif is a small
+  // household ledger: families with children gain, the pension and welfare rows end in "?" (it depends on the design).
+  'note-takenaka': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => ({
+      bare: true,
+      moon: [1192, 92, 44],
+      body: `
+<div class="wrap">
+  <p class="kicker">竹中平蔵案を家計で計算</p>
+  <h1 class="hero"><span class="l1">月7万円の</span><span class="l2"><em>ベーシックインカム</em></span></h1>
+  <p class="quote">わが家は<b>得する？損する？</b></p>
+</div>
+<div class="deco">
+  <div class="ledger">
+    <p class="lh">家計の差し引き</p>
+    <p class="row"><span>子育て世帯</span>${plus}</p>
+    <p class="row"><span>年金世帯</span><i class="q">?</i></p>
+    <p class="row"><span>生活保護</span><i class="q">?</i></p>
+  </div>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+      css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:92px;width:1060px}
+.kicker{display:inline-block;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px}
+.hero{margin-top:24px;padding-right:0;white-space:nowrap}
+.hero span{display:block}
+.hero .l1{font-size:72px;line-height:1.12}
+.hero .l2{margin-top:4px;font-size:100px;line-height:1.12}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote{margin-top:26px;font-size:40px;line-height:1.2;font-weight:900;color:#E3E8FF;white-space:nowrap}
+.quote b{color:#FFD66B}
+.deco{position:absolute;right:120px;bottom:56px;width:270px;height:184px}
+.ledger{position:absolute;right:0;top:0;width:262px;transform:rotate(3deg);background:#F6F2E6;border-radius:14px;padding:0 20px 10px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden}
+.ledger .lh{margin:0 -20px 6px;padding:10px 20px;background:#1B6B52;color:#F6F2E6;font-size:22px;line-height:1}
+.ledger .row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:2px solid #DED6BF;font-size:23px;line-height:1.1;color:#141A3A}
+.ledger .row:last-child{border-bottom:0}
+.ledger .q{width:26px;height:26px;border-radius:50%;background:#FFD66B;color:#141A3A;font-style:normal;font-size:19px;font-weight:900;line-height:26px;text-align:center}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+    }),
+  },
+  // Results table for the note article on Takenaka Heizo's 月7万円 BI plan (note-takenaka header). Built on myth()
+  // with its kicker swapped; figures (monthly, before any tax rise): pensions from Japan Pension Service FY2026
+  // (model couple ¥237,279, basic ¥70,608 each), welfare from MHLW's Oct 2026 table (Tokyo 1級地-1, age 20-40:
+  // living ¥77,220 + housing cap ¥53,700), child allowance ¥10,000 per child; Takenaka's book and J-CAST (10 Oct 2020).
+  'note-takenaka-table': {
+    w: 1200, h: 1500, langs: ['ja'], file: 'note-takenaka-table-ja',
+    build: lang => {
+      const opt = (k, t, v) => `<p class="opt"><span class="ok">${k}</span><span class="ot">${t}</span><span class="ov">${v}</span></p>`;
+      const m = myth(lang, {
+        q: '月7万円BI、5つの家計で計算すると',
+        qSize: 60,
+        rows: [
+          { name: '単身・20代会社員', meta: '年収300万円・東京で賃貸', pay: 'いま なし → BI 7万円',
+            res: '＋7万円', more: `<p class="det">返す側に入らないとみた場合。増税があれば目減り</p>` },
+          { name: '夫婦＋小学生2人', meta: '年収500万円', pay: 'いま 児童手当2万円 → BI 20万〜28万円',
+            res: '＋18万〜＋26万円', more: `<p class="det">子どもを月3万円（原田案）にした場合が下限</p>` },
+          { name: '元会社員の高齢夫婦', meta: '標準的な夫婦の年金', pay: 'いま 年金23万7279円 → BI 14万円',
+            res: '＋14万〜−9万7279円', more: opt('A', '年金に上乗せ', '＋14万円') + opt('B', '基礎年金だけ置き換え', '−1,216円') + opt('C', '年金をすべて置き換え', '−9万7279円') },
+          { name: '生活保護の単身者', meta: '東京23区・30代', pay: 'いま 最大13万920円 → BI 7万円',
+            res: '±0〜−6万920円', more: opt('A', '足りない分を生活保護で補う', '±0') + opt('B', '生活保護を廃止', '−6万920円') },
+          { name: '夫婦＋子ども2人', meta: '年収1000万円', pay: 'いま 児童手当2万円 → BI 28万円',
+            res: '＋26万〜−2万円', more: `<p class="det">後で返す額しだい。全額返すと児童手当の分だけ減る<br>増税の負担も重くなりやすい</p>` },
+        ],
+        t1: '答えは「何と引き換えか」で決まる',
+        t2: '子育て世帯は得をしやすい。年金や生活保護に頼る人は、<br>制度が残るかどうかで「ほぼ同じ」から「月約10万円減」まで変わる',
+        src: '前提：すべて月額、税負担増は含まない、児童手当はBIに置き換え<br>年金 A＝上乗せ・B＝基礎年金だけ置き換え・C＝すべて置き換え ／ 生活保護 A＝差額を補う・B＝廃止<br>出典：厚生労働省・日本年金機構（2026年度）、竹中平蔵氏の著書（2020年）、J-CASTニュース（2020年10月10日）',
+        url: 'neteru-nyukin.eltociear.workers.dev/ja/calc/',
+        extraCss: `
+.rows{margin-top:28px;gap:14px}
+.row{padding:18px 26px;gap:26px}
+.lc{flex:0 0 430px;justify-content:center}
+.nm{font-size:34px}
+.meta{margin-top:4px;font-size:21px}
+.pay{margin-top:8px;font-size:22px;line-height:1.3;color:#E3E8FF;font-weight:700;white-space:nowrap}
+.rc{padding-left:26px}
+.res{font-size:36px;white-space:nowrap}
+.det{margin-top:6px;font-size:21px;line-height:1.35;color:#C9D0F0}
+.opt{margin-top:5px;display:flex;align-items:center;gap:10px;font-size:21px;line-height:1.3;color:#C9D0F0;font-weight:700;white-space:nowrap}
+.opt .ok{flex:0 0 26px;height:26px;border-radius:50%;background:#2E3772;color:#FFD66B;font-size:17px;font-weight:900;line-height:26px;text-align:center}
+.opt .ot{flex:1}
+.opt .ov{color:#FFFFFF;font-weight:900}
+.take{margin-top:24px;margin-bottom:20px;padding:20px 30px 22px}
+.t1{font-size:42px}
+.t2{font-size:23px}
+.src{font-size:18px}`,
+      });
+      m.body = m.body.replace('よくある疑問 × データ', '竹中平蔵案を家計で計算');
+      return m;
+    },
+  },
+  // note.com header for the article on the 「フィンランドで失敗した」 meme (Kela experiment 2017-2018). Same 1100x560
+  // safe area and kicker / two-line hero / footer layout as note-greatreset; the .deco motif is a small results card
+  // from the May 2020 final evaluation: employment effect small, life satisfaction and mental wellbeing better.
+  'note-finland': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => ({
+      bare: true,
+      moon: [1192, 92, 44],
+      body: `
+<div class="wrap">
+  <p class="kicker">フィンランドの社会実験 2017–2018</p>
+  <h1 class="hero"><span class="l1">「フィンランドで失敗した」は</span><span class="l2"><em>本当？</em></span></h1>
+  <p class="quote">ベーシックインカム実験で<b>わかったこと</b></p>
+</div>
+<div class="deco">
+  <div class="card">
+    <p class="ch">2年間の結果</p>
+    <p class="row"><span>働いた日数</span><i class="sm">小</i></p>
+    <p class="row"><span>生活の満足度</span>${plus}</p>
+    <p class="row"><span>心の健康</span>${plus}</p>
+  </div>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+      css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:92px;width:1060px}
+.kicker{display:inline-block;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px}
+.hero{margin-top:24px;padding-right:0;white-space:nowrap}
+.hero span{display:block}
+.hero .l1{font-size:68px;line-height:1.12}
+.hero .l2{margin-top:4px;font-size:108px;line-height:1.12}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote{margin-top:22px;font-size:40px;line-height:1.2;font-weight:900;color:#E3E8FF;white-space:nowrap}
+.quote b{color:#FFD66B}
+.deco{position:absolute;right:120px;bottom:56px;width:290px;height:184px}
+.card{position:absolute;right:0;top:0;width:282px;transform:rotate(3deg);background:#F6F2E6;border-radius:14px;padding:0 20px 10px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden}
+.card .ch{margin:0 -20px 6px;padding:10px 20px;background:#1B6B52;color:#F6F2E6;font-size:22px;line-height:1}
+.card .row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:2px solid #DED6BF;font-size:23px;line-height:1.1;color:#141A3A}
+.card .row:last-child{border-bottom:0}
+.card .sm{width:26px;height:26px;border-radius:50%;background:#FFD66B;color:#141A3A;font-style:normal;font-size:16px;font-weight:900;line-height:26px;text-align:center}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+    }),
+  },
   // note.com profile header for 「不労所得で生きていきたい」. note shows roughly a centre crop on mobile, so every
   // text element stays inside a centred 1000x600 box (stricter than the 1400x600 desktop safe area); the constellation
   // icons, moon and glow are atmosphere and may sit outside it.
