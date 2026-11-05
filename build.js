@@ -426,10 +426,17 @@ function xShare(head, url, lang) {
 // 年表のカードは「内容」の最初の文だけを使う（長い説明は投稿に向かないので）
 const firstClause = t => t.split(/[。；;؛]|\.\s(?=\D)/u)[0].trim();
 // 行（primary の X ボタンは金、ほかは静かな枠線）。compact は見出しの下に置く小さい版
+// はてなブックマーク（日本語ページだけ）。公式ボタンのスクリプトが開く追加画面 /entry/panel/ へのただのリンク（外部スクリプト・クッキーなし）
+// URL は ?s=hatena にして、Worker の記録で X やコピーの s=share と分けて数える
+function hatenaLink(head, url, compact) {
+  const u = url.replace('?s=share', '?s=hatena');
+  const href = `https://b.hatena.ne.jp/entry/panel/?url=${encodeURIComponent(u)}&btitle=${encodeURIComponent(head.trim())}`;
+  return `<a class="btn shr-o" href="${esc(href)}" target="_blank" rel="noopener" aria-label="はてなブックマークに追加">${compact ? 'はてブ' : 'はてなブックマーク'}</a>`;
+}
 function shareRow(lang, head, url, { compact = false, label = '', id = '' } = {}) {
   const L = T[lang], x = xShare(head, url, lang);
   const native = `${x.head} ${x.tag}`;
-  return `<div class="shr${compact ? ' shr-top' : ''}"${id ? ` id="${id}"` : ''}>${label ? `<p class="shr-h">${esc(label)}</p>` : ''}<a class="btn ${compact ? 'shr-o' : 'shr-x'}" href="${esc(x.intent)}" target="_blank" rel="noopener">${XSVG}<span>${esc(L.calcShareX)}</span></a><button class="btn shr-o" type="button" data-copy="${esc(url)}">${esc(L.copyLink)}</button><button class="btn shr-o" type="button" data-native="${esc(url)}" data-text="${esc(native)}" hidden>${esc(L.share)}</button></div>`;
+  return `<div class="shr${compact ? ' shr-top' : ''}"${id ? ` id="${id}"` : ''}>${label ? `<p class="shr-h">${esc(label)}</p>` : ''}<a class="btn ${compact ? 'shr-o' : 'shr-x'}" href="${esc(x.intent)}" target="_blank" rel="noopener">${XSVG}<span>${esc(L.calcShareX)}</span></a>${lang === 'ja' ? hatenaLink(head, url, compact) : ''}<button class="btn shr-o" type="button" data-copy="${esc(url)}">${esc(L.copyLink)}</button><button class="btn shr-o" type="button" data-native="${esc(url)}" data-text="${esc(native)}" hidden>${esc(L.share)}</button></div>`;
 }
 // カードやニュース1件ごとの小さいリンク
 function shareMini(lang, head, url) {
