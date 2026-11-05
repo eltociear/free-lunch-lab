@@ -127,6 +127,87 @@ const ICONS = Object.fromEntries(Object.entries(ICON_PATHS).map(([k, v]) => [k, 
 const plus = `<svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="13" fill="#6CF0B0"/><path d="M13 7 V19 M7 13 H19" stroke="#0A0F24" stroke-width="3.4" stroke-linecap="round"/></svg>`;
 const minus = `<svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="13" fill="#FFB49A"/><path d="M7 13 H19" stroke="#0A0F24" stroke-width="3.4" stroke-linecap="round"/></svg>`;
 
+// ---------- "common objection vs data" series (myth-*) ----------
+// Same flat design system as 'work-effect' (1200x1500, solid navy, gold #FFD66B, ink #141A3A, kicker pill, big question,
+// evidence cards, gold takeaway, sources footer). myth() takes the per-card content; `top` is optional extra HTML
+// between the question and the rows, `rows` use the work-effect card layout, `extraCss` tweaks a single card.
+const mythArrow = `<svg class="ar" width="34" height="20" viewBox="0 0 34 20"><path d="M2 10 H29 M21 3 L29 10 L21 17" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const mythCmp = (label, a, b, cls = '') => `<p class="cmp ${cls}"><span class="cl">${label}</span><span class="cv">${a}</span>${mythArrow}<span class="cv b">${b}</span></p>`;
+function myth(lang, { q, qSize, lede = '', top = '', rows = [], after = '', t1, t2, src, url, extraCss = '' }) {
+  const ja = lang === 'ja';
+  const mark = bento.replace('url(#grad)', '#FFD66B');
+  return {
+    bare: true,
+    moon: [-999, -999, 1],
+    body: `
+<p class="kicker">${ja ? 'よくある疑問 × データ' : 'Common objection vs data'}</p>
+<h1 class="q">${q}</h1>
+${lede ? `<p class="lede2">${lede}</p>` : ''}
+${top}
+<div class="rows">${rows.map(r => `
+  <section class="row">
+    <div class="lc">
+      <p class="nm">${r.name}</p>
+      <p class="meta">${r.meta}</p>
+      ${r.pay ? `<p class="pay">${r.pay}</p>` : ''}
+      ${r.who ? `<p class="who">${r.who}</p>` : ''}
+    </div>
+    <div class="rc">
+      <p class="res">${r.res}</p>
+      ${r.more || ''}
+    </div>
+  </section>`).join('')}
+</div>
+${after}
+<div class="take">
+  <p class="t1">${t1}</p>
+  <p class="t2">${t2}</p>
+</div>
+<div class="foot3">
+  <p class="src">${src}</p>
+  <div class="brand">
+    <svg width="64" height="45" viewBox="-8 -8 256 184">${mark}</svg>
+    <p class="wm2">${ja ? '不労所得研究所' : 'Free Lunch Lab'}</p>
+    <p class="url">${url}</p>
+  </div>
+</div>`,
+    css: `
+body{background:#0E1330}
+svg.sky g{opacity:.45}
+.page{padding:64px 64px 52px}
+.kicker{align-self:flex-start;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:11px 24px 13px;border-radius:999px;font-weight:900}
+.q{margin-top:26px;padding-right:0;text-shadow:none;font-size:${qSize || (ja ? 84 : 80)}px;line-height:1.16;color:#FFFFFF;white-space:nowrap}
+.lede2{margin-top:16px;font-size:28px;line-height:1.35;color:#C9D0F0;font-weight:700}
+.rows{margin-top:34px;display:flex;flex-direction:column;gap:18px}
+.row{display:flex;gap:30px;background:#171D45;border:2px solid #262E62;border-radius:22px;padding:26px 30px}
+.lc{flex:0 0 392px;display:flex;flex-direction:column}
+.nm{font-size:${ja ? 38 : 40}px;line-height:1.15;font-weight:900;color:#FFFFFF;white-space:nowrap}
+.meta{margin-top:6px;font-size:23px;line-height:1.3;color:#9AA3CF;font-weight:700;white-space:nowrap}
+.pay{margin-top:14px;font-size:30px;line-height:1.2;color:#FFFFFF;font-weight:900}
+.who{margin-top:6px;font-size:23px;line-height:1.3;color:#C9D0F0;font-weight:500}
+.rc{flex:1;min-width:0;border-left:3px solid #2E3772;padding-left:30px;display:flex;flex-direction:column;justify-content:center}
+.res{font-size:${ja ? 36 : 37}px;line-height:1.2;font-weight:900;color:#FFD66B}
+.det{margin-top:8px;font-size:25px;line-height:1.35;color:#E3E8FF;font-weight:700}
+.cmp{margin-top:8px;display:flex;align-items:center;gap:12px;font-size:28px;line-height:1.2;color:#C9D0F0;font-weight:700}
+.cmp .cl{width:${ja ? 150 : 186}px;font-size:23px;color:#9AA3CF}
+.cmp .cv{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:32px;min-width:64px;text-align:right}
+.cmp .ar{color:#6C76A8}
+.cmp.hi .cl{color:#FFD66B}
+.cmp.hi .cv{color:#FFFFFF}
+.cmp.hi .cv.b{color:#FFD66B}
+.big{font-family:"Dela Gothic One",sans-serif;font-weight:400;color:#FFFFFF}
+.take{margin-top:30px;margin-bottom:24px;background:#FFD66B;color:#141A3A;border-radius:22px;padding:24px 32px 26px}
+.t1{font-size:${ja ? 46 : 46}px;line-height:1.15;font-weight:900;white-space:nowrap}
+.t2{margin-top:8px;font-size:26px;line-height:1.4;font-weight:700}
+.foot3{margin-top:auto;padding-top:20px;border-top:2px solid #262E62}
+.src{font-size:19px;line-height:1.4;color:#9AA3CF;font-weight:500}
+.brand{margin-top:14px;display:flex;align-items:center;gap:16px}
+.wm2{font-size:30px;line-height:1;font-weight:900;color:#FFFFFF;${ja ? '' : 'font-family:"Dela Gothic One",sans-serif;font-weight:400;'}}
+.url{margin-left:auto;font-size:24px;line-height:1;color:#FFD66B;font-weight:700}
+${extraCss}`,
+  };
+}
+
 // ---------- infographics ----------
 const GRAPHICS = {
   // "5 ways apps prove you're one human". Examples come from each service's verify[] in src/data.js.
@@ -662,6 +743,186 @@ svg.sky g{opacity:.45}
 .url{margin-left:auto;font-size:24px;line-height:1;color:#FFD66B;font-weight:700}
 `,
       };
+    },
+  },
+  // "Common objection vs data" series, cards 2-5 (card 1 is 'work-effect'). Every figure is checked against the
+  // primary source named in the footer, or taken from TIMELINE / ESSAYS / CALC / BI_NEWS in src/data.js.
+  // Prices: Egger et al., Econometrica 90(6) 2022 (abstract: ~USD 1,000, 10,500+ households, 653 villages, >15% of
+  // local GDP, multiplier 2.5; 0.1% average inflation and <1% at the peak from the paper's text); Cunha, De Giorgi &
+  // Jayachandran, REStud 86(1) 2019 (in-kind -4%, cash "positive but negligible"); Jones & Marinescu, NTJ 2022
+  // (Alaska prices: suggestive, uncertain) and AEJ: Policy 14(2) 2022 (no employment effect, part-time +1.8 pp);
+  // Alaska 2026 PFD $1,000 + $200 energy relief (BI_NEWS us-alaska-pfd-2026); ILO brief, Özay & Ernst, May 2026.
+  'myth-prices': {
+    w: 1200, h: 1500, langs: ['ja', 'en'],
+    build: lang => {
+      const ja = lang === 'ja';
+      return myth(lang, {
+        q: ja ? 'お金を配ったら、<br>物価が上がるだけ？' : 'Won’t cash just<br>push prices up?',
+        rows: [
+          { name: ja ? 'ケニア（農村部）' : 'Rural Kenya', meta: ja ? '2014–2017 ・ GiveDirectly' : '2014–2017 · GiveDirectly',
+            pay: ja ? '1世帯に約1,000ドルを1回' : 'About $1,000 per home',
+            who: ja ? '653村・1万500世帯超<br>地域GDPの15%超にあたる額' : 'Paid once to 10,500+ households in<br>653 villages: over 15% of local GDP',
+            res: ja ? '物価の上昇は平均0.1%' : 'Prices rose 0.1% on average',
+            more: `<p class="det">${ja ? '給付が最も多い時期でも1%未満<br>配った1ドルで地域経済が約2.5ドル分拡大' : 'Under 1% even at the peak.<br>Each $1 grew the local economy by about $2.50'}</p>` },
+          { name: ja ? 'メキシコ（農村部）' : 'Rural Mexico', meta: ja ? '村ごとに無作為に割り当て' : 'Villages assigned at random',
+            pay: ja ? '食料の現物か、同額の現金' : 'Food boxes, or equal cash',
+            res: ja ? '現金：物価はほぼ上がらず' : 'Cash: a negligible rise in prices',
+            more: `<p class="det">${ja ? '食料を運び込んだ村では物価が4%下落<br>どちらも、遠い村ほど影響は大きい' : 'Trucked-in food cut prices by 4%.<br>Both effects were bigger in remote villages'}</p>` },
+          { name: ja ? 'アラスカ（米国）' : 'Alaska, USA', meta: ja ? '1982– ・ 州の基金から毎年' : '1982– · yearly, from a state fund',
+            pay: ja ? '2026年は1人1,200ドル' : '$1,200 each in 2026',
+            who: ja ? '条件を満たす住民全員' : 'Every eligible resident',
+            res: ja ? '物価への影響ははっきりしない' : 'Effect on prices is unclear',
+            more: `<p class="det">${ja ? '上昇の兆候はあるが、原因とは断定できない<br>雇用は減らず、パート就業は1.8ポイント増' : 'Some signs of a rise; the cause is uncertain.<br>Jobs did not fall; part-time work rose 1.8 points'}</p>` },
+        ],
+        t1: ja ? '地域の実験では、物価はほぼ動かず' : 'In local trials, prices barely moved',
+        t2: ja ? 'ただし国全体に配るなら話は別。住宅のように供給が<br>すぐ増えない分野では値上がりの恐れがある（ILO）' : 'A nationwide payment is a different test: where supply<br>can’t grow fast, like housing, prices could rise (ILO).',
+        src: ja ? '出典：Egger ほか、Econometrica（2022）／ Cunha ほか、Review of Economic Studies（2019）／ Jones・Marinescu、<br>National Tax Journal・AEJ: Economic Policy（2022）／ アラスカ州PFD局（2026）／ Özay・Ernst、ILO（2026）'
+          : 'Sources: Egger et al., Econometrica (2022) / Cunha et al., Review of Economic Studies (2019) / Jones and Marinescu,<br>National Tax Journal and AEJ: Economic Policy (2022) / Alaska PFD Division (2026) / Özay and Ernst, ILO (2026)',
+        url: `neteru-nyukin.eltociear.workers.dev/${ja ? 'ja/' : ''}timeline/`,
+      });
+    },
+  },
+  // Spending: Evans & Popova, EDCC 65(2) 2017 (19 studies, meta-analysis: significant fall, Latin America / Africa /
+  // Asia, conditional and unconditional); Haushofer & Shapiro, QJE 131(4) 2016 (consumption $158 -> $193 PPP a month;
+  // alcohol and tobacco effects negative and insignificant); OpenResearch Key Findings: Spending (+$310: food $67,
+  // rent $52, transport $50), as in the openresearch-cash-study essay.
+  'myth-spending': {
+    w: 1200, h: 1500, langs: ['ja', 'en'],
+    build: lang => {
+      const ja = lang === 'ja';
+      const chip = (k, v) => `<span class="chip"><span class="ck">${k}</span><span class="cvv">${v}</span></span>`;
+      return myth(lang, {
+        q: ja ? '酒やギャンブルに<br>使われるのでは？' : 'Won’t people spend it<br>on drink and gambling?',
+        qSize: ja ? 84 : 76,
+        rows: [
+          { name: ja ? '世界銀行のレビュー' : 'World Bank review', meta: ja ? 'Evans・Popova（2017）' : 'Evans and Popova (2017)',
+            pay: ja ? '19の研究をまとめて分析' : '19 studies, pooled',
+            who: ja ? '中南米・アフリカ・アジア' : 'Latin America, Africa and Asia',
+            res: ja ? '酒・たばこの支出は減った' : 'Drink and tobacco spending fell',
+            more: `<p class="det">${ja ? '平均で減少。条件付きでも無条件でも同じ傾向' : 'On average, with or without conditions'}</p>` },
+          { name: ja ? 'ケニア（農村部）' : 'Rural Kenya', meta: ja ? 'GiveDirectly ・ QJE（2016）' : 'GiveDirectly · QJE (2016)',
+            pay: ja ? '無条件の現金給付' : 'No-strings cash',
+            who: ja ? '貧しい世帯、無作為化比較試験' : 'Poor households, randomised trial',
+            res: ja ? '酒・たばこの支出は増えず' : 'No rise in drink or tobacco',
+            more: `<p class="det">${ja ? '9か月後の世帯の月の消費（購買力平価ドル）' : 'Monthly household spending at 9 months (PPP)'}</p><p class="cmp hi kc"><span class="cl">${ja ? '対照群' : 'Control'}</span><span class="cv">$158</span><span class="cl" style="margin-left:22px">${ja ? '受給世帯' : 'Recipients'}</span><span class="cv b">$193</span></p>` },
+          { name: 'OpenResearch', meta: ja ? '2020–2023 ・ 米国' : '2020–2023 · USA',
+            pay: ja ? '月1,000ドル × 3年' : '$1,000 a month × 3 years', who: ja ? '21〜40歳の1,000人' : '1,000 people aged 21–40',
+            res: ja ? '増えた支出の半分超は生活費' : 'Over half went on basics',
+            more: `<p class="det">${ja ? '対照群より増えた月の支出は310ドル' : 'Spent $310 a month more than the control group'}</p><p class="chips">${chip(ja ? '食費' : 'Food', '+$67')}${chip(ja ? '家賃' : 'Rent', '+$52')}${chip(ja ? '交通' : 'Transport', '+$50')}</p>` },
+        ],
+        t1: ja ? '使い道は、まず生活費だった' : 'It went on food, rent and transport',
+        t2: ja ? 'ここでの研究が測ったのは主に酒とたばこで、ギャンブルは<br>直接測っていない。測った範囲では、増えなかった' : 'These studies mainly measured alcohol and tobacco, not gambling.<br>Where they measured, spending did not go up.',
+        src: ja ? '出典：Evans・Popova、Economic Development and Cultural Change（2017）／ Haushofer・Shapiro、<br>Quarterly Journal of Economics（2016）／ OpenResearch「Key Findings: Spending」（2024）'
+          : 'Sources: Evans and Popova, Economic Development and Cultural Change (2017) / Haushofer and Shapiro,<br>Quarterly Journal of Economics (2016) / OpenResearch, Key Findings: Spending (2024)',
+        url: `neteru-nyukin.eltociear.workers.dev/${ja ? 'ja/' : ''}timeline/`,
+        extraCss: `.cmp .cl{width:${ja ? 130 : 186}px}
+.cmp.kc .cl{width:auto}
+.chips{margin-top:12px;display:flex;gap:14px}
+.chip{display:flex;flex-direction:column;gap:6px;background:#0E1330;border:2px solid #2E3772;border-radius:14px;padding:10px 16px 12px}
+.ck{font-size:21px;line-height:1;color:#9AA3CF;font-weight:700}
+.cvv{font-family:"Dela Gothic One",sans-serif;font-size:32px;line-height:1;color:#FFD66B}`,
+      });
+    },
+  },
+  // Cost: gross cost from CALC (Japan: ¥30,000 x 12 x 122,812,000 = ¥44.2tn = 6.7% of 2025 GDP ¥663.76tn; US: $1,000 x
+  // 12 x 274,383,878 adults = $3.29tn = 10.7% of 2025 GDP $30.77tn); Widerquist, Basic Income Studies 12(2) 2017
+  // ($12,000 adult / $6,000 child, 50% marginal rate: gross $3.415tn, net $539bn, ~2.95% of GDP); funding models from
+  // TIMELINE / BI_NEWS (Alaska 2026 PFD $1,200; Marshall Islands Enra ~$200 a quarter from the Compact trust fund;
+  // Korea rural pilot 150,000 won a month, 40% national / 30% province / 30% county).
+  'myth-cost': {
+    w: 1200, h: 1500, langs: ['ja', 'en'],
+    build: lang => {
+      const ja = lang === 'ja';
+      const tile = (label, v, g) => `<div class="tile"><p class="tl">${label}</p><p class="tv big">${v}</p><p class="tg">${g}</p></div>`;
+      const fund = (n, how, amt) => `<div class="fund"><p class="fn">${n}</p><p class="fh">${how}</p><p class="fa">${amt}</p></div>`;
+      const gn = (label, v, note, cls = '') => `<p class="gn ${cls}"><span class="cl">${label}</span><span class="cv">${v}</span><span class="nt">${note}</span></p>`;
+      return myth(lang, {
+        q: ja ? '財源はどうするの？' : 'How would we ever<br>pay for it?',
+        top: `<p class="sec">${ja ? '配る総額（グロス）は大きい' : 'The gross cost is big'}</p>
+<div class="tiles">${tile(ja ? '日本：全員に月3万円' : 'Japan: ¥30,000 a month to all', ja ? '年44.2兆円' : '¥44.2tn/yr', ja ? 'GDPの6.7%' : '6.7% of GDP')}${tile(ja ? '米国：大人に月1,000ドル' : 'US: $1,000 a month to adults', ja ? '年3.3兆ドル' : '$3.3tn/yr', ja ? 'GDPの10.7%' : '10.7% of GDP')}</div>`,
+        rows: [
+          { name: ja ? 'グロスとネット' : 'Gross vs net', meta: ja ? 'Widerquist（2017）・米国' : 'Widerquist (2017) · US',
+            pay: ja ? '大人に年1.2万ドル<br>子どもに年6,000ドル' : '$12,000 a year per adult,<br>$6,000 per child',
+            who: ja ? '税率50%でまかなう簡易試算' : 'Rough estimate with a 50% tax rate',
+            res: ja ? 'ネットはグロスの約6分の1' : 'Net cost: about a sixth of gross',
+            more: `<p class="det">${ja ? '所得の多い人は受け取る額より多く税を払う<br>差し引きで実際に移るお金がネットのコスト' : 'Better-off people pay more in tax than they get.<br>What actually changes hands is the net cost'}</p>${gn(ja ? 'グロス' : 'Gross', '$3.4tn', '')}${gn(ja ? 'ネット' : 'Net', '$539bn', ja ? 'GDPの約3%' : 'about 3% of GDP', 'hi')}` },
+        ],
+        after: `<p class="sec">${ja ? 'すでに動いている財源' : 'How it is paid for today'}</p>
+<div class="funds">${fund(ja ? 'アラスカ' : 'Alaska', ja ? '石油収入の基金' : 'Oil-wealth fund', ja ? '2026年 1人1,200ドル' : '$1,200 each in 2026')}${fund(ja ? 'マーシャル諸島' : 'Marshall Islands', ja ? '米国との協定の信託基金' : 'Trust fund from a US treaty', ja ? '3か月ごと約200ドル' : 'About $200 a quarter')}${fund(ja ? '韓国の農村' : 'Rural Korea', ja ? '国40%・道30%・郡30%' : 'National and local budgets', ja ? '月15万ウォン' : '150,000 won a month')}</div>`,
+        t1: ja ? '安くはない。だから設計で決まる' : 'Not cheap. The design sets the bill',
+        t2: ja ? '金額、対象、税の組み方、置き換える給付によって、<br>実際の負担は大きく変わる' : 'The amount, who gets it, how the tax is set and which<br>benefits it replaces all change the real cost.',
+        src: ja ? '出典：総務省「人口推計」（2026年10月）・世界銀行GDP（2025）／ 国連 World Population Prospects 2024 ／ Widerquist、Basic Income Studies（2017）／ アラスカ州PFD局（2026）／ Lowy Institute（マーシャル諸島）／ 韓国 農林畜産食品部'
+          : 'Sources: Statistics Bureau of Japan (Oct 2026), World Bank GDP (2025) / UN World Population Prospects 2024 / Widerquist, Basic Income Studies (2017) / Alaska PFD Division (2026) / Lowy Institute (Marshall Islands) / Korea MAFRA',
+        url: `neteru-nyukin.eltociear.workers.dev/${ja ? 'ja/' : ''}calc/`,
+        extraCss: `
+.sec{margin-top:24px;font-size:27px;line-height:1.2;font-weight:900;color:#9AA3CF}
+.tiles{margin-top:14px;display:flex;gap:18px}
+.tile{flex:1;background:#171D45;border:2px solid #262E62;border-radius:22px;padding:22px 28px 24px}
+.tl{font-size:24px;line-height:1.3;color:#C9D0F0;font-weight:700;white-space:nowrap}
+.tv{margin-top:10px;font-size:${ja ? 54 : 56}px;line-height:1.1;white-space:nowrap}
+.tg{margin-top:8px;font-size:30px;line-height:1.1;color:#FFD66B;font-weight:900}
+.rows{margin-top:18px}
+.gn{margin-top:8px;display:flex;align-items:baseline;gap:16px;color:#C9D0F0}
+.gn .cl{width:${ja ? 96 : 80}px;font-size:23px;color:#9AA3CF;font-weight:700}
+.gn .cv{font-family:"Dela Gothic One",sans-serif;font-size:32px;color:#C9D0F0}
+.gn .nt{font-size:24px;font-weight:900;color:#FFD66B}
+.gn.hi .cl{color:#FFD66B}.gn.hi .cv{color:#FFD66B}
+.funds{margin-top:14px;display:flex;gap:18px}
+.fund{flex:1;background:#171D45;border:2px solid #262E62;border-radius:22px;padding:20px 24px 22px}
+.fn{font-size:${ja ? 30 : 30}px;line-height:1.15;font-weight:900;color:#FFFFFF;white-space:nowrap}
+.fh{margin-top:6px;font-size:21px;line-height:1.3;color:#9AA3CF;font-weight:700}
+.fa{margin-top:10px;font-size:25px;line-height:1.2;color:#FFD66B;font-weight:900}
+.take{margin-top:26px}`,
+      });
+    },
+  },
+  // AI: Altman, YC blog 27 Jan 2016 ("as technology continues to eliminate traditional jobs"); AI Dividend (Blood in
+  // the Machine, 24 Mar 2026: $1,000 a month for a year, 25-50 workers, $300,000 start, $3m goal for 2026); Anthropic,
+  // Investing in the public benefit, 18 Oct 2026 (5% of shares subject to stockholder approval; "direct distributions to
+  // specific populations"; governance not yet published); ILO research brief, Özay & Ernst, May 2026.
+  'myth-ai': {
+    w: 1200, h: 1500, langs: ['ja', 'en'],
+    build: lang => {
+      const ja = lang === 'ja';
+      return myth(lang, {
+        q: ja ? 'AIで仕事が<br>なくなったら？' : 'What if AI<br>takes the jobs?',
+        lede: ja ? '予測ではなく、すでに動いているお金と議論' : 'Not a forecast: the money and arguments already on the table',
+        rows: [
+          { name: 'OpenResearch', meta: ja ? '2016年発表 ・ サム・アルトマン出資' : 'Announced 2016 · Sam Altman',
+            pay: ja ? '月1,000ドル × 3年' : '$1,000 a month × 3 years', who: ja ? '1,000人' : '1,000 people',
+            res: ja ? '動機は、技術で仕事が減る時代への備え' : 'Motive: preparing for tech job loss',
+            more: `<p class="det">${ja ? '結果：労働時間は週1.3時間減、支出は主に生活費' : 'Result: 1.3 fewer hours of work a week;<br>the money went mostly on basics'}</p>` },
+          { name: 'AI Dividend', meta: ja ? '2026年3月〜 ・ 米国の非営利団体' : 'Since March 2026 · US nonprofits',
+            pay: ja ? '月1,000ドル × 1年' : '$1,000 a month × 1 year',
+            res: ja ? 'AIで仕事を失った人への現金給付' : 'Cash for workers hit by AI',
+            more: `<p class="det">${ja ? '25〜50人。30万ドルで始め、<br>2026年に300万ドルを配るのが目標' : '25–50 people. Started with $300,000;<br>aims to pay out $3 million in 2026'}</p>` },
+          { name: 'Anthropic', meta: ja ? '2026年10月18日 ・ 公益基金' : '18 Oct 2026 · Public Benefit Fund',
+            pay: ja ? '株式の5%を基金に' : '5% of its shares into a fund',
+            res: ja ? '使い道の例に「特定の人々への直接分配」' : 'Uses may include “direct distributions to specific populations”',
+            more: `<p class="det">${ja ? '株主の承認が条件。運営の仕組みは未公表' : 'Needs stockholder approval;<br>governance not yet published'}</p>` },
+          { name: ja ? 'ILO（国際労働機関）' : 'ILO research brief', meta: ja ? '2026年5月 ・ Özay・Ernst' : 'May 2026 · Özay and Ernst',
+            pay: ja ? '懐疑的な立場' : 'The sceptical view',
+            res: ja ? 'AIが変えるのは職業より「作業」' : 'AI changes tasks, not whole occupations',
+            more: `<p class="det">${ja ? '全員への給付は住宅や医療の値上がりを招くと指摘<br>職業訓練や住宅供給の拡大を優先すべきと主張' : 'Cash for all would push up housing and health<br>prices; it favours reskilling and more housing'}</p>` },
+        ],
+        t1: ja ? '議論は理論から、実際のお金へ' : 'The debate has moved to real money',
+        t2: ja ? 'どれもまだ小さく、一部は約束の段階。<br>AIが仕事をどれだけ減らすかは、まだ誰にも分からない' : 'All of it is small, and some is only a pledge.<br>Nobody yet knows how many jobs AI will take.',
+        src: ja ? '出典：Altman「Basic Income」Y Combinator ブログ（2016）／ Vivalt ほか、NBER w32719 ／<br>Blood in the Machine（2026年3月24日）／ Anthropic（2026年10月18日）／ Özay・Ernst、ILO（2026年5月）'
+          : 'Sources: Altman, “Basic Income”, Y Combinator blog (2016) / Vivalt et al., NBER w32719 / Blood in the Machine (24 Mar 2026) / Anthropic, “Investing in the public benefit” (18 Oct 2026) / Özay and Ernst, ILO research brief (May 2026)',
+        url: `neteru-nyukin.eltociear.workers.dev/${ja ? 'ja/' : ''}essays/`,
+        extraCss: `
+.rows{margin-top:24px;gap:14px}
+.who{margin-top:4px;font-size:21px}
+.row{padding:18px 28px}
+.lede2{margin-top:12px}
+.lc{flex-basis:360px}
+.nm{font-size:${ja ? 34 : 36}px}
+.meta{font-size:21px}
+.pay{margin-top:10px;font-size:25px}
+.res{font-size:${ja ? 30 : 29}px}
+.det{font-size:23px}
+.take{margin-top:24px}`,
+      });
     },
   },
 };
