@@ -427,9 +427,9 @@ function xShare(head, url, lang) {
 const firstClause = t => t.split(/[。；;؛]|\.\s(?=\D)/u)[0].trim();
 // 行（primary の X ボタンは金、ほかは静かな枠線）。compact は見出しの下に置く小さい版
 // はてなブックマーク（日本語ページだけ）。公式ボタンのスクリプトが開く追加画面 /entry/panel/ へのただのリンク（外部スクリプト・クッキーなし）
-// URL は ?s=hatena にして、Worker の記録で X やコピーの s=share と分けて数える
+// URL は canonical のまま（クエリなし）。はてなは URL ごとに数えるので、?s= を付けると人気エントリーへの数が割れる。はてなからの訪問は参照元 b.hatena.ne.jp で見える
 function hatenaLink(head, url, compact) {
-  const u = url.replace('?s=share', '?s=hatena');
+  const u = url.split(/[?#]/)[0];
   const href = `https://b.hatena.ne.jp/entry/panel/?url=${encodeURIComponent(u)}&btitle=${encodeURIComponent(head.trim())}`;
   return `<a class="btn shr-o" href="${esc(href)}" target="_blank" rel="noopener" aria-label="はてなブックマークに追加">${compact ? 'はてブ' : 'はてなブックマーク'}</a>`;
 }
