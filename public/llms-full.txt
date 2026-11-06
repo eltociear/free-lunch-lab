@@ -814,6 +814,138 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### Refundable tax credits vs basic income: what Japan’s new payment for workers is, and is not
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
+- Published: 2026-11-06
+
+On 6 November 2026, Japan’s House of Representatives passed a bill. It cuts the consumption tax on food to 1% for two years and creates the Worker Burden Relief Payment (shūgyōsha futan keigen shienkin), cash paid every year to low- and middle-income people who work, in proportion to their income. The government calls the payment the first step toward a “refundable tax credit”, an idea Japan has debated for years.[2][5]
+
+Some people hear “refundable tax credit” and think of something close to basic income. Both link the tax system to cash payments. But the two differ sharply in who gets the money, on what conditions, and when. We first check what Japan has decided and what it has not, then set it beside examples from other countries and go through the differences one by one.
+
+#### What Japan has decided, and what it has not
+
+The flat ¥20,000 handout the ruling parties promised in the summer 2025 upper house election never happened, and the debate moved to a scheme that would pay every year according to income. On 18 December 2025 the Liberal Democratic Party and the Democratic Party for the People agreed to overhaul the personal allowances in income tax within three years, with a refundable tax credit or similar scheme in mind.[1]
+
+The Social Security National Council, which began in February 2026, worked through cross-party working-level and expert meetings and issued an interim report on 29 July. It proposed introducing an “income-linked, finely tuned payment” in fiscal 2029, treating taxes, social insurance contributions and cash benefits together, with two aims: to raise the take-home pay of low- and middle-income workers, and to ease the “income walls” that lead people to hold back on work. Some members argued strongly that the ideal is a mix of tax credit and cash, but to avoid a complex system the council chose cash payments alone for now.[1]
+
+On 15 September the cabinet approved an outline putting this into concrete form, and on 9 October it sent the bill to the Diet. From April 2027, for two years, the consumption tax on food falls from 8% to 1% (0.78% national plus local consumption tax). During those two years the payment starts early, capped at the revenue expected from one percentage point of the food tax. The full scheme begins in fiscal 2029, when the rate returns to 8%.[2][3]
+
+The bill and the outline set out the rules. Eligibility is individual, and single people are included. A person qualifies if the previous year’s earned income (wages, plus business or freelance income above a set amount) is above a floor, total income is at or below a ceiling (the ceiling depends on the number of children), and the taxes and social insurance contributions they pay are above a set level. Pensioners who work and pay as much as working-age people are also covered. Once the full scheme starts, people whose spouse’s income is above a set amount are excluded.[2][3]
+
+The amount is flat for people whose earned income is up to a level set with reference to the line below which no local income tax is due (¥1.19 million in wages for a single person). Above that it rises with earned income, levels off, and then, as total income rises further, falls to zero. There is a flat addition for each child aged 18 or under (under 16 in fiscal 2027 and 2028), and a temporary addition for people hitting an “income wall”, until those walls are removed.[2]
+
+As a rule it is paid once a year. The municipality where the person lives confirms eligibility and pays within two months. For people who have registered a bank account for public payments, the municipality is meant to confirm eligibility on its own, with no application needed. The payment is not taxed and cannot be seized. The national government pays at least two thirds of the cost.[2][3]
+
+What is not decided is the part that matters most: the amounts and the lines. The income floor, the ceiling and the payment amounts will all be set by cabinet order.[3] As “one reference”, the government told the parties in October that in fiscal 2027 and 2028 about 20 million people could be covered, with an average of about ¥30,000 a year each, about ¥600 billion a year in total, and that a ceiling somewhere in the ¥3 million range of individual annual income was possible.[4] For the floor, options of about ¥530,000, ¥740,000 and about ¥1.06 million in wages had been discussed in the council.[1]
+
+The bill passed the lower house on 6 November with the votes of the Liberal Democratic Party, the Japan Innovation Party and others; every opposition party voted against. Upper house deliberations are expected to start the following week, but the ruling parties lack a majority there, so it is not yet clear whether the bill will become law before the session ends on 12 December.[5]
+
+Opinion: So although it carries the name “refundable tax credit”, what Japan is building first is not a tax credit but an income-linked cash payment, aimed at low- and middle-income people who work. That is the starting point for comparing it with basic income.
+
+#### What a refundable tax credit is
+
+A tax credit is an amount subtracted from the tax you owe. But people who owe little tax cannot use all of it, so the lower your income, the less you gain. A refundable tax credit pays the part you could not use as cash.
+
+One of its roots is the negative income tax, which the economist Milton Friedman popularised in Capitalism and Freedom in 1962. People whose income falls below a set line receive money from the government instead of paying tax. In the late 1960s and the 1970s the United States ran four large experiments to test the idea. In the largest, in Seattle and Denver (about 4,800 families), annual working hours fell by about 9% for husbands, about 20% for wives and about 14% for single mothers. An analysis that found more divorces caused controversy.[6] Mincome in Dauphin, Canada (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-mincome) was a guarantee of the same type, reduced by 50% of other income.
+
+#### How other countries do it
+
+The US Earned Income Tax Credit (EITC) is the best-known refundable tax credit. It grows with earnings, reaches a maximum, and then shrinks as income rises. For 2026, families with three or more children gain 45% of earnings up to $18,290, for a maximum of $8,231; people without children can get at most $664.[7] It is usually paid when the tax return is filed the following year.
+
+Because you have to file to get it, some people miss out. The IRS estimates the national participation rate for tax year 2022 at 80.8% (78% in a separate estimate based on the Current Population Survey): about one in five people who could have claimed it did not.[8]
+
+In 2021 the Child Tax Credit (CTC) was expanded for one year. It rose to $3,000 a year per child ($3,600 under age 6), was paid in full even to families with no income, and half of it was paid in advance every month from July to December. Child poverty on the Census Bureau’s Supplemental Poverty Measure fell to a record low of 5.2% in 2021, and after the expansion ended it more than doubled to 12.4% in 2022 (both as first published).[9] In 2025 it was 13.4%. Even so, refundable tax credits (the EITC and the refundable part of the CTC) lifted 3.3 million children above the poverty line in 2025.[10]
+
+The UK took a different path. Working Tax Credit and Child Tax Credit have been replaced, along with other benefits, by Universal Credit. It is calculated every month from that month’s earnings. For people responsible for a child, or whose health limits their ability to work, the payment falls by 55p for every £1 earned above a monthly work allowance of £427 or £710. A couple is assessed as one household.[11]
+
+The Canada Child Benefit uses tax returns to learn a family’s income and pays monthly. It does not ask whether anyone works. From July 2026 to June 2027 it pays up to C$8,157 a year for each child under 6 and C$6,883 for each child aged 6 to 17, reduced once the family’s previous-year net income exceeds C$38,237.[12]
+
+#### Six differences from basic income
+
+First, who gets it. A basic income goes to everyone. A refundable tax credit draws income lines and pays the people inside them. In Japan’s reference figures, about 20 million people would get the new payment.[4]
+
+Second, whether work is a condition. The EITC and Japan’s payment are designed so that you get nothing without earned income and more once you start working, because they exist to encourage work. The flip side is that they do not reach people who cannot work because of illness, disability, caring or unemployment. Japan’s bill says the government will study measures for such people and reach a conclusion during fiscal 2028.[3] A basic income has no conditions at all.
+
+Third, individual or household. The EITC is set by the tax unit (couples file jointly), Universal Credit by the household, and the Canada Child Benefit by family income. Japan’s payment is individual, which on this point is close to a basic income. Once the full scheme starts, however, people whose spouse earns above a set amount are excluded.[2]
+
+Fourth, when it arrives. A basic income arrives every month, in advance. The EITC is paid after the year ends, through the tax return, and Japan’s payment is made once a year based on the previous year’s income. If your income falls sharply this year, it shows up only next year. The US paid the 2021 CTC in monthly instalments precisely to close this gap.
+
+Fifth, missed payments. When a scheme needs a claim or a tax return, some people who qualify never get it. For the EITC it was about one in five.[8] Japan’s payment is designed to need no application for people with a registered account for public payments, but only about half of residents have registered one.[1]
+
+Sixth, how it falls as income rises. Withdrawing a benefit as income rises works, for the person receiving it, just like a higher tax rate. Universal Credit’s 55% taper, combined with income tax and National Insurance, leaves even less of each extra pound. Every scheme phases out gradually to avoid a sudden “cliff”, but people inside the phase-out range carry a heavier effective burden. Japan’s extra amount for those facing an “income wall” is a response to this problem.[2][11]
+
+#### The same, net
+
+Having listed the differences, here is the twist: a negative income tax and a basic income can be designed to leave everyone with exactly the same final income. Simple numbers show how. The 30% used here is only for comparing the mechanics. It is not a funding estimate.
+
+On the basic income side, everyone gets ¥360,000 a year (¥30,000 a month), and an extra 30% tax is added on all income. On the negative income tax side, a person with no income gets ¥360,000 a year, reduced by 30 sen for every yen of income. The payment reaches zero at an income of ¥1.2 million, and above that people pay 30% of the excess.
+
+With no income, you receive ¥360,000 either way. With ¥1 million of income, under the basic income you receive ¥360,000 and pay ¥300,000, a net gain of ¥60,000; under the negative income tax, ¥360,000 minus ¥300,000 also leaves ¥60,000. With ¥3 million, under the basic income you receive ¥360,000 and pay ¥900,000, a net cost of ¥540,000; under the negative income tax you pay 30% of the ¥1.8 million above ¥1.2 million, again ¥540,000.
+
+Opinion: The net result is identical. What differs is how the money flow looks, and the order in which it arrives. With a basic income, everyone receives the money first, and people with income hand some back as tax. That is why the gross amount paid out looks so large. With the basic income calculator (https://neteru-nyukin.eltociear.workers.dev/calc/?c=jp&w=all&m=30000), ¥30,000 a month for everyone in Japan comes to about ¥44.2 trillion a year gross, about 6.7% of GDP. In a 2017 paper the political philosopher Karl Widerquist calculated, for the United States, that the net cost, after subtracting what comes back as tax, is far smaller than the gross figure.[13]
+
+Opinion: Put the other way round, the real difference between a basic income and a negative income tax is not the net amount. It is whether the money reaches everyone first, or reaches only people whose eligibility has been checked, and later. That difference decides how many people miss out, and whether the money helps right away when someone loses a job. When Heizo Takenaka explained his ¥70,000-a-month plan (https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/), he too spoke of a negative tax rate for people on low incomes, and of paying everyone first and having high earners return it through their tax returns.
+
+#### BIEN’s five criteria
+
+The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”.[14] We used this yardstick in our essay on Japan’s ¥100,000 payment (https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/). Here it is applied to the new Japanese payment.
+
+Periodic? Yes, though only once a year.
+
+Cash? Yes.
+
+Individual? Mostly yes. Once the full scheme starts, people whose spouse’s income is above a set amount are excluded.
+
+Universal? No. Only working people between the income floor and the ceiling.
+
+Unconditional? No. It requires earned income and a certain level of taxes and social insurance contributions paid.[2][3]
+
+Opinion: That is two and a half out of five. The US EITC, calculated per tax unit, conditional on work and limited by income, scores lower still. Missing criteria is less a design flaw than a sign of a different purpose. A refundable tax credit is a tool for lightening the load on people who work and making each extra hour pay. A basic income is a tool for giving everyone a floor, whether or not they work.
+
+#### Three people, side by side
+
+Finally, three examples. Japan’s amounts and lines are not yet set, so we use only the rules in the bill and the outline and the reference figures the government has given. The basic income is ¥30,000 a month (¥360,000 a year) for everyone.
+
+A is looking for work and had no earned income last year. A gets no payment. A basic income would bring ¥360,000 a year, ¥30,000 each month.
+
+B works part-time and earned ¥1 million in wages last year. Whether B qualifies depends on where the floor is set. With a floor of about ¥530,000 or ¥740,000 in wages, B qualifies and, being below the no-local-tax line, would likely receive the flat amount. With about ¥1.06 million, B does not qualify.[1][2] A basic income would bring ¥360,000 a year.
+
+C is an office worker who earned ¥4.5 million in wages last year. That is above the ceiling in the government’s reference figures (individual income in the ¥3 million range), so C would likely get nothing.[4] A basic income would bring C ¥360,000 a year, but C would also pay more tax to fund it, so C could end up paying more, net.
+
+Opinion: The new payment works best for someone like B, and does not reach A. A basic income gives all three the same amount and lets the tax system make the difference. Which is better depends on what you want to achieve.
+
+#### A realistic first step?
+
+Opinion: Refundable tax credits have strengths a basic income lacks. Because they target, the same budget goes further per person. Because take-home pay rises with work, they send a clear signal in favour of working. And agreement is easier to reach. In Japan, the parties in the national council did come together on introducing an income-linked payment in fiscal 2029. What divided them was the “bridge” tied to the consumption tax cut, and in the lower house vote every opposition party voted against.[1][5]
+
+Opinion: What Japan’s payment is building, a way to know each person’s income and pay into their account without an application, is also the foundation any basic income would need. Remembering that the ¥100,000 of 2020 took months to reach some people because each bank account had to be checked by hand, that is no small thing.
+
+Opinion: But its limits matter too. It does not reach people who cannot work, it arrives a year late, and only once a year. The reference amount of about ¥30,000 a year is one twelfth of a ¥30,000-a-month basic income. It is more accurate to see a refundable tax credit not as a substitute for basic income but as a tool that fills one gap in the current system. How far that tool grows will become clear as the amounts and lines are set ahead of the full launch in fiscal 2029. We will be watching.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
+Sources:
+
+1. Social Security National Council (Shakai Hoshō Kokumin Kaigi) — Interim report on the refundable tax credit (29 Jul 2026; PDF, in Japanese): https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260729-4/01_siryou1.pdf
+2. Cabinet Secretariat — Outline for the temporary cut in the consumption tax rate on food and the introduction of the Worker Burden Relief Payment (Cabinet decision, 15 Sep 2026; PDF, in Japanese): https://www.cas.go.jp/jp/seisaku/shouhizei_futankeigenshienkin/dai1/sanko2.pdf
+3. Cabinet Secretariat — Summary of the bill on the temporary cut in the consumption tax rate on food and the Worker Burden Relief Payment (Cabinet decision and submission to the Diet, 9 Oct 2026; PDF, in Japanese): https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf
+4. Kyodo News via Kumamoto Nichinichi Shimbun — Government floats an average of about ¥30,000 for the new payment, about 20 million people in FY2027–28 (17 Oct 2026, in Japanese): https://kumanichi.com/articles/2047683
+5. ANN News (via KSB Setonaikai Broadcasting) — Consumption tax cut bill passes the House of Representatives with the ruling parties’ votes; all opposition parties against (6 Nov 2026, in Japanese): https://news.ksb.co.jp/ann/article/17029673
+6. US Department of Health and Human Services, ASPE — Overview of the Final Report of the Seattle-Denver Income Maintenance Experiment (1983): https://aspe.hhs.gov/reports/overview-final-report-seattle-denver-income-maintenance-experiment
+7. IRS — Revenue Procedure 2025-32: inflation-adjusted items for 2026, including the EITC and Child Tax Credit (PDF): https://www.irs.gov/pub/irs-drop/rp-25-32.pdf
+8. IRS — EITC participation rate by states (tax year 2022): https://www.irs.gov/tax-professionals/eitc-central/eitc-participation-rate-by-state
+9. US Census Bureau — Poverty in the United States: 2022 (P60-280, Sep 2023): https://www.census.gov/library/publications/2023/demo/p60-280.html
+10. US Census Bureau — Christina Bijou and Emily A. Shrider, Poverty in the United States: 2025 (P60-290, Sep 2026): https://www.census.gov/library/publications/2026/demo/p60-290.html
+11. GOV.UK — Universal Credit: how your wages affect your payments: https://www.gov.uk/universal-credit/how-your-wages-affect-your-payments
+12. Canada Revenue Agency — Canada Child Benefit: how we calculate your CCB (July 2026 to June 2027): https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html
+13. Karl Widerquist — “The cost of basic income: back-of-the-envelope calculations”, Basic Income Studies 12(2) (2017): https://doi.org/10.1515/bis-2017-0016
+14. Basic Income Earth Network (BIEN) — About Basic Income: https://basicincome.org/about-basic-income/
+
 ### Did Finland’s basic income experiment fail? What it showed, and what it could not
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
@@ -1078,6 +1210,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
+
 Sources:
 
 1. J-CAST News — “Let’s ask Heizo Takenaka about basic income again: ‘I never said you could live on ¥70,000 a month’” (interview, 10 Oct 2020, in Japanese): https://www.j-cast.com/2020/10/10396316.html
@@ -1298,6 +1432,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digit
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/nesara-gesara-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
 
 Sources:
 

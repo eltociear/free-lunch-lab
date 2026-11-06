@@ -187,6 +187,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-d146207329.woff2",
     "chars": "§"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-c2c60edd33.woff2",
+    "chars": "保民議障"
    }
   ],
   "de:body:700": [
@@ -245,6 +249,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-69e24fbfdc.woff2",
     "chars": "§"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-81901088ea.woff2",
+    "chars": "保民議障"
    }
   ],
   "de:display": [
@@ -343,6 +351,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-327cd2c767.woff2",
     "chars": "§äö"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-c2c60edd33.woff2",
+    "chars": "保民議障"
    }
   ],
   "en:body:700": [
@@ -401,6 +413,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-b0a4cffda0.woff2",
     "chars": "§äö"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-81901088ea.woff2",
+    "chars": "保民議障"
    }
   ],
   "en:display": [
@@ -491,6 +507,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-327cd2c767.woff2",
     "chars": "§äö"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-c2c60edd33.woff2",
+    "chars": "保民議障"
    }
   ],
   "es:body:700": [
@@ -553,6 +573,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-b0a4cffda0.woff2",
     "chars": "§äö"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-81901088ea.woff2",
+    "chars": "保民議障"
    }
   ],
   "es:display": [
@@ -875,6 +899,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-758ab84162.woff2",
     "chars": "§äö亮功命孤悲抱授斉緑陥魔"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-6db1c22007.woff2",
+    "chars": "五六右壁崖左折捉浮綱衆離"
    }
   ],
   "ja:body:700": [
@@ -1061,6 +1089,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-3eba52006a.woff2",
     "chars": "§äö亮功命孤悲抱授斉緑陥魔"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-2f3e2b4c49.woff2",
+    "chars": "五六右壁崖左折捉浮綱衆離"
    }
   ],
   "ja:display": [
@@ -1155,6 +1187,10 @@
    {
     "file": "dela-gothic-one-400-ja-5770d2b311.woff2",
     "chars": "切後打"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-80e828bfb9.woff2",
+    "chars": "味外就担控援正海測的税第負軽除"
    }
   ],
   "ja:dot": [
@@ -1379,6 +1415,10 @@
    {
     "file": "noto-sans-sc-400-zh-472fc749f7.woff2",
     "chars": "§äö侧典坎孤彻忘悲抑授热绿蒂赫趋郁魔"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-6fbf7c24f9.woff2",
+    "chars": "丹佛墙奎封崖悬抚洞疾病議豁雅顶鼓"
    }
   ],
   "zh:body:700": [
@@ -1561,6 +1601,10 @@
    {
     "file": "noto-sans-sc-700-zh-83bbdf185f.woff2",
     "chars": "§äö侧典坎孤彻忘悲抑授热绿蒂赫趋郁魔"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-2dc2eaf87c.woff2",
+    "chars": "丹佛墙奎封崖悬抚洞疾病議豁雅顶鼓"
    }
   ],
   "zh:display": [
@@ -1651,6 +1695,10 @@
    {
     "file": "noto-sans-sc-900-zh-93262beec3.woff2",
     "chars": "停又叫底弄清第终芬诉"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-8f0e1fc495.woff2",
+    "chars": "业六净准抵担税衡负轻退"
    }
   ],
   "zh:dot": [

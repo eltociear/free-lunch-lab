@@ -2871,6 +2871,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-06",
+      "en": "Published the essay “Refundable tax credits vs basic income: what Japan’s new payment for workers is, and is not”",
+      "ja": "エッセイ『給付付き税額控除とベーシックインカムは、何が違うのか：日本の「就業者負担軽減支援金」から考える』を公開",
+      "zh": "发布随笔《可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起》",
+      "hi": "निबंध “रिफ़ंडेबल टैक्स क्रेडिट और बेसिक इनकम में क्या फ़र्क़ है? कामगारों के लिए जापान का नया भुगतान क्या है, और क्या नहीं” प्रकाशित",
+      "es": "Publicado el ensayo «Créditos fiscales reembolsables frente a renta básica: qué es, y qué no es, el nuevo pago de Japón para quienes trabajan»",
+      "de": "Essay „Erstattungsfähige Steuergutschrift oder Grundeinkommen? Was Japans neue Zahlung für Erwerbstätige ist und was nicht“ veröffentlicht",
+      "ar": "نشرنا مقال «الائتمان الضريبي القابل للاسترداد أم الدخل الأساسي؟ ما هي دفعة اليابان الجديدة للعاملين، وما ليست هي»"
+    },
+    {
+      "date": "2026-11-06",
       "en": "Published the essay “Did Finland’s basic income experiment fail? What it showed, and what it could not”",
       "ja": "エッセイ『「フィンランドで失敗した」は本当か：ベーシックインカム実験でわかったこと、わからなかったこと』を公開",
       "zh": "发布随笔《“芬兰已经试过了，失败了”是真的吗？基本收入实验弄清了什么，又没能弄清什么》",
@@ -8885,6 +8895,7 @@ module.exports = {
   "TIMELINE": [
     {
       "id": "mincome",
+      "essays": ["refundable-tax-credit-vs-basic-income"],
       "years": "1974–1979",
       "type": "gov",
       "name": "Mincome",
@@ -9147,6 +9158,7 @@ module.exports = {
     },
     {
       "id": "ontario",
+      "essays": ["refundable-tax-credit-vs-basic-income"],
       "years": "2017–2018",
       "type": "gov",
       "name": "Ontario Basic Income Pilot",
@@ -9766,6 +9778,1577 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "refundable-tax-credit-vs-basic-income",
+      "date": "2026-11-06",
+      "related": [
+        "japan-special-cash-payment",
+        "takenaka-70000-yen-basic-income",
+        "openresearch-cash-study"
+      ],
+      "title": {
+        "ja": "給付付き税額控除とベーシックインカムは、何が違うのか：日本の「就業者負担軽減支援金」から考える",
+        "en": "Refundable tax credits vs basic income: what Japan’s new payment for workers is, and is not",
+        "zh": "可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起",
+        "hi": "रिफ़ंडेबल टैक्स क्रेडिट और बेसिक इनकम में क्या फ़र्क़ है? कामगारों के लिए जापान का नया भुगतान क्या है, और क्या नहीं",
+        "es": "Créditos fiscales reembolsables frente a renta básica: qué es, y qué no es, el nuevo pago de Japón para quienes trabajan",
+        "de": "Erstattungsfähige Steuergutschrift oder Grundeinkommen? Was Japans neue Zahlung für Erwerbstätige ist und was nicht",
+        "ar": "الائتمان الضريبي القابل للاسترداد أم الدخل الأساسي؟ ما هي دفعة اليابان الجديدة للعاملين، وما ليست هي"
+      },
+      "desc": {
+        "ja": "「給付付き税額控除」の第一歩、就業者負担軽減支援金の法案が衆院を通過しました。米国や英国、カナダの例と並べ、ベーシックインカムとの違いを整理します。",
+        "en": "Japan’s first step to a refundable tax credit cleared the lower house in Nov 2026. How it and the US EITC compare with basic income, point by point.",
+        "zh": "作为“可退还税收抵免”第一步的日本就业者负担减轻支援金法案，于 2026 年 11 月在众议院通过。我们把它与美国的 EITC、儿童税收抵免以及英国、加拿大的做法放在一起，逐项看它与基本收入的异同。",
+        "hi": "रिफ़ंडेबल टैक्स क्रेडिट की ओर जापान का पहला क़दम नवंबर 2026 में निचले सदन से पास हुआ। यह और अमेरिका का EITC बेसिक इनकम से कहाँ मिलते हैं, कहाँ नहीं।",
+        "es": "El primer paso de Japón hacia un crédito fiscal reembolsable pasó la cámara baja en nov. de 2026. En qué se parecen él y el EITC a una renta básica.",
+        "de": "Japans erster Schritt zur erstattungsfähigen Steuergutschrift passierte im Nov. 2026 das Unterhaus. Was ihn und den US-EITC vom Grundeinkommen trennt.",
+        "ar": "أقرّ مجلس النواب الياباني في نوفمبر 2026 أول خطوة نحو ائتمان ضريبي قابل للاسترداد. كيف تقارَن هي والـEITC الأمريكي وغيرهما بالدخل الأساسي، نقطةً نقطة."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2026年11月6日、衆議院で一つの法案が可決されました。食料品の消費税率を2年間1%に下げ、あわせて、働く中低所得の人に所得に応じた現金を毎年配る「就業者負担軽減支援金」をつくる法案です。政府はこの支援金を、長く議論されてきた「給付付き税額控除」の第一歩と位置づけています。[2][5]"
+          ],
+          [
+            "p",
+            "給付付き税額控除と聞いて、ベーシックインカムに近いものを思い浮かべる人もいるかもしれません。どちらも、税の仕組みと現金の給付をつなげる考え方だからです。けれども二つは、誰に、どんな条件で、いつ届くのかが大きく違います。日本の制度で決まったことと決まっていないことを確かめたうえで、海外の例と並べて、違いを一つずつ見ていきます。"
+          ],
+          [
+            "h",
+            "日本で決まったこと、まだ決まっていないこと"
+          ],
+          [
+            "p",
+            "2025年夏の参院選で与党が掲げた一律2万円の給付は実現せず、議論の中心は、所得に応じて毎年続く仕組みへ移りました。2025年12月18日には自民党と国民民主党が、給付付き税額控除などの導入を念頭に、所得税の人的控除のあり方を3年以内に抜本的に見直すことで合意しています。[1]"
+          ],
+          [
+            "p",
+            "2026年2月に始まった社会保障国民会議は、与野党の実務者会議と有識者会議で議論を重ね、7月29日に中間とりまとめを出しました。中低所得の現役勤労者の手取りを増やすことと、「年収の壁」による働き控えを和らげることを目的に、税・社会保険料の負担と現金給付をまとめて捉える「所得に連動したきめ細かな給付」を令和11年度（2029年度）に導入する、という内容です。税額控除と給付を組み合わせるのが理想だという強い意見もありましたが、制度が複雑になるのを避けるため、当面は給付に一本化することになりました。[1]"
+          ],
+          [
+            "p",
+            "政府は9月15日にこれを具体化した大綱を閣議決定し、10月9日に法案を国会に出しました。2027年4月から2年間、食料品の消費税率を8%から1%（国の消費税0.78%と地方消費税の合計）に下げ、その2年間は、消費税1%分の税収見込みの範囲で支援金を先に配ります。税率が8%に戻る2029年度からが本格導入です。[2][3]"
+          ],
+          [
+            "p",
+            "法案と大綱に書かれた仕組みは、次のとおりです。対象は個人単位で、単身者も含みます。前の年の勤労所得（給与所得と、一定額を超える事業所得や業務に係る雑所得）が下限を超えていること、合計所得が上限以下であること（上限は子どもの数で変わります）、税と社会保険料の負担が一定の基準を超えていることが条件です。働いていて現役並みの負担がある年金受給者も対象になります。本格導入後は、配偶者の所得が一定額を超える人は対象から外れます。[2][3]"
+          ],
+          [
+            "p",
+            "金額は、勤労所得が住民税のかからない水準（単身者で給与収入119万円）をもとに決める額までの人には定額、そこから勤労所得が増えるにつれて増やし、ある水準で頭打ちにして、合計所得がさらに高くなると減らして最後はゼロにする、という形です。18歳以下の子ども（2027・2028年度は16歳未満）がいれば定額の加算があり、「年収の壁」に当たる人には、壁がなくなるまでの時限的な加算もつきます。[2]"
+          ],
+          [
+            "p",
+            "支払いは年度ごとに原則年1回です。住んでいる市区町村が受給資格を認定し、認定から2か月以内に振り込みます。公金受取口座を登録している人は、申請しなくても市区町村が職権で認定するのが原則です。支援金には税金がかからず、差し押さえもできません。費用は国が3分の2以上を負担します。[2][3]"
+          ],
+          [
+            "p",
+            "決まっていないのは、肝心の金額と線引きです。所得の下限と上限、支援金の額は、すべて政令で決めることになっています。[3] 政府が10月に与野党に「一つの参考」として示した案では、2027・2028年度の対象は約2,000万人、1人あたり平均で年3万円程度、総額は年約6,000億円で、個人年収300万円台が上限になる可能性があると報じられています。[4] 所得の下限については、国民会議で給与収入約53万円、74万円、約106万円という案が出ていました。[1]"
+          ],
+          [
+            "p",
+            "法案は11月6日、自民党と日本維新の会などの賛成多数で衆院を通過し、野党はすべて反対しました。参院での審議は翌週から始まる見通しですが、参院では与党が過半数に届いておらず、12月12日までの会期中に成立するかはまだ分かりません。[5]"
+          ],
+          [
+            "o",
+            "名前は「給付付き税額控除」でも、最初にできるのは税額控除ではなく、所得に応じた給付です。そして対象は「働いている中低所得の人」に絞られています。ここが、ベーシックインカムとの違いを考える出発点になります。"
+          ],
+          [
+            "h",
+            "給付付き税額控除とは、もともと何か"
+          ],
+          [
+            "p",
+            "税額控除は、納める税金から一定の額を差し引く仕組みです。ただ、もともと納める税金が少ない人は、控除を使い切れません。所得が低い人ほど恩恵が小さくなるわけです。そこで、引ききれなかった分を現金で払うのが「給付付き」（英語では refundable）の税額控除です。"
+          ],
+          [
+            "p",
+            "その源流の一つが、経済学者ミルトン・フリードマンが1962年の『資本主義と自由』で広めた「負の所得税」です。所得が一定の線より低い人は、税を納める代わりに、政府からお金を受け取ります。アメリカでは1960年代末から70年代にかけて、この考え方を確かめる大きな実験が4つ行われました。最大のシアトル・デンバー実験（約4,800世帯）では、年間の労働時間が夫で約9%、妻で約20%、母子世帯の母親で約14%減りました。離婚が増えたという分析も出て、論争になりました。[6] {カナダのドーフィンで行われたミンカム|/timeline/#tl-mincome}も、ほかの収入の50%を差し引く、同じ型の保障でした。"
+          ],
+          [
+            "h",
+            "海外ではどう動いているか"
+          ],
+          [
+            "p",
+            "アメリカの勤労所得税額控除（EITC）は、給付付き税額控除のいちばん有名な例です。働いて得た所得に比例して控除が増え、上限に達したあと、所得が高くなると減っていきます。2026年分では、子どもが3人以上いる家庭は勤労所得1万8,290ドルまで所得の45%ずつ増えて最大8,231ドル、子どものいない人は最大664ドルです。[7] 受け取るのは、原則として翌年の確定申告のときです。"
+          ],
+          [
+            "p",
+            "申告しなければ受け取れないので、取りこぼしも出ます。内国歳入庁（IRS）の推計では、2022年分の参加率は全国で80.8%（人口調査をもとにした別の推計では78%）で、受け取れるはずの人のおよそ5人に1人が受け取っていません。[8]"
+          ],
+          [
+            "p",
+            "2021年には、子ども税額控除（CTC）が1年だけ大きく広げられました。子ども1人あたり年3,000ドル（6歳未満は3,600ドル）に増やし、所得がなくても全額を受け取れるようにして、その半分を7月から12月まで毎月前払いしたのです。国勢調査局の補足的貧困指標で見た子どもの貧困率は、2021年に5.2%と記録上最低になり、拡充が終わった2022年には12.4%と2倍以上に戻りました（いずれも当初の公表値）。[9] 2025年は13.4%です。それでも、EITCとCTCを合わせた給付付き税額控除は、2025年に330万人の子どもを貧困線の上に押し上げています。[10]"
+          ],
+          [
+            "p",
+            "イギリスは別の道をとりました。働く人向けの税額控除（Working Tax Credit）や子ども向けの税額控除は、ほかの給付とともにユニバーサル・クレジットに置き換えられています。毎月の所得をもとに毎月計算し、子どもがいる人や、病気・障害で働く力が限られる人は、月427ポンドまたは710ポンドの「就労控除」を超えた収入1ポンドにつき55ペンス減額されます。夫婦は一つの世帯として扱われます。[11]"
+          ],
+          [
+            "p",
+            "カナダの児童手当（Canada Child Benefit）は、税の申告を通じて家族の所得をつかみ、毎月払う仕組みです。働いているかどうかは問いません。2026年7月から2027年6月までの支給額は、6歳未満の子ども1人あたり最大で年8,157カナダドル、6〜17歳で6,883カナダドルで、前の年の家族の純所得が3万8,237カナダドルを超えると減っていきます。[12]"
+          ],
+          [
+            "h",
+            "ベーシックインカムとの6つの違い"
+          ],
+          [
+            "p",
+            "一つめは、誰に届くかです。ベーシックインカムは全員に届きます。給付付き税額控除は、所得の線を引いて、その内側の人に届けます。日本の支援金も、参考の数字では対象は約2,000万人です。[4]"
+          ],
+          [
+            "p",
+            "二つめは、働くことが条件かどうかです。EITCや日本の支援金は、勤労所得がないと受け取れず、働き始めると増えるように設計されています。働くことを後押しするための仕組みだからです。そのかわり、病気や障害、介護、失業で働けない人には届きません。日本の法案は、こうした人への対応を令和10年度（2028年度）中に検討して結論を出すとしています。[3] ベーシックインカムには、そもそも条件がありません。"
+          ],
+          [
+            "p",
+            "三つめは、個人単位か世帯単位かです。EITCは申告の単位（夫婦は合算）、ユニバーサル・クレジットは世帯、カナダの児童手当は家族の所得で決まります。日本の支援金は個人単位で、この点ではベーシックインカムに近い設計です。ただし本格導入後は、配偶者の所得が一定額を超える人は外れます。[2]"
+          ],
+          [
+            "p",
+            "四つめは、いつ届くかです。ベーシックインカムは、毎月、先に届きます。EITCは1年が終わってから申告で受け取り、日本の支援金も前の年の所得をもとに年1回払われます。今年急に収入が減っても、それが反映されるのは翌年です。2021年のアメリカがCTCを毎月の前払いにしたのは、この時間差を縮めるためでした。"
+          ],
+          [
+            "p",
+            "五つめは、取りこぼしです。申請や申告が必要な制度では、受け取れるはずの人が受け取れないことが起こります。EITCでは約2割でした。[8] 日本の支援金は、公金受取口座を登録していれば申請なしで受け取れる設計ですが、登録率はまだ5割程度です。[1]"
+          ],
+          [
+            "p",
+            "六つめは、所得が増えたときの減り方です。所得に応じて給付を減らすことは、受け取る側から見ると、税率が上がるのと同じ働きをします。ユニバーサル・クレジットの55%に所得税や社会保険料が重なると、稼いだ1ポンドのうち手元に残るのはさらに少なくなります。急に給付がなくなる「崖」を避けるため、どの制度も少しずつ減らす形をとっていますが、減っていく範囲にいる人にとっては、実質的な負担が重くなります。日本の支援金が「年収の壁」への加算を入れたのも、この問題への対応です。[2][11]"
+          ],
+          [
+            "h",
+            "「正味」では同じにできる"
+          ],
+          [
+            "p",
+            "ここまで違いを並べてきましたが、実は、負の所得税とベーシックインカムは、一人ひとりの最終的な手取りで見ると、同じ結果になるように設計できます。わかりやすい数字で確かめてみます。ここでの30%は、仕組みを比べるためだけの仮の数字で、財源の試算ではありません。"
+          ],
+          [
+            "p",
+            "ベーシックインカムの側では、全員に年36万円（月3万円）を配り、そのぶん、すべての所得に30%の税を上乗せします。負の所得税の側では、所得がゼロの人に年36万円を払い、所得1円ごとに30銭ずつ減らします。給付がゼロになるのは所得120万円で、それより上の人は、超えた分の30%を納めます。"
+          ],
+          [
+            "p",
+            "所得がゼロの人は、どちらでも36万円の受け取りです。所得100万円の人は、ベーシックインカムでは36万円を受け取って30万円を納めるので、差し引き6万円の受け取り。負の所得税でも36万円から30万円減って6万円です。所得300万円の人は、ベーシックインカムでは36万円を受け取って90万円を納め、差し引き54万円の負担。負の所得税でも、120万円を超えた180万円の30%で、54万円の負担です。"
+          ],
+          [
+            "o",
+            "正味は、まったく同じです。違うのは、お金の流れの見え方と、届く順番です。ベーシックインカムでは、いったん全員が受け取り、所得のある人は税として返します。だから、配る総額（グロス）はとても大きく見えます。{ベーシックインカム計算機|/calc/?c=jp&w=all&m=30000}で、日本の全員に月3万円を配ると、グロスでは年約44.2兆円、GDPの約6.7%です。政治哲学者のカール・ワイダークイストは2017年の論文で、アメリカについて、税として戻ってくる分を差し引いた正味の費用は、グロスよりずっと小さくなると計算しました。[13]"
+          ],
+          [
+            "o",
+            "逆に言えば、ベーシックインカムと負の所得税の本当の違いは、正味の額ではなく、先に全員に届くのか、条件を確かめられた人にだけあとから届くのか、という点にあります。この違いが、受け取り漏れや、仕事を失ったときにすぐ支えになるかどうかを左右します。 {竹中平蔵さんが月7万円案を説明したとき|/essays/takenaka-70000-yen-basic-income/}も、所得の低い人には「マイナスの税率」がかかると言い、全員に先に配って、所得の高い人には確定申告で返してもらう方法を挙げていました。"
+          ],
+          [
+            "h",
+            "BIENの5つのものさしで測る"
+          ],
+          [
+            "p",
+            "ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義しています。[14] {10万円のエッセイ|/essays/japan-special-cash-payment/}でも使ったこのものさしを、日本の支援金に当てはめてみます。"
+          ],
+          [
+            "p",
+            "定期的か。はい。ただし年1回です。"
+          ],
+          [
+            "p",
+            "現金か。はい。"
+          ],
+          [
+            "p",
+            "個人単位か。おおむね、はい。ただし本格導入後は、配偶者の所得が一定額を超える人が外れます。"
+          ],
+          [
+            "p",
+            "普遍的か。いいえ。所得の下限と上限の内側にいる、働いている人だけです。"
+          ],
+          [
+            "p",
+            "無条件か。いいえ。勤労所得と、一定の税・社会保険料の負担が条件です。[2][3]"
+          ],
+          [
+            "o",
+            "5つのうち、2つ半を満たします。アメリカのEITCは、申告の単位で計算され、働くことが条件で、所得の線もあるので、これより少なくなります。満たさないのは、設計の欠陥というより、目的が違うからです。給付付き税額控除は、働いている人の負担を軽くし、働くほど手取りが増えるようにするための道具です。ベーシックインカムは、働いているかどうかにかかわらず、全員の暮らしの土台をつくるための道具です。"
+          ],
+          [
+            "h",
+            "3人で比べてみる"
+          ],
+          [
+            "p",
+            "最後に、3人の例で比べます。支援金の金額や線引きはまだ決まっていないので、ここでは法案と大綱の仕組みと、政府が示した参考の数字だけを使います。ベーシックインカムは、全員に月3万円（年36万円）とします。"
+          ],
+          [
+            "p",
+            "Aさんは、仕事を探している最中で、去年の勤労所得はありません。支援金は受け取れません。ベーシックインカムなら、年36万円が毎月3万円ずつ届きます。"
+          ],
+          [
+            "p",
+            "Bさんは、パートで働き、去年の給与収入は100万円です。支援金の対象になるかどうかは、所得の下限をどこに引くかで変わります。給与収入約53万円か74万円の案なら対象で、住民税のかからない水準より下なので、定額の部分に入る見込みです。約106万円の案なら対象外です。[1][2] ベーシックインカムなら年36万円です。"
+          ],
+          [
+            "p",
+            "Cさんは、会社員で、去年の給与収入は450万円です。政府の参考案の上限（個人年収300万円台）を上回るので、支援金は受け取れない見込みです。[4] ベーシックインカムなら年36万円を受け取りますが、財源のための税も増えるので、正味では負担が増える可能性があります。"
+          ],
+          [
+            "o",
+            "支援金がいちばん届きやすいのはBさんのような人で、Aさんには届きません。ベーシックインカムは3人に同じ額を届け、差は税の側でつけます。どちらが良いかは、何を目的にするかで変わります。"
+          ],
+          [
+            "h",
+            "現実的な第一歩か"
+          ],
+          [
+            "o",
+            "給付付き税額控除には、ベーシックインカムにはない強みがあります。配る相手を絞るので、同じ予算でも一人あたりを厚くできます。働くほど手取りが増えるので、働くことへの後押しを分かりやすく示せます。合意もつくりやすい。日本でも、国民会議で与野党は、2029年度に所得に連動した給付を入れることでは折り合いました。対立したのは消費税の減税と組み合わせた「つなぎ」のほうで、衆院の採決では野党がすべて反対しています。[1][5]"
+          ],
+          [
+            "o",
+            "日本の支援金がつくろうとしているもの、つまり、一人ひとりの所得をつかみ、申請なしで口座に振り込む仕組みは、ベーシックインカムを配るときにも欠かせない土台です。2020年の10万円が、口座の確認に手間取って届くまでに何か月もかかったことを思えば、その意味は小さくありません。"
+          ],
+          [
+            "o",
+            "ただ、限界も見ておく必要があります。働けない人には届かず、届くのは1年遅れで、年1回です。年3万円程度という参考の額は、月3万円のベーシックインカムの12分の1です。給付付き税額控除は、ベーシックインカムの代わりというより、いまある制度の穴の一つを埋める道具だと考えるのが正確だと思います。その道具がどこまで育つのか。2029年度の本格導入に向けて、金額と線引きが決まっていくのを見ていきます。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "On 6 November 2026, Japan’s House of Representatives passed a bill. It cuts the consumption tax on food to 1% for two years and creates the Worker Burden Relief Payment (shūgyōsha futan keigen shienkin), cash paid every year to low- and middle-income people who work, in proportion to their income. The government calls the payment the first step toward a “refundable tax credit”, an idea Japan has debated for years.[2][5]"
+          ],
+          [
+            "p",
+            "Some people hear “refundable tax credit” and think of something close to basic income. Both link the tax system to cash payments. But the two differ sharply in who gets the money, on what conditions, and when. We first check what Japan has decided and what it has not, then set it beside examples from other countries and go through the differences one by one."
+          ],
+          [
+            "h",
+            "What Japan has decided, and what it has not"
+          ],
+          [
+            "p",
+            "The flat ¥20,000 handout the ruling parties promised in the summer 2025 upper house election never happened, and the debate moved to a scheme that would pay every year according to income. On 18 December 2025 the Liberal Democratic Party and the Democratic Party for the People agreed to overhaul the personal allowances in income tax within three years, with a refundable tax credit or similar scheme in mind.[1]"
+          ],
+          [
+            "p",
+            "The Social Security National Council, which began in February 2026, worked through cross-party working-level and expert meetings and issued an interim report on 29 July. It proposed introducing an “income-linked, finely tuned payment” in fiscal 2029, treating taxes, social insurance contributions and cash benefits together, with two aims: to raise the take-home pay of low- and middle-income workers, and to ease the “income walls” that lead people to hold back on work. Some members argued strongly that the ideal is a mix of tax credit and cash, but to avoid a complex system the council chose cash payments alone for now.[1]"
+          ],
+          [
+            "p",
+            "On 15 September the cabinet approved an outline putting this into concrete form, and on 9 October it sent the bill to the Diet. From April 2027, for two years, the consumption tax on food falls from 8% to 1% (0.78% national plus local consumption tax). During those two years the payment starts early, capped at the revenue expected from one percentage point of the food tax. The full scheme begins in fiscal 2029, when the rate returns to 8%.[2][3]"
+          ],
+          [
+            "p",
+            "The bill and the outline set out the rules. Eligibility is individual, and single people are included. A person qualifies if the previous year’s earned income (wages, plus business or freelance income above a set amount) is above a floor, total income is at or below a ceiling (the ceiling depends on the number of children), and the taxes and social insurance contributions they pay are above a set level. Pensioners who work and pay as much as working-age people are also covered. Once the full scheme starts, people whose spouse’s income is above a set amount are excluded.[2][3]"
+          ],
+          [
+            "p",
+            "The amount is flat for people whose earned income is up to a level set with reference to the line below which no local income tax is due (¥1.19 million in wages for a single person). Above that it rises with earned income, levels off, and then, as total income rises further, falls to zero. There is a flat addition for each child aged 18 or under (under 16 in fiscal 2027 and 2028), and a temporary addition for people hitting an “income wall”, until those walls are removed.[2]"
+          ],
+          [
+            "p",
+            "As a rule it is paid once a year. The municipality where the person lives confirms eligibility and pays within two months. For people who have registered a bank account for public payments, the municipality is meant to confirm eligibility on its own, with no application needed. The payment is not taxed and cannot be seized. The national government pays at least two thirds of the cost.[2][3]"
+          ],
+          [
+            "p",
+            "What is not decided is the part that matters most: the amounts and the lines. The income floor, the ceiling and the payment amounts will all be set by cabinet order.[3] As “one reference”, the government told the parties in October that in fiscal 2027 and 2028 about 20 million people could be covered, with an average of about ¥30,000 a year each, about ¥600 billion a year in total, and that a ceiling somewhere in the ¥3 million range of individual annual income was possible.[4] For the floor, options of about ¥530,000, ¥740,000 and about ¥1.06 million in wages had been discussed in the council.[1]"
+          ],
+          [
+            "p",
+            "The bill passed the lower house on 6 November with the votes of the Liberal Democratic Party, the Japan Innovation Party and others; every opposition party voted against. Upper house deliberations are expected to start the following week, but the ruling parties lack a majority there, so it is not yet clear whether the bill will become law before the session ends on 12 December.[5]"
+          ],
+          [
+            "o",
+            "So although it carries the name “refundable tax credit”, what Japan is building first is not a tax credit but an income-linked cash payment, aimed at low- and middle-income people who work. That is the starting point for comparing it with basic income."
+          ],
+          [
+            "h",
+            "What a refundable tax credit is"
+          ],
+          [
+            "p",
+            "A tax credit is an amount subtracted from the tax you owe. But people who owe little tax cannot use all of it, so the lower your income, the less you gain. A refundable tax credit pays the part you could not use as cash."
+          ],
+          [
+            "p",
+            "One of its roots is the negative income tax, which the economist Milton Friedman popularised in Capitalism and Freedom in 1962. People whose income falls below a set line receive money from the government instead of paying tax. In the late 1960s and the 1970s the United States ran four large experiments to test the idea. In the largest, in Seattle and Denver (about 4,800 families), annual working hours fell by about 9% for husbands, about 20% for wives and about 14% for single mothers. An analysis that found more divorces caused controversy.[6] {Mincome in Dauphin, Canada|/timeline/#tl-mincome} was a guarantee of the same type, reduced by 50% of other income."
+          ],
+          [
+            "h",
+            "How other countries do it"
+          ],
+          [
+            "p",
+            "The US Earned Income Tax Credit (EITC) is the best-known refundable tax credit. It grows with earnings, reaches a maximum, and then shrinks as income rises. For 2026, families with three or more children gain 45% of earnings up to $18,290, for a maximum of $8,231; people without children can get at most $664.[7] It is usually paid when the tax return is filed the following year."
+          ],
+          [
+            "p",
+            "Because you have to file to get it, some people miss out. The IRS estimates the national participation rate for tax year 2022 at 80.8% (78% in a separate estimate based on the Current Population Survey): about one in five people who could have claimed it did not.[8]"
+          ],
+          [
+            "p",
+            "In 2021 the Child Tax Credit (CTC) was expanded for one year. It rose to $3,000 a year per child ($3,600 under age 6), was paid in full even to families with no income, and half of it was paid in advance every month from July to December. Child poverty on the Census Bureau’s Supplemental Poverty Measure fell to a record low of 5.2% in 2021, and after the expansion ended it more than doubled to 12.4% in 2022 (both as first published).[9] In 2025 it was 13.4%. Even so, refundable tax credits (the EITC and the refundable part of the CTC) lifted 3.3 million children above the poverty line in 2025.[10]"
+          ],
+          [
+            "p",
+            "The UK took a different path. Working Tax Credit and Child Tax Credit have been replaced, along with other benefits, by Universal Credit. It is calculated every month from that month’s earnings. For people responsible for a child, or whose health limits their ability to work, the payment falls by 55p for every £1 earned above a monthly work allowance of £427 or £710. A couple is assessed as one household.[11]"
+          ],
+          [
+            "p",
+            "The Canada Child Benefit uses tax returns to learn a family’s income and pays monthly. It does not ask whether anyone works. From July 2026 to June 2027 it pays up to C$8,157 a year for each child under 6 and C$6,883 for each child aged 6 to 17, reduced once the family’s previous-year net income exceeds C$38,237.[12]"
+          ],
+          [
+            "h",
+            "Six differences from basic income"
+          ],
+          [
+            "p",
+            "First, who gets it. A basic income goes to everyone. A refundable tax credit draws income lines and pays the people inside them. In Japan’s reference figures, about 20 million people would get the new payment.[4]"
+          ],
+          [
+            "p",
+            "Second, whether work is a condition. The EITC and Japan’s payment are designed so that you get nothing without earned income and more once you start working, because they exist to encourage work. The flip side is that they do not reach people who cannot work because of illness, disability, caring or unemployment. Japan’s bill says the government will study measures for such people and reach a conclusion during fiscal 2028.[3] A basic income has no conditions at all."
+          ],
+          [
+            "p",
+            "Third, individual or household. The EITC is set by the tax unit (couples file jointly), Universal Credit by the household, and the Canada Child Benefit by family income. Japan’s payment is individual, which on this point is close to a basic income. Once the full scheme starts, however, people whose spouse earns above a set amount are excluded.[2]"
+          ],
+          [
+            "p",
+            "Fourth, when it arrives. A basic income arrives every month, in advance. The EITC is paid after the year ends, through the tax return, and Japan’s payment is made once a year based on the previous year’s income. If your income falls sharply this year, it shows up only next year. The US paid the 2021 CTC in monthly instalments precisely to close this gap."
+          ],
+          [
+            "p",
+            "Fifth, missed payments. When a scheme needs a claim or a tax return, some people who qualify never get it. For the EITC it was about one in five.[8] Japan’s payment is designed to need no application for people with a registered account for public payments, but only about half of residents have registered one.[1]"
+          ],
+          [
+            "p",
+            "Sixth, how it falls as income rises. Withdrawing a benefit as income rises works, for the person receiving it, just like a higher tax rate. Universal Credit’s 55% taper, combined with income tax and National Insurance, leaves even less of each extra pound. Every scheme phases out gradually to avoid a sudden “cliff”, but people inside the phase-out range carry a heavier effective burden. Japan’s extra amount for those facing an “income wall” is a response to this problem.[2][11]"
+          ],
+          [
+            "h",
+            "The same, net"
+          ],
+          [
+            "p",
+            "Having listed the differences, here is the twist: a negative income tax and a basic income can be designed to leave everyone with exactly the same final income. Simple numbers show how. The 30% used here is only for comparing the mechanics. It is not a funding estimate."
+          ],
+          [
+            "p",
+            "On the basic income side, everyone gets ¥360,000 a year (¥30,000 a month), and an extra 30% tax is added on all income. On the negative income tax side, a person with no income gets ¥360,000 a year, reduced by 30 sen for every yen of income. The payment reaches zero at an income of ¥1.2 million, and above that people pay 30% of the excess."
+          ],
+          [
+            "p",
+            "With no income, you receive ¥360,000 either way. With ¥1 million of income, under the basic income you receive ¥360,000 and pay ¥300,000, a net gain of ¥60,000; under the negative income tax, ¥360,000 minus ¥300,000 also leaves ¥60,000. With ¥3 million, under the basic income you receive ¥360,000 and pay ¥900,000, a net cost of ¥540,000; under the negative income tax you pay 30% of the ¥1.8 million above ¥1.2 million, again ¥540,000."
+          ],
+          [
+            "o",
+            "The net result is identical. What differs is how the money flow looks, and the order in which it arrives. With a basic income, everyone receives the money first, and people with income hand some back as tax. That is why the gross amount paid out looks so large. With {the basic income calculator|/calc/?c=jp&w=all&m=30000}, ¥30,000 a month for everyone in Japan comes to about ¥44.2 trillion a year gross, about 6.7% of GDP. In a 2017 paper the political philosopher Karl Widerquist calculated, for the United States, that the net cost, after subtracting what comes back as tax, is far smaller than the gross figure.[13]"
+          ],
+          [
+            "o",
+            "Put the other way round, the real difference between a basic income and a negative income tax is not the net amount. It is whether the money reaches everyone first, or reaches only people whose eligibility has been checked, and later. That difference decides how many people miss out, and whether the money helps right away when someone loses a job. When {Heizo Takenaka explained his ¥70,000-a-month plan|/essays/takenaka-70000-yen-basic-income/}, he too spoke of a negative tax rate for people on low incomes, and of paying everyone first and having high earners return it through their tax returns."
+          ],
+          [
+            "h",
+            "BIEN’s five criteria"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”.[14] We used this yardstick in {our essay on Japan’s ¥100,000 payment|/essays/japan-special-cash-payment/}. Here it is applied to the new Japanese payment."
+          ],
+          [
+            "p",
+            "Periodic? Yes, though only once a year."
+          ],
+          [
+            "p",
+            "Cash? Yes."
+          ],
+          [
+            "p",
+            "Individual? Mostly yes. Once the full scheme starts, people whose spouse’s income is above a set amount are excluded."
+          ],
+          [
+            "p",
+            "Universal? No. Only working people between the income floor and the ceiling."
+          ],
+          [
+            "p",
+            "Unconditional? No. It requires earned income and a certain level of taxes and social insurance contributions paid.[2][3]"
+          ],
+          [
+            "o",
+            "That is two and a half out of five. The US EITC, calculated per tax unit, conditional on work and limited by income, scores lower still. Missing criteria is less a design flaw than a sign of a different purpose. A refundable tax credit is a tool for lightening the load on people who work and making each extra hour pay. A basic income is a tool for giving everyone a floor, whether or not they work."
+          ],
+          [
+            "h",
+            "Three people, side by side"
+          ],
+          [
+            "p",
+            "Finally, three examples. Japan’s amounts and lines are not yet set, so we use only the rules in the bill and the outline and the reference figures the government has given. The basic income is ¥30,000 a month (¥360,000 a year) for everyone."
+          ],
+          [
+            "p",
+            "A is looking for work and had no earned income last year. A gets no payment. A basic income would bring ¥360,000 a year, ¥30,000 each month."
+          ],
+          [
+            "p",
+            "B works part-time and earned ¥1 million in wages last year. Whether B qualifies depends on where the floor is set. With a floor of about ¥530,000 or ¥740,000 in wages, B qualifies and, being below the no-local-tax line, would likely receive the flat amount. With about ¥1.06 million, B does not qualify.[1][2] A basic income would bring ¥360,000 a year."
+          ],
+          [
+            "p",
+            "C is an office worker who earned ¥4.5 million in wages last year. That is above the ceiling in the government’s reference figures (individual income in the ¥3 million range), so C would likely get nothing.[4] A basic income would bring C ¥360,000 a year, but C would also pay more tax to fund it, so C could end up paying more, net."
+          ],
+          [
+            "o",
+            "The new payment works best for someone like B, and does not reach A. A basic income gives all three the same amount and lets the tax system make the difference. Which is better depends on what you want to achieve."
+          ],
+          [
+            "h",
+            "A realistic first step?"
+          ],
+          [
+            "o",
+            "Refundable tax credits have strengths a basic income lacks. Because they target, the same budget goes further per person. Because take-home pay rises with work, they send a clear signal in favour of working. And agreement is easier to reach. In Japan, the parties in the national council did come together on introducing an income-linked payment in fiscal 2029. What divided them was the “bridge” tied to the consumption tax cut, and in the lower house vote every opposition party voted against.[1][5]"
+          ],
+          [
+            "o",
+            "What Japan’s payment is building, a way to know each person’s income and pay into their account without an application, is also the foundation any basic income would need. Remembering that the ¥100,000 of 2020 took months to reach some people because each bank account had to be checked by hand, that is no small thing."
+          ],
+          [
+            "o",
+            "But its limits matter too. It does not reach people who cannot work, it arrives a year late, and only once a year. The reference amount of about ¥30,000 a year is one twelfth of a ¥30,000-a-month basic income. It is more accurate to see a refundable tax credit not as a substitute for basic income but as a tool that fills one gap in the current system. How far that tool grows will become clear as the amounts and lines are set ahead of the full launch in fiscal 2029. We will be watching."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026 年 11 月 6 日，日本众议院通过了一项法案。它把食品的消费税率在两年内降到 1%，同时设立“就业者负担减轻支援金”，每年按收入向工作的中低收入者发放现金。政府把这笔支援金定位为日本讨论多年的“可退还税收抵免”（给付付税额控除）的第一步。[2][5]"
+          ],
+          [
+            "p",
+            "听到“可退还税收抵免”，有人会联想到接近基本收入的东西，因为两者都把税制和现金发放连在一起。但两者在发给谁、以什么条件、什么时候到手这几点上差别很大。我们先确认日本的制度定下了什么、还没定什么，再把它和其他国家的例子放在一起，逐项看差别。"
+          ],
+          [
+            "h",
+            "日本定下了什么，还没定什么"
+          ],
+          [
+            "p",
+            "执政党在 2025 年夏季参议院选举中承诺的每人 2 万日元一律给付没有实现，讨论的重心转向了按收入、每年持续发放的机制。2025 年 12 月 18 日，自民党与国民民主党达成协议，以引入可退还税收抵免等新制度为前提，在三年内彻底重新检讨所得税的人身扣除。[1]"
+          ],
+          [
+            "p",
+            "2026 年 2 月启动的社会保障国民会议，经过朝野实务者会议和专家会议的讨论，于 7 月 29 日提出中期汇总。内容是：为提高中低收入在职劳动者的到手收入、缓和“年收之墙”造成的少工作现象，把税和社会保险费的负担与现金给付合在一起看，在 2029 财年引入“与收入挂钩的精细给付”。也有人强烈主张理想形态是税收抵免与现金给付相结合，但为避免制度过于复杂，暂时只采用现金给付。[1]"
+          ],
+          [
+            "p",
+            "政府在 9 月 15 日以内阁决议通过了将其具体化的大纲，并于 10 月 9 日向国会提交法案。从 2027 年 4 月起的两年里，食品消费税率由 8% 降至 1%（国税 0.78% 加地方消费税）；这两年内，支援金在相当于 1 个百分点食品消费税预计收入的范围内先行发放。税率恢复为 8% 的 2029 财年起正式实施。[2][3]"
+          ],
+          [
+            "p",
+            "法案和大纲写明的规则如下。以个人为单位，单身者也包括在内。条件是：上一年的劳动收入（工资收入，加上超过一定数额的经营收入或业务性杂项收入）高于下限；合计所得不超过上限（上限随子女人数而变）；缴纳的税和社会保险费超过一定标准。在工作、负担与在职一代相当的领取养老金者也在对象之内。正式实施后，配偶收入超过一定数额的人将被排除。[2][3]"
+          ],
+          [
+            "p",
+            "金额的形状是：劳动收入不超过以住民税免税线（单身者工资收入 119 万日元）为参考设定的数额的人，领取定额；超过后随劳动收入增加而递增，到一定水平封顶；合计所得再高时递减，直至为零。有 18 岁及以下子女者（2027、2028 财年为未满 16 岁）有定额加算；碰上“年收之墙”的人，在墙消失之前还有临时加算。[2]"
+          ],
+          [
+            "p",
+            "原则上每年发放一次。由居住地的市区町村认定资格，在认定后两个月内转账。已登记“公金领取账户”的人，原则上由市区町村依职权认定，无需申请。支援金不征税，也不得扣押。费用的三分之二以上由国家负担。[2][3]"
+          ],
+          [
+            "p",
+            "还没定的，恰恰是最关键的金额和界线。收入下限、上限和支援金额，都将由政令决定。[3] 据报道，政府 10 月作为“一个参考”向朝野各党出示的方案是：2027、2028 财年对象约 2000 万人，人均每年约 3 万日元，总额每年约 6000 亿日元，上限可能定在个人年收入 300 多万日元。[4] 关于收入下限，国民会议上曾提出工资收入约 53 万、74 万、约 106 万日元三个方案。[1]"
+          ],
+          [
+            "p",
+            "法案于 11 月 6 日在自民党、日本维新会等的多数赞成下通过众议院，所有在野党都投了反对票。参议院预计从下周开始审议，但执政党在参议院未过半数，能否在 12 月 12 日会期结束前成立，目前还不清楚。[5]"
+          ],
+          [
+            "o",
+            "也就是说，虽然名为“可退还税收抵免”，日本先建立起来的并不是税收抵免，而是按收入发放的现金，对象限于工作的中低收入者。这是比较它与基本收入的出发点。"
+          ],
+          [
+            "h",
+            "可退还税收抵免本来是什么"
+          ],
+          [
+            "p",
+            "税收抵免是从应缴税额中扣除一定金额。但本来就缴税不多的人用不完这笔抵免，收入越低，得到的好处越少。于是把扣不完的部分以现金支付，这就是“可退还”（refundable）的税收抵免。"
+          ],
+          [
+            "p",
+            "它的源头之一，是经济学家米尔顿·弗里德曼在 1962 年《资本主义与自由》中推广的“负所得税”：收入低于某条线的人不缴税，反而从政府领钱。20 世纪 60 年代末到 70 年代，美国做了四项大型实验来检验这个想法。规模最大的西雅图—丹佛实验（约 4800 户）中，丈夫的年工作时间减少约 9%，妻子约 20%，单亲母亲约 14%。一项发现离婚增加的分析也引发了争议。[6] {加拿大多芬的 Mincome|/timeline/#tl-mincome} 也是同一类型的保障，按其他收入的 50% 扣减。"
+          ],
+          [
+            "h",
+            "其他国家怎么做"
+          ],
+          [
+            "p",
+            "美国的劳动所得税收抵免（EITC）是最有名的可退还税收抵免。抵免随劳动收入增加，达到上限后，再随收入提高而减少。2026 年度，有三个及以上子女的家庭在劳动收入 18,290 美元以内按 45% 递增，最多 8,231 美元；没有子女的人最多 664 美元。[7] 通常在次年报税时领取。"
+          ],
+          [
+            "p",
+            "不报税就领不到，所以有人漏领。美国国税局（IRS）估计，2022 纳税年度全国参与率为 80.8%（另一项基于人口调查的估计为 78%），大约每五个有资格的人中就有一人没有领。[8]"
+          ],
+          [
+            "p",
+            "2021 年，儿童税收抵免（CTC）扩大了一年：每名儿童每年 3,000 美元（6 岁以下 3,600 美元），没有收入的家庭也能全额领取，其中一半在 7 月至 12 月按月预付。按人口普查局的补充贫困指标，儿童贫困率在 2021 年降到 5.2%，为有记录以来最低；扩大措施结束后，2022 年回升到 12.4%，翻了一倍多（均为首次公布值）。[9] 2025 年为 13.4%。即便如此，EITC 和 CTC 的可退还部分在 2025 年仍让 330 万名儿童脱离了贫困线以下。[10]"
+          ],
+          [
+            "p",
+            "英国走了另一条路。工作税收抵免（Working Tax Credit）和儿童税收抵免已与其他福利一起被统一福利（Universal Credit）取代。它每月按当月收入计算；对抚养子女、或因健康原因工作能力受限的人，收入超过每月 427 英镑或 710 英镑的“工作豁免额”后，每多挣 1 英镑，福利减少 55 便士。夫妻按一个家庭计算。[11]"
+          ],
+          [
+            "p",
+            "加拿大儿童福利（Canada Child Benefit）通过报税掌握家庭收入，按月发放，不问是否工作。2026 年 7 月至 2027 年 6 月，每名 6 岁以下儿童每年最多 8,157 加元，6 至 17 岁 6,883 加元；家庭上一年净收入超过 38,237 加元后开始递减。[12]"
+          ],
+          [
+            "h",
+            "与基本收入的六点不同"
+          ],
+          [
+            "p",
+            "第一，发给谁。基本收入发给所有人。可退还税收抵免划出收入界线，只发给线内的人。按参考数字，日本的支援金对象约 2000 万人。[4]"
+          ],
+          [
+            "p",
+            "第二，是否以工作为条件。EITC 和日本的支援金设计成没有劳动收入就领不到、开始工作就增加，因为它们本来就是为了鼓励工作。反过来，因疾病、残障、照护或失业而无法工作的人领不到。日本的法案规定，政府将研究针对这些人的措施，并在 2028 财年内得出结论。[3] 基本收入则根本没有条件。"
+          ],
+          [
+            "p",
+            "第三，个人还是家庭。EITC 按报税单位（夫妻合并申报）计算，统一福利按家庭，加拿大儿童福利按家庭收入。日本的支援金以个人为单位，在这一点上接近基本收入；不过正式实施后，配偶收入超过一定数额的人会被排除。[2]"
+          ],
+          [
+            "p",
+            "第四，什么时候到手。基本收入每月、事先到手。EITC 在一年结束后通过报税领取，日本的支援金也按上一年的收入每年发一次。今年收入骤降，要到明年才反映出来。美国 2021 年把 CTC 改为按月预付，正是为了缩小这个时间差。"
+          ],
+          [
+            "p",
+            "第五，漏领。需要申请或报税的制度，总会有符合条件却没领到的人。EITC 大约是五分之一。[8] 日本的支援金设计成登记了公金领取账户就无需申请，但登记率目前只有五成左右。[1]"
+          ],
+          [
+            "p",
+            "第六，收入增加时怎么减。随收入增加而减少福利，对领取者来说，作用和提高税率一样。统一福利的 55% 递减率再叠加所得税和国民保险费，每多挣 1 英镑留在手里的就更少。为避免福利突然消失的“悬崖”，各国都采取逐步递减的方式，但处在递减区间的人，实际负担会更重。日本的支援金为“年收之墙”设加算，也是对这个问题的回应。[2][11]"
+          ],
+          [
+            "h",
+            "按“净额”可以完全相同"
+          ],
+          [
+            "p",
+            "列了这么多不同，其实负所得税和基本收入可以设计成让每个人最后的到手收入完全一样。用简单的数字来验证。这里的 30% 只是为了比较机制而假设的数字，不是财源测算。"
+          ],
+          [
+            "p",
+            "基本收入一侧：每人每年发 36 万日元（每月 3 万日元），同时对所有收入加征 30% 的税。负所得税一侧：收入为零的人每年领 36 万日元，收入每多 1 日元就减少 0.3 日元；收入达到 120 万日元时给付为零，超过部分按 30% 缴税。"
+          ],
+          [
+            "p",
+            "收入为零的人，两边都是领 36 万日元。收入 100 万日元的人，基本收入下领 36 万、缴 30 万，净领 6 万；负所得税下 36 万减去 30 万，也是 6 万。收入 300 万日元的人，基本收入下领 36 万、缴 90 万，净负担 54 万；负所得税下，对超过 120 万日元的 180 万日元按 30% 缴税，同样是 54 万。"
+          ],
+          [
+            "o",
+            "净额完全相同。不同的是资金流动的样子和到手的先后。基本收入是先让所有人领到，有收入的人再以税的形式交回一部分，所以发放总额（毛额）看起来非常大。用{基本收入计算器|/calc/?c=jp&w=all&m=30000}算，向日本每个人每月发 3 万日元，毛额每年约 44.2 万亿日元，约为 GDP 的 6.7%。政治哲学家卡尔·怀德奎斯特在 2017 年的论文中以美国为例计算，扣除以税收形式回流的部分后，净成本远小于毛额。[13]"
+          ],
+          [
+            "o",
+            "反过来说，基本收入与负所得税的真正差别不在净额，而在于钱是先到每个人手里，还是只在资格被确认后才发给部分人。这个差别决定了有多少人漏领，以及失业时这笔钱能否马上派上用场。 {竹中平藏解释他的每月 7 万日元方案时|/essays/takenaka-70000-yen-basic-income/}，也说低收入者适用“负税率”，并提到先发给所有人、再让高收入者通过报税返还的方法。"
+          ],
+          [
+            "h",
+            "用 BIEN 的五条标准衡量"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）把基本收入定义为“无需经济状况调查或工作要求、以个人为单位无条件发给所有人的定期现金给付”。[14] 我们在{关于 10 万日元给付金的随笔|/essays/japan-special-cash-payment/}里也用过这把尺子，这里用它来衡量日本的新支援金。"
+          ],
+          [
+            "p",
+            "定期吗？是，但每年只有一次。"
+          ],
+          [
+            "p",
+            "现金吗？是。"
+          ],
+          [
+            "p",
+            "以个人为单位吗？基本上是。不过正式实施后，配偶收入超过一定数额的人会被排除。"
+          ],
+          [
+            "p",
+            "普遍吗？不是。只发给收入在下限与上限之间、正在工作的人。"
+          ],
+          [
+            "p",
+            "无条件吗？不是。要求有劳动收入，并缴纳一定水平的税和社会保险费。[2][3]"
+          ],
+          [
+            "o",
+            "五条中满足两条半。美国的 EITC 按报税单位计算、以工作为条件、又有收入界线，得分更低。不满足这些标准，与其说是设计缺陷，不如说是目的不同。可退还税收抵免是减轻工作者负担、让多工作一小时更划算的工具；基本收入则是不论是否工作，都为每个人托底的工具。"
+          ],
+          [
+            "h",
+            "三个人放在一起比"
+          ],
+          [
+            "p",
+            "最后用三个人的例子来比较。日本支援金的金额和界线尚未确定，这里只使用法案与大纲中的规则和政府给出的参考数字。基本收入设为每人每月 3 万日元（每年 36 万日元）。"
+          ],
+          [
+            "p",
+            "A 正在找工作，去年没有劳动收入。领不到支援金。如果是基本收入，每年 36 万日元，每月到手 3 万日元。"
+          ],
+          [
+            "p",
+            "B 做兼职，去年工资收入 100 万日元。能否领到取决于下限划在哪里。若采用工资收入约 53 万或 74 万日元的方案，B 符合条件，而且低于住民税免税线，大概会领到定额部分；若采用约 106 万日元的方案，则不符合。[1][2] 如果是基本收入，每年 36 万日元。"
+          ],
+          [
+            "p",
+            "C 是公司职员，去年工资收入 450 万日元，高于政府参考方案中的上限（个人年收入 300 多万日元），大概领不到支援金。[4] 如果是基本收入，C 每年领 36 万日元，但为筹措财源缴的税也会增加，净额上可能是负担增加。"
+          ],
+          [
+            "o",
+            "支援金最能照顾到的是像 B 这样的人，而 A 领不到。基本收入给三个人同样的金额，差别由税来调节。哪种更好，取决于想达到什么目的。"
+          ],
+          [
+            "h",
+            "现实的第一步吗？"
+          ],
+          [
+            "o",
+            "可退还税收抵免有基本收入所没有的长处。因为有针对性，同样的预算可以让每个人领得更多；因为工作越多到手越多，鼓励工作的信号清楚；也更容易达成共识。在日本，朝野各党在国民会议上就 2029 财年引入与收入挂钩的给付达成了一致。引发对立的是与消费税减税捆绑的“过渡措施”，在众议院表决时所有在野党都投了反对票。[1][5]"
+          ],
+          [
+            "o",
+            "日本的支援金正在建立的东西，即掌握每个人的收入、无需申请就把钱打进账户的机制，也是发放基本收入不可缺少的基础。想到 2020 年的 10 万日元因为要逐一核对银行账户，有些人要等好几个月才收到，这一点的意义并不小。"
+          ],
+          [
+            "o",
+            "但也要看到它的局限：无法工作的人领不到，到手晚一年，而且一年只有一次。每年约 3 万日元的参考金额，是每月 3 万日元基本收入的十二分之一。与其把可退还税收抵免看作基本收入的替代品，不如把它看作填补现有制度一个漏洞的工具，这样更准确。这个工具能长到多大，要看 2029 财年正式实施前金额与界线如何确定。我们会继续关注。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "6 नवंबर 2026 को जापान की प्रतिनिधि सभा ने एक विधेयक पास किया। यह खाने-पीने की चीज़ों पर उपभोग कर दो साल के लिए 1% कर देता है, और साथ में “कामगार बोझ राहत भुगतान” (shūgyōsha futan keigen shienkin) बनाता है: काम करने वाले निम्न और मध्यम आय वाले लोगों को, उनकी आय के हिसाब से, हर साल नकद। सरकार इस भुगतान को “रिफ़ंडेबल टैक्स क्रेडिट” की ओर पहला क़दम बताती है, जिस पर जापान में बरसों से बहस चल रही है।[2][5]"
+          ],
+          [
+            "p",
+            "“रिफ़ंडेबल टैक्स क्रेडिट” सुनकर कुछ लोगों को बेसिक इनकम जैसी कोई चीज़ याद आती है, क्योंकि दोनों टैक्स व्यवस्था को नकद भुगतान से जोड़ते हैं। लेकिन पैसा किसे मिलता है, किन शर्तों पर और कब, इसमें दोनों बहुत अलग हैं। पहले हम देखते हैं कि जापान में क्या तय हुआ है और क्या नहीं, फिर इसे दूसरे देशों के उदाहरणों के साथ रखकर एक-एक फ़र्क़ देखते हैं।"
+          ],
+          [
+            "h",
+            "जापान में क्या तय हुआ, और क्या नहीं"
+          ],
+          [
+            "p",
+            "2025 की गर्मियों के उच्च सदन चुनाव में सत्ताधारी दलों ने सबको 20,000 येन देने का वादा किया था, जो पूरा नहीं हुआ, और बहस ऐसी व्यवस्था की ओर मुड़ गई जो आय के हिसाब से हर साल भुगतान करे। 18 दिसंबर 2025 को लिबरल डेमोक्रेटिक पार्टी और डेमोक्रेटिक पार्टी फ़ॉर द पीपल इस पर सहमत हुईं कि रिफ़ंडेबल टैक्स क्रेडिट जैसी नई व्यवस्था को ध्यान में रखकर, तीन साल के भीतर आयकर की व्यक्तिगत छूटों में बुनियादी बदलाव किया जाएगा।[1]"
+          ],
+          [
+            "p",
+            "फ़रवरी 2026 में शुरू हुई सामाजिक सुरक्षा राष्ट्रीय परिषद ने सभी दलों की कार्य-स्तरीय बैठकों और विशेषज्ञ बैठकों में चर्चा के बाद 29 जुलाई को अंतरिम रिपोर्ट दी। उसका प्रस्ताव था कि वित्त वर्ष 2029 में “आय से जुड़ा, बारीकी से तय भुगतान” शुरू हो, जो टैक्स, सामाजिक बीमा अंशदान और नकद लाभ को साथ मिलाकर देखे। इसके दो लक्ष्य थे: निम्न और मध्यम आय वाले कामगारों की हाथ में आने वाली आय बढ़ाना, और उन “आय की दीवारों” को कम करना जिनकी वजह से लोग कम काम करते हैं। कुछ सदस्यों ने ज़ोर देकर कहा कि आदर्श रूप टैक्स क्रेडिट और नकद का मेल है, लेकिन व्यवस्था को जटिल होने से बचाने के लिए परिषद ने अभी केवल नकद भुगतान चुना।[1]"
+          ],
+          [
+            "p",
+            "15 सितंबर को मंत्रिमंडल ने इसे ठोस रूप देने वाली रूपरेखा मंज़ूर की, और 9 अक्टूबर को विधेयक संसद में भेजा। अप्रैल 2027 से दो साल तक खाने-पीने की चीज़ों पर उपभोग कर 8% से घटकर 1% होगा (0.78% राष्ट्रीय और बाक़ी स्थानीय उपभोग कर)। इन दो सालों में भुगतान पहले से शुरू होगा, खाद्य कर के एक प्रतिशत अंक से अपेक्षित राजस्व की सीमा के भीतर। पूरी व्यवस्था वित्त वर्ष 2029 से शुरू होगी, जब दर फिर 8% हो जाएगी।[2][3]"
+          ],
+          [
+            "p",
+            "विधेयक और रूपरेखा में नियम ये हैं। पात्रता व्यक्तिगत है, और अकेले रहने वाले भी शामिल हैं। व्यक्ति पात्र है अगर पिछले साल की कमाई (वेतन, और तय राशि से ज़्यादा कारोबारी या फ़्रीलांस आय) एक निचली सीमा से ऊपर हो, कुल आय एक ऊपरी सीमा तक हो (यह सीमा बच्चों की संख्या पर निर्भर है), और चुकाया गया टैक्स और सामाजिक बीमा अंशदान एक तय स्तर से ज़्यादा हो। जो पेंशनभोगी काम करते हैं और कामकाजी उम्र के लोगों जितना चुकाते हैं, वे भी शामिल हैं। पूरी व्यवस्था शुरू होने के बाद, जिनके जीवनसाथी की आय तय राशि से ज़्यादा है, वे बाहर होंगे।[2][3]"
+          ],
+          [
+            "p",
+            "राशि का आकार ऐसा है: जिनकी कमाई उस स्तर तक है जो स्थानीय आयकर न लगने की रेखा (अकेले व्यक्ति के लिए वेतन में 11,90,000 येन) को देखकर तय होगा, उन्हें एक तय राशि। उसके ऊपर कमाई के साथ राशि बढ़ती है, फिर स्थिर हो जाती है, और कुल आय और बढ़ने पर घटकर शून्य हो जाती है। 18 साल या उससे कम उम्र के हर बच्चे के लिए (वित्त वर्ष 2027 और 2028 में 16 से कम) एक तय अतिरिक्त राशि है, और “आय की दीवार” से टकराने वालों के लिए, दीवारें हटने तक, एक अस्थायी अतिरिक्त राशि।[2]"
+          ],
+          [
+            "p",
+            "नियम के तौर पर भुगतान साल में एक बार होगा। जिस नगरपालिका में व्यक्ति रहता है, वह पात्रता की पुष्टि करती है और दो महीने के भीतर भुगतान करती है। जिन्होंने सरकारी भुगतान के लिए बैंक खाता पंजीकृत कराया है, उनकी पात्रता नगरपालिका ख़ुद तय करे, बिना आवेदन के, यही सिद्धांत है। इस भुगतान पर टैक्स नहीं लगेगा और इसे ज़ब्त नहीं किया जा सकता। लागत का कम से कम दो-तिहाई राष्ट्रीय सरकार उठाएगी।[2][3]"
+          ],
+          [
+            "p",
+            "जो तय नहीं हुआ, वही सबसे अहम है: राशियाँ और सीमाएँ। आय की निचली और ऊपरी सीमा और भुगतान की राशि, सब मंत्रिमंडल के आदेश से तय होंगी।[3] ख़बरों के अनुसार अक्टूबर में सरकार ने दलों को “एक संदर्भ” के रूप में बताया कि वित्त वर्ष 2027 और 2028 में लगभग 2 करोड़ लोग शामिल हो सकते हैं, हर व्यक्ति को औसतन लगभग 30,000 येन सालाना, कुल लगभग 600 अरब येन सालाना, और ऊपरी सीमा व्यक्तिगत सालाना आय के 30 लाख येन वाले दायरे में हो सकती है।[4] निचली सीमा के लिए परिषद में वेतन में लगभग 5,30,000 येन, 7,40,000 येन और लगभग 10,60,000 येन के विकल्पों पर चर्चा हुई थी।[1]"
+          ],
+          [
+            "p",
+            "विधेयक 6 नवंबर को लिबरल डेमोक्रेटिक पार्टी, जापान इनोवेशन पार्टी और कुछ अन्य के वोटों से निचले सदन से पास हुआ; सभी विपक्षी दलों ने इसके ख़िलाफ़ वोट दिया। उच्च सदन में बहस अगले हफ़्ते शुरू होने की उम्मीद है, लेकिन वहाँ सत्ताधारी दलों के पास बहुमत नहीं है, इसलिए अभी साफ़ नहीं कि यह 12 दिसंबर को सत्र ख़त्म होने से पहले क़ानून बनेगा या नहीं।[5]"
+          ],
+          [
+            "o",
+            "यानी नाम भले “रिफ़ंडेबल टैक्स क्रेडिट” हो, जापान पहले जो बना रहा है वह टैक्स क्रेडिट नहीं, बल्कि आय से जुड़ा नकद भुगतान है, और वह भी केवल काम करने वाले निम्न और मध्यम आय वालों के लिए। बेसिक इनकम से तुलना यहीं से शुरू होती है।"
+          ],
+          [
+            "h",
+            "रिफ़ंडेबल टैक्स क्रेडिट असल में क्या है"
+          ],
+          [
+            "p",
+            "टैक्स क्रेडिट वह राशि है जो आपके देय टैक्स से घटाई जाती है। लेकिन जिनका टैक्स कम बनता है, वे पूरा क्रेडिट इस्तेमाल नहीं कर पाते, यानी आय जितनी कम, फ़ायदा उतना कम। रिफ़ंडेबल टैक्स क्रेडिट वह हिस्सा नकद देता है जो इस्तेमाल नहीं हो पाया।"
+          ],
+          [
+            "p",
+            "इसकी एक जड़ “नेगेटिव इनकम टैक्स” है, जिसे अर्थशास्त्री मिल्टन फ़्रीडमैन ने 1962 में अपनी किताब ‘कैपिटलिज़्म एंड फ़्रीडम’ में लोकप्रिय बनाया। जिनकी आय एक तय रेखा से नीचे हो, वे टैक्स देने के बजाय सरकार से पैसा पाते हैं। 1960 के दशक के अंत और 1970 के दशक में अमेरिका ने इस विचार को परखने के लिए चार बड़े प्रयोग किए। सबसे बड़े, सिएटल और डेनवर वाले प्रयोग (लगभग 4,800 परिवार) में सालाना काम के घंटे पतियों में लगभग 9%, पत्नियों में लगभग 20% और अकेली माताओं में लगभग 14% घटे। तलाक़ बढ़ने की बात कहने वाले एक विश्लेषण पर विवाद भी हुआ।[6] {कनाडा के डॉफ़िन में Mincome|/timeline/#tl-mincome} भी इसी तरह की गारंटी थी, जिसमें दूसरी आय का 50% घटाया जाता था।"
+          ],
+          [
+            "h",
+            "दूसरे देश यह कैसे करते हैं"
+          ],
+          [
+            "p",
+            "अमेरिका का अर्न्ड इनकम टैक्स क्रेडिट (EITC) सबसे जाना-माना रिफ़ंडेबल टैक्स क्रेडिट है। यह कमाई के साथ बढ़ता है, एक अधिकतम तक पहुँचता है, और फिर आय बढ़ने पर घटता है। 2026 के लिए, तीन या ज़्यादा बच्चों वाले परिवारों को $18,290 तक की कमाई का 45% मिलता है, अधिकतम $8,231; बिना बच्चों वालों को अधिकतम $664।[7] आम तौर पर यह अगले साल टैक्स रिटर्न भरने पर मिलता है।"
+          ],
+          [
+            "p",
+            "पाने के लिए रिटर्न भरना पड़ता है, इसलिए कुछ लोग छूट जाते हैं। IRS के अनुमान के अनुसार टैक्स वर्ष 2022 में राष्ट्रीय भागीदारी दर 80.8% थी (करंट पॉपुलेशन सर्वे पर आधारित एक अलग अनुमान में 78%): जो इसके हक़दार थे, उनमें से लगभग हर पाँच में से एक ने इसे नहीं लिया।[8]"
+          ],
+          [
+            "p",
+            "2021 में चाइल्ड टैक्स क्रेडिट (CTC) एक साल के लिए बढ़ाया गया। प्रति बच्चा $3,000 सालाना (6 साल से कम के लिए $3,600), बिना किसी आय वाले परिवारों को भी पूरा, और इसका आधा जुलाई से दिसंबर तक हर महीने पहले ही दे दिया गया। सेंसस ब्यूरो के सप्लीमेंटल पॉवर्टी मेज़र पर बाल ग़रीबी 2021 में रिकॉर्ड न्यूनतम 5.2% तक गिरी, और विस्तार ख़त्म होने के बाद 2022 में दोगुने से ज़्यादा होकर 12.4% हो गई (दोनों पहली बार प्रकाशित आँकड़े)।[9] 2025 में यह 13.4% थी। फिर भी, रिफ़ंडेबल टैक्स क्रेडिट (EITC और CTC का रिफ़ंडेबल हिस्सा) ने 2025 में 33 लाख बच्चों को ग़रीबी रेखा से ऊपर उठाया।[10]"
+          ],
+          [
+            "p",
+            "ब्रिटेन ने अलग रास्ता चुना। वर्किंग टैक्स क्रेडिट और चाइल्ड टैक्स क्रेडिट, दूसरे लाभों के साथ, यूनिवर्सल क्रेडिट से बदल दिए गए हैं। इसकी गणना हर महीने उसी महीने की कमाई से होती है। जो किसी बच्चे के ज़िम्मेदार हैं, या जिनकी सेहत काम करने की क्षमता सीमित करती है, उनके लिए £427 या £710 के मासिक “वर्क अलाउंस” से ऊपर कमाए हर £1 पर भुगतान 55 पेंस घटता है। दंपती को एक परिवार माना जाता है।[11]"
+          ],
+          [
+            "p",
+            "कनाडा चाइल्ड बेनिफ़िट टैक्स रिटर्न से परिवार की आय जानता है और हर महीने भुगतान करता है। यह नहीं पूछता कि कोई काम करता है या नहीं। जुलाई 2026 से जून 2027 तक यह 6 साल से कम के हर बच्चे के लिए सालाना अधिकतम C$8,157 और 6 से 17 साल के हर बच्चे के लिए C$6,883 देता है, जो परिवार की पिछले साल की शुद्ध आय C$38,237 से ऊपर जाने पर घटने लगता है।[12]"
+          ],
+          [
+            "h",
+            "बेसिक इनकम से छह फ़र्क़"
+          ],
+          [
+            "p",
+            "पहला, यह किसे मिलता है। बेसिक इनकम सबको मिलती है। रिफ़ंडेबल टैक्स क्रेडिट आय की रेखाएँ खींचता है और उनके भीतर के लोगों को देता है। जापान के संदर्भ आँकड़ों में लगभग 2 करोड़ लोगों को नया भुगतान मिलेगा।[4]"
+          ],
+          [
+            "p",
+            "दूसरा, क्या काम एक शर्त है। EITC और जापान का भुगतान इस तरह बने हैं कि कमाई के बिना कुछ नहीं मिलता और काम शुरू करने पर ज़्यादा मिलता है, क्योंकि इनका मक़सद ही काम को बढ़ावा देना है। दूसरी तरफ़, ये उन लोगों तक नहीं पहुँचते जो बीमारी, विकलांगता, देखभाल या बेरोज़गारी की वजह से काम नहीं कर सकते। जापान का विधेयक कहता है कि सरकार ऐसे लोगों के लिए उपायों का अध्ययन करेगी और वित्त वर्ष 2028 के दौरान निष्कर्ष निकालेगी।[3] बेसिक इनकम की कोई शर्त ही नहीं होती।"
+          ],
+          [
+            "p",
+            "तीसरा, व्यक्ति या परिवार। EITC टैक्स इकाई से तय होता है (दंपती संयुक्त रिटर्न भरते हैं), यूनिवर्सल क्रेडिट परिवार से, और कनाडा चाइल्ड बेनिफ़िट परिवार की आय से। जापान का भुगतान व्यक्तिगत है, जो इस बात में बेसिक इनकम के क़रीब है। फिर भी पूरी व्यवस्था शुरू होने के बाद, जिनके जीवनसाथी की कमाई तय राशि से ज़्यादा है, वे बाहर होंगे।[2]"
+          ],
+          [
+            "p",
+            "चौथा, यह कब पहुँचता है। बेसिक इनकम हर महीने, पहले से पहुँचती है। EITC साल ख़त्म होने के बाद टैक्स रिटर्न से मिलता है, और जापान का भुगतान पिछले साल की आय के आधार पर साल में एक बार होता है। अगर इस साल आपकी आय अचानक गिर जाए, तो उसका असर अगले साल ही दिखेगा। अमेरिका ने 2021 का CTC मासिक किस्तों में ठीक इसी अंतर को कम करने के लिए दिया था।"
+          ],
+          [
+            "p",
+            "पाँचवाँ, छूटे हुए भुगतान। जब किसी योजना में दावा या टैक्स रिटर्न ज़रूरी हो, तो कुछ हक़दार लोग इसे कभी नहीं पाते। EITC में यह लगभग हर पाँच में से एक था।[8] जापान का भुगतान ऐसा बनाया गया है कि सरकारी भुगतान के लिए पंजीकृत खाते वालों को आवेदन न करना पड़े, लेकिन अभी तक लगभग आधे लोगों ने ही ऐसा खाता पंजीकृत कराया है।[1]"
+          ],
+          [
+            "p",
+            "छठा, आय बढ़ने पर यह कैसे घटता है। आय बढ़ने के साथ लाभ वापस लेना, पाने वाले के लिए, ऊँची टैक्स दर जैसा ही काम करता है। यूनिवर्सल क्रेडिट की 55% कटौती, आयकर और नेशनल इंश्योरेंस के साथ मिलकर, हर अतिरिक्त पाउंड में से और भी कम छोड़ती है। अचानक “खाई” से बचने के लिए हर योजना धीरे-धीरे घटती है, लेकिन घटने वाले दायरे में आने वालों पर असल बोझ ज़्यादा होता है। “आय की दीवार” झेल रहे लोगों के लिए जापान की अतिरिक्त राशि इसी समस्या का जवाब है।[2][11]"
+          ],
+          [
+            "h",
+            "शुद्ध रूप में, एक जैसे"
+          ],
+          [
+            "p",
+            "फ़र्क़ गिनाने के बाद, अब एक मोड़: नेगेटिव इनकम टैक्स और बेसिक इनकम को ऐसे बनाया जा सकता है कि हर व्यक्ति की अंतिम आय बिल्कुल एक जैसी रहे। सरल आँकड़ों से देखते हैं। यहाँ 30% सिर्फ़ तरीक़ों की तुलना के लिए है, यह फ़ंडिंग का अनुमान नहीं है।"
+          ],
+          [
+            "p",
+            "बेसिक इनकम वाली तरफ़, हर किसी को सालाना 3,60,000 येन (महीने में 30,000 येन) मिलते हैं, और सारी आय पर 30% अतिरिक्त टैक्स लगता है। नेगेटिव इनकम टैक्स वाली तरफ़, बिना आय वाले व्यक्ति को सालाना 3,60,000 येन मिलते हैं, जो आय के हर येन पर 0.3 येन घटते हैं। 12,00,000 येन की आय पर भुगतान शून्य हो जाता है, और उससे ऊपर लोग अतिरिक्त आय का 30% चुकाते हैं।"
+          ],
+          [
+            "p",
+            "बिना आय के, दोनों तरह से आपको 3,60,000 येन मिलते हैं। 10,00,000 येन की आय पर, बेसिक इनकम में आपको 3,60,000 येन मिलते हैं और आप 3,00,000 येन चुकाते हैं, यानी शुद्ध लाभ 60,000 येन; नेगेटिव इनकम टैक्स में भी 3,60,000 में से 3,00,000 घटकर 60,000 येन बचते हैं। 30,00,000 येन की आय पर, बेसिक इनकम में आपको 3,60,000 येन मिलते हैं और आप 9,00,000 येन चुकाते हैं, यानी शुद्ध लागत 5,40,000 येन; नेगेटिव इनकम टैक्स में आप 12,00,000 से ऊपर के 18,00,000 येन का 30% चुकाते हैं, फिर से 5,40,000 येन।"
+          ],
+          [
+            "o",
+            "शुद्ध नतीजा बिल्कुल एक है। फ़र्क़ इसमें है कि पैसे का प्रवाह कैसा दिखता है, और वह किस क्रम में पहुँचता है। बेसिक इनकम में हर कोई पहले पैसा पाता है, और जिनकी आय है वे कुछ हिस्सा टैक्स के रूप में लौटाते हैं। इसीलिए कुल (सकल) भुगतान इतना बड़ा दिखता है। {बेसिक इनकम कैलकुलेटर|/calc/?c=jp&w=all&m=30000} के हिसाब से जापान में सबको महीने में 30,000 येन देने का सकल ख़र्च साल में लगभग 44.2 ट्रिलियन येन है, यानी GDP का लगभग 6.7%। 2017 के एक लेख में राजनीतिक दार्शनिक कार्ल वाइडरक्विस्ट ने अमेरिका के लिए गणना की कि टैक्स के रूप में लौटने वाली राशि घटाने के बाद शुद्ध लागत सकल आँकड़े से बहुत कम है।[13]"
+          ],
+          [
+            "o",
+            "उलटकर कहें तो, बेसिक इनकम और नेगेटिव इनकम टैक्स का असली फ़र्क़ शुद्ध राशि नहीं है। फ़र्क़ यह है कि पैसा पहले सबके पास पहुँचता है, या केवल उनके पास, और बाद में, जिनकी पात्रता जाँची जा चुकी है। यही तय करता है कि कितने लोग छूट जाते हैं, और नौकरी जाने पर पैसा तुरंत मदद करता है या नहीं। जब {हेइज़ो ताकेनाका ने अपनी 70,000 येन मासिक योजना समझाई|/essays/takenaka-70000-yen-basic-income/}, तो उन्होंने भी कम आय वालों के लिए नेगेटिव टैक्स दर की बात की, और सबको पहले देकर ऊँची आय वालों से टैक्स रिटर्न के ज़रिए वापस लेने का तरीक़ा बताया।"
+          ],
+          [
+            "h",
+            "BIEN के पाँच मानदंड"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को “आय की जाँच या काम की शर्त के बिना, सभी को व्यक्तिगत आधार पर बिना शर्त दिया जाने वाला नियमित नकद भुगतान” के रूप में परिभाषित करता है।[14] यही पैमाना हमने {जापान के 1,00,000 येन वाले निबंध|/essays/japan-special-cash-payment/} में इस्तेमाल किया था। यहाँ इसे नए जापानी भुगतान पर लगाते हैं।"
+          ],
+          [
+            "p",
+            "नियमित? हाँ, हालाँकि साल में सिर्फ़ एक बार।"
+          ],
+          [
+            "p",
+            "नकद? हाँ।"
+          ],
+          [
+            "p",
+            "व्यक्तिगत? ज़्यादातर हाँ। पूरी व्यवस्था शुरू होने के बाद, जिनके जीवनसाथी की आय तय राशि से ज़्यादा है, वे बाहर होंगे।"
+          ],
+          [
+            "p",
+            "सार्वभौमिक? नहीं। केवल वे काम करने वाले लोग जो निचली और ऊपरी आय सीमा के बीच हैं।"
+          ],
+          [
+            "p",
+            "बिना शर्त? नहीं। इसके लिए कमाई और एक तय स्तर तक चुकाया गया टैक्स और सामाजिक बीमा अंशदान ज़रूरी है।[2][3]"
+          ],
+          [
+            "o",
+            "यानी पाँच में से ढाई। अमेरिका का EITC, जो टैक्स इकाई पर गिना जाता है, काम की शर्त रखता है और आय से सीमित है, और भी कम अंक पाता है। मानदंडों पर खरा न उतरना डिज़ाइन की कमी कम, अलग उद्देश्य की निशानी ज़्यादा है। रिफ़ंडेबल टैक्स क्रेडिट काम करने वालों का बोझ हल्का करने और हर अतिरिक्त घंटे को फ़ायदेमंद बनाने का औज़ार है। बेसिक इनकम हर किसी को एक आधार देने का औज़ार है, चाहे वह काम करे या न करे।"
+          ],
+          [
+            "h",
+            "तीन लोग, आमने-सामने"
+          ],
+          [
+            "p",
+            "आख़िर में तीन उदाहरण। जापान की राशियाँ और सीमाएँ अभी तय नहीं हैं, इसलिए हम केवल विधेयक और रूपरेखा के नियम और सरकार के दिए संदर्भ आँकड़े इस्तेमाल करते हैं। बेसिक इनकम सबके लिए महीने में 30,000 येन (साल में 3,60,000 येन) है।"
+          ],
+          [
+            "p",
+            "A काम ढूँढ़ रहा है और पिछले साल उसकी कोई कमाई नहीं थी। A को भुगतान नहीं मिलेगा। बेसिक इनकम से उसे साल में 3,60,000 येन मिलेंगे, हर महीने 30,000 येन।"
+          ],
+          [
+            "p",
+            "B पार्ट-टाइम काम करता है और पिछले साल उसने वेतन में 10,00,000 येन कमाए। B पात्र होगा या नहीं, यह निचली सीमा पर निर्भर है। वेतन में लगभग 5,30,000 या 7,40,000 येन की सीमा हो तो B पात्र है, और स्थानीय टैक्स न लगने वाली रेखा से नीचे होने के कारण संभवतः तय राशि पाएगा। लगभग 10,60,000 येन की सीमा हो तो B पात्र नहीं।[1][2] बेसिक इनकम से साल में 3,60,000 येन मिलेंगे।"
+          ],
+          [
+            "p",
+            "C दफ़्तर में काम करता है और पिछले साल उसने वेतन में 45,00,000 येन कमाए। यह सरकार के संदर्भ आँकड़ों की ऊपरी सीमा (30 लाख येन वाले दायरे की व्यक्तिगत आय) से ऊपर है, इसलिए C को शायद कुछ नहीं मिलेगा।[4] बेसिक इनकम से C को साल में 3,60,000 येन मिलेंगे, लेकिन उसकी फ़ंडिंग के लिए C ज़्यादा टैक्स भी देगा, इसलिए शुद्ध रूप में C ज़्यादा चुका सकता है।"
+          ],
+          [
+            "o",
+            "नया भुगतान B जैसे व्यक्ति के लिए सबसे अच्छा काम करता है, और A तक नहीं पहुँचता। बेसिक इनकम तीनों को एक जैसी राशि देती है और फ़र्क़ टैक्स व्यवस्था पर छोड़ती है। कौन-सा बेहतर है, यह इस पर निर्भर है कि आप क्या हासिल करना चाहते हैं।"
+          ],
+          [
+            "h",
+            "एक व्यावहारिक पहला क़दम?"
+          ],
+          [
+            "o",
+            "रिफ़ंडेबल टैक्स क्रेडिट की कुछ ख़ूबियाँ बेसिक इनकम में नहीं हैं। लक्षित होने की वजह से उसी बजट से हर व्यक्ति को ज़्यादा मिल सकता है। काम के साथ हाथ में आने वाली आय बढ़ती है, इसलिए यह काम के पक्ष में साफ़ संकेत देता है। और सहमति बनाना आसान होता है। जापान में राष्ट्रीय परिषद में दल वित्त वर्ष 2029 में आय से जुड़ा भुगतान लाने पर सहमत हुए। मतभेद उपभोग कर कटौती से जुड़े “पुल” वाले हिस्से पर था, और निचले सदन के मतदान में सभी विपक्षी दलों ने विरोध किया।[1][5]"
+          ],
+          [
+            "o",
+            "जापान का भुगतान जो बना रहा है, यानी हर व्यक्ति की आय जानने और बिना आवेदन उसके खाते में पैसा भेजने का तरीक़ा, वही नींव है जिसकी किसी भी बेसिक इनकम को ज़रूरत होगी। याद करें कि 2020 के 1,00,000 येन कुछ लोगों तक पहुँचने में महीनों लगे, क्योंकि हर बैंक खाते की जाँच हाथ से करनी पड़ी थी। यह कोई छोटी बात नहीं।"
+          ],
+          [
+            "o",
+            "लेकिन इसकी सीमाएँ भी मायने रखती हैं। यह काम न कर सकने वालों तक नहीं पहुँचता, एक साल देर से आता है, और साल में सिर्फ़ एक बार। सालाना लगभग 30,000 येन की संदर्भ राशि, महीने में 30,000 येन वाली बेसिक इनकम का बारहवाँ हिस्सा है। रिफ़ंडेबल टैक्स क्रेडिट को बेसिक इनकम का विकल्प नहीं, बल्कि मौजूदा व्यवस्था की एक कमी भरने वाला औज़ार मानना ज़्यादा सही है। यह औज़ार कितना बड़ा होता है, यह वित्त वर्ष 2029 की पूरी शुरुआत से पहले राशियाँ और सीमाएँ तय होने पर साफ़ होगा। हम नज़र रखेंगे।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "El 6 de noviembre de 2026, la Cámara de Representantes de Japón aprobó un proyecto de ley. Rebaja al 1 % el impuesto sobre el consumo de los alimentos durante dos años y crea el Pago de Alivio de la Carga para Trabajadores (shūgyōsha futan keigen shienkin): dinero en efectivo que se paga cada año a las personas de ingresos bajos y medios que trabajan, según sus ingresos. El Gobierno lo presenta como el primer paso hacia un «crédito fiscal reembolsable», una idea que Japón lleva años debatiendo.[2][5]"
+          ],
+          [
+            "p",
+            "Hay quien oye «crédito fiscal reembolsable» y piensa en algo parecido a una renta básica. Ambos conectan el sistema fiscal con pagos en efectivo. Pero se diferencian mucho en quién recibe el dinero, con qué condiciones y cuándo. Primero comprobamos qué ha decidido Japón y qué no; después lo comparamos con ejemplos de otros países y repasamos las diferencias una por una."
+          ],
+          [
+            "h",
+            "Qué ha decidido Japón y qué no"
+          ],
+          [
+            "p",
+            "El pago único de 20.000 yenes por persona que los partidos del Gobierno prometieron en las elecciones a la cámara alta del verano de 2025 nunca llegó, y el debate pasó a un sistema que pagara cada año según los ingresos. El 18 de diciembre de 2025, el Partido Liberal Democrático y el Partido Democrático para el Pueblo acordaron reformar a fondo, en un plazo de tres años, las deducciones personales del impuesto sobre la renta, pensando en un crédito fiscal reembolsable o un sistema similar.[1]"
+          ],
+          [
+            "p",
+            "El Consejo Nacional de Seguridad Social, que empezó en febrero de 2026, trabajó en reuniones técnicas con todos los partidos y en reuniones de expertos, y publicó un informe provisional el 29 de julio. Proponía introducir en el año fiscal 2029 un «pago ajustado finamente a los ingresos», que mirara juntos los impuestos, las cotizaciones sociales y las prestaciones en efectivo, con dos objetivos: aumentar el salario neto de los trabajadores de ingresos bajos y medios y suavizar los «muros de ingresos» que llevan a la gente a trabajar menos. Algunos miembros defendieron con fuerza que lo ideal es combinar crédito fiscal y pago en efectivo, pero para evitar un sistema complejo el consejo eligió, de momento, solo pagos en efectivo.[1]"
+          ],
+          [
+            "p",
+            "El 15 de septiembre el Gobierno aprobó unas directrices que lo concretan, y el 9 de octubre envió el proyecto a la Dieta. Desde abril de 2027 y durante dos años, el impuesto sobre el consumo de los alimentos baja del 8 % al 1 % (0,78 % estatal más el impuesto local sobre el consumo). En esos dos años el pago empieza de forma anticipada, con un tope igual a la recaudación esperada de un punto del impuesto sobre los alimentos. El sistema completo comienza en el año fiscal 2029, cuando el tipo vuelve al 8 %.[2][3]"
+          ],
+          [
+            "p",
+            "El proyecto y las directrices fijan las reglas. El derecho es individual e incluye a quienes viven solos. Una persona tiene derecho si los ingresos del trabajo del año anterior (salario, más ingresos empresariales o de autónomo por encima de cierta cantidad) superan un mínimo, su renta total no supera un máximo (que depende del número de hijos) y los impuestos y cotizaciones sociales que paga superan cierto nivel. También se incluye a los pensionistas que trabajan y pagan tanto como la población en edad laboral. Cuando empiece el sistema completo, quedarán fuera las personas cuyo cónyuge gane por encima de cierta cantidad.[2][3]"
+          ],
+          [
+            "p",
+            "La cuantía es fija para quienes tienen ingresos del trabajo hasta un nivel que se fijará tomando como referencia el umbral por debajo del cual no se paga el impuesto local sobre la renta (1,19 millones de yenes de salario para una persona sola). Por encima, crece con los ingresos del trabajo, se estabiliza y, cuando la renta total sigue subiendo, baja hasta cero. Hay un suplemento fijo por cada hijo de 18 años o menos (menores de 16 en los años fiscales 2027 y 2028) y un suplemento temporal para quienes chocan con un «muro de ingresos», hasta que esos muros desaparezcan.[2]"
+          ],
+          [
+            "p",
+            "Por regla general se paga una vez al año. El municipio donde vive la persona confirma el derecho y paga en un plazo de dos meses. Para quienes han registrado una cuenta bancaria para pagos públicos, la idea es que el municipio confirme el derecho por su cuenta, sin solicitud. El pago no tributa y no se puede embargar. El Estado asume al menos dos tercios del coste.[2][3]"
+          ],
+          [
+            "p",
+            "Lo que no está decidido es lo más importante: las cuantías y los límites. El mínimo y el máximo de ingresos y las cuantías se fijarán por decreto.[3] Como «una referencia», el Gobierno dijo a los partidos en octubre que en los años fiscales 2027 y 2028 podrían recibirlo unos 20 millones de personas, con una media de unos 30.000 yenes al año cada una, unos 600.000 millones de yenes al año en total, y que el máximo podría situarse en la franja de los 3 millones de yenes de renta individual anual.[4] Para el mínimo, en el consejo se habían planteado unos 530.000, 740.000 y unos 1,06 millones de yenes de salario.[1]"
+          ],
+          [
+            "p",
+            "El proyecto pasó la cámara baja el 6 de noviembre con los votos del Partido Liberal Democrático, el Partido de la Innovación de Japón y otros; todos los partidos de la oposición votaron en contra. Se espera que el debate en la cámara alta empiece la semana siguiente, pero allí los partidos del Gobierno no tienen mayoría, así que aún no está claro si será ley antes de que termine el periodo de sesiones, el 12 de diciembre.[5]"
+          ],
+          [
+            "o",
+            "Así que, aunque lleve el nombre de «crédito fiscal reembolsable», lo que Japón construye primero no es un crédito fiscal, sino un pago en efectivo ligado a los ingresos y dirigido a personas de ingresos bajos y medios que trabajan. Ese es el punto de partida para compararlo con la renta básica."
+          ],
+          [
+            "h",
+            "Qué es un crédito fiscal reembolsable"
+          ],
+          [
+            "p",
+            "Un crédito fiscal es una cantidad que se resta del impuesto que debes. Pero quien debe pocos impuestos no puede aprovecharlo entero, así que cuanto menor es tu renta, menos ganas. Un crédito fiscal reembolsable paga en efectivo la parte que no pudiste usar."
+          ],
+          [
+            "p",
+            "Una de sus raíces es el impuesto negativo sobre la renta, que el economista Milton Friedman popularizó en Capitalismo y libertad en 1962. Quien tiene ingresos por debajo de cierta línea recibe dinero del Estado en lugar de pagar impuestos. A finales de los sesenta y en los setenta, Estados Unidos hizo cuatro grandes experimentos para probar la idea. En el mayor, en Seattle y Denver (unas 4.800 familias), las horas de trabajo anuales bajaron alrededor de un 9 % en los maridos, un 20 % en las esposas y un 14 % en las madres solas. Un análisis que encontró más divorcios generó polémica.[6] {Mincome, en Dauphin (Canadá)|/timeline/#tl-mincome}, fue una garantía del mismo tipo, reducida en un 50 % de los demás ingresos."
+          ],
+          [
+            "h",
+            "Cómo lo hacen otros países"
+          ],
+          [
+            "p",
+            "El crédito fiscal por ingresos del trabajo de EE. UU. (EITC) es el crédito reembolsable más conocido. Crece con los ingresos del trabajo, llega a un máximo y luego disminuye a medida que sube la renta. Para 2026, las familias con tres o más hijos reciben el 45 % de sus ingresos del trabajo hasta 18.290 dólares, con un máximo de 8.231 dólares; las personas sin hijos, como mucho 664 dólares.[7] Normalmente se cobra al presentar la declaración de la renta del año siguiente."
+          ],
+          [
+            "p",
+            "Como hay que declarar para cobrarlo, hay quien se queda sin él. El IRS calcula que la tasa de participación nacional del año fiscal 2022 fue del 80,8 % (78 % en otra estimación basada en la Current Population Survey): una de cada cinco personas que podían pedirlo no lo hizo.[8]"
+          ],
+          [
+            "p",
+            "En 2021, el crédito fiscal por hijos (CTC) se amplió durante un año. Subió a 3.000 dólares anuales por hijo (3.600 para menores de 6 años), se pagaba entero incluso a familias sin ingresos, y la mitad se adelantó cada mes de julio a diciembre. La pobreza infantil según la Medida Suplementaria de Pobreza de la Oficina del Censo cayó a un mínimo histórico del 5,2 % en 2021 y, tras acabar la ampliación, se duplicó con creces hasta el 12,4 % en 2022 (ambas cifras según su primera publicación).[9] En 2025 fue del 13,4 %. Aun así, los créditos fiscales reembolsables (el EITC y la parte reembolsable del CTC) sacaron a 3,3 millones de niños de la pobreza en 2025.[10]"
+          ],
+          [
+            "p",
+            "El Reino Unido tomó otro camino. El Working Tax Credit y el Child Tax Credit han sido sustituidos, junto con otras prestaciones, por el Universal Credit. Se calcula cada mes con los ingresos de ese mes. Para quienes tienen hijos a cargo, o cuya salud limita su capacidad de trabajar, el pago baja 55 peniques por cada libra ganada por encima de una franja exenta mensual de 427 o 710 libras. Una pareja se evalúa como un solo hogar.[11]"
+          ],
+          [
+            "p",
+            "La Canada Child Benefit usa las declaraciones de la renta para conocer los ingresos de la familia y paga cada mes. No pregunta si alguien trabaja. De julio de 2026 a junio de 2027 paga hasta 8.157 dólares canadienses al año por cada hijo menor de 6 años y 6.883 por cada hijo de 6 a 17, con reducciones cuando la renta neta familiar del año anterior supera los 38.237 dólares canadienses.[12]"
+          ],
+          [
+            "h",
+            "Seis diferencias con la renta básica"
+          ],
+          [
+            "p",
+            "Primera, quién lo recibe. Una renta básica llega a todo el mundo. Un crédito fiscal reembolsable traza límites de ingresos y paga a quienes quedan dentro. Según las cifras de referencia de Japón, unos 20 millones de personas recibirían el nuevo pago.[4]"
+          ],
+          [
+            "p",
+            "Segunda, si trabajar es una condición. El EITC y el pago japonés están pensados para que sin ingresos del trabajo no recibas nada y recibas más cuando empiezas a trabajar, porque existen para fomentar el empleo. La otra cara es que no llegan a quien no puede trabajar por enfermedad, discapacidad, cuidados o desempleo. El proyecto japonés dice que el Gobierno estudiará medidas para estas personas y llegará a una conclusión durante el año fiscal 2028.[3] Una renta básica no tiene ninguna condición."
+          ],
+          [
+            "p",
+            "Tercera, individuo u hogar. El EITC se calcula por unidad fiscal (las parejas declaran juntas), el Universal Credit por hogar y la Canada Child Benefit según los ingresos familiares. El pago japonés es individual, lo que en este punto lo acerca a una renta básica. Sin embargo, con el sistema completo quedarán fuera las personas cuyo cónyuge gane por encima de cierta cantidad.[2]"
+          ],
+          [
+            "p",
+            "Cuarta, cuándo llega. Una renta básica llega cada mes, por adelantado. El EITC se cobra después de acabar el año, con la declaración, y el pago japonés se hace una vez al año según los ingresos del año anterior. Si tus ingresos caen de golpe este año, se notará el año que viene. Estados Unidos pagó el CTC de 2021 en plazos mensuales precisamente para acortar ese desfase."
+          ],
+          [
+            "p",
+            "Quinta, quién se queda fuera. Cuando un programa exige una solicitud o una declaración, hay personas con derecho que nunca lo cobran. En el EITC era una de cada cinco.[8] El pago japonés está diseñado para no necesitar solicitud si se tiene registrada una cuenta para pagos públicos, pero solo la mitad aproximadamente de la población la ha registrado.[1]"
+          ],
+          [
+            "p",
+            "Sexta, cómo baja cuando suben los ingresos. Retirar una prestación a medida que sube la renta funciona, para quien la recibe, igual que un tipo impositivo más alto. La retirada del 55 % del Universal Credit, sumada al impuesto sobre la renta y a las cotizaciones, deja aún menos de cada libra adicional. Todos los programas reducen la ayuda de forma gradual para evitar un «precipicio», pero quienes están en el tramo de reducción soportan una carga efectiva mayor. El suplemento japonés para quienes chocan con un «muro de ingresos» responde a este problema.[2][11]"
+          ],
+          [
+            "h",
+            "Lo mismo, en neto"
+          ],
+          [
+            "p",
+            "Después de enumerar las diferencias, viene el giro: un impuesto negativo sobre la renta y una renta básica pueden diseñarse para que cada persona acabe exactamente con la misma renta final. Unas cifras sencillas lo muestran. El 30 % que usamos aquí sirve solo para comparar los mecanismos; no es una estimación de financiación."
+          ],
+          [
+            "p",
+            "Del lado de la renta básica, todo el mundo recibe 360.000 yenes al año (30.000 al mes) y se añade un impuesto extra del 30 % sobre todos los ingresos. Del lado del impuesto negativo, quien no tiene ingresos recibe 360.000 yenes al año, que se reducen 0,3 yenes por cada yen de ingresos. El pago llega a cero con 1,2 millones de yenes de ingresos, y por encima se paga el 30 % del exceso."
+          ],
+          [
+            "p",
+            "Sin ingresos, recibes 360.000 yenes en ambos casos. Con 1 millón de yenes, con la renta básica recibes 360.000 y pagas 300.000: ganas 60.000 netos; con el impuesto negativo, 360.000 menos 300.000 también deja 60.000. Con 3 millones, con la renta básica recibes 360.000 y pagas 900.000: un coste neto de 540.000; con el impuesto negativo pagas el 30 % de los 1,8 millones que superan 1,2 millones, de nuevo 540.000."
+          ],
+          [
+            "o",
+            "El resultado neto es idéntico. Lo que cambia es cómo se ve el flujo de dinero y el orden en que llega. Con una renta básica, todo el mundo recibe primero el dinero, y quien tiene ingresos devuelve una parte en impuestos. Por eso la cantidad bruta pagada parece tan grande. Con {la calculadora de renta básica|/calc/?c=jp&w=all&m=30000}, 30.000 yenes al mes para todas las personas de Japón suman unos 44,2 billones de yenes al año en bruto, alrededor del 6,7 % del PIB. En un artículo de 2017, el filósofo político Karl Widerquist calculó para Estados Unidos que el coste neto, tras restar lo que vuelve en impuestos, es mucho menor que la cifra bruta.[13]"
+          ],
+          [
+            "o",
+            "Dicho al revés: la diferencia real entre una renta básica y un impuesto negativo no es la cantidad neta. Es si el dinero llega primero a todo el mundo, o solo a quienes han demostrado su derecho, y más tarde. Esa diferencia decide cuánta gente se queda fuera y si el dinero ayuda de inmediato cuando alguien pierde el empleo. Cuando {Heizo Takenaka explicó su plan de 70.000 yenes al mes|/essays/takenaka-70000-yen-basic-income/}, también habló de un tipo impositivo negativo para quienes ganan poco y de pagar primero a todo el mundo para que quienes ganan más lo devuelvan en su declaración de la renta."
+          ],
+          [
+            "h",
+            "Los cinco criterios de BIEN"
+          ],
+          [
+            "p",
+            "La Red Mundial de Renta Básica (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todas las personas de forma individual, sin comprobación de recursos ni requisito de trabajo».[14] Usamos esta vara de medir en {nuestro ensayo sobre los 100.000 yenes de Japón|/essays/japan-special-cash-payment/}. Aquí la aplicamos al nuevo pago japonés."
+          ],
+          [
+            "p",
+            "¿Periódico? Sí, aunque solo una vez al año."
+          ],
+          [
+            "p",
+            "¿En efectivo? Sí."
+          ],
+          [
+            "p",
+            "¿Individual? Casi siempre. Con el sistema completo, quedarán fuera las personas cuyo cónyuge gane por encima de cierta cantidad."
+          ],
+          [
+            "p",
+            "¿Universal? No. Solo personas que trabajan y están entre el mínimo y el máximo de ingresos."
+          ],
+          [
+            "p",
+            "¿Incondicional? No. Exige ingresos del trabajo y haber pagado cierto nivel de impuestos y cotizaciones sociales.[2][3]"
+          ],
+          [
+            "o",
+            "Son dos criterios y medio de cinco. El EITC de EE. UU., calculado por unidad fiscal, condicionado al trabajo y limitado por ingresos, puntúa aún menos. No cumplir los criterios es menos un defecto de diseño que la señal de otro propósito. Un crédito fiscal reembolsable es una herramienta para aliviar la carga de quienes trabajan y hacer que cada hora extra compense. Una renta básica es una herramienta para dar a todo el mundo un suelo, trabaje o no."
+          ],
+          [
+            "h",
+            "Tres personas, lado a lado"
+          ],
+          [
+            "p",
+            "Por último, tres ejemplos. Las cuantías y los límites de Japón aún no están fijados, así que solo usamos las reglas del proyecto y de las directrices y las cifras de referencia del Gobierno. La renta básica es de 30.000 yenes al mes (360.000 al año) para todo el mundo."
+          ],
+          [
+            "p",
+            "A busca trabajo y el año pasado no tuvo ingresos del trabajo. A no recibe el pago. Una renta básica le daría 360.000 yenes al año, 30.000 cada mes."
+          ],
+          [
+            "p",
+            "B trabaja a tiempo parcial y el año pasado ganó 1 millón de yenes de salario. Que B tenga derecho depende de dónde se fije el mínimo. Con un mínimo de unos 530.000 o 740.000 yenes de salario, B tiene derecho y, al estar por debajo del umbral sin impuesto local, probablemente cobraría la cuantía fija. Con unos 1,06 millones, B no tiene derecho.[1][2] Una renta básica le daría 360.000 yenes al año."
+          ],
+          [
+            "p",
+            "C trabaja en una oficina y el año pasado ganó 4,5 millones de yenes de salario. Eso supera el máximo de las cifras de referencia del Gobierno (renta individual en la franja de los 3 millones), así que C probablemente no recibiría nada.[4] Una renta básica le daría 360.000 yenes al año, pero C también pagaría más impuestos para financiarla, de modo que en neto podría acabar pagando más."
+          ],
+          [
+            "o",
+            "El nuevo pago funciona mejor para alguien como B y no llega a A. Una renta básica da la misma cantidad a los tres y deja que el sistema fiscal marque la diferencia. Cuál es mejor depende de lo que se quiera conseguir."
+          ],
+          [
+            "h",
+            "¿Un primer paso realista?"
+          ],
+          [
+            "o",
+            "Los créditos fiscales reembolsables tienen virtudes que a la renta básica le faltan. Al focalizar, el mismo presupuesto rinde más por persona. Como el salario neto sube al trabajar, envían una señal clara a favor del empleo. Y es más fácil llegar a acuerdos. En Japón, los partidos del consejo nacional sí coincidieron en introducir un pago ligado a los ingresos en el año fiscal 2029. Lo que los dividió fue el «puente» unido a la rebaja del impuesto sobre el consumo, y en la votación de la cámara baja todos los partidos de la oposición votaron en contra.[1][5]"
+          ],
+          [
+            "o",
+            "Lo que el pago japonés está construyendo, una forma de conocer los ingresos de cada persona y pagar en su cuenta sin solicitud, es también la base que necesitaría cualquier renta básica. Si recordamos que los 100.000 yenes de 2020 tardaron meses en llegar a algunas personas porque había que comprobar a mano cada cuenta bancaria, no es poca cosa."
+          ],
+          [
+            "o",
+            "Pero sus límites también cuentan. No llega a quien no puede trabajar, llega con un año de retraso y solo una vez al año. La cuantía de referencia, unos 30.000 yenes al año, es la doceava parte de una renta básica de 30.000 yenes al mes. Es más exacto ver un crédito fiscal reembolsable no como un sustituto de la renta básica, sino como una herramienta que tapa uno de los huecos del sistema actual. Hasta dónde crezca esa herramienta se verá cuando se fijen las cuantías y los límites antes del arranque completo en el año fiscal 2029. Lo seguiremos de cerca."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Am 6. November 2026 hat Japans Repräsentantenhaus ein Gesetz verabschiedet. Es senkt die Verbrauchsteuer auf Lebensmittel für zwei Jahre auf 1 % und schafft die Entlastungszahlung für Erwerbstätige (shūgyōsha futan keigen shienkin): Bargeld, das jedes Jahr an Erwerbstätige mit niedrigem und mittlerem Einkommen gezahlt wird, abgestuft nach ihrem Einkommen. Die Regierung nennt die Zahlung den ersten Schritt zu einer „erstattungsfähigen Steuergutschrift“, über die Japan seit Jahren debattiert.[2][5]"
+          ],
+          [
+            "p",
+            "Manche hören „erstattungsfähige Steuergutschrift“ und denken an etwas, das einem Grundeinkommen ähnelt. Beide verbinden das Steuersystem mit Geldzahlungen. Doch sie unterscheiden sich deutlich darin, wer das Geld bekommt, unter welchen Bedingungen und wann. Wir prüfen zuerst, was Japan entschieden hat und was nicht, stellen es dann neben Beispiele aus anderen Ländern und gehen die Unterschiede einzeln durch."
+          ],
+          [
+            "h",
+            "Was Japan entschieden hat und was nicht"
+          ],
+          [
+            "p",
+            "Die pauschale Zahlung von 20.000 Yen pro Kopf, die die Regierungsparteien im Oberhauswahlkampf im Sommer 2025 versprochen hatten, kam nie, und die Debatte verlagerte sich auf ein System, das jedes Jahr nach Einkommen zahlt. Am 18. Dezember 2025 vereinbarten die Liberaldemokratische Partei und die Demokratische Volkspartei, die persönlichen Freibeträge der Einkommensteuer innerhalb von drei Jahren grundlegend zu überarbeiten, mit Blick auf eine erstattungsfähige Steuergutschrift oder ein ähnliches System.[1]"
+          ],
+          [
+            "p",
+            "Der Nationale Rat für soziale Sicherheit, der im Februar 2026 seine Arbeit aufnahm, beriet in parteiübergreifenden Arbeitssitzungen und Expertenrunden und legte am 29. Juli einen Zwischenbericht vor. Er schlug vor, im Fiskaljahr 2029 eine „einkommensabhängige, fein abgestufte Zahlung“ einzuführen, die Steuern, Sozialversicherungsbeiträge und Geldleistungen zusammen betrachtet. Zwei Ziele: das Nettoeinkommen von Erwerbstätigen mit niedrigem und mittlerem Einkommen zu erhöhen und die „Einkommensmauern“ abzubauen, wegen derer Menschen weniger arbeiten. Einige Mitglieder vertraten nachdrücklich, ideal sei eine Kombination aus Steuergutschrift und Geldzahlung, doch um ein kompliziertes System zu vermeiden, entschied sich der Rat vorerst nur für Geldzahlungen.[1]"
+          ],
+          [
+            "p",
+            "Am 15. September beschloss das Kabinett Eckpunkte, die das konkretisieren, und am 9. Oktober brachte es den Gesetzentwurf ins Parlament ein. Ab April 2027 sinkt die Verbrauchsteuer auf Lebensmittel für zwei Jahre von 8 % auf 1 % (0,78 % national plus lokale Verbrauchsteuer). In diesen zwei Jahren startet die Zahlung vorzeitig, begrenzt auf die erwarteten Einnahmen aus einem Prozentpunkt der Lebensmittelsteuer. Das volle System beginnt im Fiskaljahr 2029, wenn der Satz wieder 8 % beträgt.[2][3]"
+          ],
+          [
+            "p",
+            "Gesetzentwurf und Eckpunkte legen die Regeln fest. Der Anspruch ist individuell, Alleinstehende sind eingeschlossen. Anspruch hat, wessen Erwerbseinkommen im Vorjahr (Lohn, dazu Gewerbe- oder freiberufliches Einkommen oberhalb eines bestimmten Betrags) über einer Untergrenze liegt, wessen Gesamteinkommen eine Obergrenze nicht überschreitet (sie hängt von der Zahl der Kinder ab) und wer Steuern und Sozialversicherungsbeiträge über einem bestimmten Niveau zahlt. Auch Rentnerinnen und Rentner, die arbeiten und so viel zahlen wie Menschen im Erwerbsalter, sind erfasst. Mit dem vollen System fallen Personen heraus, deren Ehepartner mehr als einen bestimmten Betrag verdient.[2][3]"
+          ],
+          [
+            "p",
+            "Der Betrag ist pauschal für alle, deren Erwerbseinkommen bis zu einer Grenze reicht, die sich an der Schwelle orientiert, unterhalb der keine kommunale Einkommensteuer anfällt (1,19 Millionen Yen Lohn für Alleinstehende). Darüber steigt er mit dem Erwerbseinkommen, bleibt dann gleich und sinkt, wenn das Gesamteinkommen weiter steigt, bis auf null. Für jedes Kind bis 18 Jahre (in den Fiskaljahren 2027 und 2028 unter 16) gibt es einen festen Zuschlag, und wer an eine „Einkommensmauer“ stößt, erhält einen befristeten Zuschlag, bis diese Mauern beseitigt sind.[2]"
+          ],
+          [
+            "p",
+            "Gezahlt wird in der Regel einmal im Jahr. Die Wohngemeinde stellt den Anspruch fest und zahlt innerhalb von zwei Monaten. Bei Menschen, die ein Bankkonto für öffentliche Zahlungen registriert haben, soll die Gemeinde den Anspruch von sich aus feststellen, ohne Antrag. Die Zahlung ist steuerfrei und unpfändbar. Der Staat trägt mindestens zwei Drittel der Kosten.[2][3]"
+          ],
+          [
+            "p",
+            "Offen ist das Wichtigste: die Beträge und die Grenzen. Unter- und Obergrenze des Einkommens sowie die Höhe der Zahlung werden per Kabinettsverordnung festgelegt.[3] Als „eine Orientierung“ nannte die Regierung den Parteien im Oktober für die Fiskaljahre 2027 und 2028 rund 20 Millionen Berechtigte mit durchschnittlich etwa 30.000 Yen pro Jahr, zusammen etwa 600 Milliarden Yen jährlich, und eine Obergrenze, die bei einem individuellen Jahreseinkommen im Bereich von 3 Millionen Yen liegen könnte.[4] Für die Untergrenze waren im Rat etwa 530.000, 740.000 und etwa 1,06 Millionen Yen Lohn im Gespräch.[1]"
+          ],
+          [
+            "p",
+            "Der Entwurf passierte am 6. November mit den Stimmen der Liberaldemokratischen Partei, der Japanischen Innovationspartei und weiterer Abgeordneter das Unterhaus; alle Oppositionsparteien stimmten dagegen. Die Beratungen im Oberhaus sollen in der Folgewoche beginnen, doch dort fehlt den Regierungsparteien die Mehrheit. Ob der Entwurf vor dem Sitzungsende am 12. Dezember Gesetz wird, ist noch offen.[5]"
+          ],
+          [
+            "o",
+            "Auch wenn sie also „erstattungsfähige Steuergutschrift“ heißt: Was Japan zuerst aufbaut, ist keine Steuergutschrift, sondern eine einkommensabhängige Geldzahlung, gezielt für Erwerbstätige mit niedrigem und mittlerem Einkommen. Von hier aus lässt sie sich mit dem Grundeinkommen vergleichen."
+          ],
+          [
+            "h",
+            "Was eine erstattungsfähige Steuergutschrift ist"
+          ],
+          [
+            "p",
+            "Eine Steuergutschrift ist ein Betrag, der von der geschuldeten Steuer abgezogen wird. Wer wenig Steuern zahlt, kann sie aber nicht voll nutzen; je geringer das Einkommen, desto kleiner der Vorteil. Eine erstattungsfähige Steuergutschrift zahlt den ungenutzten Teil bar aus."
+          ],
+          [
+            "p",
+            "Eine ihrer Wurzeln ist die negative Einkommensteuer, die der Ökonom Milton Friedman 1962 in Kapitalismus und Freiheit bekannt machte. Wer mit seinem Einkommen unter einer bestimmten Linie liegt, zahlt keine Steuer, sondern bekommt Geld vom Staat. Ende der 1960er- und in den 1970er-Jahren testeten die USA die Idee in vier großen Experimenten. Im größten, in Seattle und Denver (rund 4.800 Familien), sank die jährliche Arbeitszeit bei Ehemännern um etwa 9 %, bei Ehefrauen um etwa 20 % und bei alleinerziehenden Müttern um etwa 14 %. Eine Analyse, die mehr Scheidungen fand, sorgte für Streit.[6] {Mincome im kanadischen Dauphin|/timeline/#tl-mincome} war eine Garantie derselben Art, gekürzt um 50 % des sonstigen Einkommens."
+          ],
+          [
+            "h",
+            "Wie es andere Länder machen"
+          ],
+          [
+            "p",
+            "Der US-amerikanische Earned Income Tax Credit (EITC) ist die bekannteste erstattungsfähige Steuergutschrift. Er wächst mit dem Erwerbseinkommen, erreicht ein Maximum und sinkt dann mit steigendem Einkommen. Für 2026 erhalten Familien mit drei oder mehr Kindern 45 % des Erwerbseinkommens bis 18.290 Dollar, höchstens 8.231 Dollar; Kinderlose höchstens 664 Dollar.[7] Ausgezahlt wird er in der Regel mit der Steuererklärung im Folgejahr."
+          ],
+          [
+            "p",
+            "Weil man eine Erklärung abgeben muss, gehen manche leer aus. Die Steuerbehörde IRS schätzt die landesweite Inanspruchnahme für das Steuerjahr 2022 auf 80,8 % (78 % in einer separaten Schätzung auf Basis des Current Population Survey): Etwa jede fünfte berechtigte Person hat ihn nicht bekommen.[8]"
+          ],
+          [
+            "p",
+            "2021 wurde der Child Tax Credit (CTC) für ein Jahr stark ausgeweitet. Er stieg auf 3.000 Dollar pro Kind und Jahr (3.600 Dollar unter 6 Jahren), wurde auch Familien ohne Einkommen voll gezahlt, und die Hälfte floss von Juli bis Dezember monatlich im Voraus. Die Kinderarmut nach dem Supplemental Poverty Measure des Census Bureau fiel 2021 auf ein Rekordtief von 5,2 % und hat sich nach dem Ende der Ausweitung 2022 auf 12,4 % mehr als verdoppelt (jeweils nach Erstveröffentlichung).[9] 2025 lag sie bei 13,4 %. Trotzdem haben erstattungsfähige Steuergutschriften (der EITC und der erstattungsfähige Teil des CTC) 2025 3,3 Millionen Kinder über die Armutsgrenze gehoben.[10]"
+          ],
+          [
+            "p",
+            "Großbritannien ging einen anderen Weg. Working Tax Credit und Child Tax Credit wurden, zusammen mit anderen Leistungen, durch den Universal Credit ersetzt. Er wird jeden Monat aus dem Einkommen dieses Monats berechnet. Für Menschen mit Kindern oder mit gesundheitlich eingeschränkter Arbeitsfähigkeit sinkt die Zahlung um 55 Pence je Pfund, das über einem monatlichen Freibetrag von 427 oder 710 Pfund verdient wird. Ein Paar wird als ein Haushalt betrachtet.[11]"
+          ],
+          [
+            "p",
+            "Das Canada Child Benefit erfährt das Familieneinkommen über die Steuererklärung und zahlt monatlich. Ob jemand arbeitet, spielt keine Rolle. Von Juli 2026 bis Juni 2027 zahlt es bis zu 8.157 kanadische Dollar im Jahr für jedes Kind unter 6 und 6.883 für jedes Kind von 6 bis 17, gekürzt, sobald das Nettoeinkommen der Familie im Vorjahr 38.237 kanadische Dollar übersteigt.[12]"
+          ],
+          [
+            "h",
+            "Sechs Unterschiede zum Grundeinkommen"
+          ],
+          [
+            "p",
+            "Erstens: wer es bekommt. Ein Grundeinkommen geht an alle. Eine erstattungsfähige Steuergutschrift zieht Einkommensgrenzen und zahlt an die Menschen innerhalb. Nach Japans Orientierungswerten würden etwa 20 Millionen Menschen die neue Zahlung erhalten.[4]"
+          ],
+          [
+            "p",
+            "Zweitens: ob Arbeit eine Bedingung ist. Der EITC und die japanische Zahlung sind so gebaut, dass man ohne Erwerbseinkommen nichts bekommt und mehr, sobald man arbeitet, denn sie sollen Arbeit fördern. Die Kehrseite: Sie erreichen niemanden, der wegen Krankheit, Behinderung, Pflege oder Arbeitslosigkeit nicht arbeiten kann. Japans Gesetzentwurf sieht vor, dass die Regierung Maßnahmen für diese Menschen prüft und im Fiskaljahr 2028 zu einem Ergebnis kommt.[3] Ein Grundeinkommen hat überhaupt keine Bedingungen."
+          ],
+          [
+            "p",
+            "Drittens: Person oder Haushalt. Der EITC richtet sich nach der steuerlichen Einheit (Paare veranlagen gemeinsam), der Universal Credit nach dem Haushalt, das Canada Child Benefit nach dem Familieneinkommen. Die japanische Zahlung ist individuell und in diesem Punkt nahe am Grundeinkommen. Mit dem vollen System fallen allerdings Menschen heraus, deren Ehepartner über einem bestimmten Betrag verdient.[2]"
+          ],
+          [
+            "p",
+            "Viertens: wann es ankommt. Ein Grundeinkommen kommt jeden Monat, im Voraus. Der EITC wird nach Jahresende über die Steuererklärung ausgezahlt, die japanische Zahlung einmal jährlich auf Basis des Vorjahreseinkommens. Bricht Ihr Einkommen in diesem Jahr plötzlich ein, zeigt sich das erst im nächsten. Die USA zahlten den CTC 2021 gerade deshalb in Monatsraten, um diese Lücke zu verkleinern."
+          ],
+          [
+            "p",
+            "Fünftens: wer leer ausgeht. Wo ein Antrag oder eine Steuererklärung nötig ist, bekommen manche Berechtigte nie etwas. Beim EITC war es etwa jede fünfte Person.[8] Die japanische Zahlung soll ohne Antrag auskommen, wenn ein Konto für öffentliche Zahlungen registriert ist, doch erst etwa die Hälfte der Bevölkerung hat eines registriert.[1]"
+          ],
+          [
+            "p",
+            "Sechstens: wie es bei steigendem Einkommen sinkt. Eine Leistung mit steigendem Einkommen zu kürzen, wirkt für die Empfänger wie ein höherer Steuersatz. Die Kürzungsrate von 55 % beim Universal Credit lässt zusammen mit Einkommensteuer und Sozialabgaben von jedem zusätzlichen Pfund noch weniger übrig. Alle Systeme kürzen schrittweise, um eine plötzliche „Klippe“ zu vermeiden, doch wer im Kürzungsbereich liegt, trägt eine höhere effektive Last. Japans Zuschlag für Menschen an einer „Einkommensmauer“ ist eine Antwort auf dieses Problem.[2][11]"
+          ],
+          [
+            "h",
+            "Netto dasselbe"
+          ],
+          [
+            "p",
+            "Nach all den Unterschieden die Wendung: Eine negative Einkommensteuer und ein Grundeinkommen lassen sich so gestalten, dass jeder Mensch am Ende genau dasselbe Einkommen hat. Einfache Zahlen zeigen es. Die 30 % hier dienen nur dem Vergleich der Mechanik; sie sind keine Finanzierungsschätzung."
+          ],
+          [
+            "p",
+            "Beim Grundeinkommen bekommen alle 360.000 Yen im Jahr (30.000 Yen im Monat), und auf jedes Einkommen kommt eine zusätzliche Steuer von 30 %. Bei der negativen Einkommensteuer erhält, wer kein Einkommen hat, 360.000 Yen im Jahr, gekürzt um 0,3 Yen je Yen Einkommen. Bei 1,2 Millionen Yen Einkommen ist die Zahlung null; darüber zahlt man 30 % des übersteigenden Betrags."
+          ],
+          [
+            "p",
+            "Ohne Einkommen erhält man in beiden Fällen 360.000 Yen. Mit 1 Million Yen erhält man beim Grundeinkommen 360.000 Yen und zahlt 300.000, netto ein Plus von 60.000 Yen; bei der negativen Einkommensteuer bleiben von 360.000 abzüglich 300.000 ebenfalls 60.000. Mit 3 Millionen erhält man beim Grundeinkommen 360.000 und zahlt 900.000, netto 540.000 Yen Last; bei der negativen Einkommensteuer zahlt man 30 % der 1,8 Millionen über 1,2 Millionen, wieder 540.000."
+          ],
+          [
+            "o",
+            "Das Nettoergebnis ist identisch. Verschieden sind das Bild des Geldflusses und die Reihenfolge, in der das Geld ankommt. Beim Grundeinkommen erhalten alle das Geld zuerst, und wer Einkommen hat, gibt einen Teil als Steuer zurück. Deshalb wirkt der ausgezahlte Bruttobetrag so groß. Mit {dem Grundeinkommensrechner|/calc/?c=jp&w=all&m=30000} ergeben 30.000 Yen im Monat für alle Menschen in Japan brutto rund 44,2 Billionen Yen im Jahr, etwa 6,7 % des BIP. In einem Aufsatz von 2017 berechnete der politische Philosoph Karl Widerquist für die USA, dass die Nettokosten, nach Abzug dessen, was als Steuer zurückfließt, weit unter dem Bruttowert liegen.[13]"
+          ],
+          [
+            "o",
+            "Umgekehrt gesagt: Der eigentliche Unterschied zwischen Grundeinkommen und negativer Einkommensteuer ist nicht der Nettobetrag. Es ist die Frage, ob das Geld zuerst bei allen ankommt, oder nur bei denen, deren Anspruch geprüft wurde, und später. Davon hängt ab, wie viele leer ausgehen und ob das Geld sofort hilft, wenn jemand die Arbeit verliert. Als {Heizo Takenaka seinen Plan von 70.000 Yen im Monat erläuterte|/essays/takenaka-70000-yen-basic-income/}, sprach auch er von einem negativen Steuersatz für Geringverdienende und davon, allen zuerst zu zahlen und es Gutverdienende über die Steuererklärung zurückgeben zu lassen."
+          ],
+          [
+            "h",
+            "Die fünf Kriterien des BIEN"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert das Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitspflicht“.[14] Diesen Maßstab haben wir in {unserem Essay über Japans 100.000 Yen|/essays/japan-special-cash-payment/} verwendet. Hier legen wir ihn an die neue japanische Zahlung an."
+          ],
+          [
+            "p",
+            "Regelmäßig? Ja, wenn auch nur einmal im Jahr."
+          ],
+          [
+            "p",
+            "In bar? Ja."
+          ],
+          [
+            "p",
+            "Individuell? Weitgehend ja. Mit dem vollen System fallen Menschen heraus, deren Ehepartner mehr als einen bestimmten Betrag verdient."
+          ],
+          [
+            "p",
+            "Universell? Nein. Nur Erwerbstätige zwischen Unter- und Obergrenze des Einkommens."
+          ],
+          [
+            "p",
+            "Bedingungslos? Nein. Sie setzt Erwerbseinkommen und gezahlte Steuern und Sozialbeiträge auf einem bestimmten Niveau voraus.[2][3]"
+          ],
+          [
+            "o",
+            "Das sind zweieinhalb von fünf. Der US-EITC, berechnet je steuerlicher Einheit, an Arbeit gebunden und nach Einkommen begrenzt, schneidet noch schlechter ab. Dass Kriterien fehlen, ist weniger ein Konstruktionsfehler als ein Zeichen für einen anderen Zweck. Eine erstattungsfähige Steuergutschrift ist ein Werkzeug, um Erwerbstätige zu entlasten und jede zusätzliche Stunde lohnender zu machen. Ein Grundeinkommen ist ein Werkzeug, um allen einen Boden zu geben, ob sie arbeiten oder nicht."
+          ],
+          [
+            "h",
+            "Drei Menschen im Vergleich"
+          ],
+          [
+            "p",
+            "Zum Schluss drei Beispiele. Japans Beträge und Grenzen stehen noch nicht fest, deshalb verwenden wir nur die Regeln aus Gesetzentwurf und Eckpunkten sowie die Orientierungswerte der Regierung. Das Grundeinkommen beträgt 30.000 Yen im Monat (360.000 Yen im Jahr) für alle."
+          ],
+          [
+            "p",
+            "A sucht Arbeit und hatte im vergangenen Jahr kein Erwerbseinkommen. A bekommt keine Zahlung. Ein Grundeinkommen brächte 360.000 Yen im Jahr, jeden Monat 30.000 Yen."
+          ],
+          [
+            "p",
+            "B arbeitet in Teilzeit und verdiente im vergangenen Jahr 1 Million Yen Lohn. Ob B Anspruch hat, hängt von der Untergrenze ab. Bei etwa 530.000 oder 740.000 Yen Lohn hat B Anspruch und erhielte, weil B unter der Schwelle ohne kommunale Steuer liegt, wahrscheinlich den Pauschalbetrag. Bei etwa 1,06 Millionen hat B keinen Anspruch.[1][2] Ein Grundeinkommen brächte 360.000 Yen im Jahr."
+          ],
+          [
+            "p",
+            "C ist Büroangestellte und verdiente im vergangenen Jahr 4,5 Millionen Yen Lohn. Das liegt über der Obergrenze in den Orientierungswerten der Regierung (individuelles Einkommen im Bereich von 3 Millionen Yen), also bekäme C wahrscheinlich nichts.[4] Ein Grundeinkommen brächte C 360.000 Yen im Jahr, doch C zahlte auch mehr Steuern zu seiner Finanzierung und könnte netto mehr zahlen."
+          ],
+          [
+            "o",
+            "Die neue Zahlung wirkt am besten bei jemandem wie B und erreicht A nicht. Ein Grundeinkommen gibt allen dreien denselben Betrag und überlässt den Unterschied dem Steuersystem. Was besser ist, hängt davon ab, was man erreichen will."
+          ],
+          [
+            "h",
+            "Ein realistischer erster Schritt?"
+          ],
+          [
+            "o",
+            "Erstattungsfähige Steuergutschriften haben Stärken, die dem Grundeinkommen fehlen. Weil sie zielgenau sind, reicht dasselbe Budget pro Kopf weiter. Weil das Nettoeinkommen mit der Arbeit steigt, senden sie ein klares Signal für Erwerbsarbeit. Und eine Einigung ist leichter zu erreichen. In Japan verständigten sich die Parteien im Nationalen Rat darauf, im Fiskaljahr 2029 eine einkommensabhängige Zahlung einzuführen. Gestritten wurde über die „Brücke“, die an die Senkung der Verbrauchsteuer gekoppelt ist, und bei der Abstimmung im Unterhaus stimmten alle Oppositionsparteien dagegen.[1][5]"
+          ],
+          [
+            "o",
+            "Was die japanische Zahlung aufbaut, nämlich eine Möglichkeit, das Einkommen jedes Menschen zu kennen und ohne Antrag auf sein Konto zu zahlen, ist auch das Fundament, das jedes Grundeinkommen bräuchte. Wenn man bedenkt, dass die 100.000 Yen von 2020 manche Menschen erst nach Monaten erreichten, weil jedes Bankkonto von Hand geprüft werden musste, ist das keine Kleinigkeit."
+          ],
+          [
+            "o",
+            "Doch auch die Grenzen zählen. Die Zahlung erreicht niemanden, der nicht arbeiten kann, sie kommt ein Jahr zu spät und nur einmal im Jahr. Der Orientierungsbetrag von etwa 30.000 Yen im Jahr ist ein Zwölftel eines Grundeinkommens von 30.000 Yen im Monat. Genauer ist es, eine erstattungsfähige Steuergutschrift nicht als Ersatz für ein Grundeinkommen zu sehen, sondern als Werkzeug, das eine Lücke im heutigen System schließt. Wie weit dieses Werkzeug wächst, wird sich zeigen, wenn Beträge und Grenzen vor dem vollen Start im Fiskaljahr 2029 festgelegt werden. Wir bleiben dran."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في 6 نوفمبر 2026 أقرّ مجلس النواب الياباني مشروع قانون. يخفّض المشروع ضريبة الاستهلاك على الأغذية إلى 1% لمدة عامين، وينشئ «دفعة تخفيف العبء عن العاملين» (⁦shūgyōsha futan keigen shienkin⁩)، وهي مبلغ نقدي يُدفع كل عام لذوي الدخل المنخفض والمتوسط الذين يعملون، بحسب دخلهم. وتصف الحكومة هذه الدفعة بأنها الخطوة الأولى نحو «ائتمان ضريبي قابل للاسترداد»، وهي فكرة تناقشها اليابان منذ سنوات.[2][5]"
+          ],
+          [
+            "p",
+            "يسمع بعض الناس عبارة «ائتمان ضريبي قابل للاسترداد» فيفكرون في شيء قريب من الدخل الأساسي، فكلاهما يربط النظام الضريبي بالدفعات النقدية. لكنهما يختلفان كثيرًا في من يحصل على المال، وبأي شروط، ومتى. نتحقق أولًا مما قررته اليابان وما لم تقرره، ثم نضعه إلى جانب أمثلة من دول أخرى ونمرّ على الفروق واحدًا واحدًا."
+          ],
+          [
+            "h",
+            "ما الذي قررته اليابان، وما الذي لم تقرره"
+          ],
+          [
+            "p",
+            "لم تتحقق دفعة الـ20,000 ين الموحدة للفرد التي وعدت بها أحزاب الحكم في انتخابات مجلس المستشارين صيف 2025، وانتقل النقاش إلى نظام يدفع كل عام بحسب الدخل. وفي 18 ديسمبر 2025 اتفق الحزب الليبرالي الديمقراطي والحزب الديمقراطي من أجل الشعب على مراجعة جذرية للإعفاءات الشخصية في ضريبة الدخل خلال ثلاث سنوات، مع وضع ائتمان ضريبي قابل للاسترداد أو نظام مشابه في الحسبان.[1]"
+          ],
+          [
+            "p",
+            "بدأ المجلس الوطني للضمان الاجتماعي عمله في فبراير 2026، وناقش المسألة في اجتماعات فنية تضم كل الأحزاب واجتماعات للخبراء، ثم أصدر تقريرًا مرحليًا في 29 يوليو. اقترح التقرير أن تُطلق في السنة المالية 2029 «دفعة مرتبطة بالدخل ومضبوطة بدقة» تنظر إلى الضرائب واشتراكات التأمين الاجتماعي والإعانات النقدية معًا، ولها هدفان: زيادة صافي دخل العاملين من ذوي الدخل المنخفض والمتوسط، وتخفيف «جدران الدخل» التي تدفع الناس إلى تقليل عملهم. ودافع بعض الأعضاء بقوة عن أن الصيغة المثلى هي الجمع بين الائتمان الضريبي والدفع النقدي، لكن المجلس اختار الدفعات النقدية وحدها في الوقت الحاضر تجنبًا لنظام معقد.[1]"
+          ],
+          [
+            "p",
+            "في 15 سبتمبر أقرّ مجلس الوزراء خطوطًا عريضة تجعل ذلك ملموسًا، وفي 9 أكتوبر أحال مشروع القانون إلى البرلمان. ابتداءً من أبريل 2027 ولمدة عامين، تنخفض ضريبة الاستهلاك على الأغذية من 8% إلى 1% (0.78% ضريبة وطنية إضافةً إلى ضريبة الاستهلاك المحلية). وخلال هذين العامين تبدأ الدفعة مبكرًا، في حدود الإيرادات المتوقعة من نقطة مئوية واحدة من ضريبة الأغذية. أما النظام الكامل فيبدأ في السنة المالية 2029، حين يعود المعدل إلى 8%.[2][3]"
+          ],
+          [
+            "p",
+            "يحدد مشروع القانون والخطوط العريضة القواعد. الاستحقاق فردي، ويشمل من يعيشون بمفردهم. يستحق الشخص الدفعة إذا تجاوز دخله من العمل في العام السابق (الأجر، إضافةً إلى دخل الأعمال أو العمل الحر فوق مبلغ معين) حدًا أدنى، ولم يتجاوز دخله الإجمالي حدًا أعلى (يتغير بحسب عدد الأطفال)، وكانت الضرائب واشتراكات التأمين الاجتماعي التي يدفعها فوق مستوى معين. ويشمل ذلك المتقاعدين الذين يعملون ويدفعون بقدر من هم في سن العمل. ومع بدء النظام الكامل يُستبعد من يتجاوز دخل زوجه أو زوجته مبلغًا معينًا.[2][3]"
+          ],
+          [
+            "p",
+            "المبلغ ثابت لمن لا يتجاوز دخله من العمل مستوى يُحدَّد بالرجوع إلى الحد الذي لا تُستحق تحته ضريبة الدخل المحلية (1.19 مليون ين من الأجر للشخص الأعزب). وفوق ذلك يزيد مع دخل العمل، ثم يستقر، ثم ينخفض حتى الصفر كلما ارتفع الدخل الإجمالي أكثر. وهناك إضافة ثابتة عن كل طفل في سن 18 عامًا أو أقل (أقل من 16 عامًا في السنتين الماليتين 2027 و2028)، وإضافة مؤقتة لمن يصطدمون بـ«جدار دخل» إلى أن تُزال هذه الجدران.[2]"
+          ],
+          [
+            "p",
+            "تُدفع الدفعة عادةً مرة واحدة في السنة. تتحقق البلدية التي يقيم فيها الشخص من استحقاقه وتدفع خلال شهرين. أما من سجّلوا حسابًا مصرفيًا لتلقي المدفوعات العامة، فالمبدأ أن تثبت البلدية استحقاقهم من تلقاء نفسها دون طلب. والدفعة معفاة من الضريبة ولا يجوز الحجز عليها. وتتحمل الحكومة الوطنية ثلثي التكلفة على الأقل.[2][3]"
+          ],
+          [
+            "p",
+            "الأهم لم يُحسم بعد: المبالغ والحدود. فالحدان الأدنى والأعلى للدخل ومبالغ الدفعة كلها ستُحدَّد بمرسوم حكومي.[3] وبوصفها «مرجعًا واحدًا»، أبلغت الحكومة الأحزاب في أكتوبر أن نحو 20 مليون شخص قد يشملهم البرنامج في السنتين الماليتين 2027 و2028، بمتوسط نحو 30,000 ين سنويًا للفرد، ونحو 600 مليار ين سنويًا في المجموع، وأن الحد الأعلى قد يقع عند دخل فردي سنوي في حدود 3 ملايين ين وما فوقها بقليل.[4] وبالنسبة إلى الحد الأدنى، نوقشت في المجلس خيارات بنحو 530,000 ين و740,000 ين ونحو 1.06 مليون ين من الأجر.[1]"
+          ],
+          [
+            "p",
+            "أُقرّ مشروع القانون في مجلس النواب في 6 نوفمبر بأصوات الحزب الليبرالي الديمقراطي وحزب الابتكار الياباني وآخرين، وصوّتت كل أحزاب المعارضة ضده. ويُتوقع أن تبدأ مناقشته في مجلس المستشارين في الأسبوع التالي، لكن أحزاب الحكم لا تملك أغلبية هناك، ولذلك لم يتضح بعد هل سيصبح قانونًا قبل انتهاء الدورة في 12 ديسمبر.[5]"
+          ],
+          [
+            "o",
+            "أي إنه رغم اسم «الائتمان الضريبي القابل للاسترداد»، فإن ما تبنيه اليابان أولًا ليس ائتمانًا ضريبيًا، بل دفعة نقدية مرتبطة بالدخل، موجهة إلى العاملين من ذوي الدخل المنخفض والمتوسط. ومن هنا تبدأ المقارنة بالدخل الأساسي."
+          ],
+          [
+            "h",
+            "ما هو الائتمان الضريبي القابل للاسترداد"
+          ],
+          [
+            "p",
+            "الائتمان الضريبي مبلغ يُخصم من الضريبة المستحقة عليك. لكن من تستحق عليهم ضريبة قليلة لا يستطيعون الاستفادة منه كاملًا، فكلما قلّ دخلك قلّت فائدتك. والائتمان الضريبي القابل للاسترداد يدفع نقدًا الجزء الذي لم تستطع استخدامه."
+          ],
+          [
+            "p",
+            "من جذوره «ضريبة الدخل السالبة» التي روّج لها الاقتصادي ميلتون فريدمان في كتابه ⁦Capitalism and Freedom⁩ عام 1962: من يقل دخله عن خط معين يتلقى مالًا من الحكومة بدلًا من دفع الضريبة. وفي أواخر الستينيات والسبعينيات أجرت الولايات المتحدة أربع تجارب كبرى لاختبار الفكرة. في أكبرها، في سياتل ودنفر (نحو 4,800 أسرة)، انخفضت ساعات العمل السنوية بنحو 9% لدى الأزواج، ونحو 20% لدى الزوجات، ونحو 14% لدى الأمهات المعيلات وحدهن. وأثار تحليلٌ وجد زيادةً في حالات الطلاق جدلًا.[6] وكان {برنامج Mincome في دوفين بكندا|/timeline/#tl-mincome} ضمانًا من النوع نفسه، يُخفَّض بنسبة 50% من الدخل الآخر."
+          ],
+          [
+            "h",
+            "كيف تفعل ذلك دول أخرى"
+          ],
+          [
+            "p",
+            "ائتمان ضريبة الدخل المكتسب الأمريكي (⁦EITC⁩) هو أشهر ائتمان ضريبي قابل للاسترداد. يزيد مع دخل العمل حتى يبلغ حدًا أقصى، ثم ينخفض مع ارتفاع الدخل. في عام 2026 تحصل الأسر التي لديها ثلاثة أطفال أو أكثر على 45% من دخل العمل حتى 18,290 دولارًا، بحد أقصى 8,231 دولارًا، ويحصل من ليس لديهم أطفال على 664 دولارًا كحد أقصى.[7] ويُصرف عادةً عند تقديم الإقرار الضريبي في العام التالي."
+          ],
+          [
+            "p",
+            "ولأن عليك تقديم الإقرار لتحصل عليه، يفوته بعض الناس. تقدّر مصلحة الضرائب الأمريكية (⁦IRS⁩) معدل المشاركة الوطني للسنة الضريبية 2022 بنسبة 80.8% (78% في تقدير منفصل يستند إلى المسح السكاني الجاري): أي إن نحو واحد من كل خمسة مستحقين لم يحصل عليه.[8]"
+          ],
+          [
+            "p",
+            "في عام 2021 وُسِّع ائتمان ضريبة الطفل (⁦CTC⁩) لعام واحد. ارتفع إلى 3,000 دولار سنويًا لكل طفل (3,600 دولار لمن هم دون السادسة)، وصار يُدفع كاملًا حتى للأسر التي لا دخل لها، ودُفع نصفه مقدمًا كل شهر من يوليو إلى ديسمبر. وانخفض فقر الأطفال وفق مقياس الفقر التكميلي لمكتب الإحصاء إلى أدنى مستوى مسجل عند 5.2% في 2021، ثم تضاعف بأكثر من مرة بعد انتهاء التوسيع ليبلغ 12.4% في 2022 (بحسب الأرقام المنشورة أول مرة).[9] وفي 2025 بلغ 13.4%. ومع ذلك، رفعت الائتمانات الضريبية القابلة للاسترداد (⁦EITC⁩ والجزء القابل للاسترداد من ⁦CTC⁩) 3.3 مليون طفل فوق خط الفقر في 2025.[10]"
+          ],
+          [
+            "p",
+            "سلكت المملكة المتحدة طريقًا آخر. فقد استُبدل بائتمان العمل الضريبي وائتمان الطفل الضريبي، مع إعانات أخرى، «الائتمان الشامل» (⁦Universal Credit⁩). يُحسب كل شهر من دخل ذلك الشهر. ولمن يعولون أطفالًا أو تحدّ صحتهم من قدرتهم على العمل، تنخفض الدفعة 55 بنسًا عن كل جنيه يُكسب فوق إعفاء شهري للعمل قدره 427 أو 710 جنيهات. ويُقيَّم الزوجان بوصفهما أسرة واحدة.[11]"
+          ],
+          [
+            "p",
+            "تعتمد إعانة الطفل الكندية (⁦Canada Child Benefit⁩) على الإقرارات الضريبية لمعرفة دخل الأسرة، وتُدفع شهريًا، ولا تسأل هل يعمل أحد أم لا. من يوليو 2026 إلى يونيو 2027 تدفع حتى 8,157 دولارًا كنديًا سنويًا عن كل طفل دون السادسة، و6,883 دولارًا كنديًا عن كل طفل بين 6 و17 عامًا، وتبدأ في الانخفاض حين يتجاوز صافي دخل الأسرة في العام السابق 38,237 دولارًا كنديًا.[12]"
+          ],
+          [
+            "h",
+            "ستة فروق عن الدخل الأساسي"
+          ],
+          [
+            "p",
+            "أولًا: من يحصل عليه. الدخل الأساسي يذهب إلى الجميع. أما الائتمان الضريبي القابل للاسترداد فيرسم حدودًا للدخل ويدفع لمن هم داخلها. وبحسب الأرقام المرجعية اليابانية، سيحصل على الدفعة الجديدة نحو 20 مليون شخص.[4]"
+          ],
+          [
+            "p",
+            "ثانيًا: هل العمل شرط. صُمم ⁦EITC⁩ والدفعة اليابانية بحيث لا تحصل على شيء دون دخل من العمل، وتحصل على أكثر حين تبدأ العمل، لأنهما وُجدا لتشجيع العمل. والوجه الآخر أنهما لا يصلان إلى من لا يستطيعون العمل بسبب المرض أو الإعاقة أو رعاية الآخرين أو البطالة. وينص المشروع الياباني على أن تدرس الحكومة تدابير لهؤلاء وتصل إلى استنتاج خلال السنة المالية 2028.[3] أما الدخل الأساسي فلا شروط له أصلًا."
+          ],
+          [
+            "p",
+            "ثالثًا: الفرد أم الأسرة. يُحدَّد ⁦EITC⁩ بالوحدة الضريبية (يقدّم الزوجان إقرارًا مشتركًا)، والائتمان الشامل بالأسرة، وإعانة الطفل الكندية بدخل الأسرة. أما الدفعة اليابانية ففردية، وهي في هذه النقطة قريبة من الدخل الأساسي. لكن مع بدء النظام الكامل يُستبعد من يكسب زوجه أو زوجته فوق مبلغ معين.[2]"
+          ],
+          [
+            "p",
+            "رابعًا: متى يصل. الدخل الأساسي يصل كل شهر، مقدمًا. أما ⁦EITC⁩ فيُصرف بعد انتهاء العام عبر الإقرار الضريبي، والدفعة اليابانية تُصرف مرة في السنة بناءً على دخل العام السابق. فإذا انخفض دخلك فجأة هذا العام، لن يظهر ذلك إلا في العام المقبل. وقد دفعت الولايات المتحدة ⁦CTC⁩ لعام 2021 على أقساط شهرية لتضييق هذه الفجوة تحديدًا."
+          ],
+          [
+            "p",
+            "خامسًا: من يفوتهم المال. حين يتطلب البرنامج طلبًا أو إقرارًا ضريبيًا، لا يحصل بعض المستحقين عليه أبدًا. في ⁦EITC⁩ كان ذلك نحو واحد من كل خمسة.[8] وصُممت الدفعة اليابانية بحيث لا تحتاج إلى طلب لمن سجّلوا حسابًا لتلقي المدفوعات العامة، لكن نحو نصف السكان فقط سجّلوا مثل هذا الحساب حتى الآن.[1]"
+          ],
+          [
+            "p",
+            "سادسًا: كيف ينخفض مع ارتفاع الدخل. سحب الإعانة مع ارتفاع الدخل يعمل، بالنسبة إلى المستفيد، تمامًا مثل معدل ضريبي أعلى. فمعدل السحب البالغ 55% في الائتمان الشامل، مضافًا إليه ضريبة الدخل والتأمين الوطني، يترك من كل جنيه إضافي أقل من ذلك. وكل البرامج تخفّض الدعم تدريجيًا لتجنب «هاوية» مفاجئة، لكن من يقعون في نطاق التخفيض يتحملون عبئًا فعليًا أثقل. والإضافة اليابانية لمن يواجهون «جدار دخل» هي استجابة لهذه المشكلة.[2][11]"
+          ],
+          [
+            "h",
+            "الشيء نفسه، بالصافي"
+          ],
+          [
+            "p",
+            "بعد سرد الفروق، تأتي المفاجأة: يمكن تصميم ضريبة الدخل السالبة والدخل الأساسي بحيث ينتهي كل شخص إلى الدخل النهائي نفسه تمامًا. وتوضح ذلك أرقام بسيطة. ونسبة الـ30% المستخدمة هنا لمقارنة الآليات فقط، وليست تقديرًا للتمويل."
+          ],
+          [
+            "p",
+            "في جانب الدخل الأساسي، يحصل الجميع على 360,000 ين سنويًا (30,000 ين شهريًا)، وتُضاف ضريبة إضافية بنسبة 30% على كل الدخل. وفي جانب ضريبة الدخل السالبة، يحصل من لا دخل له على 360,000 ين سنويًا، تنقص 0.3 ين عن كل ين من الدخل. وتصل الدفعة إلى الصفر عند دخل قدره 1.2 مليون ين، وفوق ذلك يدفع الناس 30% من الزيادة."
+          ],
+          [
+            "p",
+            "بلا دخل، تحصل على 360,000 ين في الحالتين. وبدخل مليون ين، تحصل في الدخل الأساسي على 360,000 ين وتدفع 300,000 ين، أي مكسب صافٍ قدره 60,000 ين؛ وفي ضريبة الدخل السالبة يتبقى أيضًا 60,000 ين بعد خصم 300,000 من 360,000. وبدخل 3 ملايين ين، تحصل في الدخل الأساسي على 360,000 ين وتدفع 900,000 ين، أي تكلفة صافية قدرها 540,000 ين؛ وفي ضريبة الدخل السالبة تدفع 30% من الـ1.8 مليون ين التي تزيد على 1.2 مليون ين، أي 540,000 ين مرة أخرى."
+          ],
+          [
+            "o",
+            "النتيجة الصافية متطابقة. ما يختلف هو شكل تدفق المال والترتيب الذي يصل به. في الدخل الأساسي يتلقى الجميع المال أولًا، ثم يعيد أصحاب الدخل جزءًا منه ضريبةً. لذلك يبدو المبلغ الإجمالي المدفوع كبيرًا جدًا. وبحسب {حاسبة الدخل الأساسي|/calc/?c=jp&w=all&m=30000}، فإن 30,000 ين شهريًا لكل شخص في اليابان تبلغ إجمالًا نحو 44.2 تريليون ين سنويًا، أي نحو 6.7% من الناتج المحلي الإجمالي. وفي ورقة عام 2017 حسب الفيلسوف السياسي كارل وايدركويست، بالنسبة إلى الولايات المتحدة، أن التكلفة الصافية، بعد طرح ما يعود ضرائبَ، أصغر بكثير من الرقم الإجمالي.[13]"
+          ],
+          [
+            "o",
+            "وبعبارة أخرى، الفرق الحقيقي بين الدخل الأساسي وضريبة الدخل السالبة ليس في المبلغ الصافي، بل في هل يصل المال إلى الجميع أولًا، أم يصل لاحقًا إلى من جرى التحقق من استحقاقهم فقط. وهذا الفرق هو ما يحدد كم شخصًا يفوتهم المال، وهل يساعد فورًا حين يفقد أحدهم عمله. وحين {شرح هيزو تاكيناكا خطته البالغة 70,000 ين شهريًا|/essays/takenaka-70000-yen-basic-income/}، تحدث هو أيضًا عن معدل ضريبي سالب لذوي الدخل المنخفض، وعن الدفع للجميع أولًا ثم استعادة المال من أصحاب الدخل المرتفع عبر إقراراتهم الضريبية."
+          ],
+          [
+            "h",
+            "معايير ⁦BIEN⁩ الخمسة"
+          ],
+          [
+            "p",
+            "تعرّف الشبكة العالمية للدخل الأساسي (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُقدَّم دون شروط للجميع على أساس فردي، من دون اختبار للموارد أو اشتراط للعمل».[14] استخدمنا هذا المقياس في {مقالنا عن دفعة الـ100,000 ين اليابانية|/essays/japan-special-cash-payment/}، ونطبقه هنا على الدفعة اليابانية الجديدة."
+          ],
+          [
+            "p",
+            "دورية؟ نعم، وإن كانت مرة واحدة في السنة فقط."
+          ],
+          [
+            "p",
+            "نقدية؟ نعم."
+          ],
+          [
+            "p",
+            "فردية؟ في الغالب نعم. ومع بدء النظام الكامل يُستبعد من يتجاوز دخل زوجه أو زوجته مبلغًا معينًا."
+          ],
+          [
+            "p",
+            "شاملة؟ لا. فهي للعاملين الواقعين بين الحدين الأدنى والأعلى للدخل فقط."
+          ],
+          [
+            "p",
+            "غير مشروطة؟ لا. فهي تشترط دخلًا من العمل ودفع مستوى معين من الضرائب واشتراكات التأمين الاجتماعي.[2][3]"
+          ],
+          [
+            "o",
+            "هذا معياران ونصف من خمسة. أما ⁦EITC⁩ الأمريكي، المحسوب لكل وحدة ضريبية والمشروط بالعمل والمحدود بالدخل، فيحصل على أقل من ذلك. وغياب المعايير ليس عيبًا في التصميم بقدر ما هو علامة على غاية مختلفة. فالائتمان الضريبي القابل للاسترداد أداة لتخفيف العبء عن العاملين وجعل كل ساعة إضافية مجزية. والدخل الأساسي أداة لمنح الجميع أرضية، سواء عملوا أم لم يعملوا."
+          ],
+          [
+            "h",
+            "ثلاثة أشخاص جنبًا إلى جنب"
+          ],
+          [
+            "p",
+            "أخيرًا، ثلاثة أمثلة. لم تُحدَّد المبالغ والحدود اليابانية بعد، لذلك نستخدم فقط قواعد مشروع القانون والخطوط العريضة والأرقام المرجعية التي قدمتها الحكومة. والدخل الأساسي هنا 30,000 ين شهريًا (360,000 ين سنويًا) للجميع."
+          ],
+          [
+            "p",
+            "«أ» تبحث عن عمل ولم يكن لها دخل من العمل في العام الماضي. لا تحصل «أ» على الدفعة. أما الدخل الأساسي فيمنحها 360,000 ين سنويًا، 30,000 ين كل شهر."
+          ],
+          [
+            "p",
+            "«ب» يعمل بدوام جزئي وكسب العام الماضي مليون ين أجرًا. استحقاقه يتوقف على موضع الحد الأدنى. فإن كان نحو 530,000 أو 740,000 ين من الأجر، يستحق «ب» الدفعة، ولأنه تحت الحد الذي لا تُستحق تحته الضريبة المحلية، سيحصل على الأرجح على المبلغ الثابت. وإن كان نحو 1.06 مليون ين، فلا يستحقها.[1][2] أما الدخل الأساسي فيمنحه 360,000 ين سنويًا."
+          ],
+          [
+            "p",
+            "«ج» موظفة مكتب كسبت العام الماضي 4.5 مليون ين أجرًا. وهذا فوق الحد الأعلى في الأرقام المرجعية للحكومة (دخل فردي في حدود 3 ملايين ين وما فوقها بقليل)، فالأرجح ألا تحصل على شيء.[4] أما الدخل الأساسي فيمنحها 360,000 ين سنويًا، لكنها ستدفع أيضًا ضرائب أكثر لتمويله، فقد ينتهي بها الأمر إلى دفع أكثر بالصافي."
+          ],
+          [
+            "o",
+            "تعمل الدفعة الجديدة على أفضل وجه لشخص مثل «ب»، ولا تصل إلى «أ». أما الدخل الأساسي فيمنح الثلاثة المبلغ نفسه ويترك للنظام الضريبي صنع الفارق. وأيهما أفضل يتوقف على ما تريد تحقيقه."
+          ],
+          [
+            "h",
+            "خطوة أولى واقعية؟"
+          ],
+          [
+            "o",
+            "للائتمانات الضريبية القابلة للاسترداد نقاط قوة يفتقر إليها الدخل الأساسي. فلأنها موجهة، تذهب الميزانية نفسها أبعد لكل فرد. ولأن صافي الدخل يرتفع مع العمل، فهي ترسل إشارة واضحة لصالح العمل. كما أن التوافق عليها أسهل. ففي اليابان اتفقت الأحزاب في المجلس الوطني على إدخال دفعة مرتبطة بالدخل في السنة المالية 2029. أما ما فرّقها فهو «الجسر» المرتبط بخفض ضريبة الاستهلاك، وفي تصويت مجلس النواب صوّتت كل أحزاب المعارضة ضده.[1][5]"
+          ],
+          [
+            "o",
+            "وما تبنيه الدفعة اليابانية، أي طريقة لمعرفة دخل كل شخص والدفع إلى حسابه دون طلب، هو أيضًا الأساس الذي يحتاجه أي دخل أساسي. وإذا تذكرنا أن الـ100,000 ين في 2020 استغرقت أشهرًا لتصل إلى بعض الناس لأن كل حساب مصرفي كان يجب التحقق منه يدويًا، فهذا ليس أمرًا صغيرًا."
+          ],
+          [
+            "o",
+            "لكن حدودها مهمة أيضًا. فهي لا تصل إلى من لا يستطيعون العمل، وتصل متأخرة عامًا، ومرة واحدة فقط في السنة. والمبلغ المرجعي البالغ نحو 30,000 ين سنويًا هو جزء من اثني عشر من دخل أساسي قدره 30,000 ين شهريًا. ومن الأدق أن نرى الائتمان الضريبي القابل للاسترداد لا بديلًا عن الدخل الأساسي، بل أداةً تسد ثغرة واحدة في النظام القائم. وإلى أي مدى ستنمو هذه الأداة، سيتضح حين تُحدَّد المبالغ والحدود قبل الانطلاق الكامل في السنة المالية 2029. وسنتابع ذلك."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Social Security National Council (Shakai Hoshō Kokumin Kaigi) — Interim report on the refundable tax credit (29 Jul 2026; PDF, in Japanese)",
+          "url": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260729-4/01_siryou1.pdf"
+        },
+        {
+          "n": 2,
+          "label": "Cabinet Secretariat — Outline for the temporary cut in the consumption tax rate on food and the introduction of the Worker Burden Relief Payment (Cabinet decision, 15 Sep 2026; PDF, in Japanese)",
+          "url": "https://www.cas.go.jp/jp/seisaku/shouhizei_futankeigenshienkin/dai1/sanko2.pdf"
+        },
+        {
+          "n": 3,
+          "label": "Cabinet Secretariat — Summary of the bill on the temporary cut in the consumption tax rate on food and the Worker Burden Relief Payment (Cabinet decision and submission to the Diet, 9 Oct 2026; PDF, in Japanese)",
+          "url": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf"
+        },
+        {
+          "n": 4,
+          "label": "Kyodo News via Kumamoto Nichinichi Shimbun — Government floats an average of about ¥30,000 for the new payment, about 20 million people in FY2027–28 (17 Oct 2026, in Japanese)",
+          "url": "https://kumanichi.com/articles/2047683"
+        },
+        {
+          "n": 5,
+          "label": "ANN News (via KSB Setonaikai Broadcasting) — Consumption tax cut bill passes the House of Representatives with the ruling parties’ votes; all opposition parties against (6 Nov 2026, in Japanese)",
+          "url": "https://news.ksb.co.jp/ann/article/17029673"
+        },
+        {
+          "n": 6,
+          "label": "US Department of Health and Human Services, ASPE — Overview of the Final Report of the Seattle-Denver Income Maintenance Experiment (1983)",
+          "url": "https://aspe.hhs.gov/reports/overview-final-report-seattle-denver-income-maintenance-experiment"
+        },
+        {
+          "n": 7,
+          "label": "IRS — Revenue Procedure 2025-32: inflation-adjusted items for 2026, including the EITC and Child Tax Credit (PDF)",
+          "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+        },
+        {
+          "n": 8,
+          "label": "IRS — EITC participation rate by states (tax year 2022)",
+          "url": "https://www.irs.gov/tax-professionals/eitc-central/eitc-participation-rate-by-state"
+        },
+        {
+          "n": 9,
+          "label": "US Census Bureau — Poverty in the United States: 2022 (P60-280, Sep 2023)",
+          "url": "https://www.census.gov/library/publications/2023/demo/p60-280.html"
+        },
+        {
+          "n": 10,
+          "label": "US Census Bureau — Christina Bijou and Emily A. Shrider, Poverty in the United States: 2025 (P60-290, Sep 2026)",
+          "url": "https://www.census.gov/library/publications/2026/demo/p60-290.html"
+        },
+        {
+          "n": 11,
+          "label": "GOV.UK — Universal Credit: how your wages affect your payments",
+          "url": "https://www.gov.uk/universal-credit/how-your-wages-affect-your-payments"
+        },
+        {
+          "n": 12,
+          "label": "Canada Revenue Agency — Canada Child Benefit: how we calculate your CCB (July 2026 to June 2027)",
+          "url": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html"
+        },
+        {
+          "n": 13,
+          "label": "Karl Widerquist — “The cost of basic income: back-of-the-envelope calculations”, Basic Income Studies 12(2) (2017)",
+          "url": "https://doi.org/10.1515/bis-2017-0016"
+        },
+        {
+          "n": 14,
+          "label": "Basic Income Earth Network (BIEN) — About Basic Income",
+          "url": "https://basicincome.org/about-basic-income/"
+        }
+      ]
+    },
     {
       "id": "finland-basic-income-experiment",
       "date": "2026-11-06",
@@ -11422,7 +13005,8 @@ module.exports = {
       "date": "2026-11-06",
       "related": [
         "japan-special-cash-payment",
-        "thailand-digital-wallet"
+        "thailand-digital-wallet",
+        "refundable-tax-credit-vs-basic-income"
       ],
       "title": {
         "ja": "月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する",
@@ -14288,7 +15872,8 @@ module.exports = {
       "related": [
         "thailand-digital-wallet",
         "nesara-gesara-basic-income",
-        "takenaka-70000-yen-basic-income"
+        "takenaka-70000-yen-basic-income",
+        "refundable-tax-credit-vs-basic-income"
       ],
       "title": {
         "ja": "10万円の給付金は、何に使われたのか：特別定額給付金をデータで振り返る",
