@@ -799,6 +799,10 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .qz-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
 .qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important;transition:background-color .15s ease}
 .qz-x:hover{background:var(--cta-hover)!important}
+.qz-acts .btn{gap:8px}
+.qz-acts .shr-o{min-height:52px;padding-inline:22px;border-radius:999px}
+.qz-friend{margin-top:14px;padding:12px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:var(--surface);font-size:.95rem;line-height:1.7}
+.qz-friend b{color:var(--gold)}
 .qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
 .vsec .g-link-top{margin-bottom:12px}
 /* BI計算機 */
@@ -854,7 +858,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Free Lunch Lab</a></li><li><a href="/shindan/">Free Lunch Quiz</a></li><li aria-current="page">Bridge-tapper</li></ol></nav>
 <main class="vmain">
 <header class="qz-res"><p class="eyebrow">Your result</p><p class="qz-you">You are</p><h1>Bridge-tapper</h1><p class="qz-desc">You test every bridge before you cross it. You pick only what can be cashed out and has a known operator. Even so, there is such a thing as a free lunch.</p>
-<div class="qz-acts"><a class="btn solid qz-x" href="https://x.com/intent/post?text=I%E2%80%99m%20%E2%80%9CBridge-tapper%E2%80%9D%20in%20the%20Free%20Lunch%20Quiz%20%23FreeLunchLab&amp;url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fshindan%2Fcareful%2F" target="_blank" rel="noopener">Share on X</a><a class="btn line" href="/shindan/">Take the quiz again</a></div></header>
+<div class="qz-acts"><a class="btn solid qz-x" href="https://x.com/intent/post?text=I%E2%80%99m%20%E2%80%9CBridge-tapper%E2%80%9D%20in%20the%20Free%20Lunch%20Quiz.%20What%E2%80%99s%20yours%3F%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fshindan%2F%3Fr%3Dcareful%26s%3Dshindan%20%23FreeLunchLab" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>Share my result on X</span></a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/shindan/?r=careful&amp;s=shindan">Copy link</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/shindan/?r=careful&amp;s=shindan" data-text="I’m “Bridge-tapper” in the Free Lunch Quiz. What’s yours? #FreeLunchLab" hidden>Share</button><a class="btn line" href="/shindan/">Take the quiz again</a></div></header>
 <section class="vsec"><h2>Services that fit this type: 10</h2><p class="qz-note">The result is a rough match picked automatically from your answers. Read each service’s cautions before you sign up.</p><div class="grid"><article class="svc rv" id="svc-hapitas" data-cat="pointsite" data-type="once">
 <div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ha</span><div class="svc-id"><div class="svc-line"><span class="cat">Cashback sites</span><div class="tags"><span class="type once">One-time</span></div></div><h3><a href="/services/hapitas/">Hapitas</a></h3></div></div>
 <p class="gain">Up to 2,300 points</p>
@@ -1010,6 +1014,17 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     var code=b.getAttribute('data-code'),span=b.previousElementSibling.querySelector('.dot');
     function fallback(){var r=document.createRange();r.selectNodeContents(span);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);say(I18N.selected)}
     try{navigator.clipboard.writeText(code).then(function(){say(I18N.copied)},fallback)}catch(err){fallback()}
+  });
+})();
+</script><script>
+(function(){
+  var toast=document.getElementById('toast'),timer,done="Link copied";
+  function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
+  if(navigator.share)[].forEach.call(document.querySelectorAll('[data-native]'),function(b){b.hidden=false});
+  document.addEventListener('click',function(e){
+    var c=e.target.closest('[data-copy]'),n=e.target.closest('[data-native]');
+    if(c){var u=c.getAttribute('data-copy');try{navigator.clipboard.writeText(u).then(function(){say(done)},function(){prompt('',u)})}catch(err){prompt('',u)}}
+    if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
   });
 })();
 </script>

@@ -197,15 +197,22 @@ function quizHtml(lang) {
 </div>
 <div class="chips">${QUIZ.types.map(t => `<span>${esc(t.name[lang])}</span>`).join('')}</div>`);
 }
+// 結果カード（BI計算機の結果カードと同じ作り）。タイプ名は語の途中（Phone-in-a-drawer のハイフンなど）で折り返さず、入らなければ小さくする: 診断の名前・タイプ名を金色で大きく・説明の最初の1文・合うサービスの数と、右下に静かな「あなたは何型？」。
+// 結果のページの og:image と、シェアされた /shindan/?r={type} の差し替え（src/worker.js）の両方で使う
+const firstSentence = t => (String(t).match(/^.+?(?:[。！？]|[!?।؟.](?=\s|$))/u) || [t])[0].trim();
 function quizTypeHtml(t, lang) {
   const L = T[lang];
   return frame(lang, 'essay', `<div class="mid">
-<p class="cat" style="--c:#FFD66B">${esc(L.shindanTitle)}</p>
-<p class="lbl">${esc(L.shindanYouAre)}</p>
-<h1 data-fit="104,52,170"><span class="qz-name">${esc(t.name[lang])}</span></h1>
-<p class="desc" style="-webkit-line-clamp:2" data-fit="30,22,110">${esc(t.desc[lang])}</p>
+<p class="lbl qx-who">${esc(L.shindanTitle)}</p>
+<p class="qx-name" data-fit="${lang === 'ar' || lang === 'hi' ? '96,48,150' : '112,52,150'}"><bdi>${t.name[lang].split(' ').map(w => `<span class="w">${esc(w)}</span>`).join(' ')}</bdi></p>
+<p class="desc qx-d" data-fit="32,22,110">${esc(firstSentence(t.desc[lang]))}</p>
 </div>
-<div class="chips"><span class="loop">${esc(L.shindanMatch.replace('{n}', servicesFor(t, live).length))}</span><span dir="ltr">${esc(L.shindanShareText.replace('{type}', t.name[lang]).replace(/^.*?(#[^\s\u2066-\u2069]+)[\s\u2066-\u2069]*$/, '$1'))}</span></div>`).replace('</style>', '.qz-name{background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}</style>');
+<div class="chips"><span>${esc(L.shindanMatch.replace('{n}', servicesFor(t, live).length))}</span><span class="site">${esc(L.shindanYours)}</span></div>
+<script>
+// 下の共通の data-fit はフォントが届く前に測るので、届いてから名前の大きさだけ測り直す（og.js はこのあとで撮る）
+document.fonts.ready.then(() => { const el = document.querySelector('.qx-name'), [max, min, h] = el.dataset.fit.split(',').map(Number); let size = Math.min(max, parseFloat(el.style.fontSize) || max); el.style.fontSize = size + 'px'; while ((el.scrollHeight > h || el.scrollWidth > el.clientWidth + 1) && size > min) { size -= 2; el.style.fontSize = size + 'px'; } });
+</script>`)
+    .replace('</style>', `.qx-who{letter-spacing:0;font-size:32px;color:#EEF1FF}.qx-name{font-family:"${DISP[lang][0]}","${BODY[lang]}",sans-serif;font-weight:${DISP[lang][1]};line-height:${lang === 'ar' || lang === 'hi' ? 1.45 : 1.18};color:#FFD66B;word-break:auto-phrase;text-wrap:balance;max-width:960px}.qx-name .w{white-space:nowrap}.qx-d{-webkit-line-clamp:2;color:#C9D0EE}.chips .site{font-size:26px;color:#EEF1FF}</style>`);
 }
 
 // BI計算機: 題・説明と、選べる国の名前

@@ -878,6 +878,10 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .qz-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
 .qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important;transition:background-color .15s ease}
 .qz-x:hover{background:var(--cta-hover)!important}
+.qz-acts .btn{gap:8px}
+.qz-acts .shr-o{min-height:52px;padding-inline:22px;border-radius:999px}
+.qz-friend{margin-top:14px;padding:12px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:var(--surface);font-size:.95rem;line-height:1.7}
+.qz-friend b{color:var(--gold)}
 .qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
 .vsec .g-link-top{margin-bottom:12px}
 /* BI計算機 */
@@ -931,8 +935,9 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <div class="wrap">
 <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh/">Free Lunch Lab（免费午餐研究所）</a></li><li aria-current="page">免费午餐测试</li></ol></nav>
 <main class="qz">
-<header class="orgs-head"><p class="eyebrow">免费午餐测试</p><h1>你是哪一型？免费午餐测试</h1><p class="orgs-intro">5 个问题，点一下就能作答。答案只在这台设备上使用，不会发送到任何地方。</p></header>
-<form class="qz-box" id="qz" data-types="[[&quot;sleeper&quot;,&quot;/zh/shindan/sleeper/&quot;],[&quot;poikatsu&quot;,&quot;/zh/shindan/poikatsu/&quot;],[&quot;shareholder&quot;,&quot;/zh/shindan/shareholder/&quot;],[&quot;crypto&quot;,&quot;/zh/shindan/crypto/&quot;],[&quot;human&quot;,&quot;/zh/shindan/human/&quot;],[&quot;careful&quot;,&quot;/zh/shindan/careful/&quot;]]" onsubmit="return false">
+<header class="orgs-head"><p class="eyebrow">免费午餐测试</p><h1>你是哪一型？免费午餐测试</h1><p class="orgs-intro">5 个问题，点一下就能作答。答案只在这台设备上使用，不会发送到任何地方。</p>
+<p class="qz-friend" id="qzFriend" data-t="你的朋友是“{type}”。你是哪一型？" hidden></p></header>
+<form class="qz-box" id="qz" data-types="[[&quot;sleeper&quot;,&quot;/zh/shindan/sleeper/&quot;,&quot;手机躺赚型&quot;],[&quot;poikatsu&quot;,&quot;/zh/shindan/poikatsu/&quot;,&quot;稳扎稳打攒积分型&quot;],[&quot;shareholder&quot;,&quot;/zh/shindan/shareholder/&quot;,&quot;想当股东型&quot;],[&quot;crypto&quot;,&quot;/zh/shindan/crypto/&quot;,&quot;加密冒险型&quot;],[&quot;human&quot;,&quot;/zh/shindan/human/&quot;,&quot;真人认证型&quot;],[&quot;careful&quot;,&quot;/zh/shindan/careful/&quot;,&quot;三思而行型&quot;]]" onsubmit="return false">
 <div class="qz-bar" aria-hidden="true"><i id="qzBar"></i></div>
 <fieldset class="qz-q" data-i="0" hidden><legend><span class="qz-n">第 1 题 / 共 5 题</span><span class="qz-t">你住在日本吗？</span></legend><div class="qz-a"><button class="btn line" type="button" data-s="{}">是</button><button class="btn line" type="button" data-s="{&quot;poikatsu&quot;:-99,&quot;shareholder&quot;:-99}">不是</button></div></fieldset>
 <fieldset class="qz-q" data-i="1" hidden><legend><span class="qz-n">第 2 题 / 共 5 题</span><span class="qz-t">你每天能花多少时间？</span></legend><div class="qz-a"><button class="btn line" type="button" data-s="{&quot;sleeper&quot;:3,&quot;careful&quot;:1}">几乎为零。装上就不想管</button><button class="btn line" type="button" data-s="{&quot;human&quot;:2,&quot;poikatsu&quot;:1,&quot;shareholder&quot;:1}">5 分钟左右还行</button><button class="btn line" type="button" data-s="{&quot;crypto&quot;:2,&quot;poikatsu&quot;:2}">30 分钟以上也可以</button></div></fieldset>
@@ -963,6 +968,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     if(++i>=qs.length)finish();else show();
   });
   back.addEventListener('click',function(){if(i>0){i--;picks.length=i;show();qs[i].querySelector('button').focus()}});
+  // シェアされたリンク（?r={type}）から来たときは、友だちの結果を1行だけ出す（結果のページには移らない）
+  try{var r=new URLSearchParams(location.search).get('r'),fr=document.getElementById('qzFriend');types.forEach(function(t){if(t[0]===r){var tpl=fr.getAttribute('data-t').split('{type}');fr.textContent='';fr.appendChild(document.createTextNode(tpl[0]));var b=document.createElement('b');b.textContent=t[2];fr.appendChild(b);fr.appendChild(document.createTextNode(tpl.slice(1).join('')));fr.hidden=false}})}catch(err){}
   f.classList.add('on');show();
 })();
 </script>

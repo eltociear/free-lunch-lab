@@ -1703,7 +1703,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-05. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-06. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -1808,7 +1808,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-03
+- Last commit: 2026-11-05
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -1819,7 +1819,7 @@ Server, web wallet and admin tools for Gradido, which creates money for each per
 - Group: Protocols
 - Language: Go
 - License: LGPL-3.0
-- Stars: 152
+- Stars: 151
 - Last commit: 2025-12-22
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/idena/
 
@@ -2085,7 +2085,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-11-04
+- Last commit: 2026-11-05
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -2151,7 +2151,7 @@ Reference mobile app for BrightID: people connect with others they know, and ana
 - Language: Python
 - License: AGPL-3.0
 - Stars: 171
-- Last commit: 2026-11-05
+- Last commit: 2026-11-06
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 
@@ -2184,7 +2184,7 @@ Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it search
 - Language: Python
 - License: CC0-1.0 (LICENSE)
 - Stars: 316
-- Last commit: 2026-11-03
+- Last commit: 2026-11-05
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
 

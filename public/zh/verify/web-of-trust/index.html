@@ -878,6 +878,10 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .qz-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
 .qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important;transition:background-color .15s ease}
 .qz-x:hover{background:var(--cta-hover)!important}
+.qz-acts .btn{gap:8px}
+.qz-acts .shr-o{min-height:52px;padding-inline:22px;border-radius:999px}
+.qz-friend{margin-top:14px;padding:12px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:var(--surface);font-size:.95rem;line-height:1.7}
+.qz-friend b{color:var(--gold)}
 .qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
 .vsec .g-link-top{margin-bottom:12px}
 /* BI計算機 */
@@ -934,7 +938,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">身份验证</p><h1>通过邀请或信任网加入的应用一览</h1><p class="orgs-intro">由已加入的成员邀请或为你担保（认证）后加入。无需人脸或证件，但没有认识的成员就很难开始。Idena 已于 2026 年 10 月确认可在日本使用；Ğ1 以法语圈为主，从日本加入相当困难；Circles 也需要有成员邀请。</p></header>
 <section class="vsec"><h2>需要此验证的服务<span class="dot">3</span></h2><div class="grid"><article class="svc rv" id="svc-circles" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/circles/">Circles <span class="q">Gnosis App</span></a></h3></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/circles/">Circles <span class="q">Gnosis App</span></a></h3></div></div>
 <p class="gain">每小时 1 CRC（每天 24 CRC）</p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><span class="region invite">仅限邀请</span><ul class="trust" aria-label="可信度参考"><li class="t-unknown" title="变现（能否换成现金）：未确认"><span aria-hidden="true">变现</span><b aria-hidden="true">?</b><span class="vh">变现（能否换成现金）：未确认</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 
@@ -948,7 +952,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <div class="slip"><a class="btn solid off" href="https://app.gnosis.io/" target="_blank" rel="noopener">查看官方网站</a></div></div>
 </article>
 <article class="svc rv" id="svc-g1" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="new">NEW</span><span class="type loop">持续</span></div></div><h3><a href="/zh/services/g1/">Ğ1 <span class="q">June</span></a></h3></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><div class="svc-line"><span class="cat">加密货币基本收入</span><div class="tags"><span class="type loop">持续</span></div></div><h3><a href="/zh/services/g1/">Ğ1 <span class="q">June</span></a></h3></div></div>
 <p class="gain">成为成员后每天获得 Ğ1（全民红利）</p>
 <div class="meta"><span class="ease"><span>轻松度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地区: </span>全球</span><span class="region invite">仅限邀请</span><ul class="trust" aria-label="可信度参考"><li class="t-partial" title="变现（能否换成现金）：有条件"><span aria-hidden="true">变现</span><b aria-hidden="true">△</b><span class="vh">变现（能否换成现金）：有条件</span></li><li class="t-unknown" title="市价（代币是否有市场价格）：未确认"><span aria-hidden="true">市价</span><b aria-hidden="true">?</b><span class="vh">市价（代币是否有市场价格）：未确认</span></li><li class="t-yes" title="运营方公开（是否公开运营公司）：有"><span aria-hidden="true">运营方</span><b aria-hidden="true">✓</b><span class="vh">运营方公开（是否公开运营公司）：有</span></li></ul></div>
 

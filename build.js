@@ -108,7 +108,12 @@ const qzPath = l => `${urlPath(l)}shindan/`;
 const qzAbs = l => SITE_URL + qzPath(l);
 const qzTypePath = (l, t) => `${qzPath(l)}${t.id}/`;
 const qzTypeAbs = (l, t) => SITE_URL + qzTypePath(l, t);
-const QZ_KEYS = ['shindanTitle', 'shindanH1', 'shindanDesc', 'shindanIntro', 'shindanQ', 'shindanBack', 'shindanEb', 'shindanYouAre', 'shindanMatch', 'shindanShareX', 'shindanShareText', 'shindanRetry', 'shindanOthers', 'shindanHome', 'shindanAll', 'shindanNote'];
+// 結果のシェア用 URL: 診断の入口（/shindan/?r={type}&s=shindan）。開いた人はそのまま診断を始められる。
+// src/worker.js が r を見て、og:image などをそのタイプのカード（src/og/shindan/{lang}/{type}.jpg）に差し替える。canonical はクエリなしのまま
+const qzShareAbs = (l, t) => `${qzAbs(l)}?r=${t.id}&s=shindan`;
+// 差し替える og:title。一人称の結果の文に、診断の名前（文に入っていなければ）かサイト名を足す
+const qzShareTitle = (l, t) => { const x = T[l].shindanShareText.replace('{type}', t.name[l]); return `${x} | ${x.includes(T[l].shindanTitle) ? T[l].brandPlain : T[l].shindanTitle}`; };
+const QZ_KEYS = ['shindanTitle', 'shindanH1', 'shindanDesc', 'shindanIntro', 'shindanQ', 'shindanBack', 'shindanEb', 'shindanYouAre', 'shindanMatch', 'shindanShareX', 'shindanShareText', 'shindanTag', 'shindanYours', 'shindanFriend', 'shindanRetry', 'shindanOthers', 'shindanHome', 'shindanAll', 'shindanNote'];
 for (const l of LANGS) for (const k of QZ_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 for (const l of LANGS) for (const q of QUIZ.questions) { if (!q.q[l]) throw new Error(`quiz ${q.id}: missing q.${l}`); for (const a of q.a) { if (!a.t[l]) throw new Error(`quiz ${q.id}: missing answer ${l}`); for (const k of Object.keys(a.s)) if (!QUIZ.types.some(t => t.id === k)) throw new Error(`quiz ${q.id}: unknown type ${k}`); } }
 for (const t of QUIZ.types) { for (const l of LANGS) for (const f of ['name', 'desc']) if (!t[f][l]) throw new Error(`quiz type ${t.id}: missing ${f}.${l}`); if (!servicesFor(t, live).length) throw new Error(`quiz type ${t.id}: no matching services`); }
@@ -404,8 +409,7 @@ const xWeight = t => [...t.normalize('NFC')].reduce((n, ch) => { const c = ch.co
 const X_MAX = 280, X_URL = 23;
 const SHARE_LOG = [];
 // 投稿文は「見出し + 改行 + URL + 空白 + ハッシュタグ1つ」。長ければ見出しを … で切る（空白で区切る言語は語の切れ目で）
-function xShare(head, url, lang) {
-  const tag = T[lang].calcTag;
+function xShare(head, url, lang, tag = T[lang].calcTag) {
   const fixed = 1 + X_URL + 1 + xWeight(tag);
   let h = head.trim(), cut = false;
   if (xWeight(h) + fixed > X_MAX) {
@@ -900,6 +904,10 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .qz-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
 .qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important;transition:background-color .15s ease}
 .qz-x:hover{background:var(--cta-hover)!important}
+.qz-acts .btn{gap:8px}
+.qz-acts .shr-o{min-height:52px;padding-inline:22px;border-radius:999px}
+.qz-friend{margin-top:14px;padding:12px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:var(--surface);font-size:.95rem;line-height:1.7}
+.qz-friend b{color:var(--gold)}
 .qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
 .vsec .g-link-top{margin-bottom:12px}
 /* BI計算機 */
@@ -1246,8 +1254,9 @@ function quizPage(lang) {
   const qs = QUIZ.questions.map((q, i) => `<fieldset class="qz-q" data-i="${i}" hidden><legend><span class="qz-n">${esc(L.shindanQ.replace('{n}', i + 1).replace('{total}', n))}</span><span class="qz-t">${esc(q.q[lang])}</span></legend><div class="qz-a">${q.a.map(a => `<button class="btn line" type="button" data-s="${esc(JSON.stringify(a.s))}">${esc(a.t[lang])}</button>`).join('')}</div></fieldset>`).join('\n');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.shindanTitle)}</li></ol></nav>
 <main class="qz">
-<header class="orgs-head"><p class="eyebrow">${esc(L.shindanTitle)}</p><h1>${esc(L.shindanH1)}</h1><p class="orgs-intro">${esc(L.shindanIntro)}</p></header>
-<form class="qz-box" id="qz" data-types="${esc(JSON.stringify(QUIZ.types.map(t => [t.id, qzTypePath(lang, t)])))}" onsubmit="return false">
+<header class="orgs-head"><p class="eyebrow">${esc(L.shindanTitle)}</p><h1>${esc(L.shindanH1)}</h1><p class="orgs-intro">${esc(L.shindanIntro)}</p>
+<p class="qz-friend" id="qzFriend" data-t="${esc(L.shindanFriend)}" hidden></p></header>
+<form class="qz-box" id="qz" data-types="${esc(JSON.stringify(QUIZ.types.map(t => [t.id, qzTypePath(lang, t), t.name[lang]])))}" onsubmit="return false">
 <div class="qz-bar" aria-hidden="true"><i id="qzBar"></i></div>
 ${qs}
 <button class="qz-back" type="button" id="qzBack" hidden>${RTL.has(lang) ? '→' : '←'} ${esc(L.shindanBack)}</button>
@@ -1271,6 +1280,8 @@ ${qs}
     if(++i>=qs.length)finish();else show();
   });
   back.addEventListener('click',function(){if(i>0){i--;picks.length=i;show();qs[i].querySelector('button').focus()}});
+  // シェアされたリンク（?r={type}）から来たときは、友だちの結果を1行だけ出す（結果のページには移らない）
+  try{var r=new URLSearchParams(location.search).get('r'),fr=document.getElementById('qzFriend');types.forEach(function(t){if(t[0]===r){var tpl=fr.getAttribute('data-t').split('{type}');fr.textContent='';fr.appendChild(document.createTextNode(tpl[0]));var b=document.createElement('b');b.textContent=t[2];fr.appendChild(b);fr.appendChild(document.createTextNode(tpl.slice(1).join('')));fr.hidden=false}})}catch(err){}
   f.classList.add('on');show();
 })();
 </script>`;
@@ -1286,17 +1297,19 @@ function quizResultPage(t, lang) {
     { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
     { '@type': 'ListItem', position: 2, name: L.shindanTitle, item: qzAbs(lang) },
     { '@type': 'ListItem', position: 3, name, item: url } ] };
-  const xUrl = `https://x.com/intent/post?text=${encodeURIComponent(L.shindanShareText.replace('{type}', name))}&url=${encodeURIComponent(url)}`;
+  // シェアは結果のページではなく診断の入口へ（?r=&s=shindan）。投稿文は「一人称の結果 + 改行 + URL + ハッシュタグ1つ」
+  const shareUrl = qzShareAbs(lang, t);
+  const x = xShare(L.shindanShareText.replace('{type}', name), shareUrl, lang, L.shindanTag);
   const guides = GUIDES.filter(g => list.some(s => s.id === g.svc));
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
 <main class="vmain">
 <header class="qz-res"><p class="eyebrow">${esc(L.shindanEb)}</p><p class="qz-you">${esc(L.shindanYouAre)}</p><h1>${esc(name)}</h1><p class="qz-desc">${esc(t.desc[lang])}</p>
-<div class="qz-acts"><a class="btn solid qz-x" href="${esc(xUrl)}" target="_blank" rel="noopener">${esc(L.shindanShareX)}</a><a class="btn line" href="${qzPath(lang)}">${esc(L.shindanRetry)}</a></div></header>
+<div class="qz-acts"><a class="btn solid qz-x" href="${esc(x.intent)}" target="_blank" rel="noopener">${XSVG}<span>${esc(L.shindanShareX)}</span></a><button class="btn shr-o" type="button" data-copy="${esc(shareUrl)}">${esc(L.copyLink)}</button><button class="btn shr-o" type="button" data-native="${esc(shareUrl)}" data-text="${esc(`${x.head} ${x.tag}`)}" hidden>${esc(L.share)}</button><a class="btn line" href="${qzPath(lang)}">${esc(L.shindanRetry)}</a></div></header>
 <section class="vsec"><h2>${esc(L.shindanMatch.replace('{n}', list.length))}</h2><p class="qz-note">${esc(L.shindanNote)}</p>${guides.map(g => guideLink(lang, g, 'g-link g-link-top')).join('')}<div class="grid">${list.map(s => card(s, lang)).join('\n')}</div></section>
 <section class="vsec"><h2>${esc(L.shindanOthers)}</h2>${qzChips(lang, t)}</section>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title: `${L.shindanTitle}: ${name} | ${L.title}`, desc: clip(`${L.shindanTitle}: ${name}. ${t.desc[lang]}`, lang), hrefFor: l => qzTypeAbs(l, t), pathFor: l => qzTypePath(l, t), ld, ogType: 'website', body, script: copyScript(L), pr: true, image: ogImage(`shindan/${lang}/${t.id}.jpg`) });
+  return shell(lang, { title: `${L.shindanTitle}: ${name} | ${L.title}`, desc: clip(`${L.shindanTitle}: ${name}. ${t.desc[lang]}`, lang), hrefFor: l => qzTypeAbs(l, t), pathFor: l => qzTypePath(l, t), ld, ogType: 'website', body, script: copyScript(L) + shareScript(L), pr: true, image: ogImage(`shindan/${lang}/${t.id}.jpg`) });
 }
 
 // ---- BI計算機（/calc/）。国・配る相手・月額を選ぶと年額と、予算・GDP との比を出す（JS）。?c=&w=&m= で結果を再現できる
@@ -1709,6 +1722,12 @@ else for (let i = 1; i <= 3; i++) {
 {
   const list = Object.fromEntries(LANGS.map(l => [l, Object.fromEntries(CALC_CARDS[l].filter(k => fs.existsSync(path.join(OG_DIR, 'calc', l, `${k.id}.jpg`))).map(k => [k.id, [k.title, k.desc]]))]));
   const file = path.join(__dirname, 'src/calc-cards.json'), json = JSON.stringify(list) + '\n';
+  if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== json) fs.writeFileSync(file, json);
+}
+// タダ飯診断の結果カードの一覧（src/shindan-cards.json）。/shindan/?r={type} なら src/worker.js が og:image・og:title などをこのカードに差し替える
+{
+  const list = Object.fromEntries(LANGS.map(l => [l, Object.fromEntries(QUIZ.types.filter(t => fs.existsSync(path.join(OG_DIR, 'shindan', l, `${t.id}.jpg`))).map(t => [t.id, [qzShareTitle(l, t), t.desc[l]]]))]));
+  const file = path.join(__dirname, 'src/shindan-cards.json'), json = JSON.stringify(list) + '\n';
   if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== json) fs.writeFileSync(file, json);
 }
 for (const { file, html, lang } of pages) fs.writeFileSync(file, ogResolve(html.replace('<!--@fonts@-->', fontHead[lang])));

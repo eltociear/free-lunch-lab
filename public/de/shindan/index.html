@@ -802,6 +802,10 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .qz-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
 .qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important;transition:background-color .15s ease}
 .qz-x:hover{background:var(--cta-hover)!important}
+.qz-acts .btn{gap:8px}
+.qz-acts .shr-o{min-height:52px;padding-inline:22px;border-radius:999px}
+.qz-friend{margin-top:14px;padding:12px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:var(--surface);font-size:.95rem;line-height:1.7}
+.qz-friend b{color:var(--gold)}
 .qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
 .vsec .g-link-top{margin-bottom:12px}
 /* BI計算機 */
@@ -855,8 +859,9 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <div class="wrap">
 <nav class="crumbs" aria-label="Brotkrümelnavigation"><ol><li><a href="/de/">Free Lunch Lab</a></li><li aria-current="page">Gratis-Mittagessen-Test</li></ol></nav>
 <main class="qz">
-<header class="orgs-head"><p class="eyebrow">Gratis-Mittagessen-Test</p><h1>Welcher Typ bist du? Der Gratis-Mittagessen-Test</h1><p class="orgs-intro">Fünf Fragen, jeweils ein Tipp. Deine Antworten bleiben auf diesem Gerät und werden nirgendwohin gesendet.</p></header>
-<form class="qz-box" id="qz" data-types="[[&quot;sleeper&quot;,&quot;/de/shindan/sleeper/&quot;],[&quot;poikatsu&quot;,&quot;/de/shindan/poikatsu/&quot;],[&quot;shareholder&quot;,&quot;/de/shindan/shareholder/&quot;],[&quot;crypto&quot;,&quot;/de/shindan/crypto/&quot;],[&quot;human&quot;,&quot;/de/shindan/human/&quot;],[&quot;careful&quot;,&quot;/de/shindan/careful/&quot;]]" onsubmit="return false">
+<header class="orgs-head"><p class="eyebrow">Gratis-Mittagessen-Test</p><h1>Welcher Typ bist du? Der Gratis-Mittagessen-Test</h1><p class="orgs-intro">Fünf Fragen, jeweils ein Tipp. Deine Antworten bleiben auf diesem Gerät und werden nirgendwohin gesendet.</p>
+<p class="qz-friend" id="qzFriend" data-t="Wer dir das geschickt hat, ist „{type}“. Welcher Typ bist du?" hidden></p></header>
+<form class="qz-box" id="qz" data-types="[[&quot;sleeper&quot;,&quot;/de/shindan/sleeper/&quot;,&quot;Schubladen-Handy-Typ&quot;],[&quot;poikatsu&quot;,&quot;/de/shindan/poikatsu/&quot;,&quot;Fleißiges Punkte-Eichhörnchen&quot;],[&quot;shareholder&quot;,&quot;/de/shindan/shareholder/&quot;,&quot;Aktionär in spe&quot;],[&quot;crypto&quot;,&quot;/de/shindan/crypto/&quot;,&quot;Krypto-Abenteurer&quot;],[&quot;human&quot;,&quot;/de/shindan/human/&quot;,&quot;Verifizierter Mensch&quot;],[&quot;careful&quot;,&quot;/de/shindan/careful/&quot;,&quot;Nummer-sicher-Typ&quot;]]" onsubmit="return false">
 <div class="qz-bar" aria-hidden="true"><i id="qzBar"></i></div>
 <fieldset class="qz-q" data-i="0" hidden><legend><span class="qz-n">Frage 1 von 5</span><span class="qz-t">Wohnst du in Japan?</span></legend><div class="qz-a"><button class="btn line" type="button" data-s="{}">Ja</button><button class="btn line" type="button" data-s="{&quot;poikatsu&quot;:-99,&quot;shareholder&quot;:-99}">Nein</button></div></fieldset>
 <fieldset class="qz-q" data-i="1" hidden><legend><span class="qz-n">Frage 2 von 5</span><span class="qz-t">Wie viel Zeit hast du pro Tag?</span></legend><div class="qz-a"><button class="btn line" type="button" data-s="{&quot;sleeper&quot;:3,&quot;careful&quot;:1}">Fast null. Installieren und vergessen</button><button class="btn line" type="button" data-s="{&quot;human&quot;:2,&quot;poikatsu&quot;:1,&quot;shareholder&quot;:1}">So etwa fünf Minuten</button><button class="btn line" type="button" data-s="{&quot;crypto&quot;:2,&quot;poikatsu&quot;:2}">Auch 30 Minuten oder mehr</button></div></fieldset>
@@ -887,6 +892,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     if(++i>=qs.length)finish();else show();
   });
   back.addEventListener('click',function(){if(i>0){i--;picks.length=i;show();qs[i].querySelector('button').focus()}});
+  // シェアされたリンク（?r={type}）から来たときは、友だちの結果を1行だけ出す（結果のページには移らない）
+  try{var r=new URLSearchParams(location.search).get('r'),fr=document.getElementById('qzFriend');types.forEach(function(t){if(t[0]===r){var tpl=fr.getAttribute('data-t').split('{type}');fr.textContent='';fr.appendChild(document.createTextNode(tpl[0]));var b=document.createElement('b');b.textContent=t[2];fr.appendChild(b);fr.appendChild(document.createTextNode(tpl.slice(1).join('')));fr.hidden=false}})}catch(err){}
   f.classList.add('on');show();
 })();
 </script>

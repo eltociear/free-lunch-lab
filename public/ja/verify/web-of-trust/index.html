@@ -880,6 +880,10 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .qz-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
 .qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important;transition:background-color .15s ease}
 .qz-x:hover{background:var(--cta-hover)!important}
+.qz-acts .btn{gap:8px}
+.qz-acts .shr-o{min-height:52px;padding-inline:22px;border-radius:999px}
+.qz-friend{margin-top:14px;padding:12px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:var(--surface);font-size:.95rem;line-height:1.7}
+.qz-friend b{color:var(--gold)}
 .qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
 .vsec .g-link-top{margin-bottom:12px}
 /* BI計算機 */
@@ -936,7 +940,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <main class="vmain">
 <header class="orgs-head"><p class="eyebrow">本人確認</p><h1>招待・信頼の網で参加するアプリ・サービス一覧</h1><p class="orgs-intro">すでに参加している人に招待されたり、認証（保証）してもらったりして参加する方式です。顔や身分証を出さずに済む一方、知り合いのメンバーがいないと始めにくいのが難点です。Idena は2026年10月に日本から使えることを確認していますが、Ğ1 はフランス語圏が中心で日本からの参加はかなり難しく、Circles も招待してくれるメンバーが必要です。</p></header>
 <section class="vsec"><h2>この認証が必要なサービス<span class="dot">3</span></h2><div class="grid"><article class="svc rv" id="svc-circles" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/circles/">Circles <span class="q">Gnosis App</span></a></h3></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">CG</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="type loop">継続</span></div></div><h3><a href="/ja/services/circles/">Circles <span class="q">Gnosis App</span></a></h3></div></div>
 <p class="gain">1時間に1 CRC（1日24 CRC）</p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><span class="region invite">招待制</span><ul class="trust" aria-label="信頼の目安"><li class="t-unknown" title="換金（現金にできるか）：未確認"><span aria-hidden="true">換金</span><b aria-hidden="true">?</b><span class="vh">換金（現金にできるか）：未確認</span></li><li class="t-unknown" title="市場価格（トークンに値段がついているか）：未確認"><span aria-hidden="true">市場価格</span><b aria-hidden="true">?</b><span class="vh">市場価格（トークンに値段がついているか）：未確認</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
 
@@ -950,7 +954,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <div class="slip"><a class="btn solid off" href="https://app.gnosis.io/" target="_blank" rel="noopener">公式サイトを見る</a></div></div>
 </article>
 <article class="svc rv" id="svc-g1" data-cat="crypto-bi" data-type="loop">
-<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="new">NEW</span><span class="type loop">継続</span></div></div><h3><a href="/ja/services/g1/">Ğ1 <span class="q">ジューン</span></a></h3></div></div>
+<div class="svc-top"><span class="ava" aria-hidden="true" dir="auto">Ğ</span><div class="svc-id"><div class="svc-line"><span class="cat">暗号資産ベーシックインカム</span><div class="tags"><span class="type loop">継続</span></div></div><h3><a href="/ja/services/g1/">Ğ1 <span class="q">ジューン</span></a></h3></div></div>
 <p class="gain">メンバーになるとĞ1を毎日（ユニバーサル・ディビデンド）</p>
 <div class="meta"><span class="ease"><span>ラク度</span><span class="meter" role="img" aria-label="1/5"><i class="on"></i><i></i><i></i><i></i><i></i></span></span><span class="region world"><span class="vh">地域: </span>海外OK</span><span class="region invite">招待制</span><ul class="trust" aria-label="信頼の目安"><li class="t-partial" title="換金（現金にできるか）：条件つき"><span aria-hidden="true">換金</span><b aria-hidden="true">△</b><span class="vh">換金（現金にできるか）：条件つき</span></li><li class="t-unknown" title="市場価格（トークンに値段がついているか）：未確認"><span aria-hidden="true">市場価格</span><b aria-hidden="true">?</b><span class="vh">市場価格（トークンに値段がついているか）：未確認</span></li><li class="t-yes" title="運営元公開（運営元が公開されているか）：あり"><span aria-hidden="true">運営元</span><b aria-hidden="true">✓</b><span class="vh">運営元公開（運営元が公開されているか）：あり</span></li></ul></div>
 

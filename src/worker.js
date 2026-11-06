@@ -3,6 +3,7 @@
 // IP アドレス、ユーザーエージェントの文字列、Cookie、参照元のパスやクエリは記録しない。
 // フォントや画像などはこの Worker を通らない（wrangler.jsonc の run_worker_first で、ページのパスだけ通す）
 import CARDS from './calc-cards.json';
+import QZ_CARDS from './shindan-cards.json';
 const LANGS = new Set(['ja', 'zh', 'hi', 'es', 'de', 'ar']);
 const BOT = /bot|crawl|spider|slurp|preview|fetch|monitor|headless|lighthouse|curl|wget|python|httpclient|java\/|go-http|node/i;
 
@@ -33,7 +34,7 @@ export default {
         env.PAGEVIEWS.writeDataPoint({ indexes: [lang], blobs: [url.pathname.slice(0, 200), lang, s, ref.slice(0, 100), bot], doubles: [1] });
       }
     } catch {}
-    return calcCard(request, url, res);
+    return calcCard(request, url, res) || shindanCard(request, url, res) || res;
   },
 };
 
@@ -44,20 +45,36 @@ const SITE = 'https://neteru-nyukin.eltociear.workers.dev';
 const CALC_PATH = /^\/(?:(ja|zh|hi|es|de|ar)\/)?calc\/$/;
 function calcCard(request, url, res) {
   const m = request.method === 'GET' && res.status === 200 && url.search ? url.pathname.match(CALC_PATH) : null;
-  if (!m) return res;
+  if (!m) return null;
   const lang = m[1] || 'en';
   const q = url.searchParams, amount = Number(q.get('m'));
   const id = `${q.get('c')}-${q.get('w')}-${amount}`;
   const hit = Object.prototype.hasOwnProperty.call(CARDS[lang] || {}, id) ? CARDS[lang][id] : null;
   if (!hit) return res;
-  const [title, desc] = hit;
-  const image = `${SITE}/og/calc/${lang}/${id}.jpg`;
+  return swapMeta(res, `${SITE}/og/calc/${lang}/${id}.jpg`, hit[0], hit[1]);
+}
+
+// タダ飯診断の結果のシェア: /shindan/?r={type}&s=shindan のように、r が og.js がカードを作ったタイプなら
+// その結果カード（/og/shindan/{lang}/{type}.jpg）に差し替える。ページの中身（診断）と canonical はそのまま。r がおかしければ元のページのまま
+const QZ_PATH = /^\/(?:(ja|zh|hi|es|de|ar)\/)?shindan\/$/;
+function shindanCard(request, url, res) {
+  const m = request.method === 'GET' && res.status === 200 && url.search ? url.pathname.match(QZ_PATH) : null;
+  if (!m) return null;
+  const lang = m[1] || 'en', id = url.searchParams.get('r') || '';
+  const hit = Object.prototype.hasOwnProperty.call(QZ_CARDS[lang] || {}, id) ? QZ_CARDS[lang][id] : null;
+  if (!hit) return res;
+  return swapMeta(res, `${SITE}/og/shindan/${lang}/${id}.jpg`, hit[0], hit[1]);
+}
+
+function swapMeta(res, image, title, desc) {
   const set = v => ({ element(el) { el.setAttribute('content', v); } });
   const out = new HTMLRewriter()
     .on('meta[property="og:image"]', set(image))
     .on('meta[name="twitter:image"]', set(image))
     .on('meta[property="og:title"]', set(title))
+    .on('meta[name="twitter:title"]', set(title))
     .on('meta[property="og:description"]', set(desc))
+    .on('meta[name="twitter:description"]', set(desc))
     .transform(res);
   // 中身が元のファイルと変わるので、静的ファイルの ETag は付けない
   const r = new Response(out.body, out);

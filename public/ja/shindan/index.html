@@ -880,6 +880,10 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .qz-acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
 .qz-x{min-height:52px;padding-inline:28px;font-size:1.05rem;background:var(--cta)!important;color:var(--cta-ink)!important;transition:background-color .15s ease}
 .qz-x:hover{background:var(--cta-hover)!important}
+.qz-acts .btn{gap:8px}
+.qz-acts .shr-o{min-height:52px;padding-inline:22px;border-radius:999px}
+.qz-friend{margin-top:14px;padding:12px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:var(--surface);font-size:.95rem;line-height:1.7}
+.qz-friend b{color:var(--gold)}
 .qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
 .vsec .g-link-top{margin-bottom:12px}
 /* BI計算機 */
@@ -933,8 +937,9 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <div class="wrap">
 <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">不労所得研究所</a></li><li aria-current="page">タダ飯診断</li></ol></nav>
 <main class="qz">
-<header class="orgs-head"><p class="eyebrow">タダ飯診断</p><h1>あなたは何型？タダ飯診断</h1><p class="orgs-intro">5つの質問に、タップで答えるだけ。回答はこの端末の中だけで使い、どこにも送りません。</p></header>
-<form class="qz-box" id="qz" data-types="[[&quot;sleeper&quot;,&quot;/ja/shindan/sleeper/&quot;],[&quot;poikatsu&quot;,&quot;/ja/shindan/poikatsu/&quot;],[&quot;shareholder&quot;,&quot;/ja/shindan/shareholder/&quot;],[&quot;crypto&quot;,&quot;/ja/shindan/crypto/&quot;],[&quot;human&quot;,&quot;/ja/shindan/human/&quot;],[&quot;careful&quot;,&quot;/ja/shindan/careful/&quot;]]" onsubmit="return false">
+<header class="orgs-head"><p class="eyebrow">タダ飯診断</p><h1>あなたは何型？タダ飯診断</h1><p class="orgs-intro">5つの質問に、タップで答えるだけ。回答はこの端末の中だけで使い、どこにも送りません。</p>
+<p class="qz-friend" id="qzFriend" data-t="友だちの結果は「{type}」でした。あなたは何型？" hidden></p></header>
+<form class="qz-box" id="qz" data-types="[[&quot;sleeper&quot;,&quot;/ja/shindan/sleeper/&quot;,&quot;スマホ放置型&quot;],[&quot;poikatsu&quot;,&quot;/ja/shindan/poikatsu/&quot;,&quot;コツコツポイ活型&quot;],[&quot;shareholder&quot;,&quot;/ja/shindan/shareholder/&quot;,&quot;株主になりたい型&quot;],[&quot;crypto&quot;,&quot;/ja/shindan/crypto/&quot;,&quot;クリプト冒険型&quot;],[&quot;human&quot;,&quot;/ja/shindan/human/&quot;,&quot;人間証明型&quot;],[&quot;careful&quot;,&quot;/ja/shindan/careful/&quot;,&quot;石橋たたき型&quot;]]" onsubmit="return false">
 <div class="qz-bar" aria-hidden="true"><i id="qzBar"></i></div>
 <fieldset class="qz-q" data-i="0" hidden><legend><span class="qz-n">質問 1 / 5</span><span class="qz-t">日本に住んでいますか？</span></legend><div class="qz-a"><button class="btn line" type="button" data-s="{}">はい</button><button class="btn line" type="button" data-s="{&quot;poikatsu&quot;:-99,&quot;shareholder&quot;:-99}">いいえ</button></div></fieldset>
 <fieldset class="qz-q" data-i="1" hidden><legend><span class="qz-n">質問 2 / 5</span><span class="qz-t">1日に使える時間は？</span></legend><div class="qz-a"><button class="btn line" type="button" data-s="{&quot;sleeper&quot;:3,&quot;careful&quot;:1}">ほぼゼロ。入れたら放置したい</button><button class="btn line" type="button" data-s="{&quot;human&quot;:2,&quot;poikatsu&quot;:1,&quot;shareholder&quot;:1}">5分くらいなら</button><button class="btn line" type="button" data-s="{&quot;crypto&quot;:2,&quot;poikatsu&quot;:2}">30分以上でもいい</button></div></fieldset>
@@ -965,6 +970,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     if(++i>=qs.length)finish();else show();
   });
   back.addEventListener('click',function(){if(i>0){i--;picks.length=i;show();qs[i].querySelector('button').focus()}});
+  // シェアされたリンク（?r={type}）から来たときは、友だちの結果を1行だけ出す（結果のページには移らない）
+  try{var r=new URLSearchParams(location.search).get('r'),fr=document.getElementById('qzFriend');types.forEach(function(t){if(t[0]===r){var tpl=fr.getAttribute('data-t').split('{type}');fr.textContent='';fr.appendChild(document.createTextNode(tpl[0]));var b=document.createElement('b');b.textContent=t[2];fr.appendChild(b);fr.appendChild(document.createTextNode(tpl.slice(1).join('')));fr.hidden=false}})}catch(err){}
   f.classList.add('on');show();
 })();
 </script>
