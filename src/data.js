@@ -2871,6 +2871,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-06",
+      "en": "Published the essay “Did Finland’s basic income experiment fail? What it showed, and what it could not”",
+      "ja": "エッセイ『「フィンランドで失敗した」は本当か：ベーシックインカム実験でわかったこと、わからなかったこと』を公開",
+      "zh": "发布随笔《“芬兰已经试过了，失败了”是真的吗？基本收入实验弄清了什么，又没能弄清什么》",
+      "hi": "निबंध “‘फ़िनलैंड में बेसिक इनकम नाकाम रही’? उस प्रयोग ने क्या दिखाया, और क्या नहीं दिखा सका” प्रकाशित",
+      "es": "Publicado el ensayo «“Finlandia ya lo probó y fracasó”: qué mostró el experimento de renta básica y qué no pudo mostrar»",
+      "de": "Essay „‚Finnland hat es versucht, und es ist gescheitert‘? Was das Grundeinkommensexperiment zeigte und was nicht“ veröffentlicht",
+      "ar": "نشرنا مقال «“جرّبت فنلندا الدخل الأساسي وفشل”؟ ما الذي أظهرته التجربة وما الذي لم تستطع إظهاره»"
+    },
+    {
+      "date": "2026-11-06",
       "en": "Published the essay “¥70,000 a month for everyone: who gains and who loses? Heizo Takenaka’s basic income plan, worked out for five households”",
       "ja": "エッセイ『月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する』を公開",
       "zh": "发布随笔《每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案》",
@@ -9048,7 +9058,7 @@ module.exports = {
     },
     {
       "id": "kenya",
-      "essays": ["moltbook-basic-income", "japan-special-cash-payment"],
+      "essays": ["moltbook-basic-income", "japan-special-cash-payment", "finland-basic-income-experiment"],
       "years": "2017–",
       "type": "ngo",
       "name": "GiveDirectly basic income study",
@@ -9093,6 +9103,7 @@ module.exports = {
     },
     {
       "id": "finland",
+      "essays": ["finland-basic-income-experiment"],
       "years": "2017–2018",
       "type": "gov",
       "name": "Finland’s basic income experiment",
@@ -9179,6 +9190,7 @@ module.exports = {
     },
     {
       "id": "stockton",
+      "essays": ["finland-basic-income-experiment"],
       "years": "2019–2021",
       "type": "ngo",
       "name": "Stockton SEED",
@@ -9754,6 +9766,1657 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "finland-basic-income-experiment",
+      "date": "2026-11-06",
+      "related": [
+        "openresearch-cash-study",
+        "japan-special-cash-payment"
+      ],
+      "title": {
+        "ja": "「フィンランドで失敗した」は本当か：ベーシックインカム実験でわかったこと、わからなかったこと",
+        "en": "Did Finland’s basic income experiment fail? What it showed, and what it could not",
+        "zh": "“芬兰已经试过了，失败了”是真的吗？基本收入实验弄清了什么，又没能弄清什么",
+        "hi": "“फ़िनलैंड में बेसिक इनकम नाकाम रही”? उस प्रयोग ने क्या दिखाया, और क्या नहीं दिखा सका",
+        "es": "«Finlandia ya lo probó y fracasó»: qué mostró el experimento de renta básica y qué no pudo mostrar",
+        "de": "„Finnland hat es versucht, und es ist gescheitert“? Was das Grundeinkommensexperiment zeigte und was nicht",
+        "ar": "«جرّبت فنلندا الدخل الأساسي وفشل»؟ ما الذي أظهرته التجربة وما الذي لم تستطع إظهاره"
+      },
+      "desc": {
+        "ja": "「BIはフィンランドで失敗済み」はよく聞く一言です。2018年の「打ち切り」報道、1年目と最終の結果、実験の限界、2026年のフィンランドまで一次資料でたどると、答えは「失敗」でも「成功」でもありませんでした。",
+        "en": "“Finland already tried basic income and it failed.” The 2018 headlines, the results, the limits and Finland in 2026, from the sources: neither a failure nor a success.",
+        "zh": "“基本收入在芬兰已经失败了”是常听到的一句话。从 2018 年的“叫停”报道、第一年和最终结果、实验的局限，一直到 2026 年的芬兰，用一手资料梳理下来，答案既不是“失败”，也不是“成功”。",
+        "hi": "“फ़िनलैंड में बेसिक इनकम आज़माई जा चुकी है और नाकाम रही।” 2018 की सुर्ख़ियाँ, नतीजे, सीमाएँ और 2026 का फ़िनलैंड, स्रोतों से: न नाकामी, न कामयाबी।",
+        "es": "«Finlandia ya probó la renta básica y fracasó». Los titulares de 2018, los resultados, los límites y Finlandia en 2026, desde las fuentes: ni fracaso ni éxito.",
+        "de": "„Finnland hat das Grundeinkommen schon getestet, es ist gescheitert.“ Schlagzeilen von 2018, Ergebnisse, Grenzen, Finnland 2026: weder Scheitern noch Erfolg.",
+        "ar": "«فنلندا جرّبت الدخل الأساسي وفشل». عناوين 2018 والنتائج والحدود وفنلندا في 2026، من المصادر: لا فشل ولا نجاح."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "Bring up basic income and, sooner or later, someone will say it: “Finland already tried that, and it failed.”"
+          ],
+          [
+            "p",
+            "This site supports basic income. That is exactly why we wanted to know whether “it failed” holds up, so we went back to the primary sources."
+          ],
+          [
+            "o",
+            "The short answer: it was neither a failure nor a success. It was an experiment with a clear list of things it found, and an equally clear list of things it could not find out."
+          ],
+          [
+            "h",
+            "Where “failed” came from"
+          ],
+          [
+            "p",
+            "It started in April 2018, when English-language media ran the story almost at once. Toru Yamamori of Doshisha University collected the headlines at the time: Business Insider (19 April) said Finland “is killing” its experiment, BBC News (23 April) that the trial “falls flat”, Sky News (24 April) that Finland would “scrap” it, the Orlando Sentinel (24 April) called it a “failed universal basic income experiment”, and USA Today (25 April) said it “didn’t work out”.[3]"
+          ],
+          [
+            "p",
+            "Japanese media ran similar headlines in the same weeks, with words like “interrupted” and “terminated”.[1][2]"
+          ],
+          [
+            "p",
+            "The idea stuck. In December 2019 Business Insider was still calling the trial “a major flop”, though the same headline went on: “But experts say the test was flawed.”[6]"
+          ],
+          [
+            "o",
+            "In April 2018, not a single result from the experiment had yet been published."
+          ],
+          [
+            "h",
+            "What the experiment actually was"
+          ],
+          [
+            "p",
+            "The experiment was run by Kela, the Social Insurance Institution of Finland, for two years, from January 2017 to December 2018.[7][13]"
+          ],
+          [
+            "p",
+            "2,000 people aged 25 to 58 were chosen at random from those receiving basic unemployment benefits from Kela in November 2016.[4][7]"
+          ],
+          [
+            "p",
+            "Each received €560 a month, tax-free, for two years."
+          ],
+          [
+            "p",
+            "The €560 was not reduced if they found work or had other income, and they did not have to look for a job."
+          ],
+          [
+            "p",
+            "Taking part was compulsory. The unemployed people who were not chosen formed the control group."
+          ],
+          [
+            "p",
+            "According to Kela, it was the world’s first basic income experiment that was nationwide, set up by law and based on a randomised field experiment. The aim was to see whether removing the trap in which taking work cuts your benefits would help unemployed people into jobs.[7]"
+          ],
+          [
+            "h",
+            "It was never “scrapped”"
+          ],
+          [
+            "p",
+            "What was decided in April 2018 was not to stop the experiment. Kela had asked the government for extra money to widen it to people in work and to keep it going after 2018. The government said no.[2][4]"
+          ],
+          [
+            "p",
+            "In other words, the experiment would end on schedule, after the two years originally planned. Kela quickly put out a release: “Contrary to reports, the Basic Income Experiment in Finland will continue until the end of 2018.”[5]"
+          ],
+          [
+            "p",
+            "Yamamori wrote that neither decision had anything to do with the experiment failing to produce the hoped-for results, or with it having failed.[3] In any case, the analysis was set to begin only after the experiment ended: no findings were reported while it was running, so as not to influence how people in either group behaved.[7]"
+          ],
+          [
+            "p",
+            "It is true, though, that the government of the day was not keen on basic income. From January 2018 it added an “activation model” to unemployment benefits: benefits were cut unless the person took part in training or worked at least 18 hours in three months.[3][4]"
+          ],
+          [
+            "p",
+            "Kela’s Miska Simanainen told the Swedish newspaper Svenska Dagbladet, as quoted by the Guardian: “The government is making changes taking the system away from basic income.”[4]"
+          ],
+          [
+            "h",
+            "Year-one results (February 2019)"
+          ],
+          [
+            "p",
+            "The first results came out on 8 February 2019. In the first year, 2017, recipients were in work for an average of 49.64 days and the control group for 49.25 days: practically the same. No effect on employment was found.[8]"
+          ],
+          [
+            "p",
+            "The survey told a different story. 55% of recipients rated their health as good or very good, against 46% of the control group. 17% of recipients reported feeling very stressed, against about a quarter of the control group.[8] Recipients also trusted other people more, scoring 6.8 out of 10 against 6.3.[10]"
+          ],
+          [
+            "p",
+            "But only 31% of recipients and 20% of the control group answered the survey, so these figures need to be read with care.[9]"
+          ],
+          [
+            "h",
+            "Final results (May 2020)"
+          ],
+          [
+            "p",
+            "The final evaluation, covering both years, was published by the Ministry of Social Affairs and Health and Kela on 6 May 2020, under the title “small employment effects, better perceived economic security and mental wellbeing”.[11]"
+          ],
+          [
+            "p",
+            "On work: over the year from November 2017 to October 2018, roughly the second year of the trial, recipients were in work about 6 days more than the control group, at 78 days on average.[11][12]"
+          ],
+          [
+            "p",
+            "Six days in a year is not a big difference. Kari Hämäläinen of the VATT Institute for Economic Research summed it up: “All in all, the employment effects were small.”[13]"
+          ],
+          [
+            "p",
+            "On wellbeing, the difference was clear. Compared with the control group, recipients were more satisfied with their lives and reported less mental strain, depression, sadness and loneliness, and a more positive view of their income and economic wellbeing. They trusted other people and the institutions of society more, and were more confident about their own future.[7]"
+          ],
+          [
+            "h",
+            "What the experiment could not tell us"
+          ],
+          [
+            "p",
+            "This is the most important part. The experiment had clear limits."
+          ],
+          [
+            "p",
+            "First, only unemployed people took part. People in work, students and pensioners were not included. It was not a test of a basic income paid to everyone.[4][7]"
+          ],
+          [
+            "p",
+            "Second, it was short and small: two years and 2,000 recipients. Olli Kangas, an expert involved in the trial, told the broadcaster Yle that “two years is too short a period to be able to draw extensive conclusions from such a big experiment.”[4]"
+          ],
+          [
+            "p",
+            "Third, it did not test the funding side. For a basic income paid to everyone, the biggest question is how to raise the money through taxes. The experiment did not change the tax system."
+          ],
+          [
+            "p",
+            "Fourth, the activation model arrived in the second year. The new rules did not affect the two groups in the same way, so it is impossible to say how much of the second-year difference was due to basic income.[7][13]"
+          ],
+          [
+            "p",
+            "Kela itself writes that basic income increased activity and employment among people who were already active before the experiment, but did not solve the problems of those who were in a difficult situation.[7]"
+          ],
+          [
+            "o",
+            "Put together, this is what the experiment showed: giving unemployed people money with no conditions for two years did not make them stop working. Nor did it make them work much more. But it did make them feel more secure and better in themselves."
+          ],
+          [
+            "o",
+            "The experiment does not answer the question “can basic income work as a national system?” And a question it did not answer cannot be called either a failure or a success."
+          ],
+          [
+            "h",
+            "Compared with other experiments"
+          ],
+          [
+            "p",
+            "In {Stockton|/timeline/#tl-stockton}, California (2019–2021), 125 residents received $500 a month for two years. In the first year, the share of recipients in full-time work rose from 28% to 40%, more than the rise of about 5 points in the control group.[14][15]"
+          ],
+          [
+            "p",
+            "In {OpenResearch’s study|/essays/openresearch-cash-study/} (2020–2023), 1,000 people aged 21 to 40 received $1,000 a month for three years. They worked about 1.3 hours a week less, but the share in work rose in both groups (from 58% to 72% among recipients and from 59% to 74% in the control group)."
+          ],
+          [
+            "p",
+            "{GiveDirectly’s study in Kenya|/timeline/#tl-kenya} (2017–) is a large experiment that includes a group paid for 12 years. Early results found that the total amount of work did not change, but people shifted from wage work towards self-employment.[16]"
+          ],
+          [
+            "o",
+            "None of these experiments found that “give people money and they stop working”. None found a magic way to make people work much more, either. Finland’s results fit this pattern well."
+          ],
+          [
+            "p",
+            "The key facts about the Finnish experiment are also on {its card in our timeline|/timeline/#tl-finland}."
+          ],
+          [
+            "h",
+            "Finland since"
+          ],
+          [
+            "p",
+            "In 2026 Finland is moving in the opposite direction from basic income. On 1 May 2026, Kela’s two unemployment benefits, the labour market subsidy and the basic unemployment allowance, were merged into a new “general support” (yleistuki). Kela notes that, unlike the basic allowance, the general support is means-tested: capital income and other income can reduce it.[17]"
+          ],
+          [
+            "p",
+            "The debate goes on. In March 2026 the Finnish Parliament’s information service costed four basic income models built on €260 a month, and the Greens published the memo.[18] In the city of Lahti, councillors proposed a local basic income trial. In June 2026 a city committee turned it down, saying the city has no power to run one, but its reply still described the 2017–2018 experiment as having had positive effects on wellbeing while its employment effects stayed small.[19]"
+          ],
+          [
+            "h",
+            "What to take from it"
+          ],
+          [
+            "p",
+            "The April 2018 “scrapped” and “failed” headlines were wrong. The experiment ran its full two years as planned; the government only declined to extend and widen it. And no results had been published yet."
+          ],
+          [
+            "p",
+            "In the final results, the effect on work was small (about 6 days), while life satisfaction, mental wellbeing and trust improved."
+          ],
+          [
+            "p",
+            "Only unemployed people took part, it lasted two years, and the funding side was never tested. In the second year, another policy change got in the way."
+          ],
+          [
+            "o",
+            "So you cannot say “basic income failed”, and you cannot say “basic income succeeded”. What you can say is: the money did not make people stop working, it did not make them work much more, and it made their lives feel more secure."
+          ],
+          [
+            "o",
+            "Next time someone tells you “Finland already tried it and it failed”, try asking: what exactly failed? The answer is more interesting than they think."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "ベーシックインカム（BI）の話になると、ほぼ必ず出てくる一言があります。「BIなんて、フィンランドでもう失敗済みでしょ」。"
+          ],
+          [
+            "p",
+            "このサイトはBIを応援しています。だからこそ、この「失敗済み」が本当なのかを、一次資料にあたって確かめました。"
+          ],
+          [
+            "o",
+            "先に答えを書くと、「失敗」でも「成功」でもありません。わかったことと、わからなかったことが、はっきり分かれている実験でした。"
+          ],
+          [
+            "h",
+            "「失敗」という言葉はどこから来たのか"
+          ],
+          [
+            "p",
+            "始まりは2018年4月です。英語圏のメディアが一斉に、こう報じました。同志社大学の山森亮教授が当時まとめた一覧によると、Business Insider（4月19日）は「急に中止する（is killing）」、BBC News（4月23日）は「まったく失敗に終わった（falls flat）」、Sky News（4月24日）は「スクラップにする（scrap）」、Orlando Sentinel（4月24日）は「失敗したベーシックインカム実験（failed universal basic income experiment）」、USA Today（4月25日）は「うまくいかなかった（didn’t work out）」という見出しでした。[3]"
+          ],
+          [
+            "p",
+            "日本でも同じころ、「フィンランドの『ベーシックインカム実験』が2018年12月で中断」（GIGAZINE、4月20日）、「フィンランドのベーシック・インカム実験が打ち切り」（第一生命経済研究所、5月7日）といった見出しが並びました。[1][2]"
+          ],
+          [
+            "p",
+            "さらに2019年12月には、「構造的な欠陥を指摘する声も…フィンランドのベーシックインカム実験は失敗だったのか」という記事が出ています。米国版の元の見出しは「a major flop（大失敗だった）」で、続けて「ただし専門家は、実験の設計に欠陥があったと言う」と書いていました。[6]"
+          ],
+          [
+            "o",
+            "2018年4月の時点では、実験の結果はまだ一つも出ていませんでした。"
+          ],
+          [
+            "h",
+            "そもそも、どんな実験だったのか"
+          ],
+          [
+            "p",
+            "実験を行ったのはフィンランド社会保険庁（Kela）で、期間は2017年1月から2018年12月までの2年間です。[7][13]"
+          ],
+          [
+            "p",
+            "2016年11月にKelaの基本的な失業手当を受けていた25〜58歳の人から、2,000人を無作為に選ぶ。[4][7]"
+          ],
+          [
+            "p",
+            "選ばれた人に、月560ユーロを2年間、非課税で支給する。"
+          ],
+          [
+            "p",
+            "仕事が見つかっても、ほかに収入があっても、560ユーロは減らない。求職活動も求められない。"
+          ],
+          [
+            "p",
+            "参加は義務。選ばれなかった失業者が、比べるための「対照群」になる。"
+          ],
+          [
+            "p",
+            "Kelaによると、国の法律にもとづいて、全国規模で、無作為に対象を選んだBI実験は、これが世界で初めてでした。目的は、働くと手当が減る「働き損」をなくせば、失業者が仕事に就きやすくなるかを確かめることです。[7]"
+          ],
+          [
+            "h",
+            "実は「打ち切り」ではなかった"
+          ],
+          [
+            "p",
+            "2018年4月に決まったのは、実験の中止ではありません。Kelaは、対象を失業者以外（働いている人）にも広げ、2019年以降も実験を続けたいと政府に求めていました。政府は、この追加の予算を認めませんでした。[2][4]"
+          ],
+          [
+            "p",
+            "つまり、もともとの予定どおり2年間で終わることが決まった、というのが実際の中身です。Kelaはすぐに「報道とは異なり、フィンランドのベーシックインカム実験は2018年末まで続く」という発表を出しています。[5]"
+          ],
+          [
+            "p",
+            "山森教授も、「いずれの決定も、実験で思うような結果を得られなかったからとか、実験が失敗に終わったからとかいうことでは全くない」と書いています。[3] そもそも、効果の分析は、実験が終わってから始める決まりでした。行動に影響しないよう、実験中には結果を出さないことになっていたのです。[7]"
+          ],
+          [
+            "p",
+            "ただし、当時の政府がBIに前向きでなかったのは事実です。2018年1月からは、失業手当に「アクティベーション・モデル」という条件が加わりました。一定の期間（3か月）に職業訓練を受けるか、少し（18時間以上）働かないと、手当が減る仕組みです。[3][4]"
+          ],
+          [
+            "p",
+            "ガーディアン紙によると、Kelaのミスカ・シマナイネン氏はスウェーデンの新聞に「政府は、制度をBIから遠ざける方向に変えている」と話しています。[4]"
+          ],
+          [
+            "h",
+            "1年目の結果（2019年2月）"
+          ],
+          [
+            "p",
+            "最初の結果は2019年2月8日に出ました。1年目（2017年）に働いた日数は、受給者が平均49.64日、対照群が49.25日で、ほぼ同じです。仕事への効果は見られませんでした。[8]"
+          ],
+          [
+            "p",
+            "一方、アンケートでは差が出ました。自分の健康を「良い」「とても良い」と答えた人は受給者55％、対照群46％。強いストレスを感じている人は受給者17％、対照群は約4人に1人でした。[8] 他人への信頼も、0〜10点で受給者6.8点、対照群6.3点と高めでした。[10]"
+          ],
+          [
+            "p",
+            "ただしアンケートの回答率は、受給者31％、対照群20％と低く、割り引いて見る必要があります。[9]"
+          ],
+          [
+            "h",
+            "最終結果（2020年5月）"
+          ],
+          [
+            "p",
+            "2年分をまとめた最終報告は、2020年5月6日に社会保健省とKelaから出ました。題は「就労への効果は小さく、暮らし向きと心の健康はより良く感じられた」です。[11]"
+          ],
+          [
+            "p",
+            "仕事については、2017年11月から2018年10月までの1年間（ほぼ2年目にあたる期間）で、受給者の働いた日数が対照群より約6日多くなりました。受給者の平均は78日です。[11][12]"
+          ],
+          [
+            "p",
+            "1年で6日なので、差は大きくありません。経済研究所VATTのカリ・ハマライネン氏は「全体として、就労への効果は小さかった」とまとめています。[13]"
+          ],
+          [
+            "p",
+            "暮らしの面では、はっきり差が出ました。受給者は対照群に比べて生活への満足度が高く、心の負担、落ち込み、悲しさ、孤独感が少なく、家計についての感じ方も良好でした。他人や社会の制度をより信頼し、自分の将来にも自信を持っていました。[7]"
+          ],
+          [
+            "h",
+            "この実験でわからなかったこと"
+          ],
+          [
+            "p",
+            "ここが一番大事なところです。この実験には、はっきりした限界がありました。"
+          ],
+          [
+            "p",
+            "1つ目は、対象が失業者だけだったことです。働いている人も、学生も、年金生活者も入っていません。「全員に配る」BIの実験ではありませんでした。[4][7]"
+          ],
+          [
+            "p",
+            "2つ目は、期間が2年と短く、受給者も2,000人だけだったことです。研究に関わったオリ・カンガス氏は「これほど大きな実験から広い結論を出すには、2年は短すぎる」と話していました。[4]"
+          ],
+          [
+            "p",
+            "3つ目は、財源の側を試していないことです。全員に配るなら、そのお金を税でどう集めるかが一番の問題になります。この実験では、税の仕組みは変えていません。"
+          ],
+          [
+            "p",
+            "4つ目は、2年目にアクティベーション・モデルが重なったことです。この新しい条件は、2つのグループに同じようには効きませんでした。そのため、2年目の差のうちどこまでがBIの効果なのかを切り分けられません。[7][13]"
+          ],
+          [
+            "p",
+            "Kela自身も、もともと活発だった人は活動や仕事がさらに増えた一方、難しい状況にあった人の問題はBIだけでは解決しなかった、と書いています。[7]"
+          ],
+          [
+            "o",
+            "まとめると、この実験が示したのは、「失業者に2年間、条件なしでお金を配っても、働かなくなりはしなかった。仕事が大きく増えることもなかった。ただ、暮らしの安心感と心の健康は良くなった」ということです。"
+          ],
+          [
+            "o",
+            "「BIは国の制度として成り立つか」という問いに、この実験は答えていません。答えていない問いについて、「失敗」とも「成功」とも言えないはずです。"
+          ],
+          [
+            "h",
+            "ほかの実験と比べると"
+          ],
+          [
+            "p",
+            "アメリカの{ストックトン|/timeline/#tl-stockton}（2019〜2021年）では、住民125人に月500ドルを2年間配りました。最初の1年で、フルタイムで働く人の割合は受給者で28％から40％に増え、対照群の増え方（約5ポイント）を上回りました。[14][15]"
+          ],
+          [
+            "p",
+            "{OpenResearchの研究|/essays/openresearch-cash-study/}（2020〜2023年）では、21〜40歳の1,000人に月1,000ドルを3年間配りました。労働時間は週1.3時間ほど減りましたが、働いている人の割合はどちらのグループでも上がっています（受給者58％→72％、対照群59％→74％）。"
+          ],
+          [
+            "p",
+            "{ケニアのGiveDirectly|/timeline/#tl-kenya}（2017年〜）は、12年間配り続けるグループを含む大規模な実験です。初期の結果では、働く量の合計は変わらず、雇われる仕事から自営業へ移る動きが見られました。[16]"
+          ],
+          [
+            "o",
+            "どの実験でも、「配ると働かなくなる」という結果は出ていません。仕事を大きく増やす魔法でもありませんでした。フィンランドの結果は、この流れとよく合っています。"
+          ],
+          [
+            "p",
+            "フィンランドの実験の要点は、{タイムラインのカード|/timeline/#tl-finland}にもまとめています。"
+          ],
+          [
+            "h",
+            "その後のフィンランド"
+          ],
+          [
+            "p",
+            "2026年のフィンランドは、BIとは逆の方向に進んでいます。2026年5月1日、Kelaの失業手当（労働市場支援と基本日額手当）は、新しい「一般支援（yleistuki）」にまとめられました。Kelaによると、これまでの基本日額手当と違い、一般支援には、ほかの収入や資産の収入によって支給額が減る「必要性の審査」があります。[17]"
+          ],
+          [
+            "p",
+            "それでも議論は続いています。2026年3月には国会の情報サービスが、月260ユーロのBIを使った4つの案の試算をまとめ、緑の党がこれを公開しました。[18] ラハティ市では、市議らが市でのBI実験を提案しました。市の委員会は2026年6月、市には実験を行う権限がないとして見送りましたが、その答えの中でも2017〜2018年の実験について、心の健康などへの良い効果はあったが就労への効果は小さかった、と紹介しています。[19]"
+          ],
+          [
+            "h",
+            "まとめ"
+          ],
+          [
+            "p",
+            "2018年4月の「打ち切り」「失敗」報道は不正確でした。実験は予定どおり2年間続き、政府が延長と拡大を認めなかっただけです。結果も、まだ出ていませんでした。"
+          ],
+          [
+            "p",
+            "最終結果では、仕事への効果は小さく（約6日）、生活の満足度、心の健康、信頼は改善しました。"
+          ],
+          [
+            "p",
+            "対象は失業者だけで、期間は2年、財源は試していません。2年目には別の制度変更も重なりました。"
+          ],
+          [
+            "o",
+            "だから「BIは失敗した」とも「BIは成功した」とも言えません。言えるのは、「配っても働かなくはならなかったが、仕事を大きく増やしもしなかった。暮らしの安心は増えた」ということです。"
+          ],
+          [
+            "o",
+            "「フィンランドで失敗済み」と言われたら、「何が失敗だったのか」を一度聞き返してみてください。答えは、思っているより面白いはずです。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "一谈到基本收入，迟早会有人说：“芬兰早就试过了，失败了。”"
+          ],
+          [
+            "p",
+            "本站支持基本收入。正因为如此，我们想弄清“失败了”这句话站不站得住，于是回到了一手资料。"
+          ],
+          [
+            "o",
+            "先说答案：既不是失败，也不是成功。这是一个弄清了什么、没能弄清什么，都分得很清楚的实验。"
+          ],
+          [
+            "h",
+            "“失败”一词从何而来"
+          ],
+          [
+            "p",
+            "事情始于 2018 年 4 月，英语媒体几乎同时报道了这件事。同志社大学的山森亮教授当时整理了这些标题：Business Insider（4 月 19 日）说芬兰“正在叫停（is killing）”实验，BBC News（4 月 23 日）说实验“彻底落空（falls flat）”，Sky News（4 月 24 日）说要“废弃（scrap）”，Orlando Sentinel（4 月 24 日）称之为“失败的全民基本收入实验”，USA Today（4 月 25 日）说它“没有成功（didn’t work out）”。[3]"
+          ],
+          [
+            "p",
+            "同一时期，日本媒体也出现了“中断”“叫停”之类的标题。[1][2]"
+          ],
+          [
+            "p",
+            "这个说法就此留了下来。2019 年 12 月，Business Insider 仍称这项实验是“a major flop（一场大失败）”，不过同一个标题接着写道：“但专家说，这次测试本身有缺陷。”[6]"
+          ],
+          [
+            "o",
+            "在 2018 年 4 月，实验的结果还一个都没有公布。"
+          ],
+          [
+            "h",
+            "这到底是一个什么样的实验"
+          ],
+          [
+            "p",
+            "实验由芬兰社会保险局（Kela）实施，为期两年，从 2017 年 1 月到 2018 年 12 月。[7][13]"
+          ],
+          [
+            "p",
+            "从 2016 年 11 月领取 Kela 基本失业补助的 25–58 岁人群中，随机选出 2,000 人。[4][7]"
+          ],
+          [
+            "p",
+            "每人每月领取 560 欧元，免税，为期两年。"
+          ],
+          [
+            "p",
+            "找到工作或有其他收入，560 欧元也不减少；也不要求求职。"
+          ],
+          [
+            "p",
+            "参加是强制的。没被选中的失业者组成用于比较的对照组。"
+          ],
+          [
+            "p",
+            "据 Kela 介绍，这是世界上第一个全国规模、依法设立、采用随机对照实验的基本收入实验。目的是看看：如果消除“一工作补助就减少”的陷阱，失业者是否更容易找到工作。[7]"
+          ],
+          [
+            "h",
+            "其实从来没有“叫停”"
+          ],
+          [
+            "p",
+            "2018 年 4 月决定的并不是中止实验。Kela 曾请求政府追加资金，把实验扩大到有工作的人，并在 2018 年之后继续进行。政府没有同意。[2][4]"
+          ],
+          [
+            "p",
+            "换句话说，实验会按原计划在两年后结束。Kela 很快发布声明：“与报道相反，芬兰的基本收入实验将持续到 2018 年底。”[5]"
+          ],
+          [
+            "p",
+            "山森教授写道，这两项决定都完全不是因为实验没有得到预期结果或者实验失败了。[3] 况且，效果分析按规定要等实验结束后才开始：为了不影响两组人的行为，实验期间不公布任何结果。[7]"
+          ],
+          [
+            "p",
+            "不过，当时的政府对基本收入并不热心，这也是事实。从 2018 年 1 月起，失业补助加上了“激活模式”：三个月内如果不参加职业培训或工作至少 18 小时，补助就会减少。[3][4]"
+          ],
+          [
+            "p",
+            "据《卫报》引述，Kela 的米斯卡·西马纳伊宁对瑞典报纸《瑞典日报》说：“政府正在做的改变，是让制度远离基本收入。”[4]"
+          ],
+          [
+            "h",
+            "第一年的结果（2019 年 2 月）"
+          ],
+          [
+            "p",
+            "首批结果于 2019 年 2 月 8 日公布。第一年（2017 年），领取者平均工作 49.64 天，对照组 49.25 天，几乎一样。没有发现对就业的影响。[8]"
+          ],
+          [
+            "p",
+            "问卷调查则显示出差别。认为自己健康状况“好”或“很好”的，领取者为 55%，对照组为 46%。感到压力很大的，领取者为 17%，对照组约为四分之一。[8] 领取者对他人的信任也更高，满分 10 分中为 6.8 分，对照组为 6.3 分。[10]"
+          ],
+          [
+            "p",
+            "但问卷的回复率只有领取者 31%、对照组 20%，这些数字需要打个折扣来看。[9]"
+          ],
+          [
+            "h",
+            "最终结果（2020 年 5 月）"
+          ],
+          [
+            "p",
+            "涵盖两年的最终评估由社会事务与卫生部和 Kela 于 2020 年 5 月 6 日发布，标题是“就业效果小，经济安全感和心理健康感觉更好”。[11]"
+          ],
+          [
+            "p",
+            "就业方面：在 2017 年 11 月到 2018 年 10 月这一年（大致相当于第二年），领取者的工作天数比对照组多约 6 天，平均为 78 天。[11][12]"
+          ],
+          [
+            "p",
+            "一年多 6 天，差距并不大。经济研究机构 VATT 的卡里·哈马莱宁总结说：“总的来说，就业效果很小。”[13]"
+          ],
+          [
+            "p",
+            "在生活方面，差别很明显。与对照组相比，领取者对生活更满意，心理负担、抑郁、悲伤和孤独感更少，对自己的收入和经济状况感觉更好。他们更信任他人和社会制度，对自己的未来也更有信心。[7]"
+          ],
+          [
+            "h",
+            "这个实验没能告诉我们什么"
+          ],
+          [
+            "p",
+            "这是最重要的部分。这个实验有清楚的局限。"
+          ],
+          [
+            "p",
+            "第一，参加者只有失业者。有工作的人、学生和领养老金的人都不在其中。这不是一个“发给所有人”的基本收入实验。[4][7]"
+          ],
+          [
+            "p",
+            "第二，时间短、规模小：两年，2,000 名领取者。参与实验的专家奥利·坎加斯对芬兰广播公司 Yle 说：“两年太短，无法从这样一个大实验中得出广泛的结论。”[4]"
+          ],
+          [
+            "p",
+            "第三，没有测试资金那一侧。要给所有人发钱，最大的问题是如何通过税收筹钱。这个实验没有改变税制。"
+          ],
+          [
+            "p",
+            "第四，第二年叠加了激活模式。新规则对两组的影响并不相同，因此无法分清第二年的差距中有多少来自基本收入。[7][13]"
+          ],
+          [
+            "p",
+            "Kela 自己也写道，对原本就积极的人，基本收入让他们的活动和就业进一步增加；但对实验前处境困难的人，基本收入没能解决他们的问题。[7]"
+          ],
+          [
+            "o",
+            "归纳起来，这个实验表明：给失业者两年无条件的钱，并没有让他们不去工作，也没有让他们多工作很多，但确实让他们觉得生活更安心、身心更好。"
+          ],
+          [
+            "o",
+            "“基本收入能否成为国家制度”这个问题，实验并没有回答。没有回答的问题，既不能说是失败，也不能说是成功。"
+          ],
+          [
+            "h",
+            "和其他实验比一比"
+          ],
+          [
+            "p",
+            "美国加州{斯托克顿|/timeline/#tl-stockton}（2019–2021 年）向 125 名居民每月发放 500 美元，为期两年。第一年，领取者中全职工作的比例从 28% 升到 40%，高于对照组约 5 个百分点的增幅。[14][15]"
+          ],
+          [
+            "p",
+            "{OpenResearch 的研究|/essays/openresearch-cash-study/}（2020–2023 年）向 1,000 名 21–40 岁的人每月发放 1,000 美元，为期三年。他们每周少工作约 1.3 小时，但两组的就业比例都上升了（领取者从 58% 到 72%，对照组从 59% 到 74%）。"
+          ],
+          [
+            "p",
+            "{GiveDirectly 在肯尼亚的研究|/timeline/#tl-kenya}（2017 年起）是一项大规模实验，其中包括连续发放 12 年的组。初步结果显示，工作总量没有变化，但人们从受雇工作转向了自雇。[16]"
+          ],
+          [
+            "o",
+            "这些实验都没有发现“一发钱人就不工作”。也没有发现能让人大幅多工作的魔法。芬兰的结果与这一趋势很吻合。"
+          ],
+          [
+            "p",
+            "芬兰实验的要点，也整理在{时间线的卡片|/timeline/#tl-finland}上。"
+          ],
+          [
+            "h",
+            "之后的芬兰"
+          ],
+          [
+            "p",
+            "2026 年的芬兰，正朝着与基本收入相反的方向走。2026 年 5 月 1 日，Kela 的两种失业补助（劳动力市场补贴和基本日补贴）合并为新的“一般支持（yleistuki）”。Kela 指出，与基本日补贴不同，一般支持要经过需要审查：资本收入和其他收入可能会减少补助额。[17]"
+          ],
+          [
+            "p",
+            "但讨论仍在继续。2026 年 3 月，芬兰议会信息服务部门测算了以每月 260 欧元为基础的四种基本收入方案，绿党公开了这份备忘录。[18] 在拉赫蒂市，市议员提议在市里进行基本收入实验。2026 年 6 月，市里的委员会以市政府没有权限为由予以拒绝，但其答复仍介绍说，2017–2018 年的实验对身心健康有积极作用，而就业效果很小。[19]"
+          ],
+          [
+            "h",
+            "总结"
+          ],
+          [
+            "p",
+            "2018 年 4 月“叫停”“失败”的报道是不准确的。实验按计划完整进行了两年，政府只是不同意延长和扩大。而且当时还没有任何结果。"
+          ],
+          [
+            "p",
+            "最终结果显示，对就业的效果很小（约 6 天），而生活满意度、心理健康和信任都有改善。"
+          ],
+          [
+            "p",
+            "参加者只有失业者，为期两年，资金一侧从未测试。第二年还叠加了另一项政策变化。"
+          ],
+          [
+            "o",
+            "所以既不能说“基本收入失败了”，也不能说“基本收入成功了”。能说的是：发钱没有让人不去工作，也没有让人多工作很多，但让生活更安心了。"
+          ],
+          [
+            "o",
+            "下次有人对你说“芬兰早就试过了，失败了”，不妨反问一句：到底是什么失败了？答案比他们想的更有意思。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "बेसिक इनकम की बात छेड़िए, और देर-सबेर कोई कह ही देगा: “फ़िनलैंड ने यह आज़मा लिया था, और यह नाकाम रहा।”"
+          ],
+          [
+            "p",
+            "यह साइट बेसिक इनकम का समर्थन करती है। इसीलिए हम जानना चाहते थे कि “नाकाम रहा” वाली बात टिकती है या नहीं, तो हम मूल स्रोतों तक गए।"
+          ],
+          [
+            "o",
+            "छोटा जवाब: यह न नाकामी थी, न कामयाबी। यह एक ऐसा प्रयोग था जिसमें साफ़ है कि उसने क्या पाया, और उतना ही साफ़ है कि वह क्या नहीं जान सका।"
+          ],
+          [
+            "h",
+            "“नाकाम” शब्द कहाँ से आया"
+          ],
+          [
+            "p",
+            "शुरुआत अप्रैल 2018 में हुई, जब अंग्रेज़ी मीडिया ने लगभग एक साथ यह ख़बर चलाई। दोशिशा यूनिवर्सिटी के तोरु यामामोरी ने उस समय ये सुर्ख़ियाँ इकट्ठी कीं: Business Insider (19 अप्रैल) ने लिखा कि फ़िनलैंड अपना प्रयोग “is killing” यानी ख़त्म कर रहा है, BBC News (23 अप्रैल) ने कि प्रयोग “falls flat” यानी औंधे मुँह गिरा, Sky News (24 अप्रैल) ने कि इसे “scrap” किया जाएगा, Orlando Sentinel (24 अप्रैल) ने इसे “नाकाम यूनिवर्सल बेसिक इनकम प्रयोग” कहा, और USA Today (25 अप्रैल) ने कि यह “didn’t work out” यानी चला नहीं।[3]"
+          ],
+          [
+            "p",
+            "उन्हीं हफ़्तों में जापानी मीडिया में भी “बीच में रोका गया” और “बंद किया गया” जैसी सुर्ख़ियाँ छपीं।[1][2]"
+          ],
+          [
+            "p",
+            "यह धारणा टिक गई। दिसंबर 2019 में भी Business Insider इस प्रयोग को “a major flop” यानी बड़ी नाकामी कह रहा था, हालाँकि उसी शीर्षक में आगे लिखा था: “पर विशेषज्ञ कहते हैं कि परीक्षण में ही ख़ामी थी।”[6]"
+          ],
+          [
+            "o",
+            "अप्रैल 2018 में प्रयोग का एक भी नतीजा प्रकाशित नहीं हुआ था।"
+          ],
+          [
+            "h",
+            "प्रयोग असल में क्या था"
+          ],
+          [
+            "p",
+            "प्रयोग फ़िनलैंड के सामाजिक बीमा संस्थान Kela ने दो साल चलाया, जनवरी 2017 से दिसंबर 2018 तक।[7][13]"
+          ],
+          [
+            "p",
+            "नवंबर 2016 में Kela से बुनियादी बेरोज़गारी भत्ता पाने वाले 25 से 58 साल के लोगों में से 2,000 को बेतरतीब ढंग से चुना गया।[4][7]"
+          ],
+          [
+            "p",
+            "हर एक को दो साल तक हर महीने €560 मिले, बिना टैक्स के।"
+          ],
+          [
+            "p",
+            "काम मिलने या दूसरी आय होने पर भी €560 कम नहीं होते थे, और नौकरी ढूँढना ज़रूरी नहीं था।"
+          ],
+          [
+            "p",
+            "हिस्सा लेना अनिवार्य था। जो बेरोज़गार नहीं चुने गए, वे तुलना के लिए नियंत्रण समूह बने।"
+          ],
+          [
+            "p",
+            "Kela के अनुसार यह दुनिया का पहला बेसिक इनकम प्रयोग था जो देशव्यापी था, क़ानून से बना था और बेतरतीब चुनाव पर आधारित था। मक़सद यह देखना था कि अगर “काम करो तो भत्ता कटे” वाला जाल हटा दिया जाए, तो क्या बेरोज़गारों को नौकरी पाने में मदद मिलती है।[7]"
+          ],
+          [
+            "h",
+            "इसे कभी “बंद” नहीं किया गया"
+          ],
+          [
+            "p",
+            "अप्रैल 2018 में जो तय हुआ, वह प्रयोग रोकना नहीं था। Kela ने सरकार से अतिरिक्त पैसा माँगा था ताकि प्रयोग को काम करने वालों तक बढ़ाया जा सके और 2018 के बाद भी चलाया जा सके। सरकार ने मना कर दिया।[2][4]"
+          ],
+          [
+            "p",
+            "यानी प्रयोग पहले से तय दो साल पूरे करके समय पर ख़त्म होगा। Kela ने फ़ौरन बयान जारी किया: “ख़बरों के उलट, फ़िनलैंड का बेसिक इनकम प्रयोग 2018 के अंत तक जारी रहेगा।”[5]"
+          ],
+          [
+            "p",
+            "यामामोरी ने लिखा कि इनमें से किसी भी फ़ैसले का इससे कोई लेना-देना नहीं था कि प्रयोग से मनचाहे नतीजे नहीं मिले या प्रयोग नाकाम रहा।[3] वैसे भी, विश्लेषण प्रयोग ख़त्म होने के बाद ही शुरू होना था: दोनों समूहों के बर्ताव पर असर न पड़े, इसलिए चलते प्रयोग के दौरान कोई नतीजा नहीं बताया गया।[7]"
+          ],
+          [
+            "p",
+            "फिर भी यह सच है कि उस समय की सरकार बेसिक इनकम को लेकर उत्साहित नहीं थी। जनवरी 2018 से उसने बेरोज़गारी भत्तों में एक “एक्टिवेशन मॉडल” जोड़ा: तीन महीने में ट्रेनिंग न लेने या कम से कम 18 घंटे काम न करने पर भत्ता कट जाता।[3][4]"
+          ],
+          [
+            "p",
+            "गार्डियन के हवाले से, Kela के मिस्का सिमानाइनेन ने स्वीडिश अख़बार स्वेन्स्का डागब्लादेत से कहा: “सरकार ऐसे बदलाव कर रही है जो व्यवस्था को बेसिक इनकम से दूर ले जा रहे हैं।”[4]"
+          ],
+          [
+            "h",
+            "पहले साल के नतीजे (फ़रवरी 2019)"
+          ],
+          [
+            "p",
+            "पहले नतीजे 8 फ़रवरी 2019 को आए। पहले साल, 2017 में, पाने वालों ने औसतन 49.64 दिन और नियंत्रण समूह ने 49.25 दिन काम किया: लगभग बराबर। रोज़गार पर कोई असर नहीं मिला।[8]"
+          ],
+          [
+            "p",
+            "सर्वे ने अलग तस्वीर दिखाई। पाने वालों में 55% ने अपनी सेहत को अच्छा या बहुत अच्छा बताया, नियंत्रण समूह में 46% ने। पाने वालों में 17% ने बहुत तनाव महसूस करने की बात कही, जबकि नियंत्रण समूह में लगभग एक चौथाई ने।[8] पाने वाले दूसरों पर भी ज़्यादा भरोसा करते थे, 10 में से 6.8 अंक, नियंत्रण समूह के 6.3 के मुक़ाबले।[10]"
+          ],
+          [
+            "p",
+            "पर सर्वे का जवाब सिर्फ़ 31% पाने वालों और 20% नियंत्रण समूह ने दिया, इसलिए इन आँकड़ों को सावधानी से पढ़ना चाहिए।[9]"
+          ],
+          [
+            "h",
+            "अंतिम नतीजे (मई 2020)"
+          ],
+          [
+            "p",
+            "दोनों सालों को समेटने वाला अंतिम मूल्यांकन सामाजिक मामलों और स्वास्थ्य मंत्रालय और Kela ने 6 मई 2020 को प्रकाशित किया, इस शीर्षक से: “रोज़गार पर छोटे असर, आर्थिक सुरक्षा और मानसिक ख़ुशहाली का बेहतर एहसास”।[11]"
+          ],
+          [
+            "p",
+            "काम पर: नवंबर 2017 से अक्टूबर 2018 तक के साल में, जो मोटे तौर पर प्रयोग का दूसरा साल है, पाने वालों ने नियंत्रण समूह से लगभग 6 दिन ज़्यादा काम किया, औसतन 78 दिन।[11][12]"
+          ],
+          [
+            "p",
+            "साल में छह दिन कोई बड़ा अंतर नहीं है। VATT आर्थिक शोध संस्थान के कारी हामालाइनेन ने निचोड़ दिया: “कुल मिलाकर रोज़गार पर असर छोटे रहे।”[13]"
+          ],
+          [
+            "p",
+            "ख़ुशहाली पर अंतर साफ़ था। नियंत्रण समूह की तुलना में पाने वाले अपनी ज़िंदगी से ज़्यादा संतुष्ट थे, उन्होंने कम मानसिक दबाव, अवसाद, उदासी और अकेलापन बताया, और अपनी आय और आर्थिक हालत को बेहतर महसूस किया। वे दूसरे लोगों और समाज की संस्थाओं पर ज़्यादा भरोसा करते थे और अपने भविष्य को लेकर ज़्यादा आश्वस्त थे।[7]"
+          ],
+          [
+            "h",
+            "प्रयोग हमें क्या नहीं बता सका"
+          ],
+          [
+            "p",
+            "यही सबसे अहम हिस्सा है। प्रयोग की साफ़ सीमाएँ थीं।"
+          ],
+          [
+            "p",
+            "पहली, इसमें सिर्फ़ बेरोज़गार लोग थे। काम करने वाले, छात्र और पेंशनभोगी शामिल नहीं थे। यह सबको दी जाने वाली बेसिक इनकम का परीक्षण नहीं था।[4][7]"
+          ],
+          [
+            "p",
+            "दूसरी, यह छोटा और कम समय का था: दो साल और 2,000 पाने वाले। प्रयोग से जुड़े विशेषज्ञ ओली कांगास ने प्रसारक Yle से कहा कि “इतने बड़े प्रयोग से व्यापक निष्कर्ष निकालने के लिए दो साल बहुत कम हैं।”[4]"
+          ],
+          [
+            "p",
+            "तीसरी, इसमें पैसे के इंतज़ाम वाले पक्ष की जाँच नहीं हुई। सबको दी जाने वाली बेसिक इनकम के लिए सबसे बड़ा सवाल यह है कि टैक्स से पैसा कैसे जुटाया जाए। प्रयोग ने टैक्स व्यवस्था नहीं बदली।"
+          ],
+          [
+            "p",
+            "चौथी, दूसरे साल एक्टिवेशन मॉडल आ गया। नए नियमों का दोनों समूहों पर एक जैसा असर नहीं पड़ा, इसलिए यह कहना असंभव है कि दूसरे साल के अंतर का कितना हिस्सा बेसिक इनकम की वजह से था।[7][13]"
+          ],
+          [
+            "p",
+            "Kela ख़ुद लिखता है कि जो लोग प्रयोग से पहले ही सक्रिय थे, उनमें बेसिक इनकम से सक्रियता और रोज़गार और बढ़े, लेकिन जो मुश्किल हालात में थे, उनकी समस्याएँ इससे हल नहीं हुईं।[7]"
+          ],
+          [
+            "o",
+            "कुल मिलाकर प्रयोग ने यह दिखाया: बेरोज़गारों को दो साल तक बिना शर्त पैसा देने से उन्होंने काम करना नहीं छोड़ा। न ही वे बहुत ज़्यादा काम करने लगे। लेकिन वे ज़्यादा सुरक्षित और बेहतर महसूस करने लगे।"
+          ],
+          [
+            "o",
+            "प्रयोग इस सवाल का जवाब नहीं देता कि “क्या बेसिक इनकम राष्ट्रीय व्यवस्था के रूप में चल सकती है?” और जिस सवाल का जवाब ही नहीं दिया गया, उसे न नाकामी कहा जा सकता है, न कामयाबी।"
+          ],
+          [
+            "h",
+            "दूसरे प्रयोगों से तुलना"
+          ],
+          [
+            "p",
+            "कैलिफ़ोर्निया के {स्टॉकटन|/timeline/#tl-stockton} (2019–2021) में 125 निवासियों को दो साल तक हर महीने $500 मिले। पहले साल में पाने वालों में पूर्णकालिक काम करने वालों का हिस्सा 28% से बढ़कर 40% हुआ, जो नियंत्रण समूह की लगभग 5 अंकों की बढ़त से ज़्यादा था।[14][15]"
+          ],
+          [
+            "p",
+            "{OpenResearch के अध्ययन|/essays/openresearch-cash-study/} (2020–2023) में 21 से 40 साल के 1,000 लोगों को तीन साल तक हर महीने $1,000 मिले। उन्होंने हफ़्ते में लगभग 1.3 घंटे कम काम किया, पर दोनों समूहों में काम करने वालों का हिस्सा बढ़ा (पाने वालों में 58% से 72%, नियंत्रण समूह में 59% से 74%)।"
+          ],
+          [
+            "p",
+            "{केन्या में GiveDirectly का अध्ययन|/timeline/#tl-kenya} (2017–) एक बड़ा प्रयोग है जिसमें 12 साल तक भुगतान पाने वाला समूह भी है। शुरुआती नतीजों में काम की कुल मात्रा नहीं बदली, पर लोग मज़दूरी वाले काम से स्वरोज़गार की ओर गए।[16]"
+          ],
+          [
+            "o",
+            "इनमें से किसी प्रयोग में यह नहीं मिला कि “पैसा दो तो लोग काम छोड़ देते हैं”। न ही कोई ऐसा जादू मिला जो लोगों से बहुत ज़्यादा काम कराए। फ़िनलैंड के नतीजे इसी पैटर्न में अच्छी तरह बैठते हैं।"
+          ],
+          [
+            "p",
+            "फ़िनलैंड के प्रयोग की मुख्य बातें {हमारी टाइमलाइन के कार्ड|/timeline/#tl-finland} पर भी हैं।"
+          ],
+          [
+            "h",
+            "उसके बाद का फ़िनलैंड"
+          ],
+          [
+            "p",
+            "2026 में फ़िनलैंड बेसिक इनकम से उलटी दिशा में जा रहा है। 1 मई 2026 को Kela के दो बेरोज़गारी भत्ते, लेबर मार्केट सब्सिडी और बुनियादी बेरोज़गारी भत्ता, मिलाकर एक नया “सामान्य सहायता” (yleistuki) बना दिया गया। Kela बताता है कि बुनियादी भत्ते के उलट, सामान्य सहायता में ज़रूरत की जाँच है: पूँजी आय और दूसरी आय से यह घट सकती है।[17]"
+          ],
+          [
+            "p",
+            "बहस फिर भी जारी है। मार्च 2026 में फ़िनलैंड की संसद की सूचना सेवा ने €260 महीने पर आधारित चार बेसिक इनकम मॉडलों का ख़र्च आँका, और ग्रीन्स पार्टी ने वह नोट प्रकाशित किया।[18] लाहटी शहर में पार्षदों ने स्थानीय बेसिक इनकम प्रयोग का प्रस्ताव रखा। जून 2026 में शहर की एक समिति ने यह कहकर इसे नामंज़ूर किया कि शहर को ऐसा प्रयोग चलाने का अधिकार नहीं, पर अपने जवाब में उसने 2017–2018 के प्रयोग के बारे में लिखा कि ख़ुशहाली पर असर अच्छा रहा जबकि रोज़गार पर असर छोटा।[19]"
+          ],
+          [
+            "h",
+            "इससे क्या समझें"
+          ],
+          [
+            "p",
+            "अप्रैल 2018 की “बंद” और “नाकाम” वाली सुर्ख़ियाँ ग़लत थीं। प्रयोग योजना के मुताबिक़ पूरे दो साल चला; सरकार ने बस उसे बढ़ाने और फैलाने से मना किया। और तब तक कोई नतीजा प्रकाशित नहीं हुआ था।"
+          ],
+          [
+            "p",
+            "अंतिम नतीजों में काम पर असर छोटा था (लगभग 6 दिन), जबकि जीवन-संतोष, मानसिक ख़ुशहाली और भरोसा बेहतर हुए।"
+          ],
+          [
+            "p",
+            "सिर्फ़ बेरोज़गार शामिल थे, यह दो साल चला, और पैसे के इंतज़ाम वाले पक्ष की जाँच कभी नहीं हुई। दूसरे साल एक और नीतिगत बदलाव बीच में आ गया।"
+          ],
+          [
+            "o",
+            "इसलिए न यह कहा जा सकता है कि “बेसिक इनकम नाकाम रही”, न यह कि “बेसिक इनकम कामयाब रही”। कहा यह जा सकता है: पैसे से लोगों ने काम नहीं छोड़ा, वे बहुत ज़्यादा काम भी नहीं करने लगे, और उनकी ज़िंदगी ज़्यादा सुरक्षित महसूस हुई।"
+          ],
+          [
+            "o",
+            "अगली बार कोई कहे कि “फ़िनलैंड आज़मा चुका है और यह नाकाम रहा”, तो पूछकर देखिए: ठीक-ठीक नाकाम क्या हुआ? जवाब उनकी सोच से ज़्यादा दिलचस्प है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "Saca el tema de la renta básica y, tarde o temprano, alguien lo dirá: «Finlandia ya lo probó y fracasó»."
+          ],
+          [
+            "p",
+            "Este sitio apoya la renta básica. Precisamente por eso queríamos saber si ese «fracasó» se sostiene, así que volvimos a las fuentes originales."
+          ],
+          [
+            "o",
+            "La respuesta corta: no fue ni un fracaso ni un éxito. Fue un experimento con una lista clara de cosas que descubrió y otra igual de clara de cosas que no pudo averiguar."
+          ],
+          [
+            "h",
+            "De dónde salió el «fracaso»"
+          ],
+          [
+            "p",
+            "Empezó en abril de 2018, cuando los medios en inglés publicaron la noticia casi a la vez. Toru Yamamori, de la Universidad Doshisha, recopiló entonces los titulares: Business Insider (19 de abril) dijo que Finlandia «is killing», es decir, liquidaba su experimento; BBC News (23 de abril), que «falls flat», que se quedaba en nada; Sky News (24 de abril), que lo iba a «scrap», desechar; el Orlando Sentinel (24 de abril) habló de un «experimento fallido de renta básica universal», y USA Today (25 de abril), de que «didn’t work out», no funcionó.[3]"
+          ],
+          [
+            "p",
+            "En Japón aparecieron titulares parecidos esas mismas semanas, con palabras como «interrumpido» y «cancelado».[1][2]"
+          ],
+          [
+            "p",
+            "La idea caló. En diciembre de 2019 Business Insider seguía llamando al ensayo «a major flop», un gran fiasco, aunque el mismo titular continuaba: «Pero los expertos dicen que la prueba tenía fallos».[6]"
+          ],
+          [
+            "o",
+            "En abril de 2018 todavía no se había publicado ni un solo resultado del experimento."
+          ],
+          [
+            "h",
+            "Qué fue realmente el experimento"
+          ],
+          [
+            "p",
+            "Lo llevó a cabo Kela, la Seguridad Social de Finlandia, durante dos años, de enero de 2017 a diciembre de 2018.[7][13]"
+          ],
+          [
+            "p",
+            "Se eligió al azar a 2.000 personas de 25 a 58 años entre quienes cobraban en noviembre de 2016 la prestación básica de desempleo de Kela.[4][7]"
+          ],
+          [
+            "p",
+            "Cada una recibió 560 € al mes, libres de impuestos, durante dos años."
+          ],
+          [
+            "p",
+            "Los 560 € no se reducían si encontraban trabajo o tenían otros ingresos, y no estaban obligadas a buscar empleo."
+          ],
+          [
+            "p",
+            "La participación era obligatoria. Los desempleados que no fueron elegidos formaron el grupo de control."
+          ],
+          [
+            "p",
+            "Según Kela, fue el primer experimento de renta básica del mundo de alcance nacional, creado por ley y basado en un ensayo aleatorio. El objetivo era ver si eliminar la trampa por la que trabajar te recorta la prestación ayudaba a los desempleados a encontrar empleo.[7]"
+          ],
+          [
+            "h",
+            "Nunca se «canceló»"
+          ],
+          [
+            "p",
+            "Lo que se decidió en abril de 2018 no fue detener el experimento. Kela había pedido al Gobierno más dinero para ampliarlo a personas con empleo y mantenerlo después de 2018. El Gobierno dijo que no.[2][4]"
+          ],
+          [
+            "p",
+            "Es decir, el experimento terminaría a su hora, tras los dos años previstos desde el principio. Kela publicó enseguida un comunicado: «Contrariamente a lo publicado, el experimento de renta básica de Finlandia continuará hasta finales de 2018».[5]"
+          ],
+          [
+            "p",
+            "Yamamori escribió que ninguna de las dos decisiones tenía nada que ver con que el experimento no diera los resultados esperados o hubiera fracasado.[3] De todos modos, el análisis solo empezaría al terminar el experimento: no se informó de ningún resultado mientras estaba en marcha, para no influir en el comportamiento de ninguno de los dos grupos.[7]"
+          ],
+          [
+            "p",
+            "Es cierto, eso sí, que el Gobierno de entonces no era entusiasta de la renta básica. Desde enero de 2018 añadió a las prestaciones por desempleo un «modelo de activación»: la prestación se recortaba si la persona no hacía formación o no trabajaba al menos 18 horas en tres meses.[3][4]"
+          ],
+          [
+            "p",
+            "Miska Simanainen, de Kela, dijo al diario sueco Svenska Dagbladet, según citó The Guardian: «El Gobierno está haciendo cambios que alejan el sistema de la renta básica».[4]"
+          ],
+          [
+            "h",
+            "Resultados del primer año (febrero de 2019)"
+          ],
+          [
+            "p",
+            "Los primeros resultados se publicaron el 8 de febrero de 2019. En el primer año, 2017, los beneficiarios trabajaron una media de 49,64 días y el grupo de control 49,25: prácticamente lo mismo. No se halló efecto sobre el empleo.[8]"
+          ],
+          [
+            "p",
+            "La encuesta contaba otra historia. El 55 % de los beneficiarios calificó su salud de buena o muy buena, frente al 46 % del grupo de control. El 17 % de los beneficiarios dijo sentirse muy estresado, frente a cerca de una cuarta parte del grupo de control.[8] Los beneficiarios también confiaban más en los demás: 6,8 sobre 10 frente a 6,3.[10]"
+          ],
+          [
+            "p",
+            "Pero solo respondió a la encuesta el 31 % de los beneficiarios y el 20 % del grupo de control, así que estas cifras hay que leerlas con cautela.[9]"
+          ],
+          [
+            "h",
+            "Resultados finales (mayo de 2020)"
+          ],
+          [
+            "p",
+            "La evaluación final, con los dos años, la publicaron el Ministerio de Asuntos Sociales y Salud y Kela el 6 de mayo de 2020 con el título «pequeños efectos en el empleo, mejor percepción de la seguridad económica y del bienestar mental».[11]"
+          ],
+          [
+            "p",
+            "En el empleo: en el año que va de noviembre de 2017 a octubre de 2018, más o menos el segundo año del ensayo, los beneficiarios trabajaron unos 6 días más que el grupo de control, 78 días de media.[11][12]"
+          ],
+          [
+            "p",
+            "Seis días en un año no es una gran diferencia. Kari Hämäläinen, del instituto de investigación económica VATT, lo resumió así: «En conjunto, los efectos en el empleo fueron pequeños».[13]"
+          ],
+          [
+            "p",
+            "En el bienestar, la diferencia fue clara. Frente al grupo de control, los beneficiarios estaban más satisfechos con su vida, sentían menos tensión mental, depresión, tristeza y soledad, y veían mejor sus ingresos y su situación económica. Confiaban más en los demás y en las instituciones, y tenían más confianza en su propio futuro.[7]"
+          ],
+          [
+            "h",
+            "Lo que el experimento no pudo decirnos"
+          ],
+          [
+            "p",
+            "Esta es la parte más importante. El experimento tenía límites claros."
+          ],
+          [
+            "p",
+            "Primero, solo participaron personas desempleadas. No había trabajadores, estudiantes ni pensionistas. No fue una prueba de una renta básica para todos.[4][7]"
+          ],
+          [
+            "p",
+            "Segundo, fue corto y pequeño: dos años y 2.000 beneficiarios. Olli Kangas, experto que participó en el ensayo, dijo a la cadena Yle que «dos años es un periodo demasiado corto para sacar conclusiones amplias de un experimento tan grande».[4]"
+          ],
+          [
+            "p",
+            "Tercero, no probó la parte de la financiación. Para una renta básica universal, la gran pregunta es cómo reunir el dinero con impuestos. El experimento no cambió el sistema fiscal."
+          ],
+          [
+            "p",
+            "Cuarto, el modelo de activación llegó en el segundo año. Las nuevas reglas no afectaron igual a los dos grupos, así que es imposible saber qué parte de la diferencia del segundo año se debió a la renta básica.[7][13]"
+          ],
+          [
+            "p",
+            "La propia Kela escribe que la renta básica aumentó la actividad y el empleo de quienes ya eran activos antes del experimento, pero no resolvió los problemas de quienes estaban en una situación difícil.[7]"
+          ],
+          [
+            "o",
+            "En conjunto, esto es lo que mostró el experimento: dar dinero sin condiciones a personas desempleadas durante dos años no hizo que dejaran de trabajar. Tampoco hizo que trabajaran mucho más. Pero sí hizo que se sintieran más seguras y mejor consigo mismas."
+          ],
+          [
+            "o",
+            "El experimento no responde a la pregunta «¿puede funcionar la renta básica como sistema nacional?». Y una pregunta que no respondió no puede llamarse ni fracaso ni éxito."
+          ],
+          [
+            "h",
+            "Comparado con otros experimentos"
+          ],
+          [
+            "p",
+            "En {Stockton|/timeline/#tl-stockton}, California (2019–2021), 125 residentes recibieron 500 $ al mes durante dos años. En el primer año, la proporción de beneficiarios con empleo a tiempo completo pasó del 28 % al 40 %, más que la subida de unos 5 puntos del grupo de control.[14][15]"
+          ],
+          [
+            "p",
+            "En {el estudio de OpenResearch|/essays/openresearch-cash-study/} (2020–2023), 1.000 personas de 21 a 40 años recibieron 1.000 $ al mes durante tres años. Trabajaron cerca de 1,3 horas menos a la semana, pero la proporción con empleo subió en ambos grupos (del 58 % al 72 % entre los beneficiarios y del 59 % al 74 % en el control)."
+          ],
+          [
+            "p",
+            "{El estudio de GiveDirectly en Kenia|/timeline/#tl-kenya} (desde 2017) es un gran experimento que incluye un grupo que cobra durante 12 años. Los primeros resultados mostraron que la cantidad total de trabajo no cambió, pero la gente pasó del trabajo asalariado al autoempleo.[16]"
+          ],
+          [
+            "o",
+            "Ninguno de estos experimentos halló que «si das dinero, la gente deja de trabajar». Ninguno encontró tampoco una fórmula mágica para que trabaje mucho más. Los resultados de Finlandia encajan bien en este patrón."
+          ],
+          [
+            "p",
+            "Los datos clave del experimento finlandés también están en {su ficha de nuestra cronología|/timeline/#tl-finland}."
+          ],
+          [
+            "h",
+            "Finlandia después"
+          ],
+          [
+            "p",
+            "En 2026 Finlandia va en dirección contraria a la renta básica. El 1 de mayo de 2026, las dos prestaciones de desempleo de Kela, el subsidio del mercado laboral y la prestación básica de desempleo, se fusionaron en un nuevo «apoyo general» (yleistuki). Kela señala que, a diferencia de la prestación básica, el apoyo general exige comprobar las necesidades: las rentas del capital y otros ingresos pueden reducirlo.[17]"
+          ],
+          [
+            "p",
+            "El debate sigue. En marzo de 2026 el servicio de información del Parlamento finlandés calculó el coste de cuatro modelos de renta básica de 260 € al mes, y los Verdes publicaron el informe.[18] En la ciudad de Lahti, unos concejales propusieron un ensayo local de renta básica. En junio de 2026 una comisión municipal lo rechazó por no tener la ciudad competencias para hacerlo, pero su respuesta describía aun así el experimento de 2017–2018 como positivo para el bienestar y con efectos pequeños en el empleo.[19]"
+          ],
+          [
+            "h",
+            "Qué nos llevamos"
+          ],
+          [
+            "p",
+            "Los titulares de abril de 2018 sobre «cancelación» y «fracaso» eran erróneos. El experimento duró sus dos años completos según lo previsto; el Gobierno solo se negó a prolongarlo y ampliarlo. Y aún no se había publicado ningún resultado."
+          ],
+          [
+            "p",
+            "En los resultados finales, el efecto en el empleo fue pequeño (unos 6 días), mientras que mejoraron la satisfacción vital, el bienestar mental y la confianza."
+          ],
+          [
+            "p",
+            "Solo participaron personas desempleadas, duró dos años y la financiación nunca se puso a prueba. En el segundo año, otro cambio de política se cruzó en el camino."
+          ],
+          [
+            "o",
+            "Así que no se puede decir «la renta básica fracasó», ni tampoco «la renta básica triunfó». Lo que sí se puede decir es que el dinero no hizo que la gente dejara de trabajar, no hizo que trabajara mucho más, y le dio una vida más segura."
+          ],
+          [
+            "o",
+            "La próxima vez que alguien te diga «Finlandia ya lo probó y fracasó», prueba a preguntar: ¿qué es exactamente lo que fracasó? La respuesta es más interesante de lo que cree."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Bringen Sie das Grundeinkommen zur Sprache, und früher oder später sagt jemand: „Das hat Finnland doch schon ausprobiert, und es ist gescheitert.“"
+          ],
+          [
+            "p",
+            "Diese Seite unterstützt das Grundeinkommen. Gerade deshalb wollten wir wissen, ob dieses „gescheitert“ hält, und sind zu den Primärquellen zurückgegangen."
+          ],
+          [
+            "o",
+            "Die kurze Antwort: Es war weder ein Scheitern noch ein Erfolg. Es war ein Experiment mit einer klaren Liste dessen, was es herausfand, und einer ebenso klaren Liste dessen, was es nicht klären konnte."
+          ],
+          [
+            "h",
+            "Woher das „gescheitert“ kam"
+          ],
+          [
+            "p",
+            "Es begann im April 2018, als englischsprachige Medien die Geschichte fast gleichzeitig brachten. Toru Yamamori von der Doshisha-Universität sammelte damals die Schlagzeilen: Business Insider (19. April) schrieb, Finnland „is killing“ sein Experiment, BBC News (23. April), der Versuch „falls flat“, Sky News (24. April), Finnland werde ihn „scrap“, der Orlando Sentinel (24. April) sprach von einem „gescheiterten Experiment mit bedingungslosem Grundeinkommen“ und USA Today (25. April) davon, es habe „didn’t work out“.[3]"
+          ],
+          [
+            "p",
+            "Japanische Medien brachten in denselben Wochen ähnliche Schlagzeilen mit Wörtern wie „unterbrochen“ und „abgebrochen“.[1][2]"
+          ],
+          [
+            "p",
+            "Die Erzählung blieb hängen. Noch im Dezember 2019 nannte Business Insider den Versuch „a major flop“, wobei dieselbe Schlagzeile weiterging: „Aber Fachleute sagen, der Test war fehlerhaft.“[6]"
+          ],
+          [
+            "o",
+            "Im April 2018 war noch kein einziges Ergebnis des Experiments veröffentlicht."
+          ],
+          [
+            "h",
+            "Was das Experiment tatsächlich war"
+          ],
+          [
+            "p",
+            "Durchgeführt wurde es von Kela, der finnischen Sozialversicherungsanstalt, zwei Jahre lang, von Januar 2017 bis Dezember 2018.[7][13]"
+          ],
+          [
+            "p",
+            "2.000 Menschen zwischen 25 und 58 Jahren wurden zufällig aus denen ausgewählt, die im November 2016 die Grundleistung bei Arbeitslosigkeit von Kela bezogen.[4][7]"
+          ],
+          [
+            "p",
+            "Jede Person erhielt zwei Jahre lang 560 € im Monat, steuerfrei."
+          ],
+          [
+            "p",
+            "Die 560 € wurden nicht gekürzt, wenn jemand Arbeit fand oder andere Einkünfte hatte, und niemand musste Arbeit suchen."
+          ],
+          [
+            "p",
+            "Die Teilnahme war Pflicht. Die nicht ausgewählten Arbeitslosen bildeten die Kontrollgruppe."
+          ],
+          [
+            "p",
+            "Laut Kela war es das weltweit erste Grundeinkommensexperiment, das landesweit lief, gesetzlich verankert war und auf einem randomisierten Feldversuch beruhte. Ziel war herauszufinden, ob es Arbeitslosen in Jobs hilft, wenn man die Falle beseitigt, in der Arbeit die Leistung kürzt.[7]"
+          ],
+          [
+            "h",
+            "Es wurde nie „abgebrochen“"
+          ],
+          [
+            "p",
+            "Was im April 2018 beschlossen wurde, war kein Abbruch. Kela hatte die Regierung um zusätzliches Geld gebeten, um den Versuch auf Erwerbstätige auszuweiten und über 2018 hinaus fortzuführen. Die Regierung lehnte ab.[2][4]"
+          ],
+          [
+            "p",
+            "Das Experiment würde also planmäßig nach den ursprünglich vorgesehenen zwei Jahren enden. Kela gab sofort eine Mitteilung heraus: „Entgegen den Berichten wird das Grundeinkommensexperiment in Finnland bis Ende 2018 fortgesetzt.“[5]"
+          ],
+          [
+            "p",
+            "Yamamori schrieb, keine der beiden Entscheidungen habe damit zu tun, dass das Experiment nicht die erhofften Ergebnisse gebracht habe oder gescheitert sei.[3] Ohnehin sollte die Auswertung erst nach dem Ende beginnen: Während des Versuchs wurden keine Ergebnisse veröffentlicht, um das Verhalten in keiner der beiden Gruppen zu beeinflussen.[7]"
+          ],
+          [
+            "p",
+            "Richtig ist allerdings, dass die damalige Regierung vom Grundeinkommen nicht begeistert war. Ab Januar 2018 fügte sie dem Arbeitslosengeld ein „Aktivierungsmodell“ hinzu: Die Leistung wurde gekürzt, wenn jemand in drei Monaten weder an einer Weiterbildung teilnahm noch mindestens 18 Stunden arbeitete.[3][4]"
+          ],
+          [
+            "p",
+            "Miska Simanainen von Kela sagte der schwedischen Zeitung Svenska Dagbladet, wie der Guardian zitierte: „Die Regierung nimmt Änderungen vor, die das System vom Grundeinkommen wegführen.“[4]"
+          ],
+          [
+            "h",
+            "Ergebnisse des ersten Jahres (Februar 2019)"
+          ],
+          [
+            "p",
+            "Die ersten Ergebnisse erschienen am 8. Februar 2019. Im ersten Jahr, 2017, waren die Empfänger im Schnitt 49,64 Tage beschäftigt, die Kontrollgruppe 49,25 Tage: praktisch gleich. Ein Effekt auf die Beschäftigung zeigte sich nicht.[8]"
+          ],
+          [
+            "p",
+            "Die Umfrage erzählte etwas anderes. 55 % der Empfänger bewerteten ihre Gesundheit als gut oder sehr gut, gegenüber 46 % der Kontrollgruppe. 17 % der Empfänger fühlten sich sehr gestresst, in der Kontrollgruppe etwa ein Viertel.[8] Die Empfänger vertrauten auch anderen Menschen mehr: 6,8 von 10 Punkten gegenüber 6,3.[10]"
+          ],
+          [
+            "p",
+            "Allerdings antworteten nur 31 % der Empfänger und 20 % der Kontrollgruppe, daher sind diese Zahlen mit Vorsicht zu lesen.[9]"
+          ],
+          [
+            "h",
+            "Schlussergebnisse (Mai 2020)"
+          ],
+          [
+            "p",
+            "Die Schlussauswertung über beide Jahre veröffentlichten das Ministerium für Soziales und Gesundheit und Kela am 6. Mai 2020 unter dem Titel „geringe Beschäftigungseffekte, besser empfundene wirtschaftliche Sicherheit und psychisches Wohlbefinden“.[11]"
+          ],
+          [
+            "p",
+            "Zur Arbeit: Im Jahr von November 2017 bis Oktober 2018, ungefähr dem zweiten Versuchsjahr, waren die Empfänger rund 6 Tage länger beschäftigt als die Kontrollgruppe, im Schnitt 78 Tage.[11][12]"
+          ],
+          [
+            "p",
+            "Sechs Tage im Jahr sind kein großer Unterschied. Kari Hämäläinen vom Wirtschaftsforschungsinstitut VATT fasste zusammen: „Alles in allem waren die Beschäftigungseffekte gering.“[13]"
+          ],
+          [
+            "p",
+            "Beim Wohlbefinden war der Unterschied deutlich. Verglichen mit der Kontrollgruppe waren die Empfänger zufriedener mit ihrem Leben, berichteten weniger psychische Belastung, Depression, Traurigkeit und Einsamkeit und sahen ihr Einkommen und ihre wirtschaftliche Lage positiver. Sie vertrauten anderen Menschen und den Institutionen mehr und blickten zuversichtlicher in die eigene Zukunft.[7]"
+          ],
+          [
+            "h",
+            "Was das Experiment nicht sagen konnte"
+          ],
+          [
+            "p",
+            "Das ist der wichtigste Teil. Das Experiment hatte klare Grenzen."
+          ],
+          [
+            "p",
+            "Erstens nahmen nur Arbeitslose teil. Erwerbstätige, Studierende und Rentner waren nicht dabei. Es war kein Test eines Grundeinkommens für alle.[4][7]"
+          ],
+          [
+            "p",
+            "Zweitens war es kurz und klein: zwei Jahre und 2.000 Empfänger. Olli Kangas, ein am Versuch beteiligter Experte, sagte dem Sender Yle, „zwei Jahre sind zu kurz, um aus einem so großen Experiment weitreichende Schlüsse zu ziehen“.[4]"
+          ],
+          [
+            "p",
+            "Drittens wurde die Finanzierungsseite nicht getestet. Bei einem Grundeinkommen für alle ist die größte Frage, wie das Geld über Steuern aufgebracht wird. Das Experiment änderte das Steuersystem nicht."
+          ],
+          [
+            "p",
+            "Viertens kam im zweiten Jahr das Aktivierungsmodell hinzu. Die neuen Regeln wirkten auf die beiden Gruppen nicht gleich, daher lässt sich nicht sagen, wie viel vom Unterschied im zweiten Jahr auf das Grundeinkommen zurückgeht.[7][13]"
+          ],
+          [
+            "p",
+            "Kela selbst schreibt, das Grundeinkommen habe Aktivität und Beschäftigung bei denen erhöht, die schon vor dem Experiment aktiv waren, die Probleme von Menschen in schwierigen Lebenslagen aber nicht gelöst.[7]"
+          ],
+          [
+            "o",
+            "Zusammengenommen zeigte das Experiment: Arbeitslosen zwei Jahre lang bedingungslos Geld zu geben, hat sie nicht vom Arbeiten abgehalten. Es hat sie aber auch nicht viel mehr arbeiten lassen. Doch sie fühlten sich sicherer und besser."
+          ],
+          [
+            "o",
+            "Die Frage „Kann ein Grundeinkommen als nationales System funktionieren?“ beantwortet das Experiment nicht. Und eine Frage, die es nicht beantwortet hat, kann man weder Scheitern noch Erfolg nennen."
+          ],
+          [
+            "h",
+            "Im Vergleich mit anderen Experimenten"
+          ],
+          [
+            "p",
+            "In {Stockton|/timeline/#tl-stockton}, Kalifornien (2019–2021), erhielten 125 Einwohner zwei Jahre lang 500 $ im Monat. Im ersten Jahr stieg der Anteil der Empfänger in Vollzeit von 28 % auf 40 %, stärker als in der Kontrollgruppe mit etwa 5 Punkten.[14][15]"
+          ],
+          [
+            "p",
+            "In {der Studie von OpenResearch|/essays/openresearch-cash-study/} (2020–2023) erhielten 1.000 Menschen zwischen 21 und 40 drei Jahre lang 1.000 $ im Monat. Sie arbeiteten etwa 1,3 Stunden pro Woche weniger, aber der Anteil der Erwerbstätigen stieg in beiden Gruppen (bei den Empfängern von 58 % auf 72 %, in der Kontrollgruppe von 59 % auf 74 %)."
+          ],
+          [
+            "p",
+            "{Die GiveDirectly-Studie in Kenia|/timeline/#tl-kenya} (seit 2017) ist ein großes Experiment mit einer Gruppe, die 12 Jahre lang Geld erhält. Erste Ergebnisse zeigten, dass sich die gesamte Arbeitsmenge nicht änderte, die Menschen aber von Lohnarbeit zur Selbstständigkeit wechselten.[16]"
+          ],
+          [
+            "o",
+            "Keines dieser Experimente fand „Gib den Leuten Geld, und sie hören auf zu arbeiten“. Keines fand aber auch ein Zaubermittel, das Menschen viel mehr arbeiten lässt. Finnlands Ergebnisse passen gut in dieses Muster."
+          ],
+          [
+            "p",
+            "Die wichtigsten Fakten zum finnischen Experiment stehen auch auf {seiner Karte in unserer Zeitleiste|/timeline/#tl-finland}."
+          ],
+          [
+            "h",
+            "Finnland danach"
+          ],
+          [
+            "p",
+            "2026 bewegt sich Finnland in die entgegengesetzte Richtung. Am 1. Mai 2026 wurden die beiden Arbeitslosenleistungen von Kela, die Arbeitsmarktunterstützung und das Grundtagegeld, zu einer neuen „allgemeinen Unterstützung“ (yleistuki) zusammengelegt. Kela weist darauf hin, dass die allgemeine Unterstützung anders als das Grundtagegeld bedarfsgeprüft ist: Kapitalerträge und andere Einkünfte können sie mindern.[17]"
+          ],
+          [
+            "p",
+            "Die Debatte geht weiter. Im März 2026 berechnete der Informationsdienst des finnischen Parlaments vier Grundeinkommensmodelle auf Basis von 260 € im Monat, und die Grünen veröffentlichten das Papier.[18] In der Stadt Lahti schlugen Stadträte einen lokalen Grundeinkommensversuch vor. Im Juni 2026 lehnte ein Ausschuss der Stadt ab, weil die Stadt dafür keine Befugnis habe, beschrieb in seiner Antwort das Experiment von 2017–2018 aber dennoch als positiv für das Wohlbefinden bei geringen Beschäftigungseffekten.[19]"
+          ],
+          [
+            "h",
+            "Was bleibt"
+          ],
+          [
+            "p",
+            "Die Schlagzeilen vom April 2018 über „Abbruch“ und „Scheitern“ waren falsch. Das Experiment lief wie geplant die vollen zwei Jahre; die Regierung lehnte nur eine Verlängerung und Ausweitung ab. Und Ergebnisse gab es noch keine."
+          ],
+          [
+            "p",
+            "In den Schlussergebnissen war der Effekt auf die Arbeit gering (etwa 6 Tage), während sich Lebenszufriedenheit, psychisches Wohlbefinden und Vertrauen verbesserten."
+          ],
+          [
+            "p",
+            "Nur Arbeitslose nahmen teil, der Versuch dauerte zwei Jahre, und die Finanzierungsseite wurde nie getestet. Im zweiten Jahr kam eine weitere politische Änderung dazwischen."
+          ],
+          [
+            "o",
+            "Man kann also weder sagen „das Grundeinkommen ist gescheitert“ noch „das Grundeinkommen war ein Erfolg“. Sagen kann man: Das Geld hat die Menschen nicht vom Arbeiten abgehalten, hat sie nicht viel mehr arbeiten lassen und hat ihr Leben sicherer gemacht."
+          ],
+          [
+            "o",
+            "Wenn Ihnen das nächste Mal jemand sagt „Finnland hat es versucht, und es ist gescheitert“, fragen Sie zurück: Was genau ist gescheitert? Die Antwort ist interessanter, als er denkt."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "اذكر الدخل الأساسي، وعاجلًا أو آجلًا سيقول أحدهم: «فنلندا جرّبته من قبل، وفشل»."
+          ],
+          [
+            "p",
+            "يدعم هذا الموقع الدخل الأساسي. ولهذا بالذات أردنا أن نعرف هل يصمد قول «فشل»، فعدنا إلى المصادر الأصلية."
+          ],
+          [
+            "o",
+            "الجواب المختصر: لم تكن التجربة فشلًا ولا نجاحًا. كانت تجربة لها قائمة واضحة بما اكتشفته، وقائمة لا تقل وضوحًا بما لم تستطع معرفته."
+          ],
+          [
+            "h",
+            "من أين جاءت كلمة «فشل»"
+          ],
+          [
+            "p",
+            "بدأ الأمر في أبريل 2018، حين نشرت وسائل الإعلام الناطقة بالإنجليزية الخبر في وقت واحد تقريبًا. جمع تورو ياماموري من جامعة دوشيشا العناوين حينها: كتبت ⁦Business Insider⁩ (19 أبريل) أن فنلندا «⁦is killing⁩» تجربتها أي تُنهيها، و⁦BBC News⁩ (23 أبريل) أن التجربة «⁦falls flat⁩» أي أخفقت، و⁦Sky News⁩ (24 أبريل) أن فنلندا ستتخلى عنها، ووصفتها ⁦Orlando Sentinel⁩ (24 أبريل) بأنها «تجربة دخل أساسي شامل فاشلة»، وقالت ⁦USA Today⁩ (25 أبريل) إنها «⁦didn’t work out⁩» أي لم تنجح.[3]"
+          ],
+          [
+            "p",
+            "ونشرت وسائل الإعلام اليابانية عناوين مشابهة في الأسابيع نفسها، بكلمات مثل «توقّفت» و«أُلغيت».[1][2]"
+          ],
+          [
+            "p",
+            "وبقيت الفكرة عالقة. ففي ديسمبر 2019 كانت ⁦Business Insider⁩ لا تزال تصف التجربة بأنها «⁦a major flop⁩» أي إخفاق كبير، وإن كان العنوان نفسه يكمل: «لكن الخبراء يقولون إن الاختبار كان معيبًا».[6]"
+          ],
+          [
+            "o",
+            "في أبريل 2018 لم تكن قد نُشرت بعدُ نتيجة واحدة من التجربة."
+          ],
+          [
+            "h",
+            "ما الذي كانت عليه التجربة فعلًا"
+          ],
+          [
+            "p",
+            "نفّذت التجربةَ مؤسسة التأمين الاجتماعي الفنلندية (⁦Kela⁩) لمدة عامين، من يناير 2017 إلى ديسمبر 2018.[7][13]"
+          ],
+          [
+            "p",
+            "اختير 2,000 شخص بين 25 و58 عامًا عشوائيًا من بين مَن كانوا يتلقون إعانة البطالة الأساسية من ⁦Kela⁩ في نوفمبر 2016.[4][7]"
+          ],
+          [
+            "p",
+            "تلقى كل منهم ⁦€560⁩ شهريًا معفاة من الضريبة لمدة عامين."
+          ],
+          [
+            "p",
+            "لم تُخفَّض الـ⁦€560⁩ إذا وجد أحدهم عملًا أو كان له دخل آخر، ولم يُطلب منهم البحث عن عمل."
+          ],
+          [
+            "p",
+            "كانت المشاركة إلزامية. وشكّل العاطلون الذين لم يُختاروا المجموعة الضابطة."
+          ],
+          [
+            "p",
+            "بحسب ⁦Kela⁩، كانت هذه أول تجربة دخل أساسي في العالم على مستوى وطني، منشأة بقانون، وقائمة على تجربة ميدانية عشوائية. وكان الهدف معرفة ما إذا كانت إزالة الفخ الذي يُقتطع فيه من الإعانة عند العمل تساعد العاطلين على إيجاد وظائف.[7]"
+          ],
+          [
+            "h",
+            "لم تُلغَ قط"
+          ],
+          [
+            "p",
+            "ما تقرر في أبريل 2018 لم يكن إيقاف التجربة. فقد طلبت ⁦Kela⁩ من الحكومة مالًا إضافيًا لتوسيعها لتشمل العاملين ومواصلتها بعد 2018. ورفضت الحكومة.[2][4]"
+          ],
+          [
+            "p",
+            "أي أن التجربة ستنتهي في موعدها بعد العامين المخطط لهما منذ البداية. وأصدرت ⁦Kela⁩ بيانًا سريعًا: «خلافًا لما نُشر، ستستمر تجربة الدخل الأساسي في فنلندا حتى نهاية 2018».[5]"
+          ],
+          [
+            "p",
+            "وكتب ياماموري أن أيًا من القرارين لا علاقة له بأن التجربة لم تحقق النتائج المرجوة أو أنها فشلت.[3] ثم إن التحليل كان مقررًا ألا يبدأ إلا بعد انتهاء التجربة: لم تُعلن أي نتائج أثناءها حتى لا يتأثر سلوك أي من المجموعتين.[7]"
+          ],
+          [
+            "p",
+            "صحيح مع ذلك أن الحكومة آنذاك لم تكن متحمسة للدخل الأساسي. فمنذ يناير 2018 أضافت إلى إعانات البطالة «نموذج التنشيط»: تُخفَّض الإعانة إذا لم يشارك الشخص في تدريب أو لم يعمل 18 ساعة على الأقل خلال ثلاثة أشهر.[3][4]"
+          ],
+          [
+            "p",
+            "وقال ميسكا سيمانانن من ⁦Kela⁩ لصحيفة ⁦Svenska Dagbladet⁩ السويدية، كما نقلت ⁦The Guardian⁩: «الحكومة تُجري تغييرات تُبعد النظام عن الدخل الأساسي».[4]"
+          ],
+          [
+            "h",
+            "نتائج العام الأول (فبراير 2019)"
+          ],
+          [
+            "p",
+            "صدرت النتائج الأولى في 8 فبراير 2019. في العام الأول، 2017، عمل المستفيدون في المتوسط 49.64 يومًا والمجموعة الضابطة 49.25 يومًا: أي الشيء نفسه تقريبًا. ولم يُعثر على أثر في التوظيف.[8]"
+          ],
+          [
+            "p",
+            "أما الاستبيان فروى قصة أخرى. قيّم 55% من المستفيدين صحتهم بأنها جيدة أو جيدة جدًا، مقابل 46% من المجموعة الضابطة. وقال 17% من المستفيدين إنهم يشعرون بضغط شديد، مقابل نحو ربع المجموعة الضابطة.[8] كما كانت ثقة المستفيدين بالآخرين أعلى: 6.8 من 10 مقابل 6.3.[10]"
+          ],
+          [
+            "p",
+            "لكن لم يُجب عن الاستبيان سوى 31% من المستفيدين و20% من المجموعة الضابطة، لذا ينبغي قراءة هذه الأرقام بحذر.[9]"
+          ],
+          [
+            "h",
+            "النتائج النهائية (مايو 2020)"
+          ],
+          [
+            "p",
+            "نشرت وزارة الشؤون الاجتماعية والصحة و⁦Kela⁩ التقييم النهائي للعامين في 6 مايو 2020 بعنوان «آثار صغيرة على التوظيف، وإحساس أفضل بالأمان الاقتصادي والرفاه النفسي».[11]"
+          ],
+          [
+            "p",
+            "في العمل: خلال العام الممتد من نوفمبر 2017 إلى أكتوبر 2018، أي العام الثاني تقريبًا، عمل المستفيدون نحو 6 أيام أكثر من المجموعة الضابطة، بمتوسط 78 يومًا.[11][12]"
+          ],
+          [
+            "p",
+            "ستة أيام في السنة ليست فرقًا كبيرًا. ولخّص كاري هامالاينن من معهد ⁦VATT⁩ للبحوث الاقتصادية الأمر: «إجمالًا، كانت آثار التوظيف صغيرة».[13]"
+          ],
+          [
+            "p",
+            "أما في الرفاه فكان الفرق واضحًا. مقارنةً بالمجموعة الضابطة، كان المستفيدون أكثر رضا عن حياتهم، وأبلغوا عن ضغط نفسي واكتئاب وحزن ووحدة أقل، ونظرة أفضل إلى دخلهم ووضعهم الاقتصادي. وكانوا أكثر ثقة بالآخرين وبمؤسسات المجتمع، وأكثر ثقة بمستقبلهم.[7]"
+          ],
+          [
+            "h",
+            "ما لم تستطع التجربة إخبارنا به"
+          ],
+          [
+            "p",
+            "هذا هو الجزء الأهم. كانت للتجربة حدود واضحة."
+          ],
+          [
+            "p",
+            "أولًا، شارك فيها العاطلون عن العمل فقط. لم يُشمل العاملون ولا الطلاب ولا المتقاعدون. لم تكن اختبارًا لدخل أساسي يُدفع للجميع.[4][7]"
+          ],
+          [
+            "p",
+            "ثانيًا، كانت قصيرة وصغيرة: عامان و2,000 مستفيد. وقال أولي كانغاس، وهو خبير شارك في التجربة، لهيئة البث ⁦Yle⁩ إن «عامين مدة أقصر من أن تُستخلص منها استنتاجات واسعة من تجربة بهذا الحجم».[4]"
+          ],
+          [
+            "p",
+            "ثالثًا، لم تختبر جانب التمويل. ففي دخل أساسي للجميع، السؤال الأكبر هو كيف يُجمع المال عبر الضرائب. ولم تغيّر التجربة النظام الضريبي."
+          ],
+          [
+            "p",
+            "رابعًا، جاء نموذج التنشيط في العام الثاني. ولم تؤثر القواعد الجديدة في المجموعتين بالطريقة نفسها، فمن المستحيل معرفة كم من فرق العام الثاني يعود إلى الدخل الأساسي.[7][13]"
+          ],
+          [
+            "p",
+            "وتكتب ⁦Kela⁩ نفسها أن الدخل الأساسي زاد النشاط والتوظيف لدى مَن كانوا نشطين أصلًا قبل التجربة، لكنه لم يحل مشكلات مَن كانوا في وضع صعب.[7]"
+          ],
+          [
+            "o",
+            "إذا جمعنا كل ذلك، فهذا ما أظهرته التجربة: إعطاء العاطلين مالًا دون شروط لمدة عامين لم يجعلهم يتوقفون عن العمل. ولم يجعلهم يعملون أكثر بكثير أيضًا. لكنه جعلهم يشعرون بأمان أكبر وبحال أفضل."
+          ],
+          [
+            "o",
+            "التجربة لا تجيب عن سؤال «هل يمكن للدخل الأساسي أن ينجح نظامًا وطنيًا؟». وسؤال لم تُجب عنه لا يمكن أن يُسمّى فشلًا ولا نجاحًا."
+          ],
+          [
+            "h",
+            "مقارنةً بتجارب أخرى"
+          ],
+          [
+            "p",
+            "في {ستوكتون|/timeline/#tl-stockton} بكاليفورنيا (2019–2021) تلقى 125 من السكان ⁦$500⁩ شهريًا لمدة عامين. وفي العام الأول ارتفعت نسبة المستفيدين العاملين بدوام كامل من 28% إلى 40%، أكثر من ارتفاع المجموعة الضابطة بنحو 5 نقاط.[14][15]"
+          ],
+          [
+            "p",
+            "وفي {دراسة ⁦OpenResearch⁩|/essays/openresearch-cash-study/} (2020–2023) تلقى 1,000 شخص بين 21 و40 عامًا ⁦$1,000⁩ شهريًا لمدة ثلاث سنوات. عملوا نحو 1.3 ساعة أقل أسبوعيًا، لكن نسبة العاملين ارتفعت في المجموعتين (من 58% إلى 72% بين المستفيدين ومن 59% إلى 74% في المجموعة الضابطة)."
+          ],
+          [
+            "p",
+            "و{دراسة ⁦GiveDirectly⁩ في كينيا|/timeline/#tl-kenya} (منذ 2017) تجربة كبيرة تضم مجموعة تتلقى المال 12 عامًا. وأظهرت النتائج الأولية أن مجموع العمل لم يتغير، لكن الناس انتقلوا من العمل المأجور إلى العمل الحر.[16]"
+          ],
+          [
+            "o",
+            "لم تجد أي من هذه التجارب أن «أعطِ الناس مالًا فيتوقفوا عن العمل». ولم تجد أيضًا وصفة سحرية تجعلهم يعملون أكثر بكثير. ونتائج فنلندا تنسجم جيدًا مع هذا النمط."
+          ],
+          [
+            "p",
+            "والحقائق الأساسية عن التجربة الفنلندية موجودة أيضًا في {بطاقتها في خطنا الزمني|/timeline/#tl-finland}."
+          ],
+          [
+            "h",
+            "فنلندا بعد ذلك"
+          ],
+          [
+            "p",
+            "في 2026 تتجه فنلندا في الاتجاه المعاكس للدخل الأساسي. ففي 1 مايو 2026 دُمجت إعانتا البطالة لدى ⁦Kela⁩، أي دعم سوق العمل وإعانة البطالة الأساسية، في «دعم عام» جديد (⁦yleistuki⁩). وتشير ⁦Kela⁩ إلى أن الدعم العام، خلافًا للإعانة الأساسية، مشروط باختبار الحاجة: قد يُنقصه دخل رأس المال والدخول الأخرى.[17]"
+          ],
+          [
+            "p",
+            "ومع ذلك يستمر النقاش. ففي مارس 2026 قدّرت خدمة المعلومات في البرلمان الفنلندي كلفة أربعة نماذج للدخل الأساسي قائمة على ⁦€260⁩ شهريًا، ونشر حزب الخضر المذكرة.[18] وفي مدينة لاهتي اقترح أعضاء في المجلس البلدي تجربة محلية للدخل الأساسي. وفي يونيو 2026 رفضتها لجنة في المدينة لأن المدينة لا تملك صلاحية تنفيذها، لكن ردها وصف مع ذلك تجربة 2017–2018 بأنها كانت إيجابية للرفاه مع آثار صغيرة على التوظيف.[19]"
+          ],
+          [
+            "h",
+            "ما الذي نخرج به"
+          ],
+          [
+            "p",
+            "كانت عناوين أبريل 2018 عن «الإلغاء» و«الفشل» خاطئة. استمرت التجربة عاميها كاملين كما خُطط لها؛ والحكومة رفضت فقط تمديدها وتوسيعها. ولم تكن قد نُشرت أي نتائج بعد."
+          ],
+          [
+            "p",
+            "في النتائج النهائية، كان الأثر على العمل صغيرًا (نحو 6 أيام)، بينما تحسّن الرضا عن الحياة والرفاه النفسي والثقة."
+          ],
+          [
+            "p",
+            "شارك العاطلون عن العمل فقط، واستمرت عامين، ولم يُختبر جانب التمويل قط. وفي العام الثاني تدخّل تغيير آخر في السياسة."
+          ],
+          [
+            "o",
+            "لذلك لا يمكن القول إن «الدخل الأساسي فشل»، ولا إن «الدخل الأساسي نجح». ما يمكن قوله هو: المال لم يجعل الناس يتوقفون عن العمل، ولم يجعلهم يعملون أكثر بكثير، وجعل حياتهم أكثر أمانًا."
+          ],
+          [
+            "o",
+            "في المرة القادمة التي يقول لك فيها أحدهم «فنلندا جرّبته وفشل»، جرّب أن تسأل: ما الذي فشل بالضبط؟ الجواب أمتع مما يظن."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "GIGAZINE — Finland’s ‘basic income experiment’ to be interrupted in December 2018 (20 Apr 2018, in Japanese)",
+          "url": "https://gigazine.net/news/20180420-basic-income-experiment-ending"
+        },
+        {
+          "n": 2,
+          "label": "Osamu Tanaka, Dai-ichi Life Research Institute — Finland’s basic income experiment terminated (7 May 2018; PDF, in Japanese)",
+          "url": "https://www.dlri.co.jp/pdf/macro/2018/tanaka180507finlandbasicincome.pdf"
+        },
+        {
+          "n": 3,
+          "label": "Toru Yamamori, Business Insider Japan — Were the reports of Finland’s ‘failed basic income experiment’ false? (7 May 2018, in Japanese)",
+          "url": "https://www.businessinsider.jp/post-166698"
+        },
+        {
+          "n": 4,
+          "label": "Jon Henley, The Guardian — “Finland to end basic income trial after two years” (23 Apr 2018)",
+          "url": "https://www.theguardian.com/world/2018/apr/23/finland-to-end-basic-income-trial-after-two-years"
+        },
+        {
+          "n": 5,
+          "label": "Helsinki Metropolitan — “False reports in international media on Finland aborting basic income trial” (25 Apr 2018, citing Kela’s release “Contrary to reports, the Basic Income Experiment in Finland will continue until the end of 2018”)",
+          "url": "https://metropolitan.fi/entry/false-reports-in-international-media-on-finland-aborting-basic-income-trial.html"
+        },
+        {
+          "n": 6,
+          "label": "Aria Bendix, Business Insider Japan — translation of Business Insider’s “One of the world’s largest basic-income trials, a 2-year program in Finland, was a major flop. But experts say the test was flawed.” (13 Dec 2019, in Japanese)",
+          "url": "https://www.businessinsider.jp/post-203873"
+        },
+        {
+          "n": 7,
+          "label": "Kela — Finland’s Basic Income Experiment 2017–2018: results (2020; PDF, Finland Toolbox)",
+          "url": "https://toolbox.finland.fi/wp-content/uploads/sites/2/2018/04/basic_income_experiment_2017-2018_results_2020.pdf"
+        },
+        {
+          "n": 8,
+          "label": "The Big Issue — “Finland’s basic income experiment has returned its long-awaited first results” (8 Feb 2019)",
+          "url": "https://bigissue.com/news/finlands-basic-income-experiment-has-returned-its-long-awaited-first-results"
+        },
+        {
+          "n": 9,
+          "label": "Ministry of Social Affairs and Health — “Preliminary results of the basic income experiment: self-perceived wellbeing improved during the first year, no effects on employment” (8 Feb 2019)",
+          "url": "https://stm.fi/en/-/perustulokokeilun-alustavat-tulokset-hyvinvointi-koettiin-paremmaksi-ensimmaisena-vuonna-ei-tyollisyysvaikutuksia"
+        },
+        {
+          "n": 10,
+          "label": "David Meyer, Fortune — “Finland’s Universal Basic Income Experiment Just Gave Lawmakers a Really Good Reason to Back the Idea” (4 Apr 2019)",
+          "url": "https://fortune.com/2019/04/04/finland-basic-income-societal-trust/"
+        },
+        {
+          "n": 11,
+          "label": "Ministry of Social Affairs and Health and Kela — “Results of the basic income experiment: small employment effects, better perceived economic security and mental wellbeing” (6 May 2020; final report: Kangas, Jauhiainen, Simanainen and Ylikännö (eds), Suomen perustulokokeilun arviointi, Reports and Memorandums 2020:15)",
+          "url": "https://stm.fi/en/-/perustulokokeilun-tulokset-tyollisyysvaikutukset-vahaisia-toimeentulo-ja-psyykkinen-terveys-koettiin-paremmaksi"
+        },
+        {
+          "n": 12,
+          "label": "VATT Institute for Economic Research — “Employment effects of basic income remained small” (May 2020)",
+          "url": "https://vatt.fi/en/-/perustulon-tyollisyysvaikutukset-jaivat-vahaisiksi"
+        },
+        {
+          "n": 13,
+          "label": "Yle News — “Final verdict on Finland’s basic income trial: More happiness but little employment effect” (6 May 2020)",
+          "url": "https://yle.fi/a/3-11337944"
+        },
+        {
+          "n": 14,
+          "label": "PBS, Chasing the Dream — “Researchers report Stockton, California economic empowerment demonstration program success” (9 Mar 2021)",
+          "url": "https://www.pbs.org/wnet/chasing-the-dream/2021/03/researchers-report-stockton-california-economic-empowerment-demonstration-program-success/"
+        },
+        {
+          "n": 15,
+          "label": "Amanda Brandeis, Scripps News (ABC15) — “Stockton’s guaranteed income program results in full-time employment, improved mental health” (Mar 2021)",
+          "url": "https://www.abc15.com/news/national/stocktons-guaranteed-income-program-results-in-full-time-employment-improved-mental-health"
+        },
+        {
+          "n": 16,
+          "label": "Abhijit Banerjee, Michael Faye, Alan Krueger, Paul Niehaus and Tavneet Suri — “Universal Basic Income: Short-Term Results from a Long-Term Experiment in Kenya” (2023)",
+          "url": "https://www.findevgateway.org/paper/2023/09/universal-basic-income-short-term-results-from-long-term-experiment-in-kenya"
+        },
+        {
+          "n": 17,
+          "label": "Kela — “Kela alkaa maksaa yleistukea työttömille” (Kela starts paying general support to the unemployed; 5 Mar 2026, updated 11 May 2026, in Finnish)",
+          "url": "https://www.kela.fi/ajankohtaista/kela-alkaa-maksaa-yleistukea-tyottomille"
+        },
+        {
+          "n": 18,
+          "label": "Parliament of Finland Information Service — “Perustulomalli” (basic income model) memo assessing four €260 models (13 Mar 2026; PDF published by the Greens, in Finnish)",
+          "url": "https://www.vihreat.fi/wp-content/uploads/2026/06/Ensi-vaiheen-perustulo.pdf"
+        },
+        {
+          "n": 19,
+          "label": "City of Lahti, Vitality and Wellbeing Committee — council initiative “Perustulokokeilu Lahden työllisyysalueelle” (basic income trial for the Lahti employment area), 10 Jun 2026 § 79 (PDF, in Finnish)",
+          "url": "https://lahti-prod.oncloudos.com/kokous/20261302-4.PDF"
+        }
+      ]
+    },
     {
       "id": "takenaka-70000-yen-basic-income",
       "date": "2026-11-06",
@@ -11405,7 +13068,8 @@ module.exports = {
       "related": [
         "universal-high-income",
         "public-benefit-fund",
-        "moltbook-basic-income"
+        "moltbook-basic-income",
+        "finland-basic-income-experiment"
       ],
       "title": {
         "ja": "サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか",
@@ -11550,6 +13214,10 @@ module.exports = {
           [
             "o",
             "つまり、これはベーシックインカムではなく保証所得の試験であり、そこから3つの限界が出てきます。第一に、期間限定で、誰もがいつ終わるかを知っていました。給付が一生続くなら、人々の行動はどちらの方向にも違っていたかもしれません。第二に、それぞれの地域で受け取ったのはごく一部の人だけだったので、全員への給付が家賃や物価、賃金に何をもたらすのか、財源となる税が何を変えるのかは示せません。アルトマン自身の投稿も、生活費全体についての問いは「私たちの範囲を超えるが、明らかに重要だ」と書いていました。[4] 第三に、研究はパンデミックとその後の時期にまたがっていました。ただし論文は、推定値の大部分が2022年と2023年を反映していると述べています。[2] 無作為化試験がよく示せるのは、個人が追加の収入にどう反応するかであり、それこそが、より大きな制度を設計するときに必要な数字です。"
+          ],
+          [
+            "p",
+            "フィンランドの2017〜2018年の実験（失業者2,000人に月560ユーロを2年間）も、似た限界を抱え、似た結果になりました。仕事はほとんど変わらず、暮らしの安心は増えています。{何がわかり、何がわからなかったか|/essays/finland-basic-income-experiment/}は別のエッセイにまとめました。"
           ],
           [
             "p",
@@ -11707,6 +13375,10 @@ module.exports = {
           ],
           [
             "p",
+            "Finland’s 2017–2018 experiment, which paid €560 a month to 2,000 unemployed people for two years, had similar limits and a similar pattern: little change in work, a clear gain in wellbeing. {We look at what it did and did not show|/essays/finland-basic-income-experiment/} in a separate essay."
+          ],
+          [
+            "p",
             "OpenResearch says it kept surveying participants after the payments ended, through 2025.[1] We have not yet found published results from that period. It has also made the survey data available to researchers under a data use agreement, and the code for the employment paper is open; both are on {our open data list|/open-source/#data-openresearch-ucs}."
           ],
           [
@@ -11858,6 +13530,10 @@ module.exports = {
           [
             "o",
             "所以这是一项保障收入试验，而不是基本收入，由此有三个局限。第一，它是临时的，每个人都知道何时结束；如果是终身发放，人们的行为可能会不同，往哪个方向都有可能。第二，每个地方只有少数人领取，所以它无法显示发给所有人会对房租、物价或工资产生什么影响，也无法显示为此筹资的税收会改变什么。阿尔特曼自己的博文说，关于整体生活成本的问题“超出了我们的范围，但显然很重要”。[4] 第三，它贯穿了疫情及其后续时期，不过论文指出，其估计主要反映的是 2022 年和 2023 年。[2] 随机试验能很好地显示的是个人对额外收入如何反应，而这正是设计任何更大规模方案都需要的数字。"
+          ],
+          [
+            "p",
+            "芬兰 2017–2018 年的实验（向 2,000 名失业者每月发放 560 欧元，为期两年）也有类似的局限和类似的结果：工作几乎没变，生活的安心感明显增加。{它弄清了什么、没弄清什么|/essays/finland-basic-income-experiment/}，我们另写了一篇随笔。"
           ],
           [
             "p",
@@ -12015,6 +13691,10 @@ module.exports = {
           ],
           [
             "p",
+            "फ़िनलैंड के 2017–2018 के प्रयोग में, जिसमें 2,000 बेरोज़गारों को दो साल तक हर महीने €560 मिले, ऐसी ही सीमाएँ थीं और ऐसा ही पैटर्न: काम में मामूली बदलाव, ख़ुशहाली में साफ़ बढ़त। {उसने क्या दिखाया और क्या नहीं|/essays/finland-basic-income-experiment/}, यह हमने अलग निबंध में देखा है।"
+          ],
+          [
+            "p",
             "OpenResearch कहता है कि भुगतान ख़त्म होने के बाद भी उसने 2025 तक प्रतिभागियों का सर्वे जारी रखा।[1] हमें उस दौर के प्रकाशित नतीजे अभी नहीं मिले हैं। उसने डेटा उपयोग समझौते के तहत सर्वे डेटा शोधकर्ताओं को उपलब्ध कराया है, और रोज़गार वाले शोधपत्र का कोड खुला है; दोनों {हमारी ओपन डेटा सूची|/open-source/#data-openresearch-ucs} में हैं।"
           ],
           [
@@ -12166,6 +13846,10 @@ module.exports = {
           [
             "o",
             "Así que fue una prueba de renta garantizada, no una renta básica, y de ello se derivan tres límites. Primero, era temporal, y todos sabían cuándo terminaría; la gente podría actuar de otra manera, en cualquier dirección, si el pago fuera de por vida. Segundo, solo unas pocas personas en cada lugar lo recibían, así que no puede mostrar qué haría un pago a todo el mundo con los alquileres, los precios o los salarios, ni qué cambiarían los impuestos para financiarlo. El propio texto de Altman decía que las preguntas sobre el coste de la vida en general quedaban «fuera de nuestro alcance, pero obviamente son importantes».[4] Tercero, se desarrolló durante la pandemia y sus secuelas, aunque el estudio señala que sus estimaciones reflejan sobre todo 2022 y 2023.[2] Lo que un experimento aleatorizado puede mostrar bien es cómo responden las personas a un ingreso extra, y esa es justo la cifra que necesita cualquier diseño de un programa mayor."
+          ],
+          [
+            "p",
+            "El experimento finlandés de 2017–2018, que pagó 560 € al mes durante dos años a 2.000 personas desempleadas, tuvo límites parecidos y un patrón parecido: poco cambio en el trabajo y una mejora clara del bienestar. {Vemos qué mostró y qué no|/essays/finland-basic-income-experiment/} en otro ensayo."
           ],
           [
             "p",
@@ -12323,6 +14007,10 @@ module.exports = {
           ],
           [
             "p",
+            "Finnlands Experiment von 2017–2018, das 2.000 Arbeitslosen zwei Jahre lang 560 € im Monat zahlte, hatte ähnliche Grenzen und ein ähnliches Muster: kaum Veränderung bei der Arbeit, ein deutliches Plus beim Wohlbefinden. {Was es zeigte und was nicht|/essays/finland-basic-income-experiment/}, beschreiben wir in einem eigenen Essay."
+          ],
+          [
+            "p",
             "OpenResearch sagt, es habe die Teilnehmenden nach dem Ende der Zahlungen bis 2025 weiter befragt.[1] Veröffentlichte Ergebnisse aus dieser Zeit haben wir noch nicht gefunden. Es hat die Umfragedaten außerdem Forschenden im Rahmen einer Datennutzungsvereinbarung zugänglich gemacht, und der Code der Beschäftigungsstudie ist offen; beides steht auf {unserer Liste offener Daten|/open-source/#data-openresearch-ucs}."
           ],
           [
@@ -12474,6 +14162,10 @@ module.exports = {
           [
             "o",
             "إذن كانت هذه تجربة دخل مضمون، لا دخلًا أساسيًا، وتترتب على ذلك ثلاثة حدود. أولًا، كانت مؤقتة، وكان الجميع يعرف متى تنتهي؛ وقد يتصرف الناس بشكل مختلف، في أي من الاتجاهين، لو كانت الدفعة مدى الحياة. ثانيًا، لم يحصل عليها إلا قلة في كل مكان، فلا يمكنها أن تُظهر ما ستفعله دفعة للجميع بالإيجارات أو الأسعار أو الأجور، ولا ما ستغيّره الضرائب اللازمة لتمويلها. وقد قال منشور ألتمان نفسه إن الأسئلة عن تكلفة المعيشة الإجمالية «خارج نطاقنا، لكنها مهمة بوضوح».[4] ثالثًا، جرت خلال الجائحة وما بعدها، وإن كانت الدراسة تشير إلى أن تقديراتها تعكس في الغالب عامي 2022 و2023.[2] ما تستطيع التجربة العشوائية أن تُظهره جيدًا هو كيف يستجيب الأفراد لدخل إضافي، وهذا بالضبط الرقم الذي يحتاجه أي تصميم لبرنامج أكبر."
+          ],
+          [
+            "p",
+            "كانت لتجربة فنلندا في 2017–2018، التي دفعت ⁦€560⁩ شهريًا لمدة عامين لـ2,000 عاطل عن العمل، حدود مشابهة ونمط مشابه: تغيّر طفيف في العمل، وتحسّن واضح في الرفاه. {ما الذي أظهرته وما الذي لم تُظهره|/essays/finland-basic-income-experiment/} نتناوله في مقال مستقل."
           ],
           [
             "p",

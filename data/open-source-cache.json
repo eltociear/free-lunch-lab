@@ -17,7 +17,7 @@
     },
     "git.duniter.org:clients/gecko": {
       "stars": 8,
-      "lastCommit": "2026-10-31",
+      "lastCommit": "2026-11-06",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Dart"

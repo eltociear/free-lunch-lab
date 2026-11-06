@@ -51,6 +51,10 @@
    {
     "file": "noto-sans-arabic-400-ar-7caded76a0.woff2",
     "chars": "±ō"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-78c1c3dc07.woff2",
+    "chars": "§äö"
    }
   ],
   "ar:body:700": [
@@ -89,6 +93,10 @@
    {
     "file": "noto-sans-arabic-700-ar-fcc2a6d06c.woff2",
     "chars": "±ō"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-861d5ffb22.woff2",
+    "chars": "§äö"
    }
   ],
   "ar:display": [
@@ -175,6 +183,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-f90926f7ad.woff2",
     "chars": "±ō"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-d146207329.woff2",
+    "chars": "§"
    }
   ],
   "de:body:700": [
@@ -229,6 +241,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-1f2dcd9f64.woff2",
     "chars": "±ō"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-69e24fbfdc.woff2",
+    "chars": "§"
    }
   ],
   "de:display": [
@@ -323,6 +339,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-f90926f7ad.woff2",
     "chars": "±ō"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-327cd2c767.woff2",
+    "chars": "§äö"
    }
   ],
   "en:body:700": [
@@ -377,6 +397,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-1f2dcd9f64.woff2",
     "chars": "±ō"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-b0a4cffda0.woff2",
+    "chars": "§äö"
    }
   ],
   "en:display": [
@@ -463,6 +487,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-f90926f7ad.woff2",
     "chars": "±ō"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-327cd2c767.woff2",
+    "chars": "§äö"
    }
   ],
   "es:body:700": [
@@ -521,6 +549,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-1f2dcd9f64.woff2",
     "chars": "±ō"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-b0a4cffda0.woff2",
+    "chars": "§äö"
    }
   ],
   "es:display": [
@@ -601,6 +633,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-1fc2500a9d.woff2",
     "chars": "±ōū"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-f4e48f3427.woff2",
+    "chars": "§äö"
    }
   ],
   "hi:body:700": [
@@ -639,6 +675,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-5051ebabe3.woff2",
     "chars": "±ōū"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-fdb6dc7af3.woff2",
+    "chars": "§äö"
    }
   ],
   "hi:dot": [
@@ -831,6 +871,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-ac3baad082.woff2",
     "chars": "¥±ōū妻婦把泰炎童維老肝臣須飢騒％"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-758ab84162.woff2",
+    "chars": "§äö亮功命孤悲抱授斉緑陥魔"
    }
   ],
   "ja:body:700": [
@@ -1013,6 +1057,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-cb28c8d102.woff2",
     "chars": "¥±ōū妻婦把泰炎童維老肝臣須飢騒％"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-3eba52006a.woff2",
+    "chars": "§äö亮功命孤悲抱授斉緑陥魔"
    }
   ],
   "ja:display": [
@@ -1103,6 +1151,10 @@
    {
     "file": "dela-gothic-one-400-ja-9654c042a2.woff2",
     "chars": "平損炎竹蔵説"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-5770d2b311.woff2",
+    "chars": "切後打"
    }
   ],
   "ja:dot": [
@@ -1323,6 +1375,10 @@
    {
     "file": "noto-sans-sc-400-zh-4dbc3313c2.woff2",
     "chars": "±ōū丈哗夫妻宅挪掌握死泉纯纲臣舆遣雇饿"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-472fc749f7.woff2",
+    "chars": "§äö侧典坎孤彻忘悲抑授热绿蒂赫趋郁魔"
    }
   ],
   "zh:body:700": [
@@ -1501,6 +1557,10 @@
    {
     "file": "noto-sans-sc-700-zh-4bfa2a7995.woff2",
     "chars": "±ōū丈哗夫妻宅挪掌握死泉纯纲臣舆遣雇饿"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-83bbdf185f.woff2",
+    "chars": "§äö侧典坎孤彻忘悲抑授热绿蒂赫趋郁魔"
    }
   ],
   "zh:display": [
@@ -1587,6 +1647,10 @@
    {
     "file": "noto-sans-sc-900-zh-a096d68972.woff2",
     "chars": "亏哗庭我然竹舆藏释"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-93262beec3.woff2",
+    "chars": "停又叫底弄清第终芬诉"
    }
   ],
   "zh:dot": [

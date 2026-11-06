@@ -814,6 +814,145 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### Did Finland’s basic income experiment fail? What it showed, and what it could not
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+- Published: 2026-11-06
+
+Bring up basic income and, sooner or later, someone will say it: “Finland already tried that, and it failed.”
+
+This site supports basic income. That is exactly why we wanted to know whether “it failed” holds up, so we went back to the primary sources.
+
+Opinion: The short answer: it was neither a failure nor a success. It was an experiment with a clear list of things it found, and an equally clear list of things it could not find out.
+
+#### Where “failed” came from
+
+It started in April 2018, when English-language media ran the story almost at once. Toru Yamamori of Doshisha University collected the headlines at the time: Business Insider (19 April) said Finland “is killing” its experiment, BBC News (23 April) that the trial “falls flat”, Sky News (24 April) that Finland would “scrap” it, the Orlando Sentinel (24 April) called it a “failed universal basic income experiment”, and USA Today (25 April) said it “didn’t work out”.[3]
+
+Japanese media ran similar headlines in the same weeks, with words like “interrupted” and “terminated”.[1][2]
+
+The idea stuck. In December 2019 Business Insider was still calling the trial “a major flop”, though the same headline went on: “But experts say the test was flawed.”[6]
+
+Opinion: In April 2018, not a single result from the experiment had yet been published.
+
+#### What the experiment actually was
+
+The experiment was run by Kela, the Social Insurance Institution of Finland, for two years, from January 2017 to December 2018.[7][13]
+
+2,000 people aged 25 to 58 were chosen at random from those receiving basic unemployment benefits from Kela in November 2016.[4][7]
+
+Each received €560 a month, tax-free, for two years.
+
+The €560 was not reduced if they found work or had other income, and they did not have to look for a job.
+
+Taking part was compulsory. The unemployed people who were not chosen formed the control group.
+
+According to Kela, it was the world’s first basic income experiment that was nationwide, set up by law and based on a randomised field experiment. The aim was to see whether removing the trap in which taking work cuts your benefits would help unemployed people into jobs.[7]
+
+#### It was never “scrapped”
+
+What was decided in April 2018 was not to stop the experiment. Kela had asked the government for extra money to widen it to people in work and to keep it going after 2018. The government said no.[2][4]
+
+In other words, the experiment would end on schedule, after the two years originally planned. Kela quickly put out a release: “Contrary to reports, the Basic Income Experiment in Finland will continue until the end of 2018.”[5]
+
+Yamamori wrote that neither decision had anything to do with the experiment failing to produce the hoped-for results, or with it having failed.[3] In any case, the analysis was set to begin only after the experiment ended: no findings were reported while it was running, so as not to influence how people in either group behaved.[7]
+
+It is true, though, that the government of the day was not keen on basic income. From January 2018 it added an “activation model” to unemployment benefits: benefits were cut unless the person took part in training or worked at least 18 hours in three months.[3][4]
+
+Kela’s Miska Simanainen told the Swedish newspaper Svenska Dagbladet, as quoted by the Guardian: “The government is making changes taking the system away from basic income.”[4]
+
+#### Year-one results (February 2019)
+
+The first results came out on 8 February 2019. In the first year, 2017, recipients were in work for an average of 49.64 days and the control group for 49.25 days: practically the same. No effect on employment was found.[8]
+
+The survey told a different story. 55% of recipients rated their health as good or very good, against 46% of the control group. 17% of recipients reported feeling very stressed, against about a quarter of the control group.[8] Recipients also trusted other people more, scoring 6.8 out of 10 against 6.3.[10]
+
+But only 31% of recipients and 20% of the control group answered the survey, so these figures need to be read with care.[9]
+
+#### Final results (May 2020)
+
+The final evaluation, covering both years, was published by the Ministry of Social Affairs and Health and Kela on 6 May 2020, under the title “small employment effects, better perceived economic security and mental wellbeing”.[11]
+
+On work: over the year from November 2017 to October 2018, roughly the second year of the trial, recipients were in work about 6 days more than the control group, at 78 days on average.[11][12]
+
+Six days in a year is not a big difference. Kari Hämäläinen of the VATT Institute for Economic Research summed it up: “All in all, the employment effects were small.”[13]
+
+On wellbeing, the difference was clear. Compared with the control group, recipients were more satisfied with their lives and reported less mental strain, depression, sadness and loneliness, and a more positive view of their income and economic wellbeing. They trusted other people and the institutions of society more, and were more confident about their own future.[7]
+
+#### What the experiment could not tell us
+
+This is the most important part. The experiment had clear limits.
+
+First, only unemployed people took part. People in work, students and pensioners were not included. It was not a test of a basic income paid to everyone.[4][7]
+
+Second, it was short and small: two years and 2,000 recipients. Olli Kangas, an expert involved in the trial, told the broadcaster Yle that “two years is too short a period to be able to draw extensive conclusions from such a big experiment.”[4]
+
+Third, it did not test the funding side. For a basic income paid to everyone, the biggest question is how to raise the money through taxes. The experiment did not change the tax system.
+
+Fourth, the activation model arrived in the second year. The new rules did not affect the two groups in the same way, so it is impossible to say how much of the second-year difference was due to basic income.[7][13]
+
+Kela itself writes that basic income increased activity and employment among people who were already active before the experiment, but did not solve the problems of those who were in a difficult situation.[7]
+
+Opinion: Put together, this is what the experiment showed: giving unemployed people money with no conditions for two years did not make them stop working. Nor did it make them work much more. But it did make them feel more secure and better in themselves.
+
+Opinion: The experiment does not answer the question “can basic income work as a national system?” And a question it did not answer cannot be called either a failure or a success.
+
+#### Compared with other experiments
+
+In Stockton (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-stockton), California (2019–2021), 125 residents received $500 a month for two years. In the first year, the share of recipients in full-time work rose from 28% to 40%, more than the rise of about 5 points in the control group.[14][15]
+
+In OpenResearch’s study (https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/) (2020–2023), 1,000 people aged 21 to 40 received $1,000 a month for three years. They worked about 1.3 hours a week less, but the share in work rose in both groups (from 58% to 72% among recipients and from 59% to 74% in the control group).
+
+GiveDirectly’s study in Kenya (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-kenya) (2017–) is a large experiment that includes a group paid for 12 years. Early results found that the total amount of work did not change, but people shifted from wage work towards self-employment.[16]
+
+Opinion: None of these experiments found that “give people money and they stop working”. None found a magic way to make people work much more, either. Finland’s results fit this pattern well.
+
+The key facts about the Finnish experiment are also on its card in our timeline (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-finland).
+
+#### Finland since
+
+In 2026 Finland is moving in the opposite direction from basic income. On 1 May 2026, Kela’s two unemployment benefits, the labour market subsidy and the basic unemployment allowance, were merged into a new “general support” (yleistuki). Kela notes that, unlike the basic allowance, the general support is means-tested: capital income and other income can reduce it.[17]
+
+The debate goes on. In March 2026 the Finnish Parliament’s information service costed four basic income models built on €260 a month, and the Greens published the memo.[18] In the city of Lahti, councillors proposed a local basic income trial. In June 2026 a city committee turned it down, saying the city has no power to run one, but its reply still described the 2017–2018 experiment as having had positive effects on wellbeing while its employment effects stayed small.[19]
+
+#### What to take from it
+
+The April 2018 “scrapped” and “failed” headlines were wrong. The experiment ran its full two years as planned; the government only declined to extend and widen it. And no results had been published yet.
+
+In the final results, the effect on work was small (about 6 days), while life satisfaction, mental wellbeing and trust improved.
+
+Only unemployed people took part, it lasted two years, and the funding side was never tested. In the second year, another policy change got in the way.
+
+Opinion: So you cannot say “basic income failed”, and you cannot say “basic income succeeded”. What you can say is: the money did not make people stop working, it did not make them work much more, and it made their lives feel more secure.
+
+Opinion: Next time someone tells you “Finland already tried it and it failed”, try asking: what exactly failed? The answer is more interesting than they think.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/
+
+Sources:
+
+1. GIGAZINE — Finland’s ‘basic income experiment’ to be interrupted in December 2018 (20 Apr 2018, in Japanese): https://gigazine.net/news/20180420-basic-income-experiment-ending
+2. Osamu Tanaka, Dai-ichi Life Research Institute — Finland’s basic income experiment terminated (7 May 2018; PDF, in Japanese): https://www.dlri.co.jp/pdf/macro/2018/tanaka180507finlandbasicincome.pdf
+3. Toru Yamamori, Business Insider Japan — Were the reports of Finland’s ‘failed basic income experiment’ false? (7 May 2018, in Japanese): https://www.businessinsider.jp/post-166698
+4. Jon Henley, The Guardian — “Finland to end basic income trial after two years” (23 Apr 2018): https://www.theguardian.com/world/2018/apr/23/finland-to-end-basic-income-trial-after-two-years
+5. Helsinki Metropolitan — “False reports in international media on Finland aborting basic income trial” (25 Apr 2018, citing Kela’s release “Contrary to reports, the Basic Income Experiment in Finland will continue until the end of 2018”): https://metropolitan.fi/entry/false-reports-in-international-media-on-finland-aborting-basic-income-trial.html
+6. Aria Bendix, Business Insider Japan — translation of Business Insider’s “One of the world’s largest basic-income trials, a 2-year program in Finland, was a major flop. But experts say the test was flawed.” (13 Dec 2019, in Japanese): https://www.businessinsider.jp/post-203873
+7. Kela — Finland’s Basic Income Experiment 2017–2018: results (2020; PDF, Finland Toolbox): https://toolbox.finland.fi/wp-content/uploads/sites/2/2018/04/basic_income_experiment_2017-2018_results_2020.pdf
+8. The Big Issue — “Finland’s basic income experiment has returned its long-awaited first results” (8 Feb 2019): https://bigissue.com/news/finlands-basic-income-experiment-has-returned-its-long-awaited-first-results
+9. Ministry of Social Affairs and Health — “Preliminary results of the basic income experiment: self-perceived wellbeing improved during the first year, no effects on employment” (8 Feb 2019): https://stm.fi/en/-/perustulokokeilun-alustavat-tulokset-hyvinvointi-koettiin-paremmaksi-ensimmaisena-vuonna-ei-tyollisyysvaikutuksia
+10. David Meyer, Fortune — “Finland’s Universal Basic Income Experiment Just Gave Lawmakers a Really Good Reason to Back the Idea” (4 Apr 2019): https://fortune.com/2019/04/04/finland-basic-income-societal-trust/
+11. Ministry of Social Affairs and Health and Kela — “Results of the basic income experiment: small employment effects, better perceived economic security and mental wellbeing” (6 May 2020; final report: Kangas, Jauhiainen, Simanainen and Ylikännö (eds), Suomen perustulokokeilun arviointi, Reports and Memorandums 2020:15): https://stm.fi/en/-/perustulokokeilun-tulokset-tyollisyysvaikutukset-vahaisia-toimeentulo-ja-psyykkinen-terveys-koettiin-paremmaksi
+12. VATT Institute for Economic Research — “Employment effects of basic income remained small” (May 2020): https://vatt.fi/en/-/perustulon-tyollisyysvaikutukset-jaivat-vahaisiksi
+13. Yle News — “Final verdict on Finland’s basic income trial: More happiness but little employment effect” (6 May 2020): https://yle.fi/a/3-11337944
+14. PBS, Chasing the Dream — “Researchers report Stockton, California economic empowerment demonstration program success” (9 Mar 2021): https://www.pbs.org/wnet/chasing-the-dream/2021/03/researchers-report-stockton-california-economic-empowerment-demonstration-program-success/
+15. Amanda Brandeis, Scripps News (ABC15) — “Stockton’s guaranteed income program results in full-time employment, improved mental health” (Mar 2021): https://www.abc15.com/news/national/stocktons-guaranteed-income-program-results-in-full-time-employment-improved-mental-health
+16. Abhijit Banerjee, Michael Faye, Alan Krueger, Paul Niehaus and Tavneet Suri — “Universal Basic Income: Short-Term Results from a Long-Term Experiment in Kenya” (2023): https://www.findevgateway.org/paper/2023/09/universal-basic-income-short-term-results-from-long-term-experiment-in-kenya
+17. Kela — “Kela alkaa maksaa yleistukea työttömille” (Kela starts paying general support to the unemployed; 5 Mar 2026, updated 11 May 2026, in Finnish): https://www.kela.fi/ajankohtaista/kela-alkaa-maksaa-yleistukea-tyottomille
+18. Parliament of Finland Information Service — “Perustulomalli” (basic income model) memo assessing four €260 models (13 Mar 2026; PDF published by the Greens, in Finnish): https://www.vihreat.fi/wp-content/uploads/2026/06/Ensi-vaiheen-perustulo.pdf
+19. City of Lahti, Vitality and Wellbeing Committee — council initiative “Perustulokokeilu Lahden työllisyysalueelle” (basic income trial for the Lahti employment area), 10 Jun 2026 § 79 (PDF, in Finnish): https://lahti-prod.oncloudos.com/kokous/20261302-4.PDF
+
 ### ¥70,000 a month for everyone: who gains and who loses? Heizo Takenaka’s basic income plan, worked out for five households
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
@@ -1022,6 +1161,8 @@ Periodic? Yes, every month. Cash? Yes. Individual? Yes, it was paid to the perso
 
 Opinion: So this was a guaranteed income trial, not a basic income, and three limits follow. First, it was temporary, and everyone knew when it would end; people might act differently, in either direction, if the payment were for life. Second, only a few people in each place received it, so it cannot show what a payment to everyone would do to rents, prices or wages, or what the taxes to fund it would change. Altman’s own post said that questions about the overall cost of living were “beyond our scope, but obviously important”.[4] Third, it ran through the pandemic and its aftermath, although the paper notes that its estimates mostly reflect 2022 and 2023.[2] What a randomised trial can show well is how individuals respond to extra income, and that is exactly the number any design for a larger scheme needs.
 
+Finland’s 2017–2018 experiment, which paid €560 a month to 2,000 unemployed people for two years, had similar limits and a similar pattern: little change in work, a clear gain in wellbeing. We look at what it did and did not show (https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/) in a separate essay.
+
 OpenResearch says it kept surveying participants after the payments ended, through 2025.[1] We have not yet found published results from that period. It has also made the survey data available to researchers under a data use agreement, and the code for the employment paper is open; both are on our open data list (https://neteru-nyukin.eltociear.workers.dev/open-source/#data-openresearch-ucs).
 
 #### Why it matters for AI
@@ -1041,6 +1182,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/moltbook-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
 
 Sources:
 
@@ -2112,7 +2255,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-10-31
+- Last commit: 2026-11-06
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s
