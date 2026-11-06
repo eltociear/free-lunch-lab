@@ -47,6 +47,10 @@
    {
     "file": "noto-sans-arabic-400-ar-6861a3227a.woff2",
     "chars": "ú"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-7caded76a0.woff2",
+    "chars": "±ō"
    }
   ],
   "ar:body:700": [
@@ -81,6 +85,10 @@
    {
     "file": "noto-sans-arabic-700-ar-5c71ddab55.woff2",
     "chars": "ú"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-fcc2a6d06c.woff2",
+    "chars": "±ō"
    }
   ],
   "ar:display": [
@@ -163,6 +171,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-d076e62d0b.woff2",
     "chars": "á"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-f90926f7ad.woff2",
+    "chars": "±ō"
    }
   ],
   "de:body:700": [
@@ -213,6 +225,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-bd340756a4.woff2",
     "chars": "á"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-1f2dcd9f64.woff2",
+    "chars": "±ō"
    }
   ],
   "de:display": [
@@ -303,6 +319,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-d076e62d0b.woff2",
     "chars": "á"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-f90926f7ad.woff2",
+    "chars": "±ō"
    }
   ],
   "en:body:700": [
@@ -353,6 +373,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-bd340756a4.woff2",
     "chars": "á"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-1f2dcd9f64.woff2",
+    "chars": "±ō"
    }
   ],
   "en:display": [
@@ -435,6 +459,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-1508bfe2a6.woff2",
     "chars": "£"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-f90926f7ad.woff2",
+    "chars": "±ō"
    }
   ],
   "es:body:700": [
@@ -489,6 +517,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-0cefd3743c.woff2",
     "chars": "£"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-1f2dcd9f64.woff2",
+    "chars": "±ō"
    }
   ],
   "es:display": [
@@ -565,6 +597,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-e094f6c395.woff2",
     "chars": "ú"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-1fc2500a9d.woff2",
+    "chars": "±ōū"
    }
   ],
   "hi:body:700": [
@@ -599,6 +635,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-6e642e5f0c.woff2",
     "chars": "ú"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-5051ebabe3.woff2",
+    "chars": "±ōū"
    }
   ],
   "hi:dot": [
@@ -783,6 +823,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-565441575a.woff2",
     "chars": "写適"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-902feec87a.woff2",
+    "chars": "竹蔵"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-ac3baad082.woff2",
+    "chars": "¥±ōū妻婦把泰炎童維老肝臣須飢騒％"
    }
   ],
   "ja:body:700": [
@@ -957,6 +1005,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-28ec7947eb.woff2",
     "chars": "写適"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-c69dbd77bc.woff2",
+    "chars": "竹蔵"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-cb28c8d102.woff2",
+    "chars": "¥±ōū妻婦把泰炎童維老肝臣須飢騒％"
    }
   ],
   "ja:display": [
@@ -1043,6 +1099,10 @@
    {
     "file": "dela-gothic-one-400-ja-87568ed345.woff2",
     "chars": "　げァゾ久予保党募台善国在委家察審州市度得恒戦所挙李村林査森氏民永湾生米統芸術視試護贈農週郡野韓領食"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-9654c042a2.woff2",
+    "chars": "平損炎竹蔵説"
    }
   ],
   "ja:dot": [
@@ -1255,6 +1315,14 @@
    {
     "file": "noto-sans-sc-400-zh-4e7735db02.woff2",
     "chars": "桌脚芯露"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-2861daadba.woff2",
+    "chars": "竹藏"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-4dbc3313c2.woff2",
+    "chars": "±ōū丈哗夫妻宅挪掌握死泉纯纲臣舆遣雇饿"
    }
   ],
   "zh:body:700": [
@@ -1425,6 +1493,14 @@
    {
     "file": "noto-sans-sc-700-zh-e1cbc4bd05.woff2",
     "chars": "桌脚芯露"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-4b31db62a1.woff2",
+    "chars": "竹藏"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-4bfa2a7995.woff2",
+    "chars": "±ōū丈哗夫妻宅挪掌握死泉纯纲臣舆遣雇饿"
    }
   ],
   "zh:display": [
@@ -1507,6 +1583,10 @@
    {
     "file": "noto-sans-sc-900-zh-ed14784b63.woff2",
     "chars": "久亚保克党兰农划台启周善增委孙审家察将征总报拉斯普术李村林森永湾爱版统艺视设进郡野闻集韩预食饮马鲁"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-a096d68972.woff2",
+    "chars": "亏哗庭我然竹舆藏释"
    }
   ],
   "zh:dot": [

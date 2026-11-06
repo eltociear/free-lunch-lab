@@ -814,6 +814,147 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### ¥70,000 a month for everyone: who gains and who loses? Heizo Takenaka’s basic income plan, worked out for five households
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
+- Published: 2026-11-06
+
+“¥70,000 a month for everyone.” In 2020 the economist Heizo Takenaka put this idea on Japanese television and set off a storm. Takenaka served as minister for economic and fiscal policy and as minister for internal affairs in Junichiro Koizumi’s government (2001–2006), and was then chairman of the staffing company Pasona Group.[1] “Nobody can live on ¥70,000.” “So you want to scrap pensions?” Posts citing his plan still turn up on Japanese social media today.
+
+This site supports basic income, but not any particular plan. So before deciding for or against, we start with a more down-to-earth question: if this plan came true, would your household end up with more money or less?
+
+Opinion: The short answer is: it depends on the design. The same ¥70,000 can be a gain or a loss, depending on what it replaces and who has to pay it back later. Below we put numbers on that range.
+
+#### What Takenaka proposed
+
+It started on the evening of 23 September 2020, on the BS-TBS news programme Hōdō 1930. The programme presented Takenaka’s view on a panel that read “¥70,000 a month to every citizen.”[1]
+
+According to reports, incomes would be tracked by linking people’s My Number identification numbers to their bank accounts, and anyone above a certain income would pay the money back after receiving it. Asked on the programme whether pensions and public assistance would then become unnecessary, Takenaka reportedly answered, “Basically, yes.”[2]
+
+Some background for readers outside Japan. Japan’s public pension (nenkin) has two layers: a flat-rate basic pension that everyone can earn, called the National Pension, and, for people who worked as employees, an earnings-related top-up called the Employees’ Pension. Public assistance (seikatsu hogo) is the means-tested safety net of last resort: it pays living costs, rent and medical care for people who have no other way to get by.
+
+His book, published in August 2020, put it bluntly: “The plan to pay each person ¥70,000 a month is also a trade-off for abolishing social security such as pensions and public assistance. If we pay ¥70,000 to every citizen, we can get rid of pensions for the elderly and the cost of public assistance.”[3][4]
+
+#### The backlash, and his explanation
+
+Criticism came fast. “Nobody can live on ¥70,000 a month each.” “Isn’t this just a cut to social security?” J-CAST News reported that comments like these flooded the internet.[1] Genki Sudo, then a member of the House of Councillors, posted, “Are you telling pensioners to starve to death?” and wrote that a basic income would need to be at least ¥200,000 a month.[2]
+
+On 7 October 2020, Takenaka sat down with J-CAST News. In summary, he said:[1]
+
+He had never said anyone could live on ¥70,000. ¥70,000 was an average, and at that level the cost to public finances would not be too heavy.
+
+A family of four might not need ¥280,000, so the third and fourth members could get less, and in exchange a person living alone could get a little more.
+
+Pensions would switch to basic income while protecting what people had already paid in. Public assistance could also remain, as a top-up.
+
+It would work like progressive taxation: high earners pay a high rate, and people on low incomes pay a negative rate, meaning they receive money.
+
+Paying everyone first and having high earners return it later through their tax returns was not a bad method, because no one can tell in advance who will need help.
+
+Opinion: “A trade-off for abolishing” pensions and public assistance, in the book, and “protecting what people paid in” with public assistance “as a top-up”, in the interview, leave very different impressions. Which one is the real plan? No detailed design has been published. And it is exactly this unclear part that matters most once you do the household sums.
+
+#### Where ¥70,000 came from
+
+According to J-CAST News, Takenaka’s plan builds on the views of the economist Yutaka Harada. In his 2015 book Basic Income: Can the State Solve Poverty? and elsewhere, Harada proposed ¥70,000 a month for everyone aged 20 and over and ¥30,000 a month for those under 20. Takenaka seems to have broadened this to “around ¥70,000” with a progressive structure, the article says.[1][5]
+
+¥70,000 is also close to the full basic pension. In fiscal 2026 the full National Pension is ¥70,608 a month.[6]
+
+Among political parties, the Japan Innovation Party (Nippon Ishin no Kai) said at its April 2021 convention that it would put a basic income, framed as a guaranteed minimum income, in its platform. Then too, a big point of debate was that paying everyone would need around ¥100 trillion a year.[7]
+
+#### Our assumptions
+
+Since Takenaka has not set out a detailed design, we fix our assumptions first.
+
+The amount is ¥70,000 a month per person, children included, as on the programme’s panel. For the four-person households we also show the case where children get Harada’s ¥30,000.
+
+Pensions are calculated three ways. (A) Pensions stay as they are and basic income is added on top. (B) Only the basic pension is replaced by basic income, and the earnings-related Employees’ Pension top-up is protected. (C) Pensions are replaced by basic income entirely.
+
+Public assistance is calculated two ways. (A) Public assistance covers whatever basic income does not. (B) Public assistance is abolished.
+
+The child allowance (jidō teate) is replaced by basic income, as in most basic income plans.
+
+For the clawback from high earners, no income threshold or amount has been given, so we show both ends: nothing paid back, and everything paid back.
+
+Tax rises or contribution changes to fund the plan are left out, because none have been specified. Any tax rise would lower every household’s result by that much.
+
+All amounts are monthly, under the rules for fiscal 2026.
+
+The current figures come from official sources. Pensions: the full National Pension is ¥70,608 a month, and the government’s model couple, a husband who worked 40 years on average pay and a wife who stayed at home, receives ¥237,279 a month, including two basic pensions.[6] Public assistance: a single person aged 20 to 40 in Tokyo’s 23 wards (the highest cost-of-living grade, 1-1) gets ¥77,220 a month for living costs (¥46,930 + ¥27,790 + a ¥2,500 special addition), and housing assistance for rent of up to ¥53,700 for a single person in Tokyo. That makes up to ¥130,920 a month, and medical care is covered separately, with nothing to pay.[8][9] Child allowance: ¥10,000 a month for each first or second child from age 3 up to high-school age, with no income limit since October 2024.[10]
+
+#### Five households, worked out
+
+1. A single office worker in their twenties, living alone in Tokyo, earning ¥3 million a year. They receive no benefits now, so the full ¥70,000 is added. In Takenaka’s explanation, it is “people with high incomes” who pay it back, and ¥3 million a year is unlikely to count. So they receive ¥70,000 a month, ¥840,000 a year. Any tax rise to fund the scheme would come out of that. Their answer: up to ¥70,000 a month, less whatever tax rises take.
+
+2. A couple with two primary-school children, earning ¥5 million a year. They now get ¥20,000 a month in child allowance for the two children. With a flat basic income, the family gets ¥280,000 a month: even after losing the child allowance, that is ¥260,000 a month more. If children get less, as Takenaka suggested, and we use Harada’s ¥30,000, basic income comes to ¥200,000 and the net gain is ¥180,000 a month. Families with children are the most likely winners under this plan. Again, these figures are before any tax rise.
+
+3. A retired couple: a husband who worked for a company and a wife who stayed at home. Their pensions now total ¥237,279 a month: ¥141,216 in two basic pensions and ¥96,063 in the husband’s Employees’ Pension top-up.[6] Basic income for two is ¥140,000. The result depends heavily on what happens to pensions. (A) Added on top: ¥377,279 a month, ¥140,000 more. (B) Only the basic pension replaced: ¥140,000 + ¥96,063 = ¥236,063, just ¥1,216 a month less, almost unchanged. (C) Pensions replaced entirely: ¥140,000 only, ¥97,279 a month less.
+
+Case (C) is what Sudo was worried about. What Takenaka described in the interview, protecting what people paid in, is close to (B). A couple who only have the National Pension, such as former self-employed people (¥141,216 for two at the full rate), end up with about the same in every case. People who could not pay contributions for some years and do not get the full pension would gain.
+
+4. A single person in their thirties on public assistance in Tokyo’s 23 wards. They now receive up to ¥130,920 a month for living costs and rent.[8] (A) If public assistance tops up basic income: ¥70,000 plus ¥60,920 in assistance, the same total as now. (B) If public assistance is abolished: ¥70,000 only, ¥60,920 a month less. Help with rent would disappear, and they might have to start paying for medical care.
+
+The book’s “get rid of the cost of public assistance” is (B); the interview’s “public assistance can remain as a top-up” is (A). For this household, which one it is decides everything.
+
+5. A couple with two children, earning ¥10 million a year. They now get ¥20,000 a month in child allowance. Basic income for four is ¥280,000 a month, and this is where “high earners pay it back later” comes in. If they keep it: ¥260,000 a month more, even after losing the child allowance. If they pay it all back: none of the basic income stays with them, and they are ¥20,000 a month worse off by the lost child allowance. A ¥10 million household is likely to be on the paying-back side, and any tax rise to fund the plan would fall heavily on this group. Realistically, expect somewhere between roughly zero and a loss.
+
+In summary (monthly, before any tax rise):
+
+| Household | Benefits now | Basic income | Net change |
+| --- | --- | --- | --- |
+| Single, 20s, ¥3m a year | None | ¥70,000 | +¥70,000 (less any tax rise) |
+| Family of four, ¥5m a year | Child allowance ¥20,000 | ¥200,000–¥280,000 | +¥180,000 to +¥260,000 |
+| Retired couple (former employee) | Pensions ¥237,279 | ¥140,000 | +¥140,000 to −¥97,279 (depends on pensions) |
+| Single, on public assistance (Tokyo 23 wards) | Up to ¥130,920 | ¥70,000 | ±0 to −¥60,920 (depends on whether assistance stays) |
+| Family of four, ¥10m a year | Child allowance ¥20,000 | ¥280,000 | +¥260,000 to −¥20,000 (depends on clawback) |
+
+The likely winners are households with children and few benefits today. Those who could lose are people who rely on pensions or public assistance, and high-earning households that would pay the money back or bear the tax rises.
+
+Opinion: The complaint that “nobody can live on ¥70,000” mostly concerns the cases where pensions or public assistance disappear. Takenaka’s reply that he “never said you could live on it” reads as assuming that some other benefits remain. Line up the assumptions, and both claims can be checked with numbers.
+
+#### What would it cost the country?
+
+After the household purse, the national one. Japan’s population is 122,812,000 (Statistics Bureau, final estimate as of 1 May 2026).[11] Paying everyone ¥70,000 a month for a year comes to ¥70,000 × 12 × 122,812,000, about ¥103.2 trillion.
+
+Japan’s general account budget for fiscal 2026 is ¥122.3092 trillion, of which social security spending is ¥39.0559 trillion.[12] The basic income would be about 84% of the entire general account, and about 2.6 times social security spending.
+
+Takenaka says the money for pensions and public assistance would be redirected.[3] Social security benefits as a whole, pensions and medical care included and counting contributions, come to ¥144.1 trillion. Of that, pensions are ¥63.7 trillion.[13] Even if every pension went into basic income, it would still be about ¥40 trillion short of ¥103 trillion.
+
+The gap can be closed only by shrinking the real cost through the clawback from high earners, or by raising taxes. Where the clawback line is drawn changes both the funding needed and the results in the table above. You can try other amounts and groups in our basic income calculator (https://neteru-nyukin.eltociear.workers.dev/calc/?c=jp&w=all&m=70000): ¥70,000 a month for everyone is about 15.5% of GDP.
+
+#### What to take from it
+
+Takenaka’s plan, as shown on television in September 2020, was ¥70,000 a month for everyone, with high earners paying it back later. His book framed it as a trade-off for abolishing pensions and public assistance.
+
+He later said ¥70,000 was an average, that he had never said anyone could live on it, that pensions already paid for would be protected and that public assistance could stay. On the point that matters most, his book and his interview disagree.
+
+What it means for households depends on the design. Families with children are likely to gain a lot. For people who rely on pensions or public assistance, the result ranges from “about the same” to “tens of thousands of yen, up to nearly ¥100,000, less each month”, depending on whether those benefits survive.
+
+Paying everyone would cost about ¥103 trillion a year. Even all of the pension money would not cover it, so the clawback and tax design cannot be skipped.
+
+Opinion: When judging a basic income plan, it is worth looking past the amount to two questions: what is it traded for, and who pays it back? The same “¥70,000 a month” can be an entirely different system depending on the answers.
+
+In 2020 Japan did pay ¥100,000 to everyone, once, as the Special Cash Payment. We looked at how that money was used, with data, in our essay on the ¥100,000 payment (https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/).
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/
+
+Sources:
+
+1. J-CAST News — “Let’s ask Heizo Takenaka about basic income again: ‘I never said you could live on ¥70,000 a month’” (interview, 10 Oct 2020, in Japanese): https://www.j-cast.com/2020/10/10396316.html
+2. Daily Sports — Genki Sudo criticises Heizo Takenaka’s ‘¥70,000 a month’: ‘Are you telling pensioners to starve?’ (7 Oct 2020, in Japanese): https://www.daily.co.jp/gossip/2020/10/07/0013762487.shtml
+3. Money Post Web (Shūkan Post) — “If basic income is introduced, social security such as pensions, medical care and public assistance may be cut off” (10 Oct 2020, in Japanese): https://www.moneypost.jp/712411
+4. National Diet Library Search — Heizo Takenaka, Post-corona ‘Plan to Remodel Japan’ (PHP Institute, Aug 2020; book record, in Japanese): https://ndlsearch.ndl.go.jp/books/R100000002-I030519676
+5. Kinokuniya — Yutaka Harada, Basic Income: Can the State Solve Poverty? (Chūkō Shinsho, Feb 2015; book record, in Japanese): https://www.kinokuniya.co.jp/f/dsg-01-9784121023070
+6. Japan Pension Service — Pension amounts from April 2026 (in Japanese): https://www.nenkin.go.jp/oshirase/taisetu/kojin/2026/202604/0401.html
+7. Kenichi Ogura, Gendai Business — on the Japan Innovation Party’s basic income policy and its funding (17 May 2022, in Japanese): https://gendai.media/articles/-/95312
+8. Ministry of Health, Labour and Welfare — How public assistance living-cost standards are calculated (Oct 2026; PDF, in Japanese): https://www.mhlw.go.jp/content/001152601.pdf
+9. Ministry of Health, Labour and Welfare — The public assistance system (in Japanese): https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/seikatuhogo/index.html
+10. Kagawa Prefecture — The October 2024 child allowance reform (in Japanese): https://www.pref.kagawa.lg.jp/kosodate/jidoteate/seidokaisei.html
+11. Statistics Bureau of Japan — Population Estimates, October 2026 report (PDF, in Japanese): https://www.stat.go.jp/data/jinsui/pdf/202610.pdf
+12. Ministry of Finance — Explanation of the FY2026 budget and FILP plan (in Japanese): https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/20260220.html
+13. Ministry of Health, Labour and Welfare — Social security benefits and burdens, FY2026 budget basis (PDF, in Japanese): https://www.mhlw.go.jp/content/12600000/001706348.pdf
+
 ### What happened when Sam Altman’s study gave people $1,000 a month for three years
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
@@ -999,6 +1140,8 @@ Compare the sizes, too. With the basic income calculator (https://neteru-nyukin.
 
 Opinion: ¥30,000 a month is not enough to live on. Even so, ¥44 trillion a year is more than three times what was paid out once in 2020. The ¥100,000 showed that the state can build a way to pay everyone. Doing it every month, though, needs an entirely different debate about where the money comes from.
 
+What would the ¥70,000 a month for everyone that Heizo Takenaka floated in 2020 mean for individual households? We worked it out for five households (https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/): the answer swings widely with what happens to pensions and public assistance.
+
 #### What the ¥100,000 left behind
 
 Opinion: The 2020 payment was a big experience: the same amount of cash, with no conditions, to almost everyone living in Japan. And thanks to the uneven timing, we now know from data how much was spent and which households spent it. Households with little money at hand spend quickly; people in anxious times hold on to money; when bank accounts and resident records are not linked, payments take time to arrive. All of these are lessons for the next time something is paid out.
@@ -1010,6 +1153,8 @@ Opinion: We would rather not remember the ¥100,000 as “wasted,” or as “a 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/nesara-gesara-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
 
 Sources:
 
@@ -1808,7 +1953,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-05
+- Last commit: 2026-11-06
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community

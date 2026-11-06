@@ -762,10 +762,16 @@ const DETAIL_CSS = `
 /* エッセイは1行およそ38字（日本語）まで */
 .essay{max-width:38rem;margin-inline:auto}
 .byline{font-size:.84rem;color:var(--muted)}
-.essay-body{display:grid;gap:16px;margin-top:12px}
+.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:12px}
 .essay-body p{font-size:1rem;line-height:1.95}
 .essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+.essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
+.essay-table tbody th{font-weight:700}
+.essay-table tbody tr:last-child>*{border-bottom:0}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
 .fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
@@ -1143,6 +1149,8 @@ function essayPage(e, lang) {
   let tagged = false;
   const blocks = (e.blocks[lang] || e.blocks.en).map(([k, t]) => {
     if (k === 'h') { tagged = false; return `<h2>${esc(t)}</h2>`; }
+    // t は表: 行は改行、セルは " | " で区切り、1行目が見出し。狭い画面では横にスクロールする
+    if (k === 't') { const [head, ...rows] = t.split('\n').map(r => r.split(' | ')); return `<div class="essay-table"><table><thead><tr>${head.map(c => `<th scope="col">${fn(c)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => i ? `<td>${fn(c)}</td>` : `<th scope="row">${fn(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`; }
     if (k !== 'o') return `<p>${fn(t)}</p>`;
     const tag = tagged ? '' : `<span class="op-tag">${esc(L.essayOpinion)}</span>`;
     tagged = true;
@@ -2106,7 +2114,7 @@ const essayFull = e => [
   `- Page: ${essayAbs(DEFAULT_LANG, e)}`,
   `- Published: ${e.date}`,
   '',
-  ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : md(t)).flatMap(x => [x, '']),
+  ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : k === 't' ? t.split('\n').map((r, i) => `| ${r.split(' | ').map(md).join(' | ')} |${i ? '' : `\n|${r.split(' | ').map(() => ' --- |').join('')}`}`).join('\n') : md(t)).flatMap(x => [x, '']),
   ...essayList(e.related).flatMap(x => [`Related essay: ${essayAbs(DEFAULT_LANG, x)}`, '']),
   'Sources:',
   '',

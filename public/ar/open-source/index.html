@@ -45,6 +45,7 @@
 @font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/noto-sans-arabic-400-ar-3094db8735.woff2) format("woff2");unicode-range:U+a0-a5,U+200e-200f}
 @font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/noto-sans-arabic-400-ar-760c9a5fa7.woff2) format("woff2");unicode-range:U+2018}
 @font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/noto-sans-arabic-400-ar-6861a3227a.woff2) format("woff2");unicode-range:U+fa}
+@font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/noto-sans-arabic-400-ar-7caded76a0.woff2) format("woff2");unicode-range:U+b1,U+14d}
 @font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/noto-sans-arabic-700-ar-f4c65f73ed.woff2) format("woff2");unicode-range:U+21,U+24-3a,U+3d,U+3f-5a,U+61-7a,U+7c,U+ab,U+b6,U+bb,U+f1,U+11e,U+60c-64c,U+64e-94d,U+2011-2013,U+201c-25b3,U+2713-2726,U+30a4,U+30ab,U+30af,U+30b7,U+30c3,U+30d9-30e0,U+30f3-30fc,U+4e2d,U+4f1a,U+5b66,U+6587,U+65e5,U+672c,U+8a9e,U+ff08-ff09}
 @font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/noto-sans-arabic-700-ar-6e944dd998.woff2) format("woff2");unicode-range:U+22-23,U+3b-3c,U+3e,U+5b-5d,U+7b,U+7d,U+b2,U+b7,U+d7,U+64d,U+2014,U+2019,U+2605,U+300c-300d,U+3089-308c,U+30ae,U+30e5,U+4ee3,U+524d,U+5b9f,U+5f0f,U+6642,U+6fa4,U+793e,U+9a13,U+1f4b0-1f634}
 @font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/noto-sans-arabic-700-ar-acc3fb62df.woff2) format("woff2");unicode-range:U+5f}
@@ -53,6 +54,7 @@
 @font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/noto-sans-arabic-700-ar-43bea2cc9a.woff2) format("woff2");unicode-range:U+a0-a5,U+200e-200f}
 @font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/noto-sans-arabic-700-ar-d7d0db1f81.woff2) format("woff2");unicode-range:U+2018}
 @font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/noto-sans-arabic-700-ar-5c71ddab55.woff2) format("woff2");unicode-range:U+fa}
+@font-face{font-family:"Noto Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/noto-sans-arabic-700-ar-fcc2a6d06c.woff2) format("woff2");unicode-range:U+b1,U+14d}
 @font-face{font-family:"DotGothic16";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/dotgothic16-400-ar-b53a58f356.woff2) format("woff2");unicode-range:U+21-64b,U+2026-2726}
 @font-face{font-family:"DotGothic16";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/dotgothic16-400-ar-722cee16bd.woff2) format("woff2");unicode-range:U+2013}
 @font-face{font-family:"Noto Kufi Arabic";font-style:normal;font-weight:700;font-display:optional;src:url(/fonts/noto-kufi-arabic-700-ar-da60ecfbe9.woff2) format("woff2");unicode-range:U+24-26,U+28-69,U+6b-61b,U+621-623,U+625-63a,U+641-64b,U+64f-651,U+2066-20ac}
@@ -652,10 +654,16 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 /* エッセイは1行およそ38字（日本語）まで */
 .essay{max-width:38rem;margin-inline:auto}
 .byline{font-size:.84rem;color:var(--muted)}
-.essay-body{display:grid;gap:16px;margin-top:12px}
+.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:12px}
 .essay-body p{font-size:1rem;line-height:1.95}
 .essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+.essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
+.essay-table tbody th{font-weight:700}
+.essay-table tbody tr:last-child>*{border-bottom:0}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
 .fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
@@ -871,7 +879,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <li class="org" id="oss-open-udc"><div class="org-head"><a class="org-name" href="https://github.com/Open-UDC/open-udc" target="_blank" rel="noopener" dir="auto">OpenUDC</a><span class="oss-repo" dir="ltr">github.com/Open-UDC/open-udc</span><span class="oss-badge" title="لا إيداعات منذ أكثر من 12 شهرًا">خامل</span></div>
 <p>بروتوكول مفتوح مبكر (2010–2012، مبني على ⁦OpenPGP⁩) لعملات تدفع لكل عضو حصة أرباح شاملة، مستوحى من «النظرية النسبية للنقود»؛ سبق ⁦uCoin⁩ و⁦Duniter⁩ و⁦Ğ1⁩</p><dl class="oss-facts"><div><dt>لغة البرمجة</dt><dd><span dir="ltr">JavaScript</span></dd></div><div><dt>الترخيص</dt><dd><span dir="ltr">LGPL-2.1</span></dd></div><div><dt>النجوم</dt><dd>★ 78</dd></div><div><dt>آخر إيداع</dt><dd><time datetime="2024-06-07">7 يونيو 2024</time></dd></div></dl></li>
 <li class="org" id="oss-gradido"><div class="org-head"><a class="org-name" href="https://github.com/gradido/gradido" target="_blank" rel="noopener" dir="auto">Gradido</a><span class="oss-repo" dir="ltr">github.com/gradido/gradido</span></div>
-<p>الخادم والمحفظة الإلكترونية وأدوات الإدارة لـ⁦Gradido⁩، الذي ينشئ المال لكل شخص بوصفه «دخلًا أساسيًا نشطًا» مقابل المساهمة في المجتمع</p><dl class="oss-facts"><div><dt>لغة البرمجة</dt><dd><span dir="ltr">TypeScript</span></dd></div><div><dt>الترخيص</dt><dd><span dir="ltr">Apache-2.0</span></dd></div><div><dt>النجوم</dt><dd>★ 10</dd></div><div><dt>آخر إيداع</dt><dd><time datetime="2026-11-05">5 نوفمبر 2026</time></dd></div></dl><div class="oss-links"><a class="org-svc" href="/ar/services/gradido/">صفحتنا عن هذه الخدمة: Gradido</a></div></li>
+<p>الخادم والمحفظة الإلكترونية وأدوات الإدارة لـ⁦Gradido⁩، الذي ينشئ المال لكل شخص بوصفه «دخلًا أساسيًا نشطًا» مقابل المساهمة في المجتمع</p><dl class="oss-facts"><div><dt>لغة البرمجة</dt><dd><span dir="ltr">TypeScript</span></dd></div><div><dt>الترخيص</dt><dd><span dir="ltr">Apache-2.0</span></dd></div><div><dt>النجوم</dt><dd>★ 10</dd></div><div><dt>آخر إيداع</dt><dd><time datetime="2026-11-06">6 نوفمبر 2026</time></dd></div></dl><div class="oss-links"><a class="org-svc" href="/ar/services/gradido/">صفحتنا عن هذه الخدمة: Gradido</a></div></li>
 <li class="org" id="oss-idena-go"><div class="org-head"><a class="org-name" href="https://github.com/idena-network/idena-go" target="_blank" rel="noopener" dir="auto">Idena</a><span class="oss-repo" dir="ltr">github.com/idena-network/idena-go</span></div>
 <p>عقدة ⁦Idena⁩، وهي سلسلة كتل يثبت فيها الناس أنهم بشر بحل ألغاز «الصور المقلوبة» الصعبة على الذكاء الاصطناعي في اللحظة نفسها حول العالم، وتحصل الهويات المُتحقَّق منها على مكافآت</p><dl class="oss-facts"><div><dt>لغة البرمجة</dt><dd><span dir="ltr">Go</span></dd></div><div><dt>الترخيص</dt><dd><span dir="ltr">LGPL-3.0</span></dd></div><div><dt>النجوم</dt><dd>★ 151</dd></div><div><dt>آخر إيداع</dt><dd><time datetime="2025-12-22">22 ديسمبر 2025</time></dd></div></dl><div class="oss-links"><a class="org-svc" href="/ar/services/idena/">صفحتنا عن هذه الخدمة: Idena (iDNA)</a></div></li>
 <li class="org" id="oss-encointer-pallets"><div class="org-head"><a class="org-name" href="https://github.com/encointer/pallets" target="_blank" rel="noopener" dir="auto">Encointer pallets</a><span class="oss-repo" dir="ltr">github.com/encointer/pallets</span></div>

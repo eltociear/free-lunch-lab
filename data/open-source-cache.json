@@ -255,7 +255,7 @@
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-11-05",
+      "lastCommit": "2026-11-06",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"

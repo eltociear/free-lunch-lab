@@ -2871,6 +2871,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-06",
+      "en": "Published the essay “¥70,000 a month for everyone: who gains and who loses? Heizo Takenaka’s basic income plan, worked out for five households”",
+      "ja": "エッセイ『月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する』を公開",
+      "zh": "发布随笔《每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案》",
+      "hi": "निबंध “हर महीने सबको 70,000 येन: किसे फ़ायदा, किसे नुक़सान? हेइज़ो ताकेनाका की बेसिक इनकम योजना, पाँच परिवारों पर हिसाब” प्रकाशित",
+      "es": "Publicado el ensayo «70.000 yenes al mes para todos: ¿quién gana y quién pierde? El plan de renta básica de Heizo Takenaka, calculado para cinco hogares»",
+      "de": "Essay „70.000 Yen im Monat für alle: Wer gewinnt, wer verliert? Heizo Takenakas Grundeinkommensplan, durchgerechnet für fünf Haushalte“ veröffentlicht",
+      "ar": "نشرنا مقال «70,000 ين شهريًا للجميع: مَن يربح ومَن يخسر؟ خطة هيزو تاكيناكا للدخل الأساسي محسوبةً على خمس أسر»"
+    },
+    {
+      "date": "2026-11-06",
       "ja": "タダ飯診断の結果を、タイプごとのプレビュー画像つきでXにシェアできるように（リンクを開いた人は、そのまま診断を始められます）",
       "en": "You can now share your Free Lunch Quiz result on X with a preview card for your type (people who open the link go straight to the quiz)",
       "zh": "免费午餐测试的结果现在可以带着该类型的预览图分享到 X（打开链接的人可以直接开始测试）",
@@ -9745,6 +9755,1651 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "takenaka-70000-yen-basic-income",
+      "date": "2026-11-06",
+      "related": [
+        "japan-special-cash-payment",
+        "thailand-digital-wallet"
+      ],
+      "title": {
+        "ja": "月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する",
+        "en": "¥70,000 a month for everyone: who gains and who loses? Heizo Takenaka’s basic income plan, worked out for five households",
+        "zh": "每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案",
+        "hi": "हर महीने सबको 70,000 येन: किसे फ़ायदा, किसे नुक़सान? हेइज़ो ताकेनाका की बेसिक इनकम योजना, पाँच परिवारों पर हिसाब",
+        "es": "70.000 yenes al mes para todos: ¿quién gana y quién pierde? El plan de renta básica de Heizo Takenaka, calculado para cinco hogares",
+        "de": "70.000 Yen im Monat für alle: Wer gewinnt, wer verliert? Heizo Takenakas Grundeinkommensplan, durchgerechnet für fünf Haushalte",
+        "ar": "70,000 ين شهريًا للجميع: مَن يربح ومَن يخسر؟ خطة هيزو تاكيناكا للدخل الأساسي محسوبةً على خمس أسر"
+      },
+      "desc": {
+        "ja": "2020年に話題になった竹中平蔵氏の「全員に月7万円」。年金と生活保護をどう扱うか、高所得者が返すかで結果は大きく変わります。前提を決めて5つの家計で計算し、国全体の費用も確かめました。",
+        "en": "Heizo Takenaka’s 2020 idea of ¥70,000 a month for all, worked out for five Japanese households under stated assumptions, plus what it would cost the country.",
+        "zh": "竹中平藏 2020 年提出的“每人每月 7 万日元”。养老金和生活保护怎么处理、高收入者是否返还，结果差别很大。我们定好前提，算了五个家庭的账，也核对了全国的总成本。",
+        "hi": "हेइज़ो ताकेनाका का 2020 का “सबको हर महीने 70,000 येन” वाला विचार, तय मान्यताओं के साथ पाँच जापानी परिवारों पर हिसाब, और देश पर कुल ख़र्च।",
+        "es": "La idea de Heizo Takenaka de 2020, 70.000 yenes al mes para todos, calculada para cinco hogares japoneses con supuestos explícitos, y lo que costaría al país.",
+        "de": "Heizo Takenakas Idee von 2020, 70.000 Yen im Monat für alle, durchgerechnet für fünf japanische Haushalte mit klaren Annahmen, plus die Kosten fürs Land.",
+        "ar": "فكرة هيزو تاكيناكا عام 2020، أي 70,000 ين شهريًا للجميع، محسوبة على خمس أسر يابانية بافتراضات معلنة، مع كلفتها على البلد كله."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "“¥70,000 a month for everyone.” In 2020 the economist Heizo Takenaka put this idea on Japanese television and set off a storm. Takenaka served as minister for economic and fiscal policy and as minister for internal affairs in Junichiro Koizumi’s government (2001–2006), and was then chairman of the staffing company Pasona Group.[1] “Nobody can live on ¥70,000.” “So you want to scrap pensions?” Posts citing his plan still turn up on Japanese social media today."
+          ],
+          [
+            "p",
+            "This site supports basic income, but not any particular plan. So before deciding for or against, we start with a more down-to-earth question: if this plan came true, would your household end up with more money or less?"
+          ],
+          [
+            "o",
+            "The short answer is: it depends on the design. The same ¥70,000 can be a gain or a loss, depending on what it replaces and who has to pay it back later. Below we put numbers on that range."
+          ],
+          [
+            "h",
+            "What Takenaka proposed"
+          ],
+          [
+            "p",
+            "It started on the evening of 23 September 2020, on the BS-TBS news programme Hōdō 1930. The programme presented Takenaka’s view on a panel that read “¥70,000 a month to every citizen.”[1]"
+          ],
+          [
+            "p",
+            "According to reports, incomes would be tracked by linking people’s My Number identification numbers to their bank accounts, and anyone above a certain income would pay the money back after receiving it. Asked on the programme whether pensions and public assistance would then become unnecessary, Takenaka reportedly answered, “Basically, yes.”[2]"
+          ],
+          [
+            "p",
+            "Some background for readers outside Japan. Japan’s public pension (nenkin) has two layers: a flat-rate basic pension that everyone can earn, called the National Pension, and, for people who worked as employees, an earnings-related top-up called the Employees’ Pension. Public assistance (seikatsu hogo) is the means-tested safety net of last resort: it pays living costs, rent and medical care for people who have no other way to get by."
+          ],
+          [
+            "p",
+            "His book, published in August 2020, put it bluntly: “The plan to pay each person ¥70,000 a month is also a trade-off for abolishing social security such as pensions and public assistance. If we pay ¥70,000 to every citizen, we can get rid of pensions for the elderly and the cost of public assistance.”[3][4]"
+          ],
+          [
+            "h",
+            "The backlash, and his explanation"
+          ],
+          [
+            "p",
+            "Criticism came fast. “Nobody can live on ¥70,000 a month each.” “Isn’t this just a cut to social security?” J-CAST News reported that comments like these flooded the internet.[1] Genki Sudo, then a member of the House of Councillors, posted, “Are you telling pensioners to starve to death?” and wrote that a basic income would need to be at least ¥200,000 a month.[2]"
+          ],
+          [
+            "p",
+            "On 7 October 2020, Takenaka sat down with J-CAST News. In summary, he said:[1]"
+          ],
+          [
+            "p",
+            "He had never said anyone could live on ¥70,000. ¥70,000 was an average, and at that level the cost to public finances would not be too heavy."
+          ],
+          [
+            "p",
+            "A family of four might not need ¥280,000, so the third and fourth members could get less, and in exchange a person living alone could get a little more."
+          ],
+          [
+            "p",
+            "Pensions would switch to basic income while protecting what people had already paid in. Public assistance could also remain, as a top-up."
+          ],
+          [
+            "p",
+            "It would work like progressive taxation: high earners pay a high rate, and people on low incomes pay a negative rate, meaning they receive money."
+          ],
+          [
+            "p",
+            "Paying everyone first and having high earners return it later through their tax returns was not a bad method, because no one can tell in advance who will need help."
+          ],
+          [
+            "o",
+            "“A trade-off for abolishing” pensions and public assistance, in the book, and “protecting what people paid in” with public assistance “as a top-up”, in the interview, leave very different impressions. Which one is the real plan? No detailed design has been published. And it is exactly this unclear part that matters most once you do the household sums."
+          ],
+          [
+            "h",
+            "Where ¥70,000 came from"
+          ],
+          [
+            "p",
+            "According to J-CAST News, Takenaka’s plan builds on the views of the economist Yutaka Harada. In his 2015 book Basic Income: Can the State Solve Poverty? and elsewhere, Harada proposed ¥70,000 a month for everyone aged 20 and over and ¥30,000 a month for those under 20. Takenaka seems to have broadened this to “around ¥70,000” with a progressive structure, the article says.[1][5]"
+          ],
+          [
+            "p",
+            "¥70,000 is also close to the full basic pension. In fiscal 2026 the full National Pension is ¥70,608 a month.[6]"
+          ],
+          [
+            "p",
+            "Among political parties, the Japan Innovation Party (Nippon Ishin no Kai) said at its April 2021 convention that it would put a basic income, framed as a guaranteed minimum income, in its platform. Then too, a big point of debate was that paying everyone would need around ¥100 trillion a year.[7]"
+          ],
+          [
+            "h",
+            "Our assumptions"
+          ],
+          [
+            "p",
+            "Since Takenaka has not set out a detailed design, we fix our assumptions first."
+          ],
+          [
+            "p",
+            "The amount is ¥70,000 a month per person, children included, as on the programme’s panel. For the four-person households we also show the case where children get Harada’s ¥30,000."
+          ],
+          [
+            "p",
+            "Pensions are calculated three ways. (A) Pensions stay as they are and basic income is added on top. (B) Only the basic pension is replaced by basic income, and the earnings-related Employees’ Pension top-up is protected. (C) Pensions are replaced by basic income entirely."
+          ],
+          [
+            "p",
+            "Public assistance is calculated two ways. (A) Public assistance covers whatever basic income does not. (B) Public assistance is abolished."
+          ],
+          [
+            "p",
+            "The child allowance (jidō teate) is replaced by basic income, as in most basic income plans."
+          ],
+          [
+            "p",
+            "For the clawback from high earners, no income threshold or amount has been given, so we show both ends: nothing paid back, and everything paid back."
+          ],
+          [
+            "p",
+            "Tax rises or contribution changes to fund the plan are left out, because none have been specified. Any tax rise would lower every household’s result by that much."
+          ],
+          [
+            "p",
+            "All amounts are monthly, under the rules for fiscal 2026."
+          ],
+          [
+            "p",
+            "The current figures come from official sources. Pensions: the full National Pension is ¥70,608 a month, and the government’s model couple, a husband who worked 40 years on average pay and a wife who stayed at home, receives ¥237,279 a month, including two basic pensions.[6] Public assistance: a single person aged 20 to 40 in Tokyo’s 23 wards (the highest cost-of-living grade, 1-1) gets ¥77,220 a month for living costs (¥46,930 + ¥27,790 + a ¥2,500 special addition), and housing assistance for rent of up to ¥53,700 for a single person in Tokyo. That makes up to ¥130,920 a month, and medical care is covered separately, with nothing to pay.[8][9] Child allowance: ¥10,000 a month for each first or second child from age 3 up to high-school age, with no income limit since October 2024.[10]"
+          ],
+          [
+            "h",
+            "Five households, worked out"
+          ],
+          [
+            "p",
+            "1. A single office worker in their twenties, living alone in Tokyo, earning ¥3 million a year. They receive no benefits now, so the full ¥70,000 is added. In Takenaka’s explanation, it is “people with high incomes” who pay it back, and ¥3 million a year is unlikely to count. So they receive ¥70,000 a month, ¥840,000 a year. Any tax rise to fund the scheme would come out of that. Their answer: up to ¥70,000 a month, less whatever tax rises take."
+          ],
+          [
+            "p",
+            "2. A couple with two primary-school children, earning ¥5 million a year. They now get ¥20,000 a month in child allowance for the two children. With a flat basic income, the family gets ¥280,000 a month: even after losing the child allowance, that is ¥260,000 a month more. If children get less, as Takenaka suggested, and we use Harada’s ¥30,000, basic income comes to ¥200,000 and the net gain is ¥180,000 a month. Families with children are the most likely winners under this plan. Again, these figures are before any tax rise."
+          ],
+          [
+            "p",
+            "3. A retired couple: a husband who worked for a company and a wife who stayed at home. Their pensions now total ¥237,279 a month: ¥141,216 in two basic pensions and ¥96,063 in the husband’s Employees’ Pension top-up.[6] Basic income for two is ¥140,000. The result depends heavily on what happens to pensions. (A) Added on top: ¥377,279 a month, ¥140,000 more. (B) Only the basic pension replaced: ¥140,000 + ¥96,063 = ¥236,063, just ¥1,216 a month less, almost unchanged. (C) Pensions replaced entirely: ¥140,000 only, ¥97,279 a month less."
+          ],
+          [
+            "p",
+            "Case (C) is what Sudo was worried about. What Takenaka described in the interview, protecting what people paid in, is close to (B). A couple who only have the National Pension, such as former self-employed people (¥141,216 for two at the full rate), end up with about the same in every case. People who could not pay contributions for some years and do not get the full pension would gain."
+          ],
+          [
+            "p",
+            "4. A single person in their thirties on public assistance in Tokyo’s 23 wards. They now receive up to ¥130,920 a month for living costs and rent.[8] (A) If public assistance tops up basic income: ¥70,000 plus ¥60,920 in assistance, the same total as now. (B) If public assistance is abolished: ¥70,000 only, ¥60,920 a month less. Help with rent would disappear, and they might have to start paying for medical care."
+          ],
+          [
+            "p",
+            "The book’s “get rid of the cost of public assistance” is (B); the interview’s “public assistance can remain as a top-up” is (A). For this household, which one it is decides everything."
+          ],
+          [
+            "p",
+            "5. A couple with two children, earning ¥10 million a year. They now get ¥20,000 a month in child allowance. Basic income for four is ¥280,000 a month, and this is where “high earners pay it back later” comes in. If they keep it: ¥260,000 a month more, even after losing the child allowance. If they pay it all back: none of the basic income stays with them, and they are ¥20,000 a month worse off by the lost child allowance. A ¥10 million household is likely to be on the paying-back side, and any tax rise to fund the plan would fall heavily on this group. Realistically, expect somewhere between roughly zero and a loss."
+          ],
+          [
+            "p",
+            "In summary (monthly, before any tax rise):"
+          ],
+          [
+            "t",
+            "Household | Benefits now | Basic income | Net change\nSingle, 20s, ¥3m a year | None | ¥70,000 | +¥70,000 (less any tax rise)\nFamily of four, ¥5m a year | Child allowance ¥20,000 | ¥200,000–¥280,000 | +¥180,000 to +¥260,000\nRetired couple (former employee) | Pensions ¥237,279 | ¥140,000 | +¥140,000 to −¥97,279 (depends on pensions)\nSingle, on public assistance (Tokyo 23 wards) | Up to ¥130,920 | ¥70,000 | ±0 to −¥60,920 (depends on whether assistance stays)\nFamily of four, ¥10m a year | Child allowance ¥20,000 | ¥280,000 | +¥260,000 to −¥20,000 (depends on clawback)"
+          ],
+          [
+            "p",
+            "The likely winners are households with children and few benefits today. Those who could lose are people who rely on pensions or public assistance, and high-earning households that would pay the money back or bear the tax rises."
+          ],
+          [
+            "o",
+            "The complaint that “nobody can live on ¥70,000” mostly concerns the cases where pensions or public assistance disappear. Takenaka’s reply that he “never said you could live on it” reads as assuming that some other benefits remain. Line up the assumptions, and both claims can be checked with numbers."
+          ],
+          [
+            "h",
+            "What would it cost the country?"
+          ],
+          [
+            "p",
+            "After the household purse, the national one. Japan’s population is 122,812,000 (Statistics Bureau, final estimate as of 1 May 2026).[11] Paying everyone ¥70,000 a month for a year comes to ¥70,000 × 12 × 122,812,000, about ¥103.2 trillion."
+          ],
+          [
+            "p",
+            "Japan’s general account budget for fiscal 2026 is ¥122.3092 trillion, of which social security spending is ¥39.0559 trillion.[12] The basic income would be about 84% of the entire general account, and about 2.6 times social security spending."
+          ],
+          [
+            "p",
+            "Takenaka says the money for pensions and public assistance would be redirected.[3] Social security benefits as a whole, pensions and medical care included and counting contributions, come to ¥144.1 trillion. Of that, pensions are ¥63.7 trillion.[13] Even if every pension went into basic income, it would still be about ¥40 trillion short of ¥103 trillion."
+          ],
+          [
+            "p",
+            "The gap can be closed only by shrinking the real cost through the clawback from high earners, or by raising taxes. Where the clawback line is drawn changes both the funding needed and the results in the table above. You can try other amounts and groups in {our basic income calculator|/calc/?c=jp&w=all&m=70000}: ¥70,000 a month for everyone is about 15.5% of GDP."
+          ],
+          [
+            "h",
+            "What to take from it"
+          ],
+          [
+            "p",
+            "Takenaka’s plan, as shown on television in September 2020, was ¥70,000 a month for everyone, with high earners paying it back later. His book framed it as a trade-off for abolishing pensions and public assistance."
+          ],
+          [
+            "p",
+            "He later said ¥70,000 was an average, that he had never said anyone could live on it, that pensions already paid for would be protected and that public assistance could stay. On the point that matters most, his book and his interview disagree."
+          ],
+          [
+            "p",
+            "What it means for households depends on the design. Families with children are likely to gain a lot. For people who rely on pensions or public assistance, the result ranges from “about the same” to “tens of thousands of yen, up to nearly ¥100,000, less each month”, depending on whether those benefits survive."
+          ],
+          [
+            "p",
+            "Paying everyone would cost about ¥103 trillion a year. Even all of the pension money would not cover it, so the clawback and tax design cannot be skipped."
+          ],
+          [
+            "o",
+            "When judging a basic income plan, it is worth looking past the amount to two questions: what is it traded for, and who pays it back? The same “¥70,000 a month” can be an entirely different system depending on the answers."
+          ],
+          [
+            "p",
+            "In 2020 Japan did pay ¥100,000 to everyone, once, as the Special Cash Payment. We looked at how that money was used, with data, in {our essay on the ¥100,000 payment|/essays/japan-special-cash-payment/}."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "「全員に毎月7万円」。2020年、経済学者で元大臣の竹中平蔵氏が示したこの案は、大きな騒ぎになりました。「7万円で暮らせるわけがない」「年金をなくすつもりか」。いまもSNSでは、この案を引き合いに出した書き込みを見かけます。"
+          ],
+          [
+            "p",
+            "このサイトはベーシックインカム（BI）を応援していますが、特定の案を応援しているわけではありません。そこで、賛成か反対かを決める前に、もっと身近な問いから考えてみます。この案が実現したら、わが家のお金は増えるのか、減るのか。"
+          ],
+          [
+            "o",
+            "先に答えを書くと、「設計しだい」です。同じ7万円でも、何と引き換えにするのか、誰が後から返すのかで、結果はプラスにもマイナスにもなります。その幅を、具体的な数字で見ていきます。"
+          ],
+          [
+            "h",
+            "竹中氏は何を提案したのか"
+          ],
+          [
+            "p",
+            "きっかけは、2020年9月23日夜に放送されたBS-TBSの番組「報道1930」です。番組では、竹中氏の持論が「国民全員に毎月7万円支給」というパネルで紹介されました。[1]"
+          ],
+          [
+            "p",
+            "報道によると、マイナンバーと銀行口座をひも付けて所得を把握し、一定以上の高所得者には給付の後で返してもらう、という仕組みです。番組で「将来は年金や生活保護などが必要なくなるのか」と聞かれた竹中氏は、「基本的にはそうだ」と答えたと伝えられています。[2]"
+          ],
+          [
+            "p",
+            "同じ年の8月に出た著書『ポストコロナの「日本改造計画」』（PHP研究所）には、こう書かれています。「一人に毎月七万円給付する案は、年金や生活保護などの社会保障の廃止とバーターの話でもあります。国民全員に七万円を給付するなら、高齢者への年金や、生活保護者への費用をなくすことができます」[3][4]"
+          ],
+          [
+            "h",
+            "炎上と、本人の説明"
+          ],
+          [
+            "p",
+            "案には、すぐに批判が集まりました。「1人毎月7万円では、とても生活できない」「単なる社会保障の削減ではないのか」。こうした声がネットにあふれたと、J-CASTニュースは伝えています。[1] 当時参院議員だった須藤元気氏は「年金生活者に飢え死にしろって言うことですかね」と投稿し、BIなら月20万円は必要だと書きました。[2]"
+          ],
+          [
+            "p",
+            "竹中氏は2020年10月7日、J-CASTニュースの取材に応じ、おおむねこう説明しています。[1]"
+          ],
+          [
+            "p",
+            "「1人7万円で生活できる」と言ったことはまったくない。7万円はあくまで平均で、その水準なら財政の負担が大きくならない、という意味だ。"
+          ],
+          [
+            "p",
+            "家族4人で28万円は必要ないかもしれないので、3人目・4人目は安くし、その代わり単身のときは少し多めにする。"
+          ],
+          [
+            "p",
+            "年金は、積み立てた分は保障しながらBIに切り替える。生活保護も、それを補うものとしてあっていい。"
+          ],
+          [
+            "p",
+            "所得の高い人には高い税率、低い人にはマイナスの税率（お金を支給する）という、累進課税の仕組みにする。"
+          ],
+          [
+            "p",
+            "とりあえず全員に先に渡し、高所得者は後から確定申告で返すのは悪い方法ではない。誰が弱者かは前もって分からないからだ。"
+          ],
+          [
+            "o",
+            "著書の「廃止とバーター」と、インタビューの「積み立てた分は保障」「生活保護も補う」では、受ける印象がかなり違います。どちらが本来の案なのか、細かい制度設計は示されていません。そして、このはっきりしない部分こそが、家計の計算では一番大きく効いてきます。"
+          ],
+          [
+            "h",
+            "7万円という数字はどこから来たのか"
+          ],
+          [
+            "p",
+            "J-CASTニュースによると、竹中氏の案は、経済学者の原田泰氏の持論が元になっています。原田氏は2015年の著書『ベーシック・インカム──国家は貧困問題を解決できるか』（中公新書）などで、20歳以上に月7万円、20歳未満に月3万円を配る案を示していました。竹中氏はこれを「7万円前後」に広げ、累進的な形にしたようだ、と記事は書いています。[1][5]"
+          ],
+          [
+            "p",
+            "ちなみに7万円は、国民年金（老齢基礎年金）の満額とほぼ同じです。2026年度の満額は月7万608円です。[6]"
+          ],
+          [
+            "p",
+            "政党では、日本維新の会が2021年4月の党大会で、BI（最低所得保障）を公約に掲げる考えを示しています。全員に配るには年100兆円規模の財源が要ることが、そのときも大きな論点になりました。[7]"
+          ],
+          [
+            "h",
+            "計算の前提"
+          ],
+          [
+            "p",
+            "竹中氏は細かい設計を示していないので、ここでは前提をはっきり決めてから計算します。"
+          ],
+          [
+            "p",
+            "金額は1人月7万円で、子どもも同じ額とする（番組のパネルどおり）。ただし4人世帯では、子どもを原田案の月3万円にした場合も示す。"
+          ],
+          [
+            "p",
+            "年金は3通りで計算する。(A) 年金はそのままでBIを上乗せ。(B) 基礎年金だけをBIに置き換え、厚生年金の上乗せ部分（報酬比例）は保障。(C) 年金をすべてBIに置き換え。"
+          ],
+          [
+            "p",
+            "生活保護は2通り。(A) BIで足りない分を生活保護で補う。(B) 生活保護を廃止する。"
+          ],
+          [
+            "p",
+            "児童手当は、BIに置き換わるものとする（多くのBI案と同じ扱い）。"
+          ],
+          [
+            "p",
+            "高所得者の返納は、どの年収からいくら返すかが示されていないので、「返さない」と「全額返す」の両端を示す。"
+          ],
+          [
+            "p",
+            "財源のための増税や保険料の変化は、中身が示されていないので入れない。増税があれば、どの家計もその分だけ結果が下がる。"
+          ],
+          [
+            "p",
+            "金額はすべて月額で、2026年度の制度で計算する。"
+          ],
+          [
+            "p",
+            "いまの制度の数字は、公式の資料から取りました。年金は、国民年金の満額が月7万608円。会社員の夫と専業主婦の妻の「標準的な夫婦」は、2人分の基礎年金を含めて月23万7279円です。[6] 生活保護は、東京23区（1級地-1）の20〜40歳の単身者で、生活扶助が月7万7220円（第1類4万6930円＋第2類2万7790円＋特例加算2500円）、家賃にあたる住宅扶助が東京都の単身で上限月5万3700円。合わせて最大月13万920円で、医療費は医療扶助でまかなわれ、自己負担はありません。[8][9] 児童手当は、3歳から高校生年代までの第1子・第2子が1人月1万円で、2024年10月から所得制限はありません。[10]"
+          ],
+          [
+            "h",
+            "5つの家計で計算してみた"
+          ],
+          [
+            "p",
+            "1. 東京で一人暮らしの20代の会社員（年収300万円）。いま受けている給付は、とくにありません。BIの7万円がそのまま加わります。竹中氏の説明で返すのは「所得の高い人」なので、年収300万円が返す側に入るとは考えにくく、受け取りは月7万円、年84万円です。ただし財源のための増税があれば、その分は差し引かれます。月7万円が上限で、増税しだいで目減りする、というのがこの家計の答えです。"
+          ],
+          [
+            "p",
+            "2. 夫婦と小学生2人の4人世帯（年収500万円）。いまの児童手当は2人で月2万円です。BIが一律なら4人で月28万円で、児童手当がなくなっても月26万円のプラス。竹中氏の言うように子どもの分を減らし、原田案の月3万円にするとBIは月20万円で、差し引きは月18万円のプラスです。子育て世帯は、この案で最も得をしやすい家計です。これも、増税の前の数字です。"
+          ],
+          [
+            "p",
+            "3. 年金で暮らす高齢の夫婦（元会社員の夫と専業主婦の妻）。いまの年金は2人で月23万7279円で、そのうち基礎年金が2人分で14万1216円、厚生年金の上乗せ部分が9万6063円です。[6] BIは2人で月14万円。結果は年金の扱いで大きく変わります。(A) 年金に上乗せなら月37万7279円で、月14万円のプラス。(B) 基礎年金だけを置き換えるなら、14万円＋9万6063円＝23万6063円で、差は月マイナス1216円。ほぼ変わりません。(C) 年金をすべて置き換えるなら月14万円だけになり、月9万7279円のマイナスです。"
+          ],
+          [
+            "p",
+            "須藤氏が心配したのは(C)です。竹中氏がインタビューで話した「積み立てた分は保障」は、(B)に近い考え方です。なお、自営業などで国民年金だけの夫婦（満額で2人月14万1216円）は、どの場合もほぼ同じ額になります。逆に、保険料を払えなかった時期があって満額をもらえていない人は、BIで増えます。"
+          ],
+          [
+            "p",
+            "4. 東京23区で生活保護を受ける30代の単身者。いまの保護費は、生活扶助と住宅扶助で最大月13万920円です。[8] (A) 足りない分を生活保護で補うなら、BI7万円＋保護費6万920円で、合計は変わりません。(B) 生活保護を廃止するなら月7万円だけになり、月6万920円のマイナスです。家賃の補助がなくなり、医療費の自己負担も生じえます。"
+          ],
+          [
+            "p",
+            "著書の「生活保護の費用をなくす」は(B)、インタビューの「生活保護も補うものとしてあっていい」は(A)にあたります。この家計にとっては、どちらなのかが決定的です。"
+          ],
+          [
+            "p",
+            "5. 夫婦と子ども2人の4人世帯（年収1000万円）。いまの児童手当は2人で月2万円です。BIは4人で月28万円。ここで効いてくるのが「高所得者は後で返す」という部分です。返さなくてよいなら、児童手当がなくなっても月26万円のプラス。全額返すなら、BIは手元に残らず、児童手当の分だけ月2万円のマイナスです。年収1000万円は返す側に入る可能性が高く、財源のための増税もこの層に重くかかるはずです。「ほぼゼロからマイナス」と見ておくのが現実的でしょう。"
+          ],
+          [
+            "p",
+            "まとめると、こうなります（月額、増税の前）。"
+          ],
+          [
+            "t",
+            "家計 | いまの給付 | BI | 差し引き\n単身20代・年収300万円 | なし | 7万円 | ＋7万円（増税があれば目減り）\n4人世帯・年収500万円 | 児童手当2万円 | 20万〜28万円 | ＋18万〜＋26万円\n元会社員の高齢夫婦 | 年金23万7279円 | 14万円 | ＋14万円〜−9万7279円（年金の扱いしだい）\n生活保護の単身者（東京23区） | 最大13万920円 | 7万円 | ±0〜−6万920円（生活保護を残すかしだい）\n4人世帯・年収1000万円 | 児童手当2万円 | 28万円 | ＋26万〜−2万円（返納しだい）"
+          ],
+          [
+            "p",
+            "得をしやすいのは、子どもがいて、いまの給付が少ない世帯です。損をしうるのは、年金や生活保護に頼っている人と、返納や増税の対象になる高所得の世帯です。"
+          ],
+          [
+            "o",
+            "「7万円では暮らせない」という批判は、主に年金や生活保護がなくなる場合の話です。一方、竹中氏の「7万円で生活できるとは言っていない」という説明は、ほかの制度を一部残すことが前提だと読めます。どちらの言い分も、前提をそろえれば数字で確かめられます。"
+          ],
+          [
+            "h",
+            "国全体ではいくらかかるのか"
+          ],
+          [
+            "p",
+            "家計の次は、財布の大きさです。日本の人口は1億2281万2000人（総務省統計局、2026年5月1日現在の確定値）です。[11] 全員に月7万円を1年間配ると、7万円×12か月×1億2281万2000人で、約103.2兆円になります。"
+          ],
+          [
+            "p",
+            "2026年度の国の一般会計予算は122.3092兆円で、そのうち社会保障関係費は39.0559兆円です。[12] BIの総額は、一般会計の約84％、社会保障関係費の約2.6倍にあたります。"
+          ],
+          [
+            "p",
+            "竹中氏は、年金や生活保護の財源を回すと説明しています。[3] 年金や医療などを合わせた社会保障給付費は、保険料も含めて全体で144.1兆円あります。ただ、そのうち年金は63.7兆円です。[13] 年金をすべてBIに回しても、103兆円には約40兆円足りません。"
+          ],
+          [
+            "p",
+            "足りない分を埋めるには、高所得者の返納でBIの実際の総額を減らすか、増税するかです。返納の線をどこに引くかで、必要な財源も、上の表の結果も変わります。金額や対象を変えると総額がどう変わるかは、{BI計算機|/calc/?c=jp&w=all&m=70000}で試せます。月7万円を全員に配ると、GDPの約15.5％です。"
+          ],
+          [
+            "h",
+            "まとめ"
+          ],
+          [
+            "p",
+            "竹中氏の案は、2020年9月の番組で示された「全員に月7万円、高所得者は後で返す」というもの。著書では、年金や生活保護の廃止と引き換えとされていました。"
+          ],
+          [
+            "p",
+            "本人は後に、7万円は平均で、それで生活できるとは言っていない、積み立てた年金は保障し、生活保護も残してよいと説明しました。著書とインタビューの間で、肝心の部分が食い違っています。"
+          ],
+          [
+            "p",
+            "家計への影響は設計しだいです。子育て世帯は大きく得をしやすく、年金や生活保護に頼る人は、制度が残るかどうかで「ほぼ同じ」から「月数万〜10万円近いマイナス」まで変わります。"
+          ],
+          [
+            "p",
+            "全員に配ると年約103兆円。年金をすべて回しても足りず、返納と増税の設計が欠かせません。"
+          ],
+          [
+            "o",
+            "BIを評価するときは、金額だけでなく「何と引き換えか」「誰が返すのか」を見ることが大事だと思います。同じ「月7万円」でも、中身しだいで別の制度になるからです。"
+          ],
+          [
+            "p",
+            "日本では2020年に、全員に10万円を配る特別定額給付金が一度だけ行われました。そのお金がどう使われたのかは、{10万円の給付金のエッセイ|/essays/japan-special-cash-payment/}でデータから振り返っています。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "“每人每月 7 万日元。”2020 年，经济学家竹中平藏在日本电视节目上提出这个想法，引发了一场风波。竹中曾在小泉纯一郎内阁（2001–2006 年）担任经济财政政策担当大臣和总务大臣，当时是人才派遣公司 Pasona 集团的会长。[1]“7 万日元怎么可能活得下去？”“这是要取消养老金吗？”直到今天，日本社交媒体上仍能看到引用这个方案的帖子。"
+          ],
+          [
+            "p",
+            "本站支持基本收入，但并不支持某一个特定方案。所以在决定赞成还是反对之前，我们先问一个更贴近生活的问题：如果这个方案真的实行，你家的钱会变多还是变少？"
+          ],
+          [
+            "o",
+            "先说答案：取决于设计。同样是 7 万日元，拿什么来换、谁事后要还，结果可能是加分也可能是减分。下面用具体数字来看这个范围。"
+          ],
+          [
+            "h",
+            "竹中提出了什么"
+          ],
+          [
+            "p",
+            "起因是 2020 年 9 月 23 日晚播出的 BS-TBS 新闻节目《报道 1930》。节目用一块写着“全体国民每月发放 7 万日元”的展板介绍了竹中的主张。[1]"
+          ],
+          [
+            "p",
+            "据报道，其做法是把个人编号（My Number）和银行账户绑定来掌握收入，收入超过一定水平的人在领取后再把钱还回去。节目中被问到“将来是否就不需要养老金和生活保护了”，竹中据报回答：“基本上是这样。”[2]"
+          ],
+          [
+            "p",
+            "给日本以外的读者补充一点背景。日本的公共养老金（年金）分两层：人人都能领取的定额基础养老金，叫作国民年金；以及曾经当过雇员的人另外领取、与收入挂钩的厚生年金。生活保护是最后一道经过家计审查的安全网，为没有其他办法维持生活的人支付生活费、房租和医疗费。"
+          ],
+          [
+            "p",
+            "他在 2020 年 8 月出版的著作中写得很直接：“每人每月发放 7 万日元的方案，也是以废除养老金和生活保护等社会保障为交换条件的。如果给全体国民发 7 万日元，就可以取消给老年人的养老金和生活保护的费用。”[3][4]"
+          ],
+          [
+            "h",
+            "舆论哗然，与本人的解释"
+          ],
+          [
+            "p",
+            "批评很快就来了。“每人每月 7 万日元根本活不下去。”“这不就是削减社会保障吗？”J-CAST 新闻报道说，网上满是这样的声音。[1] 时任参议员的须藤元气发帖说“这是要领养老金的人去饿死吗”，并写道如果是基本收入，每月至少需要 20 万日元。[2]"
+          ],
+          [
+            "p",
+            "2020 年 10 月 7 日，竹中接受了 J-CAST 新闻的采访，大意如下：[1]"
+          ],
+          [
+            "p",
+            "他从没说过“每人 7 万日元就能生活”。7 万日元只是平均水平，意思是这个水平对财政的负担不会太大。"
+          ],
+          [
+            "p",
+            "四口之家也许不需要 28 万日元，所以第三、第四个人可以少一些，作为交换，一个人生活时可以多一点。"
+          ],
+          [
+            "p",
+            "养老金在保障已缴部分的前提下切换为基本收入。生活保护也可以保留，作为补充。"
+          ],
+          [
+            "p",
+            "采用累进税的方式：高收入者适用高税率，低收入者适用负税率，也就是发钱给他们。"
+          ],
+          [
+            "p",
+            "先发给所有人，高收入者事后通过报税返还，并不是坏办法，因为事先无法知道谁是需要帮助的人。"
+          ],
+          [
+            "o",
+            "书里的“以废除为交换”，和采访中的“保障已缴部分”“生活保护也可作补充”，给人的印象相差很大。到底哪个才是本来的方案？详细的制度设计并没有公布。而恰恰是这个说不清的部分，在算家庭账时影响最大。"
+          ],
+          [
+            "h",
+            "7 万日元这个数字从哪里来"
+          ],
+          [
+            "p",
+            "据 J-CAST 新闻报道，竹中的方案以经济学家原田泰的主张为基础。原田在 2015 年的著作《基本收入：国家能解决贫困问题吗》等中，提出给 20 岁以上的人每月 7 万日元、20 岁以下的人每月 3 万日元。报道写道，竹中似乎把它扩展为“平均 7 万日元左右”，并改成了累进的结构。[1][5]"
+          ],
+          [
+            "p",
+            "顺便一提，7 万日元和国民年金（老龄基础年金）的全额差不多。2026 财年的全额是每月 70,608 日元。[6]"
+          ],
+          [
+            "p",
+            "在政党方面，日本维新会在 2021 年 4 月的党大会上表示要把基本收入（最低所得保障）写进竞选纲领。当时最大的争议点同样是：给所有人发钱，每年需要 100 万亿日元左右的财源。[7]"
+          ],
+          [
+            "h",
+            "计算的前提"
+          ],
+          [
+            "p",
+            "竹中没有给出详细设计，所以我们先把前提定清楚再算。"
+          ],
+          [
+            "p",
+            "金额为每人每月 7 万日元，孩子也一样（与节目展板一致）。四口之家另外列出孩子按原田方案每月 3 万日元的情况。"
+          ],
+          [
+            "p",
+            "养老金分三种情况。(A) 养老金不变，再加上基本收入。(B) 只用基本收入替换基础养老金，与收入挂钩的厚生年金部分予以保障。(C) 养老金全部由基本收入替换。"
+          ],
+          [
+            "p",
+            "生活保护分两种情况。(A) 基本收入不够的部分由生活保护补足。(B) 废除生活保护。"
+          ],
+          [
+            "p",
+            "儿童津贴（儿童手当）由基本收入替代（与多数基本收入方案相同）。"
+          ],
+          [
+            "p",
+            "高收入者的返还，没有说明从多少年收入开始、返还多少，所以列出“不返还”和“全部返还”两个极端。"
+          ],
+          [
+            "p",
+            "为筹资而增税或改变保险费的部分，因内容未公布，不计入。若有增税，每个家庭的结果都会相应下降。"
+          ],
+          [
+            "p",
+            "金额均为月额，按 2026 财年的制度计算。"
+          ],
+          [
+            "p",
+            "现行制度的数字取自官方资料。养老金：国民年金全额每月 70,608 日元；政府的“标准夫妇”（丈夫以平均收入工作 40 年，妻子是全职主妇）每月 237,279 日元，含两人的基础养老金。[6] 生活保护：东京 23 区（1 级地-1）20–40 岁单身者的生活扶助为每月 77,220 日元（46,930 + 27,790 + 特例加算 2,500），用于房租的住宅扶助在东京单身上限为每月 53,700 日元，合计最多每月 130,920 日元；医疗费另由医疗扶助承担，本人无需负担。[8][9] 儿童津贴：3 岁到高中阶段的第一、第二个孩子每人每月 1 万日元，自 2024 年 10 月起没有收入限制。[10]"
+          ],
+          [
+            "h",
+            "算一算五个家庭"
+          ],
+          [
+            "p",
+            "1. 在东京独自生活的二十多岁上班族（年收入 300 万日元）。目前没有领取任何补贴，7 万日元全部是增加的。按竹中的说法，需要返还的是“收入高的人”，年收入 300 万日元不太可能算在内。所以每月领 7 万日元，一年 84 万日元。不过，若为筹资而增税，就要从中扣除。这个家庭的答案是：最多每月 7 万日元，增税多少就缩水多少。"
+          ],
+          [
+            "p",
+            "2. 夫妻加两个小学生的四口之家（年收入 500 万日元）。目前两个孩子的儿童津贴合计每月 2 万日元。若基本收入一律发放，四人每月 28 万日元，即使失去儿童津贴，也每月多出 26 万日元。若像竹中说的那样减少孩子的部分，按原田方案每月 3 万日元，基本收入为每月 20 万日元，净增每月 18 万日元。有孩子的家庭是这个方案中最容易获益的。这同样是增税之前的数字。"
+          ],
+          [
+            "p",
+            "3. 靠养老金生活的老年夫妇（丈夫曾是公司职员，妻子是全职主妇）。目前两人养老金合计每月 237,279 日元，其中两人的基础养老金为 141,216 日元，丈夫的厚生年金部分为 96,063 日元。[6] 两人的基本收入是每月 14 万日元。结果完全取决于养老金怎么处理。(A) 叠加在养老金之上：每月 377,279 日元，多出 14 万日元。(B) 只替换基础养老金：14 万 + 96,063 = 236,063 日元，每月只少 1,216 日元，几乎不变。(C) 养老金全部替换：只剩每月 14 万日元，每月减少 97,279 日元。"
+          ],
+          [
+            "p",
+            "须藤担心的正是 (C)。竹中在采访中说的“保障已缴部分”，接近 (B)。另外，只有国民年金的夫妇（例如曾经的个体经营者，全额时两人每月 141,216 日元），在任何情况下都差不多。反过来，有一段时间没能缴纳保险费、领不到全额的人，会因基本收入而增加。"
+          ],
+          [
+            "p",
+            "4. 在东京 23 区领取生活保护的三十多岁单身者。目前生活扶助加住宅扶助最多每月 130,920 日元。[8] (A) 不足部分由生活保护补足：基本收入 7 万日元加保护费 60,920 日元，总额不变。(B) 废除生活保护：只剩每月 7 万日元，每月减少 60,920 日元。房租补助没了，还可能要自付医疗费。"
+          ],
+          [
+            "p",
+            "书中的“取消生活保护的费用”是 (B)，采访中的“生活保护也可以作为补充保留”是 (A)。对这个家庭来说，到底是哪一种，决定了一切。"
+          ],
+          [
+            "p",
+            "5. 夫妻加两个孩子的四口之家（年收入 1000 万日元）。目前儿童津贴每月 2 万日元。四人的基本收入为每月 28 万日元，这里起作用的是“高收入者事后返还”。如果不用返还：即使失去儿童津贴，也每月多 26 万日元。如果全部返还：基本收入一分不剩，还因失去儿童津贴每月少 2 万日元。年收入 1000 万日元很可能属于返还的一方，为筹资的增税也会重重落在这一层。比较现实的看法是“大约为零到亏损”。"
+          ],
+          [
+            "p",
+            "汇总如下（月额，增税之前）："
+          ],
+          [
+            "t",
+            "家庭 | 现在的补贴 | 基本收入 | 净变化\n单身、二十多岁、年收入 300 万日元 | 无 | 7 万日元 | +7 万日元（若增税则缩水）\n四口之家、年收入 500 万日元 | 儿童津贴 2 万日元 | 20 万–28 万日元 | +18 万至 +26 万日元\n曾是公司职员的老年夫妇 | 养老金 237,279 日元 | 14 万日元 | +14 万至 −97,279 日元（取决于养老金的处理）\n领取生活保护的单身者（东京 23 区） | 最多 130,920 日元 | 7 万日元 | ±0 至 −60,920 日元（取决于是否保留生活保护）\n四口之家、年收入 1000 万日元 | 儿童津贴 2 万日元 | 28 万日元 | +26 万至 −2 万日元（取决于返还）"
+          ],
+          [
+            "p",
+            "容易获益的是有孩子、目前补贴很少的家庭。可能吃亏的是依靠养老金或生活保护的人，以及需要返还或承担增税的高收入家庭。"
+          ],
+          [
+            "o",
+            "“7 万日元活不下去”的批评，主要针对养老金或生活保护被取消的情况。而竹中“我没说过靠 7 万日元能生活”的解释，读起来是以保留部分其他制度为前提的。只要把前提对齐，两边的说法都可以用数字来检验。"
+          ],
+          [
+            "h",
+            "全国要花多少钱"
+          ],
+          [
+            "p",
+            "看完家庭的钱包，再看国家的钱包。日本人口为 1 亿 2281 万 2000 人（总务省统计局，2026 年 5 月 1 日确定值）。[11] 给所有人每月 7 万日元、发一年，就是 7 万 × 12 × 1 亿 2281 万 2000，约 103.2 万亿日元。"
+          ],
+          [
+            "p",
+            "2026 财年国家一般会计预算为 122.3092 万亿日元，其中社会保障相关费用为 39.0559 万亿日元。[12] 基本收入的总额约为整个一般会计的 84%，约为社会保障相关费用的 2.6 倍。"
+          ],
+          [
+            "p",
+            "竹中说要把养老金和生活保护的财源挪过来。[3] 包括养老金和医疗在内、连同保险费在内的社会保障给付费总额为 144.1 万亿日元，其中养老金为 63.7 万亿日元。[13] 即使把养老金全部转给基本收入，离 103 万亿日元也还差约 40 万亿日元。"
+          ],
+          [
+            "p",
+            "要填补这个缺口，只能通过高收入者返还来减少基本收入的实际总额，或者增税。返还线划在哪里，所需财源和上表的结果都会随之变化。改变金额和对象后总额会怎样变化，可以用{本站的基本收入计算器|/calc/?c=jp&w=all&m=70000}试试：给所有人每月 7 万日元，约占 GDP 的 15.5%。"
+          ],
+          [
+            "h",
+            "总结"
+          ],
+          [
+            "p",
+            "竹中的方案，是 2020 年 9 月电视节目中展示的“全体每月 7 万日元，高收入者事后返还”。他的书把它说成以废除养老金和生活保护为交换。"
+          ],
+          [
+            "p",
+            "他后来解释说，7 万日元是平均数，他从没说过靠它能生活，已缴的养老金会得到保障，生活保护也可以保留。在最关键的一点上，书和采访说法不一。"
+          ],
+          [
+            "p",
+            "对家庭的影响取决于设计。有孩子的家庭容易大幅获益；依靠养老金或生活保护的人，根据制度是否保留，结果从“几乎不变”到“每月少几万甚至近 10 万日元”不等。"
+          ],
+          [
+            "p",
+            "给所有人发放，每年约 103 万亿日元。即使把养老金全部挪用也不够，返还和增税的设计不可回避。"
+          ],
+          [
+            "o",
+            "评价一个基本收入方案时，除了金额，还应该看两个问题：拿什么来换？谁来返还？同样是“每月 7 万日元”，答案不同，就是完全不同的制度。"
+          ],
+          [
+            "p",
+            "2020 年，日本确实给所有人发过一次 10 万日元，即特别定额给付金。这笔钱是怎么用掉的，我们在{关于 10 万日元给付金的随笔|/essays/japan-special-cash-payment/}中用数据做了回顾。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "“हर किसी को हर महीने 70,000 येन।” 2020 में अर्थशास्त्री हेइज़ो ताकेनाका ने जापानी टीवी पर यह विचार रखा और बड़ा हंगामा खड़ा हो गया। ताकेनाका जुनइचिरो कोइज़ुमी की सरकार (2001–2006) में आर्थिक और राजकोषीय नीति मंत्री और आंतरिक मामलों के मंत्री रह चुके थे, और उस समय स्टाफ़िंग कंपनी पसोना ग्रुप के चेयरमैन थे।[1] “70,000 येन में कोई कैसे जिएगा?” “तो क्या पेंशन ख़त्म कर दोगे?” इस योजना का हवाला देने वाली पोस्ट आज भी जापानी सोशल मीडिया पर दिखती हैं।"
+          ],
+          [
+            "p",
+            "यह साइट बेसिक इनकम का समर्थन करती है, पर किसी एक ख़ास योजना का नहीं। इसलिए पक्ष या विपक्ष तय करने से पहले हम एक ज़्यादा ज़मीनी सवाल से शुरू करते हैं: अगर यह योजना सच में लागू हो जाए, तो आपके घर के पास पैसा बढ़ेगा या घटेगा?"
+          ],
+          [
+            "o",
+            "छोटा जवाब है: यह डिज़ाइन पर निर्भर है। वही 70,000 येन फ़ायदा भी हो सकते हैं और नुक़सान भी, इस पर कि वे किस चीज़ की जगह लेते हैं और बाद में किसे लौटाने पड़ते हैं। नीचे हम इस दायरे को आँकड़ों में देखते हैं।"
+          ],
+          [
+            "h",
+            "ताकेनाका ने क्या प्रस्ताव रखा"
+          ],
+          [
+            "p",
+            "शुरुआत 23 सितंबर 2020 की शाम BS-TBS के समाचार कार्यक्रम “होदो 1930” से हुई। कार्यक्रम ने ताकेनाका की राय एक पैनल पर दिखाई, जिस पर लिखा था “हर नागरिक को हर महीने 70,000 येन।”[1]"
+          ],
+          [
+            "p",
+            "ख़बरों के मुताबिक़, लोगों के “माई नंबर” पहचान नंबर को उनके बैंक खातों से जोड़कर आय पर नज़र रखी जाती, और एक तय आय से ऊपर वाले लोग पैसा मिलने के बाद उसे लौटा देते। कार्यक्रम में पूछा गया कि क्या तब पेंशन और सरकारी सहायता की ज़रूरत नहीं रहेगी, तो ताकेनाका ने कथित तौर पर कहा, “मूल रूप से, हाँ।”[2]"
+          ],
+          [
+            "p",
+            "जापान से बाहर के पाठकों के लिए थोड़ी पृष्ठभूमि। जापान की सरकारी पेंशन (नेनकिन) की दो परतें हैं: एक तय रक़म वाली बुनियादी पेंशन, जिसे हर कोई कमा सकता है और जिसे नेशनल पेंशन कहते हैं; और कर्मचारी रहे लोगों के लिए कमाई से जुड़ी अतिरिक्त पेंशन, जिसे एम्प्लॉइज़ पेंशन कहते हैं। सरकारी सहायता (सेइकात्सु होगो) आय-जाँच वाला आख़िरी सुरक्षा जाल है: यह उन लोगों का गुज़ारा, किराया और इलाज का ख़र्च देती है जिनके पास और कोई रास्ता नहीं।"
+          ],
+          [
+            "p",
+            "अगस्त 2020 में छपी उनकी किताब में बात साफ़ लिखी थी: “हर व्यक्ति को हर महीने 70,000 येन देने की योजना पेंशन और सरकारी सहायता जैसी सामाजिक सुरक्षा को ख़त्म करने के बदले की बात भी है। अगर हर नागरिक को 70,000 येन दें, तो बुज़ुर्गों की पेंशन और सरकारी सहायता का ख़र्च हटाया जा सकता है।”[3][4]"
+          ],
+          [
+            "h",
+            "हंगामा, और उनकी सफ़ाई"
+          ],
+          [
+            "p",
+            "आलोचना फ़ौरन आई। “हर व्यक्ति के 70,000 येन महीने में गुज़ारा नहीं हो सकता।” “क्या यह बस सामाजिक सुरक्षा में कटौती नहीं है?” J-CAST न्यूज़ के अनुसार इंटरनेट ऐसी टिप्पणियों से भर गया।[1] उस समय ऊपरी सदन के सदस्य गेनकी सुदो ने लिखा, “क्या आप पेंशन पर जीने वालों से भूखे मरने को कह रहे हैं?” और कहा कि बेसिक इनकम कम से कम 2,00,000 येन महीना होनी चाहिए।[2]"
+          ],
+          [
+            "p",
+            "7 अक्टूबर 2020 को ताकेनाका ने J-CAST न्यूज़ से बात की। संक्षेप में उन्होंने कहा:[1]"
+          ],
+          [
+            "p",
+            "उन्होंने कभी नहीं कहा कि कोई 70,000 येन में जी सकता है। 70,000 येन एक औसत था, और उस स्तर पर सरकारी ख़ज़ाने पर बोझ बहुत भारी नहीं होगा।"
+          ],
+          [
+            "p",
+            "चार लोगों के परिवार को शायद 2,80,000 येन की ज़रूरत न हो, इसलिए तीसरे और चौथे सदस्य को कम मिल सकता है, और बदले में अकेले रहने वाले को थोड़ा ज़्यादा।"
+          ],
+          [
+            "p",
+            "पेंशन बेसिक इनकम में बदल दी जाएगी, पर लोगों ने जो पहले से जमा किया है उसकी रक्षा होगी। सरकारी सहायता भी पूरक के रूप में बनी रह सकती है।"
+          ],
+          [
+            "p",
+            "यह प्रगतिशील कर की तरह चलेगी: ज़्यादा कमाने वालों पर ऊँची दर, और कम आय वालों पर ऋणात्मक दर, यानी उन्हें पैसा मिलेगा।"
+          ],
+          [
+            "p",
+            "पहले सबको पैसा देना और ज़्यादा कमाने वालों से बाद में टैक्स रिटर्न के ज़रिए वापस लेना बुरा तरीक़ा नहीं है, क्योंकि पहले से कोई नहीं जानता कि किसे मदद की ज़रूरत पड़ेगी।"
+          ],
+          [
+            "o",
+            "किताब में पेंशन और सरकारी सहायता को “ख़त्म करने के बदले”, और इंटरव्यू में “जमा की गई रक़म की रक्षा” तथा सहायता “पूरक के रूप में”: इन दोनों से बहुत अलग छवि बनती है। असली योजना कौन-सी है? कोई विस्तृत डिज़ाइन सामने नहीं आया। और परिवारों का हिसाब लगाते समय सबसे ज़्यादा असर इसी अस्पष्ट हिस्से का पड़ता है।"
+          ],
+          [
+            "h",
+            "70,000 येन का आँकड़ा कहाँ से आया"
+          ],
+          [
+            "p",
+            "J-CAST न्यूज़ के अनुसार ताकेनाका की योजना अर्थशास्त्री युताका हरादा के विचारों पर आधारित है। हरादा ने 2015 की अपनी किताब “बेसिक इनकम: क्या राज्य ग़रीबी की समस्या हल कर सकता है?” और दूसरी जगहों पर 20 साल और उससे ऊपर के हर व्यक्ति को 70,000 येन और 20 से कम उम्र वालों को 30,000 येन महीना देने का प्रस्ताव रखा था। लेख के मुताबिक़ ताकेनाका ने इसे “लगभग 70,000 येन” के औसत तक फैलाकर प्रगतिशील ढाँचा दिया लगता है।[1][5]"
+          ],
+          [
+            "p",
+            "70,000 येन लगभग पूरी बुनियादी पेंशन के बराबर भी है। वित्त वर्ष 2026 में पूरी नेशनल पेंशन 70,608 येन महीना है।[6]"
+          ],
+          [
+            "p",
+            "राजनीतिक दलों में, जापान इनोवेशन पार्टी (निप्पॉन इशिन नो काई) ने अप्रैल 2021 के अपने अधिवेशन में कहा कि वह बेसिक इनकम को, न्यूनतम आय गारंटी के रूप में, अपने घोषणापत्र में रखेगी। तब भी बड़ा मुद्दा यही था कि सबको पैसा देने के लिए साल में लगभग 100 ट्रिलियन येन चाहिए।[7]"
+          ],
+          [
+            "h",
+            "हमारी मान्यताएँ"
+          ],
+          [
+            "p",
+            "ताकेनाका ने विस्तृत डिज़ाइन नहीं दिया, इसलिए हम पहले अपनी मान्यताएँ तय करते हैं।"
+          ],
+          [
+            "p",
+            "रक़म हर व्यक्ति के लिए 70,000 येन महीना है, बच्चों समेत, जैसा कार्यक्रम के पैनल पर था। चार लोगों वाले परिवारों के लिए हम वह स्थिति भी दिखाते हैं जिसमें बच्चों को हरादा के प्रस्ताव वाले 30,000 येन मिलें।"
+          ],
+          [
+            "p",
+            "पेंशन का हिसाब तीन तरह से। (A) पेंशन जैसी है वैसी रहे और बेसिक इनकम ऊपर से जुड़े। (B) सिर्फ़ बुनियादी पेंशन की जगह बेसिक इनकम ले, और कमाई से जुड़ी एम्प्लॉइज़ पेंशन सुरक्षित रहे। (C) पूरी पेंशन की जगह बेसिक इनकम ले।"
+          ],
+          [
+            "p",
+            "सरकारी सहायता का हिसाब दो तरह से। (A) जो कमी बेसिक इनकम से पूरी न हो, उसे सहायता पूरी करे। (B) सरकारी सहायता ख़त्म कर दी जाए।"
+          ],
+          [
+            "p",
+            "बाल भत्ते (जिदो तेआते) की जगह बेसिक इनकम ले लेती है, जैसा ज़्यादातर बेसिक इनकम योजनाओं में होता है।"
+          ],
+          [
+            "p",
+            "ज़्यादा कमाने वालों से वसूली के लिए कोई आय सीमा या रक़म नहीं बताई गई, इसलिए हम दोनों छोर दिखाते हैं: कुछ भी नहीं लौटाया, और सब कुछ लौटाया।"
+          ],
+          [
+            "p",
+            "योजना के लिए टैक्स बढ़ोतरी या अंशदान में बदलाव को शामिल नहीं किया, क्योंकि कुछ तय नहीं हुआ है। कोई भी टैक्स बढ़ोतरी हर परिवार के नतीजे को उतना कम कर देगी।"
+          ],
+          [
+            "p",
+            "सभी रक़में मासिक हैं, वित्त वर्ष 2026 के नियमों के अनुसार।"
+          ],
+          [
+            "p",
+            "मौजूदा आँकड़े सरकारी स्रोतों से लिए गए हैं। पेंशन: पूरी नेशनल पेंशन 70,608 येन महीना है, और सरकार का “मॉडल दंपति” (पति ने 40 साल औसत वेतन पर काम किया, पत्नी घर पर रहीं) दो बुनियादी पेंशन समेत 2,37,279 येन महीना पाता है।[6] सरकारी सहायता: टोक्यो के 23 वार्डों (सबसे ऊँची जीवन-लागत श्रेणी 1-1) में 20 से 40 साल के अकेले व्यक्ति को गुज़ारे के लिए 77,220 येन महीना (46,930 + 27,790 + 2,500 का विशेष जोड़) मिलता है, और टोक्यो में अकेले व्यक्ति के किराए के लिए आवास सहायता अधिकतम 53,700 येन। कुल मिलाकर अधिकतम 1,30,920 येन महीना, और इलाज का ख़र्च अलग से पूरा मिलता है, अपनी जेब से कुछ नहीं।[8][9] बाल भत्ता: 3 साल से हाई-स्कूल की उम्र तक पहले या दूसरे बच्चे के लिए 10,000 येन महीना, अक्टूबर 2024 से कोई आय सीमा नहीं।[10]"
+          ],
+          [
+            "h",
+            "पाँच परिवारों का हिसाब"
+          ],
+          [
+            "p",
+            "1. टोक्यो में अकेले रहने वाला 20–30 साल की उम्र का दफ़्तर कर्मचारी, सालाना आय 30 लाख येन। अभी कोई भत्ता नहीं मिलता, इसलिए पूरे 70,000 येन जुड़ते हैं। ताकेनाका के अनुसार लौटाना “ऊँची आय वालों” को है, और 30 लाख येन सालाना शायद उसमें न आए। तो उन्हें 70,000 येन महीना, यानी 8,40,000 येन साल मिलते हैं। योजना के लिए कोई टैक्स बढ़ोतरी इसी में से कटेगी। उनका जवाब: अधिकतम 70,000 येन महीना, टैक्स बढ़ोतरी जितना घटाए उतना कम।"
+          ],
+          [
+            "p",
+            "2. प्राइमरी स्कूल के दो बच्चों वाला दंपति, सालाना आय 50 लाख येन। अभी दो बच्चों का बाल भत्ता 20,000 येन महीना है। एक समान बेसिक इनकम से परिवार को 2,80,000 येन महीना मिलेंगे: बाल भत्ता जाने के बाद भी 2,60,000 येन महीना ज़्यादा। अगर ताकेनाका के सुझाव के मुताबिक़ बच्चों को कम मिले और हम हरादा के 30,000 येन लें, तो बेसिक इनकम 2,00,000 येन होगी और शुद्ध फ़ायदा 1,80,000 येन महीना। बच्चों वाले परिवार इस योजना में सबसे ज़्यादा फ़ायदे में रहने वाले हैं। ये आँकड़े भी किसी टैक्स बढ़ोतरी से पहले के हैं।"
+          ],
+          [
+            "p",
+            "3. एक रिटायर दंपति: पति कंपनी में काम करते थे, पत्नी घर पर रहीं। उनकी पेंशन अभी कुल 2,37,279 येन महीना है: दो बुनियादी पेंशन में 1,41,216 येन और पति की एम्प्लॉइज़ पेंशन में 96,063 येन।[6] दो लोगों की बेसिक इनकम 1,40,000 येन है। नतीजा पूरी तरह इस पर टिका है कि पेंशन का क्या होता है। (A) ऊपर से जुड़े: 3,77,279 येन महीना, 1,40,000 येन ज़्यादा। (B) सिर्फ़ बुनियादी पेंशन बदले: 1,40,000 + 96,063 = 2,36,063 येन, केवल 1,216 येन महीना कम, लगभग कोई बदलाव नहीं। (C) पूरी पेंशन बदले: सिर्फ़ 1,40,000 येन, 97,279 येन महीना कम।"
+          ],
+          [
+            "p",
+            "सुदो की चिंता स्थिति (C) को लेकर थी। ताकेनाका ने इंटरव्यू में जो कहा, जमा की गई रक़म की रक्षा, वह (B) के क़रीब है। जिन दंपतियों के पास सिर्फ़ नेशनल पेंशन है, जैसे पहले स्वरोज़गार करने वाले (पूरी दर पर दो लोगों के 1,41,216 येन), उन्हें हर स्थिति में लगभग उतना ही मिलेगा। जो लोग कुछ सालों तक अंशदान नहीं भर पाए और पूरी पेंशन नहीं पाते, उन्हें फ़ायदा होगा।"
+          ],
+          [
+            "p",
+            "4. टोक्यो के 23 वार्डों में सरकारी सहायता पर रहने वाला 30–40 साल की उम्र का अकेला व्यक्ति। अभी गुज़ारे और किराए के लिए अधिकतम 1,30,920 येन महीना मिलता है।[8] (A) अगर सहायता बेसिक इनकम की कमी पूरी करे: 70,000 येन और 60,920 येन सहायता, कुल वही जो अभी है। (B) अगर सहायता ख़त्म हो: सिर्फ़ 70,000 येन, 60,920 येन महीना कम। किराए की मदद बंद हो जाएगी, और इलाज का ख़र्च भी ख़ुद उठाना पड़ सकता है।"
+          ],
+          [
+            "p",
+            "किताब का “सरकारी सहायता का ख़र्च हटाना” स्थिति (B) है; इंटरव्यू का “सहायता पूरक के रूप में रह सकती है” स्थिति (A)। इस परिवार के लिए सब कुछ इसी पर टिका है कि कौन-सी स्थिति है।"
+          ],
+          [
+            "p",
+            "5. दो बच्चों वाला दंपति, सालाना आय 1 करोड़ येन। अभी बाल भत्ता 20,000 येन महीना है। चार लोगों की बेसिक इनकम 2,80,000 येन महीना है, और यहीं “ज़्यादा कमाने वाले बाद में लौटाएँगे” वाली बात आती है। अगर रख सकें: बाल भत्ता जाने के बाद भी 2,60,000 येन महीना ज़्यादा। अगर सब लौटाना पड़े: बेसिक इनकम में से कुछ नहीं बचता, और बाल भत्ता जाने से 20,000 येन महीना का नुक़सान। 1 करोड़ येन वाला परिवार शायद लौटाने वालों में होगा, और योजना के लिए टैक्स बढ़ोतरी भी इसी वर्ग पर भारी पड़ेगी। व्यावहारिक रूप से लगभग शून्य से नुक़सान के बीच मानिए।"
+          ],
+          [
+            "p",
+            "सार (मासिक, किसी टैक्स बढ़ोतरी से पहले):"
+          ],
+          [
+            "t",
+            "परिवार | अभी के भत्ते | बेसिक इनकम | शुद्ध बदलाव\nअकेला, 20–30 साल, 30 लाख येन सालाना | कोई नहीं | 70,000 येन | +70,000 येन (टैक्स बढ़ोतरी घटाकर)\nचार लोगों का परिवार, 50 लाख येन सालाना | बाल भत्ता 20,000 येन | 2,00,000–2,80,000 येन | +1,80,000 से +2,60,000 येन\nरिटायर दंपति (पूर्व कर्मचारी) | पेंशन 2,37,279 येन | 1,40,000 येन | +1,40,000 से −97,279 येन (पेंशन पर निर्भर)\nसरकारी सहायता पर अकेला व्यक्ति (टोक्यो 23 वार्ड) | अधिकतम 1,30,920 येन | 70,000 येन | ±0 से −60,920 येन (सहायता रहे या नहीं)\nचार लोगों का परिवार, 1 करोड़ येन सालाना | बाल भत्ता 20,000 येन | 2,80,000 येन | +2,60,000 से −20,000 येन (वसूली पर निर्भर)"
+          ],
+          [
+            "p",
+            "फ़ायदे में रहने की संभावना बच्चों वाले और अभी कम भत्ते पाने वाले परिवारों की है। नुक़सान उन्हें हो सकता है जो पेंशन या सरकारी सहायता पर निर्भर हैं, और उन ज़्यादा कमाने वाले परिवारों को जो पैसा लौटाएँगे या टैक्स बढ़ोतरी का बोझ उठाएँगे।"
+          ],
+          [
+            "o",
+            "“70,000 येन में कोई नहीं जी सकता” वाली शिकायत ज़्यादातर उन स्थितियों की है जिनमें पेंशन या सरकारी सहायता ख़त्म हो जाती है। ताकेनाका का जवाब कि उन्होंने “कभी नहीं कहा कि इसमें जिया जा सकता है”, यह मानकर चलता लगता है कि कुछ दूसरे भत्ते बने रहेंगे। मान्यताएँ एक जैसी कर दें, तो दोनों दावों को आँकड़ों से परखा जा सकता है।"
+          ],
+          [
+            "h",
+            "देश पर कितना ख़र्च?"
+          ],
+          [
+            "p",
+            "घर के बटुए के बाद देश का बटुआ। जापान की आबादी 12,28,12,000 है (सांख्यिकी ब्यूरो, 1 मई 2026 का अंतिम अनुमान)।[11] सबको एक साल तक 70,000 येन महीना देने का ख़र्च 70,000 × 12 × 12,28,12,000, यानी लगभग 103.2 ट्रिलियन येन है।"
+          ],
+          [
+            "p",
+            "वित्त वर्ष 2026 में जापान का सामान्य खाता बजट 122.3092 ट्रिलियन येन है, जिसमें सामाजिक सुरक्षा ख़र्च 39.0559 ट्रिलियन येन है।[12] बेसिक इनकम पूरे सामान्य खाते का लगभग 84% और सामाजिक सुरक्षा ख़र्च का लगभग 2.6 गुना होगी।"
+          ],
+          [
+            "p",
+            "ताकेनाका कहते हैं कि पेंशन और सरकारी सहायता का पैसा इधर लगाया जाएगा।[3] पेंशन और इलाज समेत, अंशदान गिनकर, सारे सामाजिक सुरक्षा लाभ 144.1 ट्रिलियन येन के हैं। इनमें पेंशन 63.7 ट्रिलियन येन है।[13] सारी पेंशन बेसिक इनकम में लगा दें, तब भी 103 ट्रिलियन येन से लगभग 40 ट्रिलियन येन कम पड़ेंगे।"
+          ],
+          [
+            "p",
+            "यह कमी सिर्फ़ दो तरीक़ों से पूरी हो सकती है: ज़्यादा कमाने वालों से वसूली करके असली ख़र्च घटाना, या टैक्स बढ़ाना। वसूली की रेखा कहाँ खींची जाती है, इससे ज़रूरी पैसा भी बदलता है और ऊपर की तालिका के नतीजे भी। दूसरी रक़में और समूह {हमारे बेसिक इनकम कैलकुलेटर|/calc/?c=jp&w=all&m=70000} में आज़माइए: सबको 70,000 येन महीना GDP का लगभग 15.5% है।"
+          ],
+          [
+            "h",
+            "इससे क्या समझें"
+          ],
+          [
+            "p",
+            "सितंबर 2020 में टीवी पर दिखाई गई ताकेनाका की योजना थी: सबको 70,000 येन महीना, और ज़्यादा कमाने वाले बाद में लौटाएँ। उनकी किताब ने इसे पेंशन और सरकारी सहायता ख़त्म करने के बदले के रूप में रखा।"
+          ],
+          [
+            "p",
+            "बाद में उन्होंने कहा कि 70,000 येन एक औसत था, उन्होंने कभी नहीं कहा कि इसमें जिया जा सकता है, जमा की गई पेंशन सुरक्षित रहेगी और सरकारी सहायता बनी रह सकती है। सबसे अहम बिंदु पर उनकी किताब और इंटरव्यू में मेल नहीं है।"
+          ],
+          [
+            "p",
+            "परिवारों पर असर डिज़ाइन पर निर्भर है। बच्चों वाले परिवारों को बड़ा फ़ायदा होने की संभावना है। पेंशन या सरकारी सहायता पर निर्भर लोगों के लिए, इन लाभों के बचे रहने के हिसाब से नतीजा “लगभग उतना ही” से लेकर “हर महीने हज़ारों से लगभग 1,00,000 येन कम” तक है।"
+          ],
+          [
+            "p",
+            "सबको पैसा देने का ख़र्च साल में लगभग 103 ट्रिलियन येन होगा। पेंशन का सारा पैसा भी काफ़ी नहीं, इसलिए वसूली और टैक्स का डिज़ाइन छोड़ा नहीं जा सकता।"
+          ],
+          [
+            "o",
+            "किसी बेसिक इनकम योजना को परखते समय रक़म से आगे दो सवाल देखने लायक़ हैं: इसके बदले क्या जा रहा है, और इसे लौटाता कौन है? जवाबों के हिसाब से वही “70,000 येन महीना” बिल्कुल अलग व्यवस्था हो सकती है।"
+          ],
+          [
+            "p",
+            "2020 में जापान ने सचमुच सबको एक बार 1,00,000 येन दिए थे, “स्पेशल कैश पेमेंट” के रूप में। वह पैसा कैसे ख़र्च हुआ, यह हमने आँकड़ों के साथ {1,00,000 येन वाले निबंध|/essays/japan-special-cash-payment/} में देखा है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "«70.000 yenes al mes para todos». En 2020 el economista Heizo Takenaka llevó esta idea a la televisión japonesa y desató una tormenta. Takenaka fue ministro de Política Económica y Fiscal y ministro de Asuntos Internos en el Gobierno de Junichiro Koizumi (2001–2006), y entonces presidía la empresa de trabajo temporal Pasona Group.[1] «Nadie puede vivir con 70.000 yenes». «¿Entonces quiere eliminar las pensiones?». Todavía hoy aparecen en las redes sociales japonesas mensajes que citan su plan."
+          ],
+          [
+            "p",
+            "Este sitio apoya la renta básica, pero no un plan concreto. Así que, antes de ponernos a favor o en contra, empezamos por una pregunta más cotidiana: si el plan se hiciera realidad, ¿tu hogar tendría más dinero o menos?"
+          ],
+          [
+            "o",
+            "La respuesta corta: depende del diseño. Los mismos 70.000 yenes pueden ser una ganancia o una pérdida según lo que sustituyan y quién tenga que devolverlos después. A continuación ponemos cifras a ese margen."
+          ],
+          [
+            "h",
+            "Qué propuso Takenaka"
+          ],
+          [
+            "p",
+            "Todo empezó la noche del 23 de septiembre de 2020, en el informativo Hōdō 1930 de BS-TBS. El programa presentó la idea de Takenaka en un panel que decía «70.000 yenes al mes para cada ciudadano».[1]"
+          ],
+          [
+            "p",
+            "Según la prensa, los ingresos se controlarían vinculando el número de identificación My Number de cada persona con su cuenta bancaria, y quien superase cierto nivel de ingresos devolvería el dinero después de recibirlo. Preguntado en el programa si entonces dejarían de hacer falta las pensiones y la asistencia pública, Takenaka habría respondido: «Básicamente, sí».[2]"
+          ],
+          [
+            "p",
+            "Un poco de contexto para quien lea desde fuera de Japón. La pensión pública japonesa (nenkin) tiene dos capas: una pensión básica de cuantía fija a la que todos pueden acceder, la Pensión Nacional, y, para quienes trabajaron como asalariados, un complemento ligado a lo cotizado, la Pensión de los Empleados. La asistencia pública (seikatsu hogo) es la última red de seguridad, sujeta a comprobación de recursos: paga el sustento, el alquiler y la atención médica de quien no tiene otra forma de salir adelante."
+          ],
+          [
+            "p",
+            "Su libro, publicado en agosto de 2020, lo decía sin rodeos: «El plan de pagar 70.000 yenes al mes a cada persona es también un intercambio por la abolición de la seguridad social, como las pensiones y la asistencia pública. Si pagamos 70.000 yenes a todos los ciudadanos, podemos suprimir las pensiones de los mayores y el gasto en asistencia pública».[3][4]"
+          ],
+          [
+            "h",
+            "La polémica y su explicación"
+          ],
+          [
+            "p",
+            "Las críticas llegaron enseguida. «Nadie puede vivir con 70.000 yenes al mes». «¿No es esto un simple recorte de la seguridad social?». J-CAST News contó que comentarios así inundaron internet.[1] Genki Sudo, entonces miembro de la Cámara de Consejeros, escribió: «¿Les está diciendo a los pensionistas que se mueran de hambre?», y añadió que una renta básica necesitaría al menos 200.000 yenes al mes.[2]"
+          ],
+          [
+            "p",
+            "El 7 de octubre de 2020, Takenaka habló con J-CAST News. En resumen, dijo:[1]"
+          ],
+          [
+            "p",
+            "Nunca había dicho que se pudiera vivir con 70.000 yenes. Era una media, y a ese nivel el coste para las finanzas públicas no sería demasiado alto."
+          ],
+          [
+            "p",
+            "Una familia de cuatro quizá no necesite 280.000 yenes, así que el tercer y cuarto miembro podrían recibir menos y, a cambio, quien vive solo, algo más."
+          ],
+          [
+            "p",
+            "Las pensiones pasarían a la renta básica protegiendo lo ya cotizado. La asistencia pública también podría seguir, como complemento."
+          ],
+          [
+            "p",
+            "Funcionaría como un impuesto progresivo: tipos altos para quien gana mucho y un tipo negativo, es decir, recibir dinero, para quien gana poco."
+          ],
+          [
+            "p",
+            "Pagar primero a todos y que quien gana mucho lo devuelva después en la declaración de la renta no era mal método, porque nadie sabe de antemano quién va a necesitar ayuda."
+          ],
+          [
+            "o",
+            "«Un intercambio por la abolición» de pensiones y asistencia, en el libro, y «proteger lo cotizado» con la asistencia «como complemento», en la entrevista, dejan impresiones muy distintas. ¿Cuál es el plan de verdad? No se ha publicado ningún diseño detallado. Y es justo esa parte difusa la que más pesa cuando se hacen las cuentas de cada hogar."
+          ],
+          [
+            "h",
+            "De dónde salen los 70.000 yenes"
+          ],
+          [
+            "p",
+            "Según J-CAST News, el plan de Takenaka parte de las ideas del economista Yutaka Harada. En su libro de 2015 La renta básica: ¿puede el Estado resolver la pobreza? y en otros textos, Harada propuso 70.000 yenes al mes para los mayores de 20 años y 30.000 para los menores. Takenaka parece haberlo ampliado a «unos 70.000 yenes» de media con una estructura progresiva, dice el artículo.[1][5]"
+          ],
+          [
+            "p",
+            "70.000 yenes es además casi lo mismo que la pensión básica completa. En el ejercicio 2026, la Pensión Nacional completa es de 70.608 yenes al mes.[6]"
+          ],
+          [
+            "p",
+            "Entre los partidos, el Partido de la Innovación de Japón (Nippon Ishin no Kai) anunció en su congreso de abril de 2021 que llevaría en su programa una renta básica, presentada como ingreso mínimo garantizado. También entonces el gran debate fue que pagar a todos exigiría unos 100 billones de yenes al año.[7]"
+          ],
+          [
+            "h",
+            "Nuestros supuestos"
+          ],
+          [
+            "p",
+            "Como Takenaka no ha presentado un diseño detallado, fijamos primero los supuestos."
+          ],
+          [
+            "p",
+            "La cuantía es de 70.000 yenes al mes por persona, niños incluidos, como en el panel del programa. Para los hogares de cuatro mostramos también el caso en que los niños reciben los 30.000 yenes de Harada."
+          ],
+          [
+            "p",
+            "Las pensiones se calculan de tres maneras. (A) Las pensiones siguen igual y la renta básica se suma. (B) Solo la pensión básica se sustituye por la renta básica y se protege el complemento de la Pensión de los Empleados. (C) Las pensiones se sustituyen por completo."
+          ],
+          [
+            "p",
+            "La asistencia pública se calcula de dos maneras. (A) La asistencia cubre lo que no cubra la renta básica. (B) La asistencia pública se suprime."
+          ],
+          [
+            "p",
+            "El subsidio por hijo (jidō teate) se sustituye por la renta básica, como en la mayoría de los planes."
+          ],
+          [
+            "p",
+            "Para la devolución de quienes ganan mucho no se ha dado ningún umbral ni cuantía, así que mostramos los dos extremos: no devolver nada y devolverlo todo."
+          ],
+          [
+            "p",
+            "No incluimos subidas de impuestos ni de cotizaciones para financiarlo, porque no se han concretado. Cualquier subida rebajaría el resultado de cada hogar en esa cantidad."
+          ],
+          [
+            "p",
+            "Todas las cifras son mensuales, con las reglas del ejercicio 2026."
+          ],
+          [
+            "p",
+            "Las cifras actuales proceden de fuentes oficiales. Pensiones: la Pensión Nacional completa es de 70.608 yenes al mes, y la «pareja modelo» del Gobierno (marido que trabajó 40 años con salario medio y mujer que se quedó en casa) recibe 237.279 yenes al mes, incluidas dos pensiones básicas.[6] Asistencia pública: una persona sola de 20 a 40 años en los 23 distritos de Tokio (el grado de coste de vida más alto, 1-1) recibe 77.220 yenes al mes para su sustento (46.930 + 27.790 + un suplemento especial de 2.500) y una ayuda para el alquiler de hasta 53.700 yenes. En total, hasta 130.920 yenes al mes, y la atención médica se cubre aparte, sin pagar nada.[8][9] Subsidio por hijo: 10.000 yenes al mes por el primer o segundo hijo de 3 años hasta edad de bachillerato, sin límite de ingresos desde octubre de 2024.[10]"
+          ],
+          [
+            "h",
+            "Cinco hogares, con números"
+          ],
+          [
+            "p",
+            "1. Un oficinista veinteañero que vive solo en Tokio y gana 3 millones de yenes al año. Ahora no recibe ninguna prestación, así que suma los 70.000 yenes enteros. Según Takenaka, devuelven «las personas con ingresos altos», y 3 millones al año difícilmente cuentan. Recibe, pues, 70.000 yenes al mes, 840.000 al año. Cualquier subida de impuestos para financiarlo saldría de ahí. Su respuesta: hasta 70.000 yenes al mes, menos lo que se lleven los impuestos."
+          ],
+          [
+            "p",
+            "2. Una pareja con dos hijos en primaria que gana 5 millones al año. Ahora cobra 20.000 yenes al mes de subsidio por los dos hijos. Con una renta básica igual para todos, la familia recibe 280.000 yenes al mes: aun perdiendo el subsidio, son 260.000 más. Si los niños reciben menos, como sugirió Takenaka, y usamos los 30.000 de Harada, la renta básica queda en 200.000 yenes y la ganancia neta en 180.000 al mes. Las familias con hijos son las que más probablemente ganan con este plan. De nuevo, antes de cualquier subida de impuestos."
+          ],
+          [
+            "p",
+            "3. Una pareja jubilada: él trabajó en una empresa y ella se quedó en casa. Sus pensiones suman ahora 237.279 yenes al mes: 141.216 de dos pensiones básicas y 96.063 del complemento de la Pensión de los Empleados de él.[6] La renta básica para dos es de 140.000 yenes. El resultado depende por completo de lo que pase con las pensiones. (A) Sumada: 377.279 yenes al mes, 140.000 más. (B) Solo se sustituye la pensión básica: 140.000 + 96.063 = 236.063, apenas 1.216 yenes menos al mes, casi igual. (C) Se sustituyen por completo: solo 140.000, 97.279 yenes menos al mes."
+          ],
+          [
+            "p",
+            "El caso (C) es el que preocupaba a Sudo. Lo que Takenaka describió en la entrevista, proteger lo cotizado, se parece a (B). Una pareja que solo tiene la Pensión Nacional, como antiguos autónomos (141.216 yenes para dos con la cuantía completa), queda más o menos igual en todos los casos. Quien no pudo cotizar algunos años y no cobra la pensión completa saldría ganando."
+          ],
+          [
+            "p",
+            "4. Una persona sola de treinta y tantos años que vive de la asistencia pública en los 23 distritos de Tokio. Ahora recibe hasta 130.920 yenes al mes para sustento y alquiler.[8] (A) Si la asistencia completa la renta básica: 70.000 más 60.920 de asistencia, el mismo total que ahora. (B) Si se suprime la asistencia: solo 70.000, 60.920 yenes menos al mes. Desaparecería la ayuda al alquiler y podría tener que empezar a pagar la atención médica."
+          ],
+          [
+            "p",
+            "El «suprimir el gasto en asistencia pública» del libro es (B); el «la asistencia puede seguir como complemento» de la entrevista es (A). Para este hogar, cuál de los dos sea lo decide todo."
+          ],
+          [
+            "p",
+            "5. Una pareja con dos hijos que gana 10 millones al año. Ahora cobra 20.000 yenes al mes de subsidio. La renta básica para cuatro es de 280.000 yenes al mes, y aquí entra en juego el «quien gana mucho lo devuelve después». Si se la quedan: 260.000 más al mes, aun sin el subsidio. Si lo devuelven todo: no les queda nada de la renta básica y pierden 20.000 al mes por el subsidio. Un hogar de 10 millones probablemente estaría entre los que devuelven, y las subidas de impuestos recaerían con fuerza sobre este grupo. Lo realista es esperar entre casi cero y una pérdida."
+          ],
+          [
+            "p",
+            "En resumen (mensual, antes de cualquier subida de impuestos):"
+          ],
+          [
+            "t",
+            "Hogar | Prestaciones ahora | Renta básica | Cambio neto\nPersona sola, veintitantos, 3 millones al año | Ninguna | 70.000 ¥ | +70.000 ¥ (menos posibles impuestos)\nFamilia de cuatro, 5 millones al año | Subsidio por hijo 20.000 ¥ | 200.000–280.000 ¥ | +180.000 a +260.000 ¥\nPareja jubilada (exasalariado) | Pensiones 237.279 ¥ | 140.000 ¥ | +140.000 a −97.279 ¥ (según las pensiones)\nPersona sola con asistencia pública (Tokio, 23 distritos) | Hasta 130.920 ¥ | 70.000 ¥ | ±0 a −60.920 ¥ (según si sigue la asistencia)\nFamilia de cuatro, 10 millones al año | Subsidio por hijo 20.000 ¥ | 280.000 ¥ | +260.000 a −20.000 ¥ (según la devolución)"
+          ],
+          [
+            "p",
+            "Los que probablemente ganan son los hogares con hijos y pocas prestaciones hoy. Los que pueden perder son quienes dependen de pensiones o de la asistencia pública, y los hogares de ingresos altos que devolverían el dinero o cargarían con las subidas de impuestos."
+          ],
+          [
+            "o",
+            "La queja de que «nadie puede vivir con 70.000 yenes» se refiere sobre todo a los casos en que desaparecen las pensiones o la asistencia. La respuesta de Takenaka, que «nunca dijo que se pudiera vivir con eso», parece dar por hecho que otras prestaciones siguen. Si se igualan los supuestos, ambas afirmaciones se pueden comprobar con números."
+          ],
+          [
+            "h",
+            "¿Cuánto costaría al país?"
+          ],
+          [
+            "p",
+            "Después del bolsillo de cada hogar, el del país. Japón tiene 122.812.000 habitantes (Oficina de Estadística, estimación definitiva a 1 de mayo de 2026).[11] Pagar a todos 70.000 yenes al mes durante un año supone 70.000 × 12 × 122.812.000, unos 103,2 billones de yenes."
+          ],
+          [
+            "p",
+            "El presupuesto de la cuenta general de Japón para el ejercicio 2026 es de 122,3092 billones de yenes, de los que 39,0559 billones son gasto en seguridad social.[12] La renta básica equivaldría a cerca del 84 % de toda la cuenta general y a unas 2,6 veces el gasto en seguridad social."
+          ],
+          [
+            "p",
+            "Takenaka dice que se redirigiría el dinero de las pensiones y la asistencia pública.[3] El conjunto de prestaciones de la seguridad social, con pensiones y sanidad y contando las cotizaciones, suma 144,1 billones de yenes. De ellos, las pensiones son 63,7 billones.[13] Aunque todas las pensiones pasaran a la renta básica, aún faltarían unos 40 billones para llegar a 103."
+          ],
+          [
+            "p",
+            "El hueco solo puede cerrarse reduciendo el coste real mediante la devolución de quienes ganan mucho o subiendo impuestos. Dónde se trace la línea de devolución cambia tanto la financiación necesaria como los resultados de la tabla. Puedes probar otras cuantías y grupos en {nuestra calculadora de renta básica|/calc/?c=jp&w=all&m=70000}: 70.000 yenes al mes para todos son cerca del 15,5 % del PIB."
+          ],
+          [
+            "h",
+            "Qué nos llevamos"
+          ],
+          [
+            "p",
+            "El plan de Takenaka, tal como se mostró en televisión en septiembre de 2020, era 70.000 yenes al mes para todos y que quien gana mucho lo devolviera después. Su libro lo presentaba como un intercambio por la abolición de las pensiones y la asistencia pública."
+          ],
+          [
+            "p",
+            "Más tarde dijo que 70.000 yenes era una media, que nunca había dicho que se pudiera vivir con eso, que se protegería lo ya cotizado y que la asistencia pública podía seguir. En el punto que más importa, su libro y su entrevista no coinciden."
+          ],
+          [
+            "p",
+            "Lo que significa para cada hogar depende del diseño. Las familias con hijos probablemente ganarían mucho. Para quien depende de pensiones o asistencia, el resultado va de «más o menos igual» a «decenas de miles de yenes, hasta casi 100.000, menos cada mes», según sobrevivan o no esas prestaciones."
+          ],
+          [
+            "p",
+            "Pagar a todos costaría unos 103 billones de yenes al año. Ni siquiera todo el dinero de las pensiones bastaría, así que el diseño de la devolución y de los impuestos no puede saltarse."
+          ],
+          [
+            "o",
+            "Al juzgar un plan de renta básica conviene mirar más allá de la cuantía y hacerse dos preguntas: ¿a cambio de qué? y ¿quién lo devuelve? Los mismos «70.000 yenes al mes» pueden ser un sistema completamente distinto según las respuestas."
+          ],
+          [
+            "p",
+            "En 2020 Japón sí pagó 100.000 yenes a todo el mundo, una sola vez, con el Pago Especial en Efectivo. Analizamos con datos cómo se usó ese dinero en {nuestro ensayo sobre los 100.000 yenes|/essays/japan-special-cash-payment/}."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "„70.000 Yen im Monat für alle.“ 2020 brachte der Ökonom Heizo Takenaka diese Idee ins japanische Fernsehen und löste einen Sturm aus. Takenaka war in der Regierung von Junichiro Koizumi (2001–2006) Minister für Wirtschafts- und Finanzpolitik sowie Innenminister und damals Vorsitzender des Personaldienstleisters Pasona Group.[1] „Von 70.000 Yen kann niemand leben.“ „Wollen Sie etwa die Renten abschaffen?“ Beiträge, die seinen Plan zitieren, tauchen in Japans sozialen Medien bis heute auf."
+          ],
+          [
+            "p",
+            "Diese Seite unterstützt das Grundeinkommen, aber keinen bestimmten Plan. Bevor wir uns also dafür oder dagegen entscheiden, beginnen wir mit einer bodenständigeren Frage: Hätte Ihr Haushalt mehr Geld oder weniger, wenn dieser Plan Wirklichkeit würde?"
+          ],
+          [
+            "o",
+            "Die kurze Antwort lautet: Es kommt auf die Ausgestaltung an. Dieselben 70.000 Yen können ein Gewinn oder ein Verlust sein, je nachdem, was sie ersetzen und wer sie später zurückzahlen muss. Unten belegen wir diese Spanne mit Zahlen."
+          ],
+          [
+            "h",
+            "Was Takenaka vorschlug"
+          ],
+          [
+            "p",
+            "Es begann am Abend des 23. September 2020 in der Nachrichtensendung Hōdō 1930 von BS-TBS. Die Sendung zeigte Takenakas Idee auf einer Tafel mit der Aufschrift „Jedem Bürger 70.000 Yen im Monat“.[1]"
+          ],
+          [
+            "p",
+            "Berichten zufolge sollten die Einkommen erfasst werden, indem man die My-Number-Identifikationsnummer mit dem Bankkonto verknüpft; wer über einem bestimmten Einkommen liegt, zahlt das Geld nach Erhalt zurück. Auf die Frage, ob Renten und Sozialhilfe dann überflüssig würden, soll Takenaka geantwortet haben: „Im Grunde ja.“[2]"
+          ],
+          [
+            "p",
+            "Etwas Hintergrund für Leser außerhalb Japans. Japans gesetzliche Rente (nenkin) hat zwei Schichten: eine Grundrente in fester Höhe, die alle erwerben können, die Nationale Rente, und für frühere Angestellte einen einkommensabhängigen Aufschlag, die Angestelltenrente. Die Sozialhilfe (seikatsu hogo) ist das bedürftigkeitsgeprüfte letzte Netz: Sie zahlt Lebensunterhalt, Miete und medizinische Versorgung für Menschen, die sich sonst nicht helfen können."
+          ],
+          [
+            "p",
+            "Sein im August 2020 erschienenes Buch sagt es ohne Umschweife: „Der Plan, jedem Menschen monatlich 70.000 Yen zu zahlen, ist auch ein Tausch gegen die Abschaffung von Sozialleistungen wie Renten und Sozialhilfe. Wenn wir allen Bürgern 70.000 Yen zahlen, können wir die Renten für Ältere und die Kosten der Sozialhilfe streichen.“[3][4]"
+          ],
+          [
+            "h",
+            "Die Empörung und seine Erklärung"
+          ],
+          [
+            "p",
+            "Die Kritik kam schnell. „Von 70.000 Yen im Monat kann niemand leben.“ „Ist das nicht einfach eine Kürzung der sozialen Sicherung?“ J-CAST News berichtete, solche Kommentare hätten das Netz überschwemmt.[1] Genki Sudo, damals Mitglied des Oberhauses, schrieb: „Sagen Sie den Rentnern, sie sollen verhungern?“, und meinte, ein Grundeinkommen brauche mindestens 200.000 Yen im Monat.[2]"
+          ],
+          [
+            "p",
+            "Am 7. Oktober 2020 sprach Takenaka mit J-CAST News. Zusammengefasst sagte er:[1]"
+          ],
+          [
+            "p",
+            "Er habe nie gesagt, man könne von 70.000 Yen leben. 70.000 Yen seien ein Durchschnitt, und auf diesem Niveau wäre die Belastung für den Staatshaushalt nicht zu groß."
+          ],
+          [
+            "p",
+            "Eine vierköpfige Familie brauche vielleicht keine 280.000 Yen, also könnten das dritte und vierte Mitglied weniger bekommen und dafür Alleinlebende etwas mehr."
+          ],
+          [
+            "p",
+            "Die Renten würden auf das Grundeinkommen umgestellt, wobei bereits eingezahlte Ansprüche geschützt blieben. Auch die Sozialhilfe könne als Ergänzung bestehen bleiben."
+          ],
+          [
+            "p",
+            "Es funktioniere wie eine progressive Steuer: hohe Sätze für Gutverdienende und ein negativer Satz, also eine Auszahlung, für Menschen mit niedrigem Einkommen."
+          ],
+          [
+            "p",
+            "Allen zuerst zu zahlen und Gutverdienende es später über die Steuererklärung zurückgeben zu lassen, sei keine schlechte Methode, denn niemand wisse im Voraus, wer Hilfe brauchen werde."
+          ],
+          [
+            "o",
+            "„Ein Tausch gegen die Abschaffung“ von Renten und Sozialhilfe im Buch, „eingezahlte Ansprüche schützen“ und Sozialhilfe „als Ergänzung“ im Interview: Das hinterlässt sehr unterschiedliche Eindrücke. Welcher ist der eigentliche Plan? Eine detaillierte Ausgestaltung wurde nie veröffentlicht. Und gerade dieser unklare Teil wiegt am schwersten, sobald man die Haushalte durchrechnet."
+          ],
+          [
+            "h",
+            "Woher die 70.000 Yen kommen"
+          ],
+          [
+            "p",
+            "Laut J-CAST News stützt sich Takenakas Plan auf die Ideen des Ökonomen Yutaka Harada. In seinem Buch Das Grundeinkommen: Kann der Staat die Armut lösen? von 2015 und anderswo schlug Harada 70.000 Yen im Monat für alle ab 20 Jahren und 30.000 Yen für Jüngere vor. Takenaka habe das offenbar auf „rund 70.000 Yen“ im Schnitt erweitert und progressiv gestaltet, schreibt der Artikel.[1][5]"
+          ],
+          [
+            "p",
+            "70.000 Yen liegen zudem nahe an der vollen Grundrente. Im Haushaltsjahr 2026 beträgt die volle Nationale Rente 70.608 Yen im Monat.[6]"
+          ],
+          [
+            "p",
+            "Unter den Parteien kündigte die Japanische Innovationspartei (Nippon Ishin no Kai) auf ihrem Parteitag im April 2021 an, ein Grundeinkommen, gefasst als garantiertes Mindesteinkommen, ins Wahlprogramm zu nehmen. Auch damals war der große Streitpunkt, dass Zahlungen an alle rund 100 Billionen Yen im Jahr erfordern würden.[7]"
+          ],
+          [
+            "h",
+            "Unsere Annahmen"
+          ],
+          [
+            "p",
+            "Da Takenaka keine detaillierte Ausgestaltung vorgelegt hat, legen wir zuerst unsere Annahmen fest."
+          ],
+          [
+            "p",
+            "Der Betrag ist 70.000 Yen im Monat pro Person, Kinder eingeschlossen, wie auf der Tafel der Sendung. Für die vierköpfigen Haushalte zeigen wir auch den Fall, dass Kinder Haradas 30.000 Yen bekommen."
+          ],
+          [
+            "p",
+            "Renten rechnen wir auf drei Arten. (A) Die Renten bleiben, das Grundeinkommen kommt obendrauf. (B) Nur die Grundrente wird durch das Grundeinkommen ersetzt, der einkommensabhängige Aufschlag der Angestelltenrente bleibt geschützt. (C) Die Renten werden vollständig ersetzt."
+          ],
+          [
+            "p",
+            "Sozialhilfe rechnen wir auf zwei Arten. (A) Die Sozialhilfe deckt, was das Grundeinkommen nicht deckt. (B) Die Sozialhilfe wird abgeschafft."
+          ],
+          [
+            "p",
+            "Das Kindergeld (jidō teate) wird durch das Grundeinkommen ersetzt, wie in den meisten Grundeinkommensplänen."
+          ],
+          [
+            "p",
+            "Für die Rückzahlung durch Gutverdienende wurden weder Einkommensgrenze noch Höhe genannt, daher zeigen wir beide Enden: nichts zurückzahlen und alles zurückzahlen."
+          ],
+          [
+            "p",
+            "Steuer- oder Beitragserhöhungen zur Finanzierung lassen wir weg, weil keine festgelegt wurden. Jede Steuererhöhung würde das Ergebnis jedes Haushalts um diesen Betrag senken."
+          ],
+          [
+            "p",
+            "Alle Beträge sind monatlich, nach den Regeln des Haushaltsjahres 2026."
+          ],
+          [
+            "p",
+            "Die heutigen Zahlen stammen aus amtlichen Quellen. Renten: Die volle Nationale Rente beträgt 70.608 Yen im Monat, und das „Modellehepaar“ der Regierung (er 40 Jahre mit Durchschnittslohn beschäftigt, sie Hausfrau) erhält 237.279 Yen im Monat einschließlich zweier Grundrenten.[6] Sozialhilfe: Eine alleinstehende Person zwischen 20 und 40 in Tokios 23 Bezirken (höchste Lebenshaltungsstufe 1-1) bekommt 77.220 Yen im Monat für den Lebensunterhalt (46.930 + 27.790 + 2.500 Sonderzuschlag) und Wohnhilfe für die Miete von bis zu 53.700 Yen. Zusammen bis zu 130.920 Yen im Monat; medizinische Versorgung wird gesondert übernommen, ohne Eigenanteil.[8][9] Kindergeld: 10.000 Yen im Monat für das erste oder zweite Kind von 3 Jahren bis zum Oberstufenalter, seit Oktober 2024 ohne Einkommensgrenze.[10]"
+          ],
+          [
+            "h",
+            "Fünf Haushalte, durchgerechnet"
+          ],
+          [
+            "p",
+            "1. Eine Büroangestellte Mitte zwanzig, allein in Tokio, mit 3 Millionen Yen Jahreseinkommen. Sie bezieht heute keine Leistungen, also kommen die vollen 70.000 Yen hinzu. Laut Takenaka zahlen „Menschen mit hohem Einkommen“ zurück, und 3 Millionen im Jahr zählen kaum dazu. Sie erhält also 70.000 Yen im Monat, 840.000 im Jahr. Steuererhöhungen zur Finanzierung gingen davon ab. Ihre Antwort: bis zu 70.000 Yen im Monat, abzüglich dessen, was Steuern nehmen."
+          ],
+          [
+            "p",
+            "2. Ein Paar mit zwei Grundschulkindern und 5 Millionen Yen Jahreseinkommen. Es bekommt heute 20.000 Yen Kindergeld im Monat für beide Kinder. Mit einem einheitlichen Grundeinkommen erhält die Familie 280.000 Yen im Monat: Selbst ohne Kindergeld sind das 260.000 mehr. Bekommen Kinder weniger, wie Takenaka anregte, und nehmen wir Haradas 30.000 Yen, liegt das Grundeinkommen bei 200.000 Yen und der Nettogewinn bei 180.000 im Monat. Familien mit Kindern sind die wahrscheinlichsten Gewinner dieses Plans. Auch das gilt vor jeder Steuererhöhung."
+          ],
+          [
+            "p",
+            "3. Ein Rentnerpaar: Er war bei einer Firma angestellt, sie Hausfrau. Ihre Renten betragen heute zusammen 237.279 Yen im Monat: 141.216 aus zwei Grundrenten und 96.063 aus seinem Aufschlag der Angestelltenrente.[6] Das Grundeinkommen für zwei beträgt 140.000 Yen. Das Ergebnis hängt ganz davon ab, was mit den Renten geschieht. (A) Obendrauf: 377.279 Yen im Monat, 140.000 mehr. (B) Nur die Grundrente ersetzt: 140.000 + 96.063 = 236.063, nur 1.216 Yen weniger im Monat, fast unverändert. (C) Renten vollständig ersetzt: nur 140.000, 97.279 Yen weniger im Monat."
+          ],
+          [
+            "p",
+            "Fall (C) war es, der Sudo Sorgen machte. Was Takenaka im Interview beschrieb, der Schutz eingezahlter Ansprüche, liegt nahe an (B). Ein Paar, das nur die Nationale Rente hat, etwa frühere Selbstständige (141.216 Yen für zwei bei voller Höhe), steht in jedem Fall etwa gleich da. Wer einige Jahre keine Beiträge zahlen konnte und keine volle Rente bekommt, würde gewinnen."
+          ],
+          [
+            "p",
+            "4. Eine alleinstehende Person Mitte dreißig, die in Tokios 23 Bezirken von Sozialhilfe lebt. Sie erhält heute bis zu 130.920 Yen im Monat für Lebensunterhalt und Miete.[8] (A) Wenn die Sozialhilfe das Grundeinkommen aufstockt: 70.000 plus 60.920 Sozialhilfe, gleiche Summe wie heute. (B) Wenn die Sozialhilfe abgeschafft wird: nur 70.000, 60.920 Yen weniger im Monat. Die Mietzuschüsse fielen weg, und womöglich müsste sie für Arztkosten selbst aufkommen."
+          ],
+          [
+            "p",
+            "Das „die Kosten der Sozialhilfe streichen“ aus dem Buch ist (B), das „Sozialhilfe kann als Ergänzung bleiben“ aus dem Interview ist (A). Für diesen Haushalt entscheidet genau das über alles."
+          ],
+          [
+            "p",
+            "5. Ein Paar mit zwei Kindern und 10 Millionen Yen Jahreseinkommen. Es bekommt heute 20.000 Yen Kindergeld im Monat. Das Grundeinkommen für vier beträgt 280.000 Yen im Monat, und hier greift das „Gutverdienende zahlen später zurück“. Dürfen sie es behalten: 260.000 mehr im Monat, auch ohne Kindergeld. Müssen sie alles zurückzahlen: Vom Grundeinkommen bleibt nichts, und durch das weggefallene Kindergeld fehlen 20.000 im Monat. Ein Haushalt mit 10 Millionen dürfte zu den Zurückzahlenden gehören, und Steuererhöhungen träfen diese Gruppe hart. Realistisch liegt das Ergebnis zwischen etwa null und einem Verlust."
+          ],
+          [
+            "p",
+            "Zusammengefasst (monatlich, vor jeder Steuererhöhung):"
+          ],
+          [
+            "t",
+            "Haushalt | Leistungen heute | Grundeinkommen | Nettoänderung\nAlleinstehend, Mitte 20, 3 Mio. Yen im Jahr | Keine | 70.000 ¥ | +70.000 ¥ (abzüglich Steuererhöhungen)\nVierköpfige Familie, 5 Mio. Yen im Jahr | Kindergeld 20.000 ¥ | 200.000–280.000 ¥ | +180.000 bis +260.000 ¥\nRentnerpaar (früher angestellt) | Renten 237.279 ¥ | 140.000 ¥ | +140.000 bis −97.279 ¥ (je nach Renten)\nAlleinstehend mit Sozialhilfe (Tokio, 23 Bezirke) | Bis zu 130.920 ¥ | 70.000 ¥ | ±0 bis −60.920 ¥ (je nachdem, ob die Sozialhilfe bleibt)\nVierköpfige Familie, 10 Mio. Yen im Jahr | Kindergeld 20.000 ¥ | 280.000 ¥ | +260.000 bis −20.000 ¥ (je nach Rückzahlung)"
+          ],
+          [
+            "p",
+            "Die wahrscheinlichen Gewinner sind Haushalte mit Kindern und wenigen Leistungen heute. Verlieren können Menschen, die auf Renten oder Sozialhilfe angewiesen sind, und gut verdienende Haushalte, die zurückzahlen oder die Steuererhöhungen tragen würden."
+          ],
+          [
+            "o",
+            "Der Vorwurf, „von 70.000 Yen kann niemand leben“, betrifft vor allem die Fälle, in denen Renten oder Sozialhilfe wegfallen. Takenakas Antwort, er habe „nie gesagt, man könne davon leben“, scheint vorauszusetzen, dass andere Leistungen teilweise bleiben. Bringt man die Annahmen in Einklang, lassen sich beide Aussagen mit Zahlen prüfen."
+          ],
+          [
+            "h",
+            "Was würde es das Land kosten?"
+          ],
+          [
+            "p",
+            "Nach dem Haushaltsbudget das Staatsbudget. Japan hat 122.812.000 Einwohner (Statistikamt, endgültige Schätzung zum 1. Mai 2026).[11] Allen ein Jahr lang 70.000 Yen im Monat zu zahlen, ergibt 70.000 × 12 × 122.812.000, rund 103,2 Billionen Yen."
+          ],
+          [
+            "p",
+            "Japans allgemeiner Haushalt für das Haushaltsjahr 2026 umfasst 122,3092 Billionen Yen, davon 39,0559 Billionen für soziale Sicherung.[12] Das Grundeinkommen entspräche etwa 84 % des gesamten allgemeinen Haushalts und etwa dem 2,6-Fachen der Sozialausgaben."
+          ],
+          [
+            "p",
+            "Takenaka sagt, das Geld für Renten und Sozialhilfe würde umgelenkt.[3] Die Sozialleistungen insgesamt, Renten und Gesundheit eingeschlossen und Beiträge mitgezählt, belaufen sich auf 144,1 Billionen Yen. Davon entfallen 63,7 Billionen auf Renten.[13] Selbst wenn alle Renten ins Grundeinkommen flössen, fehlten noch rund 40 Billionen bis zu 103 Billionen."
+          ],
+          [
+            "p",
+            "Die Lücke lässt sich nur schließen, indem man die tatsächlichen Kosten über die Rückzahlung der Gutverdienenden senkt oder Steuern erhöht. Wo die Rückzahlungsgrenze liegt, verändert sowohl den Finanzbedarf als auch die Ergebnisse der Tabelle. Andere Beträge und Gruppen können Sie in {unserem Grundeinkommensrechner|/calc/?c=jp&w=all&m=70000} ausprobieren: 70.000 Yen im Monat für alle sind rund 15,5 % des BIP."
+          ],
+          [
+            "h",
+            "Was bleibt"
+          ],
+          [
+            "p",
+            "Takenakas Plan, wie er im September 2020 im Fernsehen gezeigt wurde, lautete: 70.000 Yen im Monat für alle, Gutverdienende zahlen später zurück. Sein Buch stellte ihn als Tausch gegen die Abschaffung von Renten und Sozialhilfe dar."
+          ],
+          [
+            "p",
+            "Später sagte er, 70.000 Yen seien ein Durchschnitt, er habe nie gesagt, man könne davon leben, eingezahlte Rentenansprüche würden geschützt und die Sozialhilfe könne bleiben. Im wichtigsten Punkt widersprechen sich Buch und Interview."
+          ],
+          [
+            "p",
+            "Was es für Haushalte bedeutet, hängt von der Ausgestaltung ab. Familien mit Kindern dürften viel gewinnen. Für Menschen, die auf Renten oder Sozialhilfe angewiesen sind, reicht das Ergebnis von „etwa gleich“ bis „zehntausende Yen, fast 100.000, weniger im Monat“, je nachdem, ob diese Leistungen bleiben."
+          ],
+          [
+            "p",
+            "Zahlungen an alle würden rund 103 Billionen Yen im Jahr kosten. Selbst das gesamte Rentengeld reicht nicht, die Ausgestaltung von Rückzahlung und Steuern lässt sich also nicht überspringen."
+          ],
+          [
+            "o",
+            "Wer einen Grundeinkommensplan beurteilt, sollte über den Betrag hinaus zwei Fragen stellen: Wogegen wird er getauscht, und wer zahlt ihn zurück? Dieselben „70.000 Yen im Monat“ können je nach Antwort ein völlig anderes System sein."
+          ],
+          [
+            "p",
+            "2020 hat Japan tatsächlich allen einmal 100.000 Yen gezahlt, als Sonderbarzahlung. Wie dieses Geld verwendet wurde, haben wir mit Daten in {unserem Essay über die 100.000 Yen|/essays/japan-special-cash-payment/} untersucht."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "«70,000 ين شهريًا للجميع». في عام 2020 طرح الاقتصادي هيزو تاكيناكا هذه الفكرة على التلفزيون الياباني فأثار عاصفة. شغل تاكيناكا منصب وزير السياسة الاقتصادية والمالية ووزير الشؤون الداخلية في حكومة جونئيتشيرو كويزومي (2001–2006)، وكان حينها رئيس مجلس إدارة شركة التوظيف ⁦Pasona Group⁩.[1] «لا أحد يستطيع العيش بـ70,000 ين». «هل تريد إلغاء المعاشات إذن؟». ولا تزال منشورات تستشهد بخطته تظهر على وسائل التواصل الياباني حتى اليوم."
+          ],
+          [
+            "p",
+            "يدعم هذا الموقع الدخل الأساسي، لكنه لا يدعم خطة بعينها. لذلك، وقبل أن نقرر التأييد أو الرفض، نبدأ بسؤال أقرب إلى الحياة اليومية: لو تحققت هذه الخطة، هل سيصبح لدى أسرتك مال أكثر أم أقل؟"
+          ],
+          [
+            "o",
+            "الجواب المختصر: يتوقف على التصميم. فالـ70,000 ين نفسها قد تكون ربحًا أو خسارة، بحسب ما تحل محله ومَن عليه أن يردّها لاحقًا. وفيما يلي نضع أرقامًا لهذا المدى."
+          ],
+          [
+            "h",
+            "ماذا اقترح تاكيناكا"
+          ],
+          [
+            "p",
+            "بدأ الأمر مساء 23 سبتمبر 2020 في البرنامج الإخباري «هودو 1930» على قناة ⁦BS-TBS⁩. عرض البرنامج رأي تاكيناكا على لوحة كُتب عليها «70,000 ين شهريًا لكل مواطن».[1]"
+          ],
+          [
+            "p",
+            "وبحسب التقارير، تُتابَع الدخول بربط رقم الهوية ⁦My Number⁩ بالحساب المصرفي، ومَن يتجاوز دخله حدًا معينًا يردّ المال بعد استلامه. وحين سُئل في البرنامج هل ستنتفي الحاجة عندئذ إلى المعاشات والمساعدة العامة، أُفيد بأنه أجاب: «من حيث المبدأ، نعم».[2]"
+          ],
+          [
+            "p",
+            "بعض الخلفية للقارئ من خارج اليابان. للمعاش العام في اليابان (نينكين) طبقتان: معاش أساسي بمبلغ ثابت يستحقه الجميع ويُسمّى المعاش الوطني، ولمن عمل موظفًا إضافة مرتبطة بالأجر تُسمّى معاش الموظفين. أما المساعدة العامة (سيكاتسو هوغو) فهي شبكة الأمان الأخيرة المشروطة باختبار الموارد: تدفع تكاليف المعيشة والإيجار والعلاج لمن لا يملك وسيلة أخرى للعيش."
+          ],
+          [
+            "p",
+            "وقد قال كتابه الصادر في أغسطس 2020 ذلك صراحة: «خطة دفع 70,000 ين شهريًا لكل فرد هي أيضًا مقايضة بإلغاء الضمان الاجتماعي مثل المعاشات والمساعدة العامة. إذا دفعنا 70,000 ين لكل المواطنين، يمكننا إلغاء معاشات كبار السن وتكاليف المساعدة العامة».[3][4]"
+          ],
+          [
+            "h",
+            "الغضب، وتوضيحه"
+          ],
+          [
+            "p",
+            "جاءت الانتقادات سريعًا. «لا أحد يستطيع العيش بـ70,000 ين في الشهر». «أليس هذا مجرد تقليص للضمان الاجتماعي؟». وذكرت ⁦J-CAST News⁩ أن تعليقات كهذه أغرقت الإنترنت.[1] وكتب غينكي سودو، عضو مجلس المستشارين آنذاك: «هل تطلب من أصحاب المعاشات أن يموتوا جوعًا؟»، وقال إن الدخل الأساسي يحتاج إلى 200,000 ين شهريًا على الأقل.[2]"
+          ],
+          [
+            "p",
+            "في 7 أكتوبر 2020 تحدث تاكيناكا إلى ⁦J-CAST News⁩. وخلاصة ما قاله:[1]"
+          ],
+          [
+            "p",
+            "لم يقل قط إن أحدًا يستطيع العيش بـ70,000 ين. فهذا المبلغ متوسط، وعند هذا المستوى لن يكون العبء على المالية العامة ثقيلًا جدًا."
+          ],
+          [
+            "p",
+            "قد لا تحتاج أسرة من أربعة أفراد إلى 280,000 ين، فيمكن أن يحصل الفرد الثالث والرابع على أقل، وفي المقابل يحصل مَن يعيش وحده على أكثر قليلًا."
+          ],
+          [
+            "p",
+            "تتحول المعاشات إلى الدخل الأساسي مع حماية ما دفعه الناس من اشتراكات. ويمكن أن تبقى المساعدة العامة أيضًا كمكمّل."
+          ],
+          [
+            "p",
+            "يعمل النظام مثل ضريبة تصاعدية: معدلات مرتفعة لأصحاب الدخل العالي، ومعدل سالب، أي تلقّي المال، لأصحاب الدخل المنخفض."
+          ],
+          [
+            "p",
+            "الدفع للجميع أولًا ثم استرداد المال من أصحاب الدخل العالي عبر الإقرار الضريبي ليس طريقة سيئة، لأن لا أحد يعرف مسبقًا مَن سيحتاج إلى المساعدة."
+          ],
+          [
+            "o",
+            "«مقايضة بالإلغاء» في الكتاب، و«حماية ما دُفع» مع بقاء المساعدة «كمكمّل» في المقابلة: انطباعان مختلفان جدًا. أيهما الخطة الحقيقية؟ لم يُنشر أي تصميم مفصّل. وهذا الجزء الغامض بالذات هو ما يؤثر أكثر من غيره حين نحسب ميزانيات الأسر."
+          ],
+          [
+            "h",
+            "من أين جاء رقم 70,000 ين"
+          ],
+          [
+            "p",
+            "بحسب ⁦J-CAST News⁩، تستند خطة تاكيناكا إلى أفكار الاقتصادي يوتاكا هارادا. ففي كتابه الصادر عام 2015 «الدخل الأساسي: هل تستطيع الدولة حل مشكلة الفقر؟» وفي مواضع أخرى، اقترح هارادا 70,000 ين شهريًا لكل مَن بلغ 20 عامًا فأكثر و30,000 ين لمن هم دون ذلك. ويبدو أن تاكيناكا وسّع ذلك إلى «نحو 70,000 ين» في المتوسط بهيكل تصاعدي، كما يقول المقال.[1][5]"
+          ],
+          [
+            "p",
+            "والـ70,000 ين قريبة أيضًا من المعاش الأساسي الكامل. ففي السنة المالية 2026 يبلغ المعاش الوطني الكامل 70,608 ين شهريًا.[6]"
+          ],
+          [
+            "p",
+            "ومن الأحزاب، أعلن حزب الابتكار الياباني (نيبون إيشين نو كاي) في مؤتمره في أبريل 2021 أنه سيضع في برنامجه دخلًا أساسيًا بصيغة حدّ أدنى مضمون للدخل. وكانت نقطة الجدل الكبرى حينها أيضًا أن الدفع للجميع يحتاج إلى نحو 100 تريليون ين سنويًا.[7]"
+          ],
+          [
+            "h",
+            "افتراضاتنا"
+          ],
+          [
+            "p",
+            "بما أن تاكيناكا لم يقدّم تصميمًا مفصّلًا، نحدد افتراضاتنا أولًا."
+          ],
+          [
+            "p",
+            "المبلغ 70,000 ين شهريًا لكل فرد، والأطفال مشمولون، كما في لوحة البرنامج. وللأسر المكوّنة من أربعة أفراد نعرض أيضًا حالة حصول الأطفال على 30,000 ين وفق اقتراح هارادا."
+          ],
+          [
+            "p",
+            "نحسب المعاشات بثلاث طرق. ⁦(A)⁩ تبقى المعاشات كما هي ويُضاف الدخل الأساسي فوقها. ⁦(B)⁩ يحل الدخل الأساسي محل المعاش الأساسي فقط، وتبقى إضافة معاش الموظفين المرتبطة بالأجر محمية. ⁦(C)⁩ يحل الدخل الأساسي محل المعاشات كليًا."
+          ],
+          [
+            "p",
+            "ونحسب المساعدة العامة بطريقتين. ⁦(A)⁩ تغطي المساعدة ما لا يغطيه الدخل الأساسي. ⁦(B)⁩ تُلغى المساعدة العامة."
+          ],
+          [
+            "p",
+            "يحل الدخل الأساسي محل علاوة الأطفال (جيدو تيآتي)، كما في معظم خطط الدخل الأساسي."
+          ],
+          [
+            "p",
+            "أما الاسترداد من أصحاب الدخل العالي فلم يُحدَّد له حدّ دخل ولا مبلغ، لذا نعرض الطرفين: لا يُردّ شيء، ويُردّ كل شيء."
+          ],
+          [
+            "p",
+            "لا ندخل زيادات الضرائب أو الاشتراكات اللازمة للتمويل، لأنها لم تُحدَّد. وأي زيادة ضريبية ستُنقص نتيجة كل أسرة بقدرها."
+          ],
+          [
+            "p",
+            "كل المبالغ شهرية، وفق قواعد السنة المالية 2026."
+          ],
+          [
+            "p",
+            "الأرقام الحالية من مصادر رسمية. المعاشات: المعاش الوطني الكامل 70,608 ين شهريًا، و«الزوجان النموذجيان» لدى الحكومة (زوج عمل 40 عامًا بأجر متوسط وزوجة بقيت في البيت) يحصلان على 237,279 ين شهريًا تشمل معاشين أساسيين.[6] المساعدة العامة: يحصل الفرد الذي يعيش وحده بين 20 و40 عامًا في أحياء طوكيو الـ23 (أعلى درجة لتكاليف المعيشة، ⁦1-1⁩) على 77,220 ين شهريًا لتكاليف المعيشة (46,930 + 27,790 + إضافة خاصة 2,500)، وعلى مساعدة سكن للإيجار حتى 53,700 ين. المجموع حتى 130,920 ين شهريًا، والعلاج مغطى بشكل منفصل دون أي دفع.[8][9] علاوة الأطفال: 10,000 ين شهريًا عن الطفل الأول أو الثاني من سن 3 حتى سن المرحلة الثانوية، دون حدّ للدخل منذ أكتوبر 2024.[10]"
+          ],
+          [
+            "h",
+            "خمس أسر، بالأرقام"
+          ],
+          [
+            "p",
+            "1. موظف مكتبي في العشرينيات يعيش وحده في طوكيو ويكسب 3 ملايين ين سنويًا. لا يتلقى اليوم أي إعانة، فتُضاف إليه الـ70,000 ين كاملة. في شرح تاكيناكا، مَن يردّون المال هم «أصحاب الدخل المرتفع»، ومن غير المرجح أن يُحسب دخل 3 ملايين سنويًا منهم. فيحصل على 70,000 ين شهريًا، أي 840,000 ين سنويًا. وأي زيادة ضريبية للتمويل ستُقتطع من ذلك. جوابه: حتى 70,000 ين شهريًا، ناقص ما تأخذه الضرائب."
+          ],
+          [
+            "p",
+            "2. زوجان لديهما طفلان في المرحلة الابتدائية ويكسبان 5 ملايين ين سنويًا. يحصلان اليوم على 20,000 ين شهريًا علاوةً عن الطفلين. مع دخل أساسي موحّد تحصل الأسرة على 280,000 ين شهريًا: حتى بعد فقدان العلاوة، تزيد بـ260,000 ين شهريًا. وإذا حصل الأطفال على أقل، كما اقترح تاكيناكا، وأخذنا بـ30,000 ين وفق هارادا، يصبح الدخل الأساسي 200,000 ين وصافي الربح 180,000 ين شهريًا. الأسر التي لديها أطفال هي الأرجح ربحًا في هذه الخطة. وهذه أيضًا أرقام قبل أي زيادة ضريبية."
+          ],
+          [
+            "p",
+            "3. زوجان متقاعدان: زوج عمل في شركة وزوجة بقيت في البيت. يبلغ معاشهما اليوم 237,279 ين شهريًا: 141,216 من معاشين أساسيين و96,063 من إضافة معاش الموظفين للزوج.[6] الدخل الأساسي لشخصين 140,000 ين. والنتيجة تتوقف كليًا على مصير المعاشات. ⁦(A)⁩ فوق المعاش: 377,279 ين شهريًا، بزيادة 140,000. ⁦(B)⁩ استبدال المعاش الأساسي فقط: 140,000 + 96,063 = 236,063، أقل بـ1,216 ين فقط شهريًا، أي بلا تغيير تقريبًا. ⁦(C)⁩ استبدال المعاشات كليًا: 140,000 فقط، أقل بـ97,279 ين شهريًا."
+          ],
+          [
+            "p",
+            "الحالة ⁦(C)⁩ هي ما أقلق سودو. وما وصفه تاكيناكا في المقابلة، أي حماية ما دُفع، قريب من ⁦(B)⁩. أما الزوجان اللذان لا يملكان سوى المعاش الوطني، كالعاملين لحسابهم سابقًا (141,216 ين لشخصين بالمعدل الكامل)، فيبقيان على المبلغ نفسه تقريبًا في كل الحالات. ومَن لم يستطع دفع الاشتراكات بضع سنوات ولا يحصل على المعاش الكامل سيربح."
+          ],
+          [
+            "p",
+            "4. شخص في الثلاثينيات يعيش وحده على المساعدة العامة في أحياء طوكيو الـ23. يتلقى اليوم حتى 130,920 ين شهريًا للمعيشة والإيجار.[8] ⁦(A)⁩ إذا كمّلت المساعدة الدخل الأساسي: 70,000 مع 60,920 مساعدة، المجموع نفسه كاليوم. ⁦(B)⁩ إذا أُلغيت المساعدة: 70,000 فقط، أقل بـ60,920 ين شهريًا. ستختفي مساعدة الإيجار، وقد يضطر إلى دفع تكاليف العلاج."
+          ],
+          [
+            "p",
+            "عبارة الكتاب «إلغاء تكاليف المساعدة العامة» هي ⁦(B)⁩، وعبارة المقابلة «يمكن أن تبقى المساعدة كمكمّل» هي ⁦(A)⁩. وبالنسبة إلى هذه الأسرة، أيهما يُعتمد هو ما يقرر كل شيء."
+          ],
+          [
+            "p",
+            "5. زوجان لديهما طفلان ويكسبان 10 ملايين ين سنويًا. يحصلان اليوم على 20,000 ين شهريًا علاوةً. الدخل الأساسي لأربعة 280,000 ين شهريًا، وهنا يأتي دور «أصحاب الدخل العالي يردّونه لاحقًا». إذا احتفظوا به: 260,000 ين أكثر شهريًا حتى بعد فقدان العلاوة. وإذا ردّوه كله: لا يبقى لهم شيء من الدخل الأساسي، ويخسرون 20,000 ين شهريًا بفقدان العلاوة. أسرة بدخل 10 ملايين ستكون على الأرجح بين مَن يردّون، وستقع زيادات الضرائب بثقل على هذه الفئة. واقعيًا، توقّع نتيجة بين الصفر تقريبًا والخسارة."
+          ],
+          [
+            "p",
+            "الخلاصة (شهريًا، قبل أي زيادة ضريبية):"
+          ],
+          [
+            "t",
+            "الأسرة | الإعانات اليوم | الدخل الأساسي | صافي التغيّر\nأعزب في العشرينيات، 3 ملايين ين سنويًا | لا شيء | 70,000 ين | ⁦+70,000⁩ ين (ناقص أي زيادة ضريبية)\nأسرة من أربعة، 5 ملايين ين سنويًا | علاوة أطفال 20,000 ين | 200,000–280,000 ين | من ⁦+180,000⁩ إلى ⁦+260,000⁩ ين\nزوجان متقاعدان (موظف سابق) | معاشات 237,279 ين | 140,000 ين | من ⁦+140,000⁩ إلى ⁦−97,279⁩ ين (بحسب المعاشات)\nأعزب على المساعدة العامة (أحياء طوكيو الـ23) | حتى 130,920 ين | 70,000 ين | من ⁦±0⁩ إلى ⁦−60,920⁩ ين (بحسب بقاء المساعدة)\nأسرة من أربعة، 10 ملايين ين سنويًا | علاوة أطفال 20,000 ين | 280,000 ين | من ⁦+260,000⁩ إلى ⁦−20,000⁩ ين (بحسب الاسترداد)"
+          ],
+          [
+            "p",
+            "الأرجح ربحًا هي الأسر التي لديها أطفال وإعانات قليلة اليوم. والمعرّضون للخسارة هم مَن يعتمدون على المعاشات أو المساعدة العامة، والأسر ذات الدخل العالي التي سترد المال أو تتحمل زيادات الضرائب."
+          ],
+          [
+            "o",
+            "شكوى أن «لا أحد يستطيع العيش بـ70,000 ين» تخص في الغالب الحالات التي تختفي فيها المعاشات أو المساعدة العامة. أما ردّ تاكيناكا بأنه «لم يقل قط إنه يمكن العيش بها» فيبدو أنه يفترض بقاء بعض الإعانات الأخرى. وإذا وُحّدت الافتراضات، أمكن التحقق من القولين بالأرقام."
+          ],
+          [
+            "h",
+            "كم سيكلّف البلد؟"
+          ],
+          [
+            "p",
+            "بعد ميزانية الأسرة، ميزانية الدولة. يبلغ عدد سكان اليابان 122,812,000 نسمة (مكتب الإحصاء، التقدير النهائي في 1 مايو 2026).[11] ودفع 70,000 ين شهريًا للجميع لمدة عام يساوي 70,000 × 12 × 122,812,000، أي نحو 103.2 تريليون ين."
+          ],
+          [
+            "p",
+            "تبلغ ميزانية الحساب العام لليابان للسنة المالية 2026 ما مقداره 122.3092 تريليون ين، منها 39.0559 تريليون للضمان الاجتماعي.[12] سيعادل الدخل الأساسي نحو 84% من الحساب العام كله، ونحو 2.6 ضعف إنفاق الضمان الاجتماعي."
+          ],
+          [
+            "p",
+            "يقول تاكيناكا إن أموال المعاشات والمساعدة العامة ستُحوَّل إليه.[3] ويبلغ مجموع مزايا الضمان الاجتماعي، شاملة المعاشات والعلاج ومحتسبة الاشتراكات، 144.1 تريليون ين، منها 63.7 تريليون للمعاشات.[13] وحتى لو ذهبت المعاشات كلها إلى الدخل الأساسي، سيبقى نقص بنحو 40 تريليون ين عن الـ103 تريليونات."
+          ],
+          [
+            "p",
+            "لا يُسدّ هذا النقص إلا بخفض الكلفة الفعلية عبر الاسترداد من أصحاب الدخل العالي، أو برفع الضرائب. ومكان رسم خط الاسترداد يغيّر التمويل المطلوب ونتائج الجدول أعلاه معًا. يمكنك تجربة مبالغ وفئات أخرى في {حاسبة الدخل الأساسي لدينا|/calc/?c=jp&w=all&m=70000}: 70,000 ين شهريًا للجميع تعادل نحو 15.5% من الناتج المحلي الإجمالي."
+          ],
+          [
+            "h",
+            "ما الذي نخرج به"
+          ],
+          [
+            "p",
+            "خطة تاكيناكا كما عُرضت على التلفزيون في سبتمبر 2020: 70,000 ين شهريًا للجميع، ويردّها أصحاب الدخل العالي لاحقًا. وقد قدّمها كتابه مقايضةً بإلغاء المعاشات والمساعدة العامة."
+          ],
+          [
+            "p",
+            "ثم قال لاحقًا إن الـ70,000 ين متوسط، وإنه لم يقل قط إنه يمكن العيش بها، وإن المعاشات المدفوعة ستُحمى والمساعدة العامة يمكن أن تبقى. وفي النقطة الأهم، لا يتفق كتابه ومقابلته."
+          ],
+          [
+            "p",
+            "أثرها على الأسر يتوقف على التصميم. الأسر التي لديها أطفال يُرجَّح أن تربح كثيرًا. أما مَن يعتمدون على المعاشات أو المساعدة، فتتراوح النتيجة بين «نحو المبلغ نفسه» و«عشرات آلاف الينات، حتى قرابة 100,000، أقل كل شهر»، بحسب بقاء تلك الإعانات."
+          ],
+          [
+            "p",
+            "الدفع للجميع سيكلف نحو 103 تريليون ين سنويًا. وحتى أموال المعاشات كلها لا تكفي، فلا مفرّ من تصميم الاسترداد والضرائب."
+          ],
+          [
+            "o",
+            "عند الحكم على خطة للدخل الأساسي، يجدر النظر إلى ما وراء المبلغ وطرح سؤالين: مقابل ماذا؟ ومَن يردّه؟ فالـ«70,000 ين شهريًا» نفسها قد تكون نظامًا مختلفًا تمامًا بحسب الإجابة."
+          ],
+          [
+            "p",
+            "وفي 2020 دفعت اليابان فعلًا 100,000 ين للجميع مرة واحدة، باسم «الدفعة النقدية الخاصة». وقد تتبّعنا بالبيانات كيف استُخدم ذلك المال في {مقالنا عن الـ100,000 ين|/essays/japan-special-cash-payment/}."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "J-CAST News — “Let’s ask Heizo Takenaka about basic income again: ‘I never said you could live on ¥70,000 a month’” (interview, 10 Oct 2020, in Japanese)",
+          "url": "https://www.j-cast.com/2020/10/10396316.html"
+        },
+        {
+          "n": 2,
+          "label": "Daily Sports — Genki Sudo criticises Heizo Takenaka’s ‘¥70,000 a month’: ‘Are you telling pensioners to starve?’ (7 Oct 2020, in Japanese)",
+          "url": "https://www.daily.co.jp/gossip/2020/10/07/0013762487.shtml"
+        },
+        {
+          "n": 3,
+          "label": "Money Post Web (Shūkan Post) — “If basic income is introduced, social security such as pensions, medical care and public assistance may be cut off” (10 Oct 2020, in Japanese)",
+          "url": "https://www.moneypost.jp/712411"
+        },
+        {
+          "n": 4,
+          "label": "National Diet Library Search — Heizo Takenaka, Post-corona ‘Plan to Remodel Japan’ (PHP Institute, Aug 2020; book record, in Japanese)",
+          "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030519676"
+        },
+        {
+          "n": 5,
+          "label": "Kinokuniya — Yutaka Harada, Basic Income: Can the State Solve Poverty? (Chūkō Shinsho, Feb 2015; book record, in Japanese)",
+          "url": "https://www.kinokuniya.co.jp/f/dsg-01-9784121023070"
+        },
+        {
+          "n": 6,
+          "label": "Japan Pension Service — Pension amounts from April 2026 (in Japanese)",
+          "url": "https://www.nenkin.go.jp/oshirase/taisetu/kojin/2026/202604/0401.html"
+        },
+        {
+          "n": 7,
+          "label": "Kenichi Ogura, Gendai Business — on the Japan Innovation Party’s basic income policy and its funding (17 May 2022, in Japanese)",
+          "url": "https://gendai.media/articles/-/95312"
+        },
+        {
+          "n": 8,
+          "label": "Ministry of Health, Labour and Welfare — How public assistance living-cost standards are calculated (Oct 2026; PDF, in Japanese)",
+          "url": "https://www.mhlw.go.jp/content/001152601.pdf"
+        },
+        {
+          "n": 9,
+          "label": "Ministry of Health, Labour and Welfare — The public assistance system (in Japanese)",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/seikatuhogo/index.html"
+        },
+        {
+          "n": 10,
+          "label": "Kagawa Prefecture — The October 2024 child allowance reform (in Japanese)",
+          "url": "https://www.pref.kagawa.lg.jp/kosodate/jidoteate/seidokaisei.html"
+        },
+        {
+          "n": 11,
+          "label": "Statistics Bureau of Japan — Population Estimates, October 2026 report (PDF, in Japanese)",
+          "url": "https://www.stat.go.jp/data/jinsui/pdf/202610.pdf"
+        },
+        {
+          "n": 12,
+          "label": "Ministry of Finance — Explanation of the FY2026 budget and FILP plan (in Japanese)",
+          "url": "https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/20260220.html"
+        },
+        {
+          "n": 13,
+          "label": "Ministry of Health, Labour and Welfare — Social security benefits and burdens, FY2026 budget basis (PDF, in Japanese)",
+          "url": "https://www.mhlw.go.jp/content/12600000/001706348.pdf"
+        }
+      ]
+    },
+    {
       "id": "openresearch-cash-study",
       "date": "2026-11-04",
       "related": [
@@ -10940,7 +12595,8 @@ module.exports = {
       "date": "2026-11-04",
       "related": [
         "thailand-digital-wallet",
-        "nesara-gesara-basic-income"
+        "nesara-gesara-basic-income",
+        "takenaka-70000-yen-basic-income"
       ],
       "title": {
         "ja": "10万円の給付金は、何に使われたのか：特別定額給付金をデータで振り返る",
@@ -11111,6 +12767,10 @@ module.exports = {
             "月3万円は、暮らしをまるごと支える額ではありません。それでも、年44兆円は、2020年に一度だけ配った額の3倍を超えます。2020年の10万円は、全員に配る仕組みを国がつくれることを示しました。ただ、それを毎月続けるには、どこからお金を出すのかという、まったく別の議論が必要になります。"
           ],
           [
+            "p",
+            "2020年に竹中平蔵氏が示した「全員に月7万円」なら、家計ごとにどうなるのか。{5つの家計で計算したエッセイ|/essays/takenaka-70000-yen-basic-income/}では、年金や生活保護の扱いしだいで結果が大きく変わることを数字で示しています。"
+          ],
+          [
             "h",
             "あの10万円が残したもの"
           ],
@@ -11275,6 +12935,10 @@ module.exports = {
           [
             "o",
             "¥30,000 a month is not enough to live on. Even so, ¥44 trillion a year is more than three times what was paid out once in 2020. The ¥100,000 showed that the state can build a way to pay everyone. Doing it every month, though, needs an entirely different debate about where the money comes from."
+          ],
+          [
+            "p",
+            "What would the ¥70,000 a month for everyone that Heizo Takenaka floated in 2020 mean for individual households? {We worked it out for five households|/essays/takenaka-70000-yen-basic-income/}: the answer swings widely with what happens to pensions and public assistance."
           ],
           [
             "h",
@@ -11443,6 +13107,10 @@ module.exports = {
             "每月 3 万日元不够生活。即便如此，一年 44 万亿日元也是 2020 年一次性发放金额的三倍多。10 万日元表明，国家能够建立一套给每个人发钱的办法。但要每个月都这样做，就需要一场完全不同的讨论：钱从哪里来。"
           ],
           [
+            "p",
+            "竹中平藏 2020 年提出的“每人每月 7 万日元”，落到每个家庭会怎样？{我们算了五个家庭的账|/essays/takenaka-70000-yen-basic-income/}：结果随养老金和生活保护的处理方式大幅变化。"
+          ],
+          [
             "h",
             "10 万日元留下了什么"
           ],
@@ -11607,6 +13275,10 @@ module.exports = {
           [
             "o",
             "हर महीने 30,000 येन से गुज़ारा नहीं हो सकता। फिर भी, साल के 44 ट्रिलियन येन 2020 में एक बार दी गई रकम के तीन गुने से ज़्यादा हैं। 1,00,000 येन ने दिखाया कि सरकार सबको पैसा पहुँचाने का तरीक़ा बना सकती है। लेकिन इसे हर महीने करने के लिए एक बिल्कुल अलग बहस चाहिए: पैसा कहाँ से आएगा।"
+          ],
+          [
+            "p",
+            "हेइज़ो ताकेनाका ने 2020 में सबको 70,000 येन महीना देने का जो विचार रखा था, उसका अलग-अलग परिवारों के लिए क्या मतलब होगा? {हमने पाँच परिवारों पर हिसाब लगाया|/essays/takenaka-70000-yen-basic-income/}: जवाब इस पर बहुत बदलता है कि पेंशन और सरकारी सहायता का क्या होता है।"
           ],
           [
             "h",
@@ -11775,6 +13447,10 @@ module.exports = {
             "30.000 yenes al mes no dan para vivir. Aun así, 44 billones de yenes al año son más del triple de lo que se pagó una sola vez en 2020. Los 100.000 yenes demostraron que el Estado puede montar una forma de pagar a todo el mundo. Hacerlo cada mes, en cambio, exige un debate completamente distinto sobre de dónde sale el dinero."
           ],
           [
+            "p",
+            "¿Qué supondrían para cada hogar los 70.000 yenes al mes para todos que propuso Heizo Takenaka en 2020? {Lo calculamos para cinco hogares|/essays/takenaka-70000-yen-basic-income/}: la respuesta cambia mucho según lo que pase con las pensiones y la asistencia pública."
+          ],
+          [
             "h",
             "Lo que dejaron los 100.000 yenes"
           ],
@@ -11941,6 +13617,10 @@ module.exports = {
             "30.000 Yen im Monat reichen nicht zum Leben. Trotzdem sind 44 Billionen Yen im Jahr mehr als das Dreifache dessen, was 2020 einmal ausgezahlt wurde. Die 100.000 Yen haben gezeigt, dass der Staat einen Weg schaffen kann, allen Geld zu zahlen. Das jeden Monat zu tun, verlangt aber eine ganz andere Debatte darüber, woher das Geld kommt."
           ],
           [
+            "p",
+            "Was würden die 70.000 Yen im Monat für alle, die Heizo Takenaka 2020 ins Spiel brachte, für einzelne Haushalte bedeuten? {Wir haben es für fünf Haushalte durchgerechnet|/essays/takenaka-70000-yen-basic-income/}: Die Antwort hängt stark davon ab, was mit Renten und Sozialhilfe geschieht."
+          ],
+          [
             "h",
             "Was die 100.000 Yen hinterlassen haben"
           ],
@@ -12105,6 +13785,10 @@ module.exports = {
           [
             "o",
             "30,000 ين شهريًا لا تكفي للعيش. ومع ذلك فإن 44 تريليون ين في السنة تزيد على ثلاثة أضعاف ما دُفع مرة واحدة في 2020. لقد أظهرت الـ100,000 ين أن الدولة تستطيع بناء طريقة للدفع للجميع. لكن فعل ذلك كل شهر يحتاج إلى نقاش مختلف تمامًا حول مصدر المال."
+          ],
+          [
+            "p",
+            "ماذا ستعني للأسر الـ70,000 ين شهريًا للجميع التي طرحها هيزو تاكيناكا عام 2020؟ {حسبناها على خمس أسر|/essays/takenaka-70000-yen-basic-income/}: يتغير الجواب كثيرًا بحسب مصير المعاشات والمساعدة العامة."
           ],
           [
             "h",
