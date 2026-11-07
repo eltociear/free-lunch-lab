@@ -728,6 +728,106 @@ h1{font-size:${ja ? 64 : 52}px}
 `,
     }),
   },
+  // note.com header for the article on Japan's 就業者負担軽減支援金 (refundable-tax-credit essay, three model people).
+  // Same 1100x560 safe area and kicker / two-line hero / footer layout as note-takenaka; the .deco motif is a small
+  // card of the three people: no earned income gets nothing, ¥1m part-time depends on the floor, ¥4.5m likely above
+  // the ceiling. Amounts and lines are left to cabinet order, so the card shows no yen amounts for the payment.
+  'note-kyufu': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => ({
+      bare: true,
+      moon: [1192, 92, 44],
+      body: `
+<div class="wrap">
+  <p class="kicker">給付付き税額控除の第一歩</p>
+  <h1 class="hero"><span class="l1">収入ゼロだと</span><span class="l2"><em>1円ももらえない</em></span></h1>
+  <p class="quote">新しい給付金を<b>3人の家計</b>で考えた</p>
+</div>
+<div class="deco">
+  <div class="ledger">
+    <p class="lh">支援金は届く？</p>
+    <p class="row"><span>収入ゼロ</span><i class="no">なし</i></p>
+    <p class="row"><span>パート100万円</span><i class="q">?</i></p>
+    <p class="row"><span>会社員450万円</span><i class="no">なし</i></p>
+  </div>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+      css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:92px;width:1060px}
+.kicker{display:inline-block;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px}
+.hero{margin-top:24px;padding-right:0;white-space:nowrap}
+.hero span{display:block}
+.hero .l1{font-size:72px;line-height:1.12}
+.hero .l2{margin-top:4px;font-size:100px;line-height:1.12}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote{margin-top:26px;font-size:40px;line-height:1.2;font-weight:900;color:#E3E8FF;white-space:nowrap}
+.quote b{color:#FFD66B}
+.deco{position:absolute;right:120px;bottom:56px;width:300px;height:184px}
+.ledger{position:absolute;right:0;top:0;width:292px;transform:rotate(3deg);background:#F6F2E6;border-radius:14px;padding:0 20px 10px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden}
+.ledger .lh{margin:0 -20px 6px;padding:10px 20px;background:#1B6B52;color:#F6F2E6;font-size:22px;line-height:1}
+.ledger .row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:2px solid #DED6BF;font-size:23px;line-height:1.1;color:#141A3A;white-space:nowrap}
+.ledger .row:last-child{border-bottom:0}
+.ledger .q{width:26px;height:26px;border-radius:50%;background:#FFD66B;color:#141A3A;font-style:normal;font-size:19px;font-weight:900;line-height:26px;text-align:center}
+.ledger .no{padding:0 10px;height:26px;border-radius:13px;background:#E8505B;color:#FFFFFF;font-style:normal;font-size:17px;font-weight:900;line-height:26px}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+    }),
+  },
+  // Three-people card for the same note article, built on myth() like note-takenaka-table. Facts only from the
+  // refundable-tax-credit essay: the bill and outline (earned income above a floor, total income below a ceiling),
+  // the council's floor options (wages of about ¥530k, ¥740k or about ¥1.06m; below the no-local-tax line the payment
+  // is the flat part), the government's reference figures via Kyodo (ceiling in the ¥3m range), BI assumed ¥30,000/month.
+  'note-kyufu-3people': {
+    w: 1200, h: 1500, langs: ['ja'], file: 'note-kyufu-3people-ja',
+    build: lang => {
+      const opt = (k, t, v) => `<p class="opt"><span class="ok">${k}</span><span class="ot">${t}</span><span class="ov">${v}</span></p>`;
+      const bi = `<p class="bi"><span class="bl">BI（月3万円）なら</span><span class="bv">年36万円</span></p>`;
+      const m = myth(lang, {
+        q: '新しい支援金、3人の家計では',
+        qSize: 72,
+        rows: [
+          { name: 'Aさん・求職中', meta: '去年の勤労所得 なし', pay: '勤労所得が下限を超えることが条件',
+            res: '支援金 なし', more: `<p class="det">働けなかった年は対象外。病気や介護で<br>働けない人への対応は2028年度中に検討</p>` + bi },
+          { name: 'Bさん・パート', meta: '去年の給与収入 100万円', pay: '所得の下限をどこに引くかで変わる',
+            res: '下限しだい', more: opt('案', '下限 約53万円・74万円', '対象（定額部分）') + opt('案', '下限 約106万円', '対象外') + bi },
+          { name: 'Cさん・会社員', meta: '去年の給与収入 450万円', pay: '参考案の上限は個人年収300万円台',
+            res: '対象外の見込み', more: `<p class="det">BIなら受け取るが、財源の税も増えるので<br>正味では負担が増える可能性</p>` + bi },
+        ],
+        t1: '届くかどうかは「線引き」しだい',
+        t2: '下限・上限・金額は、これから政令で決まります。政府の参考案では<br>対象は約2,000万人、1人あたり平均で年3万円程度（2027・2028年度）',
+        src: '前提：支援金は法案・大綱の仕組みと政府が示した参考の数字だけを使用。金額は未定<br>BIは全員に月3万円（年36万円）と仮定。「定額部分」は住民税非課税の水準より下の見込み<br>出典：社会保障国民会議 中間とりまとめ（2026年7月29日）、内閣官房 大綱・法案概要（9月15日・10月9日）、共同通信（10月17日）',
+        url: 'neteru-nyukin.eltociear.workers.dev/ja/essays/',
+        extraCss: `
+.rows{margin-top:34px;gap:22px}
+.row{padding:32px 30px;gap:26px}
+.lc{flex:0 0 400px;justify-content:center}
+.nm{font-size:38px}
+.meta{margin-top:6px;font-size:23px}
+.pay{margin-top:12px;font-size:21px;line-height:1.35;color:#E3E8FF;font-weight:700;white-space:nowrap}
+.rc{padding-left:28px}
+.res{font-size:40px;white-space:nowrap}
+.det{margin-top:8px;font-size:21px;line-height:1.4;color:#C9D0F0}
+.opt{margin-top:6px;display:flex;align-items:center;gap:10px;font-size:21px;line-height:1.3;color:#C9D0F0;font-weight:700;white-space:nowrap}
+.opt .ok{flex:0 0 auto;padding:0 8px;height:26px;border-radius:13px;background:#2E3772;color:#FFD66B;font-size:16px;font-weight:900;line-height:26px;text-align:center}
+.opt .ov{margin-left:6px;color:#FFFFFF;font-weight:900}
+.bi{margin-top:12px;display:flex;align-items:center;gap:12px;padding-top:10px;border-top:2px dashed #2E3772;font-size:21px;line-height:1.2;font-weight:700;color:#9AA3CF;white-space:nowrap}
+.bi .bv{color:#6CF0B0;font-weight:900;font-size:26px}
+.take{margin-top:28px;margin-bottom:22px;padding:22px 30px 24px}
+.t1{font-size:44px}
+.t2{margin-top:10px;font-size:23px;line-height:1.45;font-weight:700}
+.src{font-size:18px}`,
+      });
+      m.body = m.body.replace('よくある疑問 × データ', '給付付き税額控除の第一歩');
+      return m;
+    },
+  },
   // note.com profile header for 「不労所得で生きていきたい」. note shows roughly a centre crop on mobile, so every
   // text element stays inside a centred 1000x600 box (stricter than the 1400x600 desktop safe area); the constellation
   // icons, moon and glow are atmosphere and may sit outside it.
