@@ -814,6 +814,165 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### Has generative AI taken our jobs? The data, and what basic income can do (Part 1)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
+- Published: 2026-11-07
+
+On 5 November 2026 the US outplacement firm Challenger, Gray & Christmas published its monthly count of announced job cuts. From January to October 2026, employers cited artificial intelligence as the reason for 121,401 cuts, about 20% of the 617,189 total. Since the firm began tracking that reason in 2023, the count has reached 193,226.[1]
+
+Numbers like these feed a familiar story: generative AI is taking jobs, and fast. This site supports basic income, and AI is one of the reasons people most often give for it. That is exactly why we wanted to know what has actually been measured before asking what a basic income could do. This is part 1 of two. It looks at jobs in general; part 2 will look at creative work.
+
+#### What the 121,401 does and does not mean
+
+Challenger counts the reasons employers give when they announce cuts. It does not measure how many jobs AI actually did away with. In October 2026, AI was cited for only 1,265 cuts, the lowest month of the year, and “market/economic conditions” (130,531) has overtaken AI as the top reason for the year so far.[1]
+
+Some economists suspect that part of the AI figure is window dressing. In a January 2026 briefing, Oxford Economics noted that AI had been cited for nearly 55,000 US cuts in the first 11 months of 2025, just 4.5% of the total, and wrote: “We suspect some firms are trying to dress up layoffs as a good news story rather than bad news, such as past over-hiring.”[2] Telling investors that a smaller team is the fruit of AI sounds better than admitting to having hired too many people.
+
+Opinion: An announced reason is a statement, not a measurement. To see what AI has done to jobs, we have to look at labour-market data.
+
+#### The big picture: no clear footprint yet
+
+The Budget Lab at Yale tracks the US labour market for signs of AI. Its September 2026 update, using data through August, says the analysis “does not yet clearly indicate an AI-related labor market footprint” and that “measures of AI usage show no connection to changes in employment or unemployment.”[3]
+
+Denmark offers a tighter test. Anders Humlum and Emilie Vestergaard linked surveys of AI use in 11 exposed occupations to the country’s administrative records. In the revised version of their paper (March 2026), they rule out effects on earnings or recorded hours larger than 2% two years after ChatGPT’s launch.[4]
+
+Federal Reserve Governor Michael Barr put it plainly in February 2026: “AI has yet to have a substantial effect on aggregate employment or unemployment.”[5] Economists at the Dallas Fed did the arithmetic. The share of 20- to 24-year-olds working in the most AI-exposed occupations fell from 16.4% in November 2022 to 15.5% in September 2025. Even if all of that had turned into unemployment, it would have added only about 0.1 point to the national rate.[6]
+
+Opinion: For the labour market as a whole, “AI is taking jobs” is not yet visible in the data.
+
+#### But the entry door is narrowing
+
+That is not the end of the story. Look at who is not being hired, rather than who is being let go, and a consistent signal appears.
+
+Erik Brynjolfsson, Bharat Chandar and Ruyu Chen at Stanford use payroll records from ADP, the largest US payroll processor. In their revised paper of August 2026, with data through June 2026, employment of workers aged 22 to 25 in the most AI-exposed occupations, such as software development and customer service, is about 19% below where it would be had it kept pace with people of the same age in less-exposed jobs. Earlier versions of the paper put the gap at 13% and then 15%; it has widened as more data came in. Experienced workers in the same occupations show no comparable gap. The authors stress that these are “descriptive patterns, not causal estimates”.[7]
+
+Other studies, using other data, point the same way. A King’s College London study of UK firms found that highly exposed firms cut total employment by 4.5% on average, with junior positions down 5.8%, almost the whole decline; they were also 16.3 percentage points less likely to post new vacancies.[8] Two US Census Bureau working papers found that early-career employment in the most AI-exposed fifth of industries fell 12% over the ten quarters after ChatGPT. Graduates of the most exposed tenth of college majors became 5 percentage points less likely to have a job a quarter after graduating, and their starting earnings fell 13%, roughly what economists would expect from graduating into a severe recession.[9] Anthropic, the company behind the AI model Claude, found no systematic rise in unemployment among highly exposed workers, but a job-finding rate for 22- to 25-year-olds entering the most exposed jobs about 14% below 2022, a result it calls barely significant.[10]
+
+What these studies share is the mechanism. The fall comes mainly from fewer young people being hired, not from more people being dismissed.[6][7][9] Firms keep the staff they have and quietly stop filling the bottom rung. The Census papers also find that hiring had largely recovered by early 2025, but from a smaller base: the door reopened only part of the way.[9]
+
+Opinion: AI’s first visible effect is not mass layoffs but a narrower entrance. It is easy to miss, because a job that was never offered never shows up as a job lost.
+
+#### Freelancers felt it first
+
+The other place the effect shows clearly is in markets where work is bought task by task. Xiang Hui, Oren Reshef and Luofeng Zhou studied the freelance platform Upwork. After ChatGPT’s release, writing-related freelancers saw their monthly jobs fall 2% and their monthly earnings fall 5.2%. After the image generators DALL-E 2 and Midjourney, image-related freelancers lost 3.7% of their jobs and 9.4% of their earnings.[11]
+
+Freelancers have no employer to keep them on, no notice period and, in many countries, little or no unemployment insurance. When a client switches to a tool, the income simply stops. Part 2 will look at creative work more closely.
+
+The main studies side by side:
+
+| Study | Data | Finding |
+| --- | --- | --- |
+| Yale Budget Lab | US labour-force survey, to Aug 2026 | No clear AI footprint on employment or unemployment[3] |
+| Humlum & Vestergaard | Danish administrative records | Effects on earnings and hours above 2% ruled out[4] |
+| Brynjolfsson, Chandar & Chen (Stanford) | ADP payroll, to Jun 2026 | Ages 22–25 in the most exposed jobs: about 19% below trend (revised figure)[7] |
+| King’s College London | UK job postings and profiles | Exposed firms: junior roles −5.8%[8] |
+| US Census Bureau | US administrative records | Early-career jobs in the most exposed industries −12%; starting pay for the most exposed majors −13%[9] |
+| Anthropic | US labour-force survey | No systematic rise in unemployment; young job-finding rate about −14%[10] |
+| Hui, Reshef & Zhou | Upwork | Writing: jobs −2%, earnings −5.2%; images: −3.7%, −9.4%[11] |
+
+#### When companies say AI was the reason
+
+Some companies have said plainly that AI is why they need fewer people. In February 2026 Block, the payments company led by Jack Dorsey, cut more than 4,000 of its more than 10,000 staff. The shareholder letter said: “Intelligence tools have changed what it means to build and run a company,” and “A significantly smaller team, using the tools we’re building, can do more and do it better.” Block’s fourth-quarter gross profit was up 24% on a year earlier: this was a company cutting while doing well, not one in trouble.[12] In September 2025 Salesforce’s chief executive Marc Benioff said he had cut support staff “from 9,000 heads to about 5,000, because I need less heads”, with half of customer conversations now handled by AI agents.[13]
+
+Surveys of firms show how unusual these cases still are. In the New York Fed’s 2026 regional business surveys, 61% of service firms had used AI in the past six months, but only 4% reported AI-driven layoffs. About 15% said they had hired fewer people because of AI, and about 13% said they had hired more.[14]
+
+Opinion: The firms that announce “AI layoffs” make the headlines. The far more common response is quieter: hiring a little less.
+
+#### Japan: fewer layoffs, a different risk
+
+Japan is in a different place. In the Ministry of Internal Affairs and Communications’ international comparison for fiscal 2024, 26.7% of individuals in Japan had used generative AI, against 68.8% in the US, 59.2% in Germany and 81.2% in China. One 2025 estimate puts the share of Japanese firms that have fully adopted generative AI in their core operations at just 1.9%, against 6.1% in the US, the lowest in the G7.[15]
+
+The government’s line, for now, is that there is no major impact. In the House of Councillors on 8 July 2026, Takahiro Anno of the party Team Mirai cited the Stanford study and asked for regular monitoring. The Ministry of Health, Labour and Welfare replied that, judging by youth unemployment, graduates’ job-finding rates and employment in IT, no major impact had arisen so far, including on young people.[17] A Japan Productivity Center survey published in September 2026 found more than 90% of firms saying AI had not yet changed their headcount, though more than half expect fewer staff in 5 to 10 years.[18]
+
+The longer view is less calm. In the House of Representatives on 15 April 2026, Michio Kawai of the same party cited the Ministry of Economy, Trade and Industry’s March 2026 estimate of Japan’s job structure in 2040, which shows a surplus of office workers and a shortage of 3.39 million people able to work with AI and robots.[16]
+
+Naoyuki Fukuda of the Japan Research Institute argues that Japan is unlikely to see a US-style rise in youth unemployment: labour shortages, long-term employment and the mass hiring of new graduates every spring act as a cushion. The risk is different. Japanese firms have trained new staff by giving them simple tasks first and letting them learn on the job. If generative AI takes over that starting point, a generation may “get a job, but never learn the work”, and the problem would surface only 5 to 10 years later, when that generation is meant to start managing.[15]
+
+Opinion: In the US, the entrance is narrowing. In Japan, the entrance may stay open while the first rungs of the ladder disappear.
+
+#### What a basic income could do in this kind of disruption
+
+If AI were wiping out jobs across the board, the question would be how to replace the incomes of millions. The data so far show something narrower: fewer first jobs for young people in exposed fields, freelancers losing work task by task, and, in Japan, a possible loss of learning on the job. A basic income fits this particular shape in three ways.
+
+First, a floor for people with no work history. Unemployment insurance, in Japan as elsewhere, pays only people who have worked and paid contributions. A graduate who never got a first job, or a freelancer whose clients drifted away, often gets nothing. The same is true of Japan’s new payment for workers (https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/), which requires earned income in the previous year. A basic income reaches people whether or not they have worked before.
+
+Second, time. Finding the next job, retraining or starting something new takes months. A small, steady income that does not stop when you go back to study or take a risky job makes those months possible.
+
+Third, bargaining power. Someone with a floor can turn down a poor offer, or a contract at a fraction of the old rate, a little more easily. When work is bought task by task, that matters.
+
+Cash trials give some evidence on whether people use the money this way. In Sam Altman’s OpenResearch study (https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/), $1,000 a month for three years led recipients to work about 1.3 hours a week less than the control group, while employment rose in both groups. In Finland’s 2017–2018 experiment (https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/), 2,000 unemployed people received €560 a month; the employment effects were small, and wellbeing and trust improved. In Stockton, California (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-stockton), the share of recipients in full-time work rose from 28% to 40% in a year, more than twice the gain in the control group. None of these trials was about AI. They suggest that a modest floor does not make most people stop working, and that it gives them some room to choose.
+
+Opinion: A basic income would not bring the jobs back. It would change what losing one, or never getting one, means.
+
+#### The strongest case against
+
+The most careful critique comes from a research brief published by the International Labour Organization in May 2026, “Why UBI is not the answer to the impact of AI on the labour market”, by Tuğba Özay and Ekkehard Ernst. It is a paper by named authors, not a formal ILO position. It argues that “AI transforms tasks, not occupations”, so mass unemployment is unlikely, and that a universal payment would push demand into sectors where supply is slow to grow, such as housing, health and care: “Distributing money faster than constrained supply can adjust produces inflation, not abundance.” It does concede that “cognitive jobs are seeing their skill premium eroding, especially for younger job market entrants”. It recommends retraining, active labour-market policy, portable benefits, more housing, taxing AI rents, and social protection that keeps work incentives, “for instance through an earned-income tax credit”.[19]
+
+Robert Litan at the Brookings Institution proposes “transition insurance” instead. Anyone involuntarily displaced, with no need to prove that AI was the cause, and with at least three years in the job, would receive 80%, 60% and 40% of the earnings they lost in the first three years after finding new work. Adding lifetime training accounts and a tax credit for hiring recent graduates, he puts the cost at about $60 billion a year in all, against about $784 billion net for a poverty-level basic income, which he rejects as too expensive.[21]
+
+These critiques deserve a fair hearing. The evidence above supports their first point: so far, AI has reshaped tasks and hiring far more than it has destroyed jobs. Litan’s plan is cheaper, and it would help the mid-career office worker whose pay falls after a layoff.
+
+But both leave the same people out. Wage insurance pays only people who had a job and find another. An earned-income tax credit pays only people who already work. The graduate who never got a first job and the freelancer whose work never counted as employment fall through both, and they are exactly the people the data show being hit first. On inflation, the evidence from cash transfers is more mixed than the brief suggests. When GiveDirectly gave about $1,000 each to more than 10,500 poor households in rural Kenya, a shock worth over 15% of local GDP, researchers found large gains for neighbouring households and firms and “minimal price inflation”.[20] A one-off transfer in rural Kenya does not settle what would happen to rents in Tokyo, and the shortage of housing is a real problem whatever the policy. But more money does not automatically mean higher prices.
+
+Opinion: Our reading: in the present situation, a basic income is not the only tool, and probably not the first one governments will reach for. It is the one that covers the people the other tools miss.
+
+#### What is actually being tried
+
+Small steps are already happening. The AI Dividend (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-ai-dividend), run by US nonprofits, began in March 2026 to pay $1,000 a month for a year, with no strings, to a group of 25 to 50 workers who lost work to AI. It is a demonstration rather than a study: there is no control group.
+
+AI companies have started to publish proposals of their own. Anthropic’s economic policy framework of June 2026 sets out responses by the level of unemployment: at about 5%, training grants, wage insurance and incentives to keep and redeploy workers; at about 10%, expanded unemployment insurance as the priority; and at “unprecedented” levels, sustained income replacement, which “might include basic income, sovereign wealth models, and equity-sharing mechanisms”. Anthropic also pledged $200 million for research and policy trials.[22] Its Public Benefit Fund (https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/), which we have written about separately, is another commitment. OpenAI’s April 2026 paper “Industrial Policy for the Intelligence Age” proposes a Public Wealth Fund that would give every American a stake in AI companies and infrastructure and pay the returns directly, along with safety nets that switch on automatically when displacement data cross a threshold. It does not name basic income.[23]
+
+Lawmakers are moving too. H.R. 10044, introduced in the US House of Representatives in September 2026 by Sara Jacobs, Greg Casar and Valerie Foushee, would levy an excise tax on AI tokens or revenue that rises automatically with unemployment. The money would go to job creation, such as housing, infrastructure and care, not to cash payments.[24] In South Korea, President Lee Jae-myung said in an interview with The Economist in June 2026 that “a new mechanism such as basic income” is needed to share part of AI’s excess profits with ordinary people. His policy chief floated an “AI national dividend” paid from the windfall tax revenue of chipmakers, and the government then reframed it as using excess tax revenue in general. The newspaper Hankook Ilbo warned against going too fast and called funding the crux.[25]
+
+How much would a floor cost? With the basic income calculator (https://neteru-nyukin.eltociear.workers.dev/calc/?c=jp&w=all&m=30000), ¥30,000 a month for everyone in Japan comes to about ¥44.2 trillion a year gross, about 6.7% of GDP. The net cost, after what comes back as tax, is much smaller, as our essay on refundable tax credits (https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/) shows with a worked example.
+
+Opinion: None of these is yet a basic income for the age of AI. But the question has moved, from “will AI take our jobs?” to “who pays for the transition, and how does the money reach people?”
+
+#### Neither “AI is taking every job” nor “nothing is happening”
+
+Opinion: Here is what the data show as of November 2026. AI is not yet visible in overall employment or unemployment, whether in the US, Denmark or Japan. Announced “AI layoffs” are real decisions by real companies, but they are a small and partly self-presented share of all cuts. At the same time, the entry door is narrowing for young people in exposed fields, freelancers have lost work, and Japan may be losing the first rungs on which people learn their trade.
+
+Opinion: This is a disruption that falls first on the people with the least protection: those with no work history, no employer and no claim on unemployment insurance. That is where the simplest feature of a basic income, that it reaches everyone without asking whether you have worked, matters most. It is not the only answer, and its critics are right that it costs a great deal and that supply matters. But a floor that is ready before it is needed is easier to build than one improvised in a crisis.
+
+Opinion: In part 2, we turn to creative work: illustrators, translators, writers and voice actors, where the change has come fastest.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+
+Sources:
+
+1. Challenger, Gray & Christmas — October 2026 Job Cuts Report: October layoffs at three-year low (5 Nov 2026): https://www.challengergray.com/blog/october-layoffs-at-three-year-low-seasonal-hiring-plans-up-26/
+2. Fortune — Oxford Economics on AI layoffs as a “convenient corporate fiction” (7 Jan 2026): https://fortune.com/2026/01/07/ai-layoffs-convenient-corporate-fiction-true-false-oxford-economics-productivity/
+3. The Budget Lab at Yale — Tracking the impact of AI on the labor market (updated 15 Sep 2026): https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market
+4. Anders Humlum and Emilie Vestergaard — “Still Waters, Rapid Currents: Early Labor Market Transformation under Generative AI”, NBER Working Paper 33777 (revised Mar 2026): https://www.nber.org/papers/w33777
+5. Federal Reserve Board — Speech by Governor Michael S. Barr on AI and the labor market (17 Feb 2026): https://www.federalreserve.gov/newsevents/speech/barr20260217a.htm
+6. Federal Reserve Bank of Dallas — Young workers’ employment drops in occupations with high AI exposure (6 Jan 2026): https://www.dallasfed.org/research/economics/2026/0106
+7. Stanford Digital Economy Lab — Erik Brynjolfsson, Bharat Chandar and Ruyu Chen, “Canaries in the Coal Mine?”, revised paper (Aug 2026): https://digitaleconomy.stanford.edu/news/canariesaug26/
+8. King’s College London — New study reveals early impact of AI on job market in UK (7 Oct 2025): https://www.kcl.ac.uk/news/new-study-reveals-early-impact-of-ai-on-job-market-in-uk
+9. Fortune — US Census Bureau papers on AI exposure, early-career hiring and graduates’ earnings (17 Sep 2026): https://fortune.com/2026/09/17/ai-chatgpt-college-majors-retail-jobs/
+10. Anthropic — Massenkoff and McCrory, “Labor market impacts of AI: A new measure and early evidence” (5 Mar 2026): https://www.anthropic.com/research/labor-market-impacts
+11. Washington University in St. Louis, Olin Business School — Hui, Reshef and Zhou: AI tools cause a decline in freelance work and income, at least in the short run (24 Aug 2023): https://olin.washu.edu/about/news-and-media/news/2023/08/study-ai-tools-cause-a-decline-in-freelance-work-and-incomeat-least-in-the-short-run.php
+12. Fortune — Jack Dorsey’s Block cuts about 40% of staff, citing intelligence tools (27 Feb 2026): https://fortune.com/2026/02/27/jack-dorsey-block-40-percent-layoff-ai-intelligence-tools-smaller-team/
+13. Fortune — Marc Benioff says Salesforce cut support staff from 9,000 to about 5,000 as AI agents took over (2 Sep 2025): https://fortune.com/2025/09/02/salesforce-ceo-billionaire-marc-benioff-ai-agents-jobs-layoffs-customer-service-sales/
+14. Federal Reserve Bank of New York, Liberty Street Economics — Businesses are using AI to transform work, not cut jobs (1 Sep 2026): https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/
+15. Japan Research Institute — Naoyuki Fukuda, Generative AI and employment in Japan: how to secure skill formation for young workers, JRI Review 2026 Vol.4 No.131 (Apr 2026; PDF, in Japanese): https://www.jri.co.jp/file/report/jrireview/pdf/16641.pdf
+16. National Diet Library, Diet minutes — House of Representatives Committee on Economy, Trade and Industry, question by Michio Kawai on AI unemployment (15 Apr 2026, in Japanese): https://kokkai.ndl.go.jp/txt/122104080X00320260415/47
+17. National Diet Library, Diet minutes — House of Councillors Special Committee on Digital Society and AI, answer by the Ministry of Health, Labour and Welfare (8 Jul 2026, in Japanese): https://kokkai.ndl.go.jp/txt/122115385X00820260708/132
+18. Japan Productivity Center — Annual Productivity Report 2026 (30 Sep 2026, in Japanese): https://www.jpc-net.jp/research/detail/008214.html
+19. International Labour Organization — Tuğba Özay and Ekkehard Ernst, “Why UBI is not the answer to the impact of AI on the labour market”, research brief (May 2026): https://www.ilo.org/publications/why-universal-basic-income-not-answer-impact-ai-labour-market
+20. Dennis Egger, Johannes Haushofer, Edward Miguel, Paul Niehaus and Michael Walker — “General Equilibrium Effects of Cash Transfers: Experimental Evidence from Kenya”, Econometrica 90(6) (2022): https://doi.org/10.3982/ECTA17945
+21. Brookings Institution — Robert E. Litan, A detailed, affordable plan for transition insurance in the AI era (30 Oct 2026): https://www.brookings.edu/articles/a-detailed-affordable-plan-for-transition-insurance-in-the-ai-era/
+22. Anthropic — Economic policy framework (Jun 2026): https://www.anthropic.com/policy-on-the-ai-exponential/epf
+23. TechCrunch — OpenAI’s vision for the AI economy: public wealth funds, robot taxes and a four-day work week (6 Apr 2026): https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/
+24. Fortune — A House bill would tax AI tokens to fund jobs as unemployment rises (H.R. 10044, 1 Sep 2026): https://fortune.com/2026/09/01/bill-tax-ai-tokens-fund-jobs-technology-unemployment/
+25. Hankook Ilbo — Editorial on President Lee Jae-myung’s call for a basic-income-like mechanism for AI excess profits (Jun 2026, in Korean): https://www.hankookilbo.com/news/article/A2026061115000003881
+
 ### Refundable tax credits vs basic income: what Japan’s new payment for workers is, and is not
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
@@ -928,6 +1087,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
 
 Sources:
 
@@ -1648,6 +1809,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
+
 Sources:
 
 1. Anthropic — Investing in the public benefit (18 Oct 2026): https://www.anthropic.com/news/public-benefit-fund
@@ -2127,7 +2290,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-06. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-07. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -2289,7 +2452,7 @@ Runtime of Encointer’s common-good parachain on Kusama, the chain where its co
 - Language: JavaScript
 - License: AGPL-3.0
 - Stars: 350
-- Last commit: 2026-11-05
+- Last commit: 2026-11-06
 
 End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum
 
@@ -2403,7 +2566,7 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-04
+- Last commit: 2026-11-06
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
@@ -2509,7 +2672,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-11-05
+- Last commit: 2026-11-06
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -2586,7 +2749,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-05
+- Last commit: 2026-11-06
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 

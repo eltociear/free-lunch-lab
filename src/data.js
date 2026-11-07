@@ -2870,6 +2870,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-07",
+      "en": "Published the essay “Has generative AI taken our jobs? The data, and what basic income can do (Part 1)”",
+      "ja": "エッセイ『生成AIは仕事を奪ったのか：データでわかったことと、ベーシックインカムにできること（前編・雇用）』を公開",
+      "zh": "发布随笔《生成式 AI 抢走了我们的工作吗？数据显示了什么，基本收入能做什么（上篇）》",
+      "hi": "निबंध “क्या जनरेटिव AI ने हमारी नौकरियाँ छीन लीं? डेटा क्या दिखाता है, और बेसिक इनकम क्या कर सकती है (भाग 1)” प्रकाशित",
+      "es": "Publicado el ensayo «¿Nos ha quitado el trabajo la IA generativa? Los datos y lo que puede hacer la renta básica (parte 1)»",
+      "de": "Essay „Hat KI Jobs gekostet? Die Daten und was Grundeinkommen kann (Teil 1)“ veröffentlicht",
+      "ar": "نشرنا مقال «هل أخذ الذكاء الاصطناعي التوليدي وظائفنا؟ البيانات، وما يمكن أن يفعله الدخل الأساسي (الجزء الأول)»"
+    },
+    {
       "date": "2026-11-06",
       "en": "Published the essay “Refundable tax credits vs basic income: what Japan’s new payment for workers is, and is not”",
       "ja": "エッセイ『給付付き税額控除とベーシックインカムは、何が違うのか：日本の「就業者負担軽減支援金」から考える』を公開",
@@ -9597,7 +9607,7 @@ module.exports = {
     },
     {
       "id": "ai-dividend",
-      "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income", "public-benefit-fund", "openresearch-cash-study"],
+      "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income", "public-benefit-fund", "openresearch-cash-study", "generative-ai-jobs-basic-income"],
       "years": "2026–",
       "type": "ngo",
       "name": "AI Dividend",
@@ -9779,12 +9789,1724 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "generative-ai-jobs-basic-income",
+      "date": "2026-11-07",
+      "related": [
+        "refundable-tax-credit-vs-basic-income",
+        "public-benefit-fund",
+        "openresearch-cash-study",
+        "finland-basic-income-experiment"
+      ],
+      "title": {
+        "ja": "生成AIは仕事を奪ったのか：データでわかったことと、ベーシックインカムにできること（前編・雇用）",
+        "en": "Has generative AI taken our jobs? The data, and what basic income can do (Part 1)",
+        "zh": "生成式 AI 抢走了我们的工作吗？数据显示了什么，基本收入能做什么（上篇）",
+        "hi": "क्या जनरेटिव AI ने हमारी नौकरियाँ छीन लीं? डेटा क्या दिखाता है, और बेसिक इनकम क्या कर सकती है (भाग 1)",
+        "es": "¿Nos ha quitado el trabajo la IA generativa? Los datos y lo que puede hacer la renta básica (parte 1)",
+        "de": "Hat KI Jobs gekostet? Die Daten und was Grundeinkommen kann (Teil 1)",
+        "ar": "هل أخذ الذكاء الاصطناعي التوليدي وظائفنا؟ البيانات، وما يمكن أن يفعله الدخل الأساسي (الجزء الأول)"
+      },
+      "desc": {
+        "ja": "米国では2026年、12万人分を超える削減でAIが理由に挙げられました。でも雇用全体にまだ跡はなく、狭まっているのは入口です。",
+        "en": "AI was cited in 121,401 US job cuts in 2026, but overall employment shows no clear AI footprint. The entry door is narrowing. The data, and where basic income fits.",
+        "zh": "2026 年，美国有 121,401 人的裁员以 AI 为理由，但整体就业中还看不到明显的 AI 痕迹，正在变窄的是入口。",
+        "hi": "2026 में अमेरिका में 121,401 छंटनियों का कारण AI बताया गया, पर कुल रोज़गार में AI का साफ़ निशान नहीं। संकरा हो रहा है प्रवेश। डेटा, और बेसिक इनकम की जगह।",
+        "es": "En 2026 la IA se citó en 121.401 despidos en EE. UU., pero el empleo total no muestra su huella. Se estrecha la entrada. Datos y papel de la renta básica.",
+        "de": "2026 nannten US-Firmen KI bei 121.401 Stellenstreichungen, doch die Beschäftigung zeigt keine klare Spur. Der Einstieg wird enger. Daten und Grundeinkommen.",
+        "ar": "ذُكر الذكاء الاصطناعي سببًا لـ121,401 حالة تسريح في أمريكا عام 2026، لكن أثره في التوظيف العام غير واضح. باب الدخول يضيق. البيانات، وموقع الدخل الأساسي."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "On 5 November 2026 the US outplacement firm Challenger, Gray & Christmas published its monthly count of announced job cuts. From January to October 2026, employers cited artificial intelligence as the reason for 121,401 cuts, about 20% of the 617,189 total. Since the firm began tracking that reason in 2023, the count has reached 193,226.[1]"
+          ],
+          [
+            "p",
+            "Numbers like these feed a familiar story: generative AI is taking jobs, and fast. This site supports basic income, and AI is one of the reasons people most often give for it. That is exactly why we wanted to know what has actually been measured before asking what a basic income could do. This is part 1 of two. It looks at jobs in general; part 2 will look at creative work."
+          ],
+          [
+            "h",
+            "What the 121,401 does and does not mean"
+          ],
+          [
+            "p",
+            "Challenger counts the reasons employers give when they announce cuts. It does not measure how many jobs AI actually did away with. In October 2026, AI was cited for only 1,265 cuts, the lowest month of the year, and “market/economic conditions” (130,531) has overtaken AI as the top reason for the year so far.[1]"
+          ],
+          [
+            "p",
+            "Some economists suspect that part of the AI figure is window dressing. In a January 2026 briefing, Oxford Economics noted that AI had been cited for nearly 55,000 US cuts in the first 11 months of 2025, just 4.5% of the total, and wrote: “We suspect some firms are trying to dress up layoffs as a good news story rather than bad news, such as past over-hiring.”[2] Telling investors that a smaller team is the fruit of AI sounds better than admitting to having hired too many people."
+          ],
+          [
+            "o",
+            "An announced reason is a statement, not a measurement. To see what AI has done to jobs, we have to look at labour-market data."
+          ],
+          [
+            "h",
+            "The big picture: no clear footprint yet"
+          ],
+          [
+            "p",
+            "The Budget Lab at Yale tracks the US labour market for signs of AI. Its September 2026 update, using data through August, says the analysis “does not yet clearly indicate an AI-related labor market footprint” and that “measures of AI usage show no connection to changes in employment or unemployment.”[3]"
+          ],
+          [
+            "p",
+            "Denmark offers a tighter test. Anders Humlum and Emilie Vestergaard linked surveys of AI use in 11 exposed occupations to the country’s administrative records. In the revised version of their paper (March 2026), they rule out effects on earnings or recorded hours larger than 2% two years after ChatGPT’s launch.[4]"
+          ],
+          [
+            "p",
+            "Federal Reserve Governor Michael Barr put it plainly in February 2026: “AI has yet to have a substantial effect on aggregate employment or unemployment.”[5] Economists at the Dallas Fed did the arithmetic. The share of 20- to 24-year-olds working in the most AI-exposed occupations fell from 16.4% in November 2022 to 15.5% in September 2025. Even if all of that had turned into unemployment, it would have added only about 0.1 point to the national rate.[6]"
+          ],
+          [
+            "o",
+            "For the labour market as a whole, “AI is taking jobs” is not yet visible in the data."
+          ],
+          [
+            "h",
+            "But the entry door is narrowing"
+          ],
+          [
+            "p",
+            "That is not the end of the story. Look at who is not being hired, rather than who is being let go, and a consistent signal appears."
+          ],
+          [
+            "p",
+            "Erik Brynjolfsson, Bharat Chandar and Ruyu Chen at Stanford use payroll records from ADP, the largest US payroll processor. In their revised paper of August 2026, with data through June 2026, employment of workers aged 22 to 25 in the most AI-exposed occupations, such as software development and customer service, is about 19% below where it would be had it kept pace with people of the same age in less-exposed jobs. Earlier versions of the paper put the gap at 13% and then 15%; it has widened as more data came in. Experienced workers in the same occupations show no comparable gap. The authors stress that these are “descriptive patterns, not causal estimates”.[7]"
+          ],
+          [
+            "p",
+            "Other studies, using other data, point the same way. A King’s College London study of UK firms found that highly exposed firms cut total employment by 4.5% on average, with junior positions down 5.8%, almost the whole decline; they were also 16.3 percentage points less likely to post new vacancies.[8] Two US Census Bureau working papers found that early-career employment in the most AI-exposed fifth of industries fell 12% over the ten quarters after ChatGPT. Graduates of the most exposed tenth of college majors became 5 percentage points less likely to have a job a quarter after graduating, and their starting earnings fell 13%, roughly what economists would expect from graduating into a severe recession.[9] Anthropic, the company behind the AI model Claude, found no systematic rise in unemployment among highly exposed workers, but a job-finding rate for 22- to 25-year-olds entering the most exposed jobs about 14% below 2022, a result it calls barely significant.[10]"
+          ],
+          [
+            "p",
+            "What these studies share is the mechanism. The fall comes mainly from fewer young people being hired, not from more people being dismissed.[6][7][9] Firms keep the staff they have and quietly stop filling the bottom rung. The Census papers also find that hiring had largely recovered by early 2025, but from a smaller base: the door reopened only part of the way.[9]"
+          ],
+          [
+            "o",
+            "AI’s first visible effect is not mass layoffs but a narrower entrance. It is easy to miss, because a job that was never offered never shows up as a job lost."
+          ],
+          [
+            "h",
+            "Freelancers felt it first"
+          ],
+          [
+            "p",
+            "The other place the effect shows clearly is in markets where work is bought task by task. Xiang Hui, Oren Reshef and Luofeng Zhou studied the freelance platform Upwork. After ChatGPT’s release, writing-related freelancers saw their monthly jobs fall 2% and their monthly earnings fall 5.2%. After the image generators DALL-E 2 and Midjourney, image-related freelancers lost 3.7% of their jobs and 9.4% of their earnings.[11]"
+          ],
+          [
+            "p",
+            "Freelancers have no employer to keep them on, no notice period and, in many countries, little or no unemployment insurance. When a client switches to a tool, the income simply stops. Part 2 will look at creative work more closely."
+          ],
+          [
+            "p",
+            "The main studies side by side:"
+          ],
+          [
+            "t",
+            "Study | Data | Finding\nYale Budget Lab | US labour-force survey, to Aug 2026 | No clear AI footprint on employment or unemployment[3]\nHumlum & Vestergaard | Danish administrative records | Effects on earnings and hours above 2% ruled out[4]\nBrynjolfsson, Chandar & Chen (Stanford) | ADP payroll, to Jun 2026 | Ages 22–25 in the most exposed jobs: about 19% below trend (revised figure)[7]\nKing’s College London | UK job postings and profiles | Exposed firms: junior roles −5.8%[8]\nUS Census Bureau | US administrative records | Early-career jobs in the most exposed industries −12%; starting pay for the most exposed majors −13%[9]\nAnthropic | US labour-force survey | No systematic rise in unemployment; young job-finding rate about −14%[10]\nHui, Reshef & Zhou | Upwork | Writing: jobs −2%, earnings −5.2%; images: −3.7%, −9.4%[11]"
+          ],
+          [
+            "h",
+            "When companies say AI was the reason"
+          ],
+          [
+            "p",
+            "Some companies have said plainly that AI is why they need fewer people. In February 2026 Block, the payments company led by Jack Dorsey, cut more than 4,000 of its more than 10,000 staff. The shareholder letter said: “Intelligence tools have changed what it means to build and run a company,” and “A significantly smaller team, using the tools we’re building, can do more and do it better.” Block’s fourth-quarter gross profit was up 24% on a year earlier: this was a company cutting while doing well, not one in trouble.[12] In September 2025 Salesforce’s chief executive Marc Benioff said he had cut support staff “from 9,000 heads to about 5,000, because I need less heads”, with half of customer conversations now handled by AI agents.[13]"
+          ],
+          [
+            "p",
+            "Surveys of firms show how unusual these cases still are. In the New York Fed’s 2026 regional business surveys, 61% of service firms had used AI in the past six months, but only 4% reported AI-driven layoffs. About 15% said they had hired fewer people because of AI, and about 13% said they had hired more.[14]"
+          ],
+          [
+            "o",
+            "The firms that announce “AI layoffs” make the headlines. The far more common response is quieter: hiring a little less."
+          ],
+          [
+            "h",
+            "Japan: fewer layoffs, a different risk"
+          ],
+          [
+            "p",
+            "Japan is in a different place. In the Ministry of Internal Affairs and Communications’ international comparison for fiscal 2024, 26.7% of individuals in Japan had used generative AI, against 68.8% in the US, 59.2% in Germany and 81.2% in China. One 2025 estimate puts the share of Japanese firms that have fully adopted generative AI in their core operations at just 1.9%, against 6.1% in the US, the lowest in the G7.[15]"
+          ],
+          [
+            "p",
+            "The government’s line, for now, is that there is no major impact. In the House of Councillors on 8 July 2026, Takahiro Anno of the party Team Mirai cited the Stanford study and asked for regular monitoring. The Ministry of Health, Labour and Welfare replied that, judging by youth unemployment, graduates’ job-finding rates and employment in IT, no major impact had arisen so far, including on young people.[17] A Japan Productivity Center survey published in September 2026 found more than 90% of firms saying AI had not yet changed their headcount, though more than half expect fewer staff in 5 to 10 years.[18]"
+          ],
+          [
+            "p",
+            "The longer view is less calm. In the House of Representatives on 15 April 2026, Michio Kawai of the same party cited the Ministry of Economy, Trade and Industry’s March 2026 estimate of Japan’s job structure in 2040, which shows a surplus of office workers and a shortage of 3.39 million people able to work with AI and robots.[16]"
+          ],
+          [
+            "p",
+            "Naoyuki Fukuda of the Japan Research Institute argues that Japan is unlikely to see a US-style rise in youth unemployment: labour shortages, long-term employment and the mass hiring of new graduates every spring act as a cushion. The risk is different. Japanese firms have trained new staff by giving them simple tasks first and letting them learn on the job. If generative AI takes over that starting point, a generation may “get a job, but never learn the work”, and the problem would surface only 5 to 10 years later, when that generation is meant to start managing.[15]"
+          ],
+          [
+            "o",
+            "In the US, the entrance is narrowing. In Japan, the entrance may stay open while the first rungs of the ladder disappear."
+          ],
+          [
+            "h",
+            "What a basic income could do in this kind of disruption"
+          ],
+          [
+            "p",
+            "If AI were wiping out jobs across the board, the question would be how to replace the incomes of millions. The data so far show something narrower: fewer first jobs for young people in exposed fields, freelancers losing work task by task, and, in Japan, a possible loss of learning on the job. A basic income fits this particular shape in three ways."
+          ],
+          [
+            "p",
+            "First, a floor for people with no work history. Unemployment insurance, in Japan as elsewhere, pays only people who have worked and paid contributions. A graduate who never got a first job, or a freelancer whose clients drifted away, often gets nothing. The same is true of {Japan’s new payment for workers|/essays/refundable-tax-credit-vs-basic-income/}, which requires earned income in the previous year. A basic income reaches people whether or not they have worked before."
+          ],
+          [
+            "p",
+            "Second, time. Finding the next job, retraining or starting something new takes months. A small, steady income that does not stop when you go back to study or take a risky job makes those months possible."
+          ],
+          [
+            "p",
+            "Third, bargaining power. Someone with a floor can turn down a poor offer, or a contract at a fraction of the old rate, a little more easily. When work is bought task by task, that matters."
+          ],
+          [
+            "p",
+            "Cash trials give some evidence on whether people use the money this way. In {Sam Altman’s OpenResearch study|/essays/openresearch-cash-study/}, $1,000 a month for three years led recipients to work about 1.3 hours a week less than the control group, while employment rose in both groups. In {Finland’s 2017–2018 experiment|/essays/finland-basic-income-experiment/}, 2,000 unemployed people received €560 a month; the employment effects were small, and wellbeing and trust improved. In {Stockton, California|/timeline/#tl-stockton}, the share of recipients in full-time work rose from 28% to 40% in a year, more than twice the gain in the control group. None of these trials was about AI. They suggest that a modest floor does not make most people stop working, and that it gives them some room to choose."
+          ],
+          [
+            "o",
+            "A basic income would not bring the jobs back. It would change what losing one, or never getting one, means."
+          ],
+          [
+            "h",
+            "The strongest case against"
+          ],
+          [
+            "p",
+            "The most careful critique comes from a research brief published by the International Labour Organization in May 2026, “Why UBI is not the answer to the impact of AI on the labour market”, by Tuğba Özay and Ekkehard Ernst. It is a paper by named authors, not a formal ILO position. It argues that “AI transforms tasks, not occupations”, so mass unemployment is unlikely, and that a universal payment would push demand into sectors where supply is slow to grow, such as housing, health and care: “Distributing money faster than constrained supply can adjust produces inflation, not abundance.” It does concede that “cognitive jobs are seeing their skill premium eroding, especially for younger job market entrants”. It recommends retraining, active labour-market policy, portable benefits, more housing, taxing AI rents, and social protection that keeps work incentives, “for instance through an earned-income tax credit”.[19]"
+          ],
+          [
+            "p",
+            "Robert Litan at the Brookings Institution proposes “transition insurance” instead. Anyone involuntarily displaced, with no need to prove that AI was the cause, and with at least three years in the job, would receive 80%, 60% and 40% of the earnings they lost in the first three years after finding new work. Adding lifetime training accounts and a tax credit for hiring recent graduates, he puts the cost at about $60 billion a year in all, against about $784 billion net for a poverty-level basic income, which he rejects as too expensive.[21]"
+          ],
+          [
+            "p",
+            "These critiques deserve a fair hearing. The evidence above supports their first point: so far, AI has reshaped tasks and hiring far more than it has destroyed jobs. Litan’s plan is cheaper, and it would help the mid-career office worker whose pay falls after a layoff."
+          ],
+          [
+            "p",
+            "But both leave the same people out. Wage insurance pays only people who had a job and find another. An earned-income tax credit pays only people who already work. The graduate who never got a first job and the freelancer whose work never counted as employment fall through both, and they are exactly the people the data show being hit first. On inflation, the evidence from cash transfers is more mixed than the brief suggests. When GiveDirectly gave about $1,000 each to more than 10,500 poor households in rural Kenya, a shock worth over 15% of local GDP, researchers found large gains for neighbouring households and firms and “minimal price inflation”.[20] A one-off transfer in rural Kenya does not settle what would happen to rents in Tokyo, and the shortage of housing is a real problem whatever the policy. But more money does not automatically mean higher prices."
+          ],
+          [
+            "o",
+            "Our reading: in the present situation, a basic income is not the only tool, and probably not the first one governments will reach for. It is the one that covers the people the other tools miss."
+          ],
+          [
+            "h",
+            "What is actually being tried"
+          ],
+          [
+            "p",
+            "Small steps are already happening. {The AI Dividend|/timeline/#tl-ai-dividend}, run by US nonprofits, began in March 2026 to pay $1,000 a month for a year, with no strings, to a group of 25 to 50 workers who lost work to AI. It is a demonstration rather than a study: there is no control group."
+          ],
+          [
+            "p",
+            "AI companies have started to publish proposals of their own. Anthropic’s economic policy framework of June 2026 sets out responses by the level of unemployment: at about 5%, training grants, wage insurance and incentives to keep and redeploy workers; at about 10%, expanded unemployment insurance as the priority; and at “unprecedented” levels, sustained income replacement, which “might include basic income, sovereign wealth models, and equity-sharing mechanisms”. Anthropic also pledged $200 million for research and policy trials.[22] {Its Public Benefit Fund|/essays/public-benefit-fund/}, which we have written about separately, is another commitment. OpenAI’s April 2026 paper “Industrial Policy for the Intelligence Age” proposes a Public Wealth Fund that would give every American a stake in AI companies and infrastructure and pay the returns directly, along with safety nets that switch on automatically when displacement data cross a threshold. It does not name basic income.[23]"
+          ],
+          [
+            "p",
+            "Lawmakers are moving too. H.R. 10044, introduced in the US House of Representatives in September 2026 by Sara Jacobs, Greg Casar and Valerie Foushee, would levy an excise tax on AI tokens or revenue that rises automatically with unemployment. The money would go to job creation, such as housing, infrastructure and care, not to cash payments.[24] In South Korea, President Lee Jae-myung said in an interview with The Economist in June 2026 that “a new mechanism such as basic income” is needed to share part of AI’s excess profits with ordinary people. His policy chief floated an “AI national dividend” paid from the windfall tax revenue of chipmakers, and the government then reframed it as using excess tax revenue in general. The newspaper Hankook Ilbo warned against going too fast and called funding the crux.[25]"
+          ],
+          [
+            "p",
+            "How much would a floor cost? With {the basic income calculator|/calc/?c=jp&w=all&m=30000}, ¥30,000 a month for everyone in Japan comes to about ¥44.2 trillion a year gross, about 6.7% of GDP. The net cost, after what comes back as tax, is much smaller, as our {essay on refundable tax credits|/essays/refundable-tax-credit-vs-basic-income/} shows with a worked example."
+          ],
+          [
+            "o",
+            "None of these is yet a basic income for the age of AI. But the question has moved, from “will AI take our jobs?” to “who pays for the transition, and how does the money reach people?”"
+          ],
+          [
+            "h",
+            "Neither “AI is taking every job” nor “nothing is happening”"
+          ],
+          [
+            "o",
+            "Here is what the data show as of November 2026. AI is not yet visible in overall employment or unemployment, whether in the US, Denmark or Japan. Announced “AI layoffs” are real decisions by real companies, but they are a small and partly self-presented share of all cuts. At the same time, the entry door is narrowing for young people in exposed fields, freelancers have lost work, and Japan may be losing the first rungs on which people learn their trade."
+          ],
+          [
+            "o",
+            "This is a disruption that falls first on the people with the least protection: those with no work history, no employer and no claim on unemployment insurance. That is where the simplest feature of a basic income, that it reaches everyone without asking whether you have worked, matters most. It is not the only answer, and its critics are right that it costs a great deal and that supply matters. But a floor that is ready before it is needed is easier to build than one improvised in a crisis."
+          ],
+          [
+            "o",
+            "In part 2, we turn to creative work: illustrators, translators, writers and voice actors, where the change has come fastest."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "2026年11月5日、アメリカの再就職支援会社チャレンジャー・グレイ・アンド・クリスマスが、毎月まとめている人員削減の発表件数を公表しました。2026年1〜10月に、企業が理由として人工知能（AI）を挙げた削減は12万1,401人分で、削減全体61万7,189人分の約20%にあたります。この理由を数え始めた2023年からの累計は19万3,226人分になりました。[1]"
+          ],
+          [
+            "p",
+            "こうした数字は、「生成AIが仕事を奪っている、それも急速に」というおなじみの話につながります。このサイトはベーシックインカムを応援していて、AIはベーシックインカムが必要な理由として最もよく挙げられるものの一つです。だからこそ、ベーシックインカムに何ができるかを考える前に、実際に何が測られているのかを確かめたいと考えました。この記事は2回に分けた前編で、雇用全体を扱います。後編では、クリエイターの仕事を取り上げます。"
+          ],
+          [
+            "h",
+            "「12万1,401人」が意味すること、しないこと"
+          ],
+          [
+            "p",
+            "チャレンジャー社が数えているのは、企業が削減を発表するときに挙げた理由です。AIが実際にどれだけの仕事をなくしたかを測っているわけではありません。2026年10月にAIが理由に挙げられた削減は1,265人分で、この年でいちばん少ない月でした。年初からの累計でも、いまは「市場・経済の状況」（13万531人分）がAIを抜いて最大の理由になっています。[1]"
+          ],
+          [
+            "p",
+            "AIの数字の一部は「見せ方」ではないかと疑う経済学者もいます。英調査会社オックスフォード・エコノミクスは2026年1月のリポートで、2025年1〜11月にAIが理由とされた削減は約5万5,000人分で、全体の4.5%にすぎないと指摘し、「過去の採りすぎのような悪いニュースではなく、良いニュースとして人員削減を見せようとしている企業があるのではないか」と書きました。[2] 人を採りすぎたと認めるより、AIのおかげで少人数で回せるようになったと投資家に説明するほうが、聞こえがいいからです。"
+          ],
+          [
+            "o",
+            "企業が発表する理由は「言い分」であって、測った結果ではありません。AIが雇用に何をしたかを知るには、労働市場のデータを見る必要があります。"
+          ],
+          [
+            "h",
+            "全体で見ると、まだはっきりした跡はない"
+          ],
+          [
+            "p",
+            "イェール大学のバジェット・ラボは、アメリカの労働市場にAIの影響が出ていないかを継続的に追っています。2026年8月までのデータを使った9月の更新では、分析は「AIによる労働市場への跡を、まだはっきりとは示していない」とし、「AIの利用度を示す指標は、雇用や失業の変化と結びついていない」と結論づけました。[3]"
+          ],
+          [
+            "p",
+            "デンマークでは、もっと精密な確かめ方ができます。アンダース・フムルムとエミリー・ベスタゴーは、AIの影響を受けやすい11の職業でのAI利用の調査を、国の行政記録と結びつけました。2026年3月の改訂版では、ChatGPTの登場から2年の時点で、収入や記録された労働時間への影響が2%を超える可能性を否定しています。[4]"
+          ],
+          [
+            "p",
+            "アメリカの中央銀行にあたる連邦準備制度理事会（FRB）のマイケル・バー理事は2026年2月、「AIは、まだ雇用全体や失業全体に大きな影響を与えていない」と述べました。[5] ダラス連邦準備銀行のエコノミストは計算をしています。AIの影響を最も受けやすい職業で働く20〜24歳の割合は、2022年11月の16.4%から2025年9月の15.5%に下がりました。仮にその全部が失業になったとしても、全国の失業率を押し上げるのは約0.1ポイントだけです。[6]"
+          ],
+          [
+            "o",
+            "労働市場全体で見ると、「AIが仕事を奪っている」ことは、まだデータには表れていません。"
+          ],
+          [
+            "h",
+            "けれども、入口は狭まっている"
+          ],
+          [
+            "p",
+            "話はそこで終わりません。誰が辞めさせられたかではなく、誰が採用されなかったかを見ると、一貫したサインが浮かび上がります。"
+          ],
+          [
+            "p",
+            "スタンフォード大学のエリック・ブリニョルフソン、バラト・チャンダー、ルーユー・チェンは、アメリカ最大の給与計算代行会社ADPの給与データを使っています。2026年6月までのデータによる8月の改訂版では、ソフトウェア開発やカスタマーサポートなど、AIの影響を最も受けやすい職業で働く22〜25歳の雇用は、影響を受けにくい職業の同年代と同じペースで推移した場合より約19%少なくなっています。以前の版では13%、次いで15%だった差が、データが増えるにつれて広がりました。同じ職業でも、経験を積んだ人には同じような差は見られません。著者たちは、これは「記述的なパターンであって、因果関係の推定ではない」と念を押しています。[7]"
+          ],
+          [
+            "p",
+            "別のデータを使った研究も、同じ方向を指しています。ロンドン大学キングス・カレッジがイギリスの企業を調べた研究では、AIの影響を強く受ける企業で雇用全体が平均4.5%減り、そのほぼすべてにあたる5.8%減が若手のポストでした。こうした企業は、新しい求人を出す確率も16.3ポイント低くなっていました。[8] アメリカ国勢調査局の2本の論文では、AIの影響を最も受けやすい上位5分の1の産業で、キャリア初期の雇用がChatGPTの登場後10四半期で12%減りました。影響を最も受けやすい上位1割の専攻の卒業生は、卒業1四半期後に職に就いている確率が5ポイント下がり、初任給は13%下がっています。深刻な不況のさなかに卒業したときと同じくらいの打撃です。[9] AIモデルClaudeをつくるAnthropicの分析では、影響を受けやすい職業の働き手の失業が組織的に増えた様子はない一方、22〜25歳がそうした職業に就く確率は2022年より約14%低く、ただし統計的には「かろうじて有意」という結果でした。[10]"
+          ],
+          [
+            "p",
+            "これらの研究に共通しているのは、起きている仕組みです。減っているのは、主に若い人の採用で、解雇が増えているわけではありません。[6][7][9] 企業はいまいる人を残し、いちばん下の段を静かに埋めなくなっています。国勢調査局の論文では、採用は2025年はじめまでにおおむね戻ったものの、もとの規模が小さくなっていました。扉は半分しか開き直していないのです。[9]"
+          ],
+          [
+            "o",
+            "AIの最初の目に見える影響は、大量解雇ではなく、入口が狭くなることです。最初から募集されなかった仕事は「失われた仕事」として数えられないので、見落とされがちです。"
+          ],
+          [
+            "h",
+            "まず影響を受けたのはフリーランス"
+          ],
+          [
+            "p",
+            "影響がはっきり表れているもう一つの場所が、仕事が案件ごとに売り買いされる市場です。シアン・フイ、オレン・レシェフ、ルオフェン・ジョウは、フリーランスの仕事の仲介サイトUpworkを調べました。ChatGPTの公開後、文章関連のフリーランスは月あたりの受注が2%、月の収入が5.2%減りました。画像生成AIのDALL-E 2とMidjourneyのあとには、画像関連のフリーランスの受注が3.7%、収入が9.4%減っています。[11]"
+          ],
+          [
+            "p",
+            "フリーランスには、雇い続けてくれる会社も、解雇予告の期間もなく、多くの国では失業保険もほとんどありません。発注する側がツールに切り替えれば、収入はそのまま止まります。クリエイターの仕事は、後編でくわしく見ていきます。"
+          ],
+          [
+            "p",
+            "おもな研究を並べると、次のようになります。"
+          ],
+          [
+            "t",
+            "研究 | データ | わかったこと\nイェール大学バジェット・ラボ | 米国の労働力調査（2026年8月まで） | 雇用・失業にAIのはっきりした跡はない[3]\nフムルムとベスタゴー | デンマークの行政記録 | 収入・労働時間への2%を超える影響を否定[4]\nブリニョルフソンら（スタンフォード大学） | ADPの給与データ（2026年6月まで） | 影響を最も受けやすい職業の22〜25歳が約19%少ない（改訂後の数字）[7]\nロンドン大学キングス・カレッジ | 英国の求人とプロフィール | 影響の大きい企業で若手のポストが5.8%減[8]\n米国勢調査局 | 米国の行政記録 | 影響の大きい産業でキャリア初期の雇用が12%減、影響の大きい専攻の初任給が13%減[9]\nAnthropic | 米国の労働力調査 | 失業の組織的な増加はない、若者の就職率は約14%低い[10]\nフイ、レシェフ、ジョウ | Upwork | 文章：受注2%減・収入5.2%減、画像：3.7%減・9.4%減[11]"
+          ],
+          [
+            "h",
+            "企業が「AIのせい」と言うとき"
+          ],
+          [
+            "p",
+            "AIがあるから人が少なくて済むと、はっきり言う企業もあります。2026年2月、ジャック・ドーシーが率いる決済会社Blockは、1万人余りの社員のうち4,000人超を削減しました。株主への手紙には「インテリジェンスのツールは、会社をつくり、動かすことの意味を変えた」「私たちがつくっているツールを使えば、ずっと少人数のチームのほうが、より多くのことを、よりうまくできる」とあります。Blockの第4四半期の粗利益は前年より24%増えていました。苦しいから減らしたのではなく、好調なのに減らしたのです。[12] セールスフォースのマーク・ベニオフCEOは2025年9月、サポート部門の人員を「9,000人から約5,000人に減らした。そんなに人がいらないからだ」と話し、顧客とのやりとりの半分はAIエージェントが担っていると述べました。[13]"
+          ],
+          [
+            "p",
+            "ただ、企業への調査を見ると、こうした例はまだ珍しいことがわかります。ニューヨーク連邦準備銀行の2026年の地域企業調査では、サービス業の61%が過去半年にAIを使っていましたが、AIを理由に人員を削減したのは4%でした。AIのために採用を減らしたのは約15%、逆に増やしたのは約13%です。[14]"
+          ],
+          [
+            "o",
+            "「AIリストラ」を発表する企業はニュースになります。けれども、はるかに多い反応は、もっと静かなもの、つまり採用を少し減らすことです。"
+          ],
+          [
+            "h",
+            "日本：リストラは少なく、別のリスクがある"
+          ],
+          [
+            "p",
+            "日本の状況は違います。総務省の国際比較調査によると、2024年度に生成AIを使ったことがある個人は、日本では26.7%で、アメリカの68.8%、ドイツの59.2%、中国の81.2%を大きく下回ります。中核業務に生成AIを本格的に導入している企業の割合は、2025年の推計で日本はわずか1.9%と、アメリカの6.1%の3分の1以下で、G7で最も低い水準です。[15]"
+          ],
+          [
+            "p",
+            "政府の見方は、いまのところ「大きな影響はない」です。2026年7月8日の参議院の委員会で、チームみらいの安野貴博議員がスタンフォード大学の研究を挙げて定期的な調査を求めたのに対し、厚生労働省は、若年層の失業率や新卒者の就職率、IT産業の雇用を見る限り、「若年層を含め現時点で大きな影響は生じていない」と答えました。[17] 日本生産性本部が2026年9月に公表した調査でも、9割を超える企業が、AIで人員数はまだ変わっていないと答えています。ただし半数以上が、5〜10年後には人員が減ると見ています。[18]"
+          ],
+          [
+            "p",
+            "長い目で見ると、落ち着いてはいられません。2026年4月15日の衆議院の委員会では、同じチームみらいの河合道雄議員が、経済産業省が3月にまとめた2040年の就業構造の推計を取り上げました。事務職が余る一方で、AIやロボットを使いこなせる人材が339万人足りなくなるという内容です。[16]"
+          ],
+          [
+            "p",
+            "日本総合研究所の福田直之氏は、日本でアメリカのような若者の失業増は起きにくいと見ています。人手不足、長期雇用、新卒一括採用がクッションになるからです。リスクは別のところにあります。日本の企業は、新人にまず簡単な仕事を任せ、職場で学ばせながら育ててきました。その出発点を生成AIが担ってしまうと、「就職はできたけれど、仕事を学べなかった世代」が生まれかねません。問題が表に出るのは、その世代が管理職になる5〜10年後だといいます。[15]"
+          ],
+          [
+            "o",
+            "アメリカでは入口が狭まっています。日本では、入口は開いたまま、はしごの最初の段がなくなっていくのかもしれません。"
+          ],
+          [
+            "h",
+            "この形の変化に、ベーシックインカムができること"
+          ],
+          [
+            "p",
+            "もしAIがあらゆる仕事を一気になくしているのなら、問題は何百万人もの収入をどう置き換えるかになります。けれども、ここまでのデータが示しているのは、もっと狭い変化です。影響を受けやすい分野で若者の最初の仕事が減り、フリーランスが案件ごとに仕事を失い、日本では職場で学ぶ機会が失われるおそれがある。この形の変化に、ベーシックインカムは三つの点で合っています。"
+          ],
+          [
+            "p",
+            "一つめは、働いた経験のない人にも届く土台です。失業保険は、日本でもほかの国でも、働いて保険料を納めた人にしか払われません。最初の仕事に就けなかった卒業生や、取引先が少しずつ離れていったフリーランスは、何も受け取れないことが多いのです。{日本の新しい「就業者負担軽減支援金」|/essays/refundable-tax-credit-vs-basic-income/}も、前の年の勤労所得が条件です。ベーシックインカムは、それまで働いていたかどうかに関係なく届きます。"
+          ],
+          [
+            "p",
+            "二つめは、時間です。次の仕事を探す、学び直す、新しいことを始める。どれも何か月もかかります。学校に戻ったり、不安定な仕事に挑戦したりしても止まらない、少額でも安定した収入があれば、その何か月かを過ごせます。"
+          ],
+          [
+            "p",
+            "三つめは、交渉力です。土台がある人は、条件の悪い申し出や、以前の何分の一という単価の契約を、少しだけ断りやすくなります。仕事が案件ごとに買われる世界では、この差が効いてきます。"
+          ],
+          [
+            "p",
+            "人々が実際にそうお金を使うのかについては、現金給付の実験がいくらか手がかりをくれます。{サム・アルトマンが資金を出したOpenResearchの研究|/essays/openresearch-cash-study/}では、月1,000ドルを3年間受け取った人は、比較グループより週に約1.3時間働く時間が短くなりましたが、働いている人の割合はどちらのグループでも上がりました。{フィンランドの2017〜2018年の実験|/essays/finland-basic-income-experiment/}では、失業者2,000人に月560ユーロを配り、雇用への効果は小さく、暮らしの安心感や信頼感は高まりました。{カリフォルニア州ストックトン|/timeline/#tl-stockton}では、フルタイムで働く受給者の割合が1年で28%から40%に上がり、比較グループの伸びの2倍を超えました。どれもAIをテーマにした実験ではありません。それでも、控えめな土台があっても多くの人は働くのをやめず、選ぶ余地が少し広がることを示しています。"
+          ],
+          [
+            "o",
+            "ベーシックインカムが仕事を取り戻してくれるわけではありません。変わるのは、仕事を失うこと、あるいは最初の仕事に就けないことの意味です。"
+          ],
+          [
+            "h",
+            "いちばん強い反論"
+          ],
+          [
+            "p",
+            "いちばん丁寧な批判は、国際労働機関（ILO）が2026年5月に出した研究ブリーフ「AIの労働市場への影響に、なぜユニバーサル・ベーシックインカムは答えにならないのか」です。著者はトゥバ・オザイとエッケハルト・エルンストで、ILOとしての正式な立場ではなく、著者個人の名前で出された論考です。「AIが変えるのは職業ではなく作業だ」として大量失業は起きにくいとし、全員への給付は、住宅や医療、介護のように供給がすぐには増えない分野に需要を押し込むと論じます。「限られた供給が追いつくより速くお金を配れば、生まれるのは豊かさではなくインフレだ」。一方で、「知的な仕事は、とくに若い新規参入者にとって、技能の上乗せ分が目減りしている」ことは認めています。勧めているのは、学び直し、積極的な労働市場政策、仕事を移っても持ち運べる給付、住宅の供給、AIが生む超過利潤への課税、そして働く意欲を損なわない社会保障で、その例として「勤労所得税額控除」を挙げています。[19]"
+          ],
+          [
+            "p",
+            "ブルッキングス研究所のロバート・ライタンは、かわりに「移行保険」を提案しています。本人の意思によらず職を失った人は、AIが原因だと証明しなくても、同じ職場に3年以上いれば対象になり、新しい仕事に就いてから3年間、下がった収入の80%、60%、40%を受け取ります。生涯使える職業訓練口座と、新卒を雇った企業への税額控除を合わせても、費用は年約600億ドル。貧困線の水準のベーシックインカムなら正味で年約7,840億ドルかかるとして、ライタンはこちらを高すぎると退けています。[21]"
+          ],
+          [
+            "p",
+            "これらの批判には、きちんと耳を傾けるべきです。ここまでのデータは、批判の一つめの点を裏づけています。いまのところAIは、仕事をなくすよりも、作業の中身や採用のほうを大きく変えています。ライタンの案のほうが安く、解雇されて給料が下がった中堅の会社員の助けにもなります。"
+          ],
+          [
+            "p",
+            "けれども、どちらの案も同じ人たちを取りこぼします。賃金保険が払われるのは、仕事があって、次の仕事を見つけた人だけです。勤労所得税額控除が届くのは、すでに働いている人だけです。最初の仕事に就けなかった卒業生や、仕事が「雇用」として数えられてこなかったフリーランスは、どちらからもこぼれ落ちます。そして、データが真っ先に打撃を受けていると示しているのは、まさにこの人たちです。インフレについても、現金給付の証拠はブリーフが言うほど一方的ではありません。GiveDirectlyがケニアの農村で1万500を超える貧しい世帯に約1,000ドルずつ配ったとき、その規模は地域のGDPの15%を超えましたが、研究者は、近隣の世帯や企業にも大きな恩恵が広がり、物価の上昇は「ごくわずか」だったと報告しています。[20] ケニアの農村での1回きりの給付で、東京の家賃がどうなるかが決まるわけではありませんし、住宅の不足はどの政策をとっても現実の問題です。それでも、お金が増えれば自動的に物価が上がるとは限りません。"
+          ],
+          [
+            "o",
+            "私たちの見立てはこうです。いまの状況では、ベーシックインカムは唯一の道具ではなく、政府が最初に手に取る道具でもないでしょう。けれども、ほかの道具が取りこぼす人に届くのは、この道具です。"
+          ],
+          [
+            "h",
+            "実際に試されていること"
+          ],
+          [
+            "p",
+            "小さな一歩は、すでに始まっています。アメリカの非営利団体が運営する{AI Dividend|/timeline/#tl-ai-dividend}は、2026年3月から、AIで仕事を失った25〜50人に、条件なしで月1,000ドルを1年間払っています。比較グループのない、研究というよりは実演です。"
+          ],
+          [
+            "p",
+            "AI企業も、自分たちの提案を出し始めました。Anthropicが2026年6月に公表した経済政策の枠組みは、失業率の水準ごとに対応を示しています。約5%なら職業訓練の助成、賃金保険、雇用を維持して配置転換する企業への優遇。約10%なら失業保険の拡充を最優先に。そして「前例のない」水準なら、一時的な支援から長期の所得の置き換えへ移り、その方法には「ベーシックインカム、政府系ファンドのモデル、株式を分かち合う仕組みが含まれうる」としています。Anthropicは研究と政策の実験のために2億ドルを出すことも表明しました。[22] {同社の公益基金|/essays/public-benefit-fund/}は、これとは別の約束で、別のエッセイで取り上げています。OpenAIは2026年4月の文書「知能の時代の産業政策」で、すべてのアメリカ人にAI企業とインフラの持ち分を与え、その収益を直接配る「公共富裕基金」や、職を失う人のデータが一定の線を超えると自動で動き出すセーフティネットを提案しました。ベーシックインカムという言葉は使っていません。[23]"
+          ],
+          [
+            "p",
+            "議会も動いています。2026年9月にサラ・ジェイコブス、グレッグ・カサール、バレリー・フーシーの3人の下院議員が出した法案H.R. 10044は、AIのトークンや売上に物品税をかけ、失業率が上がると税率も自動で上がる仕組みです。税収は現金給付ではなく、住宅やインフラ、介護などの雇用づくりに回します。[24] 韓国では、李在明大統領が2026年6月、英誌エコノミストのインタビューで、AIが生む超過利潤の一部を国民に分けるには「ベーシックインカムのような新しい仕組みが必要だ」と述べました。大統領府の政策室長は、半導体企業の好調で増えた税収を財源とする「AI国民配当」を打ち出し、政府はその後、特定の企業ではなく、法人税などの税収の上振れ分を使う話だと説明し直しています。韓国日報は社説で、急ぎすぎてはいけないと戒め、肝心なのは財源だと指摘しました。[25]"
+          ],
+          [
+            "p",
+            "土台をつくるには、いくらかかるのでしょうか。{ベーシックインカム計算機|/calc/?c=jp&w=all&m=30000}で、日本の全員に月3万円を配ると、グロスで年約44.2兆円、GDPの約6.7%です。税として戻ってくる分を差し引いた正味の費用はずっと小さくなります。その仕組みは、{給付付き税額控除のエッセイ|/essays/refundable-tax-credit-vs-basic-income/}で数字を使って説明しました。"
+          ],
+          [
+            "o",
+            "どれも、まだ「AI時代のベーシックインカム」と呼べるものではありません。けれども問いは、「AIは仕事を奪うのか」から、「移り変わりの費用を誰が払い、お金をどう人に届けるのか」へ移ってきています。"
+          ],
+          [
+            "h",
+            "「AIが仕事を全部奪う」でも、「何も起きていない」でもない"
+          ],
+          [
+            "o",
+            "2026年11月の時点でデータが示していることをまとめます。アメリカでも、デンマークでも、日本でも、AIの影響は雇用全体や失業全体にはまだ表れていません。発表される「AIリストラ」は実際の企業の実際の決定ですが、削減全体のなかでは小さく、一部は企業の見せ方でもあります。その一方で、影響を受けやすい分野では若者の入口が狭まり、フリーランスは仕事を失い、日本では、仕事を覚える最初の段が失われつつあるのかもしれません。"
+          ],
+          [
+            "o",
+            "この変化は、いちばん守られていない人に先に降りかかります。働いた経験がなく、雇ってくれる会社もなく、失業保険も受け取れない人たちです。働いていたかどうかを問わずに全員に届くという、ベーシックインカムのいちばん単純な特徴がいちばん効くのは、そこです。唯一の答えではありませんし、費用が大きいこと、供給の側が大事なことは、批判する人たちの言うとおりです。それでも、必要になる前に用意しておく土台は、危機のなかで慌ててつくる土台より、ずっとつくりやすいはずです。"
+          ],
+          [
+            "o",
+            "後編では、変化がいちばん早く訪れたクリエイターの仕事、つまりイラストレーター、翻訳者、ライター、声優の仕事を取り上げます。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026 年 11 月 5 日，美国再就业咨询公司 Challenger, Gray & Christmas 发布了每月的裁员公告统计。2026 年 1 月至 10 月，雇主以人工智能为理由宣布的裁员达 121,401 人，约占总数 617,189 人的 20%。自该公司 2023 年开始统计这一理由以来，累计已达 193,226 人。[1]"
+          ],
+          [
+            "p",
+            "这类数字助长了一个人们熟悉的说法：生成式 AI 正在抢走工作，而且很快。本站支持基本收入，而 AI 正是人们支持基本收入时最常提出的理由之一。正因如此，在追问基本收入能做什么之前，我们想先弄清楚实际测量到了什么。本文是上下两篇中的上篇，讨论整体就业；下篇将讨论创意工作。"
+          ],
+          [
+            "h",
+            "121,401 这个数字意味着什么，不意味着什么"
+          ],
+          [
+            "p",
+            "Challenger 统计的是雇主宣布裁员时给出的理由，并不测量 AI 实际让多少工作消失。2026 年 10 月，以 AI 为理由的裁员只有 1,265 人，是全年最低的月份；而“市场/经济状况”（130,531 人）已超过 AI，成为今年迄今为止的头号理由。[1]"
+          ],
+          [
+            "p",
+            "一些经济学家怀疑，AI 这一数字有一部分是包装。牛津经济研究院（Oxford Economics）在 2026 年 1 月的简报中指出，2025 年前 11 个月美国以 AI 为理由的裁员接近 55,000 人，仅占总数的 4.5%，并写道：“我们怀疑，一些企业试图把裁员包装成好消息，而不是坏消息（比如过去的过度招聘）。”[2] 对投资者说团队缩小是 AI 的成果，比承认招了太多人好听。"
+          ],
+          [
+            "o",
+            "宣布的理由是一种表态，不是测量。要看 AI 对就业做了什么，必须看劳动力市场的数据。"
+          ],
+          [
+            "h",
+            "整体图景：还看不到明显的痕迹"
+          ],
+          [
+            "p",
+            "耶鲁大学预算实验室（The Budget Lab at Yale）追踪美国劳动力市场中 AI 的迹象。其 2026 年 9 月的更新使用截至 8 月的数据，称分析“尚未清楚显示出与 AI 相关的劳动力市场痕迹”，并称“AI 使用程度的指标与就业或失业的变化没有关联”。[3]"
+          ],
+          [
+            "p",
+            "丹麦提供了更严格的检验。Anders Humlum 和 Emilie Vestergaard 把 11 个受 AI 影响职业的 AI 使用调查与该国的行政记录相连接。在论文修订版（2026 年 3 月）中，他们排除了 ChatGPT 推出两年后对收入或登记工时超过 2% 的影响。[4]"
+          ],
+          [
+            "p",
+            "美联储理事迈克尔·巴尔（Michael Barr）在 2026 年 2 月说得很直白：“AI 尚未对总体就业或失业产生实质性影响。”[5] 达拉斯联储的经济学家算了一笔账。20 至 24 岁人群中在 AI 暴露度最高的职业工作的比例，从 2022 年 11 月的 16.4% 降到 2025 年 9 月的 15.5%。即使这些全部变成失业，也只会让全国失业率上升约 0.1 个百分点。[6]"
+          ],
+          [
+            "o",
+            "就整个劳动力市场而言，“AI 正在抢走工作”在数据中还看不到。"
+          ],
+          [
+            "h",
+            "但入口正在变窄"
+          ],
+          [
+            "p",
+            "故事并未到此结束。不看谁被解雇，而看谁没有被录用，就会出现一个一致的信号。"
+          ],
+          [
+            "p",
+            "斯坦福大学的埃里克·布林约尔松（Erik Brynjolfsson）、Bharat Chandar 和 Ruyu Chen 使用美国最大的薪资处理商 ADP 的薪资记录。在 2026 年 8 月的修订论文中（数据截至 2026 年 6 月），软件开发、客户服务等 AI 暴露度最高的职业中 22 至 25 岁劳动者的就业，比假如与暴露度较低工作中的同龄人保持同步时的水平低约 19%。论文早先的版本给出的差距是 13%，后来是 15%；随着数据增加，差距扩大了。同一职业中有经验的劳动者没有类似的差距。作者强调，这些是“描述性的模式，而非因果估计”。[7]"
+          ],
+          [
+            "p",
+            "其他研究使用其他数据，也指向同一方向。伦敦国王学院（King’s College London）对英国企业的研究发现，高暴露度企业的总就业平均减少 4.5%，其中初级职位减少 5.8%，几乎占了全部降幅；这些企业发布新职位空缺的可能性也低 16.3 个百分点。[8] 美国人口普查局的两篇工作论文发现，在 AI 暴露度最高的五分之一行业中，职业生涯早期的就业在 ChatGPT 推出后的十个季度里下降了 12%。暴露度最高的十分之一大学专业的毕业生，毕业一个季度后有工作的可能性低了 5 个百分点，起薪下降 13%，大致相当于经济学家预期的在严重衰退中毕业的影响。[9] 开发 AI 模型 Claude 的公司 Anthropic 发现，高暴露度劳动者的失业率没有系统性上升，但进入暴露度最高工作的 22 至 25 岁人群，找到工作的比率比 2022 年低约 14%，它称这一结果勉强显著。[10]"
+          ],
+          [
+            "p",
+            "这些研究的共同点在于机制。下降主要来自录用的年轻人减少，而不是被解雇的人增加。[6][7][9] 企业留住现有员工，悄悄不再填补最底层的位置。人口普查局的论文还发现，到 2025 年初招聘已基本恢复，但基数变小了：门只重新打开了一部分。[9]"
+          ],
+          [
+            "o",
+            "AI 最先显现的影响不是大规模裁员，而是入口变窄。这很容易被忽略，因为从未提供过的工作，永远不会作为失去的工作出现在统计里。"
+          ],
+          [
+            "h",
+            "自由职业者最先感受到"
+          ],
+          [
+            "p",
+            "影响明显显现的另一个地方，是按任务购买工作的市场。Xiang Hui、Oren Reshef 和 Luofeng Zhou 研究了自由职业平台 Upwork。ChatGPT 发布后，写作相关自由职业者的每月工作数下降 2%，每月收入下降 5.2%。图像生成工具 DALL-E 2 和 Midjourney 出现后，图像相关自由职业者的工作减少 3.7%，收入减少 9.4%。[11]"
+          ],
+          [
+            "p",
+            "自由职业者没有会留用他们的雇主，没有预告期，在许多国家也几乎或完全没有失业保险。客户一旦改用工具，收入就直接停了。下篇将更仔细地讨论创意工作。"
+          ],
+          [
+            "p",
+            "主要研究对照如下："
+          ],
+          [
+            "t",
+            "研究 | 数据 | 发现\n耶鲁大学预算实验室 | 美国劳动力调查，截至 2026 年 8 月 | 就业和失业中没有明显的 AI 痕迹[3]\nHumlum 与 Vestergaard | 丹麦行政记录 | 排除了对收入和工时超过 2% 的影响[4]\n布林约尔松、Chandar 与 Chen（斯坦福） | ADP 薪资数据，截至 2026 年 6 月 | 暴露度最高工作中的 22–25 岁人群：比趋势低约 19%（修订数字）[7]\n伦敦国王学院 | 英国招聘信息与个人档案 | 高暴露度企业：初级职位 −5.8%[8]\n美国人口普查局 | 美国行政记录 | 暴露度最高行业的早期职业就业 −12%；暴露度最高专业的起薪 −13%[9]\nAnthropic | 美国劳动力调查 | 失业率无系统性上升；年轻人找到工作的比率约 −14%[10]\nHui、Reshef 与 Zhou | Upwork | 写作：工作 −2%，收入 −5.2%；图像：−3.7%，−9.4%[11]"
+          ],
+          [
+            "h",
+            "当企业说 AI 是理由时"
+          ],
+          [
+            "p",
+            "一些企业直言 AI 是它们需要更少人手的原因。2026 年 2 月，杰克·多尔西（Jack Dorsey）领导的支付公司 Block，在 10,000 多名员工中裁掉了 4,000 多人。致股东信写道：“智能工具改变了打造和经营一家公司的意义”，以及“一个小得多的团队，使用我们正在打造的工具，能做得更多、做得更好”。Block 第四季度毛利同比增长 24%：这是一家经营良好时裁员的公司，而不是陷入困境的公司。[12] 2025 年 9 月，Salesforce 首席执行官马克·贝尼奥夫（Marc Benioff）说，他把客服人员“从 9,000 人减到大约 5,000 人，因为我需要的人更少了”，如今一半的客户对话由 AI 智能体处理。[13]"
+          ],
+          [
+            "p",
+            "对企业的调查显示，这些案例仍然多么少见。在纽约联储 2026 年的地区企业调查中，61% 的服务业企业在过去六个月使用过 AI，但只有 4% 报告了由 AI 导致的裁员。约 15% 表示因为 AI 少招了人，约 13% 表示多招了人。[14]"
+          ],
+          [
+            "o",
+            "宣布“AI 裁员”的企业登上了头条。更常见得多的反应则安静得多：少招一点人。"
+          ],
+          [
+            "h",
+            "日本：裁员较少，风险不同"
+          ],
+          [
+            "p",
+            "日本的处境不同。在总务省 2024 财年的国际比较中，日本使用过生成式 AI 的个人比例为 26.7%，美国为 68.8%，德国为 59.2%，中国为 81.2%。一项 2025 年的估算显示，在核心业务中全面采用生成式 AI 的日本企业比例仅为 1.9%，美国为 6.1%，日本在七国集团中最低。[15]"
+          ],
+          [
+            "p",
+            "政府目前的立场是没有重大影响。2026 年 7 月 8 日在参议院，未来团队（Team Mirai）的安野贵博引用斯坦福的研究，要求定期监测。厚生劳动省答复说，从年轻人失业率、毕业生就业率和 IT 领域的就业来看，迄今包括年轻人在内都没有出现重大影响。[17] 日本生产性本部 2026 年 9 月发布的调查发现，超过 90% 的企业表示 AI 尚未改变其员工人数，但超过一半预计 5 至 10 年后员工会减少。[18]"
+          ],
+          [
+            "p",
+            "长远来看就没那么平静了。2026 年 4 月 15 日在众议院，同一政党的河合道雄引用经济产业省 2026 年 3 月对日本 2040 年就业结构的估算，其中显示办公室职员过剩，而能够与 AI 和机器人协作的人才短缺 339 万人。[16]"
+          ],
+          [
+            "p",
+            "日本综合研究所的福田直之认为，日本不太可能出现美国式的年轻人失业上升：劳动力短缺、长期雇用和每年春季的应届毕业生集体招聘起到了缓冲作用。风险是另一种。日本企业一直先让新员工做简单的工作，让他们在工作中学习，以此培养新人。如果生成式 AI 接管了这个起点，一代人可能会“找到了工作，却始终学不会这份工作”，而问题要到 5 至 10 年后、这一代人该开始担任管理者时才会显现。[15]"
+          ],
+          [
+            "o",
+            "在美国，入口正在变窄。在日本，入口也许仍然敞开，但梯子最下面的几级可能正在消失。"
+          ],
+          [
+            "h",
+            "在这种冲击中，基本收入能做什么"
+          ],
+          [
+            "p",
+            "如果 AI 正在全面消灭工作，问题将是如何替代数百万人的收入。迄今的数据显示的情况更窄：受影响领域的年轻人第一份工作减少，自由职业者按任务失去工作，在日本，还可能失去在工作中学习的机会。基本收入在三个方面适合这种特定的形态。"
+          ],
+          [
+            "p",
+            "第一，为没有工作经历的人提供底线。失业保险在日本和其他地方一样，只支付给工作过并缴纳过保费的人。从未得到第一份工作的毕业生，或客户逐渐流失的自由职业者，往往什么也拿不到。{日本新的就业者支援金|/essays/refundable-tax-credit-vs-basic-income/}也是如此，它要求上一年有劳动收入。基本收入不论此前是否工作过，都能送到每个人手中。"
+          ],
+          [
+            "p",
+            "第二，时间。找下一份工作、接受再培训或开始新的事情都需要几个月。一笔小额而稳定、在你回去读书或接受有风险的工作时也不会停止的收入，让这几个月成为可能。"
+          ],
+          [
+            "p",
+            "第三，议价能力。有底线的人可以稍微更容易地拒绝糟糕的工作机会，或报酬只有原来几分之一的合同。当工作按任务购买时，这一点很重要。"
+          ],
+          [
+            "p",
+            "现金试验提供了一些证据，说明人们是否会这样使用这笔钱。在{萨姆·奥尔特曼的 OpenResearch 研究|/essays/openresearch-cash-study/}中，每月 1,000 美元、持续三年，受领者每周工作时间比对照组少约 1.3 小时，而两组的就业率都上升了。在{芬兰 2017–2018 年的实验|/essays/finland-basic-income-experiment/}中，2,000 名失业者每月领取 560 欧元；就业效果很小，幸福感和信任有所改善。在{加州斯托克顿|/timeline/#tl-stockton}，受领者中全职工作的比例一年内从 28% 升到 40%，增幅是对照组的两倍多。这些试验都与 AI 无关。它们表明，适度的底线不会让大多数人停止工作，并给了他们一些选择的余地。"
+          ],
+          [
+            "o",
+            "基本收入不会把工作带回来。它会改变失去一份工作、或从未得到一份工作意味着什么。"
+          ],
+          [
+            "h",
+            "最有力的反对意见"
+          ],
+          [
+            "p",
+            "最审慎的批评来自国际劳工组织（ILO）2026 年 5 月发布的一份研究简报《为什么 UBI 不是应对 AI 对劳动力市场影响的答案》，作者是 Tuğba Özay 和 Ekkehard Ernst。这是署名作者的论文，不是 ILO 的正式立场。它认为“AI 改变的是任务，而不是职业”，因此大规模失业不太可能发生；而普遍发放会把需求推向供给增长缓慢的部门，如住房、医疗和护理：“分发金钱的速度快过受限的供给所能调整的速度，带来的是通货膨胀，而不是富足。”它也承认“认知型工作的技能溢价正在被侵蚀，尤其是对较年轻的求职新人”。它建议再培训、积极的劳动力市场政策、可携带的福利、更多住房、对 AI 租金征税，以及保持工作激励的社会保护，“例如通过劳动所得税收抵免”。[19]"
+          ],
+          [
+            "p",
+            "布鲁金斯学会的罗伯特·利坦（Robert Litan）则提出“转型保险”。任何非自愿失去工作的人，无需证明原因是 AI，只要在原工作中至少工作了三年，在找到新工作后的头三年里，可分别获得所损失收入的 80%、60% 和 40%。再加上终身培训账户和招聘应届毕业生的税收抵免，他估算总成本约为每年 600 亿美元，而相当于贫困线水平的基本收入，净成本约为 7,840 亿美元，他以太昂贵为由予以否定。[21]"
+          ],
+          [
+            "p",
+            "这些批评值得公正对待。上述证据支持它们的第一点：迄今为止，AI 重塑任务和招聘的程度远大于它消灭工作的程度。利坦的方案更便宜，也能帮助那些被裁员后收入下降的职业生涯中期的办公室职员。"
+          ],
+          [
+            "p",
+            "但两者都把同一批人排除在外。工资保险只支付给曾有工作并找到另一份工作的人。劳动所得税收抵免只支付给已经在工作的人。从未得到第一份工作的毕业生，以及工作从未被算作就业的自由职业者，都会从两者的缝隙中漏掉，而他们恰恰是数据显示最先受到冲击的人。关于通货膨胀，现金转移的证据比简报所说的更复杂。GiveDirectly 向肯尼亚农村 10,500 多户贫困家庭各发放约 1,000 美元，这一冲击相当于当地 GDP 的 15% 以上，研究者发现邻近家庭和企业获益很大，而“物价上涨极小”。[20] 肯尼亚农村的一次性转移，不能说明东京的房租会怎样，而且无论采取什么政策，住房短缺都是真实的问题。但更多的钱并不自动意味着更高的价格。"
+          ],
+          [
+            "o",
+            "我们的看法：在目前的情况下，基本收入不是唯一的工具，大概也不是各国政府首先会使用的工具。它是能覆盖其他工具遗漏之人的那一个。"
+          ],
+          [
+            "h",
+            "实际正在尝试什么"
+          ],
+          [
+            "p",
+            "小的步骤已经在发生。由美国非营利组织运营的{AI Dividend|/timeline/#tl-ai-dividend}于 2026 年 3 月开始，向 25 至 50 名因 AI 失去工作的劳动者每月无条件发放 1,000 美元，为期一年。这是一个示范项目而非研究：没有对照组。"
+          ],
+          [
+            "p",
+            "AI 公司也开始发布自己的提案。Anthropic 2026 年 6 月的经济政策框架按失业水平列出应对措施：约 5% 时，培训补助、工资保险以及留用和重新配置员工的激励；约 10% 时，以扩大失业保险为优先；在“前所未有”的水平上，持续的收入替代，“可能包括基本收入、主权财富模式和股权分享机制”。Anthropic 还承诺为研究和政策试验提供 2 亿美元。[22] 我们另文讨论过的{它的公益基金|/essays/public-benefit-fund/}是另一项承诺。OpenAI 2026 年 4 月的论文《智能时代的产业政策》（Industrial Policy for the Intelligence Age）提议设立“公共财富基金”，让每个美国人持有 AI 公司和基础设施的一份股份并直接获得回报，同时设立在失业数据超过阈值时自动启动的安全网。它没有提到基本收入。[23]"
+          ],
+          [
+            "p",
+            "立法者也在行动。2026 年 9 月由 Sara Jacobs、Greg Casar 和 Valerie Foushee 在美国众议院提出的 H.R. 10044，将对 AI 词元（token）或收入征收一种随失业率自动上升的特种消费税。这笔钱将用于创造就业，如住房、基础设施和护理，而不是现金发放。[24] 在韩国，总统李在明 2026 年 6 月接受《经济学人》采访时表示，需要“像基本收入这样的新机制”，把 AI 超额利润的一部分分享给普通人。他的政策室长提出用芯片制造商带来的意外税收支付“AI 国民红利”，随后政府将其改为使用一般的超额税收。《韩国日报》警告不要操之过急，并称资金来源是关键。[25]"
+          ],
+          [
+            "p",
+            "一份底线要花多少钱？用{基本收入计算器|/calc/?c=jp&w=all&m=30000}计算，向日本每个人每月发 3 万日元，毛额每年约 44.2 万亿日元，约为 GDP 的 6.7%。扣除以税收形式回流的部分后，净成本要小得多，我们{关于可退还税收抵免的文章|/essays/refundable-tax-credit-vs-basic-income/}用一个算例说明了这一点。"
+          ],
+          [
+            "o",
+            "这些都还不是 AI 时代的基本收入。但问题已经变了，从“AI 会抢走我们的工作吗？”变成“谁为转型买单，钱又如何送到人们手中？”"
+          ],
+          [
+            "h",
+            "既不是“AI 正在抢走所有工作”，也不是“什么都没发生”"
+          ],
+          [
+            "o",
+            "以下是截至 2026 年 11 月数据所显示的情况。无论在美国、丹麦还是日本，AI 在整体就业或失业中都还看不到。宣布的“AI 裁员”是真实企业做出的真实决定，但它们只占全部裁员中很小的一部分，而且部分是企业自我呈现的说法。与此同时，受影响领域的年轻人面前的入口正在变窄，自由职业者失去了工作，而日本可能正在失去人们学习本行的最初几级台阶。"
+          ],
+          [
+            "o",
+            "这是一场首先落在保护最少的人身上的冲击：没有工作经历、没有雇主、无权领取失业保险的人。基本收入最简单的特点，即不问你是否工作过就送到每个人手中，在这里最为重要。它不是唯一的答案，批评者说得对，它花费巨大，供给也很重要。但在需要之前就准备好的底线，比危机中临时拼凑的底线更容易建立。"
+          ],
+          [
+            "o",
+            "在下篇中，我们将转向创意工作：插画师、译者、作家和配音演员，那里的变化来得最快。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "5 नवंबर 2026 को अमेरिका की आउटप्लेसमेंट फ़र्म Challenger, Gray & Christmas ने घोषित छंटनियों की अपनी मासिक गिनती जारी की। जनवरी से अक्टूबर 2026 तक नियोक्ताओं ने 121,401 छंटनियों का कारण आर्टिफ़िशियल इंटेलिजेंस बताया, जो कुल 617,189 का लगभग 20% है। फ़र्म ने 2023 में यह कारण गिनना शुरू किया था, और तब से यह संख्या 193,226 तक पहुँच चुकी है।[1]"
+          ],
+          [
+            "p",
+            "ऐसे आँकड़े एक जानी-पहचानी कहानी को हवा देते हैं: जनरेटिव AI नौकरियाँ छीन रहा है, और तेज़ी से। यह साइट बेसिक इनकम का समर्थन करती है, और AI उन कारणों में से है जो इसके पक्ष में सबसे ज़्यादा दिए जाते हैं। इसीलिए यह पूछने से पहले कि बेसिक इनकम क्या कर सकती है, हम यह जानना चाहते थे कि असल में मापा क्या गया है। यह दो भागों में से पहला भाग है। यह आम तौर पर नौकरियों को देखता है; भाग 2 रचनात्मक काम को देखेगा।"
+          ],
+          [
+            "h",
+            "121,401 का क्या मतलब है, और क्या नहीं"
+          ],
+          [
+            "p",
+            "Challenger उन कारणों को गिनती है जो नियोक्ता छंटनी की घोषणा करते समय बताते हैं। वह यह नहीं मापती कि AI ने असल में कितनी नौकरियाँ ख़त्म कीं। अक्टूबर 2026 में केवल 1,265 छंटनियों के लिए AI का नाम लिया गया, जो साल का सबसे कम महीना था, और इस साल अब तक “बाज़ार/आर्थिक हालात” (130,531) AI को पीछे छोड़कर सबसे बड़ा कारण बन गया है।[1]"
+          ],
+          [
+            "p",
+            "कुछ अर्थशास्त्रियों को शक है कि AI वाले आँकड़े का एक हिस्सा दिखावा है। जनवरी 2026 की एक ब्रीफ़िंग में Oxford Economics ने बताया कि 2025 के पहले 11 महीनों में अमेरिका में लगभग 55,000 छंटनियों के लिए AI का नाम लिया गया था, जो कुल का सिर्फ़ 4.5% था, और लिखा: “हमें शक है कि कुछ कंपनियाँ छंटनियों को बुरी ख़बर (जैसे पहले की ज़रूरत से ज़्यादा भर्ती) के बजाय अच्छी ख़बर की तरह पेश करने की कोशिश कर रही हैं।”[2] निवेशकों से यह कहना कि छोटी टीम AI का नतीजा है, यह मानने से बेहतर लगता है कि बहुत ज़्यादा लोग रख लिए गए थे।"
+          ],
+          [
+            "o",
+            "घोषित कारण एक बयान है, माप नहीं। AI ने नौकरियों के साथ क्या किया है, यह देखने के लिए श्रम बाज़ार के डेटा को देखना होगा।"
+          ],
+          [
+            "h",
+            "बड़ी तस्वीर: अभी कोई साफ़ निशान नहीं"
+          ],
+          [
+            "p",
+            "येल का The Budget Lab अमेरिकी श्रम बाज़ार में AI के संकेतों पर नज़र रखता है। अगस्त तक के डेटा पर आधारित उसका सितंबर 2026 का अपडेट कहता है कि विश्लेषण “अभी तक श्रम बाज़ार पर AI से जुड़ा कोई साफ़ निशान नहीं दिखाता” और “AI के इस्तेमाल के माप रोज़गार या बेरोज़गारी में बदलाव से कोई संबंध नहीं दिखाते।”[3]"
+          ],
+          [
+            "p",
+            "डेनमार्क एक ज़्यादा सख़्त परीक्षण देता है। एंडर्स हुमलुम और एमिली वेस्टरगार्ड ने AI से प्रभावित 11 पेशों में AI के इस्तेमाल के सर्वेक्षणों को देश के प्रशासनिक रिकॉर्ड से जोड़ा। अपने पेपर के संशोधित संस्करण (मार्च 2026) में वे यह संभावना ख़ारिज करते हैं कि ChatGPT के लॉन्च के दो साल बाद कमाई या दर्ज काम के घंटों पर 2% से बड़ा असर पड़ा हो।[4]"
+          ],
+          [
+            "p",
+            "फ़ेडरल रिज़र्व के गवर्नर माइकल बार ने फ़रवरी 2026 में साफ़ शब्दों में कहा: “AI का अभी तक कुल रोज़गार या बेरोज़गारी पर कोई ठोस असर नहीं पड़ा है।”[5] डलास फ़ेड के अर्थशास्त्रियों ने हिसाब लगाया। AI से सबसे ज़्यादा प्रभावित पेशों में काम करने वाले 20 से 24 साल के लोगों का हिस्सा नवंबर 2022 के 16.4% से घटकर सितंबर 2025 में 15.5% रह गया। अगर यह सारी गिरावट बेरोज़गारी में बदल जाती, तब भी राष्ट्रीय दर में केवल लगभग 0.1 अंक जुड़ता।[6]"
+          ],
+          [
+            "o",
+            "पूरे श्रम बाज़ार के स्तर पर, “AI नौकरियाँ छीन रहा है” अभी डेटा में नहीं दिखता।"
+          ],
+          [
+            "h",
+            "लेकिन प्रवेश का दरवाज़ा संकरा हो रहा है"
+          ],
+          [
+            "p",
+            "कहानी यहीं ख़त्म नहीं होती। यह देखने के बजाय कि किसे निकाला जा रहा है, यह देखिए कि किसे भर्ती नहीं किया जा रहा, तो एक जैसा संकेत बार-बार दिखता है।"
+          ],
+          [
+            "p",
+            "स्टैनफ़र्ड के एरिक ब्रिनयोल्फ़सन, भरत चंदर और रुयू चेन अमेरिका की सबसे बड़ी पेरोल प्रोसेसर ADP के पेरोल रिकॉर्ड का इस्तेमाल करते हैं। जून 2026 तक के डेटा वाले उनके अगस्त 2026 के संशोधित पेपर में, सॉफ़्टवेयर डेवलपमेंट और ग्राहक सेवा जैसे AI से सबसे ज़्यादा प्रभावित पेशों में 22 से 25 साल के कामगारों का रोज़गार उस स्तर से लगभग 19% नीचे है, जहाँ वह कम प्रभावित नौकरियों में इसी उम्र के लोगों के साथ क़दम मिलाकर चलने पर होता। पेपर के पहले संस्करणों में यह अंतर 13% और फिर 15% था; ज़्यादा डेटा आने के साथ यह बढ़ा है। इन्हीं पेशों के अनुभवी कामगारों में ऐसा कोई अंतर नहीं दिखता। लेखक ज़ोर देते हैं कि ये “वर्णनात्मक पैटर्न हैं, कारण बताने वाले अनुमान नहीं”।[7]"
+          ],
+          [
+            "p",
+            "दूसरे अध्ययन, दूसरे डेटा के साथ, इसी दिशा में इशारा करते हैं। ब्रिटेन की कंपनियों पर King’s College London के एक अध्ययन में पाया गया कि बहुत प्रभावित कंपनियों ने कुल रोज़गार औसतन 4.5% घटाया, जिसमें जूनियर पद 5.8% घटे, यानी लगभग पूरी गिरावट; उनके नई रिक्तियाँ निकालने की संभावना भी 16.3 प्रतिशत अंक कम थी।[8] अमेरिकी जनगणना ब्यूरो के दो वर्किंग पेपर में पाया गया कि AI से सबसे ज़्यादा प्रभावित पाँचवें हिस्से के उद्योगों में करियर की शुरुआत वाला रोज़गार ChatGPT के बाद की दस तिमाहियों में 12% घटा। कॉलेज के सबसे ज़्यादा प्रभावित दसवें हिस्से के विषयों के स्नातकों के, पढ़ाई पूरी करने के एक तिमाही बाद नौकरी में होने की संभावना 5 प्रतिशत अंक कम हो गई, और उनकी शुरुआती कमाई 13% गिरी, जो मोटे तौर पर उतनी ही है जितनी अर्थशास्त्री गहरी मंदी के दौर में स्नातक होने पर उम्मीद करते।[9] AI मॉडल Claude बनाने वाली कंपनी Anthropic ने बहुत प्रभावित कामगारों में बेरोज़गारी में कोई व्यवस्थित बढ़ोतरी नहीं पाई, लेकिन सबसे प्रभावित नौकरियों में आने वाले 22 से 25 साल के लोगों की नौकरी पाने की दर 2022 से लगभग 14% कम पाई, और इस नतीजे को वह मुश्किल से सांख्यिकीय रूप से महत्वपूर्ण बताती है।[10]"
+          ],
+          [
+            "p",
+            "इन अध्ययनों में साझा बात तंत्र है। गिरावट मुख्य रूप से कम युवाओं की भर्ती से आती है, ज़्यादा लोगों को निकालने से नहीं।[6][7][9] कंपनियाँ मौजूदा कर्मचारियों को रखती हैं और चुपचाप सबसे निचली सीढ़ी भरना बंद कर देती हैं। जनगणना ब्यूरो के पेपर यह भी पाते हैं कि 2025 की शुरुआत तक भर्ती काफ़ी हद तक सुधर चुकी थी, लेकिन छोटे आधार से: दरवाज़ा केवल कुछ हद तक फिर खुला।[9]"
+          ],
+          [
+            "o",
+            "AI का पहला दिखने वाला असर बड़े पैमाने पर छंटनी नहीं, बल्कि संकरा प्रवेश है। इसे नज़रअंदाज़ करना आसान है, क्योंकि जो नौकरी कभी दी ही नहीं गई, वह कभी खोई हुई नौकरी के रूप में दर्ज नहीं होती।"
+          ],
+          [
+            "h",
+            "फ़्रीलांसरों ने इसे सबसे पहले महसूस किया"
+          ],
+          [
+            "p",
+            "असर जिस दूसरी जगह साफ़ दिखता है, वह ऐसे बाज़ार हैं जहाँ काम एक-एक टास्क के हिसाब से ख़रीदा जाता है। शियांग हुई, ओरेन रेशेफ़ और लुओफ़ेंग झोउ ने फ़्रीलांस प्लेटफ़ॉर्म Upwork का अध्ययन किया। ChatGPT के आने के बाद लेखन से जुड़े फ़्रीलांसरों के मासिक काम 2% और मासिक कमाई 5.2% घटी। इमेज जनरेटर DALL-E 2 और Midjourney के बाद, इमेज से जुड़े फ़्रीलांसरों के 3.7% काम और 9.4% कमाई चली गई।[11]"
+          ],
+          [
+            "p",
+            "फ़्रीलांसरों के पास न कोई नियोक्ता होता है जो उन्हें बनाए रखे, न नोटिस अवधि, और कई देशों में बेरोज़गारी बीमा बहुत कम या बिल्कुल नहीं। जब कोई क्लाइंट किसी टूल पर चला जाता है, तो आमदनी बस रुक जाती है। भाग 2 रचनात्मक काम को और क़रीब से देखेगा।"
+          ],
+          [
+            "p",
+            "मुख्य अध्ययन एक साथ:"
+          ],
+          [
+            "t",
+            "अध्ययन | डेटा | नतीजा\nYale Budget Lab | अमेरिकी श्रम बल सर्वेक्षण, अगस्त 2026 तक | रोज़गार या बेरोज़गारी पर AI का कोई साफ़ निशान नहीं[3]\nहुमलुम और वेस्टरगार्ड | डेनमार्क के प्रशासनिक रिकॉर्ड | कमाई और घंटों पर 2% से बड़ा असर ख़ारिज[4]\nब्रिनयोल्फ़सन, चंदर और चेन (स्टैनफ़र्ड) | ADP पेरोल, जून 2026 तक | सबसे प्रभावित नौकरियों में 22–25 साल के लोग: रुझान से लगभग 19% नीचे (संशोधित आँकड़ा)[7]\nKing’s College London | ब्रिटेन की नौकरी पोस्टिंग और प्रोफ़ाइल | प्रभावित कंपनियाँ: जूनियर पद −5.8%[8]\nअमेरिकी जनगणना ब्यूरो | अमेरिकी प्रशासनिक रिकॉर्ड | सबसे प्रभावित उद्योगों में करियर की शुरुआत वाली नौकरियाँ −12%; सबसे प्रभावित विषयों का शुरुआती वेतन −13%[9]\nAnthropic | अमेरिकी श्रम बल सर्वेक्षण | बेरोज़गारी में व्यवस्थित बढ़ोतरी नहीं; युवाओं की नौकरी पाने की दर लगभग −14%[10]\nहुई, रेशेफ़ और झोउ | Upwork | लेखन: काम −2%, कमाई −5.2%; इमेज: −3.7%, −9.4%[11]"
+          ],
+          [
+            "h",
+            "जब कंपनियाँ कहती हैं कि कारण AI था"
+          ],
+          [
+            "p",
+            "कुछ कंपनियों ने साफ़ कहा है कि उन्हें कम लोगों की ज़रूरत AI की वजह से है। फ़रवरी 2026 में जैक डॉर्सी की अगुवाई वाली पेमेंट कंपनी Block ने अपने 10,000 से ज़्यादा कर्मचारियों में से 4,000 से ज़्यादा की छंटनी की। शेयरधारकों को लिखे पत्र में कहा गया: “इंटेलिजेंस टूल्स ने बदल दिया है कि किसी कंपनी को बनाने और चलाने का क्या मतलब है,” और “हमारे बनाए जा रहे टूल्स का इस्तेमाल करने वाली काफ़ी छोटी टीम ज़्यादा कर सकती है, और बेहतर कर सकती है।” Block का चौथी तिमाही का सकल लाभ एक साल पहले से 24% ज़्यादा था: यह मुश्किल में फँसी कंपनी नहीं, बल्कि अच्छा करते हुए छंटनी करने वाली कंपनी थी।[12] सितंबर 2025 में Salesforce के मुख्य कार्यकारी मार्क बेनिऑफ़ ने कहा कि उन्होंने सपोर्ट स्टाफ़ “9,000 लोगों से घटाकर लगभग 5,000 कर दिया, क्योंकि मुझे कम लोगों की ज़रूरत है”, और अब ग्राहकों की आधी बातचीत AI एजेंट संभालते हैं।[13]"
+          ],
+          [
+            "p",
+            "कंपनियों के सर्वेक्षण दिखाते हैं कि ऐसे मामले अभी कितने असामान्य हैं। न्यूयॉर्क फ़ेड के 2026 के क्षेत्रीय व्यावसायिक सर्वेक्षणों में 61% सेवा कंपनियों ने पिछले छह महीनों में AI का इस्तेमाल किया था, लेकिन केवल 4% ने AI के कारण छंटनी की बात कही। लगभग 15% ने कहा कि AI की वजह से उन्होंने कम लोग भर्ती किए, और लगभग 13% ने कहा कि ज़्यादा।[14]"
+          ],
+          [
+            "o",
+            "जो कंपनियाँ “AI छंटनी” की घोषणा करती हैं, वे सुर्ख़ियाँ बनती हैं। कहीं ज़्यादा आम प्रतिक्रिया शांत है: थोड़ी कम भर्ती।"
+          ],
+          [
+            "h",
+            "जापान: कम छंटनी, अलग जोखिम"
+          ],
+          [
+            "p",
+            "जापान की स्थिति अलग है। आंतरिक मामलों और संचार मंत्रालय की वित्त वर्ष 2024 की अंतरराष्ट्रीय तुलना में जापान में 26.7% लोगों ने जनरेटिव AI का इस्तेमाल किया था, जबकि अमेरिका में 68.8%, जर्मनी में 59.2% और चीन में 81.2%। 2025 के एक अनुमान के मुताबिक़ अपने मुख्य कामकाज में जनरेटिव AI को पूरी तरह अपना चुकी जापानी कंपनियों का हिस्सा सिर्फ़ 1.9% है, जबकि अमेरिका में 6.1%; यह G7 में सबसे कम है।[15]"
+          ],
+          [
+            "p",
+            "सरकार का रुख़ फ़िलहाल यह है कि कोई बड़ा असर नहीं है। 8 जुलाई 2026 को उच्च सदन में टीम मिराई पार्टी के ताकाहिरो आन्नो ने स्टैनफ़र्ड अध्ययन का हवाला देते हुए नियमित निगरानी की माँग की। स्वास्थ्य, श्रम और कल्याण मंत्रालय ने जवाब दिया कि युवा बेरोज़गारी, स्नातकों की नौकरी पाने की दर और IT में रोज़गार को देखते हुए, अब तक युवाओं समेत कहीं कोई बड़ा असर नहीं पड़ा है।[17] सितंबर 2026 में प्रकाशित जापान उत्पादकता केंद्र के एक सर्वेक्षण में 90% से ज़्यादा कंपनियों ने कहा कि AI ने अभी तक उनके कर्मचारियों की संख्या नहीं बदली है, हालाँकि आधे से ज़्यादा 5 से 10 साल में कम कर्मचारियों की उम्मीद करती हैं।[18]"
+          ],
+          [
+            "p",
+            "लंबी नज़र से देखें तो तस्वीर इतनी शांत नहीं है। 15 अप्रैल 2026 को प्रतिनिधि सभा में इसी पार्टी के मिचियो कवाई ने अर्थव्यवस्था, व्यापार और उद्योग मंत्रालय के मार्च 2026 के उस अनुमान का हवाला दिया जो 2040 में जापान की रोज़गार संरचना के बारे में है। उसमें दफ़्तरी कर्मचारियों की अधिकता और AI व रोबोट के साथ काम कर सकने वाले 33.9 लाख लोगों की कमी दिखती है।[16]"
+          ],
+          [
+            "p",
+            "जापान रिसर्च इंस्टीट्यूट के नाओयुकी फ़ुकुदा का तर्क है कि जापान में अमेरिका जैसी युवा बेरोज़गारी में बढ़ोतरी की संभावना कम है: श्रमिकों की कमी, लंबे समय तक चलने वाला रोज़गार और हर वसंत में नए स्नातकों की सामूहिक भर्ती गद्दी का काम करते हैं। जोखिम दूसरा है। जापानी कंपनियाँ नए कर्मचारियों को पहले आसान काम देकर और काम करते-करते सीखने देकर तैयार करती आई हैं। अगर जनरेटिव AI वह शुरुआती काम अपने हाथ में ले ले, तो एक पीढ़ी “नौकरी तो पा लेगी, पर काम कभी नहीं सीखेगी”, और यह समस्या 5 से 10 साल बाद ही सामने आएगी, जब उस पीढ़ी को प्रबंधन सँभालना शुरू करना होगा।[15]"
+          ],
+          [
+            "o",
+            "अमेरिका में प्रवेश संकरा हो रहा है। जापान में प्रवेश शायद खुला रहे, जबकि सीढ़ी के पहले डंडे ग़ायब हो जाएँ।"
+          ],
+          [
+            "h",
+            "इस तरह की उथल-पुथल में बेसिक इनकम क्या कर सकती है"
+          ],
+          [
+            "p",
+            "अगर AI हर तरफ़ नौकरियाँ मिटा रहा होता, तो सवाल होता कि लाखों लोगों की आय की भरपाई कैसे हो। अब तक का डेटा कुछ ज़्यादा सीमित तस्वीर दिखाता है: प्रभावित क्षेत्रों में युवाओं के लिए कम पहली नौकरियाँ, एक-एक टास्क करके काम खोते फ़्रीलांसर, और जापान में काम करते-करते सीखने का मौक़ा खो जाने की संभावना। बेसिक इनकम इस ख़ास रूप में तीन तरह से फ़िट बैठती है।"
+          ],
+          [
+            "p",
+            "पहला, उन लोगों के लिए एक न्यूनतम आधार जिनके पास काम का कोई इतिहास नहीं। बेरोज़गारी बीमा, जापान में भी और दूसरी जगहों पर भी, केवल उन्हीं को मिलता है जिन्होंने काम किया हो और अंशदान दिया हो। जिस स्नातक को कभी पहली नौकरी नहीं मिली, या जिस फ़्रीलांसर के क्लाइंट धीरे-धीरे छूट गए, उसे अक्सर कुछ नहीं मिलता। यही बात {कामगारों के लिए जापान के नए भुगतान|/essays/refundable-tax-credit-vs-basic-income/} पर भी लागू होती है, जिसके लिए पिछले साल की कमाई ज़रूरी है। बेसिक इनकम लोगों तक पहुँचती है, चाहे उन्होंने पहले काम किया हो या नहीं।"
+          ],
+          [
+            "p",
+            "दूसरा, समय। अगली नौकरी ढूँढने, फिर से प्रशिक्षण लेने या कुछ नया शुरू करने में महीनों लगते हैं। एक छोटी, स्थिर आय, जो पढ़ाई पर लौटने या जोखिम वाली नौकरी लेने पर बंद नहीं होती, उन महीनों को संभव बनाती है।"
+          ],
+          [
+            "p",
+            "तीसरा, मोलभाव की ताक़त। जिसके पास न्यूनतम आधार है, वह किसी ख़राब पेशकश को, या पुरानी दर के एक छोटे से हिस्से वाले कॉन्ट्रैक्ट को, थोड़ा आसानी से ठुकरा सकता है। जब काम एक-एक टास्क के हिसाब से ख़रीदा जाता है, तो यह मायने रखता है।"
+          ],
+          [
+            "p",
+            "नकद ट्रायल इस बारे में कुछ सबूत देते हैं कि लोग पैसे का इस्तेमाल इस तरह करते हैं या नहीं। {सैम ऑल्टमैन के OpenResearch अध्ययन|/essays/openresearch-cash-study/} में, तीन साल तक हर महीने $1,000 मिलने पर पाने वालों ने कंट्रोल ग्रुप से हफ़्ते में लगभग 1.3 घंटे कम काम किया, जबकि दोनों समूहों में रोज़गार बढ़ा। {फ़िनलैंड के 2017–2018 के प्रयोग|/essays/finland-basic-income-experiment/} में 2,000 बेरोज़गार लोगों को हर महीने €560 मिले; रोज़गार पर असर छोटे रहे, और भलाई व भरोसे में सुधार हुआ। {स्टॉकटन, कैलिफ़ोर्निया|/timeline/#tl-stockton} में पाने वालों में पूर्णकालिक काम करने वालों का हिस्सा एक साल में 28% से बढ़कर 40% हो गया, जो कंट्रोल ग्रुप की बढ़त के दोगुने से भी ज़्यादा था। इनमें से कोई भी ट्रायल AI के बारे में नहीं था। वे बताते हैं कि एक मामूली न्यूनतम आधार से ज़्यादातर लोग काम नहीं छोड़ते, और इससे उन्हें चुनने की कुछ गुंजाइश मिलती है।"
+          ],
+          [
+            "o",
+            "बेसिक इनकम नौकरियाँ वापस नहीं लाएगी। वह यह बदल देगी कि नौकरी खोने, या कभी न मिलने, का मतलब क्या है।"
+          ],
+          [
+            "h",
+            "सबसे मज़बूत विरोधी तर्क"
+          ],
+          [
+            "p",
+            "सबसे सावधान आलोचना अंतरराष्ट्रीय श्रम संगठन (ILO) द्वारा मई 2026 में प्रकाशित एक रिसर्च ब्रीफ़ से आती है: “AI के श्रम बाज़ार पर असर का जवाब UBI क्यों नहीं है”, जिसके लेखक तुग्बा ओज़ाय और एकहार्ड अर्न्स्ट हैं। यह नामित लेखकों का पेपर है, ILO का औपचारिक रुख़ नहीं। इसका तर्क है कि “AI कामों (टास्क) को बदलता है, पेशों को नहीं”, इसलिए बड़े पैमाने पर बेरोज़गारी की संभावना कम है, और यह कि सबको मिलने वाला भुगतान माँग को उन क्षेत्रों की ओर धकेलेगा जहाँ आपूर्ति धीरे बढ़ती है, जैसे आवास, स्वास्थ्य और देखभाल: “सीमित आपूर्ति जितनी तेज़ी से ढल सकती है, उससे तेज़ी से पैसा बाँटने से समृद्धि नहीं, महँगाई पैदा होती है।” यह यह भी मानता है कि “बौद्धिक नौकरियों का कौशल प्रीमियम घट रहा है, ख़ासकर नौकरी बाज़ार में आने वाले युवाओं के लिए”। यह फिर से प्रशिक्षण, सक्रिय श्रम बाज़ार नीति, साथ ले जाए जा सकने वाले लाभ, ज़्यादा आवास, AI से होने वाले किराये (रेंट) पर टैक्स, और काम के प्रोत्साहन को बनाए रखने वाली सामाजिक सुरक्षा की सिफ़ारिश करता है, “उदाहरण के लिए, अर्जित आय टैक्स क्रेडिट के ज़रिए”।[19]"
+          ],
+          [
+            "p",
+            "ब्रुकिंग्स इंस्टीट्यूशन के रॉबर्ट लिटन इसके बजाय “ट्रांज़िशन बीमा” का प्रस्ताव रखते हैं। जिसकी भी नौकरी उसकी मर्ज़ी के बिना गई हो, यह साबित किए बिना कि कारण AI था, और जिसने उस नौकरी में कम से कम तीन साल काम किया हो, उसे नया काम मिलने के बाद पहले तीन सालों में खोई हुई कमाई का क्रमशः 80%, 60% और 40% मिलेगा। जीवनभर के प्रशिक्षण खाते और हाल के स्नातकों को भर्ती करने पर टैक्स क्रेडिट जोड़कर, वे कुल लागत लगभग $60 अरब प्रति वर्ष आँकते हैं, जबकि ग़रीबी-रेखा के स्तर की बेसिक इनकम की शुद्ध लागत लगभग $784 अरब है, जिसे वे बहुत महँगा बताकर ख़ारिज करते हैं।[21]"
+          ],
+          [
+            "p",
+            "ये आलोचनाएँ निष्पक्ष सुनवाई की हक़दार हैं। ऊपर के सबूत उनके पहले बिंदु का समर्थन करते हैं: अब तक AI ने नौकरियाँ ख़त्म करने से कहीं ज़्यादा कामों और भर्ती को नया रूप दिया है। लिटन की योजना सस्ती है, और यह करियर के बीच वाले उस दफ़्तरी कर्मचारी की मदद करेगी जिसकी तनख़्वाह छंटनी के बाद गिर जाती है।"
+          ],
+          [
+            "p",
+            "लेकिन दोनों एक ही लोगों को बाहर छोड़ देते हैं। वेतन बीमा केवल उन्हें मिलता है जिनके पास नौकरी थी और जिन्हें दूसरी मिल गई। अर्जित आय टैक्स क्रेडिट केवल उन्हें मिलता है जो पहले से काम कर रहे हैं। जिस स्नातक को कभी पहली नौकरी नहीं मिली और जिस फ़्रीलांसर का काम कभी रोज़गार में गिना ही नहीं गया, वे दोनों के बीच से गिर जाते हैं, और ठीक यही वे लोग हैं जिन पर डेटा के मुताबिक़ सबसे पहले चोट पड़ रही है। महँगाई के मामले में, नकद हस्तांतरण के सबूत ब्रीफ़ के सुझाव से ज़्यादा मिले-जुले हैं। जब GiveDirectly ने ग्रामीण केन्या के 10,500 से ज़्यादा ग़रीब परिवारों को लगभग $1,000 प्रति परिवार दिए, एक ऐसा झटका जो स्थानीय GDP के 15% से ज़्यादा के बराबर था, तो शोधकर्ताओं ने पड़ोसी परिवारों और व्यवसायों को बड़ा फ़ायदा और “बहुत मामूली मूल्य वृद्धि” पाई।[20] ग्रामीण केन्या में एक बार का हस्तांतरण यह तय नहीं करता कि टोक्यो में किराये का क्या होगा, और नीति कोई भी हो, आवास की कमी एक असली समस्या है। लेकिन ज़्यादा पैसे का मतलब अपने-आप ज़्यादा क़ीमतें नहीं होता।"
+          ],
+          [
+            "o",
+            "हमारी समझ: मौजूदा हालात में बेसिक इनकम अकेला औज़ार नहीं है, और शायद वह पहला औज़ार भी नहीं जिसे सरकारें उठाएँगी। यह वह औज़ार है जो उन लोगों तक पहुँचता है जिन्हें बाक़ी औज़ार छोड़ देते हैं।"
+          ],
+          [
+            "h",
+            "असल में क्या आज़माया जा रहा है"
+          ],
+          [
+            "p",
+            "छोटे क़दम पहले से उठ रहे हैं। अमेरिकी ग़ैर-लाभकारी संस्थाओं द्वारा चलाए जा रहे {AI Dividend|/timeline/#tl-ai-dividend} ने मार्च 2026 में AI की वजह से काम खोने वाले 25 से 50 कामगारों के एक समूह को एक साल तक, बिना किसी शर्त के, हर महीने $1,000 देना शुरू किया। यह अध्ययन नहीं, एक प्रदर्शन है: इसमें कोई कंट्रोल ग्रुप नहीं है।"
+          ],
+          [
+            "p",
+            "AI कंपनियों ने अपने प्रस्ताव प्रकाशित करने शुरू कर दिए हैं। Anthropic का जून 2026 का आर्थिक नीति ढाँचा बेरोज़गारी के स्तर के हिसाब से उपाय गिनाता है: लगभग 5% पर प्रशिक्षण अनुदान, वेतन बीमा और कर्मचारियों को बनाए रखने व नई जगह लगाने के प्रोत्साहन; लगभग 10% पर प्राथमिकता के तौर पर बढ़ाया गया बेरोज़गारी बीमा; और “अभूतपूर्व” स्तरों पर लगातार आय की भरपाई, जिसमें “बेसिक इनकम, सॉवरेन वेल्थ मॉडल और इक्विटी साझा करने की व्यवस्थाएँ शामिल हो सकती हैं”। Anthropic ने शोध और नीति ट्रायल के लिए $200 मिलियन देने का वादा भी किया।[22] {उसका Public Benefit Fund|/essays/public-benefit-fund/}, जिसके बारे में हमने अलग से लिखा है, एक और प्रतिबद्धता है। OpenAI का अप्रैल 2026 का पेपर “Industrial Policy for the Intelligence Age” (इंटेलिजेंस युग के लिए औद्योगिक नीति) एक “पब्लिक वेल्थ फ़ंड” का प्रस्ताव रखता है, जो हर अमेरिकी को AI कंपनियों और इंफ़्रास्ट्रक्चर में हिस्सेदारी देगा और उसका मुनाफ़ा सीधे देगा, साथ ही ऐसे सुरक्षा जाल जो विस्थापन के आँकड़े एक सीमा पार करते ही अपने-आप चालू हो जाएँ। इसमें बेसिक इनकम का नाम नहीं है।[23]"
+          ],
+          [
+            "p",
+            "क़ानून बनाने वाले भी आगे बढ़ रहे हैं। सितंबर 2026 में सारा जेकब्स, ग्रेग कसार और वैलेरी फ़ाउशी द्वारा अमेरिकी प्रतिनिधि सभा में पेश H.R. 10044 AI टोकन या राजस्व पर एक उत्पाद शुल्क लगाएगा जो बेरोज़गारी के साथ अपने-आप बढ़ेगा। यह पैसा नकद भुगतान में नहीं, बल्कि रोज़गार पैदा करने में जाएगा, जैसे आवास, इंफ़्रास्ट्रक्चर और देखभाल।[24] दक्षिण कोरिया में राष्ट्रपति ली जे-म्युंग ने जून 2026 में The Economist को दिए इंटरव्यू में कहा कि AI के अतिरिक्त मुनाफ़े का एक हिस्सा आम लोगों के साथ बाँटने के लिए “बेसिक इनकम जैसी एक नई व्यवस्था” की ज़रूरत है। उनके नीति प्रमुख ने चिप निर्माताओं से आए अप्रत्याशित टैक्स राजस्व से “AI राष्ट्रीय लाभांश” देने का विचार रखा, और फिर सरकार ने इसे आम तौर पर अतिरिक्त टैक्स राजस्व के इस्तेमाल के रूप में पेश किया। अख़बार Hankook Ilbo ने बहुत तेज़ी से आगे बढ़ने के ख़िलाफ़ चेताया और कहा कि असली सवाल पैसे का इंतज़ाम है।[25]"
+          ],
+          [
+            "p",
+            "न्यूनतम आधार की लागत कितनी होगी? {बेसिक इनकम कैलकुलेटर|/calc/?c=jp&w=all&m=30000} के हिसाब से जापान में सबको हर महीने 30,000 येन देने का सकल ख़र्च साल में लगभग 44.2 ट्रिलियन येन है, यानी GDP का लगभग 6.7%। टैक्स के रूप में जो वापस आता है उसे घटाने के बाद शुद्ध लागत कहीं कम है, जैसा कि {रिफ़ंडेबल टैक्स क्रेडिट पर हमारा लेख|/essays/refundable-tax-credit-vs-basic-income/} एक उदाहरण से दिखाता है।"
+          ],
+          [
+            "o",
+            "इनमें से कोई भी अभी AI युग की बेसिक इनकम नहीं है। लेकिन सवाल बदल गया है: “क्या AI हमारी नौकरियाँ छीन लेगा?” से “बदलाव का ख़र्च कौन उठाएगा, और पैसा लोगों तक कैसे पहुँचेगा?” तक।"
+          ],
+          [
+            "h",
+            "न “AI हर नौकरी छीन रहा है”, न “कुछ नहीं हो रहा”"
+          ],
+          [
+            "o",
+            "नवंबर 2026 तक डेटा यह दिखाता है। AI अभी कुल रोज़गार या बेरोज़गारी में नहीं दिखता, चाहे अमेरिका हो, डेनमार्क हो या जापान। घोषित “AI छंटनियाँ” असली कंपनियों के असली फ़ैसले हैं, लेकिन वे कुल छंटनियों का छोटा, और कुछ हद तक कंपनियों का अपना पेश किया हुआ, हिस्सा हैं। साथ ही, प्रभावित क्षेत्रों में युवाओं के लिए प्रवेश का दरवाज़ा संकरा हो रहा है, फ़्रीलांसरों ने काम खोया है, और जापान शायद वे पहले डंडे खो रहा है जिन पर लोग अपना काम सीखते हैं।"
+          ],
+          [
+            "o",
+            "यह एक ऐसी उथल-पुथल है जो सबसे पहले सबसे कम सुरक्षा वाले लोगों पर पड़ती है: जिनके पास न काम का इतिहास है, न नियोक्ता, न बेरोज़गारी बीमा पर कोई दावा। यहीं बेसिक इनकम की सबसे सरल ख़ूबी, कि यह बिना पूछे कि आपने काम किया है या नहीं, सब तक पहुँचती है, सबसे ज़्यादा मायने रखती है। यह अकेला जवाब नहीं है, और इसके आलोचक सही हैं कि इसकी लागत बहुत ज़्यादा है और आपूर्ति मायने रखती है। लेकिन ज़रूरत पड़ने से पहले तैयार न्यूनतम आधार बनाना, संकट में जल्दबाज़ी में खड़े किए गए आधार से आसान है।"
+          ],
+          [
+            "o",
+            "भाग 2 में हम रचनात्मक काम की ओर मुड़ेंगे: चित्रकार, अनुवादक, लेखक और वॉइस एक्टर, जहाँ बदलाव सबसे तेज़ी से आया है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "El 5 de noviembre de 2026, la consultora estadounidense de recolocación Challenger, Gray & Christmas publicó su recuento mensual de recortes de empleo anunciados. De enero a octubre de 2026, las empresas citaron la inteligencia artificial como motivo de 121.401 recortes, alrededor del 20 % de los 617.189 totales. Desde que la firma empezó a registrar ese motivo en 2023, la cifra acumulada llega a 193.226.[1]"
+          ],
+          [
+            "p",
+            "Cifras como estas alimentan un relato conocido: la IA generativa está quitando empleos, y deprisa. Este sitio apoya la renta básica, y la IA es una de las razones que más se dan a su favor. Precisamente por eso quisimos saber qué se ha medido de verdad antes de preguntarnos qué podría hacer una renta básica. Esta es la primera de dos partes. Trata del empleo en general; la segunda tratará del trabajo creativo."
+          ],
+          [
+            "h",
+            "Qué significa y qué no significa el 121.401"
+          ],
+          [
+            "p",
+            "Challenger cuenta los motivos que dan las empresas cuando anuncian recortes. No mide cuántos empleos ha eliminado realmente la IA. En octubre de 2026 la IA se citó solo en 1.265 recortes, el mes más bajo del año, y las «condiciones económicas o de mercado» (130.531) han superado a la IA como primer motivo en lo que va de año.[1]"
+          ],
+          [
+            "p",
+            "Algunos economistas sospechan que parte de la cifra atribuida a la IA es maquillaje. En un informe de enero de 2026, Oxford Economics señaló que la IA se había citado en casi 55.000 recortes en EE. UU. en los primeros 11 meses de 2025, apenas el 4,5 % del total, y escribió: «Sospechamos que algunas empresas intentan presentar los despidos como una buena noticia en lugar de una mala, como un exceso de contratación en el pasado».[2] Decir a los inversores que un equipo más pequeño es fruto de la IA suena mejor que admitir que se contrató a demasiada gente."
+          ],
+          [
+            "o",
+            "Un motivo anunciado es una declaración, no una medición. Para ver qué ha hecho la IA con el empleo, hay que mirar los datos del mercado laboral."
+          ],
+          [
+            "h",
+            "El panorama general: todavía sin una huella clara"
+          ],
+          [
+            "p",
+            "The Budget Lab de Yale sigue el mercado laboral de EE. UU. en busca de señales de la IA. Su actualización de septiembre de 2026, con datos hasta agosto, dice que el análisis «todavía no indica con claridad una huella de la IA en el mercado laboral» y que «las medidas de uso de la IA no muestran relación con los cambios en el empleo o el desempleo».[3]"
+          ],
+          [
+            "p",
+            "Dinamarca ofrece una prueba más precisa. Anders Humlum y Emilie Vestergaard vincularon encuestas sobre el uso de la IA en 11 ocupaciones expuestas con los registros administrativos del país. En la versión revisada de su trabajo (marzo de 2026), descartan efectos sobre los ingresos o las horas registradas superiores al 2 % dos años después del lanzamiento de ChatGPT.[4]"
+          ],
+          [
+            "p",
+            "Michael Barr, miembro de la Junta de Gobernadores de la Reserva Federal, lo dijo sin rodeos en febrero de 2026: «La IA todavía no ha tenido un efecto sustancial en el empleo o el desempleo agregados».[5] Economistas de la Reserva Federal de Dallas hicieron las cuentas. La proporción de jóvenes de 20 a 24 años que trabajan en las ocupaciones más expuestas a la IA bajó del 16,4 % en noviembre de 2022 al 15,5 % en septiembre de 2025. Aunque todo eso se hubiera convertido en desempleo, solo habría sumado alrededor de 0,1 puntos a la tasa nacional.[6]"
+          ],
+          [
+            "o",
+            "Para el mercado laboral en su conjunto, que «la IA está quitando empleos» todavía no se ve en los datos."
+          ],
+          [
+            "h",
+            "Pero la puerta de entrada se estrecha"
+          ],
+          [
+            "p",
+            "Ahí no acaba la historia. Si se mira a quién no se contrata, en lugar de a quién se despide, aparece una señal constante."
+          ],
+          [
+            "p",
+            "Erik Brynjolfsson, Bharat Chandar y Ruyu Chen, de Stanford, usan los registros de nóminas de ADP, el mayor procesador de nóminas de EE. UU. En la versión revisada de su trabajo de agosto de 2026, con datos hasta junio de 2026, el empleo de los trabajadores de 22 a 25 años en las ocupaciones más expuestas a la IA, como el desarrollo de software y la atención al cliente, está alrededor de un 19 % por debajo de donde estaría si hubiera seguido el ritmo de las personas de la misma edad en empleos menos expuestos. Versiones anteriores del trabajo situaban la brecha en el 13 % y luego en el 15 %; se ha ampliado a medida que llegaban más datos. Los trabajadores con experiencia en las mismas ocupaciones no muestran una brecha comparable. Los autores subrayan que son «patrones descriptivos, no estimaciones causales».[7]"
+          ],
+          [
+            "p",
+            "Otros estudios, con otros datos, apuntan en la misma dirección. Un estudio del King’s College de Londres sobre empresas del Reino Unido encontró que las empresas muy expuestas redujeron su empleo total un 4,5 % de media, con los puestos júnior un 5,8 % menos, casi toda la caída; además, tenían 16,3 puntos porcentuales menos de probabilidad de publicar nuevas vacantes.[8] Dos documentos de trabajo de la Oficina del Censo de EE. UU. encontraron que el empleo de inicio de carrera en la quinta parte de sectores más expuesta a la IA cayó un 12 % en los diez trimestres posteriores a ChatGPT. Los titulados de la décima parte de carreras universitarias más expuesta pasaron a tener 5 puntos porcentuales menos de probabilidad de tener empleo un trimestre después de graduarse, y su salario inicial bajó un 13 %, más o menos lo que los economistas esperarían al graduarse en plena recesión grave.[9] Anthropic, la empresa que desarrolla el modelo de IA Claude, no encontró un aumento sistemático del desempleo entre los trabajadores muy expuestos, pero sí una tasa de obtención de empleo de los jóvenes de 22 a 25 años que entran en los empleos más expuestos alrededor de un 14 % inferior a la de 2022, un resultado que califica de apenas significativo.[10]"
+          ],
+          [
+            "p",
+            "Lo que comparten estos estudios es el mecanismo. La caída se debe sobre todo a que se contrata a menos jóvenes, no a que se despida a más gente.[6][7][9] Las empresas conservan la plantilla que tienen y dejan de cubrir, sin ruido, el peldaño más bajo. Los documentos del Censo también encuentran que la contratación se había recuperado en gran parte a principios de 2025, pero desde una base más pequeña: la puerta solo volvió a abrirse en parte.[9]"
+          ],
+          [
+            "o",
+            "El primer efecto visible de la IA no son los despidos masivos, sino una entrada más estrecha. Es fácil pasarlo por alto, porque un empleo que nunca se ofreció nunca aparece como un empleo perdido."
+          ],
+          [
+            "h",
+            "Los autónomos lo notaron primero"
+          ],
+          [
+            "p",
+            "El otro lugar donde el efecto se ve con claridad son los mercados donde el trabajo se compra tarea por tarea. Xiang Hui, Oren Reshef y Luofeng Zhou estudiaron la plataforma de trabajo autónomo Upwork. Tras el lanzamiento de ChatGPT, los autónomos dedicados a la escritura vieron caer sus encargos mensuales un 2 % y sus ingresos mensuales un 5,2 %. Tras los generadores de imágenes DALL-E 2 y Midjourney, los autónomos dedicados a la imagen perdieron el 3,7 % de sus encargos y el 9,4 % de sus ingresos.[11]"
+          ],
+          [
+            "p",
+            "Los autónomos no tienen un empleador que los mantenga, ni plazo de preaviso y, en muchos países, poco o ningún seguro de desempleo. Cuando un cliente se pasa a una herramienta, los ingresos simplemente se detienen. La segunda parte mirará más de cerca el trabajo creativo."
+          ],
+          [
+            "p",
+            "Los principales estudios, uno al lado del otro:"
+          ],
+          [
+            "t",
+            "Estudio | Datos | Resultado\nYale Budget Lab | Encuesta de población activa de EE. UU., hasta ago. de 2026 | Sin huella clara de la IA en el empleo ni el desempleo[3]\nHumlum y Vestergaard | Registros administrativos daneses | Descartados efectos superiores al 2 % en ingresos y horas[4]\nBrynjolfsson, Chandar y Chen (Stanford) | Nóminas de ADP, hasta jun. de 2026 | De 22 a 25 años en los empleos más expuestos: alrededor de un 19 % por debajo de la tendencia (cifra revisada)[7]\nKing’s College de Londres | Ofertas y perfiles laborales del Reino Unido | Empresas expuestas: puestos júnior −5,8 %[8]\nOficina del Censo de EE. UU. | Registros administrativos de EE. UU. | Empleos de inicio de carrera en los sectores más expuestos −12 %; salario inicial de las carreras más expuestas −13 %[9]\nAnthropic | Encuesta de población activa de EE. UU. | Sin aumento sistemático del desempleo; tasa de obtención de empleo de los jóvenes alrededor de −14 %[10]\nHui, Reshef y Zhou | Upwork | Escritura: encargos −2 %, ingresos −5,2 %; imagen: −3,7 %, −9,4 %[11]"
+          ],
+          [
+            "h",
+            "Cuando las empresas dicen que la IA fue el motivo"
+          ],
+          [
+            "p",
+            "Algunas empresas han dicho abiertamente que la IA es la razón por la que necesitan menos gente. En febrero de 2026, Block, la empresa de pagos dirigida por Jack Dorsey, recortó más de 4.000 de sus más de 10.000 empleados. La carta a los accionistas decía: «Las herramientas de inteligencia han cambiado lo que significa construir y dirigir una empresa» y «Un equipo bastante más pequeño, usando las herramientas que estamos construyendo, puede hacer más y hacerlo mejor». El beneficio bruto de Block en el cuarto trimestre subió un 24 % respecto al año anterior: era una empresa que recortaba mientras le iba bien, no una en apuros.[12] En septiembre de 2025, el consejero delegado de Salesforce, Marc Benioff, dijo que había reducido el personal de soporte «de 9.000 cabezas a unas 5.000, porque necesito menos cabezas», y que la mitad de las conversaciones con clientes las llevaban ya agentes de IA.[13]"
+          ],
+          [
+            "p",
+            "Las encuestas a empresas muestran lo inusuales que siguen siendo estos casos. En las encuestas empresariales regionales de 2026 de la Reserva Federal de Nueva York, el 61 % de las empresas de servicios había usado IA en los seis meses anteriores, pero solo el 4 % declaró despidos debidos a la IA. Alrededor del 15 % dijo haber contratado a menos gente por la IA, y alrededor del 13 %, a más.[14]"
+          ],
+          [
+            "o",
+            "Las empresas que anuncian «despidos por la IA» acaparan los titulares. La respuesta mucho más común es más discreta: contratar un poco menos."
+          ],
+          [
+            "h",
+            "Japón: menos despidos, un riesgo distinto"
+          ],
+          [
+            "p",
+            "Japón está en otro punto. En la comparación internacional del Ministerio del Interior y Comunicaciones para el año fiscal 2024, el 26,7 % de las personas en Japón había usado IA generativa, frente al 68,8 % en EE. UU., el 59,2 % en Alemania y el 81,2 % en China. Una estimación de 2025 sitúa la proporción de empresas japonesas que han adoptado plenamente la IA generativa en sus operaciones principales en solo el 1,9 %, frente al 6,1 % en EE. UU., la más baja del G7.[15]"
+          ],
+          [
+            "p",
+            "La postura del Gobierno, por ahora, es que no hay un impacto importante. En la Cámara de Consejeros, el 8 de julio de 2026, Takahiro Anno, del partido Team Mirai, citó el estudio de Stanford y pidió un seguimiento periódico. El Ministerio de Salud, Trabajo y Bienestar respondió que, a juzgar por el desempleo juvenil, las tasas de inserción de los titulados y el empleo en el sector de TI, hasta ahora no se había producido un impacto importante, tampoco entre los jóvenes.[17] Una encuesta del Japan Productivity Center publicada en septiembre de 2026 encontró que más del 90 % de las empresas decía que la IA aún no había cambiado su plantilla, aunque más de la mitad espera tener menos personal dentro de 5 a 10 años.[18]"
+          ],
+          [
+            "p",
+            "A más largo plazo, el panorama es menos tranquilo. En la Cámara de Representantes, el 15 de abril de 2026, Michio Kawai, del mismo partido, citó la estimación de marzo de 2026 del Ministerio de Economía, Comercio e Industria sobre la estructura del empleo en Japón en 2040, que muestra un excedente de personal administrativo y una escasez de 3,39 millones de personas capaces de trabajar con IA y robots.[16]"
+          ],
+          [
+            "p",
+            "Naoyuki Fukuda, del Japan Research Institute, sostiene que es poco probable que Japón vea un aumento del desempleo juvenil al estilo estadounidense: la escasez de mano de obra, el empleo de larga duración y la contratación masiva de recién titulados cada primavera actúan como amortiguador. El riesgo es otro. Las empresas japonesas han formado a su nuevo personal dándole primero tareas sencillas y dejando que aprenda trabajando. Si la IA generativa se queda con ese punto de partida, una generación podría «conseguir un empleo, pero no aprender nunca el oficio», y el problema solo aflorará de 5 a 10 años después, cuando esa generación deba empezar a dirigir.[15]"
+          ],
+          [
+            "o",
+            "En EE. UU., la entrada se estrecha. En Japón, puede que la entrada siga abierta mientras desaparecen los primeros peldaños de la escalera."
+          ],
+          [
+            "h",
+            "Qué podría hacer una renta básica ante este tipo de cambio"
+          ],
+          [
+            "p",
+            "Si la IA estuviera eliminando empleos en todos los ámbitos, la pregunta sería cómo sustituir los ingresos de millones de personas. Los datos muestran hasta ahora algo más acotado: menos primeros empleos para los jóvenes en los campos expuestos, autónomos que pierden trabajo tarea por tarea y, en Japón, una posible pérdida del aprendizaje en el puesto. Una renta básica encaja con esta forma concreta de tres maneras."
+          ],
+          [
+            "p",
+            "Primera, un suelo para quienes no tienen historial laboral. El seguro de desempleo, en Japón como en otros lugares, solo paga a quienes han trabajado y cotizado. Un titulado que nunca consiguió su primer empleo, o un autónomo cuyos clientes se fueron alejando, a menudo no recibe nada. Lo mismo ocurre con {el nuevo pago de Japón para quienes trabajan|/essays/refundable-tax-credit-vs-basic-income/}, que exige ingresos del trabajo en el año anterior. Una renta básica llega a las personas hayan trabajado antes o no."
+          ],
+          [
+            "p",
+            "Segunda, tiempo. Encontrar el siguiente empleo, volver a formarse o empezar algo nuevo lleva meses. Un ingreso pequeño y estable, que no se corta cuando vuelves a estudiar o aceptas un trabajo arriesgado, hace posibles esos meses."
+          ],
+          [
+            "p",
+            "Tercera, poder de negociación. Quien tiene un suelo puede rechazar con algo más de facilidad una mala oferta o un contrato por una fracción de la tarifa anterior. Cuando el trabajo se compra tarea por tarea, eso importa."
+          ],
+          [
+            "p",
+            "Los experimentos con transferencias de dinero aportan algunos datos sobre si la gente usa el dinero de esta manera. En {el estudio de OpenResearch de Sam Altman|/essays/openresearch-cash-study/}, 1.000 dólares al mes durante tres años llevaron a quienes los recibían a trabajar alrededor de 1,3 horas semanales menos que el grupo de control, mientras el empleo subía en ambos grupos. En {el experimento de Finlandia de 2017–2018|/essays/finland-basic-income-experiment/}, 2.000 personas desempleadas recibieron 560 € al mes; los efectos sobre el empleo fueron pequeños, y el bienestar y la confianza mejoraron. En {Stockton (California)|/timeline/#tl-stockton}, la proporción de receptores con empleo a tiempo completo pasó del 28 % al 40 % en un año, más del doble del aumento en el grupo de control. Ninguno de estos experimentos trataba sobre la IA. Sugieren que un suelo modesto no hace que la mayoría deje de trabajar, y que le da cierto margen para elegir."
+          ],
+          [
+            "o",
+            "Una renta básica no devolvería los empleos. Cambiaría lo que significa perder uno, o no conseguir nunca uno."
+          ],
+          [
+            "h",
+            "El argumento en contra más sólido"
+          ],
+          [
+            "p",
+            "La crítica más cuidadosa procede de un informe de investigación publicado por la Organización Internacional del Trabajo en mayo de 2026, «Por qué la RBU no es la respuesta al impacto de la IA en el mercado laboral», de Tuğba Özay y Ekkehard Ernst. Es un trabajo firmado por sus autores, no una posición formal de la OIT. Sostiene que «la IA transforma tareas, no ocupaciones», por lo que el desempleo masivo es improbable, y que un pago universal empujaría la demanda hacia sectores donde la oferta crece despacio, como la vivienda, la sanidad y los cuidados: «Repartir dinero más deprisa de lo que puede ajustarse una oferta limitada produce inflación, no abundancia». Sí concede que «los empleos cognitivos están viendo cómo se erosiona su prima por cualificación, sobre todo entre los jóvenes que entran en el mercado laboral». Recomienda formación, políticas activas de empleo, prestaciones portátiles, más vivienda, gravar las rentas de la IA y una protección social que mantenga los incentivos a trabajar, «por ejemplo mediante un crédito fiscal por ingresos del trabajo».[19]"
+          ],
+          [
+            "p",
+            "Robert Litan, de la Brookings Institution, propone en su lugar un «seguro de transición». Cualquier persona desplazada de forma involuntaria, sin necesidad de demostrar que la causa fue la IA, y con al menos tres años en el puesto, recibiría el 80 %, el 60 % y el 40 % de los ingresos perdidos en los tres primeros años tras encontrar un nuevo empleo. Sumando cuentas de formación para toda la vida y un crédito fiscal por contratar a recién titulados, calcula un coste total de unos 60.000 millones de dólares al año, frente a unos 784.000 millones netos de una renta básica al nivel del umbral de pobreza, que rechaza por demasiado cara.[21]"
+          ],
+          [
+            "p",
+            "Estas críticas merecen ser escuchadas con justicia. Los datos anteriores respaldan su primer punto: hasta ahora, la IA ha transformado las tareas y la contratación mucho más de lo que ha destruido empleos. El plan de Litan es más barato, y ayudaría al oficinista a mitad de carrera cuyo salario baja tras un despido."
+          ],
+          [
+            "p",
+            "Pero ambas dejan fuera a las mismas personas. El seguro salarial solo paga a quienes tenían un empleo y encuentran otro. Un crédito fiscal por ingresos del trabajo solo paga a quienes ya trabajan. El titulado que nunca consiguió su primer empleo y el autónomo cuyo trabajo nunca contó como empleo se quedan fuera de ambos, y son precisamente las personas a las que los datos muestran como las primeras afectadas. En cuanto a la inflación, la evidencia de las transferencias de dinero es más variada de lo que sugiere el informe. Cuando GiveDirectly dio unos 1.000 dólares a cada uno de más de 10.500 hogares pobres de la Kenia rural, un impulso equivalente a más del 15 % del PIB local, los investigadores encontraron grandes beneficios para los hogares y negocios vecinos y una «inflación de precios mínima».[20] Una transferencia única en la Kenia rural no resuelve qué pasaría con los alquileres en Tokio, y la escasez de vivienda es un problema real sea cual sea la política. Pero más dinero no significa automáticamente precios más altos."
+          ],
+          [
+            "o",
+            "Nuestra lectura: en la situación actual, una renta básica no es la única herramienta, y probablemente no la primera a la que recurrirán los gobiernos. Es la que cubre a las personas que las demás herramientas no alcanzan."
+          ],
+          [
+            "h",
+            "Lo que realmente se está probando"
+          ],
+          [
+            "p",
+            "Ya se están dando pequeños pasos. {The AI Dividend|/timeline/#tl-ai-dividend}, gestionado por organizaciones sin ánimo de lucro de EE. UU., empezó en marzo de 2026 a pagar 1.000 dólares al mes durante un año, sin condiciones, a un grupo de 25 a 50 trabajadores que perdieron trabajo por la IA. Es una demostración más que un estudio: no hay grupo de control."
+          ],
+          [
+            "p",
+            "Las empresas de IA han empezado a publicar propuestas propias. El marco de política económica de Anthropic de junio de 2026 plantea respuestas según el nivel de desempleo: en torno al 5 %, ayudas a la formación, seguro salarial e incentivos para conservar y recolocar a los trabajadores; en torno al 10 %, ampliar el seguro de desempleo como prioridad; y en niveles «sin precedentes», una sustitución de ingresos sostenida, que «podría incluir la renta básica, modelos de fondos soberanos y mecanismos de reparto de capital». Anthropic también comprometió 200 millones de dólares para investigación y pruebas de políticas.[22] {Su Public Benefit Fund|/essays/public-benefit-fund/}, sobre el que hemos escrito aparte, es otro compromiso. El documento de OpenAI de abril de 2026 «Política industrial para la era de la inteligencia» propone un Fondo de Riqueza Pública que daría a cada estadounidense una participación en las empresas y la infraestructura de IA y le pagaría directamente los rendimientos, junto con redes de seguridad que se activen automáticamente cuando los datos de desplazamiento superen un umbral. No menciona la renta básica.[23]"
+          ],
+          [
+            "p",
+            "Los legisladores también se mueven. La H.R. 10044, presentada en la Cámara de Representantes de EE. UU. en septiembre de 2026 por Sara Jacobs, Greg Casar y Valerie Foushee, impondría un impuesto especial sobre los tokens o los ingresos de la IA que subiría automáticamente con el desempleo. El dinero iría a la creación de empleo, en vivienda, infraestructuras y cuidados, no a pagos en efectivo.[24] En Corea del Sur, el presidente Lee Jae-myung dijo en una entrevista con The Economist en junio de 2026 que hace falta «un nuevo mecanismo, como la renta básica» para repartir con la gente común parte de los beneficios extraordinarios de la IA. Su jefe de políticas planteó un «dividendo nacional de la IA» pagado con la recaudación extraordinaria procedente de los fabricantes de chips, y el Gobierno lo reformuló después como el uso del exceso de recaudación en general. El diario Hankook Ilbo advirtió contra ir demasiado deprisa y señaló la financiación como la cuestión clave.[25]"
+          ],
+          [
+            "p",
+            "¿Cuánto costaría un suelo? Con {la calculadora de renta básica|/calc/?c=jp&w=all&m=30000}, 30.000 yenes al mes para todas las personas de Japón suman unos 44,2 billones de yenes al año en bruto, alrededor del 6,7 % del PIB. El coste neto, tras lo que vuelve en impuestos, es mucho menor, como muestra con un ejemplo práctico nuestro {ensayo sobre los créditos fiscales reembolsables|/essays/refundable-tax-credit-vs-basic-income/}."
+          ],
+          [
+            "o",
+            "Nada de esto es todavía una renta básica para la era de la IA. Pero la pregunta ha cambiado, de «¿nos quitará la IA el trabajo?» a «¿quién paga la transición, y cómo llega el dinero a la gente?»."
+          ],
+          [
+            "h",
+            "Ni «la IA se está llevando todos los empleos» ni «no está pasando nada»"
+          ],
+          [
+            "o",
+            "Esto es lo que muestran los datos a noviembre de 2026. La IA aún no se ve en el empleo ni en el desempleo totales, ya sea en EE. UU., Dinamarca o Japón. Los «despidos por la IA» anunciados son decisiones reales de empresas reales, pero son una parte pequeña, y en parte autopresentada, de todos los recortes. Al mismo tiempo, la puerta de entrada se estrecha para los jóvenes en los campos expuestos, los autónomos han perdido trabajo y Japón puede estar perdiendo los primeros peldaños sobre los que la gente aprende su oficio."
+          ],
+          [
+            "o",
+            "Es un cambio que recae primero sobre quienes tienen menos protección: quienes no tienen historial laboral, ni empleador, ni derecho al seguro de desempleo. Ahí es donde más importa el rasgo más sencillo de una renta básica: llega a todo el mundo sin preguntar si has trabajado. No es la única respuesta, y sus críticos tienen razón en que cuesta mucho y en que la oferta importa. Pero un suelo que esté listo antes de que haga falta es más fácil de construir que uno improvisado en plena crisis."
+          ],
+          [
+            "o",
+            "En la segunda parte pasamos al trabajo creativo: ilustradores, traductores, escritores y actores de doblaje, donde el cambio ha llegado más deprisa."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Am 5. November 2026 veröffentlichte das US-Outplacement-Unternehmen Challenger, Gray & Christmas seine monatliche Zählung angekündigter Stellenstreichungen. Von Januar bis Oktober 2026 nannten Arbeitgeber künstliche Intelligenz als Grund für 121.401 Streichungen, etwa 20 % der insgesamt 617.189. Seit das Unternehmen diesen Grund 2023 zu erfassen begann, hat die Zahl 193.226 erreicht.[1]"
+          ],
+          [
+            "p",
+            "Zahlen wie diese nähren eine bekannte Erzählung: Generative KI nimmt uns die Arbeitsplätze weg, und zwar schnell. Diese Website setzt sich für ein Grundeinkommen ein, und KI ist einer der Gründe, die am häufigsten dafür genannt werden. Gerade deshalb wollten wir wissen, was tatsächlich gemessen wurde, bevor wir fragen, was ein Grundeinkommen leisten könnte. Dies ist Teil 1 von zwei. Er befasst sich mit Arbeit im Allgemeinen; Teil 2 wird sich der kreativen Arbeit widmen."
+          ],
+          [
+            "h",
+            "Was die 121.401 bedeuten und was nicht"
+          ],
+          [
+            "p",
+            "Challenger zählt die Gründe, die Arbeitgeber bei der Ankündigung von Streichungen angeben. Es misst nicht, wie viele Arbeitsplätze KI tatsächlich beseitigt hat. Im Oktober 2026 wurde KI nur bei 1.265 Streichungen genannt, dem niedrigsten Monatswert des Jahres, und „Markt- bzw. Wirtschaftslage“ (130.531) hat KI im bisherigen Jahresverlauf als häufigsten Grund überholt.[1]"
+          ],
+          [
+            "p",
+            "Manche Ökonomen vermuten, dass ein Teil der KI-Zahl Schönfärberei ist. In einem Briefing vom Januar 2026 stellte Oxford Economics fest, dass KI in den ersten 11 Monaten 2025 bei fast 55.000 Streichungen in den USA genannt worden war, nur 4,5 % der Gesamtzahl, und schrieb: „Wir vermuten, dass manche Unternehmen versuchen, Entlassungen als gute statt als schlechte Nachricht darzustellen, etwa nach früheren Überbesetzungen.“[2] Investoren zu sagen, ein kleineres Team sei eine Frucht der KI, klingt besser, als zuzugeben, dass man zu viele Leute eingestellt hat."
+          ],
+          [
+            "o",
+            "Ein angekündigter Grund ist eine Aussage, keine Messung. Um zu sehen, was KI mit der Beschäftigung gemacht hat, müssen wir auf Arbeitsmarktdaten schauen."
+          ],
+          [
+            "h",
+            "Das Gesamtbild: noch keine klare Spur"
+          ],
+          [
+            "p",
+            "Das Budget Lab der Universität Yale beobachtet den US-Arbeitsmarkt auf Anzeichen von KI. Sein Update vom September 2026 mit Daten bis August besagt, die Analyse „zeigt noch keine klare KI-bezogene Spur auf dem Arbeitsmarkt“ und „Messgrößen der KI-Nutzung zeigen keinen Zusammenhang mit Veränderungen bei Beschäftigung oder Arbeitslosigkeit“.[3]"
+          ],
+          [
+            "p",
+            "Dänemark bietet einen genaueren Test. Anders Humlum und Emilie Vestergaard verknüpften Umfragen zur KI-Nutzung in 11 exponierten Berufen mit den Verwaltungsdaten des Landes. In der überarbeiteten Fassung ihrer Studie (März 2026) schließen sie zwei Jahre nach dem Start von ChatGPT Effekte auf Verdienste oder erfasste Arbeitsstunden von mehr als 2 % aus.[4]"
+          ],
+          [
+            "p",
+            "Michael Barr, Mitglied des Board of Governors der US-Notenbank, sagte es im Februar 2026 deutlich: „KI hat bislang keine wesentliche Wirkung auf die Gesamtbeschäftigung oder die Arbeitslosigkeit gehabt.“[5] Ökonomen der Federal Reserve Bank of Dallas haben nachgerechnet. Der Anteil der 20- bis 24-Jährigen, die in den am stärksten KI-exponierten Berufen arbeiten, sank von 16,4 % im November 2022 auf 15,5 % im September 2025. Selbst wenn all das zu Arbeitslosigkeit geworden wäre, hätte es die landesweite Quote nur um etwa 0,1 Punkte erhöht.[6]"
+          ],
+          [
+            "o",
+            "Für den Arbeitsmarkt als Ganzes ist „KI nimmt uns die Arbeit weg“ in den Daten noch nicht zu sehen."
+          ],
+          [
+            "h",
+            "Aber der Einstieg wird enger"
+          ],
+          [
+            "p",
+            "Damit ist die Geschichte nicht zu Ende. Wer darauf schaut, wer nicht eingestellt wird, statt darauf, wer entlassen wird, sieht ein durchgängiges Signal."
+          ],
+          [
+            "p",
+            "Erik Brynjolfsson, Bharat Chandar und Ruyu Chen von der Stanford University nutzen Lohnabrechnungsdaten von ADP, dem größten Lohnabrechnungsdienstleister der USA. In der überarbeiteten Fassung ihrer Studie vom August 2026, mit Daten bis Juni 2026, liegt die Beschäftigung von 22- bis 25-Jährigen in den am stärksten KI-exponierten Berufen, etwa Softwareentwicklung und Kundenservice, rund 19 % unter dem Niveau, das sie erreicht hätte, wenn sie mit Gleichaltrigen in weniger exponierten Berufen Schritt gehalten hätte. Frühere Fassungen der Studie bezifferten die Lücke auf 13 % und dann auf 15 %; sie ist mit jeder neuen Datenlieferung größer geworden. Erfahrene Beschäftigte in denselben Berufen zeigen keine vergleichbare Lücke. Die Autoren betonen, dies seien „deskriptive Muster, keine kausalen Schätzungen“.[7]"
+          ],
+          [
+            "p",
+            "Andere Studien mit anderen Daten weisen in dieselbe Richtung. Eine Studie des King’s College London zu britischen Unternehmen ergab, dass stark exponierte Firmen ihre Gesamtbeschäftigung im Schnitt um 4,5 % senkten, Einstiegspositionen um 5,8 %, fast der gesamte Rückgang; zudem schrieben sie mit einer um 16,3 Prozentpunkte geringeren Wahrscheinlichkeit neue Stellen aus.[8] Zwei Arbeitspapiere des US Census Bureau fanden, dass die Beschäftigung von Berufseinsteigern im am stärksten KI-exponierten Fünftel der Branchen in den zehn Quartalen nach ChatGPT um 12 % fiel. Absolventen aus dem am stärksten exponierten Zehntel der Studienfächer hatten ein Quartal nach dem Abschluss eine um 5 Prozentpunkte geringere Wahrscheinlichkeit, eine Stelle zu haben, und ihre Einstiegsgehälter sanken um 13 %, ungefähr so viel, wie Ökonomen bei einem Abschluss mitten in einer schweren Rezession erwarten würden.[9] Anthropic, das Unternehmen hinter dem KI-Modell Claude, fand keinen systematischen Anstieg der Arbeitslosigkeit unter stark exponierten Beschäftigten, wohl aber eine Quote erfolgreicher Stellensuche bei 22- bis 25-Jährigen, die in die am stärksten exponierten Berufe einsteigen, die rund 14 % unter 2022 lag, ein Ergebnis, das es als knapp signifikant bezeichnet.[10]"
+          ],
+          [
+            "p",
+            "Was diese Studien verbindet, ist der Mechanismus. Der Rückgang kommt vor allem daher, dass weniger junge Menschen eingestellt werden, nicht daher, dass mehr Menschen entlassen werden.[6][7][9] Firmen behalten ihr vorhandenes Personal und besetzen die unterste Sprosse stillschweigend nicht mehr. Die Census-Papiere stellen auch fest, dass sich die Einstellungen bis Anfang 2025 weitgehend erholt hatten, allerdings von einer kleineren Basis aus: Die Tür ging nur teilweise wieder auf.[9]"
+          ],
+          [
+            "o",
+            "Die erste sichtbare Wirkung von KI sind keine Massenentlassungen, sondern ein engerer Einstieg. Das übersieht man leicht, denn eine Stelle, die nie angeboten wurde, taucht nie als verlorene Stelle auf."
+          ],
+          [
+            "h",
+            "Freiberufler spürten es zuerst"
+          ],
+          [
+            "p",
+            "Der andere Ort, an dem sich die Wirkung deutlich zeigt, sind Märkte, auf denen Arbeit Auftrag für Auftrag eingekauft wird. Xiang Hui, Oren Reshef und Luofeng Zhou untersuchten die Freelance-Plattform Upwork. Nach dem Start von ChatGPT sanken bei Freiberuflern im Bereich Schreiben die monatlichen Aufträge um 2 % und die monatlichen Einnahmen um 5,2 %. Nach den Bildgeneratoren DALL-E 2 und Midjourney verloren Freiberufler im Bildbereich 3,7 % ihrer Aufträge und 9,4 % ihrer Einnahmen.[11]"
+          ],
+          [
+            "p",
+            "Freiberufler haben keinen Arbeitgeber, der sie hält, keine Kündigungsfrist und in vielen Ländern wenig oder keine Arbeitslosenversicherung. Wenn ein Kunde auf ein Werkzeug umsteigt, bricht das Einkommen einfach weg. Teil 2 wird sich die kreative Arbeit genauer ansehen."
+          ],
+          [
+            "p",
+            "Die wichtigsten Studien im Überblick:"
+          ],
+          [
+            "t",
+            "Studie | Daten | Ergebnis\nYale Budget Lab | US-Erwerbstätigenbefragung, bis Aug. 2026 | Keine klare KI-Spur bei Beschäftigung oder Arbeitslosigkeit[3]\nHumlum & Vestergaard | Dänische Verwaltungsdaten | Effekte auf Verdienste und Stunden über 2 % ausgeschlossen[4]\nBrynjolfsson, Chandar & Chen (Stanford) | ADP-Lohnabrechnungen, bis Juni 2026 | 22- bis 25-Jährige in den am stärksten exponierten Berufen: rund 19 % unter dem Trend (überarbeiteter Wert)[7]\nKing’s College London | Britische Stellenanzeigen und Profile | Exponierte Firmen: Einstiegspositionen −5,8 %[8]\nUS Census Bureau | US-Verwaltungsdaten | Einstiegsstellen in den am stärksten exponierten Branchen −12 %; Einstiegsgehalt in den am stärksten exponierten Fächern −13 %[9]\nAnthropic | US-Erwerbstätigenbefragung | Kein systematischer Anstieg der Arbeitslosigkeit; Quote erfolgreicher Stellensuche bei Jungen rund −14 %[10]\nHui, Reshef & Zhou | Upwork | Schreiben: Aufträge −2 %, Einnahmen −5,2 %; Bilder: −3,7 %, −9,4 %[11]"
+          ],
+          [
+            "h",
+            "Wenn Unternehmen KI als Grund nennen"
+          ],
+          [
+            "p",
+            "Einige Unternehmen haben offen gesagt, dass KI der Grund ist, warum sie weniger Leute brauchen. Im Februar 2026 strich Block, das von Jack Dorsey geführte Zahlungsunternehmen, mehr als 4.000 seiner über 10.000 Stellen. Im Aktionärsbrief hieß es: „Intelligente Werkzeuge haben verändert, was es bedeutet, ein Unternehmen aufzubauen und zu führen“, und „Ein deutlich kleineres Team, das die Werkzeuge nutzt, die wir bauen, kann mehr und es besser machen.“ Blocks Bruttogewinn im vierten Quartal lag 24 % über dem Vorjahr: Hier strich ein Unternehmen Stellen, dem es gut ging, nicht eines in Schwierigkeiten.[12] Im September 2025 sagte Salesforce-Chef Marc Benioff, er habe den Support „von 9.000 Köpfen auf etwa 5.000 verkleinert, weil ich weniger Köpfe brauche“, da inzwischen die Hälfte der Kundengespräche von KI-Agenten geführt werde.[13]"
+          ],
+          [
+            "p",
+            "Unternehmensumfragen zeigen, wie ungewöhnlich solche Fälle noch sind. In den regionalen Unternehmensumfragen der Federal Reserve Bank of New York von 2026 hatten 61 % der Dienstleistungsfirmen in den vergangenen sechs Monaten KI genutzt, aber nur 4 % meldeten KI-bedingte Entlassungen. Etwa 15 % gaben an, wegen KI weniger Leute eingestellt zu haben, etwa 13 % mehr.[14]"
+          ],
+          [
+            "o",
+            "Die Firmen, die „KI-Entlassungen“ ankündigen, machen Schlagzeilen. Die weitaus häufigere Reaktion ist leiser: etwas weniger einstellen."
+          ],
+          [
+            "h",
+            "Japan: weniger Entlassungen, ein anderes Risiko"
+          ],
+          [
+            "p",
+            "Japan steht an einem anderen Punkt. Im internationalen Vergleich des Ministeriums für Innere Angelegenheiten und Kommunikation für das Fiskaljahr 2024 hatten in Japan 26,7 % der Menschen generative KI genutzt, gegenüber 68,8 % in den USA, 59,2 % in Deutschland und 81,2 % in China. Eine Schätzung von 2025 beziffert den Anteil japanischer Unternehmen, die generative KI in ihren Kernprozessen vollständig eingeführt haben, auf nur 1,9 %, gegenüber 6,1 % in den USA, der niedrigste Wert in der G7.[15]"
+          ],
+          [
+            "p",
+            "Die Linie der Regierung lautet vorerst, es gebe keine größeren Auswirkungen. Im Oberhaus zitierte Takahiro Anno von der Partei Team Mirai am 8. Juli 2026 die Stanford-Studie und forderte eine regelmäßige Beobachtung. Das Ministerium für Gesundheit, Arbeit und Soziales antwortete, gemessen an Jugendarbeitslosigkeit, Übergangsquoten der Absolventen und Beschäftigung in der IT seien bislang keine größeren Auswirkungen entstanden, auch nicht bei jungen Menschen.[17] Eine im September 2026 veröffentlichte Umfrage des Japan Productivity Center ergab, dass mehr als 90 % der Unternehmen sagten, KI habe ihre Belegschaftsgröße noch nicht verändert, wobei mehr als die Hälfte in 5 bis 10 Jahren mit weniger Personal rechnet.[18]"
+          ],
+          [
+            "p",
+            "Auf längere Sicht ist das Bild weniger ruhig. Im Unterhaus zitierte Michio Kawai von derselben Partei am 15. April 2026 die Schätzung des Ministeriums für Wirtschaft, Handel und Industrie vom März 2026 zur Beschäftigungsstruktur Japans im Jahr 2040, die einen Überschuss an Büroangestellten und einen Mangel von 3,39 Millionen Menschen zeigt, die mit KI und Robotern arbeiten können.[16]"
+          ],
+          [
+            "p",
+            "Naoyuki Fukuda vom Japan Research Institute hält einen Anstieg der Jugendarbeitslosigkeit nach US-Muster in Japan für unwahrscheinlich: Arbeitskräftemangel, langfristige Beschäftigung und die Masseneinstellung von Hochschulabsolventen jedes Frühjahr wirken als Puffer. Das Risiko ist ein anderes. Japanische Unternehmen haben neues Personal ausgebildet, indem sie ihm zuerst einfache Aufgaben gaben und es bei der Arbeit lernen ließen. Übernimmt generative KI diesen Ausgangspunkt, könnte eine Generation „eine Stelle bekommen, aber nie das Handwerk lernen“, und das Problem würde erst 5 bis 10 Jahre später sichtbar, wenn diese Generation Führungsaufgaben übernehmen soll.[15]"
+          ],
+          [
+            "o",
+            "In den USA wird der Einstieg enger. In Japan bleibt der Einstieg vielleicht offen, während die untersten Sprossen der Leiter verschwinden."
+          ],
+          [
+            "h",
+            "Was ein Grundeinkommen bei dieser Art von Umbruch leisten könnte"
+          ],
+          [
+            "p",
+            "Würde KI Arbeitsplätze auf breiter Front vernichten, wäre die Frage, wie man die Einkommen von Millionen ersetzt. Die Daten zeigen bisher etwas Engeres: weniger erste Stellen für junge Menschen in exponierten Bereichen, Freiberufler, die Auftrag für Auftrag Arbeit verlieren, und in Japan womöglich einen Verlust des Lernens im Beruf. Ein Grundeinkommen passt auf dreierlei Weise zu genau dieser Form."
+          ],
+          [
+            "p",
+            "Erstens: ein Boden für Menschen ohne Erwerbsbiografie. Die Arbeitslosenversicherung zahlt, in Japan wie anderswo, nur an Menschen, die gearbeitet und Beiträge gezahlt haben. Ein Absolvent, der nie eine erste Stelle bekam, oder eine Freiberuflerin, deren Kunden nach und nach abwanderten, bekommt oft nichts. Dasselbe gilt für {Japans neue Zahlung für Erwerbstätige|/essays/refundable-tax-credit-vs-basic-income/}, die Erwerbseinkommen im Vorjahr voraussetzt. Ein Grundeinkommen erreicht Menschen, ob sie vorher gearbeitet haben oder nicht."
+          ],
+          [
+            "p",
+            "Zweitens: Zeit. Die nächste Stelle zu finden, sich umzuschulen oder etwas Neues anzufangen, dauert Monate. Ein kleines, stetiges Einkommen, das nicht wegfällt, wenn man wieder lernt oder eine riskante Stelle annimmt, macht diese Monate möglich."
+          ],
+          [
+            "p",
+            "Drittens: Verhandlungsmacht. Wer einen Boden hat, kann ein schlechtes Angebot oder einen Auftrag zu einem Bruchteil des alten Satzes etwas leichter ablehnen. Wenn Arbeit Auftrag für Auftrag eingekauft wird, zählt das."
+          ],
+          [
+            "p",
+            "Versuche mit Geldzahlungen liefern einige Belege dafür, ob Menschen das Geld so nutzen. In {Sam Altmans OpenResearch-Studie|/essays/openresearch-cash-study/} führten 1.000 Dollar im Monat über drei Jahre dazu, dass die Empfänger etwa 1,3 Stunden pro Woche weniger arbeiteten als die Kontrollgruppe, während die Beschäftigung in beiden Gruppen stieg. In {Finnlands Experiment von 2017–2018|/essays/finland-basic-income-experiment/} erhielten 2.000 Arbeitslose 560 € im Monat; die Beschäftigungseffekte waren gering, Wohlbefinden und Vertrauen verbesserten sich. In {Stockton (Kalifornien)|/timeline/#tl-stockton} stieg der Anteil der Empfänger in Vollzeit binnen eines Jahres von 28 % auf 40 %, mehr als doppelt so stark wie in der Kontrollgruppe. Keiner dieser Versuche drehte sich um KI. Sie legen nahe, dass ein bescheidener Boden die meisten Menschen nicht vom Arbeiten abhält und ihnen etwas Spielraum zur Wahl gibt."
+          ],
+          [
+            "o",
+            "Ein Grundeinkommen würde die Arbeitsplätze nicht zurückbringen. Es würde verändern, was es bedeutet, eine Stelle zu verlieren oder nie eine zu bekommen."
+          ],
+          [
+            "h",
+            "Das stärkste Gegenargument"
+          ],
+          [
+            "p",
+            "Die sorgfältigste Kritik stammt aus einem Forschungsbriefing, das die Internationale Arbeitsorganisation im Mai 2026 veröffentlichte: „Warum ein bedingungsloses Grundeinkommen nicht die Antwort auf die Auswirkungen von KI auf den Arbeitsmarkt ist“ von Tuğba Özay und Ekkehard Ernst. Es ist ein Papier namentlich genannter Autoren, keine offizielle Position der ILO. Es argumentiert, „KI verändert Aufgaben, nicht Berufe“, Massenarbeitslosigkeit sei daher unwahrscheinlich, und eine universelle Zahlung würde die Nachfrage in Sektoren lenken, in denen das Angebot nur langsam wächst, etwa Wohnen, Gesundheit und Pflege: „Geld schneller zu verteilen, als sich ein begrenztes Angebot anpassen kann, erzeugt Inflation, keinen Überfluss.“ Es räumt ein, dass „kognitive Tätigkeiten erleben, wie ihr Qualifikationsaufschlag schwindet, besonders bei jüngeren Berufseinsteigern“. Es empfiehlt Weiterbildung, aktive Arbeitsmarktpolitik, übertragbare Leistungen, mehr Wohnraum, die Besteuerung von KI-Renten und einen Sozialschutz, der Arbeitsanreize erhält, „etwa durch eine Steuergutschrift für Erwerbseinkommen“.[19]"
+          ],
+          [
+            "p",
+            "Robert Litan von der Brookings Institution schlägt stattdessen eine „Übergangsversicherung“ vor. Wer unfreiwillig seine Stelle verliert, ohne nachweisen zu müssen, dass KI die Ursache war, und mindestens drei Jahre im Job war, bekäme in den ersten drei Jahren nach Antritt einer neuen Stelle 80 %, 60 % und 40 % des entgangenen Verdienstes. Zusammen mit lebenslangen Weiterbildungskonten und einer Steuergutschrift für die Einstellung von Hochschulabsolventen veranschlagt er die Kosten auf insgesamt etwa 60 Milliarden Dollar im Jahr, gegenüber netto etwa 784 Milliarden Dollar für ein Grundeinkommen auf Höhe der Armutsgrenze, das er als zu teuer ablehnt.[21]"
+          ],
+          [
+            "p",
+            "Diese Kritik verdient ein faires Gehör. Die oben genannten Belege stützen ihren ersten Punkt: Bislang hat KI Aufgaben und Einstellungen weit stärker verändert, als sie Arbeitsplätze vernichtet hat. Litans Plan ist billiger, und er würde dem Büroangestellten in der Mitte seines Berufslebens helfen, dessen Lohn nach einer Entlassung sinkt."
+          ],
+          [
+            "p",
+            "Doch beide lassen dieselben Menschen außen vor. Eine Lohnversicherung zahlt nur an Menschen, die eine Stelle hatten und eine neue finden. Eine Steuergutschrift für Erwerbseinkommen zahlt nur an Menschen, die bereits arbeiten. Der Absolvent, der nie eine erste Stelle bekam, und die Freiberuflerin, deren Arbeit nie als Beschäftigung zählte, fallen durch beide Raster, und genau sie sind es, die laut den Daten zuerst getroffen werden. Bei der Inflation ist die Beweislage aus Geldtransfers gemischter, als das Briefing nahelegt. Als GiveDirectly mehr als 10.500 armen Haushalten im ländlichen Kenia je etwa 1.000 Dollar gab, ein Impuls von mehr als 15 % des örtlichen BIP, fanden Forscher große Gewinne für benachbarte Haushalte und Betriebe und eine „minimale Preisinflation“.[20] Eine einmalige Zahlung im ländlichen Kenia klärt nicht, was mit den Mieten in Tokio geschähe, und Wohnungsmangel ist ein echtes Problem, gleich welche Politik man wählt. Aber mehr Geld bedeutet nicht automatisch höhere Preise."
+          ],
+          [
+            "o",
+            "Unsere Einschätzung: In der gegenwärtigen Lage ist ein Grundeinkommen nicht das einzige Instrument und wohl nicht das erste, zu dem Regierungen greifen werden. Es ist dasjenige, das die Menschen erfasst, die die anderen Instrumente verfehlen."
+          ],
+          [
+            "h",
+            "Was tatsächlich erprobt wird"
+          ],
+          [
+            "p",
+            "Kleine Schritte gibt es bereits. {The AI Dividend|/timeline/#tl-ai-dividend}, betrieben von gemeinnützigen US-Organisationen, begann im März 2026, einer Gruppe von 25 bis 50 Beschäftigten, die durch KI Arbeit verloren haben, ein Jahr lang bedingungslos 1.000 Dollar im Monat zu zahlen. Es ist eher eine Demonstration als eine Studie: Es gibt keine Kontrollgruppe."
+          ],
+          [
+            "p",
+            "KI-Unternehmen haben begonnen, eigene Vorschläge zu veröffentlichen. Anthropics wirtschaftspolitischer Rahmen vom Juni 2026 ordnet Antworten nach der Höhe der Arbeitslosigkeit: bei etwa 5 % Weiterbildungszuschüsse, Lohnversicherung und Anreize, Beschäftigte zu halten und umzusetzen; bei etwa 10 % vorrangig eine ausgebaute Arbeitslosenversicherung; und bei „beispiellosen“ Werten einen dauerhaften Einkommensersatz, der „Grundeinkommen, Staatsfondsmodelle und Mechanismen der Kapitalbeteiligung umfassen könnte“. Anthropic sagte außerdem 200 Millionen Dollar für Forschung und politische Pilotprojekte zu.[22] {Sein Public Benefit Fund|/essays/public-benefit-fund/}, über den wir gesondert geschrieben haben, ist eine weitere Zusage. OpenAIs Papier „Industriepolitik für das Zeitalter der Intelligenz“ vom April 2026 schlägt einen Public Wealth Fund vor, der allen Amerikanern einen Anteil an KI-Unternehmen und -Infrastruktur geben und die Erträge direkt auszahlen würde, dazu soziale Sicherungsnetze, die automatisch greifen, wenn Daten zur Verdrängung eine Schwelle überschreiten. Ein Grundeinkommen nennt es nicht.[23]"
+          ],
+          [
+            "p",
+            "Auch Gesetzgeber werden aktiv. H.R. 10044, im September 2026 von Sara Jacobs, Greg Casar und Valerie Foushee im US-Repräsentantenhaus eingebracht, würde eine Verbrauchsteuer auf KI-Tokens oder -Umsätze erheben, die mit der Arbeitslosigkeit automatisch steigt. Das Geld ginge in die Schaffung von Arbeitsplätzen, etwa in Wohnungsbau, Infrastruktur und Pflege, nicht in Geldzahlungen.[24] In Südkorea sagte Präsident Lee Jae-myung im Juni 2026 in einem Interview mit The Economist, es brauche „einen neuen Mechanismus wie ein Grundeinkommen“, um einen Teil der Übergewinne aus KI mit gewöhnlichen Menschen zu teilen. Sein Chef für Politik brachte eine „nationale KI-Dividende“ ins Spiel, gezahlt aus den Steuermehreinnahmen von Chipherstellern, und die Regierung deutete das anschließend als Verwendung von Steuermehreinnahmen allgemein um. Die Zeitung Hankook Ilbo warnte davor, zu schnell vorzugehen, und nannte die Finanzierung den Knackpunkt.[25]"
+          ],
+          [
+            "p",
+            "Was würde ein Boden kosten? Mit {dem Grundeinkommensrechner|/calc/?c=jp&w=all&m=30000} ergeben 30.000 Yen im Monat für alle Menschen in Japan brutto rund 44,2 Billionen Yen im Jahr, etwa 6,7 % des BIP. Die Nettokosten, nach Abzug dessen, was als Steuer zurückfließt, sind viel geringer, wie unser {Essay über erstattungsfähige Steuergutschriften|/essays/refundable-tax-credit-vs-basic-income/} an einem Rechenbeispiel zeigt."
+          ],
+          [
+            "o",
+            "Nichts davon ist schon ein Grundeinkommen für das KI-Zeitalter. Aber die Frage hat sich verschoben, von „Nimmt uns KI die Arbeit weg?“ zu „Wer bezahlt den Übergang, und wie kommt das Geld bei den Menschen an?“"
+          ],
+          [
+            "h",
+            "Weder „KI nimmt alle Arbeitsplätze“ noch „Es passiert nichts“"
+          ],
+          [
+            "o",
+            "Das zeigen die Daten mit Stand November 2026. In der Gesamtbeschäftigung und der Arbeitslosigkeit ist KI noch nicht zu sehen, weder in den USA noch in Dänemark oder Japan. Angekündigte „KI-Entlassungen“ sind echte Entscheidungen echter Unternehmen, aber sie machen einen kleinen und zum Teil selbst so dargestellten Anteil aller Streichungen aus. Zugleich wird der Einstieg für junge Menschen in exponierten Bereichen enger, Freiberufler haben Arbeit verloren, und Japan verliert womöglich die untersten Sprossen, auf denen Menschen ihr Handwerk lernen."
+          ],
+          [
+            "o",
+            "Es ist ein Umbruch, der zuerst die Menschen mit dem geringsten Schutz trifft: Menschen ohne Erwerbsbiografie, ohne Arbeitgeber und ohne Anspruch auf Arbeitslosenversicherung. Genau dort zählt die einfachste Eigenschaft eines Grundeinkommens am meisten: Es erreicht alle, ohne zu fragen, ob man gearbeitet hat. Es ist nicht die einzige Antwort, und seine Kritiker haben recht, dass es viel kostet und dass das Angebot eine Rolle spielt. Aber ein Boden, der bereitsteht, bevor er gebraucht wird, ist leichter zu bauen als einer, der in der Krise improvisiert wird."
+          ],
+          [
+            "o",
+            "In Teil 2 wenden wir uns der kreativen Arbeit zu: Illustratoren, Übersetzer, Autoren und Synchronsprecher, wo die Veränderung am schnellsten gekommen ist."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في 5 نوفمبر 2026 نشرت شركة ⁦Challenger, Gray & Christmas⁩ الأمريكية المتخصصة في خدمات إعادة التوظيف إحصاءها الشهري لحالات التسريح المعلنة. من يناير إلى أكتوبر 2026، ذكر أصحاب العمل الذكاء الاصطناعي سببًا لـ121,401 حالة تسريح، أي نحو 20% من المجموع البالغ 617,189 حالة. ومنذ أن بدأت الشركة رصد هذا السبب عام 2023، بلغ العدد 193,226 حالة.[1]"
+          ],
+          [
+            "p",
+            "أرقام كهذه تغذّي قصة مألوفة: الذكاء الاصطناعي التوليدي يأخذ الوظائف، وبسرعة. هذا الموقع يؤيد الدخل الأساسي، والذكاء الاصطناعي من أكثر الأسباب التي يذكرها الناس لتأييده. ولهذا بالذات أردنا أن نعرف ما الذي قيس فعلًا قبل أن نسأل ماذا يمكن أن يفعل الدخل الأساسي. هذا هو الجزء الأول من جزأين، ويتناول الوظائف عمومًا؛ أما الجزء الثاني فسيتناول العمل الإبداعي."
+          ],
+          [
+            "h",
+            "ما الذي يعنيه رقم 121,401 وما الذي لا يعنيه"
+          ],
+          [
+            "p",
+            "تحصي ⁦Challenger⁩ الأسباب التي يذكرها أصحاب العمل عند إعلان التسريح، ولا تقيس عدد الوظائف التي ألغاها الذكاء الاصطناعي فعلًا. في أكتوبر 2026 لم يُذكر الذكاء الاصطناعي إلا في 1,265 حالة تسريح، وهو أدنى شهر في العام، وتجاوز سبب «ظروف السوق/الظروف الاقتصادية» (130,531) الذكاءَ الاصطناعي ليصبح السبب الأول في العام حتى الآن.[1]"
+          ],
+          [
+            "p",
+            "يشتبه بعض الاقتصاديين في أن جزءًا من رقم الذكاء الاصطناعي مجرد تجميل. ففي إحاطة صدرت في يناير 2026، أشارت ⁦Oxford Economics⁩ إلى أن الذكاء الاصطناعي ذُكر سببًا لنحو 55,000 حالة تسريح في الولايات المتحدة خلال الأشهر الأحد عشر الأولى من 2025، أي 4.5% فقط من المجموع، وكتبت: «نشتبه في أن بعض الشركات تحاول تقديم التسريح على أنه خبر سار بدلًا من خبر سيئ، مثل الإفراط في التوظيف في الماضي».[2] فأن تقول للمستثمرين إن الفريق الأصغر ثمرة للذكاء الاصطناعي يبدو أفضل من الاعتراف بأنك وظّفت أكثر من اللازم."
+          ],
+          [
+            "o",
+            "السبب المعلن تصريح، لا قياس. ولكي نرى ما فعله الذكاء الاصطناعي بالوظائف، علينا أن ننظر إلى بيانات سوق العمل."
+          ],
+          [
+            "h",
+            "الصورة الكبيرة: لا أثر واضح بعد"
+          ],
+          [
+            "p",
+            "يتابع مختبر الميزانية في جامعة ييل (⁦The Budget Lab at Yale⁩) سوق العمل الأمريكية بحثًا عن علامات على أثر الذكاء الاصطناعي. ويقول تحديثه الصادر في سبتمبر 2026، المستند إلى بيانات حتى أغسطس، إن التحليل «لا يشير بعدُ بوضوح إلى أثر للذكاء الاصطناعي في سوق العمل»، وإن «مقاييس استخدام الذكاء الاصطناعي لا تُظهر أي صلة بالتغيرات في التوظيف أو البطالة».[3]"
+          ],
+          [
+            "p",
+            "وتقدّم الدنمارك اختبارًا أدق. فقد ربط أندرس هوملوم وإميلي فيسترغارد مسوحًا عن استخدام الذكاء الاصطناعي في 11 مهنة معرّضة له بالسجلات الإدارية في البلاد. وفي النسخة المنقحة من ورقتهما (مارس 2026)، يستبعدان وجود آثار على الدخل أو على ساعات العمل المسجلة تزيد على 2% بعد عامين من إطلاق ⁦ChatGPT⁩.[4]"
+          ],
+          [
+            "p",
+            "وقالها مايكل بار، عضو مجلس محافظي الاحتياطي الفيدرالي، بوضوح في فبراير 2026: «لم يُحدث الذكاء الاصطناعي بعدُ أثرًا كبيرًا في التوظيف الإجمالي أو البطالة».[5] وأجرى اقتصاديون في الاحتياطي الفيدرالي في دالاس الحساب: انخفضت نسبة من تتراوح أعمارهم بين 20 و24 عامًا ويعملون في أكثر المهن تعرضًا للذكاء الاصطناعي من 16.4% في نوفمبر 2022 إلى 15.5% في سبتمبر 2025. وحتى لو تحوّل ذلك كله إلى بطالة، لما أضاف إلى المعدل الوطني إلا نحو 0.1 نقطة.[6]"
+          ],
+          [
+            "o",
+            "على مستوى سوق العمل ككل، لا تظهر عبارة «الذكاء الاصطناعي يأخذ الوظائف» في البيانات بعد."
+          ],
+          [
+            "h",
+            "لكن باب الدخول يضيق"
+          ],
+          [
+            "p",
+            "ليست هذه نهاية القصة. انظر إلى من لا يُوظَّف، بدلًا من النظر إلى من يُسرَّح، فتظهر إشارة متسقة."
+          ],
+          [
+            "p",
+            "يستخدم إريك برينيولفسون وبهارات تشاندار وروي تشين في جامعة ستانفورد سجلات الرواتب من ⁦ADP⁩، أكبر جهة لمعالجة الرواتب في الولايات المتحدة. في ورقتهم المنقحة الصادرة في أغسطس 2026، ببيانات حتى يونيو 2026، يقل توظيف العاملين الذين تتراوح أعمارهم بين 22 و25 عامًا في أكثر المهن تعرضًا للذكاء الاصطناعي، مثل تطوير البرمجيات وخدمة العملاء، بنحو 19% عما كان سيكون عليه لو ساير توظيف من هم في السن نفسها في وظائف أقل تعرضًا. وقدّرت النسخ السابقة من الورقة الفجوة بـ13% ثم 15%؛ واتسعت مع ورود مزيد من البيانات. أما العاملون ذوو الخبرة في المهن نفسها فلا تظهر لديهم فجوة مماثلة. ويشدد الباحثون على أن هذه «أنماط وصفية، لا تقديرات سببية».[7]"
+          ],
+          [
+            "p",
+            "وتشير دراسات أخرى، ببيانات أخرى، إلى الاتجاه نفسه. فقد وجدت دراسة لكلية كينغز في لندن عن الشركات البريطانية أن الشركات شديدة التعرض خفّضت إجمالي التوظيف بنسبة 4.5% في المتوسط، مع انخفاض الوظائف المبتدئة بنسبة 5.8%، وهو ما يكاد يشكّل الانخفاض كله؛ وكانت أيضًا أقل احتمالًا لنشر وظائف شاغرة جديدة بمقدار 16.3 نقطة مئوية.[8] ووجدت ورقتا عمل لمكتب الإحصاء الأمريكي أن توظيف من هم في بداية مسارهم المهني في الخُمس الأكثر تعرضًا للذكاء الاصطناعي من القطاعات انخفض بنسبة 12% خلال الفصول العشرة التي تلت ⁦ChatGPT⁩. وأصبح خريجو العُشر الأكثر تعرضًا من التخصصات الجامعية أقل احتمالًا بمقدار 5 نقاط مئوية لأن يكون لديهم عمل بعد ربع سنة من التخرج، وانخفضت رواتبهم الأولى بنسبة 13%، وهو تقريبًا ما يتوقعه الاقتصاديون عند التخرج في خضم ركود حاد.[9] أما ⁦Anthropic⁩، الشركة التي تقف وراء نموذج الذكاء الاصطناعي ⁦Claude⁩، فلم تجد ارتفاعًا منهجيًا في البطالة بين العاملين شديدي التعرض، لكنها وجدت أن معدل حصول من تتراوح أعمارهم بين 22 و25 عامًا على عمل عند دخولهم أكثر الوظائف تعرضًا يقل بنحو 14% عن مستوى 2022، وهي نتيجة تصفها بأنها بالكاد ذات دلالة إحصائية.[10]"
+          ],
+          [
+            "p",
+            "ما تشترك فيه هذه الدراسات هو الآلية. فالانخفاض يأتي أساسًا من توظيف عدد أقل من الشباب، لا من تسريح عدد أكبر من الناس.[6][7][9] تحتفظ الشركات بموظفيها الحاليين، وتتوقف بهدوء عن ملء الدرجة الأولى من السلّم. وتجد أوراق مكتب الإحصاء أيضًا أن التوظيف تعافى إلى حد كبير بحلول مطلع 2025، لكن من قاعدة أصغر: فقد انفتح الباب من جديد جزئيًا فقط.[9]"
+          ],
+          [
+            "o",
+            "أول أثر مرئي للذكاء الاصطناعي ليس التسريح الجماعي، بل مدخل أضيق. ومن السهل أن يفوتنا ذلك، لأن الوظيفة التي لم تُعرض قط لا تظهر أبدًا على أنها وظيفة فُقدت."
+          ],
+          [
+            "h",
+            "العاملون المستقلون شعروا به أولًا"
+          ],
+          [
+            "p",
+            "المكان الآخر الذي يظهر فيه الأثر بوضوح هو الأسواق التي يُشترى فيها العمل مهمةً بمهمة. درس شيانغ هوي وأورين ريشيف ولوفنغ تشو منصة العمل المستقل ⁦Upwork⁩. بعد إطلاق ⁦ChatGPT⁩، انخفضت الوظائف الشهرية للمستقلين العاملين في الكتابة بنسبة 2% وانخفض دخلهم الشهري بنسبة 5.2%. وبعد مولّدَي الصور ⁦DALL-E 2⁩ و⁦Midjourney⁩، خسر المستقلون العاملون في الصور 3.7% من وظائفهم و9.4% من دخلهم.[11]"
+          ],
+          [
+            "p",
+            "ليس للعاملين المستقلين صاحب عمل يحتفظ بهم، ولا فترة إشعار، وفي كثير من البلدان لا يحصلون على تأمين ضد البطالة أو يحصلون على القليل منه. وحين يتحول العميل إلى أداة، ينقطع الدخل ببساطة. وسيتناول الجزء الثاني العمل الإبداعي عن كثب."
+          ],
+          [
+            "p",
+            "أهم الدراسات جنبًا إلى جنب:"
+          ],
+          [
+            "t",
+            "الدراسة | البيانات | النتيجة\nمختبر الميزانية في ييل | مسح القوى العاملة الأمريكي، حتى أغسطس 2026 | لا أثر واضحًا للذكاء الاصطناعي في التوظيف أو البطالة[3]\nهوملوم وفيسترغارد | السجلات الإدارية الدنماركية | استبعاد آثار تزيد على 2% على الدخل وساعات العمل[4]\nبرينيولفسون وتشاندار وتشين (ستانفورد) | رواتب ⁦ADP⁩، حتى يونيو 2026 | الفئة العمرية 22–25 في أكثر الوظائف تعرضًا: نحو 19% دون الاتجاه (رقم منقح)[7]\nكلية كينغز في لندن | إعلانات الوظائف والملفات المهنية في المملكة المتحدة | الشركات المعرّضة: الوظائف المبتدئة ⁦−5.8%⁩[8]\nمكتب الإحصاء الأمريكي | السجلات الإدارية الأمريكية | وظائف بداية المسار في أكثر القطاعات تعرضًا ⁦−12%⁩؛ الراتب الأول لأكثر التخصصات تعرضًا ⁦−13%⁩[9]\n⁦Anthropic⁩ | مسح القوى العاملة الأمريكي | لا ارتفاع منهجيًا في البطالة؛ معدل حصول الشباب على عمل نحو ⁦−14%⁩[10]\nهوي وريشيف وتشو | ⁦Upwork⁩ | الكتابة: الوظائف ⁦−2%⁩، الدخل ⁦−5.2%⁩؛ الصور: ⁦−3.7%⁩، ⁦−9.4%⁩[11]"
+          ],
+          [
+            "h",
+            "حين تقول الشركات إن الذكاء الاصطناعي هو السبب"
+          ],
+          [
+            "p",
+            "قالت بعض الشركات صراحةً إن الذكاء الاصطناعي هو سبب حاجتها إلى عدد أقل من الناس. ففي فبراير 2026 سرّحت ⁦Block⁩، شركة المدفوعات التي يقودها جاك دورسي، أكثر من 4,000 من موظفيها البالغ عددهم أكثر من 10,000. وجاء في رسالتها إلى المساهمين: «لقد غيّرت أدوات الذكاء ما يعنيه بناء شركة وإدارتها»، و«فريق أصغر بكثير، يستخدم الأدوات التي نبنيها، يستطيع أن يفعل أكثر وأن يفعله أفضل». وارتفع إجمالي ربح ⁦Block⁩ في الربع الرابع بنسبة 24% عن العام السابق: كانت هذه شركة تُسرّح وهي في حال جيدة، لا شركة في أزمة.[12] وفي سبتمبر 2025 قال مارك بينيوف، الرئيس التنفيذي لـ⁦Salesforce⁩، إنه خفّض موظفي الدعم «من 9,000 شخص إلى نحو 5,000، لأنني أحتاج إلى عدد أقل من الأشخاص»، إذ باتت وكلاء الذكاء الاصطناعي تتولى نصف المحادثات مع العملاء.[13]"
+          ],
+          [
+            "p",
+            "وتُظهر مسوح الشركات مدى ندرة هذه الحالات حتى الآن. ففي مسوح الأعمال الإقليمية لعام 2026 التي يجريها الاحتياطي الفيدرالي في نيويورك، استخدمت 61% من شركات الخدمات الذكاء الاصطناعي خلال الأشهر الستة السابقة، لكن 4% فقط أبلغت عن تسريح بسبب الذكاء الاصطناعي. وقال نحو 15% إنها وظّفت عددًا أقل بسبب الذكاء الاصطناعي، وقال نحو 13% إنها وظّفت عددًا أكبر.[14]"
+          ],
+          [
+            "o",
+            "الشركات التي تعلن «تسريحًا بسبب الذكاء الاصطناعي» تتصدر العناوين. أما الاستجابة الأكثر شيوعًا بكثير فأهدأ: توظيف أقل قليلًا."
+          ],
+          [
+            "h",
+            "اليابان: تسريح أقل، وخطر من نوع آخر"
+          ],
+          [
+            "p",
+            "اليابان في موضع مختلف. ففي المقارنة الدولية التي أجرتها وزارة الشؤون الداخلية والاتصالات للسنة المالية 2024، كان 26.7% من الأفراد في اليابان قد استخدموا الذكاء الاصطناعي التوليدي، مقابل 68.8% في الولايات المتحدة و59.2% في ألمانيا و81.2% في الصين. ويقدّر أحد تقديرات عام 2025 نسبة الشركات اليابانية التي اعتمدت الذكاء الاصطناعي التوليدي اعتمادًا كاملًا في عملياتها الأساسية بـ1.9% فقط، مقابل 6.1% في الولايات المتحدة، وهي الأدنى في مجموعة السبع.[15]"
+          ],
+          [
+            "p",
+            "موقف الحكومة، في الوقت الحالي، أنه لا يوجد أثر كبير. ففي مجلس المستشارين في 8 يوليو 2026، استشهد تاكاهيرو أنّو من حزب «فريق ميراي» (⁦Team Mirai⁩) بدراسة ستانفورد وطالب بمتابعة منتظمة. وردّت وزارة الصحة والعمل والرعاية الاجتماعية بأنه، بالنظر إلى بطالة الشباب ومعدلات حصول الخريجين على عمل والتوظيف في تكنولوجيا المعلومات، لم يظهر حتى الآن أي أثر كبير، بما في ذلك على الشباب.[17] ووجد مسح لمركز الإنتاجية الياباني نُشر في سبتمبر 2026 أن أكثر من 90% من الشركات تقول إن الذكاء الاصطناعي لم يغيّر عدد موظفيها بعد، وإن كان أكثر من نصفها يتوقع عددًا أقل من الموظفين خلال 5 إلى 10 سنوات.[18]"
+          ],
+          [
+            "p",
+            "أما النظرة الأبعد فأقل هدوءًا. ففي مجلس النواب في 15 أبريل 2026، استشهد ميتشيو كاواي من الحزب نفسه بتقدير وزارة الاقتصاد والتجارة والصناعة الصادر في مارس 2026 لهيكل الوظائف في اليابان عام 2040، الذي يُظهر فائضًا في العاملين المكتبيين ونقصًا بمقدار 3.39 مليون شخص قادرين على العمل مع الذكاء الاصطناعي والروبوتات.[16]"
+          ],
+          [
+            "p",
+            "يرى ناويوكي فوكودا من معهد اليابان للبحوث أن اليابان لن تشهد على الأرجح ارتفاعًا في بطالة الشباب على النمط الأمريكي: فنقص العمالة والتوظيف طويل الأمد والتوظيف الجماعي للخريجين الجدد كل ربيع تعمل كلها كوسادة. لكن الخطر مختلف. فقد درّبت الشركات اليابانية موظفيها الجدد بإعطائهم مهام بسيطة أولًا وتركهم يتعلمون أثناء العمل. وإذا تولى الذكاء الاصطناعي التوليدي نقطة البداية هذه، فقد «يحصل» جيل «على وظيفة، لكنه لا يتعلم العمل أبدًا»، ولن تظهر المشكلة إلا بعد 5 إلى 10 سنوات، حين يُفترض أن يبدأ ذلك الجيل في تولي الإدارة.[15]"
+          ],
+          [
+            "o",
+            "في الولايات المتحدة، يضيق المدخل. وفي اليابان، قد يبقى المدخل مفتوحًا بينما تختفي الدرجات الأولى من السلّم."
+          ],
+          [
+            "h",
+            "ما الذي يمكن أن يفعله الدخل الأساسي في اضطراب من هذا النوع"
+          ],
+          [
+            "p",
+            "لو كان الذكاء الاصطناعي يمحو الوظائف في كل المجالات، لكان السؤال كيف نعوّض دخول الملايين. لكن البيانات حتى الآن تُظهر شيئًا أضيق: وظائف أولى أقل للشباب في المجالات المعرّضة، وعاملين مستقلين يخسرون العمل مهمةً بعد مهمة، وفي اليابان، احتمال ضياع التعلم أثناء العمل. والدخل الأساسي يناسب هذا الشكل تحديدًا من ثلاث نواحٍ."
+          ],
+          [
+            "p",
+            "أولًا، أرضية لمن ليس لديهم تاريخ عمل. فالتأمين ضد البطالة، في اليابان كما في غيرها، لا يدفع إلا لمن عملوا ودفعوا الاشتراكات. والخريج الذي لم يحصل قط على وظيفته الأولى، أو المستقل الذي ابتعد عنه عملاؤه، كثيرًا ما لا يحصل على شيء. والأمر نفسه ينطبق على {دفعة اليابان الجديدة للعاملين|/essays/refundable-tax-credit-vs-basic-income/}، التي تشترط وجود دخل من العمل في العام السابق. أما الدخل الأساسي فيصل إلى الناس سواء عملوا من قبل أم لا."
+          ],
+          [
+            "p",
+            "ثانيًا، الوقت. فإيجاد الوظيفة التالية أو إعادة التدريب أو بدء شيء جديد يستغرق شهورًا. والدخل الصغير الثابت الذي لا يتوقف حين تعود إلى الدراسة أو تقبل وظيفة محفوفة بالمخاطر يجعل تلك الشهور ممكنة."
+          ],
+          [
+            "p",
+            "ثالثًا، القدرة على التفاوض. فمن لديه أرضية يستطيع أن يرفض عرضًا سيئًا، أو عقدًا بجزء بسيط من الأجر السابق، بسهولة أكبر قليلًا. وحين يُشترى العمل مهمةً بمهمة، فإن لذلك أهمية."
+          ],
+          [
+            "p",
+            "تقدّم تجارب الدفع النقدي بعض الأدلة على ما إذا كان الناس يستخدمون المال بهذه الطريقة. ففي {دراسة ⁦OpenResearch⁩ التي يقف وراءها سام ألتمان|/essays/openresearch-cash-study/}، أدى دفع ⁦$1,000⁩ شهريًا لمدة ثلاث سنوات إلى أن يعمل المستفيدون أقل من المجموعة الضابطة بنحو 1.3 ساعة أسبوعيًا، بينما ارتفع التوظيف في المجموعتين. وفي {تجربة فنلندا في 2017–2018|/essays/finland-basic-income-experiment/}، تلقى 2,000 شخص عاطل عن العمل ⁦€560⁩ شهريًا؛ وكانت الآثار على التوظيف صغيرة، وتحسّن الرفاه والثقة. وفي {ستوكتون بولاية كاليفورنيا|/timeline/#tl-stockton}، ارتفعت نسبة المستفيدين العاملين بدوام كامل من 28% إلى 40% في عام واحد، أي أكثر من ضعف الزيادة في المجموعة الضابطة. لم تكن أي من هذه التجارب عن الذكاء الاصطناعي. لكنها توحي بأن الأرضية المتواضعة لا تجعل معظم الناس يتوقفون عن العمل، وبأنها تمنحهم بعض المجال للاختيار."
+          ],
+          [
+            "o",
+            "لن يعيد الدخل الأساسي الوظائف. لكنه سيغيّر معنى أن تفقد وظيفة، أو ألا تحصل على واحدة أبدًا."
+          ],
+          [
+            "h",
+            "أقوى حجة مضادة"
+          ],
+          [
+            "p",
+            "يأتي أدق نقد من موجز بحثي نشرته منظمة العمل الدولية في مايو 2026 بعنوان «لماذا ليس الدخل الأساسي الشامل هو الحل لأثر الذكاء الاصطناعي في سوق العمل»، من تأليف طوبى أوزاي وإيكهارد إرنست. وهو ورقة لمؤلفين مسمّين، لا موقف رسمي للمنظمة. يرى الموجز أن «الذكاء الاصطناعي يحوّل المهام، لا المهن»، ولذلك فالبطالة الجماعية غير مرجحة، وأن الدفعة الشاملة ستدفع الطلب نحو قطاعات ينمو فيها العرض ببطء، مثل الإسكان والصحة والرعاية: «توزيع المال أسرع مما يستطيع العرض المقيَّد التكيف معه يُنتج تضخمًا، لا وفرة». لكنه يقرّ بأن «الوظائف المعرفية تشهد تآكل علاوة مهاراتها، خاصةً لدى الداخلين الجدد الأصغر سنًا إلى سوق العمل». ويوصي بإعادة التدريب، وسياسات سوق العمل النشطة، والمزايا القابلة للنقل، والمزيد من الإسكان، وفرض الضرائب على ريع الذكاء الاصطناعي، وحماية اجتماعية تحافظ على حوافز العمل، «على سبيل المثال من خلال ائتمان ضريبي على الدخل المكتسب».[19]"
+          ],
+          [
+            "p",
+            "ويقترح روبرت ليتان من معهد بروكينغز بدلًا من ذلك «تأمينًا انتقاليًا». فكل من فقد عمله بغير إرادته، دون حاجة إلى إثبات أن الذكاء الاصطناعي هو السبب، وأمضى ثلاث سنوات على الأقل في الوظيفة، يحصل على 80% ثم 60% ثم 40% من الدخل الذي خسره خلال السنوات الثلاث الأولى بعد إيجاد عمل جديد. ومع إضافة حسابات تدريب مدى الحياة وائتمان ضريبي لتوظيف الخريجين الجدد، يقدّر التكلفة الإجمالية بنحو 60 مليار دولار سنويًا، مقابل نحو 784 مليار دولار صافيًا لدخل أساسي عند مستوى خط الفقر، وهو ما يرفضه لأنه مكلف جدًا.[21]"
+          ],
+          [
+            "p",
+            "هذه الانتقادات تستحق أن تُسمع بإنصاف. فالأدلة المذكورة أعلاه تدعم نقطتها الأولى: حتى الآن، أعاد الذكاء الاصطناعي تشكيل المهام والتوظيف أكثر بكثير مما دمّر الوظائف. وخطة ليتان أرخص، وستساعد العامل المكتبي في منتصف مساره المهني الذي ينخفض أجره بعد التسريح."
+          ],
+          [
+            "p",
+            "لكن كلتيهما تستثني الأشخاص أنفسهم. فتأمين الأجور لا يدفع إلا لمن كان لديه عمل ووجد عملًا آخر. والائتمان الضريبي على الدخل المكتسب لا يدفع إلا لمن يعمل بالفعل. والخريج الذي لم يحصل قط على وظيفته الأولى، والمستقل الذي لم يُحتسب عمله قط وظيفةً، يسقطان من كلتيهما، وهما بالضبط من تُظهر البيانات أنهم يتضررون أولًا. أما بشأن التضخم، فالأدلة من التحويلات النقدية أكثر تباينًا مما يوحي به الموجز. فحين قدّمت ⁦GiveDirectly⁩ نحو ⁦$1,000⁩ لكل أسرة من أكثر من 10,500 أسرة فقيرة في ريف كينيا، وهي صدمة تعادل أكثر من 15% من الناتج المحلي للمنطقة، وجد الباحثون مكاسب كبيرة للأسر والشركات المجاورة و«تضخمًا ضئيلًا في الأسعار».[20] لا يحسم تحويل لمرة واحدة في ريف كينيا ما سيحدث للإيجارات في طوكيو، ونقص المساكن مشكلة حقيقية أيًا كانت السياسة. لكن المزيد من المال لا يعني تلقائيًا أسعارًا أعلى."
+          ],
+          [
+            "o",
+            "قراءتنا: في الوضع الحالي، ليس الدخل الأساسي الأداة الوحيدة، وربما ليس أول أداة ستلجأ إليها الحكومات. لكنه الأداة التي تغطي من تفوتهم الأدوات الأخرى."
+          ],
+          [
+            "h",
+            "ما الذي يُجرَّب فعلًا"
+          ],
+          [
+            "p",
+            "خطوات صغيرة تحدث بالفعل. فقد بدأ {مشروع ⁦AI Dividend⁩|/timeline/#tl-ai-dividend}، الذي تديره منظمات أمريكية غير ربحية، في مارس 2026 بدفع ⁦$1,000⁩ شهريًا لمدة عام، دون شروط، لمجموعة من 25 إلى 50 عاملًا فقدوا عملهم بسبب الذكاء الاصطناعي. وهو عرض توضيحي لا دراسة: فلا توجد مجموعة ضابطة."
+          ],
+          [
+            "p",
+            "وبدأت شركات الذكاء الاصطناعي في نشر مقترحاتها الخاصة. فإطار السياسة الاقتصادية الذي نشرته ⁦Anthropic⁩ في يونيو 2026 يحدد الاستجابات بحسب مستوى البطالة: عند نحو 5%، منح التدريب وتأمين الأجور وحوافز الاحتفاظ بالعاملين وإعادة توزيعهم؛ وعند نحو 10%، توسيع التأمين ضد البطالة كأولوية؛ وعند مستويات «غير مسبوقة»، تعويض مستدام للدخل «قد يشمل الدخل الأساسي، ونماذج الثروة السيادية، وآليات تقاسم الملكية». كما تعهدت ⁦Anthropic⁩ بتقديم 200 مليون دولار للبحث وتجارب السياسات.[22] و{صندوق المنفعة العامة التابع لها|/essays/public-benefit-fund/}، الذي كتبنا عنه في مقال منفصل، التزام آخر. أما ورقة ⁦OpenAI⁩ الصادرة في أبريل 2026 بعنوان «السياسة الصناعية لعصر الذكاء»، فتقترح صندوقًا للثروة العامة يمنح كل أمريكي حصة في شركات الذكاء الاصطناعي وبنيته التحتية ويدفع العوائد مباشرةً، إلى جانب شبكات أمان تُفعَّل تلقائيًا حين تتجاوز بيانات فقدان الوظائف عتبة معينة. ولا تذكر الدخل الأساسي بالاسم.[23]"
+          ],
+          [
+            "p",
+            "والمشرّعون يتحركون أيضًا. فمشروع القانون ⁦H.R. 10044⁩، الذي قدّمته في مجلس النواب الأمريكي في سبتمبر 2026 سارة جاكوبس وغريغ كاسار وفاليري فوشي، سيفرض ضريبة استهلاك على رموز الذكاء الاصطناعي أو إيراداته ترتفع تلقائيًا مع البطالة. وسيذهب المال إلى خلق الوظائف، كالإسكان والبنية التحتية والرعاية، لا إلى الدفعات النقدية.[24] وفي كوريا الجنوبية، قال الرئيس لي جاي ميونغ في مقابلة مع مجلة ⁦The Economist⁩ في يونيو 2026 إن هناك حاجة إلى «آلية جديدة مثل الدخل الأساسي» لتقاسم جزء من الأرباح الفائضة للذكاء الاصطناعي مع عامة الناس. وطرح رئيس فريق السياسات لديه فكرة «عائد وطني من الذكاء الاصطناعي» يُدفع من الإيرادات الضريبية الاستثنائية لشركات الرقائق، ثم أعادت الحكومة صياغتها على أنها استخدام لفائض الإيرادات الضريبية عمومًا. وحذّرت صحيفة ⁦Hankook Ilbo⁩ من التسرع، واعتبرت التمويل جوهر المسألة.[25]"
+          ],
+          [
+            "p",
+            "كم ستكلف الأرضية؟ باستخدام {حاسبة الدخل الأساسي|/calc/?c=jp&w=all&m=30000}، يبلغ دفع 30,000 ين شهريًا لكل شخص في اليابان نحو 44.2 تريليون ين سنويًا إجمالًا، أي نحو 6.7% من الناتج المحلي الإجمالي. أما التكلفة الصافية، بعد ما يعود في صورة ضرائب، فأصغر بكثير، كما يُظهر {مقالنا عن الائتمانات الضريبية القابلة للاسترداد|/essays/refundable-tax-credit-vs-basic-income/} بمثال محسوب."
+          ],
+          [
+            "o",
+            "لا شيء من هذا يُعد بعدُ دخلًا أساسيًا لعصر الذكاء الاصطناعي. لكن السؤال تغيّر، من «هل سيأخذ الذكاء الاصطناعي وظائفنا؟» إلى «من يدفع تكلفة المرحلة الانتقالية، وكيف يصل المال إلى الناس؟»"
+          ],
+          [
+            "h",
+            "لا «الذكاء الاصطناعي يأخذ كل الوظائف» ولا «لا شيء يحدث»"
+          ],
+          [
+            "o",
+            "هذا ما تُظهره البيانات حتى نوفمبر 2026. لا يظهر الذكاء الاصطناعي بعدُ في التوظيف العام أو البطالة، سواء في الولايات المتحدة أو الدنمارك أو اليابان. و«التسريح بسبب الذكاء الاصطناعي» المعلن قرارات حقيقية لشركات حقيقية، لكنها حصة صغيرة من مجمل حالات التسريح، وجزء منها تقديم ذاتي. وفي الوقت نفسه، يضيق باب الدخول أمام الشباب في المجالات المعرّضة، وخسر العاملون المستقلون عملًا، وقد تفقد اليابان الدرجات الأولى التي يتعلم عليها الناس مهنتهم."
+          ],
+          [
+            "o",
+            "هذا اضطراب يقع أولًا على من لديهم أقل حماية: من ليس لديهم تاريخ عمل، ولا صاحب عمل، ولا حق في التأمين ضد البطالة. وهنا تحديدًا تكتسب أبسط سمات الدخل الأساسي أكبر أهمية: أنه يصل إلى الجميع دون أن يسأل هل عملت. ليس هو الحل الوحيد، ومنتقدوه محقون في أنه يكلف كثيرًا وفي أن العرض مهم. لكن الأرضية التي تكون جاهزة قبل الحاجة إليها أسهل بناءً من أرضية تُرتجل في أزمة."
+          ],
+          [
+            "o",
+            "في الجزء الثاني، ننتقل إلى العمل الإبداعي: الرسامون والمترجمون والكتّاب وممثلو الأداء الصوتي، حيث جاء التغيير أسرع ما يكون."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Challenger, Gray & Christmas — October 2026 Job Cuts Report: October layoffs at three-year low (5 Nov 2026)",
+          "url": "https://www.challengergray.com/blog/october-layoffs-at-three-year-low-seasonal-hiring-plans-up-26/"
+        },
+        {
+          "n": 2,
+          "label": "Fortune — Oxford Economics on AI layoffs as a “convenient corporate fiction” (7 Jan 2026)",
+          "url": "https://fortune.com/2026/01/07/ai-layoffs-convenient-corporate-fiction-true-false-oxford-economics-productivity/"
+        },
+        {
+          "n": 3,
+          "label": "The Budget Lab at Yale — Tracking the impact of AI on the labor market (updated 15 Sep 2026)",
+          "url": "https://budgetlab.yale.edu/research/tracking-impact-ai-labor-market"
+        },
+        {
+          "n": 4,
+          "label": "Anders Humlum and Emilie Vestergaard — “Still Waters, Rapid Currents: Early Labor Market Transformation under Generative AI”, NBER Working Paper 33777 (revised Mar 2026)",
+          "url": "https://www.nber.org/papers/w33777"
+        },
+        {
+          "n": 5,
+          "label": "Federal Reserve Board — Speech by Governor Michael S. Barr on AI and the labor market (17 Feb 2026)",
+          "url": "https://www.federalreserve.gov/newsevents/speech/barr20260217a.htm"
+        },
+        {
+          "n": 6,
+          "label": "Federal Reserve Bank of Dallas — Young workers’ employment drops in occupations with high AI exposure (6 Jan 2026)",
+          "url": "https://www.dallasfed.org/research/economics/2026/0106"
+        },
+        {
+          "n": 7,
+          "label": "Stanford Digital Economy Lab — Erik Brynjolfsson, Bharat Chandar and Ruyu Chen, “Canaries in the Coal Mine?”, revised paper (Aug 2026)",
+          "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/"
+        },
+        {
+          "n": 8,
+          "label": "King’s College London — New study reveals early impact of AI on job market in UK (7 Oct 2025)",
+          "url": "https://www.kcl.ac.uk/news/new-study-reveals-early-impact-of-ai-on-job-market-in-uk"
+        },
+        {
+          "n": 9,
+          "label": "Fortune — US Census Bureau papers on AI exposure, early-career hiring and graduates’ earnings (17 Sep 2026)",
+          "url": "https://fortune.com/2026/09/17/ai-chatgpt-college-majors-retail-jobs/"
+        },
+        {
+          "n": 10,
+          "label": "Anthropic — Massenkoff and McCrory, “Labor market impacts of AI: A new measure and early evidence” (5 Mar 2026)",
+          "url": "https://www.anthropic.com/research/labor-market-impacts"
+        },
+        {
+          "n": 11,
+          "label": "Washington University in St. Louis, Olin Business School — Hui, Reshef and Zhou: AI tools cause a decline in freelance work and income, at least in the short run (24 Aug 2023)",
+          "url": "https://olin.washu.edu/about/news-and-media/news/2023/08/study-ai-tools-cause-a-decline-in-freelance-work-and-incomeat-least-in-the-short-run.php"
+        },
+        {
+          "n": 12,
+          "label": "Fortune — Jack Dorsey’s Block cuts about 40% of staff, citing intelligence tools (27 Feb 2026)",
+          "url": "https://fortune.com/2026/02/27/jack-dorsey-block-40-percent-layoff-ai-intelligence-tools-smaller-team/"
+        },
+        {
+          "n": 13,
+          "label": "Fortune — Marc Benioff says Salesforce cut support staff from 9,000 to about 5,000 as AI agents took over (2 Sep 2025)",
+          "url": "https://fortune.com/2025/09/02/salesforce-ceo-billionaire-marc-benioff-ai-agents-jobs-layoffs-customer-service-sales/"
+        },
+        {
+          "n": 14,
+          "label": "Federal Reserve Bank of New York, Liberty Street Economics — Businesses are using AI to transform work, not cut jobs (1 Sep 2026)",
+          "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/"
+        },
+        {
+          "n": 15,
+          "label": "Japan Research Institute — Naoyuki Fukuda, Generative AI and employment in Japan: how to secure skill formation for young workers, JRI Review 2026 Vol.4 No.131 (Apr 2026; PDF, in Japanese)",
+          "url": "https://www.jri.co.jp/file/report/jrireview/pdf/16641.pdf"
+        },
+        {
+          "n": 16,
+          "label": "National Diet Library, Diet minutes — House of Representatives Committee on Economy, Trade and Industry, question by Michio Kawai on AI unemployment (15 Apr 2026, in Japanese)",
+          "url": "https://kokkai.ndl.go.jp/txt/122104080X00320260415/47"
+        },
+        {
+          "n": 17,
+          "label": "National Diet Library, Diet minutes — House of Councillors Special Committee on Digital Society and AI, answer by the Ministry of Health, Labour and Welfare (8 Jul 2026, in Japanese)",
+          "url": "https://kokkai.ndl.go.jp/txt/122115385X00820260708/132"
+        },
+        {
+          "n": 18,
+          "label": "Japan Productivity Center — Annual Productivity Report 2026 (30 Sep 2026, in Japanese)",
+          "url": "https://www.jpc-net.jp/research/detail/008214.html"
+        },
+        {
+          "n": 19,
+          "label": "International Labour Organization — Tuğba Özay and Ekkehard Ernst, “Why UBI is not the answer to the impact of AI on the labour market”, research brief (May 2026)",
+          "url": "https://www.ilo.org/publications/why-universal-basic-income-not-answer-impact-ai-labour-market"
+        },
+        {
+          "n": 20,
+          "label": "Dennis Egger, Johannes Haushofer, Edward Miguel, Paul Niehaus and Michael Walker — “General Equilibrium Effects of Cash Transfers: Experimental Evidence from Kenya”, Econometrica 90(6) (2022)",
+          "url": "https://doi.org/10.3982/ECTA17945"
+        },
+        {
+          "n": 21,
+          "label": "Brookings Institution — Robert E. Litan, A detailed, affordable plan for transition insurance in the AI era (30 Oct 2026)",
+          "url": "https://www.brookings.edu/articles/a-detailed-affordable-plan-for-transition-insurance-in-the-ai-era/"
+        },
+        {
+          "n": 22,
+          "label": "Anthropic — Economic policy framework (Jun 2026)",
+          "url": "https://www.anthropic.com/policy-on-the-ai-exponential/epf"
+        },
+        {
+          "n": 23,
+          "label": "TechCrunch — OpenAI’s vision for the AI economy: public wealth funds, robot taxes and a four-day work week (6 Apr 2026)",
+          "url": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/"
+        },
+        {
+          "n": 24,
+          "label": "Fortune — A House bill would tax AI tokens to fund jobs as unemployment rises (H.R. 10044, 1 Sep 2026)",
+          "url": "https://fortune.com/2026/09/01/bill-tax-ai-tokens-fund-jobs-technology-unemployment/"
+        },
+        {
+          "n": 25,
+          "label": "Hankook Ilbo — Editorial on President Lee Jae-myung’s call for a basic-income-like mechanism for AI excess profits (Jun 2026, in Korean)",
+          "url": "https://www.hankookilbo.com/news/article/A2026061115000003881"
+        }
+      ]
+    },
+    {
       "id": "refundable-tax-credit-vs-basic-income",
       "date": "2026-11-06",
       "related": [
         "japan-special-cash-payment",
         "takenaka-70000-yen-basic-income",
-        "openresearch-cash-study"
+        "openresearch-cash-study",
+        "generative-ai-jobs-basic-income"
       ],
       "title": {
         "ja": "給付付き税額控除とベーシックインカムは、何が違うのか：日本の「就業者負担軽減支援金」から考える",
@@ -18578,7 +20300,8 @@ module.exports = {
         "universal-high-income",
         "use-to-own",
         "ai-agent-basic-income",
-        "openresearch-cash-study"
+        "openresearch-cash-study",
+        "generative-ai-jobs-basic-income"
       ],
       "title": {
         "ja": "AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム",
