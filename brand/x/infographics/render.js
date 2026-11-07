@@ -802,6 +802,47 @@ ${bentoArt}`,
       };
     },
   },
+  // GitHub profile README banner (eltociear/eltociear, "Basic income tracker" section). 1600x500, shown about 830px
+  // wide, so no text below 28px. English first with the Japanese name small; counts come straight from src/data.js
+  // (TIMELINE, GRAVE, OSS, ESSAYS, LANGS) so a re-render picks up new entries.
+  'readme-banner': {
+    w: 1600, h: 500, langs: ['en'], file: 'readme-banner',
+    build: () => {
+      const D = require('../../../src/data.js');
+      const stats = [[D.TIMELINE.length, 'experiments'], [D.GRAVE.length, 'ended schemes'], [D.OSS.length, 'open-source projects'],
+        [D.ESSAYS.length, 'essays'], [D.LANGS.length, 'languages']];
+      return {
+        bare: true,
+        moon: [1500, 96, 40],
+        body: `
+<div class="top">
+  <svg width="132" height="93" viewBox="-8 -8 256 184">${bento}</svg>
+  <div><p class="name">Free <b>Lunch</b> Lab</p><p class="jp">不労所得研究所</p></div>
+</div>
+<p class="lede">Basic income, tracked with sources</p>
+<p class="stats">${stats.map(([n, l]) => `<span><b>${n}</b> ${l}</span>`).join('<i></i>')}</p>
+<div class="foot3">
+  <p class="url">neteru-nyukin.eltociear.workers.dev</p>
+  <p class="more">Weekly news<i></i>Cost calculator</p>
+</div>`,
+        css: `
+.page{padding:52px 76px 50px}
+.top{display:flex;align-items:center;gap:30px}
+.top svg{flex:none}
+.name{font-family:"Dela Gothic One",sans-serif;font-size:78px;line-height:1;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.name b{font-weight:400;color:#FFD66B}
+.jp{margin-top:12px;font-size:30px;line-height:1;font-weight:700;letter-spacing:.12em;color:#CFD6FF}
+.lede{margin-top:34px;font-size:48px;line-height:1.15;font-weight:900;color:#EEF1FF}
+.stats{margin-top:30px;display:flex;align-items:center;gap:26px;font-size:30px;line-height:1;color:#C9D0F0;white-space:nowrap}
+.stats b{font-weight:900;font-size:36px;color:#FFD66B}
+.stats i,.more i{width:6px;height:6px;border-radius:50%;background:rgba(207,214,255,.4)}
+.foot3{margin-top:auto;display:flex;align-items:center;gap:24px;padding-top:22px;border-top:2px solid rgba(255,255,255,.12)}
+.url{font-size:30px;line-height:1;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:10px 24px 12px;border-radius:999px}
+.more{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:30px;line-height:1;color:#C9D0F0}
+`,
+      };
+    },
+  },
   // X post image: "Does free cash make people stop working?" Three experiments side by side (Finland, Stockton SEED,
   // OpenResearch), numbers from TIMELINE + the openresearch-cash-study essay in src/data.js; Stockton's 28->40 vs
   // 32->37 full-time figures are SEED's first-year analysis (Feb 2019-Feb 2020). 1200x1500 (4:5) for the mobile
