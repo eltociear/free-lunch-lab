@@ -814,6 +814,129 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### Is generative AI taking creative work? Artists’ incomes and basic income (Part 2)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/
+- Published: 2026-11-07
+
+In autumn 2025 the Japan Freelance League, a group that speaks for freelancers, asked creators in Japan about generative AI. It received 24,991 answers, about seven in ten from people who draw: illustrators, manga artists and animators. Asked whether generative AI had reduced their income or sales, 12.0% said yes (9.3% a little, 2.7% a lot). Asked whether it was a serious threat to their livelihood, 88.6% said yes.[1]
+
+Those two numbers are the starting point of this essay. Fear is almost universal; measured loss, so far, is real but much smaller. Both matter. In part 1 (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/) we found that AI has not yet left a clear mark on employment as a whole, but that the entry door is narrowing for young people and that freelancers felt it first. Here we look at creative work: what has been measured, where the money from AI is going, what creators themselves are asking for, and what a basic income for artists has actually done where it has been tried.
+
+#### What has been measured
+
+The clearest evidence comes from online freelance markets, where each job is posted and paid separately. Xiang Hui, Oren Reshef and Luofeng Zhou studied Upwork. After the image generators DALL-E 2 and Midjourney arrived, freelancers doing image work (designers, image editors, artists) saw their monthly jobs fall 3.7% and their monthly earnings fall 9.4%. Writing freelancers lost 2% of jobs and 5.2% of earnings after ChatGPT. Better-rated freelancers were not protected.[2]
+
+A larger study by Ole Teutloff and colleagues, published in the Journal of Economic Behavior & Organization, looked at more than three million job posts on a global freelance platform from 2021 to 2023. Demand for skills that AI can partly replace, such as writing and translation, fell by 20% to 50% against what would otherwise have been expected, and the drop was largest for experienced workers. Demand for skills that work with AI rose: jobs building chatbots almost tripled, and freelance demand as a whole did not fall.[3]
+
+Surveys of creators fill in the picture, with the caveat that they ask people what they believe, and that those who feel hit are more likely to answer. In a January 2024 survey by the UK Society of Authors (787 responses), 26% of illustrators and 36% of translators said they had already lost work to generative AI.[4] A University of Cambridge study of 258 published UK novelists, released in November 2025, found that 39% said their income had already suffered, mostly through the loss of side work such as copywriting, and 85% expected it to fall further.[5] In a January 2026 survey by the UK Association of Photographers, answered by about 600 of its roughly 3,000 members, 58% said they had lost commissioned work to generative AI, the same share as a year earlier; the average reported loss rose to about £34,900 per person, although the published summary does not say exactly how that average was taken.[6]
+
+The main findings side by side:
+
+| Source | Who | Finding |
+| --- | --- | --- |
+| Japan Freelance League (2025) | 24,991 creators in Japan, mostly people who draw | Income down because of AI: 12.0%; see AI as a serious threat: 88.6%[1] |
+| Hui, Reshef & Zhou | Upwork freelancers | Images: jobs −3.7%, earnings −9.4%; writing: −2%, −5.2%[2] |
+| Teutloff et al. | 3 million+ freelance job posts | Writing and translation demand −20% to −50%; chatbot jobs almost ×3[3] |
+| Society of Authors (UK, 2024) | 787 writers, illustrators and translators | Already lost work: illustrators 26%, translators 36%[4] |
+| University of Cambridge (2025) | 258 UK novelists | Income already hit: 39%; expect it to fall: 85%[5] |
+| Association of Photographers (UK, 2026) | About 600 professional photographers | Lost commissioned work: 58%[6] |
+
+Opinion: The pattern is consistent: work that is bought piece by piece, such as illustration, stock-style images, translation and copywriting, is losing ground first. But no study yet shows creative work as a whole collapsing.
+
+#### A projection, not a measurement
+
+The figure most often quoted in debates about AI and culture comes from CISAC, the global federation of authors’ societies. In a study with the consultancy PMP Strategy, published in December 2024, it projected that by 2028 about 24% of music creators’ revenues and 21% of audiovisual creators’ revenues would be at risk, against a world without generative AI: a cumulative loss of about €22 billion over five years, while the market for AI-generated music and video grows to about €16 billion and €48 billion a year.[7]
+
+That is a model of what could happen if current trends continue and nothing changes in law or contracts. It is useful for seeing the scale of what is at stake, but it is not evidence of what has happened.
+
+#### Where the money is going
+
+If AI companies are using creators’ work, some of the money is starting to flow back, mostly through courts and licences. The biggest case so far is Bartz v. Anthropic in the US. Anthropic, the company behind the AI model Claude, agreed to pay $1.5 billion to settle claims over books it had downloaded from pirate libraries. A judge had ruled in June 2025 that training on books was fair use, but that keeping pirated copies was not. The settlement covers about 500,000 titles, at least $3,000 each before costs and fees, split by default 50/50 between author and publisher where a publisher holds the rights. It was approved in July 2026, and first payments are due to start in the week of 23 November 2026.[8]
+
+In music, the major labels sued the AI song generators Suno and Udio, then settled and turned the cases into licensing deals at the end of 2025. In June 2026 the American Federation of Musicians, the US musicians’ union, sued Universal Music Group and Warner Music Group, saying the labels had licensed recordings made by union members to Suno and Udio “without compensation or credit” and had refused to say whose work was involved.[9] The point is plain: licensing money goes to whoever owns the rights, which is often not the person whose work it was.
+
+Elsewhere the courts have not settled the main question. In Getty Images v. Stability AI, the UK High Court ruled in November 2025 that the Stable Diffusion model was not an “infringing copy”, because it does not store the images it was trained on; Getty had dropped its main training claims because the training took place outside the UK.[10] Getty has been given permission to appeal.[11] In the US, The New York Times’ case against OpenAI and Microsoft reached cross-motions for summary judgment on fair use in September 2026, with no ruling and no trial date yet.[12]
+
+Japan has taken a different path. Article 30-4 of the Copyright Act broadly allows works to be used for AI training without permission when the purpose is not to “enjoy” the expression in them, and it has not been amended. Guidance from the Agency for Cultural Affairs in 2024 sets out the limits: the exception does not apply when the purpose includes producing output that reproduces the creative expression of the training works, and it does not apply when the use would unreasonably harm the copyright holder’s interests. Copying a style alone is not infringement, because a style is an idea rather than an expression. The guidance is not legally binding.[13]
+
+Opinion: Compensation is arriving, but slowly, case by case, and mainly to rights holders with lawyers. A one-off $3,000 per book is real money. It is not an income.
+
+#### What creators are asking for: consent and pay
+
+Where creators are organised, they have won terms. After an 11-month strike, SAG-AFTRA’s video game performers ratified a new agreement in July 2025 with 95.04% of the vote: separate written consent before a digital replica of a performer is made or used, an explanation of how it will be used, the right to suspend consent during a strike, and minimum pay for replica use.[14] The Writers Guild of America’s 2026 contract, ratified in April 2026 by 90.38% of those voting, keeps the 2023 rule that AI-generated text is not literary material and adds that studios must give the Guild written notice if they license writers’ work to train AI, after which the Guild can ask to discuss the licence and pay for writers.[15]
+
+In Japan, the Japan Actors Union, about 2,600 actors and voice actors, published guidelines on generative AI and voice on 15 October 2026. They ask for prior permission at every stage, from training to generating to publishing; treat each use of an AI voice as a new performance that should be paid; require new permission and extra pay for AI dubbing into other languages; and require consent from heirs before a deceased performer’s voice is recreated. The union calls them a voluntary industry standard until the law recognises a right to one’s voice.[16]
+
+It is worth saying clearly: what most creators ask for is consent and payment for the use of their work, not a basic income. In an Authors Guild survey of more than 2,400 US authors, 96% said consent should be required before their work is used to train AI.[17] Those are fair demands, and they are different from ours.
+
+Opinion: Consent and pay help the people whose work is used and who are organised enough to enforce terms. They do less for the illustrator who simply stops getting commissions.
+
+#### The best evidence on an income floor for artists: Ireland
+
+The strongest evidence on what a basic income does for artists comes from Ireland. Its Basic Income for the Arts pilot (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-ireland-arts), launched in 2022, paid €325 a week to 2,000 artists and arts workers for three years, later extended to February 2026. The payment is taxable and counts as self-employment income. It was also designed as an experiment: of about 8,200 eligible applicants, 2,000 were chosen at random to receive the money and 1,000 were assigned to a comparison group that did not.[18]
+
+The final evaluation, by Alma Economics for the culture department, was published in September 2025. Compared with the control group, recipients spent about 4 more hours a week on their artistic practice after a year, rising to over 5 hours by the last survey, and about 2.3 more hours on research. They worked 2.7 fewer hours a week outside the arts after a year and 4.3 fewer by the end. Their income from the arts rose by more than €500 a month on average, while income from other work fell by about €280. They were about 10 percentage points more likely to complete new work.[18]
+
+The wellbeing results were larger. By the final survey, recipients were 13 percentage points less likely to report anxiety and 11 points less likely to report depression; life satisfaction rose by almost one point on a ten-point scale; and they were nearly 20 points less likely to say they struggled to make ends meet. The probability of saying they could not find work in the arts fell by 13 to 18 points. Their social welfare payments fell by about €100 a month.[18]
+
+The pilot cost about €114 million gross from 2021 to 2025. Taxes on the payments, other tax changes and lower welfare spending brought back nearly 37% of that. The evaluators counted just over €100 million in benefits, mostly in wellbeing, and concluded that society got €1.39 back for every €1 of public money.[18] There are limits: the comparison group was offered €650 a year to keep answering surveys, some members of it dropped out, and a three-year guaranteed payment to a few artists is not the same as a universal floor.
+
+Ireland has since made the scheme permanent. Applications for a new round of 2,000 places at €325 a week for three years closed in May 2026. Just over 10,000 people applied, so about four in five will miss out. The first recipients were told from 15 October 2026, with payments backdated to September 2026. The culture minister, Patrick O’Donovan, called it “a game changer, and now it is here to stay”.[19]
+
+The Irish government’s own AI Advisory Council made the link to AI explicitly. In a February 2025 advice paper on AI and the creative sector, it wrote that “expanding UBI to creators affected by AI disruption could support their adaptation to new economic realities”, defined that disruption as a measurable loss of income or work directly attributable to generative AI, and recommended extending the scheme to support creators affected by it. In the same paper it recommended SAG-AFTRA-style consent rules for performers.[20] The permanent scheme, as launched, does not target AI-affected creators.
+
+The US offers a second, independent test. Creatives Rebuild New York (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-crny-artists) paid $1,000 a month for 18 months to 2,400 low-income artists in New York State. A peer-reviewed study by researchers at Indiana University, published in 2026, compared them with applicants who were not selected: recipients spent 3.9 more hours a week on arts work and 2.4 fewer on other work, and the change in their total earnings was not statistically significant.[21] The researchers’ earlier briefs found less food insecurity and fewer severe symptoms of anxiety and depression, though those relied mostly on before-and-after self-reports.[22]
+
+Opinion: Two experiments on two continents point the same way. Given a modest floor, artists move time from side jobs into their art, stay in the field and are markedly less anxious. Neither scheme made them rich, and neither was about AI.
+
+#### Complements, not rivals
+
+Put the two parts of this essay together and a division of labour appears. Consent and pay, whether through court settlements, licences or union contracts, help the people whose work is actually used and who can show it. They come slowly and unevenly, and much of the money stops with whoever owns the rights. An income floor helps a different group: the illustrator whose clients have switched to a tool, the translator whose rates have halved, the young artist who can no longer pay the rent with side work. Their loss cannot be traced to any single training set, and no settlement will reach them.
+
+The scale of the two is also different. Anthropic’s settlement pays at least $3,000 per book, once. Ireland’s scheme pays about €16,900 a year per artist, but to 2,000 of more than 10,000 applicants. Neither is a basic income in the full sense: one is compensation for a past use, the other a selective payment to a small group. But the Irish results show what even a partial floor can do, and the Advisory Council’s recommendation shows that a government body has already drawn the connection.
+
+Japan has neither yet: no national income scheme for artists, and copyright rules that allow training broadly. The answers so far, from the Agency for Cultural Affairs’ guidance to the actors’ union’s guidelines, are about rights. They matter. But a rights-only answer leaves out the creators who are squeezed out of work without anyone having used their work at all.
+
+#### Neither “AI is ending art” nor “nothing is happening”
+
+Opinion: Here is what the evidence shows as of November 2026. Generative AI has cut demand for some kinds of creative work, especially illustration, translation and writing bought piece by piece, and the cuts are measurable on freelance platforms and visible in creators’ surveys. It has not ended creative work, and most of the scary figures in circulation are projections or fears rather than measurements. Compensation is starting to flow, but mostly to rights holders, once, and through lawsuits.
+
+Opinion: Creators are right to ask first for consent and pay. A basic income is not a substitute for that, and it should not be sold as one. But the best experiment we have, Ireland’s, suggests that a floor keeps people in their craft and steadies their lives at a moment when their markets are shifting under them. In part 1 (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/) we saw that the people hit first are the ones with the least protection. In creative work, that is the freelancer with no employer, no union and no claim on any settlement. That is exactly who a floor is for.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
+
+Sources:
+
+1. Japan Freelance League — Survey on generative AI and the future of Japan’s creators (PR TIMES, 20 Jan 2026, in Japanese): https://prtimes.jp/main/html/rd/p/000000012.000142895.html
+2. Washington University in St. Louis, Olin Business School — Hui, Reshef and Zhou: AI tools cause a decline in freelance work and income, at least in the short run (24 Aug 2023): https://olin.washu.edu/about/news-and-media/news/2023/08/study-ai-tools-cause-a-decline-in-freelance-work-and-incomeat-least-in-the-short-run.php
+3. Oxford Internet Institute — Teutloff et al., The winners and losers of generative AI in the freelance job market, Journal of Economic Behavior & Organization (29 Jan 2025): https://www.oii.ox.ac.uk/the-winners-and-losers-of-generative-ai-in-the-freelance-job-market/
+4. International Authors Forum — Society of Authors: AI survey results published (Apr 2024): https://internationalauthors.org/news/society-of-authors-ai-survey-results-published/
+5. University of Cambridge — Novelists fear generative AI will replace them (Minderoo Centre for Technology and Democracy, 20 Nov 2025): https://www.cam.ac.uk/stories/generative-ai-novelists
+6. Videomaker — Survey shows that 58% of photographers have lost commissioned work to generative AI (Association of Photographers, Jan 2026): https://www.videomaker.com/news/survey-shows-that-58-of-photographers-have-lost-commissioned-work-to-generative-ai/
+7. CISAC — CISAC/PMP Strategy global economic study on AI in the music and audiovisual sectors (Dec 2024): https://www.cisac.org/cisacpmp-strategy-ai-study
+8. Authors Guild — What authors need to know about the Anthropic settlement (updated Oct 2026): https://authorsguild.org/advocacy/artificial-intelligence/what-authors-need-to-know-about-the-anthropic-settlement/
+9. Music Business Worldwide — Musicians’ union sues UMG and Warner Music, alleging member recordings were licensed to Suno and Udio without compensation or credit (Jun 2026): https://www.musicbusinessworldwide.com/musicians-union-sues-umg-and-warner-music-alleging-member-recordings-were-licensed-to-suno-and-udio-without-compensation-or-credit/
+10. Cleary Gottlieb — UK High Court issues landmark ruling in Getty Images v Stability AI (Nov 2025): https://www.clearygottlieb.com/news-and-insights/publication-listing/uk-high-court-issues-landmark-ruling-in-getty-images-v-stability-ai
+11. The IPKat — Permission to appeal granted in Getty Images v Stability AI (Jan 2026): https://ipkitten.blogspot.com/2026/01/permission-to-appeal-granted-in-getty.html
+12. AI Lawsuit Tracker — The New York Times v. OpenAI and Microsoft (reviewed 4 Nov 2026): https://ailawsuittracker.com/cases/new-york-times-v-openai/
+13. Agency for Cultural Affairs, Japan — AI and copyright (General understanding on AI and copyright, Mar 2024; checklist and guidance, Jul 2024; in Japanese): https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html
+14. PC Gamer — The videogame voice actors’ strike officially ends as performers ratify agreement between SAG-AFTRA and publishers (Jul 2025): https://www.pcgamer.com/gaming-industry/the-videogame-voice-actors-strike-officially-ends-as-performers-ratify-agreement-between-sag-aftra-and-publishers
+15. Screen Daily — Writers Guild of America members ratify new four-year deal (25 Apr 2026): https://www.screendaily.com/news/writers-guild-of-america-members-ratify-new-four-year-deal/5216000.article
+16. Japan Actors Union — Guidelines on the use of generative AI for voice (PR TIMES, 15 Oct 2026, in Japanese): https://prtimes.jp/main/html/rd/p/000000001.000192155.html
+17. Authors Guild — AG AI survey reveals authors overwhelmingly want consent and compensation for use of their works (21 Dec 2023): https://authorsguild.org/news/ag-ai-survey-reveals-authors-overwhelmingly-want-consent-and-compensation-for-use-of-their-works/
+18. Government of Ireland, Department of Culture, Communications and Sport — Alma Economics, Cost-benefit analysis for the Basic Income for the Arts, final report (29 Sep 2025; PDF): https://assets.gov.ie/static/documents/b87d2659/20250929_BIA_CBA_Final_Report.pdf
+19. RTÉ — Basic Income for the Arts: first recipients to hear this week (13 Oct 2026): https://www.rte.ie/culture/2026/1013/1595211-basic-income-for-the-arts-first-recipients-to-hear-this-week/
+20. Government of Ireland, AI Advisory Council — The impact of AI on Ireland’s creative sector, advice paper (Feb 2025; PDF): https://enterprise.gov.ie/en/publications/publication-files/ai-advisory-council-impact-of-ai-on-ireland-s-creative-sector.pdf
+21. Journal of Cultural Economics — Indiana University study of Creatives Rebuild New York’s Guaranteed Income for Artists (2026): https://link.springer.com/article/10.1007/s10824-026-09594-0
+22. Indiana University, Center for Cultural Affairs — Research briefs on the CRNY Guaranteed Income for Artists program (12 Feb 2025): https://culturalaffairs.center.iu.edu/news/crny_gi-study-press-release.html
+
 ### Has generative AI taken our jobs? The data, and what basic income can do (Part 1)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
@@ -935,7 +1058,7 @@ Opinion: Here is what the data show as of November 2026. AI is not yet visible i
 
 Opinion: This is a disruption that falls first on the people with the least protection: those with no work history, no employer and no claim on unemployment insurance. That is where the simplest feature of a basic income, that it reaches everyone without asking whether you have worked, matters most. It is not the only answer, and its critics are right that it costs a great deal and that supply matters. But a floor that is ready before it is needed is easier to build than one improvised in a crisis.
 
-Opinion: In part 2, we turn to creative work: illustrators, translators, writers and voice actors, where the change has come fastest.
+Opinion: In part 2 (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/), we turn to creative work: illustrators, translators, writers and voice actors, where the change has come fastest.
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
 
@@ -944,6 +1067,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/
 
 Sources:
 
@@ -3115,7 +3240,7 @@ A weekly roundup of basic income, guaranteed income and cash transfer news, chec
 - 2026-10-20, Peru (Research): Peru: an Amazon basic income pilot reports better diets and more forest protection. A University of Bath evaluation of Cool Earth’s two-year pilot, which paid 211 people in three Asháninka communities about £2 a day, found the share of households unable to afford nutritious food fell from 73% to 26%. The study had no control group. Source: University of Bath, https://www.bath.ac.uk/announcements/world-first-basic-income-trial-boosts-indigenous-livelihoods-and-amazon-rainforest-protection/
 - 2026-10-19, United States (AI & funding): Musk pledges one SpaceX share for every child in the US. After Anthropic’s announcement, Elon Musk said he would give a SpaceX share to every American child next year, about $10.7 billion in total at the latest closing price. He has not said who qualifies or how the shares would be delivered. Source: Al Jazeera, https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains
 - 2026-10-18, United States (AI & funding): Anthropic commits 5% of its shares to a public benefit fund. The AI company is placing 5% of its shares, subject to stockholder approval, in a new fund that could make large donations and might explore direct distributions to specific populations. It is not a basic income, and details on governance are due in the coming months. Source: Anthropic, https://www.anthropic.com/news/public-benefit-fund
-- 2026-10-14, Ireland (Policy): Ireland’s permanent basic income for artists gets under way. 2,000 artists chosen from more than 10,000 applicants will receive €325 a week for three years, with first payments backdated to September. The National Campaign for the Arts says €34 million in the 2027 budget funds the scheme. Source: MusicRadar, https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years
+- 2026-10-14, Ireland (Policy): Ireland’s permanent basic income for artists gets under way. 2,000 artists chosen from just over 10,000 applicants will receive €325 a week for three years. The first recipients are told from 15 October, with payments backdated to September; those starting in 2027 are backdated to January. The culture minister says his top aim in the budget estimates was to have the scheme fully funded for 2027. Source: RTÉ, https://www.rte.ie/culture/2026/1013/1595211-basic-income-for-the-arts-first-recipients-to-hear-this-week/; TheJournal.ie, https://www.thejournal.ie/basic-income-for-the-arts-7191890-Oct2026/
 - 2026-10-08, South Korea (Pilot): South Korea invites more counties to join its rural basic income pilot in 2027. The agriculture ministry opened a call for about 18 more depopulating counties, with applications from 20 October to 3 November; residents would get 150,000 won a month in local vouchers. The 2027 budget proposal raises the central government’s share of the cost from 40% to 50%, pending parliament. Source: Ministry of Agriculture, Food and Rural Affairs (Korea), https://www.mafra.go.kr/bbs/home/792/579390/artclView.do
 - 2026-10-01, United States (Policy): Alaska pays its 2026 Permanent Fund Dividend of $1,200. This year’s dividend is $1,000 plus a $200 energy relief payment. Direct deposits began on 1 October, with later payment dates on 22 October, 19 November and 17 December. Source: Alaska Department of Revenue, PFD Division, https://pfd.alaska.gov/; Alaska’s News Source, https://www.alaskasnewssource.com/2026/09/30/permanent-fund-dividends-will-be-distributed-alaskans-starting-this-week/
 

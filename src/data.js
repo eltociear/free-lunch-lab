@@ -2871,6 +2871,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-07",
+      "en": "Published the essay “Is generative AI taking creative work? Artists’ incomes and basic income (Part 2)”",
+      "ja": "エッセイ『生成AIは創作を奪ったのか：クリエイターの収入とベーシックインカム（後編・クリエイティブ）』を公開",
+      "zh": "发布随笔《生成式 AI 在抢走创意工作吗？艺术家的收入与基本收入（下篇）》",
+      "hi": "निबंध “क्या जनरेटिव AI रचनात्मक काम छीन रहा है? कलाकारों की आय और बेसिक इनकम (भाग 2)” प्रकाशित",
+      "es": "Publicado el ensayo «¿Quita la IA trabajo a los creativos? Artistas y renta básica (parte 2)»",
+      "de": "Essay „KI, Kunst und Grundeinkommen (Teil 2)“ veröffentlicht",
+      "ar": "نشرنا مقال «هل يأخذ الذكاء الاصطناعي العمل الإبداعي؟ دخل الفنانين والدخل الأساسي (الجزء الثاني)»"
+    },
+    {
+      "date": "2026-11-07",
       "en": "Published the essay “Has generative AI taken our jobs? The data, and what basic income can do (Part 1)”",
       "ja": "エッセイ『生成AIは仕事を奪ったのか：データでわかったことと、ベーシックインカムにできること（前編・雇用）』を公開",
       "zh": "发布随笔《生成式 AI 抢走了我们的工作吗？数据显示了什么，基本收入能做什么（上篇）》",
@@ -4007,10 +4017,20 @@ module.exports = {
           "date": "2026-10-14",
           "region": "ie",
           "tag": "policy",
+          "timeline": [
+            "ireland-arts"
+          ],
+          "essays": [
+            "generative-ai-creative-work-basic-income"
+          ],
           "sources": [
             {
-              "name": "MusicRadar",
-              "url": "https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years"
+              "name": "RTÉ",
+              "url": "https://www.rte.ie/culture/2026/1013/1595211-basic-income-for-the-arts-first-recipients-to-hear-this-week/"
+            },
+            {
+              "name": "TheJournal.ie",
+              "url": "https://www.thejournal.ie/basic-income-for-the-arts-7191890-Oct2026/"
             }
           ],
           "title": {
@@ -4023,13 +4043,13 @@ module.exports = {
             "ar": "انطلاق الدخل الأساسي الدائم للفنانين في أيرلندا"
           },
           "summary": {
-            "en": "2,000 artists chosen from more than 10,000 applicants will receive €325 a week for three years, with first payments backdated to September. The National Campaign for the Arts says €34 million in the 2027 budget funds the scheme.",
-            "ja": "1万人を超える応募者から選ばれた2,000人の芸術家が、3年間にわたり週325ユーロを受け取ります。初回の支払いは9月にさかのぼります。芸術団体National Campaign for the Artsによると、2027年度予算の3,400万ユーロが財源です。",
-            "zh": "从一万多名申请者中选出的2,000名艺术家将在三年内每周领取325欧元，首批款项追溯至9月。爱尔兰全国艺术运动（National Campaign for the Arts）称，2027年预算中的3,400万欧元为该计划提供资金。",
-            "hi": "10,000 से ज़्यादा आवेदकों में से चुने गए 2,000 कलाकारों को तीन साल तक हर हफ़्ते €325 मिलेंगे, और पहले भुगतान सितंबर से लागू माने जाएँगे। National Campaign for the Arts के अनुसार 2027 के बजट में €3.4 करोड़ इस योजना के लिए हैं।",
-            "es": "2.000 artistas elegidos entre más de 10.000 solicitantes recibirán 325 € a la semana durante tres años, con los primeros pagos con efecto desde septiembre. La National Campaign for the Arts dice que 34 millones de euros del presupuesto de 2027 financian el programa.",
-            "de": "2.000 aus mehr als 10.000 Bewerbungen ausgewählte Kunstschaffende erhalten drei Jahre lang 325 € pro Woche; die ersten Zahlungen gelten rückwirkend ab September. Laut der National Campaign for the Arts finanzieren 34 Millionen Euro im Haushalt 2027 das Programm.",
-            "ar": "سيحصل 2,000 فنان اختيروا من بين أكثر من 10,000 متقدم على ⁦€325⁩ أسبوعيًا لمدة ثلاث سنوات، على أن تُحتسب الدفعات الأولى بأثر رجعي من سبتمبر. وتقول حملة ⁦National Campaign for the Arts⁩ إن 34 مليون يورو في موازنة 2027 تموّل البرنامج."
+            "en": "2,000 artists chosen from just over 10,000 applicants will receive €325 a week for three years. The first recipients are told from 15 October, with payments backdated to September; those starting in 2027 are backdated to January. The culture minister says his top aim in the budget estimates was to have the scheme fully funded for 2027.",
+            "ja": "1万人強の応募者から選ばれた2,000人の芸術家が、3年間にわたり週325ユーロを受け取ります。最初の受給者には10月15日から通知され、支払いは9月にさかのぼります（2027年開始の人は1月から）。文化相は、予算編成での最優先課題は2027年分の財源を確保することだったと述べています。",
+            "zh": "从一万多名申请者中选出的 2,000 名艺术家将在三年内每周领取 325 欧元。首批领取者自 10 月 15 日起接到通知，款项追溯至 9 月；2027 年开始领取的人追溯至 1 月。文化部长表示，他在预算编制中的首要目标是确保该计划 2027 年的资金全部到位。",
+            "hi": "10,000 से कुछ ज़्यादा आवेदकों में से चुने गए 2,000 कलाकारों को तीन साल तक हर हफ़्ते €325 मिलेंगे। पहले चुने गए लोगों को 15 अक्टूबर से सूचना मिल रही है और भुगतान सितंबर से लागू माने जाएँगे; 2027 में शुरू होने वालों के लिए जनवरी से। संस्कृति मंत्री के अनुसार बजट अनुमानों में उनका पहला लक्ष्य 2027 के लिए योजना का पूरा पैसा पक्का करना था।",
+            "es": "2.000 artistas elegidos entre algo más de 10.000 solicitantes recibirán 325 € a la semana durante tres años. Los primeros reciben la notificación desde el 15 de octubre, con pagos con efecto desde septiembre; quienes empiecen en 2027, desde enero. El ministro de Cultura dice que su prioridad en los presupuestos era dejar el programa plenamente financiado para 2027.",
+            "de": "2.000 aus gut 10.000 Bewerbungen ausgewählte Kunstschaffende erhalten drei Jahre lang 325 € pro Woche. Die Ersten werden ab dem 15. Oktober benachrichtigt, die Zahlungen gelten rückwirkend ab September; wer 2027 beginnt, ab Januar. Der Kulturminister sagt, sein wichtigstes Ziel bei den Haushaltsansätzen sei die volle Finanzierung für 2027 gewesen.",
+            "ar": "سيحصل 2,000 فنان اختيروا من بين ما يزيد قليلًا على 10,000 متقدم على ⁦€325⁩ أسبوعيًا لمدة ثلاث سنوات. يُبلَّغ أوائل المستفيدين اعتبارًا من 15 أكتوبر، على أن تُحتسب الدفعات بأثر رجعي من سبتمبر، ومن يناير لمن يبدأ في 2027. ويقول وزير الثقافة إن هدفه الأول في تقديرات الموازنة كان ضمان التمويل الكامل للبرنامج في 2027."
           }
         },
         {
@@ -9476,6 +9496,9 @@ module.exports = {
     },
     {
       "id": "crny-artists",
+      "essays": [
+        "generative-ai-creative-work-basic-income"
+      ],
       "years": "2022–2024",
       "type": "ngo",
       "name": "Guaranteed Income for Artists (CRNY)",
@@ -9516,6 +9539,53 @@ module.exports = {
         "ar": "قارنت دراسة لجامعة إنديانا (محكّمة، 2026) المستفيدين بالمتقدمين غير المختارين: 3.9 ساعات أسبوعيًا إضافية في العمل الفني و2.4 ساعة أقل في الأعمال الأخرى. وقُدّر إجمالي الدخل بنحو ⁦$11,600⁩ أقل سنويًا، قريبًا من ⁦$12,000⁩ المدفوعة، لكن الفرق غير دال إحصائيًا"
       },
       "source": "https://link.springer.com/article/10.1007/s10824-026-09594-0"
+    },
+    {
+      "id": "ireland-arts",
+      "essays": [
+        "generative-ai-jobs-basic-income",
+        "generative-ai-creative-work-basic-income"
+      ],
+      "years": "2022–",
+      "type": "gov",
+      "name": "Basic Income for the Arts (Ireland)",
+      "place": {
+        "ja": "アイルランド",
+        "en": "Ireland",
+        "zh": "爱尔兰",
+        "hi": "आयरलैंड",
+        "es": "Irlanda",
+        "de": "Irland",
+        "ar": "أيرلندا"
+      },
+      "who": {
+        "ja": "アイルランド政府（文化・通信・スポーツ省）",
+        "en": "Government of Ireland (Department of Culture, Communications and Sport)",
+        "zh": "爱尔兰政府（文化、通信和体育部）",
+        "hi": "आयरलैंड सरकार (संस्कृति, संचार और खेल विभाग)",
+        "es": "Gobierno de Irlanda (Departamento de Cultura, Comunicaciones y Deporte)",
+        "de": "Irische Regierung (Ministerium für Kultur, Kommunikation und Sport)",
+        "ar": "حكومة أيرلندا (وزارة الثقافة والاتصالات والرياضة)"
+      },
+      "paid": {
+        "ja": "芸術家と芸術関連の仕事をする2,000人に、週325ユーロ（課税対象）を3年間（2022年9月〜、のちに2026年2月まで延長）。条件を満たした約8,200人の応募者から無作為に選び、別の1,000人を比較グループにした。2026年に恒久化され、新たな2,000人分の枠に1万人強が応募",
+        "en": "€325 a week, taxable, for three years (from September 2022, later extended to February 2026) to 2,000 artists and arts workers picked at random from about 8,200 eligible applicants; another 1,000 formed a control group. Made permanent in 2026: 2,000 new places drew just over 10,000 applicants",
+        "zh": "向 2,000 名艺术家和艺术从业者每周发放 325 欧元（需纳税），为期三年（2022 年 9 月起，后延长至 2026 年 2 月）；他们从约 8,200 名符合条件的申请者中随机选出，另有 1,000 人作为对照组。2026 年改为常设制度：2,000 个新名额吸引了一万多名申请者",
+        "hi": "2,000 कलाकारों और कला क्षेत्र के कामगारों को तीन साल तक हर हफ़्ते €325 (कर योग्य), सितंबर 2022 से, बाद में फ़रवरी 2026 तक बढ़ाया गया; लगभग 8,200 पात्र आवेदकों में से लॉटरी से चुने गए, और 1,000 और लोग तुलना समूह बने। 2026 में इसे स्थायी बनाया गया: 2,000 नई जगहों के लिए 10,000 से कुछ ज़्यादा आवेदन आए",
+        "es": "325 € a la semana, sujetos a impuestos, durante tres años (desde septiembre de 2022, ampliado luego hasta febrero de 2026) a 2.000 artistas y trabajadores de las artes elegidos al azar entre unos 8.200 solicitantes admisibles; otros 1.000 formaron un grupo de control. Permanente desde 2026: 2.000 plazas nuevas recibieron algo más de 10.000 solicitudes",
+        "de": "325 € pro Woche, steuerpflichtig, drei Jahre lang (ab September 2022, später bis Februar 2026 verlängert) an 2.000 Kunstschaffende und Beschäftigte im Kulturbereich, per Los aus rund 8.200 berechtigten Bewerbungen gezogen; weitere 1.000 bildeten eine Kontrollgruppe. Seit 2026 dauerhaft: Auf 2.000 neue Plätze kamen gut 10.000 Bewerbungen",
+        "ar": "⁦€325⁩ أسبوعيًا، خاضعة للضريبة، لمدة ثلاث سنوات (منذ سبتمبر 2022، ثم مُددت حتى فبراير 2026) لـ2,000 فنان وعامل في مجال الفنون اختيروا عشوائيًا من بين نحو 8,200 متقدم مؤهل؛ وشكّل 1,000 آخرون مجموعة مقارنة. أصبح دائمًا في 2026: تقدّم لـ2,000 مكان جديد ما يزيد قليلًا على 10,000 شخص"
+      },
+      "result": {
+        "ja": "Alma Economicsの最終評価（2025年）によると、比較グループと比べて創作の時間が週4〜5時間増え、芸術以外の仕事が週2.7〜4.3時間減った。芸術からの収入は月500ユーロ以上増え、ほかの仕事の収入は約280ユーロ減。不安を訴える確率は13ポイント、うつは11ポイント低下。社会的な便益は公的資金1ユーロあたり1.39ユーロと推計",
+        "en": "Alma Economics’ final evaluation (2025) found that, against the control group, recipients spent 4 to 5 more hours a week on their art and 2.7 to 4.3 fewer on other work, earned over €500 a month more from the arts and about €280 less from other work, and were 13 and 11 points less likely to report anxiety and depression. Estimated social return: €1.39 per €1 of public money",
+        "zh": "Alma Economics 的最终评估（2025 年）显示，与对照组相比，领取者每周用于创作的时间多 4 至 5 小时，其他工作少 2.7 至 4.3 小时；来自艺术的收入每月增加 500 多欧元，其他工作收入减少约 280 欧元；报告焦虑和抑郁的概率分别低 13 和 11 个百分点。估计每 1 欧元公共资金带来 1.39 欧元社会回报",
+        "hi": "Alma Economics के अंतिम मूल्यांकन (2025) के अनुसार, तुलना समूह की तुलना में पाने वालों ने हफ़्ते में अपनी कला पर 4 से 5 घंटे ज़्यादा और बाकी काम पर 2.7 से 4.3 घंटे कम लगाए, कला से हर महीने €500 से ज़्यादा अधिक और बाकी काम से लगभग €280 कम कमाए, और उनमें चिंता और अवसाद बताने की संभावना 13 और 11 अंक कम रही। अनुमानित सामाजिक लाभ: हर €1 सार्वजनिक पैसे पर €1.39",
+        "es": "La evaluación final de Alma Economics (2025) halló que, frente al grupo de control, los receptores dedicaban de 4 a 5 horas semanales más a su arte y de 2,7 a 4,3 menos a otros trabajos, ganaban más de 500 € al mes más con el arte y unos 280 € menos con otros trabajos, y tenían 13 y 11 puntos menos de probabilidad de declarar ansiedad y depresión. Retorno social estimado: 1,39 € por cada euro público",
+        "de": "Die Abschlussevaluation von Alma Economics (2025) ergab gegenüber der Kontrollgruppe 4 bis 5 Stunden pro Woche mehr für die eigene Kunst und 2,7 bis 4,3 weniger für andere Arbeit, über 500 € im Monat mehr Einkommen aus der Kunst und rund 280 € weniger aus anderer Arbeit sowie eine um 13 bzw. 11 Punkte geringere Wahrscheinlichkeit, Angst und Depression anzugeben. Geschätzter gesellschaftlicher Ertrag: 1,39 € je Euro öffentlicher Mittel",
+        "ar": "وجد التقييم النهائي لـ⁦Alma Economics⁩ (2025) أن المستفيدين، مقارنة بمجموعة المقارنة، أمضوا 4 إلى 5 ساعات أسبوعيًا إضافية على فنهم و2.7 إلى 4.3 ساعة أقل في الأعمال الأخرى، وكسبوا من الفن أكثر من ⁦€500⁩ شهريًا إضافية ونحو ⁦€280⁩ أقل من الأعمال الأخرى، وقلّ احتمال إبلاغهم عن القلق والاكتئاب بـ13 و11 نقطة. العائد الاجتماعي المقدّر: ⁦€1.39⁩ لكل ⁦€1⁩ من المال العام"
+      },
+      "source": "https://assets.gov.ie/static/documents/b87d2659/20250929_BIA_CBA_Final_Report.pdf"
     },
     {
       "id": "marshall-islands",
@@ -9789,13 +9859,1262 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "generative-ai-creative-work-basic-income",
+      "date": "2026-11-07",
+      "related": [
+        "generative-ai-jobs-basic-income",
+        "openresearch-cash-study",
+        "finland-basic-income-experiment",
+        "public-benefit-fund"
+      ],
+      "title": {
+        "en": "Is generative AI taking creative work? Artists’ incomes and basic income (Part 2)",
+        "ja": "生成AIは創作を奪ったのか：クリエイターの収入とベーシックインカム（後編・クリエイティブ）",
+        "zh": "生成式 AI 在抢走创意工作吗？艺术家的收入与基本收入（下篇）",
+        "hi": "क्या जनरेटिव AI रचनात्मक काम छीन रहा है? कलाकारों की आय और बेसिक इनकम (भाग 2)",
+        "es": "¿Quita la IA trabajo a los creativos? Artistas y renta básica (parte 2)",
+        "de": "KI, Kunst und Grundeinkommen (Teil 2)",
+        "ar": "هل يأخذ الذكاء الاصطناعي العمل الإبداعي؟ دخل الفنانين والدخل الأساسي (الجزء الثاني)"
+      },
+      "desc": {
+        "en": "12% of Japan’s creators say AI has cut their income; 89% see a threat. What has been measured, where the money goes, and what Ireland’s artist basic income found.",
+        "ja": "収入が減ったクリエイターは12%、脅威と感じる人は89%。測られた損失、補償の行方、アイルランドの実験の結果。",
+        "zh": "12% 的日本创作者说 AI 减少了他们的收入，89% 视之为威胁。实际测量到了什么，钱流向哪里，爱尔兰的艺术家基本收入又发现了什么。",
+        "hi": "12% जापानी रचनाकार कहते हैं कि AI ने उनकी आय घटाई; 89% इसे ख़तरा मानते हैं। असली असर, पैसा कहाँ जा रहा है, और आयरलैंड का अनुभव।",
+        "es": "El 12 % de los creadores japoneses perdió ingresos por la IA; el 89 % la ve como amenaza. Qué se ha medido, adónde va el dinero y qué mostró Irlanda.",
+        "de": "12 % der Kreativen in Japan sagen, KI habe ihr Einkommen gesenkt; 89 % sehen eine Bedrohung. Was gemessen wurde, wohin das Geld fließt, was Irland zeigte.",
+        "ar": "يقول 12% من المبدعين في اليابان إن الذكاء الاصطناعي قلّص دخلهم، ويراه 89% تهديدًا. ما الذي قيس، وإلى أين يذهب المال، وما الذي وجدته تجربة الدخل الأساسي للفنانين في أيرلندا."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "In autumn 2025 the Japan Freelance League, a group that speaks for freelancers, asked creators in Japan about generative AI. It received 24,991 answers, about seven in ten from people who draw: illustrators, manga artists and animators. Asked whether generative AI had reduced their income or sales, 12.0% said yes (9.3% a little, 2.7% a lot). Asked whether it was a serious threat to their livelihood, 88.6% said yes.[1]"
+          ],
+          [
+            "p",
+            "Those two numbers are the starting point of this essay. Fear is almost universal; measured loss, so far, is real but much smaller. Both matter. In {part 1|/essays/generative-ai-jobs-basic-income/} we found that AI has not yet left a clear mark on employment as a whole, but that the entry door is narrowing for young people and that freelancers felt it first. Here we look at creative work: what has been measured, where the money from AI is going, what creators themselves are asking for, and what a basic income for artists has actually done where it has been tried."
+          ],
+          [
+            "h",
+            "What has been measured"
+          ],
+          [
+            "p",
+            "The clearest evidence comes from online freelance markets, where each job is posted and paid separately. Xiang Hui, Oren Reshef and Luofeng Zhou studied Upwork. After the image generators DALL-E 2 and Midjourney arrived, freelancers doing image work (designers, image editors, artists) saw their monthly jobs fall 3.7% and their monthly earnings fall 9.4%. Writing freelancers lost 2% of jobs and 5.2% of earnings after ChatGPT. Better-rated freelancers were not protected.[2]"
+          ],
+          [
+            "p",
+            "A larger study by Ole Teutloff and colleagues, published in the Journal of Economic Behavior & Organization, looked at more than three million job posts on a global freelance platform from 2021 to 2023. Demand for skills that AI can partly replace, such as writing and translation, fell by 20% to 50% against what would otherwise have been expected, and the drop was largest for experienced workers. Demand for skills that work with AI rose: jobs building chatbots almost tripled, and freelance demand as a whole did not fall.[3]"
+          ],
+          [
+            "p",
+            "Surveys of creators fill in the picture, with the caveat that they ask people what they believe, and that those who feel hit are more likely to answer. In a January 2024 survey by the UK Society of Authors (787 responses), 26% of illustrators and 36% of translators said they had already lost work to generative AI.[4] A University of Cambridge study of 258 published UK novelists, released in November 2025, found that 39% said their income had already suffered, mostly through the loss of side work such as copywriting, and 85% expected it to fall further.[5] In a January 2026 survey by the UK Association of Photographers, answered by about 600 of its roughly 3,000 members, 58% said they had lost commissioned work to generative AI, the same share as a year earlier; the average reported loss rose to about £34,900 per person, although the published summary does not say exactly how that average was taken.[6]"
+          ],
+          [
+            "p",
+            "The main findings side by side:"
+          ],
+          [
+            "t",
+            "Source | Who | Finding\nJapan Freelance League (2025) | 24,991 creators in Japan, mostly people who draw | Income down because of AI: 12.0%; see AI as a serious threat: 88.6%[1]\nHui, Reshef & Zhou | Upwork freelancers | Images: jobs −3.7%, earnings −9.4%; writing: −2%, −5.2%[2]\nTeutloff et al. | 3 million+ freelance job posts | Writing and translation demand −20% to −50%; chatbot jobs almost ×3[3]\nSociety of Authors (UK, 2024) | 787 writers, illustrators and translators | Already lost work: illustrators 26%, translators 36%[4]\nUniversity of Cambridge (2025) | 258 UK novelists | Income already hit: 39%; expect it to fall: 85%[5]\nAssociation of Photographers (UK, 2026) | About 600 professional photographers | Lost commissioned work: 58%[6]"
+          ],
+          [
+            "o",
+            "The pattern is consistent: work that is bought piece by piece, such as illustration, stock-style images, translation and copywriting, is losing ground first. But no study yet shows creative work as a whole collapsing."
+          ],
+          [
+            "h",
+            "A projection, not a measurement"
+          ],
+          [
+            "p",
+            "The figure most often quoted in debates about AI and culture comes from CISAC, the global federation of authors’ societies. In a study with the consultancy PMP Strategy, published in December 2024, it projected that by 2028 about 24% of music creators’ revenues and 21% of audiovisual creators’ revenues would be at risk, against a world without generative AI: a cumulative loss of about €22 billion over five years, while the market for AI-generated music and video grows to about €16 billion and €48 billion a year.[7]"
+          ],
+          [
+            "p",
+            "That is a model of what could happen if current trends continue and nothing changes in law or contracts. It is useful for seeing the scale of what is at stake, but it is not evidence of what has happened."
+          ],
+          [
+            "h",
+            "Where the money is going"
+          ],
+          [
+            "p",
+            "If AI companies are using creators’ work, some of the money is starting to flow back, mostly through courts and licences. The biggest case so far is Bartz v. Anthropic in the US. Anthropic, the company behind the AI model Claude, agreed to pay $1.5 billion to settle claims over books it had downloaded from pirate libraries. A judge had ruled in June 2025 that training on books was fair use, but that keeping pirated copies was not. The settlement covers about 500,000 titles, at least $3,000 each before costs and fees, split by default 50/50 between author and publisher where a publisher holds the rights. It was approved in July 2026, and first payments are due to start in the week of 23 November 2026.[8]"
+          ],
+          [
+            "p",
+            "In music, the major labels sued the AI song generators Suno and Udio, then settled and turned the cases into licensing deals at the end of 2025. In June 2026 the American Federation of Musicians, the US musicians’ union, sued Universal Music Group and Warner Music Group, saying the labels had licensed recordings made by union members to Suno and Udio “without compensation or credit” and had refused to say whose work was involved.[9] The point is plain: licensing money goes to whoever owns the rights, which is often not the person whose work it was."
+          ],
+          [
+            "p",
+            "Elsewhere the courts have not settled the main question. In Getty Images v. Stability AI, the UK High Court ruled in November 2025 that the Stable Diffusion model was not an “infringing copy”, because it does not store the images it was trained on; Getty had dropped its main training claims because the training took place outside the UK.[10] Getty has been given permission to appeal.[11] In the US, The New York Times’ case against OpenAI and Microsoft reached cross-motions for summary judgment on fair use in September 2026, with no ruling and no trial date yet.[12]"
+          ],
+          [
+            "p",
+            "Japan has taken a different path. Article 30-4 of the Copyright Act broadly allows works to be used for AI training without permission when the purpose is not to “enjoy” the expression in them, and it has not been amended. Guidance from the Agency for Cultural Affairs in 2024 sets out the limits: the exception does not apply when the purpose includes producing output that reproduces the creative expression of the training works, and it does not apply when the use would unreasonably harm the copyright holder’s interests. Copying a style alone is not infringement, because a style is an idea rather than an expression. The guidance is not legally binding.[13]"
+          ],
+          [
+            "o",
+            "Compensation is arriving, but slowly, case by case, and mainly to rights holders with lawyers. A one-off $3,000 per book is real money. It is not an income."
+          ],
+          [
+            "h",
+            "What creators are asking for: consent and pay"
+          ],
+          [
+            "p",
+            "Where creators are organised, they have won terms. After an 11-month strike, SAG-AFTRA’s video game performers ratified a new agreement in July 2025 with 95.04% of the vote: separate written consent before a digital replica of a performer is made or used, an explanation of how it will be used, the right to suspend consent during a strike, and minimum pay for replica use.[14] The Writers Guild of America’s 2026 contract, ratified in April 2026 by 90.38% of those voting, keeps the 2023 rule that AI-generated text is not literary material and adds that studios must give the Guild written notice if they license writers’ work to train AI, after which the Guild can ask to discuss the licence and pay for writers.[15]"
+          ],
+          [
+            "p",
+            "In Japan, the Japan Actors Union, about 2,600 actors and voice actors, published guidelines on generative AI and voice on 15 October 2026. They ask for prior permission at every stage, from training to generating to publishing; treat each use of an AI voice as a new performance that should be paid; require new permission and extra pay for AI dubbing into other languages; and require consent from heirs before a deceased performer’s voice is recreated. The union calls them a voluntary industry standard until the law recognises a right to one’s voice.[16]"
+          ],
+          [
+            "p",
+            "It is worth saying clearly: what most creators ask for is consent and payment for the use of their work, not a basic income. In an Authors Guild survey of more than 2,400 US authors, 96% said consent should be required before their work is used to train AI.[17] Those are fair demands, and they are different from ours."
+          ],
+          [
+            "o",
+            "Consent and pay help the people whose work is used and who are organised enough to enforce terms. They do less for the illustrator who simply stops getting commissions."
+          ],
+          [
+            "h",
+            "The best evidence on an income floor for artists: Ireland"
+          ],
+          [
+            "p",
+            "The strongest evidence on what a basic income does for artists comes from Ireland. Its {Basic Income for the Arts pilot|/timeline/#tl-ireland-arts}, launched in 2022, paid €325 a week to 2,000 artists and arts workers for three years, later extended to February 2026. The payment is taxable and counts as self-employment income. It was also designed as an experiment: of about 8,200 eligible applicants, 2,000 were chosen at random to receive the money and 1,000 were assigned to a comparison group that did not.[18]"
+          ],
+          [
+            "p",
+            "The final evaluation, by Alma Economics for the culture department, was published in September 2025. Compared with the control group, recipients spent about 4 more hours a week on their artistic practice after a year, rising to over 5 hours by the last survey, and about 2.3 more hours on research. They worked 2.7 fewer hours a week outside the arts after a year and 4.3 fewer by the end. Their income from the arts rose by more than €500 a month on average, while income from other work fell by about €280. They were about 10 percentage points more likely to complete new work.[18]"
+          ],
+          [
+            "p",
+            "The wellbeing results were larger. By the final survey, recipients were 13 percentage points less likely to report anxiety and 11 points less likely to report depression; life satisfaction rose by almost one point on a ten-point scale; and they were nearly 20 points less likely to say they struggled to make ends meet. The probability of saying they could not find work in the arts fell by 13 to 18 points. Their social welfare payments fell by about €100 a month.[18]"
+          ],
+          [
+            "p",
+            "The pilot cost about €114 million gross from 2021 to 2025. Taxes on the payments, other tax changes and lower welfare spending brought back nearly 37% of that. The evaluators counted just over €100 million in benefits, mostly in wellbeing, and concluded that society got €1.39 back for every €1 of public money.[18] There are limits: the comparison group was offered €650 a year to keep answering surveys, some members of it dropped out, and a three-year guaranteed payment to a few artists is not the same as a universal floor."
+          ],
+          [
+            "p",
+            "Ireland has since made the scheme permanent. Applications for a new round of 2,000 places at €325 a week for three years closed in May 2026. Just over 10,000 people applied, so about four in five will miss out. The first recipients were told from 15 October 2026, with payments backdated to September 2026. The culture minister, Patrick O’Donovan, called it “a game changer, and now it is here to stay”.[19]"
+          ],
+          [
+            "p",
+            "The Irish government’s own AI Advisory Council made the link to AI explicitly. In a February 2025 advice paper on AI and the creative sector, it wrote that “expanding UBI to creators affected by AI disruption could support their adaptation to new economic realities”, defined that disruption as a measurable loss of income or work directly attributable to generative AI, and recommended extending the scheme to support creators affected by it. In the same paper it recommended SAG-AFTRA-style consent rules for performers.[20] The permanent scheme, as launched, does not target AI-affected creators."
+          ],
+          [
+            "p",
+            "The US offers a second, independent test. {Creatives Rebuild New York|/timeline/#tl-crny-artists} paid $1,000 a month for 18 months to 2,400 low-income artists in New York State. A peer-reviewed study by researchers at Indiana University, published in 2026, compared them with applicants who were not selected: recipients spent 3.9 more hours a week on arts work and 2.4 fewer on other work, and the change in their total earnings was not statistically significant.[21] The researchers’ earlier briefs found less food insecurity and fewer severe symptoms of anxiety and depression, though those relied mostly on before-and-after self-reports.[22]"
+          ],
+          [
+            "o",
+            "Two experiments on two continents point the same way. Given a modest floor, artists move time from side jobs into their art, stay in the field and are markedly less anxious. Neither scheme made them rich, and neither was about AI."
+          ],
+          [
+            "h",
+            "Complements, not rivals"
+          ],
+          [
+            "p",
+            "Put the two parts of this essay together and a division of labour appears. Consent and pay, whether through court settlements, licences or union contracts, help the people whose work is actually used and who can show it. They come slowly and unevenly, and much of the money stops with whoever owns the rights. An income floor helps a different group: the illustrator whose clients have switched to a tool, the translator whose rates have halved, the young artist who can no longer pay the rent with side work. Their loss cannot be traced to any single training set, and no settlement will reach them."
+          ],
+          [
+            "p",
+            "The scale of the two is also different. Anthropic’s settlement pays at least $3,000 per book, once. Ireland’s scheme pays about €16,900 a year per artist, but to 2,000 of more than 10,000 applicants. Neither is a basic income in the full sense: one is compensation for a past use, the other a selective payment to a small group. But the Irish results show what even a partial floor can do, and the Advisory Council’s recommendation shows that a government body has already drawn the connection."
+          ],
+          [
+            "p",
+            "Japan has neither yet: no national income scheme for artists, and copyright rules that allow training broadly. The answers so far, from the Agency for Cultural Affairs’ guidance to the actors’ union’s guidelines, are about rights. They matter. But a rights-only answer leaves out the creators who are squeezed out of work without anyone having used their work at all."
+          ],
+          [
+            "h",
+            "Neither “AI is ending art” nor “nothing is happening”"
+          ],
+          [
+            "o",
+            "Here is what the evidence shows as of November 2026. Generative AI has cut demand for some kinds of creative work, especially illustration, translation and writing bought piece by piece, and the cuts are measurable on freelance platforms and visible in creators’ surveys. It has not ended creative work, and most of the scary figures in circulation are projections or fears rather than measurements. Compensation is starting to flow, but mostly to rights holders, once, and through lawsuits."
+          ],
+          [
+            "o",
+            "Creators are right to ask first for consent and pay. A basic income is not a substitute for that, and it should not be sold as one. But the best experiment we have, Ireland’s, suggests that a floor keeps people in their craft and steadies their lives at a moment when their markets are shifting under them. In {part 1|/essays/generative-ai-jobs-basic-income/} we saw that the people hit first are the ones with the least protection. In creative work, that is the freelancer with no employer, no union and no claim on any settlement. That is exactly who a floor is for."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "2025年秋、フリーランスの声を代弁する団体「日本フリーランスリーグ」が、生成AIについてクリエイターに調査を行いました。回答は2万4,991件、その約7割はイラストレーター、漫画家、アニメーターなど「絵を描く人」です。生成AIによって収入や売上が「減った」と答えた人は12.0%（少し減った9.3%、大きく減った2.7%）。一方で、生成AIが生活や仕事にとって深刻な脅威だと答えた人は88.6%でした。[1]"
+          ],
+          [
+            "p",
+            "この2つの数字が、この記事の出発点です。不安はほとんど全員が抱えています。実際に測られた損失は、いまのところ確かにあるものの、ずっと小さい。どちらも大事な事実です。{前編|/essays/generative-ai-jobs-basic-income/}では、AIは雇用全体にはまだはっきりした跡を残していない一方で、若い人にとっての入口は狭まりつつあり、真っ先に影響を受けたのはフリーランスだったことを見ました。後編では、クリエイターの仕事を取り上げます。何が測られているのか、AIをめぐるお金はどこへ流れているのか、クリエイター自身は何を求めているのか、そして芸術家向けのベーシックインカムは、実際に試された場所で何をもたらしたのか。"
+          ],
+          [
+            "h",
+            "測られていること"
+          ],
+          [
+            "p",
+            "いちばんはっきりした証拠は、仕事が1件ずつ募集され、1件ずつ支払われるオンラインのフリーランス市場から出ています。シャン・ホイ、オレン・レシェフ、ルオフォン・ジョウの3人は、Upworkのデータを調べました。画像生成AIのDALL-E 2やMidjourneyが登場したあと、画像関連の仕事をするフリーランス（デザイナー、画像編集者、アーティスト）は、月あたりの仕事の件数が3.7%、月収が9.4%減りました。ライティングのフリーランスは、ChatGPTの登場後に件数が2%、収入が5.2%減っています。評価の高いフリーランスでも影響を免れていませんでした。[2]"
+          ],
+          [
+            "p",
+            "オーレ・トイトロフらの研究（学術誌Journal of Economic Behavior & Organizationに掲載）は、より大規模です。世界的なフリーランス・プラットフォームに2021年から2023年に出された300万件以上の募集を分析し、ライティングや翻訳など、AIが部分的に代われるスキルへの需要が、本来予想される水準より20〜50%減ったと推計しました。落ち込みがいちばん大きかったのは経験豊富な人たちです。逆に、AIと組み合わせて使うスキルへの需要は増え、チャットボット開発の仕事はほぼ3倍になりました。フリーランスの需要全体は減っていません。[3]"
+          ],
+          [
+            "p",
+            "クリエイターへのアンケートは、この全体像を補ってくれます。ただし、アンケートは本人がどう感じているかを尋ねるもので、影響を受けたと感じている人ほど回答しやすいという限界があります。英国作家協会（Society of Authors）の2024年1月の調査（回答787件）では、イラストレーターの26%、翻訳者の36%が、生成AIのせいですでに仕事を失ったと答えました。[4] ケンブリッジ大学が2025年11月に公表した、英国で本を出している小説家258人への調査では、39%が収入がすでに打撃を受けたと答え（主にコピーライティングなどの副業が減ったため）、85%が今後さらに減ると予想していました。[5] 英国写真家協会（Association of Photographers）の2026年1月の調査では、会員約3,000人のうち約600人が回答し、58%が生成AIのせいで依頼の仕事を失ったと答えました。前年と同じ割合です。報告された平均の損失は1人あたり約3万4,900ポンドに増えましたが、公表された概要からは、この平均がどう計算されたのかははっきりしません。[6]"
+          ],
+          [
+            "p",
+            "主な結果を並べると、次のようになります。"
+          ],
+          [
+            "t",
+            "調査 | 対象 | 結果\n日本フリーランスリーグ（2025年） | 日本のクリエイター2万4,991人（多くは絵を描く人） | AIで収入が減った12.0%、深刻な脅威と感じる88.6%[1]\nホイ、レシェフ、ジョウ | Upworkのフリーランス | 画像：件数−3.7%、収入−9.4%／ライティング：−2%、−5.2%[2]\nトイトロフほか | フリーランス募集300万件以上 | ライティング・翻訳の需要−20〜−50%、チャットボット開発はほぼ3倍[3]\n英国作家協会（2024年） | 作家・イラストレーター・翻訳者787人 | すでに仕事を失った：イラストレーター26%、翻訳者36%[4]\nケンブリッジ大学（2025年） | 英国の小説家258人 | 収入がすでに打撃39%、今後減ると予想85%[5]\n英国写真家協会（2026年） | プロの写真家約600人 | 依頼の仕事を失った58%[6]"
+          ],
+          [
+            "o",
+            "傾向ははっきりしています。イラスト、素材写真のような画像、翻訳、コピーライティングなど、1件単位で買われる仕事から先に地盤を失っています。ただ、創作の仕事全体が崩れていることを示す研究は、まだありません。"
+          ],
+          [
+            "h",
+            "「予測」であって「測定」ではない数字"
+          ],
+          [
+            "p",
+            "AIと文化をめぐる議論でいちばんよく引用される数字は、各国の著作権管理団体の国際組織CISACが出したものです。コンサルティング会社PMP Strategyと2024年12月に公表した調査で、生成AIがなかった場合と比べて、2028年までに音楽のクリエイターの収入の約24%、映像のクリエイターの収入の約21%が危険にさらされると予測しました。5年間の累計で約220億ユーロの損失です。その間に、AIが生成した音楽と映像の市場は、年間でそれぞれ約160億ユーロ、約480億ユーロに育つとしています。[7]"
+          ],
+          [
+            "p",
+            "これは、いまの流れが続き、法律や契約が何も変わらなかった場合に何が起こりうるかを示すモデルです。何がかかっているかの規模をつかむには役立ちますが、実際に起きたことの証拠ではありません。"
+          ],
+          [
+            "h",
+            "お金はどこへ流れているか"
+          ],
+          [
+            "p",
+            "AI企業がクリエイターの作品を使っているなら、そのお金の一部は戻ってき始めています。主な経路は裁判とライセンスです。これまでで最大の例は、米国のBartz対Anthropic訴訟です。AIモデルClaudeを開発するAnthropicは、海賊版サイトから入手した書籍をめぐる請求について、15億ドルを支払う和解に応じました。裁判所は2025年6月、書籍をAIの学習に使うことはフェアユース（公正利用）にあたる一方、海賊版のコピーを保存しておくことはあたらないと判断していました。和解の対象は約50万点で、1点あたり少なくとも3,000ドル（費用・報酬を差し引く前）。出版社が権利を持つ場合は、原則として著者と出版社で半分ずつ分けます。和解は2026年7月に承認され、最初の支払いは2026年11月23日の週に始まる予定です。[8]"
+          ],
+          [
+            "p",
+            "音楽では、大手レコード会社がAI作曲サービスのSunoとUdioを訴えたあと、2025年末までに和解し、訴訟をライセンス契約に切り替えました。2026年6月には、米国のミュージシャンの労働組合である米国音楽家連盟（AFM）が、ユニバーサル・ミュージックとワーナー・ミュージックを訴えました。組合員が演奏した録音を「補償もクレジットもなく」SunoとUdioにライセンスし、誰の作品が使われたのかも明かさない、という主張です。[9] 要点は単純です。ライセンス料は権利を持つ者に支払われます。そして権利を持つ者は、多くの場合、その作品をつくった本人ではありません。"
+          ],
+          [
+            "p",
+            "ほかの国では、裁判所はまだ肝心の問いに答えていません。英国のGetty Images対Stability AI訴訟で、高等法院は2025年11月、画像生成モデルStable Diffusionは学習に使った画像を保存していないため「侵害複製物」ではないと判断しました。学習が英国外で行われたため、Gettyは学習そのものについての主な請求を取り下げていました。[10] Gettyには上訴が認められています。[11] 米国では、ニューヨーク・タイムズがOpenAIとMicrosoftを訴えた裁判で、2026年9月にフェアユースをめぐって双方が略式判決を求めましたが、判断も公判の日程もまだ出ていません。[12]"
+          ],
+          [
+            "p",
+            "日本は別の道を歩んでいます。著作権法30条の4は、作品に表現された思想や感情を「享受」することが目的でない場合、AIの学習のために許可なく作品を利用することを広く認めており、この条文は改正されていません。文化庁が2024年に示した「考え方」は、その限界を整理しています。学習した作品の創作的な表現をそのまま出力させることが目的に含まれる場合や、著作権者の利益を不当に害する場合には、この例外は適用されません。作風をまねるだけなら、作風はアイデアであって表現ではないので、侵害にはあたりません。この「考え方」に法的な拘束力はありません。[13]"
+          ],
+          [
+            "o",
+            "補償は届き始めています。ただし、ゆっくりと、1件ずつ、主に弁護士を立てられる権利者に。1冊3,000ドルの一時金は確かにお金です。でも、それは収入ではありません。"
+          ],
+          [
+            "h",
+            "クリエイターが求めているのは「同意」と「対価」"
+          ],
+          [
+            "p",
+            "クリエイターがまとまっているところでは、条件を勝ち取っています。米国の俳優組合SAG-AFTRAのゲーム出演者は、11か月のストライキを経て、2025年7月に新しい協約を95.04%の賛成で承認しました。演者のデジタル複製をつくったり使ったりする前に、別途、書面で同意を得ること、どう使うかを説明すること、ストライキ中は同意を停止できること、複製の利用に最低報酬を設けることが盛り込まれています。[14] 全米脚本家組合（WGA）の2026年の協約は、2026年4月に投票者の90.38%の賛成で承認されました。AIが生成した文章は脚本などの「文芸素材」とみなさないという2023年のルールを維持したうえで、制作会社が脚本家の作品をAIの学習用にライセンスする場合は組合に書面で通知しなければならず、組合はそのライセンスと脚本家への支払いについて協議を求められる、という条項が加わりました。[15]"
+          ],
+          [
+            "p",
+            "日本では、俳優や声優約2,600人が加入する日本俳優連合（日俳連）が、2026年10月15日に「音声に関する生成AI利用ガイドライン」を公表しました。学習、生成、公開・利用のすべての段階で事前の許諾を求めること、AI音声の利用を新たな実演と同等とみなして適切な対価を支払うこと、AIによる他言語への吹き替えには新たな許諾と追加の報酬が必要なこと、亡くなった演者の声を再現するには遺族などの同意が必要なことを定めています。日俳連は、法律で「声の権利」が認められるまでの、業界の自主的な基準と位置づけています。[16]"
+          ],
+          [
+            "p",
+            "はっきり書いておく価値があります。多くのクリエイターが求めているのは、作品を使うことへの同意と対価であって、ベーシックインカムではありません。米国作家協会（Authors Guild）が2,400人以上の作家に行った調査では、96%が、作品をAIの学習に使う前に同意を得るべきだと答えました。[17] これはまっとうな要求であり、この記事の主張とは別のものです。"
+          ],
+          [
+            "o",
+            "同意と対価は、作品が実際に使われ、条件を守らせられるだけまとまっている人を助けます。単に依頼が来なくなったイラストレーターには、あまり届きません。"
+          ],
+          [
+            "h",
+            "芸術家への「収入の床」について、いちばん確かな証拠：アイルランド"
+          ],
+          [
+            "p",
+            "ベーシックインカムが芸術家に何をもたらすかについて、いちばん確かな証拠はアイルランドにあります。2022年に始まった{芸術のためのベーシックインカム（Basic Income for the Arts）の試行|/timeline/#tl-ireland-arts}は、芸術家と芸術関連の仕事をする2,000人に、週325ユーロを3年間（のちに2026年2月まで延長）支払いました。この給付は課税対象で、自営業の所得として扱われます。同時に、実験としても設計されていました。条件を満たした応募者約8,200人のうち、2,000人を無作為に選んで給付し、1,000人を給付のない比較グループに割り当てたのです。[18]"
+          ],
+          [
+            "p",
+            "最終評価は、文化省の委託でAlma Economicsがまとめ、2025年9月に公表されました。比較グループと比べると、受給者は1年後に創作活動に使う時間が週約4時間増え、最後の調査では5時間を超えました。リサーチに使う時間も週約2.3時間増えています。芸術以外の仕事の時間は、1年後に週2.7時間、最後には4.3時間減りました。芸術からの収入は平均で月500ユーロ以上増え、それ以外の仕事からの収入は約280ユーロ減りました。新しい作品を完成させる確率も約10ポイント高くなっています。[18]"
+          ],
+          [
+            "p",
+            "心の健康への効果は、さらに大きなものでした。最後の調査では、受給者は不安を訴える確率が13ポイント、うつを訴える確率が11ポイント低く、生活満足度は10段階で1ポイント近く上がり、「やりくりが苦しい」と答える確率は約20ポイント低くなりました。「芸術の分野で仕事が見つけられない」と答える確率は13〜18ポイント下がっています。社会保障の給付は月約100ユーロ減りました。[18]"
+          ],
+          [
+            "p",
+            "試行の総費用は、2021年から2025年で約1億1,400万ユーロでした。給付にかかる税、その他の税収の変化、社会保障支出の減少で、そのうち37%近くが戻ってきています。評価チームは便益を1億ユーロ強（主に心身の健康）と見積もり、公的資金1ユーロにつき社会に1.39ユーロが戻ったと結論づけました。[18] 限界もあります。比較グループには調査に答え続けてもらうために年650ユーロが支払われ、途中で抜けた人もいます。また、少数の芸術家への3年間の保証付きの給付は、全員に届く「床」とは同じではありません。"
+          ],
+          [
+            "p",
+            "アイルランドはその後、この制度を恒久化しました。2,000人分の枠に週325ユーロを3年間支払う新しい募集は2026年5月に締め切られ、応募は1万人をわずかに超えました。応募者の約5人に4人は落選することになります。最初の受給者への通知は2026年10月15日から始まり、支払いは2026年9月にさかのぼります。パトリック・オドノバン文化相は「これは状況を一変させるもので、今後もなくなることはない」と述べました。[19]"
+          ],
+          [
+            "p",
+            "アイルランド政府自身のAI諮問評議会は、AIとのつながりをはっきり打ち出しています。AIと創作分野についての2025年2月の提言書で、「AIによる混乱の影響を受けたクリエイターにUBIを広げれば、新しい経済の現実に適応するのを助けられる」と書き、その混乱を「生成AIに直接起因する、収入や仕事の機会の測定可能な損失」と定義したうえで、制度を拡大してそうしたクリエイターを支えるよう勧告しました。同じ提言書は、演者についてSAG-AFTRA型の同意ルールも勧告しています。[20] ただし、実際に始まった恒久制度は、AIの影響を受けたクリエイターを対象にしてはいません。"
+          ],
+          [
+            "p",
+            "米国には、もう一つの独立した検証があります。{Creatives Rebuild New York|/timeline/#tl-crny-artists}は、ニューヨーク州の低所得の芸術家2,400人に、月1,000ドルを18か月間支払いました。インディアナ大学の研究者による査読済みの研究（2026年）は、選ばれなかった応募者と比べ、受給者は芸術の仕事に使う時間が週3.9時間増え、それ以外の仕事が週2.4時間減り、総収入の変化は統計的に有意ではなかったと報告しています。[21] 研究チームが先に出した報告では、食料不安や重い不安・うつの症状が減ったとされていますが、こちらは主に給付前後の自己申告にもとづいています。[22]"
+          ],
+          [
+            "o",
+            "2つの大陸の2つの実験が、同じ方向を示しています。ささやかな「床」があると、芸術家は副業から創作へと時間を移し、その分野にとどまり、不安がはっきり減ります。どちらの制度も芸術家を豊かにはしませんでしたし、どちらもAIをきっかけにしたものではありません。"
+          ],
+          [
+            "h",
+            "対立ではなく、補い合うもの"
+          ],
+          [
+            "p",
+            "この記事の2つの話を合わせると、役割分担が見えてきます。和解金、ライセンス、労働協約による同意と対価は、作品が実際に使われ、それを示せる人を助けます。届くのは遅く、ばらつきがあり、お金の多くは権利を持つ者のところで止まります。収入の床が助けるのは、別の人たちです。取引先が道具に乗り換えてしまったイラストレーター、単価が半分になった翻訳者、副業では家賃を払えなくなった若いアーティスト。こうした人の損失は、どこかの学習データにたどれるものではなく、どんな和解金も届きません。"
+          ],
+          [
+            "p",
+            "規模も違います。Anthropicの和解は1冊あたり少なくとも3,000ドルを1回だけ。アイルランドの制度は1人あたり年約1万6,900ユーロを支払いますが、届くのは1万人を超える応募者のうち2,000人です。どちらも本来の意味でのベーシックインカムではありません。一方は過去の利用への補償、もう一方は少数の人を選んで支払う給付です。それでもアイルランドの結果は、部分的な床でも何ができるかを示しており、諮問評議会の勧告は、政府の機関がすでにこの2つを結びつけたことを示しています。"
+          ],
+          [
+            "p",
+            "日本には、まだそのどちらもありません。芸術家向けの国の所得制度はなく、著作権のルールは学習を広く認めています。文化庁の「考え方」から日俳連のガイドラインまで、これまでの対応は権利をめぐるものです。それは大切です。でも、権利だけの答えでは、誰にも作品を使われないまま仕事から押し出されていくクリエイターが抜け落ちます。"
+          ],
+          [
+            "h",
+            "「AIが創作を終わらせる」でも「何も起きていない」でもない"
+          ],
+          [
+            "o",
+            "2026年11月時点で証拠が示しているのは、次のようなことです。生成AIは、ある種の創作の仕事、とくに1件単位で買われるイラスト、翻訳、ライティングへの需要を減らしており、その減り方はフリーランス市場で測られ、クリエイターの調査にも表れています。創作の仕事を終わらせてはいませんし、出回っている怖い数字の多くは、測定ではなく予測や不安です。補償は流れ始めていますが、主に権利者に、1回きりで、裁判を通じてです。"
+          ],
+          [
+            "o",
+            "クリエイターが真っ先に同意と対価を求めるのは正しいことです。ベーシックインカムはその代わりにはならず、代わりとして売り込むべきでもありません。けれど、いまある中でいちばん確かな実験であるアイルランドの結果は、市場が足もとで揺らいでいるときに、床があれば人は自分の仕事を続けられ、暮らしが落ち着くことを示しています。{前編|/essays/generative-ai-jobs-basic-income/}で見たように、最初に打撃を受けるのは、いちばん守られていない人です。創作の世界でいえば、雇い主も組合もなく、どの和解金にも名前のないフリーランスです。床が必要なのは、まさにそういう人たちです。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2025 年秋，代表自由职业者发声的团体日本自由职业者联盟（Japan Freelance League）就生成式 AI 向日本的创作者进行了调查，共收到 24,991 份回答，约七成来自从事绘画的人：插画师、漫画家和动画师。被问到生成式 AI 是否减少了自己的收入或销售额时，12.0% 回答“是”（9.3% 为“略有减少”，2.7% 为“大幅减少”）。被问到它是否严重威胁自己的生计时，88.6% 回答“是”。[1]"
+          ],
+          [
+            "p",
+            "这两个数字是本文的出发点。恐惧几乎人人都有；而实际测量到的损失，到目前为止确实存在，但要小得多。两者都很重要。在{上篇|/essays/generative-ai-jobs-basic-income/}中我们看到，AI 还没有在整体就业上留下明显痕迹，但年轻人的入口正在变窄，自由职业者最先感受到冲击。本篇我们来看创意工作：实际测量到了什么，AI 带来的钱流向哪里，创作者自己在要求什么，以及在已经尝试过的地方，艺术家基本收入实际起了什么作用。"
+          ],
+          [
+            "h",
+            "实际测量到了什么"
+          ],
+          [
+            "p",
+            "最清楚的证据来自在线自由职业市场，那里每一单工作都单独发布、单独付款。Xiang Hui、Oren Reshef 和 Luofeng Zhou 研究了 Upwork。图像生成工具 DALL-E 2 和 Midjourney 出现后，从事图像工作的自由职业者（设计师、图像编辑、艺术家）每月的工作数量减少了 3.7%，每月收入减少了 9.4%。ChatGPT 出现后，写作类自由职业者的工作减少了 2%，收入减少了 5.2%。评价更高的自由职业者也没有幸免。[2]"
+          ],
+          [
+            "p",
+            "Ole Teutloff 等人发表在《经济行为与组织期刊》（Journal of Economic Behavior & Organization）上的一项更大规模的研究，分析了 2021 年至 2023 年某全球自由职业平台上的 300 多万条招聘信息。与原本应有的水平相比，写作、翻译等 AI 可以部分替代的技能需求下降了 20% 到 50%，而且经验丰富的从业者降幅最大。与 AI 配合使用的技能需求则上升了：开发聊天机器人的工作几乎增至三倍，自由职业需求整体并没有下降。[3]"
+          ],
+          [
+            "p",
+            "对创作者的问卷调查补充了这幅图景，但要注意，问卷问的是人们的看法，而且自认为受到冲击的人更愿意回答。在英国作家协会（Society of Authors）2024 年 1 月的调查中（787 份回答），26% 的插画师和 36% 的译者说已经因生成式 AI 失去了工作。[4] 剑桥大学 2025 年 11 月发布的一项针对 258 位已出版作品的英国小说家的研究发现，39% 的人说收入已经受到影响，主要是失去了文案写作等副业，85% 的人预计收入会进一步下降。[5] 在英国摄影师协会（Association of Photographers）2026 年 1 月的调查中，约 3,000 名会员中约 600 人作答，58% 说已经因生成式 AI 失去了委托工作，比例与一年前相同；报告的平均损失升至每人约 34,900 英镑，不过公布的摘要没有说明这个平均值具体是怎么计算的。[6]"
+          ],
+          [
+            "p",
+            "主要发现对照如下："
+          ],
+          [
+            "t",
+            "来源 | 对象 | 发现\n日本自由职业者联盟（2025） | 日本 24,991 名创作者，大多从事绘画 | 因 AI 收入减少：12.0%；视 AI 为严重威胁：88.6%[1]\nHui、Reshef 与 Zhou | Upwork 自由职业者 | 图像：工作 −3.7%，收入 −9.4%；写作：−2%，−5.2%[2]\nTeutloff 等 | 300 多万条自由职业招聘信息 | 写作和翻译需求 −20% 至 −50%；聊天机器人工作几乎 ×3[3]\n英国作家协会（2024） | 787 名作家、插画师和译者 | 已失去工作：插画师 26%，译者 36%[4]\n剑桥大学（2025） | 258 名英国小说家 | 收入已受影响：39%；预计会下降：85%[5]\n英国摄影师协会（2026） | 约 600 名职业摄影师 | 失去委托工作：58%[6]"
+          ],
+          [
+            "o",
+            "规律是一致的：按件购买的工作，比如插画、图库类图片、翻译和文案，最先失去阵地。但还没有任何研究显示创意工作整体正在崩溃。"
+          ],
+          [
+            "h",
+            "是预测，不是测量"
+          ],
+          [
+            "p",
+            "关于 AI 与文化的讨论中最常被引用的数字，来自各国作者协会的全球联合会 CISAC（国际作者和作曲者协会联合会）。它与咨询公司 PMP Strategy 合作、于 2024 年 12 月发布的研究预测，与没有生成式 AI 的世界相比，到 2028 年音乐创作者约 24% 的收入、视听创作者约 21% 的收入将面临风险：五年累计损失约 220 亿欧元，而 AI 生成的音乐和视频市场将分别增长到每年约 160 亿欧元和 480 亿欧元。[7]"
+          ],
+          [
+            "p",
+            "这是一个模型，描述的是如果当前趋势持续、法律和合同都不变时可能发生的情况。它有助于看清利害的规模，但并不是已经发生之事的证据。"
+          ],
+          [
+            "h",
+            "钱流向哪里"
+          ],
+          [
+            "p",
+            "如果 AI 公司在使用创作者的作品，一部分钱正开始流回来，主要通过法院和授权许可。迄今最大的案件是美国的 Bartz 诉 Anthropic 案。开发 AI 模型 Claude 的 Anthropic 公司同意支付 15 亿美元，了结其从盗版图书馆下载图书引发的索赔。法官曾在 2025 年 6 月裁定，用图书进行训练属于合理使用，但保留盗版副本不属于。和解涵盖约 50 万种图书，每种至少 3,000 美元（扣除费用前），出版商持有权利时，默认由作者和出版商五五分成。和解于 2026 年 7 月获批，首批款项预计在 2026 年 11 月 23 日那一周开始支付。[8]"
+          ],
+          [
+            "p",
+            "在音乐领域，各大唱片公司起诉了 AI 歌曲生成工具 Suno 和 Udio，随后在 2025 年底和解，把诉讼变成了授权协议。2026 年 6 月，美国音乐家工会“美国音乐家联合会”（American Federation of Musicians）起诉环球音乐集团和华纳音乐集团，称这两家唱片公司把工会成员录制的作品授权给 Suno 和 Udio，“既无报酬，也无署名”，并拒绝说明涉及的是谁的作品。[9] 道理很简单：授权费流向权利的所有者，而所有者往往不是作品的创作者本人。"
+          ],
+          [
+            "p",
+            "在其他地方，法院还没有解决核心问题。在 Getty Images 诉 Stability AI 案中，英国高等法院于 2025 年 11 月裁定，Stable Diffusion 模型不是“侵权复制品”，因为它并不存储训练所用的图像；由于训练发生在英国境外，Getty 此前已撤回了关于训练的主要诉求。[10] Getty 已获准上诉。[11] 在美国，《纽约时报》起诉 OpenAI 和微软的案件已于 2026 年 9 月进入双方就合理使用问题交叉申请简易判决的阶段，目前既无裁决，也未定审判日期。[12]"
+          ],
+          [
+            "p",
+            "日本走了一条不同的路。《著作权法》第 30 条之 4 广泛允许在目的不是“享受”作品中的表达时，未经许可将作品用于 AI 训练，而且这一条至今没有修改。日本文化厅 2024 年的指南列出了界限：如果目的包括生成再现训练作品创作性表达的输出，该例外不适用；如果使用会不当损害著作权人的利益，也不适用。仅仅模仿风格不构成侵权，因为风格是思想而不是表达。该指南没有法律约束力。[13]"
+          ],
+          [
+            "o",
+            "补偿正在到来，但很慢，一案一案地来，而且主要流向有律师的权利人。每本书一次性 3,000 美元是真金白银，但它不是收入。"
+          ],
+          [
+            "h",
+            "创作者在要求什么：同意与报酬"
+          ],
+          [
+            "p",
+            "在创作者组织起来的地方，他们争取到了条件。经过 11 个月的罢工，美国演员工会（SAG-AFTRA）的电子游戏演员于 2025 年 7 月以 95.04% 的赞成票批准了新协议：在制作或使用演员的数字复制品之前，必须另行取得书面同意，说明其用途，罢工期间演员有权暂停同意，并规定了使用复制品的最低报酬。[14] 美国编剧工会（Writers Guild of America）的 2026 年合同于 2026 年 4 月以 90.38% 的投票者赞成获得批准，保留了 2023 年“AI 生成的文本不是文学素材”的规定，并新增：制片公司若把编剧的作品授权用于训练 AI，必须书面通知工会，之后工会可以要求就该授权以及给编剧的报酬进行协商。[15]"
+          ],
+          [
+            "p",
+            "在日本，拥有约 2,600 名演员和配音演员的日本俳优连合（Japan Actors Union）于 2026 年 10 月 15 日发布了关于生成式 AI 与声音的指南。指南要求从训练、生成到发布的每个阶段都事先取得许可；把每一次使用 AI 声音都视为一次新的表演，应当付费；用 AI 配音成其他语言需要新的许可和额外报酬；重现已故演员的声音之前须取得继承人的同意。在法律承认声音权之前，工会把这份指南定位为自愿遵守的行业标准。[16]"
+          ],
+          [
+            "p",
+            "有一点值得说清楚：大多数创作者要求的是作品被使用时的同意和报酬，而不是基本收入。在美国作家协会（Authors Guild）对 2,400 多名美国作者的调查中，96% 的人说，作品被用于训练 AI 之前应当征得同意。[17] 这些要求是正当的，也和我们的主张不同。"
+          ],
+          [
+            "o",
+            "同意与报酬能帮助那些作品被使用、而且组织起来足以执行条件的人。对于只是再也接不到委托的插画师，它们的帮助有限。"
+          ],
+          [
+            "h",
+            "关于艺术家收入底线的最好证据：爱尔兰"
+          ],
+          [
+            "p",
+            "关于基本收入对艺术家有何作用，最有力的证据来自爱尔兰。其 2022 年启动的{艺术基本收入试点|/timeline/#tl-ireland-arts}向 2,000 名艺术家和艺术工作者每周发放 325 欧元，为期三年，后来延长到 2026 年 2 月。这笔钱需要纳税，计为自雇收入。它在设计上也是一项实验：在约 8,200 名符合条件的申请人中，随机抽取 2,000 人领取，另有 1,000 人被分入不领取的对照组。[18]"
+          ],
+          [
+            "p",
+            "由 Alma Economics 为文化部所做的最终评估于 2025 年 9 月发布。与对照组相比，受领者一年后每周用于艺术创作的时间多了约 4 小时，到最后一次调查时增至 5 小时以上，用于研究的时间多了约 2.3 小时。他们在艺术以外工作的时间一年后每周少了 2.7 小时，到最后少了 4.3 小时。来自艺术的收入平均每月增加 500 多欧元，而其他工作的收入减少了约 280 欧元。他们完成新作品的可能性高出约 10 个百分点。[18]"
+          ],
+          [
+            "p",
+            "身心健康方面的效果更大。到最后一次调查时，受领者报告焦虑的可能性低 13 个百分点，报告抑郁的可能性低 11 个百分点；以十分制衡量的生活满意度提高了将近 1 分；说自己难以维持生计的可能性低了将近 20 个百分点。说自己在艺术领域找不到工作的可能性下降了 13 到 18 个百分点。他们领取的社会福利每月减少了约 100 欧元。[18]"
+          ],
+          [
+            "p",
+            "试点在 2021 年至 2025 年间的毛成本约为 1.14 亿欧元。对这笔钱征收的税、其他税收变化以及福利支出的减少收回了其中将近 37%。评估者计算出的收益略高于 1 亿欧元，大部分来自身心健康，并得出结论：每 1 欧元公共资金为社会带来 1.39 欧元的回报。[18] 但也有局限：对照组每年可获得 650 欧元以继续回答调查，部分成员中途退出，而且向少数艺术家保证发放三年的款项，与普遍性的底线并不相同。"
+          ],
+          [
+            "p",
+            "爱尔兰此后已把这一计划常态化。新一轮 2,000 个名额、每周 325 欧元、为期三年的申请于 2026 年 5 月截止。申请人略多于 10,000 人，因此约五分之四的人会落选。首批受领者自 2026 年 10 月 15 日起陆续收到通知，款项追溯至 2026 年 9 月。文化部长帕特里克·奥多诺万（Patrick O’Donovan）称之为“一个改变局面的举措，而且现在它将长期存在”。[19]"
+          ],
+          [
+            "p",
+            "爱尔兰政府自己的 AI 咨询委员会明确地把它和 AI 联系了起来。在 2025 年 2 月一份关于 AI 与创意产业的建议文件中，委员会写道：“将基本收入扩大到受 AI 冲击的创作者，可以帮助他们适应新的经济现实”，并把这种冲击定义为可直接归因于生成式 AI 的、可测量的收入或工作损失，建议扩大该计划以支持受其影响的创作者。在同一份文件中，委员会还建议为表演者制定类似 SAG-AFTRA 的同意规则。[20] 而已经启动的常态化计划，并不以受 AI 影响的创作者为对象。"
+          ],
+          [
+            "p",
+            "美国提供了第二个独立的检验。{纽约创意重建计划（Creatives Rebuild New York）|/timeline/#tl-crny-artists}向纽约州 2,400 名低收入艺术家每月发放 1,000 美元，为期 18 个月。印第安纳大学研究人员于 2026 年发表的一项经同行评审的研究，把他们与未被选中的申请人进行了比较：受领者每周用于艺术工作的时间多 3.9 小时，用于其他工作的时间少 2.4 小时，总收入的变化在统计上不显著。[21] 研究人员早先的简报发现，粮食不安全减少了，严重焦虑和抑郁症状也减少了，不过这些结果主要依据的是前后对比的自我报告。[22]"
+          ],
+          [
+            "o",
+            "两个大洲的两项实验指向同一个方向。有了一份适度的底线，艺术家会把时间从副业转向艺术，留在这个领域，焦虑也明显减少。两项计划都没有让他们变富，也都与 AI 无关。"
+          ],
+          [
+            "h",
+            "是互补，不是对立"
+          ],
+          [
+            "p",
+            "把本文的两部分放在一起，就能看出一种分工。同意与报酬，无论是通过法院和解、授权许可还是工会合同，帮助的是作品确实被使用、而且能够证明这一点的人。它们来得慢，也不均衡，而且很多钱停留在权利所有者手里。收入底线帮助的是另一群人：客户改用工具的插画师，报酬减半的译者，再也无法靠副业交房租的年轻艺术家。他们的损失无法追溯到任何一个训练数据集，任何和解也不会惠及他们。"
+          ],
+          [
+            "p",
+            "两者的规模也不同。Anthropic 的和解每本书至少支付 3,000 美元，只付一次。爱尔兰的计划每年向每位艺术家支付约 16,900 欧元，但对象只是 10,000 多名申请人中的 2,000 人。两者都不是完整意义上的基本收入：一个是对过去使用的补偿，另一个是对一小群人的选择性发放。但爱尔兰的结果显示了即使是部分的底线也能起到什么作用，而咨询委员会的建议表明，已经有政府机构把两者联系了起来。"
+          ],
+          [
+            "p",
+            "日本目前两者都没有：没有全国性的艺术家收入计划，著作权规则也广泛允许训练。迄今为止的应对，从文化厅的指南到演员工会的指南，都是关于权利的。它们很重要。但只谈权利的回答，漏掉了那些作品根本没被任何人使用、却被挤出工作的创作者。"
+          ],
+          [
+            "h",
+            "既不是“AI 正在终结艺术”，也不是“什么都没发生”"
+          ],
+          [
+            "o",
+            "截至 2026 年 11 月，证据显示的是这样的情况。生成式 AI 减少了对某些创意工作的需求，尤其是按件购买的插画、翻译和写作，这种减少在自由职业平台上可以测量，在创作者的调查中也看得见。它没有终结创意工作，流传的许多吓人数字是预测或担忧，而不是测量。补偿开始流动，但主要流向权利人，一次性的，而且是通过诉讼。"
+          ],
+          [
+            "o",
+            "创作者首先要求同意与报酬，这是对的。基本收入不能替代这些，也不应被当作替代品来推销。但我们所拥有的最好实验，即爱尔兰的实验表明，在市场脚下的地面正在移动的时候，一份底线能让人们留在自己的手艺里，让生活稳定下来。在{上篇|/essays/generative-ai-jobs-basic-income/}中我们看到，最先受冲击的是保护最少的人。在创意工作中，那就是没有雇主、没有工会、也无权分得任何和解金的自由职业者。底线正是为这样的人准备的。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "2025 की शरद ऋतु में फ़्रीलांसरों की आवाज़ उठाने वाले समूह जापान फ़्रीलांस लीग (Japan Freelance League) ने जापान के रचनाकारों से जनरेटिव AI के बारे में पूछा। उसे 24,991 जवाब मिले, जिनमें से लगभग दस में सात चित्र बनाने वालों के थे: इलस्ट्रेटर, मांगा कलाकार और एनिमेटर। यह पूछे जाने पर कि क्या जनरेटिव AI ने उनकी आय या बिक्री घटाई है, 12.0% ने हाँ कहा (9.3% ने थोड़ा, 2.7% ने बहुत)। यह पूछे जाने पर कि क्या यह उनकी रोज़ी-रोटी के लिए गंभीर ख़तरा है, 88.6% ने हाँ कहा।[1]"
+          ],
+          [
+            "p",
+            "ये दो आँकड़े इस लेख का शुरुआती बिंदु हैं। डर लगभग सबको है; मापा गया नुक़सान अब तक असली है, लेकिन कहीं छोटा। दोनों मायने रखते हैं। {भाग 1|/essays/generative-ai-jobs-basic-income/} में हमने पाया कि AI ने अब तक कुल रोज़गार पर कोई साफ़ निशान नहीं छोड़ा है, लेकिन युवाओं के लिए प्रवेश का दरवाज़ा संकरा हो रहा है और फ़्रीलांसरों ने इसे सबसे पहले महसूस किया। यहाँ हम रचनात्मक काम को देखते हैं: क्या मापा गया है, AI से आने वाला पैसा कहाँ जा रहा है, रचनाकार ख़ुद क्या माँग रहे हैं, और जहाँ कलाकारों के लिए बेसिक इनकम आज़माई गई है, वहाँ उसने असल में क्या किया है।"
+          ],
+          [
+            "h",
+            "क्या मापा गया है"
+          ],
+          [
+            "p",
+            "सबसे साफ़ सबूत ऑनलाइन फ़्रीलांस बाज़ारों से आता है, जहाँ हर काम अलग से पोस्ट होता है और अलग से भुगतान होता है। शियांग हुई, ओरेन रेशेफ़ और लुओफ़ेंग झोउ ने Upwork का अध्ययन किया। इमेज बनाने वाले टूल DALL-E 2 और Midjourney के आने के बाद इमेज का काम करने वाले फ़्रीलांसरों (डिज़ाइनर, इमेज एडिटर, कलाकार) के मासिक काम 3.7% और मासिक कमाई 9.4% घट गई। ChatGPT के बाद लेखन वाले फ़्रीलांसरों के काम 2% और कमाई 5.2% घटी। बेहतर रेटिंग वाले फ़्रीलांसर भी नहीं बचे।[2]"
+          ],
+          [
+            "p",
+            "Journal of Economic Behavior & Organization में प्रकाशित ओले ट्यूटलॉफ़ और उनके सहयोगियों के एक बड़े अध्ययन ने 2021 से 2023 तक एक वैश्विक फ़्रीलांस प्लेटफ़ॉर्म पर 30 लाख से ज़्यादा जॉब पोस्ट देखीं। जिन कौशलों की जगह AI आंशिक रूप से ले सकता है, जैसे लेखन और अनुवाद, उनकी माँग उस स्तर से 20% से 50% तक कम रही जिसकी वरना उम्मीद होती, और सबसे बड़ी गिरावट अनुभवी कामगारों के लिए थी। AI के साथ काम करने वाले कौशलों की माँग बढ़ी: चैटबॉट बनाने के काम लगभग तीन गुना हो गए, और कुल फ़्रीलांस माँग नहीं घटी।[3]"
+          ],
+          [
+            "p",
+            "रचनाकारों के सर्वे इस तस्वीर को पूरा करते हैं, इस शर्त के साथ कि वे लोगों से पूछते हैं कि वे क्या मानते हैं, और जिन्हें चोट महसूस होती है उनके जवाब देने की संभावना ज़्यादा होती है। ब्रिटेन की Society of Authors के जनवरी 2024 के सर्वे (787 जवाब) में 26% इलस्ट्रेटरों और 36% अनुवादकों ने कहा कि वे जनरेटिव AI के कारण काम खो चुके हैं।[4] नवंबर 2025 में जारी कैम्ब्रिज विश्वविद्यालय के 258 प्रकाशित ब्रिटिश उपन्यासकारों के अध्ययन में 39% ने कहा कि उनकी आय पर पहले ही असर पड़ा है, ज़्यादातर कॉपीराइटिंग जैसे साइड काम छिनने से, और 85% को उम्मीद थी कि यह और घटेगी।[5] ब्रिटेन की Association of Photographers के जनवरी 2026 के सर्वे में, जिसका जवाब उसके लगभग 3,000 सदस्यों में से करीब 600 ने दिया, 58% ने कहा कि वे जनरेटिव AI के कारण कमीशन वाला काम खो चुके हैं, जो एक साल पहले जितना ही हिस्सा है; बताया गया औसत नुक़सान बढ़कर प्रति व्यक्ति लगभग £34,900 हो गया, हालाँकि प्रकाशित सारांश यह नहीं बताता कि यह औसत ठीक-ठीक कैसे निकाला गया।[6]"
+          ],
+          [
+            "p",
+            "मुख्य निष्कर्ष साथ-साथ:"
+          ],
+          [
+            "t",
+            "स्रोत | किससे | निष्कर्ष\nजापान फ़्रीलांस लीग (2025) | जापान के 24,991 रचनाकार, ज़्यादातर चित्र बनाने वाले | AI के कारण आय घटी: 12.0%; AI को गंभीर ख़तरा मानते हैं: 88.6%[1]\nहुई, रेशेफ़ और झोउ | Upwork फ़्रीलांसर | इमेज: काम −3.7%, कमाई −9.4%; लेखन: −2%, −5.2%[2]\nट्यूटलॉफ़ व अन्य | 30 लाख से ज़्यादा फ़्रीलांस जॉब पोस्ट | लेखन और अनुवाद की माँग −20% से −50%; चैटबॉट काम लगभग ×3[3]\nSociety of Authors (ब्रिटेन, 2024) | 787 लेखक, इलस्ट्रेटर और अनुवादक | काम खो चुके: इलस्ट्रेटर 26%, अनुवादक 36%[4]\nकैम्ब्रिज विश्वविद्यालय (2025) | 258 ब्रिटिश उपन्यासकार | आय पर पहले ही असर: 39%; घटने की उम्मीद: 85%[5]\nAssociation of Photographers (ब्रिटेन, 2026) | लगभग 600 पेशेवर फ़ोटोग्राफ़र | कमीशन वाला काम खोया: 58%[6]"
+          ],
+          [
+            "o",
+            "पैटर्न एक जैसा है: जो काम टुकड़ों में ख़रीदा जाता है, जैसे इलस्ट्रेशन, स्टॉक जैसी इमेज, अनुवाद और कॉपीराइटिंग, वह सबसे पहले ज़मीन खो रहा है। लेकिन अब तक कोई अध्ययन यह नहीं दिखाता कि रचनात्मक काम कुल मिलाकर ढह रहा है।"
+          ],
+          [
+            "h",
+            "एक अनुमान, माप नहीं"
+          ],
+          [
+            "p",
+            "AI और संस्कृति की बहसों में सबसे ज़्यादा उद्धृत आँकड़ा लेखकों की सोसाइटियों के वैश्विक महासंघ CISAC से आता है। कंसल्टेंसी PMP Strategy के साथ दिसंबर 2024 में प्रकाशित एक अध्ययन में उसने अनुमान लगाया कि जनरेटिव AI के बिना वाली दुनिया की तुलना में 2028 तक संगीत रचनाकारों की आय का लगभग 24% और ऑडियोविज़ुअल रचनाकारों की आय का 21% जोखिम में होगा: पाँच साल में कुल लगभग €22 अरब का नुक़सान, जबकि AI से बने संगीत और वीडियो का बाज़ार बढ़कर साल में लगभग €16 अरब और €48 अरब हो जाएगा।[7]"
+          ],
+          [
+            "p",
+            "यह इस बात का मॉडल है कि अगर मौजूदा रुझान जारी रहें और क़ानून या अनुबंधों में कुछ न बदले तो क्या हो सकता है। दाँव पर लगी चीज़ों का पैमाना देखने के लिए यह उपयोगी है, लेकिन यह इस बात का सबूत नहीं है कि क्या हो चुका है।"
+          ],
+          [
+            "h",
+            "पैसा कहाँ जा रहा है"
+          ],
+          [
+            "p",
+            "अगर AI कंपनियाँ रचनाकारों के काम का इस्तेमाल कर रही हैं, तो कुछ पैसा वापस आने लगा है, ज़्यादातर अदालतों और लाइसेंसों के ज़रिए। अब तक का सबसे बड़ा मामला अमेरिका का Bartz v. Anthropic है। AI मॉडल Claude बनाने वाली कंपनी Anthropic ने पाइरेट लाइब्रेरियों से डाउनलोड की गई किताबों से जुड़े दावों का निपटारा करने के लिए $1.5 अरब देने पर सहमति दी। एक जज ने जून 2025 में फ़ैसला दिया था कि किताबों पर ट्रेनिंग फ़ेयर यूज़ है, लेकिन पाइरेटेड कॉपियाँ रखना नहीं। समझौते में लगभग 5 लाख किताबें आती हैं, हर एक के लिए लागत और फ़ीस से पहले कम से कम $3,000, और जहाँ अधिकार प्रकाशक के पास हों वहाँ डिफ़ॉल्ट रूप से लेखक और प्रकाशक में 50/50 बँटवारा। इसे जुलाई 2026 में मंज़ूरी मिली, और पहले भुगतान 23 नवंबर 2026 वाले हफ़्ते में शुरू होने हैं।[8]"
+          ],
+          [
+            "p",
+            "संगीत में बड़े लेबलों ने AI गाने बनाने वाले टूल Suno और Udio पर मुक़दमा किया, फिर 2025 के अंत में समझौता करके मामलों को लाइसेंसिंग सौदों में बदल दिया। जून 2026 में अमेरिकी संगीतकारों की यूनियन American Federation of Musicians ने Universal Music Group और Warner Music Group पर मुक़दमा किया, यह कहते हुए कि लेबलों ने यूनियन सदस्यों की रिकॉर्डिंग Suno और Udio को “बिना मुआवज़े या श्रेय के” लाइसेंस की और यह बताने से इनकार किया कि किसका काम शामिल था।[9] बात सीधी है: लाइसेंस का पैसा उसके पास जाता है जिसके पास अधिकार हैं, और वह अक्सर वह व्यक्ति नहीं होता जिसका वह काम था।"
+          ],
+          [
+            "p",
+            "दूसरी जगहों पर अदालतों ने मुख्य सवाल हल नहीं किया है। Getty Images v. Stability AI में ब्रिटेन के हाई कोर्ट ने नवंबर 2025 में फ़ैसला दिया कि Stable Diffusion मॉडल “उल्लंघन करने वाली कॉपी” नहीं है, क्योंकि यह उन इमेज को संग्रहित नहीं करता जिन पर इसे ट्रेन किया गया; Getty ने ट्रेनिंग से जुड़े अपने मुख्य दावे छोड़ दिए थे क्योंकि ट्रेनिंग ब्रिटेन के बाहर हुई थी।[10] Getty को अपील की अनुमति मिल गई है।[11] अमेरिका में OpenAI और Microsoft के ख़िलाफ़ The New York Times का मामला सितंबर 2026 में फ़ेयर यूज़ पर दोनों पक्षों की समरी जजमेंट की अर्ज़ियों तक पहुँचा, अभी न कोई फ़ैसला है, न ट्रायल की तारीख़।[12]"
+          ],
+          [
+            "p",
+            "जापान ने अलग रास्ता अपनाया है। कॉपीराइट क़ानून का अनुच्छेद 30-4 मोटे तौर पर कृतियों को बिना अनुमति AI ट्रेनिंग में इस्तेमाल करने देता है, जब मक़सद उनकी अभिव्यक्ति का “आनंद लेना” न हो, और इसमें कोई संशोधन नहीं हुआ है। जापान की Agency for Cultural Affairs (सांस्कृतिक मामलों की एजेंसी) के 2024 के दिशानिर्देश सीमाएँ बताते हैं: अगर मक़सद में ऐसा आउटपुट बनाना शामिल हो जो ट्रेनिंग वाली कृतियों की रचनात्मक अभिव्यक्ति को दोहराए, तो यह छूट लागू नहीं होती, और अगर इस्तेमाल से कॉपीराइट धारक के हितों को अनुचित नुक़सान हो, तब भी नहीं। सिर्फ़ शैली की नक़ल उल्लंघन नहीं है, क्योंकि शैली एक विचार है, अभिव्यक्ति नहीं। ये दिशानिर्देश क़ानूनी रूप से बाध्यकारी नहीं हैं।[13]"
+          ],
+          [
+            "o",
+            "मुआवज़ा आ रहा है, लेकिन धीरे-धीरे, मामले-दर-मामले, और मुख्य रूप से वकीलों वाले अधिकार धारकों के पास। प्रति किताब एक बार के $3,000 असली पैसा हैं। लेकिन यह आय नहीं है।"
+          ],
+          [
+            "h",
+            "रचनाकार क्या माँग रहे हैं: सहमति और भुगतान"
+          ],
+          [
+            "p",
+            "जहाँ रचनाकार संगठित हैं, वहाँ उन्होंने शर्तें जीती हैं। 11 महीने की हड़ताल के बाद SAG-AFTRA के वीडियो गेम कलाकारों ने जुलाई 2025 में 95.04% वोट से एक नया समझौता मंज़ूर किया: किसी कलाकार की डिजिटल प्रतिकृति बनाने या इस्तेमाल करने से पहले अलग लिखित सहमति, यह बताना कि उसका इस्तेमाल कैसे होगा, हड़ताल के दौरान सहमति स्थगित करने का अधिकार, और प्रतिकृति के इस्तेमाल के लिए न्यूनतम भुगतान।[14] Writers Guild of America का 2026 का अनुबंध, जिसे अप्रैल 2026 में वोट देने वालों में से 90.38% ने मंज़ूर किया, 2023 का यह नियम बनाए रखता है कि AI से बना पाठ साहित्यिक सामग्री नहीं है, और यह जोड़ता है कि अगर स्टूडियो लेखकों के काम को AI ट्रेनिंग के लिए लाइसेंस करें तो उन्हें गिल्ड को लिखित सूचना देनी होगी, जिसके बाद गिल्ड लाइसेंस और लेखकों के भुगतान पर बातचीत की माँग कर सकता है।[15]"
+          ],
+          [
+            "p",
+            "जापान में लगभग 2,600 अभिनेताओं और वॉइस एक्टरों की यूनियन जापान एक्टर्स यूनियन (Japan Actors Union) ने 15 अक्टूबर 2026 को जनरेटिव AI और आवाज़ पर दिशानिर्देश प्रकाशित किए। वे ट्रेनिंग से लेकर जनरेट करने और प्रकाशित करने तक हर चरण पर पहले से अनुमति माँगते हैं; AI आवाज़ के हर इस्तेमाल को एक नया प्रदर्शन मानते हैं जिसका भुगतान होना चाहिए; दूसरी भाषाओं में AI डबिंग के लिए नई अनुमति और अतिरिक्त भुगतान ज़रूरी करते हैं; और किसी दिवंगत कलाकार की आवाज़ दोबारा बनाने से पहले वारिसों की सहमति ज़रूरी करते हैं। यूनियन इन्हें तब तक एक स्वैच्छिक उद्योग मानक कहती है, जब तक क़ानून अपनी आवाज़ पर अधिकार को मान्यता नहीं देता।[16]"
+          ],
+          [
+            "p",
+            "यह साफ़ कहना ज़रूरी है: ज़्यादातर रचनाकार अपने काम के इस्तेमाल के लिए सहमति और भुगतान माँगते हैं, बेसिक इनकम नहीं। 2,400 से ज़्यादा अमेरिकी लेखकों के Authors Guild के सर्वे में 96% ने कहा कि उनके काम को AI ट्रेनिंग में इस्तेमाल करने से पहले सहमति ज़रूरी होनी चाहिए।[17] ये जायज़ माँगें हैं, और ये हमारी माँग से अलग हैं।"
+          ],
+          [
+            "o",
+            "सहमति और भुगतान उन लोगों की मदद करते हैं जिनका काम इस्तेमाल होता है और जो शर्तें लागू करवाने लायक़ संगठित हैं। उस इलस्ट्रेटर के लिए वे कम करते हैं जिसे बस कमीशन मिलने बंद हो जाते हैं।"
+          ],
+          [
+            "h",
+            "कलाकारों के लिए न्यूनतम आय का सबसे अच्छा सबूत: आयरलैंड"
+          ],
+          [
+            "p",
+            "बेसिक इनकम कलाकारों के लिए क्या करती है, इसका सबसे मज़बूत सबूत आयरलैंड से आता है। 2022 में शुरू हुए उसके {Basic Income for the Arts पायलट|/timeline/#tl-ireland-arts} ने 2,000 कलाकारों और कला कर्मियों को तीन साल तक हर हफ़्ते €325 दिए, जिसे बाद में फ़रवरी 2026 तक बढ़ाया गया। यह भुगतान कर-योग्य है और स्व-रोज़गार की आय में गिना जाता है। इसे एक प्रयोग के रूप में भी बनाया गया था: लगभग 8,200 योग्य आवेदकों में से 2,000 को पैसा पाने के लिए लॉटरी से चुना गया और 1,000 को एक तुलना समूह में रखा गया जिसे पैसा नहीं मिला।[18]"
+          ],
+          [
+            "p",
+            "संस्कृति विभाग के लिए Alma Economics का अंतिम मूल्यांकन सितंबर 2025 में प्रकाशित हुआ। कंट्रोल ग्रुप की तुलना में पाने वालों ने एक साल बाद अपनी कला साधना पर हफ़्ते में लगभग 4 घंटे ज़्यादा लगाए, जो आख़िरी सर्वे तक बढ़कर 5 घंटे से ज़्यादा हो गए, और शोध पर लगभग 2.3 घंटे ज़्यादा। उन्होंने कला के बाहर एक साल बाद हफ़्ते में 2.7 घंटे कम काम किया और अंत तक 4.3 घंटे कम। कला से उनकी आय औसतन हर महीने €500 से ज़्यादा बढ़ी, जबकि दूसरे काम से आय लगभग €280 घटी। नई कृति पूरी करने की उनकी संभावना लगभग 10 प्रतिशत अंक ज़्यादा थी।[18]"
+          ],
+          [
+            "p",
+            "भलाई से जुड़े नतीजे और बड़े थे। आख़िरी सर्वे तक पाने वालों में चिंता बताने की संभावना 13 प्रतिशत अंक और अवसाद बताने की संभावना 11 अंक कम थी; दस-अंकीय पैमाने पर जीवन संतुष्टि लगभग एक अंक बढ़ी; और यह कहने की संभावना कि उन्हें गुज़ारा करने में मुश्किल होती है, लगभग 20 अंक कम थी। यह कहने की संभावना कि उन्हें कला में काम नहीं मिल रहा, 13 से 18 अंक घटी। उनके सामाजिक कल्याण भुगतान हर महीने लगभग €100 घट गए।[18]"
+          ],
+          [
+            "p",
+            "2021 से 2025 तक पायलट की सकल लागत लगभग €114 मिलियन थी। भुगतानों पर टैक्स, दूसरे टैक्स बदलावों और कल्याण पर कम ख़र्च से इसका लगभग 37% वापस आ गया। मूल्यांकनकर्ताओं ने €100 मिलियन से कुछ ज़्यादा के लाभ गिने, ज़्यादातर भलाई में, और निष्कर्ष निकाला कि सार्वजनिक पैसे के हर €1 पर समाज को €1.39 वापस मिले।[18] इसकी सीमाएँ हैं: तुलना समूह को सर्वे के जवाब देते रहने के लिए साल में €650 की पेशकश की गई थी, उसके कुछ सदस्य बीच में छोड़ गए, और कुछ कलाकारों को तीन साल का गारंटीशुदा भुगतान एक सार्वभौमिक न्यूनतम आधार जैसा नहीं है।"
+          ],
+          [
+            "p",
+            "आयरलैंड ने तब से इस योजना को स्थायी बना दिया है। तीन साल के लिए हर हफ़्ते €325 वाली 2,000 जगहों के नए दौर के आवेदन मई 2026 में बंद हुए। 10,000 से कुछ ज़्यादा लोगों ने आवेदन किया, इसलिए लगभग पाँच में से चार को जगह नहीं मिलेगी। पहले पाने वालों को 15 अक्टूबर 2026 से सूचना दी गई, और भुगतान सितंबर 2026 से पिछली तारीख़ से लागू हैं। संस्कृति मंत्री पैट्रिक ओ’डोनोवन ने इसे “एक गेम चेंजर, और अब यह यहाँ टिकने के लिए है” कहा।[19]"
+          ],
+          [
+            "p",
+            "आयरलैंड सरकार की अपनी AI Advisory Council ने AI से इसका संबंध साफ़ तौर पर जोड़ा। AI और रचनात्मक क्षेत्र पर फ़रवरी 2025 के एक सलाह पत्र में उसने लिखा कि “AI से हुई उथल-पुथल से प्रभावित रचनाकारों तक बेसिक इनकम का विस्तार नई आर्थिक हक़ीक़तों के साथ उनके तालमेल में मदद कर सकता है”, इस उथल-पुथल को सीधे जनरेटिव AI से जुड़ी आय या काम की मापने योग्य हानि के रूप में परिभाषित किया, और इससे प्रभावित रचनाकारों की मदद के लिए योजना के विस्तार की सिफ़ारिश की। उसी पत्र में उसने कलाकारों के लिए SAG-AFTRA जैसे सहमति नियमों की सिफ़ारिश भी की।[20] शुरू की गई स्थायी योजना AI से प्रभावित रचनाकारों को लक्ष्य नहीं बनाती।"
+          ],
+          [
+            "p",
+            "अमेरिका एक दूसरी, स्वतंत्र परीक्षा पेश करता है। {Creatives Rebuild New York|/timeline/#tl-crny-artists} ने न्यूयॉर्क राज्य के 2,400 कम आय वाले कलाकारों को 18 महीने तक हर महीने $1,000 दिए। इंडियाना विश्वविद्यालय के शोधकर्ताओं के 2026 में प्रकाशित एक पीयर-रिव्यूड अध्ययन ने उनकी तुलना उन आवेदकों से की जो चुने नहीं गए: पाने वालों ने कला के काम पर हफ़्ते में 3.9 घंटे ज़्यादा और दूसरे काम पर 2.4 घंटे कम लगाए, और उनकी कुल कमाई में बदलाव सांख्यिकीय रूप से महत्वपूर्ण नहीं था।[21] शोधकर्ताओं की पहले की रिपोर्टों में भोजन की असुरक्षा कम और चिंता व अवसाद के गंभीर लक्षण कम पाए गए, हालाँकि वे ज़्यादातर पहले-और-बाद की स्व-रिपोर्टों पर आधारित थीं।[22]"
+          ],
+          [
+            "o",
+            "दो महाद्वीपों के दो प्रयोग एक ही दिशा दिखाते हैं। एक मामूली न्यूनतम आधार मिलने पर कलाकार साइड कामों से समय निकालकर अपनी कला में लगाते हैं, इस क्षेत्र में टिके रहते हैं और काफ़ी कम चिंतित रहते हैं। किसी भी योजना ने उन्हें अमीर नहीं बनाया, और दोनों में से कोई AI के बारे में नहीं थी।"
+          ],
+          [
+            "h",
+            "पूरक, प्रतिद्वंद्वी नहीं"
+          ],
+          [
+            "p",
+            "इस लेख के दोनों हिस्सों को साथ रखें तो काम का एक बँटवारा दिखता है। सहमति और भुगतान, चाहे अदालती समझौतों, लाइसेंसों या यूनियन अनुबंधों से, उन लोगों की मदद करते हैं जिनका काम सचमुच इस्तेमाल हुआ और जो इसे साबित कर सकते हैं। वे धीरे और असमान ढंग से आते हैं, और ज़्यादातर पैसा अधिकारों के मालिक पर ही रुक जाता है। न्यूनतम आय एक अलग समूह की मदद करती है: वह इलस्ट्रेटर जिसके ग्राहक किसी टूल पर चले गए, वह अनुवादक जिसकी दरें आधी हो गईं, वह युवा कलाकार जो अब साइड काम से किराया नहीं भर पाता। उनके नुक़सान को किसी एक ट्रेनिंग डेटासेट तक नहीं जोड़ा जा सकता, और कोई समझौता उन तक नहीं पहुँचेगा।"
+          ],
+          [
+            "p",
+            "दोनों का पैमाना भी अलग है। Anthropic का समझौता प्रति किताब कम से कम $3,000 देता है, एक बार। आयरलैंड की योजना हर कलाकार को साल में लगभग €16,900 देती है, लेकिन 10,000 से ज़्यादा आवेदकों में से 2,000 को। दोनों में से कोई भी पूरे अर्थ में बेसिक इनकम नहीं है: एक पिछले इस्तेमाल का मुआवज़ा है, दूसरा एक छोटे समूह को चुनिंदा भुगतान। लेकिन आयरलैंड के नतीजे दिखाते हैं कि आंशिक न्यूनतम आधार भी क्या कर सकता है, और Advisory Council की सिफ़ारिश दिखाती है कि एक सरकारी संस्था यह संबंध पहले ही जोड़ चुकी है।"
+          ],
+          [
+            "p",
+            "जापान के पास अभी दोनों में से कुछ नहीं है: कलाकारों के लिए कोई राष्ट्रीय आय योजना नहीं, और कॉपीराइट नियम जो ट्रेनिंग की मोटे तौर पर अनुमति देते हैं। अब तक के जवाब, Agency for Cultural Affairs के दिशानिर्देशों से लेकर एक्टर्स यूनियन के दिशानिर्देशों तक, अधिकारों के बारे में हैं। वे मायने रखते हैं। लेकिन सिर्फ़ अधिकारों वाला जवाब उन रचनाकारों को छोड़ देता है जो काम से बाहर धकेल दिए जाते हैं, बिना इसके कि किसी ने उनका काम इस्तेमाल किया हो।"
+          ],
+          [
+            "h",
+            "न “AI कला को ख़त्म कर रहा है”, न “कुछ नहीं हो रहा”"
+          ],
+          [
+            "o",
+            "नवंबर 2026 तक सबूत यह दिखाते हैं। जनरेटिव AI ने कुछ तरह के रचनात्मक काम की माँग घटाई है, ख़ासकर टुकड़ों में ख़रीदे जाने वाले इलस्ट्रेशन, अनुवाद और लेखन की, और यह कमी फ़्रीलांस प्लेटफ़ॉर्मों पर मापी जा सकती है और रचनाकारों के सर्वे में दिखती है। इसने रचनात्मक काम को ख़त्म नहीं किया है, और चलन में मौजूद ज़्यादातर डरावने आँकड़े माप नहीं, बल्कि अनुमान या डर हैं। मुआवज़ा आना शुरू हुआ है, लेकिन ज़्यादातर अधिकार धारकों को, एक बार, और मुक़दमों के ज़रिए।"
+          ],
+          [
+            "o",
+            "रचनाकारों का पहले सहमति और भुगतान माँगना सही है। बेसिक इनकम इसका विकल्प नहीं है, और इसे विकल्प बताकर बेचा भी नहीं जाना चाहिए। लेकिन हमारे पास मौजूद सबसे अच्छा प्रयोग, आयरलैंड का, बताता है कि जब पैरों तले बाज़ार खिसक रहा हो, तब एक न्यूनतम आधार लोगों को उनके हुनर में टिकाए रखता है और उनकी ज़िंदगी को स्थिर करता है। {भाग 1|/essays/generative-ai-jobs-basic-income/} में हमने देखा कि सबसे पहले वही लोग चपेट में आते हैं जिनके पास सबसे कम सुरक्षा है। रचनात्मक काम में वह फ़्रीलांसर है, जिसके पास न नियोक्ता है, न यूनियन, न किसी समझौते पर कोई दावा। न्यूनतम आधार ठीक ऐसे ही लोगों के लिए है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "En otoño de 2025, la Japan Freelance League, una organización que representa a los trabajadores autónomos, preguntó a creadores de Japón por la IA generativa. Recibió 24.991 respuestas, unas siete de cada diez de personas que dibujan: ilustradores, autores de manga y animadores. A la pregunta de si la IA generativa había reducido sus ingresos o ventas, el 12,0 % respondió que sí (el 9,3 % un poco, el 2,7 % mucho). A la pregunta de si era una amenaza seria para su sustento, el 88,6 % respondió que sí.[1]"
+          ],
+          [
+            "p",
+            "Esas dos cifras son el punto de partida de este ensayo. El miedo es casi universal; la pérdida medida, por ahora, es real pero mucho menor. Ambas cosas importan. En la {parte 1|/essays/generative-ai-jobs-basic-income/} vimos que la IA todavía no ha dejado una huella clara en el empleo en su conjunto, pero que la puerta de entrada se estrecha para los jóvenes y que los autónomos fueron los primeros en notarlo. Aquí nos fijamos en el trabajo creativo: qué se ha medido, adónde va el dinero de la IA, qué piden los propios creadores y qué ha conseguido de verdad una renta básica para artistas allí donde se ha probado."
+          ],
+          [
+            "h",
+            "Qué se ha medido"
+          ],
+          [
+            "p",
+            "Las pruebas más claras vienen de los mercados de trabajo autónomo en línea, donde cada encargo se publica y se paga por separado. Xiang Hui, Oren Reshef y Luofeng Zhou estudiaron Upwork. Tras la llegada de los generadores de imágenes DALL-E 2 y Midjourney, los autónomos que hacían trabajo de imagen (diseñadores, editores de imagen, artistas) vieron caer un 3,7 % sus encargos mensuales y un 9,4 % sus ingresos mensuales. Los autónomos de la escritura perdieron un 2 % de los encargos y un 5,2 % de los ingresos tras ChatGPT. Tener mejores valoraciones no protegía.[2]"
+          ],
+          [
+            "p",
+            "Un estudio más amplio de Ole Teutloff y sus colegas, publicado en el Journal of Economic Behavior & Organization, analizó más de tres millones de ofertas en una plataforma global de trabajo autónomo entre 2021 y 2023. La demanda de habilidades que la IA puede sustituir en parte, como la escritura y la traducción, cayó entre un 20 % y un 50 % respecto a lo que cabría esperar sin ella, y la caída fue mayor para los trabajadores con experiencia. La demanda de habilidades que trabajan con la IA aumentó: los encargos para crear chatbots casi se triplicaron, y la demanda de trabajo autónomo en su conjunto no bajó.[3]"
+          ],
+          [
+            "p",
+            "Las encuestas a creadores completan el panorama, con la salvedad de que preguntan a la gente lo que cree y de que quienes se sienten afectados tienen más probabilidades de responder. En una encuesta de enero de 2024 de la Society of Authors del Reino Unido (787 respuestas), el 26 % de los ilustradores y el 36 % de los traductores dijeron que ya habían perdido trabajo por la IA generativa.[4] Un estudio de la Universidad de Cambridge con 258 novelistas británicos publicados, presentado en noviembre de 2025, halló que el 39 % decía que sus ingresos ya se habían resentido, sobre todo por la pérdida de trabajos complementarios como la redacción publicitaria, y que el 85 % esperaba que siguieran cayendo.[5] En una encuesta de enero de 2026 de la Association of Photographers del Reino Unido, respondida por unos 600 de sus aproximadamente 3.000 miembros, el 58 % dijo haber perdido encargos por la IA generativa, la misma proporción que un año antes; la pérdida media declarada subió a unas 34.900 libras por persona, aunque el resumen publicado no explica exactamente cómo se calculó esa media.[6]"
+          ],
+          [
+            "p",
+            "Los principales resultados, uno al lado del otro:"
+          ],
+          [
+            "t",
+            "Fuente | Quién | Resultado\nJapan Freelance League (2025) | 24.991 creadores de Japón, sobre todo personas que dibujan | Ingresos reducidos por la IA: 12,0 %; ven la IA como amenaza seria: 88,6 %[1]\nHui, Reshef y Zhou | Autónomos de Upwork | Imagen: encargos −3,7 %, ingresos −9,4 %; escritura: −2 %, −5,2 %[2]\nTeutloff et al. | Más de 3 millones de ofertas de trabajo autónomo | Demanda de escritura y traducción entre −20 % y −50 %; encargos de chatbots casi ×3[3]\nSociety of Authors (Reino Unido, 2024) | 787 escritores, ilustradores y traductores | Ya han perdido trabajo: ilustradores 26 %, traductores 36 %[4]\nUniversidad de Cambridge (2025) | 258 novelistas británicos | Ingresos ya afectados: 39 %; esperan que caigan: 85 %[5]\nAssociation of Photographers (Reino Unido, 2026) | Unos 600 fotógrafos profesionales | Han perdido encargos: 58 %[6]"
+          ],
+          [
+            "o",
+            "El patrón es coherente: el trabajo que se compra pieza a pieza, como la ilustración, las imágenes de tipo banco de imágenes, la traducción y la redacción publicitaria, es el primero en perder terreno. Pero ningún estudio muestra todavía un hundimiento del trabajo creativo en su conjunto."
+          ],
+          [
+            "h",
+            "Una proyección, no una medición"
+          ],
+          [
+            "p",
+            "La cifra más citada en los debates sobre la IA y la cultura procede de la CISAC, la confederación mundial de sociedades de autores. En un estudio con la consultora PMP Strategy, publicado en diciembre de 2024, proyectó que para 2028 estarían en riesgo alrededor del 24 % de los ingresos de los creadores de música y el 21 % de los de los creadores audiovisuales, en comparación con un mundo sin IA generativa: una pérdida acumulada de unos 22.000 millones de euros en cinco años, mientras el mercado de música y vídeo generados por IA crece hasta unos 16.000 y 48.000 millones de euros al año.[7]"
+          ],
+          [
+            "p",
+            "Es un modelo de lo que podría ocurrir si continúan las tendencias actuales y no cambia nada en la ley ni en los contratos. Sirve para ver la magnitud de lo que está en juego, pero no prueba lo que ya ha ocurrido."
+          ],
+          [
+            "h",
+            "Adónde va el dinero"
+          ],
+          [
+            "p",
+            "Si las empresas de IA usan obras de los creadores, parte del dinero empieza a volver, sobre todo a través de los tribunales y las licencias. El caso más importante hasta ahora es Bartz contra Anthropic, en EE. UU. Anthropic, la empresa que desarrolla el modelo de IA Claude, aceptó pagar 1.500 millones de dólares para resolver las reclamaciones por libros que había descargado de bibliotecas piratas. Un juez había dictaminado en junio de 2025 que entrenar con libros era uso legítimo (fair use), pero que conservar copias piratas no lo era. El acuerdo abarca unos 500.000 títulos, con al menos 3.000 dólares por título antes de costes y honorarios, repartidos por defecto al 50 % entre autor y editorial cuando una editorial tiene los derechos. Se aprobó en julio de 2026, y los primeros pagos deben empezar la semana del 23 de noviembre de 2026.[8]"
+          ],
+          [
+            "p",
+            "En la música, las grandes discográficas demandaron a los generadores de canciones con IA Suno y Udio, y a finales de 2025 llegaron a acuerdos que convirtieron los casos en contratos de licencia. En junio de 2026, la American Federation of Musicians, el sindicato de músicos de EE. UU., demandó a Universal Music Group y Warner Music Group alegando que las discográficas habían licenciado a Suno y Udio grabaciones hechas por miembros del sindicato «sin compensación ni reconocimiento» y se habían negado a decir de quién era el trabajo afectado.[9] La conclusión es sencilla: el dinero de las licencias va a quien posee los derechos, que a menudo no es la persona que hizo el trabajo."
+          ],
+          [
+            "p",
+            "En otros lugares, los tribunales no han resuelto la cuestión principal. En Getty Images contra Stability AI, el Tribunal Superior del Reino Unido dictaminó en noviembre de 2025 que el modelo Stable Diffusion no era una «copia infractora», porque no almacena las imágenes con las que se entrenó; Getty había retirado sus principales reclamaciones sobre el entrenamiento porque este se realizó fuera del Reino Unido.[10] Getty ha obtenido permiso para recurrir.[11] En EE. UU., el caso de The New York Times contra OpenAI y Microsoft llegó en septiembre de 2026 a la fase de mociones cruzadas de juicio sumario sobre el uso legítimo, todavía sin resolución ni fecha de juicio.[12]"
+          ],
+          [
+            "p",
+            "Japón ha tomado otro camino. El artículo 30-4 de su Ley de Derechos de Autor permite de forma amplia usar obras para entrenar IA sin permiso cuando el fin no es «disfrutar» de la expresión que contienen, y no se ha modificado. Unas directrices de la Agencia de Asuntos Culturales de 2024 fijan los límites: la excepción no se aplica cuando el fin incluye generar resultados que reproduzcan la expresión creativa de las obras de entrenamiento, ni cuando el uso perjudicaría de forma injustificada los intereses del titular de los derechos. Copiar solo un estilo no es una infracción, porque un estilo es una idea y no una expresión. Las directrices no son jurídicamente vinculantes.[13]"
+          ],
+          [
+            "o",
+            "La compensación está llegando, pero despacio, caso por caso y sobre todo a titulares de derechos con abogados. Un pago único de 3.000 dólares por libro es dinero de verdad. No es un ingreso."
+          ],
+          [
+            "h",
+            "Lo que piden los creadores: consentimiento y pago"
+          ],
+          [
+            "p",
+            "Donde los creadores están organizados, han conseguido condiciones. Tras una huelga de 11 meses, los intérpretes de videojuegos de SAG-AFTRA ratificaron un nuevo convenio en julio de 2025 con el 95,04 % de los votos: consentimiento por escrito y por separado antes de crear o usar una réplica digital de un intérprete, una explicación de cómo se usará, el derecho a suspender el consentimiento durante una huelga y una remuneración mínima por el uso de réplicas.[14] El convenio de 2026 del Writers Guild of America, ratificado en abril de 2026 por el 90,38 % de los votantes, mantiene la norma de 2023 según la cual el texto generado por IA no es material literario y añade que los estudios deben notificar por escrito al sindicato si licencian obras de los guionistas para entrenar IA; el sindicato puede entonces pedir negociar la licencia y el pago a los guionistas.[15]"
+          ],
+          [
+            "p",
+            "En Japón, el sindicato de actores Japan Actors Union, con unos 2.600 actores y actores de voz, publicó el 15 de octubre de 2026 unas pautas sobre la IA generativa y la voz. Piden permiso previo en cada fase, desde el entrenamiento hasta la generación y la publicación; tratan cada uso de una voz de IA como una nueva actuación que debe pagarse; exigen un nuevo permiso y un pago adicional para el doblaje con IA a otros idiomas, y exigen el consentimiento de los herederos antes de recrear la voz de un intérprete fallecido. El sindicato las presenta como una norma voluntaria del sector hasta que la ley reconozca un derecho sobre la propia voz.[16]"
+          ],
+          [
+            "p",
+            "Conviene decirlo con claridad: lo que pide la mayoría de los creadores es consentimiento y pago por el uso de su obra, no una renta básica. En una encuesta del Authors Guild a más de 2.400 autores estadounidenses, el 96 % dijo que debería exigirse su consentimiento antes de usar su obra para entrenar IA.[17] Son reivindicaciones justas, y son distintas de la nuestra."
+          ],
+          [
+            "o",
+            "El consentimiento y el pago ayudan a quienes ven usada su obra y están lo bastante organizados para hacer cumplir las condiciones. Hacen menos por la ilustradora que, sin más, deja de recibir encargos."
+          ],
+          [
+            "h",
+            "Las mejores pruebas sobre un suelo de ingresos para artistas: Irlanda"
+          ],
+          [
+            "p",
+            "Las pruebas más sólidas sobre lo que hace una renta básica por los artistas vienen de Irlanda. Su {programa piloto de Renta Básica para las Artes|/timeline/#tl-ireland-arts}, lanzado en 2022, pagó 325 € a la semana a 2.000 artistas y trabajadores de las artes durante tres años, plazo ampliado después hasta febrero de 2026. El pago tributa y cuenta como ingreso por cuenta propia. También se diseñó como experimento: de unos 8.200 solicitantes que cumplían los requisitos, 2.000 fueron elegidos al azar para recibir el dinero y 1.000 se asignaron a un grupo de comparación que no lo recibió.[18]"
+          ],
+          [
+            "p",
+            "La evaluación final, hecha por Alma Economics para el ministerio de cultura, se publicó en septiembre de 2025. En comparación con el grupo de control, los beneficiarios dedicaban unas 4 horas más a la semana a su práctica artística al cabo de un año, más de 5 horas en la última encuesta, y unas 2,3 horas más a la investigación. Trabajaban 2,7 horas menos a la semana fuera de las artes al cabo de un año y 4,3 menos al final. Sus ingresos procedentes de las artes subieron de media más de 500 € al mes, mientras que los de otros trabajos bajaron unos 280 €. Tenían unos 10 puntos porcentuales más de probabilidad de terminar obras nuevas.[18]"
+          ],
+          [
+            "p",
+            "Los resultados sobre bienestar fueron mayores. En la última encuesta, los beneficiarios tenían 13 puntos porcentuales menos de probabilidad de declarar ansiedad y 11 puntos menos de declarar depresión; su satisfacción con la vida subió casi un punto en una escala de diez, y tenían casi 20 puntos menos de probabilidad de decir que les costaba llegar a fin de mes. La probabilidad de decir que no encontraban trabajo en las artes bajó entre 13 y 18 puntos. Sus prestaciones sociales se redujeron en unos 100 € al mes.[18]"
+          ],
+          [
+            "p",
+            "El piloto costó unos 114 millones de euros brutos entre 2021 y 2025. Los impuestos sobre los pagos, otros cambios fiscales y un menor gasto en prestaciones recuperaron casi el 37 % de esa cantidad. Los evaluadores contabilizaron algo más de 100 millones de euros en beneficios, sobre todo en bienestar, y concluyeron que la sociedad recuperaba 1,39 € por cada euro de dinero público.[18] Hay límites: al grupo de comparación se le ofrecieron 650 € al año por seguir respondiendo encuestas, algunos de sus miembros lo abandonaron, y un pago garantizado durante tres años a unos pocos artistas no es lo mismo que un suelo universal."
+          ],
+          [
+            "p",
+            "Desde entonces, Irlanda ha hecho permanente el programa. El plazo de solicitud para una nueva ronda de 2.000 plazas, con 325 € a la semana durante tres años, se cerró en mayo de 2026. Lo solicitaron algo más de 10.000 personas, así que unas cuatro de cada cinco se quedarán fuera. Los primeros beneficiarios recibieron la notificación a partir del 15 de octubre de 2026, con pagos retroactivos a septiembre de 2026. El ministro de cultura, Patrick O’Donovan, lo calificó de «un cambio radical, y ahora ha venido para quedarse».[19]"
+          ],
+          [
+            "p",
+            "El propio Consejo Asesor de IA del Gobierno irlandés estableció de forma explícita el vínculo con la IA. En un documento de febrero de 2025 sobre la IA y el sector creativo, escribió que «ampliar la renta básica universal a los creadores afectados por la disrupción de la IA podría apoyar su adaptación a nuevas realidades económicas», definió esa disrupción como una pérdida medible de ingresos o de trabajo directamente atribuible a la IA generativa y recomendó ampliar el programa para apoyar a los creadores afectados. En el mismo documento recomendó normas de consentimiento para intérpretes al estilo de SAG-AFTRA.[20] El programa permanente, tal como se lanzó, no se dirige a los creadores afectados por la IA."
+          ],
+          [
+            "p",
+            "EE. UU. ofrece una segunda prueba independiente. {Creatives Rebuild New York|/timeline/#tl-crny-artists} pagó 1.000 dólares al mes durante 18 meses a 2.400 artistas con bajos ingresos del estado de Nueva York. Un estudio revisado por pares de investigadores de la Universidad de Indiana, publicado en 2026, los comparó con solicitantes que no fueron seleccionados: los beneficiarios dedicaban 3,9 horas más a la semana al trabajo artístico y 2,4 menos a otros trabajos, y el cambio en sus ingresos totales no fue estadísticamente significativo.[21] Informes anteriores de los mismos investigadores encontraron menos inseguridad alimentaria y menos síntomas graves de ansiedad y depresión, aunque se basaban sobre todo en autoevaluaciones de antes y después.[22]"
+          ],
+          [
+            "o",
+            "Dos experimentos en dos continentes apuntan en la misma dirección. Con un suelo modesto, los artistas pasan tiempo de los trabajos complementarios a su arte, se mantienen en el sector y sufren mucha menos ansiedad. Ninguno de los dos programas los hizo ricos, y ninguno trataba sobre la IA."
+          ],
+          [
+            "h",
+            "Complementarios, no rivales"
+          ],
+          [
+            "p",
+            "Si se juntan las dos partes de este ensayo, aparece un reparto de tareas. El consentimiento y el pago, ya sea mediante acuerdos judiciales, licencias o convenios sindicales, ayudan a quienes ven usada de verdad su obra y pueden demostrarlo. Llegan despacio y de forma desigual, y buena parte del dinero se queda en quien posee los derechos. Un suelo de ingresos ayuda a otro grupo: la ilustradora cuyos clientes se han pasado a una herramienta, el traductor cuyas tarifas se han reducido a la mitad, la joven artista que ya no puede pagar el alquiler con trabajos complementarios. Su pérdida no puede atribuirse a ningún conjunto de entrenamiento concreto, y ningún acuerdo judicial les llegará."
+          ],
+          [
+            "p",
+            "La escala de ambos también es distinta. El acuerdo de Anthropic paga al menos 3.000 dólares por libro, una sola vez. El programa irlandés paga unos 16.900 € al año por artista, pero a 2.000 de más de 10.000 solicitantes. Ninguno es una renta básica en sentido pleno: uno es una compensación por un uso pasado; el otro, un pago selectivo a un grupo pequeño. Pero los resultados irlandeses muestran lo que puede hacer incluso un suelo parcial, y la recomendación del Consejo Asesor muestra que un organismo público ya ha establecido la conexión."
+          ],
+          [
+            "p",
+            "Japón todavía no tiene ninguna de las dos cosas: no hay un programa nacional de ingresos para artistas, y sus normas de derechos de autor permiten el entrenamiento de forma amplia. Las respuestas hasta ahora, desde las directrices de la Agencia de Asuntos Culturales hasta las pautas del sindicato de actores, tratan de derechos. Importan. Pero una respuesta basada solo en derechos deja fuera a los creadores que se quedan sin trabajo sin que nadie haya usado su obra."
+          ],
+          [
+            "h",
+            "Ni «la IA acaba con el arte» ni «no está pasando nada»"
+          ],
+          [
+            "o",
+            "Esto es lo que muestran los datos en noviembre de 2026. La IA generativa ha reducido la demanda de algunos tipos de trabajo creativo, en especial la ilustración, la traducción y la escritura que se compran pieza a pieza, y esos recortes se pueden medir en las plataformas de trabajo autónomo y se ven en las encuestas a creadores. No ha acabado con el trabajo creativo, y la mayoría de las cifras alarmantes que circulan son proyecciones o temores, no mediciones. La compensación empieza a llegar, pero sobre todo a los titulares de derechos, una sola vez y a través de demandas."
+          ],
+          [
+            "o",
+            "Los creadores tienen razón al pedir primero consentimiento y pago. Una renta básica no sustituye eso, y no debería venderse como tal. Pero el mejor experimento que tenemos, el irlandés, indica que un suelo mantiene a la gente en su oficio y estabiliza su vida en un momento en que sus mercados se mueven bajo sus pies. En la {parte 1|/essays/generative-ai-jobs-basic-income/} vimos que los primeros afectados son los que tienen menos protección. En el trabajo creativo, ese es el autónomo sin empleador, sin sindicato y sin derecho a ningún acuerdo judicial. Justo para esa persona existe un suelo."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Im Herbst 2025 befragte die Japan Freelance League, eine Interessenvertretung von Freiberuflern, Kreative in Japan zu generativer KI. Sie erhielt 24.991 Antworten, etwa sieben von zehn von Menschen, die zeichnen: Illustratorinnen und Illustratoren, Manga-Zeichner und Animatoren. Auf die Frage, ob generative KI ihr Einkommen oder ihren Umsatz verringert habe, antworteten 12,0 % mit Ja (9,3 % ein wenig, 2,7 % stark). Auf die Frage, ob sie eine ernste Bedrohung für ihren Lebensunterhalt sei, antworteten 88,6 % mit Ja.[1]"
+          ],
+          [
+            "p",
+            "Diese beiden Zahlen sind der Ausgangspunkt dieses Essays. Die Angst ist fast allgegenwärtig; der gemessene Verlust ist bisher real, aber deutlich kleiner. Beides zählt. In {Teil 1|/essays/generative-ai-jobs-basic-income/} haben wir gesehen, dass KI in der Beschäftigung insgesamt noch keine klare Spur hinterlassen hat, dass sich aber der Einstieg für junge Menschen verengt und dass Freiberufler es zuerst gespürt haben. Hier geht es um kreative Arbeit: was gemessen wurde, wohin das Geld aus der KI fließt, was Kreative selbst fordern und was ein Grundeinkommen für Künstler dort, wo es erprobt wurde, tatsächlich bewirkt hat."
+          ],
+          [
+            "h",
+            "Was gemessen wurde"
+          ],
+          [
+            "p",
+            "Die klarsten Belege stammen von Online-Marktplätzen für freie Arbeit, auf denen jeder Auftrag einzeln ausgeschrieben und bezahlt wird. Xiang Hui, Oren Reshef und Luofeng Zhou untersuchten Upwork. Nach dem Start der Bildgeneratoren DALL-E 2 und Midjourney sanken bei Freiberuflern mit Bildarbeit (Designer, Bildbearbeiter, Künstler) die monatlichen Aufträge um 3,7 % und die monatlichen Einnahmen um 9,4 %. Freiberufler im Schreiben verloren nach ChatGPT 2 % ihrer Aufträge und 5,2 % ihrer Einnahmen. Bessere Bewertungen schützten nicht.[2]"
+          ],
+          [
+            "p",
+            "Eine größere Studie von Ole Teutloff und Kollegen, erschienen im Journal of Economic Behavior & Organization, wertete mehr als drei Millionen Stellenausschreibungen auf einer globalen Freelance-Plattform von 2021 bis 2023 aus. Die Nachfrage nach Fähigkeiten, die KI teilweise ersetzen kann, etwa Schreiben und Übersetzen, sank gegenüber dem sonst zu erwartenden Verlauf um 20 % bis 50 %, und am stärksten traf es erfahrene Kräfte. Die Nachfrage nach Fähigkeiten, die mit KI zusammenarbeiten, stieg: Aufträge zum Bau von Chatbots haben sich fast verdreifacht, und die Nachfrage nach freier Arbeit insgesamt ging nicht zurück.[3]"
+          ],
+          [
+            "p",
+            "Umfragen unter Kreativen ergänzen das Bild, mit der Einschränkung, dass sie Menschen nach ihrer Einschätzung fragen und dass Betroffene eher antworten. In einer Umfrage der britischen Society of Authors vom Januar 2024 (787 Antworten) gaben 26 % der Illustratoren und 36 % der Übersetzer an, bereits Aufträge an generative KI verloren zu haben.[4] Eine Studie der University of Cambridge unter 258 veröffentlichten britischen Romanautoren vom November 2025 ergab, dass 39 % ihr Einkommen bereits geschmälert sahen, vor allem durch den Wegfall von Nebenarbeit wie Werbetexten, und 85 % einen weiteren Rückgang erwarteten.[5] In einer Umfrage der britischen Association of Photographers vom Januar 2026, an der rund 600 ihrer etwa 3.000 Mitglieder teilnahmen, gaben 58 % an, Auftragsarbeiten an generative KI verloren zu haben, derselbe Anteil wie ein Jahr zuvor; der durchschnittlich angegebene Verlust stieg auf rund 34.900 Pfund pro Person, wobei die veröffentlichte Zusammenfassung nicht genau sagt, wie dieser Durchschnitt berechnet wurde.[6]"
+          ],
+          [
+            "p",
+            "Die wichtigsten Ergebnisse im Überblick:"
+          ],
+          [
+            "t",
+            "Quelle | Wer | Ergebnis\nJapan Freelance League (2025) | 24.991 Kreative in Japan, überwiegend Zeichnende | Einkommen durch KI gesunken: 12,0 %; sehen KI als ernste Bedrohung: 88,6 %[1]\nHui, Reshef & Zhou | Freiberufler auf Upwork | Bilder: Aufträge −3,7 %, Einnahmen −9,4 %; Schreiben: −2 %, −5,2 %[2]\nTeutloff et al. | Über 3 Millionen Freelance-Ausschreibungen | Nachfrage nach Schreiben und Übersetzen −20 % bis −50 %; Chatbot-Aufträge fast ×3[3]\nSociety of Authors (Großbritannien, 2024) | 787 Autoren, Illustratoren und Übersetzer | Bereits Aufträge verloren: Illustratoren 26 %, Übersetzer 36 %[4]\nUniversity of Cambridge (2025) | 258 britische Romanautoren | Einkommen bereits getroffen: 39 %; erwarten Rückgang: 85 %[5]\nAssociation of Photographers (Großbritannien, 2026) | Rund 600 Berufsfotografen | Auftragsarbeiten verloren: 58 %[6]"
+          ],
+          [
+            "o",
+            "Das Muster ist eindeutig: Arbeit, die Stück für Stück eingekauft wird, etwa Illustration, Bilder im Stil von Stockfotos, Übersetzung und Werbetexte, verliert zuerst an Boden. Doch keine Studie zeigt bisher einen Zusammenbruch kreativer Arbeit insgesamt."
+          ],
+          [
+            "h",
+            "Eine Prognose, keine Messung"
+          ],
+          [
+            "p",
+            "Die in Debatten über KI und Kultur am häufigsten zitierte Zahl stammt von der CISAC, dem weltweiten Dachverband der Verwertungsgesellschaften für Urheber. In einer Studie mit der Beratungsfirma PMP Strategy, veröffentlicht im Dezember 2024, prognostizierte sie, dass bis 2028 rund 24 % der Einnahmen von Musikschaffenden und 21 % der Einnahmen audiovisueller Urheber gefährdet seien, verglichen mit einer Welt ohne generative KI: ein kumulierter Verlust von rund 22 Milliarden Euro über fünf Jahre, während der Markt für KI-generierte Musik und Videos auf etwa 16 und 48 Milliarden Euro im Jahr wächst.[7]"
+          ],
+          [
+            "p",
+            "Das ist ein Modell dessen, was geschehen könnte, wenn sich die aktuellen Trends fortsetzen und sich weder Recht noch Verträge ändern. Es hilft, die Größenordnung dessen zu erkennen, was auf dem Spiel steht, ist aber kein Beleg dafür, was bereits geschehen ist."
+          ],
+          [
+            "h",
+            "Wohin das Geld fließt"
+          ],
+          [
+            "p",
+            "Wenn KI-Unternehmen Werke von Kreativen nutzen, beginnt ein Teil des Geldes zurückzufließen, vor allem über Gerichte und Lizenzen. Der bisher größte Fall ist Bartz gegen Anthropic in den USA. Anthropic, das Unternehmen hinter dem KI-Modell Claude, willigte ein, 1,5 Milliarden Dollar zu zahlen, um Ansprüche wegen Büchern beizulegen, die es aus Piraterie-Bibliotheken heruntergeladen hatte. Ein Richter hatte im Juni 2025 entschieden, dass das Training mit Büchern Fair Use sei, das Aufbewahren raubkopierter Exemplare jedoch nicht. Der Vergleich umfasst rund 500.000 Titel mit mindestens 3.000 Dollar pro Titel vor Kosten und Gebühren, standardmäßig hälftig zwischen Autor und Verlag aufgeteilt, wenn ein Verlag die Rechte hält. Er wurde im Juli 2026 genehmigt, und die ersten Zahlungen sollen in der Woche des 23. November 2026 beginnen.[8]"
+          ],
+          [
+            "p",
+            "In der Musik verklagten die großen Labels die KI-Songgeneratoren Suno und Udio, legten die Verfahren Ende 2025 dann bei und machten daraus Lizenzvereinbarungen. Im Juni 2026 verklagte die American Federation of Musicians, die US-Musikergewerkschaft, Universal Music Group und Warner Music Group mit dem Vorwurf, die Labels hätten Aufnahmen von Gewerkschaftsmitgliedern „ohne Vergütung oder Nennung“ an Suno und Udio lizenziert und sich geweigert offenzulegen, wessen Arbeit betroffen sei.[9] Die Lehre ist einfach: Lizenzgeld geht an den, der die Rechte besitzt, und das ist oft nicht die Person, deren Arbeit es war."
+          ],
+          [
+            "p",
+            "Anderswo haben die Gerichte die Kernfrage nicht geklärt. Im Verfahren Getty Images gegen Stability AI entschied der britische High Court im November 2025, dass das Modell Stable Diffusion keine „rechtsverletzende Kopie“ sei, weil es die Bilder, mit denen es trainiert wurde, nicht speichert; Getty hatte seine wichtigsten Ansprüche zum Training fallen gelassen, weil das Training außerhalb Großbritanniens stattgefunden hatte.[10] Getty hat die Erlaubnis erhalten, in Berufung zu gehen.[11] In den USA erreichte das Verfahren der New York Times gegen OpenAI und Microsoft im September 2026 das Stadium wechselseitiger Anträge auf ein summarisches Urteil zum Fair Use, ohne Entscheidung und ohne Prozesstermin.[12]"
+          ],
+          [
+            "p",
+            "Japan hat einen anderen Weg eingeschlagen. Artikel 30-4 des Urheberrechtsgesetzes erlaubt es weitgehend, Werke ohne Erlaubnis für KI-Training zu nutzen, wenn es nicht darum geht, den Ausdruck darin zu „genießen“, und er wurde nicht geändert. Leitlinien der Agentur für kulturelle Angelegenheiten von 2024 nennen die Grenzen: Die Ausnahme gilt nicht, wenn der Zweck auch darin besteht, Ergebnisse zu erzeugen, die den schöpferischen Ausdruck der Trainingswerke wiedergeben, und auch nicht, wenn die Nutzung die Interessen des Rechteinhabers unangemessen beeinträchtigen würde. Allein einen Stil nachzuahmen ist keine Verletzung, denn ein Stil ist eine Idee und kein Ausdruck. Die Leitlinien sind rechtlich nicht bindend.[13]"
+          ],
+          [
+            "o",
+            "Entschädigung kommt an, aber langsam, Fall für Fall und vor allem bei Rechteinhabern mit Anwälten. Einmalig 3.000 Dollar pro Buch sind echtes Geld. Ein Einkommen sind sie nicht."
+          ],
+          [
+            "h",
+            "Was Kreative fordern: Zustimmung und Bezahlung"
+          ],
+          [
+            "p",
+            "Wo Kreative organisiert sind, haben sie Bedingungen durchgesetzt. Nach einem elfmonatigen Streik ratifizierten die Videospiel-Darsteller der SAG-AFTRA im Juli 2025 mit 95,04 % der Stimmen einen neuen Tarifvertrag: eine gesonderte schriftliche Zustimmung, bevor eine digitale Nachbildung eines Darstellers erstellt oder verwendet wird, eine Erklärung, wie sie verwendet wird, das Recht, die Zustimmung während eines Streiks auszusetzen, und eine Mindestvergütung für die Nutzung von Nachbildungen.[14] Der Vertrag der Writers Guild of America von 2026, im April 2026 von 90,38 % der Abstimmenden ratifiziert, behält die Regel von 2023 bei, dass KI-generierter Text kein literarisches Material ist, und schreibt zusätzlich vor, dass Studios die Gewerkschaft schriftlich informieren müssen, wenn sie Werke von Drehbuchautoren für KI-Training lizenzieren; die Gewerkschaft kann dann Gespräche über die Lizenz und eine Vergütung für die Autoren verlangen.[15]"
+          ],
+          [
+            "p",
+            "In Japan veröffentlichte die Japan Actors Union, die rund 2.600 Schauspieler und Synchronsprecher vertritt, am 15. Oktober 2026 Leitlinien zu generativer KI und Stimme. Sie verlangen eine vorherige Erlaubnis in jeder Phase, vom Training über die Erzeugung bis zur Veröffentlichung; behandeln jede Nutzung einer KI-Stimme als neue Darbietung, die bezahlt werden muss; fordern für KI-Synchronisation in andere Sprachen eine neue Erlaubnis und eine zusätzliche Vergütung; und verlangen die Zustimmung der Erben, bevor die Stimme eines verstorbenen Darstellers nachgebildet wird. Die Gewerkschaft versteht sie als freiwilligen Branchenstandard, bis das Gesetz ein Recht an der eigenen Stimme anerkennt.[16]"
+          ],
+          [
+            "p",
+            "Man sollte es klar sagen: Die meisten Kreativen fordern Zustimmung und Bezahlung für die Nutzung ihrer Werke, kein Grundeinkommen. In einer Umfrage der Authors Guild unter mehr als 2.400 US-Autoren sagten 96 %, vor der Nutzung ihrer Werke für KI-Training müsse ihre Zustimmung eingeholt werden.[17] Das sind berechtigte Forderungen, und sie unterscheiden sich von unserer."
+          ],
+          [
+            "o",
+            "Zustimmung und Bezahlung helfen denen, deren Werke genutzt werden und die organisiert genug sind, Bedingungen durchzusetzen. Für die Illustratorin, die einfach keine Aufträge mehr bekommt, leisten sie weniger."
+          ],
+          [
+            "h",
+            "Die besten Belege für ein Einkommensminimum für Künstler: Irland"
+          ],
+          [
+            "p",
+            "Die stärksten Belege dafür, was ein Grundeinkommen für Künstler bewirkt, kommen aus Irland. Sein {Pilotprojekt Grundeinkommen für die Künste|/timeline/#tl-ireland-arts}, 2022 gestartet, zahlte 2.000 Künstlern und Kulturschaffenden drei Jahre lang 325 € pro Woche, später verlängert bis Februar 2026. Die Zahlung ist steuerpflichtig und gilt als Einkommen aus selbstständiger Tätigkeit. Sie war zudem als Experiment angelegt: Von rund 8.200 berechtigten Bewerbern wurden 2.000 per Los für die Zahlung ausgewählt, und 1.000 kamen in eine Vergleichsgruppe ohne Zahlung.[18]"
+          ],
+          [
+            "p",
+            "Die abschließende Evaluation von Alma Economics im Auftrag des Kulturministeriums erschien im September 2025. Im Vergleich zur Kontrollgruppe verbrachten die Empfänger nach einem Jahr rund 4 Stunden mehr pro Woche mit ihrer künstlerischen Arbeit, bei der letzten Befragung über 5 Stunden, und rund 2,3 Stunden mehr mit Recherche. Außerhalb der Künste arbeiteten sie nach einem Jahr 2,7 Stunden pro Woche weniger, am Ende 4,3 Stunden weniger. Ihr Einkommen aus der Kunst stieg im Schnitt um mehr als 500 € im Monat, während das Einkommen aus anderer Arbeit um rund 280 € sank. Die Wahrscheinlichkeit, neue Werke fertigzustellen, lag um rund 10 Prozentpunkte höher.[18]"
+          ],
+          [
+            "p",
+            "Die Ergebnisse zum Wohlbefinden fielen größer aus. Bei der letzten Befragung berichteten die Empfänger mit einer um 13 Prozentpunkte geringeren Wahrscheinlichkeit von Angst und mit einer um 11 Punkte geringeren von Depression; die Lebenszufriedenheit stieg auf einer Zehn-Punkte-Skala um fast einen Punkt; und die Wahrscheinlichkeit, nur mit Mühe über die Runden zu kommen, lag um fast 20 Punkte niedriger. Die Wahrscheinlichkeit anzugeben, keine Arbeit in den Künsten zu finden, sank um 13 bis 18 Punkte. Ihre Sozialleistungen gingen um rund 100 € im Monat zurück.[18]"
+          ],
+          [
+            "p",
+            "Das Pilotprojekt kostete von 2021 bis 2025 brutto rund 114 Millionen Euro. Steuern auf die Zahlungen, andere steuerliche Effekte und geringere Sozialausgaben brachten davon fast 37 % zurück. Die Evaluatoren bezifferten den Nutzen auf etwas über 100 Millionen Euro, überwiegend beim Wohlbefinden, und kamen zu dem Schluss, dass die Gesellschaft für jeden Euro öffentlichen Geldes 1,39 € zurückerhielt.[18] Es gibt Grenzen: Der Vergleichsgruppe wurden 650 € im Jahr dafür angeboten, weiter an den Befragungen teilzunehmen, einige ihrer Mitglieder stiegen aus, und eine auf drei Jahre garantierte Zahlung an wenige Künstler ist nicht dasselbe wie ein universelles Minimum."
+          ],
+          [
+            "p",
+            "Inzwischen hat Irland das Programm dauerhaft eingeführt. Die Bewerbungsfrist für eine neue Runde mit 2.000 Plätzen zu 325 € pro Woche für drei Jahre endete im Mai 2026. Etwas mehr als 10.000 Menschen bewarben sich, sodass rund vier von fünf leer ausgehen werden. Die ersten Empfänger wurden ab dem 15. Oktober 2026 benachrichtigt, mit rückwirkenden Zahlungen ab September 2026. Kulturminister Patrick O’Donovan nannte es „einen Wendepunkt, und jetzt bleibt es“.[19]"
+          ],
+          [
+            "p",
+            "Der KI-Beirat der irischen Regierung selbst hat die Verbindung zur KI ausdrücklich gezogen. In einem Beratungspapier vom Februar 2025 zu KI und dem Kreativsektor schrieb er, „eine Ausweitung des bedingungslosen Grundeinkommens auf von KI-Umbrüchen betroffene Kreative könnte ihre Anpassung an neue wirtschaftliche Realitäten unterstützen“, definierte diesen Umbruch als messbaren Verlust von Einkommen oder Arbeit, der direkt auf generative KI zurückgeht, und empfahl, das Programm zur Unterstützung betroffener Kreativer auszuweiten. Im selben Papier empfahl er Zustimmungsregeln für Darsteller nach dem Vorbild der SAG-AFTRA.[20] Das dauerhafte Programm richtet sich in seiner gestarteten Form nicht an von KI betroffene Kreative."
+          ],
+          [
+            "p",
+            "Die USA liefern einen zweiten, unabhängigen Test. {Creatives Rebuild New York|/timeline/#tl-crny-artists} zahlte 2.400 Künstlern mit niedrigem Einkommen im Bundesstaat New York 18 Monate lang 1.000 Dollar im Monat. Eine begutachtete Studie von Forschenden der Indiana University, veröffentlicht 2026, verglich sie mit nicht ausgewählten Bewerbern: Die Empfänger verbrachten 3,9 Stunden mehr pro Woche mit künstlerischer Arbeit und 2,4 Stunden weniger mit anderer Arbeit, und die Veränderung ihres Gesamteinkommens war statistisch nicht signifikant.[21] Frühere Kurzberichte der Forschenden fanden weniger Ernährungsunsicherheit und weniger schwere Symptome von Angst und Depression, stützten sich aber überwiegend auf Selbstauskünfte vor und nach dem Programm.[22]"
+          ],
+          [
+            "o",
+            "Zwei Experimente auf zwei Kontinenten weisen in dieselbe Richtung. Mit einem bescheidenen Minimum verlagern Künstler Zeit von Nebenjobs in ihre Kunst, bleiben in ihrem Feld und sind deutlich weniger ängstlich. Keines der Programme hat sie reich gemacht, und bei keinem ging es um KI."
+          ],
+          [
+            "h",
+            "Ergänzung, keine Konkurrenz"
+          ],
+          [
+            "p",
+            "Nimmt man die beiden Teile dieses Essays zusammen, zeigt sich eine Arbeitsteilung. Zustimmung und Bezahlung, ob über Vergleiche vor Gericht, Lizenzen oder Tarifverträge, helfen denen, deren Werke tatsächlich genutzt werden und die das nachweisen können. Sie kommen langsam und ungleich verteilt, und ein großer Teil des Geldes bleibt bei den Rechteinhabern hängen. Ein Einkommensminimum hilft einer anderen Gruppe: der Illustratorin, deren Kunden auf ein Tool umgestiegen sind, dem Übersetzer, dessen Honorare sich halbiert haben, der jungen Künstlerin, die ihre Miete nicht mehr mit Nebenjobs bezahlen kann. Ihr Verlust lässt sich auf keinen einzelnen Trainingsdatensatz zurückführen, und kein Vergleich wird sie erreichen."
+          ],
+          [
+            "p",
+            "Auch die Größenordnung ist verschieden. Der Vergleich von Anthropic zahlt mindestens 3.000 Dollar pro Buch, einmalig. Das irische Programm zahlt rund 16.900 € im Jahr pro Künstler, aber an 2.000 von mehr als 10.000 Bewerbern. Keines ist ein Grundeinkommen im vollen Sinn: Das eine ist eine Entschädigung für eine vergangene Nutzung, das andere eine selektive Zahlung an eine kleine Gruppe. Doch die irischen Ergebnisse zeigen, was schon ein teilweises Minimum leisten kann, und die Empfehlung des Beirats zeigt, dass eine staatliche Stelle die Verbindung bereits gezogen hat."
+          ],
+          [
+            "p",
+            "Japan hat bisher keines von beiden: kein nationales Einkommensprogramm für Künstler und ein Urheberrecht, das Training weitgehend erlaubt. Die bisherigen Antworten, von den Leitlinien der Agentur für kulturelle Angelegenheiten bis zu den Leitlinien der Schauspielergewerkschaft, drehen sich um Rechte. Sie sind wichtig. Doch eine Antwort, die nur auf Rechte setzt, lässt die Kreativen außen vor, die aus der Arbeit gedrängt werden, ohne dass jemand ihre Werke überhaupt genutzt hat."
+          ],
+          [
+            "h",
+            "Weder „KI beendet die Kunst“ noch „es passiert nichts“"
+          ],
+          [
+            "o",
+            "Das zeigen die Belege mit Stand November 2026. Generative KI hat die Nachfrage nach einigen Arten kreativer Arbeit gesenkt, vor allem nach Illustration, Übersetzung und Texten, die Stück für Stück eingekauft werden, und diese Rückgänge sind auf Freelance-Plattformen messbar und in Umfragen unter Kreativen sichtbar. Kreative Arbeit hat sie nicht beendet, und die meisten der kursierenden Schreckenszahlen sind Prognosen oder Befürchtungen, keine Messungen. Entschädigung beginnt zu fließen, aber überwiegend an Rechteinhaber, einmalig und über Klagen."
+          ],
+          [
+            "o",
+            "Kreative fordern zu Recht zuerst Zustimmung und Bezahlung. Ein Grundeinkommen ist dafür kein Ersatz und sollte auch nicht als solcher verkauft werden. Doch das beste Experiment, das wir haben, das irische, deutet darauf hin, dass ein Minimum Menschen in ihrem Handwerk hält und ihr Leben stabilisiert, gerade wenn sich ihre Märkte unter ihnen verschieben. In {Teil 1|/essays/generative-ai-jobs-basic-income/} haben wir gesehen, dass es zuerst diejenigen trifft, die am wenigsten geschützt sind. In der kreativen Arbeit ist das der Freiberufler ohne Arbeitgeber, ohne Gewerkschaft und ohne Anspruch aus irgendeinem Vergleich. Genau für ihn ist ein Minimum gedacht."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في خريف 2025 سألت رابطة العاملين المستقلين في اليابان، وهي جماعة تتحدث باسم المستقلين، المبدعين في البلاد عن الذكاء الاصطناعي التوليدي. وتلقت 24,991 إجابة، نحو سبعة من كل عشرة منها من أشخاص يرسمون: رسامو الإيضاح والمانغا والرسوم المتحركة. وحين سُئلوا هل قلّص الذكاء الاصطناعي التوليدي دخلهم أو مبيعاتهم، أجاب 12.0% بنعم (9.3% قليلًا، و2.7% كثيرًا). وحين سُئلوا هل يمثل تهديدًا جديًا لمعيشتهم، أجاب 88.6% بنعم.[1]"
+          ],
+          [
+            "p",
+            "هذان الرقمان نقطة انطلاق هذا المقال. فالخوف شبه عام، أما الخسارة المقيسة فحقيقية حتى الآن لكنها أصغر بكثير. وكلاهما مهم. في {الجزء الأول|/essays/generative-ai-jobs-basic-income/} وجدنا أن الذكاء الاصطناعي لم يترك بعدُ أثرًا واضحًا في التوظيف عمومًا، لكن باب الدخول يضيق أمام الشباب، وأن المستقلين كانوا أول من شعر بذلك. وهنا ننظر إلى العمل الإبداعي: ما الذي قيس، وإلى أين يذهب المال المتأتي من الذكاء الاصطناعي، وماذا يطلب المبدعون أنفسهم، وما الذي فعله الدخل الأساسي للفنانين فعلًا حيث جُرّب."
+          ],
+          [
+            "h",
+            "ما الذي قيس"
+          ],
+          [
+            "p",
+            "تأتي أوضح الأدلة من أسواق العمل الحر عبر الإنترنت، حيث تُنشر كل مهمة ويُدفع أجرها على حدة. درس شيانغ هوي وأورين ريشيف ولوفنغ تشو منصة ⁦Upwork⁩. فبعد ظهور مولّدَي الصور ⁦DALL-E 2⁩ و⁦Midjourney⁩، انخفض عدد المهام الشهرية للمستقلين العاملين في الصور (المصممين ومحرري الصور والفنانين) بنسبة 3.7%، وانخفض دخلهم الشهري بنسبة 9.4%. وخسر مستقلو الكتابة 2% من المهام و5.2% من الدخل بعد ⁦ChatGPT⁩. ولم يكن المستقلون الأعلى تقييمًا بمنأى عن ذلك.[2]"
+          ],
+          [
+            "p",
+            "ونظرت دراسة أكبر أجراها أوله تويتلوف وزملاؤه، ونُشرت في مجلة ⁦Journal of Economic Behavior & Organization⁩، في أكثر من ثلاثة ملايين إعلان عمل على منصة عالمية للعمل الحر بين 2021 و2023. فقد انخفض الطلب على المهارات التي يمكن للذكاء الاصطناعي أن يحل محلها جزئيًا، مثل الكتابة والترجمة، بنسبة تتراوح بين 20% و50% مقارنة بما كان متوقعًا لولاه، وكان الانخفاض أكبر لدى العاملين ذوي الخبرة. أما الطلب على المهارات التي تعمل مع الذكاء الاصطناعي فارتفع: إذ تضاعفت مهام بناء روبوتات المحادثة ثلاث مرات تقريبًا، ولم ينخفض الطلب على العمل الحر ككل.[3]"
+          ],
+          [
+            "p",
+            "وتكمل مسوح المبدعين الصورة، مع التنبيه إلى أنها تسأل الناس عمّا يعتقدونه، وإلى أن من يشعرون بالضرر أكثر ميلًا إلى الإجابة. ففي مسح أجرته جمعية المؤلفين البريطانية (⁦Society of Authors⁩) في يناير 2024 (787 إجابة)، قال 26% من الرسامين و36% من المترجمين إنهم خسروا عملًا بالفعل بسبب الذكاء الاصطناعي التوليدي.[4] ووجدت دراسة لجامعة كامبريدج شملت 258 روائيًا بريطانيًا منشورة أعمالهم، صدرت في نوفمبر 2025، أن 39% قالوا إن دخلهم تضرر بالفعل، غالبًا بفقدان أعمال جانبية مثل كتابة النصوص الإعلانية، وتوقع 85% أن ينخفض أكثر.[5] وفي مسح أجرته رابطة المصورين البريطانية (⁦Association of Photographers⁩) في يناير 2026، وأجاب عنه نحو 600 من أعضائها البالغ عددهم نحو 3,000، قال 58% إنهم خسروا أعمالًا بالتكليف بسبب الذكاء الاصطناعي التوليدي، وهي النسبة نفسها قبل عام؛ وارتفع متوسط الخسارة المبلغ عنها إلى نحو ⁦£34,900⁩ للشخص، وإن كان الملخص المنشور لا يوضح بالضبط كيف حُسب هذا المتوسط.[6]"
+          ],
+          [
+            "p",
+            "أبرز النتائج جنبًا إلى جنب:"
+          ],
+          [
+            "t",
+            "المصدر | من شملهم | النتيجة\nرابطة العاملين المستقلين في اليابان (2025) | 24,991 مبدعًا في اليابان، معظمهم يرسمون | انخفض الدخل بسبب الذكاء الاصطناعي: 12.0%؛ يرونه تهديدًا جديًا: 88.6%[1]\nهوي وريشيف وتشو | مستقلو ⁦Upwork⁩ | الصور: المهام ⁦−3.7%⁩، الدخل ⁦−9.4%⁩؛ الكتابة: ⁦−2%⁩، ⁦−5.2%⁩[2]\nتويتلوف وزملاؤه | أكثر من 3 ملايين إعلان عمل حر | الطلب على الكتابة والترجمة ⁦−20%⁩ إلى ⁦−50%⁩؛ مهام روبوتات المحادثة نحو ⁦×3⁩[3]\nجمعية المؤلفين (بريطانيا، 2024) | 787 كاتبًا ورسامًا ومترجمًا | خسروا عملًا بالفعل: الرسامون 26%، المترجمون 36%[4]\nجامعة كامبريدج (2025) | 258 روائيًا بريطانيًا | تضرر الدخل بالفعل: 39%؛ يتوقعون انخفاضه: 85%[5]\nرابطة المصورين (بريطانيا، 2026) | نحو 600 مصور محترف | خسروا أعمالًا بالتكليف: 58%[6]"
+          ],
+          [
+            "o",
+            "النمط متسق: العمل الذي يُشترى قطعة قطعة، مثل الرسوم الإيضاحية والصور على غرار صور المخزون والترجمة وكتابة النصوص الإعلانية، هو أول ما يفقد مكانه. لكن لا توجد بعدُ دراسة تُظهر انهيار العمل الإبداعي ككل."
+          ],
+          [
+            "h",
+            "إسقاط، لا قياس"
+          ],
+          [
+            "p",
+            "يأتي الرقم الأكثر تداولًا في النقاشات حول الذكاء الاصطناعي والثقافة من ⁦CISAC⁩، الاتحاد العالمي لجمعيات المؤلفين. ففي دراسة أجراها مع شركة الاستشارات ⁦PMP Strategy⁩ ونُشرت في ديسمبر 2024، توقّع أن يكون نحو 24% من إيرادات مبدعي الموسيقى و21% من إيرادات مبدعي الأعمال السمعية البصرية معرّضة للخطر بحلول 2028، مقارنة بعالم بلا ذكاء اصطناعي توليدي: أي خسارة تراكمية بنحو 22 مليار يورو على مدى خمس سنوات، بينما تنمو سوق الموسيقى والفيديو المولّدين بالذكاء الاصطناعي إلى نحو 16 مليار يورو و48 مليار يورو سنويًا.[7]"
+          ],
+          [
+            "p",
+            "هذا نموذج لما قد يحدث إذا استمرت الاتجاهات الحالية ولم يتغير شيء في القانون أو العقود. وهو مفيد لرؤية حجم ما هو على المحك، لكنه ليس دليلًا على ما حدث."
+          ],
+          [
+            "h",
+            "إلى أين يذهب المال"
+          ],
+          [
+            "p",
+            "إن كانت شركات الذكاء الاصطناعي تستخدم أعمال المبدعين، فإن جزءًا من المال بدأ يعود إليهم، غالبًا عبر المحاكم والتراخيص. وأكبر قضية حتى الآن هي ⁦Bartz v. Anthropic⁩ في الولايات المتحدة. فقد وافقت ⁦Anthropic⁩، الشركة التي تقف وراء نموذج الذكاء الاصطناعي ⁦Claude⁩، على دفع 1.5 مليار دولار لتسوية دعاوى تتعلق بكتب نزّلتها من مكتبات مقرصنة. وكان قاضٍ قد حكم في يونيو 2025 بأن التدريب على الكتب استخدام عادل، لكن الاحتفاظ بنسخ مقرصنة ليس كذلك. وتشمل التسوية نحو 500,000 عنوان، بما لا يقل عن ⁦$3,000⁩ لكل منها قبل التكاليف والأتعاب، تُقسم افتراضيًا مناصفة بين المؤلف والناشر حين يملك الناشر الحقوق. وقد أُقرت في يوليو 2026، ومن المقرر أن تبدأ الدفعات الأولى في الأسبوع الذي يبدأ في 23 نوفمبر 2026.[8]"
+          ],
+          [
+            "p",
+            "وفي الموسيقى، رفعت شركات التسجيل الكبرى دعاوى على مولّدَي الأغاني ⁦Suno⁩ و⁦Udio⁩، ثم سوّتها وحوّلتها إلى صفقات ترخيص في نهاية 2025. وفي يونيو 2026 رفع الاتحاد الأمريكي للموسيقيين، نقابة الموسيقيين في الولايات المتحدة، دعوى على ⁦Universal Music Group⁩ و⁦Warner Music Group⁩، قائلًا إن الشركتين رخّصتا لـ⁦Suno⁩ و⁦Udio⁩ تسجيلات أعدّها أعضاء النقابة «دون تعويض أو إشارة إليهم»، ورفضتا الإفصاح عن أصحاب الأعمال المعنية.[9] والفكرة واضحة: أموال الترخيص تذهب إلى من يملك الحقوق، وهو في الغالب ليس صاحب العمل نفسه."
+          ],
+          [
+            "p",
+            "وفي أماكن أخرى لم تحسم المحاكم المسألة الأساسية. ففي قضية ⁦Getty Images v. Stability AI⁩، حكمت المحكمة العليا البريطانية في نوفمبر 2025 بأن نموذج ⁦Stable Diffusion⁩ ليس «نسخة منتهِكة»، لأنه لا يخزّن الصور التي دُرّب عليها؛ وكانت ⁦Getty⁩ قد تخلّت عن دعاواها الرئيسية المتعلقة بالتدريب لأن التدريب جرى خارج المملكة المتحدة.[10] وقد مُنحت ⁦Getty⁩ الإذن بالاستئناف.[11] وفي الولايات المتحدة، بلغت قضية صحيفة «نيويورك تايمز» ضد ⁦OpenAI⁩ و⁦Microsoft⁩ مرحلة طلبات متقابلة لإصدار حكم مستعجل بشأن الاستخدام العادل في سبتمبر 2026، دون حكم ودون موعد للمحاكمة حتى الآن.[12]"
+          ],
+          [
+            "p",
+            "سلكت اليابان طريقًا مختلفًا. فالمادة 30-4 من قانون حق المؤلف تسمح على نطاق واسع باستخدام الأعمال في تدريب الذكاء الاصطناعي دون إذن حين لا يكون الغرض «الاستمتاع» بالتعبير الذي تتضمنه، ولم تُعدَّل. وتحدد إرشادات وكالة الشؤون الثقافية الصادرة في 2024 الحدود: لا ينطبق الاستثناء حين يشمل الغرض إنتاج مخرجات تعيد إنتاج التعبير الإبداعي لأعمال التدريب، ولا ينطبق حين يُلحق الاستخدام ضررًا غير معقول بمصالح صاحب الحق. ونسخ الأسلوب وحده ليس انتهاكًا، لأن الأسلوب فكرة لا تعبير. والإرشادات غير ملزمة قانونًا.[13]"
+          ],
+          [
+            "o",
+            "التعويض يصل، لكن ببطء، قضيةً بعد قضية، وفي الغالب إلى أصحاب الحقوق الذين لديهم محامون. ومبلغ ⁦$3,000⁩ لمرة واحدة عن كل كتاب مال حقيقي. لكنه ليس دخلًا."
+          ],
+          [
+            "h",
+            "ماذا يطلب المبدعون: الموافقة والأجر"
+          ],
+          [
+            "p",
+            "حيثما كان المبدعون منظَّمين، انتزعوا شروطًا. فبعد إضراب دام 11 شهرًا، صادق مؤدو ألعاب الفيديو في ⁦SAG-AFTRA⁩ في يوليو 2025 على اتفاق جديد بنسبة 95.04% من الأصوات: موافقة خطية مستقلة قبل إنشاء نسخة رقمية من المؤدي أو استخدامها، وشرح لكيفية استخدامها، والحق في تعليق الموافقة أثناء الإضراب، وحد أدنى للأجر عن استخدام النسخة.[14] أما عقد نقابة الكتّاب الأمريكية لعام 2026، الذي صودق عليه في أبريل 2026 بنسبة 90.38% من المصوّتين، فيُبقي على قاعدة 2023 التي تنص على أن النص المولّد بالذكاء الاصطناعي ليس مادة أدبية، ويضيف أن على الاستوديوهات إخطار النقابة كتابيًا إذا رخّصت أعمال الكتّاب لتدريب الذكاء الاصطناعي، وعندها يحق للنقابة طلب مناقشة الترخيص والأجر المستحق للكتّاب.[15]"
+          ],
+          [
+            "p",
+            "وفي اليابان، نشرت نقابة الممثلين اليابانية، التي تضم نحو 2,600 ممثل وممثل أداء صوتي، إرشادات بشأن الذكاء الاصطناعي التوليدي والصوت في 15 أكتوبر 2026. وهي تطلب إذنًا مسبقًا في كل مرحلة، من التدريب إلى التوليد إلى النشر؛ وتعدّ كل استخدام لصوت مولّد بالذكاء الاصطناعي أداءً جديدًا يستحق الأجر؛ وتشترط إذنًا جديدًا وأجرًا إضافيًا للدبلجة بالذكاء الاصطناعي إلى لغات أخرى؛ وتشترط موافقة الورثة قبل إعادة إنشاء صوت مؤدٍّ متوفى. وتصفها النقابة بأنها معيار طوعي للقطاع إلى أن يعترف القانون بحق الإنسان في صوته.[16]"
+          ],
+          [
+            "p",
+            "ومن المفيد قول ذلك بوضوح: ما يطلبه معظم المبدعين هو الموافقة والأجر مقابل استخدام أعمالهم، لا دخلًا أساسيًا. ففي مسح أجرته نقابة المؤلفين الأمريكية (⁦Authors Guild⁩) وشمل أكثر من 2,400 مؤلف أمريكي، قال 96% إن موافقتهم يجب أن تكون شرطًا قبل استخدام أعمالهم في تدريب الذكاء الاصطناعي.[17] وهذه مطالب عادلة، وهي مختلفة عن مطلبنا."
+          ],
+          [
+            "o",
+            "الموافقة والأجر يساعدان من تُستخدم أعمالهم ومن هم منظَّمون بما يكفي لفرض الشروط. لكنهما يفعلان أقل لرسام الإيضاح الذي توقفت عنه الطلبات ببساطة."
+          ],
+          [
+            "h",
+            "أفضل الأدلة على أرضية دخل للفنانين: أيرلندا"
+          ],
+          [
+            "p",
+            "تأتي أقوى الأدلة على ما يفعله الدخل الأساسي للفنانين من أيرلندا. فقد دفع {برنامجها التجريبي للدخل الأساسي للفنون|/timeline/#tl-ireland-arts}، الذي أُطلق في 2022، ⁦€325⁩ أسبوعيًا لـ2,000 فنان وعامل في الفنون لمدة ثلاث سنوات، مُدّدت لاحقًا حتى فبراير 2026. والدفعة خاضعة للضريبة وتُحتسب دخلًا من العمل الحر. وقد صُمم البرنامج أيضًا تجربةً: فمن بين نحو 8,200 متقدم مؤهل، اختير 2,000 عشوائيًا لتلقي المال، وأُدرج 1,000 في مجموعة مقارنة لم تتلقه.[18]"
+          ],
+          [
+            "p",
+            "نُشر التقييم النهائي، الذي أعدّته ⁦Alma Economics⁩ لوزارة الثقافة، في سبتمبر 2025. فمقارنة بالمجموعة الضابطة، خصّص المستفيدون نحو 4 ساعات إضافية أسبوعيًا لممارستهم الفنية بعد عام، ارتفعت إلى أكثر من 5 ساعات بحلول المسح الأخير، ونحو 2.3 ساعة إضافية للبحث. وعملوا خارج الفنون أقل بـ2.7 ساعة أسبوعيًا بعد عام، وأقل بـ4.3 ساعة في النهاية. وارتفع دخلهم من الفنون بأكثر من ⁦€500⁩ شهريًا في المتوسط، بينما انخفض دخلهم من الأعمال الأخرى بنحو ⁦€280⁩. وكانوا أرجح بنحو 10 نقاط مئوية لإنجاز أعمال جديدة.[18]"
+          ],
+          [
+            "p",
+            "وكانت نتائج الرفاه أكبر. فبحلول المسح الأخير، كان المستفيدون أقل احتمالًا بـ13 نقطة مئوية للإبلاغ عن القلق، وبـ11 نقطة للإبلاغ عن الاكتئاب؛ وارتفع الرضا عن الحياة بنحو نقطة كاملة على مقياس من عشر نقاط؛ وكانوا أقل احتمالًا بنحو 20 نقطة للقول إنهم يكافحون لتغطية نفقاتهم. وانخفض احتمال قولهم إنهم لا يجدون عملًا في الفنون بما بين 13 و18 نقطة. وانخفضت مدفوعات الرعاية الاجتماعية التي يتلقونها بنحو ⁦€100⁩ شهريًا.[18]"
+          ],
+          [
+            "p",
+            "بلغت التكلفة الإجمالية للبرنامج نحو 114 مليون يورو بين 2021 و2025. وأعادت الضرائب على الدفعات، والتغيرات الضريبية الأخرى، وانخفاض الإنفاق على الرعاية الاجتماعية، نحو 37% من ذلك. واحتسب المقيّمون منافع تزيد قليلًا على 100 مليون يورو، معظمها في الرفاه، وخلصوا إلى أن المجتمع استعاد ⁦€1.39⁩ مقابل كل ⁦€1⁩ من المال العام.[18] وثمة حدود: فقد عُرض على مجموعة المقارنة ⁦€650⁩ سنويًا للاستمرار في الإجابة عن المسوح، وانسحب بعض أعضائها، كما أن دفعة مضمونة لثلاث سنوات لعدد قليل من الفنانين ليست كأرضية شاملة للجميع."
+          ],
+          [
+            "p",
+            "وقد جعلت أيرلندا البرنامج دائمًا منذ ذلك الحين. وأُغلق في مايو 2026 باب التقديم لجولة جديدة من 2,000 مقعد بـ⁦€325⁩ أسبوعيًا لمدة ثلاث سنوات. وتقدّم أكثر من 10,000 شخص بقليل، أي أن نحو أربعة من كل خمسة لن يحصلوا عليه. وأُبلغ المستفيدون الأوائل اعتبارًا من 15 أكتوبر 2026، مع دفعات بأثر رجعي من سبتمبر 2026. ووصفه وزير الثقافة باتريك أودونوفان بأنه «نقلة نوعية، وهو الآن باقٍ».[19]"
+          ],
+          [
+            "p",
+            "وقد ربط المجلس الاستشاري للذكاء الاصطناعي التابع للحكومة الأيرلندية نفسها الأمر بالذكاء الاصطناعي صراحةً. ففي ورقة استشارية صدرت في فبراير 2025 عن الذكاء الاصطناعي والقطاع الإبداعي، كتب أن «توسيع الدخل الأساسي الشامل ليشمل المبدعين المتضررين من اضطراب الذكاء الاصطناعي قد يدعم تكيّفهم مع الواقع الاقتصادي الجديد»، وعرّف هذا الاضطراب بأنه خسارة قابلة للقياس في الدخل أو العمل تُعزى مباشرة إلى الذكاء الاصطناعي التوليدي، وأوصى بتوسيع البرنامج لدعم المبدعين المتضررين منه. وفي الورقة نفسها أوصى بقواعد موافقة للمؤدين على غرار ⁦SAG-AFTRA⁩.[20] أما البرنامج الدائم، بالصيغة التي أُطلق بها، فلا يستهدف المبدعين المتضررين من الذكاء الاصطناعي."
+          ],
+          [
+            "p",
+            "وتقدّم الولايات المتحدة اختبارًا ثانيًا مستقلًا. فقد دفعت مبادرة {⁦Creatives Rebuild New York⁩|/timeline/#tl-crny-artists} ⁦$1,000⁩ شهريًا لمدة 18 شهرًا لـ2,400 فنان من ذوي الدخل المنخفض في ولاية نيويورك. وقارنت دراسة محكّمة أجراها باحثون في جامعة إنديانا، ونُشرت في 2026، بينهم وبين متقدمين لم يُختاروا: فقد خصص المستفيدون 3.9 ساعة إضافية أسبوعيًا للعمل الفني، وعملوا 2.4 ساعة أقل في أعمال أخرى، ولم يكن التغير في إجمالي دخلهم ذا دلالة إحصائية.[21] ووجدت موجزات سابقة للباحثين انخفاضًا في انعدام الأمن الغذائي وأعراضًا أقل حدة للقلق والاكتئاب، وإن كانت تعتمد في الغالب على تقارير ذاتية قبل الدفع وبعده.[22]"
+          ],
+          [
+            "o",
+            "تجربتان في قارتين تشيران إلى الاتجاه نفسه. فحين يحصل الفنانون على أرضية متواضعة، ينقلون وقتهم من الأعمال الجانبية إلى فنهم، ويبقون في المجال، ويصبحون أقل قلقًا بشكل ملحوظ. لم يجعلهم أي من البرنامجين أغنياء، ولم يكن أي منهما عن الذكاء الاصطناعي."
+          ],
+          [
+            "h",
+            "متكاملان، لا متنافسان"
+          ],
+          [
+            "p",
+            "إذا جمعنا شقّي هذا المقال، يظهر تقسيم للأدوار. فالموافقة والأجر، سواء عبر تسويات المحاكم أو التراخيص أو عقود النقابات، يساعدان من تُستخدم أعمالهم فعلًا ومن يستطيعون إثبات ذلك. وهما يأتيان ببطء وبشكل غير متساوٍ، وكثير من المال يتوقف عند من يملك الحقوق. أما أرضية الدخل فتساعد فئة أخرى: رسام الإيضاح الذي تحوّل عملاؤه إلى أداة، والمترجم الذي انخفضت أسعاره إلى النصف، والفنان الشاب الذي لم يعد قادرًا على دفع الإيجار من الأعمال الجانبية. فخسارتهم لا يمكن تتبعها إلى مجموعة تدريب بعينها، ولن تصل إليهم أي تسوية."
+          ],
+          [
+            "p",
+            "ويختلف حجم الاثنين أيضًا. فتسوية ⁦Anthropic⁩ تدفع ما لا يقل عن ⁦$3,000⁩ لكل كتاب، مرة واحدة. ويدفع البرنامج الأيرلندي نحو ⁦€16,900⁩ سنويًا لكل فنان، لكن لـ2,000 من أصل أكثر من 10,000 متقدم. وليس أي منهما دخلًا أساسيًا بالمعنى الكامل: فالأول تعويض عن استخدام سابق، والثاني دفعة انتقائية لمجموعة صغيرة. لكن النتائج الأيرلندية تُظهر ما يمكن أن تفعله حتى أرضية جزئية، وتوصية المجلس الاستشاري تُظهر أن جهة حكومية قد ربطت بين الأمرين بالفعل."
+          ],
+          [
+            "p",
+            "لا تملك اليابان أيًا منهما بعد: لا برنامج دخل وطنيًا للفنانين، وقواعد حق المؤلف فيها تسمح بالتدريب على نطاق واسع. والإجابات حتى الآن، من إرشادات وكالة الشؤون الثقافية إلى إرشادات نقابة الممثلين، تدور حول الحقوق. وهي مهمة. لكن الإجابة التي تقتصر على الحقوق تُغفل المبدعين الذين يُدفعون خارج العمل دون أن يكون أحد قد استخدم أعمالهم أصلًا."
+          ],
+          [
+            "h",
+            "لا «الذكاء الاصطناعي ينهي الفن» ولا «لا شيء يحدث»"
+          ],
+          [
+            "o",
+            "هذا ما تُظهره الأدلة حتى نوفمبر 2026. لقد قلّص الذكاء الاصطناعي التوليدي الطلب على بعض أنواع العمل الإبداعي، ولا سيما الرسوم الإيضاحية والترجمة والكتابة التي تُشترى قطعة قطعة، وهذا التراجع قابل للقياس على منصات العمل الحر وظاهر في مسوح المبدعين. لكنه لم يُنهِ العمل الإبداعي، ومعظم الأرقام المخيفة المتداولة إسقاطات أو مخاوف لا قياسات. والتعويض بدأ يتدفق، لكن في الغالب إلى أصحاب الحقوق، ولمرة واحدة، وعبر الدعاوى القضائية."
+          ],
+          [
+            "o",
+            "المبدعون محقون في أن يطلبوا الموافقة والأجر أولًا. والدخل الأساسي ليس بديلًا عن ذلك، ولا ينبغي تسويقه على أنه كذلك. لكن أفضل تجربة لدينا، وهي التجربة الأيرلندية، تشير إلى أن الأرضية تُبقي الناس في حرفتهم وتمنح حياتهم استقرارًا في وقت تتحرك فيه أسواقهم من تحت أقدامهم. في {الجزء الأول|/essays/generative-ai-jobs-basic-income/} رأينا أن أول من يتضرر هم الأقل حماية. وفي العمل الإبداعي، هذا هو المستقل الذي لا صاحب عمل له ولا نقابة ولا حق في أي تسوية. وهذا بالضبط من وُجدت الأرضية من أجله."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Japan Freelance League — Survey on generative AI and the future of Japan’s creators (PR TIMES, 20 Jan 2026, in Japanese)",
+          "url": "https://prtimes.jp/main/html/rd/p/000000012.000142895.html"
+        },
+        {
+          "n": 2,
+          "label": "Washington University in St. Louis, Olin Business School — Hui, Reshef and Zhou: AI tools cause a decline in freelance work and income, at least in the short run (24 Aug 2023)",
+          "url": "https://olin.washu.edu/about/news-and-media/news/2023/08/study-ai-tools-cause-a-decline-in-freelance-work-and-incomeat-least-in-the-short-run.php"
+        },
+        {
+          "n": 3,
+          "label": "Oxford Internet Institute — Teutloff et al., The winners and losers of generative AI in the freelance job market, Journal of Economic Behavior & Organization (29 Jan 2025)",
+          "url": "https://www.oii.ox.ac.uk/the-winners-and-losers-of-generative-ai-in-the-freelance-job-market/"
+        },
+        {
+          "n": 4,
+          "label": "International Authors Forum — Society of Authors: AI survey results published (Apr 2024)",
+          "url": "https://internationalauthors.org/news/society-of-authors-ai-survey-results-published/"
+        },
+        {
+          "n": 5,
+          "label": "University of Cambridge — Novelists fear generative AI will replace them (Minderoo Centre for Technology and Democracy, 20 Nov 2025)",
+          "url": "https://www.cam.ac.uk/stories/generative-ai-novelists"
+        },
+        {
+          "n": 6,
+          "label": "Videomaker — Survey shows that 58% of photographers have lost commissioned work to generative AI (Association of Photographers, Jan 2026)",
+          "url": "https://www.videomaker.com/news/survey-shows-that-58-of-photographers-have-lost-commissioned-work-to-generative-ai/"
+        },
+        {
+          "n": 7,
+          "label": "CISAC — CISAC/PMP Strategy global economic study on AI in the music and audiovisual sectors (Dec 2024)",
+          "url": "https://www.cisac.org/cisacpmp-strategy-ai-study"
+        },
+        {
+          "n": 8,
+          "label": "Authors Guild — What authors need to know about the Anthropic settlement (updated Oct 2026)",
+          "url": "https://authorsguild.org/advocacy/artificial-intelligence/what-authors-need-to-know-about-the-anthropic-settlement/"
+        },
+        {
+          "n": 9,
+          "label": "Music Business Worldwide — Musicians’ union sues UMG and Warner Music, alleging member recordings were licensed to Suno and Udio without compensation or credit (Jun 2026)",
+          "url": "https://www.musicbusinessworldwide.com/musicians-union-sues-umg-and-warner-music-alleging-member-recordings-were-licensed-to-suno-and-udio-without-compensation-or-credit/"
+        },
+        {
+          "n": 10,
+          "label": "Cleary Gottlieb — UK High Court issues landmark ruling in Getty Images v Stability AI (Nov 2025)",
+          "url": "https://www.clearygottlieb.com/news-and-insights/publication-listing/uk-high-court-issues-landmark-ruling-in-getty-images-v-stability-ai"
+        },
+        {
+          "n": 11,
+          "label": "The IPKat — Permission to appeal granted in Getty Images v Stability AI (Jan 2026)",
+          "url": "https://ipkitten.blogspot.com/2026/01/permission-to-appeal-granted-in-getty.html"
+        },
+        {
+          "n": 12,
+          "label": "AI Lawsuit Tracker — The New York Times v. OpenAI and Microsoft (reviewed 4 Nov 2026)",
+          "url": "https://ailawsuittracker.com/cases/new-york-times-v-openai/"
+        },
+        {
+          "n": 13,
+          "label": "Agency for Cultural Affairs, Japan — AI and copyright (General understanding on AI and copyright, Mar 2024; checklist and guidance, Jul 2024; in Japanese)",
+          "url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html"
+        },
+        {
+          "n": 14,
+          "label": "PC Gamer — The videogame voice actors’ strike officially ends as performers ratify agreement between SAG-AFTRA and publishers (Jul 2025)",
+          "url": "https://www.pcgamer.com/gaming-industry/the-videogame-voice-actors-strike-officially-ends-as-performers-ratify-agreement-between-sag-aftra-and-publishers"
+        },
+        {
+          "n": 15,
+          "label": "Screen Daily — Writers Guild of America members ratify new four-year deal (25 Apr 2026)",
+          "url": "https://www.screendaily.com/news/writers-guild-of-america-members-ratify-new-four-year-deal/5216000.article"
+        },
+        {
+          "n": 16,
+          "label": "Japan Actors Union — Guidelines on the use of generative AI for voice (PR TIMES, 15 Oct 2026, in Japanese)",
+          "url": "https://prtimes.jp/main/html/rd/p/000000001.000192155.html"
+        },
+        {
+          "n": 17,
+          "label": "Authors Guild — AG AI survey reveals authors overwhelmingly want consent and compensation for use of their works (21 Dec 2023)",
+          "url": "https://authorsguild.org/news/ag-ai-survey-reveals-authors-overwhelmingly-want-consent-and-compensation-for-use-of-their-works/"
+        },
+        {
+          "n": 18,
+          "label": "Government of Ireland, Department of Culture, Communications and Sport — Alma Economics, Cost-benefit analysis for the Basic Income for the Arts, final report (29 Sep 2025; PDF)",
+          "url": "https://assets.gov.ie/static/documents/b87d2659/20250929_BIA_CBA_Final_Report.pdf"
+        },
+        {
+          "n": 19,
+          "label": "RTÉ — Basic Income for the Arts: first recipients to hear this week (13 Oct 2026)",
+          "url": "https://www.rte.ie/culture/2026/1013/1595211-basic-income-for-the-arts-first-recipients-to-hear-this-week/"
+        },
+        {
+          "n": 20,
+          "label": "Government of Ireland, AI Advisory Council — The impact of AI on Ireland’s creative sector, advice paper (Feb 2025; PDF)",
+          "url": "https://enterprise.gov.ie/en/publications/publication-files/ai-advisory-council-impact-of-ai-on-ireland-s-creative-sector.pdf"
+        },
+        {
+          "n": 21,
+          "label": "Journal of Cultural Economics — Indiana University study of Creatives Rebuild New York’s Guaranteed Income for Artists (2026)",
+          "url": "https://link.springer.com/article/10.1007/s10824-026-09594-0"
+        },
+        {
+          "n": 22,
+          "label": "Indiana University, Center for Cultural Affairs — Research briefs on the CRNY Guaranteed Income for Artists program (12 Feb 2025)",
+          "url": "https://culturalaffairs.center.iu.edu/news/crny_gi-study-press-release.html"
+        }
+      ]
+    },
+    {
       "id": "generative-ai-jobs-basic-income",
       "date": "2026-11-07",
       "related": [
         "refundable-tax-credit-vs-basic-income",
         "public-benefit-fund",
         "openresearch-cash-study",
-        "finland-basic-income-experiment"
+        "finland-basic-income-experiment",
+        "generative-ai-creative-work-basic-income"
       ],
       "title": {
         "ja": "生成AIは仕事を奪ったのか：データでわかったことと、ベーシックインカムにできること（前編・雇用）",
@@ -10035,7 +11354,7 @@ module.exports = {
           ],
           [
             "o",
-            "In part 2, we turn to creative work: illustrators, translators, writers and voice actors, where the change has come fastest."
+            "In {part 2|/essays/generative-ai-creative-work-basic-income/}, we turn to creative work: illustrators, translators, writers and voice actors, where the change has come fastest."
           ]
         ],
         "ja": [
@@ -10257,7 +11576,7 @@ module.exports = {
           ],
           [
             "o",
-            "後編では、変化がいちばん早く訪れたクリエイターの仕事、つまりイラストレーター、翻訳者、ライター、声優の仕事を取り上げます。"
+            "{後編|/essays/generative-ai-creative-work-basic-income/}では、変化がいちばん早く訪れたクリエイターの仕事、つまりイラストレーター、翻訳者、ライター、声優の仕事を取り上げます。"
           ]
         ],
         "zh": [
@@ -10479,7 +11798,7 @@ module.exports = {
           ],
           [
             "o",
-            "在下篇中，我们将转向创意工作：插画师、译者、作家和配音演员，那里的变化来得最快。"
+            "在{下篇|/essays/generative-ai-creative-work-basic-income/}中，我们将转向创意工作：插画师、译者、作家和配音演员，那里的变化来得最快。"
           ]
         ],
         "hi": [
@@ -10701,7 +12020,7 @@ module.exports = {
           ],
           [
             "o",
-            "भाग 2 में हम रचनात्मक काम की ओर मुड़ेंगे: चित्रकार, अनुवादक, लेखक और वॉइस एक्टर, जहाँ बदलाव सबसे तेज़ी से आया है।"
+            "{भाग 2|/essays/generative-ai-creative-work-basic-income/} में हम रचनात्मक काम की ओर मुड़ेंगे: चित्रकार, अनुवादक, लेखक और वॉइस एक्टर, जहाँ बदलाव सबसे तेज़ी से आया है।"
           ]
         ],
         "es": [
@@ -10923,7 +12242,7 @@ module.exports = {
           ],
           [
             "o",
-            "En la segunda parte pasamos al trabajo creativo: ilustradores, traductores, escritores y actores de doblaje, donde el cambio ha llegado más deprisa."
+            "En la {segunda parte|/essays/generative-ai-creative-work-basic-income/} pasamos al trabajo creativo: ilustradores, traductores, escritores y actores de doblaje, donde el cambio ha llegado más deprisa."
           ]
         ],
         "de": [
@@ -11145,7 +12464,7 @@ module.exports = {
           ],
           [
             "o",
-            "In Teil 2 wenden wir uns der kreativen Arbeit zu: Illustratoren, Übersetzer, Autoren und Synchronsprecher, wo die Veränderung am schnellsten gekommen ist."
+            "In {Teil 2|/essays/generative-ai-creative-work-basic-income/} wenden wir uns der kreativen Arbeit zu: Illustratoren, Übersetzer, Autoren und Synchronsprecher, wo die Veränderung am schnellsten gekommen ist."
           ]
         ],
         "ar": [
@@ -11367,7 +12686,7 @@ module.exports = {
           ],
           [
             "o",
-            "في الجزء الثاني، ننتقل إلى العمل الإبداعي: الرسامون والمترجمون والكتّاب وممثلو الأداء الصوتي، حيث جاء التغيير أسرع ما يكون."
+            "في {الجزء الثاني|/essays/generative-ai-creative-work-basic-income/}، ننتقل إلى العمل الإبداعي: الرسامون والمترجمون والكتّاب وممثلو الأداء الصوتي، حيث جاء التغيير أسرع ما يكون."
           ]
         ]
       },

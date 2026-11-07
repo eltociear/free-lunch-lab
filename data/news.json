@@ -269,13 +269,27 @@
           "tag": "policy",
           "sources": [
             {
-              "name": "MusicRadar",
-              "url": "https://www.musicradar.com/music-industry/basic-income-scheme-for-irish-musicians-is-up-and-running-with-eur34-million-to-be-given-away-over-three-years"
+              "name": "RTÉ",
+              "url": "https://www.rte.ie/culture/2026/1013/1595211-basic-income-for-the-arts-first-recipients-to-hear-this-week/"
+            },
+            {
+              "name": "TheJournal.ie",
+              "url": "https://www.thejournal.ie/basic-income-for-the-arts-7191890-Oct2026/"
             }
           ],
           "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/news/#n-ie-basic-income-arts-permanent",
-          "timeline": [],
-          "essays": [],
+          "timeline": [
+            {
+              "id": "ireland-arts",
+              "url": "https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-ireland-arts"
+            }
+          ],
+          "essays": [
+            {
+              "id": "generative-ai-creative-work-basic-income",
+              "url": "https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/"
+            }
+          ],
           "titles": {
             "en": "Ireland’s permanent basic income for artists gets under way",
             "ja": "アイルランドの芸術家向けベーシックインカム、恒久制度が始動",
@@ -286,13 +300,13 @@
             "ar": "انطلاق الدخل الأساسي الدائم للفنانين في أيرلندا"
           },
           "summaries": {
-            "en": "2,000 artists chosen from more than 10,000 applicants will receive €325 a week for three years, with first payments backdated to September. The National Campaign for the Arts says €34 million in the 2027 budget funds the scheme.",
-            "ja": "1万人を超える応募者から選ばれた2,000人の芸術家が、3年間にわたり週325ユーロを受け取ります。初回の支払いは9月にさかのぼります。芸術団体National Campaign for the Artsによると、2027年度予算の3,400万ユーロが財源です。",
-            "zh": "从一万多名申请者中选出的2,000名艺术家将在三年内每周领取325欧元，首批款项追溯至9月。爱尔兰全国艺术运动（National Campaign for the Arts）称，2027年预算中的3,400万欧元为该计划提供资金。",
-            "hi": "10,000 से ज़्यादा आवेदकों में से चुने गए 2,000 कलाकारों को तीन साल तक हर हफ़्ते €325 मिलेंगे, और पहले भुगतान सितंबर से लागू माने जाएँगे। National Campaign for the Arts के अनुसार 2027 के बजट में €3.4 करोड़ इस योजना के लिए हैं।",
-            "es": "2.000 artistas elegidos entre más de 10.000 solicitantes recibirán 325 € a la semana durante tres años, con los primeros pagos con efecto desde septiembre. La National Campaign for the Arts dice que 34 millones de euros del presupuesto de 2027 financian el programa.",
-            "de": "2.000 aus mehr als 10.000 Bewerbungen ausgewählte Kunstschaffende erhalten drei Jahre lang 325 € pro Woche; die ersten Zahlungen gelten rückwirkend ab September. Laut der National Campaign for the Arts finanzieren 34 Millionen Euro im Haushalt 2027 das Programm.",
-            "ar": "سيحصل 2,000 فنان اختيروا من بين أكثر من 10,000 متقدم على €325 أسبوعيًا لمدة ثلاث سنوات، على أن تُحتسب الدفعات الأولى بأثر رجعي من سبتمبر. وتقول حملة National Campaign for the Arts إن 34 مليون يورو في موازنة 2027 تموّل البرنامج."
+            "en": "2,000 artists chosen from just over 10,000 applicants will receive €325 a week for three years. The first recipients are told from 15 October, with payments backdated to September; those starting in 2027 are backdated to January. The culture minister says his top aim in the budget estimates was to have the scheme fully funded for 2027.",
+            "ja": "1万人強の応募者から選ばれた2,000人の芸術家が、3年間にわたり週325ユーロを受け取ります。最初の受給者には10月15日から通知され、支払いは9月にさかのぼります（2027年開始の人は1月から）。文化相は、予算編成での最優先課題は2027年分の財源を確保することだったと述べています。",
+            "zh": "从一万多名申请者中选出的 2,000 名艺术家将在三年内每周领取 325 欧元。首批领取者自 10 月 15 日起接到通知，款项追溯至 9 月；2027 年开始领取的人追溯至 1 月。文化部长表示，他在预算编制中的首要目标是确保该计划 2027 年的资金全部到位。",
+            "hi": "10,000 से कुछ ज़्यादा आवेदकों में से चुने गए 2,000 कलाकारों को तीन साल तक हर हफ़्ते €325 मिलेंगे। पहले चुने गए लोगों को 15 अक्टूबर से सूचना मिल रही है और भुगतान सितंबर से लागू माने जाएँगे; 2027 में शुरू होने वालों के लिए जनवरी से। संस्कृति मंत्री के अनुसार बजट अनुमानों में उनका पहला लक्ष्य 2027 के लिए योजना का पूरा पैसा पक्का करना था।",
+            "es": "2.000 artistas elegidos entre algo más de 10.000 solicitantes recibirán 325 € a la semana durante tres años. Los primeros reciben la notificación desde el 15 de octubre, con pagos con efecto desde septiembre; quienes empiecen en 2027, desde enero. El ministro de Cultura dice que su prioridad en los presupuestos era dejar el programa plenamente financiado para 2027.",
+            "de": "2.000 aus gut 10.000 Bewerbungen ausgewählte Kunstschaffende erhalten drei Jahre lang 325 € pro Woche. Die Ersten werden ab dem 15. Oktober benachrichtigt, die Zahlungen gelten rückwirkend ab September; wer 2027 beginnt, ab Januar. Der Kulturminister sagt, sein wichtigstes Ziel bei den Haushaltsansätzen sei die volle Finanzierung für 2027 gewesen.",
+            "ar": "سيحصل 2,000 فنان اختيروا من بين ما يزيد قليلًا على 10,000 متقدم على €325 أسبوعيًا لمدة ثلاث سنوات. يُبلَّغ أوائل المستفيدين اعتبارًا من 15 أكتوبر، على أن تُحتسب الدفعات بأثر رجعي من سبتمبر، ومن يناير لمن يبدأ في 2027. ويقول وزير الثقافة إن هدفه الأول في تقديرات الموازنة كان ضمان التمويل الكامل للبرنامج في 2027."
           }
         },
         {

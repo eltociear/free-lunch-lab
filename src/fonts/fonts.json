@@ -59,6 +59,10 @@
    {
     "file": "noto-sans-arabic-400-ar-f88e44694d.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-24f66565b3.woff2",
+    "chars": "É"
    }
   ],
   "ar:body:700": [
@@ -105,6 +109,10 @@
    {
     "file": "noto-sans-arabic-700-ar-2bcc93c646.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-c4e9c84a9a.woff2",
+    "chars": "É"
    }
   ],
   "ar:display": [
@@ -199,6 +207,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-c2c60edd33.woff2",
     "chars": "保民議障"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-f6b9476e8d.woff2",
+    "chars": "É"
    }
   ],
   "de:body:700": [
@@ -261,6 +273,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-81901088ea.woff2",
     "chars": "保民議障"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-cd4a51dfd8.woff2",
+    "chars": "É"
    }
   ],
   "de:display": [
@@ -363,6 +379,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-c2c60edd33.woff2",
     "chars": "保民議障"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-f6b9476e8d.woff2",
+    "chars": "É"
    }
   ],
   "en:body:700": [
@@ -425,6 +445,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-81901088ea.woff2",
     "chars": "保民議障"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-cd4a51dfd8.woff2",
+    "chars": "É"
    }
   ],
   "en:display": [
@@ -685,6 +709,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-3b3a17ab9a.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-08a491a826.woff2",
+    "chars": "É"
    }
   ],
   "hi:body:700": [
@@ -731,6 +759,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-6ec81c8c99.woff2",
     "chars": "ğ"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-82169359eb.woff2",
+    "chars": "É"
    }
   ],
   "hi:dot": [
@@ -935,6 +967,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-7bf456635a.woff2",
     "chars": "ğ之卒危唯堅客室工慌戒挑河涯渉百章粗精耳貫貴遇隣雄静顧"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-e2a280565e.woff2",
+    "chars": "É乱享依侵俳冊吹奏威尋弁怖拘曲楽混漫盛脅脚訟訴諮諾賊路遺陸音風"
    }
   ],
   "ja:body:700": [
@@ -1129,6 +1165,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-cbe2e4a78c.woff2",
     "chars": "ğ之卒危唯堅客室工慌戒挑河涯渉百章粗精耳貫貴遇隣雄静顧"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-a8aaa209b7.woff2",
+    "chars": "É乱享依侵俳冊吹奏威尋弁怖拘曲楽混漫盛脅脚訟訴諮諾賊路遺陸音風"
    }
   ],
   "ja:display": [
@@ -1231,6 +1271,10 @@
    {
     "file": "dela-gothic-one-400-ja-37ae3195be.woff2",
     "chars": "化口奪強形影狭編跡雇響"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-31762c9359.woff2",
+    "chars": "価創求流補"
    }
   ],
   "ja:dot": [
@@ -1463,6 +1507,10 @@
    {
     "file": "noto-sans-sc-400-zh-7b3477d101.woff2",
     "chars": "ğ伯侵勉呈塑室届悉拼挥插敞敦框毕河涯溢熟王痕监综缝耶聘胀膨蚀迹遗邻阈隙雄静麦"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-6e8e6934bd.woff2",
+    "chars": "É俳剑剧华厅叉吓吸唱崩挤曲桥歌溃漫盗素罢胁讼遵陆"
    }
   ],
   "zh:body:700": [
@@ -1653,6 +1701,10 @@
    {
     "file": "noto-sans-sc-700-zh-46ccddf346.woff2",
     "chars": "ğ伯侵勉呈塑室届悉拼挥插敞敦框毕河涯溢熟王痕监综缝耶聘胀膨蚀迹遗邻阈隙雄静麦"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-5339b8e688.woff2",
+    "chars": "É俳剑剧华厅叉吓吸唱崩挤曲桥歌溃漫盗素罢胁讼遵陆"
    }
   ],
   "zh:display": [
@@ -1751,6 +1803,10 @@
    {
     "file": "noto-sans-sc-900-zh-6b6f0b4674.woff2",
     "chars": "企但冲图尝感抢既显景由痕窄篇职裁走较迹"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-6d461e161c.woff2",
+    "chars": "互创求立线酬"
    }
   ],
   "zh:dot": [
