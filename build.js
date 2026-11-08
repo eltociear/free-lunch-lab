@@ -113,7 +113,9 @@ const qzTypeAbs = (l, t) => SITE_URL + qzTypePath(l, t);
 const qzShareAbs = (l, t) => `${qzAbs(l)}?r=${t.id}&s=shindan`;
 // 差し替える og:title。一人称の結果の文に、診断の名前（文に入っていなければ）かサイト名を足す
 const qzShareTitle = (l, t) => { const x = T[l].shindanShareText.replace('{type}', t.name[l]); return `${x} | ${x.includes(T[l].shindanTitle) ? T[l].brandPlain : T[l].shindanTitle}`; };
-const QZ_KEYS = ['shindanTitle', 'shindanH1', 'shindanDesc', 'shindanIntro', 'shindanQ', 'shindanBack', 'shindanEb', 'shindanYouAre', 'shindanMatch', 'shindanShareX', 'shindanShareText', 'shindanTag', 'shindanYours', 'shindanFriend', 'shindanRetry', 'shindanOthers', 'shindanHome', 'shindanAll', 'shindanNote'];
+const QZ_KEYS = ['shindanTitle', 'shindanH1', 'shindanDesc', 'shindanIntro', 'shindanQ', 'shindanBack', 'shindanEb', 'shindanYouAre', 'shindanMatch', 'shindanShareX', 'shindanShareText', 'shindanTag', 'shindanYours', 'shindanFriend', 'shindanRetry', 'shindanOthers', 'shindanHome', 'shindanAll', 'shindanNote', 'shindanCardQ', 'shindanCardSub', 'shindanCardBtn'];
+// 診断への入口のカード（トップのヒーローとエッセイの終わり）。?s= でどこから押されたかを数える。canonical はクエリなしのまま
+const qzCard = (lang, src) => { const L = T[lang]; return `<div class="qzc"><div class="qzc-t"><p class="qzc-e">${esc(L.shindanTitle)}</p><p class="qzc-q">${esc(L.shindanCardQ)}</p><p class="qzc-s">${esc(L.shindanCardSub)}</p></div><a class="btn solid" href="${qzPath(lang)}?s=${src}">${esc(L.shindanCardBtn)}</a></div>`; };
 for (const l of LANGS) for (const k of QZ_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 for (const l of LANGS) for (const q of QUIZ.questions) { if (!q.q[l]) throw new Error(`quiz ${q.id}: missing q.${l}`); for (const a of q.a) { if (!a.t[l]) throw new Error(`quiz ${q.id}: missing answer ${l}`); for (const k of Object.keys(a.s)) if (!QUIZ.types.some(t => t.id === k)) throw new Error(`quiz ${q.id}: unknown type ${k}`); } }
 for (const t of QUIZ.types) { for (const l of LANGS) for (const f of ['name', 'desc']) if (!t[f][l]) throw new Error(`quiz type ${t.id}: missing ${f}.${l}`); if (!servicesFor(t, live).length) throw new Error(`quiz type ${t.id}: no matching services`); }
@@ -646,6 +648,7 @@ for (const lang of LANGS) {
     ossBtn: esc(L.ossSecBtn.replace('{n}', OSSP.length)),
     dataHome: OPEN_DATA.length ? `<a class="orgs-tl" href="open-source/#data">${esc(L.dataHome.replace('{n}', OPEN_DATA.length))} →</a>` : '',
     verifyBlock: verifyPages.map(m => { const b = byMethod(m); return `<a href="verify/${m}/" dir="auto">${esc(VERIFY[m].name[lang])}<span>${b.req.length + b.opt.length}</span></a>`; }).join(''),
+    quizCard: qzCard(lang, 'home-quiz'),
     script: clientScript(lang),
   };
   body = body.replace(/\{\{(\w+)\}\}/g, (_, k) => {
@@ -1175,6 +1178,7 @@ ${shareRow(lang, ttl, shareUrlOf(url), { compact: true })}</header>
 ${shareRow(lang, ttl, shareUrlOf(url), { label: L.essayShare, id: 'share' })}
 ${relatedLinks(lang, essayList(e.related))}
 ${GUIDES.filter(g => g.essay === e.id).map(g => guideLink(lang, g, 'related g-rel')).join('')}
+${qzCard(lang, 'essay-quiz')}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
 </article>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
@@ -1352,7 +1356,8 @@ var D=${JSON.stringify(CALC).replace(/</g, '\\u003c')},L=${JSON.stringify(Object
 ${calcJs.CLIENT}
 ${calcJs.BOOT}
 </script>`;
-  return shell(lang, { title: `${L.calcH1} | ${L.title}`, desc: clip(L.calcDesc, lang), hrefFor: calcAbs, pathFor: calcPath, ld, ogType: 'website', body, script, image: ogImage(`calc/${lang}/index.jpg`) });
+  // 検索結果用の title・description（任意。zh だけ、Search Console の検索語に合わせて別に持つ。見出しと OG 画像は calcH1・calcDesc のまま）
+  return shell(lang, { title: `${L.calcMetaTitle || L.calcH1} | ${L.title}`, desc: clip(L.calcMetaDesc || L.calcDesc, lang), hrefFor: calcAbs, pathFor: calcPath, ld, ogType: 'website', body, script, image: ogImage(`calc/${lang}/index.jpg`) });
 }
 
 // ---- ベーシックインカム社会実験の年表（/timeline/）。縦のタイムライン（RTLでは左右が反転）

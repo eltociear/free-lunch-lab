@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>发放基本收入要花多少钱？计算器 | Free Lunch Lab（免费午餐研究所）</title>
-<meta name="description" content="选择国家、发放对象和每月金额，即可算出发放基本收入一年的总费用，并与国家预算或 GDP 比较。所有数字都来自官方统计，并注明出处和年份。结果可以连同链接分享到 X。">
+<title>基本收入计算器：人均每月发多少，一年总费用一键计算 | Free Lunch Lab（免费午餐研究所）</title>
+<meta name="description" content="选择国家、发放对象和人均每月金额，即可计算发放基本收入一年的总费用，并换算成占 GDP、国家预算和税收的比例。免费使用，无需注册，数字均来自官方统计并注明出处。">
 <link rel="canonical" href="https://neteru-nyukin.eltociear.workers.dev/zh/calc/">
 <link rel="alternate" type="application/rss+xml" title="Free Lunch Lab（免费午餐研究所） RSS" href="https://neteru-nyukin.eltociear.workers.dev/zh/feed.xml">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -22,8 +22,8 @@
 <link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/calc/">
 <meta property="og:site_name" content="Free Lunch Lab（免费午餐研究所）">
 <meta property="og:type" content="website">
-<meta property="og:title" content="发放基本收入要花多少钱？计算器 | Free Lunch Lab（免费午餐研究所）">
-<meta property="og:description" content="选择国家、发放对象和每月金额，即可算出发放基本收入一年的总费用，并与国家预算或 GDP 比较。所有数字都来自官方统计，并注明出处和年份。结果可以连同链接分享到 X。">
+<meta property="og:title" content="基本收入计算器：人均每月发多少，一年总费用一键计算 | Free Lunch Lab（免费午餐研究所）">
+<meta property="og:description" content="选择国家、发放对象和人均每月金额，即可计算发放基本收入一年的总费用，并换算成占 GDP、国家预算和税收的比例。免费使用，无需注册，数字均来自官方统计并注明出处。">
 <meta property="og:url" content="https://neteru-nyukin.eltociear.workers.dev/zh/calc/">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://neteru-nyukin.eltociear.workers.dev/og/calc/zh/index.jpg">
@@ -254,6 +254,15 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .qz-home{margin-top:10px;display:flex;flex-wrap:wrap;gap:0 20px}
 .qz-home a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;color:var(--gold);text-underline-offset:4px}
+/* 診断への入口のカード（トップのヒーロー・エッセイの終わり） */
+.qzc{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px;padding:14px 16px;max-width:34em;border:1px solid var(--line);border-inline-start:3px solid var(--gold);border-radius:12px;background:color-mix(in srgb,var(--surface) 72%,transparent)}
+.qzc-t{flex:1 1 13em;min-width:0;display:grid;gap:2px}
+.qzc-e{font-size:.8125rem;font-weight:700;color:var(--muted)}
+.qzc-q{font-weight:700;font-size:1.15rem;line-height:1.45;color:var(--ink)}
+.qzc-s{font-size:.875rem;color:var(--muted)}
+.qzc .btn.solid{flex:none;background:var(--cta);color:var(--cta-ink)}
+.qzc .btn.solid:hover{background:var(--cta-hover)}
+article .qzc{max-width:none}
 .stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:16px 28px;margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
 .stats div{display:grid}
 .stats .dot{font-size:1.7rem;line-height:1.1}
