@@ -9113,7 +9113,7 @@ module.exports = {
     },
     {
       "id": "alaska",
-      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund", "nesara-gesara-basic-income", "japan-special-cash-payment"],
+      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund", "nesara-gesara-basic-income", "japan-special-cash-payment", "china-childcare-subsidy-basic-income"],
       "years": "1982–",
       "type": "gov",
       "name": "Alaska Permanent Fund Dividend",
@@ -10002,6 +10002,1241 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "china-childcare-subsidy-basic-income",
+      "date": "2026-11-09",
+      "related": [
+        "japan-special-cash-payment",
+        "refundable-tax-credit-vs-basic-income",
+        "thailand-digital-wallet",
+        "finland-basic-income-experiment"
+      ],
+      "title": {
+        "en": "China’s 3,600-yuan childcare subsidy: who gets it, and is it a basic income?",
+        "ja": "中国の育児補助金、年3600元：誰がもらえて、ベーシックインカムと何が違うのか",
+        "zh": "育儿补贴每年3600元：谁能领、怎么领，它算基本收入吗？",
+        "hi": "चीन की 3,600 युआन चाइल्डकेयर सब्सिडी: क्या यह बेसिक इनकम है?",
+        "es": "China paga 3.600 yuanes por hijo: ¿es una renta básica?",
+        "de": "Chinas 3.600 Yuan pro Kind: ein Grundeinkommen?",
+        "ar": "إعانة الطفل في الصين 3,600 يوان: هل هي دخل أساسي؟"
+      },
+      "desc": {
+        "en": "China pays 3,600 yuan a year for every child under 3, with no income test. Who gets it, how it is paid, what it costs, and how close it is to a basic income.",
+        "ja": "3歳未満の子ども1人に年3600元、所得制限なし。誰がどうもらい、いくら配られ、ベーシックインカムとどこが違うのか。",
+        "zh": "3 岁以下每孩每年 3600 元，不看收入、免个税。谁能领、怎么领、发了多少，和基本收入差在哪里，现金能不能让人多生孩子。",
+        "hi": "चीन 3 साल से छोटे हर बच्चे को साल में 3,600 युआन देता है, बिना आय जाँच के। क्या यह बेसिक इनकम है?",
+        "es": "3.600 yuanes al año por cada niño menor de 3 años, sin prueba de ingresos.",
+        "de": "3.600 Yuan im Jahr für jedes Kind unter 3, ohne Einkommensprüfung.",
+        "ar": "تدفع الصين 3,600 يوان سنويًا عن كل طفل دون الثالثة، بلا اختبار للدخل. من يحصل عليها، وكم تكلف، وما مدى قربها من الدخل الأساسي."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "On 28 July 2025, the general offices of China’s Communist Party Central Committee and State Council issued an implementation plan for a national childcare subsidy. From 1 January 2025, every child under 3 qualifies, and the national base rate is 3,600 yuan per child per year, or 300 yuan a month.[1] Zhu Kun of the Chinese Academy of Fiscal Sciences told the People’s Daily it was “the first universal cash subsidy our country has paid to residents”.[4]"
+          ],
+          [
+            "p",
+            "No income test, no distinction between first and third children, cash straight to families: it sounds a lot like what people mean by a basic income. Is it? This essay first sets out the rules: who qualifies, how to claim, who pays and how much has actually been paid. Then it looks at the birth figures behind the policy and at research on whether cash raises births. Finally it measures the subsidy against the definition of basic income, and compares it with Hong Kong’s HK$10,000 payout in 2020."
+          ],
+          [
+            "h",
+            "Who gets it, and how much"
+          ],
+          [
+            "p",
+            "The subsidy covers children under 3 “born in accordance with laws and regulations”, until they turn 3.[1] First, second and third children all qualify, and there is no income threshold.[2] Children born before 2025 who were still under 3 in 2025 receive a pro-rated amount for the months left. Xinhua’s example: a child born in December 2023 can receive 24 months, 7,200 yuan in total.[2] A child born in 2025 or later can receive up to about 10,800 yuan from birth to age 3."
+          ],
+          [
+            "p",
+            "One parent or another guardian applies in the place where the child’s household registration (hukou) is held.[1] Most claims go through a national online system reached via Alipay, WeChat and provincial government service platforms; claims can also be made in person at the township or street office. The National Health Commission declared applications “fully open” nationwide on 8 September 2025.[7]"
+          ],
+          [
+            "p",
+            "It is not automatic. Rules from the National Health Commission and the Ministry of Finance say the first claim must be made in the year of birth or the year after, followed by a renewal in each of the next two years; a claim not filed in time “is deemed to have given up eligibility for that year”.[5] The subsidy is “calculated by year and paid once a year as a lump sum” into the claimant’s or child’s bank or social security card account, with provinces paying out at least one batch each quarter.[5][1] Claims for 2026 opened on 5 January 2026, with a new renewal function.[8] For children born in 2022 to 2024, the deadline for a first claim has been extended from the end of 2025 to 31 December 2026.[11]"
+          ],
+          [
+            "p",
+            "Two easily missed rules matter. The subsidy is exempt from individual income tax.[6] And when eligibility for minimum living allowance (dibao) or extreme-hardship support is assessed, the subsidy is not counted as household or personal income.[1] The poorest families do not lose their dibao by receiving it."
+          ],
+          [
+            "t",
+            "Item | Rule\nWho | Children under 3; first, second and third children alike[1][2]\nAmount | National base rate 3,600 yuan per child per year; local governments may pay more[1]\nIncome test | None[2]\nWhere to claim | The child’s place of household registration, online or in person[1][7]\nHow it is paid | Once a year as a lump sum, into a bank or social security card account[5]\nTax | Exempt from individual income tax[6]\nMinimum living allowance | Not counted as household or personal income[1]\nClaim needed? | Yes, every year; a missed year is forfeited[5]"
+          ],
+          [
+            "h",
+            "Who pays, and how much has been paid"
+          ],
+          [
+            "p",
+            "The central government covers part of the cost of the base rate for eastern, central and western regions in different proportions; at a State Council press conference officials said “the centre bears about 90% overall”, with an initial 2025 budget of about 90 billion yuan.[1][3] If a local government pays more than the base rate, it funds the extra itself.[1]"
+          ],
+          [
+            "p",
+            "Here is what has happened in practice. By 31 December 2025 all 31 provinces had started paying, more than 24 million children had been paid, and the payout rate for 2025 was about 80%.[10] The Ministry of Finance said at the end of January 2026 that governments at all levels had set aside about 100 billion yuan for 2025, and that more than 30 million children had been paid.[9] The 2026 Government Work Report lists “fully implementing the childcare subsidy, benefiting more than 30 million infants” among the previous year’s achievements.[12] For 2026 the central government has allocated 99.9 billion yuan, up 10.6%, and total spending at all levels is expected to be about 110 billion yuan.[10] By 21 July 2026, 27.51 million claims for 2026 had been filed, 27.13 million approved and 25.16 million children paid.[11]"
+          ],
+          [
+            "p",
+            "Compared with the economy, it is small. China’s GDP in 2025 was 140.19 trillion yuan.[13] About 100 billion yuan is about 0.07% of GDP; about 110 billion in 2026 is about 0.08%. Compared with household incomes it is not small: 3,600 yuan a year is about 8% of 2025 per-capita disposable income nationally (43,377 yuan), 15% for rural residents (24,456 yuan) and 6% for urban residents (56,502 yuan).[13] For a rural family, it is real money."
+          ],
+          [
+            "o",
+            "We found no announcement raising the 3,600-yuan base rate in 2026, and no national evaluation of the subsidy’s effects. How much has been paid is well documented. Whether it has changed family budgets or decisions about children is not yet known."
+          ],
+          [
+            "h",
+            "Why now: births"
+          ],
+          [
+            "p",
+            "The background is a fast fall in births. According to the National Bureau of Statistics, 9.54 million babies were born in China in 2024, a birth rate of 6.77 per thousand.[14] In 2025 births fell to 7.92 million, a rate of 5.63 per thousand, while 11.31 million people died; the population at the end of the year was 1.40489 billion, 3.39 million fewer than a year earlier.[13] Births fell by about 17% in one year."
+          ],
+          [
+            "p",
+            "Note that most babies born in 2025 were conceived in 2024, and the national plan was published only in July 2025. The 2025 figures cannot be used to judge the subsidy. The figures for 2026 and later may start to tell us something. Alongside the subsidy, a policy of free education in the final year of preschool reached 14 million children in 2025.[12]"
+          ],
+          [
+            "h",
+            "Cities went first: Hohhot, Tianmen, Panzhihua"
+          ],
+          [
+            "p",
+            "Before the national plan, some cities tried more generous payments. Panzhihua in Sichuan announced in July 2021 that it would pay 500 yuan a month for each second or third child until age 3.[17] From 1 March 2025, Hohhot in Inner Mongolia paid 10,000 yuan once for a first child; 50,000 yuan for a second child, at 10,000 a year until age 5; and 100,000 yuan for a third or later child, at 10,000 a year until age 10. About 20,000 babies were born in Hohhot in 2023.[15] Tianmen in Hubei pays 2,300 yuan once and then 800 yuan a month until age 3 for a second child, and 3,300 yuan once and then 1,000 yuan a month for a third.[16]"
+          ],
+          [
+            "p",
+            "Did these payments raise births? The evidence is thin. China News Service reported that births in Tianmen rose 17% in 2024, the first rise in eight years, but gave no statistical source and could not separate the subsidy from other factors.[16] An official in Hohhot said births had already edged up in 2024, before the new subsidy began.[15] The local figures are worth watching, but they are not causal evidence."
+          ],
+          [
+            "h",
+            "Can cash raise births?"
+          ],
+          [
+            "p",
+            "International research suggests some effect, usually modest and not cheap. The most cited study is from Quebec. The economist Kevin Milligan studied the province’s policy of paying families up to C$8,000 for a new child. Comparing groups by time, place and family type, at both the start and the end of the policy, he found “a strong effect of the policy on fertility”.[18] But that was a payment tied to a birth, not a steady 300 yuan a month."
+          ],
+          [
+            "p",
+            "South Korea is a reminder in the other direction. According to its Board of Audit and Inspection, the country spent 380.2 trillion won on low fertility from 2006 to 2020.[19] Its total fertility rate still fell to a world-low 0.72 in 2023, before recovering to 0.75 in 2024 and 0.80 in 2025. Officials put the recovery down mainly to more marriages (up 8.1% in 2025) and a larger number of people in their thirties, not to any one payment.[20]"
+          ],
+          [
+            "o",
+            "Our reading of the research: cash can bring some births forward or tip some families towards another child, but cash alone rarely reverses a long fall in fertility; housing, schooling, jobs and time for care matter as much. On the other hand, the effect of cash for families with children on child poverty is clear. In {our essay on refundable tax credits|/essays/refundable-tax-credit-vs-basic-income/} we saw US child poverty fall sharply when the Child Tax Credit was expanded in 2021 and rise again when the expansion ended. So the subsidy should not be judged only on whether it raises the number of births."
+          ],
+          [
+            "h",
+            "Is it a basic income? BIEN’s five criteria"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”.[21] We used this yardstick in {our essay on Japan’s ¥100,000 payment|/essays/japan-special-cash-payment/}. Applied to the childcare subsidy:"
+          ],
+          [
+            "t",
+            "Criterion | Childcare subsidy | Basic income\nPeriodic | Yes, once a year | Yes\nCash | Yes, into a bank or card account | Yes\nIndividual | Counted per child, claimed by a parent or guardian | Each person receives their own\nUniversal | No, only children under 3 | Everyone\nUnconditional | No income or work test, but must be claimed each year | Unconditional"
+          ],
+          [
+            "p",
+            "So the subsidy meets “periodic” and “cash”, largely meets “unconditional”, partly meets “individual”, and does not meet “universal”. A more accurate description is a cash payment for young children without an income test: an early version of what many countries call a child benefit or child allowance. The biggest difference from a basic income is that it covers only the first three years of life."
+          ],
+          [
+            "h",
+            "Hong Kong’s HK$10,000 in 2020"
+          ],
+          [
+            "p",
+            "In the Chinese-speaking world, payments to everyone are rare; one example is Hong Kong’s Cash Payout Scheme of 2020. The budget of 26 February 2020 announced HK$10,000 for every Hong Kong permanent resident aged 18 or over, expected to reach about 7 million people at a cost of about HK$71 billion.[22] Banks began taking online registrations on 21 June 2020; the money went into bank accounts, or could be collected as a cheque through Hongkong Post.[23]"
+          ],
+          [
+            "p",
+            "In January 2021 the government told the Legislative Council that by 21 January about HK$64 billion had been paid to some 6.4 million people, more than 90% of those eligible, and that administration had cost about HK$306 million. On the effect, it said only that it “believed” the money “should have certain stimulating effect on consumption”; it gave no measurement.[24] By 23 November 2021 more than 6.5 million eligible registrants had been paid.[25]"
+          ],
+          [
+            "o",
+            "Hong Kong’s scheme was universal, reaching almost every adult permanent resident, but it was paid once. China’s subsidy is periodic, but only for children under 3. A basic income needs both: paid to everyone, and paid again and again. Japan’s ¥100,000 in 2020 was also one-off, and as {we found|/essays/japan-special-cash-payment/}, much of it was saved."
+          ],
+          [
+            "h",
+            "What would a floor for everyone cost?"
+          ],
+          [
+            "p",
+            "What if 300 yuan a month went to everyone? With {the basic income calculator|/calc/?c=cn&w=all&m=300}, 300 yuan a month for every person in China comes to about 5.1 trillion yuan a year gross, about 3.6% of GDP. For all children under 18 only, it is about 970 billion yuan a year, about 0.7% of GDP, roughly nine times the current subsidy. These are gross amounts, not net costs, and they do not count other spending that might be replaced."
+          ],
+          [
+            "p",
+            "For comparison, since 1982 the US state of Alaska has paid an annual dividend from a state fund to eligible residents of every age. It is the longest-running scheme close to a basic income; see it on our {timeline|/timeline/#tl-alaska}."
+          ],
+          [
+            "h",
+            "Neither “basic income has arrived” nor “a drop in the ocean”"
+          ],
+          [
+            "o",
+            "The childcare subsidy is not a basic income. It covers only the first three years of life, it is worth about 15% of rural per-capita disposable income, and it must be claimed every year. Calling it “China’s basic income” is an overstatement."
+          ],
+          [
+            "o",
+            "Nor can it be waved away as a drop in the ocean. For the first time, China pays cash nationwide to every family with a young child, without an income test: more than 30 million children in a year, tax-free, and without costing anyone their minimum living allowance. Those are the hardest practical parts of any basic income: finding everyone, getting money into accounts, and making sure the poorest do not lose other support by taking it. China has now built such a system for children under 3."
+          ],
+          [
+            "o",
+            "Three things are worth watching: whether the rate rises with incomes and prices, whether the age limit is extended, and whether births and child poverty change from 2026 on. If the payment one day covers more ages, it will come ever closer to a child basic income."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "2025年7月28日、中国共産党中央弁公庁と国務院弁公庁は「育児補助金制度の実施方案」を公表しました。2025年1月1日から、3歳未満の子どもに補助金を出します。国の基礎基準は子ども1人あたり年3600元、月にすると300元です。[1] 中国財政科学研究院の朱坤氏は『人民日報』で、これは「わが国が初めて住民に支給する、普遍的な現金補助」だと述べています。[4]"
+          ],
+          [
+            "p",
+            "所得制限なし、第1子も第3子も同じ、現金を直接配る。こう聞くと、いわゆる「ベーシックインカム」によく似ています。本当にそうなのでしょうか。この記事では、まずルールを整理します。誰がもらえ、どう申請し、お金は誰が出し、実際にいくら配られたのか。次に、背景にある出生数と、「お金を配れば子どもは増えるのか」についての研究を見ます。最後に、ベーシックインカムの定義で測り、香港が2020年に配った1万香港ドルとも比べます。"
+          ],
+          [
+            "h",
+            "誰が、いくらもらえるのか"
+          ],
+          [
+            "p",
+            "対象は「法律や規定にしたがって生まれた3歳未満の乳幼児」で、3歳になるまで支給されます。[1] 第1子、第2子、第3子のどれでも対象で、所得の制限はありません。[2] 2025年より前に生まれ、2025年時点でまだ3歳未満の子どもには、残りの月数で按分して支給します。新華社の例では、2023年12月生まれの子どもは24か月分、計7200元を受け取れます。[2] 2025年以降に生まれた子どもなら、3歳までに最大で約1万800元です。"
+          ],
+          [
+            "p",
+            "申請するのは父母のどちらか、または他の保護者で、申請先は子どもの戸籍（戸口）がある地域です。[1] 主な窓口は全国統一のオンラインシステムで、支付宝（アリペイ）、微信（WeChat）、各省の行政サービスから入れます。戸籍地の郷鎮政府や街道事務所で直接申請することもできます。国家衛生健康委員会は2025年9月8日、申請の受付が全国で「正式に全面開始」したと発表しました。[7]"
+          ],
+          [
+            "p",
+            "自動で振り込まれるわけではありません。国家衛生健康委員会と財政部の管理規範では、最初の申請は子どもが生まれた年かその翌年に行い、その後2年続けて継続申請をします。期限までに申請しなければ「その年の申請資格を自動的に放棄したものとみなす」とされています。[5] 補助金は「年単位で計算し、年に1回まとめて支給」され、申請者か子どもの銀行カードや社会保障カードの口座に振り込まれます。各省は原則として四半期に少なくとも1回、まとめて支給します。[5][1] 2026年分の申請は2026年1月5日に始まり、継続申請の機能が加わりました。[8] 2022〜2024年生まれの子どもの最初の申請期限は、2025年末から2026年12月31日に延長されています。[11]"
+          ],
+          [
+            "p",
+            "見落としやすいけれど大切なルールが2つあります。1つは、育児補助金には個人所得税がかからないこと。[6] もう1つは、最低生活保障（低保）や特困などの扶助の対象を判定するとき、育児補助金を世帯や個人の収入に数えないことです。[1] いちばん貧しい家庭が、これを受け取ったせいで低保を失うことはありません。"
+          ],
+          [
+            "t",
+            "項目 | ルール\n対象 | 3歳未満の乳幼児。第1子、第2子、第3子のどれも[1][2]\n金額 | 国の基礎基準は子ども1人あたり年3600元。地方は上乗せできる[1]\n所得制限 | なし[2]\n申請先 | 子どもの戸籍地。オンラインか窓口で[1][7]\n支給方法 | 年1回まとめて、銀行カードや社会保障カードの口座へ[5]\n税 | 個人所得税は非課税[6]\n最低生活保障との関係 | 世帯や個人の収入に数えない[1]\n申請は必要か | 必要。毎年1回。期限を過ぎるとその年はもらえない[5]"
+          ],
+          [
+            "h",
+            "お金は誰が出し、いくら配られたのか"
+          ],
+          [
+            "p",
+            "国の基礎基準の分にかかるお金は、中央政府が東部・中部・西部で異なる割合で補助します。国務院新聞弁公室の会見では「中央が全体で約90%を負担する」とされ、2025年の予算は当初約900億元でした。[1][3] 地方が基準を上乗せする場合、その分は地方が自分で出します。[1]"
+          ],
+          [
+            "p",
+            "実際の運用はこうです。2025年12月31日までに31の省すべてで支給が始まり、支給を受けた子どもは2400万人を超え、2025年分の支給率は約80%でした。[10] 財政部は2026年1月末、2025年は全国の各級政府で約1000億元を充て、3000万人を超える乳幼児に支給したと説明しました。[9] 2026年の「政府活動報告」も、「育児補助金制度を全面実施し、3000万人余りの乳幼児に恩恵が及んだ」ことを前年の成果に挙げています。[12] 2026年は、中央政府が前年比10.6%増の999億元を交付し、各級政府の合計は約1100億元になる見込みです。[10] 2026年7月21日時点で、2026年分の申請は2751万件、審査を通ったのは2713万件、支給を受けたのは2516万人です。[11]"
+          ],
+          [
+            "p",
+            "経済全体と比べると、規模は大きくありません。2025年の中国の国内総生産（GDP）は140兆1879億元です。[13] 約1000億元の育児補助金はGDPの約0.07%、2026年の約1100億元は約0.08%です。一方、家計と比べると小さくありません。年3600元は、2025年の全国の1人あたり可処分所得（4万3377元）の約8%、農村住民（2万4456元）の約15%、都市住民（5万6502元）の約6%にあたります。[13] 農村の家庭にとっては、決して小さなお金ではありません。"
+          ],
+          [
+            "o",
+            "2026年に3600元の国の基礎基準を引き上げるという発表は、見つかりませんでした。全国規模の効果検証も、まだ見つかっていません。いくら配られたかはデータがあります。配られたあとで家計や子どもを持つ判断が変わったかどうかは、まだわかりません。"
+          ],
+          [
+            "h",
+            "なぜ今なのか：出生数"
+          ],
+          [
+            "p",
+            "背景には、出生数の急な減少があります。国家統計局によると、2024年の出生数は954万人、出生率は6.77‰でした。[14] 2025年の出生数は792万人、出生率は5.63‰で、死亡数は1131万人。年末の総人口は14億489万人で、前年末より339万人減りました。[13] 1年で出生数は約17%減ったことになります。"
+          ],
+          [
+            "p",
+            "注意したいのは、2025年に生まれた子どもの多くは2024年にはすでに授かっていたこと、そして全国の方案が公表されたのは2025年7月だったことです。2025年の出生数で、この補助金を評価することはできません。何かがわかりはじめるのは、2026年以降の数字からでしょう。なお、育児補助金と並んで、就学前教育の最終学年を無償にする政策が、2025年に1400万人の子どもに適用されています。[12]"
+          ],
+          [
+            "h",
+            "先に動いた都市：フフホト、天門、攀枝花"
+          ],
+          [
+            "p",
+            "全国の方案より前に、もっと手厚い補助を試した都市があります。四川省攀枝花市は2021年7月、第2子と第3子に、3歳になるまで子ども1人あたり月500元を支給すると発表しました。[17] 内モンゴルのフフホト市は2025年3月1日から、第1子に1万元を一度に、第2子に計5万元（5歳まで毎年1万元）、第3子以降に計10万元（10歳まで毎年1万元）を支給しています。フフホトの2023年の出生数は約2万人でした。[15] 湖北省天門市は、第2子に2300元を一度に支給したうえで3歳まで毎月800元、第3子に3300元を一度に支給したうえで毎月1000元を出しています。[16]"
+          ],
+          [
+            "p",
+            "これらの補助で子どもは増えたのでしょうか。証拠はまだ薄いと言えます。中国新聞社は、天門の出生数が2024年に17%増え、8年ぶりに増加に転じたと報じましたが、統計の出典は示されておらず、補助金の効果と他の要因を区別することもできません。[16] フフホトの担当者は、出生数は2024年の時点ですでにやや持ち直していたと話しています。新しい補助が始まる前のことです。[15] 地方の数字は注目に値しますが、因果関係の証拠にはなりません。"
+          ],
+          [
+            "h",
+            "お金を配れば、子どもは増えるのか"
+          ],
+          [
+            "p",
+            "海外の研究が示すのは、効果はあるものの、たいていは控えめで、しかも安くはない、ということです。よく引用されるのはカナダ・ケベック州の研究です。経済学者のケビン・ミリガンは、子どもが生まれた家庭に最大8000カナダドルを支給した州の政策を調べ、政策の導入時と廃止時の両方について時期・地域・家族の型でグループを比べて、この政策が出生に「強い効果」を持ったと結論づけました。[18] ただし、これは出生に結びついた支給で、月300元を長く払う仕組みとは違います。"
+          ],
+          [
+            "p",
+            "韓国は逆向きの教訓です。韓国の監査院によると、韓国は2006年から2020年までに少子化対策に380.2兆ウォンを投じました。[19] それでも合計特殊出生率は2023年に世界最低の0.72まで下がり、その後2024年に0.75、2025年に0.80へと持ち直しました。当局者は、持ち直しの主な理由を、結婚の増加（2025年は8.1%増）と30代の人口の多さに求めていて、特定の給付のおかげだとはしていません。[20]"
+          ],
+          [
+            "o",
+            "私たちが読んだ研究をまとめると、こうなります。現金は、一部の家庭で出産を早めたり、もう1人を後押ししたりすることはあっても、現金だけで出生率の長い低下を逆転させるのは難しい。住まい、教育、仕事、育児の時間も同じくらい大切です。一方で、子どものいる家庭に現金を配ると子どもの貧困が減ることは、はっきりしています。{給付付き税額控除のエッセイ|/essays/refundable-tax-credit-vs-basic-income/}で見たように、アメリカで2021年に児童税額控除を拡充すると子どもの貧困率は大きく下がり、拡充が終わると再び上がりました。育児補助金も、出生数を増やせるかどうかだけで評価するべきではありません。"
+          ],
+          [
+            "h",
+            "ベーシックインカムと言えるのか：BIENの5つのものさし"
+          ],
+          [
+            "p",
+            "ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義しています。[21] {10万円のエッセイ|/essays/japan-special-cash-payment/}でも使ったこのものさしを、育児補助金に当てはめてみます。"
+          ],
+          [
+            "t",
+            "ものさし | 育児補助金 | ベーシックインカム\n定期的 | はい。年1回 | はい\n現金 | はい。銀行カードなどの口座へ | はい\n個人単位 | 子ども1人ごとに計算し、親か保護者が受け取る | 一人ひとりが受け取る\n全員 | いいえ。3歳未満の子どもだけ | すべての人\n無条件 | 所得や就労の審査はないが、毎年申請が必要 | 無条件"
+          ],
+          [
+            "p",
+            "つまり育児補助金は、「定期的」と「現金」を満たし、「無条件」をおおむね満たし、「個人単位」を一部満たしますが、「全員」は満たしません。より正確に言えば、所得制限のない、幼い子ども向けの現金給付です。多くの国で「児童手当」と呼ばれるものの、はじめの一歩にあたります。ベーシックインカムとのいちばん大きな違いは、対象が人生の最初の3年間に限られていることです。"
+          ],
+          [
+            "h",
+            "香港の2020年の1万香港ドル"
+          ],
+          [
+            "p",
+            "中国語圏で「全員に配る」現金給付はあまり多くありませんが、その一例が、香港が2020年に行った「現金発放計画」です。2020年2月26日の予算案で、18歳以上の香港永住者1人あたり1万香港ドルを配ると発表しました。対象は約700万人、支出は約710億香港ドルの見込みでした。[22] 銀行は2020年6月21日からオンラインでの登録を受け付け、お金は銀行口座に振り込まれるか、香港郵政を通じて小切手で受け取れました。[23]"
+          ],
+          [
+            "p",
+            "政府は2021年1月の立法会への答弁で、1月21日までに約640万人に約640億香港ドルを支給し、対象者の9割を超えたこと、事務費は約3億600万香港ドルだったことを説明しました。効果については、消費をある程度刺激したと「信じる」と述べただけで、測った数字は示していません。[24] 2021年11月23日までに、650万人を超える登録者に支給されました。[25]"
+          ],
+          [
+            "o",
+            "香港の計画は「全員」でした。ほぼすべての成人の永住者が受け取りました。でも、配ったのは1回だけです。中国の育児補助金は「定期的」ですが、3歳未満の子どもだけです。ベーシックインカムには、その両方が必要です。全員に、そしてずっと配ること。日本の2020年の10万円も1回きりで、{そのエッセイ|/essays/japan-special-cash-payment/}で見たように、多くは貯金に回りました。"
+          ],
+          [
+            "h",
+            "全員の土台をつくると、いくらかかるのか"
+          ],
+          [
+            "p",
+            "月300元を全員に配ったらどうなるでしょう。{ベーシックインカム計算機|/calc/?c=cn&w=all&m=300}で、中国の全員に月300元を配ると、グロスで年約5.1兆元、GDPの約3.6%です。18歳未満の子どもだけなら年約9700億元、GDPの約0.7%で、いまの育児補助金のおよそ9倍です。これは配る総額で、正味の費用ではありません。置き換えられるほかの支出も数えていません。"
+          ],
+          [
+            "p",
+            "比較のために言うと、アメリカのアラスカ州は1982年から、州の基金から年齢を問わず条件を満たす住民に毎年配当を払っています。ベーシックインカムに近い仕組みとしては世界でいちばん長く続いているもので、{年表|/timeline/#tl-alaska}で見られます。"
+          ],
+          [
+            "h",
+            "「ベーシックインカムが来た」でも、「焼け石に水」でもない"
+          ],
+          [
+            "o",
+            "育児補助金はベーシックインカムではありません。対象は人生の最初の3年間だけで、金額は農村の1人あたり可処分所得の約15%、しかも毎年申請が必要です。「中国がベーシックインカムを始めた」と言うのは言いすぎです。"
+          ],
+          [
+            "o",
+            "かといって、「焼け石に水」の一言で片づけられるものでもありません。中国は初めて、所得を問わず、幼い子どものいるすべての家庭に、全国で現金を直接配りました。1年で3000万人を超える子どもに、非課税で、最低生活保障にも響かない形で。これは、どんなベーシックインカムにとってもいちばん難しい実務の部分です。一人ひとりを見つけ、口座にお金を届け、いちばん貧しい人がそれを受け取ったせいで他の支援を失わないようにすること。中国は3歳未満の子どもについて、その仕組みをつくりました。"
+          ],
+          [
+            "o",
+            "これから注目したいのは3つです。基準額が所得や物価に合わせて上がるのか。対象年齢が延びるのか。そして2026年以降、出生数や子どもの貧困に変化があるのか。いつか対象年齢が広がれば、それは「子どものベーシックインカム」にどんどん近づいていきます。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2025 年 7 月 28 日，中共中央办公厅、国务院办公厅印发《育儿补贴制度实施方案》：从 2025 年 1 月 1 日起，对 3 周岁以下的婴幼儿发放补贴，国家基础标准为每孩每年 3600 元，也就是每月 300 元。[1] 中国财政科学研究院的朱坤在《人民日报》上说，这是“我国首次对居民发放的普惠式现金补贴”。[4]"
+          ],
+          [
+            "p",
+            "不看收入、不分一孩二孩、直接发钱，这听起来很像人们常说的“基本收入”。它到底是不是？这篇文章先把规则讲清楚：谁能领、怎么领、钱从哪里来、实际发了多少；再看出生人口的背景和关于“发钱能否促进生育”的研究；最后用基本收入的标准衡量它，并和香港 2020 年的一万港元做个比较。"
+          ],
+          [
+            "h",
+            "谁能领、领多少"
+          ],
+          [
+            "p",
+            "对象是“符合法律法规规定生育的 3 周岁以下婴幼儿”，补贴发到孩子年满 3 周岁为止。[1] 一孩、二孩、三孩都可以领，没有收入门槛。[2] 2025 年以前出生、2025 年时仍不满 3 岁的孩子，按还能领取的月数折算。新华社举的例子是：2023 年 12 月出生的孩子，可以领 24 个月，共 7200 元。[2] 一个 2025 年以后出生的孩子，从出生到 3 岁，最多可领约 1 万 800 元。"
+          ],
+          [
+            "p",
+            "由父母一方或其他监护人，向婴幼儿户籍所在地申领。[1] 主要通过全国统一的“育儿补贴信息管理系统”在线申请，入口在支付宝、微信和各省政务服务平台；也可以到户籍地的乡镇政府、街道办事处现场办理。2025 年 9 月 8 日，国家卫生健康委宣布申领“正式全面开放”。[7]"
+          ],
+          [
+            "p",
+            "它不是自动到账的。国家卫生健康委和财政部的管理规范规定，首次申请要在孩子出生当年或次年提出，之后连续两个年度分别续领；“逾期未提交申请的，视为自动放弃当年申请资格”。[5] 补贴“按年计算，每年一次性发放”，打到申领人或孩子的银行卡、社保卡等账户，各省原则上每季度至少集中发放一批。[5][1] 2026 年的申领从 1 月 5 日开始，系统增加了续领功能。[8] 2022 至 2024 年出生的孩子，首次申请的截止时间已从 2025 年底延长到 2026 年 12 月 31 日。[11]"
+          ],
+          [
+            "p",
+            "两条容易被忽略的规则很重要。第一，育儿补贴免征个人所得税。[6] 第二，在认定低保、特困等救助对象时，育儿补贴不计入家庭或个人收入。[1] 也就是说，最穷的家庭领了这笔钱，不会因此失去低保。"
+          ],
+          [
+            "t",
+            "项目 | 规则\n对象 | 3 周岁以下婴幼儿，一孩、二孩、三孩都可以[1][2]\n金额 | 国家基础标准每孩每年 3600 元，地方可以提高[1]\n收入审查 | 没有[2]\n在哪里申领 | 婴幼儿户籍所在地，线上或线下[1][7]\n怎么发 | 每年一次性，打到银行卡、社保卡等账户[5]\n税 | 免征个人所得税[6]\n与低保的关系 | 不计入家庭或个人收入[1]\n要不要申请 | 要，每年一次；逾期视为放弃当年[5]"
+          ],
+          [
+            "h",
+            "钱从哪里来，发了多少"
+          ],
+          [
+            "p",
+            "发放国家基础标准所需的钱，中央财政按比例补助东部、中部、西部地区，国新办发布会上说“中央总体承担约 90%”，2025 年初步安排预算 900 亿元左右。[1][3] 地方如果提高标准，多出的部分由地方自己出。[1]"
+          ],
+          [
+            "p",
+            "实际执行的情况是这样的。截至 2025 年 12 月 31 日，31 个省份都已发放，发放人数超过 2400 万，2025 年度的发放率约为 80%。[10] 财政部在 2026 年 1 月底说，2025 年全国各级财政共安排约 1000 亿元，并且已向 3000 多万名婴幼儿发放。[9] 2026 年的《政府工作报告》也把“全面实施育儿补贴制度、惠及 3000 多万婴幼儿”列入上一年的成绩。[12] 2026 年，中央财政下达补助资金 999 亿元，比上年增长 10.6%，预计各级财政全年共安排约 1100 亿元。[10] 截至 2026 年 7 月 21 日，2026 年度已提交申请 2751 万条，审核通过 2713 万条，已发放 2516 万人。[11]"
+          ],
+          [
+            "p",
+            "和经济总量相比，这笔钱并不大。2025 年中国国内生产总值为 140 万 1879 亿元。[13] 约 1000 亿元的育儿补贴，约占 GDP 的 0.07%；2026 年的约 1100 亿元，约占 0.08%。和家庭收入相比，每年 3600 元约相当于 2025 年全国居民人均可支配收入（4 万 3377 元）的 8%，农村居民（2 万 4456 元）的 15%，城镇居民（5 万 6502 元）的 6%。[13] 对农村家庭来说，这不是一笔小钱。"
+          ],
+          [
+            "o",
+            "目前我们没有找到 2026 年提高 3600 元国家基础标准的公告。我们也没有找到全国性的效果评估。发放了多少，有数据；发放之后家庭的生活和生育决定有没有改变，还不知道。"
+          ],
+          [
+            "h",
+            "为什么是现在：出生人口"
+          ],
+          [
+            "p",
+            "背景是出生人口的快速下降。国家统计局的数据显示，2024 年全国出生人口 954 万人，出生率 6.77‰；[14] 2025 年出生人口 792 万人，出生率 5.63‰，死亡人口 1131 万人，年末总人口 14 亿 489 万人，比上年末减少 339 万人。[13] 一年之间，出生人口减少了约 17%。"
+          ],
+          [
+            "p",
+            "要注意的是，2025 年出生的孩子，大多在 2024 年就已怀上，而全国方案是 2025 年 7 月才公布的。所以 2025 年的出生数字还不能用来评价这项补贴。2026 年和之后几年的数字，才可能开始告诉我们一些东西。与育儿补贴一起，学前一年免费教育政策在 2025 年惠及 1400 万儿童。[12]"
+          ],
+          [
+            "h",
+            "地方先行：呼和浩特、天门、攀枝花"
+          ],
+          [
+            "p",
+            "在全国方案之前，一些城市已经试过更大方的补贴。四川攀枝花在 2021 年 7 月宣布，对二孩、三孩每月每孩发放 500 元育儿补贴金，直到孩子 3 岁。[17] 内蒙古呼和浩特从 2025 年 3 月 1 日起，生育一孩一次性发放 1 万元；二孩共 5 万元，每年 1 万元，直到 5 周岁；三孩及以上共 10 万元，每年 1 万元，直到 10 周岁。2023 年，呼和浩特的出生人口约为 2 万人。[15] 湖北天门对二孩一次性发放 2300 元、此后每月 800 元直到 3 岁，对三孩一次性发放 3300 元、此后每月 1000 元。[16]"
+          ],
+          [
+            "p",
+            "这些补贴有没有让人多生孩子？证据还很薄。中新社报道，天门的出生人口在 2024 年增长 17%，是 8 年来首次由降转增，但报道没有给出统计来源，也无法区分补贴的作用和其他因素。[16] 呼和浩特的官员说，出生人口在 2024 年就已略有回升，那是在新补贴实施之前。[15] 地方的这些数字值得关注，但不能当作因果证据。"
+          ],
+          [
+            "h",
+            "发钱能让人多生孩子吗"
+          ],
+          [
+            "p",
+            "国际研究给出的答案是：有一些作用，但通常不大，而且代价不低。最常被引用的是加拿大魁北克省的研究。经济学家凯文·米利根研究了魁北克省向生孩子的家庭最多发放 8000 加元的政策，在政策实施和取消时按时间、地区和家庭类型分组比较，得出该政策对生育“有很强的影响”。[18] 但那是与生育挂钩的奖励，和每月 300 元的长期补贴并不相同。"
+          ],
+          [
+            "p",
+            "韩国是反面的提醒。据韩国监察院的数据，2006 至 2020 年，韩国在应对低生育上投入了 380.2 万亿韩元。[19] 总和生育率仍在 2023 年降到 0.72 的世界最低水平，之后回升到 2024 年的 0.75 和 2025 年的 0.80。韩国官员把回升主要归因于结婚人数增加（2025 年增长 8.1%）和 30 多岁人口增多，而不是某一项补贴。[20]"
+          ],
+          [
+            "o",
+            "我们读到的研究，可以这样概括：现金可以让一部分家庭把生育提前，或多生一个孩子，但很难单靠现金扭转生育率的长期下降，住房、教育、工作和照护时间都同样重要。另一方面，给有孩子的家庭发现金，减少儿童贫困的效果是清楚的。我们在{关于可退还税收抵免的文章|/essays/refundable-tax-credit-vs-basic-income/}里看到，美国 2021 年扩大儿童税收抵免时，儿童贫困率明显下降，取消之后又回升。所以，评价育儿补贴，不应只看它能不能提高出生人数。"
+          ],
+          [
+            "h",
+            "它算基本收入吗？用 BIEN 的五条标准衡量"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）把基本收入定义为“无条件地以个人为单位发给所有人的定期现金支付，不需要经济状况调查或工作要求”。[21] 我们在{日本 10 万日元的文章|/essays/japan-special-cash-payment/}里也用过这把尺子。用它来衡量育儿补贴："
+          ],
+          [
+            "t",
+            "标准 | 育儿补贴 | 基本收入\n定期 | 是，每年一次 | 是\n现金 | 是，打到银行卡等账户 | 是\n个人 | 按每个孩子计算，由父母或监护人领取 | 每个人自己领取\n普遍 | 否，只给 3 岁以下的婴幼儿 | 所有人\n无条件 | 没有收入和工作审查，但每年要申请 | 无条件"
+          ],
+          [
+            "p",
+            "所以，育儿补贴满足“定期”和“现金”，基本满足“无条件”，部分满足“个人”，但不满足“普遍”。更准确的说法是：它是一种面向幼儿的、不看收入的现金补贴，也就是很多国家所说的“儿童津贴”的起步版本。它和基本收入最大的区别，是对象只覆盖人生的头三年。"
+          ],
+          [
+            "h",
+            "香港 2020 年的一万港元"
+          ],
+          [
+            "p",
+            "在华语地区，“发给所有人”的现金发放并不多见，香港 2020 年的“现金发放计划”是其中一例。2020 年 2 月 26 日的《财政预算案》宣布，向 18 岁或以上的香港永久性居民每人发放 1 万港元，预计约 700 万人受惠，涉及开支约 710 亿港元。[22] 银行从 2020 年 6 月 21 日开始接受网上登记，款项存入银行账户，也可以经香港邮政领取支票。[23]"
+          ],
+          [
+            "p",
+            "政府在 2021 年 1 月答复立法会时说，截至 1 月 21 日，已向约 640 万人发放约 640 亿港元，占合资格人数九成以上；行政开支约 3.06 亿港元。对效果，政府只说“相信”这笔钱对消费有一定刺激作用，没有给出测量。[24] 到 2021 年 11 月 23 日，已向 650 多万名合资格登记人发放。[25]"
+          ],
+          [
+            "o",
+            "香港的计划是“普遍”的，几乎每个成年永久居民都领到了，但它只发一次。育儿补贴是“定期”的，但只给 3 岁以下的孩子。基本收入需要两者兼备：既发给所有人，又一直发下去。日本 2020 年的 10 万日元也是一次性的，我们在{那篇文章|/essays/japan-special-cash-payment/}里看过，它的钱大多被存了起来。"
+          ],
+          [
+            "h",
+            "一份全民的底线要多少钱"
+          ],
+          [
+            "p",
+            "如果把每月 300 元发给所有人，会怎样？用{基本收入计算器|/calc/?c=cn&w=all&m=300}算，向中国每个人每月发 300 元，毛额每年约 5.1 万亿元，约为 GDP 的 3.6%。只发给 18 岁以下的孩子，每年约 9700 亿元，约占 GDP 的 0.7%，也就是现在育儿补贴的九倍左右。这些是发放总额，不是净成本，也没有计入可以被替代的其他支出。"
+          ],
+          [
+            "p",
+            "作为对照，美国阿拉斯加州从 1982 年起，每年从州基金向符合条件的居民发放分红，每个人都有一份，不论年龄。这是世界上持续时间最长的、接近基本收入的制度，可以在{年表|/timeline/#tl-alaska}里看到。"
+          ],
+          [
+            "h",
+            "既不是“基本收入来了”，也不是“杯水车薪”"
+          ],
+          [
+            "o",
+            "育儿补贴不是基本收入。它只覆盖人生的头三年，金额约为农村人均可支配收入的 15%，而且每年要申请。把它说成“中国开始发基本收入”，是夸大。"
+          ],
+          [
+            "o",
+            "但它也不是一句“杯水车薪”就能打发的。它第一次在全国范围内，不看收入、直接把现金发到每个有幼儿的家庭，一年发给 3000 多万名婴幼儿，免税，也不影响低保。这些是基本收入讨论中最难的部分：怎样找到每一个人，怎样把钱发到账户，怎样避免穷人因为领钱而失去救助。中国已经为 3 岁以下的孩子建起了这样一套系统。"
+          ],
+          [
+            "o",
+            "接下来值得看的有三件事：标准会不会随收入和物价提高，年龄会不会延长，以及 2026 年以后的出生和儿童贫困数据有没有变化。如果有一天，这笔钱覆盖到更多年龄，它离“儿童基本收入”就会越来越近。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "28 जुलाई 2025 को चीन की कम्युनिस्ट पार्टी की केंद्रीय समिति और स्टेट काउंसिल के जनरल ऑफ़िसों ने राष्ट्रीय चाइल्डकेयर सब्सिडी की कार्य-योजना जारी की। 1 जनवरी 2025 से 3 साल से छोटा हर बच्चा इसका हक़दार है, और राष्ट्रीय मूल दर हर बच्चे के लिए साल में 3,600 युआन है, यानी महीने में 300 युआन।[1] चाइनीज़ अकैडमी ऑफ़ फ़िस्कल साइंसेज़ के झू कुन ने पीपुल्स डेली से कहा कि यह \"हमारे देश द्वारा निवासियों को दी गई पहली सार्वभौमिक नकद सब्सिडी\" है।[4]"
+          ],
+          [
+            "p",
+            "कोई आय जाँच नहीं, पहले और तीसरे बच्चे में कोई फ़र्क़ नहीं, सीधे परिवारों को नकद: यह काफ़ी हद तक उसी जैसा लगता है जिसे लोग बेसिक इनकम कहते हैं। क्या यह सच में वैसा है? यह लेख पहले नियम समझाता है: किसे मिलती है, दावा कैसे होता है, पैसा कौन देता है और असल में कितना बाँटा गया। फिर नीति के पीछे के जन्म के आँकड़े और इस पर शोध देखता है कि क्या नकद से जन्म बढ़ते हैं। आख़िर में सब्सिडी को बेसिक इनकम की परिभाषा पर परखता है, और 2020 में हांगकांग के 10,000 हांगकांग डॉलर के भुगतान से तुलना करता है।"
+          ],
+          [
+            "h",
+            "किसे मिलती है, और कितनी"
+          ],
+          [
+            "p",
+            "सब्सिडी उन 3 साल से छोटे बच्चों के लिए है जो \"क़ानूनों और नियमों के अनुसार पैदा हुए\" हों, और 3 साल पूरे होने तक मिलती है।[1] पहला, दूसरा और तीसरा, हर बच्चा हक़दार है, और कोई आय सीमा नहीं है।[2] जो बच्चे 2025 से पहले पैदा हुए और 2025 में 3 साल से छोटे थे, उन्हें बचे हुए महीनों के हिसाब से अनुपात में रक़म मिलती है। शिन्हुआ का उदाहरण: दिसंबर 2023 में पैदा हुआ बच्चा 24 महीनों की, कुल 7,200 युआन की सब्सिडी पा सकता है।[2] 2025 या उसके बाद पैदा हुआ बच्चा जन्म से 3 साल की उम्र तक अधिकतम लगभग 10,800 युआन पा सकता है।"
+          ],
+          [
+            "p",
+            "माता या पिता में से कोई एक, या कोई दूसरा अभिभावक, उस जगह दावा करता है जहाँ बच्चे का घरेलू पंजीकरण (हुकोउ) दर्ज है।[1] ज़्यादातर दावे एक राष्ट्रीय ऑनलाइन सिस्टम से होते हैं, जिस तक Alipay, WeChat और प्रांतीय सरकारी सेवा पोर्टलों से पहुँचा जा सकता है; क़स्बे या मोहल्ले के दफ़्तर में जाकर भी दावा किया जा सकता है। नेशनल हेल्थ कमीशन ने 8 सितंबर 2025 को घोषणा की कि आवेदन पूरे देश में \"पूरी तरह खुल\" गए हैं।[7]"
+          ],
+          [
+            "p",
+            "यह अपने-आप नहीं आती। नेशनल हेल्थ कमीशन और वित्त मंत्रालय के नियमों के अनुसार पहला दावा जन्म के साल या उसके अगले साल करना होता है, और फिर अगले दो सालों में हर साल नवीनीकरण; समय पर दावा न करने पर \"उस साल की पात्रता छोड़ी हुई मानी जाती है\"।[5] सब्सिडी \"साल के हिसाब से गिनी जाती है और साल में एक बार एकमुश्त दी जाती है\", दावेदार या बच्चे के बैंक या सामाजिक सुरक्षा कार्ड खाते में; प्रांत हर तिमाही कम से कम एक खेप में भुगतान करते हैं।[5][1] 2026 के दावे 5 जनवरी 2026 को खुले, और नवीनीकरण की नई सुविधा जोड़ी गई।[8] 2022 से 2024 के बीच पैदा हुए बच्चों के पहले दावे की आख़िरी तारीख़ 2025 के अंत से बढ़ाकर 31 दिसंबर 2026 कर दी गई है।[11]"
+          ],
+          [
+            "p",
+            "दो नियम आसानी से छूट जाते हैं, पर अहम हैं। सब्सिडी पर व्यक्तिगत आयकर नहीं लगता।[6] और जब न्यूनतम जीवन भत्ते (दिबाओ) या अत्यंत ग़रीबी सहायता की पात्रता जाँची जाती है, तो सब्सिडी को घर या व्यक्ति की आय में नहीं गिना जाता।[1] सबसे ग़रीब परिवार इसे लेने से अपना दिबाओ नहीं खोते।"
+          ],
+          [
+            "t",
+            "मुद्दा | नियम\nकिसे | 3 साल से छोटे बच्चे; पहला, दूसरा और तीसरा बच्चा बराबर[1][2]\nरक़म | राष्ट्रीय मूल दर हर बच्चे के लिए साल में 3,600 युआन; स्थानीय सरकारें ज़्यादा दे सकती हैं[1]\nआय जाँच | नहीं[2]\nदावा कहाँ | बच्चे के घरेलू पंजीकरण की जगह, ऑनलाइन या ख़ुद जाकर[1][7]\nभुगतान कैसे | साल में एक बार एकमुश्त, बैंक या सामाजिक सुरक्षा कार्ड खाते में[5]\nटैक्स | व्यक्तिगत आयकर से छूट[6]\nन्यूनतम जीवन भत्ता | घर या व्यक्ति की आय में नहीं गिनी जाती[1]\nदावा ज़रूरी? | हाँ, हर साल; छूटा साल गँवा दिया जाता है[5]"
+          ],
+          [
+            "h",
+            "पैसा कौन देता है, और कितना बाँटा गया"
+          ],
+          [
+            "p",
+            "मूल दर की लागत का हिस्सा केंद्र सरकार पूर्वी, मध्य और पश्चिमी इलाक़ों के लिए अलग-अलग अनुपात में उठाती है; स्टेट काउंसिल की प्रेस कॉन्फ़्रेंस में अधिकारियों ने कहा कि \"केंद्र कुल मिलाकर लगभग 90% वहन करता है\", और 2025 का शुरुआती बजट लगभग 90 अरब युआन था।[1][3] अगर कोई स्थानीय सरकार मूल दर से ज़्यादा देती है, तो अतिरिक्त ख़र्च वह ख़ुद उठाती है।[1]"
+          ],
+          [
+            "p",
+            "व्यवहार में यह हुआ। 31 दिसंबर 2025 तक सभी 31 प्रांतों में भुगतान शुरू हो चुका था, 2.4 करोड़ से ज़्यादा बच्चों को पैसा मिल चुका था, और 2025 की भुगतान दर लगभग 80% थी।[10] वित्त मंत्रालय ने जनवरी 2026 के अंत में कहा कि सभी स्तरों की सरकारों ने 2025 के लिए लगभग 100 अरब युआन रखे थे, और 3 करोड़ से ज़्यादा बच्चों को भुगतान हो चुका था।[9] 2026 की सरकारी कार्य रिपोर्ट पिछले साल की उपलब्धियों में \"चाइल्डकेयर सब्सिडी को पूरी तरह लागू करना, जिससे 3 करोड़ से ज़्यादा शिशुओं को लाभ\" गिनाती है।[12] 2026 के लिए केंद्र सरकार ने 99.9 अरब युआन दिए हैं, जो 10.6% ज़्यादा है, और सभी स्तरों का कुल ख़र्च लगभग 110 अरब युआन रहने का अनुमान है।[10] 21 जुलाई 2026 तक 2026 के लिए 2.751 करोड़ दावे आए, 2.713 करोड़ मंज़ूर हुए और 2.516 करोड़ बच्चों को भुगतान हुआ।[11]"
+          ],
+          [
+            "p",
+            "अर्थव्यवस्था के मुक़ाबले यह छोटी है। 2025 में चीन का GDP 140.19 ट्रिलियन युआन था।[13] लगभग 100 अरब युआन GDP का लगभग 0.07% है; 2026 के लगभग 110 अरब युआन लगभग 0.08%। घरेलू आय के मुक़ाबले यह छोटी नहीं है: साल के 3,600 युआन 2025 की राष्ट्रीय प्रति व्यक्ति प्रयोज्य आय (43,377 युआन) का लगभग 8%, ग्रामीण निवासियों (24,456 युआन) का 15% और शहरी निवासियों (56,502 युआन) का 6% हैं।[13] किसी ग्रामीण परिवार के लिए यह असली पैसा है।"
+          ],
+          [
+            "o",
+            "हमें 2026 में 3,600 युआन की मूल दर बढ़ाने की कोई घोषणा नहीं मिली, और सब्सिडी के असर का कोई राष्ट्रीय मूल्यांकन भी नहीं। कितना बाँटा गया, यह अच्छी तरह दर्ज है। इससे परिवारों के बजट या बच्चों के फ़ैसले बदले या नहीं, यह अभी पता नहीं।"
+          ],
+          [
+            "h",
+            "अभी क्यों: जन्म के आँकड़े"
+          ],
+          [
+            "p",
+            "पृष्ठभूमि जन्मों में तेज़ गिरावट है। नेशनल ब्यूरो ऑफ़ स्टैटिस्टिक्स के अनुसार 2024 में चीन में 95.4 लाख बच्चे पैदा हुए, जन्म दर प्रति हज़ार 6.77।[14] 2025 में जन्म घटकर 79.2 लाख रह गए, दर प्रति हज़ार 5.63, जबकि 1.131 करोड़ लोगों की मृत्यु हुई; साल के अंत में आबादी 140.489 करोड़ थी, एक साल पहले से 33.9 लाख कम।[13] एक साल में जन्म लगभग 17% घटे।"
+          ],
+          [
+            "p",
+            "ध्यान रहे कि 2025 में पैदा हुए ज़्यादातर बच्चे 2024 में गर्भ में आ चुके थे, और राष्ट्रीय योजना जुलाई 2025 में ही प्रकाशित हुई। 2025 के आँकड़ों से सब्सिडी को नहीं आँका जा सकता। 2026 और उसके बाद के आँकड़े शायद कुछ बताने लगें। सब्सिडी के साथ-साथ, प्री-स्कूल के आख़िरी साल की मुफ़्त शिक्षा की नीति 2025 में 1.4 करोड़ बच्चों तक पहुँची।[12]"
+          ],
+          [
+            "h",
+            "शहर पहले चले: होहहोट, तियानमेन, पानझीहुआ"
+          ],
+          [
+            "p",
+            "राष्ट्रीय योजना से पहले कुछ शहरों ने ज़्यादा उदार भुगतान आज़माए। सिचुआन के पानझीहुआ ने जुलाई 2021 में घोषणा की कि वह हर दूसरे या तीसरे बच्चे के लिए 3 साल की उम्र तक महीने में 500 युआन देगा।[17] भीतरी मंगोलिया के होहहोट ने 1 मार्च 2025 से पहले बच्चे के लिए एक बार 10,000 युआन दिए; दूसरे बच्चे के लिए कुल 50,000 युआन, 5 साल की उम्र तक हर साल 10,000; और तीसरे या आगे के बच्चे के लिए कुल 1,00,000 युआन, 10 साल की उम्र तक हर साल 10,000। 2023 में होहहोट में लगभग 20,000 बच्चे पैदा हुए थे।[15] हुबेई का तियानमेन दूसरे बच्चे के लिए एक बार 2,300 युआन और फिर 3 साल की उम्र तक महीने में 800 युआन देता है, और तीसरे के लिए एक बार 3,300 युआन और फिर महीने में 1,000 युआन।[16]"
+          ],
+          [
+            "p",
+            "क्या इन भुगतानों से जन्म बढ़े? सबूत कमज़ोर हैं। चाइना न्यूज़ सर्विस ने बताया कि तियानमेन में 2024 में जन्म 17% बढ़े, आठ साल में पहली बढ़त, लेकिन उसने कोई सांख्यिकीय स्रोत नहीं दिया और सब्सिडी को दूसरे कारणों से अलग नहीं कर सका।[16] होहहोट के एक अधिकारी ने कहा कि जन्म 2024 में ही थोड़े बढ़ने लगे थे, नई सब्सिडी शुरू होने से पहले।[15] स्थानीय आँकड़ों पर नज़र रखना ठीक है, पर वे कारण का सबूत नहीं हैं।"
+          ],
+          [
+            "h",
+            "क्या नकद से जन्म बढ़ते हैं?"
+          ],
+          [
+            "p",
+            "अंतरराष्ट्रीय शोध कुछ असर दिखाता है, आम तौर पर मामूली, और सस्ता नहीं। सबसे ज़्यादा उद्धृत अध्ययन क्यूबेक का है। अर्थशास्त्री केविन मिलिगन ने प्रांत की उस नीति का अध्ययन किया जिसमें नए बच्चे के लिए परिवारों को 8,000 कनाडाई डॉलर तक दिए जाते थे। नीति के शुरू और ख़त्म होने, दोनों समय समूहों की तुलना करके उन्होंने पाया कि \"नीति का प्रजनन पर मज़बूत असर\" हुआ।[18] लेकिन वह जन्म से जुड़ा भुगतान था, महीने के स्थिर 300 युआन नहीं।"
+          ],
+          [
+            "p",
+            "दक्षिण कोरिया उलटी दिशा की याद दिलाता है। उसके बोर्ड ऑफ़ ऑडिट एंड इंस्पेक्शन के अनुसार देश ने 2006 से 2020 तक कम प्रजनन दर से निपटने पर 380.2 ट्रिलियन वॉन ख़र्च किए।[19] फिर भी उसकी कुल प्रजनन दर 2023 में दुनिया की सबसे कम 0.72 तक गिरी, फिर 2024 में 0.75 और 2025 में 0.80 पर लौटी। अधिकारियों ने इस सुधार का श्रेय मुख्य रूप से ज़्यादा शादियों (2025 में 8.1% बढ़ीं) और तीस की उम्र वाले लोगों की बड़ी संख्या को दिया, किसी एक भुगतान को नहीं।[20]"
+          ],
+          [
+            "o",
+            "शोध की हमारी समझ: नकद कुछ जन्मों को पहले ला सकता है या कुछ परिवारों को एक और बच्चे की ओर झुका सकता है, लेकिन अकेला नकद शायद ही प्रजनन दर की लंबी गिरावट को पलटता है; घर, पढ़ाई, नौकरी और देखभाल का समय उतने ही मायने रखते हैं। दूसरी ओर, बच्चों वाले परिवारों को नकद देने से बाल ग़रीबी घटती है, यह साफ़ है। {रिफ़ंडेबल टैक्स क्रेडिट वाले लेख|/essays/refundable-tax-credit-vs-basic-income/} में हमने देखा कि 2021 में अमेरिका ने चाइल्ड टैक्स क्रेडिट बढ़ाया तो बाल ग़रीबी तेज़ी से घटी, और विस्तार ख़त्म होने पर फिर बढ़ गई। इसलिए सब्सिडी को सिर्फ़ इस पर नहीं आँकना चाहिए कि वह जन्मों की संख्या बढ़ाती है या नहीं।"
+          ],
+          [
+            "h",
+            "क्या यह बेसिक इनकम है? BIEN के पाँच मानदंड"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम की परिभाषा \"बिना आय जाँच या काम की शर्त के, सबको व्यक्तिगत आधार पर बिना शर्त दिया जाने वाला नियमित नकद भुगतान\" के रूप में करता है।[21] हमने यह पैमाना {जापान के 1,00,000 येन वाले लेख|/essays/japan-special-cash-payment/} में भी इस्तेमाल किया था। चाइल्डकेयर सब्सिडी पर लागू करें तो:"
+          ],
+          [
+            "t",
+            "मानदंड | चाइल्डकेयर सब्सिडी | बेसिक इनकम\nनियमित | हाँ, साल में एक बार | हाँ\nनकद | हाँ, बैंक या कार्ड खाते में | हाँ\nव्यक्तिगत | हर बच्चे के हिसाब से, माता-पिता या अभिभावक लेते हैं | हर व्यक्ति ख़ुद पाता है\nसार्वभौमिक | नहीं, सिर्फ़ 3 साल से छोटे बच्चे | सब\nबिना शर्त | आय या काम की जाँच नहीं, पर हर साल दावा करना पड़ता है | बिना शर्त"
+          ],
+          [
+            "p",
+            "तो सब्सिडी \"नियमित\" और \"नकद\" पर खरी उतरती है, \"बिना शर्त\" पर काफ़ी हद तक, \"व्यक्तिगत\" पर आंशिक रूप से, और \"सार्वभौमिक\" पर नहीं। ज़्यादा सटीक वर्णन यह है: छोटे बच्चों के लिए बिना आय जाँच का नकद भुगतान, यानी उसका शुरुआती रूप जिसे कई देश चाइल्ड बेनिफ़िट या बाल भत्ता कहते हैं। बेसिक इनकम से सबसे बड़ा फ़र्क़ यह है कि यह ज़िंदगी के सिर्फ़ पहले तीन साल कवर करती है।"
+          ],
+          [
+            "h",
+            "2020 में हांगकांग के 10,000 हांगकांग डॉलर"
+          ],
+          [
+            "p",
+            "चीनी भाषी दुनिया में सबको भुगतान कम ही हुए हैं; एक उदाहरण हांगकांग की 2020 की कैश पेआउट स्कीम है। 26 फ़रवरी 2020 के बजट ने 18 साल या उससे ज़्यादा उम्र के हर हांगकांग स्थायी निवासी के लिए 10,000 हांगकांग डॉलर की घोषणा की, जिससे लगभग 70 लाख लोगों तक पहुँचने और लगभग 71 अरब हांगकांग डॉलर ख़र्च होने का अनुमान था।[22] बैंकों ने 21 जून 2020 से ऑनलाइन पंजीकरण लेना शुरू किया; पैसा बैंक खातों में गया, या हांगकांग पोस्ट से चेक के रूप में लिया जा सकता था।[23]"
+          ],
+          [
+            "p",
+            "जनवरी 2021 में सरकार ने विधान परिषद को बताया कि 21 जनवरी तक लगभग 64 लाख लोगों को लगभग 64 अरब हांगकांग डॉलर दिए जा चुके थे, जो पात्र लोगों के 90% से ज़्यादा थे, और प्रशासन पर लगभग 30.6 करोड़ हांगकांग डॉलर ख़र्च हुए। असर के बारे में उसने सिर्फ़ इतना कहा कि उसे \"विश्वास\" है कि इस पैसे का खपत पर कुछ उत्तेजक असर होना चाहिए; कोई माप नहीं दिया।[24] 23 नवंबर 2021 तक 65 लाख से ज़्यादा पात्र पंजीकृत लोगों को भुगतान हो चुका था।[25]"
+          ],
+          [
+            "o",
+            "हांगकांग की योजना सार्वभौमिक थी, लगभग हर वयस्क स्थायी निवासी तक पहुँची, लेकिन एक ही बार दी गई। चीन की सब्सिडी नियमित है, पर सिर्फ़ 3 साल से छोटे बच्चों के लिए। बेसिक इनकम को दोनों चाहिए: सबको, और बार-बार। जापान का 2020 का 1,00,000 येन भी एक बार का था, और जैसा {हमने पाया|/essays/japan-special-cash-payment/}, उसका बड़ा हिस्सा बचा लिया गया।"
+          ],
+          [
+            "h",
+            "सबके लिए न्यूनतम आधार की लागत कितनी होगी?"
+          ],
+          [
+            "p",
+            "अगर महीने के 300 युआन सबको मिलें तो? {बेसिक इनकम कैलकुलेटर|/calc/?c=cn&w=all&m=300} के हिसाब से चीन में हर व्यक्ति को महीने के 300 युआन का सकल ख़र्च साल में लगभग 5.1 ट्रिलियन युआन है, यानी GDP का लगभग 3.6%। सिर्फ़ 18 साल से छोटे सभी बच्चों के लिए यह साल में लगभग 970 अरब युआन है, GDP का लगभग 0.7%, यानी मौजूदा सब्सिडी का लगभग नौ गुना। ये सकल रक़में हैं, शुद्ध लागत नहीं, और इनमें वह दूसरा ख़र्च नहीं गिना गया जिसकी जगह यह ले सकता है।"
+          ],
+          [
+            "p",
+            "तुलना के लिए, अमेरिका का अलास्का राज्य 1982 से एक राज्य कोष से हर उम्र के योग्य निवासियों को सालाना डिविडेंड देता है। बेसिक इनकम के क़रीब यह सबसे लंबे समय से चल रही योजना है; इसे हमारी {टाइमलाइन|/timeline/#tl-alaska} पर देखें।"
+          ],
+          [
+            "h",
+            "न \"बेसिक इनकम आ गई\", न \"ऊँट के मुँह में ज़ीरा\""
+          ],
+          [
+            "o",
+            "चाइल्डकेयर सब्सिडी बेसिक इनकम नहीं है। यह ज़िंदगी के सिर्फ़ पहले तीन साल कवर करती है, इसकी रक़म ग्रामीण प्रति व्यक्ति प्रयोज्य आय का लगभग 15% है, और इसका दावा हर साल करना पड़ता है। इसे \"चीन की बेसिक इनकम\" कहना बढ़ा-चढ़ाकर कहना है।"
+          ],
+          [
+            "o",
+            "न ही इसे ऊँट के मुँह में ज़ीरा कहकर टाला जा सकता है। पहली बार चीन पूरे देश में छोटे बच्चे वाले हर परिवार को, बिना आय जाँच के, नकद देता है: एक साल में 3 करोड़ से ज़्यादा बच्चों को, टैक्स-मुक्त, और बिना किसी का न्यूनतम जीवन भत्ता छीने। किसी भी बेसिक इनकम के सबसे कठिन व्यावहारिक हिस्से यही हैं: हर किसी को ढूँढना, पैसा खातों तक पहुँचाना, और यह पक्का करना कि सबसे ग़रीब इसे लेकर दूसरी मदद न खोएँ। चीन ने अब 3 साल से छोटे बच्चों के लिए ऐसा सिस्टम बना लिया है।"
+          ],
+          [
+            "o",
+            "तीन बातों पर नज़र रखनी चाहिए: क्या दर आय और क़ीमतों के साथ बढ़ती है, क्या उम्र की सीमा बढ़ाई जाती है, और क्या 2026 से जन्म और बाल ग़रीबी में बदलाव आता है। अगर किसी दिन यह भुगतान ज़्यादा उम्रों को कवर करे, तो यह बच्चों की बेसिक इनकम के और क़रीब आ जाएगा।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "El 28 de julio de 2025, las oficinas generales del Comité Central del Partido Comunista de China y del Consejo de Estado publicaron el plan de aplicación de un subsidio nacional por crianza. Desde el 1 de enero de 2025, todo niño menor de 3 años tiene derecho, y la cuantía básica nacional es de 3.600 yuanes por hijo y año, es decir, 300 yuanes al mes.[1] Zhu Kun, de la Academia China de Ciencias Fiscales, dijo al Diario del Pueblo que es “el primer subsidio universal en efectivo que nuestro país paga a sus residentes”.[4]"
+          ],
+          [
+            "p",
+            "Sin prueba de ingresos, sin distinguir entre el primer y el tercer hijo, dinero directo a las familias: se parece mucho a lo que la gente entiende por renta básica. ¿Lo es? Este ensayo expone primero las reglas: quién tiene derecho, cómo se solicita, quién paga y cuánto se ha pagado de verdad. Después mira las cifras de nacimientos que hay detrás y la investigación sobre si el dinero aumenta los nacimientos. Por último, mide el subsidio con la definición de renta básica y lo compara con los 10.000 dólares de Hong Kong de 2020."
+          ],
+          [
+            "h",
+            "Quién lo cobra y cuánto"
+          ],
+          [
+            "p",
+            "El subsidio cubre a los menores de 3 años “nacidos conforme a las leyes y normas”, hasta que cumplen 3 años.[1] Tienen derecho el primer, el segundo y el tercer hijo, y no hay umbral de ingresos.[2] Los niños nacidos antes de 2025 que aún no tenían 3 años en 2025 reciben una parte proporcional a los meses que quedan. El ejemplo de Xinhua: un niño nacido en diciembre de 2023 puede recibir 24 meses, 7.200 yuanes en total.[2] Un niño nacido en 2025 o después puede recibir hasta unos 10.800 yuanes desde que nace hasta los 3 años."
+          ],
+          [
+            "p",
+            "Lo solicita el padre o la madre, u otro tutor, en el lugar donde está inscrito el registro de hogar (hukou) del niño.[1] La mayoría de las solicitudes se hacen en un sistema nacional en línea al que se accede desde Alipay, WeChat y las plataformas de servicios de cada provincia; también se puede pedir en persona en la oficina del municipio o del barrio. La Comisión Nacional de Salud declaró las solicitudes “plenamente abiertas” en todo el país el 8 de septiembre de 2025.[7]"
+          ],
+          [
+            "p",
+            "No es automático. Las normas de la Comisión Nacional de Salud y del Ministerio de Hacienda establecen que la primera solicitud debe hacerse el año del nacimiento o el siguiente, y después renovarse cada uno de los dos años siguientes; si no se presenta a tiempo, “se considera que se ha renunciado al derecho de ese año”.[5] El subsidio “se calcula por año y se paga una vez al año en un pago único” en la cuenta bancaria o de la tarjeta de seguridad social del solicitante o del niño, y las provincias pagan al menos una tanda cada trimestre.[5][1] Las solicitudes de 2026 se abrieron el 5 de enero de 2026, con una nueva función de renovación.[8] Para los nacidos entre 2022 y 2024, el plazo de la primera solicitud se amplió de finales de 2025 al 31 de diciembre de 2026.[11]"
+          ],
+          [
+            "p",
+            "Hay dos reglas fáciles de pasar por alto que importan. El subsidio está exento del impuesto sobre la renta.[6] Y cuando se evalúa el derecho al subsidio mínimo de subsistencia (dibao) o a la ayuda por pobreza extrema, el subsidio no cuenta como ingreso del hogar ni de la persona.[1] Las familias más pobres no pierden su dibao por cobrarlo."
+          ],
+          [
+            "t",
+            "Aspecto | Regla\nQuién | Menores de 3 años; primer, segundo y tercer hijo por igual[1][2]\nCuantía | Base nacional de 3.600 yuanes por hijo y año; los gobiernos locales pueden pagar más[1]\nPrueba de ingresos | Ninguna[2]\nDónde se pide | En el lugar del registro de hogar del niño, en línea o en persona[1][7]\nCómo se paga | Una vez al año, en un pago único, en una cuenta bancaria o de la tarjeta de seguridad social[5]\nImpuestos | Exento del impuesto sobre la renta[6]\nSubsidio mínimo de subsistencia | No cuenta como ingreso del hogar ni de la persona[1]\n¿Hay que pedirlo? | Sí, cada año; el año que no se pide se pierde[5]"
+          ],
+          [
+            "h",
+            "Quién paga y cuánto se ha pagado"
+          ],
+          [
+            "p",
+            "El gobierno central cubre parte del coste de la cuantía básica en las regiones del este, el centro y el oeste en proporciones distintas; en una rueda de prensa del Consejo de Estado se dijo que “el centro asume en conjunto alrededor del 90 %”, con un presupuesto inicial para 2025 de unos 90.000 millones de yuanes.[1][3] Si un gobierno local paga más de la base, financia la diferencia por su cuenta.[1]"
+          ],
+          [
+            "p",
+            "Esto es lo que ha ocurrido en la práctica. A 31 de diciembre de 2025, las 31 provincias habían empezado a pagar, más de 24 millones de niños habían cobrado y la tasa de pago de 2025 rondaba el 80 %.[10] El Ministerio de Hacienda dijo a finales de enero de 2026 que todas las administraciones habían destinado unos 100.000 millones de yuanes a 2025 y que habían cobrado más de 30 millones de niños.[9] El Informe sobre la Labor del Gobierno de 2026 cuenta entre los logros del año anterior “aplicar plenamente el subsidio por crianza, en beneficio de más de 30 millones de bebés”.[12] Para 2026, el gobierno central ha asignado 99.900 millones de yuanes, un 10,6 % más, y se prevé que el gasto total de todas las administraciones ronde los 110.000 millones.[10] A 21 de julio de 2026 se habían presentado 27,51 millones de solicitudes para 2026, se habían aprobado 27,13 millones y habían cobrado 25,16 millones de niños.[11]"
+          ],
+          [
+            "p",
+            "Frente a la economía, es pequeño. El PIB de China en 2025 fue de 140,19 billones de yuanes.[13] Unos 100.000 millones de yuanes son alrededor del 0,07 % del PIB; unos 110.000 millones en 2026, alrededor del 0,08 %. Frente a los ingresos de los hogares no es pequeño: 3.600 yuanes al año son cerca del 8 % de la renta disponible por persona de 2025 en el conjunto del país (43.377 yuanes), el 15 % para la población rural (24.456 yuanes) y el 6 % para la urbana (56.502 yuanes).[13] Para una familia rural es dinero de verdad."
+          ],
+          [
+            "o",
+            "No hemos encontrado ningún anuncio que suba la base de 3.600 yuanes en 2026, ni una evaluación nacional de sus efectos. Cuánto se ha pagado está bien documentado. Si ha cambiado los presupuestos familiares o las decisiones sobre tener hijos, todavía no se sabe."
+          ],
+          [
+            "h",
+            "Por qué ahora: los nacimientos"
+          ],
+          [
+            "p",
+            "El contexto es una rápida caída de los nacimientos. Según la Oficina Nacional de Estadística, en 2024 nacieron en China 9,54 millones de bebés, una natalidad del 6,77 por mil.[14] En 2025 los nacimientos bajaron a 7,92 millones, una tasa del 5,63 por mil, mientras morían 11,31 millones de personas; la población al cierre del año era de 1.404,89 millones, 3,39 millones menos que un año antes.[13] Los nacimientos cayeron cerca de un 17 % en un año."
+          ],
+          [
+            "p",
+            "Hay que tener en cuenta que la mayoría de los bebés nacidos en 2025 se concibieron en 2024, y que el plan nacional no se publicó hasta julio de 2025. Las cifras de 2025 no sirven para juzgar el subsidio. Las de 2026 y siguientes podrán empezar a decir algo. Junto con el subsidio, una política de educación gratuita en el último año de preescolar llegó a 14 millones de niños en 2025.[12]"
+          ],
+          [
+            "h",
+            "Las ciudades fueron primero: Hohhot, Tianmen, Panzhihua"
+          ],
+          [
+            "p",
+            "Antes del plan nacional, algunas ciudades probaron pagos más generosos. Panzhihua, en Sichuan, anunció en julio de 2021 que pagaría 500 yuanes al mes por cada segundo o tercer hijo hasta los 3 años.[17] Desde el 1 de marzo de 2025, Hohhot, en Mongolia Interior, pagó 10.000 yuanes de una vez por el primer hijo; 50.000 yuanes por el segundo, a razón de 10.000 al año hasta los 5 años; y 100.000 yuanes por el tercero o siguientes, a 10.000 al año hasta los 10 años. En Hohhot nacieron unos 20.000 bebés en 2023.[15] Tianmen, en Hubei, paga 2.300 yuanes de una vez y luego 800 yuanes al mes hasta los 3 años por el segundo hijo, y 3.300 yuanes de una vez y luego 1.000 yuanes al mes por el tercero.[16]"
+          ],
+          [
+            "p",
+            "¿Aumentaron los nacimientos con estos pagos? Las pruebas son escasas. China News Service informó de que los nacimientos en Tianmen subieron un 17 % en 2024, la primera subida en ocho años, pero no dio una fuente estadística ni pudo separar el subsidio de otros factores.[16] Un responsable de Hohhot dijo que los nacimientos ya habían repuntado ligeramente en 2024, antes del nuevo subsidio.[15] Conviene seguir las cifras locales, pero no son pruebas de causalidad."
+          ],
+          [
+            "h",
+            "¿Puede el dinero aumentar los nacimientos?"
+          ],
+          [
+            "p",
+            "La investigación internacional apunta a cierto efecto, normalmente modesto y nada barato. El estudio más citado es de Quebec. El economista Kevin Milligan estudió la política de la provincia de pagar a las familias hasta 8.000 dólares canadienses por un nuevo hijo. Comparando grupos por época, lugar y tipo de familia, tanto al introducirse como al suprimirse la política, encontró “un fuerte efecto de la política sobre la fecundidad”.[18] Pero era un pago ligado a un nacimiento, no 300 yuanes fijos al mes."
+          ],
+          [
+            "p",
+            "Corea del Sur es un recordatorio en sentido contrario. Según su Junta de Auditoría e Inspección, el país gastó 380,2 billones de wones contra la baja natalidad entre 2006 y 2020.[19] Aun así, su tasa de fecundidad cayó a un mínimo mundial de 0,72 en 2023, antes de recuperarse a 0,75 en 2024 y 0,80 en 2025. Las autoridades atribuyeron la recuperación sobre todo al aumento de los matrimonios (un 8,1 % más en 2025) y al mayor número de personas en la treintena, no a un pago concreto.[20]"
+          ],
+          [
+            "o",
+            "Nuestra lectura de la investigación: el dinero puede adelantar algunos nacimientos o inclinar a algunas familias hacia otro hijo, pero el dinero solo rara vez invierte una larga caída de la fecundidad; la vivienda, la escuela, el empleo y el tiempo para cuidar importan igual. En cambio, el efecto del dinero para familias con hijos sobre la pobreza infantil es claro. En {nuestro ensayo sobre los créditos fiscales reembolsables|/essays/refundable-tax-credit-vs-basic-income/} vimos que la pobreza infantil en EE. UU. cayó con fuerza cuando se amplió el Child Tax Credit en 2021 y volvió a subir cuando terminó la ampliación. Así que el subsidio no debería juzgarse solo por si aumenta el número de nacimientos."
+          ],
+          [
+            "h",
+            "¿Es una renta básica? Los cinco criterios de la BIEN"
+          ],
+          [
+            "p",
+            "La Red Mundial de la Renta Básica (BIEN) define la renta básica como “un pago periódico en efectivo entregado de forma incondicional a todas las personas, de manera individual, sin comprobación de recursos ni exigencia de trabajo”.[21] Usamos esta vara de medir en {nuestro ensayo sobre los 100.000 yenes de Japón|/essays/japan-special-cash-payment/}. Aplicada al subsidio por crianza:"
+          ],
+          [
+            "t",
+            "Criterio | Subsidio por crianza | Renta básica\nPeriódico | Sí, una vez al año | Sí\nEn efectivo | Sí, en una cuenta bancaria o de tarjeta | Sí\nIndividual | Por cada hijo, lo cobra el padre, la madre o el tutor | Cada persona recibe el suyo\nUniversal | No, solo menores de 3 años | Todo el mundo\nIncondicional | Sin prueba de ingresos ni de trabajo, pero hay que pedirlo cada año | Incondicional"
+          ],
+          [
+            "p",
+            "Así que el subsidio cumple “periódico” y “en efectivo”, cumple en buena parte “incondicional”, cumple a medias “individual” y no cumple “universal”. Una descripción más exacta es un pago en efectivo para niños pequeños sin prueba de ingresos: una primera versión de lo que muchos países llaman prestación o asignación por hijo. La mayor diferencia con una renta básica es que solo cubre los tres primeros años de vida."
+          ],
+          [
+            "h",
+            "Los 10.000 dólares de Hong Kong en 2020"
+          ],
+          [
+            "p",
+            "En el mundo de habla china, los pagos para todos son raros; un ejemplo es el Plan de Pago en Efectivo de Hong Kong de 2020. El presupuesto del 26 de febrero de 2020 anunció 10.000 dólares de Hong Kong para cada residente permanente de 18 años o más, con una previsión de unos 7 millones de personas y un coste de unos 71.000 millones de dólares de Hong Kong.[22] Los bancos empezaron a aceptar inscripciones en línea el 21 de junio de 2020; el dinero iba a cuentas bancarias, o podía recogerse en cheque a través de Hongkong Post.[23]"
+          ],
+          [
+            "p",
+            "En enero de 2021 el gobierno informó al Consejo Legislativo de que, a 21 de enero, se habían pagado unos 64.000 millones de dólares de Hong Kong a unos 6,4 millones de personas, más del 90 % de las que tenían derecho, y de que la gestión había costado unos 306 millones. Sobre el efecto, solo dijo que “creía” que el dinero debía tener cierto efecto de estímulo sobre el consumo; no dio ninguna medición.[24] A 23 de noviembre de 2021 habían cobrado más de 6,5 millones de personas inscritas.[25]"
+          ],
+          [
+            "o",
+            "El plan de Hong Kong fue universal, llegó a casi todos los residentes permanentes adultos, pero se pagó una sola vez. El subsidio chino es periódico, pero solo para menores de 3 años. Una renta básica necesita las dos cosas: para todos, y una y otra vez. Los 100.000 yenes de Japón en 2020 también fueron un pago único y, como {vimos|/essays/japan-special-cash-payment/}, gran parte se ahorró."
+          ],
+          [
+            "h",
+            "¿Cuánto costaría un suelo para todos?"
+          ],
+          [
+            "p",
+            "¿Y si 300 yuanes al mes fueran para todo el mundo? Con {la calculadora de renta básica|/calc/?c=cn&w=all&m=300}, 300 yuanes al mes para cada persona en China suman unos 5,1 billones de yuanes al año en bruto, alrededor del 3,6 % del PIB. Solo para todos los menores de 18 años, son unos 970.000 millones de yuanes al año, cerca del 0,7 % del PIB, unas nueve veces el subsidio actual. Son cantidades brutas, no costes netos, y no descuentan otros gastos que podrían sustituirse."
+          ],
+          [
+            "p",
+            "Como comparación, desde 1982 el estado de Alaska, en EE. UU., paga cada año un dividendo de un fondo estatal a los residentes con derecho, de cualquier edad. Es el programa más longevo cercano a una renta básica; puedes verlo en nuestra {cronología|/timeline/#tl-alaska}."
+          ],
+          [
+            "h",
+            "Ni “ha llegado la renta básica” ni “una gota en el océano”"
+          ],
+          [
+            "o",
+            "El subsidio por crianza no es una renta básica. Solo cubre los tres primeros años de vida, equivale a cerca del 15 % de la renta disponible por persona en el campo y hay que pedirlo cada año. Llamarlo “la renta básica de China” es exagerar."
+          ],
+          [
+            "o",
+            "Tampoco puede despacharse como una gota en el océano. Por primera vez, China paga dinero en todo el país a cada familia con un niño pequeño, sin prueba de ingresos: más de 30 millones de niños en un año, libre de impuestos y sin que nadie pierda su subsidio mínimo de subsistencia. Esas son las partes prácticas más difíciles de cualquier renta básica: encontrar a todo el mundo, hacer llegar el dinero a las cuentas y asegurarse de que los más pobres no pierdan otras ayudas por cobrarlo. China ya ha construido ese sistema para los menores de 3 años."
+          ],
+          [
+            "o",
+            "Hay tres cosas que vigilar: si la cuantía sube con los ingresos y los precios, si se amplía el límite de edad y si los nacimientos y la pobreza infantil cambian a partir de 2026. Si un día el pago cubre más edades, se acercará cada vez más a una renta básica infantil."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Am 28. Juli 2025 veröffentlichten die Hauptbüros des Zentralkomitees der Kommunistischen Partei Chinas und des Staatsrats einen Umsetzungsplan für einen landesweiten Kinderzuschuss. Ab dem 1. Januar 2025 hat jedes Kind unter 3 Jahren Anspruch; der nationale Grundbetrag liegt bei 3.600 Yuan pro Kind und Jahr, also 300 Yuan im Monat.[1] Zhu Kun von der Chinesischen Akademie für Finanzwissenschaften sagte der Volkszeitung, es sei „der erste allgemeine Barzuschuss, den unser Land an Einwohner zahlt“.[4]"
+          ],
+          [
+            "p",
+            "Keine Einkommensprüfung, kein Unterschied zwischen erstem und drittem Kind, Geld direkt an die Familien: Das klingt sehr nach dem, was viele unter einem Grundeinkommen verstehen. Ist es eines? Dieser Essay legt zuerst die Regeln dar: wer Anspruch hat, wie man ihn geltend macht, wer zahlt und wie viel tatsächlich ausgezahlt wurde. Dann geht es um die Geburtenzahlen hinter der Politik und um die Forschung dazu, ob Geld die Geburten erhöht. Zum Schluss wird der Zuschuss an der Definition des Grundeinkommens gemessen und mit Hongkongs Auszahlung von 10.000 HK-Dollar im Jahr 2020 verglichen."
+          ],
+          [
+            "h",
+            "Wer ihn bekommt, und wie viel"
+          ],
+          [
+            "p",
+            "Der Zuschuss gilt für Kinder unter 3 Jahren, die „im Einklang mit Gesetzen und Vorschriften geboren“ wurden, bis sie 3 werden.[1] Erste, zweite und dritte Kinder haben gleichermaßen Anspruch, eine Einkommensgrenze gibt es nicht.[2] Kinder, die vor 2025 geboren wurden und 2025 noch unter 3 waren, erhalten einen anteiligen Betrag für die verbleibenden Monate. Das Beispiel von Xinhua: Ein im Dezember 2023 geborenes Kind kann 24 Monate erhalten, insgesamt 7.200 Yuan.[2] Ein Kind, das 2025 oder später geboren wird, kann von der Geburt bis zum dritten Geburtstag bis zu rund 10.800 Yuan erhalten."
+          ],
+          [
+            "p",
+            "Den Antrag stellt ein Elternteil oder ein anderer Vormund am Ort, an dem die Haushaltsregistrierung (Hukou) des Kindes geführt wird.[1] Die meisten Anträge laufen über ein landesweites Online-System, das über Alipay, WeChat und die Serviceportale der Provinzen erreichbar ist; man kann auch persönlich beim Gemeinde- oder Stadtteilamt beantragen. Die Nationale Gesundheitskommission erklärte die Antragstellung am 8. September 2025 landesweit für „vollständig geöffnet“.[7]"
+          ],
+          [
+            "p",
+            "Automatisch kommt das Geld nicht. Nach den Regeln der Nationalen Gesundheitskommission und des Finanzministeriums muss der erste Antrag im Geburtsjahr oder im Jahr danach gestellt werden, danach folgt in jedem der beiden nächsten Jahre ein Folgeantrag; wer nicht rechtzeitig beantragt, „gilt als auf den Anspruch für dieses Jahr verzichtend“.[5] Der Zuschuss wird „jährlich berechnet und einmal im Jahr in einer Summe ausgezahlt“, auf ein Bank- oder Sozialversicherungskartenkonto des Antragstellers oder des Kindes; die Provinzen zahlen mindestens einmal pro Quartal eine Tranche aus.[5][1] Die Anträge für 2026 öffneten am 5. Januar 2026, mit einer neuen Funktion für Folgeanträge.[8] Für Kinder der Jahrgänge 2022 bis 2024 wurde die Frist für den ersten Antrag vom Jahresende 2025 auf den 31. Dezember 2026 verlängert.[11]"
+          ],
+          [
+            "p",
+            "Zwei leicht übersehene Regeln sind wichtig. Der Zuschuss ist von der Einkommensteuer befreit.[6] Und bei der Prüfung des Anspruchs auf das Existenzminimum (Dibao) oder auf Hilfe bei extremer Armut wird der Zuschuss nicht als Haushalts- oder persönliches Einkommen gezählt.[1] Die ärmsten Familien verlieren ihr Dibao also nicht, weil sie ihn erhalten."
+          ],
+          [
+            "t",
+            "Punkt | Regel\nWer | Kinder unter 3; erste, zweite und dritte Kinder gleichermaßen[1][2]\nBetrag | Nationaler Grundbetrag 3.600 Yuan pro Kind und Jahr; Kommunen dürfen mehr zahlen[1]\nEinkommensprüfung | Keine[2]\nWo beantragen | Am Ort der Haushaltsregistrierung des Kindes, online oder persönlich[1][7]\nAuszahlung | Einmal im Jahr in einer Summe, auf ein Bank- oder Sozialversicherungskartenkonto[5]\nSteuer | Einkommensteuerfrei[6]\nExistenzminimum (Dibao) | Zählt nicht als Haushalts- oder persönliches Einkommen[1]\nAntrag nötig? | Ja, jedes Jahr; ein versäumtes Jahr verfällt[5]"
+          ],
+          [
+            "h",
+            "Wer zahlt, und wie viel ausgezahlt wurde"
+          ],
+          [
+            "p",
+            "Die Zentralregierung übernimmt einen Teil der Kosten des Grundbetrags für den Osten, die Mitte und den Westen in unterschiedlichen Anteilen; auf einer Pressekonferenz des Staatsrats hieß es, „die Zentrale trägt insgesamt etwa 90 %“, bei einem anfänglichen Budget für 2025 von rund 90 Milliarden Yuan.[1][3] Zahlt eine Kommune mehr als den Grundbetrag, finanziert sie den Aufschlag selbst.[1]"
+          ],
+          [
+            "p",
+            "So sah es in der Praxis aus. Bis zum 31. Dezember 2025 hatten alle 31 Provinzen mit der Auszahlung begonnen, mehr als 24 Millionen Kinder hatten Geld erhalten, und die Auszahlungsquote für 2025 lag bei etwa 80 %.[10] Das Finanzministerium erklärte Ende Januar 2026, alle staatlichen Ebenen hätten für 2025 rund 100 Milliarden Yuan bereitgestellt, und mehr als 30 Millionen Kinder seien ausgezahlt worden.[9] Der Tätigkeitsbericht der Regierung 2026 zählt die „vollständige Umsetzung des Kinderzuschusses zugunsten von mehr als 30 Millionen Kleinkindern“ zu den Erfolgen des Vorjahres.[12] Für 2026 hat die Zentralregierung 99,9 Milliarden Yuan zugewiesen, 10,6 % mehr, und die Gesamtausgaben aller Ebenen sollen bei rund 110 Milliarden liegen.[10] Bis zum 21. Juli 2026 waren für 2026 27,51 Millionen Anträge eingegangen, 27,13 Millionen genehmigt und 25,16 Millionen Kinder ausgezahlt.[11]"
+          ],
+          [
+            "p",
+            "Gemessen an der Wirtschaft ist das wenig. Chinas BIP lag 2025 bei 140,19 Billionen Yuan.[13] Rund 100 Milliarden Yuan sind etwa 0,07 % des BIP; rund 110 Milliarden im Jahr 2026 etwa 0,08 %. Gemessen an den Haushaltseinkommen ist es nicht wenig: 3.600 Yuan im Jahr sind etwa 8 % des landesweiten verfügbaren Pro-Kopf-Einkommens 2025 (43.377 Yuan), 15 % bei der Landbevölkerung (24.456 Yuan) und 6 % bei der Stadtbevölkerung (56.502 Yuan).[13] Für eine Familie auf dem Land ist das echtes Geld."
+          ],
+          [
+            "o",
+            "Wir haben keine Ankündigung gefunden, den Grundbetrag von 3.600 Yuan im Jahr 2026 zu erhöhen, und keine landesweite Auswertung der Wirkung. Wie viel ausgezahlt wurde, ist gut dokumentiert. Ob es Familienbudgets oder Entscheidungen für Kinder verändert hat, weiß man noch nicht."
+          ],
+          [
+            "h",
+            "Warum jetzt: die Geburten"
+          ],
+          [
+            "p",
+            "Hintergrund ist ein schneller Rückgang der Geburten. Nach dem Nationalen Statistikamt wurden 2024 in China 9,54 Millionen Kinder geboren, eine Geburtenrate von 6,77 pro Tausend.[14] 2025 sanken die Geburten auf 7,92 Millionen, eine Rate von 5,63 pro Tausend, während 11,31 Millionen Menschen starben; die Bevölkerung lag zum Jahresende bei 1,40489 Milliarden, 3,39 Millionen weniger als ein Jahr zuvor.[13] Die Geburten fielen in einem Jahr um rund 17 %."
+          ],
+          [
+            "p",
+            "Zu beachten ist: Die meisten 2025 geborenen Kinder wurden 2024 gezeugt, und der nationale Plan wurde erst im Juli 2025 veröffentlicht. Die Zahlen für 2025 taugen nicht, um den Zuschuss zu beurteilen. Die Zahlen ab 2026 könnten anfangen, etwas zu zeigen. Neben dem Zuschuss erreichte eine Politik des kostenlosen letzten Vorschuljahres 2025 rund 14 Millionen Kinder.[12]"
+          ],
+          [
+            "h",
+            "Die Städte gingen voran: Hohhot, Tianmen, Panzhihua"
+          ],
+          [
+            "p",
+            "Vor dem nationalen Plan haben einige Städte großzügigere Zahlungen ausprobiert. Panzhihua in Sichuan kündigte im Juli 2021 an, für jedes zweite oder dritte Kind bis zum Alter von 3 Jahren 500 Yuan im Monat zu zahlen.[17] Hohhot in der Inneren Mongolei zahlte ab dem 1. März 2025 für ein erstes Kind einmalig 10.000 Yuan; für ein zweites Kind insgesamt 50.000 Yuan, mit 10.000 pro Jahr bis zum Alter von 5; und für ein drittes oder weiteres Kind insgesamt 100.000 Yuan, mit 10.000 pro Jahr bis zum Alter von 10. In Hohhot wurden 2023 rund 20.000 Kinder geboren.[15] Tianmen in Hubei zahlt für ein zweites Kind einmalig 2.300 Yuan und dann bis zum Alter von 3 Jahren 800 Yuan im Monat, für ein drittes einmalig 3.300 Yuan und dann 1.000 Yuan im Monat.[16]"
+          ],
+          [
+            "p",
+            "Haben diese Zahlungen die Geburten erhöht? Die Belege sind dünn. Der China News Service berichtete, die Geburten in Tianmen seien 2024 um 17 % gestiegen, zum ersten Mal seit acht Jahren, nannte aber keine statistische Quelle und konnte den Zuschuss nicht von anderen Faktoren trennen.[16] Ein Vertreter Hohhots sagte, die Geburten hätten schon 2024 leicht angezogen, also vor dem neuen Zuschuss.[15] Die lokalen Zahlen sind beobachtenswert, aber kein Beleg für Ursache und Wirkung."
+          ],
+          [
+            "h",
+            "Kann Geld die Geburten erhöhen?"
+          ],
+          [
+            "p",
+            "Die internationale Forschung deutet auf eine gewisse Wirkung hin, meist bescheiden und nicht billig. Die meistzitierte Studie stammt aus Québec. Der Ökonom Kevin Milligan untersuchte die Politik der Provinz, Familien für ein neues Kind bis zu 8.000 kanadische Dollar zu zahlen. Mit einem Vergleich von Gruppen nach Zeit, Ort und Familientyp, bei Einführung wie Abschaffung der Politik, fand er „eine starke Wirkung der Politik auf die Fertilität“.[18] Das war jedoch eine an eine Geburt gebundene Zahlung, nicht gleichbleibende 300 Yuan im Monat."
+          ],
+          [
+            "p",
+            "Südkorea ist eine Mahnung in die andere Richtung. Nach seinem Rechnungshof gab das Land von 2006 bis 2020 380,2 Billionen Won gegen die niedrige Geburtenrate aus.[19] Trotzdem fiel seine Fertilitätsrate 2023 auf den weltweiten Tiefstwert von 0,72, bevor sie sich 2024 auf 0,75 und 2025 auf 0,80 erholte. Die Behörden führten die Erholung vor allem auf mehr Eheschließungen (2025 plus 8,1 %) und eine größere Zahl von Menschen in den Dreißigern zurück, nicht auf eine bestimmte Zahlung.[20]"
+          ],
+          [
+            "o",
+            "Unsere Lesart der Forschung: Geld kann manche Geburten vorziehen oder manche Familien zu einem weiteren Kind bewegen, aber Geld allein kehrt einen langen Fertilitätsrückgang selten um; Wohnen, Schule, Arbeit und Zeit für Betreuung zählen genauso. Dagegen ist die Wirkung von Geld für Familien mit Kindern auf die Kinderarmut eindeutig. In {unserem Essay über erstattungsfähige Steuergutschriften|/essays/refundable-tax-credit-vs-basic-income/} haben wir gesehen, dass die Kinderarmut in den USA stark sank, als der Child Tax Credit 2021 ausgeweitet wurde, und wieder stieg, als die Ausweitung endete. Der Zuschuss sollte also nicht nur danach beurteilt werden, ob er die Geburtenzahl erhöht."
+          ],
+          [
+            "h",
+            "Ist er ein Grundeinkommen? Die fünf Kriterien des BIEN"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert das Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis geleistet wird, ohne Bedürftigkeitsprüfung oder Arbeitsverpflichtung“.[21] Diesen Maßstab haben wir auch in {unserem Essay über Japans 100.000 Yen|/essays/japan-special-cash-payment/} verwendet. Auf den Kinderzuschuss angewandt:"
+          ],
+          [
+            "t",
+            "Kriterium | Kinderzuschuss | Grundeinkommen\nRegelmäßig | Ja, einmal im Jahr | Ja\nGeld | Ja, auf ein Bank- oder Kartenkonto | Ja\nIndividuell | Je Kind berechnet, von Eltern oder Vormund bezogen | Jede Person erhält ihr eigenes\nAllgemein | Nein, nur Kinder unter 3 | Alle\nBedingungslos | Keine Einkommens- oder Arbeitsprüfung, aber jährlicher Antrag | Bedingungslos"
+          ],
+          [
+            "p",
+            "Der Zuschuss erfüllt also „regelmäßig“ und „Geld“, weitgehend „bedingungslos“, teilweise „individuell“ und nicht „allgemein“. Genauer beschrieben ist er eine Geldzahlung für kleine Kinder ohne Einkommensprüfung: eine frühe Form dessen, was viele Länder Kindergeld nennen. Der größte Unterschied zum Grundeinkommen ist, dass er nur die ersten drei Lebensjahre abdeckt."
+          ],
+          [
+            "h",
+            "Hongkongs 10.000 HK-Dollar im Jahr 2020"
+          ],
+          [
+            "p",
+            "In der chinesischsprachigen Welt sind Zahlungen an alle selten; ein Beispiel ist Hongkongs Cash Payout Scheme von 2020. Der Haushalt vom 26. Februar 2020 kündigte 10.000 HK-Dollar für jeden ständigen Einwohner Hongkongs ab 18 Jahren an, für voraussichtlich rund 7 Millionen Menschen und Kosten von etwa 71 Milliarden HK-Dollar.[22] Die Banken nahmen ab dem 21. Juni 2020 Online-Registrierungen an; das Geld ging auf Bankkonten oder konnte als Scheck über Hongkong Post abgeholt werden.[23]"
+          ],
+          [
+            "p",
+            "Im Januar 2021 teilte die Regierung dem Legislativrat mit, bis zum 21. Januar seien rund 64 Milliarden HK-Dollar an etwa 6,4 Millionen Menschen gezahlt worden, mehr als 90 % der Berechtigten, und die Verwaltung habe rund 306 Millionen HK-Dollar gekostet. Zur Wirkung sagte sie nur, sie „glaube“, das Geld solle eine gewisse anregende Wirkung auf den Konsum haben; gemessen hat sie nichts.[24] Bis zum 23. November 2021 waren mehr als 6,5 Millionen registrierte Berechtigte ausgezahlt.[25]"
+          ],
+          [
+            "o",
+            "Hongkongs Programm war allgemein und erreichte fast alle erwachsenen ständigen Einwohner, wurde aber nur einmal gezahlt. Chinas Zuschuss ist regelmäßig, aber nur für Kinder unter 3. Ein Grundeinkommen braucht beides: für alle, und immer wieder. Japans 100.000 Yen von 2020 waren ebenfalls einmalig, und wie {wir gesehen haben|/essays/japan-special-cash-payment/}, wurde viel davon gespart."
+          ],
+          [
+            "h",
+            "Was würde ein Boden für alle kosten?"
+          ],
+          [
+            "p",
+            "Was, wenn 300 Yuan im Monat an alle gingen? Mit {dem Grundeinkommensrechner|/calc/?c=cn&w=all&m=300} ergeben 300 Yuan im Monat für jeden Menschen in China brutto rund 5,1 Billionen Yuan im Jahr, etwa 3,6 % des BIP. Nur für alle Kinder unter 18 sind es rund 970 Milliarden Yuan im Jahr, etwa 0,7 % des BIP, ungefähr das Neunfache des heutigen Zuschusses. Das sind Bruttobeträge, keine Nettokosten, und andere Ausgaben, die ersetzt werden könnten, sind nicht abgezogen."
+          ],
+          [
+            "p",
+            "Zum Vergleich: Seit 1982 zahlt der US-Bundesstaat Alaska aus einem Staatsfonds jedes Jahr eine Dividende an berechtigte Einwohner jeden Alters. Es ist das am längsten laufende Programm in der Nähe eines Grundeinkommens; siehe unsere {Zeitleiste|/timeline/#tl-alaska}."
+          ],
+          [
+            "h",
+            "Weder „Das Grundeinkommen ist da“ noch „ein Tropfen auf den heißen Stein“"
+          ],
+          [
+            "o",
+            "Der Kinderzuschuss ist kein Grundeinkommen. Er deckt nur die ersten drei Lebensjahre ab, entspricht etwa 15 % des verfügbaren Pro-Kopf-Einkommens auf dem Land und muss jedes Jahr beantragt werden. Ihn „Chinas Grundeinkommen“ zu nennen, ist übertrieben."
+          ],
+          [
+            "o",
+            "Als Tropfen auf den heißen Stein lässt er sich aber auch nicht abtun. Zum ersten Mal zahlt China landesweit jeder Familie mit einem kleinen Kind Geld, ohne Einkommensprüfung: mehr als 30 Millionen Kindern in einem Jahr, steuerfrei und ohne dass jemand sein Existenzminimum verliert. Das sind die schwierigsten praktischen Teile jedes Grundeinkommens: alle zu finden, das Geld auf Konten zu bringen und sicherzustellen, dass die Ärmsten durch den Bezug keine andere Hilfe verlieren. China hat ein solches System für Kinder unter 3 nun aufgebaut."
+          ],
+          [
+            "o",
+            "Drei Dinge sind zu beobachten: ob der Betrag mit Einkommen und Preisen steigt, ob die Altersgrenze angehoben wird und ob sich Geburten und Kinderarmut ab 2026 verändern. Sollte die Zahlung eines Tages mehr Altersgruppen abdecken, rückt sie immer näher an ein Kinder-Grundeinkommen heran."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في 28 يوليو 2025، أصدر المكتبان العامان للجنة المركزية للحزب الشيوعي الصيني ومجلس الدولة خطة تنفيذ لإعانة وطنية لرعاية الأطفال. فمنذ 1 يناير 2025 يستحقها كل طفل دون الثالثة، والمعدل الأساسي الوطني 3,600 يوان لكل طفل سنويًا، أي 300 يوان شهريًا.[1] وقال تشو كون من الأكاديمية الصينية للعلوم المالية لصحيفة الشعب اليومية إنها «أول إعانة نقدية شاملة تدفعها بلادنا للسكان».[4]"
+          ],
+          [
+            "p",
+            "لا اختبار للدخل، ولا تمييز بين الطفل الأول والثالث، ومال يصل مباشرة إلى الأسر: يبدو ذلك قريبًا جدًا مما يقصده الناس بالدخل الأساسي. فهل هو كذلك؟ يعرض هذا المقال أولًا القواعد: من يستحقها، وكيف تُطلب، ومن يدفع، وكم دُفع فعلًا. ثم ينظر في أرقام المواليد التي تقف خلف السياسة، وفي الأبحاث حول ما إذا كان المال يرفع عدد المواليد. وأخيرًا يقيس الإعانة بتعريف الدخل الأساسي، ويقارنها بمبلغ ⁦HK$10,000⁩ الذي وزعته هونغ كونغ عام 2020."
+          ],
+          [
+            "h",
+            "من يحصل عليها، وكم"
+          ],
+          [
+            "p",
+            "تشمل الإعانة الأطفال دون الثالثة «المولودين وفقًا للقوانين واللوائح»، حتى يبلغوا الثالثة.[1] ويستحقها الطفل الأول والثاني والثالث على السواء، ولا يوجد حد للدخل.[2] أما الأطفال المولودون قبل 2025 الذين كانوا دون الثالثة في 2025، فيحصلون على مبلغ بنسبة الأشهر المتبقية. ومثال وكالة شينخوا: الطفل المولود في ديسمبر 2023 يمكنه الحصول على 24 شهرًا، أي 7,200 يوان إجمالًا.[2] والطفل المولود في 2025 أو بعدها يمكنه الحصول على ما يصل إلى نحو 10,800 يوان من الولادة حتى الثالثة."
+          ],
+          [
+            "p",
+            "يقدّم الطلبَ أحدُ الوالدين أو وصيٌّ آخر في المكان المسجل فيه قيد الأسرة (هوكو) للطفل.[1] وتمر معظم الطلبات عبر نظام وطني على الإنترنت يمكن الوصول إليه من ⁦Alipay⁩ و⁦WeChat⁩ ومنصات الخدمات الحكومية في المقاطعات، كما يمكن التقديم شخصيًا في مكتب البلدة أو الحي. وأعلنت لجنة الصحة الوطنية في 8 سبتمبر 2025 أن باب الطلبات «فُتح بالكامل» في أنحاء البلاد.[7]"
+          ],
+          [
+            "p",
+            "لا تصل الإعانة تلقائيًا. فبحسب قواعد لجنة الصحة الوطنية ووزارة المالية، يجب تقديم الطلب الأول في سنة الولادة أو السنة التالية، ثم تجديده في كل من السنتين التاليتين؛ ومن لا يقدّم في الموعد «يُعدّ متنازلًا عن استحقاق تلك السنة».[5] وتُحسب الإعانة «سنويًا وتُدفع مرة واحدة في السنة دفعةً واحدة» إلى حساب مصرفي أو حساب بطاقة الضمان الاجتماعي لمقدم الطلب أو للطفل، وتدفع المقاطعات دفعة واحدة على الأقل كل ربع سنة.[5][1] وفُتحت طلبات 2026 في 5 يناير 2026 مع خاصية جديدة للتجديد.[8] وبالنسبة للأطفال المولودين بين 2022 و2024، مُدّد موعد الطلب الأول من نهاية 2025 إلى 31 ديسمبر 2026.[11]"
+          ],
+          [
+            "p",
+            "هناك قاعدتان يسهل إغفالهما لكنهما مهمتان. الإعانة معفاة من ضريبة الدخل الشخصي.[6] وعند تقييم أهلية الحد الأدنى لمعيشة الأسر (ديباو) أو دعم الفقر المدقع، لا تُحتسب الإعانة دخلًا للأسرة أو للفرد.[1] أي إن أفقر الأسر لا تفقد الديباو بسبب حصولها عليها."
+          ],
+          [
+            "t",
+            "البند | القاعدة\nمن | الأطفال دون الثالثة؛ الأول والثاني والثالث على السواء[1][2]\nالمبلغ | المعدل الأساسي الوطني 3,600 يوان لكل طفل سنويًا؛ ويجوز للحكومات المحلية أن تدفع أكثر[1]\nاختبار الدخل | لا يوجد[2]\nأين يُقدَّم الطلب | في مكان قيد الأسرة للطفل، عبر الإنترنت أو شخصيًا[1][7]\nطريقة الدفع | مرة واحدة في السنة دفعةً واحدة، إلى حساب مصرفي أو حساب بطاقة الضمان الاجتماعي[5]\nالضريبة | معفاة من ضريبة الدخل الشخصي[6]\nالحد الأدنى للمعيشة | لا تُحتسب دخلًا للأسرة أو للفرد[1]\nهل يلزم طلب؟ | نعم، كل سنة؛ والسنة التي يفوت طلبها تضيع[5]"
+          ],
+          [
+            "h",
+            "من يدفع، وكم دُفع"
+          ],
+          [
+            "p",
+            "تتحمل الحكومة المركزية جزءًا من تكلفة المعدل الأساسي في مناطق الشرق والوسط والغرب بنسب مختلفة؛ وقال المسؤولون في مؤتمر صحفي لمجلس الدولة إن «المركز يتحمل نحو 90% إجمالًا»، بميزانية أولية لعام 2025 تبلغ نحو 90 مليار يوان.[1][3] وإذا دفعت حكومة محلية أكثر من المعدل الأساسي، فإنها تموّل الزيادة بنفسها.[1]"
+          ],
+          [
+            "p",
+            "وهذا ما حدث على أرض الواقع. بحلول 31 ديسمبر 2025 كانت المقاطعات الـ31 كلها قد بدأت الدفع، وحصل أكثر من 24 مليون طفل على الإعانة، وبلغ معدل الدفع لعام 2025 نحو 80%.[10] وقالت وزارة المالية في نهاية يناير 2026 إن الحكومات على جميع المستويات خصصت نحو 100 مليار يوان لعام 2025، وإن أكثر من 30 مليون طفل حصلوا على الإعانة.[9] ويعدّ تقرير عمل الحكومة لعام 2026 «التطبيق الكامل لإعانة رعاية الأطفال لصالح أكثر من 30 مليون رضيع» من إنجازات العام السابق.[12] ولعام 2026 خصصت الحكومة المركزية 99.9 مليار يوان، بزيادة 10.6%، ويُتوقع أن يبلغ الإنفاق الإجمالي على جميع المستويات نحو 110 مليارات.[10] وحتى 21 يوليو 2026 قُدّم 27.51 مليون طلب لعام 2026، ووُوفق على 27.13 مليون، وحصل 25.16 مليون طفل على الدفع.[11]"
+          ],
+          [
+            "p",
+            "مقارنة بالاقتصاد، المبلغ صغير. فقد بلغ الناتج المحلي الإجمالي للصين 140.19 تريليون يوان في 2025.[13] ونحو 100 مليار يوان تعادل نحو 0.07% منه، ونحو 110 مليارات في 2026 تعادل نحو 0.08%. أما مقارنة بدخل الأسر فليس صغيرًا: 3,600 يوان سنويًا تعادل نحو 8% من متوسط الدخل المتاح للفرد على المستوى الوطني في 2025 (43,377 يوانًا)، و15% لسكان الريف (24,456 يوانًا)، و6% لسكان المدن (56,502 يوان).[13] بالنسبة لأسرة ريفية، هذا مال حقيقي."
+          ],
+          [
+            "o",
+            "لم نجد أي إعلان برفع المعدل الأساسي البالغ 3,600 يوان في 2026، ولا تقييمًا وطنيًا لآثار الإعانة. حجم ما دُفع موثق جيدًا. أما هل غيّر ميزانيات الأسر أو قراراتها بشأن الإنجاب، فلا يُعرف بعد."
+          ],
+          [
+            "h",
+            "لماذا الآن: المواليد"
+          ],
+          [
+            "p",
+            "الخلفية هي تراجع سريع في المواليد. فبحسب المكتب الوطني للإحصاء، وُلد في الصين 9.54 مليون طفل في 2024، بمعدل مواليد 6.77 في الألف.[14] وفي 2025 تراجعت المواليد إلى 7.92 مليون، بمعدل 5.63 في الألف، بينما توفي 11.31 مليون شخص؛ وبلغ عدد السكان في نهاية العام 1.40489 مليار، أي أقل بـ3.39 مليون من العام السابق.[13] تراجعت المواليد بنحو 17% في عام واحد."
+          ],
+          [
+            "p",
+            "لاحظ أن معظم المولودين في 2025 حُمل بهم في 2024، ولم تُنشر الخطة الوطنية إلا في يوليو 2025. لذلك لا يمكن الحكم على الإعانة بأرقام 2025. وقد تبدأ أرقام 2026 وما بعدها في قول شيء. وإلى جانب الإعانة، شملت سياسة التعليم المجاني في السنة الأخيرة من مرحلة ما قبل المدرسة 14 مليون طفل في 2025.[12]"
+          ],
+          [
+            "h",
+            "المدن سبقت: هوهوت وتيانمن وبانتشيهوا"
+          ],
+          [
+            "p",
+            "قبل الخطة الوطنية، جربت بعض المدن مدفوعات أسخى. فقد أعلنت بانتشيهوا في سيتشوان في يوليو 2021 أنها ستدفع 500 يوان شهريًا عن كل طفل ثانٍ أو ثالث حتى الثالثة.[17] ومنذ 1 مارس 2025 دفعت هوهوت في منغوليا الداخلية 10,000 يوان مرة واحدة عن الطفل الأول؛ و50,000 يوان عن الطفل الثاني بواقع 10,000 سنويًا حتى سن الخامسة؛ و100,000 يوان عن الطفل الثالث أو من بعده بواقع 10,000 سنويًا حتى سن العاشرة. وقد وُلد في هوهوت نحو 20,000 طفل في 2023.[15] وتدفع تيانمن في هوبي عن الطفل الثاني 2,300 يوان مرة واحدة ثم 800 يوان شهريًا حتى الثالثة، وعن الطفل الثالث 3,300 يوان مرة واحدة ثم 1,000 يوان شهريًا.[16]"
+          ],
+          [
+            "p",
+            "هل رفعت هذه المدفوعات عدد المواليد؟ الأدلة ضعيفة. فقد أفادت وكالة أنباء الصين بأن المواليد في تيانمن ارتفعت 17% في 2024، وهو أول ارتفاع منذ ثماني سنوات، لكنها لم تذكر مصدرًا إحصائيًا ولم تستطع فصل أثر الإعانة عن عوامل أخرى.[16] وقال مسؤول في هوهوت إن المواليد كانت قد ارتفعت قليلًا في 2024، أي قبل بدء الإعانة الجديدة.[15] تستحق الأرقام المحلية المتابعة، لكنها ليست دليلًا سببيًا."
+          ],
+          [
+            "h",
+            "هل يرفع المال عدد المواليد؟"
+          ],
+          [
+            "p",
+            "تشير الأبحاث الدولية إلى أثر ما، يكون عادةً متواضعًا وغير رخيص. أكثر الدراسات استشهادًا تأتي من كيبيك. فقد درس الاقتصادي كيفن ميليغان سياسة المقاطعة التي دفعت للأسر ما يصل إلى ⁦C$8,000⁩ عن كل مولود جديد. وبمقارنة مجموعات حسب الزمن والمكان ونوع الأسرة، عند بدء السياسة وعند إلغائها، وجد «أثرًا قويًا للسياسة على الخصوبة».[18] لكنها كانت دفعة مرتبطة بالولادة، لا 300 يوان ثابتة كل شهر."
+          ],
+          [
+            "p",
+            "وكوريا الجنوبية تذكير في الاتجاه المعاكس. فبحسب هيئة الرقابة والتفتيش فيها، أنفقت البلاد 380.2 تريليون وون على مواجهة انخفاض الخصوبة بين 2006 و2020.[19] ومع ذلك تراجع معدل الخصوبة الكلي إلى أدنى مستوى في العالم، 0.72 في 2023، قبل أن يتعافى إلى 0.75 في 2024 و0.80 في 2025. وعزا المسؤولون التعافي أساسًا إلى ازدياد الزيجات (بنسبة 8.1% في 2025) وكبر عدد من هم في الثلاثينيات، لا إلى دفعة بعينها.[20]"
+          ],
+          [
+            "o",
+            "قراءتنا للأبحاث: قد يقدّم المال بعض الولادات أو يدفع بعض الأسر نحو طفل إضافي، لكن المال وحده نادرًا ما يعكس تراجعًا طويلًا في الخصوبة؛ فالسكن والتعليم والعمل ووقت الرعاية مهمة بالقدر نفسه. في المقابل، أثر المال المقدم للأسر التي لديها أطفال على فقر الأطفال واضح. ففي {مقالنا عن الائتمانات الضريبية القابلة للاسترداد|/essays/refundable-tax-credit-vs-basic-income/} رأينا أن فقر الأطفال في الولايات المتحدة انخفض بشدة حين وُسّع الائتمان الضريبي للأطفال في 2021، ثم عاد للارتفاع حين انتهى التوسيع. لذا لا ينبغي الحكم على الإعانة فقط بما إذا كانت ترفع عدد المواليد."
+          ],
+          [
+            "h",
+            "هل هي دخل أساسي؟ معايير ⁦BIEN⁩ الخمسة"
+          ],
+          [
+            "p",
+            "تعرّف شبكة الدخل الأساسي العالمية (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُقدَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو اشتراط للعمل».[21] وقد استخدمنا هذا المقياس في {مقالنا عن الـ100,000 ين في اليابان|/essays/japan-special-cash-payment/}. وإذا طبقناه على إعانة رعاية الأطفال:"
+          ],
+          [
+            "t",
+            "المعيار | إعانة رعاية الأطفال | الدخل الأساسي\nدورية | نعم، مرة في السنة | نعم\nنقدية | نعم، إلى حساب مصرفي أو حساب بطاقة | نعم\nفردية | تُحسب لكل طفل ويتسلمها أحد الوالدين أو الوصي | يتسلم كل شخص نصيبه\nشاملة | لا، للأطفال دون الثالثة فقط | الجميع\nغير مشروطة | لا اختبار للدخل أو العمل، لكن يلزم طلب كل سنة | غير مشروطة"
+          ],
+          [
+            "p",
+            "إذن تستوفي الإعانة معياري «الدورية» و«النقدية»، وتستوفي «غير المشروطة» إلى حد كبير، و«الفردية» جزئيًا، ولا تستوفي «الشمول». والوصف الأدق أنها دفعة نقدية للأطفال الصغار دون اختبار للدخل: نسخة أولى مما تسميه دول كثيرة إعانة الطفل أو علاوة الأطفال. وأكبر فرق بينها وبين الدخل الأساسي أنها لا تغطي إلا السنوات الثلاث الأولى من العمر."
+          ],
+          [
+            "h",
+            "مبلغ ⁦HK$10,000⁩ في هونغ كونغ عام 2020"
+          ],
+          [
+            "p",
+            "في العالم الناطق بالصينية، الدفعات للجميع نادرة؛ ومن أمثلتها برنامج الدفع النقدي في هونغ كونغ عام 2020. فقد أعلنت ميزانية 26 فبراير 2020 مبلغ ⁦HK$10,000⁩ لكل مقيم دائم في هونغ كونغ يبلغ 18 عامًا فأكثر، على أن يشمل نحو 7 ملايين شخص بتكلفة تقارب ⁦HK$71⁩ مليار.[22] وبدأت المصارف تستقبل التسجيل عبر الإنترنت في 21 يونيو 2020؛ وذهب المال إلى الحسابات المصرفية، أو أمكن تسلمه شيكًا عبر بريد هونغ كونغ.[23]"
+          ],
+          [
+            "p",
+            "وفي يناير 2021 أبلغت الحكومة المجلس التشريعي أنه حتى 21 يناير دُفع نحو ⁦HK$64⁩ مليار لنحو 6.4 مليون شخص، أي أكثر من 90% من المستحقين، وأن الإدارة كلفت نحو ⁦HK$306⁩ مليون. أما عن الأثر فاكتفت بالقول إنها «تعتقد» أن المال ينبغي أن يكون له أثر محفز ما على الاستهلاك؛ ولم تقدم أي قياس.[24] وبحلول 23 نوفمبر 2021 كان أكثر من 6.5 مليون مسجل مستحق قد حصلوا على الدفعة.[25]"
+          ],
+          [
+            "o",
+            "كان برنامج هونغ كونغ شاملًا، إذ وصل إلى كل مقيم دائم بالغ تقريبًا، لكنه دُفع مرة واحدة. أما إعانة الصين فدورية، لكنها للأطفال دون الثالثة فقط. والدخل الأساسي يحتاج الأمرين معًا: للجميع، ومرة بعد مرة. وكانت الـ100,000 ين في اليابان عام 2020 أيضًا دفعة واحدة، وكما {وجدنا|/essays/japan-special-cash-payment/}، ادُّخر كثير منها."
+          ],
+          [
+            "h",
+            "كم ستكلف أرضية للجميع؟"
+          ],
+          [
+            "p",
+            "ماذا لو ذهبت 300 يوان شهريًا إلى الجميع؟ بحسب {حاسبة الدخل الأساسي|/calc/?c=cn&w=all&m=300}، فإن 300 يوان شهريًا لكل شخص في الصين تبلغ نحو 5.1 تريليون يوان سنويًا إجمالًا، أي نحو 3.6% من الناتج المحلي الإجمالي. ولكل الأطفال دون 18 عامًا فقط تبلغ نحو 970 مليار يوان سنويًا، أي نحو 0.7% من الناتج، أي قرابة تسعة أضعاف الإعانة الحالية. هذه مبالغ إجمالية لا تكاليف صافية، ولا تخصم إنفاقًا آخر قد تحل محله."
+          ],
+          [
+            "p",
+            "وللمقارنة، تدفع ولاية ألاسكا الأمريكية منذ 1982 عائدًا سنويًا من صندوق الولاية للمقيمين المستحقين من كل الأعمار. إنه أطول برنامج قائم قريب من الدخل الأساسي؛ انظره في {الخط الزمني|/timeline/#tl-alaska}."
+          ],
+          [
+            "h",
+            "لا «وصل الدخل الأساسي» ولا «قطرة في بحر»"
+          ],
+          [
+            "o",
+            "إعانة رعاية الأطفال ليست دخلًا أساسيًا. فهي لا تغطي إلا السنوات الثلاث الأولى من العمر، وتعادل نحو 15% من متوسط الدخل المتاح للفرد في الريف، ويجب طلبها كل سنة. وتسميتها «الدخل الأساسي الصيني» مبالغة."
+          ],
+          [
+            "o",
+            "ولا يمكن صرفها بوصفها قطرة في بحر أيضًا. فلأول مرة تدفع الصين مالًا نقديًا في أنحاء البلاد لكل أسرة لديها طفل صغير، دون اختبار للدخل: لأكثر من 30 مليون طفل في عام واحد، معفاةً من الضريبة، ودون أن يفقد أحد حده الأدنى للمعيشة. وهذه أصعب الأجزاء العملية في أي دخل أساسي: الوصول إلى الجميع، وإيصال المال إلى الحسابات، وضمان ألا يفقد الأفقر دعمًا آخر بسبب حصولهم عليه. وقد بنت الصين الآن نظامًا كهذا للأطفال دون الثالثة."
+          ],
+          [
+            "o",
+            "ثلاثة أمور تستحق المتابعة: هل يرتفع المبلغ مع الدخول والأسعار، وهل يُمدّ حد العمر، وهل تتغير المواليد وفقر الأطفال ابتداءً من 2026. وإذا غطت الدفعة يومًا أعمارًا أكثر، فستقترب أكثر فأكثر من دخل أساسي للأطفال."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Xinhua via the Ministry of Ecology and Environment — General Offices of the CPC Central Committee and the State Council issue the Implementation Plan for the Childcare Subsidy System (28 Jul 2025, in Chinese)",
+          "url": "https://www.mee.gov.cn/zcwj/zyygwj/202507/t20250730_1124557.shtml"
+        },
+        {
+          "n": 2,
+          "label": "Xinhua — National childcare subsidy plan published: 3,600 yuan per child per year until age 3 (28 Jul 2025, in Chinese)",
+          "url": "https://www.news.cn/politics/zywj/20250728/77aff692fef243f7bf1aea04daf53940/c.html"
+        },
+        {
+          "n": 3,
+          "label": "Xinhua — State Council Information Office press conference on the childcare subsidy: central budget of about 90 billion yuan (30 Jul 2025, in Chinese)",
+          "url": "https://www.news.cn/20250730/dc4372668439457cb048ec8beb5ef66f/c.html"
+        },
+        {
+          "n": 4,
+          "label": "People’s Daily — How much is the childcare subsidy really worth? (policy explainer, 29 Jul 2025, in Chinese)",
+          "url": "https://paper.people.com.cn/rmrb/pc/content/202507/29/content_30091308.html"
+        },
+        {
+          "n": 5,
+          "label": "National Health Commission and Ministry of Finance — Management rules for the childcare subsidy system (trial), Guo Wei Ban Ren Kou Fa [2025] No. 24 (24 Aug 2025, in Chinese)",
+          "url": "https://www.gov.cn/zhengce/zhengceku/202509/content_7041274.htm"
+        },
+        {
+          "n": 6,
+          "label": "China Daily (Xinhua) — Childcare subsidy exempt from individual income tax (Ministry of Finance and State Taxation Administration, 20 Aug 2025, in Chinese)",
+          "url": "https://cn.chinadaily.com.cn/a/202508/20/WS68a5b112a3104ba1353fde8e.html"
+        },
+        {
+          "n": 7,
+          "label": "China Daily (CCTV News) — National Health Commission: childcare subsidy applications fully open from today (8 Sep 2025, in Chinese)",
+          "url": "https://cn.chinadaily.com.cn/a/202509/08/WS68be9870a310f072577474f6.html"
+        },
+        {
+          "n": 8,
+          "label": "Tide News (CCTV News) — 2026 childcare subsidy applications open today (5 Jan 2026, in Chinese)",
+          "url": "https://tidenews.com.cn/news.html?id=3340137"
+        },
+        {
+          "n": 9,
+          "label": "Yicai — Localities publish last year’s childcare subsidy spending (28 Feb 2026, in Chinese)",
+          "url": "https://www.yicai.com/news/103063312.html"
+        },
+        {
+          "n": 10,
+          "label": "Jiemian — Central government allocates 99.9 billion yuan for the childcare subsidy; all levels expected to spend about 110 billion this year (2 Jun 2026, in Chinese)",
+          "url": "https://www.jiemian.com/article/14520074.html"
+        },
+        {
+          "n": 11,
+          "label": "People’s Daily via Guangming Online — 2026 childcare subsidy paid to more than 25 million (22 Jul 2026, in Chinese)",
+          "url": "https://m.gmw.cn/2026-07/22/content_1304536260.htm"
+        },
+        {
+          "n": 12,
+          "label": "Government Work Report 2026, delivered by Premier Li Qiang on 5 Mar 2026 (bilingual reprint by the Yunnan Foreign Affairs Office, in Chinese and English)",
+          "url": "https://yfao.yn.gov.cn/zyxw/gwyxx/202603/t20260315_2946377.html"
+        },
+        {
+          "n": 13,
+          "label": "National Bureau of Statistics of China — Statistical communiqué on the 2025 national economic and social development (28 Feb 2026, in Chinese)",
+          "url": "https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html"
+        },
+        {
+          "n": 14,
+          "label": "National Bureau of Statistics of China — Statistical communiqué on the 2024 national economic and social development (28 Feb 2025, in Chinese)",
+          "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html"
+        },
+        {
+          "n": 15,
+          "label": "Xinhua (China Youth Daily) — Hohhot puts real money into encouraging births (14 Mar 2025, in Chinese)",
+          "url": "https://www.news.cn/local/20250314/4939a2140c1e46e78ba0a9c0b1077109/c.html"
+        },
+        {
+          "n": 16,
+          "label": "China News Service — Cash subsidies, childcare vouchers: localities explore birth subsidies (15 Aug 2025, in Chinese)",
+          "url": "https://www.chinanews.com/gn/2025/08-15/10465048.shtml"
+        },
+        {
+          "n": 17,
+          "label": "The Beijing News — Panzhihua to pay 500 yuan a month per child in childcare subsidy (30 Jul 2021, in Chinese)",
+          "url": "https://www.bjnews.com.cn/detail/162764311414398.html"
+        },
+        {
+          "n": 18,
+          "label": "NBER — Kevin Milligan, Subsidizing the Stork: New Evidence on Tax Incentives and Fertility, Working Paper 8845 (2002; Review of Economics and Statistics, 2005)",
+          "url": "https://www.nber.org/papers/w8845"
+        },
+        {
+          "n": 19,
+          "label": "Asia Business Daily — 380.2 trillion won spent on low fertility from 2006 to 2020, Board of Audit and Inspection (13 Aug 2021)",
+          "url": "https://www.asiae.co.kr/en/article/2021081313594120510"
+        },
+        {
+          "n": 20,
+          "label": "The Star (Reuters) — South Korea’s birthrate, the world’s lowest, rises again (25 Feb 2026)",
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/02/25/south-korea039s-birthrate-the-world039s-lowest-rises-again-amid-signs-of-easing-demographic-crisis"
+        },
+        {
+          "n": 21,
+          "label": "BIEN — About basic income",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 22,
+          "label": "Hong Kong SAR Government — The 2020-21 Budget speech, Cash Payout Scheme (26 Feb 2020)",
+          "url": "https://www.budget.gov.hk/2020/eng/budget09.html"
+        },
+        {
+          "n": 23,
+          "label": "news.gov.hk — Cash payout registration details announced (8 Jun 2020)",
+          "url": "https://www.news.gov.hk/eng/2020/06/20200608/20200608_113959_076.html"
+        },
+        {
+          "n": 24,
+          "label": "Hong Kong SAR Government — LCQ1: Cash Payout Scheme, reply to the Legislative Council (27 Jan 2021)",
+          "url": "https://www.info.gov.hk/gia/general/202101/27/P2021012700342.htm"
+        },
+        {
+          "n": 25,
+          "label": "news.gov.hk — Cash payout registration to close (25 Nov 2021)",
+          "url": "https://www.news.gov.hk/eng/2021/11/20211125/20211125_111208_477.html"
+        }
+      ]
+    },
     {
       "id": "generative-ai-creative-work-basic-income",
       "date": "2026-11-07",
@@ -12969,7 +14204,8 @@ module.exports = {
         "japan-special-cash-payment",
         "takenaka-70000-yen-basic-income",
         "openresearch-cash-study",
-        "generative-ai-jobs-basic-income"
+        "generative-ai-jobs-basic-income",
+        "china-childcare-subsidy-basic-income"
       ],
       "title": {
         "ja": "給付付き税額控除とベーシックインカムは、何が違うのか：日本の「就業者負担軽減支援金」から考える",
@@ -19058,7 +20294,8 @@ module.exports = {
         "thailand-digital-wallet",
         "nesara-gesara-basic-income",
         "takenaka-70000-yen-basic-income",
-        "refundable-tax-credit-vs-basic-income"
+        "refundable-tax-credit-vs-basic-income",
+        "china-childcare-subsidy-basic-income"
       ],
       "title": {
         "ja": "10万円の給付金は、何に使われたのか：特別定額給付金をデータで振り返る",

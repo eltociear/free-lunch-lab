@@ -63,6 +63,10 @@
    {
     "file": "noto-sans-arabic-400-ar-24f66565b3.woff2",
     "chars": "É"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-0e97fdecbf.woff2",
+    "chars": "é"
    }
   ],
   "ar:body:700": [
@@ -113,6 +117,10 @@
    {
     "file": "noto-sans-arabic-700-ar-c4e9c84a9a.woff2",
     "chars": "É"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-bab2a53123.woff2",
+    "chars": "é"
    }
   ],
   "ar:display": [
@@ -211,6 +219,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-f6b9476e8d.woff2",
     "chars": "É"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-68b791b334.woff2",
+    "chars": "é"
    }
   ],
   "de:body:700": [
@@ -277,6 +289,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-cd4a51dfd8.woff2",
     "chars": "É"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-598f0cd4e7.woff2",
+    "chars": "é"
    }
   ],
   "de:display": [
@@ -383,6 +399,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-f6b9476e8d.woff2",
     "chars": "É"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-68b791b334.woff2",
+    "chars": "é"
    }
   ],
   "en:body:700": [
@@ -449,6 +469,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-cd4a51dfd8.woff2",
     "chars": "É"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-598f0cd4e7.woff2",
+    "chars": "é"
    }
   ],
   "en:display": [
@@ -713,6 +737,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-08a491a826.woff2",
     "chars": "É"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-3a6d0f93a1.woff2",
+    "chars": "é"
    }
   ],
   "hi:body:700": [
@@ -763,6 +791,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-82169359eb.woff2",
     "chars": "É"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-4ae4edcfd4.woff2",
+    "chars": "é"
    }
   ],
   "hi:dot": [
@@ -975,6 +1007,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-c8850a37ce.woff2",
     "chars": "彩虹装"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-5e1c63717b.woff2",
+    "chars": "é‰坤微按攀朱枝殊湖片背花華街郷鎮"
    }
   ],
   "ja:body:700": [
@@ -1177,6 +1213,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-3d370d4fcb.woff2",
     "chars": "彩虹装"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-b37584c08c.woff2",
+    "chars": "é‰坤微按攀朱枝殊湖片背花華街郷鎮"
    }
   ],
   "ja:display": [
@@ -1287,6 +1327,10 @@
    {
     "file": "dela-gothic-one-400-ja-64e1d3c02c.woff2",
     "chars": "ひ"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-fa0b88fc30.woff2",
+    "chars": "今元児助土増天攀枝水港焼育花都門香"
    }
   ],
   "ja:dot": [
@@ -1531,6 +1575,10 @@
    {
     "file": "noto-sans-sc-400-zh-6426c39d81.woff2",
     "chars": "删泄膜虹"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-7551296826.woff2",
+    "chars": "é‰九乡亡促凯坤夸幼扭攀朱杯枝槛浩湖绩蒙街魁"
    }
   ],
   "zh:body:700": [
@@ -1729,6 +1777,10 @@
    {
     "file": "noto-sans-sc-700-zh-55926d53fb.woff2",
     "chars": "删泄膜虹"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-48f1c50f55.woff2",
+    "chars": "é‰九乡亡促凯坤夸幼扭攀朱杯枝槛浩湖绩蒙街魁"
    }
   ],
   "zh:display": [
@@ -1835,6 +1887,10 @@
    {
     "file": "noto-sans-sc-900-zh-f93cc3bfe8.woff2",
     "chars": "二独确"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-cf214b15de.woff2",
+    "chars": "儿呼攀杯枝水浩港育薪让贴车香"
    }
   ],
   "zh:dot": [

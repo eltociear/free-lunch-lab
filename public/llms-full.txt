@@ -814,6 +814,138 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### China’s 3,600-yuan childcare subsidy: who gets it, and is it a basic income?
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/china-childcare-subsidy-basic-income/
+- Published: 2026-11-09
+
+On 28 July 2025, the general offices of China’s Communist Party Central Committee and State Council issued an implementation plan for a national childcare subsidy. From 1 January 2025, every child under 3 qualifies, and the national base rate is 3,600 yuan per child per year, or 300 yuan a month.[1] Zhu Kun of the Chinese Academy of Fiscal Sciences told the People’s Daily it was “the first universal cash subsidy our country has paid to residents”.[4]
+
+No income test, no distinction between first and third children, cash straight to families: it sounds a lot like what people mean by a basic income. Is it? This essay first sets out the rules: who qualifies, how to claim, who pays and how much has actually been paid. Then it looks at the birth figures behind the policy and at research on whether cash raises births. Finally it measures the subsidy against the definition of basic income, and compares it with Hong Kong’s HK$10,000 payout in 2020.
+
+#### Who gets it, and how much
+
+The subsidy covers children under 3 “born in accordance with laws and regulations”, until they turn 3.[1] First, second and third children all qualify, and there is no income threshold.[2] Children born before 2025 who were still under 3 in 2025 receive a pro-rated amount for the months left. Xinhua’s example: a child born in December 2023 can receive 24 months, 7,200 yuan in total.[2] A child born in 2025 or later can receive up to about 10,800 yuan from birth to age 3.
+
+One parent or another guardian applies in the place where the child’s household registration (hukou) is held.[1] Most claims go through a national online system reached via Alipay, WeChat and provincial government service platforms; claims can also be made in person at the township or street office. The National Health Commission declared applications “fully open” nationwide on 8 September 2025.[7]
+
+It is not automatic. Rules from the National Health Commission and the Ministry of Finance say the first claim must be made in the year of birth or the year after, followed by a renewal in each of the next two years; a claim not filed in time “is deemed to have given up eligibility for that year”.[5] The subsidy is “calculated by year and paid once a year as a lump sum” into the claimant’s or child’s bank or social security card account, with provinces paying out at least one batch each quarter.[5][1] Claims for 2026 opened on 5 January 2026, with a new renewal function.[8] For children born in 2022 to 2024, the deadline for a first claim has been extended from the end of 2025 to 31 December 2026.[11]
+
+Two easily missed rules matter. The subsidy is exempt from individual income tax.[6] And when eligibility for minimum living allowance (dibao) or extreme-hardship support is assessed, the subsidy is not counted as household or personal income.[1] The poorest families do not lose their dibao by receiving it.
+
+| Item | Rule |
+| --- | --- |
+| Who | Children under 3; first, second and third children alike[1][2] |
+| Amount | National base rate 3,600 yuan per child per year; local governments may pay more[1] |
+| Income test | None[2] |
+| Where to claim | The child’s place of household registration, online or in person[1][7] |
+| How it is paid | Once a year as a lump sum, into a bank or social security card account[5] |
+| Tax | Exempt from individual income tax[6] |
+| Minimum living allowance | Not counted as household or personal income[1] |
+| Claim needed? | Yes, every year; a missed year is forfeited[5] |
+
+#### Who pays, and how much has been paid
+
+The central government covers part of the cost of the base rate for eastern, central and western regions in different proportions; at a State Council press conference officials said “the centre bears about 90% overall”, with an initial 2025 budget of about 90 billion yuan.[1][3] If a local government pays more than the base rate, it funds the extra itself.[1]
+
+Here is what has happened in practice. By 31 December 2025 all 31 provinces had started paying, more than 24 million children had been paid, and the payout rate for 2025 was about 80%.[10] The Ministry of Finance said at the end of January 2026 that governments at all levels had set aside about 100 billion yuan for 2025, and that more than 30 million children had been paid.[9] The 2026 Government Work Report lists “fully implementing the childcare subsidy, benefiting more than 30 million infants” among the previous year’s achievements.[12] For 2026 the central government has allocated 99.9 billion yuan, up 10.6%, and total spending at all levels is expected to be about 110 billion yuan.[10] By 21 July 2026, 27.51 million claims for 2026 had been filed, 27.13 million approved and 25.16 million children paid.[11]
+
+Compared with the economy, it is small. China’s GDP in 2025 was 140.19 trillion yuan.[13] About 100 billion yuan is about 0.07% of GDP; about 110 billion in 2026 is about 0.08%. Compared with household incomes it is not small: 3,600 yuan a year is about 8% of 2025 per-capita disposable income nationally (43,377 yuan), 15% for rural residents (24,456 yuan) and 6% for urban residents (56,502 yuan).[13] For a rural family, it is real money.
+
+Opinion: We found no announcement raising the 3,600-yuan base rate in 2026, and no national evaluation of the subsidy’s effects. How much has been paid is well documented. Whether it has changed family budgets or decisions about children is not yet known.
+
+#### Why now: births
+
+The background is a fast fall in births. According to the National Bureau of Statistics, 9.54 million babies were born in China in 2024, a birth rate of 6.77 per thousand.[14] In 2025 births fell to 7.92 million, a rate of 5.63 per thousand, while 11.31 million people died; the population at the end of the year was 1.40489 billion, 3.39 million fewer than a year earlier.[13] Births fell by about 17% in one year.
+
+Note that most babies born in 2025 were conceived in 2024, and the national plan was published only in July 2025. The 2025 figures cannot be used to judge the subsidy. The figures for 2026 and later may start to tell us something. Alongside the subsidy, a policy of free education in the final year of preschool reached 14 million children in 2025.[12]
+
+#### Cities went first: Hohhot, Tianmen, Panzhihua
+
+Before the national plan, some cities tried more generous payments. Panzhihua in Sichuan announced in July 2021 that it would pay 500 yuan a month for each second or third child until age 3.[17] From 1 March 2025, Hohhot in Inner Mongolia paid 10,000 yuan once for a first child; 50,000 yuan for a second child, at 10,000 a year until age 5; and 100,000 yuan for a third or later child, at 10,000 a year until age 10. About 20,000 babies were born in Hohhot in 2023.[15] Tianmen in Hubei pays 2,300 yuan once and then 800 yuan a month until age 3 for a second child, and 3,300 yuan once and then 1,000 yuan a month for a third.[16]
+
+Did these payments raise births? The evidence is thin. China News Service reported that births in Tianmen rose 17% in 2024, the first rise in eight years, but gave no statistical source and could not separate the subsidy from other factors.[16] An official in Hohhot said births had already edged up in 2024, before the new subsidy began.[15] The local figures are worth watching, but they are not causal evidence.
+
+#### Can cash raise births?
+
+International research suggests some effect, usually modest and not cheap. The most cited study is from Quebec. The economist Kevin Milligan studied the province’s policy of paying families up to C$8,000 for a new child. Comparing groups by time, place and family type, at both the start and the end of the policy, he found “a strong effect of the policy on fertility”.[18] But that was a payment tied to a birth, not a steady 300 yuan a month.
+
+South Korea is a reminder in the other direction. According to its Board of Audit and Inspection, the country spent 380.2 trillion won on low fertility from 2006 to 2020.[19] Its total fertility rate still fell to a world-low 0.72 in 2023, before recovering to 0.75 in 2024 and 0.80 in 2025. Officials put the recovery down mainly to more marriages (up 8.1% in 2025) and a larger number of people in their thirties, not to any one payment.[20]
+
+Opinion: Our reading of the research: cash can bring some births forward or tip some families towards another child, but cash alone rarely reverses a long fall in fertility; housing, schooling, jobs and time for care matter as much. On the other hand, the effect of cash for families with children on child poverty is clear. In our essay on refundable tax credits (https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/) we saw US child poverty fall sharply when the Child Tax Credit was expanded in 2021 and rise again when the expansion ended. So the subsidy should not be judged only on whether it raises the number of births.
+
+#### Is it a basic income? BIEN’s five criteria
+
+The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”.[21] We used this yardstick in our essay on Japan’s ¥100,000 payment (https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/). Applied to the childcare subsidy:
+
+| Criterion | Childcare subsidy | Basic income |
+| --- | --- | --- |
+| Periodic | Yes, once a year | Yes |
+| Cash | Yes, into a bank or card account | Yes |
+| Individual | Counted per child, claimed by a parent or guardian | Each person receives their own |
+| Universal | No, only children under 3 | Everyone |
+| Unconditional | No income or work test, but must be claimed each year | Unconditional |
+
+So the subsidy meets “periodic” and “cash”, largely meets “unconditional”, partly meets “individual”, and does not meet “universal”. A more accurate description is a cash payment for young children without an income test: an early version of what many countries call a child benefit or child allowance. The biggest difference from a basic income is that it covers only the first three years of life.
+
+#### Hong Kong’s HK$10,000 in 2020
+
+In the Chinese-speaking world, payments to everyone are rare; one example is Hong Kong’s Cash Payout Scheme of 2020. The budget of 26 February 2020 announced HK$10,000 for every Hong Kong permanent resident aged 18 or over, expected to reach about 7 million people at a cost of about HK$71 billion.[22] Banks began taking online registrations on 21 June 2020; the money went into bank accounts, or could be collected as a cheque through Hongkong Post.[23]
+
+In January 2021 the government told the Legislative Council that by 21 January about HK$64 billion had been paid to some 6.4 million people, more than 90% of those eligible, and that administration had cost about HK$306 million. On the effect, it said only that it “believed” the money “should have certain stimulating effect on consumption”; it gave no measurement.[24] By 23 November 2021 more than 6.5 million eligible registrants had been paid.[25]
+
+Opinion: Hong Kong’s scheme was universal, reaching almost every adult permanent resident, but it was paid once. China’s subsidy is periodic, but only for children under 3. A basic income needs both: paid to everyone, and paid again and again. Japan’s ¥100,000 in 2020 was also one-off, and as we found (https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/), much of it was saved.
+
+#### What would a floor for everyone cost?
+
+What if 300 yuan a month went to everyone? With the basic income calculator (https://neteru-nyukin.eltociear.workers.dev/calc/?c=cn&w=all&m=300), 300 yuan a month for every person in China comes to about 5.1 trillion yuan a year gross, about 3.6% of GDP. For all children under 18 only, it is about 970 billion yuan a year, about 0.7% of GDP, roughly nine times the current subsidy. These are gross amounts, not net costs, and they do not count other spending that might be replaced.
+
+For comparison, since 1982 the US state of Alaska has paid an annual dividend from a state fund to eligible residents of every age. It is the longest-running scheme close to a basic income; see it on our timeline (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-alaska).
+
+#### Neither “basic income has arrived” nor “a drop in the ocean”
+
+Opinion: The childcare subsidy is not a basic income. It covers only the first three years of life, it is worth about 15% of rural per-capita disposable income, and it must be claimed every year. Calling it “China’s basic income” is an overstatement.
+
+Opinion: Nor can it be waved away as a drop in the ocean. For the first time, China pays cash nationwide to every family with a young child, without an income test: more than 30 million children in a year, tax-free, and without costing anyone their minimum living allowance. Those are the hardest practical parts of any basic income: finding everyone, getting money into accounts, and making sure the poorest do not lose other support by taking it. China has now built such a system for children under 3.
+
+Opinion: Three things are worth watching: whether the rate rises with incomes and prices, whether the age limit is extended, and whether births and child poverty change from 2026 on. If the payment one day covers more ages, it will come ever closer to a child basic income.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+
+Sources:
+
+1. Xinhua via the Ministry of Ecology and Environment — General Offices of the CPC Central Committee and the State Council issue the Implementation Plan for the Childcare Subsidy System (28 Jul 2025, in Chinese): https://www.mee.gov.cn/zcwj/zyygwj/202507/t20250730_1124557.shtml
+2. Xinhua — National childcare subsidy plan published: 3,600 yuan per child per year until age 3 (28 Jul 2025, in Chinese): https://www.news.cn/politics/zywj/20250728/77aff692fef243f7bf1aea04daf53940/c.html
+3. Xinhua — State Council Information Office press conference on the childcare subsidy: central budget of about 90 billion yuan (30 Jul 2025, in Chinese): https://www.news.cn/20250730/dc4372668439457cb048ec8beb5ef66f/c.html
+4. People’s Daily — How much is the childcare subsidy really worth? (policy explainer, 29 Jul 2025, in Chinese): https://paper.people.com.cn/rmrb/pc/content/202507/29/content_30091308.html
+5. National Health Commission and Ministry of Finance — Management rules for the childcare subsidy system (trial), Guo Wei Ban Ren Kou Fa [2025] No. 24 (24 Aug 2025, in Chinese): https://www.gov.cn/zhengce/zhengceku/202509/content_7041274.htm
+6. China Daily (Xinhua) — Childcare subsidy exempt from individual income tax (Ministry of Finance and State Taxation Administration, 20 Aug 2025, in Chinese): https://cn.chinadaily.com.cn/a/202508/20/WS68a5b112a3104ba1353fde8e.html
+7. China Daily (CCTV News) — National Health Commission: childcare subsidy applications fully open from today (8 Sep 2025, in Chinese): https://cn.chinadaily.com.cn/a/202509/08/WS68be9870a310f072577474f6.html
+8. Tide News (CCTV News) — 2026 childcare subsidy applications open today (5 Jan 2026, in Chinese): https://tidenews.com.cn/news.html?id=3340137
+9. Yicai — Localities publish last year’s childcare subsidy spending (28 Feb 2026, in Chinese): https://www.yicai.com/news/103063312.html
+10. Jiemian — Central government allocates 99.9 billion yuan for the childcare subsidy; all levels expected to spend about 110 billion this year (2 Jun 2026, in Chinese): https://www.jiemian.com/article/14520074.html
+11. People’s Daily via Guangming Online — 2026 childcare subsidy paid to more than 25 million (22 Jul 2026, in Chinese): https://m.gmw.cn/2026-07/22/content_1304536260.htm
+12. Government Work Report 2026, delivered by Premier Li Qiang on 5 Mar 2026 (bilingual reprint by the Yunnan Foreign Affairs Office, in Chinese and English): https://yfao.yn.gov.cn/zyxw/gwyxx/202603/t20260315_2946377.html
+13. National Bureau of Statistics of China — Statistical communiqué on the 2025 national economic and social development (28 Feb 2026, in Chinese): https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html
+14. National Bureau of Statistics of China — Statistical communiqué on the 2024 national economic and social development (28 Feb 2025, in Chinese): https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html
+15. Xinhua (China Youth Daily) — Hohhot puts real money into encouraging births (14 Mar 2025, in Chinese): https://www.news.cn/local/20250314/4939a2140c1e46e78ba0a9c0b1077109/c.html
+16. China News Service — Cash subsidies, childcare vouchers: localities explore birth subsidies (15 Aug 2025, in Chinese): https://www.chinanews.com/gn/2025/08-15/10465048.shtml
+17. The Beijing News — Panzhihua to pay 500 yuan a month per child in childcare subsidy (30 Jul 2021, in Chinese): https://www.bjnews.com.cn/detail/162764311414398.html
+18. NBER — Kevin Milligan, Subsidizing the Stork: New Evidence on Tax Incentives and Fertility, Working Paper 8845 (2002; Review of Economics and Statistics, 2005): https://www.nber.org/papers/w8845
+19. Asia Business Daily — 380.2 trillion won spent on low fertility from 2006 to 2020, Board of Audit and Inspection (13 Aug 2021): https://www.asiae.co.kr/en/article/2021081313594120510
+20. The Star (Reuters) — South Korea’s birthrate, the world’s lowest, rises again (25 Feb 2026): https://www.thestar.com.my/aseanplus/aseanplus-news/2026/02/25/south-korea039s-birthrate-the-world039s-lowest-rises-again-amid-signs-of-easing-demographic-crisis
+21. BIEN — About basic income: https://basicincome.org/about-basic-income/
+22. Hong Kong SAR Government — The 2020-21 Budget speech, Cash Payout Scheme (26 Feb 2020): https://www.budget.gov.hk/2020/eng/budget09.html
+23. news.gov.hk — Cash payout registration details announced (8 Jun 2020): https://www.news.gov.hk/eng/2020/06/20200608/20200608_113959_076.html
+24. Hong Kong SAR Government — LCQ1: Cash Payout Scheme, reply to the Legislative Council (27 Jan 2021): https://www.info.gov.hk/gia/general/202101/27/P2021012700342.htm
+25. news.gov.hk — Cash payout registration to close (25 Nov 2021): https://www.news.gov.hk/eng/2021/11/20211125/20211125_111208_477.html
+
 ### Is generative AI taking creative work? Artists’ incomes and basic income (Part 2)
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/
@@ -1214,6 +1346,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/china-childcare-subsidy-basic-income/
 
 Sources:
 
@@ -1720,6 +1854,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/nesara-gesara-
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/china-childcare-subsidy-basic-income/
 
 Sources:
 
@@ -2774,7 +2910,7 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Language: TypeScript
 - License: MIT (LICENSE)
 - Stars: 163
-- Last commit: 2026-11-07
+- Last commit: 2026-11-08
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
