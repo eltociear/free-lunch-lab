@@ -143,6 +143,10 @@
    {
     "file": "noto-kufi-arabic-700-ar-adaa029bda.woff2",
     "chars": "'"
+   },
+   {
+    "file": "noto-kufi-arabic-700-ar-89315cdebd.woff2",
+    "chars": "–"
    }
   ],
   "ar:dot": [
@@ -491,6 +495,10 @@
    {
     "file": "dela-gothic-one-400-en-a9c79872b3.woff2",
     "chars": "'"
+   },
+   {
+    "file": "dela-gothic-one-400-en-009f1def4c.woff2",
+    "chars": "–"
    }
   ],
   "en:dot": [
@@ -663,6 +671,10 @@
    {
     "file": "dela-gothic-one-400-es-d2b7696f19.woff2",
     "chars": "ª"
+   },
+   {
+    "file": "dela-gothic-one-400-es-009f1def4c.woff2",
+    "chars": "–"
    }
   ],
   "es:dot": [
@@ -1011,6 +1023,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-5e1c63717b.woff2",
     "chars": "é‰坤微按攀朱枝殊湖片背花華街郷鎮"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-38e903b1c4.woff2",
+    "chars": "姻席男県誤赤輪"
    }
   ],
   "ja:body:700": [
@@ -1217,6 +1233,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-b37584c08c.woff2",
     "chars": "é‰坤微按攀朱枝殊湖片背花華街郷鎮"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-98159652df.woff2",
+    "chars": "姻席男県誤赤輪"
    }
   ],
   "ja:display": [
@@ -1331,6 +1351,10 @@
    {
     "file": "dela-gothic-one-400-ja-fa0b88fc30.woff2",
     "chars": "今元児助土増天攀枝水港焼育花都門香"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-594d8db973.woff2",
+    "chars": "〜ナヘヤ剣女性期界白真議限"
    }
   ],
   "ja:dot": [
@@ -1579,6 +1603,10 @@
    {
     "file": "noto-sans-sc-400-zh-7551296826.woff2",
     "chars": "é‰九乡亡促凯坤夸幼扭攀朱杯枝槛浩湖绩蒙街魁"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-ff82cd7724.woff2",
+    "chars": "丁丧亩偕勤喜姻娅娜撒斥沉炫耀耕莫贾"
    }
   ],
   "zh:body:700": [
@@ -1781,6 +1809,10 @@
    {
     "file": "noto-sans-sc-700-zh-48f1c50f55.woff2",
     "chars": "é‰九乡亡促凯坤夸幼扭攀朱杯枝槛浩湖绩蒙街魁"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-eff8decbcc.woff2",
+    "chars": "丁丧亩偕勤喜姻娅娜撒斥沉炫耀耕莫贾"
    }
   ],
   "zh:display": [
@@ -1891,6 +1923,10 @@
    {
     "file": "noto-sans-sc-900-zh-cf214b15de.woff2",
     "chars": "儿呼攀杯枝水浩港育薪让贴车香"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-3b63bea407.woff2",
+    "chars": "–《》举今印央女撒讨调邦限"
    }
   ],
   "zh:dot": [

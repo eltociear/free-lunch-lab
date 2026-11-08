@@ -9200,6 +9200,7 @@ module.exports = {
     },
     {
       "id": "india-mp",
+      "essays": ["india-basic-income-madhya-pradesh-ladli-behna"],
       "years": "2011–2013",
       "type": "ngo",
       "name": "Madhya Pradesh cash transfer pilots",
@@ -9222,24 +9223,24 @@ module.exports = {
         "ar": "رابطة النساء العاملات لحسابهن (⁦SEWA⁩) بتمويل من اليونيسف"
       },
       "paid": {
-        "ja": "ランダムに選んだ8つの村の全員（大人も子どもも）に、17か月間毎月少額の現金（12の村を比較対照に）",
-        "en": "Small monthly cash to every man, woman and child in eight randomly chosen villages for 17 months, with 12 control villages",
-        "zh": "在随机选出的 8 个村庄，向所有男女老少每月发放少量现金，共 17 个月，另设 12 个对照村",
-        "hi": "बेतरतीब चुने गए 8 गाँवों के हर पुरुष, महिला और बच्चे को 17 महीने तक हर महीने थोड़ा नकद; 12 गाँव तुलना के लिए",
-        "es": "Pequeñas sumas mensuales para cada hombre, mujer y niño de ocho aldeas elegidas al azar durante 17 meses, con 12 aldeas de control",
-        "de": "Kleine monatliche Geldbeträge für jeden Mann, jede Frau und jedes Kind in acht zufällig gewählten Dörfern über 17 Monate, mit 12 Vergleichsdörfern",
-        "ar": "مبالغ نقدية شهرية صغيرة لكل رجل وامرأة وطفل في ثماني قرى مختارة عشوائيًا لمدة 17 شهرًا، مع 12 قرية للمقارنة"
+        "ja": "ランダムに選んだ8つの村の全員（大人も子どもも）に、2011年6月から2012年11月まで毎月少額の現金（大人200ルピー、子ども100ルピー、のちに300ルピーと150ルピー）。12の村を比較対照に。ほかに部族の村1つで12か月",
+        "en": "Small monthly cash to every man, woman and child in eight randomly chosen villages from June 2011 to November 2012 (Rs 200 per adult and Rs 100 per child, later Rs 300 and Rs 150), with 12 control villages; plus one tribal village for 12 months",
+        "zh": "在随机选出的 8 个村庄，2011 年 6 月至 2012 年 11 月向所有男女老少每月发放少量现金（成人 200 卢比、儿童 100 卢比，后提高到 300 和 150 卢比），另设 12 个对照村；另有一个部落村发放 12 个月",
+        "hi": "बेतरतीब चुने गए 8 गाँवों के हर पुरुष, महिला और बच्चे को जून 2011 से नवंबर 2012 तक हर महीने थोड़ा नकद (वयस्क 200 रुपये, बच्चा 100 रुपये, बाद में 300 और 150 रुपये); 12 गाँव तुलना के लिए; साथ में एक आदिवासी गाँव में 12 महीने",
+        "es": "Pequeñas sumas mensuales para cada hombre, mujer y niño de ocho aldeas elegidas al azar de junio de 2011 a noviembre de 2012 (200 rupias por adulto y 100 por niño, luego 300 y 150), con 12 aldeas de control; y una aldea tribal durante 12 meses",
+        "de": "Kleine monatliche Geldbeträge für jeden Mann, jede Frau und jedes Kind in acht zufällig gewählten Dörfern von Juni 2011 bis November 2012 (200 Rupien je Erwachsenem und 100 je Kind, später 300 und 150), mit 12 Vergleichsdörfern; dazu ein Stammesdorf über 12 Monate",
+        "ar": "مبالغ نقدية شهرية صغيرة لكل رجل وامرأة وطفل في ثماني قرى مختارة عشوائيًا من يونيو 2011 إلى نوفمبر 2012 (200 روبية للبالغ و100 للطفل، ثم 300 و150)، مع 12 قرية للمقارنة؛ إضافة إلى قرية قبلية واحدة لمدة 12 شهرًا"
       },
       "result": {
-        "ja": "評価結果は2013年にニューデリーでの会議で発表された",
-        "en": "Evaluations were presented at a 2013 conference in New Delhi",
-        "zh": "评估结果于 2013 年在新德里的会议上发布",
-        "hi": "मूल्यांकन 2013 में नई दिल्ली के एक सम्मेलन में पेश किए गए",
-        "es": "Las evaluaciones se presentaron en una conferencia en Nueva Delhi en 2013",
-        "de": "Die Auswertungen wurden 2013 auf einer Konferenz in Neu-Delhi vorgestellt",
-        "ar": "عُرضت التقييمات في مؤتمر بنيودلهي عام 2013"
+        "ja": "女の子の標準体重の割合が対照村の2倍以上改善、学校の出席が増えた世帯29.0%（受給なし13.5%）、賃労働から自営への移動、借金の減少。評価は実験チーム自身による村単位の比較（2015年の書籍）",
+        "en": "Girls’ normal weight-for-age improved more than twice as much as in control villages; 29.0% of recipient households reported higher school attendance (13.5% without); a shift from wage labour to own work; less debt. Village-level comparison reported by the pilot team (2015 book)",
+        "zh": "女孩年龄别体重正常的比例改善幅度是对照村的两倍多；29.0% 的领取家庭报告出勤增加（未领取 13.5%）；从雇佣劳动转向自营；债务减少。结果为实验团队自己按村比较（2015 年出版的书）",
+        "hi": "लड़कियों के सामान्य वज़न में सुधार कंट्रोल गाँवों के दोगुने से ज़्यादा; पाने वाले 29.0% घरों में स्कूल हाज़िरी बढ़ी (न पाने वालों में 13.5%); मज़दूरी से अपने काम की ओर बदलाव; क़र्ज़ में कमी। प्रयोग की टीम द्वारा गाँव-स्तर की तुलना (2015 की किताब)",
+        "es": "La proporción de niñas con peso normal mejoró más del doble que en las aldeas de control; el 29,0 % de los hogares receptores dijo que subió la asistencia escolar (13,5 % sin pago); paso del trabajo asalariado al trabajo propio; menos deuda. Comparación por aldeas del propio equipo (libro de 2015)",
+        "de": "Der Anteil normalgewichtiger Mädchen verbesserte sich mehr als doppelt so stark wie in den Vergleichsdörfern; 29,0 % der Empfängerhaushalte meldeten häufigeren Schulbesuch (13,5 % ohne); Wechsel von Lohnarbeit zu eigener Arbeit; weniger Schulden. Vergleich auf Dorfebene durch das Projektteam (Buch von 2015)",
+        "ar": "تحسنت نسبة الفتيات ذوات الوزن الطبيعي بأكثر من ضعف تحسنها في القرى الضابطة؛ وأفادت 29.0% من الأسر المستفيدة بزيادة الحضور المدرسي (13.5% دون الدفع)؛ وتحول من العمل المأجور إلى العمل الذاتي؛ وديون أقل. مقارنة على مستوى القرى قدمها فريق التجربة (كتاب 2015)"
       },
-      "source": "https://socioeco.org/bdf_fiche-document-2813_de.html"
+      "source": "https://library.oapen.org/bitstream/id/2f925b19-91c9-4be0-9dca-a08136710cef/9781472583130.pdf"
     },
     {
       "id": "kenya",
@@ -10003,13 +10004,1110 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "india-basic-income-madhya-pradesh-ladli-behna",
+      "date": "2026-11-09",
+      "related": [
+        "openresearch-cash-study",
+        "finland-basic-income-experiment",
+        "china-childcare-subsidy-basic-income",
+        "refundable-tax-credit-vs-basic-income"
+      ],
+      "title": {
+        "en": "Basic income in India: the Madhya Pradesh experiment and today’s cash for women",
+        "ja": "インドのベーシックインカム：マディヤ・プラデーシュの実験と、女性への現金給付",
+        "zh": "印度的基本收入：中央邦实验与今天发给女性的现金",
+        "hi": "यूनिवर्सल बेसिक इनकम और भारत: मध्य प्रदेश का प्रयोग और लाडली बहना",
+        "es": "Renta básica en India: el experimento de Madhya Pradesh y el dinero para mujeres",
+        "de": "Grundeinkommen in Indien: das Experiment in Madhya Pradesh",
+        "ar": "الدخل الأساسي في الهند: تجربة ماديا براديش"
+      },
+      "desc": {
+        "en": "What India’s 2011–2013 basic income pilot in Madhya Pradesh villages found, and how Ladli Behna, Ladki Bahin and PM-KISAN differ from it.",
+        "ja": "インドの村のベーシックインカム実験と、いまの女性向け給付の違い。",
+        "zh": "印度中央邦村庄 2011–2013 年的基本收入实验发现了什么，今天给女性的现金和农民补贴又有何不同。",
+        "hi": "2011–2013 के मध्य प्रदेश प्रयोग ने क्या पाया, और लाडली बहना उससे कैसे अलग है।",
+        "es": "Qué encontró el piloto de renta básica de 2011–2013 en aldeas de Madhya Pradesh y en qué se diferencian Ladli Behna, Ladki Bahin y PM-KISAN.",
+        "de": "Was der Dorfversuch 2011–2013 zeigte, und was heute anders ist.",
+        "ar": "ما الذي وجدته تجربة الدخل الأساسي في قرى ماديا براديش بين 2011 و2013، وكيف تختلف عنها تحويلات الهند النقدية اليوم."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "Every month about 12.5 million women in Madhya Pradesh receive Rs 1,500 in their bank accounts under the Ladli Behna scheme.[1] The state is not alone. According to PRS Legislative Research, the number of states paying largely unconditional cash to women rose from two in 2022-23 to twelve in 2025-26, and together they expect to spend Rs 1.68 trillion (Rs 1,68,040 crore) on these schemes, about 0.5% of GDP.[2]"
+          ],
+          [
+            "p",
+            "More than a decade earlier, villages in the same state’s Indore district were the site of one of the most cited basic income pilots in the world. This essay looks at what that pilot did and found, and its limits; at what India’s 2016-17 Economic Survey said about universal basic income (UBI); and at how close today’s schemes, Ladli Behna, Ladki Bahin and PM-KISAN, come to a basic income."
+          ],
+          [
+            "h",
+            "The Madhya Pradesh pilot (2011–2013)"
+          ],
+          [
+            "p",
+            "The pilot was run by the Self-Employed Women’s Association (SEWA) and funded by UNICEF.[3] In the larger pilot, every man, woman and child in eight villages received a monthly basic income, and their experience was compared with 12 similar “control” villages. From June 2011 to May 2012 each adult received Rs 200 a month and each child Rs 100; the amounts were then raised by 50% for inflation, to Rs 300 and Rs 150, and paid until November 2012. For families at the poverty line, that was about 30% of their spending.[3]"
+          ],
+          [
+            "p",
+            "A smaller pilot ran in one tribal village from February 2012 to January 2013, at Rs 300 per adult and Rs 150 per child a month. 756 people received Rs 1.945 million in all, and the comparison was with another tribal village.[3] In total about 6,000 people in nine villages received a basic income. In the larger pilot 5,547 people were eligible, and the surveys covered 11,231 people in 2,034 households. The villages were chosen at random, and the survey instruments were designed by an independent economist.[3]"
+          ],
+          [
+            "h",
+            "What it found"
+          ],
+          [
+            "p",
+            "The results were published in 2015 in Basic Income: A Transformative Policy for India by Sarath Davala, Renana Jhabvala, Soumya Kapoor Mehta and Guy Standing, which is free to read online.[3] The clearest effect was on nutrition. In the basic income villages, the share of girls with a normal weight for their age rose by more than 25 percentage points, more than double the rise in control villages; for boys it rose by 14 points, against 9 in the control villages. In the tribal village, the share of children severely underweight fell from 32% to 15%.[3]"
+          ],
+          [
+            "p",
+            "Schooling improved too: 29.0% of households receiving the basic income reported higher school attendance, against 13.5% of those not receiving it.[3] Work did not fall; it changed. The main shift was from wage labour to own-account farming and other own work, and women were the main beneficiaries of the growth in secondary economic activity.[3] Debt fell: 12.5% of households in the basic income villages reduced their debt and 5% increased it, while in the control villages only 5% reduced it and over 58% increased it.[3] Among households with a disabled member, 27% of those without the basic income saw their earnings fall, against 12% of those with it.[3]"
+          ],
+          [
+            "t",
+            "Area | Basic income villages | Control villages\nGirls with normal weight for age | Up by more than 25 points | Less than half that\nBoys with normal weight for age | +14 points | +9 points\nHouseholds reporting higher school attendance | 29.0% | 13.5%\nHouseholds that reduced debt | 12.5% | 5%\nHouseholds that increased debt | 5% | Over 58%"
+          ],
+          [
+            "h",
+            "The limits"
+          ],
+          [
+            "p",
+            "These results need careful reading. Only 8 villages received money, with 12 for comparison; randomisation was at the village level, not the individual level. The pilot lasted about a year and a half. Most results rest on what people told surveyors. The book was written by the team behind the pilot, not by outside evaluators. The book itself reports that weight improved by 27 points in SEWA villages and by under 20 in the others, so part of the effect may come from the organisation, not only the money.[3] The authors call the evaluation a “work-in-progress”.[3] We found no independent, peer-reviewed reanalysis of the pilot."
+          ],
+          [
+            "o",
+            "Still, the pilot matters for India. It tested paying every individual, every month, without conditions, and it found no sign of the fears most often raised: that people would stop working or waste the money. It is not a substitute for larger, longer, independently checked studies, but it is good early evidence. A summary is also on our {timeline|/timeline/#tl-india-mp}."
+          ],
+          [
+            "h",
+            "The 2016-17 Economic Survey: “ripe for serious discussion”"
+          ],
+          [
+            "p",
+            "Chapter 9 of the Government of India’s Economic Survey 2016-17 was devoted to UBI. It counted about 950 central schemes and sub-schemes, together about 5% of GDP in budget allocations, and found that the poorest districts often received the least money, which it called evidence of “acute misallocation”.[4] It estimated that a UBI of Rs 7,620 a year, paid to 75% of the population, would cost 4.9% of GDP.[4]"
+          ],
+          [
+            "p",
+            "The Survey also listed the case against: money might go on conspicuous spending, people might work less, men might control the money within households, and once a scheme starts it is politically hard to stop. Its conclusion was that UBI is an idea whose time has come “perhaps not for immediate implementation but at least for serious public deliberation”.[4] Before the 2019 election the Congress party promised NYAY, Rs 72,000 a year for the poorest 20% of families.[5] That was not implemented either."
+          ],
+          [
+            "h",
+            "PM-KISAN: cash for farmers"
+          ],
+          [
+            "p",
+            "What was implemented was PM-KISAN. Since 24 February 2019, every eligible landholding farmer family has received Rs 6,000 a year in three instalments of Rs 2,000, straight into a bank account; income tax payers, government employees and higher-income groups are excluded.[6] The 24th instalment, on 30 October 2026, paid about Rs 186.9 billion to more than 93.4 million farmers, bringing the total paid so far above Rs 4.64 trillion.[7] The 2026-27 budget estimate is Rs 635 billion.[8] It is regular and in cash, but it is paid per family and only to farmers who own land; landless farm labourers are not covered."
+          ],
+          [
+            "h",
+            "Cash for women: Ladli Behna, Ladki Bahin and other states"
+          ],
+          [
+            "p",
+            "Madhya Pradesh’s Ladli Behna scheme was announced on 28 January 2023, ahead of that year’s state election, and first paid on 10 June 2023. It began at Rs 1,000 a month, rose to Rs 1,250 from October 2023 and to Rs 1,500 from November 2025.[9] It is for married women (including widowed, divorced and deserted women) aged 21 to under 60 whose self-declared family income is no more than Rs 250,000 a year; families with an income tax payer, a government employee or pensioner, more than five acres of land or a four-wheeler are excluded. The official portal lists 12,522,542 eligible applicants.[1] Its budget rose from Rs 186.69 billion in 2025-26 to Rs 238.83 billion in 2026-27. In October 2026 Chief Minister Mohan Yadav said: “Little did I know that becoming Chief Minister would bring such a heavy financial burden”.[9]"
+          ],
+          [
+            "p",
+            "Maharashtra’s Majhi Ladki Bahin scheme has paid women aged 21 to 65 Rs 1,500 a month since July 2024.[10][2] The ruling Mahayuti alliance promised in its manifesto to raise it to Rs 2,100, but the 2025-26 budget did not; the allocation fell from Rs 460 billion the year before to Rs 360 billion.[10] A verification drive then removed more than 9.2 million beneficiaries from the roughly 24.3 to 24.7 million found eligible in the first phase. About 6 million women had failed to complete the mandatory e-KYC, and about 1.4 to 1.5 million had a family income above the Rs 250,000 limit. The Comptroller and Auditor General questioned Rs 35.41 billion of spending under the scheme.[11]"
+          ],
+          [
+            "p",
+            "According to PRS, these twelve states ran such schemes in 2025-26:[2]"
+          ],
+          [
+            "t",
+            "State | Scheme | Rs per month | Budget 2025-26 (Rs crore)\nMaharashtra | Majhi Ladki Bahin | 1,500 | 36,000\nKarnataka | Gruha Lakshmi | 2,000 | 28,608\nWest Bengal | Lakshmir Bhandar | 1,000–1,200 | 26,700\nMadhya Pradesh | Ladli Behna | 1,250 | 18,669\nTamil Nadu | Magalir Urimai Thogai | 1,000 | 13,807\nJharkhand | Maiyan Samman | 2,500 | 13,363\nOdisha | Subhadra | 833 | 10,145\nChhattisgarh | Mahtari Vandan | 1,000 | 5,500\nDelhi | Mahila Samriddhi | 2,500 | 5,110\nAssam | Orunodoi | 1,250 | 5,000\nHaryana | Lado Laxmi | 2,100 | 5,000\nHimachal Pradesh | Pyari Behna | 1,500 | 138"
+          ],
+          [
+            "p",
+            "These are 2025-26 budget figures (one crore is ten million); several amounts have changed since, such as Madhya Pradesh’s rise to Rs 1,500 in November 2025.[9] PRS also noted that six of the twelve states expect a revenue deficit, and that these transfers cut Madhya Pradesh’s revenue surplus from 1.1% of state GDP to 0.4%.[2]"
+          ],
+          [
+            "h",
+            "Where the money goes"
+          ],
+          [
+            "p",
+            "There are still few studies of these schemes’ effects. In a July 2026 working paper for the Economic Advisory Council to the Prime Minister (EAC-PM), economists at the State Bank of India used bank account data and found that Ladki Bahin raised beneficiaries’ month-end balances by about 84% (Rs 6,884) and their spending by about 46% (Rs 1,349); Odisha’s Subhadra scheme raised balances by about 45% and spending by 28%. About 90 paise of each extra rupee was spent, which the authors read as a sign of tight budgets.[12] The comparison was with women whose family income was just above the eligibility limit. These are account data: they show saving and spending, not effects on nutrition, schooling or decisions at home."
+          ],
+          [
+            "h",
+            "Is it a basic income?"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”.[14] Measured against it:"
+          ],
+          [
+            "t",
+            "Criterion | Madhya Pradesh pilot | Ladli Behna | PM-KISAN\nPeriodic | Yes, monthly | Yes, monthly | Yes, three times a year\nCash | Yes | Yes | Yes\nIndividual | Yes, every adult and child | Yes, into the woman’s own account | No, per farmer family\nUniversal | Everyone in the village | No, married women aged 21–60 | No, landholding farmers\nUnconditional | Yes | Income and other conditions | Income and other conditions"
+          ],
+          [
+            "p",
+            "The Madhya Pradesh pilot, small as it was, was very nearly a basic income. Today’s schemes are regular and in cash, and the women’s schemes are individual, but they are not universal: they depend on income, age, marital status or land. “Targeted cash transfers” is the more accurate name."
+          ],
+          [
+            "h",
+            "What would it cost for everyone?"
+          ],
+          [
+            "p",
+            "If Ladli Behna’s Rs 1,500 a month went to every adult in India, {the basic income calculator|/calc/?c=in&w=adults&m=1500} puts the gross cost at about Rs 18.6 lakh crore (Rs 18.6 trillion) a year, about 5.4% of GDP. For comparison, India’s nominal GDP in 2025-26 was Rs 346.36 lakh crore;[13] the states’ schemes for women together come to about 0.5% of GDP,[2] and PM-KISAN to about 0.18%.[8] The Economic Survey’s 4.9% assumed a smaller amount (Rs 7,620 a year) for 75% of people.[4] These are gross figures; they do not count savings from replacing other schemes."
+          ],
+          [
+            "h",
+            "Neither “basic income has arrived in India” nor “just election freebies”"
+          ],
+          [
+            "o",
+            "Ladli Behna and Ladki Bahin are not basic incomes. They are for some women, with conditions, and they were often launched or raised just before elections. When the bills grow, promised increases are postponed and lists shrink in the name of verification; not every woman who could not complete e-KYC is ineligible."
+          ],
+          [
+            "o",
+            "But dismissing them as mere freebies is also wrong. The machinery to put cash into tens of millions of women’s own accounts every month now exists, and account data show the money is mostly spent and saved. The Madhya Pradesh pilot showed that unconditional cash for every individual can turn into better nutrition, schooling and work."
+          ],
+          [
+            "o",
+            "The question is whether these schemes can move beyond the election cycle towards a stable, legally grounded and honestly evaluated income floor. That needs three things: sustainable funding, fewer and clearer conditions, and independent evaluation. The state that ran the experiment in 2011 also has the best chance to take that step."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "インドのマディヤ・プラデーシュ州では毎月、約1250万人の女性の銀行口座に、「ラードリー・ベヘナー」という制度から1500ルピーが振り込まれます。[1] こうした州はほかにもあります。インドの調査機関PRSレジスレーティブ・リサーチによると、女性にほぼ無条件で現金を配る州は、2022〜23年度の2州から2025〜26年度には12州に増え、合わせて1兆6804億ルピー、GDPの約0.5%を支出する見込みです。[2]"
+          ],
+          [
+            "p",
+            "その10年以上前、同じ州のインドール県の村々で、世界でもよく引用されるベーシックインカムの実験が行われていました。この記事では、その実験が何をして何を見つけたのか、その限界、2016〜17年度の経済白書がユニバーサル・ベーシックインカム（UBI）について何と書いたのか、そしていまのラードリー・ベヘナー、ラードキー・バヒン、PM-KISANがベーシックインカムにどこまで近いのかを見ていきます。"
+          ],
+          [
+            "h",
+            "マディヤ・プラデーシュの実験（2011〜2013年）"
+          ],
+          [
+            "p",
+            "実験を運営したのは自営女性協会（SEWA）で、資金はユニセフが出しました。[3] 大きいほうの実験では、8つの村の男性、女性、子ども全員に毎月ベーシックインカムを配り、よく似た12の「対照」村と比べました。2011年6月から2012年5月までは大人1人に月200ルピー、子どもに100ルピー。その後、物価に合わせて50%引き上げて300ルピーと150ルピーにし、2012年11月まで支給しました。貧困線上の家庭にとって、これは支出の約30%にあたる額でした。[3]"
+          ],
+          [
+            "p",
+            "小さいほうの実験は、ひとつの部族の村で2012年2月から2013年1月まで行われ、大人に月300ルピー、子どもに150ルピーを配りました。受け取ったのは756人で、総額は194万5000ルピー。比較の相手は、別の部族の村です。[3] 合わせて9つの村の約6000人がベーシックインカムを受け取りました。大きいほうの実験の対象者は5547人で、調査は2034世帯の1万1231人をカバーしています。村はランダムに選ばれ、調査票は独立した経済学者がつくりました。[3]"
+          ],
+          [
+            "h",
+            "何がわかったのか"
+          ],
+          [
+            "p",
+            "結果は2015年、サラト・ダヴァラ、レナナ・ジャブヴァーラー、ソウミヤ・カプール・メータ、ガイ・スタンディングの共著『Basic Income: A Transformative Policy for India』にまとめられ、オンラインで無料で読めます。[3] いちばんはっきりした効果は栄養に出ました。ベーシックインカムの村では、年齢に対して標準体重の女の子の割合が25ポイント以上増え、対照村の2倍を超えました。男の子は14ポイント増で、対照村は9ポイントでした。部族の村では、ひどい低体重の子どもの割合が32%から15%に下がりました。[3]"
+          ],
+          [
+            "p",
+            "学校にも違いが出ました。ベーシックインカムを受け取った世帯の29.0%が子どもの出席が増えたと答え、受け取らなかった世帯では13.5%でした。[3] 働く量は減らず、働き方が変わりました。いちばん大きな変化は、日雇いの賃労働から自分の農業や自営への移動で、副業的な経済活動が増えた恩恵をいちばん受けたのは女性でした。[3] 借金も減りました。ベーシックインカムの村では12.5%の世帯が借金を減らし、増やしたのは5%。対照村では減らしたのが5%だけで、58%を超える世帯が増やしています。[3] 障害のある家族がいる世帯では、ベーシックインカムを受け取らなかった世帯の27%で稼ぎが減り、受け取った世帯では12%でした。[3]"
+          ],
+          [
+            "t",
+            "分野 | ベーシックインカムの村 | 対照村\n標準体重の女の子 | 25ポイント超の増加 | その半分未満\n標準体重の男の子 | +14ポイント | +9ポイント\n学校の出席が増えた世帯 | 29.0% | 13.5%\n借金を減らした世帯 | 12.5% | 5%\n借金を増やした世帯 | 5% | 58%超"
+          ],
+          [
+            "h",
+            "限界"
+          ],
+          [
+            "p",
+            "これらの結果は、注意して読む必要があります。お金を受け取ったのは8つの村だけで、比較対象は12の村。ランダムに選んだのは村単位で、個人単位ではありません。期間は約1年半。結果の多くは、調査に対する本人の答えにもとづいています。本を書いたのは、実験を設計したチーム自身で、外部の評価者ではありません。本自体が、体重の改善はSEWAの村で27ポイント、ほかの村では20ポイント未満だったと書いていて、効果の一部はお金だけでなく組織によるものかもしれません。[3] 著者たちは、この評価を「進行中の仕事」と呼んでいます。[3] 独立した査読つきの再分析は、見つかりませんでした。"
+          ],
+          [
+            "o",
+            "それでも、この実験はインドにとって大切です。一人ひとりに、毎月、無条件でお金を配るとどうなるかを試し、よく言われる心配、つまり人が働かなくなるとか、お金を無駄にするといった兆候は見つかりませんでした。もっと大きく、長く、独立に検証された研究の代わりにはなりませんが、よい初期の証拠です。要点は{年表|/timeline/#tl-india-mp}にもあります。"
+          ],
+          [
+            "h",
+            "2016〜17年度の経済白書：「真剣に議論する時期」"
+          ],
+          [
+            "p",
+            "インド政府の経済白書（Economic Survey）2016〜17年度版は、第9章をまるごとUBIにあてました。中央政府の制度や下位制度は約950あり、予算配分は合わせてGDPの約5%。いちばん貧しい県ほど少ないお金しか受け取っていないことも多く、白書はそれを「深刻な配分の誤り」の証拠だと書いています。[4] 年7620ルピーのUBIを人口の75%に配ると、費用はGDPの4.9%になると見積もりました。[4]"
+          ],
+          [
+            "p",
+            "白書は反対論も挙げています。見栄の消費に使われるかもしれない、働く量が減るかもしれない、家庭の中でお金を男性が握るかもしれない、いったん始めた制度は政治的にやめにくい。結論は、UBIは「すぐに実施するためではないかもしれないが、少なくとも真剣に公の場で議論するための」時期が来た考えだ、というものでした。[4] 2019年の総選挙の前には、国民会議派が「NYAY」を公約し、もっとも貧しい20%の世帯に年7万2000ルピーを配るとしました。[5] これも実現していません。"
+          ],
+          [
+            "h",
+            "PM-KISAN：農家への現金"
+          ],
+          [
+            "p",
+            "実現したのはPM-KISANです。2019年2月24日から、土地を持つ条件を満たした農家の世帯に、年6000ルピーを2000ルピーずつ3回、銀行口座に直接払っています。所得税を払う人、公務員、高所得層は対象外です。[6] 2026年10月30日の第24回の支給では、9340万を超える農家に約1869億ルピーが払われ、これまでの累計は4兆6400億ルピーを超えました。[7] 2026〜27年度の予算見積もりは6350億ルピーです。[8] 定期的な現金ではありますが、世帯単位で、土地を持つ農家だけが対象です。土地を持たない農業労働者は入りません。"
+          ],
+          [
+            "h",
+            "女性への現金：ラードリー・ベヘナー、ラードキー・バヒン、ほかの州"
+          ],
+          [
+            "p",
+            "マディヤ・プラデーシュ州のラードリー・ベヘナーは、2023年1月28日、その年の州議会選挙の前に発表され、最初の支給は2023年6月10日でした。月1000ルピーで始まり、2023年10月から1250ルピー、2025年11月から1500ルピーになっています。[9] 対象は21歳以上60歳未満の既婚女性（夫と死別、離婚、遺棄された女性も含む）で、自己申告の世帯年収が25万ルピー以下であること。所得税を払う人、公務員や年金受給者がいる世帯、5エーカーを超える土地や四輪車を持つ世帯は対象外です。公式ポータルでは、対象と認められた申請者は1252万2542人です。[1] 予算は2025〜26年度の1866億9000万ルピーから、2026〜27年度には2388億3000万ルピーに増えました。2026年10月、モーハン・ヤーダヴ州首相は「州首相になって、これほど重い財政負担を背負うとは思わなかった」と語っています。[9]"
+          ],
+          [
+            "p",
+            "マハーラーシュトラ州の「マージー・ラードキー・バヒン」は、2024年7月から21〜65歳の女性に月1500ルピーを払っています。[10][2] 与党連合マハーユティは選挙公約で2100ルピーへの引き上げを約束しましたが、2025〜26年度予算では見送られ、配分は前年の4600億ルピーから3600億ルピーに減りました。[10] その後の確認作業で、最初の段階で対象とされた約2430万〜2470万人のうち、920万人を超える受給者が外されました。約600万人が必須のe-KYC（オンライン本人確認）を終えられず、約140万〜150万人は世帯年収が25万ルピーの上限を超えていました。会計検査院（CAG）は、この制度の354億1000万ルピーの支出に疑問を示しています。[11]"
+          ],
+          [
+            "p",
+            "PRSによると、2025〜26年度にこうした制度を行っていたのは次の12州です。[2]"
+          ],
+          [
+            "t",
+            "州 | 制度 | 月額（ルピー） | 2025〜26年度予算（クロール・ルピー）\nマハーラーシュトラ | マージー・ラードキー・バヒン | 1,500 | 36,000\nカルナータカ | グルハ・ラクシュミー | 2,000 | 28,608\n西ベンガル | ラクシュミール・バンダール | 1,000〜1,200 | 26,700\nマディヤ・プラデーシュ | ラードリー・ベヘナー | 1,250 | 18,669\nタミル・ナードゥ | マガリル・ウリマイ・トーガイ | 1,000 | 13,807\nジャールカンド | マイヤーン・サンマーン | 2,500 | 13,363\nオディシャ | スバドラー | 833 | 10,145\nチャッティースガル | マフターリー・ヴァンダン | 1,000 | 5,500\nデリー | マヒラー・サムリッディ | 2,500 | 5,110\nアッサム | オルノドイ | 1,250 | 5,000\nハリヤーナー | ラード・ラクシュミー | 2,100 | 5,000\nヒマーチャル・プラデーシュ | ピャーリー・ベヘナー | 1,500 | 138"
+          ],
+          [
+            "p",
+            "これは2025〜26年度予算の数字です（1クロールは1000万）。その後、金額が変わった州もあり、たとえばマディヤ・プラデーシュでは2025年11月から1500ルピーになりました。[9] PRSは、12州のうち6州が経常赤字を見込んでいること、これらの給付でマディヤ・プラデーシュの経常黒字が州内総生産の1.1%から0.4%に縮むことも指摘しています。[2]"
+          ],
+          [
+            "h",
+            "お金はどこへ行くのか"
+          ],
+          [
+            "p",
+            "これらの制度の効果を調べた研究は、まだ多くありません。首相経済諮問会議（EAC-PM）の2026年7月のワーキングペーパーで、インドステイト銀行のエコノミストが銀行口座のデータを分析し、ラードキー・バヒンで受給者の月末残高が約84%（6884ルピー）、支出が約46%（1349ルピー）増えたことを示しました。オディシャ州のスバドラーでは、残高が約45%、支出が28%増えています。追加の1ルピーのうち約90パイサが使われていて、著者はこれを家計の手元資金が苦しいことの表れだと見ています。[12] 比較の相手は、世帯所得が対象の上限を少しだけ上回る女性です。これは口座のデータなので、貯蓄と支出はわかりますが、栄養や教育、家庭内の意思決定への効果はわかりません。"
+          ],
+          [
+            "h",
+            "ベーシックインカムと言えるのか"
+          ],
+          [
+            "p",
+            "ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義しています。[14] このものさしで3つを比べてみます。"
+          ],
+          [
+            "t",
+            "ものさし | マディヤ・プラデーシュの実験 | ラードリー・ベヘナー | PM-KISAN\n定期的 | はい。毎月 | はい。毎月 | はい。年3回\n現金 | はい | はい | はい\n個人単位 | はい。大人も子どもも一人ひとり | はい。女性本人の口座へ | いいえ。農家の世帯単位\n全員 | 村の全員 | いいえ。21〜60歳の既婚女性 | いいえ。土地を持つ農家\n無条件 | はい | 所得などの条件あり | 所得などの条件あり"
+          ],
+          [
+            "p",
+            "マディヤ・プラデーシュの実験は、小規模とはいえ、ほぼベーシックインカムそのものでした。いまの制度は定期的な現金で、女性向けのものは個人単位でもありますが、全員ではありません。所得、年齢、婚姻、土地といった条件がついています。「対象を絞った現金給付」と呼ぶほうが正確です。"
+          ],
+          [
+            "h",
+            "全員に配ると、いくらかかるのか"
+          ],
+          [
+            "p",
+            "ラードリー・ベヘナーと同じ月1500ルピーをインドの大人全員に配ると、{ベーシックインカム計算機|/calc/?c=in&w=adults&m=1500}では、グロスで年約18.6兆ルピー、GDPの約5.4%です。比べると、2025〜26年度のインドの名目GDPは346兆3600億ルピー。[13] 女性向けの州の制度は合わせてGDPの約0.5%、[2] PM-KISANは約0.18%です。[8] 経済白書の4.9%は、もっと少ない額（年7620ルピー）を人口の75%に配る想定でした。[4] いずれも配る総額で、ほかの制度を置き換えたときの節約分は数えていません。"
+          ],
+          [
+            "h",
+            "「インドにベーシックインカムが来た」でも、「ただのばらまき」でもない"
+          ],
+          [
+            "o",
+            "ラードリー・ベヘナーやラードキー・バヒンは、ベーシックインカムではありません。一部の女性に、条件つきで配るもので、選挙の直前に始まったり、増額されたりしてきました。費用が重くなると、増額の約束は先送りされ、確認の名のもとで名簿が縮みます。e-KYCを終えられなかった女性が、みな対象外だったわけではありません。"
+          ],
+          [
+            "o",
+            "かといって、「ばらまき」の一言で切り捨てるのも違います。何千万人もの女性本人の口座に、毎月現金を届ける仕組みは、もうできています。口座のデータを見ると、そのお金はおもに支出と貯蓄に使われています。そしてマディヤ・プラデーシュの実験は、一人ひとりに届く無条件のお金が、栄養や教育、仕事に変わりうることを示していました。"
+          ],
+          [
+            "o",
+            "問われているのは、これらの制度が選挙のサイクルを超えて、安定した、法にもとづく、正直に検証される所得の土台へと進めるかどうかです。そのためには3つが要ります。続けられる財源、少なくて明確な条件、そして独立した評価。2011年にあの実験をした州こそが、その一歩を踏み出すいちばんの機会を持っています。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "在印度中央邦，每个月约有 1250 万名女性的银行账户会收到“Ladli Behna”计划发放的 1500 卢比。[1] 这并不是个例。据印度研究机构 PRS 立法研究所统计，向女性发放基本无条件现金的邦，从 2022-23 财年的 2 个增加到 2025-26 财年的 12 个，这些邦预计在这些计划上共支出 1.68 万亿卢比，约为 GDP 的 0.5%。[2]"
+          ],
+          [
+            "p",
+            "早在十多年前，同一个邦印多尔县的村庄里，就进行过一次世界上被引用最多的基本收入实验之一。本文将介绍那次实验做了什么、发现了什么、有什么局限；2016-17 年度《经济调查》对全民基本收入（UBI）说了什么；以及今天的 Ladli Behna、Ladki Bahin 和 PM-KISAN 离基本收入有多近。"
+          ],
+          [
+            "h",
+            "中央邦实验（2011–2013 年）"
+          ],
+          [
+            "p",
+            "实验由自雇妇女协会（SEWA）实施，联合国儿童基金会出资。[3] 在较大的实验中，8 个村庄的每一位男性、女性和儿童每月都领到基本收入，并与 12 个相似的“对照”村比较。2011 年 6 月至 2012 年 5 月，每个成年人每月 200 卢比，每个孩子 100 卢比；之后为抵消通胀提高 50%，变为 300 卢比和 150 卢比，一直发到 2012 年 11 月。对处在贫困线上的家庭来说，这约相当于其支出的 30%。[3]"
+          ],
+          [
+            "p",
+            "较小的实验在一个部落村进行，从 2012 年 2 月到 2013 年 1 月，每个成年人每月 300 卢比，每个孩子 150 卢比。共有 756 人领到，总额 194.5 万卢比，并与另一个部落村比较。[3] 总计九个村庄约 6000 人领到了基本收入。较大实验中有 5547 人符合条件，调查覆盖 2034 户的 11231 人。村庄是随机选出的，调查问卷由一位独立经济学家设计。[3]"
+          ],
+          [
+            "h",
+            "发现了什么"
+          ],
+          [
+            "p",
+            "结果于 2015 年发表在萨拉特·达瓦拉、雷娜娜·贾布瓦拉、苏米娅·卡普尔·梅塔和盖伊·斯坦丁合著的《Basic Income: A Transformative Policy for India》中，可在网上免费阅读。[3] 最明显的效果在营养上。在基本收入村，年龄别体重正常的女孩比例上升了 25 个百分点以上，是对照村升幅的两倍多；男孩上升 14 个百分点，对照村为 9 个。在部落村，严重低体重儿童的比例从 32% 降到 15%。[3]"
+          ],
+          [
+            "p",
+            "上学情况也有改善：领取基本收入的家庭中有 29.0% 报告孩子出勤增加，未领取的家庭为 13.5%。[3] 劳动没有减少，而是发生了变化：最大的转变是从雇佣劳动转向自家耕作和自营工作，而副业经济活动增长的最大受益者是女性。[3] 债务减少：基本收入村有 12.5% 的家庭减少了债务、5% 增加了债务；对照村只有 5% 减少，超过 58% 增加。[3] 在有残疾成员的家庭中，没有领到基本收入的家庭有 27% 收入下降，领到的家庭为 12%。[3]"
+          ],
+          [
+            "t",
+            "方面 | 基本收入村 | 对照村\n年龄别体重正常的女孩 | 上升超过 25 个百分点 | 不到其一半\n年龄别体重正常的男孩 | +14 个百分点 | +9 个百分点\n报告出勤增加的家庭 | 29.0% | 13.5%\n减少债务的家庭 | 12.5% | 5%\n增加债务的家庭 | 5% | 超过 58%"
+          ],
+          [
+            "h",
+            "局限"
+          ],
+          [
+            "p",
+            "这些结果需要谨慎解读。只有 8 个村拿到钱，12 个村用于比较；随机化在村一级，而不是个人一级。实验持续约一年半。大多数结果来自受访者自己的回答。这本书由设计这次实验的团队自己撰写，而不是外部评估者。书中自己也写到，SEWA 村的体重改善为 27 个百分点，其他村不到 20 个，所以部分效果可能来自组织，而不只是钱。[3] 作者自己称这项评估是“进行中的工作”。[3] 我们没有找到独立的、经同行评审的再分析。"
+          ],
+          [
+            "o",
+            "尽管如此，这次实验对印度很重要。它试验了每月、无条件地把钱发给每一个人，没有发现人们最常担心的迹象：不再工作，或把钱浪费掉。它不能代替更大、更长、经独立检验的研究，但它是很好的早期证据。我们的{年表|/timeline/#tl-india-mp}也有它的概要。"
+          ],
+          [
+            "h",
+            "2016-17 年度《经济调查》：“值得认真讨论”"
+          ],
+          [
+            "p",
+            "印度政府 2016-17 年度《经济调查》第 9 章整章讨论 UBI。它统计出中央约有 950 个计划和子计划，预算拨款合计约占 GDP 的 5%，而且往往是最贫困的县拿到的钱最少，它称之为“严重错配”的证据。[4] 它估计，每年 7620 卢比的 UBI 如果发给 75% 的人口，成本为 GDP 的 4.9%。[4]"
+          ],
+          [
+            "p",
+            "《经济调查》也列出了反对理由：钱可能被用于炫耀性消费，人们可能减少工作，家庭内部的钱可能由男性掌控，计划一旦开始在政治上就很难停止。它的结论是，UBI 这个想法的时机已经到来，“也许不是立即实施，但至少值得认真的公共讨论”。[4] 2019 年大选前，国大党承诺推行 NYAY，向最贫困的 20% 家庭每年发放 7.2 万卢比。[5] 这也没有实现。"
+          ],
+          [
+            "h",
+            "PM-KISAN：给农民的现金"
+          ],
+          [
+            "p",
+            "真正实施的是 PM-KISAN。自 2019 年 2 月 24 日起，每个符合条件的有地农户每年领取 6000 卢比，分三期、每期 2000 卢比，直接打入银行账户；缴纳所得税者、政府雇员和高收入群体被排除在外。[6] 2026 年 10 月 30 日第 24 期向 9340 多万农民发放约 1869 亿卢比，累计发放已超过 4.64 万亿卢比。[7] 2026-27 财年的预算估计为 6350 亿卢比。[8] 它是定期的现金，但按家庭发放，而且只给有地的农民；没有土地的农业雇工不在其中。"
+          ],
+          [
+            "h",
+            "给女性的现金：Ladli Behna、Ladki Bahin 和其他邦"
+          ],
+          [
+            "p",
+            "中央邦的 Ladli Behna 计划于 2023 年 1 月 28 日、当年邦议会选举之前宣布，2023 年 6 月 10 日首次发放。起初每月 1000 卢比，2023 年 10 月起为 1250 卢比，2025 年 11 月起为 1500 卢比。[9] 对象是 21 岁以上、60 岁以下的已婚女性（包括丧偶、离婚和被遗弃的女性），自报家庭年收入不超过 25 万卢比；家里有缴纳所得税者、政府雇员或领养老金者，或拥有 5 英亩以上土地或四轮汽车的家庭被排除。官方门户网站显示，符合条件的申请人共 12522542 人。[1] 预算从 2025-26 财年的 1866.9 亿卢比增加到 2026-27 财年的 2388.3 亿卢比。2026 年 10 月，首席部长莫汉·亚达夫说：“我没想到当上首席部长会带来如此沉重的财政负担”。[9]"
+          ],
+          [
+            "p",
+            "马哈拉施特拉邦的 Majhi Ladki Bahin 计划自 2024 年 7 月起，每月向 21 至 65 岁的女性发放 1500 卢比。[10][2] 执政联盟在竞选纲领中承诺提高到 2100 卢比，但 2025-26 年预算没有提高，拨款从上一年的 4600 亿卢比降到 3600 亿卢比。[10] 随后的核查行动从第一阶段认定的约 2430 万至 2470 万名受益人中删除了 920 万以上。约 600 万名女性未完成强制性的 e-KYC 电子身份认证，约 140 万至 150 万人家庭收入超过 25 万卢比的上限。审计长（CAG）对该计划 354.1 亿卢比的支出提出质疑。[11]"
+          ],
+          [
+            "p",
+            "据 PRS 统计，2025-26 财年实施这类计划的 12 个邦如下：[2]"
+          ],
+          [
+            "t",
+            "邦 | 计划 | 每月（卢比） | 2025-26 预算（千万卢比）\n马哈拉施特拉 | Majhi Ladki Bahin | 1,500 | 36,000\n卡纳塔克 | Gruha Lakshmi | 2,000 | 28,608\n西孟加拉 | Lakshmir Bhandar | 1,000–1,200 | 26,700\n中央邦 | Ladli Behna | 1,250 | 18,669\n泰米尔纳德 | Magalir Urimai Thogai | 1,000 | 13,807\n恰尔肯德 | Maiyan Samman | 2,500 | 13,363\n奥里萨 | Subhadra | 833 | 10,145\n恰蒂斯加尔 | Mahtari Vandan | 1,000 | 5,500\n德里 | Mahila Samriddhi | 2,500 | 5,110\n阿萨姆 | Orunodoi | 1,250 | 5,000\n哈里亚纳 | Lado Laxmi | 2,100 | 5,000\n喜马偕尔 | Pyari Behna | 1,500 | 138"
+          ],
+          [
+            "p",
+            "这些是 2025-26 年预算数字（1 千万即 1 crore）；此后有些邦的金额有变化，例如中央邦 2025 年 11 月起提高到 1500 卢比。[9] PRS 还指出，这 12 个邦中有 6 个预计出现财政收入赤字，而这些转移支付使中央邦的收入盈余从邦内生产总值的 1.1% 降到 0.4%。[2]"
+          ],
+          [
+            "h",
+            "钱流向哪里"
+          ],
+          [
+            "p",
+            "关于这些计划效果的研究还很少。在印度总理经济顾问委员会（EAC-PM）2026 年 7 月的一篇工作论文中，印度国家银行的经济学家利用银行账户数据发现，Ladki Bahin 使受益人的月末余额增加约 84%（6884 卢比），支出增加约 46%（1349 卢比）；奥里萨邦的 Subhadra 使余额增加约 45%，支出增加 28%。每多一卢比约有 0.9 卢比被花掉，作者认为这说明手头资金紧张。[12] 比较对象是家庭收入略高于资格上限的女性。这些是账户数据：能看到储蓄和支出，看不到对营养、上学或家庭决策的影响。"
+          ],
+          [
+            "h",
+            "它们算基本收入吗？"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）把基本收入定义为“无条件地以个人为单位发给所有人的定期现金支付，不需要经济状况调查或工作要求”。[14] 用这把尺子衡量三者："
+          ],
+          [
+            "t",
+            "标准 | 中央邦实验 | Ladli Behna | PM-KISAN\n定期 | 是，每月 | 是，每月 | 是，每年三次\n现金 | 是 | 是 | 是\n个人 | 是，每个成年人和孩子 | 是，打到女性本人账户 | 否，按农户\n普遍 | 村里所有人 | 否，21–60 岁已婚女性 | 否，有地农民\n无条件 | 是 | 有收入等条件 | 有收入等条件"
+          ],
+          [
+            "p",
+            "中央邦实验虽然规模小，却几乎就是基本收入。今天的计划是定期的现金，女性计划也是按个人发放，但它们并不普遍：都与收入、年龄、婚姻状况或土地挂钩。称它们为“定向现金转移”更准确。"
+          ],
+          [
+            "h",
+            "发给所有人要多少钱"
+          ],
+          [
+            "p",
+            "如果把 Ladli Behna 的每月 1500 卢比发给印度每一个成年人，{基本收入计算器|/calc/?c=in&w=adults&m=1500}算出的毛额约为每年 18.6 万亿卢比，约占 GDP 的 5.4%。作为对照，印度 2025-26 财年的名义 GDP 为 346.36 万亿卢比；[13] 各邦的女性计划合计约占 GDP 的 0.5%，[2] PM-KISAN 约占 0.18%。[8] 《经济调查》的 4.9% 假设的是更少的金额（每年 7620 卢比），发给 75% 的人。[4] 这些都是毛额，没有计入替代其他计划所能节省的钱。"
+          ],
+          [
+            "h",
+            "既不是“印度有了基本收入”，也不只是“选举撒钱”"
+          ],
+          [
+            "o",
+            "Ladli Behna 和 Ladki Bahin 不是基本收入。它们只给部分女性，附有条件，而且常常在选举前推出或加码。当开支变得沉重，加码的承诺被推迟，名单以核查的名义缩小；没能完成 e-KYC 的女性，并不都是不符合条件的人。"
+          ],
+          [
+            "o",
+            "但把它们一概斥为“撒钱”也不对。每月把现金打进数千万女性本人账户的系统已经建成，账户数据显示，这些钱大多被用于支出和储蓄。中央邦实验也曾表明，发给每个人的无条件现金，可以转化为更好的营养、教育和工作。"
+          ],
+          [
+            "o",
+            "问题在于，这些计划能否走出选举周期，走向一份稳定的、有法律依据的、经过诚实评估的收入底线。这需要三样东西：可持续的资金、更少更清楚的条件，以及独立的评估。2011 年做过那次实验的邦，也最有机会迈出这一步。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "मध्य प्रदेश में हर महीने लगभग 1.25 करोड़ महिलाओं के बैंक खातों में लाडली बहना योजना के 1,500 रुपये आते हैं।[1] यह अकेला राज्य नहीं है। PRS लेजिस्लेटिव रिसर्च के अनुसार महिलाओं को लगभग बिना शर्त नकद देने वाले राज्य 2022-23 में दो थे, जो 2025-26 में बारह हो गए, और ये राज्य मिलकर इन योजनाओं पर 1,68,040 करोड़ रुपये ख़र्च करने का अनुमान रखते हैं, यानी GDP का लगभग 0.5%।[2]"
+          ],
+          [
+            "p",
+            "इससे दस साल से भी पहले, इसी मध्य प्रदेश के इंदौर ज़िले के गाँवों में दुनिया के सबसे ज़्यादा उद्धृत बेसिक इनकम प्रयोगों में से एक चला था। इस लेख में हम देखेंगे कि उस प्रयोग में क्या हुआ और क्या मिला, उसकी सीमाएँ क्या थीं, 2016-17 के आर्थिक सर्वेक्षण ने यूनिवर्सल बेसिक इनकम (UBI) के बारे में क्या कहा, और आज की लाडली बहना, लाडकी बहीण और PM-KISAN जैसी योजनाएँ बेसिक इनकम से कितनी क़रीब या दूर हैं।"
+          ],
+          [
+            "h",
+            "मध्य प्रदेश का प्रयोग (2011–2013)"
+          ],
+          [
+            "p",
+            "यह प्रयोग सेल्फ़-एम्प्लॉयड विमेंस एसोसिएशन (SEWA) ने चलाया और पैसा UNICEF ने दिया।[3] बड़े प्रयोग में आठ गाँवों के हर पुरुष, महिला और बच्चे को हर महीने बेसिक इनकम दी गई, और उनकी तुलना 12 मिलते-जुलते \"कंट्रोल\" गाँवों से की गई। जून 2011 से मई 2012 तक हर वयस्क को 200 रुपये और हर बच्चे को 100 रुपये महीना मिले; फिर महँगाई के हिसाब से रक़म 50% बढ़ाकर 300 और 150 रुपये की गई, जो नवंबर 2012 तक दी गई। ग़रीबी रेखा पर जी रहे परिवारों के लिए यह उनके ख़र्च का लगभग 30% था।[3]"
+          ],
+          [
+            "p",
+            "एक छोटा प्रयोग एक आदिवासी गाँव में हुआ: फ़रवरी 2012 से जनवरी 2013 तक, हर वयस्क को 300 और हर बच्चे को 150 रुपये महीना। 756 लोगों को कुल 19.45 लाख रुपये मिले, और तुलना एक दूसरे आदिवासी गाँव से की गई।[3] कुल मिलाकर नौ गाँवों के लगभग 6,000 लोगों को बेसिक इनकम मिली। बड़े प्रयोग में 5,547 लोग पात्र थे, और सर्वे में 2,034 घरों के 11,231 लोग शामिल थे। गाँवों का चुनाव बेतरतीब (रैंडम) तरीक़े से हुआ, और सर्वे के सवाल एक स्वतंत्र अर्थशास्त्री ने बनाए।[3]"
+          ],
+          [
+            "h",
+            "क्या मिला"
+          ],
+          [
+            "p",
+            "नतीजे 2015 में सरथ दावला, रेनाना झाबवाला, सौम्या कपूर मेहता और गाय स्टैंडिंग की किताब \"Basic Income: A Transformative Policy for India\" में छपे, जो मुफ़्त में ऑनलाइन उपलब्ध है।[3] सबसे साफ़ असर पोषण पर था। बेसिक इनकम वाले गाँवों में सामान्य वज़न (उम्र के हिसाब से) वाली लड़कियों का हिस्सा 25 प्रतिशत अंक से ज़्यादा बढ़ा, जो कंट्रोल गाँवों के दोगुने से भी ज़्यादा था; लड़कों में यह 14 अंक बढ़ा, जबकि कंट्रोल गाँवों में 9। आदिवासी गाँव में गंभीर रूप से कम वज़न वाले बच्चों का हिस्सा 32% से घटकर 15% रह गया।[3]"
+          ],
+          [
+            "p",
+            "स्कूल में भी फ़र्क़ दिखा: बेसिक इनकम पाने वाले 29.0% घरों ने बताया कि बच्चों की हाज़िरी बढ़ी, जबकि न पाने वालों में 13.5% ने।[3] काम घटा नहीं, बदला: सबसे बड़ा बदलाव मज़दूरी से अपनी खेती और अपने काम की ओर था, और सहायक आर्थिक गतिविधियों के बढ़ने का सबसे ज़्यादा फ़ायदा महिलाओं को हुआ।[3] क़र्ज़ घटा: बेसिक इनकम वाले गाँवों के 12.5% घरों ने क़र्ज़ घटाया और 5% ने बढ़ाया, जबकि कंट्रोल गाँवों में सिर्फ़ 5% ने घटाया और 58% से ज़्यादा ने बढ़ाया।[3] विकलांग सदस्यों वाले जिन घरों को बेसिक इनकम नहीं मिली, उनमें 27% की कमाई घटी, जबकि पाने वालों में 12% की।[3]"
+          ],
+          [
+            "t",
+            "क्षेत्र | बेसिक इनकम वाले गाँव | कंट्रोल गाँव\nसामान्य वज़न वाली लड़कियाँ | 25 अंक से ज़्यादा बढ़त | इसके आधे से कम\nसामान्य वज़न वाले लड़के | +14 अंक | +9 अंक\nस्कूल हाज़िरी बढ़ी (घरों के अनुसार) | 29.0% | 13.5%\nक़र्ज़ घटाया | 12.5% घर | 5% घर\nक़र्ज़ बढ़ाया | 5% घर | 58% से ज़्यादा घर"
+          ],
+          [
+            "h",
+            "सीमाएँ"
+          ],
+          [
+            "p",
+            "इन नतीजों को ध्यान से पढ़ना चाहिए। सिर्फ़ 8 गाँवों को पैसा मिला और 12 गाँव तुलना के लिए थे; रैंडम चुनाव गाँव के स्तर पर हुआ, व्यक्ति के स्तर पर नहीं। प्रयोग लगभग डेढ़ साल चला। ज़्यादातर नतीजे सर्वे में लोगों के अपने जवाबों पर आधारित हैं। किताब उसी टीम ने लिखी जिसने प्रयोग की रूपरेखा बनाई थी, बाहरी मूल्यांकनकर्ताओं ने नहीं। किताब ख़ुद बताती है कि SEWA वाले गाँवों में वज़न में सुधार 27 अंक था और बाक़ी गाँवों में 20 से कम, यानी असर का एक हिस्सा संगठन का भी हो सकता है, सिर्फ़ पैसे का नहीं।[3] लेखक इस मूल्यांकन को ख़ुद \"work-in-progress\" कहते हैं।[3] हमें इस प्रयोग का कोई स्वतंत्र, पीयर-रिव्यू किया हुआ पुनर्विश्लेषण नहीं मिला।"
+          ],
+          [
+            "o",
+            "फिर भी, भारत के लिए यह प्रयोग अहम है, क्योंकि इसने हर व्यक्ति को, हर महीने, बिना शर्त पैसा देकर देखा, और जिस डर की सबसे ज़्यादा बात होती है, कि लोग काम छोड़ देंगे या पैसा उड़ा देंगे, उसका संकेत नहीं मिला। यह बड़े, लंबे और स्वतंत्र रूप से जाँचे गए अध्ययनों का विकल्प नहीं है, लेकिन अच्छा शुरुआती सबूत है। इसका सार हमारी {टाइमलाइन|/timeline/#tl-india-mp} पर भी है।"
+          ],
+          [
+            "h",
+            "आर्थिक सर्वेक्षण 2016-17: \"विचार करने का समय\""
+          ],
+          [
+            "p",
+            "भारत सरकार के आर्थिक सर्वेक्षण 2016-17 का नौवाँ अध्याय पूरी तरह UBI पर था। उसने बताया कि केंद्र की लगभग 950 योजनाएँ और उप-योजनाएँ हैं, जिन पर बजट का आवंटन GDP का लगभग 5% है, और अक्सर सबसे ग़रीब ज़िलों को ही कम पैसा मिलता है, जिसे उसने \"गंभीर ग़लत आवंटन\" का सबूत कहा।[4] उसका अनुमान था कि साल में 7,620 रुपये की UBI, अगर 75% आबादी को दी जाए, तो उसका ख़र्च GDP का 4.9% होगा।[4]"
+          ],
+          [
+            "p",
+            "सर्वेक्षण ने विरोध के तर्क भी गिनाए: पैसा दिखावटी ख़र्च में जा सकता है, लोग काम कम कर सकते हैं, घर के भीतर पैसे पर पुरुषों का नियंत्रण हो सकता है, और एक बार शुरू हुई योजना को बंद करना राजनीतिक रूप से मुश्किल होता है। उसका निष्कर्ष था कि UBI ऐसा विचार है जिसका समय \"शायद तुरंत लागू करने के लिए नहीं, लेकिन कम से कम गंभीर सार्वजनिक विचार-विमर्श के लिए\" आ गया है।[4] 2019 के चुनाव से पहले कांग्रेस ने NYAY का वादा किया, जिसमें सबसे ग़रीब 20% परिवारों को साल में 72,000 रुपये देने की बात थी।[5] यह भी लागू नहीं हुआ।"
+          ],
+          [
+            "h",
+            "PM-KISAN: किसानों के लिए नकद"
+          ],
+          [
+            "p",
+            "जो लागू हुआ, वह था PM-KISAN। 24 फ़रवरी 2019 से ज़मीन वाले हर पात्र किसान परिवार को साल में 6,000 रुपये, 2,000 रुपये की तीन किस्तों में, सीधे बैंक खाते में मिलते हैं; आयकर देने वाले, सरकारी कर्मचारी और ऊँची आय वाले बाहर हैं।[6] 30 अक्टूबर 2026 को 24वीं किस्त में 9.34 करोड़ से ज़्यादा किसानों को लगभग 18,690 करोड़ रुपये मिले, और अब तक कुल 4.64 लाख करोड़ रुपये से ज़्यादा बाँटे जा चुके हैं।[7] 2026-27 के बजट अनुमान में इसके लिए 63,500 करोड़ रुपये हैं।[8] यह नियमित और नकद है, लेकिन परिवार के स्तर पर है और सिर्फ़ ज़मीन वाले किसानों के लिए; भूमिहीन खेतिहर मज़दूर इसमें नहीं आते।"
+          ],
+          [
+            "h",
+            "महिलाओं को नकद: लाडली बहना, लाडकी बहीण और दूसरे राज्य"
+          ],
+          [
+            "p",
+            "मध्य प्रदेश की मुख्यमंत्री लाडली बहना योजना की घोषणा 28 जनवरी 2023 को, उसी साल के विधानसभा चुनाव से पहले हुई, और पहला भुगतान 10 जून 2023 को हुआ। रक़म 1,000 रुपये से शुरू हुई, अक्टूबर 2023 से 1,250 और नवंबर 2025 से 1,500 रुपये हुई।[9] पात्र हैं 21 से 60 साल से कम उम्र की विवाहित महिलाएँ (विधवा, तलाक़शुदा और परित्यक्ता भी), जिनके परिवार की स्व-घोषित सालाना आय 2.5 लाख रुपये से ज़्यादा न हो; आयकर देने वाले, सरकारी कर्मचारी या पेंशनभोगी वाले परिवार, पाँच एकड़ से ज़्यादा ज़मीन या चार-पहिया गाड़ी वाले परिवार बाहर हैं। पोर्टल पर कुल पात्र आवेदक 1,25,22,542 हैं।[1] बजट 2025-26 के 18,669 करोड़ से बढ़कर 2026-27 में 23,883 करोड़ रुपये हो गया। अक्टूबर 2026 में मुख्यमंत्री मोहन यादव ने कहा, \"मुझे नहीं पता था कि मुख्यमंत्री बनने के साथ इतना भारी वित्तीय बोझ आएगा\"।[9]"
+          ],
+          [
+            "p",
+            "महाराष्ट्र की मुख्यमंत्री माझी लाडकी बहीण योजना जुलाई 2024 से 21 से 65 साल की महिलाओं को 1,500 रुपये महीना देती है।[10][2] सत्तारूढ़ महायुति ने चुनावी घोषणापत्र में इसे 2,100 रुपये करने का वादा किया था, लेकिन 2025-26 के बजट में बढ़ोतरी नहीं हुई; आवंटन पिछले साल के 46,000 करोड़ से घटकर 36,000 करोड़ रुपये रहा।[10] सत्यापन अभियान के बाद 92 लाख से ज़्यादा लाभार्थी हटाए गए, पहले चरण के लगभग 2.43 से 2.47 करोड़ पात्रों में से। लगभग 60 लाख महिलाएँ अनिवार्य e-KYC पूरा नहीं कर पाईं, और लगभग 14-15 लाख की परिवार आय 2.5 लाख रुपये की सीमा से ज़्यादा थी। CAG ने योजना के 3,541 करोड़ रुपये के ख़र्च पर सवाल उठाया।[11]"
+          ],
+          [
+            "p",
+            "PRS के अनुसार 2025-26 में ये बारह राज्य ऐसी योजनाएँ चला रहे थे:[2]"
+          ],
+          [
+            "t",
+            "राज्य | योजना | रुपये प्रति माह | बजट 2025-26 (करोड़ रुपये)\nमहाराष्ट्र | माझी लाडकी बहीण | 1,500 | 36,000\nकर्नाटक | गृह लक्ष्मी | 2,000 | 28,608\nपश्चिम बंगाल | लक्ष्मीर भंडार | 1,000–1,200 | 26,700\nमध्य प्रदेश | लाडली बहना | 1,250 | 18,669\nतमिलनाडु | मगलिर उरिमै तोगै | 1,000 | 13,807\nझारखंड | मईयां सम्मान | 2,500 | 13,363\nओडिशा | सुभद्रा | 833 | 10,145\nछत्तीसगढ़ | महतारी वंदन | 1,000 | 5,500\nदिल्ली | महिला समृद्धि | 2,500 | 5,110\nअसम | ओरुनोदोई | 1,250 | 5,000\nहरियाणा | लाडो लक्ष्मी | 2,100 | 5,000\nहिमाचल प्रदेश | प्यारी बहना | 1,500 | 138"
+          ],
+          [
+            "p",
+            "ये 2025-26 के बजट के आँकड़े हैं; कई राज्यों में रक़म बाद में बदली है, जैसे मध्य प्रदेश में नवंबर 2025 से 1,500 रुपये।[9] PRS ने यह भी लिखा कि इन बारह में से छह राज्यों का राजस्व घाटे में रहने का अनुमान है, और इन भुगतानों से मध्य प्रदेश का राजस्व अधिशेष GSDP के 1.1% से घटकर 0.4% रह जाता है।[2]"
+          ],
+          [
+            "h",
+            "पैसा कहाँ जाता है"
+          ],
+          [
+            "p",
+            "इन योजनाओं के असर पर अभी गिने-चुने अध्ययन हैं। प्रधानमंत्री की आर्थिक सलाहकार परिषद (EAC-PM) के जुलाई 2026 के एक वर्किंग पेपर में SBI के अर्थशास्त्रियों ने बैंक खातों के आँकड़ों से देखा कि लाडकी बहीण से लाभार्थियों का महीने के अंत का बैलेंस लगभग 84% (6,884 रुपये) और ख़र्च लगभग 46% (1,349 रुपये) बढ़ा; ओडिशा की सुभद्रा योजना में बैलेंस लगभग 45% और ख़र्च 28% बढ़ा। हर अतिरिक्त रुपये में से लगभग 90 पैसे ख़र्च हुए, जिसे लेखक नक़दी की तंगी का संकेत मानते हैं।[12] तुलना उन महिलाओं से की गई जिनकी पारिवारिक आय पात्रता सीमा से थोड़ी ऊपर थी। यह खातों का आँकड़ा है: इससे बचत और ख़र्च दिखता है, लेकिन पोषण, पढ़ाई या घर में फ़ैसलों पर असर नहीं।"
+          ],
+          [
+            "h",
+            "क्या यह बेसिक इनकम है?"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) बेसिक इनकम को \"बिना आय जाँच या काम की शर्त के, सबको व्यक्तिगत आधार पर बिना शर्त दिया जाने वाला नियमित नकद भुगतान\" कहता है।[14] इस पैमाने पर तीनों को रखें:"
+          ],
+          [
+            "t",
+            "मानदंड | मध्य प्रदेश प्रयोग | लाडली बहना | PM-KISAN\nनियमित | हाँ, हर महीने | हाँ, हर महीने | हाँ, साल में तीन बार\nनकद | हाँ | हाँ | हाँ\nव्यक्तिगत | हाँ, हर वयस्क और बच्चा | हाँ, महिला के अपने खाते में | नहीं, किसान परिवार\nसार्वभौमिक | गाँव के सभी लोग | नहीं, 21–60 साल की विवाहित महिलाएँ | नहीं, ज़मीन वाले किसान\nबिना शर्त | हाँ | आय और दूसरी शर्तें | आय और दूसरी शर्तें"
+          ],
+          [
+            "p",
+            "मध्य प्रदेश का प्रयोग, छोटे पैमाने पर ही सही, लगभग पूरी तरह बेसिक इनकम था। आज की योजनाएँ नियमित और नकद हैं, और महिलाओं की योजनाएँ व्यक्तिगत भी, लेकिन वे सार्वभौमिक नहीं हैं: वे आय, उम्र, वैवाहिक स्थिति या ज़मीन से बँधी हैं। उन्हें \"लक्षित नकद हस्तांतरण\" कहना ज़्यादा सही है।"
+          ],
+          [
+            "h",
+            "सबके लिए कितना ख़र्च होगा?"
+          ],
+          [
+            "p",
+            "अगर लाडली बहना जितनी रक़म, 1,500 रुपये महीना, भारत के हर वयस्क को दी जाए, तो {बेसिक इनकम कैलकुलेटर|/calc/?c=in&w=adults&m=1500} के अनुसार सकल ख़र्च साल में लगभग 18.6 लाख करोड़ रुपये होगा, यानी GDP का लगभग 5.4%। तुलना के लिए, 2025-26 में भारत का नाममात्र GDP 346.36 लाख करोड़ रुपये था;[13] महिलाओं की राज्य योजनाएँ मिलकर GDP का लगभग 0.5% हैं,[2] और PM-KISAN लगभग 0.18%।[8] आर्थिक सर्वेक्षण का 4.9% का अनुमान इससे कम रक़म (साल में 7,620 रुपये) और 75% आबादी के लिए था।[4] ये सकल रक़में हैं; दूसरी योजनाओं की जगह लेने से होने वाली बचत इनमें नहीं गिनी गई।"
+          ],
+          [
+            "h",
+            "न \"भारत में बेसिक इनकम आ गई\", न \"बस चुनावी रेवड़ी\""
+          ],
+          [
+            "o",
+            "लाडली बहना और लाडकी बहीण बेसिक इनकम नहीं हैं। वे कुछ महिलाओं के लिए हैं, शर्तों के साथ, और कई बार चुनाव से ठीक पहले शुरू या बढ़ाई गईं। जब ख़र्च भारी पड़ता है, तो रक़म बढ़ाने के वादे टलते हैं और सत्यापन के नाम पर सूचियाँ छोटी होती हैं; e-KYC पूरा न कर पाने वाली हर महिला अपात्र नहीं होती।"
+          ],
+          [
+            "o",
+            "लेकिन उन्हें सिर्फ़ \"रेवड़ी\" कहकर ख़ारिज करना भी ठीक नहीं। करोड़ों महिलाओं को हर महीने उनके अपने खाते में नकद पहुँचाने का ढाँचा अब बन चुका है, और खातों के आँकड़े बताते हैं कि यह पैसा ज़्यादातर ख़र्च और बचत में काम आता है। मध्य प्रदेश के प्रयोग ने दिखाया था कि हर व्यक्ति को मिलने वाला बिना शर्त पैसा पोषण, पढ़ाई और कामकाज में बदल सकता है।"
+          ],
+          [
+            "o",
+            "सवाल यह है कि क्या ये योजनाएँ चुनावी चक्र से आगे बढ़कर एक स्थिर, क़ानूनी और ईमानदारी से जाँची गई न्यूनतम आय की ओर जाएँगी। इसके लिए तीन चीज़ें चाहिए: टिकाऊ पैसा, साफ़ और कम शर्तें, और स्वतंत्र मूल्यांकन। जिस राज्य ने 2011 में यह प्रयोग किया था, उसके पास आज इसका सबसे बड़ा मौक़ा भी है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "Cada mes, unos 12,5 millones de mujeres de Madhya Pradesh reciben 1.500 rupias en su cuenta bancaria del programa Ladli Behna.[1] El estado no es el único. Según PRS Legislative Research, los estados que pagan dinero en efectivo casi sin condiciones a las mujeres pasaron de dos en 2022-23 a doce en 2025-26, y entre todos prevén gastar 1,68 billones de rupias en estos programas, alrededor del 0,5 % del PIB.[2]"
+          ],
+          [
+            "p",
+            "Más de diez años antes, aldeas del distrito de Indore, en ese mismo estado, acogieron uno de los pilotos de renta básica más citados del mundo. Este ensayo mira qué hizo y qué encontró ese piloto, y sus límites; qué dijo la Encuesta Económica de India de 2016-17 sobre la renta básica universal (UBI); y cuánto se acercan a una renta básica los programas de hoy: Ladli Behna, Ladki Bahin y PM-KISAN."
+          ],
+          [
+            "h",
+            "El piloto de Madhya Pradesh (2011–2013)"
+          ],
+          [
+            "p",
+            "El piloto lo gestionó la Asociación de Mujeres Autónomas (SEWA) con fondos de UNICEF.[3] En el piloto grande, cada hombre, mujer y niño de ocho aldeas recibió una renta básica mensual, y su experiencia se comparó con la de 12 aldeas similares de “control”. De junio de 2011 a mayo de 2012, cada adulto recibió 200 rupias al mes y cada niño 100; después las cantidades se subieron un 50 % por la inflación, a 300 y 150 rupias, y se pagaron hasta noviembre de 2012. Para las familias en la línea de pobreza, eso era cerca del 30 % de su gasto.[3]"
+          ],
+          [
+            "p",
+            "Un piloto más pequeño se hizo en una aldea tribal de febrero de 2012 a enero de 2013, con 300 rupias por adulto y 150 por niño al mes. 756 personas recibieron 1,945 millones de rupias en total, y la comparación fue con otra aldea tribal.[3] En total, unas 6.000 personas de nueve aldeas recibieron una renta básica. En el piloto grande había 5.547 personas con derecho, y las encuestas cubrieron a 11.231 personas de 2.034 hogares. Las aldeas se eligieron al azar, y los cuestionarios los diseñó un economista independiente.[3]"
+          ],
+          [
+            "h",
+            "Qué encontró"
+          ],
+          [
+            "p",
+            "Los resultados se publicaron en 2015 en Basic Income: A Transformative Policy for India, de Sarath Davala, Renana Jhabvala, Soumya Kapoor Mehta y Guy Standing, que puede leerse gratis en internet.[3] El efecto más claro fue en la nutrición. En las aldeas con renta básica, la proporción de niñas con peso normal para su edad subió más de 25 puntos porcentuales, más del doble que en las aldeas de control; en los niños subió 14 puntos, frente a 9 en las de control. En la aldea tribal, la proporción de niños con bajo peso grave bajó del 32 % al 15 %.[3]"
+          ],
+          [
+            "p",
+            "También mejoró la escolarización: el 29,0 % de los hogares que recibían la renta básica dijo que había aumentado la asistencia escolar, frente al 13,5 % de los que no la recibían.[3] El trabajo no disminuyó; cambió. El gran cambio fue del trabajo asalariado a la agricultura propia y otros trabajos por cuenta propia, y las mujeres fueron las principales beneficiarias del aumento de actividades económicas secundarias.[3] La deuda bajó: el 12,5 % de los hogares de las aldeas con renta básica redujo su deuda y el 5 % la aumentó, mientras que en las de control solo el 5 % la redujo y más del 58 % la aumentó.[3] Entre los hogares con un miembro con discapacidad, el 27 % de los que no tenían renta básica vio caer sus ingresos, frente al 12 % de los que la tenían.[3]"
+          ],
+          [
+            "t",
+            "Ámbito | Aldeas con renta básica | Aldeas de control\nNiñas con peso normal para su edad | Más de 25 puntos | Menos de la mitad\nNiños con peso normal para su edad | +14 puntos | +9 puntos\nHogares que dicen que subió la asistencia escolar | 29,0 % | 13,5 %\nHogares que redujeron su deuda | 12,5 % | 5 %\nHogares que aumentaron su deuda | 5 % | Más del 58 %"
+          ],
+          [
+            "h",
+            "Los límites"
+          ],
+          [
+            "p",
+            "Estos resultados piden una lectura cuidadosa. Solo 8 aldeas recibieron dinero, con 12 de comparación; el sorteo se hizo por aldeas, no por personas. El piloto duró alrededor de año y medio. La mayoría de los resultados se basan en lo que la gente contó a los encuestadores. El libro lo escribió el propio equipo que diseñó el piloto, no evaluadores externos. El propio libro indica que el peso mejoró 27 puntos en las aldeas de SEWA y menos de 20 en las demás, de modo que parte del efecto podría deberse a la organización y no solo al dinero.[3] Los autores llaman a la evaluación “un trabajo en curso”.[3] No hemos encontrado un reanálisis independiente y revisado por pares."
+          ],
+          [
+            "o",
+            "Aun así, el piloto importa para India. Probó a pagar a cada persona, cada mes, sin condiciones, y no encontró señales de los temores más repetidos: que la gente dejaría de trabajar o despilfarraría el dinero. No sustituye a estudios más grandes, largos y verificados de forma independiente, pero es una buena prueba temprana. También hay un resumen en nuestra {cronología|/timeline/#tl-india-mp}."
+          ],
+          [
+            "h",
+            "La Encuesta Económica de 2016-17: “madura para un debate serio”"
+          ],
+          [
+            "p",
+            "El capítulo 9 de la Encuesta Económica 2016-17 del Gobierno de India estaba dedicado a la UBI. Contaba unos 950 programas y subprogramas centrales, que sumaban alrededor del 5 % del PIB en asignaciones presupuestarias, y señalaba que los distritos más pobres a menudo recibían menos dinero, lo que llamó prueba de una “grave mala asignación”.[4] Calculó que una UBI de 7.620 rupias al año para el 75 % de la población costaría el 4,9 % del PIB.[4]"
+          ],
+          [
+            "p",
+            "La Encuesta también enumeró los argumentos en contra: el dinero podría ir a gasto ostentoso, la gente podría trabajar menos, los hombres podrían controlar el dinero dentro del hogar, y una vez que un programa empieza es políticamente difícil pararlo. Concluyó que la UBI es una idea cuyo momento ha llegado “quizá no para aplicarla de inmediato, pero sí al menos para un debate público serio”.[4] Antes de las elecciones de 2019, el Partido del Congreso prometió NYAY, 72.000 rupias al año para el 20 % de familias más pobres.[5] Tampoco se aplicó."
+          ],
+          [
+            "h",
+            "PM-KISAN: dinero para agricultores"
+          ],
+          [
+            "p",
+            "Lo que sí se aplicó fue PM-KISAN. Desde el 24 de febrero de 2019, cada familia agricultora con tierra que cumple los requisitos recibe 6.000 rupias al año en tres pagos de 2.000, directamente en una cuenta bancaria; quedan fuera quienes pagan impuesto sobre la renta, los empleados públicos y los grupos de ingresos altos.[6] El pago número 24, el 30 de octubre de 2026, abonó unas 186.900 millones de rupias a más de 93,4 millones de agricultores, con lo que el total pagado supera los 4,64 billones de rupias.[7] El presupuesto estimado para 2026-27 es de 635.000 millones de rupias.[8] Es periódico y en efectivo, pero se paga por familia y solo a quienes poseen tierra; los jornaleros agrícolas sin tierra no están incluidos."
+          ],
+          [
+            "h",
+            "Dinero para mujeres: Ladli Behna, Ladki Bahin y otros estados"
+          ],
+          [
+            "p",
+            "El programa Ladli Behna de Madhya Pradesh se anunció el 28 de enero de 2023, antes de las elecciones estatales de ese año, y pagó por primera vez el 10 de junio de 2023. Empezó con 1.000 rupias al mes, subió a 1.250 desde octubre de 2023 y a 1.500 desde noviembre de 2025.[9] Es para mujeres casadas (incluidas viudas, divorciadas y abandonadas) de 21 a menos de 60 años cuya renta familiar declarada no supere las 250.000 rupias al año; quedan fuera las familias con alguien que paga impuesto sobre la renta, un empleado público o pensionista, más de cinco acres de tierra o un vehículo de cuatro ruedas. El portal oficial registra 12.522.542 solicitantes con derecho.[1] Su presupuesto pasó de 186.690 millones de rupias en 2025-26 a 238.830 millones en 2026-27. En octubre de 2026, el ministro principal Mohan Yadav dijo: “No imaginaba que llegar a ministro principal traería una carga financiera tan pesada”.[9]"
+          ],
+          [
+            "p",
+            "El programa Majhi Ladki Bahin de Maharashtra paga 1.500 rupias al mes a mujeres de 21 a 65 años desde julio de 2024.[10][2] La alianza gobernante Mahayuti prometió en su programa subirlo a 2.100 rupias, pero el presupuesto de 2025-26 no lo hizo; la asignación bajó de 460.000 millones de rupias el año anterior a 360.000 millones.[10] Una campaña de verificación eliminó después a más de 9,2 millones de beneficiarias de las entre 24,3 y 24,7 millones consideradas con derecho en la primera fase. Unos 6 millones de mujeres no completaron el e-KYC obligatorio, y entre 1,4 y 1,5 millones tenían una renta familiar por encima del límite de 250.000 rupias. El Contralor y Auditor General cuestionó 35.410 millones de rupias de gasto del programa.[11]"
+          ],
+          [
+            "p",
+            "Según PRS, estos doce estados tenían programas así en 2025-26:[2]"
+          ],
+          [
+            "t",
+            "Estado | Programa | Rupias al mes | Presupuesto 2025-26 (crore de rupias)\nMaharashtra | Majhi Ladki Bahin | 1.500 | 36.000\nKarnataka | Gruha Lakshmi | 2.000 | 28.608\nBengala Occidental | Lakshmir Bhandar | 1.000–1.200 | 26.700\nMadhya Pradesh | Ladli Behna | 1.250 | 18.669\nTamil Nadu | Magalir Urimai Thogai | 1.000 | 13.807\nJharkhand | Maiyan Samman | 2.500 | 13.363\nOdisha | Subhadra | 833 | 10.145\nChhattisgarh | Mahtari Vandan | 1.000 | 5.500\nDelhi | Mahila Samriddhi | 2.500 | 5.110\nAssam | Orunodoi | 1.250 | 5.000\nHaryana | Lado Laxmi | 2.100 | 5.000\nHimachal Pradesh | Pyari Behna | 1.500 | 138"
+          ],
+          [
+            "p",
+            "Son cifras del presupuesto de 2025-26 (un crore son diez millones); varias cuantías han cambiado desde entonces, como la subida de Madhya Pradesh a 1.500 rupias en noviembre de 2025.[9] PRS señaló además que seis de los doce estados prevén un déficit corriente y que estas transferencias reducen el superávit corriente de Madhya Pradesh del 1,1 % al 0,4 % de su PIB estatal.[2]"
+          ],
+          [
+            "h",
+            "Adónde va el dinero"
+          ],
+          [
+            "p",
+            "Todavía hay pocos estudios sobre los efectos de estos programas. En un documento de trabajo de julio de 2026 para el Consejo Asesor Económico del Primer Ministro (EAC-PM), economistas del State Bank of India usaron datos de cuentas bancarias y encontraron que Ladki Bahin elevó el saldo a fin de mes de las beneficiarias en torno a un 84 % (6.884 rupias) y su gasto en torno a un 46 % (1.349 rupias); el programa Subhadra de Odisha elevó los saldos cerca de un 45 % y el gasto un 28 %. De cada rupia adicional se gastaron unos 90 paisas, lo que los autores interpretan como señal de presupuestos ajustados.[12] La comparación fue con mujeres cuya renta familiar estaba justo por encima del límite. Son datos de cuentas: muestran ahorro y gasto, no efectos en nutrición, escolarización o decisiones en el hogar."
+          ],
+          [
+            "h",
+            "¿Es una renta básica?"
+          ],
+          [
+            "p",
+            "La Red Mundial de la Renta Básica (BIEN) define la renta básica como “un pago periódico en efectivo entregado de forma incondicional a todas las personas, de manera individual, sin comprobación de recursos ni exigencia de trabajo”.[14] Medidos con esa vara:"
+          ],
+          [
+            "t",
+            "Criterio | Piloto de Madhya Pradesh | Ladli Behna | PM-KISAN\nPeriódico | Sí, mensual | Sí, mensual | Sí, tres veces al año\nEn efectivo | Sí | Sí | Sí\nIndividual | Sí, cada adulto y niño | Sí, en la cuenta de la propia mujer | No, por familia agricultora\nUniversal | Toda la aldea | No, mujeres casadas de 21 a 60 años | No, agricultores con tierra\nIncondicional | Sí | Renta y otras condiciones | Renta y otras condiciones"
+          ],
+          [
+            "p",
+            "El piloto de Madhya Pradesh, aunque pequeño, fue casi una renta básica. Los programas de hoy son periódicos y en efectivo, y los de mujeres también individuales, pero no son universales: dependen de la renta, la edad, el estado civil o la tierra. “Transferencias monetarias focalizadas” es el nombre más exacto."
+          ],
+          [
+            "h",
+            "¿Cuánto costaría para todos?"
+          ],
+          [
+            "p",
+            "Si las 1.500 rupias al mes de Ladli Behna fueran para cada adulto de India, {la calculadora de renta básica|/calc/?c=in&w=adults&m=1500} sitúa el coste bruto en unos 18,6 billones de rupias al año, alrededor del 5,4 % del PIB. Como comparación, el PIB nominal de India en 2025-26 fue de 346,36 billones de rupias;[13] los programas estatales para mujeres suman alrededor del 0,5 % del PIB[2] y PM-KISAN alrededor del 0,18 %.[8] El 4,9 % de la Encuesta Económica suponía una cantidad menor (7.620 rupias al año) para el 75 % de la población.[4] Son cifras brutas; no descuentan el ahorro de sustituir otros programas."
+          ],
+          [
+            "h",
+            "Ni “ha llegado la renta básica a India” ni “solo regalos electorales”"
+          ],
+          [
+            "o",
+            "Ladli Behna y Ladki Bahin no son rentas básicas. Son para algunas mujeres, con condiciones, y a menudo se lanzaron o se subieron justo antes de unas elecciones. Cuando la factura crece, las subidas prometidas se aplazan y las listas se acortan en nombre de la verificación; no toda mujer que no pudo completar el e-KYC carecía de derecho."
+          ],
+          [
+            "o",
+            "Pero despacharlos como simples regalos también es un error. Ya existe la maquinaria para poner dinero cada mes en las cuentas propias de decenas de millones de mujeres, y los datos de cuentas muestran que el dinero se gasta y se ahorra en su mayor parte. El piloto de Madhya Pradesh mostró que el dinero incondicional para cada persona puede convertirse en mejor nutrición, escolarización y trabajo."
+          ],
+          [
+            "o",
+            "La pregunta es si estos programas pueden ir más allá del ciclo electoral, hacia un suelo de ingresos estable, con base legal y evaluado con honestidad. Eso requiere tres cosas: financiación sostenible, condiciones menos numerosas y más claras, y evaluación independiente. El estado que hizo el experimento en 2011 es también el que mejor puede dar ese paso."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Jeden Monat erhalten in Madhya Pradesh rund 12,5 Millionen Frauen 1.500 Rupien aus dem Programm Ladli Behna auf ihr Bankkonto.[1] Der Bundesstaat ist nicht allein. Laut PRS Legislative Research stieg die Zahl der Bundesstaaten, die Frauen weitgehend bedingungslos Geld zahlen, von zwei im Jahr 2022-23 auf zwölf im Jahr 2025-26; zusammen rechnen sie mit Ausgaben von 1,68 Billionen Rupien für diese Programme, etwa 0,5 % des BIP.[2]"
+          ],
+          [
+            "p",
+            "Mehr als zehn Jahre zuvor fand in Dörfern im Distrikt Indore desselben Bundesstaats einer der weltweit meistzitierten Grundeinkommensversuche statt. Dieser Essay zeigt, was dieser Versuch tat und fand und wo seine Grenzen liegen; was Indiens Economic Survey 2016-17 über ein bedingungsloses Grundeinkommen (UBI) sagte; und wie nah die heutigen Programme Ladli Behna, Ladki Bahin und PM-KISAN einem Grundeinkommen kommen."
+          ],
+          [
+            "h",
+            "Der Versuch in Madhya Pradesh (2011–2013)"
+          ],
+          [
+            "p",
+            "Den Versuch führte die Self-Employed Women’s Association (SEWA) durch, finanziert von UNICEF.[3] Im größeren Versuch erhielt jeder Mann, jede Frau und jedes Kind in acht Dörfern ein monatliches Grundeinkommen; verglichen wurde mit 12 ähnlichen „Kontrolldörfern“. Von Juni 2011 bis Mai 2012 bekam jeder Erwachsene 200 Rupien im Monat und jedes Kind 100; danach wurden die Beträge wegen der Inflation um 50 % auf 300 und 150 Rupien erhöht und bis November 2012 gezahlt. Für Familien an der Armutsgrenze waren das etwa 30 % ihrer Ausgaben.[3]"
+          ],
+          [
+            "p",
+            "Ein kleinerer Versuch lief von Februar 2012 bis Januar 2013 in einem Stammesdorf, mit 300 Rupien je Erwachsenem und 150 je Kind im Monat. 756 Menschen erhielten insgesamt 1,945 Millionen Rupien; verglichen wurde mit einem anderen Stammesdorf.[3] Insgesamt erhielten rund 6.000 Menschen in neun Dörfern ein Grundeinkommen. Im größeren Versuch waren 5.547 Menschen berechtigt, und die Befragungen erfassten 11.231 Menschen in 2.034 Haushalten. Die Dörfer wurden zufällig ausgewählt, die Fragebögen entwarf ein unabhängiger Ökonom.[3]"
+          ],
+          [
+            "h",
+            "Was er fand"
+          ],
+          [
+            "p",
+            "Die Ergebnisse erschienen 2015 in Basic Income: A Transformative Policy for India von Sarath Davala, Renana Jhabvala, Soumya Kapoor Mehta und Guy Standing, das kostenlos online lesbar ist.[3] Am deutlichsten war die Wirkung auf die Ernährung. In den Grundeinkommensdörfern stieg der Anteil der Mädchen mit altersgemäßem Normalgewicht um mehr als 25 Prozentpunkte, mehr als doppelt so stark wie in den Kontrolldörfern; bei Jungen um 14 Punkte gegenüber 9 in den Kontrolldörfern. Im Stammesdorf sank der Anteil stark untergewichtiger Kinder von 32 % auf 15 %.[3]"
+          ],
+          [
+            "p",
+            "Auch beim Schulbesuch zeigte sich ein Unterschied: 29,0 % der Haushalte mit Grundeinkommen berichteten von einem häufigeren Schulbesuch, gegenüber 13,5 % der Haushalte ohne.[3] Die Arbeit nahm nicht ab, sie veränderte sich. Die größte Verschiebung ging von Lohnarbeit hin zu eigener Landwirtschaft und eigener Arbeit, und Frauen profitierten am meisten vom Wachstum der Nebentätigkeiten.[3] Die Schulden sanken: In den Grundeinkommensdörfern bauten 12,5 % der Haushalte Schulden ab und 5 % auf, in den Kontrolldörfern bauten nur 5 % ab und über 58 % auf.[3] Unter Haushalten mit einem Mitglied mit Behinderung sanken die Einkünfte bei 27 % derjenigen ohne Grundeinkommen, gegenüber 12 % derjenigen mit.[3]"
+          ],
+          [
+            "t",
+            "Bereich | Grundeinkommensdörfer | Kontrolldörfer\nMädchen mit altersgemäßem Normalgewicht | Plus über 25 Punkte | Weniger als die Hälfte davon\nJungen mit altersgemäßem Normalgewicht | +14 Punkte | +9 Punkte\nHaushalte mit häufigerem Schulbesuch | 29,0 % | 13,5 %\nHaushalte, die Schulden abbauten | 12,5 % | 5 %\nHaushalte, die Schulden aufbauten | 5 % | Über 58 %"
+          ],
+          [
+            "h",
+            "Die Grenzen"
+          ],
+          [
+            "p",
+            "Diese Ergebnisse muss man vorsichtig lesen. Nur 8 Dörfer erhielten Geld, 12 dienten zum Vergleich; ausgelost wurde auf Dorfebene, nicht auf Personenebene. Der Versuch dauerte etwa anderthalb Jahre. Die meisten Ergebnisse beruhen auf Angaben der Befragten. Das Buch schrieb das Team, das den Versuch entworfen hat, nicht externe Gutachter. Das Buch selbst berichtet, dass sich das Gewicht in SEWA-Dörfern um 27 Punkte und in den übrigen um weniger als 20 verbesserte; ein Teil der Wirkung könnte also von der Organisation kommen, nicht nur vom Geld.[3] Die Autoren nennen die Auswertung selbst „work in progress“.[3] Eine unabhängige, begutachtete Neuauswertung haben wir nicht gefunden."
+          ],
+          [
+            "o",
+            "Trotzdem ist der Versuch für Indien wichtig. Er hat getestet, jedem Menschen jeden Monat ohne Bedingungen Geld zu zahlen, und fand keine Anzeichen für die meistgenannten Befürchtungen: dass Menschen aufhören zu arbeiten oder das Geld verschwenden. Er ersetzt keine größeren, längeren, unabhängig geprüften Studien, ist aber ein guter früher Beleg. Eine Zusammenfassung steht auch in unserer {Zeitleiste|/timeline/#tl-india-mp}."
+          ],
+          [
+            "h",
+            "Der Economic Survey 2016-17: „reif für eine ernsthafte Debatte“"
+          ],
+          [
+            "p",
+            "Kapitel 9 des Economic Survey 2016-17 der indischen Regierung war ganz dem UBI gewidmet. Es zählte rund 950 zentrale Programme und Unterprogramme, zusammen etwa 5 % des BIP an Haushaltsmitteln, und stellte fest, dass die ärmsten Distrikte oft am wenigsten Geld bekamen, was es als Beleg für eine „akute Fehlallokation“ bezeichnete.[4] Es schätzte, dass ein UBI von 7.620 Rupien im Jahr für 75 % der Bevölkerung 4,9 % des BIP kosten würde.[4]"
+          ],
+          [
+            "p",
+            "Der Survey nannte auch die Gegenargumente: Das Geld könnte in Prestigekonsum fließen, Menschen könnten weniger arbeiten, Männer könnten das Geld im Haushalt kontrollieren, und ein einmal begonnenes Programm ist politisch schwer zu beenden. Sein Fazit: Das UBI sei eine Idee, deren Zeit gekommen sei, „vielleicht nicht für die sofortige Umsetzung, aber zumindest für eine ernsthafte öffentliche Debatte“.[4] Vor der Wahl 2019 versprach die Kongresspartei NYAY, 72.000 Rupien im Jahr für die ärmsten 20 % der Familien.[5] Auch das wurde nicht umgesetzt."
+          ],
+          [
+            "h",
+            "PM-KISAN: Geld für Bauern"
+          ],
+          [
+            "p",
+            "Umgesetzt wurde PM-KISAN. Seit dem 24. Februar 2019 erhält jede berechtigte Bauernfamilie mit Land 6.000 Rupien im Jahr in drei Raten zu 2.000, direkt aufs Bankkonto; Einkommensteuerzahler, Staatsbedienstete und höhere Einkommensgruppen sind ausgeschlossen.[6] Die 24. Rate am 30. Oktober 2026 zahlte rund 186,9 Milliarden Rupien an mehr als 93,4 Millionen Bauern; insgesamt wurden damit über 4,64 Billionen Rupien ausgezahlt.[7] Der Haushaltsansatz 2026-27 liegt bei 635 Milliarden Rupien.[8] Das ist regelmäßig und in Geld, aber pro Familie und nur für Bauern mit Landbesitz; landlose Landarbeiter sind nicht erfasst."
+          ],
+          [
+            "h",
+            "Geld für Frauen: Ladli Behna, Ladki Bahin und andere Bundesstaaten"
+          ],
+          [
+            "p",
+            "Ladli Behna in Madhya Pradesh wurde am 28. Januar 2023 angekündigt, vor der Landtagswahl jenes Jahres, und am 10. Juni 2023 erstmals ausgezahlt. Es begann mit 1.000 Rupien im Monat, stieg ab Oktober 2023 auf 1.250 und ab November 2025 auf 1.500 Rupien.[9] Berechtigt sind verheiratete Frauen (auch verwitwete, geschiedene und verlassene) von 21 bis unter 60 Jahren, deren selbst erklärtes Familieneinkommen 250.000 Rupien im Jahr nicht übersteigt; Familien mit einem Einkommensteuerzahler, einem Staatsbediensteten oder Pensionär, mehr als fünf Acres Land oder einem vierrädrigen Fahrzeug sind ausgeschlossen. Das offizielle Portal nennt 12.522.542 berechtigte Antragstellerinnen.[1] Das Budget stieg von 186,69 Milliarden Rupien 2025-26 auf 238,83 Milliarden 2026-27. Im Oktober 2026 sagte Chief Minister Mohan Yadav: „Ich ahnte nicht, dass das Amt des Chief Ministers eine so schwere finanzielle Last mit sich bringt.“[9]"
+          ],
+          [
+            "p",
+            "Majhi Ladki Bahin in Maharashtra zahlt Frauen von 21 bis 65 Jahren seit Juli 2024 1.500 Rupien im Monat.[10][2] Das regierende Bündnis Mahayuti versprach im Wahlprogramm eine Erhöhung auf 2.100 Rupien, doch der Haushalt 2025-26 setzte sie nicht um; die Mittel sanken von 460 Milliarden Rupien im Vorjahr auf 360 Milliarden.[10] Eine Überprüfung strich danach mehr als 9,2 Millionen Begünstigte von den rund 24,3 bis 24,7 Millionen, die in der ersten Phase als berechtigt galten. Rund 6 Millionen Frauen hatten das vorgeschriebene e-KYC nicht abgeschlossen, und rund 1,4 bis 1,5 Millionen lagen mit dem Familieneinkommen über der Grenze von 250.000 Rupien. Der Rechnungshof (CAG) beanstandete Ausgaben von 35,41 Milliarden Rupien.[11]"
+          ],
+          [
+            "p",
+            "Laut PRS hatten 2025-26 diese zwölf Bundesstaaten solche Programme:[2]"
+          ],
+          [
+            "t",
+            "Bundesstaat | Programm | Rupien im Monat | Budget 2025-26 (Crore Rupien)\nMaharashtra | Majhi Ladki Bahin | 1.500 | 36.000\nKarnataka | Gruha Lakshmi | 2.000 | 28.608\nWestbengalen | Lakshmir Bhandar | 1.000–1.200 | 26.700\nMadhya Pradesh | Ladli Behna | 1.250 | 18.669\nTamil Nadu | Magalir Urimai Thogai | 1.000 | 13.807\nJharkhand | Maiyan Samman | 2.500 | 13.363\nOdisha | Subhadra | 833 | 10.145\nChhattisgarh | Mahtari Vandan | 1.000 | 5.500\nDelhi | Mahila Samriddhi | 2.500 | 5.110\nAssam | Orunodoi | 1.250 | 5.000\nHaryana | Lado Laxmi | 2.100 | 5.000\nHimachal Pradesh | Pyari Behna | 1.500 | 138"
+          ],
+          [
+            "p",
+            "Das sind Haushaltszahlen für 2025-26 (ein Crore sind zehn Millionen); mehrere Beträge haben sich seither geändert, etwa die Erhöhung in Madhya Pradesh auf 1.500 Rupien im November 2025.[9] PRS wies außerdem darauf hin, dass sechs der zwölf Bundesstaaten ein laufendes Defizit erwarten und dass diese Zahlungen den laufenden Überschuss Madhya Pradeshs von 1,1 % auf 0,4 % des Landes-BIP senken.[2]"
+          ],
+          [
+            "h",
+            "Wohin das Geld geht"
+          ],
+          [
+            "p",
+            "Studien zur Wirkung dieser Programme gibt es noch wenige. In einem Arbeitspapier für den Wirtschaftsberatungsrat des Premierministers (EAC-PM) vom Juli 2026 werteten Ökonominnen der State Bank of India Kontodaten aus: Ladki Bahin erhöhte die Kontostände am Monatsende um rund 84 % (6.884 Rupien) und die Ausgaben um rund 46 % (1.349 Rupien); Odishas Subhadra erhöhte die Kontostände um rund 45 % und die Ausgaben um 28 %. Von jeder zusätzlichen Rupie wurden etwa 90 Paise ausgegeben, was die Autorinnen als Zeichen knapper Budgets deuten.[12] Verglichen wurde mit Frauen, deren Familieneinkommen knapp über der Grenze lag. Es sind Kontodaten: Sie zeigen Sparen und Ausgeben, nicht die Wirkung auf Ernährung, Schulbesuch oder Entscheidungen im Haushalt."
+          ],
+          [
+            "h",
+            "Ist das ein Grundeinkommen?"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert das Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis geleistet wird, ohne Bedürftigkeitsprüfung oder Arbeitsverpflichtung“.[14] Daran gemessen:"
+          ],
+          [
+            "t",
+            "Kriterium | Versuch in Madhya Pradesh | Ladli Behna | PM-KISAN\nRegelmäßig | Ja, monatlich | Ja, monatlich | Ja, dreimal im Jahr\nGeld | Ja | Ja | Ja\nIndividuell | Ja, jeder Erwachsene und jedes Kind | Ja, aufs eigene Konto der Frau | Nein, pro Bauernfamilie\nAllgemein | Das ganze Dorf | Nein, verheiratete Frauen von 21 bis 60 | Nein, Bauern mit Land\nBedingungslos | Ja | Einkommens- und andere Bedingungen | Einkommens- und andere Bedingungen"
+          ],
+          [
+            "p",
+            "Der Versuch in Madhya Pradesh war, so klein er war, fast ein Grundeinkommen. Die heutigen Programme sind regelmäßig und in Geld, die Frauenprogramme auch individuell, aber sie sind nicht allgemein: Sie hängen an Einkommen, Alter, Familienstand oder Land. „Gezielte Geldtransfers“ ist der genauere Name."
+          ],
+          [
+            "h",
+            "Was würde es für alle kosten?"
+          ],
+          [
+            "p",
+            "Gingen die 1.500 Rupien von Ladli Behna an jeden Erwachsenen in Indien, kommt {der Grundeinkommensrechner|/calc/?c=in&w=adults&m=1500} auf Bruttokosten von rund 18,6 Billionen Rupien im Jahr, etwa 5,4 % des BIP. Zum Vergleich: Indiens nominales BIP lag 2025-26 bei 346,36 Billionen Rupien;[13] die Frauenprogramme der Bundesstaaten machen zusammen etwa 0,5 % des BIP aus,[2] PM-KISAN etwa 0,18 %.[8] Die 4,9 % des Economic Survey gingen von einem kleineren Betrag (7.620 Rupien im Jahr) für 75 % der Menschen aus.[4] Das sind Bruttozahlen; Einsparungen durch den Ersatz anderer Programme sind nicht berücksichtigt."
+          ],
+          [
+            "h",
+            "Weder „Indien hat ein Grundeinkommen“ noch „nur Wahlgeschenke“"
+          ],
+          [
+            "o",
+            "Ladli Behna und Ladki Bahin sind keine Grundeinkommen. Sie gelten für einige Frauen, mit Bedingungen, und wurden oft kurz vor Wahlen eingeführt oder erhöht. Wenn die Rechnung steigt, werden versprochene Erhöhungen verschoben und Listen im Namen der Überprüfung gekürzt; nicht jede Frau, die das e-KYC nicht abschließen konnte, war unberechtigt."
+          ],
+          [
+            "o",
+            "Sie als bloße Wahlgeschenke abzutun, ist aber ebenso falsch. Die Infrastruktur, um jeden Monat Geld auf die eigenen Konten von zig Millionen Frauen zu bringen, steht inzwischen, und die Kontodaten zeigen, dass das Geld überwiegend ausgegeben und gespart wird. Der Versuch in Madhya Pradesh hat gezeigt, dass bedingungsloses Geld für jeden Menschen zu besserer Ernährung, mehr Schulbesuch und anderer Arbeit werden kann."
+          ],
+          [
+            "o",
+            "Die Frage ist, ob diese Programme über den Wahlzyklus hinaus zu einem stabilen, gesetzlich verankerten und ehrlich ausgewerteten Einkommensboden werden können. Dafür braucht es drei Dinge: tragfähige Finanzierung, weniger und klarere Bedingungen und unabhängige Auswertung. Der Bundesstaat, der 2011 das Experiment wagte, hat auch die besten Chancen, diesen Schritt zu gehen."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "كل شهر تتلقى نحو 12.5 مليون امرأة في ولاية ماديا براديش 1,500 روبية في حساباتهن المصرفية من برنامج «لادلي بهنا».[1] والولاية ليست وحدها. فبحسب مركز ⁦PRS Legislative Research⁩، ارتفع عدد الولايات التي تدفع للنساء نقدًا شبه غير مشروط من ولايتين في 2022-23 إلى اثنتي عشرة في 2025-26، وتتوقع مجتمعةً إنفاق 1.68 تريليون روبية على هذه البرامج، أي نحو 0.5% من الناتج المحلي الإجمالي.[2]"
+          ],
+          [
+            "p",
+            "وقبل أكثر من عقد، احتضنت قرى في منطقة إندور بالولاية نفسها واحدة من أكثر تجارب الدخل الأساسي استشهادًا في العالم. يتناول هذا المقال ما فعلته تلك التجربة وما وجدته وحدودها؛ وما قاله المسح الاقتصادي الهندي لعام 2016-17 عن الدخل الأساسي الشامل؛ ومدى قرب برامج اليوم، لادلي بهنا ولادكي باهين و⁦PM-KISAN⁩، من الدخل الأساسي."
+          ],
+          [
+            "h",
+            "تجربة ماديا براديش (2011–2013)"
+          ],
+          [
+            "p",
+            "أدارت التجربةَ رابطةُ النساء العاملات لحسابهن (⁦SEWA⁩) بتمويل من اليونيسف.[3] في التجربة الكبرى، تلقى كل رجل وامرأة وطفل في ثماني قرى دخلًا أساسيًا شهريًا، وقورنت تجربتهم باثنتي عشرة قرية «ضابطة» مشابهة. من يونيو 2011 إلى مايو 2012 تلقى كل بالغ 200 روبية شهريًا وكل طفل 100؛ ثم رُفع المبلغان بنسبة 50% لمواجهة التضخم إلى 300 و150 روبية، ودُفعا حتى نوفمبر 2012. وبالنسبة للأسر عند خط الفقر، كان ذلك نحو 30% من إنفاقها.[3]"
+          ],
+          [
+            "p",
+            "وجرت تجربة أصغر في قرية قبلية واحدة من فبراير 2012 إلى يناير 2013، بواقع 300 روبية لكل بالغ و150 لكل طفل شهريًا. تلقى 756 شخصًا ما مجموعه 1.945 مليون روبية، وكانت المقارنة مع قرية قبلية أخرى.[3] وإجمالًا تلقى نحو 6,000 شخص في تسع قرى دخلًا أساسيًا. وفي التجربة الكبرى كان 5,547 شخصًا مستحقين، وشملت المسوح 11,231 شخصًا في 2,034 أسرة. اختيرت القرى عشوائيًا، وصمم استمارات المسح اقتصادي مستقل.[3]"
+          ],
+          [
+            "h",
+            "ما الذي وجدته"
+          ],
+          [
+            "p",
+            "نُشرت النتائج عام 2015 في كتاب ⁦Basic Income: A Transformative Policy for India⁩ لساراث دافالا ورينانا جابفالا وسوميا كابور ميهتا وغاي ستاندينغ، وهو متاح مجانًا على الإنترنت.[3] كان أوضح أثر على التغذية. ففي قرى الدخل الأساسي ارتفعت نسبة الفتيات ذوات الوزن الطبيعي لأعمارهن بأكثر من 25 نقطة مئوية، أي أكثر من ضعف الارتفاع في القرى الضابطة؛ وارتفعت لدى الأولاد 14 نقطة مقابل 9 في القرى الضابطة. وفي القرية القبلية انخفضت نسبة الأطفال ذوي النقص الحاد في الوزن من 32% إلى 15%.[3]"
+          ],
+          [
+            "p",
+            "وتحسن التعليم أيضًا: أفادت 29.0% من الأسر التي تلقت الدخل الأساسي بزيادة الحضور المدرسي، مقابل 13.5% من الأسر التي لم تتلقه.[3] ولم ينخفض العمل، بل تغيّر. كان التحول الأكبر من العمل المأجور إلى الزراعة الذاتية والعمل الحر، وكانت النساء أكبر المستفيدين من نمو الأنشطة الاقتصادية الثانوية.[3] وانخفضت الديون: خفّضت 12.5% من أسر قرى الدخل الأساسي ديونها وزادتها 5%، بينما في القرى الضابطة خفّضتها 5% فقط وزادتها أكثر من 58%.[3] وبين الأسر التي فيها فرد من ذوي الإعاقة، انخفض الكسب لدى 27% من الأسر التي لم تتلق الدخل الأساسي، مقابل 12% ممن تلقته.[3]"
+          ],
+          [
+            "t",
+            "المجال | قرى الدخل الأساسي | القرى الضابطة\nالفتيات ذوات الوزن الطبيعي لأعمارهن | ارتفاع بأكثر من 25 نقطة | أقل من نصف ذلك\nالأولاد ذوو الوزن الطبيعي لأعمارهم | ⁦+14⁩ نقطة | ⁦+9⁩ نقاط\nأسر أفادت بزيادة الحضور المدرسي | 29.0% | 13.5%\nأسر خفّضت ديونها | 12.5% | 5%\nأسر زادت ديونها | 5% | أكثر من 58%"
+          ],
+          [
+            "h",
+            "الحدود"
+          ],
+          [
+            "p",
+            "تحتاج هذه النتائج إلى قراءة حذرة. لم تتلق المال سوى 8 قرى، مع 12 للمقارنة؛ وجرى الاختيار العشوائي على مستوى القرية لا الفرد. واستمرت التجربة نحو عام ونصف. وتستند معظم النتائج إلى ما قاله الناس للباحثين. وقد كتب الكتابَ الفريقُ الذي صمم التجربة نفسه، لا مقيّمون من الخارج. ويذكر الكتاب نفسه أن الوزن تحسن 27 نقطة في قرى ⁦SEWA⁩ وأقل من 20 في غيرها، فقد يعود جزء من الأثر إلى التنظيم لا إلى المال وحده.[3] ويصف المؤلفون التقييم بأنه «عمل قيد التطوير».[3] ولم نجد إعادة تحليل مستقلة خاضعة لتحكيم الأقران."
+          ],
+          [
+            "o",
+            "ومع ذلك، فالتجربة مهمة للهند. فقد اختبرت دفع المال لكل فرد، كل شهر، دون شروط، ولم تجد علامات على المخاوف الأكثر تداولًا: أن يتوقف الناس عن العمل أو يبددوا المال. وهي لا تغني عن دراسات أكبر وأطول ومُتحقَّق منها باستقلال، لكنها دليل مبكر جيد. وتجد ملخصها أيضًا في {الخط الزمني|/timeline/#tl-india-mp}."
+          ],
+          [
+            "h",
+            "المسح الاقتصادي 2016-17: «ناضجة لنقاش جاد»"
+          ],
+          [
+            "p",
+            "خصص الفصل التاسع من المسح الاقتصادي لحكومة الهند لعام 2016-17 بالكامل للدخل الأساسي الشامل. وأحصى نحو 950 برنامجًا مركزيًا وبرنامجًا فرعيًا تبلغ مخصصاتها نحو 5% من الناتج المحلي الإجمالي، ووجد أن أفقر المناطق كثيرًا ما تتلقى أقل الأموال، ووصف ذلك بأنه دليل على «سوء تخصيص حاد».[4] وقدّر أن دخلًا أساسيًا قدره 7,620 روبية سنويًا يُدفع لـ75% من السكان سيكلف 4.9% من الناتج.[4]"
+          ],
+          [
+            "p",
+            "وعدّد المسح أيضًا حجج المعارضين: قد يذهب المال إلى الاستهلاك التفاخري، وقد يعمل الناس أقل، وقد يسيطر الرجال على المال داخل الأسرة، والبرنامج إذا بدأ يصعب سياسيًا إيقافه. وخلص إلى أن الدخل الأساسي فكرة حان وقتها «ربما لا للتنفيذ الفوري، ولكن على الأقل لنقاش عام جاد».[4] وقبل انتخابات 2019 وعد حزب المؤتمر ببرنامج ⁦NYAY⁩: 72,000 روبية سنويًا لأفقر 20% من الأسر.[5] ولم يُنفذ هو الآخر."
+          ],
+          [
+            "h",
+            "برنامج ⁦PM-KISAN⁩: نقد للمزارعين"
+          ],
+          [
+            "p",
+            "أما ما نُفذ فعلًا فهو ⁦PM-KISAN⁩. فمنذ 24 فبراير 2019 تتلقى كل أسرة مزارعة مالكة للأرض ومستحقة 6,000 روبية سنويًا على ثلاث دفعات من 2,000، مباشرة في حساب مصرفي؛ ويُستثنى دافعو ضريبة الدخل والموظفون الحكوميون وأصحاب الدخول المرتفعة.[6] ودفعت الدفعة الرابعة والعشرون، في 30 أكتوبر 2026، نحو 186.9 مليار روبية لأكثر من 93.4 مليون مزارع، ليتجاوز إجمالي ما دُفع حتى الآن 4.64 تريليون روبية.[7] وتقدير ميزانية 2026-27 هو 635 مليار روبية.[8] إنه دوري ونقدي، لكنه يُدفع لكل أسرة ولمالكي الأرض فقط؛ ولا يشمل العمال الزراعيين المعدمين."
+          ],
+          [
+            "h",
+            "نقد للنساء: لادلي بهنا ولادكي باهين وولايات أخرى"
+          ],
+          [
+            "p",
+            "أُعلن برنامج «لادلي بهنا» في ماديا براديش في 28 يناير 2023، قبل انتخابات الولاية في ذلك العام، ودُفعت أول دفعة في 10 يونيو 2023. بدأ بـ1,000 روبية شهريًا، ثم 1,250 منذ أكتوبر 2023، و1,500 منذ نوفمبر 2025.[9] وهو للنساء المتزوجات (بمن فيهن الأرامل والمطلقات والمهجورات) من 21 إلى ما دون 60 عامًا، اللواتي لا يتجاوز الدخل الأسري المصرح به 250,000 روبية سنويًا؛ وتُستثنى الأسر التي فيها دافع لضريبة الدخل أو موظف حكومي أو متقاعد، أو التي تملك أكثر من خمسة أفدنة أو مركبة رباعية العجلات. وتذكر البوابة الرسمية 12,522,542 متقدمة مستحقة.[1] وارتفعت ميزانيته من 186.69 مليار روبية في 2025-26 إلى 238.83 مليار في 2026-27. وفي أكتوبر 2026 قال رئيس وزراء الولاية موهان ياداف: «لم أكن أعلم أن تولي رئاسة الحكومة سيجلب عبئًا ماليًا بهذا الثقل».[9]"
+          ],
+          [
+            "p",
+            "ويدفع برنامج «ماجهي لادكي باهين» في ماهاراشترا 1,500 روبية شهريًا للنساء من 21 إلى 65 عامًا منذ يوليو 2024.[10][2] ووعد التحالف الحاكم «ماهايوتي» في برنامجه الانتخابي برفعها إلى 2,100 روبية، لكن ميزانية 2025-26 لم تفعل؛ وانخفض المخصص من 460 مليار روبية في العام السابق إلى 360 مليارًا.[10] ثم أزالت حملة تحقق أكثر من 9.2 مليون مستفيدة من بين نحو 24.3 إلى 24.7 مليون اعتُبرن مستحقات في المرحلة الأولى. لم تكمل نحو 6 ملايين امرأة إجراء ⁦e-KYC⁩ الإلزامي، وتجاوز الدخل الأسري لنحو 1.4 إلى 1.5 مليون الحد البالغ 250,000 روبية. وشكك المراقب والمدقق العام في إنفاق 35.41 مليار روبية في إطار البرنامج.[11]"
+          ],
+          [
+            "p",
+            "وبحسب ⁦PRS⁩، كانت هذه الولايات الاثنتا عشرة تدير برامج كهذه في 2025-26:[2]"
+          ],
+          [
+            "t",
+            "الولاية | البرنامج | روبية شهريًا | ميزانية 2025-26 (كرور روبية)\nماهاراشترا | ماجهي لادكي باهين | 1,500 | 36,000\nكارناتاكا | غروها لاكشمي | 2,000 | 28,608\nالبنغال الغربية | لاكشمير بهاندار | 1,000–1,200 | 26,700\nماديا براديش | لادلي بهنا | 1,250 | 18,669\nتاميل نادو | ماغالير أوريماي توغاي | 1,000 | 13,807\nجهارخاند | مايان سامان | 2,500 | 13,363\nأوديشا | سوبهادرا | 833 | 10,145\nتشاتيسغار | ماهتاري فاندان | 1,000 | 5,500\nدلهي | ماهيلا ساموريدي | 2,500 | 5,110\nآسام | أورونودوي | 1,250 | 5,000\nهاريانا | لادو لاكشمي | 2,100 | 5,000\nهيماشال براديش | بياري بهنا | 1,500 | 138"
+          ],
+          [
+            "p",
+            "هذه أرقام ميزانية 2025-26 (الكرور عشرة ملايين)؛ وقد تغيرت مبالغ عدة منذ ذلك الحين، مثل رفع ماديا براديش المبلغ إلى 1,500 روبية في نوفمبر 2025.[9] وأشار ⁦PRS⁩ أيضًا إلى أن ست ولايات من الاثنتي عشرة تتوقع عجزًا في الإيرادات، وأن هذه التحويلات تخفض فائض الإيرادات في ماديا براديش من 1.1% إلى 0.4% من الناتج المحلي للولاية.[2]"
+          ],
+          [
+            "h",
+            "إلى أين يذهب المال"
+          ],
+          [
+            "p",
+            "لا تزال الدراسات عن آثار هذه البرامج قليلة. ففي ورقة عمل في يوليو 2026 للمجلس الاستشاري الاقتصادي لرئيس الوزراء (⁦EAC-PM⁩)، استخدم اقتصاديون من بنك الدولة الهندي بيانات الحسابات المصرفية، ووجدوا أن «لادكي باهين» رفع أرصدة المستفيدات في نهاية الشهر بنحو 84% (6,884 روبية) وإنفاقهن بنحو 46% (1,349 روبية)؛ ورفع برنامج «سوبهادرا» في أوديشا الأرصدة بنحو 45% والإنفاق بنسبة 28%. وأُنفق نحو 90 بيسة من كل روبية إضافية، وهو ما يقرؤه المؤلفون علامة على ضيق الميزانيات.[12] وكانت المقارنة مع نساء يزيد دخلهن الأسري قليلًا عن حد الاستحقاق. إنها بيانات حسابات: تُظهر الادخار والإنفاق، لا الآثار على التغذية أو التعليم أو القرارات داخل الأسرة."
+          ],
+          [
+            "h",
+            "هل هو دخل أساسي؟"
+          ],
+          [
+            "p",
+            "تعرّف شبكة الدخل الأساسي العالمية (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُقدَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو اشتراط للعمل».[14] وبهذا المقياس:"
+          ],
+          [
+            "t",
+            "المعيار | تجربة ماديا براديش | لادلي بهنا | ⁦PM-KISAN⁩\nدورية | نعم، شهريًا | نعم، شهريًا | نعم، ثلاث مرات سنويًا\nنقدية | نعم | نعم | نعم\nفردية | نعم، كل بالغ وطفل | نعم، في حساب المرأة نفسها | لا، لكل أسرة مزارعة\nشاملة | كل أهل القرية | لا، المتزوجات من 21 إلى 60 عامًا | لا، المزارعون مالكو الأرض\nغير مشروطة | نعم | شروط الدخل وغيرها | شروط الدخل وغيرها"
+          ],
+          [
+            "p",
+            "كانت تجربة ماديا براديش، على صغرها، دخلًا أساسيًا تقريبًا. أما برامج اليوم فدورية ونقدية، وبرامج النساء فردية أيضًا، لكنها ليست شاملة: فهي مرتبطة بالدخل أو العمر أو الحالة الزوجية أو الأرض. والاسم الأدق لها «تحويلات نقدية موجهة»."
+          ],
+          [
+            "h",
+            "كم ستكلف للجميع؟"
+          ],
+          [
+            "p",
+            "لو ذهبت الـ1,500 روبية الشهرية من «لادلي بهنا» إلى كل بالغ في الهند، فإن {حاسبة الدخل الأساسي|/calc/?c=in&w=adults&m=1500} تقدّر التكلفة الإجمالية بنحو 18.6 تريليون روبية سنويًا، أي نحو 5.4% من الناتج المحلي الإجمالي. وللمقارنة، بلغ الناتج الاسمي للهند 346.36 تريليون روبية في 2025-26؛[13] وتبلغ برامج الولايات للنساء مجتمعة نحو 0.5% من الناتج،[2] و⁦PM-KISAN⁩ نحو 0.18%.[8] أما نسبة 4.9% في المسح الاقتصادي فافترضت مبلغًا أصغر (7,620 روبية سنويًا) لـ75% من السكان.[4] هذه أرقام إجمالية؛ ولا تحتسب الوفر الناتج عن استبدال برامج أخرى."
+          ],
+          [
+            "h",
+            "لا «وصل الدخل الأساسي إلى الهند» ولا «مجرد هدايا انتخابية»"
+          ],
+          [
+            "o",
+            "«لادلي بهنا» و«لادكي باهين» ليسا دخلًا أساسيًا. إنهما لبعض النساء، بشروط، وكثيرًا ما أُطلقا أو رُفعا قبيل الانتخابات. وحين تكبر الفاتورة تُؤجل الزيادات الموعودة وتتقلص القوائم باسم التحقق؛ وليست كل امرأة عجزت عن إكمال ⁦e-KYC⁩ غير مستحقة."
+          ],
+          [
+            "o",
+            "لكن رفضهما بوصفهما مجرد هدايا خطأ أيضًا. فقد صار لدى الهند الجهاز الذي يوصل النقد كل شهر إلى الحسابات الخاصة لعشرات الملايين من النساء، وتُظهر بيانات الحسابات أن المال يُنفق ويُدخر في معظمه. وقد أظهرت تجربة ماديا براديش أن النقد غير المشروط لكل فرد يمكن أن يتحول إلى تغذية وتعليم وعمل أفضل."
+          ],
+          [
+            "o",
+            "والسؤال هو: هل تستطيع هذه البرامج أن تتجاوز الدورة الانتخابية نحو أرضية دخل مستقرة، قائمة على القانون، ومقيّمة بأمانة؟ يتطلب ذلك ثلاثة أمور: تمويلًا مستدامًا، وشروطًا أقل وأوضح، وتقييمًا مستقلًا. والولاية التي خاضت التجربة عام 2011 هي أيضًا الأقدر على اتخاذ هذه الخطوة."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Government of Madhya Pradesh — Mukhyamantri Ladli Behna Yojana official portal (eligibility and applicant counts, checked Nov 2026; in Hindi)",
+          "url": "https://cmladlibahna.mp.gov.in/home.aspx"
+        },
+        {
+          "n": 2,
+          "label": "PRS Legislative Research — State of State Finances 2025-26 (Oct 2025; PDF)",
+          "url": "https://prsindia.org/files/budget/SOSF_2025.pdf"
+        },
+        {
+          "n": 3,
+          "label": "Sarath Davala, Renana Jhabvala, Soumya Kapoor Mehta and Guy Standing — Basic Income: A Transformative Policy for India (Bloomsbury Academic, 2015; open access PDF via OAPEN)",
+          "url": "https://library.oapen.org/bitstream/id/2f925b19-91c9-4be0-9dca-a08136710cef/9781472583130.pdf"
+        },
+        {
+          "n": 4,
+          "label": "Ministry of Finance, Government of India — Economic Survey 2016-17, Chapter 9: Universal Basic Income: A Conversation With and Within the Mahatma (Jan 2017; PDF)",
+          "url": "https://www.indiabudget.gov.in/budget2017-2018/es2016-17/echap09.pdf"
+        },
+        {
+          "n": 5,
+          "label": "Scroll.in — Congress promises Rs 72,000 a year to the poorest 20% of families under NYAY (25 Mar 2019)",
+          "url": "https://scroll.in/latest/917806/scroll_in"
+        },
+        {
+          "n": 6,
+          "label": "Press Information Bureau — PM-KISAN backgrounder for the 21st instalment (19 Nov 2025; PDF)",
+          "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251119698901.pdf"
+        },
+        {
+          "n": 7,
+          "label": "Press Information Bureau — 24th instalment of PM-KISAN: over Rs 18,690 crore to 9.34 crore farmers (30 Oct 2026)",
+          "url": "https://www.pib.gov.in/PressNoteDetails.aspx?id=160645&NoteId=160645&ModuleId=3&reg=3&lang=1"
+        },
+        {
+          "n": 8,
+          "label": "Union Budget 2026-27 — Notes on Demands for Grants, Demand No. 1, Department of Agriculture and Farmers Welfare (PDF)",
+          "url": "https://www.indiabudget.gov.in/doc/eb/sbe1.pdf"
+        },
+        {
+          "n": 9,
+          "label": "Outlook India — Why MP CM Mohan Yadav is calling Ladli Behna a heavy financial burden now (6 Oct 2026)",
+          "url": "https://www.outlookindia.com/national/why-mp-cm-mohan-yadav-is-calling-ladli-behna-a-heavy-financial-burden-now"
+        },
+        {
+          "n": 10,
+          "label": "Business Today — Maharashtra Budget 2025: Ladki Bahin payout has no mention; opposition accuses government of not fulfilling poll promises (11 Mar 2025)",
+          "url": "https://www.businesstoday.in/amp/personal-finance/news/story/maharashtra-budget-2025-ladki-bahin-payout-has-no-mention-oppn-accuses-ruling-govt-of-not-fulfilling-poll-promises-467523-2025-03-11"
+        },
+        {
+          "n": 11,
+          "label": "Free Press Journal — Maharashtra’s Ladki Bahin scheme: over 92 lakh women removed after verification (13 Jul 2026)",
+          "url": "https://www.freepressjournal.in/mumbai/maharashtras-ladki-bahin-scheme-over-92-lakh-women-removed-after-verification-167-crore-remain-eligible"
+        },
+        {
+          "n": 12,
+          "label": "Economic Advisory Council to the Prime Minister — Soumya Kanti Ghosh and Shagishna K, Unconditional Women Cash Transfer Programmes in India: Evidence from Maharashtra and Odisha, Working Paper 52/2026 (Jul 2026; PDF)",
+          "url": "https://eacpm.gov.in/wp-content/uploads/2026/07/CBT-Working-Paper.pdf"
+        },
+        {
+          "n": 13,
+          "label": "Press Information Bureau (MoSPI) — Provisional Estimates of Annual GDP for 2025-26 (5 Jun 2026; PDF)",
+          "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc202665884801.pdf"
+        },
+        {
+          "n": 14,
+          "label": "BIEN — About basic income",
+          "url": "https://basicincome.org/about-basic-income/"
+        }
+      ]
+    },
+    {
       "id": "china-childcare-subsidy-basic-income",
       "date": "2026-11-09",
       "related": [
         "japan-special-cash-payment",
         "refundable-tax-credit-vs-basic-income",
         "thailand-digital-wallet",
-        "finland-basic-income-experiment"
+        "finland-basic-income-experiment",
+        "india-basic-income-madhya-pradesh-ladli-behna"
       ],
       "title": {
         "en": "China’s 3,600-yuan childcare subsidy: who gets it, and is it a basic income?",
@@ -15775,7 +16873,8 @@ module.exports = {
       "date": "2026-11-06",
       "related": [
         "openresearch-cash-study",
-        "japan-special-cash-payment"
+        "japan-special-cash-payment",
+        "india-basic-income-madhya-pradesh-ladli-behna"
       ],
       "title": {
         "ja": "「フィンランドで失敗した」は本当か：ベーシックインカム実験でわかったこと、わからなかったこと",
@@ -19074,7 +20173,8 @@ module.exports = {
         "universal-high-income",
         "public-benefit-fund",
         "moltbook-basic-income",
-        "finland-basic-income-experiment"
+        "finland-basic-income-experiment",
+        "india-basic-income-madhya-pradesh-ladli-behna"
       ],
       "title": {
         "ja": "サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか",

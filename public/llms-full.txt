@@ -814,6 +814,131 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic
 
 ## Essays
 
+### Basic income in India: the Madhya Pradesh experiment and today’s cash for women
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/india-basic-income-madhya-pradesh-ladli-behna/
+- Published: 2026-11-09
+
+Every month about 12.5 million women in Madhya Pradesh receive Rs 1,500 in their bank accounts under the Ladli Behna scheme.[1] The state is not alone. According to PRS Legislative Research, the number of states paying largely unconditional cash to women rose from two in 2022-23 to twelve in 2025-26, and together they expect to spend Rs 1.68 trillion (Rs 1,68,040 crore) on these schemes, about 0.5% of GDP.[2]
+
+More than a decade earlier, villages in the same state’s Indore district were the site of one of the most cited basic income pilots in the world. This essay looks at what that pilot did and found, and its limits; at what India’s 2016-17 Economic Survey said about universal basic income (UBI); and at how close today’s schemes, Ladli Behna, Ladki Bahin and PM-KISAN, come to a basic income.
+
+#### The Madhya Pradesh pilot (2011–2013)
+
+The pilot was run by the Self-Employed Women’s Association (SEWA) and funded by UNICEF.[3] In the larger pilot, every man, woman and child in eight villages received a monthly basic income, and their experience was compared with 12 similar “control” villages. From June 2011 to May 2012 each adult received Rs 200 a month and each child Rs 100; the amounts were then raised by 50% for inflation, to Rs 300 and Rs 150, and paid until November 2012. For families at the poverty line, that was about 30% of their spending.[3]
+
+A smaller pilot ran in one tribal village from February 2012 to January 2013, at Rs 300 per adult and Rs 150 per child a month. 756 people received Rs 1.945 million in all, and the comparison was with another tribal village.[3] In total about 6,000 people in nine villages received a basic income. In the larger pilot 5,547 people were eligible, and the surveys covered 11,231 people in 2,034 households. The villages were chosen at random, and the survey instruments were designed by an independent economist.[3]
+
+#### What it found
+
+The results were published in 2015 in Basic Income: A Transformative Policy for India by Sarath Davala, Renana Jhabvala, Soumya Kapoor Mehta and Guy Standing, which is free to read online.[3] The clearest effect was on nutrition. In the basic income villages, the share of girls with a normal weight for their age rose by more than 25 percentage points, more than double the rise in control villages; for boys it rose by 14 points, against 9 in the control villages. In the tribal village, the share of children severely underweight fell from 32% to 15%.[3]
+
+Schooling improved too: 29.0% of households receiving the basic income reported higher school attendance, against 13.5% of those not receiving it.[3] Work did not fall; it changed. The main shift was from wage labour to own-account farming and other own work, and women were the main beneficiaries of the growth in secondary economic activity.[3] Debt fell: 12.5% of households in the basic income villages reduced their debt and 5% increased it, while in the control villages only 5% reduced it and over 58% increased it.[3] Among households with a disabled member, 27% of those without the basic income saw their earnings fall, against 12% of those with it.[3]
+
+| Area | Basic income villages | Control villages |
+| --- | --- | --- |
+| Girls with normal weight for age | Up by more than 25 points | Less than half that |
+| Boys with normal weight for age | +14 points | +9 points |
+| Households reporting higher school attendance | 29.0% | 13.5% |
+| Households that reduced debt | 12.5% | 5% |
+| Households that increased debt | 5% | Over 58% |
+
+#### The limits
+
+These results need careful reading. Only 8 villages received money, with 12 for comparison; randomisation was at the village level, not the individual level. The pilot lasted about a year and a half. Most results rest on what people told surveyors. The book was written by the team behind the pilot, not by outside evaluators. The book itself reports that weight improved by 27 points in SEWA villages and by under 20 in the others, so part of the effect may come from the organisation, not only the money.[3] The authors call the evaluation a “work-in-progress”.[3] We found no independent, peer-reviewed reanalysis of the pilot.
+
+Opinion: Still, the pilot matters for India. It tested paying every individual, every month, without conditions, and it found no sign of the fears most often raised: that people would stop working or waste the money. It is not a substitute for larger, longer, independently checked studies, but it is good early evidence. A summary is also on our timeline (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-india-mp).
+
+#### The 2016-17 Economic Survey: “ripe for serious discussion”
+
+Chapter 9 of the Government of India’s Economic Survey 2016-17 was devoted to UBI. It counted about 950 central schemes and sub-schemes, together about 5% of GDP in budget allocations, and found that the poorest districts often received the least money, which it called evidence of “acute misallocation”.[4] It estimated that a UBI of Rs 7,620 a year, paid to 75% of the population, would cost 4.9% of GDP.[4]
+
+The Survey also listed the case against: money might go on conspicuous spending, people might work less, men might control the money within households, and once a scheme starts it is politically hard to stop. Its conclusion was that UBI is an idea whose time has come “perhaps not for immediate implementation but at least for serious public deliberation”.[4] Before the 2019 election the Congress party promised NYAY, Rs 72,000 a year for the poorest 20% of families.[5] That was not implemented either.
+
+#### PM-KISAN: cash for farmers
+
+What was implemented was PM-KISAN. Since 24 February 2019, every eligible landholding farmer family has received Rs 6,000 a year in three instalments of Rs 2,000, straight into a bank account; income tax payers, government employees and higher-income groups are excluded.[6] The 24th instalment, on 30 October 2026, paid about Rs 186.9 billion to more than 93.4 million farmers, bringing the total paid so far above Rs 4.64 trillion.[7] The 2026-27 budget estimate is Rs 635 billion.[8] It is regular and in cash, but it is paid per family and only to farmers who own land; landless farm labourers are not covered.
+
+#### Cash for women: Ladli Behna, Ladki Bahin and other states
+
+Madhya Pradesh’s Ladli Behna scheme was announced on 28 January 2023, ahead of that year’s state election, and first paid on 10 June 2023. It began at Rs 1,000 a month, rose to Rs 1,250 from October 2023 and to Rs 1,500 from November 2025.[9] It is for married women (including widowed, divorced and deserted women) aged 21 to under 60 whose self-declared family income is no more than Rs 250,000 a year; families with an income tax payer, a government employee or pensioner, more than five acres of land or a four-wheeler are excluded. The official portal lists 12,522,542 eligible applicants.[1] Its budget rose from Rs 186.69 billion in 2025-26 to Rs 238.83 billion in 2026-27. In October 2026 Chief Minister Mohan Yadav said: “Little did I know that becoming Chief Minister would bring such a heavy financial burden”.[9]
+
+Maharashtra’s Majhi Ladki Bahin scheme has paid women aged 21 to 65 Rs 1,500 a month since July 2024.[10][2] The ruling Mahayuti alliance promised in its manifesto to raise it to Rs 2,100, but the 2025-26 budget did not; the allocation fell from Rs 460 billion the year before to Rs 360 billion.[10] A verification drive then removed more than 9.2 million beneficiaries from the roughly 24.3 to 24.7 million found eligible in the first phase. About 6 million women had failed to complete the mandatory e-KYC, and about 1.4 to 1.5 million had a family income above the Rs 250,000 limit. The Comptroller and Auditor General questioned Rs 35.41 billion of spending under the scheme.[11]
+
+According to PRS, these twelve states ran such schemes in 2025-26:[2]
+
+| State | Scheme | Rs per month | Budget 2025-26 (Rs crore) |
+| --- | --- | --- | --- |
+| Maharashtra | Majhi Ladki Bahin | 1,500 | 36,000 |
+| Karnataka | Gruha Lakshmi | 2,000 | 28,608 |
+| West Bengal | Lakshmir Bhandar | 1,000–1,200 | 26,700 |
+| Madhya Pradesh | Ladli Behna | 1,250 | 18,669 |
+| Tamil Nadu | Magalir Urimai Thogai | 1,000 | 13,807 |
+| Jharkhand | Maiyan Samman | 2,500 | 13,363 |
+| Odisha | Subhadra | 833 | 10,145 |
+| Chhattisgarh | Mahtari Vandan | 1,000 | 5,500 |
+| Delhi | Mahila Samriddhi | 2,500 | 5,110 |
+| Assam | Orunodoi | 1,250 | 5,000 |
+| Haryana | Lado Laxmi | 2,100 | 5,000 |
+| Himachal Pradesh | Pyari Behna | 1,500 | 138 |
+
+These are 2025-26 budget figures (one crore is ten million); several amounts have changed since, such as Madhya Pradesh’s rise to Rs 1,500 in November 2025.[9] PRS also noted that six of the twelve states expect a revenue deficit, and that these transfers cut Madhya Pradesh’s revenue surplus from 1.1% of state GDP to 0.4%.[2]
+
+#### Where the money goes
+
+There are still few studies of these schemes’ effects. In a July 2026 working paper for the Economic Advisory Council to the Prime Minister (EAC-PM), economists at the State Bank of India used bank account data and found that Ladki Bahin raised beneficiaries’ month-end balances by about 84% (Rs 6,884) and their spending by about 46% (Rs 1,349); Odisha’s Subhadra scheme raised balances by about 45% and spending by 28%. About 90 paise of each extra rupee was spent, which the authors read as a sign of tight budgets.[12] The comparison was with women whose family income was just above the eligibility limit. These are account data: they show saving and spending, not effects on nutrition, schooling or decisions at home.
+
+#### Is it a basic income?
+
+The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”.[14] Measured against it:
+
+| Criterion | Madhya Pradesh pilot | Ladli Behna | PM-KISAN |
+| --- | --- | --- | --- |
+| Periodic | Yes, monthly | Yes, monthly | Yes, three times a year |
+| Cash | Yes | Yes | Yes |
+| Individual | Yes, every adult and child | Yes, into the woman’s own account | No, per farmer family |
+| Universal | Everyone in the village | No, married women aged 21–60 | No, landholding farmers |
+| Unconditional | Yes | Income and other conditions | Income and other conditions |
+
+The Madhya Pradesh pilot, small as it was, was very nearly a basic income. Today’s schemes are regular and in cash, and the women’s schemes are individual, but they are not universal: they depend on income, age, marital status or land. “Targeted cash transfers” is the more accurate name.
+
+#### What would it cost for everyone?
+
+If Ladli Behna’s Rs 1,500 a month went to every adult in India, the basic income calculator (https://neteru-nyukin.eltociear.workers.dev/calc/?c=in&w=adults&m=1500) puts the gross cost at about Rs 18.6 lakh crore (Rs 18.6 trillion) a year, about 5.4% of GDP. For comparison, India’s nominal GDP in 2025-26 was Rs 346.36 lakh crore;[13] the states’ schemes for women together come to about 0.5% of GDP,[2] and PM-KISAN to about 0.18%.[8] The Economic Survey’s 4.9% assumed a smaller amount (Rs 7,620 a year) for 75% of people.[4] These are gross figures; they do not count savings from replacing other schemes.
+
+#### Neither “basic income has arrived in India” nor “just election freebies”
+
+Opinion: Ladli Behna and Ladki Bahin are not basic incomes. They are for some women, with conditions, and they were often launched or raised just before elections. When the bills grow, promised increases are postponed and lists shrink in the name of verification; not every woman who could not complete e-KYC is ineligible.
+
+Opinion: But dismissing them as mere freebies is also wrong. The machinery to put cash into tens of millions of women’s own accounts every month now exists, and account data show the money is mostly spent and saved. The Madhya Pradesh pilot showed that unconditional cash for every individual can turn into better nutrition, schooling and work.
+
+Opinion: The question is whether these schemes can move beyond the election cycle towards a stable, legally grounded and honestly evaluated income floor. That needs three things: sustainable funding, fewer and clearer conditions, and independent evaluation. The state that ran the experiment in 2011 also has the best chance to take that step.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/china-childcare-subsidy-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
+
+Sources:
+
+1. Government of Madhya Pradesh — Mukhyamantri Ladli Behna Yojana official portal (eligibility and applicant counts, checked Nov 2026; in Hindi): https://cmladlibahna.mp.gov.in/home.aspx
+2. PRS Legislative Research — State of State Finances 2025-26 (Oct 2025; PDF): https://prsindia.org/files/budget/SOSF_2025.pdf
+3. Sarath Davala, Renana Jhabvala, Soumya Kapoor Mehta and Guy Standing — Basic Income: A Transformative Policy for India (Bloomsbury Academic, 2015; open access PDF via OAPEN): https://library.oapen.org/bitstream/id/2f925b19-91c9-4be0-9dca-a08136710cef/9781472583130.pdf
+4. Ministry of Finance, Government of India — Economic Survey 2016-17, Chapter 9: Universal Basic Income: A Conversation With and Within the Mahatma (Jan 2017; PDF): https://www.indiabudget.gov.in/budget2017-2018/es2016-17/echap09.pdf
+5. Scroll.in — Congress promises Rs 72,000 a year to the poorest 20% of families under NYAY (25 Mar 2019): https://scroll.in/latest/917806/scroll_in
+6. Press Information Bureau — PM-KISAN backgrounder for the 21st instalment (19 Nov 2025; PDF): https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251119698901.pdf
+7. Press Information Bureau — 24th instalment of PM-KISAN: over Rs 18,690 crore to 9.34 crore farmers (30 Oct 2026): https://www.pib.gov.in/PressNoteDetails.aspx?id=160645&NoteId=160645&ModuleId=3&reg=3&lang=1
+8. Union Budget 2026-27 — Notes on Demands for Grants, Demand No. 1, Department of Agriculture and Farmers Welfare (PDF): https://www.indiabudget.gov.in/doc/eb/sbe1.pdf
+9. Outlook India — Why MP CM Mohan Yadav is calling Ladli Behna a heavy financial burden now (6 Oct 2026): https://www.outlookindia.com/national/why-mp-cm-mohan-yadav-is-calling-ladli-behna-a-heavy-financial-burden-now
+10. Business Today — Maharashtra Budget 2025: Ladki Bahin payout has no mention; opposition accuses government of not fulfilling poll promises (11 Mar 2025): https://www.businesstoday.in/amp/personal-finance/news/story/maharashtra-budget-2025-ladki-bahin-payout-has-no-mention-oppn-accuses-ruling-govt-of-not-fulfilling-poll-promises-467523-2025-03-11
+11. Free Press Journal — Maharashtra’s Ladki Bahin scheme: over 92 lakh women removed after verification (13 Jul 2026): https://www.freepressjournal.in/mumbai/maharashtras-ladki-bahin-scheme-over-92-lakh-women-removed-after-verification-167-crore-remain-eligible
+12. Economic Advisory Council to the Prime Minister — Soumya Kanti Ghosh and Shagishna K, Unconditional Women Cash Transfer Programmes in India: Evidence from Maharashtra and Odisha, Working Paper 52/2026 (Jul 2026; PDF): https://eacpm.gov.in/wp-content/uploads/2026/07/CBT-Working-Paper.pdf
+13. Press Information Bureau (MoSPI) — Provisional Estimates of Annual GDP for 2025-26 (5 Jun 2026; PDF): https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc202665884801.pdf
+14. BIEN — About basic income: https://basicincome.org/about-basic-income/
+
 ### China’s 3,600-yuan childcare subsidy: who gets it, and is it a basic income?
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/china-childcare-subsidy-basic-income/
@@ -917,6 +1042,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/thailand-digital-wallet/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/india-basic-income-madhya-pradesh-ladli-behna/
 
 Sources:
 
@@ -1483,6 +1610,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-c
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/india-basic-income-madhya-pradesh-ladli-behna/
+
 Sources:
 
 1. GIGAZINE — Finland’s ‘basic income experiment’ to be interrupted in December 2018 (20 Apr 2018, in Japanese): https://gigazine.net/news/20180420-basic-income-experiment-ending
@@ -1738,6 +1867,8 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/moltbook-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/india-basic-income-madhya-pradesh-ladli-behna/
 
 Sources:
 
