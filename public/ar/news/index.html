@@ -660,6 +660,15 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .foot a{color:inherit;text-underline-offset:3px}
 .vmain{max-width:1080px;margin-inline:auto}
 .vsec{padding-top:28px}
+.vidx{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px}
+.vcard{display:grid;gap:8px;height:100%;padding:16px 18px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
+.vcard:hover{border-color:var(--accent)}
+.vcard-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px}
+.vcard-h b{font-size:1.05rem;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.vcard-n{font-size:.85rem;color:var(--muted)}
+.vcard-g{font-size:.9rem;line-height:1.7;color:var(--ink)}
+.vcard-g span{display:block;font-size:.8125rem;font-weight:700;color:var(--muted)}
+.vidx-note{margin-top:28px;max-width:760px}
 .vsec h2{font-size:1.15rem;display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .vsec h2 .dot{font-size:.85rem;color:var(--muted);font-weight:400}
 .verify-line{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.82rem}

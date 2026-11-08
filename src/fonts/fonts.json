@@ -971,6 +971,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-e2a280565e.woff2",
     "chars": "É乱享依侵俳冊吹奏威尋弁怖拘曲楽混漫盛脅脚訟訴諮諾賊路遺陸音風"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-c8850a37ce.woff2",
+    "chars": "彩虹装"
    }
   ],
   "ja:body:700": [
@@ -1169,6 +1173,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-a8aaa209b7.woff2",
     "chars": "É乱享依侵俳冊吹奏威尋弁怖拘曲楽混漫盛脅脚訟訴諮諾賊路遺陸音風"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-3d370d4fcb.woff2",
+    "chars": "彩虹装"
    }
   ],
   "ja:display": [
@@ -1275,6 +1283,10 @@
    {
     "file": "dela-gothic-one-400-ja-31762c9359.woff2",
     "chars": "価創求流補"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-64e1d3c02c.woff2",
+    "chars": "ひ"
    }
   ],
   "ja:dot": [
@@ -1297,6 +1309,10 @@
    {
     "file": "dotgothic16-400-ja-769ad0c3ec.woff2",
     "chars": "賞"
+   },
+   {
+    "file": "dotgothic16-400-ja-4204cab64f.woff2",
+    "chars": "件"
    }
   ],
   "logo": [
@@ -1511,6 +1527,10 @@
    {
     "file": "noto-sans-sc-400-zh-6e8e6934bd.woff2",
     "chars": "É俳剑剧华厅叉吓吸唱崩挤曲桥歌溃漫盗素罢胁讼遵陆"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-6426c39d81.woff2",
+    "chars": "删泄膜虹"
    }
   ],
   "zh:body:700": [
@@ -1705,6 +1725,10 @@
    {
     "file": "noto-sans-sc-700-zh-5339b8e688.woff2",
     "chars": "É俳剑剧华厅叉吓吸唱崩挤曲桥歌溃漫盗素罢胁讼遵陆"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-55926d53fb.woff2",
+    "chars": "删泄膜虹"
    }
   ],
   "zh:display": [
@@ -1807,6 +1831,10 @@
    {
     "file": "noto-sans-sc-900-zh-6d461e161c.woff2",
     "chars": "互创求立线酬"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-f93cc3bfe8.woff2",
+    "chars": "二独确"
    }
   ],
   "zh:dot": [
@@ -1821,6 +1849,10 @@
    {
     "file": "dotgothic16-400-zh-ceec62b13e.woff2",
     "chars": "共第题"
+   },
+   {
+    "file": "dotgothic16-400-zh-8118371d0b.woff2",
+    "chars": "务服项"
    }
   ]
  }

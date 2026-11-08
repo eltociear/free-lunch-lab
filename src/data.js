@@ -4350,6 +4350,13 @@ module.exports = {
       "verifyReqH": "この認証が必要なサービス",
       "verifyOptH": "この認証を任意で使えるサービス",
       "verifyAll": "認証方法の一覧",
+      "verifyIdxH1": "認証方法の一覧：ベーシックインカム型アプリは、どうやって「ひとりの人間」だと確かめるのか",
+      "verifyIdxIntro": "存在するだけでもらえるアプリの多くは、まず「本物の人間か」「ひとり1回しか登録していないか」を確かめます。これを「proof of personhood（人間であることの証明）」と呼ぶことがあります。方法によって差し出すものは、生体情報から電話番号、何もなしまでさまざまです。方法を選ぶと、それを使うサービスの一覧が見られます。",
+      "verifyIdxGive": "差し出すもの",
+      "verifyIdxN": "{n}件",
+      "verifyIdxCrumb": "認証方法",
+      "verifyIdxNoteH": "生体情報について",
+      "verifyIdxNote": "顔や虹彩のスキャンは、もし漏れても取り替えられないデータです。画像は削除する、暗号化した形でしか扱わない、と説明する運営者もありますが、このサイトではそれを確かめられません。登録する前に、データをどう保存するのか、消してもらえるのかを各サービスで読み、得られるものと見くらべてください。",
       "biNewsTitle": "ベーシックインカム・ニュース",
       "biNewsH1": "ベーシックインカム・ニュース（毎週更新）",
       "biNewsDesc": "世界のベーシックインカム、保障所得、現金給付のニュースを毎週まとめています。実験、政策、研究、AIと財源の動きを、出典を確かめたうえで自分たちの言葉で要約し、元の記事へのリンクを添えています。",
@@ -4665,6 +4672,13 @@ module.exports = {
       "verifyReqH": "Services that require it",
       "verifyOptH": "Services where it is optional",
       "verifyAll": "All verification methods",
+      "verifyIdxH1": "Verification methods: how basic income apps check you are one real person",
+      "verifyIdxIntro": "Most apps that pay you just for existing first need to know that you are a real person and that you have signed up only once. This is often called proof of personhood. Each method asks you to hand over something different, from biometrics to a phone number, or nothing at all. Pick a method to see the services that use it.",
+      "verifyIdxGive": "You hand over",
+      "verifyIdxN": "{n} services",
+      "verifyIdxCrumb": "Verification methods",
+      "verifyIdxNoteH": "About biometric data",
+      "verifyIdxNote": "A face or iris scan is data you cannot change if it leaks. Some operators say the images are deleted or processed only in encrypted form, but this site cannot check that. Before you sign up, read how each service stores your data and whether you can have it deleted, and weigh that against what you get.",
       "biNewsTitle": "Basic income news",
       "biNewsH1": "Basic income news, week by week",
       "biNewsDesc": "A weekly, hand-checked roundup of basic income, guaranteed income and cash transfer news from around the world, summarised in our own words with sources.",
@@ -4980,6 +4994,13 @@ module.exports = {
       "verifyReqH": "जिन सेवाओं में यह ज़रूरी है",
       "verifyOptH": "जिन सेवाओं में यह वैकल्पिक है",
       "verifyAll": "सभी वेरिफ़िकेशन तरीके",
+      "verifyIdxH1": "वेरिफ़िकेशन के तरीके: बेसिक इनकम ऐप कैसे जाँचते हैं कि आप एक असली इंसान हैं",
+      "verifyIdxIntro": "सिर्फ़ मौजूद होने पर पैसे देने वाले ज़्यादातर ऐप पहले यह जानना चाहते हैं कि आप असली इंसान हैं और आपने सिर्फ़ एक बार साइन अप किया है। इसे अक्सर proof of personhood कहा जाता है। हर तरीके में आपको कुछ अलग देना पड़ता है, बायोमेट्रिक डेटा से लेकर फ़ोन नंबर तक, या कुछ भी नहीं। कोई तरीका चुनें और उसे इस्तेमाल करने वाली सेवाएँ देखें।",
+      "verifyIdxGive": "आप क्या देते हैं",
+      "verifyIdxN": "{n} सेवाएँ",
+      "verifyIdxCrumb": "वेरिफ़िकेशन के तरीके",
+      "verifyIdxNoteH": "बायोमेट्रिक डेटा के बारे में",
+      "verifyIdxNote": "चेहरे या आँखों का स्कैन ऐसा डेटा है जिसे लीक होने पर बदला नहीं जा सकता। कुछ ऑपरेटर कहते हैं कि तस्वीरें मिटा दी जाती हैं या सिर्फ़ एन्क्रिप्टेड रूप में प्रोसेस होती हैं, पर यह साइट इसकी जाँच नहीं कर सकती। साइन अप करने से पहले पढ़ें कि हर सेवा आपका डेटा कैसे रखती है और क्या आप उसे मिटवा सकते हैं, फिर उसे मिलने वाली चीज़ से तौलें।",
       "biNewsTitle": "बेसिक इनकम समाचार",
       "biNewsH1": "बेसिक इनकम समाचार, हर हफ़्ते",
       "biNewsDesc": "दुनिया भर की बेसिक इनकम, गारंटीड इनकम और नकद हस्तांतरण की ख़बरों का साप्ताहिक संग्रह, हाथ से जाँचा हुआ, हमारे अपने शब्दों में सार और स्रोतों के साथ।",
@@ -5295,6 +5316,13 @@ module.exports = {
       "verifyReqH": "需要此验证的服务",
       "verifyOptH": "可选择使用此验证的服务",
       "verifyAll": "全部验证方式",
+      "verifyIdxH1": "验证方式一览：基本收入类应用如何确认你是独一无二的真人",
+      "verifyIdxIntro": "大多数“只要存在就能领钱”的应用，都要先确认你是真人，并且只注册了一次，这常被称为“人格证明”（proof of personhood）。不同方式要你交出的东西不同，从生物特征、手机号码到什么都不用。选择一种方式，即可查看使用它的服务。",
+      "verifyIdxGive": "你要交出的",
+      "verifyIdxN": "{n} 项服务",
+      "verifyIdxCrumb": "验证方式",
+      "verifyIdxNoteH": "关于生物特征数据",
+      "verifyIdxNote": "面部或虹膜扫描一旦泄露，就是无法更换的数据。有的运营方表示会删除图像或只以加密形式处理，但本站无法核实。注册前，请先阅读各服务如何保存数据、能否要求删除，再与能得到的东西权衡。",
       "biNewsTitle": "基本收入新闻",
       "biNewsH1": "基本收入新闻（每周更新）",
       "biNewsDesc": "每周汇总全球基本收入、保障收入和现金转移的新闻：试点、政策、研究以及 AI 与资金的动向。每条新闻都经人工核实来源，用我们自己的话概括，并附上原文链接，方便查证。",
@@ -5612,6 +5640,13 @@ module.exports = {
       "verifyReqH": "Servicios que lo exigen",
       "verifyOptH": "Servicios donde es opcional",
       "verifyAll": "Todos los métodos de verificación",
+      "verifyIdxH1": "Métodos de verificación: cómo comprueban las apps de renta básica que eres una sola persona real",
+      "verifyIdxIntro": "La mayoría de las apps que pagan solo por existir necesitan saber primero que eres una persona real y que te has registrado una sola vez. A esto se le suele llamar prueba de personalidad (proof of personhood). Cada método te pide entregar algo distinto: desde datos biométricos hasta un número de teléfono, o nada. Elige un método para ver los servicios que lo usan.",
+      "verifyIdxGive": "Lo que entregas",
+      "verifyIdxN": "{n} servicios",
+      "verifyIdxCrumb": "Métodos de verificación",
+      "verifyIdxNoteH": "Sobre los datos biométricos",
+      "verifyIdxNote": "Un escaneo de la cara o del iris es un dato que no puedes cambiar si se filtra. Algunos operadores dicen que borran las imágenes o que solo las procesan cifradas, pero este sitio no puede comprobarlo. Antes de registrarte, lee cómo guarda cada servicio tus datos y si puedes pedir que los borren, y sopésalo frente a lo que recibes.",
       "biNewsTitle": "Noticias de renta básica",
       "biNewsH1": "Noticias de renta básica, semana a semana",
       "biNewsDesc": "Resumen semanal, revisado a mano, de noticias de renta básica, ingreso garantizado y transferencias de efectivo en el mundo, con nuestras palabras y fuentes.",
@@ -5927,6 +5962,13 @@ module.exports = {
       "verifyReqH": "خدمات تتطلبه",
       "verifyOptH": "خدمات يكون فيها اختياريًا",
       "verifyAll": "كل طرق التحقق",
+      "verifyIdxH1": "طرق التحقق: كيف تتأكد تطبيقات الدخل الأساسي أنك إنسان حقيقي واحد",
+      "verifyIdxIntro": "تحتاج معظم التطبيقات التي تدفع لك لمجرد وجودك أن تعرف أولًا أنك إنسان حقيقي وأنك سجّلت مرة واحدة فقط، ويُسمّى هذا غالبًا «إثبات الإنسانية» (⁦proof of personhood⁩). وتطلب كل طريقة منك شيئًا مختلفًا، من البيانات البيومترية إلى رقم الهاتف، أو لا شيء. اختر طريقة لترى الخدمات التي تستخدمها.",
+      "verifyIdxGive": "ما تقدّمه",
+      "verifyIdxN": "عدد الخدمات: ⁦{n}⁩",
+      "verifyIdxCrumb": "طرق التحقق",
+      "verifyIdxNoteH": "عن البيانات البيومترية",
+      "verifyIdxNote": "مسح الوجه أو القزحية بيانات لا يمكنك تغييرها إذا تسرّبت. يقول بعض المشغّلين إنهم يحذفون الصور أو يعالجونها مشفّرة فقط، لكن هذا الموقع لا يستطيع التحقق من ذلك. قبل التسجيل، اقرأ كيف تحفظ كل خدمة بياناتك وهل يمكنك طلب حذفها، ثم وازن ذلك بما تحصل عليه.",
       "biNewsTitle": "أخبار الدخل الأساسي",
       "biNewsH1": "أخبار الدخل الأساسي أسبوعًا بأسبوع",
       "biNewsDesc": "حصاد أسبوعي نتحقق منه يدويًا لأخبار الدخل الأساسي والدخل المضمون والتحويلات النقدية من حول العالم، نلخّصها بكلماتنا الخاصة ونرفق بكل خبر رابط مصدره.",
@@ -6242,6 +6284,13 @@ module.exports = {
       "verifyReqH": "Dienste, die das verlangen",
       "verifyOptH": "Dienste, bei denen es optional ist",
       "verifyAll": "Alle Verifizierungsmethoden",
+      "verifyIdxH1": "Verifizierungsmethoden: Wie Grundeinkommens-Apps prüfen, dass du ein einzelner, echter Mensch bist",
+      "verifyIdxIntro": "Die meisten Apps, die schon fürs bloße Dasein zahlen, wollen zuerst wissen, dass du ein echter Mensch bist und dich nur einmal angemeldet hast. Das nennt man oft Proof of Personhood. Jede Methode verlangt etwas anderes von dir, von biometrischen Daten über eine Telefonnummer bis zu gar nichts. Wähle eine Methode, um die Dienste zu sehen, die sie nutzen.",
+      "verifyIdxGive": "Was du hergibst",
+      "verifyIdxN": "{n} Dienste",
+      "verifyIdxCrumb": "Verifizierungsmethoden",
+      "verifyIdxNoteH": "Zu biometrischen Daten",
+      "verifyIdxNote": "Ein Gesichts- oder Iris-Scan liefert Daten, die du nicht ändern kannst, wenn sie durchsickern. Manche Betreiber sagen, die Bilder würden gelöscht oder nur verschlüsselt verarbeitet, doch diese Seite kann das nicht prüfen. Lies vor der Anmeldung, wie der jeweilige Dienst deine Daten speichert und ob du sie löschen lassen kannst, und wäge das gegen das ab, was du bekommst.",
       "biNewsTitle": "Grundeinkommen-Nachrichten",
       "biNewsH1": "Grundeinkommen-Nachrichten, Woche für Woche",
       "biNewsDesc": "Wöchentlicher, von Hand geprüfter Überblick über Meldungen zu Grundeinkommen, garantiertem Einkommen und Geldtransfers weltweit, mit Quellen.",
@@ -8722,6 +8771,15 @@ module.exports = {
         "de": "World ID (Orb)",
         "ar": "⁦World ID⁩ (⁦Orb⁩)"
       },
+      "give": {
+        "ja": "Orbという装置での虹彩と顔のスキャン（生体情報）",
+        "en": "An iris and face scan at an Orb device (biometric data)",
+        "zh": "在 Orb 设备上扫描虹膜和面部（生物特征数据）",
+        "hi": "Orb नाम के डिवाइस पर आँखों (आइरिस) और चेहरे का स्कैन (बायोमेट्रिक डेटा)",
+        "es": "Un escaneo del iris y la cara en un dispositivo Orb (datos biométricos)",
+        "de": "Ein Iris- und Gesichtsscan an einem Orb-Gerät (biometrische Daten)",
+        "ar": "مسح للقزحية والوجه بجهاز ⁦Orb⁩ (بيانات بيومترية)"
+      },
       "title": {
         "ja": "World ID（Orb認証）で使えるアプリ・サービス一覧",
         "en": "What can you do with World ID? Apps that use Orb verification",
@@ -8750,6 +8808,15 @@ module.exports = {
         "es": "Escaneo facial / prueba de vida",
         "de": "Gesichtsscan / Lebendprüfung",
         "ar": "مسح الوجه / فحص الحيوية"
+      },
+      "give": {
+        "ja": "スマホのカメラでの顔スキャン（生体情報）",
+        "en": "A face scan with your phone camera (biometric data)",
+        "zh": "用手机摄像头扫描面部（生物特征数据）",
+        "hi": "फ़ोन के कैमरे से चेहरे का स्कैन (बायोमेट्रिक डेटा)",
+        "es": "Un escaneo facial con la cámara del móvil (datos biométricos)",
+        "de": "Ein Gesichtsscan mit der Handykamera (biometrische Daten)",
+        "ar": "مسح للوجه بكاميرا الهاتف (بيانات بيومترية)"
       },
       "title": {
         "ja": "顔認証で使えるアプリ・サービス一覧",
@@ -8780,6 +8847,15 @@ module.exports = {
         "de": "NFC-Reisepass",
         "ar": "جواز سفر ⁦NFC⁩"
       },
+      "give": {
+        "ja": "NFCで読み取るパスポートのICチップの情報",
+        "en": "The chip data of your passport, read by NFC",
+        "zh": "通过 NFC 读取的护照芯片信息",
+        "hi": "NFC से पढ़ी गई पासपोर्ट की चिप की जानकारी",
+        "es": "Los datos del chip del pasaporte, leídos por NFC",
+        "de": "Die Chipdaten deines Reisepasses, per NFC gelesen",
+        "ar": "بيانات شريحة جواز السفر عبر ⁦NFC⁩"
+      },
       "title": {
         "ja": "NFCパスポートで使えるアプリ・サービス一覧",
         "en": "Apps that verify you with an NFC passport",
@@ -8808,6 +8884,15 @@ module.exports = {
         "es": "KYC con documento",
         "de": "Ausweis-KYC",
         "ar": "التحقق بوثيقة هوية (⁦KYC⁩)"
+      },
+      "give": {
+        "ja": "身分証と、氏名・生年月日などの個人情報",
+        "en": "An ID document and personal details such as your name and date of birth",
+        "zh": "身份证件，以及姓名、出生日期等个人信息",
+        "hi": "पहचान पत्र और नाम, जन्मतिथि जैसी निजी जानकारी",
+        "es": "Un documento de identidad y datos personales como tu nombre y fecha de nacimiento",
+        "de": "Ein Ausweisdokument und persönliche Daten wie Name und Geburtsdatum",
+        "ar": "وثيقة هوية وبيانات شخصية مثل الاسم وتاريخ الميلاد"
       },
       "title": {
         "ja": "身分証の本人確認（KYC）が必要なアプリ・サービス一覧",
@@ -8838,6 +8923,15 @@ module.exports = {
         "de": "Telefonnummer",
         "ar": "رقم الهاتف"
       },
+      "give": {
+        "ja": "認証コードを受け取る電話番号",
+        "en": "A phone number that receives a code",
+        "zh": "一个能接收验证码的手机号码",
+        "hi": "कोड पाने वाला एक फ़ोन नंबर",
+        "es": "Un número de teléfono que recibe un código",
+        "de": "Eine Telefonnummer, an die ein Code geschickt wird",
+        "ar": "رقم هاتف تصله رسالة برمز"
+      },
       "title": {
         "ja": "電話番号で使えるアプリ・サービス一覧",
         "en": "Apps that verify you by phone number",
@@ -8866,6 +8960,15 @@ module.exports = {
         "es": "Red de confianza / invitaciones",
         "de": "Vertrauensnetz / Einladungen",
         "ar": "شبكة الثقة / الدعوات"
+      },
+      "give": {
+        "ja": "身分証もスキャンもなし。今いるメンバーからの招待や保証",
+        "en": "No ID or scan: existing members invite you or vouch for you",
+        "zh": "无需证件或扫描，由现有成员邀请或担保",
+        "hi": "न पहचान पत्र, न स्कैन; मौजूदा सदस्य आपको न्योता देते हैं या आपकी गारंटी लेते हैं",
+        "es": "Ni documento ni escaneo: miembros actuales te invitan o responden por ti",
+        "de": "Weder Ausweis noch Scan: Bestehende Mitglieder laden dich ein oder bürgen für dich",
+        "ar": "لا وثيقة ولا مسح؛ يدعوك أعضاء حاليون أو يزكّونك"
       },
       "title": {
         "ja": "招待・信頼の網で参加するアプリ・サービス一覧",
@@ -8896,6 +8999,15 @@ module.exports = {
         "de": "Validierungszeremonie",
         "ar": "مراسم التحقق"
       },
+      "give": {
+        "ja": "時間。決まった時刻にほかの人と一緒にパズルを解く",
+        "en": "Your time: you solve puzzles with others at a set time",
+        "zh": "你的时间：在固定时间和其他人一起解谜题",
+        "hi": "आपका समय: तय समय पर दूसरों के साथ पहेलियाँ हल करना",
+        "es": "Tu tiempo: resuelves acertijos con otras personas a una hora fija",
+        "de": "Deine Zeit: Du löst zu einer festen Uhrzeit mit anderen Rätsel",
+        "ar": "وقتك: تحل ألغازًا مع آخرين في موعد محدد"
+      },
       "title": {
         "ja": "認証セレモニーで参加するアプリ・サービス一覧",
         "en": "Apps that use a validation ceremony",
@@ -8924,6 +9036,15 @@ module.exports = {
         "es": "Sin verificación",
         "de": "Keine Verifizierung",
         "ar": "دون تحقق"
+      },
+      "give": {
+        "ja": "メールアドレスやアプリのインストールだけ",
+        "en": "Nothing beyond an email address or an app install",
+        "zh": "只需电子邮箱或安装应用",
+        "hi": "बस एक ईमेल पता या ऐप इंस्टॉल",
+        "es": "Nada más que un correo electrónico o instalar la app",
+        "de": "Nur eine E-Mail-Adresse oder die App-Installation",
+        "ar": "لا شيء سوى بريد إلكتروني أو تثبيت التطبيق"
       },
       "title": {
         "ja": "本人確認なしで使えるアプリ・サービス一覧",
