@@ -2787,7 +2787,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-08
+- Last commit: 2026-11-09
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -2934,7 +2934,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: TypeScript
 - License: AGPL-3.0
 - Stars: 6
-- Last commit: 2026-11-04
+- Last commit: 2026-11-09
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app
@@ -3041,7 +3041,7 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Language: TypeScript
 - License: MIT (LICENSE)
 - Stars: 163
-- Last commit: 2026-11-08
+- Last commit: 2026-11-09
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
@@ -3064,7 +3064,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-11-06
+- Last commit: 2026-11-09
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -3141,7 +3141,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-06
+- Last commit: 2026-11-09
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 

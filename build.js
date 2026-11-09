@@ -75,6 +75,24 @@ const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'ess
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 // related（エッセイ）と essays（サービス・年表）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
 const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
+// エッセイと BI計算機の国のページ（/calc/{id}/）・アメリカの保証所得実験の一覧（/pilots/us/）の対応。国のページからはこの逆向きでエッセイへ
+const ESSAY_DATA = {
+  'india-basic-income-madhya-pradesh-ladli-behna': { calc: ['in'] },
+  'china-childcare-subsidy-basic-income': { calc: ['cn'] },
+  'generative-ai-creative-work-basic-income': { calc: ['jp', 'us', 'gb'] },
+  'generative-ai-jobs-basic-income': { calc: ['jp', 'us'] },
+  'refundable-tax-credit-vs-basic-income': { calc: ['jp', 'us'] },
+  'finland-basic-income-experiment': { calc: ['fi'] },
+  'takenaka-70000-yen-basic-income': { calc: ['jp'] },
+  'openresearch-cash-study': { calc: ['us'], pilots: true },
+  'japan-special-cash-payment': { calc: ['jp'] },
+  'nesara-gesara-basic-income': { calc: ['us'] },
+  'your-own-basic-income': { calc: ['jp'] },
+  'thailand-digital-wallet': { calc: ['th'] },
+  'use-to-own': { calc: ['jp'] },
+  'universal-high-income': { calc: ['us'] },
+};
+for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
 for (const s of SERVICES) for (const id of [].concat(s.essays || [])) if (!ESSAYS.some(x => x.id === id)) throw new Error(`${s.id}: unknown essay ${id}`);
 for (const i of TIMELINE) for (const id of [].concat(i.essays || [])) if (!ESSAYS.some(x => x.id === id)) throw new Error(`timeline ${i.id}: unknown essay ${id}`);
@@ -625,6 +643,7 @@ function head(lang) {
 <link rel="canonical" href="${abs(lang)}">
 <link rel="alternate" type="application/rss+xml" title="${esc(L.title)} RSS" href="${feedAbs(lang)}">
 <meta name="google-site-verification" content="n5VlzRi2FPlfwdfg9RcoApbpTtxkHIoB2ws5jWbPF9s">
+<meta name="robots" content="max-image-preview:large">
 ${ICONS}
 ${alts}
 <link rel="alternate" hreflang="x-default" href="${abs(DEFAULT_LANG)}">
@@ -811,6 +830,9 @@ for (const lang of LANGS) {
     verifyAll: `<p class="news-more rv"><a class="orgs-tl" href="verify/">${esc(L.verifyAll)} →</a></p>`,
     verifyBlock: verifyPages.map(m => { const b = byMethod(m); return `<a href="verify/${m}/" dir="auto">${esc(VERIFY[m].name[lang])}<span>${b.req.length + b.opt.length}</span></a>`; }).join(''),
     quizCard: qzCard(lang, 'home-quiz'),
+    calcIdxHome: esc(L.calcIdxLink.replace('{n}', CALC_WORLD.length)),
+    usHome: esc(L.usH1.replace('{n}', US_TL.length)),
+    footCountries: esc(L.footCountries.replace('{n}', CALC_WORLD.length)),
     script: clientScript(lang),
   };
   body = body.replace(/\{\{(\w+)\}\}/g, (_, k) => {
@@ -1149,6 +1171,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .cx-near-l{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .cx-near-l a{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border-radius:999px;border:1.5px solid var(--line);font-size:.875rem;font-weight:700;color:var(--ink);text-decoration:none}
 .cx-near-l a:hover{border-color:var(--muted)}
+.cx-ess-l{margin:0;padding-inline-start:1.2em;display:grid;gap:2px}
+.cx-ess-l a{display:inline-block;padding-block:8px;font-weight:700;overflow-wrap:anywhere}
 .cx-wide{max-width:60rem}
 .cx-q{display:block;max-width:24rem;margin-top:16px}
 .cx-q input{width:100%}
@@ -1327,7 +1351,7 @@ function copyScript(L) {
 }
 
 // 個別ページ・団体ページで共通の外枠（head、上のバー、フッター）
-function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script = '', pr = false, image = `${SITE_URL}/og/${lang}.png`, extraHead = '' }) {
+function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script = '', pr = false, image = `${SITE_URL}/og/${lang}.png`, extraHead = '', noindex = false }) {
   const L = T[lang];
   const rtl = RTL.has(lang);
   const home = urlPath(lang);
@@ -1340,6 +1364,7 @@ function shell(lang, { title, desc, hrefFor, pathFor, ld, ogType, body, script =
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
+<meta name="robots" content="${noindex ? 'noindex, follow' : 'max-image-preview:large'}">
 <link rel="canonical" href="${url}">
 <link rel="alternate" type="application/rss+xml" title="${esc(L.title)} RSS" href="${feedAbs(lang)}">
 ${extraHead}${ICONS}
@@ -1372,7 +1397,7 @@ ${alts}
 <div class="wrap">
 ${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a><a href="${calcIdxPath(lang)}">${esc(cfill(L.footCountries, { n: CALC_WORLD.length }))}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 ${script}
 </body>
@@ -1449,6 +1474,7 @@ ${shareRow(lang, ttl, url, { compact: true, mk: k => `${url}?s=${k}` })}</header
 <div class="essay-body">${blocks}</div>
 ${channelShare(lang, ttl, k => `${url}?s=${k}`, { primary: L.calcShareX, tag: T[lang].calcTag, label: L.essayShare, id: 'share' })}
 ${relatedLinks(lang, essayList(e.related))}
+${essayDataLinks(lang, e)}
 ${GUIDES.filter(g => g.essay === e.id).map(g => guideLink(lang, g, 'related g-rel')).join('')}
 ${qzCard(lang, 'essay-quiz')}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
@@ -1666,6 +1692,25 @@ function calcFacts(lang, c) {
   return { paras: out.map(p => ucf(lang, p)), all };
 }
 
+// エッセイの「数字で確かめる」欄: 関係する国の計算機のページ（なければ計算機の入口）と国の一覧。OpenResearch などはアメリカの保証所得実験の一覧も
+const calcCtyById = id => { const c = CALC_WORLD.find(x => x.id === id); if (!c) throw new Error(`ESSAY_DATA: unknown country ${id}`); return c; };
+function essayDataLinks(lang, e) {
+  const L = T[lang], x = ESSAY_DATA[e.id] || { calc: [] };
+  const links = x.calc.map(calcCtyById).map(c => `<a href="${calcCtyPath(lang, c)}">${esc(c.name[lang])}</a>`);
+  if (x.pilots) links.push(`<a href="${usPath(lang)}">${esc(cfill(L.usH1, { n: US_TL.length }))}</a>`);
+  if (!x.calc.length) links.push(`<a href="${calcPath(lang)}">${esc(L.calcTitle)}</a>`);
+  links.push(`<a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a>`);
+  return `<p class="related g-rel">${esc(L.essayCalc)}: ${links.join(' · ')}</p>`;
+}
+// 国のページの「この国についてのエッセイ」欄（ESSAY_DATA の逆向き）。アメリカは保証所得実験の一覧も
+function calcCtyEssays(lang, c) {
+  const L = T[lang];
+  const list = ESSAYS.filter(e => ((ESSAY_DATA[e.id] || {}).calc || []).includes(c.id));
+  const us = c.id === 'us' ? `<p class="cx-idx"><a href="${usPath(lang)}">${esc(cfill(L.usH1, { n: US_TL.length }))} ${RTL.has(lang) ? '←' : '→'}</a></p>` : '';
+  if (!list.length && !us) return '';
+  return `<section class="g-sec cx-ess"><h2>${esc(L.calcCtyEssays)}</h2>${list.length ? `<ul class="cx-ess-l">${list.map(e => `<li><a href="${essayPath(lang, e)}">${esc(e.title[lang] || e.title.en)}</a></li>`).join('')}</ul>` : ''}${us}</section>`;
+}
+
 function calcCountryPage(lang, c) {
   const L = T[lang];
   const home = urlPath(lang);
@@ -1696,6 +1741,7 @@ ${c.budget ? `<div><dt>${esc(L.calcSrcBudget)}</dt>${own(c.budget.src)}</div>` :
 <form class="cx-form" id="cx" data-url="${esc(calcCtyAbs(lang, c))}" data-c="${c.id}" onsubmit="return false"><div id="cxCtl" style="display:grid;gap:20px">${ini.controls}</div></form>
 <section class="cx-res" id="cxRes" aria-live="polite">${ini.result}</section>
 <section class="g-sec cx-facts"><h2>${esc(cfill(L.calcCtyFactsH, lang === 'en' ? { country: ucf(lang, calcIn(c, lang)) } : base))}</h2>${facts.paras.map(p => `<p>${esc(p)}</p>`).join('')}</section>
+${calcCtyEssays(lang, c)}
 <section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p></section>
 ${src}
 <section class="g-sec cx-near"><h2>${esc(cfill(L.calcCtyNear, { region: L['calcRegion_' + c.region] }))}</h2><ul class="cx-near-l">${near.map(x => `<li><a href="${calcCtyPath(lang, x)}">${esc(x.name[lang])}</a></li>`).join('')}</ul><p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a></p></section>
@@ -1847,7 +1893,8 @@ ${shareRow(lang, cfill(L.usH1, { n }), shareUrlOf(usAbs(lang)))}</header>
 <div class="cx-tw"><table class="cx-tbl us-tbl" id="cxTbl"><thead><tr>${th('n', L.usColProgram, '', 'ascending')}${th('s', L.usColState, 'us-st')}${th('y', L.usColYears, 'num us-y')}${th('m', L.usColMonthly, 'num')}${th('c', L.usColRecipients, 'num')}${th('e', L.usColEval)}</tr></thead><tbody>
 ${rows}
 </tbody></table></div>
-<section class="g-sec cx-note"><p>${esc(L.usNote)}</p></section>
+<section class="g-sec cx-note"><p>${esc(L.usNote)}</p><p class="cx-idx"><a href="${calcCtyPath(lang, calcCtyById('us'))}">${esc(cfill(L.calcCtyH1, { in: calcIn(calcCtyById('us'), lang), country: calcCtyById('us').name[lang] }))} ${RTL.has(lang) ? '←' : '→'}</a></p></section>
+${relatedLinks(lang, ESSAYS.filter(e => (ESSAY_DATA[e.id] || {}).pilots))}
 <p class="back"><a class="btn line" href="${tlPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.tlTitle)}</a></p>
 </main>`;
   const script = `${shareScript(L)}
