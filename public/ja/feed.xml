@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/ja/</link>
     <description>存在するだけでお金がもらえる、ベーシックインカム型のアプリやプロジェクト（Ğ1、Circles、Gradido、Idena など）の一覧。リスクや換金のしやすさもあわせて紹介。一部は紹介リンクです。</description>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ja/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AgentBank（World App）を追加</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/services/agentbank/</link>
+      <guid isPermaLink="false">news-2026-11-10-97b5d6567734</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AgentBank（World App）を追加: 毎日の「Daily catch」の無料WLDと、預けたWLD・USDCへの報酬</description>
+    </item>
     <item>
       <title>ベーシックインカム実験の年表に、アメリカの保証所得実験を94件追加（ストックトン、シカゴからジャクソン、デンバーまで計101件）。実施者・月額・期間・受給者数・財源・公表された評価つき。並べ替えられるアメリカの一覧表と地域の絞り込みも追加（us-pilots.json でも公開）</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/ja/timeline/</link>

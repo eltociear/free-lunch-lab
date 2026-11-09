@@ -2834,6 +2834,73 @@ module.exports = {
         "need": "يُضبط عبر ⁦Claude Code⁩ وخادم ⁦MCP⁩ ⁦@aibtc/mcp-server⁩. التسجيل مجاني (⁦Level 1⁩)، وإرسال رسالة جديدة فقط يكلّف 100 ساتوشي. منشور على ⁦X⁩ يرفعك إلى ⁦Genesis⁩ (⁦Level 2⁩) (تأكدنا في نوفمبر 2026 أن التسجيل يعمل من اليابان)",
         "caution": "الفوز بالمكافآت يحتاج إلى وكيل برمجة ومهارة، والمبالغ صغيرة (⁦150–21,000⁩ ساتوشي للواحدة). هناك 28 مكافأة مصنفة متروكة ولم تُدفع قط (حتى 2 نوفمبر 2026). المفاتيح وعبارة البذور على جهازك فقط، ولا يمكن استعادتها إن ضاعت. حلقة تسجيل الحضور الاختيارية كل 5 دقائق تقريبًا تستهلك من استخدامك للذكاء الاصطناعي. مكافأة الإحالة: ما يعادل 50 دولارًا بـ⁦BTC⁩ لكلٍّ من المُحيل والوكيل المُحال، لكنها ليست تلقائية: لا تُدفع إلا بعد أن يساهم الوكيل المُحال بنشاط في المهام ويبقى نشطًا 5 أيام على الأقل. رمز الإحالة الواحد يكفي 3 وكلاء فقط. لا تضع أكثر مما تتحمل خسارته"
       }
+    },
+    {
+      "id": "agentbank",
+      "name": "AgentBank（World App）",
+      "nameEn": "AgentBank (World App)",
+      "cat": "crypto-bi",
+      "type": "loop",
+      "global": true,
+      "ease": 3,
+      "official": "https://world.org/mini-app?app_id=app_2c22a42ef65cef3929af0d2025617e6e",
+      "code": "tlwshh4u",
+      "ref": "https://worldcoin.org/mini-app?app_id=app_2c22a42ef65cef3929af0d2025617e6e&path=%2F%3Fref%3Dtlwshh4u",
+      "added": "2026-11-10",
+      "checked": "2026-11",
+      "trust": {
+        "cash": "partial",
+        "price": "yes",
+        "operator": "unknown"
+      },
+      "verify": [
+        {
+          "method": "world-id",
+          "optional": true
+        }
+      ],
+      "ja": {
+        "gain": "毎日の「Daily catch」の無料WLDと、預けたWLD・USDCへの報酬",
+        "note": "World App のミニアプリ。AIとのチャットで送金・スワップ・QR決済ができる。1日1回の「Daily catch」で無料のWLD（表示は最大10 WLD、量は日による）が預け入れ機能 Earn に入る。友達が預け入れると最大5 WLDの紹介報酬。開発者は ThinkingHorizon",
+        "need": "紹介リンク（紹介コード tlwshh4u）から World App でミニアプリを開き、ウォレットでサインインする。OrbでWorld IDを認証すると手数料が40%引き",
+        "caution": "報酬にOrb認証が要るかは不明で、日本からの利用も未確認。賞品は Earn に入り、出金は決められた日以降。報酬率は1時間ごとに下がり、上限までの額にしかつかない。量・上限・ロック期間はアプリの外に書かれていない。預け入れのトークン abWLD・abUSDC は売らないこと（詐欺プールに取られるとアプリ自身が警告）。運営会社・利用規約・開始日は見つからない"
+      },
+      "en": {
+        "gain": "Free WLD from a “Daily catch”, plus rewards on WLD or USDC you deposit",
+        "note": "A mini app inside World App: an AI chat agent that sends, swaps and pays QR codes from your World wallet. A once-a-day “Daily catch” gives free WLD (up to 10 WLD per the app; the amount varies), paid into its Earn vault. Inviting a friend who deposits earns up to 5 WLD. Listed as built by ThinkingHorizon",
+        "need": "Open the mini app in World App via the referral link (referral code tlwshh4u) and sign in with your World wallet. An Orb-verified World ID cuts fees by 40%",
+        "caution": "Whether rewards need Orb verification is unknown, and we have not tested it from Japan. Prizes go into Earn, and withdrawals open only after a set date. The reward rate drops every hour and applies only up to a cap. Amounts, cap and lock length are not stated outside the app. Never sell the abWLD/abUSDC deposit tokens: the app itself warns scam pools take almost all of it. No company details, terms or launch date were found"
+      },
+      "zh": {
+        "gain": "每天“Daily catch”的免费 WLD，以及存入的 WLD、USDC 的奖励",
+        "note": "在 World App 中运行的小程序：通过 AI 聊天从 World 钱包转账、兑换和扫码支付。每天一次的“Daily catch”可领免费 WLD（应用内写着最多 10 WLD，数量每天不同），存入其 Earn 金库。邀请的朋友存入后，最多可得 5 WLD 奖励。开发者显示为 ThinkingHorizon",
+        "need": "通过推荐链接（推荐码 tlwshh4u）在 World App 中打开小程序，用 World 钱包登录。用 Orb 验证 World ID 后手续费减 40%",
+        "caution": "领取奖励是否需要 Orb 验证尚不清楚，我们也没有在日本测试过。奖品进入 Earn，要到指定日期后才能提取。奖励利率每小时下降，且只按上限以内的金额计算。数量、上限和锁定期在应用外没有写明。切勿卖出存款代币 abWLD、abUSDC：应用自己警告诈骗资金池会拿走几乎全部。未找到运营公司、使用条款和上线日期"
+      },
+      "hi": {
+        "gain": "“Daily catch” से मुफ़्त WLD, और जमा किए WLD या USDC पर इनाम",
+        "note": "World App के अंदर एक मिनी ऐप: AI चैट एजेंट जो आपके World वॉलेट से पैसे भेजता, स्वैप करता और QR कोड से भुगतान करता है। दिन में एक बार “Daily catch” से मुफ़्त WLD (ऐप के अनुसार ज़्यादा से ज़्यादा 10 WLD, रकम बदलती है) मिलता है, जो इसके Earn वॉल्ट में जाता है। जमा करने वाले दोस्त को बुलाने पर ज़्यादा से ज़्यादा 5 WLD। बनाने वाले के रूप में ThinkingHorizon लिखा है",
+        "need": "रेफ़रल लिंक (रेफ़रल कोड tlwshh4u) से World App में मिनी ऐप खोलें और World वॉलेट से साइन इन करें। Orb से वेरिफ़ाई की गई World ID से फ़ीस 40% कम होती है",
+        "caution": "इनाम के लिए Orb वेरिफ़िकेशन ज़रूरी है या नहीं, यह पता नहीं, और हमने इसे जापान से नहीं आज़माया। इनाम Earn में जाते हैं और तय तारीख़ के बाद ही निकाले जा सकते हैं। इनाम की दर हर घंटे घटती है और एक सीमा तक ही मिलती है। रकम, सीमा और लॉक की अवधि ऐप के बाहर कहीं नहीं लिखी। जमा के टोकन abWLD/abUSDC कभी न बेचें: ऐप ख़ुद चेतावनी देता है कि स्कैम पूल लगभग सब ले लेते हैं। कंपनी, शर्तों या शुरुआत की तारीख़ की जानकारी नहीं मिली"
+      },
+      "es": {
+        "gain": "WLD gratis con el «Daily catch» y recompensas por el WLD o USDC que deposites",
+        "note": "Una mini app dentro de World App: un agente de IA por chat que envía, intercambia y paga códigos QR desde tu billetera de World. El «Daily catch», una vez al día, da WLD gratis (hasta 10 WLD según la app; la cantidad varía), que va a su bóveda Earn. Invitar a un amigo que deposite da hasta 5 WLD. Figura como creada por ThinkingHorizon",
+        "need": "Abre la mini app en World App con el enlace de referido (código tlwshh4u) e inicia sesión con tu billetera de World. Un World ID verificado con Orb rebaja las comisiones un 40 %",
+        "caution": "No se sabe si las recompensas exigen verificación Orb, y no lo hemos probado desde Japón. Los premios van a Earn y solo se pueden retirar a partir de una fecha fijada. La tasa de recompensa baja cada hora y solo se aplica hasta un tope. Cantidades, tope y plazo de bloqueo no constan fuera de la app. Nunca vendas los tokens de depósito abWLD/abUSDC: la propia app avisa de que los pools fraudulentos se quedan con casi todo. No se encontraron datos de la empresa, condiciones de uso ni fecha de lanzamiento"
+      },
+      "de": {
+        "gain": "Gratis-WLD aus dem „Daily catch“ und Prämien auf eingezahlte WLD oder USDC",
+        "note": "Eine Mini-App in der World App: ein KI-Chat-Agent, der aus deiner World-Wallet sendet, tauscht und QR-Codes bezahlt. Der „Daily catch“ einmal am Tag bringt Gratis-WLD (laut App bis zu 10 WLD, die Menge schwankt), die in den Earn-Tresor gehen. Wer einen Freund wirbt, der einzahlt, bekommt bis zu 5 WLD. Als Entwickler ist ThinkingHorizon angegeben",
+        "need": "Die Mini-App über den Empfehlungslink (Empfehlungscode tlwshh4u) in der World App öffnen und mit der World-Wallet anmelden. Eine per Orb verifizierte World ID senkt die Gebühren um 40 %",
+        "caution": "Ob die Prämien eine Orb-Verifizierung brauchen, ist unbekannt, und aus Japan haben wir es nicht getestet. Gewinne gehen in Earn und sind erst ab einem festgelegten Datum abhebbar. Der Prämiensatz sinkt jede Stunde und gilt nur bis zu einer Obergrenze. Mengen, Obergrenze und Sperrfrist stehen nirgends außerhalb der App. Die Einzahlungs-Token abWLD/abUSDC nie verkaufen: Die App warnt selbst, dass Betrugspools fast alles nehmen. Zu Firma, Nutzungsbedingungen und Startdatum wurde nichts gefunden"
+      },
+      "ar": {
+        "gain": "⁦WLD⁩ مجانية يوميًا ومكافآت على الإيداع",
+        "note": "تطبيق مصغّر داخل ⁦World App⁩: وكيل ذكاء اصطناعي بالمحادثة يرسل ويبادل ويدفع رموز ⁦QR⁩ من محفظتك في ⁦World⁩. يمنح «⁦Daily catch⁩» مرة يوميًا ⁦WLD⁩ مجانية (حتى ⁦10 WLD⁩ بحسب التطبيق، والمقدار يتغير) تذهب إلى خزنة ⁦Earn⁩. دعوة صديق يودع تمنحك حتى ⁦5 WLD⁩. المطوّر المذكور ⁦ThinkingHorizon⁩",
+        "need": "افتح التطبيق المصغّر في ⁦World App⁩ عبر رابط الإحالة (رمز الإحالة ⁦tlwshh4u⁩) وسجّل الدخول بمحفظة ⁦World⁩. توثيق ⁦World ID⁩ عبر ⁦Orb⁩ يخفض الرسوم 40%",
+        "caution": "لا يُعرف إن كانت المكافآت تتطلب التحقق عبر ⁦Orb⁩، ولم نجربه من اليابان. تذهب الجوائز إلى ⁦Earn⁩ ولا يمكن سحبها إلا بعد تاريخ محدد. ينخفض معدل المكافأة كل ساعة ولا يُطبَّق إلا حتى سقف معيّن. المقادير والسقف ومدة القفل غير مذكورة خارج التطبيق. لا تبع رموز الإيداع ⁦abWLD/abUSDC⁩ أبدًا: يحذّر التطبيق نفسه من أن مجمعات الاحتيال تأخذ كل شيء تقريبًا. لم نعثر على معلومات عن الشركة ولا شروط الاستخدام ولا تاريخ الإطلاق"
+      }
     }
   ],
   "PICKS": [
@@ -2869,6 +2936,16 @@ module.exports = {
     }
   ],
   "NEWS": [
+    {
+      "date": "2026-11-10",
+      "ja": "AgentBank（World App）を追加",
+      "en": "Added AgentBank (World App)",
+      "zh": "新增 AgentBank（World App）",
+      "hi": "AgentBank (World App) जोड़ा",
+      "es": "Añadido AgentBank (World App)",
+      "de": "AgentBank (World App) hinzugefügt",
+      "ar": "أضفنا ⁦AgentBank (World App)⁩"
+    },
     {
       "date": "2026-11-09",
       "en": "Added 94 US guaranteed income pilots to the basic income timeline (101 in all, from Stockton and Chicago to Jackson and Denver), each with the operator, amount, length, recipients, funding and any published evaluation, plus a sortable table of US pilots and a region filter (also as us-pilots.json)",

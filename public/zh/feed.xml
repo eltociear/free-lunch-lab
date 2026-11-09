@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/zh/</link>
     <description>收录只要存在就能领钱的全民基本收入（UBI）型应用与项目（如 Ğ1、Circles、Gradido、Idena），并注明风险、认证方式和能否兑现。部分为推荐链接。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/zh/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>新增 AgentBank（World App）</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/services/agentbank/</link>
+      <guid isPermaLink="false">news-2026-11-10-97b5d6567734</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>新增 AgentBank（World App）: 每天“Daily catch”的免费 WLD，以及存入的 WLD、USDC 的奖励</description>
+    </item>
     <item>
       <title>基本收入实验年表新增94个美国保障收入试点（从斯托克顿、芝加哥到杰克逊、丹佛，共101个），逐项列出实施方、金额、期限、领取人数、资金来源和已发布的评估，并新增可排序的美国试点一览表和按地区筛选（也以 us-pilots.json 公开）</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/zh/timeline/</link>

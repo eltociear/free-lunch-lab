@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/de/</link>
     <description>Apps und Projekte, die dich fürs bloße Dasein bezahlen, wie ein Grundeinkommen: Ğ1, Circles, Gradido, Idena. Mit Risiken und Auszahlung. Teils Empfehlungslinks.</description>
     <language>de</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AgentBank (World App) hinzugefügt</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/de/services/agentbank/</link>
+      <guid isPermaLink="false">news-2026-11-10-97b5d6567734</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AgentBank (World App) hinzugefügt: Gratis-WLD aus dem „Daily catch“ und Prämien auf eingezahlte WLD oder USDC</description>
+    </item>
     <item>
       <title>94 US-Pilotprojekte zum garantierten Einkommen in die Zeitleiste aufgenommen (insgesamt 101, von Stockton und Chicago bis Jackson und Denver), jeweils mit Träger, Betrag, Dauer, Empfängern, Finanzierung und veröffentlichten Auswertungen, dazu eine sortierbare Tabelle und ein Regionsfilter (auch als us-pilots.json)</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/de/timeline/</link>

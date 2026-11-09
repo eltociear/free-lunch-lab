@@ -1509,6 +1509,10 @@
    {
     "file": "dotgothic16-400-ja-4204cab64f.woff2",
     "chars": "件"
+   },
+   {
+    "file": "dotgothic16-400-ja-10ccbae747.woff2",
+    "chars": "け"
    }
   ],
   "logo": [
@@ -1759,6 +1763,10 @@
    {
     "file": "noto-sans-sc-400-zh-9192403301.woff2",
     "chars": "寸嵌挡粘遮"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-d2187829a9.woff2",
+    "chars": "勿"
    }
   ],
   "zh:body:700": [
@@ -1989,6 +1997,10 @@
    {
     "file": "noto-sans-sc-700-zh-cf300d8da1.woff2",
     "chars": "寸嵌挡粘遮"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-ea8c27cc4f.woff2",
+    "chars": "勿"
    }
   ],
   "zh:display": [

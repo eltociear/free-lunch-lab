@@ -812,6 +812,27 @@ Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/moltbook-basic
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
 
+### AgentBank (World App)
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/services/agentbank/
+- Category: Crypto basic income
+- Payout: recurring
+- Region: available in Japan and worldwide
+- Verification: World ID (Orb) (optional)
+- Trust check: Cash out: With conditions; Market price: Yes; Public operator: Unverified
+- Last checked: 2026-11
+- Official URL: https://world.org/mini-app?app_id=app_2c22a42ef65cef3929af0d2025617e6e
+- Referral link (maintainer's own referral; not covered by the content license): https://worldcoin.org/mini-app?app_id=app_2c22a42ef65cef3929af0d2025617e6e&path=%2F%3Fref%3Dtlwshh4u
+- Referral code (maintainer's own): tlwshh4u
+
+A mini app inside World App: an AI chat agent that sends, swaps and pays QR codes from your World wallet. A once-a-day “Daily catch” gives free WLD (up to 10 WLD per the app; the amount varies), paid into its Earn vault. Inviting a friend who deposits earns up to 5 WLD. Listed as built by ThinkingHorizon
+
+What you get: Free WLD from a “Daily catch”, plus rewards on WLD or USDC you deposit
+
+What you need: Open the mini app in World App via the referral link (referral code tlwshh4u) and sign in with your World wallet. An Orb-verified World ID cuts fees by 40%
+
+Cautions: Whether rewards need Orb verification is unknown, and we have not tested it from Japan. Prizes go into Earn, and withdrawals open only after a set date. The reward rate drops every hour and applies only up to a cap. Amounts, cap and lock length are not stated outside the app. Never sell the abWLD/abUSDC deposit tokens: the app itself warns scam pools take almost all of it. No company details, terms or launch date were found
+
 ## Essays
 
 ### Basic income in India: the Madhya Pradesh experiment and today’s cash for women
@@ -2958,7 +2979,7 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-06
+- Last commit: 2026-11-09
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications

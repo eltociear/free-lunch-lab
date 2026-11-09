@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/hi/</link>
     <description>सिर्फ़ मौजूद होने पर पैसे देने वाले बेसिक इनकम जैसे ऐप और प्रोजेक्ट (Ğ1, Circles, Gradido, Idena), जोखिम और नकद में बदलने की असलियत के साथ। कुछ रेफ़रल लिंक हैं।</description>
     <language>hi</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/hi/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AgentBank (World App) जोड़ा</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/hi/services/agentbank/</link>
+      <guid isPermaLink="false">news-2026-11-10-97b5d6567734</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AgentBank (World App) जोड़ा: “Daily catch” से मुफ़्त WLD, और जमा किए WLD या USDC पर इनाम</description>
+    </item>
     <item>
       <title>बेसिक इनकम समयरेखा में अमेरिका के 94 गारंटीड इनकम पायलट जोड़े (स्टॉकटन और शिकागो से जैक्सन और डेनवर तक, कुल 101), हर एक के संचालक, रकम, अवधि, पाने वालों, फ़ंडिंग और प्रकाशित मूल्यांकन के साथ, साथ में अमेरिकी पायलटों की छाँटने लायक तालिका और क्षेत्र फ़िल्टर (us-pilots.json के रूप में भी)</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/hi/timeline/</link>

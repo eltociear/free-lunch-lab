@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/es/</link>
     <description>Apps y proyectos que te pagan solo por existir, tipo renta básica: Ğ1, Circles, Gradido, Idena y más. Con riesgos y cómo cobrar. Hay enlaces de referido.</description>
     <language>es</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/es/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Añadido AgentBank (World App)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/services/agentbank/</link>
+      <guid isPermaLink="false">news-2026-11-10-97b5d6567734</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Añadido AgentBank (World App): WLD gratis con el «Daily catch» y recompensas por el WLD o USDC que deposites</description>
+    </item>
     <item>
       <title>Añadidos 94 pilotos de ingreso garantizado de EE. UU. a la cronología de la renta básica (101 en total, de Stockton y Chicago a Jackson y Denver), con operador, cuantía, duración, beneficiarios, financiación y evaluaciones publicadas, además de una tabla ordenable y un filtro por región (también en us-pilots.json)</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/es/timeline/</link>

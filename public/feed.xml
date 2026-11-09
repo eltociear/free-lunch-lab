@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/</link>
     <description>Apps and projects that pay you just for existing, basic-income style, like Ğ1, Circles, Gradido and Idena. Risks and cash-out noted. Some referral links.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Added AgentBank (World App)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/services/agentbank/</link>
+      <guid isPermaLink="false">news-2026-11-10-97b5d6567734</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Added AgentBank (World App): Free WLD from a “Daily catch”, plus rewards on WLD or USDC you deposit</description>
+    </item>
     <item>
       <title>Added 94 US guaranteed income pilots to the basic income timeline (101 in all, from Stockton and Chicago to Jackson and Denver), each with the operator, amount, length, recipients, funding and any published evaluation, plus a sortable table of US pilots and a region filter (also as us-pilots.json)</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/timeline/</link>
