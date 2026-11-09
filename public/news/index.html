@@ -83,6 +83,7 @@
 @font-face{font-family:"Dela Gothic One";font-style:normal;font-weight:400;font-display:block;src:url(/fonts/dela-gothic-one-400-en-a9c79872b3.woff2) format("woff2");unicode-range:U+27}
 @font-face{font-family:"Dela Gothic One";font-style:normal;font-weight:400;font-display:block;src:url(/fonts/dela-gothic-one-400-en-009f1def4c.woff2) format("woff2");unicode-range:U+2013}
 @font-face{font-family:"Dela Gothic One";font-style:normal;font-weight:400;font-display:block;src:url(/fonts/dela-gothic-one-400-en-22f6b4decc.woff2) format("woff2");unicode-range:U+e3-fc}
+@font-face{font-family:"Dela Gothic One";font-style:normal;font-weight:400;font-display:block;src:url(/fonts/dela-gothic-one-400-en-8a15f1cb09.woff2) format("woff2");unicode-range:U+21}
 @font-face{font-family:"FLL Logo";font-style:normal;font-weight:900;font-display:block;src:url(/fonts/zen-kaku-gothic-new-900-logo-2f843f4f31.woff2) format("woff2");unicode-range:U+46-7a76}</style>
 <style>
 /* Layout: a bank passbook. Sticky ledger-tab bar on top, printed passbook hero, services as ledger cards with a code slip. */
@@ -922,6 +923,16 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .cx-tbl td b{color:var(--gold)}
 @media (max-width:640px){.cx-reg,.cx-gdp{display:none}.cx-tbl th,.cx-tbl td{padding:8px}.cx-tbl .num{white-space:normal}}
 .guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
+.tl-f{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.tl-f button{font:inherit;font-size:.8125rem;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:2px 14px;min-height:44px;display:inline-flex;align-items:center;gap:6px;background:var(--surface);cursor:pointer}
+.tl-f button .dot{color:var(--muted)}
+.tl-f button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:700}
+.tl-f a{font-size:.8125rem;display:inline-flex;align-items:center;min-height:44px;padding-inline:8px;font-weight:700}
+.us-sum{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.875rem;color:var(--muted)}
+.us-tbl tbody th a{display:inline-block;padding-block:6px;margin-block:-6px;overflow-wrap:anywhere}
+.us-pl,.us-yr{display:block;font-weight:400;font-size:.8125rem;color:var(--muted);margin-top:2px}
+.us-yr{display:none}
+@media (max-width:640px){.us-st,.us-y{display:none}.us-yr{display:block}.us-tbl{font-size:.8125rem}.us-tbl thead th{white-space:normal}.us-tbl tbody th{min-width:8rem}.us-tbl th,.us-tbl td{padding:8px 6px}}
 </style>
 </head>
 <body>

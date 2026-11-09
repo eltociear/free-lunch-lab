@@ -15,6 +15,7 @@
 - [open-data.json](https://neteru-nyukin.eltociear.workers.dev/open-data.json): open datasets and replication packages from basic income experiments, with archive, access level and license
 - [news.json](https://neteru-nyukin.eltociear.workers.dev/news.json): the weekly basic income news roundup, with headlines and summaries in every language, region, tag and source links
 - [countries.json](https://neteru-nyukin.eltociear.workers.dev/countries.json): every country and territory in the basic income cost calculator, with population (total, children, adults), GDP in local currency and US dollars, central government expense, revenue and tax as % of GDP, and the yearly cost of paying everyone the World Bank's $3.00-a-day poverty line (World Bank data, CC BY 4.0)
+- [us-pilots.json](https://neteru-nyukin.eltociear.workers.dev/us-pilots.json): 101 US guaranteed income pilots with city, state, operator, years, monthly amount, duration, recipients, funder type (public, ARPA, philanthropic), control group and the main published evaluation, with texts in every language (CC BY 4.0)
 - [Basic income news RSS (en)](https://neteru-nyukin.eltociear.workers.dev/news/feed.xml): the weekly news roundup as a feed (other languages at /{lang}/news/feed.xml)
 - [RSS feed (en)](https://neteru-nyukin.eltociear.workers.dev/feed.xml): update log in English
 - [RSS feed (ja)](https://neteru-nyukin.eltociear.workers.dev/ja/feed.xml): update log in 日本語
@@ -75,7 +76,8 @@
 - [Apps you join through invites or a web of trust](https://neteru-nyukin.eltociear.workers.dev/verify/web-of-trust/): services that use Web of trust / invites
 - [Apps that need no identity verification](https://neteru-nyukin.eltociear.workers.dev/verify/none/): services that use No verification
 - [Basic income organizations & projects](https://neteru-nyukin.eltociear.workers.dev/organizations/): Organizations and projects around the world and in Japan that advocate, research or practise basic income (UBI), grouped by type. Checked in October 2026.
-- [Basic income experiments: a timeline](https://neteru-nyukin.eltociear.workers.dev/timeline/): A timeline of basic income experiments, from Mincome and Alaska’s dividend to Finland, Stockton and Germany’s pilot: who ran them, what was paid and results.
+- [Basic income experiments: a timeline](https://neteru-nyukin.eltociear.workers.dev/timeline/): A timeline of basic income experiments, from Mincome and Alaska’s dividend to Finland, Germany and dozens of US guaranteed income pilots, with results.
+- [101 guaranteed income pilots in the United States](https://neteru-nyukin.eltociear.workers.dev/pilots/us/): US guaranteed income pilots from Stockton to Chicago in one sortable table: city, years, dollars a month, recipients, funding and published evaluations.
 - [Basic income news, week by week](https://neteru-nyukin.eltociear.workers.dev/news/): A weekly, hand-checked roundup of basic income, guaranteed income and cash transfer news from around the world, summarised in our own words with sources. Last updated 2026-11-03.
 - [The Free Lunch Graveyard](https://neteru-nyukin.eltociear.workers.dev/graveyard/): Services and programmes that once paid out money or points and have ended, such as World’s WLD airdrop and Miles, with end dates, reasons and sources.
 - [Open-source basic income projects](https://neteru-nyukin.eltociear.workers.dev/open-source/): Open-source code behind basic income: UBI protocols, wallets, proof of personhood and policy simulators, with license, stars and last commit date.

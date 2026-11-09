@@ -8,6 +8,13 @@
     <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Added 94 US guaranteed income pilots to the basic income timeline (101 in all, from Stockton and Chicago to Jackson and Denver), each with the operator, amount, length, recipients, funding and any published evaluation, plus a sortable table of US pilots and a region filter (also as us-pilots.json)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/timeline/</link>
+      <guid isPermaLink="false">news-2026-11-09-423f84cbcde0</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Added 94 US guaranteed income pilots to the basic income timeline (101 in all, from Stockton and Chicago to Jackson and Denver), each with the operator, amount, length, recipients, funding and any published evaluation, plus a sortable table of US pilots and a region filter (also as us-pilots.json)</description>
+    </item>
+    <item>
       <title>Expanded the basic income cost calculator to 211 countries and territories, each with its own page, plus a table of what paying everyone the World Bank’s $3.00-a-day poverty line would cost as a share of GDP (World Bank data, also as countries.json)</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/calc/countries/</link>
       <guid isPermaLink="false">news-2026-11-09-fdcfce26aec9</guid>

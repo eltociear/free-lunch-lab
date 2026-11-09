@@ -7,6 +7,7 @@
 //   src/og/calc/{lang}/index.jpg   BI計算機（題・説明・国の名前）
 //   src/og/calc/{lang}/{国}-{all|adults|kids}-{金額}.jpg   BI計算機の結果カード（国 × 配る相手 × プリセット金額。src/worker.js が差し替える）
 //   src/og/news/{lang}/index.jpg   ベーシックインカム・ニュース（題・説明・最新の週の更新日と国）
+//   src/og/pilots/{lang}/us.jpg    アメリカの保証所得パイロットの一覧（題・説明・件数・州の数・評価のある件数）
 //   src/static/apple-touch-icon.png, favicon.ico, favicon-32.png   src/static/favicon.svg から
 // 中身（HTML とフォント）が前回と同じ画像は作り直さない（src/og/manifest.json に指紋を記録）。全部作り直すときは OG_FORCE=1
 // Chrome の場所は環境変数 CHROME で変えられる
@@ -15,7 +16,7 @@ const os = require('os');
 const path = require('path');
 const { execFileSync } = require('child_process');
 const crypto = require('crypto');
-const { LANGS, SERVICES, T, CATS, ESSAYS, GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {} } = require('./src/data.js');
+const { LANGS, SERVICES, T, CATS, ESSAYS, GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, TIMELINE = [] } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
 
 const CHROME = process.env.CHROME || '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary';
@@ -239,6 +240,19 @@ function newsHtml(lang) {
 <div class="chips">${b ? `<span class="loop">${esc(L.biNewsUpdated.replace('{date}', date))}</span>` : ''}${regions}</div>`);
 }
 
+// アメリカの保証所得パイロット: 題・説明と、件数・州の数・評価が出ている件数（どれもページに出る文言なので、サイトのサブセットで足りる）
+function usPilotsHtml(lang) {
+  const L = T[lang], us = TIMELINE.filter(t => t.us), n = us.length;
+  const fill = (t, v) => String(t).replace('{n}', v);
+  const states = new Set(us.map(t => t.us.state).filter(s => s !== 'multi' && s !== 'DC')).size, evals = us.filter(t => t.us.eval).length;
+  return frame(lang, 'essay', `<div class="mid">
+<p class="cat" style="--c:#FFD66B">${esc(L.ebTimeline)}</p>
+<h1 data-fit="64,40,180">${esc(fill(L.usH1, n))}</h1>
+<p class="desc" style="-webkit-line-clamp:2" data-fit="30,22,110">${esc(fill(L.usDesc, n))}</p>
+</div>
+<div class="chips"><span class="loop">${esc(fill(L.usStates, states))}</span><span>${esc(fill(L.usEvaluated, evals))}</span></div>`);
+}
+
 // BI計算機の結果カード（国 × 配る相手 × プリセット金額）: 国と相手・年の総額を大きく・式・予算と GDP との比。
 // ?c=&w=&m= がこの組み合わせのとき、Worker（src/worker.js）が og:image をこの画像に差し替える
 const calcJs = require('./src/calc.js');
@@ -359,6 +373,7 @@ for (const lang of ONLY) {
   for (const e of ESSAYS) { const html = essayHtml(e, lang); const rel = `essay/${lang}/${e.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const [rel, html] of [[`shindan/${lang}/index.jpg`, quizHtml(lang)], ...QUIZ.types.map(t => [`shindan/${lang}/${t.id}.jpg`, quizTypeHtml(t, lang)])]) { const key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = newsHtml(lang), rel = `news/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+  { const html = usPilotsHtml(lang), rel = `pilots/${lang}/us.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = calcHtml(lang), rel = `calc/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const k of calcCards[lang]) { const rel = `calc/${lang}/${k.id}.jpg`, key = hash(calcCardHtml(k, lang)); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => calcCardHtml(k, lang, cardFonts(lang)), format: 'jpeg', quality: 72 }); }
   for (const g of GUIDES) { const html = guideHtml(g, lang); const rel = `guide/${lang}/${g.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }

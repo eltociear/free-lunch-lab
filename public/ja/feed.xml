@@ -8,6 +8,13 @@
     <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>ベーシックインカム実験の年表に、アメリカの保証所得実験を94件追加（ストックトン、シカゴからジャクソン、デンバーまで計101件）。実施者・月額・期間・受給者数・財源・公表された評価つき。並べ替えられるアメリカの一覧表と地域の絞り込みも追加（us-pilots.json でも公開）</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/timeline/</link>
+      <guid isPermaLink="false">news-2026-11-09-423f84cbcde0</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>ベーシックインカム実験の年表に、アメリカの保証所得実験を94件追加（ストックトン、シカゴからジャクソン、デンバーまで計101件）。実施者・月額・期間・受給者数・財源・公表された評価つき。並べ替えられるアメリカの一覧表と地域の絞り込みも追加（us-pilots.json でも公開）</description>
+    </item>
+    <item>
       <title>BI計算機を211の国・地域に広げ、国ごとのページと、世界銀行の国際貧困ライン「1日3.00ドル」を全員に配るとGDPの何％になるかの一覧を追加（データは世界銀行、countries.json でも公開）</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/ja/calc/countries/</link>
       <guid isPermaLink="false">news-2026-11-09-fdcfce26aec9</guid>

@@ -2871,6 +2871,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-09",
+      "en": "Added 94 US guaranteed income pilots to the basic income timeline (101 in all, from Stockton and Chicago to Jackson and Denver), each with the operator, amount, length, recipients, funding and any published evaluation, plus a sortable table of US pilots and a region filter (also as us-pilots.json)",
+      "ja": "ベーシックインカム実験の年表に、アメリカの保証所得実験を94件追加（ストックトン、シカゴからジャクソン、デンバーまで計101件）。実施者・月額・期間・受給者数・財源・公表された評価つき。並べ替えられるアメリカの一覧表と地域の絞り込みも追加（us-pilots.json でも公開）",
+      "zh": "基本收入实验年表新增94个美国保障收入试点（从斯托克顿、芝加哥到杰克逊、丹佛，共101个），逐项列出实施方、金额、期限、领取人数、资金来源和已发布的评估，并新增可排序的美国试点一览表和按地区筛选（也以 us-pilots.json 公开）",
+      "hi": "बेसिक इनकम समयरेखा में अमेरिका के 94 गारंटीड इनकम पायलट जोड़े (स्टॉकटन और शिकागो से जैक्सन और डेनवर तक, कुल 101), हर एक के संचालक, रकम, अवधि, पाने वालों, फ़ंडिंग और प्रकाशित मूल्यांकन के साथ, साथ में अमेरिकी पायलटों की छाँटने लायक तालिका और क्षेत्र फ़िल्टर (us-pilots.json के रूप में भी)",
+      "es": "Añadidos 94 pilotos de ingreso garantizado de EE. UU. a la cronología de la renta básica (101 en total, de Stockton y Chicago a Jackson y Denver), con operador, cuantía, duración, beneficiarios, financiación y evaluaciones publicadas, además de una tabla ordenable y un filtro por región (también en us-pilots.json)",
+      "de": "94 US-Pilotprojekte zum garantierten Einkommen in die Zeitleiste aufgenommen (insgesamt 101, von Stockton und Chicago bis Jackson und Denver), jeweils mit Träger, Betrag, Dauer, Empfängern, Finanzierung und veröffentlichten Auswertungen, dazu eine sortierbare Tabelle und ein Regionsfilter (auch als us-pilots.json)",
+      "ar": "أضفنا 94 تجربة أمريكية للدخل المضمون إلى الخط الزمني للدخل الأساسي (101 في المجموع، من ستوكتون وشيكاغو إلى جاكسون ودنفر)، لكلٍّ منها الجهة المنفذة والمبلغ والمدة وعدد المستفيدين والتمويل وأي تقييم منشور، مع جدول قابل للفرز لتجارب الولايات المتحدة وتصفية حسب المنطقة (ومتاحة أيضًا بصيغة ⁦us-pilots.json⁩)"
+    },
+    {
+      "date": "2026-11-09",
       "en": "Expanded the basic income cost calculator to 211 countries and territories, each with its own page, plus a table of what paying everyone the World Bank’s $3.00-a-day poverty line would cost as a share of GDP (World Bank data, also as countries.json)",
       "ja": "BI計算機を211の国・地域に広げ、国ごとのページと、世界銀行の国際貧困ライン「1日3.00ドル」を全員に配るとGDPの何％になるかの一覧を追加（データは世界銀行、countries.json でも公開）",
       "zh": "基本收入计算器扩展到211个国家和地区，每个都有自己的页面，并新增一览表：向所有人发放世界银行“每天3.00美元”的贫困线相当于GDP的多少（世界银行数据，也以 countries.json 公开）",
@@ -4382,7 +4392,7 @@ module.exports = {
       "biNewsTag_other": "その他",
       "tlTitle": "ベーシックインカム社会実験の年表",
       "tlIntro": "世界で行われてきたベーシックインカムや現金給付の主な実験・制度を、年代順にまとめました。結果はそれぞれの発表元の説明をもとにしています。出典が確かめられたものだけを載せています。",
-      "tlDesc": "Mincome、アラスカの配当、ナミビア、フィンランド、ストックトン、OpenResearch、ドイツのパイロットなど、ベーシックインカム実験と制度の年表。実施者・給付・結果・出典つき。",
+      "tlDesc": "Mincome、アラスカの配当、フィンランド、ドイツのパイロット、そしてアメリカ各地の保証所得実験まで、ベーシックインカム実験と制度の年表。実施者・給付・結果・出典つき。",
       "tlWho": "実施",
       "tlPaid": "内容",
       "tlResult": "結果",
@@ -4393,6 +4403,34 @@ module.exports = {
       "tlCrypto": "暗号資産・コミュニティ",
       "tlOnSite": "このサイトの関連ページ",
       "tlLink": "ベーシックインカム社会実験の年表を見る",
+      "usTitle": "アメリカの保証所得（ギャランティード・インカム）実験 {n} 件：都市・金額・結果の一覧",
+      "usH1": "アメリカの保証所得実験 {n} 件",
+      "usDesc": "ストックトンからシカゴまで、アメリカの保証所得実験を一つの表に。都市、期間、月額、受給者数、財源、評価の有無で並べ替えられます。",
+      "usIntro": "アメリカでは市・郡・州やNPOが、条件なしで毎月決まった額の現金を配り、保証所得に何ができるかを試してきました。ここに並べたのは、年表に載せた {n} 件のうち、公式ページか公表された評価で確かめられたものです。行を開くと、実施者、対象、給付額、わかったことが見られます。",
+      "usCrumb": "アメリカの保証所得実験",
+      "usLink": "アメリカの保証所得実験の一覧",
+      "usColProgram": "プログラム",
+      "usColState": "州",
+      "usColYears": "期間",
+      "usColMonthly": "月額（ドル）",
+      "usColRecipients": "受給者",
+      "usColEval": "評価",
+      "usYes": "あり",
+      "usNo": "未公表",
+      "usFilter": "都市・州・名前で絞り込む",
+      "usNote": "金額は主な月額です。グループごとに額が違う、途中で額が変わる実験もあります（各項目を参照）。受給者は各プログラムの数え方による人数または世帯数で、対照群は含みません。「評価」は報告書・ワーキングペーパー・論文として公表されたもので、結果は評価者の報告どおりです。多くは数百人規模の自己申告の調査です。財源の「公費」は市・郡・州のお金、「ARPA」は連邦のコロナ救済法（米国救済計画法）の資金です。出典に開始時期と期間しかない場合、終了年はそこから計算しています。",
+      "usData": "この表のJSON：{file}（CC BY 4.0）",
+      "usStates": "{n} 州",
+      "usEvaluated": "評価が公表済み {n} 件",
+      "tlFilterAll": "すべて",
+      "tlFilterUs": "アメリカ",
+      "tlFilterWorld": "アメリカ以外",
+      "tlFilterLabel": "地域で絞り込む",
+      "tlFunding": "財源",
+      "tlFund_public": "公費（市・郡・州）",
+      "tlFund_arpa": "連邦のコロナ救済資金（ARPA）",
+      "tlFund_philanthropic": "寄付・財団",
+      "tlNoEval": "評価はまだ公表されていない",
       "essaysTitle": "エッセイ",
       "essayBy": "文：Free Lunch Lab",
       "essayOpinion": "意見",
@@ -4759,7 +4797,7 @@ module.exports = {
       "biNewsTag_other": "Other",
       "tlTitle": "Basic income experiments: a timeline",
       "tlIntro": "Major basic income and cash-transfer experiments and schemes around the world, in order. Results are as reported by each source, and only items we could source are listed.",
-      "tlDesc": "A timeline of basic income experiments, from Mincome and Alaska’s dividend to Finland, Stockton and Germany’s pilot: who ran them, what was paid and results.",
+      "tlDesc": "A timeline of basic income experiments, from Mincome and Alaska’s dividend to Finland, Germany and dozens of US guaranteed income pilots, with results.",
       "tlWho": "Run by",
       "tlPaid": "What was paid",
       "tlResult": "Result",
@@ -4770,6 +4808,34 @@ module.exports = {
       "tlCrypto": "Crypto / community",
       "tlOnSite": "Related on this site",
       "tlLink": "See the basic income experiments timeline",
+      "usTitle": "US guaranteed income pilots: {n} programs by city, amount and results",
+      "usH1": "{n} guaranteed income pilots in the United States",
+      "usDesc": "US guaranteed income pilots from Stockton to Chicago in one sortable table: city, years, dollars a month, recipients, funding and published evaluations.",
+      "usIntro": "Cities, counties, states and nonprofits across the US have paid people a fixed amount of cash every month, with no conditions, to see what a guaranteed income does. These are the {n} pilots on our timeline that we could check against an official page or a published evaluation. Open a row for who ran it, who could apply, what was paid and what was found.",
+      "usCrumb": "US guaranteed income pilots",
+      "usLink": "All US guaranteed income pilots",
+      "usColProgram": "Program",
+      "usColState": "State",
+      "usColYears": "Years",
+      "usColMonthly": "$ a month",
+      "usColRecipients": "Recipients",
+      "usColEval": "Evaluation",
+      "usYes": "Yes",
+      "usNo": "Not yet",
+      "usFilter": "Search by city, state or program",
+      "usNote": "Amounts are the main monthly payment; some pilots paid different groups different amounts or changed the amount over time (see each entry). Recipients are people or households, as each program counts them, not counting control groups. Evaluation means a published report, working paper or journal article; findings are as reported by the evaluators, and many rely on self-reported surveys of a few hundred people. Funding: public means city, county or state money; ARPA means federal pandemic relief from the American Rescue Plan Act. Where a source gives only the start and the length of payments, the end year is calculated from them.",
+      "usData": "The table as JSON: {file} (CC BY 4.0)",
+      "usStates": "{n} states",
+      "usEvaluated": "{n} with a published evaluation",
+      "tlFilterAll": "All",
+      "tlFilterUs": "United States",
+      "tlFilterWorld": "Rest of the world",
+      "tlFilterLabel": "Filter by region",
+      "tlFunding": "Funding",
+      "tlFund_public": "Public (city, county or state)",
+      "tlFund_arpa": "Federal pandemic relief (ARPA)",
+      "tlFund_philanthropic": "Philanthropic",
+      "tlNoEval": "No published evaluation yet",
       "essaysTitle": "Essays",
       "essayBy": "By Free Lunch Lab",
       "essayOpinion": "Opinion",
@@ -5136,7 +5202,7 @@ module.exports = {
       "biNewsTag_other": "अन्य",
       "tlTitle": "बेसिक इनकम प्रयोगों की समयरेखा",
       "tlIntro": "दुनिया भर के प्रमुख बेसिक इनकम और नकद सहायता प्रयोग और योजनाएँ, क्रम से। नतीजे हर स्रोत के बताए अनुसार हैं, और सिर्फ़ वही शामिल हैं जिनका स्रोत मिल सका।",
-      "tlDesc": "बेसिक इनकम प्रयोगों और योजनाओं की समयरेखा: Mincome, अलास्का डिविडेंड, नामीबिया, फ़िनलैंड, स्टॉकटन और जर्मन पायलट, संचालक, भुगतान, नतीजे और स्रोत के साथ।",
+      "tlDesc": "बेसिक इनकम प्रयोगों की समयरेखा: Mincome, अलास्का, फ़िनलैंड, जर्मनी और अमेरिका के दर्जनों गारंटीड इनकम पायलट, संचालक, भुगतान और नतीजों के साथ।",
       "tlWho": "संचालक",
       "tlPaid": "क्या दिया गया",
       "tlResult": "नतीजा",
@@ -5147,6 +5213,34 @@ module.exports = {
       "tlCrypto": "क्रिप्टो / समुदाय",
       "tlOnSite": "इस साइट पर संबंधित",
       "tlLink": "बेसिक इनकम प्रयोगों की समयरेखा देखें",
+      "usTitle": "अमेरिका के {n} गारंटीड इनकम पायलट: शहर, रकम और नतीजे",
+      "usH1": "अमेरिका के {n} गारंटीड इनकम पायलट",
+      "usDesc": "स्टॉकटन से शिकागो तक, अमेरिका के गारंटीड इनकम पायलट एक तालिका में: शहर, साल, हर महीने की रकम, पाने वाले, फ़ंडिंग और प्रकाशित मूल्यांकन।",
+      "usIntro": "अमेरिका के शहरों, काउंटियों, राज्यों और ग़ैर-लाभकारी संस्थाओं ने लोगों को बिना शर्त हर महीने तय रकम नकद दी, यह देखने के लिए कि गारंटीड इनकम से क्या बदलता है। ये हमारी समयरेखा के वे {n} पायलट हैं जिन्हें हम किसी आधिकारिक पेज या प्रकाशित मूल्यांकन से जाँच सके। किसी पंक्ति को खोलें: किसने चलाया, कौन आवेदन कर सकता था, कितना मिला और क्या पता चला।",
+      "usCrumb": "अमेरिका के गारंटीड इनकम पायलट",
+      "usLink": "अमेरिका के सभी गारंटीड इनकम पायलट",
+      "usColProgram": "प्रोग्राम",
+      "usColState": "राज्य",
+      "usColYears": "साल",
+      "usColMonthly": "$ प्रति माह",
+      "usColRecipients": "पाने वाले",
+      "usColEval": "मूल्यांकन",
+      "usYes": "हाँ",
+      "usNo": "अभी नहीं",
+      "usFilter": "शहर, राज्य या प्रोग्राम से खोजें",
+      "usNote": "रकम मुख्य मासिक भुगतान है; कुछ पायलटों ने अलग-अलग समूहों को अलग रकम दी या बीच में रकम बदली (हर प्रविष्टि देखें)। पाने वाले लोग या परिवार हैं, जैसे हर प्रोग्राम गिनता है; तुलना समूह शामिल नहीं। मूल्यांकन का मतलब प्रकाशित रिपोर्ट, वर्किंग पेपर या जर्नल लेख है; नतीजे वैसे ही हैं जैसे मूल्यांकनकर्ताओं ने बताए, और कई कुछ सौ लोगों के स्व-रिपोर्टेड सर्वे पर आधारित हैं। फ़ंडिंग: सार्वजनिक यानी शहर, काउंटी या राज्य का पैसा; ARPA यानी अमेरिकन रेस्क्यू प्लान एक्ट की संघीय महामारी राहत। जहाँ स्रोत सिर्फ़ शुरुआत और भुगतान की अवधि बताता है, वहाँ अंत का साल उन्हीं से निकाला गया है।",
+      "usData": "यह तालिका JSON में: {file} (CC BY 4.0)",
+      "usStates": "{n} राज्य",
+      "usEvaluated": "{n} का मूल्यांकन प्रकाशित",
+      "tlFilterAll": "सभी",
+      "tlFilterUs": "अमेरिका",
+      "tlFilterWorld": "बाकी दुनिया",
+      "tlFilterLabel": "क्षेत्र से छाँटें",
+      "tlFunding": "फ़ंडिंग",
+      "tlFund_public": "सार्वजनिक (शहर, काउंटी या राज्य)",
+      "tlFund_arpa": "संघीय महामारी राहत (ARPA)",
+      "tlFund_philanthropic": "परोपकारी दान",
+      "tlNoEval": "अभी कोई प्रकाशित मूल्यांकन नहीं",
       "essaysTitle": "निबंध",
       "essayBy": "लेखक: Free Lunch Lab",
       "essayOpinion": "राय",
@@ -5513,7 +5607,7 @@ module.exports = {
       "biNewsTag_other": "其他",
       "tlTitle": "基本收入实验年表",
       "tlIntro": "按时间顺序整理世界各地主要的基本收入和现金发放实验与制度。结果均依据各来源的说明，仅收录能核实出处的项目。",
-      "tlDesc": "全民基本收入实验与制度年表：Mincome、阿拉斯加永久基金红利、纳米比亚、芬兰、斯托克顿、OpenResearch、德国试点等，附实施方、发放内容、结果和出处。",
+      "tlDesc": "全民基本收入实验与制度年表：Mincome、阿拉斯加永久基金红利、芬兰、德国试点，以及美国各地数十个保障收入试点，逐项附上实施方、发放金额与对象、结果和出处，可按地区筛选。",
       "tlWho": "实施方",
       "tlPaid": "发放内容",
       "tlResult": "结果",
@@ -5524,6 +5618,34 @@ module.exports = {
       "tlCrypto": "加密货币／社区",
       "tlOnSite": "本站相关页面",
       "tlLink": "查看基本收入实验年表",
+      "usTitle": "美国保障收入试点 {n} 个：按城市、金额和结果一览",
+      "usH1": "美国的 {n} 个保障收入试点",
+      "usDesc": "从斯托克顿到芝加哥，美国保障收入试点汇成一张可排序的表：城市、年份、每月金额、领取人数、资金来源，以及是否发布了评估。",
+      "usIntro": "美国各地的市、县、州和非营利组织每月无条件发放固定金额的现金，以检验保障收入的效果。这里列出的是我们年表中能够对照官方页面或已发布评估核实的 {n} 个试点。点开一行即可查看由谁实施、谁可以申请、发了多少以及发现了什么。",
+      "usCrumb": "美国保障收入试点",
+      "usLink": "美国保障收入试点一览",
+      "usColProgram": "项目",
+      "usColState": "州",
+      "usColYears": "年份",
+      "usColMonthly": "每月（美元）",
+      "usColRecipients": "领取者",
+      "usColEval": "评估",
+      "usYes": "有",
+      "usNo": "尚无",
+      "usFilter": "按城市、州或项目名搜索",
+      "usNote": "金额为主要的每月发放额；有些试点对不同群体发放不同金额，或中途调整金额（见各条目）。领取者按各项目的统计口径，为人数或户数，不含对照组。“评估”指已发布的报告、工作论文或期刊文章；结果以评估方的报告为准，其中许多是几百人规模的自我报告调查。资金来源中，“公共”指市、县或州的资金，“ARPA”指联邦《美国救援计划法》的疫情纾困资金。如果出处只给出开始时间和发放期限，结束年份由此推算。",
+      "usData": "本表的JSON：{file}（CC BY 4.0）",
+      "usStates": "{n} 个州",
+      "usEvaluated": "{n} 个已发布评估",
+      "tlFilterAll": "全部",
+      "tlFilterUs": "美国",
+      "tlFilterWorld": "美国以外",
+      "tlFilterLabel": "按地区筛选",
+      "tlFunding": "资金来源",
+      "tlFund_public": "公共资金（市、县或州）",
+      "tlFund_arpa": "联邦疫情纾困资金（ARPA）",
+      "tlFund_philanthropic": "慈善捐赠",
+      "tlNoEval": "尚未发布评估",
       "essaysTitle": "随笔",
       "essayBy": "作者：Free Lunch Lab",
       "essayOpinion": "观点",
@@ -5892,7 +6014,7 @@ module.exports = {
       "biNewsTag_other": "Otros",
       "tlTitle": "Experimentos de renta básica: una cronología",
       "tlIntro": "Los principales experimentos y programas de renta básica y transferencias de efectivo del mundo, en orden. Los resultados son los que informa cada fuente y solo incluimos lo que pudimos documentar.",
-      "tlDesc": "Cronología de experimentos de renta básica, de Mincome y el dividendo de Alaska a Finlandia, Stockton y Alemania: quién los hizo, qué se pagó y resultados.",
+      "tlDesc": "Cronología de la renta básica: de Mincome y Alaska a Finlandia, Alemania y decenas de pilotos de ingreso garantizado en EE. UU., con pagos y resultados.",
       "tlWho": "Quién",
       "tlPaid": "Qué se pagó",
       "tlResult": "Resultado",
@@ -5903,6 +6025,34 @@ module.exports = {
       "tlCrypto": "Cripto / comunidad",
       "tlOnSite": "Relacionado en este sitio",
       "tlLink": "Ver la cronología de experimentos de renta básica",
+      "usTitle": "Ingreso garantizado en EE. UU.: {n} programas piloto por ciudad, cuantía y resultados",
+      "usH1": "{n} programas piloto de ingreso garantizado en Estados Unidos",
+      "usDesc": "Los pilotos de ingreso garantizado de EE. UU., de Stockton a Chicago, en una tabla ordenable: ciudad, años, dólares al mes, beneficiarios, financiación y evaluaciones.",
+      "usIntro": "Ciudades, condados, estados y organizaciones sin ánimo de lucro de EE. UU. han pagado cada mes una cantidad fija de dinero, sin condiciones, para ver qué hace un ingreso garantizado. Estos son los {n} pilotos de nuestra cronología que pudimos comprobar con una página oficial o una evaluación publicada. Abre una fila para ver quién lo hizo, quién podía solicitarlo, cuánto se pagó y qué se encontró.",
+      "usCrumb": "Ingreso garantizado en EE. UU.",
+      "usLink": "Todos los pilotos de ingreso garantizado en EE. UU.",
+      "usColProgram": "Programa",
+      "usColState": "Estado",
+      "usColYears": "Años",
+      "usColMonthly": "$ al mes",
+      "usColRecipients": "Beneficiarios",
+      "usColEval": "Evaluación",
+      "usYes": "Sí",
+      "usNo": "Aún no",
+      "usFilter": "Buscar por ciudad, estado o programa",
+      "usNote": "Las cuantías son el pago mensual principal; algunos pilotos pagaron cantidades distintas a distintos grupos o cambiaron la cuantía con el tiempo (ver cada entrada). Los beneficiarios son personas u hogares, según cuente cada programa, sin los grupos de control. Evaluación significa un informe, documento de trabajo o artículo publicado; los resultados son los que informan los evaluadores, y muchos se basan en encuestas autodeclaradas a unos cientos de personas. Financiación: pública es dinero de la ciudad, el condado o el estado; ARPA son los fondos federales de ayuda por la pandemia de la American Rescue Plan Act. Cuando una fuente solo da el inicio y la duración de los pagos, el año de fin se calcula a partir de ellos.",
+      "usData": "La tabla en JSON: {file} (CC BY 4.0)",
+      "usStates": "{n} estados",
+      "usEvaluated": "{n} con evaluación publicada",
+      "tlFilterAll": "Todos",
+      "tlFilterUs": "Estados Unidos",
+      "tlFilterWorld": "Resto del mundo",
+      "tlFilterLabel": "Filtrar por región",
+      "tlFunding": "Financiación",
+      "tlFund_public": "Pública (ciudad, condado o estado)",
+      "tlFund_arpa": "Ayuda federal por la pandemia (ARPA)",
+      "tlFund_philanthropic": "Filantrópica",
+      "tlNoEval": "Aún no hay evaluación publicada",
       "essaysTitle": "Ensayos",
       "essayBy": "Por Free Lunch Lab",
       "essayOpinion": "Opinión",
@@ -6269,7 +6419,7 @@ module.exports = {
       "biNewsTag_other": "أخرى",
       "tlTitle": "تجارب الدخل الأساسي: خط زمني",
       "tlIntro": "أبرز تجارب وبرامج الدخل الأساسي والتحويلات النقدية حول العالم، مرتبة زمنيًا. النتائج كما أوردها كل مصدر، ولا ندرج إلا ما استطعنا توثيقه.",
-      "tlDesc": "خط زمني لتجارب الدخل الأساسي، من ⁦Mincome⁩ وعائد ألاسكا إلى ناميبيا وفنلندا وستوكتون و⁦OpenResearch⁩ والتجربة الألمانية، مع الجهة المنفذة والنتائج والمصادر.",
+      "tlDesc": "خط زمني لتجارب الدخل الأساسي، من ⁦Mincome⁩ وألاسكا إلى فنلندا وألمانيا وعشرات تجارب الدخل المضمون في الولايات المتحدة، مع المبالغ والنتائج.",
       "tlWho": "الجهة المنفذة",
       "tlPaid": "ما دُفع",
       "tlResult": "النتيجة",
@@ -6280,6 +6430,34 @@ module.exports = {
       "tlCrypto": "عملات مشفرة / مجتمع",
       "tlOnSite": "ذو صلة على هذا الموقع",
       "tlLink": "اطّلع على الخط الزمني لتجارب الدخل الأساسي",
+      "usTitle": "تجارب الدخل المضمون في الولايات المتحدة: {n} برنامجًا حسب المدينة والمبلغ والنتائج",
+      "usH1": "{n} تجربة للدخل المضمون في الولايات المتحدة",
+      "usDesc": "تجارب الدخل المضمون الأمريكية، من ستوكتون إلى شيكاغو، في جدول واحد قابل للفرز: المدينة والسنوات والمبلغ الشهري بالدولار والمستفيدون والتمويل والتقييمات المنشورة.",
+      "usIntro": "دفعت مدن ومقاطعات وولايات ومنظمات غير ربحية في الولايات المتحدة للناس مبلغًا نقديًا ثابتًا كل شهر دون شروط، لمعرفة أثر الدخل المضمون. هذه هي التجارب الـ{n} في خطنا الزمني التي استطعنا التحقق منها عبر صفحة رسمية أو تقييم منشور. افتح أي صف لترى من نفّذها ومن كان يحق له التقديم وكم دُفع وما الذي تبيّن.",
+      "usCrumb": "تجارب الدخل المضمون في الولايات المتحدة",
+      "usLink": "كل تجارب الدخل المضمون في الولايات المتحدة",
+      "usColProgram": "البرنامج",
+      "usColState": "الولاية",
+      "usColYears": "السنوات",
+      "usColMonthly": "بالدولار شهريًا",
+      "usColRecipients": "المستفيدون",
+      "usColEval": "التقييم",
+      "usYes": "نعم",
+      "usNo": "ليس بعد",
+      "usFilter": "ابحث بالمدينة أو الولاية أو البرنامج",
+      "usNote": "المبالغ هي الدفعة الشهرية الرئيسية؛ بعض التجارب دفعت مبالغ مختلفة لمجموعات مختلفة أو غيّرت المبلغ مع الوقت (راجع كل بند). المستفيدون أفراد أو أسر بحسب طريقة عدّ كل برنامج، دون المجموعات الضابطة. التقييم يعني تقريرًا أو ورقة عمل أو مقالًا منشورًا؛ والنتائج كما أوردها المقيّمون، وكثير منها يعتمد على استبيانات ذاتية لبضع مئات من الأشخاص. التمويل: العام يعني أموال المدينة أو المقاطعة أو الولاية؛ و⁦ARPA⁩ يعني أموال الإغاثة الفدرالية من الجائحة بموجب قانون خطة الإنقاذ الأمريكية. عندما لا يذكر المصدر إلا البداية ومدة الدفعات، تُحسب سنة النهاية منهما.",
+      "usData": "الجدول بصيغة ⁦JSON⁩: {file} (⁦CC BY 4.0⁩)",
+      "usStates": "{n} ولاية",
+      "usEvaluated": "{n} لها تقييم منشور",
+      "tlFilterAll": "الكل",
+      "tlFilterUs": "الولايات المتحدة",
+      "tlFilterWorld": "بقية العالم",
+      "tlFilterLabel": "التصفية حسب المنطقة",
+      "tlFunding": "التمويل",
+      "tlFund_public": "عام (المدينة أو المقاطعة أو الولاية)",
+      "tlFund_arpa": "إغاثة فدرالية من الجائحة (⁦ARPA⁩)",
+      "tlFund_philanthropic": "خيري",
+      "tlNoEval": "لا يوجد تقييم منشور بعد",
       "essaysTitle": "مقالات",
       "essayBy": "بقلم ⁦Free Lunch Lab⁩",
       "essayOpinion": "رأي",
@@ -6646,7 +6824,7 @@ module.exports = {
       "biNewsTag_other": "Sonstiges",
       "tlTitle": "Grundeinkommen-Experimente: eine Zeitleiste",
       "tlIntro": "Die wichtigsten Experimente und Programme zu Grundeinkommen und Geldtransfers weltweit, chronologisch. Die Ergebnisse geben wieder, was die jeweilige Quelle berichtet; aufgeführt ist nur, was wir belegen konnten.",
-      "tlDesc": "Zeitleiste der Grundeinkommen-Experimente: von Mincome und Alaskas Dividende über Finnland und Stockton bis zum deutschen Pilotprojekt, mit Ergebnissen.",
+      "tlDesc": "Zeitleiste der Grundeinkommen-Experimente: von Mincome und Alaska über Finnland und Deutschland bis zu Dutzenden US-Projekten, mit Zahlungen und Ergebnissen.",
       "tlWho": "Träger",
       "tlPaid": "Gezahlt",
       "tlResult": "Ergebnis",
@@ -6657,6 +6835,34 @@ module.exports = {
       "tlCrypto": "Krypto / Gemeinschaft",
       "tlOnSite": "Dazu auf dieser Seite",
       "tlLink": "Zeitleiste der Grundeinkommen-Experimente ansehen",
+      "usTitle": "Garantiertes Einkommen in den USA: {n} Pilotprojekte nach Stadt, Betrag und Ergebnis",
+      "usH1": "{n} Pilotprojekte zum garantierten Einkommen in den USA",
+      "usDesc": "Die US-Pilotprojekte zum garantierten Einkommen, von Stockton bis Chicago, in einer sortierbaren Tabelle: Stadt, Jahre, Dollar im Monat, Empfänger, Finanzierung, Studien.",
+      "usIntro": "Städte, Countys, Bundesstaaten und gemeinnützige Organisationen in den USA haben Menschen jeden Monat einen festen Betrag ohne Bedingungen gezahlt, um zu sehen, was ein garantiertes Einkommen bewirkt. Das sind die {n} Pilotprojekte unserer Zeitleiste, die wir anhand einer offiziellen Seite oder einer veröffentlichten Auswertung prüfen konnten. Öffne eine Zeile: wer es betrieb, wer sich bewerben konnte, was gezahlt wurde und was herauskam.",
+      "usCrumb": "Garantiertes Einkommen in den USA",
+      "usLink": "Alle US-Pilotprojekte zum garantierten Einkommen",
+      "usColProgram": "Programm",
+      "usColState": "Staat",
+      "usColYears": "Jahre",
+      "usColMonthly": "$ im Monat",
+      "usColRecipients": "Empfänger",
+      "usColEval": "Auswertung",
+      "usYes": "Ja",
+      "usNo": "Noch nicht",
+      "usFilter": "Nach Stadt, Staat oder Programm suchen",
+      "usNote": "Beträge sind die wichtigste Monatszahlung; manche Projekte zahlten Gruppen unterschiedlich viel oder änderten den Betrag (siehe den jeweiligen Eintrag). Empfänger sind Personen oder Haushalte, je nach Zählweise des Programms, ohne Kontrollgruppen. Auswertung heißt veröffentlichter Bericht, Arbeitspapier oder Fachartikel; die Ergebnisse sind so wiedergegeben, wie die Auswertenden sie berichten, und beruhen oft auf Selbstauskünften von einigen hundert Personen. Finanzierung: öffentlich heißt Geld von Stadt, County oder Bundesstaat; ARPA heißt Corona-Hilfe des Bundes aus dem American Rescue Plan Act. Nennt eine Quelle nur Beginn und Dauer der Zahlungen, ist das Endjahr daraus berechnet.",
+      "usData": "Die Tabelle als JSON: {file} (CC BY 4.0)",
+      "usStates": "{n} Bundesstaaten",
+      "usEvaluated": "{n} mit veröffentlichter Auswertung",
+      "tlFilterAll": "Alle",
+      "tlFilterUs": "USA",
+      "tlFilterWorld": "Rest der Welt",
+      "tlFilterLabel": "Nach Region filtern",
+      "tlFunding": "Finanzierung",
+      "tlFund_public": "Öffentlich (Stadt, County oder Staat)",
+      "tlFund_arpa": "Corona-Hilfe des Bundes (ARPA)",
+      "tlFund_philanthropic": "Philanthropisch",
+      "tlNoEval": "Noch keine veröffentlichte Auswertung",
       "essaysTitle": "Essays",
       "essayBy": "Von Free Lunch Lab",
       "essayOpinion": "Meinung",
@@ -9771,48 +9977,501 @@ module.exports = {
       "source": "https://globalnews.ca/news/4365399/ontario-cancels-basic-income-pilot-project"
     },
     {
+      "id": "us-jackson-magnolia",
+      "years": "2018–",
+      "type": "ngo",
+      "name": "Magnolia Mother's Trust",
+      "place": {
+        "en": "Jackson, Mississippi, USA",
+        "ja": "アメリカ・ミシシッピ州ジャクソン",
+        "zh": "美国密西西比州杰克逊",
+        "hi": "जैक्सन, मिसिसिपी, अमेरिका",
+        "es": "Jackson, Misisipi (EE. UU.)",
+        "de": "Jackson, Mississippi (USA)",
+        "ar": "جاكسون، ميسيسيبي، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Springboard to Opportunities, a Jackson nonprofit, funded by private donors; it launched with $300,000 from the Economic Security Project and a private donor",
+        "ja": "ジャクソンの非営利団体Springboard to Opportunities。財源は個人の寄付で、Economic Security Projectと個人の寄付者からの30万ドルで始まった",
+        "zh": "杰克逊非营利组织 Springboard to Opportunities，资金来自私人捐助者；以经济安全项目（Economic Security Project）和一位私人捐助者提供的 30 万美元启动",
+        "hi": "Springboard to Opportunities, जैक्सन की एक ग़ैर-लाभकारी संस्था, निजी दानदाताओं के पैसे से; इसकी शुरुआत Economic Security Project और एक निजी दानदाता के $3 लाख से हुई",
+        "es": "Springboard to Opportunities, una organización sin ánimo de lucro de Jackson, financiado por donantes privados; arrancó con 300.000 $ del Economic Security Project y de un donante privado",
+        "de": "Springboard to Opportunities, eine gemeinnützige Organisation in Jackson, finanziert von privaten Spendern; gestartet mit 300.000 $ vom Economic Security Project und einem privaten Spender",
+        "ar": "⁦Springboard to Opportunities⁩، منظمة غير ربحية في جاكسون، بتمويل من متبرعين خاصين؛ وانطلقت بـ⁦$300,000⁩ من ⁦Economic Security Project⁩ ومتبرع خاص"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 12 months to low-income Black mothers in Jackson, plus $1,000 into a college savings account per child; it began in 2018 with 20 mothers, and over 550 mothers have been paid across six cohorts",
+        "ja": "ジャクソンの低所得の黒人の母親に、条件なしで月1,000ドルを12か月と、子ども1人につき大学貯蓄口座に1,000ドル。2018年に母親20人で始まり、6期で550人超の母親に支給",
+        "zh": "向杰克逊的低收入黑人母亲无条件每月发放 1,000 美元，为期 12 个月，并为每个孩子向大学储蓄账户存入 1,000 美元；2018 年从 20 名母亲开始，六批共向 550 多名母亲发放",
+        "hi": "जैक्सन की कम आय वाली अश्वेत माताओं को 12 महीने तक बिना शर्त हर महीने $1,000, साथ ही हर बच्चे के कॉलेज बचत खाते में $1,000; 2018 में 20 माताओं से शुरू हुआ, और छह समूहों में 550 से ज़्यादा माताओं को भुगतान मिल चुका है",
+        "es": "1.000 $ al mes sin condiciones durante 12 meses para madres negras de bajos ingresos de Jackson, más 1.000 $ en una cuenta de ahorro universitario por hijo; empezó en 2018 con 20 madres, y más de 550 madres han cobrado a lo largo de seis cohortes",
+        "de": "1.000 $ im Monat ohne Bedingungen für 12 Monate an einkommensschwache schwarze Mütter in Jackson, dazu 1.000 $ pro Kind auf ein College-Sparkonto; Beginn 2018 mit 20 Müttern, inzwischen haben über 550 Mütter in sechs Kohorten Zahlungen erhalten",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 12 شهرًا لأمهات سود منخفضات الدخل في جاكسون، إضافة إلى ⁦$1,000⁩ في حساب ادخار جامعي لكل طفل؛ بدأ في 2018 مع 20 أمًّا، وتلقت أكثر من 550 أمًّا الدفعات عبر ست دفعات"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://springboardto.org/magnolia-mothers-trust/",
+      "source2": "https://www.pbs.org/newshour/amp/show/in-mississippi-a-long-running-guaranteed-income-program-is-helping-black-mothers",
+      "us": {
+        "city": "Jackson",
+        "state": "MS",
+        "start": "2018",
+        "end": null,
+        "status": "unknown",
+        "monthly": 1000,
+        "months": 12,
+        "recipients": 550,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Low-income Black mothers in Jackson; the first cohort was limited to working Black mothers in subsidized housing, chosen by lottery",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-babys-first-years",
+      "years": "2018–2025",
+      "type": "ngo",
+      "name": "Baby's First Years",
+      "place": {
+        "en": "New York City, New Orleans, the Twin Cities and Omaha, USA",
+        "ja": "アメリカ・ニューヨーク市、ニューオーリンズ、ツインシティーズ、オマハ",
+        "zh": "美国纽约市、新奥尔良、双子城和奥马哈",
+        "hi": "न्यूयॉर्क शहर, न्यू ऑर्लियन्स, ट्विन सिटीज़ और ओमाहा, अमेरिका",
+        "es": "Ciudad de Nueva York, Nueva Orleans, las Twin Cities y Omaha (EE. UU.)",
+        "de": "New York City, New Orleans, Twin Cities und Omaha (USA)",
+        "ar": "مدينة نيويورك ونيو أورلينز والمدينتان التوأمان وأوماها، الولايات المتحدة"
+      },
+      "who": {
+        "en": "A university research team funded by the National Institutes of Health and private foundations, with payments on a debit card",
+        "ja": "国立衛生研究所（NIH）と民間財団が資金を出す大学の研究チーム。支給はデビットカード",
+        "zh": "由美国国立卫生研究院和私人基金会资助的大学研究团队，通过借记卡发放",
+        "hi": "एक विश्वविद्यालय शोध टीम, जिसे National Institutes of Health और निजी फ़ाउंडेशनों से पैसा मिला; भुगतान डेबिट कार्ड पर",
+        "es": "Un equipo de investigación universitario financiado por los Institutos Nacionales de Salud y fundaciones privadas, con pagos en tarjeta de débito",
+        "de": "Ein universitäres Forschungsteam, finanziert von den National Institutes of Health und privaten Stiftungen, mit Zahlungen auf eine Debitkarte",
+        "ar": "فريق بحثي جامعي بتمويل من المعاهد الوطنية للصحة ومؤسسات خاصة، مع دفعات على بطاقة خصم"
+      },
+      "paid": {
+        "en": "$333 a month with no conditions, from the child's birth until three months after their sixth birthday (76 months), to low-income mothers in four US metro areas; 1,000 mothers recruited in 2018–2019 were randomly assigned to $333 or to $20 a month",
+        "ja": "米国の4つの都市圏の低所得の母親に、子どもの誕生から6歳の誕生日の3か月後まで（76か月）、条件なしで月333ドル。2018〜2019年に集めた母親1,000人を、月333ドルか月20ドルに無作為に割り当てた",
+        "zh": "向美国四个都市区的低收入母亲无条件每月发放 333 美元，从孩子出生持续到六岁生日后三个月（76 个月）；2018 至 2019 年招募的 1,000 名母亲被随机分配为每月 333 美元或 20 美元",
+        "hi": "अमेरिका के चार महानगरीय इलाकों की कम आय वाली माताओं को बच्चे के जन्म से उसके छठे जन्मदिन के तीन महीने बाद तक (76 महीने) बिना शर्त हर महीने $333; 2018–2019 में भर्ती 1,000 माताओं को रैंडम रूप से हर महीने $333 या $20 वाले समूह में रखा गया",
+        "es": "333 $ al mes sin condiciones, desde el nacimiento del niño hasta tres meses después de su sexto cumpleaños (76 meses), para madres de bajos ingresos de cuatro áreas metropolitanas de EE. UU.; 1.000 madres reclutadas en 2018–2019 fueron asignadas al azar a 333 $ o a 20 $ al mes",
+        "de": "333 $ im Monat ohne Bedingungen, von der Geburt des Kindes bis drei Monate nach seinem sechsten Geburtstag (76 Monate), an einkommensschwache Mütter in vier US-Großräumen; 1.000 in den Jahren 2018 bis 2019 gewonnene Mütter wurden per Zufall 333 $ oder 20 $ im Monat zugeteilt",
+        "ar": "⁦$333⁩ شهريًا بلا شروط، من ولادة الطفل حتى ثلاثة أشهر بعد عيد ميلاده السادس (76 شهرًا)، لأمهات منخفضات الدخل في أربع مناطق حضرية أمريكية؛ ووُزّعت 1,000 أم جُنّدن في 2018–2019 عشوائيًا على ⁦$333⁩ أو ⁦$20⁩ شهريًا"
+      },
+      "result": {
+        "en": "The researchers (NBER working paper, May 2025) reported no statistically significant effects at age four on language, executive function, social-emotional problems or brain activity, vs the $20 group (n = 891 children), and none on three secondary outcomes; they say effects may still appear later",
+        "ja": "研究者ら（NBERワーキングペーパー、2025年5月）は月20ドルの群と比べ、4歳時点で言語、実行機能、社会情緒的な問題、脳活動に統計的に有意な効果はなく（子ども891人）、3つの副次的な結果にも効果はなかったと報告。効果は後から現れる可能性もあるとしている",
+        "zh": "研究人员（NBER 工作论文，2025 年 5 月）称，与 20 美元组相比（n = 891 名儿童），四岁时在语言、执行功能、社会情绪问题或脑活动方面没有统计上显著的影响，三项次要结果也没有影响；他们表示影响仍可能在以后出现",
+        "hi": "शोधकर्ताओं (NBER वर्किंग पेपर, मई 2025) ने $20 वाले समूह की तुलना में चार साल की उम्र पर भाषा, एग्ज़िक्यूटिव फ़ंक्शन, सामाजिक-भावनात्मक समस्याओं या मस्तिष्क गतिविधि पर कोई सांख्यिकीय रूप से महत्वपूर्ण असर नहीं पाया (n = 891 बच्चे), और तीन गौण नतीजों पर भी नहीं; उनका कहना है कि असर बाद में दिख सकते हैं",
+        "es": "Los investigadores (documento de trabajo del NBER, mayo de 2025) no hallaron efectos estadísticamente significativos a los cuatro años en lenguaje, función ejecutiva, problemas socioemocionales o actividad cerebral, frente al grupo de 20 $ (n = 891 niños), ni en tres resultados secundarios; dicen que los efectos aún podrían aparecer más adelante",
+        "de": "Die Forschenden (NBER-Arbeitspapier, Mai 2025) berichteten im Alter von vier Jahren keine statistisch signifikanten Wirkungen auf Sprache, exekutive Funktionen, sozial-emotionale Probleme oder Hirnaktivität gegenüber der 20-$-Gruppe (n = 891 Kinder) und keine bei drei sekundären Zielgrößen; Wirkungen könnten laut ihnen später noch auftreten",
+        "ar": "أفاد الباحثون (ورقة عمل من ⁦NBER⁩، مايو 2025) بعدم وجود آثار دالة إحصائيًا في سن الرابعة على اللغة أو الوظائف التنفيذية أو المشكلات الاجتماعية العاطفية أو نشاط الدماغ، مقارنةً بمجموعة الـ⁦$20⁩ (891 طفلًا)، ولا على ثلاث نتائج ثانوية؛ ويقولون إن الآثار قد تظهر لاحقًا"
+      },
+      "source": "https://www.babysfirstyears.com/",
+      "source2": "https://www.nber.org/papers/w33844",
+      "us": {
+        "city": "New York City, New Orleans, Twin Cities, Omaha",
+        "state": "multi",
+        "start": "2018",
+        "end": "2025",
+        "endEstimated": true,
+        "monthly": 333,
+        "months": 76,
+        "recipients": 1000,
+        "unit": "people",
+        "funders": ["public", "philanthropic"],
+        "control": true,
+        "elig": "Mothers with incomes below the federal poverty line, recruited at hospitals around their child's birth (May 2018–June 2019); randomly assigned to $333 or $20 a month",
+        "eval": {
+          "by": "Noble, Magnuson, Duncan, Gennetian, Yoshikawa et al.",
+          "year": 2025,
+          "type": "working paper",
+          "url": "https://www.nber.org/papers/w33844"
+        }
+      }
+    },
+    {
       "id": "stockton",
       "essays": ["finland-basic-income-experiment"],
       "years": "2019–2021",
       "type": "ngo",
-      "name": "Stockton SEED",
+      "name": "Stockton Economic Empowerment Demonstration (SEED)",
       "place": {
-        "ja": "アメリカ・カリフォルニア州ストックトン",
         "en": "Stockton, California, USA",
-        "zh": "美国加州斯托克顿",
+        "ja": "アメリカ・カリフォルニア州ストックトン",
+        "zh": "美国加利福尼亚州斯托克顿",
         "hi": "स्टॉकटन, कैलिफ़ोर्निया, अमेरिका",
         "es": "Stockton, California (EE. UU.)",
         "de": "Stockton, Kalifornien (USA)",
         "ar": "ستوكتون، كاليفورنيا، الولايات المتحدة"
       },
       "who": {
-        "ja": "ストックトン経済エンパワーメント実証（SEED）",
-        "en": "Stockton Economic Empowerment Demonstration",
-        "zh": "斯托克顿经济赋能示范项目（SEED）",
-        "hi": "स्टॉकटन इकोनॉमिक एम्पावरमेंट डेमॉन्स्ट्रेशन (SEED)",
-        "es": "Stockton Economic Empowerment Demonstration (SEED)",
-        "de": "Stockton Economic Empowerment Demonstration (SEED)",
-        "ar": "مشروع ستوكتون للتمكين الاقتصادي (⁦SEED⁩)"
+        "en": "Stockton Economic Empowerment Demonstration (SEED), started by then-Mayor Michael Tubbs and paid for by private donors and foundations, not the city budget",
+        "ja": "ストックトン経済エンパワーメント実証（SEED）。当時のマイケル・タブス市長が始め、市の予算ではなく個人の寄付者や財団が資金を出した",
+        "zh": "斯托克顿经济赋能示范项目（SEED），由时任市长迈克尔·塔布斯发起，资金来自私人捐助者和基金会，而非市政预算",
+        "hi": "स्टॉकटन इकोनॉमिक एम्पावरमेंट डेमॉन्स्ट्रेशन (SEED), जिसे तत्कालीन मेयर माइकल टब्स ने शुरू किया और जिसका पैसा शहर के बजट से नहीं, निजी दानदाताओं और फ़ाउंडेशनों से आया",
+        "es": "Stockton Economic Empowerment Demonstration (SEED), impulsado por el entonces alcalde Michael Tubbs y financiado por donantes privados y fundaciones, no por el presupuesto municipal",
+        "de": "Stockton Economic Empowerment Demonstration (SEED), gestartet vom damaligen Bürgermeister Michael Tubbs und bezahlt von privaten Spendern und Stiftungen, nicht aus dem städtischen Haushalt",
+        "ar": "مشروع ستوكتون للتمكين الاقتصادي (⁦SEED⁩)، أطلقه العمدة آنذاك مايكل تابس، وموّله متبرعون ومؤسسات خاصة لا ميزانية المدينة"
       },
       "paid": {
-        "ja": "住民125人に月500ドルを2年間（使い道の制限なし）",
-        "en": "$500 a month for two years to 125 residents, with no spending restrictions",
-        "zh": "向 125 名居民每月发放 500 美元，为期两年，不限用途",
-        "hi": "125 निवासियों को दो साल तक हर महीने $500, ख़र्च पर कोई रोक नहीं",
-        "es": "500 $ al mes durante dos años para 125 residentes, sin restricciones de uso",
-        "de": "500 $ im Monat für zwei Jahre an 125 Einwohner, ohne Ausgabevorgaben",
-        "ar": "⁦$500⁩ شهريًا لمدة عامين لـ125 من السكان دون قيود على الإنفاق"
+        "en": "$500 a month with no conditions for 24 months (February 2019–January 2021) to 125 randomly selected residents of Stockton's lower-income neighborhoods (the study assigned 131 people to receive it and 200 to a control group)",
+        "ja": "ストックトンの低所得地区の住民から無作為に選んだ125人に、条件なしで月500ドルを24か月（2019年2月〜2021年1月）。研究では131人を受給群、200人を対照群に割り当てた",
+        "zh": "向斯托克顿低收入社区随机选出的 125 名居民无条件每月发放 500 美元，为期 24 个月（2019 年 2 月至 2021 年 1 月）（研究将 131 人分入受助组，200 人分入对照组）",
+        "hi": "स्टॉकटन के कम आय वाले इलाकों के रैंडम रूप से चुने गए 125 निवासियों को 24 महीने (फ़रवरी 2019–जनवरी 2021) तक बिना शर्त हर महीने $500 (अध्ययन में 131 लोगों को पैसा पाने वालों में और 200 को नियंत्रण समूह में रखा गया)",
+        "es": "500 $ al mes sin condiciones durante 24 meses (febrero 2019–enero 2021) para 125 residentes elegidos al azar de los barrios de menores ingresos de Stockton (el estudio asignó a 131 personas a recibirlo y a 200 a un grupo de control)",
+        "de": "500 $ im Monat ohne Bedingungen für 24 Monate (Februar 2019 bis Januar 2021) an 125 zufällig ausgewählte Einwohner der ärmeren Viertel Stocktons (die Studie teilte 131 Personen dem Bezug und 200 einer Kontrollgruppe zu)",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 24 شهرًا (فبراير 2019–يناير 2021) لـ125 من سكان أحياء ستوكتون الأقل دخلًا اختيروا عشوائيًا (خصّصت الدراسة 131 شخصًا للحصول عليه و200 لمجموعة ضابطة)"
       },
       "result": {
-        "ja": "研究者によると、受給者は対照群の2倍以上の割合でフルタイムの仕事に移った",
-        "en": "Researchers reported recipients moved into full-time work at more than twice the rate of the control group",
-        "zh": "研究人员称，受助者转为全职工作的比例是对照组的两倍多",
-        "hi": "शोधकर्ताओं के अनुसार प्राप्तकर्ता नियंत्रण समूह की तुलना में दोगुने से ज़्यादा दर से पूर्णकालिक काम में गए",
-        "es": "Según los investigadores, los beneficiarios pasaron a empleo a tiempo completo a más del doble de ritmo que el grupo de control",
-        "de": "Laut den Forschenden wechselten Empfänger mehr als doppelt so häufig in Vollzeit wie die Kontrollgruppe",
-        "ar": "أفاد الباحثون بأن المستفيدين انتقلوا إلى العمل بدوام كامل بأكثر من ضعف معدل المجموعة الضابطة"
+        "en": "A peer-reviewed randomized trial (Journal of Urban Health, 2023; 131 treatment, 200 control) reported lower income volatility (19% vs 26%), less psychological distress and better energy and physical functioning than the control group in the first year. Most gaps were no longer significant in the second, pandemic year, and employment differences were not significant",
+        "ja": "査読付きの無作為化試験（Journal of Urban Health、2023年。受給群131人、対照群200人）は、1年目に対照群より収入の変動が小さく（19%対26%）、心理的苦痛が少なく、活力と身体機能が良かったと報告。コロナ禍の2年目にはほとんどの差が有意でなくなり、雇用の差も有意ではなかった",
+        "zh": "一项经同行评审的随机对照试验（《城市健康杂志》，2023 年；受助组 131 人，对照组 200 人）称，第一年与对照组相比，收入波动更低（19% 对 26%），心理困扰更少，精力和身体机能更好。到第二年（疫情之年），多数差距不再显著，就业差异也不显著",
+        "hi": "एक पीयर-रिव्यूड रैंडमाइज़्ड ट्रायल (Journal of Urban Health, 2023; 131 उपचार, 200 नियंत्रण) के अनुसार पहले साल में नियंत्रण समूह की तुलना में आय का उतार-चढ़ाव कम (19% बनाम 26%), मानसिक तनाव कम और ऊर्जा व शारीरिक कामकाज बेहतर रहा। दूसरे, महामारी वाले साल में ज़्यादातर अंतर सांख्यिकीय रूप से महत्वपूर्ण नहीं रहे, और रोज़गार में अंतर भी महत्वपूर्ण नहीं था",
+        "es": "Un ensayo aleatorizado revisado por pares (Journal of Urban Health, 2023; 131 en tratamiento, 200 de control) informó de menor volatilidad de ingresos (19 % frente a 26 %), menos malestar psicológico y mejor energía y funcionamiento físico que el grupo de control en el primer año. La mayoría de las diferencias dejaron de ser significativas en el segundo año, el de la pandemia, y las diferencias en empleo no fueron significativas",
+        "de": "Eine begutachtete randomisierte Studie (Journal of Urban Health, 2023; 131 Empfänger, 200 in der Kontrollgruppe) berichtete im ersten Jahr im Vergleich zur Kontrollgruppe geringere Einkommensschwankungen (19 % zu 26 %), weniger psychische Belastung sowie mehr Energie und bessere körperliche Leistungsfähigkeit. Im zweiten Jahr, dem Pandemiejahr, waren die meisten Unterschiede nicht mehr signifikant, und Unterschiede bei der Beschäftigung waren nicht signifikant",
+        "ar": "أفادت تجربة عشوائية محكّمة (⁦Journal of Urban Health⁩، 2023؛ 131 في مجموعة العلاج و200 في المجموعة الضابطة) بتقلب أقل في الدخل (19% مقابل 26%) وضيق نفسي أقل وطاقة وأداء بدني أفضل مقارنةً بالمجموعة الضابطة في العام الأول. ولم تعد معظم الفروق دالة إحصائيًا في العام الثاني، عام الجائحة، ولم تكن فروق التوظيف دالة إحصائيًا"
       },
-      "source": "https://cbsnews.com/news/basic-guaranteed-income-stockton-experiment/"
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10160253/",
+      "source2": "https://sp2.upenn.edu/study-guaranteed-income-improved-peoples-health-during-pandemic/",
+      "us": {
+        "city": "Stockton",
+        "state": "CA",
+        "start": "2019-02",
+        "end": "2021-01",
+        "monthly": 500,
+        "months": 24,
+        "recipients": 125,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Stockton residents 18+ living in census tracts at or below the city's median household income ($46,033); about 4,200 households were mailed invitations, 478 applied, and recipients were picked at random",
+        "eval": {
+          "by": "Stacia West (University of Tennessee) and Amy Castro (University of Pennsylvania)",
+          "year": 2023,
+          "type": "peer-reviewed",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10160253/"
+        }
+      }
+    },
+    {
+      "id": "us-hudson-hudsonup",
+      "years": "2020–",
+      "type": "ngo",
+      "name": "HudsonUP Basic Income Pilot",
+      "place": {
+        "en": "Hudson, New York, USA",
+        "ja": "アメリカ・ニューヨーク州ハドソン",
+        "zh": "美国纽约州哈德逊",
+        "hi": "हडसन, न्यूयॉर्क, अमेरिका",
+        "es": "Hudson, Nueva York (EE. UU.)",
+        "de": "Hudson, New York (USA)",
+        "ar": "هدسون، نيويورك، الولايات المتحدة"
+      },
+      "who": {
+        "en": "HudsonUP, a privately funded pilot in the small city of Hudson, started by The Spark of Hudson and Andrew Yang's Humanity Forward, with research by the Jain Family Institute",
+        "ja": "小さな市ハドソンで民間資金により行われたパイロットHudsonUP。The Spark of Hudsonとアンドリュー・ヤン氏のHumanity Forwardが始め、研究はJain Family Institute",
+        "zh": "HudsonUP，小城哈德逊的私人出资试点，由 The Spark of Hudson 和杨安泽的 Humanity Forward 发起，Jain Family Institute 负责研究",
+        "hi": "HudsonUP, छोटे शहर हडसन में निजी पैसे से चलने वाला पायलट, जिसे The Spark of Hudson और एंड्रयू यांग की Humanity Forward ने शुरू किया, शोध Jain Family Institute का",
+        "es": "HudsonUP, un piloto con financiación privada en la pequeña ciudad de Hudson, impulsado por The Spark of Hudson y Humanity Forward de Andrew Yang, con investigación del Jain Family Institute",
+        "de": "HudsonUP, ein privat finanziertes Pilotprojekt in der Kleinstadt Hudson, gestartet von The Spark of Hudson und Andrew Yangs Humanity Forward, mit Forschung durch das Jain Family Institute",
+        "ar": "⁦HudsonUP⁩، تجربة ممولة من القطاع الخاص في مدينة هدسون الصغيرة، أطلقتها ⁦The Spark of Hudson⁩ و⁦Humanity Forward⁩ التابعة لأندرو يانغ، مع أبحاث من ⁦Jain Family Institute⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for five years to 128 low-income residents (about 2% of the city) chosen by lottery in three cohorts: 25 from fall 2020, 50 from 2021 and 53 from 2022, the last of whom are paid until 2027",
+        "ja": "抽選で選んだ低所得住民128人（市の人口の約2%）に、条件なしで月500ドルを5年間。3期に分け、2020年秋から25人、2021年から50人、2022年から53人で、最後の期は2027年まで支給",
+        "zh": "分三批通过抽签选出 128 名低收入居民（约占全市 2%），无条件每月发放 500 美元，为期五年：2020 年秋起 25 人，2021 年起 50 人，2022 年起 53 人，最后一批发放至 2027 年",
+        "hi": "लॉटरी से तीन समूहों में चुने गए 128 कम आय वाले निवासियों (शहर का लगभग 2%) को पाँच साल तक बिना शर्त हर महीने $500: 2020 की शरद से 25, 2021 से 50 और 2022 से 53, जिनमें आख़िरी समूह को 2027 तक भुगतान मिलेगा",
+        "es": "500 $ al mes sin condiciones durante cinco años para 128 residentes de bajos ingresos (cerca del 2 % de la ciudad) elegidos por sorteo en tres cohortes: 25 desde el otoño de 2020, 50 desde 2021 y 53 desde 2022, que cobrarán hasta 2027",
+        "de": "500 $ im Monat ohne Bedingungen für fünf Jahre an 128 einkommensschwache Einwohner (etwa 2 % der Stadt), per Los in drei Kohorten ausgewählt: 25 ab Herbst 2020, 50 ab 2021 und 53 ab 2022, Letztere erhalten Zahlungen bis 2027",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة خمس سنوات لـ128 من السكان منخفضي الدخل (نحو 2% من سكان المدينة) اختيروا بالقرعة على ثلاث دفعات: 25 بدءًا من خريف 2020، و50 بدءًا من 2021، و53 بدءًا من 2022، ويتلقى أفراد الدفعة الأخيرة المال حتى 2027"
+      },
+      "result": {
+        "en": "The Jain Family Institute's final report (February 2026), based on surveys and interviews with no comparison group, said the cash eased day-to-day stress but a majority still could not cover a $400 emergency (first cohort: 62.5% by summer 2025), and 8–24% moved in any six-month period. Survey response rates averaged 25%",
+        "ja": "Jain Family Instituteの最終報告（2026年2月、比較群のない調査と聞き取りに基づく）は、現金で日々のストレスは和らいだが、過半数はなお400ドルの急な出費を払えず（第1期：2025年夏時点で62.5%）、どの6か月間でも8〜24%が転居したとした。調査の回答率は平均25%",
+        "zh": "Jain Family Institute 的最终报告（2026 年 2 月）基于调查和访谈，没有比较组，称现金缓解了日常压力，但多数人仍无法应付 400 美元急用（第一批：截至 2025 年夏为 62.5%），且在任一六个月内有 8% 至 24% 的人搬家。调查回应率平均为 25%",
+        "hi": "Jain Family Institute की अंतिम रिपोर्ट (फ़रवरी 2026), जो तुलना समूह के बिना सर्वे और इंटरव्यू पर आधारित है, के अनुसार नक़दी से रोज़ का तनाव घटा, पर ज़्यादातर अब भी $400 का अचानक ख़र्च नहीं झेल पाते थे (पहला समूह: 2025 की गर्मियों तक 62.5%), और किसी भी छह महीने की अवधि में 8–24% ने घर बदला। सर्वे की प्रतिक्रिया दर औसतन 25% रही",
+        "es": "El informe final del Jain Family Institute (febrero de 2026), basado en encuestas y entrevistas sin grupo de comparación, dijo que el dinero alivió el estrés diario, pero la mayoría seguía sin poder cubrir un imprevisto de 400 $ (primera cohorte: 62,5 % en el verano de 2025), y entre el 8 % y el 24 % se mudó en cualquier periodo de seis meses. La tasa de respuesta a las encuestas fue del 25 % de media",
+        "de": "Der Abschlussbericht des Jain Family Institute (Februar 2026), gestützt auf Befragungen und Interviews ohne Vergleichsgruppe, stellte fest, dass das Geld den Alltagsstress linderte, eine Mehrheit aber weiterhin keine Notausgabe von 400 $ decken konnte (erste Kohorte: 62,5 % bis Sommer 2025) und in jedem Halbjahr 8 bis 24 % umzogen. Die Rücklaufquote der Befragungen lag im Schnitt bei 25 %",
+        "ar": "قال التقرير النهائي لـ⁦Jain Family Institute⁩ (فبراير 2026)، المستند إلى استطلاعات ومقابلات دون مجموعة مقارنة، إن النقد خفّف التوتر اليومي، لكن الأغلبية ظلت عاجزة عن تغطية طارئ بقيمة ⁦$400⁩ (الدفعة الأولى: 62.5% بحلول صيف 2025)، وانتقل 8–24% من مساكنهم في أي فترة من ستة أشهر. وبلغ متوسط معدل الاستجابة للاستطلاعات 25%"
+      },
+      "source": "https://jfiresearch.org/wp-content/uploads/2026/02/HudsonUP-Basic-Income-Pilot-Year-5-2025.pdf",
+      "source2": "https://jfiresearch.org/hudsonup-basic-income-pilot-releases-year-two-report/",
+      "us": {
+        "city": "Hudson",
+        "state": "NY",
+        "start": "2020",
+        "end": null,
+        "monthly": 500,
+        "months": 60,
+        "recipients": 128,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Hudson residents earning less than the area median income, chosen by randomized lottery in three cohorts: 25 adults from fall 2020 (paid 2020–2025), 50 from 2021 (2021–2026) and 53 from 2022 (2022–2027)",
+        "eval": {
+          "by": "Jain Family Institute (Leah Hamilton, with Appalachian State University)",
+          "year": 2026,
+          "type": "report",
+          "url": "https://jfiresearch.org/hudsonup-basic-income-pilot-fifth-and-final-report/"
+        }
+      }
+    },
+    {
+      "id": "us-santa-clara-foster-youth",
+      "years": "2020–2021",
+      "type": "gov",
+      "name": "Santa Clara County Guaranteed Basic Income Pilot for Transition-Age Foster Youth",
+      "place": {
+        "en": "Santa Clara County, California, USA",
+        "ja": "アメリカ・カリフォルニア州サンタクララ郡",
+        "zh": "美国加利福尼亚州圣克拉拉县",
+        "hi": "सांता क्लारा काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Santa Clara, California (EE. UU.)",
+        "de": "Santa Clara County, Kalifornien (USA)",
+        "ar": "مقاطعة سانتا كلارا، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Santa Clara County government, with the Gerald Huff Fund for Humanity, a basic income nonprofit",
+        "ja": "サンタクララ郡政府と、ベーシックインカムの非営利団体Gerald Huff Fund for Humanity",
+        "zh": "圣克拉拉县政府，与基本收入非营利组织 Gerald Huff Fund for Humanity 合作",
+        "hi": "सांता क्लारा काउंटी सरकार, बेसिक इनकम ग़ैर-लाभकारी संस्था Gerald Huff Fund for Humanity के साथ",
+        "es": "Gobierno del condado de Santa Clara, con el Gerald Huff Fund for Humanity, una organización sin ánimo de lucro de renta básica",
+        "de": "Verwaltung von Santa Clara County mit dem Gerald Huff Fund for Humanity, einer gemeinnützigen Organisation für Grundeinkommen",
+        "ar": "حكومة مقاطعة سانتا كلارا، مع ⁦Gerald Huff Fund for Humanity⁩، منظمة غير ربحية للدخل الأساسي"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 12 months (June 2020–May 2021) to 72 young adults aged 21–24 leaving foster care, described as the first such program in the US",
+        "ja": "里親養育を離れる21〜24歳の若者72人に、条件なしで月1,000ドルを12か月（2020年6月〜2021年5月）。米国初のこの種のプログラムとされる",
+        "zh": "向 72 名 21 至 24 岁、离开寄养系统的年轻人无条件每月发放 1,000 美元，为期 12 个月（2020 年 6 月至 2021 年 5 月），被称为美国首个此类项目",
+        "hi": "फ़ॉस्टर केयर छोड़ रहे 21–24 साल के 72 युवाओं को 12 महीने (जून 2020–मई 2021) तक बिना शर्त हर महीने $1,000; इसे अमेरिका में अपनी तरह का पहला कार्यक्रम बताया गया",
+        "es": "1.000 $ al mes sin condiciones durante 12 meses (junio 2020–mayo 2021) para 72 jóvenes de 21 a 24 años que salían del sistema de acogida, descrito como el primer programa de este tipo en EE. UU.",
+        "de": "1.000 $ im Monat ohne Bedingungen für 12 Monate (Juni 2020 bis Mai 2021) an 72 junge Erwachsene von 21 bis 24 Jahren, die die Pflegeunterbringung verließen; beschrieben als erstes Programm dieser Art in den USA",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 12 شهرًا (يونيو 2020–مايو 2021) لـ72 شابًا تتراوح أعمارهم بين 21 و24 عامًا يغادرون الرعاية البديلة، ووُصف بأنه أول برنامج من نوعه في الولايات المتحدة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://sanjosespotlight.com/santa-clara-county-approves-nations-first-basic-income-for-foster-youth/",
+      "source2": "https://cbsnews.com/sanfrancisco/news/santa-clara-county-approves-monthly-1000-payments-for-youth-transitioning-out-of-foster-care",
+      "us": {
+        "city": "Santa Clara County",
+        "state": "CA",
+        "start": "2020-06",
+        "end": "2021-05",
+        "monthly": 1000,
+        "months": 12,
+        "recipients": 72,
+        "unit": "people",
+        "funders": ["public"],
+        "control": false,
+        "elig": "Young adults aged 21–24 who had been in the county's foster care system, some still receiving support services",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-stpaul-ppp",
+      "years": "2020–2022",
+      "type": "gov",
+      "name": "People's Prosperity Guaranteed Income Pilot",
+      "place": {
+        "en": "Saint Paul, Minnesota, USA",
+        "ja": "アメリカ・ミネソタ州セントポール",
+        "zh": "美国明尼苏达州圣保罗",
+        "hi": "सेंट पॉल, मिनेसोटा, अमेरिका",
+        "es": "Saint Paul, Minnesota (EE. UU.)",
+        "de": "Saint Paul, Minnesota (USA)",
+        "ar": "سانت بول، مينيسوتا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Saint Paul under Mayor Melvin Carter, the first Mayors for a Guaranteed Income pilot, paid mostly from philanthropy with some federal CARES Act and state money",
+        "ja": "メルビン・カーター市長のもとのセントポール市。Mayors for a Guaranteed Incomeの最初のパイロットで、財源は主に慈善寄付と一部は連邦CARES法・州の資金",
+        "zh": "圣保罗市（市长梅尔文·卡特），是“保障收入市长联盟”的首个试点，资金主要来自慈善捐助，另有部分联邦 CARES 法案资金和州资金",
+        "hi": "मेयर मेल्विन कार्टर के अधीन सेंट पॉल शहर, Mayors for a Guaranteed Income का पहला पायलट; ज़्यादातर पैसा परोपकार से, कुछ संघीय CARES Act और राज्य से",
+        "es": "Ciudad de Saint Paul bajo el alcalde Melvin Carter, el primer piloto de Mayors for a Guaranteed Income, financiado sobre todo con filantropía y algo de dinero federal de la CARES Act y estatal",
+        "de": "Stadt Saint Paul unter Bürgermeister Melvin Carter, das erste Pilotprojekt von Mayors for a Guaranteed Income, überwiegend aus Spenden bezahlt, teils mit Bundesmitteln aus dem CARES Act und Mitteln des Bundesstaats",
+        "ar": "مدينة سانت بول في عهد العمدة ملفين كارتر، وهي أول تجربة ضمن ⁦Mayors for a Guaranteed Income⁩، بتمويل معظمه من العمل الخيري مع بعض أموال قانون ⁦CARES⁩ الفدرالي وأموال الولاية"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 18 months (October 2020–April 2022) to 150 low-income Saint Paul families, plus $10 a month into each child's college savings account",
+        "ja": "セントポールの低所得150家族に、条件なしで月500ドルを18か月（2020年10月〜2022年4月）。加えて子ども一人ひとりの大学貯蓄口座に月10ドル",
+        "zh": "向圣保罗 150 个低收入家庭无条件每月发放 500 美元，为期 18 个月（2020 年 10 月至 2022 年 4 月），并每月向每个孩子的大学储蓄账户存入 10 美元",
+        "hi": "150 कम आय वाले सेंट पॉल परिवारों को 18 महीने (अक्टूबर 2020–अप्रैल 2022) तक बिना शर्त हर महीने $500, साथ ही हर बच्चे के कॉलेज बचत खाते में हर महीने $10",
+        "es": "500 $ al mes sin condiciones durante 18 meses (octubre 2020–abril 2022) para 150 familias de bajos ingresos de Saint Paul, más 10 $ al mes en la cuenta de ahorro universitario de cada hijo",
+        "de": "500 $ im Monat ohne Bedingungen für 18 Monate (Oktober 2020 bis April 2022) an 150 einkommensschwache Familien in Saint Paul, dazu 10 $ im Monat auf das College-Sparkonto jedes Kindes",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 18 شهرًا (أكتوبر 2020–أبريل 2022) لـ150 أسرة منخفضة الدخل في سانت بول، إضافة إلى ⁦$10⁩ شهريًا في حساب ادخار جامعي لكل طفل"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research (December 2023) reported employment among recipients rising from 49% at the start to 63% six months after payments ended, and the share with high hope rising from 15% to 22%; financial well-being fell back after the cash ended. These are before-and-after changes for recipients only, not a comparison with a control group",
+        "ja": "ペンシルベニア大学CGIR（2023年12月）は、受給者の就業率が開始時の49%から支給終了6か月後に63%に上がり、希望が高い人の割合も15%から22%に増えたと報告。経済的な暮らし向きは支給終了後に元に戻った。受給者だけの前後比較で、対照群との比較ではない",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2023 年 12 月）称，受助者的就业率从开始时的 49% 升至发放结束六个月后的 63%，抱有高度希望的比例从 15% 升至 22%；现金停止后，财务状况有所回落。这些是仅针对受助者的前后变化，并非与对照组比较",
+        "hi": "पेन के Center for Guaranteed Income Research (दिसंबर 2023) के अनुसार प्राप्तकर्ताओं में रोज़गार शुरुआत के 49% से बढ़कर भुगतान ख़त्म होने के छह महीने बाद 63% हुआ, और ऊँची आशा रखने वालों का हिस्सा 15% से 22% हुआ; नक़दी ख़त्म होने के बाद आर्थिक भलाई फिर घटी। ये सिर्फ़ प्राप्तकर्ताओं के पहले-और-बाद के बदलाव हैं, नियंत्रण समूह से तुलना नहीं",
+        "es": "El Center for Guaranteed Income Research de Penn (diciembre de 2023) informó de que el empleo de los beneficiarios pasó del 49 % al inicio al 63 % seis meses después del último pago, y la proporción con mucha esperanza del 15 % al 22 %; el bienestar financiero volvió a empeorar al acabar el dinero. Son cambios antes y después solo entre los beneficiarios, no una comparación con un grupo de control",
+        "de": "Das Center for Guaranteed Income Research der Penn (Dezember 2023) berichtete, dass die Beschäftigung der Empfänger von 49 % zu Beginn auf 63 % sechs Monate nach dem Ende der Zahlungen stieg und der Anteil mit großer Zuversicht von 15 % auf 22 %; das finanzielle Wohlbefinden ging nach dem Ende der Zahlungen wieder zurück. Es handelt sich um Vorher-nachher-Veränderungen nur bei den Empfängern, nicht um einen Vergleich mit einer Kontrollgruppe",
+        "ar": "أفاد ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (ديسمبر 2023) بارتفاع التوظيف بين المستفيدين من 49% في البداية إلى 63% بعد ستة أشهر من انتهاء الدفعات، وارتفاع نسبة من لديهم أمل مرتفع من 15% إلى 22%؛ وتراجع الرفاه المالي بعد توقف النقد. وهذه تغيّرات قبل وبعد للمستفيدين فقط، لا مقارنة بمجموعة ضابطة"
+      },
+      "source": "https://stpaul.gov/news/results-saint-paul-guaranteed-income-pilot-show-increased-employment-improved-outlook",
+      "source2": "https://sp2.upenn.edu/report-trailblazing-guaranteed-income-program-in-saint-paul-enhanced-mental-and-financial-well-being/",
+      "us": {
+        "city": "Saint Paul",
+        "state": "MN",
+        "start": "2020-10",
+        "end": "2022-04",
+        "monthly": 500,
+        "months": 18,
+        "recipients": 150,
+        "unit": "households",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "Families in CollegeBound Saint Paul (the city's children's savings account program) at or under 300% of the poverty line who self-attested to COVID-19 hardship; randomly selected",
+        "eval": {
+          "by": "University of Pennsylvania Center for Guaranteed Income Research",
+          "year": 2023,
+          "type": "report",
+          "url": "https://drive.google.com/file/d/1LzI2IjCpAhv5nGzmVrRNM29NkJrL7WKL/view"
+        }
+      }
+    },
+    {
+      "id": "us-richmond-rri",
+      "years": "2020–2025",
+      "type": "gov",
+      "name": "Richmond Resilience Initiative",
+      "place": {
+        "en": "Richmond, Virginia, USA",
+        "ja": "アメリカ・バージニア州リッチモンド",
+        "zh": "美国弗吉尼亚州里士满",
+        "hi": "रिचमंड, वर्जीनिया, अमेरिका",
+        "es": "Richmond, Virginia (EE. UU.)",
+        "de": "Richmond, Virginia (USA)",
+        "ar": "ريتشموند، فيرجينيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Richmond's Office of Community Wealth Building under Mayor Levar Stoney, paid from foundation money and later federal pandemic relief (ARPA)",
+        "ja": "レバー・ストーニー市長のもとのリッチモンド市Office of Community Wealth Building。財源は財団の資金、のちに連邦のコロナ対策資金（ARPA）",
+        "zh": "里士满市社区财富建设办公室（市长利瓦尔·斯托尼），资金来自基金会，后来也有联邦疫情纾困款（ARPA）",
+        "hi": "मेयर लेवार स्टोनी के अधीन रिचमंड शहर का Office of Community Wealth Building, पैसा फ़ाउंडेशन और बाद में संघीय महामारी राहत (ARPA) से",
+        "es": "Oficina de Construcción de Riqueza Comunitaria de la Ciudad de Richmond bajo el alcalde Levar Stoney, financiado con dinero de fundaciones y después fondos federales de alivio por la pandemia (ARPA)",
+        "de": "Office of Community Wealth Building der Stadt Richmond unter Bürgermeister Levar Stoney, bezahlt aus Stiftungsgeld und später aus Corona-Hilfen des Bundes (ARPA)",
+        "ar": "مكتب بناء الثروة المجتمعية في مدينة ريتشموند في عهد العمدة ليفار ستوني، بتمويل من أموال مؤسسات ثم أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) لاحقًا"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 24 months to 94 working parents in several cohorts between October 2020 and May 2025, aimed at people who had lost public benefits but did not yet earn a living wage",
+        "ja": "働く親94人に、2020年10月〜2025年5月の複数の期に分けて、条件なしで月500ドルを24か月。公的給付を失ったがまだ生活賃金に届かない人が対象",
+        "zh": "在 2020 年 10 月至 2025 年 5 月间分多批向 94 名有工作的父母无条件每月发放 500 美元，为期 24 个月，对象是已失去公共福利、但收入尚未达到基本生活工资的人",
+        "hi": "अक्टूबर 2020 से मई 2025 के बीच कई समूहों में 94 कामकाजी माता-पिता को 24 महीने तक बिना शर्त हर महीने $500; यह उन लोगों के लिए था जिनकी सरकारी सहायता छिन गई थी पर जो अभी गुज़ारे लायक वेतन (living wage) नहीं कमाते थे",
+        "es": "500 $ al mes sin condiciones durante 24 meses para 94 padres y madres con empleo, en varias cohortes entre octubre de 2020 y mayo de 2025, dirigido a personas que habían perdido prestaciones públicas pero aún no ganaban un salario digno",
+        "de": "500 $ im Monat ohne Bedingungen für 24 Monate an 94 berufstätige Eltern in mehreren Kohorten zwischen Oktober 2020 und Mai 2025, gedacht für Menschen, die Sozialleistungen verloren hatten, aber noch keinen existenzsichernden Lohn verdienten",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 24 شهرًا لـ94 من الآباء والأمهات العاملين على عدة دفعات بين أكتوبر 2020 ومايو 2025، موجّه لمن فقدوا مساعدات عامة لكنهم لم يبلغوا بعد أجرًا يكفي للعيش"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research on the first cohort of 18 (May 2024), comparing before and after: average monthly savings rose from $147 to $305 and the share unable to cover a $400 emergency fell from 59% to 20%. Very small sample, no control group reported",
+        "ja": "ペンシルベニア大学CGIRの第1期18人についての報告（2024年5月、前後比較）では、月の平均貯蓄が147ドルから305ドルに増え、400ドルの急な出費を払えない人の割合が59%から20%に下がった。非常に小さなサンプルで、対照群は報告されていない",
+        "zh": "宾夕法尼亚大学保障收入研究中心对第一批 18 人的研究（2024 年 5 月）进行前后比较：平均每月储蓄从 147 美元增至 305 美元，无法应付 400 美元急用的比例从 59% 降至 20%。样本极小，未报告对照组",
+        "hi": "पेन के Center for Guaranteed Income Research ने 18 लोगों के पहले समूह (मई 2024) की पहले और बाद में तुलना की: औसत मासिक बचत $147 से बढ़कर $305 हुई और $400 का अचानक ख़र्च न झेल पाने वालों का हिस्सा 59% से घटकर 20% हुआ। बहुत छोटा नमूना, कोई नियंत्रण समूह नहीं बताया गया",
+        "es": "El Center for Guaranteed Income Research de Penn sobre la primera cohorte de 18 (mayo de 2024), comparando antes y después: el ahorro mensual medio pasó de 147 $ a 305 $ y la proporción incapaz de cubrir un imprevisto de 400 $ bajó del 59 % al 20 %. Muestra muy pequeña, sin grupo de control reportado",
+        "de": "Das Center for Guaranteed Income Research der Penn zur ersten Kohorte von 18 Personen (Mai 2024), Vorher-nachher-Vergleich: Die durchschnittlichen monatlichen Ersparnisse stiegen von 147 $ auf 305 $, und der Anteil, der keine Notausgabe von 400 $ decken konnte, sank von 59 % auf 20 %. Sehr kleine Stichprobe, keine Kontrollgruppe berichtet",
+        "ar": "⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا عن الدفعة الأولى المكوّنة من 18 شخصًا (مايو 2024)، بمقارنة قبل وبعد: ارتفع متوسط المدخرات الشهرية من ⁦$147⁩ إلى ⁦$305⁩ وانخفضت نسبة العاجزين عن تغطية طارئ بقيمة ⁦$400⁩ من 59% إلى 20%. عينة صغيرة جدًا، ولم تُذكر مجموعة ضابطة"
+      },
+      "source": "https://guaranteedincome.us/richmond",
+      "source2": "https://prnewswire.com/news-releases/richmond-resilience-initiative-pilot-results-show-increased-financial-stability-better-employment-prospects-and-more-parent-child-time-302159534.html",
+      "us": {
+        "city": "Richmond",
+        "state": "VA",
+        "start": "2020-10",
+        "end": "2025-05",
+        "monthly": 500,
+        "months": 24,
+        "recipients": 94,
+        "unit": "people",
+        "funders": ["philanthropic", "arpa"],
+        "control": false,
+        "elig": "Richmond residents in the city's workforce program with children under 18, employed but earning too much for federal benefits yet less than a living wage (the 'cliff effect'); the third cohort was for people returning from prison",
+        "eval": {
+          "by": "Penn Center for Guaranteed Income Research",
+          "year": 2024,
+          "type": "report",
+          "url": "https://prnewswire.com/news-releases/richmond-resilience-initiative-pilot-results-show-increased-financial-stability-better-employment-prospects-and-more-parent-child-time-302159534.html"
+        }
+      }
+    },
+    {
+      "id": "us-chelsea-eats",
+      "years": "2020–2021",
+      "type": "gov",
+      "name": "Chelsea Eats",
+      "place": {
+        "en": "Chelsea, Massachusetts, USA",
+        "ja": "アメリカ・マサチューセッツ州チェルシー",
+        "zh": "美国马萨诸塞州切尔西",
+        "hi": "चेल्सी, मैसाचुसेट्स, अमेरिका",
+        "es": "Chelsea, Massachusetts (EE. UU.)",
+        "de": "Chelsea, Massachusetts (USA)",
+        "ar": "تشيلسي، ماساتشوستس، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Chelsea, paid from federal COVID relief, state and philanthropic money (including the Shah Family Foundation), studied by Harvard researchers",
+        "ja": "チェルシー市。財源は連邦のコロナ対策資金、州、慈善資金（シャー家族財団を含む）で、ハーバード大学の研究者が研究",
+        "zh": "切尔西市，资金来自联邦新冠纾困款、州政府和慈善资金（包括 Shah 家族基金会），由哈佛大学研究人员研究",
+        "hi": "चेल्सी शहर, पैसा संघीय कोविड राहत, राज्य और परोपकारी कोष (Shah Family Foundation सहित) से; अध्ययन Harvard के शोधकर्ताओं ने किया",
+        "es": "Ciudad de Chelsea, financiado con fondos federales de alivio por la COVID, dinero estatal y filantrópico (incluida la Shah Family Foundation), estudiado por investigadores de Harvard",
+        "de": "Stadt Chelsea, bezahlt aus Corona-Hilfen des Bundes, Mitteln des Bundesstaats und Spenden (darunter die Shah Family Foundation), untersucht von Forschenden der Harvard",
+        "ar": "مدينة تشيلسي، بتمويل من أموال الإغاثة الفدرالية من كوفيد وأموال الولاية والعمل الخيري (منها ⁦Shah Family Foundation⁩)، ودرسه باحثون من هارفارد"
+      },
+      "paid": {
+        "en": "$200–$400 a month (by household size) with no conditions on a debit card for nine months (November 2020–August 2021) to about 2,000 low-income households, roughly 15% of the city's households, chosen by lottery",
+        "ja": "抽選で選んだ低所得の約2,000世帯（市の世帯の約15%）に、条件なしで月200〜400ドル（世帯人数による）をデビットカードで9か月（2020年11月〜2021年8月）",
+        "zh": "通过借记卡，向通过抽签选出的约 2,000 个低收入家庭（约占全市家庭的 15%）无条件每月发放 200 至 400 美元（按家庭人数），为期九个月（2020 年 11 月至 2021 年 8 月）",
+        "hi": "लॉटरी से चुने गए लगभग 2,000 कम आय वाले परिवारों, यानी शहर के लगभग 15% परिवारों, को नौ महीने (नवंबर 2020–अगस्त 2021) तक डेबिट कार्ड पर बिना शर्त हर महीने $200–$400 (परिवार के आकार के हिसाब से)",
+        "es": "200–400 $ al mes (según el tamaño del hogar) sin condiciones en una tarjeta de débito durante nueve meses (noviembre 2020–agosto 2021) para unos 2.000 hogares de bajos ingresos, cerca del 15 % de los hogares de la ciudad, elegidos por sorteo",
+        "de": "200 bis 400 $ im Monat (je nach Haushaltsgröße) ohne Bedingungen auf einer Debitkarte für neun Monate (November 2020 bis August 2021) an rund 2.000 per Los ausgewählte einkommensschwache Haushalte, etwa 15 % der Haushalte der Stadt",
+        "ar": "من ⁦$200⁩ إلى ⁦$400⁩ شهريًا (بحسب حجم الأسرة) بلا شروط على بطاقة خصم لمدة تسعة أشهر (نوفمبر 2020–أغسطس 2021) لنحو 2,000 أسرة منخفضة الدخل، أي نحو 15% من أسر المدينة، اختيرت بالقرعة"
+      },
+      "result": {
+        "en": "Harvard researchers (JAMA, 2024), comparing lottery winners with non-winners using hospital records: 27% fewer emergency department visits, including 62% fewer for behavioral health and 87% fewer related to substance use, and 42% fewer hospital admissions from the ED; no short-term change in blood pressure, weight or cholesterol",
+        "ja": "ハーバード大学の研究者（JAMA、2024年）は病院の記録で当選者と非当選者を比べ、救急外来の受診が27%少なく、うち行動健康関連は62%、物質使用関連は87%少なく、救急外来からの入院も42%少なかったと報告。血圧、体重、コレステロールに短期的な変化はなかった",
+        "zh": "哈佛大学研究人员（《美国医学会杂志》（JAMA），2024 年）利用医院记录比较中签者与未中签者：急诊就诊减少 27%，其中行为健康相关减少 62%，物质使用相关减少 87%，经急诊入院减少 42%；血压、体重或胆固醇在短期内没有变化",
+        "hi": "Harvard के शोधकर्ताओं (JAMA, 2024) ने अस्पताल रिकॉर्ड से लॉटरी जीतने वालों की न जीतने वालों से तुलना की: इमरजेंसी विभाग के दौरे 27% कम, जिनमें व्यवहारिक स्वास्थ्य के 62% कम और नशे से जुड़े 87% कम, और इमरजेंसी से अस्पताल में भर्ती 42% कम; ब्लड प्रेशर, वज़न या कोलेस्ट्रॉल में अल्पकाल में कोई बदलाव नहीं",
+        "es": "Investigadores de Harvard (JAMA, 2024), comparando a ganadores y no ganadores del sorteo con registros hospitalarios: un 27 % menos de visitas a urgencias, incluido un 62 % menos por salud conductual y un 87 % menos relacionadas con el consumo de sustancias, y un 42 % menos de ingresos hospitalarios desde urgencias; sin cambios a corto plazo en presión arterial, peso o colesterol",
+        "de": "Forschende der Harvard (JAMA, 2024) verglichen anhand von Klinikdaten Losgewinner mit Nicht-Gewinnern: 27 % weniger Besuche in der Notaufnahme, darunter 62 % weniger wegen psychischer Gesundheit und 87 % weniger im Zusammenhang mit Suchtmitteln, sowie 42 % weniger stationäre Aufnahmen über die Notaufnahme; keine kurzfristige Veränderung bei Blutdruck, Gewicht oder Cholesterin",
+        "ar": "باحثون من هارفارد (⁦JAMA⁩، 2024)، قارنوا الفائزين في القرعة بغير الفائزين باستخدام سجلات المستشفيات: زيارات أقل لأقسام الطوارئ بنسبة 27%، منها 62% أقل للصحة السلوكية و87% أقل للحالات المرتبطة بتعاطي المواد، وحالات إدخال إلى المستشفى من الطوارئ أقل بنسبة 42%؛ دون تغيّر قصير المدى في ضغط الدم أو الوزن أو الكوليسترول"
+      },
+      "source": "https://www.hks.harvard.edu/faculty-research/policy-topics/cities-communities/cash-benefits-changed-way-people-low-income",
+      "source2": "https://www.boston.com/news/local-news/2021/05/10/chelsea-guaranteed-income-program-spending/",
+      "us": {
+        "city": "Chelsea",
+        "state": "MA",
+        "start": "2020-11",
+        "end": "2021-08",
+        "monthly": 400,
+        "months": 9,
+        "recipients": 2074,
+        "unit": "households",
+        "funders": ["public", "philanthropic"],
+        "control": true,
+        "elig": "Low-income Chelsea households, many hit by COVID-19 job losses and recruited largely from food pantry users; cards allocated by lottery",
+        "eval": {
+          "by": "Sumit Agarwal, Benjamin Lê Cook and Jeffrey Liebman (Harvard)",
+          "year": 2024,
+          "type": "peer-reviewed",
+          "url": "https://jamanetwork.com/journals/jama/fullarticle/10.1001/jama.2024.13004"
+        }
+      }
     },
     {
       "id": "openresearch",
@@ -9821,8 +10480,8 @@ module.exports = {
       "type": "ngo",
       "name": "OpenResearch Unconditional Cash Study",
       "place": {
-        "ja": "アメリカ・イリノイ州とテキサス州",
         "en": "Illinois and Texas, USA",
+        "ja": "アメリカ・イリノイ州とテキサス州",
         "zh": "美国伊利诺伊州和得克萨斯州",
         "hi": "इलिनॉय और टेक्सस, अमेरिका",
         "es": "Illinois y Texas (EE. UU.)",
@@ -9830,34 +10489,54 @@ module.exports = {
         "ar": "إلينوي وتكساس، الولايات المتحدة"
       },
       "who": {
-        "ja": "OpenResearch（旧 Y Combinator Research）",
-        "en": "OpenResearch (formerly Y Combinator Research)",
-        "zh": "OpenResearch（原 Y Combinator Research）",
-        "hi": "OpenResearch (पहले Y Combinator Research)",
-        "es": "OpenResearch (antes Y Combinator Research)",
-        "de": "OpenResearch (früher Y Combinator Research)",
-        "ar": "⁦OpenResearch⁩ (سابقًا ⁦Y Combinator Research⁩)"
+        "en": "OpenResearch, a nonprofit research lab, with economists including Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause and Sarah Miller",
+        "ja": "非営利の研究機関OpenResearch。エバ・ビバルト、エリザベス・ローズ、アレクサンダー・バーティク、デビッド・ブルックマン、パトリック・クラウス、サラ・ミラーらの経済学者が参加",
+        "zh": "非营利研究机构 OpenResearch，经济学家包括伊娃·维瓦尔特、伊丽莎白·罗兹、亚历山大·巴蒂克、戴维·布鲁克曼、帕特里克·克劳斯和萨拉·米勒",
+        "hi": "OpenResearch, एक ग़ैर-लाभकारी शोध लैब, इवा विवाल्ट, एलिज़ाबेथ रोड्स, अलेक्ज़ेंडर बार्टिक, डेविड ब्रूकमैन, पैट्रिक क्राउस और सारा मिलर सहित अर्थशास्त्रियों के साथ",
+        "es": "OpenResearch, un laboratorio de investigación sin ánimo de lucro, con economistas como Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause y Sarah Miller",
+        "de": "OpenResearch, ein gemeinnütziges Forschungslabor, mit Ökonominnen und Ökonomen wie Eva Vivalt, Elizabeth Rhodes, Alexander Bartik, David Broockman, Patrick Krause und Sarah Miller",
+        "ar": "⁦OpenResearch⁩، مختبر أبحاث غير ربحي، مع اقتصاديين منهم إيفا فيفالت وإليزابيث رودس وألكسندر بارتيك وديفيد بروكمان وباتريك كراوس وسارة ميلر"
       },
       "paid": {
-        "ja": "21〜40歳の1,000人に月1,000ドルを3年間（対照群2,000人は月50ドル）",
-        "en": "$1,000 a month for three years to 1,000 people aged 21–40 (2,000 controls got $50 a month)",
-        "zh": "向 1,000 名 21–40 岁的人每月发放 1,000 美元，为期三年（2,000 名对照者每月 50 美元）",
-        "hi": "21–40 साल के 1,000 लोगों को तीन साल तक हर महीने $1,000 (2,000 नियंत्रण वालों को $50 महीना)",
-        "es": "1.000 $ al mes durante tres años para 1.000 personas de 21 a 40 años (2.000 de control recibieron 50 $ al mes)",
-        "de": "1.000 $ im Monat für drei Jahre an 1.000 Menschen zwischen 21 und 40 (2.000 Kontrollpersonen bekamen 50 $ im Monat)",
-        "ar": "⁦$1,000⁩ شهريًا لمدة ثلاث سنوات لـ1,000 شخص بين 21 و40 عامًا (حصلت المجموعة الضابطة البالغة 2,000 على ⁦$50⁩ شهريًا)"
+        "en": "$1,000 a month with no conditions for three years (November 2020–October 2023) to 1,000 low-income people aged 21–40 in 19 counties of Illinois and Texas; 2,000 others were randomly assigned to a control group that got $50 a month",
+        "ja": "イリノイ州とテキサス州の19郡に住む21〜40歳の低所得の1,000人に、条件なしで月1,000ドルを3年間（2020年11月〜2023年10月）。別の2,000人を無作為に対照群とし、月50ドルを支給",
+        "zh": "向伊利诺伊州和得克萨斯州 19 个县的 1,000 名 21 至 40 岁低收入者无条件每月发放 1,000 美元，为期三年（2020 年 11 月至 2023 年 10 月）；另有 2,000 人被随机分入对照组，每月领取 50 美元",
+        "hi": "इलिनॉय और टेक्सस की 19 काउंटियों के 21–40 साल के 1,000 कम आय वाले लोगों को तीन साल (नवंबर 2020–अक्टूबर 2023) तक बिना शर्त हर महीने $1,000; 2,000 अन्य को रैंडम रूप से नियंत्रण समूह में रखा गया, जिसे हर महीने $50 मिले",
+        "es": "1.000 $ al mes sin condiciones durante tres años (noviembre 2020–octubre 2023) para 1.000 personas de bajos ingresos de 21 a 40 años en 19 condados de Illinois y Texas; otras 2.000 fueron asignadas al azar a un grupo de control que recibía 50 $ al mes",
+        "de": "1.000 $ im Monat ohne Bedingungen für drei Jahre (November 2020 bis Oktober 2023) an 1.000 einkommensschwache Menschen von 21 bis 40 Jahren in 19 Countys in Illinois und Texas; 2.000 weitere kamen per Zufall in eine Kontrollgruppe, die 50 $ im Monat erhielt",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة ثلاث سنوات (نوفمبر 2020–أكتوبر 2023) لـ1,000 شخص منخفضي الدخل تتراوح أعمارهم بين 21 و40 عامًا في 19 مقاطعة في إلينوي وتكساس؛ ووُزّع 2,000 آخرون عشوائيًا على مجموعة ضابطة تلقت ⁦$50⁩ شهريًا"
       },
       "result": {
-        "ja": "2024年の最初の結果では、支出が増え、労働時間はわずかに減った",
-        "en": "First results (2024) found higher spending and slightly fewer hours worked",
-        "zh": "2024 年的首批结果显示，支出增加，工作时间略有减少",
-        "hi": "2024 के पहले नतीजों में ख़र्च बढ़ा और काम के घंटे थोड़े घटे",
-        "es": "Los primeros resultados (2024) hallaron más gasto y algo menos de horas trabajadas",
-        "de": "Erste Ergebnisse (2024) zeigten höhere Ausgaben und etwas weniger Arbeitsstunden",
-        "ar": "وجدت النتائج الأولى (2024) زيادة في الإنفاق وانخفاضًا طفيفًا في ساعات العمل"
+        "en": "The researchers (NBER working paper, July 2024; published in the Quarterly Journal of Economics, 2026) reported, vs the control group: income excluding the transfers fell by about $1,900 a year, recipients worked 1–2 fewer hours a week, mostly taking more leisure, and spending rose broadly; there was no measurable gain in job quality, and higher well-being in year one faded afterward",
+        "ja": "研究者ら（NBERワーキングペーパー、2024年7月。Quarterly Journal of Economics、2026年掲載）は対照群と比べ、給付を除く収入が年約1,900ドル減り、受給者は働く時間が週1〜2時間減って主に余暇が増え、支出は幅広く増えたと報告。仕事の質に測定できる改善はなく、1年目の幸福度の向上はその後薄れた",
+        "zh": "研究人员（NBER 工作论文，2024 年 7 月；2026 年发表于《经济学季刊》）称，与对照组相比：不含转移支付的收入每年减少约 1,900 美元，受助者每周少工作 1 至 2 小时，主要用于更多休闲，支出普遍增加；工作质量没有可衡量的改善，第一年较高的幸福感此后逐渐消退",
+        "hi": "शोधकर्ताओं (NBER वर्किंग पेपर, जुलाई 2024; Quarterly Journal of Economics में प्रकाशित, 2026) ने नियंत्रण समूह की तुलना में बताया: भुगतान को छोड़कर आय साल में लगभग $1,900 घटी, प्राप्तकर्ताओं ने हफ़्ते में 1–2 घंटे कम काम किया और ज़्यादातर ख़ाली समय बढ़ाया, और ख़र्च व्यापक रूप से बढ़ा; नौकरी की गुणवत्ता में कोई मापने लायक सुधार नहीं, और पहले साल की बेहतर भलाई बाद में फीकी पड़ गई",
+        "es": "Los investigadores (documento de trabajo del NBER, julio de 2024; publicado en el Quarterly Journal of Economics, 2026) informaron, frente al grupo de control: los ingresos sin contar las transferencias bajaron unos 1.900 $ al año, los beneficiarios trabajaron 1–2 horas semanales menos, dedicándolas sobre todo al ocio, y el gasto aumentó en general; no hubo mejora medible en la calidad del empleo, y el mayor bienestar del primer año se desvaneció después",
+        "de": "Die Forschenden (NBER-Arbeitspapier, Juli 2024; veröffentlicht im Quarterly Journal of Economics, 2026) berichteten im Vergleich zur Kontrollgruppe: Das Einkommen ohne die Zahlungen sank um etwa 1.900 $ im Jahr, die Empfänger arbeiteten 1 bis 2 Stunden pro Woche weniger, meist zugunsten von mehr Freizeit, und die Ausgaben stiegen breit gestreut; es gab keinen messbaren Gewinn bei der Qualität der Arbeitsplätze, und ein höheres Wohlbefinden im ersten Jahr ließ danach nach",
+        "ar": "أفاد الباحثون (ورقة عمل من ⁦NBER⁩، يوليو 2024؛ ونُشرت في ⁦Quarterly Journal of Economics⁩، 2026)، مقارنةً بالمجموعة الضابطة: انخفض الدخل دون احتساب التحويلات بنحو ⁦$1,900⁩ سنويًا، وعمل المستفيدون ساعة إلى ساعتين أقل أسبوعيًا، وخصّصوا معظمها لوقت الفراغ، وارتفع الإنفاق على نطاق واسع؛ ولم يظهر مكسب ملموس في جودة الوظائف، وتلاشى الرفاه الأعلى في العام الأول بعد ذلك"
       },
-      "source": "https://www.openresearchlab.org/",
-      "org": "openresearch"
+      "source": "https://www.openresearchlab.org/projects/unconditional-cash-study",
+      "source2": "https://www.nber.org/papers/w32719",
+      "org": "openresearch",
+      "us": {
+        "city": "Illinois and Texas",
+        "state": "multi",
+        "start": "2020-11",
+        "end": "2023-10",
+        "monthly": 1000,
+        "months": 36,
+        "recipients": 1000,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Adults aged 21–40 with household income at or below 300% of the federal poverty level, in 19 urban, suburban and rural counties of Illinois and Texas; randomized in October 2020 after enrollment from August 2019 to October 2020",
+        "eval": {
+          "by": "Vivalt, Rhodes, Bartik, Broockman, Krause and Miller (OpenResearch)",
+          "year": 2026,
+          "type": "peer-reviewed",
+          "url": "https://www.nber.org/papers/w32719"
+        }
+      }
     },
     {
       "id": "pilotprojekt",
@@ -9906,186 +10585,1102 @@ module.exports = {
       "org": "mgk"
     },
     {
-      "id": "la-bigleap",
-      "years": "2022–2023",
+      "id": "us-newark-nmee",
+      "years": "2021–2023",
       "type": "gov",
-      "name": "BIG:LEAP",
+      "name": "Newark Movement for Economic Equity",
       "place": {
-        "ja": "アメリカ・カリフォルニア州ロサンゼルス市",
-        "en": "City of Los Angeles, California, USA",
-        "zh": "美国加利福尼亚州洛杉矶市",
-        "hi": "लॉस एंजेलिस शहर, कैलिफ़ोर्निया, अमेरिका",
-        "es": "Ciudad de Los Ángeles, California (EE. UU.)",
-        "de": "Stadt Los Angeles, Kalifornien (USA)",
-        "ar": "مدينة لوس أنجلوس، كاليفورنيا، الولايات المتحدة"
+        "en": "Newark, New Jersey, USA",
+        "ja": "アメリカ・ニュージャージー州ニューアーク",
+        "zh": "美国新泽西州纽瓦克",
+        "hi": "नेवार्क, न्यू जर्सी, अमेरिका",
+        "es": "Newark, Nueva Jersey (EE. UU.)",
+        "de": "Newark, New Jersey (USA)",
+        "ar": "نيوارك، نيوجيرسي، الولايات المتحدة"
       },
       "who": {
-        "ja": "ロサンゼルス市（家族支援局 CIFD）。財源は市の一般会計（警察予算から回した分を含む）と市議会の各選挙区の資金",
-        "en": "City of Los Angeles (Community Investment for Families Department), paid from the city’s general fund (partly money moved from the police budget) and council district funds",
-        "zh": "洛杉矶市（家庭社区投资局 CIFD），资金来自市一般基金（部分从警察预算调拨）和各市议会选区的资金",
-        "hi": "लॉस एंजेलिस शहर (Community Investment for Families Department); पैसा शहर के सामान्य कोष (कुछ हिस्सा पुलिस बजट से हटाया गया) और काउंसिल डिस्ट्रिक्ट के फ़ंड से",
-        "es": "Ciudad de Los Ángeles (Departamento de Inversión Comunitaria para Familias, CIFD), con dinero del fondo general municipal (en parte retirado del presupuesto policial) y de los distritos del concejo",
-        "de": "Stadt Los Angeles (Community Investment for Families Department), bezahlt aus dem städtischen Haushalt (teils aus dem Polizeibudget umgeschichtet) und Mitteln der Ratsbezirke",
-        "ar": "مدينة لوس أنجلوس (إدارة الاستثمار المجتمعي للأسر ⁦CIFD⁩)، بتمويل من الصندوق العام للمدينة (جزء منه نُقل من ميزانية الشرطة) وأموال دوائر مجلس المدينة"
+        "en": "City of Newark under Mayor Ras Baraka, with Mayors for a Guaranteed Income, paid from $6.2 million of private and public money including federal pandemic relief (ARPA)",
+        "ja": "ラス・バラカ市長のもとのニューアーク市とMayors for a Guaranteed Income。財源は連邦のコロナ対策資金（ARPA）を含む官民の620万ドル",
+        "zh": "纽瓦克市（市长拉斯·巴拉卡），与“保障收入市长联盟”合作，资金为 620 万美元公私资金，包括联邦疫情纾困款（ARPA）",
+        "hi": "मेयर रास बराका के अधीन नेवार्क शहर, Mayors for a Guaranteed Income के साथ; पैसा संघीय महामारी राहत (ARPA) सहित $62 लाख के निजी और सरकारी कोष से",
+        "es": "Ciudad de Newark bajo el alcalde Ras Baraka, con Mayors for a Guaranteed Income, financiado con 6,2 millones de dólares de dinero privado y público, incluidos fondos federales de alivio por la pandemia (ARPA)",
+        "de": "Stadt Newark unter Bürgermeister Ras Baraka, mit Mayors for a Guaranteed Income, bezahlt aus 6,2 Mio. $ privater und öffentlicher Mittel, darunter Corona-Hilfen des Bundes (ARPA)",
+        "ar": "مدينة نيوارك في عهد العمدة راس بركة، مع ⁦Mayors for a Guaranteed Income⁩، بتمويل 6.2 مليون دولار من أموال خاصة وعامة منها أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)"
       },
       "paid": {
-        "ja": "貧困線を下回り、子どもがいるか妊娠中でコロナの影響を受けた3,202世帯に、条件なしで月1,000ドルを12か月（支給は2022年1月〜2023年3月）。5万人超の応募から無作為に割り当て、4,992人を比較対照群とした",
-        "en": "$1,000 a month with no conditions for 12 months (payments January 2022–March 2023) to 3,202 households below the poverty line with a child or a pregnancy and hit by COVID-19; over 50,000 applied, and 4,992 others were randomly assigned to a control group",
-        "zh": "向 3,202 个低于贫困线、有孩子或正在怀孕且受新冠影响的家庭无条件每月发放 1,000 美元，为期 12 个月（2022 年 1 月至 2023 年 3 月发放）；申请者超过 5 万人，另有 4,992 人被随机分入对照组",
-        "hi": "ग़रीबी रेखा से नीचे, बच्चे वाले या गर्भवती और कोविड से प्रभावित 3,202 परिवारों को 12 महीने (भुगतान जनवरी 2022–मार्च 2023) तक बिना शर्त हर महीने $1,000; 50,000 से ज़्यादा ने आवेदन किया, और 4,992 अन्य को बिना पैसे वाले तुलना समूह में रैंडम रूप से रखा गया",
-        "es": "1.000 $ al mes sin condiciones durante 12 meses (pagos de enero de 2022 a marzo de 2023) para 3.202 hogares bajo el umbral de pobreza, con hijos o embarazo y afectados por la COVID-19; hubo más de 50.000 solicitudes y otros 4.992 fueron asignados al azar a un grupo de control",
-        "de": "1.000 $ im Monat ohne Bedingungen für 12 Monate (Zahlungen Januar 2022 bis März 2023) an 3.202 Haushalte unter der Armutsgrenze, mit Kind oder Schwangerschaft und von Corona betroffen; über 50.000 bewarben sich, weitere 4.992 kamen per Zufall in eine Kontrollgruppe",
-        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 12 شهرًا (الدفعات من يناير 2022 إلى مارس 2023) لـ3,202 أسرة تحت خط الفقر لديها طفل أو حمل وتضررت من كوفيد-19؛ تقدّم أكثر من 50,000 شخص، ووُزّع 4,992 آخرون عشوائيًا على مجموعة ضابطة"
+        "en": "$6,000 a year with no conditions for two years to 400 low-income residents hit by COVID-19, half as $250 every two weeks and half as $3,000 every six months; payments began with 30 people in summer 2021",
+        "ja": "コロナの影響を受けた低所得住民400人に、条件なしで年6,000ドルを2年間。半数は2週間ごとに250ドル、半数は6か月ごとに3,000ドル。支給は2021年夏に30人から始まった",
+        "zh": "向 400 名受新冠影响的低收入居民无条件每年发放 6,000 美元，为期两年，一半人每两周领取 250 美元，一半人每六个月领取 3,000 美元；2021 年夏从 30 人开始发放",
+        "hi": "कोविड से प्रभावित 400 कम आय वाले निवासियों को दो साल तक बिना शर्त साल में $6,000; आधे को हर दो हफ़्ते $250 और आधे को हर छह महीने $3,000; भुगतान 2021 की गर्मियों में 30 लोगों से शुरू हुए",
+        "es": "6.000 $ al año sin condiciones durante dos años para 400 residentes de bajos ingresos afectados por la COVID-19, la mitad en 250 $ cada dos semanas y la otra mitad en 3.000 $ cada seis meses; los pagos empezaron con 30 personas en el verano de 2021",
+        "de": "6.000 $ im Jahr ohne Bedingungen für zwei Jahre an 400 einkommensschwache, von Corona betroffene Einwohner, die Hälfte als 250 $ alle zwei Wochen, die andere Hälfte als 3.000 $ alle sechs Monate; die Zahlungen begannen im Sommer 2021 mit 30 Personen",
+        "ar": "⁦$6,000⁩ سنويًا بلا شروط لمدة عامين لـ400 من السكان منخفضي الدخل الذين تضرروا من كوفيد-19، نصفهم يتلقى ⁦$250⁩ كل أسبوعين ونصفهم ⁦$3,000⁩ كل ستة أشهر؛ وبدأت الدفعات مع 30 شخصًا في صيف 2021"
       },
       "result": {
-        "ja": "ペンシルベニア大学CGIRの報告（2024年7月）では、対照群より400ドルの急な出費を払える人が多く（6か月時点16%対6%）、食料不安も減った。500ドル超の貯蓄は当初2倍（5.3%対2.4%）だが18か月で差が縮小（4.6%対3.2%）。パートナー間暴力の減少が有意なのは18か月時点のみで、その時点のストレスはやや高かった",
-        "en": "Penn’s Center for Guaranteed Income Research (July 2024), vs the control group: more could cover a $400 emergency (16% vs 6% at 6 months) and food insecurity fell. Savings over $500 doubled at first (5.3% vs 2.4%) but the gap narrowed by 18 months (4.6% vs 3.2%). Partner violence fell, significantly only at 18 months, when stress was slightly higher",
-        "zh": "宾夕法尼亚大学保障收入研究中心（2024 年 7 月）与对照组比较：能应付 400 美元急用的人更多（6 个月时 16% 对 6%），粮食不安全减少。储蓄超过 500 美元的比例起初翻倍（5.3% 对 2.4%），到 18 个月差距缩小（4.6% 对 3.2%）。伴侣暴力减少，但仅在 18 个月时显著，而此时压力略高于对照组",
-        "hi": "पेन के Center for Guaranteed Income Research (जुलाई 2024) ने तुलना समूह से मिलाया: $400 के अचानक ख़र्च को झेल पाने वाले ज़्यादा थे (6 महीने पर 16% बनाम 6%) और खाने की असुरक्षा घटी। $500 से ज़्यादा बचत पहले दोगुनी रही (5.3% बनाम 2.4%), पर 18 महीने तक फ़ासला घटा (4.6% बनाम 3.2%)। साथी की हिंसा घटी, पर सांख्यिकीय रूप से सिर्फ़ 18 महीने पर, जब तनाव थोड़ा ज़्यादा था",
-        "es": "El Center for Guaranteed Income Research de Penn (julio de 2024), frente al grupo de control: más hogares podían cubrir un imprevisto de 400 $ (16 % frente a 6 % a los 6 meses) y bajó la inseguridad alimentaria. El ahorro de más de 500 $ se duplicó al principio (5,3 % frente a 2,4 %), pero la brecha se redujo a los 18 meses (4,6 % frente a 3,2 %). La violencia de pareja bajó, de forma significativa solo a los 18 meses, cuando el estrés era algo mayor",
-        "de": "Das Center for Guaranteed Income Research der Penn (Juli 2024) im Vergleich zur Kontrollgruppe: Mehr Haushalte konnten eine Notausgabe von 400 $ decken (16 % zu 6 % nach 6 Monaten), Ernährungsunsicherheit sank. Ersparnisse über 500 $ verdoppelten sich anfangs (5,3 % zu 2,4 %), der Abstand schrumpfte bis Monat 18 (4,6 % zu 3,2 %). Partnergewalt sank, signifikant nur nach 18 Monaten, als der Stress etwas höher lag",
-        "ar": "قارن ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (يوليو 2024) بالمجموعة الضابطة: قدر عدد أكبر على تغطية طارئ بقيمة ⁦$400⁩ (16% مقابل 6% بعد 6 أشهر) وتراجع انعدام الأمن الغذائي. تضاعفت المدخرات فوق ⁦$500⁩ في البداية (5.3% مقابل 2.4%) ثم ضاق الفارق بعد 18 شهرًا (4.6% مقابل 3.2%). وانخفض عنف الشريك، لكن بدلالة إحصائية عند 18 شهرًا فقط، حين كان التوتر أعلى قليلًا"
+        "en": "Penn's Center for Guaranteed Income Research (June 2025), compared with 478 controls, reported that the every-two-weeks payments reduced income swings and improved food security and rent payment, while lump-sum recipients more often reported savings over $500; the summary gives no effect sizes",
+        "ja": "ペンシルベニア大学CGIR（2025年6月）は対照群478人と比べ、2週間ごとの支給は収入の変動を減らし、食料の確保と家賃の支払いを改善した一方、一括受給者は500ドル超の貯蓄を報告することが多かったとした。要約には効果の大きさが示されていない",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2025 年 6 月）与 478 名对照组成员比较，称每两周发放降低了收入波动，改善了粮食保障和房租支付，而一次性领取者更常报告储蓄超过 500 美元；摘要未给出效应量",
+        "hi": "पेन के Center for Guaranteed Income Research (जून 2025) ने 478 नियंत्रण वालों से तुलना कर बताया कि हर दो हफ़्ते के भुगतान से आय का उतार-चढ़ाव घटा और खाद्य सुरक्षा व किराया भुगतान सुधरा, जबकि एकमुश्त राशि पाने वालों ने ज़्यादा बार $500 से ज़्यादा बचत बताई; सारांश में असर का आकार नहीं दिया गया",
+        "es": "El Center for Guaranteed Income Research de Penn (junio de 2025), frente a 478 controles, informó de que los pagos quincenales redujeron las oscilaciones de ingresos y mejoraron la seguridad alimentaria y el pago del alquiler, mientras que quienes recibían sumas únicas declararon con más frecuencia ahorros de más de 500 $; el resumen no da tamaños del efecto",
+        "de": "Das Center for Guaranteed Income Research der Penn (Juni 2025) berichtete im Vergleich mit 478 Personen der Kontrollgruppe, dass die Zahlungen alle zwei Wochen Einkommensschwankungen verringerten und Ernährungssicherheit und Mietzahlung verbesserten, während Empfänger der Einmalbeträge häufiger Ersparnisse über 500 $ angaben; die Zusammenfassung nennt keine Effektgrößen",
+        "ar": "أفاد ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (يونيو 2025)، مقارنةً بـ478 في المجموعة الضابطة، بأن الدفعات كل أسبوعين قلّلت تقلبات الدخل وحسّنت الأمن الغذائي ودفع الإيجار، بينما أفاد متلقو المبالغ المجمّعة أكثر بمدخرات تفوق ⁦$500⁩؛ ولا يذكر الملخص أحجام الأثر"
       },
-      "source": "https://sp2.upenn.edu/report-landmark-guaranteed-income-program-in-city-of-los-angeles-produces-overwhelmingly-positive-results/"
+      "source": "https://sp2.upenn.edu/report-newark-guaranteed-income-pilot-shows-positive-financial-health-family-and-housing-impacts/",
+      "source2": "https://www.roi-nj.com/2021/12/13/finance/newark-adding-400-more-residents-to-guaranteed-income-pilot-program/",
+      "us": {
+        "city": "Newark",
+        "state": "NJ",
+        "start": "2021",
+        "end": "2023",
+        "endEstimated": true,
+        "monthly": 500,
+        "months": 24,
+        "recipients": 400,
+        "unit": "people",
+        "funders": ["arpa", "philanthropic"],
+        "control": true,
+        "elig": "Newark residents 18+ with income at or below 200% of the federal poverty line and hurt by COVID-19, chosen at random; 478 others formed a control group",
+        "eval": {
+          "by": "Penn Center for Guaranteed Income Research",
+          "year": 2025,
+          "type": "report",
+          "url": "https://sp2.upenn.edu/report-newark-guaranteed-income-pilot-shows-positive-financial-health-family-and-housing-impacts/"
+        }
+      }
     },
     {
-      "id": "la-tayportunity",
-      "years": "2022–2025",
-      "type": "gov",
-      "name": "TAYportunity Guaranteed Income",
-      "place": {
-        "ja": "アメリカ・カリフォルニア州ロサンゼルス郡",
-        "en": "Los Angeles County, California, USA",
-        "zh": "美国加利福尼亚州洛杉矶县",
-        "hi": "लॉस एंजेलिस काउंटी, कैलिफ़ोर्निया, अमेरिका",
-        "es": "Condado de Los Ángeles, California (EE. UU.)",
-        "de": "Los Angeles County, Kalifornien (USA)",
-        "ar": "مقاطعة لوس أنجلوس، كاليفورنيا، الولايات المتحدة"
-      },
-      "who": {
-        "ja": "ロサンゼルス郡の公共社会サービス局（DPSS）。市ではなく郡の事業",
-        "en": "Los Angeles County Department of Public Social Services (DPSS), a county program, not the city’s",
-        "zh": "洛杉矶县公共社会服务局（DPSS），属于县而非市的项目",
-        "hi": "लॉस एंजेलिस काउंटी का Department of Public Social Services (DPSS); यह शहर का नहीं, काउंटी का कार्यक्रम है",
-        "es": "Departamento de Servicios Sociales Públicos (DPSS) del condado de Los Ángeles; es un programa del condado, no de la ciudad",
-        "de": "Sozialbehörde (DPSS) des Los Angeles County, ein Programm des Countys, nicht der Stadt",
-        "ar": "إدارة الخدمات الاجتماعية العامة (⁦DPSS⁩) في مقاطعة لوس أنجلوس، وهو برنامج للمقاطعة لا للمدينة"
-      },
-      "paid": {
-        "ja": "郡の生活扶助（General Relief）を受ける18〜24歳から抽選で選んだ300人に、条件なしで月1,000ドルを36か月（2022年8月から）。有給の職業訓練、見習い、起業支援にも任意で参加できる。650人を比較対照群とした",
-        "en": "$1,000 a month with no conditions for 36 months from August 2022 to 300 young adults aged 18–24 on the county’s General Relief aid, picked by lottery, with optional paid job training, apprenticeships or business support; 650 others formed the control group",
-        "zh": "从领取县级一般救济（General Relief）的 18 至 24 岁青年中抽签选出 300 人，自 2022 年 8 月起无条件每月发放 1,000 美元，为期 36 个月，并可自愿参加带薪职业培训、学徒或创业支持；另有 650 人为对照组",
-        "hi": "काउंटी की General Relief सहायता पाने वाले 18–24 साल के 300 युवाओं को, लॉटरी से चुनकर, अगस्त 2022 से 36 महीने तक बिना शर्त हर महीने $1,000; साथ में वैकल्पिक सवेतन जॉब ट्रेनिंग, अप्रेंटिसशिप या कारोबार सहायता; 650 अन्य तुलना समूह में रहे",
-        "es": "1.000 $ al mes sin condiciones durante 36 meses desde agosto de 2022 para 300 jóvenes de 18 a 24 años con la ayuda General Relief del condado, elegidos por sorteo, con formación laboral remunerada, aprendizajes o apoyo para emprender opcionales; otros 650 formaron el grupo de control",
-        "de": "1.000 $ im Monat ohne Bedingungen für 36 Monate ab August 2022 an 300 per Los gezogene 18- bis 24-Jährige mit der County-Sozialhilfe General Relief, dazu freiwillig bezahlte Jobtrainings, Ausbildungsplätze oder Gründungshilfe; 650 weitere bildeten die Kontrollgruppe",
-        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 36 شهرًا ابتداءً من أغسطس 2022 لـ300 شاب بين 18 و24 عامًا يتلقون إعانة ⁦General Relief⁩ في المقاطعة، اختيروا بالقرعة، مع تدريب مهني مدفوع أو تلمذة مهنية أو دعم لبدء مشروع بشكل اختياري؛ وشكّل 650 آخرون المجموعة الضابطة"
-      },
-      "result": {
-        "ja": "バージニア大学の経済学者の論文（2025年11月、査読前）は、対照群566人と比べ就業率が7ポイント（対照群39%）、月収が約94ドル（30%）上がり、重罪での逮捕は4割、出産は半分に減ったと報告。就業の伸びの多くは職業訓練に参加した人によるもので、現金だけでは主に支出と住まいの安定が改善した",
-        "en": "A University of Virginia economist’s working paper (November 2025, not yet peer-reviewed), vs 566 controls: employment up 7 points (control 39%), earnings up about $94 a month (30%), felony arrests down 40% and births down by half. Most of the job gains came via the training; cash alone mainly raised spending and housing security",
-        "zh": "弗吉尼亚大学一位经济学者的工作论文（2025 年 11 月，尚未经同行评审）与 566 名对照组成员比较：就业率提高 7 个百分点（对照组 39%），月收入增加约 94 美元（30%），重罪逮捕减少 40%，生育减少一半。就业增长大多来自参加培训的人；仅靠现金主要改善了支出和住房稳定",
-        "hi": "यूनिवर्सिटी ऑफ़ वर्जीनिया के एक अर्थशास्त्री के वर्किंग पेपर (नवंबर 2025, अभी पीयर-रिव्यू नहीं) ने 566 तुलना वालों से मिलाया: रोज़गार 7 अंक बढ़ा (तुलना समूह 39%), मासिक कमाई लगभग $94 (30%) बढ़ी, गंभीर अपराध में गिरफ़्तारी 40% और जन्म आधे घटे। रोज़गार की ज़्यादातर बढ़त ट्रेनिंग से आई; सिर्फ़ नकद से मुख्य रूप से ख़र्च और आवास की स्थिरता सुधरी",
-        "es": "Un documento de trabajo de una economista de la Universidad de Virginia (noviembre de 2025, aún sin revisión por pares), frente a 566 controles: empleo +7 puntos (control 39 %), ingresos unos 94 $ más al mes (30 %), detenciones por delitos graves −40 % y nacimientos a la mitad. La mayor parte del aumento del empleo vino de la formación; el dinero solo mejoró sobre todo el gasto y la estabilidad de vivienda",
-        "de": "Ein Arbeitspapier einer Ökonomin der University of Virginia (November 2025, noch nicht begutachtet) im Vergleich zu 566 Kontrollpersonen: Beschäftigung +7 Punkte (Kontrolle 39 %), Einkommen rund 94 $ mehr im Monat (30 %), Festnahmen wegen Verbrechen −40 %, Geburten halbiert. Der Großteil des Jobzuwachses kam über das Training; Geld allein hob vor allem Ausgaben und Wohnsicherheit",
-        "ar": "ورقة عمل لاقتصادية في جامعة فيرجينيا (نوفمبر 2025، لم تُحكَّم بعد) قارنت بـ566 من المجموعة الضابطة: ارتفع التوظيف 7 نقاط (39% في المجموعة الضابطة)، وزاد الدخل نحو ⁦$94⁩ شهريًا (30%)، وتراجعت الاعتقالات بجنايات 40% والولادات إلى النصف. جاء معظم مكسب التوظيف عبر التدريب؛ أما النقد وحده فحسّن أساسًا الإنفاق واستقرار السكن"
-      },
-      "source": "https://www.marcellacartledge.com/research"
-    },
-    {
-      "id": "cook-county",
-      "years": "2022–",
-      "type": "gov",
-      "name": "Cook County Promise Guaranteed Income",
-      "place": {
-        "ja": "アメリカ・イリノイ州クック郡",
-        "en": "Cook County, Illinois, USA",
-        "zh": "美国伊利诺伊州库克县",
-        "hi": "कुक काउंटी, इलिनॉय, अमेरिका",
-        "es": "Condado de Cook, Illinois (EE. UU.)",
-        "de": "Cook County, Illinois (USA)",
-        "ar": "مقاطعة كوك، إلينوي، الولايات المتحدة"
-      },
-      "who": {
-        "ja": "クック郡（シカゴを含む）",
-        "en": "Cook County government (which includes Chicago)",
-        "zh": "库克县政府（含芝加哥）",
-        "hi": "कुक काउंटी सरकार (शिकागो सहित)",
-        "es": "Gobierno del condado de Cook (incluye Chicago)",
-        "de": "Verwaltung von Cook County (mit Chicago)",
-        "ar": "حكومة مقاطعة كوك (التي تضم شيكاغو)"
-      },
-      "paid": {
-        "ja": "抽選で選ばれた低・中所得の3,250世帯に、条件なしで月500ドルを2年間（2022年12月〜2025年1月）。財源は連邦のコロナ対策資金（ARPA）4,200万ドル",
-        "en": "$500 a month with no conditions for two years (Dec 2022–Jan 2025) to 3,250 low-to-moderate-income households chosen by lottery, funded with $42 million of federal pandemic relief (ARPA)",
-        "zh": "通过抽签选出 3,250 个中低收入家庭，无条件每月发放 500 美元，为期两年（2022 年 12 月至 2025 年 1 月），资金为 4,200 万美元联邦疫情纾困款（ARPA）",
-        "hi": "लॉटरी से चुने गए 3,250 कम-से-मध्यम आय वाले परिवारों को दो साल (दिसंबर 2022–जनवरी 2025) तक बिना शर्त हर महीने $500; पैसा $4.2 करोड़ की संघीय महामारी राहत (ARPA) से",
-        "es": "500 $ al mes sin condiciones durante dos años (dic. 2022–ene. 2025) para 3.250 hogares de ingresos bajos y medios elegidos por sorteo, con 42 millones de dólares de fondos federales de alivio por la pandemia (ARPA)",
-        "de": "500 $ im Monat ohne Bedingungen für zwei Jahre (Dez. 2022 bis Jan. 2025) an 3.250 per Los ausgewählte Haushalte mit niedrigem bis mittlerem Einkommen, finanziert mit 42 Mio. $ Corona-Hilfe des Bundes (ARPA)",
-        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عامين (ديسمبر 2022–يناير 2025) لـ3,250 أسرة منخفضة ومتوسطة الدخل اختيرت بالقرعة، بتمويل 42 مليون دولار من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)"
-      },
-      "result": {
-        "ja": "2025年11月、郡議会が2026年度予算に保証所得の750万ドルを計上。支援団体は米国初の恒久的な郡の保証所得と呼ぶ。次の段階の対象や金額は設計中で、2026年後半にまとまる予定",
-        "en": "In November 2025 the county board approved $7.5 million for guaranteed income in the 2026 budget, which advocates call the first permanent county program in the US; eligibility and amounts for the next phase are still being designed (due late 2026)",
-        "zh": "2025 年 11 月，县委员会在 2026 年度预算中批准 750 万美元用于保障收入，倡导团体称之为美国首个永久性县级项目；下一阶段的资格和金额仍在设计中（预计 2026 年底完成）",
-        "hi": "नवंबर 2025 में काउंटी बोर्ड ने 2026 के बजट में गारंटीड इनकम के लिए $75 लाख मंज़ूर किए, जिसे समर्थक अमेरिका का पहला स्थायी काउंटी कार्यक्रम कहते हैं; अगले चरण की पात्रता और राशि अभी तय हो रही है (2026 के अंत तक)",
-        "es": "En noviembre de 2025 la junta del condado aprobó 7,5 millones de dólares para ingreso garantizado en el presupuesto de 2026, que sus defensores llaman el primer programa permanente de un condado en EE. UU.; los requisitos y montos de la siguiente fase aún se están diseñando (previsto para finales de 2026)",
-        "de": "Im November 2025 bewilligte der Kreisrat im Haushalt 2026 7,5 Mio. $ für garantiertes Einkommen, laut Befürwortern das erste dauerhafte Programm eines US-Countys; Berechtigung und Beträge der nächsten Phase werden noch ausgearbeitet (bis Ende 2026)",
-        "ar": "في نوفمبر 2025 أقر مجلس المقاطعة 7.5 مليون دولار للدخل المضمون في ميزانية 2026، ويصفه المؤيدون بأنه أول برنامج دائم على مستوى مقاطعة في الولايات المتحدة؛ ولا تزال شروط الأهلية والمبالغ للمرحلة التالية قيد التصميم (حتى أواخر 2026)"
-      },
-      "source": "https://www.cookcountyil.gov/promise"
-    },
-    {
-      "id": "crny-artists",
-      "essays": [
-        "generative-ai-creative-work-basic-income"
-      ],
-      "years": "2022–2024",
+      "id": "us-dallas-united-way",
+      "years": "2021–2024",
       "type": "ngo",
-      "name": "Guaranteed Income for Artists (CRNY)",
+      "name": "Dallas guaranteed income eviction-prevention pilot (United Way of Metropolitan Dallas)",
       "place": {
-        "ja": "アメリカ・ニューヨーク州",
-        "en": "New York State, USA",
-        "zh": "美国纽约州",
-        "hi": "न्यूयॉर्क राज्य, अमेरिका",
-        "es": "Estado de Nueva York (EE. UU.)",
-        "de": "Bundesstaat New York (USA)",
-        "ar": "ولاية نيويورك، الولايات المتحدة"
+        "en": "Dallas, Texas, USA",
+        "ja": "アメリカ・テキサス州ダラス",
+        "zh": "美国得克萨斯州达拉斯",
+        "hi": "डैलस, टेक्सस, अमेरिका",
+        "es": "Dallas, Texas (EE. UU.)",
+        "de": "Dallas, Texas (USA)",
+        "ar": "دالاس، تكساس، الولايات المتحدة"
       },
       "who": {
-        "ja": "Creatives Rebuild New York（CRNY、主にメロン財団が出資するアーティスト支援の取り組み）",
-        "en": "Creatives Rebuild New York (CRNY), an artist-support initiative funded mainly by the Andrew W. Mellon Foundation",
-        "zh": "Creatives Rebuild New York（CRNY，主要由梅隆基金会出资的艺术家支持计划）",
-        "hi": "Creatives Rebuild New York (CRNY), कलाकारों की मदद की पहल, जिसका पैसा मुख्य रूप से एंड्रयू डब्ल्यू. मेलन फ़ाउंडेशन देता है",
-        "es": "Creatives Rebuild New York (CRNY), iniciativa de apoyo a artistas financiada sobre todo por la Fundación Andrew W. Mellon",
-        "de": "Creatives Rebuild New York (CRNY), eine Initiative zur Förderung von Kunstschaffenden, vor allem finanziert von der Andrew W. Mellon Foundation",
-        "ar": "⁦Creatives Rebuild New York⁩ (⁦CRNY⁩)، مبادرة لدعم الفنانين تموّلها أساسًا مؤسسة أندرو و. ميلون"
+        "en": "United Way of Metropolitan Dallas with community partners, paid from philanthropic money with no city funds",
+        "ja": "United Way of Metropolitan Dallasと地域のパートナー。財源は慈善資金で、市の資金はなし",
+        "zh": "大达拉斯联合之路（United Way of Metropolitan Dallas）与社区合作伙伴，资金来自慈善资金，未使用市政资金",
+        "hi": "United Way of Metropolitan Dallas, सामुदायिक साझेदारों के साथ; पैसा परोपकार से, शहर का कोई पैसा नहीं",
+        "es": "United Way of Metropolitan Dallas con socios comunitarios, financiado con dinero filantrópico, sin fondos municipales",
+        "de": "United Way of Metropolitan Dallas mit Partnern vor Ort, aus gemeinnützigen Mitteln bezahlt, ohne städtisches Geld",
+        "ar": "⁦United Way of Metropolitan Dallas⁩ مع شركاء مجتمعيين، بتمويل من أموال خيرية دون أموال من المدينة"
       },
       "paid": {
-        "ja": "州内の低所得アーティスト2,400人に、条件なしで月1,000ドルを18か月（2022年6月〜2024年3月）。約2万2,000人の応募者から重み付き抽選で選んだ（優先グループは当選しやすい）",
-        "en": "$1,000 a month with no strings for 18 months (June 2022–March 2024) to 2,400 low-income artists in the state, picked by a weighted lottery from about 22,000 applicants (priority groups had better odds)",
-        "zh": "向州内 2,400 名低收入艺术家无条件每月发放 1,000 美元，为期 18 个月（2022 年 6 月至 2024 年 3 月）；从约 22,000 名申请者中通过加权抽签选出（优先群体中签率更高）",
-        "hi": "राज्य के 2,400 कम आय वाले कलाकारों को 18 महीने (जून 2022–मार्च 2024) तक बिना शर्त हर महीने $1,000; लगभग 22,000 आवेदकों में से भारित लॉटरी से चुने गए (प्राथमिकता समूहों की संभावना ज़्यादा थी)",
-        "es": "1.000 $ al mes sin condiciones durante 18 meses (junio 2022–marzo 2024) para 2.400 artistas de bajos ingresos del estado, elegidos por sorteo ponderado entre unos 22.000 solicitantes (los grupos prioritarios tenían más opciones)",
-        "de": "1.000 $ im Monat ohne Bedingungen für 18 Monate (Juni 2022 bis März 2024) an 2.400 Kunstschaffende mit niedrigem Einkommen im Bundesstaat, per gewichtetem Los aus rund 22.000 Bewerbungen gezogen (Prioritätsgruppen hatten bessere Chancen)",
-        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 18 شهرًا (يونيو 2022–مارس 2024) لـ2,400 فنان منخفضي الدخل في الولاية، اختيروا بقرعة مرجّحة من بين نحو 22,000 متقدم (فرص أعلى للفئات ذات الأولوية)"
+        "en": "$250 a month with no conditions for up to three years from fall 2021 to 500 low-income Dallas residents in areas with high eviction rates (about a 23% boost to their average income of $14,000)",
+        "ja": "立ち退き率の高い地域に住むダラスの低所得住民500人に、2021年秋から条件なしで月250ドルを最長3年間（平均所得1万4,000ドルの約23%の上乗せ）",
+        "zh": "自 2021 年秋起，向驱逐率高地区的 500 名达拉斯低收入居民无条件每月发放 250 美元，最长三年（使其平均 14,000 美元的收入提高约 23%）",
+        "hi": "ज़्यादा बेदख़ली दर वाले इलाकों के 500 कम आय वाले डैलस निवासियों को 2021 की शरद से अधिकतम तीन साल तक बिना शर्त हर महीने $250 (उनकी $14,000 की औसत आय में लगभग 23% की बढ़ोतरी)",
+        "es": "250 $ al mes sin condiciones durante un máximo de tres años desde el otoño de 2021 para 500 residentes de bajos ingresos de Dallas en zonas con altas tasas de desahucio (un aumento de cerca del 23 % sobre su ingreso medio de 14.000 $)",
+        "de": "250 $ im Monat ohne Bedingungen für bis zu drei Jahre ab Herbst 2021 an 500 einkommensschwache Einwohner von Dallas in Gegenden mit vielen Zwangsräumungen (etwa 23 % mehr als ihr durchschnittliches Einkommen von 14.000 $)",
+        "ar": "⁦$250⁩ شهريًا بلا شروط لمدة تصل إلى ثلاث سنوات بدءًا من خريف 2021 لـ500 من سكان دالاس منخفضي الدخل في مناطق ذات معدلات إخلاء مرتفعة (زيادة بنحو 23% على متوسط دخلهم البالغ ⁦$14,000⁩)"
       },
       "result": {
-        "ja": "インディアナ大学の研究（2026年、査読誌）は落選者と比べ、芸術の仕事が週3.9時間増え、それ以外の仕事が週2.4時間減ったと報告。総収入は年約1万1,600ドル減と推計されたが統計的に有意ではない",
-        "en": "An Indiana University study (peer-reviewed, 2026) compared recipients with unselected applicants: 3.9 more hours a week on arts work and 2.4 fewer on other work. Total earnings were estimated about $11,600 a year lower, close to the $12,000 paid, but not statistically significant",
-        "zh": "印第安纳大学的研究（2026 年，经同行评审）与落选申请者比较：艺术工作每周增加 3.9 小时，其他工作减少 2.4 小时。总收入估计每年减少约 11,600 美元，接近领取的 12,000 美元，但统计上不显著",
-        "hi": "इंडियाना यूनिवर्सिटी के अध्ययन (2026, पीयर-रिव्यूड) ने न चुने गए आवेदकों से तुलना की: कला के काम में हफ़्ते में 3.9 घंटे ज़्यादा, बाकी काम में 2.4 घंटे कम। कुल कमाई साल में लगभग $11,600 कम आँकी गई, जो मिले $12,000 के करीब है, पर सांख्यिकीय रूप से महत्वपूर्ण नहीं",
-        "es": "Un estudio de la Universidad de Indiana (revisado por pares, 2026) comparó a los receptores con solicitantes no elegidos: 3,9 horas semanales más de trabajo artístico y 2,4 menos de otro trabajo. Los ingresos totales se estimaron unos 11.600 $ al año menores, cerca de los 12.000 $ recibidos, pero sin significación estadística",
-        "de": "Eine Studie der Indiana University (begutachtet, 2026) verglich mit nicht gezogenen Bewerbern: 3,9 Stunden pro Woche mehr künstlerische Arbeit, 2,4 weniger andere Arbeit. Das Gesamteinkommen lag geschätzt rund 11.600 $ im Jahr niedriger, nahe an den erhaltenen 12.000 $, aber nicht statistisch signifikant",
-        "ar": "قارنت دراسة لجامعة إنديانا (محكّمة، 2026) المستفيدين بالمتقدمين غير المختارين: 3.9 ساعات أسبوعيًا إضافية في العمل الفني و2.4 ساعة أقل في الأعمال الأخرى. وقُدّر إجمالي الدخل بنحو ⁦$11,600⁩ أقل سنويًا، قريبًا من ⁦$12,000⁩ المدفوعة، لكن الفرق غير دال إحصائيًا"
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
       },
-      "source": "https://link.springer.com/article/10.1007/s10824-026-09594-0"
+      "source": "https://www.fox4news.com/news/dallas-pilot-program-helps-those-facing-eviction-with-250-for-rent",
+      "us": {
+        "city": "Dallas",
+        "state": "TX",
+        "start": "2021",
+        "end": "2024",
+        "endEstimated": true,
+        "monthly": 250,
+        "months": 36,
+        "recipients": 500,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Vulnerable residents in Dallas communities with high eviction-filing rates and schools with high student mobility; average income about $14,000 a year",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-compton-pledge",
+      "years": "2021–2023",
+      "type": "ngo",
+      "name": "Compton Pledge",
+      "place": {
+        "en": "Compton, California, USA",
+        "ja": "アメリカ・カリフォルニア州コンプトン",
+        "zh": "美国加利福尼亚州康普顿",
+        "hi": "कॉम्पटन, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Compton, California (EE. UU.)",
+        "de": "Compton, Kalifornien (USA)",
+        "ar": "كومبتون، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Fund for Guaranteed Income, a charity backed by private donors and family foundations, with the City of Compton and the Jain Family Institute; no city money",
+        "ja": "個人の寄付者や家族財団が支える慈善団体Fund for Guaranteed Incomeが、コンプトン市やJain Family Instituteと実施。市の資金は使っていない",
+        "zh": "由私人捐助者和家族基金会支持的慈善机构保障收入基金（Fund for Guaranteed Income），与康普顿市和 Jain Family Institute 合作；未使用市政资金",
+        "hi": "Fund for Guaranteed Income, निजी दानदाताओं और पारिवारिक फ़ाउंडेशनों के समर्थन वाली चैरिटी, कॉम्पटन शहर और Jain Family Institute के साथ; शहर का कोई पैसा नहीं",
+        "es": "Fund for Guaranteed Income, una organización benéfica respaldada por donantes privados y fundaciones familiares, con la Ciudad de Compton y el Jain Family Institute; sin dinero municipal",
+        "de": "Fund for Guaranteed Income, eine von privaten Spendern und Familienstiftungen getragene Wohltätigkeitsorganisation, mit der Stadt Compton und dem Jain Family Institute; kein städtisches Geld",
+        "ar": "⁦Fund for Guaranteed Income⁩، جمعية خيرية يدعمها متبرعون خاصون ومؤسسات عائلية، مع مدينة كومبتون و⁦Jain Family Institute⁩؛ دون أموال من المدينة"
+      },
+      "paid": {
+        "en": "An average of about $500 a month with no conditions for two years (February 2021–April 2023) to about 800 low-income households, with amounts varying by family size; half were paid twice a month and half once a quarter",
+        "ja": "低所得の約800世帯に、条件なしで平均月約500ドルを2年間（2021年2月〜2023年4月）。金額は世帯人数で異なり、半数は月2回、半数は四半期に1回の支給",
+        "zh": "向约 800 个低收入家庭无条件平均每月发放约 500 美元，为期两年（2021 年 2 月至 2023 年 4 月），金额因家庭人数而异；一半每月发放两次，一半每季度发放一次",
+        "hi": "लगभग 800 कम आय वाले परिवारों को दो साल (फ़रवरी 2021–अप्रैल 2023) तक बिना शर्त हर महीने औसतन लगभग $500, राशि परिवार के आकार के हिसाब से अलग; आधे को महीने में दो बार और आधे को तिमाही में एक बार भुगतान",
+        "es": "Una media de unos 500 $ al mes sin condiciones durante dos años (febrero 2021–abril 2023) para unos 800 hogares de bajos ingresos, con montos según el tamaño de la familia; la mitad cobraba dos veces al mes y la otra mitad una vez por trimestre",
+        "de": "Durchschnittlich etwa 500 $ im Monat ohne Bedingungen für zwei Jahre (Februar 2021 bis April 2023) an rund 800 einkommensschwache Haushalte, je nach Familiengröße unterschiedlich; die Hälfte erhielt das Geld zweimal im Monat, die andere Hälfte einmal im Quartal",
+        "ar": "نحو ⁦$500⁩ شهريًا في المتوسط بلا شروط لمدة عامين (فبراير 2021–أبريل 2023) لنحو 800 أسرة منخفضة الدخل، مع مبالغ تختلف بحسب حجم الأسرة؛ تلقى النصف الدفعات مرتين شهريًا والنصف الآخر مرة كل ثلاثة أشهر"
+      },
+      "result": {
+        "en": "An NBER working paper (2024, not peer-reviewed) compared 695 recipient households with 1,402 controls: no significant change in work for full-time workers, but labor force participation fell 13 points among part-time workers; recipients reported lower earned income and spent $302 a month less; housing security improved; twice-monthly payments beat quarterly on food security and credit card debt",
+        "ja": "NBERのワーキングペーパー（2024年、査読前）は受給695世帯を対照群1,402世帯と比べ、フルタイム労働者の働き方に有意な変化はなかったが、パートタイム労働者の労働参加率は13ポイント下がったと報告。受給者は勤労収入が減ったと答え、支出は月302ドル少なかった。住まいの安定は改善し、食料の確保とクレジットカードの借金では月2回払いが四半期払いより良かった",
+        "zh": "一篇 NBER 工作论文（2024 年，未经同行评审）将 695 个受助家庭与 1,402 个对照家庭比较：全职工作者的工作没有显著变化，但兼职工作者的劳动参与率下降 13 个百分点；受助者报告的劳动收入更低，每月支出少 302 美元；住房保障改善；在粮食保障和信用卡债务方面，每月两次发放优于每季度发放",
+        "hi": "NBER के एक वर्किंग पेपर (2024, पीयर-रिव्यूड नहीं) ने 695 प्राप्तकर्ता परिवारों की 1,402 नियंत्रण परिवारों से तुलना की: पूर्णकालिक कामगारों के काम में कोई महत्वपूर्ण बदलाव नहीं, पर अंशकालिक कामगारों में श्रम बल भागीदारी 13 अंक घटी; प्राप्तकर्ताओं ने कम कमाई बताई और हर महीने $302 कम ख़र्च किए; आवास सुरक्षा सुधरी; खाद्य सुरक्षा और क्रेडिट कार्ड क़र्ज़ पर महीने में दो बार का भुगतान तिमाही भुगतान से बेहतर रहा",
+        "es": "Un documento de trabajo del NBER (2024, sin revisión por pares) comparó 695 hogares beneficiarios con 1.402 controles: sin cambio significativo en el trabajo de quienes tenían empleo a tiempo completo, pero la participación laboral bajó 13 puntos entre quienes trabajaban a tiempo parcial; los beneficiarios declararon menos ingresos laborales y gastaron 302 $ menos al mes; mejoró la seguridad de vivienda; los pagos quincenales superaron a los trimestrales en seguridad alimentaria y deuda de tarjetas de crédito",
+        "de": "Ein NBER-Arbeitspapier (2024, nicht begutachtet) verglich 695 Empfängerhaushalte mit 1.402 Haushalten der Kontrollgruppe: keine signifikante Veränderung der Arbeit bei Vollzeitbeschäftigten, aber bei Teilzeitbeschäftigten sank die Erwerbsbeteiligung um 13 Punkte; die Empfänger gaben ein niedrigeres Erwerbseinkommen an und gaben 302 $ im Monat weniger aus; die Wohnsicherheit verbesserte sich; Zahlungen zweimal im Monat schnitten bei Ernährungssicherheit und Kreditkartenschulden besser ab als vierteljährliche",
+        "ar": "قارنت ورقة عمل من ⁦NBER⁩ (2024، غير محكّمة) 695 أسرة مستفيدة بـ1,402 أسرة في المجموعة الضابطة: لا تغيّر دال في العمل لدى العاملين بدوام كامل، لكن المشاركة في سوق العمل انخفضت 13 نقطة بين العاملين بدوام جزئي؛ وأفاد المستفيدون بدخل أقل من العمل وأنفقوا ⁦$302⁩ أقل شهريًا؛ وتحسّن الأمن السكني؛ وتفوقت الدفعات نصف الشهرية على الفصلية في الأمن الغذائي وديون بطاقات الائتمان"
+      },
+      "source": "https://www.futurity.org/?p=3260642",
+      "source2": "https://capitalandmain.com/?p=113359",
+      "us": {
+        "city": "Compton",
+        "state": "CA",
+        "start": "2021-02",
+        "end": "2023-04",
+        "monthly": 500,
+        "months": 24,
+        "recipients": 800,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Low-income Compton residents (below twice the federal poverty line), including undocumented and formerly incarcerated residents; picked by lottery",
+        "eval": {
+          "by": "Balakrishnan, Chan, Constantino, Haushofer and Morduch (Jain Family Institute, NYU, Stanford, Stockholm University), NBER working paper w33209",
+          "year": 2024,
+          "type": "working paper",
+          "url": "https://policiesforaction.org/node/805"
+        }
+      }
+    },
+    {
+      "id": "us-sf-artists-ybca",
+      "years": "2021–2022",
+      "type": "ngo",
+      "name": "SF Guaranteed Income Pilot for Artists (SF-GIPA)",
+      "place": {
+        "en": "San Francisco, California, USA",
+        "ja": "アメリカ・カリフォルニア州サンフランシスコ",
+        "zh": "美国加利福尼亚州旧金山",
+        "hi": "सैन फ़्रांसिस्को, कैलिफ़ोर्निया, अमेरिका",
+        "es": "San Francisco, California (EE. UU.)",
+        "de": "San Francisco, Kalifornien (USA)",
+        "ar": "سان فرانسيسكو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Yerba Buena Center for the Arts (YBCA), a San Francisco arts center, in partnership with the City of San Francisco and with support from private donors",
+        "ja": "サンフランシスコの芸術センター、イエルバ・ブエナ芸術センター（YBCA）が、サンフランシスコ市と連携し、個人の寄付者の支援を受けて実施",
+        "zh": "旧金山艺术中心芳草地艺术中心（YBCA），与旧金山市合作，并获得私人捐助者支持",
+        "hi": "Yerba Buena Center for the Arts (YBCA), सैन फ़्रांसिस्को का एक कला केंद्र, सैन फ़्रांसिस्को शहर की साझेदारी और निजी दानदाताओं की मदद से",
+        "es": "Yerba Buena Center for the Arts (YBCA), un centro de arte de San Francisco, en colaboración con la Ciudad de San Francisco y con apoyo de donantes privados",
+        "de": "Yerba Buena Center for the Arts (YBCA), ein Kunstzentrum in San Francisco, in Partnerschaft mit der Stadt San Francisco und mit Unterstützung privater Spender",
+        "ar": "⁦Yerba Buena Center for the Arts⁩ (⁦YBCA⁩)، مركز فنون في سان فرانسيسكو، بالشراكة مع مدينة سان فرانسيسكو وبدعم من متبرعين خاصين"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 18 months to 130 San Francisco artists hit by the pandemic ($2.34 million in total), launched in May 2021",
+        "ja": "コロナ禍で打撃を受けたサンフランシスコのアーティスト130人に、条件なしで月1,000ドルを18か月（総額234万ドル）。2021年5月に開始",
+        "zh": "向 130 名受疫情影响的旧金山艺术家无条件每月发放 1,000 美元，为期 18 个月（共 234 万美元），2021 年 5 月启动",
+        "hi": "महामारी से प्रभावित सैन फ़्रांसिस्को के 130 कलाकारों को 18 महीने तक बिना शर्त हर महीने $1,000 (कुल $23.4 लाख); मई 2021 में शुरू",
+        "es": "1.000 $ al mes sin condiciones durante 18 meses para 130 artistas de San Francisco afectados por la pandemia (2,34 millones de dólares en total), lanzado en mayo de 2021",
+        "de": "1.000 $ im Monat ohne Bedingungen für 18 Monate an 130 von der Pandemie getroffene Kunstschaffende in San Francisco (insgesamt 2,34 Mio. $), gestartet im Mai 2021",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 18 شهرًا لـ130 فنانًا في سان فرانسيسكو تضرروا من الجائحة (2.34 مليون دولار إجمالًا)، أُطلق في مايو 2021"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://ybca.org/guaranteed-income-for-artists/",
+      "us": {
+        "city": "San Francisco",
+        "state": "CA",
+        "start": "2021-05",
+        "end": "2022",
+        "endEstimated": true,
+        "monthly": 1000,
+        "months": 18,
+        "recipients": 130,
+        "unit": "people",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "San Francisco artists disproportionately impacted by the COVID-19 pandemic",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-marin-momentum",
+      "years": "2021–2024",
+      "type": "ngo",
+      "name": "MOMentum (Marin Guaranteed Income Demonstration Project)",
+      "place": {
+        "en": "Marin County, California, USA",
+        "ja": "アメリカ・カリフォルニア州マリン郡",
+        "zh": "美国加利福尼亚州马林县",
+        "hi": "मरीन काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Marin, California (EE. UU.)",
+        "de": "Marin County, Kalifornien (USA)",
+        "ar": "مقاطعة مارين، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Marin Community Foundation, a private foundation, with the nonprofit UpTogether running the payments",
+        "ja": "民間財団のマリン・コミュニティ財団。支給は非営利団体UpTogetherが担当",
+        "zh": "私人基金会马林社区基金会，由非营利组织 UpTogether 负责发放",
+        "hi": "Marin Community Foundation, एक निजी फ़ाउंडेशन; भुगतान ग़ैर-लाभकारी संस्था UpTogether ने किए",
+        "es": "Marin Community Foundation, una fundación privada, con la organización sin ánimo de lucro UpTogether a cargo de los pagos",
+        "de": "Marin Community Foundation, eine private Stiftung, mit der gemeinnützigen Organisation UpTogether für die Auszahlung",
+        "ar": "⁦Marin Community Foundation⁩، مؤسسة خاصة، مع المنظمة غير الربحية ⁦UpTogether⁩ التي تولّت الدفعات"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for two years from May 2021 to 125 low-income mothers of color in Marin County, followed by a third year of tapering payments that ended in May 2024",
+        "ja": "マリン郡の低所得の有色人種の母親125人に、2021年5月から条件なしで月1,000ドルを2年間。その後3年目は段階的に減額し、2024年5月に終了",
+        "zh": "自 2021 年 5 月起，向马林县 125 名低收入有色人种母亲无条件每月发放 1,000 美元，为期两年，之后第三年逐步减少发放，于 2024 年 5 月结束",
+        "hi": "मरीन काउंटी की 125 कम आय वाली ग़ैर-श्वेत (of color) माताओं को मई 2021 से दो साल तक बिना शर्त हर महीने $1,000, फिर तीसरे साल घटते भुगतान, जो मई 2024 में ख़त्म हुए",
+        "es": "1.000 $ al mes sin condiciones durante dos años desde mayo de 2021 para 125 madres racializadas de bajos ingresos del condado de Marin, seguidos de un tercer año de pagos decrecientes que terminó en mayo de 2024",
+        "de": "1.000 $ im Monat ohne Bedingungen für zwei Jahre ab Mai 2021 an 125 einkommensschwache Mütter of Color in Marin County, gefolgt von einem dritten Jahr mit sinkenden Zahlungen, das im Mai 2024 endete",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة عامين بدءًا من مايو 2021 لـ125 أمًّا منخفضة الدخل من ذوات البشرة الملونة في مقاطعة مارين، تلاها عام ثالث من دفعات متناقصة انتهى في مايو 2024"
+      },
+      "result": {
+        "en": "Social Policy Research Associates (February 2024) reported from a self-reported survey (68% of 122 mothers) and 30 interviews: stable housing rose from 45% to 60%, 76% said debt was more manageable and 59% said their health improved. There was no control group",
+        "ja": "Social Policy Research Associates（2024年2月）は、自己申告の調査（母親122人の68%）と30件の聞き取りから、安定した住まいのある人が45%から60%に増え、76%が借金を管理しやすくなり、59%が健康が良くなったと答えたと報告。対照群はない",
+        "zh": "Social Policy Research Associates（2024 年 2 月）根据自我报告的调查（122 名母亲中的 68%）和 30 次访谈称：住房稳定的比例从 45% 升至 60%，76% 的人表示债务更可控，59% 的人表示健康改善。没有对照组",
+        "hi": "Social Policy Research Associates (फ़रवरी 2024) ने स्व-रिपोर्टेड सर्वे (122 में से 68% माताओं) और 30 इंटरव्यू के आधार पर बताया: स्थिर आवास 45% से 60% हुआ, 76% ने कहा कि क़र्ज़ संभालना आसान हुआ और 59% ने कहा कि उनका स्वास्थ्य सुधरा। कोई नियंत्रण समूह नहीं था",
+        "es": "Social Policy Research Associates (febrero de 2024) informó, a partir de una encuesta autodeclarada (68 % de 122 madres) y 30 entrevistas, de que la vivienda estable pasó del 45 % al 60 %, el 76 % dijo que sus deudas eran más manejables y el 59 % que su salud mejoró. No hubo grupo de control",
+        "de": "Social Policy Research Associates (Februar 2024) berichteten aus einer Befragung mit Selbstauskünften (68 % von 122 Müttern) und 30 Interviews: Der Anteil mit stabiler Wohnsituation stieg von 45 % auf 60 %, 76 % sagten, ihre Schulden seien besser zu bewältigen, und 59 %, ihre Gesundheit habe sich verbessert. Eine Kontrollgruppe gab es nicht",
+        "ar": "أفادت ⁦Social Policy Research Associates⁩ (فبراير 2024) استنادًا إلى استطلاع ذاتي الإبلاغ (68% من 122 أمًّا) و30 مقابلة: ارتفع السكن المستقر من 45% إلى 60%، وقالت 76% إن الديون باتت أسهل في إدارتها وقالت 59% إن صحتهن تحسنت. ولم تكن هناك مجموعة ضابطة"
+      },
+      "source": "https://dfq3h9wd5iwx4.cloudfront.net/multimedia/MOMentum-Evaluation-Report_Feb-2024_FINAL.pdf",
+      "source2": "https://blog.uptogether.org/marin-county-moms-see-big-gains-in-momentum-guaranteed-income-pilot",
+      "us": {
+        "city": "Marin County",
+        "state": "CA",
+        "start": "2021-05",
+        "end": "2024-05",
+        "monthly": 1000,
+        "months": 24,
+        "recipients": 125,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Low-income Black, Indigenous and other mothers of color in Marin County with at least one child under 18",
+        "eval": {
+          "by": "Social Policy Research Associates",
+          "year": 2024,
+          "type": "report",
+          "url": "https://dfq3h9wd5iwx4.cloudfront.net/multimedia/MOMentum-Evaluation-Report_Feb-2024_FINAL.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-gary-give",
+      "years": "2021–2022",
+      "type": "gov",
+      "name": "Guaranteed Income Validation Effort (GIVE)",
+      "place": {
+        "en": "Gary, Indiana, USA",
+        "ja": "アメリカ・インディアナ州ゲーリー",
+        "zh": "美国印第安纳州加里",
+        "hi": "गैरी, इंडियाना, अमेरिका",
+        "es": "Gary, Indiana (EE. UU.)",
+        "de": "Gary, Indiana (USA)",
+        "ar": "غاري، إنديانا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Gary's Guaranteed Income Validation Effort, started with $500,000 from Mayors for a Guaranteed Income (funded partly by Jack Dorsey)",
+        "ja": "ゲーリー市の保証所得検証事業（Guaranteed Income Validation Effort）。Mayors for a Guaranteed Income（資金の一部はジャック・ドーシー氏）からの50万ドルで始まった",
+        "zh": "加里市的“保障收入验证行动”（Guaranteed Income Validation Effort），以“保障收入市长联盟”（部分资金来自杰克·多尔西）提供的 50 万美元启动",
+        "hi": "गैरी शहर का Guaranteed Income Validation Effort, Mayors for a Guaranteed Income (जिसका कुछ पैसा जैक डोर्सी ने दिया) से मिले $5 लाख से शुरू",
+        "es": "Guaranteed Income Validation Effort de la Ciudad de Gary, iniciado con 500.000 $ de Mayors for a Guaranteed Income (financiado en parte por Jack Dorsey)",
+        "de": "Guaranteed Income Validation Effort der Stadt Gary, gestartet mit 500.000 $ von Mayors for a Guaranteed Income (teils von Jack Dorsey finanziert)",
+        "ar": "⁦Guaranteed Income Validation Effort⁩ التابع لمدينة غاري، أُطلق بـ⁦$500,000⁩ من ⁦Mayors for a Guaranteed Income⁩ (المموّلة جزئيًا من جاك دورسي)"
+      },
+      "paid": {
+        "en": "$500 a month with no strings attached for 12 months from May 2021 to 125 residents earning $35,000 a year or less, chosen by lottery",
+        "ja": "年収3万5,000ドル以下の住民から抽選で選んだ125人に、2021年5月から条件なしで月500ドルを12か月",
+        "zh": "自 2021 年 5 月起，向通过抽签选出的 125 名年收入 35,000 美元或以下的居民无条件每月发放 500 美元，为期 12 个月",
+        "hi": "लॉटरी से चुने गए, साल में $35,000 या उससे कम कमाने वाले 125 निवासियों को मई 2021 से 12 महीने तक बिना किसी शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 12 meses desde mayo de 2021 para 125 residentes que ganaban 35.000 $ al año o menos, elegidos por sorteo",
+        "de": "500 $ im Monat ohne Auflagen für 12 Monate ab Mai 2021 an 125 per Los ausgewählte Einwohner mit höchstens 35.000 $ Jahreseinkommen",
+        "ar": "⁦$500⁩ شهريًا بلا أي شروط لمدة 12 شهرًا بدءًا من مايو 2021 لـ125 من السكان يكسبون ⁦$35,000⁩ سنويًا أو أقل، اختيروا بالقرعة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.pbs.org/newshour/show/how-a-guaranteed-income-pilot-program-is-helping-some-in-gary-indiana",
+      "source2": "https://abc7chicago.com/guaranteed-income-validation-effort-fund-gary-indiana-extra/10373717/",
+      "us": {
+        "city": "Gary",
+        "state": "IN",
+        "start": "2021-05",
+        "end": "2022",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 125,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Gary residents 18+ earning $35,000 a year or less; chosen by lottery",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-ulster-project-resilience",
+      "years": "2021–2022",
+      "type": "gov",
+      "name": "Project Resilience",
+      "place": {
+        "en": "Ulster County, New York, USA",
+        "ja": "アメリカ・ニューヨーク州アルスター郡",
+        "zh": "美国纽约州阿尔斯特县",
+        "hi": "अल्स्टर काउंटी, न्यूयॉर्क, अमेरिका",
+        "es": "Condado de Ulster, Nueva York (EE. UU.)",
+        "de": "Ulster County, New York (USA)",
+        "ar": "مقاطعة ألستر، نيويورك، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Ulster County government, described as the first county-led guaranteed income program in the US, paid from private donations with Community Foundations of the Hudson Valley and Ulster Savings Bank",
+        "ja": "アルスター郡政府。米国初の郡主導の保証所得プログラムとされ、財源は個人の寄付で、Community Foundations of the Hudson Valleyとアルスター貯蓄銀行が協力",
+        "zh": "阿尔斯特县政府，被称为美国首个由县主导的保障收入项目，资金来自私人捐款，并与哈德逊河谷社区基金会和 Ulster Savings Bank 合作",
+        "hi": "अल्स्टर काउंटी सरकार, जिसे अमेरिका का पहला काउंटी-नेतृत्व वाला गारंटीड इनकम कार्यक्रम बताया गया; पैसा निजी दान से, Community Foundations of the Hudson Valley और Ulster Savings Bank के साथ",
+        "es": "Gobierno del condado de Ulster, descrito como el primer programa de ingreso garantizado dirigido por un condado en EE. UU., financiado con donaciones privadas con Community Foundations of the Hudson Valley y Ulster Savings Bank",
+        "de": "Verwaltung von Ulster County, beschrieben als erstes von einem County geführtes Programm für garantiertes Einkommen in den USA, aus privaten Spenden bezahlt, mit den Community Foundations of the Hudson Valley und der Ulster Savings Bank",
+        "ar": "حكومة مقاطعة ألستر، ووُصف بأنه أول برنامج دخل مضمون تقوده مقاطعة في الولايات المتحدة، بتمويل من تبرعات خاصة مع ⁦Community Foundations of the Hudson Valley⁩ و⁦Ulster Savings Bank⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions to 100 low-income households (income at or below $46,900) from May 2021, extended from 12 to 17 months with a phase-out to $250 by September 2022",
+        "ja": "低所得の100世帯（所得4万6,900ドル以下）に、2021年5月から条件なしで月500ドル。12か月から17か月に延長し、2022年9月までに250ドルへ段階的に減額",
+        "zh": "自 2021 年 5 月起，向 100 个低收入家庭（收入不超过 46,900 美元）无条件每月发放 500 美元，从 12 个月延长至 17 个月，并在 2022 年 9 月前逐步减至 250 美元",
+        "hi": "100 कम आय वाले परिवारों (आय $46,900 या उससे कम) को मई 2021 से बिना शर्त हर महीने $500; अवधि 12 से बढ़ाकर 17 महीने की गई, सितंबर 2022 तक धीरे-धीरे घटाकर $250",
+        "es": "500 $ al mes sin condiciones para 100 hogares de bajos ingresos (ingresos de 46.900 $ o menos) desde mayo de 2021, ampliado de 12 a 17 meses con una reducción gradual a 250 $ hasta septiembre de 2022",
+        "de": "500 $ im Monat ohne Bedingungen an 100 einkommensschwache Haushalte (Einkommen bis 46.900 $) ab Mai 2021, von 12 auf 17 Monate verlängert, mit schrittweiser Absenkung auf 250 $ bis September 2022",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لـ100 أسرة منخفضة الدخل (دخلها ⁦$46,900⁩ أو أقل) بدءًا من مايو 2021، ومُدّد من 12 إلى 17 شهرًا مع تخفيض تدريجي إلى ⁦$250⁩ بحلول سبتمبر 2022"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research (November 2023), compared with 84 control households, reported higher household income and savings, a better ability to handle financial emergencies, and better physical and mental health and housing stability; the summary gives no effect sizes",
+        "ja": "ペンシルベニア大学CGIR（2023年11月）は対照群84世帯と比べ、世帯収入と貯蓄が多く、経済的な急場に対応しやすく、心身の健康と住まいの安定も良かったと報告。要約には効果の大きさが示されていない",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2023 年 11 月）与 84 个对照家庭比较，称家庭收入和储蓄更高，应对财务紧急情况的能力更强，身心健康和住房稳定性更好；摘要未给出效应量",
+        "hi": "पेन के Center for Guaranteed Income Research (नवंबर 2023) ने 84 नियंत्रण परिवारों से तुलना कर बताया कि घरेलू आय और बचत ज़्यादा थी, आर्थिक आपात स्थितियाँ संभालने की क्षमता बेहतर थी, और शारीरिक व मानसिक स्वास्थ्य और आवास स्थिरता बेहतर थी; सारांश में असर का आकार नहीं दिया गया",
+        "es": "El Center for Guaranteed Income Research de Penn (noviembre de 2023), frente a 84 hogares de control, informó de mayores ingresos y ahorros del hogar, más capacidad para afrontar emergencias financieras y mejor salud física y mental y estabilidad de vivienda; el resumen no da tamaños del efecto",
+        "de": "Das Center for Guaranteed Income Research der Penn (November 2023) berichtete im Vergleich mit 84 Haushalten der Kontrollgruppe ein höheres Haushaltseinkommen und mehr Ersparnisse, eine bessere Fähigkeit, finanzielle Notfälle zu bewältigen, sowie bessere körperliche und psychische Gesundheit und Wohnstabilität; die Zusammenfassung nennt keine Effektgrößen",
+        "ar": "أفاد ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (نوفمبر 2023)، مقارنةً بـ84 أسرة في المجموعة الضابطة، بدخل ومدخرات أعلى للأسر، وقدرة أفضل على مواجهة الطوارئ المالية، وصحة بدنية ونفسية واستقرار سكني أفضل؛ ولا يذكر الملخص أحجام الأثر"
+      },
+      "source": "https://sp2.upenn.edu/report-first-of-its-kind-guaranteed-income-program-in-rural-area-improved-financial-physical-and-mental-well-being/",
+      "us": {
+        "city": "Ulster County",
+        "state": "NY",
+        "start": "2021-05",
+        "end": "2022-09",
+        "monthly": 500,
+        "months": 17,
+        "recipients": 100,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Ulster County households with annual income at or below $46,900 (80% of area median income), chosen by lottery; 84 others formed a control group",
+        "eval": {
+          "by": "Penn Center for Guaranteed Income Research",
+          "year": 2023,
+          "type": "report",
+          "url": "https://sp2.upenn.edu/report-first-of-its-kind-guaranteed-income-program-in-rural-area-improved-financial-physical-and-mental-well-being/"
+        }
+      }
+    },
+    {
+      "id": "us-sf-abundant-birth",
+      "years": "2021–2024",
+      "type": "ngo",
+      "name": "Abundant Birth Project",
+      "place": {
+        "en": "San Francisco, California, USA",
+        "ja": "アメリカ・カリフォルニア州サンフランシスコ",
+        "zh": "美国加利福尼亚州旧金山",
+        "hi": "सैन फ़्रांसिस्को, कैलिफ़ोर्निया, अमेरिका",
+        "es": "San Francisco, California (EE. UU.)",
+        "de": "San Francisco, Kalifornien (USA)",
+        "ar": "سان فرانسيسكو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Expecting Justice, a San Francisco birth justice collaborative, with the city's Department of Public Health and a citywide group of public and private partners",
+        "ja": "サンフランシスコの出産の公正を目指す連携組織Expecting Justiceが、市の公衆衛生局や市全体の官民パートナーと実施",
+        "zh": "旧金山生育正义联盟 Expecting Justice，与市公共卫生局及全市公私合作伙伴共同开展",
+        "hi": "Expecting Justice, सैन फ़्रांसिस्को का एक बर्थ जस्टिस सहयोग, शहर के Department of Public Health और सरकारी व निजी साझेदारों के शहरव्यापी समूह के साथ",
+        "es": "Expecting Justice, una colaboración por la justicia en el parto de San Francisco, con el Departamento de Salud Pública de la ciudad y un grupo de socios públicos y privados de toda la ciudad",
+        "de": "Expecting Justice, ein Bündnis für gerechte Geburtsbedingungen in San Francisco, mit dem städtischen Gesundheitsamt und einem stadtweiten Kreis öffentlicher und privater Partner",
+        "ar": "⁦Expecting Justice⁩، تحالف للعدالة في الولادة في سان فرانسيسكو، مع إدارة الصحة العامة بالمدينة ومجموعة من الشركاء العامين والخاصين على مستوى المدينة"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions, from pregnancy to about six months after birth (up to 14 months), to 151 Black and Pacific Islander pregnant people in San Francisco chosen by lottery; launched on Juneteenth 2021 and ended in January 2024",
+        "ja": "抽選で選んだサンフランシスコの黒人・太平洋諸島系の妊娠中の151人に、妊娠中から出産後約6か月まで（最長14か月）条件なしで月1,000ドル。2021年のジューンティーンス（6月19日）に始まり、2024年1月に終了",
+        "zh": "向旧金山通过抽签选出的 151 名黑人和太平洋岛民孕妇无条件每月发放 1,000 美元，从孕期持续到产后约六个月（最长 14 个月）；于 2021 年六月节（Juneteenth）启动，2024 年 1 月结束",
+        "hi": "लॉटरी से चुने गए सैन फ़्रांसिस्को के 151 अश्वेत और पैसिफ़िक आइलैंडर गर्भवती लोगों को गर्भावस्था से जन्म के लगभग छह महीने बाद तक (अधिकतम 14 महीने) बिना शर्त हर महीने $1,000; जूनटीन्थ 2021 को शुरू, जनवरी 2024 में ख़त्म",
+        "es": "1.000 $ al mes sin condiciones, desde el embarazo hasta unos seis meses después del parto (hasta 14 meses), para 151 personas embarazadas negras e isleñas del Pacífico de San Francisco elegidas por sorteo; empezó el Juneteenth de 2021 y terminó en enero de 2024",
+        "de": "1.000 $ im Monat ohne Bedingungen, von der Schwangerschaft bis etwa sechs Monate nach der Geburt (bis zu 14 Monate), an 151 per Los ausgewählte schwarze und pazifisch-insulare Schwangere in San Francisco; gestartet am Juneteenth 2021, beendet im Januar 2024",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط، من الحمل حتى نحو ستة أشهر بعد الولادة (حتى 14 شهرًا)، لـ151 من الحوامل السود ومن سكان جزر المحيط الهادئ في سان فرانسيسكو اختيروا بالقرعة؛ أُطلق في يوم جونتينث 2021 وانتهى في يناير 2024"
+      },
+      "result": {
+        "en": "A peer-reviewed acceptability study (BMC Public Health, 2026; 116 surveyed, 21 interviewed) reported that 95.7% were very satisfied and 77.5% trusted the program to act in their interest, vs 9% for government. It did not measure birth outcomes and had no control group",
+        "ja": "査読付きの受容性調査（BMC Public Health、2026年。調査116人、聞き取り21人）は、95.7%がとても満足し、77.5%がプログラムは自分の利益のために動くと信頼していた（政府は9%）と報告。出産の結果は測っておらず、対照群もない",
+        "zh": "一项经同行评审的可接受性研究（《BMC 公共卫生》，2026 年；调查 116 人，访谈 21 人）称，95.7% 的人非常满意，77.5% 的人相信该项目会维护自己的利益，而对政府的这一比例为 9%。研究未衡量分娩结果，也没有对照组",
+        "hi": "एक पीयर-रिव्यूड स्वीकार्यता अध्ययन (BMC Public Health, 2026; 116 का सर्वे, 21 के इंटरव्यू) के अनुसार 95.7% बहुत संतुष्ट थे और 77.5% को भरोसा था कि कार्यक्रम उनके हित में काम करेगा, जबकि सरकार पर यह भरोसा 9% का था। इसने जन्म के नतीजे नहीं मापे और कोई नियंत्रण समूह नहीं था",
+        "es": "Un estudio de aceptabilidad revisado por pares (BMC Public Health, 2026; 116 encuestadas, 21 entrevistadas) informó de que el 95,7 % estaba muy satisfecho y el 77,5 % confiaba en que el programa actuara en su interés, frente al 9 % en el caso del gobierno. No midió resultados del parto y no tuvo grupo de control",
+        "de": "Eine begutachtete Akzeptanzstudie (BMC Public Health, 2026; 116 Befragte, 21 Interviews) berichtete, dass 95,7 % sehr zufrieden waren und 77,5 % darauf vertrauten, dass das Programm in ihrem Interesse handelt, gegenüber 9 % bei der Regierung. Geburtsergebnisse wurden nicht gemessen, eine Kontrollgruppe gab es nicht",
+        "ar": "أفادت دراسة محكّمة عن مدى القبول (⁦BMC Public Health⁩، 2026؛ استُطلع 116 وقوبل 21) بأن 95.7% كانوا راضين جدًا وبأن 77.5% وثقوا بأن البرنامج يعمل لمصلحتهم، مقابل 9% للحكومة. ولم تقس الدراسة نتائج الولادة ولم تكن لها مجموعة ضابطة"
+      },
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12910867/",
+      "source2": "https://www.ktvu.com/news/sf-guaranteed-income-for-pregnant-black-women-expands-across-california",
+      "us": {
+        "city": "San Francisco",
+        "state": "CA",
+        "start": "2021-06",
+        "end": "2024-01",
+        "monthly": 1000,
+        "months": 14,
+        "recipients": 151,
+        "unit": "people",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "Black and/or Pasifika pregnant people living in San Francisco (or moved out within six months), under 27 weeks pregnant, household income under $100,000; picked in bimonthly random 'Abundance Drawings'",
+        "eval": {
+          "by": "UCSF California Preterm Birth Initiative and community researchers",
+          "year": 2026,
+          "type": "peer-reviewed",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12910867/"
+        }
+      }
+    },
+    {
+      "id": "us-nyc-bridge-project",
+      "years": "2021–",
+      "type": "ngo",
+      "name": "The Bridge Project",
+      "place": {
+        "en": "New York City, New York, USA",
+        "ja": "アメリカ・ニューヨーク州ニューヨーク市",
+        "zh": "美国纽约州纽约市",
+        "hi": "न्यूयॉर्क शहर, न्यूयॉर्क, अमेरिका",
+        "es": "Ciudad de Nueva York, Nueva York (EE. UU.)",
+        "de": "New York City, New York (USA)",
+        "ar": "مدينة نيويورك، نيويورك، الولايات المتحدة"
+      },
+      "who": {
+        "en": "The Bridge Project, New York City's first guaranteed income program, run and funded privately by the Monarch Foundation to cover a child's first 1,000 days",
+        "ja": "ニューヨーク市初の保証所得プログラムThe Bridge Project。子どもの最初の1,000日を支えるため、Monarch Foundationが民間で運営・出資",
+        "zh": "The Bridge Project，纽约市首个保障收入项目，由 Monarch Foundation 私人运营并出资，覆盖孩子生命最初的 1,000 天",
+        "hi": "The Bridge Project, न्यूयॉर्क शहर का पहला गारंटीड इनकम कार्यक्रम, जिसे Monarch Foundation निजी तौर पर चलाता और वित्तपोषित करता है ताकि बच्चे के पहले 1,000 दिन कवर हों",
+        "es": "The Bridge Project, el primer programa de ingreso garantizado de la ciudad de Nueva York, gestionado y financiado de forma privada por la Monarch Foundation para cubrir los primeros 1.000 días de vida del niño",
+        "de": "The Bridge Project, das erste Programm für garantiertes Einkommen in New York City, privat durchgeführt und finanziert von der Monarch Foundation, um die ersten 1.000 Lebenstage eines Kindes abzudecken",
+        "ar": "⁦The Bridge Project⁩، أول برنامج دخل مضمون في مدينة نيويورك، تديره وتموّله بشكل خاص ⁦Monarch Foundation⁩ لتغطية أول 1,000 يوم من حياة الطفل"
+      },
+      "paid": {
+        "en": "Up to $1,000 a month with no conditions for three years to low-income mothers, from 100 mothers in northern Manhattan in June 2021 to about 600 by summer 2022 (an extra 500 first-time mothers from April 2022)",
+        "ja": "低所得の母親に、条件なしで月最大1,000ドルを3年間。2021年6月にマンハッタン北部の母親100人で始まり、2022年夏までに約600人に（2022年4月から初めて母親になる人500人を追加）",
+        "zh": "向低收入母亲无条件每月最多发放 1,000 美元，为期三年，从 2021 年 6 月曼哈顿北部的 100 名母亲扩大到 2022 年夏的约 600 名（2022 年 4 月起另增 500 名初产母亲）",
+        "hi": "कम आय वाली माताओं को तीन साल तक बिना शर्त हर महीने अधिकतम $1,000; जून 2021 में उत्तरी मैनहैटन की 100 माताओं से शुरू होकर 2022 की गर्मियों तक लगभग 600 (अप्रैल 2022 से पहली बार माँ बनने वाली 500 अतिरिक्त)",
+        "es": "Hasta 1.000 $ al mes sin condiciones durante tres años para madres de bajos ingresos, de 100 madres del norte de Manhattan en junio de 2021 a unas 600 en el verano de 2022 (500 madres primerizas más desde abril de 2022)",
+        "de": "Bis zu 1.000 $ im Monat ohne Bedingungen für drei Jahre an einkommensschwache Mütter, von 100 Müttern im nördlichen Manhattan im Juni 2021 bis zu rund 600 im Sommer 2022 (zusätzlich 500 Erstgebärende ab April 2022)",
+        "ar": "حتى ⁦$1,000⁩ شهريًا بلا شروط لمدة ثلاث سنوات لأمهات منخفضات الدخل، من 100 أم في شمال مانهاتن في يونيو 2021 إلى نحو 600 بحلول صيف 2022 (500 أم إضافية لأول مرة بدءًا من أبريل 2022)"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://msmagazine.com/2022/02/25/nyc-guaranteed-income-bridge-project-black-latina-moms/",
+      "source2": "https://www.cbsnews.com/news/project-helps-mothers-babies-out-of-poverty/",
+      "us": {
+        "city": "New York City",
+        "state": "NY",
+        "start": "2021-06",
+        "end": null,
+        "monthly": 1000,
+        "months": 36,
+        "recipients": 600,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": null,
+        "elig": "Low-income pregnant women and new mothers (first-time mothers from 2022) in Washington Heights, Inwood and Harlem, later also the Bronx; undocumented residents eligible",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-oakland-orf",
+      "years": "2021–2023",
+      "type": "gov",
+      "name": "Oakland Resilient Families",
+      "place": {
+        "en": "Oakland, California, USA",
+        "ja": "アメリカ・カリフォルニア州オークランド",
+        "zh": "美国加利福尼亚州奥克兰",
+        "hi": "ओकलैंड, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Oakland, California (EE. UU.)",
+        "de": "Oakland, Kalifornien (USA)",
+        "ar": "أوكلاند، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Oakland (Mayor Libby Schaaf's office) with the nonprofits UpTogether and Oakland Thrives, paid entirely from philanthropic donations",
+        "ja": "オークランド市（リビー・シャーフ市長の事務所）と非営利団体UpTogether、Oakland Thrives。財源はすべて慈善の寄付",
+        "zh": "奥克兰市（市长利比·沙夫办公室）与非营利组织 UpTogether 和 Oakland Thrives 合作，资金全部来自慈善捐款",
+        "hi": "ओकलैंड शहर (मेयर लिबी शाफ़ का कार्यालय) और ग़ैर-लाभकारी संस्थाएँ UpTogether व Oakland Thrives; पूरा पैसा परोपकारी दान से",
+        "es": "Ciudad de Oakland (oficina de la alcaldesa Libby Schaaf) con las organizaciones sin ánimo de lucro UpTogether y Oakland Thrives, financiado íntegramente con donaciones filantrópicas",
+        "de": "Stadt Oakland (Büro von Bürgermeisterin Libby Schaaf) mit den gemeinnützigen Organisationen UpTogether und Oakland Thrives, vollständig aus Spenden finanziert",
+        "ar": "مدينة أوكلاند (مكتب العمدة ليبي شاف) مع المنظمتين غير الربحيتين ⁦UpTogether⁩ و⁦Oakland Thrives⁩، بتمويل كامل من تبرعات خيرية"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 18 months to 600 low-income Oakland families with children, chosen by lottery in two cohorts; payments ran July 2021–June 2023",
+        "ja": "子どものいるオークランドの低所得600家族に、条件なしで月500ドルを18か月。2回に分けて抽選で選び、支給は2021年7月〜2023年6月",
+        "zh": "分两批通过抽签选出 600 个有孩子的奥克兰低收入家庭，无条件每月发放 500 美元，为期 18 个月；发放期为 2021 年 7 月至 2023 年 6 月",
+        "hi": "लॉटरी से दो समूहों में चुने गए, बच्चों वाले 600 कम आय वाले ओकलैंड परिवारों को 18 महीने तक बिना शर्त हर महीने $500; भुगतान जुलाई 2021–जून 2023",
+        "es": "500 $ al mes sin condiciones durante 18 meses para 600 familias de bajos ingresos de Oakland con hijos, elegidas por sorteo en dos cohortes; los pagos fueron de julio 2021 a junio 2023",
+        "de": "500 $ im Monat ohne Bedingungen für 18 Monate an 600 einkommensschwache Familien mit Kindern in Oakland, per Los in zwei Kohorten ausgewählt; Zahlungen von Juli 2021 bis Juni 2023",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 18 شهرًا لـ600 أسرة منخفضة الدخل لديها أطفال في أوكلاند، اختيرت بالقرعة على دفعتين؛ واستمرت الدفعات من يوليو 2021 إلى يونيو 2023"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research (April 2025) reported that full-time employment rose faster among recipients (15% to 26%) than in the control group (14% to 18%) and that recipients' income stayed more stable. The authors said the amount allowed only temporary respite in a rapidly gentrifying city",
+        "ja": "ペンシルベニア大学CGIR（2025年4月）は、受給者のフルタイム雇用が対照群（14%→18%）より速く伸び（15%→26%）、収入も安定していたと報告。著者らは、急速に高級化が進む市ではこの金額は一時的な息継ぎにしかならなかったとした",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2025 年 4 月）称，受助者的全职就业率上升更快（15% 升至 26%），对照组为 14% 升至 18%，且受助者收入更稳定。作者表示，在快速士绅化的城市里，这笔钱只能带来暂时的喘息",
+        "hi": "पेन के Center for Guaranteed Income Research (अप्रैल 2025) के अनुसार प्राप्तकर्ताओं में पूर्णकालिक रोज़गार नियंत्रण समूह (14% से 18%) की तुलना में तेज़ी से बढ़ा (15% से 26%) और उनकी आय ज़्यादा स्थिर रही। लेखकों ने कहा कि तेज़ी से जेंट्रिफ़ाई हो रहे शहर में यह राशि सिर्फ़ अस्थायी राहत दे पाई",
+        "es": "El Center for Guaranteed Income Research de Penn (abril de 2025) informó de que el empleo a tiempo completo creció más rápido entre los beneficiarios (del 15 % al 26 %) que en el grupo de control (del 14 % al 18 %) y de que los ingresos de los beneficiarios se mantuvieron más estables. Los autores señalaron que el monto solo permitió un respiro temporal en una ciudad en rápida gentrificación",
+        "de": "Das Center for Guaranteed Income Research der Penn (April 2025) berichtete, dass die Vollzeitbeschäftigung bei den Empfängern schneller stieg (von 15 % auf 26 %) als in der Kontrollgruppe (von 14 % auf 18 %) und ihr Einkommen stabiler blieb. Laut den Autoren verschaffte der Betrag in einer sich rasch gentrifizierenden Stadt nur vorübergehend Luft",
+        "ar": "أفاد ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (أبريل 2025) بأن العمل بدوام كامل ارتفع أسرع بين المستفيدين (من 15% إلى 26%) منه في المجموعة الضابطة (من 14% إلى 18%) وبأن دخل المستفيدين ظل أكثر استقرارًا. وقال المؤلفون إن المبلغ لم يتح سوى متنفس مؤقت في مدينة يتسارع فيها التحسين العمراني الذي يرفع تكاليف العيش ويدفع السكان إلى الخروج"
+      },
+      "source": "https://guaranteedincome.us/oakland",
+      "source2": "https://www.audacy.com/kdkaradio/news/national/universal-basic-income-touted-as-a-success-in-oakland",
+      "us": {
+        "city": "Oakland",
+        "state": "CA",
+        "start": "2021-07",
+        "end": "2023-06",
+        "monthly": 500,
+        "months": 18,
+        "recipients": 600,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Families with at least one child under 18. Cohort 1: residents of a one-square-mile area of East Oakland with income below 50% of Area Median Income. Cohort 2: Oakland households below 138% of the federal poverty level. Chosen by two lotteries, one per phase",
+        "eval": {
+          "by": "University of Pennsylvania Center for Guaranteed Income Research (Flynn, Tandon, Nichols, Thompson, West and Castro)",
+          "year": 2025,
+          "type": "report",
+          "url": "https://guaranteedincome.us/images/oakland-report.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-sacramento-dips",
+      "years": "2021–2023",
+      "type": "ngo",
+      "name": "Direct Investment Program in Sacramento (DIPS)",
+      "place": {
+        "en": "Sacramento County, California, USA",
+        "ja": "アメリカ・カリフォルニア州サクラメント郡",
+        "zh": "美国加利福尼亚州萨克拉门托县",
+        "hi": "सैक्रामेंटो काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Sacramento, California (EE. UU.)",
+        "de": "Sacramento County, Kalifornien (USA)",
+        "ar": "مقاطعة ساكرامنتو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "United Way California Capital Region, a regional charity, with the nonprofit UpTogether",
+        "ja": "地域の慈善団体United Way California Capital Regionと非営利団体UpTogether",
+        "zh": "地区慈善机构加州首府地区联合之路（United Way California Capital Region），与非营利组织 UpTogether 合作",
+        "hi": "United Way California Capital Region, एक क्षेत्रीय चैरिटी, ग़ैर-लाभकारी संस्था UpTogether के साथ",
+        "es": "United Way California Capital Region, una organización benéfica regional, con la organización sin ánimo de lucro UpTogether",
+        "de": "United Way California Capital Region, eine regionale Wohltätigkeitsorganisation, mit der gemeinnützigen Organisation UpTogether",
+        "ar": "⁦United Way California Capital Region⁩، جمعية خيرية إقليمية، مع المنظمة غير الربحية ⁦UpTogether⁩"
+      },
+      "paid": {
+        "en": "$300 a month with no conditions for two years (2021–June 2023) to 100 low-income households in Sacramento County, the region's first guaranteed income program",
+        "ja": "サクラメント郡の低所得100世帯に、条件なしで月300ドルを2年間（2021年〜2023年6月）。地域初の保証所得プログラム",
+        "zh": "向萨克拉门托县 100 个低收入家庭无条件每月发放 300 美元，为期两年（2021 年至 2023 年 6 月），是该地区首个保障收入项目",
+        "hi": "सैक्रामेंटो काउंटी के 100 कम आय वाले परिवारों को दो साल (2021–जून 2023) तक बिना शर्त हर महीने $300; यह क्षेत्र का पहला गारंटीड इनकम कार्यक्रम था",
+        "es": "300 $ al mes sin condiciones durante dos años (2021–junio 2023) para 100 hogares de bajos ingresos del condado de Sacramento, el primer programa de ingreso garantizado de la región",
+        "de": "300 $ im Monat ohne Bedingungen für zwei Jahre (2021 bis Juni 2023) an 100 einkommensschwache Haushalte in Sacramento County, das erste Programm für garantiertes Einkommen in der Region",
+        "ar": "⁦$300⁩ شهريًا بلا شروط لمدة عامين (2021–يونيو 2023) لـ100 أسرة منخفضة الدخل في مقاطعة ساكرامنتو، وهو أول برنامج دخل مضمون في المنطقة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://engagesac.org/blog-civic-engagement/2022/6/21/27sqiwgkx6a4ywztyxu00roy7056ul",
+      "source2": "https://basicincomecanada.org/sacramento-program-gives-families-300-a-month-no-strings-attached-how-its-changing-lives/",
+      "us": {
+        "city": "Sacramento County",
+        "state": "CA",
+        "start": "2021-07",
+        "end": "2023-06",
+        "monthly": 300,
+        "months": 24,
+        "recipients": 100,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Low-income Sacramento County households (income limits shown in the program's 2021–2023 eligibility chart; details not read)",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-cambridge-rise",
+      "years": "2021–2023",
+      "type": "gov",
+      "name": "Cambridge RISE (Recurring Income for Success and Empowerment)",
+      "place": {
+        "en": "Cambridge, Massachusetts, USA",
+        "ja": "アメリカ・マサチューセッツ州ケンブリッジ",
+        "zh": "美国马萨诸塞州剑桥",
+        "hi": "कैम्ब्रिज, मैसाचुसेट्स, अमेरिका",
+        "es": "Cambridge, Massachusetts (EE. UU.)",
+        "de": "Cambridge, Massachusetts (USA)",
+        "ar": "كامبريدج، ماساتشوستس، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Cambridge Community Foundation and then-Mayor Sumbul Siddiqui, paid entirely from private money (including Harvard and MIT), with a randomized study by Penn's Center for Guaranteed Income Research",
+        "ja": "ケンブリッジ・コミュニティ財団と当時のスンブル・シディキ市長。財源はすべて民間（ハーバード大学やMITを含む）で、ペンシルベニア大学CGIRが無作為化研究",
+        "zh": "剑桥社区基金会和时任市长苏姆布尔·西迪基，资金全部来自私人（包括哈佛大学和麻省理工学院），由宾夕法尼亚大学保障收入研究中心开展随机研究",
+        "hi": "Cambridge Community Foundation और तत्कालीन मेयर सुंबुल सिद्दीक़ी; पूरा पैसा निजी (Harvard और MIT सहित), रैंडमाइज़्ड अध्ययन पेन के Center for Guaranteed Income Research का",
+        "es": "Cambridge Community Foundation y la entonces alcaldesa Sumbul Siddiqui, financiado íntegramente con dinero privado (incluidos Harvard y el MIT), con un estudio aleatorizado del Center for Guaranteed Income Research de Penn",
+        "de": "Cambridge Community Foundation und die damalige Bürgermeisterin Sumbul Siddiqui, vollständig aus privaten Mitteln bezahlt (darunter Harvard und MIT), mit einer randomisierten Studie des Center for Guaranteed Income Research der Penn",
+        "ar": "⁦Cambridge Community Foundation⁩ والعمدة آنذاك سنبل صديقي، بتمويل كامل من أموال خاصة (منها هارفارد ومعهد ماساتشوستس للتكنولوجيا)، مع دراسة عشوائية من ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 18 months from September 2021 to 130 low-income single caregivers chosen at random",
+        "ja": "無作為に選んだ低所得のひとり親の養育者130人に、2021年9月から条件なしで月500ドルを18か月",
+        "zh": "自 2021 年 9 月起，向随机选出的 130 名低收入单亲照护者无条件每月发放 500 美元，为期 18 个月",
+        "hi": "रैंडम रूप से चुने गए 130 कम आय वाले अकेले देखभालकर्ताओं को सितंबर 2021 से 18 महीने तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 18 meses desde septiembre de 2021 para 130 cuidadores solos de bajos ingresos elegidos al azar",
+        "de": "500 $ im Monat ohne Bedingungen für 18 Monate ab September 2021 an 130 zufällig ausgewählte einkommensschwache Alleinerziehende",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 18 شهرًا بدءًا من سبتمبر 2021 لـ130 من مقدمي الرعاية المنفردين منخفضي الدخل اختيروا عشوائيًا"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research (March 2024), compared with 156 controls: full-time employment rose from 36% to 40% among recipients while it fell from 30% to 28% in the control group; recipients also had higher incomes, less income volatility and better food security",
+        "ja": "ペンシルベニア大学CGIR（2024年3月）は対照群156人と比べ、受給者のフルタイム雇用が36%から40%に上がった一方、対照群では30%から28%に下がったと報告。受給者は収入も多く、収入の変動が小さく、食料の確保も良かった",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2024 年 3 月）与 156 名对照组成员比较：受助者的全职就业率从 36% 升至 40%，对照组则从 30% 降至 28%；受助者收入也更高，收入波动更小，粮食保障更好",
+        "hi": "पेन के Center for Guaranteed Income Research (मार्च 2024) ने 156 नियंत्रण वालों से तुलना की: प्राप्तकर्ताओं में पूर्णकालिक रोज़गार 36% से 40% हुआ, जबकि नियंत्रण समूह में 30% से गिरकर 28% हुआ; प्राप्तकर्ताओं की आय भी ज़्यादा, आय का उतार-चढ़ाव कम और खाद्य सुरक्षा बेहतर रही",
+        "es": "El Center for Guaranteed Income Research de Penn (marzo de 2024), frente a 156 controles: el empleo a tiempo completo subió del 36 % al 40 % entre los beneficiarios, mientras bajó del 30 % al 28 % en el grupo de control; los beneficiarios también tuvieron mayores ingresos, menos volatilidad de ingresos y mejor seguridad alimentaria",
+        "de": "Das Center for Guaranteed Income Research der Penn (März 2024) im Vergleich mit 156 Personen der Kontrollgruppe: Die Vollzeitbeschäftigung stieg bei den Empfängern von 36 % auf 40 %, während sie in der Kontrollgruppe von 30 % auf 28 % sank; die Empfänger hatten zudem höhere Einkommen, geringere Einkommensschwankungen und eine bessere Ernährungssicherheit",
+        "ar": "⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (مارس 2024)، مقارنةً بـ156 في المجموعة الضابطة: ارتفع العمل بدوام كامل من 36% إلى 40% بين المستفيدين بينما انخفض من 30% إلى 28% في المجموعة الضابطة؛ وكان لدى المستفيدين أيضًا دخل أعلى وتقلب أقل في الدخل وأمن غذائي أفضل"
+      },
+      "source": "https://sp2.upenn.edu/report-guaranteed-income-improved-financial-health-for-caregivers-in-cambridge-ma/",
+      "source2": "https://prnewswire.com/news-releases/cambridge-guaranteed-income-pilot-shows-increased-financial-stability-higher-employment-and-better-educational-outcomes-for-children-302101186.html",
+      "us": {
+        "city": "Cambridge",
+        "state": "MA",
+        "start": "2021-09",
+        "end": "2023",
+        "monthly": 500,
+        "months": 18,
+        "recipients": 130,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Cambridge single caregivers 18+ with at least one child under 18 and income below 80% of area median income, chosen at random; 156 others formed a control group",
+        "eval": {
+          "by": "Penn Center for Guaranteed Income Research",
+          "year": 2024,
+          "type": "report",
+          "url": "https://sp2.upenn.edu/report-guaranteed-income-improved-financial-health-for-caregivers-in-cambridge-ma/"
+        }
+      }
+    },
+    {
+      "id": "us-arlington-guarantee",
+      "years": "2021–2023",
+      "type": "ngo",
+      "name": "Arlington's Guarantee",
+      "place": {
+        "en": "Arlington County, Virginia, USA",
+        "ja": "アメリカ・バージニア州アーリントン郡",
+        "zh": "美国弗吉尼亚州阿灵顿县",
+        "hi": "आर्लिंगटन काउंटी, वर्जीनिया, अमेरिका",
+        "es": "Condado de Arlington, Virginia (EE. UU.)",
+        "de": "Arlington County, Virginia (USA)",
+        "ar": "مقاطعة أرلينغتون، فيرجينيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Arlington Community Foundation, paid from $2 million of private donations, with the county's Department of Human Services",
+        "ja": "アーリントン・コミュニティ財団。財源は個人の寄付200万ドルで、郡の福祉局と協力",
+        "zh": "阿灵顿社区基金会，资金为 200 万美元私人捐款，与县公共服务局合作",
+        "hi": "Arlington Community Foundation, पैसा $20 लाख के निजी दान से, काउंटी के Department of Human Services के साथ",
+        "es": "Arlington Community Foundation, con 2 millones de dólares de donaciones privadas, junto al Departamento de Servicios Humanos del condado",
+        "de": "Arlington Community Foundation, bezahlt aus 2 Mio. $ privater Spenden, mit der Sozialbehörde des Countys (Department of Human Services)",
+        "ar": "⁦Arlington Community Foundation⁩، بتمويل 2 مليون دولار من تبرعات خاصة، مع إدارة الخدمات الإنسانية في المقاطعة"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 18 months to 200 very low-income households with children, chosen at random, with payments between September 2021 and late 2023",
+        "ja": "無作為に選んだ子どものいる非常に低所得の200世帯に、条件なしで月500ドルを18か月。支給は2021年9月〜2023年後半",
+        "zh": "向随机选出的 200 个有孩子的极低收入家庭无条件每月发放 500 美元，为期 18 个月，发放期为 2021 年 9 月至 2023 年底",
+        "hi": "रैंडम रूप से चुने गए, बच्चों वाले 200 बहुत कम आय वाले परिवारों को 18 महीने तक बिना शर्त हर महीने $500; भुगतान सितंबर 2021 से 2023 के अंत के बीच",
+        "es": "500 $ al mes sin condiciones durante 18 meses para 200 hogares con hijos de ingresos muy bajos, elegidos al azar, con pagos entre septiembre de 2021 y finales de 2023",
+        "de": "500 $ im Monat ohne Bedingungen für 18 Monate an 200 zufällig ausgewählte Haushalte mit Kindern und sehr niedrigem Einkommen, mit Zahlungen zwischen September 2021 und Ende 2023",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 18 شهرًا لـ200 أسرة شديدة انخفاض الدخل لديها أطفال، اختيرت عشوائيًا، مع دفعات بين سبتمبر 2021 وأواخر 2023"
+      },
+      "result": {
+        "en": "The Arlington Community Foundation and county human services (February 2024) reported recipients' monthly work income rose 36% ($1,200 to $1,640) vs 9% for a control group, and employment rose from 75% to 87%. Not an independent evaluation; most still could not cover a $400 emergency",
+        "ja": "アーリントン・コミュニティ財団と郡の福祉局（2024年2月）は、受給者の月の勤労収入が36%（1,200ドル→1,640ドル）増え、対照群は9%増だったこと、就業率が75%から87%に上がったことを報告。独立した評価ではなく、多くはなお400ドルの急な出費を払えなかった",
+        "zh": "阿灵顿社区基金会和县公共服务部门（2024 年 2 月）称，受助者的月工作收入增加 36%（1,200 美元升至 1,640 美元），对照组为 9%，就业率从 75% 升至 87%。并非独立评估；多数人仍无法应付 400 美元急用",
+        "hi": "Arlington Community Foundation और काउंटी की मानव सेवाओं (फ़रवरी 2024) के अनुसार प्राप्तकर्ताओं की काम से मासिक आय 36% ($1,200 से $1,640) बढ़ी, जबकि नियंत्रण समूह की 9%, और रोज़गार 75% से 87% हुआ। यह स्वतंत्र मूल्यांकन नहीं है; ज़्यादातर अब भी $400 का अचानक ख़र्च नहीं झेल पाते थे",
+        "es": "La Arlington Community Foundation y los servicios humanos del condado (febrero de 2024) informaron de que los ingresos laborales mensuales de los beneficiarios subieron un 36 % (de 1.200 $ a 1.640 $) frente al 9 % de un grupo de control, y el empleo pasó del 75 % al 87 %. No es una evaluación independiente; la mayoría seguía sin poder cubrir un imprevisto de 400 $",
+        "de": "Die Arlington Community Foundation und die Sozialbehörde des Countys (Februar 2024) berichteten, dass das monatliche Erwerbseinkommen der Empfänger um 36 % stieg (von 1.200 $ auf 1.640 $) gegenüber 9 % in einer Kontrollgruppe und die Beschäftigung von 75 % auf 87 %. Keine unabhängige Evaluation; die meisten konnten weiterhin keine Notausgabe von 400 $ decken",
+        "ar": "أفادت ⁦Arlington Community Foundation⁩ وإدارة الخدمات الإنسانية في المقاطعة (فبراير 2024) بأن الدخل الشهري من العمل لدى المستفيدين ارتفع 36% (من ⁦$1,200⁩ إلى ⁦$1,640⁩) مقابل 9% لمجموعة ضابطة، وبأن التوظيف ارتفع من 75% إلى 87%. ليس تقييمًا مستقلًا؛ وظل معظمهم عاجزين عن تغطية طارئ بقيمة ⁦$400⁩"
+      },
+      "source": "https://m.connectionnewspapers.com/news/2024/feb/21/arlingtons-guarantee-pilot-declared-a-success",
+      "source2": "https://www.arlnow.com/?p=313085",
+      "us": {
+        "city": "Arlington",
+        "state": "VA",
+        "start": "2021-09",
+        "end": "2023-11",
+        "monthly": 500,
+        "months": 18,
+        "recipients": 200,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Arlington households with children under 18 earning about 30% of area median income (under about $46,600), chosen at random, including 25 undocumented households and 25 people returning from incarceration",
+        "eval": {
+          "by": "Arlington Community Foundation and Arlington County Department of Human Services",
+          "year": 2024,
+          "type": "report",
+          "url": "https://www.arlnow.com/?p=313085"
+        }
+      }
+    },
+    {
+      "id": "us-columbia-climb",
+      "years": "2021–2022",
+      "type": "gov",
+      "name": "Columbia Life Improvement Monetary Boost (CLIMB)",
+      "place": {
+        "en": "Columbia, South Carolina, USA",
+        "ja": "アメリカ・サウスカロライナ州コロンビア",
+        "zh": "美国南卡罗来纳州哥伦比亚",
+        "hi": "कोलंबिया, साउथ कैरोलाइना, अमेरिका",
+        "es": "Columbia, Carolina del Sur (EE. UU.)",
+        "de": "Columbia, South Carolina (USA)",
+        "ar": "كولومبيا، كارولاينا الجنوبية، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Columbia with the Midlands Fatherhood Coalition, paid entirely from private and philanthropic money ($600,000), including Mayors for a Guaranteed Income",
+        "ja": "コロンビア市とMidlands Fatherhood Coalition。財源はMayors for a Guaranteed Incomeを含む、すべて民間・慈善の資金（60万ドル）",
+        "zh": "哥伦比亚市与 Midlands Fatherhood Coalition 合作，资金全部来自私人和慈善资金（60 万美元），包括“保障收入市长联盟”",
+        "hi": "कोलंबिया शहर, Midlands Fatherhood Coalition के साथ; पूरा पैसा Mayors for a Guaranteed Income सहित निजी और परोपकारी कोष ($6 लाख) से",
+        "es": "Ciudad de Columbia con la Midlands Fatherhood Coalition, financiado íntegramente con dinero privado y filantrópico (600.000 $), incluido Mayors for a Guaranteed Income",
+        "de": "Stadt Columbia mit der Midlands Fatherhood Coalition, vollständig aus privaten und gemeinnützigen Mitteln bezahlt (600.000 $), darunter Mayors for a Guaranteed Income",
+        "ar": "مدينة كولومبيا مع ⁦Midlands Fatherhood Coalition⁩، بتمويل كامل من أموال خاصة وخيرية (⁦$600,000⁩)، منها ⁦Mayors for a Guaranteed Income⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months (September 2021–August 2022) to 100 low-income fathers chosen at random; 130 others formed a control group",
+        "ja": "無作為に選んだ低所得の父親100人に、条件なしで月500ドルを12か月（2021年9月〜2022年8月）。別の130人が対照群",
+        "zh": "向随机选出的 100 名低收入父亲无条件每月发放 500 美元，为期 12 个月（2021 年 9 月至 2022 年 8 月）；另有 130 人组成对照组",
+        "hi": "रैंडम रूप से चुने गए 100 कम आय वाले पिताओं को 12 महीने (सितंबर 2021–अगस्त 2022) तक बिना शर्त हर महीने $500; 130 अन्य नियंत्रण समूह में थे",
+        "es": "500 $ al mes sin condiciones durante 12 meses (septiembre 2021–agosto 2022) para 100 padres de bajos ingresos elegidos al azar; otros 130 formaron un grupo de control",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate (September 2021 bis August 2022) an 100 zufällig ausgewählte einkommensschwache Väter; 130 weitere bildeten eine Kontrollgruppe",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا (سبتمبر 2021–أغسطس 2022) لـ100 أب منخفضي الدخل اختيروا عشوائيًا؛ وشكّل 130 آخرون مجموعة ضابطة"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research (February 2024), vs 130 controls: recipients kept full-time jobs at higher rates, had better food security and less income volatility, and spent mostly on their children; but they reported higher stress throughout, and many owed about $300 a month in child support",
+        "ja": "ペンシルベニア大学CGIR（2024年2月）は対照群130人と比べ、受給者はフルタイムの仕事を続ける割合が高く、食料の確保が良く、収入の変動が小さく、主に子どものために使ったと報告。ただし期間を通じてストレスは高く、多くは月約300ドルの養育費を負っていた",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2024 年 2 月）与 130 名对照组成员比较：受助者保住全职工作的比例更高，粮食保障更好，收入波动更小，钱主要花在孩子身上；但他们自始至终报告的压力更高，许多人每月需支付约 300 美元子女抚养费",
+        "hi": "पेन के Center for Guaranteed Income Research (फ़रवरी 2024) ने 130 नियंत्रण वालों से तुलना की: प्राप्तकर्ताओं ने ज़्यादा दर से पूर्णकालिक नौकरी बनाए रखी, खाद्य सुरक्षा बेहतर और आय का उतार-चढ़ाव कम रहा, और ज़्यादातर पैसा बच्चों पर ख़र्च किया; पर उन्होंने पूरे समय ज़्यादा तनाव बताया, और कई पर हर महीने लगभग $300 का चाइल्ड सपोर्ट बकाया था",
+        "es": "El Center for Guaranteed Income Research de Penn (febrero de 2024), frente a 130 controles: los beneficiarios conservaron el empleo a tiempo completo en mayor proporción, tuvieron mejor seguridad alimentaria y menos volatilidad de ingresos, y gastaron sobre todo en sus hijos; pero declararon más estrés durante todo el periodo, y muchos debían unos 300 $ al mes de pensión alimenticia",
+        "de": "Das Center for Guaranteed Income Research der Penn (Februar 2024) im Vergleich mit 130 Personen der Kontrollgruppe: Die Empfänger behielten häufiger Vollzeitstellen, hatten eine bessere Ernährungssicherheit und geringere Einkommensschwankungen und gaben das Geld vor allem für ihre Kinder aus; sie berichteten jedoch durchgehend mehr Stress, und viele schuldeten etwa 300 $ im Monat an Kindesunterhalt",
+        "ar": "⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (فبراير 2024)، مقارنةً بـ130 في المجموعة الضابطة: حافظ المستفيدون على وظائف بدوام كامل بمعدلات أعلى، وكان لديهم أمن غذائي أفضل وتقلب أقل في الدخل، وأنفقوا أساسًا على أطفالهم؛ لكنهم أفادوا بتوتر أعلى طوال الفترة، وكان كثيرون منهم مدينين بنحو ⁦$300⁩ شهريًا نفقةً للأطفال"
+      },
+      "source": "https://guaranteedincome.us/columbia",
+      "source2": "https://www.wistv.com/2021/09/14/first-direct-payments-coming-columbia-fathers-through-climb-guaranteed-income-pilot-program/",
+      "us": {
+        "city": "Columbia",
+        "state": "SC",
+        "start": "2021-09",
+        "end": "2022-08",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 100,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Fathers aged 18+ in Columbia (ZIP codes 29203 and 29223) who were current or former clients of the Midlands Fatherhood Coalition; randomly selected",
+        "eval": {
+          "by": "University of Pennsylvania Center for Guaranteed Income Research",
+          "year": 2024,
+          "type": "report",
+          "url": "https://guaranteedincome.us/images/columbia-report.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-santa-fe-leap",
+      "years": "2021–2022",
+      "type": "gov",
+      "name": "Santa Fe LEAP (Learn, Earn, Achieve Program)",
+      "place": {
+        "en": "Santa Fe, New Mexico, USA",
+        "ja": "アメリカ・ニューメキシコ州サンタフェ",
+        "zh": "美国新墨西哥州圣菲",
+        "hi": "सांता फ़े, न्यू मेक्सिको, अमेरिका",
+        "es": "Santa Fe, Nuevo México (EE. UU.)",
+        "de": "Santa Fe, New Mexico (USA)",
+        "ar": "سانتا في، نيومكسيكو، الولايات المتحدة"
+      },
+      "who": {
+        "en": "The City of Santa Fe under Mayor Alan Webber, with Santa Fe Community College, the Santa Fe Community Foundation and Mayors for a Guaranteed Income",
+        "ja": "アラン・ウェバー市長のもとのサンタフェ市、サンタフェ・コミュニティカレッジ、サンタフェ・コミュニティ財団、Mayors for a Guaranteed Income",
+        "zh": "圣菲市（市长艾伦·韦伯），与圣菲社区学院、圣菲社区基金会及“保障收入市长联盟”合作",
+        "hi": "मेयर एलन वेबर के अधीन सांता फ़े शहर, Santa Fe Community College, Santa Fe Community Foundation और Mayors for a Guaranteed Income के साथ",
+        "es": "La Ciudad de Santa Fe bajo el alcalde Alan Webber, con el Santa Fe Community College, la Santa Fe Community Foundation y Mayors for a Guaranteed Income",
+        "de": "Stadt Santa Fe unter Bürgermeister Alan Webber, mit dem Santa Fe Community College, der Santa Fe Community Foundation und Mayors for a Guaranteed Income",
+        "ar": "مدينة سانتا في في عهد العمدة آلان ويبر، مع ⁦Santa Fe Community College⁩ و⁦Santa Fe Community Foundation⁩ و⁦Mayors for a Guaranteed Income⁩"
+      },
+      "paid": {
+        "en": "$400 a month with no conditions for a year (October 2021–September 2022) to 100 Santa Fe Community College students aged 30 or under raising children, picked at random from eligible students",
+        "ja": "子育て中の30歳以下のサンタフェ・コミュニティカレッジの学生から無作為に選んだ100人に、条件なしで月400ドルを1年間（2021年10月〜2022年9月）",
+        "zh": "从符合条件的学生中随机选出 100 名 30 岁及以下、正在抚养孩子的圣菲社区学院学生，无条件每月发放 400 美元，为期一年（2021 年 10 月至 2022 年 9 月）",
+        "hi": "पात्र छात्रों में से रैंडम रूप से चुने गए, बच्चे पाल रहे 30 साल या उससे कम उम्र के 100 Santa Fe Community College छात्रों को एक साल (अक्टूबर 2021–सितंबर 2022) तक बिना शर्त हर महीने $400",
+        "es": "400 $ al mes sin condiciones durante un año (octubre 2021–septiembre 2022) para 100 estudiantes del Santa Fe Community College de 30 años o menos que criaban hijos, elegidos al azar entre los estudiantes elegibles",
+        "de": "400 $ im Monat ohne Bedingungen für ein Jahr (Oktober 2021 bis September 2022) an 100 Studierende des Santa Fe Community College bis 30 Jahre mit Kindern, zufällig aus berechtigten Studierenden ausgewählt",
+        "ar": "⁦$400⁩ شهريًا بلا شروط لمدة عام (أكتوبر 2021–سبتمبر 2022) لـ100 من طلاب ⁦Santa Fe Community College⁩ في سن 30 عامًا أو أقل يربّون أطفالًا، اختيروا عشوائيًا من بين الطلاب المؤهلين"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research reported (as summarized by the college, 2025) that participants' median annual income rose from $19,500 to $24,000, full-time employment rose 19 points and about 30% graduated during or soon after the program; these are before-and-after figures without a comparison group",
+        "ja": "ペンシルベニア大学CGIRの報告（大学による要約、2025年）では、参加者の年収の中央値が1万9,500ドルから2万4,000ドルに上がり、フルタイム雇用が19ポイント増え、約30%が期間中かその直後に卒業した。比較群のない前後比較",
+        "zh": "据学院 2025 年的总结，宾夕法尼亚大学保障收入研究中心称，参与者的年收入中位数从 19,500 美元增至 24,000 美元，全职就业率提高 19 个百分点，约 30% 的人在项目期间或结束后不久毕业；这些是前后比较的数字，没有比较组",
+        "hi": "कॉलेज के सारांश (2025) के अनुसार पेन के Center for Guaranteed Income Research ने बताया कि प्रतिभागियों की माध्यिका (median) वार्षिक आय $19,500 से बढ़कर $24,000 हुई, पूर्णकालिक रोज़गार 19 अंक बढ़ा और लगभग 30% ने कार्यक्रम के दौरान या उसके जल्द बाद स्नातक किया; ये बिना तुलना समूह के पहले-और-बाद के आँकड़े हैं",
+        "es": "El Center for Guaranteed Income Research de Penn informó (según el resumen del college, 2025) de que el ingreso anual mediano de los participantes pasó de 19.500 $ a 24.000 $, el empleo a tiempo completo subió 19 puntos y cerca del 30 % se graduó durante el programa o poco después; son cifras de antes y después sin grupo de comparación",
+        "de": "Das Center for Guaranteed Income Research der Penn berichtete (laut Zusammenfassung des College, 2025), dass das mittlere Jahreseinkommen der Teilnehmenden von 19.500 $ auf 24.000 $ stieg, die Vollzeitbeschäftigung um 19 Punkte zunahm und etwa 30 % während oder kurz nach dem Programm ihren Abschluss machten; es handelt sich um Vorher-nachher-Zahlen ohne Vergleichsgruppe",
+        "ar": "أفاد ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (كما لخّصته الكلية، 2025) بأن الدخل السنوي الوسيط للمشاركين ارتفع من ⁦$19,500⁩ إلى ⁦$24,000⁩، وارتفع العمل بدوام كامل 19 نقطة، وتخرّج نحو 30% أثناء البرنامج أو بعده بقليل؛ وهذه أرقام قبل وبعد دون مجموعة مقارنة"
+      },
+      "source": "https://guaranteedincome.us/santa-fe",
+      "source2": "https://www.sfcc.edu/inside-sfcc/break-the-cycle/",
+      "us": {
+        "city": "Santa Fe",
+        "state": "NM",
+        "start": "2021-10",
+        "end": "2022-09",
+        "monthly": 400,
+        "months": 12,
+        "recipients": 100,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Santa Fe Community College students aged 30 or under in its Expanding Opportunities for Young Families program, primary caretakers of at least one child under 18, income below 200% of the federal poverty line; picked by random selection",
+        "eval": {
+          "by": "Center for Guaranteed Income Research, University of Pennsylvania",
+          "year": 2025,
+          "type": "report",
+          "url": "https://guaranteedincome.us/santa-fe"
+        }
+      }
+    },
+    {
+      "id": "us-south-sf-gi",
+      "years": "2021–2022",
+      "type": "gov",
+      "name": "South San Francisco Guaranteed Income Pilot Program",
+      "place": {
+        "en": "South San Francisco, California, USA",
+        "ja": "アメリカ・カリフォルニア州サウスサンフランシスコ",
+        "zh": "美国加利福尼亚州南旧金山",
+        "hi": "साउथ सैन फ़्रांसिस्को, कैलिफ़ोर्निया, अमेरिका",
+        "es": "South San Francisco, California (EE. UU.)",
+        "de": "South San Francisco, Kalifornien (USA)",
+        "ar": "جنوب سان فرانسيسكو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of South San Francisco, paid from federal pandemic relief (ARPA) and a county grant; the YMCA Community Resource Center ran it",
+        "ja": "サウスサンフランシスコ市。財源は連邦のコロナ対策資金（ARPA）と郡の補助金で、YMCAコミュニティ資源センターが運営",
+        "zh": "南旧金山市，资金来自联邦疫情纾困款（ARPA）和县拨款，由 YMCA 社区资源中心运营",
+        "hi": "साउथ सैन फ़्रांसिस्को शहर, पैसा संघीय महामारी राहत (ARPA) और काउंटी अनुदान से; इसे YMCA Community Resource Center ने चलाया",
+        "es": "Ciudad de South San Francisco, financiado con fondos federales de alivio por la pandemia (ARPA) y una subvención del condado; lo gestionó el YMCA Community Resource Center",
+        "de": "Stadt South San Francisco, bezahlt aus Corona-Hilfen des Bundes (ARPA) und einem Zuschuss des Countys; durchgeführt vom YMCA Community Resource Center",
+        "ar": "مدينة جنوب سان فرانسيسكو، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) ومنحة من المقاطعة؛ وتولّى ⁦YMCA Community Resource Center⁩ إدارته"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months, from November 2021, to 160 low-income households (with 275 children), plus optional budgeting and financial counselling",
+        "ja": "低所得の160世帯（子ども275人）に、2021年11月から条件なしで月500ドルを12か月。希望者には家計管理や金融相談も提供",
+        "zh": "自 2021 年 11 月起，向 160 个低收入家庭（共有 275 名孩子）无条件每月发放 500 美元，为期 12 个月，并可自愿接受预算和理财咨询",
+        "hi": "160 कम आय वाले परिवारों (275 बच्चों सहित) को नवंबर 2021 से 12 महीने तक बिना शर्त हर महीने $500, साथ में वैकल्पिक बजट और वित्तीय परामर्श",
+        "es": "500 $ al mes sin condiciones durante 12 meses, desde noviembre de 2021, para 160 hogares de bajos ingresos (con 275 niños), más asesoría opcional de presupuesto y finanzas",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate, ab November 2021, an 160 einkommensschwache Haushalte (mit 275 Kindern), dazu freiwillige Budget- und Finanzberatung",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا، بدءًا من نوفمبر 2021، لـ160 أسرة منخفضة الدخل (لديها 275 طفلًا)، مع إرشاد اختياري في إعداد الميزانية والشؤون المالية"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.ssfca.gov/Departments/Economic-and-Community-Development/Divisions/Economic-Development/Guaranteed-Income-Pilot-Program",
+      "source2": "https://calmatters.org/california-divide/2021/11/san-francisco-guaranteed-income/",
+      "us": {
+        "city": "South San Francisco",
+        "state": "CA",
+        "start": "2021-11",
+        "end": "2022",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 160,
+        "unit": "households",
+        "funders": ["arpa", "public"],
+        "control": false,
+        "elig": "Low-income South San Francisco households (all below 30% of Area Median Income), prioritising families at risk of displacement, foster youth, families with young children and the lowest-income neighborhoods; undocumented residents eligible",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-providence-pvdgi",
+      "years": "2021–2023",
+      "type": "gov",
+      "name": "Providence Guaranteed Income Program",
+      "place": {
+        "en": "Providence, Rhode Island, USA",
+        "ja": "アメリカ・ロードアイランド州プロビデンス",
+        "zh": "美国罗得岛州普罗维登斯",
+        "hi": "प्रोविडेंस, रोड आइलैंड, अमेरिका",
+        "es": "Providence, Rhode Island (EE. UU.)",
+        "de": "Providence, Rhode Island (USA)",
+        "ar": "بروفيدنس، رود آيلاند، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Providence under Mayor Jorge Elorza, paid from private donations (including $500,000 from Jack Dorsey) and then federal pandemic relief (ARPA), with Amos House as lead agency",
+        "ja": "ホルヘ・エロルサ市長のもとのプロビデンス市。財源は個人の寄付（ジャック・ドーシー氏の50万ドルを含む）、その後は連邦のコロナ対策資金（ARPA）で、Amos Houseが中心機関",
+        "zh": "普罗维登斯市（市长豪尔赫·埃洛萨），资金先来自私人捐款（包括杰克·多尔西的 50 万美元），后来自联邦疫情纾困款（ARPA），由 Amos House 担任牵头机构",
+        "hi": "मेयर होर्हे एलोर्ज़ा के अधीन प्रोविडेंस शहर, पैसा निजी दान (जैक डोर्सी के $5 लाख सहित) और फिर संघीय महामारी राहत (ARPA) से; मुख्य एजेंसी Amos House",
+        "es": "Ciudad de Providence bajo el alcalde Jorge Elorza, financiado con donaciones privadas (incluidos 500.000 $ de Jack Dorsey) y después fondos federales de alivio por la pandemia (ARPA), con Amos House como agencia principal",
+        "de": "Stadt Providence unter Bürgermeister Jorge Elorza, bezahlt aus privaten Spenden (darunter 500.000 $ von Jack Dorsey) und dann aus Corona-Hilfen des Bundes (ARPA), mit Amos House als federführender Stelle",
+        "ar": "مدينة بروفيدنس في عهد العمدة خورخي إلورزا، بتمويل من تبرعات خاصة (منها ⁦$500,000⁩ من جاك دورسي) ثم من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)، مع ⁦Amos House⁩ جهةً رئيسية"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 18 months (November 2021–April 2023, extended from 12) to 110 low-income residents chosen by lottery",
+        "ja": "抽選で選んだ低所得住民110人に、条件なしで月500ドルを18か月（2021年11月〜2023年4月。12か月から延長）",
+        "zh": "向通过抽签选出的 110 名低收入居民无条件每月发放 500 美元，为期 18 个月（2021 年 11 月至 2023 年 4 月，由 12 个月延长）",
+        "hi": "लॉटरी से चुने गए 110 कम आय वाले निवासियों को 18 महीने (नवंबर 2021–अप्रैल 2023, 12 से बढ़ाकर) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 18 meses (noviembre 2021–abril 2023, ampliado desde 12) para 110 residentes de bajos ingresos elegidos por sorteo",
+        "de": "500 $ im Monat ohne Bedingungen für 18 Monate (November 2021 bis April 2023, von 12 verlängert) an 110 per Los ausgewählte einkommensschwache Einwohner",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 18 شهرًا (نوفمبر 2021–أبريل 2023، بعد تمديده من 12) لـ110 من السكان منخفضي الدخل اختيروا بالقرعة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://guaranteedincome.us/providence",
+      "source2": "https://www.providenceri.gov/mayor-elorza-launches-providence-guaranteed-income-pilot/",
+      "us": {
+        "city": "Providence",
+        "state": "RI",
+        "start": "2021-11",
+        "end": "2023-04",
+        "monthly": 500,
+        "months": 18,
+        "recipients": 110,
+        "unit": "people",
+        "funders": ["philanthropic", "arpa"],
+        "control": true,
+        "elig": "Providence residents 18+ with income below 200% of the federal poverty level, chosen by a lottery weighted to reflect the city's population in poverty; a control group took part in surveys",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-tacoma-grit",
+      "years": "2021–2022",
+      "type": "gov",
+      "name": "Growing Resilience in Tacoma (GRIT)",
+      "place": {
+        "en": "Tacoma, Washington, USA",
+        "ja": "アメリカ・ワシントン州タコマ",
+        "zh": "美国华盛顿州塔科马",
+        "hi": "टकोमा, वॉशिंगटन, अमेरिका",
+        "es": "Tacoma, Washington (EE. UU.)",
+        "de": "Tacoma, Washington (USA)",
+        "ar": "تاكوما، واشنطن، الولايات المتحدة"
+      },
+      "who": {
+        "en": "United Way of Pierce County and the City of Tacoma, launched by Mayor Victoria Woodards, with money from Mayors for a Guaranteed Income and other public and private funders",
+        "ja": "United Way of Pierce Countyとタコマ市。ビクトリア・ウッダーズ市長が始め、Mayors for a Guaranteed Incomeやほかの官民の資金提供者が出資",
+        "zh": "皮尔斯县联合之路（United Way of Pierce County）和塔科马市，由市长维多利亚·伍达兹发起，资金来自“保障收入市长联盟”及其他公私资助方",
+        "hi": "United Way of Pierce County और टकोमा शहर, मेयर विक्टोरिया वुडर्ड्स द्वारा शुरू, Mayors for a Guaranteed Income और अन्य सरकारी व निजी दानदाताओं के पैसे से",
+        "es": "United Way of Pierce County y la Ciudad de Tacoma, impulsado por la alcaldesa Victoria Woodards, con dinero de Mayors for a Guaranteed Income y otros financiadores públicos y privados",
+        "de": "United Way of Pierce County und die Stadt Tacoma, gestartet von Bürgermeisterin Victoria Woodards, mit Geld von Mayors for a Guaranteed Income und weiteren öffentlichen und privaten Geldgebern",
+        "ar": "⁦United Way of Pierce County⁩ ومدينة تاكوما، أطلقته العمدة فيكتوريا وودردز، بأموال من ⁦Mayors for a Guaranteed Income⁩ وممولين عامين وخاصين آخرين"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions from December 2021 to December 2022 to 110 working single-earner families with children in four Tacoma neighborhoods, chosen at random from over 2,000 applicants",
+        "ja": "2,000人超の応募者から無作為に選んだ、タコマの4地区に住む子どものいる働く単一稼ぎ手の110家族に、2021年12月から2022年12月まで条件なしで月500ドル",
+        "zh": "2021 年 12 月至 2022 年 12 月，从 2,000 多名申请者中随机选出塔科马四个街区的 110 个有孩子的单收入工作家庭，无条件每月发放 500 美元",
+        "hi": "2,000 से ज़्यादा आवेदकों में से रैंडम रूप से चुने गए, टकोमा के चार इलाकों के बच्चों वाले 110 कामकाजी एक-कमाऊ परिवारों को दिसंबर 2021 से दिसंबर 2022 तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones de diciembre de 2021 a diciembre de 2022 para 110 familias trabajadoras con un solo sueldo y con hijos de cuatro barrios de Tacoma, elegidas al azar entre más de 2.000 solicitantes",
+        "de": "500 $ im Monat ohne Bedingungen von Dezember 2021 bis Dezember 2022 an 110 berufstätige Familien mit Kindern und einem Verdiener in vier Vierteln Tacomas, zufällig aus über 2.000 Bewerbungen ausgewählt",
+        "ar": "⁦$500⁩ شهريًا بلا شروط من ديسمبر 2021 إلى ديسمبر 2022 لـ110 أسر عاملة ذات معيل واحد لديها أطفال في أربعة أحياء في تاكوما، اختيرت عشوائيًا من بين أكثر من 2,000 متقدم"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://guaranteedincome.us/tacoma",
+      "source2": "https://mynorthwest.com/?p=3775818",
+      "us": {
+        "city": "Tacoma",
+        "state": "WA",
+        "start": "2021-12",
+        "end": "2022-12",
+        "monthly": 500,
+        "months": 13,
+        "recipients": 110,
+        "unit": "households",
+        "funders": ["public", "philanthropic"],
+        "control": null,
+        "elig": "Employed single-income households with children under 17 (or with disabilities up to 21), income 100%–200% of the federal poverty level, living in the Eastside, Hilltop, South Tacoma or South End neighborhoods; chosen at random from over 2,000 applicants",
+        "eval": null
+      }
     },
     {
       "id": "ireland-arts",
-      "essays": [
-        "generative-ai-jobs-basic-income",
-        "generative-ai-creative-work-basic-income"
-      ],
+      "essays": ["generative-ai-jobs-basic-income", "generative-ai-creative-work-basic-income"],
       "years": "2022–",
       "type": "gov",
       "name": "Basic Income for the Arts (Ireland)",
@@ -10126,6 +11721,4251 @@ module.exports = {
         "ar": "وجد التقييم النهائي لـ⁦Alma Economics⁩ (2025) أن المستفيدين، مقارنة بمجموعة المقارنة، أمضوا 4 إلى 5 ساعات أسبوعيًا إضافية على فنهم و2.7 إلى 4.3 ساعة أقل في الأعمال الأخرى، وكسبوا من الفن أكثر من ⁦€500⁩ شهريًا إضافية ونحو ⁦€280⁩ أقل من الأعمال الأخرى، وقلّ احتمال إبلاغهم عن القلق والاكتئاب بـ13 و11 نقطة. العائد الاجتماعي المقدّر: ⁦€1.39⁩ لكل ⁦€1⁩ من المال العام"
       },
       "source": "https://assets.gov.ie/static/documents/b87d2659/20250929_BIA_CBA_Final_Report.pdf"
+    },
+    {
+      "id": "la-tayportunity",
+      "years": "2022–2025",
+      "type": "gov",
+      "name": "TAYportunity Guaranteed Income",
+      "place": {
+        "en": "Los Angeles County, California, USA",
+        "ja": "アメリカ・カリフォルニア州ロサンゼルス郡",
+        "zh": "美国加利福尼亚州洛杉矶县",
+        "hi": "लॉस एंजेलिस काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Los Ángeles, California (EE. UU.)",
+        "de": "Los Angeles County, Kalifornien (USA)",
+        "ar": "مقاطعة لوس أنجلوس، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Los Angeles County Department of Public Social Services (DPSS), a county program, not the city's",
+        "ja": "ロサンゼルス郡公共社会サービス局（DPSS）。市ではなく郡のプログラム",
+        "zh": "洛杉矶县公共社会服务局（DPSS），是县级项目而非市级项目",
+        "hi": "Los Angeles County Department of Public Social Services (DPSS), एक काउंटी कार्यक्रम, शहर का नहीं",
+        "es": "Departamento de Servicios Sociales Públicos del condado de Los Ángeles (DPSS), un programa del condado, no de la ciudad",
+        "de": "Sozialbehörde von Los Angeles County (Department of Public Social Services, DPSS), ein Programm des Countys, nicht der Stadt",
+        "ar": "إدارة الخدمات الاجتماعية العامة في مقاطعة لوس أنجلوس (⁦DPSS⁩)، وهو برنامج للمقاطعة لا للمدينة"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 36 months from 2022 to 300 young adults aged 18–24 on the county's General Relief aid, picked by lottery, with optional paid job training; 650 others formed the control group",
+        "ja": "郡の一般扶助（General Relief）を受ける18〜24歳の若者から抽選で選んだ300人に、2022年から条件なしで月1,000ドルを36か月。希望者には有給の職業訓練も。別の650人が対照群",
+        "zh": "自 2022 年起，向通过抽签选出的 300 名领取县 General Relief 救助的 18 至 24 岁年轻人无条件每月发放 1,000 美元，为期 36 个月，并可自愿参加带薪职业培训；另有 650 人组成对照组",
+        "hi": "काउंटी की General Relief सहायता पाने वाले, लॉटरी से चुने गए 18–24 साल के 300 युवाओं को 2022 से 36 महीने तक बिना शर्त हर महीने $1,000, साथ में वैकल्पिक सवेतन नौकरी प्रशिक्षण; 650 अन्य नियंत्रण समूह में थे",
+        "es": "1.000 $ al mes sin condiciones durante 36 meses desde 2022 para 300 jóvenes de 18 a 24 años que recibían la ayuda General Relief del condado, elegidos por sorteo, con formación laboral remunerada opcional; otros 650 formaron el grupo de control",
+        "de": "1.000 $ im Monat ohne Bedingungen für 36 Monate ab 2022 an 300 per Los ausgewählte junge Erwachsene von 18 bis 24 Jahren, die die Sozialhilfe General Relief des Countys bezogen, mit freiwilliger bezahlter Berufsausbildung; 650 weitere bildeten die Kontrollgruppe",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 36 شهرًا بدءًا من 2022 لـ300 شاب تتراوح أعمارهم بين 18 و24 عامًا يتلقون مساعدة ⁦General Relief⁩ من المقاطعة، اختيروا بالقرعة، مع تدريب مهني مدفوع اختياري؛ وشكّل 650 آخرون المجموعة الضابطة"
+      },
+      "result": {
+        "en": "A University of Virginia economist's job market paper (2025, not peer-reviewed), comparing 300 recipients with 566 controls, reported employment up 7 percentage points (18%), monthly earnings up about $94 (30%), felony arrests down 40% and births down by nearly half; estimates using caseworker assignment suggest job training, on top of the cash, drove much of the job gains",
+        "ja": "バージニア大学の経済学者のジョブマーケット論文（2025年、査読前）は受給者300人を対照群566人と比べ、就業率が7ポイント（18%）上がり、月収が約94ドル（30%）増え、重罪での逮捕が40%減り、出産がほぼ半減したと報告。ケースワーカーの割り当てを使った推計では、現金に加えた職業訓練が就業の伸びの多くを生んだとみられる",
+        "zh": "弗吉尼亚大学一位经济学家的求职论文（2025 年，未经同行评审）将 300 名受助者与 566 名对照组成员比较，称就业率提高 7 个百分点（18%），月收入增加约 94 美元（30%），重罪逮捕减少 40%，生育减少近一半；利用个案工作者分配所做的估计表明，就业增长中很大一部分来自现金之外的职业培训",
+        "hi": "यूनिवर्सिटी ऑफ़ वर्जीनिया के एक अर्थशास्त्री के जॉब मार्केट पेपर (2025, पीयर-रिव्यूड नहीं) ने 300 प्राप्तकर्ताओं की 566 नियंत्रण वालों से तुलना कर बताया कि रोज़गार 7 प्रतिशत अंक (18%) बढ़ा, मासिक कमाई लगभग $94 (30%) बढ़ी, गंभीर अपराधों (felony) में गिरफ़्तारियाँ 40% घटीं और जन्म लगभग आधे घटे; केसवर्कर के आवंटन पर आधारित अनुमान बताते हैं कि नौकरी के फ़ायदों का बड़ा हिस्सा नक़दी के साथ मिले नौकरी प्रशिक्षण से आया",
+        "es": "El job market paper de un economista de la Universidad de Virginia (2025, sin revisión por pares), que comparó a 300 beneficiarios con 566 controles, informó de un aumento del empleo de 7 puntos porcentuales (18 %), ingresos mensuales unos 94 $ mayores (30 %), un 40 % menos de detenciones por delitos graves y casi la mitad menos de nacimientos; las estimaciones basadas en la asignación de trabajadores sociales sugieren que la formación laboral, además del dinero, explicó buena parte de las mejoras en empleo",
+        "de": "Ein Job-Market-Paper eines Ökonomen der University of Virginia (2025, nicht begutachtet) verglich 300 Empfänger mit 566 Personen der Kontrollgruppe und berichtete eine um 7 Prozentpunkte (18 %) höhere Beschäftigung, ein um etwa 94 $ (30 %) höheres Monatseinkommen, 40 % weniger Festnahmen wegen Verbrechen und fast halb so viele Geburten; Schätzungen anhand der Zuteilung der Sachbearbeiter deuten darauf hin, dass die Berufsausbildung zusätzlich zum Geld einen großen Teil der Beschäftigungsgewinne bewirkte",
+        "ar": "أفادت ورقة سوق عمل لاقتصادي من جامعة فيرجينيا (2025، غير محكّمة)، قارنت 300 مستفيد بـ566 من المجموعة الضابطة، بارتفاع التوظيف 7 نقاط مئوية (18%)، وارتفاع الدخل الشهري من العمل نحو ⁦$94⁩ (30%)، وانخفاض الاعتقالات بتهم جنائية خطيرة 40%، وانخفاض الولادات إلى النصف تقريبًا؛ وتشير تقديرات تستند إلى توزيع الأخصائيين الاجتماعيين إلى أن التدريب المهني، إلى جانب النقد، كان وراء جزء كبير من مكاسب التوظيف"
+      },
+      "source": "https://my.dpss.lacounty.gov/public/en/home/epolicy/program/gr/income/tayportunity-guaranteed-income.html",
+      "source2": "https://www.marcellacartledge.com/research",
+      "us": {
+        "city": "Los Angeles County",
+        "state": "CA",
+        "start": "2022",
+        "end": "2025",
+        "monthly": 1000,
+        "months": 36,
+        "recipients": 300,
+        "unit": "people",
+        "funders": ["public"],
+        "control": true,
+        "elig": "Young adults 18–24 on General Relief and in the county's START/TAYportunity employment program, not in another GI program; applications May 23–June 6, 2022; picked by lottery",
+        "eval": {
+          "by": "Marcella Cartledge, University of Virginia (job market paper, 'The Effects of Cash-Plus Programs on Young Adults: Evidence from a Randomized Experiment in Los Angeles County')",
+          "year": 2025,
+          "type": "working paper",
+          "url": "https://www.marcellacartledge.com/research"
+        }
+      }
+    },
+    {
+      "id": "us-stpaul-collegebound-boost",
+      "years": "2022–2024",
+      "type": "gov",
+      "name": "CollegeBound Boost",
+      "place": {
+        "en": "Saint Paul, Minnesota, USA",
+        "ja": "アメリカ・ミネソタ州セントポール",
+        "zh": "美国明尼苏达州圣保罗",
+        "hi": "सेंट पॉल, मिनेसोटा, अमेरिका",
+        "es": "Saint Paul, Minnesota (EE. UU.)",
+        "de": "Saint Paul, Minnesota (USA)",
+        "ar": "سانت بول، مينيسوتا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Saint Paul, paid from $4 million of federal pandemic relief (ARPA) and $1 million of philanthropy; the University of Michigan is studying it",
+        "ja": "セントポール市。財源は連邦のコロナ対策資金（ARPA）400万ドルと慈善寄付100万ドルで、ミシガン大学が研究",
+        "zh": "圣保罗市，资金来自 400 万美元联邦疫情纾困款（ARPA）和 100 万美元慈善资金；由密歇根大学开展研究",
+        "hi": "सेंट पॉल शहर, पैसा $40 लाख की संघीय महामारी राहत (ARPA) और $10 लाख के परोपकार से; इसका अध्ययन University of Michigan कर रही है",
+        "es": "Ciudad de Saint Paul, con 4 millones de dólares de fondos federales de alivio por la pandemia (ARPA) y 1 millón de filantropía; lo estudia la Universidad de Míchigan",
+        "de": "Stadt Saint Paul, bezahlt aus 4 Mio. $ Corona-Hilfe des Bundes (ARPA) und 1 Mio. $ aus Spenden; die University of Michigan untersucht das Programm",
+        "ar": "مدينة سانت بول، بتمويل 4 ملايين دولار من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) ومليون دولار من العمل الخيري؛ وتدرسه جامعة ميشيغان"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for two years plus $1,000 in the child's college savings account to 333 low-income families with young children, randomly selected from 2022; other groups got the $1,000 only or neither",
+        "ja": "2022年から無作為に選んだ幼い子どものいる低所得の333家族に、条件なしで月500ドルを2年間と、子どもの大学貯蓄口座に1,000ドル。ほかのグループは1,000ドルのみか、どちらもなし",
+        "zh": "自 2022 年起，向随机选出的 333 个有幼儿的低收入家庭无条件每月发放 500 美元，为期两年，并向孩子的大学储蓄账户存入 1,000 美元；其他组只获得 1,000 美元或什么都没有",
+        "hi": "2022 से रैंडम रूप से चुने गए, छोटे बच्चों वाले 333 कम आय वाले परिवारों को दो साल तक बिना शर्त हर महीने $500, साथ ही बच्चे के कॉलेज बचत खाते में $1,000; अन्य समूहों को सिर्फ़ $1,000 मिले या कुछ नहीं",
+        "es": "500 $ al mes sin condiciones durante dos años más 1.000 $ en la cuenta de ahorro universitario del hijo para 333 familias de bajos ingresos con niños pequeños, elegidas al azar desde 2022; otros grupos recibieron solo los 1.000 $ o nada",
+        "de": "500 $ im Monat ohne Bedingungen für zwei Jahre plus 1.000 $ auf das College-Sparkonto des Kindes an 333 zufällig ausgewählte einkommensschwache Familien mit kleinen Kindern, ab 2022; andere Gruppen erhielten nur die 1.000 $ oder nichts",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عامين إضافة إلى ⁦$1,000⁩ في حساب الادخار الجامعي للطفل لـ333 أسرة منخفضة الدخل لديها أطفال صغار، اختيرت عشوائيًا بدءًا من 2022؛ وحصلت مجموعات أخرى على ⁦$1,000⁩ فقط أو على لا شيء"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.stpaul.gov/departments/financial-empowerment/guaranteed-income",
+      "source2": "https://kstp.com/?p=2277382",
+      "us": {
+        "city": "Saint Paul",
+        "state": "MN",
+        "start": "2022",
+        "end": "2024",
+        "endEstimated": true,
+        "monthly": 500,
+        "months": 24,
+        "recipients": 333,
+        "unit": "households",
+        "funders": ["arpa", "philanthropic"],
+        "control": true,
+        "elig": "Saint Paul parents or guardians of a CollegeBound child (born to a Saint Paul resident on or after 1 January 2020), household income at or below 300% of the federal poverty level; randomly assigned",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-seattle-king-gbi",
+      "years": "2022–2023",
+      "type": "ngo",
+      "name": "Guaranteed Basic Income Pilot (Workforce Development Council of Seattle-King County)",
+      "place": {
+        "en": "Seattle and King County, Washington, USA",
+        "ja": "アメリカ・ワシントン州シアトルとキング郡",
+        "zh": "美国华盛顿州西雅图和金县",
+        "hi": "सिएटल और किंग काउंटी, वॉशिंगटन, अमेरिका",
+        "es": "Seattle y condado de King, Washington (EE. UU.)",
+        "de": "Seattle und King County, Washington (USA)",
+        "ar": "سياتل ومقاطعة كينغ، واشنطن، الولايات المتحدة"
+      },
+      "who": {
+        "en": "The Workforce Development Council of Seattle-King County, a workforce agency, funded by Washington State's Employment Security Department, King County and Chase Bank",
+        "ja": "労働力開発機関Workforce Development Council of Seattle-King County。資金はワシントン州雇用保障局、キング郡、チェース銀行",
+        "zh": "劳动力机构西雅图-金县劳动力发展委员会，资金来自华盛顿州就业保障局、金县和大通银行",
+        "hi": "Workforce Development Council of Seattle-King County, एक कार्यबल एजेंसी, वॉशिंगटन राज्य के Employment Security Department, किंग काउंटी और Chase Bank के पैसे से",
+        "es": "El Workforce Development Council of Seattle-King County, una agencia de empleo, financiado por el Departamento de Seguridad del Empleo del estado de Washington, el condado de King y Chase Bank",
+        "de": "Workforce Development Council of Seattle-King County, eine Arbeitsmarktstelle, finanziert vom Employment Security Department des Bundesstaats Washington, King County und der Chase Bank",
+        "ar": "⁦Workforce Development Council of Seattle-King County⁩، هيئة للقوى العاملة، بتمويل من إدارة الأمن الوظيفي في ولاية واشنطن ومقاطعة كينغ و⁦Chase Bank⁩"
+      },
+      "paid": {
+        "en": "$500 a month for 10 months, starting in fall 2022, to 102 low-income people in King County, alongside case management, career planning and financial education",
+        "ja": "キング郡の低所得の102人に、ケースマネジメント、キャリア計画、金融教育とあわせて、2022年秋から月500ドルを10か月",
+        "zh": "自 2022 年秋起，向金县 102 名低收入者每月发放 500 美元，为期 10 个月，同时提供个案管理、职业规划和理财教育",
+        "hi": "किंग काउंटी के 102 कम आय वाले लोगों को 2022 की शरद से 10 महीने तक हर महीने $500, साथ में केस मैनेजमेंट, करियर योजना और वित्तीय शिक्षा",
+        "es": "500 $ al mes durante 10 meses, desde el otoño de 2022, para 102 personas de bajos ingresos del condado de King, junto con gestión de casos, planificación profesional y educación financiera",
+        "de": "500 $ im Monat für 10 Monate ab Herbst 2022 an 102 einkommensschwache Menschen in King County, neben Fallbegleitung, Berufsplanung und Finanzbildung",
+        "ar": "⁦$500⁩ شهريًا لمدة 10 أشهر، بدءًا من خريف 2022، لـ102 من منخفضي الدخل في مقاطعة كينغ، إلى جانب إدارة الحالة والتخطيط المهني والتثقيف المالي"
+      },
+      "result": {
+        "en": "An evaluation by Applied Inference (March 2024) reported employment among participants rising from 37% to 66% and the savings rate among families with children from 0% to 42%; these are before-and-after figures with no control group, and the payments came with job services",
+        "ja": "Applied Inferenceによる評価（2024年3月）は、参加者の就業率が37%から66%に、子どものいる家族の貯蓄率が0%から42%に上がったと報告。対照群のない前後比較で、支給には就労支援も伴っていた",
+        "zh": "Applied Inference 的评估（2024 年 3 月）称，参与者的就业率从 37% 升至 66%，有孩子家庭的储蓄率从 0% 升至 42%；这些是前后比较的数字，没有对照组，且发放同时附带就业服务",
+        "hi": "Applied Inference के मूल्यांकन (मार्च 2024) के अनुसार प्रतिभागियों में रोज़गार 37% से 66% हुआ और बच्चों वाले परिवारों में बचत दर 0% से 42% हुई; ये बिना नियंत्रण समूह के पहले-और-बाद के आँकड़े हैं, और भुगतान के साथ नौकरी सेवाएँ भी थीं",
+        "es": "Una evaluación de Applied Inference (marzo de 2024) informó de que el empleo de los participantes pasó del 37 % al 66 % y la tasa de ahorro de las familias con hijos del 0 % al 42 %; son cifras de antes y después sin grupo de control, y los pagos iban acompañados de servicios de empleo",
+        "de": "Eine Evaluation von Applied Inference (März 2024) berichtete, dass die Beschäftigung der Teilnehmenden von 37 % auf 66 % stieg und die Sparquote der Familien mit Kindern von 0 % auf 42 %; es handelt sich um Vorher-nachher-Zahlen ohne Kontrollgruppe, und die Zahlungen waren mit Arbeitsmarktdiensten verbunden",
+        "ar": "أفاد تقييم أجرته ⁦Applied Inference⁩ (مارس 2024) بارتفاع التوظيف بين المشاركين من 37% إلى 66% ومعدل الادخار بين الأسر التي لديها أطفال من 0% إلى 42%؛ وهذه أرقام قبل وبعد دون مجموعة ضابطة، وجاءت الدفعات مقرونة بخدمات التوظيف"
+      },
+      "source": "https://seakingwdc.org/latest-news/gbi-report",
+      "us": {
+        "city": "Seattle / King County",
+        "state": "WA",
+        "start": "2022",
+        "end": "2023",
+        "endEstimated": true,
+        "monthly": 500,
+        "months": 10,
+        "recipients": 102,
+        "unit": "people",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "Low-income people including students and justice-involved adults (88% BIPOC, 58% women), paired with case management, career planning and financial education",
+        "eval": {
+          "by": "Applied Inference",
+          "year": 2024,
+          "type": "report",
+          "url": "https://www.seakingwdc.org/s/PR_GBI-Report_WDC-SKC_032724.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-new-mexico-immigrant-gbi",
+      "years": "2022–2023",
+      "type": "ngo",
+      "name": "New Mexico Immigrant Guaranteed Basic Income Project",
+      "place": {
+        "en": "New Mexico, USA",
+        "ja": "アメリカ・ニューメキシコ州",
+        "zh": "美国新墨西哥州",
+        "hi": "न्यू मेक्सिको, अमेरिका",
+        "es": "Nuevo México (EE. UU.)",
+        "de": "New Mexico (USA)",
+        "ar": "نيومكسيكو، الولايات المتحدة"
+      },
+      "who": {
+        "en": "A coalition of New Mexico immigrant and policy groups (the NM Economic Relief Working Group) with the nonprofit UpTogether, funded by the W.K. Kellogg Foundation and UpTogether",
+        "ja": "ニューメキシコ州の移民・政策団体の連合（NM Economic Relief Working Group）と非営利団体UpTogether。資金はW・K・ケロッグ財団とUpTogether",
+        "zh": "新墨西哥州移民和政策团体联盟（NM Economic Relief Working Group），与非营利组织 UpTogether 合作，资金来自 W.K. 凯洛格基金会和 UpTogether",
+        "hi": "न्यू मेक्सिको के आप्रवासी और नीति समूहों का एक गठबंधन (NM Economic Relief Working Group), ग़ैर-लाभकारी UpTogether के साथ; पैसा W.K. Kellogg Foundation और UpTogether से",
+        "es": "Una coalición de grupos de inmigrantes y de políticas públicas de Nuevo México (el NM Economic Relief Working Group) con la organización sin ánimo de lucro UpTogether, financiado por la W.K. Kellogg Foundation y UpTogether",
+        "de": "Ein Bündnis von Einwanderer- und Politikgruppen in New Mexico (die NM Economic Relief Working Group) mit der gemeinnützigen Organisation UpTogether, finanziert von der W.K. Kellogg Foundation und UpTogether",
+        "ar": "تحالف من مجموعات المهاجرين والسياسات العامة في نيومكسيكو (⁦NM Economic Relief Working Group⁩) مع المنظمة غير الربحية ⁦UpTogether⁩، بتمويل من ⁦W.K. Kellogg Foundation⁩ و⁦UpTogether⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months, from 2022, to 330 undocumented and mixed-immigration-status families across New Mexico who had been left out of most pandemic aid",
+        "ja": "コロナ対策の支援の多くから外されていた、ニューメキシコ州全域の在留資格のない家族や在留資格の混在する家族330世帯に、2022年から条件なしで月500ドルを12か月",
+        "zh": "自 2022 年起，向新墨西哥州各地 330 个被排除在大部分疫情援助之外的无证及混合移民身份家庭无条件每月发放 500 美元，为期 12 个月",
+        "hi": "ज़्यादातर महामारी सहायता से बाहर रह गए, पूरे न्यू मेक्सिको के 330 बिना दस्तावेज़ वाले और मिश्रित आप्रवासन स्थिति वाले परिवारों को 2022 से 12 महीने तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 12 meses, desde 2022, para 330 familias indocumentadas y de estatus migratorio mixto de todo Nuevo México que habían quedado fuera de la mayoría de las ayudas por la pandemia",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate, ab 2022, an 330 Familien ohne Papiere oder mit gemischtem Aufenthaltsstatus in ganz New Mexico, die von den meisten Corona-Hilfen ausgeschlossen waren",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا، بدءًا من 2022، لـ330 أسرة من المهاجرين غير الموثقين ومختلطة الوضع الهجري في أنحاء نيومكسيكو، كانت مستبعدة من معظم مساعدات الجائحة"
+      },
+      "result": {
+        "en": "The working group's report (December 2023) reported a 35% drop in trouble paying rent or mortgage on time and a 14% rise in employment among rural participants; it is self-reported, with no control group, and was published by the groups that ran the program",
+        "ja": "作業部会の報告（2023年12月）は、家賃や住宅ローンの期限内の支払いに困ることが35%減り、農村部の参加者の就業が14%増えたと報告。自己申告で、対照群はなく、プログラムを運営した団体自身が公表した",
+        "zh": "该工作组的报告（2023 年 12 月）称，按时支付房租或房贷有困难的情况减少 35%，农村参与者的就业增加 14%；均为自我报告，没有对照组，且由运营该项目的团体发布",
+        "hi": "वर्किंग ग्रुप की रिपोर्ट (दिसंबर 2023) के अनुसार किराया या होम लोन समय पर चुकाने में दिक़्क़त 35% घटी और ग्रामीण प्रतिभागियों में रोज़गार 14% बढ़ा; यह स्व-रिपोर्टेड है, कोई नियंत्रण समूह नहीं, और इसे कार्यक्रम चलाने वाले समूहों ने ही प्रकाशित किया",
+        "es": "El informe del grupo de trabajo (diciembre de 2023) indicó una caída del 35 % en las dificultades para pagar a tiempo el alquiler o la hipoteca y un aumento del 14 % en el empleo entre los participantes rurales; datos autodeclarados, sin grupo de control, y publicado por los grupos que gestionaron el programa",
+        "de": "Der Bericht der Arbeitsgruppe (Dezember 2023) berichtete 35 % weniger Probleme, Miete oder Hypothek pünktlich zu zahlen, und 14 % mehr Beschäftigung bei Teilnehmenden auf dem Land; Selbstauskünfte, ohne Kontrollgruppe, veröffentlicht von den Gruppen, die das Programm durchführten",
+        "ar": "أفاد تقرير مجموعة العمل (ديسمبر 2023) بانخفاض صعوبة دفع الإيجار أو الرهن العقاري في موعده بنسبة 35% وارتفاع التوظيف بنسبة 14% بين المشاركين في المناطق الريفية؛ وهي بيانات ذاتية الإبلاغ، دون مجموعة ضابطة، ونشرتها المجموعات التي أدارت البرنامج"
+      },
+      "source": "https://www.kunm.org/news/2022-02-07/immigrant-families-can-apply-for-guaranteed-monthly-income-program",
+      "source2": "https://www.sfreporter.com/news/2023/12/12/new-report-shows-positive-outcomes-with-guaranteed-income-pilot-program/",
+      "us": {
+        "city": "New Mexico (statewide)",
+        "state": "NM",
+        "start": "2022",
+        "end": "2023",
+        "endEstimated": true,
+        "monthly": 500,
+        "months": 12,
+        "recipients": 330,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Undocumented and mixed-immigration-status families, many shut out of pandemic stimulus and unemployment aid; about one-third rural and two-thirds urban; applications closed 11 February 2022",
+        "eval": {
+          "by": "NM Economic Relief Working Group",
+          "year": 2023,
+          "type": "report",
+          "url": "https://www.sfreporter.com/news/2023/12/12/new-report-shows-positive-outcomes-with-guaranteed-income-pilot-program/"
+        }
+      }
+    },
+    {
+      "id": "la-bigleap",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "BIG:LEAP (Basic Income Guaranteed: Los Angeles Economic Assistance Pilot)",
+      "place": {
+        "en": "City of Los Angeles, California, USA",
+        "ja": "アメリカ・カリフォルニア州ロサンゼルス市",
+        "zh": "美国加利福尼亚州洛杉矶市",
+        "hi": "लॉस एंजेलिस शहर, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Ciudad de Los Ángeles, California (EE. UU.)",
+        "de": "Stadt Los Angeles, Kalifornien (USA)",
+        "ar": "مدينة لوس أنجلوس، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Los Angeles (Community Investment for Families Department), paid from the city's general fund and council district funds",
+        "ja": "ロサンゼルス市（家族支援局 CIFD）。財源は市の一般会計と市議会の各選挙区の資金",
+        "zh": "洛杉矶市（家庭社区投资局 CIFD），资金来自市一般基金和各市议会选区的资金",
+        "hi": "लॉस एंजेलिस शहर (Community Investment for Families Department); पैसा शहर के सामान्य कोष और काउंसिल डिस्ट्रिक्ट के फ़ंड से",
+        "es": "Ciudad de Los Ángeles (Departamento de Inversión Comunitaria para Familias, CIFD), con dinero del fondo general municipal y de los distritos del concejo",
+        "de": "Stadt Los Angeles (Community Investment for Families Department), bezahlt aus dem städtischen Haushalt und Mitteln der Ratsbezirke",
+        "ar": "مدينة لوس أنجلوس (إدارة الاستثمار المجتمعي للأسر)، بتمويل من الصندوق العام للمدينة وأموال دوائر مجلس المدينة"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 12 months (payments January 2022–March 2023) to 3,202 households below the poverty line with a child or a pregnancy and hit by COVID-19; more than 50,000 applied, and 4,992 others formed a control group",
+        "ja": "貧困線を下回り、子どもがいるか妊娠中でコロナの影響を受けた3,202世帯に、条件なしで月1,000ドルを12か月（支給は2022年1月〜2023年3月）。5万人超が応募し、別の4,992人が対照群",
+        "zh": "向 3,202 个低于贫困线、有孩子或正在怀孕且受新冠影响的家庭无条件每月发放 1,000 美元，为期 12 个月（2022 年 1 月至 2023 年 3 月发放）；申请者超过 5 万人，另有 4,992 人组成对照组",
+        "hi": "ग़रीबी रेखा से नीचे, बच्चे वाले या गर्भवती और कोविड से प्रभावित 3,202 परिवारों को 12 महीने (भुगतान जनवरी 2022–मार्च 2023) तक बिना शर्त हर महीने $1,000; 50,000 से ज़्यादा ने आवेदन किया, और 4,992 अन्य नियंत्रण समूह में थे",
+        "es": "1.000 $ al mes sin condiciones durante 12 meses (pagos de enero de 2022 a marzo de 2023) para 3.202 hogares bajo el umbral de pobreza, con hijos o embarazo y afectados por la COVID-19; hubo más de 50.000 solicitudes y otros 4.992 formaron un grupo de control",
+        "de": "1.000 $ im Monat ohne Bedingungen für 12 Monate (Zahlungen Januar 2022 bis März 2023) an 3.202 Haushalte unter der Armutsgrenze, mit Kind oder Schwangerschaft und von Corona betroffen; mehr als 50.000 bewarben sich, weitere 4.992 bildeten eine Kontrollgruppe",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 12 شهرًا (الدفعات من يناير 2022 إلى مارس 2023) لـ3,202 أسرة تحت خط الفقر لديها طفل أو حمل وتضررت من كوفيد-19؛ تقدّم أكثر من 50,000 شخص، وشكّل 4,992 آخرون مجموعة ضابطة"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research (July 2024), with UCLA, compared recipients with 4,992 controls and reported a significantly greater ability to cover a $400 emergency, less food insecurity, more time for parenting and less severe and less frequent partner violence; LAist reported the share able to cover a $400 emergency rose from about 10% to about 15% among recipients",
+        "ja": "ペンシルベニア大学CGIR（2024年7月）はUCLAと共に受給者を対照群4,992人と比べ、400ドルの急な出費を払える力が有意に高く、食料不安が少なく、子育ての時間が増え、パートナー間暴力が軽く少なくなったと報告。LAistによると、400ドルの急な出費を払える受給者の割合は約10%から約15%に上がった",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2024 年 7 月）与加州大学洛杉矶分校合作，将受助者与 4,992 名对照组成员比较，称受助者应付 400 美元急用的能力显著更强，粮食不安全更少，陪伴子女的时间更多，伴侣暴力的严重程度和频率更低；LAist 报道称，受助者中能应付 400 美元急用的比例从约 10% 升至约 15%",
+        "hi": "पेन के Center for Guaranteed Income Research (जुलाई 2024) ने UCLA के साथ प्राप्तकर्ताओं की 4,992 नियंत्रण वालों से तुलना की और बताया कि $400 का अचानक ख़र्च झेलने की क्षमता काफ़ी ज़्यादा थी, खाने की असुरक्षा कम थी, बच्चों की परवरिश के लिए ज़्यादा समय था और साथी की हिंसा कम गंभीर व कम बार हुई; LAist के अनुसार प्राप्तकर्ताओं में $400 का अचानक ख़र्च झेल पाने वालों का हिस्सा लगभग 10% से बढ़कर लगभग 15% हुआ",
+        "es": "El Center for Guaranteed Income Research de Penn (julio de 2024), con UCLA, comparó a los beneficiarios con 4.992 controles e informó de una capacidad significativamente mayor de cubrir un imprevisto de 400 $, menos inseguridad alimentaria, más tiempo para la crianza y una violencia de pareja menos grave y menos frecuente; LAist informó de que la proporción capaz de cubrir un imprevisto de 400 $ pasó de un 10 % a un 15 % aproximadamente entre los beneficiarios",
+        "de": "Das Center for Guaranteed Income Research der Penn (Juli 2024) verglich mit der UCLA die Empfänger mit 4.992 Personen der Kontrollgruppe und berichtete, dass sie eine Notausgabe von 400 $ deutlich besser decken konnten, weniger Ernährungsunsicherheit hatten, mehr Zeit für die Kinder und weniger schwere und seltenere Partnergewalt erlebten; laut LAist stieg der Anteil der Empfänger, die eine Notausgabe von 400 $ decken konnten, von etwa 10 % auf etwa 15 %",
+        "ar": "قارن ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (يوليو 2024)، بالتعاون مع ⁦UCLA⁩، المستفيدين بـ4,992 من المجموعة الضابطة، وأفاد بقدرة أكبر بدلالة إحصائية على تغطية طارئ بقيمة ⁦$400⁩، وانعدام أمن غذائي أقل، ووقت أكثر للتربية، وعنف شريك أقل حدة وتكرارًا؛ وأفاد ⁦LAist⁩ بأن نسبة القادرين على تغطية طارئ بقيمة ⁦$400⁩ ارتفعت من نحو 10% إلى نحو 15% بين المستفيدين"
+      },
+      "source": "https://sp2.upenn.edu/report-landmark-guaranteed-income-program-in-city-of-los-angeles-produces-overwhelmingly-positive-results/",
+      "source2": "https://laist.com/news/los-angeles-guaranteed-basic-income-program-study",
+      "us": {
+        "city": "Los Angeles",
+        "state": "CA",
+        "start": "2022-01",
+        "end": "2023-03",
+        "monthly": 1000,
+        "months": 12,
+        "recipients": 3202,
+        "unit": "households",
+        "funders": ["public"],
+        "control": true,
+        "elig": "City of Los Angeles residents 18+, income below the federal poverty line, with a dependent child (or a student under 24) or pregnant, and financially or medically hit by COVID-19; picked at random from more than 50,000 applicants",
+        "eval": {
+          "by": "Center for Guaranteed Income Research, University of Pennsylvania (with UCLA Fielding School of Public Health)",
+          "year": 2024,
+          "type": "report",
+          "url": "https://sp2.upenn.edu/report-landmark-guaranteed-income-program-in-city-of-los-angeles-produces-overwhelmingly-positive-results/"
+        }
+      }
+    },
+    {
+      "id": "us-atlanta-impact",
+      "years": "2022–2023",
+      "type": "ngo",
+      "name": "Income Mobility Program for Atlanta Community Transformation (I.M.P.A.C.T.)",
+      "place": {
+        "en": "Atlanta, Georgia, USA",
+        "ja": "アメリカ・ジョージア州アトランタ",
+        "zh": "美国佐治亚州亚特兰大",
+        "hi": "अटलांटा, जॉर्जिया, अमेरिका",
+        "es": "Atlanta, Georgia (EE. UU.)",
+        "de": "Atlanta, Georgia (USA)",
+        "ar": "أتلانتا، جورجيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Urban League of Greater Atlanta with the City of Atlanta, funded by $2 million from the city (developer money from Centennial Yards) and $500,000 from Mayors for a Guaranteed Income",
+        "ja": "アトランタ都市連盟（Urban League of Greater Atlanta）とアトランタ市。財源は市の200万ドル（センテニアル・ヤーズの開発業者からの資金）とMayors for a Guaranteed Incomeの50万ドル",
+        "zh": "大亚特兰大城市联盟与亚特兰大市合作，资金为市政府的 200 万美元（来自 Centennial Yards 开发商的资金）和“保障收入市长联盟”的 50 万美元",
+        "hi": "Urban League of Greater Atlanta, अटलांटा शहर के साथ; पैसा शहर के $20 लाख (Centennial Yards के डेवलपर का पैसा) और Mayors for a Guaranteed Income के $5 लाख से",
+        "es": "Urban League of Greater Atlanta con la Ciudad de Atlanta, financiado con 2 millones de dólares de la ciudad (dinero de promotores de Centennial Yards) y 500.000 $ de Mayors for a Guaranteed Income",
+        "de": "Urban League of Greater Atlanta mit der Stadt Atlanta, finanziert mit 2 Mio. $ von der Stadt (Geld eines Bauträgers aus Centennial Yards) und 500.000 $ von Mayors for a Guaranteed Income",
+        "ar": "⁦Urban League of Greater Atlanta⁩ مع مدينة أتلانتا، بتمويل 2 مليون دولار من المدينة (أموال مطوّرين من مشروع ⁦Centennial Yards⁩) و⁦$500,000⁩ من ⁦Mayors for a Guaranteed Income⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months (payments January 2022–May 2023) to 300 Atlanta residents at or below 200% of the poverty line",
+        "ja": "貧困線の200%以下のアトランタ住民300人に、条件なしで月500ドルを12か月（支給は2022年1月〜2023年5月）",
+        "zh": "向 300 名收入不超过贫困线 200% 的亚特兰大居民无条件每月发放 500 美元，为期 12 个月（2022 年 1 月至 2023 年 5 月发放）",
+        "hi": "ग़रीबी रेखा के 200% या उससे कम आय वाले 300 अटलांटा निवासियों को 12 महीने (भुगतान जनवरी 2022–मई 2023) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 12 meses (pagos de enero de 2022 a mayo de 2023) para 300 residentes de Atlanta con ingresos de hasta el 200 % del umbral de pobreza",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate (Zahlungen Januar 2022 bis Mai 2023) an 300 Einwohner Atlantas mit höchstens 200 % der Armutsgrenze",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا (الدفعات من يناير 2022 إلى مايو 2023) لـ300 من سكان أتلانتا عند 200% من خط الفقر أو دونه"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://guaranteedincome.us/atlanta",
+      "source2": "https://nul.org/news/atlanta-work-urban-league-launch-citywide-guaranteed-income-program",
+      "us": {
+        "city": "Atlanta",
+        "state": "GA",
+        "start": "2022-01",
+        "end": "2023-05",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 300,
+        "unit": "people",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "Atlanta residents aged 18+ with household income at or below 200% of the 2021 federal poverty guidelines; 275 in an evaluated cohort and 25 in a storytelling cohort",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-gainesville-just-income",
+      "years": "2022",
+      "type": "ngo",
+      "name": "Just Income GNV",
+      "place": {
+        "en": "Gainesville, Florida, USA",
+        "ja": "アメリカ・フロリダ州ゲインズビル",
+        "zh": "美国佛罗里达州盖恩斯维尔",
+        "hi": "गेन्सविल, फ़्लोरिडा, अमेरिका",
+        "es": "Gainesville, Florida (EE. UU.)",
+        "de": "Gainesville, Florida (USA)",
+        "ar": "غينزفيل، فلوريدا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Community Spring, a Gainesville nonprofit led by formerly incarcerated people, funded privately by Mayors for a Guaranteed Income, Spring Point Partners and donors",
+        "ja": "元受刑者が率いるゲインズビルの非営利団体Community Spring。Mayors for a Guaranteed Income、Spring Point Partners、寄付者が民間で資金を出した",
+        "zh": "由曾被监禁者领导的盖恩斯维尔非营利组织 Community Spring，资金由“保障收入市长联盟”、Spring Point Partners 和捐助者私人提供",
+        "hi": "Community Spring, पूर्व क़ैदियों के नेतृत्व वाली गेन्सविल की ग़ैर-लाभकारी संस्था, Mayors for a Guaranteed Income, Spring Point Partners और दानदाताओं के निजी पैसे से",
+        "es": "Community Spring, una organización sin ánimo de lucro de Gainesville dirigida por personas que estuvieron encarceladas, financiado de forma privada por Mayors for a Guaranteed Income, Spring Point Partners y donantes",
+        "de": "Community Spring, eine von ehemals inhaftierten Menschen geleitete gemeinnützige Organisation in Gainesville, privat finanziert von Mayors for a Guaranteed Income, Spring Point Partners und Spendern",
+        "ar": "⁦Community Spring⁩، منظمة غير ربحية في غينزفيل يقودها سجناء سابقون، بتمويل خاص من ⁦Mayors for a Guaranteed Income⁩ و⁦Spring Point Partners⁩ ومتبرعين"
+      },
+      "paid": {
+        "en": "$1,000 in the first month and then $600 a month with no conditions for a year to 115 people recently released from incarceration with felony convictions, in two cohorts starting January and March 2022",
+        "ja": "最近出所した重罪の有罪歴のある115人に、条件なしで最初の月に1,000ドル、その後月600ドルを1年間。2022年1月と3月に始まる2期",
+        "zh": "分两批（2022 年 1 月和 3 月开始）向 115 名有重罪定罪、刚出狱的人无条件发放，第一个月 1,000 美元，之后每月 600 美元，为期一年",
+        "hi": "गंभीर अपराध (felony) में सज़ा पाए और हाल ही में रिहा हुए 115 लोगों को एक साल तक बिना शर्त पहले महीने $1,000 और फिर हर महीने $600, दो समूहों में, जनवरी और मार्च 2022 से",
+        "es": "1.000 $ el primer mes y luego 600 $ al mes sin condiciones durante un año para 115 personas recién salidas de prisión con condenas por delitos graves, en dos cohortes que empezaron en enero y marzo de 2022",
+        "de": "1.000 $ im ersten Monat und dann 600 $ im Monat ohne Bedingungen für ein Jahr an 115 kürzlich aus der Haft entlassene Menschen mit Verurteilungen wegen Verbrechen, in zwei Kohorten ab Januar und März 2022",
+        "ar": "⁦$1,000⁩ في الشهر الأول ثم ⁦$600⁩ شهريًا بلا شروط لمدة عام لـ115 شخصًا أُفرج عنهم حديثًا من السجن ولديهم إدانات بجنايات، على دفعتين بدأتا في يناير ومارس 2022"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research (February 2025), vs a control group, reported that recipients were better able to cover emergencies, saved more, had more stable housing, better food security and mental health, and lower recidivism; the summaries gave no figures, and the sample was about 100 people",
+        "ja": "ペンシルベニア大学CGIR（2025年2月）は対照群と比べ、受給者は急な出費に対応しやすく、貯蓄が多く、住まいが安定し、食料の確保と心の健康が良く、再犯も少なかったと報告。要約に数値はなく、サンプルは約100人",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2025 年 2 月）与对照组比较，称受助者更能应付紧急情况，储蓄更多，住房更稳定，粮食保障和心理健康更好，再犯率更低；摘要未给出数字，样本约 100 人",
+        "hi": "पेन के Center for Guaranteed Income Research (फ़रवरी 2025) ने नियंत्रण समूह से तुलना कर बताया कि प्राप्तकर्ता आपात स्थितियाँ बेहतर संभाल पाए, ज़्यादा बचत की, आवास ज़्यादा स्थिर, खाद्य सुरक्षा और मानसिक स्वास्थ्य बेहतर रहे, और दोबारा अपराध कम हुआ; सारांशों में आँकड़े नहीं दिए गए, और नमूना लगभग 100 लोगों का था",
+        "es": "El Center for Guaranteed Income Research de Penn (febrero de 2025), frente a un grupo de control, informó de que los beneficiarios podían cubrir mejor las emergencias, ahorraban más, tenían una vivienda más estable, mejor seguridad alimentaria y salud mental, y menos reincidencia; los resúmenes no daban cifras, y la muestra era de unas 100 personas",
+        "de": "Das Center for Guaranteed Income Research der Penn (Februar 2025) berichtete im Vergleich mit einer Kontrollgruppe, dass die Empfänger Notfälle besser bewältigen konnten, mehr sparten, stabiler wohnten, eine bessere Ernährungssicherheit und psychische Gesundheit sowie eine niedrigere Rückfallquote hatten; die Zusammenfassungen nannten keine Zahlen, und die Stichprobe umfasste etwa 100 Personen",
+        "ar": "أفاد ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (فبراير 2025)، مقارنةً بمجموعة ضابطة، بأن المستفيدين كانوا أقدر على تغطية الطوارئ، وادّخروا أكثر، وكان لديهم سكن أكثر استقرارًا وأمن غذائي وصحة نفسية أفضل، وعودة أقل إلى الإجرام؛ ولم تذكر الملخصات أرقامًا، وكانت العينة نحو 100 شخص"
+      },
+      "source": "https://basicincome.org/news/2022/04/guaranteed-income-pilot-for-released-felons/",
+      "source2": "https://sp2.upenn.edu/groundbreaking-experiments-with-guaranteed-income-for-formerly-incarcerated-individuals-show-promising-results/",
+      "us": {
+        "city": "Gainesville",
+        "state": "FL",
+        "start": "2022-01",
+        "end": "2022",
+        "endEstimated": true,
+        "monthly": 600,
+        "months": 12,
+        "recipients": 115,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Alachua County residents with a felony conviction released from state or federal prison or a Florida county jail within the past six months",
+        "eval": {
+          "by": "University of Pennsylvania Center for Guaranteed Income Research (with Lucius Couloute)",
+          "year": 2025,
+          "type": "report",
+          "url": "https://sp2.upenn.edu/groundbreaking-experiments-with-guaranteed-income-for-formerly-incarcerated-individuals-show-promising-results/"
+        }
+      }
+    },
+    {
+      "id": "us-phoenix-fapf",
+      "years": "2022",
+      "type": "gov",
+      "name": "Financial Assistance for Phoenix Families",
+      "place": {
+        "en": "Phoenix, Arizona, USA",
+        "ja": "アメリカ・アリゾナ州フェニックス",
+        "zh": "美国亚利桑那州凤凰城",
+        "hi": "फ़ीनिक्स, एरिज़ोना, अमेरिका",
+        "es": "Phoenix, Arizona (EE. UU.)",
+        "de": "Phoenix, Arizona (USA)",
+        "ar": "فينيكس، أريزونا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "The City of Phoenix, paid from federal pandemic relief (ARPA)",
+        "ja": "フェニックス市。財源は連邦のコロナ対策資金（ARPA）",
+        "zh": "凤凰城市政府，资金来自联邦疫情纾困款（ARPA）",
+        "hi": "फ़ीनिक्स शहर, पैसा संघीय महामारी राहत (ARPA) से",
+        "es": "La Ciudad de Phoenix, financiado con fondos federales de alivio por la pandemia (ARPA)",
+        "de": "Stadt Phoenix, bezahlt aus Corona-Hilfen des Bundes (ARPA)",
+        "ar": "مدينة فينيكس، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)"
+      },
+      "paid": {
+        "en": "$1,000 a month for 12 months in 2022 on prepaid debit cards to 1,000 low-income Phoenix families chosen by lottery from about 7,000 eligible; the card could not be used for alcohol, tobacco or lottery tickets",
+        "ja": "対象となる約7,000家族から抽選で選んだフェニックスの低所得の1,000家族に、2022年に月1,000ドルを12か月、プリペイドデビットカードで支給。カードは酒、たばこ、宝くじには使えない",
+        "zh": "2022 年，从约 7,000 个符合条件的家庭中通过抽签选出 1,000 个凤凰城低收入家庭，通过预付借记卡每月发放 1,000 美元，为期 12 个月；该卡不能用于购买酒类、烟草或彩票",
+        "hi": "लगभग 7,000 पात्र परिवारों में से लॉटरी से चुने गए 1,000 कम आय वाले फ़ीनिक्स परिवारों को 2022 में 12 महीने तक प्रीपेड डेबिट कार्ड पर हर महीने $1,000; कार्ड शराब, तंबाकू या लॉटरी टिकट के लिए इस्तेमाल नहीं हो सकता था",
+        "es": "1.000 $ al mes durante 12 meses en 2022 en tarjetas de débito prepago para 1.000 familias de bajos ingresos de Phoenix elegidas por sorteo entre unas 7.000 elegibles; la tarjeta no podía usarse para alcohol, tabaco ni lotería",
+        "de": "1.000 $ im Monat für 12 Monate im Jahr 2022 auf Prepaid-Debitkarten an 1.000 einkommensschwache Familien in Phoenix, per Los aus rund 7.000 Berechtigten ausgewählt; die Karte war nicht für Alkohol, Tabak oder Lotterielose nutzbar",
+        "ar": "⁦$1,000⁩ شهريًا لمدة 12 شهرًا في 2022 على بطاقات خصم مسبقة الدفع لـ1,000 أسرة منخفضة الدخل في فينيكس اختيرت بالقرعة من بين نحو 7,000 أسرة مؤهلة؛ ولم يكن ممكنًا استخدام البطاقة لشراء الكحول أو التبغ أو تذاكر اليانصيب"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://kjzz.org/content/1718674/1000-phoenix-families-get-1000-monthly-stipends-few-strings",
+      "source2": "https://www.fingerlakes1.com/2022/06/27/ubi-payments-of-1000-for-arizona-families",
+      "us": {
+        "city": "Phoenix",
+        "state": "AZ",
+        "start": "2022-02",
+        "end": "2022-12",
+        "monthly": 1000,
+        "months": 12,
+        "recipients": 1000,
+        "unit": "households",
+        "funders": ["arpa"],
+        "control": false,
+        "elig": "Phoenix households at or below 80% of area median income ($63,200 for a family of four) who had applied for emergency rental assistance or lived in city public housing or used Section 8 vouchers; chosen by lottery from about 7,000 eligible families",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-sandiego-sdec",
+      "years": "2022–2024",
+      "type": "ngo",
+      "name": "San Diego for Every Child Guaranteed Income Project",
+      "place": {
+        "en": "San Diego and National City, California, USA",
+        "ja": "アメリカ・カリフォルニア州サンディエゴとナショナルシティ",
+        "zh": "美国加利福尼亚州圣迭戈和国民城",
+        "hi": "सैन डिएगो और नेशनल सिटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "San Diego y National City, California (EE. UU.)",
+        "de": "San Diego und National City, Kalifornien (USA)",
+        "ar": "سان دييغو وناشونال سيتي، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Jewish Family Service of San Diego with the City of San Diego and National City, paid from state money and the Alliance Healthcare Foundation",
+        "ja": "Jewish Family Service of San Diegoがサンディエゴ市、ナショナルシティと実施。財源は州の資金とAlliance Healthcare Foundation",
+        "zh": "圣迭戈犹太家庭服务中心，与圣迭戈市和国民城合作，资金来自州政府和 Alliance Healthcare Foundation",
+        "hi": "Jewish Family Service of San Diego, सैन डिएगो शहर और नेशनल सिटी के साथ; पैसा राज्य और Alliance Healthcare Foundation से",
+        "es": "Jewish Family Service of San Diego con la Ciudad de San Diego y National City, financiado con dinero estatal y la Alliance Healthcare Foundation",
+        "de": "Jewish Family Service of San Diego mit der Stadt San Diego und National City, bezahlt aus Mitteln des Bundesstaats und von der Alliance Healthcare Foundation",
+        "ar": "⁦Jewish Family Service of San Diego⁩ مع مدينة سان دييغو وناشونال سيتي، بتمويل من أموال الولاية و⁦Alliance Healthcare Foundation⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 24 months (March 2022–February 2024) to 150 families with a child aged 12 or younger in four high-poverty ZIP codes, picked at random",
+        "ja": "貧困率の高い4つの郵便番号区域で、12歳以下の子どものいる家族から無作為に選んだ150家族に、条件なしで月500ドルを24か月（2022年3月〜2024年2月）",
+        "zh": "向四个高贫困邮编区随机选出的 150 个有 12 岁及以下孩子的家庭无条件每月发放 500 美元，为期 24 个月（2022 年 3 月至 2024 年 2 月）",
+        "hi": "ज़्यादा ग़रीबी वाले चार ZIP कोड में 12 साल या उससे छोटे बच्चे वाले, रैंडम रूप से चुने गए 150 परिवारों को 24 महीने (मार्च 2022–फ़रवरी 2024) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 24 meses (marzo 2022–febrero 2024) para 150 familias con un hijo de 12 años o menos en cuatro códigos postales de alta pobreza, elegidas al azar",
+        "de": "500 $ im Monat ohne Bedingungen für 24 Monate (März 2022 bis Februar 2024) an 150 zufällig ausgewählte Familien mit einem Kind von höchstens 12 Jahren in vier Postleitzahlgebieten mit hoher Armut",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 24 شهرًا (مارس 2022–فبراير 2024) لـ150 أسرة لديها طفل في سن 12 عامًا أو أقل في أربعة رموز بريدية مرتفعة الفقر، اختيرت عشوائيًا"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.jfssd.org/programsreport",
+      "source2": "https://www.kpbs.org/news/local/2022/03/16/guaranteed-income-program-500-monthly-san-diego-families",
+      "us": {
+        "city": "San Diego",
+        "state": "CA",
+        "start": "2022-03",
+        "end": "2024-02",
+        "monthly": 500,
+        "months": 24,
+        "recipients": 150,
+        "unit": "households",
+        "funders": ["public", "philanthropic"],
+        "control": true,
+        "elig": "Adults 18+ with a child 12 or younger, living in ZIP codes 92114 (Encanto), 92139 (Paradise Hills), 91950 (National City) or 92173 (San Ysidro), income up to $53,000 for a family of four; picked at random (about 3,500 others also applied); no work or citizenship requirement",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-birmingham-embrace-mothers",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "Embrace Mothers",
+      "place": {
+        "en": "Birmingham, Alabama, USA",
+        "ja": "アメリカ・アラバマ州バーミングハム",
+        "zh": "美国亚拉巴马州伯明翰",
+        "hi": "बर्मिंघम, अलबामा, अमेरिका",
+        "es": "Birmingham, Alabama (EE. UU.)",
+        "de": "Birmingham, Alabama (USA)",
+        "ar": "برمنغهام، ألاباما، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Birmingham, funded with $495,000 from Mayors for a Guaranteed Income; Abt Global ran the randomized evaluation",
+        "ja": "バーミングハム市。財源はMayors for a Guaranteed Incomeの49万5,000ドルで、Abt Globalが無作為化評価",
+        "zh": "伯明翰市，资金为“保障收入市长联盟”提供的 495,000 美元；由 Abt Global 开展随机评估",
+        "hi": "बर्मिंघम शहर, Mayors for a Guaranteed Income के $4.95 लाख से; रैंडमाइज़्ड मूल्यांकन Abt Global ने किया",
+        "es": "Ciudad de Birmingham, financiado con 495.000 $ de Mayors for a Guaranteed Income; Abt Global realizó la evaluación aleatorizada",
+        "de": "Stadt Birmingham, finanziert mit 495.000 $ von Mayors for a Guaranteed Income; Abt Global führte die randomisierte Evaluation durch",
+        "ar": "مدينة برمنغهام، بتمويل ⁦$495,000⁩ من ⁦Mayors for a Guaranteed Income⁩؛ وتولّت ⁦Abt Global⁩ التقييم العشوائي"
+      },
+      "paid": {
+        "en": "$375 a month with no conditions for 12 months (March 2022–February 2023) to 110 households led by single mothers, picked at random from more than 8,000 applicants; 132 other single mothers formed a control group",
+        "ja": "8,000人超の応募者から無作為に選んだ、シングルマザーが世帯主の110世帯に、条件なしで月375ドルを12か月（2022年3月〜2023年2月）。別のシングルマザー132人が対照群",
+        "zh": "从 8,000 多名申请者中随机选出 110 个单身母亲家庭，无条件每月发放 375 美元，为期 12 个月（2022 年 3 月至 2023 年 2 月）；另有 132 名单身母亲组成对照组",
+        "hi": "8,000 से ज़्यादा आवेदकों में से रैंडम रूप से चुने गए, अकेली माताओं के नेतृत्व वाले 110 परिवारों को 12 महीने (मार्च 2022–फ़रवरी 2023) तक बिना शर्त हर महीने $375; 132 अन्य अकेली माताएँ नियंत्रण समूह में थीं",
+        "es": "375 $ al mes sin condiciones durante 12 meses (marzo 2022–febrero 2023) para 110 hogares encabezados por madres solas, elegidos al azar entre más de 8.000 solicitantes; otras 132 madres solas formaron un grupo de control",
+        "de": "375 $ im Monat ohne Bedingungen für 12 Monate (März 2022 bis Februar 2023) an 110 Haushalte alleinerziehender Mütter, zufällig aus mehr als 8.000 Bewerbungen ausgewählt; 132 weitere alleinerziehende Mütter bildeten eine Kontrollgruppe",
+        "ar": "⁦$375⁩ شهريًا بلا شروط لمدة 12 شهرًا (مارس 2022–فبراير 2023) لـ110 أسر تعيلها أمهات منفردات، اختيرت عشوائيًا من بين أكثر من 8,000 متقدمة؛ وشكّلت 132 أمًّا منفردة أخرى مجموعة ضابطة"
+      },
+      "result": {
+        "en": "Abt Global's randomized evaluation (August 2024), vs 132 controls, reported that recipients had less utility debt, were better able to cover a $400 emergency and saved more, and that mothers who kept working had significantly fewer work problems caused by childcare; survey results, small sample",
+        "ja": "Abt Globalの無作為化評価（2024年8月）は対照群132人と比べ、受給者は光熱費の滞納が少なく、400ドルの急な出費を払いやすく、貯蓄も多く、働き続けた母親は保育が原因の仕事上の問題が有意に少なかったと報告。調査結果で、小さなサンプル",
+        "zh": "Abt Global 的随机评估（2024 年 8 月）与 132 名对照组成员比较，称受助者的水电费欠款更少，更能应付 400 美元急用，储蓄更多，坚持工作的母亲因育儿导致的工作问题显著减少；为调查结果，样本较小",
+        "hi": "Abt Global के रैंडमाइज़्ड मूल्यांकन (अगस्त 2024) ने 132 नियंत्रण वालों से तुलना कर बताया कि प्राप्तकर्ताओं पर बिजली-पानी का क़र्ज़ कम था, वे $400 का अचानक ख़र्च बेहतर झेल पाती थीं और ज़्यादा बचत करती थीं, और काम जारी रखने वाली माताओं को बच्चों की देखभाल के कारण काम में काफ़ी कम दिक़्क़तें हुईं; सर्वे के नतीजे, छोटा नमूना",
+        "es": "La evaluación aleatorizada de Abt Global (agosto de 2024), frente a 132 controles, informó de que las beneficiarias tenían menos deudas de suministros, podían cubrir mejor un imprevisto de 400 $ y ahorraban más, y de que las madres que siguieron trabajando tuvieron significativamente menos problemas laborales por el cuidado de los hijos; resultados de encuestas, muestra pequeña",
+        "de": "Die randomisierte Evaluation von Abt Global (August 2024) berichtete im Vergleich mit 132 Personen der Kontrollgruppe, dass die Empfängerinnen weniger Schulden bei Versorgungsrechnungen hatten, eine Notausgabe von 400 $ besser decken konnten und mehr sparten und dass weiter berufstätige Mütter deutlich weniger Probleme bei der Arbeit wegen der Kinderbetreuung hatten; Befragungsergebnisse, kleine Stichprobe",
+        "ar": "أفاد التقييم العشوائي لـ⁦Abt Global⁩ (أغسطس 2024)، مقارنةً بـ132 في المجموعة الضابطة، بأن المستفيدات كانت لديهن ديون مرافق أقل، وقدرة أفضل على تغطية طارئ بقيمة ⁦$400⁩، ومدخرات أكثر، وبأن الأمهات اللواتي واصلن العمل واجهن مشكلات عمل بسبب رعاية الأطفال أقل بدلالة إحصائية؛ نتائج استطلاعات، وعينة صغيرة"
+      },
+      "source": "https://guaranteedincome.us/birmingham",
+      "source2": "https://nnpa.org/single-mothers-in-birmingham-see-benefits-from-375-in-guaranteed-monthly-income/",
+      "us": {
+        "city": "Birmingham",
+        "state": "AL",
+        "start": "2022-03",
+        "end": "2023-02",
+        "monthly": 375,
+        "months": 12,
+        "recipients": 110,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Female-identifying single heads of family aged 18+ with children under 18 (including grandmothers and aunts in a mothering role), living in Birmingham; randomly selected by Abt Global; more than 8,000 mothers applied",
+        "eval": {
+          "by": "Abt Global (for Mayors for a Guaranteed Income)",
+          "year": 2024,
+          "type": "report",
+          "url": "https://guaranteedincome.us/images/birmingham-report.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-shreveport-sgip",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "Shreveport Guaranteed Income Program (SGIP)",
+      "place": {
+        "en": "Shreveport, Louisiana, USA",
+        "ja": "アメリカ・ルイジアナ州シュリーブポート",
+        "zh": "美国路易斯安那州什里夫波特",
+        "hi": "श्रीवपोर्ट, लुइज़ियाना, अमेरिका",
+        "es": "Shreveport, Luisiana (EE. UU.)",
+        "de": "Shreveport, Louisiana (USA)",
+        "ar": "شريفبورت، لويزيانا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Shreveport with United Way of Northwest Louisiana (Shreveport Financial Empowerment Center), paid from private donations for six months and Caddo Parish Commission money for six; part of Mayors for a Guaranteed Income",
+        "ja": "シュリーブポート市とUnited Way of Northwest Louisiana（シュリーブポート金融エンパワーメント・センター）。財源は6か月分が個人の寄付、6か月分がカド郡委員会の資金で、Mayors for a Guaranteed Incomeの一環",
+        "zh": "什里夫波特市与西北路易斯安那联合之路（什里夫波特金融赋能中心）合作，六个月的资金来自私人捐款，另六个月来自卡多堂区委员会；属于“保障收入市长联盟”",
+        "hi": "श्रीवपोर्ट शहर, United Way of Northwest Louisiana (Shreveport Financial Empowerment Center) के साथ; छह महीने का पैसा निजी दान से और छह महीने का Caddo Parish Commission से; Mayors for a Guaranteed Income का हिस्सा",
+        "es": "Ciudad de Shreveport con United Way of Northwest Louisiana (Shreveport Financial Empowerment Center), financiado con donaciones privadas durante seis meses y con dinero de la Comisión de la Parroquia de Caddo durante otros seis; forma parte de Mayors for a Guaranteed Income",
+        "de": "Stadt Shreveport mit United Way of Northwest Louisiana (Shreveport Financial Empowerment Center), sechs Monate aus privaten Spenden und sechs Monate aus Mitteln der Caddo Parish Commission bezahlt; Teil von Mayors for a Guaranteed Income",
+        "ar": "مدينة شريفبورت مع ⁦United Way of Northwest Louisiana⁩ (⁦Shreveport Financial Empowerment Center⁩)، بتمويل من تبرعات خاصة لستة أشهر ومن أموال ⁦Caddo Parish Commission⁩ لستة أشهر؛ وهو جزء من ⁦Mayors for a Guaranteed Income⁩"
+      },
+      "paid": {
+        "en": "$660 a month with no conditions for 12 months (March 2022–February 2023) to 110 families led by single parents at or below 120% of the poverty line, chosen at random; 132 others formed a control group",
+        "ja": "貧困線の120%以下のひとり親世帯から無作為に選んだ110家族に、条件なしで月660ドルを12か月（2022年3月〜2023年2月）。別の132家族が対照群",
+        "zh": "向随机选出的 110 个收入不超过贫困线 120% 的单亲家庭无条件每月发放 660 美元，为期 12 个月（2022 年 3 月至 2023 年 2 月）；另有 132 人组成对照组",
+        "hi": "ग़रीबी रेखा के 120% या उससे कम आय वाले, अकेले माता-पिता के नेतृत्व वाले, रैंडम रूप से चुने गए 110 परिवारों को 12 महीने (मार्च 2022–फ़रवरी 2023) तक बिना शर्त हर महीने $660; 132 अन्य नियंत्रण समूह में थे",
+        "es": "660 $ al mes sin condiciones durante 12 meses (marzo 2022–febrero 2023) para 110 familias monoparentales con ingresos de hasta el 120 % del umbral de pobreza, elegidas al azar; otras 132 formaron un grupo de control",
+        "de": "660 $ im Monat ohne Bedingungen für 12 Monate (März 2022 bis Februar 2023) an 110 zufällig ausgewählte Familien Alleinerziehender mit höchstens 120 % der Armutsgrenze; 132 weitere bildeten eine Kontrollgruppe",
+        "ar": "⁦$660⁩ شهريًا بلا شروط لمدة 12 شهرًا (مارس 2022–فبراير 2023) لـ110 أسر يعيلها والد أو والدة منفردان عند 120% من خط الفقر أو دونه، اختيرت عشوائيًا؛ وشكّل 132 آخرون مجموعة ضابطة"
+      },
+      "result": {
+        "en": "Abt Global's randomized evaluation (October 2024), vs 132 controls: 25% of parents could cover a $400 emergency vs 13%, and 58% were food secure at the end vs 36%; no effect on employment. Most gains lasted only while payments continued, and six months after they ended some outcomes were worse than the control group's",
+        "ja": "Abt Globalの無作為化評価（2024年10月）は対照群132家族と比べ、400ドルの急な出費を払える親が25%対13%、終了時に食料が確保できていた人が58%対36%で、雇用への影響はなかったと報告。成果の多くは支給中しか続かず、終了6か月後には一部の結果が対照群より悪かった",
+        "zh": "Abt Global 的随机评估（2024 年 10 月）与 132 名对照组成员比较：25% 的父母能应付 400 美元急用，对照组为 13%；结束时 58% 有粮食保障，对照组为 36%；对就业没有影响。多数改善只在发放期间持续，结束六个月后部分结果比对照组更差",
+        "hi": "Abt Global के रैंडमाइज़्ड मूल्यांकन (अक्टूबर 2024) ने 132 नियंत्रण वालों से तुलना की: 25% माता-पिता $400 का अचानक ख़र्च झेल सकते थे, बनाम 13%, और अंत में 58% खाद्य सुरक्षित थे, बनाम 36%; रोज़गार पर कोई असर नहीं। ज़्यादातर फ़ायदे सिर्फ़ भुगतान चलने तक रहे, और ख़त्म होने के छह महीने बाद कुछ नतीजे नियंत्रण समूह से बदतर थे",
+        "es": "La evaluación aleatorizada de Abt Global (octubre de 2024), frente a 132 controles: el 25 % de los padres podía cubrir un imprevisto de 400 $ frente al 13 %, y el 58 % tenía seguridad alimentaria al final frente al 36 %; sin efecto en el empleo. La mayoría de las mejoras duraron solo mientras siguieron los pagos, y seis meses después de terminar algunos resultados eran peores que los del grupo de control",
+        "de": "Die randomisierte Evaluation von Abt Global (Oktober 2024) im Vergleich mit 132 Personen der Kontrollgruppe: 25 % der Eltern konnten eine Notausgabe von 400 $ decken gegenüber 13 %, und am Ende waren 58 % ernährungssicher gegenüber 36 %; keine Wirkung auf die Beschäftigung. Die meisten Verbesserungen hielten nur, solange die Zahlungen liefen, und sechs Monate nach deren Ende waren einige Ergebnisse schlechter als in der Kontrollgruppe",
+        "ar": "التقييم العشوائي لـ⁦Abt Global⁩ (أكتوبر 2024)، مقارنةً بـ132 في المجموعة الضابطة: استطاع 25% من الآباء والأمهات تغطية طارئ بقيمة ⁦$400⁩ مقابل 13%، وكان 58% في أمن غذائي في النهاية مقابل 36%؛ دون أثر على التوظيف. ولم تدم معظم المكاسب إلا أثناء استمرار الدفعات، وبعد ستة أشهر من انتهائها كانت بعض النتائج أسوأ من نتائج المجموعة الضابطة"
+      },
+      "source": "https://www.abtglobal.com/insights/publications/report/shreveport-guaranteed-income-program-final-evaluation-report",
+      "source2": "https://www.redriverradio.org/news/2024-10-15/mixed-results-from-guaranteed-income-program-in-shreveport",
+      "us": {
+        "city": "Shreveport",
+        "state": "LA",
+        "start": "2022-03",
+        "end": "2023-02",
+        "monthly": 660,
+        "months": 12,
+        "recipients": 110,
+        "unit": "households",
+        "funders": ["philanthropic", "public"],
+        "control": true,
+        "elig": "Single parents or guardians (not living with a romantic partner) in Shreveport/Caddo Parish with household income at or below 120% of the federal poverty level; random selection weighted so about half came from lower-income areas",
+        "eval": {
+          "by": "Abt Global (for Mayors for a Guaranteed Income)",
+          "year": 2024,
+          "type": "report",
+          "url": "https://www.abtglobal.com/insights/publications/report/shreveport-guaranteed-income-program-final-evaluation-report"
+        }
+      }
+    },
+    {
+      "id": "us-durham-excel",
+      "years": "2022–2023",
+      "type": "ngo",
+      "name": "Excel (StepUp Durham guaranteed income pilot)",
+      "place": {
+        "en": "Durham, North Carolina, USA",
+        "ja": "アメリカ・ノースカロライナ州ダーラム",
+        "zh": "美国北卡罗来纳州达勒姆",
+        "hi": "डरहम, नॉर्थ कैरोलाइना, अमेरिका",
+        "es": "Durham, Carolina del Norte (EE. UU.)",
+        "de": "Durham, North Carolina (USA)",
+        "ar": "دورهام، كارولاينا الشمالية، الولايات المتحدة"
+      },
+      "who": {
+        "en": "StepUp Durham with the City of Durham, paid mostly from a donation by Jack Dorsey plus other private donors",
+        "ja": "StepUp Durhamとダーラム市。財源は主にジャック・ドーシー氏の寄付と、ほかの個人の寄付者",
+        "zh": "StepUp Durham 与达勒姆市合作，资金主要来自杰克·多尔西的捐款及其他私人捐助者",
+        "hi": "StepUp Durham, डरहम शहर के साथ; ज़्यादातर पैसा जैक डोर्सी के दान और अन्य निजी दानदाताओं से",
+        "es": "StepUp Durham con la Ciudad de Durham, financiado sobre todo con una donación de Jack Dorsey más otros donantes privados",
+        "de": "StepUp Durham mit der Stadt Durham, überwiegend aus einer Spende von Jack Dorsey und weiteren privaten Spendern bezahlt",
+        "ar": "⁦StepUp Durham⁩ مع مدينة دورهام، بتمويل معظمه من تبرع من جاك دورسي إلى جانب متبرعين خاصين آخرين"
+      },
+      "paid": {
+        "en": "$600 a month with no conditions for 12 months from March 2022 to 109 formerly incarcerated Durham residents",
+        "ja": "ダーラムの元受刑者109人に、2022年3月から条件なしで月600ドルを12か月",
+        "zh": "自 2022 年 3 月起，向 109 名曾被监禁的达勒姆居民无条件每月发放 600 美元，为期 12 个月",
+        "hi": "डरहम के 109 पूर्व क़ैदी निवासियों को मार्च 2022 से 12 महीने तक बिना शर्त हर महीने $600",
+        "es": "600 $ al mes sin condiciones durante 12 meses desde marzo de 2022 para 109 residentes de Durham que habían estado encarcelados",
+        "de": "600 $ im Monat ohne Bedingungen für 12 Monate ab März 2022 an 109 ehemals inhaftierte Einwohner Durhams",
+        "ar": "⁦$600⁩ شهريًا بلا شروط لمدة 12 شهرًا بدءًا من مارس 2022 لـ109 من السجناء السابقين من سكان دورهام"
+      },
+      "result": {
+        "en": "Penn's Center for Guaranteed Income Research (February 2025), vs a control group: recidivism was low in both groups with no significant difference; recipients were more likely to keep full-time jobs and reported less difficulty affording food and fewer probation or parole violations",
+        "ja": "ペンシルベニア大学CGIR（2025年2月）は対照群と比べ、再犯はどちらも低く有意な差はなかったと報告。受給者はフルタイムの仕事を続ける割合が高く、食費の工面に苦労することが少なく、保護観察や仮釈放の違反も少なかった",
+        "zh": "宾夕法尼亚大学保障收入研究中心（2025 年 2 月）与对照组比较：两组再犯率都很低，没有显著差异；受助者更可能保住全职工作，报告的买食物困难更少，违反缓刑或假释规定的情况也更少",
+        "hi": "पेन के Center for Guaranteed Income Research (फ़रवरी 2025) ने नियंत्रण समूह से तुलना की: दोबारा अपराध दोनों समूहों में कम रहा और कोई महत्वपूर्ण अंतर नहीं था; प्राप्तकर्ताओं के पूर्णकालिक नौकरी बनाए रखने की संभावना ज़्यादा थी, और उन्होंने खाना जुटाने में कम दिक़्क़त और प्रोबेशन या पैरोल के कम उल्लंघन बताए",
+        "es": "El Center for Guaranteed Income Research de Penn (febrero de 2025), frente a un grupo de control: la reincidencia fue baja en ambos grupos, sin diferencia significativa; los beneficiarios tuvieron más probabilidad de conservar el empleo a tiempo completo y declararon menos dificultades para pagar la comida y menos infracciones de la libertad condicional o vigilada",
+        "de": "Das Center for Guaranteed Income Research der Penn (Februar 2025) im Vergleich mit einer Kontrollgruppe: Die Rückfallquote war in beiden Gruppen niedrig, ohne signifikanten Unterschied; die Empfänger behielten häufiger Vollzeitstellen und berichteten weniger Schwierigkeiten, Lebensmittel zu bezahlen, sowie weniger Verstöße gegen Bewährungsauflagen",
+        "ar": "⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (فبراير 2025)، مقارنةً بمجموعة ضابطة: كانت العودة إلى الإجرام منخفضة في المجموعتين دون فرق دال؛ وكان المستفيدون أرجح في الحفاظ على وظائف بدوام كامل، وأفادوا بصعوبة أقل في تحمّل تكلفة الطعام ومخالفات أقل لشروط المراقبة أو الإفراج المشروط"
+      },
+      "source": "https://sp2.upenn.edu/groundbreaking-experiments-with-guaranteed-income-for-formerly-incarcerated-individuals-show-promising-results/",
+      "source2": "https://www.northcarolinahealthnews.org/2026/07/06/two-nc-local-governments-test-guaranteed-income-formerly-incarcerated/",
+      "us": {
+        "city": "Durham",
+        "state": "NC",
+        "start": "2022-03",
+        "end": "2023-02",
+        "monthly": 600,
+        "months": 12,
+        "recipients": 109,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "People released from incarceration within the past five years, returning to Durham, with income at or below 60% of the area median income",
+        "eval": {
+          "by": "University of Pennsylvania Center for Guaranteed Income Research",
+          "year": 2025,
+          "type": "report",
+          "url": "https://sp2.upenn.edu/groundbreaking-experiments-with-guaranteed-income-for-formerly-incarcerated-individuals-show-promising-results/"
+        }
+      }
+    },
+    {
+      "id": "us-yolo-yobi",
+      "years": "2022–2024",
+      "type": "gov",
+      "name": "Yolo County Basic Income (YoBI)",
+      "place": {
+        "en": "Yolo County, California, USA",
+        "ja": "アメリカ・カリフォルニア州ヨロ郡",
+        "zh": "美国加利福尼亚州约洛县",
+        "hi": "योलो काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Yolo, California (EE. UU.)",
+        "de": "Yolo County, Kalifornien (USA)",
+        "ar": "مقاطعة يولو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Yolo County Health and Human Services, with UC Davis researchers",
+        "ja": "ヨロ郡保健福祉局とカリフォルニア大学デービス校の研究者",
+        "zh": "约洛县卫生与公共服务局，与加州大学戴维斯分校研究人员合作",
+        "hi": "Yolo County Health and Human Services, UC Davis के शोधकर्ताओं के साथ",
+        "es": "Servicios Sanitarios y Humanos del condado de Yolo, con investigadores de UC Davis",
+        "de": "Gesundheits- und Sozialbehörde von Yolo County (Health and Human Services), mit Forschenden der UC Davis",
+        "ar": "إدارة الصحة والخدمات الإنسانية في مقاطعة يولو، مع باحثين من ⁦UC Davis⁩"
+      },
+      "paid": {
+        "en": "About $1,289 a month on average ($1,200–$1,500, topping CalWORKs up to just above the California poverty line) with no conditions for two years (April 2022–March 2024) to 76 families with young children who were homeless or unstably housed",
+        "ja": "ホームレスか住まいが不安定な、幼い子どものいる76家族に、条件なしで平均月約1,289ドル（1,200〜1,500ドル。CalWORKsに上乗せしてカリフォルニア州の貧困線をわずかに上回る水準まで）を2年間（2022年4月〜2024年3月）",
+        "zh": "向 76 个无家可归或住房不稳定、有幼儿的家庭无条件每月平均发放约 1,289 美元（1,200 至 1,500 美元，将 CalWORKs 补足到略高于加州贫困线），为期两年（2022 年 4 月至 2024 年 3 月）",
+        "hi": "बेघर या अस्थिर आवास वाले, छोटे बच्चों वाले 76 परिवारों को दो साल (अप्रैल 2022–मार्च 2024) तक बिना शर्त हर महीने औसतन लगभग $1,289 ($1,200–$1,500, जो CalWORKs को कैलिफ़ोर्निया की ग़रीबी रेखा से ठीक ऊपर तक पूरा करता था)",
+        "es": "Unos 1.289 $ al mes de media (1.200–1.500 $, completando CalWORKs hasta justo por encima del umbral de pobreza de California) sin condiciones durante dos años (abril 2022–marzo 2024) para 76 familias con niños pequeños sin hogar o con vivienda inestable",
+        "de": "Durchschnittlich etwa 1.289 $ im Monat (1.200 bis 1.500 $, als Aufstockung von CalWORKs bis knapp über die kalifornische Armutsgrenze) ohne Bedingungen für zwei Jahre (April 2022 bis März 2024) an 76 Familien mit kleinen Kindern, die obdachlos waren oder in unsicheren Wohnverhältnissen lebten",
+        "ar": "نحو ⁦$1,289⁩ شهريًا في المتوسط (من ⁦$1,200⁩ إلى ⁦$1,500⁩، تُكمل ⁦CalWORKs⁩ حتى ما فوق خط الفقر في كاليفورنيا بقليل) بلا شروط لمدة عامين (أبريل 2022–مارس 2024) لـ76 أسرة لديها أطفال صغار كانت مشرّدة أو في سكن غير مستقر"
+      },
+      "result": {
+        "en": "A UC Davis peer-reviewed qualitative study (2026) reported that families were lifted above the state poverty line, with better housing stability and lower stress, but for most it did not lead to lasting financial independence: one emergency could erase gains ('survival mode'). Based on participants' accounts, not a comparison group",
+        "ja": "カリフォルニア大学デービス校の査読付き質的研究（2026年）は、家族は州の貧困線を上回り、住まいが安定してストレスも下がったが、多くの家族では長続きする経済的自立にはつながらず、一度の急な出費で成果が消えかねなかった（「サバイバルモード」）と報告。比較群ではなく参加者の話に基づく",
+        "zh": "加州大学戴维斯分校一项经同行评审的定性研究（2026 年）称，这些家庭被提升到州贫困线以上，住房更稳定、压力更低，但对多数家庭而言并未带来持久的经济独立：一次突发状况就可能抹去成果（“生存模式”）。基于参与者的讲述，而非与对照组比较",
+        "hi": "UC Davis के एक पीयर-रिव्यूड गुणात्मक अध्ययन (2026) के अनुसार परिवार राज्य की ग़रीबी रेखा से ऊपर आए, आवास ज़्यादा स्थिर हुआ और तनाव घटा, पर ज़्यादातर के लिए इससे स्थायी आर्थिक आत्मनिर्भरता नहीं आई: एक आपात स्थिति सारे फ़ायदे मिटा सकती थी ('survival mode')। यह प्रतिभागियों के बयानों पर आधारित है, तुलना समूह पर नहीं",
+        "es": "Un estudio cualitativo revisado por pares de UC Davis (2026) informó de que las familias superaron el umbral de pobreza estatal, con más estabilidad de vivienda y menos estrés, pero para la mayoría no supuso una independencia económica duradera: un solo imprevisto podía borrar lo ganado («modo supervivencia»). Basado en los relatos de los participantes, sin grupo de comparación",
+        "de": "Eine begutachtete qualitative Studie der UC Davis (2026) berichtete, dass die Familien über die Armutsgrenze des Bundesstaats gehoben wurden, mit stabilerer Wohnsituation und weniger Stress, dies für die meisten aber nicht zu dauerhafter finanzieller Unabhängigkeit führte: Ein einziger Notfall konnte die Fortschritte zunichtemachen („Überlebensmodus“). Beruht auf Schilderungen der Teilnehmenden, nicht auf einer Vergleichsgruppe",
+        "ar": "أفادت دراسة نوعية محكّمة من ⁦UC Davis⁩ (2026) بأن الأسر ارتفعت فوق خط الفقر في الولاية، مع استقرار أفضل في السكن وتوتر أقل، لكن ذلك لم يؤدِّ لدى معظمها إلى استقلال مالي دائم: إذ كان طارئ واحد كفيلًا بمحو المكاسب («وضع البقاء»). وتستند إلى روايات المشاركين، لا إلى مجموعة مقارنة"
+      },
+      "source": "https://www.ucdavis.edu/news/yolo-county-basic-income-program-provided-reprieve-poverty-not-financial-independence",
+      "source2": "https://poverty.ucdavis.edu/article/break-cycle-generational-poverty-yolo-county-begins-allocating-basic-income-families-poverty",
+      "us": {
+        "city": "Yolo County",
+        "state": "CA",
+        "start": "2022-04",
+        "end": "2024-03",
+        "monthly": 1289,
+        "months": 24,
+        "recipients": 76,
+        "unit": "households",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "Yolo County families on CalWORKs with at least one child under 6 who were homeless or unstably housed (in the county's Housing Support Program)",
+        "eval": {
+          "by": "Catherine Brinkley and colleagues, UC Davis (International Journal of Environmental Research and Public Health)",
+          "year": 2026,
+          "type": "peer-reviewed",
+          "url": "https://www.ucdavis.edu/news/yolo-county-basic-income-program-provided-reprieve-poverty-not-financial-independence"
+        }
+      }
+    },
+    {
+      "id": "us-new-orleans-youth",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "New Orleans Guaranteed Income Program",
+      "place": {
+        "en": "New Orleans, Louisiana, USA",
+        "ja": "アメリカ・ルイジアナ州ニューオーリンズ",
+        "zh": "美国路易斯安那州新奥尔良",
+        "hi": "न्यू ऑर्लियन्स, लुइज़ियाना, अमेरिका",
+        "es": "Nueva Orleans, Luisiana (EE. UU.)",
+        "de": "New Orleans, Louisiana (USA)",
+        "ar": "نيو أورلينز، لويزيانا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of New Orleans (Mayor's Office of Youth and Families), funded by a $500,000 grant from Mayors for a Guaranteed Income",
+        "ja": "ニューオーリンズ市（市長室青少年・家族局）。財源はMayors for a Guaranteed Incomeからの50万ドルの補助金",
+        "zh": "新奥尔良市（市长青年与家庭办公室），资金为“保障收入市长联盟”提供的 50 万美元拨款",
+        "hi": "न्यू ऑर्लियन्स शहर (Mayor's Office of Youth and Families), Mayors for a Guaranteed Income के $5 लाख के अनुदान से",
+        "es": "Ciudad de Nueva Orleans (Oficina del Alcalde para la Juventud y las Familias), financiado con una subvención de 500.000 $ de Mayors for a Guaranteed Income",
+        "de": "Stadt New Orleans (Mayor's Office of Youth and Families), finanziert durch einen Zuschuss von 500.000 $ von Mayors for a Guaranteed Income",
+        "ar": "مدينة نيو أورلينز (مكتب العمدة للشباب والأسر)، بتمويل من منحة قدرها ⁦$500,000⁩ من ⁦Mayors for a Guaranteed Income⁩"
+      },
+      "paid": {
+        "en": "$350 a month with no conditions for 10 months (April 2022–March 2023) to 125 young people aged 16–24 who were out of work and school",
+        "ja": "仕事にも学校にも就いていない16〜24歳の若者125人に、条件なしで月350ドルを10か月（2022年4月〜2023年3月）",
+        "zh": "向 125 名既无工作也未上学的 16 至 24 岁年轻人无条件每月发放 350 美元，为期 10 个月（2022 年 4 月至 2023 年 3 月）",
+        "hi": "काम और पढ़ाई दोनों से बाहर 16–24 साल के 125 युवाओं को 10 महीने (अप्रैल 2022–मार्च 2023) तक बिना शर्त हर महीने $350",
+        "es": "350 $ al mes sin condiciones durante 10 meses (abril 2022–marzo 2023) para 125 jóvenes de 16 a 24 años que no trabajaban ni estudiaban",
+        "de": "350 $ im Monat ohne Bedingungen für 10 Monate (April 2022 bis März 2023) an 125 junge Menschen von 16 bis 24 Jahren ohne Arbeit und ohne Schule",
+        "ar": "⁦$350⁩ شهريًا بلا شروط لمدة 10 أشهر (أبريل 2022–مارس 2023) لـ125 شابًا تتراوح أعمارهم بين 16 و24 عامًا لا يعملون ولا يدرسون"
+      },
+      "result": {
+        "en": "The city, citing Penn's Center for Guaranteed Income Research (August 2024), reported full-time employment among participants rose from 6% at the start to 21%, and income volatility fell by nearly 20 points; there was no control group, so changes cannot be attributed to the payments",
+        "ja": "市はペンシルベニア大学CGIR（2024年8月）を引いて、参加者のフルタイム雇用が開始時の6%から21%に上がり、収入の変動が20ポイント近く下がったと報告。対照群がないため、変化を支給の効果とは言えない",
+        "zh": "该市援引宾夕法尼亚大学保障收入研究中心（2024 年 8 月）称，参与者的全职就业率从开始时的 6% 升至 21%，收入波动下降近 20 个百分点；没有对照组，因此不能将变化归因于发放",
+        "hi": "शहर ने पेन के Center for Guaranteed Income Research (अगस्त 2024) के हवाले से बताया कि प्रतिभागियों में पूर्णकालिक रोज़गार शुरुआत के 6% से बढ़कर 21% हुआ, और आय का उतार-चढ़ाव लगभग 20 अंक घटा; कोई नियंत्रण समूह नहीं था, इसलिए बदलावों को भुगतान का असर नहीं कहा जा सकता",
+        "es": "La ciudad, citando al Center for Guaranteed Income Research de Penn (agosto de 2024), informó de que el empleo a tiempo completo de los participantes pasó del 6 % al inicio al 21 %, y la volatilidad de ingresos bajó casi 20 puntos; no hubo grupo de control, así que los cambios no pueden atribuirse a los pagos",
+        "de": "Die Stadt berichtete unter Berufung auf das Center for Guaranteed Income Research der Penn (August 2024), dass die Vollzeitbeschäftigung der Teilnehmenden von 6 % zu Beginn auf 21 % stieg und die Einkommensschwankungen um fast 20 Punkte sanken; eine Kontrollgruppe gab es nicht, daher lassen sich die Veränderungen nicht den Zahlungen zuschreiben",
+        "ar": "أفادت المدينة، نقلًا عن ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا (أغسطس 2024)، بأن العمل بدوام كامل بين المشاركين ارتفع من 6% في البداية إلى 21%، وبأن تقلب الدخل انخفض بنحو 20 نقطة؛ ولم تكن هناك مجموعة ضابطة، لذا لا يمكن نسبة التغيّرات إلى الدفعات"
+      },
+      "source": "https://guaranteedincome.us/new-orleans",
+      "source2": "https://nola.gov/mayor/news/may-2022/city-of-new-orleans-announces-launch-of-guaranteed-income-program",
+      "us": {
+        "city": "New Orleans",
+        "state": "LA",
+        "start": "2022-04",
+        "end": "2023-03",
+        "monthly": 350,
+        "months": 10,
+        "recipients": 125,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Young people aged 16–24 in Orleans Parish who were disconnected from work and school, referred by partner organizations",
+        "eval": {
+          "by": "University of Pennsylvania Center for Guaranteed Income Research",
+          "year": 2024,
+          "type": "report",
+          "url": "https://nola.gov/next/mayors-office/news/articles/september-2024/2024-09-03-guaranteed-income-program/"
+        }
+      }
+    },
+    {
+      "id": "us-louisville-yalift",
+      "years": "2022–2023",
+      "type": "ngo",
+      "name": "Young Adult Louisville Income for Transformation (YALift!)",
+      "place": {
+        "en": "Louisville, Kentucky, USA",
+        "ja": "アメリカ・ケンタッキー州ルイビル",
+        "zh": "美国肯塔基州路易斯维尔",
+        "hi": "लुइविल, केंटकी, अमेरिका",
+        "es": "Louisville, Kentucky (EE. UU.)",
+        "de": "Louisville, Kentucky (USA)",
+        "ar": "لويفيل، كنتاكي، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Metro United Way with Louisville Metro Government and Mayors for a Guaranteed Income",
+        "ja": "Metro United Way、ルイビル・メトロ政府、Mayors for a Guaranteed Income",
+        "zh": "Metro United Way 与路易斯维尔都会政府及“保障收入市长联盟”合作",
+        "hi": "Metro United Way, Louisville Metro Government और Mayors for a Guaranteed Income के साथ",
+        "es": "Metro United Way con el Gobierno Metropolitano de Louisville y Mayors for a Guaranteed Income",
+        "de": "Metro United Way mit Louisville Metro Government und Mayors for a Guaranteed Income",
+        "ar": "⁦Metro United Way⁩ مع حكومة لويفيل الحضرية و⁦Mayors for a Guaranteed Income⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months (April 2022–March 2023) to 151 young adults aged 18–24 in three low-income Louisville neighborhoods; 180 similar residents formed a comparison group",
+        "ja": "ルイビルの低所得の3地区に住む18〜24歳の若者151人に、条件なしで月500ドルを12か月（2022年4月〜2023年3月）。似た住民180人が比較群",
+        "zh": "向路易斯维尔三个低收入街区的 151 名 18 至 24 岁年轻人无条件每月发放 500 美元，为期 12 个月（2022 年 4 月至 2023 年 3 月）；另有 180 名情况相似的居民组成比较组",
+        "hi": "लुइविल के तीन कम आय वाले इलाकों के 18–24 साल के 151 युवाओं को 12 महीने (अप्रैल 2022–मार्च 2023) तक बिना शर्त हर महीने $500; 180 मिलते-जुलते निवासी तुलना समूह में थे",
+        "es": "500 $ al mes sin condiciones durante 12 meses (abril 2022–marzo 2023) para 151 jóvenes de 18 a 24 años de tres barrios de bajos ingresos de Louisville; 180 residentes similares formaron un grupo de comparación",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate (April 2022 bis März 2023) an 151 junge Erwachsene von 18 bis 24 Jahren in drei einkommensschwachen Vierteln Louisvilles; 180 vergleichbare Einwohner bildeten eine Vergleichsgruppe",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا (أبريل 2022–مارس 2023) لـ151 شابًا تتراوح أعمارهم بين 18 و24 عامًا في ثلاثة أحياء منخفضة الدخل في لويفيل؛ وشكّل 180 من السكان المماثلين مجموعة مقارنة"
+      },
+      "result": {
+        "en": "Abt Global (October 2024), vs 180 non-recipients: recipients were more likely to have saved $500 or more and less likely to be evicted, both statistically significant; Metro United Way reported they were 3 times as likely to afford a $400 emergency. Higher income and work were not clearly due to the money, given the small sample",
+        "ja": "Abt Global（2024年10月）は非受給者180人と比べ、受給者は500ドル以上を貯めた人が多く、立ち退きが少なく、どちらも統計的に有意だったと報告。Metro United Wayは、400ドルの急な出費を払える割合が3倍だったとした。小さなサンプルのため、収入や仕事の増加がお金によるものかははっきりしない",
+        "zh": "Abt Global（2024 年 10 月）与 180 名未受助者比较：受助者储蓄 500 美元以上的可能性更高，被驱逐的可能性更低，两者均统计上显著；Metro United Way 称，他们能负担 400 美元急用的可能性是对方的 3 倍。由于样本较小，收入和工作的增加不能明确归因于这笔钱",
+        "hi": "Abt Global (अक्टूबर 2024) ने 180 ग़ैर-प्राप्तकर्ताओं से तुलना की: प्राप्तकर्ताओं के $500 या ज़्यादा बचाने की संभावना ज़्यादा और बेदख़ली की संभावना कम थी, दोनों सांख्यिकीय रूप से महत्वपूर्ण; Metro United Way के अनुसार उनके $400 का अचानक ख़र्च झेल पाने की संभावना 3 गुना थी। छोटे नमूने के कारण ज़्यादा आय और काम को साफ़ तौर पर पैसे का असर नहीं कहा जा सकता",
+        "es": "Abt Global (octubre de 2024), frente a 180 no beneficiarios: los beneficiarios tenían más probabilidad de haber ahorrado 500 $ o más y menos de ser desahuciados, ambas diferencias estadísticamente significativas; Metro United Way informó de que tenían el triple de probabilidad de poder afrontar un imprevisto de 400 $. Los mayores ingresos y trabajo no se debieron claramente al dinero, dada la muestra pequeña",
+        "de": "Abt Global (Oktober 2024) im Vergleich mit 180 Nicht-Empfängern: Die Empfänger hatten häufiger 500 $ oder mehr gespart und wurden seltener zwangsgeräumt, beides statistisch signifikant; laut Metro United Way konnten sie dreimal so häufig eine Notausgabe von 400 $ stemmen. Höheres Einkommen und mehr Arbeit ließen sich wegen der kleinen Stichprobe nicht eindeutig auf das Geld zurückführen",
+        "ar": "⁦Abt Global⁩ (أكتوبر 2024)، مقارنةً بـ180 من غير المستفيدين: كان المستفيدون أرجح في ادخار ⁦$500⁩ أو أكثر وأقل عرضة للإخلاء، وكلاهما دال إحصائيًا؛ وأفادت ⁦Metro United Way⁩ بأنهم كانوا أقدر بثلاثة أضعاف على تحمّل طارئ بقيمة ⁦$400⁩. ولم يكن الدخل والعمل الأعلى عائدين بوضوح إلى المال، نظرًا لصغر العينة"
+      },
+      "source": "https://lpm.org/news/2024-10-23/report-finds-guaranteed-income-helped-louisvillians-save-money-and-avoid-evictions",
+      "source2": "https://metrounitedway.org/program/yalift/",
+      "us": {
+        "city": "Louisville",
+        "state": "KY",
+        "start": "2022-04",
+        "end": "2023-03",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 151,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Residents aged 18–24 in the California, Russell and Smoketown neighborhoods",
+        "eval": {
+          "by": "Abt Global (for Mayors for a Guaranteed Income)",
+          "year": 2024,
+          "type": "report",
+          "url": "https://lpm.org/news/2024-10-23/report-finds-guaranteed-income-helped-louisvillians-save-money-and-avoid-evictions"
+        }
+      }
+    },
+    {
+      "id": "us-multnomah-mothers-trust",
+      "years": "2022–2024",
+      "type": "gov",
+      "name": "Multnomah Mothers' Trust",
+      "place": {
+        "en": "Multnomah County, Oregon, USA",
+        "ja": "アメリカ・オレゴン州マルトノマ郡",
+        "zh": "美国俄勒冈州马尔特诺马县",
+        "hi": "मल्टनोमा काउंटी, ओरेगन, अमेरिका",
+        "es": "Condado de Multnomah, Oregón (EE. UU.)",
+        "de": "Multnomah County, Oregon (USA)",
+        "ar": "مقاطعة مولتنوما، أوريغون، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Multnomah County's Multnomah Idea Lab, paid from federal pandemic relief (ARPA), working through two community groups, the Black Parent Initiative and WomenFirst",
+        "ja": "マルトノマ郡のMultnomah Idea Lab。財源は連邦のコロナ対策資金（ARPA）で、2つの地域団体Black Parent InitiativeとWomenFirstを通じて実施",
+        "zh": "马尔特诺马县的 Multnomah Idea Lab，资金来自联邦疫情纾困款（ARPA），通过 Black Parent Initiative 和 WomenFirst 两个社区团体开展",
+        "hi": "मल्टनोमा काउंटी की Multnomah Idea Lab, पैसा संघीय महामारी राहत (ARPA) से, दो सामुदायिक समूहों Black Parent Initiative और WomenFirst के ज़रिए",
+        "es": "Multnomah Idea Lab del condado de Multnomah, financiado con fondos federales de alivio por la pandemia (ARPA), a través de dos grupos comunitarios, Black Parent Initiative y WomenFirst",
+        "de": "Multnomah Idea Lab von Multnomah County, bezahlt aus Corona-Hilfen des Bundes (ARPA), in Zusammenarbeit mit zwei Gemeinschaftsgruppen, der Black Parent Initiative und WomenFirst",
+        "ar": "⁦Multnomah Idea Lab⁩ التابع لمقاطعة مولتنوما، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)، بالعمل عبر مجموعتين مجتمعيتين هما ⁦Black Parent Initiative⁩ و⁦WomenFirst⁩"
+      },
+      "paid": {
+        "en": "About $500 a month with no conditions for 24 months (May 2022–June 2024) to about 100 Black mothers in Multnomah County, which includes Portland, plus $50 a month for those who reported on their finances",
+        "ja": "ポートランドを含むマルトノマ郡の黒人の母親約100人に、条件なしで月約500ドルを24か月（2022年5月〜2024年6月）。家計を報告した人には月50ドルを追加",
+        "zh": "向马尔特诺马县（含波特兰）约 100 名黑人母亲无条件每月发放约 500 美元，为期 24 个月（2022 年 5 月至 2024 年 6 月），另向报告自身财务状况的人每月发放 50 美元",
+        "hi": "पोर्टलैंड सहित मल्टनोमा काउंटी की लगभग 100 अश्वेत माताओं को 24 महीने (मई 2022–जून 2024) तक बिना शर्त हर महीने लगभग $500, साथ ही अपने वित्त की जानकारी देने वालों को हर महीने $50",
+        "es": "Unos 500 $ al mes sin condiciones durante 24 meses (mayo 2022–junio 2024) para unas 100 madres negras del condado de Multnomah, que incluye Portland, más 50 $ al mes para quienes informaban sobre sus finanzas",
+        "de": "Etwa 500 $ im Monat ohne Bedingungen für 24 Monate (Mai 2022 bis Juni 2024) an rund 100 schwarze Mütter in Multnomah County, zu dem Portland gehört, dazu 50 $ im Monat für diejenigen, die über ihre Finanzen berichteten",
+        "ar": "نحو ⁦$500⁩ شهريًا بلا شروط لمدة 24 شهرًا (مايو 2022–يونيو 2024) لنحو 100 أم سوداء في مقاطعة مولتنوما، التي تضم بورتلاند، إضافة إلى ⁦$50⁩ شهريًا لمن أبلغن عن أوضاعهن المالية"
+      },
+      "result": {
+        "en": "An interim report by the Multnomah Idea Lab (summarized by the Oregon Center for Public Policy, 2026) reported gradual gains in income and assets, debt cut to near zero for members with deep debt, and the share at high risk of eviction falling by more than half; there was no control group",
+        "ja": "Multnomah Idea Labの中間報告（オレゴン公共政策センターが2026年に要約）は、収入と資産が徐々に増え、深い借金を抱えた人の借金がほぼゼロになり、立ち退きリスクの高い人の割合が半分以下に減ったと報告。対照群はない",
+        "zh": "Multnomah Idea Lab 的中期报告（俄勒冈公共政策中心 2026 年总结）称，收入和资产逐步增加，负债沉重的成员债务降至接近零，面临高驱逐风险的比例下降一半以上；没有对照组",
+        "hi": "Multnomah Idea Lab की अंतरिम रिपोर्ट (Oregon Center for Public Policy का सारांश, 2026) के अनुसार आय और संपत्ति में धीरे-धीरे बढ़त हुई, भारी क़र्ज़ वाली सदस्यों का क़र्ज़ लगभग शून्य हुआ, और बेदख़ली के ऊँचे ख़तरे वालों का हिस्सा आधे से ज़्यादा घटा; कोई नियंत्रण समूह नहीं था",
+        "es": "Un informe intermedio del Multnomah Idea Lab (resumido por el Oregon Center for Public Policy, 2026) informó de mejoras graduales en ingresos y activos, deudas reducidas casi a cero para las participantes muy endeudadas y una caída de más de la mitad en la proporción con alto riesgo de desahucio; no hubo grupo de control",
+        "de": "Ein Zwischenbericht des Multnomah Idea Lab (zusammengefasst vom Oregon Center for Public Policy, 2026) berichtete schrittweise Zuwächse bei Einkommen und Vermögen, Schulden nahe null bei Teilnehmerinnen mit hohen Schulden und einen Rückgang des Anteils mit hohem Räumungsrisiko um mehr als die Hälfte; eine Kontrollgruppe gab es nicht",
+        "ar": "أفاد تقرير مرحلي من ⁦Multnomah Idea Lab⁩ (لخّصه ⁦Oregon Center for Public Policy⁩، 2026) بمكاسب تدريجية في الدخل والأصول، وانخفاض الديون إلى ما يقارب الصفر لدى المشاركات المثقلات بالديون، وانخفاض نسبة المعرّضات بشدة لخطر الإخلاء إلى أقل من النصف؛ ولم تكن هناك مجموعة ضابطة"
+      },
+      "source": "https://policiesforaction.org/node/877",
+      "source2": "https://multco.us/node/321569",
+      "us": {
+        "city": "Multnomah County (Portland)",
+        "state": "OR",
+        "start": "2022-05",
+        "end": "2024-06",
+        "monthly": 500,
+        "months": 24,
+        "recipients": 100,
+        "unit": "people",
+        "funders": ["arpa"],
+        "control": false,
+        "elig": "Black mothers heading households with children who were already receiving services from the Black Parent Initiative or WomenFirst",
+        "eval": {
+          "by": "Multnomah Idea Lab (Ebonee Bell, Mary Li, Steve Van Eck)",
+          "year": 2026,
+          "type": "report",
+          "url": "https://www.ocpp.org/wp-content/uploads/2026/04/MMT-report.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-lacounty-breathe",
+      "years": "2022–2025",
+      "type": "gov",
+      "name": "Breathe: LA County's Guaranteed Income Program",
+      "place": {
+        "en": "Los Angeles County, California, USA",
+        "ja": "アメリカ・カリフォルニア州ロサンゼルス郡",
+        "zh": "美国加利福尼亚州洛杉矶县",
+        "hi": "लॉस एंजेलिस काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Los Ángeles, California (EE. UU.)",
+        "de": "Los Angeles County, Kalifornien (USA)",
+        "ar": "مقاطعة لوس أنجلوس، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Los Angeles County (Board of Supervisors and the CEO's Poverty Alleviation Initiative); the nonprofit Strength Based Community Change ran payments by prepaid debit card",
+        "ja": "ロサンゼルス郡（郡監督委員会とCEO室の貧困緩和イニシアチブ）。非営利団体Strength Based Community Changeがプリペイドデビットカードで支給",
+        "zh": "洛杉矶县（监事会及县首席执行官办公室的减贫倡议）；由非营利组织 Strength Based Community Change 通过预付借记卡发放",
+        "hi": "लॉस एंजेलिस काउंटी (Board of Supervisors और CEO की Poverty Alleviation Initiative); भुगतान प्रीपेड डेबिट कार्ड से ग़ैर-लाभकारी Strength Based Community Change ने किए",
+        "es": "Condado de Los Ángeles (Junta de Supervisores e Iniciativa de Alivio de la Pobreza de la oficina del CEO); la organización sin ánimo de lucro Strength Based Community Change hizo los pagos con tarjeta de débito prepago",
+        "de": "Los Angeles County (Board of Supervisors und die Poverty Alleviation Initiative des CEO); die gemeinnützige Organisation Strength Based Community Change zahlte per Prepaid-Debitkarte aus",
+        "ar": "مقاطعة لوس أنجلوس (مجلس المشرفين ومبادرة التخفيف من الفقر التابعة للرئيس التنفيذي)؛ وتولّت المنظمة غير الربحية ⁦Strength Based Community Change⁩ صرف الدفعات عبر بطاقة خصم مسبقة الدفع"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for three years (June 2022–August 2025) to 1,000 randomly selected low-income county residents hit by COVID-19, plus 200 former foster youth for two years; about 1,200 others formed a control group",
+        "ja": "コロナの影響を受けた郡の低所得住民から無作為に選んだ1,000人に、条件なしで月1,000ドルを3年間（2022年6月〜2025年8月）。加えて元里親養育の若者200人に2年間。別の約1,200人が対照群",
+        "zh": "向随机选出的 1,000 名受新冠影响的县内低收入居民无条件每月发放 1,000 美元，为期三年（2022 年 6 月至 2025 年 8 月），另向 200 名曾在寄养系统中的青年发放两年；另有约 1,200 人组成对照组",
+        "hi": "कोविड से प्रभावित, रैंडम रूप से चुने गए 1,000 कम आय वाले काउंटी निवासियों को तीन साल (जून 2022–अगस्त 2025) तक बिना शर्त हर महीने $1,000, साथ ही 200 पूर्व फ़ॉस्टर युवाओं को दो साल तक; लगभग 1,200 अन्य नियंत्रण समूह में थे",
+        "es": "1.000 $ al mes sin condiciones durante tres años (junio 2022–agosto 2025) para 1.000 residentes del condado de bajos ingresos afectados por la COVID-19 elegidos al azar, más 200 jóvenes extutelados durante dos años; unos 1.200 más formaron un grupo de control",
+        "de": "1.000 $ im Monat ohne Bedingungen für drei Jahre (Juni 2022 bis August 2025) an 1.000 zufällig ausgewählte einkommensschwache, von Corona betroffene Einwohner des Countys, dazu 200 ehemalige Pflegekinder für zwei Jahre; rund 1.200 weitere bildeten eine Kontrollgruppe",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة ثلاث سنوات (يونيو 2022–أغسطس 2025) لـ1,000 من سكان المقاطعة منخفضي الدخل الذين تضرروا من كوفيد-19 اختيروا عشوائيًا، إضافة إلى 200 من الشباب الذين نشؤوا سابقًا في الرعاية البديلة لمدة عامين؛ وشكّل نحو 1,200 آخرين مجموعة ضابطة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://ceo.lacounty.gov/pai/breathe/",
+      "source2": "https://guaranteedincome.us/los-angeles-county",
+      "us": {
+        "city": "Los Angeles County",
+        "state": "CA",
+        "start": "2022-06",
+        "end": "2025-08",
+        "monthly": 1000,
+        "months": 36,
+        "recipients": 1000,
+        "unit": "people",
+        "funders": ["public"],
+        "control": true,
+        "elig": "Adults 18+ living in a county neighborhood at or below area median income, household income at or below AMI (single) or 120% AMI (two or more), financially hit by COVID-19, one per household; picked at random",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-minneapolis-gbi",
+      "years": "2022–2024",
+      "type": "gov",
+      "name": "Minneapolis Guaranteed Basic Income Pilot",
+      "place": {
+        "en": "Minneapolis, Minnesota, USA",
+        "ja": "アメリカ・ミネソタ州ミネアポリス",
+        "zh": "美国明尼苏达州明尼阿波利斯",
+        "hi": "मिनियापोलिस, मिनेसोटा, अमेरिका",
+        "es": "Mineápolis, Minnesota (EE. UU.)",
+        "de": "Minneapolis, Minnesota (USA)",
+        "ar": "مينيابوليس، مينيسوتا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Minneapolis, paid from federal pandemic relief (ARPA); the Federal Reserve Bank of Minneapolis evaluated it",
+        "ja": "ミネアポリス市。財源は連邦のコロナ対策資金（ARPA）で、ミネアポリス連邦準備銀行が評価",
+        "zh": "明尼阿波利斯市，资金来自联邦疫情纾困款（ARPA）；由明尼阿波利斯联邦储备银行评估",
+        "hi": "मिनियापोलिस शहर, पैसा संघीय महामारी राहत (ARPA) से; मूल्यांकन Federal Reserve Bank of Minneapolis ने किया",
+        "es": "Ciudad de Mineápolis, financiado con fondos federales de alivio por la pandemia (ARPA); lo evaluó el Banco de la Reserva Federal de Mineápolis",
+        "de": "Stadt Minneapolis, bezahlt aus Corona-Hilfen des Bundes (ARPA); die Federal Reserve Bank of Minneapolis evaluierte das Programm",
+        "ar": "مدينة مينيابوليس، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)؛ وقيّمه بنك الاحتياطي الفدرالي في مينيابوليس"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 24 months (June 2022–June 2024) to 200 low-income households in nine Minneapolis ZIP codes, chosen at random; 329 others were a control group paid $150 per survey",
+        "ja": "ミネアポリスの9つの郵便番号区域の低所得世帯から無作為に選んだ200世帯に、条件なしで月500ドルを24か月（2022年6月〜2024年6月）。別の329世帯が対照群で、調査1回ごとに150ドル",
+        "zh": "向明尼阿波利斯九个邮编区随机选出的 200 个低收入家庭无条件每月发放 500 美元，为期 24 个月（2022 年 6 月至 2024 年 6 月）；另有 329 人组成对照组，每次调查获 150 美元",
+        "hi": "मिनियापोलिस के नौ ZIP कोड के रैंडम रूप से चुने गए 200 कम आय वाले परिवारों को 24 महीने (जून 2022–जून 2024) तक बिना शर्त हर महीने $500; 329 अन्य नियंत्रण समूह में थे, जिन्हें हर सर्वे के $150 मिले",
+        "es": "500 $ al mes sin condiciones durante 24 meses (junio 2022–junio 2024) para 200 hogares de bajos ingresos de nueve códigos postales de Mineápolis, elegidos al azar; otros 329 fueron un grupo de control que cobraba 150 $ por encuesta",
+        "de": "500 $ im Monat ohne Bedingungen für 24 Monate (Juni 2022 bis Juni 2024) an 200 zufällig ausgewählte einkommensschwache Haushalte in neun Postleitzahlgebieten von Minneapolis; 329 weitere bildeten eine Kontrollgruppe, die 150 $ pro Befragung erhielt",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 24 شهرًا (يونيو 2022–يونيو 2024) لـ200 أسرة منخفضة الدخل في تسعة رموز بريدية في مينيابوليس، اختيرت عشوائيًا؛ وكان 329 آخرون مجموعة ضابطة تتلقى ⁦$150⁩ عن كل استطلاع"
+      },
+      "result": {
+        "en": "A Minneapolis Fed working paper (December 2024, randomized, 200 recipients vs 329 controls) reported that the payments improved food security, housing stability and financial security, mental health and self-reported well-being while they lasted, with no effect on work; attrition differed between groups, which the authors adjusted for",
+        "ja": "ミネアポリス連銀のワーキングペーパー（2024年12月、無作為化、受給200世帯対対照群329世帯）は、支給期間中に食料の確保、住まいの安定、経済的な安定、心の健康、自己申告の幸福度が改善し、仕事への影響はなかったと報告。脱落率が群間で異なり、著者らが補正した",
+        "zh": "明尼阿波利斯联储的一篇工作论文（2024 年 12 月，随机对照，200 名受助者对 329 名对照组成员）称，发放期间粮食保障、住房稳定和财务安全、心理健康及自我报告的幸福感均有改善，对工作没有影响；两组的流失率不同，作者已作调整",
+        "hi": "मिनियापोलिस फ़ेड के एक वर्किंग पेपर (दिसंबर 2024, रैंडमाइज़्ड, 200 प्राप्तकर्ता बनाम 329 नियंत्रण) के अनुसार भुगतान चलने तक खाद्य सुरक्षा, आवास स्थिरता, आर्थिक सुरक्षा, मानसिक स्वास्थ्य और स्व-रिपोर्टेड भलाई सुधरी, और काम पर कोई असर नहीं पड़ा; दोनों समूहों में प्रतिभागियों के छूटने की दर अलग थी, जिसके लिए लेखकों ने समायोजन किया",
+        "es": "Un documento de trabajo de la Fed de Mineápolis (diciembre de 2024, aleatorizado, 200 beneficiarios frente a 329 controles) informó de que los pagos mejoraron la seguridad alimentaria, la estabilidad de vivienda y la seguridad financiera, la salud mental y el bienestar autodeclarado mientras duraron, sin efecto en el trabajo; el abandono difirió entre grupos, algo que los autores corrigieron",
+        "de": "Ein Arbeitspapier der Minneapolis Fed (Dezember 2024, randomisiert, 200 Empfänger gegenüber 329 in der Kontrollgruppe) berichtete, dass die Zahlungen, solange sie liefen, Ernährungssicherheit, Wohnstabilität, finanzielle Sicherheit, psychische Gesundheit und das selbst angegebene Wohlbefinden verbesserten, ohne Wirkung auf die Arbeit; die Ausfallquoten unterschieden sich zwischen den Gruppen, was die Autoren rechnerisch berücksichtigten",
+        "ar": "أفادت ورقة عمل لبنك الاحتياطي الفدرالي في مينيابوليس (ديسمبر 2024، عشوائية، 200 مستفيد مقابل 329 في المجموعة الضابطة) بأن الدفعات حسّنت الأمن الغذائي واستقرار السكن والأمن المالي والصحة النفسية والرفاه المُبلَّغ عنه ذاتيًا طوال مدتها، دون أثر على العمل؛ واختلف معدل الانسحاب بين المجموعتين، وقد عدّل المؤلفون حساباتهم لذلك"
+      },
+      "source": "https://www.minneapolismn.gov/government/programs-initiatives/basic-income",
+      "source2": "https://www.minneapolisfed.org/research/institute-working-papers/how-do-lowincome-households-respond-to-basic-income-experimental-evidence-from-minneapolis",
+      "us": {
+        "city": "Minneapolis",
+        "state": "MN",
+        "start": "2022-06",
+        "end": "2024-06",
+        "monthly": 500,
+        "months": 24,
+        "recipients": 200,
+        "unit": "households",
+        "funders": ["arpa"],
+        "control": true,
+        "elig": "Adults 18+ in nine low-income Minneapolis ZIP codes, household income at or below 50% of area median income, affected by the pandemic; chosen at random",
+        "eval": {
+          "by": "Federal Reserve Bank of Minneapolis (Andrew Goodman-Bacon and Vanessa Palmer)",
+          "year": 2024,
+          "type": "working paper",
+          "url": "https://www.minneapolisfed.org/research/institute-working-papers/how-do-lowincome-households-respond-to-basic-income-experimental-evidence-from-minneapolis"
+        }
+      }
+    },
+    {
+      "id": "crny-artists",
+      "essays": ["generative-ai-creative-work-basic-income"],
+      "years": "2022–2024",
+      "type": "ngo",
+      "name": "Guaranteed Income for Artists (Creatives Rebuild New York)",
+      "place": {
+        "en": "New York State, USA",
+        "ja": "アメリカ・ニューヨーク州",
+        "zh": "美国纽约州",
+        "hi": "न्यूयॉर्क राज्य, अमेरिका",
+        "es": "Estado de Nueva York (EE. UU.)",
+        "de": "Bundesstaat New York (USA)",
+        "ar": "ولاية نيويورك، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Creatives Rebuild New York (CRNY), an artist-support initiative funded mainly by the Andrew W. Mellon Foundation, with the Stavros Niarchos and Ford foundations",
+        "ja": "Creatives Rebuild New York（CRNY、主にメロン財団が出資し、スタブロス・ニアルコス財団とフォード財団も加わるアーティスト支援の取り組み）",
+        "zh": "Creatives Rebuild New York（CRNY，主要由梅隆基金会出资的艺术家支持计划），另有斯塔夫罗斯·尼阿科斯基金会和福特基金会参与",
+        "hi": "Creatives Rebuild New York (CRNY), कलाकारों की मदद की पहल, जिसका पैसा मुख्य रूप से एंड्रयू डब्ल्यू. मेलन फ़ाउंडेशन देता है, साथ में स्टावरोस नियारकोस और फ़ोर्ड फ़ाउंडेशन",
+        "es": "Creatives Rebuild New York (CRNY), iniciativa de apoyo a artistas financiada sobre todo por la Fundación Andrew W. Mellon, con las fundaciones Stavros Niarchos y Ford",
+        "de": "Creatives Rebuild New York (CRNY), eine Initiative zur Förderung von Kunstschaffenden, vor allem finanziert von der Andrew W. Mellon Foundation, mit der Stavros Niarchos Foundation und der Ford Foundation",
+        "ar": "⁦Creatives Rebuild New York⁩ (⁦CRNY⁩)، مبادرة لدعم الفنانين تموّلها أساسًا مؤسسة أندرو و. ميلون، مع مؤسستي ستافروس نياركوس وفورد"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 18 months to 2,400 low-income artists in the state, enrolled in staggered groups from June 2022 (last payments March 2024), picked by a weighted lottery from more than 22,000 applicants",
+        "ja": "州内の低所得アーティスト2,400人に、条件なしで月1,000ドルを18か月。2022年6月からグループごとに順次登録（最終支給は2024年3月）。2万2,000人超の応募者から重み付き抽選で選んだ",
+        "zh": "向州内 2,400 名低收入艺术家无条件每月发放 1,000 美元，为期 18 个月，自 2022 年 6 月起分批错开入组（最后一次发放于 2024 年 3 月）；从 22,000 多名申请者中通过加权抽签选出",
+        "hi": "22,000 से ज़्यादा आवेदकों में से भारित लॉटरी से चुने गए राज्य के 2,400 कम आय वाले कलाकारों को 18 महीने तक बिना शर्त हर महीने $1,000; जून 2022 से अलग-अलग समूहों में नामांकन (आख़िरी भुगतान मार्च 2024)",
+        "es": "1.000 $ al mes sin condiciones durante 18 meses para 2.400 artistas de bajos ingresos del estado, inscritos en grupos escalonados desde junio de 2022 (últimos pagos en marzo de 2024), elegidos por sorteo ponderado entre más de 22.000 solicitantes",
+        "de": "1.000 $ im Monat ohne Bedingungen für 18 Monate an 2.400 Kunstschaffende mit niedrigem Einkommen im Bundesstaat, ab Juni 2022 in gestaffelten Gruppen aufgenommen (letzte Zahlungen März 2024), per gewichtetem Los aus mehr als 22.000 Bewerbungen gezogen",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 18 شهرًا لـ2,400 فنان منخفضي الدخل في الولاية، سُجّلوا على دفعات متتالية بدءًا من يونيو 2022 (آخر الدفعات في مارس 2024)، واختيروا بقرعة مرجّحة من بين أكثر من 22,000 متقدم"
+      },
+      "result": {
+        "en": "Indiana University researchers (Journal of Cultural Economics, accepted 2026) compared recipients with applicants not selected: about 3.9 more hours a week on arts work and 2.4 fewer on other work. Total earnings were about $11,600 a year lower, close to the $12,000 paid, but the authors say they cannot confidently attribute this to the program because artists' incomes vary so much",
+        "ja": "インディアナ大学の研究者（Journal of Cultural Economics、2026年採録）は落選した応募者と比べ、芸術の仕事が週約3.9時間増え、それ以外の仕事が週2.4時間減ったと報告。総収入は年約1万1,600ドル少なく、支給額1万2,000ドルに近いが、アーティストの収入は変動が大きいため、著者らはこれをプログラムによるものと確信をもっては言えないとしている",
+        "zh": "印第安纳大学研究人员（《文化经济学杂志》，2026 年接受发表）与落选申请者比较：艺术工作每周增加约 3.9 小时，其他工作减少 2.4 小时。总收入每年减少约 11,600 美元，接近领取的 12,000 美元，但作者表示，由于艺术家收入波动很大，无法确定这是项目造成的",
+        "hi": "इंडियाना यूनिवर्सिटी के शोधकर्ताओं (Journal of Cultural Economics, 2026 में स्वीकृत) ने न चुने गए आवेदकों से तुलना की: कला के काम में हफ़्ते में लगभग 3.9 घंटे ज़्यादा, बाकी काम में 2.4 घंटे कम। कुल कमाई साल में लगभग $11,600 कम रही, जो मिले $12,000 के करीब है, पर लेखकों का कहना है कि कलाकारों की आय में बहुत उतार-चढ़ाव होने के कारण वे भरोसे से इसे कार्यक्रम का असर नहीं कह सकते",
+        "es": "Investigadores de la Universidad de Indiana (Journal of Cultural Economics, aceptado en 2026) compararon a los receptores con solicitantes no elegidos: unas 3,9 horas semanales más de trabajo artístico y 2,4 menos de otro trabajo. Los ingresos totales fueron unos 11.600 $ al año menores, cerca de los 12.000 $ recibidos, pero los autores dicen que no pueden atribuirlo con seguridad al programa porque los ingresos de los artistas varían mucho",
+        "de": "Forschende der Indiana University (Journal of Cultural Economics, 2026 angenommen) verglichen mit nicht gezogenen Bewerbern: etwa 3,9 Stunden pro Woche mehr künstlerische Arbeit und 2,4 weniger andere Arbeit. Das Gesamteinkommen lag rund 11.600 $ im Jahr niedriger, nahe an den erhaltenen 12.000 $, doch laut den Autoren lässt sich dies wegen der stark schwankenden Einkommen von Kunstschaffenden nicht sicher dem Programm zuschreiben",
+        "ar": "قارن باحثون من جامعة إنديانا (⁦Journal of Cultural Economics⁩، قُبلت للنشر 2026) المستفيدين بالمتقدمين غير المختارين: نحو 3.9 ساعات أسبوعيًا إضافية في العمل الفني و2.4 ساعة أقل في الأعمال الأخرى. وكان إجمالي الدخل أقل بنحو ⁦$11,600⁩ سنويًا، قريبًا من ⁦$12,000⁩ المدفوعة، لكن المؤلفين يقولون إنهم لا يستطيعون نسبة ذلك إلى البرنامج بثقة لأن دخول الفنانين تتفاوت كثيرًا"
+      },
+      "source": "https://fromcommonground.com/we-studied-what-happened-when-financially-struggling-artists-received-1000-a-month-no-strings-attached-for-18-months/",
+      "source2": "https://hyperallergic.com/954975/how-does-guaranteed-income-impact-artists-lives-creatives-rebuild-new-york/",
+      "us": {
+        "city": "New York State",
+        "state": "NY",
+        "start": "2022-06",
+        "end": "2024-03",
+        "monthly": 1000,
+        "months": 18,
+        "recipients": 2400,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Artists in New York State with financial need, picked by a weighted lottery from more than 22,000 applicants; priority groups (by race, disability, sexual orientation, citizenship status and caregiving) had better odds",
+        "eval": {
+          "by": "Joanna Woronkowicz (Indiana University) and Doug Noonan (Indiana University Indianapolis)",
+          "year": 2026,
+          "type": "peer-reviewed",
+          "url": "https://link.springer.com/article/10.1007/s10824-026-09594-0"
+        }
+      }
+    },
+    {
+      "id": "us-ithaca-igi",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "Ithaca Guaranteed Income",
+      "place": {
+        "en": "Ithaca, New York, USA",
+        "ja": "アメリカ・ニューヨーク州イサカ",
+        "zh": "美国纽约州伊萨卡",
+        "hi": "इथाका, न्यूयॉर्क, अमेरिका",
+        "es": "Ithaca, Nueva York (EE. UU.)",
+        "de": "Ithaca, New York (USA)",
+        "ar": "إيثاكا، نيويورك، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Ithaca, with Mayors for a Guaranteed Income, paid from private grants from nonprofit organizations and studied by Penn's Center for Guaranteed Income Research",
+        "ja": "イサカ市とMayors for a Guaranteed Income。財源は非営利団体からの民間補助金で、ペンシルベニア大学CGIRが研究",
+        "zh": "伊萨卡市，与“保障收入市长联盟”合作，资金来自非营利组织的私人拨款，由宾夕法尼亚大学保障收入研究中心研究",
+        "hi": "इथाका शहर, Mayors for a Guaranteed Income के साथ; पैसा ग़ैर-लाभकारी संगठनों के निजी अनुदान से, अध्ययन पेन के Center for Guaranteed Income Research ने किया",
+        "es": "Ciudad de Ithaca, con Mayors for a Guaranteed Income, financiado con subvenciones privadas de organizaciones sin ánimo de lucro y estudiado por el Center for Guaranteed Income Research de Penn",
+        "de": "Stadt Ithaca mit Mayors for a Guaranteed Income, bezahlt aus privaten Zuschüssen gemeinnütziger Organisationen und untersucht vom Center for Guaranteed Income Research der Penn",
+        "ar": "مدينة إيثاكا، مع ⁦Mayors for a Guaranteed Income⁩، بتمويل من منح خاصة من منظمات غير ربحية، ودرسه ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا"
+      },
+      "paid": {
+        "en": "$450 a month with no conditions on a prepaid card for 12 months (June 2022–May 2023) to 110 low-income unpaid caregivers of children or of older or disabled adults",
+        "ja": "子どもや高齢者、障害のある大人を無償で世話する低所得の介護者110人に、条件なしで月450ドルをプリペイドカードで12か月（2022年6月〜2023年5月）",
+        "zh": "通过预付卡，向 110 名照顾孩子或老年人、残障成人的低收入无偿照护者无条件每月发放 450 美元，为期 12 个月（2022 年 6 月至 2023 年 5 月）",
+        "hi": "बच्चों या बुज़ुर्ग या विकलांग वयस्कों की बिना वेतन देखभाल करने वाले 110 कम आय वाले लोगों को 12 महीने (जून 2022–मई 2023) तक प्रीपेड कार्ड पर बिना शर्त हर महीने $450",
+        "es": "450 $ al mes sin condiciones en una tarjeta prepago durante 12 meses (junio 2022–mayo 2023) para 110 cuidadores no remunerados de bajos ingresos de niños o de adultos mayores o con discapacidad",
+        "de": "450 $ im Monat ohne Bedingungen auf einer Prepaid-Karte für 12 Monate (Juni 2022 bis Mai 2023) an 110 einkommensschwache unbezahlte Pflegende von Kindern oder von älteren oder behinderten Erwachsenen",
+        "ar": "⁦$450⁩ شهريًا بلا شروط على بطاقة مسبقة الدفع لمدة 12 شهرًا (يونيو 2022–مايو 2023) لـ110 من مقدمي الرعاية غير المأجورين منخفضي الدخل للأطفال أو لكبار السن أو البالغين ذوي الإعاقة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://guaranteedincome.us/ithaca",
+      "source2": "https://wskg.org/ithaca-guaranteed-basic-income-pilot-rollout/",
+      "us": {
+        "city": "Ithaca",
+        "state": "NY",
+        "start": "2022-06",
+        "end": "2023-05",
+        "monthly": 450,
+        "months": 12,
+        "recipients": 110,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": null,
+        "elig": "Ithaca residents with income at or below 80% of area median income who are primary unpaid caregivers of children or of aging or disabled adults",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-montgomery-county-boost",
+      "years": "2022–2025",
+      "type": "gov",
+      "name": "Montgomery County Boost (Guaranteed Income Pilot)",
+      "place": {
+        "en": "Montgomery County, Maryland, USA",
+        "ja": "アメリカ・メリーランド州モンゴメリー郡",
+        "zh": "美国马里兰州蒙哥马利县",
+        "hi": "मॉन्टगोमरी काउंटी, मैरीलैंड, अमेरिका",
+        "es": "Condado de Montgomery, Maryland (EE. UU.)",
+        "de": "Montgomery County, Maryland (USA)",
+        "ar": "مقاطعة مونتغمري، ماريلاند، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Montgomery County government (Department of Health and Human Services), paid from county funds with the Meyer Foundation and the Greater Washington Community Foundation",
+        "ja": "モンゴメリー郡政府（保健福祉局）。財源は郡の資金で、マイヤー財団とGreater Washington Community Foundationも参加",
+        "zh": "蒙哥马利县政府（卫生与公共服务局），资金来自县财政，并与 Meyer Foundation 和大华盛顿社区基金会合作",
+        "hi": "मॉन्टगोमरी काउंटी सरकार (Department of Health and Human Services), पैसा काउंटी कोष से, Meyer Foundation और Greater Washington Community Foundation के साथ",
+        "es": "Gobierno del condado de Montgomery (Departamento de Salud y Servicios Humanos), financiado con fondos del condado con la Meyer Foundation y la Greater Washington Community Foundation",
+        "de": "Verwaltung von Montgomery County (Department of Health and Human Services), aus Mitteln des Countys bezahlt, mit der Meyer Foundation und der Greater Washington Community Foundation",
+        "ar": "حكومة مقاطعة مونتغمري (إدارة الصحة والخدمات الإنسانية)، بتمويل من أموال المقاطعة مع ⁦Meyer Foundation⁩ و⁦Greater Washington Community Foundation⁩"
+      },
+      "paid": {
+        "en": "$800 a month with no conditions for 24 months to 300 households, 100 leaving homelessness and 200 families with children, enrolled in phases from June to November 2022",
+        "ja": "300世帯（ホームレス状態から抜け出す100世帯と、子どものいる200家族）に、条件なしで月800ドルを24か月。2022年6月〜11月に段階的に登録",
+        "zh": "向 300 个家庭（100 个正在摆脱无家可归，200 个有孩子的家庭）无条件每月发放 800 美元，为期 24 个月，于 2022 年 6 月至 11 月分阶段入组",
+        "hi": "300 परिवारों (बेघरी से निकल रहे 100 और बच्चों वाले 200 परिवार) को 24 महीने तक बिना शर्त हर महीने $800; जून से नवंबर 2022 तक चरणों में नामांकन",
+        "es": "800 $ al mes sin condiciones durante 24 meses para 300 hogares, 100 que salían del sinhogarismo y 200 familias con hijos, inscritos por fases de junio a noviembre de 2022",
+        "de": "800 $ im Monat ohne Bedingungen für 24 Monate an 300 Haushalte, 100 nach Obdachlosigkeit und 200 Familien mit Kindern, schrittweise aufgenommen von Juni bis November 2022",
+        "ar": "⁦$800⁩ شهريًا بلا شروط لمدة 24 شهرًا لـ300 أسرة، 100 تخرج من التشرد و200 أسرة لديها أطفال، سُجّلت على مراحل من يونيو إلى نوفمبر 2022"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://assets.montgomerycountymd.gov/files/council/resources/files/agenda/col/2023/20230511/20230511_32.pdf",
+      "us": {
+        "city": "Montgomery County",
+        "state": "MD",
+        "start": "2022-06",
+        "end": "2025",
+        "monthly": 800,
+        "months": 24,
+        "recipients": 300,
+        "unit": "households",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "100 households transitioning from homelessness and 200 households with at least one child who had sought county help during COVID-19",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-georgia-in-her-hands",
+      "years": "2022–2024",
+      "type": "ngo",
+      "name": "In Her Hands",
+      "place": {
+        "en": "Atlanta (Old Fourth Ward), College Park and rural Southwest Georgia, USA",
+        "ja": "アメリカ・ジョージア州アトランタ（オールド・フォース・ウォード）、カレッジパーク、ジョージア州南西部の農村部",
+        "zh": "美国佐治亚州亚特兰大（老第四区）、大学公园市和佐治亚州西南部农村地区",
+        "hi": "अटलांटा (ओल्ड फ़ोर्थ वार्ड), कॉलेज पार्क और ग्रामीण दक्षिण-पश्चिम जॉर्जिया, अमेरिका",
+        "es": "Atlanta (Old Fourth Ward), College Park y el suroeste rural de Georgia (EE. UU.)",
+        "de": "Atlanta (Old Fourth Ward), College Park und ländlicher Südwesten Georgias (USA)",
+        "ar": "أتلانتا (حي أولد فورث وارد) وكوليدج بارك والمناطق الريفية في جنوب غرب جورجيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Georgia Resilience and Opportunity Fund (GRO Fund), a nonprofit, with GiveDirectly delivering the money from a $13 million privately raised budget",
+        "ja": "非営利団体Georgia Resilience and Opportunity Fund（GRO Fund）。民間で集めた1,300万ドルの予算から、GiveDirectlyが支給",
+        "zh": "非营利组织佐治亚韧性与机会基金（GRO Fund），由 GiveDirectly 负责发放，资金为私人募集的 1,300 万美元预算",
+        "hi": "Georgia Resilience and Opportunity Fund (GRO Fund), एक ग़ैर-लाभकारी संस्था; निजी तौर पर जुटाए गए $1.3 करोड़ के बजट से पैसा GiveDirectly ने पहुँचाया",
+        "es": "Georgia Resilience and Opportunity Fund (GRO Fund), una organización sin ánimo de lucro, con GiveDirectly entregando el dinero de un presupuesto de 13 millones de dólares recaudado de forma privada",
+        "de": "Georgia Resilience and Opportunity Fund (GRO Fund), eine gemeinnützige Organisation, mit GiveDirectly für die Auszahlung aus einem privat gesammelten Budget von 13 Mio. $",
+        "ar": "⁦Georgia Resilience and Opportunity Fund⁩ (⁦GRO Fund⁩)، منظمة غير ربحية، مع ⁦GiveDirectly⁩ لصرف الأموال من ميزانية قدرها 13 مليون دولار جُمعت من مصادر خاصة"
+      },
+      "paid": {
+        "en": "$20,400 over two years with no conditions ($850 a month, or $4,300 up front then $700 a month) from mid-2022 to 654 low-income Black women in Atlanta's Old Fourth Ward, College Park and rural Southwest Georgia, chosen by lottery",
+        "ja": "抽選で選んだアトランタのオールド・フォース・ウォード、カレッジパーク、ジョージア州南西部の農村部の低所得の黒人女性654人に、2022年半ばから条件なしで2年間に計2万400ドル（月850ドル、または最初に4,300ドル、その後月700ドル）",
+        "zh": "自 2022 年年中起，向亚特兰大老第四区、大学公园市和佐治亚州西南部农村地区通过抽签选出的 654 名低收入黑人女性，在两年内无条件发放共 20,400 美元（每月 850 美元，或先发 4,300 美元，之后每月 700 美元）",
+        "hi": "लॉटरी से चुनी गई, अटलांटा के ओल्ड फ़ोर्थ वार्ड, कॉलेज पार्क और ग्रामीण दक्षिण-पश्चिम जॉर्जिया की 654 कम आय वाली अश्वेत महिलाओं को 2022 के मध्य से दो साल में बिना शर्त कुल $20,400 (हर महीने $850, या शुरू में $4,300 और फिर हर महीने $700)",
+        "es": "20.400 $ en dos años sin condiciones (850 $ al mes, o 4.300 $ por adelantado y luego 700 $ al mes) desde mediados de 2022 para 654 mujeres negras de bajos ingresos del Old Fourth Ward de Atlanta, College Park y el suroeste rural de Georgia, elegidas por sorteo",
+        "de": "20.400 $ über zwei Jahre ohne Bedingungen (850 $ im Monat oder 4.300 $ vorab und dann 700 $ im Monat) ab Mitte 2022 an 654 per Los ausgewählte einkommensschwache schwarze Frauen in Atlantas Old Fourth Ward, College Park und im ländlichen Südwesten Georgias",
+        "ar": "⁦$20,400⁩ على مدى عامين بلا شروط (⁦$850⁩ شهريًا، أو ⁦$4,300⁩ مقدمًا ثم ⁦$700⁩ شهريًا) بدءًا من منتصف 2022 لـ654 امرأة سوداء منخفضة الدخل في حي أولد فورث وارد في أتلانتا وكوليدج بارك والمناطق الريفية في جنوب غرب جورجيا، اختيرت بالقرعة"
+      },
+      "result": {
+        "en": "A Washington University study in Health Affairs (February 2026) compared recipients with women not selected: 40% reported high or marginal food security vs 14%, with better diet quality, and the gains grew in the second year",
+        "ja": "Health Affairsに掲載されたワシントン大学の研究（2026年2月）は落選した女性と比べ、食料の確保が高いか境界的と答えた人が40%対14%で、食事の質も良く、2年目に改善が大きくなったと報告",
+        "zh": "华盛顿大学发表在《健康事务》上的研究（2026 年 2 月）与落选女性比较：报告粮食保障程度高或处于边缘的比例为 40% 对 14%，饮食质量更好，且第二年改善更大",
+        "hi": "Health Affairs में Washington University के एक अध्ययन (फ़रवरी 2026) ने न चुनी गई महिलाओं से तुलना की: 40% ने ऊँची या सीमांत खाद्य सुरक्षा बताई, बनाम 14%, आहार की गुणवत्ता बेहतर थी, और दूसरे साल में फ़ायदे बढ़े",
+        "es": "Un estudio de la Universidad Washington en Health Affairs (febrero de 2026) comparó a las beneficiarias con mujeres no elegidas: el 40 % declaró seguridad alimentaria alta o marginal frente al 14 %, con mejor calidad de la dieta, y las mejoras crecieron en el segundo año",
+        "de": "Eine Studie der Washington University in Health Affairs (Februar 2026) verglich die Empfängerinnen mit nicht ausgewählten Frauen: 40 % gaben eine hohe oder grenzwertige Ernährungssicherheit an gegenüber 14 %, bei besserer Ernährungsqualität, und die Verbesserungen wuchsen im zweiten Jahr",
+        "ar": "قارنت دراسة لجامعة واشنطن في ⁦Health Affairs⁩ (فبراير 2026) المستفيدات بنساء لم يُخترن: أفادت 40% بأمن غذائي مرتفع أو هامشي مقابل 14%، مع جودة غذاء أفضل، ونمت المكاسب في العام الثاني"
+      },
+      "source": "https://policiesforaction.org/blog/her-hands-path-financial-security-black-women-georgia",
+      "source2": "https://atlanta.capitalbnews.org/guaranteed-income-atlanta",
+      "us": {
+        "city": "Atlanta",
+        "state": "GA",
+        "start": "2022-06",
+        "end": "2024",
+        "endEstimated": true,
+        "monthly": 850,
+        "months": 24,
+        "recipients": 654,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Low-income Black women with income at or below twice the federal poverty level in Atlanta's Old Fourth Ward, College Park and rural Southwest Georgia; chosen by lottery",
+        "eval": {
+          "by": "Washington University in St. Louis (Brown School), with Clark Atlanta University",
+          "year": 2026,
+          "type": "peer-reviewed",
+          "url": "https://source.washu.edu/2026/02/guaranteed-income-improves-food-security-for-black-households-in-georgia-study-finds/"
+        }
+      }
+    },
+    {
+      "id": "us-chicago-rcp",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "Chicago Resilient Communities Pilot",
+      "place": {
+        "en": "Chicago, Illinois, USA",
+        "ja": "アメリカ・イリノイ州シカゴ",
+        "zh": "美国伊利诺伊州芝加哥",
+        "hi": "शिकागो, इलिनॉय, अमेरिका",
+        "es": "Chicago, Illinois (EE. UU.)",
+        "de": "Chicago, Illinois (USA)",
+        "ar": "شيكاغو، إلينوي، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Chicago (Department of Family and Support Services), paid from federal pandemic relief money in the Chicago Recovery Plan; GiveDirectly delivered the payments",
+        "ja": "シカゴ市（家族支援サービス局）。財源はシカゴ復興計画の連邦コロナ対策資金で、支給はGiveDirectlyが担当",
+        "zh": "芝加哥市（家庭与支持服务局），资金来自“芝加哥复苏计划”中的联邦疫情纾困款；由 GiveDirectly 负责发放",
+        "hi": "शिकागो शहर (Department of Family and Support Services), पैसा Chicago Recovery Plan की संघीय महामारी राहत से; भुगतान GiveDirectly ने किए",
+        "es": "Ciudad de Chicago (Departamento de Servicios de Familia y Apoyo), con fondos federales de alivio por la pandemia del Chicago Recovery Plan; GiveDirectly hizo los pagos",
+        "de": "Stadt Chicago (Department of Family and Support Services), bezahlt aus Corona-Hilfen des Bundes im Chicago Recovery Plan; GiveDirectly zahlte aus",
+        "ar": "مدينة شيكاغو (إدارة خدمات الأسرة والدعم)، بتمويل من أموال الإغاثة الفدرالية من الجائحة ضمن ⁦Chicago Recovery Plan⁩؛ وتولّت ⁦GiveDirectly⁩ صرف الدفعات"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months (from July 2022) to 5,000 low-income households chosen by lottery from more than 176,000 applicants",
+        "ja": "17万6,000人超の応募者から抽選で選んだ低所得の5,000世帯に、2022年7月から条件なしで月500ドルを12か月",
+        "zh": "从超过 176,000 名申请者中通过抽签选出 5,000 个低收入家庭，无条件每月发放 500 美元，为期 12 个月（自 2022 年 7 月起）",
+        "hi": "1,76,000 से ज़्यादा आवेदकों में से लॉटरी से चुने गए 5,000 कम आय वाले परिवारों को 12 महीने (जुलाई 2022 से) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 12 meses (desde julio de 2022) para 5.000 hogares de bajos ingresos elegidos por sorteo entre más de 176.000 solicitantes",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate (ab Juli 2022) an 5.000 einkommensschwache Haushalte, per Los aus mehr als 176.000 Bewerbungen ausgewählt",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا (بدءًا من يوليو 2022) لـ5,000 أسرة منخفضة الدخل اختيرت بالقرعة من بين أكثر من 176,000 متقدم"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://harris.uchicago.edu/news-events/news/uchicago-inclusive-economy-lab-releases-first-report-chicago-resilient-communities",
+      "source2": "https://chirecoveryplan.com/programs/chicago-resilient-communities-pilot/",
+      "us": {
+        "city": "Chicago",
+        "state": "IL",
+        "start": "2022-07",
+        "end": "2023",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 5000,
+        "unit": "households",
+        "funders": ["arpa"],
+        "control": true,
+        "elig": "Chicago residents 18+, household income at or below 250% of the federal poverty level, negatively affected by COVID-19; chosen by lottery from more than 176,000 applicants",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-weho-gi",
+      "years": "2022–2024",
+      "type": "gov",
+      "name": "West Hollywood Pilot for Guaranteed Income",
+      "place": {
+        "en": "West Hollywood, California, USA",
+        "ja": "アメリカ・カリフォルニア州ウェストハリウッド",
+        "zh": "美国加利福尼亚州西好莱坞",
+        "hi": "वेस्ट हॉलीवुड, कैलिफ़ोर्निया, अमेरिका",
+        "es": "West Hollywood, California (EE. UU.)",
+        "de": "West Hollywood, Kalifornien (USA)",
+        "ar": "ويست هوليوود، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of West Hollywood with the National Council of Jewish Women, Los Angeles; evaluated by Penn's Center for Guaranteed Income Research",
+        "ja": "ウェストハリウッド市と全米ユダヤ人女性評議会ロサンゼルス支部。評価はペンシルベニア大学CGIR",
+        "zh": "西好莱坞市，与全国犹太妇女理事会洛杉矶分会合作；由宾夕法尼亚大学保障收入研究中心评估",
+        "hi": "वेस्ट हॉलीवुड शहर, National Council of Jewish Women, Los Angeles के साथ; मूल्यांकन पेन के Center for Guaranteed Income Research ने किया",
+        "es": "Ciudad de West Hollywood con el National Council of Jewish Women de Los Ángeles; evaluado por el Center for Guaranteed Income Research de Penn",
+        "de": "Stadt West Hollywood mit dem National Council of Jewish Women, Los Angeles; evaluiert vom Center for Guaranteed Income Research der Penn",
+        "ar": "مدينة ويست هوليوود مع ⁦National Council of Jewish Women, Los Angeles⁩؛ وقيّمه ⁦Center for Guaranteed Income Research⁩ بجامعة بنسلفانيا"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 18 months (August 2022–January 2024) to 25 randomly selected low-income residents aged 50 and older",
+        "ja": "無作為に選んだ50歳以上の低所得住民25人に、条件なしで月1,000ドルを18か月（2022年8月〜2024年1月）",
+        "zh": "向随机选出的 25 名 50 岁及以上低收入居民无条件每月发放 1,000 美元，为期 18 个月（2022 年 8 月至 2024 年 1 月）",
+        "hi": "रैंडम रूप से चुने गए 50 साल और उससे ज़्यादा उम्र के 25 कम आय वाले निवासियों को 18 महीने (अगस्त 2022–जनवरी 2024) तक बिना शर्त हर महीने $1,000",
+        "es": "1.000 $ al mes sin condiciones durante 18 meses (agosto 2022–enero 2024) para 25 residentes de bajos ingresos de 50 años o más elegidos al azar",
+        "de": "1.000 $ im Monat ohne Bedingungen für 18 Monate (August 2022 bis Januar 2024) an 25 zufällig ausgewählte einkommensschwache Einwohner ab 50 Jahren",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 18 شهرًا (أغسطس 2022–يناير 2024) لـ25 من السكان منخفضي الدخل في سن 50 عامًا فأكثر اختيروا عشوائيًا"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.penncgir.org/weho-pilot-westhollywood-ca",
+      "source2": "https://guaranteedincome.us/west-hollywood",
+      "us": {
+        "city": "West Hollywood",
+        "state": "CA",
+        "start": "2022-08",
+        "end": "2024-01",
+        "monthly": 1000,
+        "months": 18,
+        "recipients": 25,
+        "unit": "people",
+        "funders": ["public"],
+        "control": true,
+        "elig": "West Hollywood residents (housed or unhoused) aged 50 and older with individual income of $41,400 or less; randomly selected",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-baltimore-byfsf",
+      "years": "2022–2024",
+      "type": "gov",
+      "name": "Baltimore Young Families Success Fund",
+      "place": {
+        "en": "Baltimore, Maryland, USA",
+        "ja": "アメリカ・メリーランド州ボルティモア",
+        "zh": "美国马里兰州巴尔的摩",
+        "hi": "बाल्टीमोर, मैरीलैंड, अमेरिका",
+        "es": "Baltimore, Maryland (EE. UU.)",
+        "de": "Baltimore, Maryland (USA)",
+        "ar": "بالتيمور، ماريلاند، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Baltimore under Mayor Brandon Scott, paid from $4.8 million of federal pandemic relief (ARPA) and foundation money, administered by the CASH Campaign of Maryland",
+        "ja": "ブランドン・スコット市長のもとのボルティモア市。財源は連邦のコロナ対策資金（ARPA）480万ドルと財団の資金で、CASH Campaign of Marylandが運営",
+        "zh": "巴尔的摩市（市长布兰登·斯科特），资金为 480 万美元联邦疫情纾困款（ARPA）和基金会资金，由马里兰州 CASH Campaign 管理",
+        "hi": "मेयर ब्रैंडन स्कॉट के अधीन बाल्टीमोर शहर, पैसा $48 लाख की संघीय महामारी राहत (ARPA) और फ़ाउंडेशन से; संचालन CASH Campaign of Maryland ने किया",
+        "es": "Ciudad de Baltimore bajo el alcalde Brandon Scott, financiado con 4,8 millones de dólares de fondos federales de alivio por la pandemia (ARPA) y dinero de fundaciones, administrado por la CASH Campaign of Maryland",
+        "de": "Stadt Baltimore unter Bürgermeister Brandon Scott, bezahlt aus 4,8 Mio. $ Corona-Hilfe des Bundes (ARPA) und Stiftungsgeld, verwaltet von der CASH Campaign of Maryland",
+        "ar": "مدينة بالتيمور في عهد العمدة براندون سكوت، بتمويل 4.8 مليون دولار من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) وأموال مؤسسات، وتديره ⁦CASH Campaign of Maryland⁩"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 24 months (August 2022–July 2024) to 200 young parents aged 18–24, chosen at random from more than 4,000 applicants",
+        "ja": "4,000人超の応募者から無作為に選んだ18〜24歳の若い親200人に、条件なしで月1,000ドルを24か月（2022年8月〜2024年7月）",
+        "zh": "从 4,000 多名申请者中随机选出 200 名 18 至 24 岁的年轻父母，无条件每月发放 1,000 美元，为期 24 个月（2022 年 8 月至 2024 年 7 月）",
+        "hi": "4,000 से ज़्यादा आवेदकों में से रैंडम रूप से चुने गए 18–24 साल के 200 युवा माता-पिता को 24 महीने (अगस्त 2022–जुलाई 2024) तक बिना शर्त हर महीने $1,000",
+        "es": "1.000 $ al mes sin condiciones durante 24 meses (agosto 2022–julio 2024) para 200 padres jóvenes de 18 a 24 años, elegidos al azar entre más de 4.000 solicitantes",
+        "de": "1.000 $ im Monat ohne Bedingungen für 24 Monate (August 2022 bis Juli 2024) an 200 junge Eltern von 18 bis 24 Jahren, zufällig aus mehr als 4.000 Bewerbungen ausgewählt",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 24 شهرًا (أغسطس 2022–يوليو 2024) لـ200 من الآباء والأمهات الشباب تتراوح أعمارهم بين 18 و24 عامًا، اختيروا عشوائيًا من بين أكثر من 4,000 متقدم"
+      },
+      "result": {
+        "en": "The final evaluation (October 2025), compared with 156 controls: 56% of recipients were food insecure at 18 months vs 72% of controls, and recipients missed about 9 fewer hours of work a month by the end. Abt Global's interim brief (June 2024) found 27% had applied to college or trade school at 12 months vs 13% of controls",
+        "ja": "最終評価（2025年10月）は対照群156人と比べ、18か月時点で食料不安の受給者は56%（対照群72%）、終了時には受給者が仕事を休む時間が月約9時間少なかったと報告。Abt Globalの中間報告（2024年6月）では、12か月時点で大学や職業学校に出願した人が27%（対照群13%）だった",
+        "zh": "最终评估（2025 年 10 月）与 156 名对照组成员比较：18 个月时受助者的粮食不安全比例为 56%，对照组为 72%；到结束时，受助者每月少缺勤约 9 小时。Abt Global 的中期简报（2024 年 6 月）发现，12 个月时 27% 的受助者申请了大学或职业学校，对照组为 13%",
+        "hi": "अंतिम मूल्यांकन (अक्टूबर 2025) ने 156 नियंत्रण वालों से तुलना की: 18 महीने पर 56% प्राप्तकर्ताओं को खाने की असुरक्षा थी, बनाम 72% नियंत्रण वाले, और अंत तक प्राप्तकर्ताओं ने हर महीने लगभग 9 घंटे कम काम छोड़ा। Abt Global के अंतरिम सार (जून 2024) के अनुसार 12 महीने पर 27% ने कॉलेज या ट्रेड स्कूल में आवेदन किया था, बनाम 13% नियंत्रण वाले",
+        "es": "La evaluación final (octubre de 2025), frente a 156 controles: el 56 % de los beneficiarios sufría inseguridad alimentaria a los 18 meses, frente al 72 % de los controles, y al final los beneficiarios faltaban unas 9 horas menos al mes al trabajo. El informe intermedio de Abt Global (junio de 2024) halló que el 27 % había solicitado plaza en la universidad o en formación profesional a los 12 meses, frente al 13 % de los controles",
+        "de": "Die Abschlussevaluation (Oktober 2025) im Vergleich mit 156 Personen der Kontrollgruppe: Nach 18 Monaten waren 56 % der Empfänger von Ernährungsunsicherheit betroffen gegenüber 72 % der Kontrollgruppe, und am Ende versäumten die Empfänger etwa 9 Arbeitsstunden im Monat weniger. Das Zwischenpapier von Abt Global (Juni 2024) stellte fest, dass sich nach 12 Monaten 27 % an einem College oder einer Berufsschule beworben hatten gegenüber 13 % der Kontrollgruppe",
+        "ar": "التقييم النهائي (أكتوبر 2025)، مقارنةً بـ156 في المجموعة الضابطة: عانى 56% من المستفيدين انعدام الأمن الغذائي بعد 18 شهرًا مقابل 72% من المجموعة الضابطة، وتغيّب المستفيدون عن العمل نحو 9 ساعات أقل شهريًا في النهاية. ووجد الموجز المرحلي من ⁦Abt Global⁩ (يونيو 2024) أن 27% تقدموا إلى كلية أو مدرسة مهنية بعد 12 شهرًا مقابل 13% من المجموعة الضابطة"
+      },
+      "source": "https://baltimorefishbowl.com/?p=222403",
+      "source2": "https://www.abtglobal.com/files/insights/reports/2024/baltimore-mgi-report-6.26.24.pdf",
+      "us": {
+        "city": "Baltimore",
+        "state": "MD",
+        "start": "2022-08",
+        "end": "2024-07",
+        "monthly": 1000,
+        "months": 24,
+        "recipients": 200,
+        "unit": "people",
+        "funders": ["arpa", "philanthropic"],
+        "control": true,
+        "elig": "Baltimore parents aged 18–24 with household income at or below 300% of the federal poverty level, chosen at random from more than 4,000 applicants; 130 recipients were in the study and 70 in a 'storytelling cohort', against 156 controls",
+        "eval": {
+          "by": "Abt Global (interim brief, June 2024); final report October 2025",
+          "year": 2025,
+          "type": "report",
+          "url": "https://www.abtglobal.com/files/insights/reports/2024/baltimore-mgi-report-6.26.24.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-madison-forward-fund",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "Madison Forward Fund",
+      "place": {
+        "en": "Madison, Wisconsin, USA",
+        "ja": "アメリカ・ウィスコンシン州マディソン",
+        "zh": "美国威斯康星州麦迪逊",
+        "hi": "मैडिसन, विस्कॉन्सिन, अमेरिका",
+        "es": "Madison, Wisconsin (EE. UU.)",
+        "de": "Madison, Wisconsin (USA)",
+        "ar": "ماديسون، ويسكونسن، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Madison, with payments funded entirely by private donors including Mayors for a Guaranteed Income and local foundations",
+        "ja": "マディソン市。支給の財源はMayors for a Guaranteed Incomeや地元の財団など、すべて民間の寄付",
+        "zh": "麦迪逊市，发放资金全部来自私人捐助者，包括“保障收入市长联盟”和当地基金会",
+        "hi": "मैडिसन शहर; भुगतान का पूरा पैसा Mayors for a Guaranteed Income और स्थानीय फ़ाउंडेशनों सहित निजी दानदाताओं से",
+        "es": "Ciudad de Madison, con pagos financiados íntegramente por donantes privados, entre ellos Mayors for a Guaranteed Income y fundaciones locales",
+        "de": "Stadt Madison, die Zahlungen vollständig von privaten Spendern finanziert, darunter Mayors for a Guaranteed Income und lokale Stiftungen",
+        "ar": "مدينة ماديسون، مع دفعات ممولة بالكامل من متبرعين خاصين منهم ⁦Mayors for a Guaranteed Income⁩ ومؤسسات محلية"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months (September 2022–August 2023) to 155 low-income Madison households with children, chosen at random from about 3,000 applicants",
+        "ja": "約3,000人の応募者から無作為に選んだ、子どものいるマディソンの低所得155世帯に、条件なしで月500ドルを12か月（2022年9月〜2023年8月）",
+        "zh": "从约 3,000 名申请者中随机选出 155 个有孩子的麦迪逊低收入家庭，无条件每月发放 500 美元，为期 12 个月（2022 年 9 月至 2023 年 8 月）",
+        "hi": "लगभग 3,000 आवेदकों में से रैंडम रूप से चुने गए, बच्चों वाले 155 कम आय वाले मैडिसन परिवारों को 12 महीने (सितंबर 2022–अगस्त 2023) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 12 meses (septiembre 2022–agosto 2023) para 155 hogares de bajos ingresos de Madison con hijos, elegidos al azar entre unos 3.000 solicitantes",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate (September 2022 bis August 2023) an 155 einkommensschwache Haushalte mit Kindern in Madison, zufällig aus rund 3.000 Bewerbungen ausgewählt",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا (سبتمبر 2022–أغسطس 2023) لـ155 أسرة منخفضة الدخل لديها أطفال في ماديسون، اختيرت عشوائيًا من بين نحو 3,000 متقدم"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.cityofmadison.com/node/24981",
+      "source2": "https://guaranteedincome.us/madison/",
+      "us": {
+        "city": "Madison",
+        "state": "WI",
+        "start": "2022-09",
+        "end": "2023-08",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 155,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Madison residents 18+ with at least one child aged 17 or under, household income under 200% of the federal poverty line; chosen at random from about 3,000 applicants",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-austin-gi-pilot",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "Austin Guaranteed Income Pilot",
+      "place": {
+        "en": "Austin, Texas, USA",
+        "ja": "アメリカ・テキサス州オースティン",
+        "zh": "美国得克萨斯州奥斯汀",
+        "hi": "ऑस्टिन, टेक्सस, अमेरिका",
+        "es": "Austin, Texas (EE. UU.)",
+        "de": "Austin, Texas (USA)",
+        "ar": "أوستن، تكساس، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Austin with the nonprofit UpTogether, paid from $1.14 million of city money plus St. David's Foundation for 50 households",
+        "ja": "オースティン市と非営利団体UpTogether。財源は市の114万ドルと、50世帯分はセント・デイビッズ財団",
+        "zh": "奥斯汀市与非营利组织 UpTogether 合作，资金为 114 万美元市政资金，另有圣大卫基金会资助 50 个家庭",
+        "hi": "ऑस्टिन शहर, ग़ैर-लाभकारी UpTogether के साथ; पैसा शहर के $11.4 लाख और 50 परिवारों के लिए St. David's Foundation से",
+        "es": "Ciudad de Austin con la organización sin ánimo de lucro UpTogether, financiado con 1,14 millones de dólares municipales más la St. David's Foundation para 50 hogares",
+        "de": "Stadt Austin mit der gemeinnützigen Organisation UpTogether, bezahlt aus 1,14 Mio. $ städtischer Mittel plus der St. David's Foundation für 50 Haushalte",
+        "ar": "مدينة أوستن مع المنظمة غير الربحية ⁦UpTogether⁩، بتمويل 1.14 مليون دولار من أموال المدينة إضافة إلى ⁦St. David's Foundation⁩ لـ50 أسرة"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 12 months (September 2022–August 2023) to 135 low-income households facing housing insecurity",
+        "ja": "住まいが不安定な低所得の135世帯に、条件なしで月1,000ドルを12か月（2022年9月〜2023年8月）",
+        "zh": "向 135 个面临住房不安全的低收入家庭无条件每月发放 1,000 美元，为期 12 个月（2022 年 9 月至 2023 年 8 月）",
+        "hi": "आवास असुरक्षा झेल रहे 135 कम आय वाले परिवारों को 12 महीने (सितंबर 2022–अगस्त 2023) तक बिना शर्त हर महीने $1,000",
+        "es": "1.000 $ al mes sin condiciones durante 12 meses (septiembre 2022–agosto 2023) para 135 hogares de bajos ingresos con inseguridad de vivienda",
+        "de": "1.000 $ im Monat ohne Bedingungen für 12 Monate (September 2022 bis August 2023) an 135 einkommensschwache Haushalte mit unsicherer Wohnsituation",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 12 شهرًا (سبتمبر 2022–أغسطس 2023) لـ135 أسرة منخفضة الدخل تواجه انعدام الأمن السكني"
+      },
+      "result": {
+        "en": "The Urban Institute (2024) surveyed 54 of the 135 households: they spent about 60% of the money on rent or mortgage, 14% more caught up on housing payments and 12% fewer felt at risk of eviction; mental health improved at six months but was back near baseline at 12; no control group",
+        "ja": "アーバン・インスティテュート（2024年）が135世帯のうち54世帯を調査し、お金の約60%を家賃や住宅ローンに使い、住居費の滞納を解消した人が14%増え、立ち退きの危険を感じる人が12%減ったと報告。心の健康は6か月時点で改善したが、12か月時点でほぼ元に戻った。対照群はない",
+        "zh": "城市研究所（2024 年）调查了 135 个家庭中的 54 个：约 60% 的钱用于房租或房贷，补清住房欠款的比例高出 14%，感到面临驱逐风险的比例低 12%；心理健康在六个月时改善，但到 12 个月时回到接近基线的水平；没有对照组",
+        "hi": "Urban Institute (2024) ने 135 में से 54 परिवारों का सर्वे किया: उन्होंने लगभग 60% पैसा किराए या होम लोन पर ख़र्च किया, आवास भुगतान का बकाया चुकाने वाले 14% ज़्यादा थे और बेदख़ली का ख़तरा महसूस करने वाले 12% कम; छह महीने पर मानसिक स्वास्थ्य सुधरा पर 12 महीने पर लगभग शुरुआती स्तर पर लौट आया; कोई नियंत्रण समूह नहीं",
+        "es": "El Urban Institute (2024) encuestó a 54 de los 135 hogares: gastaron cerca del 60 % del dinero en alquiler o hipoteca, un 14 % más se puso al día con los pagos de vivienda y un 12 % menos se sentía en riesgo de desahucio; la salud mental mejoró a los seis meses pero volvió casi al nivel inicial a los 12; sin grupo de control",
+        "de": "Das Urban Institute (2024) befragte 54 der 135 Haushalte: Sie gaben etwa 60 % des Geldes für Miete oder Hypothek aus, 14 % mehr holten Wohnkostenrückstände auf und 12 % weniger fühlten sich von Räumung bedroht; die psychische Gesundheit verbesserte sich nach sechs Monaten, lag nach 12 aber wieder nahe dem Ausgangswert; keine Kontrollgruppe",
+        "ar": "استطلع ⁦Urban Institute⁩ (2024) آراء 54 من الأسر الـ135: أنفقت نحو 60% من المال على الإيجار أو الرهن العقاري، وزادت نسبة من سدّدوا متأخرات السكن 14%، وقلّت نسبة من شعروا بخطر الإخلاء 12%؛ وتحسنت الصحة النفسية بعد ستة أشهر لكنها عادت قرب خط الأساس بعد 12 شهرًا؛ ولا توجد مجموعة ضابطة"
+      },
+      "source": "https://communityimpact.com/austin/south-central-austin/government/2024/02/15/austin-families-given-1000-a-month-spent-most-of-it-on-housing-survey-finds",
+      "source2": "https://austinmonitor.com/stories/2024/02/austin-gave-families-1000-a-month-for-a-year-most-of-the-money-was-spent-on-housing/",
+      "us": {
+        "city": "Austin",
+        "state": "TX",
+        "start": "2022-09",
+        "end": "2023-08",
+        "monthly": 1000,
+        "months": 12,
+        "recipients": 135,
+        "unit": "households",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "Low-income Austin residents under an income cap who were exiting homelessness, facing eviction or at least two months behind on rent; enrolled through ten community organizations",
+        "eval": {
+          "by": "Urban Institute",
+          "year": 2024,
+          "type": "report",
+          "url": "https://communityimpact.com/austin/south-central-austin/government/2024/02/15/austin-families-given-1000-a-month-spent-most-of-it-on-housing-survey-finds"
+        }
+      }
+    },
+    {
+      "id": "us-denver-dbip",
+      "years": "2022–2024",
+      "type": "ngo",
+      "name": "Denver Basic Income Project",
+      "place": {
+        "en": "Denver, Colorado, USA",
+        "ja": "アメリカ・コロラド州デンバー",
+        "zh": "美国科罗拉多州丹佛",
+        "hi": "डेनवर, कोलोराडो, अमेरिका",
+        "es": "Denver, Colorado (EE. UU.)",
+        "de": "Denver, Colorado (USA)",
+        "ar": "دنفر، كولورادو، الولايات المتحدة"
+      },
+      "who": {
+        "en": "The Denver Basic Income Project, a nonprofit, funded by foundations, donors and $2 million of the City of Denver's federal pandemic relief (ARPA) money",
+        "ja": "非営利団体Denver Basic Income Project。財源は財団、寄付者、デンバー市の連邦コロナ対策資金（ARPA）200万ドル",
+        "zh": "非营利组织丹佛基本收入项目（Denver Basic Income Project），资金来自基金会、捐助者和丹佛市 200 万美元的联邦疫情纾困款（ARPA）",
+        "hi": "Denver Basic Income Project, एक ग़ैर-लाभकारी संस्था, पैसा फ़ाउंडेशनों, दानदाताओं और डेनवर शहर की संघीय महामारी राहत (ARPA) के $20 लाख से",
+        "es": "El Denver Basic Income Project, una organización sin ánimo de lucro, financiado por fundaciones, donantes y 2 millones de dólares de los fondos federales de alivio por la pandemia (ARPA) de la Ciudad de Denver",
+        "de": "Denver Basic Income Project, eine gemeinnützige Organisation, finanziert von Stiftungen, Spendern und 2 Mio. $ aus den Corona-Hilfen des Bundes (ARPA) der Stadt Denver",
+        "ar": "⁦Denver Basic Income Project⁩، منظمة غير ربحية، بتمويل من مؤسسات ومتبرعين و2 مليون دولار من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) المخصصة لمدينة دنفر"
+      },
+      "paid": {
+        "en": "$1,000 a month for a year (or $6,500 up front then $500 a month) with no conditions, from late 2022, to people experiencing homelessness in Denver; 807 enrolled across the two cash groups and a comparison group that got $50 a month",
+        "ja": "デンバーのホームレス状態にある人に、2022年後半から条件なしで月1,000ドルを1年間（または最初に6,500ドル、その後月500ドル）。2つの現金群と月50ドルの比較群に計807人が登録",
+        "zh": "自 2022 年底起，向丹佛无家可归者无条件每月发放 1,000 美元，为期一年（或先发 6,500 美元，之后每月 500 美元）；两个现金组和每月领取 50 美元的比较组共登记 807 人",
+        "hi": "2022 के अंत से डेनवर में बेघरी झेल रहे लोगों को एक साल तक बिना शर्त हर महीने $1,000 (या शुरू में $6,500 और फिर हर महीने $500); दो नक़द समूहों और हर महीने $50 पाने वाले तुलना समूह में कुल 807 नामांकित",
+        "es": "1.000 $ al mes durante un año (o 6.500 $ por adelantado y luego 500 $ al mes) sin condiciones, desde finales de 2022, para personas sin hogar de Denver; se inscribieron 807 entre los dos grupos con dinero y un grupo de comparación que recibía 50 $ al mes",
+        "de": "1.000 $ im Monat für ein Jahr (oder 6.500 $ vorab und dann 500 $ im Monat) ohne Bedingungen, ab Ende 2022, an obdachlose Menschen in Denver; 807 wurden in die zwei Geldgruppen und eine Vergleichsgruppe mit 50 $ im Monat aufgenommen",
+        "ar": "⁦$1,000⁩ شهريًا لمدة عام (أو ⁦$6,500⁩ مقدمًا ثم ⁦$500⁩ شهريًا) بلا شروط، بدءًا من أواخر 2022، لأشخاص يعيشون التشرد في دنفر؛ وسُجّل 807 أشخاص في مجموعتي النقد ومجموعة مقارنة تلقت ⁦$50⁩ شهريًا"
+      },
+      "result": {
+        "en": "The University of Denver's year-one report (June 2024) reported that about 45% of participants across all three groups were renting or owning a home at 10 months, nights in shelters halved in the two cash groups, and full-time work rose in those groups while falling in the $50 group; stress was slightly higher at the end",
+        "ja": "デンバー大学の1年目報告（2024年6月）は、10か月時点で3群すべての参加者の約45%が賃貸か持ち家に住み、2つの現金群ではシェルターでの宿泊が半減し、フルタイムの仕事が増えた一方、50ドルの群では減ったと報告。終了時のストレスはやや高かった",
+        "zh": "丹佛大学的第一年报告（2024 年 6 月）称，10 个月时三组中约 45% 的参与者租房或拥有住房，两个现金组在收容所过夜的天数减半，这两组的全职工作增加，而 50 美元组则减少；结束时压力略高",
+        "hi": "University of Denver की पहले साल की रिपोर्ट (जून 2024) के अनुसार 10 महीने पर तीनों समूहों के लगभग 45% प्रतिभागी किराए के या अपने घर में थे, दोनों नक़द समूहों में शेल्टर में बिताई रातें आधी हुईं, और इन समूहों में पूर्णकालिक काम बढ़ा जबकि $50 वाले समूह में घटा; अंत में तनाव थोड़ा ज़्यादा था",
+        "es": "El informe del primer año de la Universidad de Denver (junio de 2024) indicó que cerca del 45 % de los participantes de los tres grupos alquilaba o era propietario de una vivienda a los 10 meses, las noches en albergues se redujeron a la mitad en los dos grupos con dinero y el trabajo a tiempo completo subió en esos grupos mientras bajaba en el de 50 $; el estrés era algo mayor al final",
+        "de": "Der Bericht der University of Denver zum ersten Jahr (Juni 2024) berichtete, dass in allen drei Gruppen nach 10 Monaten etwa 45 % der Teilnehmenden zur Miete oder im Eigentum wohnten, sich die Übernachtungen in Notunterkünften in den zwei Geldgruppen halbierten und die Vollzeitarbeit dort stieg, während sie in der 50-$-Gruppe sank; der Stress lag am Ende etwas höher",
+        "ar": "أفاد تقرير السنة الأولى من جامعة دنفر (يونيو 2024) بأن نحو 45% من المشاركين في المجموعات الثلاث كانوا يستأجرون مسكنًا أو يملكونه بعد 10 أشهر، وبأن الليالي في الملاجئ انخفضت إلى النصف في مجموعتي النقد، وبأن العمل بدوام كامل ارتفع في هاتين المجموعتين بينما انخفض في مجموعة الـ⁦$50⁩؛ وكان التوتر أعلى قليلًا في النهاية"
+      },
+      "source": "https://hpri.usc.edu/homeless_research/denver-basic-income-project-year-one-evaluation-report/",
+      "source2": "https://coloradosun.com/2024/06/19/homeless-payments/",
+      "us": {
+        "city": "Denver",
+        "state": "CO",
+        "start": "2022-10",
+        "end": "2024",
+        "monthly": 1000,
+        "months": 12,
+        "recipients": 807,
+        "unit": "people",
+        "funders": ["arpa", "philanthropic"],
+        "control": true,
+        "elig": "Adults (aged 18–86) experiencing homelessness in Denver: on the streets, in shelters, in vehicles or on friends' couches",
+        "eval": {
+          "by": "University of Denver Center for Housing and Homelessness Research",
+          "year": 2024,
+          "type": "report",
+          "url": "https://hpri.usc.edu/homeless_research/denver-basic-income-project-year-one-evaluation-report/"
+        }
+      }
+    },
+    {
+      "id": "us-silicon-valley-gi",
+      "years": "2022–2024",
+      "type": "ngo",
+      "name": "Silicon Valley Guaranteed Income Project",
+      "place": {
+        "en": "Santa Clara County, California, USA",
+        "ja": "アメリカ・カリフォルニア州サンタクララ郡",
+        "zh": "美国加利福尼亚州圣克拉拉县",
+        "hi": "सांता क्लारा काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Santa Clara, California (EE. UU.)",
+        "de": "Santa Clara County, Kalifornien (USA)",
+        "ar": "مقاطعة سانتا كلارا، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Destination: Home, a Silicon Valley nonprofit working on homelessness, with community partners and tech-industry and foundation donors",
+        "ja": "ホームレス問題に取り組むシリコンバレーの非営利団体Destination: Home。地域のパートナーとIT業界や財団の寄付者が支援",
+        "zh": "致力于无家可归问题的硅谷非营利组织 Destination: Home，与社区合作伙伴及科技行业和基金会捐助者合作",
+        "hi": "Destination: Home, बेघरी पर काम करने वाली सिलिकॉन वैली की ग़ैर-लाभकारी संस्था, सामुदायिक साझेदारों और टेक उद्योग व फ़ाउंडेशन दानदाताओं के साथ",
+        "es": "Destination: Home, una organización sin ánimo de lucro de Silicon Valley que trabaja contra el sinhogarismo, con socios comunitarios y donantes del sector tecnológico y fundaciones",
+        "de": "Destination: Home, eine gemeinnützige Organisation gegen Obdachlosigkeit im Silicon Valley, mit Partnern vor Ort sowie Spendern aus der Tech-Branche und von Stiftungen",
+        "ar": "⁦Destination: Home⁩، منظمة غير ربحية في وادي السيليكون تعمل على قضية التشرد، مع شركاء مجتمعيين ومتبرعين من قطاع التكنولوجيا والمؤسسات"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for two years to 150 Santa Clara County families with children who were homeless or at risk of homelessness, starting in December 2022",
+        "ja": "ホームレスまたはその恐れがある、子どものいるサンタクララ郡の150家族に、2022年12月から条件なしで月1,000ドルを2年間",
+        "zh": "自 2022 年 12 月起，向圣克拉拉县 150 个无家可归或面临无家可归风险的有孩子家庭无条件每月发放 1,000 美元，为期两年",
+        "hi": "बेघर या बेघर होने के ख़तरे वाले, बच्चों वाले 150 सांता क्लारा काउंटी परिवारों को दिसंबर 2022 से दो साल तक बिना शर्त हर महीने $1,000",
+        "es": "1.000 $ al mes sin condiciones durante dos años para 150 familias con hijos del condado de Santa Clara que estaban sin hogar o en riesgo de estarlo, a partir de diciembre de 2022",
+        "de": "1.000 $ im Monat ohne Bedingungen für zwei Jahre an 150 Familien mit Kindern in Santa Clara County, die obdachlos oder von Obdachlosigkeit bedroht waren, ab Dezember 2022",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة عامين لـ150 أسرة لديها أطفال في مقاطعة سانتا كلارا كانت مشرّدة أو معرّضة لخطر التشرد، بدءًا من ديسمبر 2022"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://destinationhomesv.org/news/2022/11/30/1000-a-month-no-strings-attached-anti-poverty-experiment-comes-to-silicon-valley/",
+      "source2": "https://destinationhomesv.org/guaranteed-income/silicon-valley-guaranteed-income/",
+      "us": {
+        "city": "San Jose / Santa Clara County",
+        "state": "CA",
+        "start": "2022-12",
+        "end": "2024",
+        "endEstimated": true,
+        "monthly": 1000,
+        "months": 24,
+        "recipients": 150,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Santa Clara County families with children under 18 who are homeless or at risk of losing their housing; by referral only (from the county housing waitlist and San Jose's Mayfair neighborhood)",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-mountain-view-elevate",
+      "years": "2022–2024",
+      "type": "gov",
+      "name": "Elevate MV",
+      "place": {
+        "en": "Mountain View, California, USA",
+        "ja": "アメリカ・カリフォルニア州マウンテンビュー",
+        "zh": "美国加利福尼亚州山景城",
+        "hi": "माउंटेन व्यू, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Mountain View, California (EE. UU.)",
+        "de": "Mountain View, Kalifornien (USA)",
+        "ar": "ماونتن فيو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Mountain View, run by the nonprofit Community Services Agency, with technical help from Mayors for a Guaranteed Income",
+        "ja": "マウンテンビュー市。運営は非営利団体Community Services Agency、技術支援はMayors for a Guaranteed Income",
+        "zh": "山景城市，由非营利组织社区服务局（Community Services Agency）运营，并获“保障收入市长联盟”（Mayors for a Guaranteed Income）技术支持",
+        "hi": "माउंटेन व्यू शहर; इसे ग़ैर-लाभकारी Community Services Agency ने Mayors for a Guaranteed Income की तकनीकी मदद से चलाया",
+        "es": "Ciudad de Mountain View, gestionado por la organización sin ánimo de lucro Community Services Agency, con ayuda técnica de Mayors for a Guaranteed Income",
+        "de": "Stadt Mountain View, durchgeführt von der gemeinnützigen Community Services Agency, mit fachlicher Hilfe von Mayors for a Guaranteed Income",
+        "ar": "مدينة ماونتن فيو، وتديره المنظمة غير الربحية ⁦Community Services Agency⁩، بمساعدة فنية من ⁦Mayors for a Guaranteed Income⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for two years (December 2022–November 2024) to 166 extremely low-income Mountain View families with children, chosen at random; 132 other applicants formed a control group",
+        "ja": "子どものいるマウンテンビューの極めて低所得の家族から無作為に選んだ166家族に、条件なしで月500ドルを2年間（2022年12月〜2024年11月）。別の応募者132人が対照群",
+        "zh": "向随机选出的 166 个有孩子的山景城极低收入家庭无条件每月发放 500 美元，为期两年（2022 年 12 月至 2024 年 11 月）；另有 132 名申请者组成对照组",
+        "hi": "रैंडम रूप से चुने गए, बच्चों वाले 166 अत्यंत कम आय वाले माउंटेन व्यू परिवारों को दो साल (दिसंबर 2022–नवंबर 2024) तक बिना शर्त हर महीने $500; 132 अन्य आवेदक नियंत्रण समूह में थे",
+        "es": "500 $ al mes sin condiciones durante dos años (diciembre 2022–noviembre 2024) para 166 familias con hijos de ingresos extremadamente bajos de Mountain View, elegidas al azar; otros 132 solicitantes formaron un grupo de control",
+        "de": "500 $ im Monat ohne Bedingungen für zwei Jahre (Dezember 2022 bis November 2024) an 166 zufällig ausgewählte Familien mit Kindern und sehr niedrigem Einkommen in Mountain View; 132 weitere Bewerber bildeten eine Kontrollgruppe",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عامين (ديسمبر 2022–نوفمبر 2024) لـ166 أسرة شديدة انخفاض الدخل لديها أطفال في ماونتن فيو، اختيرت عشوائيًا؛ وشكّل 132 متقدمًا آخرون مجموعة ضابطة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://guaranteedincome.us/mountain-view",
+      "source2": "https://www.mv-voice.com/poverty/2024/01/16/guaranteed-income-pilot-program-eases-financial-hardships-for-mountain-view-residents/",
+      "us": {
+        "city": "Mountain View",
+        "state": "CA",
+        "start": "2022-12",
+        "end": "2024-11",
+        "monthly": 500,
+        "months": 24,
+        "recipients": 166,
+        "unit": "households",
+        "funders": ["public"],
+        "control": true,
+        "elig": "Mountain View residents (any immigration or housing status) with income at or below 30% of Area Median Income who are a parent or caregiver of a child under 18 (or pregnant); chosen at random",
+        "eval": null
+      }
+    },
+    {
+      "id": "cook-county",
+      "years": "2022–2025",
+      "type": "gov",
+      "name": "Cook County Promise Guaranteed Income Pilot",
+      "place": {
+        "en": "Cook County, Illinois, USA",
+        "ja": "アメリカ・イリノイ州クック郡",
+        "zh": "美国伊利诺伊州库克县",
+        "hi": "कुक काउंटी, इलिनॉय, अमेरिका",
+        "es": "Condado de Cook, Illinois (EE. UU.)",
+        "de": "Cook County, Illinois (USA)",
+        "ar": "مقاطعة كوك، إلينوي، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Cook County government (which includes Chicago), paid from $42 million of federal pandemic relief (ARPA); the University of Chicago Inclusive Economy Lab runs the evaluation",
+        "ja": "クック郡（シカゴを含む）。財源は連邦のコロナ対策資金（ARPA）4,200万ドルで、評価はシカゴ大学Inclusive Economy Lab",
+        "zh": "库克县政府（含芝加哥），资金为 4,200 万美元联邦疫情纾困款（ARPA）；芝加哥大学包容性经济实验室负责评估",
+        "hi": "कुक काउंटी सरकार (शिकागो सहित), पैसा $4.2 करोड़ की संघीय महामारी राहत (ARPA) से; मूल्यांकन University of Chicago Inclusive Economy Lab कर रही है",
+        "es": "Gobierno del condado de Cook (incluye Chicago), con 42 millones de dólares de fondos federales de alivio por la pandemia (ARPA); el Inclusive Economy Lab de la Universidad de Chicago dirige la evaluación",
+        "de": "Verwaltung von Cook County (mit Chicago), bezahlt aus 42 Mio. $ Corona-Hilfe des Bundes (ARPA); das Inclusive Economy Lab der University of Chicago führt die Evaluation durch",
+        "ar": "حكومة مقاطعة كوك (التي تضم شيكاغو)، بتمويل 42 مليون دولار من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)؛ ويتولّى ⁦University of Chicago Inclusive Economy Lab⁩ التقييم"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for two years (December 2022–January 2025) to 3,250 low-to-moderate-income households chosen by lottery from more than 233,000 applicants",
+        "ja": "23万3,000人超の応募者から抽選で選んだ低・中所得の3,250世帯に、条件なしで月500ドルを2年間（2022年12月〜2025年1月）",
+        "zh": "从超过 233,000 名申请者中通过抽签选出 3,250 个中低收入家庭，无条件每月发放 500 美元，为期两年（2022 年 12 月至 2025 年 1 月）",
+        "hi": "2,33,000 से ज़्यादा आवेदकों में से लॉटरी से चुने गए 3,250 कम-से-मध्यम आय वाले परिवारों को दो साल (दिसंबर 2022–जनवरी 2025) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante dos años (diciembre 2022–enero 2025) para 3.250 hogares de ingresos bajos y medios elegidos por sorteo entre más de 233.000 solicitantes",
+        "de": "500 $ im Monat ohne Bedingungen für zwei Jahre (Dezember 2022 bis Januar 2025) an 3.250 Haushalte mit niedrigem bis mittlerem Einkommen, per Los aus mehr als 233.000 Bewerbungen ausgewählt",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عامين (ديسمبر 2022–يناير 2025) لـ3,250 أسرة منخفضة ومتوسطة الدخل اختيرت بالقرعة من بين أكثر من 233,000 متقدم"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.cookcountyil.gov/promise",
+      "source2": "https://arpa.cookcountyil.gov/promise-guaranteed-income-pilot-program",
+      "us": {
+        "city": "Cook County",
+        "state": "IL",
+        "start": "2022-12",
+        "end": "2025-01",
+        "monthly": 500,
+        "months": 24,
+        "recipients": 3250,
+        "unit": "households",
+        "funders": ["arpa"],
+        "control": true,
+        "elig": "Cook County residents 18+, household income at or below 250% of the federal poverty level, not in another guaranteed income program; chosen by lottery in November 2022 from more than 233,000 applicants",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-evanston-gi",
+      "years": "2022–2023",
+      "type": "gov",
+      "name": "Evanston Guaranteed Income Pilot Program",
+      "place": {
+        "en": "Evanston, Illinois, USA",
+        "ja": "アメリカ・イリノイ州エバンストン",
+        "zh": "美国伊利诺伊州埃文斯顿",
+        "hi": "इवैंस्टन, इलिनॉय, अमेरिका",
+        "es": "Evanston, Illinois (EE. UU.)",
+        "de": "Evanston, Illinois (USA)",
+        "ar": "إيفانستون، إلينوي، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Evanston with Northwestern University, paid from the city's federal pandemic relief (ARPA) money, Northwestern and the Evanston Community Foundation",
+        "ja": "エバンストン市とノースウェスタン大学。財源は市の連邦コロナ対策資金（ARPA）、ノースウェスタン大学、エバンストン・コミュニティ財団",
+        "zh": "埃文斯顿市与西北大学合作，资金来自该市的联邦疫情纾困款（ARPA）、西北大学和埃文斯顿社区基金会",
+        "hi": "इवैंस्टन शहर और Northwestern University, पैसा शहर की संघीय महामारी राहत (ARPA), Northwestern और Evanston Community Foundation से",
+        "es": "Ciudad de Evanston con la Universidad Northwestern, financiado con los fondos federales de alivio por la pandemia (ARPA) de la ciudad, Northwestern y la Evanston Community Foundation",
+        "de": "Stadt Evanston mit der Northwestern University, bezahlt aus den Corona-Hilfen des Bundes (ARPA) der Stadt, von der Northwestern und der Evanston Community Foundation",
+        "ar": "مدينة إيفانستون مع جامعة نورثوسترن، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) المخصصة للمدينة وجامعة نورثوسترن و⁦Evanston Community Foundation⁩"
+      },
+      "paid": {
+        "en": "$500 a month on a prepaid debit card with no conditions for 12 months (December 2022–November 2023) to 150 low-income young adults, seniors and undocumented residents chosen by lottery",
+        "ja": "抽選で選んだ低所得の若者、高齢者、在留資格のない住民150人に、条件なしで月500ドルをプリペイドデビットカードで12か月（2022年12月〜2023年11月）",
+        "zh": "通过预付借记卡，向通过抽签选出的 150 名低收入青年、老年人和无证居民无条件每月发放 500 美元，为期 12 个月（2022 年 12 月至 2023 年 11 月）",
+        "hi": "लॉटरी से चुने गए 150 कम आय वाले युवाओं, बुज़ुर्गों और बिना दस्तावेज़ वाले निवासियों को 12 महीने (दिसंबर 2022–नवंबर 2023) तक प्रीपेड डेबिट कार्ड पर बिना शर्त हर महीने $500",
+        "es": "500 $ al mes en una tarjeta de débito prepago sin condiciones durante 12 meses (diciembre 2022–noviembre 2023) para 150 jóvenes adultos, personas mayores y residentes indocumentados de bajos ingresos elegidos por sorteo",
+        "de": "500 $ im Monat auf einer Prepaid-Debitkarte ohne Bedingungen für 12 Monate (Dezember 2022 bis November 2023) an 150 per Los ausgewählte einkommensschwache junge Erwachsene, Senioren und Einwohner ohne Papiere",
+        "ar": "⁦$500⁩ شهريًا على بطاقة خصم مسبقة الدفع بلا شروط لمدة 12 شهرًا (ديسمبر 2022–نوفمبر 2023) لـ150 من الشباب وكبار السن والمقيمين غير الموثقين منخفضي الدخل اختيروا بالقرعة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://dailynorthwestern.com/2023/01/18/lateststories/271409/",
+      "source2": "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/33ae8da",
+      "us": {
+        "city": "Evanston",
+        "state": "IL",
+        "start": "2022-12",
+        "end": "2023-11",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 150,
+        "unit": "people",
+        "funders": ["arpa", "philanthropic"],
+        "control": true,
+        "elig": "Evanston residents at or below 250% of the federal poverty line who were aged 18–24, aged 62 or older, or undocumented, in equal numbers; chosen by lottery",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-alameda-rise-up",
+      "years": "2023–2025",
+      "type": "gov",
+      "name": "Rise Up Alameda",
+      "place": {
+        "en": "Alameda, California, USA",
+        "ja": "アメリカ・カリフォルニア州アラメダ",
+        "zh": "美国加利福尼亚州阿拉米达",
+        "hi": "अलामेडा, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Alameda, California (EE. UU.)",
+        "de": "Alameda, Kalifornien (USA)",
+        "ar": "ألاميدا، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Alameda, paid from federal pandemic relief (ARPA)",
+        "ja": "アラメダ市。財源は連邦のコロナ対策資金（ARPA）",
+        "zh": "阿拉米达市，资金来自联邦疫情纾困款（ARPA）",
+        "hi": "अलामेडा शहर, पैसा संघीय महामारी राहत (ARPA) से",
+        "es": "Ciudad de Alameda, financiado con fondos federales de alivio por la pandemia (ARPA)",
+        "de": "Stadt Alameda, bezahlt aus Corona-Hilfen des Bundes (ARPA)",
+        "ar": "مدينة ألاميدا، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for two years (2023–December 2025) to 150 low-income Alameda households chosen by lottery; 180 randomly selected applicants formed a control group",
+        "ja": "抽選で選んだアラメダの低所得150世帯に、条件なしで月1,000ドルを2年間（2023年〜2025年12月）。無作為に選んだ応募者180人が対照群",
+        "zh": "向通过抽签选出的 150 个阿拉米达低收入家庭无条件每月发放 1,000 美元，为期两年（2023 年至 2025 年 12 月）；另有 180 名随机选出的申请者组成对照组",
+        "hi": "लॉटरी से चुने गए 150 कम आय वाले अलामेडा परिवारों को दो साल (2023–दिसंबर 2025) तक बिना शर्त हर महीने $1,000; रैंडम रूप से चुने गए 180 आवेदक नियंत्रण समूह में थे",
+        "es": "1.000 $ al mes sin condiciones durante dos años (2023–diciembre 2025) para 150 hogares de bajos ingresos de Alameda elegidos por sorteo; 180 solicitantes elegidos al azar formaron un grupo de control",
+        "de": "1.000 $ im Monat ohne Bedingungen für zwei Jahre (2023 bis Dezember 2025) an 150 per Los ausgewählte einkommensschwache Haushalte in Alameda; 180 zufällig ausgewählte Bewerber bildeten eine Kontrollgruppe",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة عامين (2023–ديسمبر 2025) لـ150 أسرة منخفضة الدخل في ألاميدا اختيرت بالقرعة؛ وشكّل 180 متقدمًا اختيروا عشوائيًا مجموعة ضابطة"
+      },
+      "result": {
+        "en": "Abt Global's one-year interim report (2025) reported that, compared with the control group, fewer recipients were going into debt (15% vs 42%), more had money left at month's end (13% vs 1%) and nearly twice as many had $500+ saved, with lower stress; no negative effect on employment and no significant housing change",
+        "ja": "Abt Globalの1年目の中間報告（2025年）は、対照群と比べ、借金を重ねる受給者が少なく（15%対42%）、月末にお金が残る人が多く（13%対1%）、500ドル以上の貯蓄がある人はほぼ2倍で、ストレスも低かったと報告。雇用への悪影響はなく、住まいに有意な変化はなかった",
+        "zh": "Abt Global 的一年期中期报告（2025 年）称，与对照组相比，举债的受助者更少（15% 对 42%），月底有余钱的更多（13% 对 1%），储蓄 500 美元以上的人数接近两倍，压力也更低；对就业没有负面影响，住房方面没有显著变化",
+        "hi": "Abt Global की एक साल की अंतरिम रिपोर्ट (2025) के अनुसार नियंत्रण समूह की तुलना में कम प्राप्तकर्ता क़र्ज़ में जा रहे थे (15% बनाम 42%), ज़्यादा के पास महीने के अंत में पैसा बचता था (13% बनाम 1%) और लगभग दोगुने लोगों के पास $500+ की बचत थी, तनाव भी कम था; रोज़गार पर कोई नकारात्मक असर नहीं और आवास में कोई महत्वपूर्ण बदलाव नहीं",
+        "es": "El informe intermedio de un año de Abt Global (2025) indicó que, frente al grupo de control, menos beneficiarios se endeudaban (15 % frente a 42 %), más les sobraba dinero a fin de mes (13 % frente a 1 %) y casi el doble tenía 500 $ o más ahorrados, con menos estrés; sin efecto negativo en el empleo ni cambios significativos en la vivienda",
+        "de": "Der Zwischenbericht von Abt Global nach einem Jahr (2025) berichtete im Vergleich zur Kontrollgruppe: Weniger Empfänger machten Schulden (15 % zu 42 %), mehr hatten am Monatsende Geld übrig (13 % zu 1 %), fast doppelt so viele hatten 500 $ oder mehr gespart, bei geringerem Stress; keine negative Wirkung auf die Beschäftigung und keine signifikante Veränderung bei der Wohnsituation",
+        "ar": "أفاد التقرير المرحلي لعام واحد من ⁦Abt Global⁩ (2025) بأنه مقارنةً بالمجموعة الضابطة، كان عدد أقل من المستفيدين يقعون في الديون (15% مقابل 42%)، وبقي لدى عدد أكبر مال في نهاية الشهر (13% مقابل 1%)، وكان لدى نحو ضعف العدد مدخرات تبلغ ⁦$500⁩ أو أكثر، مع توتر أقل؛ ولم يظهر أثر سلبي على التوظيف ولا تغيّر دال في السكن"
+      },
+      "source": "https://www.kqed.org/news/12053655/alamedas-rise-up-pilot-shows-cash-aid-improves-financial-stability-mental-health",
+      "source2": "https://alamedapost.com/news/alamedas-guaranteed-income-recipients-see-improvements-finances-beyond/",
+      "us": {
+        "city": "Alameda",
+        "state": "CA",
+        "start": "2023",
+        "end": "2025-12",
+        "monthly": 1000,
+        "months": 24,
+        "recipients": 150,
+        "unit": "households",
+        "funders": ["arpa"],
+        "control": true,
+        "elig": "Low-income households in the City of Alameda, chosen by lottery (average household income $31,836)",
+        "eval": {
+          "by": "Abt Global",
+          "year": 2025,
+          "type": "report",
+          "url": "https://www.alamedaca.gov/RESIDENTS/Guaranteed-Basic-Income-Pilot-Program"
+        }
+      }
+    },
+    {
+      "id": "us-minnesota-springboard-artists",
+      "years": "2023–",
+      "type": "ngo",
+      "name": "Guaranteed Income for Artists (Springboard for the Arts)",
+      "place": {
+        "en": "Saint Paul and Otter Tail County, Minnesota, USA",
+        "ja": "アメリカ・ミネソタ州セントポールとオッターテール郡",
+        "zh": "美国明尼苏达州圣保罗和奥特泰尔县",
+        "hi": "सेंट पॉल और ऑटर टेल काउंटी, मिनेसोटा, अमेरिका",
+        "es": "Saint Paul y condado de Otter Tail, Minnesota (EE. UU.)",
+        "de": "Saint Paul und Otter Tail County, Minnesota (USA)",
+        "ar": "سانت بول ومقاطعة أوتر تيل، مينيسوتا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Springboard for the Arts, a Saint Paul arts nonprofit, paid for by private foundations",
+        "ja": "セントポールの芸術系非営利団体Springboard for the Arts。財源は民間財団",
+        "zh": "圣保罗艺术非营利组织 Springboard for the Arts，资金来自私人基金会",
+        "hi": "Springboard for the Arts, सेंट पॉल की एक कला ग़ैर-लाभकारी संस्था, पैसा निजी फ़ाउंडेशनों से",
+        "es": "Springboard for the Arts, una organización artística sin ánimo de lucro de Saint Paul, financiado por fundaciones privadas",
+        "de": "Springboard for the Arts, eine gemeinnützige Kunstorganisation in Saint Paul, bezahlt von privaten Stiftungen",
+        "ar": "⁦Springboard for the Arts⁩، منظمة فنية غير ربحية في سانت بول، بتمويل من مؤسسات خاصة"
+      },
+      "paid": {
+        "en": "$500 a month with no strings attached to 75 artists in Saint Paul and Otter Tail County from 2023, first for 18 months and then extended to five years ($30,000 each), with 25 more rural artists added in 2025 for 100 in total",
+        "ja": "セントポールとオッターテール郡のアーティスト75人に、2023年から条件なしで月500ドル。当初18か月の予定を5年間（1人3万ドル）に延長し、2025年に農村部のアーティスト25人を加えて計100人に",
+        "zh": "自 2023 年起，向圣保罗和奥特泰尔县的 75 名艺术家无条件每月发放 500 美元，起初为期 18 个月，后延长至五年（每人共 30,000 美元）；2025 年另增 25 名农村艺术家，共 100 人",
+        "hi": "2023 से सेंट पॉल और ऑटर टेल काउंटी के 75 कलाकारों को बिना किसी शर्त हर महीने $500, पहले 18 महीने के लिए और फिर पाँच साल तक बढ़ाया गया (हर एक को $30,000); 2025 में 25 और ग्रामीण कलाकार जोड़े गए, कुल 100",
+        "es": "500 $ al mes sin condiciones para 75 artistas de Saint Paul y del condado de Otter Tail desde 2023, primero durante 18 meses y luego ampliado a cinco años (30.000 $ cada uno), con 25 artistas rurales más añadidos en 2025 hasta un total de 100",
+        "de": "500 $ im Monat ohne Auflagen an 75 Kunstschaffende in Saint Paul und Otter Tail County ab 2023, zunächst für 18 Monate, dann auf fünf Jahre verlängert (je 30.000 $); 2025 kamen 25 weitere Kunstschaffende vom Land hinzu, insgesamt 100",
+        "ar": "⁦$500⁩ شهريًا بلا أي شروط لـ75 فنانًا في سانت بول ومقاطعة أوتر تيل بدءًا من 2023، لمدة 18 شهرًا أولًا ثم مُدّد إلى خمس سنوات (⁦$30,000⁩ لكل منهم)، مع إضافة 25 فنانًا ريفيًا آخرين في 2025 ليصبح المجموع 100"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.theartnewspaper.com/2024/11/29/in-minnesota-a-no-strings-attached-cash-programme-for-artists-is-gaining-momentum",
+      "source2": "https://springboardforthearts.org/press/guaranteed-income-pilot-for-artists-in-axios-twin-cities/",
+      "us": {
+        "city": "Saint Paul and Otter Tail County",
+        "state": "MN",
+        "start": "2023",
+        "end": null,
+        "monthly": 500,
+        "months": 60,
+        "recipients": 100,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Artists in Saint Paul and rural Otter Tail County (75 in the first group, 25 rural artists added in 2025)",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-stlouis-gbi",
+      "years": "2023–2025",
+      "type": "gov",
+      "name": "St. Louis Guaranteed Basic Income Pilot",
+      "place": {
+        "en": "St. Louis, Missouri, USA",
+        "ja": "アメリカ・ミズーリ州セントルイス",
+        "zh": "美国密苏里州圣路易斯",
+        "hi": "सेंट लुइस, मिज़ूरी, अमेरिका",
+        "es": "San Luis, Misuri (EE. UU.)",
+        "de": "St. Louis, Missouri (USA)",
+        "ar": "سانت لويس، ميزوري، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of St. Louis (Treasurer's Office), paid from federal pandemic relief (ARPA) and a $1 million gift from Jack Dorsey; donors finished it after a lawsuit froze public funds",
+        "ja": "セントルイス市（財務官室）。財源は連邦のコロナ対策資金（ARPA）とジャック・ドーシー氏の100万ドルの寄付で、訴訟で公的資金が凍結された後は寄付者が最後まで資金を出した",
+        "zh": "圣路易斯市（财政官办公室），资金来自联邦疫情纾困款（ARPA）和杰克·多尔西捐赠的 100 万美元；一场诉讼冻结公共资金后，由捐助者出资完成",
+        "hi": "सेंट लुइस शहर (Treasurer's Office), पैसा संघीय महामारी राहत (ARPA) और जैक डोर्सी के $10 लाख के दान से; एक मुक़दमे से सरकारी पैसा रुकने के बाद दानदाताओं ने इसे पूरा किया",
+        "es": "Ciudad de San Luis (Oficina del Tesorero), financiado con fondos federales de alivio por la pandemia (ARPA) y una donación de 1 millón de dólares de Jack Dorsey; los donantes lo completaron después de que una demanda congelara los fondos públicos",
+        "de": "Stadt St. Louis (Treasurer's Office), bezahlt aus Corona-Hilfen des Bundes (ARPA) und einer Spende von 1 Mio. $ von Jack Dorsey; Spender finanzierten den Abschluss, nachdem eine Klage die öffentlichen Mittel eingefroren hatte",
+        "ar": "مدينة سانت لويس (مكتب أمين الخزانة)، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) وهبة قدرها مليون دولار من جاك دورسي؛ وأكمله متبرعون بعد أن جمّدت دعوى قضائية الأموال العامة"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 18 months (late 2023–May 2025, paused by a court order in July 2024) to 540 low-income families with school-age children, chosen by lottery from more than 5,000 applicants",
+        "ja": "5,000人超の応募者から抽選で選んだ、学齢期の子どものいる低所得の540家族に、条件なしで月500ドルを18か月（2023年後半〜2025年5月。2024年7月に裁判所命令で一時停止）",
+        "zh": "从 5,000 多名申请者中通过抽签选出 540 个有学龄儿童的低收入家庭，无条件每月发放 500 美元，为期 18 个月（2023 年底至 2025 年 5 月，2024 年 7 月因法院命令暂停）",
+        "hi": "5,000 से ज़्यादा आवेदकों में से लॉटरी से चुने गए, स्कूल जाने वाले बच्चों वाले 540 कम आय वाले परिवारों को 18 महीने (2023 के अंत–मई 2025, जुलाई 2024 में अदालत के आदेश से रुका) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 18 meses (finales de 2023–mayo 2025, suspendido por orden judicial en julio de 2024) para 540 familias de bajos ingresos con hijos en edad escolar, elegidas por sorteo entre más de 5.000 solicitantes",
+        "de": "500 $ im Monat ohne Bedingungen für 18 Monate (Ende 2023 bis Mai 2025, im Juli 2024 durch eine Gerichtsanordnung unterbrochen) an 540 einkommensschwache Familien mit Schulkindern, per Los aus mehr als 5.000 Bewerbungen ausgewählt",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 18 شهرًا (أواخر 2023–مايو 2025، مع توقف بأمر قضائي في يوليو 2024) لـ540 أسرة منخفضة الدخل لديها أطفال في سن الدراسة، اختيرت بالقرعة من بين أكثر من 5,000 متقدم"
+      },
+      "result": {
+        "en": "Washington University's Brown School (December 2025) reported fewer missed rent and utility payments and less food insecurity (family surveys), and credit scores up 12 points on average versus similar St. Louis residents who were not paid (193 consented to credit tracking); not a randomized trial, and the 2024 payment pause coincided with a dip in credit health",
+        "ja": "ワシントン大学ブラウン・スクール（2025年12月）は、家賃や光熱費の滞納と食料不安が減り（家族への調査）、信用スコアが支給を受けていない似たセントルイス住民と比べ平均12ポイント上がった（信用情報の追跡に同意したのは193人）と報告。無作為化試験ではなく、2024年の支給停止の時期には信用状態が一時悪化した",
+        "zh": "华盛顿大学布朗学院（2025 年 12 月）称，与未获发放的类似圣路易斯居民相比，拖欠房租和水电费的情况更少，粮食不安全减少（家庭调查），信用评分平均提高 12 分（193 人同意追踪信用）；并非随机对照试验，且 2024 年发放暂停期间信用状况恰好出现下滑",
+        "hi": "Washington University के Brown School (दिसंबर 2025) के अनुसार किराया और बिजली-पानी के भुगतान कम छूटे और खाने की असुरक्षा कम रही (परिवार सर्वे), और भुगतान न पाने वाले मिलते-जुलते सेंट लुइस निवासियों की तुलना में क्रेडिट स्कोर औसतन 12 अंक बढ़ा (193 ने क्रेडिट ट्रैकिंग की सहमति दी); यह रैंडमाइज़्ड ट्रायल नहीं है, और 2024 में भुगतान रुकने के साथ ही क्रेडिट की सेहत में गिरावट आई",
+        "es": "La Brown School de la Universidad Washington (diciembre de 2025) informó de menos impagos de alquiler y suministros y menos inseguridad alimentaria (encuestas a las familias), y de una puntuación de crédito 12 puntos mayor de media frente a residentes similares de San Luis que no recibieron pagos (193 aceptaron el seguimiento crediticio); no fue un ensayo aleatorizado, y la suspensión de pagos de 2024 coincidió con un bajón en la salud crediticia",
+        "de": "Die Brown School der Washington University (Dezember 2025) berichtete weniger versäumte Miet- und Nebenkostenzahlungen und weniger Ernährungsunsicherheit (Familienbefragungen) sowie im Schnitt um 12 Punkte höhere Kreditwerte gegenüber ähnlichen Einwohnern von St. Louis ohne Zahlungen (193 stimmten der Auswertung ihrer Kreditdaten zu); keine randomisierte Studie, und die Zahlungspause 2024 fiel mit einem Einbruch der Kreditwerte zusammen",
+        "ar": "أفادت ⁦Brown School⁩ بجامعة واشنطن (ديسمبر 2025) بتراجع التأخر في دفع الإيجار وفواتير المرافق وانعدام الأمن الغذائي (استطلاعات الأسر)، وارتفاع درجات الائتمان 12 نقطة في المتوسط مقارنةً بسكان مماثلين في سانت لويس لم يتلقوا دفعات (وافق 193 على تتبع ائتمانهم)؛ ليست تجربة عشوائية، وتزامن توقف الدفعات في 2024 مع تراجع في الوضع الائتماني"
+      },
+      "source": "https://source.washu.edu/2025/12/st-louis-guaranteed-basic-income-pilot-improved-financial-stability-study-finds/",
+      "source2": "https://www.stlpr.org/economy-business/2025-12-08/basic-income-pilot-families-financial-strain-washington-university-lawsuit-tornado-st-louis-missouri",
+      "us": {
+        "city": "St. Louis",
+        "state": "MO",
+        "start": "2023",
+        "end": "2025-05",
+        "monthly": 500,
+        "months": 18,
+        "recipients": 540,
+        "unit": "households",
+        "funders": ["arpa", "philanthropic"],
+        "control": true,
+        "elig": "City residents with a child in St. Louis Public Schools or a public charter school, household income within poverty guidelines, with COVID-19 hardship; chosen by lottery from more than 5,000 applicants",
+        "eval": {
+          "by": "Washington University in St. Louis, Brown School (Center for Social Development and Evaluation Center; lead Stephen Roll)",
+          "year": 2025,
+          "type": "report",
+          "url": "https://source.washu.edu/2025/12/st-louis-guaranteed-basic-income-pilot-improved-financial-stability-study-finds/"
+        }
+      }
+    },
+    {
+      "id": "us-new-haven-reentry",
+      "years": "2023–2024",
+      "type": "ngo",
+      "name": "New Haven guaranteed income pilot for formerly incarcerated people",
+      "place": {
+        "en": "New Haven, Connecticut, USA",
+        "ja": "アメリカ・コネチカット州ニューヘイブン",
+        "zh": "美国康涅狄格州纽黑文",
+        "hi": "न्यू हेवन, कनेक्टिकट, अमेरिका",
+        "es": "New Haven, Connecticut (EE. UU.)",
+        "de": "New Haven, Connecticut (USA)",
+        "ar": "نيو هيفن، كونيتيكت، الولايات المتحدة"
+      },
+      "who": {
+        "en": "The nonprofit 4-CT, with the City of New Haven and the Project M.O.R.E. reentry center",
+        "ja": "非営利団体4-CTが、ニューヘイブン市と社会復帰センターProject M.O.R.E.と実施",
+        "zh": "非营利组织 4-CT，与纽黑文市及 Project M.O.R.E. 重返社会中心合作",
+        "hi": "ग़ैर-लाभकारी संस्था 4-CT, न्यू हेवन शहर और Project M.O.R.E. रीएंट्री सेंटर के साथ",
+        "es": "La organización sin ánimo de lucro 4-CT, con la Ciudad de New Haven y el centro de reinserción Project M.O.R.E.",
+        "de": "Die gemeinnützige Organisation 4-CT mit der Stadt New Haven und dem Wiedereingliederungszentrum Project M.O.R.E.",
+        "ar": "المنظمة غير الربحية ⁦4-CT⁩، مع مدينة نيو هيفن ومركز إعادة الإدماج ⁦Project M.O.R.E.⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions on a prepaid card for a year to 20 people aged 25–55 recently released from prison, with reentry support",
+        "ja": "最近出所した25〜55歳の20人に、社会復帰支援とあわせて、条件なしで月500ドルをプリペイドカードで1年間",
+        "zh": "通过预付卡，向 20 名刚出狱的 25 至 55 岁人士无条件每月发放 500 美元，为期一年，并提供重返社会支持",
+        "hi": "हाल ही में जेल से रिहा हुए 25–55 साल के 20 लोगों को एक साल तक प्रीपेड कार्ड पर बिना शर्त हर महीने $500, साथ में समाज में वापसी (रीएंट्री) की मदद",
+        "es": "500 $ al mes sin condiciones en una tarjeta prepago durante un año para 20 personas de 25 a 55 años recién salidas de prisión, con apoyo a la reinserción",
+        "de": "500 $ im Monat ohne Bedingungen auf einer Prepaid-Karte für ein Jahr an 20 kürzlich aus der Haft entlassene Menschen von 25 bis 55 Jahren, mit Unterstützung bei der Wiedereingliederung",
+        "ar": "⁦$500⁩ شهريًا بلا شروط على بطاقة مسبقة الدفع لمدة عام لـ20 شخصًا تتراوح أعمارهم بين 25 و55 عامًا أُفرج عنهم حديثًا من السجن، مع دعم لإعادة الإدماج"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://ctpublic.org/2023-03-28/20-formerly-incarcerated-individuals-will-receive-guaranteed-income-for-a-year-in-new-haven",
+      "us": {
+        "city": "New Haven",
+        "state": "CT",
+        "start": "2023",
+        "end": "2024",
+        "endEstimated": true,
+        "monthly": 500,
+        "months": 12,
+        "recipients": 20,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "New Haven residents aged 25–55 released from prison within the past year",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-sf-gift",
+      "years": "2023–2024",
+      "type": "gov",
+      "name": "Guaranteed Income for Trans People (GIFT)",
+      "place": {
+        "en": "San Francisco, California, USA",
+        "ja": "アメリカ・カリフォルニア州サンフランシスコ",
+        "zh": "美国加利福尼亚州旧金山",
+        "hi": "सैन फ़्रांसिस्को, कैलिफ़ोर्निया, अमेरिका",
+        "es": "San Francisco, California (EE. UU.)",
+        "de": "San Francisco, Kalifornien (USA)",
+        "ar": "سان فرانسيسكو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of San Francisco, run with Lyon-Martin Community Health Services (a clinic for trans, nonbinary and intersex people) and the Transgender District",
+        "ja": "サンフランシスコ市。トランスジェンダー、ノンバイナリー、インターセックスの人のための診療所Lyon-Martin Community Health Servicesと、Transgender Districtが運営",
+        "zh": "旧金山市，与 Lyon-Martin 社区健康服务中心（面向跨性别、非二元和间性人的诊所）及跨性别街区（Transgender District）合作运营",
+        "hi": "सैन फ़्रांसिस्को शहर, Lyon-Martin Community Health Services (ट्रांस, नॉनबाइनरी और इंटरसेक्स लोगों का क्लिनिक) और Transgender District के साथ",
+        "es": "Ciudad de San Francisco, gestionado con Lyon-Martin Community Health Services (una clínica para personas trans, no binarias e intersexuales) y el Transgender District",
+        "de": "Stadt San Francisco, durchgeführt mit Lyon-Martin Community Health Services (einer Klinik für trans, nichtbinäre und intergeschlechtliche Menschen) und dem Transgender District",
+        "ar": "مدينة سان فرانسيسكو، بالتعاون مع ⁦Lyon-Martin Community Health Services⁩ (عيادة للعابرين جنسيًا وغير الثنائيين وثنائيي الجنس) و⁦Transgender District⁩"
+      },
+      "paid": {
+        "en": "Up to $1,200 a month with no conditions for up to 18 months (January 2023–June 2024) to 55 low-income transgender residents, with optional gender-affirming health care, case management and financial coaching",
+        "ja": "低所得のトランスジェンダーの住民55人に、条件なしで月最大1,200ドルを最長18か月（2023年1月〜2024年6月）。希望者にはジェンダー適合医療、ケースマネジメント、家計相談も提供",
+        "zh": "向 55 名低收入跨性别居民无条件每月最多发放 1,200 美元，最长 18 个月（2023 年 1 月至 2024 年 6 月），并可自愿选择性别肯定医疗、个案管理和理财辅导",
+        "hi": "55 कम आय वाले ट्रांसजेंडर निवासियों को अधिकतम 18 महीने (जनवरी 2023–जून 2024) तक बिना शर्त हर महीने अधिकतम $1,200, साथ में वैकल्पिक जेंडर-अफ़र्मिंग स्वास्थ्य सेवा, केस मैनेजमेंट और वित्तीय कोचिंग",
+        "es": "Hasta 1.200 $ al mes sin condiciones durante un máximo de 18 meses (enero 2023–junio 2024) para 55 residentes transgénero de bajos ingresos, con atención sanitaria de afirmación de género, gestión de casos y asesoría financiera opcionales",
+        "de": "Bis zu 1.200 $ im Monat ohne Bedingungen für bis zu 18 Monate (Januar 2023 bis Juni 2024) an 55 einkommensschwache trans Einwohner, mit freiwilliger geschlechtsangleichender Gesundheitsversorgung, Fallbegleitung und Finanzcoaching",
+        "ar": "حتى ⁦$1,200⁩ شهريًا بلا شروط لمدة تصل إلى 18 شهرًا (يناير 2023–يونيو 2024) لـ55 من السكان العابرين جنسيًا منخفضي الدخل، مع رعاية صحية اختيارية مؤكِّدة للنوع الاجتماعي وإدارة حالة وإرشاد مالي"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.kqed.org/news/11934949/gift-el-programa-de-san-francisco-que-otorgara-1200-al-mes-a-personas-transgenero",
+      "source2": "https://ktvu.com/news/sf-launches-guaranteed-income-program-for-transgender-community",
+      "us": {
+        "city": "San Francisco",
+        "state": "CA",
+        "start": "2023-01",
+        "end": "2024-06",
+        "monthly": 1200,
+        "months": 18,
+        "recipients": 55,
+        "unit": "people",
+        "funders": ["public"],
+        "control": false,
+        "elig": "Transgender San Francisco residents 18+ with monthly income no higher than $600; random selection within priority categories (aim of at least 60% Black trans people; priority for monolingual Spanish speakers and undocumented people); no Social Security number needed",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-alameda-county-net-growth",
+      "years": "2023–2024",
+      "type": "gov",
+      "name": "NET (Nourish, Empower, Trust) Growth Movement",
+      "place": {
+        "en": "Alameda County, California, USA",
+        "ja": "アメリカ・カリフォルニア州アラメダ郡",
+        "zh": "美国加利福尼亚州阿拉米达县",
+        "hi": "अलामेडा काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Alameda, California (EE. UU.)",
+        "de": "Alameda County, Kalifornien (USA)",
+        "ar": "مقاطعة ألاميدا، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Alameda County Social Services Agency, paid from county funds; designed by young people with experience of foster care",
+        "ja": "アラメダ郡社会福祉局。財源は郡の資金で、里親養育を経験した若者が設計",
+        "zh": "阿拉米达县社会服务局，资金来自县财政；由有寄养经历的年轻人参与设计",
+        "hi": "Alameda County Social Services Agency, पैसा काउंटी कोष से; इसे फ़ॉस्टर केयर का अनुभव रखने वाले युवाओं ने डिज़ाइन किया",
+        "es": "Agencia de Servicios Sociales del condado de Alameda, con fondos del condado; diseñado por jóvenes con experiencia en el sistema de acogida",
+        "de": "Sozialbehörde von Alameda County (Social Services Agency), aus Mitteln des Countys bezahlt; gestaltet von jungen Menschen mit Erfahrung in der Pflegeunterbringung",
+        "ar": "وكالة الخدمات الاجتماعية في مقاطعة ألاميدا، بتمويل من أموال المقاطعة؛ وصمّمه شباب لديهم تجربة في الرعاية البديلة"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 24 months (January 2023–December 2024) to 67 young people who had aged out of extended foster care, with optional case management and savings matches",
+        "ja": "延長里親養育の年齢を超えた若者67人に、条件なしで月1,000ドルを24か月（2023年1月〜2024年12月）。希望者にはケースマネジメントと貯蓄の上乗せも提供",
+        "zh": "向 67 名已超出延长寄养年龄的年轻人无条件每月发放 1,000 美元，为期 24 个月（2023 年 1 月至 2024 年 12 月），并可自愿选择个案管理和储蓄配捐",
+        "hi": "विस्तारित फ़ॉस्टर केयर से उम्र के कारण बाहर हुए 67 युवाओं को 24 महीने (जनवरी 2023–दिसंबर 2024) तक बिना शर्त हर महीने $1,000, साथ में वैकल्पिक केस मैनेजमेंट और बचत पर मैचिंग राशि",
+        "es": "1.000 $ al mes sin condiciones durante 24 meses (enero 2023–diciembre 2024) para 67 jóvenes que habían salido de la acogida extendida, con gestión de casos y ahorro con aportación equivalente opcionales",
+        "de": "1.000 $ im Monat ohne Bedingungen für 24 Monate (Januar 2023 bis Dezember 2024) an 67 junge Menschen, die aus der verlängerten Pflegeunterbringung herausgewachsen waren, mit freiwilliger Fallbegleitung und Sparzuschüssen",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 24 شهرًا (يناير 2023–ديسمبر 2024) لـ67 شابًا تجاوزوا سن الرعاية البديلة الممتدة، مع إدارة حالة اختيارية ومطابقة للمدخرات"
+      },
+      "result": {
+        "en": "Chapin Hall (January 2026, formative evaluation, self-reported; 26 and 23 survey respondents) reported that 73% were food insecure before the pilot, 27% while being paid and 44% in the six months after it ended. Economic hardships were also more common after payments stopped. No control group",
+        "ja": "Chapin Hall（2026年1月、形成的評価、自己申告。調査回答者26人と23人）は、食料不安だった人がパイロット前は73%、支給中は27%、終了後6か月間は44%だったと報告。支給終了後は経済的困難も増えた。対照群はない",
+        "zh": "Chapin Hall（2026 年 1 月，形成性评估，自我报告；调查回答者分别为 26 人和 23 人）称，试点前 73% 的人面临粮食不安全，发放期间为 27%，结束后六个月内为 44%。发放停止后经济困难也更常见。没有对照组",
+        "hi": "Chapin Hall (जनवरी 2026, प्रारंभिक मूल्यांकन, स्व-रिपोर्टेड; सर्वे में 26 और 23 उत्तरदाता) के अनुसार पायलट से पहले 73% को खाने की असुरक्षा थी, भुगतान के दौरान 27% को और ख़त्म होने के छह महीने बाद 44% को। भुगतान रुकने के बाद आर्थिक तंगी भी ज़्यादा आम हुई। कोई नियंत्रण समूह नहीं",
+        "es": "Chapin Hall (enero de 2026; evaluación formativa, autodeclarada; 26 y 23 encuestados) informó de que el 73 % sufría inseguridad alimentaria antes del piloto, el 27 % mientras recibía los pagos y el 44 % en los seis meses posteriores a su fin. Las dificultades económicas también fueron más frecuentes al terminar los pagos. Sin grupo de control",
+        "de": "Chapin Hall (Januar 2026, formative Evaluation, Selbstauskünfte; 26 bzw. 23 Befragte) berichtete, dass 73 % vor dem Pilotprojekt von Ernährungsunsicherheit betroffen waren, 27 % während der Zahlungen und 44 % in den sechs Monaten nach deren Ende. Auch wirtschaftliche Notlagen waren nach dem Ende der Zahlungen häufiger. Keine Kontrollgruppe",
+        "ar": "أفادت ⁦Chapin Hall⁩ (يناير 2026، تقييم تكويني، بيانات ذاتية الإبلاغ؛ 26 و23 مستجيبًا للاستطلاع) بأن 73% كانوا يعانون انعدام الأمن الغذائي قبل التجربة، و27% أثناء تلقي الدفعات، و44% في الأشهر الستة التي تلت انتهاءها. وكانت الضائقة الاقتصادية أيضًا أكثر شيوعًا بعد توقف الدفعات. ولا توجد مجموعة ضابطة"
+      },
+      "source": "https://www.chapinhall.org/wp-content/uploads/Chapin-Hall_Alameda-Guaranteed-Income-Evaluation-Brief_Jan2026.pdf",
+      "us": {
+        "city": "Alameda County",
+        "state": "CA",
+        "start": "2023-01",
+        "end": "2024-12",
+        "monthly": 1000,
+        "months": 24,
+        "recipients": 67,
+        "unit": "people",
+        "funders": ["public"],
+        "control": false,
+        "elig": "Young people who aged out of extended foster care supervised by Alameda County (67 of 90 eligible enrolled)",
+        "eval": {
+          "by": "Chapin Hall at the University of Chicago (Amy Dworsky and Molly Van Drunen)",
+          "year": 2026,
+          "type": "report",
+          "url": "https://www.chapinhall.org/wp-content/uploads/Chapin-Hall_Alameda-Guaranteed-Income-Evaluation-Brief_Jan2026.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-sonoma-pie",
+      "years": "2023–2025",
+      "type": "gov",
+      "name": "Pathway to Income Equity",
+      "place": {
+        "en": "Sonoma County, California, USA",
+        "ja": "アメリカ・カリフォルニア州ソノマ郡",
+        "zh": "美国加利福尼亚州索诺马县",
+        "hi": "सोनोमा काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Sonoma, California (EE. UU.)",
+        "de": "Sonoma County, Kalifornien (USA)",
+        "ar": "مقاطعة سونوما، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "First 5 Sonoma County, a public early-childhood agency, with Sonoma County and several cities, mostly paid from federal pandemic relief (ARPA)",
+        "ja": "公的な幼児期支援機関First 5 Sonoma Countyが、ソノマ郡や複数の市と実施。主な財源は連邦のコロナ対策資金（ARPA）",
+        "zh": "公共幼儿机构索诺马县 First 5，与索诺马县及多个城市合作，资金主要来自联邦疫情纾困款（ARPA）",
+        "hi": "First 5 Sonoma County, शुरुआती बचपन की एक सरकारी एजेंसी, सोनोमा काउंटी और कई शहरों के साथ; ज़्यादातर पैसा संघीय महामारी राहत (ARPA) से",
+        "es": "First 5 Sonoma County, una agencia pública de primera infancia, con el condado de Sonoma y varias ciudades, financiado sobre todo con fondos federales de alivio por la pandemia (ARPA)",
+        "de": "First 5 Sonoma County, eine öffentliche Stelle für frühe Kindheit, mit Sonoma County und mehreren Städten, überwiegend aus Corona-Hilfen des Bundes (ARPA) bezahlt",
+        "ar": "⁦First⁩ 5 ⁦Sonoma County⁩، هيئة عامة للطفولة المبكرة، مع مقاطعة سونوما وعدة مدن، بتمويل معظمه من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for two years, from February 2023, to 305 low-income Sonoma County families with a baby on the way or a child under 6, chosen at random from 2,383 eligible families",
+        "ja": "出産を控えているか6歳未満の子どもがいるソノマ郡の低所得305家族に、2023年2月から条件なしで月500ドルを2年間。対象となる2,383家族から無作為に選んだ",
+        "zh": "自 2023 年 2 月起，从 2,383 个符合条件的家庭中随机选出 305 个即将生育或有 6 岁以下孩子的索诺马县低收入家庭，无条件每月发放 500 美元，为期两年",
+        "hi": "2,383 पात्र परिवारों में से रैंडम रूप से चुने गए, आने वाले बच्चे या 6 साल से छोटे बच्चे वाले 305 कम आय वाले सोनोमा काउंटी परिवारों को फ़रवरी 2023 से दो साल तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante dos años, desde febrero de 2023, para 305 familias de bajos ingresos del condado de Sonoma esperando un bebé o con un hijo menor de 6 años, elegidas al azar entre 2.383 familias elegibles",
+        "de": "500 $ im Monat ohne Bedingungen für zwei Jahre, ab Februar 2023, an 305 einkommensschwache Familien in Sonoma County, die ein Kind erwarteten oder ein Kind unter 6 hatten, zufällig aus 2.383 berechtigten Familien ausgewählt",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عامين، بدءًا من فبراير 2023، لـ305 أسر منخفضة الدخل في مقاطعة سونوما تنتظر مولودًا أو لديها طفل دون السادسة، اختيرت عشوائيًا من بين 2,383 أسرة مؤهلة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.cbsnews.com/amp/sanfrancisco/news/sonoma-county-launches-guaranteed-income-pilot-program-for-low-income-families/",
+      "source2": "https://www.sonomanews.com/2022/09/05/pilot-program-for-guaranteed-income-begins-in-sonoma-county",
+      "us": {
+        "city": "Sonoma County",
+        "state": "CA",
+        "start": "2023-02",
+        "end": "2025",
+        "endEstimated": true,
+        "monthly": 500,
+        "months": 24,
+        "recipients": 305,
+        "unit": "households",
+        "funders": ["arpa", "public"],
+        "control": false,
+        "elig": "Sonoma County residents pregnant and/or parenting a child under 6, household income up to 185% of the federal poverty level ($51,338 for a family of four), with COVID-19 economic losses; picked at random from 2,383 eligible families out of 6,450 applications",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-alexandria-arise",
+      "years": "2023–2025",
+      "type": "gov",
+      "name": "ARISE (Alexandria Recurring Income for Success and Equity)",
+      "place": {
+        "en": "Alexandria, Virginia, USA",
+        "ja": "アメリカ・バージニア州アレクサンドリア",
+        "zh": "美国弗吉尼亚州亚历山德里亚",
+        "hi": "अलेक्ज़ेंड्रिया, वर्जीनिया, अमेरिका",
+        "es": "Alexandria, Virginia (EE. UU.)",
+        "de": "Alexandria, Virginia (USA)",
+        "ar": "ألكساندريا، فيرجينيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Alexandria (Department of Community and Human Services), paid from federal pandemic relief (ARPA) and then city money, with a randomized evaluation by Abt Global",
+        "ja": "アレクサンドリア市（地域福祉局）。財源は連邦のコロナ対策資金（ARPA）、その後は市の資金で、Abt Globalが無作為化評価",
+        "zh": "亚历山德里亚市（社区与公共服务局），资金先来自联邦疫情纾困款（ARPA），后来自市财政，由 Abt Global 开展随机评估",
+        "hi": "अलेक्ज़ेंड्रिया शहर (Department of Community and Human Services), पैसा संघीय महामारी राहत (ARPA) और फिर शहर से; रैंडमाइज़्ड मूल्यांकन Abt Global ने किया",
+        "es": "Ciudad de Alexandria (Departamento de Servicios Comunitarios y Humanos), financiado con fondos federales de alivio por la pandemia (ARPA) y después dinero municipal, con una evaluación aleatorizada de Abt Global",
+        "de": "Stadt Alexandria (Department of Community and Human Services), bezahlt aus Corona-Hilfen des Bundes (ARPA) und dann aus städtischen Mitteln, mit einer randomisierten Evaluation von Abt Global",
+        "ar": "مدينة ألكساندريا (إدارة الخدمات المجتمعية والإنسانية)، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) ثم أموال المدينة، مع تقييم عشوائي من ⁦Abt Global⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 29 months (February 2023–June 2025, extended from 24) to 170 low-income residents chosen at random from 4,149 eligible applicants",
+        "ja": "対象となる応募者4,149人から無作為に選んだ低所得住民170人に、条件なしで月500ドルを29か月（2023年2月〜2025年6月。24か月から延長）",
+        "zh": "从 4,149 名符合条件的申请者中随机选出 170 名低收入居民，无条件每月发放 500 美元，为期 29 个月（2023 年 2 月至 2025 年 6 月，由 24 个月延长）",
+        "hi": "4,149 पात्र आवेदकों में से रैंडम रूप से चुने गए 170 कम आय वाले निवासियों को 29 महीने (फ़रवरी 2023–जून 2025, 24 से बढ़ाकर) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 29 meses (febrero 2023–junio 2025, ampliado desde 24) para 170 residentes de bajos ingresos elegidos al azar entre 4.149 solicitantes elegibles",
+        "de": "500 $ im Monat ohne Bedingungen für 29 Monate (Februar 2023 bis Juni 2025, von 24 verlängert) an 170 einkommensschwache Einwohner, zufällig aus 4.149 berechtigten Bewerbungen ausgewählt",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 29 شهرًا (فبراير 2023–يونيو 2025، بعد تمديده من 24) لـ170 من السكان منخفضي الدخل اختيروا عشوائيًا من بين 4,149 متقدمًا مؤهلًا"
+      },
+      "result": {
+        "en": "Abt Global's final report (April 2026), compared with 210 controls: a statistically significant drop in homelessness by month 24, a significantly larger share able to cover costs and less use of payday loans, but no measurable gain in food security; changes in stress measures were modest",
+        "ja": "Abt Globalの最終報告（2026年4月）は対照群210人と比べ、24か月目までにホームレス状態が統計的に有意に減り、費用を払える人の割合が有意に大きく、ペイデイローンの利用も減ったが、食料の確保に測定できる改善はなく、ストレス指標の変化は小さかったとした",
+        "zh": "Abt Global 的最终报告（2026 年 4 月）与 210 名对照组成员比较：到第 24 个月，无家可归在统计上显著减少，能负担开支的比例显著更高，发薪日贷款使用更少，但粮食保障没有可衡量的改善；压力指标的变化不大",
+        "hi": "Abt Global की अंतिम रिपोर्ट (अप्रैल 2026) ने 210 नियंत्रण वालों से तुलना की: 24वें महीने तक बेघरी में सांख्यिकीय रूप से महत्वपूर्ण गिरावट, ख़र्च उठा पाने वालों का काफ़ी बड़ा हिस्सा और पेडे लोन का कम इस्तेमाल, पर खाद्य सुरक्षा में कोई मापने लायक सुधार नहीं; तनाव के मापों में बदलाव मामूली रहे",
+        "es": "El informe final de Abt Global (abril de 2026), frente a 210 controles: una caída estadísticamente significativa del sinhogarismo hacia el mes 24, una proporción significativamente mayor capaz de cubrir sus gastos y menos uso de préstamos de día de pago, pero ninguna mejora medible en seguridad alimentaria; los cambios en las medidas de estrés fueron modestos",
+        "de": "Der Abschlussbericht von Abt Global (April 2026) im Vergleich mit 210 Personen der Kontrollgruppe: ein statistisch signifikanter Rückgang der Obdachlosigkeit bis Monat 24, ein deutlich größerer Anteil, der seine Kosten decken konnte, und weniger Nutzung von Zahltagkrediten, aber kein messbarer Gewinn bei der Ernährungssicherheit; die Veränderungen bei Stressmaßen waren gering",
+        "ar": "التقرير النهائي لـ⁦Abt Global⁩ (أبريل 2026)، مقارنةً بـ210 في المجموعة الضابطة: انخفاض دال إحصائيًا في التشرد بحلول الشهر 24، ونسبة أكبر بدلالة إحصائية قادرة على تغطية التكاليف، واستخدام أقل لقروض يوم الدفع، لكن دون مكسب ملموس في الأمن الغذائي؛ وكانت التغيّرات في مقاييس التوتر متواضعة"
+      },
+      "source": "https://alexandriava.gov/sites/default/files/2026-06/ARISEAlexandriaFinalReportCompressed.pdf",
+      "source2": "https://www.alexandriava.gov/go/6437",
+      "us": {
+        "city": "Alexandria",
+        "state": "VA",
+        "start": "2023-02",
+        "end": "2025-06",
+        "monthly": 500,
+        "months": 29,
+        "recipients": 170,
+        "unit": "people",
+        "funders": ["arpa", "public"],
+        "control": true,
+        "elig": "Alexandria residents 18+ with income at or below 50% of area median income (about $64,050 for a family of three), chosen at random from 4,149 eligible applicants; 210 others formed a control group",
+        "eval": {
+          "by": "Abt Global (Hannah Thomas, Meryl Finkel, AshLee Smith Playfair and others)",
+          "year": 2026,
+          "type": "report",
+          "url": "https://alexandriava.gov/sites/default/files/2026-06/ARISEAlexandriaFinalReportCompressed.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-sandiego-fiep",
+      "years": "2023–",
+      "type": "gov",
+      "name": "Family Income for Empowerment Program (FIEP)",
+      "place": {
+        "en": "San Diego County, California, USA",
+        "ja": "アメリカ・カリフォルニア州サンディエゴ郡",
+        "zh": "美国加利福尼亚州圣迭戈县",
+        "hi": "सैन डिएगो काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de San Diego, California (EE. UU.)",
+        "de": "San Diego County, Kalifornien (USA)",
+        "ar": "مقاطعة سان دييغو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "County of San Diego (Child and Family Well-Being Department), paid from federal pandemic relief and run by Jewish Family Service of San Diego",
+        "ja": "サンディエゴ郡（子ども・家族福祉局）。財源は連邦のコロナ対策資金で、運営はJewish Family Service of San Diego",
+        "zh": "圣迭戈县（儿童与家庭福祉局），资金来自联邦疫情纾困款，由圣迭戈犹太家庭服务中心运营",
+        "hi": "सैन डिएगो काउंटी (Child and Family Well-Being Department), पैसा संघीय महामारी राहत से; इसे Jewish Family Service of San Diego ने चलाया",
+        "es": "Condado de San Diego (Departamento de Bienestar Infantil y Familiar), financiado con fondos federales de alivio por la pandemia y gestionado por Jewish Family Service of San Diego",
+        "de": "County of San Diego (Child and Family Well-Being Department), bezahlt aus Corona-Hilfen des Bundes und durchgeführt von Jewish Family Service of San Diego",
+        "ar": "مقاطعة سان دييغو (إدارة رفاه الطفل والأسرة)، بتمويل من أموال الإغاثة الفدرالية من الجائحة، وتديره ⁦Jewish Family Service of San Diego⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 24 months, from March 2023, to 408 low-income families referred by the county child welfare department (up to 452 planned), aiming to keep children out of foster care",
+        "ja": "郡の児童福祉部門から紹介された低所得の408家族（最大452家族を予定）に、2023年3月から条件なしで月500ドルを24か月。子どもが里親養育に入るのを防ぐのが狙い",
+        "zh": "自 2023 年 3 月起，向县儿童福利部门转介的 408 个低收入家庭（计划最多 452 个）无条件每月发放 500 美元，为期 24 个月，旨在避免孩子进入寄养系统",
+        "hi": "काउंटी के बाल कल्याण विभाग द्वारा भेजे गए 408 कम आय वाले परिवारों (452 तक की योजना) को मार्च 2023 से 24 महीने तक बिना शर्त हर महीने $500, ताकि बच्चे फ़ॉस्टर केयर में न जाएँ",
+        "es": "500 $ al mes sin condiciones durante 24 meses, desde marzo de 2023, para 408 familias de bajos ingresos derivadas por el departamento de protección infantil del condado (hasta 452 previstas), con el objetivo de evitar que los niños entren en acogida",
+        "de": "500 $ im Monat ohne Bedingungen für 24 Monate, ab März 2023, an 408 einkommensschwache Familien, die das Jugendamt des Countys vermittelte (bis zu 452 geplant), mit dem Ziel, Kinder vor einer Unterbringung in Pflegefamilien zu bewahren",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 24 شهرًا، بدءًا من مارس 2023، لـ408 أسر منخفضة الدخل أحالتها إدارة رعاية الطفل في المقاطعة (والمخطط حتى 452)، بهدف إبقاء الأطفال خارج الرعاية البديلة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.jfssd.org/programsreport",
+      "source2": "https://jfssd.org/our-services/economic-mobility/family-income-for-empowerment-program",
+      "us": {
+        "city": "San Diego County",
+        "state": "CA",
+        "start": "2023-03",
+        "end": null,
+        "monthly": 500,
+        "months": 24,
+        "recipients": 408,
+        "unit": "households",
+        "funders": ["public"],
+        "control": true,
+        "elig": "San Diego County families with a child under 18, income at or below 200% of the federal poverty line, referred by the county Child and Family Well-Being Department; random lottery prioritising 39 health-equity ZIP codes and unhoused families",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-chicago-future-fund",
+      "years": "2023–2024",
+      "type": "ngo",
+      "name": "Chicago Future Fund",
+      "place": {
+        "en": "Chicago, Illinois, USA",
+        "ja": "アメリカ・イリノイ州シカゴ",
+        "zh": "美国伊利诺伊州芝加哥",
+        "hi": "शिकागो, इलिनॉय, अमेरिका",
+        "es": "Chicago, Illinois (EE. UU.)",
+        "de": "Chicago, Illinois (USA)",
+        "ar": "شيكاغو، إلينوي، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Equity and Transformation (EAT) Chicago, a nonprofit run by and for people affected by incarceration, with foundation support including the Robert Wood Johnson Foundation",
+        "ja": "収監の影響を受けた人が運営し、その人たちのために活動する非営利団体Equity and Transformation（EAT）Chicago。ロバート・ウッド・ジョンソン財団などの財団が支援",
+        "zh": "Equity and Transformation（EAT）Chicago，由受监禁影响者运营并服务于他们的非营利组织，获罗伯特·伍德·约翰逊基金会等基金会支持",
+        "hi": "Equity and Transformation (EAT) Chicago, जेल से प्रभावित लोगों द्वारा और उन्हीं के लिए चलाई जाने वाली ग़ैर-लाभकारी संस्था, Robert Wood Johnson Foundation सहित फ़ाउंडेशनों की मदद से",
+        "es": "Equity and Transformation (EAT) Chicago, una organización sin ánimo de lucro dirigida por y para personas afectadas por el encarcelamiento, con apoyo de fundaciones, entre ellas la Robert Wood Johnson Foundation",
+        "de": "Equity and Transformation (EAT) Chicago, eine gemeinnützige Organisation von und für Menschen, die von Inhaftierung betroffen sind, mit Unterstützung von Stiftungen, darunter die Robert Wood Johnson Foundation",
+        "ar": "⁦Equity and Transformation⁩ (⁦EAT⁩) ⁦Chicago⁩، منظمة غير ربحية يديرها متضررون من السجن ومن أجلهم، بدعم من مؤسسات منها ⁦Robert Wood Johnson Foundation⁩"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months (March 2023–February 2024) to 100 formerly incarcerated people in three West and South Side neighborhoods (the fund's second round)",
+        "ja": "西部と南部の3地区に住む元受刑者100人に、条件なしで月500ドルを12か月（2023年3月〜2024年2月。基金の第2弾）",
+        "zh": "向芝加哥西区和南区三个街区的 100 名曾被监禁者无条件每月发放 500 美元，为期 12 个月（2023 年 3 月至 2024 年 2 月）（该基金第二轮）",
+        "hi": "वेस्ट और साउथ साइड के तीन इलाकों के 100 पूर्व क़ैदियों को 12 महीने (मार्च 2023–फ़रवरी 2024) तक बिना शर्त हर महीने $500 (फ़ंड का दूसरा दौर)",
+        "es": "500 $ al mes sin condiciones durante 12 meses (marzo 2023–febrero 2024) para 100 personas que habían estado encarceladas en tres barrios del West Side y el South Side (segunda ronda del fondo)",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate (März 2023 bis Februar 2024) an 100 ehemals inhaftierte Menschen in drei Vierteln der West und South Side (die zweite Runde des Fonds)",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا (مارس 2023–فبراير 2024) لـ100 من السجناء السابقين في ثلاثة أحياء في الجانبين الغربي والجنوبي من المدينة (الجولة الثانية للصندوق)"
+      },
+      "result": {
+        "en": "An evaluation for EAT (report by Ashley Baber, published February 2025; 100 surveyed, 20 interviewed) reported late bill payments down 15 percentage points and homelessness in the prior month down 9 points from the start of the program, with 3 of 100 reporting recidivism; self-reported, with no control group",
+        "ja": "EATのための評価（アシュリー・ベイバーによる報告、2025年2月公表。調査100人、聞き取り20人）は、開始時と比べ、請求の支払い遅れが15ポイント、前月のホームレス経験が9ポイント減り、100人中3人が再犯を報告したとした。自己申告で、対照群はない",
+        "zh": "为 EAT 所做的评估（阿什莉·贝伯撰写的报告，2025 年 2 月发布；调查 100 人，访谈 20 人）称，与项目开始时相比，逾期缴费减少 15 个百分点，前一个月无家可归的比例下降 9 个百分点，100 人中有 3 人报告再犯；均为自我报告，没有对照组",
+        "hi": "EAT के लिए किए गए मूल्यांकन (Ashley Baber की रिपोर्ट, फ़रवरी 2025 में प्रकाशित; 100 का सर्वे, 20 के इंटरव्यू) के अनुसार कार्यक्रम की शुरुआत की तुलना में बिलों का देर से भुगतान 15 प्रतिशत अंक और पिछले महीने में बेघरी 9 अंक घटी, और 100 में से 3 ने दोबारा अपराध (recidivism) बताया; स्व-रिपोर्टेड, कोई नियंत्रण समूह नहीं",
+        "es": "Una evaluación para EAT (informe de Ashley Baber, publicado en febrero de 2025; 100 encuestados, 20 entrevistados) informó de que los pagos atrasados de facturas bajaron 15 puntos porcentuales y la situación de sin hogar en el mes anterior bajó 9 puntos respecto al inicio del programa, y 3 de cada 100 declararon reincidencia; datos autodeclarados, sin grupo de control",
+        "de": "Eine Evaluation für EAT (Bericht von Ashley Baber, veröffentlicht im Februar 2025; 100 Befragte, 20 Interviews) berichtete gegenüber dem Programmbeginn um 15 Prozentpunkte weniger verspätete Rechnungszahlungen und um 9 Punkte weniger Obdachlosigkeit im jeweiligen Vormonat; 3 von 100 gaben einen Rückfall an; Selbstauskünfte, ohne Kontrollgruppe",
+        "ar": "أفاد تقييم أُعدّ لصالح ⁦EAT⁩ (تقرير أشلي بيبر، نُشر في فبراير 2025؛ استُطلع 100 وقوبل 20) بانخفاض التأخر في سداد الفواتير 15 نقطة مئوية وانخفاض التشرد في الشهر السابق 9 نقاط مقارنةً ببداية البرنامج، مع إبلاغ 3 من كل 100 عن العودة إلى الإجرام؛ بيانات ذاتية الإبلاغ ودون مجموعة ضابطة"
+      },
+      "source": "https://www.rwjf.org/en/insights/our-research/2024/01/the-chicago-future-fund-building-economies-of-belonging.html",
+      "source2": "https://citizennewspapergroup.com/news/2025/feb/19/eat-chicago-releases-new-report-on-guaranteed-income/",
+      "us": {
+        "city": "Chicago",
+        "state": "IL",
+        "start": "2023-03",
+        "end": "2024-02",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 100,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Formerly incarcerated people in the Austin, West Garfield Park and Englewood neighborhoods (round two)",
+        "eval": {
+          "by": "Equity and Transformation (report by Ashley Baber), with Robert Wood Johnson Foundation support",
+          "year": 2025,
+          "type": "report",
+          "url": "https://www.eatchicago.org/files/reports/cffround2evaluation.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-oregon-dct-plus",
+      "years": "2023–2025",
+      "type": "gov",
+      "name": "Direct Cash Transfer Plus (DCT+)",
+      "place": {
+        "en": "Oregon, USA (Multnomah, Clackamas and Deschutes counties)",
+        "ja": "アメリカ・オレゴン州（マルトノマ郡、クラカマス郡、デシューツ郡）",
+        "zh": "美国俄勒冈州（马尔特诺马县、克拉卡默斯县和德舒特县）",
+        "hi": "ओरेगन, अमेरिका (मल्टनोमा, क्लैकमस और डेस्च्यूट्स काउंटी)",
+        "es": "Oregón (EE. UU.) (condados de Multnomah, Clackamas y Deschutes)",
+        "de": "Oregon (USA; Countys Multnomah, Clackamas und Deschutes)",
+        "ar": "أوريغون، الولايات المتحدة (مقاطعات مولتنوما وكلاكاماس وديشوتس)"
+      },
+      "who": {
+        "en": "The Oregon Department of Human Services' Youth Experiencing Homelessness Program, paid from the state budget, with the nonprofit Point Source Youth and three local youth groups",
+        "ja": "オレゴン州福祉局の若者ホームレス支援プログラム。財源は州の予算で、非営利団体Point Source Youthと3つの地元の若者団体と実施",
+        "zh": "俄勒冈州公共服务部的无家可归青年项目，资金来自州预算，与非营利组织 Point Source Youth 及三个当地青年团体合作",
+        "hi": "Oregon Department of Human Services का Youth Experiencing Homelessness Program, पैसा राज्य बजट से, ग़ैर-लाभकारी Point Source Youth और तीन स्थानीय युवा समूहों के साथ",
+        "es": "El Youth Experiencing Homelessness Program del Departamento de Servicios Humanos de Oregón, financiado con el presupuesto estatal, con la organización sin ánimo de lucro Point Source Youth y tres grupos juveniles locales",
+        "de": "Youth Experiencing Homelessness Program der Sozialbehörde von Oregon (Oregon Department of Human Services), aus dem Haushalt des Bundesstaats bezahlt, mit der gemeinnützigen Organisation Point Source Youth und drei lokalen Jugendgruppen",
+        "ar": "برنامج الشباب المشردين التابع لإدارة الخدمات الإنسانية في ولاية أوريغون، بتمويل من ميزانية الولاية، مع المنظمة غير الربحية ⁦Point Source Youth⁩ وثلاث مجموعات شبابية محلية"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for two years (March 2023–March 2025), plus a one-time $3,000, to 120 homeless young people aged 18–24 in three Oregon counties, with optional housing and money-management support",
+        "ja": "オレゴン州の3郡のホームレスの18〜24歳の若者120人に、条件なしで月1,000ドルを2年間（2023年3月〜2025年3月）と一時金3,000ドル。希望者には住まいとお金の管理の支援も",
+        "zh": "向俄勒冈州三个县的 120 名 18 至 24 岁无家可归年轻人无条件每月发放 1,000 美元，为期两年（2023 年 3 月至 2025 年 3 月），外加一次性 3,000 美元，并可自愿接受住房和理财支持",
+        "hi": "ओरेगन की तीन काउंटियों के 18–24 साल के 120 बेघर युवाओं को दो साल (मार्च 2023–मार्च 2025) तक बिना शर्त हर महीने $1,000, साथ ही एक बार $3,000, और वैकल्पिक आवास व पैसे के प्रबंधन की मदद",
+        "es": "1.000 $ al mes sin condiciones durante dos años (marzo 2023–marzo 2025), más un pago único de 3.000 $, para 120 jóvenes sin hogar de 18 a 24 años de tres condados de Oregón, con apoyo opcional de vivienda y gestión del dinero",
+        "de": "1.000 $ im Monat ohne Bedingungen für zwei Jahre (März 2023 bis März 2025) plus einmalig 3.000 $ an 120 obdachlose junge Menschen von 18 bis 24 Jahren in drei Countys in Oregon, mit freiwilliger Unterstützung bei Wohnen und Geldverwaltung",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة عامين (مارس 2023–مارس 2025)، إضافة إلى ⁦$3,000⁩ لمرة واحدة، لـ120 شابًا مشردًا تتراوح أعمارهم بين 18 و24 عامًا في ثلاث مقاطعات في أوريغون، مع دعم اختياري في السكن وإدارة المال"
+      },
+      "result": {
+        "en": "Young People to the Front's final report (released January 2026) reported that 94% of the 63 youth who completed surveys said they were housed at the end, and 72% were working or in school; these are self-reported, with no control group and fewer than half the participants surveyed",
+        "ja": "Young People to the Frontの最終報告（2026年1月公表）は、調査に回答した若者63人の94%が終了時に住まいがあり、72%が働くか学校に通っていたと報告。自己申告で、対照群はなく、調査できたのは参加者の半数未満",
+        "zh": "Young People to the Front 的最终报告（2026 年 1 月发布）称，完成调查的 63 名青年中有 94% 表示结束时有住处，72% 在工作或上学；均为自我报告，没有对照组，接受调查的不到参与者的一半",
+        "hi": "Young People to the Front की अंतिम रिपोर्ट (जनवरी 2026 में जारी) के अनुसार सर्वे पूरा करने वाले 63 युवाओं में से 94% ने कहा कि अंत में उनके पास घर था, और 72% काम या पढ़ाई में थे; ये स्व-रिपोर्टेड हैं, कोई नियंत्रण समूह नहीं, और आधे से कम प्रतिभागियों का सर्वे हुआ",
+        "es": "El informe final de Young People to the Front (publicado en enero de 2026) indicó que el 94 % de los 63 jóvenes que completaron las encuestas dijo tener vivienda al final, y el 72 % trabajaba o estudiaba; datos autodeclarados, sin grupo de control y con menos de la mitad de los participantes encuestados",
+        "de": "Der Abschlussbericht von Young People to the Front (veröffentlicht im Januar 2026) berichtete, dass 94 % der 63 jungen Menschen, die die Befragungen abschlossen, am Ende eine Wohnung hatten und 72 % arbeiteten oder in Ausbildung waren; Selbstauskünfte, ohne Kontrollgruppe, und weniger als die Hälfte der Teilnehmenden wurde befragt",
+        "ar": "أفاد التقرير النهائي لـ⁦Young People to the Front⁩ (صدر في يناير 2026) بأن 94% من الشباب الـ63 الذين أكملوا الاستطلاعات قالوا إن لديهم سكنًا في النهاية، وبأن 72% كانوا يعملون أو يدرسون؛ وهذه بيانات ذاتية الإبلاغ، دون مجموعة ضابطة، وشمل الاستطلاع أقل من نصف المشاركين"
+      },
+      "source": "https://apps.oregon.gov/oregon-newsroom/OR/ODHS/Posts/Post/combination-of-cash-with-other-supports-proves-effective-in-helping-young-adults-out-of-homelessness-study-found",
+      "source2": "https://www.opb.org/article/2024/01/26/homeless-youth-oregon-1000-dollars-a-month-support/",
+      "us": {
+        "city": "Multnomah, Clackamas and Deschutes counties",
+        "state": "OR",
+        "start": "2023-03",
+        "end": "2025-03",
+        "monthly": 1000,
+        "months": 24,
+        "recipients": 120,
+        "unit": "people",
+        "funders": ["public"],
+        "control": false,
+        "elig": "Young people aged 18–24 experiencing homelessness or unstable housing; the cash was not counted as income for other benefits",
+        "eval": {
+          "by": "Young People to the Front",
+          "year": 2025,
+          "type": "report",
+          "url": "https://www.ocpp.org/wp-content/uploads/2026/04/DCTFinalReport.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-longbeach-pledge",
+      "years": "2023–2025",
+      "type": "gov",
+      "name": "Long Beach Pledge Guaranteed Income Pilot",
+      "place": {
+        "en": "Long Beach, California, USA",
+        "ja": "アメリカ・カリフォルニア州ロングビーチ",
+        "zh": "美国加利福尼亚州长滩",
+        "hi": "लॉन्ग बीच, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Long Beach, California (EE. UU.)",
+        "de": "Long Beach, Kalifornien (USA)",
+        "ar": "لونغ بيتش، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Long Beach, paid from federal pandemic relief (ARPA) for the first cohort and city homelessness emergency funds for the second; the Fund for Guaranteed Income delivered payments",
+        "ja": "ロングビーチ市。財源は第1期が連邦のコロナ対策資金（ARPA）、第2期が市のホームレス緊急資金で、支給はFund for Guaranteed Incomeが担当",
+        "zh": "长滩市，第一批资金来自联邦疫情纾困款（ARPA），第二批来自市无家可归紧急资金；由保障收入基金（Fund for Guaranteed Income）负责发放",
+        "hi": "लॉन्ग बीच शहर, पहले समूह का पैसा संघीय महामारी राहत (ARPA) से और दूसरे का शहर के बेघरी आपात कोष से; भुगतान Fund for Guaranteed Income ने किए",
+        "es": "Ciudad de Long Beach, con fondos federales de alivio por la pandemia (ARPA) para la primera cohorte y fondos municipales de emergencia por sinhogarismo para la segunda; el Fund for Guaranteed Income hizo los pagos",
+        "de": "Stadt Long Beach, für die erste Kohorte aus Corona-Hilfen des Bundes (ARPA) und für die zweite aus städtischen Notmitteln gegen Obdachlosigkeit bezahlt; der Fund for Guaranteed Income zahlte aus",
+        "ar": "مدينة لونغ بيتش، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) للدفعة الأولى ومن أموال الطوارئ للتشرد في المدينة للدفعة الثانية؛ وتولّى ⁦Fund for Guaranteed Income⁩ صرف الدفعات"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months to 450 families with children below the poverty line, in two cohorts: 250 in ZIP code 90813 (May 2023–April 2024) and 200 in five other ZIP codes (March 2024–February 2025)",
+        "ja": "貧困線を下回る子どものいる450家族に、条件なしで月500ドルを12か月。2期に分け、郵便番号90813の250家族（2023年5月〜2024年4月）と、ほかの5つの郵便番号区域の200家族（2024年3月〜2025年2月）",
+        "zh": "分两批向 450 个低于贫困线的有孩子家庭无条件每月发放 500 美元，为期 12 个月：邮编 90813 的 250 个家庭（2023 年 5 月至 2024 年 4 月），其他五个邮编区的 200 个家庭（2024 年 3 月至 2025 年 2 月）",
+        "hi": "ग़रीबी रेखा से नीचे, बच्चों वाले 450 परिवारों को 12 महीने तक बिना शर्त हर महीने $500, दो समूहों में: ZIP कोड 90813 में 250 (मई 2023–अप्रैल 2024) और पाँच अन्य ZIP कोड में 200 (मार्च 2024–फ़रवरी 2025)",
+        "es": "500 $ al mes sin condiciones durante 12 meses para 450 familias con hijos bajo el umbral de pobreza, en dos cohortes: 250 en el código postal 90813 (mayo 2023–abril 2024) y 200 en otros cinco códigos postales (marzo 2024–febrero 2025)",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate an 450 Familien mit Kindern unter der Armutsgrenze, in zwei Kohorten: 250 in der Postleitzahl 90813 (Mai 2023 bis April 2024) und 200 in fünf weiteren Postleitzahlen (März 2024 bis Februar 2025)",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا لـ450 أسرة لديها أطفال تحت خط الفقر، على دفعتين: 250 في الرمز البريدي 90813 (مايو 2023–أبريل 2024) و200 في خمسة رموز بريدية أخرى (مارس 2024–فبراير 2025)"
+      },
+      "result": {
+        "en": "CSULB researchers (preliminary final report on cohort 1, September 2024) compared single-parent recipients with a randomly assigned control group: two months after payments ended, 44.6% vs 66.7% had cut meal sizes and 72.3% vs 50.0% had high-speed internet, with no significant effect on employment; self-reported surveys, 79 controls, 51–63% response",
+        "ja": "カリフォルニア州立大学ロングビーチ校の研究者（第1期の暫定最終報告、2024年9月）はひとり親の受給者を無作為に割り当てた対照群と比べ、支給終了2か月後に食事の量を減らしたのは44.6%対66.7%、高速インターネットがあるのは72.3%対50.0%で、雇用への有意な影響はなかったと報告。自己申告の調査で、対照群79人、回答率51〜63%",
+        "zh": "加州州立大学长滩分校研究人员（第一批初步最终报告，2024 年 9 月）将单亲受助者与随机分配的对照组比较：发放结束两个月后，减少饭量的比例为 44.6% 对 66.7%，有高速网络的比例为 72.3% 对 50.0%，对就业没有显著影响；均为自我报告的调查，对照组 79 人，回应率 51% 至 63%",
+        "hi": "CSULB के शोधकर्ताओं (पहले समूह पर प्रारंभिक अंतिम रिपोर्ट, सितंबर 2024) ने अकेले माता-पिता वाले प्राप्तकर्ताओं की रैंडम रूप से बनाए गए नियंत्रण समूह से तुलना की: भुगतान ख़त्म होने के दो महीने बाद 44.6% बनाम 66.7% ने खाने की मात्रा घटाई थी और 72.3% बनाम 50.0% के पास हाई-स्पीड इंटरनेट था, रोज़गार पर कोई महत्वपूर्ण असर नहीं; स्व-रिपोर्टेड सर्वे, 79 नियंत्रण, 51–63% प्रतिक्रिया दर",
+        "es": "Investigadores de CSULB (informe final preliminar de la cohorte 1, septiembre de 2024) compararon a beneficiarios con un solo progenitor con un grupo de control asignado al azar: dos meses después del último pago, el 44,6 % frente al 66,7 % había reducido el tamaño de las comidas y el 72,3 % frente al 50,0 % tenía internet de alta velocidad, sin efecto significativo en el empleo; encuestas autodeclaradas, 79 controles, 51–63 % de respuesta",
+        "de": "Forschende der CSULB (vorläufiger Abschlussbericht zu Kohorte 1, September 2024) verglichen alleinerziehende Empfänger mit einer zufällig zugeteilten Kontrollgruppe: Zwei Monate nach dem Ende der Zahlungen hatten 44,6 % zu 66,7 % ihre Mahlzeiten verkleinert und 72,3 % zu 50,0 % hatten schnelles Internet, ohne signifikante Wirkung auf die Beschäftigung; Befragungen mit Selbstauskünften, 79 Personen in der Kontrollgruppe, 51 bis 63 % Rücklauf",
+        "ar": "قارن باحثو جامعة ولاية كاليفورنيا في لونغ بيتش (⁦CSULB⁩) (التقرير النهائي الأولي عن الدفعة الأولى، سبتمبر 2024) المستفيدين من الآباء والأمهات المنفردين بمجموعة ضابطة وُزّعت عشوائيًا: بعد شهرين من انتهاء الدفعات، قلّص 44.6% مقابل 66.7% حجم وجباتهم، وكان لدى 72.3% مقابل 50.0% إنترنت عالي السرعة، دون أثر دال على التوظيف؛ استطلاعات ذاتية الإبلاغ، و79 في المجموعة الضابطة، ونسبة استجابة 51–63%"
+      },
+      "source": "https://www.longbeach.gov/edo/special-reports-and-publications/",
+      "source2": "https://longbeach.gov/press-releases/long-beach-pledge--guaranteed-income-pilot-application-now-open/",
+      "us": {
+        "city": "Long Beach",
+        "state": "CA",
+        "start": "2023-05",
+        "end": "2025-02",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 450,
+        "unit": "households",
+        "funders": ["arpa", "public"],
+        "control": true,
+        "elig": "Single-earner families with children under 18 at or below the federal poverty line; cohort 1 in ZIP code 90813, cohort 2 in ZIP codes 90802, 90804, 90805, 90806 and 90810; randomly selected",
+        "eval": {
+          "by": "California State University, Long Beach research team (Mileva, Steimetz, Woodward, Zentgraf)",
+          "year": 2024,
+          "type": "report",
+          "url": "https://www.longbeach.gov/globalassets/edo/media-library/documents/special-reports--publications/cohort-1---final-preliminary-report"
+        }
+      }
+    },
+    {
+      "id": "us-palmsprings-gi",
+      "years": "2023–",
+      "type": "ngo",
+      "name": "Palm Springs Guaranteed Income Pilot",
+      "place": {
+        "en": "Palm Springs, California, USA",
+        "ja": "アメリカ・カリフォルニア州パームスプリングス",
+        "zh": "美国加利福尼亚州棕榈泉",
+        "hi": "पाम स्प्रिंग्स, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Palm Springs, California (EE. UU.)",
+        "de": "Palm Springs, Kalifornien (USA)",
+        "ar": "بالم سبرينغز، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Two Palm Springs nonprofits, Queer Works and DAP Health, paid from city money; DAP Health took over in July 2024 after payment problems",
+        "ja": "パームスプリングスの2つの非営利団体Queer WorksとDAP Health。財源は市の資金で、支給の問題を受けて2024年7月にDAP Healthが引き継いだ",
+        "zh": "棕榈泉两家非营利组织 Queer Works 和 DAP Health，资金来自市政府；因发放出现问题，DAP Health 于 2024 年 7 月接手",
+        "hi": "पाम स्प्रिंग्स की दो ग़ैर-लाभकारी संस्थाएँ, Queer Works और DAP Health, पैसा शहर से; भुगतान में दिक़्क़तों के बाद जुलाई 2024 में DAP Health ने ज़िम्मेदारी संभाली",
+        "es": "Dos organizaciones sin ánimo de lucro de Palm Springs, Queer Works y DAP Health, con dinero municipal; DAP Health asumió la gestión en julio de 2024 tras problemas con los pagos",
+        "de": "Zwei gemeinnützige Organisationen in Palm Springs, Queer Works und DAP Health, aus städtischen Mitteln bezahlt; DAP Health übernahm im Juli 2024 nach Problemen bei den Zahlungen",
+        "ar": "منظمتان غير ربحيتين في بالم سبرينغز، ⁦Queer Works⁩ و⁦DAP Health⁩، بتمويل من أموال المدينة؛ وتولّت ⁦DAP Health⁩ الإدارة في يوليو 2024 بعد مشكلات في الدفعات"
+      },
+      "paid": {
+        "en": "$800 a month with no conditions for 18 months, from May 2023, to 30 low-income residents who are clients of the two nonprofits, chosen at random; transgender and nonbinary people were encouraged to apply",
+        "ja": "2つの団体の利用者である低所得住民から無作為に選んだ30人に、2023年5月から条件なしで月800ドルを18か月。トランスジェンダーとノンバイナリーの人に応募を呼びかけた",
+        "zh": "自 2023 年 5 月起，从两家非营利组织的服务对象中随机选出 30 名低收入居民，无条件每月发放 800 美元，为期 18 个月；鼓励跨性别和非二元人士申请",
+        "hi": "दोनों संस्थाओं के क्लाइंट 30 कम आय वाले निवासियों को, रैंडम रूप से चुनकर, मई 2023 से 18 महीने तक बिना शर्त हर महीने $800; ट्रांसजेंडर और नॉनबाइनरी लोगों को आवेदन के लिए प्रोत्साहित किया गया",
+        "es": "800 $ al mes sin condiciones durante 18 meses, desde mayo de 2023, para 30 residentes de bajos ingresos usuarios de ambas organizaciones, elegidos al azar; se animó a solicitarlo a personas transgénero y no binarias",
+        "de": "800 $ im Monat ohne Bedingungen für 18 Monate, ab Mai 2023, an 30 zufällig ausgewählte einkommensschwache Einwohner, die Klienten der beiden Organisationen sind; trans und nichtbinäre Menschen wurden ausdrücklich zur Bewerbung ermutigt",
+        "ar": "⁦$800⁩ شهريًا بلا شروط لمدة 18 شهرًا، بدءًا من مايو 2023، لـ30 من السكان منخفضي الدخل من عملاء المنظمتين، اختيروا عشوائيًا؛ وشُجّع العابرون جنسيًا وغير الثنائيين على التقدّم"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.politifact.com/factchecks/2024/jan/12/instagram-posts/no-a-california-city-is-not-giving-all-transgender/",
+      "source2": "https://www.yahoo.com/news/problems-palm-springs-basic-income-232308299.html",
+      "us": {
+        "city": "Palm Springs",
+        "state": "CA",
+        "start": "2023-05",
+        "end": null,
+        "status": "unknown",
+        "monthly": 800,
+        "months": 18,
+        "recipients": 30,
+        "unit": "people",
+        "funders": ["public"],
+        "control": null,
+        "elig": "Palm Springs residents earning under $16,600 a year who are past or present clients of DAP Health or Queer Works and agree to surveys; transgender and nonbinary people encouraged to apply but not required; chosen at random on March 30, 2023",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-cambridge-rise-up",
+      "years": "2023–2024",
+      "type": "gov",
+      "name": "Rise Up Cambridge",
+      "place": {
+        "en": "Cambridge, Massachusetts, USA",
+        "ja": "アメリカ・マサチューセッツ州ケンブリッジ",
+        "zh": "美国马萨诸塞州剑桥",
+        "hi": "कैम्ब्रिज, मैसाचुसेट्स, अमेरिका",
+        "es": "Cambridge, Massachusetts (EE. UU.)",
+        "de": "Cambridge, Massachusetts (USA)",
+        "ar": "كامبريدج، ماساتشوستس، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Cambridge, a citywide follow-up to the RISE pilot paid from federal pandemic relief (ARPA)",
+        "ja": "ケンブリッジ市。RISEパイロットに続く市全体の事業で、財源は連邦のコロナ対策資金（ARPA）",
+        "zh": "剑桥市，作为 RISE 试点的全市性后续项目，资金来自联邦疫情纾困款（ARPA）",
+        "hi": "कैम्ब्रिज शहर, RISE पायलट का शहरव्यापी अगला चरण, पैसा संघीय महामारी राहत (ARPA) से",
+        "es": "Ciudad de Cambridge, una continuación del piloto RISE para toda la ciudad, financiada con fondos federales de alivio por la pandemia (ARPA)",
+        "de": "Stadt Cambridge, eine stadtweite Fortsetzung des RISE-Pilotprojekts, bezahlt aus Corona-Hilfen des Bundes (ARPA)",
+        "ar": "مدينة كامبريدج، متابعة على مستوى المدينة لتجربة ⁦RISE⁩، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 18 months from June 2023 to nearly 2,000 low-income families with children (at or below 250% of the federal poverty level)",
+        "ja": "子どものいる低所得（連邦貧困基準の250%以下）の2,000家族近くに、2023年6月から条件なしで月500ドルを18か月",
+        "zh": "自 2023 年 6 月起，向近 2,000 个有孩子的低收入家庭（收入不超过联邦贫困线的 250%）无条件每月发放 500 美元，为期 18 个月",
+        "hi": "बच्चों वाले लगभग 2,000 कम आय वाले परिवारों (संघीय ग़रीबी स्तर के 250% या उससे कम) को जून 2023 से 18 महीने तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 18 meses desde junio de 2023 para casi 2.000 familias de bajos ingresos con hijos (con ingresos de hasta el 250 % del umbral federal de pobreza)",
+        "de": "500 $ im Monat ohne Bedingungen für 18 Monate ab Juni 2023 an fast 2.000 einkommensschwache Familien mit Kindern (bis 250 % der bundesweiten Armutsgrenze)",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 18 شهرًا بدءًا من يونيو 2023 لنحو 2,000 أسرة منخفضة الدخل لديها أطفال (دخلها عند 250% من مستوى الفقر الفدرالي أو أقل)"
+      },
+      "result": {
+        "en": "MDRC (April 2026), from surveys and interviews with no control group: 93% of survey respondents used the money for food and 75% for emergencies, and 96% reported less stress while paid. For nearly half, the $500 plus household income still fell below the federal poverty line",
+        "ja": "MDRC（2026年4月、対照群のない調査と聞き取り）は、調査回答者の93%が食料に、75%が急な出費に使い、96%が支給中にストレスが減ったと報告。半数近くは、500ドルと世帯収入を合わせても連邦貧困線を下回っていた",
+        "zh": "MDRC（2026 年 4 月）根据调查和访谈，没有对照组：93% 的调查回答者把钱用于食品，75% 用于应急，96% 表示发放期间压力减轻。近一半家庭即使加上 500 美元，家庭收入仍低于联邦贫困线",
+        "hi": "MDRC (अप्रैल 2026), नियंत्रण समूह के बिना सर्वे और इंटरव्यू से: सर्वे के 93% उत्तरदाताओं ने पैसा खाने पर और 75% ने आपात स्थितियों पर ख़र्च किया, और 96% ने भुगतान के दौरान कम तनाव बताया। लगभग आधे परिवारों के लिए $500 जोड़कर भी घरेलू आय संघीय ग़रीबी रेखा से नीचे रही",
+        "es": "MDRC (abril de 2026), a partir de encuestas y entrevistas sin grupo de control: el 93 % de los encuestados usó el dinero en comida y el 75 % en emergencias, y el 96 % declaró menos estrés mientras cobraba. Para casi la mitad, los 500 $ más los ingresos del hogar seguían por debajo del umbral federal de pobreza",
+        "de": "MDRC (April 2026), aus Befragungen und Interviews ohne Kontrollgruppe: 93 % der Befragten nutzten das Geld für Lebensmittel und 75 % für Notfälle, 96 % berichteten während der Zahlungen weniger Stress. Bei fast der Hälfte lagen die 500 $ plus Haushaltseinkommen weiterhin unter der bundesweiten Armutsgrenze",
+        "ar": "⁦MDRC⁩ (أبريل 2026)، استنادًا إلى استطلاعات ومقابلات دون مجموعة ضابطة: استخدم 93% من المستجيبين المال للطعام و75% للطوارئ، وأفاد 96% بتوتر أقل أثناء تلقي الدفعات. ولدى نحو النصف، ظل مجموع ⁦$500⁩ ودخل الأسرة دون خط الفقر الفدرالي"
+      },
+      "source": "https://www.cambridgema.gov/news/2026/04/riseupcambridgeevaluationmeaningfulshorttermfinancialreliefforlowincomefamilies",
+      "us": {
+        "city": "Cambridge",
+        "state": "MA",
+        "start": "2023-06",
+        "end": "2024",
+        "monthly": 500,
+        "months": 18,
+        "recipients": 2000,
+        "unit": "households",
+        "funders": ["arpa"],
+        "control": false,
+        "elig": "Cambridge families with children earning at or below 250% of the federal poverty level; open to all eligible families who applied",
+        "eval": {
+          "by": "MDRC (Mina Addo, lead author)",
+          "year": 2026,
+          "type": "report",
+          "url": "https://www.cambridgema.gov/news/2026/04/riseupcambridgeevaluationmeaningfulshorttermfinancialreliefforlowincomefamilies"
+        }
+      }
+    },
+    {
+      "id": "us-portland-me-qhc",
+      "years": "2023–2024",
+      "type": "ngo",
+      "name": "Quality Housing Coalition cash pilot for single mothers",
+      "place": {
+        "en": "Portland, Maine, USA",
+        "ja": "アメリカ・メイン州ポートランド",
+        "zh": "美国缅因州波特兰",
+        "hi": "पोर्टलैंड, मेन, अमेरिका",
+        "es": "Portland, Maine (EE. UU.)",
+        "de": "Portland, Maine (USA)",
+        "ar": "بورتلاند، مين، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Quality Housing Coalition, a Portland nonprofit, paid from private donations and grants",
+        "ja": "ポートランドの非営利団体Quality Housing Coalition。財源は個人の寄付と補助金",
+        "zh": "波特兰非营利组织 Quality Housing Coalition，资金来自私人捐款和拨款",
+        "hi": "Quality Housing Coalition, पोर्टलैंड की एक ग़ैर-लाभकारी संस्था, पैसा निजी दान और अनुदान से",
+        "es": "Quality Housing Coalition, una organización sin ánimo de lucro de Portland, financiado con donaciones privadas y subvenciones",
+        "de": "Quality Housing Coalition, eine gemeinnützige Organisation in Portland, bezahlt aus privaten Spenden und Zuschüssen",
+        "ar": "⁦Quality Housing Coalition⁩، منظمة غير ربحية في بورتلاند، بتمويل من تبرعات ومنح خاصة"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for a year from June 2023 to 20 low-income single mothers, alongside social support; a second group of 20 began in September 2024",
+        "ja": "低所得のシングルマザー20人に、社会的支援とあわせて2023年6月から条件なしで月1,000ドルを1年間。2024年9月に第2グループ20人が開始",
+        "zh": "自 2023 年 6 月起，向 20 名低收入单身母亲无条件每月发放 1,000 美元，为期一年，同时提供社会支持；第二批 20 人于 2024 年 9 月开始",
+        "hi": "20 कम आय वाली अकेली माताओं को जून 2023 से एक साल तक बिना शर्त हर महीने $1,000, साथ में सामाजिक सहायता; 20 का दूसरा समूह सितंबर 2024 में शुरू हुआ",
+        "es": "1.000 $ al mes sin condiciones durante un año desde junio de 2023 para 20 madres solas de bajos ingresos, junto con apoyo social; un segundo grupo de 20 empezó en septiembre de 2024",
+        "de": "1.000 $ im Monat ohne Bedingungen für ein Jahr ab Juni 2023 an 20 einkommensschwache alleinerziehende Mütter, neben sozialer Unterstützung; eine zweite Gruppe von 20 begann im September 2024",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة عام بدءًا من يونيو 2023 لـ20 أمًّا منفردة منخفضة الدخل، إلى جانب دعم اجتماعي؛ وبدأت مجموعة ثانية من 20 في سبتمبر 2024"
+      },
+      "result": {
+        "en": "The coalition's own study (September 2024), as reported by the Bangor Daily News, compared with a control group: the number saying they were doing OK or better financially rose from one to about half, while the control group stayed flat, and all participants stayed housed. Very small sample (n = 20)",
+        "ja": "団体自身の調査（2024年9月、Bangor Daily News報道）は対照群と比べ、経済的に「まあ大丈夫」以上と答えた人が1人から約半数に増えた一方、対照群は横ばいで、参加者全員が住まいを維持したとした。非常に小さなサンプル（n = 20）",
+        "zh": "据《班戈每日新闻》报道，该组织自己的研究（2024 年 9 月）与对照组比较：表示财务状况尚可或更好的人从 1 人增至约一半，而对照组没有变化，且所有参与者都保住了住房。样本极小（n = 20）",
+        "hi": "Bangor Daily News के अनुसार गठबंधन के अपने अध्ययन (सितंबर 2024) ने नियंत्रण समूह से तुलना की: आर्थिक रूप से ठीक या बेहतर होने की बात कहने वालों की संख्या एक से बढ़कर लगभग आधी हुई, जबकि नियंत्रण समूह में कोई बदलाव नहीं आया, और सभी प्रतिभागियों के पास घर बना रहा। बहुत छोटा नमूना (n = 20)",
+        "es": "El estudio propio de la coalición (septiembre de 2024), según el Bangor Daily News, frente a un grupo de control: el número de quienes decían estar bien o mejor económicamente pasó de una a cerca de la mitad, mientras el grupo de control no cambió, y todas las participantes conservaron su vivienda. Muestra muy pequeña (n = 20)",
+        "de": "Die eigene Studie der Coalition (September 2024) verglich laut Bangor Daily News mit einer Kontrollgruppe: Die Zahl derer, die sagten, es gehe ihnen finanziell zumindest okay, stieg von einer auf etwa die Hälfte, während sie in der Kontrollgruppe unverändert blieb, und alle Teilnehmenden behielten ihre Wohnung. Sehr kleine Stichprobe (n = 20)",
+        "ar": "دراسة التحالف نفسه (سبتمبر 2024)، كما نقلتها ⁦Bangor Daily News⁩، مقارنةً بمجموعة ضابطة: ارتفع عدد من قالوا إن وضعهم المالي مقبول أو أفضل من مشاركة واحدة إلى نحو النصف، بينما بقيت المجموعة الضابطة دون تغيير، وظلت جميع المشاركات في مساكنهن. عينة صغيرة جدًا (20 مشاركة)"
+      },
+      "source": "https://www.bangordailynews.com/2024/02/05/state/state-housing/20-maine-mothers-given-1000-per-month-joam40zk0w",
+      "source2": "https://www.bangordailynews.com/2024/09/10/business/experiment-maine-mothers-universal-basic-income-joam40zk0w",
+      "us": {
+        "city": "Portland",
+        "state": "ME",
+        "start": "2023-06",
+        "end": "2024",
+        "monthly": 1000,
+        "months": 12,
+        "recipients": 20,
+        "unit": "people",
+        "funders": ["philanthropic", "public"],
+        "control": true,
+        "elig": "Low-income single mothers, many previously homeless and mostly asylum seekers and refugees",
+        "eval": {
+          "by": "Quality Housing Coalition (own study, reported by the Bangor Daily News)",
+          "year": 2024,
+          "type": "program report",
+          "url": "https://www.bangordailynews.com/2024/09/10/business/experiment-maine-mothers-universal-basic-income-joam40zk0w"
+        }
+      }
+    },
+    {
+      "id": "us-philadelphia-grow",
+      "years": "2023–2024",
+      "type": "gov",
+      "name": "GROW (Guaranteed Resources Optimize Wellbeing) Study",
+      "place": {
+        "en": "Philadelphia, Pennsylvania, USA",
+        "ja": "アメリカ・ペンシルベニア州フィラデルフィア",
+        "zh": "美国宾夕法尼亚州费城",
+        "hi": "फ़िलाडेल्फ़िया, पेंसिल्वेनिया, अमेरिका",
+        "es": "Filadelfia, Pensilvania (EE. UU.)",
+        "de": "Philadelphia, Pennsylvania (USA)",
+        "ar": "فيلادلفيا، بنسلفانيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Philadelphia's Office of Community Empowerment and Opportunity, paid from existing Extended TANF funds (about $322,000), with payments delivered by the Fund for Guaranteed Income",
+        "ja": "フィラデルフィア市Office of Community Empowerment and Opportunity。財源は既存の延長TANF資金（約32万2,000ドル）で、支給はFund for Guaranteed Incomeが担当",
+        "zh": "费城社区赋权与机会办公室，资金来自现有的延长期 TANF（贫困家庭临时援助）资金（约 322,000 美元），由保障收入基金（Fund for Guaranteed Income）负责发放",
+        "hi": "फ़िलाडेल्फ़िया शहर का Office of Community Empowerment and Opportunity, पैसा मौजूदा Extended TANF कोष (लगभग $3,22,000) से; भुगतान Fund for Guaranteed Income ने किए",
+        "es": "Oficina de Empoderamiento y Oportunidad Comunitaria de la Ciudad de Filadelfia, financiado con fondos existentes de Extended TANF (unos 322.000 $), con pagos realizados por el Fund for Guaranteed Income",
+        "de": "Office of Community Empowerment and Opportunity der Stadt Philadelphia, bezahlt aus vorhandenen Mitteln für Extended TANF (etwa 322.000 $), mit Auszahlung durch den Fund for Guaranteed Income",
+        "ar": "مكتب التمكين المجتمعي والفرص في مدينة فيلادلفيا، بتمويل من أموال ⁦Extended TANF⁩ القائمة (نحو ⁦$322,000⁩)، وتولّى ⁦Fund for Guaranteed Income⁩ صرف الدفعات"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months from June 2023 to 51 parents on Extended TANF, while 239 others in a randomized control group got $50 a month",
+        "ja": "延長TANFを受ける親51人に、2023年6月から条件なしで月500ドルを12か月。無作為化された対照群の239人には月50ドル",
+        "zh": "自 2023 年 6 月起，向 51 名领取延长期 TANF 的父母无条件每月发放 500 美元，为期 12 个月；随机对照组的另外 239 人每月领取 50 美元",
+        "hi": "Extended TANF पाने वाले 51 माता-पिता को जून 2023 से 12 महीने तक बिना शर्त हर महीने $500, जबकि रैंडमाइज़्ड नियंत्रण समूह के 239 अन्य को हर महीने $50 मिले",
+        "es": "500 $ al mes sin condiciones durante 12 meses desde junio de 2023 para 51 padres y madres en Extended TANF, mientras otros 239 de un grupo de control aleatorizado recibían 50 $ al mes",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate ab Juni 2023 an 51 Eltern im Bezug von Extended TANF, während 239 weitere in einer randomisierten Kontrollgruppe 50 $ im Monat erhielten",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا بدءًا من يونيو 2023 لـ51 من الآباء والأمهات المستفيدين من ⁦Extended TANF⁩، بينما حصل 239 آخرون في مجموعة ضابطة عشوائية على ⁦$50⁩ شهريًا"
+      },
+      "result": {
+        "en": "Reinvestment Fund and University of Wisconsin-Milwaukee researchers (May 2026), compared with the $50 control group: modest but statistically significant gains in financial wellbeing, mental health and food insecurity, which returned to baseline or slightly worse after payments stopped. Small sample (51)",
+        "ja": "Reinvestment Fundとウィスコンシン大学ミルウォーキー校の研究者（2026年5月）は月50ドルの対照群と比べ、経済的な暮らし向き、心の健康、食料不安で小さいが統計的に有意な改善があったが、支給終了後は元の水準かやや悪い水準に戻ったと報告。小さなサンプル（51人）",
+        "zh": "Reinvestment Fund 和威斯康星大学密尔沃基分校研究人员（2026 年 5 月）与领取 50 美元的对照组比较：财务状况、心理健康和粮食不安全方面有小幅但统计上显著的改善，发放停止后回到基线或略差。样本较小（51 人）",
+        "hi": "Reinvestment Fund और University of Wisconsin-Milwaukee के शोधकर्ताओं (मई 2026) ने $50 वाले नियंत्रण समूह से तुलना की: आर्थिक भलाई, मानसिक स्वास्थ्य और खाने की असुरक्षा में मामूली पर सांख्यिकीय रूप से महत्वपूर्ण सुधार, जो भुगतान रुकने के बाद शुरुआती स्तर पर या उससे थोड़ा बदतर हो गया। छोटा नमूना (51)",
+        "es": "Investigadores de Reinvestment Fund y la Universidad de Wisconsin-Milwaukee (mayo de 2026), frente al grupo de control de 50 $: mejoras modestas pero estadísticamente significativas en bienestar financiero, salud mental e inseguridad alimentaria, que volvieron al nivel inicial o algo peor al terminar los pagos. Muestra pequeña (51)",
+        "de": "Forschende von Reinvestment Fund und der University of Wisconsin-Milwaukee (Mai 2026) im Vergleich mit der 50-$-Kontrollgruppe: bescheidene, aber statistisch signifikante Verbesserungen bei finanziellem Wohlbefinden, psychischer Gesundheit und Ernährungsunsicherheit, die nach dem Ende der Zahlungen auf das Ausgangsniveau oder etwas darunter zurückfielen. Kleine Stichprobe (51)",
+        "ar": "باحثو ⁦Reinvestment Fund⁩ وجامعة ويسكونسن-ميلووكي (مايو 2026)، مقارنةً بمجموعة الـ⁦$50⁩ الضابطة: مكاسب متواضعة لكنها دالة إحصائيًا في الرفاه المالي والصحة النفسية وانعدام الأمن الغذائي، عادت إلى خط الأساس أو أسوأ قليلًا بعد توقف الدفعات. عينة صغيرة (51)"
+      },
+      "source": "https://www.phila.gov/2023-08-11-city-launches-guaranteed-income-pilot-study-for-e-tanf-beneficiaries-in-philadelphia/",
+      "source2": "https://www.phillyvoice.com/philly-guaranteed-income-assistance-500-dollars-monthly-low-income-parents-grow-study/amp/",
+      "us": {
+        "city": "Philadelphia",
+        "state": "PA",
+        "start": "2023-06",
+        "end": "2024",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 51,
+        "unit": "people",
+        "funders": ["public"],
+        "control": true,
+        "elig": "Parents on Extended TANF (cash aid after the 60-month limit) enrolled in the city's Work Ready program; randomized, with 239 controls getting $50 a month",
+        "eval": {
+          "by": "Reinvestment Fund and University of Wisconsin-Milwaukee (David Pate Jr.)",
+          "year": 2026,
+          "type": "report",
+          "url": "https://www.reinvestment.com/wp-content/uploads/2026/07/GROW_Report__Final-May-2026.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-sacramento-gi2",
+      "years": "2023–2024",
+      "type": "ngo",
+      "name": "United Way Guaranteed Income Program, City of Sacramento cohort",
+      "place": {
+        "en": "Sacramento, California, USA",
+        "ja": "アメリカ・カリフォルニア州サクラメント",
+        "zh": "美国加利福尼亚州萨克拉门托",
+        "hi": "सैक्रामेंटो, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Sacramento, California (EE. UU.)",
+        "de": "Sacramento, Kalifornien (USA)",
+        "ar": "ساكرامنتو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "United Way California Capital Region, paid from the City of Sacramento's federal pandemic relief (ARPA)",
+        "ja": "United Way California Capital Region。財源はサクラメント市の連邦コロナ対策資金（ARPA）",
+        "zh": "加州首府地区联合之路（United Way California Capital Region），资金来自萨克拉门托市的联邦疫情纾困款（ARPA）",
+        "hi": "United Way California Capital Region, पैसा सैक्रामेंटो शहर की संघीय महामारी राहत (ARPA) से",
+        "es": "United Way California Capital Region, financiado con los fondos federales de alivio por la pandemia (ARPA) de la Ciudad de Sacramento",
+        "de": "United Way California Capital Region, bezahlt aus den Corona-Hilfen des Bundes (ARPA) der Stadt Sacramento",
+        "ar": "⁦United Way California Capital Region⁩، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩) المخصصة لمدينة ساكرامنتو"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for one year (July 2023–June 2024) to 80 low-income Sacramento households picked at random from nearly 13,000 applicants",
+        "ja": "約1万3,000人の応募者から無作為に選んだサクラメントの低所得80世帯に、条件なしで月500ドルを1年間（2023年7月〜2024年6月）",
+        "zh": "从近 13,000 名申请者中随机选出 80 个萨克拉门托低收入家庭，无条件每月发放 500 美元，为期一年（2023 年 7 月至 2024 年 6 月）",
+        "hi": "लगभग 13,000 आवेदकों में से रैंडम रूप से चुने गए 80 कम आय वाले सैक्रामेंटो परिवारों को एक साल (जुलाई 2023–जून 2024) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante un año (julio 2023–junio 2024) para 80 hogares de bajos ingresos de Sacramento elegidos al azar entre casi 13.000 solicitantes",
+        "de": "500 $ im Monat ohne Bedingungen für ein Jahr (Juli 2023 bis Juni 2024) an 80 einkommensschwache Haushalte in Sacramento, zufällig aus fast 13.000 Bewerbungen gezogen",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عام (يوليو 2023–يونيو 2024) لـ80 أسرة منخفضة الدخل في ساكرامنتو اختيرت عشوائيًا من بين نحو 13,000 متقدم"
+      },
+      "result": {
+        "en": "Sacramento State (2025) reported that, by the end, 46% of recipients said they were financially better off vs 19% of the control group; 13% got an eviction or pay-rent notice vs 24%; recipients' food insecurity fell from 51% to 37%. Six months after payments ended, 41% vs 10% still felt better off. Self-reported",
+        "ja": "サクラメント州立大学（2025年）は、終了時に経済的に良くなったと答えた受給者は46%（対照群19%）、立ち退きや家賃支払いの通知を受けたのは13%（同24%）で、受給者の食料不安は51%から37%に下がったと報告。支給終了6か月後も41%対10%で良くなったと感じていた。自己申告",
+        "zh": "萨克拉门托州立大学（2025 年）称，到结束时，46% 的受助者表示经济状况好转，对照组为 19%；收到驱逐或催缴租金通知的比例为 13% 对 24%；受助者的粮食不安全比例从 51% 降至 37%。发放结束六个月后，仍感觉状况好转的比例为 41% 对 10%。均为自我报告",
+        "hi": "Sacramento State (2025) के अनुसार अंत तक 46% प्राप्तकर्ताओं ने कहा कि उनकी आर्थिक हालत बेहतर है, जबकि नियंत्रण समूह में 19%; 13% को बेदख़ली या किराया चुकाने का नोटिस मिला, बनाम 24%; प्राप्तकर्ताओं में खाने की असुरक्षा 51% से घटकर 37% हुई। भुगतान ख़त्म होने के छह महीने बाद भी 41% बनाम 10% बेहतर महसूस कर रहे थे। स्व-रिपोर्टेड",
+        "es": "Sacramento State (2025) informó de que, al final, el 46 % de los beneficiarios dijo estar mejor económicamente, frente al 19 % del grupo de control; el 13 % recibió un aviso de desahucio o de pago del alquiler, frente al 24 %; la inseguridad alimentaria de los beneficiarios bajó del 51 % al 37 %. Seis meses después del último pago, el 41 % frente al 10 % seguía sintiéndose mejor. Datos autodeclarados",
+        "de": "Die Sacramento State (2025) berichtete, dass am Ende 46 % der Empfänger angaben, finanziell besser dazustehen, gegenüber 19 % der Kontrollgruppe; 13 % erhielten eine Räumungsankündigung oder Zahlungsaufforderung für die Miete gegenüber 24 %; die Ernährungsunsicherheit der Empfänger sank von 51 % auf 37 %. Sechs Monate nach dem Ende der Zahlungen fühlten sich noch 41 % zu 10 % besser gestellt. Selbstauskünfte",
+        "ar": "أفادت جامعة ولاية ساكرامنتو (2025) بأنه في النهاية قال 46% من المستفيدين إن وضعهم المالي أفضل مقابل 19% من المجموعة الضابطة؛ وتلقى 13% إشعار إخلاء أو مطالبة بدفع الإيجار مقابل 24%؛ وانخفض انعدام الأمن الغذائي لدى المستفيدين من 51% إلى 37%. وبعد ستة أشهر من انتهاء الدفعات، ظل 41% مقابل 10% يشعرون بأن وضعهم أفضل. بيانات ذاتية الإبلاغ"
+      },
+      "source": "https://www.csus.edu/college/health-human-services/center-health-practice-policy-research/_internal/_documents/uw-gi-cohort-2-report-nr-2025.pdf",
+      "source2": "https://sacramentocityexpress.com/2023/03/17/sacramento-families-now-can-apply-for-500-a-month-basic-income-program/",
+      "us": {
+        "city": "Sacramento",
+        "state": "CA",
+        "start": "2023-07",
+        "end": "2024-06",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 80,
+        "unit": "households",
+        "funders": ["arpa"],
+        "control": true,
+        "elig": "City of Sacramento residents with income below 150% of the California Poverty Measure; picked at random from nearly 13,000 applicants",
+        "eval": {
+          "by": "Sacramento State University School of Social Work (Ethan Evans and colleagues)",
+          "year": 2025,
+          "type": "report",
+          "url": "https://csus.edu/college/health-human-services/center-health-practice-policy-research/research/guaranteed-income-research.html"
+        }
+      }
+    },
+    {
+      "id": "us-elmonte-gi",
+      "years": "2023–2024",
+      "type": "gov",
+      "name": "El Monte Guaranteed Income Pilot",
+      "place": {
+        "en": "El Monte, California, USA",
+        "ja": "アメリカ・カリフォルニア州エルモンテ",
+        "zh": "美国加利福尼亚州埃尔蒙特",
+        "hi": "एल मोंटे, कैलिफ़ोर्निया, अमेरिका",
+        "es": "El Monte, California (EE. UU.)",
+        "de": "El Monte, Kalifornien (USA)",
+        "ar": "إل مونتي، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of El Monte, paid from federal pandemic relief (ARPA); the RAND Corporation ran enrollment and the evaluation with USC",
+        "ja": "エルモンテ市。財源は連邦のコロナ対策資金（ARPA）で、ランド研究所が南カリフォルニア大学（USC）と登録と評価を担当",
+        "zh": "埃尔蒙特市，资金来自联邦疫情纾困款（ARPA）；兰德公司负责登记，并与南加州大学共同开展评估",
+        "hi": "एल मोंटे शहर, पैसा संघीय महामारी राहत (ARPA) से; नामांकन और मूल्यांकन RAND Corporation ने USC के साथ किया",
+        "es": "Ciudad de El Monte, financiado con fondos federales de alivio por la pandemia (ARPA); la RAND Corporation gestionó la inscripción y la evaluación con USC",
+        "de": "Stadt El Monte, bezahlt aus Corona-Hilfen des Bundes (ARPA); die RAND Corporation übernahm die Aufnahme und mit der USC die Evaluation",
+        "ar": "مدينة إل مونتي، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)؛ وتولّت ⁦RAND Corporation⁩ التسجيل والتقييم مع جامعة جنوب كاليفورنيا (⁦USC⁩)"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for a year (first payment July 2023, last scheduled May 31, 2024) to 125 low-income single mothers chosen from more than 2,500 applications",
+        "ja": "2,500件超の応募から選んだ低所得のシングルマザー125人に、条件なしで月500ドルを1年間（初回支給は2023年7月、最終支給は2024年5月31日の予定）",
+        "zh": "从 2,500 多份申请中选出 125 名低收入单身母亲，无条件每月发放 500 美元，为期一年（首次发放于 2023 年 7 月，最后一次计划于 2024 年 5 月 31 日）",
+        "hi": "2,500 से ज़्यादा आवेदनों में से चुनी गई 125 कम आय वाली अकेली माताओं को एक साल (पहला भुगतान जुलाई 2023, आख़िरी तय भुगतान 31 मई 2024) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante un año (primer pago en julio de 2023, último previsto el 31 de mayo de 2024) para 125 madres solas de bajos ingresos elegidas entre más de 2.500 solicitudes",
+        "de": "500 $ im Monat ohne Bedingungen für ein Jahr (erste Zahlung Juli 2023, letzte planmäßig am 31. Mai 2024) an 125 einkommensschwache alleinerziehende Mütter, ausgewählt aus mehr als 2.500 Bewerbungen",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عام (أول دفعة في يوليو 2023، وآخر دفعة مقررة في 31 مايو 2024) لـ125 أمًّا منفردة منخفضة الدخل اختيرت من بين أكثر من 2,500 طلب"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://heysocal.com/?p=288229",
+      "source2": "https://www.nbclosangeles.com/news/local/city-of-el-monte-announces-new-guaranteed-income-program/3123875/",
+      "us": {
+        "city": "El Monte",
+        "state": "CA",
+        "start": "2023-07",
+        "end": "2024-05",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 125,
+        "unit": "people",
+        "funders": ["arpa"],
+        "control": null,
+        "elig": "El Monte single mothers (female head of household, no spouse or partner) with children under 18, income at or below the poverty line, hit financially by COVID-19; chosen from more than 2,500 applications",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-rochester-gbi",
+      "years": "2023–2024",
+      "type": "gov",
+      "name": "Rochester Guaranteed Basic Income Pilot",
+      "place": {
+        "en": "Rochester, New York, USA",
+        "ja": "アメリカ・ニューヨーク州ロチェスター",
+        "zh": "美国纽约州罗切斯特",
+        "hi": "रोचेस्टर, न्यूयॉर्क, अमेरिका",
+        "es": "Rochester, Nueva York (EE. UU.)",
+        "de": "Rochester, New York (USA)",
+        "ar": "روتشستر، نيويورك، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Rochester, paid largely from federal COVID relief money, with a randomized study by Notre Dame's Wilson Sheehan Lab for Economic Opportunities",
+        "ja": "ロチェスター市。主な財源は連邦のコロナ対策資金で、ノートルダム大学Wilson Sheehan Lab for Economic Opportunitiesが無作為化研究",
+        "zh": "罗切斯特市，资金主要来自联邦新冠纾困款，由圣母大学 Wilson Sheehan 经济机会实验室开展随机研究",
+        "hi": "रोचेस्टर शहर, ज़्यादातर पैसा संघीय कोविड राहत से; रैंडमाइज़्ड अध्ययन Notre Dame के Wilson Sheehan Lab for Economic Opportunities का",
+        "es": "Ciudad de Rochester, financiado en gran parte con fondos federales de alivio por la COVID, con un estudio aleatorizado del Wilson Sheehan Lab for Economic Opportunities de Notre Dame",
+        "de": "Stadt Rochester, großteils aus Corona-Hilfen des Bundes bezahlt, mit einer randomisierten Studie des Wilson Sheehan Lab for Economic Opportunities der Notre Dame",
+        "ar": "مدينة روتشستر، بتمويل معظمه من أموال الإغاثة الفدرالية من كوفيد، مع دراسة عشوائية من ⁦Wilson Sheehan Lab for Economic Opportunities⁩ بجامعة نوتردام"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months to 351 low-income residents picked at random from 11,698 eligible applicants, in two cohorts paid between September 2023 and November 2024",
+        "ja": "対象となる応募者1万1,698人から無作為に選んだ低所得住民351人に、条件なしで月500ドルを12か月。2期に分け、2023年9月〜2024年11月に支給",
+        "zh": "从 11,698 名符合条件的申请者中随机选出 351 名低收入居民，无条件每月发放 500 美元，为期 12 个月，分两批于 2023 年 9 月至 2024 年 11 月间发放",
+        "hi": "11,698 पात्र आवेदकों में से रैंडम रूप से चुने गए 351 कम आय वाले निवासियों को 12 महीने तक बिना शर्त हर महीने $500, दो समूहों में, भुगतान सितंबर 2023 से नवंबर 2024 के बीच",
+        "es": "500 $ al mes sin condiciones durante 12 meses para 351 residentes de bajos ingresos elegidos al azar entre 11.698 solicitantes elegibles, en dos cohortes pagadas entre septiembre de 2023 y noviembre de 2024",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate an 351 einkommensschwache Einwohner, zufällig aus 11.698 berechtigten Bewerbungen ausgewählt, in zwei Kohorten mit Zahlungen zwischen September 2023 und November 2024",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا لـ351 من السكان منخفضي الدخل اختيروا عشوائيًا من بين 11,698 متقدمًا مؤهلًا، على دفعتين تلقتا المال بين سبتمبر 2023 ونوفمبر 2024"
+      },
+      "result": {
+        "en": "Notre Dame researchers (reported December 2025), compared with applicants not selected: recipients were nearly three times as likely to have improved savings, 51% less likely to expect material hardship and 25% more likely to be driving a car at the end, with no difference in paying off past debt. Surveyed at the last payment, so no long-term effects; described as modest",
+        "ja": "ノートルダム大学の研究者（2025年12月報告）は落選した応募者と比べ、終了時に受給者は貯蓄が改善した人がほぼ3倍、物質的困窮を見込む人が51%少なく、車を運転している人が25%多かったが、過去の借金の返済に差はなかったと報告。最終支給時の調査のため長期的な効果は分からず、効果は控えめとされる",
+        "zh": "圣母大学研究人员（2025 年 12 月发布）与落选申请者比较：结束时，受助者储蓄改善的可能性接近三倍，预期物质困难的可能性低 51%，开车出行的可能性高 25%，在偿还旧债方面没有差异。调查在最后一次发放时进行，因此不涉及长期效果；研究者称效果有限",
+        "hi": "Notre Dame के शोधकर्ताओं (दिसंबर 2025 में रिपोर्ट) ने न चुने गए आवेदकों से तुलना की: अंत में प्राप्तकर्ताओं की बचत सुधरने की संभावना लगभग तीन गुना थी, भौतिक तंगी की आशंका 51% कम और कार चलाने की संभावना 25% ज़्यादा थी; पुराना क़र्ज़ चुकाने में कोई अंतर नहीं। सर्वे आख़िरी भुगतान पर हुआ, इसलिए लंबे असर नहीं मापे गए; असर को मामूली बताया गया",
+        "es": "Investigadores de Notre Dame (resultados dados a conocer en diciembre de 2025), frente a solicitantes no elegidos: los beneficiarios tenían casi el triple de probabilidad de haber mejorado sus ahorros, un 51 % menos de probabilidad de prever privaciones materiales y un 25 % más de probabilidad de conducir un coche al final, sin diferencia en el pago de deudas pasadas. Encuestados en el último pago, por lo que no hay efectos a largo plazo; descritos como modestos",
+        "de": "Forschende der Notre Dame (berichtet im Dezember 2025) im Vergleich mit nicht ausgewählten Bewerbern: Die Empfänger hatten am Ende fast dreimal so häufig verbesserte Ersparnisse, rechneten zu 51 % seltener mit materieller Not und fuhren zu 25 % häufiger ein Auto, ohne Unterschied bei der Tilgung alter Schulden. Befragt bei der letzten Zahlung, daher keine Langzeitwirkungen; als bescheiden beschrieben",
+        "ar": "باحثو جامعة نوتردام (أُعلن في ديسمبر 2025)، مقارنةً بالمتقدمين غير المختارين: كان احتمال تحسّن مدخرات المستفيدين نحو ثلاثة أضعاف، واحتمال توقعهم ضائقة مادية أقل بنسبة 51%، واحتمال قيادتهم سيارة في النهاية أعلى بنسبة 25%، دون فرق في سداد الديون السابقة. أُجري الاستطلاع عند آخر دفعة، فلا آثار طويلة المدى؛ ووُصفت النتائج بأنها متواضعة"
+      },
+      "source": "https://www.socialscienceregistry.org/trials/14150",
+      "source2": "https://www.wxxinews.org/local-news/2025-12-30/guaranteed-basic-income-trial-program-in-rochester-led-to-modest-improvements-for-recipients-study-says",
+      "us": {
+        "city": "Rochester",
+        "state": "NY",
+        "start": "2023-09",
+        "end": "2024-11",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 351,
+        "unit": "people",
+        "funders": ["arpa"],
+        "control": true,
+        "elig": "Low-income Rochester residents, chosen at random from 11,698 eligible applicants in two cohorts (175 paid September 2023–August 2024, 176 paid December 2023–November 2024)",
+        "eval": {
+          "by": "University of Notre Dame, Wilson Sheehan Lab for Economic Opportunities (Patrick Turner and colleagues)",
+          "year": 2025,
+          "type": "report",
+          "url": "https://www.wxxinews.org/local-news/2025-12-30/guaranteed-basic-income-trial-program-in-rochester-led-to-modest-improvements-for-recipients-study-says"
+        }
+      }
+    },
+    {
+      "id": "us-sf-foster-youth",
+      "years": "2023–2025",
+      "type": "gov",
+      "name": "San Francisco Guaranteed Income Pilot for Young People Who Aged Out of Extended Foster Care",
+      "place": {
+        "en": "San Francisco, California, USA",
+        "ja": "アメリカ・カリフォルニア州サンフランシスコ",
+        "zh": "美国加利福尼亚州旧金山",
+        "hi": "सैन फ़्रांसिस्को, कैलिफ़ोर्निया, अमेरिका",
+        "es": "San Francisco, California (EE. UU.)",
+        "de": "San Francisco, Kalifornien (USA)",
+        "ar": "سان فرانسيسكو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "San Francisco Human Services Agency, with a state grant from the California Department of Social Services, the first state-funded guaranteed income program in the US",
+        "ja": "サンフランシスコ市福祉局。カリフォルニア州社会福祉局の州補助金を受けた、米国初の州が資金を出す保証所得プログラム",
+        "zh": "旧金山公共服务局，获加州社会服务局的州拨款，是美国首个由州政府出资的保障收入项目",
+        "hi": "San Francisco Human Services Agency, California Department of Social Services के राज्य अनुदान से; यह अमेरिका का पहला राज्य-वित्तपोषित गारंटीड इनकम कार्यक्रम है",
+        "es": "Agencia de Servicios Humanos de San Francisco, con una subvención estatal del Departamento de Servicios Sociales de California; el primer programa de ingreso garantizado financiado por un estado en EE. UU.",
+        "de": "Sozialbehörde San Francisco (Human Services Agency) mit einem Zuschuss des kalifornischen Sozialministeriums (California Department of Social Services), das erste vom Bundesstaat finanzierte Programm für garantiertes Einkommen in den USA",
+        "ar": "وكالة الخدمات الإنسانية في سان فرانسيسكو، بمنحة من إدارة الخدمات الاجتماعية في ولاية كاليفورنيا، وهو أول برنامج دخل مضمون تموّله ولاية في الولايات المتحدة"
+      },
+      "paid": {
+        "en": "$1,200 a month with no conditions for 18 months to 150 former foster youth in San Francisco, starting in October 2023",
+        "ja": "サンフランシスコの元里親養育の若者150人に、条件なしで月1,200ドルを18か月。2023年10月に開始",
+        "zh": "自 2023 年 10 月起，向旧金山 150 名曾在寄养系统中的青年无条件每月发放 1,200 美元，为期 18 个月",
+        "hi": "सैन फ़्रांसिस्को के 150 पूर्व फ़ॉस्टर युवाओं को अक्टूबर 2023 से 18 महीने तक बिना शर्त हर महीने $1,200",
+        "es": "1.200 $ al mes sin condiciones durante 18 meses para 150 jóvenes extutelados de San Francisco, a partir de octubre de 2023",
+        "de": "1.200 $ im Monat ohne Bedingungen für 18 Monate an 150 ehemalige Pflegekinder in San Francisco, ab Oktober 2023",
+        "ar": "⁦$1,200⁩ شهريًا بلا شروط لمدة 18 شهرًا لـ150 من الشباب الذين نشؤوا سابقًا في الرعاية البديلة في سان فرانسيسكو، بدءًا من أكتوبر 2023"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://cdss.ca.gov/inforesources/guaranteed-income-pilot-program/pregnant-individuals-and-former-foster-youth",
+      "source2": "https://www.sfhsa.org/about/announcements/first-state-funded-guaranteed-income-program",
+      "us": {
+        "city": "San Francisco",
+        "state": "CA",
+        "start": "2023-10",
+        "end": "2025",
+        "endEstimated": true,
+        "monthly": 1200,
+        "months": 18,
+        "recipients": 150,
+        "unit": "people",
+        "funders": ["public"],
+        "control": false,
+        "elig": "Young people who aged out of extended foster care in San Francisco",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-ventura-vcthrive",
+      "years": "2023–2025",
+      "type": "gov",
+      "name": "VC Thrive Supplemental Income Pilot",
+      "place": {
+        "en": "Ventura County, California, USA",
+        "ja": "アメリカ・カリフォルニア州ベンチュラ郡",
+        "zh": "美国加利福尼亚州文图拉县",
+        "hi": "वेंचुरा काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Ventura, California (EE. UU.)",
+        "de": "Ventura County, Kalifornien (USA)",
+        "ar": "مقاطعة فينتورا، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Ventura County Human Services Agency, one of California's first state-funded guaranteed income pilots, with county matching money; James Storehouse made the payments",
+        "ja": "ベンチュラ郡福祉局。カリフォルニア州で最初期の州資金による保証所得パイロットの一つで、郡も資金を上乗せ。支給はJames Storehouseが担当",
+        "zh": "文图拉县公共服务局，是加州首批由州政府出资的保障收入试点之一，县政府提供配套资金；由 James Storehouse 负责发放",
+        "hi": "Ventura County Human Services Agency, कैलिफ़ोर्निया के पहले राज्य-वित्तपोषित गारंटीड इनकम पायलटों में से एक, काउंटी की मैचिंग राशि के साथ; भुगतान James Storehouse ने किए",
+        "es": "Agencia de Servicios Humanos del condado de Ventura, uno de los primeros pilotos de ingreso garantizado financiados por el estado de California, con fondos complementarios del condado; James Storehouse hizo los pagos",
+        "de": "Sozialbehörde von Ventura County (Human Services Agency), eines der ersten vom Bundesstaat Kalifornien finanzierten Pilotprojekte für garantiertes Einkommen, mit ergänzenden Mitteln des Countys; James Storehouse zahlte aus",
+        "ar": "وكالة الخدمات الإنسانية في مقاطعة فينتورا، وهو من أوائل تجارب الدخل المضمون التي تموّلها ولاية كاليفورنيا، مع أموال مقابلة من المقاطعة؛ وتولّت ⁦James Storehouse⁩ صرف الدفعات"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 18 months, from October 2023, to 150 former foster youth aged 21–26 who aged out of care in Ventura County",
+        "ja": "ベンチュラ郡で里親養育の年齢を超えた21〜26歳の元里親養育の若者150人に、2023年10月から条件なしで月1,000ドルを18か月",
+        "zh": "自 2023 年 10 月起，向 150 名在文图拉县超龄离开寄养系统的 21 至 26 岁青年无条件每月发放 1,000 美元，为期 18 个月",
+        "hi": "वेंचुरा काउंटी में फ़ॉस्टर केयर से उम्र के कारण बाहर हुए 21–26 साल के 150 पूर्व फ़ॉस्टर युवाओं को अक्टूबर 2023 से 18 महीने तक बिना शर्त हर महीने $1,000",
+        "es": "1.000 $ al mes sin condiciones durante 18 meses, desde octubre de 2023, para 150 jóvenes extutelados de 21 a 26 años que salieron del sistema de acogida en el condado de Ventura",
+        "de": "1.000 $ im Monat ohne Bedingungen für 18 Monate, ab Oktober 2023, an 150 ehemalige Pflegekinder von 21 bis 26 Jahren, die in Ventura County aus der Pflegeunterbringung herausgewachsen waren",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 18 شهرًا، بدءًا من أكتوبر 2023، لـ150 من الشباب الذين نشؤوا سابقًا في الرعاية البديلة تتراوح أعمارهم بين 21 و26 عامًا وتجاوزوا سن الرعاية في مقاطعة فينتورا"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://cdss.ca.gov/inforesources/guaranteed-income-pilot-program/pregnant-individuals-and-former-foster-youth",
+      "source2": "https://keyt.com/?p=989680",
+      "us": {
+        "city": "Ventura County",
+        "state": "CA",
+        "start": "2023-10",
+        "end": "2025",
+        "endEstimated": true,
+        "monthly": 1000,
+        "months": 18,
+        "recipients": 150,
+        "unit": "people",
+        "funders": ["public"],
+        "control": null,
+        "elig": "Former foster youth aged 21–26 who aged out of care in Ventura County, under HUD low-income limits",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-ca-ifoster",
+      "years": "2023–2025",
+      "type": "ngo",
+      "name": "California Guaranteed Income Pilot for Former Foster Youth (iFoster, statewide)",
+      "place": {
+        "en": "California, USA (statewide)",
+        "ja": "アメリカ・カリフォルニア州（州全域）",
+        "zh": "美国加利福尼亚州（全州）",
+        "hi": "कैलिफ़ोर्निया, अमेरिका (पूरा राज्य)",
+        "es": "California (EE. UU.), en todo el estado",
+        "de": "Kalifornien (USA, landesweit)",
+        "ar": "كاليفورنيا، الولايات المتحدة (على مستوى الولاية)"
+      },
+      "who": {
+        "en": "iFoster, a national nonprofit for foster youth, with a grant from the California Department of Social Services",
+        "ja": "里親養育の若者を支援する全国的な非営利団体iFoster。カリフォルニア州社会福祉局の補助金を受けて実施",
+        "zh": "全国性寄养青年非营利组织 iFoster，获加州社会服务局拨款",
+        "hi": "iFoster, फ़ॉस्टर युवाओं के लिए एक राष्ट्रीय ग़ैर-लाभकारी संस्था, California Department of Social Services के अनुदान से",
+        "es": "iFoster, organización nacional sin ánimo de lucro para jóvenes en acogida, con una subvención del Departamento de Servicios Sociales de California",
+        "de": "iFoster, eine landesweite gemeinnützige Organisation für Pflegekinder, mit einem Zuschuss des kalifornischen Sozialministeriums (California Department of Social Services)",
+        "ar": "⁦iFoster⁩، منظمة وطنية غير ربحية لشباب الرعاية البديلة، بمنحة من إدارة الخدمات الاجتماعية في ولاية كاليفورنيا"
+      },
+      "paid": {
+        "en": "$750 a month with no conditions for 18 months to 354 young people leaving foster care across California, starting in November 2023",
+        "ja": "カリフォルニア州全域で里親養育を離れる若者354人に、条件なしで月750ドルを18か月。2023年11月に開始",
+        "zh": "自 2023 年 11 月起，向加州各地 354 名离开寄养系统的年轻人无条件每月发放 750 美元，为期 18 个月",
+        "hi": "पूरे कैलिफ़ोर्निया में फ़ॉस्टर केयर छोड़ रहे 354 युवाओं को नवंबर 2023 से 18 महीने तक बिना शर्त हर महीने $750",
+        "es": "750 $ al mes sin condiciones durante 18 meses para 354 jóvenes que salían del sistema de acogida en toda California, a partir de noviembre de 2023",
+        "de": "750 $ im Monat ohne Bedingungen für 18 Monate an 354 junge Menschen in ganz Kalifornien, die die Pflegeunterbringung verlassen, ab November 2023",
+        "ar": "⁦$750⁩ شهريًا بلا شروط لمدة 18 شهرًا لـ354 شابًا يغادرون الرعاية البديلة في أنحاء كاليفورنيا، بدءًا من نوفمبر 2023"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://cdss.ca.gov/inforesources/guaranteed-income-pilot-program/pregnant-individuals-and-former-foster-youth",
+      "us": {
+        "city": "California (statewide)",
+        "state": "CA",
+        "start": "2023-11",
+        "end": "2025",
+        "endEstimated": true,
+        "monthly": 750,
+        "months": 18,
+        "recipients": 354,
+        "unit": "people",
+        "funders": ["public"],
+        "control": false,
+        "elig": "Young people leaving extended foster care in California, outside the counties that ran their own state-funded pilots",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-flint-rxkids",
+      "years": "2024–",
+      "type": "ngo",
+      "name": "Rx Kids",
+      "place": {
+        "en": "Flint, Michigan, USA (since expanded to about 42 Michigan communities, including Detroit)",
+        "ja": "アメリカ・ミシガン州フリント（その後デトロイトを含むミシガン州の約42地域に拡大）",
+        "zh": "美国密歇根州弗林特（此后已扩展到包括底特律在内的约 42 个密歇根州社区）",
+        "hi": "फ़्लिंट, मिशिगन, अमेरिका (अब डेट्रॉइट सहित मिशिगन के लगभग 42 समुदायों तक फैला)",
+        "es": "Flint, Míchigan (EE. UU.) (ampliado después a unas 42 comunidades de Míchigan, entre ellas Detroit)",
+        "de": "Flint, Michigan (USA; inzwischen auf rund 42 Gemeinden in Michigan ausgeweitet, darunter Detroit)",
+        "ar": "فلينت، ميشيغان، الولايات المتحدة (توسّع منذ ذلك الحين إلى نحو 42 مجتمعًا في ميشيغان، منها ديترويت)"
+      },
+      "who": {
+        "en": "Michigan State University, with GiveDirectly delivering the money, funded by the State of Michigan and private donors",
+        "ja": "ミシガン州立大学。支給はGiveDirectlyが担当し、資金はミシガン州と個人の寄付者",
+        "zh": "密歇根州立大学，由 GiveDirectly 负责发放，资金来自密歇根州政府和私人捐助者",
+        "hi": "Michigan State University, पैसा GiveDirectly ने पहुँचाया; वित्तपोषण मिशिगन राज्य और निजी दानदाताओं से",
+        "es": "Universidad Estatal de Míchigan, con GiveDirectly entregando el dinero, financiado por el estado de Míchigan y donantes privados",
+        "de": "Michigan State University, mit GiveDirectly für die Auszahlung, finanziert vom Bundesstaat Michigan und privaten Spendern",
+        "ar": "جامعة ولاية ميشيغان، مع ⁦GiveDirectly⁩ لصرف الأموال، بتمويل من ولاية ميشيغان ومتبرعين خاصين"
+      },
+      "paid": {
+        "en": "$1,500 during pregnancy and then $500 a month for the baby's first year, with no conditions or income test, to every mother in Flint from 2024; by May 2026 it had reached more than 11,000 families in 42 Michigan communities",
+        "ja": "2024年からフリントのすべての母親に、条件や所得制限なしで妊娠中に1,500ドル、その後赤ちゃんの最初の1年間は月500ドル。2026年5月までにミシガン州42地域の1万1,000家族超に届いた",
+        "zh": "自 2024 年起，向弗林特每一位母亲发放孕期 1,500 美元，之后在婴儿出生第一年每月 500 美元，无任何条件，也不审查收入；到 2026 年 5 月，已覆盖密歇根州 42 个社区的 11,000 多个家庭",
+        "hi": "2024 से फ़्लिंट की हर माँ को, बिना शर्त या आय जाँच के, गर्भावस्था में $1,500 और फिर बच्चे के पहले साल में हर महीने $500; मई 2026 तक यह मिशिगन के 42 समुदायों के 11,000 से ज़्यादा परिवारों तक पहुँचा",
+        "es": "1.500 $ durante el embarazo y luego 500 $ al mes durante el primer año del bebé, sin condiciones ni requisito de ingresos, para todas las madres de Flint desde 2024; en mayo de 2026 había llegado a más de 11.000 familias en 42 comunidades de Míchigan",
+        "de": "1.500 $ in der Schwangerschaft und dann 500 $ im Monat im ersten Lebensjahr des Babys, ohne Bedingungen oder Einkommensprüfung, an jede Mutter in Flint ab 2024; bis Mai 2026 erreichte es mehr als 11.000 Familien in 42 Gemeinden in Michigan",
+        "ar": "⁦$1,500⁩ أثناء الحمل ثم ⁦$500⁩ شهريًا خلال السنة الأولى من عمر الطفل، بلا شروط ولا اختبار للدخل، لكل أم في فلينت بدءًا من 2024؛ وبحلول مايو 2026 وصل إلى أكثر من 11,000 أسرة في 42 مجتمعًا في ميشيغان"
+      },
+      "result": {
+        "en": "A Lancet Public Health study (May 2026; about 4,500 Flint births, 2021–mid-2025, compared with similar Michigan cities) estimated 18% fewer preterm births, 27% less low birthweight and about 29% fewer NICU admissions after the 2024 launch; quasi-experimental, by researchers from the program's own universities",
+        "ja": "Lancet Public Healthの研究（2026年5月。2021年〜2025年半ばのフリントの出生約4,500件を、ミシガン州の似た都市と比較）は、2024年の開始後に早産が18%、低出生体重が27%、NICU入院が約29%減ったと推計。準実験的研究で、プログラムを担う大学の研究者による",
+        "zh": "一项《柳叶刀·公共卫生》研究（2026 年 5 月；约 4,500 例弗林特出生，2021 年至 2025 年年中，与密歇根州类似城市比较）估计，2024 年启动后早产减少 18%，低出生体重减少 27%，新生儿重症监护室（NICU）入院减少约 29%；为准实验研究，作者来自该项目自身的合作大学",
+        "hi": "Lancet Public Health के एक अध्ययन (मई 2026; फ़्लिंट में लगभग 4,500 जन्म, 2021–2025 के मध्य तक, मिशिगन के मिलते-जुलते शहरों से तुलना) ने अनुमान लगाया कि 2024 की शुरुआत के बाद समय से पहले जन्म 18% कम, कम जन्म-वज़न 27% कम और NICU में भर्ती लगभग 29% कम हुई; अर्ध-प्रायोगिक (quasi-experimental), और कार्यक्रम से जुड़े विश्वविद्यालयों के ही शोधकर्ताओं द्वारा",
+        "es": "Un estudio de Lancet Public Health (mayo de 2026; unos 4.500 nacimientos en Flint, de 2021 a mediados de 2025, comparados con ciudades similares de Míchigan) estimó un 18 % menos de partos prematuros, un 27 % menos de bajo peso al nacer y alrededor de un 29 % menos de ingresos en la UCI neonatal tras el lanzamiento de 2024; cuasiexperimental, hecho por investigadores de las propias universidades del programa",
+        "de": "Eine Studie in The Lancet Public Health (Mai 2026; rund 4.500 Geburten in Flint von 2021 bis Mitte 2025, verglichen mit ähnlichen Städten in Michigan) schätzte nach dem Start 2024 18 % weniger Frühgeburten, 27 % weniger niedriges Geburtsgewicht und etwa 29 % weniger Aufnahmen auf die Neugeborenen-Intensivstation; quasi-experimentell, von Forschenden der Universitäten, die das Programm selbst tragen",
+        "ar": "قدّرت دراسة في ⁦Lancet Public Health⁩ (مايو 2026؛ نحو 4,500 ولادة في فلينت بين 2021 ومنتصف 2025، مقارنةً بمدن مماثلة في ميشيغان) انخفاض الولادات المبكرة 18%، وانخفاض نقص الوزن عند الولادة 27%، وانخفاض حالات الإدخال إلى وحدة العناية المركزة لحديثي الولادة نحو 29% بعد الإطلاق في 2024؛ دراسة شبه تجريبية أجراها باحثون من الجامعات المشاركة في البرنامج نفسه"
+      },
+      "source": "https://www.eurekalert.org/news-releases/1129390",
+      "source2": "https://rxkids.org/",
+      "us": {
+        "city": "Flint",
+        "state": "MI",
+        "start": "2024",
+        "end": null,
+        "monthly": 500,
+        "months": 12,
+        "recipients": 11000,
+        "unit": "households",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "Every expectant mother in a participating community, with no income test; enrol from 16+ weeks of pregnancy until the baby is six months old",
+        "eval": {
+          "by": "Michigan State University and University of Michigan researchers",
+          "year": 2026,
+          "type": "peer-reviewed",
+          "url": "https://www.eurekalert.org/news-releases/1129390"
+        }
+      }
+    },
+    {
+      "id": "us-atlanta-in-her-hands-westside",
+      "years": "2024–",
+      "type": "ngo",
+      "name": "In Her Hands (second cohort, Atlanta's west side)",
+      "place": {
+        "en": "Atlanta (Vine City and English Avenue), Georgia, USA",
+        "ja": "アメリカ・ジョージア州アトランタ（バインシティとイングリッシュ・アベニュー）",
+        "zh": "美国佐治亚州亚特兰大（藤城和英格利希大道）",
+        "hi": "अटलांटा (वाइन सिटी और इंग्लिश एवेन्यू), जॉर्जिया, अमेरिका",
+        "es": "Atlanta (Vine City y English Avenue), Georgia (EE. UU.)",
+        "de": "Atlanta (Vine City und English Avenue), Georgia (USA)",
+        "ar": "أتلانتا (حيّا فاين سيتي وإنغلش أفنيو)، جورجيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Georgia Resilience and Opportunity Fund (GRO Fund), expanded with a $6.2 million grant from the Arthur M. Blank Family Foundation",
+        "ja": "Georgia Resilience and Opportunity Fund（GRO Fund）。アーサー・M・ブランク家族財団の620万ドルの補助金で拡大",
+        "zh": "佐治亚韧性与机会基金（GRO Fund），借助亚瑟·M·布兰克家族基金会 620 万美元的拨款扩大规模",
+        "hi": "Georgia Resilience and Opportunity Fund (GRO Fund), Arthur M. Blank Family Foundation के $62 लाख के अनुदान से विस्तार",
+        "es": "Georgia Resilience and Opportunity Fund (GRO Fund), ampliado con una subvención de 6,2 millones de dólares de la Arthur M. Blank Family Foundation",
+        "de": "Georgia Resilience and Opportunity Fund (GRO Fund), ausgeweitet mit einem Zuschuss von 6,2 Mio. $ der Arthur M. Blank Family Foundation",
+        "ar": "⁦Georgia Resilience and Opportunity Fund⁩ (⁦GRO Fund⁩)، وتوسّع بمنحة قدرها 6.2 مليون دولار من ⁦Arthur M. Blank Family Foundation⁩"
+      },
+      "paid": {
+        "en": "An average of $1,000 a month with no conditions for 36 months from 2024 to 270 women on Atlanta's west side, with the option of a smaller monthly amount plus a lump sum",
+        "ja": "アトランタ西部の女性270人に、2024年から条件なしで平均月1,000ドルを36か月。月額を少なくして一時金を受け取る選択肢もある",
+        "zh": "自 2024 年起，向亚特兰大西区 270 名女性无条件平均每月发放 1,000 美元，为期 36 个月，也可选择较少的月度金额加一次性款项",
+        "hi": "अटलांटा के वेस्ट साइड की 270 महिलाओं को 2024 से 36 महीने तक बिना शर्त हर महीने औसतन $1,000, साथ में कम मासिक राशि और एकमुश्त रकम का विकल्प",
+        "es": "Una media de 1.000 $ al mes sin condiciones durante 36 meses desde 2024 para 270 mujeres del oeste de Atlanta, con la opción de un monto mensual menor más una suma única",
+        "de": "Durchschnittlich 1.000 $ im Monat ohne Bedingungen für 36 Monate ab 2024 an 270 Frauen auf der Westseite Atlantas, wahlweise mit einem kleineren Monatsbetrag plus Einmalzahlung",
+        "ar": "⁦$1,000⁩ شهريًا في المتوسط بلا شروط لمدة 36 شهرًا بدءًا من 2024 لـ270 امرأة في الجانب الغربي من أتلانتا، مع خيار مبلغ شهري أصغر إضافة إلى دفعة مجمّعة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://policiesforaction.org/blog/her-hands-path-financial-security-black-women-georgia",
+      "source2": "https://atlanta.capitalbnews.org/guaranteed-income-atlanta",
+      "us": {
+        "city": "Atlanta",
+        "state": "GA",
+        "start": "2024",
+        "end": null,
+        "monthly": 1000,
+        "months": 36,
+        "recipients": 270,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Women on Atlanta's west side (Vine City and English Avenue); other criteria not stated in the sources read",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-humboldt-hip",
+      "years": "2024–2025",
+      "type": "ngo",
+      "name": "Humboldt Income Program",
+      "place": {
+        "en": "Humboldt County, California, USA",
+        "ja": "アメリカ・カリフォルニア州ハンボルト郡",
+        "zh": "美国加利福尼亚州洪堡县",
+        "hi": "हम्बोल्ट काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Humboldt, California (EE. UU.)",
+        "de": "Humboldt County, Kalifornien (USA)",
+        "ar": "مقاطعة همبولت، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "McKinleyville Family Resource Center, a nonprofit, with a California state grant and local donations",
+        "ja": "非営利団体マッキンリービル家族資源センター。カリフォルニア州の補助金と地元の寄付で実施",
+        "zh": "非营利组织麦金利维尔家庭资源中心，获加州州政府拨款和当地捐款",
+        "hi": "McKinleyville Family Resource Center, एक ग़ैर-लाभकारी संस्था, कैलिफ़ोर्निया राज्य के अनुदान और स्थानीय दान से",
+        "es": "McKinleyville Family Resource Center, una organización sin ánimo de lucro, con una subvención del estado de California y donaciones locales",
+        "de": "McKinleyville Family Resource Center, eine gemeinnützige Organisation, mit einem Zuschuss des Bundesstaats Kalifornien und lokalen Spenden",
+        "ar": "⁦McKinleyville Family Resource Center⁩، منظمة غير ربحية، بمنحة من ولاية كاليفورنيا وتبرعات محلية"
+      },
+      "paid": {
+        "en": "$920 a month with no conditions for 18 months to 150 low-income pregnant people in Humboldt County, from January 2024; another 100 applicants were randomly assigned to get $20 a month as a control group",
+        "ja": "ハンボルト郡の低所得の妊娠中の150人に、2024年1月から条件なしで月920ドルを18か月。別の応募者100人を無作為に割り当て、対照群として月20ドルを支給",
+        "zh": "自 2024 年 1 月起，向洪堡县 150 名低收入孕妇无条件每月发放 920 美元，为期 18 个月；另有 100 名申请者被随机分入对照组，每月领取 20 美元",
+        "hi": "हम्बोल्ट काउंटी के 150 कम आय वाले गर्भवती लोगों को जनवरी 2024 से 18 महीने तक बिना शर्त हर महीने $920; 100 और आवेदकों को नियंत्रण समूह के रूप में रैंडम रूप से चुनकर हर महीने $20 दिए गए",
+        "es": "920 $ al mes sin condiciones durante 18 meses para 150 personas embarazadas de bajos ingresos del condado de Humboldt, desde enero de 2024; otros 100 solicitantes fueron asignados al azar a recibir 20 $ al mes como grupo de control",
+        "de": "920 $ im Monat ohne Bedingungen für 18 Monate an 150 einkommensschwache Schwangere in Humboldt County, ab Januar 2024; weitere 100 Bewerberinnen erhielten per Zufall als Kontrollgruppe 20 $ im Monat",
+        "ar": "⁦$920⁩ شهريًا بلا شروط لمدة 18 شهرًا لـ150 من الحوامل منخفضي الدخل في مقاطعة همبولت، بدءًا من يناير 2024؛ ووُزّع 100 متقدم آخرون عشوائيًا للحصول على ⁦$20⁩ شهريًا كمجموعة ضابطة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.northcoastjournal.com/news-2/guaranteed-income-28905899/",
+      "source2": "https://cdss.ca.gov/inforesources/guaranteed-income-pilot-program/pregnant-individuals-and-former-foster-youth",
+      "us": {
+        "city": "Humboldt County",
+        "state": "CA",
+        "start": "2024-01",
+        "end": "2025",
+        "endEstimated": true,
+        "monthly": 920,
+        "months": 18,
+        "recipients": 150,
+        "unit": "people",
+        "funders": ["public", "philanthropic"],
+        "control": true,
+        "elig": "Humboldt County residents 18+, under 28 weeks pregnant at enrollment, income at or below 200% of the federal poverty level, referred by a partner health or social service agency; randomly assigned to $920 or to a $20-a-month control group",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-inland-socal-uw",
+      "years": "2024",
+      "type": "ngo",
+      "name": "Inland SoCal United Way Guaranteed Income Pilot",
+      "place": {
+        "en": "Riverside and San Bernardino counties, California, USA",
+        "ja": "アメリカ・カリフォルニア州リバーサイド郡とサンバーナーディーノ郡",
+        "zh": "美国加利福尼亚州里弗赛德县和圣贝纳迪诺县",
+        "hi": "रिवरसाइड और सैन बर्नार्डिनो काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condados de Riverside y San Bernardino, California (EE. UU.)",
+        "de": "Countys Riverside und San Bernardino, Kalifornien (USA)",
+        "ar": "مقاطعتا ريفرسايد وسان برناردينو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Inland Southern California United Way, the largest of California's seven state-funded guaranteed income pilots, with county and foundation money",
+        "ja": "Inland Southern California United Way。州が資金を出すカリフォルニア州の7つの保証所得パイロットで最大のもので、郡と財団の資金も入る",
+        "zh": "南加州内陆联合之路（Inland Southern California United Way），是加州七个州政府出资的保障收入试点中规模最大的，另有县和基金会资金",
+        "hi": "Inland Southern California United Way, कैलिफ़ोर्निया के सात राज्य-वित्तपोषित गारंटीड इनकम पायलटों में सबसे बड़ा, काउंटी और फ़ाउंडेशन के पैसे के साथ",
+        "es": "Inland Southern California United Way, el mayor de los siete pilotos de ingreso garantizado financiados por el estado de California, con dinero de los condados y de fundaciones",
+        "de": "Inland Southern California United Way, das größte der sieben vom Bundesstaat finanzierten Pilotprojekte für garantiertes Einkommen in Kalifornien, mit Mitteln der Countys und von Stiftungen",
+        "ar": "⁦Inland Southern California United Way⁩، وهي أكبر تجارب الدخل المضمون السبع التي تموّلها ولاية كاليفورنيا، بأموال من المقاطعتين ومؤسسات"
+      },
+      "paid": {
+        "en": "$600 a month with no conditions for 12 months, from January 2024, to 409 pregnant people in Riverside County, plus $750 a month for 18 months to 35 former foster youth in Riverside and San Bernardino counties",
+        "ja": "リバーサイド郡の妊娠中の409人に、2024年1月から条件なしで月600ドルを12か月。加えて、リバーサイド郡とサンバーナーディーノ郡の元里親養育の若者35人に月750ドルを18か月",
+        "zh": "自 2024 年 1 月起，向里弗赛德县 409 名孕妇无条件每月发放 600 美元，为期 12 个月；另向里弗赛德县和圣贝纳迪诺县 35 名曾在寄养系统中的青年每月发放 750 美元，为期 18 个月",
+        "hi": "रिवरसाइड काउंटी के 409 गर्भवती लोगों को जनवरी 2024 से 12 महीने तक बिना शर्त हर महीने $600, साथ ही रिवरसाइड और सैन बर्नार्डिनो काउंटी के 35 पूर्व फ़ॉस्टर युवाओं को 18 महीने तक हर महीने $750",
+        "es": "600 $ al mes sin condiciones durante 12 meses, desde enero de 2024, para 409 personas embarazadas del condado de Riverside, más 750 $ al mes durante 18 meses para 35 jóvenes extutelados de los condados de Riverside y San Bernardino",
+        "de": "600 $ im Monat ohne Bedingungen für 12 Monate, ab Januar 2024, an 409 Schwangere in Riverside County, dazu 750 $ im Monat für 18 Monate an 35 ehemalige Pflegekinder in den Countys Riverside und San Bernardino",
+        "ar": "⁦$600⁩ شهريًا بلا شروط لمدة 12 شهرًا، بدءًا من يناير 2024، لـ409 من الحوامل في مقاطعة ريفرسايد، إضافة إلى ⁦$750⁩ شهريًا لمدة 18 شهرًا لـ35 من الشباب الذين نشؤوا سابقًا في الرعاية البديلة في مقاطعتي ريفرسايد وسان برناردينو"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://cdss.ca.gov/inforesources/guaranteed-income-pilot-program/pregnant-individuals-and-former-foster-youth",
+      "source2": "https://laist.com/brief/news/guaranteed-income-in-ie",
+      "us": {
+        "city": "Riverside County",
+        "state": "CA",
+        "start": "2024-01",
+        "end": "2024",
+        "endEstimated": true,
+        "monthly": 600,
+        "months": 12,
+        "recipients": 444,
+        "unit": "people",
+        "funders": ["public", "philanthropic"],
+        "control": null,
+        "elig": "Pregnant people 18+ in Riverside County, within the first six months of pregnancy at application, household income under $90,616 a year, referred by partner agencies; plus former foster youth in Riverside and San Bernardino counties",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-annarbor-giga2",
+      "years": "2024–2025",
+      "type": "gov",
+      "name": "Guaranteed Income to Grow Ann Arbor (GIG A2)",
+      "place": {
+        "en": "Ann Arbor, Michigan, USA",
+        "ja": "アメリカ・ミシガン州アナーバー",
+        "zh": "美国密歇根州安娜堡",
+        "hi": "ऐन आर्बर, मिशिगन, अमेरिका",
+        "es": "Ann Arbor, Míchigan (EE. UU.)",
+        "de": "Ann Arbor, Michigan (USA)",
+        "ar": "آن آربر، ميشيغان، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Ann Arbor, paid from federal pandemic relief (ARPA); the University of Michigan's Poverty Solutions ran and evaluated it",
+        "ja": "アナーバー市。財源は連邦のコロナ対策資金（ARPA）で、ミシガン大学Poverty Solutionsが運営と評価",
+        "zh": "安娜堡市，资金来自联邦疫情纾困款（ARPA）；由密歇根大学 Poverty Solutions 运营和评估",
+        "hi": "ऐन आर्बर शहर, पैसा संघीय महामारी राहत (ARPA) से; इसे University of Michigan की Poverty Solutions ने चलाया और इसका मूल्यांकन किया",
+        "es": "Ciudad de Ann Arbor, financiado con fondos federales de alivio por la pandemia (ARPA); Poverty Solutions de la Universidad de Míchigan lo gestionó y evaluó",
+        "de": "Stadt Ann Arbor, bezahlt aus Corona-Hilfen des Bundes (ARPA); Poverty Solutions der University of Michigan führte das Programm durch und evaluierte es",
+        "ar": "مدينة آن آربر، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)؛ وتولّى ⁦Poverty Solutions⁩ بجامعة ميشيغان إدارته وتقييمه"
+      },
+      "paid": {
+        "en": "$528 a month with no conditions for two years (January 2024–December 2025) to 100 low-income entrepreneurs and gig workers chosen at random from over 1,000 applicants; another 100 got $25 a month as a comparison group",
+        "ja": "1,000人超の応募者から無作為に選んだ低所得の起業家とギグワーカー100人に、条件なしで月528ドルを2年間（2024年1月〜2025年12月）。別の100人が比較群として月25ドル",
+        "zh": "从 1,000 多名申请者中随机选出 100 名低收入创业者和零工从业者，无条件每月发放 528 美元，为期两年（2024 年 1 月至 2025 年 12 月）；另有 100 人每月领取 25 美元，作为比较组",
+        "hi": "1,000 से ज़्यादा आवेदकों में से रैंडम रूप से चुने गए 100 कम आय वाले उद्यमियों और गिग कामगारों को दो साल (जनवरी 2024–दिसंबर 2025) तक बिना शर्त हर महीने $528; अन्य 100 को तुलना समूह के रूप में हर महीने $25 मिले",
+        "es": "528 $ al mes sin condiciones durante dos años (enero 2024–diciembre 2025) para 100 emprendedores y trabajadores de plataformas de bajos ingresos elegidos al azar entre más de 1.000 solicitantes; otros 100 recibieron 25 $ al mes como grupo de comparación",
+        "de": "528 $ im Monat ohne Bedingungen für zwei Jahre (Januar 2024 bis Dezember 2025) an 100 einkommensschwache Selbstständige und Gig-Arbeiter, zufällig aus über 1.000 Bewerbungen ausgewählt; weitere 100 erhielten als Vergleichsgruppe 25 $ im Monat",
+        "ar": "⁦$528⁩ شهريًا بلا شروط لمدة عامين (يناير 2024–ديسمبر 2025) لـ100 من رواد الأعمال والعاملين في الأعمال المؤقتة منخفضي الدخل اختيروا عشوائيًا من بين أكثر من 1,000 متقدم؛ وحصل 100 آخرون على ⁦$25⁩ شهريًا كمجموعة مقارنة"
+      },
+      "result": {
+        "en": "U-M Poverty Solutions' Year 1 report (January 2026, 100 recipients vs 100 comparison) found no statistically significant differences in food, housing or utility insecurity after one year; both groups had food insecurity of 58–61%. Recipients said they spent mostly on food (68%) and household supplies (60%), and interviewees described less stress. Preliminary; final report due in 2026",
+        "ja": "ミシガン大学Poverty Solutionsの1年目報告（2026年1月、受給者100人対比較群100人）は、1年後の食料・住まい・光熱費の不安に統計的に有意な差はなかったとした。食料不安は両群とも58〜61%。受給者の主な使い道は食料（68%）と日用品（60%）で、聞き取りではストレスの軽減が語られた。暫定結果で、最終報告は2026年の予定",
+        "zh": "密歇根大学 Poverty Solutions 的第一年报告（2026 年 1 月，100 名受助者对 100 名比较组成员）发现，一年后在粮食、住房或水电费不安全方面没有统计上显著的差异；两组的粮食不安全比例均为 58% 至 61%。受助者表示钱主要花在食品（68%）和家庭用品（60%）上，受访者称压力减轻。为初步结果，最终报告预计 2026 年发布",
+        "hi": "U-M Poverty Solutions की पहले साल की रिपोर्ट (जनवरी 2026, 100 प्राप्तकर्ता बनाम 100 तुलना) में एक साल बाद खाने, आवास या बिजली-पानी की असुरक्षा में कोई सांख्यिकीय रूप से महत्वपूर्ण अंतर नहीं मिला; दोनों समूहों में खाने की असुरक्षा 58–61% थी। प्राप्तकर्ताओं ने कहा कि वे ज़्यादातर खाने (68%) और घरेलू सामान (60%) पर ख़र्च करते हैं, और इंटरव्यू देने वालों ने कम तनाव बताया। प्रारंभिक; अंतिम रिपोर्ट 2026 में आनी है",
+        "es": "El informe del primer año de Poverty Solutions de U-M (enero de 2026; 100 beneficiarios frente a 100 de comparación) no halló diferencias estadísticamente significativas en inseguridad alimentaria, de vivienda o de suministros tras un año; ambos grupos tenían una inseguridad alimentaria del 58–61 %. Los beneficiarios dijeron gastar sobre todo en comida (68 %) y artículos del hogar (60 %), y los entrevistados describieron menos estrés. Preliminar; el informe final se espera en 2026",
+        "de": "Der Bericht von U-M Poverty Solutions zum ersten Jahr (Januar 2026, 100 Empfänger gegenüber 100 in der Vergleichsgruppe) fand nach einem Jahr keine statistisch signifikanten Unterschiede bei Unsicherheit in Ernährung, Wohnen oder Versorgungskosten; in beiden Gruppen lag die Ernährungsunsicherheit bei 58 bis 61 %. Die Empfänger gaben das Geld nach eigenen Angaben vor allem für Lebensmittel (68 %) und Haushaltsbedarf (60 %) aus, und Interviewte schilderten weniger Stress. Vorläufig; der Abschlussbericht wird 2026 erwartet",
+        "ar": "لم يجد تقرير السنة الأولى من ⁦Poverty Solutions⁩ بجامعة ميشيغان (يناير 2026، 100 مستفيد مقابل 100 في مجموعة المقارنة) فروقًا دالة إحصائيًا في انعدام الأمن الغذائي أو السكني أو في القدرة على دفع فواتير المرافق بعد عام؛ وبلغ انعدام الأمن الغذائي في المجموعتين 58–61%. وقال المستفيدون إنهم أنفقوا أساسًا على الطعام (68%) واللوازم المنزلية (60%)، ووصف من أُجريت معهم مقابلات توترًا أقل. نتائج أولية؛ والتقرير النهائي متوقع في 2026"
+      },
+      "source": "https://poverty.umich.edu/files/2026/01/GIGA2-Year-1-report-final.pdf",
+      "source2": "https://a2independent.com/2024/01/23/ann-arbors-guaranteed-income-program-starts-giving-out-528-monthly-payments/",
+      "us": {
+        "city": "Ann Arbor",
+        "state": "MI",
+        "start": "2024-01",
+        "end": "2025-12",
+        "monthly": 528,
+        "months": 24,
+        "recipients": 100,
+        "unit": "people",
+        "funders": ["arpa"],
+        "control": true,
+        "elig": "Ann Arbor residents with household income at or below 225% of the federal poverty line who do gig work, informal or small business; randomly selected from over 1,000 applicants",
+        "eval": {
+          "by": "Poverty Solutions, University of Michigan",
+          "year": 2026,
+          "type": "report",
+          "url": "https://poverty.umich.edu/files/2026/01/GIGA2-Year-1-report-final.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-boulder-elevate",
+      "years": "2024–2025",
+      "type": "gov",
+      "name": "Elevate Boulder",
+      "place": {
+        "en": "Boulder, Colorado, USA",
+        "ja": "アメリカ・コロラド州ボルダー",
+        "zh": "美国科罗拉多州博尔德",
+        "hi": "बोल्डर, कोलोराडो, अमेरिका",
+        "es": "Boulder, Colorado (EE. UU.)",
+        "de": "Boulder, Colorado (USA)",
+        "ar": "بولدر، كولورادو، الولايات المتحدة"
+      },
+      "who": {
+        "en": "The City of Boulder, paid mainly from federal pandemic relief (ARPA), with help from the Community Foundation Boulder County and private donors",
+        "ja": "ボルダー市。主な財源は連邦のコロナ対策資金（ARPA）で、ボルダー郡コミュニティ財団と個人の寄付者が協力",
+        "zh": "博尔德市，资金主要来自联邦疫情纾困款（ARPA），并获博尔德县社区基金会和私人捐助者帮助",
+        "hi": "बोल्डर शहर, ज़्यादातर पैसा संघीय महामारी राहत (ARPA) से, Community Foundation Boulder County और निजी दानदाताओं की मदद से",
+        "es": "La Ciudad de Boulder, financiado sobre todo con fondos federales de alivio por la pandemia (ARPA), con ayuda de la Community Foundation Boulder County y donantes privados",
+        "de": "Stadt Boulder, überwiegend aus Corona-Hilfen des Bundes (ARPA) bezahlt, mit Hilfe der Community Foundation Boulder County und privater Spender",
+        "ar": "مدينة بولدر، بتمويل معظمه من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)، بمساعدة ⁦Community Foundation Boulder County⁩ ومتبرعين خاصين"
+      },
+      "paid": {
+        "en": "$500 a month with no strings attached for two years (from January 2024) to 200 low-income Boulder households",
+        "ja": "ボルダーの低所得の200世帯に、条件なしで月500ドルを2年間（2024年1月から）",
+        "zh": "向 200 个博尔德低收入家庭无条件每月发放 500 美元，为期两年（自 2024 年 1 月起）",
+        "hi": "200 कम आय वाले बोल्डर परिवारों को दो साल (जनवरी 2024 से) तक बिना किसी शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante dos años (desde enero de 2024) para 200 hogares de bajos ingresos de Boulder",
+        "de": "500 $ im Monat ohne Auflagen für zwei Jahre (ab Januar 2024) an 200 einkommensschwache Haushalte in Boulder",
+        "ar": "⁦$500⁩ شهريًا بلا أي شروط لمدة عامين (بدءًا من يناير 2024) لـ200 أسرة منخفضة الدخل في بولدر"
+      },
+      "result": {
+        "en": "An evaluation by the Omni Institute (September 2025, first 20 months, surveys of participants before and during the program) reported significantly less psychological distress and food insecurity and easier rent and utility payments; there was no significant change in employment, savings, debt or the ability to cover a $400 expense, and there was no control group",
+        "ja": "Omni Instituteによる評価（2025年9月、最初の20か月、参加者への開始前と期間中の調査）は、心理的苦痛と食料不安が有意に減り、家賃や光熱費が払いやすくなったと報告。雇用、貯蓄、借金、400ドルの出費を払える力に有意な変化はなく、対照群もない",
+        "zh": "Omni Institute 的评估（2025 年 9 月，前 20 个月，对参与者在项目前和项目期间进行调查）称，心理困扰和粮食不安全显著减少，支付房租和水电费更容易；就业、储蓄、债务或应付 400 美元开支的能力没有显著变化，且没有对照组",
+        "hi": "Omni Institute के मूल्यांकन (सितंबर 2025, पहले 20 महीने, कार्यक्रम से पहले और उसके दौरान प्रतिभागियों के सर्वे) के अनुसार मानसिक तनाव और खाने की असुरक्षा काफ़ी कम हुई और किराया व बिजली-पानी का भुगतान आसान हुआ; रोज़गार, बचत, क़र्ज़ या $400 का ख़र्च झेलने की क्षमता में कोई महत्वपूर्ण बदलाव नहीं, और कोई नियंत्रण समूह नहीं था",
+        "es": "Una evaluación del Omni Institute (septiembre de 2025; primeros 20 meses; encuestas a los participantes antes y durante el programa) informó de significativamente menos malestar psicológico e inseguridad alimentaria y de pagos de alquiler y suministros más fáciles; no hubo cambios significativos en empleo, ahorro, deuda o capacidad de cubrir un gasto de 400 $, y no hubo grupo de control",
+        "de": "Eine Evaluation des Omni Institute (September 2025, erste 20 Monate, Befragungen der Teilnehmenden vor und während des Programms) berichtete deutlich weniger psychische Belastung und Ernährungsunsicherheit sowie leichtere Miet- und Nebenkostenzahlungen; keine signifikante Veränderung bei Beschäftigung, Ersparnissen, Schulden oder der Fähigkeit, eine Ausgabe von 400 $ zu decken, und keine Kontrollgruppe",
+        "ar": "أفاد تقييم أجراه ⁦Omni Institute⁩ (سبتمبر 2025، أول 20 شهرًا، استطلاعات للمشاركين قبل البرنامج وأثناءه) بانخفاض دال في الضيق النفسي وانعدام الأمن الغذائي وسهولة أكبر في دفع الإيجار وفواتير المرافق؛ ولم يحدث تغيّر دال في التوظيف أو المدخرات أو الديون أو القدرة على تغطية نفقة بقيمة ⁦$400⁩، ولم تكن هناك مجموعة ضابطة"
+      },
+      "source": "https://bouldercolorado.gov/news/city-boulder-releases-evaluation-report-guaranteed-income-pilot-project",
+      "source2": "https://www.aol.com/articles/colorado-city-gave-low-income-194841028.html",
+      "us": {
+        "city": "Boulder",
+        "state": "CO",
+        "start": "2024-01",
+        "end": "2025-12",
+        "monthly": 500,
+        "months": 24,
+        "recipients": 200,
+        "unit": "households",
+        "funders": ["arpa", "philanthropic"],
+        "control": false,
+        "elig": "Low-income Boulder households (detailed criteria not on fetched pages)",
+        "eval": {
+          "by": "Center for Social Investment, Omni Institute",
+          "year": 2025,
+          "type": "report",
+          "url": "https://bouldercolorado.gov/news/city-boulder-releases-evaluation-report-guaranteed-income-pilot-project"
+        }
+      }
+    },
+    {
+      "id": "us-la-ncjw-paid",
+      "years": "2024–2025",
+      "type": "ngo",
+      "name": "Pregnancy Assistance Income with Dignity (P.A.I.D.)",
+      "place": {
+        "en": "Los Angeles County, California, USA",
+        "ja": "アメリカ・カリフォルニア州ロサンゼルス郡",
+        "zh": "美国加利福尼亚州洛杉矶县",
+        "hi": "लॉस एंजेलिस काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Condado de Los Ángeles, California (EE. UU.)",
+        "de": "Los Angeles County, Kalifornien (USA)",
+        "ar": "مقاطعة لوس أنجلوس، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "National Council of Jewish Women, Los Angeles, with a grant from California's state-funded guaranteed income pilot program",
+        "ja": "全米ユダヤ人女性評議会ロサンゼルス支部。カリフォルニア州の州資金による保証所得パイロット制度の補助金を受けて実施",
+        "zh": "全国犹太妇女理事会洛杉矶分会，获加州州政府出资的保障收入试点项目拨款",
+        "hi": "National Council of Jewish Women, Los Angeles, कैलिफ़ोर्निया के राज्य-वित्तपोषित गारंटीड इनकम पायलट कार्यक्रम के अनुदान से",
+        "es": "National Council of Jewish Women de Los Ángeles, con una subvención del programa piloto de ingreso garantizado financiado por el estado de California",
+        "de": "National Council of Jewish Women, Los Angeles, mit einem Zuschuss aus dem vom Bundesstaat Kalifornien finanzierten Pilotprogramm für garantiertes Einkommen",
+        "ar": "⁦National Council of Jewish Women, Los Angeles⁩، بمنحة من برنامج تجارب الدخل المضمون الذي تموّله ولاية كاليفورنيا"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 18 months, from April 2024, to 180 randomly selected low-income pregnant people in Los Angeles County",
+        "ja": "ロサンゼルス郡の低所得の妊娠中の人から無作為に選んだ180人に、2024年4月から条件なしで月1,000ドルを18か月",
+        "zh": "自 2024 年 4 月起，向洛杉矶县随机选出的 180 名低收入孕妇无条件每月发放 1,000 美元，为期 18 个月",
+        "hi": "लॉस एंजेलिस काउंटी के रैंडम रूप से चुने गए 180 कम आय वाले गर्भवती लोगों को अप्रैल 2024 से 18 महीने तक बिना शर्त हर महीने $1,000",
+        "es": "1.000 $ al mes sin condiciones durante 18 meses, desde abril de 2024, para 180 personas embarazadas de bajos ingresos del condado de Los Ángeles elegidas al azar",
+        "de": "1.000 $ im Monat ohne Bedingungen für 18 Monate, ab April 2024, an 180 zufällig ausgewählte einkommensschwache Schwangere in Los Angeles County",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 18 شهرًا، بدءًا من أبريل 2024، لـ180 من الحوامل منخفضي الدخل في مقاطعة لوس أنجلوس اختيروا عشوائيًا"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://cdss.ca.gov/inforesources/guaranteed-income-pilot-program/pregnant-individuals-and-former-foster-youth",
+      "source2": "https://ilponline.org/Uploads/1341_Leave_Behind_PAID_Flyer.2024.pdf",
+      "us": {
+        "city": "Los Angeles County",
+        "state": "CA",
+        "start": "2024-04",
+        "end": "2025",
+        "endEstimated": true,
+        "monthly": 1000,
+        "months": 18,
+        "recipients": 180,
+        "unit": "people",
+        "funders": ["public"],
+        "control": null,
+        "elig": "Pregnant people 18+ in their first or second trimester (before week 27) at enrollment, living in Los Angeles County, household income at or below HUD's low-income limit; randomly selected",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-prince-georges-thrive",
+      "years": "2024–2026",
+      "type": "ngo",
+      "name": "Thrive Prince George's",
+      "place": {
+        "en": "Prince George's County, Maryland, USA",
+        "ja": "アメリカ・メリーランド州プリンスジョージズ郡",
+        "zh": "美国马里兰州乔治王子县",
+        "hi": "प्रिंस जॉर्जेस काउंटी, मैरीलैंड, अमेरिका",
+        "es": "Condado de Prince George's, Maryland (EE. UU.)",
+        "de": "Prince George's County, Maryland (USA)",
+        "ar": "مقاطعة برينس جورجز، ماريلاند، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Greater Washington Community Foundation, with funding from Prince George's County and the Meyer Foundation",
+        "ja": "Greater Washington Community Foundation。プリンスジョージズ郡とマイヤー財団が資金を出した",
+        "zh": "大华盛顿社区基金会，资金来自乔治王子县和 Meyer Foundation",
+        "hi": "Greater Washington Community Foundation, प्रिंस जॉर्जेस काउंटी और Meyer Foundation के पैसे से",
+        "es": "Greater Washington Community Foundation, con financiación del condado de Prince George's y la Meyer Foundation",
+        "de": "Greater Washington Community Foundation, finanziert von Prince George's County und der Meyer Foundation",
+        "ar": "⁦Greater Washington Community Foundation⁩، بتمويل من مقاطعة برينس جورجز و⁦Meyer Foundation⁩"
+      },
+      "paid": {
+        "en": "$800 a month with no conditions for 24 months from April 2024 to 175 people: 125 low-income seniors and 50 young adults who aged out of foster care",
+        "ja": "175人（低所得の高齢者125人と、里親養育の年齢を超えた若者50人）に、2024年4月から条件なしで月800ドルを24か月",
+        "zh": "自 2024 年 4 月起，向 175 人无条件每月发放 800 美元，为期 24 个月：125 名低收入老年人和 50 名超龄离开寄养系统的年轻人",
+        "hi": "175 लोगों (125 कम आय वाले बुज़ुर्ग और फ़ॉस्टर केयर से उम्र के कारण बाहर हुए 50 युवा) को अप्रैल 2024 से 24 महीने तक बिना शर्त हर महीने $800",
+        "es": "800 $ al mes sin condiciones durante 24 meses desde abril de 2024 para 175 personas: 125 mayores de bajos ingresos y 50 jóvenes que habían salido del sistema de acogida",
+        "de": "800 $ im Monat ohne Bedingungen für 24 Monate ab April 2024 an 175 Personen: 125 einkommensschwache Senioren und 50 junge Erwachsene, die aus der Pflegeunterbringung herausgewachsen waren",
+        "ar": "⁦$800⁩ شهريًا بلا شروط لمدة 24 شهرًا بدءًا من أبريل 2024 لـ175 شخصًا: 125 من كبار السن منخفضي الدخل و50 شابًا تجاوزوا سن الرعاية البديلة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.thecommunityfoundation.org/news/thrive-prince-georges-guaranteed-income-pilot-begins-monthly-cash-payments",
+      "us": {
+        "city": "Prince George's County",
+        "state": "MD",
+        "start": "2024-04",
+        "end": "2026",
+        "monthly": 800,
+        "months": 24,
+        "recipients": 175,
+        "unit": "people",
+        "funders": ["public", "philanthropic"],
+        "control": false,
+        "elig": "125 seniors aged 60+ and 50 young people aged 18–24 who aged out of foster care, in high-poverty zip codes with income above the poverty line but below the cost of living (ALICE)",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-milwaukee-bridge-project",
+      "years": "2024–",
+      "type": "ngo",
+      "name": "The Bridge Project in Milwaukee",
+      "place": {
+        "en": "Milwaukee, Wisconsin, USA",
+        "ja": "アメリカ・ウィスコンシン州ミルウォーキー",
+        "zh": "美国威斯康星州密尔沃基",
+        "hi": "मिलवॉकी, विस्कॉन्सिन, अमेरिका",
+        "es": "Milwaukee, Wisconsin (EE. UU.)",
+        "de": "Milwaukee, Wisconsin (USA)",
+        "ar": "ميلووكي، ويسكونسن، الولايات المتحدة"
+      },
+      "who": {
+        "en": "The Bridge Project, a New York-born nonprofit program, with Milwaukee's Zilber Family Foundation and later public money",
+        "ja": "ニューヨーク発祥の非営利プログラムThe Bridge Project。ミルウォーキーのジルバー家族財団と、のちに公的資金も",
+        "zh": "源自纽约的非营利项目 The Bridge Project，与密尔沃基的 Zilber 家族基金会合作，后来也有公共资金",
+        "hi": "The Bridge Project, न्यूयॉर्क में शुरू हुआ एक ग़ैर-लाभकारी कार्यक्रम, मिलवॉकी के Zilber Family Foundation और बाद में सरकारी पैसे के साथ",
+        "es": "The Bridge Project, un programa sin ánimo de lucro nacido en Nueva York, con la Zilber Family Foundation de Milwaukee y después dinero público",
+        "de": "The Bridge Project, ein in New York entstandenes gemeinnütziges Programm, mit der Zilber Family Foundation aus Milwaukee und später öffentlichen Mitteln",
+        "ar": "⁦The Bridge Project⁩، برنامج غير ربحي نشأ في نيويورك، مع ⁦Zilber Family Foundation⁩ في ميلووكي ثم أموال عامة لاحقًا"
+      },
+      "paid": {
+        "en": "$1,125 before birth, then $750 a month for 15 months and $375 a month for 21 months (three years in all) with no strings attached, from June 2024, to 122 low-income pregnant women in four Milwaukee ZIP codes chosen by lottery",
+        "ja": "ミルウォーキーの4つの郵便番号区域から抽選で選んだ低所得の妊娠中の女性122人に、2024年6月から条件なしで出産前に1,125ドル、その後月750ドルを15か月、月375ドルを21か月（計3年間）",
+        "zh": "自 2024 年 6 月起，向密尔沃基四个邮编区通过抽签选出的 122 名低收入孕妇，无条件在产前发放 1,125 美元，之后 15 个月每月 750 美元、21 个月每月 375 美元（共三年）",
+        "hi": "मिलवॉकी के चार ZIP कोड की लॉटरी से चुनी गई 122 कम आय वाली गर्भवती महिलाओं को जून 2024 से बिना किसी शर्त जन्म से पहले $1,125, फिर 15 महीने तक हर महीने $750 और 21 महीने तक हर महीने $375 (कुल तीन साल)",
+        "es": "1.125 $ antes del parto, luego 750 $ al mes durante 15 meses y 375 $ al mes durante 21 meses (tres años en total) sin condiciones, desde junio de 2024, para 122 mujeres embarazadas de bajos ingresos de cuatro códigos postales de Milwaukee elegidas por sorteo",
+        "de": "1.125 $ vor der Geburt, dann 750 $ im Monat für 15 Monate und 375 $ im Monat für 21 Monate (insgesamt drei Jahre) ohne Auflagen, ab Juni 2024, an 122 per Los ausgewählte einkommensschwache Schwangere in vier Postleitzahlgebieten Milwaukees",
+        "ar": "⁦$1,125⁩ قبل الولادة، ثم ⁦$750⁩ شهريًا لمدة 15 شهرًا و⁦$375⁩ شهريًا لمدة 21 شهرًا (ثلاث سنوات إجمالًا) بلا أي شروط، بدءًا من يونيو 2024، لـ122 امرأة حاملًا منخفضة الدخل في أربعة رموز بريدية في ميلووكي اختيرت بالقرعة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://zilberfamilyfoundation.org/wp-content/uploads/2025/08/ZFF_BridgeProject-FactSheetUpdated-250826-v5.pdf",
+      "us": {
+        "city": "Milwaukee",
+        "state": "WI",
+        "start": "2024-06",
+        "end": null,
+        "monthly": 750,
+        "months": 36,
+        "recipients": 122,
+        "unit": "people",
+        "funders": ["philanthropic", "public"],
+        "control": false,
+        "elig": "Pregnant women 18+, 23 weeks pregnant or less, in ZIP codes 53204, 53205, 53206 or 53215, household income under $39,000; chosen by lottery",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-fresno-afcgi",
+      "years": "2024–2025",
+      "type": "ngo",
+      "name": "Advancing Fresno County Guaranteed Income",
+      "place": {
+        "en": "Fresno and Huron, Fresno County, California, USA",
+        "ja": "アメリカ・カリフォルニア州フレズノ郡フレズノとヒューロン",
+        "zh": "美国加利福尼亚州弗雷斯诺县弗雷斯诺和休伦",
+        "hi": "फ़्रेज़्नो और ह्यूरन, फ़्रेज़्नो काउंटी, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Fresno y Huron, condado de Fresno, California (EE. UU.)",
+        "de": "Fresno und Huron, Fresno County, Kalifornien (USA)",
+        "ar": "فريزنو وهيورن، مقاطعة فريزنو، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Fresno Economic Opportunities Commission, a local anti-poverty agency, paid for by private foundations",
+        "ja": "地元の貧困対策機関フレズノ経済機会委員会。財源は民間財団",
+        "zh": "当地反贫困机构弗雷斯诺经济机会委员会，资金来自私人基金会",
+        "hi": "Fresno Economic Opportunities Commission, एक स्थानीय ग़रीबी-विरोधी एजेंसी, पैसा निजी फ़ाउंडेशनों से",
+        "es": "Fresno Economic Opportunities Commission, una agencia local contra la pobreza, financiado por fundaciones privadas",
+        "de": "Fresno Economic Opportunities Commission, eine lokale Stelle zur Armutsbekämpfung, bezahlt von privaten Stiftungen",
+        "ar": "⁦Fresno Economic Opportunities Commission⁩، هيئة محلية لمكافحة الفقر، بتمويل من مؤسسات خاصة"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months (July 2024–June 2025) to 150 low-income families with young children, 75 in southwest Fresno and 75 in rural Huron, chosen by lottery",
+        "ja": "抽選で選んだ幼い子どものいる低所得150家族（フレズノ南西部75家族、農村部のヒューロン75家族）に、条件なしで月500ドルを12か月（2024年7月〜2025年6月）",
+        "zh": "通过抽签选出 150 个有幼儿的低收入家庭（弗雷斯诺西南部和农村地区休伦各 75 个），无条件每月发放 500 美元，为期 12 个月（2024 年 7 月至 2025 年 6 月）",
+        "hi": "लॉटरी से चुने गए, छोटे बच्चों वाले 150 कम आय वाले परिवारों (75 दक्षिण-पश्चिम फ़्रेज़्नो में और 75 ग्रामीण ह्यूरन में) को 12 महीने (जुलाई 2024–जून 2025) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 12 meses (julio 2024–junio 2025) para 150 familias de bajos ingresos con niños pequeños, 75 en el suroeste de Fresno y 75 en la zona rural de Huron, elegidas por sorteo",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate (Juli 2024 bis Juni 2025) an 150 einkommensschwache Familien mit kleinen Kindern, 75 im Südwesten Fresnos und 75 im ländlichen Huron, per Los ausgewählt",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا (يوليو 2024–يونيو 2025) لـ150 أسرة منخفضة الدخل لديها أطفال صغار، 75 في جنوب غرب فريزنو و75 في بلدة هيورن الريفية، اختيرت بالقرعة"
+      },
+      "result": {
+        "en": "Fresno State's Center for Community Voices (December 2025; randomized trial with 300 families) reported that borrowing for regular expenses fell from 40% to 18%, along with less food insecurity and parental stress, and no significant effect on employment",
+        "ja": "フレズノ州立大学Center for Community Voices（2025年12月。300家族の無作為化試験）は、日々の支出のための借り入れが40%から18%に減り、食料不安と親のストレスも減ったと報告。雇用への有意な影響はなかった",
+        "zh": "弗雷斯诺州立大学社区之声中心（2025 年 12 月；涉及 300 个家庭的随机对照试验）称，为日常开支借钱的比例从 40% 降至 18%，粮食不安全和父母压力也有所减少，对就业没有显著影响",
+        "hi": "Fresno State के Center for Community Voices (दिसंबर 2025; 300 परिवारों वाला रैंडमाइज़्ड ट्रायल) के अनुसार नियमित ख़र्चों के लिए उधार लेना 40% से घटकर 18% हुआ, खाने की असुरक्षा और माता-पिता का तनाव भी घटा, और रोज़गार पर कोई महत्वपूर्ण असर नहीं पड़ा",
+        "es": "El Center for Community Voices de Fresno State (diciembre de 2025; ensayo aleatorizado con 300 familias) informó de que pedir prestado para gastos corrientes bajó del 40 % al 18 %, junto con menos inseguridad alimentaria y estrés parental, sin efecto significativo en el empleo",
+        "de": "Das Center for Community Voices der Fresno State (Dezember 2025; randomisierte Studie mit 300 Familien) berichtete, dass der Anteil, der für laufende Ausgaben Geld lieh, von 40 % auf 18 % sank, dazu weniger Ernährungsunsicherheit und Stress bei den Eltern, ohne signifikante Wirkung auf die Beschäftigung",
+        "ar": "أفاد ⁦Center for Community Voices⁩ بجامعة ولاية فريزنو (ديسمبر 2025؛ تجربة عشوائية شملت 300 أسرة) بأن الاقتراض لتغطية النفقات المعتادة انخفض من 40% إلى 18%، مع تراجع انعدام الأمن الغذائي وضغط الوالدين، ودون أثر دال على التوظيف"
+      },
+      "source": "https://fresnoeoc.org/wp-content/uploads/2025/12/Fresno-EOC-AGI-Final-Word-Press-Release-2025.pdf",
+      "source2": "https://fresnoeoc.org/guaranteed-income/",
+      "us": {
+        "city": "Fresno",
+        "state": "CA",
+        "start": "2024-07",
+        "end": "2025-06",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 150,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Parents or caregivers who are pregnant or have a child aged 0–5, living in ZIP 93706 (southwest Fresno) or 93234 (Huron), income at or below 80% of the local Area Median Income; 75 picked by lottery in each area from about 10,000 applications",
+        "eval": {
+          "by": "Center for Community Voices, Fresno State (led by Amber Crowell)",
+          "year": 2025,
+          "type": "report",
+          "url": "https://fresnoeoc.org/wp-content/uploads/2025/12/Advancing-Fresno-County-Guaranteed-Income-Evaluation-Findings.pdf"
+        }
+      }
+    },
+    {
+      "id": "us-somerville-gbi",
+      "years": "2024–2025",
+      "type": "gov",
+      "name": "Somerville Guaranteed Basic Income Pilot",
+      "place": {
+        "en": "Somerville, Massachusetts, USA",
+        "ja": "アメリカ・マサチューセッツ州サマービル",
+        "zh": "美国马萨诸塞州萨默维尔",
+        "hi": "समरविल, मैसाचुसेट्स, अमेरिका",
+        "es": "Somerville, Massachusetts (EE. UU.)",
+        "de": "Somerville, Massachusetts (USA)",
+        "ar": "سومرفيل، ماساتشوستس، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Somerville, paid from federal pandemic relief (ARPA), evaluated by UMass Boston's Collins Center",
+        "ja": "サマービル市。財源は連邦のコロナ対策資金（ARPA）で、マサチューセッツ大学ボストン校Collins Centerが評価",
+        "zh": "萨默维尔市，资金来自联邦疫情纾困款（ARPA），由马萨诸塞大学波士顿分校柯林斯中心评估",
+        "hi": "समरविल शहर, पैसा संघीय महामारी राहत (ARPA) से; मूल्यांकन UMass Boston के Collins Center ने किया",
+        "es": "Ciudad de Somerville, financiado con fondos federales de alivio por la pandemia (ARPA), evaluado por el Collins Center de UMass Boston",
+        "de": "Stadt Somerville, bezahlt aus Corona-Hilfen des Bundes (ARPA), evaluiert vom Collins Center der UMass Boston",
+        "ar": "مدينة سومرفيل، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)، وقيّمه ⁦Collins Center⁩ بجامعة ماساتشوستس بوسطن"
+      },
+      "paid": {
+        "en": "$750 a month with no conditions on a reloadable debit card for 12 months (July 2024–June 2025) to 198 households at high risk of losing their housing",
+        "ja": "住まいを失う恐れが高い198世帯に、条件なしで月750ドルを再チャージ式デビットカードで12か月（2024年7月〜2025年6月）",
+        "zh": "通过可充值借记卡，向 198 个面临失去住房高风险的家庭无条件每月发放 750 美元，为期 12 个月（2024 年 7 月至 2025 年 6 月）",
+        "hi": "घर छिनने के ज़्यादा ख़तरे वाले 198 परिवारों को 12 महीने (जुलाई 2024–जून 2025) तक रीलोड होने वाले डेबिट कार्ड पर बिना शर्त हर महीने $750",
+        "es": "750 $ al mes sin condiciones en una tarjeta de débito recargable durante 12 meses (julio 2024–junio 2025) para 198 hogares en alto riesgo de perder su vivienda",
+        "de": "750 $ im Monat ohne Bedingungen auf einer wiederaufladbaren Debitkarte für 12 Monate (Juli 2024 bis Juni 2025) an 198 Haushalte mit hohem Risiko, ihre Wohnung zu verlieren",
+        "ar": "⁦$750⁩ شهريًا بلا شروط على بطاقة خصم قابلة لإعادة الشحن لمدة 12 شهرًا (يوليو 2024–يونيو 2025) لـ198 أسرة معرّضة بشدة لخطر فقدان سكنها"
+      },
+      "result": {
+        "en": "UMass Boston's Collins Center (2026), comparing participants before and after with no control group: the share who rarely or never had money left at month's end fell from 73% to 55%, and 66% of the 33 households behind on rent caught up. Self-reported",
+        "ja": "マサチューセッツ大学ボストン校Collins Center（2026年、対照群なしの参加者の前後比較）は、月末にお金がほとんど、またはまったく残らない人の割合が73%から55%に下がり、家賃を滞納していた33世帯の66%が追いついたと報告。自己申告",
+        "zh": "马萨诸塞大学波士顿分校柯林斯中心（2026 年）对参与者进行前后比较，没有对照组：月底很少或从未有余钱的比例从 73% 降至 55%，33 个拖欠房租的家庭中有 66% 补清了欠款。均为自我报告",
+        "hi": "UMass Boston के Collins Center (2026) ने बिना नियंत्रण समूह के प्रतिभागियों की पहले और बाद में तुलना की: महीने के अंत में शायद ही कभी या कभी भी पैसा न बचने वालों का हिस्सा 73% से घटकर 55% हुआ, और किराया बकाया वाले 33 परिवारों में से 66% ने बकाया चुका दिया। स्व-रिपोर्टेड",
+        "es": "El Collins Center de UMass Boston (2026), comparando a los participantes antes y después sin grupo de control: la proporción a la que rara vez o nunca le sobraba dinero a fin de mes bajó del 73 % al 55 %, y el 66 % de los 33 hogares atrasados con el alquiler se puso al día. Datos autodeclarados",
+        "de": "Das Collins Center der UMass Boston (2026), Vorher-nachher-Vergleich der Teilnehmenden ohne Kontrollgruppe: Der Anteil, der am Monatsende selten oder nie Geld übrig hatte, sank von 73 % auf 55 %, und 66 % der 33 Haushalte mit Mietrückständen holten diese auf. Selbstauskünfte",
+        "ar": "⁦Collins Center⁩ بجامعة ماساتشوستس بوسطن (2026)، بمقارنة المشاركين قبل وبعد دون مجموعة ضابطة: انخفضت نسبة من نادرًا ما يتبقى لديهم مال في نهاية الشهر أو لا يتبقى أبدًا من 73% إلى 55%، وسدّد 66% من الأسر الـ33 المتأخرة في الإيجار متأخراتها. بيانات ذاتية الإبلاغ"
+      },
+      "source": "https://www.somervillema.gov/departments/somerville-guaranteed-basic-income-pilot",
+      "us": {
+        "city": "Somerville",
+        "state": "MA",
+        "start": "2024-07",
+        "end": "2025-06",
+        "monthly": 750,
+        "months": 12,
+        "recipients": 198,
+        "unit": "households",
+        "funders": ["arpa", "philanthropic"],
+        "control": false,
+        "elig": "Somerville households at high risk of housing insecurity and displacement, identified from existing city and school caseloads",
+        "eval": {
+          "by": "Edward J. Collins Center for Public Management, UMass Boston",
+          "year": 2026,
+          "type": "report",
+          "url": "https://www.somervillema.gov/departments/somerville-guaranteed-basic-income-pilot"
+        }
+      }
+    },
+    {
+      "id": "us-illinois-uptogether",
+      "years": "2024–2025",
+      "type": "ngo",
+      "name": "UpTogether Illinois guaranteed income pilot",
+      "place": {
+        "en": "Downstate Illinois (Peoria, Carbondale, Springfield, Bloomington, Normal, Champaign, Rockford, Belleville and East St. Louis), USA",
+        "ja": "アメリカ・イリノイ州のシカゴ圏外（ピオリア、カーボンデール、スプリングフィールド、ブルーミントン、ノーマル、シャンペーン、ロックフォード、ベルビル、イーストセントルイス）",
+        "zh": "美国伊利诺伊州南部地区（皮奥里亚、卡本代尔、斯普林菲尔德、布卢明顿、诺默尔、香槟、罗克福德、贝尔维尔和东圣路易斯）",
+        "hi": "डाउनस्टेट इलिनॉय (पियोरिया, कार्बनडेल, स्प्रिंगफ़ील्ड, ब्लूमिंगटन, नॉर्मल, शैम्पेन, रॉकफ़र्ड, बेलविल और ईस्ट सेंट लुइस), अमेरिका",
+        "es": "Illinois fuera del área de Chicago (Peoria, Carbondale, Springfield, Bloomington, Normal, Champaign, Rockford, Belleville y East St. Louis), EE. UU.",
+        "de": "Illinois außerhalb des Großraums Chicago (Peoria, Carbondale, Springfield, Bloomington, Normal, Champaign, Rockford, Belleville und East St. Louis), USA",
+        "ar": "جنوب ولاية إلينوي (بيوريا وكاربونديل وسبرينغفيلد وبلومنغتون ونورمال وشامبين وروكفورد وبيلفيل وإيست سانت لويس)، الولايات المتحدة"
+      },
+      "who": {
+        "en": "UpTogether, a national nonprofit, paid for by a private donor, to build the case for a statewide program",
+        "ja": "全国的な非営利団体UpTogether。財源は個人の寄付者で、州全体のプログラムに向けた根拠づくりが目的",
+        "zh": "全国性非营利组织 UpTogether，资金来自一位私人捐助者，旨在为全州性项目积累论据",
+        "hi": "UpTogether, एक राष्ट्रीय ग़ैर-लाभकारी संस्था, एक निजी दानदाता के पैसे से, ताकि राज्यव्यापी कार्यक्रम के पक्ष में तर्क तैयार हो",
+        "es": "UpTogether, organización nacional sin ánimo de lucro, financiado por un donante privado, para defender un programa estatal",
+        "de": "UpTogether, eine landesweite gemeinnützige Organisation, bezahlt von einem privaten Spender, um Argumente für ein Programm im ganzen Bundesstaat zu sammeln",
+        "ar": "⁦UpTogether⁩، منظمة وطنية غير ربحية، بتمويل من متبرع خاص، لبناء الحجة لبرنامج على مستوى الولاية"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for one year from September 2024 to 52 families in nine downstate Illinois cities, including Peoria and Rockford",
+        "ja": "ピオリアやロックフォードなど、イリノイ州のシカゴ圏外の9都市の52家族に、2024年9月から条件なしで月500ドルを1年間",
+        "zh": "自 2024 年 9 月起，向伊利诺伊州南部九个城市（包括皮奥里亚和罗克福德）的 52 个家庭无条件每月发放 500 美元，为期一年",
+        "hi": "पियोरिया और रॉकफ़र्ड सहित डाउनस्टेट इलिनॉय के नौ शहरों के 52 परिवारों को सितंबर 2024 से एक साल तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante un año desde septiembre de 2024 para 52 familias de nueve ciudades de Illinois fuera del área de Chicago, entre ellas Peoria y Rockford",
+        "de": "500 $ im Monat ohne Bedingungen für ein Jahr ab September 2024 an 52 Familien in neun Städten in Illinois außerhalb des Großraums Chicago, darunter Peoria und Rockford",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عام بدءًا من سبتمبر 2024 لـ52 أسرة في تسع مدن في جنوب إلينوي، منها بيوريا وروكفورد"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.northernpublicradio.org/illinois/2025-02-07/familes-from-peoria-other-illinois-cities-are-getting-500-a-month-as-part-of-guaranteed-income-pilot",
+      "us": {
+        "city": "Peoria, Rockford and other Illinois cities",
+        "state": "IL",
+        "start": "2024-09",
+        "end": "2025",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 52,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Families earning up to 80% of the area median income in nine Illinois cities",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-boulder-county-nurturing-futures",
+      "years": "2024–",
+      "type": "gov",
+      "name": "Nurturing Futures",
+      "place": {
+        "en": "Boulder County, Colorado, USA",
+        "ja": "アメリカ・コロラド州ボルダー郡",
+        "zh": "美国科罗拉多州博尔德县",
+        "hi": "बोल्डर काउंटी, कोलोराडो, अमेरिका",
+        "es": "Condado de Boulder, Colorado (EE. UU.)",
+        "de": "Boulder County, Colorado (USA)",
+        "ar": "مقاطعة بولدر، كولورادو، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Boulder County's Department of Human Services, paid from federal pandemic relief (ARPA), with AidKit helping with applications",
+        "ja": "ボルダー郡福祉局。財源は連邦のコロナ対策資金（ARPA）で、AidKitが申請を支援",
+        "zh": "博尔德县公共服务局，资金来自联邦疫情纾困款（ARPA），由 AidKit 协助申请",
+        "hi": "बोल्डर काउंटी का Department of Human Services, पैसा संघीय महामारी राहत (ARPA) से; आवेदन में AidKit ने मदद की",
+        "es": "Departamento de Servicios Humanos del condado de Boulder, financiado con fondos federales de alivio por la pandemia (ARPA), con AidKit ayudando con las solicitudes",
+        "de": "Sozialbehörde von Boulder County (Department of Human Services), bezahlt aus Corona-Hilfen des Bundes (ARPA), mit AidKit als Hilfe bei den Anträgen",
+        "ar": "إدارة الخدمات الإنسانية في مقاطعة بولدر، بتمويل من أموال الإغاثة الفدرالية من الجائحة (⁦ARPA⁩)، مع مساعدة ⁦AidKit⁩ في الطلبات"
+      },
+      "paid": {
+        "en": "$300 a month with no spending restrictions for two years, from October 2024, to 725 Boulder County households with a child under 4 and income below 30% of the area median, chosen by lottery; in May 2026 the county voted to continue it at $600 a month",
+        "ja": "4歳未満の子どもがいて所得が地域の中央値の30%未満のボルダー郡の世帯から抽選で選んだ725世帯に、2024年10月から使い道の制限なしで月300ドルを2年間。2026年5月、郡は月600ドルで継続することを決めた",
+        "zh": "自 2024 年 10 月起，向通过抽签选出的 725 个有 4 岁以下孩子、收入低于地区中位数 30% 的博尔德县家庭每月发放 300 美元，为期两年，不限用途；2026 年 5 月，该县投票决定以每月 600 美元继续实施",
+        "hi": "लॉटरी से चुने गए, 4 साल से छोटे बच्चे वाले और क्षेत्रीय मध्य (median) आय के 30% से कम आय वाले 725 बोल्डर काउंटी परिवारों को अक्टूबर 2024 से दो साल तक ख़र्च पर बिना रोक हर महीने $300; मई 2026 में काउंटी ने इसे हर महीने $600 पर जारी रखने के लिए मतदान किया",
+        "es": "300 $ al mes sin restricciones de uso durante dos años, desde octubre de 2024, para 725 hogares del condado de Boulder con un hijo menor de 4 años e ingresos inferiores al 30 % de la mediana de la zona, elegidos por sorteo; en mayo de 2026 el condado votó continuarlo con 600 $ al mes",
+        "de": "300 $ im Monat ohne Ausgabevorgaben für zwei Jahre, ab Oktober 2024, an 725 per Los ausgewählte Haushalte in Boulder County mit einem Kind unter 4 und einem Einkommen unter 30 % des regionalen Medians; im Mai 2026 beschloss das County, es mit 600 $ im Monat fortzuführen",
+        "ar": "⁦$300⁩ شهريًا دون قيود على الإنفاق لمدة عامين، بدءًا من أكتوبر 2024، لـ725 أسرة في مقاطعة بولدر لديها طفل دون الرابعة ودخلها أقل من 30% من الوسيط في المنطقة، اختيرت بالقرعة؛ وفي مايو 2026 صوّتت المقاطعة على استمراره بمبلغ ⁦$600⁩ شهريًا"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://bouldercounty.gov/news/new-6-million-direct-cash-assistance-program-for-families-with-young-children/",
+      "source2": "https://bouldercounty.gov/news/nurturing-futures-direct-cash-assistance-to-continue-with-increased-payments/",
+      "us": {
+        "city": "Boulder County",
+        "state": "CO",
+        "start": "2024-10",
+        "end": null,
+        "monthly": 300,
+        "months": 24,
+        "recipients": 725,
+        "unit": "households",
+        "funders": ["arpa"],
+        "control": false,
+        "elig": "Boulder County residents 18+ with at least one child under 4 and family income below 30% of area median income; chosen by lottery in September 2024",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-laccd-boost",
+      "years": "2024–2025",
+      "type": "ngo",
+      "name": "BOOST (Building Outstanding Opportunities for Students to Thrive)",
+      "place": {
+        "en": "Los Angeles, California, USA",
+        "ja": "アメリカ・カリフォルニア州ロサンゼルス",
+        "zh": "美国加利福尼亚州洛杉矶",
+        "hi": "लॉस एंजेलिस, कैलिफ़ोर्निया, अमेरिका",
+        "es": "Los Ángeles, California (EE. UU.)",
+        "de": "Los Angeles, Kalifornien (USA)",
+        "ar": "لوس أنجلوس، كاليفورنيا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Los Angeles Community College District, paid with private money from the Broad Foundation and the California Community Foundation's Young Adults Forward Fund",
+        "ja": "ロサンゼルス・コミュニティカレッジ学区。財源はブロード財団とカリフォルニア・コミュニティ財団のYoung Adults Forward Fundの民間資金",
+        "zh": "洛杉矶社区学院学区，资金来自布罗德基金会和加州社区基金会 Young Adults Forward Fund 的私人资金",
+        "hi": "Los Angeles Community College District, Broad Foundation और California Community Foundation के Young Adults Forward Fund के निजी पैसे से",
+        "es": "Distrito de Colegios Comunitarios de Los Ángeles, con dinero privado de la Broad Foundation y del Young Adults Forward Fund de la California Community Foundation",
+        "de": "Los Angeles Community College District, bezahlt mit privaten Mitteln der Broad Foundation und des Young Adults Forward Fund der California Community Foundation",
+        "ar": "منطقة كليات المجتمع في لوس أنجلوس، بأموال خاصة من ⁦Broad Foundation⁩ و⁦Young Adults Forward Fund⁩ التابع لـ⁦California Community Foundation⁩"
+      },
+      "paid": {
+        "en": "$1,000 a month with no conditions for 12 months (November 2024–October 2025) to 251 low-income community college students in health-career programs; over 300 others formed a comparison group",
+        "ja": "医療系の職業課程で学ぶ低所得のコミュニティカレッジ学生251人に、条件なしで月1,000ドルを12か月（2024年11月〜2025年10月）。別の300人超が比較群",
+        "zh": "向 251 名就读医疗职业课程的低收入社区学院学生无条件每月发放 1,000 美元，为期 12 个月（2024 年 11 月至 2025 年 10 月）；另有 300 多人组成比较组",
+        "hi": "स्वास्थ्य-करियर कार्यक्रमों में पढ़ रहे 251 कम आय वाले कम्युनिटी कॉलेज छात्रों को 12 महीने (नवंबर 2024–अक्टूबर 2025) तक बिना शर्त हर महीने $1,000; 300 से ज़्यादा अन्य तुलना समूह में थे",
+        "es": "1.000 $ al mes sin condiciones durante 12 meses (noviembre 2024–octubre 2025) para 251 estudiantes de bajos ingresos de colegios comunitarios en programas de carreras sanitarias; más de 300 formaron un grupo de comparación",
+        "de": "1.000 $ im Monat ohne Bedingungen für 12 Monate (November 2024 bis Oktober 2025) an 251 einkommensschwache Community-College-Studierende in Ausbildungsgängen für Gesundheitsberufe; über 300 weitere bildeten eine Vergleichsgruppe",
+        "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 12 شهرًا (نوفمبر 2024–أكتوبر 2025) لـ251 طالبًا منخفض الدخل في كليات المجتمع ضمن برامج المهن الصحية؛ وشكّل أكثر من 300 آخرين مجموعة مقارنة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://guaranteedincome.us/los-angeles-boost",
+      "source2": "https://laist.com/news/education/laccd-guaranteed-basic-income-update",
+      "us": {
+        "city": "Los Angeles",
+        "state": "CA",
+        "start": "2024-11",
+        "end": "2025-10",
+        "monthly": 1000,
+        "months": 12,
+        "recipients": 251,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "LACCD students at East LA, LA City, LA Trade-Technical or LA Southwest colleges, with 12+ units completed and 6+ current units, in or interested in health careers, with financial need",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-columbus-ohio-mothers-trust",
+      "years": "2024–2025",
+      "type": "ngo",
+      "name": "Ohio Mothers Trust",
+      "place": {
+        "en": "Columbus, Ohio, USA",
+        "ja": "アメリカ・オハイオ州コロンバス",
+        "zh": "美国俄亥俄州哥伦布",
+        "hi": "कोलंबस, ओहायो, अमेरिका",
+        "es": "Columbus, Ohio (EE. UU.)",
+        "de": "Columbus, Ohio (USA)",
+        "ar": "كولومبوس، أوهايو، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Three nonprofits (RISE Together Innovation Institute, Motherful and UpTogether), paid with $211,200 of their own and donor money",
+        "ja": "3つの非営利団体（RISE Together Innovation Institute、Motherful、UpTogether）。財源は団体自身と寄付者からの21万1,200ドル",
+        "zh": "三家非营利组织（RISE Together Innovation Institute、Motherful 和 UpTogether），使用自有资金和捐助者资金共 211,200 美元",
+        "hi": "तीन ग़ैर-लाभकारी संस्थाएँ (RISE Together Innovation Institute, Motherful और UpTogether), अपने और दानदाताओं के $2,11,200 से",
+        "es": "Tres organizaciones sin ánimo de lucro (RISE Together Innovation Institute, Motherful y UpTogether), con 211.200 $ de fondos propios y de donantes",
+        "de": "Drei gemeinnützige Organisationen (RISE Together Innovation Institute, Motherful und UpTogether), bezahlt mit 211.200 $ aus eigenen Mitteln und Spenden",
+        "ar": "ثلاث منظمات غير ربحية (⁦RISE Together Innovation Institute⁩ و⁦Motherful⁩ و⁦UpTogether⁩)، بتمويل ⁦$211,200⁩ من أموالها وأموال متبرعين"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for 12 months from December 2024 to 32 single mothers in Columbus",
+        "ja": "コロンバスのシングルマザー32人に、2024年12月から条件なしで月500ドルを12か月",
+        "zh": "自 2024 年 12 月起，向哥伦布 32 名单身母亲无条件每月发放 500 美元，为期 12 个月",
+        "hi": "कोलंबस की 32 अकेली माताओं को दिसंबर 2024 से 12 महीने तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante 12 meses desde diciembre de 2024 para 32 madres solas de Columbus",
+        "de": "500 $ im Monat ohne Bedingungen für 12 Monate ab Dezember 2024 an 32 alleinerziehende Mütter in Columbus",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة 12 شهرًا بدءًا من ديسمبر 2024 لـ32 أمًّا منفردة في كولومبوس"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://blog.uptogether.org/first-ever-unconditional-guaranteed-income-initiative-launches-in-columbus",
+      "us": {
+        "city": "Columbus",
+        "state": "OH",
+        "start": "2024-12",
+        "end": "2025",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 32,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Single mothers in Columbus with incomes at or below 80% of area median income, selected by the Motherful collective",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-salem-uplift",
+      "years": "2024–2025",
+      "type": "gov",
+      "name": "Uplift Salem",
+      "place": {
+        "en": "Salem, Massachusetts, USA",
+        "ja": "アメリカ・マサチューセッツ州セーラム",
+        "zh": "美国马萨诸塞州塞勒姆",
+        "hi": "सेलम, मैसाचुसेट्स, अमेरिका",
+        "es": "Salem, Massachusetts (EE. UU.)",
+        "de": "Salem, Massachusetts (USA)",
+        "ar": "سالم، ماساتشوستس، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Salem with the nonprofit UpTogether, paid from federal COVID relief and private money, studied by Salem State University",
+        "ja": "セーラム市と非営利団体UpTogether。財源は連邦のコロナ対策資金と民間資金で、セーラム州立大学が研究",
+        "zh": "塞勒姆市与非营利组织 UpTogether 合作，资金来自联邦新冠纾困款和私人资金，由塞勒姆州立大学研究",
+        "hi": "सेलम शहर, ग़ैर-लाभकारी UpTogether के साथ; पैसा संघीय कोविड राहत और निजी कोष से, अध्ययन Salem State University ने किया",
+        "es": "Ciudad de Salem con la organización sin ánimo de lucro UpTogether, financiado con fondos federales de alivio por la COVID y dinero privado, estudiado por la Universidad Estatal de Salem",
+        "de": "Stadt Salem mit der gemeinnützigen Organisation UpTogether, bezahlt aus Corona-Hilfen des Bundes und privaten Mitteln, untersucht von der Salem State University",
+        "ar": "مدينة سالم مع المنظمة غير الربحية ⁦UpTogether⁩، بتمويل من أموال الإغاثة الفدرالية من كوفيد وأموال خاصة، ودرسته جامعة ولاية سالم"
+      },
+      "paid": {
+        "en": "$500 a month with no conditions for a year (December 2024–November 2025) to 100 residents living at or below the poverty line, chosen by lottery",
+        "ja": "抽選で選んだ貧困線以下の住民100人に、条件なしで月500ドルを1年間（2024年12月〜2025年11月）",
+        "zh": "向通过抽签选出的 100 名生活在贫困线或以下的居民无条件每月发放 500 美元，为期一年（2024 年 12 月至 2025 年 11 月）",
+        "hi": "लॉटरी से चुने गए, ग़रीबी रेखा पर या उससे नीचे रहने वाले 100 निवासियों को एक साल (दिसंबर 2024–नवंबर 2025) तक बिना शर्त हर महीने $500",
+        "es": "500 $ al mes sin condiciones durante un año (diciembre 2024–noviembre 2025) para 100 residentes en el umbral de pobreza o por debajo, elegidos por sorteo",
+        "de": "500 $ im Monat ohne Bedingungen für ein Jahr (Dezember 2024 bis November 2025) an 100 per Los ausgewählte Einwohner an oder unter der Armutsgrenze",
+        "ar": "⁦$500⁩ شهريًا بلا شروط لمدة عام (ديسمبر 2024–نوفمبر 2025) لـ100 من السكان عند خط الفقر أو دونه، اختيروا بالقرعة"
+      },
+      "result": {
+        "en": "Salem State University researchers' preliminary findings (March 2026), self-reported by participants: 37% strongly agreed they were better prepared for unexpected challenges at the end, up 10 points from August, and about three-quarters of parents spent more time with their children. A final report was due later",
+        "ja": "セーラム州立大学の研究者による暫定結果（2026年3月、参加者の自己申告）では、終了時に予期せぬ困難への備えができたと強く同意した人が37%で8月から10ポイント上がり、親の約4分の3が子どもと過ごす時間を増やした。最終報告はその後に出る予定",
+        "zh": "塞勒姆州立大学研究人员的初步结果（2026 年 3 月），由参与者自我报告：结束时 37% 的人非常同意自己更能应对意外挑战，比 8 月高 10 个百分点；约四分之三的父母陪伴孩子的时间增加。最终报告将于稍后发布",
+        "hi": "Salem State University के शोधकर्ताओं के प्रारंभिक नतीजे (मार्च 2026), प्रतिभागियों द्वारा स्व-रिपोर्टेड: अंत में 37% पूरी तरह सहमत थे कि वे अचानक आई चुनौतियों के लिए बेहतर तैयार हैं, जो अगस्त से 10 अंक ज़्यादा है, और लगभग तीन-चौथाई माता-पिता ने बच्चों के साथ ज़्यादा समय बिताया। अंतिम रिपोर्ट बाद में आनी थी",
+        "es": "Resultados preliminares de investigadores de la Universidad Estatal de Salem (marzo de 2026), autodeclarados por los participantes: el 37 % estaba muy de acuerdo en que al final estaba mejor preparado para imprevistos, 10 puntos más que en agosto, y unas tres cuartas partes de los padres pasaron más tiempo con sus hijos. Se esperaba un informe final más adelante",
+        "de": "Vorläufige Ergebnisse von Forschenden der Salem State University (März 2026), Selbstauskünfte der Teilnehmenden: 37 % stimmten am Ende voll zu, besser auf unerwartete Herausforderungen vorbereitet zu sein, 10 Punkte mehr als im August, und etwa drei Viertel der Eltern verbrachten mehr Zeit mit ihren Kindern. Ein Abschlussbericht sollte später folgen",
+        "ar": "النتائج الأولية لباحثي جامعة ولاية سالم (مارس 2026)، بإبلاغ ذاتي من المشاركين: وافق 37% بشدة على أنهم أكثر استعدادًا للتحديات غير المتوقعة في النهاية، بزيادة 10 نقاط عن أغسطس، وقضى نحو ثلاثة أرباع الآباء والأمهات وقتًا أطول مع أطفالهم. وكان التقرير النهائي متوقعًا لاحقًا"
+      },
+      "source": "https://www.bostonglobe.com/2024/10/17/metro/massachusetts-salem-basic-income-cash-poverty",
+      "source2": "https://www.salemstate.edu/news/uplift-salem-north-shore-policy-lab-share-insights-findings-income-pilot",
+      "us": {
+        "city": "Salem",
+        "state": "MA",
+        "start": "2024-12",
+        "end": "2025-11",
+        "monthly": 500,
+        "months": 12,
+        "recipients": 100,
+        "unit": "people",
+        "funders": ["arpa", "philanthropic"],
+        "control": true,
+        "elig": "Salem residents with household income at or below 100% of the federal poverty level, chosen by lottery; 100 others formed a comparison group",
+        "eval": {
+          "by": "Salem State University, North Shore Policy Lab",
+          "year": 2026,
+          "type": "report",
+          "url": "https://www.salemstate.edu/news/uplift-salem-north-shore-policy-lab-share-insights-findings-income-pilot"
+        }
+      }
     },
     {
       "id": "marshall-islands",
@@ -10172,6 +16012,120 @@ module.exports = {
       "source": "https://www.lowyinstitute.org/the-interpreter/marshall-islands-experiment-universal-basic-income"
     },
     {
+      "id": "us-appalachia-bridge",
+      "years": "2025–",
+      "type": "ngo",
+      "name": "The Bridge Project (Appalachia)",
+      "place": {
+        "en": "Appalachian Kentucky, Ohio and West Virginia, USA",
+        "ja": "アメリカ・アパラチア地方のケンタッキー州、オハイオ州、ウェストバージニア州",
+        "zh": "美国阿巴拉契亚地区的肯塔基州、俄亥俄州和西弗吉尼亚州",
+        "hi": "केंटकी, ओहायो और वेस्ट वर्जीनिया के ऐपलेशियन इलाके, अमेरिका",
+        "es": "Apalaches de Kentucky, Ohio y Virginia Occidental (EE. UU.)",
+        "de": "Appalachen-Regionen von Kentucky, Ohio und West Virginia (USA)",
+        "ar": "منطقة الأبالاش في كنتاكي وأوهايو وفيرجينيا الغربية، الولايات المتحدة"
+      },
+      "who": {
+        "en": "The Bridge Project, started by the New York-based Monarch Foundation",
+        "ja": "ニューヨークのMonarch Foundationが始めたThe Bridge Project",
+        "zh": "The Bridge Project，由纽约的 Monarch Foundation 发起",
+        "hi": "The Bridge Project, जिसे न्यूयॉर्क स्थित Monarch Foundation ने शुरू किया",
+        "es": "The Bridge Project, creado por la Monarch Foundation, con sede en Nueva York",
+        "de": "The Bridge Project, gegründet von der in New York ansässigen Monarch Foundation",
+        "ar": "⁦The Bridge Project⁩، أطلقته ⁦Monarch Foundation⁩ ومقرها نيويورك"
+      },
+      "paid": {
+        "en": "$1,125 during pregnancy, then $750 a month for 15 months and $375 a month for 21 months with no conditions, from April 2025, to 500 low-income mothers in Appalachian Kentucky, Ohio and West Virginia; 750 others get small payments for surveys",
+        "ja": "アパラチア地方のケンタッキー州、オハイオ州、ウェストバージニア州の低所得の母親500人に、2025年4月から条件なしで妊娠中に1,125ドル、その後月750ドルを15か月、月375ドルを21か月。別の750人は調査への協力で少額を受け取る",
+        "zh": "自 2025 年 4 月起，向阿巴拉契亚地区肯塔基州、俄亥俄州和西弗吉尼亚州的 500 名低收入母亲无条件在孕期发放 1,125 美元，之后 15 个月每月 750 美元、21 个月每月 375 美元；另有 750 人因参与调查领取少量款项",
+        "hi": "केंटकी, ओहायो और वेस्ट वर्जीनिया के ऐपलेशियन इलाकों की 500 कम आय वाली माताओं को अप्रैल 2025 से बिना शर्त गर्भावस्था में $1,125, फिर 15 महीने तक हर महीने $750 और 21 महीने तक हर महीने $375; 750 अन्य को सर्वे के लिए छोटी राशि मिलती है",
+        "es": "1.125 $ durante el embarazo, luego 750 $ al mes durante 15 meses y 375 $ al mes durante 21 meses sin condiciones, desde abril de 2025, para 500 madres de bajos ingresos de los Apalaches de Kentucky, Ohio y Virginia Occidental; otras 750 reciben pequeños pagos por responder encuestas",
+        "de": "1.125 $ in der Schwangerschaft, dann 750 $ im Monat für 15 Monate und 375 $ im Monat für 21 Monate ohne Bedingungen, ab April 2025, an 500 einkommensschwache Mütter in den Appalachen-Regionen von Kentucky, Ohio und West Virginia; 750 weitere erhalten kleine Beträge für Befragungen",
+        "ar": "⁦$1,125⁩ أثناء الحمل، ثم ⁦$750⁩ شهريًا لمدة 15 شهرًا و⁦$375⁩ شهريًا لمدة 21 شهرًا بلا شروط، بدءًا من أبريل 2025، لـ500 أم منخفضة الدخل في منطقة الأبالاش في كنتاكي وأوهايو وفيرجينيا الغربية؛ ويتلقى 750 آخرون مبالغ صغيرة مقابل الاستطلاعات"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.reviewonline.com/news/local-news/2025/01/bridge-project-offering-help-for-expecting-mothers/",
+      "us": {
+        "city": "Appalachian Ohio, Kentucky and West Virginia",
+        "state": "multi",
+        "start": "2025-04",
+        "end": null,
+        "monthly": 750,
+        "months": 36,
+        "recipients": 500,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": true,
+        "elig": "Pregnant women aged 18+, 23 weeks or fewer into pregnancy, household income $44,000 or less, living within the Appalachian Regional Commission area in Ohio, Kentucky or West Virginia; chosen by lottery",
+        "eval": null
+      }
+    },
+    {
+      "id": "us-indianapolis-indyeast",
+      "years": "2025–",
+      "type": "ngo",
+      "name": "IndyEast Guaranteed Income Initiative",
+      "place": {
+        "en": "Indianapolis, Indiana, USA",
+        "ja": "アメリカ・インディアナ州インディアナポリス",
+        "zh": "美国印第安纳州印第安纳波利斯",
+        "hi": "इंडियानापोलिस, इंडियाना, अमेरिका",
+        "es": "Indianápolis, Indiana (EE. UU.)",
+        "de": "Indianapolis, Indiana (USA)",
+        "ar": "إنديانابوليس، إنديانا، الولايات المتحدة"
+      },
+      "who": {
+        "en": "Three east-side Indianapolis community centers, funded by a $2.5 million United Way of Central Indiana grant",
+        "ja": "インディアナポリス東部の3つのコミュニティセンター。財源はUnited Way of Central Indianaの250万ドルの補助金",
+        "zh": "印第安纳波利斯东区的三家社区中心，资金来自印第安纳中部联合之路（United Way of Central Indiana）250 万美元的拨款",
+        "hi": "इंडियानापोलिस के ईस्ट साइड के तीन सामुदायिक केंद्र, United Way of Central Indiana के $25 लाख के अनुदान से",
+        "es": "Tres centros comunitarios del este de Indianápolis, financiados con una subvención de 2,5 millones de dólares de United Way of Central Indiana",
+        "de": "Drei Stadtteilzentren auf der Ostseite von Indianapolis, finanziert durch einen Zuschuss von 2,5 Mio. $ der United Way of Central Indiana",
+        "ar": "ثلاثة مراكز مجتمعية في الجانب الشرقي من إنديانابوليس، بتمويل من منحة قدرها 2.5 مليون دولار من ⁦United Way of Central Indiana⁩"
+      },
+      "paid": {
+        "en": "$500 a month for 18 months from October 2025, with optional coaching, to 25 east-side households picked at random from the centers' clients; the goal is 125 households by 2026",
+        "ja": "センターの利用者から無作為に選んだ東部の25世帯に、2025年10月から月500ドルを18か月（希望者にはコーチングも）。2026年までに125世帯が目標",
+        "zh": "自 2025 年 10 月起，从各中心服务对象中随机选出 25 个东区家庭，每月发放 500 美元，为期 18 个月，并可自愿接受辅导；目标是到 2026 年覆盖 125 个家庭",
+        "hi": "केंद्रों के क्लाइंट्स में से रैंडम रूप से चुने गए ईस्ट साइड के 25 परिवारों को अक्टूबर 2025 से 18 महीने तक हर महीने $500, साथ में वैकल्पिक कोचिंग; लक्ष्य 2026 तक 125 परिवारों का है",
+        "es": "500 $ al mes durante 18 meses desde octubre de 2025, con orientación opcional, para 25 hogares del este de la ciudad elegidos al azar entre los usuarios de los centros; el objetivo es llegar a 125 hogares en 2026",
+        "de": "500 $ im Monat für 18 Monate ab Oktober 2025, mit freiwilligem Coaching, an 25 zufällig aus den Klienten der Zentren ausgewählte Haushalte der Ostseite; Ziel sind 125 Haushalte bis 2026",
+        "ar": "⁦$500⁩ شهريًا لمدة 18 شهرًا بدءًا من أكتوبر 2025، مع إرشاد اختياري، لـ25 أسرة في الجانب الشرقي اختيرت عشوائيًا من عملاء المراكز؛ والهدف 125 أسرة بحلول 2026"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.wrtv.com/news/local-news/in-your-community/east-side-indy/indyeast-guaranteed-income-initiative-helps-families-with-500-monthly-payments",
+      "us": {
+        "city": "Indianapolis",
+        "state": "IN",
+        "start": "2025-10",
+        "end": null,
+        "monthly": 500,
+        "months": 18,
+        "recipients": 25,
+        "unit": "households",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Invitation only: randomly selected from neighbors already receiving coaching or case management at one of the three partner centers on Indianapolis's east side",
+        "eval": null
+      }
+    },
+    {
       "id": "korea-rural",
       "essays": ["nesara-gesara-basic-income", "japan-special-cash-payment"],
       "years": "2026–2027",
@@ -10216,48 +16170,120 @@ module.exports = {
       "source": "https://www.mafra.go.kr/bbs/home/792/578154/artclView.do"
     },
     {
+      "id": "us-durham-rooted",
+      "years": "2026–",
+      "type": "gov",
+      "name": "ROOTED (Resources & Opportunities for Ongoing Transition, Empowerment & Dignity)",
+      "place": {
+        "en": "Durham, North Carolina, USA",
+        "ja": "アメリカ・ノースカロライナ州ダーラム",
+        "zh": "美国北卡罗来纳州达勒姆",
+        "hi": "डरहम, नॉर्थ कैरोलाइना, अमेरिका",
+        "es": "Durham, Carolina del Norte (EE. UU.)",
+        "de": "Durham, North Carolina (USA)",
+        "ar": "دورهام، كارولاينا الشمالية، الولايات المتحدة"
+      },
+      "who": {
+        "en": "City of Durham (Community Safety Department), with $1 million from the city council after the Excel pilot; evaluated by Duke University researchers",
+        "ja": "ダーラム市（コミュニティ安全局）。Excelパイロットの後、市議会が100万ドルを計上。評価はデューク大学の研究者",
+        "zh": "达勒姆市（社区安全局），在 Excel 试点之后由市议会拨款 100 万美元；由杜克大学研究人员评估",
+        "hi": "डरहम शहर (Community Safety Department), Excel पायलट के बाद सिटी काउंसिल के $10 लाख से; मूल्यांकन Duke University के शोधकर्ता कर रहे हैं",
+        "es": "Ciudad de Durham (Departamento de Seguridad Comunitaria), con 1 millón de dólares del concejo municipal tras el piloto Excel; evaluado por investigadores de la Universidad Duke",
+        "de": "Stadt Durham (Community Safety Department), mit 1 Mio. $ vom Stadtrat nach dem Excel-Pilotprojekt; evaluiert von Forschenden der Duke University",
+        "ar": "مدينة دورهام (إدارة السلامة المجتمعية)، بمليون دولار من مجلس المدينة بعد تجربة ⁦Excel⁩؛ ويقيّمه باحثون من جامعة ديوك"
+      },
+      "paid": {
+        "en": "$8,400 over a year with no conditions ($700 a month, or larger early payments that taper) in 2026 to 107 formerly incarcerated Durham residents chosen by lottery; unselected applicants form the comparison group",
+        "ja": "抽選で選んだダーラムの元受刑者107人に、2026年に条件なしで1年間に計8,400ドル（月700ドル、または初めに多く払い徐々に減らす方式）。落選した応募者が比較群",
+        "zh": "2026 年，向通过抽签选出的 107 名曾被监禁的达勒姆居民在一年内无条件发放共 8,400 美元（每月 700 美元，或前期金额较大、之后逐步减少）；落选申请者组成比较组",
+        "hi": "लॉटरी से चुने गए डरहम के 107 पूर्व क़ैदी निवासियों को 2026 में एक साल में बिना शर्त $8,400 (हर महीने $700, या शुरू में बड़ी और फिर घटती किस्तें); न चुने गए आवेदक तुलना समूह हैं",
+        "es": "8.400 $ en un año sin condiciones (700 $ al mes, o pagos iniciales mayores que van disminuyendo) en 2026 para 107 residentes de Durham que habían estado encarcelados, elegidos por sorteo; los solicitantes no elegidos forman el grupo de comparación",
+        "de": "8.400 $ über ein Jahr ohne Bedingungen (700 $ im Monat oder höhere Anfangszahlungen, die dann sinken) im Jahr 2026 an 107 per Los ausgewählte ehemals inhaftierte Einwohner Durhams; nicht ausgewählte Bewerber bilden die Vergleichsgruppe",
+        "ar": "⁦$8,400⁩ على مدى عام بلا شروط (⁦$700⁩ شهريًا، أو دفعات أكبر في البداية تتناقص تدريجيًا) في 2026 لـ107 من السجناء السابقين من سكان دورهام اختيروا بالقرعة؛ ويشكّل المتقدمون غير المختارين مجموعة المقارنة"
+      },
+      "result": {
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
+      },
+      "source": "https://www.wunc.org/term/news/2026-07-08/guaranteed-income-reentry-incarceration-durham-mecklenburg",
+      "source2": "https://www.northcarolinahealthnews.org/2026/07/06/two-nc-local-governments-test-guaranteed-income-formerly-incarcerated/",
+      "us": {
+        "city": "Durham",
+        "state": "NC",
+        "start": "2026",
+        "end": null,
+        "monthly": 700,
+        "months": 12,
+        "recipients": 107,
+        "unit": "people",
+        "funders": ["public"],
+        "control": true,
+        "elig": "Durham residents released after 1 January 2024 after at least nine consecutive months of incarceration, with income at or below 60% of area median income; chosen by lottery",
+        "eval": null
+      }
+    },
+    {
       "id": "ai-dividend",
       "essays": ["ai-agent-basic-income", "moltbook-basic-income", "universal-high-income", "public-benefit-fund", "openresearch-cash-study", "generative-ai-jobs-basic-income"],
       "years": "2026–",
       "type": "ngo",
       "name": "AI Dividend",
       "place": {
-        "ja": "アメリカの非営利団体が運営、AIで仕事に影響を受けた人が対象",
         "en": "Run by US nonprofits, for people whose work has been hurt by AI",
-        "zh": "由美国非营利组织运营，面向工作受 AI 冲击的人",
-        "hi": "अमेरिकी गैर-लाभकारी संस्थाएँ चलाती हैं, उन लोगों के लिए जिनके काम पर AI का बुरा असर पड़ा",
-        "es": "Gestionado por organizaciones sin ánimo de lucro de EE. UU., para personas cuyo trabajo ha sufrido por la IA",
-        "de": "Von US-Non-Profits betrieben, für Menschen, deren Arbeit unter KI gelitten hat",
-        "ar": "تديره منظمات أمريكية غير ربحية، للأشخاص الذين تضرر عملهم بسبب الذكاء الاصطناعي"
+        "ja": "AIで仕事に打撃を受けた人を対象に、米国の非営利団体が実施",
+        "zh": "由美国非营利组织运营，面向工作受到 AI 冲击的人",
+        "hi": "अमेरिकी ग़ैर-लाभकारी संस्थाओं द्वारा, उन लोगों के लिए जिनके काम को AI से नुक़सान हुआ है",
+        "es": "Gestionado por organizaciones sin ánimo de lucro de EE. UU., para personas cuyo trabajo se ha visto perjudicado por la IA",
+        "de": "Von US-Gemeinnützigen getragen, für Menschen, deren Arbeit durch KI beeinträchtigt wurde",
+        "ar": "تديره منظمات أمريكية غير ربحية، لأشخاص تضرر عملهم بسبب الذكاء الاصطناعي"
       },
       "who": {
-        "ja": "What We Will（AIの影響を受けた労働者の支援団体）と AI Commons Project（Fund for Guaranteed Income の傘下）",
-        "en": "What We Will (an advocacy group for AI-affected workers) and the AI Commons Project (part of the Fund for Guaranteed Income)",
-        "zh": "What We Will（为受 AI 影响的劳动者发声的倡导团体）与 AI Commons Project（Fund for Guaranteed Income 旗下）",
-        "hi": "What We Will (AI से प्रभावित कामगारों का पैरवी समूह) और AI Commons Project (Fund for Guaranteed Income का हिस्सा)",
-        "es": "What We Will (grupo de defensa de trabajadores afectados por la IA) y AI Commons Project (filial del Fund for Guaranteed Income)",
-        "de": "What We Will (Interessengruppe für von KI betroffene Beschäftigte) und das AI Commons Project (Teil des Fund for Guaranteed Income)",
-        "ar": "⁦What We Will⁩ (مجموعة مناصرة للعمال المتضررين من الذكاء الاصطناعي) و⁦AI Commons Project⁩ (التابع لـ⁦Fund for Guaranteed Income⁩)"
+        "en": "What We Will (an advocacy group for AI-affected workers) and the AI Commons Project, part of the Fund for Guaranteed Income, which funds it",
+        "ja": "What We Will（AIの影響を受けた労働者の支援団体）と、資金を出すAI Commons Project（Fund for Guaranteed Incomeの一部）",
+        "zh": "What We Will（为受 AI 影响的劳动者发声的倡导团体）和 AI Commons Project（隶属保障收入基金 Fund for Guaranteed Income，并由其出资）",
+        "hi": "What We Will (AI से प्रभावित कामगारों का एक पैरवी समूह) और AI Commons Project, जो Fund for Guaranteed Income का हिस्सा है; पैसा Fund for Guaranteed Income देता है",
+        "es": "What We Will (un grupo de defensa de trabajadores afectados por la IA) y el AI Commons Project, parte del Fund for Guaranteed Income, que lo financia",
+        "de": "What We Will (eine Interessengruppe für von KI betroffene Beschäftigte) und das AI Commons Project, Teil des Fund for Guaranteed Income, der es finanziert",
+        "ar": "⁦What We Will⁩ (مجموعة مناصرة للعاملين المتضررين من الذكاء الاصطناعي) و⁦AI Commons Project⁩، ضمن ⁦Fund for Guaranteed Income⁩ الذي يموّله"
       },
       "paid": {
-        "ja": "条件なしで月1,000ドルを1年間、25〜50人のグループに。職業訓練（リスキリング）とセット。応募は随時受け付け、AI Commons Project が審査。2026年3月に支給開始",
-        "en": "$1,000 a month for a year with no strings attached to a cohort of 25–50 people, combined with reskilling; applicants are selected on a rolling basis and screened by the AI Commons Project. Payments began in March 2026",
-        "zh": "向 25 至 50 人的群体无条件每月发放 1,000 美元，为期一年，并结合再培训；申请随时受理，由 AI Commons Project 审核。2026 年 3 月开始发放",
-        "hi": "25–50 लोगों के समूह को एक साल तक बिना शर्त हर महीने $1,000, साथ में री-स्किलिंग; आवेदकों का चयन लगातार होता है और जाँच AI Commons Project करता है। भुगतान मार्च 2026 में शुरू",
-        "es": "1.000 $ al mes durante un año, sin condiciones, para un grupo de 25 a 50 personas, junto con recualificación; la selección es continua y la hace AI Commons Project. Los pagos empezaron en marzo de 2026",
-        "de": "1.000 $ im Monat ein Jahr lang ohne Bedingungen für eine Gruppe von 25 bis 50 Menschen, verbunden mit Umschulung; Auswahl laufend, geprüft vom AI Commons Project. Zahlungen seit März 2026",
-        "ar": "⁦$1,000⁩ شهريًا لمدة عام بلا شروط لمجموعة من 25 إلى 50 شخصًا، مع إعادة تأهيل مهني؛ ويُختار المتقدمون تباعًا ويفحص أهليتهم ⁦AI Commons Project⁩. بدأت الدفعات في مارس 2026"
+        "en": "$1,000 a month with no strings attached for a year, alongside reskilling, to a first cohort of 25–50 workers hurt by AI, selected on a rolling basis; the first payments went out in March 2026",
+        "ja": "AIで打撃を受けた労働者の第1期25〜50人に、学び直し支援とあわせて条件なしで月1,000ドルを1年間。随時選考し、初回支給は2026年3月",
+        "zh": "向第一批 25 至 50 名受 AI 冲击、滚动选出的劳动者无条件每月发放 1,000 美元，为期一年，同时提供再培训；首笔款项于 2026 年 3 月发放",
+        "hi": "AI से प्रभावित 25–50 कामगारों के पहले समूह को, जिन्हें लगातार (rolling) आधार पर चुना जाता है, एक साल तक बिना किसी शर्त हर महीने $1,000, साथ में नए कौशल का प्रशिक्षण; पहले भुगतान मार्च 2026 में हुए",
+        "es": "1.000 $ al mes sin condiciones durante un año, junto con recualificación, para una primera cohorte de 25–50 trabajadores perjudicados por la IA, seleccionados de forma continua; los primeros pagos salieron en marzo de 2026",
+        "de": "1.000 $ im Monat ohne Auflagen für ein Jahr, neben Umschulung, an eine erste Kohorte von 25 bis 50 durch KI beeinträchtigten Beschäftigten, laufend ausgewählt; die ersten Zahlungen gingen im März 2026 hinaus",
+        "ar": "⁦$1,000⁩ شهريًا بلا أي شروط لمدة عام، إلى جانب إعادة التأهيل المهني، لدفعة أولى من 25–50 عاملًا تضرروا من الذكاء الاصطناعي، يُختارون على أساس متجدد؛ وصُرفت الدفعات الأولى في مارس 2026"
       },
       "result": {
-        "ja": "AIによる失業を対象にした最初の現金給付と報じられた。最初の資金は30万ドルで、AI大手の協力を得て2026年中に300万ドルを配るのが目標。データを集めて拡大を目指す",
-        "en": "Reported as the first basic income for workers hit by AI. It started with $300,000 and aims to distribute $3 million in 2026 with help from the big AI companies, gathering data on the impact as it grows",
-        "zh": "被报道为首个面向受 AI 冲击劳动者的基本收入。启动资金 30 万美元，目标是在 AI 大公司的帮助下于 2026 年发放 300 万美元，并在扩大过程中收集影响数据",
-        "hi": "AI से प्रभावित कामगारों के लिए पहली बेसिक इनकम बताया गया। शुरुआत $3 लाख से हुई; लक्ष्य बड़ी AI कंपनियों की मदद से 2026 में $30 लाख बाँटना और बढ़ते हुए असर का डेटा जुटाना है",
-        "es": "Presentado como la primera renta básica para trabajadores afectados por la IA. Empezó con 300.000 $ y aspira a repartir 3 millones en 2026 con ayuda de las grandes empresas de IA, recogiendo datos sobre su impacto",
-        "de": "Als erstes Grundeinkommen für von KI getroffene Beschäftigte berichtet. Start mit 300.000 $; Ziel sind 3 Mio. $ im Jahr 2026 mit Hilfe der großen KI-Firmen, wobei Daten zur Wirkung gesammelt werden",
-        "ar": "وُصف بأنه أول دخل أساسي للعمال المتضررين من الذكاء الاصطناعي. بدأ بـ⁦$300,000⁩ ويهدف إلى توزيع 3 ملايين دولار في 2026 بمساعدة شركات الذكاء الاصطناعي الكبرى، مع جمع بيانات عن الأثر"
+        "en": "",
+        "ja": "",
+        "zh": "",
+        "hi": "",
+        "es": "",
+        "de": "",
+        "ar": ""
       },
-      "source": "https://www.bloodinthemachine.com/p/the-first-basic-income-for-workers"
+      "source": "https://www.bloodinthemachine.com/p/the-first-basic-income-for-workers",
+      "us": {
+        "city": "Nationwide",
+        "state": "multi",
+        "start": "2026-03",
+        "end": null,
+        "monthly": 1000,
+        "months": 12,
+        "recipients": null,
+        "unit": "people",
+        "funders": ["philanthropic"],
+        "control": false,
+        "elig": "Workers whose pay, jobs or opportunities were harmed by AI (not only tech workers: call-center workers, copywriters, journalists, data annotators, creative and other knowledge workers); applicants complete a survey, the AI Commons Project checks eligibility, and people are selected on a rolling basis",
+        "eval": null
+      }
     },
     {
       "id": "g1",

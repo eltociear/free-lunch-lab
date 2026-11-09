@@ -200,6 +200,43 @@ const longDate = (iso, lang) => new Intl.DateTimeFormat(LANG_TAG[lang], { year: 
 // ベーシックインカム社会実験の年表: /timeline/ と /{lang}/timeline/
 const tlPath = l => `${urlPath(l)}timeline/`;
 const tlAbs = l => SITE_URL + tlPath(l);
+// アメリカの保証所得（guaranteed income）パイロット: 年表の項目のうち us を持つもの。一覧表は /pilots/us/（並べ替え・絞り込みは JS）、JSON は us-pilots.json
+const usPath = l => `${urlPath(l)}pilots/us/`;
+const usAbs = l => SITE_URL + usPath(l);
+const US_FUNDERS = ['public', 'arpa', 'philanthropic'];
+const US_TL = TIMELINE.filter(t => t.us);
+const US_KEYS = ['usTitle', 'usH1', 'usDesc', 'usIntro', 'usCrumb', 'usLink', 'usColProgram', 'usColState', 'usColYears', 'usColMonthly', 'usColRecipients', 'usColEval', 'usYes', 'usNo', 'usFilter', 'usNote', 'usData', 'usStates', 'usEvaluated', 'tlFilterAll', 'tlFilterUs', 'tlFilterWorld', 'tlFilterLabel', 'tlFunding', 'tlFund_public', 'tlFund_arpa', 'tlFund_philanthropic', 'tlNoEval'];
+for (const l of LANGS) for (const k of US_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+{
+  const YM = /^\d{4}(-\d\d)?$/, seen = new Set();
+  for (const t of TIMELINE) {
+    if (!/^[a-z0-9-]+$/.test(t.id) || seen.has(t.id)) throw new Error(`timeline ${t.id}: id must be unique, lowercase a-z 0-9 -`);
+    seen.add(t.id);
+    for (const s of [t.source, t.source2].filter(Boolean)) if (!/^https?:\/\//.test(s)) throw new Error(`timeline ${t.id}: bad source ${s}`);
+    for (const f of ['place', 'who', 'paid', 'result']) for (const l of LANGS) if (typeof (t[f] || {})[l] !== 'string' || (f !== 'result' && !t[f][l])) throw new Error(`timeline ${t.id}: missing ${f}.${l}`);
+    // ar はラテン文字（名前・$ の金額）を LRI/PDI で囲む。hi に CJK や isolate を入れない
+    for (const f of ['place', 'who', 'paid', 'result']) {
+      if (/[A-Za-z$]/.test(t[f].ar.replace(/⁦[^⁩]*⁩/g, ''))) throw new Error(`timeline ${t.id}: Latin text outside LRI/PDI in ${f}.ar`);
+      if (/[　-鿿⁦-⁩]/.test(t[f].hi)) throw new Error(`timeline ${t.id}: CJK or isolate characters in ${f}.hi`);
+    }
+    if (!t.us) continue;
+    const u = t.us, at = `timeline ${t.id} (us)`;
+    if (!u.elig) throw new Error(`${at}: needs elig (eligibility, English)`);
+    if (!u.city || !(/^[A-Z]{2}$/.test(u.state) || u.state === 'multi')) throw new Error(`${at}: needs city and a 2-letter state (or "multi")`);
+    if (!YM.test(u.start) || (u.end !== null && !YM.test(u.end)) || (u.end && (u.end.length === u.start.length ? u.end < u.start : u.end.slice(0, 4) < u.start.slice(0, 4)))) throw new Error(`${at}: start/end must be YYYY or YYYY-MM (end null if ongoing)`);
+    if (u.status !== undefined && !(u.status === 'unknown' && u.end === null)) throw new Error(`${at}: status may only be "unknown", with end null (end not confirmed and not known to be ongoing)`);
+    if (u.endEstimated !== undefined && !(u.endEstimated === true && u.end)) throw new Error(`${at}: endEstimated must be true and needs an end`);
+    for (const k of ['monthly', 'months']) if (!(u[k] > 0)) throw new Error(`${at}: ${k} must be a positive number`);
+    if (!(u.recipients === null || u.recipients > 0)) throw new Error(`${at}: recipients must be a positive number or null (not stated)`);
+    if (![true, false, null].includes(u.control)) throw new Error(`${at}: control must be true, false or null (not stated)`);
+    if (!['people', 'households'].includes(u.unit)) throw new Error(`${at}: unit must be people or households`);
+    if (!u.funders.length || u.funders.some(f => !US_FUNDERS.includes(f))) throw new Error(`${at}: funders must be from ${US_FUNDERS.join(', ')}`);
+    if (u.eval && !(u.eval.by && u.eval.year && /^https?:\/\//.test(u.eval.url || ''))) throw new Error(`${at}: eval needs by, year and url`);
+    if (!!u.eval !== !!t.result.en) throw new Error(`${at}: result text must be given exactly when eval is set`);
+    if (t.years !== usYears(u)) throw new Error(`${at}: years should be ${usYears(u)}`);
+  }
+}
+function usYears(u) { return `${u.start.slice(0, 4)}–${u.end ? (u.end.slice(0, 4) === u.start.slice(0, 4) ? '' : u.end.slice(0, 4)) : ''}`.replace(/–$/, u.end ? '' : '–'); }
 // ベーシックインカム・ニュース（外部のニュースを毎週まとめる）: /news/ と /{lang}/news/、フィードは news/feed.xml。
 // サイト自身の更新履歴（NEWS・トップの「更新情報」）とは別のデータ BI_NEWS。週ごとのまとまり（updated）の新しい順
 const biNewsPath = l => `${urlPath(l)}news/`;
@@ -617,6 +654,7 @@ const DATASET_META = {
   'open-source.json': { name: 'Free Lunch Lab open-source projects', description: 'Open-source code projects related to basic income (UBI protocols, wallets, proof of personhood, simulators), as listed on Free Lunch Lab. Stars, last commit, archived status, license and language are fetched from GitHub and GitLab at build time.' },
   'open-data.json': { name: 'Free Lunch Lab basic income experiment data', description: 'Open datasets and replication packages from basic income, guaranteed income and unconditional cash transfer experiments, as listed on Free Lunch Lab. Each entry links to its official archive landing page; access is "open" (direct download), "registration" (free account needed) or "restricted" (application or data use agreement needed). The datasets themselves are not redistributed here and keep their own licenses.' },
   'countries.json': { name: 'Free Lunch Lab basic income cost by country', description: 'Population (total, children and adults), GDP in local currency and US dollars, central government expense, revenue and tax revenue as a share of GDP, and the monthly amount and yearly cost (as a share of GDP) of paying everyone the World Bank international poverty line of $3.00 a day, for every country and territory in the Free Lunch Lab basic income cost calculator. World Bank data (CC BY 4.0) for most countries; official national figures for the seven featured countries.' },
+  'us-pilots.json': { name: 'Free Lunch Lab US guaranteed income pilots', description: 'Guaranteed income pilots and programs in the United States, as listed on the Free Lunch Lab basic income timeline: city and state, operator, start and end, monthly amount in US dollars, duration, number of recipients, eligibility, funder type (public, federal ARPA pandemic relief, philanthropic), whether a control group was used, the main published evaluation if any, and the sources checked. Texts in seven languages. Findings are as reported by each evaluation.' },
   'news.json': { name: 'Free Lunch Lab basic income news', description: 'A weekly, hand-checked roundup of external basic income, guaranteed income and cash transfer news, grouped by weekly batch (newest first). Headlines and summaries are written by Free Lunch Lab in its own words; each item links to its source. This is separate from the site\'s own update log (the RSS feed at /feed.xml).' },
 };
 const FLL_ORG = { '@type': 'Organization', name: 'Free Lunch Lab', url: SITE_URL + '/' };
@@ -1130,6 +1168,16 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .cx-tbl td b{color:var(--gold)}
 @media (max-width:640px){.cx-reg,.cx-gdp{display:none}.cx-tbl th,.cx-tbl td{padding:8px}.cx-tbl .num{white-space:normal}}
 .guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
+.tl-f{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.tl-f button{font:inherit;font-size:.8125rem;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:2px 14px;min-height:44px;display:inline-flex;align-items:center;gap:6px;background:var(--surface);cursor:pointer}
+.tl-f button .dot{color:var(--muted)}
+.tl-f button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:700}
+.tl-f a{font-size:.8125rem;display:inline-flex;align-items:center;min-height:44px;padding-inline:8px;font-weight:700}
+.us-sum{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.875rem;color:var(--muted)}
+.us-tbl tbody th a{display:inline-block;padding-block:6px;margin-block:-6px;overflow-wrap:anywhere}
+.us-pl,.us-yr{display:block;font-weight:400;font-size:.8125rem;color:var(--muted);margin-top:2px}
+.us-yr{display:none}
+@media (max-width:640px){.us-st,.us-y{display:none}.us-yr{display:block}.us-tbl{font-size:.8125rem}.us-tbl thead th{white-space:normal}.us-tbl tbody th{min-width:8rem}.us-tbl th,.us-tbl td{padding:8px 6px}}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
 // meta description 用に長さをそろえる（日本語・中国語は 80〜120 字、それ以外は 110〜160 字が目安）。
@@ -1728,19 +1776,100 @@ function timelinePage(lang) {
     const org = i.org && ORGS.find(o => o.id === i.org);
     if (org) links.push(`<a href="${orgPath(lang)}#org-${org.id}">${esc(L.orgsTitle)}: ${esc(org.name)}</a>`);
     if (i.grave) links.push(`<a href="${gravePath(lang)}#grave-${i.grave}">${esc(L.graveTitle)}</a>`);
+    if (i.us) links.push(`<a href="${usPath(lang)}">${esc(L.usLink)}</a>`);
     const essays = essayList(i.essays);
-    return `<li class="tl-item tl-${i.type}" id="tl-${i.id}"><div class="tl-when"><span class="dot" dir="ltr">${esc(i.years)}</span></div><div class="tl-card"><p class="tl-type">${esc(TYPE[i.type])}</p><h2 dir="auto">${esc(i.name)}</h2><p class="tl-place">${esc(t(i.place))}</p>
-<dl><dt>${esc(L.tlWho)}</dt><dd>${esc(t(i.who))}</dd><dt>${esc(L.tlPaid)}</dt><dd>${esc(t(i.paid))}</dd>${t(i.result) ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(t(i.result))}</dd>` : ''}<dt>${esc(L.tlSource)}</dt><dd><a href="${esc(i.source)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(i.source).hostname.replace(/^www\./, ''))}</a></dd></dl>${links.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${links.join(' · ')}</p>` : ''}${essays.length ? `<p class="tl-links"><span>${esc(L.essayRelated)}:</span> ${essays.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : ''}${shareMini(lang, `${i.name}: ${firstClause(t(i.paid))}`, shareUrlOf(tlAbs(lang), `tl-${i.id}`))}</div></li>`;
+    const src = u => `<a href="${esc(u)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(u).hostname.replace(/^www\./, ''))}</a>`;
+    const fund = i.us ? `<dt>${esc(L.tlFunding)}</dt><dd>${i.us.funders.map(f => esc(L['tlFund_' + f])).join(' · ')}</dd>` : '';
+    const result = t(i.result) ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(t(i.result))}</dd>` : i.us ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(L.tlNoEval)}</dd>` : '';
+    return `<li class="tl-item tl-${i.type}" id="tl-${i.id}" data-r="${i.us ? 'us' : 'w'}"><div class="tl-when"><span class="dot" dir="ltr">${esc(i.years)}</span></div><div class="tl-card"><p class="tl-type">${esc(TYPE[i.type])}</p><h2 dir="auto">${esc(i.name)}</h2><p class="tl-place">${esc(t(i.place))}</p>
+<dl><dt>${esc(L.tlWho)}</dt><dd>${esc(t(i.who))}</dd><dt>${esc(L.tlPaid)}</dt><dd>${esc(t(i.paid))}</dd>${fund}${result}<dt>${esc(L.tlSource)}</dt><dd>${[i.source, i.source2].filter(Boolean).map(src).join(' · ')}</dd></dl>${links.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${links.join(' · ')}</p>` : ''}${essays.length ? `<p class="tl-links"><span>${esc(L.essayRelated)}:</span> ${essays.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : ''}${shareMini(lang, `${i.name}: ${firstClause(t(i.paid))}`, shareUrlOf(tlAbs(lang), `tl-${i.id}`))}</div></li>`;
   }).join('\n');
+  const nUs = US_TL.length, nAll = TIMELINE.length;
+  const fb = (r, label, n, on) => `<button type="button" data-r="${r}" aria-pressed="${on}">${esc(label)} <span class="dot">${n}</span></button>`;
+  const filter = `<div class="tl-f" role="group" aria-label="${esc(L.tlFilterLabel)}">${fb('', L.tlFilterAll, nAll, true)}${fb('us', L.tlFilterUs, nUs, false)}${fb('w', L.tlFilterWorld, nAll - nUs, false)}<a href="${usPath(lang)}">${esc(L.usLink)} ${RTL.has(lang) ? '←' : '→'}</a></div>`;
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.tlTitle)}</li></ol></nav>
 <main class="orgs">
 <header class="orgs-head"><p class="eyebrow">${esc(L.ebTimeline)}</p><h1>${esc(L.tlTitle)}</h1><p class="orgs-intro">${esc(L.tlIntro)}</p>
+${filter}
 ${shareRow(lang, L.tlTitle, shareUrlOf(tlAbs(lang)))}</header>
-<ol class="tl">${items}</ol>
-<p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${ossPath(lang)}">${esc(L.ossTitle)}</a> · <a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a></p>
+<ol class="tl" id="tlList">${items}</ol>
+<p class="tl-more"><a href="${usPath(lang)}">${esc(L.usLink)}</a> · <a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${ossPath(lang)}">${esc(L.ossTitle)}</a> · <a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a></p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title, desc: L.tlDesc, hrefFor: tlAbs, pathFor: tlPath, ld, ogType: 'website', body, script: shareScript(L) });
+  // 地域の絞り込み（JS がなければ全部見える）。#tl-… で隠れた項目を開いたときは全部に戻す
+  const script = `${shareScript(L)}
+<script>
+(function(){
+  var f = document.querySelector('.tl-f'), items = [].slice.call(document.querySelectorAll('#tlList > li'));
+  if (!f) return;
+  function set(r) {
+    [].forEach.call(f.querySelectorAll('button'), function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-r') === r)); });
+    items.forEach(function (li) { li.hidden = !!r && li.getAttribute('data-r') !== r; });
+  }
+  f.addEventListener('click', function (e) { var b = e.target.closest ? e.target.closest('button') : null; if (b) set(b.getAttribute('data-r')); });
+  function show() { var el = location.hash && document.getElementById(location.hash.slice(1)); if (el && el.hidden) { set(''); el.scrollIntoView(); } }
+  window.addEventListener('hashchange', show);
+})();
+</script>`;
+  return shell(lang, { title, desc: L.tlDesc, hrefFor: tlAbs, pathFor: tlPath, ld, ogType: 'website', body, script });
+}
+
+// ---- アメリカの保証所得パイロットの一覧（/pilots/us/）。年表の us を持つ項目を表にして、行から年表の #tl-… へ。並べ替えと絞り込みは JS
+function usPilotsPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const loc = calcJs.LOCALE[lang];
+  const num = n => new Intl.NumberFormat(loc).format(n);
+  const usd = n => new Intl.NumberFormat(loc, { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(n).replace(/[\u00a0\u202f]/g, ' ');
+  const t = o => o[lang] || o.en;
+  const n = US_TL.length, states = new Set(US_TL.map(i => i.us.state).filter(s => s !== 'multi' && s !== 'DC')).size, evals = US_TL.filter(i => i.us.eval).length;
+  const list = US_TL.slice().sort((a, b) => a.us.city.localeCompare(b.us.city, 'en') || a.name.localeCompare(b.name, 'en'));
+  const ym = s => +(s.length === 4 ? s + '00' : s.replace('-', ''));
+  const ld = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.tlTitle, item: tlAbs(lang) },
+    { '@type': 'ListItem', position: 3, name: L.usCrumb, item: usAbs(lang) } ] },
+    datasetLd('us-pilots.json', usAbs(lang), { temporalCoverage: `${Math.min(...US_TL.map(i => +i.us.start.slice(0, 4)))}/..`, spatialCoverage: 'United States', keywords: ['guaranteed income', 'basic income', 'cash transfer', 'pilot'] })];
+  const th = (k, label, cls = '', sort = '') => `<th scope="col"${cls ? ` class="${cls}"` : ''}${sort ? ` aria-sort="${sort}"` : ''}>${k ? `<button type="button" data-k="${k}">${esc(label)}</button>` : esc(label)}</th>`;
+  const rows = list.map((i, k) => {
+    const u = i.us;
+    return `<tr data-n="${k}" data-s="${esc(u.state)}" data-y="${ym(u.start)}" data-m="${u.monthly}" data-c="${u.recipients || 0}" data-e="${u.eval ? 1 : 0}"><th scope="row"><a href="${tlPath(lang)}#tl-${i.id}" dir="auto">${esc(i.name)}</a><span class="us-pl">${esc(t(i.place))}</span><span class="us-yr" dir="ltr">${esc(i.years)}</span></th><td class="us-st" dir="ltr">${esc(u.state === 'multi' ? '—' : u.state)}</td><td class="num us-y" dir="ltr">${esc(i.years)}</td><td class="num"><bdi>${esc(usd(u.monthly))}</bdi></td><td class="num">${u.recipients ? esc(num(u.recipients)) : '—'}</td><td>${u.eval ? `<b>${esc(L.usYes)}</b>` : esc(L.usNo)}</td></tr>`;
+  }).join('\n');
+  const file = `<a href="${SITE_URL}/us-pilots.json" dir="ltr">us-pilots.json</a>`;
+  const title = cfill(L.usTitle, { n });
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${tlPath(lang)}">${esc(L.tlTitle)}</a></li><li aria-current="page">${esc(L.usCrumb)}</li></ol></nav>
+<main class="cx cx-wide">
+<header class="orgs-head"><p class="eyebrow"><a href="${tlPath(lang)}">${esc(L.ebTimeline)}</a></p><h1>${esc(cfill(L.usH1, { n }))}</h1><p class="orgs-intro">${esc(cfill(L.usIntro, { n }))}</p>
+<p class="us-sum"><span>${esc(cfill(L.usStates, { n: states }))}</span><span>${esc(cfill(L.usEvaluated, { n: evals }))}</span></p>
+<p class="oss-note">${esc(L.usData).replace('{file}', file)}</p>
+${shareRow(lang, cfill(L.usH1, { n }), shareUrlOf(usAbs(lang)))}</header>
+<label class="cx-q"><span class="vh">${esc(L.usFilter)}</span><input class="cx-num" id="cxQ" type="search" placeholder="${esc(L.usFilter)}" autocomplete="off"></label>
+<div class="cx-tw"><table class="cx-tbl us-tbl" id="cxTbl"><thead><tr>${th('n', L.usColProgram, '', 'ascending')}${th('s', L.usColState, 'us-st')}${th('y', L.usColYears, 'num us-y')}${th('m', L.usColMonthly, 'num')}${th('c', L.usColRecipients, 'num')}${th('e', L.usColEval)}</tr></thead><tbody>
+${rows}
+</tbody></table></div>
+<section class="g-sec cx-note"><p>${esc(L.usNote)}</p></section>
+<p class="back"><a class="btn line" href="${tlPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.tlTitle)}</a></p>
+</main>`;
+  const script = `${shareScript(L)}
+<script>
+(function(){
+  var t = document.getElementById('cxTbl'), b = t.tBodies[0], rows = [].slice.call(b.rows), q = document.getElementById('cxQ'), cur = 'n', dir = 1;
+  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, ''); }
+  function val(r, k) { var v = r.getAttribute('data-' + k); return k === 's' ? v : +v; }
+  t.tHead.addEventListener('click', function (e) {
+    var x = e.target.closest ? e.target.closest('button') : null;
+    if (!x) return;
+    var k = x.getAttribute('data-k');
+    dir = cur === k ? -dir : (k === 'n' || k === 's' ? 1 : -1); cur = k;
+    rows.sort(function (a, c) { var p = val(a, k), z = val(c, k); return (k === 's' ? (p < z ? -1 : p > z ? 1 : 0) : p - z) * dir || a.getAttribute('data-n') - c.getAttribute('data-n'); });
+    rows.forEach(function (r) { b.appendChild(r); });
+    [].forEach.call(t.tHead.querySelectorAll('th'), function (h) { h.removeAttribute('aria-sort'); });
+    x.parentNode.setAttribute('aria-sort', dir > 0 ? 'ascending' : 'descending');
+  });
+  q.addEventListener('input', function () { var v = norm(q.value.trim()); rows.forEach(function (r) { r.hidden = !!v && norm(r.cells[0].textContent + ' ' + r.cells[1].textContent).indexOf(v) < 0; }); });
+})();
+</script>`;
+  return shell(lang, { title: `${title} | ${L.title}`, desc: clip(cfill(L.usDesc, { n }), lang), hrefFor: usAbs, pathFor: usPath, ld, ogType: 'website', body, script, image: ogImage(`pilots/${lang}/us.jpg`) });
 }
 
 // ---- ベーシックインカム・ニュース（/news/）。外部のニュースを週ごとにまとめる（BI_NEWS）。要約は自分たちの言葉で、出典つき
@@ -2035,6 +2164,9 @@ for (const lang of LANGS) {
   const tdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'timeline');
   fs.mkdirSync(tdir, { recursive: true });
   fs.writeFileSync(path.join(tdir, 'index.html'), timelinePage(lang));
+  const udir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'pilots', 'us');
+  fs.mkdirSync(udir, { recursive: true });
+  fs.writeFileSync(path.join(udir, 'index.html'), usPilotsPage(lang));
   const vidir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'verify');
   fs.mkdirSync(vidir, { recursive: true });
   fs.writeFileSync(path.join(vidir, 'index.html'), verifyIndexPage(lang));
@@ -2232,7 +2364,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(calcIdxAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(calcIdxAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
@@ -2432,7 +2564,33 @@ const countriesJson = {
     currencyNames: Object.fromEntries(LANGS.map(l => [l, clean(c.cur[l])])),
   })),
 };
-for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson], ['open-source.json', ossJson], ['open-data.json', dataJson], ['news.json', biNewsJson], ['countries.json', countriesJson]]) {
+// アメリカの保証所得パイロット（us-pilots.json）。年表の us を持つ項目
+const usPilotsJson = {
+  name: DATASET_META['us-pilots.json'].name,
+  description: DATASET_META['us-pilots.json'].description,
+  source: usAbs(DEFAULT_LANG),
+  repository: 'https://github.com/eltociear/free-lunch-lab',
+  license: 'CC BY 4.0',
+  licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+  languages: LANGS,
+  count: US_TL.length,
+  fields: {
+    start: 'Month (YYYY-MM) or year of the first payment', end: 'Month or year of the last payment; null if ongoing or not confirmed', endEstimated: 'true when the sources give only the start and the length of payments, so the end year is calculated from them', ongoing: 'true if payments are still running, false if ended, null if the sources do not say',
+    monthlyUsd: 'Main monthly payment in US dollars (see paid for amounts that vary)', months: 'Length of payments in months',
+    recipients: 'Number of recipients (people or households, see unit); null if the sources give only a range', eligibility: 'Who could apply or was selected, in English', funders: 'public (city, county or state money), arpa (federal American Rescue Plan Act pandemic relief) or philanthropic',
+    controlGroup: 'Whether the pilot had a randomized or comparison control group (null if the sources do not say)', evaluation: 'The main published evaluation, or null if none was found',
+  },
+  pilots: US_TL.map(i => ({
+    id: i.id, name: i.name, city: i.us.city, state: i.us.state, years: i.years, start: i.us.start, end: i.us.end, endEstimated: !!i.us.endEstimated, ongoing: i.us.end ? false : i.us.status === 'unknown' ? null : true,
+    monthlyUsd: i.us.monthly, months: i.us.months, recipients: i.us.recipients, unit: i.us.unit, eligibility: i.us.elig, funders: i.us.funders, controlGroup: i.us.control,
+    operatorType: i.type === 'gov' ? 'government' : 'nonprofit or research',
+    evaluation: i.us.eval ? { by: i.us.eval.by, year: i.us.eval.year, type: i.us.eval.type || null, url: i.us.eval.url } : null,
+    sources: [i.source, i.source2].filter(Boolean),
+    pageUrl: `${tlAbs(DEFAULT_LANG)}#tl-${i.id}`,
+    text: Object.fromEntries(LANGS.map(l => [l, { place: clean(i.place[l]), operator: clean(i.who[l]), paid: clean(i.paid[l]), result: clean(i.result[l]) || clean(T[l].tlNoEval) }])),
+  })),
+};
+for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson], ['open-source.json', ossJson], ['open-data.json', dataJson], ['news.json', biNewsJson], ['countries.json', countriesJson], ['us-pilots.json', usPilotsJson]]) {
   const txt = JSON.stringify(obj, null, 2) + '\n';
   fs.writeFileSync(path.join(DATA_DIR, file), txt);
   fs.writeFileSync(path.join(OUT, file), txt);
@@ -2465,6 +2623,7 @@ const llmsTxt = `${llmsHead(false)}
 - [open-data.json](${SITE_URL}/open-data.json): open datasets and replication packages from basic income experiments, with archive, access level and license
 - [news.json](${SITE_URL}/news.json): the weekly basic income news roundup, with headlines and summaries in every language, region, tag and source links
 - [countries.json](${SITE_URL}/countries.json): every country and territory in the basic income cost calculator, with population (total, children, adults), GDP in local currency and US dollars, central government expense, revenue and tax as % of GDP, and the yearly cost of paying everyone the World Bank's $3.00-a-day poverty line (World Bank data, CC BY 4.0)
+- [us-pilots.json](${SITE_URL}/us-pilots.json): ${US_TL.length} US guaranteed income pilots with city, state, operator, years, monthly amount, duration, recipients, funder type (public, ARPA, philanthropic), control group and the main published evaluation, with texts in every language (CC BY 4.0)
 - [Basic income news RSS (en)](${biNewsFeedAbs(DEFAULT_LANG)}): the weekly news roundup as a feed (other languages at /{lang}/news/feed.xml)
 ${LANGS.map(l => `- [RSS feed (${l})](${feedAbs(l)}): update log in ${LANG_NAMES[l] === 'EN' ? 'English' : LANG_NAMES[l]}`).join('\n')}
 
@@ -2477,6 +2636,7 @@ ${live.map(s => `- [${mdLink(s.nameEn || s.name)}](${svcAbs(DEFAULT_LANG, s)}): 
 ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LANG, m)}): services that use ${md(VERIFY[m].name.en)}`).join('\n')}
 - [${md(T.en.orgsH1)}](${orgAbs(DEFAULT_LANG)}): ${md(T.en.orgsDesc)}
 - [${md(T.en.tlTitle)}](${tlAbs(DEFAULT_LANG)}): ${md(T.en.tlDesc)}
+- [${md(cfill(T.en.usH1, { n: US_TL.length }))}](${usAbs(DEFAULT_LANG)}): ${md(cfill(T.en.usDesc, { n: US_TL.length }))}
 - [${md(T.en.biNewsH1)}](${biNewsAbs(DEFAULT_LANG)}): ${md(T.en.biNewsDesc)}${BI_NEWS.length ? ` Last updated ${BI_NEWS[0].updated}.` : ''}
 - [${md(T.en.graveTitle)}](${graveAbs(DEFAULT_LANG)}): ${md(T.en.graveDesc)}
 - [${md(T.en.ossTitle)}](${ossAbs(DEFAULT_LANG)}): ${md(T.en.ossDesc)}
@@ -2615,6 +2775,12 @@ ${OPEN_DATA.map(dataFull).join('\n\n')}
 ${md(T.en.biNewsIntro)} Page: ${biNewsAbs(DEFAULT_LANG)}
 
 ${BI_NEWS.map(b => [`### Week of ${weekOf(b.updated)} (updated ${b.updated})`, '', ...b.items.map(x => `- ${x.date}, ${md(BI_NEWS_REGIONS[x.region].en)} (${md(T.en['biNewsTag_' + x.tag])}): ${md(x.title.en)}. ${md(x.summary.en)} Source: ${x.sources.map(s => `${md(s.name)}, ${s.url}`).join('; ')}`)].join('\n')).join('\n\n')}
+
+## US guaranteed income pilots
+
+${md(cfill(T.en.usIntro, { n: US_TL.length }))} Page: ${usAbs(DEFAULT_LANG)}
+
+${US_TL.map(i => `- ${md(i.name)} (${md(i.place.en)}; ${i.years}): Run by ${md(i.who.en)}. ${md(i.paid.en)}. Funding: ${i.us.funders.map(f => md(T.en['tlFund_' + f])).join(', ')}. Result: ${md(i.result.en) || md(T.en.tlNoEval)}. Source: ${[i.source, i.source2].filter(Boolean).join(' ; ')}`).join('\n')}
 
 ## Graveyard
 
