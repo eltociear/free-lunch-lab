@@ -140,7 +140,7 @@ for (const t of QUIZ.types) { for (const l of LANGS) for (const f of ['name', 'd
 // BI計算機: /calc/。数字は CALC（data.js）、計算と描画は src/calc.js（ブラウザと同じコード）
 const calcPath = l => `${urlPath(l)}calc/`;
 const calcAbs = l => SITE_URL + calcPath(l);
-const CALC_KEYS = ['calcOther', 'calcCmpGovExp', 'calcCmpGovRev', 'calcCmpGovTax', 'calcUsd', 'calcUsdCur', 'calcMoneyPlain', 'calcCtyLink', 'calcTitle', 'calcH1', 'calcDesc', 'calcIntro', 'calcCountry', 'calcWho', 'calcWhoAll', 'calcWhoAdults', 'calcWhoKids', 'calcAmount', 'calcCustom', 'calcResultEb', 'calcFormula', 'calcPeople', 'calcCmpH', 'calcCmpBudget', 'calcCmpSocial', 'calcCmpTax', 'calcCmpGdp', 'calcShareX', 'calcShare', 'calcAsk', 'calcTag', 'copyLink', 'linkCopied', 'calcShareAll', 'calcShareAdults', 'calcShareKids', 'calcNoteH', 'calcNote', 'calcMore', 'calcSources', 'calcSrcPop', 'calcSrcBudget', 'calcSrcGdp', 'calcHome', 'calcUnits', 'calcMoney'];
+const CALC_KEYS = ['calcOther', 'calcCmpGovExp', 'calcCmpGovRev', 'calcCmpGovTax', 'calcUsd', 'calcUsdCur', 'calcMoneyPlain', 'calcCtyLink', 'calcTitle', 'calcH1', 'calcDesc', 'calcIntro', 'calcCountry', 'calcWho', 'calcWhoAll', 'calcWhoAdults', 'calcWhoKids', 'calcAmount', 'calcCustom', 'calcResultEb', 'calcFormula', 'calcPeople', 'calcCmpH', 'calcCmpBudget', 'calcCmpSocial', 'calcCmpTax', 'calcCmpGdp', 'calcShareX', 'calcShare', 'calcAsk', 'calcTag', 'copyLink', 'linkCopied', 'calcShareAll', 'calcShareAdults', 'calcShareKids', 'calcNoteH', 'calcNote', 'calcMore', 'calcSources', 'calcSrcPop', 'calcSrcBudget', 'calcSrcGdp', 'calcHome', 'calcUnits', 'calcMoney', 'embedCredit'];
 for (const l of LANGS) for (const k of CALC_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 for (const l of LANGS) if (!CALC.countries.some(c => c.id === CALC.defaults[l])) throw new Error(`calc: no default country for ${l}`);
 for (const c of CALC.countries) {
@@ -163,6 +163,11 @@ const calcCtyPath = (l, c) => `${calcPath(l)}${c.id}/`;
 const calcCtyAbs = (l, c) => SITE_URL + calcCtyPath(l, c);
 const calcIdxPath = l => `${calcPath(l)}countries/`;
 const calcIdxAbs = l => SITE_URL + calcIdxPath(l);
+// 埋め込み用の計算機（/embed/calc/、noindex）と、その使い方・ライセンスのページ（/embed/）
+const embedPath = l => `${urlPath(l)}embed/`;
+const embedAbs = l => SITE_URL + embedPath(l);
+const embedCalcPath = l => `${embedPath(l)}calc/`;
+const embedCode = (l, c) => `<iframe src="${SITE_URL}${embedCalcPath(l)}${c ? `?c=${c.id}` : ''}" title="${T[l].calcTitle.replace(/[\u2066-\u2069"]/g, '')} – Free Lunch Lab" width="100%" height="640" style="border:0;max-width:700px" loading="lazy"></iframe>`;
 const CALC_SOURCES = {
   ...CALC.sources,
   wbPop: { year: String(WB.countries[0].pop.year), url: 'https://data.worldbank.org/indicator/SP.POP.TOTL' },
@@ -1171,6 +1176,11 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .cx-near-l{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .cx-near-l a{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border-radius:999px;border:1.5px solid var(--line);font-size:.875rem;font-weight:700;color:var(--ink);text-decoration:none}
 .cx-near-l a:hover{border-color:var(--muted)}
+.cx-emb-code{display:block;width:100%;min-height:96px;margin-top:12px;padding:10px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);font:.8125rem/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;resize:vertical;direction:ltr;text-align:left}
+.cx-emb-act{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:10px}
+.em-frame{display:block;width:100%;max-width:700px;height:640px;margin-top:12px;border:0;border-radius:14px}
+.em-params{margin:0 0 10px;padding-inline-start:1.2em;font-size:.95rem;line-height:1.9}
+.cx-note code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85em;padding:1px 6px;border-radius:6px;border:1px solid var(--line);background:var(--paper);overflow-wrap:anywhere}
 .cx-ess-l{margin:0;padding-inline-start:1.2em;display:grid;gap:2px}
 .cx-ess-l a{display:inline-block;padding-block:8px;font-weight:700;overflow-wrap:anywhere}
 .cx-wide{max-width:60rem}
@@ -1655,6 +1665,7 @@ function calcPage(lang) {
 <p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a></p>
 <section class="cx-res" id="cxRes" aria-live="polite">${ini.result}</section>
 <section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p><p>${more}</p></section>
+${embedSection(lang, null)}
 <section class="g-sec cx-src"><h2>${esc(L.calcSources)}</h2><dl>
 <div><dt>${esc(L.calcSrcPop)}</dt>${srcItem('jpPop', names(['jp']))}${srcItem('wpp', names(popOther))}${other(calcSrcA('https://data.worldbank.org/indicator/SP.POP.TOTL', cfill(L.calcSrcWbPop, { year: CALC_SOURCES.wbPop.year })))}</div>
 <div><dt>${esc(L.calcSrcBudget)}</dt>${srcItem('mofBudget', names(['jp']))}${other(calcSrcA('https://data.worldbank.org/indicator/GC.XPN.TOTL.GD.ZS', cfill(L.calcSrcWbGov, { year: '2015–' + CALC_SOURCES.wbGdpAll.year })))}</div>
@@ -1664,7 +1675,7 @@ function calcPage(lang) {
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   // 検索結果用の title・description（任意。zh だけ、Search Console の検索語に合わせて別に持つ。見出しと OG 画像は calcH1・calcDesc のまま）
-  return shell(lang, { title: `${L.calcMetaTitle || L.calcH1} | ${L.title}`, desc: clip(L.calcMetaDesc || L.calcDesc, lang), hrefFor: calcAbs, pathFor: calcPath, ld, ogType: 'website', body, script: calcScript(lang), image: ogImage(`calc/${lang}/index.jpg`) });
+  return shell(lang, { title: `${L.calcMetaTitle || L.calcH1} | ${L.title}`, desc: clip(L.calcMetaDesc || L.calcDesc, lang), hrefFor: calcAbs, pathFor: calcPath, ld, ogType: 'website', body, script: calcScript(lang) + embedCopyScript(L), image: ogImage(`calc/${lang}/index.jpg`) });
 }
 
 // 国のページの本文（データから作る文）。数字は計算機と同じ関数（src/calc.js）で書く
@@ -1690,6 +1701,82 @@ function calcFacts(lang, c) {
   if (c.featured) out.push(cfill(L.calcCtyDefCur, { amount: m(c.def), pl: m(c.line.monthly), plPct: X.pct(calcLinePct(c)) }));
   else out.push(cfill(c.line.how === 'ppp' ? L.calcCtyDefPpp : L.calcCtyDefFx, { amount: m(c.def), cur: c.cur[lang], year: c.line.year }));
   return { paras: out.map(p => ucf(lang, p)), all };
+}
+
+// 計算機のページと国のページの「この計算機をサイトに埋め込む」欄: その国を選んだ iframe のコードとコピーのボタン。
+// /calc/ は言語の既定の国（コードに ?c= を入れない）。/embed/ のページでは自分へのリンクを出さない
+function embedSection(lang, c, { more = true } = {}) {
+  const L = T[lang], shown = c || calcCtyById(CALC.defaults[lang]);
+  return `<section class="g-sec cx-emb" id="embed"><h2>${esc(L.embedH)}</h2><p>${esc(cfill(L.embedP, { country: shown.name[lang], n: CALC_WORLD.length }))}</p>
+<textarea class="cx-emb-code" id="cxEmb" readonly rows="4" dir="ltr" spellcheck="false" aria-label="${esc(L.embedH)}">${esc(embedCode(lang, c))}</textarea>
+<div class="cx-emb-act"><button class="btn line cx-copy" type="button" id="cxEmbCopy">${esc(L.embedCopy)}</button><span class="cx-copied" id="cxEmbDone" role="status" aria-live="polite"></span></div>${more ? `
+<p class="cx-idx"><a href="${embedPath(lang)}">${esc(L.embedMore)} ${RTL.has(lang) ? '←' : '→'}</a></p>` : ''}</section>`;
+}
+const embedCopyScript = L => `<script>(function(){var b=document.getElementById('cxEmbCopy'),t=document.getElementById('cxEmb'),o=document.getElementById('cxEmbDone');if(!b)return;function done(){o.textContent=${JSON.stringify(L.embedCopied).replace(/</g, '\\u003c')}}function fb(){t.focus();t.select();try{if(document.execCommand('copy'))done()}catch(e){}}b.addEventListener('click',function(){try{navigator.clipboard.writeText(t.value).then(done,fb)}catch(e){fb()}})})()</script>`;
+// 埋め込みの部品の CSS: サイトの色・書体の変数（template の :root と言語ごとの書体）と、計算機の部品の CSS の一部だけ
+const EMBED_CSS = () => [
+  CSS.match(/:root\{[\s\S]*?\n\}/)[0],
+  ...(CSS.match(/html\[lang="[^"]+"\]\{--f-[^}]*\}/g) || []),
+  '*{box-sizing:border-box}[hidden]{display:none!important}p{margin:0}a{color:var(--accent)}',
+  'html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6;overflow-x:hidden}body{padding:10px}',
+  'a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}',
+  ...DETAIL_CSS.split('\n').filter(l => /^\.cx-(f|chips|chip|own-in|num|cur|sel|total|usd|formula|row|bar)\b/.test(l)),
+  '.em{max-width:700px;margin-inline:auto;display:grid;gap:10px}',
+  '.em-form{padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface)}',
+  '.em-ctl{display:grid;gap:12px}.em-f{display:grid;gap:6px;min-width:0}',
+  '.em-l{display:block;padding:0;font-weight:700;font-size:.875rem}.em .cx-f legend{margin-bottom:6px;font-size:.875rem}',
+  '.em .cx-sel{margin-top:0;max-width:none}.em .cx-chip span{min-height:40px;padding:6px 12px;font-size:.875rem}.em .cx-own-in{max-width:20rem}',
+  '.em-res{padding:12px 16px;border-radius:14px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:var(--surface);display:grid;gap:4px;min-width:0}',
+  '.em-eb{font-size:.8125rem;color:var(--muted)}.em-total{font-size:clamp(1.6rem,8vw,2.4rem)}.cx-usd{margin:0}',
+  '.em-gdp{margin-top:6px}.em .cx-formula{font-size:.84rem;line-height:1.6}',
+  '.em-by{margin-top:6px;padding-top:6px;border-top:1px solid var(--line);font-size:.8125rem}.em-by a{display:inline-block;padding-block:6px;text-decoration:none}.em-by a:hover{text-decoration:underline}',
+].join('\n');
+// /embed/calc/: iframe に入れる小さな計算機（noindex, follow）。データと計算は /calc/app-{lang}.js をそのまま使う
+function embedCalcPage(lang) {
+  const L = T[lang], ini = CALC_CTX[lang].embed(SITE_URL);
+  return `<!doctype html>
+<html lang="${LANG_TAG[lang]}"${RTL.has(lang) ? ' dir="rtl"' : ''}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${esc(L.calcTitle)} | ${esc(L.brandPlain)}</title>
+<meta name="robots" content="noindex, follow">
+${ICONS}
+<!--@fonts@-->
+<style>${EMBED_CSS()}</style>
+</head>
+<body>
+<main class="em">
+<form class="em-form" id="cx" data-embed data-url="${SITE_URL}" onsubmit="return false"><div id="cxCtl" class="em-ctl">${ini.controls}</div></form>
+<section class="em-res" id="cxRes" aria-live="polite">${ini.result}</section>
+</main>
+${calcScript(lang)}
+</body>
+</html>
+`;
+}
+// /embed/: 埋め込みの使い方・アドレスの設定・ライセンス（CC BY 4.0、帰属のリンクが条件）と見本
+function embedInfoPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.calcTitle, item: calcAbs(lang) },
+    { '@type': 'ListItem', position: 3, name: L.embedH, item: embedAbs(lang) } ] };
+  const code = t => `<code dir="ltr">${esc(t)}</code>`;
+  const ex = `${SITE_URL}${embedCalcPath(lang)}?c=in&w=adults&m=1500`;
+  const file = `<a href="${SITE_URL}/countries.json" dir="ltr">countries.json</a>`;
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></li><li aria-current="page">${esc(L.embedH)}</li></ol></nav>
+<main class="cx">
+<header class="orgs-head"><p class="eyebrow"><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></p><h1>${esc(L.embedPageTitle)}</h1><p class="orgs-intro">${esc(L.embedPageIntro)}</p></header>
+<section class="g-sec"><h2>${esc(L.embedPreview)}</h2><iframe class="em-frame" src="${embedCalcPath(lang)}" title="${esc(L.calcTitle)}" loading="lazy"></iframe></section>
+${embedSection(lang, null, { more: false })}
+<section class="g-sec cx-note"><h2>${esc(L.embedHowH)}</h2><p>${esc(L.embedHow)}</p></section>
+<section class="g-sec cx-note"><h2>${esc(L.embedParamsH)}</h2><ul class="em-params"><li>${code('c')}: ${esc(L.embedParamC)}</li><li>${code('w')}: ${esc(L.embedParamW)}</li><li>${code('m')}: ${esc(L.embedParamM)}</li></ul><p class="em-ex">${code(ex)}</p><p>${esc(L.embedParamLang)}</p><p>${esc(L.embedSize)}</p></section>
+<section class="g-sec cx-note"><h2>${esc(L.embedLicH)}</h2><p>${esc(L.embedLic).replace('{file}', file)}</p><p>${esc(L.embedPrivacy)}</p></section>
+<p class="back"><a class="btn line" href="${calcPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.calcTitle)}</a></p>
+</main>`;
+  return shell(lang, { title: `${L.embedPageTitle} | ${L.title}`, desc: clip(L.embedPageDesc, lang), hrefFor: embedAbs, pathFor: embedPath, ld, ogType: 'website', body, script: embedCopyScript(L), image: ogImage(`calc/${lang}/index.jpg`) });
 }
 
 // エッセイの「数字で確かめる」欄: 関係する国の計算機のページ（なければ計算機の入口）と国の一覧。OpenResearch などはアメリカの保証所得実験の一覧も
@@ -1743,12 +1830,13 @@ ${c.budget ? `<div><dt>${esc(L.calcSrcBudget)}</dt>${own(c.budget.src)}</div>` :
 <section class="g-sec cx-facts"><h2>${esc(cfill(L.calcCtyFactsH, lang === 'en' ? { country: ucf(lang, calcIn(c, lang)) } : base))}</h2>${facts.paras.map(p => `<p>${esc(p)}</p>`).join('')}</section>
 ${calcCtyEssays(lang, c)}
 <section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p></section>
+${embedSection(lang, c)}
 ${src}
 <section class="g-sec cx-near"><h2>${esc(cfill(L.calcCtyNear, { region: L['calcRegion_' + c.region] }))}</h2><ul class="cx-near-l">${near.map(x => `<li><a href="${calcCtyPath(lang, x)}">${esc(x.name[lang])}</a></li>`).join('')}</ul><p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a></p></section>
 <p class="back"><a class="btn line" href="${calcPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.calcTitle)}</a></p>
 </main>`;
   const desc = cfill(L.calcCtyDesc, { ...base, amount: isoRtl(lang, X.money(c.def, c.id)), total: isoRtl(lang, X.money(facts.all, c.id)), pct: X.pct(facts.all / c.gdp.value) });
-  return shell(lang, { title: `${cfill(L.calcCtyTitle, base)} | ${L.title}`, desc: clip(ucf(lang, desc), lang), hrefFor: l => calcCtyAbs(l, c), pathFor: l => calcCtyPath(l, c), ld, ogType: 'website', body, script: calcScript(lang), image: ogImage(`calc/${lang}/index.jpg`) });
+  return shell(lang, { title: `${cfill(L.calcCtyTitle, base)} | ${L.title}`, desc: clip(ucf(lang, desc), lang), hrefFor: l => calcCtyAbs(l, c), pathFor: l => calcCtyPath(l, c), ld, ogType: 'website', body, script: calcScript(lang) + embedCopyScript(L), image: ogImage(`calc/${lang}/index.jpg`) });
 }
 
 // 国の一覧（/calc/countries/）: 全員に1日3.00ドル（貧困ライン）を1年配ったときの GDP 比。並べ替えと名前での絞り込みは JS
@@ -2199,6 +2287,10 @@ for (const lang of LANGS) {
   fs.mkdirSync(path.join(cdir, 'countries'), { recursive: true });
   fs.writeFileSync(path.join(cdir, 'countries', 'index.html'), calcIndexPage(lang));
   if (lang === DEFAULT_LANG) for (const l of LANGS) fs.writeFileSync(path.join(cdir, `app-${l}.js`), CALC_APP[l].js);
+  const emdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'embed');
+  fs.mkdirSync(path.join(emdir, 'calc'), { recursive: true });
+  fs.writeFileSync(path.join(emdir, 'index.html'), embedInfoPage(lang));
+  fs.writeFileSync(path.join(emdir, 'calc', 'index.html'), embedCalcPage(lang));
   const osdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'open-source');
   fs.mkdirSync(osdir, { recursive: true });
   fs.writeFileSync(path.join(osdir, 'index.html'), ossPage(lang));
@@ -2411,7 +2503,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(calcIdxAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(calcIdxAbs), sitemapUrls(embedAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);

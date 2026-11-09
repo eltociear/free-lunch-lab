@@ -1479,6 +1479,10 @@
    {
     "file": "dela-gothic-one-400-ja-fa82c264b7.woff2",
     "chars": "!Q"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-1a38197cdf.woff2",
+    "chars": "埋示"
    }
   ],
   "ja:dot": [
@@ -1751,6 +1755,10 @@
    {
     "file": "noto-sans-sc-400-zh-994384f021.woff2",
     "chars": "丽乔亥伍冻凤凰刀刑叶园契娃抱拖杜杨柯柳槟歇汀涅滑滚灵牵狄狱瑟盛绪翰舒艾莎诸违醇隶韧"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-9192403301.woff2",
+    "chars": "寸嵌挡粘遮"
    }
   ],
   "zh:body:700": [
@@ -1977,6 +1985,10 @@
    {
     "file": "noto-sans-sc-700-zh-ad350b7162.woff2",
     "chars": "丽乔亥伍冻凤凰刀刑叶园契娃抱拖杜杨柯柳槟歇汀涅滑滚灵牵狄狱瑟盛绪翰舒艾莎诸违醇隶韧"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-cf300d8da1.woff2",
+    "chars": "寸嵌挡粘遮"
    }
   ],
   "zh:display": [
@@ -2103,6 +2115,10 @@
    {
     "file": "noto-sans-sc-900-zh-63f0d4f589.woff2",
     "chars": "!Qz"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-99b2acbfcf.woff2",
+    "chars": "址嵌置署许"
    }
   ],
   "zh:dot": [

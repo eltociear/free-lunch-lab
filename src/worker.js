@@ -34,9 +34,22 @@ export default {
         env.PAGEVIEWS.writeDataPoint({ indexes: [lang], blobs: [url.pathname.slice(0, 200), lang, s, ref.slice(0, 100), bot], doubles: [1] });
       }
     } catch {}
+    if (EMBED_PATH.test(url.pathname)) return framable(res);
     return calcCard(request, url, res) || shindanCard(request, url, res) || res;
   },
 };
+
+// 埋め込み用の計算機（/embed/calc/、/{lang}/embed/calc/）だけは、どのサイトの iframe にも入れてよい。
+// サイトのほかのページには X-Frame-Options も frame-ancestors も付けていないが、念のためここで外してから frame-ancestors * を付ける。
+// 検索には出さない（ページの meta robots と同じ noindex, follow をヘッダーでも）
+const EMBED_PATH = /^\/(?:(?:ja|zh|hi|es|de|ar)\/)?embed\/calc\/$/;
+function framable(res) {
+  const r = new Response(res.body, res);
+  r.headers.delete('x-frame-options');
+  r.headers.set('content-security-policy', 'frame-ancestors *');
+  r.headers.set('x-robots-tag', 'noindex, follow');
+  return r;
+}
 
 // BI計算機の結果カード: /calc/?c=jp&w=all&m=30000 のように、og.js が画像を作った組み合わせなら
 // og:image・twitter:image・og:title・og:description をその結果のものに書き換える（X などのリンクのプレビュー用）。

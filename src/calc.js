@@ -116,6 +116,28 @@ function result(s, url) {
     + '<button class="btn line cx-copy" type="button" id="cxCopy" data-url="' + esc(shareUrl(s, url)) + '">' + esc(L.copyLink) + '</button></div>'
     + '<p class="cx-copied" id="cxCopied" role="status" aria-live="polite"></p>';
 }
+// 埋め込み用（/embed/calc/、iframe の中）: 国は全部の国のプルダウン、配る相手、月額の入力だけ。
+// 結果は年額・米ドル換算・GDP 比と、計算機の国のページへの帰属リンク（?s=embed で数える）。home はサイトの origin
+function embedControls(s) {
+  var c = country(s.c);
+  var opts = (D.groups || []).map(function (g) {
+    return '<optgroup label="' + esc(g.label) + '">' + g.ids.map(function (id) { return '<option value="' + id + '"' + (id === s.c ? ' selected' : '') + '>' + esc(country(id).name[LANG]) + '</option>'; }).join('') + '</optgroup>';
+  }).join('');
+  return '<label class="em-f"><span class="em-l">' + esc(L.calcCountry) + '</span><select class="cx-sel on" name="c">' + opts + '</select></label>'
+    + '<fieldset class="cx-f em-f"><legend class="em-l">' + esc(L.calcWho) + '</legend><div class="cx-chips">' + WHO.map(function (w) { return chip('w', w, whoLabel(w, c), w === s.w); }).join('') + '</div></fieldset>'
+    + '<label class="em-f"><span class="em-l">' + esc(L.calcAmount) + '</span><span class="cx-own-in"><input class="cx-num" id="cxNum" type="number" inputmode="decimal" min="0" max="1000000000" step="any" value="' + s.m + '"><span class="cx-cur">' + esc(c.currency) + '</span></span></label>';
+}
+function embedResult(s, home) {
+  var r = compute(s), c = r.c, u = usd(r.total, c);
+  var link = home + D.base + c.id + '/?w=' + s.w + '&m=' + s.m + '&s=embed';
+  var brand = '<b>' + (LANG === 'ar' ? '\u2066Free Lunch Lab\u2069' : 'Free Lunch Lab') + '</b>';
+  return '<p class="em-eb">' + esc(L.calcResultEb) + '</p>'
+    + '<p class="cx-total em-total">' + esc(money(r.total, c)) + '</p>'
+    + (u ? '<p class="cx-usd">' + esc(fill(L.calcUsd, { usd: u })) + '</p>' : '')
+    + '<div class="em-gdp"><div class="cx-row"><span>' + esc(L.calcCmpGdp) + ' <small>(' + esc(String(c.gdp.year)) + ')</small></span><b><bdi>' + esc(pct(r.total / c.gdp.value)) + '</bdi></b></div><span class="cx-bar" aria-hidden="true"><i style="width:' + Math.min(100, r.total / c.gdp.value * 100).toFixed(1) + '%"></i></span></div>'
+    + '<p class="cx-formula">' + fill(esc(L.calcFormula), { people: '<bdi>' + esc(people(r.n)) + '</bdi>', amount: '<bdi>' + esc(money(s.m, c)) + '</bdi>' }) + '</p>'
+    + '<p class="em-by"><a href="' + esc(link) + '" target="_blank" rel="noopener">' + fill(esc(L.embedCredit), { brand: brand }) + ' <span aria-hidden="true">↗</span></a></p>';
+}
 `;
 
 // ブラウザ側: 選ぶたびに結果と URL を書き換える
@@ -123,12 +145,14 @@ const BOOT = String.raw`
 (function(){
   var form = document.getElementById('cx'), ctl = document.getElementById('cxCtl'), res = document.getElementById('cxRes'), url = form.getAttribute('data-url');
   PAGE_C = form.getAttribute('data-c') || null;
+  // 埋め込み（data-embed）では、小さな部品の形で描き、iframe の URL は書き換えない
+  var EMBED = form.hasAttribute('data-embed');
   var q = {}; location.search.replace(/^\?/, '').split('&').forEach(function (kv) { var p = kv.split('='); if (p[0]) q[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || ''); });
   var s = parse(q);
   function draw(all) {
-    if (all) ctl.innerHTML = controls(s);
-    res.innerHTML = result(s, url);
-    try { history.replaceState(null, '', location.pathname + '?' + query(s)); } catch (e) {}
+    if (all) ctl.innerHTML = EMBED ? embedControls(s) : controls(s);
+    res.innerHTML = EMBED ? embedResult(s, url) : result(s, url);
+    if (!EMBED) try { history.replaceState(null, '', location.pathname + '?' + query(s)); } catch (e) {}
   }
   if (location.search) draw(true);
   form.addEventListener('change', function (e) {
@@ -201,6 +225,8 @@ function context(lang, CALC, L) {
   vm.runInContext(CLIENT, ctx);
   const call = (fn, ...args) => { ctx.__a = args; return vm.runInContext(`${fn}.apply(null, __a)`, ctx); };
   return {
+    // 埋め込みの最初の状態（?c= などなし）
+    embed(home) { ctx.PAGE_C = null; const s = call('parse', {}); return { s, controls: call('embedControls', s), result: call('embedResult', s, home) }; },
     page(id, url) { ctx.PAGE_C = id; const s = call('parse', {}); const out = { s, controls: call('controls', s), result: call('result', s, url) }; ctx.PAGE_C = null; return out; },
     total: (id, w, m) => { ctx.PAGE_C = null; return call('compute', { c: id, w, m }).total; },
     money: (n, id) => call('money', n, call('country', id)),
