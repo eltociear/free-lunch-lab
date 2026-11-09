@@ -780,6 +780,60 @@ h1{font-size:${ja ? 64 : 52}px}
 `,
     }),
   },
+  // note.com header for the article on the 101 US guaranteed income pilots (/pilots/us/, data/us-pilots.json).
+  // Same 1100x560 safe area and kicker / two-line hero / footer layout as note-kyufu; the .deco card contrasts
+  // Stockton's 2021 first-year report (full-time work up 28% -> 40%) with the 2023 peer-reviewed trial (employment
+  // differences not significant), plus the table's median of $500 a month.
+  'note-pilots': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => ({
+      bare: true,
+      moon: [1192, 92, 44],
+      body: `
+<div class="wrap">
+  <p class="kicker">アメリカの「お金を配る実験」101件</p>
+  <h1 class="hero"><span class="l1">いちばん有名な結果は</span><span class="l2"><em>“速報”</em>だった</span></h1>
+  <p class="quote">101件で分かった<b>“お金を配る”</b>の本当の結果</p>
+</div>
+<div class="deco">
+  <div class="ledger">
+    <p class="lh">ストックトンの雇用</p>
+    <p class="row"><span>2021 速報</span><i class="up">28→40%</i></p>
+    <p class="row"><span>2023 論文</span><i class="no">有意差なし</i></p>
+    <p class="row"><span>101件の中央値</span><i class="md">月$500</i></p>
+  </div>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+      css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:92px;width:1060px}
+.kicker{display:inline-block;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px}
+.hero{margin-top:24px;padding-right:0;white-space:nowrap}
+.hero span{display:block}
+.hero .l1{font-size:72px;line-height:1.12}
+.hero .l2{margin-top:4px;font-size:100px;line-height:1.12}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote{margin-top:26px;font-size:36px;line-height:1.2;font-weight:900;color:#E3E8FF;white-space:nowrap}
+.quote b{color:#FFD66B}
+.deco{position:absolute;right:120px;bottom:56px;width:306px;height:184px}
+.ledger{position:absolute;right:0;top:0;width:298px;transform:rotate(3deg);background:#F6F2E6;border-radius:14px;padding:0 20px 10px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden}
+.ledger .lh{margin:0 -20px 6px;padding:10px 20px;background:#1B6B52;color:#F6F2E6;font-size:22px;line-height:1}
+.ledger .row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:2px solid #DED6BF;font-size:23px;line-height:1.1;color:#141A3A;white-space:nowrap}
+.ledger .row:last-child{border-bottom:0}
+.ledger i{padding:0 10px;height:26px;border-radius:13px;font-style:normal;font-size:17px;font-weight:900;line-height:26px}
+.ledger .up{background:#6CF0B0;color:#141A3A}
+.ledger .no{background:#E8505B;color:#FFFFFF}
+.ledger .md{background:#FFD66B;color:#141A3A}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+    }),
+  },
   // Three-people card for the same note article, built on myth() like note-takenaka-table. Facts only from the
   // refundable-tax-credit essay: the bill and outline (earned income above a floor, total income below a ceiling),
   // the council's floor options (wages of about ¥530k, ¥740k or about ¥1.06m; below the no-local-tax line the payment
