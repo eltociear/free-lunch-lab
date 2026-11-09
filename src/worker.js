@@ -54,7 +54,7 @@ function calcCard(request, url, res) {
   return swapMeta(res, `${SITE}/og/calc/${lang}/${id}.jpg`, hit[0], hit[1]);
 }
 
-// タダ飯診断の結果のシェア: /shindan/?r={type}&s=shindan のように、r が og.js がカードを作ったタイプなら
+// タダ飯診断の結果のシェア: /shindan/?r={type}&s=wa のように（s は経路の印。古いリンクの s=shindan も同じ）、r が og.js がカードを作ったタイプなら
 // その結果カード（/og/shindan/{lang}/{type}.jpg）に差し替える。ページの中身（診断）と canonical はそのまま。r がおかしければ元のページのまま
 const QZ_PATH = /^\/(?:(ja|zh|hi|es|de|ar)\/)?shindan\/$/;
 function shindanCard(request, url, res) {

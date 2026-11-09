@@ -1607,6 +1607,10 @@
    {
     "file": "noto-sans-sc-400-zh-ff82cd7724.woff2",
     "chars": "丁丧亩偕勤喜姻娅娜撒斥沉炫耀耕莫贾"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-7c39ffc5ed.woff2",
+    "chars": "谱"
    }
   ],
   "zh:body:700": [
@@ -1813,6 +1817,10 @@
    {
     "file": "noto-sans-sc-700-zh-eff8decbcc.woff2",
     "chars": "丁丧亩偕勤喜姻娅娜撒斥沉炫耀耕莫贾"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-0cfa339fa5.woff2",
+    "chars": "谱"
    }
   ],
   "zh:display": [

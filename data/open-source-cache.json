@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-08",
+  "fetchedOn": "2026-11-09",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -157,7 +157,7 @@
     },
     "github.com:PolicyEngine/policyengine-us": {
       "stars": 171,
-      "lastCommit": "2026-11-08",
+      "lastCommit": "2026-11-09",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"

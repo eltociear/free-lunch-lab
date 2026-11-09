@@ -108,9 +108,9 @@ const qzPath = l => `${urlPath(l)}shindan/`;
 const qzAbs = l => SITE_URL + qzPath(l);
 const qzTypePath = (l, t) => `${qzPath(l)}${t.id}/`;
 const qzTypeAbs = (l, t) => SITE_URL + qzTypePath(l, t);
-// 結果のシェア用 URL: 診断の入口（/shindan/?r={type}&s=shindan）。開いた人はそのまま診断を始められる。
+// 結果のシェア用 URL: 診断の入口（/shindan/?r={type}&s={経路}）。開いた人はそのまま診断を始められる。s は経路ごとの印（wa / line / tg / x / copy / native）
 // src/worker.js が r を見て、og:image などをそのタイプのカード（src/og/shindan/{lang}/{type}.jpg）に差し替える。canonical はクエリなしのまま
-const qzShareAbs = (l, t) => `${qzAbs(l)}?r=${t.id}&s=shindan`;
+const qzShareAbs = (l, t, s = 'copy') => `${qzAbs(l)}?r=${t.id}&s=${s}`;
 // 差し替える og:title。一人称の結果の文に、診断の名前（文に入っていなければ）かサイト名を足す
 const qzShareTitle = (l, t) => { const x = T[l].shindanShareText.replace('{type}', t.name[l]); return `${x} | ${x.includes(T[l].shindanTitle) ? T[l].brandPlain : T[l].shindanTitle}`; };
 const QZ_KEYS = ['shindanTitle', 'shindanH1', 'shindanDesc', 'shindanIntro', 'shindanQ', 'shindanBack', 'shindanEb', 'shindanYouAre', 'shindanMatch', 'shindanShareX', 'shindanShareText', 'shindanTag', 'shindanYours', 'shindanFriend', 'shindanRetry', 'shindanOthers', 'shindanHome', 'shindanAll', 'shindanNote', 'shindanCardQ', 'shindanCardSub', 'shindanCardBtn'];
@@ -446,10 +446,48 @@ function hatenaLink(head, url, compact) {
   const href = `https://b.hatena.ne.jp/entry/panel/?url=${encodeURIComponent(u)}&btitle=${encodeURIComponent(head.trim())}`;
   return `<a class="btn shr-o" href="${esc(href)}" target="_blank" rel="noopener" aria-label="はてなブックマークに追加">${compact ? 'はてブ' : 'はてなブックマーク'}</a>`;
 }
-function shareRow(lang, head, url, { compact = false, label = '', id = '' } = {}) {
-  const L = T[lang], x = xShare(head, url, lang);
+// mk を渡すと、ボタンごとに経路の印の付いた URL を使う（mk('x') など）。渡さなければ url のまま
+function shareRow(lang, head, url, { compact = false, label = '', id = '', mk = null } = {}) {
+  const L = T[lang], u = k => (mk ? mk(k) : url), x = xShare(head, u('x'), lang);
   const native = `${x.head} ${x.tag}`;
-  return `<div class="shr${compact ? ' shr-top' : ''}"${id ? ` id="${id}"` : ''}>${label ? `<p class="shr-h">${esc(label)}</p>` : ''}<a class="btn ${compact ? 'shr-o' : 'shr-x'}" href="${esc(x.intent)}" target="_blank" rel="noopener">${XSVG}<span>${esc(L.calcShareX)}</span></a>${lang === 'ja' ? hatenaLink(head, url, compact) : ''}<button class="btn shr-o" type="button" data-copy="${esc(url)}">${esc(L.copyLink)}</button><button class="btn shr-o" type="button" data-native="${esc(url)}" data-text="${esc(native)}" hidden>${esc(L.share)}</button></div>`;
+  return `<div class="shr${compact ? ' shr-top' : ''}"${id ? ` id="${id}"` : ''}>${label ? `<p class="shr-h">${esc(label)}</p>` : ''}<a class="btn ${compact ? 'shr-o' : 'shr-x'}" href="${esc(x.intent)}" target="_blank" rel="noopener">${XSVG}<span>${esc(L.calcShareX)}</span></a>${lang === 'ja' ? hatenaLink(head, url, compact) : ''}<button class="btn shr-o" type="button" data-copy="${esc(u('copy'))}">${esc(L.copyLink)}</button><button class="btn shr-o" type="button" data-native="${esc(u('native'))}" data-text="${esc(native)}" hidden>${esc(L.share)}</button></div>`;
+}
+// ---- 経路別のシェア（エッセイの終わり・診断の結果）。WhatsApp・LINE・Telegram・X・リンクのコピー。
+// 言語ごとに、その国でリンクが回る経路を先頭（金の主ボタン）に。中国語は WeChat にウェブのシェア URL がないので、コピーを先頭に
+// URL は mk(経路) で作り、経路ごとに ?s=wa / line / tg / x / copy / native を付けて Worker の記録で数える
+// スマホ（指で操作する端末）で navigator.share があれば、端末のシェアを主ボタンにして、ほかは枠線のボタンに下げる
+const CH_ORDER = { ja: ['line', 'x', 'wa', 'tg', 'copy'], zh: ['copy', 'x', 'tg', 'wa'], hi: ['wa', 'x', 'tg', 'copy'], ar: ['wa', 'x', 'tg', 'copy'], es: ['wa', 'x', 'tg', 'copy'], en: ['x', 'wa', 'tg', 'copy'], de: ['x', 'wa', 'tg', 'copy'] };
+const sic = d => `<svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">${d}</svg>`;
+const CH_ICON = {
+  x: XSVG.replace('width="14" height="14"', 'width="16" height="16"'),
+  wa: sic('<path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3.6 20.4l1.2-4.1a8.6 8.6 0 1 1 3.1 3z"/><path fill="currentColor" d="M9.3 7.4c.3 0 .5.1.7.5l.7 1.6c.1.3 0 .5-.1.7l-.6.7a7 7 0 0 0 3 2.9l.7-.7c.2-.2.4-.2.6-.1l1.6.7c.4.2.5.4.5.7 0 .9-.8 1.9-1.9 1.9-3 0-6.5-3.5-6.5-6.5 0-1.1.8-2.4 1.3-2.4z"/>'),
+  line: sic('<path fill="currentColor" d="M12 2.8c-5.5 0-10 3.6-10 8.1 0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.8c0 .3-.2 1 .9.5s5.9-3.5 8-5.9c1.4-1.6 1.9-3.2 1.9-4.9 0-4.5-4.5-8.1-10-8.1zM7.6 13.4H5.7a.5.5 0 0 1-.5-.5V9.1a.5.5 0 0 1 1 0v3.3h1.4a.5.5 0 0 1 0 1zm2-.5a.5.5 0 0 1-1 0V9.1a.5.5 0 0 1 1 0zm4.6 0a.5.5 0 0 1-.9.3l-2-2.6v2.3a.5.5 0 0 1-1 0V9.1a.5.5 0 0 1 .9-.3l2 2.6V9.1a.5.5 0 0 1 1 0zm3.1-2.4a.5.5 0 0 1 0 1h-1.4v.9h1.4a.5.5 0 0 1 0 1h-1.9a.5.5 0 0 1-.5-.5V9.1c0-.3.2-.5.5-.5h1.9a.5.5 0 0 1 0 1h-1.4v.9z"/>'),
+  tg: sic('<path fill="currentColor" d="M21.6 4.2 18.5 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.4 13 1.7 11.5c-1-.3-1-1 .2-1.5L20.4 2.9c.8-.3 1.6.2 1.2 1.3z"/>'),
+  copy: sic('<path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/>'),
+  native: sic('<path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 11v8.5c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V11"/>'),
+};
+const CH_NAME = { x: 'X', wa: 'WhatsApp', line: 'LINE', tg: 'Telegram' };
+// head: 見出し（エッセイの題・診断の一人称の結果）。primary: 主ボタンの文言（"X" の部分を経路名に置き換える）。tag: X のハッシュタグ
+function channelShare(lang, head, mk, { primary, tag, label = '', id = '', cls = 'shr' } = {}) {
+  const L = T[lang], x = xShare(head, mk('x'), lang, tag), h = head.trim();
+  const app = k => (RTL.has(lang) ? `\u2066${CH_NAME[k]}\u2069` : CH_NAME[k]);
+  // 主ボタンの文言: "X"（ar は ⁦X⁩ と isolate 済み）を経路名に置き換える
+  const lbl = k => (/\u2066X\u2069/.test(primary) ? primary.replace('\u2066X\u2069', app(k)) : primary.replace(/\bX\b/, app(k)));
+  const href = {
+    x: x.intent,
+    wa: `https://wa.me/?text=${encodeURIComponent(`${h}\n${mk('wa')}`)}`,
+    line: `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(mk('line'))}`,
+    tg: `https://t.me/share/url?url=${encodeURIComponent(mk('tg'))}&text=${encodeURIComponent(h)}`,
+  };
+  const btn = (k, i) => {
+    const first = i === 0, c = `btn sc sc-${k}${first ? ' sc-1' : ''}`;
+    if (k === 'copy') return `<button class="${c}" type="button" data-copy="${esc(mk('copy'))}">${CH_ICON.copy}<span>${esc(L.copyLink)}</span></button>`;
+    // 主ボタンは長い文言と経路名の両方を持ち、端末のシェアが主になったとき（.nat）は経路名だけにする
+    const text = first ? `<span class="sc-long">${esc(lbl(k))}</span><span class="sc-short">${esc(app(k))}</span>` : `<span>${esc(app(k))}</span>`;
+    return `<a class="${c}" href="${esc(href[k])}" target="_blank" rel="noopener"${first ? '' : ` aria-label="${esc(lbl(k))}"`}>${CH_ICON[k]}${text}</a>`;
+  };
+  const nat = `<button class="btn sc shr-nat" type="button" data-native="${esc(mk('native'))}" data-text="${esc(`${x.head} ${x.tag}`)}" data-primary hidden>${CH_ICON.native}<span>${esc(L.share)}</span></button>`;
+  return `<div class="${cls} shr-ch"${id ? ` id="${id}"` : ''}>${label ? `<p class="shr-h">${esc(label)}</p>` : ''}${nat}${CH_ORDER[lang].map(btn).join('')}</div>`;
 }
 // カードやニュース1件ごとの小さいリンク
 function shareMini(lang, head, url) {
@@ -461,7 +499,8 @@ function shareScript(L) {
 (function(){
   var toast=document.getElementById('toast'),timer,done=${JSON.stringify(L.linkCopied)};
   function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(timer);timer=setTimeout(function(){toast.hidden=true},1800)}
-  if(navigator.share)[].forEach.call(document.querySelectorAll('[data-native]'),function(b){b.hidden=false});
+  var touch=window.matchMedia&&matchMedia('(pointer:coarse)').matches;
+  if(navigator.share)[].forEach.call(document.querySelectorAll('[data-native]'),function(b){if(b.hasAttribute('data-primary')&&!touch)return;b.hidden=false;if(b.hasAttribute('data-primary'))b.parentNode.classList.add('nat')});
   document.addEventListener('click',function(e){
     var c=e.target.closest('[data-copy]'),n=e.target.closest('[data-native]');
     if(c){var u=c.getAttribute('data-copy');try{navigator.clipboard.writeText(u).then(function(){say(done)},function(){prompt('',u)})}catch(err){prompt('',u)}}
@@ -510,9 +549,28 @@ ${alts}
 <meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="${SITE_URL}/og/${lang}.png">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
-<script type="application/ld+json">${JSON.stringify(siteLd(lang))}</script>`;
+<script type="application/ld+json">${JSON.stringify(siteLd(lang))}</script>
+<script type="application/ld+json">${JSON.stringify(faqLd(lang))}</script>`;
 }
 
+// ---- 配っている JSON（CC BY 4.0）の名前と説明。JSON の中身と、その JSON を載せているページの Dataset（JSON-LD）の両方で使う
+const DATASET_META = {
+  'services.json': { name: 'Free Lunch Lab services', description: 'Apps and projects that pay you basic income just for existing, as listed on Free Lunch Lab. Hidden entries are excluded.' },
+  'graveyard.json': { name: 'Free Lunch Lab graveyard', description: 'Basic-income-style programs that have ended, each with an official or credible source.' },
+  'open-source.json': { name: 'Free Lunch Lab open-source projects', description: 'Open-source code projects related to basic income (UBI protocols, wallets, proof of personhood, simulators), as listed on Free Lunch Lab. Stars, last commit, archived status, license and language are fetched from GitHub and GitLab at build time.' },
+  'open-data.json': { name: 'Free Lunch Lab basic income experiment data', description: 'Open datasets and replication packages from basic income, guaranteed income and unconditional cash transfer experiments, as listed on Free Lunch Lab. Each entry links to its official archive landing page; access is "open" (direct download), "registration" (free account needed) or "restricted" (application or data use agreement needed). The datasets themselves are not redistributed here and keep their own licenses.' },
+  'news.json': { name: 'Free Lunch Lab basic income news', description: 'A weekly, hand-checked roundup of external basic income, guaranteed income and cash transfer news, grouped by weekly batch (newest first). Headlines and summaries are written by Free Lunch Lab in its own words; each item links to its source. This is separate from the site\'s own update log (the RSS feed at /feed.xml).' },
+};
+const FLL_ORG = { '@type': 'Organization', name: 'Free Lunch Lab', url: SITE_URL + '/' };
+const datasetLd = (file, page, extra = {}) => ({
+  '@context': 'https://schema.org', '@type': 'Dataset', name: DATASET_META[file].name, description: DATASET_META[file].description, url: page,
+  license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, creator: FLL_ORG, publisher: FLL_ORG,
+  inLanguage: LANGS.map(l => LANG_TAG[l]), ...extra,
+  distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${SITE_URL}/${file}` }],
+});
+// トップの「よくある質問」（ページに出ている4つの Q&A）を FAQPage に
+const faqLd = lang => ({ '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: LANG_TAG[lang],
+  mainEntity: [1, 2, 3, 4].map(i => ({ '@type': 'Question', name: String(T[lang]['q' + i]).replace(/<[^>]+>/g, ''), acceptedAnswer: { '@type': 'Answer', text: String(T[lang]['a' + i]).replace(/<[^>]+>/g, '') } })) });
 // サイト全体の WebSite / Organization（X アカウントを sameAs に）
 function siteLd(lang) {
   const L = T[lang];
@@ -932,6 +990,17 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .qz-x:hover{background:var(--cta-hover)!important}
 .qz-acts .btn{gap:8px}
 .qz-acts .shr-o{min-height:52px;padding-inline:22px;border-radius:999px}
+.shr-ch .sc{gap:8px;border-radius:999px;min-height:44px;padding:8px 16px;background:transparent;color:var(--ink);border:1px solid #4A5672;transition:border-color .15s ease,background-color .15s ease}
+.shr-ch .sc:hover{border-color:var(--muted)}
+.shr-ch .sc-1,.shr-ch .shr-nat{background:var(--cta);color:var(--cta-ink);border-color:transparent;padding-inline:22px}
+.shr-ch .sc-1:hover,.shr-ch .shr-nat:hover{background:var(--cta-hover);border-color:transparent}
+.shr-ch.nat .sc-1{background:transparent;color:var(--ink);border-color:#4A5672;padding-inline:16px}
+.shr-ch .sic,.shr-ch .xicon{flex:none}
+.qz-acts.shr-ch .sc-1,.qz-acts.shr-ch .shr-nat{min-height:52px;font-size:1.05rem;padding-inline:28px}
+.qz-acts.shr-ch.nat .sc-1{min-height:44px;font-size:.9rem;padding-inline:16px}
+@media (max-width:520px){.shr-ch .sc-1,.shr-ch .shr-nat{flex-basis:100%}.shr-ch.nat .sc-1{flex-basis:auto}.shr-ch .sc{white-space:normal;text-align:center}}
+.qz-retry{margin-top:4px}
+.shr-ch .sc-short,.shr-ch.nat .sc-1 .sc-long{display:none}.shr-ch.nat .sc-1 .sc-short{display:inline}
 .qz-friend{margin-top:14px;padding:12px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));background:var(--surface);font-size:.95rem;line-height:1.7}
 .qz-friend b{color:var(--gold)}
 .qz-note{font-size:.84rem;color:var(--muted);margin-bottom:12px}
@@ -1003,6 +1072,57 @@ function related(s) {
   }
   return out;
 }
+// ---- サービスページの title / description（検索向け）。「{名前} 安全・換金方法・紹介コード」のように調べる人が多いので、名前と意図を前に出す。
+// 載せる言葉はページに出ている情報だけから決める: 換金は trust.cash（あり・条件つき → 換金方法 / 未確認 → 換金の可否 / なし → 仕組み）、
+// 紹介はページにコード欄が出るなら「紹介コード」、紹介リンクだけなら「紹介リンク」、紹介制度がなければ書かない。年は最終確認の年
+const SEO_CASH = s => { const c = (s.trust || {}).cash; return c === 'yes' || c === 'partial' ? 'how' : c === 'no' ? 'none' : 'can'; };
+const SEO_REF = s => (s.code && (s.codeOnly || s.showCode) ? 'code' : s.ref ? 'link' : '');
+const andList = (a, and) => (a.length < 2 ? a.join('') : `${a.slice(0, -1).join(', ')} ${and} ${a[a.length - 1]}`);
+const cap = t => t.charAt(0).toUpperCase() + t.slice(1);
+const SVC_SEO = {
+  ja: { q: n => `${n}は安全？`, list: a => a.join('・'), year: y => `（${y}年）`, how: '換金方法', can: '換金の可否', none: '仕組み', risk: 'リスク', code: '紹介コード', link: '紹介リンク',
+    cash: { yes: '換金できる。', partial: '条件つきで換金できる。', no: '換金はできない。', unknown: '換金できるかは未確認。' }, verify: v => `認証方法：${v}。`, noVerify: '認証なし。' },
+  en: { q: n => `Is ${n} legit? `, list: a => cap(andList(a, 'and')), year: y => ` (${y})`, how: 'how to cash out', can: 'cash-out', none: 'how it works', risk: 'risks', code: 'referral code', link: 'referral link',
+    cash: { yes: 'Can be cashed out.', partial: 'Cash-out possible with conditions.', no: 'Cannot be cashed out.', unknown: 'Cash-out not yet verified.' }, verify: v => `Verification: ${v}.`, noVerify: 'No verification.' },
+  zh: { q: n => `${n}靠谱吗？`, list: a => a.join('、'), year: y => `（${y}）`, how: '怎么提现', can: '能否提现', none: '玩法', risk: '风险', code: '邀请码', link: '邀请链接',
+    cash: { yes: '可以提现。', partial: '有条件可以提现。', no: '无法提现。', unknown: '能否提现尚未确认。' }, verify: v => `验证方式：${v}。`, noVerify: '无需验证。' },
+  hi: { q: n => `${n} असली या फ़र्ज़ी? `, list: a => andList(a, 'और'), year: y => ` (${y})`, how: 'पैसे कैसे निकालें', can: 'पैसे निकलते हैं या नहीं', none: 'यह कैसे काम करता है', risk: 'जोखिम', code: 'रेफ़रल कोड', link: 'रेफ़रल लिंक',
+    cash: { yes: 'पैसे निकाले जा सकते हैं।', partial: 'शर्तों के साथ पैसे निकाले जा सकते हैं।', no: 'पैसे नहीं निकाले जा सकते।', unknown: 'पैसे निकलते हैं या नहीं, अभी पुष्टि नहीं हुई।' }, verify: v => `वेरिफ़िकेशन: ${v}।`, noVerify: 'कोई वेरिफ़िकेशन नहीं।' },
+  es: { q: n => `¿${n} es seguro? `, list: a => cap(andList(a, 'y')), year: y => ` (${y})`, how: 'cómo retirar', can: 'retiros', none: 'cómo funciona', risk: 'riesgos', code: 'código de referido', link: 'enlace de referido',
+    cash: { yes: 'Se puede retirar a dinero.', partial: 'Se puede retirar con condiciones.', no: 'No se puede retirar a dinero.', unknown: 'El retiro aún no está verificado.' }, verify: v => `Verificación: ${v}.`, noVerify: 'Sin verificación.' },
+  de: { q: n => `Ist ${n} seriös? `, list: a => andList(a, 'und'), year: y => ` (${y})`, how: 'Auszahlung', can: 'Auszahlung', none: 'Funktionsweise', risk: 'Risiken', code: 'Empfehlungscode', link: 'Empfehlungslink',
+    cash: { yes: 'Auszahlbar.', partial: 'Auszahlung mit Bedingungen.', no: 'Nicht auszahlbar.', unknown: 'Auszahlung noch nicht geprüft.' }, verify: v => `Verifizierung: ${v}.`, noVerify: 'Keine Verifizierung.' },
+  ar: { q: n => `هل ${n} موثوق؟ `, list: a => a[0] + a.slice(1).map(x => ` و${x}`).join(''), year: y => ` (${y})`, how: 'طريقة السحب', can: 'إمكانية السحب', none: 'طريقة العمل', risk: 'المخاطر', code: 'كود الإحالة', link: 'رابط الإحالة',
+    cash: { yes: 'يمكن صرفه نقدًا.', partial: 'يمكن صرفه نقدًا بشروط.', no: 'لا يمكن صرفه نقدًا.', unknown: 'لم نتحقق بعد من إمكانية صرفه نقدًا.' }, verify: v => `طريقة التحقق: ${v}.`, noVerify: 'دون تحقق.' },
+};
+const TITLE_MAX = lang => (lang === 'ja' || lang === 'zh' ? 32 : 60);
+const shortName = n => n.replace(/\s*(?:（[^）]*）|\([^)]*\))$/, '');
+const isoName = (n, lang) => (RTL.has(lang) ? `\u2066${n}\u2069` : n);
+const SEO_LOG = [];
+function svcSeoTitle(s, lang) {
+  const S = SVC_SEO[lang], full = sName(s, lang), y = s.checked.slice(0, 4), rf = SEO_REF(s);
+  const make = (n, risk, year) => S.q(isoName(n, lang)) + S.list([S[SEO_CASH(s)], ...(risk ? [S.risk] : []), ...(rf ? [S[rf]] : [])]) + (year ? S.year(y) : '');
+  // 長さの目安: 日本語・中国語は全角1・半角0.55で32まで、ほかは字数（結合文字を除く）で60まで。長ければ 年 → 名前の括弧 → リスク の順に落とす
+  const len = t => { const c = [...t.replace(/[\u2066-\u2069]/g, '')]; return lang === 'ja' || lang === 'zh' ? c.reduce((n, ch) => n + (ch.codePointAt(0) < 0x2000 ? 0.55 : 1), 0) : c.filter(ch => !/\p{M}/u.test(ch)).length; };
+  const sn = shortName(full);
+  const tries = [[full, 1, 1], [full, 1, 0], [sn, 1, 1], [sn, 1, 0], [full, 0, 1], [sn, 0, 1], [sn, 0, 0]];
+  const pick = tries.map(([n, r, yr]) => make(n, r, yr)).find(t => len(t) <= TITLE_MAX(lang)) || make(shortName(full), 0, 0);
+  // いちばん短い形でも目安を少し超えるだけ（長い名前）は許し、15% を超えたら警告する
+  if (len(pick) > TITLE_MAX(lang) * 1.15) SEO_LOG.push(`${lang}/${s.id} (${Math.round(len(pick))})`);
+  return pick;
+}
+function svcSeoDesc(s, lang) {
+  const S = SVC_SEO[lang], d = s[lang] || s.en, name = isoName(sName(s, lang), lang);
+  const cjk = lang === 'ja' || lang === 'zh', sep = cjk ? '：' : ': ', end = cjk ? '。' : lang === 'hi' ? '। ' : '. ', sp = cjk ? '' : ' ';
+  const req = (s.verify || []).filter(v => !v.optional);
+  const ver = !req.length ? '' : req.every(v => v.method === 'none') ? S.noVerify : S.verify(req.filter(v => v.method !== 'none').map(v => VERIFY[v.method].name[lang]).join(cjk ? '・' : ', '));
+  const cash = S.cash[(s.trust || {}).cash] || S.cash.unknown;
+  const warn = d.warning || d.caution || '';
+  const first = warn ? warn.split(/(?<=[。．])|(?<=[.!?।؟])\s/u)[0].trim().replace(/[。．.।]$/u, '') : '';
+  const out = [`${name}${sep}${d.gain}${end.trim()}`, ver, cash, first && `${first}${end.trim()}`].filter(Boolean).join(sp);
+  // 目安の下限より短ければ、「〜とは」の説明（note）を後ろに足してから切る
+  return clip([...out].length < DESC_RANGE(lang)[0] ? `${out}${sp}${d.note.replace(/[。.।]?$/u, end.trim())}` : out, lang);
+}
 function servicePage(s, lang) {
   const L = T[lang];
   const d = s[lang] || s.en;
@@ -1010,8 +1130,8 @@ function servicePage(s, lang) {
   const rtl = RTL.has(lang);
   const sep = lang === 'ja' || lang === 'zh' ? '：' : ': ';
   const end = lang === 'ja' || lang === 'zh' ? '。' : '. ';
-  const title = `${L.svcTitle.replace('{name}', name)} | ${L.title}`;
-  const desc = clip(`${name}${sep}${d.gain}${end}${d.note}`, lang);
+  const title = `${svcSeoTitle(s, lang)} | ${L.title}`;
+  const desc = svcSeoDesc(s, lang);
   const url = svcAbs(lang, s);
   const home = urlPath(lang);
   const ld = {
@@ -1190,9 +1310,9 @@ function essayPage(e, lang) {
 <main class="essay">
 <article>
 <header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p>
-${shareRow(lang, ttl, shareUrlOf(url), { compact: true })}</header>
+${shareRow(lang, ttl, url, { compact: true, mk: k => `${url}?s=${k}` })}</header>
 <div class="essay-body">${blocks}</div>
-${shareRow(lang, ttl, shareUrlOf(url), { label: L.essayShare, id: 'share' })}
+${channelShare(lang, ttl, k => `${url}?s=${k}`, { primary: L.calcShareX, tag: T[lang].calcTag, label: L.essayShare, id: 'share' })}
 ${relatedLinks(lang, essayList(e.related))}
 ${GUIDES.filter(g => g.essay === e.id).map(g => guideLink(lang, g, 'related g-rel')).join('')}
 ${qzCard(lang, 'essay-quiz')}
@@ -1326,14 +1446,13 @@ function quizResultPage(t, lang) {
     { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
     { '@type': 'ListItem', position: 2, name: L.shindanTitle, item: qzAbs(lang) },
     { '@type': 'ListItem', position: 3, name, item: url } ] };
-  // シェアは結果のページではなく診断の入口へ（?r=&s=shindan）。投稿文は「一人称の結果 + 改行 + URL + ハッシュタグ1つ」
-  const shareUrl = qzShareAbs(lang, t);
-  const x = xShare(L.shindanShareText.replace('{type}', name), shareUrl, lang, L.shindanTag);
+  // シェアは結果のページではなく診断の入口へ（?r={type}&s={経路}）。投稿文は「一人称の結果 + 改行 + URL + ハッシュタグ1つ」
+  const shr = channelShare(lang, L.shindanShareText.replace('{type}', name), k => qzShareAbs(lang, t, k), { primary: L.shindanShareX, tag: L.shindanTag, cls: 'qz-acts' });
   const guides = GUIDES.filter(g => list.some(s => s.id === g.svc));
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
 <main class="vmain">
 <header class="qz-res"><p class="eyebrow">${esc(L.shindanEb)}</p><p class="qz-you">${esc(L.shindanYouAre)}</p><h1>${esc(name)}</h1><p class="qz-desc">${esc(t.desc[lang])}</p>
-<div class="qz-acts"><a class="btn solid qz-x" href="${esc(x.intent)}" target="_blank" rel="noopener">${XSVG}<span>${esc(L.shindanShareX)}</span></a><button class="btn shr-o" type="button" data-copy="${esc(shareUrl)}">${esc(L.copyLink)}</button><button class="btn shr-o" type="button" data-native="${esc(shareUrl)}" data-text="${esc(`${x.head} ${x.tag}`)}" hidden>${esc(L.share)}</button><a class="btn line" href="${qzPath(lang)}">${esc(L.shindanRetry)}</a></div></header>
+${shr}<p class="qz-retry"><a class="btn line" href="${qzPath(lang)}">${esc(L.shindanRetry)}</a></p></header>
 <section class="vsec"><h2>${esc(L.shindanMatch.replace('{n}', list.length))}</h2><p class="qz-note">${esc(L.shindanNote)}</p>${guides.map(g => guideLink(lang, g, 'g-link g-link-top')).join('')}<div class="grid">${list.map(s => card(s, lang)).join('\n')}</div></section>
 <section class="vsec"><h2>${esc(L.shindanOthers)}</h2>${qzChips(lang, t)}</section>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
@@ -1454,7 +1573,7 @@ ${weeks}
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
   const extraHead = `<link rel="alternate" type="application/rss+xml" title="${esc(L.biNewsTitle)} RSS" href="${biNewsFeedAbs(lang)}">\n`;
-  return shell(lang, { title, desc: clip(L.biNewsDesc, lang), hrefFor: biNewsAbs, pathFor: biNewsPath, ld, ogType: 'website', body, extraHead, script: shareScript(L), image: ogImage(`news/${lang}/index.jpg`) });
+  return shell(lang, { title, desc: clip(L.biNewsDesc, lang), hrefFor: biNewsAbs, pathFor: biNewsPath, ld: [ld, datasetLd('news.json', biNewsAbs(lang))], ogType: 'website', body, extraHead, script: shareScript(L), image: ogImage(`news/${lang}/index.jpg`) });
 }
 
 // ---- 認証方法の一覧（/verify/）。方法ごとに「差し出すもの」とサービスの数、方法のページへのリンク。最後に生体情報の注意
@@ -1528,11 +1647,11 @@ function graveyardPage(lang) {
   }).join('\n');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.graveTitle)}</li></ol></nav>
 <main class="orgs">
-<header class="orgs-head"><p class="eyebrow" dir="ltr">R.I.P.</p><h1>${esc(L.graveTitle)}</h1><p class="orgs-intro">${esc(L.graveIntro)}</p></header>
+<header class="orgs-head"><p class="eyebrow" dir="ltr">R.I.P.</p><h1>${esc(L.graveTitle)}</h1><p class="orgs-intro">${esc(L.graveIntro)}</p><p class="oss-note"><a href="${SITE_URL}/graveyard.json" dir="ltr">graveyard.json</a> · <span dir="ltr">CC BY 4.0</span></p></header>
 <ul class="graves">${rows}</ul>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title, desc: L.graveDesc, hrefFor: graveAbs, pathFor: gravePath, ld, ogType: 'website', body });
+  return shell(lang, { title, desc: L.graveDesc, hrefFor: graveAbs, pathFor: gravePath, ld: [ld, datasetLd('graveyard.json', graveAbs(lang))], ogType: 'website', body });
 }
 
 // ---- ベーシックインカムにかかわるオープンソースのコード（/open-source/）。数値はビルド時に取得（src/oss.js）
@@ -1598,7 +1717,7 @@ ${dataSec}
 <p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a></p>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title, desc: L.ossDesc, hrefFor: ossAbs, pathFor: ossPath, ld, ogType: 'website', body });
+  return shell(lang, { title, desc: L.ossDesc, hrefFor: ossAbs, pathFor: ossPath, ld: [ld, ...(ossFetchedOn ? [datasetLd('open-source.json', ossAbs(lang))] : []), ...(OPEN_DATA.length ? [datasetLd('open-data.json', ossAbs(lang) + '#data')] : [])], ogType: 'website', body });
 }
 
 // ---- 掲載中のプロジェクト向けバッジ（/badge/）。見本と、サービス・オープンソース・団体ごとのコピー用コード
@@ -1708,6 +1827,7 @@ for (const lang of LANGS) {
   }
 }
 
+if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);
 // ---- フォント: 書き出した HTML から、言語ごと・書体ごとに実際に出る文字を集め、そのサブセットを用意して <!--@fonts@--> を埋める
 const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
 const decodeEnt = t => t.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e) => e[0] === '#' ? String.fromCodePoint(e[1] === 'x' || e[1] === 'X' ? parseInt(e.slice(2), 16) : +e.slice(1)) : ENT[e] ?? m);
@@ -1906,8 +2026,8 @@ const byId = (a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
 const latest = [...live.map(s => s.checked)].sort().pop();
 const badgeJson = (kind, x) => { const url = badgeTarget(kind, x, DEFAULT_LANG); return { url, image: badgeImg('listed.svg'), markdown: badgeMd(url), html: badgeHtml(url) }; };
 const servicesJson = {
-  name: 'Free Lunch Lab services',
-  description: 'Apps and projects that pay you basic income just for existing, as listed on Free Lunch Lab. Hidden entries are excluded.',
+  name: DATASET_META['services.json'].name,
+  description: DATASET_META['services.json'].description,
   source: SITE_URL + '/',
   repository: 'https://github.com/eltociear/free-lunch-lab',
   license: DATA_LICENSE,
@@ -1940,8 +2060,8 @@ const servicesJson = {
   })),
 };
 const graveJson = {
-  name: 'Free Lunch Lab graveyard',
-  description: 'Basic-income-style programs that have ended, each with an official or credible source.',
+  name: DATASET_META['graveyard.json'].name,
+  description: DATASET_META['graveyard.json'].description,
   source: graveAbs(DEFAULT_LANG),
   repository: 'https://github.com/eltociear/free-lunch-lab',
   license: 'CC BY 4.0',
@@ -1960,8 +2080,8 @@ const graveJson = {
   })),
 };
 const ossJson = {
-  name: 'Free Lunch Lab open-source projects',
-  description: 'Open-source code projects related to basic income (UBI protocols, wallets, proof of personhood, simulators), as listed on Free Lunch Lab. Stars, last commit, archived status, license and language are fetched from GitHub and GitLab at build time.',
+  name: DATASET_META['open-source.json'].name,
+  description: DATASET_META['open-source.json'].description,
   source: ossAbs(DEFAULT_LANG),
   repository: 'https://github.com/eltociear/free-lunch-lab',
   license: 'CC BY 4.0',
@@ -1997,8 +2117,8 @@ const ossJson = {
 const DATA_DIR = path.join(__dirname, 'data');
 fs.mkdirSync(DATA_DIR, { recursive: true });
 const dataJson = {
-  name: 'Free Lunch Lab basic income experiment data',
-  description: 'Open datasets and replication packages from basic income, guaranteed income and unconditional cash transfer experiments, as listed on Free Lunch Lab. Each entry links to its official archive landing page; access is "open" (direct download), "registration" (free account needed) or "restricted" (application or data use agreement needed). The datasets themselves are not redistributed here and keep their own licenses.',
+  name: DATASET_META['open-data.json'].name,
+  description: DATASET_META['open-data.json'].description,
   source: ossAbs(DEFAULT_LANG) + '#data',
   repository: 'https://github.com/eltociear/free-lunch-lab',
   license: 'CC BY 4.0 (this list only)',
@@ -2027,8 +2147,8 @@ const dataJson = {
   })),
 };
 const biNewsJson = {
-  name: 'Free Lunch Lab basic income news',
-  description: 'A weekly, hand-checked roundup of external basic income, guaranteed income and cash transfer news, grouped by weekly batch (newest first). Headlines and summaries are written by Free Lunch Lab in its own words; each item links to its source. This is separate from the site\'s own update log (the RSS feed at /feed.xml).',
+  name: DATASET_META['news.json'].name,
+  description: DATASET_META['news.json'].description,
   source: biNewsAbs(DEFAULT_LANG),
   repository: 'https://github.com/eltociear/free-lunch-lab',
   license: 'CC BY 4.0',
