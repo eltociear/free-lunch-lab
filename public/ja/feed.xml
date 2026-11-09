@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/ja/</link>
     <description>存在するだけでお金がもらえる、ベーシックインカム型のアプリやプロジェクト（Ğ1、Circles、Gradido、Idena など）の一覧。リスクや換金のしやすさもあわせて紹介。一部は紹介リンクです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ja/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>BI計算機を211の国・地域に広げ、国ごとのページと、世界銀行の国際貧困ライン「1日3.00ドル」を全員に配るとGDPの何％になるかの一覧を追加（データは世界銀行、countries.json でも公開）</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/calc/countries/</link>
+      <guid isPermaLink="false">news-2026-11-09-fdcfce26aec9</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>BI計算機を211の国・地域に広げ、国ごとのページと、世界銀行の国際貧困ライン「1日3.00ドル」を全員に配るとGDPの何％になるかの一覧を追加（データは世界銀行、countries.json でも公開）</description>
+    </item>
     <item>
       <title>エッセイ『生成AIは創作を奪ったのか：クリエイターの収入とベーシックインカム（後編・クリエイティブ）』を公開</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/ja/essays/generative-ai-creative-work-basic-income/</link>

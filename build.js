@@ -122,7 +122,7 @@ for (const t of QUIZ.types) { for (const l of LANGS) for (const f of ['name', 'd
 // BI計算機: /calc/。数字は CALC（data.js）、計算と描画は src/calc.js（ブラウザと同じコード）
 const calcPath = l => `${urlPath(l)}calc/`;
 const calcAbs = l => SITE_URL + calcPath(l);
-const CALC_KEYS = ['calcTitle', 'calcH1', 'calcDesc', 'calcIntro', 'calcCountry', 'calcWho', 'calcWhoAll', 'calcWhoAdults', 'calcWhoKids', 'calcAmount', 'calcCustom', 'calcResultEb', 'calcFormula', 'calcPeople', 'calcCmpH', 'calcCmpBudget', 'calcCmpSocial', 'calcCmpTax', 'calcCmpGdp', 'calcShareX', 'calcShare', 'calcAsk', 'calcTag', 'copyLink', 'linkCopied', 'calcShareAll', 'calcShareAdults', 'calcShareKids', 'calcNoteH', 'calcNote', 'calcMore', 'calcSources', 'calcSrcPop', 'calcSrcBudget', 'calcSrcGdp', 'calcHome', 'calcUnits', 'calcMoney'];
+const CALC_KEYS = ['calcOther', 'calcCmpGovExp', 'calcCmpGovRev', 'calcCmpGovTax', 'calcUsd', 'calcUsdCur', 'calcMoneyPlain', 'calcCtyLink', 'calcTitle', 'calcH1', 'calcDesc', 'calcIntro', 'calcCountry', 'calcWho', 'calcWhoAll', 'calcWhoAdults', 'calcWhoKids', 'calcAmount', 'calcCustom', 'calcResultEb', 'calcFormula', 'calcPeople', 'calcCmpH', 'calcCmpBudget', 'calcCmpSocial', 'calcCmpTax', 'calcCmpGdp', 'calcShareX', 'calcShare', 'calcAsk', 'calcTag', 'copyLink', 'linkCopied', 'calcShareAll', 'calcShareAdults', 'calcShareKids', 'calcNoteH', 'calcNote', 'calcMore', 'calcSources', 'calcSrcPop', 'calcSrcBudget', 'calcSrcGdp', 'calcHome', 'calcUnits', 'calcMoney'];
 for (const l of LANGS) for (const k of CALC_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 for (const l of LANGS) if (!CALC.countries.some(c => c.id === CALC.defaults[l])) throw new Error(`calc: no default country for ${l}`);
 for (const c of CALC.countries) {
@@ -136,6 +136,63 @@ for (const c of CALC.countries) {
 // 結果カード（国 × 配る相手 × プリセット金額）の文字と X に入れる文。X の上限（重み付き280字、CJK は2・URL は23）に収まるか確かめる
 const CALC_CARDS = Object.fromEntries(LANGS.map(l => [l, calcJs.cards(l, CALC, T[l], calcAbs(l))]));
 for (const l of LANGS) for (const k of CALC_CARDS[l]) { const n = calcJs.weighted(k.text); if (n > 280) throw new Error(`calc share text too long (${l} ${k.id}: ${n})`); }
+// ---- 全部の国（src/calc-world.js）: 7 か国（CALC）+ World Bank の国。国のページ /calc/{国}/ と一覧 /calc/countries/
+// 結果カード（OG 画像）は 7 か国の CALC だけから作る（上の CALC_CARDS）。ほかの国のシェアは計算機のふつうの画像になる
+const calcWorld = require('./src/calc-world.js');
+const WB = calcWorld.WB;
+const CALC_WORLD = calcWorld.world(CALC);
+const calcCtyPath = (l, c) => `${calcPath(l)}${c.id}/`;
+const calcCtyAbs = (l, c) => SITE_URL + calcCtyPath(l, c);
+const calcIdxPath = l => `${calcPath(l)}countries/`;
+const calcIdxAbs = l => SITE_URL + calcIdxPath(l);
+const CALC_SOURCES = {
+  ...CALC.sources,
+  wbPop: { year: String(WB.countries[0].pop.year), url: 'https://data.worldbank.org/indicator/SP.POP.TOTL' },
+  wbGdpAll: { year: String(WB.countries[0].gdp.year), url: 'https://data.worldbank.org/indicator/NY.GDP.MKTP.CN' },
+};
+const CALC_PAGE_KEYS = ['calcRegion_EAS', 'calcRegion_ECS', 'calcRegion_LCN', 'calcRegion_MEA', 'calcRegion_NAC', 'calcRegion_SAS', 'calcRegion_SSF', 'calcIdxLink', 'calcIdxCrumb', 'calcCtyTitle', 'calcCtyH1', 'calcCtyDesc', 'calcCtyFactsH', 'calcCtyAbout', 'calcCtyPop', 'calcCtyCost', 'calcCtyGov', 'calcCtyGovExp', 'calcCtyGovRev', 'calcCtyGovTax', 'calcCtyBudget', 'calcCtyNoGov', 'calcCtyGroups', 'calcCtyDefPpp', 'calcCtyDefFx', 'calcCtyDefCur', 'calcCtyNear', 'calcSrcWbPop', 'calcSrcWbGdp', 'calcSrcWbGov', 'calcSrcWbPpp', 'calcSrcWbLine', 'calcSrcWbNote', 'calcSrcGov', 'calcSrcLine', 'calcSrcOther', 'calcIdxTitle', 'calcIdxDesc', 'calcIdxIntro', 'calcIdxCountry', 'calcIdxRegion', 'calcIdxPop', 'calcIdxGdp', 'calcIdxAmount', 'calcIdxPct', 'calcIdxFilter', 'calcIdxNote', 'calcIdxData'];
+for (const l of LANGS) for (const k of CALC_PAGE_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+{
+  const seen = new Set();
+  for (const c of CALC_WORLD) {
+    if (!/^[a-z]{2}$/.test(c.id) || c.id === 'countries' || seen.has(c.id)) throw new Error(`calc world: bad or duplicate id ${c.id}`);
+    seen.add(c.id);
+    for (const l of LANGS) for (const f of ['name', 'cur']) if (!c[f][l]) throw new Error(`calc ${c.id}: missing ${f}.${l}`);
+    if (!calcWorld.REGIONS.includes(c.region)) throw new Error(`calc ${c.id}: unknown region ${c.region}`);
+    const p = c.pop;
+    if (!(p.all > 0 && p.adults > 0 && p.kids > 0 && p.adults + p.kids <= p.all)) throw new Error(`calc ${c.id}: bad pop`);
+    if (!(c.gdp.value > 0 && c.usd > 0 && c.def > 0 && c.presets.includes(c.def) && c.line.monthly > 0)) throw new Error(`calc ${c.id}: bad gdp, default or poverty line`);
+    try { new Intl.NumberFormat('en', { style: 'currency', currency: c.currency }); } catch { throw new Error(`calc ${c.id}: bad currency ${c.currency}`); }
+    // hi に CJK、どの言語にも制御文字が紛れ込んでいないか
+    if (/[\u3000-\u9fff]/.test(c.name.hi + c.cur.hi)) throw new Error(`calc ${c.id}: CJK in hi name`);
+  }
+}
+// ブラウザに渡す、言語ごとの国のデータ（/calc/app-{lang}.js にまとめ、どのページも同じファイルを読む）
+const sig = (x, n = 6) => Number(x.toPrecision(n));
+function calcClientData(l) {
+  const col = new Intl.Collator(LANG_TAG[l]);
+  const one = (o, k) => (o && o[l] ? { [k]: { [l]: o[l] } } : {});
+  return {
+    defaults: CALC.defaults, base: calcPath(l),
+    sources: Object.fromEntries(Object.entries(CALC_SOURCES).map(([k, v]) => [k, { year: v.year }])),
+    countries: CALC_WORLD.map(c => ({
+      id: c.id, currency: c.currency, name: { [l]: c.name[l] }, cur: { [l]: c.cur[l] }, ...one(c.inName, 'inName'),
+      ...(c.featured ? { featured: true } : {}), ...(c.plain ? { plain: true } : {}),
+      presets: c.presets, def: c.def,
+      pop: { all: c.pop.all, adults: c.pop.adults, adultAge: c.pop.adultAge, kids: c.pop.kids, kidAge: c.pop.kidAge },
+      gdp: { value: c.gdp.value, year: c.gdp.year },
+      ...(c.budget ? { budget: c.budget } : {}), ...(c.gov ? { gov: c.gov } : {}), usd: sig(c.usd),
+    })),
+    groups: calcWorld.REGIONS.map(r => ({ label: T[l]['calcRegion_' + r], ids: CALC_WORLD.filter(c => c.region === r).sort((a, b) => col.compare(a.name[l], b.name[l])).map(c => c.id) })),
+  };
+}
+const CALC_DATA = Object.fromEntries(LANGS.map(l => [l, calcClientData(l)]));
+const CALC_CTX = Object.fromEntries(LANGS.map(l => [l, calcJs.context(l, CALC_DATA[l], T[l])]));
+const CALC_APP = Object.fromEntries(LANGS.map(l => {
+  const L = T[l];
+  const js = `var D=${JSON.stringify(CALC_DATA[l]).replace(/</g, '\\u003c')},L=${JSON.stringify(Object.fromEntries(CALC_KEYS.map(k => [k, L[k]]))).replace(/</g, '\\u003c')},LANG=${JSON.stringify(l)},LOC=${JSON.stringify(calcJs.LOCALE[l])};\n${calcJs.CLIENT}\n${calcJs.BOOT}`;
+  return [l, { js, v: require('crypto').createHash('sha1').update(js).digest('hex').slice(0, 10) }];
+}));
 // サービスのカード・個別ページ・エッセイから、そのサービスのガイドへ
 const guideOf = s => GUIDES.find(g => g.svc === s.id);
 const guideLink = (lang, g, cls = 'g-link') => g ? `<p class="${cls}"><a href="${guidePath(lang, g)}">${esc(T[lang].guideRead.replace('{name}', g[lang].short))} ${RTL.has(lang) ? '←' : '→'}</a></p>` : '';
@@ -559,6 +616,7 @@ const DATASET_META = {
   'graveyard.json': { name: 'Free Lunch Lab graveyard', description: 'Basic-income-style programs that have ended, each with an official or credible source.' },
   'open-source.json': { name: 'Free Lunch Lab open-source projects', description: 'Open-source code projects related to basic income (UBI protocols, wallets, proof of personhood, simulators), as listed on Free Lunch Lab. Stars, last commit, archived status, license and language are fetched from GitHub and GitLab at build time.' },
   'open-data.json': { name: 'Free Lunch Lab basic income experiment data', description: 'Open datasets and replication packages from basic income, guaranteed income and unconditional cash transfer experiments, as listed on Free Lunch Lab. Each entry links to its official archive landing page; access is "open" (direct download), "registration" (free account needed) or "restricted" (application or data use agreement needed). The datasets themselves are not redistributed here and keep their own licenses.' },
+  'countries.json': { name: 'Free Lunch Lab basic income cost by country', description: 'Population (total, children and adults), GDP in local currency and US dollars, central government expense, revenue and tax revenue as a share of GDP, and the monthly amount and yearly cost (as a share of GDP) of paying everyone the World Bank international poverty line of $3.00 a day, for every country and territory in the Free Lunch Lab basic income cost calculator. World Bank data (CC BY 4.0) for most countries; official national figures for the seven featured countries.' },
   'news.json': { name: 'Free Lunch Lab basic income news', description: 'A weekly, hand-checked roundup of external basic income, guaranteed income and cash transfer news, grouped by weekly batch (newest first). Headlines and summaries are written by Free Lunch Lab in its own words; each item links to its source. This is separate from the site\'s own update log (the RSS feed at /feed.xml).' },
 };
 const FLL_ORG = { '@type': 'Organization', name: 'Free Lunch Lab', url: SITE_URL + '/' };
@@ -1042,6 +1100,35 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .cx-src dd{margin:0}
 .cx-src dd+dd{margin-top:6px}
 .cx-src a{display:inline-block;padding-block:12px;margin-block:-12px;color:var(--accent);overflow-wrap:anywhere}
+.cx-sel{display:block;width:100%;max-width:24rem;min-height:44px;margin-top:12px;font:inherit;font-size:.95rem;font-weight:700;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink)}
+.cx-sel.on{border-color:var(--gold);color:var(--gold)}
+.cx-sel:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.cx-usd{margin:-4px 0 0;color:var(--muted);font-weight:700;font-size:.95rem}
+.cx-cty,.cx-idx{margin:0;font-size:.92rem}
+.cx-idx{margin-top:12px}
+.cx-cty a,.cx-idx a{display:inline-block;padding-block:10px;margin-block:-10px;color:var(--accent);font-weight:700}
+.cx-facts p{font-size:.95rem;line-height:1.9;margin:0 0 10px}
+.cx-near-l{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.cx-near-l a{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border-radius:999px;border:1.5px solid var(--line);font-size:.875rem;font-weight:700;color:var(--ink);text-decoration:none}
+.cx-near-l a:hover{border-color:var(--muted)}
+.cx-wide{max-width:60rem}
+.cx-q{display:block;max-width:24rem;margin-top:16px}
+.cx-q input{width:100%}
+.cx-tw{margin-top:14px;overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.cx-tbl{width:100%;border-collapse:collapse;font-size:.875rem;line-height:1.45}
+.cx-tbl th,.cx-tbl td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top}
+.cx-tbl tbody tr:last-child>*{border-bottom:0}
+.cx-tbl thead th{position:sticky;top:0;background:var(--surface);font-size:.8125rem;color:var(--muted);white-space:nowrap}
+.cx-tbl thead button{font:inherit;font-weight:700;color:inherit;background:none;border:0;padding:6px 0;cursor:pointer;text-align:inherit}
+.cx-tbl thead button::after{content:"";margin-inline-start:4px}
+.cx-tbl th[aria-sort="ascending"] button::after{content:"↑"}
+.cx-tbl th[aria-sort="descending"] button::after{content:"↓"}
+.cx-tbl thead th[aria-sort] button{color:var(--ink)}
+.cx-tbl .num{text-align:end;white-space:nowrap}
+.cx-tbl tbody th{font-weight:700}
+.cx-tbl tbody th a{color:var(--ink)}
+.cx-tbl td b{color:var(--gold)}
+@media (max-width:640px){.cx-reg,.cx-gdp{display:none}.cx-tbl th,.cx-tbl td{padding:8px}.cx-tbl .num{white-space:normal}}
 .guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
 `;
 const sName = (s, l) => (l === 'ja' ? s.name : s.nameEn || s.name);
@@ -1461,11 +1548,23 @@ ${shr}<p class="qz-retry"><a class="btn line" href="${qzPath(lang)}">${esc(L.shi
 }
 
 // ---- BI計算機（/calc/）。国・配る相手・月額を選ぶと年額と、予算・GDP との比を出す（JS）。?c=&w=&m= で結果を再現できる
-// JS が無くても、その言語の既定の国・全員・既定の月額の結果を読める
+// JS が無くても、その言語の既定の国・全員・既定の月額の結果を読める。国のデータと計算のコードは /calc/app-{lang}.js（全ページ共通）
+const cfill = (t, o) => String(t).replace(/\{(\w+)\}/g, (m, k) => (k in o ? o[k] : m));
+const calcScript = lang => `<script src="/calc/app-${lang}.js?v=${CALC_APP[lang].v}"></script>`;
+// ar では、ラテン文字を含む値（FY2026、US$ など）を LRI/PDI で囲む
+const isoRtl = (lang, s) => (RTL.has(lang) && /[A-Za-z]/.test(s) ? `⁦${s}⁩` : s);
+const ucf = (lang, s) => (['en', 'es', 'de'].includes(lang) ? s.charAt(0).toUpperCase() + s.slice(1) : s);
+const calcIn = (c, l) => (c.inName && c.inName[l]) || c.name[l];
+const calcPopYear = c => String(c.pop.year || CALC_SOURCES[c.pop.src].year);
+const calcDate = lang => new Intl.DateTimeFormat(calcJs.LOCALE[lang], { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(WB.retrieved + 'T00:00:00Z'));
+const calcSrcA = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+// 貧困ライン（1日3.00ドル）を全員に1年配ったときの GDP 比
+const calcLinePct = c => (c.pop.all * c.line.monthly * 12) / c.gdp.value;
+
 function calcPage(lang) {
   const L = T[lang];
   const home = urlPath(lang);
-  const ini = calcJs.initial(lang, CALC, L, calcAbs(lang));
+  const ini = calcJs.initial(lang, CALC_DATA[lang], L, calcAbs(lang));
   const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
     { '@type': 'ListItem', position: 2, name: L.calcTitle, item: calcAbs(lang) } ] };
@@ -1474,26 +1573,138 @@ function calcPage(lang) {
   const names = ids => CALC.countries.filter(c => ids.includes(c.id)).map(c => c.name[lang]).join(L.calcMoney.startsWith('{n}{unit}') ? '、' : ', ');
   const popOther = CALC.countries.filter(c => c.pop.src === 'wpp').map(c => c.id);
   const more = esc(L.calcMore).replace('{tl}', `<a href="${tlPath(lang)}">${esc(L.tlTitle)}</a>`).replace('{es}', `<a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a>`);
+  const other = t => `<dd>${esc(L.calcSrcOther)}: ${t}</dd>`;
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.calcTitle)}</li></ol></nav>
 <main class="cx">
 <header class="orgs-head"><p class="eyebrow">${esc(L.calcTitle)}</p><h1>${esc(L.calcH1)}</h1><p class="orgs-intro">${esc(L.calcIntro)}</p></header>
 <form class="cx-form" id="cx" data-url="${esc(calcAbs(lang))}" onsubmit="return false"><div id="cxCtl" style="display:grid;gap:20px">${ini.controls}</div></form>
+<p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a></p>
 <section class="cx-res" id="cxRes" aria-live="polite">${ini.result}</section>
 <section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p><p>${more}</p></section>
 <section class="g-sec cx-src"><h2>${esc(L.calcSources)}</h2><dl>
-<div><dt>${esc(L.calcSrcPop)}</dt>${srcItem('jpPop', names(['jp']))}${srcItem('wpp', names(popOther))}</div>
-<div><dt>${esc(L.calcSrcBudget)}</dt>${srcItem('mofBudget', names(['jp']))}</div>
-<div><dt>${esc(L.calcSrcGdp)}</dt>${srcItem('wbGdp')}</div>
+<div><dt>${esc(L.calcSrcPop)}</dt>${srcItem('jpPop', names(['jp']))}${srcItem('wpp', names(popOther))}${other(calcSrcA('https://data.worldbank.org/indicator/SP.POP.TOTL', cfill(L.calcSrcWbPop, { year: CALC_SOURCES.wbPop.year })))}</div>
+<div><dt>${esc(L.calcSrcBudget)}</dt>${srcItem('mofBudget', names(['jp']))}${other(calcSrcA('https://data.worldbank.org/indicator/GC.XPN.TOTL.GD.ZS', cfill(L.calcSrcWbGov, { year: '2015–' + CALC_SOURCES.wbGdpAll.year })))}</div>
+<div><dt>${esc(L.calcSrcGdp)}</dt>${srcItem('wbGdp')}${other(calcSrcA('https://data.worldbank.org/indicator/NY.GDP.MKTP.CN', cfill(L.calcSrcWbGdp, { year: CALC_SOURCES.wbGdpAll.year })))}</div>
+<div><dt>${esc(L.calcSrcLine)}</dt>${other(calcSrcA(calcWorld.wbLinks({ id: 'br' }).line, L.calcSrcWbLine))}<dd>${esc(cfill(L.calcSrcWbNote, { date: calcDate(lang) }))}</dd></div>
 </dl></section>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  const script = `<script>
-var D=${JSON.stringify(CALC).replace(/</g, '\\u003c')},L=${JSON.stringify(Object.fromEntries(CALC_KEYS.map(k => [k, L[k]]))).replace(/</g, '\\u003c')},LANG=${JSON.stringify(lang)},LOC=${JSON.stringify(calcJs.LOCALE[lang])};
-${calcJs.CLIENT}
-${calcJs.BOOT}
-</script>`;
   // 検索結果用の title・description（任意。zh だけ、Search Console の検索語に合わせて別に持つ。見出しと OG 画像は calcH1・calcDesc のまま）
-  return shell(lang, { title: `${L.calcMetaTitle || L.calcH1} | ${L.title}`, desc: clip(L.calcMetaDesc || L.calcDesc, lang), hrefFor: calcAbs, pathFor: calcPath, ld, ogType: 'website', body, script, image: ogImage(`calc/${lang}/index.jpg`) });
+  return shell(lang, { title: `${L.calcMetaTitle || L.calcH1} | ${L.title}`, desc: clip(L.calcMetaDesc || L.calcDesc, lang), hrefFor: calcAbs, pathFor: calcPath, ld, ogType: 'website', body, script: calcScript(lang), image: ogImage(`calc/${lang}/index.jpg`) });
+}
+
+// 国のページの本文（データから作る文）。数字は計算機と同じ関数（src/calc.js）で書く
+function calcFacts(lang, c) {
+  const L = T[lang], X = CALC_CTX[lang], v = s => isoRtl(lang, String(s));
+  const m = n => v(X.money(n, c.id));
+  const u = n => { const x = X.usd(n, c.id); return x ? cfill(L.calcCtyAbout, { usd: v(x) }) : ''; };
+  const pg = t => X.pct(t / c.gdp.value);
+  const base = { country: c.name[lang], in: calcIn(c, lang) };
+  const tot = w => X.total(c.id, w, c.def);
+  const all = tot('all');
+  const out = [];
+  out.push(cfill(L.calcCtyPop, { ...base, pop: X.num(c.pop.all), popYear: calcPopYear(c), gdp: m(c.gdp.value), usdPart: u(c.gdp.value), gdpYear: c.gdp.year }));
+  let gov;
+  if (c.budget) gov = cfill(L.calcCtyBudget, { budget: X.pct(all / c.budget.total), social: X.pct(all / c.budget.social), tax: X.pct(all / c.budget.tax), year: v(CALC_SOURCES[c.budget.src].year) });
+  else if (c.gov) {
+    const items = [['exp', L.calcCtyGovExp], ['rev', L.calcCtyGovRev], ['tax', L.calcCtyGovTax]].filter(([k]) => c.gov[k]).map(([k, t]) => cfill(t, { pct: X.pct(all / (c.gdp.value * c.gov[k].p / 100)), year: c.gov[k].year }));
+    gov = cfill(L.calcCtyGov, { list: new Intl.ListFormat(LANG_TAG[lang], { type: 'conjunction' }).format(items) });
+    if (lang === 'es') gov = gov.replace(/\ba el /g, 'al ');
+  } else gov = cfill(L.calcCtyNoGov, base);
+  out.push(cfill(L.calcCtyCost, { ...base, amount: m(c.def), total: m(all), usdPart: u(all), pct: pg(all) }) + (lang === 'ja' || lang === 'zh' ? '' : ' ') + gov);
+  out.push(cfill(L.calcCtyGroups, { kidAge: c.pop.kidAge, adultAge: c.pop.adultAge, kids: X.num(c.pop.kids), adults: X.num(c.pop.adults), kidsTotal: m(tot('kids')), kidsPct: pg(tot('kids')), adultsTotal: m(tot('adults')), adultsPct: pg(tot('adults')) }));
+  if (c.featured) out.push(cfill(L.calcCtyDefCur, { amount: m(c.def), pl: m(c.line.monthly), plPct: X.pct(calcLinePct(c)) }));
+  else out.push(cfill(c.line.how === 'ppp' ? L.calcCtyDefPpp : L.calcCtyDefFx, { amount: m(c.def), cur: c.cur[lang], year: c.line.year }));
+  return { paras: out.map(p => ucf(lang, p)), all };
+}
+
+function calcCountryPage(lang, c) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const X = CALC_CTX[lang];
+  const ini = X.page(c.id, calcCtyAbs(lang, c));
+  const base = { country: c.name[lang], in: calcIn(c, lang) };
+  const facts = calcFacts(lang, c);
+  const name = c.name[lang];
+  const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.calcTitle, item: calcAbs(lang) },
+    { '@type': 'ListItem', position: 3, name: L.calcIdxCrumb, item: calcIdxAbs(lang) },
+    { '@type': 'ListItem', position: 4, name, item: calcCtyAbs(lang, c) } ] };
+  const W = calcWorld.wbLinks(c);
+  const dd = (url, text) => `<dd>${calcSrcA(url, text)}</dd>`;
+  const own = k => dd(CALC.sources[k].url, CALC.sources[k][lang] || CALC.sources[k].en);
+  const govYears = c.gov ? [...new Set(Object.values(c.gov).map(x => x.year))].sort().join(', ') : '';
+  const src = `<section class="g-sec cx-src"><h2>${esc(L.calcSources)}</h2><dl>
+<div><dt>${esc(L.calcSrcPop)}</dt>${c.featured ? own(c.pop.src) : dd(W.pop, cfill(L.calcSrcWbPop, { year: c.pop.year })) + dd(W.kids, 'SP.POP.AG00.FE.IN … SP.POP.AG17.MA.IN')}</div>
+<div><dt>${esc(L.calcSrcGdp)}</dt>${c.featured ? own(c.gdp.src) : ''}${dd(W.gdp, cfill(L.calcSrcWbGdp, { year: c.wb.gdp.year }))}</div>
+${c.budget ? `<div><dt>${esc(L.calcSrcBudget)}</dt>${own(c.budget.src)}</div>` : c.gov ? `<div><dt>${esc(L.calcSrcGov)}</dt>${dd(W.exp, cfill(L.calcSrcWbGov, { year: govYears }))}</div>` : ''}
+<div><dt>${esc(L.calcSrcLine)}</dt>${dd(W.line, L.calcSrcWbLine)}${c.line.how === 'ppp' ? dd(W.ppp, cfill(L.calcSrcWbPpp, { year: c.line.year })) : ''}<dd>${esc(cfill(L.calcSrcWbNote, { date: calcDate(lang) }))}</dd></div>
+</dl></section>`;
+  const near = CALC_WORLD.filter(x => x.region === c.region && x.id !== c.id).sort((a, b) => b.pop.all - a.pop.all).slice(0, 12);
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></li><li><a href="${calcIdxPath(lang)}">${esc(L.calcIdxCrumb)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
+<main class="cx">
+<header class="orgs-head"><p class="eyebrow"><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></p><h1>${esc(cfill(L.calcCtyH1, base))}</h1><p class="orgs-intro">${esc(L.calcIntro)}</p></header>
+<form class="cx-form" id="cx" data-url="${esc(calcCtyAbs(lang, c))}" data-c="${c.id}" onsubmit="return false"><div id="cxCtl" style="display:grid;gap:20px">${ini.controls}</div></form>
+<section class="cx-res" id="cxRes" aria-live="polite">${ini.result}</section>
+<section class="g-sec cx-facts"><h2>${esc(cfill(L.calcCtyFactsH, lang === 'en' ? { country: ucf(lang, calcIn(c, lang)) } : base))}</h2>${facts.paras.map(p => `<p>${esc(p)}</p>`).join('')}</section>
+<section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p></section>
+${src}
+<section class="g-sec cx-near"><h2>${esc(cfill(L.calcCtyNear, { region: L['calcRegion_' + c.region] }))}</h2><ul class="cx-near-l">${near.map(x => `<li><a href="${calcCtyPath(lang, x)}">${esc(x.name[lang])}</a></li>`).join('')}</ul><p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a></p></section>
+<p class="back"><a class="btn line" href="${calcPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.calcTitle)}</a></p>
+</main>`;
+  const desc = cfill(L.calcCtyDesc, { ...base, amount: isoRtl(lang, X.money(c.def, c.id)), total: isoRtl(lang, X.money(facts.all, c.id)), pct: X.pct(facts.all / c.gdp.value) });
+  return shell(lang, { title: `${cfill(L.calcCtyTitle, base)} | ${L.title}`, desc: clip(ucf(lang, desc), lang), hrefFor: l => calcCtyAbs(l, c), pathFor: l => calcCtyPath(l, c), ld, ogType: 'website', body, script: calcScript(lang), image: ogImage(`calc/${lang}/index.jpg`) });
+}
+
+// 国の一覧（/calc/countries/）: 全員に1日3.00ドル（貧困ライン）を1年配ったときの GDP 比。並べ替えと名前での絞り込みは JS
+function calcIndexPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const X = CALC_CTX[lang];
+  const n = CALC_WORLD.length;
+  const col = new Intl.Collator(LANG_TAG[lang]);
+  const list = CALC_WORLD.slice().sort((a, b) => col.compare(a.name[lang], b.name[lang]));
+  const title = cfill(L.calcIdxTitle, { n });
+  const ld = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.calcTitle, item: calcAbs(lang) },
+    { '@type': 'ListItem', position: 3, name: L.calcIdxCrumb, item: calcIdxAbs(lang) } ] },
+    datasetLd('countries.json', calcIdxAbs(lang), { temporalCoverage: `${Math.min(...CALC_WORLD.map(c => c.gdp.year))}/${Math.max(...CALC_WORLD.map(c => c.gdp.year))}`, spatialCoverage: 'World', isBasedOn: 'https://data.worldbank.org/' })];
+  const th = (k, label, cls = '', sort = '') => `<th scope="col"${cls ? ` class="${cls}"` : ''}${sort ? ` aria-sort="${sort}"` : ''}>${k ? `<button type="button" data-k="${k}">${esc(label)}</button>` : esc(label)}</th>`;
+  const rows = list.map((c, i) => {
+    const pct = calcLinePct(c);
+    return `<tr data-n="${i}" data-r="${calcWorld.REGIONS.indexOf(c.region)}" data-p="${c.pop.all}" data-g="${Math.round(c.gdp.value * c.usd)}" data-x="${pct.toFixed(6)}"><th scope="row"><a href="${calcCtyPath(lang, c)}">${esc(c.name[lang])}</a></th><td class="cx-reg">${esc(L['calcRegion_' + c.region])}</td><td class="num">${esc(X.num(c.pop.all))}</td><td class="num cx-gdp">${esc(X.num(c.gdp.value * c.usd))}</td><td class="num"><bdi>${esc(X.money(c.line.monthly, c.id))}</bdi></td><td class="num"><b><bdi>${esc(X.pct(pct))}</bdi></b></td></tr>`;
+  }).join('\n');
+  const file = `<a href="${SITE_URL}/countries.json" dir="ltr">countries.json</a>`;
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></li><li aria-current="page">${esc(L.calcIdxCrumb)}</li></ol></nav>
+<main class="cx cx-wide">
+<header class="orgs-head"><p class="eyebrow"><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></p><h1>${esc(title)}</h1><p class="orgs-intro">${esc(L.calcIdxIntro)}</p><p class="oss-note">${esc(L.calcIdxData).replace('{file}', file)}</p></header>
+<label class="cx-q"><span class="vh">${esc(L.calcIdxFilter)}</span><input class="cx-num" id="cxQ" type="search" placeholder="${esc(L.calcIdxFilter)}" autocomplete="off"></label>
+<div class="cx-tw"><table class="cx-tbl" id="cxTbl"><thead><tr>${th('n', L.calcIdxCountry, '', 'ascending')}${th('r', L.calcIdxRegion, 'cx-reg')}${th('p', L.calcIdxPop, 'num')}${th('g', L.calcIdxGdp, 'num cx-gdp')}${th('', L.calcIdxAmount, 'num')}${th('x', L.calcIdxPct, 'num')}</tr></thead><tbody>
+${rows}
+</tbody></table></div>
+<section class="g-sec cx-note"><p>${esc(L.calcIdxNote)}</p><p>${esc(cfill(L.calcSrcWbNote, { date: calcDate(lang) }))}</p></section>
+<p class="back"><a class="btn line" href="${calcPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.calcTitle)}</a></p>
+</main>`;
+  const script = `<script>
+(function(){
+  var t = document.getElementById('cxTbl'), b = t.tBodies[0], rows = [].slice.call(b.rows), q = document.getElementById('cxQ'), cur = 'n', dir = 1;
+  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, ''); }
+  t.tHead.addEventListener('click', function (e) {
+    var x = e.target.closest ? e.target.closest('button') : null;
+    if (!x) return;
+    var k = x.getAttribute('data-k');
+    dir = cur === k ? -dir : (k === 'n' || k === 'r' ? 1 : -1); cur = k;
+    rows.sort(function (a, c) { return (a.getAttribute('data-' + k) - c.getAttribute('data-' + k)) * dir || a.getAttribute('data-n') - c.getAttribute('data-n'); });
+    rows.forEach(function (r) { b.appendChild(r); });
+    [].forEach.call(t.tHead.querySelectorAll('th'), function (h) { h.removeAttribute('aria-sort'); });
+    x.parentNode.setAttribute('aria-sort', dir > 0 ? 'ascending' : 'descending');
+  });
+  q.addEventListener('input', function () { var v = norm(q.value.trim()); rows.forEach(function (r) { r.hidden = !!v && norm(r.cells[0].textContent).indexOf(v) < 0; }); });
+})();
+</script>`;
+  return shell(lang, { title: `${title} | ${L.title}`, desc: clip(cfill(L.calcIdxDesc, { n }), lang), hrefFor: calcIdxAbs, pathFor: calcIdxPath, ld, ogType: 'website', body, script, image: ogImage(`calc/${lang}/index.jpg`) });
 }
 
 // ---- ベーシックインカム社会実験の年表（/timeline/）。縦のタイムライン（RTLでは左右が反転）
@@ -1805,6 +2016,13 @@ for (const lang of LANGS) {
   const cdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'calc');
   fs.mkdirSync(cdir, { recursive: true });
   fs.writeFileSync(path.join(cdir, 'index.html'), calcPage(lang));
+  for (const c of CALC_WORLD) {
+    fs.mkdirSync(path.join(cdir, c.id), { recursive: true });
+    fs.writeFileSync(path.join(cdir, c.id, 'index.html'), calcCountryPage(lang, c));
+  }
+  fs.mkdirSync(path.join(cdir, 'countries'), { recursive: true });
+  fs.writeFileSync(path.join(cdir, 'countries', 'index.html'), calcIndexPage(lang));
+  if (lang === DEFAULT_LANG) for (const l of LANGS) fs.writeFileSync(path.join(cdir, `app-${l}.js`), CALC_APP[l].js);
   const osdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'open-source');
   fs.mkdirSync(osdir, { recursive: true });
   fs.writeFileSync(path.join(osdir, 'index.html'), ossPage(lang));
@@ -1860,10 +2078,13 @@ for (const { html, lang, file } of pages) {
 for (const l of LANGS) for (const v of Object.values(T[l])) add(roles[l].body, textOf(String(v)));
 // BI計算機が JS で出す国名・通貨名と、結果カード（og.js）の文字
 for (const l of LANGS) {
-  for (const c of CALC.countries) add(roles[l].body, c.name[l] + c.cur[l] + ((c.inName && c.inName[l]) || ''));
+  for (const c of CALC_WORLD) add(roles[l].body, c.name[l] + c.cur[l] + ((c.inName && c.inName[l]) || '') + cfill(T[l].calcCtyLink, { country: c.name[l] }));
   // ₹ はサイトの本文フォントに無い（Google Fonts が 400 を返す）ので、端末のフォントに任せる
   for (const k of CALC_CARDS[l]) add(roles[l].body, [k.total, k.formula, k.place, k.who, k.text, ...k.rows.flat()].join('').replace(/₹/g, ''));
 }
+// 本文フォントに字がない記号（Google Fonts が取れない）は、端末のフォントに任せる: Noto Sans Arabic に ₹ がない（ar の一覧・インドのページ）
+const NO_GLYPH = { ar: '₹' };
+for (const [l, chars] of Object.entries(NO_GLYPH)) for (const ch of chars) roles[l].body.delete(ch);
 const logoChars = new Set(LANGS.flatMap(l => [...textOf(T[l].brand)]));
 const faceList = l => {
   const r = roles[l], disp = DISPLAY_FONT[l];
@@ -1924,6 +2145,7 @@ function newsLink(n, lang) {
   const en = n.en || '';
   if (/basic income news page/i.test(en)) return biNewsAbs(lang);
   if (/badge/i.test(en)) return badgeAbs(lang);
+  if (/calculator/i.test(en) && /countries and territories/i.test(en)) return calcIdxAbs(lang);
   if (/calculator/i.test(en)) return calcAbs(lang);
   if (/quiz/i.test(en)) return qzAbs(lang);
   const guide = GUIDES.find(g => /guide/i.test(en) && en.includes(g.en.short));
@@ -2010,7 +2232,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(calcIdxAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
@@ -2175,7 +2397,42 @@ const biNewsJson = {
     })),
   })),
 };
-for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson], ['open-source.json', ossJson], ['open-data.json', dataJson], ['news.json', biNewsJson]]) {
+// BI計算機の国の表（countries.json）。人口・GDP・政府の数字・貧困ライン（1日3.00ドル）の月額と、それを全員に配ったときの年額の GDP 比
+const countriesJson = {
+  name: DATASET_META['countries.json'].name,
+  description: DATASET_META['countries.json'].description,
+  source: calcIdxAbs(DEFAULT_LANG),
+  repository: 'https://github.com/eltociear/free-lunch-lab',
+  license: 'CC BY 4.0 (World Bank data: CC BY 4.0, https://datacatalog.worldbank.org/public-licenses#cc-by)',
+  licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+  generatedAt: WB.retrieved,
+  languages: LANGS,
+  count: CALC_WORLD.length,
+  methods: {
+    worldBank: `World Bank API (api.worldbank.org/v2), retrieved ${WB.retrieved}; latest non-empty year per indicator since ${WB.fromYear}. ${WB.methods.kids} ${WB.methods.gov} The calculator compares with government figures only when they are no more than ${calcWorld.GOV_MAX_AGE} years older than the GDP year (governmentUsedInCalculator).`,
+    featured: 'For the seven featured countries (jp, us, cn, in, es, de, eg) population and GDP are the figures used in the calculator (official national statistics or UN WPP and World Bank, see sources); Japan also has its national budget.',
+    povertyLine: 'povertyLine.monthly = US$3.00 a day (World Bank international poverty line, 2021 PPP, June 2025 update) x 365/12, converted into local currency with the World Bank PPP conversion factor for household consumption (PA.NUS.PRVT.PP) when it is from the GDP year or the year before and implies a price level between 0.1 and 2.5 times the exchange rate; otherwise with the exchange rate implied by GDP in local currency / GDP in US dollars (same year). Rounded to two significant figures.',
+    defaultMonthly: 'The calculator default: povertyLine.monthly for World Bank countries; a round figure chosen by the editors for the seven featured countries.',
+    cost: 'costAtPovertyLine.yearly = population x povertyLine.monthly x 12 (gross, local currency); pctGdp = yearly / GDP.',
+    dropped: WB.dropped,
+  },
+  regions: Object.fromEntries(calcWorld.REGIONS.map(r => [r, clean(T.en['calcRegion_' + r])])),
+  countries: CALC_WORLD.map(c => ({
+    id: c.id, iso3: c.iso3, region: c.region, featured: !!c.featured, currency: c.currency,
+    population: { total: c.pop.all, children: c.pop.kids, childrenUnderAge: c.pop.kidAge, adults: c.pop.adults, adultsFromAge: c.pop.adultAge, year: +calcPopYear(c), source: c.featured ? CALC.sources[c.pop.src].url : 'https://data.worldbank.org/indicator/SP.POP.TOTL' },
+    gdp: { localCurrency: c.gdp.value, usd: Math.round(c.gdp.value * c.usd), year: c.gdp.year, source: c.featured ? CALC.sources[c.gdp.src].url : 'https://data.worldbank.org/indicator/NY.GDP.MKTP.CN' },
+    government: c.wb.gov,
+    governmentUsedInCalculator: c.gov ? Object.fromEntries(Object.entries(c.gov).map(([k, x]) => [{ exp: 'expense', rev: 'revenue', tax: 'tax' }[k], { pctGdp: x.p, year: x.year }])) : null,
+    ...(c.budget ? { nationalBudget: { ...c.budget, source: CALC.sources[c.budget.src].url } } : {}),
+    povertyLine: { usdPerDay: calcWorld.POVERTY_LINE, monthly: c.line.monthly, conversion: c.line.how === 'ppp' ? 'PA.NUS.PRVT.PP' : 'GDP LCU / GDP US$', factor: sig(c.line.factor), year: c.line.year },
+    defaultMonthly: c.def,
+    costAtPovertyLine: { yearly: Math.round(c.pop.all * c.line.monthly * 12), pctGdp: +(calcLinePct(c) * 100).toFixed(3) },
+    pageUrl: calcCtyAbs(DEFAULT_LANG, c),
+    names: Object.fromEntries(LANGS.map(l => [l, clean(c.name[l])])),
+    currencyNames: Object.fromEntries(LANGS.map(l => [l, clean(c.cur[l])])),
+  })),
+};
+for (const [file, obj] of [['services.json', servicesJson], ['graveyard.json', graveJson], ['open-source.json', ossJson], ['open-data.json', dataJson], ['news.json', biNewsJson], ['countries.json', countriesJson]]) {
   const txt = JSON.stringify(obj, null, 2) + '\n';
   fs.writeFileSync(path.join(DATA_DIR, file), txt);
   fs.writeFileSync(path.join(OUT, file), txt);
@@ -2207,6 +2464,7 @@ const llmsTxt = `${llmsHead(false)}
 - [open-source.json](${SITE_URL}/open-source.json): open-source code projects related to basic income, with license, language, stars, last commit and dormant flag
 - [open-data.json](${SITE_URL}/open-data.json): open datasets and replication packages from basic income experiments, with archive, access level and license
 - [news.json](${SITE_URL}/news.json): the weekly basic income news roundup, with headlines and summaries in every language, region, tag and source links
+- [countries.json](${SITE_URL}/countries.json): every country and territory in the basic income cost calculator, with population (total, children, adults), GDP in local currency and US dollars, central government expense, revenue and tax as % of GDP, and the yearly cost of paying everyone the World Bank's $3.00-a-day poverty line (World Bank data, CC BY 4.0)
 - [Basic income news RSS (en)](${biNewsFeedAbs(DEFAULT_LANG)}): the weekly news roundup as a feed (other languages at /{lang}/news/feed.xml)
 ${LANGS.map(l => `- [RSS feed (${l})](${feedAbs(l)}): update log in ${LANG_NAMES[l] === 'EN' ? 'English' : LANG_NAMES[l]}`).join('\n')}
 
@@ -2226,7 +2484,7 @@ ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LA
 ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}): ${md(e.desc.en)}`).join('\n')}
 ${GUIDES.map(g => `- [${mdLink(g.en.title)}](${guideAbs(DEFAULT_LANG, g)}): ${md(g.en.desc)} Last updated ${g.updated}.`).join('\n')}
 - [${md(T.en.shindanH1)}](${qzAbs(DEFAULT_LANG)}): ${md(T.en.shindanDesc)} Result types: ${QUIZ.types.map(t => `[${mdLink(t.name.en)}](${qzTypeAbs(DEFAULT_LANG, t)}) (${servicesFor(t, live).length} services)`).join(', ')}.
-- [${md(T.en.calcH1)}](${calcAbs(DEFAULT_LANG)}): ${md(T.en.calcDesc)} Countries: ${CALC.countries.map(c => `${c.name.en} (${c.id})`).join(', ')}. Inputs are reproducible from the URL: \`?c={country id}&w=all|adults|kids&m={monthly amount in local currency}\`. Figures: ${Object.values(CALC.sources).map(x => `[${mdLink(x.en.split('. ')[0])}](${x.url}) (${x.year})`).join('; ')}.
+- [${md(T.en.calcH1)}](${calcAbs(DEFAULT_LANG)}): ${md(T.en.calcDesc)} ${CALC_WORLD.length} countries and territories (${CALC.countries.map(c => `${c.name.en} (${c.id})`).join(', ')} with national figures; the rest from World Bank data). Inputs are reproducible from the URL: \`?c={country id}&w=all|adults|kids&m={monthly amount in local currency}\`. Each country also has its own page at \`/calc/{country id}/\` (e.g. ${calcCtyAbs(DEFAULT_LANG, CALC_WORLD.find(c => c.id === 'br'))}), and [all countries are compared](${calcIdxAbs(DEFAULT_LANG)}) by the yearly cost of paying everyone the World Bank's $3.00-a-day poverty line, as a share of GDP. Figures: ${Object.values(CALC.sources).map(x => `[${mdLink(x.en.split('. ')[0])}](${x.url}) (${x.year})`).join('; ')}.
 
 ## Open-source projects
 

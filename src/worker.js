@@ -42,13 +42,14 @@ export default {
 // og:image・twitter:image・og:title・og:description をその結果のものに書き換える（X などのリンクのプレビュー用）。
 // それ以外（パラメータなし・自由な金額・おかしな値）は元のページのまま
 const SITE = 'https://neteru-nyukin.eltociear.workers.dev';
-const CALC_PATH = /^\/(?:(ja|zh|hi|es|de|ar)\/)?calc\/$/;
+// 国のページ（/calc/jp/?w=all&m=30000）は、パスの国で同じカードを探す（7 か国だけ。ほかの国はページのままの計算機の画像）
+const CALC_PATH = /^\/(?:(ja|zh|hi|es|de|ar)\/)?calc\/(?:([a-z]{2})\/)?$/;
 function calcCard(request, url, res) {
   const m = request.method === 'GET' && res.status === 200 && url.search ? url.pathname.match(CALC_PATH) : null;
   if (!m) return null;
   const lang = m[1] || 'en';
   const q = url.searchParams, amount = Number(q.get('m'));
-  const id = `${q.get('c')}-${q.get('w')}-${amount}`;
+  const id = `${m[2] || q.get('c')}-${q.get('w')}-${amount}`;
   const hit = Object.prototype.hasOwnProperty.call(CARDS[lang] || {}, id) ? CARDS[lang][id] : null;
   if (!hit) return res;
   return swapMeta(res, `${SITE}/og/calc/${lang}/${id}.jpg`, hit[0], hit[1]);

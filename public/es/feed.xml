@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/es/</link>
     <description>Apps y proyectos que te pagan solo por existir, tipo renta básica: Ğ1, Circles, Gradido, Idena y más. Con riesgos y cómo cobrar. Hay enlaces de referido.</description>
     <language>es</language>
-    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/es/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>La calculadora de la renta básica llega a 211 países y territorios, cada uno con su página, y una tabla de lo que costaría dar a todo el mundo la línea de pobreza de 3,00 dólares al día del Banco Mundial, como porcentaje del PIB (datos del Banco Mundial, también en countries.json)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/calc/countries/</link>
+      <guid isPermaLink="false">news-2026-11-09-fdcfce26aec9</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>La calculadora de la renta básica llega a 211 países y territorios, cada uno con su página, y una tabla de lo que costaría dar a todo el mundo la línea de pobreza de 3,00 dólares al día del Banco Mundial, como porcentaje del PIB (datos del Banco Mundial, también en countries.json)</description>
+    </item>
     <item>
       <title>Publicado el ensayo «¿Quita la IA trabajo a los creativos? Artistas y renta básica (parte 2)»</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/es/essays/generative-ai-creative-work-basic-income/</link>

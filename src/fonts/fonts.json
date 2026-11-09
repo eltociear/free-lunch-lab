@@ -227,6 +227,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-68b791b334.woff2",
     "chars": "é"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-cd3b89a068.woff2",
+    "chars": "ãçíóôłʻ₹"
    }
   ],
   "de:body:700": [
@@ -297,6 +301,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-598f0cd4e7.woff2",
     "chars": "é"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-5132dee332.woff2",
+    "chars": "ãçíóôłʻ₹"
    }
   ],
   "de:display": [
@@ -327,6 +335,10 @@
    {
     "file": "dela-gothic-one-400-de-a9c79872b3.woff2",
     "chars": "'"
+   },
+   {
+    "file": "dela-gothic-one-400-de-ac445b6276.woff2",
+    "chars": "Öãçéíô"
    }
   ],
   "de:dot": [
@@ -407,6 +419,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-68b791b334.woff2",
     "chars": "é"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-f0205f29ba.woff2",
+    "chars": "ãçëíóôüʻ₹"
    }
   ],
   "en:body:700": [
@@ -477,6 +493,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-598f0cd4e7.woff2",
     "chars": "é"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-75208534fa.woff2",
+    "chars": "ãçëíóôüʻ₹"
    }
   ],
   "en:display": [
@@ -499,6 +519,10 @@
    {
     "file": "dela-gothic-one-400-en-009f1def4c.woff2",
     "chars": "–"
+   },
+   {
+    "file": "dela-gothic-one-400-en-22f6b4decc.woff2",
+    "chars": "ãçéíôü"
    }
   ],
   "en:dot": [
@@ -579,6 +603,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-36fd2055a4.woff2",
     "chars": "ª"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-2c7477492b.woff2",
+    "chars": "ô₹"
    }
   ],
   "es:body:700": [
@@ -649,6 +677,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-5f559f1b79.woff2",
     "chars": "ª"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-6e90816c62.woff2",
+    "chars": "ô₹"
    }
   ],
   "es:display": [
@@ -675,6 +707,10 @@
    {
     "file": "dela-gothic-one-400-es-009f1def4c.woff2",
     "chars": "–"
+   },
+   {
+    "file": "dela-gothic-one-400-es-9e4f21f972.woff2",
+    "chars": "Áô"
    }
   ],
   "es:dot": [
@@ -753,6 +789,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-3a6d0f93a1.woff2",
     "chars": "é"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-7d614828e0.woff2",
+    "chars": "॰"
    }
   ],
   "hi:body:700": [
@@ -807,6 +847,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-4ae4edcfd4.woff2",
     "chars": "é"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-f0815794f1.woff2",
+    "chars": "॰"
    }
   ],
   "hi:dot": [
@@ -1027,6 +1071,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-38e903b1c4.woff2",
     "chars": "姻席男県誤赤輪"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-7f7b2869a8.woff2",
+    "chars": "₹ヌ仏兌南占岸桁｜"
    }
   ],
   "ja:body:700": [
@@ -1237,6 +1285,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-98159652df.woff2",
     "chars": "姻席男県誤赤輪"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-4e0d9fc49c.woff2",
+    "chars": "₹ヌ仏兌南占岸桁｜"
    }
   ],
   "ja:display": [
@@ -1355,6 +1407,10 @@
    {
     "file": "dela-gothic-one-400-ja-594d8db973.woff2",
     "chars": "〜ナヘヤ剣女性期界白真議限"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-d441258831.woff2",
+    "chars": "ケゴズゼヌモヨワヴ世仏以北南及和地域太央岸島川東洋西諸赤邦長首"
    }
   ],
   "ja:dot": [
@@ -1611,6 +1667,10 @@
    {
     "file": "noto-sans-sc-400-zh-7c39ffc5ed.woff2",
     "chars": "谱"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-a9c4ada1a8.woff2",
+    "chars": "₹乍乘伐俄兹冈冰勒匈叙喀圣圭埔堡墨奈嫩宛寨岸峡帝廷慕挝捷摩斐柬汗汤汶泊洪浦潘澳玻瑙瓜甸疆缅腊舌茨荷萄葡蓬迪酋陵陶"
    }
   ],
   "zh:body:700": [
@@ -1821,6 +1881,10 @@
    {
     "file": "noto-sans-sc-700-zh-0cfa339fa5.woff2",
     "chars": "谱"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-4bb617ba5a.woff2",
+    "chars": "₹乍乘伐俄兹冈冰勒匈叙喀圣圭埔堡墨奈嫩宛寨岸峡帝廷慕挝捷摩斐柬汗汤汶泊洪浦潘澳玻瑙瓜甸疆缅腊舌茨荷萄葡蓬迪酋陵陶"
    }
   ],
   "zh:display": [
@@ -1935,6 +1999,10 @@
    {
     "file": "noto-sans-sc-900-zh-3b63bea407.woff2",
     "chars": "–《》举今印央女撒讨调邦限"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-de17b9ab46.woff2",
+    "chars": "丁世丹乌乍京伊伐伦伯佛俄典兹内冈冰几凯列刚努劳勒匈北博占卢厄叙古各吉哈哥喀土圣圭坡坦埃埔堡塔塞墨士大太夫奥威嫩孟宁安宛宾富寨尼岛岸峡巴希帕帝干库廷律德恩慕托拜挝挪捷摩敦文斐旦旺昂朗柬根桑毛汗汤汶沃沙河泊波洋洛津洪洲浦海澳牙玻班瑙瑞瓜瓦甸疆登白百科突米索约纳绍维缅群老耳联肯脱腊舌色苏英茨荷莫莱菲萄萨葡蒙蓬角贝赤达迪酋长陵陶隆非韦顿麦黎黑"
    }
   ],
   "zh:dot": [

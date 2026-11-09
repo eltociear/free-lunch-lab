@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/ar/</link>
     <description>تطبيقات ومشاريع تدفع لك لمجرد وجودك على طريقة الدخل الأساسي، مثل Ğ1 وCircles وGradido وIdena، مع المخاطر وإمكانية التحويل إلى نقود. بعضها روابط إحالة.</description>
     <language>ar</language>
-    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ar/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>وسّعنا حاسبة الدخل الأساسي إلى 211 بلدًا وإقليمًا، لكلٍّ منها صفحته، مع جدول لتكلفة إعطاء الجميع خط الفقر للبنك الدولي (3.00 دولارات في اليوم) كنسبة من الناتج المحلي الإجمالي (بيانات البنك الدولي، ومتاحة أيضًا بصيغة countries.json)</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ar/calc/countries/</link>
+      <guid isPermaLink="false">news-2026-11-09-fdcfce26aec9</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>وسّعنا حاسبة الدخل الأساسي إلى 211 بلدًا وإقليمًا، لكلٍّ منها صفحته، مع جدول لتكلفة إعطاء الجميع خط الفقر للبنك الدولي (3.00 دولارات في اليوم) كنسبة من الناتج المحلي الإجمالي (بيانات البنك الدولي، ومتاحة أيضًا بصيغة countries.json)</description>
+    </item>
     <item>
       <title>نشرنا مقال «هل يأخذ الذكاء الاصطناعي العمل الإبداعي؟ دخل الفنانين والدخل الأساسي (الجزء الثاني)»</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/ar/essays/generative-ai-creative-work-basic-income/</link>

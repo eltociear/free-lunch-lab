@@ -5,6 +5,8 @@ const vm = require('vm');
 
 const CLIENT = String.raw`
 var WHO = ['all', 'adults', 'kids'];
+// 国のページ（/calc/{国}/）では、その国に固定する（URL に c= を入れない）。ほかのページと build.js の vm では null
+var PAGE_C;
 function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 function fill(t, o) { return t.replace(/\{(\w+)\}/g, function (m, k) { return k in o ? o[k] : m; }); }
 function nf(n, o) { return new Intl.NumberFormat(LOC, o).format(n); }
@@ -16,14 +18,22 @@ function withUnit(n) {
   return null;
 }
 var TIGHT = L.calcMoney.indexOf('{n}{unit}') >= 0;
+// World Bank から足した国（c.plain）は、小さな金額も記号でなく「240 Brazilian reals」のように通貨名で書く（記号はフォントにない字が多い）
 function money(n, c) {
   var w = withUnit(n);
   if (w) return fill(L.calcMoney, { n: w.n, unit: w.unit, cur: c.cur[LANG] });
+  if (c.plain) return fill(L.calcMoneyPlain, { n: nf(n, { maximumFractionDigits: n % 1 ? 2 : 0 }), cur: c.cur[LANG] });
   return nf(n, { style: 'currency', currency: c.currency, currencyDisplay: 'narrowSymbol', maximumFractionDigits: n % 1 ? 2 : 0 });
 }
-function people(n) {
+function num(n) {
   var w = withUnit(n);
-  return fill(L.calcPeople, { n: w ? w.n + (TIGHT ? '' : ' ') + w.unit : nf(n) });
+  return w ? w.n + (TIGHT ? '' : ' ') + w.unit : nf(n);
+}
+function people(n) { return fill(L.calcPeople, { n: num(n) }); }
+// 米ドル換算（GDP の米ドル ÷ 現地通貨、同じ年）。c.usd がなければ null
+function usd(n, c) {
+  if (!c.usd || c.currency === 'USD') return null;
+  return money(n * c.usd, { currency: 'USD', cur: (function () { var o = {}; o[LANG] = L.calcUsdCur; return o; })() });
 }
 function pct(r) {
   return nf(r, r < 0.1 ? { style: 'percent', maximumSignificantDigits: 2 } : r < 1 ? { style: 'percent', minimumFractionDigits: 1, maximumFractionDigits: 1 } : { style: 'percent', maximumFractionDigits: 0 });
@@ -31,13 +41,13 @@ function pct(r) {
 function country(id) { for (var i = 0; i < D.countries.length; i++) if (D.countries[i].id === id) return D.countries[i]; return null; }
 // URL の ?c=&w=&m= を確かめて状態にする。おかしな値は既定に戻す
 function parse(q) {
-  var c = country(q.c) || country(D.defaults[LANG]);
+  var c = (PAGE_C && country(PAGE_C)) || country(q.c) || country(D.defaults[LANG]);
   var w = WHO.indexOf(q.w) >= 0 ? q.w : 'all';
   var m = parseFloat(q.m);
   if (!(m > 0 && m <= 1e9)) m = c.def;
   return { c: c.id, w: w, m: Math.round(m * 100) / 100 };
 }
-function query(s) { return 'c=' + s.c + '&w=' + s.w + '&m=' + s.m; }
+function query(s) { return (PAGE_C ? '' : 'c=' + s.c + '&') + 'w=' + s.w + '&m=' + s.m; }
 function compute(s) {
   var c = country(s.c), p = c.pop;
   var n = s.w === 'adults' ? p.adults : s.w === 'kids' ? p.kids : p.all;
@@ -47,6 +57,12 @@ function compute(s) {
     rows.push({ label: L.calcCmpBudget, r: total / c.budget.total, year: D.sources[c.budget.src].year });
     rows.push({ label: L.calcCmpSocial, r: total / c.budget.social, year: D.sources[c.budget.src].year });
     rows.push({ label: L.calcCmpTax, r: total / c.budget.tax, year: D.sources[c.budget.src].year });
+  } else if (c.gov) {
+    // World Bank の中央政府の数字（その年の GDP 比）を、最新の GDP にかけてくらべる
+    [['exp', L.calcCmpGovExp], ['rev', L.calcCmpGovRev], ['tax', L.calcCmpGovTax]].forEach(function (g) {
+      var x = c.gov[g[0]];
+      if (x) rows.push({ label: g[1], r: total / (c.gdp.value * x.p / 100), year: String(x.year) });
+    });
   }
   rows.push({ label: L.calcCmpGdp, r: total / c.gdp.value, year: String(c.gdp.year) });
   var who = s.w === 'adults' ? fill(L.calcShareAdults, { age: p.adultAge }) : s.w === 'kids' ? fill(L.calcShareKids, { age: p.kidAge }) : L.calcShareAll;
@@ -69,9 +85,17 @@ function card(s) {
 function chip(name, value, label, on) {
   return '<label class="cx-chip"><input type="radio" name="' + name + '" value="' + esc(value) + '"' + (on ? ' checked' : '') + '><span>' + esc(label) + '</span></label>';
 }
+// 国: 手で調べた国（featured）はチップ、全部の国は地域ごとのプルダウン（D.groups、build.js が言語ごとに並べる）
 function controls(s) {
-  var c = country(s.c);
-  return '<fieldset class="cx-f"><legend>' + esc(L.calcCountry) + '</legend><div class="cx-chips">' + D.countries.map(function (x) { return chip('c', x.id, x.name[LANG], x.id === s.c); }).join('') + '</div></fieldset>'
+  var c = country(s.c), n = 0;
+  var opts = (D.groups || []).map(function (g) {
+    n += g.ids.length;
+    return '<optgroup label="' + esc(g.label) + '">' + g.ids.map(function (id) { var x = country(id); return '<option value="' + id + '"' + (id === s.c ? ' selected' : '') + '>' + esc(x.name[LANG]) + '</option>'; }).join('') + '</optgroup>';
+  }).join('');
+  var feat = D.countries.filter(function (x) { return x.featured; });
+  var on = feat.some(function (x) { return x.id === s.c; });
+  return '<fieldset class="cx-f"><legend>' + esc(L.calcCountry) + '</legend><div class="cx-chips">' + feat.map(function (x) { return chip('c', x.id, x.name[LANG], x.id === s.c); }).join('') + '</div>'
+    + (opts ? '<select class="cx-sel' + (on ? '' : ' on') + '" name="c" aria-label="' + esc(fill(L.calcOther, { n: n })) + '"><option value=""' + (on ? ' selected' : '') + '>' + esc(fill(L.calcOther, { n: n })) + '</option>' + opts + '</select>' : '') + '</fieldset>'
     + '<fieldset class="cx-f"><legend>' + esc(L.calcWho) + '</legend><div class="cx-chips">' + WHO.map(function (w) { return chip('w', w, whoLabel(w, c), w === s.w); }).join('') + '</div></fieldset>'
     + '<fieldset class="cx-f"><legend>' + esc(L.calcAmount) + '</legend><div class="cx-chips">' + c.presets.map(function (v) { return chip('m', v, money(v, c), v === s.m); }).join('') + '</div>'
     + '<label class="cx-own"><span class="cx-own-l">' + esc(L.calcCustom) + '</span><span class="cx-own-in"><input class="cx-num" id="cxNum" type="number" inputmode="decimal" min="0" max="1000000000" step="any" value="' + s.m + '"><span class="cx-cur">' + esc(c.currency) + '</span></span></label></fieldset>';
@@ -81,11 +105,13 @@ function result(s, url) {
   var x = 'https://x.com/intent/post?text=' + encodeURIComponent(shareText(s, url));
   return '<p class="eyebrow">' + esc(L.calcResultEb) + '</p>'
     + '<p class="cx-total" id="cxTotal">' + esc(money(r.total, c)) + '</p>'
+    + (usd(r.total, c) ? '<p class="cx-usd">' + esc(fill(L.calcUsd, { usd: usd(r.total, c) })) + '</p>' : '')
     + '<p class="cx-formula">' + fill(esc(L.calcFormula), { people: '<bdi>' + esc(people(r.n)) + '</bdi>', amount: '<bdi>' + esc(money(s.m, c)) + '</bdi>' }) + '</p>'
     + '<h2 class="cx-cmph">' + esc(L.calcCmpH) + '</h2>'
     + '<ul class="cx-rows">' + r.rows.map(function (row) {
       return '<li><div class="cx-row"><span>' + esc(row.label) + ' <small>(' + esc(row.year) + ')</small></span><b><bdi>' + esc(pct(row.r)) + '</bdi></b></div><span class="cx-bar" aria-hidden="true"><i style="width:' + Math.min(100, row.r * 100).toFixed(1) + '%"></i></span></li>';
     }).join('') + '</ul>'
+    + (D.base && PAGE_C !== c.id ? '<p class="cx-cty"><a href="' + D.base + c.id + '/">' + esc(fill(L.calcCtyLink, { country: c.name[LANG] })) + '</a></p>' : '')
     + '<div class="qz-acts cx-acts"><a class="btn solid qz-x" id="cxX" href="' + esc(x) + '" target="_blank" rel="noopener">' + esc(L.calcShareX) + '</a>'
     + '<button class="btn line cx-copy" type="button" id="cxCopy" data-url="' + esc(shareUrl(s, url)) + '">' + esc(L.copyLink) + '</button></div>'
     + '<p class="cx-copied" id="cxCopied" role="status" aria-live="polite"></p>';
@@ -96,6 +122,7 @@ function result(s, url) {
 const BOOT = String.raw`
 (function(){
   var form = document.getElementById('cx'), ctl = document.getElementById('cxCtl'), res = document.getElementById('cxRes'), url = form.getAttribute('data-url');
+  PAGE_C = form.getAttribute('data-c') || null;
   var q = {}; location.search.replace(/^\?/, '').split('&').forEach(function (kv) { var p = kv.split('='); if (p[0]) q[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || ''); });
   var s = parse(q);
   function draw(all) {
@@ -106,7 +133,15 @@ const BOOT = String.raw`
   if (location.search) draw(true);
   form.addEventListener('change', function (e) {
     var t = e.target;
-    if (t.name === 'c') { var c = country(t.value); s = { c: c.id, w: s.w, m: c.def }; draw(true); var r = ctl.querySelector('input[name=c]:checked'); if (r) r.focus(); }
+    if (t.name === 'c') {
+      var c = country(t.value);
+      if (!c) return;
+      // 国のページでは、その国のページへ移る（配る相手はそのまま）
+      if (PAGE_C) { if (c.id !== PAGE_C) location.href = D.base + c.id + '/' + (s.w === 'all' ? '' : '?w=' + s.w); return; }
+      var sel = t.tagName === 'SELECT';
+      s = { c: c.id, w: s.w, m: c.def }; draw(true);
+      var r = sel ? ctl.querySelector('select[name=c]') : ctl.querySelector('input[name=c]:checked'); if (r) r.focus();
+    }
     else if (t.name === 'w') { s.w = t.value; draw(false); }
     else if (t.name === 'm') { s.m = +t.value; document.getElementById('cxNum').value = s.m; draw(false); }
   });
@@ -132,8 +167,8 @@ const BOOT = String.raw`
 
 const LOCALE = { en: 'en', ja: 'ja', zh: 'zh-Hans', hi: 'hi-u-nu-latn', es: 'es', de: 'de', ar: 'ar-u-nu-latn' };
 // build.js 用: その言語の最初の状態の HTML
-function initial(lang, CALC, L, url) {
-  const ctx = vm.createContext({ D: CALC, L, LANG: lang, LOC: LOCALE[lang] });
+function initial(lang, CALC, L, url, pageC = null) {
+  const ctx = vm.createContext({ D: CALC, L, LANG: lang, LOC: LOCALE[lang], PAGE_C: pageC });
   vm.runInContext(CLIENT, ctx);
   const s = vm.runInContext('parse({})', ctx);
   ctx.__s = s; ctx.__u = url;
@@ -160,4 +195,18 @@ function cards(lang, CALC, L, url) {
   }
   return out;
 }
-module.exports = { CLIENT, BOOT, LOCALE, initial, cards, cardId, weighted };
+// build.js 用: 言語ごとに1つの vm で、国のページの HTML と文の数字を作る（initial と同じコード）
+function context(lang, CALC, L) {
+  const ctx = vm.createContext({ D: CALC, L, LANG: lang, LOC: LOCALE[lang], PAGE_C: null });
+  vm.runInContext(CLIENT, ctx);
+  const call = (fn, ...args) => { ctx.__a = args; return vm.runInContext(`${fn}.apply(null, __a)`, ctx); };
+  return {
+    page(id, url) { ctx.PAGE_C = id; const s = call('parse', {}); const out = { s, controls: call('controls', s), result: call('result', s, url) }; ctx.PAGE_C = null; return out; },
+    total: (id, w, m) => { ctx.PAGE_C = null; return call('compute', { c: id, w, m }).total; },
+    money: (n, id) => call('money', n, call('country', id)),
+    usd: (n, id) => call('usd', n, call('country', id)),
+    num: n => call('num', n),
+    pct: r => call('pct', r),
+  };
+}
+module.exports = { CLIENT, BOOT, LOCALE, initial, context, cards, cardId, weighted };

@@ -5,8 +5,15 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/zh/</link>
     <description>收录只要存在就能领钱的全民基本收入（UBI）型应用与项目（如 Ğ1、Circles、Gradido、Idena），并注明风险、认证方式和能否兑现。部分为推荐链接。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/zh/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>基本收入计算器扩展到211个国家和地区，每个都有自己的页面，并新增一览表：向所有人发放世界银行“每天3.00美元”的贫困线相当于GDP的多少（世界银行数据，也以 countries.json 公开）</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/calc/countries/</link>
+      <guid isPermaLink="false">news-2026-11-09-fdcfce26aec9</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>基本收入计算器扩展到211个国家和地区，每个都有自己的页面，并新增一览表：向所有人发放世界银行“每天3.00美元”的贫困线相当于GDP的多少（世界银行数据，也以 countries.json 公开）</description>
+    </item>
     <item>
       <title>发布随笔《生成式 AI 在抢走创意工作吗？艺术家的收入与基本收入（下篇）》</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/zh/essays/generative-ai-creative-work-basic-income/</link>

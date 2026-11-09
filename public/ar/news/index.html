@@ -884,6 +884,35 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .cx-src dd{margin:0}
 .cx-src dd+dd{margin-top:6px}
 .cx-src a{display:inline-block;padding-block:12px;margin-block:-12px;color:var(--accent);overflow-wrap:anywhere}
+.cx-sel{display:block;width:100%;max-width:24rem;min-height:44px;margin-top:12px;font:inherit;font-size:.95rem;font-weight:700;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink)}
+.cx-sel.on{border-color:var(--gold);color:var(--gold)}
+.cx-sel:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.cx-usd{margin:-4px 0 0;color:var(--muted);font-weight:700;font-size:.95rem}
+.cx-cty,.cx-idx{margin:0;font-size:.92rem}
+.cx-idx{margin-top:12px}
+.cx-cty a,.cx-idx a{display:inline-block;padding-block:10px;margin-block:-10px;color:var(--accent);font-weight:700}
+.cx-facts p{font-size:.95rem;line-height:1.9;margin:0 0 10px}
+.cx-near-l{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.cx-near-l a{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border-radius:999px;border:1.5px solid var(--line);font-size:.875rem;font-weight:700;color:var(--ink);text-decoration:none}
+.cx-near-l a:hover{border-color:var(--muted)}
+.cx-wide{max-width:60rem}
+.cx-q{display:block;max-width:24rem;margin-top:16px}
+.cx-q input{width:100%}
+.cx-tw{margin-top:14px;overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.cx-tbl{width:100%;border-collapse:collapse;font-size:.875rem;line-height:1.45}
+.cx-tbl th,.cx-tbl td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top}
+.cx-tbl tbody tr:last-child>*{border-bottom:0}
+.cx-tbl thead th{position:sticky;top:0;background:var(--surface);font-size:.8125rem;color:var(--muted);white-space:nowrap}
+.cx-tbl thead button{font:inherit;font-weight:700;color:inherit;background:none;border:0;padding:6px 0;cursor:pointer;text-align:inherit}
+.cx-tbl thead button::after{content:"";margin-inline-start:4px}
+.cx-tbl th[aria-sort="ascending"] button::after{content:"↑"}
+.cx-tbl th[aria-sort="descending"] button::after{content:"↓"}
+.cx-tbl thead th[aria-sort] button{color:var(--ink)}
+.cx-tbl .num{text-align:end;white-space:nowrap}
+.cx-tbl tbody th{font-weight:700}
+.cx-tbl tbody th a{color:var(--ink)}
+.cx-tbl td b{color:var(--gold)}
+@media (max-width:640px){.cx-reg,.cx-gdp{display:none}.cx-tbl th,.cx-tbl td{padding:8px}.cx-tbl .num{white-space:normal}}
 .guide .contact-ref a{display:inline-block;padding-block:14px;margin-block:-14px}
 </style>
 </head>
