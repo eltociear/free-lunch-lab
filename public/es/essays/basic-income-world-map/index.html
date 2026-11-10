@@ -747,12 +747,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1056,7 +1072,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>El coste es la población × 3,00 dólares al día × 365 días: todo el mundo, de cualquier edad, durante un año. Los 3,00 dólares son la línea internacional de pobreza del Banco Mundial en dólares de paridad de poder adquisitivo (PPA) de 2021, fijada en junio de 2025.<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> La convertimos a moneda local con el factor de conversión PPA del consumo de los hogares del Banco Mundial, para que compre más o menos lo mismo en todas partes.<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> En 34 países y territorios sin un factor utilizable usamos el tipo de cambio de mercado. La población y el PIB son datos del Banco Mundial, con estadísticas nacionales para siete países destacados; el PIB es de 2025 en 186 de los 211.<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup> Las formas de los países son de Natural Earth.<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup></p>
 <p>La recaudación es el ingreso tributario del gobierno central como parte del PIB, del Banco Mundial.<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> Tomamos el último año, y solo si no tiene más de cinco años de antigüedad respecto al año del PIB. Si faltara, usaríamos los ingresos totales,<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> pero en esta edición ningún país lo necesitó. De las 140 cifras, 93 son de 2024, 19 de 2023, 8 de 2022, 9 de 2021 y 10 de 2020. Japón no tiene un dato reciente del Banco Mundial, así que usamos los impuestos y timbres de su presupuesto nacional del año fiscal 2026: 83,7 billones de yenes.<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
 <p>Quedan en gris 71 países y territorios, donde viven 1.610 millones de personas: el Banco Mundial no tiene un dato de recaudación suyo desde 2015, o solo uno de hace más de cinco años. Entre ellos están Nigeria, Pakistán, Indonesia, Egipto, Vietnam, Irán, Catar y Kuwait. Taiwán, Corea del Norte, Eritrea, Sudán del Sur y Yemen no están en los datos. La tabla completa, con las cifras de cada país y un enlace a su página de la calculadora, está en <a href="/es/calc/map/">la página del mapa</a>.<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">Coste como parte de la recaudación</th><th scope="col">Países y territorios</th><th scope="col">Personas que viven allí</th></tr></thead><tbody><tr><th scope="row">Menos del 10 %</th><td>24</td><td>350 millones</td></tr><tr><th scope="row">10–25 %</th><td>35</td><td>1.180 millones</td></tr><tr><th scope="row">25–50 %</th><td>23</td><td>700 millones</td></tr><tr><th scope="row">50–100 %</th><td>18</td><td>1.710 millones</td></tr><tr><th scope="row">Más del 100 %</th><td>40</td><td>2.570 millones</td></tr><tr><th scope="row">Sin datos recientes</th><td>71</td><td>1.610 millones</td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">Coste como parte de la recaudación</th><th scope="col">Países y territorios</th><th scope="col">Personas que viven allí</th></tr></thead><tbody><tr><th scope="row">Menos del 10 %</th><td class="es-num">24</td><td>350 millones</td></tr><tr><th scope="row">10–25 %</th><td class="es-num">35</td><td>1.180 millones</td></tr><tr><th scope="row">25–50 %</th><td class="es-num">23</td><td>700 millones</td></tr><tr><th scope="row">50–100 %</th><td class="es-num">18</td><td>1.710 millones</td></tr><tr><th scope="row">Más del 100 %</th><td class="es-num">40</td><td>2.570 millones</td></tr><tr><th scope="row">Sin datos recientes</th><td class="es-num">71</td><td>1.610 millones</td></tr></tbody></table></div></div>
 <h2 id="s2">Patrones por región e ingreso</h2>
 <p>Europa destaca. De los 48 países de Europa y Asia Central con dato, 41 quedan por debajo del 25 % de la recaudación y 18 por debajo del 10 %. Las cifras más bajas del mundo son las de Luxemburgo (2,6 %), Macao (3,2 %), Dinamarca (4,4 %), Noruega (4,5 %) e Irlanda (4,7 %). En el otro extremo, 25 de los 32 países de África subsahariana con dato necesitarían más que toda su recaudación; solo Mauricio (18 %) y Botsuana (24 %) quedan por debajo del 25 %.</p>
 <p>América Latina está en medio: 10 de sus 19 países con dato están entre el 25 % y el 50 %, entre ellos México (30 %), Brasil (31 %) y Colombia (34 %). En Asia meridional los seis países tienen dato y ninguno baja del 10 %. El más bajo es Maldivas (24 %); India y Nepal (ambos 132 %) y Bangladés (160 %) necesitarían más que toda la recaudación de su gobierno central.</p>

@@ -734,12 +734,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1043,7 +1059,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>الكلفة = عدد السكان × 3.00 دولارات يوميًا × 365 يومًا: الجميع، من كل الأعمار، لمدة عام. والـ3.00 دولارات هي خط الفقر الدولي لدى البنك الدولي بدولارات تعادل القوة الشرائية لعام 2021، وقد حُدد في يونيو 2025.<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> نحوّلها إلى العملة المحلية بمعامل تحويل تعادل القوة الشرائية للاستهلاك الأسري لدى البنك الدولي، كي تشتري تقريبًا الشيء نفسه في كل مكان.<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> وفي 34 دولة وإقليمًا لا يتوفر لها معامل صالح نستخدم سعر الصرف في السوق. السكان والناتج المحلي أرقام البنك الدولي، مع إحصاءات وطنية لسبع دول مختارة؛ والناتج المحلي لعام 2025 في 186 من الـ211.<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup> وأشكال الدول من ⁦Natural Earth⁩.<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup></p>
 <p>الإيرادات هي الإيرادات الضريبية للحكومة المركزية نسبةً إلى الناتج المحلي، من البنك الدولي.<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> نأخذ أحدث سنة، ولا نستخدمها إلا إذا لم تكن أقدم من سنة الناتج المحلي بأكثر من خمس سنوات. وإن غابت الإيرادات الضريبية نستخدم إجمالي الإيرادات،<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> لكن لم تحتج أي دولة إلى ذلك في هذه النسخة. من الأرقام الـ140، هناك 93 لعام 2024 و19 لعام 2023 و8 لعام 2022 و9 لعام 2021 و10 لعام 2020. وليس لدى البنك الدولي رقم حديث لليابان، فاستخدمنا إيرادات الضرائب والطوابع في ميزانيتها الوطنية للسنة المالية 2026: 83.7 تريليون ين.<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
 <p>تبقى 71 دولة وإقليمًا باللون الرمادي، يعيش فيها 1.61 مليار شخص: ليس لدى البنك الدولي رقم لإيراداتها الضريبية منذ 2015، أو لديه رقم أقدم من خمس سنوات فقط. منها نيجيريا وباكستان وإندونيسيا ومصر وفيتنام وإيران وقطر والكويت. أما تايوان وكوريا الشمالية وإريتريا وجنوب السودان واليمن فليست في البيانات أصلًا. الجدول الكامل، بأرقام كل دولة ورابط إلى صفحتها في الحاسبة، موجود في <a href="/ar/calc/map/">صفحة الخريطة</a>.<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">الكلفة نسبةً إلى الإيرادات الضريبية</th><th scope="col">الدول والأقاليم</th><th scope="col">عدد السكان</th></tr></thead><tbody><tr><th scope="row">أقل من 10%</th><td>24</td><td>0.35 مليار</td></tr><tr><th scope="row">10–25%</th><td>35</td><td>1.18 مليار</td></tr><tr><th scope="row">25–50%</th><td>23</td><td>0.70 مليار</td></tr><tr><th scope="row">50–100%</th><td>18</td><td>1.71 مليار</td></tr><tr><th scope="row">أكثر من 100%</th><td>40</td><td>2.57 مليار</td></tr><tr><th scope="row">لا بيانات حديثة</th><td>71</td><td>1.61 مليار</td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">الكلفة نسبةً إلى الإيرادات الضريبية</th><th scope="col">الدول والأقاليم</th><th scope="col">عدد السكان</th></tr></thead><tbody><tr><th scope="row">أقل من 10%</th><td class="es-num">⁦24⁩</td><td>0.35 مليار</td></tr><tr><th scope="row">10–25%</th><td class="es-num">⁦35⁩</td><td>1.18 مليار</td></tr><tr><th scope="row">25–50%</th><td class="es-num">⁦23⁩</td><td>0.70 مليار</td></tr><tr><th scope="row">50–100%</th><td class="es-num">⁦18⁩</td><td>1.71 مليار</td></tr><tr><th scope="row">أكثر من 100%</th><td class="es-num">⁦40⁩</td><td>2.57 مليار</td></tr><tr><th scope="row">لا بيانات حديثة</th><td class="es-num">⁦71⁩</td><td>1.61 مليار</td></tr></tbody></table></div></div>
 <h2 id="s2">أنماط حسب المنطقة والدخل</h2>
 <p>أوروبا لافتة. من بين 48 دولة في أوروبا وآسيا الوسطى لها رقم، تقع 41 تحت 25% من الإيرادات الضريبية و18 تحت 10%. وأدنى النسب في العالم في لوكسمبورغ (2.6%) وماكاو (3.2%) والدنمارك (4.4%) والنرويج (4.5%) وأيرلندا (4.7%). وفي الطرف الآخر، تحتاج 25 من 32 دولة في أفريقيا جنوب الصحراء لها رقم إلى أكثر من كل إيراداتها الضريبية؛ ولا تقع تحت 25% إلا موريشيوس (18%) وبوتسوانا (24%).</p>
 <p>أمريكا اللاتينية في الوسط: 10 من دولها الـ19 التي لها رقم تقع بين 25% و50%، منها المكسيك (30%) والبرازيل (31%) وكولومبيا (34%). وفي جنوب آسيا للدول الست كلها أرقام، ولا تقع أي منها تحت 10%. أدناها جزر المالديف (24%)؛ أما الهند ونيبال (132% لكل منهما) وبنغلاديش (160%) فتحتاج إلى أكثر من كل الإيرادات الضريبية لحكومتها المركزية.</p>

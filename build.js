@@ -72,7 +72,7 @@ const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
 // エッセイ本文の {文字|/path/} はサイト内リンク（言語の接頭辞は自動で付く）。/essays/{id}/ への参照と related は実在を確かめる
 const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
 const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated', 'essayRelatedH', 'essayToc', 'essayRead', 'essayBack'];
-for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack']) if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
+for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack', 'essayTableHint', 'backHome']) if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 // related（エッセイ）と essays（サービス・年表）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
 const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
@@ -1035,12 +1035,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1549,7 +1565,7 @@ function orgsPage(lang) {
 <nav class="org-toc" aria-label="${esc(L.navLabel)}">${ORG_GROUPS.map(g => `<a href="#g-${g.id}">${esc(g.name[lang])}</a>`).join('')}</nav></header>
 ${groups}
 <p class="tl-more"><a href="${tlPath(lang)}">${esc(L.tlLink)} →</a></p>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   return shell(lang, { title, desc: L.orgsDesc, hrefFor: orgAbs, pathFor: orgPath, ld, ogType: 'website', body });
 }
@@ -1584,12 +1600,13 @@ function essayPage(e, lang) {
   const rtl = RTL.has(lang);
   const fn = t => esc(t).replace(ESSAY_LINK, (_, txt, href) => `<a href="${urlPath(lang)}${href.slice(1)}">${txt}</a>`).replace(/\[(\d+)\]/g, (_, n) => `<sup class="fnref"><a href="#fn-${n}" id="ref-${n}">${n}</a></sup>`);
   // 「意見」の札は、見出しごとの最初の意見の段落にだけ付ける（毎段落だとうるさいので）
-  let tagged = false;
+  let tagged = false, wideTables = false;
   const toc = [];
   const blocks = (e.blocks[lang] || e.blocks.en).map(([k, t]) => {
     if (k === 'h') { tagged = false; toc.push(t); return `<h2 id="s${toc.length}">${esc(t)}</h2>`; }
-    // t は表: 行は改行、セルは " | " で区切り、1行目が見出し。狭い画面では横にスクロールする
-    if (k === 't') { const [head, ...rows] = t.split('\n').map(r => r.split(' | ')); return `<div class="essay-table es-wide"><table><thead><tr>${head.map(c => `<th scope="col">${fn(c)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => i ? `<td>${fn(c)}</td>` : `<th scope="row">${fn(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`; }
+    // t は表: 行は改行、セルは " | " で区切り、1行目が見出し。2〜3列の表は折り返して画面に収める。
+    // 4列以上は狭い画面で横にスクロールする: 1列目（行の見出し）は固定、端に影、はみ出したときだけ「横にスクロールできます」（ESSAY_TABLE_JS）
+    if (k === 't') { const [head, ...rows] = t.split('\n').map(r => r.split(' | ')); const wide = head.length >= 4; if (wide) wideTables = true; return `<div class="es-tw es-wide${wide ? ' es-tw-x' : ''}">${wide ? `<p class="es-t-hint" aria-hidden="true">${esc(L.essayTableHint)} <span>${rtl ? '←' : '→'}</span></p>` : ''}<div class="essay-table ${wide ? 'es-t-scroll' : 'es-t-fit'}"${wide ? ` tabindex="0" style="--cols:${head.length}"` : ''}><table><thead><tr>${head.map(c => `<th scope="col">${fn(c)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => i ? (essayNum(c) ? `<td class="es-num">${rtl && !/[\u2066-\u2069]/.test(c) ? `\u2066${fn(c)}\u2069` : fn(c)}</td>` : `<td>${fn(c)}</td>`) : `<th scope="row">${fn(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div></div>`; }
     // m は世界地図（/calc/map/ と同じ図と凡例、地図のページへのリンク）
     if (k === 'm') return mapFigure(lang, { link: true }).replace('<figure class="wmap"', '<figure class="wmap es-wide"');
     if (k !== 'o') return `<p>${fn(t)}</p>`;
@@ -1627,12 +1644,17 @@ ${qzCard(lang, 'essay-quiz')}
 ${tocSide}<p class="back es-back"><a class="btn line" href="${essaysPath(lang)}">${rtl ? '→' : '←'} ${esc(L.essayBack)}</a></p>
 </main>`;
   const hasMap = (e.blocks[lang] || e.blocks.en).some(([k]) => k === 'm');
-  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L) + (hasMap ? mapScript(lang) : '') + (tocSide ? ESSAY_TOC_JS : ''), image: ogImage(`essay/${lang}/${e.id}.jpg`), extraHead: hasMap ? MAP_CSS + '\n' : '' });
+  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L) + (hasMap ? mapScript(lang) : '') + (tocSide ? ESSAY_TOC_JS : '') + (wideTables ? ESSAY_TABLE_JS : ''), image: ogImage(`essay/${lang}/${e.id}.jpg`), extraHead: hasMap ? MAP_CSS + '\n' : '' });
 }
 // 目次の印: 画面の上から3割あたりを通り過ぎた最後の h2 の節を「いま読んでいる節」にする（IntersectionObserver がなければ何もしない）
 const ESSAY_TOC_JS = `<script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
 function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
 var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>`;
+// 表の数字だけのセル（1,000〜1,200 や 29.0% など）: 折り返さない。ar では LRI/PDI で囲んで範囲が逆さに並ばないようにする
+const essayNum = c => /\d/.test(c) && /^[\d\s.,–\-~〜%+−$\u2066-\u2069]+$/.test(c);
+// 横に広い表: はみ出しているときだけ es-tw に is-over（ヒントを出す）、少しでも動かしたら is-moved（固定した1列目に影）。JS がなくても端の影は CSS で出る
+const ESSAY_TABLE_JS = `<script>(function(){var ws=[].slice.call(document.querySelectorAll('.es-tw-x'));if(!ws.length)return;function f(){ws.forEach(function(w){var s=w.lastElementChild;w.classList.toggle('is-over',s.scrollWidth>s.clientWidth+1)})}
+ws.forEach(function(w){var s=w.lastElementChild;s.addEventListener('scroll',function(){w.classList.toggle('is-moved',Math.abs(s.scrollLeft)>2)},{passive:true})});f();addEventListener('resize',f);if(document.fonts)document.fonts.ready.then(f)})()</script>`;
 function essaysIndex(lang) {
   const L = T[lang];
   const home = urlPath(lang);
@@ -1642,7 +1664,7 @@ function essaysIndex(lang) {
   const items = ESSAYS.map(e => `<li class="org"><div class="org-head"><a class="org-name essay-link" href="${essayPath(lang, e)}">${esc(e.title[lang] || e.title.en)}</a><span class="org-meta"><time datetime="${e.date}">${esc(longDate(e.date, lang))}</time></span></div><p>${esc(e.desc[lang] || e.desc.en)}</p></li>`).join('');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.essaysTitle)}</li></ol></nav>
 <main class="orgs"><header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(L.essaysTitle)}</h1></header><ul class="org-list">${items}</ul>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p></main>`;
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p></main>`;
   return shell(lang, { title: `${L.essaysTitle} | ${L.title}`, desc: clip(T[lang].essaysDesc, lang), hrefFor: essaysAbs, pathFor: essaysPath, ld, ogType: 'website', body });
 }
 
@@ -1722,7 +1744,7 @@ ${qs}
 <button class="qz-back" type="button" id="qzBack" hidden>${RTL.has(lang) ? '→' : '←'} ${esc(L.shindanBack)}</button>
 </form>
 <section class="g-sec"><h2>${esc(L.shindanAll)}</h2>${qzChips(lang)}</section>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   const script = `<script>
 (function(){
@@ -1813,7 +1835,7 @@ ${embedSection(lang, null)}
 <div><dt>${esc(L.calcSrcGdp)}</dt>${srcItem('wbGdp')}${other(calcSrcA('https://data.worldbank.org/indicator/NY.GDP.MKTP.CN', cfill(L.calcSrcWbGdp, { year: CALC_SOURCES.wbGdpAll.year })))}</div>
 <div><dt>${esc(L.calcSrcLine)}</dt>${other(calcSrcA(calcWorld.wbLinks({ id: 'br' }).line, L.calcSrcWbLine))}<dd>${esc(cfill(L.calcSrcWbNote, { date: calcDate(lang) }))}</dd></div>
 </dl></section>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   // 検索結果用の title・description（任意。zh だけ、Search Console の検索語に合わせて別に持つ。見出しと OG 画像は calcH1・calcDesc のまま）
   return shell(lang, { title: `${L.calcMetaTitle || L.calcH1} | ${L.title}`, desc: clip(L.calcMetaDesc || L.calcDesc, lang), hrefFor: calcAbs, pathFor: calcPath, ld, ogType: 'website', body, script: calcScript(lang) + embedCopyScript(L), image: ogImage(`calc/${lang}/index.jpg`) });
@@ -2133,7 +2155,7 @@ ${filter}
 ${shareRow(lang, L.tlTitle, shareUrlOf(tlAbs(lang)))}</header>
 <ol class="tl" id="tlList">${items}</ol>
 <p class="tl-more"><a href="${usPath(lang)}">${esc(L.usLink)}</a> · <a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${ossPath(lang)}">${esc(L.ossTitle)}</a> · <a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a></p>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   // 地域の絞り込み（JS がなければ全部見える）。#tl-… で隠れた項目を開いたときは全部に戻す
   const script = `${shareScript(L)}
@@ -2250,7 +2272,7 @@ function biNewsPage(lang) {
 ${BI_NEWS.length > 1 ? `<nav class="org-toc" aria-label="${esc(L.navLabel)}">${toc}</nav>` : ''}</header>
 ${weeks}
 <p class="tl-more"><a href="${tlPath(lang)}">${esc(L.tlTitle)}</a> · <a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a> · <a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a></p>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   const extraHead = `<link rel="alternate" type="application/rss+xml" title="${esc(L.biNewsTitle)} RSS" href="${biNewsFeedAbs(lang)}">\n`;
   return shell(lang, { title, desc: clip(L.biNewsDesc, lang), hrefFor: biNewsAbs, pathFor: biNewsPath, ld: [ld, datasetLd('news.json', biNewsAbs(lang))], ogType: 'website', body, extraHead, script: shareScript(L), image: ogImage(`news/${lang}/index.jpg`) });
@@ -2273,7 +2295,7 @@ function verifyIndexPage(lang) {
 <header class="orgs-head"><p class="eyebrow">${esc(L.ebVerify)}</p><h1>${esc(L.verifyIdxH1)}</h1><p class="orgs-intro">${esc(L.verifyIdxIntro)}</p></header>
 <ul class="vidx">${cards}</ul>
 <div class="warn svc-warn vidx-note" role="note"><p class="warn-h">${esc(L.verifyIdxNoteH)}</p><p>${esc(L.verifyIdxNote)}</p></div>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   return shell(lang, { title: `${L.verifyIdxH1} | ${L.title}`, desc: clip(L.verifyIdxIntro, lang), hrefFor: verifyIdxAbs, pathFor: verifyIdxPath, ld, ogType: 'website', body });
 }
@@ -2329,7 +2351,7 @@ function graveyardPage(lang) {
 <main class="orgs">
 <header class="orgs-head"><p class="eyebrow" dir="ltr">R.I.P.</p><h1>${esc(L.graveTitle)}</h1><p class="orgs-intro">${esc(L.graveIntro)}</p><p class="oss-note"><a href="${SITE_URL}/graveyard.json" dir="ltr">graveyard.json</a> · <span dir="ltr">CC BY 4.0</span></p></header>
 <ul class="graves">${rows}</ul>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   return shell(lang, { title, desc: L.graveDesc, hrefFor: graveAbs, pathFor: gravePath, ld: [ld, datasetLd('graveyard.json', graveAbs(lang))], ogType: 'website', body });
 }
@@ -2395,7 +2417,7 @@ ${ossFetchedOn ? `<p class="oss-note">${esc(L.ossFetched).replace('{date}', `<ti
 ${groups}
 ${dataSec}
 <p class="tl-more"><a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a> · <a href="${gravePath(lang)}">${esc(L.graveTitle)}</a> · <a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a></p>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   return shell(lang, { title, desc: L.ossDesc, hrefFor: ossAbs, pathFor: ossPath, ld: [ld, ...(ossFetchedOn ? [datasetLd('open-source.json', ossAbs(lang))] : []), ...(OPEN_DATA.length ? [datasetLd('open-data.json', ossAbs(lang) + '#data')] : [])], ogType: 'website', body });
 }
@@ -2432,7 +2454,7 @@ ${snip('HTML', badgeHtml(url))}</li>`;
 ${sec('b-svc', L.badgeSvcH, svcItems)}
 ${sec('b-oss', L.badgeOssH, ossItems)}
 ${sec('b-org', L.badgeOrgH, orgItems)}
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   // コピーボタンは JS が動くときだけ出す（動かなくてもコードは選んでコピーできる）
   const script = `<script>

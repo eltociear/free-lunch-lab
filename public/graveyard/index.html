@@ -710,12 +710,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1020,7 +1036,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <dl><dt>What it was</dt><dd>The reward token of the cashback app RewardMe</dd><dt>Ended</dt><dd><time datetime="2025-07">Retired in July 2025 (balances were automatically converted 1:1 into Reward Dollars)</time></dd><dt>Why</dt><dd>The official help page gives no reason</dd><dt>Source</dt><dd><a href="https://help.reward.me/en/articles/4901904-sunsetting-me-token-jul-2025" target="_blank" rel="noopener" dir="auto">RewardMe Help</a></dd></dl><a class="org-svc" href="/services/rewardme/">Our page on this service: RewardMe</a></div></li>
 <li class="grave" id="grave-rewardme-ph"><svg class="tomb" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 30V13a8 8 0 0 1 16 0v17zm2-2h12V13a6 6 0 0 0-12 0zm5-15h2v3h3v2h-3v6h-2v-6h-3v-2h3zM4 30h24v2H4z"/></svg><div class="grave-body"><h2 dir="auto">RewardMe (Philippines)</h2>
 <dl><dt>What it was</dt><dd>The cashback app RewardMe’s service in the Philippines</dd><dt>Ended</dt><dd><time datetime="2025-12-31">Cashback ended on 10 Dec 2025, and MDT withdrawals and conversions on 31 Dec 2025 (gift-card redemption only after that)</time></dd><dt>Why</dt><dd>The official notice gives no reason</dd><dt>Source</dt><dd><a href="https://help.reward.me/en/articles/12780396-winding-down-operations-in-the-philippines" target="_blank" rel="noopener" dir="auto">RewardMe Help</a></dd></dl><a class="org-svc" href="/services/rewardme/">Our page on this service: RewardMe</a></div></li></ul>
-<p class="back"><a class="btn line" href="/#list">← Back to the list</a></p>
+<p class="back"><a class="btn line" href="/">← Back to home</a></p>
 </main>
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>Information as of October 2026. This is not investment advice.</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: Open data on GitHub"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Open data on GitHub</span></a><a class="xlink" href="/feed.xml" aria-label="RSS feed"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/essays/">Essays</a><a href="/news/">Basic income news</a><a href="/shindan/">Free Lunch Quiz</a><a href="/calc/">Basic income cost calculator</a><a href="/calc/countries/">Cost in 211 countries</a><a href="/badge/">Badge</a><span class="dot">Free Lunch Lab</span></div></footer>

@@ -698,12 +698,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1038,7 +1054,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>किताब का “सरकारी सहायता का ख़र्च हटाना” स्थिति (B) है; इंटरव्यू का “सहायता पूरक के रूप में रह सकती है” स्थिति (A)। इस परिवार के लिए सब कुछ इसी पर टिका है कि कौन-सी स्थिति है।</p>
 <p>5. दो बच्चों वाला दंपति, सालाना आय 1 करोड़ येन। अभी बाल भत्ता 20,000 येन महीना है। चार लोगों की बेसिक इनकम 2,80,000 येन महीना है, और यहीं “ज़्यादा कमाने वाले बाद में लौटाएँगे” वाली बात आती है। अगर रख सकें: बाल भत्ता जाने के बाद भी 2,60,000 येन महीना ज़्यादा। अगर सब लौटाना पड़े: बेसिक इनकम में से कुछ नहीं बचता, और बाल भत्ता जाने से 20,000 येन महीना का नुक़सान। 1 करोड़ येन वाला परिवार शायद लौटाने वालों में होगा, और योजना के लिए टैक्स बढ़ोतरी भी इसी वर्ग पर भारी पड़ेगी। व्यावहारिक रूप से लगभग शून्य से नुक़सान के बीच मानिए।</p>
 <p>सार (मासिक, किसी टैक्स बढ़ोतरी से पहले):</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">परिवार</th><th scope="col">अभी के भत्ते</th><th scope="col">बेसिक इनकम</th><th scope="col">शुद्ध बदलाव</th></tr></thead><tbody><tr><th scope="row">अकेला, 20–30 साल, 30 लाख येन सालाना</th><td>कोई नहीं</td><td>70,000 येन</td><td>+70,000 येन (टैक्स बढ़ोतरी घटाकर)</td></tr><tr><th scope="row">चार लोगों का परिवार, 50 लाख येन सालाना</th><td>बाल भत्ता 20,000 येन</td><td>2,00,000–2,80,000 येन</td><td>+1,80,000 से +2,60,000 येन</td></tr><tr><th scope="row">रिटायर दंपति (पूर्व कर्मचारी)</th><td>पेंशन 2,37,279 येन</td><td>1,40,000 येन</td><td>+1,40,000 से −97,279 येन (पेंशन पर निर्भर)</td></tr><tr><th scope="row">सरकारी सहायता पर अकेला व्यक्ति (टोक्यो 23 वार्ड)</th><td>अधिकतम 1,30,920 येन</td><td>70,000 येन</td><td>±0 से −60,920 येन (सहायता रहे या नहीं)</td></tr><tr><th scope="row">चार लोगों का परिवार, 1 करोड़ येन सालाना</th><td>बाल भत्ता 20,000 येन</td><td>2,80,000 येन</td><td>+2,60,000 से −20,000 येन (वसूली पर निर्भर)</td></tr></tbody></table></div>
+<div class="es-tw es-wide es-tw-x"><p class="es-t-hint" aria-hidden="true">और देखने के लिए बगल में स्क्रॉल करें <span>→</span></p><div class="essay-table es-t-scroll" tabindex="0" style="--cols:4"><table><thead><tr><th scope="col">परिवार</th><th scope="col">अभी के भत्ते</th><th scope="col">बेसिक इनकम</th><th scope="col">शुद्ध बदलाव</th></tr></thead><tbody><tr><th scope="row">अकेला, 20–30 साल, 30 लाख येन सालाना</th><td>कोई नहीं</td><td>70,000 येन</td><td>+70,000 येन (टैक्स बढ़ोतरी घटाकर)</td></tr><tr><th scope="row">चार लोगों का परिवार, 50 लाख येन सालाना</th><td>बाल भत्ता 20,000 येन</td><td>2,00,000–2,80,000 येन</td><td>+1,80,000 से +2,60,000 येन</td></tr><tr><th scope="row">रिटायर दंपति (पूर्व कर्मचारी)</th><td>पेंशन 2,37,279 येन</td><td>1,40,000 येन</td><td>+1,40,000 से −97,279 येन (पेंशन पर निर्भर)</td></tr><tr><th scope="row">सरकारी सहायता पर अकेला व्यक्ति (टोक्यो 23 वार्ड)</th><td>अधिकतम 1,30,920 येन</td><td>70,000 येन</td><td>±0 से −60,920 येन (सहायता रहे या नहीं)</td></tr><tr><th scope="row">चार लोगों का परिवार, 1 करोड़ येन सालाना</th><td>बाल भत्ता 20,000 येन</td><td>2,80,000 येन</td><td>+2,60,000 से −20,000 येन (वसूली पर निर्भर)</td></tr></tbody></table></div></div>
 <p>फ़ायदे में रहने की संभावना बच्चों वाले और अभी कम भत्ते पाने वाले परिवारों की है। नुक़सान उन्हें हो सकता है जो पेंशन या सरकारी सहायता पर निर्भर हैं, और उन ज़्यादा कमाने वाले परिवारों को जो पैसा लौटाएँगे या टैक्स बढ़ोतरी का बोझ उठाएँगे।</p>
 <p class="op"><span class="op-tag">राय</span>“70,000 येन में कोई नहीं जी सकता” वाली शिकायत ज़्यादातर उन स्थितियों की है जिनमें पेंशन या सरकारी सहायता ख़त्म हो जाती है। ताकेनाका का जवाब कि उन्होंने “कभी नहीं कहा कि इसमें जिया जा सकता है”, यह मानकर चलता लगता है कि कुछ दूसरे भत्ते बने रहेंगे। मान्यताएँ एक जैसी कर दें, तो दोनों दावों को आँकड़ों से परखा जा सकता है।</p>
 <h2 id="s6">देश पर कितना ख़र्च?</h2>
@@ -1079,6 +1095,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 })();
 </script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
 function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
-var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script><script>(function(){var ws=[].slice.call(document.querySelectorAll('.es-tw-x'));if(!ws.length)return;function f(){ws.forEach(function(w){var s=w.lastElementChild;w.classList.toggle('is-over',s.scrollWidth>s.clientWidth+1)})}
+ws.forEach(function(w){var s=w.lastElementChild;s.addEventListener('scroll',function(){w.classList.toggle('is-moved',Math.abs(s.scrollLeft)>2)},{passive:true})});f();addEventListener('resize',f);if(document.fonts)document.fonts.ready.then(f)})()</script>
 </body>
 </html>

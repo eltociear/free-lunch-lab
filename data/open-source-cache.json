@@ -157,7 +157,7 @@
     },
     "github.com:PolicyEngine/policyengine-us": {
       "stars": 171,
-      "lastCommit": "2026-11-09",
+      "lastCommit": "2026-11-10",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
@@ -297,7 +297,7 @@
     },
     "github.com:okTurtles/group-income": {
       "stars": 350,
-      "lastCommit": "2026-11-06",
+      "lastCommit": "2026-11-10",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "JavaScript"

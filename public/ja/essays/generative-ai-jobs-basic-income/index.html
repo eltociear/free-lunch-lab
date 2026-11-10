@@ -816,12 +816,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1137,7 +1153,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>影響がはっきり表れているもう一つの場所が、仕事が案件ごとに売り買いされる市場です。シアン・フイ、オレン・レシェフ、ルオフェン・ジョウは、フリーランスの仕事の仲介サイトUpworkを調べました。ChatGPTの公開後、文章関連のフリーランスは月あたりの受注が2%、月の収入が5.2%減りました。画像生成AIのDALL-E 2とMidjourneyのあとには、画像関連のフリーランスの受注が3.7%、収入が9.4%減っています。<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></p>
 <p>フリーランスには、雇い続けてくれる会社も、解雇予告の期間もなく、多くの国では失業保険もほとんどありません。発注する側がツールに切り替えれば、収入はそのまま止まります。クリエイターの仕事は、後編でくわしく見ていきます。</p>
 <p>おもな研究を並べると、次のようになります。</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">研究</th><th scope="col">データ</th><th scope="col">わかったこと</th></tr></thead><tbody><tr><th scope="row">イェール大学バジェット・ラボ</th><td>米国の労働力調査（2026年8月まで）</td><td>雇用・失業にAIのはっきりした跡はない<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></td></tr><tr><th scope="row">フムルムとベスタゴー</th><td>デンマークの行政記録</td><td>収入・労働時間への2%を超える影響を否定<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></td></tr><tr><th scope="row">ブリニョルフソンら（スタンフォード大学）</th><td>ADPの給与データ（2026年6月まで）</td><td>影響を最も受けやすい職業の22〜25歳が約19%少ない（改訂後の数字）<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></td></tr><tr><th scope="row">ロンドン大学キングス・カレッジ</th><td>英国の求人とプロフィール</td><td>影響の大きい企業で若手のポストが5.8%減<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></td></tr><tr><th scope="row">米国勢調査局</th><td>米国の行政記録</td><td>影響の大きい産業でキャリア初期の雇用が12%減、影響の大きい専攻の初任給が13%減<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup></td></tr><tr><th scope="row">Anthropic</th><td>米国の労働力調査</td><td>失業の組織的な増加はない、若者の就職率は約14%低い<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup></td></tr><tr><th scope="row">フイ、レシェフ、ジョウ</th><td>Upwork</td><td>文章：受注2%減・収入5.2%減、画像：3.7%減・9.4%減<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">研究</th><th scope="col">データ</th><th scope="col">わかったこと</th></tr></thead><tbody><tr><th scope="row">イェール大学バジェット・ラボ</th><td>米国の労働力調査（2026年8月まで）</td><td>雇用・失業にAIのはっきりした跡はない<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></td></tr><tr><th scope="row">フムルムとベスタゴー</th><td>デンマークの行政記録</td><td>収入・労働時間への2%を超える影響を否定<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></td></tr><tr><th scope="row">ブリニョルフソンら（スタンフォード大学）</th><td>ADPの給与データ（2026年6月まで）</td><td>影響を最も受けやすい職業の22〜25歳が約19%少ない（改訂後の数字）<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></td></tr><tr><th scope="row">ロンドン大学キングス・カレッジ</th><td>英国の求人とプロフィール</td><td>影響の大きい企業で若手のポストが5.8%減<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></td></tr><tr><th scope="row">米国勢調査局</th><td>米国の行政記録</td><td>影響の大きい産業でキャリア初期の雇用が12%減、影響の大きい専攻の初任給が13%減<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup></td></tr><tr><th scope="row">Anthropic</th><td>米国の労働力調査</td><td>失業の組織的な増加はない、若者の就職率は約14%低い<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup></td></tr><tr><th scope="row">フイ、レシェフ、ジョウ</th><td>Upwork</td><td>文章：受注2%減・収入5.2%減、画像：3.7%減・9.4%減<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></td></tr></tbody></table></div></div>
 <h2 id="s5">企業が「AIのせい」と言うとき</h2>
 <p>AIがあるから人が少なくて済むと、はっきり言う企業もあります。2026年2月、ジャック・ドーシーが率いる決済会社Blockは、1万人余りの社員のうち4,000人超を削減しました。株主への手紙には「インテリジェンスのツールは、会社をつくり、動かすことの意味を変えた」「私たちがつくっているツールを使えば、ずっと少人数のチームのほうが、より多くのことを、よりうまくできる」とあります。Blockの第4四半期の粗利益は前年より24%増えていました。苦しいから減らしたのではなく、好調なのに減らしたのです。<sup class="fnref"><a href="#fn-12" id="ref-12">12</a></sup> セールスフォースのマーク・ベニオフCEOは2025年9月、サポート部門の人員を「9,000人から約5,000人に減らした。そんなに人がいらないからだ」と話し、顧客とのやりとりの半分はAIエージェントが担っていると述べました。<sup class="fnref"><a href="#fn-13" id="ref-13">13</a></sup></p>
 <p>ただ、企業への調査を見ると、こうした例はまだ珍しいことがわかります。ニューヨーク連邦準備銀行の2026年の地域企業調査では、サービス業の61%が過去半年にAIを使っていましたが、AIを理由に人員を削減したのは4%でした。AIのために採用を減らしたのは約15%、逆に増やしたのは約13%です。<sup class="fnref"><a href="#fn-14" id="ref-14">14</a></sup></p>

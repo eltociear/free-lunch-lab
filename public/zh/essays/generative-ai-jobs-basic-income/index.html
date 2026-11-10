@@ -821,12 +821,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1142,7 +1158,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>影响明显显现的另一个地方，是按任务购买工作的市场。Xiang Hui、Oren Reshef 和 Luofeng Zhou 研究了自由职业平台 Upwork。ChatGPT 发布后，写作相关自由职业者的每月工作数下降 2%，每月收入下降 5.2%。图像生成工具 DALL-E 2 和 Midjourney 出现后，图像相关自由职业者的工作减少 3.7%，收入减少 9.4%。<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></p>
 <p>自由职业者没有会留用他们的雇主，没有预告期，在许多国家也几乎或完全没有失业保险。客户一旦改用工具，收入就直接停了。下篇将更仔细地讨论创意工作。</p>
 <p>主要研究对照如下：</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">研究</th><th scope="col">数据</th><th scope="col">发现</th></tr></thead><tbody><tr><th scope="row">耶鲁大学预算实验室</th><td>美国劳动力调查，截至 2026 年 8 月</td><td>就业和失业中没有明显的 AI 痕迹<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></td></tr><tr><th scope="row">Humlum 与 Vestergaard</th><td>丹麦行政记录</td><td>排除了对收入和工时超过 2% 的影响<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></td></tr><tr><th scope="row">布林约尔松、Chandar 与 Chen（斯坦福）</th><td>ADP 薪资数据，截至 2026 年 6 月</td><td>暴露度最高工作中的 22–25 岁人群：比趋势低约 19%（修订数字）<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></td></tr><tr><th scope="row">伦敦国王学院</th><td>英国招聘信息与个人档案</td><td>高暴露度企业：初级职位 −5.8%<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></td></tr><tr><th scope="row">美国人口普查局</th><td>美国行政记录</td><td>暴露度最高行业的早期职业就业 −12%；暴露度最高专业的起薪 −13%<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup></td></tr><tr><th scope="row">Anthropic</th><td>美国劳动力调查</td><td>失业率无系统性上升；年轻人找到工作的比率约 −14%<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup></td></tr><tr><th scope="row">Hui、Reshef 与 Zhou</th><td>Upwork</td><td>写作：工作 −2%，收入 −5.2%；图像：−3.7%，−9.4%<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">研究</th><th scope="col">数据</th><th scope="col">发现</th></tr></thead><tbody><tr><th scope="row">耶鲁大学预算实验室</th><td>美国劳动力调查，截至 2026 年 8 月</td><td>就业和失业中没有明显的 AI 痕迹<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></td></tr><tr><th scope="row">Humlum 与 Vestergaard</th><td>丹麦行政记录</td><td>排除了对收入和工时超过 2% 的影响<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></td></tr><tr><th scope="row">布林约尔松、Chandar 与 Chen（斯坦福）</th><td>ADP 薪资数据，截至 2026 年 6 月</td><td>暴露度最高工作中的 22–25 岁人群：比趋势低约 19%（修订数字）<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></td></tr><tr><th scope="row">伦敦国王学院</th><td>英国招聘信息与个人档案</td><td>高暴露度企业：初级职位 −5.8%<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></td></tr><tr><th scope="row">美国人口普查局</th><td>美国行政记录</td><td>暴露度最高行业的早期职业就业 −12%；暴露度最高专业的起薪 −13%<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup></td></tr><tr><th scope="row">Anthropic</th><td>美国劳动力调查</td><td>失业率无系统性上升；年轻人找到工作的比率约 −14%<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup></td></tr><tr><th scope="row">Hui、Reshef 与 Zhou</th><td>Upwork</td><td>写作：工作 −2%，收入 −5.2%；图像：−3.7%，−9.4%<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></td></tr></tbody></table></div></div>
 <h2 id="s5">当企业说 AI 是理由时</h2>
 <p>一些企业直言 AI 是它们需要更少人手的原因。2026 年 2 月，杰克·多尔西（Jack Dorsey）领导的支付公司 Block，在 10,000 多名员工中裁掉了 4,000 多人。致股东信写道：“智能工具改变了打造和经营一家公司的意义”，以及“一个小得多的团队，使用我们正在打造的工具，能做得更多、做得更好”。Block 第四季度毛利同比增长 24%：这是一家经营良好时裁员的公司，而不是陷入困境的公司。<sup class="fnref"><a href="#fn-12" id="ref-12">12</a></sup> 2025 年 9 月，Salesforce 首席执行官马克·贝尼奥夫（Marc Benioff）说，他把客服人员“从 9,000 人减到大约 5,000 人，因为我需要的人更少了”，如今一半的客户对话由 AI 智能体处理。<sup class="fnref"><a href="#fn-13" id="ref-13">13</a></sup></p>
 <p>对企业的调查显示，这些案例仍然多么少见。在纽约联储 2026 年的地区企业调查中，61% 的服务业企业在过去六个月使用过 AI，但只有 4% 报告了由 AI 导致的裁员。约 15% 表示因为 AI 少招了人，约 13% 表示多招了人。<sup class="fnref"><a href="#fn-14" id="ref-14">14</a></sup></p>

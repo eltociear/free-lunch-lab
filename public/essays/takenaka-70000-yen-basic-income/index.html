@@ -710,12 +710,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1050,7 +1066,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>The book’s “get rid of the cost of public assistance” is (B); the interview’s “public assistance can remain as a top-up” is (A). For this household, which one it is decides everything.</p>
 <p>5. A couple with two children, earning ¥10 million a year. They now get ¥20,000 a month in child allowance. Basic income for four is ¥280,000 a month, and this is where “high earners pay it back later” comes in. If they keep it: ¥260,000 a month more, even after losing the child allowance. If they pay it all back: none of the basic income stays with them, and they are ¥20,000 a month worse off by the lost child allowance. A ¥10 million household is likely to be on the paying-back side, and any tax rise to fund the plan would fall heavily on this group. Realistically, expect somewhere between roughly zero and a loss.</p>
 <p>In summary (monthly, before any tax rise):</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">Household</th><th scope="col">Benefits now</th><th scope="col">Basic income</th><th scope="col">Net change</th></tr></thead><tbody><tr><th scope="row">Single, 20s, ¥3m a year</th><td>None</td><td>¥70,000</td><td>+¥70,000 (less any tax rise)</td></tr><tr><th scope="row">Family of four, ¥5m a year</th><td>Child allowance ¥20,000</td><td>¥200,000–¥280,000</td><td>+¥180,000 to +¥260,000</td></tr><tr><th scope="row">Retired couple (former employee)</th><td>Pensions ¥237,279</td><td>¥140,000</td><td>+¥140,000 to −¥97,279 (depends on pensions)</td></tr><tr><th scope="row">Single, on public assistance (Tokyo 23 wards)</th><td>Up to ¥130,920</td><td>¥70,000</td><td>±0 to −¥60,920 (depends on whether assistance stays)</td></tr><tr><th scope="row">Family of four, ¥10m a year</th><td>Child allowance ¥20,000</td><td>¥280,000</td><td>+¥260,000 to −¥20,000 (depends on clawback)</td></tr></tbody></table></div>
+<div class="es-tw es-wide es-tw-x"><p class="es-t-hint" aria-hidden="true">Scroll sideways to see more <span>→</span></p><div class="essay-table es-t-scroll" tabindex="0" style="--cols:4"><table><thead><tr><th scope="col">Household</th><th scope="col">Benefits now</th><th scope="col">Basic income</th><th scope="col">Net change</th></tr></thead><tbody><tr><th scope="row">Single, 20s, ¥3m a year</th><td>None</td><td>¥70,000</td><td>+¥70,000 (less any tax rise)</td></tr><tr><th scope="row">Family of four, ¥5m a year</th><td>Child allowance ¥20,000</td><td>¥200,000–¥280,000</td><td>+¥180,000 to +¥260,000</td></tr><tr><th scope="row">Retired couple (former employee)</th><td>Pensions ¥237,279</td><td>¥140,000</td><td>+¥140,000 to −¥97,279 (depends on pensions)</td></tr><tr><th scope="row">Single, on public assistance (Tokyo 23 wards)</th><td>Up to ¥130,920</td><td>¥70,000</td><td>±0 to −¥60,920 (depends on whether assistance stays)</td></tr><tr><th scope="row">Family of four, ¥10m a year</th><td>Child allowance ¥20,000</td><td>¥280,000</td><td>+¥260,000 to −¥20,000 (depends on clawback)</td></tr></tbody></table></div></div>
 <p>The likely winners are households with children and few benefits today. Those who could lose are people who rely on pensions or public assistance, and high-earning households that would pay the money back or bear the tax rises.</p>
 <p class="op"><span class="op-tag">Opinion</span>The complaint that “nobody can live on ¥70,000” mostly concerns the cases where pensions or public assistance disappear. Takenaka’s reply that he “never said you could live on it” reads as assuming that some other benefits remain. Line up the assumptions, and both claims can be checked with numbers.</p>
 <h2 id="s6">What would it cost the country?</h2>
@@ -1091,6 +1107,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 })();
 </script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
 function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
-var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script><script>(function(){var ws=[].slice.call(document.querySelectorAll('.es-tw-x'));if(!ws.length)return;function f(){ws.forEach(function(w){var s=w.lastElementChild;w.classList.toggle('is-over',s.scrollWidth>s.clientWidth+1)})}
+ws.forEach(function(w){var s=w.lastElementChild;s.addEventListener('scroll',function(){w.classList.toggle('is-moved',Math.abs(s.scrollLeft)>2)},{passive:true})});f();addEventListener('resize',f);if(document.fonts)document.fonts.ready.then(f)})()</script>
 </body>
 </html>

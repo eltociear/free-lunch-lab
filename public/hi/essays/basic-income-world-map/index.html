@@ -728,12 +728,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1037,7 +1053,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>खर्च = आबादी × रोज़ 3.00 डॉलर × 365 दिन: हर उम्र का हर व्यक्ति, एक साल के लिए। 3.00 डॉलर वर्ल्ड बैंक की अंतरराष्ट्रीय ग़रीबी रेखा है, 2021 की क्रय शक्ति समता (PPP) डॉलर में, जो जून 2025 में तय हुई।<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> इसे हम वर्ल्ड बैंक के घरेलू उपभोग के PPP रूपांतरण गुणक से स्थानीय मुद्रा में बदलते हैं, ताकि हर जगह इससे लगभग उतना ही सामान ख़रीदा जा सके।<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> जिन 34 देशों और क्षेत्रों के लिए काम का गुणक नहीं है, वहाँ बाज़ार की विनिमय दर ली गई है। आबादी और GDP वर्ल्ड बैंक के आँकड़े हैं, सात ख़ास देशों के लिए राष्ट्रीय आँकड़े; 211 में से 186 का GDP 2025 का है।<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup> देशों की आकृतियाँ Natural Earth से हैं।<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup></p>
 <p>राजस्व वर्ल्ड बैंक का केंद्र सरकार का टैक्स राजस्व है, GDP के हिस्से के रूप में।<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> हम सबसे नया साल लेते हैं, बशर्ते वह GDP के साल से पाँच साल से ज़्यादा पुराना न हो। टैक्स राजस्व न हो तो कुल राजस्व लिया जाता,<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> पर इस बार किसी देश के लिए ज़रूरत नहीं पड़ी। 140 आँकड़ों में से 93 साल 2024 के हैं, 19 साल 2023 के, 8 साल 2022 के, 9 साल 2021 के और 10 साल 2020 के। जापान का वर्ल्ड बैंक में हाल का आँकड़ा नहीं है, इसलिए हमने उसके वित्त वर्ष 2026 के राष्ट्रीय बजट का टैक्स और स्टांप राजस्व लिया: 83.7 लाख करोड़ येन।<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
 <p>बाक़ी 71 देश और क्षेत्र धूसर हैं, जहाँ 161 करोड़ लोग रहते हैं: वर्ल्ड बैंक के पास उनका 2015 के बाद का टैक्स आँकड़ा नहीं है, या सिर्फ़ पाँच साल से पुराना है। इनमें नाइजीरिया, पाकिस्तान, इंडोनेशिया, मिस्र, वियतनाम, ईरान, क़तर और कुवैत हैं। ताइवान, उत्तर कोरिया, इरिट्रिया, दक्षिण सूडान और यमन डेटा में हैं ही नहीं। हर देश के आँकड़े और उसके कैलकुलेटर पेज का लिंक <a href="/hi/calc/map/">नक्शे वाले पेज</a> की तालिका में है।<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">खर्च, टैक्स राजस्व के हिस्से के रूप में</th><th scope="col">देश और क्षेत्र</th><th scope="col">वहाँ रहने वाले लोग</th></tr></thead><tbody><tr><th scope="row">10% से कम</th><td>24</td><td>35 करोड़</td></tr><tr><th scope="row">10–25%</th><td>35</td><td>118 करोड़</td></tr><tr><th scope="row">25–50%</th><td>23</td><td>70 करोड़</td></tr><tr><th scope="row">50–100%</th><td>18</td><td>171 करोड़</td></tr><tr><th scope="row">100% से ज़्यादा</th><td>40</td><td>257 करोड़</td></tr><tr><th scope="row">हाल का डेटा नहीं</th><td>71</td><td>161 करोड़</td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">खर्च, टैक्स राजस्व के हिस्से के रूप में</th><th scope="col">देश और क्षेत्र</th><th scope="col">वहाँ रहने वाले लोग</th></tr></thead><tbody><tr><th scope="row">10% से कम</th><td class="es-num">24</td><td>35 करोड़</td></tr><tr><th scope="row">10–25%</th><td class="es-num">35</td><td>118 करोड़</td></tr><tr><th scope="row">25–50%</th><td class="es-num">23</td><td>70 करोड़</td></tr><tr><th scope="row">50–100%</th><td class="es-num">18</td><td>171 करोड़</td></tr><tr><th scope="row">100% से ज़्यादा</th><td class="es-num">40</td><td>257 करोड़</td></tr><tr><th scope="row">हाल का डेटा नहीं</th><td class="es-num">71</td><td>161 करोड़</td></tr></tbody></table></div></div>
 <h2 id="s2">क्षेत्र और आमदनी के हिसाब से</h2>
 <p>यूरोप सबसे अलग दिखता है। यूरोप और मध्य एशिया के जिन 48 देशों के आँकड़े हैं, उनमें से 41 टैक्स राजस्व के 25% से नीचे हैं और 18 तो 10% से भी नीचे। सबसे कम हिस्सा लक्ज़मबर्ग (2.6%), मकाऊ (3.2%), डेनमार्क (4.4%), नॉर्वे (4.5%) और आयरलैंड (4.7%) में है। दूसरी ओर, उप-सहारा अफ़्रीका के जिन 32 देशों के आँकड़े हैं, उनमें से 25 के लिए पूरा टैक्स राजस्व भी कम है; 25% से नीचे सिर्फ़ मॉरीशस (18%) और बोत्सवाना (24%) हैं।</p>
 <p>लैटिन अमेरिका बीच में है: जिन 19 देशों के आँकड़े हैं, उनमें से 10 का हिस्सा 25% से 50% के बीच है, जैसे मेक्सिको (30%), ब्राज़ील (31%) और कोलंबिया (34%)। दक्षिण एशिया के सभी छह देशों के आँकड़े हैं और कोई भी 10% से नीचे नहीं है। सबसे कम मालदीव (24%) है; भारत और नेपाल (दोनों 132%) और बांग्लादेश (160%) के लिए केंद्र सरकार का पूरा टैक्स राजस्व भी कम है।</p>

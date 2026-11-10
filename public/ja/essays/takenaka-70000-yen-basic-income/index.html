@@ -816,12 +816,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1155,7 +1171,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>著書の「生活保護の費用をなくす」は(B)、インタビューの「生活保護も補うものとしてあっていい」は(A)にあたります。この家計にとっては、どちらなのかが決定的です。</p>
 <p>5. 夫婦と子ども2人の4人世帯（年収1000万円）。いまの児童手当は2人で月2万円です。BIは4人で月28万円。ここで効いてくるのが「高所得者は後で返す」という部分です。返さなくてよいなら、児童手当がなくなっても月26万円のプラス。全額返すなら、BIは手元に残らず、児童手当の分だけ月2万円のマイナスです。年収1000万円は返す側に入る可能性が高く、財源のための増税もこの層に重くかかるはずです。「ほぼゼロからマイナス」と見ておくのが現実的でしょう。</p>
 <p>まとめると、こうなります（月額、増税の前）。</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">家計</th><th scope="col">いまの給付</th><th scope="col">BI</th><th scope="col">差し引き</th></tr></thead><tbody><tr><th scope="row">単身20代・年収300万円</th><td>なし</td><td>7万円</td><td>＋7万円（増税があれば目減り）</td></tr><tr><th scope="row">4人世帯・年収500万円</th><td>児童手当2万円</td><td>20万〜28万円</td><td>＋18万〜＋26万円</td></tr><tr><th scope="row">元会社員の高齢夫婦</th><td>年金23万7279円</td><td>14万円</td><td>＋14万円〜−9万7279円（年金の扱いしだい）</td></tr><tr><th scope="row">生活保護の単身者（東京23区）</th><td>最大13万920円</td><td>7万円</td><td>±0〜−6万920円（生活保護を残すかしだい）</td></tr><tr><th scope="row">4人世帯・年収1000万円</th><td>児童手当2万円</td><td>28万円</td><td>＋26万〜−2万円（返納しだい）</td></tr></tbody></table></div>
+<div class="es-tw es-wide es-tw-x"><p class="es-t-hint" aria-hidden="true">横にスクロールできます <span>→</span></p><div class="essay-table es-t-scroll" tabindex="0" style="--cols:4"><table><thead><tr><th scope="col">家計</th><th scope="col">いまの給付</th><th scope="col">BI</th><th scope="col">差し引き</th></tr></thead><tbody><tr><th scope="row">単身20代・年収300万円</th><td>なし</td><td>7万円</td><td>＋7万円（増税があれば目減り）</td></tr><tr><th scope="row">4人世帯・年収500万円</th><td>児童手当2万円</td><td>20万〜28万円</td><td>＋18万〜＋26万円</td></tr><tr><th scope="row">元会社員の高齢夫婦</th><td>年金23万7279円</td><td>14万円</td><td>＋14万円〜−9万7279円（年金の扱いしだい）</td></tr><tr><th scope="row">生活保護の単身者（東京23区）</th><td>最大13万920円</td><td>7万円</td><td>±0〜−6万920円（生活保護を残すかしだい）</td></tr><tr><th scope="row">4人世帯・年収1000万円</th><td>児童手当2万円</td><td>28万円</td><td>＋26万〜−2万円（返納しだい）</td></tr></tbody></table></div></div>
 <p>得をしやすいのは、子どもがいて、いまの給付が少ない世帯です。損をしうるのは、年金や生活保護に頼っている人と、返納や増税の対象になる高所得の世帯です。</p>
 <p class="op"><span class="op-tag">意見</span>「7万円では暮らせない」という批判は、主に年金や生活保護がなくなる場合の話です。一方、竹中氏の「7万円で生活できるとは言っていない」という説明は、ほかの制度を一部残すことが前提だと読めます。どちらの言い分も、前提をそろえれば数字で確かめられます。</p>
 <h2 id="s6">国全体ではいくらかかるのか</h2>
@@ -1196,6 +1212,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 })();
 </script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
 function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
-var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script><script>(function(){var ws=[].slice.call(document.querySelectorAll('.es-tw-x'));if(!ws.length)return;function f(){ws.forEach(function(w){var s=w.lastElementChild;w.classList.toggle('is-over',s.scrollWidth>s.clientWidth+1)})}
+ws.forEach(function(w){var s=w.lastElementChild;s.addEventListener('scroll',function(){w.classList.toggle('is-moved',Math.abs(s.scrollLeft)>2)},{passive:true})});f();addEventListener('resize',f);if(document.fonts)document.fonts.ready.then(f)})()</script>
 </body>
 </html>

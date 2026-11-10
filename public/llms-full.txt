@@ -2962,7 +2962,7 @@ Runtime of Encointer’s common-good parachain on Kusama, the chain where its co
 - Language: JavaScript
 - License: AGPL-3.0
 - Stars: 350
-- Last commit: 2026-11-06
+- Last commit: 2026-11-10
 
 End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum
 
@@ -3248,7 +3248,7 @@ Reference mobile app for BrightID: people connect with others they know, and ana
 - Language: Python
 - License: AGPL-3.0
 - Stars: 171
-- Last commit: 2026-11-09
+- Last commit: 2026-11-10
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 

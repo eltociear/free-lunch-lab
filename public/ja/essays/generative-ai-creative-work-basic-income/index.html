@@ -816,12 +816,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1123,7 +1139,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>オーレ・トイトロフらの研究（学術誌Journal of Economic Behavior &amp; Organizationに掲載）は、より大規模です。世界的なフリーランス・プラットフォームに2021年から2023年に出された300万件以上の募集を分析し、ライティングや翻訳など、AIが部分的に代われるスキルへの需要が、本来予想される水準より20〜50%減ったと推計しました。落ち込みがいちばん大きかったのは経験豊富な人たちです。逆に、AIと組み合わせて使うスキルへの需要は増え、チャットボット開発の仕事はほぼ3倍になりました。フリーランスの需要全体は減っていません。<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></p>
 <p>クリエイターへのアンケートは、この全体像を補ってくれます。ただし、アンケートは本人がどう感じているかを尋ねるもので、影響を受けたと感じている人ほど回答しやすいという限界があります。英国作家協会（Society of Authors）の2024年1月の調査（回答787件）では、イラストレーターの26%、翻訳者の36%が、生成AIのせいですでに仕事を失ったと答えました。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> ケンブリッジ大学が2025年11月に公表した、英国で本を出している小説家258人への調査では、39%が収入がすでに打撃を受けたと答え（主にコピーライティングなどの副業が減ったため）、85%が今後さらに減ると予想していました。<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> 英国写真家協会（Association of Photographers）の2026年1月の調査では、会員約3,000人のうち約600人が回答し、58%が生成AIのせいで依頼の仕事を失ったと答えました。前年と同じ割合です。報告された平均の損失は1人あたり約3万4,900ポンドに増えましたが、公表された概要からは、この平均がどう計算されたのかははっきりしません。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></p>
 <p>主な結果を並べると、次のようになります。</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">調査</th><th scope="col">対象</th><th scope="col">結果</th></tr></thead><tbody><tr><th scope="row">日本フリーランスリーグ（2025年）</th><td>日本のクリエイター2万4,991人（多くは絵を描く人）</td><td>AIで収入が減った12.0%、深刻な脅威と感じる88.6%<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></td></tr><tr><th scope="row">ホイ、レシェフ、ジョウ</th><td>Upworkのフリーランス</td><td>画像：件数−3.7%、収入−9.4%／ライティング：−2%、−5.2%<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></td></tr><tr><th scope="row">トイトロフほか</th><td>フリーランス募集300万件以上</td><td>ライティング・翻訳の需要−20〜−50%、チャットボット開発はほぼ3倍<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></td></tr><tr><th scope="row">英国作家協会（2024年）</th><td>作家・イラストレーター・翻訳者787人</td><td>すでに仕事を失った：イラストレーター26%、翻訳者36%<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></td></tr><tr><th scope="row">ケンブリッジ大学（2025年）</th><td>英国の小説家258人</td><td>収入がすでに打撃39%、今後減ると予想85%<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></td></tr><tr><th scope="row">英国写真家協会（2026年）</th><td>プロの写真家約600人</td><td>依頼の仕事を失った58%<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">調査</th><th scope="col">対象</th><th scope="col">結果</th></tr></thead><tbody><tr><th scope="row">日本フリーランスリーグ（2025年）</th><td>日本のクリエイター2万4,991人（多くは絵を描く人）</td><td>AIで収入が減った12.0%、深刻な脅威と感じる88.6%<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></td></tr><tr><th scope="row">ホイ、レシェフ、ジョウ</th><td>Upworkのフリーランス</td><td>画像：件数−3.7%、収入−9.4%／ライティング：−2%、−5.2%<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></td></tr><tr><th scope="row">トイトロフほか</th><td>フリーランス募集300万件以上</td><td>ライティング・翻訳の需要−20〜−50%、チャットボット開発はほぼ3倍<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></td></tr><tr><th scope="row">英国作家協会（2024年）</th><td>作家・イラストレーター・翻訳者787人</td><td>すでに仕事を失った：イラストレーター26%、翻訳者36%<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></td></tr><tr><th scope="row">ケンブリッジ大学（2025年）</th><td>英国の小説家258人</td><td>収入がすでに打撃39%、今後減ると予想85%<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></td></tr><tr><th scope="row">英国写真家協会（2026年）</th><td>プロの写真家約600人</td><td>依頼の仕事を失った58%<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></td></tr></tbody></table></div></div>
 <p class="op"><span class="op-tag">意見</span>傾向ははっきりしています。イラスト、素材写真のような画像、翻訳、コピーライティングなど、1件単位で買われる仕事から先に地盤を失っています。ただ、創作の仕事全体が崩れていることを示す研究は、まだありません。</p>
 <h2 id="s2">「予測」であって「測定」ではない数字</h2>
 <p>AIと文化をめぐる議論でいちばんよく引用される数字は、各国の著作権管理団体の国際組織CISACが出したものです。コンサルティング会社PMP Strategyと2024年12月に公表した調査で、生成AIがなかった場合と比べて、2028年までに音楽のクリエイターの収入の約24%、映像のクリエイターの収入の約21%が危険にさらされると予測しました。5年間の累計で約220億ユーロの損失です。その間に、AIが生成した音楽と映像の市場は、年間でそれぞれ約160億ユーロ、約480億ユーロに育つとしています。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>

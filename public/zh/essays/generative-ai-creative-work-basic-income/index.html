@@ -821,12 +821,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1128,7 +1144,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>Ole Teutloff 等人发表在《经济行为与组织期刊》（Journal of Economic Behavior &amp; Organization）上的一项更大规模的研究，分析了 2021 年至 2023 年某全球自由职业平台上的 300 多万条招聘信息。与原本应有的水平相比，写作、翻译等 AI 可以部分替代的技能需求下降了 20% 到 50%，而且经验丰富的从业者降幅最大。与 AI 配合使用的技能需求则上升了：开发聊天机器人的工作几乎增至三倍，自由职业需求整体并没有下降。<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></p>
 <p>对创作者的问卷调查补充了这幅图景，但要注意，问卷问的是人们的看法，而且自认为受到冲击的人更愿意回答。在英国作家协会（Society of Authors）2024 年 1 月的调查中（787 份回答），26% 的插画师和 36% 的译者说已经因生成式 AI 失去了工作。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> 剑桥大学 2025 年 11 月发布的一项针对 258 位已出版作品的英国小说家的研究发现，39% 的人说收入已经受到影响，主要是失去了文案写作等副业，85% 的人预计收入会进一步下降。<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> 在英国摄影师协会（Association of Photographers）2026 年 1 月的调查中，约 3,000 名会员中约 600 人作答，58% 说已经因生成式 AI 失去了委托工作，比例与一年前相同；报告的平均损失升至每人约 34,900 英镑，不过公布的摘要没有说明这个平均值具体是怎么计算的。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></p>
 <p>主要发现对照如下：</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">来源</th><th scope="col">对象</th><th scope="col">发现</th></tr></thead><tbody><tr><th scope="row">日本自由职业者联盟（2025）</th><td>日本 24,991 名创作者，大多从事绘画</td><td>因 AI 收入减少：12.0%；视 AI 为严重威胁：88.6%<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></td></tr><tr><th scope="row">Hui、Reshef 与 Zhou</th><td>Upwork 自由职业者</td><td>图像：工作 −3.7%，收入 −9.4%；写作：−2%，−5.2%<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></td></tr><tr><th scope="row">Teutloff 等</th><td>300 多万条自由职业招聘信息</td><td>写作和翻译需求 −20% 至 −50%；聊天机器人工作几乎 ×3<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></td></tr><tr><th scope="row">英国作家协会（2024）</th><td>787 名作家、插画师和译者</td><td>已失去工作：插画师 26%，译者 36%<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></td></tr><tr><th scope="row">剑桥大学（2025）</th><td>258 名英国小说家</td><td>收入已受影响：39%；预计会下降：85%<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></td></tr><tr><th scope="row">英国摄影师协会（2026）</th><td>约 600 名职业摄影师</td><td>失去委托工作：58%<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">来源</th><th scope="col">对象</th><th scope="col">发现</th></tr></thead><tbody><tr><th scope="row">日本自由职业者联盟（2025）</th><td>日本 24,991 名创作者，大多从事绘画</td><td>因 AI 收入减少：12.0%；视 AI 为严重威胁：88.6%<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></td></tr><tr><th scope="row">Hui、Reshef 与 Zhou</th><td>Upwork 自由职业者</td><td>图像：工作 −3.7%，收入 −9.4%；写作：−2%，−5.2%<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></td></tr><tr><th scope="row">Teutloff 等</th><td>300 多万条自由职业招聘信息</td><td>写作和翻译需求 −20% 至 −50%；聊天机器人工作几乎 ×3<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></td></tr><tr><th scope="row">英国作家协会（2024）</th><td>787 名作家、插画师和译者</td><td>已失去工作：插画师 26%，译者 36%<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></td></tr><tr><th scope="row">剑桥大学（2025）</th><td>258 名英国小说家</td><td>收入已受影响：39%；预计会下降：85%<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></td></tr><tr><th scope="row">英国摄影师协会（2026）</th><td>约 600 名职业摄影师</td><td>失去委托工作：58%<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></td></tr></tbody></table></div></div>
 <p class="op"><span class="op-tag">观点</span>规律是一致的：按件购买的工作，比如插画、图库类图片、翻译和文案，最先失去阵地。但还没有任何研究显示创意工作整体正在崩溃。</p>
 <h2 id="s2">是预测，不是测量</h2>
 <p>关于 AI 与文化的讨论中最常被引用的数字，来自各国作者协会的全球联合会 CISAC（国际作者和作曲者协会联合会）。它与咨询公司 PMP Strategy 合作、于 2024 年 12 月发布的研究预测，与没有生成式 AI 的世界相比，到 2028 年音乐创作者约 24% 的收入、视听创作者约 21% 的收入将面临风险：五年累计损失约 220 亿欧元，而 AI 生成的音乐和视频市场将分别增长到每年约 160 亿欧元和 480 亿欧元。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>

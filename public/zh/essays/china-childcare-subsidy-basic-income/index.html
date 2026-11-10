@@ -821,12 +821,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1128,7 +1144,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>由父母一方或其他监护人，向婴幼儿户籍所在地申领。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> 主要通过全国统一的“育儿补贴信息管理系统”在线申请，入口在支付宝、微信和各省政务服务平台；也可以到户籍地的乡镇政府、街道办事处现场办理。2025 年 9 月 8 日，国家卫生健康委宣布申领“正式全面开放”。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
 <p>它不是自动到账的。国家卫生健康委和财政部的管理规范规定，首次申请要在孩子出生当年或次年提出，之后连续两个年度分别续领；“逾期未提交申请的，视为自动放弃当年申请资格”。<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> 补贴“按年计算，每年一次性发放”，打到申领人或孩子的银行卡、社保卡等账户，各省原则上每季度至少集中发放一批。<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup><sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> 2026 年的申领从 1 月 5 日开始，系统增加了续领功能。<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup> 2022 至 2024 年出生的孩子，首次申请的截止时间已从 2025 年底延长到 2026 年 12 月 31 日。<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></p>
 <p>两条容易被忽略的规则很重要。第一，育儿补贴免征个人所得税。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> 第二，在认定低保、特困等救助对象时，育儿补贴不计入家庭或个人收入。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> 也就是说，最穷的家庭领了这笔钱，不会因此失去低保。</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">项目</th><th scope="col">规则</th></tr></thead><tbody><tr><th scope="row">对象</th><td>3 周岁以下婴幼儿，一孩、二孩、三孩都可以<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup><sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></td></tr><tr><th scope="row">金额</th><td>国家基础标准每孩每年 3600 元，地方可以提高<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></td></tr><tr><th scope="row">收入审查</th><td>没有<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></td></tr><tr><th scope="row">在哪里申领</th><td>婴幼儿户籍所在地，线上或线下<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup><sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></td></tr><tr><th scope="row">怎么发</th><td>每年一次性，打到银行卡、社保卡等账户<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></td></tr><tr><th scope="row">税</th><td>免征个人所得税<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></td></tr><tr><th scope="row">与低保的关系</th><td>不计入家庭或个人收入<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></td></tr><tr><th scope="row">要不要申请</th><td>要，每年一次；逾期视为放弃当年<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">项目</th><th scope="col">规则</th></tr></thead><tbody><tr><th scope="row">对象</th><td>3 周岁以下婴幼儿，一孩、二孩、三孩都可以<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup><sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></td></tr><tr><th scope="row">金额</th><td>国家基础标准每孩每年 3600 元，地方可以提高<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></td></tr><tr><th scope="row">收入审查</th><td>没有<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></td></tr><tr><th scope="row">在哪里申领</th><td>婴幼儿户籍所在地，线上或线下<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup><sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></td></tr><tr><th scope="row">怎么发</th><td>每年一次性，打到银行卡、社保卡等账户<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></td></tr><tr><th scope="row">税</th><td>免征个人所得税<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></td></tr><tr><th scope="row">与低保的关系</th><td>不计入家庭或个人收入<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></td></tr><tr><th scope="row">要不要申请</th><td>要，每年一次；逾期视为放弃当年<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></td></tr></tbody></table></div></div>
 <h2 id="s2">钱从哪里来，发了多少</h2>
 <p>发放国家基础标准所需的钱，中央财政按比例补助东部、中部、西部地区，国新办发布会上说“中央总体承担约 90%”，2025 年初步安排预算 900 亿元左右。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup><sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup> 地方如果提高标准，多出的部分由地方自己出。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>实际执行的情况是这样的。截至 2025 年 12 月 31 日，31 个省份都已发放，发放人数超过 2400 万，2025 年度的发放率约为 80%。<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup> 财政部在 2026 年 1 月底说，2025 年全国各级财政共安排约 1000 亿元，并且已向 3000 多万名婴幼儿发放。<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup> 2026 年的《政府工作报告》也把“全面实施育儿补贴制度、惠及 3000 多万婴幼儿”列入上一年的成绩。<sup class="fnref"><a href="#fn-12" id="ref-12">12</a></sup> 2026 年，中央财政下达补助资金 999 亿元，比上年增长 10.6%，预计各级财政全年共安排约 1100 亿元。<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup> 截至 2026 年 7 月 21 日，2026 年度已提交申请 2751 万条，审核通过 2713 万条，已发放 2516 万人。<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></p>
@@ -1146,7 +1162,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p class="op"><span class="op-tag">观点</span>我们读到的研究，可以这样概括：现金可以让一部分家庭把生育提前，或多生一个孩子，但很难单靠现金扭转生育率的长期下降，住房、教育、工作和照护时间都同样重要。另一方面，给有孩子的家庭发现金，减少儿童贫困的效果是清楚的。我们在<a href="/zh/essays/refundable-tax-credit-vs-basic-income/">关于可退还税收抵免的文章</a>里看到，美国 2021 年扩大儿童税收抵免时，儿童贫困率明显下降，取消之后又回升。所以，评价育儿补贴，不应只看它能不能提高出生人数。</p>
 <h2 id="s6">它算基本收入吗？用 BIEN 的五条标准衡量</h2>
 <p>基本收入地球网络（BIEN）把基本收入定义为“无条件地以个人为单位发给所有人的定期现金支付，不需要经济状况调查或工作要求”。<sup class="fnref"><a href="#fn-21" id="ref-21">21</a></sup> 我们在<a href="/zh/essays/japan-special-cash-payment/">日本 10 万日元的文章</a>里也用过这把尺子。用它来衡量育儿补贴：</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">标准</th><th scope="col">育儿补贴</th><th scope="col">基本收入</th></tr></thead><tbody><tr><th scope="row">定期</th><td>是，每年一次</td><td>是</td></tr><tr><th scope="row">现金</th><td>是，打到银行卡等账户</td><td>是</td></tr><tr><th scope="row">个人</th><td>按每个孩子计算，由父母或监护人领取</td><td>每个人自己领取</td></tr><tr><th scope="row">普遍</th><td>否，只给 3 岁以下的婴幼儿</td><td>所有人</td></tr><tr><th scope="row">无条件</th><td>没有收入和工作审查，但每年要申请</td><td>无条件</td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">标准</th><th scope="col">育儿补贴</th><th scope="col">基本收入</th></tr></thead><tbody><tr><th scope="row">定期</th><td>是，每年一次</td><td>是</td></tr><tr><th scope="row">现金</th><td>是，打到银行卡等账户</td><td>是</td></tr><tr><th scope="row">个人</th><td>按每个孩子计算，由父母或监护人领取</td><td>每个人自己领取</td></tr><tr><th scope="row">普遍</th><td>否，只给 3 岁以下的婴幼儿</td><td>所有人</td></tr><tr><th scope="row">无条件</th><td>没有收入和工作审查，但每年要申请</td><td>无条件</td></tr></tbody></table></div></div>
 <p>所以，育儿补贴满足“定期”和“现金”，基本满足“无条件”，部分满足“个人”，但不满足“普遍”。更准确的说法是：它是一种面向幼儿的、不看收入的现金补贴，也就是很多国家所说的“儿童津贴”的起步版本。它和基本收入最大的区别，是对象只覆盖人生的头三年。</p>
 <h2 id="s7">香港 2020 年的一万港元</h2>
 <p>在华语地区，“发给所有人”的现金发放并不多见，香港 2020 年的“现金发放计划”是其中一例。2020 年 2 月 26 日的《财政预算案》宣布，向 18 岁或以上的香港永久性居民每人发放 1 万港元，预计约 700 万人受惠，涉及开支约 710 亿港元。<sup class="fnref"><a href="#fn-22" id="ref-22">22</a></sup> 银行从 2020 年 6 月 21 日开始接受网上登记，款项存入银行账户，也可以经香港邮政领取支票。<sup class="fnref"><a href="#fn-23" id="ref-23">23</a></sup></p>

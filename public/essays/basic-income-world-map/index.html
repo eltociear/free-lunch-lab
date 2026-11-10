@@ -740,12 +740,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1049,7 +1065,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>The cost is the population × $3.00 a day × 365 days: everyone, of every age, for one year. $3.00 is the World Bank’s international poverty line in 2021 purchasing power parity (PPP) dollars, set in June 2025.<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> We convert it into local currency with the World Bank’s PPP conversion factor for household consumption, so that it buys roughly the same everywhere.<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> For 34 countries and territories without a usable factor we use the market exchange rate instead. Population and GDP are World Bank figures, with national statistics for seven featured countries; GDP is for 2025 in 186 of the 211.<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup> The country shapes come from Natural Earth.<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup></p>
 <p>Revenue is central government tax revenue as a share of GDP, from the World Bank.<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> We take the latest year, and only if it is no more than five years older than the GDP year. Where tax revenue is missing we would use total revenue instead,<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> but in this edition no country needed it. Of the 140 figures, 93 are for 2024, 19 for 2023, 8 for 2022, 9 for 2021 and 10 for 2020. Japan has no recent World Bank figure, so we use the tax and stamp revenue in its FY2026 national budget, ¥83.7 trillion.<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
 <p>That leaves 71 countries and territories grey, home to 1.61 billion people: the World Bank has no tax figure for them since 2015, or only one more than five years old. They include Nigeria, Pakistan, Indonesia, Egypt, Vietnam, Iran, Qatar and Kuwait. Taiwan, North Korea, Eritrea, South Sudan and Yemen are not in the data at all. The full table, with every country’s figures and a link to its calculator page, is on <a href="/calc/map/">the map page</a>.<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">Cost as a share of tax revenue</th><th scope="col">Countries and territories</th><th scope="col">People living there</th></tr></thead><tbody><tr><th scope="row">Under 10%</th><td>24</td><td>0.35 billion</td></tr><tr><th scope="row">10–25%</th><td>35</td><td>1.18 billion</td></tr><tr><th scope="row">25–50%</th><td>23</td><td>0.70 billion</td></tr><tr><th scope="row">50–100%</th><td>18</td><td>1.71 billion</td></tr><tr><th scope="row">Over 100%</th><td>40</td><td>2.57 billion</td></tr><tr><th scope="row">No recent data</th><td>71</td><td>1.61 billion</td></tr></tbody></table></div>
+<div class="es-tw es-wide"><div class="essay-table es-t-fit"><table><thead><tr><th scope="col">Cost as a share of tax revenue</th><th scope="col">Countries and territories</th><th scope="col">People living there</th></tr></thead><tbody><tr><th scope="row">Under 10%</th><td class="es-num">24</td><td>0.35 billion</td></tr><tr><th scope="row">10–25%</th><td class="es-num">35</td><td>1.18 billion</td></tr><tr><th scope="row">25–50%</th><td class="es-num">23</td><td>0.70 billion</td></tr><tr><th scope="row">50–100%</th><td class="es-num">18</td><td>1.71 billion</td></tr><tr><th scope="row">Over 100%</th><td class="es-num">40</td><td>2.57 billion</td></tr><tr><th scope="row">No recent data</th><td class="es-num">71</td><td>1.61 billion</td></tr></tbody></table></div></div>
 <h2 id="s2">Patterns by region and income</h2>
 <p>Europe stands out. Of the 48 countries in Europe and Central Asia with a figure, 41 come in under 25% of tax revenue and 18 under 10%. The lowest shares anywhere are Luxembourg (2.6%), Macao (3.2%), Denmark (4.4%), Norway (4.5%) and Ireland (4.7%). At the other end, 25 of the 32 countries in Sub-Saharan Africa with a figure would need more than their whole tax take; only Mauritius (18%) and Botswana (24%) come in under 25%.</p>
 <p>Latin America sits in the middle: 10 of its 19 countries with a figure fall between 25% and 50%, among them Mexico (30%), Brazil (31%) and Colombia (34%). In South Asia all six countries have a figure and none is under 10%. The Maldives (24%) is lowest; India and Nepal (both 132%) and Bangladesh (160%) would need more than all their central tax revenue.</p>

@@ -821,12 +821,28 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+.es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
-.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
+.essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
+.essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:break-word}
 .essay-table thead th{font-size:.8125rem;color:var(--muted);font-weight:700}
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
+.essay-table .es-num{white-space:nowrap}
+/* 2〜3列の表は折り返して収める。4列以上は列の数ぶんの幅を取り、狭い画面では横にスクロール */
+.es-t-scroll table{min-width:calc(var(--cols,4) * 8.5em)}
+.es-t-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* 端の影: 右（ar は左）にまだ続きがあるあいだだけ見える（background-attachment: local の覆いが末尾で影を隠す）。JS なしでも動く */
+.es-t-scroll{background:linear-gradient(to left,var(--surface) 40%,transparent) right center/36px 100% no-repeat local,radial-gradient(farthest-side at 100% 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) right center/14px 100% no-repeat scroll,var(--surface)}
+[dir="rtl"] .es-t-scroll{background:linear-gradient(to right,var(--surface) 40%,transparent) left center/36px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,color-mix(in srgb,var(--ink) 22%,transparent),transparent) left center/14px 100% no-repeat scroll,var(--surface)}
+/* 1列目（行の見出し）は横に動かしても残す。動かしたあとは境目に影 */
+.es-t-scroll th:first-child{position:sticky;inset-inline-start:0;z-index:1;background:var(--surface);border-inline-end:1px solid var(--line);width:7.5em;min-width:7.5em}
+.es-tw.is-moved .es-t-scroll th:first-child{box-shadow:6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+[dir="rtl"] .es-tw.is-moved .es-t-scroll th:first-child{box-shadow:-6px 0 8px -6px color-mix(in srgb,var(--ink) 30%,transparent)}
+/* 「横にスクロールできます」: 表がはみ出しているときだけ（ESSAY_TABLE_JS が is-over を付ける） */
+.es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
+.es-tw.is-over .es-t-hint{display:flex}
+@media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1161,7 +1177,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>书中的“取消生活保护的费用”是 (B)，采访中的“生活保护也可以作为补充保留”是 (A)。对这个家庭来说，到底是哪一种，决定了一切。</p>
 <p>5. 夫妻加两个孩子的四口之家（年收入 1000 万日元）。目前儿童津贴每月 2 万日元。四人的基本收入为每月 28 万日元，这里起作用的是“高收入者事后返还”。如果不用返还：即使失去儿童津贴，也每月多 26 万日元。如果全部返还：基本收入一分不剩，还因失去儿童津贴每月少 2 万日元。年收入 1000 万日元很可能属于返还的一方，为筹资的增税也会重重落在这一层。比较现实的看法是“大约为零到亏损”。</p>
 <p>汇总如下（月额，增税之前）：</p>
-<div class="essay-table es-wide"><table><thead><tr><th scope="col">家庭</th><th scope="col">现在的补贴</th><th scope="col">基本收入</th><th scope="col">净变化</th></tr></thead><tbody><tr><th scope="row">单身、二十多岁、年收入 300 万日元</th><td>无</td><td>7 万日元</td><td>+7 万日元（若增税则缩水）</td></tr><tr><th scope="row">四口之家、年收入 500 万日元</th><td>儿童津贴 2 万日元</td><td>20 万–28 万日元</td><td>+18 万至 +26 万日元</td></tr><tr><th scope="row">曾是公司职员的老年夫妇</th><td>养老金 237,279 日元</td><td>14 万日元</td><td>+14 万至 −97,279 日元（取决于养老金的处理）</td></tr><tr><th scope="row">领取生活保护的单身者（东京 23 区）</th><td>最多 130,920 日元</td><td>7 万日元</td><td>±0 至 −60,920 日元（取决于是否保留生活保护）</td></tr><tr><th scope="row">四口之家、年收入 1000 万日元</th><td>儿童津贴 2 万日元</td><td>28 万日元</td><td>+26 万至 −2 万日元（取决于返还）</td></tr></tbody></table></div>
+<div class="es-tw es-wide es-tw-x"><p class="es-t-hint" aria-hidden="true">可左右滑动查看全部 <span>→</span></p><div class="essay-table es-t-scroll" tabindex="0" style="--cols:4"><table><thead><tr><th scope="col">家庭</th><th scope="col">现在的补贴</th><th scope="col">基本收入</th><th scope="col">净变化</th></tr></thead><tbody><tr><th scope="row">单身、二十多岁、年收入 300 万日元</th><td>无</td><td>7 万日元</td><td>+7 万日元（若增税则缩水）</td></tr><tr><th scope="row">四口之家、年收入 500 万日元</th><td>儿童津贴 2 万日元</td><td>20 万–28 万日元</td><td>+18 万至 +26 万日元</td></tr><tr><th scope="row">曾是公司职员的老年夫妇</th><td>养老金 237,279 日元</td><td>14 万日元</td><td>+14 万至 −97,279 日元（取决于养老金的处理）</td></tr><tr><th scope="row">领取生活保护的单身者（东京 23 区）</th><td>最多 130,920 日元</td><td>7 万日元</td><td>±0 至 −60,920 日元（取决于是否保留生活保护）</td></tr><tr><th scope="row">四口之家、年收入 1000 万日元</th><td>儿童津贴 2 万日元</td><td>28 万日元</td><td>+26 万至 −2 万日元（取决于返还）</td></tr></tbody></table></div></div>
 <p>容易获益的是有孩子、目前补贴很少的家庭。可能吃亏的是依靠养老金或生活保护的人，以及需要返还或承担增税的高收入家庭。</p>
 <p class="op"><span class="op-tag">观点</span>“7 万日元活不下去”的批评，主要针对养老金或生活保护被取消的情况。而竹中“我没说过靠 7 万日元能生活”的解释，读起来是以保留部分其他制度为前提的。只要把前提对齐，两边的说法都可以用数字来检验。</p>
 <h2 id="s6">全国要花多少钱</h2>
@@ -1202,6 +1218,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 })();
 </script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
 function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
-var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script><script>(function(){var ws=[].slice.call(document.querySelectorAll('.es-tw-x'));if(!ws.length)return;function f(){ws.forEach(function(w){var s=w.lastElementChild;w.classList.toggle('is-over',s.scrollWidth>s.clientWidth+1)})}
+ws.forEach(function(w){var s=w.lastElementChild;s.addEventListener('scroll',function(){w.classList.toggle('is-moved',Math.abs(s.scrollLeft)>2)},{passive:true})});f();addEventListener('resize',f);if(document.fonts)document.fonts.ready.then(f)})()</script>
 </body>
 </html>
