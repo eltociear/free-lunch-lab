@@ -22,6 +22,7 @@
     "povertyLine": "povertyLine.monthly = US$3.00 a day (World Bank international poverty line, 2021 PPP, June 2025 update) x 365/12, converted into local currency with the World Bank PPP conversion factor for household consumption (PA.NUS.PRVT.PP) when it is from the GDP year or the year before and implies a price level between 0.1 and 2.5 times the exchange rate; otherwise with the exchange rate implied by GDP in local currency / GDP in US dollars (same year). Rounded to two significant figures.",
     "defaultMonthly": "The calculator default: povertyLine.monthly for World Bank countries; a round figure chosen by the editors for the seven featured countries.",
     "cost": "costAtPovertyLine.yearly = population x povertyLine.monthly x 12 (gross, local currency); pctGdp = yearly / GDP.",
+    "map": "costAtPovertyLine.revenueCompared is the government revenue the world map (/calc/map/) compares with: governmentUsedInCalculator.tax, else governmentUsedInCalculator.revenue, else (Japan) nationalBudget.tax; null if none. pctRevenue = pctGdp / revenueCompared.pctGdp x 100. mapBand: under10, 10to25, 25to50, 50to100 (up to and including 100), over100, noData.",
     "dropped": [
       "ER Eritrea (no GDP)",
       "GI Gibraltar (no GDP)",
@@ -89,7 +90,14 @@
       "defaultMonthly": 30000,
       "costAtPovertyLine": {
         "yearly": 13853193600000,
-        "pctGdp": 2.087
+        "pctGdp": 2.087,
+        "revenueCompared": {
+          "measure": "nationalBudget.tax",
+          "pctGdp": 12.615,
+          "year": "FY2026"
+        },
+        "pctRevenue": 16.54,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/jp/",
       "names": {
@@ -173,7 +181,14 @@
       "defaultMonthly": 1000,
       "costAtPovertyLine": {
         "yearly": 379225185612,
-        "pctGdp": 1.232
+        "pctGdp": 1.232,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 10.769,
+          "year": 2024
+        },
+        "pctRevenue": 11.44,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/us/",
       "names": {
@@ -249,7 +264,14 @@
       "defaultMonthly": 1000,
       "costAtPovertyLine": {
         "yearly": 5437808997120,
-        "pctGdp": 3.879
+        "pctGdp": 3.879,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 7.018,
+          "year": 2024
+        },
+        "pctRevenue": 55.27,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cn/",
       "names": {
@@ -333,7 +355,14 @@
       "defaultMonthly": 2000,
       "costAtPovertyLine": {
         "yearly": 31619495383200,
-        "pctGdp": 9.153
+        "pctGdp": 9.153,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 6.934,
+          "year": 2022
+        },
+        "pctRevenue": 132,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/in/",
       "names": {
@@ -417,7 +446,14 @@
       "defaultMonthly": 500,
       "costAtPovertyLine": {
         "yearly": 31607374920,
-        "pctGdp": 1.873
+        "pctGdp": 1.873,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 14.934,
+          "year": 2024
+        },
+        "pctRevenue": 12.54,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/es/",
       "names": {
@@ -501,7 +537,14 @@
       "defaultMonthly": 1000,
       "costAtPovertyLine": {
         "yearly": 66587459400,
-        "pctGdp": 1.49
+        "pctGdp": 1.49,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 10.891,
+          "year": 2024
+        },
+        "pctRevenue": 13.68,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/de/",
       "names": {
@@ -572,7 +615,10 @@
       "defaultMonthly": 1000,
       "costAtPovertyLine": {
         "yearly": 994274366400,
-        "pctGdp": 5.482
+        "pctGdp": 5.482,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/eg/",
       "names": {
@@ -648,7 +694,14 @@
       "defaultMonthly": 81,
       "costAtPovertyLine": {
         "yearly": 80582688,
-        "pctGdp": 2.023
+        "pctGdp": 2.023,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.569,
+          "year": 2024
+        },
+        "pctRevenue": 12.99,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ad/",
       "names": {
@@ -732,7 +785,14 @@
       "defaultMonthly": 230,
       "costAtPovertyLine": {
         "yearly": 31776291240,
-        "pctGdp": 1.567
+        "pctGdp": 1.567,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 0.648,
+          "year": 2024
+        },
+        "pctRevenue": 241.75,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ae/",
       "names": {
@@ -803,7 +863,10 @@
       "defaultMonthly": 1300,
       "costAtPovertyLine": {
         "yearly": 683968131600,
-        "pctGdp": 54.201
+        "pctGdp": 54.201,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/af/",
       "names": {
@@ -862,7 +925,10 @@
       "defaultMonthly": 200,
       "costAtPovertyLine": {
         "yearly": 226101600,
-        "pctGdp": 3.581
+        "pctGdp": 3.581,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ag/",
       "names": {
@@ -946,7 +1012,14 @@
       "defaultMonthly": 4300,
       "costAtPovertyLine": {
         "yearly": 121238328000,
-        "pctGdp": 4.573
+        "pctGdp": 4.573,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 18.015,
+          "year": 2024
+        },
+        "pctRevenue": 25.39,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/al/",
       "names": {
@@ -1030,7 +1103,14 @@
       "defaultMonthly": 14000,
       "costAtPovertyLine": {
         "yearly": 518565600000,
-        "pctGdp": 4.582
+        "pctGdp": 4.582,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 22.366,
+          "year": 2024
+        },
+        "pctRevenue": 20.49,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/am/",
       "names": {
@@ -1110,7 +1190,14 @@
       "defaultMonthly": 33000,
       "costAtPovertyLine": {
         "yearly": 15459855444000,
-        "pctGdp": 11.961
+        "pctGdp": 11.961,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 7.588,
+          "year": 2024
+        },
+        "pctRevenue": 157.63,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ao/",
       "names": {
@@ -1194,7 +1281,14 @@
       "defaultMonthly": 110000,
       "costAtPovertyLine": {
         "yearly": 60523818960000,
-        "pctGdp": 7.14
+        "pctGdp": 7.14,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 10.429,
+          "year": 2024
+        },
+        "pctRevenue": 68.47,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ar/",
       "names": {
@@ -1253,7 +1347,10 @@
       "defaultMonthly": 82,
       "costAtPovertyLine": {
         "yearly": 45292536,
-        "pctGdp": 5.2
+        "pctGdp": 5.2,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/as/",
       "names": {
@@ -1337,7 +1434,14 @@
       "defaultMonthly": 68,
       "costAtPovertyLine": {
         "yearly": 7513861008,
-        "pctGdp": 1.465
+        "pctGdp": 1.465,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 25.78,
+          "year": 2024
+        },
+        "pctRevenue": 5.68,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/at/",
       "names": {
@@ -1421,7 +1525,14 @@
       "defaultMonthly": 130,
       "costAtPovertyLine": {
         "yearly": 43078481160,
-        "pctGdp": 1.55
+        "pctGdp": 1.55,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 23.561,
+          "year": 2022
+        },
+        "pctRevenue": 6.58,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/au/",
       "names": {
@@ -1480,7 +1591,10 @@
       "defaultMonthly": 160,
       "costAtPovertyLine": {
         "yearly": 208867200,
-        "pctGdp": 2.8
+        "pctGdp": 2.8,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/aw/",
       "names": {
@@ -1564,7 +1678,14 @@
       "defaultMonthly": 50,
       "costAtPovertyLine": {
         "yearly": 6148197600,
-        "pctGdp": 4.763
+        "pctGdp": 4.763,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.301,
+          "year": 2024
+        },
+        "pctRevenue": 27.53,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/az/",
       "names": {
@@ -1648,7 +1769,14 @@
       "defaultMonthly": 70,
       "costAtPovertyLine": {
         "yearly": 2637679800,
-        "pctGdp": 4.664
+        "pctGdp": 4.664,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 20.221,
+          "year": 2024
+        },
+        "pctRevenue": 23.07,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ba/",
       "names": {
@@ -1719,7 +1847,10 @@
       "defaultMonthly": 180,
       "costAtPovertyLine": {
         "yearly": 610465680,
-        "pctGdp": 3.808
+        "pctGdp": 3.808,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bb/",
       "names": {
@@ -1803,7 +1934,14 @@
       "defaultMonthly": 3200,
       "costAtPovertyLine": {
         "yearly": 6746376921600,
-        "pctGdp": 12.233
+        "pctGdp": 12.233,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 7.642,
+          "year": 2021
+        },
+        "pctRevenue": 160.07,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bd/",
       "names": {
@@ -1887,7 +2025,14 @@
       "defaultMonthly": 70,
       "costAtPovertyLine": {
         "yearly": 10031096040,
-        "pctGdp": 1.562
+        "pctGdp": 1.562,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 22.96,
+          "year": 2024
+        },
+        "pctRevenue": 6.81,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/be/",
       "names": {
@@ -1971,7 +2116,14 @@
       "defaultMonthly": 18000,
       "costAtPovertyLine": {
         "yearly": 5200109280000,
-        "pctGdp": 32.345
+        "pctGdp": 32.345,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 18.683,
+          "year": 2024
+        },
+        "pctRevenue": 173.12,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bf/",
       "names": {
@@ -2055,7 +2207,14 @@
       "defaultMonthly": 38,
       "costAtPovertyLine": {
         "yearly": 2933585712,
-        "pctGdp": 2.529
+        "pctGdp": 2.529,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 20.672,
+          "year": 2024
+        },
+        "pctRevenue": 12.23,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bg/",
       "names": {
@@ -2139,7 +2298,14 @@
       "defaultMonthly": 17,
       "costAtPovertyLine": {
         "yearly": 326474664,
-        "pctGdp": 1.773
+        "pctGdp": 1.773,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 2.823,
+          "year": 2020
+        },
+        "pctRevenue": 62.81,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bh/",
       "names": {
@@ -2223,7 +2389,14 @@
       "defaultMonthly": 120000,
       "costAtPovertyLine": {
         "yearly": 20721604320000,
-        "pctGdp": 115.424
+        "pctGdp": 115.424,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 12.672,
+          "year": 2021
+        },
+        "pctRevenue": 910.86,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bi/",
       "names": {
@@ -2282,7 +2455,10 @@
       "defaultMonthly": 18000,
       "costAtPovertyLine": {
         "yearly": 3199923360000,
-        "pctGdp": 22.384
+        "pctGdp": 22.384,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bj/",
       "names": {
@@ -2341,7 +2517,10 @@
       "defaultMonthly": 91,
       "costAtPovertyLine": {
         "yearly": 70494060,
-        "pctGdp": 0.767
+        "pctGdp": 0.767,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bm/",
       "names": {
@@ -2400,7 +2579,10 @@
       "defaultMonthly": 48,
       "costAtPovertyLine": {
         "yearly": 268606080,
-        "pctGdp": 1.367
+        "pctGdp": 1.367,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bn/",
       "names": {
@@ -2459,7 +2641,10 @@
       "defaultMonthly": 250,
       "costAtPovertyLine": {
         "yearly": 37745529000,
-        "pctGdp": 8.434
+        "pctGdp": 8.434,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bo/",
       "names": {
@@ -2543,7 +2728,14 @@
       "defaultMonthly": 240,
       "costAtPovertyLine": {
         "yearly": 612899726400,
-        "pctGdp": 4.811
+        "pctGdp": 4.811,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.41,
+          "year": 2024
+        },
+        "pctRevenue": 31.22,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/br/",
       "names": {
@@ -2627,7 +2819,14 @@
       "defaultMonthly": 99,
       "costAtPovertyLine": {
         "yearly": 478803204,
-        "pctGdp": 3.024
+        "pctGdp": 3.024,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.281,
+          "year": 2024
+        },
+        "pctRevenue": 17.5,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bs/",
       "names": {
@@ -2711,7 +2910,14 @@
       "defaultMonthly": 1900,
       "costAtPovertyLine": {
         "yearly": 18164349600,
-        "pctGdp": 5.823
+        "pctGdp": 5.823,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 12.285,
+          "year": 2020
+        },
+        "pctRevenue": 47.4,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bt/",
       "names": {
@@ -2795,7 +3001,14 @@
       "defaultMonthly": 480,
       "costAtPovertyLine": {
         "yearly": 14757822720,
-        "pctGdp": 5.485
+        "pctGdp": 5.485,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 22.42,
+          "year": 2023
+        },
+        "pctRevenue": 24.46,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bw/",
       "names": {
@@ -2879,7 +3092,14 @@
       "defaultMonthly": 77,
       "costAtPovertyLine": {
         "yearly": 8395455684,
-        "pctGdp": 2.929
+        "pctGdp": 2.929,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 13.039,
+          "year": 2024
+        },
+        "pctRevenue": 22.46,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/by/",
       "names": {
@@ -2950,7 +3170,10 @@
       "defaultMonthly": 99,
       "costAtPovertyLine": {
         "yearly": 502433712,
-        "pctGdp": 7.552
+        "pctGdp": 7.552,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/bz/",
       "names": {
@@ -3034,7 +3257,14 @@
       "defaultMonthly": 120,
       "costAtPovertyLine": {
         "yearly": 59978380320,
-        "pctGdp": 1.849
+        "pctGdp": 1.849,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 13.715,
+          "year": 2024
+        },
+        "pctRevenue": 13.48,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ca/",
       "names": {
@@ -3118,7 +3348,14 @@
       "defaultMonthly": 240000,
       "costAtPovertyLine": {
         "yearly": 324957522240000,
-        "pctGdp": 133.363
+        "pctGdp": 133.363,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 10.662,
+          "year": 2022
+        },
+        "pctRevenue": 1250.82,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cd/",
       "names": {
@@ -3202,7 +3439,14 @@
       "defaultMonthly": 24000,
       "costAtPovertyLine": {
         "yearly": 1587825216000,
-        "pctGdp": 88.991
+        "pctGdp": 88.991,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 8.206,
+          "year": 2021
+        },
+        "pctRevenue": 1084.46,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cf/",
       "names": {
@@ -3286,7 +3530,14 @@
       "defaultMonthly": 21000,
       "costAtPovertyLine": {
         "yearly": 1634078124000,
-        "pctGdp": 17.22
+        "pctGdp": 17.22,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 6.509,
+          "year": 2021
+        },
+        "pctRevenue": 264.56,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cg/",
       "names": {
@@ -3370,7 +3621,14 @@
       "defaultMonthly": 97,
       "costAtPovertyLine": {
         "yearly": 10583595504,
-        "pctGdp": 1.22
+        "pctGdp": 1.22,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 9.451,
+          "year": 2024
+        },
+        "pctRevenue": 12.91,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ch/",
       "names": {
@@ -3454,7 +3712,14 @@
       "defaultMonthly": 21000,
       "costAtPovertyLine": {
         "yearly": 8243309844000,
-        "pctGdp": 14.198
+        "pctGdp": 14.198,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 13.037,
+          "year": 2023
+        },
+        "pctRevenue": 108.9,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ci/",
       "names": {
@@ -3538,7 +3803,14 @@
       "defaultMonthly": 44000,
       "costAtPovertyLine": {
         "yearly": 10486038288000,
-        "pctGdp": 3.084
+        "pctGdp": 3.084,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 18.265,
+          "year": 2024
+        },
+        "pctRevenue": 16.89,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cl/",
       "names": {
@@ -3622,7 +3894,14 @@
       "defaultMonthly": 19000,
       "costAtPovertyLine": {
         "yearly": 6812488836000,
-        "pctGdp": 19.864
+        "pctGdp": 19.864,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 11.342,
+          "year": 2021
+        },
+        "pctRevenue": 175.14,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cm/",
       "names": {
@@ -3706,7 +3985,14 @@
       "defaultMonthly": 150000,
       "costAtPovertyLine": {
         "yearly": 96166143000000,
-        "pctGdp": 5.187
+        "pctGdp": 5.187,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.22,
+          "year": 2024
+        },
+        "pctRevenue": 34.08,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/co/",
       "names": {
@@ -3790,7 +4076,14 @@
       "defaultMonthly": 29000,
       "costAtPovertyLine": {
         "yearly": 1793226600000,
-        "pctGdp": 3.461
+        "pctGdp": 3.461,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 13.46,
+          "year": 2024
+        },
+        "pctRevenue": 25.71,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cr/",
       "names": {
@@ -3849,7 +4142,10 @@
       "defaultMonthly": 91,
       "costAtPovertyLine": {
         "yearly": 11943425676,
-        "pctGdp": 11.125
+        "pctGdp": 11.125,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cu/",
       "names": {
@@ -3933,7 +4229,14 @@
       "defaultMonthly": 4800,
       "costAtPovertyLine": {
         "yearly": 30373977600,
-        "pctGdp": 10.154
+        "pctGdp": 10.154,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 18.386,
+          "year": 2020
+        },
+        "pctRevenue": 55.23,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cv/",
       "names": {
@@ -3992,7 +4295,10 @@
       "defaultMonthly": 160,
       "costAtPovertyLine": {
         "yearly": 300024960,
-        "pctGdp": 4.707
+        "pctGdp": 4.707,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cw/",
       "names": {
@@ -4076,7 +4382,14 @@
       "defaultMonthly": 54,
       "costAtPovertyLine": {
         "yearly": 888248592,
-        "pctGdp": 2.435
+        "pctGdp": 2.435,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 23.942,
+          "year": 2024
+        },
+        "pctRevenue": 10.17,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cy/",
       "names": {
@@ -4160,7 +4473,14 @@
       "defaultMonthly": 1300,
       "costAtPovertyLine": {
         "yearly": 169835296800,
-        "pctGdp": 1.985
+        "pctGdp": 1.985,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 18.648,
+          "year": 2024
+        },
+        "pctRevenue": 10.64,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/cz/",
       "names": {
@@ -4219,7 +4539,10 @@
       "defaultMonthly": 8100,
       "costAtPovertyLine": {
         "yearly": 115092187200,
-        "pctGdp": 14.004
+        "pctGdp": 14.004,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/dj/",
       "names": {
@@ -4303,7 +4626,14 @@
       "defaultMonthly": 630,
       "costAtPovertyLine": {
         "yearly": 45429317640,
-        "pctGdp": 1.483
+        "pctGdp": 1.483,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 33.358,
+          "year": 2024
+        },
+        "pctRevenue": 4.45,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/dk/",
       "names": {
@@ -4362,7 +4692,10 @@
       "defaultMonthly": 140,
       "costAtPovertyLine": {
         "yearly": 110663280,
-        "pctGdp": 5.662
+        "pctGdp": 5.662,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/dm/",
       "names": {
@@ -4446,7 +4779,14 @@
       "defaultMonthly": 2200,
       "costAtPovertyLine": {
         "yearly": 304140856800,
-        "pctGdp": 3.851
+        "pctGdp": 3.851,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 14.703,
+          "year": 2024
+        },
+        "pctRevenue": 26.19,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/do/",
       "names": {
@@ -4505,7 +4845,10 @@
       "defaultMonthly": 3800,
       "costAtPovertyLine": {
         "yearly": 2163050227200,
-        "pctGdp": 5.726
+        "pctGdp": 5.726,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/dz/",
       "names": {
@@ -4589,7 +4932,14 @@
       "defaultMonthly": 40,
       "costAtPovertyLine": {
         "yearly": 8779150080,
-        "pctGdp": 6.737
+        "pctGdp": 6.737,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 13.089,
+          "year": 2022
+        },
+        "pctRevenue": 51.47,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ec/",
       "names": {
@@ -4673,7 +5023,14 @@
       "defaultMonthly": 61,
       "costAtPovertyLine": {
         "yearly": 1000259700,
-        "pctGdp": 2.403
+        "pctGdp": 2.403,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 22.668,
+          "year": 2024
+        },
+        "pctRevenue": 10.6,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ee/",
       "names": {
@@ -4757,7 +5114,14 @@
       "defaultMonthly": 2500,
       "costAtPovertyLine": {
         "yearly": 4064161530000,
-        "pctGdp": 26.925
+        "pctGdp": 26.925,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 3.398,
+          "year": 2024
+        },
+        "pctRevenue": 792.38,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/et/",
       "names": {
@@ -4841,7 +5205,14 @@
       "defaultMonthly": 73,
       "costAtPovertyLine": {
         "yearly": 4946277936,
-        "pctGdp": 1.763
+        "pctGdp": 1.763,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 25.328,
+          "year": 2024
+        },
+        "pctRevenue": 6.96,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/fi/",
       "names": {
@@ -4925,7 +5296,14 @@
       "defaultMonthly": 81,
       "costAtPovertyLine": {
         "yearly": 907025688,
-        "pctGdp": 6.365
+        "pctGdp": 6.365,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 23.946,
+          "year": 2024
+        },
+        "pctRevenue": 26.58,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/fj/",
       "names": {
@@ -5009,7 +5387,14 @@
       "defaultMonthly": 91,
       "costAtPovertyLine": {
         "yearly": 124141836,
-        "pctGdp": 24.739
+        "pctGdp": 24.739,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 7.031,
+          "year": 2020
+        },
+        "pctRevenue": 351.86,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/fm/",
       "names": {
@@ -5068,7 +5453,10 @@
       "defaultMonthly": 630,
       "costAtPovertyLine": {
         "yearly": 415044000,
-        "pctGdp": 1.485
+        "pctGdp": 1.485,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/fo/",
       "names": {
@@ -5152,7 +5540,14 @@
       "defaultMonthly": 67,
       "costAtPovertyLine": {
         "yearly": 55251150948,
-        "pctGdp": 1.855
+        "pctGdp": 1.855,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 22.778,
+          "year": 2024
+        },
+        "pctRevenue": 8.14,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/fr/",
       "names": {
@@ -5236,7 +5631,14 @@
       "defaultMonthly": 26000,
       "costAtPovertyLine": {
         "yearly": 809056560000,
-        "pctGdp": 6.489
+        "pctGdp": 6.489,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 9.49,
+          "year": 2021
+        },
+        "pctRevenue": 68.37,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ga/",
       "names": {
@@ -5320,7 +5722,14 @@
       "defaultMonthly": 64,
       "costAtPovertyLine": {
         "yearly": 53366016000,
-        "pctGdp": 1.756
+        "pctGdp": 1.756,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 26.889,
+          "year": 2024
+        },
+        "pctRevenue": 6.53,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gb/",
       "names": {
@@ -5379,7 +5788,10 @@
       "defaultMonthly": 150,
       "costAtPovertyLine": {
         "yearly": 211145400,
-        "pctGdp": 5.507
+        "pctGdp": 5.507,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gd/",
       "names": {
@@ -5463,7 +5875,14 @@
       "defaultMonthly": 99,
       "costAtPovertyLine": {
         "yearly": 4675690008,
-        "pctGdp": 4.47
+        "pctGdp": 4.47,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 24.258,
+          "year": 2024
+        },
+        "pctRevenue": 18.43,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ge/",
       "names": {
@@ -5547,7 +5966,14 @@
       "defaultMonthly": 480,
       "costAtPovertyLine": {
         "yearly": 201970206720,
-        "pctGdp": 14.083
+        "pctGdp": 14.083,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 12.393,
+          "year": 2023
+        },
+        "pctRevenue": 113.64,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gh/",
       "names": {
@@ -5606,7 +6032,10 @@
       "defaultMonthly": 630,
       "costAtPovertyLine": {
         "yearly": 429642360,
-        "pctGdp": 1.875
+        "pctGdp": 1.875,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gl/",
       "names": {
@@ -5665,7 +6094,10 @@
       "defaultMonthly": 1800,
       "costAtPovertyLine": {
         "yearly": 60957208800,
-        "pctGdp": 32.759
+        "pctGdp": 32.759,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gm/",
       "names": {
@@ -5724,7 +6156,10 @@
       "defaultMonthly": 330000,
       "costAtPovertyLine": {
         "yearly": 59794918920000,
-        "pctGdp": 24.421
+        "pctGdp": 24.421,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gn/",
       "names": {
@@ -5808,7 +6243,14 @@
       "defaultMonthly": 25000,
       "costAtPovertyLine": {
         "yearly": 581529300000,
-        "pctGdp": 7.793
+        "pctGdp": 7.793,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 6.596,
+          "year": 2022
+        },
+        "pctRevenue": 118.15,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gq/",
       "names": {
@@ -5892,7 +6334,14 @@
       "defaultMonthly": 53,
       "costAtPovertyLine": {
         "yearly": 6623279832,
-        "pctGdp": 2.667
+        "pctGdp": 2.667,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 27.381,
+          "year": 2024
+        },
+        "pctRevenue": 9.74,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gr/",
       "names": {
@@ -5976,7 +6425,14 @@
       "defaultMonthly": 310,
       "costAtPovertyLine": {
         "yearly": 69518917320,
-        "pctGdp": 7.341
+        "pctGdp": 7.341,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 11.63,
+          "year": 2024
+        },
+        "pctRevenue": 63.12,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gt/",
       "names": {
@@ -6035,7 +6491,10 @@
       "defaultMonthly": 100,
       "costAtPovertyLine": {
         "yearly": 202798800,
-        "pctGdp": 2.935
+        "pctGdp": 2.935,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gu/",
       "names": {
@@ -6119,7 +6578,14 @@
       "defaultMonthly": 21000,
       "costAtPovertyLine": {
         "yearly": 566877780000,
-        "pctGdp": 38.535
+        "pctGdp": 38.535,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 8.304,
+          "year": 2024
+        },
+        "pctRevenue": 464.05,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gw/",
       "names": {
@@ -6178,7 +6644,10 @@
       "defaultMonthly": 8900,
       "costAtPovertyLine": {
         "yearly": 89283304800,
-        "pctGdp": 1.58
+        "pctGdp": 1.58,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/gy/",
       "names": {
@@ -6237,7 +6706,10 @@
       "defaultMonthly": 530,
       "costAtPovertyLine": {
         "yearly": 47693004000,
-        "pctGdp": 1.431
+        "pctGdp": 1.431,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/hk/",
       "names": {
@@ -6321,7 +6793,14 @@
       "defaultMonthly": 1200,
       "costAtPovertyLine": {
         "yearly": 158484240000,
-        "pctGdp": 15.42
+        "pctGdp": 15.42,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.066,
+          "year": 2020
+        },
+        "pctRevenue": 102.35,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/hn/",
       "names": {
@@ -6405,7 +6884,14 @@
       "defaultMonthly": 48,
       "costAtPovertyLine": {
         "yearly": 2232691200,
-        "pctGdp": 2.401
+        "pctGdp": 2.401,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 21.184,
+          "year": 2023
+        },
+        "pctRevenue": 11.34,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/hr/",
       "names": {
@@ -6464,7 +6950,10 @@
       "defaultMonthly": 12000,
       "costAtPovertyLine": {
         "yearly": 1714477680000,
-        "pctGdp": 40.897
+        "pctGdp": 40.897,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ht/",
       "names": {
@@ -6548,7 +7037,14 @@
       "defaultMonthly": 19000,
       "costAtPovertyLine": {
         "yearly": 2169249228000,
-        "pctGdp": 2.492
+        "pctGdp": 2.492,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 22.743,
+          "year": 2024
+        },
+        "pctRevenue": 10.96,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/hu/",
       "names": {
@@ -6607,7 +7103,10 @@
       "defaultMonthly": 460000,
       "costAtPovertyLine": {
         "yearly": 1577181222720000,
-        "pctGdp": 6.621
+        "pctGdp": 6.621,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/id/",
       "names": {
@@ -6691,7 +7190,14 @@
       "defaultMonthly": 82,
       "costAtPovertyLine": {
         "yearly": 5396617128,
-        "pctGdp": 0.845
+        "pctGdp": 0.845,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.942,
+          "year": 2024
+        },
+        "pctRevenue": 4.71,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ie/",
       "names": {
@@ -6775,7 +7281,14 @@
       "defaultMonthly": 330,
       "costAtPovertyLine": {
         "yearly": 40086288000,
-        "pctGdp": 1.901
+        "pctGdp": 1.901,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 23.242,
+          "year": 2024
+        },
+        "pctRevenue": 8.18,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/il/",
       "names": {
@@ -6834,7 +7347,10 @@
       "defaultMonthly": 73,
       "costAtPovertyLine": {
         "yearly": 73687368,
-        "pctGdp": 1.209
+        "pctGdp": 1.209,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/im/",
       "names": {
@@ -6905,7 +7421,10 @@
       "defaultMonthly": 50000,
       "costAtPovertyLine": {
         "yearly": 28212464400000,
-        "pctGdp": 8.532
+        "pctGdp": 8.532,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/iq/",
       "names": {
@@ -6964,7 +7483,10 @@
       "defaultMonthly": 14000000,
       "costAtPovertyLine": {
         "yearly": 15526170408000000,
-        "pctGdp": 5.765
+        "pctGdp": 5.765,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ir/",
       "names": {
@@ -7048,7 +7570,14 @@
       "defaultMonthly": 15000,
       "costAtPovertyLine": {
         "yearly": 70632720000,
-        "pctGdp": 1.425
+        "pctGdp": 1.425,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 23.157,
+          "year": 2023
+        },
+        "pctRevenue": 6.15,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/is/",
       "names": {
@@ -7132,7 +7661,14 @@
       "defaultMonthly": 59,
       "costAtPovertyLine": {
         "yearly": 41712284448,
-        "pctGdp": 1.847
+        "pctGdp": 1.847,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 25.605,
+          "year": 2024
+        },
+        "pctRevenue": 7.21,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/it/",
       "names": {
@@ -7191,7 +7727,10 @@
       "defaultMonthly": 73,
       "costAtPovertyLine": {
         "yearly": 147576216,
-        "pctGdp": 1.467
+        "pctGdp": 1.467,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/jg/",
       "names": {
@@ -7275,7 +7814,14 @@
       "defaultMonthly": 9000,
       "costAtPovertyLine": {
         "yearly": 306404316000,
-        "pctGdp": 8.482
+        "pctGdp": 8.482,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 23.674,
+          "year": 2020
+        },
+        "pctRevenue": 35.83,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/jm/",
       "names": {
@@ -7359,7 +7905,14 @@
       "defaultMonthly": 29,
       "costAtPovertyLine": {
         "yearly": 4009198032,
-        "pctGdp": 9.165
+        "pctGdp": 9.165,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.52,
+          "year": 2023
+        },
+        "pctRevenue": 59.05,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/jo/",
       "names": {
@@ -7443,7 +7996,14 @@
       "defaultMonthly": 4100,
       "costAtPovertyLine": {
         "yearly": 2830598655600,
-        "pctGdp": 16.103
+        "pctGdp": 16.103,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 14.063,
+          "year": 2023
+        },
+        "pctRevenue": 114.51,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ke/",
       "names": {
@@ -7527,7 +8087,14 @@
       "defaultMonthly": 2700,
       "costAtPovertyLine": {
         "yearly": 237915273600,
-        "pctGdp": 12.038
+        "pctGdp": 12.038,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 19.615,
+          "year": 2024
+        },
+        "pctRevenue": 61.37,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/kg/",
       "names": {
@@ -7611,7 +8178,14 @@
       "defaultMonthly": 130000,
       "costAtPovertyLine": {
         "yearly": 27842851920000,
-        "pctGdp": 13.532
+        "pctGdp": 13.532,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 12.204,
+          "year": 2023
+        },
+        "pctRevenue": 110.88,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/kh/",
       "names": {
@@ -7695,7 +8269,14 @@
       "defaultMonthly": 88,
       "costAtPovertyLine": {
         "yearly": 144131328,
-        "pctGdp": 26.592
+        "pctGdp": 26.592,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.532,
+          "year": 2023
+        },
+        "pctRevenue": 151.68,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ki/",
       "names": {
@@ -7754,7 +8335,10 @@
       "defaultMonthly": 23000,
       "costAtPovertyLine": {
         "yearly": 243665772000,
-        "pctGdp": 30.766
+        "pctGdp": 30.766,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/km/",
       "names": {
@@ -7838,7 +8422,14 @@
       "defaultMonthly": 250,
       "costAtPovertyLine": {
         "yearly": 140766000,
-        "pctGdp": 4.405
+        "pctGdp": 4.405,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.042,
+          "year": 2020
+        },
+        "pctRevenue": 29.29,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/kn/",
       "names": {
@@ -7922,7 +8513,14 @@
       "defaultMonthly": 80000,
       "costAtPovertyLine": {
         "yearly": 49617181440000,
-        "pctGdp": 1.863
+        "pctGdp": 1.863,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 13.294,
+          "year": 2024
+        },
+        "pctRevenue": 14.01,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/kr/",
       "names": {
@@ -7981,7 +8579,10 @@
       "defaultMonthly": 17,
       "costAtPovertyLine": {
         "yearly": 992520792,
-        "pctGdp": 2.06
+        "pctGdp": 2.06,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/kw/",
       "names": {
@@ -8040,7 +8641,10 @@
       "defaultMonthly": 76,
       "costAtPovertyLine": {
         "yearly": 69169728,
-        "pctGdp": 1.069
+        "pctGdp": 1.069,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ky/",
       "names": {
@@ -8124,7 +8728,14 @@
       "defaultMonthly": 17000,
       "costAtPovertyLine": {
         "yearly": 4252125816000,
-        "pctGdp": 2.665
+        "pctGdp": 2.665,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 11.892,
+          "year": 2023
+        },
+        "pctRevenue": 22.41,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/kz/",
       "names": {
@@ -8208,7 +8819,14 @@
       "defaultMonthly": 540000,
       "costAtPovertyLine": {
         "yearly": 51017338080000,
-        "pctGdp": 13.634
+        "pctGdp": 13.634,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 12.113,
+          "year": 2022
+        },
+        "pctRevenue": 112.56,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/la/",
       "names": {
@@ -8292,7 +8910,14 @@
       "defaultMonthly": 5300000,
       "costAtPovertyLine": {
         "yearly": 372023175600000,
-        "pctGdp": 16.005
+        "pctGdp": 16.005,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 11.139,
+          "year": 2024
+        },
+        "pctRevenue": 143.68,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/lb/",
       "names": {
@@ -8363,7 +8988,10 @@
       "defaultMonthly": 150,
       "costAtPovertyLine": {
         "yearly": 324268200,
-        "pctGdp": 4.521
+        "pctGdp": 4.521,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/lc/",
       "names": {
@@ -8422,7 +9050,10 @@
       "defaultMonthly": 80,
       "costAtPovertyLine": {
         "yearly": 39383040,
-        "pctGdp": 0.502
+        "pctGdp": 0.502,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/li/",
       "names": {
@@ -8506,7 +9137,14 @@
       "defaultMonthly": 7400,
       "costAtPovertyLine": {
         "yearly": 1931932800000,
-        "pctGdp": 5.899
+        "pctGdp": 5.899,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 9.879,
+          "year": 2023
+        },
+        "pctRevenue": 59.71,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/lk/",
       "names": {
@@ -8565,7 +9203,10 @@
       "defaultMonthly": 49,
       "costAtPovertyLine": {
         "yearly": 3369949128,
-        "pctGdp": 64.239
+        "pctGdp": 64.239,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/lr/",
       "names": {
@@ -8649,7 +9290,14 @@
       "defaultMonthly": 570,
       "costAtPovertyLine": {
         "yearly": 16165143000,
-        "pctGdp": 35.113
+        "pctGdp": 35.113,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 35.419,
+          "year": 2024
+        },
+        "pctRevenue": 99.13,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ls/",
       "names": {
@@ -8733,7 +9381,14 @@
       "defaultMonthly": 50,
       "costAtPovertyLine": {
         "yearly": 1733264400,
-        "pctGdp": 2.057
+        "pctGdp": 2.057,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 21.869,
+          "year": 2024
+        },
+        "pctRevenue": 9.41,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/lt/",
       "names": {
@@ -8817,7 +9472,14 @@
       "defaultMonthly": 80,
       "costAtPovertyLine": {
         "yearly": 659491200,
-        "pctGdp": 0.737
+        "pctGdp": 0.737,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 28.637,
+          "year": 2024
+        },
+        "pctRevenue": 2.57,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/lu/",
       "names": {
@@ -8901,7 +9563,14 @@
       "defaultMonthly": 50,
       "costAtPovertyLine": {
         "yearly": 1108671000,
-        "pctGdp": 2.577
+        "pctGdp": 2.577,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.647,
+          "year": 2024
+        },
+        "pctRevenue": 14.6,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/lv/",
       "names": {
@@ -8960,7 +9629,10 @@
       "defaultMonthly": 160,
       "costAtPovertyLine": {
         "yearly": 14320425600,
-        "pctGdp": 5.612
+        "pctGdp": 5.612,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ly/",
       "names": {
@@ -9044,7 +9716,14 @@
       "defaultMonthly": 360,
       "costAtPovertyLine": {
         "yearly": 166020926400,
-        "pctGdp": 9.736
+        "pctGdp": 9.736,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 22.681,
+          "year": 2024
+        },
+        "pctRevenue": 42.93,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ma/",
       "names": {
@@ -9103,7 +9782,10 @@
       "defaultMonthly": 84,
       "costAtPovertyLine": {
         "yearly": 38647728,
-        "pctGdp": 0.376
+        "pctGdp": 0.376,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mc/",
       "names": {
@@ -9187,7 +9869,14 @@
       "defaultMonthly": 800,
       "costAtPovertyLine": {
         "yearly": 22661059200,
-        "pctGdp": 6.41
+        "pctGdp": 6.41,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 18.791,
+          "year": 2024
+        },
+        "pctRevenue": 34.11,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/md/",
       "names": {
@@ -9246,7 +9935,10 @@
       "defaultMonthly": 40,
       "costAtPovertyLine": {
         "yearly": 299101920,
-        "pctGdp": 3.661
+        "pctGdp": 3.661,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/me/",
       "names": {
@@ -9305,7 +9997,10 @@
       "defaultMonthly": 77,
       "costAtPovertyLine": {
         "yearly": 23045484,
-        "pctGdp": 4.198
+        "pctGdp": 4.198,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mf/",
       "names": {
@@ -9389,7 +10084,14 @@
       "defaultMonthly": 120000,
       "costAtPovertyLine": {
         "yearly": 47146576320000,
-        "pctGdp": 53.048
+        "pctGdp": 53.048,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 10.945,
+          "year": 2024
+        },
+        "pctRevenue": 484.68,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mg/",
       "names": {
@@ -9473,7 +10175,14 @@
       "defaultMonthly": 91,
       "costAtPovertyLine": {
         "yearly": 39619944,
-        "pctGdp": 12.864
+        "pctGdp": 12.864,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.156,
+          "year": 2020
+        },
+        "pctRevenue": 74.98,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mh/",
       "names": {
@@ -9557,7 +10266,14 @@
       "defaultMonthly": 2000,
       "costAtPovertyLine": {
         "yearly": 43701816000,
-        "pctGdp": 4.186
+        "pctGdp": 4.186,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 18.757,
+          "year": 2024
+        },
+        "pctRevenue": 22.32,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mk/",
       "names": {
@@ -9641,7 +10357,14 @@
       "defaultMonthly": 18000,
       "costAtPovertyLine": {
         "yearly": 5442945336000,
-        "pctGdp": 31.106
+        "pctGdp": 31.106,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 11.952,
+          "year": 2020
+        },
+        "pctRevenue": 260.26,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ml/",
       "names": {
@@ -9712,7 +10435,10 @@
       "defaultMonthly": 190000,
       "costAtPovertyLine": {
         "yearly": 125059477440000,
-        "pctGdp": 72.922
+        "pctGdp": 72.922,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mm/",
       "names": {
@@ -9796,7 +10522,14 @@
       "defaultMonthly": 110000,
       "costAtPovertyLine": {
         "yearly": 4711050960000,
-        "pctGdp": 5.238
+        "pctGdp": 5.238,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 16.855,
+          "year": 2024
+        },
+        "pctRevenue": 31.08,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mn/",
       "names": {
@@ -9880,7 +10613,14 @@
       "defaultMonthly": 450,
       "costAtPovertyLine": {
         "yearly": 3703860000,
-        "pctGdp": 0.886
+        "pctGdp": 0.886,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 27.416,
+          "year": 2024
+        },
+        "pctRevenue": 3.23,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mo/",
       "names": {
@@ -9939,7 +10679,10 @@
       "defaultMonthly": 86,
       "costAtPovertyLine": {
         "yearly": 44934312,
-        "pctGdp": 4.1
+        "pctGdp": 4.1,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mp/",
       "names": {
@@ -9998,7 +10741,10 @@
       "defaultMonthly": 1100,
       "costAtPovertyLine": {
         "yearly": 70158858000,
-        "pctGdp": 15.097
+        "pctGdp": 15.097,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mr/",
       "names": {
@@ -10082,7 +10828,14 @@
       "defaultMonthly": 56,
       "costAtPovertyLine": {
         "yearly": 389561088,
-        "pctGdp": 1.585
+        "pctGdp": 1.585,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 24.078,
+          "year": 2024
+        },
+        "pctRevenue": 6.58,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mt/",
       "names": {
@@ -10166,7 +10919,14 @@
       "defaultMonthly": 1800,
       "costAtPovertyLine": {
         "yearly": 26864805600,
-        "pctGdp": 3.615
+        "pctGdp": 3.615,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 20.532,
+          "year": 2024
+        },
+        "pctRevenue": 17.61,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mu/",
       "names": {
@@ -10250,7 +11010,14 @@
       "defaultMonthly": 870,
       "costAtPovertyLine": {
         "yearly": 5529817440,
-        "pctGdp": 4.634
+        "pctGdp": 4.634,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 19.453,
+          "year": 2021
+        },
+        "pctRevenue": 23.82,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mv/",
       "names": {
@@ -10334,7 +11101,14 @@
       "defaultMonthly": 57000,
       "costAtPovertyLine": {
         "yearly": 15195826080000,
-        "pctGdp": 58.179
+        "pctGdp": 58.179,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.598,
+          "year": 2024
+        },
+        "pctRevenue": 372.99,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mw/",
       "names": {
@@ -10418,7 +11192,14 @@
       "defaultMonthly": 1000,
       "costAtPovertyLine": {
         "yearly": 1583362800000,
-        "pctGdp": 4.491
+        "pctGdp": 4.491,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 14.824,
+          "year": 2024
+        },
+        "pctRevenue": 30.3,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mx/",
       "names": {
@@ -10502,7 +11283,14 @@
       "defaultMonthly": 130,
       "costAtPovertyLine": {
         "yearly": 56125427280,
-        "pctGdp": 2.774
+        "pctGdp": 2.774,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 12.43,
+          "year": 2024
+        },
+        "pctRevenue": 22.32,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/my/",
       "names": {
@@ -10586,7 +11374,14 @@
       "defaultMonthly": 2300,
       "costAtPovertyLine": {
         "yearly": 983433622800,
-        "pctGdp": 68.697
+        "pctGdp": 68.697,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 21.846,
+          "year": 2024
+        },
+        "pctRevenue": 314.46,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/mz/",
       "names": {
@@ -10670,7 +11465,14 @@
       "defaultMonthly": 670,
       "costAtPovertyLine": {
         "yearly": 24866240640,
-        "pctGdp": 9.218
+        "pctGdp": 9.218,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 33.872,
+          "year": 2024
+        },
+        "pctRevenue": 27.21,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/na/",
       "names": {
@@ -10729,7 +11531,10 @@
       "defaultMonthly": 10000,
       "costAtPovertyLine": {
         "yearly": 35439960000,
-        "pctGdp": 3.758
+        "pctGdp": 3.758,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/nc/",
       "names": {
@@ -10788,7 +11593,10 @@
       "defaultMonthly": 18000,
       "costAtPovertyLine": {
         "yearly": 6030251496000,
-        "pctGdp": 47.872
+        "pctGdp": 47.872,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ne/",
       "names": {
@@ -10847,7 +11655,10 @@
       "defaultMonthly": 29000,
       "costAtPovertyLine": {
         "yearly": 82659668136000,
-        "pctGdp": 18.721
+        "pctGdp": 18.721,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ng/",
       "names": {
@@ -10931,7 +11742,14 @@
       "defaultMonthly": 1200,
       "costAtPovertyLine": {
         "yearly": 100908028800,
-        "pctGdp": 12.39
+        "pctGdp": 12.39,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 20.09,
+          "year": 2024
+        },
+        "pctRevenue": 61.67,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ni/",
       "names": {
@@ -11015,7 +11833,14 @@
       "defaultMonthly": 70,
       "costAtPovertyLine": {
         "yearly": 15193611720,
-        "pctGdp": 1.288
+        "pctGdp": 1.288,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 25.276,
+          "year": 2024
+        },
+        "pctRevenue": 5.1,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/nl/",
       "names": {
@@ -11099,7 +11924,14 @@
       "defaultMonthly": 910,
       "costAtPovertyLine": {
         "yearly": 61270700400,
-        "pctGdp": 1.11
+        "pctGdp": 1.11,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 24.542,
+          "year": 2024
+        },
+        "pctRevenue": 4.52,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/no/",
       "names": {
@@ -11183,7 +12015,14 @@
       "defaultMonthly": 3200,
       "costAtPovertyLine": {
         "yearly": 1137335731200,
-        "pctGdp": 18.345
+        "pctGdp": 18.345,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 13.945,
+          "year": 2023
+        },
+        "pctRevenue": 131.55,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/np/",
       "names": {
@@ -11267,7 +12106,14 @@
       "defaultMonthly": 140,
       "costAtPovertyLine": {
         "yearly": 20202000,
-        "pctGdp": 7.427
+        "pctGdp": 7.427,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 21.42,
+          "year": 2024
+        },
+        "pctRevenue": 34.67,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/nr/",
       "names": {
@@ -11351,7 +12197,14 @@
       "defaultMonthly": 140,
       "costAtPovertyLine": {
         "yearly": 8945496000,
-        "pctGdp": 1.989
+        "pctGdp": 1.989,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 29.521,
+          "year": 2024
+        },
+        "pctRevenue": 6.74,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/nz/",
       "names": {
@@ -11410,7 +12263,10 @@
       "defaultMonthly": 17,
       "costAtPovertyLine": {
         "yearly": 1120916964,
-        "pctGdp": 2.66
+        "pctGdp": 2.66,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/om/",
       "names": {
@@ -11494,7 +12350,14 @@
       "defaultMonthly": 45,
       "costAtPovertyLine": {
         "yearly": 2468442060,
-        "pctGdp": 2.729
+        "pctGdp": 2.729,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 7.178,
+          "year": 2024
+        },
+        "pctRevenue": 38.01,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/pa/",
       "names": {
@@ -11578,7 +12441,14 @@
       "defaultMonthly": 180,
       "costAtPovertyLine": {
         "yearly": 74685596400,
-        "pctGdp": 6.253
+        "pctGdp": 6.253,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.919,
+          "year": 2021
+        },
+        "pctRevenue": 39.28,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/pe/",
       "names": {
@@ -11637,7 +12507,10 @@
       "defaultMonthly": 10000,
       "costAtPovertyLine": {
         "yearly": 33895800000,
-        "pctGdp": 4.859
+        "pctGdp": 4.859,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/pf/",
       "names": {
@@ -11721,7 +12594,14 @@
       "defaultMonthly": 250,
       "costAtPovertyLine": {
         "yearly": 32288451000,
-        "pctGdp": 24.099
+        "pctGdp": 24.099,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.544,
+          "year": 2024
+        },
+        "pctRevenue": 155.04,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/pg/",
       "names": {
@@ -11805,7 +12685,14 @@
       "defaultMonthly": 1900,
       "costAtPovertyLine": {
         "yearly": 2662742733600,
-        "pctGdp": 9.506
+        "pctGdp": 9.506,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 14.37,
+          "year": 2024
+        },
+        "pctRevenue": 66.15,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ph/",
       "names": {
@@ -11864,7 +12751,10 @@
       "defaultMonthly": 6000,
       "costAtPovertyLine": {
         "yearly": 18375807888000,
-        "pctGdp": 16.146
+        "pctGdp": 16.146,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/pk/",
       "names": {
@@ -11948,7 +12838,14 @@
       "defaultMonthly": 190,
       "costAtPovertyLine": {
         "yearly": 83073763080,
-        "pctGdp": 2.133
+        "pctGdp": 2.133,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.39,
+          "year": 2024
+        },
+        "pctRevenue": 12.27,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/pl/",
       "names": {
@@ -12007,7 +12904,10 @@
       "defaultMonthly": 91,
       "costAtPovertyLine": {
         "yearly": 3477839820,
-        "pctGdp": 2.688
+        "pctGdp": 2.688,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/pr/",
       "names": {
@@ -12075,7 +12975,10 @@
       "defaultMonthly": 83,
       "costAtPovertyLine": {
         "yearly": 5391941616,
-        "pctGdp": 31.409
+        "pctGdp": 31.409,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ps/",
       "names": {
@@ -12159,7 +13062,14 @@
       "defaultMonthly": 52,
       "costAtPovertyLine": {
         "yearly": 6742239504,
-        "pctGdp": 2.198
+        "pctGdp": 2.198,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 22.347,
+          "year": 2024
+        },
+        "pctRevenue": 9.84,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/pt/",
       "names": {
@@ -12243,7 +13153,14 @@
       "defaultMonthly": 88,
       "costAtPovertyLine": {
         "yearly": 18652128,
-        "pctGdp": 5.406
+        "pctGdp": 5.406,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 18.081,
+          "year": 2020
+        },
+        "pctRevenue": 29.9,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/pw/",
       "names": {
@@ -12327,7 +13244,14 @@
       "defaultMonthly": 260000,
       "costAtPovertyLine": {
         "yearly": 21880803360000,
-        "pctGdp": 5.885
+        "pctGdp": 5.885,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 11.333,
+          "year": 2024
+        },
+        "pctRevenue": 51.93,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/py/",
       "names": {
@@ -12386,7 +13310,10 @@
       "defaultMonthly": 250,
       "costAtPovertyLine": {
         "yearly": 8916645000,
-        "pctGdp": 1.136
+        "pctGdp": 1.136,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/qa/",
       "names": {
@@ -12470,7 +13397,14 @@
       "defaultMonthly": 200,
       "costAtPovertyLine": {
         "yearly": 45648650400,
-        "pctGdp": 2.382
+        "pctGdp": 2.382,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 16.206,
+          "year": 2024
+        },
+        "pctRevenue": 14.7,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ro/",
       "names": {
@@ -12554,7 +13488,14 @@
       "defaultMonthly": 4800,
       "costAtPovertyLine": {
         "yearly": 377230636800,
-        "pctGdp": 3.63
+        "pctGdp": 3.63,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 23.893,
+          "year": 2022
+        },
+        "pctRevenue": 15.19,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/rs/",
       "names": {
@@ -12638,7 +13579,14 @@
       "defaultMonthly": 2800,
       "costAtPovertyLine": {
         "yearly": 4822047820800,
-        "pctGdp": 2.251
+        "pctGdp": 2.251,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 10.872,
+          "year": 2024
+        },
+        "pctRevenue": 20.7,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ru/",
       "names": {
@@ -12722,7 +13670,14 @@
       "defaultMonthly": 34000,
       "costAtPovertyLine": {
         "yearly": 5944291128000,
-        "pctGdp": 25.417
+        "pctGdp": 25.417,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 12.692,
+          "year": 2024
+        },
+        "pctRevenue": 200.26,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/rw/",
       "names": {
@@ -12806,7 +13761,14 @@
       "defaultMonthly": 170,
       "costAtPovertyLine": {
         "yearly": 75426052200,
-        "pctGdp": 1.575
+        "pctGdp": 1.575,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 8.091,
+          "year": 2024
+        },
+        "pctRevenue": 19.47,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sa/",
       "names": {
@@ -12890,7 +13852,14 @@
       "defaultMonthly": 700,
       "costAtPovertyLine": {
         "yearly": 7044618000,
-        "pctGdp": 48.355
+        "pctGdp": 48.355,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 23.274,
+          "year": 2024
+        },
+        "pctRevenue": 207.77,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sb/",
       "names": {
@@ -12949,7 +13918,10 @@
       "defaultMonthly": 770,
       "costAtPovertyLine": {
         "yearly": 1134025200,
-        "pctGdp": 3.226
+        "pctGdp": 3.226,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sc/",
       "names": {
@@ -13020,7 +13992,10 @@
       "defaultMonthly": 200000,
       "costAtPovertyLine": {
         "yearly": 123989152800000,
-        "pctGdp": 93.124
+        "pctGdp": 93.124,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sd/",
       "names": {
@@ -13104,7 +14079,14 @@
       "defaultMonthly": 810,
       "costAtPovertyLine": {
         "yearly": 102999146400,
-        "pctGdp": 1.568
+        "pctGdp": 1.568,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 27.226,
+          "year": 2024
+        },
+        "pctRevenue": 5.76,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/se/",
       "names": {
@@ -13188,7 +14170,14 @@
       "defaultMonthly": 93,
       "costAtPovertyLine": {
         "yearly": 6820071300,
-        "pctGdp": 0.864
+        "pctGdp": 0.864,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 13.56,
+          "year": 2024
+        },
+        "pctRevenue": 6.37,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sg/",
       "names": {
@@ -13272,7 +14261,14 @@
       "defaultMonthly": 54,
       "costAtPovertyLine": {
         "yearly": 1380878928,
-        "pctGdp": 1.959
+        "pctGdp": 1.959,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 20.985,
+          "year": 2024
+        },
+        "pctRevenue": 9.34,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/si/",
       "names": {
@@ -13356,7 +14352,14 @@
       "defaultMonthly": 52,
       "costAtPovertyLine": {
         "yearly": 3378219312,
-        "pctGdp": 2.47
+        "pctGdp": 2.47,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 19.142,
+          "year": 2024
+        },
+        "pctRevenue": 12.91,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sk/",
       "names": {
@@ -13415,7 +14418,10 @@
       "defaultMonthly": 630,
       "costAtPovertyLine": {
         "yearly": 66677642640,
-        "pctGdp": 39.427
+        "pctGdp": 39.427,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sl/",
       "names": {
@@ -13499,7 +14505,14 @@
       "defaultMonthly": 67,
       "costAtPovertyLine": {
         "yearly": 27423636,
-        "pctGdp": 1.463
+        "pctGdp": 1.463,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.269,
+          "year": 2023
+        },
+        "pctRevenue": 8.47,
+        "mapBand": "under10"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sm/",
       "names": {
@@ -13583,7 +14596,14 @@
       "defaultMonthly": 21000,
       "costAtPovertyLine": {
         "yearly": 4770855432000,
-        "pctGdp": 22.154
+        "pctGdp": 22.154,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 19.537,
+          "year": 2023
+        },
+        "pctRevenue": 113.39,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sn/",
       "names": {
@@ -13667,7 +14687,14 @@
       "defaultMonthly": 2700000,
       "costAtPovertyLine": {
         "yearly": 636813543600000,
-        "pctGdp": 162.784
+        "pctGdp": 162.784,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 2.239,
+          "year": 2024
+        },
+        "pctRevenue": 7270.41,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/so/",
       "names": {
@@ -13726,7 +14753,10 @@
       "defaultMonthly": 1400,
       "costAtPovertyLine": {
         "yearly": 10749480000,
-        "pctGdp": 6.378
+        "pctGdp": 6.378,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sr/",
       "names": {
@@ -13785,7 +14815,10 @@
       "defaultMonthly": 1300,
       "costAtPovertyLine": {
         "yearly": 3747962400,
-        "pctGdp": 17.609
+        "pctGdp": 17.609,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/st/",
       "names": {
@@ -13869,7 +14902,14 @@
       "defaultMonthly": 43,
       "costAtPovertyLine": {
         "yearly": 3284599548,
-        "pctGdp": 8.948
+        "pctGdp": 8.948,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 21.796,
+          "year": 2024
+        },
+        "pctRevenue": 41.05,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sv/",
       "names": {
@@ -13928,7 +14968,10 @@
       "defaultMonthly": 160,
       "costAtPovertyLine": {
         "yearly": 84332160,
-        "pctGdp": 2.496
+        "pctGdp": 2.496,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sx/",
       "names": {
@@ -13987,7 +15030,10 @@
       "defaultMonthly": 46000,
       "costAtPovertyLine": {
         "yearly": 14142475704000,
-        "pctGdp": 15.887
+        "pctGdp": 15.887,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sy/",
       "names": {
@@ -14071,7 +15117,14 @@
       "defaultMonthly": 1600,
       "costAtPovertyLine": {
         "yearly": 24118540800,
-        "pctGdp": 26.125
+        "pctGdp": 26.125,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 24.348,
+          "year": 2021
+        },
+        "pctRevenue": 107.3,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/sz/",
       "names": {
@@ -14130,7 +15183,10 @@
       "defaultMonthly": 91,
       "costAtPovertyLine": {
         "yearly": 51165660,
-        "pctGdp": 2.931
+        "pctGdp": 2.931,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tc/",
       "names": {
@@ -14189,7 +15245,10 @@
       "defaultMonthly": 20000,
       "costAtPovertyLine": {
         "yearly": 5040889200000,
-        "pctGdp": 40.341
+        "pctGdp": 40.341,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/td/",
       "names": {
@@ -14273,7 +15332,14 @@
       "defaultMonthly": 20000,
       "costAtPovertyLine": {
         "yearly": 2061990240000,
-        "pctGdp": 29.801
+        "pctGdp": 29.801,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 13.921,
+          "year": 2023
+        },
+        "pctRevenue": 214.08,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tg/",
       "names": {
@@ -14357,7 +15423,14 @@
       "defaultMonthly": 970,
       "costAtPovertyLine": {
         "yearly": 833655205320,
-        "pctGdp": 4.394
+        "pctGdp": 4.394,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 15.175,
+          "year": 2024
+        },
+        "pctRevenue": 28.95,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/th/",
       "names": {
@@ -14441,7 +15514,14 @@
       "defaultMonthly": 290,
       "costAtPovertyLine": {
         "yearly": 37537834320,
-        "pctGdp": 21.218
+        "pctGdp": 21.218,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 10.711,
+          "year": 2024
+        },
+        "pctRevenue": 198.09,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tj/",
       "names": {
@@ -14525,7 +15605,14 @@
       "defaultMonthly": 41,
       "costAtPovertyLine": {
         "yearly": 697910364,
-        "pctGdp": 36.69
+        "pctGdp": 36.69,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 21.643,
+          "year": 2022
+        },
+        "pctRevenue": 169.52,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tl/",
       "names": {
@@ -14584,7 +15671,10 @@
       "defaultMonthly": 500,
       "costAtPovertyLine": {
         "yearly": 45713082000,
-        "pctGdp": 16.875
+        "pctGdp": 16.875,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tm/",
       "names": {
@@ -14643,7 +15733,10 @@
       "defaultMonthly": 89,
       "costAtPovertyLine": {
         "yearly": 13188275964,
-        "pctGdp": 7.654
+        "pctGdp": 7.654,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tn/",
       "names": {
@@ -14727,7 +15820,14 @@
       "defaultMonthly": 170,
       "costAtPovertyLine": {
         "yearly": 211633680,
-        "pctGdp": 13.008
+        "pctGdp": 13.008,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 20.454,
+          "year": 2023
+        },
+        "pctRevenue": 63.59,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/to/",
       "names": {
@@ -14811,7 +15911,14 @@
       "defaultMonthly": 1600,
       "costAtPovertyLine": {
         "yearly": 1648868275200,
-        "pctGdp": 2.616
+        "pctGdp": 2.616,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.624,
+          "year": 2024
+        },
+        "pctRevenue": 14.85,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tr/",
       "names": {
@@ -14882,7 +15989,10 @@
       "defaultMonthly": 350,
       "costAtPovertyLine": {
         "yearly": 5744608800,
-        "pctGdp": 3.281
+        "pctGdp": 3.281,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tt/",
       "names": {
@@ -14941,7 +16051,10 @@
       "defaultMonthly": 140,
       "costAtPovertyLine": {
         "yearly": 15946560,
-        "pctGdp": 17.917
+        "pctGdp": 17.917,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tv/",
       "names": {
@@ -15025,7 +16138,14 @@
       "defaultMonthly": 60000,
       "costAtPovertyLine": {
         "yearly": 50793022800000,
-        "pctGdp": 22.175
+        "pctGdp": 22.175,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 12.261,
+          "year": 2024
+        },
+        "pctRevenue": 180.86,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/tz/",
       "names": {
@@ -15109,7 +16229,14 @@
       "defaultMonthly": 1100,
       "costAtPovertyLine": {
         "yearly": 514540963200,
-        "pctGdp": 5.761
+        "pctGdp": 5.761,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 21.018,
+          "year": 2024
+        },
+        "pctRevenue": 27.41,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ua/",
       "names": {
@@ -15193,7 +16320,14 @@
       "defaultMonthly": 120000,
       "costAtPovertyLine": {
         "yearly": 73994247360000,
-        "pctGdp": 32.471
+        "pctGdp": 32.471,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 12.626,
+          "year": 2024
+        },
+        "pctRevenue": 257.18,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ug/",
       "names": {
@@ -15277,7 +16411,14 @@
       "defaultMonthly": 2700,
       "costAtPovertyLine": {
         "yearly": 109663891200,
-        "pctGdp": 3.119
+        "pctGdp": 3.119,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 17.862,
+          "year": 2024
+        },
+        "pctRevenue": 17.46,
+        "mapBand": "10to25"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/uy/",
       "names": {
@@ -15361,7 +16502,14 @@
       "defaultMonthly": 330000,
       "costAtPovertyLine": {
         "yearly": 146731574880000,
-        "pctGdp": 7.933
+        "pctGdp": 7.933,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 11.006,
+          "year": 2023
+        },
+        "pctRevenue": 72.08,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/uz/",
       "names": {
@@ -15432,7 +16580,10 @@
       "defaultMonthly": 150,
       "costAtPovertyLine": {
         "yearly": 179863200,
-        "pctGdp": 5.307
+        "pctGdp": 5.307,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/vc/",
       "names": {
@@ -15491,7 +16642,10 @@
       "defaultMonthly": 15000,
       "costAtPovertyLine": {
         "yearly": 5133041280000,
-        "pctGdp": 31.129
+        "pctGdp": 31.129,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ve/",
       "names": {
@@ -15550,7 +16704,10 @@
       "defaultMonthly": 92,
       "costAtPovertyLine": {
         "yearly": 114586368,
-        "pctGdp": 2.453
+        "pctGdp": 2.453,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/vi/",
       "names": {
@@ -15609,7 +16766,10 @@
       "defaultMonthly": 660000,
       "costAtPovertyLine": {
         "yearly": 804660333840000,
-        "pctGdp": 6.263
+        "pctGdp": 6.263,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/vn/",
       "names": {
@@ -15693,7 +16853,14 @@
       "defaultMonthly": 11000,
       "costAtPovertyLine": {
         "yearly": 44242308000,
-        "pctGdp": 27.163
+        "pctGdp": 27.163,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 16.502,
+          "year": 2023
+        },
+        "pctRevenue": 164.6,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/vu/",
       "names": {
@@ -15777,7 +16944,14 @@
       "defaultMonthly": 170,
       "costAtPovertyLine": {
         "yearly": 447384240,
-        "pctGdp": 12.48
+        "pctGdp": 12.48,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 23.956,
+          "year": 2023
+        },
+        "pctRevenue": 52.09,
+        "mapBand": "50to100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/ws/",
       "names": {
@@ -15836,7 +17010,10 @@
       "defaultMonthly": 81,
       "costAtPovertyLine": {
         "yearly": 1532723472,
-        "pctGdp": 13.904
+        "pctGdp": 13.904,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/xk/",
       "names": {
@@ -15920,7 +17097,14 @@
       "defaultMonthly": 710,
       "costAtPovertyLine": {
         "yearly": 551647157880,
-        "pctGdp": 7.219
+        "pctGdp": 7.219,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 25.878,
+          "year": 2024
+        },
+        "pctRevenue": 27.9,
+        "mapBand": "25to50"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/za/",
       "names": {
@@ -16004,7 +17188,14 @@
       "defaultMonthly": 770,
       "costAtPovertyLine": {
         "yearly": 202484195760,
-        "pctGdp": 27.904
+        "pctGdp": 27.904,
+        "revenueCompared": {
+          "measure": "tax",
+          "pctGdp": 18.83,
+          "year": 2024
+        },
+        "pctRevenue": 148.19,
+        "mapBand": "over100"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/zm/",
       "names": {
@@ -16075,7 +17266,10 @@
       "defaultMonthly": 2900,
       "costAtPovertyLine": {
         "yearly": 589887666000,
-        "pctGdp": 36.223
+        "pctGdp": 36.223,
+        "revenueCompared": null,
+        "pctRevenue": null,
+        "mapBand": "noData"
       },
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/calc/zw/",
       "names": {

@@ -91,6 +91,7 @@ const ESSAY_DATA = {
   'thailand-digital-wallet': { calc: ['th'] },
   'use-to-own': { calc: ['jp'] },
   'universal-high-income': { calc: ['us'] },
+  'basic-income-world-map': { calc: ['jp', 'us', 'in', 'ng', 'br', 'sa'] },
 };
 for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
@@ -216,6 +217,56 @@ const CALC_APP = Object.fromEntries(LANGS.map(l => {
   const js = `var D=${JSON.stringify(CALC_DATA[l]).replace(/</g, '\\u003c')},L=${JSON.stringify(Object.fromEntries(CALC_KEYS.map(k => [k, L[k]]))).replace(/</g, '\\u003c')},LANG=${JSON.stringify(l)},LOC=${JSON.stringify(calcJs.LOCALE[l])};\n${calcJs.CLIENT}\n${calcJs.BOOT}`;
   return [l, { js, v: require('crypto').createHash('sha1').update(js).digest('hex').slice(0, 10) }];
 }));
+// ---- 世界地図（/calc/map/）: 全員に1日3.00ドルを1年配る費用が政府の税収の何％か（src/map.js）。エッセイの ['m', ''] の段落にも同じ地図を入れる
+const mapJs = require('./src/map.js');
+const MAP_ROWS = mapJs.rows(CALC_WORLD);
+const MAP_COUNTS = mapJs.counts(MAP_ROWS);
+const mapPath = l => `${calcPath(l)}map/`;
+const mapAbs = l => SITE_URL + mapPath(l);
+const MAP_KEYS = ['mapTitle', 'mapH1', 'mapDesc', 'mapIntro', 'mapCrumb', 'mapLink', 'mapLegendH', 'mapBin0', 'mapBin1', 'mapBin2', 'mapBin3', 'mapBin4', 'mapBin5', 'mapTipTax', 'mapTipRev', 'mapTipBudget', 'mapTipNone', 'mapTipOut', 'mapSvgLabel', 'mapTap', 'mapMethodH', 'mapM1', 'mapM2', 'mapM3', 'mapM4', 'mapTableH', 'mapColGdp', 'mapColTax', 'mapColYear', 'mapColBin', 'mapNoData', 'mapBudgetYear', 'mapData', 'mapEssay'];
+for (const l of LANGS) for (const k of MAP_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const k of MAP_KEYS) if (/[　-鿿⁦-⁩]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
+// 地図のある国（形か点）。データにない場所（台湾など）の名前は Intl.DisplayNames で
+for (const s of [...mapJs.MAP.shapes, ...mapJs.MAP.dots]) if (!/^[a-z]{2}$/.test(s.id)) throw new Error(`world-map: bad id ${s.id}`);
+// エッセイ（basic-income-world-map）の本文の数（区分ごとの国の数）は手で書いているので、データが変わったら知らせる
+const MAP_ESSAY_COUNTS = [24, 35, 23, 18, 40, 71];
+const mapDrift = MAP_COUNTS.join() !== MAP_ESSAY_COUNTS.join() ? `WARNING: world map band counts changed (${MAP_COUNTS.join('/')}, the essay basic-income-world-map says ${MAP_ESSAY_COUNTS.join('/')}); update the essay text and MAP_ESSAY_COUNTS` : '';
+const mapRegionName = (lang, id) => { const c = CALC_WORLD.find(x => x.id === id); if (c) return c.name[lang]; try { return new Intl.DisplayNames([LANG_TAG[lang]], { type: 'region' }).of(id.toUpperCase()); } catch { return id.toUpperCase(); } };
+const mapYear = (lang, r) => (r.base ? (r.base.year ? String(r.base.year) : T[lang].mapBudgetYear) : '');
+function mapTip(lang, r, id) {
+  const L = T[lang], X = CALC_CTX[lang];
+  const country = mapRegionName(lang, id);
+  if (!r) return cfill(L.mapTipOut, { country });
+  const o = { country, gdp: X.pct(r.gdp), tax: r.tax == null ? '' : X.pct(r.tax), year: mapYear(lang, r) };
+  return cfill(r.base ? L[{ tax: 'mapTipTax', rev: 'mapTipRev', budget: 'mapTipBudget' }[r.base.k]] : L.mapTipNone, o);
+}
+const mapBinShort = (lang, i) => T[lang]['mapBin' + i].replace(/\s*[（(].*$/, '');
+const mapLegend = lang => `<div class="wm-leg"><p class="wm-leg-h" id="wmLegH">${esc(T[lang].mapLegendH)}</p><ul aria-labelledby="wmLegH">${MAP_COUNTS.map((n, i) => `<li><span class="wm-sw b${i}" aria-hidden="true"></span><span>${esc(T[lang]['mapBin' + i])}</span><span class="dot">${n}</span></li>`).join('')}</ul></div>`;
+// 地図と凡例。ページでは国ごとに <title>（名前と％）が付き、タップ・ホバーで下の行にも同じ文を出す
+const mapFigure = (lang, { link = false } = {}) => `<figure class="wmap" id="wmap"><div class="wm-svg">${mapJs.svg({ list: MAP_ROWS, tip: (r, id) => mapTip(lang, r, id), label: T[lang].mapSvgLabel, cls: 'wm-i' })}</div>
+<p class="wm-tip" id="wmTip" aria-live="polite">${esc(T[lang].mapTap)}</p>
+<figcaption>${mapLegend(lang)}${link ? `<p class="wm-more"><a href="${mapPath(lang)}">${esc(T[lang].mapLink)} ${RTL.has(lang) ? '←' : '→'}</a></p>` : ''}</figcaption></figure>`;
+const MAP_CSS = `<style>${mapJs.CSS}
+.wmap{margin:20px 0 8px;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.wm-svg{overflow:hidden}
+.wmap .wm-i path,.wmap .wm-i circle{cursor:pointer}
+.wm-tip{margin-top:8px;min-height:1.5em;font-size:.875rem;color:var(--muted)}
+.wm-leg{margin-top:10px}
+.wm-leg-h{font-size:.8125rem;font-weight:700;color:var(--ink)}
+.wm-leg ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.8125rem;color:var(--muted)}
+.wm-leg li{display:flex;align-items:center;gap:6px}
+.wm-leg .dot{color:var(--ink)}
+.wm-more{margin-top:10px;font-size:.875rem}
+.essay-body .wmap figcaption p{margin:0}
+.wm-band{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.wm-m p+p{margin-top:10px}
+.cx-tbl .muted{color:var(--muted)}
+@media (max-width:640px){.wmap{padding:8px;margin-inline:-4px}}
+</style>`;
+// タップ・ホバーで国の文（<title>）を下の行に出す。地図の国を押すとその国の計算機のページへ（表にも同じリンクがある）
+const mapScript = lang => `<script>(function(){var f=document.getElementById('wmap');if(!f)return;var t=document.getElementById('wmTip'),d=t.textContent,on=null,base=${JSON.stringify(calcPath(lang))},ids=${JSON.stringify(CALC_WORLD.map(c => c.id).join(' '))}.split(' ');
+function show(e){var x=e.target.closest?e.target.closest('[data-id]'):null;if(!x)return;var s=x.querySelector('title');if(on)on.classList.remove('on');on=x;x.classList.add('on');t.textContent=s?s.textContent:d}
+f.addEventListener('pointerover',show);f.addEventListener('click',function(e){var x=e.target.closest?e.target.closest('[data-id]'):null;if(!x)return;var id=x.getAttribute('data-id');if(e.pointerType==='mouse'&&ids.indexOf(id)>=0)location.href=base+id+'/';else show(e)})})()</script>`;
 // サービスのカード・個別ページ・エッセイから、そのサービスのガイドへ
 const guideOf = s => GUIDES.find(g => g.svc === s.id);
 const guideLink = (lang, g, cls = 'g-link') => g ? `<p class="${cls}"><a href="${guidePath(lang, g)}">${esc(T[lang].guideRead.replace('{name}', g[lang].short))} ${RTL.has(lang) ? '←' : '→'}</a></p>` : '';
@@ -836,6 +887,7 @@ for (const lang of LANGS) {
     verifyBlock: verifyPages.map(m => { const b = byMethod(m); return `<a href="verify/${m}/" dir="auto">${esc(VERIFY[m].name[lang])}<span>${b.req.length + b.opt.length}</span></a>`; }).join(''),
     quizCard: qzCard(lang, 'home-quiz'),
     calcIdxHome: esc(L.calcIdxLink.replace('{n}', CALC_WORLD.length)),
+    mapHome: esc(L.mapLink),
     usHome: esc(L.usH1.replace('{n}', US_TL.length)),
     footCountries: esc(L.footCountries.replace('{n}', CALC_WORLD.length)),
     script: clientScript(lang),
@@ -1461,6 +1513,8 @@ function essayPage(e, lang) {
     if (k === 'h') { tagged = false; return `<h2>${esc(t)}</h2>`; }
     // t は表: 行は改行、セルは " | " で区切り、1行目が見出し。狭い画面では横にスクロールする
     if (k === 't') { const [head, ...rows] = t.split('\n').map(r => r.split(' | ')); return `<div class="essay-table"><table><thead><tr>${head.map(c => `<th scope="col">${fn(c)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => i ? `<td>${fn(c)}</td>` : `<th scope="row">${fn(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`; }
+    // m は世界地図（/calc/map/ と同じ図と凡例、地図のページへのリンク）
+    if (k === 'm') return mapFigure(lang, { link: true });
     if (k !== 'o') return `<p>${fn(t)}</p>`;
     const tag = tagged ? '' : `<span class="op-tag">${esc(L.essayOpinion)}</span>`;
     tagged = true;
@@ -1491,7 +1545,8 @@ ${qzCard(lang, 'essay-quiz')}
 </article>
 <p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
 </main>`;
-  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L), image: ogImage(`essay/${lang}/${e.id}.jpg`) });
+  const hasMap = (e.blocks[lang] || e.blocks.en).some(([k]) => k === 'm');
+  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L) + (hasMap ? mapScript(lang) : ''), image: ogImage(`essay/${lang}/${e.id}.jpg`), extraHead: hasMap ? MAP_CSS + '\n' : '' });
 }
 function essaysIndex(lang) {
   const L = T[lang];
@@ -1663,6 +1718,7 @@ function calcPage(lang) {
 <header class="orgs-head"><p class="eyebrow">${esc(L.calcTitle)}</p><h1>${esc(L.calcH1)}</h1><p class="orgs-intro">${esc(L.calcIntro)}</p></header>
 <form class="cx-form" id="cx" data-url="${esc(calcAbs(lang))}" onsubmit="return false"><div id="cxCtl" style="display:grid;gap:20px">${ini.controls}</div></form>
 <p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a></p>
+<p class="cx-idx"><a href="${mapPath(lang)}">${esc(L.mapLink)}</a></p>
 <section class="cx-res" id="cxRes" aria-live="polite">${ini.result}</section>
 <section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p><p>${more}</p></section>
 ${embedSection(lang, null)}
@@ -1787,6 +1843,7 @@ function essayDataLinks(lang, e) {
   if (x.pilots) links.push(`<a href="${usPath(lang)}">${esc(cfill(L.usH1, { n: US_TL.length }))}</a>`);
   if (!x.calc.length) links.push(`<a href="${calcPath(lang)}">${esc(L.calcTitle)}</a>`);
   links.push(`<a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a>`);
+  links.push(`<a href="${mapPath(lang)}">${esc(L.mapLink)}</a>`);
   return `<p class="related g-rel">${esc(L.essayCalc)}: ${links.join(' · ')}</p>`;
 }
 // 国のページの「この国についてのエッセイ」欄（ESSAY_DATA の逆向き）。アメリカは保証所得実験の一覧も
@@ -1840,6 +1897,69 @@ ${src}
 }
 
 // 国の一覧（/calc/countries/）: 全員に1日3.00ドル（貧困ライン）を1年配ったときの GDP 比。並べ替えと名前での絞り込みは JS
+// 世界地図（/calc/map/）: 地図・凡例・作り方と、全部の国の表（GDP 比・税収比・区分）。並べ替えと名前での絞り込みは JS
+function mapPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const X = CALC_CTX[lang];
+  const n = CALC_WORLD.length;
+  const col = new Intl.Collator(LANG_TAG[lang]);
+  const title = cfill(L.mapTitle, { n });
+  const essay = ESSAYS.find(e => e.id === 'basic-income-world-map');
+  const ld = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.calcTitle, item: calcAbs(lang) },
+    { '@type': 'ListItem', position: 3, name: L.mapCrumb, item: mapAbs(lang) } ] },
+    datasetLd('countries.json', mapAbs(lang), { temporalCoverage: `${Math.min(...CALC_WORLD.map(c => c.gdp.year))}/${Math.max(...CALC_WORLD.map(c => c.gdp.year))}`, spatialCoverage: 'World', isBasedOn: 'https://data.worldbank.org/' })];
+  const sep = lang === 'ja' || lang === 'zh' ? '、' : lang === 'ar' ? '، ' : ', ';
+  const years = Object.entries(MAP_ROWS.filter(r => r.base && r.base.year).reduce((o, r) => ({ ...o, [r.base.year]: (o[r.base.year] || 0) + 1 }), {})).sort((a, b) => b[0] - a[0]).map(([y, k]) => `${y} (${k})`).join(sep);
+  const method = [cfill(L.mapM1, { fx: CALC_WORLD.filter(c => c.line.how === 'fx').length }), cfill(L.mapM2, { age: calcWorld.GOV_MAX_AGE, years }), L.mapM3, cfill(L.mapM4, { none: MAP_COUNTS[mapJs.NONE] })];
+  const byName = CALC_WORLD.slice().sort((a, b) => col.compare(a.name[lang], b.name[lang])).map(c => c.id);
+  const list = MAP_ROWS.slice().sort((a, b) => (a.tax == null) - (b.tax == null) || (a.tax == null ? a.gdp - b.gdp : a.tax - b.tax));
+  const th = (k, label, cls = '', sort = '') => `<th scope="col"${cls ? ` class="${cls}"` : ''}${sort ? ` aria-sort="${sort}"` : ''}>${k ? `<button type="button" data-k="${k}">${esc(label)}</button>` : esc(label)}</th>`;
+  const rows = list.map(r => `<tr data-n="${byName.indexOf(r.id)}" data-r="${calcWorld.REGIONS.indexOf(r.c.region)}" data-x="${r.gdp.toFixed(6)}" data-t="${r.tax == null ? '' : r.tax.toFixed(6)}" data-b="${r.bin}"><th scope="row"><a href="${calcCtyPath(lang, r.c)}">${esc(r.c.name[lang])}</a></th><td class="cx-reg">${esc(L['calcRegion_' + r.c.region])}</td><td class="num"><bdi>${esc(X.pct(r.gdp))}</bdi></td><td class="num">${r.tax == null ? `<span class="muted">${esc(L.mapNoData)}</span>` : `<b><bdi>${esc(X.pct(r.tax))}</bdi></b>`}</td><td class="num cx-reg">${esc(isoRtl(lang, mapYear(lang, r)))}</td><td><span class="wm-band"><span class="wm-sw b${r.bin}" aria-hidden="true"></span>${esc(mapBinShort(lang, r.bin))}</span></td></tr>`).join('\n');
+  const file = `<a href="${SITE_URL}/countries.json" dir="ltr">countries.json</a>`;
+  const arrow = RTL.has(lang) ? '←' : '→';
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></li><li aria-current="page">${esc(L.mapCrumb)}</li></ol></nav>
+<main class="cx cx-wide">
+<header class="orgs-head"><p class="eyebrow"><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></p><h1>${esc(L.mapH1)}</h1><p class="orgs-intro">${esc(L.mapIntro)}</p></header>
+${mapFigure(lang)}
+${essay ? `<p class="related g-rel">${esc(L.mapEssay)}: <a href="${essayPath(lang, essay)}">${esc(essay.title[lang])}</a></p>` : ''}
+<section class="g-sec cx-note wm-m"><h2>${esc(L.mapMethodH)}</h2>${method.map(p => `<p>${esc(p)}</p>`).join('')}</section>
+<section class="g-sec"><h2>${esc(cfill(L.mapTableH, { n }))}</h2>
+<label class="cx-q"><span class="vh">${esc(L.calcIdxFilter)}</span><input class="cx-num" id="cxQ" type="search" placeholder="${esc(L.calcIdxFilter)}" autocomplete="off"></label>
+<div class="cx-tw"><table class="cx-tbl" id="cxTbl"><thead><tr>${th('n', L.calcIdxCountry)}${th('r', L.calcIdxRegion, 'cx-reg')}${th('x', L.mapColGdp, 'num')}${th('t', L.mapColTax, 'num', 'ascending')}${th('', L.mapColYear, 'num cx-reg')}${th('', L.mapColBin)}</tr></thead><tbody>
+${rows}
+</tbody></table></div></section>
+<section class="g-sec cx-note"><p>${esc(L.mapData).replace('{file}', file)}</p><p>${esc(cfill(L.calcSrcWbNote, { date: calcDate(lang) }))}</p></section>
+<p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n }))} ${arrow}</a></p>
+<p class="back"><a class="btn line" href="${calcPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.calcTitle)}</a></p>
+</main>`;
+  // 税収比（t）で並べるとき、データのない国はどちら向きでも最後に
+  const script = `<script>
+(function(){
+  var t = document.getElementById('cxTbl'), b = t.tBodies[0], rows = [].slice.call(b.rows), q = document.getElementById('cxQ'), cur = 't', dir = 1;
+  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, ''); }
+  t.tHead.addEventListener('click', function (e) {
+    var x = e.target.closest ? e.target.closest('button') : null;
+    if (!x) return;
+    var k = x.getAttribute('data-k');
+    dir = cur === k ? -dir : 1; cur = k;
+    rows.sort(function (a, c) {
+      var p = a.getAttribute('data-' + k), r = c.getAttribute('data-' + k);
+      if (p === '' || r === '') return (p === '') - (r === '') || a.getAttribute('data-x') - c.getAttribute('data-x');
+      return (p - r) * dir || a.getAttribute('data-n') - c.getAttribute('data-n');
+    });
+    rows.forEach(function (r) { b.appendChild(r); });
+    [].forEach.call(t.tHead.querySelectorAll('th'), function (h) { h.removeAttribute('aria-sort'); });
+    x.parentNode.setAttribute('aria-sort', dir > 0 ? 'ascending' : 'descending');
+  });
+  q.addEventListener('input', function () { var v = norm(q.value.trim()); rows.forEach(function (r) { r.hidden = !!v && norm(r.cells[0].textContent).indexOf(v) < 0; }); });
+})();
+</script>`;
+  return shell(lang, { title: `${title} | ${L.title}`, desc: clip(cfill(L.mapDesc, { n }), lang), hrefFor: mapAbs, pathFor: mapPath, ld, ogType: 'website', body, script: script + mapScript(lang), image: ogImage(`calc/${lang}/map.jpg`), extraHead: MAP_CSS + '\n' });
+}
+
 function calcIndexPage(lang) {
   const L = T[lang];
   const home = urlPath(lang);
@@ -1861,7 +1981,7 @@ function calcIndexPage(lang) {
   const file = `<a href="${SITE_URL}/countries.json" dir="ltr">countries.json</a>`;
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></li><li aria-current="page">${esc(L.calcIdxCrumb)}</li></ol></nav>
 <main class="cx cx-wide">
-<header class="orgs-head"><p class="eyebrow"><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></p><h1>${esc(title)}</h1><p class="orgs-intro">${esc(L.calcIdxIntro)}</p><p class="oss-note">${esc(L.calcIdxData).replace('{file}', file)}</p></header>
+<header class="orgs-head"><p class="eyebrow"><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></p><h1>${esc(title)}</h1><p class="orgs-intro">${esc(L.calcIdxIntro)}</p><p class="oss-note">${esc(L.calcIdxData).replace('{file}', file)}</p><p class="cx-idx"><a href="${mapPath(lang)}">${esc(L.mapLink)} ${RTL.has(lang) ? '←' : '→'}</a></p></header>
 <label class="cx-q"><span class="vh">${esc(L.calcIdxFilter)}</span><input class="cx-num" id="cxQ" type="search" placeholder="${esc(L.calcIdxFilter)}" autocomplete="off"></label>
 <div class="cx-tw"><table class="cx-tbl" id="cxTbl"><thead><tr>${th('n', L.calcIdxCountry, '', 'ascending')}${th('r', L.calcIdxRegion, 'cx-reg')}${th('p', L.calcIdxPop, 'num')}${th('g', L.calcIdxGdp, 'num cx-gdp')}${th('', L.calcIdxAmount, 'num')}${th('x', L.calcIdxPct, 'num')}</tr></thead><tbody>
 ${rows}
@@ -2286,6 +2406,8 @@ for (const lang of LANGS) {
   }
   fs.mkdirSync(path.join(cdir, 'countries'), { recursive: true });
   fs.writeFileSync(path.join(cdir, 'countries', 'index.html'), calcIndexPage(lang));
+  fs.mkdirSync(path.join(cdir, 'map'), { recursive: true });
+  fs.writeFileSync(path.join(cdir, 'map', 'index.html'), mapPage(lang));
   if (lang === DEFAULT_LANG) for (const l of LANGS) fs.writeFileSync(path.join(cdir, `app-${l}.js`), CALC_APP[l].js);
   const emdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'embed');
   fs.mkdirSync(path.join(emdir, 'calc'), { recursive: true });
@@ -2316,6 +2438,7 @@ for (const lang of LANGS) {
   }
 }
 
+if (mapDrift) console.warn(mapDrift);
 if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);
 // ---- フォント: 書き出した HTML から、言語ごと・書体ごとに実際に出る文字を集め、そのサブセットを用意して <!--@fonts@--> を埋める
 const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
@@ -2416,6 +2539,7 @@ function newsLink(n, lang) {
   const en = n.en || '';
   if (/basic income news page/i.test(en)) return biNewsAbs(lang);
   if (/badge/i.test(en)) return badgeAbs(lang);
+  if (/world map/i.test(en)) return mapAbs(lang);
   if (/calculator/i.test(en) && /countries and territories/i.test(en)) return calcIdxAbs(lang);
   if (/calculator/i.test(en)) return calcAbs(lang);
   if (/quiz/i.test(en)) return qzAbs(lang);
@@ -2503,7 +2627,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(calcIdxAbs), sitemapUrls(embedAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
@@ -2685,6 +2809,7 @@ const countriesJson = {
     povertyLine: 'povertyLine.monthly = US$3.00 a day (World Bank international poverty line, 2021 PPP, June 2025 update) x 365/12, converted into local currency with the World Bank PPP conversion factor for household consumption (PA.NUS.PRVT.PP) when it is from the GDP year or the year before and implies a price level between 0.1 and 2.5 times the exchange rate; otherwise with the exchange rate implied by GDP in local currency / GDP in US dollars (same year). Rounded to two significant figures.',
     defaultMonthly: 'The calculator default: povertyLine.monthly for World Bank countries; a round figure chosen by the editors for the seven featured countries.',
     cost: 'costAtPovertyLine.yearly = population x povertyLine.monthly x 12 (gross, local currency); pctGdp = yearly / GDP.',
+    map: `costAtPovertyLine.revenueCompared is the government revenue the world map (/calc/map/) compares with: governmentUsedInCalculator.tax, else governmentUsedInCalculator.revenue, else (Japan) nationalBudget.tax; null if none. pctRevenue = pctGdp / revenueCompared.pctGdp x 100. mapBand: under10, 10to25, 25to50, 50to100 (up to and including 100), over100, noData.`,
     dropped: WB.dropped,
   },
   regions: Object.fromEntries(calcWorld.REGIONS.map(r => [r, clean(T.en['calcRegion_' + r])])),
@@ -2697,7 +2822,7 @@ const countriesJson = {
     ...(c.budget ? { nationalBudget: { ...c.budget, source: CALC.sources[c.budget.src].url } } : {}),
     povertyLine: { usdPerDay: calcWorld.POVERTY_LINE, monthly: c.line.monthly, conversion: c.line.how === 'ppp' ? 'PA.NUS.PRVT.PP' : 'GDP LCU / GDP US$', factor: sig(c.line.factor), year: c.line.year },
     defaultMonthly: c.def,
-    costAtPovertyLine: { yearly: Math.round(c.pop.all * c.line.monthly * 12), pctGdp: +(calcLinePct(c) * 100).toFixed(3) },
+    costAtPovertyLine: (r => ({ yearly: Math.round(c.pop.all * c.line.monthly * 12), pctGdp: +(calcLinePct(c) * 100).toFixed(3), revenueCompared: r.base ? { measure: { tax: 'tax', rev: 'revenue', budget: 'nationalBudget.tax' }[r.base.k], pctGdp: +(r.base.share * 100).toFixed(3), year: r.base.year || 'FY2026' } : null, pctRevenue: r.tax == null ? null : +(r.tax * 100).toFixed(2), mapBand: ['under10', '10to25', '25to50', '50to100', 'over100', 'noData'][r.bin] }))(MAP_ROWS.find(x => x.id === c.id)),
     pageUrl: calcCtyAbs(DEFAULT_LANG, c),
     names: Object.fromEntries(LANGS.map(l => [l, clean(c.name[l])])),
     currencyNames: Object.fromEntries(LANGS.map(l => [l, clean(c.cur[l])])),
@@ -2784,6 +2909,7 @@ ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}
 ${GUIDES.map(g => `- [${mdLink(g.en.title)}](${guideAbs(DEFAULT_LANG, g)}): ${md(g.en.desc)} Last updated ${g.updated}.`).join('\n')}
 - [${md(T.en.shindanH1)}](${qzAbs(DEFAULT_LANG)}): ${md(T.en.shindanDesc)} Result types: ${QUIZ.types.map(t => `[${mdLink(t.name.en)}](${qzTypeAbs(DEFAULT_LANG, t)}) (${servicesFor(t, live).length} services)`).join(', ')}.
 - [${md(T.en.calcH1)}](${calcAbs(DEFAULT_LANG)}): ${md(T.en.calcDesc)} ${CALC_WORLD.length} countries and territories (${CALC.countries.map(c => `${c.name.en} (${c.id})`).join(', ')} with national figures; the rest from World Bank data). Inputs are reproducible from the URL: \`?c={country id}&w=all|adults|kids&m={monthly amount in local currency}\`. Each country also has its own page at \`/calc/{country id}/\` (e.g. ${calcCtyAbs(DEFAULT_LANG, CALC_WORLD.find(c => c.id === 'br'))}), and [all countries are compared](${calcIdxAbs(DEFAULT_LANG)}) by the yearly cost of paying everyone the World Bank's $3.00-a-day poverty line, as a share of GDP. Figures: ${Object.values(CALC.sources).map(x => `[${mdLink(x.en.split('. ')[0])}](${x.url}) (${x.year})`).join('; ')}.
+- [${md(T.en.mapH1)}](${mapAbs(DEFAULT_LANG)}): ${md(cfill(T.en.mapDesc, { n: CALC_WORLD.length }))} Bands by cost as a share of central government tax revenue: ${MAP_COUNTS.slice(0, 5).map((k, b) => `${md(T.en['mapBin' + b])}: ${k}`).join('; ')}; no recent data: ${MAP_COUNTS[5]}.
 
 ## Open-source projects
 
@@ -2839,7 +2965,7 @@ const essayFull = e => [
   `- Page: ${essayAbs(DEFAULT_LANG, e)}`,
   `- Published: ${e.date}`,
   '',
-  ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : k === 't' ? t.split('\n').map((r, i) => `| ${r.split(' | ').map(md).join(' | ')} |${i ? '' : `\n|${r.split(' | ').map(() => ' --- |').join('')}`}`).join('\n') : md(t)).flatMap(x => [x, '']),
+  ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'm' ? `[World map: ${md(T.en.mapSvgLabel)}](${mapAbs(DEFAULT_LANG)})` : k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : k === 't' ? t.split('\n').map((r, i) => `| ${r.split(' | ').map(md).join(' | ')} |${i ? '' : `\n|${r.split(' | ').map(() => ' --- |').join('')}`}`).join('\n') : md(t)).flatMap(x => [x, '']),
   ...essayList(e.related).flatMap(x => [`Related essay: ${essayAbs(DEFAULT_LANG, x)}`, '']),
   'Sources:',
   '',

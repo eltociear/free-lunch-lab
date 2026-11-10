@@ -639,6 +639,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-b7571de769.woff2",
     "chars": "'"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-8fe5152f01.woff2",
+    "chars": "ü"
    }
   ],
   "es:body:700": [
@@ -717,6 +721,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-857269ac02.woff2",
     "chars": "'"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-8098190811.woff2",
+    "chars": "ü"
    }
   ],
   "es:display": [
@@ -1131,6 +1139,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-1b9bbbd9d7.woff2",
     "chars": "凍刑圧境官宿帰徐暫横泊熱環痛督祥禍緩肢脱脳誕釈里"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-3c0bb89934.woff2",
+    "chars": "井塗斜朝灰鮮"
    }
   ],
   "ja:body:700": [
@@ -1353,6 +1365,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-07f9b64ba5.woff2",
     "chars": "凍刑圧境官宿帰徐暫横泊熱環痛督祥禍緩肢脱脳誕釈里"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-a947ab7e92.woff2",
+    "chars": "井塗斜朝灰鮮"
    }
   ],
   "ja:display": [
@@ -1483,6 +1499,10 @@
    {
     "file": "dela-gothic-one-400-ja-1a38197cdf.woff2",
     "chars": "埋示"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-8e13841061.woff2",
+    "chars": "図"
    }
   ],
   "ja:dot": [
@@ -1767,6 +1787,10 @@
    {
     "file": "noto-sans-sc-400-zh-d2187829a9.woff2",
     "chars": "勿"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-578fa83152.woff2",
+    "chars": "圆斜灰硬碍颜鲜鼠"
    }
   ],
   "zh:body:700": [
@@ -2001,6 +2025,10 @@
    {
     "file": "noto-sans-sc-700-zh-ea8c27cc4f.woff2",
     "chars": "勿"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-b1fabce468.woff2",
+    "chars": "圆斜灰硬碍颜鲜鼠"
    }
   ],
   "zh:display": [

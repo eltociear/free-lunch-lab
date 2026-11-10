@@ -5,6 +5,7 @@
 //   src/og/guide/{lang}/{id}.jpg   サービスの完全ガイド（題・最終更新日）
 //   src/og/shindan/{lang}/index.jpg, {type}.jpg   タダ飯診断（入口と、タイプごとの結果カード）
 //   src/og/calc/{lang}/index.jpg   BI計算機（題・説明・国の名前）
+//   src/og/calc/{lang}/map.jpg     世界地図（/calc/map/。題・小さな地図・凡例。地図を載せたエッセイも同じ形）
 //   src/og/calc/{lang}/{国}-{all|adults|kids}-{金額}.jpg   BI計算機の結果カード（国 × 配る相手 × プリセット金額。src/worker.js が差し替える）
 //   src/og/news/{lang}/index.jpg   ベーシックインカム・ニュース（題・説明・最新の週の更新日と国）
 //   src/og/pilots/{lang}/us.jpg    アメリカの保証所得パイロットの一覧（題・説明・件数・州の数・評価のある件数）
@@ -173,6 +174,29 @@ function essayHtml(e, lang) {
 <p class="desc">${esc(e.desc[lang] || e.desc.en)}</p>
 </div>
 <div class="chips"><span>${esc(L.essayBy)}</span></div>`);
+}
+
+// 世界地図のカード（/calc/map/ と、地図を載せたエッセイ）: 札・題と、小さな地図と凡例（区分ごとの国の数）
+const mapJs = require('./src/map.js');
+const MAP_ROWS = mapJs.rows(require('./src/calc-world.js').world(CALC));
+const MAP_COUNTS = mapJs.counts(MAP_ROWS);
+const MAP_SVG = mapJs.svg({ list: MAP_ROWS });
+function mapHtml(lang, eb, title) {
+  const L = T[lang];
+  const leg = MAP_COUNTS.map((n, i) => `<li><i class="wm-sw b${i}"></i><span>${esc(L['mapBin' + i].replace(/\s*[（(].*$/, ''))}</span><b>${n}</b></li>`).join('');
+  return frame(lang, 'essay', `<style>${mapJs.CSS}
+.wmrow{display:flex;gap:28px;align-items:center;flex:none}
+.wmap{width:500px;flex:none}
+.wml{list-style:none;padding:0;display:grid;gap:6px;font-size:20px;line-height:1.3;color:#C9D0EE;min-width:0}
+.wml li{display:flex;align-items:center;gap:12px;white-space:nowrap}
+.wml b{color:#FFD66B;font-weight:700;margin-inline-start:auto;padding-inline-start:14px}
+.wml .wm-sw{width:28px;height:18px;border-radius:4px;flex:none}
+.wmh{font-size:20px;color:#A9B2D8;margin-bottom:4px}
+</style><div class="mid">
+<p class="cat" style="--c:#FFD66B">${esc(eb)}</p>
+<h1 data-fit="54,34,132">${esc(title)}</h1>
+<div class="wmrow"><div class="wmap">${MAP_SVG}</div><div><p class="wmh">${esc(L.mapLegendH)}</p><ul class="wml">${leg}</ul></div></div>
+</div>`);
 }
 
 // 完全ガイド: サービスのカテゴリ色の札・ガイドの題・要約・最終更新日
@@ -370,11 +394,12 @@ for (const lang of ONLY) {
   const homeRel = `${lang}.png`, homeKey = hash(page(lang, false));
   if (fresh(homeRel, homeKey)) kept++; else todo.push({ rel: homeRel, key: homeKey, mk: () => page(lang), format: 'png' });
   for (const s of live) { const html = svcHtml(s, lang); const rel = `svc/${lang}/${s.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
-  for (const e of ESSAYS) { const html = essayHtml(e, lang); const rel = `essay/${lang}/${e.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+  for (const e of ESSAYS) { const html = (e.blocks[lang] || e.blocks.en).some(b => b[0] === 'm') ? mapHtml(lang, T[lang].ebEssay, e.title[lang] || e.title.en) : essayHtml(e, lang); const rel = `essay/${lang}/${e.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const [rel, html] of [[`shindan/${lang}/index.jpg`, quizHtml(lang)], ...QUIZ.types.map(t => [`shindan/${lang}/${t.id}.jpg`, quizTypeHtml(t, lang)])]) { const key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = newsHtml(lang), rel = `news/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = usPilotsHtml(lang), rel = `pilots/${lang}/us.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = calcHtml(lang), rel = `calc/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+  { const html = mapHtml(lang, T[lang].calcTitle, T[lang].mapH1), rel = `calc/${lang}/map.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const k of calcCards[lang]) { const rel = `calc/${lang}/${k.id}.jpg`, key = hash(calcCardHtml(k, lang)); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => calcCardHtml(k, lang, cardFonts(lang)), format: 'jpeg', quality: 72 }); }
   for (const g of GUIDES) { const html = guideHtml(g, lang); const rel = `guide/${lang}/${g.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
 }

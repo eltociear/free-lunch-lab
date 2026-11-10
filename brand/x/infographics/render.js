@@ -210,6 +210,57 @@ ${extraCss}`,
 
 // ---------- infographics ----------
 const GRAPHICS = {
+  // X post image for the world map (/calc/map/ and the basic-income-world-map essay): headline, the choropleth from
+  // src/map.js (cost of $3.00 a day for everyone as a share of tax revenue, World Bank data via data/countries.json),
+  // the legend with the band counts (computed, not typed) and the site name. 1200x675 (16:9) for X.
+  'ubi-map': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const ja = lang === 'ja';
+      const mapJs = require('../../../src/map.js');
+      const { CALC } = require('../../../src/data.js');
+      const rows = mapJs.rows(require('../../../src/calc-world.js').world(CALC));
+      const counts = mapJs.counts(rows);
+      const L = T[lang];
+      const label = i => esc(L['mapBin' + i].replace(/\s*[（(].*$/, ''));
+      return {
+        bare: true,
+        moon: [1146, 62, 26],
+        body: `
+<h1 class="hl">${ja ? '1日3ドルを全員に配れる国はどこ？' : 'Could your country pay everyone $3 a day?'}</h1>
+<p class="sb">${ja ? '世界銀行の貧困ライン（1日3.00ドル）を全員に1年配る費用は、政府の税収の何％か ・ 211の国・地域' : 'The yearly cost of paying everyone the World Bank’s $3.00-a-day poverty line, as a share of government tax revenue · 211 countries'}</p>
+<div class="row">
+  <div class="wmap">${mapJs.svg({ list: rows })}</div>
+  <div class="lg"><p class="lh">${esc(L.mapLegendH)}</p><ul>${counts.map((n, i) => `<li><i class="wm-sw b${i}"></i><span>${label(i)}</span><b>${n}</b></li>`).join('')}</ul>
+  <p class="ln">${ja ? '100％超＝税収をすべて使っても足りない' : 'Over 100% = more than all its tax revenue'}</p></div>
+</div>
+<div class="ft">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${ja ? esc(L.brandPlain) : 'Free <em>Lunch</em> Lab'}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${ja ? 'ja/' : ''}calc/map/</p>
+</div>`,
+        css: `${mapJs.CSS}
+.page{padding:36px 52px 26px}
+.hl{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${ja ? 50 : 46}px;line-height:1.12;padding-right:90px;text-wrap:balance;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:10px;font-size:21px;line-height:1.35;color:#C9D0F0;padding-right:40px}
+.row{margin-top:16px;display:flex;align-items:center;gap:26px;min-height:0}
+.wmap{width:${ja ? 810 : 770}px;flex:none}
+.lg{flex:1;min-width:0}
+.lh,.ln{word-break:auto-phrase}
+.lh{font-size:19px;color:#A9B2D8;margin-bottom:10px;line-height:1.3}
+.lg ul{list-style:none;display:grid;gap:10px}
+.lg li{display:flex;align-items:center;gap:10px;font-size:21px;color:#EEF1FF;white-space:nowrap}
+.lg li b{margin-left:auto;color:#FFD66B;font-weight:900}
+.lg .wm-sw{width:30px;height:20px;border-radius:4px}
+.ln{margin-top:12px;font-size:16px;line-height:1.35;color:#A9B2D8}
+.ft{margin-top:auto;display:flex;align-items:center;gap:16px;padding-top:12px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:26px}
+.ft .wm.ja{font-size:28px}
+.url{margin-left:auto;font-size:21px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 18px;border-radius:999px}
+`,
+      };
+    },
+  },
   // "5 ways apps prove you're one human". Examples come from each service's verify[] in src/data.js.
   'verify-5': lang => {
     const ja = lang === 'ja';

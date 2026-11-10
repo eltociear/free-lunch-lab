@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-09",
+  "fetchedOn": "2026-11-10",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -24,7 +24,7 @@
     },
     "git.duniter.org:clients/ginkgo": {
       "stars": 8,
-      "lastCommit": "2026-11-09",
+      "lastCommit": "2026-11-10",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Dart"

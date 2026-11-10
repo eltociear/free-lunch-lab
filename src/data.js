@@ -2938,6 +2938,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-10",
+      "en": "Added a world map of which countries could pay everyone the World Bank’s $3.00-a-day poverty line from their tax revenue (211 countries and territories, with a sortable table), and an essay on what it shows",
+      "ja": "世界銀行の貧困ライン「1日3.00ドル」を全員に配る費用を各国の税収とくらべた世界地図（211の国・地域、並べ替えられる表つき）と、そこからわかることをまとめたエッセイを追加",
+      "zh": "新增世界地图：给每个人发放世界银行“每天3.00美元”贫困线的费用与各国税收之比（211个国家和地区，附可排序表格），以及一篇解读文章",
+      "hi": "विश्व मानचित्र जोड़ा: वर्ल्ड बैंक की रोज़ 3.00 डॉलर की ग़रीबी रेखा सबको देने का खर्च हर देश के टैक्स राजस्व के मुकाबले (211 देश और क्षेत्र, छाँटने लायक तालिका के साथ), और इस पर एक लेख",
+      "es": "Añadido un mapa mundial de qué países podrían pagar a todos la línea de pobreza de 3,00 dólares al día del Banco Mundial con su recaudación (211 países y territorios, con tabla ordenable), y un ensayo sobre lo que muestra",
+      "de": "Weltkarte hinzugefügt: welche Länder allen die Armutsgrenze der Weltbank von 3,00 Dollar am Tag aus ihren Steuereinnahmen zahlen könnten (211 Länder und Gebiete, mit sortierbarer Tabelle), dazu ein Essay darüber",
+      "ar": "أضفنا خريطة للعالم تبين أي الدول تستطيع أن تدفع للجميع خط الفقر لدى البنك الدولي، 3.00 دولارات يوميًا، من إيراداتها الضريبية (211 دولة وإقليمًا، مع جدول قابل للفرز)، ومقالًا عما تكشفه"
+    },
+    {
+      "date": "2026-11-10",
       "ja": "AgentBank（World App）を追加",
       "en": "Added AgentBank (World App)",
       "zh": "新增 AgentBank（World App）",
@@ -4722,6 +4732,40 @@ module.exports = {
       "calcIdxPct": "年額のGDP比",
       "calcIdxFilter": "国・地域の名前で絞り込む",
       "calcIdxNote": "人口とGDPは世界銀行の最新の数字です（年は各国のページにあります。主な7か国は計算機と同じ数字）。換算には世界銀行の家計消費の購買力平価換算係数を使い、最近のものがない国は、現地通貨とドルのGDPから求めた為替レートを使っています。配る総額（グロス）だけで、税や置き換える給付は差し引いていません。",
+      "mapTitle": "ベーシックインカムを払える国はどこ？{n}の国・地域の世界地図",
+      "mapH1": "明日からベーシックインカムを払える国はどこ？",
+      "mapDesc": "全員に1日3.00ドル（世界銀行の貧困ライン）を1年配ると、その国の政府の税収の何％になるか。{n}の国・地域を色で塗り分けた世界地図と、並べ替えられる一覧。データは世界銀行。",
+      "mapIntro": "国ごとの色は、住む人全員に世界銀行の貧困ライン「1日3.00ドル」を1年配ったときの額を、その国の政府の税収とくらべたものです。国にカーソルを重ねるかタップすると数字が出ます。下の表は並べ替えられます。",
+      "mapCrumb": "世界地図",
+      "mapLink": "世界地図：税収とくらべた費用",
+      "mapLegendH": "1年の費用が税収に占める割合",
+      "mapBin0": "10％未満",
+      "mapBin1": "10〜25％",
+      "mapBin2": "25〜50％",
+      "mapBin3": "50〜100％",
+      "mapBin4": "100％超（税収をすべて使っても足りない）",
+      "mapBin5": "最近のデータなし",
+      "mapTipTax": "{country}：税収の{tax}（{year}年）、GDPの{gdp}",
+      "mapTipRev": "{country}：政府の歳入の{tax}（{year}年）、GDPの{gdp}",
+      "mapTipBudget": "{country}：国の税収の{tax}（2026年度予算）、GDPの{gdp}",
+      "mapTipNone": "{country}：最近の税収のデータなし、GDPの{gdp}",
+      "mapTipOut": "{country}：データなし",
+      "mapSvgLabel": "世界地図：全員に1日3.00ドルを1年配る費用が、政府の税収に占める割合",
+      "mapTap": "国をタップするか、カーソルを重ねると数字が出ます。",
+      "mapMethodH": "地図の作り方",
+      "mapM1": "費用：住む人全員（年齢を問わない）に、世界銀行の国際貧困ライン「1日3.00ドル」（2021年の購買力平価、PPP）を1年配ったときの額です。現地通貨へは、世界銀行の家計消費の購買力平価換算係数で直します。使える係数のない{fx}の国・地域は市場の為替レートで直すので、1日3ドルの重みが大きくなります。",
+      "mapM2": "税収：中央政府の税収のGDP比（世界銀行、GC.TAX.TOTL.GD.ZS）の最新の年。GDPの年より{age}年を超えて古いものは使いません。税収がなければ歳入を使います。使った年：{years}。世界銀行に最近の数字がない日本は、2026年度予算の租税及印紙収入とくらべます。州・地方の税は含みません。",
+      "mapM3": "これは総額（グロス）です。ベーシックインカムに置きかえられる今の給付や、税として戻ってくる分は差し引いていません。",
+      "mapM4": "灰色（斜線）：最近の税収のデータがない{none}の国・地域と、データそのものがない台湾・北朝鮮・エリトリア・南スーダン・イエメンなど。小さな国は点で描いています。すべての国は表にあります。",
+      "mapTableH": "{n}の国・地域すべて",
+      "mapColGdp": "GDP比",
+      "mapColTax": "税収比",
+      "mapColYear": "税収の年",
+      "mapColBin": "区分",
+      "mapNoData": "データなし",
+      "mapBudgetYear": "2026年度",
+      "mapData": "データのJSON：{file}（CC BY 4.0）。地図の形：Natural Earth（world-atlas 経由、パブリックドメイン）。",
+      "mapEssay": "エッセイ",
       "calcIdxData": "この表のJSON：{file}（CC BY 4.0）"
     },
     "en": {
@@ -5151,6 +5195,40 @@ module.exports = {
       "calcIdxPct": "Yearly cost, % of GDP",
       "calcIdxFilter": "Search for a country",
       "calcIdxNote": "Population and GDP: the latest World Bank figures (the year is on each country's page; for the seven featured countries, the figures used in the calculator). Conversion: the World Bank's PPP factor for household consumption or, where none is recent, the exchange rate implied by GDP in local currency and US dollars. Gross cost only: no taxes or replaced benefits are netted out.",
+      "mapTitle": "Which countries could pay for a basic income? A map of {n} countries",
+      "mapH1": "Which countries could pay for a basic income tomorrow?",
+      "mapDesc": "A world map of what paying everyone $3.00 a day for a year would cost as a share of each government’s tax revenue, for {n} countries and territories.",
+      "mapIntro": "Each country is coloured by the yearly cost of paying every resident the World Bank’s poverty line of $3.00 a day, set against its government’s tax revenue. Hover over or tap a country for its figures, or sort the table below.",
+      "mapCrumb": "World map",
+      "mapLink": "World map: the cost against tax revenue",
+      "mapLegendH": "Yearly cost as a share of tax revenue",
+      "mapBin0": "Under 10%",
+      "mapBin1": "10–25%",
+      "mapBin2": "25–50%",
+      "mapBin3": "50–100%",
+      "mapBin4": "Over 100% (more than all its tax revenue)",
+      "mapBin5": "No recent data",
+      "mapTipTax": "{country}: {tax} of tax revenue ({year}); {gdp} of GDP",
+      "mapTipRev": "{country}: {tax} of government revenue ({year}); {gdp} of GDP",
+      "mapTipBudget": "{country}: {tax} of national tax revenue (FY2026 budget); {gdp} of GDP",
+      "mapTipNone": "{country}: no recent tax revenue figure; {gdp} of GDP",
+      "mapTipOut": "{country}: no data",
+      "mapSvgLabel": "World map: the yearly cost of paying everyone $3.00 a day, as a share of government tax revenue",
+      "mapTap": "Tap or hover over a country to see its figures.",
+      "mapMethodH": "How the map is built",
+      "mapM1": "Cost: every resident, of every age, gets the World Bank’s international poverty line of $3.00 a day (in 2021 purchasing power parity, PPP) for a year. It is converted into local currency with the World Bank’s PPP conversion factor for household consumption. For {fx} countries and territories without a usable factor, the market exchange rate is used instead, which makes $3 a day worth more there.",
+      "mapM2": "Revenue: central government tax revenue as a share of GDP (World Bank, GC.TAX.TOTL.GD.ZS), the latest year, used only if it is no more than {age} years older than the GDP year; total revenue if tax revenue is missing. Years used: {years}. Japan, which has no recent World Bank figure, is compared with tax and stamp revenue in its FY2026 national budget. State and local taxes are not counted.",
+      "mapM3": "This is the gross cost. It does not subtract the existing benefits a basic income could replace, or the part that would come back through taxes.",
+      "mapM4": "Grey (hatched): {none} countries and territories without a recent tax revenue figure, and places that are not in the data at all, such as Taiwan, North Korea, Eritrea, South Sudan and Yemen. Small countries are drawn as dots; every country is in the table.",
+      "mapTableH": "All {n} countries and territories",
+      "mapColGdp": "% of GDP",
+      "mapColTax": "% of tax revenue",
+      "mapColYear": "Revenue year",
+      "mapColBin": "Band",
+      "mapNoData": "no data",
+      "mapBudgetYear": "FY2026",
+      "mapData": "The data as JSON: {file} (CC BY 4.0). Map shapes: Natural Earth via world-atlas (public domain).",
+      "mapEssay": "Essay",
       "calcIdxData": "The table as JSON: {file} (CC BY 4.0)"
     },
     "hi": {
@@ -5580,6 +5658,40 @@ module.exports = {
       "calcIdxPct": "सालाना खर्च, GDP का %",
       "calcIdxFilter": "देश का नाम खोजें",
       "calcIdxNote": "जनसंख्या और GDP वर्ल्ड बैंक के ताज़ा आँकड़े हैं (साल हर देश के पेज पर है; 7 मुख्य देशों के लिए वही आँकड़े जो कैलकुलेटर में हैं)। बदलने के लिए वर्ल्ड बैंक का घरेलू उपभोग वाला PPP कारक लिया गया है; जहाँ हाल का नहीं है, वहाँ स्थानीय मुद्रा और डॉलर वाले GDP से निकली विनिमय दर। यह सिर्फ़ कुल (ग्रॉस) खर्च है, कर या बदली जाने वाली योजनाएँ घटाई नहीं गईं।",
+      "mapTitle": "कौन से देश बेसिक इनकम दे सकते हैं? {n} देशों का विश्व मानचित्र",
+      "mapH1": "कौन से देश कल से बेसिक इनकम दे सकते हैं?",
+      "mapDesc": "हर व्यक्ति को एक साल तक रोज़ 3.00 डॉलर (वर्ल्ड बैंक की ग़रीबी रेखा) देने का खर्च हर सरकार के टैक्स राजस्व का कितना होगा, {n} देशों और क्षेत्रों का विश्व मानचित्र।",
+      "mapIntro": "हर देश का रंग बताता है कि सभी निवासियों को वर्ल्ड बैंक की ग़रीबी रेखा, रोज़ 3.00 डॉलर, एक साल तक देने का खर्च उस देश की सरकार के टैक्स राजस्व के मुकाबले कितना है। आँकड़े देखने के लिए देश पर टैप करें या माउस ले जाएँ, नीचे की तालिका को छाँट सकते हैं।",
+      "mapCrumb": "विश्व मानचित्र",
+      "mapLink": "विश्व मानचित्र: टैक्स राजस्व के मुकाबले खर्च",
+      "mapLegendH": "सालाना खर्च, टैक्स राजस्व के हिस्से के रूप में",
+      "mapBin0": "10% से कम",
+      "mapBin1": "10–25%",
+      "mapBin2": "25–50%",
+      "mapBin3": "50–100%",
+      "mapBin4": "100% से ज़्यादा (पूरा टैक्स राजस्व भी कम)",
+      "mapBin5": "हाल का डेटा नहीं",
+      "mapTipTax": "{country}: टैक्स राजस्व का {tax} ({year}); GDP का {gdp}",
+      "mapTipRev": "{country}: सरकारी राजस्व का {tax} ({year}); GDP का {gdp}",
+      "mapTipBudget": "{country}: राष्ट्रीय टैक्स राजस्व का {tax} (वित्त वर्ष 2026 का बजट); GDP का {gdp}",
+      "mapTipNone": "{country}: हाल का टैक्स राजस्व आँकड़ा नहीं; GDP का {gdp}",
+      "mapTipOut": "{country}: डेटा नहीं",
+      "mapSvgLabel": "विश्व मानचित्र: सबको रोज़ 3.00 डॉलर देने का सालाना खर्च, सरकार के टैक्स राजस्व के हिस्से के रूप में",
+      "mapTap": "आँकड़े देखने के लिए देश पर टैप करें या माउस ले जाएँ।",
+      "mapMethodH": "यह मानचित्र कैसे बना",
+      "mapM1": "खर्च: हर उम्र के हर निवासी को एक साल तक वर्ल्ड बैंक की अंतरराष्ट्रीय ग़रीबी रेखा, रोज़ 3.00 डॉलर (2021 की क्रय शक्ति समता, PPP में)। इसे वर्ल्ड बैंक के घरेलू उपभोग के PPP रूपांतरण गुणक से स्थानीय मुद्रा में बदला गया है। जिन {fx} देशों और क्षेत्रों के लिए काम का गुणक नहीं है, वहाँ बाज़ार की विनिमय दर ली गई है, जिससे वहाँ रोज़ 3 डॉलर ज़्यादा भारी पड़ते हैं।",
+      "mapM2": "राजस्व: केंद्र सरकार का टैक्स राजस्व, GDP के हिस्से के रूप में (वर्ल्ड बैंक, GC.TAX.TOTL.GD.ZS), सबसे नया साल, बशर्ते वह GDP के साल से {age} साल से ज़्यादा पुराना न हो; टैक्स राजस्व न हो तो कुल राजस्व। इस्तेमाल हुए साल: {years}। जापान के लिए वर्ल्ड बैंक का हाल का आँकड़ा नहीं है, इसलिए उसकी तुलना वित्त वर्ष 2026 के राष्ट्रीय बजट के टैक्स और स्टांप राजस्व से की गई है। राज्यों और स्थानीय निकायों के टैक्स शामिल नहीं हैं।",
+      "mapM3": "यह कुल (ग्रॉस) खर्च है। इसमें न तो वे मौजूदा लाभ घटाए गए हैं जिनकी जगह बेसिक इनकम ले सकती है, न वह हिस्सा जो टैक्स के रूप में वापस आएगा।",
+      "mapM4": "धूसर (धारीदार): {none} देश और क्षेत्र जिनका हाल का टैक्स राजस्व आँकड़ा नहीं है, और वे जगहें जो डेटा में हैं ही नहीं, जैसे ताइवान, उत्तर कोरिया, इरिट्रिया, दक्षिण सूडान और यमन। छोटे देश बिंदु के रूप में हैं; हर देश तालिका में है।",
+      "mapTableH": "सभी {n} देश और क्षेत्र",
+      "mapColGdp": "GDP का %",
+      "mapColTax": "टैक्स राजस्व का %",
+      "mapColYear": "राजस्व का साल",
+      "mapColBin": "श्रेणी",
+      "mapNoData": "डेटा नहीं",
+      "mapBudgetYear": "वित्त वर्ष 2026",
+      "mapData": "डेटा JSON में: {file} (CC BY 4.0)। मानचित्र की आकृतियाँ: Natural Earth, world-atlas के ज़रिए (पब्लिक डोमेन)।",
+      "mapEssay": "लेख",
       "calcIdxData": "यह तालिका JSON में: {file} (CC BY 4.0)"
     },
     "zh": {
@@ -6011,6 +6123,40 @@ module.exports = {
       "calcIdxPct": "年费用占GDP",
       "calcIdxFilter": "按名称筛选",
       "calcIdxNote": "人口和GDP为世界银行的最新数据（年份见各国页面；7个主要国家使用与计算器相同的数据）。换算使用世界银行的居民消费购买力平价换算系数；没有近年数据的，使用由本币和美元GDP推算的汇率。只是发放总额（毛额），没有扣除税收或被替代的福利。",
+      "mapTitle": "哪些国家付得起基本收入？{n}个国家和地区的世界地图",
+      "mapH1": "哪些国家明天就付得起基本收入？",
+      "mapDesc": "给每个人每天3.00美元（世界银行贫困线）发一年，相当于各国政府税收的多少？{n}个国家和地区的分级世界地图和可排序的一览表，数据来自世界银行。",
+      "mapIntro": "每个国家的颜色表示：给全体居民每人每天发放世界银行贫困线3.00美元、发一年的费用，与该国政府税收相比的比例。把鼠标移到国家上或点按即可看到数字，下面的表格可以排序。",
+      "mapCrumb": "世界地图",
+      "mapLink": "世界地图：费用与税收之比",
+      "mapLegendH": "一年费用占税收的比例",
+      "mapBin0": "不到10%",
+      "mapBin1": "10–25%",
+      "mapBin2": "25–50%",
+      "mapBin3": "50–100%",
+      "mapBin4": "超过100%（全部税收也不够）",
+      "mapBin5": "没有近期数据",
+      "mapTipTax": "{country}：税收的{tax}（{year}年），GDP的{gdp}",
+      "mapTipRev": "{country}：政府收入的{tax}（{year}年），GDP的{gdp}",
+      "mapTipBudget": "{country}：国家税收的{tax}（2026财年预算），GDP的{gdp}",
+      "mapTipNone": "{country}：没有近期税收数据，GDP的{gdp}",
+      "mapTipOut": "{country}：没有数据",
+      "mapSvgLabel": "世界地图：给每个人每天3.00美元发一年的费用占政府税收的比例",
+      "mapTap": "点按国家或把鼠标移上去即可看到数字。",
+      "mapMethodH": "地图是怎么做的",
+      "mapM1": "费用：全体居民（不分年龄）每人每天领取世界银行国际贫困线3.00美元（2021年购买力平价，PPP），为期一年。用世界银行的居民消费购买力平价换算系数折算成本币。没有可用系数的{fx}个国家和地区改用市场汇率，那里每天3美元的分量因此更重。",
+      "mapM2": "税收：中央政府税收占GDP的比例（世界银行，GC.TAX.TOTL.GD.ZS）的最新年份，比GDP年份早{age}年以上的不用；没有税收数据时改用财政收入。所用年份：{years}。世界银行没有近期数字的日本，与其2026财年国家预算中的租税及印花收入相比。不含州和地方税。",
+      "mapM3": "这是总费用（毛额），没有扣除基本收入可以取代的现有福利，也没有扣除通过税收收回的部分。",
+      "mapM4": "灰色（斜线）：没有近期税收数据的{none}个国家和地区，以及完全没有数据的地方，如台湾、朝鲜、厄立特里亚、南苏丹和也门。小国画成圆点；所有国家都在表格里。",
+      "mapTableH": "全部{n}个国家和地区",
+      "mapColGdp": "占GDP",
+      "mapColTax": "占税收",
+      "mapColYear": "税收年份",
+      "mapColBin": "档位",
+      "mapNoData": "无数据",
+      "mapBudgetYear": "2026财年",
+      "mapData": "数据JSON：{file}（CC BY 4.0）。地图形状：Natural Earth（经 world-atlas，公有领域）。",
+      "mapEssay": "文章",
       "calcIdxData": "本表的JSON：{file}（CC BY 4.0）"
     },
     "es": {
@@ -6440,6 +6586,40 @@ module.exports = {
       "calcIdxPct": "Coste anual, % del PIB",
       "calcIdxFilter": "Buscar un país",
       "calcIdxNote": "Población y PIB: las cifras más recientes del Banco Mundial (el año está en la página de cada país; para los siete países destacados, las mismas cifras que la calculadora). Conversión: el factor PPA del consumo de los hogares del Banco Mundial o, si no hay uno reciente, el tipo de cambio que resulta del PIB en moneda local y en dólares. Solo coste bruto: no se restan impuestos ni prestaciones sustituidas.",
+      "mapTitle": "¿Qué países podrían pagar una renta básica? Mapa de {n} países",
+      "mapH1": "¿Qué países podrían pagar una renta básica mañana?",
+      "mapDesc": "Un mapa mundial de lo que costaría pagar a todos 3,00 dólares al día durante un año, como parte de la recaudación tributaria de cada gobierno, en {n} países y territorios.",
+      "mapIntro": "Cada país se colorea según el coste anual de pagar a todos sus habitantes la línea de pobreza del Banco Mundial, 3,00 dólares al día, comparado con la recaudación tributaria de su gobierno. Pasa el ratón o toca un país para ver sus cifras, u ordena la tabla de abajo.",
+      "mapCrumb": "Mapa mundial",
+      "mapLink": "Mapa mundial: el coste frente a la recaudación",
+      "mapLegendH": "Coste anual como parte de la recaudación tributaria",
+      "mapBin0": "Menos del 10 %",
+      "mapBin1": "10–25 %",
+      "mapBin2": "25–50 %",
+      "mapBin3": "50–100 %",
+      "mapBin4": "Más del 100 % (más que toda su recaudación)",
+      "mapBin5": "Sin datos recientes",
+      "mapTipTax": "{country}: {tax} de la recaudación tributaria ({year}); {gdp} del PIB",
+      "mapTipRev": "{country}: {tax} de los ingresos públicos ({year}); {gdp} del PIB",
+      "mapTipBudget": "{country}: {tax} de la recaudación nacional (presupuesto del año fiscal 2026); {gdp} del PIB",
+      "mapTipNone": "{country}: sin dato reciente de recaudación; {gdp} del PIB",
+      "mapTipOut": "{country}: sin datos",
+      "mapSvgLabel": "Mapa mundial: el coste anual de pagar a todos 3,00 dólares al día, como parte de la recaudación tributaria del gobierno",
+      "mapTap": "Toca un país o pasa el ratón por encima para ver sus cifras.",
+      "mapMethodH": "Cómo se hace el mapa",
+      "mapM1": "Coste: cada habitante, de cualquier edad, recibe durante un año la línea internacional de pobreza del Banco Mundial, 3,00 dólares al día (en paridad de poder adquisitivo, PPA, de 2021). Se convierte a moneda local con el factor de conversión PPA del consumo de los hogares del Banco Mundial. En {fx} países y territorios sin un factor utilizable se usa el tipo de cambio de mercado, con lo que allí 3 dólares al día pesan más.",
+      "mapM2": "Recaudación: ingresos tributarios del gobierno central como parte del PIB (Banco Mundial, GC.TAX.TOTL.GD.ZS), del último año, solo si no tiene más de {age} años de antigüedad respecto al año del PIB; si falta, los ingresos totales. Años usados: {years}. Japón, sin dato reciente del Banco Mundial, se compara con los impuestos y timbres de su presupuesto nacional del año fiscal 2026. No se cuentan los impuestos regionales ni locales.",
+      "mapM3": "Es el coste bruto. No resta las prestaciones actuales que una renta básica podría sustituir ni la parte que volvería en impuestos.",
+      "mapM4": "Gris (rayado): {none} países y territorios sin dato reciente de recaudación, y lugares que no están en los datos, como Taiwán, Corea del Norte, Eritrea, Sudán del Sur y Yemen. Los países pequeños aparecen como puntos; todos están en la tabla.",
+      "mapTableH": "Los {n} países y territorios",
+      "mapColGdp": "% del PIB",
+      "mapColTax": "% de la recaudación",
+      "mapColYear": "Año de la recaudación",
+      "mapColBin": "Tramo",
+      "mapNoData": "sin datos",
+      "mapBudgetYear": "año fiscal 2026",
+      "mapData": "Los datos en JSON: {file} (CC BY 4.0). Formas del mapa: Natural Earth vía world-atlas (dominio público).",
+      "mapEssay": "Ensayo",
       "calcIdxData": "La tabla en JSON: {file} (CC BY 4.0)"
     },
     "ar": {
@@ -6869,6 +7049,40 @@ module.exports = {
       "calcIdxPct": "التكلفة السنوية، % من الناتج",
       "calcIdxFilter": "ابحث عن بلد",
       "calcIdxNote": "السكان والناتج: أحدث أرقام البنك الدولي (السنة في صفحة كل بلد؛ وللبلدان السبعة المختارة الأرقام نفسها المستخدمة في الحاسبة). التحويل: معامل تعادل القوة الشرائية لاستهلاك الأسر من البنك الدولي، أو سعر الصرف المستخلص من الناتج بالعملة المحلية وبالدولار حيث لا يتوفر معامل حديث. التكلفة الإجمالية فقط: لا تُخصم الضرائب ولا الإعانات المستبدلة.",
+      "mapTitle": "أي الدول تستطيع دفع دخل أساسي؟ خريطة {n} دولة",
+      "mapH1": "أي الدول تستطيع دفع دخل أساسي غدًا؟",
+      "mapDesc": "خريطة للعالم تبين كلفة دفع 3.00 دولارات يوميًا لكل شخص لمدة عام، نسبةً إلى الإيرادات الضريبية لكل حكومة، في {n} دولة وإقليمًا، مع جدول قابل للفرز.",
+      "mapIntro": "لون كل دولة يبين الكلفة السنوية لدفع خط الفقر لدى البنك الدولي، 3.00 دولارات يوميًا، لكل السكان، مقارنةً بالإيرادات الضريبية لحكومتها. مرّر المؤشر فوق دولة أو اضغط عليها لترى أرقامها، أو رتّب الجدول أدناه.",
+      "mapCrumb": "خريطة العالم",
+      "mapLink": "خريطة العالم: الكلفة مقابل الإيرادات الضريبية",
+      "mapLegendH": "الكلفة السنوية نسبةً إلى الإيرادات الضريبية",
+      "mapBin0": "أقل من 10%",
+      "mapBin1": "10–25%",
+      "mapBin2": "25–50%",
+      "mapBin3": "50–100%",
+      "mapBin4": "أكثر من 100% (أكثر من كل إيراداتها الضريبية)",
+      "mapBin5": "لا بيانات حديثة",
+      "mapTipTax": "{country}: {tax} من الإيرادات الضريبية ({year})؛ {gdp} من الناتج المحلي",
+      "mapTipRev": "{country}: {tax} من الإيرادات الحكومية ({year})؛ {gdp} من الناتج المحلي",
+      "mapTipBudget": "{country}: {tax} من الإيرادات الضريبية الوطنية (ميزانية السنة المالية 2026)؛ {gdp} من الناتج المحلي",
+      "mapTipNone": "{country}: لا رقم حديثًا للإيرادات الضريبية؛ {gdp} من الناتج المحلي",
+      "mapTipOut": "{country}: لا بيانات",
+      "mapSvgLabel": "خريطة العالم: الكلفة السنوية لدفع 3.00 دولارات يوميًا للجميع، نسبةً إلى الإيرادات الضريبية للحكومة",
+      "mapTap": "اضغط على دولة أو مرّر المؤشر فوقها لترى أرقامها.",
+      "mapMethodH": "كيف صُنعت الخريطة",
+      "mapM1": "الكلفة: يحصل كل مقيم، من كل الأعمار، لمدة عام على خط الفقر الدولي لدى البنك الدولي، 3.00 دولارات يوميًا (بتعادل القوة الشرائية ⁦PPP⁩ لعام 2021). ويُحوَّل إلى العملة المحلية بمعامل تحويل تعادل القوة الشرائية للاستهلاك الأسري لدى البنك الدولي. وفي {fx} دولة وإقليمًا لا يتوفر لها معامل صالح، يُستخدم سعر الصرف في السوق، فتصبح 3 دولارات يوميًا أثقل هناك.",
+      "mapM2": "الإيرادات: الإيرادات الضريبية للحكومة المركزية نسبةً إلى الناتج المحلي الإجمالي (البنك الدولي، ⁦GC.TAX.TOTL.GD.ZS⁩)، لأحدث سنة، ولا تُستخدم إلا إذا لم تكن أقدم من سنة الناتج المحلي بأكثر من {age} سنوات؛ وإن غابت فإجمالي الإيرادات. السنوات المستخدمة: {years}. أما اليابان، التي لا رقم حديثًا لها لدى البنك الدولي، فتُقارن بإيرادات الضرائب والطوابع في ميزانيتها الوطنية للسنة المالية 2026. ولا تُحسب ضرائب الولايات والسلطات المحلية.",
+      "mapM3": "هذه هي الكلفة الإجمالية. لا يُطرح منها ما قد يحل الدخل الأساسي محله من إعانات قائمة، ولا الجزء الذي يعود عبر الضرائب.",
+      "mapM4": "الرمادي (المخطط): {none} دولة وإقليمًا بلا رقم حديث للإيرادات الضريبية، وأماكن ليست في البيانات أصلًا، مثل تايوان وكوريا الشمالية وإريتريا وجنوب السودان واليمن. الدول الصغيرة مرسومة نقاطًا؛ وكل الدول في الجدول.",
+      "mapTableH": "كل الدول والأقاليم ({n})",
+      "mapColGdp": "% من الناتج المحلي",
+      "mapColTax": "% من الإيرادات الضريبية",
+      "mapColYear": "سنة الإيرادات",
+      "mapColBin": "الفئة",
+      "mapNoData": "لا بيانات",
+      "mapBudgetYear": "السنة المالية 2026",
+      "mapData": "البيانات بصيغة ⁦JSON⁩: {file} (⁦CC BY 4.0⁩). أشكال الخريطة: ⁦Natural Earth⁩ عبر ⁦world-atlas⁩ (ملكية عامة).",
+      "mapEssay": "مقال",
       "calcIdxData": "الجدول بصيغة ⁦JSON⁩: {file} (⁦CC BY 4.0⁩)"
     },
     "de": {
@@ -7298,6 +7512,40 @@ module.exports = {
       "calcIdxPct": "Jahreskosten, % des BIP",
       "calcIdxFilter": "Land suchen",
       "calcIdxNote": "Bevölkerung und BIP: die neuesten Zahlen der Weltbank (das Jahr steht auf der Seite des Landes; für die sieben hervorgehobenen Länder dieselben Zahlen wie im Rechner). Umrechnung: der KKP-Faktor der Weltbank für den privaten Konsum oder, wo kein aktueller vorliegt, der Wechselkurs aus dem BIP in Landeswährung und US-Dollar. Nur Bruttokosten: Steuern und ersetzte Leistungen sind nicht abgezogen.",
+      "mapTitle": "Welche Länder könnten ein Grundeinkommen zahlen? Karte mit {n} Ländern",
+      "mapH1": "Welche Länder könnten morgen ein Grundeinkommen zahlen?",
+      "mapDesc": "Eine Weltkarte: Was es kosten würde, allen ein Jahr lang 3,00 Dollar am Tag zu zahlen, gemessen an den Steuereinnahmen jedes Staates, für {n} Länder und Gebiete.",
+      "mapIntro": "Jedes Land ist danach eingefärbt, was es im Jahr kosten würde, allen Einwohnern die Armutsgrenze der Weltbank von 3,00 Dollar am Tag zu zahlen, gemessen an den Steuereinnahmen des Staates. Fahre über ein Land oder tippe darauf, um die Zahlen zu sehen, oder sortiere die Tabelle unten.",
+      "mapCrumb": "Weltkarte",
+      "mapLink": "Weltkarte: die Kosten im Verhältnis zu den Steuereinnahmen",
+      "mapLegendH": "Jährliche Kosten in Prozent der Steuereinnahmen",
+      "mapBin0": "Unter 10 %",
+      "mapBin1": "10–25 %",
+      "mapBin2": "25–50 %",
+      "mapBin3": "50–100 %",
+      "mapBin4": "Über 100 % (mehr als alle Steuereinnahmen)",
+      "mapBin5": "Keine aktuellen Daten",
+      "mapTipTax": "{country}: {tax} der Steuereinnahmen ({year}); {gdp} des BIP",
+      "mapTipRev": "{country}: {tax} der Staatseinnahmen ({year}); {gdp} des BIP",
+      "mapTipBudget": "{country}: {tax} der nationalen Steuereinnahmen (Haushalt 2026); {gdp} des BIP",
+      "mapTipNone": "{country}: keine aktuellen Steuerdaten; {gdp} des BIP",
+      "mapTipOut": "{country}: keine Daten",
+      "mapSvgLabel": "Weltkarte: die jährlichen Kosten, allen 3,00 Dollar am Tag zu zahlen, in Prozent der Steuereinnahmen des Staates",
+      "mapTap": "Tippe auf ein Land oder fahre mit der Maus darüber, um die Zahlen zu sehen.",
+      "mapMethodH": "So entsteht die Karte",
+      "mapM1": "Kosten: Alle Einwohner jeden Alters erhalten ein Jahr lang die internationale Armutsgrenze der Weltbank von 3,00 Dollar am Tag (in Kaufkraftparitäten, KKP, von 2021). Umgerechnet wird mit dem KKP-Umrechnungsfaktor der Weltbank für den privaten Konsum. Für {fx} Länder und Gebiete ohne brauchbaren Faktor gilt der Marktwechselkurs; dort wiegen 3 Dollar am Tag schwerer.",
+      "mapM2": "Einnahmen: Steuereinnahmen des Zentralstaats in Prozent des BIP (Weltbank, GC.TAX.TOTL.GD.ZS), das neueste Jahr, nur wenn es höchstens {age} Jahre älter ist als das BIP-Jahr; fehlen sie, die Gesamteinnahmen. Verwendete Jahre: {years}. Japan, für das die Weltbank keine aktuelle Zahl hat, wird mit den Steuer- und Stempeleinnahmen im Staatshaushalt 2026 verglichen. Steuern der Länder und Gemeinden sind nicht enthalten.",
+      "mapM3": "Das sind die Bruttokosten. Weder bestehende Leistungen, die ein Grundeinkommen ersetzen könnte, noch der Teil, der über Steuern zurückfließt, sind abgezogen.",
+      "mapM4": "Grau (schraffiert): {none} Länder und Gebiete ohne aktuelle Steuerdaten sowie Orte, die gar nicht in den Daten sind, etwa Taiwan, Nordkorea, Eritrea, Südsudan und Jemen. Kleine Länder sind als Punkte gezeichnet; alle Länder stehen in der Tabelle.",
+      "mapTableH": "Alle {n} Länder und Gebiete",
+      "mapColGdp": "% des BIP",
+      "mapColTax": "% der Steuern",
+      "mapColYear": "Jahr der Einnahmen",
+      "mapColBin": "Stufe",
+      "mapNoData": "keine Daten",
+      "mapBudgetYear": "Haushalt 2026",
+      "mapData": "Die Daten als JSON: {file} (CC BY 4.0). Kartenformen: Natural Earth über world-atlas (gemeinfrei).",
+      "mapEssay": "Essay",
       "calcIdxData": "Die Tabelle als JSON: {file} (CC BY 4.0)"
     }
   },
@@ -16669,6 +16917,971 @@ module.exports = {
     }
   ],
   "ESSAYS": [
+    {
+      "id": "basic-income-world-map",
+      "date": "2026-11-10",
+      "related": [
+        "finland-basic-income-experiment",
+        "india-basic-income-madhya-pradesh-ladli-behna",
+        "china-childcare-subsidy-basic-income",
+        "openresearch-cash-study",
+        "universal-high-income"
+      ],
+      "title": {
+        "en": "Which countries could afford a basic income tomorrow? A map of 211 countries",
+        "ja": "明日からベーシックインカムを払える国はどこ？ 211の国・地域の世界地図",
+        "zh": "哪些国家明天就付得起基本收入？211个国家和地区的世界地图",
+        "hi": "कौन से देश कल से बेसिक इनकम दे सकते हैं? 211 देशों का नक्शा",
+        "es": "¿Qué países podrían pagar una renta básica mañana? Mapa de 211 países",
+        "de": "Welche Länder könnten sich morgen ein Grundeinkommen leisten? Karte mit 211 Ländern",
+        "ar": "أي الدول تستطيع تحمّل دخل أساسي غدًا؟ خريطة 211 دولة"
+      },
+      "desc": {
+        "en": "We set the cost of paying everyone $3.00 a day against each government’s tax revenue. 24 countries could do it with under 10%; 40 would need more than all of it.",
+        "ja": "全員に1日3.00ドルを配る費用を、各国の政府の税収とくらべた。税収の10％未満で払えるのは24か国、税収をすべて使っても足りないのは40か国。",
+        "zh": "我们把给每个人每天3.00美元的费用与各国政府的税收相比：24个国家用不到10%的税收就能做到，40个国家用上全部税收也不够。",
+        "hi": "सबको रोज़ 3.00 डॉलर देने का खर्च हर सरकार के टैक्स राजस्व से तुलना में: 24 देश 10% से कम में दे सकते हैं, 40 के लिए पूरा टैक्स भी कम है।",
+        "es": "Comparamos el coste de pagar a todos 3,00 dólares al día con la recaudación de cada gobierno: 24 países lo cubrirían con menos del 10 %; 40 no llegarían ni con toda.",
+        "de": "Was es kostet, allen 3,00 Dollar am Tag zu zahlen, gemessen an den Steuereinnahmen: 24 Länder bräuchten unter 10 %, 40 mehr als alle.",
+        "ar": "قارنّا كلفة دفع 3.00 دولارات يوميًا للجميع بالإيرادات الضريبية لكل حكومة: 24 دولة يكفيها أقل من 10%، و40 لا تكفيها كل إيراداتها."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "Pay every resident the World Bank’s international poverty line, $3.00 a day, for one year. In seven places that would cost less than 1% of GDP: Monaco (0.38%), Liechtenstein (0.50%), Luxembourg (0.74%), Bermuda (0.77%), Ireland (0.84%), Singapore (0.86%) and Macao (0.89%). In three it would cost more than the whole economy produces in a year: Burundi (115% of GDP), DR Congo (133%) and Somalia (163%).[1][8]"
+          ],
+          [
+            "p",
+            "GDP is not what a government can spend, though. So for every country we also set the cost against the government’s own tax revenue. Of the 140 countries and territories with a recent figure, 24 could pay for it with less than a tenth of their tax revenue. 40 would need more than all of it."
+          ],
+          [
+            "m",
+            ""
+          ],
+          [
+            "h",
+            "How the map is built"
+          ],
+          [
+            "p",
+            "The cost is the population × $3.00 a day × 365 days: everyone, of every age, for one year. $3.00 is the World Bank’s international poverty line in 2021 purchasing power parity (PPP) dollars, set in June 2025.[1] We convert it into local currency with the World Bank’s PPP conversion factor for household consumption, so that it buys roughly the same everywhere.[6] For 34 countries and territories without a usable factor we use the market exchange rate instead. Population and GDP are World Bank figures, with national statistics for seven featured countries; GDP is for 2025 in 186 of the 211.[2][3] The country shapes come from Natural Earth.[9]"
+          ],
+          [
+            "p",
+            "Revenue is central government tax revenue as a share of GDP, from the World Bank.[4] We take the latest year, and only if it is no more than five years older than the GDP year. Where tax revenue is missing we would use total revenue instead,[5] but in this edition no country needed it. Of the 140 figures, 93 are for 2024, 19 for 2023, 8 for 2022, 9 for 2021 and 10 for 2020. Japan has no recent World Bank figure, so we use the tax and stamp revenue in its FY2026 national budget, ¥83.7 trillion.[7]"
+          ],
+          [
+            "p",
+            "That leaves 71 countries and territories grey, home to 1.61 billion people: the World Bank has no tax figure for them since 2015, or only one more than five years old. They include Nigeria, Pakistan, Indonesia, Egypt, Vietnam, Iran, Qatar and Kuwait. Taiwan, North Korea, Eritrea, South Sudan and Yemen are not in the data at all. The full table, with every country’s figures and a link to its calculator page, is on {the map page|/calc/map/}.[8]"
+          ],
+          [
+            "t",
+            "Cost as a share of tax revenue | Countries and territories | People living there\nUnder 10% | 24 | 0.35 billion\n10–25% | 35 | 1.18 billion\n25–50% | 23 | 0.70 billion\n50–100% | 18 | 1.71 billion\nOver 100% | 40 | 2.57 billion\nNo recent data | 71 | 1.61 billion"
+          ],
+          [
+            "h",
+            "Patterns by region and income"
+          ],
+          [
+            "p",
+            "Europe stands out. Of the 48 countries in Europe and Central Asia with a figure, 41 come in under 25% of tax revenue and 18 under 10%. The lowest shares anywhere are Luxembourg (2.6%), Macao (3.2%), Denmark (4.4%), Norway (4.5%) and Ireland (4.7%). At the other end, 25 of the 32 countries in Sub-Saharan Africa with a figure would need more than their whole tax take; only Mauritius (18%) and Botswana (24%) come in under 25%."
+          ],
+          [
+            "p",
+            "Latin America sits in the middle: 10 of its 19 countries with a figure fall between 25% and 50%, among them Mexico (30%), Brazil (31%) and Colombia (34%). In South Asia all six countries have a figure and none is under 10%. The Maldives (24%) is lowest; India and Nepal (both 132%) and Bangladesh (160%) would need more than all their central tax revenue."
+          ],
+          [
+            "p",
+            "Income explains most of this. Grouping countries by GDP per person in US dollars, from the same data (this is not the World Bank’s income classification): among the 55 with a figure and more than $15,000 per person, the median cost is 11% of tax revenue and 49 are under 25%. Between $5,000 and $15,000 the median is 31%; between $1,500 and $5,000 it is 114%. Below $1,500, 17 of the 18 countries with a figure would need more than all their tax revenue, and the median is 287%."
+          ],
+          [
+            "p",
+            "Two things push in the same direction. Among the countries with a tax figure, a poverty line in PPP dollars is a bigger slice of the economy where incomes are low: the median cost is 1.9% of GDP above $15,000 per person and 36% below $1,500. And poorer governments collect a smaller share of GDP in tax: the median is 19.9% above $15,000 and 12.6% below $1,500."
+          ],
+          [
+            "h",
+            "Notable cases"
+          ],
+          [
+            "p",
+            "Japan: ¥9,400 a month per person, about ¥13.9 trillion a year, or 2.1% of GDP. Against the ¥83.7 trillion of tax and stamp revenue in the FY2026 national budget, that is 16.5%.[7] {Japan’s calculator page|/calc/jp/} lets you try other amounts."
+          ],
+          [
+            "p",
+            "The United States: $91 a month, about $379 billion a year, 1.2% of GDP. Federal tax revenue was 10.8% of GDP in 2024, so the cost is 11.4% of it; state and local taxes are not counted.[4]"
+          ],
+          [
+            "p",
+            "India: ₹1,800 a month, 9.2% of GDP. Central government tax revenue was 6.9% of GDP in 2022, the latest year, so the cost comes to 132% of it. India’s states raise taxes of their own, which this measure leaves out. Today’s cash schemes are far smaller; see {our essay on Madhya Pradesh and cash for women|/essays/india-basic-income-madhya-pradesh-ladli-behna/}."
+          ],
+          [
+            "p",
+            "Nigeria: 29,000 naira a month, 18.7% of GDP. The World Bank has no tax revenue figure for Nigeria since 2015, so it is grey on the map. Brazil: R$240 a month, 4.8% of GDP and 31% of tax revenue (2024). China: 320 yuan a month, 3.9% of GDP and 55% of central tax revenue, which was 7.0% of GDP in 2024; {China’s childcare subsidy|/essays/china-childcare-subsidy-basic-income/} pays 3,600 yuan a year per child under 3."
+          ],
+          [
+            "p",
+            "The Gulf states are cheap relative to their economies: 1.1% of GDP in Qatar, 1.6% in Saudi Arabia and the United Arab Emirates, 1.8% in Bahrain, 2.1% in Kuwait and 2.7% in Oman. Against tax revenue they look very different, because most of their revenue is not tax. Saudi Arabia’s tax revenue was 8.1% of GDP in 2024 but its total revenue 26.8%, so the cost is 19% of tax revenue and 5.9% of all revenue.[5] The UAE’s federal government reports tax revenue of 0.65% of GDP (2024), which puts the cost at 242% of it. Bahrain’s 2020 figure gives 63%; Qatar, Kuwait and Oman have no recent figure."
+          ],
+          [
+            "h",
+            "The big caveats"
+          ],
+          [
+            "p",
+            "Gross, not net. These figures are the cheque, not the bill. A basic income would replace some existing benefits, and part of it would come back in tax. Neither is subtracted here."
+          ],
+          [
+            "p",
+            "PPP versus market prices. $3 a day at PPP is a different number of dollars at market exchange rates: about US$21 a month in India, US$12 in Syria and US$117 in Iceland and Switzerland. Where we had to use the exchange rate instead (34 places, among them Somalia and DR Congo), $3 a day means about US$90 a month, which is part of why those two top the chart."
+          ],
+          [
+            "p",
+            "A poverty line, not a living. $3.00 a day is the World Bank’s line for extreme poverty. In Japan it is ¥9,400 a month; the calculator’s own default for Japan is ¥30,000, and {Takenaka’s proposal|/essays/takenaka-70000-yen-basic-income/} is ¥70,000. A basic income at ten times the poverty line costs ten times as much."
+          ],
+          [
+            "p",
+            "Weak tax collection. Tax revenue is not a hard limit: governments also borrow, earn from resources and state firms, and can raise taxes. But where much of the economy is informal and tax collection is weak, it is a fair sign of how much money a state can actually move. Ethiopia’s central government collected 3.4% of GDP in tax in 2024, Somalia’s 2.2%."
+          ],
+          [
+            "p",
+            "Central government only. The World Bank measure covers central government. Federal countries such as the United States, Germany, India, Brazil and the UAE, where states and regions also tax, look less able to pay than they are."
+          ],
+          [
+            "p",
+            "Old years. Ten countries’ tax figures are from 2020 and nine from 2021, while GDP is mostly for 2025; Burundi’s and the Central African Republic’s are from 2021 and DR Congo’s from 2022. We drop anything more than five years older than the GDP year, but even within that window a lot can change."
+          ],
+          [
+            "h",
+            "What it implies"
+          ],
+          [
+            "p",
+            "For the poorest countries, a poverty-line basic income paid from their own taxes is out of reach; it would take money from outside. Transfers across borders already exist on a small scale: {GiveDirectly’s study in Kenya|/timeline/#tl-kenya} pays adults a little over $20 a month."
+          ],
+          [
+            "p",
+            "Partial and phased schemes cost far less. Paying only India’s children, 29% of its people, would cost 2.7% of GDP, about 39% of central tax revenue. Try other groups and amounts in {the calculator|/calc/}."
+          ],
+          [
+            "p",
+            "Resource funds are another route. {Alaska’s Permanent Fund|/timeline/#tl-alaska} has paid an annual dividend from a state fund to eligible residents since 1982.[10]"
+          ],
+          [
+            "o",
+            "Our read: the map does not say who will adopt a basic income. It says that for 59 countries, a floor at the extreme poverty line would cost less than a quarter of today’s tax revenue, so the obstacle there is a political choice rather than arithmetic. For 40, it cannot be paid from their own taxes alone. For more on what the evidence and the money look like, see {Finland’s experiment|/essays/finland-basic-income-experiment/}, {OpenResearch’s $1,000-a-month study|/essays/openresearch-cash-study/} and {who would pay for a universal high income|/essays/universal-high-income/}."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "住む人全員に、世界銀行の国際貧困ライン「1日3.00ドル」を1年配る。7つの国・地域では、その費用はGDPの1％にも届きません。モナコ（0.38％）、リヒテンシュタイン（0.50％）、ルクセンブルク（0.74％）、バミューダ（0.77％）、アイルランド（0.84％）、シンガポール（0.86％）、マカオ（0.89％）です。逆に3か国では、1年の経済全体（GDP）を超えます。ブルンジ（GDPの115％）、コンゴ民主共和国（133％）、ソマリア（163％）です。[1][8]"
+          ],
+          [
+            "p",
+            "とはいえ、GDPはそのまま政府が使えるお金ではありません。そこで国ごとに、費用をその国の政府の税収ともくらべました。最近の数字がある140の国・地域のうち、税収の1割未満で払えるのは24。税収をすべて使っても足りないのは40です。"
+          ],
+          [
+            "m",
+            ""
+          ],
+          [
+            "h",
+            "地図の作り方"
+          ],
+          [
+            "p",
+            "費用は「人口 × 1日3.00ドル × 365日」。年齢を問わず全員に1年配る額です。3.00ドルは世界銀行が2025年6月に定めた国際貧困ラインで、2021年の購買力平価（PPP）のドルです。[1] 現地通貨へは、世界銀行の家計消費の購買力平価換算係数で直し、どの国でもだいたい同じものが買える額にします。[6] 使える係数のない34の国・地域は、市場の為替レートで直しました。人口とGDPは世界銀行の数字で、特に取り上げる7か国は各国の公的統計です。211のうち186はGDPが2025年の数字です。[2][3]国の形はNatural Earthのものです。[9]"
+          ],
+          [
+            "p",
+            "税収は、世界銀行の中央政府の税収（GDP比）です。[4] 最新の年を使い、GDPの年より5年を超えて古いものは使いません。税収がなければ歳入を使う決まりですが、[5] 今回それが必要な国はありませんでした。140の数字のうち、2024年が93、2023年が19、2022年が8、2021年が9、2020年が10です。世界銀行に最近の数字がない日本は、2026年度予算の租税及印紙収入83.7兆円を使いました。[7]"
+          ],
+          [
+            "p",
+            "残る71の国・地域（人口16.1億人）は灰色です。2015年以降の税収の数字が世界銀行にないか、5年より古いものしかありません。ナイジェリア、パキスタン、インドネシア、エジプト、ベトナム、イラン、カタール、クウェートなどです。台湾・北朝鮮・エリトリア・南スーダン・イエメンはデータそのものがありません。すべての国の数字と計算機のページへのリンクは、{地図のページ|/calc/map/}の表にあります。[8]"
+          ],
+          [
+            "t",
+            "費用が税収に占める割合 | 国・地域の数 | 住む人\n10％未満 | 24 | 3.5億人\n10〜25％ | 35 | 11.8億人\n25〜50％ | 23 | 7.0億人\n50〜100％ | 18 | 17.1億人\n100％超 | 40 | 25.7億人\n最近のデータなし | 71 | 16.1億人"
+          ],
+          [
+            "h",
+            "地域と所得で見ると"
+          ],
+          [
+            "p",
+            "目立つのはヨーロッパです。数字のあるヨーロッパ・中央アジアの48か国のうち、41が税収の25％未満、18が10％未満。いちばん低いのはルクセンブルク（2.6％）、マカオ（3.2％）、デンマーク（4.4％）、ノルウェー（4.5％）、アイルランド（4.7％）です。反対に、数字のあるサハラ以南アフリカの32か国のうち25は、税収をすべて使っても足りません。25％未満はモーリシャス（18％）とボツワナ（24％）だけです。"
+          ],
+          [
+            "p",
+            "中南米はその中間で、数字のある19か国のうち10が25〜50％。メキシコ（30％）、ブラジル（31％）、コロンビア（34％）などです。南アジアは6か国すべてに数字があり、10％未満の国はありません。いちばん低いのはモルディブ（24％）で、インドとネパール（どちらも132％）、バングラデシュ（160％）は中央政府の税収をすべて使っても足りません。"
+          ],
+          [
+            "p",
+            "その差の大部分は所得で説明できます。同じデータの1人あたりGDP（米ドル）で国を分けると（世界銀行の所得分類ではありません）、1人1万5000ドルを超え、数字のある55か国では、費用の中央値は税収の11％で、49か国が25％未満。5000〜1万5000ドルでは中央値31％、1500〜5000ドルでは114％。1500ドル未満では、数字のある18か国のうち17が税収をすべて使っても足りず、中央値は287％です。"
+          ],
+          [
+            "p",
+            "2つのことが同じ向きに働きます。税収の数字がある国で見ると、購買力平価で決めた貧困ラインは、所得の低い国ほど経済に占める割合が大きくなります。費用の中央値は、1人1万5000ドル超でGDPの1.9％、1500ドル未満で36％。しかも貧しい国の政府ほど、GDPのうち税として集める割合が小さい。中央値は1万5000ドル超で19.9％、1500ドル未満で12.6％です。"
+          ],
+          [
+            "h",
+            "注目の国"
+          ],
+          [
+            "p",
+            "日本：1人月9,400円、1年で約13.9兆円、GDPの2.1％。2026年度予算の租税及印紙収入83.7兆円とくらべると16.5％です。[7] {日本の計算機のページ|/calc/jp/}でほかの金額も試せます。"
+          ],
+          [
+            "p",
+            "アメリカ：月91ドル、1年で約3,790億ドル、GDPの1.2％。連邦政府の税収は2024年にGDPの10.8％だったので、その11.4％にあたります。州や地方の税は数えていません。[4]"
+          ],
+          [
+            "p",
+            "インド：月1,800ルピー、GDPの9.2％。中央政府の税収は最新の2022年でGDPの6.9％なので、その132％になります。インドでは州も独自に税を集めていて、この数字には入っていません。いまの現金給付はずっと小さな規模です。{マディヤ・プラデーシュ州の実験と女性への現金給付のエッセイ|/essays/india-basic-income-madhya-pradesh-ladli-behna/}もどうぞ。"
+          ],
+          [
+            "p",
+            "ナイジェリア：月29,000ナイラ、GDPの18.7％。2015年以降の税収の数字が世界銀行にないため、地図では灰色です。ブラジル：月240レアル、GDPの4.8％、税収の31％（2024年）。中国：月320元、GDPの3.9％、中央の税収（2024年にGDPの7.0％）の55％。{中国の育児補助金|/essays/china-childcare-subsidy-basic-income/}は3歳未満の子ども1人に年3600元です。"
+          ],
+          [
+            "p",
+            "湾岸の国は、経済の大きさにくらべると安くすみます。GDP比でカタール1.1％、サウジアラビアとアラブ首長国連邦1.6％、バーレーン1.8％、クウェート2.1％、オマーン2.7％。ところが税収とくらべると話が変わります。歳入の多くが税ではないからです。サウジアラビアの税収は2024年にGDPの8.1％でしたが、歳入全体は26.8％。費用は税収の19％、歳入全体の5.9％です。[5] アラブ首長国連邦の連邦政府の税収はGDPの0.65％（2024年）で、費用はその242％。バーレーンは2020年の数字で63％。カタール、クウェート、オマーンには最近の数字がありません。"
+          ],
+          [
+            "h",
+            "大事な注意"
+          ],
+          [
+            "p",
+            "総額であって、差し引きではない。これは配る額であって、最終的な負担ではありません。ベーシックインカムは今の給付の一部に置きかわり、一部は税として戻ってきます。どちらもここでは引いていません。"
+          ],
+          [
+            "p",
+            "購買力平価と市場の値段。購買力平価で1日3ドルは、市場の為替レートでは国ごとに違うドル額になります。インドで月約21ドル、シリアで12ドル、アイスランドとスイスで117ドル。為替レートを使うしかなかった34の国・地域（ソマリアやコンゴ民主共和国を含む）では、1日3ドルが月約90ドルになり、この2か国が上位に来る理由の一つです。"
+          ],
+          [
+            "p",
+            "貧困ラインであって、暮らせる額ではない。1日3.00ドルは世界銀行の「極度の貧困」の線です。日本では月9,400円。この計算機の日本の初期値は月3万円、{竹中平蔵氏の案|/essays/takenaka-70000-yen-basic-income/}は月7万円です。貧困ラインの10倍のベーシックインカムなら、費用も10倍です。"
+          ],
+          [
+            "p",
+            "税を集める力の弱さ。税収は越えられない天井ではありません。政府は借金もでき、資源や国営企業からも収入があり、増税もできます。それでも、経済の多くがインフォーマルで税を集める力が弱い国では、税収は政府が実際に動かせるお金の目安になります。エチオピアの中央政府の税収は2024年にGDPの3.4％、ソマリアは2.2％でした。"
+          ],
+          [
+            "p",
+            "中央政府だけ。世界銀行の数字は中央政府のものです。アメリカ、ドイツ、インド、ブラジル、アラブ首長国連邦のように州や地域も税を集める連邦国家は、実際より払う力が小さく見えます。"
+          ],
+          [
+            "p",
+            "古い年。10か国の税収は2020年、9か国は2021年の数字で、GDPはほとんどが2025年です。ブルンジと中央アフリカ共和国は2021年、コンゴ民主共和国は2022年。GDPの年より5年を超えて古い数字は除いていますが、その間にも多くのことが変わりえます。"
+          ],
+          [
+            "h",
+            "ここから言えること"
+          ],
+          [
+            "p",
+            "いちばん貧しい国々にとって、自国の税収で貧困ラインのベーシックインカムを払うのは無理で、外からのお金が要ります。国境を越えた給付は小さな規模ならすでにあります。{GiveDirectlyのケニアの研究|/timeline/#tl-kenya}は、大人に月20ドル強を配っています。"
+          ],
+          [
+            "p",
+            "一部の人に、段階的に配るならずっと安くすみます。インドで子ども（人口の29％）だけに配ると、GDPの2.7％、中央政府の税収の約39％。ほかの相手や金額は{計算機|/calc/}で試せます。"
+          ],
+          [
+            "p",
+            "資源の基金という道もあります。{アラスカの永久基金|/timeline/#tl-alaska}は1982年から、州の基金から対象の住民に毎年配当を払っています。[10]"
+          ],
+          [
+            "o",
+            "私たちの見立て：この地図は、どの国がベーシックインカムを始めるかを示すものではありません。示しているのは、59か国では極度の貧困ラインの最低保障が今の税収の4分の1未満でまかなえる、つまり壁は計算ではなく政治の選択だということ。そして40か国では、自国の税だけではまかなえないということです。証拠とお金の話は、{フィンランドの実験|/essays/finland-basic-income-experiment/}、{OpenResearchの月1,000ドルの研究|/essays/openresearch-cash-study/}、{ユニバーサルハイインカムは誰が払うのか|/essays/universal-high-income/}もどうぞ。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "给每位居民发放世界银行的国际贫困线，每天3.00美元，发一年。在7个国家和地区，这笔钱不到GDP的1%：摩纳哥（0.38%）、列支敦士登（0.50%）、卢森堡（0.74%）、百慕大（0.77%）、爱尔兰（0.84%）、新加坡（0.86%）和澳门（0.89%）。而在3个国家，它超过了整个经济一年的产出：布隆迪（GDP的115%）、刚果（金）（133%）和索马里（163%）。[1][8]"
+          ],
+          [
+            "p",
+            "不过，GDP并不是政府能花的钱。所以我们还把每个国家的费用与该国政府自己的税收相比。在有近期数字的140个国家和地区中，24个用不到一成的税收就付得起，40个用上全部税收也不够。"
+          ],
+          [
+            "m",
+            ""
+          ],
+          [
+            "h",
+            "地图是怎么做的"
+          ],
+          [
+            "p",
+            "费用 = 人口 × 每天3.00美元 × 365天：不分年龄，人人都有，为期一年。3.00美元是世界银行2025年6月确定的国际贫困线，按2021年购买力平价（PPP）计算。[1] 我们用世界银行的居民消费购买力平价换算系数折算成本币，让它在各地买到的东西大致相同。[6] 没有可用系数的34个国家和地区改用市场汇率。人口和GDP用世界银行的数字，7个重点国家用本国官方统计；211个中有186个的GDP是2025年的。[2][3]国家的形状来自Natural Earth。[9]"
+          ],
+          [
+            "p",
+            "税收用的是世界银行的中央政府税收占GDP的比例。[4] 取最新年份，比GDP年份早5年以上的不用。没有税收数据时改用财政总收入，[5] 但这一版里没有国家需要这样做。140个数字中，2024年的93个，2023年19个，2022年8个，2021年9个，2020年10个。世界银行没有日本的近期数字，我们用日本2026财年国家预算中的租税及印花收入83.7万亿日元。[7]"
+          ],
+          [
+            "p",
+            "剩下71个国家和地区是灰色的，共有16.1亿人：世界银行没有它们2015年以来的税收数字，或者只有超过5年的旧数字。其中包括尼日利亚、巴基斯坦、印度尼西亚、埃及、越南、伊朗、卡塔尔和科威特。台湾、朝鲜、厄立特里亚、南苏丹和也门则完全不在数据中。每个国家的数字和计算器页面链接都在{地图页面|/calc/map/}的表格里。[8]"
+          ],
+          [
+            "t",
+            "费用占税收的比例 | 国家和地区数 | 人口\n不到10% | 24 | 3.5亿\n10–25% | 35 | 11.8亿\n25–50% | 23 | 7.0亿\n50–100% | 18 | 17.1亿\n超过100% | 40 | 25.7亿\n没有近期数据 | 71 | 16.1亿"
+          ],
+          [
+            "h",
+            "按地区和收入看"
+          ],
+          [
+            "p",
+            "欧洲最突出。欧洲和中亚有数字的48个国家中，41个低于税收的25%，18个低于10%。全世界比例最低的是卢森堡（2.6%）、澳门（3.2%）、丹麦（4.4%）、挪威（4.5%）和爱尔兰（4.7%）。另一端，撒哈拉以南非洲有数字的32个国家中，25个用上全部税收也不够；低于25%的只有毛里求斯（18%）和博茨瓦纳（24%）。"
+          ],
+          [
+            "p",
+            "拉丁美洲居中：有数字的19个国家中，10个在25%到50%之间，如墨西哥（30%）、巴西（31%）和哥伦比亚（34%）。南亚6个国家都有数字，没有一个低于10%。最低的是马尔代夫（24%）；印度和尼泊尔（都是132%）以及孟加拉国（160%）用上中央政府的全部税收也不够。"
+          ],
+          [
+            "p",
+            "这些差别大多可以用收入解释。按同一数据中的人均GDP（美元）分组（这不是世界银行的收入分类）：人均超过1.5万美元、有数字的55个国家，费用中位数是税收的11%，49个低于25%。5000到1.5万美元之间，中位数31%；1500到5000美元之间，114%。人均不到1500美元、有数字的18个国家中，17个用上全部税收也不够，中位数287%。"
+          ],
+          [
+            "p",
+            "两个因素朝同一方向起作用。在有税收数字的国家中，按购买力平价定的贫困线，在收入低的地方占经济的比例更大：费用中位数在人均1.5万美元以上是GDP的1.9%，1500美元以下是36%。而且越穷的政府，税收占GDP的比例越小：中位数在1.5万美元以上是19.9%，1500美元以下是12.6%。"
+          ],
+          [
+            "h",
+            "值得一看的国家"
+          ],
+          [
+            "p",
+            "日本：每人每月9400日元，一年约13.9万亿日元，占GDP的2.1%。与2026财年国家预算中83.7万亿日元的租税及印花收入相比，是16.5%。[7] 在{日本的计算器页面|/calc/jp/}可以试别的金额。"
+          ],
+          [
+            "p",
+            "美国：每月91美元，一年约3790亿美元，占GDP的1.2%。联邦税收2024年占GDP的10.8%，费用相当于其11.4%；州和地方税没有计入。[4]"
+          ],
+          [
+            "p",
+            "印度：每月1800卢比，占GDP的9.2%。中央政府税收在最新的2022年占GDP的6.9%，费用相当于其132%。印度各邦也有自己的税收，这个口径没有算进去。如今的现金发放规模要小得多，见{中央邦实验和发给女性的现金|/essays/india-basic-income-madhya-pradesh-ladli-behna/}。"
+          ],
+          [
+            "p",
+            "尼日利亚：每月2.9万奈拉，占GDP的18.7%。世界银行没有尼日利亚2015年以来的税收数字，所以它在地图上是灰色。巴西：每月240雷亚尔，占GDP的4.8%、税收的31%（2024年）。中国：每月320元，占GDP的3.9%，相当于中央税收（2024年占GDP的7.0%）的55%；{育儿补贴|/essays/china-childcare-subsidy-basic-income/}则是3岁以下每孩每年3600元。"
+          ],
+          [
+            "p",
+            "海湾国家相对其经济规模来说很便宜：卡塔尔占GDP的1.1%，沙特阿拉伯和阿联酋1.6%，巴林1.8%，科威特2.1%，阿曼2.7%。但和税收相比就完全不同了，因为它们的收入大多不是税。沙特2024年税收占GDP的8.1%，财政总收入却是26.8%，所以费用是税收的19%、总收入的5.9%。[5] 阿联酋联邦政府的税收只占GDP的0.65%（2024年），费用是其242%。巴林按2020年的数字是63%；卡塔尔、科威特和阿曼没有近期数字。"
+          ],
+          [
+            "h",
+            "重要的保留"
+          ],
+          [
+            "p",
+            "毛额，不是净额。这些数字是要发出去的钱，不是最终的负担。基本收入会取代一部分现有福利，也有一部分会通过税收收回，这里都没有扣除。"
+          ],
+          [
+            "p",
+            "购买力平价与市场价格。按购买力平价每天3美元，按市场汇率折算成美元各不相同：印度每月约21美元，叙利亚12美元，冰岛和瑞士117美元。只能用汇率换算的34个地方（包括索马里和刚果（金）），每天3美元就是每月约90美元，这也是这两国排在最前面的原因之一。"
+          ],
+          [
+            "p",
+            "是贫困线，不是生活费。每天3.00美元是世界银行的极端贫困线。在日本是每月9400日元；计算器给日本的默认值是每月3万日元，{竹中平藏的方案|/essays/takenaka-70000-yen-basic-income/}是每月7万日元。贫困线10倍的基本收入，费用也是10倍。"
+          ],
+          [
+            "p",
+            "征税能力弱。税收不是硬上限：政府还能借钱，有资源和国有企业的收入，也能加税。但在经济大量是非正规、征税能力弱的地方，税收大致反映了国家实际能调动多少钱。埃塞俄比亚中央政府2024年的税收占GDP的3.4%，索马里是2.2%。"
+          ],
+          [
+            "p",
+            "只算中央政府。世界银行的口径是中央政府。美国、德国、印度、巴西、阿联酋这样州和地区也征税的联邦制国家，看起来比实际更付不起。"
+          ],
+          [
+            "p",
+            "年份旧。10个国家的税收数字是2020年的，9个是2021年的，而GDP大多是2025年的；布隆迪和中非共和国是2021年，刚果（金）是2022年。比GDP年份早5年以上的我们都不用，但即使在5年之内，变化也可能很大。"
+          ],
+          [
+            "h",
+            "这意味着什么"
+          ],
+          [
+            "p",
+            "对最穷的国家来说，用本国税收支付贫困线水平的基本收入做不到，需要外来的钱。跨国的发放已经小规模存在：{GiveDirectly在肯尼亚的研究|/timeline/#tl-kenya}每月给成年人略多于20美元。"
+          ],
+          [
+            "p",
+            "只发给一部分人、分阶段推行，要便宜得多。只发给印度的孩子（占人口的29%），费用是GDP的2.7%，约为中央税收的39%。别的对象和金额可以在{计算器|/calc/}里试。"
+          ],
+          [
+            "p",
+            "资源基金是另一条路。{阿拉斯加永久基金|/timeline/#tl-alaska}自1982年起，每年从州的基金向符合条件的居民发放分红。[10]"
+          ],
+          [
+            "o",
+            "我们的看法：这张地图并不能说明谁会实行基本收入。它说明的是，在59个国家，按极端贫困线设定的保底只要不到现有税收的四分之一，那里的障碍是政治选择而不是算术；而在40个国家，光靠本国税收是付不起的。关于证据和钱，另见{芬兰的实验|/essays/finland-basic-income-experiment/}、{OpenResearch每月1000美元的研究|/essays/openresearch-cash-study/}和{全民高收入由谁来付|/essays/universal-high-income/}。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "हर निवासी को एक साल तक वर्ल्ड बैंक की अंतरराष्ट्रीय ग़रीबी रेखा, यानी रोज़ 3.00 डॉलर, दीजिए। सात जगहों पर इसका खर्च GDP के 1% से भी कम होगा: मोनाको (0.38%), लिकटेंस्टाइन (0.50%), लक्ज़मबर्ग (0.74%), बरमूडा (0.77%), आयरलैंड (0.84%), सिंगापुर (0.86%) और मकाऊ (0.89%)। तीन देशों में यह पूरी अर्थव्यवस्था के एक साल के उत्पादन से भी ज़्यादा होगा: बुरुंडी (GDP का 115%), कांगो लोकतांत्रिक गणराज्य (133%) और सोमालिया (163%)।[1][8]"
+          ],
+          [
+            "p",
+            "लेकिन GDP वह पैसा नहीं है जिसे सरकार ख़र्च कर सके। इसलिए हमने हर देश के खर्च की तुलना उसकी सरकार के अपने टैक्स राजस्व से भी की। जिन 140 देशों और क्षेत्रों के हाल के आँकड़े हैं, उनमें से 24 अपने टैक्स राजस्व के दसवें हिस्से से कम में यह दे सकते हैं। 40 के लिए पूरा टैक्स राजस्व भी काफ़ी नहीं है।"
+          ],
+          [
+            "m",
+            ""
+          ],
+          [
+            "h",
+            "यह नक्शा कैसे बना"
+          ],
+          [
+            "p",
+            "खर्च = आबादी × रोज़ 3.00 डॉलर × 365 दिन: हर उम्र का हर व्यक्ति, एक साल के लिए। 3.00 डॉलर वर्ल्ड बैंक की अंतरराष्ट्रीय ग़रीबी रेखा है, 2021 की क्रय शक्ति समता (PPP) डॉलर में, जो जून 2025 में तय हुई।[1] इसे हम वर्ल्ड बैंक के घरेलू उपभोग के PPP रूपांतरण गुणक से स्थानीय मुद्रा में बदलते हैं, ताकि हर जगह इससे लगभग उतना ही सामान ख़रीदा जा सके।[6] जिन 34 देशों और क्षेत्रों के लिए काम का गुणक नहीं है, वहाँ बाज़ार की विनिमय दर ली गई है। आबादी और GDP वर्ल्ड बैंक के आँकड़े हैं, सात ख़ास देशों के लिए राष्ट्रीय आँकड़े; 211 में से 186 का GDP 2025 का है।[2][3] देशों की आकृतियाँ Natural Earth से हैं।[9]"
+          ],
+          [
+            "p",
+            "राजस्व वर्ल्ड बैंक का केंद्र सरकार का टैक्स राजस्व है, GDP के हिस्से के रूप में।[4] हम सबसे नया साल लेते हैं, बशर्ते वह GDP के साल से पाँच साल से ज़्यादा पुराना न हो। टैक्स राजस्व न हो तो कुल राजस्व लिया जाता,[5] पर इस बार किसी देश के लिए ज़रूरत नहीं पड़ी। 140 आँकड़ों में से 93 साल 2024 के हैं, 19 साल 2023 के, 8 साल 2022 के, 9 साल 2021 के और 10 साल 2020 के। जापान का वर्ल्ड बैंक में हाल का आँकड़ा नहीं है, इसलिए हमने उसके वित्त वर्ष 2026 के राष्ट्रीय बजट का टैक्स और स्टांप राजस्व लिया: 83.7 लाख करोड़ येन।[7]"
+          ],
+          [
+            "p",
+            "बाक़ी 71 देश और क्षेत्र धूसर हैं, जहाँ 161 करोड़ लोग रहते हैं: वर्ल्ड बैंक के पास उनका 2015 के बाद का टैक्स आँकड़ा नहीं है, या सिर्फ़ पाँच साल से पुराना है। इनमें नाइजीरिया, पाकिस्तान, इंडोनेशिया, मिस्र, वियतनाम, ईरान, क़तर और कुवैत हैं। ताइवान, उत्तर कोरिया, इरिट्रिया, दक्षिण सूडान और यमन डेटा में हैं ही नहीं। हर देश के आँकड़े और उसके कैलकुलेटर पेज का लिंक {नक्शे वाले पेज|/calc/map/} की तालिका में है।[8]"
+          ],
+          [
+            "t",
+            "खर्च, टैक्स राजस्व के हिस्से के रूप में | देश और क्षेत्र | वहाँ रहने वाले लोग\n10% से कम | 24 | 35 करोड़\n10–25% | 35 | 118 करोड़\n25–50% | 23 | 70 करोड़\n50–100% | 18 | 171 करोड़\n100% से ज़्यादा | 40 | 257 करोड़\nहाल का डेटा नहीं | 71 | 161 करोड़"
+          ],
+          [
+            "h",
+            "क्षेत्र और आमदनी के हिसाब से"
+          ],
+          [
+            "p",
+            "यूरोप सबसे अलग दिखता है। यूरोप और मध्य एशिया के जिन 48 देशों के आँकड़े हैं, उनमें से 41 टैक्स राजस्व के 25% से नीचे हैं और 18 तो 10% से भी नीचे। सबसे कम हिस्सा लक्ज़मबर्ग (2.6%), मकाऊ (3.2%), डेनमार्क (4.4%), नॉर्वे (4.5%) और आयरलैंड (4.7%) में है। दूसरी ओर, उप-सहारा अफ़्रीका के जिन 32 देशों के आँकड़े हैं, उनमें से 25 के लिए पूरा टैक्स राजस्व भी कम है; 25% से नीचे सिर्फ़ मॉरीशस (18%) और बोत्सवाना (24%) हैं।"
+          ],
+          [
+            "p",
+            "लैटिन अमेरिका बीच में है: जिन 19 देशों के आँकड़े हैं, उनमें से 10 का हिस्सा 25% से 50% के बीच है, जैसे मेक्सिको (30%), ब्राज़ील (31%) और कोलंबिया (34%)। दक्षिण एशिया के सभी छह देशों के आँकड़े हैं और कोई भी 10% से नीचे नहीं है। सबसे कम मालदीव (24%) है; भारत और नेपाल (दोनों 132%) और बांग्लादेश (160%) के लिए केंद्र सरकार का पूरा टैक्स राजस्व भी कम है।"
+          ],
+          [
+            "p",
+            "इसका ज़्यादातर हिस्सा आमदनी से समझ आता है। उसी डेटा में प्रति व्यक्ति GDP (अमेरिकी डॉलर) के हिसाब से देशों को बाँटें (यह वर्ल्ड बैंक का आय वर्गीकरण नहीं है): 15,000 डॉलर से ज़्यादा प्रति व्यक्ति वाले, आँकड़ों वाले 55 देशों में खर्च की माध्यिका टैक्स राजस्व का 11% है और 49 देश 25% से नीचे हैं। 5,000 से 15,000 डॉलर के बीच माध्यिका 31% है; 1,500 से 5,000 डॉलर के बीच 114%। 1,500 डॉलर से कम वाले, आँकड़ों वाले 18 देशों में से 17 के लिए पूरा टैक्स राजस्व भी कम है, और माध्यिका 287% है।"
+          ],
+          [
+            "p",
+            "दो बातें एक ही दिशा में काम करती हैं। टैक्स आँकड़ों वाले देशों में, PPP डॉलर में तय ग़रीबी रेखा कम आमदनी वाली जगहों पर अर्थव्यवस्था का बड़ा हिस्सा होती है: खर्च की माध्यिका 15,000 डॉलर से ऊपर GDP का 1.9% है और 1,500 डॉलर से नीचे 36%। और ग़रीब सरकारें GDP का छोटा हिस्सा टैक्स के रूप में जुटाती हैं: माध्यिका 15,000 डॉलर से ऊपर 19.9% है और 1,500 डॉलर से नीचे 12.6%।"
+          ],
+          [
+            "h",
+            "ख़ास मामले"
+          ],
+          [
+            "p",
+            "जापान: हर व्यक्ति को महीने में 9,400 येन, साल में लगभग 13.9 लाख करोड़ येन, यानी GDP का 2.1%। वित्त वर्ष 2026 के राष्ट्रीय बजट के 83.7 लाख करोड़ येन के टैक्स और स्टांप राजस्व के मुकाबले यह 16.5% है।[7] {जापान के कैलकुलेटर पेज|/calc/jp/} पर दूसरी रकमें आज़मा सकते हैं।"
+          ],
+          [
+            "p",
+            "अमेरिका: महीने में 91 डॉलर, साल में लगभग 379 अरब डॉलर, GDP का 1.2%। 2024 में संघीय टैक्स राजस्व GDP का 10.8% था, इसलिए खर्च उसका 11.4% है; राज्यों और स्थानीय निकायों के टैक्स नहीं गिने गए।[4]"
+          ],
+          [
+            "p",
+            "भारत: महीने में ₹1,800, GDP का 9.2%। सबसे नए साल 2022 में केंद्र सरकार का टैक्स राजस्व GDP का 6.9% था, इसलिए खर्च उसका 132% बैठता है। भारत के राज्य अपने टैक्स भी जुटाते हैं, जो इस पैमाने में नहीं आते। आज की नक़द योजनाएँ इससे बहुत छोटी हैं; देखें {मध्य प्रदेश का प्रयोग और महिलाओं को नक़द|/essays/india-basic-income-madhya-pradesh-ladli-behna/}।"
+          ],
+          [
+            "p",
+            "नाइजीरिया: महीने में 29,000 नायरा, GDP का 18.7%। वर्ल्ड बैंक के पास नाइजीरिया का 2015 के बाद का टैक्स राजस्व आँकड़ा नहीं है, इसलिए नक्शे पर वह धूसर है। ब्राज़ील: महीने में 240 रियाल, GDP का 4.8% और टैक्स राजस्व का 31% (2024)। चीन: महीने में 320 युआन, GDP का 3.9% और केंद्र के टैक्स राजस्व (2024 में GDP का 7.0%) का 55%; {चीन की चाइल्डकेयर सब्सिडी|/essays/china-childcare-subsidy-basic-income/} 3 साल से छोटे हर बच्चे को साल में 3,600 युआन देती है।"
+          ],
+          [
+            "p",
+            "खाड़ी के देश अपनी अर्थव्यवस्था के मुकाबले सस्ते हैं: GDP का 1.1% क़तर में, 1.6% सऊदी अरब और संयुक्त अरब अमीरात में, 1.8% बहरीन में, 2.1% कुवैत में और 2.7% ओमान में। टैक्स राजस्व से तुलना में तस्वीर बिल्कुल बदल जाती है, क्योंकि उनका ज़्यादातर राजस्व टैक्स नहीं है। 2024 में सऊदी अरब का टैक्स राजस्व GDP का 8.1% था पर कुल राजस्व 26.8%, इसलिए खर्च टैक्स राजस्व का 19% और कुल राजस्व का 5.9% है।[5] संयुक्त अरब अमीरात की संघीय सरकार का टैक्स राजस्व GDP का 0.65% (2024) है, तो खर्च उसका 242% बैठता है। बहरीन का 2020 का आँकड़ा 63% देता है; क़तर, कुवैत और ओमान के हाल के आँकड़े नहीं हैं।"
+          ],
+          [
+            "h",
+            "बड़ी सावधानियाँ"
+          ],
+          [
+            "p",
+            "कुल, शुद्ध नहीं। ये आँकड़े बाँटी जाने वाली रकम हैं, अंतिम बोझ नहीं। बेसिक इनकम कुछ मौजूदा लाभों की जगह लेगी और उसका कुछ हिस्सा टैक्स के रूप में लौटेगा। यहाँ इनमें से कुछ भी नहीं घटाया गया।"
+          ],
+          [
+            "p",
+            "PPP बनाम बाज़ार की क़ीमतें। PPP में रोज़ 3 डॉलर बाज़ार की विनिमय दर पर अलग-अलग डॉलर बनते हैं: भारत में महीने के लगभग 21 डॉलर, सीरिया में 12 डॉलर, आइसलैंड और स्विट्ज़रलैंड में 117 डॉलर। जहाँ हमें विनिमय दर लेनी पड़ी (34 जगहें, जिनमें सोमालिया और कांगो लोकतांत्रिक गणराज्य हैं), वहाँ रोज़ 3 डॉलर का मतलब महीने के लगभग 90 डॉलर है, और यही एक वजह है कि ये दोनों सबसे ऊपर हैं।"
+          ],
+          [
+            "p",
+            "ग़रीबी रेखा, गुज़ारा नहीं। रोज़ 3.00 डॉलर वर्ल्ड बैंक की अत्यधिक ग़रीबी की रेखा है। जापान में यह महीने के 9,400 येन है; कैलकुलेटर में जापान की शुरुआती रकम 30,000 येन है, और {ताकेनाका का प्रस्ताव|/essays/takenaka-70000-yen-basic-income/} 70,000 येन का है। ग़रीबी रेखा की दस गुना बेसिक इनकम का खर्च भी दस गुना होगा।"
+          ],
+          [
+            "p",
+            "कमज़ोर टैक्स वसूली। टैक्स राजस्व कोई पक्की सीमा नहीं है: सरकारें उधार ले सकती हैं, संसाधनों और सरकारी कंपनियों से कमा सकती हैं, और टैक्स बढ़ा सकती हैं। फिर भी, जहाँ अर्थव्यवस्था का बड़ा हिस्सा अनौपचारिक है और टैक्स वसूली कमज़ोर है, वहाँ यह इस बात का ठीक संकेत है कि सरकार असल में कितना पैसा जुटा सकती है। 2024 में इथियोपिया की केंद्र सरकार ने GDP का 3.4% टैक्स जुटाया, सोमालिया ने 2.2%।"
+          ],
+          [
+            "p",
+            "सिर्फ़ केंद्र सरकार। वर्ल्ड बैंक का पैमाना केंद्र सरकार का है। अमेरिका, जर्मनी, भारत, ब्राज़ील और संयुक्त अरब अमीरात जैसे संघीय देश, जहाँ राज्य और क्षेत्र भी टैक्स लेते हैं, असल से कम सक्षम दिखते हैं।"
+          ],
+          [
+            "p",
+            "पुराने साल। दस देशों के टैक्स आँकड़े 2020 के और नौ के 2021 के हैं, जबकि GDP ज़्यादातर 2025 का है; बुरुंडी और मध्य अफ़्रीकी गणराज्य के 2021 के हैं और कांगो लोकतांत्रिक गणराज्य के 2022 के। GDP के साल से पाँच साल से ज़्यादा पुराने आँकड़े हम हटा देते हैं, पर उन पाँच सालों में भी बहुत कुछ बदल सकता है।"
+          ],
+          [
+            "h",
+            "इसका मतलब क्या है"
+          ],
+          [
+            "p",
+            "सबसे ग़रीब देशों के लिए अपने टैक्स से ग़रीबी रेखा वाली बेसिक इनकम देना पहुँच से बाहर है; इसके लिए बाहर से पैसा चाहिए। सीमा पार के भुगतान छोटे पैमाने पर पहले से हैं: {केन्या में GiveDirectly का अध्ययन|/timeline/#tl-kenya} वयस्कों को महीने में 20 डॉलर से कुछ ज़्यादा देता है।"
+          ],
+          [
+            "p",
+            "आंशिक और चरणबद्ध योजनाएँ कहीं सस्ती हैं। सिर्फ़ भारत के बच्चों को, जो आबादी के 29% हैं, देने का खर्च GDP का 2.7% होगा, यानी केंद्र के टैक्स राजस्व का लगभग 39%। दूसरे समूह और रकमें {कैलकुलेटर|/calc/} में आज़माएँ।"
+          ],
+          [
+            "p",
+            "संसाधन कोष एक और रास्ता है। {अलास्का का परमानेंट फ़ंड|/timeline/#tl-alaska} 1982 से राज्य के कोष से पात्र निवासियों को सालाना लाभांश देता है।[10]"
+          ],
+          [
+            "o",
+            "हमारी राय: यह नक्शा यह नहीं बताता कि कौन बेसिक इनकम अपनाएगा। यह बताता है कि 59 देशों में अत्यधिक ग़रीबी रेखा पर एक न्यूनतम आय आज के टैक्स राजस्व के एक चौथाई से कम में आ जाएगी, यानी वहाँ रुकावट हिसाब की नहीं, राजनीतिक चुनाव की है। और 40 देशों में यह सिर्फ़ उनके अपने टैक्स से नहीं दी जा सकती। सबूत और पैसे पर और पढ़ें: {फ़िनलैंड का प्रयोग|/essays/finland-basic-income-experiment/}, {OpenResearch का 1,000 डॉलर महीने वाला अध्ययन|/essays/openresearch-cash-study/} और {यूनिवर्सल हाई इनकम का पैसा कौन देगा|/essays/universal-high-income/}।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "Paga a cada habitante la línea internacional de pobreza del Banco Mundial, 3,00 dólares al día, durante un año. En siete lugares costaría menos del 1 % del PIB: Mónaco (0,38 %), Liechtenstein (0,50 %), Luxemburgo (0,74 %), Bermudas (0,77 %), Irlanda (0,84 %), Singapur (0,86 %) y Macao (0,89 %). En tres costaría más de lo que produce toda la economía en un año: Burundi (115 % del PIB), República Democrática del Congo (133 %) y Somalia (163 %).[1][8]"
+          ],
+          [
+            "p",
+            "Pero el PIB no es lo que un gobierno puede gastar. Por eso comparamos también el coste con la recaudación tributaria del propio gobierno. De los 140 países y territorios con un dato reciente, 24 podrían pagarlo con menos de una décima parte de su recaudación. 40 necesitarían más que toda ella."
+          ],
+          [
+            "m",
+            ""
+          ],
+          [
+            "h",
+            "Cómo se hace el mapa"
+          ],
+          [
+            "p",
+            "El coste es la población × 3,00 dólares al día × 365 días: todo el mundo, de cualquier edad, durante un año. Los 3,00 dólares son la línea internacional de pobreza del Banco Mundial en dólares de paridad de poder adquisitivo (PPA) de 2021, fijada en junio de 2025.[1] La convertimos a moneda local con el factor de conversión PPA del consumo de los hogares del Banco Mundial, para que compre más o menos lo mismo en todas partes.[6] En 34 países y territorios sin un factor utilizable usamos el tipo de cambio de mercado. La población y el PIB son datos del Banco Mundial, con estadísticas nacionales para siete países destacados; el PIB es de 2025 en 186 de los 211.[2][3] Las formas de los países son de Natural Earth.[9]"
+          ],
+          [
+            "p",
+            "La recaudación es el ingreso tributario del gobierno central como parte del PIB, del Banco Mundial.[4] Tomamos el último año, y solo si no tiene más de cinco años de antigüedad respecto al año del PIB. Si faltara, usaríamos los ingresos totales,[5] pero en esta edición ningún país lo necesitó. De las 140 cifras, 93 son de 2024, 19 de 2023, 8 de 2022, 9 de 2021 y 10 de 2020. Japón no tiene un dato reciente del Banco Mundial, así que usamos los impuestos y timbres de su presupuesto nacional del año fiscal 2026: 83,7 billones de yenes.[7]"
+          ],
+          [
+            "p",
+            "Quedan en gris 71 países y territorios, donde viven 1.610 millones de personas: el Banco Mundial no tiene un dato de recaudación suyo desde 2015, o solo uno de hace más de cinco años. Entre ellos están Nigeria, Pakistán, Indonesia, Egipto, Vietnam, Irán, Catar y Kuwait. Taiwán, Corea del Norte, Eritrea, Sudán del Sur y Yemen no están en los datos. La tabla completa, con las cifras de cada país y un enlace a su página de la calculadora, está en {la página del mapa|/calc/map/}.[8]"
+          ],
+          [
+            "t",
+            "Coste como parte de la recaudación | Países y territorios | Personas que viven allí\nMenos del 10 % | 24 | 350 millones\n10–25 % | 35 | 1.180 millones\n25–50 % | 23 | 700 millones\n50–100 % | 18 | 1.710 millones\nMás del 100 % | 40 | 2.570 millones\nSin datos recientes | 71 | 1.610 millones"
+          ],
+          [
+            "h",
+            "Patrones por región e ingreso"
+          ],
+          [
+            "p",
+            "Europa destaca. De los 48 países de Europa y Asia Central con dato, 41 quedan por debajo del 25 % de la recaudación y 18 por debajo del 10 %. Las cifras más bajas del mundo son las de Luxemburgo (2,6 %), Macao (3,2 %), Dinamarca (4,4 %), Noruega (4,5 %) e Irlanda (4,7 %). En el otro extremo, 25 de los 32 países de África subsahariana con dato necesitarían más que toda su recaudación; solo Mauricio (18 %) y Botsuana (24 %) quedan por debajo del 25 %."
+          ],
+          [
+            "p",
+            "América Latina está en medio: 10 de sus 19 países con dato están entre el 25 % y el 50 %, entre ellos México (30 %), Brasil (31 %) y Colombia (34 %). En Asia meridional los seis países tienen dato y ninguno baja del 10 %. El más bajo es Maldivas (24 %); India y Nepal (ambos 132 %) y Bangladés (160 %) necesitarían más que toda la recaudación de su gobierno central."
+          ],
+          [
+            "p",
+            "El ingreso explica casi todo. Si agrupamos los países por PIB por habitante en dólares, de los mismos datos (no es la clasificación por ingresos del Banco Mundial): entre los 55 con dato y más de 15.000 dólares por persona, la mediana del coste es el 11 % de la recaudación y 49 quedan por debajo del 25 %. Entre 5.000 y 15.000 dólares la mediana es del 31 %; entre 1.500 y 5.000, del 114 %. Por debajo de 1.500 dólares, 17 de los 18 países con dato necesitarían más que toda su recaudación, y la mediana es del 287 %."
+          ],
+          [
+            "p",
+            "Dos cosas empujan en la misma dirección. Entre los países con dato de recaudación, una línea de pobreza en dólares PPA es una porción mayor de la economía donde los ingresos son bajos: la mediana del coste es el 1,9 % del PIB por encima de 15.000 dólares por persona y el 36 % por debajo de 1.500. Y los gobiernos más pobres recaudan una parte menor del PIB en impuestos: la mediana es del 19,9 % por encima de 15.000 dólares y del 12,6 % por debajo de 1.500."
+          ],
+          [
+            "h",
+            "Casos destacados"
+          ],
+          [
+            "p",
+            "Japón: 9.400 yenes al mes por persona, unos 13,9 billones de yenes al año, el 2,1 % del PIB. Frente a los 83,7 billones de yenes de impuestos y timbres del presupuesto nacional del año fiscal 2026, es el 16,5 %.[7] En {la página de Japón de la calculadora|/calc/jp/} puedes probar otras cantidades."
+          ],
+          [
+            "p",
+            "Estados Unidos: 91 dólares al mes, unos 379.000 millones de dólares al año, el 1,2 % del PIB. La recaudación federal fue el 10,8 % del PIB en 2024, así que el coste es el 11,4 % de ella; no se cuentan los impuestos estatales ni locales.[4]"
+          ],
+          [
+            "p",
+            "India: 1.800 rupias al mes, el 9,2 % del PIB. La recaudación del gobierno central fue el 6,9 % del PIB en 2022, el último año, así que el coste equivale al 132 % de ella. Los estados de la India recaudan sus propios impuestos, que esta medida deja fuera. Los programas de dinero en efectivo actuales son mucho menores; ver {nuestro ensayo sobre Madhya Pradesh y el dinero para mujeres|/essays/india-basic-income-madhya-pradesh-ladli-behna/}."
+          ],
+          [
+            "p",
+            "Nigeria: 29.000 nairas al mes, el 18,7 % del PIB. El Banco Mundial no tiene un dato de recaudación de Nigeria desde 2015, por eso sale en gris. Brasil: 240 reales al mes, el 4,8 % del PIB y el 31 % de la recaudación (2024). China: 320 yuanes al mes, el 3,9 % del PIB y el 55 % de la recaudación central, que fue el 7,0 % del PIB en 2024; {la ayuda por crianza de China|/essays/china-childcare-subsidy-basic-income/} paga 3.600 yuanes al año por cada niño menor de 3 años."
+          ],
+          [
+            "p",
+            "Los países del Golfo salen baratos en relación con su economía: el 1,1 % del PIB en Catar, el 1,6 % en Arabia Saudí y Emiratos Árabes Unidos, el 1,8 % en Baréin, el 2,1 % en Kuwait y el 2,7 % en Omán. Frente a la recaudación tributaria la imagen cambia, porque la mayor parte de sus ingresos no son impuestos. En 2024 la recaudación de Arabia Saudí fue el 8,1 % del PIB, pero sus ingresos totales el 26,8 %: el coste es el 19 % de la recaudación y el 5,9 % de todos los ingresos.[5] El gobierno federal de Emiratos declara una recaudación del 0,65 % del PIB (2024), lo que sitúa el coste en el 242 %. El dato de Baréin de 2020 da un 63 %; Catar, Kuwait y Omán no tienen dato reciente."
+          ],
+          [
+            "h",
+            "Las grandes salvedades"
+          ],
+          [
+            "p",
+            "Bruto, no neto. Estas cifras son el cheque, no la factura. Una renta básica sustituiría algunas prestaciones actuales y parte volvería en impuestos. Nada de eso se resta aquí."
+          ],
+          [
+            "p",
+            "PPA frente a precios de mercado. 3 dólares al día en PPA son una cantidad distinta de dólares al tipo de cambio de mercado: unos 21 dólares al mes en India, 12 en Siria y 117 en Islandia y Suiza. Donde tuvimos que usar el tipo de cambio (34 lugares, entre ellos Somalia y la República Democrática del Congo), 3 dólares al día son unos 90 dólares al mes, y es una de las razones por las que esos dos encabezan la lista."
+          ],
+          [
+            "p",
+            "Una línea de pobreza, no un sueldo para vivir. 3,00 dólares al día es la línea de pobreza extrema del Banco Mundial. En Japón son 9.400 yenes al mes; el valor inicial de la calculadora para Japón es 30.000 yenes y {la propuesta de Takenaka|/essays/takenaka-70000-yen-basic-income/} es de 70.000. Una renta básica diez veces la línea de pobreza cuesta diez veces más."
+          ],
+          [
+            "p",
+            "Recaudación débil. La recaudación no es un techo fijo: los gobiernos también se endeudan, obtienen ingresos de recursos naturales y empresas públicas, y pueden subir impuestos. Pero donde gran parte de la economía es informal y cuesta cobrar impuestos, es un buen indicio del dinero que un Estado puede mover de verdad. El gobierno central de Etiopía recaudó el 3,4 % del PIB en 2024; el de Somalia, el 2,2 %."
+          ],
+          [
+            "p",
+            "Solo el gobierno central. La medida del Banco Mundial cubre el gobierno central. Los países federales como Estados Unidos, Alemania, India, Brasil o Emiratos, donde estados y regiones también recaudan, parecen menos capaces de pagar de lo que son."
+          ],
+          [
+            "p",
+            "Años antiguos. Los datos de recaudación de diez países son de 2020 y los de nueve de 2021, mientras que el PIB es casi siempre de 2025; los de Burundi y la República Centroafricana son de 2021 y el de la República Democrática del Congo, de 2022. Descartamos todo lo que tenga más de cinco años de antigüedad respecto al PIB, pero incluso dentro de ese margen pueden cambiar muchas cosas."
+          ],
+          [
+            "h",
+            "Qué implica"
+          ],
+          [
+            "p",
+            "Para los países más pobres, una renta básica al nivel de la línea de pobreza pagada con sus propios impuestos está fuera de alcance; haría falta dinero de fuera. Las transferencias entre países ya existen a pequeña escala: {el estudio de GiveDirectly en Kenia|/timeline/#tl-kenya} paga a los adultos algo más de 20 dólares al mes."
+          ],
+          [
+            "p",
+            "Los programas parciales y graduales cuestan mucho menos. Pagar solo a los niños de la India, el 29 % de su población, costaría el 2,7 % del PIB, alrededor del 39 % de la recaudación central. Prueba otros grupos y cantidades en {la calculadora|/calc/}."
+          ],
+          [
+            "p",
+            "Los fondos de recursos naturales son otra vía. {El Fondo Permanente de Alaska|/timeline/#tl-alaska} paga desde 1982 un dividendo anual de un fondo estatal a los residentes que cumplen los requisitos.[10]"
+          ],
+          [
+            "o",
+            "Nuestra lectura: el mapa no dice quién adoptará una renta básica. Dice que en 59 países un suelo a la altura de la pobreza extrema costaría menos de una cuarta parte de la recaudación actual, así que allí el obstáculo es una decisión política y no la aritmética. En 40, no puede pagarse solo con sus propios impuestos. Para saber más sobre la evidencia y el dinero, ver {el experimento de Finlandia|/essays/finland-basic-income-experiment/}, {el estudio de OpenResearch de 1.000 dólares al mes|/essays/openresearch-cash-study/} y {quién pagaría una renta alta universal|/essays/universal-high-income/}."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Zahle jedem Einwohner ein Jahr lang die internationale Armutsgrenze der Weltbank: 3,00 Dollar am Tag. An sieben Orten würde das weniger als 1 % des BIP kosten: Monaco (0,38 %), Liechtenstein (0,50 %), Luxemburg (0,74 %), Bermuda (0,77 %), Irland (0,84 %), Singapur (0,86 %) und Macau (0,89 %). In drei Ländern würde es mehr kosten, als die ganze Wirtschaft in einem Jahr erzeugt: Burundi (115 % des BIP), die Demokratische Republik Kongo (133 %) und Somalia (163 %).[1][8]"
+          ],
+          [
+            "p",
+            "Das BIP ist aber nicht das, was ein Staat ausgeben kann. Deshalb haben wir die Kosten für jedes Land auch mit den eigenen Steuereinnahmen des Staates verglichen. Von den 140 Ländern und Gebieten mit einer aktuellen Zahl könnten 24 es mit weniger als einem Zehntel ihrer Steuereinnahmen bezahlen. 40 bräuchten mehr als alle."
+          ],
+          [
+            "m",
+            ""
+          ],
+          [
+            "h",
+            "So entsteht die Karte"
+          ],
+          [
+            "p",
+            "Die Kosten sind Bevölkerung × 3,00 Dollar am Tag × 365 Tage: alle, jeden Alters, ein Jahr lang. 3,00 Dollar sind die internationale Armutsgrenze der Weltbank in Kaufkraftparitäten (KKP) von 2021, festgelegt im Juni 2025.[1] Wir rechnen sie mit dem KKP-Umrechnungsfaktor der Weltbank für den privaten Konsum in Landeswährung um, damit man überall ungefähr dasselbe dafür bekommt.[6] Für 34 Länder und Gebiete ohne brauchbaren Faktor nehmen wir den Marktwechselkurs. Bevölkerung und BIP stammen von der Weltbank, für sieben ausgewählte Länder aus nationalen Statistiken; bei 186 der 211 ist das BIP von 2025.[2][3] Die Ländergrenzen stammen von Natural Earth.[9]"
+          ],
+          [
+            "p",
+            "Die Einnahmen sind die Steuereinnahmen des Zentralstaats in Prozent des BIP, von der Weltbank.[4] Wir nehmen das neueste Jahr, und nur, wenn es höchstens fünf Jahre älter ist als das BIP-Jahr. Fehlen Steuerdaten, würden wir die Gesamteinnahmen nehmen,[5] doch in dieser Ausgabe war das bei keinem Land nötig. Von den 140 Zahlen stammen 93 aus 2024, 19 aus 2023, 8 aus 2022, 9 aus 2021 und 10 aus 2020. Für Japan hat die Weltbank keine aktuelle Zahl; wir nehmen die Steuer- und Stempeleinnahmen im Staatshaushalt 2026: 83,7 Billionen Yen.[7]"
+          ],
+          [
+            "p",
+            "Grau bleiben 71 Länder und Gebiete mit 1,61 Milliarden Menschen: Die Weltbank hat für sie keine Steuerzahl seit 2015 oder nur eine, die älter als fünf Jahre ist. Darunter sind Nigeria, Pakistan, Indonesien, Ägypten, Vietnam, Iran, Katar und Kuwait. Taiwan, Nordkorea, Eritrea, Südsudan und Jemen sind gar nicht in den Daten. Die vollständige Tabelle mit den Zahlen jedes Landes und einem Link auf seine Rechnerseite steht auf {der Kartenseite|/calc/map/}.[8]"
+          ],
+          [
+            "t",
+            "Kosten in Prozent der Steuereinnahmen | Länder und Gebiete | Menschen, die dort leben\nUnter 10 % | 24 | 0,35 Milliarden\n10–25 % | 35 | 1,18 Milliarden\n25–50 % | 23 | 0,70 Milliarden\n50–100 % | 18 | 1,71 Milliarden\nÜber 100 % | 40 | 2,57 Milliarden\nKeine aktuellen Daten | 71 | 1,61 Milliarden"
+          ],
+          [
+            "h",
+            "Muster nach Region und Einkommen"
+          ],
+          [
+            "p",
+            "Europa sticht heraus. Von den 48 Ländern in Europa und Zentralasien mit einer Zahl liegen 41 unter 25 % der Steuereinnahmen und 18 unter 10 %. Die niedrigsten Anteile weltweit haben Luxemburg (2,6 %), Macau (3,2 %), Dänemark (4,4 %), Norwegen (4,5 %) und Irland (4,7 %). Am anderen Ende bräuchten 25 der 32 Länder südlich der Sahara mit einer Zahl mehr als ihre gesamten Steuereinnahmen; nur Mauritius (18 %) und Botswana (24 %) liegen unter 25 %."
+          ],
+          [
+            "p",
+            "Lateinamerika liegt dazwischen: 10 seiner 19 Länder mit einer Zahl liegen zwischen 25 % und 50 %, darunter Mexiko (30 %), Brasilien (31 %) und Kolumbien (34 %). In Südasien haben alle sechs Länder eine Zahl, und keines liegt unter 10 %. Am niedrigsten sind die Malediven (24 %); Indien und Nepal (beide 132 %) und Bangladesch (160 %) bräuchten mehr als alle Steuereinnahmen ihres Zentralstaats."
+          ],
+          [
+            "p",
+            "Das meiste davon erklärt das Einkommen. Teilt man die Länder nach BIP pro Kopf in US-Dollar aus denselben Daten ein (das ist nicht die Einkommensklassifikation der Weltbank): Bei den 55 Ländern mit einer Zahl und mehr als 15.000 Dollar pro Kopf liegt der Median der Kosten bei 11 % der Steuereinnahmen, und 49 liegen unter 25 %. Zwischen 5.000 und 15.000 Dollar liegt der Median bei 31 %, zwischen 1.500 und 5.000 Dollar bei 114 %. Unter 1.500 Dollar bräuchten 17 der 18 Länder mit einer Zahl mehr als alle Steuereinnahmen; der Median liegt bei 287 %."
+          ],
+          [
+            "p",
+            "Zwei Dinge wirken in dieselbe Richtung. Unter den Ländern mit Steuerdaten ist eine Armutsgrenze in KKP-Dollar dort ein größerer Teil der Wirtschaft, wo die Einkommen niedrig sind: Der Median der Kosten liegt über 15.000 Dollar pro Kopf bei 1,9 % des BIP und unter 1.500 Dollar bei 36 %. Und ärmere Staaten nehmen einen kleineren Teil des BIP an Steuern ein: im Median 19,9 % über 15.000 Dollar und 12,6 % unter 1.500 Dollar."
+          ],
+          [
+            "h",
+            "Bemerkenswerte Fälle"
+          ],
+          [
+            "p",
+            "Japan: 9.400 Yen im Monat pro Person, etwa 13,9 Billionen Yen im Jahr oder 2,1 % des BIP. Gemessen an den 83,7 Billionen Yen Steuer- und Stempeleinnahmen im Staatshaushalt 2026 sind das 16,5 %.[7] Auf {Japans Rechnerseite|/calc/jp/} lassen sich andere Beträge ausprobieren."
+          ],
+          [
+            "p",
+            "Die USA: 91 Dollar im Monat, etwa 379 Milliarden Dollar im Jahr, 1,2 % des BIP. Die Steuereinnahmen des Bundes lagen 2024 bei 10,8 % des BIP; die Kosten entsprechen also 11,4 % davon. Steuern der Bundesstaaten und Gemeinden sind nicht mitgezählt.[4]"
+          ],
+          [
+            "p",
+            "Indien: 1.800 Rupien im Monat, 9,2 % des BIP. Die Steuereinnahmen des Zentralstaats lagen 2022, im neuesten Jahr, bei 6,9 % des BIP; die Kosten entsprechen also 132 % davon. Indiens Bundesstaaten erheben eigene Steuern, die dieses Maß nicht erfasst. Die heutigen Geldleistungen sind viel kleiner; siehe {unseren Essay über Madhya Pradesh und Geld für Frauen|/essays/india-basic-income-madhya-pradesh-ladli-behna/}."
+          ],
+          [
+            "p",
+            "Nigeria: 29.000 Naira im Monat, 18,7 % des BIP. Die Weltbank hat für Nigeria seit 2015 keine Steuerzahl, deshalb ist es auf der Karte grau. Brasilien: 240 Real im Monat, 4,8 % des BIP und 31 % der Steuereinnahmen (2024). China: 320 Yuan im Monat, 3,9 % des BIP und 55 % der zentralen Steuereinnahmen, die 2024 bei 7,0 % des BIP lagen; {Chinas Kinderbetreuungszuschuss|/essays/china-childcare-subsidy-basic-income/} zahlt 3.600 Yuan im Jahr für jedes Kind unter 3."
+          ],
+          [
+            "p",
+            "Die Golfstaaten sind im Verhältnis zu ihrer Wirtschaft günstig: 1,1 % des BIP in Katar, 1,6 % in Saudi-Arabien und den Vereinigten Arabischen Emiraten, 1,8 % in Bahrain, 2,1 % in Kuwait und 2,7 % in Oman. Gemessen an den Steuern sieht es ganz anders aus, denn der größte Teil ihrer Einnahmen sind keine Steuern. Saudi-Arabiens Steuereinnahmen lagen 2024 bei 8,1 % des BIP, die Gesamteinnahmen bei 26,8 %; die Kosten entsprechen 19 % der Steuern und 5,9 % aller Einnahmen.[5] Der Bundesstaat der Emirate meldet Steuereinnahmen von 0,65 % des BIP (2024), womit die Kosten bei 242 % davon liegen. Bahrains Zahl von 2020 ergibt 63 %; Katar, Kuwait und Oman haben keine aktuelle Zahl."
+          ],
+          [
+            "h",
+            "Die großen Vorbehalte"
+          ],
+          [
+            "p",
+            "Brutto, nicht netto. Diese Zahlen sind der Scheck, nicht die Rechnung. Ein Grundeinkommen würde einige bestehende Leistungen ersetzen, und ein Teil käme über Steuern zurück. Beides ist hier nicht abgezogen."
+          ],
+          [
+            "p",
+            "KKP oder Marktpreise. 3 Dollar am Tag in KKP sind zum Marktwechselkurs unterschiedlich viele Dollar: etwa 21 Dollar im Monat in Indien, 12 Dollar in Syrien und 117 Dollar in Island und der Schweiz. Wo wir den Wechselkurs nehmen mussten (34 Orte, darunter Somalia und die Demokratische Republik Kongo), bedeuten 3 Dollar am Tag etwa 90 Dollar im Monat, ein Grund, warum diese beiden ganz oben stehen."
+          ],
+          [
+            "p",
+            "Eine Armutsgrenze, kein Auskommen. 3,00 Dollar am Tag sind die Grenze der Weltbank für extreme Armut. In Japan sind das 9.400 Yen im Monat; der Rechner nimmt für Japan standardmäßig 30.000 Yen, und {Takenakas Vorschlag|/essays/takenaka-70000-yen-basic-income/} liegt bei 70.000 Yen. Ein Grundeinkommen in zehnfacher Höhe der Armutsgrenze kostet zehnmal so viel."
+          ],
+          [
+            "p",
+            "Schwache Steuererhebung. Steuereinnahmen sind keine feste Grenze: Staaten können Kredite aufnehmen, an Rohstoffen und Staatsfirmen verdienen und Steuern erhöhen. Wo aber ein großer Teil der Wirtschaft informell ist und Steuern schwer einzutreiben sind, zeigen sie recht gut, wie viel Geld ein Staat tatsächlich bewegen kann. Äthiopiens Zentralstaat nahm 2024 Steuern von 3,4 % des BIP ein, Somalias 2,2 %."
+          ],
+          [
+            "p",
+            "Nur der Zentralstaat. Das Maß der Weltbank erfasst den Zentralstaat. Bundesstaatliche Länder wie die USA, Deutschland, Indien, Brasilien und die Emirate, in denen auch Länder und Regionen Steuern erheben, wirken weniger zahlungsfähig, als sie sind."
+          ],
+          [
+            "p",
+            "Alte Jahre. Die Steuerzahlen von zehn Ländern stammen aus 2020 und von neun aus 2021, das BIP meist aus 2025; die von Burundi und der Zentralafrikanischen Republik aus 2021, die der Demokratischen Republik Kongo aus 2022. Alles, was mehr als fünf Jahre älter ist als das BIP-Jahr, lassen wir weg, doch auch innerhalb dieser Spanne kann sich viel ändern."
+          ],
+          [
+            "h",
+            "Was daraus folgt"
+          ],
+          [
+            "p",
+            "Für die ärmsten Länder ist ein Grundeinkommen auf Höhe der Armutsgrenze aus eigenen Steuern unerreichbar; es bräuchte Geld von außen. Zahlungen über Grenzen hinweg gibt es im Kleinen schon: {Die Studie von GiveDirectly in Kenia|/timeline/#tl-kenya} zahlt Erwachsenen etwas mehr als 20 Dollar im Monat."
+          ],
+          [
+            "p",
+            "Teilweise und schrittweise Modelle kosten viel weniger. Nur Indiens Kinder, 29 % der Bevölkerung, zu bezahlen, würde 2,7 % des BIP kosten, rund 39 % der zentralen Steuereinnahmen. Andere Gruppen und Beträge lassen sich im {Rechner|/calc/} ausprobieren."
+          ],
+          [
+            "p",
+            "Rohstofffonds sind ein weiterer Weg. {Alaskas Permanent Fund|/timeline/#tl-alaska} zahlt seit 1982 berechtigten Einwohnern jedes Jahr eine Dividende aus einem staatlichen Fonds.[10]"
+          ],
+          [
+            "o",
+            "Unsere Lesart: Die Karte sagt nicht, wer ein Grundeinkommen einführen wird. Sie sagt, dass in 59 Ländern ein Boden auf Höhe der extremen Armutsgrenze weniger als ein Viertel der heutigen Steuereinnahmen kosten würde; das Hindernis ist dort eine politische Entscheidung, nicht die Rechnung. In 40 Ländern lässt es sich aus eigenen Steuern allein nicht bezahlen. Mehr zu Belegen und Geld: {Finnlands Experiment|/essays/finland-basic-income-experiment/}, {die Studie von OpenResearch mit 1.000 Dollar im Monat|/essays/openresearch-cash-study/} und {wer ein universelles hohes Einkommen bezahlen würde|/essays/universal-high-income/}."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "ادفع لكل مقيم خط الفقر الدولي لدى البنك الدولي، 3.00 دولارات يوميًا، لمدة عام. في سبعة أماكن ستكون الكلفة أقل من 1% من الناتج المحلي الإجمالي: موناكو (0.38%) وليختنشتاين (0.50%) ولوكسمبورغ (0.74%) وبرمودا (0.77%) وأيرلندا (0.84%) وسنغافورة (0.86%) وماكاو (0.89%). وفي ثلاث دول ستتجاوز الكلفة كل ما ينتجه الاقتصاد في عام: بوروندي (115% من الناتج المحلي) والكونغو الديمقراطية (133%) والصومال (163%).[1][8]"
+          ],
+          [
+            "p",
+            "لكن الناتج المحلي ليس ما تستطيع الحكومة إنفاقه. لذلك قارنّا الكلفة في كل دولة أيضًا بالإيرادات الضريبية لحكومتها. من بين 140 دولة وإقليمًا لها رقم حديث، تستطيع 24 الدفع بأقل من عُشر إيراداتها الضريبية، بينما تحتاج 40 إلى أكثر منها كلها."
+          ],
+          [
+            "m",
+            ""
+          ],
+          [
+            "h",
+            "كيف صُنعت الخريطة"
+          ],
+          [
+            "p",
+            "الكلفة = عدد السكان × 3.00 دولارات يوميًا × 365 يومًا: الجميع، من كل الأعمار، لمدة عام. والـ3.00 دولارات هي خط الفقر الدولي لدى البنك الدولي بدولارات تعادل القوة الشرائية لعام 2021، وقد حُدد في يونيو 2025.[1] نحوّلها إلى العملة المحلية بمعامل تحويل تعادل القوة الشرائية للاستهلاك الأسري لدى البنك الدولي، كي تشتري تقريبًا الشيء نفسه في كل مكان.[6] وفي 34 دولة وإقليمًا لا يتوفر لها معامل صالح نستخدم سعر الصرف في السوق. السكان والناتج المحلي أرقام البنك الدولي، مع إحصاءات وطنية لسبع دول مختارة؛ والناتج المحلي لعام 2025 في 186 من الـ211.[2][3] وأشكال الدول من ⁦Natural Earth⁩.[9]"
+          ],
+          [
+            "p",
+            "الإيرادات هي الإيرادات الضريبية للحكومة المركزية نسبةً إلى الناتج المحلي، من البنك الدولي.[4] نأخذ أحدث سنة، ولا نستخدمها إلا إذا لم تكن أقدم من سنة الناتج المحلي بأكثر من خمس سنوات. وإن غابت الإيرادات الضريبية نستخدم إجمالي الإيرادات،[5] لكن لم تحتج أي دولة إلى ذلك في هذه النسخة. من الأرقام الـ140، هناك 93 لعام 2024 و19 لعام 2023 و8 لعام 2022 و9 لعام 2021 و10 لعام 2020. وليس لدى البنك الدولي رقم حديث لليابان، فاستخدمنا إيرادات الضرائب والطوابع في ميزانيتها الوطنية للسنة المالية 2026: 83.7 تريليون ين.[7]"
+          ],
+          [
+            "p",
+            "تبقى 71 دولة وإقليمًا باللون الرمادي، يعيش فيها 1.61 مليار شخص: ليس لدى البنك الدولي رقم لإيراداتها الضريبية منذ 2015، أو لديه رقم أقدم من خمس سنوات فقط. منها نيجيريا وباكستان وإندونيسيا ومصر وفيتنام وإيران وقطر والكويت. أما تايوان وكوريا الشمالية وإريتريا وجنوب السودان واليمن فليست في البيانات أصلًا. الجدول الكامل، بأرقام كل دولة ورابط إلى صفحتها في الحاسبة، موجود في {صفحة الخريطة|/calc/map/}.[8]"
+          ],
+          [
+            "t",
+            "الكلفة نسبةً إلى الإيرادات الضريبية | الدول والأقاليم | عدد السكان\nأقل من 10% | 24 | 0.35 مليار\n10–25% | 35 | 1.18 مليار\n25–50% | 23 | 0.70 مليار\n50–100% | 18 | 1.71 مليار\nأكثر من 100% | 40 | 2.57 مليار\nلا بيانات حديثة | 71 | 1.61 مليار"
+          ],
+          [
+            "h",
+            "أنماط حسب المنطقة والدخل"
+          ],
+          [
+            "p",
+            "أوروبا لافتة. من بين 48 دولة في أوروبا وآسيا الوسطى لها رقم، تقع 41 تحت 25% من الإيرادات الضريبية و18 تحت 10%. وأدنى النسب في العالم في لوكسمبورغ (2.6%) وماكاو (3.2%) والدنمارك (4.4%) والنرويج (4.5%) وأيرلندا (4.7%). وفي الطرف الآخر، تحتاج 25 من 32 دولة في أفريقيا جنوب الصحراء لها رقم إلى أكثر من كل إيراداتها الضريبية؛ ولا تقع تحت 25% إلا موريشيوس (18%) وبوتسوانا (24%)."
+          ],
+          [
+            "p",
+            "أمريكا اللاتينية في الوسط: 10 من دولها الـ19 التي لها رقم تقع بين 25% و50%، منها المكسيك (30%) والبرازيل (31%) وكولومبيا (34%). وفي جنوب آسيا للدول الست كلها أرقام، ولا تقع أي منها تحت 10%. أدناها جزر المالديف (24%)؛ أما الهند ونيبال (132% لكل منهما) وبنغلاديش (160%) فتحتاج إلى أكثر من كل الإيرادات الضريبية لحكومتها المركزية."
+          ],
+          [
+            "p",
+            "الدخل يفسر معظم ذلك. إذا قسّمنا الدول حسب نصيب الفرد من الناتج المحلي بالدولار الأمريكي، من البيانات نفسها (وهذا ليس تصنيف البنك الدولي للدخل): بين 55 دولة لها رقم ويزيد نصيب الفرد فيها على 15,000 دولار، يبلغ وسيط الكلفة 11% من الإيرادات الضريبية، وتقع 49 منها تحت 25%. وبين 5,000 و15,000 دولار يبلغ الوسيط 31%؛ وبين 1,500 و5,000 دولار 114%. ودون 1,500 دولار تحتاج 17 من 18 دولة لها رقم إلى أكثر من كل إيراداتها الضريبية، والوسيط 287%."
+          ],
+          [
+            "p",
+            "عاملان يدفعان في الاتجاه نفسه. بين الدول التي لها رقم ضريبي، يكون خط الفقر المحسوب بتعادل القوة الشرائية حصة أكبر من الاقتصاد حيث الدخل منخفض: وسيط الكلفة 1.9% من الناتج المحلي فوق 15,000 دولار للفرد و36% دون 1,500 دولار. والحكومات الأفقر تجمع حصة أصغر من الناتج المحلي ضرائبَ: الوسيط 19.9% فوق 15,000 دولار و12.6% دون 1,500 دولار."
+          ],
+          [
+            "h",
+            "حالات لافتة"
+          ],
+          [
+            "p",
+            "اليابان: 9,400 ين شهريًا للفرد، نحو 13.9 تريليون ين في السنة، أي 2.1% من الناتج المحلي. ومقارنةً بإيرادات الضرائب والطوابع البالغة 83.7 تريليون ين في الميزانية الوطنية للسنة المالية 2026، تبلغ 16.5%.[7] وفي {صفحة اليابان في الحاسبة|/calc/jp/} يمكنك تجربة مبالغ أخرى."
+          ],
+          [
+            "p",
+            "الولايات المتحدة: 91 دولارًا شهريًا، نحو 379 مليار دولار في السنة، 1.2% من الناتج المحلي. وبلغت الإيرادات الضريبية الاتحادية 10.8% من الناتج المحلي في 2024، فالكلفة 11.4% منها؛ ولا تُحسب ضرائب الولايات والسلطات المحلية.[4]"
+          ],
+          [
+            "p",
+            "الهند: 1,800 روبية شهريًا، 9.2% من الناتج المحلي. وبلغت الإيرادات الضريبية للحكومة المركزية 6.9% من الناتج المحلي في 2022، وهي أحدث سنة، فالكلفة تعادل 132% منها. وتجمع الولايات الهندية ضرائبها الخاصة التي لا يشملها هذا المقياس. أما برامج النقد الحالية فأصغر بكثير؛ انظر {مقالنا عن ماديا براديش والنقد للنساء|/essays/india-basic-income-madhya-pradesh-ladli-behna/}."
+          ],
+          [
+            "p",
+            "نيجيريا: 29,000 نايرا شهريًا، 18.7% من الناتج المحلي. وليس لدى البنك الدولي رقم لإيرادات نيجيريا الضريبية منذ 2015، فهي رمادية على الخريطة. البرازيل: 240 ريالًا شهريًا، 4.8% من الناتج المحلي و31% من الإيرادات الضريبية (2024). الصين: 320 يوانًا شهريًا، 3.9% من الناتج المحلي و55% من الإيرادات الضريبية المركزية التي بلغت 7.0% من الناتج المحلي في 2024؛ أما {إعانة رعاية الأطفال في الصين|/essays/china-childcare-subsidy-basic-income/} فتدفع 3,600 يوان سنويًا عن كل طفل دون الثالثة."
+          ],
+          [
+            "p",
+            "دول الخليج رخيصة قياسًا إلى اقتصاداتها: 1.1% من الناتج المحلي في قطر، و1.6% في السعودية والإمارات، و1.8% في البحرين، و2.1% في الكويت، و2.7% في عُمان. لكن الصورة تختلف تمامًا مقارنةً بالإيرادات الضريبية، لأن معظم إيراداتها ليست ضرائب. بلغت الإيرادات الضريبية للسعودية 8.1% من الناتج المحلي في 2024، بينما بلغ إجمالي إيراداتها 26.8%، فالكلفة 19% من الإيرادات الضريبية و5.9% من كل الإيرادات.[5] وتعلن الحكومة الاتحادية في الإمارات إيرادات ضريبية بنسبة 0.65% من الناتج المحلي (2024)، ما يجعل الكلفة 242% منها. ويعطي رقم البحرين لعام 2020 نسبة 63%؛ أما قطر والكويت وعُمان فليس لها رقم حديث."
+          ],
+          [
+            "h",
+            "تحفظات كبيرة"
+          ],
+          [
+            "p",
+            "إجمالي لا صافٍ. هذه الأرقام هي الشيك لا الفاتورة. فالدخل الأساسي سيحل محل بعض الإعانات القائمة، وسيعود جزء منه عبر الضرائب. ولم يُطرح شيء من ذلك هنا."
+          ],
+          [
+            "p",
+            "تعادل القوة الشرائية مقابل أسعار السوق. 3 دولارات يوميًا بتعادل القوة الشرائية تساوي عددًا مختلفًا من الدولارات بسعر الصرف في السوق: نحو 21 دولارًا شهريًا في الهند، و12 دولارًا في سوريا، و117 دولارًا في آيسلندا وسويسرا. وحيث اضطررنا إلى سعر الصرف (34 مكانًا، منها الصومال والكونغو الديمقراطية)، تعني 3 دولارات يوميًا نحو 90 دولارًا شهريًا، وهذا من أسباب تصدّر هذين البلدين القائمة."
+          ],
+          [
+            "p",
+            "خط فقر لا دخل للعيش. 3.00 دولارات يوميًا هي خط الفقر المدقع لدى البنك الدولي. وفي اليابان تساوي 9,400 ين شهريًا؛ والقيمة الافتراضية لليابان في الحاسبة 30,000 ين، و{مقترح تاكيناكا|/essays/takenaka-70000-yen-basic-income/} 70,000 ين. ودخل أساسي بعشرة أضعاف خط الفقر يكلف عشرة أضعاف."
+          ],
+          [
+            "p",
+            "ضعف تحصيل الضرائب. الإيرادات الضريبية ليست سقفًا ثابتًا: فالحكومات تقترض أيضًا، وتكسب من الموارد والشركات الحكومية، ويمكنها رفع الضرائب. لكن حيث يكون جزء كبير من الاقتصاد غير رسمي وتحصيل الضرائب ضعيفًا، فهي مؤشر معقول على ما تستطيع الدولة تحريكه فعلًا من مال. جمعت الحكومة المركزية في إثيوبيا ضرائب بنسبة 3.4% من الناتج المحلي في 2024، وفي الصومال 2.2%."
+          ],
+          [
+            "p",
+            "الحكومة المركزية فقط. مقياس البنك الدولي يغطي الحكومة المركزية. والدول الاتحادية مثل الولايات المتحدة وألمانيا والهند والبرازيل والإمارات، حيث تجمع الولايات والأقاليم ضرائب أيضًا، تبدو أقل قدرة على الدفع مما هي عليه."
+          ],
+          [
+            "p",
+            "سنوات قديمة. الأرقام الضريبية لعشر دول من 2020 ولتسع من 2021، بينما الناتج المحلي في الغالب من 2025؛ وأرقام بوروندي وجمهورية أفريقيا الوسطى من 2021، والكونغو الديمقراطية من 2022. نستبعد كل ما هو أقدم من سنة الناتج المحلي بأكثر من خمس سنوات، لكن الكثير قد يتغير حتى داخل هذه المدة."
+          ],
+          [
+            "h",
+            "ما الذي يعنيه ذلك"
+          ],
+          [
+            "p",
+            "بالنسبة إلى أفقر الدول، دخل أساسي بمستوى خط الفقر يُدفع من ضرائبها هي بعيد المنال؛ سيحتاج إلى مال من الخارج. والتحويلات عبر الحدود موجودة بالفعل على نطاق صغير: {دراسة ⁦GiveDirectly⁩ في كينيا|/timeline/#tl-kenya} تدفع للبالغين ما يزيد قليلًا على 20 دولارًا شهريًا."
+          ],
+          [
+            "p",
+            "البرامج الجزئية والمتدرجة أرخص بكثير. الدفع لأطفال الهند وحدهم، وهم 29% من السكان، سيكلف 2.7% من الناتج المحلي، أي نحو 39% من الإيرادات الضريبية المركزية. جرّب فئات ومبالغ أخرى في {الحاسبة|/calc/}."
+          ],
+          [
+            "p",
+            "صناديق الموارد طريق آخر. {الصندوق الدائم في ألاسكا|/timeline/#tl-alaska} يدفع منذ 1982 توزيعًا سنويًا من صندوق الولاية للمقيمين المستحقين.[10]"
+          ],
+          [
+            "o",
+            "قراءتنا: الخريطة لا تقول من سيتبنى الدخل الأساسي. بل تقول إن حدًا أدنى بمستوى خط الفقر المدقع سيكلف في 59 دولة أقل من ربع إيراداتها الضريبية الحالية، فالعائق هناك خيار سياسي لا حساب. وفي 40 دولة لا يمكن دفعه من ضرائبها وحدها. ولمزيد عن الأدلة والمال، انظر {تجربة فنلندا|/essays/finland-basic-income-experiment/} و{دراسة ⁦OpenResearch⁩ بألف دولار شهريًا|/essays/openresearch-cash-study/} و{من سيدفع الدخل المرتفع الشامل|/essays/universal-high-income/}."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "World Bank — June 2025 update to the global poverty lines: the international poverty line of $3.00 a day in 2021 PPP",
+          "url": "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines"
+        },
+        {
+          "n": 2,
+          "label": "World Bank — Population, total (SP.POP.TOTL)",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+        },
+        {
+          "n": 3,
+          "label": "World Bank — GDP, current local currency units (NY.GDP.MKTP.CN) and current US$ (NY.GDP.MKTP.CD)",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CN"
+        },
+        {
+          "n": 4,
+          "label": "World Bank — Tax revenue, % of GDP (GC.TAX.TOTL.GD.ZS), central government",
+          "url": "https://data.worldbank.org/indicator/GC.TAX.TOTL.GD.ZS"
+        },
+        {
+          "n": 5,
+          "label": "World Bank — Revenue, excluding grants, % of GDP (GC.REV.XGRT.GD.ZS)",
+          "url": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS"
+        },
+        {
+          "n": 6,
+          "label": "World Bank — PPP conversion factor, private consumption, LCU per international $ (PA.NUS.PRVT.PP)",
+          "url": "https://data.worldbank.org/indicator/PA.NUS.PRVT.PP"
+        },
+        {
+          "n": 7,
+          "label": "Ministry of Finance Japan, explanation of the FY2026 budget. FY2026 initial budget: general-account spending ¥122.3092 trillion; social security ¥39.0559 trillion; taxes and stamp revenue ¥83.735 trillion",
+          "url": "https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/20260220.html"
+        },
+        {
+          "n": 8,
+          "label": "Free Lunch Lab — countries.json: population, GDP, government revenue and the cost of the $3.00-a-day poverty line for 211 countries and territories (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/countries.json"
+        },
+        {
+          "n": 9,
+          "label": "world-atlas (Natural Earth, public domain) — the country shapes used for the map",
+          "url": "https://github.com/topojson/world-atlas"
+        },
+        {
+          "n": 10,
+          "label": "State of Alaska, Permanent Fund Dividend Division — Historical timeline",
+          "url": "https://pfd.alaska.gov/Division-Info/Historical-Timeline"
+        }
+      ]
+    },
     {
       "id": "india-basic-income-madhya-pradesh-ladli-behna",
       "date": "2026-11-09",
