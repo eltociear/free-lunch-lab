@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/takenaka-70000-yen-basic-income.jpg">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free Lunch Lab（免费午餐研究所）","item":"https://neteru-nyukin.eltociear.workers.dev/zh/"},{"@type":"ListItem","position":2,"name":"随笔","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/"},{"@type":"ListItem","position":3,"name":"每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/takenaka-70000-yen-basic-income/"}]},{"@context":"https://schema.org","@type":"Article","headline":"每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案","description":"竹中平藏 2020 年提出的“每人每月 7 万日元”。养老金和生活保护怎么处理、高收入者是否返还，结果差别很大。我们定好前提，算了五个家庭的账，也核对了全国的总成本。","inLanguage":"zh-Hans","datePublished":"2026-11-06","dateModified":"2026-11-06","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/takenaka-70000-yen-basic-income/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/takenaka-70000-yen-basic-income.jpg"}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free Lunch Lab（免费午餐研究所）","item":"https://neteru-nyukin.eltociear.workers.dev/zh/"},{"@type":"ListItem","position":2,"name":"随笔","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/"},{"@type":"ListItem","position":3,"name":"每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/takenaka-70000-yen-basic-income/"}]},{"@context":"https://schema.org","@type":"Article","headline":"每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案","description":"竹中平藏 2020 年提出的“每人每月 7 万日元”。养老金和生活保护怎么处理、高收入者是否返还，结果差别很大。我们定好前提，算了五个家庭的账，也核对了全国的总成本。","inLanguage":"zh-Hans","datePublished":"2026-11-06","dateModified":"2026-11-06","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/takenaka-70000-yen-basic-income/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/takenaka-70000-yen-basic-income.jpg","timeRequired":"PT9M"}]</script>
 <link rel="preload" href="/fonts/noto-sans-sc-400-zh-ced1541eda.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/noto-sans-sc-900-zh-50ddb00ef8.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/zen-kaku-gothic-new-900-logo-2f843f4f31.woff2" as="font" type="font/woff2" crossorigin>
@@ -799,13 +799,28 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .verify-line a,.verify-line span{padding:2px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
-/* エッセイは1行およそ38字（日本語）まで */
-.essay{max-width:38rem;margin-inline:auto}
+/* エッセイの幅は文字数で決める（--cpl × 本文の文字の大きさ）。日本語・中国語は1行およそ44字、それ以外はおよそ72字（字の幅が違うので言語ごとに --cpl で合わせる）。
+   本文は 17px（スマホ）〜18px（PC）を rem で書くので、ブラウザの文字の大きさの設定に合わせて幅も広がる */
+.essay{--fs:clamp(1.0625rem,.95rem + .4vw,1.125rem);--cpl:35;--lh:1.7;--measure:calc(var(--cpl) * var(--fs));--bleed:clamp(0px,(100vw - 32px - var(--measure)) / 2,(900px - var(--measure)) / 2);max-width:var(--measure);margin-inline:auto}
+html[lang="ja"] .essay{--cpl:44;--lh:1.9}
+html[lang="zh-Hans"] .essay{--cpl:39;--lh:1.9}
+html[lang="hi"] .essay{--cpl:43;--lh:1.75}
+html[lang="ar"] .essay{--cpl:32;--lh:1.75}
+.es-main{min-width:0}
+.essay .orgs-head h1{text-wrap:balance}
+html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{word-break:auto-phrase}
 .byline{font-size:.84rem;color:var(--muted)}
-.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:12px}
-.essay-body p{font-size:1rem;line-height:1.95}
-.essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
+.es-read{white-space:nowrap}
+.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:1em;margin-top:12px;font-size:var(--fs);line-height:var(--lh)}
+.essay-body p{font-size:1em;line-height:var(--lh)}
+/* 節の切れ目をはっきり: 見出しの上は本文のおよそ2.5字ぶん、下は狭く */
+.essay-body h2,.essay-body h3{font-family:var(--f-body);font-weight:700;font-size:1.25em;line-height:1.45;margin:1.2em 0 -.3em;scroll-margin-top:calc(var(--bar-h,56px) + 20px)}
+.essay-body h3{font-size:1.1em;margin-top:.9em}
+.essay-body>h2:first-child{margin-top:0}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+/* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
+.essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
+.essay-body>.wmap.es-wide{margin-block:.5em 0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
 .essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
@@ -813,9 +828,48 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
-/* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
-.fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
-.fnref a::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+/* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
+.fnref{line-height:0}
+.fnref a{display:inline-block;min-width:24px;min-height:24px;padding:4px 5px;margin:-6px -5px;line-height:16px;text-align:center;text-decoration:none;font-weight:700;border-radius:6px}
+.fnref a:hover{background:var(--accent-soft)}
+/* 目次: スマホ・タブレットは本文の上で開け閉めする（見出しが4つ以上のとき）。1200px 以上は横に固定 */
+.es-toc-m{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.9rem}
+.es-toc-m summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;cursor:pointer;font-weight:700;list-style:none}
+.es-toc-m summary::-webkit-details-marker{display:none}
+.es-toc-m summary::after{content:"";width:6px;height:6px;margin-inline-start:auto;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.es-toc-m[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.es-toc-m ol,.es-toc ol{margin:0;padding:0 16px 12px;padding-inline-start:2.2em;display:grid;gap:2px;line-height:1.5}
+.es-toc-m a,.es-toc a{display:block;padding:6px 0;color:var(--ink);text-decoration:none}
+.es-toc-m a:hover,.es-toc a:hover{color:var(--accent)}
+.es-toc{display:none}
+/* 記事の終わり: 数字で確かめる（世界地図の小さな画像つき）と関連エッセイのカード */
+.es-calc{margin-top:28px;display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:16px;align-items:center;padding:16px;border-radius:14px;border:1px solid var(--line);border-inline-start:3px solid var(--accent);background:var(--surface)}
+.es-calc-map{display:grid;gap:6px;font-size:.8125rem;font-weight:700;text-decoration:none}
+.es-calc-map img,.es-card img{display:block;width:100%;height:auto;aspect-ratio:40/21;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:var(--paper)}
+.es-calc-map:hover img,.es-card:hover img{border-color:var(--accent)}
+.es-calc-t h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:6px}
+.es-calc-t p{font-weight:700;line-height:1.9}
+.es-rel{margin-top:28px;padding:0}
+.es-rel h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:10px}
+.es-rel ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.es-card{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:14px;align-items:start;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
+.es-card:hover{border-color:var(--accent)}
+.es-card-t{display:grid;gap:4px;min-width:0}
+.es-card-t b{color:var(--accent);line-height:1.5;text-decoration:underline;text-underline-offset:3px}
+.es-card-t span{font-size:.84rem;line-height:1.65;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:520px){.es-calc{grid-template-columns:1fr}.es-calc-map{max-width:15rem}.es-card{grid-template-columns:minmax(0,6.5rem) minmax(0,1fr);gap:12px;padding:10px}.es-card-t span{-webkit-line-clamp:3}}
+.es-back{max-width:none}
+/* 1200px 以上: 記事を真ん中に置いたまま、横の余白に目次を固定する（ar は左右が入れ替わる）。ページの幅 1080px より広く使う */
+@media (min-width:1200px){
+.essay.has-toc{--toc:12rem;--side:calc((min(100vw - 32px, 1320px) - var(--measure)) / 2);--bleed:clamp(0px,var(--side) - var(--toc) - 32px,(900px - var(--measure)) / 2);max-width:none;width:min(100vw - 32px,1320px);margin-inline:calc((100% - min(100vw - 32px, 1320px)) / 2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,var(--measure)) minmax(0,1fr);align-items:start}
+.essay.has-toc>.es-main,.essay.has-toc>.es-back{grid-column:2}
+.essay.has-toc .es-toc-m{display:none}
+.es-toc{display:block;grid-column:3;grid-row:1;justify-self:end;width:min(var(--toc),100%);position:sticky;top:calc(var(--bar-h,56px) + 28px);max-height:calc(100vh - var(--bar-h,56px) - 56px);overflow-y:auto;margin-top:24px;font-size:.84rem}
+.es-toc-h{font-weight:700;font-size:.8125rem;color:var(--muted);padding-inline-start:12px;margin-bottom:6px}
+.es-toc ol{padding:0;list-style:none;gap:0}
+.es-toc a{padding:6px 12px;border-inline-start:2px solid var(--line);color:var(--muted)}
+.es-toc a[aria-current]{color:var(--ink);border-inline-start-color:var(--gold);font-weight:700}
+}
 .fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 .fn h2{font-size:1rem;margin-bottom:8px}
 .fn ol{margin:0;padding-inline-start:22px;display:grid;gap:14px;font-size:.84rem;line-height:1.7;overflow-wrap:anywhere}
@@ -1063,19 +1117,19 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 </div>
 <div class="wrap">
 <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh/">Free Lunch Lab（免费午餐研究所）</a></li><li><a href="/zh/essays/">随笔</a></li><li aria-current="page">每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案</li></ol></nav>
-<main class="essay">
-<article>
-<header class="orgs-head"><p class="eyebrow">随笔</p><h1>每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案</h1><p class="byline">作者：Free Lunch Lab · <time datetime="2026-11-06">发布 2026年11月6日</time></p>
+<main class="essay has-toc">
+<article class="es-main">
+<header class="orgs-head"><p class="eyebrow">随笔</p><h1>每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案</h1><p class="byline">作者：Free Lunch Lab · <time datetime="2026-11-06">发布 2026年11月6日</time> · <span class="es-read">阅读约需 9 分钟</span></p>
 <div class="shr shr-top"><a class="btn shr-o" href="https://x.com/intent/post?text=%E6%AF%8F%E4%BA%BA%E6%AF%8F%E6%9C%88%207%20%E4%B8%87%E6%97%A5%E5%85%83%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%EF%BC%8C%E6%88%91%E5%AE%B6%E6%98%AF%E8%B5%9A%E8%BF%98%E6%98%AF%E4%BA%8F%EF%BC%9F%E7%94%A8%E4%BA%94%E4%B8%AA%E5%AE%B6%E5%BA%AD%E7%AE%97%E4%B8%80%E7%AE%97%E7%AB%B9%E4%B8%AD%E5%B9%B3%E8%97%8F%E6%96%B9%E6%A1%88%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Ftakenaka-70000-yen-basic-income%2F%3Fs%3Dx%20%23%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>分享到 X</span></a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/zh/essays/takenaka-70000-yen-basic-income/?s=copy">复制链接</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/zh/essays/takenaka-70000-yen-basic-income/?s=native" data-text="每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案 #基本收入" hidden>分享</button></div></header>
-<div class="essay-body"><p>“每人每月 7 万日元。”2020 年，经济学家竹中平藏在日本电视节目上提出这个想法，引发了一场风波。竹中曾在小泉纯一郎内阁（2001–2006 年）担任经济财政政策担当大臣和总务大臣，当时是人才派遣公司 Pasona 集团的会长。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup>“7 万日元怎么可能活得下去？”“这是要取消养老金吗？”直到今天，日本社交媒体上仍能看到引用这个方案的帖子。</p>
+<details class="es-toc-m"><summary>目录</summary><ol><li><a href="#s1">竹中提出了什么</a></li><li><a href="#s2">舆论哗然，与本人的解释</a></li><li><a href="#s3">7 万日元这个数字从哪里来</a></li><li><a href="#s4">计算的前提</a></li><li><a href="#s5">算一算五个家庭</a></li><li><a href="#s6">全国要花多少钱</a></li><li><a href="#s7">总结</a></li></ol></details><div class="essay-body"><p>“每人每月 7 万日元。”2020 年，经济学家竹中平藏在日本电视节目上提出这个想法，引发了一场风波。竹中曾在小泉纯一郎内阁（2001–2006 年）担任经济财政政策担当大臣和总务大臣，当时是人才派遣公司 Pasona 集团的会长。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup>“7 万日元怎么可能活得下去？”“这是要取消养老金吗？”直到今天，日本社交媒体上仍能看到引用这个方案的帖子。</p>
 <p>本站支持基本收入，但并不支持某一个特定方案。所以在决定赞成还是反对之前，我们先问一个更贴近生活的问题：如果这个方案真的实行，你家的钱会变多还是变少？</p>
 <p class="op"><span class="op-tag">观点</span>先说答案：取决于设计。同样是 7 万日元，拿什么来换、谁事后要还，结果可能是加分也可能是减分。下面用具体数字来看这个范围。</p>
-<h2>竹中提出了什么</h2>
+<h2 id="s1">竹中提出了什么</h2>
 <p>起因是 2020 年 9 月 23 日晚播出的 BS-TBS 新闻节目《报道 1930》。节目用一块写着“全体国民每月发放 7 万日元”的展板介绍了竹中的主张。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>据报道，其做法是把个人编号（My Number）和银行账户绑定来掌握收入，收入超过一定水平的人在领取后再把钱还回去。节目中被问到“将来是否就不需要养老金和生活保护了”，竹中据报回答：“基本上是这样。”<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
 <p>给日本以外的读者补充一点背景。日本的公共养老金（年金）分两层：人人都能领取的定额基础养老金，叫作国民年金；以及曾经当过雇员的人另外领取、与收入挂钩的厚生年金。生活保护是最后一道经过家计审查的安全网，为没有其他办法维持生活的人支付生活费、房租和医疗费。</p>
 <p>他在 2020 年 8 月出版的著作中写得很直接：“每人每月发放 7 万日元的方案，也是以废除养老金和生活保护等社会保障为交换条件的。如果给全体国民发 7 万日元，就可以取消给老年人的养老金和生活保护的费用。”<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup><sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></p>
-<h2>舆论哗然，与本人的解释</h2>
+<h2 id="s2">舆论哗然，与本人的解释</h2>
 <p>批评很快就来了。“每人每月 7 万日元根本活不下去。”“这不就是削减社会保障吗？”J-CAST 新闻报道说，网上满是这样的声音。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> 时任参议员的须藤元气发帖说“这是要领养老金的人去饿死吗”，并写道如果是基本收入，每月至少需要 20 万日元。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
 <p>2020 年 10 月 7 日，竹中接受了 J-CAST 新闻的采访，大意如下：<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>他从没说过“每人 7 万日元就能生活”。7 万日元只是平均水平，意思是这个水平对财政的负担不会太大。</p>
@@ -1084,11 +1138,11 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>采用累进税的方式：高收入者适用高税率，低收入者适用负税率，也就是发钱给他们。</p>
 <p>先发给所有人，高收入者事后通过报税返还，并不是坏办法，因为事先无法知道谁是需要帮助的人。</p>
 <p class="op"><span class="op-tag">观点</span>书里的“以废除为交换”，和采访中的“保障已缴部分”“生活保护也可作补充”，给人的印象相差很大。到底哪个才是本来的方案？详细的制度设计并没有公布。而恰恰是这个说不清的部分，在算家庭账时影响最大。</p>
-<h2>7 万日元这个数字从哪里来</h2>
+<h2 id="s3">7 万日元这个数字从哪里来</h2>
 <p>据 J-CAST 新闻报道，竹中的方案以经济学家原田泰的主张为基础。原田在 2015 年的著作《基本收入：国家能解决贫困问题吗》等中，提出给 20 岁以上的人每月 7 万日元、20 岁以下的人每月 3 万日元。报道写道，竹中似乎把它扩展为“平均 7 万日元左右”，并改成了累进的结构。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup><sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></p>
 <p>顺便一提，7 万日元和国民年金（老龄基础年金）的全额差不多。2026 财年的全额是每月 70,608 日元。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></p>
 <p>在政党方面，日本维新会在 2021 年 4 月的党大会上表示要把基本收入（最低所得保障）写进竞选纲领。当时最大的争议点同样是：给所有人发钱，每年需要 100 万亿日元左右的财源。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
-<h2>计算的前提</h2>
+<h2 id="s4">计算的前提</h2>
 <p>竹中没有给出详细设计，所以我们先把前提定清楚再算。</p>
 <p>金额为每人每月 7 万日元，孩子也一样（与节目展板一致）。四口之家另外列出孩子按原田方案每月 3 万日元的情况。</p>
 <p>养老金分三种情况。(A) 养老金不变，再加上基本收入。(B) 只用基本收入替换基础养老金，与收入挂钩的厚生年金部分予以保障。(C) 养老金全部由基本收入替换。</p>
@@ -1098,7 +1152,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>为筹资而增税或改变保险费的部分，因内容未公布，不计入。若有增税，每个家庭的结果都会相应下降。</p>
 <p>金额均为月额，按 2026 财年的制度计算。</p>
 <p>现行制度的数字取自官方资料。养老金：国民年金全额每月 70,608 日元；政府的“标准夫妇”（丈夫以平均收入工作 40 年，妻子是全职主妇）每月 237,279 日元，含两人的基础养老金。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> 生活保护：东京 23 区（1 级地-1）20–40 岁单身者的生活扶助为每月 77,220 日元（46,930 + 27,790 + 特例加算 2,500），用于房租的住宅扶助在东京单身上限为每月 53,700 日元，合计最多每月 130,920 日元；医疗费另由医疗扶助承担，本人无需负担。<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup><sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup> 儿童津贴：3 岁到高中阶段的第一、第二个孩子每人每月 1 万日元，自 2024 年 10 月起没有收入限制。<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup></p>
-<h2>算一算五个家庭</h2>
+<h2 id="s5">算一算五个家庭</h2>
 <p>1. 在东京独自生活的二十多岁上班族（年收入 300 万日元）。目前没有领取任何补贴，7 万日元全部是增加的。按竹中的说法，需要返还的是“收入高的人”，年收入 300 万日元不太可能算在内。所以每月领 7 万日元，一年 84 万日元。不过，若为筹资而增税，就要从中扣除。这个家庭的答案是：最多每月 7 万日元，增税多少就缩水多少。</p>
 <p>2. 夫妻加两个小学生的四口之家（年收入 500 万日元）。目前两个孩子的儿童津贴合计每月 2 万日元。若基本收入一律发放，四人每月 28 万日元，即使失去儿童津贴，也每月多出 26 万日元。若像竹中说的那样减少孩子的部分，按原田方案每月 3 万日元，基本收入为每月 20 万日元，净增每月 18 万日元。有孩子的家庭是这个方案中最容易获益的。这同样是增税之前的数字。</p>
 <p>3. 靠养老金生活的老年夫妇（丈夫曾是公司职员，妻子是全职主妇）。目前两人养老金合计每月 237,279 日元，其中两人的基础养老金为 141,216 日元，丈夫的厚生年金部分为 96,063 日元。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> 两人的基本收入是每月 14 万日元。结果完全取决于养老金怎么处理。(A) 叠加在养老金之上：每月 377,279 日元，多出 14 万日元。(B) 只替换基础养老金：14 万 + 96,063 = 236,063 日元，每月只少 1,216 日元，几乎不变。(C) 养老金全部替换：只剩每月 14 万日元，每月减少 97,279 日元。</p>
@@ -1107,15 +1161,15 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>书中的“取消生活保护的费用”是 (B)，采访中的“生活保护也可以作为补充保留”是 (A)。对这个家庭来说，到底是哪一种，决定了一切。</p>
 <p>5. 夫妻加两个孩子的四口之家（年收入 1000 万日元）。目前儿童津贴每月 2 万日元。四人的基本收入为每月 28 万日元，这里起作用的是“高收入者事后返还”。如果不用返还：即使失去儿童津贴，也每月多 26 万日元。如果全部返还：基本收入一分不剩，还因失去儿童津贴每月少 2 万日元。年收入 1000 万日元很可能属于返还的一方，为筹资的增税也会重重落在这一层。比较现实的看法是“大约为零到亏损”。</p>
 <p>汇总如下（月额，增税之前）：</p>
-<div class="essay-table"><table><thead><tr><th scope="col">家庭</th><th scope="col">现在的补贴</th><th scope="col">基本收入</th><th scope="col">净变化</th></tr></thead><tbody><tr><th scope="row">单身、二十多岁、年收入 300 万日元</th><td>无</td><td>7 万日元</td><td>+7 万日元（若增税则缩水）</td></tr><tr><th scope="row">四口之家、年收入 500 万日元</th><td>儿童津贴 2 万日元</td><td>20 万–28 万日元</td><td>+18 万至 +26 万日元</td></tr><tr><th scope="row">曾是公司职员的老年夫妇</th><td>养老金 237,279 日元</td><td>14 万日元</td><td>+14 万至 −97,279 日元（取决于养老金的处理）</td></tr><tr><th scope="row">领取生活保护的单身者（东京 23 区）</th><td>最多 130,920 日元</td><td>7 万日元</td><td>±0 至 −60,920 日元（取决于是否保留生活保护）</td></tr><tr><th scope="row">四口之家、年收入 1000 万日元</th><td>儿童津贴 2 万日元</td><td>28 万日元</td><td>+26 万至 −2 万日元（取决于返还）</td></tr></tbody></table></div>
+<div class="essay-table es-wide"><table><thead><tr><th scope="col">家庭</th><th scope="col">现在的补贴</th><th scope="col">基本收入</th><th scope="col">净变化</th></tr></thead><tbody><tr><th scope="row">单身、二十多岁、年收入 300 万日元</th><td>无</td><td>7 万日元</td><td>+7 万日元（若增税则缩水）</td></tr><tr><th scope="row">四口之家、年收入 500 万日元</th><td>儿童津贴 2 万日元</td><td>20 万–28 万日元</td><td>+18 万至 +26 万日元</td></tr><tr><th scope="row">曾是公司职员的老年夫妇</th><td>养老金 237,279 日元</td><td>14 万日元</td><td>+14 万至 −97,279 日元（取决于养老金的处理）</td></tr><tr><th scope="row">领取生活保护的单身者（东京 23 区）</th><td>最多 130,920 日元</td><td>7 万日元</td><td>±0 至 −60,920 日元（取决于是否保留生活保护）</td></tr><tr><th scope="row">四口之家、年收入 1000 万日元</th><td>儿童津贴 2 万日元</td><td>28 万日元</td><td>+26 万至 −2 万日元（取决于返还）</td></tr></tbody></table></div>
 <p>容易获益的是有孩子、目前补贴很少的家庭。可能吃亏的是依靠养老金或生活保护的人，以及需要返还或承担增税的高收入家庭。</p>
 <p class="op"><span class="op-tag">观点</span>“7 万日元活不下去”的批评，主要针对养老金或生活保护被取消的情况。而竹中“我没说过靠 7 万日元能生活”的解释，读起来是以保留部分其他制度为前提的。只要把前提对齐，两边的说法都可以用数字来检验。</p>
-<h2>全国要花多少钱</h2>
+<h2 id="s6">全国要花多少钱</h2>
 <p>看完家庭的钱包，再看国家的钱包。日本人口为 1 亿 2281 万 2000 人（总务省统计局，2026 年 5 月 1 日确定值）。<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup> 给所有人每月 7 万日元、发一年，就是 7 万 × 12 × 1 亿 2281 万 2000，约 103.2 万亿日元。</p>
 <p>2026 财年国家一般会计预算为 122.3092 万亿日元，其中社会保障相关费用为 39.0559 万亿日元。<sup class="fnref"><a href="#fn-12" id="ref-12">12</a></sup> 基本收入的总额约为整个一般会计的 84%，约为社会保障相关费用的 2.6 倍。</p>
 <p>竹中说要把养老金和生活保护的财源挪过来。<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup> 包括养老金和医疗在内、连同保险费在内的社会保障给付费总额为 144.1 万亿日元，其中养老金为 63.7 万亿日元。<sup class="fnref"><a href="#fn-13" id="ref-13">13</a></sup> 即使把养老金全部转给基本收入，离 103 万亿日元也还差约 40 万亿日元。</p>
 <p>要填补这个缺口，只能通过高收入者返还来减少基本收入的实际总额，或者增税。返还线划在哪里，所需财源和上表的结果都会随之变化。改变金额和对象后总额会怎样变化，可以用<a href="/zh/calc/?c=jp&amp;w=all&amp;m=70000">本站的基本收入计算器</a>试试：给所有人每月 7 万日元，约占 GDP 的 15.5%。</p>
-<h2>总结</h2>
+<h2 id="s7">总结</h2>
 <p>竹中的方案，是 2020 年 9 月电视节目中展示的“全体每月 7 万日元，高收入者事后返还”。他的书把它说成以废除养老金和生活保护为交换。</p>
 <p>他后来解释说，7 万日元是平均数，他从没说过靠它能生活，已缴的养老金会得到保障，生活保护也可以保留。在最关键的一点上，书和采访说法不一。</p>
 <p>对家庭的影响取决于设计。有孩子的家庭容易大幅获益；依靠养老金或生活保护的人，根据制度是否保留，结果从“几乎不变”到“每月少几万甚至近 10 万日元”不等。</p>
@@ -1123,13 +1177,13 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p class="op"><span class="op-tag">观点</span>评价一个基本收入方案时，除了金额，还应该看两个问题：拿什么来换？谁来返还？同样是“每月 7 万日元”，答案不同，就是完全不同的制度。</p>
 <p>2020 年，日本确实给所有人发过一次 10 万日元，即特别定额给付金。这笔钱是怎么用掉的，我们在<a href="/zh/essays/japan-special-cash-payment/">关于 10 万日元给付金的随笔</a>中用数据做了回顾。</p></div>
 <div class="shr shr-ch" id="share"><p class="shr-h">分享这篇文章</p><button class="btn sc shr-nat" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/zh/essays/takenaka-70000-yen-basic-income/?s=native" data-text="每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案 #基本收入" data-primary hidden><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 11v8.5c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V11"/></svg><span>分享</span></button><button class="btn sc sc-copy sc-1" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/zh/essays/takenaka-70000-yen-basic-income/?s=copy"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></svg><span>复制链接</span></button><a class="btn sc sc-x" href="https://x.com/intent/post?text=%E6%AF%8F%E4%BA%BA%E6%AF%8F%E6%9C%88%207%20%E4%B8%87%E6%97%A5%E5%85%83%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%EF%BC%8C%E6%88%91%E5%AE%B6%E6%98%AF%E8%B5%9A%E8%BF%98%E6%98%AF%E4%BA%8F%EF%BC%9F%E7%94%A8%E4%BA%94%E4%B8%AA%E5%AE%B6%E5%BA%AD%E7%AE%97%E4%B8%80%E7%AE%97%E7%AB%B9%E4%B8%AD%E5%B9%B3%E8%97%8F%E6%96%B9%E6%A1%88%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Ftakenaka-70000-yen-basic-income%2F%3Fs%3Dx%20%23%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5" target="_blank" rel="noopener" aria-label="分享到 X"><svg class="xicon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a><a class="btn sc sc-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Ftakenaka-70000-yen-basic-income%2F%3Fs%3Dtg&amp;text=%E6%AF%8F%E4%BA%BA%E6%AF%8F%E6%9C%88%207%20%E4%B8%87%E6%97%A5%E5%85%83%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%EF%BC%8C%E6%88%91%E5%AE%B6%E6%98%AF%E8%B5%9A%E8%BF%98%E6%98%AF%E4%BA%8F%EF%BC%9F%E7%94%A8%E4%BA%94%E4%B8%AA%E5%AE%B6%E5%BA%AD%E7%AE%97%E4%B8%80%E7%AE%97%E7%AB%B9%E4%B8%AD%E5%B9%B3%E8%97%8F%E6%96%B9%E6%A1%88" target="_blank" rel="noopener" aria-label="分享到 Telegram"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.6 4.2 18.5 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.4 13 1.7 11.5c-1-.3-1-1 .2-1.5L20.4 2.9c.8-.3 1.6.2 1.2 1.3z"/></svg><span>Telegram</span></a><a class="btn sc sc-wa" href="https://wa.me/?text=%E6%AF%8F%E4%BA%BA%E6%AF%8F%E6%9C%88%207%20%E4%B8%87%E6%97%A5%E5%85%83%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%EF%BC%8C%E6%88%91%E5%AE%B6%E6%98%AF%E8%B5%9A%E8%BF%98%E6%98%AF%E4%BA%8F%EF%BC%9F%E7%94%A8%E4%BA%94%E4%B8%AA%E5%AE%B6%E5%BA%AD%E7%AE%97%E4%B8%80%E7%AE%97%E7%AB%B9%E4%B8%AD%E5%B9%B3%E8%97%8F%E6%96%B9%E6%A1%88%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Ftakenaka-70000-yen-basic-income%2F%3Fs%3Dwa" target="_blank" rel="noopener" aria-label="分享到 WhatsApp"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3.6 20.4l1.2-4.1a8.6 8.6 0 1 1 3.1 3z"/><path fill="currentColor" d="M9.3 7.4c.3 0 .5.1.7.5l.7 1.6c.1.3 0 .5-.1.7l-.6.7a7 7 0 0 0 3 2.9l.7-.7c.2-.2.4-.2.6-.1l1.6.7c.4.2.5.4.5.7 0 .9-.8 1.9-1.9 1.9-3 0-6.5-3.5-6.5-6.5 0-1.1.8-2.4 1.3-2.4z"/></svg><span>WhatsApp</span></a></div>
-<p class="related">相关随笔: <a href="/zh/essays/japan-special-cash-payment/">那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金</a> · <a href="/zh/essays/thailand-digital-wallet/">被称为“基本收入”的东西：泰国的 1 万泰铢后来怎样了</a> · <a href="/zh/essays/refundable-tax-credit-vs-basic-income/">可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起</a></p>
-<p class="related g-rel">用计算器算一算: <a href="/zh/calc/jp/">日本</a> · <a href="/zh/calc/countries/">全部211个国家和地区对比</a> · <a href="/zh/calc/map/">世界地图：费用与税收之比</a></p>
+<section class="es-calc" aria-labelledby="es-calc-h"><a class="es-calc-map" href="/zh/calc/map/"><img src="/og/thumb/calc/zh/map.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span>世界地图：费用与税收之比 →</span></a><div class="es-calc-t"><h2 id="es-calc-h">用计算器算一算</h2><p><a href="/zh/calc/jp/">日本</a> · <a href="/zh/calc/countries/">全部211个国家和地区对比</a></p></div></section>
+<section class="es-rel" aria-labelledby="es-rel-h"><h2 id="es-rel-h">相关随笔</h2><ul><li><a class="es-card" href="/zh/essays/japan-special-cash-payment/"><img src="/og/thumb/essay/zh/japan-special-cash-payment.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金</b><span>2020 年，日本向几乎每位居民发放了 10 万日元。我们从银行账户和记账应用的数据，看花掉了多少、何时花掉、由谁花掉，最后再想一想为什么一次性的给付不是基本收入。</span></span></a></li><li><a class="es-card" href="/zh/essays/thailand-digital-wallet/"><img src="/og/thumb/essay/zh/thailand-digital-wallet.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>被称为“基本收入”的东西：泰国的 1 万泰铢后来怎样了</b><span>2024 年，泰国的“1 万泰铢数字钱包”在日本被当作基本收入介绍。我们对照当初的承诺和实际经过，用 BIEN 的五个条件检验，并与日本的人均 10 万日元，以及阿拉斯加、马绍尔群岛这类真正反复发放的例子比较。</span></span></a></li><li><a class="es-card" href="/zh/essays/refundable-tax-credit-vs-basic-income/"><img src="/og/thumb/essay/zh/refundable-tax-credit-vs-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起</b><span>作为“可退还税收抵免”第一步的日本就业者负担减轻支援金法案，于 2026 年 11 月在众议院通过。我们把它与美国的 EITC、儿童税收抵免以及英国、加拿大的做法放在一起，逐项看它与基本收入的异同。</span></span></a></li></ul></section>
 
 <div class="qzc"><div class="qzc-t"><p class="qzc-e">免费午餐测试</p><p class="qzc-q">你是哪一型？</p><p class="qzc-s">5 个问题，30 秒，无需注册</p></div><a class="btn solid" href="/zh/shindan/?s=essay-quiz">开始测试</a></div>
 <section class="fn"><h2>出处</h2><ol><li id="fn-1"><a href="https://www.j-cast.com/2020/10/10396316.html" target="_blank" rel="noopener" dir="auto">J-CAST News — “Let’s ask Heizo Takenaka about basic income again: ‘I never said you could live on ¥70,000 a month’” (interview, 10 Oct 2020, in Japanese)</a> <a class="fnback" href="#ref-1" aria-label="↩">↩</a></li><li id="fn-2"><a href="https://www.daily.co.jp/gossip/2020/10/07/0013762487.shtml" target="_blank" rel="noopener" dir="auto">Daily Sports — Genki Sudo criticises Heizo Takenaka’s ‘¥70,000 a month’: ‘Are you telling pensioners to starve?’ (7 Oct 2020, in Japanese)</a> <a class="fnback" href="#ref-2" aria-label="↩">↩</a></li><li id="fn-3"><a href="https://www.moneypost.jp/712411" target="_blank" rel="noopener" dir="auto">Money Post Web (Shūkan Post) — “If basic income is introduced, social security such as pensions, medical care and public assistance may be cut off” (10 Oct 2020, in Japanese)</a> <a class="fnback" href="#ref-3" aria-label="↩">↩</a></li><li id="fn-4"><a href="https://ndlsearch.ndl.go.jp/books/R100000002-I030519676" target="_blank" rel="noopener" dir="auto">National Diet Library Search — Heizo Takenaka, Post-corona ‘Plan to Remodel Japan’ (PHP Institute, Aug 2020; book record, in Japanese)</a> <a class="fnback" href="#ref-4" aria-label="↩">↩</a></li><li id="fn-5"><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784121023070" target="_blank" rel="noopener" dir="auto">Kinokuniya — Yutaka Harada, Basic Income: Can the State Solve Poverty? (Chūkō Shinsho, Feb 2015; book record, in Japanese)</a> <a class="fnback" href="#ref-5" aria-label="↩">↩</a></li><li id="fn-6"><a href="https://www.nenkin.go.jp/oshirase/taisetu/kojin/2026/202604/0401.html" target="_blank" rel="noopener" dir="auto">Japan Pension Service — Pension amounts from April 2026 (in Japanese)</a> <a class="fnback" href="#ref-6" aria-label="↩">↩</a></li><li id="fn-7"><a href="https://gendai.media/articles/-/95312" target="_blank" rel="noopener" dir="auto">Kenichi Ogura, Gendai Business — on the Japan Innovation Party’s basic income policy and its funding (17 May 2022, in Japanese)</a> <a class="fnback" href="#ref-7" aria-label="↩">↩</a></li><li id="fn-8"><a href="https://www.mhlw.go.jp/content/001152601.pdf" target="_blank" rel="noopener" dir="auto">Ministry of Health, Labour and Welfare — How public assistance living-cost standards are calculated (Oct 2026; PDF, in Japanese)</a> <a class="fnback" href="#ref-8" aria-label="↩">↩</a></li><li id="fn-9"><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/seikatuhogo/index.html" target="_blank" rel="noopener" dir="auto">Ministry of Health, Labour and Welfare — The public assistance system (in Japanese)</a> <a class="fnback" href="#ref-9" aria-label="↩">↩</a></li><li id="fn-10"><a href="https://www.pref.kagawa.lg.jp/kosodate/jidoteate/seidokaisei.html" target="_blank" rel="noopener" dir="auto">Kagawa Prefecture — The October 2024 child allowance reform (in Japanese)</a> <a class="fnback" href="#ref-10" aria-label="↩">↩</a></li><li id="fn-11"><a href="https://www.stat.go.jp/data/jinsui/pdf/202610.pdf" target="_blank" rel="noopener" dir="auto">Statistics Bureau of Japan — Population Estimates, October 2026 report (PDF, in Japanese)</a> <a class="fnback" href="#ref-11" aria-label="↩">↩</a></li><li id="fn-12"><a href="https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/20260220.html" target="_blank" rel="noopener" dir="auto">Ministry of Finance — Explanation of the FY2026 budget and FILP plan (in Japanese)</a> <a class="fnback" href="#ref-12" aria-label="↩">↩</a></li><li id="fn-13"><a href="https://www.mhlw.go.jp/content/12600000/001706348.pdf" target="_blank" rel="noopener" dir="auto">Ministry of Health, Labour and Welfare — Social security benefits and burdens, FY2026 budget basis (PDF, in Japanese)</a> <a class="fnback" href="#ref-13" aria-label="↩">↩</a></li></ol></section>
 </article>
-<p class="back"><a class="btn line" href="/zh/#list">← 返回服务列表</a></p>
+<aside class="es-toc"><nav aria-labelledby="es-toc-h"><p class="es-toc-h" id="es-toc-h">目录</p><ol><li><a href="#s1">竹中提出了什么</a></li><li><a href="#s2">舆论哗然，与本人的解释</a></li><li><a href="#s3">7 万日元这个数字从哪里来</a></li><li><a href="#s4">计算的前提</a></li><li><a href="#s5">算一算五个家庭</a></li><li><a href="#s6">全国要花多少钱</a></li><li><a href="#s7">总结</a></li></ol></nav></aside><p class="back es-back"><a class="btn line" href="/zh/essays/">← 返回随笔列表</a></p>
 </main>
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>信息截至 2026 年 10 月。不构成投资建议。</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: 数据在 GitHub 公开"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>数据在 GitHub 公开</span></a><a class="xlink" href="/zh/feed.xml" aria-label="RSS 订阅"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/zh/essays/">随笔</a><a href="/zh/news/">基本收入新闻</a><a href="/zh/shindan/">免费午餐测试</a><a href="/zh/calc/">基本收入计算器</a><a href="/zh/calc/countries/">211个国家和地区的费用</a><a href="/zh/badge/">徽章</a><span class="dot">Free Lunch Lab（免费午餐研究所）</span></div></footer>
@@ -1146,6 +1200,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
   });
 })();
-</script>
+</script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
+function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
 </body>
 </html>

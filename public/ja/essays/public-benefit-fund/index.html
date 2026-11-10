@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/essay/ja/public-benefit-fund.jpg">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"不労所得研究所","item":"https://neteru-nyukin.eltociear.workers.dev/ja/"},{"@type":"ListItem","position":2,"name":"エッセイ","item":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/"},{"@type":"ListItem","position":3,"name":"AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム","item":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/public-benefit-fund/"}]},{"@context":"https://schema.org","@type":"Article","headline":"AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム","description":"Anthropicは株式の5%を公益基金に充てると発表し、使い道に「特定の集団への直接の分配」を挙げました。約束されたことと未定のことを整理し、BIENの5つの条件、アラスカの配当、バスーの「ベーシック株」と比べます。","inLanguage":"ja","datePublished":"2026-11-03","dateModified":"2026-11-03","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/public-benefit-fund/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/ja/public-benefit-fund.jpg"}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"不労所得研究所","item":"https://neteru-nyukin.eltociear.workers.dev/ja/"},{"@type":"ListItem","position":2,"name":"エッセイ","item":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/"},{"@type":"ListItem","position":3,"name":"AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム","item":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/public-benefit-fund/"}]},{"@context":"https://schema.org","@type":"Article","headline":"AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム","description":"Anthropicは株式の5%を公益基金に充てると発表し、使い道に「特定の集団への直接の分配」を挙げました。約束されたことと未定のことを整理し、BIENの5つの条件、アラスカの配当、バスーの「ベーシック株」と比べます。","inLanguage":"ja","datePublished":"2026-11-03","dateModified":"2026-11-03","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/public-benefit-fund/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/ja/public-benefit-fund.jpg","timeRequired":"PT8M"}]</script>
 <link rel="preload" href="/fonts/zen-kaku-gothic-new-400-ja-96c06467ce.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/dela-gothic-one-400-ja-0954b9b8f8.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/zen-kaku-gothic-new-900-logo-2f843f4f31.woff2" as="font" type="font/woff2" crossorigin>
@@ -794,13 +794,28 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .verify-line a,.verify-line span{padding:2px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
-/* エッセイは1行およそ38字（日本語）まで */
-.essay{max-width:38rem;margin-inline:auto}
+/* エッセイの幅は文字数で決める（--cpl × 本文の文字の大きさ）。日本語・中国語は1行およそ44字、それ以外はおよそ72字（字の幅が違うので言語ごとに --cpl で合わせる）。
+   本文は 17px（スマホ）〜18px（PC）を rem で書くので、ブラウザの文字の大きさの設定に合わせて幅も広がる */
+.essay{--fs:clamp(1.0625rem,.95rem + .4vw,1.125rem);--cpl:35;--lh:1.7;--measure:calc(var(--cpl) * var(--fs));--bleed:clamp(0px,(100vw - 32px - var(--measure)) / 2,(900px - var(--measure)) / 2);max-width:var(--measure);margin-inline:auto}
+html[lang="ja"] .essay{--cpl:44;--lh:1.9}
+html[lang="zh-Hans"] .essay{--cpl:39;--lh:1.9}
+html[lang="hi"] .essay{--cpl:43;--lh:1.75}
+html[lang="ar"] .essay{--cpl:32;--lh:1.75}
+.es-main{min-width:0}
+.essay .orgs-head h1{text-wrap:balance}
+html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{word-break:auto-phrase}
 .byline{font-size:.84rem;color:var(--muted)}
-.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:12px}
-.essay-body p{font-size:1rem;line-height:1.95}
-.essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
+.es-read{white-space:nowrap}
+.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:1em;margin-top:12px;font-size:var(--fs);line-height:var(--lh)}
+.essay-body p{font-size:1em;line-height:var(--lh)}
+/* 節の切れ目をはっきり: 見出しの上は本文のおよそ2.5字ぶん、下は狭く */
+.essay-body h2,.essay-body h3{font-family:var(--f-body);font-weight:700;font-size:1.25em;line-height:1.45;margin:1.2em 0 -.3em;scroll-margin-top:calc(var(--bar-h,56px) + 20px)}
+.essay-body h3{font-size:1.1em;margin-top:.9em}
+.essay-body>h2:first-child{margin-top:0}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+/* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
+.essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
+.essay-body>.wmap.es-wide{margin-block:.5em 0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
 .essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
@@ -808,9 +823,48 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
-/* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
-.fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
-.fnref a::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+/* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
+.fnref{line-height:0}
+.fnref a{display:inline-block;min-width:24px;min-height:24px;padding:4px 5px;margin:-6px -5px;line-height:16px;text-align:center;text-decoration:none;font-weight:700;border-radius:6px}
+.fnref a:hover{background:var(--accent-soft)}
+/* 目次: スマホ・タブレットは本文の上で開け閉めする（見出しが4つ以上のとき）。1200px 以上は横に固定 */
+.es-toc-m{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.9rem}
+.es-toc-m summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;cursor:pointer;font-weight:700;list-style:none}
+.es-toc-m summary::-webkit-details-marker{display:none}
+.es-toc-m summary::after{content:"";width:6px;height:6px;margin-inline-start:auto;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.es-toc-m[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.es-toc-m ol,.es-toc ol{margin:0;padding:0 16px 12px;padding-inline-start:2.2em;display:grid;gap:2px;line-height:1.5}
+.es-toc-m a,.es-toc a{display:block;padding:6px 0;color:var(--ink);text-decoration:none}
+.es-toc-m a:hover,.es-toc a:hover{color:var(--accent)}
+.es-toc{display:none}
+/* 記事の終わり: 数字で確かめる（世界地図の小さな画像つき）と関連エッセイのカード */
+.es-calc{margin-top:28px;display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:16px;align-items:center;padding:16px;border-radius:14px;border:1px solid var(--line);border-inline-start:3px solid var(--accent);background:var(--surface)}
+.es-calc-map{display:grid;gap:6px;font-size:.8125rem;font-weight:700;text-decoration:none}
+.es-calc-map img,.es-card img{display:block;width:100%;height:auto;aspect-ratio:40/21;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:var(--paper)}
+.es-calc-map:hover img,.es-card:hover img{border-color:var(--accent)}
+.es-calc-t h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:6px}
+.es-calc-t p{font-weight:700;line-height:1.9}
+.es-rel{margin-top:28px;padding:0}
+.es-rel h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:10px}
+.es-rel ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.es-card{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:14px;align-items:start;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
+.es-card:hover{border-color:var(--accent)}
+.es-card-t{display:grid;gap:4px;min-width:0}
+.es-card-t b{color:var(--accent);line-height:1.5;text-decoration:underline;text-underline-offset:3px}
+.es-card-t span{font-size:.84rem;line-height:1.65;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:520px){.es-calc{grid-template-columns:1fr}.es-calc-map{max-width:15rem}.es-card{grid-template-columns:minmax(0,6.5rem) minmax(0,1fr);gap:12px;padding:10px}.es-card-t span{-webkit-line-clamp:3}}
+.es-back{max-width:none}
+/* 1200px 以上: 記事を真ん中に置いたまま、横の余白に目次を固定する（ar は左右が入れ替わる）。ページの幅 1080px より広く使う */
+@media (min-width:1200px){
+.essay.has-toc{--toc:12rem;--side:calc((min(100vw - 32px, 1320px) - var(--measure)) / 2);--bleed:clamp(0px,var(--side) - var(--toc) - 32px,(900px - var(--measure)) / 2);max-width:none;width:min(100vw - 32px,1320px);margin-inline:calc((100% - min(100vw - 32px, 1320px)) / 2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,var(--measure)) minmax(0,1fr);align-items:start}
+.essay.has-toc>.es-main,.essay.has-toc>.es-back{grid-column:2}
+.essay.has-toc .es-toc-m{display:none}
+.es-toc{display:block;grid-column:3;grid-row:1;justify-self:end;width:min(var(--toc),100%);position:sticky;top:calc(var(--bar-h,56px) + 28px);max-height:calc(100vh - var(--bar-h,56px) - 56px);overflow-y:auto;margin-top:24px;font-size:.84rem}
+.es-toc-h{font-weight:700;font-size:.8125rem;color:var(--muted);padding-inline-start:12px;margin-bottom:6px}
+.es-toc ol{padding:0;list-style:none;gap:0}
+.es-toc a{padding:6px 12px;border-inline-start:2px solid var(--line);color:var(--muted)}
+.es-toc a[aria-current]{color:var(--ink);border-inline-start-color:var(--gold);font-weight:700}
+}
 .fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 .fn h2{font-size:1rem;margin-bottom:8px}
 .fn ol{margin:0;padding-inline-start:22px;display:grid;gap:14px;font-size:.84rem;line-height:1.7;overflow-wrap:anywhere}
@@ -1058,22 +1112,22 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 </div>
 <div class="wrap">
 <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">不労所得研究所</a></li><li><a href="/ja/essays/">エッセイ</a></li><li aria-current="page">AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム</li></ol></nav>
-<main class="essay">
-<article>
-<header class="orgs-head"><p class="eyebrow">エッセイ</p><h1>AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム</h1><p class="byline">文：Free Lunch Lab · <time datetime="2026-11-03">公開 2026年11月3日</time></p>
+<main class="essay has-toc">
+<article class="es-main">
+<header class="orgs-head"><p class="eyebrow">エッセイ</p><h1>AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム</h1><p class="byline">文：Free Lunch Lab · <time datetime="2026-11-03">公開 2026年11月3日</time> · <span class="es-read">約8分で読めます</span></p>
 <div class="shr shr-top"><a class="btn shr-o" href="https://x.com/intent/post?text=AI%E4%BC%81%E6%A5%AD%E3%81%8C%E6%A0%AA%E3%82%92%E5%B7%AE%E3%81%97%E5%87%BA%E3%81%99%E3%81%A8%E3%81%8D%EF%BC%9AAnthropic%E3%81%AE%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E3%81%A8%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Fpublic-benefit-fund%2F%3Fs%3Dx%20%23%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>Xでシェア</span></a><a class="btn shr-o" href="https://b.hatena.ne.jp/entry/panel/?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Fpublic-benefit-fund%2F&amp;btitle=AI%E4%BC%81%E6%A5%AD%E3%81%8C%E6%A0%AA%E3%82%92%E5%B7%AE%E3%81%97%E5%87%BA%E3%81%99%E3%81%A8%E3%81%8D%EF%BC%9AAnthropic%E3%81%AE%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E3%81%A8%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0" target="_blank" rel="noopener" aria-label="はてなブックマークに追加">はてブ</a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/ja/essays/public-benefit-fund/?s=copy">リンクをコピー</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/ja/essays/public-benefit-fund/?s=native" data-text="AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム #ベーシックインカム" hidden>シェア</button></div></header>
-<div class="essay-body"><p>2026年10月18日、Anthropicは、自社の株式の一部を新しい「Anthropic公益基金（Anthropic Public Benefit Fund）」に充てると発表しました。株主の承認を条件に、まず株式の5%を拠出し、会社の価値があらかじめ決めた基準から50%増えるごとに、取締役会の判断で2%ずつ上乗せできます。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> CNBCは、その基準がまだ公表されていないこと、そして11月と報じられている新規株式公開（IPO）を前にした発表であることを伝えています。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
+<details class="es-toc-m"><summary>目次</summary><ol><li><a href="#s1">約束されたこと</a></li><li><a href="#s2">受け止められ方</a></li><li><a href="#s3">BIENの5つの条件で見ると</a></li><li><a href="#s4">このサイトにある先例</a></li><li><a href="#s5">持ち分の道：ベーシック株</a></li><li><a href="#s6">現金に反対する立場</a></li><li><a href="#s7">これから見ておきたいこと</a></li></ol></details><div class="essay-body"><p>2026年10月18日、Anthropicは、自社の株式の一部を新しい「Anthropic公益基金（Anthropic Public Benefit Fund）」に充てると発表しました。株主の承認を条件に、まず株式の5%を拠出し、会社の価値があらかじめ決めた基準から50%増えるごとに、取締役会の判断で2%ずつ上乗せできます。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> CNBCは、その基準がまだ公表されていないこと、そして11月と報じられている新規株式公開（IPO）を前にした発表であることを伝えています。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
 <p>使い道の例として、発表は「伝統的な非営利団体への大口の寄付、あるいは特定の集団への直接の分配」を挙げています。このサイトが取り上げる理由は、後半の言葉です。AIをつくる会社が、自分の価値の一部を人に直接渡すと言うと、ベーシックインカムに近く聞こえます。このエッセイでは、約束されたこと、まだ決まっていないこと、そしてベーシックインカムとの違いを整理します。</p>
-<h2>約束されたこと</h2>
+<h2 id="s1">約束されたこと</h2>
 <p>基金は、Anthropicが100%所有するLLC（合同会社）で、501(c)(3)のような慈善団体ではありません。Anthropicは、この形を選んだのは「さまざまな形の寄付の間で調整がきくようにするため」だと説明しています。LLCが持つAnthropicの株式は、米国でも国外でも、ロビー活動や政治献金には使わないとしています。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>最初に挙げられた課題は、AIが仕事に与える影響です。Anthropicは、AIが「多くの働き手を不安定にするおそれもある」と書き、この問題の研究と対策にすでに2億ドルを約束したうえで、「もっと大胆なやり方が必要になるかもしれない」としています。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>基金は、これまでの約束の上に重なります。共同創業者は自分の持ち株の80%を寄付すると約束しており、社員が株式の寄付を約束するとAnthropicが同じだけ上乗せする制度もあります。これらを合わせると、株式のおよそ20%が公益に充てられ、評価額の節目に応じてさらに増えうる、とAnthropicは説明しています。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>まだ決まっていないのは、基金の仕組みと統治（ガバナンス）、そして上乗せの条件になる評価額の節目です。Anthropicは「今後数か月のうちに」詳しく示すとしています。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p class="op"><span class="op-tag">意見</span>まずは評価すべき点から。株で約束すると、決まった額の寄付と違って、会社が大きくなるほど中身も大きくなります。AIが働き手を傷つけうることをはっきり書き、利益の一部をその問題に結びつけています。ロビー活動と政治献金に使わないという決まりは、こうした基金が持ち主のために使われてしまう、わかりやすい道の一つをふさいでいます。そして、未定の点を隠さず、自分から書いています。</p>
-<h2>受け止められ方</h2>
+<h2 id="s2">受け止められ方</h2>
 <p>反応は分かれました。IPOの助言をするリズ・バイヤーはCNBCに、この発表は「IPOの準備として欠かせない」もので「イメージの面でも得になる」と話しました。お金が学び直しや再就職の支援に使われれば好意的に受け止められるだろうとしつつ、「もちろん、AIが厳しい目を向けられている時期に評判を磨くためでもある」と付け加えています。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup> イーロン・マスクはXで「株を直接、一般の人々に渡すことを勧める」と返しました。デービッド・サックスは「それが公益にかなうかどうかは、これから見ることになる」と書いています。<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></p>
 <p class="op"><span class="op-tag">意見</span>どれももっともな問いで、基金はまだ答えられません。答えになるはずの部分、つまり誰がどんなルールで決めるのかが、まだ公表されていないからです。だからといって最悪を前提にする理由にはなりません。基金を何と呼ぶかは、統治の中身が出てから決めればいい、という理由になります。</p>
-<h2>BIENの5つの条件で見ると</h2>
+<h2 id="s3">BIENの5つの条件で見ると</h2>
 <p>ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に届けられる、定期的な現金給付」と定義し、定期的、現金、個人、普遍的、無条件の5つの性質を挙げています。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> <a href="/ja/essays/thailand-digital-wallet/">タイの1万バーツのエッセイ</a>で使ったのと同じものさしです。基金はまだ何も払っていないので、確かめられるのは書かれた考え、「特定の集団への直接の分配」だけです。</p>
 <p>定期的か。不明です。分配がくり返されるかどうかは書かれていません。</p>
 <p>現金か。不明です。「直接の分配」は現金かもしれませんし、株やほかのものかもしれません。形は示されていません。</p>
@@ -1081,30 +1135,30 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>普遍的か。書かれた範囲では、いいえ。「特定の集団」とは、誰かが選ぶ集団のことで、全員ではありません。</p>
 <p>無条件か。不明です。選ばれた集団に属すること自体が一つの条件で、ほかのルールはまだ公表されていません。</p>
 <p class="op"><span class="op-tag">意見</span>書かれたとおりなら、これはベーシックインカムよりも、対象を絞った慈善活動に近いものです。お金を出す側が集団を選び、そこに渡す。これは批判ではありません。対象を絞った支援は、大きな助けになりえます。ただ、決まった集団の全員に、定期的に、条件なしで払う日が来ないかぎり、ベーシックインカムではありません。その本来の姿のまま評価するほうが公平でしょう。</p>
-<h2>このサイトにある先例</h2>
+<h2 id="s4">このサイトにある先例</h2>
 <p><a href="/ja/timeline/#tl-alaska">アラスカ州</a>は1982年から、条件を満たす住民に永久基金から毎年配当を払っています。この基金は、州の石油と鉱物の富を、なくならない金融資産として残すためのものです。最初の配当は1人1,000ドルでした。<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> 基金は州を通じて住民のものであり、ルールは法律に書かれ、条件を満たす人は全員が同じ額を受け取ります。</p>
 <p><a href="/ja/timeline/#tl-ai-dividend">AI Dividend</a>は2026年3月から、AIで仕事や収入に影響を受けた25〜50人のグループに、条件なしで月1,000ドルを1年間払っています。最初の資金は30万ドルで、2026年中に300万ドルを配るのが目標です。運営側はAI企業に協力を求めるつもりで、「Anthropicのような企業」とも話を始めたと伝えられています。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> 特定の集団への直接の分配を小さな規模でやると、こうなります。本物の現金、選ばれた集団、決まった期間です。</p>
 <p class="op"><span class="op-tag">意見</span>アラスカは、全員に払う基金に何が要るかを教えてくれます。公共の持ち物であることと、毎年だれかが決め直さなくていいルールです。AI Dividendは、対象を絞った現金給付の姿を見せてくれます。Anthropicの基金は、どちらにも、どちらでもないものにもなりえます。<a href="/ja/essays/universal-high-income/">ユニバーサルハイインカムのエッセイ</a>で、私たちは「誰が払うのか」と問いました。ここでは払う人が現れました。だから問いは次へ進みます。誰が決めるのか、です。</p>
-<h2>持ち分の道：ベーシック株</h2>
+<h2 id="s5">持ち分の道：ベーシック株</h2>
 <p>マスクの返答は、別の道を指しています。お金を配る基金ではなく、株そのものを人に渡す道です。1週間後、ムンバイで、世界銀行の元チーフエコノミストで経済学者のカウシック・バスーが、これに近い議論をしました。AIは「今後5〜10年のうちに、人間の労働への需要を大きく減らしうる」と警告し、各国政府は「ユニバーサル・ベーシック株（universal basic shares）」を考えなければならないかもしれない、と述べています。1回きりのお金ではなく、「生産的な資産と自動化された企業が生む富への、続いていく持ち分」です。そのために、「超富裕層から株の一部を取り、人々に広く分ける」こと、そして「賢い課税と再分配のしくみ」が要る、としています。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
 <p class="op"><span class="op-tag">意見</span>持ち分の道と現金の道は、別の心配に答えています。現金は今月の家賃を払えます。株は将来の利益への取り分と、議決権がついていれば発言権をくれます。でも価値は市場しだいで動き、悪い月に売らざるをえない人は安く売ることになります。<a href="/ja/essays/use-to-own/">KABU&amp;のエッセイ</a>では、権利の少ない株だと、その取り分がどれほど薄くなりうるかを見ました。アラスカのように、全員が持つ富から配当を払うのは、二つを組み合わせる一つの方法です。</p>
-<h2>現金に反対する立場</h2>
+<h2 id="s6">現金に反対する立場</h2>
 <p>AIへの答えが現金だと考える人ばかりではありません。国際労働機関（ILO）が2026年5月に出した研究ブリーフで、トゥバ・オザイとエクハルト・エルンストは、AIは職業そのものを消すよりも仕事の中身（タスク）を変えるのだと論じています。そして全員への給付は、住宅や医療のように供給がすぐには増えない分野にお金を流し込み、そこの値段を押し上げると指摘します。二人が勧めるのは、学び直し、積極的な労働市場政策、住宅の供給を増やすこと、AIが生む超過利潤（レント）への課税、そして働く意欲を保つ形の普遍的な社会保護、たとえば給付付き勤労税額控除です。<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></p>
 <p class="op"><span class="op-tag">意見</span>ここはベーシックインカムのサイトですが、この議論は公平に聞くべきものです。それに、全員への給付よりも「特定の集団」に向けた基金のほうに、よく当てはまります。どちらの立場でも、AIへの移行のためのお金は、小切手に書かれた数字ではなく、それで何が買えるかで評価されることになるでしょう。</p>
-<h2>これから見ておきたいこと</h2>
+<h2 id="s7">これから見ておきたいこと</h2>
 <p class="op"><span class="op-tag">意見</span>統治。仕組みが公表されたら、誰が基金を動かすのか、Anthropicからどれだけ独立しているのか、ルールは公開されるのか。</p>
 <p class="op">受け取る人を誰が決めるか。一件ずつ選ぶのか、誰でも確かめられる公開のルールで決まるのか。</p>
 <p class="op">全員に、くり返し払われるか。選んだ集団への1回きりの助成なら慈善活動です。決まった集団の全員への定期的な支払いなら、配当への第一歩になります。</p>
 <p class="op">数字。株主の承認、まだ公表されていない基準、そして約束した額ではなく、毎年実際に払われた額。</p>
 <p class="op">それまでは、この基金は設計の途中にある約束です。このサイトがあらゆるタダ飯を見るのと同じように見てください。誰が払うのか。ここはわかっています。誰が決め、誰が受け取るのか。それはまだです。</p></div>
 <div class="shr shr-ch" id="share"><p class="shr-h">この記事をシェアする</p><button class="btn sc shr-nat" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/ja/essays/public-benefit-fund/?s=native" data-text="AI企業が株を差し出すとき：Anthropicの公益基金とベーシックインカム #ベーシックインカム" data-primary hidden><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 11v8.5c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V11"/></svg><span>シェア</span></button><a class="btn sc sc-line sc-1" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Fpublic-benefit-fund%2F%3Fs%3Dline" target="_blank" rel="noopener"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.8c-5.5 0-10 3.6-10 8.1 0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.8c0 .3-.2 1 .9.5s5.9-3.5 8-5.9c1.4-1.6 1.9-3.2 1.9-4.9 0-4.5-4.5-8.1-10-8.1zM7.6 13.4H5.7a.5.5 0 0 1-.5-.5V9.1a.5.5 0 0 1 1 0v3.3h1.4a.5.5 0 0 1 0 1zm2-.5a.5.5 0 0 1-1 0V9.1a.5.5 0 0 1 1 0zm4.6 0a.5.5 0 0 1-.9.3l-2-2.6v2.3a.5.5 0 0 1-1 0V9.1a.5.5 0 0 1 .9-.3l2 2.6V9.1a.5.5 0 0 1 1 0zm3.1-2.4a.5.5 0 0 1 0 1h-1.4v.9h1.4a.5.5 0 0 1 0 1h-1.9a.5.5 0 0 1-.5-.5V9.1c0-.3.2-.5.5-.5h1.9a.5.5 0 0 1 0 1h-1.4v.9z"/></svg><span class="sc-long">LINEでシェア</span><span class="sc-short">LINE</span></a><a class="btn sc sc-x" href="https://x.com/intent/post?text=AI%E4%BC%81%E6%A5%AD%E3%81%8C%E6%A0%AA%E3%82%92%E5%B7%AE%E3%81%97%E5%87%BA%E3%81%99%E3%81%A8%E3%81%8D%EF%BC%9AAnthropic%E3%81%AE%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E3%81%A8%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Fpublic-benefit-fund%2F%3Fs%3Dx%20%23%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0" target="_blank" rel="noopener" aria-label="Xでシェア"><svg class="xicon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a><a class="btn sc sc-wa" href="https://wa.me/?text=AI%E4%BC%81%E6%A5%AD%E3%81%8C%E6%A0%AA%E3%82%92%E5%B7%AE%E3%81%97%E5%87%BA%E3%81%99%E3%81%A8%E3%81%8D%EF%BC%9AAnthropic%E3%81%AE%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E3%81%A8%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Fpublic-benefit-fund%2F%3Fs%3Dwa" target="_blank" rel="noopener" aria-label="WhatsAppでシェア"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3.6 20.4l1.2-4.1a8.6 8.6 0 1 1 3.1 3z"/><path fill="currentColor" d="M9.3 7.4c.3 0 .5.1.7.5l.7 1.6c.1.3 0 .5-.1.7l-.6.7a7 7 0 0 0 3 2.9l.7-.7c.2-.2.4-.2.6-.1l1.6.7c.4.2.5.4.5.7 0 .9-.8 1.9-1.9 1.9-3 0-6.5-3.5-6.5-6.5 0-1.1.8-2.4 1.3-2.4z"/></svg><span>WhatsApp</span></a><a class="btn sc sc-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Fpublic-benefit-fund%2F%3Fs%3Dtg&amp;text=AI%E4%BC%81%E6%A5%AD%E3%81%8C%E6%A0%AA%E3%82%92%E5%B7%AE%E3%81%97%E5%87%BA%E3%81%99%E3%81%A8%E3%81%8D%EF%BC%9AAnthropic%E3%81%AE%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E3%81%A8%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0" target="_blank" rel="noopener" aria-label="Telegramでシェア"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.6 4.2 18.5 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.4 13 1.7 11.5c-1-.3-1-1 .2-1.5L20.4 2.9c.8-.3 1.6.2 1.2 1.3z"/></svg><span>Telegram</span></a><button class="btn sc sc-copy" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/ja/essays/public-benefit-fund/?s=copy"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></svg><span>リンクをコピー</span></button></div>
-<p class="related">関連エッセイ: <a href="/ja/essays/universal-high-income/">ユニバーサルハイインカムは来るのか：誰が払う？</a> · <a href="/ja/essays/use-to-own/">使えば株主：ロッチデールからエアドロップ、そしてカブアンドへ</a> · <a href="/ja/essays/ai-agent-basic-income/">AIエージェントにベーシックインカムは必要か</a> · <a href="/ja/essays/openresearch-cash-study/">サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか</a> · <a href="/ja/essays/generative-ai-jobs-basic-income/">生成AIは仕事を奪ったのか：データでわかったことと、ベーシックインカムにできること（前編・雇用）</a></p>
-<p class="related g-rel">BI計算機で数字を確かめる: <a href="/ja/calc/">BI計算機</a> · <a href="/ja/calc/countries/">全211の国・地域をくらべる</a> · <a href="/ja/calc/map/">世界地図：税収とくらべた費用</a></p>
+<section class="es-calc" aria-labelledby="es-calc-h"><a class="es-calc-map" href="/ja/calc/map/"><img src="/og/thumb/calc/ja/map.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span>世界地図：税収とくらべた費用 →</span></a><div class="es-calc-t"><h2 id="es-calc-h">BI計算機で数字を確かめる</h2><p><a href="/ja/calc/">BI計算機</a> · <a href="/ja/calc/countries/">全211の国・地域をくらべる</a></p></div></section>
+<section class="es-rel" aria-labelledby="es-rel-h"><h2 id="es-rel-h">関連エッセイ</h2><ul><li><a class="es-card" href="/ja/essays/universal-high-income/"><img src="/og/thumb/essay/ja/universal-high-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>ユニバーサルハイインカムは来るのか：誰が払う？</b><span>イーロン・マスクは、AIとロボットで「ユニバーサルハイインカム」の時代が来ると言う。では誰が払うのか。アルトマンの株式基金、ウィンドフォール条項、アラスカの配当、そして World・GoodDollar・Circles・Ğ1 の答え方から…</span></span></a></li><li><a class="es-card" href="/ja/essays/use-to-own/"><img src="/og/thumb/essay/ja/use-to-own.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>使えば株主：ロッチデールからエアドロップ、そしてカブアンドへ</b><span>KABU&amp;（カブアンド）は、電気代やスマホ代を払うと株をくれます。「使えば持ち主になれる」という考えは、1844年のロッチデールの利用高配当や、2020年の Uniswap のエアドロップにさかのぼります。</span></span></a></li><li><a class="es-card" href="/ja/essays/ai-agent-basic-income/"><img src="/og/thumb/essay/ja/ai-agent-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>AIエージェントにベーシックインカムは必要か</b><span>AIに仕事を奪われる（ギュられる）時代に、AIエージェントへのベーシックインカムは成り立つのか。人間証明、コピーできるエージェント、AgentKit や Self Agent ID、Olas、AI-DAC から考えるエッセイ。</span></span></a></li><li><a class="es-card" href="/ja/essays/openresearch-cash-study/"><img src="/og/thumb/essay/ja/openresearch-cash-study.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか</b><span>1,000人が3年間、月1,000ドルを無条件で受け取りました。働く時間は少し減り、お金の多くは食費や家賃に使われ、時間を買い戻した人もいました。サム・アルトマンが支援した研究の論文からわかったことと、わからないことを整理します。</span></span></a></li><li><a class="es-card" href="/ja/essays/generative-ai-jobs-basic-income/"><img src="/og/thumb/essay/ja/generative-ai-jobs-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>生成AIは仕事を奪ったのか：データでわかったことと、ベーシックインカムにできること（前編・雇用）</b><span>米国では2026年、12万人分を超える削減でAIが理由に挙げられました。でも雇用全体にまだ跡はなく、狭まっているのは入口です。</span></span></a></li></ul></section>
 
 <div class="qzc"><div class="qzc-t"><p class="qzc-e">タダ飯診断</p><p class="qzc-q">あなたは何型？</p><p class="qzc-s">5問・30秒・登録不要</p></div><a class="btn solid" href="/ja/shindan/?s=essay-quiz">診断する</a></div>
 <section class="fn"><h2>出典</h2><ol><li id="fn-1"><a href="https://www.anthropic.com/news/public-benefit-fund" target="_blank" rel="noopener" dir="auto">Anthropic — Investing in the public benefit (18 Oct 2026)</a> <a class="fnback" href="#ref-1" aria-label="↩">↩</a></li><li id="fn-2"><a href="https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html" target="_blank" rel="noopener" dir="auto">CNBC — Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption (18 Oct 2026)</a> <a class="fnback" href="#ref-2" aria-label="↩">↩</a></li><li id="fn-3"><a href="https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-musk-wants-ai-032242549.html" target="_blank" rel="noopener" dir="auto">Stocktwits via Yahoo Finance — Anthropic IPO: Musk wants AI firm to hand shares directly to public (19 Oct 2026)</a> <a class="fnback" href="#ref-3" aria-label="↩">↩</a></li><li id="fn-4"><a href="https://basicincome.org/about-basic-income/" target="_blank" rel="noopener" dir="auto">Basic Income Earth Network (BIEN) — About Basic Income</a> <a class="fnback" href="#ref-4" aria-label="↩">↩</a></li><li id="fn-5"><a href="https://pfd.alaska.gov/Division-Info/Historical-Timeline" target="_blank" rel="noopener" dir="auto">Alaska Permanent Fund Dividend Division — Historical Timeline; Alaska Permanent Fund Corporation</a> · <a href="https://apfc.org/who-we-are/" target="_blank" rel="noopener" dir="ltr">apfc.org</a> <a class="fnback" href="#ref-5" aria-label="↩">↩</a></li><li id="fn-6"><a href="https://www.bloodinthemachine.com/p/the-first-basic-income-for-workers" target="_blank" rel="noopener" dir="auto">Blood in the Machine — The first basic income for workers hit by AI (24 Mar 2026)</a> <a class="fnback" href="#ref-6" aria-label="↩">↩</a></li><li id="fn-7"><a href="https://www.theweek.in/news/biz-tech/2026/10/26/ai-could-wipe-out-demand-for-labour-in-5-10-years-warns-economist-kaushik-basu.html" target="_blank" rel="noopener" dir="auto">The Week — AI could wipe out demand for labour in 5-10 years, warns economist Kaushik Basu (26 Oct 2026)</a> <a class="fnback" href="#ref-7" aria-label="↩">↩</a></li><li id="fn-8"><a href="https://www.ilo.org/publications/why-universal-basic-income-not-answer-impact-ai-labour-market" target="_blank" rel="noopener" dir="auto">ILO — Why UBI is not the answer to the impact of AI on the labour market (Özay and Ernst, research brief, May 2026)</a> · <a href="https://doi.org/10.54394/00034454" target="_blank" rel="noopener" dir="ltr">doi.org</a> <a class="fnback" href="#ref-8" aria-label="↩">↩</a></li></ol></section>
 </article>
-<p class="back"><a class="btn line" href="/ja/#list">← サービス一覧に戻る</a></p>
+<aside class="es-toc"><nav aria-labelledby="es-toc-h"><p class="es-toc-h" id="es-toc-h">目次</p><ol><li><a href="#s1">約束されたこと</a></li><li><a href="#s2">受け止められ方</a></li><li><a href="#s3">BIENの5つの条件で見ると</a></li><li><a href="#s4">このサイトにある先例</a></li><li><a href="#s5">持ち分の道：ベーシック株</a></li><li><a href="#s6">現金に反対する立場</a></li><li><a href="#s7">これから見ておきたいこと</a></li></ol></nav></aside><p class="back es-back"><a class="btn line" href="/ja/essays/">← エッセイ一覧に戻る</a></p>
 </main>
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>2026年10月時点の情報です。投資を勧めるものではありません。</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: GitHubでデータ公開中"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHubでデータ公開中</span></a><a class="xlink" href="/ja/feed.xml" aria-label="RSSフィード"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/ja/essays/">エッセイ</a><a href="/ja/news/">ベーシックインカム・ニュース</a><a href="/ja/shindan/">タダ飯診断</a><a href="/ja/calc/">BI計算機</a><a href="/ja/calc/countries/">211の国・地域のBI費用</a><a href="/ja/badge/">バッジ</a><span class="dot">不労所得研究所</span></div></footer>
@@ -1121,6 +1175,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
   });
 })();
-</script>
+</script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
+function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
 </body>
 </html>

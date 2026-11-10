@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/essay/ja/takenaka-70000-yen-basic-income.jpg">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"不労所得研究所","item":"https://neteru-nyukin.eltociear.workers.dev/ja/"},{"@type":"ListItem","position":2,"name":"エッセイ","item":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/"},{"@type":"ListItem","position":3,"name":"月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する","item":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/takenaka-70000-yen-basic-income/"}]},{"@context":"https://schema.org","@type":"Article","headline":"月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する","description":"2020年に話題になった竹中平蔵氏の「全員に月7万円」。年金と生活保護をどう扱うか、高所得者が返すかで結果は大きく変わります。前提を決めて5つの家計で計算し、国全体の費用も確かめました。","inLanguage":"ja","datePublished":"2026-11-06","dateModified":"2026-11-06","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/takenaka-70000-yen-basic-income/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/ja/takenaka-70000-yen-basic-income.jpg"}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"不労所得研究所","item":"https://neteru-nyukin.eltociear.workers.dev/ja/"},{"@type":"ListItem","position":2,"name":"エッセイ","item":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/"},{"@type":"ListItem","position":3,"name":"月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する","item":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/takenaka-70000-yen-basic-income/"}]},{"@context":"https://schema.org","@type":"Article","headline":"月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する","description":"2020年に話題になった竹中平蔵氏の「全員に月7万円」。年金と生活保護をどう扱うか、高所得者が返すかで結果は大きく変わります。前提を決めて5つの家計で計算し、国全体の費用も確かめました。","inLanguage":"ja","datePublished":"2026-11-06","dateModified":"2026-11-06","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/ja/essays/takenaka-70000-yen-basic-income/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/ja/takenaka-70000-yen-basic-income.jpg","timeRequired":"PT10M"}]</script>
 <link rel="preload" href="/fonts/zen-kaku-gothic-new-400-ja-96c06467ce.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/dela-gothic-one-400-ja-0954b9b8f8.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/zen-kaku-gothic-new-900-logo-2f843f4f31.woff2" as="font" type="font/woff2" crossorigin>
@@ -794,13 +794,28 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .verify-line a,.verify-line span{padding:2px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
-/* エッセイは1行およそ38字（日本語）まで */
-.essay{max-width:38rem;margin-inline:auto}
+/* エッセイの幅は文字数で決める（--cpl × 本文の文字の大きさ）。日本語・中国語は1行およそ44字、それ以外はおよそ72字（字の幅が違うので言語ごとに --cpl で合わせる）。
+   本文は 17px（スマホ）〜18px（PC）を rem で書くので、ブラウザの文字の大きさの設定に合わせて幅も広がる */
+.essay{--fs:clamp(1.0625rem,.95rem + .4vw,1.125rem);--cpl:35;--lh:1.7;--measure:calc(var(--cpl) * var(--fs));--bleed:clamp(0px,(100vw - 32px - var(--measure)) / 2,(900px - var(--measure)) / 2);max-width:var(--measure);margin-inline:auto}
+html[lang="ja"] .essay{--cpl:44;--lh:1.9}
+html[lang="zh-Hans"] .essay{--cpl:39;--lh:1.9}
+html[lang="hi"] .essay{--cpl:43;--lh:1.75}
+html[lang="ar"] .essay{--cpl:32;--lh:1.75}
+.es-main{min-width:0}
+.essay .orgs-head h1{text-wrap:balance}
+html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{word-break:auto-phrase}
 .byline{font-size:.84rem;color:var(--muted)}
-.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:12px}
-.essay-body p{font-size:1rem;line-height:1.95}
-.essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
+.es-read{white-space:nowrap}
+.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:1em;margin-top:12px;font-size:var(--fs);line-height:var(--lh)}
+.essay-body p{font-size:1em;line-height:var(--lh)}
+/* 節の切れ目をはっきり: 見出しの上は本文のおよそ2.5字ぶん、下は狭く */
+.essay-body h2,.essay-body h3{font-family:var(--f-body);font-weight:700;font-size:1.25em;line-height:1.45;margin:1.2em 0 -.3em;scroll-margin-top:calc(var(--bar-h,56px) + 20px)}
+.essay-body h3{font-size:1.1em;margin-top:.9em}
+.essay-body>h2:first-child{margin-top:0}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+/* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
+.essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
+.essay-body>.wmap.es-wide{margin-block:.5em 0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
 .essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
@@ -808,9 +823,48 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
-/* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
-.fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
-.fnref a::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+/* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
+.fnref{line-height:0}
+.fnref a{display:inline-block;min-width:24px;min-height:24px;padding:4px 5px;margin:-6px -5px;line-height:16px;text-align:center;text-decoration:none;font-weight:700;border-radius:6px}
+.fnref a:hover{background:var(--accent-soft)}
+/* 目次: スマホ・タブレットは本文の上で開け閉めする（見出しが4つ以上のとき）。1200px 以上は横に固定 */
+.es-toc-m{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.9rem}
+.es-toc-m summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;cursor:pointer;font-weight:700;list-style:none}
+.es-toc-m summary::-webkit-details-marker{display:none}
+.es-toc-m summary::after{content:"";width:6px;height:6px;margin-inline-start:auto;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.es-toc-m[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.es-toc-m ol,.es-toc ol{margin:0;padding:0 16px 12px;padding-inline-start:2.2em;display:grid;gap:2px;line-height:1.5}
+.es-toc-m a,.es-toc a{display:block;padding:6px 0;color:var(--ink);text-decoration:none}
+.es-toc-m a:hover,.es-toc a:hover{color:var(--accent)}
+.es-toc{display:none}
+/* 記事の終わり: 数字で確かめる（世界地図の小さな画像つき）と関連エッセイのカード */
+.es-calc{margin-top:28px;display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:16px;align-items:center;padding:16px;border-radius:14px;border:1px solid var(--line);border-inline-start:3px solid var(--accent);background:var(--surface)}
+.es-calc-map{display:grid;gap:6px;font-size:.8125rem;font-weight:700;text-decoration:none}
+.es-calc-map img,.es-card img{display:block;width:100%;height:auto;aspect-ratio:40/21;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:var(--paper)}
+.es-calc-map:hover img,.es-card:hover img{border-color:var(--accent)}
+.es-calc-t h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:6px}
+.es-calc-t p{font-weight:700;line-height:1.9}
+.es-rel{margin-top:28px;padding:0}
+.es-rel h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:10px}
+.es-rel ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.es-card{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:14px;align-items:start;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
+.es-card:hover{border-color:var(--accent)}
+.es-card-t{display:grid;gap:4px;min-width:0}
+.es-card-t b{color:var(--accent);line-height:1.5;text-decoration:underline;text-underline-offset:3px}
+.es-card-t span{font-size:.84rem;line-height:1.65;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:520px){.es-calc{grid-template-columns:1fr}.es-calc-map{max-width:15rem}.es-card{grid-template-columns:minmax(0,6.5rem) minmax(0,1fr);gap:12px;padding:10px}.es-card-t span{-webkit-line-clamp:3}}
+.es-back{max-width:none}
+/* 1200px 以上: 記事を真ん中に置いたまま、横の余白に目次を固定する（ar は左右が入れ替わる）。ページの幅 1080px より広く使う */
+@media (min-width:1200px){
+.essay.has-toc{--toc:12rem;--side:calc((min(100vw - 32px, 1320px) - var(--measure)) / 2);--bleed:clamp(0px,var(--side) - var(--toc) - 32px,(900px - var(--measure)) / 2);max-width:none;width:min(100vw - 32px,1320px);margin-inline:calc((100% - min(100vw - 32px, 1320px)) / 2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,var(--measure)) minmax(0,1fr);align-items:start}
+.essay.has-toc>.es-main,.essay.has-toc>.es-back{grid-column:2}
+.essay.has-toc .es-toc-m{display:none}
+.es-toc{display:block;grid-column:3;grid-row:1;justify-self:end;width:min(var(--toc),100%);position:sticky;top:calc(var(--bar-h,56px) + 28px);max-height:calc(100vh - var(--bar-h,56px) - 56px);overflow-y:auto;margin-top:24px;font-size:.84rem}
+.es-toc-h{font-weight:700;font-size:.8125rem;color:var(--muted);padding-inline-start:12px;margin-bottom:6px}
+.es-toc ol{padding:0;list-style:none;gap:0}
+.es-toc a{padding:6px 12px;border-inline-start:2px solid var(--line);color:var(--muted)}
+.es-toc a[aria-current]{color:var(--ink);border-inline-start-color:var(--gold);font-weight:700}
+}
 .fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 .fn h2{font-size:1rem;margin-bottom:8px}
 .fn ol{margin:0;padding-inline-start:22px;display:grid;gap:14px;font-size:.84rem;line-height:1.7;overflow-wrap:anywhere}
@@ -1058,18 +1112,18 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 </div>
 <div class="wrap">
 <nav class="crumbs" aria-label="パンくずリスト"><ol><li><a href="/ja/">不労所得研究所</a></li><li><a href="/ja/essays/">エッセイ</a></li><li aria-current="page">月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する</li></ol></nav>
-<main class="essay">
-<article>
-<header class="orgs-head"><p class="eyebrow">エッセイ</p><h1>月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する</h1><p class="byline">文：Free Lunch Lab · <time datetime="2026-11-06">公開 2026年11月6日</time></p>
+<main class="essay has-toc">
+<article class="es-main">
+<header class="orgs-head"><p class="eyebrow">エッセイ</p><h1>月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する</h1><p class="byline">文：Free Lunch Lab · <time datetime="2026-11-06">公開 2026年11月6日</time> · <span class="es-read">約10分で読めます</span></p>
 <div class="shr shr-top"><a class="btn shr-o" href="https://x.com/intent/post?text=%E6%9C%887%E4%B8%87%E5%86%86%E3%81%AE%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0%E3%80%81%E3%82%8F%E3%81%8C%E5%AE%B6%E3%81%AF%E5%BE%97%E3%81%99%E3%82%8B%EF%BC%9F%E6%90%8D%E3%81%99%E3%82%8B%EF%BC%9F%EF%BC%9A%E7%AB%B9%E4%B8%AD%E5%B9%B3%E8%94%B5%E6%A1%88%E3%82%925%E3%81%A4%E3%81%AE%E5%AE%B6%E8%A8%88%E3%81%A7%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Ftakenaka-70000-yen-basic-income%2F%3Fs%3Dx%20%23%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>Xでシェア</span></a><a class="btn shr-o" href="https://b.hatena.ne.jp/entry/panel/?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Ftakenaka-70000-yen-basic-income%2F&amp;btitle=%E6%9C%887%E4%B8%87%E5%86%86%E3%81%AE%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0%E3%80%81%E3%82%8F%E3%81%8C%E5%AE%B6%E3%81%AF%E5%BE%97%E3%81%99%E3%82%8B%EF%BC%9F%E6%90%8D%E3%81%99%E3%82%8B%EF%BC%9F%EF%BC%9A%E7%AB%B9%E4%B8%AD%E5%B9%B3%E8%94%B5%E6%A1%88%E3%82%925%E3%81%A4%E3%81%AE%E5%AE%B6%E8%A8%88%E3%81%A7%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B" target="_blank" rel="noopener" aria-label="はてなブックマークに追加">はてブ</a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/ja/essays/takenaka-70000-yen-basic-income/?s=copy">リンクをコピー</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/ja/essays/takenaka-70000-yen-basic-income/?s=native" data-text="月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する #ベーシックインカム" hidden>シェア</button></div></header>
-<div class="essay-body"><p>「全員に毎月7万円」。2020年、経済学者で元大臣の竹中平蔵氏が示したこの案は、大きな騒ぎになりました。「7万円で暮らせるわけがない」「年金をなくすつもりか」。いまもSNSでは、この案を引き合いに出した書き込みを見かけます。</p>
+<details class="es-toc-m"><summary>目次</summary><ol><li><a href="#s1">竹中氏は何を提案したのか</a></li><li><a href="#s2">炎上と、本人の説明</a></li><li><a href="#s3">7万円という数字はどこから来たのか</a></li><li><a href="#s4">計算の前提</a></li><li><a href="#s5">5つの家計で計算してみた</a></li><li><a href="#s6">国全体ではいくらかかるのか</a></li><li><a href="#s7">まとめ</a></li></ol></details><div class="essay-body"><p>「全員に毎月7万円」。2020年、経済学者で元大臣の竹中平蔵氏が示したこの案は、大きな騒ぎになりました。「7万円で暮らせるわけがない」「年金をなくすつもりか」。いまもSNSでは、この案を引き合いに出した書き込みを見かけます。</p>
 <p>このサイトはベーシックインカム（BI）を応援していますが、特定の案を応援しているわけではありません。そこで、賛成か反対かを決める前に、もっと身近な問いから考えてみます。この案が実現したら、わが家のお金は増えるのか、減るのか。</p>
 <p class="op"><span class="op-tag">意見</span>先に答えを書くと、「設計しだい」です。同じ7万円でも、何と引き換えにするのか、誰が後から返すのかで、結果はプラスにもマイナスにもなります。その幅を、具体的な数字で見ていきます。</p>
-<h2>竹中氏は何を提案したのか</h2>
+<h2 id="s1">竹中氏は何を提案したのか</h2>
 <p>きっかけは、2020年9月23日夜に放送されたBS-TBSの番組「報道1930」です。番組では、竹中氏の持論が「国民全員に毎月7万円支給」というパネルで紹介されました。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>報道によると、マイナンバーと銀行口座をひも付けて所得を把握し、一定以上の高所得者には給付の後で返してもらう、という仕組みです。番組で「将来は年金や生活保護などが必要なくなるのか」と聞かれた竹中氏は、「基本的にはそうだ」と答えたと伝えられています。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
 <p>同じ年の8月に出た著書『ポストコロナの「日本改造計画」』（PHP研究所）には、こう書かれています。「一人に毎月七万円給付する案は、年金や生活保護などの社会保障の廃止とバーターの話でもあります。国民全員に七万円を給付するなら、高齢者への年金や、生活保護者への費用をなくすことができます」<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup><sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></p>
-<h2>炎上と、本人の説明</h2>
+<h2 id="s2">炎上と、本人の説明</h2>
 <p>案には、すぐに批判が集まりました。「1人毎月7万円では、とても生活できない」「単なる社会保障の削減ではないのか」。こうした声がネットにあふれたと、J-CASTニュースは伝えています。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> 当時参院議員だった須藤元気氏は「年金生活者に飢え死にしろって言うことですかね」と投稿し、BIなら月20万円は必要だと書きました。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
 <p>竹中氏は2020年10月7日、J-CASTニュースの取材に応じ、おおむねこう説明しています。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>「1人7万円で生活できる」と言ったことはまったくない。7万円はあくまで平均で、その水準なら財政の負担が大きくならない、という意味だ。</p>
@@ -1078,11 +1132,11 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>所得の高い人には高い税率、低い人にはマイナスの税率（お金を支給する）という、累進課税の仕組みにする。</p>
 <p>とりあえず全員に先に渡し、高所得者は後から確定申告で返すのは悪い方法ではない。誰が弱者かは前もって分からないからだ。</p>
 <p class="op"><span class="op-tag">意見</span>著書の「廃止とバーター」と、インタビューの「積み立てた分は保障」「生活保護も補う」では、受ける印象がかなり違います。どちらが本来の案なのか、細かい制度設計は示されていません。そして、このはっきりしない部分こそが、家計の計算では一番大きく効いてきます。</p>
-<h2>7万円という数字はどこから来たのか</h2>
+<h2 id="s3">7万円という数字はどこから来たのか</h2>
 <p>J-CASTニュースによると、竹中氏の案は、経済学者の原田泰氏の持論が元になっています。原田氏は2015年の著書『ベーシック・インカム──国家は貧困問題を解決できるか』（中公新書）などで、20歳以上に月7万円、20歳未満に月3万円を配る案を示していました。竹中氏はこれを「7万円前後」に広げ、累進的な形にしたようだ、と記事は書いています。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup><sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></p>
 <p>ちなみに7万円は、国民年金（老齢基礎年金）の満額とほぼ同じです。2026年度の満額は月7万608円です。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></p>
 <p>政党では、日本維新の会が2021年4月の党大会で、BI（最低所得保障）を公約に掲げる考えを示しています。全員に配るには年100兆円規模の財源が要ることが、そのときも大きな論点になりました。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
-<h2>計算の前提</h2>
+<h2 id="s4">計算の前提</h2>
 <p>竹中氏は細かい設計を示していないので、ここでは前提をはっきり決めてから計算します。</p>
 <p>金額は1人月7万円で、子どもも同じ額とする（番組のパネルどおり）。ただし4人世帯では、子どもを原田案の月3万円にした場合も示す。</p>
 <p>年金は3通りで計算する。(A) 年金はそのままでBIを上乗せ。(B) 基礎年金だけをBIに置き換え、厚生年金の上乗せ部分（報酬比例）は保障。(C) 年金をすべてBIに置き換え。</p>
@@ -1092,7 +1146,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>財源のための増税や保険料の変化は、中身が示されていないので入れない。増税があれば、どの家計もその分だけ結果が下がる。</p>
 <p>金額はすべて月額で、2026年度の制度で計算する。</p>
 <p>いまの制度の数字は、公式の資料から取りました。年金は、国民年金の満額が月7万608円。会社員の夫と専業主婦の妻の「標準的な夫婦」は、2人分の基礎年金を含めて月23万7279円です。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> 生活保護は、東京23区（1級地-1）の20〜40歳の単身者で、生活扶助が月7万7220円（第1類4万6930円＋第2類2万7790円＋特例加算2500円）、家賃にあたる住宅扶助が東京都の単身で上限月5万3700円。合わせて最大月13万920円で、医療費は医療扶助でまかなわれ、自己負担はありません。<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup><sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup> 児童手当は、3歳から高校生年代までの第1子・第2子が1人月1万円で、2024年10月から所得制限はありません。<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup></p>
-<h2>5つの家計で計算してみた</h2>
+<h2 id="s5">5つの家計で計算してみた</h2>
 <p>1. 東京で一人暮らしの20代の会社員（年収300万円）。いま受けている給付は、とくにありません。BIの7万円がそのまま加わります。竹中氏の説明で返すのは「所得の高い人」なので、年収300万円が返す側に入るとは考えにくく、受け取りは月7万円、年84万円です。ただし財源のための増税があれば、その分は差し引かれます。月7万円が上限で、増税しだいで目減りする、というのがこの家計の答えです。</p>
 <p>2. 夫婦と小学生2人の4人世帯（年収500万円）。いまの児童手当は2人で月2万円です。BIが一律なら4人で月28万円で、児童手当がなくなっても月26万円のプラス。竹中氏の言うように子どもの分を減らし、原田案の月3万円にするとBIは月20万円で、差し引きは月18万円のプラスです。子育て世帯は、この案で最も得をしやすい家計です。これも、増税の前の数字です。</p>
 <p>3. 年金で暮らす高齢の夫婦（元会社員の夫と専業主婦の妻）。いまの年金は2人で月23万7279円で、そのうち基礎年金が2人分で14万1216円、厚生年金の上乗せ部分が9万6063円です。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> BIは2人で月14万円。結果は年金の扱いで大きく変わります。(A) 年金に上乗せなら月37万7279円で、月14万円のプラス。(B) 基礎年金だけを置き換えるなら、14万円＋9万6063円＝23万6063円で、差は月マイナス1216円。ほぼ変わりません。(C) 年金をすべて置き換えるなら月14万円だけになり、月9万7279円のマイナスです。</p>
@@ -1101,15 +1155,15 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>著書の「生活保護の費用をなくす」は(B)、インタビューの「生活保護も補うものとしてあっていい」は(A)にあたります。この家計にとっては、どちらなのかが決定的です。</p>
 <p>5. 夫婦と子ども2人の4人世帯（年収1000万円）。いまの児童手当は2人で月2万円です。BIは4人で月28万円。ここで効いてくるのが「高所得者は後で返す」という部分です。返さなくてよいなら、児童手当がなくなっても月26万円のプラス。全額返すなら、BIは手元に残らず、児童手当の分だけ月2万円のマイナスです。年収1000万円は返す側に入る可能性が高く、財源のための増税もこの層に重くかかるはずです。「ほぼゼロからマイナス」と見ておくのが現実的でしょう。</p>
 <p>まとめると、こうなります（月額、増税の前）。</p>
-<div class="essay-table"><table><thead><tr><th scope="col">家計</th><th scope="col">いまの給付</th><th scope="col">BI</th><th scope="col">差し引き</th></tr></thead><tbody><tr><th scope="row">単身20代・年収300万円</th><td>なし</td><td>7万円</td><td>＋7万円（増税があれば目減り）</td></tr><tr><th scope="row">4人世帯・年収500万円</th><td>児童手当2万円</td><td>20万〜28万円</td><td>＋18万〜＋26万円</td></tr><tr><th scope="row">元会社員の高齢夫婦</th><td>年金23万7279円</td><td>14万円</td><td>＋14万円〜−9万7279円（年金の扱いしだい）</td></tr><tr><th scope="row">生活保護の単身者（東京23区）</th><td>最大13万920円</td><td>7万円</td><td>±0〜−6万920円（生活保護を残すかしだい）</td></tr><tr><th scope="row">4人世帯・年収1000万円</th><td>児童手当2万円</td><td>28万円</td><td>＋26万〜−2万円（返納しだい）</td></tr></tbody></table></div>
+<div class="essay-table es-wide"><table><thead><tr><th scope="col">家計</th><th scope="col">いまの給付</th><th scope="col">BI</th><th scope="col">差し引き</th></tr></thead><tbody><tr><th scope="row">単身20代・年収300万円</th><td>なし</td><td>7万円</td><td>＋7万円（増税があれば目減り）</td></tr><tr><th scope="row">4人世帯・年収500万円</th><td>児童手当2万円</td><td>20万〜28万円</td><td>＋18万〜＋26万円</td></tr><tr><th scope="row">元会社員の高齢夫婦</th><td>年金23万7279円</td><td>14万円</td><td>＋14万円〜−9万7279円（年金の扱いしだい）</td></tr><tr><th scope="row">生活保護の単身者（東京23区）</th><td>最大13万920円</td><td>7万円</td><td>±0〜−6万920円（生活保護を残すかしだい）</td></tr><tr><th scope="row">4人世帯・年収1000万円</th><td>児童手当2万円</td><td>28万円</td><td>＋26万〜−2万円（返納しだい）</td></tr></tbody></table></div>
 <p>得をしやすいのは、子どもがいて、いまの給付が少ない世帯です。損をしうるのは、年金や生活保護に頼っている人と、返納や増税の対象になる高所得の世帯です。</p>
 <p class="op"><span class="op-tag">意見</span>「7万円では暮らせない」という批判は、主に年金や生活保護がなくなる場合の話です。一方、竹中氏の「7万円で生活できるとは言っていない」という説明は、ほかの制度を一部残すことが前提だと読めます。どちらの言い分も、前提をそろえれば数字で確かめられます。</p>
-<h2>国全体ではいくらかかるのか</h2>
+<h2 id="s6">国全体ではいくらかかるのか</h2>
 <p>家計の次は、財布の大きさです。日本の人口は1億2281万2000人（総務省統計局、2026年5月1日現在の確定値）です。<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup> 全員に月7万円を1年間配ると、7万円×12か月×1億2281万2000人で、約103.2兆円になります。</p>
 <p>2026年度の国の一般会計予算は122.3092兆円で、そのうち社会保障関係費は39.0559兆円です。<sup class="fnref"><a href="#fn-12" id="ref-12">12</a></sup> BIの総額は、一般会計の約84％、社会保障関係費の約2.6倍にあたります。</p>
 <p>竹中氏は、年金や生活保護の財源を回すと説明しています。<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup> 年金や医療などを合わせた社会保障給付費は、保険料も含めて全体で144.1兆円あります。ただ、そのうち年金は63.7兆円です。<sup class="fnref"><a href="#fn-13" id="ref-13">13</a></sup> 年金をすべてBIに回しても、103兆円には約40兆円足りません。</p>
 <p>足りない分を埋めるには、高所得者の返納でBIの実際の総額を減らすか、増税するかです。返納の線をどこに引くかで、必要な財源も、上の表の結果も変わります。金額や対象を変えると総額がどう変わるかは、<a href="/ja/calc/?c=jp&amp;w=all&amp;m=70000">BI計算機</a>で試せます。月7万円を全員に配ると、GDPの約15.5％です。</p>
-<h2>まとめ</h2>
+<h2 id="s7">まとめ</h2>
 <p>竹中氏の案は、2020年9月の番組で示された「全員に月7万円、高所得者は後で返す」というもの。著書では、年金や生活保護の廃止と引き換えとされていました。</p>
 <p>本人は後に、7万円は平均で、それで生活できるとは言っていない、積み立てた年金は保障し、生活保護も残してよいと説明しました。著書とインタビューの間で、肝心の部分が食い違っています。</p>
 <p>家計への影響は設計しだいです。子育て世帯は大きく得をしやすく、年金や生活保護に頼る人は、制度が残るかどうかで「ほぼ同じ」から「月数万〜10万円近いマイナス」まで変わります。</p>
@@ -1117,13 +1171,13 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p class="op"><span class="op-tag">意見</span>BIを評価するときは、金額だけでなく「何と引き換えか」「誰が返すのか」を見ることが大事だと思います。同じ「月7万円」でも、中身しだいで別の制度になるからです。</p>
 <p>日本では2020年に、全員に10万円を配る特別定額給付金が一度だけ行われました。そのお金がどう使われたのかは、<a href="/ja/essays/japan-special-cash-payment/">10万円の給付金のエッセイ</a>でデータから振り返っています。</p></div>
 <div class="shr shr-ch" id="share"><p class="shr-h">この記事をシェアする</p><button class="btn sc shr-nat" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/ja/essays/takenaka-70000-yen-basic-income/?s=native" data-text="月7万円のベーシックインカム、わが家は得する？損する？：竹中平蔵案を5つの家計で計算する #ベーシックインカム" data-primary hidden><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 11v8.5c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V11"/></svg><span>シェア</span></button><a class="btn sc sc-line sc-1" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Ftakenaka-70000-yen-basic-income%2F%3Fs%3Dline" target="_blank" rel="noopener"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.8c-5.5 0-10 3.6-10 8.1 0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.8c0 .3-.2 1 .9.5s5.9-3.5 8-5.9c1.4-1.6 1.9-3.2 1.9-4.9 0-4.5-4.5-8.1-10-8.1zM7.6 13.4H5.7a.5.5 0 0 1-.5-.5V9.1a.5.5 0 0 1 1 0v3.3h1.4a.5.5 0 0 1 0 1zm2-.5a.5.5 0 0 1-1 0V9.1a.5.5 0 0 1 1 0zm4.6 0a.5.5 0 0 1-.9.3l-2-2.6v2.3a.5.5 0 0 1-1 0V9.1a.5.5 0 0 1 .9-.3l2 2.6V9.1a.5.5 0 0 1 1 0zm3.1-2.4a.5.5 0 0 1 0 1h-1.4v.9h1.4a.5.5 0 0 1 0 1h-1.9a.5.5 0 0 1-.5-.5V9.1c0-.3.2-.5.5-.5h1.9a.5.5 0 0 1 0 1h-1.4v.9z"/></svg><span class="sc-long">LINEでシェア</span><span class="sc-short">LINE</span></a><a class="btn sc sc-x" href="https://x.com/intent/post?text=%E6%9C%887%E4%B8%87%E5%86%86%E3%81%AE%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0%E3%80%81%E3%82%8F%E3%81%8C%E5%AE%B6%E3%81%AF%E5%BE%97%E3%81%99%E3%82%8B%EF%BC%9F%E6%90%8D%E3%81%99%E3%82%8B%EF%BC%9F%EF%BC%9A%E7%AB%B9%E4%B8%AD%E5%B9%B3%E8%94%B5%E6%A1%88%E3%82%925%E3%81%A4%E3%81%AE%E5%AE%B6%E8%A8%88%E3%81%A7%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Ftakenaka-70000-yen-basic-income%2F%3Fs%3Dx%20%23%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0" target="_blank" rel="noopener" aria-label="Xでシェア"><svg class="xicon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a><a class="btn sc sc-wa" href="https://wa.me/?text=%E6%9C%887%E4%B8%87%E5%86%86%E3%81%AE%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0%E3%80%81%E3%82%8F%E3%81%8C%E5%AE%B6%E3%81%AF%E5%BE%97%E3%81%99%E3%82%8B%EF%BC%9F%E6%90%8D%E3%81%99%E3%82%8B%EF%BC%9F%EF%BC%9A%E7%AB%B9%E4%B8%AD%E5%B9%B3%E8%94%B5%E6%A1%88%E3%82%925%E3%81%A4%E3%81%AE%E5%AE%B6%E8%A8%88%E3%81%A7%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Ftakenaka-70000-yen-basic-income%2F%3Fs%3Dwa" target="_blank" rel="noopener" aria-label="WhatsAppでシェア"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3.6 20.4l1.2-4.1a8.6 8.6 0 1 1 3.1 3z"/><path fill="currentColor" d="M9.3 7.4c.3 0 .5.1.7.5l.7 1.6c.1.3 0 .5-.1.7l-.6.7a7 7 0 0 0 3 2.9l.7-.7c.2-.2.4-.2.6-.1l1.6.7c.4.2.5.4.5.7 0 .9-.8 1.9-1.9 1.9-3 0-6.5-3.5-6.5-6.5 0-1.1.8-2.4 1.3-2.4z"/></svg><span>WhatsApp</span></a><a class="btn sc sc-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fja%2Fessays%2Ftakenaka-70000-yen-basic-income%2F%3Fs%3Dtg&amp;text=%E6%9C%887%E4%B8%87%E5%86%86%E3%81%AE%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF%E3%82%A4%E3%83%B3%E3%82%AB%E3%83%A0%E3%80%81%E3%82%8F%E3%81%8C%E5%AE%B6%E3%81%AF%E5%BE%97%E3%81%99%E3%82%8B%EF%BC%9F%E6%90%8D%E3%81%99%E3%82%8B%EF%BC%9F%EF%BC%9A%E7%AB%B9%E4%B8%AD%E5%B9%B3%E8%94%B5%E6%A1%88%E3%82%925%E3%81%A4%E3%81%AE%E5%AE%B6%E8%A8%88%E3%81%A7%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B" target="_blank" rel="noopener" aria-label="Telegramでシェア"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.6 4.2 18.5 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.4 13 1.7 11.5c-1-.3-1-1 .2-1.5L20.4 2.9c.8-.3 1.6.2 1.2 1.3z"/></svg><span>Telegram</span></a><button class="btn sc sc-copy" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/ja/essays/takenaka-70000-yen-basic-income/?s=copy"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></svg><span>リンクをコピー</span></button></div>
-<p class="related">関連エッセイ: <a href="/ja/essays/japan-special-cash-payment/">10万円の給付金は、何に使われたのか：特別定額給付金をデータで振り返る</a> · <a href="/ja/essays/thailand-digital-wallet/">「ベーシックインカム」と呼ばれたもの：タイの1万バーツはどうなったか</a> · <a href="/ja/essays/refundable-tax-credit-vs-basic-income/">給付付き税額控除とベーシックインカムは、何が違うのか：日本の「就業者負担軽減支援金」から考える</a></p>
-<p class="related g-rel">BI計算機で数字を確かめる: <a href="/ja/calc/jp/">日本</a> · <a href="/ja/calc/countries/">全211の国・地域をくらべる</a> · <a href="/ja/calc/map/">世界地図：税収とくらべた費用</a></p>
+<section class="es-calc" aria-labelledby="es-calc-h"><a class="es-calc-map" href="/ja/calc/map/"><img src="/og/thumb/calc/ja/map.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span>世界地図：税収とくらべた費用 →</span></a><div class="es-calc-t"><h2 id="es-calc-h">BI計算機で数字を確かめる</h2><p><a href="/ja/calc/jp/">日本</a> · <a href="/ja/calc/countries/">全211の国・地域をくらべる</a></p></div></section>
+<section class="es-rel" aria-labelledby="es-rel-h"><h2 id="es-rel-h">関連エッセイ</h2><ul><li><a class="es-card" href="/ja/essays/japan-special-cash-payment/"><img src="/og/thumb/essay/ja/japan-special-cash-payment.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>10万円の給付金は、何に使われたのか：特別定額給付金をデータで振り返る</b><span>2020年、日本に住むほぼ全員に配られた10万円。銀行口座と家計簿アプリのデータから、何割がいつ使われ、誰が多く使い、なぜ残されたのかをたどり、1回きりの給付金とベーシックインカムの違いを考えます。</span></span></a></li><li><a class="es-card" href="/ja/essays/thailand-digital-wallet/"><img src="/og/thumb/essay/ja/thailand-digital-wallet.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>「ベーシックインカム」と呼ばれたもの：タイの1万バーツはどうなったか</b><span>2024年、タイの「1万バーツのデジタルウォレット」は、日本で「ベーシックインカム」として紹介されました。約束と実際の経過をたどり、BIENの5つの条件に当てはめ、日本の一律10万円や、アラスカ、マーシャル諸島のようにくり返し払われる例と…</span></span></a></li><li><a class="es-card" href="/ja/essays/refundable-tax-credit-vs-basic-income/"><img src="/og/thumb/essay/ja/refundable-tax-credit-vs-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>給付付き税額控除とベーシックインカムは、何が違うのか：日本の「就業者負担軽減支援金」から考える</b><span>「給付付き税額控除」の第一歩、就業者負担軽減支援金の法案が衆院を通過しました。米国や英国、カナダの例と並べ、ベーシックインカムとの違いを整理します。</span></span></a></li></ul></section>
 
 <div class="qzc"><div class="qzc-t"><p class="qzc-e">タダ飯診断</p><p class="qzc-q">あなたは何型？</p><p class="qzc-s">5問・30秒・登録不要</p></div><a class="btn solid" href="/ja/shindan/?s=essay-quiz">診断する</a></div>
 <section class="fn"><h2>出典</h2><ol><li id="fn-1"><a href="https://www.j-cast.com/2020/10/10396316.html" target="_blank" rel="noopener" dir="auto">J-CAST News — “Let’s ask Heizo Takenaka about basic income again: ‘I never said you could live on ¥70,000 a month’” (interview, 10 Oct 2020, in Japanese)</a> <a class="fnback" href="#ref-1" aria-label="↩">↩</a></li><li id="fn-2"><a href="https://www.daily.co.jp/gossip/2020/10/07/0013762487.shtml" target="_blank" rel="noopener" dir="auto">Daily Sports — Genki Sudo criticises Heizo Takenaka’s ‘¥70,000 a month’: ‘Are you telling pensioners to starve?’ (7 Oct 2020, in Japanese)</a> <a class="fnback" href="#ref-2" aria-label="↩">↩</a></li><li id="fn-3"><a href="https://www.moneypost.jp/712411" target="_blank" rel="noopener" dir="auto">Money Post Web (Shūkan Post) — “If basic income is introduced, social security such as pensions, medical care and public assistance may be cut off” (10 Oct 2020, in Japanese)</a> <a class="fnback" href="#ref-3" aria-label="↩">↩</a></li><li id="fn-4"><a href="https://ndlsearch.ndl.go.jp/books/R100000002-I030519676" target="_blank" rel="noopener" dir="auto">National Diet Library Search — Heizo Takenaka, Post-corona ‘Plan to Remodel Japan’ (PHP Institute, Aug 2020; book record, in Japanese)</a> <a class="fnback" href="#ref-4" aria-label="↩">↩</a></li><li id="fn-5"><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784121023070" target="_blank" rel="noopener" dir="auto">Kinokuniya — Yutaka Harada, Basic Income: Can the State Solve Poverty? (Chūkō Shinsho, Feb 2015; book record, in Japanese)</a> <a class="fnback" href="#ref-5" aria-label="↩">↩</a></li><li id="fn-6"><a href="https://www.nenkin.go.jp/oshirase/taisetu/kojin/2026/202604/0401.html" target="_blank" rel="noopener" dir="auto">Japan Pension Service — Pension amounts from April 2026 (in Japanese)</a> <a class="fnback" href="#ref-6" aria-label="↩">↩</a></li><li id="fn-7"><a href="https://gendai.media/articles/-/95312" target="_blank" rel="noopener" dir="auto">Kenichi Ogura, Gendai Business — on the Japan Innovation Party’s basic income policy and its funding (17 May 2022, in Japanese)</a> <a class="fnback" href="#ref-7" aria-label="↩">↩</a></li><li id="fn-8"><a href="https://www.mhlw.go.jp/content/001152601.pdf" target="_blank" rel="noopener" dir="auto">Ministry of Health, Labour and Welfare — How public assistance living-cost standards are calculated (Oct 2026; PDF, in Japanese)</a> <a class="fnback" href="#ref-8" aria-label="↩">↩</a></li><li id="fn-9"><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/seikatuhogo/index.html" target="_blank" rel="noopener" dir="auto">Ministry of Health, Labour and Welfare — The public assistance system (in Japanese)</a> <a class="fnback" href="#ref-9" aria-label="↩">↩</a></li><li id="fn-10"><a href="https://www.pref.kagawa.lg.jp/kosodate/jidoteate/seidokaisei.html" target="_blank" rel="noopener" dir="auto">Kagawa Prefecture — The October 2024 child allowance reform (in Japanese)</a> <a class="fnback" href="#ref-10" aria-label="↩">↩</a></li><li id="fn-11"><a href="https://www.stat.go.jp/data/jinsui/pdf/202610.pdf" target="_blank" rel="noopener" dir="auto">Statistics Bureau of Japan — Population Estimates, October 2026 report (PDF, in Japanese)</a> <a class="fnback" href="#ref-11" aria-label="↩">↩</a></li><li id="fn-12"><a href="https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/20260220.html" target="_blank" rel="noopener" dir="auto">Ministry of Finance — Explanation of the FY2026 budget and FILP plan (in Japanese)</a> <a class="fnback" href="#ref-12" aria-label="↩">↩</a></li><li id="fn-13"><a href="https://www.mhlw.go.jp/content/12600000/001706348.pdf" target="_blank" rel="noopener" dir="auto">Ministry of Health, Labour and Welfare — Social security benefits and burdens, FY2026 budget basis (PDF, in Japanese)</a> <a class="fnback" href="#ref-13" aria-label="↩">↩</a></li></ol></section>
 </article>
-<p class="back"><a class="btn line" href="/ja/#list">← サービス一覧に戻る</a></p>
+<aside class="es-toc"><nav aria-labelledby="es-toc-h"><p class="es-toc-h" id="es-toc-h">目次</p><ol><li><a href="#s1">竹中氏は何を提案したのか</a></li><li><a href="#s2">炎上と、本人の説明</a></li><li><a href="#s3">7万円という数字はどこから来たのか</a></li><li><a href="#s4">計算の前提</a></li><li><a href="#s5">5つの家計で計算してみた</a></li><li><a href="#s6">国全体ではいくらかかるのか</a></li><li><a href="#s7">まとめ</a></li></ol></nav></aside><p class="back es-back"><a class="btn line" href="/ja/essays/">← エッセイ一覧に戻る</a></p>
 </main>
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>2026年10月時点の情報です。投資を勧めるものではありません。</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: GitHubでデータ公開中"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHubでデータ公開中</span></a><a class="xlink" href="/ja/feed.xml" aria-label="RSSフィード"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/ja/essays/">エッセイ</a><a href="/ja/news/">ベーシックインカム・ニュース</a><a href="/ja/shindan/">タダ飯診断</a><a href="/ja/calc/">BI計算機</a><a href="/ja/calc/countries/">211の国・地域のBI費用</a><a href="/ja/badge/">バッジ</a><span class="dot">不労所得研究所</span></div></footer>
@@ -1140,6 +1194,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
   });
 })();
-</script>
+</script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
+function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
 </body>
 </html>

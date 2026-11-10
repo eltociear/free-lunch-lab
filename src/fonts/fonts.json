@@ -643,6 +643,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-8fe5152f01.woff2",
     "chars": "ü"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-035edf0c01.woff2",
+    "chars": "Í"
    }
   ],
   "es:body:700": [
@@ -725,6 +729,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-8098190811.woff2",
     "chars": "ü"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-c7d5e3c168.woff2",
+    "chars": "Í"
    }
   ],
   "es:display": [

@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/public-benefit-fund.jpg">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free Lunch Lab（免费午餐研究所）","item":"https://neteru-nyukin.eltociear.workers.dev/zh/"},{"@type":"ListItem","position":2,"name":"随笔","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/"},{"@type":"ListItem","position":3,"name":"当 AI 公司拿出股份：Anthropic 的公益基金与基本收入","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/public-benefit-fund/"}]},{"@context":"https://schema.org","@type":"Article","headline":"当 AI 公司拿出股份：Anthropic 的公益基金与基本收入","description":"Anthropic 宣布把 5% 的股份投入公益基金，用途之一是“向特定人群直接分配”。我们整理已承诺和尚未决定的内容，并用 BIEN 的五个条件、阿拉斯加的分红和巴苏的“基本股份”来比较。","inLanguage":"zh-Hans","datePublished":"2026-11-03","dateModified":"2026-11-03","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/public-benefit-fund/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/public-benefit-fund.jpg"}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free Lunch Lab（免费午餐研究所）","item":"https://neteru-nyukin.eltociear.workers.dev/zh/"},{"@type":"ListItem","position":2,"name":"随笔","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/"},{"@type":"ListItem","position":3,"name":"当 AI 公司拿出股份：Anthropic 的公益基金与基本收入","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/public-benefit-fund/"}]},{"@context":"https://schema.org","@type":"Article","headline":"当 AI 公司拿出股份：Anthropic 的公益基金与基本收入","description":"Anthropic 宣布把 5% 的股份投入公益基金，用途之一是“向特定人群直接分配”。我们整理已承诺和尚未决定的内容，并用 BIEN 的五个条件、阿拉斯加的分红和巴苏的“基本股份”来比较。","inLanguage":"zh-Hans","datePublished":"2026-11-03","dateModified":"2026-11-03","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/public-benefit-fund/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/public-benefit-fund.jpg","timeRequired":"PT6M"}]</script>
 <link rel="preload" href="/fonts/noto-sans-sc-400-zh-ced1541eda.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/noto-sans-sc-900-zh-50ddb00ef8.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/zen-kaku-gothic-new-900-logo-2f843f4f31.woff2" as="font" type="font/woff2" crossorigin>
@@ -799,13 +799,28 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .verify-line a,.verify-line span{padding:2px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
-/* エッセイは1行およそ38字（日本語）まで */
-.essay{max-width:38rem;margin-inline:auto}
+/* エッセイの幅は文字数で決める（--cpl × 本文の文字の大きさ）。日本語・中国語は1行およそ44字、それ以外はおよそ72字（字の幅が違うので言語ごとに --cpl で合わせる）。
+   本文は 17px（スマホ）〜18px（PC）を rem で書くので、ブラウザの文字の大きさの設定に合わせて幅も広がる */
+.essay{--fs:clamp(1.0625rem,.95rem + .4vw,1.125rem);--cpl:35;--lh:1.7;--measure:calc(var(--cpl) * var(--fs));--bleed:clamp(0px,(100vw - 32px - var(--measure)) / 2,(900px - var(--measure)) / 2);max-width:var(--measure);margin-inline:auto}
+html[lang="ja"] .essay{--cpl:44;--lh:1.9}
+html[lang="zh-Hans"] .essay{--cpl:39;--lh:1.9}
+html[lang="hi"] .essay{--cpl:43;--lh:1.75}
+html[lang="ar"] .essay{--cpl:32;--lh:1.75}
+.es-main{min-width:0}
+.essay .orgs-head h1{text-wrap:balance}
+html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{word-break:auto-phrase}
 .byline{font-size:.84rem;color:var(--muted)}
-.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:12px}
-.essay-body p{font-size:1rem;line-height:1.95}
-.essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
+.es-read{white-space:nowrap}
+.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:1em;margin-top:12px;font-size:var(--fs);line-height:var(--lh)}
+.essay-body p{font-size:1em;line-height:var(--lh)}
+/* 節の切れ目をはっきり: 見出しの上は本文のおよそ2.5字ぶん、下は狭く */
+.essay-body h2,.essay-body h3{font-family:var(--f-body);font-weight:700;font-size:1.25em;line-height:1.45;margin:1.2em 0 -.3em;scroll-margin-top:calc(var(--bar-h,56px) + 20px)}
+.essay-body h3{font-size:1.1em;margin-top:.9em}
+.essay-body>h2:first-child{margin-top:0}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+/* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
+.essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
+.essay-body>.wmap.es-wide{margin-block:.5em 0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
 .essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
@@ -813,9 +828,48 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
-/* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
-.fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
-.fnref a::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+/* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
+.fnref{line-height:0}
+.fnref a{display:inline-block;min-width:24px;min-height:24px;padding:4px 5px;margin:-6px -5px;line-height:16px;text-align:center;text-decoration:none;font-weight:700;border-radius:6px}
+.fnref a:hover{background:var(--accent-soft)}
+/* 目次: スマホ・タブレットは本文の上で開け閉めする（見出しが4つ以上のとき）。1200px 以上は横に固定 */
+.es-toc-m{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.9rem}
+.es-toc-m summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;cursor:pointer;font-weight:700;list-style:none}
+.es-toc-m summary::-webkit-details-marker{display:none}
+.es-toc-m summary::after{content:"";width:6px;height:6px;margin-inline-start:auto;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.es-toc-m[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.es-toc-m ol,.es-toc ol{margin:0;padding:0 16px 12px;padding-inline-start:2.2em;display:grid;gap:2px;line-height:1.5}
+.es-toc-m a,.es-toc a{display:block;padding:6px 0;color:var(--ink);text-decoration:none}
+.es-toc-m a:hover,.es-toc a:hover{color:var(--accent)}
+.es-toc{display:none}
+/* 記事の終わり: 数字で確かめる（世界地図の小さな画像つき）と関連エッセイのカード */
+.es-calc{margin-top:28px;display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:16px;align-items:center;padding:16px;border-radius:14px;border:1px solid var(--line);border-inline-start:3px solid var(--accent);background:var(--surface)}
+.es-calc-map{display:grid;gap:6px;font-size:.8125rem;font-weight:700;text-decoration:none}
+.es-calc-map img,.es-card img{display:block;width:100%;height:auto;aspect-ratio:40/21;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:var(--paper)}
+.es-calc-map:hover img,.es-card:hover img{border-color:var(--accent)}
+.es-calc-t h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:6px}
+.es-calc-t p{font-weight:700;line-height:1.9}
+.es-rel{margin-top:28px;padding:0}
+.es-rel h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:10px}
+.es-rel ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.es-card{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:14px;align-items:start;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
+.es-card:hover{border-color:var(--accent)}
+.es-card-t{display:grid;gap:4px;min-width:0}
+.es-card-t b{color:var(--accent);line-height:1.5;text-decoration:underline;text-underline-offset:3px}
+.es-card-t span{font-size:.84rem;line-height:1.65;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:520px){.es-calc{grid-template-columns:1fr}.es-calc-map{max-width:15rem}.es-card{grid-template-columns:minmax(0,6.5rem) minmax(0,1fr);gap:12px;padding:10px}.es-card-t span{-webkit-line-clamp:3}}
+.es-back{max-width:none}
+/* 1200px 以上: 記事を真ん中に置いたまま、横の余白に目次を固定する（ar は左右が入れ替わる）。ページの幅 1080px より広く使う */
+@media (min-width:1200px){
+.essay.has-toc{--toc:12rem;--side:calc((min(100vw - 32px, 1320px) - var(--measure)) / 2);--bleed:clamp(0px,var(--side) - var(--toc) - 32px,(900px - var(--measure)) / 2);max-width:none;width:min(100vw - 32px,1320px);margin-inline:calc((100% - min(100vw - 32px, 1320px)) / 2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,var(--measure)) minmax(0,1fr);align-items:start}
+.essay.has-toc>.es-main,.essay.has-toc>.es-back{grid-column:2}
+.essay.has-toc .es-toc-m{display:none}
+.es-toc{display:block;grid-column:3;grid-row:1;justify-self:end;width:min(var(--toc),100%);position:sticky;top:calc(var(--bar-h,56px) + 28px);max-height:calc(100vh - var(--bar-h,56px) - 56px);overflow-y:auto;margin-top:24px;font-size:.84rem}
+.es-toc-h{font-weight:700;font-size:.8125rem;color:var(--muted);padding-inline-start:12px;margin-bottom:6px}
+.es-toc ol{padding:0;list-style:none;gap:0}
+.es-toc a{padding:6px 12px;border-inline-start:2px solid var(--line);color:var(--muted)}
+.es-toc a[aria-current]{color:var(--ink);border-inline-start-color:var(--gold);font-weight:700}
+}
 .fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 .fn h2{font-size:1rem;margin-bottom:8px}
 .fn ol{margin:0;padding-inline-start:22px;display:grid;gap:14px;font-size:.84rem;line-height:1.7;overflow-wrap:anywhere}
@@ -1063,22 +1117,22 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 </div>
 <div class="wrap">
 <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh/">Free Lunch Lab（免费午餐研究所）</a></li><li><a href="/zh/essays/">随笔</a></li><li aria-current="page">当 AI 公司拿出股份：Anthropic 的公益基金与基本收入</li></ol></nav>
-<main class="essay">
-<article>
-<header class="orgs-head"><p class="eyebrow">随笔</p><h1>当 AI 公司拿出股份：Anthropic 的公益基金与基本收入</h1><p class="byline">作者：Free Lunch Lab · <time datetime="2026-11-03">发布 2026年11月3日</time></p>
+<main class="essay has-toc">
+<article class="es-main">
+<header class="orgs-head"><p class="eyebrow">随笔</p><h1>当 AI 公司拿出股份：Anthropic 的公益基金与基本收入</h1><p class="byline">作者：Free Lunch Lab · <time datetime="2026-11-03">发布 2026年11月3日</time> · <span class="es-read">阅读约需 6 分钟</span></p>
 <div class="shr shr-top"><a class="btn shr-o" href="https://x.com/intent/post?text=%E5%BD%93%20AI%20%E5%85%AC%E5%8F%B8%E6%8B%BF%E5%87%BA%E8%82%A1%E4%BB%BD%EF%BC%9AAnthropic%20%E7%9A%84%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Fpublic-benefit-fund%2F%3Fs%3Dx%20%23%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>分享到 X</span></a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/zh/essays/public-benefit-fund/?s=copy">复制链接</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/zh/essays/public-benefit-fund/?s=native" data-text="当 AI 公司拿出股份：Anthropic 的公益基金与基本收入 #基本收入" hidden>分享</button></div></header>
-<div class="essay-body"><p>2026 年 10 月 18 日，Anthropic 宣布把部分股份投入新设立的“Anthropic 公益基金”（Anthropic Public Benefit Fund）。在股东批准的前提下，先投入 5% 的股份；公司价值每比既定基准增加 50%，董事会可酌情再追加 2%。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> CNBC 指出，这个基准尚未公布，而且这项宣布正值据报道定于 11 月的首次公开募股（IPO）之前。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
+<details class="es-toc-m"><summary>目录</summary><ol><li><a href="#s1">承诺了什么</a></li><li><a href="#s2">外界的反应</a></li><li><a href="#s3">用 BIEN 的五个条件来看</a></li><li><a href="#s4">本站已有的先例</a></li><li><a href="#s5">所有权之路：基本股份</a></li><li><a href="#s6">反对发现金的观点</a></li><li><a href="#s7">接下来值得关注的</a></li></ol></details><div class="essay-body"><p>2026 年 10 月 18 日，Anthropic 宣布把部分股份投入新设立的“Anthropic 公益基金”（Anthropic Public Benefit Fund）。在股东批准的前提下，先投入 5% 的股份；公司价值每比既定基准增加 50%，董事会可酌情再追加 2%。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup> CNBC 指出，这个基准尚未公布，而且这项宣布正值据报道定于 11 月的首次公开募股（IPO）之前。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
 <p>在可能的用途中，公告提到“向传统非营利组织大额捐赠，或向特定人群直接分配”。本站关注的正是后半句。一家开发 AI 的公司说要把自身价值的一部分直接交给人们，听起来很像基本收入。这篇随笔整理已经承诺的内容、尚未决定的部分，以及它与基本收入的异同。</p>
-<h2>承诺了什么</h2>
+<h2 id="s1">承诺了什么</h2>
 <p>该基金是 Anthropic 全资拥有的有限责任公司（LLC），不是 501(c)(3) 慈善机构；Anthropic 说选择这种形式是“为了在不同的捐赠形式之间保留调整空间”。LLC 持有的 Anthropic 股权不会用于游说或政治捐款，无论在美国还是海外。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>列出的第一个议题是 AI 对就业的影响。Anthropic 写道，AI “也可能给许多劳动者带来不稳定”，公司已承诺投入 2 亿美元研究和应对这一问题，并认为“可能需要更大胆的做法”。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>基金建立在此前的承诺之上：联合创始人承诺捐出各自 80% 的股权，员工承诺捐出股权时公司会等额配捐。合计起来，Anthropic 表示约 20% 的股份将专用于公共利益，并可能随估值里程碑进一步增加。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>尚未决定的是：基金的结构和治理，以及触发追加份额的估值里程碑。Anthropic 表示将在“未来几个月”公布更多细节。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p class="op"><span class="op-tag">观点</span>先说值得肯定的地方。以股份承诺，会随公司成长而变大，不像固定金额的捐款。公告明白写出 AI 可能伤害劳动者，并把部分收益与这个问题挂钩。不得用于游说和政治捐款的规定，堵住了这类基金最终为所有者服务的一条明显途径。而且公告自己列出了尚未解决的问题，而不是留给读者去发现。</p>
-<h2>外界的反应</h2>
+<h2 id="s2">外界的反应</h2>
 <p>反应不一。IPO 顾问莉丝·拜尔对 CNBC 说，这项宣布是“为首次公开募股做准备所必需的”，也“有利于形象”。她说，如果资金用于再培训或帮助劳动者找到其他工作，可能会受到好评，又补充道：“当然，这也是为了在 AI 受到严格审视之际擦亮自己的声誉。”<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup> 埃隆·马斯克在 X 上回应：“我建议把股份直接交给公众。”戴维·萨克斯写道：“它是否服务于公共利益，还有待观察。”<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></p>
 <p class="op"><span class="op-tag">观点</span>这些都是合理的问题，而基金目前还无法回答，因为能回答它们的部分，也就是由谁决定、按什么规则决定，还没有公布。这不是往最坏处想的理由，而是在治理细节公布之前先别急着给它下定义的理由。</p>
-<h2>用 BIEN 的五个条件来看</h2>
+<h2 id="s3">用 BIEN 的五个条件来看</h2>
 <p>基本收入地球网络（BIEN）把基本收入定义为“无需经济状况调查或工作要求，无条件地以个人为单位向所有人发放的定期现金”，并列出五个特征：定期、现金、个人、普遍、无条件。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> 这和我们在<a href="/zh/essays/thailand-digital-wallet/">关于泰国 1 万泰铢的随笔</a>里用的是同一把尺子。基金还没有支付任何款项，所以我们只能检验写出来的设想：“向特定人群直接分配”。</p>
 <p>定期吗？不清楚。没有说明分配是否会重复进行。</p>
 <p>现金吗？不清楚。“直接分配”可能是现金，也可能是股份或其他东西；形式没有说明。</p>
@@ -1086,30 +1140,30 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>普遍吗？按目前的写法，不是。“特定人群”指由某人挑选的群体，而不是所有人。</p>
 <p>无条件吗？不清楚。属于被选中的群体本身就是一个条件，其他规则尚未公布。</p>
 <p class="op"><span class="op-tag">观点</span>按照描述，它更接近有针对性的慈善，而不是基本收入：出资者选定一个群体并给予资助。这不是批评，有针对性的资助可以做很多好事。但除非有一天它定期、无条件地支付给某个明确人群中的每一个人，它就不是基本收入，按它本来的样子来评价才更公平。</p>
-<h2>本站已有的先例</h2>
+<h2 id="s4">本站已有的先例</h2>
 <p>自 1982 年起，<a href="/zh/timeline/#tl-alaska">阿拉斯加</a>每年从永久基金向符合条件的居民发放分红；这个基金把州的石油和矿产财富保存为可再生的金融资源，首次分红为每人 1,000 美元。<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup> 基金通过州属于公众，规则写进法律，所有符合条件的人领到同样的金额。</p>
 <p>自 2026 年 3 月起，<a href="/zh/timeline/#tl-ai-dividend">AI Dividend</a> 向 25 至 50 名工作或收入受 AI 冲击的劳动者，无条件每月发放 1,000 美元，为期一年。启动资金 30 万美元，目标是在 2026 年发放 300 万美元。组织者计划请 AI 公司出资，并表示已与“Anthropic 等公司”开始接触。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> 这就是小规模的“向特定人群直接分配”：真金白银、选定的群体、固定的期限。</p>
 <p class="op"><span class="op-tag">观点</span>阿拉斯加告诉我们，一个向所有人支付的基金需要什么：公共所有，以及一条不必每年重新决定的规则。AI Dividend 展示了有针对性的现金发放是什么样子。Anthropic 的基金可能走向其中之一，也可能都不是。在<a href="/zh/essays/universal-high-income/">关于全民高收入的随笔</a>里，我们问的是“谁来付钱”。现在付钱的人出现了，问题也随之推进：由谁来决定？</p>
-<h2>所有权之路：基本股份</h2>
+<h2 id="s5">所有权之路：基本股份</h2>
 <p>马斯克的回应指向另一条路：不是由基金发钱，而是把股份交给人们。一周后，前世界银行首席经济学家、经济学家考希克·巴苏在孟买提出了相近的主张。他警告，AI “可能在未来五到十年内大幅减少对人类劳动的需求”，各国政府或许必须考虑“全民基本股份”：不是一次性的转移，而是“对生产性资产和自动化企业所创造财富的持续份额”。他的建议是“从超级富豪手中拿走一部分股份，（分配）给全体人口”，并通过“一套聪明的税收和再分配体系”来实现。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
 <p class="op"><span class="op-tag">观点</span>所有权之路和现金之路回应的是不同的担忧。现金能付这个月的房租。股份带来对未来利润的权利，若附带投票权还能带来发言权；但它的价值随市场波动，在糟糕的月份不得不卖的人只能低价卖出。<a href="/zh/essays/use-to-own/">《用了就成股东》那篇随笔</a>看到，当股份几乎不带权利时，这种权利可以有多薄。像阿拉斯加那样，从人人共有的财富中支付分红，是把两者结合起来的一种方式。</p>
-<h2>反对发现金的观点</h2>
+<h2 id="s6">反对发现金的观点</h2>
 <p>并不是每个人都认为现金是应对 AI 的正确答案。在国际劳工组织（ILO）2026 年 5 月发布的一份研究简报中，图巴·厄扎伊和埃克哈德·恩斯特认为，AI 主要改变的是工作任务，而不是消灭整个职业；全民转移支付会把支出推向住房、医疗等供给难以迅速增加的领域，推高那里的价格。他们主张再培训、积极的劳动力市场政策、增加住房供给、对 AI 产生的超额利润征税，以及以保持工作激励为前提设计的普遍社会保护，例如劳动所得税抵免。<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></p>
 <p class="op"><span class="op-tag">观点</span>本站是关于基本收入的网站，但这种观点值得公平地倾听，而且它更适用于面向“特定人群”的基金，而不是全民发放。无论站在哪一边，为 AI 转型准备的钱，都要看它能买到什么，而不是支票上的数字。</p>
-<h2>接下来值得关注的</h2>
+<h2 id="s7">接下来值得关注的</h2>
 <p class="op"><span class="op-tag">观点</span>治理。结构公布后，由谁来运营基金，他们相对 Anthropic 有多独立，规则是否公开。</p>
 <p class="op">谁来决定领取者。是逐案挑选，还是按任何人都能核查的公开规则。</p>
 <p class="op">是否面向所有人、定期发放。向选定群体的一次性资助属于慈善；向某个明确人群中每个人的定期支付，才是迈向分红的第一步。</p>
 <p class="op">数字。股东批准、尚未公布的基准，以及每年实际支付的金额，而不只是承诺的金额。</p>
 <p class="op">在那之前，这个基金是一个设计尚未完成的承诺。请像本站看待每一份“免费午餐”那样看待它：谁付钱，这里我们知道；谁决定、谁领取，还不知道。</p></div>
 <div class="shr shr-ch" id="share"><p class="shr-h">分享这篇文章</p><button class="btn sc shr-nat" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/zh/essays/public-benefit-fund/?s=native" data-text="当 AI 公司拿出股份：Anthropic 的公益基金与基本收入 #基本收入" data-primary hidden><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 11v8.5c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V11"/></svg><span>分享</span></button><button class="btn sc sc-copy sc-1" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/zh/essays/public-benefit-fund/?s=copy"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></svg><span>复制链接</span></button><a class="btn sc sc-x" href="https://x.com/intent/post?text=%E5%BD%93%20AI%20%E5%85%AC%E5%8F%B8%E6%8B%BF%E5%87%BA%E8%82%A1%E4%BB%BD%EF%BC%9AAnthropic%20%E7%9A%84%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Fpublic-benefit-fund%2F%3Fs%3Dx%20%23%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5" target="_blank" rel="noopener" aria-label="分享到 X"><svg class="xicon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a><a class="btn sc sc-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Fpublic-benefit-fund%2F%3Fs%3Dtg&amp;text=%E5%BD%93%20AI%20%E5%85%AC%E5%8F%B8%E6%8B%BF%E5%87%BA%E8%82%A1%E4%BB%BD%EF%BC%9AAnthropic%20%E7%9A%84%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5" target="_blank" rel="noopener" aria-label="分享到 Telegram"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.6 4.2 18.5 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.4 13 1.7 11.5c-1-.3-1-1 .2-1.5L20.4 2.9c.8-.3 1.6.2 1.2 1.3z"/></svg><span>Telegram</span></a><a class="btn sc sc-wa" href="https://wa.me/?text=%E5%BD%93%20AI%20%E5%85%AC%E5%8F%B8%E6%8B%BF%E5%87%BA%E8%82%A1%E4%BB%BD%EF%BC%9AAnthropic%20%E7%9A%84%E5%85%AC%E7%9B%8A%E5%9F%BA%E9%87%91%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Fpublic-benefit-fund%2F%3Fs%3Dwa" target="_blank" rel="noopener" aria-label="分享到 WhatsApp"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3.6 20.4l1.2-4.1a8.6 8.6 0 1 1 3.1 3z"/><path fill="currentColor" d="M9.3 7.4c.3 0 .5.1.7.5l.7 1.6c.1.3 0 .5-.1.7l-.6.7a7 7 0 0 0 3 2.9l.7-.7c.2-.2.4-.2.6-.1l1.6.7c.4.2.5.4.5.7 0 .9-.8 1.9-1.9 1.9-3 0-6.5-3.5-6.5-6.5 0-1.1.8-2.4 1.3-2.4z"/></svg><span>WhatsApp</span></a></div>
-<p class="related">相关随笔: <a href="/zh/essays/universal-high-income/">全民高收入：谁来买单？</a> · <a href="/zh/essays/use-to-own/">用了就成股东：从罗奇代尔到空投，再到 KABU&amp;</a> · <a href="/zh/essays/ai-agent-basic-income/">AI 智能体需要基本收入吗？</a> · <a href="/zh/essays/openresearch-cash-study/">当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么</a> · <a href="/zh/essays/generative-ai-jobs-basic-income/">生成式 AI 抢走了我们的工作吗？数据显示了什么，基本收入能做什么（上篇）</a></p>
-<p class="related g-rel">用计算器算一算: <a href="/zh/calc/">基本收入计算器</a> · <a href="/zh/calc/countries/">全部211个国家和地区对比</a> · <a href="/zh/calc/map/">世界地图：费用与税收之比</a></p>
+<section class="es-calc" aria-labelledby="es-calc-h"><a class="es-calc-map" href="/zh/calc/map/"><img src="/og/thumb/calc/zh/map.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span>世界地图：费用与税收之比 →</span></a><div class="es-calc-t"><h2 id="es-calc-h">用计算器算一算</h2><p><a href="/zh/calc/">基本收入计算器</a> · <a href="/zh/calc/countries/">全部211个国家和地区对比</a></p></div></section>
+<section class="es-rel" aria-labelledby="es-rel-h"><h2 id="es-rel-h">相关随笔</h2><ul><li><a class="es-card" href="/zh/essays/universal-high-income/"><img src="/og/thumb/essay/zh/universal-high-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>全民高收入：谁来买单？</b><span>马斯克说 AI 和机器人会带来“全民高收入”。那么谁来买单、钱经由什么管道流到人手里？从阿尔特曼的美国股权基金、横财条款、阿拉斯加的分红，到 World、GoodDollar、Circles 和 Ğ1 的做法谈起。</span></span></a></li><li><a class="es-card" href="/zh/essays/use-to-own/"><img src="/og/thumb/essay/zh/use-to-own.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>用了就成股东：从罗奇代尔到空投，再到 KABU&amp;</b><span>KABU&amp; 在你缴电费和手机费时给你股票。“用了就成为所有者”的想法，可以追溯到 1844 年罗奇代尔合作社的按购买额分红，以及 2020 年 Uniswap 的空投。</span></span></a></li><li><a class="es-card" href="/zh/essays/ai-agent-basic-income/"><img src="/og/thumb/essay/zh/ai-agent-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>AI 智能体需要基本收入吗？</b><span>如果 AI 拿走了工作，智能体该不该拿红利？从人格证明、可复制的智能体，以及 AgentKit、Self Agent ID、Olas、AI-DAC 谈起的一篇随笔。</span></span></a></li><li><a class="es-card" href="/zh/essays/openresearch-cash-study/"><img src="/og/thumb/essay/zh/openresearch-cash-study.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么</b><span>OpenResearch 向 1,000 人每月发放 1,000 美元，为期三年。受助者每周少工作约 1.3 小时，钱主要花在基本开支上，有些人用它买回了时间。论文发现了什么、没发现什么，以及它算不算基本收入。</span></span></a></li><li><a class="es-card" href="/zh/essays/generative-ai-jobs-basic-income/"><img src="/og/thumb/essay/zh/generative-ai-jobs-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>生成式 AI 抢走了我们的工作吗？数据显示了什么，基本收入能做什么（上篇）</b><span>2026 年，美国有 121,401 人的裁员以 AI 为理由，但整体就业中还看不到明显的 AI 痕迹，正在变窄的是入口。</span></span></a></li></ul></section>
 
 <div class="qzc"><div class="qzc-t"><p class="qzc-e">免费午餐测试</p><p class="qzc-q">你是哪一型？</p><p class="qzc-s">5 个问题，30 秒，无需注册</p></div><a class="btn solid" href="/zh/shindan/?s=essay-quiz">开始测试</a></div>
 <section class="fn"><h2>出处</h2><ol><li id="fn-1"><a href="https://www.anthropic.com/news/public-benefit-fund" target="_blank" rel="noopener" dir="auto">Anthropic — Investing in the public benefit (18 Oct 2026)</a> <a class="fnback" href="#ref-1" aria-label="↩">↩</a></li><li id="fn-2"><a href="https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html" target="_blank" rel="noopener" dir="auto">CNBC — Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption (18 Oct 2026)</a> <a class="fnback" href="#ref-2" aria-label="↩">↩</a></li><li id="fn-3"><a href="https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-musk-wants-ai-032242549.html" target="_blank" rel="noopener" dir="auto">Stocktwits via Yahoo Finance — Anthropic IPO: Musk wants AI firm to hand shares directly to public (19 Oct 2026)</a> <a class="fnback" href="#ref-3" aria-label="↩">↩</a></li><li id="fn-4"><a href="https://basicincome.org/about-basic-income/" target="_blank" rel="noopener" dir="auto">Basic Income Earth Network (BIEN) — About Basic Income</a> <a class="fnback" href="#ref-4" aria-label="↩">↩</a></li><li id="fn-5"><a href="https://pfd.alaska.gov/Division-Info/Historical-Timeline" target="_blank" rel="noopener" dir="auto">Alaska Permanent Fund Dividend Division — Historical Timeline; Alaska Permanent Fund Corporation</a> · <a href="https://apfc.org/who-we-are/" target="_blank" rel="noopener" dir="ltr">apfc.org</a> <a class="fnback" href="#ref-5" aria-label="↩">↩</a></li><li id="fn-6"><a href="https://www.bloodinthemachine.com/p/the-first-basic-income-for-workers" target="_blank" rel="noopener" dir="auto">Blood in the Machine — The first basic income for workers hit by AI (24 Mar 2026)</a> <a class="fnback" href="#ref-6" aria-label="↩">↩</a></li><li id="fn-7"><a href="https://www.theweek.in/news/biz-tech/2026/10/26/ai-could-wipe-out-demand-for-labour-in-5-10-years-warns-economist-kaushik-basu.html" target="_blank" rel="noopener" dir="auto">The Week — AI could wipe out demand for labour in 5-10 years, warns economist Kaushik Basu (26 Oct 2026)</a> <a class="fnback" href="#ref-7" aria-label="↩">↩</a></li><li id="fn-8"><a href="https://www.ilo.org/publications/why-universal-basic-income-not-answer-impact-ai-labour-market" target="_blank" rel="noopener" dir="auto">ILO — Why UBI is not the answer to the impact of AI on the labour market (Özay and Ernst, research brief, May 2026)</a> · <a href="https://doi.org/10.54394/00034454" target="_blank" rel="noopener" dir="ltr">doi.org</a> <a class="fnback" href="#ref-8" aria-label="↩">↩</a></li></ol></section>
 </article>
-<p class="back"><a class="btn line" href="/zh/#list">← 返回服务列表</a></p>
+<aside class="es-toc"><nav aria-labelledby="es-toc-h"><p class="es-toc-h" id="es-toc-h">目录</p><ol><li><a href="#s1">承诺了什么</a></li><li><a href="#s2">外界的反应</a></li><li><a href="#s3">用 BIEN 的五个条件来看</a></li><li><a href="#s4">本站已有的先例</a></li><li><a href="#s5">所有权之路：基本股份</a></li><li><a href="#s6">反对发现金的观点</a></li><li><a href="#s7">接下来值得关注的</a></li></ol></nav></aside><p class="back es-back"><a class="btn line" href="/zh/essays/">← 返回随笔列表</a></p>
 </main>
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>信息截至 2026 年 10 月。不构成投资建议。</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: 数据在 GitHub 公开"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>数据在 GitHub 公开</span></a><a class="xlink" href="/zh/feed.xml" aria-label="RSS 订阅"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/zh/essays/">随笔</a><a href="/zh/news/">基本收入新闻</a><a href="/zh/shindan/">免费午餐测试</a><a href="/zh/calc/">基本收入计算器</a><a href="/zh/calc/countries/">211个国家和地区的费用</a><a href="/zh/badge/">徽章</a><span class="dot">Free Lunch Lab（免费午餐研究所）</span></div></footer>
@@ -1126,6 +1180,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
   });
 })();
-</script>
+</script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
+function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
 </body>
 </html>

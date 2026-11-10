@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/japan-special-cash-payment.jpg">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free Lunch Lab（免费午餐研究所）","item":"https://neteru-nyukin.eltociear.workers.dev/zh/"},{"@type":"ListItem","position":2,"name":"随笔","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/"},{"@type":"ListItem","position":3,"name":"那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/japan-special-cash-payment/"}]},{"@context":"https://schema.org","@type":"Article","headline":"那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金","description":"2020 年，日本向几乎每位居民发放了 10 万日元。我们从银行账户和记账应用的数据，看花掉了多少、何时花掉、由谁花掉，最后再想一想为什么一次性的给付不是基本收入。","inLanguage":"zh-Hans","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/japan-special-cash-payment/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/japan-special-cash-payment.jpg"}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free Lunch Lab（免费午餐研究所）","item":"https://neteru-nyukin.eltociear.workers.dev/zh/"},{"@type":"ListItem","position":2,"name":"随笔","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/"},{"@type":"ListItem","position":3,"name":"那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/japan-special-cash-payment/"}]},{"@context":"https://schema.org","@type":"Article","headline":"那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金","description":"2020 年，日本向几乎每位居民发放了 10 万日元。我们从银行账户和记账应用的数据，看花掉了多少、何时花掉、由谁花掉，最后再想一想为什么一次性的给付不是基本收入。","inLanguage":"zh-Hans","datePublished":"2026-11-04","dateModified":"2026-11-04","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/japan-special-cash-payment/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/japan-special-cash-payment.jpg","timeRequired":"PT8M"}]</script>
 <link rel="preload" href="/fonts/noto-sans-sc-400-zh-ced1541eda.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/noto-sans-sc-900-zh-50ddb00ef8.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/zen-kaku-gothic-new-900-logo-2f843f4f31.woff2" as="font" type="font/woff2" crossorigin>
@@ -799,13 +799,28 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .verify-line a,.verify-line span{padding:2px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
-/* エッセイは1行およそ38字（日本語）まで */
-.essay{max-width:38rem;margin-inline:auto}
+/* エッセイの幅は文字数で決める（--cpl × 本文の文字の大きさ）。日本語・中国語は1行およそ44字、それ以外はおよそ72字（字の幅が違うので言語ごとに --cpl で合わせる）。
+   本文は 17px（スマホ）〜18px（PC）を rem で書くので、ブラウザの文字の大きさの設定に合わせて幅も広がる */
+.essay{--fs:clamp(1.0625rem,.95rem + .4vw,1.125rem);--cpl:35;--lh:1.7;--measure:calc(var(--cpl) * var(--fs));--bleed:clamp(0px,(100vw - 32px - var(--measure)) / 2,(900px - var(--measure)) / 2);max-width:var(--measure);margin-inline:auto}
+html[lang="ja"] .essay{--cpl:44;--lh:1.9}
+html[lang="zh-Hans"] .essay{--cpl:39;--lh:1.9}
+html[lang="hi"] .essay{--cpl:43;--lh:1.75}
+html[lang="ar"] .essay{--cpl:32;--lh:1.75}
+.es-main{min-width:0}
+.essay .orgs-head h1{text-wrap:balance}
+html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{word-break:auto-phrase}
 .byline{font-size:.84rem;color:var(--muted)}
-.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:12px}
-.essay-body p{font-size:1rem;line-height:1.95}
-.essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
+.es-read{white-space:nowrap}
+.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:1em;margin-top:12px;font-size:var(--fs);line-height:var(--lh)}
+.essay-body p{font-size:1em;line-height:var(--lh)}
+/* 節の切れ目をはっきり: 見出しの上は本文のおよそ2.5字ぶん、下は狭く */
+.essay-body h2,.essay-body h3{font-family:var(--f-body);font-weight:700;font-size:1.25em;line-height:1.45;margin:1.2em 0 -.3em;scroll-margin-top:calc(var(--bar-h,56px) + 20px)}
+.essay-body h3{font-size:1.1em;margin-top:.9em}
+.essay-body>h2:first-child{margin-top:0}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+/* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
+.essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
+.essay-body>.wmap.es-wide{margin-block:.5em 0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
 .essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
@@ -813,9 +828,48 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
-/* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
-.fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
-.fnref a::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+/* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
+.fnref{line-height:0}
+.fnref a{display:inline-block;min-width:24px;min-height:24px;padding:4px 5px;margin:-6px -5px;line-height:16px;text-align:center;text-decoration:none;font-weight:700;border-radius:6px}
+.fnref a:hover{background:var(--accent-soft)}
+/* 目次: スマホ・タブレットは本文の上で開け閉めする（見出しが4つ以上のとき）。1200px 以上は横に固定 */
+.es-toc-m{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.9rem}
+.es-toc-m summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;cursor:pointer;font-weight:700;list-style:none}
+.es-toc-m summary::-webkit-details-marker{display:none}
+.es-toc-m summary::after{content:"";width:6px;height:6px;margin-inline-start:auto;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.es-toc-m[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.es-toc-m ol,.es-toc ol{margin:0;padding:0 16px 12px;padding-inline-start:2.2em;display:grid;gap:2px;line-height:1.5}
+.es-toc-m a,.es-toc a{display:block;padding:6px 0;color:var(--ink);text-decoration:none}
+.es-toc-m a:hover,.es-toc a:hover{color:var(--accent)}
+.es-toc{display:none}
+/* 記事の終わり: 数字で確かめる（世界地図の小さな画像つき）と関連エッセイのカード */
+.es-calc{margin-top:28px;display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:16px;align-items:center;padding:16px;border-radius:14px;border:1px solid var(--line);border-inline-start:3px solid var(--accent);background:var(--surface)}
+.es-calc-map{display:grid;gap:6px;font-size:.8125rem;font-weight:700;text-decoration:none}
+.es-calc-map img,.es-card img{display:block;width:100%;height:auto;aspect-ratio:40/21;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:var(--paper)}
+.es-calc-map:hover img,.es-card:hover img{border-color:var(--accent)}
+.es-calc-t h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:6px}
+.es-calc-t p{font-weight:700;line-height:1.9}
+.es-rel{margin-top:28px;padding:0}
+.es-rel h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:10px}
+.es-rel ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.es-card{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:14px;align-items:start;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
+.es-card:hover{border-color:var(--accent)}
+.es-card-t{display:grid;gap:4px;min-width:0}
+.es-card-t b{color:var(--accent);line-height:1.5;text-decoration:underline;text-underline-offset:3px}
+.es-card-t span{font-size:.84rem;line-height:1.65;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:520px){.es-calc{grid-template-columns:1fr}.es-calc-map{max-width:15rem}.es-card{grid-template-columns:minmax(0,6.5rem) minmax(0,1fr);gap:12px;padding:10px}.es-card-t span{-webkit-line-clamp:3}}
+.es-back{max-width:none}
+/* 1200px 以上: 記事を真ん中に置いたまま、横の余白に目次を固定する（ar は左右が入れ替わる）。ページの幅 1080px より広く使う */
+@media (min-width:1200px){
+.essay.has-toc{--toc:12rem;--side:calc((min(100vw - 32px, 1320px) - var(--measure)) / 2);--bleed:clamp(0px,var(--side) - var(--toc) - 32px,(900px - var(--measure)) / 2);max-width:none;width:min(100vw - 32px,1320px);margin-inline:calc((100% - min(100vw - 32px, 1320px)) / 2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,var(--measure)) minmax(0,1fr);align-items:start}
+.essay.has-toc>.es-main,.essay.has-toc>.es-back{grid-column:2}
+.essay.has-toc .es-toc-m{display:none}
+.es-toc{display:block;grid-column:3;grid-row:1;justify-self:end;width:min(var(--toc),100%);position:sticky;top:calc(var(--bar-h,56px) + 28px);max-height:calc(100vh - var(--bar-h,56px) - 56px);overflow-y:auto;margin-top:24px;font-size:.84rem}
+.es-toc-h{font-weight:700;font-size:.8125rem;color:var(--muted);padding-inline-start:12px;margin-bottom:6px}
+.es-toc ol{padding:0;list-style:none;gap:0}
+.es-toc a{padding:6px 12px;border-inline-start:2px solid var(--line);color:var(--muted)}
+.es-toc a[aria-current]{color:var(--ink);border-inline-start-color:var(--gold);font-weight:700}
+}
 .fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 .fn h2{font-size:1rem;margin-bottom:8px}
 .fn ol{margin:0;padding-inline-start:22px;display:grid;gap:14px;font-size:.84rem;line-height:1.7;overflow-wrap:anywhere}
@@ -1063,34 +1117,34 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 </div>
 <div class="wrap">
 <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh/">Free Lunch Lab（免费午餐研究所）</a></li><li><a href="/zh/essays/">随笔</a></li><li aria-current="page">那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金</li></ol></nav>
-<main class="essay">
-<article>
-<header class="orgs-head"><p class="eyebrow">随笔</p><h1>那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金</h1><p class="byline">作者：Free Lunch Lab · <time datetime="2026-11-04">发布 2026年11月4日</time></p>
+<main class="essay has-toc">
+<article class="es-main">
+<header class="orgs-head"><p class="eyebrow">随笔</p><h1>那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金</h1><p class="byline">作者：Free Lunch Lab · <time datetime="2026-11-04">发布 2026年11月4日</time> · <span class="es-read">阅读约需 8 分钟</span></p>
 <div class="shr shr-top"><a class="btn shr-o" href="https://x.com/intent/post?text=%E9%82%A3%2010%20%E4%B8%87%E6%97%A5%E5%85%83%E5%8E%BB%E4%BA%86%E5%93%AA%E9%87%8C%EF%BC%9F%E7%94%A8%E6%95%B0%E6%8D%AE%E5%9B%9E%E7%9C%8B%E6%97%A5%E6%9C%AC%202020%20%E5%B9%B4%E7%9A%84%E7%89%B9%E5%88%AB%E5%AE%9A%E9%A2%9D%E7%BB%99%E4%BB%98%E9%87%91%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Fjapan-special-cash-payment%2F%3Fs%3Dx%20%23%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>分享到 X</span></a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/zh/essays/japan-special-cash-payment/?s=copy">复制链接</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/zh/essays/japan-special-cash-payment/?s=native" data-text="那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金 #基本收入" hidden>分享</button></div></header>
-<div class="essay-body"><p>2020 年春夏之间，几乎所有住在日本的人都领到了 10 万日元。这笔钱叫作“特别定额给付金”，总共发放了约 12.67 万亿日元。那么，人们拿它做了什么？有人说大多进了储蓄账户，也有人说它撑住了家里的生活。</p>
+<details class="es-toc-m"><summary>目录</summary><ol><li><a href="#s1">10 万日元是怎么发的</a></li><li><a href="#s2">花掉了多少？</a></li><li><a href="#s3">谁花掉了？</a></li><li><a href="#s4">没花掉的钱去了哪里？</a></li><li><a href="#s5">一次性的 10 万日元与基本收入</a></li><li><a href="#s6">一次 10 万日元，还是每月 3 万日元</a></li><li><a href="#s7">10 万日元留下了什么</a></li></ol></details><div class="essay-body"><p>2020 年春夏之间，几乎所有住在日本的人都领到了 10 万日元。这笔钱叫作“特别定额给付金”，总共发放了约 12.67 万亿日元。那么，人们拿它做了什么？有人说大多进了储蓄账户，也有人说它撑住了家里的生活。</p>
 <p>这个问题在相当程度上可以用数据回答。我们读了利用银行账户和记账应用记录的研究，以及政府自己的分析，看看花掉了多少、在什么时候、由哪些家庭花掉。然后，我们把这段经历能告诉我们的关于基本收入的事，和它不能告诉我们的事分开来看。</p>
-<h2>10 万日元是怎么发的</h2>
+<h2 id="s1">10 万日元是怎么发的</h2>
 <p>2020 年 4 月 27 日登记在居民基本台账上的所有人都有资格领取，包括外国籍居民，每人 10 万日元。有权领取的是本人所属家庭的户主。户主要么在市区町村寄来的申请表上填好银行账户寄回，要么通过政府网站 Mynaportal 在线申请，钱原则上打入申请人本人名下的账户。项目预算为 12.880293 万亿日元（其中给付 12.734414 万亿日元，事务费 1,458.79 亿日元），全部由中央政府承担。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>最初的方案并不是这样。政府起初提出，向因新冠收入大幅减少的家庭每户发放 30 万日元；2020 年 4 月 16 日，改为向每个人发放 10 万日元。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
 <p>发放从 5 月开始。到 6 月 26 日已发放约 9.12 万亿日元（71.6%），到 7 月 31 日约 12.32 万亿日元。最终总额约 12.67 万亿日元，是市区町村计划发放金额的 99.7%：几乎所有符合资格的人都领到了。<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></p>
 <p>不过，钱什么时候到，很大程度上取决于住在哪里。在日本，银行账户和居民记录没有关联，所以市区町村只能一个个收集、核对账号。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup> 即使在东京都内，练马区到 6 月 30 日已有 85% 的申请人领到钱，江户川区只有 34.5%。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></p>
 <p>这些延迟反而成了研究者的礼物。如果在同一周里，有的家庭已经领到、有的还没有，比较两者，就能把给付本身的效果，和疫情扩散、居家要求的影响分开。下面的研究都用了这种“自然实验”。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></p>
-<h2>花掉了多少？</h2>
+<h2 id="s2">花掉了多少？</h2>
 <p>早稻田大学的久保田荘、大西宏一郎和远山祐太研究了瑞穗银行约 280 万个账户。钱到账的那一周支出猛增，之后一个多月里都保持在略高的水平。六周内，从账户流出的钱相当于给付额的 49%；只算现金提取则是 31%。由于这些流出包括转账和自动扣款，作者把它作为消费的上限。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></p>
 <p>兼田充、久保田荘和田中聪史使用了记账应用 Money Forward ME 的 232,589 名用户的数据。六周内，按基准定义，给付额的 16% 被花掉：窄口径为 6%，宽口径为 27%。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></p>
 <p>服部孝洋等人使用政府家计调查中按城市汇总的数据，估计在给付到账的那个月花掉了约 10%。在家和在商店买东西的支出增加了，面对面服务的支出没有增加。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></p>
 <p>2023 年，内阁府查看了另一个记账应用 Moneytree 的数据，覆盖从发放前 5 周到发放后 10 周共 16 周，估计给付额的约 22% 被花掉。用家计调查的个人记录核对，约 16 周内约为 17%，结果大致相同。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
 <p class="op"><span class="op-tag">观点</span>数字从 6% 到 49% 不等。这取决于什么算作消费（是否假定提取的现金都花掉了，是否计入转账），以及看了多少周。但它们的方向一致。在钱到账后的几周到几个月里，窄口径计算消费的研究发现花掉了一成到不到三成，即使把所有流出都算进去的研究，也只有一半左右。其余的钱，至少没有马上花掉。</p>
 <p>这可能不只是疫情期间的数字。根据内阁府的报告，1999 年的地域振兴券使消费增加了发放额的约 32%；2009 年的定额给付金在问卷调查中约为 33%，在用家计调查做的分析中，从领取前一个月到领取后两个月约为 25%。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup> 服部等人也写道，他们约 10% 的结果与疫情前的估计没有差别。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup></p>
-<h2>谁花掉了？</h2>
+<h2 id="s3">谁花掉了？</h2>
 <p>每项研究里最清楚的发现是：手头钱少的家庭，花掉的比例更高。在 Money Forward 的数据中，流动资产少于月收入的家庭（占用户的 19%）反应强烈，尤其是在到账的那一周。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup> 在瑞穗银行的数据中，资金紧张的家庭花掉了给付额的近 60%。起作用的不是金融资产总额，而是普通存款账户的余额：持有股票或保险、但普通账户里钱不多的“富裕的月光族”（wealthy hand-to-mouth）家庭，也花得很多。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></p>
 <p>至于收入，各项研究的结论不一致。内阁府发现，按等价收入（按家庭人数调整后的收入）排在最低三分之一的家庭，花掉了给付额的约 32%，中间和最高三分之一的家庭没有明显效果。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup> Money Forward 的数据也显示，收入最低的四分之一家庭反应更大。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup> 相比之下，瑞穗银行的数据几乎看不出收入高低的差别；那里的差别出现在收入比前一年减少一半以上的家庭（54%）。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></p>
 <p>关于年龄和家庭类型，Money Forward 的数据提供了一些线索。户主年龄越大，反应越大；独居的人反应弱于其他家庭，已婚家庭强于单身家庭。有没有孩子差别不大。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup> 但记账应用的用户偏年轻、偏东京，女性很少（作者认为部分原因是给付发给了户主），所以这些数据很难看清老年家庭的情况。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
-<h2>没花掉的钱去了哪里？</h2>
+<h2 id="s4">没花掉的钱去了哪里？</h2>
 <p>也有调查直接问了人们。2020 年 6 月，日本生命基础研究所（NLI Research Institute）询问了 2,062 名 20 至 69 岁的人用这笔钱做了什么（可多选）。“补贴生活费”以 53.7% 居首，其次是“储蓄”26.1%、“国内旅行”10.1%、“购买家电”和“购买口罩等卫生用品”各 9.7%、“外出就餐”9.0%、“孩子的教育”7.0%。说全部存起来的只有 9.7%。不过，调查没有问金额，研究者久我尚子指出，按金额计算，留在储蓄里的可能更多。<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></p>
 <p>为什么要留着？在同一项调查中，选择储蓄的人比平均水平更担心收入减少或失业。久我认为，这与其说是居家期间没地方花钱，不如说是出于不安而有意存起来。<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup> 内阁府同样表示，没有马上花掉的部分，加上外出受限，可能积累成了“超额储蓄”，预计以后会被动用，支撑消费。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
 <p class="op"><span class="op-tag">观点</span>因为存起来了就说这笔钱浪费了，还为时过早。补贴生活费本身就是花钱。在谁也看不清前路的时候留在手边的 10 万日元，对一个家庭来说是一种安全网。拉动经济和支撑生活，需要用不同的尺子来衡量。内阁府的报告本身也说，这个项目不一定以刺激消费为直接目的。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup></p>
-<h2>一次性的 10 万日元与基本收入</h2>
+<h2 id="s5">一次性的 10 万日元与基本收入</h2>
 <p>基本收入地球网络（BIEN）把基本收入定义为“无需经济状况调查或工作要求，无条件地以个人为单位向所有人发放的定期现金”，并列出五个特征：定期、现金、个人、普遍、无条件。<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup> 这和我们在<a href="/zh/essays/thailand-digital-wallet/">关于泰国 1 万泰铢的随笔</a>里用的是同一把尺子。我们把 10 万日元逐条对照一下。</p>
 <p>普遍吗？差不多，是的。居民登记上的所有人都有资格，包括外国籍居民。</p>
 <p>无条件吗？是的。没有经济状况调查，也没有工作要求。</p>
@@ -1101,22 +1155,22 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p class="op">所以，10 万日元大多没有马上花掉，并不能证明基本收入只会被存起来。10 万日元帮许多人渡过了难关，也不能证明基本收入就会成功。两者回答的都是另一个问题。</p>
 <p>一次性发放也有自己的长处。<a href="/zh/timeline/#tl-kenya">GiveDirectly 在肯尼亚的研究</a>比较了连续 12 年每月领取的一组、连续两年每月领取的一组和一次性领取的一组，2023 年的初步结果发现，一次性领取的一组在许多经济指标上表现更好。</p>
 <p>本站年表里也有反复发放的例子。<a href="/zh/timeline/#tl-alaska">阿拉斯加永久基金分红</a>自 1982 年起每年发放，<a href="/zh/timeline/#tl-marshall-islands">马绍尔群岛的 Enra</a>自 2025 年 11 月起每季度发放约 200 美元。<a href="/zh/timeline/#tl-korea-rural">韩国的农村基本收入试点</a>在 2026–2027 年，以地方商品券形式每月向住在选定郡的国民发放 15 万韩元（BIEN 表示，这种形式不符合它的定义）。</p>
-<h2>一次 10 万日元，还是每月 3 万日元</h2>
+<h2 id="s6">一次 10 万日元，还是每月 3 万日元</h2>
 <p>也比一比规模。用<a href="/zh/calc/?c=jp&amp;w=all&amp;m=30000">基本收入计算器</a>算，向日本现有人口（约 1.2281 亿）中的每个人每月发放 3 万日元，一年约 44.2 万亿日元，约为 GDP 的 6.7%。2020 年发放的约 12.7 万亿日元，大约相当于其中三个半月。</p>
 <p class="op"><span class="op-tag">观点</span>每月 3 万日元不够生活。即便如此，一年 44 万亿日元也是 2020 年一次性发放金额的三倍多。10 万日元表明，国家能够建立一套给每个人发钱的办法。但要每个月都这样做，就需要一场完全不同的讨论：钱从哪里来。</p>
 <p>竹中平藏 2020 年提出的“每人每月 7 万日元”，落到每个家庭会怎样？<a href="/zh/essays/takenaka-70000-yen-basic-income/">我们算了五个家庭的账</a>：结果随养老金和生活保护的处理方式大幅变化。</p>
-<h2>10 万日元留下了什么</h2>
+<h2 id="s7">10 万日元留下了什么</h2>
 <p class="op"><span class="op-tag">观点</span>2020 年的给付是一次重大的经历：向几乎所有住在日本的人发放同样数额的现金，不附任何条件。而且多亏到账时间参差不齐，我们现在能从数据中知道花掉了多少、哪些家庭花掉了。手头钱少的家庭花得快；在不安的时候，人们会留住钱；银行账户和居民记录不关联时，钱要很久才能到。这些都是下次发放时的教训。</p>
 <p class="op">但它不是基本收入实验。它是在疫情中只发一次、打进户主账户的钱。它回答不了这样的问题：当每个月一定有钱到账时，人们的工作和生活会怎样改变。要回答这个问题，我们需要继续关注反复发放的制度。</p>
 <p class="op">我们不想把这 10 万日元记成“浪费”，也不想记成“基本收入的预演”，而想用它本来的名字记住它：一次面向所有人的、一次性的紧急给付。光是这样，就已经是一件足够大的事。</p></div>
 <div class="shr shr-ch" id="share"><p class="shr-h">分享这篇文章</p><button class="btn sc shr-nat" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/zh/essays/japan-special-cash-payment/?s=native" data-text="那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金 #基本收入" data-primary hidden><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 11v8.5c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V11"/></svg><span>分享</span></button><button class="btn sc sc-copy sc-1" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/zh/essays/japan-special-cash-payment/?s=copy"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></svg><span>复制链接</span></button><a class="btn sc sc-x" href="https://x.com/intent/post?text=%E9%82%A3%2010%20%E4%B8%87%E6%97%A5%E5%85%83%E5%8E%BB%E4%BA%86%E5%93%AA%E9%87%8C%EF%BC%9F%E7%94%A8%E6%95%B0%E6%8D%AE%E5%9B%9E%E7%9C%8B%E6%97%A5%E6%9C%AC%202020%20%E5%B9%B4%E7%9A%84%E7%89%B9%E5%88%AB%E5%AE%9A%E9%A2%9D%E7%BB%99%E4%BB%98%E9%87%91%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Fjapan-special-cash-payment%2F%3Fs%3Dx%20%23%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5" target="_blank" rel="noopener" aria-label="分享到 X"><svg class="xicon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a><a class="btn sc sc-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Fjapan-special-cash-payment%2F%3Fs%3Dtg&amp;text=%E9%82%A3%2010%20%E4%B8%87%E6%97%A5%E5%85%83%E5%8E%BB%E4%BA%86%E5%93%AA%E9%87%8C%EF%BC%9F%E7%94%A8%E6%95%B0%E6%8D%AE%E5%9B%9E%E7%9C%8B%E6%97%A5%E6%9C%AC%202020%20%E5%B9%B4%E7%9A%84%E7%89%B9%E5%88%AB%E5%AE%9A%E9%A2%9D%E7%BB%99%E4%BB%98%E9%87%91" target="_blank" rel="noopener" aria-label="分享到 Telegram"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.6 4.2 18.5 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.4 13 1.7 11.5c-1-.3-1-1 .2-1.5L20.4 2.9c.8-.3 1.6.2 1.2 1.3z"/></svg><span>Telegram</span></a><a class="btn sc sc-wa" href="https://wa.me/?text=%E9%82%A3%2010%20%E4%B8%87%E6%97%A5%E5%85%83%E5%8E%BB%E4%BA%86%E5%93%AA%E9%87%8C%EF%BC%9F%E7%94%A8%E6%95%B0%E6%8D%AE%E5%9B%9E%E7%9C%8B%E6%97%A5%E6%9C%AC%202020%20%E5%B9%B4%E7%9A%84%E7%89%B9%E5%88%AB%E5%AE%9A%E9%A2%9D%E7%BB%99%E4%BB%98%E9%87%91%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Fjapan-special-cash-payment%2F%3Fs%3Dwa" target="_blank" rel="noopener" aria-label="分享到 WhatsApp"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3.6 20.4l1.2-4.1a8.6 8.6 0 1 1 3.1 3z"/><path fill="currentColor" d="M9.3 7.4c.3 0 .5.1.7.5l.7 1.6c.1.3 0 .5-.1.7l-.6.7a7 7 0 0 0 3 2.9l.7-.7c.2-.2.4-.2.6-.1l1.6.7c.4.2.5.4.5.7 0 .9-.8 1.9-1.9 1.9-3 0-6.5-3.5-6.5-6.5 0-1.1.8-2.4 1.3-2.4z"/></svg><span>WhatsApp</span></a></div>
-<p class="related">相关随笔: <a href="/zh/essays/thailand-digital-wallet/">被称为“基本收入”的东西：泰国的 1 万泰铢后来怎样了</a> · <a href="/zh/essays/nesara-gesara-basic-income/">NESARA/GESARA 与基本收入：如何分辨“给每个人发钱”的说法</a> · <a href="/zh/essays/takenaka-70000-yen-basic-income/">每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案</a> · <a href="/zh/essays/refundable-tax-credit-vs-basic-income/">可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起</a> · <a href="/zh/essays/china-childcare-subsidy-basic-income/">育儿补贴每年3600元：谁能领、怎么领，它算基本收入吗？</a></p>
-<p class="related g-rel">用计算器算一算: <a href="/zh/calc/jp/">日本</a> · <a href="/zh/calc/countries/">全部211个国家和地区对比</a> · <a href="/zh/calc/map/">世界地图：费用与税收之比</a></p>
+<section class="es-calc" aria-labelledby="es-calc-h"><a class="es-calc-map" href="/zh/calc/map/"><img src="/og/thumb/calc/zh/map.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span>世界地图：费用与税收之比 →</span></a><div class="es-calc-t"><h2 id="es-calc-h">用计算器算一算</h2><p><a href="/zh/calc/jp/">日本</a> · <a href="/zh/calc/countries/">全部211个国家和地区对比</a></p></div></section>
+<section class="es-rel" aria-labelledby="es-rel-h"><h2 id="es-rel-h">相关随笔</h2><ul><li><a class="es-card" href="/zh/essays/thailand-digital-wallet/"><img src="/og/thumb/essay/zh/thailand-digital-wallet.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>被称为“基本收入”的东西：泰国的 1 万泰铢后来怎样了</b><span>2024 年，泰国的“1 万泰铢数字钱包”在日本被当作基本收入介绍。我们对照当初的承诺和实际经过，用 BIEN 的五个条件检验，并与日本的人均 10 万日元，以及阿拉斯加、马绍尔群岛这类真正反复发放的例子比较。</span></span></a></li><li><a class="es-card" href="/zh/essays/nesara-gesara-basic-income/"><img src="/og/thumb/essay/zh/nesara-gesara-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>NESARA/GESARA 与基本收入：如何分辨“给每个人发钱”的说法</b><span>“NESARA/GESARA 一宣布，债务全部清零，每个人都能拿到一大笔钱。”我们追溯一份个人改革提案如何变成阴谋论和投资骗局，整理它与真正的基本收入有何不同，以及辨别的四个问题。</span></span></a></li><li><a class="es-card" href="/zh/essays/takenaka-70000-yen-basic-income/"><img src="/og/thumb/essay/zh/takenaka-70000-yen-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案</b><span>竹中平藏 2020 年提出的“每人每月 7 万日元”。养老金和生活保护怎么处理、高收入者是否返还，结果差别很大。我们定好前提，算了五个家庭的账，也核对了全国的总成本。</span></span></a></li><li><a class="es-card" href="/zh/essays/refundable-tax-credit-vs-basic-income/"><img src="/og/thumb/essay/zh/refundable-tax-credit-vs-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起</b><span>作为“可退还税收抵免”第一步的日本就业者负担减轻支援金法案，于 2026 年 11 月在众议院通过。我们把它与美国的 EITC、儿童税收抵免以及英国、加拿大的做法放在一起，逐项看它与基本收入的异同。</span></span></a></li><li><a class="es-card" href="/zh/essays/china-childcare-subsidy-basic-income/"><img src="/og/thumb/essay/zh/china-childcare-subsidy-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>育儿补贴每年3600元：谁能领、怎么领，它算基本收入吗？</b><span>3 岁以下每孩每年 3600 元，不看收入、免个税。谁能领、怎么领、发了多少，和基本收入差在哪里，现金能不能让人多生孩子。</span></span></a></li></ul></section>
 
 <div class="qzc"><div class="qzc-t"><p class="qzc-e">免费午餐测试</p><p class="qzc-q">你是哪一型？</p><p class="qzc-s">5 个问题，30 秒，无需注册</p></div><a class="btn solid" href="/zh/shindan/?s=essay-quiz">开始测试</a></div>
 <section class="fn"><h2>出处</h2><ol><li id="fn-1"><a href="https://www.soumu.go.jp/menu_seisaku/gyoumukanri_sonota/covid-19/kyufukin.html" target="_blank" rel="noopener" dir="auto">総務省 (Ministry of Internal Affairs and Communications) — 特別定額給付金（新型コロナウイルス感染症緊急経済対策関連）</a> <a class="fnback" href="#ref-1" aria-label="↩">↩</a></li><li id="fn-2"><a href="https://doi.org/10.1007/s42973-021-00080-0" target="_blank" rel="noopener" dir="auto">Michiru Kaneda, So Kubota and Satoshi Tanaka — “Who spent their COVID-19 stimulus payment? Evidence from personal finance software in Japan”, The Japanese Economic Review 72, 409–437 (2021)</a> <a class="fnback" href="#ref-2" aria-label="↩">↩</a></li><li id="fn-3"><a href="https://www.soumu.go.jp/main_content/000715720.pdf" target="_blank" rel="noopener" dir="auto">Ministry of Internal Affairs and Communications — Special Cash Payment: amounts paid to date (final figure as of 31 Mar 2021; PDF, in Japanese)</a> <a class="fnback" href="#ref-3" aria-label="↩">↩</a></li><li id="fn-4"><a href="https://doi.org/10.1016/j.jebo.2021.05.006" target="_blank" rel="noopener" dir="auto">So Kubota, Koichiro Onishi and Yuta Toyama — “Consumption responses to COVID-19 payments: Evidence from a natural experiment and bank account data”, Journal of Economic Behavior &amp; Organization 188, 1–17 (2021)</a> <a class="fnback" href="#ref-4" aria-label="↩">↩</a></li><li id="fn-5"><a href="https://www.rieti.go.jp/jp/special/special_report/135.html" target="_blank" rel="noopener" dir="auto">RIETI Special Report — Michiru Kaneda, So Kubota and Satoshi Tanaka, “The effect of the Special Cash Payment on household consumption during COVID-19: evidence from budgeting-app data” (17 May 2021, in Japanese)</a> <a class="fnback" href="#ref-5" aria-label="↩">↩</a></li><li id="fn-6"><a href="https://www.rieti.go.jp/en/publications/summary/21060001.html" target="_blank" rel="noopener" dir="auto">Takahiro Hattori, Norihiro Komura and Takashi Unayama — “Impact of Cash Transfers on Consumption during the COVID-19 Pandemic: Evidence from Japanese Special Cash Payments”, RIETI Discussion Paper 21-E-043 (2021)</a> <a class="fnback" href="#ref-6" aria-label="↩">↩</a></li><li id="fn-7"><a href="https://www5.cao.go.jp/keizai3/2023/08seisakukadai22-0.pdf" target="_blank" rel="noopener" dir="auto">Cabinet Office, Policy Issue Analysis Series 22 — “The effect of the Special Cash Payment on household consumption: an analysis of budgeting-app data recorded in real time” (16 Aug 2023, in Japanese)</a> <a class="fnback" href="#ref-7" aria-label="↩">↩</a></li><li id="fn-8"><a href="https://www.nli-research.co.jp/files/topics/69350_ext_18_0.pdf?site=nli" target="_blank" rel="noopener" dir="auto">NLI Research Institute — Naoko Kuga, “How households with children used the cash payments” (12 Nov 2021, in Japanese; survey of 2,062 people aged 20–69, June 2020)</a> <a class="fnback" href="#ref-8" aria-label="↩">↩</a></li><li id="fn-9"><a href="https://www.nli-research.co.jp/files/topics/66114_ext_18_0.pdf?site=nli" target="_blank" rel="noopener" dir="auto">NLI Research Institute — Naoko Kuga, “How the Special Cash Payment was used (2): saving out of economic anxiety, or for lack of places to go?” (17 Nov 2020, in Japanese)</a> <a class="fnback" href="#ref-9" aria-label="↩">↩</a></li><li id="fn-10"><a href="https://basicincome.org/about-basic-income/" target="_blank" rel="noopener" dir="auto">Basic Income Earth Network (BIEN) — About Basic Income</a> <a class="fnback" href="#ref-10" aria-label="↩">↩</a></li><li id="fn-11"><a href="https://www.soumu.go.jp/main_content/000715534.pdf" target="_blank" rel="noopener" dir="auto">Ministry of Internal Affairs and Communications — Special Cash Payment: arrangements for people who fled domestic violence and for children in care (summary, Apr 2020, in Japanese)</a> <a class="fnback" href="#ref-11" aria-label="↩">↩</a></li></ol></section>
 </article>
-<p class="back"><a class="btn line" href="/zh/#list">← 返回服务列表</a></p>
+<aside class="es-toc"><nav aria-labelledby="es-toc-h"><p class="es-toc-h" id="es-toc-h">目录</p><ol><li><a href="#s1">10 万日元是怎么发的</a></li><li><a href="#s2">花掉了多少？</a></li><li><a href="#s3">谁花掉了？</a></li><li><a href="#s4">没花掉的钱去了哪里？</a></li><li><a href="#s5">一次性的 10 万日元与基本收入</a></li><li><a href="#s6">一次 10 万日元，还是每月 3 万日元</a></li><li><a href="#s7">10 万日元留下了什么</a></li></ol></nav></aside><p class="back es-back"><a class="btn line" href="/zh/essays/">← 返回随笔列表</a></p>
 </main>
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>信息截至 2026 年 10 月。不构成投资建议。</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: 数据在 GitHub 公开"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>数据在 GitHub 公开</span></a><a class="xlink" href="/zh/feed.xml" aria-label="RSS 订阅"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/zh/essays/">随笔</a><a href="/zh/news/">基本收入新闻</a><a href="/zh/shindan/">免费午餐测试</a><a href="/zh/calc/">基本收入计算器</a><a href="/zh/calc/countries/">211个国家和地区的费用</a><a href="/zh/badge/">徽章</a><span class="dot">Free Lunch Lab（免费午餐研究所）</span></div></footer>
@@ -1133,6 +1187,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
   });
 })();
-</script>
+</script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
+function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
 </body>
 </html>

@@ -71,7 +71,8 @@ const essayPath = (l, e) => `${essaysPath(l)}${e.id}/`;
 const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
 // エッセイ本文の {文字|/path/} はサイト内リンク（言語の接頭辞は自動で付く）。/essays/{id}/ への参照と related は実在を確かめる
 const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
-const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated'];
+const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated', 'essayRelatedH', 'essayToc', 'essayRead', 'essayBack'];
+for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack']) if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 // related（エッセイ）と essays（サービス・年表）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
 const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
@@ -1012,13 +1013,28 @@ const DETAIL_CSS = `
 .verify-line a,.verify-line span{padding:2px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
-/* エッセイは1行およそ38字（日本語）まで */
-.essay{max-width:38rem;margin-inline:auto}
+/* エッセイの幅は文字数で決める（--cpl × 本文の文字の大きさ）。日本語・中国語は1行およそ44字、それ以外はおよそ72字（字の幅が違うので言語ごとに --cpl で合わせる）。
+   本文は 17px（スマホ）〜18px（PC）を rem で書くので、ブラウザの文字の大きさの設定に合わせて幅も広がる */
+.essay{--fs:clamp(1.0625rem,.95rem + .4vw,1.125rem);--cpl:35;--lh:1.7;--measure:calc(var(--cpl) * var(--fs));--bleed:clamp(0px,(100vw - 32px - var(--measure)) / 2,(900px - var(--measure)) / 2);max-width:var(--measure);margin-inline:auto}
+html[lang="ja"] .essay{--cpl:44;--lh:1.9}
+html[lang="zh-Hans"] .essay{--cpl:39;--lh:1.9}
+html[lang="hi"] .essay{--cpl:43;--lh:1.75}
+html[lang="ar"] .essay{--cpl:32;--lh:1.75}
+.es-main{min-width:0}
+.essay .orgs-head h1{text-wrap:balance}
+html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{word-break:auto-phrase}
 .byline{font-size:.84rem;color:var(--muted)}
-.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:12px}
-.essay-body p{font-size:1rem;line-height:1.95}
-.essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
+.es-read{white-space:nowrap}
+.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:1em;margin-top:12px;font-size:var(--fs);line-height:var(--lh)}
+.essay-body p{font-size:1em;line-height:var(--lh)}
+/* 節の切れ目をはっきり: 見出しの上は本文のおよそ2.5字ぶん、下は狭く */
+.essay-body h2,.essay-body h3{font-family:var(--f-body);font-weight:700;font-size:1.25em;line-height:1.45;margin:1.2em 0 -.3em;scroll-margin-top:calc(var(--bar-h,56px) + 20px)}
+.essay-body h3{font-size:1.1em;margin-top:.9em}
+.essay-body>h2:first-child{margin-top:0}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+/* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
+.essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
+.essay-body>.wmap.es-wide{margin-block:.5em 0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
 .essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
@@ -1026,9 +1042,48 @@ const DETAIL_CSS = `
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
-/* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
-.fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
-.fnref a::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+/* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
+.fnref{line-height:0}
+.fnref a{display:inline-block;min-width:24px;min-height:24px;padding:4px 5px;margin:-6px -5px;line-height:16px;text-align:center;text-decoration:none;font-weight:700;border-radius:6px}
+.fnref a:hover{background:var(--accent-soft)}
+/* 目次: スマホ・タブレットは本文の上で開け閉めする（見出しが4つ以上のとき）。1200px 以上は横に固定 */
+.es-toc-m{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.9rem}
+.es-toc-m summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;cursor:pointer;font-weight:700;list-style:none}
+.es-toc-m summary::-webkit-details-marker{display:none}
+.es-toc-m summary::after{content:"";width:6px;height:6px;margin-inline-start:auto;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.es-toc-m[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.es-toc-m ol,.es-toc ol{margin:0;padding:0 16px 12px;padding-inline-start:2.2em;display:grid;gap:2px;line-height:1.5}
+.es-toc-m a,.es-toc a{display:block;padding:6px 0;color:var(--ink);text-decoration:none}
+.es-toc-m a:hover,.es-toc a:hover{color:var(--accent)}
+.es-toc{display:none}
+/* 記事の終わり: 数字で確かめる（世界地図の小さな画像つき）と関連エッセイのカード */
+.es-calc{margin-top:28px;display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:16px;align-items:center;padding:16px;border-radius:14px;border:1px solid var(--line);border-inline-start:3px solid var(--accent);background:var(--surface)}
+.es-calc-map{display:grid;gap:6px;font-size:.8125rem;font-weight:700;text-decoration:none}
+.es-calc-map img,.es-card img{display:block;width:100%;height:auto;aspect-ratio:40/21;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:var(--paper)}
+.es-calc-map:hover img,.es-card:hover img{border-color:var(--accent)}
+.es-calc-t h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:6px}
+.es-calc-t p{font-weight:700;line-height:1.9}
+.es-rel{margin-top:28px;padding:0}
+.es-rel h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:10px}
+.es-rel ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.es-card{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:14px;align-items:start;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
+.es-card:hover{border-color:var(--accent)}
+.es-card-t{display:grid;gap:4px;min-width:0}
+.es-card-t b{color:var(--accent);line-height:1.5;text-decoration:underline;text-underline-offset:3px}
+.es-card-t span{font-size:.84rem;line-height:1.65;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:520px){.es-calc{grid-template-columns:1fr}.es-calc-map{max-width:15rem}.es-card{grid-template-columns:minmax(0,6.5rem) minmax(0,1fr);gap:12px;padding:10px}.es-card-t span{-webkit-line-clamp:3}}
+.es-back{max-width:none}
+/* 1200px 以上: 記事を真ん中に置いたまま、横の余白に目次を固定する（ar は左右が入れ替わる）。ページの幅 1080px より広く使う */
+@media (min-width:1200px){
+.essay.has-toc{--toc:12rem;--side:calc((min(100vw - 32px, 1320px) - var(--measure)) / 2);--bleed:clamp(0px,var(--side) - var(--toc) - 32px,(900px - var(--measure)) / 2);max-width:none;width:min(100vw - 32px,1320px);margin-inline:calc((100% - min(100vw - 32px, 1320px)) / 2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,var(--measure)) minmax(0,1fr);align-items:start}
+.essay.has-toc>.es-main,.essay.has-toc>.es-back{grid-column:2}
+.essay.has-toc .es-toc-m{display:none}
+.es-toc{display:block;grid-column:3;grid-row:1;justify-self:end;width:min(var(--toc),100%);position:sticky;top:calc(var(--bar-h,56px) + 28px);max-height:calc(100vh - var(--bar-h,56px) - 56px);overflow-y:auto;margin-top:24px;font-size:.84rem}
+.es-toc-h{font-weight:700;font-size:.8125rem;color:var(--muted);padding-inline-start:12px;margin-bottom:6px}
+.es-toc ol{padding:0;list-style:none;gap:0}
+.es-toc a{padding:6px 12px;border-inline-start:2px solid var(--line);color:var(--muted)}
+.es-toc a[aria-current]{color:var(--ink);border-inline-start-color:var(--gold);font-weight:700}
+}
 .fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 .fn h2{font-size:1rem;margin-bottom:8px}
 .fn ol{margin:0;padding-inline-start:22px;display:grid;gap:14px;font-size:.84rem;line-height:1.7;overflow-wrap:anywhere}
@@ -1499,27 +1554,53 @@ ${groups}
   return shell(lang, { title, desc: L.orgsDesc, hrefFor: orgAbs, pathFor: orgPath, ld, ogType: 'website', body });
 }
 
+// 読了時間: 日本語・中国語は1分500字、それ以外（ラテン文字・デーヴァナーガリー・アラビア文字）は1分220語。表も数える（地図は数えない）
+const CJK_LANGS = new Set(['ja', 'zh']);
+function essayMinutes(e, lang) {
+  const text = (e.blocks[lang] || e.blocks.en).filter(([k]) => k !== 'm').map(([, t]) => t).join('\n')
+    .replace(ESSAY_LINK, '$1').replace(/\[\d+\]/g, '').replace(/ \| /g, ' ').replace(/[⁦-⁩]/g, '');
+  const n = CJK_LANGS.has(lang) ? text.replace(/\s+/g, '').length / 500 : text.split(/\s+/).filter(w => /[\p{L}\p{N}]/u.test(w)).length / 220;
+  return Math.max(1, Math.round(n));
+}
+const essayReadLabel = (lang, n) => cfill(T[lang].essayRead, { n, min: n === 1 ? 'دقيقة' : n === 2 ? 'دقيقتان' : n <= 10 ? 'دقائق' : 'دقيقة' });
+// 関連エッセイのカードと「数字で確かめる」の地図に使う小さな画像（OG 画像 1200x630 を 360x189 に縮めたもの）。
+// ページにはいったん印（@@thumb:…@@）を入れ、og.js のあとで src/og/thumb/ に作って URL にする
+const thumbImg = (rel, cls = '') => `<img${cls ? ` class="${cls}"` : ''} src="@@thumb:${rel}@@" width="360" height="189" loading="lazy" decoding="async" alt="">`;
+function essayRelatedCards(lang, list) {
+  if (!list.length) return '';
+  const L = T[lang];
+  return `<section class="es-rel" aria-labelledby="es-rel-h"><h2 id="es-rel-h">${esc(L.essayRelatedH)}</h2><ul>${list.map(x => `<li><a class="es-card" href="${essayPath(lang, x)}">${thumbImg(`essay/${lang}/${x.id}.jpg`)}<span class="es-card-t"><b>${esc(x.title[lang] || x.title.en)}</b><span>${esc(clip(x.desc[lang] || x.desc.en, lang))}</span></span></a></li>`).join('')}</ul></section>`;
+}
+
 // ---- エッセイ（/essays/{id}/）。[n] は脚注、o は「意見」の段落
+// 幅は文字数で決める（日本語・中国語は1行およそ44字、それ以外はおよそ72字）。文字の大きさを変えると幅も一緒に変わる。
+// 1200px 以上では h2 から作った目次を横に固定し、読んでいる節に印を付ける（JS がなくても目次のリンクは使える）
 function essayPage(e, lang) {
   const L = T[lang];
   const home = urlPath(lang);
   const ttl = e.title[lang] || e.title.en;
   const desc = e.desc[lang] || e.desc.en;
   const url = essayAbs(lang, e);
+  const rtl = RTL.has(lang);
   const fn = t => esc(t).replace(ESSAY_LINK, (_, txt, href) => `<a href="${urlPath(lang)}${href.slice(1)}">${txt}</a>`).replace(/\[(\d+)\]/g, (_, n) => `<sup class="fnref"><a href="#fn-${n}" id="ref-${n}">${n}</a></sup>`);
   // 「意見」の札は、見出しごとの最初の意見の段落にだけ付ける（毎段落だとうるさいので）
   let tagged = false;
+  const toc = [];
   const blocks = (e.blocks[lang] || e.blocks.en).map(([k, t]) => {
-    if (k === 'h') { tagged = false; return `<h2>${esc(t)}</h2>`; }
+    if (k === 'h') { tagged = false; toc.push(t); return `<h2 id="s${toc.length}">${esc(t)}</h2>`; }
     // t は表: 行は改行、セルは " | " で区切り、1行目が見出し。狭い画面では横にスクロールする
-    if (k === 't') { const [head, ...rows] = t.split('\n').map(r => r.split(' | ')); return `<div class="essay-table"><table><thead><tr>${head.map(c => `<th scope="col">${fn(c)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => i ? `<td>${fn(c)}</td>` : `<th scope="row">${fn(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`; }
+    if (k === 't') { const [head, ...rows] = t.split('\n').map(r => r.split(' | ')); return `<div class="essay-table es-wide"><table><thead><tr>${head.map(c => `<th scope="col">${fn(c)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => i ? `<td>${fn(c)}</td>` : `<th scope="row">${fn(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`; }
     // m は世界地図（/calc/map/ と同じ図と凡例、地図のページへのリンク）
-    if (k === 'm') return mapFigure(lang, { link: true });
+    if (k === 'm') return mapFigure(lang, { link: true }).replace('<figure class="wmap"', '<figure class="wmap es-wide"');
     if (k !== 'o') return `<p>${fn(t)}</p>`;
     const tag = tagged ? '' : `<span class="op-tag">${esc(L.essayOpinion)}</span>`;
     tagged = true;
     return `<p class="op">${tag}${fn(t)}</p>`;
   }).join('\n');
+  const tocList = toc.map((t, i) => `<li><a href="#s${i + 1}">${esc(t)}</a></li>`).join('');
+  const tocSide = toc.length >= 2 ? `<aside class="es-toc"><nav aria-labelledby="es-toc-h"><p class="es-toc-h" id="es-toc-h">${esc(L.essayToc)}</p><ol>${tocList}</ol></nav></aside>` : '';
+  const tocTop = toc.length >= 4 ? `<details class="es-toc-m"><summary>${esc(L.essayToc)}</summary><ol>${tocList}</ol></details>` : '';
+  const mins = essayMinutes(e, lang);
   const sources = e.sources.map(s => `<li id="fn-${s.n}"><a href="${esc(s.url)}" target="_blank" rel="noopener" dir="auto">${esc(s.label)}</a>${s.url2 ? ` · <a href="${esc(s.url2)}" target="_blank" rel="noopener" dir="ltr">${esc(new URL(s.url2).hostname.replace(/^www\./, ''))}</a>` : ''} <a class="fnback" href="#ref-${s.n}" aria-label="↩">↩</a></li>`).join('');
   const ld = [
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
@@ -1528,26 +1609,30 @@ function essayPage(e, lang) {
       { '@type': 'ListItem', position: 3, name: ttl, item: url } ] },
     { '@context': 'https://schema.org', '@type': 'Article', headline: ttl, description: desc, inLanguage: LANG_TAG[lang], datePublished: e.date, dateModified: e.date,
       author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
-      mainEntityOfPage: url, image: ogImage(`essay/${lang}/${e.id}.jpg`) },
+      mainEntityOfPage: url, image: ogImage(`essay/${lang}/${e.id}.jpg`), timeRequired: `PT${mins}M` },
   ];
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a></li><li aria-current="page">${esc(ttl)}</li></ol></nav>
-<main class="essay">
-<article>
-<header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time></p>
+<main class="essay${tocSide ? ' has-toc' : ''}">
+<article class="es-main">
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time> · <span class="es-read">${esc(essayReadLabel(lang, mins))}</span></p>
 ${shareRow(lang, ttl, url, { compact: true, mk: k => `${url}?s=${k}` })}</header>
-<div class="essay-body">${blocks}</div>
+${tocTop}<div class="essay-body">${blocks}</div>
 ${channelShare(lang, ttl, k => `${url}?s=${k}`, { primary: L.calcShareX, tag: T[lang].calcTag, label: L.essayShare, id: 'share' })}
-${relatedLinks(lang, essayList(e.related))}
 ${essayDataLinks(lang, e)}
+${essayRelatedCards(lang, essayList(e.related))}
 ${GUIDES.filter(g => g.essay === e.id).map(g => guideLink(lang, g, 'related g-rel')).join('')}
 ${qzCard(lang, 'essay-quiz')}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
 </article>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+${tocSide}<p class="back es-back"><a class="btn line" href="${essaysPath(lang)}">${rtl ? '→' : '←'} ${esc(L.essayBack)}</a></p>
 </main>`;
   const hasMap = (e.blocks[lang] || e.blocks.en).some(([k]) => k === 'm');
-  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L) + (hasMap ? mapScript(lang) : ''), image: ogImage(`essay/${lang}/${e.id}.jpg`), extraHead: hasMap ? MAP_CSS + '\n' : '' });
+  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L) + (hasMap ? mapScript(lang) : '') + (tocSide ? ESSAY_TOC_JS : ''), image: ogImage(`essay/${lang}/${e.id}.jpg`), extraHead: hasMap ? MAP_CSS + '\n' : '' });
 }
+// 目次の印: 画面の上から3割あたりを通り過ぎた最後の h2 の節を「いま読んでいる節」にする（IntersectionObserver がなければ何もしない）
+const ESSAY_TOC_JS = `<script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
+function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>`;
 function essaysIndex(lang) {
   const L = T[lang];
   const home = urlPath(lang);
@@ -1843,8 +1928,8 @@ function essayDataLinks(lang, e) {
   if (x.pilots) links.push(`<a href="${usPath(lang)}">${esc(cfill(L.usH1, { n: US_TL.length }))}</a>`);
   if (!x.calc.length) links.push(`<a href="${calcPath(lang)}">${esc(L.calcTitle)}</a>`);
   links.push(`<a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a>`);
-  links.push(`<a href="${mapPath(lang)}">${esc(L.mapLink)}</a>`);
-  return `<p class="related g-rel">${esc(L.essayCalc)}: ${links.join(' · ')}</p>`;
+  // 世界地図は小さな画像つきのカードにして目立たせる
+  return `<section class="es-calc" aria-labelledby="es-calc-h"><a class="es-calc-map" href="${mapPath(lang)}">${thumbImg(`calc/${lang}/map.jpg`)}<span>${esc(L.mapLink)} ${RTL.has(lang) ? '←' : '→'}</span></a><div class="es-calc-t"><h2 id="es-calc-h">${esc(L.essayCalc)}</h2><p>${links.join(' · ')}</p></div></section>`;
 }
 // 国のページの「この国についてのエッセイ」欄（ESSAY_DATA の逆向き）。アメリカは保証所得実験の一覧も
 function calcCtyEssays(lang, c) {
@@ -2521,7 +2606,18 @@ else for (let i = 1; i <= 3; i++) {
   const file = path.join(__dirname, 'src/shindan-cards.json'), json = JSON.stringify(list) + '\n';
   if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== json) fs.writeFileSync(file, json);
 }
-for (const { file, html, lang } of pages) fs.writeFileSync(file, ogResolve(html.replace('<!--@fonts@-->', fontHead[lang])));
+// エッセイのカード用の小さな画像（src/og/thumb/…、360x189）。OG 画像より古ければ macOS の sips で作り直す。作れないときは元の OG 画像を使う
+const THUMB_DIR = path.join(OG_DIR, 'thumb');
+const thumbResolve = html => html.replace(/@@thumb:([^@]+)@@/g, (m, rel) => {
+  const src = path.join(OG_DIR, rel), dst = path.join(THUMB_DIR, rel);
+  if (!fs.existsSync(src)) { ogMissing.push(rel); return `/og/${rel.split('/')[1]}.png`; }
+  if (!fs.existsSync(dst) || fs.statSync(dst).mtimeMs < fs.statSync(src).mtimeMs) {
+    fs.mkdirSync(path.dirname(dst), { recursive: true });
+    try { execFileSync('sips', ['-s', 'format', 'jpeg', '-s', 'formatOptions', '60', '-Z', '360', src, '--out', dst], { stdio: 'ignore' }); } catch { return `/og/${rel}`; }
+  }
+  return `/og/thumb/${rel}`;
+});
+for (const { file, html, lang } of pages) fs.writeFileSync(file, thumbResolve(ogResolve(html.replace('<!--@fonts@-->', fontHead[lang]))));
 fs.mkdirSync(path.join(OUT, 'fonts'), { recursive: true });
 for (const f of fs.readdirSync(FONT_DIR)) if (f.endsWith('.woff2')) fs.copyFileSync(path.join(FONT_DIR, f), path.join(OUT, 'fonts', f));
 

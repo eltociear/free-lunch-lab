@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@FreeLunchLab">
 <meta name="twitter:image" content="https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/refundable-tax-credit-vs-basic-income.jpg">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free Lunch Lab（免费午餐研究所）","item":"https://neteru-nyukin.eltociear.workers.dev/zh/"},{"@type":"ListItem","position":2,"name":"随笔","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/"},{"@type":"ListItem","position":3,"name":"可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/refundable-tax-credit-vs-basic-income/"}]},{"@context":"https://schema.org","@type":"Article","headline":"可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起","description":"作为“可退还税收抵免”第一步的日本就业者负担减轻支援金法案，于 2026 年 11 月在众议院通过。我们把它与美国的 EITC、儿童税收抵免以及英国、加拿大的做法放在一起，逐项看它与基本收入的异同。","inLanguage":"zh-Hans","datePublished":"2026-11-06","dateModified":"2026-11-06","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/refundable-tax-credit-vs-basic-income/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/refundable-tax-credit-vs-basic-income.jpg"}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free Lunch Lab（免费午餐研究所）","item":"https://neteru-nyukin.eltociear.workers.dev/zh/"},{"@type":"ListItem","position":2,"name":"随笔","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/"},{"@type":"ListItem","position":3,"name":"可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起","item":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/refundable-tax-credit-vs-basic-income/"}]},{"@context":"https://schema.org","@type":"Article","headline":"可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起","description":"作为“可退还税收抵免”第一步的日本就业者负担减轻支援金法案，于 2026 年 11 月在众议院通过。我们把它与美国的 EITC、儿童税收抵免以及英国、加拿大的做法放在一起，逐项看它与基本收入的异同。","inLanguage":"zh-Hans","datePublished":"2026-11-06","dateModified":"2026-11-06","author":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"publisher":{"@type":"Organization","name":"Free Lunch Lab","url":"https://neteru-nyukin.eltociear.workers.dev/"},"mainEntityOfPage":"https://neteru-nyukin.eltociear.workers.dev/zh/essays/refundable-tax-credit-vs-basic-income/","image":"https://neteru-nyukin.eltociear.workers.dev/og/essay/zh/refundable-tax-credit-vs-basic-income.jpg","timeRequired":"PT10M"}]</script>
 <link rel="preload" href="/fonts/noto-sans-sc-400-zh-ced1541eda.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/noto-sans-sc-900-zh-50ddb00ef8.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/zen-kaku-gothic-new-900-logo-2f843f4f31.woff2" as="font" type="font/woff2" crossorigin>
@@ -799,13 +799,28 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .verify-line a,.verify-line span{padding:2px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--surface)}
 .verify-line a:hover{border-color:var(--accent);color:var(--accent)}
 .vother{margin-top:28px}
-/* エッセイは1行およそ38字（日本語）まで */
-.essay{max-width:38rem;margin-inline:auto}
+/* エッセイの幅は文字数で決める（--cpl × 本文の文字の大きさ）。日本語・中国語は1行およそ44字、それ以外はおよそ72字（字の幅が違うので言語ごとに --cpl で合わせる）。
+   本文は 17px（スマホ）〜18px（PC）を rem で書くので、ブラウザの文字の大きさの設定に合わせて幅も広がる */
+.essay{--fs:clamp(1.0625rem,.95rem + .4vw,1.125rem);--cpl:35;--lh:1.7;--measure:calc(var(--cpl) * var(--fs));--bleed:clamp(0px,(100vw - 32px - var(--measure)) / 2,(900px - var(--measure)) / 2);max-width:var(--measure);margin-inline:auto}
+html[lang="ja"] .essay{--cpl:44;--lh:1.9}
+html[lang="zh-Hans"] .essay{--cpl:39;--lh:1.9}
+html[lang="hi"] .essay{--cpl:43;--lh:1.75}
+html[lang="ar"] .essay{--cpl:32;--lh:1.75}
+.es-main{min-width:0}
+.essay .orgs-head h1{text-wrap:balance}
+html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{word-break:auto-phrase}
 .byline{font-size:.84rem;color:var(--muted)}
-.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:12px}
-.essay-body p{font-size:1rem;line-height:1.95}
-.essay-body h2{font-family:var(--f-body);font-weight:700;font-size:1.2rem;margin-top:14px}
+.es-read{white-space:nowrap}
+.essay-body{display:grid;grid-template-columns:minmax(0,1fr);gap:1em;margin-top:12px;font-size:var(--fs);line-height:var(--lh)}
+.essay-body p{font-size:1em;line-height:var(--lh)}
+/* 節の切れ目をはっきり: 見出しの上は本文のおよそ2.5字ぶん、下は狭く */
+.essay-body h2,.essay-body h3{font-family:var(--f-body);font-weight:700;font-size:1.25em;line-height:1.45;margin:1.2em 0 -.3em;scroll-margin-top:calc(var(--bar-h,56px) + 20px)}
+.essay-body h3{font-size:1.1em;margin-top:.9em}
+.essay-body>h2:first-child{margin-top:0}
 .essay-body .op{padding-inline-start:14px;border-inline-start:3px solid var(--gold)}
+/* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
+.essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
+.essay-body>.wmap.es-wide{margin-block:.5em 0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;min-width:520px;border-collapse:collapse;font-size:.9rem;line-height:1.6}
 .essay-table th,.essay-table td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line)}
@@ -813,9 +828,48 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 .essay-table tbody th{font-weight:700}
 .essay-table tbody tr:last-child>*{border-bottom:0}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
-/* 脚注の番号は小さいので、見た目を変えずに押せる範囲だけ 44px に広げる */
-.fnref a{position:relative;text-decoration:none;font-weight:700;padding-inline:2px}
-.fnref a::after{content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+/* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
+.fnref{line-height:0}
+.fnref a{display:inline-block;min-width:24px;min-height:24px;padding:4px 5px;margin:-6px -5px;line-height:16px;text-align:center;text-decoration:none;font-weight:700;border-radius:6px}
+.fnref a:hover{background:var(--accent-soft)}
+/* 目次: スマホ・タブレットは本文の上で開け閉めする（見出しが4つ以上のとき）。1200px 以上は横に固定 */
+.es-toc-m{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.9rem}
+.es-toc-m summary{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;cursor:pointer;font-weight:700;list-style:none}
+.es-toc-m summary::-webkit-details-marker{display:none}
+.es-toc-m summary::after{content:"";width:6px;height:6px;margin-inline-start:auto;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
+.es-toc-m[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.es-toc-m ol,.es-toc ol{margin:0;padding:0 16px 12px;padding-inline-start:2.2em;display:grid;gap:2px;line-height:1.5}
+.es-toc-m a,.es-toc a{display:block;padding:6px 0;color:var(--ink);text-decoration:none}
+.es-toc-m a:hover,.es-toc a:hover{color:var(--accent)}
+.es-toc{display:none}
+/* 記事の終わり: 数字で確かめる（世界地図の小さな画像つき）と関連エッセイのカード */
+.es-calc{margin-top:28px;display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:16px;align-items:center;padding:16px;border-radius:14px;border:1px solid var(--line);border-inline-start:3px solid var(--accent);background:var(--surface)}
+.es-calc-map{display:grid;gap:6px;font-size:.8125rem;font-weight:700;text-decoration:none}
+.es-calc-map img,.es-card img{display:block;width:100%;height:auto;aspect-ratio:40/21;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:var(--paper)}
+.es-calc-map:hover img,.es-card:hover img{border-color:var(--accent)}
+.es-calc-t h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:6px}
+.es-calc-t p{font-weight:700;line-height:1.9}
+.es-rel{margin-top:28px;padding:0}
+.es-rel h2{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin-bottom:10px}
+.es-rel ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.es-card{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:14px;align-items:start;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;transition:border-color .15s ease}
+.es-card:hover{border-color:var(--accent)}
+.es-card-t{display:grid;gap:4px;min-width:0}
+.es-card-t b{color:var(--accent);line-height:1.5;text-decoration:underline;text-underline-offset:3px}
+.es-card-t span{font-size:.84rem;line-height:1.65;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:520px){.es-calc{grid-template-columns:1fr}.es-calc-map{max-width:15rem}.es-card{grid-template-columns:minmax(0,6.5rem) minmax(0,1fr);gap:12px;padding:10px}.es-card-t span{-webkit-line-clamp:3}}
+.es-back{max-width:none}
+/* 1200px 以上: 記事を真ん中に置いたまま、横の余白に目次を固定する（ar は左右が入れ替わる）。ページの幅 1080px より広く使う */
+@media (min-width:1200px){
+.essay.has-toc{--toc:12rem;--side:calc((min(100vw - 32px, 1320px) - var(--measure)) / 2);--bleed:clamp(0px,var(--side) - var(--toc) - 32px,(900px - var(--measure)) / 2);max-width:none;width:min(100vw - 32px,1320px);margin-inline:calc((100% - min(100vw - 32px, 1320px)) / 2);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,var(--measure)) minmax(0,1fr);align-items:start}
+.essay.has-toc>.es-main,.essay.has-toc>.es-back{grid-column:2}
+.essay.has-toc .es-toc-m{display:none}
+.es-toc{display:block;grid-column:3;grid-row:1;justify-self:end;width:min(var(--toc),100%);position:sticky;top:calc(var(--bar-h,56px) + 28px);max-height:calc(100vh - var(--bar-h,56px) - 56px);overflow-y:auto;margin-top:24px;font-size:.84rem}
+.es-toc-h{font-weight:700;font-size:.8125rem;color:var(--muted);padding-inline-start:12px;margin-bottom:6px}
+.es-toc ol{padding:0;list-style:none;gap:0}
+.es-toc a{padding:6px 12px;border-inline-start:2px solid var(--line);color:var(--muted)}
+.es-toc a[aria-current]{color:var(--ink);border-inline-start-color:var(--gold);font-weight:700}
+}
 .fn{margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 .fn h2{font-size:1rem;margin-bottom:8px}
 .fn ol{margin:0;padding-inline-start:22px;display:grid;gap:14px;font-size:.84rem;line-height:1.7;overflow-wrap:anywhere}
@@ -1063,13 +1117,13 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 </div>
 <div class="wrap">
 <nav class="crumbs" aria-label="面包屑导航"><ol><li><a href="/zh/">Free Lunch Lab（免费午餐研究所）</a></li><li><a href="/zh/essays/">随笔</a></li><li aria-current="page">可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起</li></ol></nav>
-<main class="essay">
-<article>
-<header class="orgs-head"><p class="eyebrow">随笔</p><h1>可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起</h1><p class="byline">作者：Free Lunch Lab · <time datetime="2026-11-06">发布 2026年11月6日</time></p>
+<main class="essay has-toc">
+<article class="es-main">
+<header class="orgs-head"><p class="eyebrow">随笔</p><h1>可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起</h1><p class="byline">作者：Free Lunch Lab · <time datetime="2026-11-06">发布 2026年11月6日</time> · <span class="es-read">阅读约需 10 分钟</span></p>
 <div class="shr shr-top"><a class="btn shr-o" href="https://x.com/intent/post?text=%E5%8F%AF%E9%80%80%E8%BF%98%E7%A8%8E%E6%94%B6%E6%8A%B5%E5%85%8D%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C%EF%BC%9F%E4%BB%8E%E6%97%A5%E6%9C%AC%E6%96%B0%E7%9A%84%E2%80%9C%E5%B0%B1%E4%B8%9A%E8%80%85%E8%B4%9F%E6%8B%85%E5%87%8F%E8%BD%BB%E6%94%AF%E6%8F%B4%E9%87%91%E2%80%9D%E8%AF%B4%E8%B5%B7%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Frefundable-tax-credit-vs-basic-income%2F%3Fs%3Dx%20%23%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5" target="_blank" rel="noopener"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>分享到 X</span></a><button class="btn shr-o" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/zh/essays/refundable-tax-credit-vs-basic-income/?s=copy">复制链接</button><button class="btn shr-o" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/zh/essays/refundable-tax-credit-vs-basic-income/?s=native" data-text="可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起 #基本收入" hidden>分享</button></div></header>
-<div class="essay-body"><p>2026 年 11 月 6 日，日本众议院通过了一项法案。它把食品的消费税率在两年内降到 1%，同时设立“就业者负担减轻支援金”，每年按收入向工作的中低收入者发放现金。政府把这笔支援金定位为日本讨论多年的“可退还税收抵免”（给付付税额控除）的第一步。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></p>
+<details class="es-toc-m"><summary>目录</summary><ol><li><a href="#s1">日本定下了什么，还没定什么</a></li><li><a href="#s2">可退还税收抵免本来是什么</a></li><li><a href="#s3">其他国家怎么做</a></li><li><a href="#s4">与基本收入的六点不同</a></li><li><a href="#s5">按“净额”可以完全相同</a></li><li><a href="#s6">用 BIEN 的五条标准衡量</a></li><li><a href="#s7">三个人放在一起比</a></li><li><a href="#s8">现实的第一步吗？</a></li></ol></details><div class="essay-body"><p>2026 年 11 月 6 日，日本众议院通过了一项法案。它把食品的消费税率在两年内降到 1%，同时设立“就业者负担减轻支援金”，每年按收入向工作的中低收入者发放现金。政府把这笔支援金定位为日本讨论多年的“可退还税收抵免”（给付付税额控除）的第一步。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></p>
 <p>听到“可退还税收抵免”，有人会联想到接近基本收入的东西，因为两者都把税制和现金发放连在一起。但两者在发给谁、以什么条件、什么时候到手这几点上差别很大。我们先确认日本的制度定下了什么、还没定什么，再把它和其他国家的例子放在一起，逐项看差别。</p>
-<h2>日本定下了什么，还没定什么</h2>
+<h2 id="s1">日本定下了什么，还没定什么</h2>
 <p>执政党在 2025 年夏季参议院选举中承诺的每人 2 万日元一律给付没有实现，讨论的重心转向了按收入、每年持续发放的机制。2025 年 12 月 18 日，自民党与国民民主党达成协议，以引入可退还税收抵免等新制度为前提，在三年内彻底重新检讨所得税的人身扣除。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>2026 年 2 月启动的社会保障国民会议，经过朝野实务者会议和专家会议的讨论，于 7 月 29 日提出中期汇总。内容是：为提高中低收入在职劳动者的到手收入、缓和“年收之墙”造成的少工作现象，把税和社会保险费的负担与现金给付合在一起看，在 2029 财年引入“与收入挂钩的精细给付”。也有人强烈主张理想形态是税收抵免与现金给付相结合，但为避免制度过于复杂，暂时只采用现金给付。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>政府在 9 月 15 日以内阁决议通过了将其具体化的大纲，并于 10 月 9 日向国会提交法案。从 2027 年 4 月起的两年里，食品消费税率由 8% 降至 1%（国税 0.78% 加地方消费税）；这两年内，支援金在相当于 1 个百分点食品消费税预计收入的范围内先行发放。税率恢复为 8% 的 2029 财年起正式实施。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></p>
@@ -1079,29 +1133,29 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>还没定的，恰恰是最关键的金额和界线。收入下限、上限和支援金额，都将由政令决定。<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup> 据报道，政府 10 月作为“一个参考”向朝野各党出示的方案是：2027、2028 财年对象约 2000 万人，人均每年约 3 万日元，总额每年约 6000 亿日元，上限可能定在个人年收入 300 多万日元。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> 关于收入下限，国民会议上曾提出工资收入约 53 万、74 万、约 106 万日元三个方案。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>法案于 11 月 6 日在自民党、日本维新会等的多数赞成下通过众议院，所有在野党都投了反对票。参议院预计从下周开始审议，但执政党在参议院未过半数，能否在 12 月 12 日会期结束前成立，目前还不清楚。<sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></p>
 <p class="op"><span class="op-tag">观点</span>也就是说，虽然名为“可退还税收抵免”，日本先建立起来的并不是税收抵免，而是按收入发放的现金，对象限于工作的中低收入者。这是比较它与基本收入的出发点。</p>
-<h2>可退还税收抵免本来是什么</h2>
+<h2 id="s2">可退还税收抵免本来是什么</h2>
 <p>税收抵免是从应缴税额中扣除一定金额。但本来就缴税不多的人用不完这笔抵免，收入越低，得到的好处越少。于是把扣不完的部分以现金支付，这就是“可退还”（refundable）的税收抵免。</p>
 <p>它的源头之一，是经济学家米尔顿·弗里德曼在 1962 年《资本主义与自由》中推广的“负所得税”：收入低于某条线的人不缴税，反而从政府领钱。20 世纪 60 年代末到 70 年代，美国做了四项大型实验来检验这个想法。规模最大的西雅图—丹佛实验（约 4800 户）中，丈夫的年工作时间减少约 9%，妻子约 20%，单亲母亲约 14%。一项发现离婚增加的分析也引发了争议。<sup class="fnref"><a href="#fn-6" id="ref-6">6</a></sup> <a href="/zh/timeline/#tl-mincome">加拿大多芬的 Mincome</a> 也是同一类型的保障，按其他收入的 50% 扣减。</p>
-<h2>其他国家怎么做</h2>
+<h2 id="s3">其他国家怎么做</h2>
 <p>美国的劳动所得税收抵免（EITC）是最有名的可退还税收抵免。抵免随劳动收入增加，达到上限后，再随收入提高而减少。2026 年度，有三个及以上子女的家庭在劳动收入 18,290 美元以内按 45% 递增，最多 8,231 美元；没有子女的人最多 664 美元。<sup class="fnref"><a href="#fn-7" id="ref-7">7</a></sup> 通常在次年报税时领取。</p>
 <p>不报税就领不到，所以有人漏领。美国国税局（IRS）估计，2022 纳税年度全国参与率为 80.8%（另一项基于人口调查的估计为 78%），大约每五个有资格的人中就有一人没有领。<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup></p>
 <p>2021 年，儿童税收抵免（CTC）扩大了一年：每名儿童每年 3,000 美元（6 岁以下 3,600 美元），没有收入的家庭也能全额领取，其中一半在 7 月至 12 月按月预付。按人口普查局的补充贫困指标，儿童贫困率在 2021 年降到 5.2%，为有记录以来最低；扩大措施结束后，2022 年回升到 12.4%，翻了一倍多（均为首次公布值）。<sup class="fnref"><a href="#fn-9" id="ref-9">9</a></sup> 2025 年为 13.4%。即便如此，EITC 和 CTC 的可退还部分在 2025 年仍让 330 万名儿童脱离了贫困线以下。<sup class="fnref"><a href="#fn-10" id="ref-10">10</a></sup></p>
 <p>英国走了另一条路。工作税收抵免（Working Tax Credit）和儿童税收抵免已与其他福利一起被统一福利（Universal Credit）取代。它每月按当月收入计算；对抚养子女、或因健康原因工作能力受限的人，收入超过每月 427 英镑或 710 英镑的“工作豁免额”后，每多挣 1 英镑，福利减少 55 便士。夫妻按一个家庭计算。<sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></p>
 <p>加拿大儿童福利（Canada Child Benefit）通过报税掌握家庭收入，按月发放，不问是否工作。2026 年 7 月至 2027 年 6 月，每名 6 岁以下儿童每年最多 8,157 加元，6 至 17 岁 6,883 加元；家庭上一年净收入超过 38,237 加元后开始递减。<sup class="fnref"><a href="#fn-12" id="ref-12">12</a></sup></p>
-<h2>与基本收入的六点不同</h2>
+<h2 id="s4">与基本收入的六点不同</h2>
 <p>第一，发给谁。基本收入发给所有人。可退还税收抵免划出收入界线，只发给线内的人。按参考数字，日本的支援金对象约 2000 万人。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup></p>
 <p>第二，是否以工作为条件。EITC 和日本的支援金设计成没有劳动收入就领不到、开始工作就增加，因为它们本来就是为了鼓励工作。反过来，因疾病、残障、照护或失业而无法工作的人领不到。日本的法案规定，政府将研究针对这些人的措施，并在 2028 财年内得出结论。<sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup> 基本收入则根本没有条件。</p>
 <p>第三，个人还是家庭。EITC 按报税单位（夫妻合并申报）计算，统一福利按家庭，加拿大儿童福利按家庭收入。日本的支援金以个人为单位，在这一点上接近基本收入；不过正式实施后，配偶收入超过一定数额的人会被排除。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup></p>
 <p>第四，什么时候到手。基本收入每月、事先到手。EITC 在一年结束后通过报税领取，日本的支援金也按上一年的收入每年发一次。今年收入骤降，要到明年才反映出来。美国 2021 年把 CTC 改为按月预付，正是为了缩小这个时间差。</p>
 <p>第五，漏领。需要申请或报税的制度，总会有符合条件却没领到的人。EITC 大约是五分之一。<sup class="fnref"><a href="#fn-8" id="ref-8">8</a></sup> 日本的支援金设计成登记了公金领取账户就无需申请，但登记率目前只有五成左右。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup></p>
 <p>第六，收入增加时怎么减。随收入增加而减少福利，对领取者来说，作用和提高税率一样。统一福利的 55% 递减率再叠加所得税和国民保险费，每多挣 1 英镑留在手里的就更少。为避免福利突然消失的“悬崖”，各国都采取逐步递减的方式，但处在递减区间的人，实际负担会更重。日本的支援金为“年收之墙”设加算，也是对这个问题的回应。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-11" id="ref-11">11</a></sup></p>
-<h2>按“净额”可以完全相同</h2>
+<h2 id="s5">按“净额”可以完全相同</h2>
 <p>列了这么多不同，其实负所得税和基本收入可以设计成让每个人最后的到手收入完全一样。用简单的数字来验证。这里的 30% 只是为了比较机制而假设的数字，不是财源测算。</p>
 <p>基本收入一侧：每人每年发 36 万日元（每月 3 万日元），同时对所有收入加征 30% 的税。负所得税一侧：收入为零的人每年领 36 万日元，收入每多 1 日元就减少 0.3 日元；收入达到 120 万日元时给付为零，超过部分按 30% 缴税。</p>
 <p>收入为零的人，两边都是领 36 万日元。收入 100 万日元的人，基本收入下领 36 万、缴 30 万，净领 6 万；负所得税下 36 万减去 30 万，也是 6 万。收入 300 万日元的人，基本收入下领 36 万、缴 90 万，净负担 54 万；负所得税下，对超过 120 万日元的 180 万日元按 30% 缴税，同样是 54 万。</p>
 <p class="op"><span class="op-tag">观点</span>净额完全相同。不同的是资金流动的样子和到手的先后。基本收入是先让所有人领到，有收入的人再以税的形式交回一部分，所以发放总额（毛额）看起来非常大。用<a href="/zh/calc/?c=jp&amp;w=all&amp;m=30000">基本收入计算器</a>算，向日本每个人每月发 3 万日元，毛额每年约 44.2 万亿日元，约为 GDP 的 6.7%。政治哲学家卡尔·怀德奎斯特在 2017 年的论文中以美国为例计算，扣除以税收形式回流的部分后，净成本远小于毛额。<sup class="fnref"><a href="#fn-13" id="ref-13">13</a></sup></p>
 <p class="op">反过来说，基本收入与负所得税的真正差别不在净额，而在于钱是先到每个人手里，还是只在资格被确认后才发给部分人。这个差别决定了有多少人漏领，以及失业时这笔钱能否马上派上用场。 <a href="/zh/essays/takenaka-70000-yen-basic-income/">竹中平藏解释他的每月 7 万日元方案时</a>，也说低收入者适用“负税率”，并提到先发给所有人、再让高收入者通过报税返还的方法。</p>
-<h2>用 BIEN 的五条标准衡量</h2>
+<h2 id="s6">用 BIEN 的五条标准衡量</h2>
 <p>基本收入地球网络（BIEN）把基本收入定义为“无需经济状况调查或工作要求、以个人为单位无条件发给所有人的定期现金给付”。<sup class="fnref"><a href="#fn-14" id="ref-14">14</a></sup> 我们在<a href="/zh/essays/japan-special-cash-payment/">关于 10 万日元给付金的随笔</a>里也用过这把尺子，这里用它来衡量日本的新支援金。</p>
 <p>定期吗？是，但每年只有一次。</p>
 <p>现金吗？是。</p>
@@ -1109,24 +1163,24 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <p>普遍吗？不是。只发给收入在下限与上限之间、正在工作的人。</p>
 <p>无条件吗？不是。要求有劳动收入，并缴纳一定水平的税和社会保险费。<sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup><sup class="fnref"><a href="#fn-3" id="ref-3">3</a></sup></p>
 <p class="op"><span class="op-tag">观点</span>五条中满足两条半。美国的 EITC 按报税单位计算、以工作为条件、又有收入界线，得分更低。不满足这些标准，与其说是设计缺陷，不如说是目的不同。可退还税收抵免是减轻工作者负担、让多工作一小时更划算的工具；基本收入则是不论是否工作，都为每个人托底的工具。</p>
-<h2>三个人放在一起比</h2>
+<h2 id="s7">三个人放在一起比</h2>
 <p>最后用三个人的例子来比较。日本支援金的金额和界线尚未确定，这里只使用法案与大纲中的规则和政府给出的参考数字。基本收入设为每人每月 3 万日元（每年 36 万日元）。</p>
 <p>A 正在找工作，去年没有劳动收入。领不到支援金。如果是基本收入，每年 36 万日元，每月到手 3 万日元。</p>
 <p>B 做兼职，去年工资收入 100 万日元。能否领到取决于下限划在哪里。若采用工资收入约 53 万或 74 万日元的方案，B 符合条件，而且低于住民税免税线，大概会领到定额部分；若采用约 106 万日元的方案，则不符合。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup><sup class="fnref"><a href="#fn-2" id="ref-2">2</a></sup> 如果是基本收入，每年 36 万日元。</p>
 <p>C 是公司职员，去年工资收入 450 万日元，高于政府参考方案中的上限（个人年收入 300 多万日元），大概领不到支援金。<sup class="fnref"><a href="#fn-4" id="ref-4">4</a></sup> 如果是基本收入，C 每年领 36 万日元，但为筹措财源缴的税也会增加，净额上可能是负担增加。</p>
 <p class="op"><span class="op-tag">观点</span>支援金最能照顾到的是像 B 这样的人，而 A 领不到。基本收入给三个人同样的金额，差别由税来调节。哪种更好，取决于想达到什么目的。</p>
-<h2>现实的第一步吗？</h2>
+<h2 id="s8">现实的第一步吗？</h2>
 <p class="op"><span class="op-tag">观点</span>可退还税收抵免有基本收入所没有的长处。因为有针对性，同样的预算可以让每个人领得更多；因为工作越多到手越多，鼓励工作的信号清楚；也更容易达成共识。在日本，朝野各党在国民会议上就 2029 财年引入与收入挂钩的给付达成了一致。引发对立的是与消费税减税捆绑的“过渡措施”，在众议院表决时所有在野党都投了反对票。<sup class="fnref"><a href="#fn-1" id="ref-1">1</a></sup><sup class="fnref"><a href="#fn-5" id="ref-5">5</a></sup></p>
 <p class="op">日本的支援金正在建立的东西，即掌握每个人的收入、无需申请就把钱打进账户的机制，也是发放基本收入不可缺少的基础。想到 2020 年的 10 万日元因为要逐一核对银行账户，有些人要等好几个月才收到，这一点的意义并不小。</p>
 <p class="op">但也要看到它的局限：无法工作的人领不到，到手晚一年，而且一年只有一次。每年约 3 万日元的参考金额，是每月 3 万日元基本收入的十二分之一。与其把可退还税收抵免看作基本收入的替代品，不如把它看作填补现有制度一个漏洞的工具，这样更准确。这个工具能长到多大，要看 2029 财年正式实施前金额与界线如何确定。我们会继续关注。</p></div>
 <div class="shr shr-ch" id="share"><p class="shr-h">分享这篇文章</p><button class="btn sc shr-nat" type="button" data-native="https://neteru-nyukin.eltociear.workers.dev/zh/essays/refundable-tax-credit-vs-basic-income/?s=native" data-text="可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起 #基本收入" data-primary hidden><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 11v8.5c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V11"/></svg><span>分享</span></button><button class="btn sc sc-copy sc-1" type="button" data-copy="https://neteru-nyukin.eltociear.workers.dev/zh/essays/refundable-tax-credit-vs-basic-income/?s=copy"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></svg><span>复制链接</span></button><a class="btn sc sc-x" href="https://x.com/intent/post?text=%E5%8F%AF%E9%80%80%E8%BF%98%E7%A8%8E%E6%94%B6%E6%8A%B5%E5%85%8D%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C%EF%BC%9F%E4%BB%8E%E6%97%A5%E6%9C%AC%E6%96%B0%E7%9A%84%E2%80%9C%E5%B0%B1%E4%B8%9A%E8%80%85%E8%B4%9F%E6%8B%85%E5%87%8F%E8%BD%BB%E6%94%AF%E6%8F%B4%E9%87%91%E2%80%9D%E8%AF%B4%E8%B5%B7%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Frefundable-tax-credit-vs-basic-income%2F%3Fs%3Dx%20%23%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5" target="_blank" rel="noopener" aria-label="分享到 X"><svg class="xicon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>X</span></a><a class="btn sc sc-tg" href="https://t.me/share/url?url=https%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Frefundable-tax-credit-vs-basic-income%2F%3Fs%3Dtg&amp;text=%E5%8F%AF%E9%80%80%E8%BF%98%E7%A8%8E%E6%94%B6%E6%8A%B5%E5%85%8D%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C%EF%BC%9F%E4%BB%8E%E6%97%A5%E6%9C%AC%E6%96%B0%E7%9A%84%E2%80%9C%E5%B0%B1%E4%B8%9A%E8%80%85%E8%B4%9F%E6%8B%85%E5%87%8F%E8%BD%BB%E6%94%AF%E6%8F%B4%E9%87%91%E2%80%9D%E8%AF%B4%E8%B5%B7" target="_blank" rel="noopener" aria-label="分享到 Telegram"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.6 4.2 18.5 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.4 13 1.7 11.5c-1-.3-1-1 .2-1.5L20.4 2.9c.8-.3 1.6.2 1.2 1.3z"/></svg><span>Telegram</span></a><a class="btn sc sc-wa" href="https://wa.me/?text=%E5%8F%AF%E9%80%80%E8%BF%98%E7%A8%8E%E6%94%B6%E6%8A%B5%E5%85%8D%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%94%B6%E5%85%A5%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C%EF%BC%9F%E4%BB%8E%E6%97%A5%E6%9C%AC%E6%96%B0%E7%9A%84%E2%80%9C%E5%B0%B1%E4%B8%9A%E8%80%85%E8%B4%9F%E6%8B%85%E5%87%8F%E8%BD%BB%E6%94%AF%E6%8F%B4%E9%87%91%E2%80%9D%E8%AF%B4%E8%B5%B7%0Ahttps%3A%2F%2Fneteru-nyukin.eltociear.workers.dev%2Fzh%2Fessays%2Frefundable-tax-credit-vs-basic-income%2F%3Fs%3Dwa" target="_blank" rel="noopener" aria-label="分享到 WhatsApp"><svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3.6 20.4l1.2-4.1a8.6 8.6 0 1 1 3.1 3z"/><path fill="currentColor" d="M9.3 7.4c.3 0 .5.1.7.5l.7 1.6c.1.3 0 .5-.1.7l-.6.7a7 7 0 0 0 3 2.9l.7-.7c.2-.2.4-.2.6-.1l1.6.7c.4.2.5.4.5.7 0 .9-.8 1.9-1.9 1.9-3 0-6.5-3.5-6.5-6.5 0-1.1.8-2.4 1.3-2.4z"/></svg><span>WhatsApp</span></a></div>
-<p class="related">相关随笔: <a href="/zh/essays/japan-special-cash-payment/">那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金</a> · <a href="/zh/essays/takenaka-70000-yen-basic-income/">每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案</a> · <a href="/zh/essays/openresearch-cash-study/">当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么</a> · <a href="/zh/essays/generative-ai-jobs-basic-income/">生成式 AI 抢走了我们的工作吗？数据显示了什么，基本收入能做什么（上篇）</a> · <a href="/zh/essays/china-childcare-subsidy-basic-income/">育儿补贴每年3600元：谁能领、怎么领，它算基本收入吗？</a></p>
-<p class="related g-rel">用计算器算一算: <a href="/zh/calc/jp/">日本</a> · <a href="/zh/calc/us/">美国</a> · <a href="/zh/calc/countries/">全部211个国家和地区对比</a> · <a href="/zh/calc/map/">世界地图：费用与税收之比</a></p>
+<section class="es-calc" aria-labelledby="es-calc-h"><a class="es-calc-map" href="/zh/calc/map/"><img src="/og/thumb/calc/zh/map.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span>世界地图：费用与税收之比 →</span></a><div class="es-calc-t"><h2 id="es-calc-h">用计算器算一算</h2><p><a href="/zh/calc/jp/">日本</a> · <a href="/zh/calc/us/">美国</a> · <a href="/zh/calc/countries/">全部211个国家和地区对比</a></p></div></section>
+<section class="es-rel" aria-labelledby="es-rel-h"><h2 id="es-rel-h">相关随笔</h2><ul><li><a class="es-card" href="/zh/essays/japan-special-cash-payment/"><img src="/og/thumb/essay/zh/japan-special-cash-payment.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>那 10 万日元去了哪里？用数据回看日本 2020 年的特别定额给付金</b><span>2020 年，日本向几乎每位居民发放了 10 万日元。我们从银行账户和记账应用的数据，看花掉了多少、何时花掉、由谁花掉，最后再想一想为什么一次性的给付不是基本收入。</span></span></a></li><li><a class="es-card" href="/zh/essays/takenaka-70000-yen-basic-income/"><img src="/og/thumb/essay/zh/takenaka-70000-yen-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>每人每月 7 万日元的基本收入，我家是赚还是亏？用五个家庭算一算竹中平藏方案</b><span>竹中平藏 2020 年提出的“每人每月 7 万日元”。养老金和生活保护怎么处理、高收入者是否返还，结果差别很大。我们定好前提，算了五个家庭的账，也核对了全国的总成本。</span></span></a></li><li><a class="es-card" href="/zh/essays/openresearch-cash-study/"><img src="/og/thumb/essay/zh/openresearch-cash-study.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么</b><span>OpenResearch 向 1,000 人每月发放 1,000 美元，为期三年。受助者每周少工作约 1.3 小时，钱主要花在基本开支上，有些人用它买回了时间。论文发现了什么、没发现什么，以及它算不算基本收入。</span></span></a></li><li><a class="es-card" href="/zh/essays/generative-ai-jobs-basic-income/"><img src="/og/thumb/essay/zh/generative-ai-jobs-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>生成式 AI 抢走了我们的工作吗？数据显示了什么，基本收入能做什么（上篇）</b><span>2026 年，美国有 121,401 人的裁员以 AI 为理由，但整体就业中还看不到明显的 AI 痕迹，正在变窄的是入口。</span></span></a></li><li><a class="es-card" href="/zh/essays/china-childcare-subsidy-basic-income/"><img src="/og/thumb/essay/zh/china-childcare-subsidy-basic-income.jpg" width="360" height="189" loading="lazy" decoding="async" alt=""><span class="es-card-t"><b>育儿补贴每年3600元：谁能领、怎么领，它算基本收入吗？</b><span>3 岁以下每孩每年 3600 元，不看收入、免个税。谁能领、怎么领、发了多少，和基本收入差在哪里，现金能不能让人多生孩子。</span></span></a></li></ul></section>
 
 <div class="qzc"><div class="qzc-t"><p class="qzc-e">免费午餐测试</p><p class="qzc-q">你是哪一型？</p><p class="qzc-s">5 个问题，30 秒，无需注册</p></div><a class="btn solid" href="/zh/shindan/?s=essay-quiz">开始测试</a></div>
 <section class="fn"><h2>出处</h2><ol><li id="fn-1"><a href="https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260729-4/01_siryou1.pdf" target="_blank" rel="noopener" dir="auto">Social Security National Council (Shakai Hoshō Kokumin Kaigi) — Interim report on the refundable tax credit (29 Jul 2026; PDF, in Japanese)</a> <a class="fnback" href="#ref-1" aria-label="↩">↩</a></li><li id="fn-2"><a href="https://www.cas.go.jp/jp/seisaku/shouhizei_futankeigenshienkin/dai1/sanko2.pdf" target="_blank" rel="noopener" dir="auto">Cabinet Secretariat — Outline for the temporary cut in the consumption tax rate on food and the introduction of the Worker Burden Relief Payment (Cabinet decision, 15 Sep 2026; PDF, in Japanese)</a> <a class="fnback" href="#ref-2" aria-label="↩">↩</a></li><li id="fn-3"><a href="https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf" target="_blank" rel="noopener" dir="auto">Cabinet Secretariat — Summary of the bill on the temporary cut in the consumption tax rate on food and the Worker Burden Relief Payment (Cabinet decision and submission to the Diet, 9 Oct 2026; PDF, in Japanese)</a> <a class="fnback" href="#ref-3" aria-label="↩">↩</a></li><li id="fn-4"><a href="https://kumanichi.com/articles/2047683" target="_blank" rel="noopener" dir="auto">Kyodo News via Kumamoto Nichinichi Shimbun — Government floats an average of about ¥30,000 for the new payment, about 20 million people in FY2027–28 (17 Oct 2026, in Japanese)</a> <a class="fnback" href="#ref-4" aria-label="↩">↩</a></li><li id="fn-5"><a href="https://news.ksb.co.jp/ann/article/17029673" target="_blank" rel="noopener" dir="auto">ANN News (via KSB Setonaikai Broadcasting) — Consumption tax cut bill passes the House of Representatives with the ruling parties’ votes; all opposition parties against (6 Nov 2026, in Japanese)</a> <a class="fnback" href="#ref-5" aria-label="↩">↩</a></li><li id="fn-6"><a href="https://aspe.hhs.gov/reports/overview-final-report-seattle-denver-income-maintenance-experiment" target="_blank" rel="noopener" dir="auto">US Department of Health and Human Services, ASPE — Overview of the Final Report of the Seattle-Denver Income Maintenance Experiment (1983)</a> <a class="fnback" href="#ref-6" aria-label="↩">↩</a></li><li id="fn-7"><a href="https://www.irs.gov/pub/irs-drop/rp-25-32.pdf" target="_blank" rel="noopener" dir="auto">IRS — Revenue Procedure 2025-32: inflation-adjusted items for 2026, including the EITC and Child Tax Credit (PDF)</a> <a class="fnback" href="#ref-7" aria-label="↩">↩</a></li><li id="fn-8"><a href="https://www.irs.gov/tax-professionals/eitc-central/eitc-participation-rate-by-state" target="_blank" rel="noopener" dir="auto">IRS — EITC participation rate by states (tax year 2022)</a> <a class="fnback" href="#ref-8" aria-label="↩">↩</a></li><li id="fn-9"><a href="https://www.census.gov/library/publications/2023/demo/p60-280.html" target="_blank" rel="noopener" dir="auto">US Census Bureau — Poverty in the United States: 2022 (P60-280, Sep 2023)</a> <a class="fnback" href="#ref-9" aria-label="↩">↩</a></li><li id="fn-10"><a href="https://www.census.gov/library/publications/2026/demo/p60-290.html" target="_blank" rel="noopener" dir="auto">US Census Bureau — Christina Bijou and Emily A. Shrider, Poverty in the United States: 2025 (P60-290, Sep 2026)</a> <a class="fnback" href="#ref-10" aria-label="↩">↩</a></li><li id="fn-11"><a href="https://www.gov.uk/universal-credit/how-your-wages-affect-your-payments" target="_blank" rel="noopener" dir="auto">GOV.UK — Universal Credit: how your wages affect your payments</a> <a class="fnback" href="#ref-11" aria-label="↩">↩</a></li><li id="fn-12"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html" target="_blank" rel="noopener" dir="auto">Canada Revenue Agency — Canada Child Benefit: how we calculate your CCB (July 2026 to June 2027)</a> <a class="fnback" href="#ref-12" aria-label="↩">↩</a></li><li id="fn-13"><a href="https://doi.org/10.1515/bis-2017-0016" target="_blank" rel="noopener" dir="auto">Karl Widerquist — “The cost of basic income: back-of-the-envelope calculations”, Basic Income Studies 12(2) (2017)</a> <a class="fnback" href="#ref-13" aria-label="↩">↩</a></li><li id="fn-14"><a href="https://basicincome.org/about-basic-income/" target="_blank" rel="noopener" dir="auto">Basic Income Earth Network (BIEN) — About Basic Income</a> <a class="fnback" href="#ref-14" aria-label="↩">↩</a></li></ol></section>
 </article>
-<p class="back"><a class="btn line" href="/zh/#list">← 返回服务列表</a></p>
+<aside class="es-toc"><nav aria-labelledby="es-toc-h"><p class="es-toc-h" id="es-toc-h">目录</p><ol><li><a href="#s1">日本定下了什么，还没定什么</a></li><li><a href="#s2">可退还税收抵免本来是什么</a></li><li><a href="#s3">其他国家怎么做</a></li><li><a href="#s4">与基本收入的六点不同</a></li><li><a href="#s5">按“净额”可以完全相同</a></li><li><a href="#s6">用 BIEN 的五条标准衡量</a></li><li><a href="#s7">三个人放在一起比</a></li><li><a href="#s8">现实的第一步吗？</a></li></ol></nav></aside><p class="back es-back"><a class="btn line" href="/zh/essays/">← 返回随笔列表</a></p>
 </main>
 </div>
 <footer class="foot-band detail-foot"><div class="wrap foot"><span>信息截至 2026 年 10 月。不构成投资建议。</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: 数据在 GitHub 公开"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>数据在 GitHub 公开</span></a><a class="xlink" href="/zh/feed.xml" aria-label="RSS 订阅"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="/zh/essays/">随笔</a><a href="/zh/news/">基本收入新闻</a><a href="/zh/shindan/">免费午餐测试</a><a href="/zh/calc/">基本收入计算器</a><a href="/zh/calc/countries/">211个国家和地区的费用</a><a href="/zh/badge/">徽章</a><span class="dot">Free Lunch Lab（免费午餐研究所）</span></div></footer>
@@ -1143,6 +1197,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
     if(n){navigator.share({text:n.getAttribute('data-text'),url:n.getAttribute('data-native')}).catch(function(){})}
   });
 })();
-</script>
+</script><script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
+function pick(){var cur=null,y=innerHeight*.3;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=y)cur=hs[i];else break}var a=cur&&ls[cur.id];if(a===on)return;if(on)on.removeAttribute('aria-current');on=a||null;if(on)on.setAttribute('aria-current','true')}
+var io=new IntersectionObserver(pick,{rootMargin:'0px 0px -70% 0px'});hs.forEach(function(h){io.observe(h)});pick()})()</script>
 </body>
 </html>
