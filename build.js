@@ -72,7 +72,7 @@ const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
 // エッセイ本文の {文字|/path/} はサイト内リンク（言語の接頭辞は自動で付く）。/essays/{id}/ への参照と related は実在を確かめる
 const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
 const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated', 'essayRelatedH', 'essayToc', 'essayRead', 'essayBack'];
-for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack', 'essayTableHint', 'backHome']) if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
+for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack', 'essayTableHint', 'backHome', 'backQuiz', 'backSvc', 'backVerify']) if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 // related（エッセイ）と essays（サービス・年表）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
 const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
@@ -1717,7 +1717,7 @@ ${essay ? relatedLinks(lang, [essay]) : ''}
 ${sec('g-log', H.log, `<ol class="g-log">${g.log.map(x => `<li><time datetime="${x.date}">${esc(longDate(x.date, lang))}</time> ${esc(x[lang] || x.en)}</li>`).join('')}</ol>`)}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
 </article>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${svcPath(lang, s)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backSvc.replace('{name}', isoName(sName(s, lang), lang)))}</a></p>
 </main>`;
   if (lastLog.date !== g.updated) throw new Error(`guide ${g.id}: the newest log entry must have the date of updated (${g.updated})`);
   return shell(lang, { title: `${G.title} | ${L.title}`, desc: clip(G.desc, lang), hrefFor: l => guideAbs(l, g), pathFor: l => guidePath(l, g), ld, ogType: 'article', body, script: copyScript(L), pr: true, image: ogImage(`guide/${lang}/${g.id}.jpg`) });
@@ -1788,7 +1788,7 @@ function quizResultPage(t, lang) {
 ${shr}<p class="qz-retry"><a class="btn line" href="${qzPath(lang)}">${esc(L.shindanRetry)}</a></p></header>
 <section class="vsec"><h2>${esc(L.shindanMatch.replace('{n}', list.length))}</h2><p class="qz-note">${esc(L.shindanNote)}</p>${guides.map(g => guideLink(lang, g, 'g-link g-link-top')).join('')}<div class="grid">${list.map(s => card(s, lang)).join('\n')}</div></section>
 <section class="vsec"><h2>${esc(L.shindanOthers)}</h2>${qzChips(lang, t)}</section>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${qzPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backQuiz)}</a></p>
 </main>`;
   return shell(lang, { title: `${L.shindanTitle}: ${name} | ${L.title}`, desc: clip(`${L.shindanTitle}: ${name}. ${t.desc[lang]}`, lang), hrefFor: l => qzTypeAbs(l, t), pathFor: l => qzTypePath(l, t), ld, ogType: 'website', body, script: copyScript(L) + shareScript(L), pr: true, image: ogImage(`shindan/${lang}/${t.id}.jpg`) });
 }
@@ -2324,7 +2324,7 @@ function verifyPage(m, lang) {
 ${section(L.verifyReqH, req)}
 ${section(L.verifyOptH, opt)}
 <nav class="vchips vother" aria-label="${esc(L.verifyAll)}">${others}</nav>
-<p class="back"><a class="btn line" href="${home}#list">${RTL.has(lang) ? '→' : '←'} ${esc(L.backList)}</a></p>
+<p class="back"><a class="btn line" href="${verifyIdxPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backVerify)}</a></p>
 </main>`;
   return shell(lang, { title, desc: clip(intro || V.title[lang], lang), hrefFor: l => verifyAbs(l, m), pathFor: l => verifyPath(l, m), ld, ogType: 'website', body, script: copyScript(L), pr: true });
 }
