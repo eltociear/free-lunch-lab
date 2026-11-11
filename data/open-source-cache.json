@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-10",
+  "fetchedOn": "2026-11-11",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -10,7 +10,7 @@
     },
     "git.duniter.org:clients/cesium-grp/cesium2s": {
       "stars": 6,
-      "lastCommit": "2026-11-09",
+      "lastCommit": "2026-11-10",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "TypeScript"
@@ -150,14 +150,14 @@
     },
     "github.com:PolicyEngine/policyengine-uk": {
       "stars": 53,
-      "lastCommit": "2026-11-09",
+      "lastCommit": "2026-11-10",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
     },
     "github.com:PolicyEngine/policyengine-us": {
       "stars": 171,
-      "lastCommit": "2026-11-10",
+      "lastCommit": "2026-11-11",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
@@ -219,7 +219,7 @@
       "language": "Jupyter Notebook"
     },
     "github.com:ec-jrc/JRC-EUROMOD-software-source-code": {
-      "stars": 21,
+      "stars": 22,
       "lastCommit": "2026-10-23",
       "archived": false,
       "license": "EUPL-1.2",
@@ -255,7 +255,7 @@
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-11-09",
+      "lastCommit": "2026-11-10",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"
@@ -311,14 +311,14 @@
     },
     "github.com:socialincome-san/public": {
       "stars": 163,
-      "lastCommit": "2026-11-09",
+      "lastCommit": "2026-11-10",
       "archived": false,
       "license": null,
       "language": "TypeScript"
     },
     "github.com:worldcoin/world-id-protocol": {
       "stars": 42,
-      "lastCommit": "2026-11-09",
+      "lastCommit": "2026-11-10",
       "archived": false,
       "license": "MIT",
       "language": "Rust"

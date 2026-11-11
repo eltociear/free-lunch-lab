@@ -261,6 +261,109 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the essay does-cash-make-people-stop-working: the essay's work chart (rows and columns read from
+  // the 'w' block in ESSAYS, so the image cannot drift from the page): each study's main result on work as a dot in
+  // one of three columns (worked less / no clear change / worked more), the US pilots as counts. 1200x675 (16:9).
+  'work': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const ja = lang === 'ja';
+      const { ESSAYS } = require('../../../src/data.js');
+      const e = ESSAYS.find(x => x.id === 'does-cash-make-people-stop-working');
+      const [, head, ...rows] = e.blocks[lang].find(b => b[0] === 'w')[1].split('\n');
+      const cols = head.split(' | ');
+      const strip = t => t.replace(/\{([^{}|]+)\|[^{}]+\}/g, '$1');
+      const cell = (pos, i) => pos.includes(',') ? '<td>' + (Number(pos.split(',')[i]) ? '<b class="n">' + pos.split(',')[i] + '</b>' : '') + '</td>' : '<td>' + (Number(pos) === i - 1 ? '<i class="d"></i>' : '') + '</td>';
+      const body = rows.map(r => { const [name, sub, pos, note] = r.split(' | ').map(strip); return '<tr><th><span class="nm">' + esc(name) + '</span><span class="sb2">' + esc(sub) + '</span></th><td class="nt">' + esc(note) + '</td>' + [0, 1, 2].map(i => cell(pos, i)).join('') + '</tr>'; }).join('');
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<h1 class="hl">${ja ? 'お金を配ると、人は働かなくなる？' : 'Does free money make people stop working?'}</h1>
+<p class="sb">${ja ? '50年分・10の研究の「仕事への影響」。多くは小さな減少か変化なし' : 'What ten studies over fifty years found. Mostly small cuts in work, or none'}</p>
+<table class="ch"><thead><tr><td></td><td></td>${cols.map(c => '<th>' + esc(c) + '</th>').join('')}</tr></thead><tbody>${body}</tbody></table>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${ja ? '不労所得研究所' : 'Free <em>Lunch</em> Lab'}</p>
+  <p class="src">${ja ? '出典：各論文・公式報告（詳しくはエッセイ）' : 'Sources: the papers and official reports (see the essay)'}</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.hl{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${ja ? 44 : 40}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:20px;line-height:1.3;color:#C9D0F0}
+.ch{margin-top:14px;width:100%;border-collapse:collapse;table-layout:fixed;font-size:17px}
+.ch col{width:auto}
+.ch thead th{font-size:15px;color:#A9B2D8;font-weight:700;text-align:center;padding:0 4px 6px;width:118px}
+.ch thead td:first-child{width:${ja ? 380 : 370}px}
+.ch tbody th,.ch tbody td{border-top:1.5px solid rgba(255,255,255,.12);padding:4px 0;height:39px;vertical-align:middle}
+.ch tbody th{text-align:left;white-space:nowrap;overflow:hidden}
+.nm{font-weight:900;color:#FFFFFF;font-size:${ja ? 18 : 17}px}
+.sb2{margin-left:10px;font-size:14px;color:#9AA3CF;font-weight:500}
+.nt{color:#FFD66B;font-size:${ja ? 16 : 15}px;white-space:nowrap;overflow:hidden;padding-left:8px!important}
+.ch td:nth-child(4),.ch thead th:nth-child(4){background:rgba(255,255,255,.05)}
+.ch tbody td:not(.nt){text-align:center}
+.d{display:inline-block;width:16px;height:16px;border-radius:50%;background:#93A8FF;vertical-align:middle}
+.n{display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:14px;background:#93A8FF;color:#0E1320;font-weight:900;font-size:16px}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.src{margin-left:auto;font-size:16px;color:#A9B2D8}
+`,
+      };
+    },
+  },
+  // note.com header for the Japanese article on the same essay (1280x670, safe area 1100x560 like note-pilots).
+  // Facts from the essay: Finland year 1 49.64 vs 49.25 days in work (Kela via STM), OpenResearch about 1.3 fewer hours
+  // a week (NBER w32719), Alaska no employment effect (Jones & Marinescu 2022), and the Robins (1985) line on no mass withdrawal.
+  'note-work': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => ({
+      bare: true,
+      moon: [1192, 92, 44],
+      body: `
+<div class="wrap">
+  <p class="kicker">50年分・10の研究を並べてみた</p>
+  <h1 class="hero"><span class="l1">お金を配ると、</span><span class="l2">人は<em>働かなくなる</em>？</span></h1>
+  <p class="quote">答えは<b>“ほとんど変わらない”</b>。ただし、ゼロではない</p>
+</div>
+<div class="deco">
+  <div class="ledger">
+    <p class="lh">仕事への影響</p>
+    <p class="row"><span>フィンランド</span><i class="no">1年目 差なし</i></p>
+    <p class="row"><span>アラスカ</span><i class="no">就業 変化なし</i></p>
+    <p class="row"><span>OpenResearch</span><i class="dn">週1.3時間減</i></p>
+  </div>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+      css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:92px;width:1060px}
+.kicker{display:inline-block;font-size:30px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px}
+.hero{margin-top:24px;padding-right:0;white-space:nowrap}
+.hero span{display:block}
+.hero .l1{font-size:72px;line-height:1.12}
+.hero .l2{margin-top:4px;font-size:96px;line-height:1.12}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quote{margin-top:26px;font-size:34px;line-height:1.2;font-weight:900;color:#E3E8FF;white-space:nowrap}
+.quote b{color:#FFD66B}
+.deco{position:absolute;right:120px;bottom:56px;width:330px;height:184px}
+.ledger{position:absolute;right:0;top:0;width:322px;transform:rotate(3deg);background:#F6F2E6;border-radius:14px;padding:0 20px 10px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden}
+.ledger .lh{margin:0 -20px 6px;padding:10px 20px;background:#1B6B52;color:#F6F2E6;font-size:22px;line-height:1}
+.ledger .row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:2px solid #DED6BF;font-size:22px;line-height:1.1;color:#141A3A;white-space:nowrap}
+.ledger .row:last-child{border-bottom:0}
+.ledger i{padding:0 10px;height:26px;border-radius:13px;font-style:normal;font-size:16px;font-weight:900;line-height:26px}
+.ledger .no{background:#6CF0B0;color:#141A3A}
+.ledger .dn{background:#FFD66B;color:#141A3A}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+    }),
+  },
   // "5 ways apps prove you're one human". Examples come from each service's verify[] in src/data.js.
   'verify-5': lang => {
     const ja = lang === 'ja';

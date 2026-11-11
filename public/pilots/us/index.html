@@ -710,6 +710,24 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+/* 研究ごとの「仕事への影響」の図（w）: 行は研究、3つの列は向き。真ん中の列（変化なし）だけ薄く塗る */
+.wk{margin:.5em 0 0;padding:14px 14px 6px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.wk-h{font-weight:700;font-size:.9375rem;line-height:1.5;margin-bottom:8px}
+.wk table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.875rem;line-height:1.45}
+.wk .wk-c{width:17%}
+.wk thead th{font-size:.75rem;line-height:1.3;color:var(--muted);font-weight:700;text-align:center;vertical-align:bottom;padding:0 4px 8px}
+.wk tbody th{text-align:start;font-weight:400;padding:9px 10px 9px 0;border-top:1px solid var(--line)}
+[dir="rtl"] .wk tbody th{padding:9px 0 9px 10px}
+.wk-name{display:block;font-weight:700}
+.wk-sub,.wk-note{display:block;font-size:.8125rem}
+.wk-sub{color:var(--muted)}
+.wk thead td{border:0;padding:0}
+.es-t-scroll thead th{min-width:3.5em}
+.wk td{text-align:center;vertical-align:middle;border-top:1px solid var(--line);padding:6px 2px}
+.wk td:nth-child(3),.wk thead th:nth-child(3){background:color-mix(in srgb,var(--ink) 5%,transparent)}
+.wk-d{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--accent);vertical-align:middle}
+.wk-n{display:inline-grid;place-items:center;min-width:28px;height:28px;padding:0 6px;border-radius:14px;background:var(--accent);color:var(--paper);font-weight:700;font-variant-numeric:tabular-nums}
+@media (min-width:640px){.wk{padding:16px 18px 8px}.wk .wk-c{width:16%}.wk-sub,.wk-note{display:inline}.wk-sub::after{content:" · ";color:var(--muted)}}
 .es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
@@ -1132,7 +1150,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <tr data-n="100" data-s="CA" data-y="202204" data-m="1289" data-c="76" data-e="1"><th scope="row"><a href="/timeline/#tl-us-yolo-yobi" dir="auto">Yolo County Basic Income (YoBI)</a><span class="us-pl">Yolo County, California, USA</span><span class="us-yr" dir="ltr">2022–2024</span></th><td class="us-st" dir="ltr">CA</td><td class="num us-y" dir="ltr">2022–2024</td><td class="num"><bdi>$1,289</bdi></td><td class="num">76</td><td><b>Yes</b></td></tr>
 </tbody></table></div>
 <section class="g-sec cx-note"><p>Amounts are the main monthly payment; some pilots paid different groups different amounts or changed the amount over time (see each entry). Recipients are people or households, as each program counts them, not counting control groups. Evaluation means a published report, working paper or journal article; findings are as reported by the evaluators, and many rely on self-reported surveys of a few hundred people. Funding: public means city, county or state money; ARPA means federal pandemic relief from the American Rescue Plan Act. Where a source gives only the start and the length of payments, the end year is calculated from them.</p><p class="cx-idx"><a href="/calc/us/">What would a basic income cost in the United States? →</a></p></section>
-<p class="related">Related essay: <a href="/essays/openresearch-cash-study/">What happened when Sam Altman’s study gave people $1,000 a month for three years</a></p>
+<p class="related">Related essay: <a href="/essays/does-cash-make-people-stop-working/">Does giving people money make them stop working? What the experiments found</a> · <a href="/essays/openresearch-cash-study/">What happened when Sam Altman’s study gave people $1,000 a month for three years</a></p>
 <p class="back"><a class="btn line" href="/timeline/">← Basic income experiments: a timeline</a></p>
 </main>
 </div>

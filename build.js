@@ -93,6 +93,7 @@ const ESSAY_DATA = {
   'use-to-own': { calc: ['jp'] },
   'universal-high-income': { calc: ['us'] },
   'basic-income-world-map': { calc: ['jp', 'us', 'in', 'ng', 'br', 'sa'] },
+  'does-cash-make-people-stop-working': { calc: ['us', 'ca', 'fi', 'ke', 'ir'], pilots: true },
 };
 for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
@@ -280,6 +281,22 @@ const usPath = l => `${urlPath(l)}pilots/us/`;
 const usAbs = l => SITE_URL + usPath(l);
 const US_FUNDERS = ['public', 'arpa', 'philanthropic'];
 const US_TL = TIMELINE.filter(t => t.us);
+// エッセイ does-cash-make-people-stop-working の「対照群のある評価のうち、仕事についての結果」の分類（評価の要約 result を読んで分けたもの）。
+// 図の件数（減った, 変化なし, 増えた）と本文の 18件・8/7/2/1 はここに合わせる。一覧から消えた試みや、図の件数とのずれは警告する
+const WORK_PILOTS = {
+  more: ['us-oakland-orf', 'us-cambridge-rise', 'us-arlington-guarantee', 'us-columbia-climb', 'la-tayportunity', 'us-durham-excel', 'us-denver-dbip', 'us-baltimore-byfsf'],
+  none: ['stockton', 'us-shreveport-sgip', 'us-minneapolis-gbi', 'us-alameda-rise-up', 'us-longbeach-pledge', 'us-fresno-afcgi', 'us-louisville-yalift'],
+  less: ['openresearch', 'us-compton-pledge'],
+  shift: ['crny-artists'],
+};
+const workDrift = (() => {
+  const bad = Object.values(WORK_PILOTS).flat().filter(id => { const t = US_TL.find(x => x.id === id); return !t || !t.us.eval || !t.us.control; });
+  const w = (ESSAYS.find(e => e.id === 'does-cash-make-people-stop-working') || { blocks: { en: [] } }).blocks.en.find(([k]) => k === 'w');
+  const row = w && w[1].split('\n').map(r => r.split(' | ')).find(c => (c[2] || '').includes(','));
+  const want = [WORK_PILOTS.less.length, WORK_PILOTS.none.length, WORK_PILOTS.more.length].join();
+  return [bad.length ? `WARNING: WORK_PILOTS lists pilots that are missing or have no evaluated control group: ${bad.join(', ')}` : '',
+    row && row[2] !== want ? `WARNING: the work chart in does-cash-make-people-stop-working says ${row[2]}, WORK_PILOTS gives ${want}; update the essay` : ''].filter(Boolean).join('\n');
+})();
 const US_KEYS = ['usTitle', 'usH1', 'usDesc', 'usIntro', 'usCrumb', 'usLink', 'usColProgram', 'usColState', 'usColYears', 'usColMonthly', 'usColRecipients', 'usColEval', 'usYes', 'usNo', 'usFilter', 'usNote', 'usData', 'usStates', 'usEvaluated', 'tlFilterAll', 'tlFilterUs', 'tlFilterWorld', 'tlFilterLabel', 'tlFunding', 'tlFund_public', 'tlFund_arpa', 'tlFund_philanthropic', 'tlNoEval'];
 for (const l of LANGS) for (const k of US_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 {
@@ -1035,6 +1052,24 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+/* 研究ごとの「仕事への影響」の図（w）: 行は研究、3つの列は向き。真ん中の列（変化なし）だけ薄く塗る */
+.wk{margin:.5em 0 0;padding:14px 14px 6px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.wk-h{font-weight:700;font-size:.9375rem;line-height:1.5;margin-bottom:8px}
+.wk table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.875rem;line-height:1.45}
+.wk .wk-c{width:17%}
+.wk thead th{font-size:.75rem;line-height:1.3;color:var(--muted);font-weight:700;text-align:center;vertical-align:bottom;padding:0 4px 8px}
+.wk tbody th{text-align:start;font-weight:400;padding:9px 10px 9px 0;border-top:1px solid var(--line)}
+[dir="rtl"] .wk tbody th{padding:9px 0 9px 10px}
+.wk-name{display:block;font-weight:700}
+.wk-sub,.wk-note{display:block;font-size:.8125rem}
+.wk-sub{color:var(--muted)}
+.wk thead td{border:0;padding:0}
+.es-t-scroll thead th{min-width:3.5em}
+.wk td{text-align:center;vertical-align:middle;border-top:1px solid var(--line);padding:6px 2px}
+.wk td:nth-child(3),.wk thead th:nth-child(3){background:color-mix(in srgb,var(--ink) 5%,transparent)}
+.wk-d{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--accent);vertical-align:middle}
+.wk-n{display:inline-grid;place-items:center;min-width:28px;height:28px;padding:0 6px;border-radius:14px;background:var(--accent);color:var(--paper);font-weight:700;font-variant-numeric:tabular-nums}
+@media (min-width:640px){.wk{padding:16px 18px 8px}.wk .wk-c{width:16%}.wk-sub,.wk-note{display:inline}.wk-sub::after{content:" · ";color:var(--muted)}}
 .es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
@@ -1573,7 +1608,7 @@ ${groups}
 // 読了時間: 日本語・中国語は1分500字、それ以外（ラテン文字・デーヴァナーガリー・アラビア文字）は1分220語。表も数える（地図は数えない）
 const CJK_LANGS = new Set(['ja', 'zh']);
 function essayMinutes(e, lang) {
-  const text = (e.blocks[lang] || e.blocks.en).filter(([k]) => k !== 'm').map(([, t]) => t).join('\n')
+  const text = (e.blocks[lang] || e.blocks.en).filter(([k]) => k !== 'm' && k !== 'w').map(([, t]) => t).join('\n')
     .replace(ESSAY_LINK, '$1').replace(/\[\d+\]/g, '').replace(/ \| /g, ' ').replace(/[⁦-⁩]/g, '');
   const n = CJK_LANGS.has(lang) ? text.replace(/\s+/g, '').length / 500 : text.split(/\s+/).filter(w => /[\p{L}\p{N}]/u.test(w)).length / 220;
   return Math.max(1, Math.round(n));
@@ -1609,6 +1644,7 @@ function essayPage(e, lang) {
     if (k === 't') { const [head, ...rows] = t.split('\n').map(r => r.split(' | ')); const wide = head.length >= 4; if (wide) wideTables = true; return `<div class="es-tw es-wide${wide ? ' es-tw-x' : ''}">${wide ? `<p class="es-t-hint" aria-hidden="true">${esc(L.essayTableHint)} <span>${rtl ? '←' : '→'}</span></p>` : ''}<div class="essay-table ${wide ? 'es-t-scroll' : 'es-t-fit'}"${wide ? ` tabindex="0" style="--cols:${head.length}"` : ''}><table><thead><tr>${head.map(c => `<th scope="col">${fn(c)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => i ? (essayNum(c) ? `<td class="es-num">${rtl && !/[\u2066-\u2069]/.test(c) ? `\u2066${fn(c)}\u2069` : fn(c)}</td>` : `<td>${fn(c)}</td>`) : `<th scope="row">${fn(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div></div>`; }
     // m は世界地図（/calc/map/ と同じ図と凡例、地図のページへのリンク）
     if (k === 'm') return mapFigure(lang, { link: true }).replace('<figure class="wmap"', '<figure class="wmap es-wide"');
+    if (k === 'w') return workChart(t, fn);
     if (k !== 'o') return `<p>${fn(t)}</p>`;
     const tag = tagged ? '' : `<span class="op-tag">${esc(L.essayOpinion)}</span>`;
     tagged = true;
@@ -1645,6 +1681,22 @@ ${tocSide}<p class="back es-back"><a class="btn line" href="${essaysPath(lang)}"
 </main>`;
   const hasMap = (e.blocks[lang] || e.blocks.en).some(([k]) => k === 'm');
   return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L) + (hasMap ? mapScript(lang) : '') + (tocSide ? ESSAY_TOC_JS : '') + (wideTables ? ESSAY_TABLE_JS : ''), image: ogImage(`essay/${lang}/${e.id}.jpg`), extraHead: hasMap ? MAP_CSS + '\n' : '' });
+}
+// w は研究ごとの「仕事への影響」の図: 1行目は図の題、2行目は3つの列（減った | はっきりした変化なし | 増えた）、3行目からは「研究 | 時期・場所 | 列 | 一言」。
+// 列は -1・0・1（その列に点を1つ）か「減,なし,増」の件数（数字の点）。向きだけを示し、大きさは一言で書く（研究ごとに測る単位が違うので）。
+// 表として組むので読み上げでも行と列がわかる。色はサイトの変数だけ（点は --accent 一色。良し悪しの色分けはしない）
+function workChart(t, fn) {
+  const [title, head, ...rows] = t.split('\n');
+  const cols = head.split(' | ');
+  if (cols.length !== 3) throw new Error('work chart: 3 columns expected');
+  const cell = (pos, i) => {
+    if (pos.includes(',')) { const n = Number(pos.split(',')[i]); return `<td>${n ? `<b class="wk-n">${n}</b>` : ''}</td>`; }
+    if (!['-1', '0', '1'].includes(pos)) throw new Error(`work chart: bad column ${pos}`);
+    return `<td>${Number(pos) === i - 1 ? `<i class="wk-d" aria-hidden="true"></i><span class="vh">${esc(cols[i])}</span>` : ''}</td>`;
+  };
+  const body = rows.map(r => { const [name, sub, pos, note] = r.split(' | '); if (note === undefined) throw new Error(`work chart row: ${r}`);
+    return `<tr><th scope="row"><span class="wk-name">${fn(name)}</span><span class="wk-sub">${fn(sub)}</span><span class="wk-note">${fn(note)}</span></th>${[0, 1, 2].map(i => cell(pos, i)).join('')}</tr>`; }).join('');
+  return `<figure class="wk es-wide"><figcaption class="wk-h">${fn(title)}</figcaption><table><colgroup><col><col class="wk-c"><col class="wk-c"><col class="wk-c"></colgroup><thead><tr><td></td>${cols.map(c => `<th scope="col">${fn(c)}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></figure>`;
 }
 // 目次の印: 画面の上から3割あたりを通り過ぎた最後の h2 の節を「いま読んでいる節」にする（IntersectionObserver がなければ何もしない）
 const ESSAY_TOC_JS = `<script>(function(){var t=document.querySelector('.es-toc');if(!t||!('IntersectionObserver' in window))return;var hs=[].slice.call(document.querySelectorAll('.essay-body h2[id]')),ls={},on=null;[].forEach.call(t.querySelectorAll('a'),function(a){ls[a.getAttribute('href').slice(1)]=a});
@@ -2546,6 +2598,7 @@ for (const lang of LANGS) {
 }
 
 if (mapDrift) console.warn(mapDrift);
+if (workDrift) console.warn(workDrift);
 if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);
 // ---- フォント: 書き出した HTML から、言語ごと・書体ごとに実際に出る文字を集め、そのサブセットを用意して <!--@fonts@--> を埋める
 const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
@@ -3077,13 +3130,20 @@ const svcFull = s => {
     ...essayList(s.essays).flatMap(x => ['', `Related essay: ${essayAbs(DEFAULT_LANG, x)}`]),
   ].join('\n');
 };
+// llms-full.txt の「仕事への影響」の図: 表にする（列の名前か件数を「結果」に）
+function workChartMd(t) {
+  const [title, head, ...rows] = t.split('\n'); const cols = head.split(' | ');
+  return [`**${md(title)}**`, '', '| Study | When / where | Result | Note |', '| --- | --- | --- | --- |', ...rows.map(r => { const [a, b, pos, n] = r.split(' | ');
+    const res = pos.includes(',') ? pos.split(',').map((x, i) => `${cols[i]}: ${x}`).join(', ') : cols[Number(pos) + 1];
+    return `| ${[a, b, res, n].map(md).join(' | ')} |`; })].join('\n');
+}
 const essayFull = e => [
   `### ${md(e.title.en)}`,
   '',
   `- Page: ${essayAbs(DEFAULT_LANG, e)}`,
   `- Published: ${e.date}`,
   '',
-  ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'm' ? `[World map: ${md(T.en.mapSvgLabel)}](${mapAbs(DEFAULT_LANG)})` : k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : k === 't' ? t.split('\n').map((r, i) => `| ${r.split(' | ').map(md).join(' | ')} |${i ? '' : `\n|${r.split(' | ').map(() => ' --- |').join('')}`}`).join('\n') : md(t)).flatMap(x => [x, '']),
+  ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'w' ? workChartMd(t) : k === 'm' ? `[World map: ${md(T.en.mapSvgLabel)}](${mapAbs(DEFAULT_LANG)})` : k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : k === 't' ? t.split('\n').map((r, i) => `| ${r.split(' | ').map(md).join(' | ')} |${i ? '' : `\n|${r.split(' | ').map(() => ' --- |').join('')}`}`).join('\n') : md(t)).flatMap(x => [x, '']),
   ...essayList(e.related).flatMap(x => [`Related essay: ${essayAbs(DEFAULT_LANG, x)}`, '']),
   'Sources:',
   '',

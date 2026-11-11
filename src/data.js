@@ -2937,6 +2937,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-11",
+      "en": "Published the essay “Does giving people money make them stop working? What the experiments found”",
+      "ja": "エッセイ『お金を配ると、人は働かなくなるのか？ 世界の実験データで確かめる』を公開",
+      "zh": "发布随笔《发钱会让人不再工作吗？用世界各地的实验数据来检验》",
+      "hi": "निबंध “क्या पैसे देने से लोग काम करना छोड़ देते हैं? दुनिया भर के प्रयोगों के आँकड़े” प्रकाशित",
+      "es": "Publicado el ensayo «¿Dejamos de trabajar si nos dan dinero? Lo que encontraron los experimentos»",
+      "de": "Essay „Wer Geld bekommt, hört auf zu arbeiten? Was die Experimente zeigen“ veröffentlicht",
+      "ar": "نشرنا مقال «هل يتوقف الناس عن العمل إذا أعطيناهم المال؟»"
+    },
+    {
       "date": "2026-11-10",
       "en": "Added a world map of which countries could pay everyone the World Bank’s $3.00-a-day poverty line from their tax revenue (211 countries and territories, with a sortable table), and an essay on what it shows",
       "ja": "世界銀行の貧困ライン「1日3.00ドル」を全員に配る費用を各国の税収とくらべた世界地図（211の国・地域、並べ替えられる表つき）と、そこからわかることをまとめたエッセイを追加",
@@ -10226,7 +10236,7 @@ module.exports = {
   "TIMELINE": [
     {
       "id": "mincome",
-      "essays": ["refundable-tax-credit-vs-basic-income"],
+      "essays": ["refundable-tax-credit-vs-basic-income", "does-cash-make-people-stop-working"],
       "years": "1974–1979",
       "type": "gov",
       "name": "Mincome",
@@ -10270,7 +10280,7 @@ module.exports = {
     },
     {
       "id": "alaska",
-      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund", "nesara-gesara-basic-income", "japan-special-cash-payment", "china-childcare-subsidy-basic-income"],
+      "essays": ["universal-high-income", "thailand-digital-wallet", "your-own-basic-income", "public-benefit-fund", "nesara-gesara-basic-income", "japan-special-cash-payment", "china-childcare-subsidy-basic-income", "does-cash-make-people-stop-working"],
       "years": "1982–",
       "type": "gov",
       "name": "Alaska Permanent Fund Dividend",
@@ -10401,7 +10411,7 @@ module.exports = {
     },
     {
       "id": "kenya",
-      "essays": ["moltbook-basic-income", "japan-special-cash-payment", "finland-basic-income-experiment"],
+      "essays": ["moltbook-basic-income", "japan-special-cash-payment", "finland-basic-income-experiment", "does-cash-make-people-stop-working"],
       "years": "2017–",
       "type": "ngo",
       "name": "GiveDirectly basic income study",
@@ -10446,7 +10456,7 @@ module.exports = {
     },
     {
       "id": "finland",
-      "essays": ["finland-basic-income-experiment"],
+      "essays": ["finland-basic-income-experiment", "does-cash-make-people-stop-working"],
       "years": "2017–2018",
       "type": "gov",
       "name": "Finland’s basic income experiment",
@@ -10657,7 +10667,7 @@ module.exports = {
     },
     {
       "id": "stockton",
-      "essays": ["finland-basic-income-experiment"],
+      "essays": ["finland-basic-income-experiment", "does-cash-make-people-stop-working"],
       "years": "2019–2021",
       "type": "ngo",
       "name": "Stockton Economic Empowerment Demonstration (SEED)",
@@ -11031,7 +11041,7 @@ module.exports = {
     },
     {
       "id": "openresearch",
-      "essays": ["universal-high-income", "moltbook-basic-income", "openresearch-cash-study"],
+      "essays": ["universal-high-income", "moltbook-basic-income", "openresearch-cash-study", "does-cash-make-people-stop-working"],
       "years": "2020–2023",
       "type": "ngo",
       "name": "OpenResearch Unconditional Cash Study",
@@ -16981,6 +16991,1325 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "does-cash-make-people-stop-working",
+      "date": "2026-11-11",
+      "related": [
+        "openresearch-cash-study",
+        "finland-basic-income-experiment",
+        "generative-ai-jobs-basic-income",
+        "basic-income-world-map"
+      ],
+      "title": {
+        "en": "Does giving people money make them stop working? What the experiments found",
+        "ja": "お金を配ると、人は働かなくなるのか？ 世界の実験データで確かめる",
+        "zh": "发钱会让人不再工作吗？用世界各地的实验数据来检验",
+        "hi": "क्या पैसे देने से लोग काम करना छोड़ देते हैं? दुनिया भर के प्रयोगों के आँकड़े",
+        "es": "¿Dejamos de trabajar si nos dan dinero? Lo que encontraron los experimentos",
+        "de": "Wer Geld bekommt, hört auf zu arbeiten? Was die Experimente zeigen",
+        "ar": "هل يتوقف الناس عن العمل إذا أعطيناهم المال؟"
+      },
+      "desc": {
+        "en": "Ten studies side by side, from 1970s US trials to Kenya, Alaska and 101 US pilots. Most found small cuts in work or none; none found people quitting en masse.",
+        "ja": "50年分、10の研究を並べた。仕事は多くが小さな減少か変化なしだった。",
+        "zh": "我们把十项研究对工作的影响放在一起：从1970年代的美国实验到肯尼亚、阿拉斯加和美国的101个试点。多数发现工作小幅减少或没有变化，没有一项发现人们大批辞职。",
+        "hi": "1970 के अमेरिकी प्रयोगों से केन्या, अलास्का और 101 अमेरिकी पायलट तक 10 अध्ययन: ज़्यादातर में काम थोड़ा घटा या नहीं बदला, किसी में लोग काम छोड़ते नहीं दिखे।",
+        "es": "Diez estudios, de EE. UU. en los 70 a Kenia, Alaska y 101 pilotos: la mayoría halló poca o ninguna reducción del trabajo; ninguno, un abandono masivo.",
+        "de": "Zehn Studien seit den 1970ern: Meist sank die Arbeit kaum oder gar nicht.",
+        "ar": "عشر دراسات منذ السبعينيات: معظمها وجد انخفاضًا طفيفًا في العمل أو لا تغيير، ولم تجد أي منها تركًا جماعيًا له."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "“Give people money for nothing and they’ll stop working.” It is the most common objection to basic income, and a fair question. It is also one that can be checked. For more than fifty years, governments, charities and researchers have handed out cash and measured what happened to work."
+          ],
+          [
+            "p",
+            "We lined up the main studies: the US negative income tax experiments of the 1970s, Canada’s Mincome, Alaska’s dividend, Iran’s national cash transfers, a reanalysis of seven government programmes in six countries, Finland, GiveDirectly’s long-term study in Kenya, Stockton, OpenResearch, and the 101 pilots in {our table of US guaranteed income pilots|/pilots/us/}. Every figure comes from the papers and official reports, or from our earlier essays on {OpenResearch|/essays/openresearch-cash-study/} and {Finland|/essays/finland-basic-income-experiment/}."
+          ],
+          [
+            "w",
+            "Effect on work, by study\nWorked less | No clear change | Worked more\nSIME/DIME (negative income tax) | USA, 1970s | -1 | Hours down 9–20%\nMincome | Canada, 1975–79 | -1 | Hours down 1–3%\nAlaska dividend | USA, since 1982 | 0 | Part-time work up\nIran cash transfers | Since 2011 | 0 | More work by women\nSeven government programmes | Six countries | 0 | No systematic effect\nFinland | 2017–18 | 0 | Year 2: +6 days\nKenya (GiveDirectly) | Since 2018 | 0 | From wages to own business\nStockton (SEED) | 2019–21 | 0 | Not significant\nOpenResearch | USA, 2020–23 | -1 | 1.3 hours a week less\nUS pilots with a control group | 17 evaluations | 2,7,8 | Number of pilots"
+          ],
+          [
+            "p",
+            "Each dot is a study’s main result on work. The columns show direction, not size: the studies measure work in different units (hours, days, employment rates), so the sizes are in words. For the US pilots, the numbers count evaluations with a control group in each column; one more found people moving between kinds of work."
+          ],
+          [
+            "h",
+            "The evidence side by side"
+          ],
+          [
+            "p",
+            "One distinction runs through everything below. “No significant effect” does not mean “no effect”. It means the gap between recipients and the control group was too small, given the noise in the data, to tell apart from chance. A small study can miss a real effect. A large one can rule out big effects but not small ones. Where a paper says what it can rule out, we say so."
+          ],
+          [
+            "t",
+            "Program | Place and years | Payment | Design | Effect on work | Source\nSIME/DIME (negative income tax) | Seattle and Denver, USA; from 1970, for 3 or 5 years | A guaranteed $3,800–$5,600 a year for a family of four (1971 dollars), reduced as other income rose | Randomised; about 4,800 families | Annual hours down about 9% for husbands, 20% for wives and 14% for single mothers (second year) | [9]\nMincome | Dauphin and Winnipeg, Canada; payments 1975–1979 | An income floor, reduced by 50 cents for each dollar of other income; anyone in Dauphin could claim it | Field experiment; the whole town of Dauphin was eligible | Hours down about 1% for men and 3% for married women | [10][11]\nAlaska Permanent Fund Dividend | Alaska, USA; since 1982 | A yearly dividend for every resident: on average $1,495 per person (2010 dollars) | Alaska compared with a weighted mix of other states, 1977–2014 | No effect on employment; part-time work up 1.8 points (17%) | [8]\nNational cash transfers | Iran; from 2011 | Monthly deposits to more than 70 million people, worth 28% of median income per person | Panel data on when and how much households received (not randomised) | No reduction in hours or labour force participation; more work by women and self-employed men | [12]\nSeven government cash transfer programmes | Honduras, Indonesia, Mexico (two), Morocco, Nicaragua, the Philippines | Cash for poor households | Reanalysis of 7 randomised trials | No systematic effect on whether, or how much, men or women worked | [13]\nBasic income experiment | Finland; 2017–2018 | €560 a month for two years, tax-free | Randomised; 2,000 unemployed people vs other unemployed people | Year 1: 49.64 vs 49.25 days in work; year 2: about 6 more days | [5][6]\nGiveDirectly long-term UBI | Siaya and Bomet, Kenya; from 2018, for 12 years | $0.75 a day per adult, paid monthly | Randomised by village: 44 villages (about 5,000 people) vs 100 control villages | Total hours unchanged; less wage work, more self-employment (after about two years) | [7]\nSEED | Stockton, USA; 2019–2021 | $500 a month for two years | Randomised; 131 vs 200 | Differences in employment not significant | [2]\nUnconditional Cash Study (OpenResearch) | Illinois and Texas, USA; 2020–2023 | $1,000 a month for three years | Randomised; 1,000 vs 2,000 who got $50 a month | About 1.3 fewer hours a week; 2.3 points less likely to be employed | [3][4]\n101 guaranteed income pilots | Across the USA; since 2018 | Median $500 a month | 18 evaluations with a control group report on work | 8 more work, 7 no clear difference, 2 less work, 1 a shift between kinds of work | [1]"
+          ],
+          [
+            "h",
+            "The 1970s: negative income tax and Mincome"
+          ],
+          [
+            "p",
+            "Between 1968 and 1980 the US and Canadian governments ran five negative income tax experiments.[10] A negative income tax is not quite a basic income. It guarantees a minimum and then takes part of it back as other income rises, typically around 50 cents per dollar in these experiments. So they tested cash and a high tax on earnings at the same time."
+          ],
+          [
+            "p",
+            "The largest, in Seattle and Denver, enrolled about 4,800 families. Measured in the second year, husbands worked about 9% fewer hours than the control group, wives about 20% and single mothers about 14%.[9] Most of the husbands’ reduction came from longer unemployment, on average about 2.2 more weeks out of work; for wives and single mothers it was time out of the labour force.[9] Averaging the four US experiments, three reviews put the reduction for main earners at 5% to 7.9%. One of them, by Philip Robins (1985), found that “in no case is there evidence of a massive withdrawal from the labor force”.[10]"
+          ],
+          [
+            "p",
+            "Canada’s Mincome, in Manitoba, made the town of Dauphin a “saturation site”: every resident could claim the guarantee. Families enrolled from late 1974, and payments ran until 1979.[11] Derek Hum and Wayne Simpson’s analysis of work (1993) found hours down about 1% for men and 3% for married women, smaller than in the US.[10] Mincome is better known for Evelyn Forget’s 2011 finding that hospitalisations in Dauphin fell by 8.5% relative to a comparison group; a 2021 reanalysis by David Green argues that, once earlier trends are taken into account, the data do not support that conclusion.[11]"
+          ],
+          [
+            "h",
+            "Recent trials: Finland, Stockton and OpenResearch"
+          ],
+          [
+            "p",
+            "Finland paid €560 a month, tax-free, to 2,000 randomly chosen unemployed people for two years. In the first year, recipients were in work for 49.64 days on average and the control group for 49.25: no effect.[5] Over roughly the second year, recipients worked about 6 days more. But a new “activation model” for the unemployed began that year and did not affect the two groups in the same way, so the second-year gap cannot all be credited to the basic income.[6] {Our essay on Finland|/essays/finland-basic-income-experiment/} has the details."
+          ],
+          [
+            "p",
+            "Stockton’s SEED paid $500 a month for two years. A first-year report in 2021 said full-time work rose from 28% to 40% among recipients, and that figure is still widely quoted. The peer-reviewed analysis of the randomised trial (Journal of Urban Health, 2023; 131 recipients, 200 controls) found that the differences in employment were not statistically significant, before the pandemic or during it.[2]"
+          ],
+          [
+            "p",
+            "OpenResearch’s study, backed by Sam Altman, is the largest and most carefully measured. 1,000 people aged 21 to 40 received $1,000 a month for three years; 2,000 received $50 a month. Recipients worked about 1.3 hours a week less than the control group, were 2.3 percentage points less likely to be employed, and earned about $1,900 a year less from work. The authors call it a 5 to 6% decline, “a moderate effect”.[3] Employment still rose in both groups, from 58% to 72% among recipients and from 59% to 74% in the control group.[4] {Our essay on the study|/essays/openresearch-cash-study/} covers the rest."
+          ],
+          [
+            "h",
+            "101 US pilots: what the evaluations say"
+          ],
+          [
+            "p",
+            "Our {table of US guaranteed income pilots|/pilots/us/} lists 101 programmes; the median pays $500 a month. 53 have a published evaluation, and 34 of those compared recipients with a control or comparison group. 18 of the 34 report a result on work.[1]"
+          ],
+          [
+            "p",
+            "Eight found more work than in the control group. In Oakland, full-time employment rose from 15% to 26% among recipients and from 14% to 18% in the control group; in Cambridge, Massachusetts, it rose from 36% to 40% while it fell from 30% to 28%. Arlington, Columbia, Durham and Denver reported similar results, and Baltimore’s recipients missed about 9 fewer hours of work a month. In Los Angeles County’s programme for young adults, employment rose 7 points, though the author credits much of that to the job training that came with the cash.[1]"
+          ],
+          [
+            "p",
+            "Seven found no clear difference, Stockton among them. Two found less work: OpenResearch, and Compton, where labour force participation fell 13 points among people who had worked part-time, while full-time workers did not change. One, for artists in New York, found about 3.9 more hours a week on art and 2.4 fewer on other work.[1]"
+          ],
+          [
+            "p",
+            "These are not 18 equal pieces of evidence. Many are short reports rather than peer-reviewed papers, samples are often 100 to 200 people, several give percentages without saying whether a difference is statistically significant, and some came with other services. The count shows the range of results, not a verdict. What it does not show is people dropping out of work."
+          ],
+          [
+            "h",
+            "Beyond rich countries: Kenya, Iran and seven programmes"
+          ],
+          [
+            "p",
+            "GiveDirectly’s study in Kenya is the closest thing so far to a long-term basic income. In 44 villages, every adult receives $0.75 a day, paid monthly, for 12 years; 100 villages serve as controls, alongside villages paid for two years or in a lump sum.[7] After about two years, total household working hours had not fallen. The estimate was a small increase that was not significant, and the authors “can reject large decreases”. What changed was the kind of work: fewer hours of wage work in farming and more in non-farm self-employment, as people started or expanded small businesses. Wage workers from outside the villages filled the gap, and wages rose.[7]"
+          ],
+          [
+            "p",
+            "Iran replaced energy subsidies with monthly cash deposits from 2011, reaching more than 70 million people and worth 28% of median income per person. Using differences in when households started receiving the money and how much it meant to them, Djavad Salehi-Isfahani and Mohammad Mostafavi-Dehzooei found “no evidence that cash transfers reduced labor supply”, and positive effects for women and self-employed men. In the working paper the exception was young people with weak ties to the labour market.[12]"
+          ],
+          [
+            "p",
+            "Abhijit Banerjee, Rema Hanna, Gabriel Kreindler and Benjamin Olken went back to the data from seven randomised trials of government cash transfer programmes in Honduras, Indonesia, Mexico, Morocco, Nicaragua and the Philippines. They found “no systematic evidence that cash transfer programs discourage work”, for men or for women.[13] These programmes were aimed at poor households; they were not basic incomes."
+          ],
+          [
+            "h",
+            "Alaska: a payment to everyone, every year"
+          ],
+          [
+            "p",
+            "Every Alaska resident has received a yearly dividend from the state’s Permanent Fund since 1982. The average was $1,495 per person in 2010 dollars, or about $3,900 for a family.[8] Damon Jones and Ioana Marinescu compared Alaska with a weighted mix of other states and found that the dividend “had no effect on employment” and raised part-time work by 1.8 percentage points (17%).[8]"
+          ],
+          [
+            "p",
+            "They are careful about what that means. Their confidence intervals cannot rule out a positive effect on employment, so the extra part-time work may come from people moving from full-time to part-time, or from people joining the workforce part-time. Hours fell by less than one hour a week, and not significantly. Their explanation is that when everyone gets the money and spends it locally, demand for local services rises and offsets the pull towards working less; employment held up better in sectors serving local customers than in those trading with the rest of the world.[8]"
+          ],
+          [
+            "h",
+            "Who worked less, and what they did instead"
+          ],
+          [
+            "p",
+            "Where work fell, it fell for particular people. In the 1970s experiments it fell most for wives and single mothers, who worked fewer hours to begin with, so a few weeks off is a bigger percentage.[10] Husbands mostly took longer between jobs.[9] Young people cut their work by a large percentage but a small number of hours, and the official report notes that this did not come with more time in school.[9]"
+          ],
+          [
+            "p",
+            "In OpenResearch, the drop was concentrated among people under 30, single parents and those with the highest household incomes at the start; for recipients over 30 there was no significant effect.[4] The hours went mostly to leisure. The paper rules out even small changes in time spent on childcare, job search or self-improvement, though spells without work lasted about 0.8 months longer.[3] In Kenya, people moved from wage work to their own businesses.[7] In Alaska, some moved to part-time work.[8] In Finland, Kela found that the basic income helped people who were already active, and did not solve the problems of those in the most difficult situations.[6]"
+          ],
+          [
+            "o",
+            "So the honest picture is not “nobody works less”. Some people do, by a few hours a week or a few weeks a year: mostly second earners and single parents, the young, and people between jobs. Whether that is a cost or the point depends on what you think that time is for."
+          ],
+          [
+            "h",
+            "Why a pilot is not a national basic income"
+          ],
+          [
+            "p",
+            "Almost every study above differs from a real basic income in at least four ways."
+          ],
+          [
+            "p",
+            "How long it lasts. Most were temporary, and recipients knew when the money would stop. People may treat three years of cash differently from a payment for life. Alaska’s dividend is permanent but modest. Kenya’s 12-year group is the main test of a long commitment, and its published results cover the first two years.[7][8]"
+          ],
+          [
+            "p",
+            "Who gets it. A pilot pays a few people in a place. A payment to everyone changes local demand, wages and prices: in Kenya wages rose as people left wage work, and in Alaska the effect on the local economy seems to have offset the individual one.[7][8] A pilot that pays a few hundred people cannot see this."
+          ],
+          [
+            "p",
+            "Who pays. In a pilot the money comes from outside. A national basic income has to be paid for, mostly through taxes, and higher taxes on earnings can themselves reduce work. The negative income tax experiments did take back about 50 cents per dollar earned, one reason their effects were larger; Finland’s experiment changed no taxes at all.[6][10] For what a basic income would cost, see {our world map|/essays/basic-income-world-map/}."
+          ],
+          [
+            "p",
+            "Who was studied. Most samples were people on low incomes, who respond more because the payment is large next to their earnings. A simulation for the Gary experiment estimated that a national programme would reduce work by about a third as much (1.6% rather than 4.5%).[10]"
+          ],
+          [
+            "h",
+            "What we still do not know"
+          ],
+          [
+            "p",
+            "No one has yet paid a permanent, universal basic income at a level people could live on, funded by taxes, and measured what happened to work. The evidence covers pieces of that: permanence with little money (Alaska), money without permanence (most pilots), everyone in a village (Kenya), and national scale with a targeted design (Iran, the seven programmes)."
+          ],
+          [
+            "p",
+            "Many pilot results rest on self-reported surveys. Estimates also move as better data arrive: OpenResearch’s were revised upward in 2026 once state unemployment-insurance records were added.[3] And “no significant effect” from a study of 300 people is a far weaker claim than the same words from a study of 3,000."
+          ],
+          [
+            "h",
+            "What to take from it"
+          ],
+          [
+            "o",
+            "Across more than fifty years of experiments, in rich countries and poor ones, no study found that cash makes people stop working. Most found small reductions or none, and some found more work. Where work fell, it fell by hours a week or weeks a year, mostly for parents, the young and people between jobs."
+          ],
+          [
+            "o",
+            "That is not the same as “basic income has no effect on work”. OpenResearch and the 1970s experiments measured real, if modest, reductions, and those numbers belong in any honest costing. The better question is not “will people stop working?” but “how much less, who, and is it worth it?” The data answer the first two parts. The third is a judgement for each of us."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "「タダでお金を配ったら、みんな働かなくなる」。ベーシックインカムの話をすると、いちばんよく返ってくる反論です。もっともな疑問ですが、これは確かめられる疑問でもあります。50年以上前から、政府や慈善団体や研究者が実際にお金を配り、仕事がどう変わったかを測ってきたからです。"
+          ],
+          [
+            "p",
+            "主な研究を並べてみました。1970年代のアメリカの「負の所得税」実験、カナダのミンカム、アラスカの配当金、イランの全国規模の現金給付、6か国7つの政府プログラムの再分析、フィンランド、ケニアのGiveDirectlyの長期研究、ストックトン、OpenResearch、そして{アメリカの保証所得の試み101件の一覧|/pilots/us/}です。数字はすべて論文と公式報告、または{OpenResearch|/essays/openresearch-cash-study/}と{フィンランド|/essays/finland-basic-income-experiment/}についての既存のエッセイから取っています。"
+          ],
+          [
+            "w",
+            "研究ごとの「仕事への影響」\n減った | 明確な変化なし | 増えた\nSIME/DIME（負の所得税） | アメリカ、1970年代 | -1 | 労働時間 9〜20%減\nミンカム | カナダ、1975〜79年 | -1 | 労働時間 1〜3%減\nアラスカの配当金 | アメリカ、1982年〜 | 0 | パートタイムが増加\nイランの現金給付 | 2011年〜 | 0 | 女性の就労が増加\n7つの政府プログラム | 6か国 | 0 | 一貫した影響なし\nフィンランド | 2017〜18年 | 0 | 2年目：6日多い\nケニア（GiveDirectly） | 2018年〜 | 0 | 雇われ仕事から自営へ\nストックトン（SEED） | 2019〜21年 | 0 | 有意差なし\nOpenResearch | アメリカ、2020〜23年 | -1 | 週1.3時間減\n対照群のあるアメリカの試み | 評価17件 | 2,7,8 | 件数"
+          ],
+          [
+            "p",
+            "点は、それぞれの研究の仕事への主な結果です。列が示すのは向きで、大きさではありません。研究によって仕事の測り方（時間、日数、就業率）が違うので、大きさは言葉で添えました。アメリカの試みの数字は、対照群のある評価が各列にいくつあるかです。このほか1件は、仕事の種類が入れ替わったという結果でした。"
+          ],
+          [
+            "h",
+            "証拠を並べてみる"
+          ],
+          [
+            "p",
+            "以下を読むうえで大事な区別がひとつあります。「有意な効果がない」は「効果がゼロ」という意味ではありません。受給者と対照群の差が、データのばらつきに比べて小さすぎて、偶然と見分けられなかったという意味です。小さな研究は本当の効果を見逃すことがあります。大きな研究は大きな効果を否定できても、小さな効果までは否定できません。論文が「どこまで否定できるか」を書いている場合は、それも紹介します。"
+          ],
+          [
+            "t",
+            "プログラム | 場所と期間 | 給付 | 方法 | 仕事への影響 | 出典\nSIME/DIME（負の所得税） | アメリカ・シアトルとデンバー、1970年から3年または5年 | 4人家族に年3,800〜5,600ドルを保証（1971年のドル）、ほかの収入が増えると減額 | ランダム化、約4,800家族 | 年間労働時間が夫で約9%、妻で約20%、シングルマザーで約14%減（2年目） | [9]\nミンカム | カナダ・ドーフィンとウィニペグ、支給1975〜1979年 | 最低所得を保証、ほかの収入1ドルにつき50セント減額。ドーフィンでは住民の誰もが申請できた | 社会実験、ドーフィンは町全体が対象 | 労働時間が男性で約1%、既婚女性で約3%減 | [10][11]\nアラスカ永久基金配当 | アメリカ・アラスカ州、1982年〜 | 住民全員に毎年の配当、平均で1人1,495ドル（2010年のドル） | ほかの州を組み合わせた「合成アラスカ」と比較、1977〜2014年 | 就業への影響なし、パートタイムが1.8ポイント（17%）増 | [8]\n全国規模の現金給付 | イラン、2011年〜 | 7,000万人超に毎月振り込み、1人あたり所得の中央値の28% | 受け取り始めた時期と額の違いを使ったパネルデータ（ランダム化ではない） | 労働時間・労働参加率の減少なし、女性と自営の男性は増加 | [12]\n7つの政府の現金給付 | ホンジュラス、インドネシア、メキシコ（2つ）、モロッコ、ニカラグア、フィリピン | 貧しい世帯への現金 | 7つのランダム化試験の再分析 | 男女とも、働くかどうか・働く時間に一貫した影響なし | [13]\nベーシックインカム実験 | フィンランド、2017〜2018年 | 月560ユーロを2年間、非課税 | ランダム化、失業者2,000人とほかの失業者を比較 | 1年目：就労日数49.64日対49.25日、2年目：約6日多い | [5][6]\nGiveDirectlyの長期UBI | ケニア・シアヤとボメット、2018年から12年間 | 大人1人に1日0.75ドル、毎月支給 | 村単位のランダム化、44村（約5,000人）と対照100村 | 総労働時間は変わらず、雇われ仕事が減り自営が増加（約2年後） | [7]\nSEED | アメリカ・ストックトン、2019〜2021年 | 月500ドルを2年間 | ランダム化、131人対200人 | 就業の差は有意でない | [2]\n無条件現金給付研究（OpenResearch） | アメリカ・イリノイ州とテキサス州、2020〜2023年 | 月1,000ドルを3年間 | ランダム化、1,000人対月50ドルの2,000人 | 週の労働時間が約1.3時間減、就業率が2.3ポイント低い | [3][4]\n保証所得の試み101件 | アメリカ各地、2018年〜 | 中央値は月500ドル | 対照群のある評価18件が仕事を報告 | 増加8件、はっきりした差なし7件、減少2件、仕事の種類の入れ替わり1件 | [1]"
+          ],
+          [
+            "h",
+            "1970年代：負の所得税とミンカム"
+          ],
+          [
+            "p",
+            "1968年から1980年にかけて、アメリカとカナダの政府は5つの「負の所得税」実験を行いました。[10]負の所得税は、厳密にはベーシックインカムではありません。最低限の所得を保証したうえで、ほかの収入が増えるとその一部を差し引きます。これらの実験では、稼いだ1ドルにつきおよそ50セントでした。つまり現金と、稼ぎへの高い税を一緒に試したことになります。"
+          ],
+          [
+            "p",
+            "最大のものはシアトルとデンバーの実験で、約4,800家族が参加しました。2年目で測ると、対照群とくらべて夫の労働時間は約9%、妻は約20%、シングルマザーは約14%短くなりました。[9]夫の減少の多くは失業期間が延びたことによるもので、仕事のない期間が平均で約2.2週長くなりました。妻やシングルマザーの場合は、労働市場から離れる期間として表れました。[9]アメリカの4つの実験を平均した3つのレビューは、主な稼ぎ手の減少を5〜7.9%としています。そのひとつ、フィリップ・ロビンズ（1985年）は「どの実験でも、労働市場からの大量離脱を示す証拠はない」と書いています。[10]"
+          ],
+          [
+            "p",
+            "カナダ・マニトバ州のミンカムでは、ドーフィンの町を「飽和地区」にし、住民なら誰でも保証を申請できるようにしました。1974年の終わりから参加者を登録し、支給は1979年まで続きました。[11]デレク・ヒュームとウェイン・シンプソンの労働の分析（1993年）では、労働時間は男性で約1%、既婚女性で約3%の減少で、アメリカより小さな結果でした。[10]ミンカムは、エヴリン・フォーゲットが2011年に報告した「ドーフィンの入院率が比較グループより8.5%下がった」という結果のほうで知られています。ただ、2021年にデビッド・グリーンが行った再分析は、それ以前からの傾向を考えに入れると、データはその結論を支えないと論じています。[11]"
+          ],
+          [
+            "h",
+            "最近の実験：フィンランド、ストックトン、OpenResearch"
+          ],
+          [
+            "p",
+            "フィンランドは、無作為に選んだ失業者2,000人に、月560ユーロを非課税で2年間配りました。1年目の就労日数は受給者が平均49.64日、対照群が49.25日で、効果はありませんでした。[5]おおむね2年目にあたる1年間では、受給者のほうが約6日多く働いています。ただしこの年から失業者向けの「アクティベーション・モデル」が始まり、2つのグループに同じようには影響しなかったため、2年目の差をすべてベーシックインカムの効果とは言えません。[6]詳しくは{フィンランドについてのエッセイ|/essays/finland-basic-income-experiment/}にまとめました。"
+          ],
+          [
+            "p",
+            "ストックトンのSEEDは、月500ドルを2年間配りました。2021年の1年目の報告では、受給者のフルタイム就業率が28%から40%に上がったとされ、この数字はいまも広く引用されています。しかしランダム化試験の査読つき分析（Journal of Urban Health、2023年、受給者131人・対照群200人）では、就業の差はコロナ禍の前も最中も統計的に有意ではありませんでした。[2]"
+          ],
+          [
+            "p",
+            "サム・アルトマンが資金を出したOpenResearchの研究は、もっとも規模が大きく、測り方も丁寧です。21〜40歳の1,000人に月1,000ドルを3年間配り、2,000人には月50ドルを配りました。受給者は対照群より週に約1.3時間働く時間が短く、働いている確率が2.3ポイント低く、仕事からの収入は年に約1,900ドル少なくなりました。著者たちはこれを5〜6%の減少、「中程度の効果」と呼んでいます。[3]それでも就業率はどちらのグループでも上がり、受給者は58%から72%、対照群は59%から74%になりました。[4]残りは{この研究についてのエッセイ|/essays/openresearch-cash-study/}をどうぞ。"
+          ],
+          [
+            "h",
+            "アメリカの101件：評価は何を言っているか"
+          ],
+          [
+            "p",
+            "{アメリカの保証所得の試みの一覧|/pilots/us/}には101件が載っていて、支給額の中央値は月500ドルです。評価が公表されているのは53件、そのうち対照群や比較グループと比べたのは34件。34件のうち18件が、仕事についての結果を報告しています。[1]"
+          ],
+          [
+            "p",
+            "8件は、対照群より仕事が増えたという結果でした。オークランドでは、フルタイム就業率が受給者で15%から26%に、対照群で14%から18%に上がりました。マサチューセッツ州ケンブリッジでは受給者が36%から40%に上がり、対照群は30%から28%に下がっています。アーリントン、コロンビア、ダーラム、デンバーも似た結果を報告し、ボルティモアの受給者は仕事を休んだ時間が月に約9時間少なくなりました。ロサンゼルス郡の若者向けの試みでは就業率が7ポイント上がりましたが、著者はその多くを、現金と一緒に受けた職業訓練によるものとみています。[1]"
+          ],
+          [
+            "p",
+            "7件ははっきりした差がなく、ストックトンもここに入ります。2件は仕事が減りました。OpenResearchと、コンプトンです。コンプトンでは、パートタイムで働いていた人の労働参加率が13ポイント下がり、フルタイムの人は変わりませんでした。ニューヨークのアーティスト向けの1件では、芸術の仕事が週に約3.9時間増え、それ以外の仕事が2.4時間減りました。[1]"
+          ],
+          [
+            "p",
+            "この18件は、同じ重さの証拠ではありません。多くは査読つき論文ではなく短い報告書で、対象は100〜200人ほどのことが多く、差が統計的に有意かを書いていないものもあり、ほかの支援と一緒だった試みもあります。数えて見えるのは結果の幅であって、判定ではありません。ただ、仕事から人が離れていくという結果は、そこには見当たりません。"
+          ],
+          [
+            "h",
+            "豊かな国の外で：ケニア、イラン、7つのプログラム"
+          ],
+          [
+            "p",
+            "ケニアのGiveDirectlyの研究は、いまのところ長期のベーシックインカムにいちばん近いものです。44の村で、大人全員が1日0.75ドルを毎月まとめて12年間受け取ります。100の村が対照群で、ほかに2年間だけ受け取る村と、一括で受け取る村があります。[7]約2年後、世帯の総労働時間は減っていませんでした。推定値は有意でない小さな増加で、著者たちは「大きな減少は否定できる」としています。変わったのは仕事の中身でした。農業での雇われ仕事が減り、農業以外の自営が増えました。小さな商売を始めたり広げたりした人がいたからです。村の外から来た働き手がその穴を埋め、賃金は上がりました。[7]"
+          ],
+          [
+            "p",
+            "イランは2011年から、エネルギー補助金をやめるかわりに、毎月の現金を振り込むようになりました。対象は7,000万人を超え、額は1人あたり所得の中央値の28%です。世帯ごとに受け取り始めた時期や、そのお金の重みが違うことを使って分析したジャバド・サレヒ＝イスファハニとモハンマド・モスタファヴィ＝デフズーイは、「現金給付が労働供給を減らした証拠はない」とし、女性と自営の男性ではむしろ増えたと報告しています。ワーキングペーパー版では、労働市場とのつながりが弱い若者が例外でした。[12]"
+          ],
+          [
+            "p",
+            "アビジット・バナジー、レマ・ハンナ、ガブリエル・クラインドラー、ベンジャミン・オルケンは、ホンジュラス、インドネシア、メキシコ、モロッコ、ニカラグア、フィリピンの政府による現金給付の、7つのランダム化試験のデータを分析し直しました。結論は「現金給付が働く意欲をそぐという一貫した証拠はない」で、男性でも女性でも同じでした。[13]これらは貧しい世帯向けの給付で、ベーシックインカムではありません。"
+          ],
+          [
+            "h",
+            "アラスカ：全員に、毎年"
+          ],
+          [
+            "p",
+            "アラスカ州の住民は1982年から毎年、州の永久基金から配当金を受け取っています。平均は1人1,495ドル（2010年のドル）、家族ではおよそ3,900ドルです。[8]デイモン・ジョーンズとヨアナ・マリネスクは、アラスカをほかの州を重みづけして組み合わせたものと比べ、配当金は「就業に影響を与えなかった」一方、パートタイムで働く人の割合を1.8ポイント（17%）押し上げたと報告しました。[8]"
+          ],
+          [
+            "p",
+            "著者たちは、この結果の読み方に慎重です。信頼区間からは就業へのプラスの効果も否定できないので、増えたパートタイムには、フルタイムからパートに移った人と、パートで働き始めた人の両方が含まれているかもしれません。労働時間の減少は週1時間未満で、有意ではありませんでした。説明として著者たちが挙げるのは、全員がお金を受け取って地元で使えば、地元のサービスへの需要が増え、働く量を減らそうとする力を打ち消すということです。実際、地元の客を相手にする業種のほうが、州外と取引する業種より雇用が保たれていました。[8]"
+          ],
+          [
+            "h",
+            "誰が働く量を減らし、代わりに何をしたか"
+          ],
+          [
+            "p",
+            "仕事が減ったところでは、減ったのは特定の人たちでした。1970年代の実験でいちばん減ったのは妻とシングルマザーです。もともとの労働時間が短いので、数週間休むだけで大きな割合になります。[10]夫は主に、次の仕事までの期間が長くなりました。[9]若者は割合では大きく減らしましたが、時間にすれば少しで、公式報告は、それが学校で過ごす時間の増加にはつながらなかったと書いています。[9]"
+          ],
+          [
+            "p",
+            "OpenResearchでは、減少は30歳未満、ひとり親、もともと世帯収入が高かった人に集中していて、30歳以上の受給者では有意な効果はありませんでした。[4]減った時間の多くは余暇に回りました。子育て、仕事探し、自己研さんに使う時間は、小さな変化さえないと言えるほどでした。ただし、仕事のない期間は約0.8か月長くなっています。[3]ケニアでは、雇われ仕事から自分の商売へ移りました。[7]アラスカでは、一部の人がパートタイムに移りました。[8]フィンランドについてKelaは、ベーシックインカムはもともと活発だった人の就労を後押ししたが、いちばん難しい状況にある人の問題は解決しなかったとしています。[6]"
+          ],
+          [
+            "o",
+            "つまり正直な姿は「誰も働く量を減らさない」ではありません。週に数時間、年に数週間、減らす人はいます。多くは家計の補助的な稼ぎ手やひとり親、若者、そして仕事と仕事のあいだにいる人です。それを損失とみるか、むしろ目的とみるかは、その時間を何のためのものと考えるかで変わります。"
+          ],
+          [
+            "h",
+            "実験は国のベーシックインカムではない"
+          ],
+          [
+            "p",
+            "上の研究のほとんどは、本物のベーシックインカムと少なくとも4つの点で違います。"
+          ],
+          [
+            "p",
+            "期間。ほとんどは期限つきで、受給者はいつお金が止まるかを知っていました。3年間の現金と一生続く給付とでは、受け止め方が違うかもしれません。アラスカの配当金は恒久的ですが、額は控えめです。長期の約束を試しているのはケニアの12年グループで、公表された結果はまだ最初の2年分です。[7][8]"
+          ],
+          [
+            "p",
+            "誰が受け取るか。実験は、ある地域の一部の人にだけ配ります。全員に配れば、地元の需要や賃金、物価が変わります。ケニアでは雇われ仕事を離れる人が出て賃金が上がり、アラスカでは地域経済への効果が個人への効果を打ち消したようです。[7][8]数百人に配る実験では、これは見えません。"
+          ],
+          [
+            "p",
+            "誰が払うか。実験のお金は外から来ます。国のベーシックインカムは、主に税で払わなければならず、稼ぎへの税率が上がること自体が働く量を減らすこともありえます。負の所得税の実験では稼ぎ1ドルにつき約50セントを差し引いていて、効果が大きく出た理由のひとつになっています。フィンランドの実験は税をまったく変えていません。[6][10]費用がどれくらいかは{世界地図のエッセイ|/essays/basic-income-world-map/}をどうぞ。"
+          ],
+          [
+            "p",
+            "誰を調べたか。対象の多くは所得の低い人たちです。稼ぎにくらべて給付が大きいので、反応も大きくなります。ゲーリーの実験をもとにしたシミュレーションでは、国の制度にした場合の減少は実験の3分の1ほど（4.5%ではなく1.6%）と見積もられました。[10]"
+          ],
+          [
+            "h",
+            "まだわかっていないこと"
+          ],
+          [
+            "p",
+            "恒久的で、全員が対象で、暮らせる水準で、税でまかなうベーシックインカムを実際に配り、仕事がどう変わるかを測った例は、まだありません。手元にある証拠は、その一部ずつです。恒久的だが額は小さい（アラスカ）、お金はあるが期限つき（ほとんどの実験）、村の全員（ケニア）、全国規模だが対象を絞った制度（イラン、7つのプログラム）。"
+          ],
+          [
+            "p",
+            "試みの結果の多くは、本人が答える調査に頼っています。よりよいデータが入れば推定も動きます。OpenResearchの推定は2026年、州の失業保険の記録を加えて上方修正されました。[3]それに、300人の研究の「有意な効果なし」は、3,000人の研究の同じ言葉よりずっと弱い主張です。"
+          ],
+          [
+            "h",
+            "ここから言えること"
+          ],
+          [
+            "o",
+            "50年以上にわたり、豊かな国でも貧しい国でも行われてきた実験で、お金を配ると人が働くのをやめる、という結果を出した研究はひとつもありませんでした。多くは小さな減少か変化なしで、仕事が増えたという研究もあります。減った場合も、週に数時間、年に数週間の単位で、多くは子どもを育てる親、若者、仕事と仕事のあいだにいる人でした。"
+          ],
+          [
+            "o",
+            "ただしそれは「ベーシックインカムは仕事に影響しない」と同じではありません。OpenResearchや1970年代の実験は、控えめながら本物の減少を測っていて、その数字は正直な費用の見積もりに入れるべきものです。問うべきは「人は働かなくなるか？」ではなく、「どれだけ、誰が減らすのか。それは払う価値のある代償か？」です。最初の2つにはデータが答えてくれます。3つめは、私たち一人ひとりの判断です。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "“白给钱，大家就不干活了。”这是对基本收入最常见的反对意见，也是个合理的问题。好在它可以检验：五十多年来，政府、慈善机构和研究者一直在真金白银地发钱，并测量工作因此发生了什么变化。"
+          ],
+          [
+            "p",
+            "我们把主要研究排在一起：1970年代美国的负所得税实验、加拿大的Mincome、阿拉斯加的分红、伊朗的全国现金转移、对六个国家七个政府项目的再分析、芬兰、GiveDirectly在肯尼亚的长期研究、斯托克顿、OpenResearch，以及{美国保障收入试点一览|/pilots/us/}中的101个试点。所有数字都来自论文和官方报告，或来自我们此前关于{OpenResearch|/essays/openresearch-cash-study/}和{芬兰|/essays/finland-basic-income-experiment/}的随笔。"
+          ],
+          [
+            "w",
+            "各项研究对工作的影响\n工作减少 | 没有明确变化 | 工作增加\nSIME/DIME（负所得税） | 美国，1970年代 | -1 | 工时减少9–20%\nMincome | 加拿大，1975–79年 | -1 | 工时减少1–3%\n阿拉斯加分红 | 美国，1982年起 | 0 | 兼职增加\n伊朗现金转移 | 2011年起 | 0 | 女性工作增加\n七个政府项目 | 六个国家 | 0 | 没有系统性影响\n芬兰 | 2017–18年 | 0 | 第二年：多6天\n肯尼亚（GiveDirectly） | 2018年起 | 0 | 从打工转向自营\n斯托克顿（SEED） | 2019–21年 | 0 | 不显著\nOpenResearch | 美国，2020–23年 | -1 | 每周少1.3小时\n有对照组的美国试点 | 17项评估 | 2,7,8 | 试点数"
+          ],
+          [
+            "p",
+            "每个点代表一项研究对工作的主要结果。三列只表示方向，不表示大小：各研究衡量工作的单位不同（小时、天数、就业率），所以大小用文字注明。美国试点那一行的数字，是有对照组的评估分别落在各列的数量；另有一项发现人们在不同类型的工作之间转换。"
+          ],
+          [
+            "h",
+            "把证据放在一起"
+          ],
+          [
+            "p",
+            "读下面的内容，有一个区别很重要：“没有显著效果”不等于“没有效果”。它的意思是，领取者和对照组之间的差距相对于数据的波动太小，无法和偶然区分开。小研究可能漏掉真实的效果；大研究能排除大的效果，却排除不了小的效果。论文写明了能排除到什么程度的，我们也会说明。"
+          ],
+          [
+            "t",
+            "项目 | 地点和时间 | 发放 | 方法 | 对工作的影响 | 来源\nSIME/DIME（负所得税） | 美国西雅图和丹佛，1970年起，为期3年或5年 | 四口之家每年保障3,800–5,600美元（1971年美元），其他收入增加时减少 | 随机分组，约4,800个家庭 | 年工时：丈夫减少约9%，妻子约20%，单身母亲约14%（第二年） | [9]\nMincome | 加拿大多芬和温尼伯，1975–1979年发放 | 保障最低收入，其他收入每1加元扣减50分；多芬的任何居民都可申请 | 社会实验，多芬全镇都有资格 | 工时：男性减少约1%，已婚女性约3% | [10][11]\n阿拉斯加永久基金分红 | 美国阿拉斯加州，1982年起 | 每位居民每年一笔分红，平均每人1,495美元（2010年美元） | 将阿拉斯加与其他州的加权组合比较，1977–2014年 | 对就业没有影响；兼职比例上升1.8个百分点（17%） | [8]\n全国现金转移 | 伊朗，2011年起 | 每月向7,000多万人打款，相当于人均收入中位数的28% | 利用各户开始领取的时间和金额差异的面板数据（非随机） | 工时和劳动参与率没有下降；女性和自营男性的工作增加 | [12]\n七个政府现金转移项目 | 洪都拉斯、印度尼西亚、墨西哥（两个）、摩洛哥、尼加拉瓜、菲律宾 | 给贫困家庭的现金 | 对7项随机试验的再分析 | 对男女是否工作、工作多少都没有系统性影响 | [13]\n基本收入实验 | 芬兰，2017–2018年 | 每月560欧元，为期两年，免税 | 随机分组，2,000名失业者对比其他失业者 | 第一年：工作天数49.64天对49.25天；第二年：多约6天 | [5][6]\nGiveDirectly长期全民基本收入 | 肯尼亚锡亚亚和博梅特，2018年起，为期12年 | 每名成年人每天0.75美元，按月发放 | 按村随机：44个村（约5,000人）对比100个对照村 | 总工时不变；打工减少，自营增加（约两年后） | [7]\nSEED | 美国斯托克顿，2019–2021年 | 每月500美元，为期两年 | 随机分组，131人对200人 | 就业差异不显著 | [2]\n无条件现金研究（OpenResearch） | 美国伊利诺伊州和得克萨斯州，2020–2023年 | 每月1,000美元，为期三年 | 随机分组，1,000人对比每月领50美元的2,000人 | 每周工作少约1.3小时；就业概率低2.3个百分点 | [3][4]\n101个保障收入试点 | 美国各地，2018年起 | 中位数每月500美元 | 18项有对照组的评估报告了工作结果 | 增加8项，无明确差异7项，减少2项，工作类型转换1项 | [1]"
+          ],
+          [
+            "h",
+            "1970年代：负所得税与Mincome"
+          ],
+          [
+            "p",
+            "1968年至1980年间，美国和加拿大政府进行了五次负所得税实验。[10]负所得税并不完全是基本收入：它先保障一个最低收入，其他收入增加时再扣回一部分，这些实验中通常是每挣1美元扣约50美分。所以它们同时检验了现金和对劳动收入的高税率。"
+          ],
+          [
+            "p",
+            "规模最大的是西雅图和丹佛的实验，约有4,800个家庭参加。按第二年衡量，与对照组相比，丈夫的工时少约9%，妻子少约20%，单身母亲少约14%。[9]丈夫的减少主要来自失业时间变长，平均多失业约2.2周；妻子和单身母亲则表现为退出劳动力市场的时间。[9]三篇综述对美国四个实验取平均，得出主要养家者的减少幅度为5%至7.9%。其中菲利普·罗宾斯（1985）写道：“没有任何一个实验显示出大规模退出劳动力市场的证据。”[10]"
+          ],
+          [
+            "p",
+            "加拿大马尼托巴省的Mincome把多芬镇设为“饱和地区”，镇上每位居民都可以申请保障。家庭从1974年底开始登记，发放一直持续到1979年。[11]德里克·休姆和韦恩·辛普森（1993）对工作的分析发现，男性工时减少约1%，已婚女性约3%，比美国小。[10]Mincome更出名的是埃夫林·福吉特2011年的发现：多芬的住院率比对照组下降了8.5%；但戴维·格林2021年的再分析认为，把此前已有的趋势考虑进去后，数据并不支持这一结论。[11]"
+          ],
+          [
+            "h",
+            "近年的实验：芬兰、斯托克顿和OpenResearch"
+          ],
+          [
+            "p",
+            "芬兰向随机选出的2,000名失业者每月发放560欧元，免税，为期两年。第一年，领取者平均工作49.64天，对照组49.25天：没有效果。[5]大致相当于第二年的一年里，领取者多工作约6天。但那一年针对失业者的“激活模式”开始实施，对两组的影响并不相同，所以第二年的差距不能全部归功于基本收入。[6]细节见{我们关于芬兰的随笔|/essays/finland-basic-income-experiment/}。"
+          ],
+          [
+            "p",
+            "斯托克顿的SEED每月发放500美元，为期两年。2021年的第一年报告说，领取者的全职就业率从28%升到40%，这个数字至今仍被广泛引用。但对这项随机试验的同行评审分析（《城市健康杂志》，2023年；领取者131人，对照组200人）发现，无论疫情前还是疫情期间，就业差异在统计上都不显著。[2]"
+          ],
+          [
+            "p",
+            "萨姆·奥尔特曼资助的OpenResearch研究规模最大，测量也最细致。1,000名21至40岁的人每月领取1,000美元，为期三年；另有2,000人每月领取50美元。领取者每周工作时间比对照组少约1.3小时，就业概率低2.3个百分点，工作收入每年少约1,900美元。作者称之为5%至6%的下降，“中等程度的效果”。[3]两组的就业率仍然都上升了：领取者从58%到72%，对照组从59%到74%。[4]其余内容见{我们关于这项研究的随笔|/essays/openresearch-cash-study/}。"
+          ],
+          [
+            "h",
+            "美国101个试点：评估怎么说"
+          ],
+          [
+            "p",
+            "我们的{美国保障收入试点一览|/pilots/us/}收录了101个项目，发放额中位数为每月500美元。其中53个有已发表的评估，34个与对照组或比较组做了比较；这34个中有18个报告了工作方面的结果。[1]"
+          ],
+          [
+            "p",
+            "8个发现工作比对照组多。在奥克兰，领取者的全职就业率从15%升到26%，对照组从14%升到18%；在马萨诸塞州剑桥，领取者从36%升到40%，对照组则从30%降到28%。阿灵顿、哥伦比亚、达勒姆和丹佛报告了类似结果，巴尔的摩的领取者每月缺勤时间少约9小时。洛杉矶县面向年轻人的项目中，就业率上升7个百分点，不过作者认为其中很大一部分来自随现金一起提供的职业培训。[1]"
+          ],
+          [
+            "p",
+            "7个没有发现明确差异，斯托克顿也在其中。2个发现工作减少：OpenResearch，以及康普顿——在那里，原本做兼职的人的劳动参与率下降了13个百分点，全职者没有变化。还有1个是面向纽约艺术家的项目：每周用于艺术的时间多约3.9小时，其他工作少2.4小时。[1]"
+          ],
+          [
+            "p",
+            "这18项并不是分量相同的证据。很多是简短报告而非同行评审论文，样本常常只有100到200人，有的只给百分比而不说明差异是否显著，有的还附带其他服务。数一数能看出结果的范围，而不是定论。但从中看不到人们纷纷离开工作的情况。"
+          ],
+          [
+            "h",
+            "富裕国家之外：肯尼亚、伊朗和七个项目"
+          ],
+          [
+            "p",
+            "GiveDirectly在肯尼亚的研究，是迄今最接近长期基本收入的尝试。在44个村子里，每名成年人每天领取0.75美元，按月发放，持续12年；100个村子作为对照，另有只领两年的村子和一次性领取的村子。[7]大约两年后，家庭总工时没有下降：估计值是一个不显著的小幅增加，作者表示“可以排除大幅下降”。变化的是工作的种类：农业打工的时间减少，非农自营的时间增加，因为有人开起或扩大了小生意。村外来的打工者填补了空缺，工资随之上涨。[7]"
+          ],
+          [
+            "p",
+            "伊朗从2011年起取消能源补贴，改为每月发放现金，覆盖7,000多万人，金额相当于人均收入中位数的28%。贾瓦德·萨利希-伊斯法哈尼和穆罕默德·莫斯塔法维-德祖伊利用各户开始领取的时间和这笔钱对他们的分量的差异进行分析，发现“没有证据表明现金转移减少了劳动供给”，女性和自营男性的工作反而增加。工作论文版本中的例外，是与劳动力市场联系较弱的年轻人。[12]"
+          ],
+          [
+            "p",
+            "阿比吉特·班纳吉、蕾玛·汉纳、加布里埃尔·克赖因德勒和本杰明·奥尔肯重新分析了洪都拉斯、印度尼西亚、墨西哥、摩洛哥、尼加拉瓜和菲律宾七项政府现金转移随机试验的数据，结论是“没有系统性证据表明现金转移会抑制工作”，男女皆然。[13]这些是针对贫困家庭的项目，不是基本收入。"
+          ],
+          [
+            "h",
+            "阿拉斯加：人人有份，年年都发"
+          ],
+          [
+            "p",
+            "自1982年起，阿拉斯加的每位居民每年都从州永久基金领取一笔分红，平均每人1,495美元（2010年美元），一个家庭约3,900美元。[8]达蒙·琼斯和约安娜·马里内斯库把阿拉斯加与其他州的加权组合相比较，发现分红“对就业没有影响”，但使兼职比例上升了1.8个百分点（17%）。[8]"
+          ],
+          [
+            "p",
+            "他们对结果的解读很谨慎。置信区间无法排除对就业的正面影响，所以多出来的兼职，既可能来自从全职转为兼职的人，也可能来自以兼职方式开始工作的人。工时减少不到每周1小时，且不显著。他们的解释是：当人人都拿到钱并在本地消费，本地服务的需求上升，抵消了少工作的倾向；事实上，面向本地顾客的行业比与外地交易的行业更能保住就业。[8]"
+          ],
+          [
+            "h",
+            "谁减少了工作，又把时间用在了哪里"
+          ],
+          [
+            "p",
+            "工作减少的地方，减少的是特定的人。在1970年代的实验中，减得最多的是妻子和单身母亲：她们本来工时就短，休几周就占了很大比例。[10]丈夫主要是两份工作之间的间隔变长了。[9]年轻人按比例减得多，但按小时算很少，官方报告指出，这并没有伴随上学时间的增加。[9]"
+          ],
+          [
+            "p",
+            "在OpenResearch中，减少集中在30岁以下的人、单亲父母和起初家庭收入最高的人身上；30岁以上的领取者没有显著影响。[4]省下的时间主要用于休闲。论文甚至可以排除在育儿、找工作或自我提升上的时间发生微小变化，不过没有工作的时段平均长了约0.8个月。[3]在肯尼亚，人们从打工转向自己的生意。[7]在阿拉斯加，有些人转为兼职。[8]关于芬兰，Kela认为基本收入促进了原本就比较活跃的人的就业，却没有解决处境最困难的人的问题。[6]"
+          ],
+          [
+            "o",
+            "所以，诚实的图景不是“没有人减少工作”。有些人确实减少了，每周几小时，或每年几周：大多是家庭的第二收入者和单亲父母、年轻人，以及处在两份工作之间的人。这算代价还是目的，取决于你认为这些时间应该用来做什么。"
+          ],
+          [
+            "h",
+            "为什么试点不等于全国性的基本收入"
+          ],
+          [
+            "p",
+            "上面几乎每项研究，都至少在四个方面与真正的基本收入不同。"
+          ],
+          [
+            "p",
+            "持续多久。大多数是有期限的，领取者知道钱什么时候停。三年的现金和终身的发放，人们的反应可能不同。阿拉斯加的分红是永久的，但金额不大。肯尼亚的12年组是检验长期承诺的主要实验，目前公布的结果只覆盖头两年。[7][8]"
+          ],
+          [
+            "p",
+            "谁能领。试点只给某地的一部分人发钱。给所有人发，就会改变本地的需求、工资和物价：在肯尼亚，人们离开打工后工资上涨；在阿拉斯加，对本地经济的影响似乎抵消了对个人的影响。[7][8]只给几百人发钱的试点看不到这一点。"
+          ],
+          [
+            "p",
+            "谁来出钱。试点的钱来自外部。全国性的基本收入必须有人买单，主要靠税收，而对劳动收入提高税率本身也可能减少工作。负所得税实验确实每挣1美元扣回约50美分，这也是它们效果较大的原因之一；芬兰的实验则完全没有改变税制。[6][10]基本收入要花多少钱，请看{我们的世界地图|/essays/basic-income-world-map/}。"
+          ],
+          [
+            "p",
+            "研究了谁。大多数样本是低收入者，发放额相对于他们的收入较大，反应也更大。基于加里实验的一项模拟估计，全国性项目对工作的减少只有实验的约三分之一（1.6%而不是4.5%）。[10]"
+          ],
+          [
+            "h",
+            "我们还不知道的"
+          ],
+          [
+            "p",
+            "至今还没有人真正发放过一种永久、全民、足以生活、由税收支付的基本收入，并测量它对工作的影响。现有证据只覆盖其中的一部分：永久但金额小（阿拉斯加），有钱但有期限（大多数试点），全村人人有份（肯尼亚），以及全国规模但有针对性的设计（伊朗和七个项目）。"
+          ],
+          [
+            "p",
+            "很多试点结果依赖本人填写的调查。有了更好的数据，估计也会变化：OpenResearch的估计在2026年加入州失业保险记录后被上调。[3]而且，300人研究得出的“没有显著效果”，远比3,000人研究的同一句话弱。"
+          ],
+          [
+            "h",
+            "我们能得出什么"
+          ],
+          [
+            "o",
+            "五十多年来，在富国和穷国进行的实验中，没有一项研究发现发钱会让人停止工作。多数发现小幅减少或没有变化，也有研究发现工作增加。即使减少，也是每周几小时、每年几周的幅度，主要是带孩子的父母、年轻人和处在两份工作之间的人。"
+          ],
+          [
+            "o",
+            "但这不等于“基本收入对工作没有影响”。OpenResearch和1970年代的实验测到了真实的、虽然不大的减少，这些数字理应计入任何诚实的成本估算。更好的问题不是“人们会不会不干活？”，而是“少干多少、谁少干、值不值得？”前两个问题，数据可以回答；第三个，要靠我们每个人自己判断。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "“मुफ़्त में पैसा दोगे तो लोग काम करना छोड़ देंगे।” बेसिक इनकम पर यही सबसे आम आपत्ति है, और सवाल जायज़ है। अच्छी बात यह है कि इसे जाँचा जा सकता है। पचास साल से ज़्यादा समय से सरकारें, चैरिटी और शोधकर्ता लोगों को सचमुच पैसा देते आए हैं और नापते आए हैं कि काम पर क्या असर हुआ।"
+          ],
+          [
+            "p",
+            "हमने मुख्य अध्ययनों को एक साथ रखा: 1970 के दशक के अमेरिका के नेगेटिव इनकम टैक्स प्रयोग, कनाडा का मिनकम, अलास्का का डिविडेंड, ईरान का राष्ट्रीय नकद हस्तांतरण, छह देशों के सात सरकारी कार्यक्रमों का दोबारा विश्लेषण, फ़िनलैंड, केन्या में GiveDirectly का लंबा अध्ययन, स्टॉकटन, OpenResearch, और {अमेरिका के गारंटीड इनकम पायलटों की हमारी तालिका|/pilots/us/} के 101 पायलट। हर आँकड़ा शोध-पत्रों और आधिकारिक रिपोर्टों से है, या {OpenResearch|/essays/openresearch-cash-study/} और {फ़िनलैंड|/essays/finland-basic-income-experiment/} पर हमारे पिछले निबंधों से।"
+          ],
+          [
+            "w",
+            "अध्ययन के हिसाब से काम पर असर\nकाम घटा | साफ़ बदलाव नहीं | काम बढ़ा\nSIME/DIME (नेगेटिव इनकम टैक्स) | अमेरिका, 1970 का दशक | -1 | घंटे 9–20% घटे\nमिनकम | कनाडा, 1975–79 | -1 | घंटे 1–3% घटे\nअलास्का डिविडेंड | अमेरिका, 1982 से | 0 | पार्ट-टाइम काम बढ़ा\nईरान का नकद हस्तांतरण | 2011 से | 0 | महिलाओं का काम बढ़ा\nसात सरकारी कार्यक्रम | छह देश | 0 | कोई व्यवस्थित असर नहीं\nफ़िनलैंड | 2017–18 | 0 | दूसरा साल: 6 दिन ज़्यादा\nकेन्या (GiveDirectly) | 2018 से | 0 | मज़दूरी से अपने काम की ओर\nस्टॉकटन (SEED) | 2019–21 | 0 | सांख्यिकीय रूप से अहम नहीं\nOpenResearch | अमेरिका, 2020–23 | -1 | हफ़्ते में 1.3 घंटे कम\nकंट्रोल ग्रुप वाले अमेरिकी पायलट | 17 मूल्यांकन | 2,7,8 | पायलटों की संख्या"
+          ],
+          [
+            "p",
+            "हर बिंदु किसी अध्ययन का काम पर मुख्य नतीजा है। कॉलम दिशा बताते हैं, आकार नहीं: अध्ययन काम को अलग-अलग इकाइयों (घंटे, दिन, रोज़गार दर) में नापते हैं, इसलिए आकार शब्दों में लिखा है। अमेरिकी पायलटों की पंक्ति में संख्याएँ बताती हैं कि कंट्रोल ग्रुप वाले कितने मूल्यांकन किस कॉलम में आते हैं; एक और में लोग एक तरह के काम से दूसरी तरह के काम में गए।"
+          ],
+          [
+            "h",
+            "सबूत एक साथ"
+          ],
+          [
+            "p",
+            "आगे की हर बात में एक फ़र्क़ अहम है। “कोई अहम असर नहीं” (no significant effect) का मतलब “कोई असर नहीं” नहीं है। इसका मतलब है कि पाने वालों और कंट्रोल ग्रुप के बीच का अंतर, आँकड़ों के उतार-चढ़ाव के मुक़ाबले इतना छोटा था कि उसे संयोग से अलग नहीं किया जा सका। छोटा अध्ययन असली असर से चूक सकता है। बड़ा अध्ययन बड़े असर को ख़ारिज कर सकता है, पर छोटे असर को नहीं। जहाँ शोध-पत्र बताता है कि वह क्या ख़ारिज कर सकता है, वहाँ हम भी बताते हैं।"
+          ],
+          [
+            "t",
+            "कार्यक्रम | जगह और साल | भुगतान | तरीका | काम पर असर | स्रोत\nSIME/DIME (नेगेटिव इनकम टैक्स) | सिएटल और डेनवर, अमेरिका; 1970 से, 3 या 5 साल | चार लोगों के परिवार को साल में $3,800–$5,600 की गारंटी (1971 के डॉलर), दूसरी आय बढ़ने पर कम | रैंडम; लगभग 4,800 परिवार | सालाना घंटे: पतियों के लगभग 9%, पत्नियों के 20%, अकेली माताओं के 14% कम (दूसरा साल) | [9]\nमिनकम | डॉफ़िन और विनिपेग, कनाडा; भुगतान 1975–1979 | न्यूनतम आय की गारंटी, दूसरी आय के हर डॉलर पर 50 सेंट कम; डॉफ़िन में कोई भी निवासी दावा कर सकता था | फ़ील्ड प्रयोग; पूरा डॉफ़िन शहर पात्र | घंटे: पुरुषों के लगभग 1%, विवाहित महिलाओं के 3% कम | [10][11]\nअलास्का परमानेंट फ़ंड डिविडेंड | अलास्का, अमेरिका; 1982 से | हर निवासी को सालाना डिविडेंड: औसतन प्रति व्यक्ति $1,495 (2010 के डॉलर) | अलास्का की तुलना दूसरे राज्यों के भारित मिश्रण से, 1977–2014 | रोज़गार पर कोई असर नहीं; पार्ट-टाइम काम 1.8 अंक (17%) बढ़ा | [8]\nराष्ट्रीय नकद हस्तांतरण | ईरान; 2011 से | 7 करोड़ से ज़्यादा लोगों को हर महीने पैसा, प्रति व्यक्ति मध्य आय का 28% | परिवारों को कब और कितना मिला, इस पर पैनल डेटा (रैंडम नहीं) | काम के घंटे या श्रम भागीदारी नहीं घटी; महिलाओं और स्वरोज़गार वाले पुरुषों का काम बढ़ा | [12]\nसात सरकारी नकद हस्तांतरण कार्यक्रम | होंडुरास, इंडोनेशिया, मेक्सिको (दो), मोरक्को, निकारागुआ, फ़िलीपींस | ग़रीब परिवारों को नकद | 7 रैंडम ट्रायल का दोबारा विश्लेषण | पुरुषों या महिलाओं के काम करने या कितना काम करने पर कोई व्यवस्थित असर नहीं | [13]\nबेसिक इनकम प्रयोग | फ़िनलैंड; 2017–2018 | दो साल तक हर महीने €560, टैक्स-मुक्त | रैंडम; 2,000 बेरोज़गार बनाम दूसरे बेरोज़गार | पहला साल: काम के दिन 49.64 बनाम 49.25; दूसरा साल: लगभग 6 दिन ज़्यादा | [5][6]\nGiveDirectly का लंबा UBI | सियाया और बोमेत, केन्या; 2018 से, 12 साल | हर वयस्क को रोज़ $0.75, हर महीने | गाँव के स्तर पर रैंडम: 44 गाँव (लगभग 5,000 लोग) बनाम 100 कंट्रोल गाँव | कुल घंटे नहीं बदले; मज़दूरी कम, स्वरोज़गार ज़्यादा (लगभग दो साल बाद) | [7]\nSEED | स्टॉकटन, अमेरिका; 2019–2021 | दो साल तक हर महीने $500 | रैंडम; 131 बनाम 200 | रोज़गार में अंतर अहम नहीं | [2]\nबिना शर्त नकद अध्ययन (OpenResearch) | इलिनॉय और टेक्सस, अमेरिका; 2020–2023 | तीन साल तक हर महीने $1,000 | रैंडम; 1,000 बनाम 2,000 जिन्हें महीने के $50 मिले | हफ़्ते में लगभग 1.3 घंटे कम; रोज़गार की संभावना 2.3 अंक कम | [3][4]\n101 गारंटीड इनकम पायलट | पूरे अमेरिका में; 2018 से | मध्य राशि हर महीने $500 | कंट्रोल ग्रुप वाले 18 मूल्यांकन काम पर नतीजा देते हैं | 8 में काम बढ़ा, 7 में साफ़ अंतर नहीं, 2 में घटा, 1 में काम का प्रकार बदला | [1]"
+          ],
+          [
+            "h",
+            "1970 का दशक: नेगेटिव इनकम टैक्स और मिनकम"
+          ],
+          [
+            "p",
+            "1968 से 1980 के बीच अमेरिका और कनाडा की सरकारों ने पाँच नेगेटिव इनकम टैक्स प्रयोग किए।[10] नेगेटिव इनकम टैक्स पूरी तरह बेसिक इनकम नहीं है। यह एक न्यूनतम आय की गारंटी देता है और दूसरी आय बढ़ने पर उसका कुछ हिस्सा वापस ले लेता है; इन प्रयोगों में आम तौर पर कमाए हर डॉलर पर लगभग 50 सेंट। यानी इनमें नकद और कमाई पर ऊँचे टैक्स, दोनों को साथ परखा गया।"
+          ],
+          [
+            "p",
+            "सबसे बड़ा प्रयोग सिएटल और डेनवर में था, जिसमें लगभग 4,800 परिवार शामिल थे। दूसरे साल में नापने पर, कंट्रोल ग्रुप की तुलना में पतियों ने लगभग 9% कम घंटे काम किया, पत्नियों ने लगभग 20% और अकेली माताओं ने लगभग 14%।[9] पतियों की कमी ज़्यादातर लंबी बेरोज़गारी से आई, औसतन लगभग 2.2 हफ़्ते ज़्यादा बिना काम के; पत्नियों और अकेली माताओं में यह श्रम बाज़ार से बाहर रहने के समय के रूप में दिखी।[9] अमेरिका के चारों प्रयोगों का औसत निकालने वाली तीन समीक्षाओं ने मुख्य कमाने वालों में कमी 5% से 7.9% आँकी। इनमें से एक, फ़िलिप रॉबिन्स (1985), ने लिखा कि “किसी भी मामले में श्रम बाज़ार से बड़े पैमाने पर हटने का सबूत नहीं है”।[10]"
+          ],
+          [
+            "p",
+            "कनाडा के मैनिटोबा में मिनकम ने डॉफ़िन शहर को “सैचुरेशन साइट” बनाया: हर निवासी गारंटी का दावा कर सकता था। परिवारों का नामांकन 1974 के आख़िर से हुआ और भुगतान 1979 तक चला।[11] डेरेक ह्यूम और वेन सिम्पसन (1993) के काम के विश्लेषण में पुरुषों के घंटे लगभग 1% और विवाहित महिलाओं के 3% घटे, जो अमेरिका से कम था।[10] मिनकम ज़्यादा मशहूर एवलिन फ़ॉरगेट के 2011 के नतीजे के लिए है कि डॉफ़िन में अस्पताल में भर्ती तुलना समूह से 8.5% घटी; पर डेविड ग्रीन का 2021 का दोबारा विश्लेषण कहता है कि पहले से चल रहे रुझानों को गिनने पर आँकड़े उस निष्कर्ष का समर्थन नहीं करते।[11]"
+          ],
+          [
+            "h",
+            "हाल के प्रयोग: फ़िनलैंड, स्टॉकटन और OpenResearch"
+          ],
+          [
+            "p",
+            "फ़िनलैंड ने रैंडम तरीक़े से चुने गए 2,000 बेरोज़गारों को दो साल तक हर महीने €560 टैक्स-मुक्त दिए। पहले साल पाने वालों ने औसतन 49.64 दिन काम किया और कंट्रोल ग्रुप ने 49.25 दिन: कोई असर नहीं।[5] मोटे तौर पर दूसरे साल में पाने वालों ने लगभग 6 दिन ज़्यादा काम किया। लेकिन उसी साल बेरोज़गारों के लिए एक नया “एक्टिवेशन मॉडल” शुरू हुआ, जिसने दोनों समूहों पर एक जैसा असर नहीं डाला, इसलिए दूसरे साल का पूरा अंतर बेसिक इनकम के खाते में नहीं डाला जा सकता।[6] विस्तार {फ़िनलैंड पर हमारे निबंध|/essays/finland-basic-income-experiment/} में है।"
+          ],
+          [
+            "p",
+            "स्टॉकटन के SEED ने दो साल तक हर महीने $500 दिए। 2021 की पहले साल की रिपोर्ट में कहा गया कि पाने वालों में पूर्णकालिक काम 28% से 40% हो गया, और यह आँकड़ा आज भी ख़ूब उद्धृत होता है। रैंडम ट्रायल के पीयर-रिव्यू किए गए विश्लेषण (Journal of Urban Health, 2023; 131 पाने वाले, 200 कंट्रोल) में रोज़गार के अंतर सांख्यिकीय रूप से अहम नहीं निकले, न महामारी से पहले, न उसके दौरान।[2]"
+          ],
+          [
+            "p",
+            "सैम ऑल्टमैन के समर्थन वाला OpenResearch का अध्ययन सबसे बड़ा है और सबसे सावधानी से नापा गया है। 21 से 40 साल के 1,000 लोगों को तीन साल तक हर महीने $1,000 मिले; 2,000 लोगों को महीने के $50। पाने वालों ने कंट्रोल ग्रुप से हफ़्ते में लगभग 1.3 घंटे कम काम किया, उनके काम पर होने की संभावना 2.3 प्रतिशत अंक कम थी, और काम से उनकी कमाई साल में लगभग $1,900 कम रही। लेखक इसे 5 से 6% की गिरावट, “मध्यम असर” कहते हैं।[3] फिर भी दोनों समूहों में रोज़गार बढ़ा: पाने वालों में 58% से 72%, कंट्रोल ग्रुप में 59% से 74%।[4] बाक़ी {इस अध्ययन पर हमारे निबंध|/essays/openresearch-cash-study/} में है।"
+          ],
+          [
+            "h",
+            "अमेरिका के 101 पायलट: मूल्यांकन क्या कहते हैं"
+          ],
+          [
+            "p",
+            "हमारी {अमेरिकी गारंटीड इनकम पायलटों की तालिका|/pilots/us/} में 101 कार्यक्रम हैं; मध्य राशि हर महीने $500 है। 53 का मूल्यांकन प्रकाशित है, और उनमें से 34 ने पाने वालों की तुलना कंट्रोल या तुलना समूह से की। इन 34 में से 18 काम पर नतीजा बताते हैं।[1]"
+          ],
+          [
+            "p",
+            "आठ में कंट्रोल ग्रुप से ज़्यादा काम दिखा। ओकलैंड में पाने वालों में पूर्णकालिक रोज़गार 15% से 26% हुआ और कंट्रोल ग्रुप में 14% से 18%; कैम्ब्रिज, मैसाचुसेट्स में यह 36% से 40% हुआ जबकि कंट्रोल में 30% से घटकर 28%। आर्लिंग्टन, कोलंबिया, डरहम और डेनवर ने मिलते-जुलते नतीजे बताए, और बाल्टीमोर में पाने वालों ने महीने में लगभग 9 घंटे कम काम छोड़ा। लॉस एंजेलिस काउंटी के युवाओं वाले कार्यक्रम में रोज़गार 7 अंक बढ़ा, हालाँकि लेखक इसका बड़ा हिस्सा नकद के साथ मिली नौकरी की ट्रेनिंग को देते हैं।[1]"
+          ],
+          [
+            "p",
+            "सात में साफ़ अंतर नहीं दिखा, स्टॉकटन भी इनमें है। दो में काम घटा: OpenResearch, और कॉम्पटन, जहाँ पहले पार्ट-टाइम काम करने वालों की श्रम भागीदारी 13 अंक घटी, जबकि पूर्णकालिक काम करने वालों में बदलाव नहीं हुआ। न्यूयॉर्क के कलाकारों वाले एक पायलट में कला पर हफ़्ते में लगभग 3.9 घंटे ज़्यादा और दूसरे काम पर 2.4 घंटे कम लगे।[1]"
+          ],
+          [
+            "p",
+            "ये 18 बराबर वज़न के सबूत नहीं हैं। कई पीयर-रिव्यू शोध-पत्र नहीं, छोटी रिपोर्टें हैं; नमूने अक्सर 100 से 200 लोगों के हैं; कुछ प्रतिशत तो बताते हैं पर यह नहीं कि अंतर सांख्यिकीय रूप से अहम है या नहीं; और कुछ के साथ दूसरी सेवाएँ भी थीं। गिनती से नतीजों का दायरा दिखता है, फ़ैसला नहीं। पर इसमें लोग काम छोड़ते हुए नहीं दिखते।"
+          ],
+          [
+            "h",
+            "अमीर देशों से आगे: केन्या, ईरान और सात कार्यक्रम"
+          ],
+          [
+            "p",
+            "केन्या में GiveDirectly का अध्ययन अब तक लंबी अवधि की बेसिक इनकम के सबसे क़रीब है। 44 गाँवों में हर वयस्क को रोज़ $0.75 मिलते हैं, हर महीने, 12 साल तक; 100 गाँव कंट्रोल हैं, और साथ में ऐसे गाँव भी हैं जिन्हें दो साल तक या एकमुश्त पैसा मिला।[7] लगभग दो साल बाद परिवारों के कुल काम के घंटे नहीं घटे थे। अनुमान एक छोटी, सांख्यिकीय रूप से अहम नहीं, बढ़त का था, और लेखक कहते हैं कि वे “बड़ी गिरावट को ख़ारिज कर सकते हैं”। बदला काम का प्रकार: खेती में मज़दूरी के घंटे घटे और खेती से बाहर अपने काम के घंटे बढ़े, क्योंकि लोगों ने छोटे कारोबार शुरू किए या बढ़ाए। गाँवों के बाहर से आए मज़दूरों ने वह कमी भरी, और मज़दूरी बढ़ी।[7]"
+          ],
+          [
+            "p",
+            "ईरान ने 2011 से ऊर्जा सब्सिडी हटाकर हर महीने नकद पैसा देना शुरू किया, जो 7 करोड़ से ज़्यादा लोगों तक पहुँचा और प्रति व्यक्ति मध्य आय के 28% के बराबर था। परिवारों को पैसा कब मिलना शुरू हुआ और उनके लिए उसका कितना वज़न था, इसके अंतर का इस्तेमाल करके जवाद सालेही-इस्फ़हानी और मोहम्मद मुस्तफ़वी-देहज़ूई ने पाया कि “नकद हस्तांतरण से श्रम आपूर्ति घटने का कोई सबूत नहीं है”, और महिलाओं व स्वरोज़गार वाले पुरुषों पर असर सकारात्मक रहा। वर्किंग पेपर में अपवाद वे युवा थे जिनका श्रम बाज़ार से जुड़ाव कमज़ोर था।[12]"
+          ],
+          [
+            "p",
+            "अभिजीत बनर्जी, रेमा हन्ना, गेब्रियल क्राइंडलर और बेंजामिन ओल्केन ने होंडुरास, इंडोनेशिया, मेक्सिको, मोरक्को, निकारागुआ और फ़िलीपींस के सरकारी नकद हस्तांतरण कार्यक्रमों के सात रैंडम ट्रायल के आँकड़ों का दोबारा विश्लेषण किया। उन्हें “कोई व्यवस्थित सबूत नहीं मिला कि नकद हस्तांतरण कार्यक्रम काम से हतोत्साहित करते हैं”, न पुरुषों में, न महिलाओं में।[13] ये कार्यक्रम ग़रीब परिवारों के लिए थे; ये बेसिक इनकम नहीं थे।"
+          ],
+          [
+            "h",
+            "अलास्का: सबको, हर साल"
+          ],
+          [
+            "p",
+            "1982 से अलास्का के हर निवासी को राज्य के परमानेंट फ़ंड से सालाना डिविडेंड मिलता है। औसत 2010 के डॉलर में प्रति व्यक्ति $1,495 था, यानी एक परिवार के लिए लगभग $3,900।[8] डेमन जोन्स और इओआना मारिनेस्कु ने अलास्का की तुलना दूसरे राज्यों के भारित मिश्रण से की और पाया कि डिविडेंड का “रोज़गार पर कोई असर नहीं पड़ा”, जबकि पार्ट-टाइम काम 1.8 प्रतिशत अंक (17%) बढ़ा।[8]"
+          ],
+          [
+            "p",
+            "वे इसके अर्थ को लेकर सावधान हैं। उनके कॉन्फ़िडेंस इंटरवल रोज़गार पर सकारात्मक असर को ख़ारिज नहीं कर सकते, इसलिए बढ़ा हुआ पार्ट-टाइम काम पूर्णकालिक से पार्ट-टाइम पर जाने वालों से भी आ सकता है और पार्ट-टाइम काम शुरू करने वालों से भी। काम के घंटे हफ़्ते में एक घंटे से कम घटे, और यह अहम नहीं था। उनकी व्याख्या यह है कि जब सबको पैसा मिलता है और वे उसे स्थानीय तौर पर ख़र्च करते हैं, तो स्थानीय सेवाओं की माँग बढ़ती है और कम काम करने के खिंचाव की भरपाई करती है; स्थानीय ग्राहकों की सेवा करने वाले क्षेत्रों में रोज़गार बाहर से व्यापार करने वाले क्षेत्रों से बेहतर टिका रहा।[8]"
+          ],
+          [
+            "h",
+            "किसने कम काम किया, और बदले में क्या किया"
+          ],
+          [
+            "p",
+            "जहाँ काम घटा, वहाँ ख़ास लोगों का घटा। 1970 के दशक के प्रयोगों में सबसे ज़्यादा पत्नियों और अकेली माताओं का घटा, जो पहले से कम घंटे काम करती थीं, इसलिए कुछ हफ़्तों की छुट्टी भी बड़ा प्रतिशत बन जाती है।[10] पतियों ने ज़्यादातर दो नौकरियों के बीच ज़्यादा समय लिया।[9] युवाओं ने प्रतिशत में बहुत, पर घंटों में थोड़ा काम घटाया, और आधिकारिक रिपोर्ट बताती है कि इसके साथ स्कूल में ज़्यादा समय नहीं बिताया गया।[9]"
+          ],
+          [
+            "p",
+            "OpenResearch में गिरावट 30 साल से कम उम्र के लोगों, अकेले माता-पिता और शुरुआत में सबसे ज़्यादा घरेलू आय वालों में केंद्रित थी; 30 से ऊपर के पाने वालों में कोई अहम असर नहीं था।[4] बचे घंटे ज़्यादातर फ़ुर्सत में गए। शोध-पत्र बच्चों की देखभाल, नौकरी ढूँढने या ख़ुद को बेहतर बनाने में लगे समय में छोटे बदलाव को भी ख़ारिज करता है, हालाँकि बिना काम के दौर लगभग 0.8 महीने लंबे रहे।[3] केन्या में लोग मज़दूरी से अपने कारोबार की ओर गए।[7] अलास्का में कुछ लोग पार्ट-टाइम पर आए।[8] फ़िनलैंड के बारे में Kela ने पाया कि बेसिक इनकम ने उन लोगों की मदद की जो पहले से सक्रिय थे, और सबसे कठिन हालात वालों की समस्याएँ हल नहीं कीं।[6]"
+          ],
+          [
+            "o",
+            "तो ईमानदार तस्वीर यह नहीं है कि “कोई कम काम नहीं करता”। कुछ लोग करते हैं, हफ़्ते में कुछ घंटे या साल में कुछ हफ़्ते: ज़्यादातर घर के दूसरे कमाने वाले और अकेले माता-पिता, युवा, और दो नौकरियों के बीच के लोग। इसे नुक़सान मानें या मक़सद, यह इस पर निर्भर है कि आप उस समय को किसलिए मानते हैं।"
+          ],
+          [
+            "h",
+            "पायलट राष्ट्रीय बेसिक इनकम क्यों नहीं है"
+          ],
+          [
+            "p",
+            "ऊपर का लगभग हर अध्ययन असली बेसिक इनकम से कम से कम चार बातों में अलग है।"
+          ],
+          [
+            "p",
+            "कितने समय तक। ज़्यादातर अस्थायी थे, और पाने वाले जानते थे कि पैसा कब रुकेगा। तीन साल के नकद और जीवन भर के भुगतान को लोग अलग तरह से ले सकते हैं। अलास्का का डिविडेंड स्थायी है पर छोटा। लंबे वादे की मुख्य परख केन्या का 12 साल वाला समूह है, और उसके प्रकाशित नतीजे पहले दो साल के हैं।[7][8]"
+          ],
+          [
+            "p",
+            "किसे मिलता है। पायलट किसी जगह के कुछ लोगों को पैसा देता है। सबको देने से स्थानीय माँग, मज़दूरी और क़ीमतें बदलती हैं: केन्या में लोगों के मज़दूरी छोड़ने पर मज़दूरी बढ़ी, और अलास्का में स्थानीय अर्थव्यवस्था पर असर ने व्यक्तिगत असर की भरपाई की लगती है।[7][8] कुछ सौ लोगों को पैसा देने वाला पायलट यह नहीं देख सकता।"
+          ],
+          [
+            "p",
+            "पैसा कौन देता है। पायलट में पैसा बाहर से आता है। राष्ट्रीय बेसिक इनकम का ख़र्च उठाना पड़ेगा, ज़्यादातर टैक्स से, और कमाई पर ऊँचा टैक्स ख़ुद भी काम घटा सकता है। नेगेटिव इनकम टैक्स प्रयोग कमाए हर डॉलर पर लगभग 50 सेंट वापस लेते थे, जो उनके बड़े असर की एक वजह है; फ़िनलैंड के प्रयोग ने टैक्स बिल्कुल नहीं बदले।[6][10] बेसिक इनकम कितनी महँगी होगी, यह {हमारे विश्व मानचित्र|/essays/basic-income-world-map/} में देखें।"
+          ],
+          [
+            "p",
+            "किसका अध्ययन हुआ। ज़्यादातर नमूने कम आय वाले लोगों के थे, जिनकी प्रतिक्रिया ज़्यादा होती है क्योंकि भुगतान उनकी कमाई के मुक़ाबले बड़ा होता है। गैरी प्रयोग पर आधारित एक सिमुलेशन का अनुमान था कि राष्ट्रीय कार्यक्रम काम को प्रयोग का लगभग एक तिहाई ही घटाएगा (4.5% के बजाय 1.6%)।[10]"
+          ],
+          [
+            "h",
+            "जो हम अभी नहीं जानते"
+          ],
+          [
+            "p",
+            "अब तक किसी ने स्थायी, सबके लिए, जीने लायक़ स्तर की, टैक्स से चलने वाली बेसिक इनकम देकर काम पर उसका असर नहीं नापा है। हमारे पास उसके टुकड़ों के सबूत हैं: स्थायी पर थोड़ा पैसा (अलास्का), पैसा पर अस्थायी (ज़्यादातर पायलट), गाँव में सबको (केन्या), और राष्ट्रीय पैमाना पर लक्षित ढाँचा (ईरान, सात कार्यक्रम)।"
+          ],
+          [
+            "p",
+            "कई पायलटों के नतीजे लोगों के ख़ुद भरे सर्वे पर टिके हैं। बेहतर आँकड़े आने पर अनुमान भी बदलते हैं: OpenResearch के अनुमान 2026 में राज्य के बेरोज़गारी बीमा रिकॉर्ड जोड़ने के बाद ऊपर संशोधित हुए।[3] और 300 लोगों के अध्ययन का “कोई अहम असर नहीं” 3,000 लोगों के अध्ययन के उन्हीं शब्दों से कहीं कमज़ोर दावा है।"
+          ],
+          [
+            "h",
+            "इससे क्या समझें"
+          ],
+          [
+            "o",
+            "पचास साल से ज़्यादा के प्रयोगों में, अमीर और ग़रीब दोनों तरह के देशों में, किसी अध्ययन ने यह नहीं पाया कि पैसा देने से लोग काम करना छोड़ देते हैं। ज़्यादातर में काम थोड़ा घटा या नहीं बदला, और कुछ में बढ़ा। जहाँ घटा, वहाँ हफ़्ते में कुछ घंटे या साल में कुछ हफ़्ते, ज़्यादातर माता-पिता, युवाओं और दो नौकरियों के बीच के लोगों का।"
+          ],
+          [
+            "o",
+            "पर यह “बेसिक इनकम का काम पर कोई असर नहीं” कहने जैसा नहीं है। OpenResearch और 1970 के दशक के प्रयोगों ने असली, भले मामूली, गिरावट नापी, और ये संख्याएँ किसी भी ईमानदार लागत अनुमान में शामिल होनी चाहिए। बेहतर सवाल यह नहीं कि “क्या लोग काम छोड़ देंगे?”, बल्कि यह कि “कितना कम, कौन, और क्या यह क़ीमत चुकाने लायक़ है?” पहले दो हिस्सों का जवाब आँकड़े देते हैं। तीसरा हम सबको ख़ुद तय करना है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "«Si le das dinero a la gente sin pedir nada a cambio, dejará de trabajar». Es la objeción más habitual a la renta básica, y es una pregunta razonable. También es una pregunta que se puede comprobar: desde hace más de cincuenta años, gobiernos, organizaciones benéficas e investigadores reparten dinero y miden qué le pasa al trabajo."
+          ],
+          [
+            "p",
+            "Reunimos los estudios principales: los experimentos de impuesto negativo sobre la renta de EE. UU. en los años 70, Mincome en Canadá, el dividendo de Alaska, las transferencias nacionales de Irán, un nuevo análisis de siete programas públicos en seis países, Finlandia, el estudio de largo plazo de GiveDirectly en Kenia, Stockton, OpenResearch y los 101 pilotos de {nuestra tabla de ingresos garantizados en EE. UU.|/pilots/us/}. Cada cifra procede de los artículos y los informes oficiales, o de nuestros ensayos sobre {OpenResearch|/essays/openresearch-cash-study/} y {Finlandia|/essays/finland-basic-income-experiment/}."
+          ],
+          [
+            "w",
+            "Efecto sobre el trabajo, por estudio\nMenos trabajo | Sin cambio claro | Más trabajo\nSIME/DIME (impuesto negativo) | EE. UU., años 70 | -1 | Horas −9 a −20 %\nMincome | Canadá, 1975–79 | -1 | Horas −1 a −3 %\nDividendo de Alaska | EE. UU., desde 1982 | 0 | Más tiempo parcial\nTransferencias de Irán | Desde 2011 | 0 | Más trabajo de mujeres\nSiete programas públicos | Seis países | 0 | Sin efecto sistemático\nFinlandia | 2017–18 | 0 | Año 2: +6 días\nKenia (GiveDirectly) | Desde 2018 | 0 | Del salario al negocio propio\nStockton (SEED) | 2019–21 | 0 | No significativo\nOpenResearch | EE. UU., 2020–23 | -1 | 1,3 horas menos a la semana\nPilotos de EE. UU. con grupo de control | 17 evaluaciones | 2,7,8 | Número de pilotos"
+          ],
+          [
+            "p",
+            "Cada punto es el resultado principal de un estudio sobre el trabajo. Las columnas indican la dirección, no el tamaño: los estudios miden el trabajo en unidades distintas (horas, días, tasas de empleo), así que el tamaño va en palabras. En los pilotos de EE. UU., los números cuentan cuántas evaluaciones con grupo de control caen en cada columna; otra más encontró un cambio entre tipos de trabajo."
+          ],
+          [
+            "h",
+            "La evidencia, lado a lado"
+          ],
+          [
+            "p",
+            "Una distinción recorre todo lo que sigue. «Sin efecto significativo» no quiere decir «sin efecto». Quiere decir que la diferencia entre quienes recibieron el dinero y el grupo de control era demasiado pequeña, frente al ruido de los datos, para distinguirla del azar. Un estudio pequeño puede pasar por alto un efecto real; uno grande puede descartar efectos grandes, pero no los pequeños. Cuando un artículo dice qué puede descartar, lo indicamos."
+          ],
+          [
+            "t",
+            "Programa | Lugar y años | Pago | Diseño | Efecto sobre el trabajo | Fuente\nSIME/DIME (impuesto negativo sobre la renta) | Seattle y Denver, EE. UU.; desde 1970, durante 3 o 5 años | Garantía de 3.800–5.600 $ al año para una familia de cuatro (dólares de 1971), que bajaba al subir otros ingresos | Aleatorizado; unas 4.800 familias | Horas anuales: maridos −9 %, esposas −20 %, madres solas −14 % (segundo año) | [9]\nMincome | Dauphin y Winnipeg, Canadá; pagos 1975–1979 | Un ingreso mínimo que bajaba 50 céntimos por cada dólar de otros ingresos; cualquier vecino de Dauphin podía pedirlo | Experimento de campo; todo Dauphin tenía derecho | Horas: hombres −1 %, mujeres casadas −3 % | [10][11]\nDividendo del Fondo Permanente de Alaska | Alaska, EE. UU.; desde 1982 | Un dividendo anual para cada residente: de media 1.495 $ por persona (dólares de 2010) | Alaska frente a una mezcla ponderada de otros estados, 1977–2014 | Ningún efecto sobre el empleo; el tiempo parcial sube 1,8 puntos (17 %) | [8]\nTransferencias nacionales | Irán; desde 2011 | Ingresos mensuales a más de 70 millones de personas, el 28 % del ingreso mediano por persona | Datos de panel sobre cuándo y cuánto recibió cada hogar (no aleatorizado) | Ninguna reducción de horas ni de participación laboral; más trabajo de mujeres y hombres autónomos | [12]\nSiete programas públicos de transferencias | Honduras, Indonesia, México (dos), Marruecos, Nicaragua, Filipinas | Dinero para hogares pobres | Nuevo análisis de 7 ensayos aleatorizados | Ningún efecto sistemático sobre si trabajan, o cuánto, hombres o mujeres | [13]\nExperimento de renta básica | Finlandia; 2017–2018 | 560 € al mes durante dos años, libres de impuestos | Aleatorizado; 2.000 desempleados frente a otros desempleados | Año 1: 49,64 frente a 49,25 días trabajados; año 2: unos 6 días más | [5][6]\nRenta básica de largo plazo de GiveDirectly | Siaya y Bomet, Kenia; desde 2018, durante 12 años | 0,75 $ al día por adulto, pagados cada mes | Aleatorizado por aldeas: 44 aldeas (unas 5.000 personas) frente a 100 de control | Horas totales sin cambio; menos trabajo asalariado, más autoempleo (a los dos años aprox.) | [7]\nSEED | Stockton, EE. UU.; 2019–2021 | 500 $ al mes durante dos años | Aleatorizado; 131 frente a 200 | Diferencias de empleo no significativas | [2]\nEstudio de dinero incondicional (OpenResearch) | Illinois y Texas, EE. UU.; 2020–2023 | 1.000 $ al mes durante tres años | Aleatorizado; 1.000 frente a 2.000 que recibían 50 $ al mes | Unas 1,3 horas menos a la semana; 2,3 puntos menos de probabilidad de tener empleo | [3][4]\n101 pilotos de ingreso garantizado | Todo EE. UU.; desde 2018 | Mediana de 500 $ al mes | 18 evaluaciones con grupo de control informan sobre el trabajo | 8 más trabajo, 7 sin diferencia clara, 2 menos trabajo, 1 cambio de tipo de trabajo | [1]"
+          ],
+          [
+            "h",
+            "Los años 70: impuesto negativo y Mincome"
+          ],
+          [
+            "p",
+            "Entre 1968 y 1980, los gobiernos de EE. UU. y Canadá hicieron cinco experimentos de impuesto negativo sobre la renta.[10] Un impuesto negativo no es exactamente una renta básica: garantiza un mínimo y luego retira una parte a medida que suben otros ingresos, en estos experimentos normalmente unos 50 céntimos por dólar. Así que probaban a la vez el dinero y un impuesto alto sobre lo que se gana trabajando."
+          ],
+          [
+            "p",
+            "El mayor, en Seattle y Denver, incluyó a unas 4.800 familias. Medido en el segundo año, los maridos trabajaron alrededor de un 9 % menos de horas que el grupo de control, las esposas un 20 % y las madres solas un 14 %.[9] La mayor parte de la reducción de los maridos vino de un desempleo más largo, de media unas 2,2 semanas más sin trabajo; en esposas y madres solas tomó la forma de tiempo fuera del mercado laboral.[9] Tres revisiones que promedian los cuatro experimentos estadounidenses sitúan la reducción de quien aporta el ingreso principal entre el 5 % y el 7,9 %. Una de ellas, de Philip Robins (1985), concluye que «en ningún caso hay evidencia de una retirada masiva del mercado laboral».[10]"
+          ],
+          [
+            "p",
+            "Mincome, en Manitoba (Canadá), convirtió el pueblo de Dauphin en un «sitio de saturación»: todos sus vecinos podían pedir la garantía. Las familias se inscribieron desde finales de 1974 y los pagos duraron hasta 1979.[11] El análisis del trabajo de Derek Hum y Wayne Simpson (1993) halló reducciones de horas de alrededor del 1 % en los hombres y del 3 % en las mujeres casadas, menores que en EE. UU.[10] Mincome es más conocido por el hallazgo de Evelyn Forget en 2011 de que las hospitalizaciones en Dauphin bajaron un 8,5 % frente a un grupo de comparación; un nuevo análisis de David Green en 2021 sostiene que, si se tienen en cuenta las tendencias previas, los datos no respaldan esa conclusión.[11]"
+          ],
+          [
+            "h",
+            "Experimentos recientes: Finlandia, Stockton y OpenResearch"
+          ],
+          [
+            "p",
+            "Finlandia pagó 560 € al mes, libres de impuestos, a 2.000 desempleados elegidos al azar durante dos años. En el primer año, quienes recibían el dinero trabajaron de media 49,64 días y el grupo de control 49,25: ningún efecto.[5] Durante aproximadamente el segundo año trabajaron unos 6 días más. Pero ese año empezó un nuevo «modelo de activación» para los desempleados que no afectó igual a los dos grupos, así que la diferencia del segundo año no puede atribuirse entera a la renta básica.[6] {Nuestro ensayo sobre Finlandia|/essays/finland-basic-income-experiment/} da los detalles."
+          ],
+          [
+            "p",
+            "SEED, en Stockton, pagó 500 $ al mes durante dos años. Un informe del primer año, en 2021, dijo que el empleo a tiempo completo subió del 28 % al 40 % entre quienes recibían el dinero, y esa cifra se sigue citando mucho. El análisis revisado por pares del ensayo aleatorizado (Journal of Urban Health, 2023; 131 receptores y 200 controles) encontró que las diferencias de empleo no eran estadísticamente significativas, ni antes de la pandemia ni durante ella.[2]"
+          ],
+          [
+            "p",
+            "El estudio de OpenResearch, financiado por Sam Altman, es el mayor y el medido con más cuidado. 1.000 personas de 21 a 40 años recibieron 1.000 $ al mes durante tres años; otras 2.000 recibieron 50 $ al mes. Quienes recibían los 1.000 $ trabajaron unas 1,3 horas menos a la semana que el grupo de control, tenían 2,3 puntos menos de probabilidad de estar empleados y ganaron unos 1.900 $ menos al año por su trabajo. Los autores lo llaman un descenso del 5 al 6 %, «un efecto moderado».[3] El empleo subió de todos modos en ambos grupos, del 58 % al 72 % entre los receptores y del 59 % al 74 % en el grupo de control.[4] {Nuestro ensayo sobre el estudio|/essays/openresearch-cash-study/} cuenta el resto."
+          ],
+          [
+            "h",
+            "101 pilotos en EE. UU.: qué dicen las evaluaciones"
+          ],
+          [
+            "p",
+            "Nuestra {tabla de pilotos de ingreso garantizado en EE. UU.|/pilots/us/} recoge 101 programas; la mediana paga 500 $ al mes. 53 tienen una evaluación publicada, y 34 de ellos compararon a los receptores con un grupo de control o de comparación. 18 de esos 34 dan un resultado sobre el trabajo.[1]"
+          ],
+          [
+            "p",
+            "Ocho encontraron más trabajo que en el grupo de control. En Oakland, el empleo a tiempo completo pasó del 15 % al 26 % entre los receptores y del 14 % al 18 % en el control; en Cambridge (Massachusetts) subió del 36 % al 40 % mientras en el control bajaba del 30 % al 28 %. Arlington, Columbia, Durham y Denver informaron de resultados parecidos, y en Baltimore los receptores faltaron al trabajo unas 9 horas menos al mes. En el programa para jóvenes del condado de Los Ángeles, el empleo subió 7 puntos, aunque la autora atribuye buena parte a la formación laboral que acompañaba al dinero.[1]"
+          ],
+          [
+            "p",
+            "Siete no encontraron una diferencia clara, Stockton entre ellos. Dos encontraron menos trabajo: OpenResearch y Compton, donde la participación laboral bajó 13 puntos entre quienes trabajaban a tiempo parcial, sin cambios entre quienes trabajaban a tiempo completo. Uno, para artistas de Nueva York, encontró unas 3,9 horas más a la semana dedicadas al arte y 2,4 menos a otros trabajos.[1]"
+          ],
+          [
+            "p",
+            "Estas 18 evaluaciones no pesan lo mismo. Muchas son informes breves, no artículos revisados por pares; las muestras suelen ser de 100 a 200 personas; varias dan porcentajes sin decir si la diferencia es significativa, y algunas venían con otros servicios. El recuento muestra el abanico de resultados, no un veredicto. Lo que no muestra es gente abandonando el trabajo."
+          ],
+          [
+            "h",
+            "Más allá de los países ricos: Kenia, Irán y siete programas"
+          ],
+          [
+            "p",
+            "El estudio de GiveDirectly en Kenia es lo más parecido hasta ahora a una renta básica de largo plazo. En 44 aldeas, cada adulto recibe 0,75 $ al día, pagados cada mes, durante 12 años; 100 aldeas hacen de control, junto a aldeas que cobran solo dos años o una suma única.[7] Al cabo de unos dos años, las horas totales de trabajo de los hogares no habían bajado: la estimación era un pequeño aumento no significativo, y los autores «pueden descartar grandes descensos». Cambió el tipo de trabajo: menos horas como asalariado en el campo y más en autoempleo fuera de la agricultura, porque la gente abrió o amplió pequeños negocios. Trabajadores de fuera de las aldeas cubrieron el hueco y los salarios subieron.[7]"
+          ],
+          [
+            "p",
+            "Irán sustituyó en 2011 los subsidios a la energía por ingresos mensuales en efectivo para más de 70 millones de personas, por un valor del 28 % del ingreso mediano por persona. Aprovechando las diferencias en cuándo empezó a cobrar cada hogar y cuánto pesaba el dinero para él, Djavad Salehi-Isfahani y Mohammad Mostafavi-Dehzooei no hallaron «evidencia de que las transferencias redujeran la oferta de trabajo», y sí efectos positivos en mujeres y en hombres autónomos. En el documento de trabajo, la excepción eran los jóvenes con poca vinculación al mercado laboral.[12]"
+          ],
+          [
+            "p",
+            "Abhijit Banerjee, Rema Hanna, Gabriel Kreindler y Benjamin Olken volvieron a analizar los datos de siete ensayos aleatorizados de programas públicos de transferencias en Honduras, Indonesia, México, Marruecos, Nicaragua y Filipinas. No encontraron «evidencia sistemática de que los programas de transferencias desincentiven el trabajo», ni en hombres ni en mujeres.[13] Eran programas para hogares pobres, no rentas básicas."
+          ],
+          [
+            "h",
+            "Alaska: para todos, todos los años"
+          ],
+          [
+            "p",
+            "Desde 1982, cada residente de Alaska recibe un dividendo anual del Fondo Permanente del estado: de media 1.495 $ por persona en dólares de 2010, unos 3.900 $ por familia.[8] Damon Jones e Ioana Marinescu compararon Alaska con una mezcla ponderada de otros estados y hallaron que el dividendo «no tuvo efecto sobre el empleo» y elevó el trabajo a tiempo parcial en 1,8 puntos porcentuales (17 %).[8]"
+          ],
+          [
+            "p",
+            "Los autores son prudentes con lo que eso significa. Sus intervalos de confianza no descartan un efecto positivo sobre el empleo, así que el tiempo parcial adicional puede venir de gente que pasó de jornada completa a parcial o de gente que empezó a trabajar a tiempo parcial. Las horas bajaron menos de una a la semana, y no de forma significativa. Su explicación es que, cuando todos reciben el dinero y lo gastan en su zona, sube la demanda de servicios locales y eso compensa el impulso de trabajar menos; el empleo aguantó mejor en los sectores que atienden a clientes locales que en los que comercian con el exterior.[8]"
+          ],
+          [
+            "h",
+            "Quién trabajó menos, y qué hizo en su lugar"
+          ],
+          [
+            "p",
+            "Donde el trabajo bajó, bajó para personas concretas. En los experimentos de los años 70 bajó sobre todo en esposas y madres solas, que ya trabajaban menos horas, de modo que unas semanas sin trabajar son un porcentaje mayor.[10] Los maridos tardaron sobre todo más en encontrar el siguiente empleo.[9] Los jóvenes redujeron mucho en porcentaje pero poco en horas, y el informe oficial señala que eso no vino acompañado de más tiempo en la escuela.[9]"
+          ],
+          [
+            "p",
+            "En OpenResearch, la caída se concentró en menores de 30 años, familias monoparentales y quienes partían de los ingresos del hogar más altos; en los mayores de 30 no hubo efecto significativo.[4] Las horas fueron sobre todo a ocio. El artículo descarta incluso pequeños cambios en el tiempo dedicado a cuidar de los hijos, buscar empleo o formarse, aunque los periodos sin trabajo duraron unos 0,8 meses más.[3] En Kenia, la gente pasó del trabajo asalariado a su propio negocio.[7] En Alaska, algunos pasaron a tiempo parcial.[8] En Finlandia, Kela concluyó que la renta básica ayudó a quienes ya eran activos y no resolvió los problemas de quienes estaban en las situaciones más difíciles.[6]"
+          ],
+          [
+            "o",
+            "Así que el retrato honesto no es «nadie trabaja menos». Algunas personas sí, unas horas a la semana o unas semanas al año: sobre todo quienes aportan el segundo ingreso del hogar, familias monoparentales, jóvenes y gente entre un empleo y otro. Que eso sea un coste o precisamente el objetivo depende de para qué creas que sirve ese tiempo."
+          ],
+          [
+            "h",
+            "Por qué un piloto no es una renta básica nacional"
+          ],
+          [
+            "p",
+            "Casi todos los estudios anteriores se diferencian de una renta básica real en al menos cuatro cosas."
+          ],
+          [
+            "p",
+            "Cuánto dura. La mayoría eran temporales, y quienes cobraban sabían cuándo dejaría de llegar el dinero. Tres años de pagos pueden vivirse de forma distinta a un pago de por vida. El dividendo de Alaska es permanente pero modesto. El grupo de 12 años de Kenia es la principal prueba de un compromiso largo, y sus resultados publicados cubren los dos primeros años.[7][8]"
+          ],
+          [
+            "p",
+            "Quién lo recibe. Un piloto paga a unas pocas personas de un lugar. Un pago a todos cambia la demanda local, los salarios y los precios: en Kenia los salarios subieron cuando la gente dejó el trabajo asalariado, y en Alaska el efecto sobre la economía local parece haber compensado el individual.[7][8] Un piloto que paga a unos cientos de personas no puede verlo."
+          ],
+          [
+            "p",
+            "Quién paga. En un piloto el dinero viene de fuera. Una renta básica nacional hay que pagarla, sobre todo con impuestos, y unos impuestos más altos sobre lo que se gana trabajando pueden reducir el trabajo por sí mismos. Los experimentos de impuesto negativo sí retiraban unos 50 céntimos por dólar ganado, una de las razones de que sus efectos fueran mayores; el experimento finlandés no cambió ningún impuesto.[6][10] Para saber cuánto costaría una renta básica, ver {nuestro mapa mundial|/essays/basic-income-world-map/}."
+          ],
+          [
+            "p",
+            "A quién se estudió. La mayoría de las muestras eran personas con ingresos bajos, que reaccionan más porque el pago es grande en comparación con lo que ganan. Una simulación a partir del experimento de Gary estimó que un programa nacional reduciría el trabajo en torno a un tercio de lo observado (1,6 % en lugar de 4,5 %).[10]"
+          ],
+          [
+            "h",
+            "Lo que todavía no sabemos"
+          ],
+          [
+            "p",
+            "Nadie ha pagado todavía una renta básica permanente, universal, suficiente para vivir y financiada con impuestos, midiendo qué le pasa al trabajo. La evidencia cubre piezas de eso: permanencia con poco dinero (Alaska), dinero sin permanencia (la mayoría de los pilotos), todos en una aldea (Kenia) y escala nacional con un diseño focalizado (Irán, los siete programas)."
+          ],
+          [
+            "p",
+            "Muchos resultados de los pilotos se basan en encuestas que responden los propios participantes. Las estimaciones también cambian cuando llegan mejores datos: las de OpenResearch se revisaron al alza en 2026 al añadir los registros estatales del seguro de desempleo.[3] Y un «sin efecto significativo» en un estudio de 300 personas es una afirmación mucho más débil que las mismas palabras en uno de 3.000."
+          ],
+          [
+            "h",
+            "Qué sacar en claro"
+          ],
+          [
+            "o",
+            "En más de cincuenta años de experimentos, en países ricos y pobres, ningún estudio ha encontrado que el dinero haga que la gente deje de trabajar. La mayoría halló reducciones pequeñas o ninguna, y algunos, más trabajo. Donde el trabajo bajó, fue en horas a la semana o semanas al año, sobre todo de madres y padres, jóvenes y gente entre empleos."
+          ],
+          [
+            "o",
+            "Eso no equivale a «la renta básica no afecta al trabajo». OpenResearch y los experimentos de los años 70 midieron reducciones reales, aunque modestas, y esas cifras deben entrar en cualquier cálculo honesto del coste. La mejor pregunta no es «¿dejará la gente de trabajar?», sino «¿cuánto menos, quién y merece la pena?». Los datos responden a las dos primeras partes. La tercera es un juicio de cada cual."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "„Wer Geld fürs Nichtstun bekommt, hört auf zu arbeiten.“ Das ist der häufigste Einwand gegen das Grundeinkommen, und die Frage ist berechtigt. Man kann sie aber auch prüfen: Seit mehr als fünfzig Jahren zahlen Regierungen, Hilfsorganisationen und Forschende Menschen Geld aus und messen, was mit der Arbeit passiert."
+          ],
+          [
+            "p",
+            "Wir haben die wichtigsten Studien nebeneinandergelegt: die US-Experimente mit negativer Einkommensteuer in den 1970ern, Mincome in Kanada, Alaskas Dividende, Irans landesweite Geldzahlungen, eine Neuauswertung von sieben staatlichen Programmen in sechs Ländern, Finnland, die Langzeitstudie von GiveDirectly in Kenia, Stockton, OpenResearch und die 101 Projekte aus {unserer Tabelle der US-Pilotprojekte zum garantierten Einkommen|/pilots/us/}. Jede Zahl stammt aus den Studien und amtlichen Berichten oder aus unseren Essays über {OpenResearch|/essays/openresearch-cash-study/} und {Finnland|/essays/finland-basic-income-experiment/}."
+          ],
+          [
+            "w",
+            "Wirkung auf die Arbeit, nach Studie\nWeniger Arbeit | Keine klare Änderung | Mehr Arbeit\nSIME/DIME (negative Einkommensteuer) | USA, 1970er | -1 | Stunden −9 bis −20 %\nMincome | Kanada, 1975–79 | -1 | Stunden −1 bis −3 %\nAlaska-Dividende | USA, seit 1982 | 0 | Mehr Teilzeit\nIrans Geldzahlungen | Seit 2011 | 0 | Frauen arbeiten mehr\nSieben staatliche Programme | Sechs Länder | 0 | Keine systematische Wirkung\nFinnland | 2017–18 | 0 | Jahr 2: +6 Tage\nKenia (GiveDirectly) | Seit 2018 | 0 | Von Lohnarbeit zum eigenen Betrieb\nStockton (SEED) | 2019–21 | 0 | Nicht signifikant\nOpenResearch | USA, 2020–23 | -1 | 1,3 Stunden weniger pro Woche\nUS-Projekte mit Kontrollgruppe | 17 Auswertungen | 2,7,8 | Zahl der Projekte"
+          ],
+          [
+            "p",
+            "Jeder Punkt ist das Hauptergebnis einer Studie zur Arbeit. Die Spalten zeigen die Richtung, nicht die Größe: Die Studien messen Arbeit in verschiedenen Einheiten (Stunden, Tage, Beschäftigungsquoten), deshalb steht die Größe in Worten daneben. Bei den US-Projekten zählen die Zahlen, wie viele Auswertungen mit Kontrollgruppe in jede Spalte fallen; eine weitere fand einen Wechsel zwischen Arten von Arbeit."
+          ],
+          [
+            "h",
+            "Die Belege nebeneinander"
+          ],
+          [
+            "p",
+            "Eine Unterscheidung zieht sich durch alles Folgende. „Keine signifikante Wirkung“ heißt nicht „keine Wirkung“. Es heißt, dass der Abstand zwischen Empfängern und Kontrollgruppe im Verhältnis zum Rauschen in den Daten zu klein war, um ihn vom Zufall zu unterscheiden. Eine kleine Studie kann eine echte Wirkung übersehen; eine große kann große Wirkungen ausschließen, aber keine kleinen. Wo eine Studie sagt, was sie ausschließen kann, sagen wir es auch."
+          ],
+          [
+            "t",
+            "Programm | Ort und Jahre | Zahlung | Methode | Wirkung auf die Arbeit | Quelle\nSIME/DIME (negative Einkommensteuer) | Seattle und Denver, USA; ab 1970, für 3 oder 5 Jahre | Garantiert 3.800–5.600 $ im Jahr für eine vierköpfige Familie (Dollar von 1971), sinkend mit anderem Einkommen | Randomisiert; etwa 4.800 Familien | Jahresstunden: Ehemänner −9 %, Ehefrauen −20 %, alleinerziehende Mütter −14 % (zweites Jahr) | [9]\nMincome | Dauphin und Winnipeg, Kanada; Zahlungen 1975–1979 | Ein Mindesteinkommen, um 50 Cent je Dollar anderen Einkommens gekürzt; in Dauphin konnte es jeder beantragen | Feldexperiment; ganz Dauphin war berechtigt | Stunden: Männer −1 %, verheiratete Frauen −3 % | [10][11]\nDividende des Alaska Permanent Fund | Alaska, USA; seit 1982 | Jährliche Dividende für alle Einwohner: im Schnitt 1.495 $ pro Kopf (Dollar von 2010) | Alaska im Vergleich mit einer gewichteten Mischung anderer Bundesstaaten, 1977–2014 | Keine Wirkung auf die Beschäftigung; Teilzeit +1,8 Punkte (17 %) | [8]\nLandesweite Geldzahlungen | Iran; ab 2011 | Monatliche Überweisungen an über 70 Millionen Menschen, 28 % des Medianeinkommens pro Kopf | Paneldaten dazu, wann und wie viel Haushalte bekamen (nicht randomisiert) | Kein Rückgang bei Stunden oder Erwerbsbeteiligung; mehr Arbeit bei Frauen und selbstständigen Männern | [12]\nSieben staatliche Geldtransferprogramme | Honduras, Indonesien, Mexiko (zwei), Marokko, Nicaragua, Philippinen | Geld für arme Haushalte | Neuauswertung von 7 randomisierten Studien | Keine systematische Wirkung darauf, ob oder wie viel Männer und Frauen arbeiten | [13]\nGrundeinkommensexperiment | Finnland; 2017–2018 | 560 € im Monat für zwei Jahre, steuerfrei | Randomisiert; 2.000 Arbeitslose gegenüber anderen Arbeitslosen | Jahr 1: 49,64 zu 49,25 Arbeitstage; Jahr 2: etwa 6 Tage mehr | [5][6]\nLangzeit-Grundeinkommen von GiveDirectly | Siaya und Bomet, Kenia; ab 2018, für 12 Jahre | 0,75 $ am Tag pro Erwachsenem, monatlich ausgezahlt | Randomisiert nach Dörfern: 44 Dörfer (etwa 5.000 Menschen) gegenüber 100 Kontrolldörfern | Gesamtstunden unverändert; weniger Lohnarbeit, mehr Selbstständigkeit (nach etwa zwei Jahren) | [7]\nSEED | Stockton, USA; 2019–2021 | 500 $ im Monat für zwei Jahre | Randomisiert; 131 gegenüber 200 | Unterschiede bei der Beschäftigung nicht signifikant | [2]\nStudie zu bedingungslosem Geld (OpenResearch) | Illinois und Texas, USA; 2020–2023 | 1.000 $ im Monat für drei Jahre | Randomisiert; 1.000 gegenüber 2.000 mit 50 $ im Monat | Etwa 1,3 Stunden weniger pro Woche; 2,3 Punkte seltener erwerbstätig | [3][4]\n101 Pilotprojekte zum garantierten Einkommen | Ganze USA; seit 2018 | Median 500 $ im Monat | 18 Auswertungen mit Kontrollgruppe berichten zur Arbeit | 8 mehr Arbeit, 7 kein klarer Unterschied, 2 weniger Arbeit, 1 Wechsel der Art der Arbeit | [1]"
+          ],
+          [
+            "h",
+            "Die 1970er: negative Einkommensteuer und Mincome"
+          ],
+          [
+            "p",
+            "Zwischen 1968 und 1980 führten die Regierungen der USA und Kanadas fünf Experimente mit einer negativen Einkommensteuer durch.[10] Eine negative Einkommensteuer ist nicht ganz dasselbe wie ein Grundeinkommen: Sie garantiert ein Minimum und zieht davon einen Teil ab, wenn anderes Einkommen steigt, in diesen Experimenten meist etwa 50 Cent je verdientem Dollar. Getestet wurden also Geld und eine hohe Abgabe auf Arbeitseinkommen zugleich."
+          ],
+          [
+            "p",
+            "Das größte Experiment, in Seattle und Denver, umfasste etwa 4.800 Familien. Im zweiten Jahr gemessen arbeiteten Ehemänner rund 9 % weniger Stunden als die Kontrollgruppe, Ehefrauen rund 20 % und alleinerziehende Mütter rund 14 %.[9] Bei den Männern kam der Rückgang vor allem durch längere Arbeitslosigkeit zustande, im Schnitt etwa 2,2 Wochen mehr ohne Arbeit; bei Ehefrauen und Alleinerziehenden durch Zeiten außerhalb des Arbeitsmarkts.[9] Drei Übersichtsarbeiten, die die vier US-Experimente mitteln, beziffern den Rückgang bei Hauptverdienern auf 5 bis 7,9 %. Eine davon, von Philip Robins (1985), hielt fest, dass es „in keinem Fall Belege für einen massenhaften Rückzug vom Arbeitsmarkt“ gibt.[10]"
+          ],
+          [
+            "p",
+            "Mincome in der kanadischen Provinz Manitoba machte die Stadt Dauphin zu einem „Sättigungsstandort“: Alle Einwohner konnten die Garantie beantragen. Familien wurden ab Ende 1974 aufgenommen, gezahlt wurde bis 1979.[11] Die Analyse der Arbeit von Derek Hum und Wayne Simpson (1993) fand einen Rückgang der Stunden um etwa 1 % bei Männern und 3 % bei verheirateten Frauen, weniger als in den USA.[10] Bekannter ist Mincome für Evelyn Forgets Befund von 2011, dass die Krankenhausaufenthalte in Dauphin gegenüber einer Vergleichsgruppe um 8,5 % sanken; eine Neuauswertung von David Green aus dem Jahr 2021 argumentiert, dass die Daten diesen Schluss nicht tragen, wenn man frühere Trends berücksichtigt.[11]"
+          ],
+          [
+            "h",
+            "Neuere Versuche: Finnland, Stockton und OpenResearch"
+          ],
+          [
+            "p",
+            "Finnland zahlte 2.000 zufällig ausgewählten Arbeitslosen zwei Jahre lang 560 € im Monat, steuerfrei. Im ersten Jahr waren die Empfänger im Schnitt 49,64 Tage in Arbeit, die Kontrollgruppe 49,25: keine Wirkung.[5] Ungefähr im zweiten Jahr arbeiteten die Empfänger etwa 6 Tage mehr. Doch in diesem Jahr begann ein neues „Aktivierungsmodell“ für Arbeitslose, das die beiden Gruppen nicht gleich traf, deshalb lässt sich der Unterschied im zweiten Jahr nicht ganz dem Grundeinkommen zuschreiben.[6] Einzelheiten stehen in {unserem Essay über Finnland|/essays/finland-basic-income-experiment/}."
+          ],
+          [
+            "p",
+            "SEED in Stockton zahlte zwei Jahre lang 500 $ im Monat. Ein Bericht zum ersten Jahr meldete 2021, dass der Anteil der Empfänger in Vollzeit von 28 % auf 40 % gestiegen sei, und diese Zahl wird bis heute oft zitiert. Die begutachtete Auswertung der randomisierten Studie (Journal of Urban Health, 2023; 131 Empfänger, 200 Kontrollpersonen) fand jedoch keine statistisch signifikanten Unterschiede bei der Beschäftigung, weder vor der Pandemie noch währenddessen.[2]"
+          ],
+          [
+            "p",
+            "Die von Sam Altman unterstützte Studie von OpenResearch ist die größte und am sorgfältigsten gemessene. 1.000 Menschen zwischen 21 und 40 bekamen drei Jahre lang 1.000 $ im Monat, 2.000 bekamen 50 $. Die Empfänger arbeiteten etwa 1,3 Stunden pro Woche weniger als die Kontrollgruppe, waren um 2,3 Prozentpunkte seltener erwerbstätig und verdienten mit Arbeit etwa 1.900 $ im Jahr weniger. Die Autoren sprechen von einem Rückgang um 5 bis 6 %, einer „moderaten Wirkung“.[3] Die Beschäftigung stieg trotzdem in beiden Gruppen, bei den Empfängern von 58 % auf 72 %, in der Kontrollgruppe von 59 % auf 74 %.[4] Mehr dazu in {unserem Essay über die Studie|/essays/openresearch-cash-study/}."
+          ],
+          [
+            "h",
+            "101 US-Pilotprojekte: was die Auswertungen sagen"
+          ],
+          [
+            "p",
+            "Unsere {Tabelle der US-Pilotprojekte zum garantierten Einkommen|/pilots/us/} führt 101 Programme; der Median zahlt 500 $ im Monat. 53 haben eine veröffentlichte Auswertung, 34 davon verglichen die Empfänger mit einer Kontroll- oder Vergleichsgruppe. 18 dieser 34 berichten ein Ergebnis zur Arbeit.[1]"
+          ],
+          [
+            "p",
+            "Acht fanden mehr Arbeit als in der Kontrollgruppe. In Oakland stieg die Vollzeitbeschäftigung bei den Empfängern von 15 % auf 26 %, in der Kontrollgruppe von 14 % auf 18 %; in Cambridge (Massachusetts) stieg sie von 36 % auf 40 %, während sie in der Kontrollgruppe von 30 % auf 28 % fiel. Arlington, Columbia, Durham und Denver meldeten ähnliche Ergebnisse, und in Baltimore fehlten die Empfänger etwa 9 Stunden im Monat weniger bei der Arbeit. Im Programm für junge Erwachsene im Los Angeles County stieg die Beschäftigung um 7 Punkte, wobei die Autorin einen großen Teil der Berufsausbildung zuschreibt, die zusammen mit dem Geld angeboten wurde.[1]"
+          ],
+          [
+            "p",
+            "Sieben fanden keinen klaren Unterschied, darunter Stockton. Zwei fanden weniger Arbeit: OpenResearch und Compton, wo die Erwerbsbeteiligung bei Menschen, die zuvor in Teilzeit gearbeitet hatten, um 13 Punkte sank, während sich bei Vollzeitbeschäftigten nichts änderte. Eines, für Künstlerinnen und Künstler in New York, fand etwa 3,9 Stunden mehr pro Woche für die Kunst und 2,4 weniger für andere Arbeit.[1]"
+          ],
+          [
+            "p",
+            "Diese 18 sind keine gleichwertigen Belege. Viele sind kurze Berichte statt begutachteter Studien, die Stichproben umfassen oft 100 bis 200 Menschen, manche nennen Prozente, ohne zu sagen, ob ein Unterschied signifikant ist, und einige liefen zusammen mit anderen Angeboten. Die Zählung zeigt die Bandbreite der Ergebnisse, kein Urteil. Was sie nicht zeigt, sind Menschen, die der Arbeit den Rücken kehren."
+          ],
+          [
+            "h",
+            "Jenseits reicher Länder: Kenia, Iran und sieben Programme"
+          ],
+          [
+            "p",
+            "Die Studie von GiveDirectly in Kenia kommt einem langfristigen Grundeinkommen bisher am nächsten. In 44 Dörfern bekommt jeder Erwachsene 0,75 $ am Tag, monatlich ausgezahlt, 12 Jahre lang; 100 Dörfer dienen als Kontrolle, dazu kommen Dörfer, die zwei Jahre lang oder einmalig eine größere Summe erhalten.[7] Nach etwa zwei Jahren waren die Arbeitsstunden der Haushalte insgesamt nicht gesunken. Die Schätzung war ein kleiner, nicht signifikanter Anstieg, und die Autoren „können große Rückgänge ausschließen“. Verändert hat sich die Art der Arbeit: weniger Stunden Lohnarbeit in der Landwirtschaft, mehr Selbstständigkeit außerhalb der Landwirtschaft, weil Menschen kleine Betriebe gründeten oder ausbauten. Lohnarbeiter von außerhalb füllten die Lücke, und die Löhne stiegen.[7]"
+          ],
+          [
+            "p",
+            "Iran ersetzte ab 2011 Energiesubventionen durch monatliche Geldzahlungen an über 70 Millionen Menschen, im Wert von 28 % des Medianeinkommens pro Kopf. Mithilfe der Unterschiede, wann Haushalte das Geld zuerst bekamen und wie viel es für sie bedeutete, fanden Djavad Salehi-Isfahani und Mohammad Mostafavi-Dehzooei „keine Belege dafür, dass die Geldtransfers das Arbeitsangebot verringerten“, dafür positive Wirkungen bei Frauen und selbstständigen Männern. Im Arbeitspapier bildeten junge Menschen mit schwacher Bindung an den Arbeitsmarkt die Ausnahme.[12]"
+          ],
+          [
+            "p",
+            "Abhijit Banerjee, Rema Hanna, Gabriel Kreindler und Benjamin Olken werteten die Daten von sieben randomisierten Studien zu staatlichen Geldtransfers in Honduras, Indonesien, Mexiko, Marokko, Nicaragua und auf den Philippinen neu aus. Sie fanden „keine systematischen Belege dafür, dass Geldtransferprogramme von der Arbeit abhalten“, weder bei Männern noch bei Frauen.[13] Diese Programme richteten sich an arme Haushalte; Grundeinkommen waren sie nicht."
+          ],
+          [
+            "h",
+            "Alaska: für alle, jedes Jahr"
+          ],
+          [
+            "p",
+            "Seit 1982 erhält jeder Einwohner Alaskas eine jährliche Dividende aus dem Permanent Fund des Bundesstaats, im Schnitt 1.495 $ pro Kopf in Dollar von 2010, für eine Familie etwa 3.900 $.[8] Damon Jones und Ioana Marinescu verglichen Alaska mit einer gewichteten Mischung anderer Bundesstaaten und fanden, dass die Dividende „keine Wirkung auf die Beschäftigung hatte“ und die Teilzeitarbeit um 1,8 Prozentpunkte (17 %) erhöhte.[8]"
+          ],
+          [
+            "p",
+            "Mit der Deutung sind sie vorsichtig. Ihre Konfidenzintervalle schließen eine positive Wirkung auf die Beschäftigung nicht aus; die zusätzliche Teilzeit kann also von Menschen stammen, die von Vollzeit in Teilzeit wechselten, oder von Menschen, die in Teilzeit neu zu arbeiten begannen. Die Stunden sanken um weniger als eine pro Woche, und nicht signifikant. Ihre Erklärung: Wenn alle das Geld bekommen und vor Ort ausgeben, steigt die Nachfrage nach lokalen Dienstleistungen und gleicht den Zug zu weniger Arbeit aus; in Branchen, die lokale Kundschaft bedienen, hielt sich die Beschäftigung besser als in solchen, die mit der übrigen Welt handeln.[8]"
+          ],
+          [
+            "h",
+            "Wer weniger arbeitete und was stattdessen geschah"
+          ],
+          [
+            "p",
+            "Wo die Arbeit zurückging, ging sie bei bestimmten Menschen zurück. In den Experimenten der 1970er am stärksten bei Ehefrauen und alleinerziehenden Müttern, die von vornherein weniger Stunden arbeiteten, sodass ein paar Wochen Pause einen größeren Anteil ausmachen.[10] Ehemänner brauchten vor allem länger bis zur nächsten Stelle.[9] Junge Menschen arbeiteten prozentual deutlich, in Stunden aber wenig weniger, und der amtliche Bericht vermerkt, dass damit keine längere Zeit in der Schule einherging.[9]"
+          ],
+          [
+            "p",
+            "Bei OpenResearch konzentrierte sich der Rückgang auf Menschen unter 30, Alleinerziehende und diejenigen mit den höchsten Haushaltseinkommen zu Beginn; bei Empfängern über 30 gab es keine signifikante Wirkung.[4] Die Stunden gingen vor allem in Freizeit. Die Studie schließt selbst kleine Änderungen bei der Zeit für Kinderbetreuung, Jobsuche oder Weiterbildung aus, wobei Phasen ohne Arbeit etwa 0,8 Monate länger dauerten.[3] In Kenia wechselten Menschen von Lohnarbeit in den eigenen Betrieb.[7] In Alaska wechselten einige in Teilzeit.[8] Für Finnland stellte Kela fest, dass das Grundeinkommen Menschen half, die schon aktiv waren, die Probleme der Menschen in den schwierigsten Lagen aber nicht löste.[6]"
+          ],
+          [
+            "o",
+            "Das ehrliche Bild ist also nicht „niemand arbeitet weniger“. Manche tun es, ein paar Stunden pro Woche oder ein paar Wochen im Jahr: vor allem Zweitverdienende und Alleinerziehende, junge Menschen und Menschen zwischen zwei Jobs. Ob das ein Preis ist oder gerade der Sinn der Sache, hängt davon ab, wofür man diese Zeit hält."
+          ],
+          [
+            "h",
+            "Warum ein Pilotprojekt kein nationales Grundeinkommen ist"
+          ],
+          [
+            "p",
+            "Fast jede der Studien oben unterscheidet sich in mindestens vier Punkten von einem echten Grundeinkommen."
+          ],
+          [
+            "p",
+            "Wie lange es läuft. Die meisten waren befristet, und die Empfänger wussten, wann das Geld enden würde. Drei Jahre Geld erlebt man womöglich anders als eine Zahlung auf Lebenszeit. Alaskas Dividende ist dauerhaft, aber bescheiden. Kenias 12-Jahres-Gruppe ist der wichtigste Test einer langen Zusage, und ihre veröffentlichten Ergebnisse decken die ersten zwei Jahre ab.[7][8]"
+          ],
+          [
+            "p",
+            "Wer es bekommt. Ein Pilotprojekt zahlt einigen wenigen Menschen an einem Ort. Eine Zahlung an alle verändert lokale Nachfrage, Löhne und Preise: In Kenia stiegen die Löhne, als Menschen die Lohnarbeit verließen, und in Alaska scheint die Wirkung auf die lokale Wirtschaft die individuelle ausgeglichen zu haben.[7][8] Ein Projekt, das ein paar hundert Menschen bezahlt, kann das nicht sehen."
+          ],
+          [
+            "p",
+            "Wer zahlt. Bei einem Pilotprojekt kommt das Geld von außen. Ein nationales Grundeinkommen muss finanziert werden, vor allem über Steuern, und höhere Steuern auf Arbeitseinkommen können selbst die Arbeit verringern. Die Experimente mit negativer Einkommensteuer zogen tatsächlich etwa 50 Cent je verdientem Dollar ab, ein Grund für ihre größeren Wirkungen; Finnlands Experiment änderte überhaupt keine Steuern.[6][10] Was ein Grundeinkommen kosten würde, zeigt {unsere Weltkarte|/essays/basic-income-world-map/}."
+          ],
+          [
+            "p",
+            "Wer untersucht wurde. Die meisten Stichproben bestanden aus Menschen mit niedrigem Einkommen, die stärker reagieren, weil die Zahlung im Verhältnis zu ihrem Verdienst groß ist. Eine Simulation auf Grundlage des Gary-Experiments schätzte, dass ein nationales Programm die Arbeit nur um etwa ein Drittel so stark senken würde (1,6 % statt 4,5 %).[10]"
+          ],
+          [
+            "h",
+            "Was wir noch nicht wissen"
+          ],
+          [
+            "p",
+            "Noch niemand hat ein dauerhaftes, allgemeines, zum Leben reichendes und aus Steuern finanziertes Grundeinkommen gezahlt und gemessen, was mit der Arbeit geschieht. Die Belege decken Teile davon ab: Dauer mit wenig Geld (Alaska), Geld ohne Dauer (die meisten Pilotprojekte), alle in einem Dorf (Kenia) und landesweite Größe mit gezielter Ausrichtung (Iran, die sieben Programme)."
+          ],
+          [
+            "p",
+            "Viele Ergebnisse der Pilotprojekte beruhen auf Selbstauskünften in Umfragen. Schätzungen ändern sich auch, wenn bessere Daten kommen: Die von OpenResearch wurden 2026 nach oben korrigiert, als Daten der staatlichen Arbeitslosenversicherung hinzukamen.[3] Und „keine signifikante Wirkung“ aus einer Studie mit 300 Menschen ist eine viel schwächere Aussage als dieselben Worte aus einer mit 3.000."
+          ],
+          [
+            "h",
+            "Was daraus folgt"
+          ],
+          [
+            "o",
+            "In mehr als fünfzig Jahren Experimenten, in reichen wie in armen Ländern, hat keine Studie gefunden, dass Geld Menschen dazu bringt, mit dem Arbeiten aufzuhören. Die meisten fanden kleine Rückgänge oder keine, einige mehr Arbeit. Wo die Arbeit sank, dann um Stunden pro Woche oder Wochen im Jahr, vor allem bei Eltern, jungen Menschen und Menschen zwischen zwei Jobs."
+          ],
+          [
+            "o",
+            "Das ist nicht dasselbe wie „ein Grundeinkommen wirkt sich nicht auf die Arbeit aus“. OpenResearch und die Experimente der 1970er haben echte, wenn auch moderate Rückgänge gemessen, und diese Zahlen gehören in jede ehrliche Kostenrechnung. Die bessere Frage lautet nicht „Hören die Leute auf zu arbeiten?“, sondern „Wie viel weniger, wer, und ist es das wert?“ Die ersten beiden Teile beantworten die Daten. Der dritte ist ein Urteil, das jeder selbst fällen muss."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "«أعطِ الناس مالًا بلا مقابل وسيتوقفون عن العمل». هذا أكثر اعتراض شيوعًا على الدخل الأساسي، وهو سؤال مشروع. لكنه أيضًا سؤال يمكن التحقق منه: فمنذ أكثر من خمسين عامًا تدفع الحكومات والجمعيات الخيرية والباحثون المال للناس فعلًا ويقيسون ما يحدث للعمل."
+          ],
+          [
+            "p",
+            "جمعنا الدراسات الرئيسية: تجارب ضريبة الدخل السلبية في الولايات المتحدة في السبعينيات، وتجربة «مينكم» في كندا، وأرباح ألاسكا السنوية، والتحويلات النقدية الوطنية في إيران، وإعادة تحليل سبعة برامج حكومية في ستة بلدان، وفنلندا، ودراسة ⁦GiveDirectly⁩ الطويلة في كينيا، وستوكتون، و⁦OpenResearch⁩، والتجارب الـ101 في {جدولنا لتجارب الدخل المضمون في الولايات المتحدة|/pilots/us/}. كل رقم مأخوذ من الأوراق البحثية والتقارير الرسمية، أو من مقالاتنا السابقة عن {⁦OpenResearch⁩|/essays/openresearch-cash-study/} و{فنلندا|/essays/finland-basic-income-experiment/}."
+          ],
+          [
+            "w",
+            "أثر كل دراسة في العمل\nعمل أقل | لا تغيير واضح | عمل أكثر\n⁦SIME/DIME⁩ (ضريبة الدخل السلبية) | الولايات المتحدة، السبعينيات | -1 | الساعات أقل بنسبة ⁦9–20%⁩\nمينكم | كندا، ⁦1975–79⁩ | -1 | الساعات أقل بنسبة ⁦1–3%⁩\nأرباح ألاسكا | الولايات المتحدة، منذ 1982 | 0 | عمل جزئي أكثر\nتحويلات إيران النقدية | منذ 2011 | 0 | عمل أكثر للنساء\nسبعة برامج حكومية | ستة بلدان | 0 | لا أثر منهجي\nفنلندا | ⁦2017–18⁩ | 0 | السنة الثانية: ⁦+6⁩ أيام\nكينيا (⁦GiveDirectly⁩) | منذ 2018 | 0 | من الأجر إلى العمل الحر\nستوكتون (⁦SEED⁩) | ⁦2019–21⁩ | 0 | غير دال إحصائيًا\n⁦OpenResearch⁩ | الولايات المتحدة، ⁦2020–23⁩ | -1 | 1.3 ساعة أقل أسبوعيًا\nتجارب أمريكية بمجموعة ضابطة | 17 تقييمًا | 2,7,8 | عدد التجارب"
+          ],
+          [
+            "p",
+            "كل نقطة هي النتيجة الرئيسية لدراسة ما عن العمل. الأعمدة تبيّن الاتجاه لا الحجم: فالدراسات تقيس العمل بوحدات مختلفة (ساعات، أيام، معدلات توظيف)، لذا كتبنا الحجم بالكلمات. وفي صف التجارب الأمريكية تعدّ الأرقام التقييمات ذات المجموعة الضابطة في كل عمود؛ ووجد تقييم آخر انتقالًا بين أنواع العمل."
+          ],
+          [
+            "h",
+            "الأدلة جنبًا إلى جنب"
+          ],
+          [
+            "p",
+            "هناك تمييز يمتد عبر كل ما يلي: «لا أثر دالًا إحصائيًا» لا يعني «لا أثر». بل يعني أن الفرق بين المستفيدين والمجموعة الضابطة كان أصغر من أن يُميَّز عن الصدفة، قياسًا بالتشويش في البيانات. قد تفوّت دراسة صغيرة أثرًا حقيقيًا، وقد تستبعد دراسة كبيرة الآثار الكبيرة دون الصغيرة. وحيث تقول الورقة ما الذي تستطيع استبعاده، نذكره."
+          ],
+          [
+            "t",
+            "البرنامج | المكان والسنوات | الدفعة | التصميم | الأثر في العمل | المصدر\n⁦SIME/DIME⁩ (ضريبة الدخل السلبية) | سياتل ودنفر، الولايات المتحدة؛ من 1970، لمدة 3 أو 5 سنوات | ضمان ⁦$3,800–$5,600⁩ سنويًا لأسرة من أربعة أفراد (دولارات 1971)، ينخفض مع ارتفاع الدخل الآخر | عشوائي؛ نحو 4,800 أسرة | الساعات السنوية أقل بنحو 9% للأزواج و20% للزوجات و14% للأمهات العازبات (السنة الثانية) | [9]\nمينكم | دوفين ووينيبيغ، كندا؛ الدفعات ⁦1975–1979⁩ | حد أدنى للدخل ينقص 50 سنتًا عن كل دولار من الدخل الآخر؛ ويحق لأي ساكن في دوفين طلبه | تجربة ميدانية؛ مدينة دوفين كلها مؤهلة | الساعات أقل بنحو 1% للرجال و3% للمتزوجات | [10][11]\nأرباح صندوق ألاسكا الدائم | ألاسكا، الولايات المتحدة؛ منذ 1982 | أرباح سنوية لكل مقيم: في المتوسط ⁦$1,495⁩ للفرد (دولارات 2010) | مقارنة ألاسكا بمزيج مرجّح من ولايات أخرى، ⁦1977–2014⁩ | لا أثر في التوظيف؛ العمل الجزئي أعلى بـ1.8 نقطة (17%) | [8]\nالتحويلات النقدية الوطنية | إيران؛ من 2011 | إيداعات شهرية لأكثر من 70 مليون شخص، تعادل 28% من وسيط دخل الفرد | بيانات أُسر عبر الزمن عن توقيت المبالغ وحجمها (غير عشوائي) | لا انخفاض في الساعات ولا في المشاركة في العمل؛ عمل أكثر للنساء والرجال العاملين لحسابهم | [12]\nسبعة برامج حكومية للتحويلات النقدية | هندوراس، إندونيسيا، المكسيك (برنامجان)، المغرب، نيكاراغوا، الفلبين | نقود للأسر الفقيرة | إعادة تحليل 7 تجارب عشوائية | لا أثر منهجي في عمل الرجال أو النساء ولا في مقداره | [13]\nتجربة الدخل الأساسي | فنلندا؛ ⁦2017–2018⁩ | ⁦€560⁩ شهريًا لمدة عامين، معفاة من الضريبة | عشوائي؛ 2,000 عاطل مقابل عاطلين آخرين | السنة الأولى: ⁦49.64⁩ مقابل ⁦49.25⁩ يوم عمل؛ السنة الثانية: نحو 6 أيام أكثر | [5][6]\nالدخل الأساسي الطويل من ⁦GiveDirectly⁩ | سيايا وبوميت، كينيا؛ من 2018، لمدة 12 عامًا | ⁦$0.75⁩ يوميًا لكل بالغ، تُدفع شهريًا | عشوائي حسب القرية: 44 قرية (نحو 5,000 شخص) مقابل 100 قرية ضابطة | إجمالي الساعات لم يتغير؛ عمل مأجور أقل وعمل حر أكثر (بعد نحو عامين) | [7]\n⁦SEED⁩ | ستوكتون، الولايات المتحدة؛ ⁦2019–2021⁩ | ⁦$500⁩ شهريًا لمدة عامين | عشوائي؛ 131 مقابل 200 | فروق التوظيف غير دالة إحصائيًا | [2]\nدراسة النقد غير المشروط (⁦OpenResearch⁩) | إلينوي وتكساس، الولايات المتحدة؛ ⁦2020–2023⁩ | ⁦$1,000⁩ شهريًا لمدة ثلاث سنوات | عشوائي؛ 1,000 مقابل 2,000 تلقوا ⁦$50⁩ شهريًا | نحو 1.3 ساعة أقل أسبوعيًا؛ احتمال التوظيف أقل بـ2.3 نقطة | [3][4]\n101 تجربة للدخل المضمون | أنحاء الولايات المتحدة؛ منذ 2018 | الوسيط ⁦$500⁩ شهريًا | 18 تقييمًا بمجموعة ضابطة تذكر نتيجة عن العمل | 8 عمل أكثر، 7 بلا فرق واضح، 2 عمل أقل، 1 انتقال بين أنواع العمل | [1]"
+          ],
+          [
+            "h",
+            "السبعينيات: ضريبة الدخل السلبية و«مينكم»"
+          ],
+          [
+            "p",
+            "بين 1968 و1980 أجرت حكومتا الولايات المتحدة وكندا خمس تجارب لضريبة الدخل السلبية.[10] وضريبة الدخل السلبية ليست دخلًا أساسيًا تمامًا: فهي تضمن حدًا أدنى ثم تسترد جزءًا منه كلما ارتفع الدخل الآخر، وكان ذلك في هذه التجارب عادةً نحو 50 سنتًا عن كل دولار مكتسب. أي إنها اختبرت النقود وضريبة مرتفعة على الكسب في آن واحد."
+          ],
+          [
+            "p",
+            "شملت أكبر هذه التجارب، في سياتل ودنفر، نحو 4,800 أسرة. وعند القياس في السنة الثانية، عمل الأزواج ساعات أقل من المجموعة الضابطة بنحو 9%، والزوجات بنحو 20%، والأمهات العازبات بنحو 14%.[9] وجاء معظم انخفاض الأزواج من بطالة أطول، بنحو 2.2 أسبوع إضافي بلا عمل في المتوسط؛ أما عند الزوجات والأمهات العازبات فظهر في صورة وقت خارج سوق العمل.[9] وقدّرت ثلاث مراجعات تأخذ متوسط التجارب الأمريكية الأربع الانخفاضَ لدى المعيلين الرئيسيين بين 5% و7.9%. وكتب فيليب روبنز (1985)، صاحب إحداها، أنه «لا يوجد في أي حالة دليل على انسحاب جماعي من سوق العمل».[10]"
+          ],
+          [
+            "p",
+            "وفي مانيتوبا الكندية جعلت تجربة «مينكم» بلدة دوفين «موقع تشبّع»: يحق لكل ساكن فيها طلب الضمان. سُجّلت الأسر منذ أواخر 1974، واستمرت الدفعات حتى 1979.[11] ووجد تحليل ديريك هيوم وواين سيمبسون للعمل (1993) أن الساعات انخفضت بنحو 1% للرجال و3% للمتزوجات، وهو أقل مما في الولايات المتحدة.[10] وتشتهر «مينكم» أكثر بنتيجة إيفلين فورجيه عام 2011 بأن حالات دخول المستشفى في دوفين انخفضت 8.5% مقارنة بمجموعة المقارنة؛ لكن إعادة تحليل أجراها ديفيد غرين عام 2021 تقول إن البيانات لا تدعم هذا الاستنتاج إذا أُخذت الاتجاهات السابقة في الحسبان.[11]"
+          ],
+          [
+            "h",
+            "تجارب حديثة: فنلندا وستوكتون و⁦OpenResearch⁩"
+          ],
+          [
+            "p",
+            "دفعت فنلندا ⁦€560⁩ شهريًا، معفاة من الضريبة، لـ2,000 عاطل اختيروا عشوائيًا لمدة عامين. في السنة الأولى عمل المستفيدون ⁦49.64⁩ يومًا في المتوسط والمجموعة الضابطة ⁦49.25⁩: لا أثر.[5] وفي ما يقارب السنة الثانية عمل المستفيدون نحو 6 أيام أكثر. لكن «نموذج تفعيل» جديدًا للعاطلين بدأ في تلك السنة ولم يؤثر في المجموعتين بالقدر نفسه، فلا يمكن نسبة فرق السنة الثانية كله إلى الدخل الأساسي.[6] التفاصيل في {مقالنا عن فنلندا|/essays/finland-basic-income-experiment/}."
+          ],
+          [
+            "p",
+            "دفع برنامج ⁦SEED⁩ في ستوكتون ⁦$500⁩ شهريًا لمدة عامين. وقال تقرير السنة الأولى عام 2021 إن نسبة العاملين بدوام كامل بين المستفيدين ارتفعت من 28% إلى 40%، ولا يزال هذا الرقم يُقتبس كثيرًا. لكن التحليل المحكَّم للتجربة العشوائية (⁦Journal of Urban Health⁩، 2023؛ 131 مستفيدًا و200 في المجموعة الضابطة) وجد أن فروق التوظيف لم تكن دالة إحصائيًا، لا قبل الجائحة ولا أثناءها.[2]"
+          ],
+          [
+            "p",
+            "دراسة ⁦OpenResearch⁩، التي دعمها سام ألتمان، هي الأكبر والأدق قياسًا. تلقى 1,000 شخص بين 21 و40 عامًا ⁦$1,000⁩ شهريًا لمدة ثلاث سنوات، وتلقى 2,000 آخرون ⁦$50⁩ شهريًا. عمل المستفيدون أقل من المجموعة الضابطة بنحو 1.3 ساعة أسبوعيًا، وكان احتمال أن يكونوا موظفين أقل بـ2.3 نقطة مئوية، وكسبوا من العمل نحو ⁦$1,900⁩ أقل سنويًا. ويسمي الباحثون ذلك انخفاضًا بنسبة ⁦5–6%⁩، «أثرًا معتدلًا».[3] ومع ذلك ارتفع التوظيف في المجموعتين، من 58% إلى 72% بين المستفيدين ومن 59% إلى 74% في المجموعة الضابطة.[4] والباقي في {مقالنا عن هذه الدراسة|/essays/openresearch-cash-study/}."
+          ],
+          [
+            "h",
+            "101 تجربة أمريكية: ماذا تقول التقييمات"
+          ],
+          [
+            "p",
+            "يضم {جدولنا لتجارب الدخل المضمون في الولايات المتحدة|/pilots/us/} 101 برنامج، والوسيط يدفع ⁦$500⁩ شهريًا. لـ53 منها تقييم منشور، وقارن 34 من هذه المستفيدين بمجموعة ضابطة أو مجموعة مقارنة. ومن هذه الـ34، تذكر 18 نتيجة عن العمل.[1]"
+          ],
+          [
+            "p",
+            "وجدت ثماني منها عملًا أكثر مما في المجموعة الضابطة. ففي أوكلاند ارتفع التوظيف بدوام كامل من 15% إلى 26% بين المستفيدين ومن 14% إلى 18% في المجموعة الضابطة؛ وفي كامبريدج بولاية ماساتشوستس ارتفع من 36% إلى 40% بينما انخفض في المجموعة الضابطة من 30% إلى 28%. وأبلغت آرلينغتون وكولومبيا ودرهام ودنفر عن نتائج مشابهة، وتغيّب المستفيدون في بالتيمور عن العمل نحو 9 ساعات أقل شهريًا. وفي برنامج مقاطعة لوس أنجلوس للشباب ارتفع التوظيف 7 نقاط، وإن كانت الباحثة تنسب كثيرًا من ذلك إلى التدريب المهني المرافق للنقود.[1]"
+          ],
+          [
+            "p",
+            "ولم تجد سبع منها فرقًا واضحًا، ومنها ستوكتون. ووجدت اثنتان عملًا أقل: ⁦OpenResearch⁩، وكومبتون، حيث انخفضت المشاركة في سوق العمل 13 نقطة بين من كانوا يعملون بدوام جزئي، بينما لم يتغير العاملون بدوام كامل. ووجدت تجربة للفنانين في نيويورك نحو 3.9 ساعة أكثر أسبوعيًا للفن و2.4 ساعة أقل لأعمال أخرى.[1]"
+          ],
+          [
+            "p",
+            "هذه التقييمات الـ18 ليست أدلة متساوية الوزن. كثير منها تقارير قصيرة لا أوراق محكَّمة، وغالبًا ما تضم العيّنة 100 إلى 200 شخص، وبعضها يذكر نسبًا دون أن يقول هل الفرق دال إحصائيًا، وبعضها جاء مع خدمات أخرى. فالعدّ يُظهر مدى النتائج لا حكمًا نهائيًا. لكن ما لا يُظهره هو أناس يتركون العمل."
+          ],
+          [
+            "h",
+            "خارج البلدان الغنية: كينيا وإيران وسبعة برامج"
+          ],
+          [
+            "p",
+            "دراسة ⁦GiveDirectly⁩ في كينيا هي الأقرب حتى الآن إلى دخل أساسي طويل الأمد. ففي 44 قرية يتلقى كل بالغ ⁦$0.75⁩ يوميًا، تُدفع شهريًا، لمدة 12 عامًا؛ و100 قرية مجموعة ضابطة، إلى جانب قرى تتلقى المال لعامين فقط أو دفعة واحدة.[7] وبعد نحو عامين لم ينخفض إجمالي ساعات عمل الأسر: كان التقدير زيادة صغيرة غير دالة، ويقول الباحثون إنهم «يستطيعون استبعاد انخفاضات كبيرة». ما تغيّر هو نوع العمل: ساعات أقل في العمل المأجور الزراعي وساعات أكثر في العمل الحر غير الزراعي، إذ بدأ الناس مشروعات صغيرة أو وسّعوها. وسدّ عمال من خارج القرى الفجوة، وارتفعت الأجور.[7]"
+          ],
+          [
+            "p",
+            "استبدلت إيران منذ 2011 دعم الطاقة بإيداعات نقدية شهرية وصلت إلى أكثر من 70 مليون شخص، وتعادل 28% من وسيط دخل الفرد. وباستخدام الفروق في توقيت بدء الأسر في تلقي المال وفي ثقله بالنسبة إليها، لم يجد جواد صالحي أصفهاني ومحمد مصطفوي دهزوئي «أي دليل على أن التحويلات النقدية خفّضت عرض العمل»، بل وجدا آثارًا إيجابية للنساء والرجال العاملين لحسابهم. وفي ورقة العمل كان الاستثناء هو الشباب ذوي الصلة الضعيفة بسوق العمل.[12]"
+          ],
+          [
+            "p",
+            "أعاد أبهيجيت بانيرجي وريما حنا وغابرييل كرايندلر وبنجامين أولكن تحليل بيانات سبع تجارب عشوائية لبرامج حكومية للتحويلات النقدية في هندوراس وإندونيسيا والمكسيك والمغرب ونيكاراغوا والفلبين. ولم يجدوا «أي دليل منهجي على أن برامج التحويلات النقدية تثبّط العمل»، لا عند الرجال ولا عند النساء.[13] وكانت هذه برامج موجهة إلى الأسر الفقيرة، لا دخلًا أساسيًا."
+          ],
+          [
+            "h",
+            "ألاسكا: للجميع، كل عام"
+          ],
+          [
+            "p",
+            "منذ 1982 يتلقى كل مقيم في ألاسكا أرباحًا سنوية من الصندوق الدائم للولاية، بلغ متوسطها ⁦$1,495⁩ للفرد بدولارات 2010، أي نحو ⁦$3,900⁩ للأسرة.[8] وقارن دامون جونز وإيوانا مارينيسكو ألاسكا بمزيج مرجّح من ولايات أخرى، فوجدا أن الأرباح «لم يكن لها أثر في التوظيف»، وأنها رفعت العمل بدوام جزئي بمقدار 1.8 نقطة مئوية (17%).[8]"
+          ],
+          [
+            "p",
+            "ويتحرّى الباحثان الحذر في تفسير ذلك. ففترات الثقة لديهما لا تستبعد أثرًا إيجابيًا في التوظيف، لذا قد يأتي العمل الجزئي الإضافي من أناس انتقلوا من الدوام الكامل إلى الجزئي، أو من أناس بدؤوا العمل بدوام جزئي. وانخفضت الساعات بأقل من ساعة أسبوعيًا، دون دلالة إحصائية. وتفسيرهما أن الجميع حين يحصلون على المال وينفقونه محليًا يرتفع الطلب على الخدمات المحلية، فيعوّض الميل إلى العمل أقل؛ وقد صمد التوظيف في القطاعات التي تخدم الزبائن المحليين أفضل من القطاعات التي تتاجر مع الخارج.[8]"
+          ],
+          [
+            "h",
+            "من عمل أقل، وماذا فعل بدلًا من ذلك"
+          ],
+          [
+            "p",
+            "حيث انخفض العمل، انخفض لدى أناس بعينهم. ففي تجارب السبعينيات كان الانخفاض الأكبر لدى الزوجات والأمهات العازبات، اللواتي كن يعملن ساعات أقل أصلًا، فتصير بضعة أسابيع من التوقف نسبة أكبر.[10] أما الأزواج فاستغرقوا غالبًا وقتًا أطول بين عمل وآخر.[9] وقلّل الشباب عملهم بنسبة كبيرة لكن بعدد ساعات قليل، ويشير التقرير الرسمي إلى أن ذلك لم يصاحبه وقت أطول في المدرسة.[9]"
+          ],
+          [
+            "p",
+            "وفي ⁦OpenResearch⁩ تركّز الانخفاض بين من هم دون 30 عامًا والآباء والأمهات الذين يربّون أطفالهم وحدهم ومن كانت دخول أسرهم الأعلى في البداية؛ ولم يكن هناك أثر دال لدى المستفيدين فوق 30 عامًا.[4] وذهبت الساعات في الغالب إلى الترفيه والراحة. وتستبعد الورقة حتى التغيرات الصغيرة في الوقت المخصص لرعاية الأطفال أو البحث عن عمل أو تطوير الذات، وإن طالت فترات البقاء بلا عمل بنحو 0.8 شهر.[3] وفي كينيا انتقل الناس من العمل المأجور إلى مشروعاتهم الخاصة.[7] وفي ألاسكا انتقل بعضهم إلى العمل الجزئي.[8] وعن فنلندا وجدت ⁦Kela⁩ أن الدخل الأساسي ساعد من كانوا نشطين أصلًا، ولم يحلّ مشكلات من هم في أصعب الأوضاع.[6]"
+          ],
+          [
+            "o",
+            "إذن فالصورة الصادقة ليست «لا أحد يعمل أقل». بعض الناس يفعلون، ببضع ساعات أسبوعيًا أو بضعة أسابيع سنويًا: غالبًا أصحاب الدخل الثاني في الأسرة والآباء والأمهات الذين يربّون أطفالهم وحدهم، والشباب، ومن هم بين عمل وآخر. وهل هذا كلفة أم هو الغاية نفسها؟ ذلك يتوقف على ما تراه غاية ذلك الوقت."
+          ],
+          [
+            "h",
+            "لماذا لا تعني التجربة دخلًا أساسيًا وطنيًا"
+          ],
+          [
+            "p",
+            "تختلف كل دراسة تقريبًا مما سبق عن الدخل الأساسي الحقيقي في أربعة أمور على الأقل."
+          ],
+          [
+            "p",
+            "المدة. معظمها كان مؤقتًا، وكان المستفيدون يعرفون متى سيتوقف المال. وقد يتعامل الناس مع ثلاث سنوات من النقود على نحو مختلف عن دفعة مدى الحياة. أرباح ألاسكا دائمة لكنها متواضعة. ومجموعة الاثني عشر عامًا في كينيا هي الاختبار الرئيسي لالتزام طويل، ونتائجها المنشورة تغطي العامين الأولين.[7][8]"
+          ],
+          [
+            "p",
+            "من يحصل عليه. التجربة تدفع لعدد قليل من الناس في مكان ما. أما الدفع للجميع فيغيّر الطلب المحلي والأجور والأسعار: ففي كينيا ارتفعت الأجور حين ترك الناس العمل المأجور، وفي ألاسكا يبدو أن الأثر في الاقتصاد المحلي عوّض الأثر الفردي.[7][8] وتجربة تدفع لبضع مئات من الناس لا تستطيع رؤية ذلك."
+          ],
+          [
+            "p",
+            "من يدفع. في التجربة يأتي المال من الخارج. أما الدخل الأساسي الوطني فلا بد من تمويله، غالبًا بالضرائب، وقد تقلّل الضرائب الأعلى على الكسب العملَ بحد ذاتها. وقد استردت تجارب ضريبة الدخل السلبية فعلًا نحو 50 سنتًا عن كل دولار مكتسب، وهذا أحد أسباب كبر آثارها؛ ولم تغيّر تجربة فنلندا أي ضريبة.[6][10] ولمعرفة كلفة الدخل الأساسي، انظر {خريطتنا للعالم|/essays/basic-income-world-map/}."
+          ],
+          [
+            "p",
+            "من دُرس. معظم العيّنات من ذوي الدخل المنخفض، الذين يستجيبون أكثر لأن الدفعة كبيرة قياسًا بكسبهم. وقدّرت محاكاة مبنية على تجربة غاري أن برنامجًا وطنيًا سيخفّض العمل بنحو ثلث ما خفّضته التجربة (⁦1.6%⁩ بدلًا من ⁦4.5%⁩).[10]"
+          ],
+          [
+            "h",
+            "ما لا نعرفه بعد"
+          ],
+          [
+            "p",
+            "لم يدفع أحد بعد دخلًا أساسيًا دائمًا وشاملًا يكفي للعيش ويُموَّل من الضرائب، ثم قاس ما يحدث للعمل. الأدلة المتوفرة تغطي أجزاء من ذلك: الدوام مع مال قليل (ألاسكا)، والمال بلا دوام (معظم التجارب)، والجميع في قرية (كينيا)، والنطاق الوطني بتصميم موجّه (إيران والبرامج السبعة)."
+          ],
+          [
+            "p",
+            "كثير من نتائج التجارب يعتمد على استبيانات يجيب عنها المشاركون أنفسهم. والتقديرات تتغير أيضًا حين تصل بيانات أفضل: فقد رُفعت تقديرات ⁦OpenResearch⁩ عام 2026 بعد إضافة سجلات تأمين البطالة في الولايتين.[3] و«لا أثر دالًا» من دراسة على 300 شخص ادعاء أضعف بكثير من العبارة نفسها من دراسة على 3,000."
+          ],
+          [
+            "h",
+            "ما نستخلصه"
+          ],
+          [
+            "o",
+            "عبر أكثر من خمسين عامًا من التجارب، في البلدان الغنية والفقيرة، لم تجد أي دراسة أن المال يجعل الناس يتوقفون عن العمل. وجد معظمها انخفاضًا طفيفًا أو لا شيء، ووجد بعضها عملًا أكثر. وحيث انخفض العمل كان ذلك بساعات في الأسبوع أو أسابيع في السنة، وغالبًا لدى الآباء والأمهات والشباب ومن هم بين عمل وآخر."
+          ],
+          [
+            "o",
+            "لكن هذا لا يساوي القول إن «الدخل الأساسي لا يؤثر في العمل». فقد قاست ⁦OpenResearch⁩ وتجارب السبعينيات انخفاضات حقيقية وإن كانت معتدلة، ومكان هذه الأرقام في أي حساب صادق للكلفة. السؤال الأفضل ليس «هل سيتوقف الناس عن العمل؟» بل «بكم أقل، ومن، وهل يستحق ذلك؟». البيانات تجيب عن الجزأين الأولين. أما الثالث فحكم يعود إلى كل واحد منا."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Free Lunch Lab — us-pilots.json: 101 US guaranteed income pilots with their evaluations (CC BY 4.0; table at /pilots/us/)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/us-pilots.json"
+        },
+        {
+          "n": 2,
+          "label": "Stacia West and Amy Castro — Impact of Guaranteed Income on Health, Finances, and Agency: Findings from the Stockton Randomized Controlled Trial (Journal of Urban Health 100(2), 2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10160253/"
+        },
+        {
+          "n": 3,
+          "label": "Vivalt, Rhodes, Bartik, Broockman, Krause and Miller — The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States (NBER w32719, Jul 2024, revised Aug 2026)",
+          "url": "https://www.nber.org/papers/w32719"
+        },
+        {
+          "n": 4,
+          "label": "OpenResearch — Key Findings: Employment (21 Jul 2024)",
+          "url": "https://www.openresearchlab.org/findings/key-findings-employment-and-income"
+        },
+        {
+          "n": 5,
+          "label": "Ministry of Social Affairs and Health, Finland — Preliminary results of the basic income experiment: self-perceived wellbeing improved during the first year, no effects on employment (8 Feb 2019)",
+          "url": "https://stm.fi/en/-/perustulokokeilun-alustavat-tulokset-hyvinvointi-koettiin-paremmaksi-ensimmaisena-vuonna-ei-tyollisyysvaikutuksia"
+        },
+        {
+          "n": 6,
+          "label": "Kela — Finland’s Basic Income Experiment 2017–2018: results (2020; PDF); Ministry of Social Affairs and Health and Kela, final results release (6 May 2020)",
+          "url": "https://toolbox.finland.fi/wp-content/uploads/sites/2/2018/04/basic_income_experiment_2017-2018_results_2020.pdf",
+          "url2": "https://stm.fi/en/-/perustulokokeilun-tulokset-tyollisyysvaikutukset-vahaisia-toimeentulo-ja-psyykkinen-terveys-koettiin-paremmaksi"
+        },
+        {
+          "n": 7,
+          "label": "Abhijit Banerjee, Michael Faye, Alan Krueger, Paul Niehaus and Tavneet Suri — Universal Basic Income: Short-Term Results from a Long-Term Experiment in Kenya (15 Sep 2023; PDF)",
+          "url": "https://conference.nber.org/conf_papers/f192616.pdf"
+        },
+        {
+          "n": 8,
+          "label": "Damon Jones and Ioana Marinescu — The Labor Market Impacts of Universal and Permanent Cash Transfers: Evidence from the Alaska Permanent Fund (American Economic Journal: Economic Policy 14(2), 2022; PDF)",
+          "url": "https://home.uchicago.edu/j1s/Jones_Alaska_2022.pdf",
+          "url2": "https://www.nber.org/papers/w24312"
+        },
+        {
+          "n": 9,
+          "label": "US Department of Health and Human Services (ASPE) — Overview of the Final Report of the Seattle-Denver Income Maintenance Experiment (1983)",
+          "url": "https://aspe.hhs.gov/reports/overview-final-report-seattle-denver-income-maintenance-experiment"
+        },
+        {
+          "n": 10,
+          "label": "Karl Widerquist — The Negative Income Tax Experiments of the 1970s (early version of ch. 15 of the Palgrave International Handbook of Basic Income; PDF), Table 2 summarising Robins (1985), Burtless (1986), Keeley (1981), Moffitt (1979) and Hum and Simpson (1993)",
+          "url": "https://widerquist.com/wp-content/uploads/2024/03/The-Negative-Income-Tax-experiments-of-the-1970s-103.pdf"
+        },
+        {
+          "n": 11,
+          "label": "David A. Green — A Reanalysis of ‘The Town with No Poverty: The Health Effects of a Canadian Guaranteed Annual Income Field Experiment’ (5 Mar 2021; PDF)",
+          "url": "https://economics.ubc.ca/wp-content/uploads/sites/38/2021/03/forget-cpp-reanalysis.pdf"
+        },
+        {
+          "n": 12,
+          "label": "Djavad Salehi-Isfahani and Mohammad H. Mostafavi-Dehzooei — Cash transfers and labor supply: Evidence from a large-scale program in Iran (Journal of Development Economics 135, 2018); ERF Working Paper 1090 (2017)",
+          "url": "https://econpapers.repec.org/RePEc:eee:deveco:v:135:y:2018:i:c:p:349-367",
+          "url2": "https://erf.org.eg/publications/cash-transfers-and-labor-supply-evidence-from-a-large-scale-program-in-iran"
+        },
+        {
+          "n": 13,
+          "label": "Abhijit Banerjee, Rema Hanna, Gabriel Kreindler and Benjamin Olken — Debunking the Stereotype of the Lazy Welfare Recipient: Evidence from Cash Transfer Programs (World Bank Research Observer 32(2), 2017)",
+          "url": "https://dspace.mit.edu/handle/1721.1/113834",
+          "url2": "https://gsdrc.org/document-library/debunking-the-stereotype-of-the-lazy-welfare-recipient-evidence-from-cash-transfer-programs-worldwide/"
+        }
+      ]
+    },
+    {
       "id": "basic-income-world-map",
       "date": "2026-11-10",
       "related": [
@@ -16988,7 +18317,8 @@ module.exports = {
         "india-basic-income-madhya-pradesh-ladli-behna",
         "china-childcare-subsidy-basic-income",
         "openresearch-cash-study",
-        "universal-high-income"
+        "universal-high-income",
+        "does-cash-make-people-stop-working"
       ],
       "title": {
         "en": "Which countries could afford a basic income tomorrow? A map of 211 countries",
@@ -21533,7 +22863,8 @@ module.exports = {
         "public-benefit-fund",
         "openresearch-cash-study",
         "finland-basic-income-experiment",
-        "generative-ai-creative-work-basic-income"
+        "generative-ai-creative-work-basic-income",
+        "does-cash-make-people-stop-working"
       ],
       "title": {
         "ja": "生成AIは仕事を奪ったのか：データでわかったことと、ベーシックインカムにできること（前編・雇用）",
@@ -24814,6 +26145,7 @@ module.exports = {
       "id": "finland-basic-income-experiment",
       "date": "2026-11-06",
       "related": [
+        "does-cash-make-people-stop-working",
         "openresearch-cash-study",
         "japan-special-cash-payment",
         "india-basic-income-madhya-pradesh-ladli-behna"
@@ -28112,6 +29444,7 @@ module.exports = {
       "id": "openresearch-cash-study",
       "date": "2026-11-04",
       "related": [
+        "does-cash-make-people-stop-working",
         "universal-high-income",
         "public-benefit-fund",
         "moltbook-basic-income",

@@ -717,6 +717,24 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 /* 表と地図は本文より広く（最大 900px、中央）。画面からはみ出さない */
 .essay-body>.es-wide{margin-inline:calc(-1 * var(--bleed))}
 .essay-body>.wmap.es-wide{margin-block:.5em 0}
+/* 研究ごとの「仕事への影響」の図（w）: 行は研究、3つの列は向き。真ん中の列（変化なし）だけ薄く塗る */
+.wk{margin:.5em 0 0;padding:14px 14px 6px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.wk-h{font-weight:700;font-size:.9375rem;line-height:1.5;margin-bottom:8px}
+.wk table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.875rem;line-height:1.45}
+.wk .wk-c{width:17%}
+.wk thead th{font-size:.75rem;line-height:1.3;color:var(--muted);font-weight:700;text-align:center;vertical-align:bottom;padding:0 4px 8px}
+.wk tbody th{text-align:start;font-weight:400;padding:9px 10px 9px 0;border-top:1px solid var(--line)}
+[dir="rtl"] .wk tbody th{padding:9px 0 9px 10px}
+.wk-name{display:block;font-weight:700}
+.wk-sub,.wk-note{display:block;font-size:.8125rem}
+.wk-sub{color:var(--muted)}
+.wk thead td{border:0;padding:0}
+.es-t-scroll thead th{min-width:3.5em}
+.wk td{text-align:center;vertical-align:middle;border-top:1px solid var(--line);padding:6px 2px}
+.wk td:nth-child(3),.wk thead th:nth-child(3){background:color-mix(in srgb,var(--ink) 5%,transparent)}
+.wk-d{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--accent);vertical-align:middle}
+.wk-n{display:inline-grid;place-items:center;min-width:28px;height:28px;padding:0 6px;border-radius:14px;background:var(--accent);color:var(--paper);font-weight:700;font-variant-numeric:tabular-nums}
+@media (min-width:640px){.wk{padding:16px 18px 8px}.wk .wk-c{width:16%}.wk-sub,.wk-note{display:inline}.wk-sub::after{content:" · ";color:var(--muted)}}
 .es-tw{display:grid;gap:6px;min-width:0}
 .essay-table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .essay-table table{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;line-height:1.6;font-variant-numeric:tabular-nums}
@@ -1139,7 +1157,7 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 <tr data-n="100" data-s="CA" data-y="202204" data-m="1289" data-c="76" data-e="1"><th scope="row"><a href="/es/timeline/#tl-us-yolo-yobi" dir="auto">Yolo County Basic Income (YoBI)</a><span class="us-pl">Condado de Yolo, California (EE. UU.)</span><span class="us-yr" dir="ltr">2022–2024</span></th><td class="us-st" dir="ltr">CA</td><td class="num us-y" dir="ltr">2022–2024</td><td class="num"><bdi>1289 US$</bdi></td><td class="num">76</td><td><b>Sí</b></td></tr>
 </tbody></table></div>
 <section class="g-sec cx-note"><p>Las cuantías son el pago mensual principal; algunos pilotos pagaron cantidades distintas a distintos grupos o cambiaron la cuantía con el tiempo (ver cada entrada). Los beneficiarios son personas u hogares, según cuente cada programa, sin los grupos de control. Evaluación significa un informe, documento de trabajo o artículo publicado; los resultados son los que informan los evaluadores, y muchos se basan en encuestas autodeclaradas a unos cientos de personas. Financiación: pública es dinero de la ciudad, el condado o el estado; ARPA son los fondos federales de ayuda por la pandemia de la American Rescue Plan Act. Cuando una fuente solo da el inicio y la duración de los pagos, el año de fin se calcula a partir de ellos.</p><p class="cx-idx"><a href="/es/calc/us/">¿Cuánto costaría una renta básica en Estados Unidos? →</a></p></section>
-<p class="related">Ensayo relacionado: <a href="/es/essays/openresearch-cash-study/">Qué pasó cuando el estudio de Sam Altman dio a la gente 1.000 $ al mes durante tres años</a></p>
+<p class="related">Ensayo relacionado: <a href="/es/essays/does-cash-make-people-stop-working/">¿Dejamos de trabajar si nos dan dinero? Lo que encontraron los experimentos</a> · <a href="/es/essays/openresearch-cash-study/">Qué pasó cuando el estudio de Sam Altman dio a la gente 1.000 $ al mes durante tres años</a></p>
 <p class="back"><a class="btn line" href="/es/timeline/">← Experimentos de renta básica: una cronología</a></p>
 </main>
 </div>
