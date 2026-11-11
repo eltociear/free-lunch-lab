@@ -457,7 +457,7 @@ h1{font-size:${ja ? 62 : 66}px}
       { id: 'stockton',
         place: ja ? 'アメリカ・ストックトン' : 'Stockton, California',
         what: ja ? '住民125人に月500ドルを2年間' : '$500 a month for 2 years to 125 residents',
-        res: ja ? 'フルタイム就労への移行が対照群の2倍超' : 'Full-time work at over 2× the control rate' },
+        res: ja ? '収入が安定。雇用には有意な差なし' : 'Steadier income; no significant job effect' },
       { id: 'pilotprojekt',
         place: ja ? 'ドイツ' : 'Germany',
         what: ja ? '約120人に月1,200ユーロを3年間' : '€1,200 a month for 3 years to about 120 people',
@@ -1152,8 +1152,9 @@ ${bentoArt}`,
     },
   },
   // X post image: "Does free cash make people stop working?" Three experiments side by side (Finland, Stockton SEED,
-  // OpenResearch), numbers from TIMELINE + the openresearch-cash-study essay in src/data.js; Stockton's 28->40 vs
-  // 32->37 full-time figures are SEED's first-year analysis (Feb 2019-Feb 2020). 1200x1500 (4:5) for the mobile
+  // OpenResearch), numbers from TIMELINE + the openresearch-cash-study essay in src/data.js; Stockton follows the 2023
+  // peer-reviewed trial (West and Castro, J Urban Health 2023, PMC10160253: 131 vs 200, employment differences not
+  // significant, income volatility 19% vs 26% in year 1), not the 2021 first-year report. 1200x1500 (4:5) for the mobile
   // timeline. Flat palette only: solid navy, solid gold #FFD66B, ink #141A3A on gold; no gradients, glows or moon.
   'work-effect': {
     w: 1200, h: 1500, langs: ['ja', 'en'],
@@ -1169,8 +1170,8 @@ ${bentoArt}`,
           more: `<p class="det">${ja ? '生活の満足度と心の健康は改善' : 'Wellbeing and mental health improved'}</p>` },
         { name: ja ? 'ストックトン（米国）' : 'Stockton, USA', meta: ja ? '2019–2021 ・ SEED' : '2019–2021 · SEED',
           pay: ja ? '月500ドル × 2年' : '$500 a month × 2 years', who: ja ? '住民125人' : '125 residents',
-          res: ja ? 'フルタイムで働く人が増えた' : 'More people got full-time jobs',
-          more: `<p class="det">${ja ? '1年目のフルタイム就業率' : 'Full-time work in the first year'}</p>${cmp(R, '28%', '40%', 'hi')}${cmp(C, '32%', '37%')}` },
+          res: ja ? '雇用に有意な差はなかった' : 'No significant difference in employment',
+          more: `<p class="det">${ja ? '2023年の査読論文（受給131人・対照200人）' : '2023 peer-reviewed trial: 131 vs 200 controls'}</p><p class="det">${ja ? '1年目は収入の変動が小さく、心の健康も改善' : 'Year 1: steadier income, less distress'}</p>` },
         { name: 'OpenResearch', meta: ja ? '2020–2023 ・ サム・アルトマン出資' : '2020–2023 · backed by Sam Altman',
           pay: ja ? '月1,000ドル × 3年' : '$1,000 a month × 3 years', who: ja ? '21〜40歳の1,000人' : '1,000 people aged 21–40',
           res: ja ? '労働時間は週1.3時間減った' : '1.3 fewer hours of work a week',
@@ -1199,10 +1200,10 @@ ${bentoArt}`,
 </div>
 <div class="take">
   <p class="t1">${ja ? '人は働くのをやめなかった' : 'People did not stop working'}</p>
-  <p class="t2">${ja ? '変化は小さかった。ストックトンではフルタイム就業が増え、<br>OpenResearch では労働時間が少し減った' : 'The effects were small. Full-time work rose in Stockton;<br>in OpenResearch, hours fell a little.'}</p>
+  <p class="t2">${ja ? '変化は小さかった。ストックトンでは雇用に有意な差がなく、<br>OpenResearch では労働時間が少し減った' : 'The effects were small. No significant job effect in Stockton;<br>in OpenResearch, hours fell a little.'}</p>
 </div>
 <div class="foot3">
-  <p class="src">${ja ? '出典：Kela・フィンランド社会保健省（2020）／ SEED 1年目分析（2021）／ Vivalt ほか、NBER w32719（OpenResearch）' : 'Sources: Kela and Finland’s Ministry of Social Affairs and Health (2020) / SEED first-year analysis (2021) / Vivalt et al., NBER w32719 (OpenResearch)'}</p>
+  <p class="src">${ja ? '出典：Kela・フィンランド社会保健省（2020）／ West・Castro、J Urban Health（2023）／ Vivalt ほか、NBER w32719（OpenResearch）' : 'Sources: Kela and Finland’s Ministry of Social Affairs and Health (2020) / West and Castro, J Urban Health (2023) / Vivalt et al., NBER w32719 (OpenResearch)'}</p>
   <div class="brand">
     <svg width="64" height="45" viewBox="-8 -8 256 184">${mark}</svg>
     <p class="wm2">${ja ? '不労所得研究所' : 'Free Lunch Lab'}</p>
