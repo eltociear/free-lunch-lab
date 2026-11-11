@@ -23036,7 +23036,7 @@ module.exports = {
           ],
           [
             "p",
-            "Cash trials give some evidence on whether people use the money this way. In {Sam Altman’s OpenResearch study|/essays/openresearch-cash-study/}, $1,000 a month for three years led recipients to work about 1.3 hours a week less than the control group, while employment rose in both groups. In {Finland’s 2017–2018 experiment|/essays/finland-basic-income-experiment/}, 2,000 unemployed people received €560 a month; the employment effects were small, and wellbeing and trust improved. In {Stockton, California|/timeline/#tl-stockton}, the share of recipients in full-time work rose from 28% to 40% in a year, more than twice the gain in the control group. None of these trials was about AI. They suggest that a modest floor does not make most people stop working, and that it gives them some room to choose."
+            "Cash trials give some evidence on whether people use the money this way. In {Sam Altman’s OpenResearch study|/essays/openresearch-cash-study/}, $1,000 a month for three years led recipients to work about 1.3 hours a week less than the control group, while employment rose in both groups. In {Finland’s 2017–2018 experiment|/essays/finland-basic-income-experiment/}, 2,000 unemployed people received €560 a month; the employment effects were small, and wellbeing and trust improved. In {Stockton, California|/timeline/#tl-stockton}, a first-year report in 2021 said full-time work among recipients rose from 28% to 40%, but the peer-reviewed analysis of the trial (2023) found no statistically significant difference in employment from the control group.[26] None of these trials was about AI. Together with {the other studies we have lined up|/essays/does-cash-make-people-stop-working/}, they suggest that a modest floor does not make most people stop working, and that it gives them some room to choose."
           ],
           [
             "o",
@@ -23258,7 +23258,7 @@ module.exports = {
           ],
           [
             "p",
-            "人々が実際にそうお金を使うのかについては、現金給付の実験がいくらか手がかりをくれます。{サム・アルトマンが資金を出したOpenResearchの研究|/essays/openresearch-cash-study/}では、月1,000ドルを3年間受け取った人は、比較グループより週に約1.3時間働く時間が短くなりましたが、働いている人の割合はどちらのグループでも上がりました。{フィンランドの2017〜2018年の実験|/essays/finland-basic-income-experiment/}では、失業者2,000人に月560ユーロを配り、雇用への効果は小さく、暮らしの安心感や信頼感は高まりました。{カリフォルニア州ストックトン|/timeline/#tl-stockton}では、フルタイムで働く受給者の割合が1年で28%から40%に上がり、比較グループの伸びの2倍を超えました。どれもAIをテーマにした実験ではありません。それでも、控えめな土台があっても多くの人は働くのをやめず、選ぶ余地が少し広がることを示しています。"
+            "人々が実際にそうお金を使うのかについては、現金給付の実験がいくらか手がかりをくれます。{サム・アルトマンが資金を出したOpenResearchの研究|/essays/openresearch-cash-study/}では、月1,000ドルを3年間受け取った人は、比較グループより週に約1.3時間働く時間が短くなりましたが、働いている人の割合はどちらのグループでも上がりました。{フィンランドの2017〜2018年の実験|/essays/finland-basic-income-experiment/}では、失業者2,000人に月560ユーロを配り、雇用への効果は小さく、暮らしの安心感や信頼感は高まりました。{カリフォルニア州ストックトン|/timeline/#tl-stockton}では、2021年の1年目の報告で受給者のフルタイム就業率が28%から40%に上がったとされましたが、2023年の査読つき分析では、就業について比較グループとの統計的に有意な差は見られませんでした。[26] どれもAIをテーマにした実験ではありません。それでも{ほかの研究と並べてみると|/essays/does-cash-make-people-stop-working/}、控えめな土台があっても多くの人は働くのをやめず、選ぶ余地が少し広がることがうかがえます。"
           ],
           [
             "o",
@@ -23480,7 +23480,7 @@ module.exports = {
           ],
           [
             "p",
-            "现金试验提供了一些证据，说明人们是否会这样使用这笔钱。在{萨姆·奥尔特曼的 OpenResearch 研究|/essays/openresearch-cash-study/}中，每月 1,000 美元、持续三年，受领者每周工作时间比对照组少约 1.3 小时，而两组的就业率都上升了。在{芬兰 2017–2018 年的实验|/essays/finland-basic-income-experiment/}中，2,000 名失业者每月领取 560 欧元；就业效果很小，幸福感和信任有所改善。在{加州斯托克顿|/timeline/#tl-stockton}，受领者中全职工作的比例一年内从 28% 升到 40%，增幅是对照组的两倍多。这些试验都与 AI 无关。它们表明，适度的底线不会让大多数人停止工作，并给了他们一些选择的余地。"
+            "现金试验提供了一些证据，说明人们是否会这样使用这笔钱。在{萨姆·奥尔特曼的 OpenResearch 研究|/essays/openresearch-cash-study/}中，每月 1,000 美元、持续三年，受领者每周工作时间比对照组少约 1.3 小时，而两组的就业率都上升了。在{芬兰 2017–2018 年的实验|/essays/finland-basic-income-experiment/}中，2,000 名失业者每月领取 560 欧元；就业效果很小，幸福感和信任有所改善。在{加州斯托克顿|/timeline/#tl-stockton}，2021 年的第一年报告称，受领者的全职就业率从 28% 升到 40%，但 2023 年经同行评审的分析发现，就业与对照组相比没有统计上显著的差异。[26] 这些试验都与 AI 无关。但{和其他研究放在一起看|/essays/does-cash-make-people-stop-working/}，它们表明，适度的底线不会让大多数人停止工作，并给了他们一些选择的余地。"
           ],
           [
             "o",
@@ -23702,7 +23702,7 @@ module.exports = {
           ],
           [
             "p",
-            "नकद ट्रायल इस बारे में कुछ सबूत देते हैं कि लोग पैसे का इस्तेमाल इस तरह करते हैं या नहीं। {सैम ऑल्टमैन के OpenResearch अध्ययन|/essays/openresearch-cash-study/} में, तीन साल तक हर महीने $1,000 मिलने पर पाने वालों ने कंट्रोल ग्रुप से हफ़्ते में लगभग 1.3 घंटे कम काम किया, जबकि दोनों समूहों में रोज़गार बढ़ा। {फ़िनलैंड के 2017–2018 के प्रयोग|/essays/finland-basic-income-experiment/} में 2,000 बेरोज़गार लोगों को हर महीने €560 मिले; रोज़गार पर असर छोटे रहे, और भलाई व भरोसे में सुधार हुआ। {स्टॉकटन, कैलिफ़ोर्निया|/timeline/#tl-stockton} में पाने वालों में पूर्णकालिक काम करने वालों का हिस्सा एक साल में 28% से बढ़कर 40% हो गया, जो कंट्रोल ग्रुप की बढ़त के दोगुने से भी ज़्यादा था। इनमें से कोई भी ट्रायल AI के बारे में नहीं था। वे बताते हैं कि एक मामूली न्यूनतम आधार से ज़्यादातर लोग काम नहीं छोड़ते, और इससे उन्हें चुनने की कुछ गुंजाइश मिलती है।"
+            "नकद ट्रायल इस बारे में कुछ सबूत देते हैं कि लोग पैसे का इस्तेमाल इस तरह करते हैं या नहीं। {सैम ऑल्टमैन के OpenResearch अध्ययन|/essays/openresearch-cash-study/} में, तीन साल तक हर महीने $1,000 मिलने पर पाने वालों ने कंट्रोल ग्रुप से हफ़्ते में लगभग 1.3 घंटे कम काम किया, जबकि दोनों समूहों में रोज़गार बढ़ा। {फ़िनलैंड के 2017–2018 के प्रयोग|/essays/finland-basic-income-experiment/} में 2,000 बेरोज़गार लोगों को हर महीने €560 मिले; रोज़गार पर असर छोटे रहे, और भलाई व भरोसे में सुधार हुआ। {स्टॉकटन, कैलिफ़ोर्निया|/timeline/#tl-stockton} में 2021 की पहले साल की रिपोर्ट ने कहा कि पाने वालों में पूर्णकालिक काम 28% से बढ़कर 40% हो गया, लेकिन 2023 के पीयर-रिव्यू किए गए विश्लेषण में कंट्रोल ग्रुप की तुलना में रोज़गार में कोई सांख्यिकीय रूप से अहम अंतर नहीं मिला।[26] इनमें से कोई भी ट्रायल AI के बारे में नहीं था। फिर भी {दूसरे अध्ययनों के साथ देखें तो|/essays/does-cash-make-people-stop-working/} वे बताते हैं कि एक मामूली न्यूनतम आधार से ज़्यादातर लोग काम नहीं छोड़ते, और इससे उन्हें चुनने की कुछ गुंजाइश मिलती है।"
           ],
           [
             "o",
@@ -23924,7 +23924,7 @@ module.exports = {
           ],
           [
             "p",
-            "Los experimentos con transferencias de dinero aportan algunos datos sobre si la gente usa el dinero de esta manera. En {el estudio de OpenResearch de Sam Altman|/essays/openresearch-cash-study/}, 1.000 dólares al mes durante tres años llevaron a quienes los recibían a trabajar alrededor de 1,3 horas semanales menos que el grupo de control, mientras el empleo subía en ambos grupos. En {el experimento de Finlandia de 2017–2018|/essays/finland-basic-income-experiment/}, 2.000 personas desempleadas recibieron 560 € al mes; los efectos sobre el empleo fueron pequeños, y el bienestar y la confianza mejoraron. En {Stockton (California)|/timeline/#tl-stockton}, la proporción de receptores con empleo a tiempo completo pasó del 28 % al 40 % en un año, más del doble del aumento en el grupo de control. Ninguno de estos experimentos trataba sobre la IA. Sugieren que un suelo modesto no hace que la mayoría deje de trabajar, y que le da cierto margen para elegir."
+            "Los experimentos con transferencias de dinero aportan algunos datos sobre si la gente usa el dinero de esta manera. En {el estudio de OpenResearch de Sam Altman|/essays/openresearch-cash-study/}, 1.000 dólares al mes durante tres años llevaron a quienes los recibían a trabajar alrededor de 1,3 horas semanales menos que el grupo de control, mientras el empleo subía en ambos grupos. En {el experimento de Finlandia de 2017–2018|/essays/finland-basic-income-experiment/}, 2.000 personas desempleadas recibieron 560 € al mes; los efectos sobre el empleo fueron pequeños, y el bienestar y la confianza mejoraron. En {Stockton (California)|/timeline/#tl-stockton}, un informe del primer año, en 2021, dijo que el empleo a tiempo completo entre los receptores pasó del 28 % al 40 %, pero el análisis revisado por pares de 2023 no encontró diferencias de empleo estadísticamente significativas frente al grupo de control.[26] Ninguno de estos experimentos trataba sobre la IA. {Junto con otros estudios|/essays/does-cash-make-people-stop-working/}, sugieren que un suelo modesto no hace que la mayoría deje de trabajar, y que le da cierto margen para elegir."
           ],
           [
             "o",
@@ -24146,7 +24146,7 @@ module.exports = {
           ],
           [
             "p",
-            "Versuche mit Geldzahlungen liefern einige Belege dafür, ob Menschen das Geld so nutzen. In {Sam Altmans OpenResearch-Studie|/essays/openresearch-cash-study/} führten 1.000 Dollar im Monat über drei Jahre dazu, dass die Empfänger etwa 1,3 Stunden pro Woche weniger arbeiteten als die Kontrollgruppe, während die Beschäftigung in beiden Gruppen stieg. In {Finnlands Experiment von 2017–2018|/essays/finland-basic-income-experiment/} erhielten 2.000 Arbeitslose 560 € im Monat; die Beschäftigungseffekte waren gering, Wohlbefinden und Vertrauen verbesserten sich. In {Stockton (Kalifornien)|/timeline/#tl-stockton} stieg der Anteil der Empfänger in Vollzeit binnen eines Jahres von 28 % auf 40 %, mehr als doppelt so stark wie in der Kontrollgruppe. Keiner dieser Versuche drehte sich um KI. Sie legen nahe, dass ein bescheidener Boden die meisten Menschen nicht vom Arbeiten abhält und ihnen etwas Spielraum zur Wahl gibt."
+            "Versuche mit Geldzahlungen liefern einige Belege dafür, ob Menschen das Geld so nutzen. In {Sam Altmans OpenResearch-Studie|/essays/openresearch-cash-study/} führten 1.000 Dollar im Monat über drei Jahre dazu, dass die Empfänger etwa 1,3 Stunden pro Woche weniger arbeiteten als die Kontrollgruppe, während die Beschäftigung in beiden Gruppen stieg. In {Finnlands Experiment von 2017–2018|/essays/finland-basic-income-experiment/} erhielten 2.000 Arbeitslose 560 € im Monat; die Beschäftigungseffekte waren gering, Wohlbefinden und Vertrauen verbesserten sich. In {Stockton (Kalifornien)|/timeline/#tl-stockton} meldete ein Bericht zum ersten Jahr 2021, der Anteil der Empfänger in Vollzeit sei von 28 % auf 40 % gestiegen; die begutachtete Auswertung von 2023 fand jedoch keinen statistisch signifikanten Unterschied bei der Beschäftigung gegenüber der Kontrollgruppe.[26] Keiner dieser Versuche drehte sich um KI. {Zusammen mit anderen Studien|/essays/does-cash-make-people-stop-working/} legen sie nahe, dass ein bescheidener Boden die meisten Menschen nicht vom Arbeiten abhält und ihnen etwas Spielraum zur Wahl gibt."
           ],
           [
             "o",
@@ -24368,7 +24368,7 @@ module.exports = {
           ],
           [
             "p",
-            "تقدّم تجارب الدفع النقدي بعض الأدلة على ما إذا كان الناس يستخدمون المال بهذه الطريقة. ففي {دراسة ⁦OpenResearch⁩ التي يقف وراءها سام ألتمان|/essays/openresearch-cash-study/}، أدى دفع ⁦$1,000⁩ شهريًا لمدة ثلاث سنوات إلى أن يعمل المستفيدون أقل من المجموعة الضابطة بنحو 1.3 ساعة أسبوعيًا، بينما ارتفع التوظيف في المجموعتين. وفي {تجربة فنلندا في 2017–2018|/essays/finland-basic-income-experiment/}، تلقى 2,000 شخص عاطل عن العمل ⁦€560⁩ شهريًا؛ وكانت الآثار على التوظيف صغيرة، وتحسّن الرفاه والثقة. وفي {ستوكتون بولاية كاليفورنيا|/timeline/#tl-stockton}، ارتفعت نسبة المستفيدين العاملين بدوام كامل من 28% إلى 40% في عام واحد، أي أكثر من ضعف الزيادة في المجموعة الضابطة. لم تكن أي من هذه التجارب عن الذكاء الاصطناعي. لكنها توحي بأن الأرضية المتواضعة لا تجعل معظم الناس يتوقفون عن العمل، وبأنها تمنحهم بعض المجال للاختيار."
+            "تقدّم تجارب الدفع النقدي بعض الأدلة على ما إذا كان الناس يستخدمون المال بهذه الطريقة. ففي {دراسة ⁦OpenResearch⁩ التي يقف وراءها سام ألتمان|/essays/openresearch-cash-study/}، أدى دفع ⁦$1,000⁩ شهريًا لمدة ثلاث سنوات إلى أن يعمل المستفيدون أقل من المجموعة الضابطة بنحو 1.3 ساعة أسبوعيًا، بينما ارتفع التوظيف في المجموعتين. وفي {تجربة فنلندا في 2017–2018|/essays/finland-basic-income-experiment/}، تلقى 2,000 شخص عاطل عن العمل ⁦€560⁩ شهريًا؛ وكانت الآثار على التوظيف صغيرة، وتحسّن الرفاه والثقة. وفي {ستوكتون بولاية كاليفورنيا|/timeline/#tl-stockton}، قال تقرير السنة الأولى عام 2021 إن نسبة المستفيدين العاملين بدوام كامل ارتفعت من 28% إلى 40%، لكن التحليل المحكَّم الصادر عام 2023 لم يجد فرقًا دالًا إحصائيًا في التوظيف مقارنةً بالمجموعة الضابطة.[26] لم تكن أي من هذه التجارب عن الذكاء الاصطناعي. لكنها، {إلى جانب دراسات أخرى|/essays/does-cash-make-people-stop-working/}، توحي بأن الأرضية المتواضعة لا تجعل معظم الناس يتوقفون عن العمل، وبأنها تمنحهم بعض المجال للاختيار."
           ],
           [
             "o",
@@ -24565,6 +24565,11 @@ module.exports = {
           "n": 25,
           "label": "Hankook Ilbo — Editorial on President Lee Jae-myung’s call for a basic-income-like mechanism for AI excess profits (Jun 2026, in Korean)",
           "url": "https://www.hankookilbo.com/news/article/A2026061115000003881"
+        },
+        {
+          "n": 26,
+          "label": "Stacia West and Amy Castro — Impact of Guaranteed Income on Health, Finances, and Agency: Findings from the Stockton Randomized Controlled Trial (Journal of Urban Health 100(2), 2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10160253/"
         }
       ]
     },
@@ -26332,7 +26337,7 @@ module.exports = {
           ],
           [
             "p",
-            "In {Stockton|/timeline/#tl-stockton}, California (2019–2021), 125 residents received $500 a month for two years. In the first year, the share of recipients in full-time work rose from 28% to 40%, more than the rise of about 5 points in the control group.[14][15]"
+            "In {Stockton|/timeline/#tl-stockton}, California (2019–2021), 125 residents received $500 a month for two years. A first-year report in 2021 said the share of recipients in full-time work rose from 28% to 40%, more than the rise of about 5 points in the control group.[14][15] But the peer-reviewed analysis of the randomised trial (2023) found no statistically significant difference in employment between the two groups.[20] {Our essay comparing ten studies of cash and work|/essays/does-cash-make-people-stop-working/} explains the gap between the two findings."
           ],
           [
             "p",
@@ -26550,7 +26555,7 @@ module.exports = {
           ],
           [
             "p",
-            "アメリカの{ストックトン|/timeline/#tl-stockton}（2019〜2021年）では、住民125人に月500ドルを2年間配りました。最初の1年で、フルタイムで働く人の割合は受給者で28％から40％に増え、対照群の増え方（約5ポイント）を上回りました。[14][15]"
+            "アメリカの{ストックトン|/timeline/#tl-stockton}（2019〜2021年）では、住民125人に月500ドルを2年間配りました。2021年に出た1年目の報告では、フルタイムで働く人の割合が受給者で28％から40％に増え、対照群の増え方（約5ポイント）を上回ったとされました。[14][15] ただ、ランダム化試験の査読つき分析（2023年）では、就業について2つのグループの間に統計的に有意な差は見られませんでした。[20] 2つの結果の違いは、{10の研究を並べたエッセイ|/essays/does-cash-make-people-stop-working/}で説明しています。"
           ],
           [
             "p",
@@ -26768,7 +26773,7 @@ module.exports = {
           ],
           [
             "p",
-            "美国加州{斯托克顿|/timeline/#tl-stockton}（2019–2021 年）向 125 名居民每月发放 500 美元，为期两年。第一年，领取者中全职工作的比例从 28% 升到 40%，高于对照组约 5 个百分点的增幅。[14][15]"
+            "美国加州{斯托克顿|/timeline/#tl-stockton}（2019–2021 年）向 125 名居民每月发放 500 美元，为期两年。2021 年的第一年报告称，领取者中全职工作的比例从 28% 升到 40%，高于对照组约 5 个百分点的增幅。[14][15] 但对这项随机试验的同行评审分析（2023 年）发现，两组在就业上没有统计上显著的差异。[20] 两个结果为何不同，见{我们对比十项研究的文章|/essays/does-cash-make-people-stop-working/}。"
           ],
           [
             "p",
@@ -26986,7 +26991,7 @@ module.exports = {
           ],
           [
             "p",
-            "कैलिफ़ोर्निया के {स्टॉकटन|/timeline/#tl-stockton} (2019–2021) में 125 निवासियों को दो साल तक हर महीने $500 मिले। पहले साल में पाने वालों में पूर्णकालिक काम करने वालों का हिस्सा 28% से बढ़कर 40% हुआ, जो नियंत्रण समूह की लगभग 5 अंकों की बढ़त से ज़्यादा था।[14][15]"
+            "कैलिफ़ोर्निया के {स्टॉकटन|/timeline/#tl-stockton} (2019–2021) में 125 निवासियों को दो साल तक हर महीने $500 मिले। 2021 की पहले साल की रिपोर्ट के मुताबिक़ पाने वालों में पूर्णकालिक काम करने वालों का हिस्सा 28% से बढ़कर 40% हुआ, जो नियंत्रण समूह की लगभग 5 अंकों की बढ़त से ज़्यादा था।[14][15] लेकिन रैंडम ट्रायल के पीयर-रिव्यू किए गए विश्लेषण (2023) में दोनों समूहों के रोज़गार में कोई सांख्यिकीय रूप से अहम अंतर नहीं मिला।[20] दोनों नतीजों का फ़र्क़ {दस अध्ययनों की तुलना वाले हमारे लेख|/essays/does-cash-make-people-stop-working/} में समझाया गया है।"
           ],
           [
             "p",
@@ -27204,7 +27209,7 @@ module.exports = {
           ],
           [
             "p",
-            "En {Stockton|/timeline/#tl-stockton}, California (2019–2021), 125 residentes recibieron 500 $ al mes durante dos años. En el primer año, la proporción de beneficiarios con empleo a tiempo completo pasó del 28 % al 40 %, más que la subida de unos 5 puntos del grupo de control.[14][15]"
+            "En {Stockton|/timeline/#tl-stockton}, California (2019–2021), 125 residentes recibieron 500 $ al mes durante dos años. Un informe del primer año, en 2021, dijo que la proporción de beneficiarios con empleo a tiempo completo pasó del 28 % al 40 %, más que la subida de unos 5 puntos del grupo de control.[14][15] Pero el análisis revisado por pares del ensayo aleatorizado (2023) no encontró diferencias de empleo estadísticamente significativas entre los dos grupos.[20] {Nuestro ensayo que compara diez estudios sobre el dinero y el trabajo|/essays/does-cash-make-people-stop-working/} explica por qué los dos resultados difieren."
           ],
           [
             "p",
@@ -27422,7 +27427,7 @@ module.exports = {
           ],
           [
             "p",
-            "In {Stockton|/timeline/#tl-stockton}, Kalifornien (2019–2021), erhielten 125 Einwohner zwei Jahre lang 500 $ im Monat. Im ersten Jahr stieg der Anteil der Empfänger in Vollzeit von 28 % auf 40 %, stärker als in der Kontrollgruppe mit etwa 5 Punkten.[14][15]"
+            "In {Stockton|/timeline/#tl-stockton}, Kalifornien (2019–2021), erhielten 125 Einwohner zwei Jahre lang 500 $ im Monat. Ein Bericht zum ersten Jahr meldete 2021, der Anteil der Empfänger in Vollzeit sei von 28 % auf 40 % gestiegen, stärker als in der Kontrollgruppe mit etwa 5 Punkten.[14][15] Die begutachtete Auswertung der randomisierten Studie (2023) fand jedoch keinen statistisch signifikanten Unterschied bei der Beschäftigung zwischen beiden Gruppen.[20] Warum die beiden Ergebnisse auseinandergehen, erklärt {unser Essay, der zehn Studien zu Geld und Arbeit vergleicht|/essays/does-cash-make-people-stop-working/}."
           ],
           [
             "p",
@@ -27640,7 +27645,7 @@ module.exports = {
           ],
           [
             "p",
-            "في {ستوكتون|/timeline/#tl-stockton} بكاليفورنيا (2019–2021) تلقى 125 من السكان ⁦$500⁩ شهريًا لمدة عامين. وفي العام الأول ارتفعت نسبة المستفيدين العاملين بدوام كامل من 28% إلى 40%، أكثر من ارتفاع المجموعة الضابطة بنحو 5 نقاط.[14][15]"
+            "في {ستوكتون|/timeline/#tl-stockton} بكاليفورنيا (2019–2021) تلقى 125 من السكان ⁦$500⁩ شهريًا لمدة عامين. وقال تقرير السنة الأولى عام 2021 إن نسبة المستفيدين العاملين بدوام كامل ارتفعت من 28% إلى 40%، أكثر من ارتفاع المجموعة الضابطة بنحو 5 نقاط.[14][15] لكن التحليل المحكَّم للتجربة العشوائية (2023) لم يجد فرقًا دالًا إحصائيًا في التوظيف بين المجموعتين.[20] ونشرح سبب اختلاف النتيجتين في {مقالنا الذي يقارن عشر دراسات عن المال والعمل|/essays/does-cash-make-people-stop-working/}."
           ],
           [
             "p",
@@ -27791,6 +27796,11 @@ module.exports = {
           "n": 19,
           "label": "City of Lahti, Vitality and Wellbeing Committee — council initiative “Perustulokokeilu Lahden työllisyysalueelle” (basic income trial for the Lahti employment area), 10 Jun 2026 § 79 (PDF, in Finnish)",
           "url": "https://lahti-prod.oncloudos.com/kokous/20261302-4.PDF"
+        },
+        {
+          "n": 20,
+          "label": "Stacia West and Amy Castro — Impact of Guaranteed Income on Health, Finances, and Agency: Findings from the Stockton Randomized Controlled Trial (Journal of Urban Health 100(2), 2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10160253/"
         }
       ]
     },
@@ -36377,7 +36387,7 @@ module.exports = {
           ],
           [
             "p",
-            "賛否の両側に、出典つきの投稿が出てきたのも秋の特徴です。echomindseye は10月31日、ストックトンの実験（SEED）を取り上げました。125人に月500ドルを24か月、条件なしで配ったところ、最初の1年でフルタイムの仕事に就いた割合が、受給者の側で対照群の2倍以上の速さで増えた、という内容です。[20] 出典にしたペンシルベニア大学の発表とも、このサイトの{年表|/timeline/#tl-stockton}とも合っています。[21] ただし、これは最初の1年の結果です。"
+            "賛否の両側に、出典つきの投稿が出てきたのも秋の特徴です。echomindseye は10月31日、ストックトンの実験（SEED）を取り上げました。125人に月500ドルを24か月、条件なしで配ったところ、最初の1年でフルタイムの仕事に就いた割合が、受給者の側で対照群の2倍以上の速さで増えた、という内容です。[20] 出典にしたペンシルベニア大学の発表（1年目の速報）とは合っています。[21] ただし、これは最初の1年の速報値です。ランダム化試験の査読つき分析（2023年）では、就業についてグループ間に統計的に有意な差は見られず、このサイトの{年表|/timeline/#tl-stockton}もそう記しています。[26] 2つの数字の違いは{お金と仕事についてのエッセイ|/essays/does-cash-make-people-stop-working/}で説明しています。"
           ],
           [
             "p",
@@ -36531,7 +36541,7 @@ module.exports = {
           ],
           [
             "p",
-            "Another change this autumn: both sides now cite sources. On 31 October, echomindseye wrote about Stockton’s SEED: $500 a month for 24 months to 125 people, with no conditions, and in the first year recipients moved into full-time work at more than twice the rate of the control group.[20] That matches the University of Pennsylvania release it cites and our {timeline|/timeline/#tl-stockton}.[21] It is a first-year result."
+            "Another change this autumn: both sides now cite sources. On 31 October, echomindseye wrote about Stockton’s SEED: $500 a month for 24 months to 125 people, with no conditions, and in the first year recipients moved into full-time work at more than twice the rate of the control group.[20] That matches the University of Pennsylvania release it cites, on SEED’s first-year results.[21] But it is a preliminary first-year figure: the peer-reviewed analysis of the randomised trial (2023) found no statistically significant difference in employment between the groups, as our {timeline|/timeline/#tl-stockton} notes.[26] {Our essay on cash and work|/essays/does-cash-make-people-stop-working/} explains the difference."
           ],
           [
             "p",
@@ -36685,7 +36695,7 @@ module.exports = {
           ],
           [
             "p",
-            "今年秋天的另一个变化是，正反双方都开始附上出处。10 月 31 日，echomindseye 写了斯托克顿的 SEED 实验：向 125 人无条件发放每月 500 美元，为期 24 个月；第一年里，领钱的人转为全职工作的比例是对照组的两倍多。[20] 这与它引用的宾夕法尼亚大学发布的消息一致，也与本站的{年表|/timeline/#tl-stockton}一致。[21] 不过这是第一年的结果。"
+            "今年秋天的另一个变化是，正反双方都开始附上出处。10 月 31 日，echomindseye 写了斯托克顿的 SEED 实验：向 125 人无条件发放每月 500 美元，为期 24 个月；第一年里，领钱的人转为全职工作的比例是对照组的两倍多。[20] 这与它引用的宾夕法尼亚大学发布的消息（第一年的初步结果）一致。[21] 不过这只是第一年的初步数字：对这项随机试验的同行评审分析（2023 年）发现，两组在就业上没有统计上显著的差异，本站的{年表|/timeline/#tl-stockton}也这样记录。[26] 两个数字为何不同，见{我们关于发钱与工作的文章|/essays/does-cash-make-people-stop-working/}。"
           ],
           [
             "p",
@@ -36839,7 +36849,7 @@ module.exports = {
           ],
           [
             "p",
-            "इस पतझड़ एक और बदलाव दिखा: दोनों पक्ष अब स्रोत देते हैं। 31 अक्टूबर को echomindseye ने स्टॉकटन के SEED के बारे में लिखा: 125 लोगों को 24 महीने तक हर महीने $500, बिना किसी शर्त; पहले साल में प्राप्तकर्ता नियंत्रण समूह की तुलना में दोगुने से ज़्यादा दर से पूर्णकालिक काम में गए।[20] यह उसके दिए पेंसिल्वेनिया विश्वविद्यालय के बयान से भी मेल खाता है और हमारी {समयरेखा|/timeline/#tl-stockton} से भी।[21] यह पहले साल का नतीजा है।"
+            "इस पतझड़ एक और बदलाव दिखा: दोनों पक्ष अब स्रोत देते हैं। 31 अक्टूबर को echomindseye ने स्टॉकटन के SEED के बारे में लिखा: 125 लोगों को 24 महीने तक हर महीने $500, बिना किसी शर्त; पहले साल में प्राप्तकर्ता नियंत्रण समूह की तुलना में दोगुने से ज़्यादा दर से पूर्णकालिक काम में गए।[20] यह उसके दिए पेंसिल्वेनिया विश्वविद्यालय के बयान (पहले साल के शुरुआती नतीजे) से मेल खाता है।[21] लेकिन यह पहले साल का शुरुआती आँकड़ा है: रैंडम ट्रायल के पीयर-रिव्यू किए गए विश्लेषण (2023) में समूहों के रोज़गार में कोई सांख्यिकीय रूप से अहम अंतर नहीं मिला, जैसा हमारी {समयरेखा|/timeline/#tl-stockton} में भी लिखा है।[26] दोनों आँकड़ों का फ़र्क़ {पैसे और काम पर हमारे लेख|/essays/does-cash-make-people-stop-working/} में समझाया गया है।"
           ],
           [
             "p",
@@ -36993,7 +37003,7 @@ module.exports = {
           ],
           [
             "p",
-            "Otro cambio de este otoño: ambos lados citan ya sus fuentes. El 31 de octubre, echomindseye escribió sobre el SEED de Stockton: 500 dólares al mes durante 24 meses a 125 personas, sin condiciones, y en el primer año los beneficiarios pasaron a empleo a tiempo completo a más del doble del ritmo que el grupo de control.[20] Eso coincide con el comunicado de la Universidad de Pensilvania que cita y con nuestra {cronología|/timeline/#tl-stockton}.[21] Es un resultado del primer año."
+            "Otro cambio de este otoño: ambos lados citan ya sus fuentes. El 31 de octubre, echomindseye escribió sobre el SEED de Stockton: 500 dólares al mes durante 24 meses a 125 personas, sin condiciones, y en el primer año los beneficiarios pasaron a empleo a tiempo completo a más del doble del ritmo que el grupo de control.[20] Eso coincide con el comunicado de la Universidad de Pensilvania que cita, sobre los resultados del primer año.[21] Pero es una cifra preliminar del primer año: el análisis revisado por pares del ensayo aleatorizado (2023) no encontró diferencias de empleo estadísticamente significativas entre los grupos, como recoge nuestra {cronología|/timeline/#tl-stockton}.[26] {Nuestro ensayo sobre el dinero y el trabajo|/essays/does-cash-make-people-stop-working/} explica la diferencia."
           ],
           [
             "p",
@@ -37147,7 +37157,7 @@ module.exports = {
           ],
           [
             "p",
-            "Eine weitere Veränderung in diesem Herbst: Beide Seiten nennen jetzt Quellen. Am 31. Oktober schrieb echomindseye über SEED in Stockton: 500 Dollar im Monat für 24 Monate an 125 Menschen, ohne Bedingungen, und im ersten Jahr fanden die Empfänger mehr als doppelt so häufig eine Vollzeitstelle wie die Kontrollgruppe.[20] Das passt zur zitierten Mitteilung der University of Pennsylvania und zu unserer {Zeitleiste|/timeline/#tl-stockton}.[21] Es ist ein Ergebnis aus dem ersten Jahr."
+            "Eine weitere Veränderung in diesem Herbst: Beide Seiten nennen jetzt Quellen. Am 31. Oktober schrieb echomindseye über SEED in Stockton: 500 Dollar im Monat für 24 Monate an 125 Menschen, ohne Bedingungen, und im ersten Jahr fanden die Empfänger mehr als doppelt so häufig eine Vollzeitstelle wie die Kontrollgruppe.[20] Das passt zur zitierten Mitteilung der University of Pennsylvania über die Ergebnisse des ersten Jahres.[21] Es ist aber eine vorläufige Zahl aus dem ersten Jahr: Die begutachtete Auswertung der randomisierten Studie (2023) fand keinen statistisch signifikanten Unterschied bei der Beschäftigung zwischen den Gruppen, wie auch unsere {Zeitleiste|/timeline/#tl-stockton} festhält.[26] Den Unterschied erklärt {unser Essay über Geld und Arbeit|/essays/does-cash-make-people-stop-working/}."
           ],
           [
             "p",
@@ -37301,7 +37311,7 @@ module.exports = {
           ],
           [
             "p",
-            "وتغيّر آخر هذا الخريف: صار الطرفان يذكران مصادرهما. في 31 أكتوبر كتب ⁦echomindseye⁩ عن تجربة ⁦SEED⁩ في ستوكتون: ⁦$500⁩ شهريًا لمدة 24 شهرًا لـ125 شخصًا دون شروط، وفي السنة الأولى انتقل المستفيدون إلى عمل بدوام كامل بأكثر من ضعف معدل المجموعة الضابطة.[20] وهذا يطابق بيان جامعة بنسلفانيا الذي استشهد به، كما يطابق {خطنا الزمني|/timeline/#tl-stockton}.[21] لكنها نتيجة السنة الأولى."
+            "وتغيّر آخر هذا الخريف: صار الطرفان يذكران مصادرهما. في 31 أكتوبر كتب ⁦echomindseye⁩ عن تجربة ⁦SEED⁩ في ستوكتون: ⁦$500⁩ شهريًا لمدة 24 شهرًا لـ125 شخصًا دون شروط، وفي السنة الأولى انتقل المستفيدون إلى عمل بدوام كامل بأكثر من ضعف معدل المجموعة الضابطة.[20] وهذا يطابق بيان جامعة بنسلفانيا الذي استشهد به عن نتائج السنة الأولى.[21] لكنه رقم أولي من السنة الأولى: فالتحليل المحكَّم للتجربة العشوائية (2023) لم يجد فرقًا دالًا إحصائيًا في التوظيف بين المجموعتين، كما يذكر {خطنا الزمني|/timeline/#tl-stockton}.[26] ونشرح الفرق بين الرقمين في {مقالنا عن المال والعمل|/essays/does-cash-make-people-stop-working/}."
           ],
           [
             "p",
@@ -37443,6 +37453,11 @@ module.exports = {
           "n": 25,
           "label": "NBER Working Paper 35836 — Consumption, Savings, and Earnings Responses to Financial Windfalls (Oct 2026)",
           "url": "https://www.nber.org/papers/w35836"
+        },
+        {
+          "n": 26,
+          "label": "Stacia West and Amy Castro — Impact of Guaranteed Income on Health, Finances, and Agency: Findings from the Stockton Randomized Controlled Trial (Journal of Urban Health 100(2), 2023)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10160253/"
         }
       ]
     },
