@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<!-- 「月7万円のベーシックインカム、わが家は得？損？」short (ja). Filled in by brand/shorts/render.js from the table in the
+     takenaka-70000-yen-basic-income essay. Scenes cut in and out on a fixed timeline; window.setT(t) draws any moment. -->
+<style>
+/*FONTS*/
+:root{--paper:#0E1320;--surface:#161D2D;--ink:#EEF1FF;--muted:#A9B2D8;--line:#2E3852;--gold:#FFD66B;--pos:#6CF0B0;--neg:#FF8A78;
+  --f-display:"Dela Gothic One",sans-serif;--f-body:"Zen Kaku Gothic New",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--paper)}
+body{position:relative;color:var(--ink);font-family:var(--f-body);font-weight:700;
+  background:radial-gradient(80% 40% at 100% 0%,#2A2160 0%,transparent 70%),radial-gradient(70% 35% at 0% 100%,#0F3050 0%,transparent 70%),var(--paper)}
+.col{position:absolute;left:60px;top:236px;width:856px;height:1292px}
+.scene{position:absolute;left:0;top:0;width:856px;height:1180px;display:flex;flex-direction:column;justify-content:center;opacity:0}
+.d{font-family:var(--f-display);font-weight:400}
+.pos{color:var(--pos)}.neg{color:var(--neg)}.zero{color:var(--ink)}.gold{color:var(--gold)}
+/* hook */
+.hk h1{font-family:var(--f-display);font-weight:400;font-size:82px;line-height:1.2}
+.hk h1 span{display:block;white-space:nowrap}
+.hk .sub{margin-top:40px;font-size:52px;line-height:1.4;color:var(--muted)}
+/* premise */
+.pr .a{font-size:60px}
+.pr .b{font-size:180px;line-height:1.1;color:var(--gold);white-space:nowrap}
+.pr .l{margin-top:30px;font-size:50px;line-height:1.4}
+.pr .n{margin-top:40px;font-size:40px;color:var(--muted);white-space:nowrap}
+/* household cards */
+.card{background:var(--surface);border:3px solid var(--line);border-radius:36px;padding:44px 44px 48px}
+.card .k{display:flex;align-items:center;gap:18px;font-size:40px;color:var(--muted);white-space:nowrap}
+.card .k b{font-family:var(--f-display);font-weight:400;color:#141A3A;background:var(--gold);border-radius:999px;padding:4px 24px 6px;font-size:42px}
+.card h2{margin-top:26px;font-family:var(--f-display);font-weight:400;font-size:72px;line-height:1.22}
+.card h2 span{display:block;white-space:nowrap}
+.rows{margin-top:30px;display:grid;gap:10px}
+.rows p{font-size:40px;display:flex;align-items:baseline;justify-content:space-between;gap:24px;white-space:nowrap}
+.rows span{font-size:40px;color:var(--muted)}
+.rows b{font-size:56px}
+.card hr{border:0;border-top:3px solid var(--line);margin:30px 0 24px}
+.card .dl{font-size:44px;color:var(--muted)}
+.card .res{margin-top:6px;font-family:var(--f-display);font-weight:400;font-size:92px;line-height:1.2}
+.card .res span{display:block;white-space:nowrap}
+.card .note{margin-top:18px;font-size:44px;color:var(--gold);white-space:nowrap}
+/* summary */
+.sm .h{font-size:56px;color:var(--muted)}
+.sm .blk{margin-top:44px}
+.sm .pill{display:inline-block;font-family:var(--f-display);font-weight:400;font-size:60px;line-height:1.2;padding:10px 32px 14px;border-radius:999px;color:#141A3A}
+.sm .pill.pos{background:var(--pos)}.sm .pill.neg{background:var(--neg)}
+.sm .tx{margin-top:22px;font-size:52px;line-height:1.4;word-break:auto-phrase}
+/* cost */
+.co .a{font-size:56px}
+.co .b{font-size:118px;line-height:1.15;color:var(--gold);white-space:nowrap}
+.co .c{margin-top:20px;font-size:52px;line-height:1.4}
+.co .d2{margin-top:44px;font-size:52px;line-height:1.4;color:var(--neg)}
+/* end */
+.en .q{font-family:var(--f-display);font-weight:400;font-size:96px;line-height:1.15;white-space:nowrap}
+.en .cta{margin-top:56px;font-size:56px;line-height:1.4;color:var(--gold);padding:30px 36px;border:4px solid var(--gold);border-radius:28px}
+.en .br{margin-top:72px;display:flex;align-items:center;gap:22px}
+.en .wm{font-size:68px;font-weight:900;line-height:1.1}
+.en .tag{margin-top:14px;font-size:44px;color:var(--muted)}
+.en .url{margin-top:28px;font-size:40px;white-space:nowrap}
+.src{position:absolute;left:0;bottom:0;font-size:40px;line-height:1.25;color:var(--muted);font-weight:500;white-space:nowrap}
+</style>
+</head><body>
+<div class="col" id="col"><p class="src t" id="src"></p></div>
+<script>
+/*DATA*/
+(function () {
+  const D = window.DATA, col = document.getElementById('col');
+  const add = (cls, a, b, html) => col.insertAdjacentHTML('beforeend', `<div class="scene ${cls}" data-a="${a}" data-b="${b}">${html}</div>`);
+  // timeline (seconds)
+  let t = 0;
+  add('hk', -1, t += 2.0, `<h1 class="t st"><span>月7万円の</span><span>ベーシックインカム、</span><span>わが家は<em class="pos" style="font-style:normal">得</em>？<em class="neg" style="font-style:normal">損</em>？</span></h1>
+    <p class="sub t st">${D.hook.sub}</p>`);
+  add('pr', t, t += 2.2, `<p class="a t st">${D.premise.a}</p><p class="b d t st">${D.premise.b}</p>
+    ${D.premise.lines.map(l => `<p class="l t st">${l}</p>`).join('')}<p class="n t st">${D.premise.note}</p>`);
+  const durs = [2.4, 2.6, 3.0, 3.0, 2.8];
+  D.homes.forEach((h, i) => {
+    add('hh', t, t += durs[i], `<div class="card">
+      <p class="k t st"><b>${i + 1} / ${D.homes.length}</b><span>月額・増税の前</span></p>
+      <h2 class="t st">${h.lab.map(s => `<span>${s}</span>`).join('')}</h2>
+      <div class="rows st"><p class="t"><span>いまの給付</span><b>${h.now}</b></p><p class="t"><span>ベーシックインカム</span><b>${h.bi}</b></p></div>
+      <hr class="st"><p class="dl t st">差し引き</p>
+      <p class="res t st">${h.parts.map(p => `<span class="${p.c}">${p.s}</span>`).join('')}</p>
+      ${h.note ? `<p class="note t st">${h.note}</p>` : ''}</div>`);
+  });
+  add('sm', t, t += 2.4, `<p class="h t st">まとめると</p>
+    <div class="blk st"><p class="pill pos t">${D.sum.good}</p><p class="tx t">${D.sum.goodT}</p></div>
+    <div class="blk st"><p class="pill neg t">${D.sum.bad}</p>${D.sum.badT.map(s => `<p class="tx t">${s}</p>`).join('')}</div>`);
+  add('co', t, t += 2.1, `<p class="a t st">${D.cost.a}</p><p class="b d t st">${D.cost.b}</p><p class="c t st">${D.cost.c}</p><p class="d2 t st">${D.cost.d}</p>`);
+  add('en', t, 99, `<p class="q t st">${D.end.q}</p><p class="cta t st">${D.end.cta}</p>
+    <div class="br st"><!--BENTO--><p class="wm t">${D.end.brand}</p></div><p class="tag t st">${D.end.tag}</p><p class="url t st">${D.url}</p>`);
+  document.getElementById('src').innerHTML = D.src.join('<br>');
+})();
+
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const outC = x => 1 - Math.pow(1 - x, 3);
+const inC = x => x * x * x;
+let S = null;
+
+window.init = function () {
+  S = [...document.querySelectorAll('.scene')].map(el => ({ el, a: +el.dataset.a, b: +el.dataset.b, st: [...el.querySelectorAll('.st')] }));
+  window.setT(0);
+  return true;
+};
+
+window.setT = function (t) {
+  for (const s of S) {
+    const pin = s.a < 0 ? 1 : outC(seg(t, s.a, s.a + 0.28));
+    const pout = inC(seg(t, s.b - 0.2, s.b));
+    s.el.style.opacity = t < s.a || t >= s.b ? 0 : 1;
+    s.el.style.transform = `translateX(${((1 - pin) * 90 - pout * 90).toFixed(2)}px)`;
+    s.el.style.opacity = t < s.a || t >= s.b ? 0 : Math.min(pin, 1 - pout);
+    // the hook is on screen from the first frame; other scenes stagger their lines in
+    s.st.forEach((c, i) => {
+      const a = s.a < 0 ? -0.3 + i * 0.12 : s.a + 0.06 + i * 0.07;
+      const p = outC(seg(t, a, a + 0.32));
+      c.style.opacity = p;
+      c.style.transform = `translateY(${((1 - p) * 26).toFixed(2)}px)`;
+    });
+  }
+};
+
+window.audit = function (safe) {
+  const out = [];
+  const vis = el => { for (let n = el; n && n !== document.body; n = n.parentElement) if (parseFloat(getComputedStyle(n).opacity) < 0.02) return false; return true; };
+  for (const el of document.querySelectorAll('.t')) {
+    if (!vis(el)) continue;
+    const r = el.getBoundingClientRect();
+    const range = document.createRange(); range.selectNodeContents(el);
+    const tr = range.getBoundingClientRect();
+    const box = { l: Math.min(r.left, tr.left), r: Math.max(tr.right, el.scrollWidth > el.clientWidth + 1 ? r.left + el.scrollWidth : tr.right), t: tr.top, b: tr.bottom };
+    if (box.l < safe.left - .5 || box.r > safe.right + .5 || box.t < safe.top - .5 || box.b > safe.bottom + .5)
+      out.push(`${el.className}: ${Math.round(box.l)},${Math.round(box.t)}-${Math.round(box.r)},${Math.round(box.b)} "${el.textContent.slice(0, 30)}"`);
+    const card = el.closest('.card');
+    if (card) { const cr = card.getBoundingClientRect(); if (box.r > cr.right - 24 || box.l < cr.left + 24) out.push(`${el.className}: outside its card "${el.textContent.slice(0, 30)}"`); }
+    for (const c of [el, ...el.querySelectorAll('*')]) {
+      const fs = parseFloat(getComputedStyle(c).fontSize);
+      if (fs < 40 && c.textContent.trim()) out.push(`${el.className}: font ${fs}px`);
+    }
+  }
+  return out;
+};
+</script>
+</body></html>

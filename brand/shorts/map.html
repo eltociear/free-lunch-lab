@@ -1,0 +1,226 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- World map short (ja / en). Filled in by brand/shorts/render.js: fonts, the bento mark and window.DATA.
+     Timeline (seconds): 0 hook question / 1.8-8.6 bands fill in, legend counts up / 9.6-18.0 four callouts with zoom /
+     18.4- end card. window.setT(t) draws any moment; nothing runs on its own. -->
+<style>
+/*FONTS*/
+:root{--paper:#0E1320;--paper-2:#1D1733;--surface:#161D2D;--ink:#EEF1FF;--muted:#A9B2D8;--line:#2A3448;--gold:#FFD66B;--neg:#FF9A7A;
+  --f-display:"Dela Gothic One",sans-serif;--f-body:"Zen Kaku Gothic New",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--paper)}
+body{position:relative;color:var(--ink);font-family:var(--f-body);font-weight:700;
+  background:radial-gradient(80% 40% at 100% 0%,#2A2160 0%,transparent 70%),radial-gradient(70% 35% at 0% 100%,#0F3050 0%,transparent 70%),var(--paper)}
+.col{position:absolute;left:60px;top:236px;width:856px;height:1292px;display:flex;flex-direction:column}
+h1{font-family:var(--f-display);font-weight:400;font-size:84px;line-height:1.14;letter-spacing:.01em}
+html[lang=en] h1{font-size:68px;line-height:1.12}
+html[lang=en] .mapbox{margin-top:12px}
+html[lang=en] .panel{height:268px;margin-top:10px}
+h1 span{display:block;white-space:nowrap}
+h1 em,.end em{font-style:normal;color:var(--gold)}
+.sub{margin-top:18px;font-size:44px;line-height:1.35;color:var(--muted);font-weight:700;word-break:auto-phrase}
+html[lang=en] .sub{font-size:40px;line-height:1.3;margin-top:14px}
+.mapbox{margin:18px 0 0 -60px;width:1080px;height:480px;position:relative;flex:none}
+.wmap svg{display:block}
+.wmap #base path,.wmap #base circle{fill:#222A3E;stroke:#0E1320;stroke-width:.8;vector-effect:non-scaling-stroke}
+.wmap #top path,.wmap #top circle{stroke-width:.8;vector-effect:non-scaling-stroke}
+.wmap #top .on{stroke:#FFFFFF;stroke-width:3}
+#ring{fill:none;stroke:#FFFFFF;stroke-width:4;vector-effect:non-scaling-stroke;opacity:0}
+.panel{position:relative;height:280px;margin-top:16px;flex:none}
+.panel>div{position:absolute;inset:0}
+.lh{font-size:40px;line-height:1.2;color:var(--muted);white-space:nowrap}
+.lg{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;column-gap:36px;row-gap:14px}
+.lg li{list-style:none;display:flex;align-items:center;gap:14px;height:58px;font-size:40px;white-space:nowrap}
+.lg .wm-sw{width:52px;height:34px;border-radius:6px}
+.lg b{margin-left:auto;font-family:var(--f-display);font-weight:400;font-size:48px;color:var(--gold);font-variant-numeric:tabular-nums}
+#calls>.call{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center}
+.cn{display:flex;align-items:center;gap:18px;font-family:var(--f-display);font-weight:400;font-size:60px;line-height:1.1;white-space:nowrap}
+.cn i{width:40px;height:40px;border-radius:8px;flex:none}
+.cv{display:flex;align-items:baseline;gap:18px;margin-top:6px;white-space:nowrap;font-size:48px}
+.cv .pre,.cv .post{font-size:48px;color:var(--muted)}
+.cv b{font-family:var(--f-display);font-weight:400;font-size:150px;line-height:1.05;color:var(--gold)}
+.cv b.over{color:var(--neg)}
+.co{font-size:44px;line-height:1.2;color:var(--neg);white-space:nowrap}
+.src{margin-top:auto;font-size:40px;line-height:1.2;color:var(--muted);font-weight:500;white-space:nowrap}
+.end{position:absolute;inset:0;opacity:0;background:radial-gradient(80% 40% at 100% 0%,#2A2160 0%,transparent 70%),radial-gradient(70% 35% at 0% 100%,#0F3050 0%,transparent 70%),var(--paper)}
+.end .in{position:absolute;left:60px;top:236px;width:856px;height:1292px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.end .q{font-family:var(--f-display);font-weight:400;font-size:96px;line-height:1.15}
+html[lang=en] .end .q{font-size:80px}
+.end .n{margin-top:24px;font-size:48px;color:var(--muted);line-height:1.3}
+.end .cta{margin-top:56px;font-size:60px;line-height:1.35;color:var(--gold);padding:30px 36px;border:4px solid var(--gold);border-radius:28px;width:100%}
+.end .br{margin-top:72px;display:flex;align-items:center;gap:22px}
+.end .wm{font-size:68px;font-weight:900;line-height:1.1}
+html[lang=en] .end .wm{font-family:var(--f-display);font-weight:400;font-size:64px}
+.end .tag{margin-top:14px;font-size:44px;color:var(--muted)}
+.end .url{margin-top:28px;font-size:40px;color:var(--ink);font-weight:700;white-space:nowrap}
+/* map colours from src/map.js */
+</style>
+<style id="mapcss"></style>
+</head><body>
+<div class="col">
+  <h1 id="hl" class="t"></h1>
+  <p id="sub" class="sub t"></p>
+  <div class="mapbox wmap" id="mapbox"></div>
+  <div class="panel">
+    <div id="legend"><p class="lh t" id="lh"></p><ul class="lg" id="lg"></ul></div>
+    <div id="calls"></div>
+  </div>
+  <p class="src t" id="src"></p>
+</div>
+<div class="end" id="end"><div class="in">
+  <p class="q t" id="eq"></p>
+  <p class="n t" id="en"></p>
+  <p class="cta t" id="ecta"></p>
+  <div class="br" id="ebr"><!--BENTO--><div><p class="wm t" id="ewm"></p></div></div>
+  <p class="tag t" id="etag"></p>
+  <p class="url t" id="eurl"></p>
+</div></div>
+<script>
+/*DATA*/
+(function () {
+  const D = window.DATA, $ = id => document.getElementById(id);
+  document.documentElement.lang = D.lang;
+  $('mapcss').textContent = D.css;
+  $('hl').innerHTML = D.hl.map(l => `<span>${l}</span>`).join('');
+  $('sub').textContent = D.sub;
+  $('mapbox').innerHTML = D.svg;
+  $('lh').textContent = D.legendH;
+  $('lg').innerHTML = D.bands.map((b, i) => `<li><i class="wm-sw b${i}"></i><span>${b.label}</span><b>0</b></li>`).join('');
+  $('calls').innerHTML = D.callouts.map(c => `<div class="call"><p class="cn t"><i style="background:${c.color}"></i><span>${c.name}</span></p>
+    <p class="cv t">${D.pre ? `<span class="pre">${D.pre}</span>` : ''}<b class="${c.over ? 'over' : ''}">${c.pct}</b>${D.post ? `<span class="post">${D.post}</span>` : ''}</p>
+    ${c.over ? `<p class="co t">${D.overNote}</p>` : ''}</div>`).join('');
+  $('src').textContent = D.src;
+  $('eq').textContent = D.end.q; $('en').textContent = D.end.n; $('ecta').innerHTML = D.end.cta;
+  $('ewm').innerHTML = D.end.brand; $('etag').innerHTML = D.end.tag; $('eurl').textContent = D.url;
+})();
+
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const outC = x => 1 - Math.pow(1 - x, 3);
+const io = x => (x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+const lerp = (a, b, x) => a + (b - a) * x;
+
+const BAND0 = 1.8, BANDSTEP = 1.0, CALL0 = 9.6, CALLD = 2.1, CALLEND = CALL0 + 4 * CALLD, END0 = CALLEND + 0.4;
+let S = null;
+
+window.init = function () {
+  const D = window.DATA;
+  const svg = document.getElementById('map');
+  const top = [...svg.querySelectorAll('#top path, #top circle')].map(el => {
+    const b = el.getBBox();
+    return { el, id: el.dataset.id, bin: Number(el.getAttribute('class').slice(1)), x: b.x + b.width / 2 };
+  });
+  for (let i = 0; i < 6; i++) {
+    const list = top.filter(e => e.bin === i).sort((a, b) => a.x - b.x);
+    list.forEach((e, k) => { e.delay = list.length > 1 ? (k / (list.length - 1)) * 0.5 : 0; });
+  }
+  // focus = centre of the largest sub-polygon (so the US view centres on the lower 48, not Alaska)
+  const focus = c => {
+    const el = svg.querySelector(`#top [data-id="${c.id}"]`);
+    let best = null;
+    for (const p of el.getAttribute('d').split(/(?=M)/)) {
+      const n = p.match(/-?[\d.]+/g).map(Number), xs = n.filter((_, i) => i % 2 === 0), ys = n.filter((_, i) => i % 2);
+      const b = [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)], a = (b[2] - b[0]) * (b[3] - b[1]);
+      if (!best || a > best.a) best = { a, b };
+    }
+    return { cx: (best.b[0] + best.b[2]) / 2, cy: (best.b[1] + best.b[3]) / 2, w: c.zoom, r: Math.max(best.b[2] - best.b[0], best.b[3] - best.b[1]) / 2 };
+  };
+  const full = { cx: 500, cy: 222, w: 1000 };
+  const views = D.callouts.map(focus);
+  const keys = [[CALL0, full]];
+  views.forEach((v, k) => { keys.push([CALL0 + k * CALLD + 0.65, v]); keys.push([CALL0 + (k + 1) * CALLD, v]); });
+  keys.push([CALLEND + 0.6, full]);
+  S = { svg, top, views, full, keys, li: [...document.querySelectorAll('#lg li')], calls: [...document.querySelectorAll('.call')],
+    ring: document.getElementById('ring'), hl: [...document.querySelectorAll('#hl span')] };
+  window.setT(0);
+  return true;
+};
+
+function viewAt(t) {
+  const k = S.keys;
+  if (t <= k[0][0]) return k[0][1];
+  for (let i = 1; i < k.length; i++) {
+    if (t <= k[i][0]) {
+      const [t0, a] = k[i - 1], [t1, b] = k[i], x = io(seg(t, t0, t1));
+      return { cx: lerp(a.cx, b.cx, x), cy: lerp(a.cy, b.cy, x), w: Math.exp(lerp(Math.log(a.w), Math.log(b.w), x)) };
+    }
+  }
+  return k[k.length - 1][1];
+}
+
+const op = (el, o, dy = 0) => { el.style.opacity = o; el.style.transform = dy ? `translateY(${dy}px)` : ''; };
+
+window.setT = function (t) {
+  const D = window.DATA;
+  // hook: the question is on screen from the first frame
+  S.hl.forEach((s, i) => { op(s, 1); });
+  const sp = outC(seg(t, 0.5, 0.95)); op(document.getElementById('sub'), sp, (1 - sp) * 18);
+  document.getElementById('base').style.opacity = 0.35 + 0.65 * outC(seg(t, 0.1, 0.9));
+  // bands
+  const dim = io(seg(t, CALL0, CALL0 + 0.45)) * (1 - io(seg(t, CALLEND, CALLEND + 0.5)));
+  const k = t >= CALL0 && t < CALLEND ? Math.floor((t - CALL0) / CALLD) : -1;
+  const target = k >= 0 ? D.callouts[k].id : null;
+  for (const e of S.top) {
+    const s = BAND0 + e.bin * BANDSTEP + e.delay;
+    let o = outC(seg(t, s, s + 0.35));
+    const on = e.id === target;
+    if (!on) o *= 1 - 0.62 * dim;
+    e.el.style.opacity = o;
+    e.el.classList.toggle('on', on && t >= CALL0 + k * CALLD + 0.3);
+  }
+  // legend
+  const lgOut = 1 - io(seg(t, CALL0 - 0.1, CALL0 + 0.25));
+  op(document.getElementById('lh'), outC(seg(t, 1.4, 1.8)) * lgOut);
+  S.li.forEach((li, i) => {
+    const s = BAND0 + i * BANDSTEP, p = outC(seg(t, s - 0.1, s + 0.25));
+    op(li, p * lgOut, (1 - p) * 14);
+    li.querySelector('b').textContent = Math.round(D.bands[i].n * outC(seg(t, s, s + 0.85)));
+  });
+  // callouts
+  S.calls.forEach((c, i) => {
+    const s = CALL0 + i * CALLD, e = s + CALLD;
+    const pin = outC(seg(t, s + 0.25, s + 0.6));
+    const pout = i === S.calls.length - 1 ? io(seg(t, CALLEND, CALLEND + 0.4)) : io(seg(t, e - 0.22, e));
+    op(c, pin * (1 - pout), (1 - pin) * 34 - pout * 24);
+  });
+  // map view + ring
+  const v = viewAt(t), h = v.w * 480 / 1080;
+  S.svg.setAttribute('viewBox', `${(v.cx - v.w / 2).toFixed(3)} ${(v.cy - h / 2).toFixed(3)} ${v.w.toFixed(3)} ${h.toFixed(3)}`);
+  if (k >= 0) {
+    const f = S.views[k], s = CALL0 + k * CALLD;
+    const ro = outC(seg(t, s + 0.5, s + 0.8)) * (1 - seg(t, s + CALLD - 0.2, s + CALLD));
+    S.ring.setAttribute('cx', f.cx); S.ring.setAttribute('cy', f.cy);
+    S.ring.setAttribute('r', Math.max(f.r * 1.45, v.w * 0.055) * (1.15 - 0.15 * outC(seg(t, s + 0.5, s + 0.9))));
+    S.ring.style.opacity = ro;
+  } else S.ring.style.opacity = 0;
+  // end card
+  const ep = io(seg(t, END0, END0 + 0.6));
+  document.getElementById('end').style.opacity = ep;
+  ['eq', 'en', 'ecta', 'ebr', 'etag', 'eurl'].forEach((id, i) => {
+    const p = outC(seg(t, END0 + 0.2 + i * 0.16, END0 + 0.6 + i * 0.16)); op(document.getElementById(id), p, (1 - p) * 30);
+  });
+};
+
+// Text elements must sit inside the safe zone and not overflow (ignores anything invisible)
+window.audit = function (safe) {
+  const out = [];
+  const vis = el => { for (let n = el; n && n !== document.body; n = n.parentElement) if (parseFloat(getComputedStyle(n).opacity) < 0.02) return false; return true; };
+  for (const el of document.querySelectorAll('.t')) {
+    if (!vis(el)) continue;
+    const r = el.getBoundingClientRect();
+    // measure the text itself, not the block box
+    const range = document.createRange(); range.selectNodeContents(el);
+    const tr = range.getBoundingClientRect();
+    const box = { l: Math.min(r.left, tr.left), r: Math.max(tr.right, el.scrollWidth > el.clientWidth + 1 ? r.left + el.scrollWidth : tr.right), t: tr.top, b: tr.bottom };
+    if (box.l < safe.left - .5 || box.r > safe.right + .5 || box.t < safe.top - .5 || box.b > safe.bottom + .5)
+      out.push(`${el.id || el.className}: ${Math.round(box.l)},${Math.round(box.t)}-${Math.round(box.r)},${Math.round(box.b)} "${el.textContent.slice(0, 30)}"`);
+    for (const c of el.querySelectorAll('*')) {
+      const fs = parseFloat(getComputedStyle(c).fontSize);
+      if (fs < 40 && c.textContent.trim()) out.push(`${el.id}: font ${fs}px`);
+    }
+    if (parseFloat(getComputedStyle(el).fontSize) < 40) out.push(`${el.id || el.className}: font too small`);
+  }
+  return out;
+};
+</script>
+</body></html>
