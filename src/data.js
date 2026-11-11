@@ -2938,6 +2938,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-11",
+      "ja": "「Pi Network完全ガイド」を公開（始め方、KYCとメインネット移行、PIが売れる取引所と日本での扱い、詐欺への注意、よくある質問）",
+      "en": "Published the Pi Network complete guide (how to start, KYC and the Mainnet migration, where PI trades and the situation in Japan, scam warnings and FAQ)",
+      "zh": "发布《Pi Network 完全指南》（如何开始、KYC 与主网迁移、PI 的交易场所和在日本的情况、防骗提醒和常见问题）",
+      "hi": "Pi Network की पूरी गाइड प्रकाशित (शुरुआत कैसे करें, KYC और मेननेट माइग्रेशन, PI कहाँ ट्रेड होता है और जापान की स्थिति, धोखे से बचाव और सवाल-जवाब)",
+      "es": "Publicada la guía completa de Pi Network (cómo empezar, el KYC y la migración a la Mainnet, dónde cotiza PI y la situación en Japón, avisos sobre estafas y preguntas frecuentes)",
+      "de": "Kompletten Guide zu Pi Network veröffentlicht (Einstieg, KYC und Mainnet-Migration, wo PI gehandelt wird und die Lage in Japan, Warnungen vor Betrug und FAQ)",
+      "ar": "نشرنا الدليل الكامل إلى ⁦Pi Network⁩ (كيف تبدأ، والتحقق من الهوية والانتقال إلى الشبكة الرئيسية، وأين تُتداول ⁦PI⁩ والوضع في اليابان، وتنبيهات من الاحتيال، والأسئلة الشائعة)"
+    },
+    {
+      "date": "2026-11-11",
       "en": "Published the essay “Does giving people money make them stop working? What the experiments found”",
       "ja": "エッセイ『お金を配ると、人は働かなくなるのか？ 世界の実験データで確かめる』を公開",
       "zh": "发布随笔《发钱会让人不再工作吗？用世界各地的实验数据来检验》",
@@ -40912,6 +40922,1516 @@ module.exports = {
           "عروض بيع الأسهم عبر الهاتف أو وسائل التواصل أو البريد الإلكتروني هي على الأرجح احتيال"
         ],
         "ctaText": "تحقق أولًا من الموقع الرسمي أن أسعار ⁦KABU&⁩ ليست أعلى مما تدفعه الآن، ثم قرّر هل تشترك."
+      }
+    },
+    {
+      "id": "pinetwork",
+      "svc": "pinetwork",
+      "published": "2026-11-11",
+      "updated": "2026-11-11",
+      "log": [
+        {
+          "date": "2026-11-11",
+          "ja": "公開。オープンネットワーク後の取引所、KYCとメインネット移行（2026年9月の更新まで）、日本での扱い、税金、2026年11月11日時点の価格を反映",
+          "en": "Published, covering the exchanges since the Open Network, KYC and Mainnet migration (up to the September 2026 update), the situation in Japan, tax, and prices as of 11 November 2026",
+          "zh": "发布，涵盖开放网络之后的交易所、KYC 与主网迁移（截至 2026 年 9 月的更新）、日本的情况、税务，以及截至 2026 年 11 月 11 日的价格",
+          "hi": "प्रकाशित; इसमें ओपन नेटवर्क के बाद के एक्सचेंज, KYC और मेननेट माइग्रेशन (सितंबर 2026 के अपडेट तक), जापान की स्थिति, टैक्स और 11 नवंबर 2026 की कीमत शामिल हैं",
+          "es": "Publicación, con los exchanges desde la Open Network, el KYC y la migración a la Mainnet (hasta la actualización de septiembre de 2026), la situación en Japón, los impuestos y los precios al 11 de noviembre de 2026",
+          "de": "Veröffentlicht, mit den Börsen seit dem Open Network, KYC und Mainnet-Migration (bis zum Update vom September 2026), der Lage in Japan, Steuern und Kursen vom 11. November 2026",
+          "ar": "النشر الأول، ويشمل منصات التداول منذ الشبكة المفتوحة، والتحقق من الهوية والانتقال إلى الشبكة الرئيسية (حتى تحديث سبتمبر 2026)، والوضع في اليابان، والضرائب، والأسعار في 11 نوفمبر 2026"
+        }
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "label": "Pi Network — Official channels & safety: the official apps and URLs (wallet.pinet.com, kyc.pinet.com)",
+          "url": "https://minepi.com/safety/"
+        },
+        {
+          "n": 2,
+          "label": "Pi Network FAQ — How does the Pi app work? (“check in every 24 hours and hit the lightning button”)",
+          "url": "https://minepi.com/faqs/how-does-the-pi-app-work-2/"
+        },
+        {
+          "n": 3,
+          "label": "Pi Network — White paper: mining formula, referral, Security Circle and lockup rewards, 100 billion maximum supply",
+          "url": "https://minepi.com/white-paper/"
+        },
+        {
+          "n": 4,
+          "label": "Pi Network — KYC FAQ: 30 days of mining before applying, tentative vs full KYC",
+          "url": "https://minepi.com/kyc-faqs/"
+        },
+        {
+          "n": 5,
+          "label": "Pi Network — Fast Track KYC (18 Sep 2025)",
+          "url": "https://minepi.com/announcement/fast-track-kyc/"
+        },
+        {
+          "n": 6,
+          "label": "Pi Network — Enacting the KYC and Mainnet Migration Grace Period (11 Jul 2024, updated 30 Jan 2025)",
+          "url": "https://minepi.com/blog/kyc-grace-period/"
+        },
+        {
+          "n": 7,
+          "label": "Pi Network — Pi’s Open Network set to launch February 20, 2025 (11 Feb 2025)",
+          "url": "https://minepi.com/blog/open-network-launch-date/"
+        },
+        {
+          "n": 8,
+          "label": "Pi Network — Happy Pi Day 2026 (14 Mar 2026): 16,568,774 Pioneers migrated, second migrations, Kraken",
+          "url": "https://minepi.com/blog/pi-day-2026/"
+        },
+        {
+          "n": 9,
+          "label": "Pi Network — KYC & Mainnet Migration Updates (17 Sep 2026)",
+          "url": "https://minepi.com/blog/kyc-mainnet-migration-9-26/"
+        },
+        {
+          "n": 10,
+          "label": "Pi Network FAQ — How do we create and use the Pi Wallet? (passphrase generated on the phone, not recoverable)",
+          "url": "https://minepi.com/faqs/how-do-we-create-and-use-the-pi-wallet-and-can-we-use-an-external-wallet-to-hold-our-pi-in-the-future/"
+        },
+        {
+          "n": 11,
+          "label": "Pi Network — Pi Wallet Safety (5 Jun 2025)",
+          "url": "https://minepi.com/blog/pi-wallet-safety/"
+        },
+        {
+          "n": 12,
+          "label": "OKX — OKX to list PI (Pi Network) for spot trading (Feb 2025)",
+          "url": "https://www.okx.com/en-us/help/okx-to-list-pi-pi-network-for-spot-trading"
+        },
+        {
+          "n": 13,
+          "label": "CoinGecko — Pi Network (PI) price and markets (checked 11 Nov 2026)",
+          "url": "https://www.coingecko.com/en/coins/pi-network"
+        },
+        {
+          "n": 14,
+          "label": "CoinMarketCap — Pi (PI): all-time high 26 Feb 2025, all-time low 9 Nov 2026, circulating supply (checked 11 Nov 2026)",
+          "url": "https://coinmarketcap.com/currencies/pi/"
+        },
+        {
+          "n": 15,
+          "label": "JVCEA (Japan Virtual and Crypto assets Exchange Association) — Crypto assets handled by members (updated 2 Nov 2026, in Japanese)",
+          "url": "https://jvcea.or.jp/statistics/document/assets/"
+        },
+        {
+          "n": 16,
+          "label": "FSA Japan — Unregistered businesses that received warnings (updated 10 Nov 2026; Bitget, MEXC and LBank warned in June 2025, in Japanese)",
+          "url": "https://www.fsa.go.jp/ordinary/chuui/mutouroku.html"
+        },
+        {
+          "n": 17,
+          "label": "National Tax Agency — FAQ on the tax treatment of crypto assets (as of 1 Dec 2025, items 1-7 and 2-2, in Japanese)",
+          "url": "https://www.nta.go.jp/publication/pamph/pdf/virtual_currency_faq_03.pdf"
+        },
+        {
+          "n": 18,
+          "label": "App Store (Japan) — Pi Network by SocialChain Inc. (free)",
+          "url": "https://apps.apple.com/jp/app/pi-network/id1445472541"
+        }
+      ],
+      "en": {
+        "title": "Pi Network complete guide: how to start, KYC, the Mainnet migration and whether you can sell PI",
+        "short": "Pi Network complete guide",
+        "desc": "Pi Network lets you collect PI by tapping a button in an app every 24 hours. How to start, KYC and the Mainnet migration, trading on overseas exchanges since February 2025, why Japanese exchanges don’t list it, passphrase scams and tax, from official documents and public sources.",
+        "h": {
+          "summary": "Summary",
+          "glance": "At a glance",
+          "suits": "Good fit if you",
+          "notSuits": "Not a good fit if you",
+          "toc": "Contents",
+          "how": "Getting started and daily mining",
+          "rights": "What you can and can’t do with PI",
+          "can": "You can",
+          "cannot": "You can’t",
+          "timeline": "Key events",
+          "faq": "FAQ",
+          "pros": "The good parts",
+          "risks": "Risks and caveats",
+          "cta": "If you want to start",
+          "log": "Update log",
+          "updated": "Last updated"
+        },
+        "lead": [
+          "Pi Network is a project where you collect a crypto asset called PI by tapping a button in a phone app every 24 hours. It started in 2019, and the app is published by SocialChain Inc. “Mining” here doesn’t mean power-hungry computation: it means opening the app every day and staying active.[2][3][18]",
+          "On 20 February 2025 Pi moved to the “Open Network”, connected to the outside world, and PI began trading on overseas exchanges such as OKX. To sell, though, you first need identity verification (KYC) and migration to the Mainnet, and no registered exchange in Japan handles it. The price is down more than 90% from its February 2025 high.[7][12][14][15]"
+        ],
+        "glance": [
+          [
+            "Run by",
+            "Pi Core Team (the app is published by SocialChain Inc.) [1][18]"
+          ],
+          [
+            "What you get",
+            "The crypto asset PI, collected by tapping a button in the app every 24 hours [2]"
+          ],
+          [
+            "Cost",
+            "The app is free and mining costs nothing [18]"
+          ],
+          [
+            "Needed to move PI",
+            "KYC (identity verification) and migration to a Mainnet wallet [4][6]"
+          ],
+          [
+            "Where it trades",
+            "Overseas exchanges such as OKX, Bitget, MEXC, Gate and Kraken (as of 11 November 2026) [13]"
+          ],
+          [
+            "Japanese exchanges",
+            "Not listed (list of assets handled by association members, updated 2 November 2026) [15]"
+          ],
+          [
+            "Price",
+            "About $0.072 (about ¥11, 11 November 2026, CoinGecko). The high was about $2.98 on 26 February 2025 [13][14]"
+          ],
+          [
+            "Supply",
+            "Capped at 100 billion PI; about 11.4 billion PI in circulation [3][14]"
+          ]
+        ],
+        "suits": [
+          "Open your phone every day anyway and don’t mind one tap a day",
+          "Want to try how crypto works without spending money",
+          "Can treat PI as a small extra and won’t be hurt if its price falls a lot",
+          "Can handle identity verification and managing a wallet on your own"
+        ],
+        "notSuits": [
+          "Need income in cash right away",
+          "Only want to hold assets you can sell on an exchange in your own country (in Japan, PI isn’t listed)",
+          "Aren’t confident you can keep a 24-word passphrase safe yourself",
+          "Plan to recruit acquaintances one after another to mine faster"
+        ],
+        "steps": [
+          "Install the official Pi Network app (App Store or Google Play). It is free, also on the Japanese App Store, and published by SocialChain Inc. [1][18]",
+          "Enter an invitation code when you sign up. This site’s code is “eltociear”; using it also raises the mining rate of the person who invited you (the person who runs this site) [3]",
+          "Open the app every 24 hours and tap the lightning button. Once tapped, PI keeps building up even if you close the app; if you don’t tap, nothing builds up [2]",
+          "After 30 days of mining (they don’t have to be consecutive), apply for KYC in the KYC app inside the Pi Browser. A “tentative” approval is not full approval and won’t let you migrate [4]",
+          "Follow the checklist in the app’s “Mainnet” tab: create a wallet in the Pi Browser, write down the passphrase, choose a lockup (a setting that keeps PI unmovable for a period) and migrate your balance to the Mainnet [3][5][10]"
+        ],
+        "howAfter": [
+          "Second migrations (moving PI you collected later) have been rolling out gradually since March 2026. You first need to turn on two-factor authentication for your wallet, and referral bonuses tied to team members who passed KYC are moved at the same time.[8]",
+          "There are three main ways to mine faster. When you and someone you invited are mining at the same time, each of you gets 25% more. Adding trusted people to your “Security Circle” adds 0.2 times the base rate per person (up to five), and locking up PI on the Mainnet adds more depending on the period (two weeks to three years) and the share you lock.[3]",
+          "Mind the deadlines: people who missed the grace period deadlines for KYC or migration can only move what they mined in the six months before their migration; the rest is forfeited.[6]"
+        ],
+        "can": [
+          "Send PI you have migrated to the Mainnet to other people’s wallets and receive it (a small fee in PI applies) [9]",
+          "Send PI to an overseas exchange that lists it and sell it there (OKX, Bitget, MEXC, Gate, Kraken and others) [12][13]",
+          "Pay with PI in apps inside the Pi Browser [8]",
+          "Lock up PI to mine faster [3]"
+        ],
+        "cannot": [
+          "Buy or sell it at a registered exchange in Japan: PI is not in the list of assets handled by association members (updated 2 November 2026) [15]",
+          "Move the PI you mined before finishing KYC and the Mainnet migration [4][6]",
+          "Recover a wallet whose passphrase you lost (it isn’t stored on Pi’s servers) [10]",
+          "Move locked-up PI before the lockup period ends [3]"
+        ],
+        "rightsNote": [
+          "A note for people in Japan using overseas exchanges: in June 2025 Japan’s Financial Services Agency issued warnings to three overseas exchanges that list PI, Bitget, MEXC and LBank, for soliciting Japanese residents online for derivatives trading without registration. If something goes wrong with a business that isn’t registered in Japan, don’t expect the protection you would get from a registered exchange.[16]"
+        ],
+        "timeline": [
+          [
+            "2019",
+            "2019",
+            "Pi Network starts (the original white paper) [3]"
+          ],
+          [
+            "2021-12",
+            "December 2021",
+            "The “Enclosed Mainnet” period, with no connection to outside networks, begins [7]"
+          ],
+          [
+            "2024-07-01",
+            "1 July 2024",
+            "The grace period for KYC and migration begins; the deadlines were later extended to 28 February 2025 [6]"
+          ],
+          [
+            "2025-02-20",
+            "20 February 2025",
+            "Move to the Open Network (08:00 UTC). PI starts trading on overseas exchanges such as OKX [7][12]"
+          ],
+          [
+            "2025-02-26",
+            "26 February 2025",
+            "All-time high so far, about $2.98 [14]"
+          ],
+          [
+            "2025-09-18",
+            "18 September 2025",
+            "Fast Track KYC starts: people with fewer than 30 mining sessions can use a wallet (their mined PI can’t be migrated yet) [5]"
+          ],
+          [
+            "2026-03-14",
+            "14 March 2026",
+            "Pi says 16,568,774 Pioneers have migrated (as of 5 March). Second migrations begin rolling out and Kraken adds PI [8]"
+          ],
+          [
+            "2026-09-17",
+            "17 September 2026",
+            "Pi announces it has unblocked KYC for over 417,000 people and a fix for 497,000 people stuck in migration [9]"
+          ],
+          [
+            "2026-11-09",
+            "9 November 2026",
+            "All-time low so far, about $0.0626 [14]"
+          ]
+        ],
+        "faq": [
+          [
+            "Is Pi Network free? Does it cost anything?",
+            "The app is free and mining costs nothing. It does take a daily tap, and sending PI on the Mainnet needs a small fee in PI. Don’t believe sites or accounts that aren’t on the official list and offer a faster migration if you pay a fee.[1][9][18]"
+          ],
+          [
+            "Can I sell PI in Japan and get yen?",
+            "No registered exchange in Japan handles PI, so you can’t turn it into yen at a domestic exchange (list of assets handled by association members, updated 2 November 2026). PI trades on overseas exchanges such as OKX, Bitget, MEXC, Gate and Kraken, but Japan’s Financial Services Agency has warned Bitget, MEXC and LBank over soliciting without registration. If you use an overseas exchange, check its terms to see whether residents of Japan may use it, and decide at your own risk.[13][15][16]"
+          ],
+          [
+            "Is Pi Network a scam?",
+            "PI has actually traded on overseas exchanges since February 2025, and there is an official site and app, so it isn’t a scam in the sense of nothing existing. But the price fell more than 90%, from its 26 February 2025 high (about $2.98) to around $0.07 in November 2026. Of the 100 billion PI cap, about 11.4 billion are in circulation, and how much more reaches the market will also weigh on the price. There are also many scams that use Pi Network’s name.[3][13][14]"
+          ],
+          [
+            "What is the passphrase, and what if I lose it?",
+            "The passphrase is 24 English words that act as the key to your wallet. It is created on your phone and never sent to Pi’s servers, so if you lose it, it can’t be recovered. Write it on paper and keep it out of sight. Pi will never ask for it, and the only place to enter it is “wallet.pinet.com” in the Pi Browser.[1][10][11]"
+          ],
+          [
+            "My KYC has been pending for ages. What can I do?",
+            "First check your status in the KYC app in the Pi Browser. On 17 September 2026 Pi announced that over 417,000 people held up as suspected duplicate accounts could move forward, a fix for 497,000 people who couldn’t migrate because they lacked PI for the fee, and new chances to redo the liveness (face) check. Never hand your ID or account to anyone offering to “do your KYC for you”.[4][9]"
+          ],
+          [
+            "What happens if I don’t do KYC?",
+            "You can’t migrate to the Mainnet, so you can’t send or sell your PI. People who missed the grace period deadlines lose what they mined more than six months before their migration.[6]"
+          ],
+          [
+            "Do I pay tax if I sell PI?",
+            "For residents of Japan, the National Tax Agency says crypto obtained through mining counts as income at its value when you receive it, and gains from crypto trading are in principle miscellaneous income. How to value it and whether you need to file depend on your situation, so ask a tax office or a tax accountant. In other countries the rules differ.[17]"
+          ],
+          [
+            "What about people offering to sell PI cheaply or buy my PI?",
+            "Treat offers to buy or sell PI on social media or between individuals as very likely scams. The official channels and apps are only the ones listed on the official site; anything else is not official even if it says it is. Refuse anything that asks you to send money first or asks for your passphrase.[1][11]"
+          ]
+        ],
+        "pros": [
+          "Costs nothing to start: all you need is a phone and a daily tap [2][18]",
+          "Has actually traded on overseas exchanges since February 2025 [7][13]",
+          "Listed by overseas exchanges including large ones such as OKX and Kraken [8][12][13]",
+          "More than 16 million people have migrated, and apps that accept PI are appearing in the Pi Browser [8]",
+          "You hold the wallet key yourself; your PI isn’t left with the operator [10]"
+        ],
+        "risks": [
+          "Steep fall: from the 26 February 2025 high (about $2.98) to around $0.07 in November 2026, down more than 90% [13][14]",
+          "No registered exchange in Japan lists it; turning it into yen means using an overseas exchange [15]",
+          "Some overseas exchanges that list PI (Bitget, MEXC, LBank) have been warned by Japan’s Financial Services Agency over soliciting without registration [16]",
+          "Of the 100 billion PI cap, about 11.4 billion are in circulation. More reaching the market could weigh on the price [3][14]",
+          "KYC and migration can keep you waiting a long time, and if you miss the deadlines you lose what you mined more than six months earlier [6][9]",
+          "If your passphrase is lost or stolen, your PI can’t be recovered [10][11]",
+          "Many scams use Pi Network’s name: fake wallets, fake PI sales, “KYC services” and sites that fish for your passphrase [1][11]",
+          "Needs a daily tap; days you forget earn nothing [2]",
+          "The more people you refer, the better you do. If you invite people you know, tell them about the price risk too [3]"
+        ],
+        "ctaText": "Before you start, look at how the price has moved (on CoinGecko, for example) and check where you could actually sell it. Never tell anyone your passphrase."
+      },
+      "ja": {
+        "title": "Pi Network（パイネットワーク）完全ガイド：始め方・KYC・メインネット移行・PIは売れるのか",
+        "short": "Pi Network完全ガイド",
+        "desc": "Pi Networkは、アプリで24時間ごとにボタンを押してPIをためるしくみ。始め方、KYC（本人確認）とメインネット移行、2025年2月からの海外の取引所での売買、日本の取引所では扱いがないこと、パスフレーズを狙う詐欺、税金まで、公式資料と公的な情報で整理しました。",
+        "h": {
+          "summary": "まとめ",
+          "glance": "早見表",
+          "suits": "向いている人",
+          "notSuits": "向いていない人",
+          "toc": "目次",
+          "how": "始め方と毎日のマイニング",
+          "rights": "PIでできること・できないこと",
+          "can": "できること",
+          "cannot": "できないこと",
+          "timeline": "主な出来事",
+          "faq": "よくある質問",
+          "pros": "良いところ",
+          "risks": "リスクと注意点",
+          "cta": "始めるなら",
+          "log": "更新履歴",
+          "updated": "最終更新日"
+        },
+        "lead": [
+          "Pi Network（パイネットワーク）は、スマホのアプリで24時間ごとにボタンを押すと、暗号資産「PI」がたまるプロジェクトです。2019年に始まり、アプリの提供元はSocialChain Inc.です。電気を大量に使う計算ではなく、毎日アプリを開いて参加を続けることを「マイニング」と呼んでいます。[2][3][18]",
+          "2025年2月20日に外部とつながる「オープンネットワーク」に移り、PIはOKXなど海外の取引所で売買できるようになりました。ただし、売るには本人確認（KYC）とメインネットへの移行が先に必要で、日本の登録業者では扱われていません。価格は2025年2月の最高値から9割以上下がっています。[7][12][14][15]"
+        ],
+        "glance": [
+          [
+            "運営",
+            "Pi Core Team（アプリの提供元はSocialChain Inc.）[1][18]"
+          ],
+          [
+            "もらえるもの",
+            "暗号資産PI。アプリで24時間ごとにボタンを押してためる [2]"
+          ],
+          [
+            "費用",
+            "アプリは無料。マイニングにお金はかからない [18]"
+          ],
+          [
+            "動かすのに必要なこと",
+            "KYC（本人確認）と、メインネットのウォレットへの移行 [4][6]"
+          ],
+          [
+            "売買できる場所",
+            "OKX・Bitget・MEXC・Gate・Krakenなど海外の取引所（2026年11月11日時点）[13]"
+          ],
+          [
+            "日本の取引所",
+            "扱いなし（協会会員の取扱い一覧、2026年11月2日更新）[15]"
+          ],
+          [
+            "価格の目安",
+            "約0.072ドル（約11円、2026年11月11日、CoinGecko）。最高値は2025年2月26日の約2.98ドル [13][14]"
+          ],
+          [
+            "発行量",
+            "上限1,000億PI。出回っているのは約114億PI [3][14]"
+          ]
+        ],
+        "suits": [
+          "毎日スマホを開く習慣があり、1日1回のタップを苦にしない人",
+          "お金をかけずに、暗号資産のしくみを試してみたい人",
+          "PIの値段が大きく下がっても困らない、おまけ程度に考えられる人",
+          "本人確認やウォレットの管理を、自分でこなせる人"
+        ],
+        "notSuits": [
+          "すぐに日本円の収入がほしい人",
+          "日本の取引所で売れるものだけを持ちたい人",
+          "24個の英単語のパスフレーズを、自分で安全に保管する自信がない人",
+          "知り合いを次々に誘って、採掘ペースを上げようと考えている人"
+        ],
+        "steps": [
+          "公式のPi Networkアプリを入れる（App Store・Google Play）。日本のApp Storeでも無料で提供されていて、提供元はSocialChain Inc. [1][18]",
+          "登録するときに招待コードを入れる。このサイトの招待コードは「eltociear」で、使うと紹介した側（このサイトの運営者）の採掘ペースも上がる [3]",
+          "24時間ごとにアプリを開いて、稲妻のボタンを押す。押したあとはアプリを閉じてもたまり続けるが、押さなければたまらない [2]",
+          "30日分マイニングしたら（連続でなくてよい）、Pi Browserの中のKYCアプリで本人確認を申し込む。「仮承認」は正式な承認ではなく、移行には進めない [4]",
+          "アプリの「Mainnet」タブのチェックリストに沿って、Pi Browserでウォレットを作り、パスフレーズを控え、ロックアップ（一定期間動かさない設定）を選んで、残高をメインネットに移す [3][5][10]"
+        ],
+        "howAfter": [
+          "2回目以降の移行（あとからたまった分の移行）は、2026年3月から順に始まっています。先にウォレットの二段階認証を設定する必要があり、KYCを通った紹介メンバーに応じた紹介ボーナスも、このとき移されます。[8]",
+          "採掘ペースを上げる方法は主に3つです。紹介した人と同時にマイニングしていると、紹介した側・された側がそれぞれ25%上がります。信頼できる人を「セキュリティサークル」に登録すると1人につき基本の0.2倍ずつ（5人まで）上がり、メインネットでPIをロックアップすると、期間（2週間〜3年）と割合に応じて上がります。[3]",
+          "期限に注意：猶予期間の期限までにKYCや移行が間に合わなかった人は、移行の時点からさかのぼって6か月以内にマイニングした分しか移せず、それより前の分は失われるとされています。[6]"
+        ],
+        "can": [
+          "メインネットに移したPIを、ほかの人のウォレットに送る・受け取る（少額の手数料のPIがかかる）[9]",
+          "PIを扱う海外の取引所に送って売る（OKX・Bitget・MEXC・Gate・Krakenなど）[12][13]",
+          "Pi Browserの中のアプリで、PIを支払いに使う [8]",
+          "ロックアップして、採掘ペースを上げる [3]"
+        ],
+        "cannot": [
+          "日本の登録業者で売る・買う。協会会員の取扱い一覧（2026年11月2日更新）にPIはない [15]",
+          "KYCとメインネットへの移行をすませる前に、たまったPIを動かす [4][6]",
+          "パスフレーズをなくしたウォレットを取り戻す（運営のサーバーにも残っていない）[10]",
+          "ロックアップの期間が終わる前に、その分を動かす [3]"
+        ],
+        "rightsNote": [
+          "日本に住む人が海外の取引所を使うときの注意：金融庁は、PIを扱う海外の取引所のうちBitget・MEXC・LBankに対して、日本の居住者にインターネットで無登録のデリバティブ取引を勧誘していたとして、2025年6月に警告書を出しています。日本で登録を受けていない業者とのあいだでトラブルになっても、国内の登録業者のような保護は期待しにくいと考えてください。[16]"
+        ],
+        "timeline": [
+          [
+            "2019",
+            "2019年",
+            "Pi Networkが始まる（最初のホワイトペーパー）[3]"
+          ],
+          [
+            "2021-12",
+            "2021年12月",
+            "外部とつながらない「閉じたメインネット」の期間が始まる [7]"
+          ],
+          [
+            "2024-07-01",
+            "2024年7月1日",
+            "KYCと移行の猶予期間が始まる。期限はのちに2025年2月28日まで延長 [6]"
+          ],
+          [
+            "2025-02-20",
+            "2025年2月20日",
+            "オープンネットワークへ移行（日本時間17時）。OKXなど海外の取引所でPIの取引が始まる [7][12]"
+          ],
+          [
+            "2025-02-26",
+            "2025年2月26日",
+            "これまでの最高値、約2.98ドル [14]"
+          ],
+          [
+            "2025-09-18",
+            "2025年9月18日",
+            "Fast Track KYCを開始。マイニングが30回に満たない人もウォレットを使えるようになる（マイニング分の移行はまだできない）[5]"
+          ],
+          [
+            "2026-03-14",
+            "2026年3月14日",
+            "公式が、移行ずみの人数を16,568,774人（3月5日時点）と発表。2回目の移行が順に始まり、Krakenも取扱いを始めた [8]"
+          ],
+          [
+            "2026-09-17",
+            "2026年9月17日",
+            "KYCで止まっていた41万7,000人あまりの審査の再開と、移行で止まっていた49万7,000人への対応を発表 [9]"
+          ],
+          [
+            "2026-11-09",
+            "2026年11月9日",
+            "これまでの最安値、約0.0626ドル [14]"
+          ]
+        ],
+        "faq": [
+          [
+            "Pi Networkは無料？お金はかかる？",
+            "アプリは無料で、マイニングにお金はかかりません。ただし毎日のタップの手間があり、メインネットで送金するときは少額の手数料のPIが要ります。公式の一覧にないサイトやアカウントからの「手数料を払えば早く移行できる」といった誘いは、信じないでください。[1][9][18]"
+          ],
+          [
+            "PIは日本で売れる？日本円にできる？",
+            "日本の登録業者ではPIは扱われていないので、国内の取引所で日本円に替えることはできません（協会会員の取扱い一覧、2026年11月2日更新）。PIを売買できるのはOKX・Bitget・MEXC・Gate・Krakenなど海外の取引所ですが、金融庁はこのうちBitget・MEXC・LBankに無登録での勧誘について警告を出しています。海外の業者を使うなら、日本の居住者が使えるかを利用規約で確かめ、自分の責任で判断することになります。[13][15][16]"
+          ],
+          [
+            "Pi Networkは詐欺なの？",
+            "PIは2025年2月から実際に海外の取引所で売買されていて、公式サイトやアプリもあります。その意味で、何も存在しない詐欺とは言えません。ただし価格は、2025年2月26日の最高値（約2.98ドル）から2026年11月には0.07ドル前後と、9割以上下がりました。上限1,000億PIのうち出回っているのは約114億PIで、これからどれだけ市場に出るかも価格に響きます。また、Pi Networkの名前を使った詐欺はたくさんあります。[3][13][14]"
+          ],
+          [
+            "パスフレーズとは？なくしたらどうなる？",
+            "パスフレーズは、ウォレットの鍵にあたる24個の英単語です。スマホの中で作られ、運営のサーバーには送られないので、なくすと取り戻せません。紙に書いて人目につかない場所に保管しましょう。運営がパスフレーズを聞くことはなく、入力してよいのはPi Browserの「wallet.pinet.com」だけです。[1][10][11]"
+          ],
+          [
+            "KYCがずっと終わらない。どうすればいい？",
+            "まずPi BrowserのKYCアプリで状況を確かめてください。公式は2026年9月17日に、重複アカウントの疑いで止まっていた41万7,000人あまりの審査の再開、手数料のPIが足りずに移行できなかった49万7,000人への対応、顔の確認（ライブネスチェック）のやり直しなどを発表しています。「KYCを代行する」という人に、身分証やアカウントを渡してはいけません。[4][9]"
+          ],
+          [
+            "KYCをしないとどうなる？",
+            "メインネットに移せないので、PIを送ることも売ることもできません。猶予期間の期限に間に合わなかった人は、移行の時点から6か月より前にマイニングした分を失うとされています。[6]"
+          ],
+          [
+            "PIを売ったら税金はかかる？",
+            "日本に住んでいる人の場合、国税庁は、マイニングで得た暗号資産は手に入れた時点の価額（時価）が収入になり、暗号資産の取引による利益は原則として雑所得になるとしています。値段のつけ方や申告が要るかどうかは人によって違うので、くわしくは税務署か税理士に相談してください。[17]"
+          ],
+          [
+            "「PIを安く売ります」「PIを買い取ります」という話は？",
+            "SNSや個人間でのPIの売り買いの話は、詐欺の可能性が高いと考えてください。公式のチャネルとアプリは公式サイトの一覧にあるものだけで、それ以外は公式を名乗っていても公式ではありません。お金を先に送らせたり、パスフレーズを聞いてきたりするものは、すべて断りましょう。[1][11]"
+          ]
+        ],
+        "pros": [
+          "お金をかけずに始められる。要るのはスマホと毎日のタップだけ [2][18]",
+          "2025年2月から、実際に海外の取引所で売買されている [7][13]",
+          "OKXやKrakenなど、大手を含む海外の取引所が扱っている [8][12][13]",
+          "移行ずみの人は1,600万人を超え、Pi Browserの中でPIで支払えるアプリも出てきている [8]",
+          "ウォレットは鍵を自分で持つしくみで、運営にPIを預けるわけではない [10]"
+        ],
+        "risks": [
+          "値下がりが大きい。2025年2月26日の最高値（約2.98ドル）から、2026年11月には0.07ドル前後と9割以上下がった [13][14]",
+          "日本の登録業者では扱いがなく、日本円にするには海外の取引所を使うしかない [15]",
+          "PIを扱う海外の取引所の一部（Bitget・MEXC・LBank）は、金融庁から無登録での勧誘について警告を受けている [16]",
+          "上限1,000億PIのうち、出回っているのは約114億PI。市場に出る量が増えれば、価格の重しになりうる [3][14]",
+          "KYCや移行で長く待たされることがある。期限に間に合わないと、6か月より前の分は失う [6][9]",
+          "パスフレーズをなくしたり盗まれたりすると、PIは取り戻せない [10][11]",
+          "Pi Networkの名前を使った詐欺が多い（偽のウォレット、偽のPI販売、KYCの代行、パスフレーズを聞き出すサイト）[1][11]",
+          "毎日のタップが要る。忘れた日の分はたまらない [2]",
+          "紹介が多いほど有利になるしくみ。知り合いを誘うときは、値下がりのリスクも一緒に伝えたい [3]"
+        ],
+        "ctaText": "始める前に、価格の動き（CoinGeckoなど）と、日本では売れる場所が限られることを確かめてください。パスフレーズは、誰にも教えないでください。"
+      },
+      "zh": {
+        "title": "Pi Network 完全指南：如何开始、KYC、主网迁移，以及 PI 能不能卖",
+        "short": "Pi Network 完全指南",
+        "desc": "Pi Network 让你每 24 小时在应用里点一次按钮来累积 PI。如何开始、KYC（身份验证）与主网迁移、2025 年 2 月起在海外交易所的买卖、日本交易所为何没有上架、盯上助记词的诈骗以及税务，依据官方资料和公开信息整理。",
+        "h": {
+          "summary": "要点",
+          "glance": "一览",
+          "suits": "适合的人",
+          "notSuits": "不适合的人",
+          "toc": "目录",
+          "how": "如何开始与每天挖矿",
+          "rights": "PI 能做什么、不能做什么",
+          "can": "可以",
+          "cannot": "不可以",
+          "timeline": "大事记",
+          "faq": "常见问题",
+          "pros": "优点",
+          "risks": "风险与注意事项",
+          "cta": "如果要开始",
+          "log": "更新记录",
+          "updated": "最后更新"
+        },
+        "lead": [
+          "Pi Network 是一个通过手机应用每 24 小时点一次按钮来累积加密资产“PI”的项目。它始于 2019 年，应用的发布方是 SocialChain Inc.。这里的“挖矿”不是耗电的计算，而是指每天打开应用、持续参与。[2][3][18]",
+          "2025 年 2 月 20 日，Pi 进入与外部相连的“开放网络”，PI 开始在 OKX 等海外交易所买卖。不过，想卖出必须先完成身份验证（KYC）并迁移到主网，而且日本的注册交易所都没有上架 PI。价格已比 2025 年 2 月的最高点下跌九成以上。[7][12][14][15]"
+        ],
+        "glance": [
+          [
+            "运营方",
+            "Pi Core Team（应用发布方为 SocialChain Inc.）[1][18]"
+          ],
+          [
+            "能得到什么",
+            "加密资产 PI，每 24 小时在应用里点一次按钮累积 [2]"
+          ],
+          [
+            "费用",
+            "应用免费，挖矿不花钱 [18]"
+          ],
+          [
+            "转移 PI 的前提",
+            "KYC（身份验证）以及迁移到主网钱包 [4][6]"
+          ],
+          [
+            "交易场所",
+            "OKX、Bitget、MEXC、Gate、Kraken 等海外交易所（截至 2026 年 11 月 11 日）[13]"
+          ],
+          [
+            "日本交易所",
+            "未上架（协会会员处理的资产一览，2026 年 11 月 2 日更新）[15]"
+          ],
+          [
+            "价格参考",
+            "约 0.072 美元（约 11 日元，2026 年 11 月 11 日，CoinGecko）。最高约 2.98 美元，出现在 2025 年 2 月 26 日 [13][14]"
+          ],
+          [
+            "发行量",
+            "上限 1,000 亿 PI，流通约 114 亿 PI [3][14]"
+          ]
+        ],
+        "suits": [
+          "本来每天都会打开手机，不介意每天点一次的人",
+          "想不花钱体验加密资产如何运作的人",
+          "把 PI 当作小小的额外收获，即使价格大跌也无所谓的人",
+          "能自己完成身份验证、管理钱包的人"
+        ],
+        "notSuits": [
+          "马上需要现金收入的人",
+          "只想持有能在日本交易所卖出的资产的人",
+          "没有把握自己安全保管 24 个英文单词助记词的人",
+          "打算不断拉熟人加入来提高挖矿速度的人"
+        ],
+        "steps": [
+          "安装官方的 Pi Network 应用（App Store 或 Google Play）。日本的 App Store 也免费提供，发布方为 SocialChain Inc. [1][18]",
+          "注册时输入邀请码。本站的邀请码是“eltociear”，使用后邀请方（本站运营者）的挖矿速度也会提高 [3]",
+          "每 24 小时打开应用，点一下闪电按钮。点过之后即使关闭应用也会继续累积；不点就不会累积 [2]",
+          "挖满 30 天后（不必连续），在 Pi Browser 里的 KYC 应用申请身份验证。“暂定通过”不等于正式通过，无法进行迁移 [4]",
+          "按照应用“Mainnet”标签页里的清单，在 Pi Browser 中创建钱包、记下助记词、选择锁仓（在一段时间内不能转移的设置），然后把余额迁移到主网 [3][5][10]"
+        ],
+        "howAfter": [
+          "第二次迁移（迁移之后新累积的部分）自 2026 年 3 月起逐步开放。需要先为钱包开启两步验证，与通过 KYC 的推荐成员相关的推荐奖励也会在这时一起迁移。[8]",
+          "提高挖矿速度主要有三种方式。你和你邀请的人同时在挖矿时，双方各提高 25%。把信任的人加入“安全圈”，每人增加基础速率的 0.2 倍（最多 5 人）；在主网上锁仓 PI，会按期限（2 周到 3 年）和比例再提高。[3]",
+          "注意期限：错过宽限期截止日期、没能及时完成 KYC 或迁移的人，只能迁移自迁移时起往前 6 个月内挖到的部分，更早的部分将被没收。[6]"
+        ],
+        "can": [
+          "把已迁移到主网的 PI 发送到他人钱包或接收（需支付少量 PI 手续费）[9]",
+          "把 PI 转到上架它的海外交易所卖出（OKX、Bitget、MEXC、Gate、Kraken 等）[12][13]",
+          "在 Pi Browser 里的应用中用 PI 付款 [8]",
+          "锁仓以提高挖矿速度 [3]"
+        ],
+        "cannot": [
+          "在日本的注册交易所买卖。协会会员处理的资产一览（2026 年 11 月 2 日更新）中没有 PI [15]",
+          "在完成 KYC 和主网迁移之前转移已挖到的 PI [4][6]",
+          "找回丢失助记词的钱包（Pi 的服务器上也没有保存）[10]",
+          "在锁仓期结束前转移被锁定的 PI [3]"
+        ],
+        "rightsNote": [
+          "住在日本的人使用海外交易所时请注意：2025 年 6 月，日本金融厅以未经注册、通过互联网向日本居民招揽衍生品交易为由，向上架 PI 的海外交易所 Bitget、MEXC 和 LBank 发出了警告。与未在日本注册的业者发生纠纷时，很难期待获得与日本注册交易所同等的保护。[16]"
+        ],
+        "timeline": [
+          [
+            "2019",
+            "2019 年",
+            "Pi Network 启动（最初的白皮书）[3]"
+          ],
+          [
+            "2021-12",
+            "2021 年 12 月",
+            "不与外部网络相连的“封闭主网”阶段开始 [7]"
+          ],
+          [
+            "2024-07-01",
+            "2024 年 7 月 1 日",
+            "KYC 与迁移的宽限期开始，截止日期后来延长至 2025 年 2 月 28 日 [6]"
+          ],
+          [
+            "2025-02-20",
+            "2025 年 2 月 20 日",
+            "进入开放网络（UTC 8:00）。PI 开始在 OKX 等海外交易所交易 [7][12]"
+          ],
+          [
+            "2025-02-26",
+            "2025 年 2 月 26 日",
+            "迄今最高价，约 2.98 美元 [14]"
+          ],
+          [
+            "2025-09-18",
+            "2025 年 9 月 18 日",
+            "推出 Fast Track KYC：挖矿不足 30 次的人也能使用钱包（挖到的 PI 仍不能迁移）[5]"
+          ],
+          [
+            "2026-03-14",
+            "2026 年 3 月 14 日",
+            "Pi 宣布已迁移人数为 16,568,774 人（截至 3 月 5 日）。第二次迁移逐步开放，Kraken 也上架 PI [8]"
+          ],
+          [
+            "2026-09-17",
+            "2026 年 9 月 17 日",
+            "Pi 宣布为 41.7 万多名卡在 KYC 的人恢复审核，并修复 49.7 万名卡在迁移的人的问题 [9]"
+          ],
+          [
+            "2026-11-09",
+            "2026 年 11 月 9 日",
+            "迄今最低价，约 0.0626 美元 [14]"
+          ]
+        ],
+        "faq": [
+          [
+            "Pi Network 免费吗？要花钱吗？",
+            "应用免费，挖矿不花钱。不过每天都要点一次，在主网上转账时需要少量 PI 作为手续费。对于不在官方列表中的网站或账号所说的“付手续费就能更快迁移”，请不要相信。[1][9][18]"
+          ],
+          [
+            "PI 能在日本卖吗？能换成日元吗？",
+            "日本的注册交易所都没有上架 PI，所以无法在国内交易所换成日元（协会会员处理的资产一览，2026 年 11 月 2 日更新）。PI 在 OKX、Bitget、MEXC、Gate、Kraken 等海外交易所交易，但日本金融厅已就未经注册的招揽向其中的 Bitget、MEXC 和 LBank 发出警告。如果使用海外交易所，请先在服务条款中确认日本居民能否使用，并自行承担风险。[13][15][16]"
+          ],
+          [
+            "Pi Network 是骗局吗？",
+            "PI 自 2025 年 2 月起确实在海外交易所买卖，也有官方网站和应用，所以并不是“什么都不存在”的那种骗局。但价格从 2025 年 2 月 26 日的最高点（约 2.98 美元）跌到 2026 年 11 月的 0.07 美元左右，跌幅超过九成。在 1,000 亿 PI 的上限中，流通的约 114 亿 PI，今后还有多少会流入市场也会影响价格。另外，借 Pi Network 名义的诈骗非常多。[3][13][14]"
+          ],
+          [
+            "助记词是什么？丢了会怎样？",
+            "助记词是由 24 个英文单词组成的钱包密钥。它在你的手机上生成，不会发送到 Pi 的服务器，所以一旦丢失就无法找回。请写在纸上，放在别人看不到的地方。Pi 永远不会向你索要助记词，唯一可以输入它的地方是 Pi Browser 中的“wallet.pinet.com”。[1][10][11]"
+          ],
+          [
+            "KYC 一直没完成，怎么办？",
+            "先在 Pi Browser 的 KYC 应用中查看状态。2026 年 9 月 17 日，Pi 宣布为 41.7 万多名因疑似重复账号而卡住的人恢复审核，修复 49.7 万名因 PI 不够付手续费而无法迁移的人的问题，并允许重新进行活体（人脸）检测等。千万不要把身份证件或账号交给声称“代办 KYC”的人。[4][9]"
+          ],
+          [
+            "不做 KYC 会怎样？",
+            "无法迁移到主网，所以既不能转出也不能卖出 PI。错过宽限期截止日期的人，会失去自迁移时起 6 个月以前挖到的部分。[6]"
+          ],
+          [
+            "卖出 PI 要缴税吗？",
+            "对于日本居民，日本国税厅表示，通过挖矿获得的加密资产以取得时的价值（时价）计入收入，加密资产交易的收益原则上属于杂项所得。如何计价、是否需要申报因人而异，请咨询税务署或税理士。其他国家的规定各不相同。[17]"
+          ],
+          [
+            "有人说“便宜卖 PI”或“收购 PI”，怎么看？",
+            "社交媒体上或个人之间买卖 PI 的提议，很可能是诈骗。官方渠道和应用只有官网列表中的那些，其他的即使自称官方也不是官方。凡是要求你先付款或索要助记词的，一律拒绝。[1][11]"
+          ]
+        ],
+        "pros": [
+          "不花钱就能开始，只需要一部手机和每天点一次 [2][18]",
+          "自 2025 年 2 月起确实在海外交易所买卖 [7][13]",
+          "OKX、Kraken 等大型海外交易所也上架了 PI [8][12][13]",
+          "已迁移的人超过 1,600 万，Pi Browser 中也出现了可以用 PI 付款的应用 [8]",
+          "钱包密钥由自己保管，PI 并不托管在运营方 [10]"
+        ],
+        "risks": [
+          "跌幅很大：从 2025 年 2 月 26 日的最高点（约 2.98 美元）跌到 2026 年 11 月的 0.07 美元左右，跌幅超过九成 [13][14]",
+          "日本的注册交易所没有上架，想换成日元只能用海外交易所 [15]",
+          "部分上架 PI 的海外交易所（Bitget、MEXC、LBank）因未经注册的招揽受到日本金融厅警告 [16]",
+          "在 1,000 亿 PI 的上限中，流通约 114 亿 PI。流入市场的数量增加可能压低价格 [3][14]",
+          "KYC 和迁移可能要等很久；错过期限会失去 6 个月以前挖到的部分 [6][9]",
+          "助记词丢失或被盗，PI 就无法找回 [10][11]",
+          "借 Pi Network 名义的诈骗很多：假钱包、假的 PI 出售、“代办 KYC”、骗取助记词的网站 [1][11]",
+          "需要每天点一次，忘记的那天不会累积 [2]",
+          "推荐的人越多越有利。邀请熟人时，最好把价格下跌的风险也一并告诉对方 [3]"
+        ],
+        "ctaText": "开始之前，请先看看价格走势（例如 CoinGecko），并确认在你所在的地方能在哪里卖出。助记词绝对不要告诉任何人。"
+      },
+      "hi": {
+        "title": "Pi Network की पूरी गाइड: शुरुआत कैसे करें, KYC, मेननेट माइग्रेशन और क्या PI बेचा जा सकता है",
+        "short": "Pi Network की पूरी गाइड",
+        "desc": "Pi Network में ऐप में हर 24 घंटे में एक बटन दबाकर PI जमा होता है। शुरुआत कैसे करें, KYC और मेननेट माइग्रेशन, फ़रवरी 2025 से विदेशी एक्सचेंजों पर ट्रेडिंग, जापानी एक्सचेंजों पर यह क्यों नहीं है, पासफ़्रेज़ वाले धोखे और टैक्स, सब कुछ आधिकारिक दस्तावेज़ों और सार्वजनिक स्रोतों से।",
+        "h": {
+          "summary": "सारांश",
+          "glance": "एक नज़र में",
+          "suits": "किनके लिए सही है",
+          "notSuits": "किनके लिए सही नहीं है",
+          "toc": "विषय-सूची",
+          "how": "शुरुआत और रोज़ की माइनिंग",
+          "rights": "PI से क्या कर सकते हैं और क्या नहीं",
+          "can": "कर सकते हैं",
+          "cannot": "नहीं कर सकते",
+          "timeline": "मुख्य घटनाएँ",
+          "faq": "अक्सर पूछे जाने वाले सवाल",
+          "pros": "अच्छी बातें",
+          "risks": "जोखिम और सावधानियाँ",
+          "cta": "अगर शुरू करना चाहते हैं",
+          "log": "अपडेट का इतिहास",
+          "updated": "आख़िरी अपडेट"
+        },
+        "lead": [
+          "Pi Network एक प्रोजेक्ट है जिसमें फ़ोन ऐप में हर 24 घंटे में एक बटन दबाने पर PI नाम का क्रिप्टो एसेट जमा होता है। यह 2019 में शुरू हुआ और ऐप SocialChain Inc. प्रकाशित करती है। यहाँ \"माइनिंग\" का मतलब बिजली खाने वाली गणना नहीं, बल्कि रोज़ ऐप खोलकर सक्रिय रहना है।[2][3][18]",
+          "20 फ़रवरी 2025 को Pi बाहरी दुनिया से जुड़े \"ओपन नेटवर्क\" पर आया और PI की ट्रेडिंग OKX जैसे विदेशी एक्सचेंजों पर शुरू हुई। लेकिन बेचने से पहले पहचान सत्यापन (KYC) और मेननेट पर माइग्रेशन ज़रूरी है, और जापान का कोई पंजीकृत एक्सचेंज इसे नहीं रखता। कीमत फ़रवरी 2025 के उच्चतम स्तर से 90% से ज़्यादा गिर चुकी है।[7][12][14][15]"
+        ],
+        "glance": [
+          [
+            "संचालक",
+            "Pi Core Team (ऐप SocialChain Inc. प्रकाशित करती है) [1][18]"
+          ],
+          [
+            "क्या मिलता है",
+            "क्रिप्टो एसेट PI, जो ऐप में हर 24 घंटे में बटन दबाकर जमा होता है [2]"
+          ],
+          [
+            "ख़र्च",
+            "ऐप मुफ़्त है और माइनिंग में पैसा नहीं लगता [18]"
+          ],
+          [
+            "PI ट्रांसफ़र करने के लिए",
+            "KYC (पहचान सत्यापन) और मेननेट वॉलेट में माइग्रेशन [4][6]"
+          ],
+          [
+            "कहाँ ट्रेड होता है",
+            "OKX, Bitget, MEXC, Gate और Kraken जैसे विदेशी एक्सचेंज (11 नवंबर 2026 तक) [13]"
+          ],
+          [
+            "जापानी एक्सचेंज",
+            "लिस्टेड नहीं (एसोसिएशन के सदस्यों की एसेट सूची, 2 नवंबर 2026 को अपडेट) [15]"
+          ],
+          [
+            "कीमत",
+            "लगभग $0.072 (लगभग 11 येन, 11 नवंबर 2026, CoinGecko)। उच्चतम स्तर 26 फ़रवरी 2025 को लगभग $2.98 था [13][14]"
+          ],
+          [
+            "आपूर्ति",
+            "अधिकतम 100 अरब PI; लगभग 11.4 अरब PI चलन में [3][14]"
+          ]
+        ],
+        "suits": [
+          "जो रोज़ फ़ोन खोलते ही हैं और दिन में एक बार बटन दबाने से परेशान नहीं होते",
+          "जो बिना पैसा लगाए समझना चाहते हैं कि क्रिप्टो कैसे काम करता है",
+          "जो PI को छोटा-सा बोनस मानते हैं और कीमत बहुत गिरने से भी फ़र्क़ नहीं पड़ता",
+          "जो पहचान सत्यापन और वॉलेट ख़ुद संभाल सकते हैं"
+        ],
+        "notSuits": [
+          "जिन्हें तुरंत नक़द आमदनी चाहिए",
+          "जो सिर्फ़ ऐसी चीज़ें रखना चाहते हैं जो जापान के एक्सचेंज पर बिक सकें",
+          "जिन्हें भरोसा नहीं कि वे 24 अंग्रेज़ी शब्दों का पासफ़्रेज़ ख़ुद सुरक्षित रख पाएँगे",
+          "जो माइनिंग तेज़ करने के लिए जान-पहचान वालों को एक के बाद एक जोड़ना चाहते हैं"
+        ],
+        "steps": [
+          "आधिकारिक Pi Network ऐप इंस्टॉल करें (App Store या Google Play)। यह मुफ़्त है, जापान के App Store पर भी है, और इसे SocialChain Inc. प्रकाशित करती है [1][18]",
+          "साइन अप करते समय इनवाइट कोड डालें। इस साइट का कोड \"eltociear\" है; इसे इस्तेमाल करने पर बुलाने वाले (इस साइट के संचालक) की माइनिंग दर भी बढ़ती है [3]",
+          "हर 24 घंटे में ऐप खोलें और बिजली वाला बटन दबाएँ। दबाने के बाद ऐप बंद करने पर भी PI जमा होता रहता है; न दबाएँ तो कुछ जमा नहीं होता [2]",
+          "30 दिन माइनिंग के बाद (लगातार होना ज़रूरी नहीं), Pi Browser के अंदर KYC ऐप में पहचान सत्यापन के लिए आवेदन करें। \"अस्थायी\" मंज़ूरी पूरी मंज़ूरी नहीं है और इससे माइग्रेशन नहीं होता [4]",
+          "ऐप के \"Mainnet\" टैब की चेकलिस्ट के अनुसार Pi Browser में वॉलेट बनाएँ, पासफ़्रेज़ लिख लें, लॉकअप (एक तय समय तक PI न हिलाने की सेटिंग) चुनें और बैलेंस को मेननेट पर माइग्रेट करें [3][5][10]"
+        ],
+        "howAfter": [
+          "दूसरा माइग्रेशन (बाद में जमा हुए PI का माइग्रेशन) मार्च 2026 से धीरे-धीरे शुरू हो रहा है। इसके लिए पहले वॉलेट में टू-फ़ैक्टर ऑथेंटिकेशन चालू करना होता है, और KYC पास कर चुके रेफ़रल सदस्यों से जुड़े बोनस भी इसी समय ट्रांसफ़र होते हैं।[8]",
+          "माइनिंग तेज़ करने के तीन मुख्य तरीक़े हैं। जब आप और आपके बुलाए हुए व्यक्ति एक साथ माइनिंग करते हैं, तो दोनों को 25% ज़्यादा मिलता है। भरोसेमंद लोगों को \"सिक्योरिटी सर्कल\" में जोड़ने पर हर व्यक्ति के लिए मूल दर का 0.2 गुना बढ़ता है (पाँच लोगों तक), और मेननेट पर PI लॉक करने पर अवधि (दो हफ़्ते से तीन साल) और हिस्से के हिसाब से दर और बढ़ती है।[3]",
+          "समय-सीमा का ध्यान रखें: जो लोग ग्रेस पीरियड की समय-सीमा तक KYC या माइग्रेशन नहीं कर पाए, वे माइग्रेशन से पहले के सिर्फ़ छह महीनों में माइन किया गया PI ही ले जा सकते हैं; बाक़ी ज़ब्त हो जाता है।[6]"
+        ],
+        "can": [
+          "मेननेट पर माइग्रेट किया गया PI दूसरों के वॉलेट में भेजना और पाना (PI में थोड़ी फ़ीस लगती है) [9]",
+          "PI को किसी ऐसे विदेशी एक्सचेंज पर भेजकर बेचना जहाँ यह लिस्टेड है (OKX, Bitget, MEXC, Gate, Kraken आदि) [12][13]",
+          "Pi Browser के अंदर के ऐप्स में PI से भुगतान करना [8]",
+          "PI लॉक करके माइनिंग तेज़ करना [3]"
+        ],
+        "cannot": [
+          "जापान के पंजीकृत एक्सचेंज पर ख़रीदना या बेचना: एसोसिएशन के सदस्यों की एसेट सूची (2 नवंबर 2026 को अपडेट) में PI नहीं है [15]",
+          "KYC और मेननेट माइग्रेशन पूरा करने से पहले माइन किया गया PI हिलाना [4][6]",
+          "पासफ़्रेज़ खो जाने पर वॉलेट वापस पाना (यह Pi के सर्वर पर भी नहीं रहता) [10]",
+          "लॉकअप की अवधि ख़त्म होने से पहले लॉक किया गया PI हिलाना [3]"
+        ],
+        "rightsNote": [
+          "जापान में रहने वाले लोगों के लिए विदेशी एक्सचेंज इस्तेमाल करने से पहले एक बात: जून 2025 में जापान की फ़ाइनेंशियल सर्विसेज़ एजेंसी ने PI रखने वाले तीन विदेशी एक्सचेंजों, Bitget, MEXC और LBank को, बिना पंजीकरण के इंटरनेट पर जापान के निवासियों को डेरिवेटिव ट्रेडिंग के लिए लुभाने पर चेतावनी दी थी। जापान में अपंजीकृत कंपनी के साथ कोई विवाद हो, तो पंजीकृत एक्सचेंज जैसी सुरक्षा की उम्मीद न रखें।[16]"
+        ],
+        "timeline": [
+          [
+            "2019",
+            "2019",
+            "Pi Network की शुरुआत (मूल व्हाइट पेपर) [3]"
+          ],
+          [
+            "2021-12",
+            "दिसंबर 2021",
+            "बाहरी नेटवर्क से न जुड़ने वाले \"बंद मेननेट\" का दौर शुरू [7]"
+          ],
+          [
+            "2024-07-01",
+            "1 जुलाई 2024",
+            "KYC और माइग्रेशन का ग्रेस पीरियड शुरू; समय-सीमा बाद में 28 फ़रवरी 2025 तक बढ़ाई गई [6]"
+          ],
+          [
+            "2025-02-20",
+            "20 फ़रवरी 2025",
+            "ओपन नेटवर्क की शुरुआत (08:00 UTC)। OKX जैसे विदेशी एक्सचेंजों पर PI की ट्रेडिंग शुरू [7][12]"
+          ],
+          [
+            "2025-02-26",
+            "26 फ़रवरी 2025",
+            "अब तक का उच्चतम स्तर, लगभग $2.98 [14]"
+          ],
+          [
+            "2025-09-18",
+            "18 सितंबर 2025",
+            "Fast Track KYC शुरू: 30 से कम माइनिंग सेशन वाले लोग भी वॉलेट इस्तेमाल कर सकते हैं (माइन किया गया PI अभी माइग्रेट नहीं होता) [5]"
+          ],
+          [
+            "2026-03-14",
+            "14 मार्च 2026",
+            "Pi के मुताबिक़ 16,568,774 लोग माइग्रेट कर चुके (5 मार्च तक)। दूसरा माइग्रेशन धीरे-धीरे शुरू और Kraken पर भी PI आया [8]"
+          ],
+          [
+            "2026-09-17",
+            "17 सितंबर 2026",
+            "Pi ने KYC में अटके 4,17,000 से ज़्यादा लोगों की समीक्षा फिर शुरू करने और माइग्रेशन में अटके 4,97,000 लोगों के लिए सुधार की घोषणा की [9]"
+          ],
+          [
+            "2026-11-09",
+            "9 नवंबर 2026",
+            "अब तक का न्यूनतम स्तर, लगभग $0.0626 [14]"
+          ]
+        ],
+        "faq": [
+          [
+            "क्या Pi Network मुफ़्त है? क्या कोई ख़र्च है?",
+            "ऐप मुफ़्त है और माइनिंग में पैसा नहीं लगता। हाँ, रोज़ बटन दबाना पड़ता है, और मेननेट पर PI भेजने के लिए PI में थोड़ी फ़ीस लगती है। आधिकारिक सूची से बाहर की किसी साइट या अकाउंट पर भरोसा न करें जो फ़ीस लेकर जल्दी माइग्रेशन का वादा करे।[1][9][18]"
+          ],
+          [
+            "क्या जापान में PI बेचकर येन मिल सकते हैं?",
+            "जापान का कोई पंजीकृत एक्सचेंज PI नहीं रखता, इसलिए घरेलू एक्सचेंज पर इसे येन में नहीं बदला जा सकता (एसोसिएशन के सदस्यों की एसेट सूची, 2 नवंबर 2026 को अपडेट)। PI की ट्रेडिंग OKX, Bitget, MEXC, Gate और Kraken जैसे विदेशी एक्सचेंजों पर होती है, लेकिन जापान की फ़ाइनेंशियल सर्विसेज़ एजेंसी ने इनमें से Bitget, MEXC और LBank को बिना पंजीकरण के लुभाने पर चेतावनी दी है। विदेशी एक्सचेंज इस्तेमाल करें तो उसकी शर्तों में देखें कि जापान के निवासी उसे इस्तेमाल कर सकते हैं या नहीं, और फ़ैसला अपनी ज़िम्मेदारी पर लें।[13][15][16]"
+          ],
+          [
+            "क्या Pi Network धोखा है?",
+            "PI फ़रवरी 2025 से सचमुच विदेशी एक्सचेंजों पर ट्रेड हो रहा है, और इसकी आधिकारिक साइट और ऐप भी हैं, इसलिए यह \"कुछ भी मौजूद नहीं\" वाला धोखा नहीं है। लेकिन कीमत 26 फ़रवरी 2025 के उच्चतम स्तर (लगभग $2.98) से नवंबर 2026 में लगभग $0.07 तक, यानी 90% से ज़्यादा गिर गई। 100 अरब PI की सीमा में से लगभग 11.4 अरब चलन में हैं, और आगे बाज़ार में कितना और आता है, इसका भी कीमत पर असर होगा। Pi Network के नाम पर धोखाधड़ी भी बहुत होती है।[3][13][14]"
+          ],
+          [
+            "पासफ़्रेज़ क्या है, और खो जाए तो क्या होगा?",
+            "पासफ़्रेज़ 24 अंग्रेज़ी शब्दों का होता है जो आपके वॉलेट की चाबी का काम करता है। यह आपके फ़ोन पर बनता है और Pi के सर्वर पर कभी नहीं जाता, इसलिए खो जाए तो वापस नहीं मिल सकता। इसे काग़ज़ पर लिखकर नज़रों से दूर रखें। Pi कभी आपसे यह नहीं माँगेगा, और इसे डालने की इकलौती जगह Pi Browser में \"wallet.pinet.com\" है।[1][10][11]"
+          ],
+          [
+            "मेरा KYC बहुत दिनों से अटका है। क्या करूँ?",
+            "पहले Pi Browser के KYC ऐप में अपनी स्थिति देखें। 17 सितंबर 2026 को Pi ने घोषणा की कि संदिग्ध डुप्लिकेट अकाउंट के कारण अटके 4,17,000 से ज़्यादा लोग आगे बढ़ सकते हैं, फ़ीस के लिए PI कम होने से माइग्रेट न कर पाए 4,97,000 लोगों के लिए सुधार आएगा, और लाइवनेस (चेहरे की) जाँच दोबारा करने का मौक़ा मिलेगा। \"आपका KYC करवा देंगे\" कहने वाले किसी को भी अपना पहचान-पत्र या अकाउंट न दें।[4][9]"
+          ],
+          [
+            "KYC न करूँ तो क्या होगा?",
+            "आप मेननेट पर माइग्रेट नहीं कर पाएँगे, इसलिए PI न भेज पाएँगे न बेच पाएँगे। जो लोग ग्रेस पीरियड की समय-सीमा चूक गए, वे माइग्रेशन से छह महीने से पहले माइन किया गया PI खो देते हैं।[6]"
+          ],
+          [
+            "क्या PI बेचने पर टैक्स लगता है?",
+            "जापान के निवासियों के लिए वहाँ की नेशनल टैक्स एजेंसी कहती है कि माइनिंग से मिला क्रिप्टो मिलने के समय की क़ीमत पर आय माना जाता है, और क्रिप्टो ट्रेडिंग का मुनाफ़ा सामान्यतः \"विविध आय\" होता है। दूसरे देशों, जैसे भारत, के नियम अलग हैं। अपनी स्थिति के लिए किसी टैक्स विशेषज्ञ से सलाह लें।[17]"
+          ],
+          [
+            "सस्ते में PI बेचने या मेरा PI ख़रीदने की पेशकश का क्या?",
+            "सोशल मीडिया पर या लोगों के बीच PI ख़रीदने-बेचने की पेशकशों को लगभग पक्का धोखा मानें। आधिकारिक चैनल और ऐप सिर्फ़ वही हैं जो आधिकारिक साइट की सूची में हैं; बाक़ी कुछ भी आधिकारिक नहीं है, चाहे वह ख़ुद को आधिकारिक कहे। जो पहले पैसा भेजने को कहे या आपका पासफ़्रेज़ माँगे, उसे साफ़ मना कर दें।[1][11]"
+          ]
+        ],
+        "pros": [
+          "शुरू करने में कोई पैसा नहीं लगता: बस एक फ़ोन और रोज़ एक टैप [2][18]",
+          "फ़रवरी 2025 से सचमुच विदेशी एक्सचेंजों पर ट्रेड हो रहा है [7][13]",
+          "OKX और Kraken जैसे बड़े विदेशी एक्सचेंज भी इसे रखते हैं [8][12][13]",
+          "1.6 करोड़ से ज़्यादा लोग माइग्रेट कर चुके हैं, और Pi Browser में PI से भुगतान लेने वाले ऐप आने लगे हैं [8]",
+          "वॉलेट की चाबी आपके पास रहती है; आपका PI संचालक के पास जमा नहीं रहता [10]"
+        ],
+        "risks": [
+          "भारी गिरावट: 26 फ़रवरी 2025 के उच्चतम स्तर (लगभग $2.98) से नवंबर 2026 में लगभग $0.07, यानी 90% से ज़्यादा नीचे [13][14]",
+          "जापान का कोई पंजीकृत एक्सचेंज इसे नहीं रखता; येन में बदलने के लिए विदेशी एक्सचेंज ही रास्ता है [15]",
+          "PI रखने वाले कुछ विदेशी एक्सचेंजों (Bitget, MEXC, LBank) को जापान की फ़ाइनेंशियल सर्विसेज़ एजेंसी ने बिना पंजीकरण के लुभाने पर चेतावनी दी है [16]",
+          "100 अरब PI की सीमा में से लगभग 11.4 अरब चलन में हैं। बाज़ार में और आने से कीमत पर दबाव पड़ सकता है [3][14]",
+          "KYC और माइग्रेशन में लंबा इंतज़ार हो सकता है, और समय-सीमा चूकने पर छह महीने से पुराना PI चला जाता है [6][9]",
+          "पासफ़्रेज़ खो जाए या चोरी हो जाए, तो PI वापस नहीं मिलता [10][11]",
+          "Pi Network के नाम पर बहुत धोखे होते हैं: नक़ली वॉलेट, नक़ली PI बिक्री, \"KYC सेवाएँ\" और पासफ़्रेज़ हथियाने वाली साइटें [1][11]",
+          "रोज़ बटन दबाना पड़ता है; जिस दिन भूल गए, उस दिन कुछ नहीं मिलता [2]",
+          "जितने ज़्यादा लोग जोड़ें, उतना फ़ायदा। जान-पहचान वालों को बुलाएँ तो कीमत गिरने का जोखिम भी बताएँ [3]"
+        ],
+        "ctaText": "शुरू करने से पहले देख लें कि कीमत कैसे बदली है (जैसे CoinGecko पर) और आप इसे असल में कहाँ बेच पाएँगे। अपना पासफ़्रेज़ कभी किसी को न बताएँ।"
+      },
+      "es": {
+        "title": "Guía completa de Pi Network: cómo empezar, el KYC, la migración a la Mainnet y si se puede vender PI",
+        "short": "Guía completa de Pi Network",
+        "desc": "En Pi Network acumulas PI pulsando un botón en una app cada 24 horas. Cómo empezar, el KYC y la migración a la Mainnet, la compraventa en exchanges extranjeros desde febrero de 2025, por qué los exchanges japoneses no lo listan, las estafas con la frase de acceso y los impuestos, con documentos oficiales y fuentes públicas.",
+        "h": {
+          "summary": "Resumen",
+          "glance": "De un vistazo",
+          "suits": "Te encaja si",
+          "notSuits": "No te encaja si",
+          "toc": "Contenido",
+          "how": "Cómo empezar y minar cada día",
+          "rights": "Qué puedes y qué no puedes hacer con PI",
+          "can": "Puedes",
+          "cannot": "No puedes",
+          "timeline": "Hitos",
+          "faq": "Preguntas frecuentes",
+          "pros": "Lo bueno",
+          "risks": "Riesgos y advertencias",
+          "cta": "Si quieres empezar",
+          "log": "Historial de cambios",
+          "updated": "Última actualización"
+        },
+        "lead": [
+          "Pi Network es un proyecto en el que acumulas un criptoactivo llamado PI pulsando un botón en una app del móvil cada 24 horas. Empezó en 2019 y la app la publica SocialChain Inc. Aquí «minar» no significa cálculos que gastan mucha electricidad, sino abrir la app cada día y seguir activo.[2][3][18]",
+          "El 20 de febrero de 2025 Pi pasó a la «Open Network», conectada con el exterior, y PI empezó a cotizar en exchanges extranjeros como OKX. Pero para vender necesitas antes verificar tu identidad (KYC) y migrar a la Mainnet, y ningún exchange registrado en Japón lo ofrece. El precio ha caído más de un 90% desde su máximo de febrero de 2025.[7][12][14][15]"
+        ],
+        "glance": [
+          [
+            "Gestión",
+            "Pi Core Team (la app la publica SocialChain Inc.) [1][18]"
+          ],
+          [
+            "Qué obtienes",
+            "El criptoactivo PI, que se acumula pulsando un botón en la app cada 24 horas [2]"
+          ],
+          [
+            "Coste",
+            "La app es gratuita y minar no cuesta dinero [18]"
+          ],
+          [
+            "Para mover tus PI",
+            "KYC (verificación de identidad) y migración a una billetera de la Mainnet [4][6]"
+          ],
+          [
+            "Dónde cotiza",
+            "Exchanges extranjeros como OKX, Bitget, MEXC, Gate y Kraken (a 11 de noviembre de 2026) [13]"
+          ],
+          [
+            "Exchanges japoneses",
+            "No lo listan (lista de activos que ofrecen los miembros de la asociación, actualizada el 2 de noviembre de 2026) [15]"
+          ],
+          [
+            "Precio",
+            "Unos $0.072 (unos 11 yenes, 11 de noviembre de 2026, CoinGecko). El máximo fue de unos $2.98 el 26 de febrero de 2025 [13][14]"
+          ],
+          [
+            "Emisión",
+            "Máximo de 100.000 millones de PI; unos 11.400 millones en circulación [3][14]"
+          ]
+        ],
+        "suits": [
+          "Abres el móvil todos los días y no te molesta pulsar una vez al día",
+          "Quieres probar cómo funcionan las criptomonedas sin gastar dinero",
+          "Puedes ver PI como un pequeño extra y no te afectaría que su precio cayera mucho",
+          "Puedes encargarte tú de la verificación de identidad y de una billetera"
+        ],
+        "notSuits": [
+          "Necesitas ingresos en efectivo ya",
+          "Solo quieres tener activos que puedas vender en un exchange de Japón",
+          "No estás seguro de poder guardar a salvo una frase de acceso de 24 palabras",
+          "Piensas invitar a un conocido tras otro para minar más rápido"
+        ],
+        "steps": [
+          "Instala la app oficial de Pi Network (App Store o Google Play). Es gratuita, también está en la App Store de Japón y la publica SocialChain Inc. [1][18]",
+          "Introduce un código de invitación al registrarte. El código de este sitio es «eltociear»; al usarlo también sube la velocidad de minado de quien te invita (la persona que lleva este sitio) [3]",
+          "Abre la app cada 24 horas y pulsa el botón del rayo. Después de pulsarlo, PI se sigue acumulando aunque cierres la app; si no lo pulsas, no se acumula nada [2]",
+          "Tras 30 días de minado (no hace falta que sean seguidos), solicita el KYC en la app de KYC dentro del Pi Browser. Una aprobación «provisional» no es la aprobación completa y no permite migrar [4]",
+          "Sigue la lista de la pestaña «Mainnet» de la app: crea una billetera en el Pi Browser, apunta la frase de acceso, elige un bloqueo (un ajuste que deja tus PI inmóviles durante un tiempo) y migra tu saldo a la Mainnet [3][5][10]"
+        ],
+        "howAfter": [
+          "Las segundas migraciones (para los PI acumulados después) se van activando poco a poco desde marzo de 2026. Antes hay que activar la verificación en dos pasos de la billetera, y en ese momento también se traspasan las bonificaciones por referidos que han pasado el KYC.[8]",
+          "Hay tres formas principales de minar más rápido. Cuando tú y alguien a quien invitaste mináis a la vez, cada uno gana un 25% más. Añadir personas de confianza a tu «Security Circle» suma 0,2 veces la tasa base por persona (hasta cinco), y bloquear PI en la Mainnet suma más según el plazo (de dos semanas a tres años) y la proporción que bloquees.[3]",
+          "Ojo con los plazos: quien no completó el KYC o la migración antes de que terminara el periodo de gracia solo puede migrar lo minado en los seis meses anteriores a su migración; el resto se pierde.[6]"
+        ],
+        "can": [
+          "Enviar a otras billeteras los PI que ya migraste a la Mainnet y recibirlos (con una pequeña comisión en PI) [9]",
+          "Enviar PI a un exchange extranjero que lo liste y venderlo allí (OKX, Bitget, MEXC, Gate, Kraken y otros) [12][13]",
+          "Pagar con PI en apps dentro del Pi Browser [8]",
+          "Bloquear PI para minar más rápido [3]"
+        ],
+        "cannot": [
+          "Comprarlo o venderlo en un exchange registrado en Japón: PI no figura en la lista de activos que ofrecen los miembros de la asociación (actualizada el 2 de noviembre de 2026) [15]",
+          "Mover los PI minados antes de completar el KYC y la migración a la Mainnet [4][6]",
+          "Recuperar una billetera si perdiste la frase de acceso (no se guarda en los servidores de Pi) [10]",
+          "Mover los PI bloqueados antes de que termine el plazo del bloqueo [3]"
+        ],
+        "rightsNote": [
+          "Una advertencia para quien vive en Japón y usa exchanges extranjeros: en junio de 2025 la Agencia de Servicios Financieros de Japón advirtió a tres exchanges extranjeros que listan PI, Bitget, MEXC y LBank, por ofrecer por internet a residentes en Japón operaciones con derivados sin estar registrados. Si surge un problema con una empresa no registrada en Japón, no cuentes con la protección que tendrías en un exchange registrado.[16]"
+        ],
+        "timeline": [
+          [
+            "2019",
+            "2019",
+            "Nace Pi Network (el libro blanco original) [3]"
+          ],
+          [
+            "2021-12",
+            "Diciembre de 2021",
+            "Empieza el periodo de «Mainnet cerrada», sin conexión con redes externas [7]"
+          ],
+          [
+            "2024-07-01",
+            "1 de julio de 2024",
+            "Empieza el periodo de gracia para el KYC y la migración; los plazos se ampliaron luego hasta el 28 de febrero de 2025 [6]"
+          ],
+          [
+            "2025-02-20",
+            "20 de febrero de 2025",
+            "Paso a la Open Network (08:00 UTC). PI empieza a cotizar en exchanges extranjeros como OKX [7][12]"
+          ],
+          [
+            "2025-02-26",
+            "26 de febrero de 2025",
+            "Máximo histórico hasta ahora, unos $2.98 [14]"
+          ],
+          [
+            "2025-09-18",
+            "18 de septiembre de 2025",
+            "Llega el Fast Track KYC: quienes tienen menos de 30 sesiones de minado pueden usar una billetera (sus PI minados aún no se pueden migrar) [5]"
+          ],
+          [
+            "2026-03-14",
+            "14 de marzo de 2026",
+            "Pi informa de 16.568.774 personas migradas (a 5 de marzo). Empiezan las segundas migraciones y Kraken añade PI [8]"
+          ],
+          [
+            "2026-09-17",
+            "17 de septiembre de 2026",
+            "Pi anuncia que desbloquea el KYC de más de 417.000 personas y una solución para 497.000 atascadas en la migración [9]"
+          ],
+          [
+            "2026-11-09",
+            "9 de noviembre de 2026",
+            "Mínimo histórico hasta ahora, unos $0.0626 [14]"
+          ]
+        ],
+        "faq": [
+          [
+            "¿Pi Network es gratis? ¿Cuesta algo?",
+            "La app es gratuita y minar no cuesta dinero. Eso sí, hay que pulsar a diario, y enviar PI en la Mainnet requiere una pequeña comisión en PI. No te fíes de webs o cuentas que no estén en la lista oficial y te ofrezcan migrar más rápido a cambio de una comisión.[1][9][18]"
+          ],
+          [
+            "¿Se puede vender PI en Japón y cobrar en yenes?",
+            "Ningún exchange registrado en Japón ofrece PI, así que no se puede cambiar a yenes en un exchange nacional (lista de activos que ofrecen los miembros de la asociación, actualizada el 2 de noviembre de 2026). PI cotiza en exchanges extranjeros como OKX, Bitget, MEXC, Gate y Kraken, pero la Agencia de Servicios Financieros de Japón ha advertido a Bitget, MEXC y LBank por captar clientes sin registro. Si usas un exchange extranjero, comprueba en sus condiciones si admite residentes en Japón y decide bajo tu propia responsabilidad.[13][15][16]"
+          ],
+          [
+            "¿Pi Network es una estafa?",
+            "PI cotiza de verdad en exchanges extranjeros desde febrero de 2025, y hay web y app oficiales, así que no es una estafa en el sentido de que no exista nada. Pero el precio cayó más de un 90%, desde su máximo del 26 de febrero de 2025 (unos $2.98) hasta alrededor de $0.07 en noviembre de 2026. Del máximo de 100.000 millones de PI hay unos 11.400 millones en circulación, y cuánto más llegue al mercado también pesará en el precio. Además, hay muchas estafas que usan el nombre de Pi Network.[3][13][14]"
+          ],
+          [
+            "¿Qué es la frase de acceso y qué pasa si la pierdo?",
+            "La frase de acceso son 24 palabras en inglés que funcionan como la llave de tu billetera. Se crea en tu móvil y nunca se envía a los servidores de Pi, así que si la pierdes no se puede recuperar. Escríbela en papel y guárdala donde nadie la vea. Pi nunca te la pedirá, y el único sitio donde introducirla es «wallet.pinet.com» en el Pi Browser.[1][10][11]"
+          ],
+          [
+            "Mi KYC lleva una eternidad pendiente. ¿Qué hago?",
+            "Primero revisa tu estado en la app de KYC del Pi Browser. El 17 de septiembre de 2026 Pi anunció que más de 417.000 personas retenidas por sospecha de cuentas duplicadas podían avanzar, una solución para 497.000 que no podían migrar por no tener PI para la comisión y nuevas oportunidades de repetir la prueba de vida (de la cara). Nunca entregues tu documento ni tu cuenta a quien se ofrezca a «hacerte el KYC».[4][9]"
+          ],
+          [
+            "¿Qué pasa si no hago el KYC?",
+            "No podrás migrar a la Mainnet, así que no podrás enviar ni vender tus PI. Quien no llegó a los plazos del periodo de gracia pierde lo minado más de seis meses antes de su migración.[6]"
+          ],
+          [
+            "¿Pago impuestos si vendo PI?",
+            "Para los residentes en Japón, la Agencia Nacional Tributaria indica que las criptomonedas obtenidas minando cuentan como ingreso por su valor al recibirlas, y que las ganancias por operar con criptomonedas son en principio «ingresos varios». Las normas de cada país son distintas: consulta con la administración tributaria o con un asesor fiscal.[17]"
+          ],
+          [
+            "¿Y quienes ofrecen vender PI barato o comprar mis PI?",
+            "Considera muy probablemente una estafa cualquier oferta de compraventa de PI en redes sociales o entre particulares. Los canales y apps oficiales son solo los de la lista de la web oficial; lo demás no es oficial aunque lo diga. Rechaza todo lo que te pida enviar dinero primero o te pida la frase de acceso.[1][11]"
+          ]
+        ],
+        "pros": [
+          "Empezar no cuesta dinero: basta un móvil y una pulsación al día [2][18]",
+          "Cotiza de verdad en exchanges extranjeros desde febrero de 2025 [7][13]",
+          "Lo listan exchanges extranjeros, incluidos grandes como OKX y Kraken [8][12][13]",
+          "Más de 16 millones de personas han migrado, y en el Pi Browser aparecen apps que aceptan pagos en PI [8]",
+          "Tú guardas la llave de la billetera; tus PI no quedan en manos del operador [10]"
+        ],
+        "risks": [
+          "Caída fuerte: del máximo del 26 de febrero de 2025 (unos $2.98) a alrededor de $0.07 en noviembre de 2026, más de un 90% menos [13][14]",
+          "Ningún exchange registrado en Japón lo lista; para pasarlo a yenes hay que usar un exchange extranjero [15]",
+          "Algunos exchanges extranjeros que listan PI (Bitget, MEXC, LBank) han recibido advertencias de la Agencia de Servicios Financieros de Japón por captar clientes sin registro [16]",
+          "Del máximo de 100.000 millones de PI hay unos 11.400 millones en circulación. Que llegue más al mercado podría presionar el precio [3][14]",
+          "El KYC y la migración pueden hacerte esperar mucho, y si no llegas a los plazos pierdes lo minado hace más de seis meses [6][9]",
+          "Si pierdes la frase de acceso o te la roban, tus PI no se pueden recuperar [10][11]",
+          "Abundan las estafas con el nombre de Pi Network: billeteras falsas, ventas falsas de PI, «servicios de KYC» y webs que buscan tu frase de acceso [1][11]",
+          "Hay que pulsar a diario; los días que se te olvide no ganas nada [2]",
+          "Cuantas más personas invitas, mejor te va. Si invitas a conocidos, cuéntales también el riesgo de caída del precio [3]"
+        ],
+        "ctaText": "Antes de empezar, mira cómo ha evolucionado el precio (en CoinGecko, por ejemplo) y comprueba dónde podrías venderlo de verdad. No le digas a nadie tu frase de acceso."
+      },
+      "de": {
+        "title": "Pi Network: kompletter Guide zu Einstieg, KYC, Mainnet-Migration und Verkauf von PI",
+        "short": "Kompletter Guide zu Pi Network",
+        "desc": "Bei Pi Network sammelst du PI, indem du alle 24 Stunden in einer App auf einen Button tippst. Einstieg, KYC und Mainnet-Migration, der Handel an ausländischen Börsen seit Februar 2025, warum japanische Börsen PI nicht führen, Betrug mit der Passphrase und Steuern, aus offiziellen Unterlagen und öffentlichen Quellen.",
+        "h": {
+          "summary": "Zusammenfassung",
+          "glance": "Auf einen Blick",
+          "suits": "Passt zu dir, wenn du",
+          "notSuits": "Passt nicht zu dir, wenn du",
+          "toc": "Inhalt",
+          "how": "Einstieg und tägliches Mining",
+          "rights": "Was du mit PI tun kannst und was nicht",
+          "can": "Du kannst",
+          "cannot": "Du kannst nicht",
+          "timeline": "Wichtige Ereignisse",
+          "faq": "Häufige Fragen",
+          "pros": "Die guten Seiten",
+          "risks": "Risiken und Hinweise",
+          "cta": "Wenn du anfangen willst",
+          "log": "Änderungsprotokoll",
+          "updated": "Zuletzt aktualisiert"
+        },
+        "lead": [
+          "Pi Network ist ein Projekt, bei dem du einen Kryptowert namens PI sammelst, indem du alle 24 Stunden in einer Handy-App auf einen Button tippst. Es startete 2019, die App wird von SocialChain Inc. herausgegeben. „Mining“ bedeutet hier keine stromfressende Rechenarbeit, sondern dass du die App jeden Tag öffnest und aktiv bleibst.[2][3][18]",
+          "Am 20. Februar 2025 wechselte Pi ins „Open Network“, das nach außen verbunden ist, und PI wurde an ausländischen Börsen wie OKX handelbar. Zum Verkaufen brauchst du aber zuerst eine Identitätsprüfung (KYC) und die Migration ins Mainnet, und keine in Japan registrierte Börse führt PI. Der Kurs liegt über 90 % unter seinem Hoch vom Februar 2025.[7][12][14][15]"
+        ],
+        "glance": [
+          [
+            "Betreiber",
+            "Pi Core Team (die App gibt SocialChain Inc. heraus) [1][18]"
+          ],
+          [
+            "Was du bekommst",
+            "Den Kryptowert PI, gesammelt durch ein Tippen in der App alle 24 Stunden [2]"
+          ],
+          [
+            "Kosten",
+            "Die App ist kostenlos, Mining kostet kein Geld [18]"
+          ],
+          [
+            "Um PI zu bewegen",
+            "KYC (Identitätsprüfung) und Migration in eine Mainnet-Wallet [4][6]"
+          ],
+          [
+            "Wo PI gehandelt wird",
+            "Ausländische Börsen wie OKX, Bitget, MEXC, Gate und Kraken (Stand 11. November 2026) [13]"
+          ],
+          [
+            "Japanische Börsen",
+            "Nicht gelistet (Liste der von Verbandsmitgliedern geführten Werte, Stand 2. November 2026) [15]"
+          ],
+          [
+            "Kurs",
+            "Etwa 0,072 $ (rund 11 Yen, 11. November 2026, CoinGecko). Das Hoch lag am 26. Februar 2025 bei etwa 2,98 $ [13][14]"
+          ],
+          [
+            "Menge",
+            "Höchstens 100 Milliarden PI; rund 11,4 Milliarden PI im Umlauf [3][14]"
+          ]
+        ],
+        "suits": [
+          "ohnehin jeden Tag aufs Handy schaust und ein Tippen am Tag dich nicht stört",
+          "ohne Geld auszugeben ausprobieren willst, wie Krypto funktioniert",
+          "PI als kleines Extra siehst und ein starker Kursverfall dich nicht trifft",
+          "Identitätsprüfung und Wallet selbst in den Griff bekommst"
+        ],
+        "notSuits": [
+          "sofort Bargeld brauchst",
+          "nur Werte halten willst, die du an einer Börse in Japan verkaufen kannst",
+          "dir nicht zutraust, eine Passphrase aus 24 Wörtern selbst sicher aufzubewahren",
+          "vorhast, einen Bekannten nach dem anderen anzuwerben, um schneller zu minen"
+        ],
+        "steps": [
+          "Installiere die offizielle Pi-Network-App (App Store oder Google Play). Sie ist kostenlos, auch im japanischen App Store, und wird von SocialChain Inc. herausgegeben [1][18]",
+          "Gib bei der Anmeldung einen Einladungscode ein. Der Code dieser Seite ist „eltociear“; damit steigt auch die Mining-Rate der Person, die dich eingeladen hat (des Betreibers dieser Seite) [3]",
+          "Öffne die App alle 24 Stunden und tippe auf den Blitz-Button. Danach sammelt sich PI weiter an, auch wenn du die App schließt; ohne Tippen sammelt sich nichts an [2]",
+          "Nach 30 Tagen Mining (sie müssen nicht aufeinanderfolgen) beantragst du KYC in der KYC-App im Pi Browser. Eine „vorläufige“ Freigabe ist keine vollständige und erlaubt keine Migration [4]",
+          "Folge der Checkliste im Tab „Mainnet“ der App: Wallet im Pi Browser anlegen, Passphrase notieren, einen Lockup wählen (eine Einstellung, die PI für eine Zeit festlegt) und das Guthaben ins Mainnet migrieren [3][5][10]"
+        ],
+        "howAfter": [
+          "Zweite Migrationen (für später gesammelte PI) werden seit März 2026 schrittweise freigeschaltet. Vorher musst du die Zwei-Faktor-Authentifizierung für deine Wallet einschalten; Empfehlungsboni für Teammitglieder mit bestandenem KYC werden dabei mit übertragen.[8]",
+          "Es gibt drei Hauptwege, schneller zu minen. Wenn du und jemand, den du eingeladen hast, gleichzeitig minen, bekommt ihr beide 25 % mehr. Vertrauenswürdige Personen in deinem „Security Circle“ bringen pro Person das 0,2-Fache der Basisrate (bis zu fünf), und ein Lockup von PI im Mainnet bringt je nach Dauer (zwei Wochen bis drei Jahre) und Anteil zusätzlich mehr.[3]",
+          "Achte auf Fristen: Wer KYC oder Migration nicht vor Ende der Übergangsfrist geschafft hat, kann nur das migrieren, was in den sechs Monaten vor der eigenen Migration gemint wurde; der Rest verfällt.[6]"
+        ],
+        "can": [
+          "Ins Mainnet migrierte PI an andere Wallets senden und empfangen (mit einer kleinen Gebühr in PI) [9]",
+          "PI an eine ausländische Börse schicken, die es führt, und dort verkaufen (OKX, Bitget, MEXC, Gate, Kraken und andere) [12][13]",
+          "In Apps im Pi Browser mit PI bezahlen [8]",
+          "PI per Lockup festlegen, um schneller zu minen [3]"
+        ],
+        "cannot": [
+          "PI an einer in Japan registrierten Börse kaufen oder verkaufen: In der Liste der von Verbandsmitgliedern geführten Werte (Stand 2. November 2026) fehlt PI [15]",
+          "Gemintes PI bewegen, bevor KYC und Mainnet-Migration abgeschlossen sind [4][6]",
+          "Eine Wallet wiederherstellen, deren Passphrase du verloren hast (sie liegt nicht auf den Servern von Pi) [10]",
+          "Per Lockup festgelegte PI vor Ablauf der Frist bewegen [3]"
+        ],
+        "rightsNote": [
+          "Ein Hinweis für Menschen in Japan, die ausländische Börsen nutzen: Im Juni 2025 hat die japanische Finanzaufsicht FSA drei ausländische Börsen, die PI führen, Bitget, MEXC und LBank, verwarnt, weil sie Einwohner Japans ohne Registrierung online zum Derivatehandel geworben hatten. Gibt es Ärger mit einem in Japan nicht registrierten Anbieter, rechne nicht mit dem Schutz, den eine registrierte Börse bietet.[16]"
+        ],
+        "timeline": [
+          [
+            "2019",
+            "2019",
+            "Start von Pi Network (das ursprüngliche Whitepaper) [3]"
+          ],
+          [
+            "2021-12",
+            "Dezember 2021",
+            "Beginn der Phase des „geschlossenen Mainnet“ ohne Verbindung zu anderen Netzwerken [7]"
+          ],
+          [
+            "2024-07-01",
+            "1. Juli 2024",
+            "Beginn der Übergangsfrist für KYC und Migration; die Fristen wurden später bis 28. Februar 2025 verlängert [6]"
+          ],
+          [
+            "2025-02-20",
+            "20. Februar 2025",
+            "Wechsel ins Open Network (08:00 UTC). PI wird an ausländischen Börsen wie OKX handelbar [7][12]"
+          ],
+          [
+            "2025-02-26",
+            "26. Februar 2025",
+            "Bisheriges Allzeithoch, etwa 2,98 $ [14]"
+          ],
+          [
+            "2025-09-18",
+            "18. September 2025",
+            "Start von Fast Track KYC: Wer weniger als 30 Mining-Sessions hat, kann eine Wallet nutzen (gemintes PI lässt sich noch nicht migrieren) [5]"
+          ],
+          [
+            "2026-03-14",
+            "14. März 2026",
+            "Pi meldet 16.568.774 migrierte Pioneers (Stand 5. März). Zweite Migrationen starten schrittweise, Kraken nimmt PI auf [8]"
+          ],
+          [
+            "2026-09-17",
+            "17. September 2026",
+            "Pi kündigt an, das KYC von über 417.000 Personen freizugeben und 497.000 bei der Migration feststeckenden Personen zu helfen [9]"
+          ],
+          [
+            "2026-11-09",
+            "9. November 2026",
+            "Bisheriges Allzeittief, etwa 0,0626 $ [14]"
+          ]
+        ],
+        "faq": [
+          [
+            "Ist Pi Network kostenlos? Kostet es etwas?",
+            "Die App ist kostenlos, Mining kostet kein Geld. Du musst aber täglich tippen, und Überweisungen im Mainnet kosten eine kleine Gebühr in PI. Glaube keinen Seiten oder Konten, die nicht auf der offiziellen Liste stehen und gegen eine Gebühr eine schnellere Migration versprechen.[1][9][18]"
+          ],
+          [
+            "Kann ich PI in Japan verkaufen und Yen bekommen?",
+            "Keine in Japan registrierte Börse führt PI, deshalb lässt es sich an einer inländischen Börse nicht in Yen tauschen (Liste der von Verbandsmitgliedern geführten Werte, Stand 2. November 2026). PI wird an ausländischen Börsen wie OKX, Bitget, MEXC, Gate und Kraken gehandelt, doch die japanische Finanzaufsicht hat Bitget, MEXC und LBank wegen Kundenwerbung ohne Registrierung verwarnt. Wenn du eine ausländische Börse nutzt, prüfe in deren Bedingungen, ob Einwohner Japans sie nutzen dürfen, und entscheide auf eigenes Risiko.[13][15][16]"
+          ],
+          [
+            "Ist Pi Network Betrug?",
+            "PI wird seit Februar 2025 tatsächlich an ausländischen Börsen gehandelt, und es gibt eine offizielle Website und App. Ein Betrug in dem Sinne, dass gar nichts existiert, ist es also nicht. Der Kurs ist aber um über 90 % gefallen, vom Hoch am 26. Februar 2025 (etwa 2,98 $) auf rund 0,07 $ im November 2026. Von höchstens 100 Milliarden PI sind rund 11,4 Milliarden im Umlauf, und wie viel noch an den Markt kommt, wird ebenfalls auf den Kurs drücken. Außerdem gibt es viele Betrugsmaschen mit dem Namen Pi Network.[3][13][14]"
+          ],
+          [
+            "Was ist die Passphrase, und was passiert, wenn ich sie verliere?",
+            "Die Passphrase besteht aus 24 englischen Wörtern und ist der Schlüssel zu deiner Wallet. Sie wird auf deinem Handy erzeugt und nie an die Server von Pi geschickt, deshalb lässt sie sich nicht wiederherstellen, wenn du sie verlierst. Schreib sie auf Papier und bewahre sie gut versteckt auf. Pi wird dich nie danach fragen, und eingeben darfst du sie nur unter „wallet.pinet.com“ im Pi Browser.[1][10][11]"
+          ],
+          [
+            "Mein KYC hängt seit Ewigkeiten. Was kann ich tun?",
+            "Prüfe zuerst deinen Status in der KYC-App im Pi Browser. Am 17. September 2026 hat Pi angekündigt, dass über 417.000 wegen Verdachts auf Doppelkonten blockierte Personen weitermachen können, dass 497.000 Personen geholfen wird, die mangels PI für die Gebühr nicht migrieren konnten, und dass sich die Lebenderkennung (Gesicht) wiederholen lässt. Gib deinen Ausweis oder dein Konto nie jemandem, der anbietet, „dein KYC für dich zu erledigen“.[4][9]"
+          ],
+          [
+            "Was passiert, wenn ich kein KYC mache?",
+            "Du kannst nicht ins Mainnet migrieren und PI daher weder senden noch verkaufen. Wer die Fristen der Übergangsfrist verpasst hat, verliert, was mehr als sechs Monate vor der eigenen Migration gemint wurde.[6]"
+          ],
+          [
+            "Muss ich Steuern zahlen, wenn ich PI verkaufe?",
+            "Für Einwohner Japans sagt die nationale Steuerbehörde, dass durch Mining erhaltene Kryptowerte zum Wert beim Erhalt als Einkommen zählen und Gewinne aus Kryptogeschäften grundsätzlich „sonstige Einkünfte“ sind. In Deutschland und anderen Ländern gelten eigene Regeln; frag dein Finanzamt oder eine Steuerberatung.[17]"
+          ],
+          [
+            "Und Angebote, PI billig zu verkaufen oder meine PI zu kaufen?",
+            "Betrachte Kauf- und Verkaufsangebote für PI in sozialen Medien oder unter Privatleuten als sehr wahrscheinlich Betrug. Offizielle Kanäle und Apps sind nur die auf der Liste der offiziellen Website; alles andere ist nicht offiziell, auch wenn es das behauptet. Lehne alles ab, was dich zuerst Geld überweisen lässt oder nach deiner Passphrase fragt.[1][11]"
+          ]
+        ],
+        "pros": [
+          "Der Einstieg kostet nichts: Du brauchst nur ein Handy und ein Tippen am Tag [2][18]",
+          "Wird seit Februar 2025 tatsächlich an ausländischen Börsen gehandelt [7][13]",
+          "Ausländische Börsen führen PI, auch große wie OKX und Kraken [8][12][13]",
+          "Über 16 Millionen Menschen haben migriert, und im Pi Browser tauchen Apps auf, die PI als Zahlung annehmen [8]",
+          "Den Wallet-Schlüssel hältst du selbst; deine PI liegen nicht beim Betreiber [10]"
+        ],
+        "risks": [
+          "Starker Kursverfall: vom Hoch am 26. Februar 2025 (etwa 2,98 $) auf rund 0,07 $ im November 2026, über 90 % weniger [13][14]",
+          "Keine in Japan registrierte Börse führt PI; um Yen zu bekommen, bleibt nur eine ausländische Börse [15]",
+          "Einige ausländische Börsen, die PI führen (Bitget, MEXC, LBank), wurden von der japanischen Finanzaufsicht wegen Kundenwerbung ohne Registrierung verwarnt [16]",
+          "Von höchstens 100 Milliarden PI sind rund 11,4 Milliarden im Umlauf. Kommt mehr an den Markt, kann das den Kurs belasten [3][14]",
+          "KYC und Migration können lange dauern, und wer Fristen verpasst, verliert, was vor mehr als sechs Monaten gemint wurde [6][9]",
+          "Geht die Passphrase verloren oder wird sie gestohlen, sind deine PI weg [10][11]",
+          "Viele Betrugsmaschen nutzen den Namen Pi Network: gefälschte Wallets, gefälschte PI-Verkäufe, „KYC-Dienste“ und Seiten, die deine Passphrase abgreifen wollen [1][11]",
+          "Braucht ein tägliches Tippen; an vergessenen Tagen gibt es nichts [2]",
+          "Je mehr Leute du wirbst, desto besser für dich. Wenn du Bekannte einlädst, erzähl ihnen auch vom Kursrisiko [3]"
+        ],
+        "ctaText": "Schau dir vor dem Start an, wie sich der Kurs entwickelt hat (etwa bei CoinGecko), und prüfe, wo du PI wirklich verkaufen könntest. Verrate niemandem deine Passphrase."
+      },
+      "ar": {
+        "title": "الدليل الكامل إلى ⁦Pi Network⁩: كيف تبدأ، والتحقق من الهوية، والانتقال إلى الشبكة الرئيسية، وهل يمكن بيع ⁦PI⁩",
+        "short": "الدليل الكامل إلى ⁦Pi Network⁩",
+        "desc": "في ⁦Pi Network⁩ تجمع ⁦PI⁩ بالضغط على زر في تطبيق كل 24 ساعة. كيف تبدأ، والتحقق من الهوية والانتقال إلى الشبكة الرئيسية، والتداول في منصات أجنبية منذ فبراير 2025، ولماذا لا تدرجها المنصات اليابانية، وعمليات الاحتيال على عبارة المرور، والضرائب، من الوثائق الرسمية والمصادر العامة.",
+        "h": {
+          "summary": "الخلاصة",
+          "glance": "نظرة سريعة",
+          "suits": "تناسبك إن كنت",
+          "notSuits": "لا تناسبك إن كنت",
+          "toc": "المحتويات",
+          "how": "كيف تبدأ والتعدين اليومي",
+          "rights": "ما يمكنك فعله بعملة ⁦PI⁩ وما لا يمكنك",
+          "can": "يمكنك",
+          "cannot": "لا يمكنك",
+          "timeline": "أبرز الأحداث",
+          "faq": "أسئلة شائعة",
+          "pros": "الجوانب الجيدة",
+          "risks": "المخاطر والتنبيهات",
+          "cta": "إن أردت أن تبدأ",
+          "log": "سجل التحديثات",
+          "updated": "آخر تحديث"
+        },
+        "lead": [
+          "⁦Pi Network⁩ مشروع تجمع فيه أصلًا مشفرًا اسمه ⁦PI⁩ بالضغط على زر في تطبيق الهاتف كل 24 ساعة. بدأ في 2019، وتنشر التطبيق شركة ⁦SocialChain Inc.⁩. و«التعدين» هنا لا يعني حسابات تستهلك الكهرباء، بل أن تفتح التطبيق كل يوم وتبقى نشطًا.[2][3][18]",
+          "في 20 فبراير 2025 انتقلت ⁦Pi⁩ إلى «الشبكة المفتوحة» المتصلة بالعالم الخارجي، وبدأ تداول ⁦PI⁩ في منصات أجنبية مثل ⁦OKX⁩. لكن البيع يتطلب أولًا التحقق من الهوية (⁦KYC⁩) والانتقال إلى الشبكة الرئيسية، ولا تتعامل بها أي منصة مسجلة في اليابان. وقد انخفض السعر بأكثر من 90% عن أعلى مستوى له في فبراير 2025.[7][12][14][15]"
+        ],
+        "glance": [
+          [
+            "المشغّل",
+            "⁦Pi Core Team⁩ (وتنشر التطبيق شركة ⁦SocialChain Inc.⁩) [1][18]"
+          ],
+          [
+            "ما تحصل عليه",
+            "الأصل المشفر ⁦PI⁩، ويتجمع بالضغط على زر في التطبيق كل 24 ساعة [2]"
+          ],
+          [
+            "التكلفة",
+            "التطبيق مجاني والتعدين لا يكلف مالًا [18]"
+          ],
+          [
+            "لتحريك ⁦PI⁩",
+            "التحقق من الهوية (⁦KYC⁩) والانتقال إلى محفظة على الشبكة الرئيسية [4][6]"
+          ],
+          [
+            "أين تُتداول",
+            "منصات أجنبية مثل ⁦OKX⁩ و⁦Bitget⁩ و⁦MEXC⁩ و⁦Gate⁩ و⁦Kraken⁩ (حتى 11 نوفمبر 2026) [13]"
+          ],
+          [
+            "المنصات اليابانية",
+            "غير مدرجة (قائمة الأصول التي يتعامل بها أعضاء الرابطة، المحدّثة في 2 نوفمبر 2026) [15]"
+          ],
+          [
+            "السعر",
+            "نحو ⁦$0.072⁩ (نحو 11 ينًا، 11 نوفمبر 2026، ⁦CoinGecko⁩). وكان أعلى مستوى نحو ⁦$2.98⁩ في 26 فبراير 2025 [13][14]"
+          ],
+          [
+            "الكمية",
+            "حد أقصى 100 مليار ⁦PI⁩؛ ونحو 11.4 مليار ⁦PI⁩ في التداول [3][14]"
+          ]
+        ],
+        "suits": [
+          "تفتح هاتفك كل يوم أصلًا ولا تمانع ضغطة واحدة يوميًا",
+          "تريد تجربة طريقة عمل العملات المشفرة دون إنفاق المال",
+          "تعدّ ⁦PI⁩ مكسبًا صغيرًا إضافيًا ولن يضرك انخفاض سعرها كثيرًا",
+          "تستطيع إنجاز التحقق من الهوية وإدارة محفظة بنفسك"
+        ],
+        "notSuits": [
+          "تحتاج إلى دخل نقدي فورًا",
+          "لا تريد إلا أصولًا يمكن بيعها في منصة يابانية",
+          "لست واثقًا من قدرتك على حفظ عبارة مرور من 24 كلمة بأمان",
+          "تنوي دعوة معارفك واحدًا تلو الآخر لتسريع التعدين"
+        ],
+        "steps": [
+          "ثبّت تطبيق ⁦Pi Network⁩ الرسمي (⁦App Store⁩ أو ⁦Google Play⁩). وهو مجاني، ومتاح في متجر التطبيقات الياباني أيضًا، وتنشره شركة ⁦SocialChain Inc.⁩ [1][18]",
+          "أدخل رمز دعوة عند التسجيل. رمز هذا الموقع هو «⁦eltociear⁩»، واستخدامه يرفع أيضًا سرعة تعدين من دعاك (القائم على هذا الموقع) [3]",
+          "افتح التطبيق كل 24 ساعة واضغط زر البرق. بعد الضغط يستمر التجميع حتى لو أغلقت التطبيق، وإن لم تضغط فلن يتجمع شيء [2]",
+          "بعد 30 يومًا من التعدين (لا يُشترط أن تكون متتالية) قدّم طلب التحقق من الهوية في تطبيق ⁦KYC⁩ داخل ⁦Pi Browser⁩. والموافقة «المبدئية» ليست موافقة كاملة ولا تسمح بالانتقال [4]",
+          "اتبع القائمة في تبويب «⁦Mainnet⁩» في التطبيق: أنشئ محفظة في ⁦Pi Browser⁩، ودوّن عبارة المرور، واختر الحجز (إعداد يجمّد ⁦PI⁩ مدة معينة)، ثم انقل رصيدك إلى الشبكة الرئيسية [3][5][10]"
+        ],
+        "howAfter": [
+          "بدأ الانتقال الثاني (لنقل ما تجمّع لاحقًا) يُفعَّل تدريجيًا منذ مارس 2026. ويجب أولًا تفعيل المصادقة الثنائية للمحفظة، وتُنقل في الوقت نفسه مكافآت الإحالة المرتبطة بأعضاء الفريق الذين اجتازوا التحقق من الهوية.[8]",
+          "هناك ثلاث طرق رئيسية لتسريع التعدين. عندما تعدّن أنت ومن دعوته في الوقت نفسه، يحصل كل منكما على 25% إضافية. وإضافة أشخاص تثق بهم إلى «دائرة الأمان» تضيف 0.2 من المعدل الأساسي عن كل شخص (حتى خمسة)، وحجز ⁦PI⁩ على الشبكة الرئيسية يضيف المزيد بحسب المدة (من أسبوعين إلى ثلاث سنوات) والنسبة المحجوزة.[3]",
+          "انتبه إلى المواعيد: من لم يُكمل التحقق من الهوية أو الانتقال قبل انتهاء فترة السماح لا يستطيع نقل إلا ما عدّنه في الأشهر الستة السابقة لانتقاله، ويُفقد الباقي.[6]"
+        ],
+        "can": [
+          "إرسال ⁦PI⁩ التي نقلتها إلى الشبكة الرئيسية إلى محافظ الآخرين واستلامها (برسوم صغيرة بعملة ⁦PI⁩) [9]",
+          "إرسال ⁦PI⁩ إلى منصة أجنبية تدرجها وبيعها هناك (⁦OKX⁩ و⁦Bitget⁩ و⁦MEXC⁩ و⁦Gate⁩ و⁦Kraken⁩ وغيرها) [12][13]",
+          "الدفع بعملة ⁦PI⁩ في تطبيقات داخل ⁦Pi Browser⁩ [8]",
+          "حجز ⁦PI⁩ لتسريع التعدين [3]"
+        ],
+        "cannot": [
+          "شراؤها أو بيعها في منصة مسجلة في اليابان: فعملة ⁦PI⁩ ليست في قائمة الأصول التي يتعامل بها أعضاء الرابطة (المحدّثة في 2 نوفمبر 2026) [15]",
+          "تحريك ما عدّنته قبل إكمال التحقق من الهوية والانتقال إلى الشبكة الرئيسية [4][6]",
+          "استعادة محفظة فقدت عبارة مرورها (فهي غير محفوظة على خوادم ⁦Pi⁩) [10]",
+          "تحريك ⁦PI⁩ المحجوزة قبل انتهاء مدة الحجز [3]"
+        ],
+        "rightsNote": [
+          "تنبيه لمن يعيش في اليابان ويستخدم منصات أجنبية: في يونيو 2025 وجّهت هيئة الخدمات المالية اليابانية تحذيرات إلى ثلاث منصات أجنبية تدرج ⁦PI⁩، هي ⁦Bitget⁩ و⁦MEXC⁩ و⁦LBank⁩، لأنها كانت تستقطب المقيمين في اليابان عبر الإنترنت لتداول المشتقات دون تسجيل. وإن وقعت مشكلة مع جهة غير مسجلة في اليابان، فلا تتوقع الحماية التي توفرها منصة مسجلة.[16]"
+        ],
+        "timeline": [
+          [
+            "2019",
+            "2019",
+            "انطلاق ⁦Pi Network⁩ (الورقة البيضاء الأولى) [3]"
+          ],
+          [
+            "2021-12",
+            "ديسمبر 2021",
+            "بدء مرحلة «الشبكة الرئيسية المغلقة» غير المتصلة بالشبكات الخارجية [7]"
+          ],
+          [
+            "2024-07-01",
+            "1 يوليو 2024",
+            "بدء فترة السماح للتحقق من الهوية والانتقال، ومُدّدت المواعيد لاحقًا حتى 28 فبراير 2025 [6]"
+          ],
+          [
+            "2025-02-20",
+            "20 فبراير 2025",
+            "الانتقال إلى الشبكة المفتوحة (الساعة 08:00 بتوقيت ⁦UTC⁩)، وبدء تداول ⁦PI⁩ في منصات أجنبية مثل ⁦OKX⁩ [7][12]"
+          ],
+          [
+            "2025-02-26",
+            "26 فبراير 2025",
+            "أعلى سعر حتى الآن، نحو ⁦$2.98⁩ [14]"
+          ],
+          [
+            "2025-09-18",
+            "18 سبتمبر 2025",
+            "إطلاق ⁦Fast Track KYC⁩: صار بإمكان من لديه أقل من 30 جلسة تعدين استخدام محفظة (ولا يمكن بعد نقل ما عدّنه) [5]"
+          ],
+          [
+            "2026-03-14",
+            "14 مارس 2026",
+            "أعلنت ⁦Pi⁩ أن 16,568,774 شخصًا انتقلوا إلى الشبكة الرئيسية (حتى 5 مارس)، وبدأ الانتقال الثاني تدريجيًا، وأضافت ⁦Kraken⁩ عملة ⁦PI⁩ [8]"
+          ],
+          [
+            "2026-09-17",
+            "17 سبتمبر 2026",
+            "أعلنت ⁦Pi⁩ استئناف التحقق لأكثر من 417 ألف شخص وحلًا لـ497 ألف شخص عالقين في الانتقال [9]"
+          ],
+          [
+            "2026-11-09",
+            "9 نوفمبر 2026",
+            "أدنى سعر حتى الآن، نحو ⁦$0.0626⁩ [14]"
+          ]
+        ],
+        "faq": [
+          [
+            "هل ⁦Pi Network⁩ مجانية؟ هل تكلف شيئًا؟",
+            "التطبيق مجاني والتعدين لا يكلف مالًا. لكنه يتطلب ضغطة يومية، وإرسال ⁦PI⁩ على الشبكة الرئيسية يحتاج إلى رسوم صغيرة بعملة ⁦PI⁩. لا تصدّق مواقع أو حسابات ليست في القائمة الرسمية تعدك بانتقال أسرع مقابل رسوم.[1][9][18]"
+          ],
+          [
+            "هل يمكن بيع ⁦PI⁩ في اليابان والحصول على الين؟",
+            "لا تتعامل أي منصة مسجلة في اليابان بعملة ⁦PI⁩، لذا لا يمكن تحويلها إلى ين في منصة محلية (قائمة الأصول التي يتعامل بها أعضاء الرابطة، المحدّثة في 2 نوفمبر 2026). تُتداول ⁦PI⁩ في منصات أجنبية مثل ⁦OKX⁩ و⁦Bitget⁩ و⁦MEXC⁩ و⁦Gate⁩ و⁦Kraken⁩، لكن هيئة الخدمات المالية اليابانية حذّرت ⁦Bitget⁩ و⁦MEXC⁩ و⁦LBank⁩ من استقطاب العملاء دون تسجيل. إن استخدمت منصة أجنبية فتحقق من شروطها لترى هل تسمح للمقيمين في اليابان، وقرّر على مسؤوليتك.[13][15][16]"
+          ],
+          [
+            "هل ⁦Pi Network⁩ احتيال؟",
+            "تُتداول ⁦PI⁩ فعلًا في منصات أجنبية منذ فبراير 2025، ولها موقع وتطبيق رسميان، فهي ليست احتيالًا بمعنى أنه لا يوجد شيء. لكن السعر هبط بأكثر من 90%، من أعلى مستوى في 26 فبراير 2025 (نحو ⁦$2.98⁩) إلى نحو ⁦$0.07⁩ في نوفمبر 2026. ومن الحد الأقصى البالغ 100 مليار ⁦PI⁩ هناك نحو 11.4 مليار في التداول، وما سيصل إلى السوق لاحقًا سيؤثر في السعر أيضًا. كما أن عمليات الاحتيال التي تستخدم اسم ⁦Pi Network⁩ كثيرة.[3][13][14]"
+          ],
+          [
+            "ما عبارة المرور، وماذا لو فقدتها؟",
+            "عبارة المرور 24 كلمة إنجليزية تعمل مفتاحًا لمحفظتك. تُنشأ على هاتفك ولا تُرسل أبدًا إلى خوادم ⁦Pi⁩، لذا لا يمكن استعادتها إن فقدتها. اكتبها على ورق واحفظها بعيدًا عن الأعين. لن تطلبها ⁦Pi⁩ منك أبدًا، والمكان الوحيد لإدخالها هو «⁦wallet.pinet.com⁩» في ⁦Pi Browser⁩.[1][10][11]"
+          ],
+          [
+            "طلب التحقق من هويتي معلّق منذ مدة طويلة. ماذا أفعل؟",
+            "تحقق أولًا من حالتك في تطبيق ⁦KYC⁩ داخل ⁦Pi Browser⁩. في 17 سبتمبر 2026 أعلنت ⁦Pi⁩ أن أكثر من 417 ألف شخص أُوقفوا للاشتباه في حسابات مكررة يمكنهم المتابعة، وحلًا لـ497 ألف شخص لم يتمكنوا من الانتقال لعدم امتلاكهم ⁦PI⁩ كافية للرسوم، وفرصًا جديدة لإعادة فحص الحيوية (الوجه). لا تسلّم هويتك أو حسابك أبدًا لمن يعرض «إنجاز التحقق نيابة عنك».[4][9]"
+          ],
+          [
+            "ماذا يحدث إن لم أُجرِ التحقق من الهوية؟",
+            "لن تستطيع الانتقال إلى الشبكة الرئيسية، فلن تستطيع إرسال ⁦PI⁩ أو بيعها. ومن فاتته مواعيد فترة السماح يفقد ما عدّنه قبل أكثر من ستة أشهر من انتقاله.[6]"
+          ],
+          [
+            "هل أدفع ضريبة إذا بعت ⁦PI⁩؟",
+            "بالنسبة إلى المقيمين في اليابان، تقول الهيئة الوطنية للضرائب إن الأصول المشفرة المكتسبة بالتعدين تُحسب دخلًا بقيمتها عند استلامها، وإن أرباح تداولها تُعدّ من حيث المبدأ «دخلًا متنوعًا». وتختلف القواعد في البلدان الأخرى، فاستشر مصلحة الضرائب أو مستشارًا ضريبيًا.[17]"
+          ],
+          [
+            "وماذا عن عروض بيع ⁦PI⁩ بسعر رخيص أو شراء عملاتي؟",
+            "اعتبر عروض شراء ⁦PI⁩ أو بيعها في وسائل التواصل أو بين الأفراد احتيالًا على الأرجح. القنوات والتطبيقات الرسمية هي فقط المذكورة في قائمة الموقع الرسمي، وما عداها ليس رسميًا وإن ادّعى ذلك. ارفض كل ما يطلب منك إرسال المال أولًا أو يسألك عن عبارة المرور.[1][11]"
+          ]
+        ],
+        "pros": [
+          "البدء لا يكلف شيئًا: يكفي هاتف وضغطة يومية [2][18]",
+          "تُتداول فعلًا في منصات أجنبية منذ فبراير 2025 [7][13]",
+          "تدرجها منصات أجنبية منها منصات كبيرة مثل ⁦OKX⁩ و⁦Kraken⁩ [8][12][13]",
+          "انتقل أكثر من 16 مليون شخص، وبدأت تظهر في ⁦Pi Browser⁩ تطبيقات تقبل الدفع بعملة ⁦PI⁩ [8]",
+          "مفتاح المحفظة بيدك، وعملاتك ليست مودعة لدى المشغّل [10]"
+        ],
+        "risks": [
+          "هبوط حاد: من أعلى مستوى في 26 فبراير 2025 (نحو ⁦$2.98⁩) إلى نحو ⁦$0.07⁩ في نوفمبر 2026، أي بأكثر من 90% [13][14]",
+          "لا تدرجها أي منصة مسجلة في اليابان، وتحويلها إلى ين يعني استخدام منصة أجنبية [15]",
+          "بعض المنصات الأجنبية التي تدرج ⁦PI⁩ (⁦Bitget⁩ و⁦MEXC⁩ و⁦LBank⁩) تلقت تحذيرات من هيئة الخدمات المالية اليابانية بسبب الاستقطاب دون تسجيل [16]",
+          "من الحد الأقصى البالغ 100 مليار ⁦PI⁩ هناك نحو 11.4 مليار في التداول، ووصول المزيد إلى السوق قد يضغط على السعر [3][14]",
+          "قد يطول انتظار التحقق من الهوية والانتقال، ومن تفته المواعيد يفقد ما عدّنه قبل أكثر من ستة أشهر [6][9]",
+          "إن فُقدت عبارة المرور أو سُرقت فلا يمكن استعادة ⁦PI⁩ [10][11]",
+          "عمليات احتيال كثيرة تستخدم اسم ⁦Pi Network⁩: محافظ مزيفة، وبيع ⁦PI⁩ مزيف، و«خدمات تحقق»، ومواقع تتصيد عبارة المرور [1][11]",
+          "تتطلب ضغطة يومية، والأيام التي تنساها لا تكسب فيها شيئًا [2]",
+          "كلما دعوت أشخاصًا أكثر كان ذلك في صالحك. وإن دعوت معارفك فأخبرهم أيضًا بخطر انخفاض السعر [3]"
+        ],
+        "ctaText": "قبل أن تبدأ، انظر كيف تحرك السعر (في ⁦CoinGecko⁩ مثلًا) وتحقق من أين يمكنك بيعها فعلًا. ولا تخبر أحدًا بعبارة المرور أبدًا."
       }
     }
   ],

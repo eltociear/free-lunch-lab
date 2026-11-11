@@ -1155,6 +1155,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-3375215d4b.woff2",
     "chars": "修列飽"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-b774c10896.woff2",
+    "chars": "忘慣沿盗"
    }
   ],
   "ja:body:700": [
@@ -1385,6 +1389,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-b22d68cac4.woff2",
     "chars": "修列飽"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-3cb791122d.woff2",
+    "chars": "忘慣沿盗"
    }
   ],
   "ja:display": [
@@ -1523,6 +1531,10 @@
    {
     "file": "dela-gothic-one-400-ja-0375107903.woff2",
     "chars": "並代評豊"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-85d3a6103f.woff2",
+    "chars": "売"
    }
   ],
   "ja:dot": [
@@ -1819,6 +1831,10 @@
    {
     "file": "noto-sans-sc-400-zh-e9c2e81286.woff2",
     "chars": "虫"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-2cb96a0856.woff2",
+    "chars": "纠衍"
    }
   ],
   "zh:body:700": [
@@ -2065,6 +2081,10 @@
    {
     "file": "noto-sans-sc-700-zh-a8dd072775.woff2",
     "chars": "虫"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-281f4cf827.woff2",
+    "chars": "纠衍"
    }
   ],
   "zh:display": [
@@ -2199,6 +2219,10 @@
    {
     "file": "noto-sans-sc-900-zh-e6ad4b4247.woff2",
     "chars": "七估检知裕评近"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-910f057ddb.woff2",
+    "chars": "卖迁"
    }
   ],
   "zh:dot": [
