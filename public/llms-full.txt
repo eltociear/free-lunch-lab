@@ -3055,7 +3055,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-10
+- Last commit: 2026-11-11
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -3332,7 +3332,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-11-10
+- Last commit: 2026-11-11
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 

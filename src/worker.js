@@ -2,6 +2,8 @@
 // 記録するのは パス・言語・?s=N（X の投稿ごとの印）・参照元のホスト名・ボットらしいかどうか だけ。
 // IP アドレス、ユーザーエージェントの文字列、Cookie、参照元のパスやクエリは記録しない。
 // フォントや画像などはこの Worker を通らない（wrangler.jsonc の run_worker_first で、ページのパスだけ通す）
+// 記録は2種類（blob6）: 'srv' は HTML を返したときにサーバー側で数えたもの（クローラーも入る）。
+// 'js' はページの小さなスクリプト（build.js の beacon）が、見えているページで本物の操作があったときに POST /b で送ったもの（人の閲覧の目安）
 import CARDS from './calc-cards.json';
 import QZ_CARDS from './shindan-cards.json';
 const LANGS = new Set(['ja', 'zh', 'hi', 'es', 'de', 'ar']);
@@ -10,6 +12,7 @@ const BOT = /bot|crawl|spider|slurp|preview|fetch|monitor|headless|lighthouse|cu
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    if (url.pathname === '/b') return beacon(request, env, url);
     const res = await env.ASSETS.fetch(request);
     // 末尾の / がない URL（/ja → /ja/ など）には静的ファイル側が 307 を返す。検索エンジン向けに 301 にそろえる（クエリはそのまま）。
     // 存在しないパスはリダイレクトされず、そのまま 404 になる。リダイレクトはページの表示として数えない
@@ -30,14 +33,50 @@ export default {
         let ref = '';
         try { const r = new URL(request.headers.get('referer') || ''); ref = r.host === url.host ? 'self' : r.host; } catch {}
         const bot = BOT.test(request.headers.get('user-agent') || '') ? '1' : '0';
-        // blob1 パス, blob2 言語, blob3 s, blob4 参照元ホスト, blob5 ボット(1/0), double1 件数
-        env.PAGEVIEWS.writeDataPoint({ indexes: [lang], blobs: [url.pathname.slice(0, 200), lang, s, ref.slice(0, 100), bot], doubles: [1] });
+        // blob1 パス, blob2 言語, blob3 s, blob4 参照元ホスト, blob5 ボット(1/0), blob6 記録の種類（srv）, double1 件数
+        env.PAGEVIEWS.writeDataPoint({ indexes: [lang], blobs: [url.pathname.slice(0, 200), lang, s, ref.slice(0, 100), bot, 'srv'], doubles: [1] });
       }
     } catch {}
     if (EMBED_PATH.test(url.pathname)) return framable(res);
     return calcCard(request, url, res) || shindanCard(request, url, res) || res;
   },
 };
+
+// POST /b: ページのビーコン。中身は {p: パス, l: 言語, s: ?s= の印, r: 参照元ホスト か 'self'}（JSON、600 バイトまで）。
+// 同じオリジンからの送信だけ受け、パスはページの形（/a/b/）で実在する HTML のときだけ、言語はパスの言語と一致するときだけ記録する。
+// 1リクエストで1件だけ。どの結果でも 204 を返す（キャッシュしない）。記録の列の意味はサーバー側の記録と同じで、blob6 = 'js'
+const PAGE_PATH = /^\/(?:[a-z0-9-]{1,80}\/){0,4}$/;
+const HOST = /^[a-z0-9-]{1,63}(?:\.[a-z0-9-]{1,63})*(?::\d{1,5})?$/i;
+const MARK = /^[\w-]{0,16}$/;
+const NO_STORE = { 'cache-control': 'no-store' };
+async function beacon(request, env, url) {
+  if (request.method !== 'POST') return new Response(null, { status: 405, headers: { allow: 'POST', ...NO_STORE } });
+  const done = new Response(null, { status: 204, headers: NO_STORE });
+  try {
+    const h = request.headers, origin = h.get('origin'), site = h.get('sec-fetch-site');
+    if (origin && origin !== url.origin) return done;
+    if (site && site !== 'same-origin') return done;
+    if (!origin && !site) { let ro = ''; try { ro = new URL(h.get('referer') || '').origin; } catch {} if (ro !== url.origin) return done; }
+    if (Number(h.get('content-length') || 0) > 600) return done;
+    const text = await request.text();
+    if (text.length > 600) return done;
+    const d = JSON.parse(text);
+    if (!d || typeof d !== 'object') return done;
+    const { p, l, s = '', r = '' } = d;
+    if (typeof p !== 'string' || p.length > 200 || !PAGE_PATH.test(p)) return done;
+    const first = p.split('/')[1];
+    const lang = LANGS.has(first) ? first : 'en';
+    if (l !== lang || typeof s !== 'string' || !MARK.test(s) || typeof r !== 'string' || r.length > 100) return done;
+    const ref = r === '' || r === 'self' ? r : r.toLowerCase() === url.host ? 'self' : HOST.test(r) ? r.toLowerCase() : null;
+    if (ref === null) return done;
+    // 実在するページか（静的ファイルに聞くだけ。これ自体は記録しない）
+    const page = await env.ASSETS.fetch(new Request(url.origin + p, { method: 'HEAD' }));
+    if (page.status !== 200 || !(page.headers.get('content-type') || '').startsWith('text/html')) return done;
+    const bot = BOT.test(h.get('user-agent') || '') ? '1' : '0';
+    if (env.PAGEVIEWS) env.PAGEVIEWS.writeDataPoint({ indexes: [lang], blobs: [p, lang, s, ref, bot, 'js'], doubles: [1] });
+  } catch {}
+  return done;
+}
 
 // 埋め込み用の計算機（/embed/calc/、/{lang}/embed/calc/）だけは、どのサイトの iframe にも入れてよい。
 // サイトのほかのページには X-Frame-Options も frame-ancestors も付けていないが、念のためここで外してから frame-ancestors * を付ける。

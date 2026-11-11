@@ -1815,6 +1815,10 @@
    {
     "file": "noto-sans-sc-400-zh-1cc9824cd2.woff2",
     "chars": "玛琼皆穆纷罕蕾辛辞饱"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-e9c2e81286.woff2",
+    "chars": "虫"
    }
   ],
   "zh:body:700": [
@@ -2057,6 +2061,10 @@
    {
     "file": "noto-sans-sc-700-zh-f052734b2d.woff2",
     "chars": "玛琼皆穆纷罕蕾辛辞饱"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-a8dd072775.woff2",
+    "chars": "虫"
    }
   ],
   "zh:display": [

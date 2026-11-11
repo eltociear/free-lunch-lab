@@ -20,6 +20,7 @@ const OG_LOCALE = { en: 'en_US', ja: 'ja_JP', zh: 'zh_CN', hi: 'hi_IN', es: 'es_
 const RTL = new Set(['ar']);
 // フォントは自前で配る（fonts.js）。見出しは Dela Gothic One（zh/hi/ar はその言語の太字）、数字は DotGothic16、本文は言語ごと、ロゴは Zen Kaku Gothic New 900
 const { ensureFonts, fontFaceCss, FONT_DIR } = require('./fonts.js');
+const { contentHash } = require('./content-hash.js');
 const BODY_DISPLAY = { en: 'block', es: 'block', de: 'block' };
 const BODY_FONT = { en: 'Zen Kaku Gothic New', ja: 'Zen Kaku Gothic New', es: 'Zen Kaku Gothic New', de: 'Zen Kaku Gothic New', zh: 'Noto Sans SC', hi: 'Noto Sans Devanagari', ar: 'Noto Sans Arabic' };
 // 見出しの書体。hi は本文と同じ書体の 700 を使うので別に持たない。日本語は全角で字幅が代わりの書体と同じなので swap。
@@ -72,7 +73,7 @@ const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
 // エッセイ本文の {文字|/path/} はサイト内リンク（言語の接頭辞は自動で付く）。/essays/{id}/ への参照と related は実在を確かめる
 const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
 const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated', 'essayRelatedH', 'essayToc', 'essayRead', 'essayBack'];
-for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack', 'essayTableHint', 'backHome', 'backQuiz', 'backSvc', 'backVerify']) if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
+for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack', 'essayTableHint', 'backHome', 'backQuiz', 'backSvc', 'backVerify', 'embedPrivacy']) if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 // related（エッセイ）と essays（サービス・年表）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
 const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
@@ -2692,7 +2693,13 @@ const thumbResolve = html => html.replace(/@@thumb:([^@]+)@@/g, (m, rel) => {
   }
   return `/og/thumb/${rel}`;
 });
-for (const { file, html, lang } of pages) fs.writeFileSync(file, thumbResolve(ogResolve(html.replace('<!--@fonts@-->', fontHead[lang]))));
+// 人の閲覧を数える小さなビーコン（src/worker.js の /b）。ページが見えている状態で、本物の操作（ポインタ・キー・スクロール・タッチ）が
+// あったときに1回だけ送る。操作が読み込みから1秒未満なら1秒まで待つ。navigator.webdriver（自動操作のブラウザ）では送らない。
+// Cookie・localStorage・端末を見分ける ID は使わない。送るのはパス・言語・?s=・参照元のホスト名だけ。JS がなければ何も起きない
+const beacon = lang => `<script>(function(){var d=document,n=navigator,w=window,L=location,t0=Date.now(),k=0,E=['pointerdown','pointermove','keydown','scroll','wheel','touchstart'];if(n.webdriver)return;function go(){if(d.visibilityState!=='visible'){k=0;return}var r='',q='';try{var u=new URL(d.referrer);r=u.host===L.host?'self':u.host}catch(x){}try{q=new URLSearchParams(L.search).get('s')||''}catch(x){}var b=JSON.stringify({p:L.pathname,l:${JSON.stringify(lang)},s:q.slice(0,16),r:r.slice(0,100)});E.forEach(function(e){w.removeEventListener(e,f,true)});try{if(n.sendBeacon&&n.sendBeacon('/b',b))return}catch(x){}try{fetch('/b',{method:'POST',body:b,keepalive:true,credentials:'omit'})}catch(x){}}function f(e){if(k||!e.isTrusted||d.visibilityState!=='visible')return;k=1;setTimeout(go,Math.max(0,1000-(Date.now()-t0)))}E.forEach(function(e){w.addEventListener(e,f,{capture:true,passive:true})})})()</script>`;
+for (const l of LANGS) if (Buffer.byteLength(beacon(l)) > 1024) throw new Error('beacon script over 1 KB');
+const withBeacon = (html, lang) => { const i = html.lastIndexOf('</body>'); return i < 0 ? html : html.slice(0, i) + beacon(lang) + '\n' + html.slice(i); };
+for (const { file, html, lang } of pages) fs.writeFileSync(file, withBeacon(thumbResolve(ogResolve(html.replace('<!--@fonts@-->', fontHead[lang]))), lang));
 fs.mkdirSync(path.join(OUT, 'fonts'), { recursive: true });
 for (const f of fs.readdirSync(FONT_DIR)) if (f.endsWith('.woff2')) fs.copyFileSync(path.join(FONT_DIR, f), path.join(OUT, 'fonts', f));
 
@@ -2789,10 +2796,24 @@ ${items}
 for (const lang of LANGS) fs.writeFileSync(path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'news', 'feed.xml'), biNewsFeedXml(lang));
 
 const today = new Date().toISOString().slice(0, 10);
+// lastmod はページの本文（content-hash.js: タイトル・説明・<main> の文字）が変わった日。ハッシュと日付を data/lastmod.json に持つ。
+// テンプレートだけの変更やビルドしただけでは変わらない。初めて出たページはビルドした日
+const LASTMOD_FILE = path.join(__dirname, 'data', 'lastmod.json');
+const lastmodOld = (() => { try { return JSON.parse(fs.readFileSync(LASTMOD_FILE, 'utf8')); } catch { return {}; } })();
+const lastmodNew = {};
+const lastmodFor = url => {
+  const p = new URL(url).pathname;
+  if (!lastmodNew[p]) {
+    const h = contentHash(fs.readFileSync(path.join(OUT, decodeURIComponent(p), 'index.html'), 'utf8'));
+    const o = lastmodOld[p];
+    lastmodNew[p] = o && o[0] === h ? o : [h, today];
+  }
+  return lastmodNew[p][1];
+};
 // 1ページ分の <url>。href(l) で各言語版の URL を返す
 const sitemapUrls = href => LANGS.map(l => `  <url>
     <loc>${href(l)}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastmodFor(href(l))}</lastmod>
 ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href="${href(k)}"/>`).join('\n')}
     <xhtml:link rel="alternate" hreflang="x-default" href="${href(DEFAULT_LANG)}"/>
   </url>`).join('\n');
@@ -2801,6 +2822,7 @@ fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="U
 ${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
+{ const json = JSON.stringify(Object.fromEntries(Object.keys(lastmodNew).sort().map(k => [k, lastmodNew[k]])), null, 1) + '\n'; if (!fs.existsSync(LASTMOD_FILE) || fs.readFileSync(LASTMOD_FILE, 'utf8') !== json) fs.writeFileSync(LASTMOD_FILE, json); }
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 // IndexNow の鍵ファイル（/{key}.txt に鍵そのものを置く）。鍵は src/indexnow-key.txt に一度だけ作ったもの。送信は indexnow.js
 const INDEXNOW_KEY = fs.readFileSync(path.join(__dirname, 'src/indexnow-key.txt'), 'utf8').trim();

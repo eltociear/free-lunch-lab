@@ -1139,5 +1139,6 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
   });
 })();
 </script>
+<script>(function(){var d=document,n=navigator,w=window,L=location,t0=Date.now(),k=0,E=['pointerdown','pointermove','keydown','scroll','wheel','touchstart'];if(n.webdriver)return;function go(){if(d.visibilityState!=='visible'){k=0;return}var r='',q='';try{var u=new URL(d.referrer);r=u.host===L.host?'self':u.host}catch(x){}try{q=new URLSearchParams(L.search).get('s')||''}catch(x){}var b=JSON.stringify({p:L.pathname,l:"ar",s:q.slice(0,16),r:r.slice(0,100)});E.forEach(function(e){w.removeEventListener(e,f,true)});try{if(n.sendBeacon&&n.sendBeacon('/b',b))return}catch(x){}try{fetch('/b',{method:'POST',body:b,keepalive:true,credentials:'omit'})}catch(x){}}function f(e){if(k||!e.isTrusted||d.visibilityState!=='visible')return;k=1;setTimeout(go,Math.max(0,1000-(Date.now()-t0)))}E.forEach(function(e){w.addEventListener(e,f,{capture:true,passive:true})})})()</script>
 </body>
 </html>
