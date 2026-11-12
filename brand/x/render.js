@@ -1,4 +1,6 @@
 // 使い方: node brand/x/render.js  →  brand/x/avatar.png（400x400）と brand/x/header.png（1500x500）を作る
+// TikTok / YouTube（@freelunchlab）用に avatar-800.png（同じ絵を2倍）、avatar-800-circle-preview.png（円形切り抜きの確認用）、
+// youtube-banner.png（2560x1440、文字とマークは全端末で見える中央 1546x423 の内側）も作る。BANNER_DEBUG=1 で安全領域の枠を描く
 // X（@FreeLunchLab）のプロフィール画像。サイトには含めない（public/ の外）。Chrome の場所は環境変数 CHROME で変えられる
 const fs = require('fs');
 const path = require('path');
@@ -91,10 +93,43 @@ h1 em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90
 </body></html>`;
 }
 
-function shot(name, html, w, h) {
+// YouTube channel art: 2560x1440, everything that matters inside the centre 1546x423 safe area (x 507-2053, y 508-931)
+function youtubeBanner() {
+  const text = 'Free Lunch LabBasic income, in numbers.不労所得研究所';
+  const fonts = inlineFonts('family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@700', text);
+  const W = 2560, H = 1440, SW = 1546, SH = 423, SX = (W - SW) / 2, SY = (H - SH) / 2;
+  const debug = process.env.BANNER_DEBUG ? `<rect x="${SX}" y="${SY}" width="${SW}" height="${SH}" fill="none" stroke="#f0f" stroke-width="3"/>` : '';
+  return `<!doctype html><html><head><meta charset="utf-8"><style>
+${fonts}
+*{margin:0;box-sizing:border-box}html,body{width:${W}px;height:${H}px;overflow:hidden}
+body{${SKY};position:relative;color:#EEF1FF}
+svg.bg{position:absolute;inset:0}
+.wrap{position:absolute;left:${SX}px;top:${SY}px;width:${SW}px;height:${SH}px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding-right:170px;text-align:center}
+.ja{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:32px;letter-spacing:.3em;color:#A9B2D8}
+h1{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:128px;line-height:1.05;text-shadow:0 6px 40px rgba(120,100,255,.45);white-space:nowrap}
+h1 em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+.tag{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:44px;color:#FFD66B}
+</style></head><body>
+<svg class="bg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <g opacity=".85">${STARS(260)}</g>
+  ${moon('y', SX + SW - 110, SY + 120, 62)}
+  <g transform="translate(${SX + SW - 230} ${SY + 250}) scale(.6)" opacity=".95">${bento('y')}</g>
+  ${debug}
+</svg>
+<div class="wrap"><p class="ja">不労所得研究所</p><h1>Free <em>Lunch</em> Lab</h1><p class="tag">Basic income, in numbers.</p></div>
+</body></html>`;
+}
+
+// Preview of how the avatar looks once a platform crops it to a circle
+const circlePreview = (src, size) => `<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0}html,body{width:${size}px;height:${size}px;overflow:hidden;background:#E9EAF0}
+img{display:block;width:${size}px;height:${size}px;border-radius:50%}
+</style></head><body><img src="${src}"></body></html>`;
+
+function shot(name, html, w, h, scale = 1) {
   const f = path.join(DIR, `${name}.html`);
   fs.writeFileSync(f, html);
-  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--virtual-time-budget=8000', '--force-device-scale-factor=1',
+  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--virtual-time-budget=8000', `--force-device-scale-factor=${scale}`,
     `--window-size=${w},${h}`, `--screenshot=${path.join(DIR, `${name}.png`)}`, `file://${f}`], { stdio: 'ignore' });
   fs.unlinkSync(f);
   console.log(path.join(DIR, `${name}.png`));
@@ -102,3 +137,8 @@ function shot(name, html, w, h) {
 
 shot('avatar', avatar(), 400, 400);
 shot('header', header(), 1500, 500);
+// TikTok / YouTube (@freelunchlab): the same 400 layout at 2x. Everything sits well inside the inscribed circle
+// (bento corners about 177px from centre, moon edge about 157px, radius 200), so no nudge is needed
+shot('avatar-800', avatar(), 400, 400, 2);
+shot('avatar-800-circle-preview', circlePreview('avatar-800.png', 400), 400, 400, 2);
+shot('youtube-banner', youtubeBanner(), 2560, 1440);
