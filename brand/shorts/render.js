@@ -92,8 +92,8 @@ function mapData(lang) {
       overNote: ja ? '税収をすべて使っても足りない' : 'more than all its tax revenue',
       src: ja ? '出典: 世界銀行 / Free Lunch Lab' : 'Source: World Bank / Free Lunch Lab',
       end: ja
-        ? { q: 'あなたの国は？', n: `${rows.length}の国・地域を計算できます`, cta: 'プロフィールのリンクから<br>自分の国を計算', brand: esc(L.brandPlain), tag: esc(L.tagline) }
-        : { q: 'What about your country?', n: `${rows.length} countries and territories`, cta: 'Link in profile:<br>check your country', brand: 'Free <em>Lunch</em> Lab', tag: esc(L.tagline) },
+        ? { q: 'あなたの国は？', n: `${rows.length}の国・地域を計算できます`, cta: 'くわしくは<br>「不労所得研究所」で検索', brand: esc(L.brandPlain), tag: esc(L.tagline) }
+        : { q: 'What about your country?', n: `${rows.length} countries and territories`, cta: 'Full map:<br>link in the description', brand: 'Free <em>Lunch</em> Lab', tag: esc(L.tagline) },
       url: 'neteru-nyukin.eltociear.workers.dev',
     },
   };
@@ -133,7 +133,7 @@ function takenakaData() {
         bad: '損をしうる', badT: ['年金や生活保護に頼っている人', '返納や増税の対象になる高所得の世帯'].map(say).map(s => s.replace('になる', 'になる<br>')),
       },
       cost: { a: '全員に配ると1年で', b: say('約103.2兆円'), c: `国の一般会計の${say('約84％')}`, d: `年金をすべて回しても<br>${say('約40兆円足りません').replace('ません', 'ない')}` },
-      end: { q: 'わが家は得？損？', cta: '前提と計算のくわしい内容は<br>プロフィールのリンクから', brand: esc(T.ja.brandPlain), tag: esc(T.ja.tagline) },
+      end: { q: 'わが家は得？損？', cta: 'くわしくは<br>「不労所得研究所」で検索', brand: esc(T.ja.brandPlain), tag: esc(T.ja.tagline) },
       src: ['出典: 日本年金機構・厚生労働省ほか', '計算: Free Lunch Lab'],
       url: 'neteru-nyukin.eltociear.workers.dev',
     },
