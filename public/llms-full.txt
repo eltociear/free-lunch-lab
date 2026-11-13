@@ -1692,6 +1692,8 @@ Opinion: The net result is identical. What differs is how the money flow looks, 
 
 Opinion: Put the other way round, the real difference between a basic income and a negative income tax is not the net amount. It is whether the money reaches everyone first, or reaches only people whose eligibility has been checked, and later. That difference decides how many people miss out, and whether the money helps right away when someone loses a job. When Heizo Takenaka explained his ¥70,000-a-month plan (https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/), he too spoke of a negative tax rate for people on low incomes, and of paying everyone first and having high earners return it through their tax returns.
 
+[Work it out for your household: Household basic income calculator](https://neteru-nyukin.eltociear.workers.dev/calc/household/)
+
 #### BIEN’s five criteria
 
 The Basic Income Earth Network (BIEN) defines basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”.[14] We used this yardstick in our essay on Japan’s ¥100,000 payment (https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/). Here it is applied to the new Japanese payment.
@@ -1910,6 +1912,8 @@ This site supports basic income, but not any particular plan. So before deciding
 
 Opinion: The short answer is: it depends on the design. The same ¥70,000 can be a gain or a loss, depending on what it replaces and who has to pay it back later. Below we put numbers on that range.
 
+[Work it out for your household: Household basic income calculator](https://neteru-nyukin.eltociear.workers.dev/calc/household/)
+
 #### What Takenaka proposed
 
 It started on the evening of 23 September 2020, on the BS-TBS news programme Hōdō 1930. The programme presented Takenaka’s view on a panel that read “¥70,000 a month to every citizen.”[1]
@@ -1991,6 +1995,8 @@ In summary (monthly, before any tax rise):
 | Retired couple (former employee) | Pensions ¥237,279 | ¥140,000 | +¥140,000 to −¥97,279 (depends on pensions) |
 | Single, on public assistance (Tokyo 23 wards) | Up to ¥130,920 | ¥70,000 | ±0 to −¥60,920 (depends on whether assistance stays) |
 | Family of four, ¥10m a year | Child allowance ¥20,000 | ¥280,000 | +¥260,000 to −¥20,000 (depends on clawback) |
+
+[Work it out for your household: Household basic income calculator](https://neteru-nyukin.eltociear.workers.dev/calc/household/)
 
 The likely winners are households with children and few benefits today. Those who could lose are people who rely on pensions or public assistance, and high-earning households that would pay the money back or bear the tax rises.
 
@@ -2950,7 +2956,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-11. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-13. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -3020,7 +3026,7 @@ GoodDollar’s first smart contracts (v1), built on DAOstack: the G$ token and t
 - Language: Rust
 - License: AGPL-3.0
 - Stars: 10
-- Last commit: 2026-10-30
+- Last commit: 2026-11-13
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of its web of trust creates a universal dividend each day
@@ -3055,7 +3061,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-11
+- Last commit: 2026-11-12
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -3202,7 +3208,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: TypeScript
 - License: AGPL-3.0
 - Stars: 6
-- Last commit: 2026-11-10
+- Last commit: 2026-11-12
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app
@@ -3214,7 +3220,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-07
+- Last commit: 2026-11-13
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s
@@ -3226,7 +3232,7 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-10
+- Last commit: 2026-11-12
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
@@ -3309,7 +3315,7 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Language: TypeScript
 - License: MIT (LICENSE)
 - Stars: 163
-- Last commit: 2026-11-10
+- Last commit: 2026-11-12
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
@@ -3332,7 +3338,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-11-11
+- Last commit: 2026-11-12
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -3398,7 +3404,7 @@ Reference mobile app for BrightID: people connect with others they know, and ana
 - Language: Python
 - License: AGPL-3.0
 - Stars: 171
-- Last commit: 2026-11-11
+- Last commit: 2026-11-13
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 
@@ -3409,7 +3415,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-10
+- Last commit: 2026-11-13
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 
@@ -3431,7 +3437,7 @@ Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it search
 - Language: Python
 - License: CC0-1.0 (LICENSE)
 - Stars: 317
-- Last commit: 2026-11-08
+- Last commit: 2026-11-11
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
 

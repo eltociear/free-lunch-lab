@@ -2,7 +2,7 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {} } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, HOUSEHOLD } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
 const calcJs = require('./src/calc.js');
 const { execFileSync } = require('child_process');
@@ -1386,7 +1386,7 @@ function clip(str, lang) {
   return cut > 0 ? head.slice(0, cut) : a.slice(0, n - 1).join('').trimEnd() + '…';
 }
 // 一覧ページの meta description（T の *Desc）が目安から外れていたら警告する
-const DESC_KEYS = ['metaDesc', 'orgsDesc', 'graveDesc', 'tlDesc', 'ossDesc', 'badgeDesc', 'shindanDesc', 'essaysDesc', 'biNewsDesc'];
+const DESC_KEYS = ['metaDesc', 'orgsDesc', 'graveDesc', 'tlDesc', 'ossDesc', 'badgeDesc', 'shindanDesc', 'essaysDesc', 'biNewsDesc', 'hhDesc'];
 const descOff = LANGS.flatMap(l => DESC_KEYS.filter(k => T[l][k]).map(k => { const n = [...T[l][k]].length, [lo, hi] = DESC_RANGE(l); return n < lo || n > hi ? `${l}.${k} (${n}, ${lo}-${hi})` : ''; }).filter(Boolean));
 if (descOff.length) console.warn(`WARNING: meta description outside the length guideline: ${descOff.join(', ')}`);
 for (const l of LANGS) if (!T[l].homeTitle) throw new Error(`missing ${l}.homeTitle`);
@@ -1609,7 +1609,7 @@ ${groups}
 // 読了時間: 日本語・中国語は1分500字、それ以外（ラテン文字・デーヴァナーガリー・アラビア文字）は1分220語。表も数える（地図は数えない）
 const CJK_LANGS = new Set(['ja', 'zh']);
 function essayMinutes(e, lang) {
-  const text = (e.blocks[lang] || e.blocks.en).filter(([k]) => k !== 'm' && k !== 'w').map(([, t]) => t).join('\n')
+  const text = (e.blocks[lang] || e.blocks.en).filter(([k]) => k !== 'm' && k !== 'w' && k !== 'k').map(([, t]) => t).join('\n')
     .replace(ESSAY_LINK, '$1').replace(/\[\d+\]/g, '').replace(/ \| /g, ' ').replace(/[⁦-⁩]/g, '');
   const n = CJK_LANGS.has(lang) ? text.replace(/\s+/g, '').length / 500 : text.split(/\s+/).filter(w => /[\p{L}\p{N}]/u.test(w)).length / 220;
   return Math.max(1, Math.round(n));
@@ -1646,6 +1646,8 @@ function essayPage(e, lang) {
     // m は世界地図（/calc/map/ と同じ図と凡例、地図のページへのリンク）
     if (k === 'm') return mapFigure(lang, { link: true }).replace('<figure class="wmap"', '<figure class="wmap es-wide"');
     if (k === 'w') return workChart(t, fn);
+    // k は「わが家のBI計算機」への箱（/calc/household/?s=hh-essay）
+    if (k === 'k') return hhBox(lang, 'hh-essay');
     if (k !== 'o') return `<p>${fn(t)}</p>`;
     const tag = tagged ? '' : `<span class="op-tag">${esc(L.essayOpinion)}</span>`;
     tagged = true;
@@ -1681,7 +1683,8 @@ ${qzCard(lang, 'essay-quiz')}
 ${tocSide}<p class="back es-back"><a class="btn line" href="${essaysPath(lang)}">${rtl ? '→' : '←'} ${esc(L.essayBack)}</a></p>
 </main>`;
   const hasMap = (e.blocks[lang] || e.blocks.en).some(([k]) => k === 'm');
-  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L) + (hasMap ? mapScript(lang) : '') + (tocSide ? ESSAY_TOC_JS : '') + (wideTables ? ESSAY_TABLE_JS : ''), image: ogImage(`essay/${lang}/${e.id}.jpg`), extraHead: hasMap ? MAP_CSS + '\n' : '' });
+  const hasBox = (e.blocks[lang] || e.blocks.en).some(([k]) => k === 'k');
+  return shell(lang, { title: `${ttl} | ${L.title}`, desc: clip(desc, lang), hrefFor: l => essayAbs(l, e), pathFor: l => essayPath(l, e), ld, ogType: 'article', body, script: shareScript(L) + (hasMap ? mapScript(lang) : '') + (tocSide ? ESSAY_TOC_JS : '') + (wideTables ? ESSAY_TABLE_JS : ''), image: ogImage(`essay/${lang}/${e.id}.jpg`), extraHead: (hasMap ? MAP_CSS + '\n' : '') + (hasBox ? HH_BOX_CSS + '\n' : '') });
 }
 // w は研究ごとの「仕事への影響」の図: 1行目は図の題、2行目は3つの列（減った | はっきりした変化なし | 増えた）、3行目からは「研究 | 時期・場所 | 列 | 一言」。
 // 列は -1・0・1（その列に点を1つ）か「減,なし,増」の件数（数字の点）。向きだけを示し、大きさは一言で書く（研究ごとに測る単位が違うので）。
@@ -1860,6 +1863,172 @@ const calcSrcA = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noop
 // 貧困ライン（1日3.00ドル）を全員に1年配ったときの GDP 比
 const calcLinePct = c => (c.pop.all * c.line.monthly * 12) / c.gdp.value;
 
+// ---- わが家のBI計算機（/calc/household/）。家族・年収・年金・生活保護を選ぶと、竹中案（全員に月7万円）で家計が月いくら変わるかを、
+// エッセイ（HOUSEHOLD.essay）と同じ前提で計算する（JS）。?a=&c=&i=&m=… で結果を再現でき、シェアの URL は ?r={区分}&s=hh-share 付き。
+// ?r= が区分なら Worker（src/worker.js）が og:image をその区分のカード（src/og/hh/{lang}/{区分}.jpg）に差し替える。
+// JS が無くても、初期値（夫婦と小学生2人・年収500万円）の結果とエッセイの5つの家計の表を読める。計算は src/household.js（ビルド時の照合も同じコード）
+const hhJs = require('./src/household.js');
+const hhPath = l => `${calcPath(l)}household/`;
+const hhAbs = l => SITE_URL + hhPath(l);
+const HH_KEYS = Object.keys(T.ja).filter(k => /^hh[A-Z]/.test(k));
+for (const l of LANGS) for (const k of HH_KEYS) if (typeof T[l][k] !== 'string' || (!T[l][k] && k !== 'hhJapan')) throw new Error(`missing ${l}.${k}`);
+for (const l of LANGS) if (l !== 'ja' && !T[l].hhJapan) throw new Error(`missing ${l}.hhJapan`);
+// hi はひらがな・漢字や isolate の字を入れない。ar はラテン文字と数字をすべて LRI/PDI で囲む（{n} などの差し込みは JS が囲む）
+for (const k of HH_KEYS) if (/[　-鿿＀-￯⁦-⁩]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
+for (const k of HH_KEYS) if (/[A-Za-z0-9]/.test(T.ar[k].replace(/\{\w+\}/g, '').replace(/⁦[^⁩]*⁩/g, ''))) throw new Error(`ar.${k}: Latin letters or digits outside LRI/PDI`);
+const HH_ESSAY = ESSAYS.find(e => e.id === HOUSEHOLD.essay);
+if (!HH_ESSAY) throw new Error(`HOUSEHOLD: unknown essay ${HOUSEHOLD.essay}`);
+// 国全体の費用（月額ごと）: 人口 × 月額 × 12 と、一般会計予算との比。人口と予算は BI計算機と同じ CALC の日本の数字（エッセイと同じ）
+const HH_JP = CALC.countries.find(c => c.id === 'jp');
+const hhFund = lang => Object.fromEntries(HOUSEHOLD.amounts.map(m => {
+  const total = HH_JP.pop.all * m * 12, loc = hhJs.LOCALE[lang], iso = x => (RTL.has(lang) ? `⁦${x}⁩` : x);
+  const [scale, unit] = T[lang].calcUnits.split('|')[0].split(':');
+  const n = new Intl.NumberFormat(loc, { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(total / Number(scale));
+  const pct = new Intl.NumberFormat(RTL.has(lang) ? 'en' : loc, { style: 'percent', maximumFractionDigits: 0 }).format(total / HH_JP.budget.total).replace(/ /g, ' ');
+  return [m, { total: cfill(T[lang].calcMoney, { n: iso(n), unit, cur: HH_JP.cur[lang] }), pct: iso(pct) }];
+}));
+const HH_DATA = Object.fromEntries(LANGS.map(l => [l, { def: HOUSEHOLD.def, amounts: HOUSEHOLD.amounts, takenaka: HOUSEHOLD.takenaka, kidAlt: HOUSEHOLD.kidAlt, income: HOUSEHOLD.income, high: HOUSEHOLD.high, jidou: HOUSEHOLD.jidou, pen: HOUSEHOLD.pen, hogo: HOUSEHOLD.hogo, fmt: HOUSEHOLD.fmt[l], fund: hhFund(l), font: BODY_FONT[l], file: 'free-lunch-lab-household.png' }]));
+const HH_L = l => Object.fromEntries([...HH_KEYS, 'calcTag', 'copyLink', 'linkCopied', 'brandPlain'].map(k => [k, T[l][k]]));
+const HH_CTX = Object.fromEntries(LANGS.map(l => [l, hhJs.context(l, HH_DATA[l], HH_L(l))]));
+// エッセイの表（5つの家計）。行の名前はページの表に、en の数字はビルド時の照合に使う
+const hhEssayRows = lang => {
+  const t = (HH_ESSAY.blocks[lang] || []).find(b => b[0] === 't');
+  if (!t) throw new Error(`${HOUSEHOLD.essay}.${lang}: no table`);
+  const rows = t[1].split('\n').slice(1).map(r => r.split(' | '));
+  if (rows.length !== HOUSEHOLD.check.length) throw new Error(`${HOUSEHOLD.essay}.${lang}: ${rows.length} table rows, HOUSEHOLD.check has ${HOUSEHOLD.check.length}`);
+  return rows;
+};
+// ビルド時の照合: エッセイの5つの家計を計算機で計算し直し、エッセイの表（en）の「いまの給付」「BI」「差し引き」の数字と、
+// HOUSEHOLD.check の基本の前提の結果がそろっているか確かめる（違えば警告）
+const hhDrift = (() => {
+  const X = HH_CTX.en, rows = hhEssayRows('en'), bad = [];
+  const yenNums = t => [...String(t).matchAll(/¥([\d,]+)/g)].map(m => Number(m[1].replace(/,/g, '')));
+  const set = a => [...new Set(a)].sort((x, y) => x - y).join('/');
+  HOUSEHOLD.check.forEach((h, i) => {
+    const s = X.parse(h.q), { r, g } = X.summary(s), alt = X.calc(s, { ...X.chosen(s), k: 1 }).bi;
+    const net = [...rows[i][3].matchAll(/(±|[+−-])?¥?(\d[\d,]*)/g)].map(m => (m[1] === '−' || m[1] === '-' ? -1 : 1) * Number(m[2].replace(/,/g, '')));
+    const now = yenNums(rows[i][1]), bi = yenNums(rows[i][2]);
+    const want = { main: h.main, now: h.now, bi: h.bi };
+    if (r.net !== want.main) bad.push(`#${i + 1} main ${r.net} (HOUSEHOLD.check ${want.main})`);
+    if (set(net) !== set([g.min, g.max])) bad.push(`#${i + 1} range ${g.max}..${g.min} (essay ${rows[i][3]})`);
+    if (r.now !== h.now || (now[0] || 0) !== r.now) bad.push(`#${i + 1} benefits now ${r.now} (essay ${rows[i][1]}, check ${h.now})`);
+    if (r.bi !== h.bi || (h.biAlt && alt !== h.biAlt) || set(bi) !== set(h.biAlt ? [h.bi, h.biAlt] : [h.bi])) bad.push(`#${i + 1} basic income ${r.bi}${h.biAlt ? `/${alt}` : ''} (essay ${rows[i][2]})`);
+  });
+  return bad.length ? `WARNING: household calculator differs from the essay ${HOUSEHOLD.essay}: ${bad.join('; ')}` : '';
+})();
+// シェアの文（X の重み）を、ありうる入力の組み合わせで確かめる（URL は 23 と数える）
+for (const l of LANGS) {
+  const X = HH_CTX[l];
+  for (const a of [1, 2, 3, 10]) for (const c of [0, 1, 3]) for (const k of [0, 2]) for (const i of [0, 4, 5]) for (const p of [0, 3, 4]) for (const h of [0, 1]) for (const m of HOUSEHOLD.amounts) {
+    const q = { a, c, k, i, p, h, m, pb: 999999, pu: 999999, hs: 999999 }, n = calcJs.weighted(X.shareText(X.parse(q), hhAbs(l)));
+    if (n > X_MAX) throw new Error(`household share text too long (${l} ${JSON.stringify(q)}: ${n})`);
+  }
+}
+const HH_CSS = `<style>
+.hh{max-width:44rem;margin-inline:auto}
+.hh-jp{margin:0;font-size:.9rem;line-height:1.7;color:var(--muted);border-inline-start:3px solid var(--gold);padding-inline-start:10px}
+.hh-nojs{margin:12px 0 0;padding:12px 14px;border-radius:12px;border:1px solid var(--stamp);font-size:.92rem;line-height:1.7}
+.hh-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hh-ctl{display:grid;gap:22px}
+.hh-sts{display:grid}
+.hh-st{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:8px;border-top:1px solid var(--line)}
+.hh-st:first-child{border-top:0;padding-top:0}
+.hh-st-sub{padding-inline-start:14px}
+.hh-st-sub .hh-st-l{font-size:.85rem}
+.hh-st-l{display:grid;gap:2px;min-width:0;font-weight:700;font-size:.95rem;line-height:1.5}
+.hh-st-l small{font-weight:400;font-size:.75rem;line-height:1.5;color:var(--muted)}
+.hh-st-c{display:inline-flex;align-items:center;gap:6px;flex:none}
+.hh-sb{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border-radius:50%;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);font:inherit;font-size:1.3rem;font-weight:700;line-height:1;cursor:pointer;transition:border-color .15s ease}
+.hh-sb:hover{border-color:var(--muted)}
+.hh-sb:disabled{opacity:.35;cursor:default}
+.hh-sb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.hh-sv{min-width:2ch;text-align:center;font-size:1.3rem;font-weight:700}
+.hh-note{margin:8px 0 0;font-size:.8125rem;line-height:1.7;color:var(--muted)}
+.hh-in{display:grid;gap:4px;margin-top:4px}
+.hh-res{gap:12px}
+.hh-h{font-family:var(--f-body);font-weight:700}
+.hh-bk{justify-self:start;display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0;padding:6px 16px;border-radius:999px;font-weight:700;font-size:1rem;background:var(--gold);color:var(--cta-ink)}
+.hh-bk span{font-size:.8125rem;font-weight:700;opacity:.8}
+.hh-bk.hh-even{background:var(--accent-soft);color:var(--ink)}
+.hh-bk.hh-loss,.hh-bk.hh-big-loss{background:var(--stamp);color:#2A0B07}
+.hh-main{margin:0}
+.hh-main b{display:block;font-size:clamp(2.2rem,10vw,3.6rem);line-height:1.15;color:var(--gold);overflow-wrap:anywhere}
+.hh-main.neg b{color:#FF8A7A}
+.hh-yr{margin:0;font-size:1.2rem;font-weight:700}
+.hh-rg{margin:0;font-size:.95rem;line-height:1.7;color:var(--muted)}
+.hh-rg b{color:var(--ink)}
+.hh-brk{margin:0;display:grid}
+.hh-brk div{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:.92rem;line-height:1.5}
+.hh-brk dt{min-width:0}
+.hh-brk dt small{display:block;font-size:.78rem;color:var(--muted)}
+.hh-brk dd{margin:0;font-weight:700;white-space:nowrap}
+.hh-brk .net{font-size:1.05rem}
+.hh-brk .net dd{color:var(--gold)}
+.hh-now{margin:0;font-size:.85rem;line-height:1.7;color:var(--muted)}
+.hh-scn{display:grid;gap:14px}
+.hh-scn fieldset{border:0;margin:0;padding:0;min-width:0}
+.hh-scn legend{padding:0;margin-bottom:8px;font-weight:700;font-size:.95rem}
+.hh-opt{display:grid;gap:6px}
+.hh-o{position:relative;display:block}
+.hh-o input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.hh-o>span{display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:44px;padding:8px 14px;border-radius:12px;border:1.5px solid var(--line);font-size:.9rem;line-height:1.45;cursor:pointer}
+.hh-o>span>span{min-width:0}
+.hh-o b{white-space:nowrap}
+.hh-o small{display:inline-block;margin-inline-start:8px;padding:0 8px;border-radius:999px;border:1px solid var(--muted);font-size:.72rem;color:var(--muted)}
+.hh-o input:checked+span{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 10%,transparent)}
+.hh-o input:checked+span b{color:var(--gold)}
+.hh-o input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.hh-fund{margin:4px 0 0;padding:12px 14px;border-radius:12px;background:var(--paper);font-size:.86rem;line-height:1.8}
+.hh-share{display:grid;gap:10px}
+.hh-card{margin:0}
+.hh-card canvas{display:block;width:100%;height:auto;aspect-ratio:40/21;border-radius:12px;border:1px solid var(--line);background:#0A0F24}
+.hh .hh-acts{justify-content:flex-start;margin-top:0}
+@media (max-width:520px){.hh-acts .btn{flex:1 1 auto}.hh-acts .qz-x{flex-basis:100%}}
+.hh-tw{overflow-x:auto}
+.hh-tbl{width:100%;border-collapse:collapse;font-size:.88rem;line-height:1.6}
+.hh-tbl th,.hh-tbl td{padding:10px 8px;border-top:1px solid var(--line);text-align:start;vertical-align:top}
+.hh-tbl thead th{border-top:0;font-size:.78rem;color:var(--muted);font-weight:700}
+.hh-tbl tbody th{font-weight:700}
+.hh-tbl tbody th a{color:var(--accent)}
+.hh-tbl .hh-num{font-weight:700}
+.hh-tbl td:nth-child(2){white-space:nowrap}
+.hh-as ul,.hh-src ol{margin:0;padding-inline-start:1.3em;display:grid;gap:8px;font-size:.92rem;line-height:1.8}
+.hh-src ol{font-size:.8125rem;color:var(--muted)}
+.hh-src a{color:var(--accent);overflow-wrap:anywhere}
+</style>`;
+// エッセイの中の箱（「あなたの家で計算する」）。エッセイの "k" ブロック
+const HH_BOX_CSS = `<style>.hh-box{display:grid;gap:10px;justify-items:start;margin-block:6px;padding:18px 20px;border-radius:14px;border:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));border-inline-start:4px solid var(--gold);background:var(--surface)}.hh-box .hh-box-h{margin:0;font-weight:700;font-size:1.1rem;color:var(--gold)}.hh-box p{margin:0;font-size:.95rem;line-height:1.8}.hh-box .btn{min-height:48px;padding-inline:22px;white-space:normal;text-align:center}</style>`;
+const hhBox = (lang, src) => { const L = T[lang]; return `<aside class="hh-box" aria-label="${esc(L.hhTitle)}"><p class="hh-box-h">${esc(L.hhBoxH)}</p><p>${esc(L.hhBoxP)}</p><a class="btn solid" href="${hhPath(lang)}?s=${src}">${esc(L.hhBoxBtn)} ${RTL.has(lang) ? '←' : '→'}</a></aside>`; };
+const jsonScript = v => JSON.stringify(v).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
+function hhPage(lang) {
+  const L = T[lang], X = HH_CTX[lang], home = urlPath(lang), url = hhAbs(lang), rtl = RTL.has(lang);
+  const s0 = X.parse({});
+  const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+    { '@type': 'ListItem', position: 2, name: L.calcTitle, item: calcAbs(lang) },
+    { '@type': 'ListItem', position: 3, name: L.hhTitle, item: url } ] };
+  const rows = hhEssayRows(lang).map((r, i) => {
+    const s = X.parse(HOUSEHOLD.check[i].q), { r: x, g } = X.summary(s);
+    return `<tr><th scope="row"><a href="?${esc(X.query(s))}">${esc(r[0])}</a></th><td class="hh-num">${esc(X.sgn(x.net))}</td><td>${esc(g.min === g.max ? X.sgn(g.min) : X.rangeText(g))}</td></tr>`;
+  }).join('');
+  const src = HOUSEHOLD.sources.map(x => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener" dir="auto">${esc(x[lang] || x.en)}</a></li>`).join('');
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></li><li aria-current="page">${esc(L.hhTitle)}</li></ol></nav>
+<main class="hh">
+<header class="orgs-head"><p class="eyebrow"><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></p><h1>${esc(L.hhH1)}</h1><p class="orgs-intro">${esc(L.hhIntro)}</p>${L.hhJapan ? `<p class="hh-jp">${esc(L.hhJapan)}</p>` : ''}</header>
+<noscript><p class="hh-nojs">${esc(L.hhNoJs)}</p></noscript>
+<form class="cx-form hh-form" id="hh" data-url="${esc(url)}" onsubmit="return false"><div class="hh-ctl" id="hhCtl">${X.controls(s0)}</div></form>
+<p class="hh-sr" id="hhLive" aria-live="polite"></p>
+<section class="cx-res hh-res" id="hhRes">${X.result(s0, url)}</section>
+<section class="g-sec hh-es"><h2>${esc(L.hhEssayH)}</h2><p class="hh-note">${esc(L.hhEssayP)}</p><div class="hh-tw"><table class="hh-tbl"><thead><tr><th scope="col">${esc(L.hhColHh)}</th><th scope="col">${esc(L.hhColMain)}</th><th scope="col">${esc(L.hhColRange)}</th></tr></thead><tbody>${rows}</tbody></table></div><p class="cx-idx"><a href="${essayPath(lang, HH_ESSAY)}">${esc(L.hhEssayLink)} ${rtl ? '←' : '→'}</a></p></section>
+<section class="g-sec cx-note hh-as"><h2>${esc(L.hhAssumeH)}</h2><ul>${['hhA1', 'hhA2', 'hhA3', 'hhA4', 'hhA5', 'hhA6', 'hhTax'].map(k => `<li>${esc(L[k])}</li>`).join('')}</ul></section>
+<section class="g-sec hh-src"><h2>${esc(L.hhSrcH)}</h2><ol><li><a href="${essayPath(lang, HH_ESSAY)}">${esc(HH_ESSAY.title[lang])}</a></li>${src}</ol></section>
+<p class="cx-idx"><a href="${calcPath(lang)}">${esc(L.hhCalcLink)} ${rtl ? '←' : '→'}</a></p>
+<p class="back"><a class="btn line" href="${calcPath(lang)}">${rtl ? '→' : '←'} ${esc(L.calcTitle)}</a></p>
+</main>`;
+  const script = `<script>(function(){var D=${jsonScript(HH_DATA[lang])},L=${jsonScript(HH_L(lang))},LANG=${JSON.stringify(lang)};${hhJs.CLIENT}${hhJs.BOOT}})()</script>`;
+  return shell(lang, { title: `${L.hhH1} | ${L.title}`, desc: clip(L.hhDesc, lang), hrefFor: hhAbs, pathFor: hhPath, ld, ogType: 'website', body, script, image: ogImage(`hh/${lang}/index.jpg`), extraHead: HH_CSS + '\n' });
+}
+
 function calcPage(lang) {
   const L = T[lang];
   const home = urlPath(lang);
@@ -1879,6 +2048,7 @@ function calcPage(lang) {
 <form class="cx-form" id="cx" data-url="${esc(calcAbs(lang))}" onsubmit="return false"><div id="cxCtl" style="display:grid;gap:20px">${ini.controls}</div></form>
 <p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a></p>
 <p class="cx-idx"><a href="${mapPath(lang)}">${esc(L.mapLink)}</a></p>
+<p class="cx-idx"><a href="${hhPath(lang)}?s=hh-calc">${esc(L.hhHome)}</a></p>
 <section class="cx-res" id="cxRes" aria-live="polite">${ini.result}</section>
 <section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p><p>${more}</p></section>
 ${embedSection(lang, null)}
@@ -2568,6 +2738,8 @@ for (const lang of LANGS) {
   fs.writeFileSync(path.join(cdir, 'countries', 'index.html'), calcIndexPage(lang));
   fs.mkdirSync(path.join(cdir, 'map'), { recursive: true });
   fs.writeFileSync(path.join(cdir, 'map', 'index.html'), mapPage(lang));
+  fs.mkdirSync(path.join(cdir, 'household'), { recursive: true });
+  fs.writeFileSync(path.join(cdir, 'household', 'index.html'), hhPage(lang));
   if (lang === DEFAULT_LANG) for (const l of LANGS) fs.writeFileSync(path.join(cdir, `app-${l}.js`), CALC_APP[l].js);
   const emdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'embed');
   fs.mkdirSync(path.join(emdir, 'calc'), { recursive: true });
@@ -2600,6 +2772,7 @@ for (const lang of LANGS) {
 
 if (mapDrift) console.warn(mapDrift);
 if (workDrift) console.warn(workDrift);
+if (hhDrift) console.warn(hhDrift); else console.log(`household: the essay's ${HOUSEHOLD.check.length} households match (main, range, benefits now, basic income)`);
 if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);
 // ---- フォント: 書き出した HTML から、言語ごと・書体ごとに実際に出る文字を集め、そのサブセットを用意して <!--@fonts@--> を埋める
 const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
@@ -2680,6 +2853,12 @@ else for (let i = 1; i <= 3; i++) {
 {
   const list = Object.fromEntries(LANGS.map(l => [l, Object.fromEntries(QUIZ.types.filter(t => fs.existsSync(path.join(OG_DIR, 'shindan', l, `${t.id}.jpg`))).map(t => [t.id, [qzShareTitle(l, t), t.desc[l]]]))]));
   const file = path.join(__dirname, 'src/shindan-cards.json'), json = JSON.stringify(list) + '\n';
+  if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== json) fs.writeFileSync(file, json);
+}
+// わが家のBI計算機の結果カードの一覧（src/household-cards.json）。/calc/household/?r={区分} なら src/worker.js が og:image・og:title などを区分のカードに差し替える
+{
+  const list = Object.fromEntries(LANGS.map(l => [l, Object.fromEntries(hhJs.BUCKETS.filter(([b]) => fs.existsSync(path.join(OG_DIR, 'hh', l, `${b}.jpg`))).map(([b, k]) => [b, [cfill(T[l].hhOgTitle, { b: T[l]['hhB_' + k] }), cfill(T[l].hhOgDesc, { sub: T[l]['hhBs_' + k] })]]))]));
+  const file = path.join(__dirname, 'src/household-cards.json'), json = JSON.stringify(list) + '\n';
   if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== json) fs.writeFileSync(file, json);
 }
 // エッセイのカード用の小さな画像（src/og/thumb/…、360x189）。OG 画像より古ければ macOS の sips で作り直す。作れないときは元の OG 画像を使う
@@ -2819,7 +2998,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(hhAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 { const json = JSON.stringify(Object.fromEntries(Object.keys(lastmodNew).sort().map(k => [k, lastmodNew[k]])), null, 1) + '\n'; if (!fs.existsSync(LASTMOD_FILE) || fs.readFileSync(LASTMOD_FILE, 'utf8') !== json) fs.writeFileSync(LASTMOD_FILE, json); }
@@ -3102,6 +3281,7 @@ ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}
 ${GUIDES.map(g => `- [${mdLink(g.en.title)}](${guideAbs(DEFAULT_LANG, g)}): ${md(g.en.desc)} Last updated ${g.updated}.`).join('\n')}
 - [${md(T.en.shindanH1)}](${qzAbs(DEFAULT_LANG)}): ${md(T.en.shindanDesc)} Result types: ${QUIZ.types.map(t => `[${mdLink(t.name.en)}](${qzTypeAbs(DEFAULT_LANG, t)}) (${servicesFor(t, live).length} services)`).join(', ')}.
 - [${md(T.en.calcH1)}](${calcAbs(DEFAULT_LANG)}): ${md(T.en.calcDesc)} ${CALC_WORLD.length} countries and territories (${CALC.countries.map(c => `${c.name.en} (${c.id})`).join(', ')} with national figures; the rest from World Bank data). Inputs are reproducible from the URL: \`?c={country id}&w=all|adults|kids&m={monthly amount in local currency}\`. Each country also has its own page at \`/calc/{country id}/\` (e.g. ${calcCtyAbs(DEFAULT_LANG, CALC_WORLD.find(c => c.id === 'br'))}), and [all countries are compared](${calcIdxAbs(DEFAULT_LANG)}) by the yearly cost of paying everyone the World Bank's $3.00-a-day poverty line, as a share of GDP. Figures: ${Object.values(CALC.sources).map(x => `[${mdLink(x.en.split('. ')[0])}](${x.url}) (${x.year})`).join('; ')}.
+- [${md(T.en.hhH1)}](${hhAbs(DEFAULT_LANG)}): ${md(T.en.hhDesc)} For households in Japan, monthly, before any tax rise to fund it, with the assumptions of the essay [${mdLink(HH_ESSAY.title.en)}](${essayAbs(DEFAULT_LANG, HH_ESSAY)}) (child allowance under the FY2026 rules, pensions kept / only the basic pension replaced / replaced entirely, public assistance topping up or abolished, clawback from households earning ¥10 million or more). Inputs are reproducible from the URL: \`?a={adults}&u={of whom university-age children}&k={children 0-2}&c={children 3 to high-school age}&i={income band 0-${HOUSEHOLD.income.length - 1}: ${HOUSEHOLD.income.map(x => `¥${x / 100}m`).join(', ')}}&p={pension: 0 none, 1 one National Pension, 2 two, 3 model couple, 4 custom with pb= and pu=}&h=1&hs={monthly public assistance}&m={${HOUSEHOLD.amounts.join('|')}}\`, with optional assumptions \`sp=A|B|C\`, \`sh=A|B\`, \`sc=0|1\`, \`sk=0|1\`. The essay's five households: ${hhEssayRows('en').map((r, i) => { const X = HH_CTX.en, sm = X.summary(X.parse(HOUSEHOLD.check[i].q)); return `${md(r[0])}: ${md(X.sgn(sm.r.net))} a month by default (${md(sm.g.min === sm.g.max ? X.sgn(sm.g.min) : X.rangeText(sm.g))})`; }).join('; ')}.
 - [${md(T.en.mapH1)}](${mapAbs(DEFAULT_LANG)}): ${md(cfill(T.en.mapDesc, { n: CALC_WORLD.length }))} Bands by cost as a share of central government tax revenue: ${MAP_COUNTS.slice(0, 5).map((k, b) => `${md(T.en['mapBin' + b])}: ${k}`).join('; ')}; no recent data: ${MAP_COUNTS[5]}.
 
 ## Open-source projects
@@ -3165,7 +3345,7 @@ const essayFull = e => [
   `- Page: ${essayAbs(DEFAULT_LANG, e)}`,
   `- Published: ${e.date}`,
   '',
-  ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'w' ? workChartMd(t) : k === 'm' ? `[World map: ${md(T.en.mapSvgLabel)}](${mapAbs(DEFAULT_LANG)})` : k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : k === 't' ? t.split('\n').map((r, i) => `| ${r.split(' | ').map(md).join(' | ')} |${i ? '' : `\n|${r.split(' | ').map(() => ' --- |').join('')}`}`).join('\n') : md(t)).flatMap(x => [x, '']),
+  ...e.blocks.en.map(([k, t]) => [k, t.replace(ESSAY_LINK, (_, txt, href) => `${txt} (${SITE_URL}${href})`)]).map(([k, t]) => k === 'w' ? workChartMd(t) : k === 'm' ? `[World map: ${md(T.en.mapSvgLabel)}](${mapAbs(DEFAULT_LANG)})` : k === 'k' ? `[${md(T.en.hhBoxH)}: ${md(T.en.hhTitle)}](${hhAbs(DEFAULT_LANG)})` : k === 'h' ? `#### ${md(t)}` : k === 'o' ? `Opinion: ${md(t)}` : k === 't' ? t.split('\n').map((r, i) => `| ${r.split(' | ').map(md).join(' | ')} |${i ? '' : `\n|${r.split(' | ').map(() => ' --- |').join('')}`}`).join('\n') : md(t)).flatMap(x => [x, '']),
   ...essayList(e.related).flatMap(x => [`Related essay: ${essayAbs(DEFAULT_LANG, x)}`, '']),
   'Sources:',
   '',

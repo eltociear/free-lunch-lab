@@ -1,19 +1,19 @@
 {
  "/": [
-  "0e5787fb8cbb5a6c",
-  "2026-11-11"
+  "aa9904e019c193af",
+  "2026-11-13"
  ],
  "/ar/": [
-  "b261aa197fe6ca11",
-  "2026-11-11"
+  "ae4527b089dd282c",
+  "2026-11-13"
  ],
  "/ar/badge/": [
   "a56636d38f2000da",
   "2026-11-11"
  ],
  "/ar/calc/": [
-  "78c381d3f7784fc8",
-  "2026-11-11"
+  "5fe5ac9a6327fba4",
+  "2026-11-13"
  ],
  "/ar/calc/ad/": [
   "1fb9410f04803e19",
@@ -334,6 +334,10 @@
  "/ar/calc/hn/": [
   "1d6436af47db9563",
   "2026-11-11"
+ ],
+ "/ar/calc/household/": [
+  "339569e3dcab8797",
+  "2026-11-13"
  ],
  "/ar/calc/hr/": [
   "95779f28fc2bb1a0",
@@ -928,12 +932,12 @@
   "2026-11-11"
  ],
  "/ar/essays/refundable-tax-credit-vs-basic-income/": [
-  "151e3ca5fbec6a98",
-  "2026-11-11"
+  "cdc58e84b3e688f8",
+  "2026-11-13"
  ],
  "/ar/essays/takenaka-70000-yen-basic-income/": [
-  "a72402e55ce0bbcd",
-  "2026-11-11"
+  "93d62a2c607bd032",
+  "2026-11-13"
  ],
  "/ar/essays/thailand-digital-wallet/": [
   "5d2a8b918588ac71",
@@ -969,7 +973,7 @@
  ],
  "/ar/open-source/": [
   "759dba9856bed702",
-  "2026-11-11"
+  "2026-11-13"
  ],
  "/ar/organizations/": [
   "aa2b2ac390192d3f",
@@ -1060,16 +1064,16 @@
   "2026-11-11"
  ],
  "/ar/services/jrkripto/": [
-  "db68b0f55e2667b5",
-  "2026-11-11"
+  "1cca1b6428566ef6",
+  "2026-11-13"
  ],
  "/ar/services/kabuand/": [
-  "2a5110f1d521148d",
-  "2026-11-11"
+  "c65ce40091fa3846",
+  "2026-11-13"
  ],
  "/ar/services/lifeai/": [
-  "d2123b35ee311c54",
-  "2026-11-11"
+  "31b03ac9c113bdc1",
+  "2026-11-13"
  ],
  "/ar/services/meingrundeinkommen/": [
   "b7acf7cba9ce60d7",
@@ -1084,8 +1088,8 @@
   "2026-11-11"
  ],
  "/ar/services/miningmachine/": [
-  "43482a8fea4d36e3",
-  "2026-11-11"
+  "e6fb4550d2c2289f",
+  "2026-11-13"
  ],
  "/ar/services/oro/": [
   "f022601006001667",
@@ -1124,8 +1128,8 @@
   "2026-11-11"
  ],
  "/ar/services/ubi4all/": [
-  "3a315480b3575e34",
-  "2026-11-11"
+  "a86c62d203014119",
+  "2026-11-13"
  ],
  "/ar/services/ubiquitus/": [
   "7a4c71d31c7caab6",
@@ -1144,8 +1148,8 @@
   "2026-11-11"
  ],
  "/ar/shindan/careful/": [
-  "ea0dd01c6a30dac4",
-  "2026-11-11"
+  "42cda8a23c8fcff6",
+  "2026-11-13"
  ],
  "/ar/shindan/crypto/": [
   "e442719628fcfe70",
@@ -1160,12 +1164,12 @@
   "2026-11-11"
  ],
  "/ar/shindan/shareholder/": [
-  "a19a7b5fbfe36a40",
-  "2026-11-11"
+  "e2c88deac672d1d7",
+  "2026-11-13"
  ],
  "/ar/shindan/sleeper/": [
-  "8d5303b5fea3a1a4",
-  "2026-11-11"
+  "5e6f9565f201abca",
+  "2026-11-13"
  ],
  "/ar/timeline/": [
   "33abd46ec6f73893",
@@ -1180,12 +1184,12 @@
   "2026-11-11"
  ],
  "/ar/verify/kyc-id/": [
-  "3e9524cbc8d32bba",
-  "2026-11-11"
+  "ec8bc46f6f12f940",
+  "2026-11-13"
  ],
  "/ar/verify/none/": [
-  "549b728e74218abf",
-  "2026-11-11"
+  "84421eaa52520069",
+  "2026-11-13"
  ],
  "/ar/verify/phone/": [
   "9f0f0d9ea0b00675",
@@ -1204,8 +1208,8 @@
   "2026-11-11"
  ],
  "/calc/": [
-  "96da828238276b80",
-  "2026-11-11"
+  "b3f4ad8dc847925a",
+  "2026-11-13"
  ],
  "/calc/ad/": [
   "c03e199a13de7304",
@@ -1526,6 +1530,10 @@
  "/calc/hn/": [
   "dcd259c2698b3dd4",
   "2026-11-11"
+ ],
+ "/calc/household/": [
+  "82d883d3297af301",
+  "2026-11-13"
  ],
  "/calc/hr/": [
   "072289677d54f33d",
@@ -2060,16 +2068,16 @@
   "2026-11-11"
  ],
  "/de/": [
-  "0a6fd7cc85dcf06d",
-  "2026-11-11"
+  "1f398963890fab37",
+  "2026-11-13"
  ],
  "/de/badge/": [
   "edaffbdc0c0f5845",
   "2026-11-11"
  ],
  "/de/calc/": [
-  "3f20e4fd32b94a06",
-  "2026-11-11"
+  "5108c02d39131f3b",
+  "2026-11-13"
  ],
  "/de/calc/ad/": [
   "0fa64e26705af4fb",
@@ -2390,6 +2398,10 @@
  "/de/calc/hn/": [
   "d630dafbbedc4f44",
   "2026-11-11"
+ ],
+ "/de/calc/household/": [
+  "d5b6d83aad2a4b4d",
+  "2026-11-13"
  ],
  "/de/calc/hr/": [
   "55a818c2c52c3805",
@@ -2984,12 +2996,12 @@
   "2026-11-11"
  ],
  "/de/essays/refundable-tax-credit-vs-basic-income/": [
-  "15a48769c2557ea1",
-  "2026-11-11"
+  "5232bc14c832fef1",
+  "2026-11-13"
  ],
  "/de/essays/takenaka-70000-yen-basic-income/": [
-  "ef9a29c1a0f52d92",
-  "2026-11-11"
+  "3faf244c8f70891a",
+  "2026-11-13"
  ],
  "/de/essays/thailand-digital-wallet/": [
   "f7f0b1bfaf55d4e5",
@@ -3025,7 +3037,7 @@
  ],
  "/de/open-source/": [
   "f0d80f7fb43032b0",
-  "2026-11-11"
+  "2026-11-13"
  ],
  "/de/organizations/": [
   "675ea742cdc3d592",
@@ -3116,16 +3128,16 @@
   "2026-11-11"
  ],
  "/de/services/jrkripto/": [
-  "db3a3e98851ffbc0",
-  "2026-11-11"
+  "a01dd933c7b5e9c8",
+  "2026-11-13"
  ],
  "/de/services/kabuand/": [
-  "82095dfd9529402b",
-  "2026-11-11"
+  "4052530cf7bb4fcd",
+  "2026-11-13"
  ],
  "/de/services/lifeai/": [
-  "6de26c20ea2bffcd",
-  "2026-11-11"
+  "c6ecc919b2d16a05",
+  "2026-11-13"
  ],
  "/de/services/meingrundeinkommen/": [
   "b0176ee8845ee3e2",
@@ -3140,8 +3152,8 @@
   "2026-11-11"
  ],
  "/de/services/miningmachine/": [
-  "d49031ac99194241",
-  "2026-11-11"
+  "71f632ffabb7e06e",
+  "2026-11-13"
  ],
  "/de/services/oro/": [
   "f68db22ab748ff1f",
@@ -3180,8 +3192,8 @@
   "2026-11-11"
  ],
  "/de/services/ubi4all/": [
-  "dc66ebfa4437d3c7",
-  "2026-11-11"
+  "ad96a9e79bbfc8ae",
+  "2026-11-13"
  ],
  "/de/services/ubiquitus/": [
   "ce46d7f44a3d51a4",
@@ -3200,8 +3212,8 @@
   "2026-11-11"
  ],
  "/de/shindan/careful/": [
-  "aa552d1482b59f46",
-  "2026-11-11"
+  "093b65ca747c70c4",
+  "2026-11-13"
  ],
  "/de/shindan/crypto/": [
   "a3ab14e18c00796d",
@@ -3216,12 +3228,12 @@
   "2026-11-11"
  ],
  "/de/shindan/shareholder/": [
-  "f503524a707a821c",
-  "2026-11-11"
+  "e6901629dc2b7d64",
+  "2026-11-13"
  ],
  "/de/shindan/sleeper/": [
-  "cca5344fe85b8943",
-  "2026-11-11"
+  "1ed29fce72a26a89",
+  "2026-11-13"
  ],
  "/de/timeline/": [
   "26d8402a01a66850",
@@ -3236,12 +3248,12 @@
   "2026-11-11"
  ],
  "/de/verify/kyc-id/": [
-  "27a75756199d7543",
-  "2026-11-11"
+  "ddd5eb35c2f954d2",
+  "2026-11-13"
  ],
  "/de/verify/none/": [
-  "2f2141b1ba719147",
-  "2026-11-11"
+  "d45ed9e8adfcfb0e",
+  "2026-11-13"
  ],
  "/de/verify/phone/": [
   "f72ba88f4eade96a",
@@ -3260,16 +3272,16 @@
   "2026-11-11"
  ],
  "/es/": [
-  "02bd43a8d75b017e",
-  "2026-11-11"
+  "6286201b11077b43",
+  "2026-11-13"
  ],
  "/es/badge/": [
   "bcc6c011b9153512",
   "2026-11-11"
  ],
  "/es/calc/": [
-  "f8fe7319c5ee5095",
-  "2026-11-11"
+  "1d419aac2245de3f",
+  "2026-11-13"
  ],
  "/es/calc/ad/": [
   "cf473613a347d219",
@@ -3590,6 +3602,10 @@
  "/es/calc/hn/": [
   "fdbbc2d4132020fe",
   "2026-11-11"
+ ],
+ "/es/calc/household/": [
+  "ab3b7fa74c4c6980",
+  "2026-11-13"
  ],
  "/es/calc/hr/": [
   "39131718c5acd20a",
@@ -4184,12 +4200,12 @@
   "2026-11-11"
  ],
  "/es/essays/refundable-tax-credit-vs-basic-income/": [
-  "6bd11533de409b2a",
-  "2026-11-11"
+  "882c92dd478cac96",
+  "2026-11-13"
  ],
  "/es/essays/takenaka-70000-yen-basic-income/": [
-  "21dd65bcb447828f",
-  "2026-11-11"
+  "2375d6f533f39e4f",
+  "2026-11-13"
  ],
  "/es/essays/thailand-digital-wallet/": [
   "e2e056edb6dea122",
@@ -4225,7 +4241,7 @@
  ],
  "/es/open-source/": [
   "6a999f192c1a1119",
-  "2026-11-11"
+  "2026-11-13"
  ],
  "/es/organizations/": [
   "3572b664f736a22b",
@@ -4316,16 +4332,16 @@
   "2026-11-11"
  ],
  "/es/services/jrkripto/": [
-  "f9286b3ab36c3bca",
-  "2026-11-11"
+  "8884f20e0b399a92",
+  "2026-11-13"
  ],
  "/es/services/kabuand/": [
-  "dba74e38c0d33608",
-  "2026-11-11"
+  "c88f8458ae765e8c",
+  "2026-11-13"
  ],
  "/es/services/lifeai/": [
-  "52f4d4922aa078e3",
-  "2026-11-11"
+  "bcc6e7cad2df4202",
+  "2026-11-13"
  ],
  "/es/services/meingrundeinkommen/": [
   "8d150741fefb4599",
@@ -4340,8 +4356,8 @@
   "2026-11-11"
  ],
  "/es/services/miningmachine/": [
-  "a6d087613874e3df",
-  "2026-11-11"
+  "76013c5feef6f323",
+  "2026-11-13"
  ],
  "/es/services/oro/": [
   "9569955eec3f02b3",
@@ -4380,8 +4396,8 @@
   "2026-11-11"
  ],
  "/es/services/ubi4all/": [
-  "fb42c6802588c68e",
-  "2026-11-11"
+  "acaacff7c115aa1f",
+  "2026-11-13"
  ],
  "/es/services/ubiquitus/": [
   "bcb3126103724bef",
@@ -4400,8 +4416,8 @@
   "2026-11-11"
  ],
  "/es/shindan/careful/": [
-  "8ae9a2e9d8725262",
-  "2026-11-11"
+  "ccc19b2cc935df78",
+  "2026-11-13"
  ],
  "/es/shindan/crypto/": [
   "bb486fa4f904c12a",
@@ -4416,12 +4432,12 @@
   "2026-11-11"
  ],
  "/es/shindan/shareholder/": [
-  "5c30e8d6cba512a2",
-  "2026-11-11"
+  "9d0be4b71e1ec42c",
+  "2026-11-13"
  ],
  "/es/shindan/sleeper/": [
-  "71c1111caa2e1f43",
-  "2026-11-11"
+  "0bcc7e63ded11005",
+  "2026-11-13"
  ],
  "/es/timeline/": [
   "acb683e6a3eef676",
@@ -4436,12 +4452,12 @@
   "2026-11-11"
  ],
  "/es/verify/kyc-id/": [
-  "422e055944f756f1",
-  "2026-11-11"
+  "44cff1fe07207dc0",
+  "2026-11-13"
  ],
  "/es/verify/none/": [
-  "a0cac7181a60c4d2",
-  "2026-11-11"
+  "373e29a6881cf271",
+  "2026-11-13"
  ],
  "/es/verify/phone/": [
   "7cfbaef1a761a2b8",
@@ -4512,12 +4528,12 @@
   "2026-11-11"
  ],
  "/essays/refundable-tax-credit-vs-basic-income/": [
-  "be545268304ae369",
-  "2026-11-11"
+  "06d5167b2175ddfd",
+  "2026-11-13"
  ],
  "/essays/takenaka-70000-yen-basic-income/": [
-  "0c70c5aa43eb76d4",
-  "2026-11-11"
+  "a68be0487b0cf62e",
+  "2026-11-13"
  ],
  "/essays/thailand-digital-wallet/": [
   "02c5d83a67174ccb",
@@ -4548,16 +4564,16 @@
   "2026-11-11"
  ],
  "/hi/": [
-  "0fa8fdce21f933fa",
-  "2026-11-11"
+  "af98c079fbb155d8",
+  "2026-11-13"
  ],
  "/hi/badge/": [
   "f9fa4d28c49b877f",
   "2026-11-11"
  ],
  "/hi/calc/": [
-  "f70708281908b9b2",
-  "2026-11-11"
+  "4bef385bc38f07d5",
+  "2026-11-13"
  ],
  "/hi/calc/ad/": [
   "4a789f795f5626c0",
@@ -4878,6 +4894,10 @@
  "/hi/calc/hn/": [
   "991df9c5073b38ee",
   "2026-11-11"
+ ],
+ "/hi/calc/household/": [
+  "61f876c30f4c347d",
+  "2026-11-13"
  ],
  "/hi/calc/hr/": [
   "ca1cbb9dae4edcb5",
@@ -5472,12 +5492,12 @@
   "2026-11-11"
  ],
  "/hi/essays/refundable-tax-credit-vs-basic-income/": [
-  "1cb952bbd55626ba",
-  "2026-11-11"
+  "7173c532d9ed4c74",
+  "2026-11-13"
  ],
  "/hi/essays/takenaka-70000-yen-basic-income/": [
-  "f9f614b6aba0a993",
-  "2026-11-11"
+  "d9b6b5c78132f1eb",
+  "2026-11-13"
  ],
  "/hi/essays/thailand-digital-wallet/": [
   "6eab272965ccebcc",
@@ -5513,7 +5533,7 @@
  ],
  "/hi/open-source/": [
   "659f6c4036027fe5",
-  "2026-11-11"
+  "2026-11-13"
  ],
  "/hi/organizations/": [
   "52847d4dd4c1f588",
@@ -5604,16 +5624,16 @@
   "2026-11-11"
  ],
  "/hi/services/jrkripto/": [
-  "1d27c39528fa9997",
-  "2026-11-11"
+  "c0db95e0640c3dbe",
+  "2026-11-13"
  ],
  "/hi/services/kabuand/": [
-  "143151e088c7c3f5",
-  "2026-11-11"
+  "a65a30587ed50105",
+  "2026-11-13"
  ],
  "/hi/services/lifeai/": [
-  "d004031742a1cba7",
-  "2026-11-11"
+  "537381f077064f03",
+  "2026-11-13"
  ],
  "/hi/services/meingrundeinkommen/": [
   "397f147d34ef8c7f",
@@ -5628,8 +5648,8 @@
   "2026-11-11"
  ],
  "/hi/services/miningmachine/": [
-  "6b4f32671a54e2d1",
-  "2026-11-11"
+  "314c379e5c6c1378",
+  "2026-11-13"
  ],
  "/hi/services/oro/": [
   "f4b2bece9eb72e29",
@@ -5668,8 +5688,8 @@
   "2026-11-11"
  ],
  "/hi/services/ubi4all/": [
-  "ee24dcde617429b3",
-  "2026-11-11"
+  "62b23c272feba65e",
+  "2026-11-13"
  ],
  "/hi/services/ubiquitus/": [
   "40cd9d067fe51279",
@@ -5688,8 +5708,8 @@
   "2026-11-11"
  ],
  "/hi/shindan/careful/": [
-  "73b5020ec12d09d7",
-  "2026-11-11"
+  "0720ea17ef7f45f1",
+  "2026-11-13"
  ],
  "/hi/shindan/crypto/": [
   "f01266fe878b76c3",
@@ -5704,12 +5724,12 @@
   "2026-11-11"
  ],
  "/hi/shindan/shareholder/": [
-  "10c7f4880ebe7e31",
-  "2026-11-11"
+  "04105acac112079c",
+  "2026-11-13"
  ],
  "/hi/shindan/sleeper/": [
-  "6d95c01de16332f5",
-  "2026-11-11"
+  "71a032ca40f03ccc",
+  "2026-11-13"
  ],
  "/hi/timeline/": [
   "62dcdfe766ced099",
@@ -5724,12 +5744,12 @@
   "2026-11-11"
  ],
  "/hi/verify/kyc-id/": [
-  "ff12780a0d053239",
-  "2026-11-11"
+  "76638cd3048703f6",
+  "2026-11-13"
  ],
  "/hi/verify/none/": [
-  "4706026b7dbe445d",
-  "2026-11-11"
+  "b5d3ca654e9f59af",
+  "2026-11-13"
  ],
  "/hi/verify/phone/": [
   "cd23399fb7530332",
@@ -5744,16 +5764,16 @@
   "2026-11-11"
  ],
  "/ja/": [
-  "48a5b65c7c87f8f0",
-  "2026-11-11"
+  "abf7a59916b3d557",
+  "2026-11-13"
  ],
  "/ja/badge/": [
   "249bae0b73177f1f",
   "2026-11-11"
  ],
  "/ja/calc/": [
-  "6b1510929d17c355",
-  "2026-11-11"
+  "0059d707a181299f",
+  "2026-11-13"
  ],
  "/ja/calc/ad/": [
   "f6be680cae5fe398",
@@ -6074,6 +6094,10 @@
  "/ja/calc/hn/": [
   "646bbd5f02ba9c7e",
   "2026-11-11"
+ ],
+ "/ja/calc/household/": [
+  "5663332f9584d2b6",
+  "2026-11-13"
  ],
  "/ja/calc/hr/": [
   "2a505cab71110e46",
@@ -6668,12 +6692,12 @@
   "2026-11-11"
  ],
  "/ja/essays/refundable-tax-credit-vs-basic-income/": [
-  "7e22f3e6422ee318",
-  "2026-11-11"
+  "0acf0670428bdfbc",
+  "2026-11-13"
  ],
  "/ja/essays/takenaka-70000-yen-basic-income/": [
-  "139f357bc9bbddf0",
-  "2026-11-11"
+  "1e7bb83853fd45b2",
+  "2026-11-13"
  ],
  "/ja/essays/thailand-digital-wallet/": [
   "a3f02b597b596d12",
@@ -6709,7 +6733,7 @@
  ],
  "/ja/open-source/": [
   "c3e07212dabdf77d",
-  "2026-11-11"
+  "2026-11-13"
  ],
  "/ja/organizations/": [
   "12e1a422fd24a65a",
@@ -6800,16 +6824,16 @@
   "2026-11-11"
  ],
  "/ja/services/jrkripto/": [
-  "e5a527afc1490538",
-  "2026-11-11"
+  "4ec22791780a7990",
+  "2026-11-13"
  ],
  "/ja/services/kabuand/": [
-  "0e59e2a7f94665b4",
-  "2026-11-11"
+  "a5b105d4bc793af7",
+  "2026-11-13"
  ],
  "/ja/services/lifeai/": [
-  "4fec153e79c2571b",
-  "2026-11-11"
+  "355ca050090d3deb",
+  "2026-11-13"
  ],
  "/ja/services/meingrundeinkommen/": [
   "c8513cde9d681ffd",
@@ -6824,8 +6848,8 @@
   "2026-11-11"
  ],
  "/ja/services/miningmachine/": [
-  "409fc1e6dc510f3e",
-  "2026-11-11"
+  "22d032cffeac00af",
+  "2026-11-13"
  ],
  "/ja/services/oro/": [
   "0de9695ba1a2941b",
@@ -6864,8 +6888,8 @@
   "2026-11-11"
  ],
  "/ja/services/ubi4all/": [
-  "fe016f4b5069b8f4",
-  "2026-11-11"
+  "f4cde27a0b8cfa5a",
+  "2026-11-13"
  ],
  "/ja/services/ubiquitus/": [
   "a6e49175c2903341",
@@ -6884,8 +6908,8 @@
   "2026-11-11"
  ],
  "/ja/shindan/careful/": [
-  "8713144ce0b3c232",
-  "2026-11-11"
+  "c003ef8ad4646159",
+  "2026-11-13"
  ],
  "/ja/shindan/crypto/": [
   "7f566a2eb47518d8",
@@ -6900,12 +6924,12 @@
   "2026-11-11"
  ],
  "/ja/shindan/shareholder/": [
-  "63b147ed6b1b7bb2",
-  "2026-11-11"
+  "1542085bdbef5a75",
+  "2026-11-13"
  ],
  "/ja/shindan/sleeper/": [
-  "c50bec4de94b0318",
-  "2026-11-11"
+  "adea1a7b240450cc",
+  "2026-11-13"
  ],
  "/ja/timeline/": [
   "1a7f5515ccd90321",
@@ -6920,12 +6944,12 @@
   "2026-11-11"
  ],
  "/ja/verify/kyc-id/": [
-  "1a7618f9f5f0aacf",
-  "2026-11-11"
+  "25cbba165e42493a",
+  "2026-11-13"
  ],
  "/ja/verify/none/": [
-  "31116114b26aa223",
-  "2026-11-11"
+  "aed95a90e9cd4c49",
+  "2026-11-13"
  ],
  "/ja/verify/phone/": [
   "5c3026c98031ed64",
@@ -6945,7 +6969,7 @@
  ],
  "/open-source/": [
   "a7f1f9b5b2e1eb00",
-  "2026-11-11"
+  "2026-11-13"
  ],
  "/organizations/": [
   "5722388bbb90d695",
@@ -7036,16 +7060,16 @@
   "2026-11-11"
  ],
  "/services/jrkripto/": [
-  "725d445e0f0af0bb",
-  "2026-11-11"
+  "2d9f18d4d8030916",
+  "2026-11-13"
  ],
  "/services/kabuand/": [
-  "68889ae51e5b00c9",
-  "2026-11-11"
+  "41b66143fd4a7cca",
+  "2026-11-13"
  ],
  "/services/lifeai/": [
-  "33a69a91f7ad218e",
-  "2026-11-11"
+  "7207bb4fd99f5bc5",
+  "2026-11-13"
  ],
  "/services/meingrundeinkommen/": [
   "40e72a0017e39176",
@@ -7060,8 +7084,8 @@
   "2026-11-11"
  ],
  "/services/miningmachine/": [
-  "0fae65ed9529ebf3",
-  "2026-11-11"
+  "a751882d99f879c6",
+  "2026-11-13"
  ],
  "/services/oro/": [
   "847cbd1a1d2e50c6",
@@ -7100,8 +7124,8 @@
   "2026-11-11"
  ],
  "/services/ubi4all/": [
-  "8f57aa66fffddd6f",
-  "2026-11-11"
+  "e8363608962b0f4e",
+  "2026-11-13"
  ],
  "/services/ubiquitus/": [
   "c042483b3eca8538",
@@ -7120,8 +7144,8 @@
   "2026-11-11"
  ],
  "/shindan/careful/": [
-  "6fc1ebd4af2de137",
-  "2026-11-11"
+  "926b66afb5e51bac",
+  "2026-11-13"
  ],
  "/shindan/crypto/": [
   "864e53a4c5966cab",
@@ -7136,12 +7160,12 @@
   "2026-11-11"
  ],
  "/shindan/shareholder/": [
-  "d4f3e203aa38f402",
-  "2026-11-11"
+  "267abba5d50eeac6",
+  "2026-11-13"
  ],
  "/shindan/sleeper/": [
-  "e056f8568e27f4b5",
-  "2026-11-11"
+  "54af0a23b0008b20",
+  "2026-11-13"
  ],
  "/timeline/": [
   "d6e28fd9a075f7de",
@@ -7156,12 +7180,12 @@
   "2026-11-11"
  ],
  "/verify/kyc-id/": [
-  "ac41e609feb75083",
-  "2026-11-11"
+  "4dd97b5641c8a921",
+  "2026-11-13"
  ],
  "/verify/none/": [
-  "508b9b6a521605ec",
-  "2026-11-11"
+  "d131f379634be343",
+  "2026-11-13"
  ],
  "/verify/phone/": [
   "26d6785c601b145d",
@@ -7176,16 +7200,16 @@
   "2026-11-11"
  ],
  "/zh/": [
-  "ea139418a7d913ef",
-  "2026-11-11"
+  "c191f4b77acd9307",
+  "2026-11-13"
  ],
  "/zh/badge/": [
   "8b3d0c67f2a5362a",
   "2026-11-11"
  ],
  "/zh/calc/": [
-  "82b0ad8cd092260d",
-  "2026-11-11"
+  "a98a92c473c843c1",
+  "2026-11-13"
  ],
  "/zh/calc/ad/": [
   "ce25024c0fe706d5",
@@ -7506,6 +7530,10 @@
  "/zh/calc/hn/": [
   "55e74006b90ab249",
   "2026-11-11"
+ ],
+ "/zh/calc/household/": [
+  "9f3e7c8b56bcf1ac",
+  "2026-11-13"
  ],
  "/zh/calc/hr/": [
   "43d38e82c05aab6e",
@@ -8100,12 +8128,12 @@
   "2026-11-11"
  ],
  "/zh/essays/refundable-tax-credit-vs-basic-income/": [
-  "04b19144d0c3594d",
-  "2026-11-11"
+  "9023f2d7cfcd02cd",
+  "2026-11-13"
  ],
  "/zh/essays/takenaka-70000-yen-basic-income/": [
-  "d921f4b197a2e713",
-  "2026-11-11"
+  "19ddecb6e4ce26bf",
+  "2026-11-13"
  ],
  "/zh/essays/thailand-digital-wallet/": [
   "c108482ee731acb7",
@@ -8141,7 +8169,7 @@
  ],
  "/zh/open-source/": [
   "9170987861cb61f4",
-  "2026-11-11"
+  "2026-11-13"
  ],
  "/zh/organizations/": [
   "34095bfc41224c1a",
@@ -8232,16 +8260,16 @@
   "2026-11-11"
  ],
  "/zh/services/jrkripto/": [
-  "24076c943f317b72",
-  "2026-11-11"
+  "e37c78f923ea0cde",
+  "2026-11-13"
  ],
  "/zh/services/kabuand/": [
-  "d515d0f42e9a7226",
-  "2026-11-11"
+  "4f67a1667d8022da",
+  "2026-11-13"
  ],
  "/zh/services/lifeai/": [
-  "ed4200281f35c38b",
-  "2026-11-11"
+  "42c2aea2b81c23d7",
+  "2026-11-13"
  ],
  "/zh/services/meingrundeinkommen/": [
   "06ab612dcfe03572",
@@ -8256,8 +8284,8 @@
   "2026-11-11"
  ],
  "/zh/services/miningmachine/": [
-  "a6d11267fd818485",
-  "2026-11-11"
+  "48275e8b8850da60",
+  "2026-11-13"
  ],
  "/zh/services/oro/": [
   "c38b2014a19f8744",
@@ -8296,8 +8324,8 @@
   "2026-11-11"
  ],
  "/zh/services/ubi4all/": [
-  "9085459f716ea894",
-  "2026-11-11"
+  "0157bfc2ca0fa615",
+  "2026-11-13"
  ],
  "/zh/services/ubiquitus/": [
   "d4daab68fac2e38f",
@@ -8316,8 +8344,8 @@
   "2026-11-11"
  ],
  "/zh/shindan/careful/": [
-  "93727840ff0954c7",
-  "2026-11-11"
+  "8186670c1d2cb7fe",
+  "2026-11-13"
  ],
  "/zh/shindan/crypto/": [
   "43f7022721b7e8ef",
@@ -8332,12 +8360,12 @@
   "2026-11-11"
  ],
  "/zh/shindan/shareholder/": [
-  "b0fa59fe6dd7363d",
-  "2026-11-11"
+  "4f04db20e768ff7d",
+  "2026-11-13"
  ],
  "/zh/shindan/sleeper/": [
-  "9e14b0ee99baf46d",
-  "2026-11-11"
+  "49ac356844684206",
+  "2026-11-13"
  ],
  "/zh/timeline/": [
   "13e32966baca9997",
@@ -8352,12 +8380,12 @@
   "2026-11-11"
  ],
  "/zh/verify/kyc-id/": [
-  "c7f4d0b544da2d88",
-  "2026-11-11"
+  "d08a581294b87918",
+  "2026-11-13"
  ],
  "/zh/verify/none/": [
-  "dfaaa6e33198332c",
-  "2026-11-11"
+  "72aee7211d2afa50",
+  "2026-11-13"
  ],
  "/zh/verify/phone/": [
   "2af409b7119031d4",

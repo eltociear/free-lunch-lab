@@ -6,6 +6,7 @@
 // 'js' はページの小さなスクリプト（build.js の beacon）が、見えているページで本物の操作があったときに POST /b で送ったもの（人の閲覧の目安）
 import CARDS from './calc-cards.json';
 import QZ_CARDS from './shindan-cards.json';
+import HH_CARDS from './household-cards.json';
 const LANGS = new Set(['ja', 'zh', 'hi', 'es', 'de', 'ar']);
 const BOT = /bot|crawl|spider|slurp|preview|fetch|monitor|headless|lighthouse|curl|wget|python|httpclient|java\/|go-http|node/i;
 
@@ -38,7 +39,7 @@ export default {
       }
     } catch {}
     if (EMBED_PATH.test(url.pathname)) return framable(res);
-    return calcCard(request, url, res) || shindanCard(request, url, res) || res;
+    return calcCard(request, url, res) || shindanCard(request, url, res) || householdCard(request, url, res) || res;
   },
 };
 
@@ -117,6 +118,19 @@ function shindanCard(request, url, res) {
   const hit = Object.prototype.hasOwnProperty.call(QZ_CARDS[lang] || {}, id) ? QZ_CARDS[lang][id] : null;
   if (!hit) return res;
   return swapMeta(res, `${SITE}/og/shindan/${lang}/${id}.jpg`, hit[0], hit[1]);
+}
+
+// わが家のBI計算機の結果のシェア: /calc/household/?a=…&r={区分}&s=hh-share のように、r が og.js がカードを作った区分
+// （big-gain / gain / even / loss / big-loss）なら、その区分のカード（/og/hh/{lang}/{区分}.jpg）に差し替える。
+// 区分は URL だけで決まる（同じ URL なら同じ中身）。ページの中身と canonical はそのまま。r がなければ・おかしければ元のページのまま
+const HH_PATH = /^\/(?:(ja|zh|hi|es|de|ar)\/)?calc\/household\/$/;
+function householdCard(request, url, res) {
+  const m = request.method === 'GET' && res.status === 200 && url.search ? url.pathname.match(HH_PATH) : null;
+  if (!m) return null;
+  const lang = m[1] || 'en', id = url.searchParams.get('r') || '';
+  const hit = Object.prototype.hasOwnProperty.call(HH_CARDS[lang] || {}, id) ? HH_CARDS[lang][id] : null;
+  if (!hit) return res;
+  return swapMeta(res, `${SITE}/og/hh/${lang}/${id}.jpg`, hit[0], hit[1]);
 }
 
 function swapMeta(res, image, title, desc) {

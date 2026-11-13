@@ -9,6 +9,7 @@
 //   src/og/calc/{lang}/{国}-{all|adults|kids}-{金額}.jpg   BI計算機の結果カード（国 × 配る相手 × プリセット金額。src/worker.js が差し替える）
 //   src/og/news/{lang}/index.jpg   ベーシックインカム・ニュース（題・説明・最新の週の更新日と国）
 //   src/og/pilots/{lang}/us.jpg    アメリカの保証所得パイロットの一覧（題・説明・件数・州の数・評価のある件数）
+//   src/og/hh/{lang}/index.jpg, {big-gain|gain|even|loss|big-loss}.jpg   わが家のBI計算機（入口と、結果の区分ごとのカード。src/worker.js が ?r= で差し替える）
 //   src/static/apple-touch-icon.png, favicon.ico, favicon-32.png   src/static/favicon.svg から
 // 中身（HTML とフォント）が前回と同じ画像は作り直さない（src/og/manifest.json に指紋を記録）。全部作り直すときは OG_FORCE=1
 // Chrome の場所は環境変数 CHROME で変えられる
@@ -313,6 +314,29 @@ function calcCardHtml(k, lang, fonts = `/* ${CARD_FONTS(lang)} */`) {
 }
 const calcCards = Object.fromEntries(LANGS.map(l => [l, calcJs.cards(l, CALC, T[l], calcAbs(l))]));
 
+// わが家のBI計算機: 入口（題・説明・区分の名前）と、結果の区分ごとのカード（「ベーシックインカムで、わが家は」・区分の名前を大きく・目安の幅）。
+// 字はどれも T の文言なので、サイトのサブセットで足りる
+const HH_BUCKETS = require('./src/household.js').BUCKETS;
+function hhIndexHtml(lang) {
+  const L = T[lang];
+  return frame(lang, 'essay', `<div class="mid">
+<p class="cat" style="--c:#FFD66B">${esc(L.hhTitle)}</p>
+<h1 data-fit="76,42,250">${esc(L.hhH1)}</h1>
+<p class="desc" style="-webkit-line-clamp:2" data-fit="30,22,110">${esc(L.hhDesc)}</p>
+</div>
+<div class="chips">${HH_BUCKETS.map(([b, k]) => `<span class="${b.includes('loss') ? 'risk' : b === 'even' ? '' : 'loop'}">${esc(L['hhB_' + k])}</span>`).join('')}</div>`);
+}
+function hhBucketHtml(lang, b, k) {
+  const L = T[lang], neg = b.includes('loss');
+  return frame(lang, 'essay', `<div class="mid">
+<p class="lbl hhc-lead">${esc(L.hhOgLead)}</p>
+<p class="hhc-b" data-fit="${lang === 'ar' || lang === 'hi' ? '112,48,170' : '132,52,180'}"><bdi>${esc(L['hhB_' + k])}</bdi></p>
+<p class="desc hhc-s" data-fit="34,22,100">${esc(L['hhBs_' + k])}</p>
+</div>
+<div class="chips"><span>${esc(L.hhCardNote)}</span><span class="site">${esc(L.hhYours)}</span></div>`)
+    .replace('</style>', `.hhc-lead{letter-spacing:0;font-size:34px;color:#EEF1FF}.hhc-b{font-family:"${BODY[lang]}",sans-serif;font-weight:700;line-height:1.2;color:${neg ? '#FF8A7A' : b === 'even' ? '#EEF1FF' : '#FFD66B'};word-break:auto-phrase;text-wrap:balance}.hhc-s{-webkit-line-clamp:2;color:#C9D0EE}.chips .site{font-size:26px;color:#FFD66B}</style>`);
+}
+
 // ---- Chrome（DevTools プロトコル）を1回だけ起動して全部撮る
 async function launch() {
   const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'og-prof-'));
@@ -398,6 +422,7 @@ for (const lang of ONLY) {
   for (const [rel, html] of [[`shindan/${lang}/index.jpg`, quizHtml(lang)], ...QUIZ.types.map(t => [`shindan/${lang}/${t.id}.jpg`, quizTypeHtml(t, lang)])]) { const key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = newsHtml(lang), rel = `news/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = usPilotsHtml(lang), rel = `pilots/${lang}/us.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+  for (const [rel, html] of [[`hh/${lang}/index.jpg`, hhIndexHtml(lang)], ...HH_BUCKETS.map(([b, k]) => [`hh/${lang}/${b}.jpg`, hhBucketHtml(lang, b, k)])]) { const key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = calcHtml(lang), rel = `calc/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = mapHtml(lang, T[lang].calcTitle, T[lang].mapH1), rel = `calc/${lang}/map.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const k of calcCards[lang]) { const rel = `calc/${lang}/${k.id}.jpg`, key = hash(calcCardHtml(k, lang)); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => calcCardHtml(k, lang, cardFonts(lang)), format: 'jpeg', quality: 72 }); }
