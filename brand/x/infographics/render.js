@@ -261,6 +261,50 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the cash-out ranking (/ja/ranking/): the top group ("換金しやすい") with rank, name, what you get
+  // and the score, all computed by src/ranking.js from src/data.js (so it matches the page). 1200x675 (16:9), ja only.
+  'ranking': {
+    w: 1200, h: 675, langs: ['ja'], file: 'ranking-ja',
+    build: lang => {
+      const L = T[lang];
+      const { ranking, MAX } = require('../../../src/ranking.js');
+      const R = ranking(live);
+      const top = R.filter(x => x.tier === 'easy');
+      const year = live.map(s => s.checked).sort().pop().slice(0, 4);
+      const rows = top.map(x => `<li><b class="rk">${x.rank}</b><div class="tx"><p class="nm">${esc(svc(x.s.id, lang))}</p><p class="gn">${esc((x.s[lang] || x.s.en).gain)}</p></div><p class="sc"><b>${x.total}</b><span>/${MAX}</span></p></li>`).join('');
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb">${esc(L.rankEb)} ・ ${year}年版</p>
+<h1 class="hl">もらえるアプリ、本当に換金できる？</h1>
+<p class="sb">掲載${live.length}サービスのうち「${esc(L.rankTier_easy)}」グループの${top.length}件。点数は換金・市場価格・運営元・ラク度・招待制か・確認月から計算。抽選型（${R.filter(x => x.tier === 'raffle').map(x => esc(svc(x.s.id, lang))).join('・')}）は当選しないともらえないので別グループに</p>
+<ol class="ls">${rows}</ol>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">${esc(L.brandPlain)}</p>
+  <p class="src">実際に換金して確かめた順位ではありません</p>
+</div>`,
+        css: `
+.page{padding:28px 52px 22px}
+.eb{font-size:19px;color:#6CF0B0;font-weight:700}
+.hl{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:46px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:18px;line-height:1.35;color:#C9D0F0}
+.ls{list-style:none;margin:18px 0 16px;flex:1;display:grid;grid-template-columns:1fr 1fr;grid-auto-flow:column;grid-template-rows:repeat(${Math.ceil(top.length / 2)},1fr);gap:12px 18px}
+.ls li{display:flex;align-items:center;gap:12px;padding:8px 14px;border-radius:12px;background:rgba(255,255,255,.06);border:1.5px solid rgba(108,240,176,.28);min-width:0}
+.rk{flex:none;width:36px;height:36px;border-radius:50%;border:2px solid #6CF0B0;color:#6CF0B0;display:grid;place-items:center;font-size:19px;font-weight:900}
+.tx{flex:1;min-width:0}
+.nm{font-size:22px;font-weight:900;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gn{font-size:16px;color:#FFD66B;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sc{flex:none;color:#EEF1FF;font-size:15px}
+.sc b{font-size:24px;font-weight:900;color:#6CF0B0}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:26px}
+.src{margin-left:auto;font-size:16px;color:#A9B2D8}
+`,
+      };
+    },
+  },
   // X post image for the essay does-cash-make-people-stop-working: the essay's work chart (rows and columns read from
   // the 'w' block in ESSAYS, so the image cannot drift from the page): each study's main result on work as a dot in
   // one of three columns (worked less / no clear change / worked more), the US pilots as counts. 1200x675 (16:9).

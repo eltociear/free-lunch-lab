@@ -4,6 +4,7 @@ const crypto = require('crypto');
 const path = require('path');
 const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, HOUSEHOLD } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
+const { ranking: rankingOf, TIERS: RANK_TIERS, POINTS: RANK_POINTS, MAX: RANK_MAX, FRESH_MONTHS: RANK_FRESH_MONTHS } = require('./src/ranking.js');
 const calcJs = require('./src/calc.js');
 const { execFileSync } = require('child_process');
 // オープンソース一覧のスター数・最終コミット日などを取りに行く（失敗してもキャッシュで続ける。OSS_OFFLINE=1 で取得しない）
@@ -905,6 +906,7 @@ for (const lang of LANGS) {
     verifyAll: `<p class="news-more rv"><a class="orgs-tl" href="verify/">${esc(L.verifyAll)} →</a></p>`,
     verifyBlock: verifyPages.map(m => { const b = byMethod(m); return `<a href="verify/${m}/" dir="auto">${esc(VERIFY[m].name[lang])}<span>${b.req.length + b.opt.length}</span></a>`; }).join(''),
     quizCard: qzCard(lang, 'home-quiz'),
+    rankHome: `<p class="news-more rv"><a class="orgs-tl" href="ranking/">${esc(L.rankHome.replace('{n}', live.length))} →</a></p>`,
     calcIdxHome: esc(L.calcIdxLink.replace('{n}', CALC_WORLD.length)),
     mapHome: esc(L.mapLink),
     usHome: esc(L.usH1.replace('{n}', US_TL.length)),
@@ -1386,7 +1388,7 @@ function clip(str, lang) {
   return cut > 0 ? head.slice(0, cut) : a.slice(0, n - 1).join('').trimEnd() + '…';
 }
 // 一覧ページの meta description（T の *Desc）が目安から外れていたら警告する
-const DESC_KEYS = ['metaDesc', 'orgsDesc', 'graveDesc', 'tlDesc', 'ossDesc', 'badgeDesc', 'shindanDesc', 'essaysDesc', 'biNewsDesc', 'hhDesc'];
+const DESC_KEYS = ['metaDesc', 'orgsDesc', 'graveDesc', 'rankDesc', 'tlDesc', 'ossDesc', 'badgeDesc', 'shindanDesc', 'essaysDesc', 'biNewsDesc', 'hhDesc'];
 const descOff = LANGS.flatMap(l => DESC_KEYS.filter(k => T[l][k]).map(k => { const n = [...T[l][k]].length, [lo, hi] = DESC_RANGE(l); return n < lo || n > hi ? `${l}.${k} (${n}, ${lo}-${hi})` : ''; }).filter(Boolean));
 if (descOff.length) console.warn(`WARNING: meta description outside the length guideline: ${descOff.join(', ')}`);
 for (const l of LANGS) if (!T[l].homeTitle) throw new Error(`missing ${l}.homeTitle`);
@@ -2579,6 +2581,152 @@ function graveyardPage(lang) {
   return shell(lang, { title, desc: L.graveDesc, hrefFor: graveAbs, pathFor: gravePath, ld: [ld, datasetLd('graveyard.json', graveAbs(lang))], ogType: 'website', body });
 }
 
+// ---- 換金しやすさランキング（/ranking/）。点数とグループは src/ranking.js が、表示中のサービスのデータ（trust・ease・inviteOnly・checked・warning）だけから計算する。
+// 「このサイトの評価」で、実際に換金して確かめた順位ではない（ページにもそう書く）。紹介ボタンは一覧と同じく、warning のあるものは注意書きへ
+const RANK = rankingOf(live);
+const RANK_NEWEST = live.map(s => s.checked).sort().pop();
+const RANK_KEYS = ['rankNav', 'rankTitle', 'rankH1', 'rankDesc', 'rankIntro', 'rankNote', 'rankEb', 'rankUpdated', ...RANK_TIERS.flatMap(t => ['rankTier_' + t, 'rankTierD_' + t]), 'rankScore', 'rankScoreAria', 'rankPos', 'rankMethodH', 'rankM_intro', 'rankM_cash', 'rankM_price', 'rankM_op', 'rankM_ease', 'rankM_invite', 'rankM_fresh', 'rankM_tiers', 'rankM_note', 'rankScamH', 'rankScam1', 'rankScam2', 'rankMoreH', 'rankFilterLabel', 'rankF_all', 'rankF_jp', 'rankF_world', 'rankF_open', 'rankHome'];
+for (const l of LANGS) for (const k of RANK_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const k of RANK_KEYS) {
+  if (/[　-鿿⁦-⁩]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
+  if (/[A-Za-z0-9]/.test(T.ar[k].replace(/⁦[^⁩]*⁩/g, '').replace(/\{\w+\}/g, ''))) throw new Error(`ar.${k}: Latin or digits outside LRI/PDI`);
+}
+const rankPath = l => `${urlPath(l)}ranking/`;
+const rankAbs = l => SITE_URL + rankPath(l);
+const rankFill = (lang, k, o = {}) => cfill(T[lang][k], { n: live.length, year: RANK_NEWEST.slice(0, 4), max: RANK_MAX, ...o });
+const rankMonth = lang => { const [y, m] = RANK_NEWEST.split('-').map(Number); return new Intl.DateTimeFormat(LANG_TAG[lang], { year: 'numeric', month: 'long', timeZone: 'UTC' }).format(new Date(Date.UTC(y, m - 1, 1))); };
+const RANK_CSS = `
+.rk-main{max-width:1080px;margin-inline:auto}
+.rk-main .orgs-head{max-width:820px}
+.rk-upd{font-size:.84rem;color:var(--muted)}
+.rk-note{font-size:.9rem}
+.rk-main .tl-f{margin-top:4px}
+.rk-easy{--tc:var(--pos)}.rk-cond{--tc:var(--amber)}.rk-raffle{--tc:#C9A2FF}.rk-hard{--tc:#8D97AE}
+.rk-tier{padding-top:clamp(28px,5vw,48px);scroll-margin-top:calc(var(--bar-h,56px) + 8px)}
+.rk-tier>h2{font-size:1.2rem;display:flex;align-items:center;gap:10px;padding-bottom:8px;border-bottom:2px solid var(--tc)}
+.rk-tier>h2::before{content:"";flex:none;width:12px;height:12px;border-radius:50%;background:var(--tc)}
+.rk-tier>h2 .dot{font-size:.85rem;color:var(--muted);font-weight:400}
+.rk-td{margin-top:6px;font-size:.875rem;color:var(--muted)}
+.rk-list{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:10px;align-items:stretch}
+.rk-list>li{min-width:0;display:flex;scroll-margin-top:calc(var(--bar-h,56px) + 16px)}
+.rk-list>li[hidden]{display:none}
+.rk-main .rk{flex:1;gap:4px;padding:10px 14px}
+.rk-top{display:flex;align-items:center;gap:10px;min-width:0}
+.rk-main .rk .rank{width:36px;height:36px;font-size:1.1rem;border-color:var(--tc);color:var(--tc)}
+.rk-main .rk h3{flex:1;min-width:0;font-size:1.02rem;line-height:1.3;overflow-wrap:anywhere}
+.rk-main .rk h3 a{color:var(--ink);text-decoration:none;display:inline-block;padding-block:2px}
+.rk-main .rk h3 a:hover{text-decoration:underline;text-underline-offset:3px}
+.rk-sc{flex:none;display:grid;justify-items:end;gap:4px;font-weight:700;font-size:.9rem;color:var(--ink);white-space:nowrap}
+.rk-bar{display:block;width:56px;height:5px;border-radius:3px;background:var(--line);overflow:hidden}
+.rk-bar i{display:block;height:100%;width:var(--w);background:var(--tc)}
+.rk-gain{font-weight:700;color:var(--gold);font-size:.95rem;line-height:1.45;overflow-wrap:anywhere}
+.rk-cash,.rk-warn{font-size:.84rem;line-height:1.5;min-width:0}
+.rk-cash b,.rk-warn b{font-weight:700;margin-inline-end:6px;color:var(--muted)}
+.rk-warn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.rk-warn.lv-caution b{color:var(--amber)}.rk-warn.lv-danger b{color:var(--stamp)}
+.rk-main .rk .svc-foot{margin-top:auto}
+.rk-main .rk .svc-foot>.slip{order:1;flex:1 1 180px}
+.rk-main .rk .svc-foot>.slip .btn{font-size:.875rem;padding-inline:10px;min-height:44px}
+.rk-main .rk .more-in .slip{order:0;flex:none}
+.rk-main .rk .more-in .meta,.rk-main .rk .more-in .caution,.rk-main .rk .more-in .checked{margin:0}
+.rk-links{display:flex;flex-wrap:wrap;gap:0 16px;font-size:.84rem}
+.rk-links a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent);text-underline-offset:3px}
+.rk-empty{margin-top:12px;color:var(--muted);font-size:.9rem}
+.rk-box{max-width:820px;margin:clamp(36px,6vw,56px) auto 0}
+.rk-scam ul{margin:0;padding-inline-start:1.2em;display:grid;gap:4px}
+.rk-method{border:1px solid var(--line);border-radius:14px;padding:clamp(16px,3vw,24px);background:var(--surface);display:grid;gap:10px;scroll-margin-top:calc(var(--bar-h,56px) + 8px)}
+.rk-method h2,.rk-scam .warn-h{font-size:1.1rem}
+.rk-method p{font-size:.9rem;line-height:1.75}
+.rk-method ol{margin:0;padding-inline-start:1.4em;display:grid;gap:4px;font-size:.9rem;line-height:1.65}
+.rk-method .rk-mnote{color:var(--muted);font-size:.84rem}
+.rk-more{max-width:820px;margin:24px auto 0;display:grid;gap:8px}
+.rk-more h2{font-size:1rem}
+.rk-more ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.rk-more a{font-size:.875rem;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 14px;min-height:44px;display:inline-flex;align-items:center;background:var(--surface)}
+.rk-more a:hover{border-color:var(--accent);color:var(--accent)}
+`;
+// カードは名前・もらえるもの・換金・注意の1行（最初の文を短く）だけ。注意の全文・始め方・目安・確認月・リンク・紹介コードは「くわしく」（details）の中
+const rankShort = (t, lang) => { const c = [...firstClause(t)], n = CJK_LANGS.has(lang) ? 34 : 80; return c.length > n ? c.slice(0, n - 1).join('').trimEnd() + '…' : c.join(''); };
+function rankCard(x, lang) {
+  const { s, rank, total, tier } = x;
+  const L = T[lang], d = s[lang] || s.en, name = sName(s, lang), g = guideOf(s), arr = RTL.has(lang) ? '←' : '→';
+  const cash = SVC_SEO[lang].cash[(s.trust || {}).cash] || SVC_SEO[lang].cash.unknown;
+  const warn = d.warning || d.caution;
+  const sl = slip(s, L, { lang, toWarn: true });
+  return `<li id="rk-${s.id}" data-jp="${s.onlyIn ? 0 : 1}" data-world="${s.global ? 1 : 0}" data-open="${s.inviteOnly ? 0 : 1}"><article class="svc rk rk-${tier}" data-cat="${s.cat}" data-type="${s.type}">
+<div class="rk-top"><span class="rank dot" role="img" aria-label="${esc(rankFill(lang, 'rankPos', { n: rank }))}">${rank}</span><h3><a href="${svcPath(lang, s)}">${nameHtml(name)}</a></h3><p class="rk-sc"><span class="vh">${esc(rankFill(lang, 'rankScoreAria', { n: total }))}</span><span aria-hidden="true">${esc(rankFill(lang, 'rankScore', { n: total }))}</span><span class="rk-bar" aria-hidden="true"><i style="--w:${Math.round(total / RANK_MAX * 100)}%"></i></span></p></div>
+<p class="rk-gain">${esc(d.gain)}</p>
+<p class="rk-cash"><b>${esc(L.trustCash)}</b>${esc(cash)}</p>
+${warn ? `<p class="rk-warn lv-${cautionLevel(s, lang)}"><b>${esc(L.cautionP.trim())}</b>${esc(rankShort(warn, lang))}</p>` : ''}
+<div class="svc-foot"><details class="more"><summary>${esc(L.moreInfo)}</summary><div class="more-in">
+${meta(s, lang)}
+${warn ? cautionBox(s, lang, warn) : ''}
+<p class="need"><b>${esc(L.hNeed)}</b><span>${esc(d.need)}</span></p>
+${checkedLine(s, lang)}
+<p class="rk-links"><a href="${svcPath(lang, s)}">${esc(L.toPage)} ${arr}</a>${g ? `<a href="${guidePath(lang, g)}">${esc(L.guideRead.replace('{name}', g[lang].short))} ${arr}</a>` : ''}</p>
+${sl.includes('class="code') ? sl : ''}
+</div></details>
+<div class="slip">${cta(s, L, { lang, toWarn: true })}</div></div>
+</article></li>`;
+}
+function rankingPage(lang) {
+  const L = T[lang];
+  const home = urlPath(lang);
+  const h1 = rankFill(lang, 'rankH1');
+  const strip = t => String(t).replace(/[⁦-⁩]/g, '');
+  const ld = [
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: L.rankNav, item: rankAbs(lang) } ] },
+    { '@context': 'https://schema.org', '@type': 'ItemList', name: strip(h1), inLanguage: LANG_TAG[lang], url: rankAbs(lang), numberOfItems: RANK.length, itemListOrder: 'https://schema.org/ItemListOrderDescending',
+      itemListElement: RANK.map(x => ({ '@type': 'ListItem', position: x.rank, name: strip(sName(x.s, lang)), url: svcAbs(lang, x.s) })) },
+  ];
+  const per = RANK_TIERS.map(t => [t, RANK.filter(x => x.tier === t)]).filter(([, a]) => a.length);
+  const tiers = per.map(([t, a]) => `<section class="rk-tier rk-${t}" id="tier-${t}" aria-labelledby="h-${t}"><h2 id="h-${t}">${esc(L['rankTier_' + t])}<span class="dot" data-n="${a.length}">${a.length}</span></h2><p class="rk-td">${esc(L['rankTierD_' + t])}</p>
+<ol class="rk-list">${a.map(x => rankCard(x, lang)).join('\n')}</ol><p class="rk-empty" hidden>${esc(L.none)}</p></section>`).join('\n');
+  const fb = (f, label, n, on) => `<button type="button" data-f="${f}" aria-pressed="${on}">${esc(label)} <span class="dot">${n}</span></button>`;
+  const filter = `<div class="tl-f" role="group" aria-label="${esc(L.rankFilterLabel)}">${fb('', L.rankF_all, live.length, true)}${fb('jp', L.rankF_jp, live.filter(s => !s.onlyIn).length, false)}${fb('world', L.rankF_world, live.filter(s => s.global).length, false)}${fb('open', L.rankF_open, live.filter(s => !s.inviteOnly).length, false)}</div>`;
+  const P = RANK_POINTS;
+  const method = [
+    rankFill(lang, 'rankM_cash', { yes: P.cash.yes, partial: P.cash.partial }),
+    rankFill(lang, 'rankM_price', { yes: P.price.yes, partial: P.price.partial }),
+    rankFill(lang, 'rankM_op', { yes: P.operator.yes, partial: P.operator.partial }),
+    rankFill(lang, 'rankM_ease', { per: P.easePer, max: 5 * P.easePer }),
+    rankFill(lang, 'rankM_invite', { n: P.noInvite }),
+    rankFill(lang, 'rankM_fresh', { n: P.fresh, m: RANK_FRESH_MONTHS }),
+  ];
+  const sum = method.length && RANK_MAX === P.cash.yes + P.price.yes + P.operator.yes + 5 * P.easePer + P.noInvite + P.fresh;
+  if (!sum) throw new Error('ranking: points do not add up to RANK_MAX');
+  const more = [[gravePath(lang), L.graveTitle], ...GUIDES.map(g => [guidePath(lang, g), g[lang].short]), [verifyIdxPath(lang), L.verifyIdxH1], [`${home}#list`, L.listH]];
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.rankNav)}</li></ol></nav>
+<main class="rk-main">
+<header class="orgs-head"><p class="eyebrow">${esc(L.rankEb)}</p><h1>${esc(h1)}</h1><p class="orgs-intro">${esc(rankFill(lang, 'rankIntro'))}</p><p class="orgs-intro rk-note">${esc(L.rankNote)} <a href="#rk-method">${esc(L.rankMethodH)}</a></p><p class="rk-upd"><time datetime="${RANK_NEWEST}">${esc(rankFill(lang, 'rankUpdated', { date: rankMonth(lang) }))}</time></p>
+${filter}
+${shareRow(lang, h1, shareUrlOf(rankAbs(lang)), { compact: true })}</header>
+${tiers}
+<div class="warn svc-warn rk-box rk-scam" id="rk-scam" role="note"><p class="warn-h">${esc(L.rankScamH)}</p><ul>${[L.rankScam1, L.rankScam2, L.w1, L.w2, L.w4].map(t => `<li>${esc(t)}</li>`).join('')}</ul></div>
+<section class="rk-box rk-method" id="rk-method"><h2>${esc(L.rankMethodH)}</h2><p>${esc(rankFill(lang, 'rankM_intro'))}</p><ol>${method.map(t => `<li>${esc(t)}</li>`).join('')}</ol><p>${esc(L.rankM_tiers)}</p><p class="rk-mnote">${esc(L.rankM_note)}</p></section>
+<nav class="rk-more" aria-labelledby="rk-more-h"><h2 id="rk-more-h">${esc(L.rankMoreH)}</h2><ul>${more.map(([href, t]) => `<li><a href="${href}">${esc(t)}</a></li>`).join('')}</ul></nav>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
+</main>`;
+  // 絞り込み（JS がなければ全部見える）。グループごとの件数と「該当なし」を出し直す。#rk-… で隠れたカードを開いたときは全部に戻す
+  const script = `${shareScript(L)}${copyScript(L)}
+<script>
+(function(){
+  var f=document.querySelector('.rk-main .tl-f');if(!f)return;
+  var secs=[].slice.call(document.querySelectorAll('.rk-tier'));
+  function set(k){
+    [].forEach.call(f.querySelectorAll('button'),function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-f')===k))});
+    secs.forEach(function(sec){var n=0;[].forEach.call(sec.querySelectorAll('.rk-list>li'),function(li){var h=!!k&&li.getAttribute('data-'+k)!=='1';li.hidden=h;if(!h)n++});var c=sec.querySelector('h2 .dot');c.textContent=k?n+'/'+c.getAttribute('data-n'):c.getAttribute('data-n');sec.querySelector('.rk-empty').hidden=n>0});
+  }
+  f.addEventListener('click',function(e){var b=e.target.closest?e.target.closest('button'):null;if(b)set(b.getAttribute('data-f'))});
+  function show(){var el=location.hash&&document.getElementById(location.hash.slice(1));if(el&&el.hidden){set('');el.scrollIntoView()}}
+  window.addEventListener('hashchange',show);
+})();
+</script>`;
+  return shell(lang, { title: `${rankFill(lang, 'rankTitle')} | ${L.title}`, desc: clip(rankFill(lang, 'rankDesc'), lang), hrefFor: rankAbs, pathFor: rankPath, ld, ogType: 'website', body, script, pr: true, image: ogImage(`rank/${lang}/index.jpg`), extraHead: `<style>${RANK_CSS}</style>\n` });
+}
+
 // ---- ベーシックインカムにかかわるオープンソースのコード（/open-source/）。数値はビルド時に取得（src/oss.js）
 function ossPage(lang) {
   const L = T[lang];
@@ -2708,6 +2856,9 @@ for (const lang of LANGS) {
   const gdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'graveyard');
   fs.mkdirSync(gdir, { recursive: true });
   fs.writeFileSync(path.join(gdir, 'index.html'), graveyardPage(lang));
+  const rkdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'ranking');
+  fs.mkdirSync(rkdir, { recursive: true });
+  fs.writeFileSync(path.join(rkdir, 'index.html'), rankingPage(lang));
   const edir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'essays');
   fs.mkdirSync(edir, { recursive: true });
   fs.writeFileSync(path.join(edir, 'index.html'), essaysIndex(lang));
@@ -2894,6 +3045,7 @@ for (const [f, b] of Object.entries(BADGES)) fs.writeFileSync(path.join(OUT, 'ba
 const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 function newsLink(n, lang) {
   const en = n.en || '';
+  if (/cash-out ranking/i.test(en)) return rankAbs(lang);
   if (/basic income news page/i.test(en)) return biNewsAbs(lang);
   if (/badge/i.test(en)) return badgeAbs(lang);
   if (/world map/i.test(en)) return mapAbs(lang);
@@ -2998,7 +3150,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(hhAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(rankAbs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(hhAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 { const json = JSON.stringify(Object.fromEntries(Object.keys(lastmodNew).sort().map(k => [k, lastmodNew[k]])), null, 1) + '\n'; if (!fs.existsSync(LASTMOD_FILE) || fs.readFileSync(LASTMOD_FILE, 'utf8') !== json) fs.writeFileSync(LASTMOD_FILE, json); }
@@ -3274,6 +3426,7 @@ ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LA
 - [${md(T.en.tlTitle)}](${tlAbs(DEFAULT_LANG)}): ${md(T.en.tlDesc)}
 - [${md(cfill(T.en.usH1, { n: US_TL.length }))}](${usAbs(DEFAULT_LANG)}): ${md(cfill(T.en.usDesc, { n: US_TL.length }))}
 - [${md(T.en.biNewsH1)}](${biNewsAbs(DEFAULT_LANG)}): ${md(T.en.biNewsDesc)}${BI_NEWS.length ? ` Last updated ${BI_NEWS[0].updated}.` : ''}
+- [${md(rankFill('en', 'rankH1'))}](${rankAbs(DEFAULT_LANG)}): ${md(rankFill('en', 'rankDesc'))} Top group (${md(T.en.rankTier_easy)}): ${RANK.filter(x => x.tier === 'easy').map(x => md(sName(x.s, 'en'))).join(', ')}.
 - [${md(T.en.graveTitle)}](${graveAbs(DEFAULT_LANG)}): ${md(T.en.graveDesc)}
 - [${md(T.en.ossTitle)}](${ossAbs(DEFAULT_LANG)}): ${md(T.en.ossDesc)}
 - [${md(T.en.badgeH1)}](${badgeAbs(DEFAULT_LANG)}): ${md(T.en.badgeDesc)} Image: ${badgeImg('listed.svg')}. Each entry in services.json and open-source.json has a \`badge\` object with the Markdown snippet and target URL.
@@ -3426,6 +3579,14 @@ ${BI_NEWS.map(b => [`### Week of ${weekOf(b.updated)} (updated ${b.updated})`, '
 ${md(cfill(T.en.usIntro, { n: US_TL.length }))} Page: ${usAbs(DEFAULT_LANG)}
 
 ${US_TL.map(i => `- ${md(i.name)} (${md(i.place.en)}; ${i.years}): Run by ${md(i.who.en)}. ${md(i.paid.en)}. Funding: ${i.us.funders.map(f => md(T.en['tlFund_' + f])).join(', ')}. Result: ${md(i.result.en) || md(T.en.tlNoEval)}. Source: ${[i.source, i.source2].filter(Boolean).join(' ; ')}`).join('\n')}
+
+## Cash-out ranking
+
+${md(rankFill('en', 'rankIntro'))} ${md(T.en.rankNote)} Page: ${rankAbs(DEFAULT_LANG)}
+
+Scoring (out of ${RANK_MAX}): ${[rankFill('en', 'rankM_cash', { yes: RANK_POINTS.cash.yes, partial: RANK_POINTS.cash.partial }), rankFill('en', 'rankM_price', { yes: RANK_POINTS.price.yes, partial: RANK_POINTS.price.partial }), rankFill('en', 'rankM_op', { yes: RANK_POINTS.operator.yes, partial: RANK_POINTS.operator.partial }), rankFill('en', 'rankM_ease', { per: RANK_POINTS.easePer, max: 5 * RANK_POINTS.easePer }), rankFill('en', 'rankM_invite', { n: RANK_POINTS.noInvite }), rankFill('en', 'rankM_fresh', { n: RANK_POINTS.fresh, m: RANK_FRESH_MONTHS })].map(md).join('; ')}. ${md(T.en.rankM_tiers)}
+
+${RANK_TIERS.map(t => [`### ${md(T.en['rankTier_' + t])}`, '', ...RANK.filter(x => x.tier === t).map(x => `${x.rank}. [${mdLink(sName(x.s, 'en'))}](${svcAbs(DEFAULT_LANG, x.s)}): ${x.total}/${RANK_MAX}`)].join('\n')).join('\n\n')}
 
 ## Graveyard
 

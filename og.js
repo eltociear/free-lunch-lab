@@ -10,6 +10,7 @@
 //   src/og/news/{lang}/index.jpg   ベーシックインカム・ニュース（題・説明・最新の週の更新日と国）
 //   src/og/pilots/{lang}/us.jpg    アメリカの保証所得パイロットの一覧（題・説明・件数・州の数・評価のある件数）
 //   src/og/hh/{lang}/index.jpg, {big-gain|gain|even|loss|big-loss}.jpg   わが家のBI計算機（入口と、結果の区分ごとのカード。src/worker.js が ?r= で差し替える）
+//   src/og/rank/{lang}/index.jpg   換金しやすさランキング（題と、いちばん上のグループの上位5つ）
 //   src/static/apple-touch-icon.png, favicon.ico, favicon-32.png   src/static/favicon.svg から
 // 中身（HTML とフォント）が前回と同じ画像は作り直さない（src/og/manifest.json に指紋を記録）。全部作り直すときは OG_FORCE=1
 // Chrome の場所は環境変数 CHROME で変えられる
@@ -20,6 +21,7 @@ const { execFileSync } = require('child_process');
 const crypto = require('crypto');
 const { LANGS, SERVICES, T, CATS, ESSAYS, GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, TIMELINE = [] } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
+const { ranking: rankingOf, MAX: RANK_MAX } = require('./src/ranking.js');
 
 const CHROME = process.env.CHROME || '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary';
 const OUT = path.join(__dirname, 'src/og');
@@ -241,6 +243,18 @@ document.fonts.ready.then(() => { const el = document.querySelector('.qx-name'),
     .replace('</style>', `.qx-who{letter-spacing:0;font-size:32px;color:#EEF1FF}.qx-name{font-family:"${DISP[lang][0]}","${BODY[lang]}",sans-serif;font-weight:${DISP[lang][1]};line-height:${lang === 'ar' || lang === 'hi' ? 1.45 : 1.18};color:#FFD66B;word-break:auto-phrase;text-wrap:balance;max-width:960px}.qx-name .w{white-space:nowrap}.qx-d{-webkit-line-clamp:2;color:#C9D0EE}.chips .site{font-size:26px;color:#EEF1FF}</style>`);
 }
 
+// 換金しやすさランキング: 題（年と件数は build.js と同じく計算）と、いちばん上のグループの上位5つ（順位・名前・点数）。名前と点数はページにも出るので、サイトのサブセットで足りる
+function rankHtml(lang) {
+  const L = T[lang], R = rankingOf(live), newest = live.map(s => s.checked).sort().pop();
+  const fill = t => String(t).replace(/\{(\w+)\}/g, (m, k) => ({ n: live.length, year: newest.slice(0, 4), max: RANK_MAX }[k] ?? m));
+  const top = R.filter(x => x.tier === R[0].tier).slice(0, 5);
+  return frame(lang, 'essay', `<div class="mid">
+<p class="cat" style="--c:#6CF0B0">${esc(L.rankEb)}</p>
+<h1 data-fit="${lang === 'ja' || lang === 'zh' ? 64 : 56},36,260">${esc(fill(L.rankH1))}</h1>
+</div>
+<div class="chips">${top.map(x => `<span class="loop"><bdi>${x.rank}. ${esc(sName(x.s, lang).replace(/\s*[（(].*[)）]\s*$/, ''))}</bdi></span>`).join('')}</div>`);
+}
+
 // BI計算機: 題・説明と、選べる国の名前
 function calcHtml(lang) {
   const L = T[lang];
@@ -423,6 +437,7 @@ for (const lang of ONLY) {
   { const html = newsHtml(lang), rel = `news/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = usPilotsHtml(lang), rel = `pilots/${lang}/us.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const [rel, html] of [[`hh/${lang}/index.jpg`, hhIndexHtml(lang)], ...HH_BUCKETS.map(([b, k]) => [`hh/${lang}/${b}.jpg`, hhBucketHtml(lang, b, k)])]) { const key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+  { const html = rankHtml(lang), rel = `rank/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = calcHtml(lang), rel = `calc/${lang}/index.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = mapHtml(lang, T[lang].calcTitle, T[lang].mapH1), rel = `calc/${lang}/map.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   for (const k of calcCards[lang]) { const rel = `calc/${lang}/${k.id}.jpg`, key = hash(calcCardHtml(k, lang)); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => calcCardHtml(k, lang, cardFonts(lang)), format: 'jpeg', quality: 72 }); }

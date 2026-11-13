@@ -3891,6 +3891,64 @@ Cities, counties, states and nonprofits across the US have paid people a fixed a
 - ROOTED (Resources & Opportunities for Ongoing Transition, Empowerment & Dignity) (Durham, North Carolina, USA; 2026–): Run by City of Durham (Community Safety Department), with $1 million from the city council after the Excel pilot; evaluated by Duke University researchers. $8,400 over a year with no conditions ($700 a month, or larger early payments that taper) in 2026 to 107 formerly incarcerated Durham residents chosen by lottery; unselected applicants form the comparison group. Funding: Public (city, county or state). Result: No published evaluation yet. Source: https://www.wunc.org/term/news/2026-07-08/guaranteed-income-reentry-incarceration-durham-mecklenburg ; https://www.northcarolinahealthnews.org/2026/07/06/two-nc-local-governments-test-guaranteed-income-formerly-incarcerated/
 - AI Dividend (Run by US nonprofits, for people whose work has been hurt by AI; 2026–): Run by What We Will (an advocacy group for AI-affected workers) and the AI Commons Project, part of the Fund for Guaranteed Income, which funds it. $1,000 a month with no strings attached for a year, alongside reskilling, to a first cohort of 25–50 workers hurt by AI, selected on a rolling basis; the first payments went out in March 2026. Funding: Philanthropic. Result: No published evaluation yet. Source: https://www.bloodinthemachine.com/p/the-first-basic-income-for-workers
 
+## Cash-out ranking
+
+All 40 services on this site, ranked by a cash-out score (our rating). The score is calculated automatically from the facts shown on each service page: cash-out, market price, operator, ease, whether it is invite-only and when it was last checked. This is not a list of services we cashed out ourselves. Cash-out rules and prices change often, so always check the official information before you sign up. Page: https://neteru-nyukin.eltociear.workers.dev/ranking/
+
+Scoring (out of 100): Cash-out (can it become cash, e-money or gift cards?): yes 40, with conditions 20, no or not verified 0; Is the value clear? The token has a market price, or it is not crypto and pays in money or points: 15; partly: 8; no or not verified: 0; Is the operator public? Public 15, partly 8, unknown 0; Ease (1 to 5, our own judgement) × 3 (up to 15); You can start without an invitation: 10; Recently checked (within 3 months of the newest check month on the site): 5. The groups follow the cash-out rating (yes → easy, with conditions → with conditions, no or not verified → hard or unclear). A service with a strong warning goes into “hard or unclear” whatever its score. Within a group, higher scores come first; ties keep the order of the main list. Raffles, where only winners get paid, go into their own group after “with conditions”, even when cash-out is “yes”. Services that pay only people chosen as recipients (for example from a waiting list) go into “with conditions” even when cash-out is “yes”, because signing up does not mean you will be paid.
+
+### Easy to cash out
+
+1. [Trima](https://neteru-nyukin.eltociear.workers.dev/services/trima/): 100/100
+2. [Honeygain](https://neteru-nyukin.eltociear.workers.dev/services/honeygain/): 100/100
+3. [Mercari](https://neteru-nyukin.eltociear.workers.dev/services/mercari/): 97/100
+4. [Pawns.app](https://neteru-nyukin.eltociear.workers.dev/services/pawns/): 97/100
+5. [Ubiquitus](https://neteru-nyukin.eltociear.workers.dev/services/ubiquitus/): 97/100
+6. [Hapitas](https://neteru-nyukin.eltociear.workers.dev/services/hapitas/): 94/100
+7. [Brave Rewards (Brave browser)](https://neteru-nyukin.eltociear.workers.dev/services/braverewards/): 94/100
+
+### With conditions
+
+8. [Dotare](https://neteru-nyukin.eltociear.workers.dev/services/dotare/): 91/100
+9. [Sweatcoin](https://neteru-nyukin.eltociear.workers.dev/services/sweatcoin/): 80/100
+10. [Grass](https://neteru-nyukin.eltociear.workers.dev/services/grass/): 80/100
+11. [GoodDollar](https://neteru-nyukin.eltociear.workers.dev/services/gooddollar/): 77/100
+12. [Pi Network](https://neteru-nyukin.eltociear.workers.dev/services/pinetwork/): 74/100
+13. [AI-DAC (World App)](https://neteru-nyukin.eltociear.workers.dev/services/aidac/): 74/100
+14. [Humad (World App)](https://neteru-nyukin.eltociear.workers.dev/services/humad/): 74/100
+15. [RewardMe](https://neteru-nyukin.eltociear.workers.dev/services/rewardme/): 70/100
+16. [AXO (World App)](https://neteru-nyukin.eltociear.workers.dev/services/axo/): 67/100
+17. [AIBTC](https://neteru-nyukin.eltociear.workers.dev/services/aibtc/): 64/100
+18. [WowApp](https://neteru-nyukin.eltociear.workers.dev/services/wowapp/): 60/100
+19. [ORO (World App)](https://neteru-nyukin.eltociear.workers.dev/services/oro/): 59/100
+20. [Life AI Testnet](https://neteru-nyukin.eltociear.workers.dev/services/lifeai/): 59/100
+21. [AgentBank (World App)](https://neteru-nyukin.eltociear.workers.dev/services/agentbank/): 59/100
+22. [WAVEE](https://neteru-nyukin.eltociear.workers.dev/services/wavee/): 58/100
+23. [Idena (iDNA)](https://neteru-nyukin.eltociear.workers.dev/services/idena/): 51/100
+24. [ME Pass](https://neteru-nyukin.eltociear.workers.dev/services/mepass/): 47/100
+25. [Ğ1 (June)](https://neteru-nyukin.eltociear.workers.dev/services/g1/): 43/100
+
+### Raffles (cash if you win)
+
+26. [Mein Grundeinkommen](https://neteru-nyukin.eltociear.workers.dev/services/meingrundeinkommen/): 97/100
+27. [UBI4ALL](https://neteru-nyukin.eltociear.workers.dev/services/ubi4all/): 97/100
+
+### Hard to cash out or unclear
+
+28. [Billions](https://neteru-nyukin.eltociear.workers.dev/services/billions/): 54/100
+29. [FheID (Privasea)](https://neteru-nyukin.eltociear.workers.dev/services/fheid/): 54/100
+30. [Gradido](https://neteru-nyukin.eltociear.workers.dev/services/gradido/): 51/100
+31. [JrKripto (JR)](https://neteru-nyukin.eltociear.workers.dev/services/jrkripto/): 47/100
+32. [Palai](https://neteru-nyukin.eltociear.workers.dev/services/palai/): 42/100
+33. [Perceptron Network (formerly BlockMesh)](https://neteru-nyukin.eltociear.workers.dev/services/perceptron/): 38/100
+34. [InterLink](https://neteru-nyukin.eltociear.workers.dev/services/interlink/): 36/100
+35. [KABU&](https://neteru-nyukin.eltociear.workers.dev/services/kabuand/): 36/100
+36. [Circles (Gnosis App)](https://neteru-nyukin.eltociear.workers.dev/services/circles/): 29/100
+37. [BioMatrix](https://neteru-nyukin.eltociear.workers.dev/services/biomatrix/): 27/100
+38. [Delta Kim](https://neteru-nyukin.eltociear.workers.dev/services/deltakim/): 24/100
+39. [Mining Machine ($ORE)](https://neteru-nyukin.eltociear.workers.dev/services/miningmachine/): 24/100
+40. [Sible Network ($SIB)](https://neteru-nyukin.eltociear.workers.dev/services/siblenetwork/): 24/100
+
 ## Graveyard
 
 A record of services and programmes that once handed out money or points and have since ended. Only endings confirmed by an official announcement or a credible source are listed. Thanks for the lunches. Rest in peace.
