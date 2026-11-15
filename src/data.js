@@ -2937,6 +2937,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-14",
+      "en": "Published the essay “Share out the billionaires’ wealth: how much would each person get, once or every year?”",
+      "ja": "エッセイ『世界の億万長者の資産を全員に配ったら、1人いくら？ 1回きりなら、毎年なら』を公開",
+      "zh": "发布随笔《把全世界亿万富豪的财富分给所有人，每人能拿多少？一次分完，还是每年分》",
+      "hi": "निबंध “अरबपतियों की संपत्ति सबमें बाँटें तो हर व्यक्ति को कितना मिलेगा? एक बार, और हर साल” प्रकाशित",
+      "es": "Publicado el ensayo «Si se repartiera la riqueza de los milmillonarios, ¿cuánto tocaría a cada persona? Una vez, y cada año»",
+      "de": "Essay „Das Vermögen der Milliardäre für alle: Wie viel bekäme jeder? Einmal und jedes Jahr“ veröffentlicht",
+      "ar": "نشرنا مقال «ثروات المليارديرات للجميع: كم لكل شخص؟»"
+    },
+    {
       "date": "2026-11-13",
       "ja": "「換金しやすさランキング」を公開（掲載中のサービスを、換金・市場価格・運営元・ラク度などのデータから計算した点数で4つのグループに並べ、点数のつけ方も公開）",
       "en": "Published the cash-out ranking (every listed service in four groups, scored from its cash-out, market price, operator, ease and other data, with the scoring method explained)",
@@ -18036,6 +18046,995 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "billionaire-wealth-per-person",
+      "date": "2026-11-14",
+      "related": [
+        "basic-income-world-map",
+        "universal-high-income",
+        "public-benefit-fund",
+        "does-cash-make-people-stop-working",
+        "takenaka-70000-yen-basic-income"
+      ],
+      "title": {
+        "en": "Share out the billionaires’ wealth: how much would each person get, once or every year?",
+        "ja": "世界の億万長者の資産を全員に配ったら、1人いくら？ 1回きりなら、毎年なら",
+        "zh": "把全世界亿万富豪的财富分给所有人，每人能拿多少？一次分完，还是每年分",
+        "hi": "अरबपतियों की संपत्ति सबमें बाँटें तो हर व्यक्ति को कितना मिलेगा? एक बार, और हर साल",
+        "es": "Si se repartiera la riqueza de los milmillonarios, ¿cuánto tocaría a cada persona? Una vez, y cada año",
+        "de": "Das Vermögen der Milliardäre für alle: Wie viel bekäme jeder? Einmal und jedes Jahr",
+        "ar": "ثروات المليارديرات للجميع: كم لكل شخص؟"
+      },
+      "desc": {
+        "en": "Forbes counts 3,428 billionaires worth $20.1 trillion. Shared among 8.2 billion people, that is about $2,450 each, once. Paid out at 2–5% a year, $49 to $122.",
+        "ja": "全員で割ると1回きりで1人約2,450ドル。毎年配るなら年49〜122ドル。",
+        "zh": "福布斯统计的3428位亿万富豪共有20.1万亿美元。分给82亿人，一次性每人约2450美元；若每年拿出2%至5%，每人每年49至122美元。",
+        "hi": "फ़ोर्ब्स के 3,428 अरबपतियों के पास 20.1 ट्रिलियन डॉलर हैं। 8.2 अरब लोगों में बाँटें तो एक बार में हर किसी को करीब 2,450 डॉलर; हर साल 2–5% बाँटें तो 49 से 122 डॉलर।",
+        "es": "Forbes cuenta 3.428 milmillonarios con 20,1 billones de dólares. Entre 8.200 millones de personas: unos 2.450 dólares cada una, una vez. Al 2–5 % anual, de 49 a 122.",
+        "de": "Forbes zählt 3.428 Milliardäre mit 20,1 Billionen Dollar. Auf 8,2 Milliarden Menschen verteilt: rund 2.450 Dollar pro Kopf, einmal. Mit 2–5 % pro Jahr: 49 bis 122.",
+        "ar": "نحو 2,450 دولارًا لكل فرد مرة واحدة، أو 49 إلى 122 دولارًا كل عام."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "Forbes’s 2026 World’s Billionaires list counts a record 3,428 billionaires, with a combined net worth of $20.1 trillion at stock prices and exchange rates of 1 March 2026.[1] The World Bank puts the world’s population in 2025 at 8.22 billion.[2] Divide one by the other and every person on Earth would get about $2,450, once."
+          ],
+          [
+            "p",
+            "Spread over twelve months, that is $204 a month for one year, and then nothing. Wealth is a stock, not a flow: once it is handed out, it is gone. A payment that comes every year has to come out of what the wealth earns, or a set share of it. At 2% a year that would be $49 per person ($4.08 a month); at 5%, $122 ($10.19 a month)."
+          ],
+          [
+            "t",
+            "How it is paid | Per person | Per month\nAll of it, once | $2,450 | $204 for 12 months\n2% of it every year | $49 a year | $4.08\n5% of it every year | $122 a year | $10.19"
+          ],
+          [
+            "h",
+            "Once: about $2,450 each"
+          ],
+          [
+            "p",
+            "The average fortune on the list is $5.8 billion, and 20 people are worth $100 billion or more. The richest, Elon Musk, at an estimated $839 billion, would on his own come to about $102 for every person in the world.[1]"
+          ],
+          [
+            "p",
+            "At 2025 average exchange rates from the World Bank data this site uses, $2,450 is about €2,170, £1,860, ¥366,000 or ₹214,000.[3]"
+          ],
+          [
+            "p",
+            "How far would it go? This site’s {211-country comparison|/calc/countries/} uses the World Bank’s poverty line of $3.00 a day as its standard amount, converted into each country’s prices.[4] Paying that to everyone in those 211 countries and territories (8.12 billion people) for a year would cost about $3.95 trillion at market exchange rates.[3] The billionaires’ $20.1 trillion would pay for about 61 months of it: a little over five years."
+          ],
+          [
+            "h",
+            "Every year: what the wealth could pay without running out"
+          ],
+          [
+            "p",
+            "To pay something every year without using up the wealth, only part of it can go out each year. We show three rates. None is a forecast; each is a yardstick that already exists somewhere."
+          ],
+          [
+            "p",
+            "2% is the rate in the minimum tax on billionaires that the economist Gabriel Zucman set out in a 2024 report commissioned by Brazil’s G20 presidency. It would apply only to those not already paying the equivalent in income tax, which is why the report estimated $200–250 billion a year rather than 2% of the whole. The same report puts billionaires’ effective tax rate at 0.3% of their wealth.[5]"
+          ],
+          [
+            "p",
+            "5% is the share of their investment assets that US private foundations must pay out each year,[6] and the yearly draw that Alaska’s Permanent Fund, the fund behind {Alaska’s dividend|/timeline/#tl-alaska}, makes for the state.[7] 7.5% is the report’s figure for the average real return, before tax, on the wealth of the very rich over the last four decades;[5] paying out all of it would leave nothing to grow."
+          ],
+          [
+            "t",
+            "Paid out each year | Total a year | Per person a year | Per person a month | Share of $3 a day for everyone\n2% | $402 billion | $49 | $4.08 | 10%\n5% | $1.0 trillion | $122 | $10.19 | 25%\n7.5% | $1.5 trillion | $183 | $15.29 | 38%"
+          ],
+          [
+            "p",
+            "As a yearly payment, then, the billionaires’ wealth would cover between a tenth and about a third of a $3-a-day floor for everyone, and only as long as the wealth kept earning at least what was paid out. In local money, 5% a year is about €9.00, ¥1,530 or ₹890 a month per person.[3]"
+          ],
+          [
+            "h",
+            "Why the one-off figure is smaller in practice"
+          ],
+          [
+            "p",
+            "Forbes values each fortune from stakes in public and private companies, real estate, art, yachts and other assets, minus known debt.[1] Most of it is not cash. Much of it is founders’ shares in companies they control, and selling a large block of shares tends to push the price down; selling them all at once would mean selling far more than markets usually absorb. Stakes in private companies have no market price at all."
+          ],
+          [
+            "p",
+            "The figures also move. They are a snapshot of 1 March 2026, and Forbes notes that some fortunes changed by billions within days of it.[1] The $2,450 is a figure on paper: an upper bound, not cash that could be handed out."
+          ],
+          [
+            "h",
+            "Country by country"
+          ],
+          [
+            "p",
+            "Forbes counts billionaires by citizenship, not by where they live; the 3,428 come from 80 countries and territories.[1][8] We added up the list’s entries for each country[9] and divided by that country’s population from the data behind this site’s calculator.[3] The table also shows how many months the wealth would pay everyone in that country $3.00 a day (the poverty line in local prices, as in the {comparison|/calc/countries/}), and what share of a year of that payment 5% of the wealth would cover each year. These are the 25 largest totals."
+          ],
+          [
+            "t",
+            "Country (citizenship) | Billionaires | Combined wealth (US$ billion) | Per person, once (US$) | Months of $3 a day for everyone | 5% a year pays\nWorld | 3,428 | 20,100 | 2,450 | 61 | 25%\nUnited States | 991 | 8,431 | 24,280 | 267 | 111%\nChina | 539 | 2,175 | 1,540 | 35 | 14%\nIndia | 229 | 1,019 | 700 | 34 | 14%\nGermany | 212 | 1,016 | 12,090 | 162 | 68%\nRussia | 149 | 653 | 4,550 | 136 | 57%\nFrance | 53 | 628 | 9,140 | 121 | 50%\nItaly | 90 | 484 | 8,210 | 123 | 51%\nCanada | 82 | 457 | 10,980 | 128 | 53%\nHong Kong | 71 | 420 | 56,020 | 824 | 343%\nUnited Kingdom | 57 | 300 | 4,320 | 51 | 21%\nSpain | 44 | 281 | 5,870 | 94 | 39%\nSwitzerland | 44 | 278 | 30,620 | 262 | 109%\nMexico | 24 | 267 | 2,030 | 39 | 16%\nBrazil | 70 | 265 | 1,240 | 29 | 12%\nAustralia | 56 | 249 | 9,020 | 107 | 45%\nJapan | 44 | 229 | 1,860 | 30 | 12%\nSweden | 50 | 225 | 21,200 | 257 | 107%\nIndonesia | 35 | 211 | 740 | 26 | 11%\nSouth Korea | 50 | 197 | 3,820 | 68 | 28%\nIsrael | 41 | 196 | 19,380 | 203 | 84%\nSingapore | 55 | 156 | 25,480 | 358 | 149%\nCzechia | 12 | 102 | 9,400 | 158 | 66%\nThailand | 22 | 100 | 1,400 | 47 | 20%\nTürkiye | 40 | 92 | 1,070 | 26 | 11%\nGreece | 21 | 90 | 8,660 | 145 | 60%"
+          ],
+          [
+            "p",
+            "Per person, Hong Kong stands out: its 71 billionaires hold $420 billion among 7.5 million people, about $56,020 each. Switzerland ($30,620), Singapore ($25,480), the United States ($24,280) and Sweden ($21,200) follow. In these five places, 5% a year of their billionaires’ wealth would pay more than a full year of $3 a day for everyone."
+          ],
+          [
+            "p",
+            "At the other end, in India ($700 per person), Indonesia ($740), Türkiye ($1,070), Brazil ($1,240) and China ($1,540), the wealth would pay the poverty line for two to three years, and 5% a year would cover 11–14% of it. Japan’s 44 billionaires, worth $229 billion, come to $1,860 per person (about ¥279,000): 30 months of the ¥9,400 poverty line, or 9 months of the ¥30,000 that {Japan’s calculator page|/calc/jp/} starts from."
+          ],
+          [
+            "p",
+            "In small places a few people make a large difference: Cyprus (10 billionaires, 1.4 million people), Monaco (2) and St Kitts and Nevis (2) get very large per-person figures, but they are outside the top 25. Taiwan (66 billionaires, $245 billion) is not in the World Bank data this site uses, so it has no row.[8] And 133 of the 211 countries and territories in our data have no billionaire citizen on the list at all; 1.67 billion people live in them."
+          ],
+          [
+            "h",
+            "What the numbers show"
+          ],
+          [
+            "p",
+            "Shared out once, the billionaires’ wealth comes to about $2,450 per person: about five years of a $3-a-day floor worldwide at market exchange rates, before any fall in prices from selling. As a yearly payment it is much smaller: $49 to $183 per person a year at the rates above, a tenth to about a third of that floor. How far a country’s own billionaires would go varies widely, from more than a full year in five of the 25 places in the table to about an eighth in Japan and Brazil."
+          ],
+          [
+            "p",
+            "For what a basic income would cost in each country and how that compares with tax revenue, see {the world map|/essays/basic-income-world-map/} and {the 211-country comparison|/calc/countries/}; to try other amounts, {the calculator|/calc/}. On paying for a basic income from AI and capital, see {universal high income: who pays?|/essays/universal-high-income/}."
+          ],
+          [
+            "h",
+            "Assumptions and limits"
+          ],
+          [
+            "p",
+            "A snapshot. Net worths are Forbes’s estimates as of 1 March 2026, not audited figures, and they change daily.[1] Summing the list’s entries gives $20.05 trillion; Forbes rounds the total to $20.1 trillion, which we use for the world figures. The online list we summed gives slightly different counts for a few countries than Forbes’s launch article, for example 991 for the United States against 989.[8][9]"
+          ],
+          [
+            "p",
+            "Citizenship, not residence. Forbes assigns each billionaire to a country of citizenship.[8] Some live elsewhere, so a country’s row is not the wealth located in that country."
+          ],
+          [
+            "p",
+            "Gross, before tax and costs. Taxes on selling assets, the cost of making the payments and any effect on prices or behaviour are left out."
+          ],
+          [
+            "p",
+            "Prices and exchange rates. The $3.00 a day is the World Bank’s poverty line in 2021 PPP dollars, converted into local prices as in the comparison. Summed at market exchange rates it costs $3.95 trillion a year, less than $3.00 × 365 × the population, because prices are lower in poorer countries.[3][4] Local-currency amounts use 2025 average exchange rates implied by World Bank GDP data.[3]"
+          ],
+          [
+            "p",
+            "Populations. World population is the World Bank’s 2025 figure.[2] Country populations are those in the site’s data: mostly World Bank figures for 2025, with official national figures for seven featured countries (for Japan, the October 2026 estimate).[3]"
+          ],
+          [
+            "p",
+            "Not a proposal. The rates are yardsticks, not policies we propose, and nothing here says whether wealth should be taxed or shared out. The numbers only show the size of the sums."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "フォーブスの2026年版「世界の億万長者」ランキングに載ったのは、過去最多の3,428人。資産は合わせて20.1兆ドルです（2026年3月1日の株価と為替レートで計算）。[1] 世界銀行によると、2025年の世界の人口は82.2億人。[2] 割り算すると、地球上の1人あたり約2,450ドル（約37万円）を1回配れる計算になります。"
+          ],
+          [
+            "p",
+            "12か月に分ければ、1年だけ月204ドル。その後は何もありません。資産は「ストック」（たまっている量）であって「フロー」（毎年入ってくる量）ではないので、配ってしまえばなくなります。毎年配るには、資産が生む収益か、資産の一定の割合から出すしかありません。毎年2％なら1人年49ドル（月4.08ドル）、5％なら年122ドル（月10.19ドル）です。"
+          ],
+          [
+            "t",
+            "配り方 | 1人あたり | 月あたり\n全部を1回で | 2,450ドル（約37万円） | 1年間だけ204ドル\n毎年2％ずつ | 年49ドル | 4.08ドル（約610円）\n毎年5％ずつ | 年122ドル | 10.19ドル（約1,530円）"
+          ],
+          [
+            "h",
+            "1回きりなら：1人約2,450ドル"
+          ],
+          [
+            "p",
+            "ランキングの億万長者の資産は平均58億ドルで、1,000億ドル以上の人が20人います。1位のイーロン・マスク氏の推定8,390億ドルだけでも、世界の1人あたり約102ドルになります。[1]"
+          ],
+          [
+            "p",
+            "このサイトが使っている世界銀行のデータの2025年の平均為替レートでは、2,450ドルは約36万6,000円、約2,170ユーロ、約17,600元にあたります。[3]"
+          ],
+          [
+            "p",
+            "これでどれくらい持つでしょうか。このサイトの{211の国・地域の比較|/calc/countries/}は、世界銀行の貧困ライン「1日3.00ドル」を各国の物価に直した額を基準にしています。[4] 211の国・地域の全員（81.2億人）にこれを1年配ると、市場の為替レートで約3.95兆ドル。[3] 億万長者の20.1兆ドルで払えるのは約61か月、5年と少しです。"
+          ],
+          [
+            "h",
+            "毎年なら：資産を減らさずに配れる額"
+          ],
+          [
+            "p",
+            "資産を使い切らずに毎年配るには、毎年その一部だけを出すことになります。ここでは3つの割合で計算しました。どれも予測ではなく、すでにどこかで使われている目安です。"
+          ],
+          [
+            "p",
+            "2％は、経済学者ガブリエル・ズックマン氏が、G20の議長国ブラジルの依頼で2024年にまとめた報告書の「億万長者への最低税」の税率です。所得税ですでに資産の2％相当を払っている人には上乗せがないしくみのため、報告書の見積もりは資産全体の2％ではなく、年2,000億〜2,500億ドルでした。同じ報告書は、億万長者が実際に払っている税を資産の0.3％としています。[5]"
+          ],
+          [
+            "p",
+            "5％は、アメリカの民間財団が毎年配らなければならない投資資産の割合です。[6] {アラスカの配当|/timeline/#tl-alaska}のもとになっているアラスカ永久基金が、毎年州のために引き出す割合も5％です。[7] 7.5％は、超富裕層の資産の、この40年の平均の実質収益率（税引き前）として同じ報告書が挙げる数字です。[5] これを全部配ると、資産はもう増えません。"
+          ],
+          [
+            "t",
+            "毎年配る割合 | 1年の総額 | 1人あたり年 | 1人あたり月 | 全員に1日3ドル配る費用に対する割合\n2% | 4,020億ドル | 49ドル | 4.08ドル | 10%\n5% | 約1.0兆ドル | 122ドル | 10.19ドル | 25%\n7.5% | 約1.5兆ドル | 183ドル | 15.29ドル | 38%"
+          ],
+          [
+            "p",
+            "つまり毎年配るなら、億万長者の資産でまかなえるのは「全員に1日3ドル」の1割から4割弱。それも、資産が配る分以上を稼ぎ続ける場合に限ります。毎年5％なら、1人あたり月約1,530円です。[3]"
+          ],
+          [
+            "h",
+            "1回きりの額も、実際にはもっと小さい"
+          ],
+          [
+            "p",
+            "フォーブスは、上場・未上場の会社の株、不動産、美術品、ヨットなどの資産から、わかっている借金を引いて資産額を出しています。[1] そのほとんどは現金ではありません。多くは創業者が経営を握る会社の株で、大量の株を売れば株価は下がりがちです。一度に全部売るとなれば、ふだん市場が受け止める量をはるかに超えます。未上場の会社の株には、そもそも市場の値段がありません。"
+          ],
+          [
+            "p",
+            "数字も動きます。これは2026年3月1日時点の値で、フォーブスも、その数日後に資産が数十億ドル変わった人がいると書いています。[1] 2,450ドルは帳簿の上の数字で、実際に配れる現金ではなく「上限」です。"
+          ],
+          [
+            "h",
+            "国ごとに見ると"
+          ],
+          [
+            "p",
+            "フォーブスは億万長者を、住んでいる国ではなく国籍で数えています。3,428人の国籍は80の国・地域です。[1][8] ランキングの一人ひとりの資産を国ごとに足し、このサイトの計算機のデータにあるその国の人口で割りました。[9][3] 表には、その資産で国の全員に1日3.00ドル（{比較の表|/calc/countries/}と同じく、貧困ラインをその国の物価に直した額）を何か月配れるか、毎年5％ずつ配るとその1年分の何割になるかも載せています。資産の合計が大きい25の国・地域です。"
+          ],
+          [
+            "t",
+            "国・地域（国籍） | 億万長者の数 | 資産の合計（億ドル） | 1人あたり・1回きり（ドル） | 全員に1日3ドルを配れる月数 | 毎年5％で払える割合\n世界 | 3,428 | 201,000 | 2,450 | 61 | 25%\nアメリカ | 991 | 84,314 | 24,280 | 267 | 111%\n中国 | 539 | 21,753 | 1,540 | 35 | 14%\nインド | 229 | 10,192 | 700 | 34 | 14%\nドイツ | 212 | 10,162 | 12,090 | 162 | 68%\nロシア | 149 | 6,527 | 4,550 | 136 | 57%\nフランス | 53 | 6,278 | 9,140 | 121 | 50%\nイタリア | 90 | 4,839 | 8,210 | 123 | 51%\nカナダ | 82 | 4,572 | 10,980 | 128 | 53%\n香港 | 71 | 4,201 | 56,020 | 824 | 343%\nイギリス | 57 | 3,002 | 4,320 | 51 | 21%\nスペイン | 44 | 2,812 | 5,870 | 94 | 39%\nスイス | 44 | 2,784 | 30,620 | 262 | 109%\nメキシコ | 24 | 2,673 | 2,030 | 39 | 16%\nブラジル | 70 | 2,648 | 1,240 | 29 | 12%\nオーストラリア | 56 | 2,492 | 9,020 | 107 | 45%\n日本 | 44 | 2,289 | 1,860 | 30 | 12%\nスウェーデン | 50 | 2,246 | 21,200 | 257 | 107%\nインドネシア | 35 | 2,105 | 740 | 26 | 11%\n韓国 | 50 | 1,973 | 3,820 | 68 | 28%\nイスラエル | 41 | 1,962 | 19,380 | 203 | 84%\nシンガポール | 55 | 1,557 | 25,480 | 358 | 149%\nチェコ | 12 | 1,023 | 9,400 | 158 | 66%\nタイ | 22 | 1,003 | 1,400 | 47 | 20%\nトルコ | 40 | 917 | 1,070 | 26 | 11%\nギリシャ | 21 | 902 | 8,660 | 145 | 60%"
+          ],
+          [
+            "p",
+            "1人あたりで目立つのは香港です。71人の億万長者が4,201億ドルを持ち、人口750万人で割ると1人約56,020ドル。スイス（30,620ドル）、シンガポール（25,480ドル）、アメリカ（24,280ドル）、スウェーデン（21,200ドル）が続きます。この5つでは、自国の億万長者の資産の毎年5％で、全員に1日3ドルを丸1年以上配れます。"
+          ],
+          [
+            "p",
+            "反対に、インド（1人700ドル）、インドネシア（740ドル）、トルコ（1,070ドル）、ブラジル（1,240ドル）、中国（1,540ドル）では、貧困ラインを配れるのは2〜3年分で、毎年5％ずつ配っても1年分の11〜14％にとどまります。日本の億万長者44人の資産は2,289億ドル。1人あたり1,860ドル（約27万9,000円）で、貧困ラインの月9,400円なら30か月分、{日本の計算機のページ|/calc/jp/}の初期値の月3万円なら9か月分です。"
+          ],
+          [
+            "p",
+            "小さな国では数人で数字が大きく変わります。キプロス（億万長者10人、人口140万人）、モナコ（2人）、セントクリストファー・ネービス（2人）は1人あたりの額がとても大きくなりますが、上位25には入りません。台湾（66人、2,453億ドル）は、このサイトが使う世界銀行のデータにないため表にありません。[8] また、データにある211の国・地域のうち133には、ランキングに載る国籍の億万長者が1人もいません。そこに住む人は16.7億人です。"
+          ],
+          [
+            "h",
+            "数字からわかること"
+          ],
+          [
+            "p",
+            "1回きりで配れば、億万長者の資産は1人約2,450ドル。市場の為替レートで、世界の全員に1日3ドルを約5年配れる額です。ただし売ることで値下がりする分は考えていません。毎年配るなら額はずっと小さく、上の割合で1人年49〜183ドル、「1日3ドル」の1割から4割弱です。自国の億万長者でどこまでまかなえるかは国によって大きく違い、表の25か所のうち丸1年以上をまかなえる5か所から、日本やブラジルの約8分の1まであります。"
+          ],
+          [
+            "p",
+            "ベーシックインカムが国ごとにいくらかかり、税収とくらべてどうかは{世界地図のエッセイ|/essays/basic-income-world-map/}と{211の国・地域の比較|/calc/countries/}、ほかの金額は{計算機|/calc/}で試せます。AIや資本からベーシックインカムを払う話は{「ユニバーサル・ハイ・インカム」は誰が払う？|/essays/universal-high-income/}をどうぞ。"
+          ],
+          [
+            "h",
+            "前提と限界"
+          ],
+          [
+            "p",
+            "ある時点の数字。資産額はフォーブスによる2026年3月1日時点の推定で、監査された数字ではなく、毎日変わります。[1] ランキングの一人ひとりの資産を足すと20.05兆ドルで、フォーブスは合計を20.1兆ドルとしています。世界の数字には20.1兆ドルを使いました。足し上げたオンラインのランキングは、いくつかの国で発表時の記事と人数が少し違います（アメリカは記事の989人に対して991人など）。[8][9]"
+          ],
+          [
+            "p",
+            "国籍であって、住む国ではない。フォーブスは億万長者を国籍で国に分けています。[8] ほかの国に住む人もいるので、国ごとの行はその国にある資産ではありません。"
+          ],
+          [
+            "p",
+            "税や費用を引く前の額。資産を売るときの税、配るための費用、値段や行動への影響は入っていません。"
+          ],
+          [
+            "p",
+            "物価と為替。1日3.00ドルは2021年の購買力平価で決めた世界銀行の貧困ラインで、比較の表と同じく各国の物価に直しています。市場の為替レートで足すと年3.95兆ドルで、3.00ドル×365日×人口より小さくなります。貧しい国ほど物価が安いからです。[3][4] 円などの額は、世界銀行のGDPのデータから出した2025年の平均為替レートで換算しました（1ドル約150円）。[3]"
+          ],
+          [
+            "p",
+            "人口。世界の人口は世界銀行の2025年の数字です。[2] 国ごとの人口はこのサイトのデータのもので、多くは世界銀行の2025年の数字、特に取り上げる7か国は各国の公的な数字です（日本は2026年10月の推計）。[3]"
+          ],
+          [
+            "p",
+            "提案ではありません。割合はあくまで目安で、私たちが提案する政策ではありません。資産に税をかけるべきか、配るべきかについても何も言っていません。数字が示すのは、金額の大きさだけです。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "福布斯2026年全球亿万富豪榜共收录3428人，创历史新高，财富合计20.1万亿美元（按2026年3月1日的股价和汇率计算）。[1] 世界银行统计，2025年世界人口为82.2亿。[2] 两者相除，地球上每个人一次性约可分到2450美元。"
+          ],
+          [
+            "p",
+            "如果分12个月发，就是一年里每月204美元，之后就没有了。财富是“存量”，不是“流量”：分完就没了。要每年都发，只能从财富的收益或财富的一定比例中拿。每年拿出2%，每人每年49美元（每月4.08美元）；拿出5%，每年122美元（每月10.19美元）。"
+          ],
+          [
+            "t",
+            "分法 | 每人 | 每月\n一次全部分完 | 2,450美元 | 一年内每月204美元\n每年分2% | 每年49美元 | 4.08美元\n每年分5% | 每年122美元 | 10.19美元"
+          ],
+          [
+            "h",
+            "一次分完：每人约2450美元"
+          ],
+          [
+            "p",
+            "榜上亿万富豪的平均财富为58亿美元，有20人超过1000亿美元。首富埃隆·马斯克估计有8390亿美元，单他一人就相当于世界每人约102美元。[1]"
+          ],
+          [
+            "p",
+            "按本站所用世界银行数据中的2025年平均汇率，2450美元约合17600元人民币。[3]"
+          ],
+          [
+            "p",
+            "这些钱能撑多久？本站的{211个国家和地区比较|/calc/countries/}以世界银行每天3.00美元的贫困线为标准金额，并按各国物价换算。[4] 给这211个国家和地区的所有人（81.2亿人）发一年，按市场汇率约需3.95万亿美元。[3] 亿万富豪的20.1万亿美元大约够发61个月，也就是五年多一点。"
+          ],
+          [
+            "h",
+            "每年发：不动本金能发多少"
+          ],
+          [
+            "p",
+            "要每年发钱又不把财富用光，每年只能拿出一部分。我们按三个比例计算。它们都不是预测，而是在某处已经在用的参照。"
+          ],
+          [
+            "p",
+            "2%是经济学家加布里埃尔·祖克曼2024年受二十国集团轮值主席国巴西委托撰写的报告中，对亿万富豪“最低税”的税率。已经通过所得税缴纳相当于财富2%的人不必再多缴，所以报告估计的税收是每年2000亿至2500亿美元，而不是全部财富的2%。同一报告估计，亿万富豪实际缴税只相当于其财富的0.3%。[5]"
+          ],
+          [
+            "p",
+            "5%是美国私人基金会每年必须拨付的投资资产比例，[6] 也是{阿拉斯加分红|/timeline/#tl-alaska}背后的阿拉斯加永久基金每年为州政府提取的比例。[7] 7.5%是同一报告给出的过去四十年超级富豪财富的平均实际税前回报率；[5] 若全部发掉，财富就不会再增长。"
+          ],
+          [
+            "t",
+            "每年拿出的比例 | 每年总额 | 每人每年 | 每人每月 | 相当于给每人每天3美元费用的比例\n2% | 4,020亿美元 | 49美元 | 4.08美元 | 10%\n5% | 约1.0万亿美元 | 122美元 | 10.19美元 | 25%\n7.5% | 约1.5万亿美元 | 183美元 | 15.29美元 | 38%"
+          ],
+          [
+            "p",
+            "也就是说，如果每年发，亿万富豪的财富只够支付“每人每天3美元”的十分之一到三分之一多一点，而且前提是财富每年赚的不少于发出去的。每年5%相当于每人每月约73元人民币。[3]"
+          ],
+          [
+            "h",
+            "一次分完的金额，实际上也会更小"
+          ],
+          [
+            "p",
+            "福布斯把上市和非上市公司的股份、房地产、艺术品、游艇等资产加起来，再减去已知债务，算出每个人的财富。[1] 其中大部分不是现金，很多是创始人掌控的公司股份。大量卖股票往往会压低股价；一次全部卖出，远超市场平时能吸收的量。非上市公司的股份更是没有市场价格。"
+          ],
+          [
+            "p",
+            "数字也在变。这是2026年3月1日的快照，福布斯也提到，几天之内就有人的财富变动了数十亿美元。[1] 2450美元是账面上的数字，是上限，而不是能直接发出去的现金。"
+          ],
+          [
+            "h",
+            "分国家看"
+          ],
+          [
+            "p",
+            "福布斯按国籍而不是居住地统计亿万富豪，3428人来自80个国家和地区。[1][8] 我们把榜单上每个人的财富按国家加总，[9] 再除以本站计算器数据中该国的人口。[3] 表中还列出这些财富够给该国每人每天发3.00美元（与{比较表|/calc/countries/}一样，是按当地物价换算的贫困线）发多少个月，以及每年拿出5%能支付一年费用的几成。表中是财富合计最多的25个国家和地区。"
+          ],
+          [
+            "t",
+            "国家和地区（国籍） | 亿万富豪人数 | 财富合计（亿美元） | 每人一次性（美元） | 可给每人每天3美元的月数 | 每年5%可支付的比例\n全世界 | 3,428 | 201,000 | 2,450 | 61 | 25%\n美国 | 991 | 84,314 | 24,280 | 267 | 111%\n中国 | 539 | 21,753 | 1,540 | 35 | 14%\n印度 | 229 | 10,192 | 700 | 34 | 14%\n德国 | 212 | 10,162 | 12,090 | 162 | 68%\n俄罗斯 | 149 | 6,527 | 4,550 | 136 | 57%\n法国 | 53 | 6,278 | 9,140 | 121 | 50%\n意大利 | 90 | 4,839 | 8,210 | 123 | 51%\n加拿大 | 82 | 4,572 | 10,980 | 128 | 53%\n香港 | 71 | 4,201 | 56,020 | 824 | 343%\n英国 | 57 | 3,002 | 4,320 | 51 | 21%\n西班牙 | 44 | 2,812 | 5,870 | 94 | 39%\n瑞士 | 44 | 2,784 | 30,620 | 262 | 109%\n墨西哥 | 24 | 2,673 | 2,030 | 39 | 16%\n巴西 | 70 | 2,648 | 1,240 | 29 | 12%\n澳大利亚 | 56 | 2,492 | 9,020 | 107 | 45%\n日本 | 44 | 2,289 | 1,860 | 30 | 12%\n瑞典 | 50 | 2,246 | 21,200 | 257 | 107%\n印度尼西亚 | 35 | 2,105 | 740 | 26 | 11%\n韩国 | 50 | 1,973 | 3,820 | 68 | 28%\n以色列 | 41 | 1,962 | 19,380 | 203 | 84%\n新加坡 | 55 | 1,557 | 25,480 | 358 | 149%\n捷克 | 12 | 1,023 | 9,400 | 158 | 66%\n泰国 | 22 | 1,003 | 1,400 | 47 | 20%\n土耳其 | 40 | 917 | 1,070 | 26 | 11%\n希腊 | 21 | 902 | 8,660 | 145 | 60%"
+          ],
+          [
+            "p",
+            "按人均算，香港最突出：71位亿万富豪共有4201亿美元，香港人口750万，每人约56020美元。其次是瑞士（30620美元）、新加坡（25480美元）、美国（24280美元）和瑞典（21200美元）。在这五个地方，本地亿万富豪财富每年的5%就足以给所有人发一整年以上的每天3美元。"
+          ],
+          [
+            "p",
+            "另一端，印度（每人700美元）、印度尼西亚（740美元）、土耳其（1070美元）、巴西（1240美元）和中国（1540美元）的财富只够发两到三年的贫困线，每年5%只能支付11%至14%。中国的539位亿万富豪共有21753亿美元，每人约1540美元（约11000元人民币），按每月320元的贫困线可发35个月，详见{中国的计算器页面|/calc/cn/}。日本的44位亿万富豪共有2289亿美元，每人1860美元，可发30个月。"
+          ],
+          [
+            "p",
+            "在小地方，几个人就能让数字大变：塞浦路斯（10位亿万富豪，人口140万）、摩纳哥（2位）和圣基茨和尼维斯（2位）的人均数很大，但不在前25名之内。台湾（66位、2453亿美元）不在本站所用的世界银行数据中，因此表中没有这一行。[8] 此外，我们数据中的211个国家和地区里，有133个没有任何一位国籍为该地的亿万富豪上榜，那里住着16.7亿人。"
+          ],
+          [
+            "h",
+            "数字说明了什么"
+          ],
+          [
+            "p",
+            "一次分完，亿万富豪的财富相当于每人约2450美元：按市场汇率，够给全世界每人每天3美元发大约五年，这还没算抛售造成的价格下跌。如果每年发，数额就小得多：按上面的比例，每人每年49至183美元，是这条底线的十分之一到三分之一多一点。各国本国亿万富豪能撑多远差别很大，从表中25个地方里五个地方的一整年以上，到日本和巴西的约八分之一。"
+          ],
+          [
+            "p",
+            "基本收入在各国要花多少钱、与税收相比如何，请看{世界地图|/essays/basic-income-world-map/}和{211个国家和地区比较|/calc/countries/}；想试其他金额，请用{计算器|/calc/}。关于用AI和资本支付基本收入，请看{“全民高收入”由谁来付？|/essays/universal-high-income/}。"
+          ],
+          [
+            "h",
+            "前提与局限"
+          ],
+          [
+            "p",
+            "某一时点的数字。财富是福布斯对2026年3月1日的估计，未经审计，每天都在变。[1] 把榜单上每个人的财富相加得20.05万亿美元，福布斯给出的合计为20.1万亿美元，世界的数字采用后者。我们加总的在线榜单，个别国家的人数与发布时的文章略有不同，例如美国是991人，文章为989人。[8][9]"
+          ],
+          [
+            "p",
+            "是国籍，不是居住地。福布斯按国籍把亿万富豪归入各国。[8] 有些人住在别处，所以每个国家的那一行并不是位于该国的财富。"
+          ],
+          [
+            "p",
+            "税前、未扣成本的总额。出售资产的税、发钱的成本以及对价格和行为的影响都没有计入。"
+          ],
+          [
+            "p",
+            "物价与汇率。每天3.00美元是按2021年购买力平价定的世界银行贫困线，与比较表一样换算成各国物价。按市场汇率加总为每年3.95万亿美元，低于3.00美元×365天×人口，因为穷国物价较低。[3][4] 人民币等金额按世界银行GDP数据推算的2025年平均汇率换算（1美元约7.19元）。[3]"
+          ],
+          [
+            "p",
+            "人口。世界人口是世界银行2025年的数字。[2] 各国人口取自本站数据：大多是世界银行2025年的数字，7个重点国家用各国官方数字。[3]"
+          ],
+          [
+            "p",
+            "不是提案。这些比例只是参照，不是我们提出的政策，本文也不评判财富该不该征税或分配。数字只说明金额有多大。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "फ़ोर्ब्स की 2026 की दुनिया के अरबपतियों की सूची में रिकॉर्ड 3,428 अरबपति हैं, जिनकी कुल संपत्ति 20.1 ट्रिलियन डॉलर है (1 मार्च 2026 के शेयर भाव और विनिमय दर पर)।[1] वर्ल्ड बैंक के अनुसार 2025 में दुनिया की आबादी 8.22 अरब थी।[2] एक को दूसरे से भाग दें, तो धरती के हर व्यक्ति को एक बार करीब 2,450 डॉलर मिलेंगे।"
+          ],
+          [
+            "p",
+            "बारह महीनों में बाँटें तो एक साल तक हर महीने 204 डॉलर, फिर कुछ नहीं। संपत्ति एक भंडार (स्टॉक) है, आमदनी का बहाव (फ़्लो) नहीं: बाँट दी तो ख़त्म। हर साल मिलने वाला पैसा संपत्ति की कमाई से, या उसके एक तय हिस्से से ही आ सकता है। हर साल 2% बाँटें तो हर व्यक्ति को साल में 49 डॉलर (महीने के 4.08 डॉलर); 5% बाँटें तो 122 डॉलर (महीने के 10.19 डॉलर)।"
+          ],
+          [
+            "t",
+            "कैसे बाँटें | हर व्यक्ति को | हर महीने\nसब कुछ, एक बार | 2,450 डॉलर | 12 महीने तक 204 डॉलर\nहर साल 2% | साल में 49 डॉलर | 4.08 डॉलर\nहर साल 5% | साल में 122 डॉलर | 10.19 डॉलर"
+          ],
+          [
+            "h",
+            "एक बार: हर व्यक्ति को करीब 2,450 डॉलर"
+          ],
+          [
+            "p",
+            "सूची में औसत संपत्ति 5.8 अरब डॉलर है, और 20 लोगों के पास 100 अरब डॉलर या उससे ज़्यादा है। सबसे अमीर, एलन मस्क, की अनुमानित 839 अरब डॉलर की संपत्ति अकेले दुनिया के हर व्यक्ति के लिए करीब 102 डॉलर बनती है।[1]"
+          ],
+          [
+            "p",
+            "इस साइट के वर्ल्ड बैंक डेटा की 2025 की औसत विनिमय दर पर 2,450 डॉलर करीब 2,14,000 रुपये हैं।[3]"
+          ],
+          [
+            "p",
+            "यह कितना चलेगा? इस साइट की {211 देशों की तुलना|/calc/countries/} में मानक रकम वर्ल्ड बैंक की ग़रीबी रेखा, रोज़ 3.00 डॉलर, है, जिसे हर देश की क़ीमतों में बदला गया है।[4] इन 211 देशों और क्षेत्रों के सभी लोगों (8.12 अरब) को एक साल यह देने का खर्च बाज़ार विनिमय दर पर करीब 3.95 ट्रिलियन डॉलर है।[3] अरबपतियों के 20.1 ट्रिलियन डॉलर से इसके करीब 61 महीने, यानी पाँच साल से थोड़ा ज़्यादा, चल सकते हैं।"
+          ],
+          [
+            "h",
+            "हर साल: संपत्ति ख़त्म किए बिना कितना दिया जा सकता है"
+          ],
+          [
+            "p",
+            "संपत्ति ख़त्म किए बिना हर साल कुछ देना हो, तो हर साल उसका एक हिस्सा ही निकल सकता है। हम तीन दरें दिखाते हैं। इनमें से कोई भी पूर्वानुमान नहीं है; हर एक ऐसा पैमाना है जो कहीं न कहीं पहले से इस्तेमाल होता है।"
+          ],
+          [
+            "p",
+            "2% वह दर है जो अर्थशास्त्री गेब्रियल ज़ुकमैन ने G20 के अध्यक्ष ब्राज़ील के कहने पर 2024 में लिखी रिपोर्ट में अरबपतियों पर न्यूनतम टैक्स के लिए रखी। यह सिर्फ़ उन पर लागू होगा जो आयकर में पहले से इतना नहीं चुकाते, इसलिए रिपोर्ट ने पूरी संपत्ति के 2% के बजाय साल में 200–250 अरब डॉलर का अनुमान लगाया। उसी रिपोर्ट के अनुसार अरबपति असल में अपनी संपत्ति का 0.3% टैक्स देते हैं।[5]"
+          ],
+          [
+            "p",
+            "5% वह हिस्सा है जो अमेरिका की निजी फ़ाउंडेशनों को अपनी निवेश संपत्ति में से हर साल बाँटना होता है,[6] और वही दर जिस पर {अलास्का के डिविडेंड|/timeline/#tl-alaska} के पीछे का अलास्का परमानेंट फ़ंड हर साल राज्य के लिए पैसा निकालता है।[7] 7.5% उसी रिपोर्ट में पिछले चार दशकों में बहुत अमीर लोगों की संपत्ति पर टैक्स से पहले का औसत वास्तविक रिटर्न है;[5] पूरा बाँट दें तो बढ़ने के लिए कुछ नहीं बचेगा।"
+          ],
+          [
+            "t",
+            "हर साल कितना बाँटें | साल का कुल | प्रति व्यक्ति सालाना | प्रति व्यक्ति मासिक | सबको रोज़ 3 डॉलर के खर्च का हिस्सा\n2% | 402 अरब डॉलर | 49 डॉलर | 4.08 डॉलर | 10%\n5% | 1.0 ट्रिलियन डॉलर | 122 डॉलर | 10.19 डॉलर | 25%\n7.5% | 1.5 ट्रिलियन डॉलर | 183 डॉलर | 15.29 डॉलर | 38%"
+          ],
+          [
+            "p",
+            "यानी हर साल के भुगतान के रूप में अरबपतियों की संपत्ति सबको रोज़ 3 डॉलर के न्यूनतम स्तर का दसवें से लेकर करीब एक-तिहाई हिस्से तक ही दे पाएगी, और वह भी तभी तक जब तक संपत्ति बाँटी गई रकम से कम से कम उतना कमाती रहे। हर साल 5% का मतलब है हर व्यक्ति को महीने के करीब 890 रुपये।[3]"
+          ],
+          [
+            "h",
+            "एक बार वाली रकम भी असल में छोटी क्यों होगी"
+          ],
+          [
+            "p",
+            "फ़ोर्ब्स हर संपत्ति का हिसाब सूचीबद्ध और निजी कंपनियों के शेयर, ज़मीन-जायदाद, कला, यॉट और दूसरी चीज़ों से लगाता है, और ज्ञात कर्ज़ घटाता है।[1] इसमें ज़्यादातर नक़द नहीं है। बड़ा हिस्सा संस्थापकों के उन कंपनियों के शेयर हैं जिन्हें वे चलाते हैं, और शेयरों का बड़ा ढेर बेचने से दाम आम तौर पर गिरते हैं; सब एक साथ बेचना बाज़ार की आम क्षमता से कहीं ज़्यादा होगा। निजी कंपनियों के शेयरों का तो कोई बाज़ार भाव ही नहीं होता।"
+          ],
+          [
+            "p",
+            "आँकड़े बदलते भी हैं। ये 1 मार्च 2026 की तस्वीर हैं, और फ़ोर्ब्स बताता है कि कुछ ही दिनों में कुछ लोगों की संपत्ति अरबों डॉलर बदल गई।[1] 2,450 डॉलर काग़ज़ पर का आँकड़ा है: एक ऊपरी सीमा, बाँटने लायक नक़द नहीं।"
+          ],
+          [
+            "h",
+            "देश-दर-देश"
+          ],
+          [
+            "p",
+            "फ़ोर्ब्स अरबपतियों को वे कहाँ रहते हैं इससे नहीं, नागरिकता से गिनता है; 3,428 लोग 80 देशों और क्षेत्रों के हैं।[1][8] हमने सूची की हर प्रविष्टि को देश के हिसाब से जोड़ा[9] और इस साइट के कैलकुलेटर के डेटा में उस देश की आबादी से भाग दिया।[3] तालिका यह भी दिखाती है कि वह संपत्ति उस देश में सबको रोज़ 3.00 डॉलर (स्थानीय क़ीमतों में ग़रीबी रेखा, जैसे {तुलना|/calc/countries/} में) कितने महीने दे सकती है, और हर साल उसका 5% उस भुगतान के एक साल का कितना हिस्सा देगा। ये कुल संपत्ति में सबसे बड़े 25 हैं।"
+          ],
+          [
+            "t",
+            "देश (नागरिकता) | अरबपति | कुल संपत्ति (अरब डॉलर) | हर व्यक्ति को, एक बार (डॉलर) | सबको रोज़ 3 डॉलर: कितने महीने | हर साल 5%: कितना हिस्सा\nदुनिया | 3,428 | 20,100 | 2,450 | 61 | 25%\nअमेरिका | 991 | 8,431 | 24,280 | 267 | 111%\nचीन | 539 | 2,175 | 1,540 | 35 | 14%\nभारत | 229 | 1,019 | 700 | 34 | 14%\nजर्मनी | 212 | 1,016 | 12,090 | 162 | 68%\nरूस | 149 | 653 | 4,550 | 136 | 57%\nफ़्रांस | 53 | 628 | 9,140 | 121 | 50%\nइटली | 90 | 484 | 8,210 | 123 | 51%\nकनाडा | 82 | 457 | 10,980 | 128 | 53%\nहाँग काँग | 71 | 420 | 56,020 | 824 | 343%\nयूनाइटेड किंगडम | 57 | 300 | 4,320 | 51 | 21%\nस्पेन | 44 | 281 | 5,870 | 94 | 39%\nस्विट्ज़रलैंड | 44 | 278 | 30,620 | 262 | 109%\nमैक्सिको | 24 | 267 | 2,030 | 39 | 16%\nब्राज़ील | 70 | 265 | 1,240 | 29 | 12%\nऑस्ट्रेलिया | 56 | 249 | 9,020 | 107 | 45%\nजापान | 44 | 229 | 1,860 | 30 | 12%\nस्वीडन | 50 | 225 | 21,200 | 257 | 107%\nइंडोनेशिया | 35 | 211 | 740 | 26 | 11%\nदक्षिण कोरिया | 50 | 197 | 3,820 | 68 | 28%\nइज़राइल | 41 | 196 | 19,380 | 203 | 84%\nसिंगापुर | 55 | 156 | 25,480 | 358 | 149%\nचेकिया | 12 | 102 | 9,400 | 158 | 66%\nथाईलैंड | 22 | 100 | 1,400 | 47 | 20%\nतुर्किये | 40 | 92 | 1,070 | 26 | 11%\nयूनान | 21 | 90 | 8,660 | 145 | 60%"
+          ],
+          [
+            "p",
+            "प्रति व्यक्ति हांगकांग सबसे आगे है: उसके 71 अरबपतियों के पास 75 लाख लोगों के बीच 420 अरब डॉलर हैं, यानी हर व्यक्ति के लिए करीब 56,020 डॉलर। उसके बाद स्विट्ज़रलैंड (30,620 डॉलर), सिंगापुर (25,480 डॉलर), अमेरिका (24,280 डॉलर) और स्वीडन (21,200 डॉलर) हैं। इन पाँचों में अपने अरबपतियों की संपत्ति का हर साल 5% सबको पूरे एक साल से ज़्यादा रोज़ 3 डॉलर दे देगा।"
+          ],
+          [
+            "p",
+            "दूसरे छोर पर भारत (प्रति व्यक्ति 700 डॉलर), इंडोनेशिया (740 डॉलर), तुर्किये (1,070 डॉलर), ब्राज़ील (1,240 डॉलर) और चीन (1,540 डॉलर) में संपत्ति ग़रीबी रेखा को दो से तीन साल तक ही दे पाएगी, और हर साल 5% उसका 11–14% ही देगा। भारत के 229 अरबपतियों के पास 1,019 अरब डॉलर हैं: प्रति व्यक्ति 700 डॉलर, यानी करीब 60,800 रुपये, जो {भारत के कैलकुलेटर पेज|/calc/in/} की 1,800 रुपये महीने की ग़रीबी रेखा के 34 महीने के बराबर है।"
+          ],
+          [
+            "p",
+            "छोटी जगहों में कुछ लोग बड़ा फ़र्क़ डालते हैं: साइप्रस (10 अरबपति, 14 लाख लोग), मोनाको (2) और सेंट किट्स और नेविस (2) के प्रति व्यक्ति आँकड़े बहुत बड़े हैं, पर वे शीर्ष 25 में नहीं हैं। ताइवान (66 अरबपति, 245 अरब डॉलर) इस साइट के वर्ल्ड बैंक डेटा में नहीं है, इसलिए तालिका में उसकी पंक्ति नहीं है।[8] और हमारे डेटा के 211 देशों और क्षेत्रों में से 133 का कोई भी नागरिक इस सूची में नहीं है; वहाँ 1.67 अरब लोग रहते हैं।"
+          ],
+          [
+            "h",
+            "आँकड़े क्या दिखाते हैं"
+          ],
+          [
+            "p",
+            "एक बार बाँटें तो अरबपतियों की संपत्ति हर व्यक्ति को करीब 2,450 डॉलर बनती है: बाज़ार विनिमय दर पर दुनिया भर में रोज़ 3 डॉलर के न्यूनतम स्तर के करीब पाँच साल, बेचने से दाम गिरने से पहले। हर साल के भुगतान के रूप में यह बहुत छोटी है: ऊपर की दरों पर प्रति व्यक्ति साल में 49 से 183 डॉलर, उस न्यूनतम स्तर का दसवें से करीब एक-तिहाई हिस्से तक। किसी देश के अपने अरबपति कितना कर पाएँगे, यह बहुत अलग है: तालिका की 25 जगहों में से पाँच में पूरे एक साल से ज़्यादा, जापान और ब्राज़ील में करीब आठवाँ हिस्सा।"
+          ],
+          [
+            "p",
+            "हर देश में बेसिक इनकम कितनी महँगी होगी और टैक्स राजस्व के मुक़ाबले वह कैसी दिखती है, यह {विश्व मानचित्र|/essays/basic-income-world-map/} और {211 देशों की तुलना|/calc/countries/} में देखें; दूसरी रकमें {कैलकुलेटर|/calc/} में आज़माएँ। AI और पूँजी से बेसिक इनकम चुकाने पर, {यूनिवर्सल हाई इनकम: पैसा कौन देगा?|/essays/universal-high-income/} देखें।"
+          ],
+          [
+            "h",
+            "मान्यताएँ और सीमाएँ"
+          ],
+          [
+            "p",
+            "एक पल की तस्वीर। संपत्तियाँ 1 मार्च 2026 के फ़ोर्ब्स के अनुमान हैं, ऑडिट किए आँकड़े नहीं, और रोज़ बदलती हैं।[1] सूची की प्रविष्टियाँ जोड़ने पर 20.05 ट्रिलियन डॉलर बनते हैं; फ़ोर्ब्स कुल को 20.1 ट्रिलियन डॉलर बताता है, जिसे हमने दुनिया के आँकड़ों के लिए लिया है। जो ऑनलाइन सूची हमने जोड़ी, उसमें कुछ देशों की गिनती फ़ोर्ब्स के शुरुआती लेख से थोड़ी अलग है, जैसे अमेरिका के लिए 989 की जगह 991।[8][9]"
+          ],
+          [
+            "p",
+            "नागरिकता, निवास नहीं। फ़ोर्ब्स हर अरबपति को उसकी नागरिकता वाले देश में रखता है।[8] कुछ लोग कहीं और रहते हैं, इसलिए किसी देश की पंक्ति उस देश में मौजूद संपत्ति नहीं है।"
+          ],
+          [
+            "p",
+            "टैक्स और खर्च से पहले की कुल रकम। संपत्ति बेचने पर टैक्स, भुगतान करने का खर्च और क़ीमतों या व्यवहार पर असर शामिल नहीं हैं।"
+          ],
+          [
+            "p",
+            "क़ीमतें और विनिमय दरें। रोज़ 3.00 डॉलर वर्ल्ड बैंक की 2021 PPP डॉलर वाली ग़रीबी रेखा है, जिसे तुलना की तरह स्थानीय क़ीमतों में बदला गया है। बाज़ार विनिमय दर पर जोड़ें तो खर्च साल में 3.95 ट्रिलियन डॉलर है, जो 3.00 डॉलर × 365 × आबादी से कम है, क्योंकि ग़रीब देशों में क़ीमतें कम हैं।[3][4] रुपये जैसी रकमें वर्ल्ड बैंक के GDP डेटा से निकली 2025 की औसत विनिमय दर पर हैं (1 डॉलर करीब 87 रुपये)।[3]"
+          ],
+          [
+            "p",
+            "आबादी। दुनिया की आबादी वर्ल्ड बैंक का 2025 का आँकड़ा है।[2] देशों की आबादी साइट के डेटा से है: ज़्यादातर वर्ल्ड बैंक के 2025 के आँकड़े, और सात मुख्य देशों के लिए आधिकारिक राष्ट्रीय आँकड़े।[3]"
+          ],
+          [
+            "p",
+            "यह कोई प्रस्ताव नहीं है। ये दरें पैमाने हैं, हमारी सुझाई नीतियाँ नहीं, और यहाँ यह नहीं कहा गया कि संपत्ति पर टैक्स लगे या उसे बाँटा जाए। आँकड़े सिर्फ़ रकमों का आकार दिखाते हैं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "La lista de milmillonarios del mundo de Forbes de 2026 cuenta un récord de 3.428 milmillonarios, con un patrimonio conjunto de 20,1 billones de dólares a precios de bolsa y tipos de cambio del 1 de marzo de 2026.[1] El Banco Mundial sitúa la población mundial de 2025 en 8.220 millones.[2] Si se divide una cifra entre la otra, cada persona del planeta recibiría unos 2.450 dólares, una sola vez."
+          ],
+          [
+            "p",
+            "Repartido en doce meses, son 204 dólares al mes durante un año, y después nada. La riqueza es un stock, no un flujo: una vez repartida, se acaba. Un pago que llegue cada año tiene que salir de lo que rinde la riqueza, o de una parte fija de ella. Al 2 % anual serían 49 dólares por persona (4,08 al mes); al 5 %, 122 dólares (10,19 al mes)."
+          ],
+          [
+            "t",
+            "Cómo se reparte | Por persona | Al mes\nTodo, una sola vez | 2.450 dólares | 204 dólares durante 12 meses\nEl 2 % cada año | 49 dólares al año | 4,08 dólares\nEl 5 % cada año | 122 dólares al año | 10,19 dólares"
+          ],
+          [
+            "h",
+            "Una sola vez: unos 2.450 dólares por persona"
+          ],
+          [
+            "p",
+            "La fortuna media de la lista es de 5.800 millones de dólares, y 20 personas tienen 100.000 millones o más. El más rico, Elon Musk, con unos 839.000 millones estimados, equivaldría él solo a unos 102 dólares por cada habitante del mundo.[1]"
+          ],
+          [
+            "p",
+            "A los tipos de cambio medios de 2025 de los datos del Banco Mundial que usa este sitio, 2.450 dólares son unos 2.170 euros o unos 47.100 pesos mexicanos.[3]"
+          ],
+          [
+            "p",
+            "¿Hasta dónde llegaría? La {comparación de 211 países|/calc/countries/} de este sitio usa como cantidad de referencia la línea de pobreza del Banco Mundial, 3,00 dólares al día, convertida a los precios de cada país.[4] Pagarla a todas las personas de esos 211 países y territorios (8.120 millones) durante un año costaría unos 3,95 billones de dólares a tipos de cambio de mercado.[3] Los 20,1 billones de los milmillonarios alcanzarían para unos 61 meses: algo más de cinco años."
+          ],
+          [
+            "h",
+            "Cada año: lo que la riqueza podría pagar sin agotarse"
+          ],
+          [
+            "p",
+            "Para pagar algo cada año sin gastar la riqueza, solo puede salir una parte cada año. Mostramos tres porcentajes. Ninguno es una previsión; cada uno es una referencia que ya existe en algún lugar."
+          ],
+          [
+            "p",
+            "El 2 % es el tipo del impuesto mínimo a los milmillonarios que el economista Gabriel Zucman planteó en un informe de 2024 encargado por la presidencia brasileña del G20. Solo se aplicaría a quienes no pagan ya el equivalente en el impuesto sobre la renta, por eso el informe estimó entre 200.000 y 250.000 millones de dólares al año y no el 2 % del total. El mismo informe sitúa lo que pagan de verdad los milmillonarios en el 0,3 % de su riqueza.[5]"
+          ],
+          [
+            "p",
+            "El 5 % es la parte de sus activos de inversión que las fundaciones privadas de Estados Unidos deben repartir cada año,[6] y lo que retira cada año para el estado el Fondo Permanente de Alaska, el fondo detrás del {dividendo de Alaska|/timeline/#tl-alaska}.[7] El 7,5 % es la cifra del informe para la rentabilidad real media, antes de impuestos, de la riqueza de los muy ricos en las últimas cuatro décadas;[5] repartirla entera no dejaría nada para crecer."
+          ],
+          [
+            "t",
+            "Reparto anual | Total al año | Por persona al año | Por persona al mes | Parte de 3 dólares al día para todos\n2 % | 402.000 millones de dólares | 49 dólares | 4,08 dólares | 10 %\n5 % | 1,0 billones de dólares | 122 dólares | 10,19 dólares | 25 %\n7,5 % | 1,5 billones de dólares | 183 dólares | 15,29 dólares | 38 %"
+          ],
+          [
+            "p",
+            "Como pago anual, la riqueza de los milmillonarios cubriría entre una décima parte y algo más de un tercio de un suelo de 3 dólares al día para todos, y solo mientras siguiera rindiendo al menos lo que se reparte. En moneda local, el 5 % anual son unos 9,00 euros o unos 196 pesos mexicanos al mes por persona.[3]"
+          ],
+          [
+            "h",
+            "Por qué la cifra única sería menor en la práctica"
+          ],
+          [
+            "p",
+            "Forbes valora cada fortuna a partir de participaciones en empresas cotizadas y no cotizadas, inmuebles, arte, yates y otros bienes, menos las deudas conocidas.[1] Casi nada es efectivo. Gran parte son acciones de fundadores en empresas que controlan, y vender un gran paquete de acciones suele hundir su precio; venderlas todas a la vez supondría vender mucho más de lo que los mercados absorben normalmente. Las participaciones en empresas no cotizadas ni siquiera tienen precio de mercado."
+          ],
+          [
+            "p",
+            "Además, las cifras se mueven. Son una foto del 1 de marzo de 2026, y Forbes señala que algunas fortunas cambiaron en miles de millones pocos días después.[1] Los 2.450 dólares son una cifra sobre el papel: un máximo, no dinero en efectivo que pudiera repartirse."
+          ],
+          [
+            "h",
+            "País por país"
+          ],
+          [
+            "p",
+            "Forbes cuenta a los milmillonarios por su nacionalidad, no por dónde viven; los 3.428 proceden de 80 países y territorios.[1][8] Sumamos las entradas de la lista por país[9] y dividimos entre la población de ese país según los datos de la calculadora de este sitio.[3] La tabla muestra también cuántos meses pagaría esa riqueza 3,00 dólares al día a todos en ese país (la línea de pobreza a precios locales, como en la {comparación|/calc/countries/}) y qué parte de un año de ese pago cubriría el 5 % anual. Son los 25 totales más altos."
+          ],
+          [
+            "t",
+            "País (nacionalidad) | Milmillonarios | Patrimonio total (miles de millones de US$) | Por persona, una vez (US$) | Meses de 3 dólares al día para todos | El 5 % al año cubre\nMundo | 3.428 | 20.100 | 2.450 | 61 | 25 %\nEstados Unidos | 991 | 8.431 | 24.280 | 267 | 111 %\nChina | 539 | 2.175 | 1.540 | 35 | 14 %\nIndia | 229 | 1.019 | 700 | 34 | 14 %\nAlemania | 212 | 1.016 | 12.090 | 162 | 68 %\nRusia | 149 | 653 | 4.550 | 136 | 57 %\nFrancia | 53 | 628 | 9.140 | 121 | 50 %\nItalia | 90 | 484 | 8.210 | 123 | 51 %\nCanadá | 82 | 457 | 10.980 | 128 | 53 %\nHong Kong | 71 | 420 | 56.020 | 824 | 343 %\nReino Unido | 57 | 300 | 4.320 | 51 | 21 %\nEspaña | 44 | 281 | 5.870 | 94 | 39 %\nSuiza | 44 | 278 | 30.620 | 262 | 109 %\nMéxico | 24 | 267 | 2.030 | 39 | 16 %\nBrasil | 70 | 265 | 1.240 | 29 | 12 %\nAustralia | 56 | 249 | 9.020 | 107 | 45 %\nJapón | 44 | 229 | 1.860 | 30 | 12 %\nSuecia | 50 | 225 | 21.200 | 257 | 107 %\nIndonesia | 35 | 211 | 740 | 26 | 11 %\nCorea del Sur | 50 | 197 | 3.820 | 68 | 28 %\nIsrael | 41 | 196 | 19.380 | 203 | 84 %\nSingapur | 55 | 156 | 25.480 | 358 | 149 %\nChequia | 12 | 102 | 9.400 | 158 | 66 %\nTailandia | 22 | 100 | 1.400 | 47 | 20 %\nTurquía | 40 | 92 | 1.070 | 26 | 11 %\nGrecia | 21 | 90 | 8.660 | 145 | 60 %"
+          ],
+          [
+            "p",
+            "Por persona destaca Hong Kong: sus 71 milmillonarios tienen 420.000 millones de dólares entre 7,5 millones de habitantes, unos 56.020 dólares por cabeza. Le siguen Suiza (30.620), Singapur (25.480), Estados Unidos (24.280) y Suecia (21.200). En estos cinco lugares, el 5 % anual de la riqueza de sus milmillonarios pagaría más de un año entero de 3 dólares al día para todos."
+          ],
+          [
+            "p",
+            "En el otro extremo, en la India (700 dólares por persona), Indonesia (740), Turquía (1.070), Brasil (1.240) y China (1.540), la riqueza pagaría la línea de pobreza de dos a tres años, y el 5 % anual cubriría entre el 11 % y el 14 %. España tiene 44 milmillonarios con 281.000 millones: 5.870 dólares por persona (unos 5.200 euros), 94 meses de la línea de pobreza de 55 euros al mes de {la página de España|/calc/es/}. México tiene 24 con 267.000 millones: 2.030 dólares por persona (unos 39.000 pesos), 39 meses de su línea de 1.000 pesos al mes."
+          ],
+          [
+            "p",
+            "En lugares pequeños, pocas personas cambian mucho las cifras: Chipre (10 milmillonarios, 1,4 millones de habitantes), Mónaco (2) y San Cristóbal y Nieves (2) salen con cifras por persona muy altas, pero quedan fuera de los 25 primeros. Taiwán (66 milmillonarios, 245.000 millones) no está en los datos del Banco Mundial que usa este sitio, así que no tiene fila.[8] Y 133 de los 211 países y territorios de nuestros datos no tienen ningún milmillonario de su nacionalidad en la lista; en ellos viven 1.670 millones de personas."
+          ],
+          [
+            "h",
+            "Lo que muestran los números"
+          ],
+          [
+            "p",
+            "Repartida una sola vez, la riqueza de los milmillonarios equivale a unos 2.450 dólares por persona: unos cinco años de un suelo de 3 dólares al día para todo el mundo a tipos de cambio de mercado, antes de cualquier caída de precios por las ventas. Como pago anual es mucho menor: de 49 a 183 dólares por persona y año con los porcentajes anteriores, entre una décima parte y algo más de un tercio de ese suelo. Lo que alcanzarían los milmillonarios de cada país varía mucho: más de un año entero en cinco de los 25 lugares de la tabla, en torno a una octava parte en Japón y Brasil."
+          ],
+          [
+            "p",
+            "Para saber cuánto costaría una renta básica en cada país y cómo se compara con la recaudación, ver {el mapa mundial|/essays/basic-income-world-map/} y {la comparación de 211 países|/calc/countries/}; para probar otras cantidades, {la calculadora|/calc/}. Sobre pagar una renta básica con la IA y el capital, ver {la renta alta universal: ¿quién paga?|/essays/universal-high-income/}."
+          ],
+          [
+            "h",
+            "Supuestos y límites"
+          ],
+          [
+            "p",
+            "Una foto fija. Los patrimonios son estimaciones de Forbes al 1 de marzo de 2026, no cifras auditadas, y cambian cada día.[1] La suma de las entradas de la lista da 20,05 billones de dólares; Forbes redondea el total a 20,1 billones, que usamos para las cifras mundiales. La lista en línea que sumamos da recuentos algo distintos para algunos países que el artículo de presentación de Forbes; por ejemplo, 991 para Estados Unidos frente a 989.[8][9]"
+          ],
+          [
+            "p",
+            "Nacionalidad, no residencia. Forbes asigna cada milmillonario al país de su nacionalidad.[8] Algunos viven en otro lugar, así que la fila de un país no es la riqueza situada en ese país."
+          ],
+          [
+            "p",
+            "Bruto, antes de impuestos y costes. Quedan fuera los impuestos por vender activos, el coste de hacer los pagos y cualquier efecto sobre los precios o el comportamiento."
+          ],
+          [
+            "p",
+            "Precios y tipos de cambio. Los 3,00 dólares al día son la línea de pobreza del Banco Mundial en dólares PPA de 2021, convertida a precios locales como en la comparación. Sumado a tipos de cambio de mercado cuesta 3,95 billones de dólares al año, menos que 3,00 × 365 × la población, porque los precios son más bajos en los países pobres.[3][4] Las cantidades en moneda local usan los tipos de cambio medios de 2025 implícitos en los datos del PIB del Banco Mundial.[3]"
+          ],
+          [
+            "p",
+            "Población. La población mundial es la cifra del Banco Mundial de 2025.[2] Las de cada país son las de los datos del sitio: casi siempre cifras del Banco Mundial de 2025, con cifras oficiales nacionales para siete países destacados.[3]"
+          ],
+          [
+            "p",
+            "No es una propuesta. Los porcentajes son referencias, no políticas que propongamos, y aquí no se dice si la riqueza debe gravarse o repartirse. Los números solo muestran el tamaño de las cantidades."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Die Forbes-Liste der Milliardäre der Welt 2026 zählt einen Rekord von 3.428 Milliardären mit einem Gesamtvermögen von 20,1 Billionen Dollar, bewertet zu Aktienkursen und Wechselkursen vom 1. März 2026.[1] Die Weltbank beziffert die Weltbevölkerung 2025 auf 8,22 Milliarden.[2] Teilt man das eine durch das andere, bekäme jeder Mensch auf der Erde einmalig rund 2.450 Dollar."
+          ],
+          [
+            "p",
+            "Auf zwölf Monate verteilt sind das 204 Dollar im Monat für ein Jahr, danach nichts mehr. Vermögen ist ein Bestand, kein Strom: Einmal verteilt, ist es weg. Eine Zahlung, die jedes Jahr kommt, muss aus dem stammen, was das Vermögen abwirft, oder aus einem festen Anteil davon. Bei 2 % im Jahr wären es 49 Dollar pro Kopf (4,08 im Monat), bei 5 % 122 Dollar (10,19 im Monat)."
+          ],
+          [
+            "t",
+            "Wie verteilt wird | Pro Kopf | Pro Monat\nAlles, einmalig | 2.450 Dollar | 204 Dollar, 12 Monate lang\n2 % davon jedes Jahr | 49 Dollar im Jahr | 4,08 Dollar\n5 % davon jedes Jahr | 122 Dollar im Jahr | 10,19 Dollar"
+          ],
+          [
+            "h",
+            "Einmalig: rund 2.450 Dollar pro Kopf"
+          ],
+          [
+            "p",
+            "Das durchschnittliche Vermögen auf der Liste beträgt 5,8 Milliarden Dollar, 20 Menschen besitzen 100 Milliarden oder mehr. Der Reichste, Elon Musk, mit geschätzten 839 Milliarden Dollar käme allein auf rund 102 Dollar für jeden Menschen der Welt.[1]"
+          ],
+          [
+            "p",
+            "Zu den durchschnittlichen Wechselkursen von 2025 aus den Weltbankdaten dieser Seite sind 2.450 Dollar rund 2.170 Euro.[3]"
+          ],
+          [
+            "p",
+            "Wie weit reicht das? Der {Vergleich von 211 Ländern|/calc/countries/} auf dieser Seite nimmt als Standardbetrag die Armutsgrenze der Weltbank von 3,00 Dollar am Tag, umgerechnet in die Preise jedes Landes.[4] Sie ein Jahr lang allen Menschen in diesen 211 Ländern und Gebieten (8,12 Milliarden) zu zahlen, kostet zu Marktwechselkursen rund 3,95 Billionen Dollar.[3] Die 20,1 Billionen der Milliardäre reichten für etwa 61 Monate: gut fünf Jahre."
+          ],
+          [
+            "h",
+            "Jedes Jahr: was das Vermögen zahlen könnte, ohne aufgebraucht zu werden"
+          ],
+          [
+            "p",
+            "Wer jedes Jahr zahlen will, ohne das Vermögen aufzubrauchen, kann jedes Jahr nur einen Teil davon ausschütten. Wir zeigen drei Sätze. Keiner ist eine Prognose; jeder ist ein Maßstab, der irgendwo schon gilt."
+          ],
+          [
+            "p",
+            "2 % ist der Satz der Mindeststeuer für Milliardäre, die der Ökonom Gabriel Zucman 2024 in einem Bericht im Auftrag der brasilianischen G20-Präsidentschaft vorgeschlagen hat. Sie träfe nur, wer nicht schon so viel Einkommensteuer zahlt, deshalb schätzte der Bericht 200 bis 250 Milliarden Dollar im Jahr statt 2 % des ganzen Vermögens. Derselbe Bericht beziffert die tatsächliche Steuerlast von Milliardären auf 0,3 % ihres Vermögens.[5]"
+          ],
+          [
+            "p",
+            "5 % ist der Anteil ihres Anlagevermögens, den private Stiftungen in den USA jedes Jahr ausschütten müssen,[6] und die jährliche Entnahme, die der Alaska Permanent Fund, der Fonds hinter {Alaskas Dividende|/timeline/#tl-alaska}, für den Staat vornimmt.[7] 7,5 % nennt der Bericht als durchschnittliche reale Rendite vor Steuern auf die Vermögen der sehr Reichen in den letzten vier Jahrzehnten;[5] sie ganz auszuzahlen ließe nichts zum Wachsen übrig."
+          ],
+          [
+            "t",
+            "Jährlich ausgezahlt | Summe pro Jahr | Pro Kopf und Jahr | Pro Kopf und Monat | Anteil an 3 Dollar am Tag für alle\n2 % | 402 Mrd. Dollar | 49 Dollar | 4,08 Dollar | 10 %\n5 % | 1,0 Billionen Dollar | 122 Dollar | 10,19 Dollar | 25 %\n7,5 % | 1,5 Billionen Dollar | 183 Dollar | 15,29 Dollar | 38 %"
+          ],
+          [
+            "p",
+            "Als jährliche Zahlung würde das Vermögen der Milliardäre also zwischen einem Zehntel und gut einem Drittel einer Untergrenze von 3 Dollar am Tag für alle decken, und nur, solange es mindestens so viel abwirft, wie ausgezahlt wird. In Euro sind 5 % im Jahr rund 9,00 Euro im Monat pro Kopf.[3]"
+          ],
+          [
+            "h",
+            "Warum der einmalige Betrag in der Praxis kleiner wäre"
+          ],
+          [
+            "p",
+            "Forbes bewertet jedes Vermögen aus Beteiligungen an börsennotierten und privaten Unternehmen, Immobilien, Kunst, Jachten und anderem, abzüglich bekannter Schulden.[1] Das meiste ist kein Bargeld. Ein großer Teil sind Gründeranteile an Unternehmen, die sie kontrollieren, und der Verkauf großer Aktienpakete drückt meist den Kurs; alles auf einmal zu verkaufen hieße, weit mehr zu verkaufen, als die Märkte sonst aufnehmen. Anteile an privaten Unternehmen haben gar keinen Marktpreis."
+          ],
+          [
+            "p",
+            "Außerdem bewegen sich die Zahlen. Sie sind eine Momentaufnahme vom 1. März 2026, und Forbes merkt an, dass sich manche Vermögen wenige Tage später um Milliarden verändert haben.[1] Die 2.450 Dollar sind ein Wert auf dem Papier: eine Obergrenze, kein Bargeld, das man verteilen könnte."
+          ],
+          [
+            "h",
+            "Land für Land"
+          ],
+          [
+            "p",
+            "Forbes ordnet Milliardäre nach Staatsangehörigkeit zu, nicht nach Wohnort; die 3.428 stammen aus 80 Ländern und Gebieten.[1][8] Wir haben die Einträge der Liste je Land addiert[9] und durch die Bevölkerung des Landes aus den Daten des Rechners dieser Seite geteilt.[3] Die Tabelle zeigt auch, wie viele Monate das Vermögen allen im Land 3,00 Dollar am Tag zahlen würde (die Armutsgrenze in lokalen Preisen, wie im {Vergleich|/calc/countries/}), und welchen Anteil eines Jahres davon 5 % des Vermögens jährlich decken würden. Es sind die 25 größten Summen."
+          ],
+          [
+            "t",
+            "Land (Staatsangehörigkeit) | Milliardäre | Vermögen zusammen (Mrd. US$) | Pro Kopf, einmalig (US$) | Monate mit 3 Dollar am Tag für alle | 5 % pro Jahr decken\nWelt | 3.428 | 20.100 | 2.450 | 61 | 25 %\nUSA | 991 | 8.431 | 24.280 | 267 | 111 %\nChina | 539 | 2.175 | 1.540 | 35 | 14 %\nIndien | 229 | 1.019 | 700 | 34 | 14 %\nDeutschland | 212 | 1.016 | 12.090 | 162 | 68 %\nRussland | 149 | 653 | 4.550 | 136 | 57 %\nFrankreich | 53 | 628 | 9.140 | 121 | 50 %\nItalien | 90 | 484 | 8.210 | 123 | 51 %\nKanada | 82 | 457 | 10.980 | 128 | 53 %\nHongkong | 71 | 420 | 56.020 | 824 | 343 %\nVereinigtes Königreich | 57 | 300 | 4.320 | 51 | 21 %\nSpanien | 44 | 281 | 5.870 | 94 | 39 %\nSchweiz | 44 | 278 | 30.620 | 262 | 109 %\nMexiko | 24 | 267 | 2.030 | 39 | 16 %\nBrasilien | 70 | 265 | 1.240 | 29 | 12 %\nAustralien | 56 | 249 | 9.020 | 107 | 45 %\nJapan | 44 | 229 | 1.860 | 30 | 12 %\nSchweden | 50 | 225 | 21.200 | 257 | 107 %\nIndonesien | 35 | 211 | 740 | 26 | 11 %\nSüdkorea | 50 | 197 | 3.820 | 68 | 28 %\nIsrael | 41 | 196 | 19.380 | 203 | 84 %\nSingapur | 55 | 156 | 25.480 | 358 | 149 %\nTschechien | 12 | 102 | 9.400 | 158 | 66 %\nThailand | 22 | 100 | 1.400 | 47 | 20 %\nTürkei | 40 | 92 | 1.070 | 26 | 11 %\nGriechenland | 21 | 90 | 8.660 | 145 | 60 %"
+          ],
+          [
+            "p",
+            "Pro Kopf sticht Hongkong heraus: Seine 71 Milliardäre besitzen 420 Milliarden Dollar bei 7,5 Millionen Einwohnern, rund 56.020 Dollar pro Kopf. Es folgen die Schweiz (30.620), Singapur (25.480), die USA (24.280) und Schweden (21.200). An diesen fünf Orten würden 5 % des Milliardärsvermögens im Jahr mehr als ein ganzes Jahr mit 3 Dollar am Tag für alle bezahlen."
+          ],
+          [
+            "p",
+            "Am anderen Ende, in Indien (700 Dollar pro Kopf), Indonesien (740), der Türkei (1.070), Brasilien (1.240) und China (1.540), würde das Vermögen die Armutsgrenze zwei bis drei Jahre lang zahlen, und 5 % im Jahr deckten 11 bis 14 % davon. Deutschlands 212 Milliardäre besitzen 1.016 Milliarden Dollar: 12.090 Dollar pro Kopf (rund 10.700 Euro), 162 Monate oder gut 13 Jahre der Armutsgrenze von 66 Euro im Monat auf {der Seite für Deutschland|/calc/de/}. 5 % im Jahr deckten 68 % eines Jahres davon."
+          ],
+          [
+            "p",
+            "An kleinen Orten machen wenige Menschen viel aus: Zypern (10 Milliardäre, 1,4 Millionen Einwohner), Monaco (2) und St. Kitts und Nevis (2) kommen auf sehr hohe Pro-Kopf-Werte, liegen aber außerhalb der ersten 25. Taiwan (66 Milliardäre, 245 Milliarden Dollar) ist nicht in den Weltbankdaten dieser Seite und hat deshalb keine Zeile.[8] Und 133 der 211 Länder und Gebiete in unseren Daten haben überhaupt keinen Milliardär mit ihrer Staatsangehörigkeit auf der Liste; dort leben 1,67 Milliarden Menschen."
+          ],
+          [
+            "h",
+            "Was die Zahlen zeigen"
+          ],
+          [
+            "p",
+            "Einmal verteilt, ergibt das Vermögen der Milliardäre rund 2.450 Dollar pro Kopf: etwa fünf Jahre einer Untergrenze von 3 Dollar am Tag für die ganze Welt zu Marktwechselkursen, bevor Verkäufe die Preise drücken. Als jährliche Zahlung ist es viel weniger: 49 bis 183 Dollar pro Kopf und Jahr bei den Sätzen oben, ein Zehntel bis gut ein Drittel dieser Untergrenze. Wie weit die eigenen Milliardäre eines Landes reichen, ist sehr verschieden: von mehr als einem ganzen Jahr an fünf der 25 Orte in der Tabelle bis zu etwa einem Achtel in Japan und Brasilien."
+          ],
+          [
+            "p",
+            "Was ein Grundeinkommen in jedem Land kosten würde und wie das zu den Steuereinnahmen steht, zeigen {die Weltkarte|/essays/basic-income-world-map/} und {der Vergleich von 211 Ländern|/calc/countries/}; andere Beträge lassen sich im {Rechner|/calc/} ausprobieren. Zur Finanzierung eines Grundeinkommens aus KI und Kapital siehe {Universelles hohes Einkommen: Wer zahlt?|/essays/universal-high-income/}."
+          ],
+          [
+            "h",
+            "Annahmen und Grenzen"
+          ],
+          [
+            "p",
+            "Eine Momentaufnahme. Die Vermögen sind Schätzungen von Forbes zum 1. März 2026, keine geprüften Zahlen, und sie ändern sich täglich.[1] Die Einträge der Liste ergeben zusammen 20,05 Billionen Dollar; Forbes rundet die Summe auf 20,1 Billionen, die wir für die Weltzahlen verwenden. Die Online-Liste, die wir addiert haben, ergibt für einige Länder leicht andere Zahlen als der Forbes-Artikel zum Start, etwa 991 statt 989 für die USA.[8][9]"
+          ],
+          [
+            "p",
+            "Staatsangehörigkeit, nicht Wohnort. Forbes ordnet jeden Milliardär dem Land seiner Staatsangehörigkeit zu.[8] Manche leben woanders, die Zeile eines Landes ist also nicht das Vermögen, das sich in diesem Land befindet."
+          ],
+          [
+            "p",
+            "Brutto, vor Steuern und Kosten. Steuern beim Verkauf von Vermögen, die Kosten der Auszahlung und Wirkungen auf Preise oder Verhalten sind nicht berücksichtigt."
+          ],
+          [
+            "p",
+            "Preise und Wechselkurse. Die 3,00 Dollar am Tag sind die Armutsgrenze der Weltbank in KKP-Dollar von 2021, umgerechnet in lokale Preise wie im Vergleich. Zu Marktwechselkursen summiert kostet das 3,95 Billionen Dollar im Jahr, weniger als 3,00 × 365 × Bevölkerung, weil die Preise in ärmeren Ländern niedriger sind.[3][4] Beträge in Landeswährung nutzen die durchschnittlichen Wechselkurse von 2025, die sich aus den BIP-Daten der Weltbank ergeben.[3]"
+          ],
+          [
+            "p",
+            "Bevölkerung. Die Weltbevölkerung ist der Wert der Weltbank für 2025.[2] Die Bevölkerung der Länder stammt aus den Daten der Seite: meist Weltbankwerte für 2025, für sieben hervorgehobene Länder amtliche nationale Zahlen.[3]"
+          ],
+          [
+            "p",
+            "Kein Vorschlag. Die Sätze sind Maßstäbe, keine Politik, die wir vorschlagen, und hier wird nicht gesagt, ob Vermögen besteuert oder verteilt werden sollte. Die Zahlen zeigen nur, wie groß die Summen sind."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "تضم قائمة ⁦Forbes⁩ لمليارديرات العالم لعام 2026 عددًا قياسيًا من المليارديرات بلغ 3,428، مجموع ثرواتهم 20.1 تريليون دولار بأسعار الأسهم وأسعار الصرف في 1 مارس 2026.[1] ويقدّر البنك الدولي عدد سكان العالم في 2025 بنحو 8.22 مليار نسمة.[2] وبقسمة الرقم الأول على الثاني ينال كل إنسان على الأرض نحو 2,450 دولارًا، مرة واحدة."
+          ],
+          [
+            "p",
+            "وإذا وُزّعت على اثني عشر شهرًا فهي 204 دولارات شهريًا لمدة عام، ثم لا شيء. فالثروة رصيد مخزون لا دخل متدفق: متى وُزّعت انتهت. أما الدفع كل عام فلا بد أن يأتي مما تدرّه الثروة، أو من حصة ثابتة منها. وبنسبة ⁦2%⁩ سنويًا يكون نصيب الفرد 49 دولارًا (4.08 دولارات شهريًا)، وبنسبة ⁦5%⁩ يكون 122 دولارًا (10.19 دولارات شهريًا)."
+          ],
+          [
+            "t",
+            "طريقة التوزيع | للفرد | شهريًا\nكلها مرة واحدة | 2,450 دولارًا | 204 دولارات لمدة 12 شهرًا\n2% منها كل عام | 49 دولارًا سنويًا | 4.08 دولارات\n5% منها كل عام | 122 دولارًا سنويًا | 10.19 دولارات"
+          ],
+          [
+            "h",
+            "مرة واحدة: نحو 2,450 دولارًا لكل فرد"
+          ],
+          [
+            "p",
+            "متوسط الثروة في القائمة 5.8 مليارات دولار، و20 شخصًا يملكون 100 مليار دولار أو أكثر. وأغناهم، إيلون ماسك، بثروة تقدَّر بنحو 839 مليار دولار، يعادل وحده نحو 102 دولار لكل إنسان في العالم.[1]"
+          ],
+          [
+            "p",
+            "وبمتوسط أسعار الصرف في 2025 من بيانات البنك الدولي التي يستخدمها هذا الموقع، تساوي 2,450 دولارًا نحو 9,200 ريال سعودي أو نحو 121,000 جنيه مصري.[3]"
+          ],
+          [
+            "p",
+            "إلى أي مدى تكفي؟ {مقارنة 211 دولة|/calc/countries/} في هذا الموقع تعتمد خط الفقر لدى البنك الدولي، 3.00 دولارات يوميًا، مبلغًا معياريًا محوّلًا إلى أسعار كل بلد.[4] ودفعه لجميع سكان هذه الدول والأقاليم الـ211 (8.12 مليار نسمة) لعام واحد يكلف نحو 3.95 تريليون دولار بأسعار الصرف في السوق.[3] وتكفي ثروة المليارديرات البالغة 20.1 تريليون دولار لنحو 61 شهرًا منه: أكثر قليلًا من خمس سنوات."
+          ],
+          [
+            "h",
+            "كل عام: ما يمكن أن تدفعه الثروة دون أن تنفد"
+          ],
+          [
+            "p",
+            "لكي يُدفع شيء كل عام دون استنفاد الثروة، لا يمكن أن يخرج منها إلا جزء كل عام. نعرض ثلاث نسب، وليست أي منها توقعًا؛ بل كل منها مقياس مستخدم بالفعل في مكان ما."
+          ],
+          [
+            "p",
+            "نسبة ⁦2%⁩ هي سعر الضريبة الدنيا على المليارديرات التي طرحها الاقتصادي غابرييل زوكمان في تقرير عام 2024 بتكليف من الرئاسة البرازيلية لمجموعة العشرين. ولا تُطبَّق إلا على من لا يدفع ما يعادلها في ضريبة الدخل، ولهذا قدّر التقرير حصيلتها بنحو ⁦200–250⁩ مليار دولار سنويًا لا ⁦2%⁩ من الثروة كلها. ويقدّر التقرير نفسه ما يدفعه المليارديرات فعليًا من ضرائب بنحو ⁦0.3%⁩ من ثرواتهم.[5]"
+          ],
+          [
+            "p",
+            "ونسبة ⁦5%⁩ هي الحصة التي يجب على المؤسسات الخيرية الخاصة في الولايات المتحدة أن توزعها كل عام من أصولها الاستثمارية،[6] وهي أيضًا ما يسحبه سنويًا للولاية صندوق ألاسكا الدائم، الصندوق الذي تأتي منه {توزيعات ألاسكا|/timeline/#tl-alaska}.[7] أما ⁦7.5%⁩ فهي ما يذكره التقرير متوسطًا للعائد الحقيقي قبل الضرائب على ثروات فاحشي الثراء خلال العقود الأربعة الماضية؛[5] وتوزيعه كله لا يُبقي شيئًا للنمو."
+          ],
+          [
+            "t",
+            "النسبة الموزعة سنويًا | المجموع في السنة | للفرد سنويًا | للفرد شهريًا | نسبتها من 3 دولارات يوميًا للجميع\n2% | 402 مليار دولار | 49 دولارًا | 4.08 دولارات | 10%\n5% | 1.0 تريليون دولار | 122 دولارًا | 10.19 دولارات | 25%\n7.5% | 1.5 تريليون دولار | 183 دولارًا | 15.29 دولارًا | 38%"
+          ],
+          [
+            "p",
+            "أي أن ثروة المليارديرات، إذا دُفعت سنويًا، تغطي ما بين عُشر وما يزيد قليلًا على ثلث حد أدنى قدره 3 دولارات يوميًا للجميع، وذلك ما دامت تدرّ على الأقل ما يُدفع منها. وبالعملة المحلية تعني ⁦5%⁩ سنويًا نحو 38 ريالًا سعوديًا أو نحو 506 جنيهات مصرية شهريًا للفرد.[3]"
+          ],
+          [
+            "h",
+            "لماذا يكون المبلغ الواحد أصغر في الواقع"
+          ],
+          [
+            "p",
+            "تقدّر ⁦Forbes⁩ كل ثروة من الحصص في الشركات المدرجة وغير المدرجة والعقارات والأعمال الفنية واليخوت وغيرها، مطروحًا منها الديون المعروفة.[1] ومعظمها ليس نقدًا. فجزء كبير منها أسهم مؤسسين في شركات يسيطرون عليها، وبيع كتلة كبيرة من الأسهم يميل إلى خفض سعرها؛ وبيعها كلها دفعة واحدة يعني بيع ما يفوق بكثير ما تستوعبه الأسواق عادة. أما الحصص في الشركات غير المدرجة فليس لها سعر سوقي أصلًا."
+          ],
+          [
+            "p",
+            "والأرقام تتحرك أيضًا. فهي صورة ليوم 1 مارس 2026، وتشير ⁦Forbes⁩ إلى أن بعض الثروات تغيرت بمليارات الدولارات بعد أيام قليلة.[1] فالـ2,450 دولارًا رقم على الورق: حد أعلى، لا نقد يمكن توزيعه."
+          ],
+          [
+            "h",
+            "دولة دولة"
+          ],
+          [
+            "p",
+            "تصنّف ⁦Forbes⁩ المليارديرات حسب الجنسية لا حسب مكان الإقامة؛ والـ3,428 من 80 دولة وإقليمًا.[1][8] جمعنا مداخل القائمة لكل دولة[9] وقسمناها على عدد سكان تلك الدولة في بيانات حاسبة هذا الموقع.[3] ويبيّن الجدول أيضًا كم شهرًا تكفي الثروة لدفع 3.00 دولارات يوميًا لجميع سكان الدولة (خط الفقر بالأسعار المحلية، كما في {المقارنة|/calc/countries/})، وأي حصة من عام من هذا الدفع تغطيها ⁦5%⁩ من الثروة سنويًا. هذه أكبر 25 مجموعًا."
+          ],
+          [
+            "t",
+            "الدولة (الجنسية) | عدد المليارديرات | مجموع الثروة (مليار دولار) | للفرد مرة واحدة (دولار) | أشهر من 3 دولارات يوميًا للجميع | ما تغطيه 5% سنويًا\nالعالم | 3,428 | 20,100 | 2,450 | 61 | 25%\nالولايات المتحدة | 991 | 8,431 | 24,280 | 267 | 111%\nالصين | 539 | 2,175 | 1,540 | 35 | 14%\nالهند | 229 | 1,019 | 700 | 34 | 14%\nألمانيا | 212 | 1,016 | 12,090 | 162 | 68%\nروسيا | 149 | 653 | 4,550 | 136 | 57%\nفرنسا | 53 | 628 | 9,140 | 121 | 50%\nإيطاليا | 90 | 484 | 8,210 | 123 | 51%\nكندا | 82 | 457 | 10,980 | 128 | 53%\nهونغ كونغ | 71 | 420 | 56,020 | 824 | 343%\nالمملكة المتحدة | 57 | 300 | 4,320 | 51 | 21%\nإسبانيا | 44 | 281 | 5,870 | 94 | 39%\nسويسرا | 44 | 278 | 30,620 | 262 | 109%\nالمكسيك | 24 | 267 | 2,030 | 39 | 16%\nالبرازيل | 70 | 265 | 1,240 | 29 | 12%\nأستراليا | 56 | 249 | 9,020 | 107 | 45%\nاليابان | 44 | 229 | 1,860 | 30 | 12%\nالسويد | 50 | 225 | 21,200 | 257 | 107%\nإندونيسيا | 35 | 211 | 740 | 26 | 11%\nكوريا الجنوبية | 50 | 197 | 3,820 | 68 | 28%\nإسرائيل | 41 | 196 | 19,380 | 203 | 84%\nسنغافورة | 55 | 156 | 25,480 | 358 | 149%\nالتشيك | 12 | 102 | 9,400 | 158 | 66%\nتايلاند | 22 | 100 | 1,400 | 47 | 20%\nتركيا | 40 | 92 | 1,070 | 26 | 11%\nاليونان | 21 | 90 | 8,660 | 145 | 60%"
+          ],
+          [
+            "p",
+            "من حيث نصيب الفرد تبرز هونغ كونغ: يملك مليارديراتها الـ71 نحو 420 مليار دولار بين 7.5 مليون نسمة، أي نحو 56,020 دولارًا للفرد. وتليها سويسرا (30,620) وسنغافورة (25,480) والولايات المتحدة (24,280) والسويد (21,200). وفي هذه الأماكن الخمسة تكفي 5% سنويًا من ثروة مليارديراتها لدفع 3 دولارات يوميًا للجميع أكثر من عام كامل."
+          ],
+          [
+            "p",
+            "وفي الطرف الآخر، في الهند (700 دولار للفرد) وإندونيسيا (740) وتركيا (1,070) والبرازيل (1,240) والصين (1,540)، تكفي الثروة لدفع خط الفقر سنتين إلى ثلاث، وتغطي ⁦5%⁩ سنويًا ⁦11–14%⁩ منه. ومن خارج الجدول: للسعودية 12 مليارديرًا بثروة 50.4 مليار دولار، أي 1,360 دولارًا للفرد (نحو 5,100 ريال)، تكفي لـ30 شهرًا من خط الفقر؛ وللإمارات 8 بثروة 42.0 مليار دولار، أي 3,650 دولارًا للفرد، تكفي لـ58 شهرًا؛ ولمصر 6 بثروة 23.8 مليار دولار، أي نحو 200 دولار للفرد (نحو 10,000 جنيه)، تكفي لـ14 شهرًا. انظر {صفحة مصر في الحاسبة|/calc/eg/}."
+          ],
+          [
+            "p",
+            "في الأماكن الصغيرة يُحدث أشخاص قليلون فرقًا كبيرًا: قبرص (10 مليارديرات، 1.4 مليون نسمة) وموناكو (2) وسانت كيتس ونيفيس (2) تحصل على أرقام كبيرة جدًا للفرد، لكنها خارج المراكز الـ25 الأولى. وتايوان (66 مليارديرًا، 245 مليار دولار) غير موجودة في بيانات البنك الدولي التي يستخدمها الموقع، فلا صف لها.[8] و133 من الدول والأقاليم الـ211 في بياناتنا ليس لها أي ملياردير من مواطنيها في القائمة؛ ويعيش فيها 1.67 مليار نسمة."
+          ],
+          [
+            "h",
+            "ما تُظهره الأرقام"
+          ],
+          [
+            "p",
+            "إذا وُزّعت مرة واحدة، فثروة المليارديرات تعادل نحو 2,450 دولارًا للفرد: نحو خمس سنوات من حد أدنى قدره 3 دولارات يوميًا للعالم كله بأسعار الصرف في السوق، قبل أي هبوط في الأسعار بسبب البيع. وإذا دُفعت سنويًا فهي أصغر بكثير: من 49 إلى 183 دولارًا للفرد سنويًا بالنسب أعلاه، أي من عُشر هذا الحد إلى ما يزيد قليلًا على ثلثه. ويختلف ما يكفيه مليارديرات كل دولة اختلافًا كبيرًا، من أكثر من عام كامل في خمسة من الأماكن الـ25 في الجدول إلى نحو الثُمن في اليابان والبرازيل."
+          ],
+          [
+            "p",
+            "لمعرفة كلفة الدخل الأساسي في كل دولة ومقارنتها بالإيرادات الضريبية، انظر {خريطة العالم|/essays/basic-income-world-map/} و{مقارنة 211 دولة|/calc/countries/}؛ ولتجربة مبالغ أخرى، {الحاسبة|/calc/}. وعن تمويل الدخل الأساسي من الذكاء الاصطناعي ورأس المال، انظر {الدخل المرتفع الشامل: من يدفع؟|/essays/universal-high-income/}."
+          ],
+          [
+            "h",
+            "الافتراضات والحدود"
+          ],
+          [
+            "p",
+            "صورة لحظة واحدة. الثروات تقديرات ⁦Forbes⁩ في 1 مارس 2026، وليست أرقامًا مدققة، وتتغير يوميًا.[1] ومجموع مداخل القائمة 20.05 تريليون دولار؛ وتقرّب ⁦Forbes⁩ المجموع إلى 20.1 تريليون، وهو ما نستخدمه لأرقام العالم. والقائمة الإلكترونية التي جمعناها تعطي أعدادًا مختلفة قليلًا لبعض الدول عن مقال الإطلاق، مثل 991 للولايات المتحدة مقابل 989.[8][9]"
+          ],
+          [
+            "p",
+            "الجنسية لا الإقامة. تنسب ⁦Forbes⁩ كل ملياردير إلى بلد جنسيته.[8] وبعضهم يعيش في بلد آخر، فصف الدولة ليس الثروة الموجودة فيها."
+          ],
+          [
+            "p",
+            "إجمالي قبل الضرائب والتكاليف. لم تُحتسب ضرائب بيع الأصول، ولا كلفة الدفع، ولا أي أثر على الأسعار أو السلوك."
+          ],
+          [
+            "p",
+            "الأسعار وأسعار الصرف. الـ3.00 دولارات يوميًا هي خط الفقر لدى البنك الدولي بدولارات تعادل القوة الشرائية لعام 2021، محوّلة إلى الأسعار المحلية كما في المقارنة. وبجمعها بأسعار الصرف في السوق تكلف 3.95 تريليون دولار سنويًا، أقل من ⁦3.00 × 365⁩ × عدد السكان، لأن الأسعار أدنى في الدول الأفقر.[3][4] والمبالغ بالعملات المحلية بمتوسط أسعار الصرف لعام 2025 المستنتجة من بيانات الناتج المحلي لدى البنك الدولي.[3]"
+          ],
+          [
+            "p",
+            "السكان. عدد سكان العالم هو رقم البنك الدولي لعام 2025.[2] وأعداد سكان الدول من بيانات الموقع: في الغالب أرقام البنك الدولي لعام 2025، مع أرقام وطنية رسمية لسبع دول مختارة.[3]"
+          ],
+          [
+            "p",
+            "ليس اقتراحًا. النسب مقاييس، لا سياسات نقترحها، ولا يقول هذا المقال إن كان ينبغي فرض الضرائب على الثروة أو توزيعها. الأرقام تُظهر حجم المبالغ فقط."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Forbes — Chase Peterson-Withorn, “Inside Forbes’ 2026 Billionaires List: More Than 3,400 Worth $20 Trillion” (10 March 2026, updated 18 March 2026): 3,428 billionaires, $20.1 trillion, average $5.8 billion, 20 worth $100 billion or more, 80 countries and territories, stock prices and exchange rates of 1 March 2026, methodology",
+          "url": "https://www.forbes.com/sites/chasewithorn/2026/03/10/2026-worlds-billionaires-list-facts-and-figures/"
+        },
+        {
+          "n": 2,
+          "label": "World Bank — Population, total (SP.POP.TOTL), World, 2025: 8,215,424,893",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=1W"
+        },
+        {
+          "n": 3,
+          "label": "Free Lunch Lab — countries.json: population, GDP in local currency and US dollars, and the cost of the $3.00-a-day poverty line for 211 countries and territories (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/countries.json"
+        },
+        {
+          "n": 4,
+          "label": "World Bank — June 2025 update to the global poverty lines: the international poverty line of $3.00 a day in 2021 PPP",
+          "url": "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines"
+        },
+        {
+          "n": 5,
+          "label": "Gabriel Zucman, EU Tax Observatory — A Blueprint for a Coordinated Minimum Effective Taxation Standard for Ultra-High-Net-Worth Individuals, executive summary (25 June 2024): a 2% minimum tax, $200–250 billion a year from about 3,000 billionaires, 7.5% average real pre-tax return, 0.3% effective tax rate",
+          "url": "https://www.taxobservatory.eu/www-site/uploads/2024/06/Zucman-Report-Executive-Summary-EN.pdf"
+        },
+        {
+          "n": 6,
+          "label": "IRS — Private foundations: minimum investment return (5% of the fair market value of non-charitable-use assets)",
+          "url": "https://www.irs.gov/charities-non-profits/private-foundations/minimum-investment-return"
+        },
+        {
+          "n": 7,
+          "label": "Alaska Permanent Fund Corporation — Understanding the Fund: the percent of market value draw, set in statute at 5.0%",
+          "url": "https://apfc.org/fund-structure/"
+        },
+        {
+          "n": 8,
+          "label": "Forbes — Sam Ellefson, “The Countries With The Most Billionaires 2026” (11 March 2026): billionaires are counted by citizenship; United States 989, China 539, India 229, Germany 212, Russia 147; Taiwan 66 worth $245 billion",
+          "url": "https://www.forbes.com/sites/samellefson/2026/03/11/the-countries-with-the-most-billionaires/"
+        },
+        {
+          "n": 9,
+          "label": "Forbes — World’s Billionaires List 2026, every entry’s net worth and country of citizenship (retrieved 14 November 2026); our totals by country are in data/billionaires-2026.json",
+          "url": "https://www.forbes.com/billionaires/",
+          "url2": "https://github.com/eltociear/free-lunch-lab/blob/main/data/billionaires-2026.json"
+        }
+      ]
+    },
+    {
       "id": "does-cash-make-people-stop-working",
       "date": "2026-11-11",
       "related": [
@@ -19358,6 +20357,7 @@ module.exports = {
       "id": "basic-income-world-map",
       "date": "2026-11-10",
       "related": [
+        "billionaire-wealth-per-person",
         "finland-basic-income-experiment",
         "india-basic-income-madhya-pradesh-ladli-behna",
         "china-childcare-subsidy-basic-income",
@@ -39351,6 +40351,7 @@ module.exports = {
       "id": "universal-high-income",
       "date": "2026-10-29",
       "related": [
+        "billionaire-wealth-per-person",
         "ai-agent-basic-income",
         "use-to-own",
         "public-benefit-fund",

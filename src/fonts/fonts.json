@@ -1175,6 +1175,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-e293376ecc.woff2",
     "chars": "絡"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-20804ba361.woff2",
+    "chars": "球美"
    }
   ],
   "ja:body:700": [
@@ -1417,6 +1421,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-7d891b99b6.woff2",
     "chars": "絡"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-bcbb8614cb.woff2",
+    "chars": "球美"
    }
   ],
   "ja:display": [
@@ -1567,6 +1575,10 @@
    {
     "file": "dela-gothic-one-400-ja-0bbfdcfea1.woff2",
     "chars": "不版"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-755e08514d.woff2",
+    "chars": "億小"
    }
   ],
   "ja:dot": [
@@ -1879,6 +1891,10 @@
    {
     "file": "noto-sans-sc-400-zh-2d4d627457.woff2",
     "chars": "伸"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-78211b2316.woff2",
+    "chars": "抛艇"
    }
   ],
   "zh:body:700": [
@@ -2137,6 +2153,10 @@
    {
     "file": "noto-sans-sc-700-zh-e5283bce90.woff2",
     "chars": "伸"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-874867eb85.woff2",
+    "chars": "抛艇"
    }
   ],
   "zh:display": [
@@ -2279,6 +2299,10 @@
    {
     "file": "noto-sans-sc-900-zh-aa24f28285.woff2",
     "chars": "伸容序延才阅"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-3c46da3d57.woff2",
+    "chars": "亿豪财"
    }
   ],
   "zh:dot": [

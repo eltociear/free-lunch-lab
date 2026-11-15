@@ -96,6 +96,7 @@ const ESSAY_DATA = {
   'universal-high-income': { calc: ['us'] },
   'basic-income-world-map': { calc: ['jp', 'us', 'in', 'ng', 'br', 'sa'] },
   'does-cash-make-people-stop-working': { calc: ['us', 'ca', 'fi', 'ke', 'ir'], pilots: true },
+  'billionaire-wealth-per-person': { calc: ['us', 'cn', 'in', 'de', 'jp', 'hk'] },
 };
 for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
@@ -235,6 +236,29 @@ for (const s of [...mapJs.MAP.shapes, ...mapJs.MAP.dots]) if (!/^[a-z]{2}$/.test
 // エッセイ（basic-income-world-map）の本文の数（区分ごとの国の数）は手で書いているので、データが変わったら知らせる
 const MAP_ESSAY_COUNTS = [24, 35, 23, 18, 40, 71];
 const mapDrift = MAP_COUNTS.join() !== MAP_ESSAY_COUNTS.join() ? `WARNING: world map band counts changed (${MAP_COUNTS.join('/')}, the essay basic-income-world-map says ${MAP_ESSAY_COUNTS.join('/')}); update the essay text and MAP_ESSAY_COUNTS` : '';
+// エッセイ billionaire-wealth-per-person の国の表（en の 't' のうち 1列目が国の表）は、data/billionaires-2026.json（Forbes 2026 を国籍ごとに足したもの）と
+// CALC_WORLD（人口・1日3.00ドルの月額・為替）から計算し直して、ずれたら知らせる（人数・資産・1人あたり・月数・毎年5％の割合）。ar はラテン文字を LRI/PDI で囲み、hi は CJK と isolate なし
+const BILL = require('./data/billionaires-2026.json');
+const billDrift = (() => {
+  const e = ESSAYS.find(x => x.id === 'billionaire-wealth-per-person');
+  if (!e) return '';
+  for (const [k, t] of e.blocks.ar) if (k !== 't' && /[A-Za-z$]/.test(t.replace(ESSAY_LINK, '$1').replace(/⁦[^⁩]*⁩/g, ''))) throw new Error(`billionaire-wealth-per-person.ar: Latin text outside LRI/PDI: ${t.slice(0, 60)}`);
+  for (const [, t] of e.blocks.hi) if (/[　-鿿⁦-⁩]/.test(t)) throw new Error('billionaire-wealth-per-person.hi: CJK or isolate characters');
+  const tbl = e.blocks.en.find(([k, t]) => k === 't' && t.startsWith('Country'));
+  if (!tbl) return 'WARNING: billionaire-wealth-per-person: country table not found';
+  const g = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  const cost = c => c.pop.all * c.line.monthly * 12 * c.usd;
+  const bad = [];
+  for (const r of tbl[1].split('\n').slice(2).map(x => x.split(' | '))) {
+    const c = CALC_WORLD.find(x => x.name.en === r[0]);
+    const b = c && BILL.countries.find(x => x.id === c.id);
+    if (!b) { bad.push(r[0]); continue; }
+    const w = b.netWorthBillionUsd * 1e9;
+    const want = [r[0], g(b.billionaires), g(Math.round(b.netWorthBillionUsd)), g(Math.round(w / c.pop.all / 10) * 10), g(Math.round(w / cost(c) * 12)), `${Math.round(w * 0.05 / cost(c) * 100)}%`];
+    if (want.join(' | ') !== r.join(' | ')) bad.push(`${r[0]} (now ${want.slice(1).join(' / ')})`);
+  }
+  return bad.length ? `WARNING: billionaire-wealth-per-person: the country table differs from data/billionaires-2026.json and the calculator data for ${bad.join(', ')}; update the essay (all languages)` : '';
+})();
 const mapRegionName = (lang, id) => { const c = CALC_WORLD.find(x => x.id === id); if (c) return c.name[lang]; try { return new Intl.DisplayNames([LANG_TAG[lang]], { type: 'region' }).of(id.toUpperCase()); } catch { return id.toUpperCase(); } };
 const mapYear = (lang, r) => (r.base ? (r.base.year ? String(r.base.year) : T[lang].mapBudgetYear) : '');
 function mapTip(lang, r, id) {
@@ -2922,6 +2946,7 @@ for (const lang of LANGS) {
 }
 
 if (mapDrift) console.warn(mapDrift);
+if (billDrift) console.warn(billDrift);
 if (workDrift) console.warn(workDrift);
 if (hhDrift) console.warn(hhDrift); else console.log(`household: the essay's ${HOUSEHOLD.check.length} households match (main, range, benefits now, basic income)`);
 if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);

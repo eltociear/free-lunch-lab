@@ -261,6 +261,65 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
+  // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
+  'billionaire': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const ja = lang === 'ja';
+      const B = require('../../../data/billionaires-2026.json');
+      const tot = B.published.netWorthTrillionUsd * 1e12, pop = B.worldPopulation.value;
+      const once = Math.round(tot / pop / 10) * 10, y2 = Math.round(tot * 0.02 / pop), y5 = Math.round(tot * 0.05 / pop);
+      const m2 = (tot * 0.02 / pop / 12).toFixed(2), m5 = (tot * 0.05 / pop / 12).toFixed(2);
+      const n = x => x.toLocaleString('en-US');
+      const { CALC } = require('../../../src/data.js');
+      const W = require('../../../src/calc-world.js').world(CALC);
+      const line = W.reduce((t, c) => t + c.pop.all * c.line.monthly * 12 * c.usd, 0); // $3.00 a day for everyone in the 211 countries, US$ a year
+      const months = Math.round(tot / line * 12), s2 = Math.round(tot * 0.02 / line * 100), s5 = Math.round(tot * 0.05 / line * 100);
+      const cmp = t => `<p class="cmp">${t}</p>`;
+      const usd = x => (ja ? `${n(x)}<small>ドル</small>` : `$${n(x)}`);
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb">${ja ? 'フォーブス 2026年版 世界の億万長者 ・ 3月1日時点' : 'Forbes World’s Billionaires 2026 · as of 1 March'}</p>
+<h1 class="hl">${ja ? '億万長者の資産を全員に配ったら、1人いくら？' : 'Billionaires’ wealth for everyone: how much each?'}</h1>
+<p class="sb">${ja ? `${n(B.published.billionaires)}人の資産 ${B.published.netWorthTrillionUsd}兆ドル ÷ 世界の人口 ${(pop / 1e8).toFixed(1)}億人（世界銀行・${B.worldPopulation.year}年）` : `${n(B.published.billionaires)} billionaires, $${B.published.netWorthTrillionUsd} trillion ÷ ${(pop / 1e9).toFixed(2)} billion people (World Bank, ${B.worldPopulation.year})`}</p>
+<div class="cards">
+  <section class="c big"><p class="k">${ja ? '1回きりなら' : 'Once'}</p><p class="v">${usd(once)}</p>${cmp(ja ? `世界の全員に1日3ドル配るなら<b>約${months}か月分</b>` : `= <b>${months} months</b> of $3 a day for everyone`)}<p class="d">${ja ? `1人あたり。1年に分けると月${Math.round(tot / pop / 12)}ドル、そのあとはゼロ` : `per person. Over a year, $${Math.round(tot / pop / 12)} a month, then nothing`}</p></section>
+  <section class="c"><p class="k">${ja ? '毎年2％ずつなら' : '2% every year'}</p><p class="v">${usd(y2)}<small>${ja ? '／年' : ' a year'}</small></p>${cmp(ja ? `全員に1日3ドルの<b>${s2}％</b>` : `<b>${s2}%</b> of $3 a day for everyone`)}<p class="d">${ja ? `月${m2}ドル` : `$${m2} a month`}</p></section>
+  <section class="c"><p class="k">${ja ? '毎年5％ずつなら' : '5% every year'}</p><p class="v">${usd(y5)}<small>${ja ? '／年' : ' a year'}</small></p>${cmp(ja ? `全員に1日3ドルの<b>${s5}％</b>` : `<b>${s5}%</b> of $3 a day for everyone`)}<p class="d">${ja ? `月${m5}ドル` : `$${m5} a month`}</p></section>
+</div>
+<p class="nt">${ja ? '資産はストックでフローではない。多くは株で、一度に売れば値下がりする。数字は帳簿上の上限' : 'Wealth is a stock, not a flow. Most of it is shares that would fall in price if sold at once: a paper upper bound'}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${ja ? '不労所得研究所' : 'Free <em>Lunch</em> Lab'}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${ja ? 'ja/' : ''}essays/billionaire-wealth-per-person/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb{font-size:19px;color:#6CF0B0;font-weight:700}
+.hl{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${ja ? 44 : 38}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:20px;line-height:1.35;color:#C9D0F0}
+.cards{margin-top:20px;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:16px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:18px 22px;display:flex;flex-direction:column}
+.c.big{border-color:rgba(255,214,107,.7);background:rgba(255,214,107,.08)}
+.k{font-size:22px;color:#A9B2D8;font-weight:700}
+.v{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:60px;line-height:1.1;color:#FFFFFF;white-space:nowrap}
+.big .v{font-size:84px;color:#FFD66B}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.42em;margin-left:4px}
+.cmp{margin-top:18px;font-size:24px;line-height:1.35;color:#C9D0F0;word-break:auto-phrase}
+.cmp b{color:#6CF0B0;font-weight:900}
+.d{margin-top:auto;font-size:19px;line-height:1.35;color:#E3E8FF}
+.nt{margin:14px 0 12px;font-size:17px;line-height:1.35;color:#A9B2D8}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:16px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the cash-out ranking (/ja/ranking/): the top group ("換金しやすい") with rank, name, what you get
   // and the score, all computed by src/ranking.js from src/data.js (so it matches the page). 1200x675 (16:9), ja only.
   'ranking': {
