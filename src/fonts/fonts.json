@@ -71,6 +71,10 @@
    {
     "file": "noto-sans-arabic-400-ar-37f1d97c85.woff2",
     "chars": "'"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-e51f5b1f0a.woff2",
+    "chars": "ßü"
    }
   ],
   "ar:body:700": [
@@ -129,6 +133,10 @@
    {
     "file": "noto-sans-arabic-700-ar-7966358908.woff2",
     "chars": "'"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-7b0eaa79f0.woff2",
+    "chars": "ßü"
    }
   ],
   "ar:display": [
@@ -447,6 +455,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-f0205f29ba.woff2",
     "chars": "ãçëíóôüʻ₹"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-e3d64b28f7.woff2",
+    "chars": "ß"
    }
   ],
   "en:body:700": [
@@ -521,6 +533,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-75208534fa.woff2",
     "chars": "ãçëíóôüʻ₹"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-3851d6583d.woff2",
+    "chars": "ß"
    }
   ],
   "en:display": [
@@ -651,6 +667,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-b4692a5589.woff2",
     "chars": "º"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-e3d64b28f7.woff2",
+    "chars": "ß"
    }
   ],
   "es:body:700": [
@@ -741,6 +761,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-8c00f5ec88.woff2",
     "chars": "º"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-3851d6583d.woff2",
+    "chars": "ß"
    }
   ],
   "es:display": [
@@ -861,6 +885,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-2fb5394295.woff2",
     "chars": "'"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-c495543b18.woff2",
+    "chars": "ßü"
    }
   ],
   "hi:body:700": [
@@ -923,6 +951,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-6bb8d02dbf.woff2",
     "chars": "'"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-07d9f9141c.woff2",
+    "chars": "ßü"
    }
   ],
   "hi:dot": [
@@ -1179,6 +1211,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-20804ba361.woff2",
     "chars": "球美"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-4b16b0ff59.woff2",
+    "chars": "ßü庫房据暖"
    }
   ],
   "ja:body:700": [
@@ -1425,6 +1461,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-bcbb8614cb.woff2",
     "chars": "球美"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-38fdba6369.woff2",
+    "chars": "ßü庫房据暖"
    }
   ],
   "ja:display": [
@@ -1579,6 +1619,10 @@
    {
     "file": "dela-gothic-one-400-ja-755e08514d.woff2",
     "chars": "億小"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-0fc4541eef.woff2",
+    "chars": "相費"
    }
   ],
   "ja:dot": [
@@ -1895,6 +1939,10 @@
    {
     "file": "noto-sans-sc-400-zh-78211b2316.woff2",
     "chars": "抛艇"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-b91423fa13.woff2",
+    "chars": "ßü吕念暖讯踏遇镜"
    }
   ],
   "zh:body:700": [
@@ -2157,6 +2205,10 @@
    {
     "file": "noto-sans-sc-700-zh-874867eb85.woff2",
     "chars": "抛艇"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-923d73a53d.woff2",
+    "chars": "ßü吕念暖讯踏遇镜"
    }
   ],
   "zh:display": [
@@ -2303,6 +2355,10 @@
    {
     "file": "noto-sans-sc-900-zh-3c46da3d57.woff2",
     "chars": "亿豪财"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-e21bce4714.woff2",
+    "chars": "默"
    }
   ],
   "zh:dot": [

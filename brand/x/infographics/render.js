@@ -261,6 +261,77 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the essay germany-merz-basic-income-cost: Destatis population × amount × 12 at three of the essay's amounts,
+  // against all tax revenue (2025), computed from data/germany-2026.json (the same file the build checks the essay table against). 1200x675, ja/en/de.
+  'germany': {
+    w: 1200, h: 675, langs: ['ja', 'en', 'de'],
+    build: lang => {
+      const G = require('../../../data/germany-2026.json');
+      const P = G.population.value, tax = G.taxRevenue.value;
+      const T3 = {
+        ja: { eb: `ドイツの人口 ${(P / 1e4).toLocaleString('en-US')}万人（連邦統計庁・2026年6月30日）`, hl: 'ドイツで全員にベーシックインカム、年いくら？',
+          sb: 'メルツ首相「この問題には、ここ数年ずっとやや慎重だった」（2026年11月2日、デジタル・サミット）',
+          amt: m => `月${m.toLocaleString('en-US')}ユーロ`, tag: { 'standard-rate': '（基準額）', calc: '', pilot: '（実験）' },
+          d: { 'standard-rate': '単身の大人の基礎保障の基準額（2026年）', pilot: '2021〜24年の実験で122人が受け取った額。働く時間は目立って減らなかった（DIW）' },
+          cost: c => c >= 9.95e11 ? `${(c / 1e12).toFixed(1).replace(/\.0$/, "")}兆<small>ユーロ</small>` : `${(Math.round(c / 1e9) * 10).toLocaleString("en-US")}億<small>ユーロ</small>`,
+          yr: '1年あたり', share: p => `税収全体の<b>${p}%</b>`, taxNote: `税収全体は${Math.round(tax / 1e8).toLocaleString('en-US')}億ユーロ（2025年、連邦・州・市町村）`,
+          nt: '子どもも含め全員に同じ額。今ある給付の置き換え、税、物価の変化は入れていない総額', wm: '不労所得研究所', path: 'ja/' },
+        en: { eb: `Germany: ${(P / 1e6).toFixed(1)} million people (Destatis, 30 June 2026)`, hl: 'A basic income for all of Germany: how much?',
+          sb: 'Chancellor Merz: “I have always been somewhat reserved on this subject” (Digital Summit, 2 Nov 2026)',
+          amt: m => `€${m.toLocaleString('en-US')} a month`, tag: { 'standard-rate': ' (standard rate)', calc: '', pilot: ' (German pilot)' },
+          d: { 'standard-rate': 'Standard welfare rate for a single adult, 2026', pilot: 'What 122 people got in a 2021–24 pilot; working hours did not fall significantly (DIW)' },
+          cost: c => `€${Math.round(c / 1e9).toLocaleString('en-US')}<small>bn</small>`,
+          yr: 'a year', share: p => `<b>${p}%</b> of all tax revenue`, taxNote: `All taxes: €${Math.round(tax / 1e9)}bn (2025, federal, state and local)`,
+          nt: 'Everyone gets the same amount, children included. Gross: no offsets for existing benefits, taxes or price effects', wm: 'Free <em>Lunch</em> Lab', path: '' },
+        de: { eb: `Deutschland: ${(P / 1e6).toFixed(1).replace('.', ',')} Mio. Einwohner (Destatis, 30. Juni 2026)`, hl: 'Grundeinkommen für alle: Was kostet das?',
+          sb: 'Bundeskanzler Merz: „Ich bin bei diesem Thema in den letzten Jahren immer etwas zurückhaltend gewesen“ (Digital-Gipfel, 2.11.2026)',
+          amt: m => `${m.toLocaleString('de-DE')} € im Monat`, tag: { 'standard-rate': ' (Regelbedarf)', calc: '', pilot: ' (Modellversuch)' },
+          d: { 'standard-rate': 'Grundsicherungsgeld für Alleinstehende, 2026', pilot: 'So viel bekamen 122 Menschen im Modellversuch 2021–24; Arbeitszeit sank nicht signifikant (DIW)' },
+          cost: c => `${Math.round(c / 1e9).toLocaleString('de-DE')}<small> Mrd. €</small>`,
+          yr: 'pro Jahr', share: p => `<b>${p} %</b> aller Steuereinnahmen`, taxNote: `Alle Steuern: ${Math.round(tax / 1e9)} Mrd. € (2025, Bund, Länder, Gemeinden)`,
+          nt: 'Alle erhalten denselben Betrag, auch Kinder. Brutto: ohne Gegenrechnung bestehender Leistungen, ohne Steuer- und Preiseffekte', wm: 'Free <em>Lunch</em> Lab', path: 'de/' },
+      }[lang];
+      const card = id => { const l = G.levels.find(x => x.id === id), c = P * l.monthly * 12, big = id === 'calc';
+        return `<section class="c${big ? ' big' : ''}"><p class="k">${T3.amt(l.monthly)}${T3.tag[id]}</p><p class="v">${T3.cost(c)}</p><p class="y">${T3.yr}</p><p class="cmp">${T3.share(Math.round(c / tax * 100))}</p><p class="d">${big ? T3.taxNote : T3.d[id]}</p></section>`; };
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb">${T3.eb}</p>
+<h1 class="hl">${T3.hl}</h1>
+<p class="sb">${T3.sb}</p>
+<div class="cards">${['standard-rate', 'calc', 'pilot'].map(card).join('')}</div>
+<p class="nt">${T3.nt}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${T3.wm}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${T3.path}essays/germany-merz-basic-income-cost/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb{font-size:19px;color:#6CF0B0;font-weight:700}
+.hl{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 44 : 40}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:20px;line-height:1.35;color:#C9D0F0}
+.cards{margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) minmax(0,1fr);gap:16px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:16px 20px;display:flex;flex-direction:column}
+.c.big{border-color:rgba(255,214,107,.7);background:rgba(255,214,107,.08)}
+.k{font-size:21px;color:#A9B2D8;font-weight:700;line-height:1.3}
+.v{margin-top:8px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:44px;line-height:1.1;color:#FFFFFF;white-space:nowrap}
+.big .v{font-size:66px;color:#FFD66B}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.42em;margin-left:4px}
+.y{font-size:18px;color:#A9B2D8}
+.cmp{margin-top:12px;font-size:24px;line-height:1.35;color:#C9D0F0;word-break:auto-phrase}
+.cmp b{color:#6CF0B0;font-weight:900;font-size:1.25em}
+.d{margin-top:auto;font-size:17px;line-height:1.35;color:#E3E8FF}
+.nt{margin:14px 0 12px;font-size:17px;line-height:1.35;color:#A9B2D8}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:16px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
   // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
   'billionaire': {

@@ -2937,6 +2937,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-16",
+      "en": "Published the essay “Merz was asked about basic income. What would it cost Germany?”",
+      "ja": "エッセイ『ドイツのメルツ首相がベーシックインカムに言及。ドイツで全員に配るといくら？』を公開",
+      "zh": "发布随笔《德国总理默茨被问到基本收入。在德国给每个人发钱要花多少？》",
+      "hi": "निबंध “जर्मन चांसलर से बेसिक इनकम पर सवाल हुआ। जर्मनी में सबको देने का ख़र्च कितना?” प्रकाशित",
+      "es": "Publicado el ensayo «Preguntan al canciller alemán por la renta básica. ¿Cuánto le costaría a Alemania?»",
+      "de": "Essay „Merz wurde nach dem Grundeinkommen gefragt. Was würde es Deutschland kosten?“ veröffentlicht",
+      "ar": "نشرنا مقال «ميرتس والدخل الأساسي: كم سيكلّف ألمانيا؟»"
+    },
+    {
       "date": "2026-11-14",
       "en": "Published the essay “Share out the billionaires’ wealth: how much would each person get, once or every year?”",
       "ja": "エッセイ『世界の億万長者の資産を全員に配ったら、1人いくら？ 1回きりなら、毎年なら』を公開",
@@ -12161,7 +12171,8 @@ module.exports = {
     },
     {
       "id": "pilotprojekt",
-      "essays": ["moltbook-basic-income"],
+      "essays": [
+        "germany-merz-basic-income-cost","moltbook-basic-income"],
       "years": "2021–2024",
       "type": "ngo",
       "name": "Pilotprojekt Grundeinkommen",
@@ -18046,6 +18057,1214 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "germany-merz-basic-income-cost",
+      "date": "2026-11-16",
+      "related": [
+        "does-cash-make-people-stop-working",
+        "generative-ai-jobs-basic-income",
+        "basic-income-world-map",
+        "universal-high-income",
+        "billionaire-wealth-per-person"
+      ],
+      "title": {
+        "en": "Merz was asked about basic income. What would it cost Germany?",
+        "ja": "ドイツのメルツ首相がベーシックインカムに言及。ドイツで全員に配るといくら？",
+        "zh": "德国总理默茨被问到基本收入。在德国给每个人发钱要花多少？",
+        "hi": "जर्मन चांसलर से बेसिक इनकम पर सवाल हुआ। जर्मनी में सबको देने का ख़र्च कितना?",
+        "es": "Preguntan al canciller alemán por la renta básica. ¿Cuánto le costaría a Alemania?",
+        "de": "Merz wurde nach dem Grundeinkommen gefragt. Was würde es Deutschland kosten?",
+        "ar": "ميرتس والدخل الأساسي: كم سيكلّف ألمانيا؟"
+      },
+      "desc": {
+        "en": "€1,000 a month for everyone in Germany would cost about €1 trillion a year: as much as all the taxes collected.",
+        "ja": "全員に月1,000ユーロなら年約1兆ユーロ。ドイツの税収全体とほぼ同じ。",
+        "zh": "默茨说自己一向持保留态度。给德国每人每月1000欧元，一年约1万亿欧元，相当于全部税收。",
+        "hi": "मैर्त्स ने कहा कि वे हमेशा संकोच में रहे। जर्मनी में सबको हर महीने 1,000 यूरो देने का ख़र्च साल में करीब 1 ट्रिलियन यूरो, लगभग पूरे कर राजस्व जितना।",
+        "es": "1.000 € al mes para todos en Alemania costarían cerca de un billón de euros al año: tanto como todos los impuestos.",
+        "de": "Merz war nach eigenen Worten immer zurückhaltend. 1.000 € im Monat für alle in Deutschland kosteten rund 1 Billion € im Jahr, so viel wie alle Steuern.",
+        "ar": "1,000 يورو شهريًا للجميع: نحو تريليون يورو سنويًا."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "On 2 November 2026, at the federal government’s Digital Summit in Berlin, a journalist asked Chancellor Friedrich Merz whether he agreed that AI would cost jobs and that some kind of basic income might be needed. He said he had “always been somewhat reserved” on the subject, because he also saw “the many disadvantages” of such a basic income, but that AI would change the world of work so fundamentally that “we will have to think about many of these aspects in the coming years”.[1] He did not come out in favour of a basic income."
+          ],
+          [
+            "p",
+            "So what would one cost in Germany? Paying €1,000 a month to everyone who lives there, children included, would cost about €1,000 billion a year: slightly more than all the taxes collected in Germany in 2025 (€990 billion) and almost twice the federal budget. Below: what was said, the cost at four amounts, what Germany’s own experiment found, and what the estimates say about AI and jobs."
+          ],
+          [
+            "h",
+            "What was said, and what was not"
+          ],
+          [
+            "p",
+            "The question came at the joint press conference of Merz and Karsten Wildberger, the minister for digital affairs and state modernisation. The journalist noted that the minister had said several times that AI would also cost jobs, especially entry-level jobs, and that some kind of basic income would be needed, and asked Merz whether he shared that view.[1]"
+          ],
+          [
+            "p",
+            "In the official transcript Merz begins: “I have always been somewhat reserved on this subject in recent years, because I also see the many disadvantages that come with such a basic income.” He goes on to say that AI “will change our world of work so fundamentally” that these questions will have to be thought through, that the greatest danger today would be “to do nothing in this area”, that the government is looking across ministries at what AI means for the labour market, and that he is convinced the opportunities outweigh the risks.[1] (Our translation of the German transcript.)"
+          ],
+          [
+            "p",
+            "Some reports circulating online say Merz also called for changing the social security system, for taxing the value AI creates and for a conditional basic income that keeps the incentive to work. None of this is in the official transcript of the press conference or in his speech at the summit,[1][2] and we found no credible source for it, so we leave it out. Taxing the revenue from AI is something Wildberger has said (see below)."
+          ],
+          [
+            "p",
+            "Wildberger has been more open. In March 2026 he told the Neue Osnabrücker Zeitung he was convinced that an unconditional basic income “can become part of the solution” to cushion the upheaval in the labour market, though it would not be enough on its own, and that Germany needed “significantly higher tax revenue” to rebuild the job market.[3] In a Tagesspiegel interview in October 2026, as reported by the dts news agency, he said he would no longer use the term but would “still take a close look at the concept behind it”, and that “the extremely high turnover from this technology” would have to be taxed to pay for the transition.[4]"
+          ],
+          [
+            "h",
+            "Conditional or unconditional?"
+          ],
+          [
+            "p",
+            "Germany already has a conditional minimum income. Since 1 July 2026 it has been called Grundsicherungsgeld; until then it was Bürgergeld.[5] It is paid only to people whose own income and assets are not enough, and those who are able to work are expected to look for and take a reasonable job. The standard rate for a single adult in 2026 is €563 a month, unchanged since 2024; rent and heating are paid on top.[6]"
+          ],
+          [
+            "p",
+            "An unconditional basic income, as the Basic Income Earth Network (BIEN) defines it, is paid to everyone, individually, regularly and in cash, with no means test and no requirement to work.[7] Between the two lie many designs, such as a payment that shrinks as income rises, or one tied to training or community work. Merz did not say which, if any, he had in mind. The figures below are for the unconditional version, the upper end of the range."
+          ],
+          [
+            "h",
+            "What it would cost: four amounts"
+          ],
+          [
+            "p",
+            "Germany had 83.3 million inhabitants on 30 June 2026, according to the Federal Statistical Office (Destatis).[8] If everyone, children included, gets the same amount, the cost is simply the monthly amount × 12 × 83.3 million. We use four amounts."
+          ],
+          [
+            "p",
+            "€66 a month is the standard amount in this site’s {211-country comparison|/calc/countries/}: the World Bank’s poverty line of $3.00 a day, converted into German prices.[9][10] €563 is the 2026 standard rate for a single adult.[6] €1,000 is the default on this site’s {Germany calculator page|/calc/de/}. €1,200 is what each participant received in the German pilot described below."
+          ],
+          [
+            "t",
+            "Per person per month | Cost per year | Share of all tax revenue (2025) | Share of the federal budget (2026) | Share of GDP (2025)\n€66 (poverty line) | €66 billion | 7% | 13% | 1.5%\n€563 (standard rate) | €563 billion | 57% | 107% | 12.4%\n€1,000 | €1,000 billion | 101% | 191% | 22.1%\n€1,200 (pilot) | €1,200 billion | 121% | 229% | 26.5%"
+          ],
+          [
+            "p",
+            "The yardsticks: all taxes collected in Germany in 2025 came to €989.8 billion (federal, state and local taxes, including the share passed on to the EU).[11] The Bundestag passed a federal budget of €524.54 billion for 2026.[12] Nominal GDP was €4,529.7 billion in 2025.[13] Total government revenue, including social security contributions, was €2,137.9 billion; €1,000 a month for everyone would take 47% of it, €1,200 would take 56%.[13]"
+          ],
+          [
+            "p",
+            "Even the €563 version would cost more than the whole federal budget. Only the €66 floor fits easily, at 7% of tax revenue and 1.5% of GDP."
+          ],
+          [
+            "h",
+            "Not the net cost"
+          ],
+          [
+            "p",
+            "A basic income could replace some existing payments. In 2025 job centres paid benefits of about €46.7 billion to 5.3 million people under the basic income support for jobseekers (then Bürgergeld), not counting administration.[14] The family benefit offices paid €55.3 billion in Kindergeld (child benefit) for 17.6 million children.[15] Together that is about €102 billion."
+          ],
+          [
+            "p",
+            "If a basic income replaced both completely, the €563 version would still cost about €461 billion a year (47% of tax revenue), €1,000 about €898 billion (91%) and €1,200 about €1.1 trillion (111%). Pensions and unemployment benefit are mostly paid from contributions and are not counted here; whether a basic income would replace part of them is a design choice. Taxes that claw part of the payment back are not modelled either."
+          ],
+          [
+            "p",
+            "€563 is also not what people on the benefit actually receive. In 2025 the average entitlement was €731 a month per person, including housing costs and social insurance.[14] A basic income at the standard rate with nothing for rent would leave many of today’s recipients with less."
+          ],
+          [
+            "h",
+            "What Germany’s own experiment found"
+          ],
+          [
+            "p",
+            "From June 2021 to May 2024, 122 people in Germany received €1,200 a month with no conditions, paid from donations collected by the association Mein Grundeinkommen. The German Institute for Economic Research (DIW Berlin) compared 107 of them with 1,580 similar people who received nothing (see {our timeline|/timeline/#tl-pilotprojekt}).[16]"
+          ],
+          [
+            "p",
+            "Work: in every survey round about 90% of both groups were in work, at about 40 hours a week. Recipients did not cut their hours significantly or leave the labour market. Slightly more of them were in education or training (14% against 10%), a difference that was not statistically significant.[16]"
+          ],
+          [
+            "p",
+            "Wellbeing and money: recipients’ mental health was about 0.3 standard deviations better than the comparison group’s, and their life satisfaction 7.6 against 7.1 on a scale of 0 to 10. They saved €779 a month against €332, and gave about 8% of the payment to charity or to family and friends.[16]"
+          ],
+          [
+            "p",
+            "The limits are the ones that matter for the cost question: 122 people, three years, and the people around them did not get the money. A trial like this cannot show what would happen to prices, wages or taxes if all 83 million did. For other trials, see {Does giving people money make them stop working?|/essays/does-cash-make-people-stop-working/}"
+          ],
+          [
+            "h",
+            "AI and jobs in Germany: where the 800,000 comes from"
+          ],
+          [
+            "p",
+            "The figure of 800,000 jobs comes from Andrea Nahles, head of the Federal Employment Agency. She told Handelsblatt, as reported on 10 November 2026: “We forecast that over the next 15 years about 800,000 jobs in Germany will disappear because of AI”, but “a similar number will also be newly created”.[17] It matches a scenario by the agency’s research institute IAB with BIBB and GWS, published in November 2025: about 1.6 million jobs either lost or newly created over 15 years, total employment largely stable, and GDP growing 0.8 percentage points a year faster.[18] So 800,000 is a gross figure, not a net loss."
+          ],
+          [
+            "p",
+            "Where change already shows is at the entry level. The ifo Institute reported on 9 November 2026 that full-time employment of 20- to 24-year-olds in the most AI-exposed occupations has fallen 14% since 2022, from about 279,000 to 239,000, while employment in AI-exposed occupations as a whole grew 1.8%. Its president, Clemens Fuest, said: “So far we see no broad job losses from AI. But those starting their working lives feel the change first.” The researchers add that AI is not the only cause.[19] US data show a similar pattern; see {Has generative AI taken our jobs?|/essays/generative-ai-jobs-basic-income/}"
+          ],
+          [
+            "h",
+            "What the numbers show"
+          ],
+          [
+            "p",
+            "Merz was asked about basic income and said he remained reserved, while expecting AI to force the question. In numbers, an unconditional basic income in Germany would cost from €66 billion a year at a poverty-line floor to €1.2 trillion at the €1,200 of the German pilot. At €1,000 a month it would cost about as much as all the taxes collected today, and replacing the basic income support and child benefit would cover only about a tenth of that. The German pilot found no drop in work among its recipients, but it cannot tell us what paying everyone would do."
+          ],
+          [
+            "p",
+            "To try other amounts, or adults only, use {the Germany calculator page|/calc/de/}; for every country, see {the 211-country comparison|/calc/countries/}. On who might pay for a basic income funded by AI, see {Universal high income: who pays?|/essays/universal-high-income/}"
+          ],
+          [
+            "h",
+            "Assumptions and limits"
+          ],
+          [
+            "p",
+            "Everyone, the same amount. Children get the full amount. The population is Destatis’s 83.3 million on 30 June 2026,[8] held constant. The calculator page uses the UN’s 2025 estimate (84.1 million) and World Bank GDP, so its results are about 1% higher.[9]"
+          ],
+          [
+            "p",
+            "Gross cost. Taxes on the payment, changes in work or prices, and the cost of running it are left out. The yardsticks are from different years: tax revenue and GDP for 2025, the federal budget for 2026."
+          ],
+          [
+            "p",
+            "A federal country. Germany’s taxes are shared between the federal government, the states and the municipalities, so we compare with all of them. The {world map|/essays/basic-income-world-map/} uses the World Bank’s central-government tax figure for every country, which for Germany leaves out the states and municipalities; there the €66 floor shows as 14% of tax revenue instead of 7%.[9]"
+          ],
+          [
+            "p",
+            "Offsets. Only the basic income support (benefit payments, without about €6.8 billion of administration costs) and Kindergeld are counted.[14][15] Tax allowances for children and other benefits are not."
+          ],
+          [
+            "p",
+            "Quotes. Merz’s words are from the official German transcript; the translations are ours. Wildberger’s October remarks come from a news agency report on a Tagesspiegel interview. Claims we could not find in a credible source are left out."
+          ],
+          [
+            "p",
+            "Not a proposal. The amounts are yardsticks. Nothing here says whether Germany should introduce a basic income; the numbers only show the size of the sums."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "2026年11月2日、ベルリンで開かれたドイツ政府の「デジタル・サミット」で、記者がフリードリヒ・メルツ首相に質問しました。AIで仕事が失われ、ある種のベーシックインカムが必要になるという見方に同意するか、というものです。首相は「この問題には、ここ数年ずっとやや慎重だった。そうしたベーシックインカムには多くの欠点があるとも思うからだ」と答えました。そのうえで、AIは働き方を根本から変えるので「今後数年のうちに、こうした点の多くを考えなければならない」とも述べています。[1] ベーシックインカムに賛成したわけではありません。"
+          ],
+          [
+            "p",
+            "では、ドイツで実際にやるといくらかかるのでしょうか。子どもも含めて住んでいる全員に月1,000ユーロ（約16万円）配ると、年に約1兆ユーロ。2025年にドイツで集めた税金の合計（9,900億ユーロ）を少し上回り、連邦予算のほぼ2倍です。以下、発言の中身、4つの金額での費用、ドイツの実験でわかったこと、AIと仕事の見通しを順に見ます。"
+          ],
+          [
+            "h",
+            "何が言われ、何が言われていないか"
+          ],
+          [
+            "p",
+            "質問が出たのは、メルツ首相とカールステン・ヴィルトベルガー・デジタル・国家近代化相の共同記者会見です。記者は、大臣がこれまでに何度か「AIは仕事、とくに新人向けの仕事を奪うので、ある種のベーシックインカムが必要になる」と述べてきたことに触れ、首相もそう考えるかと尋ねました。[1]"
+          ],
+          [
+            "p",
+            "政府が公開した会見録によると、首相はさらに、今いちばん危ないのは「この分野で何もしないこと」だ、政府は省庁をまたいでAIが労働市場に与える影響を調べている、チャンスのほうがリスクより大きいと確信しているが、リスクについても話さなければならない、と述べています。[1]（訳は当サイト）"
+          ],
+          [
+            "p",
+            "ネット上には、首相が「社会保障制度の見直し」「AIが生む価値への課税」「働く意欲を保つ条件付きのベーシックインカム」を求めた、という記事も出回っています。しかし会見録にも、サミットでの首相の演説にも、そうした発言はありません。[1][2] 信頼できる情報源も見つからなかったので、ここでは取り上げません。AIの売上への課税は、ヴィルトベルガー大臣が口にしたものです（後述）。"
+          ],
+          [
+            "p",
+            "ヴィルトベルガー大臣はもっと前向きです。2026年3月には地方紙ノイエ・オスナブリュッカー・ツァイトゥングに、無条件のベーシックインカムは労働市場の激変を受け止める「解決策の一部になりうる」と確信していると語りました。ただし、それだけでは足りないとも述べ、仕事の市場をつくり直すために「税収を大きく増やす必要がある」と話しています。[3] 2026年10月のターゲスシュピーゲル紙のインタビューでは、通信社dtsによると、「この言葉はもう使わないが、その背後にある考え方はあらためてよく検討したい」と述べ、「この技術による非常に大きな売上には課税しなければならない」とも語りました。[4]"
+          ],
+          [
+            "h",
+            "条件付きか、無条件か"
+          ],
+          [
+            "p",
+            "ドイツにはすでに、条件付きの最低所得保障があります。2026年7月1日から「基礎保障手当（Grundsicherungsgeld）」と呼ばれ、それまでは「市民手当（Bürgergeld）」でした。[5] 自分の収入や資産で暮らせない人だけが受け取れ、働ける人は適当な仕事を探し、引き受けることが求められます。単身の大人の基準額は2026年で月563ユーロ（約9万円）で、2024年から据え置き。家賃と暖房費は別に出ます。[6]"
+          ],
+          [
+            "p",
+            "無条件のベーシックインカムは、ベーシックインカム地球ネットワーク（BIEN）の定義では、全員に、1人ずつ、定期的に、現金で、所得の審査も働く義務もなしに配られるものです。[7] その間には、収入が増えると減っていく給付や、職業訓練や地域活動を条件にする給付など、さまざまな形があります。メルツ首相がどれを考えていたのか、そもそも何かを考えていたのかは語られていません。以下の数字は、いちばん費用が大きくなる無条件の場合です。"
+          ],
+          [
+            "h",
+            "いくらかかるか：4つの金額で"
+          ],
+          [
+            "p",
+            "連邦統計庁（Destatis）によると、2026年6月30日のドイツの人口は8,330万人です。[8] 子どもも含めて全員に同じ額を配るなら、費用は「月額×12か月×8,330万人」です。金額は4つで計算します。"
+          ],
+          [
+            "p",
+            "月66ユーロは、当サイトの{211か国比較|/calc/countries/}の標準額です。世界銀行の貧困線「1日3.00ドル」をドイツの物価に直したものです。[9][10] 563ユーロは2026年の単身の大人の基準額。[6] 1,000ユーロは当サイトの{ドイツの計算ページ|/calc/de/}の初期値。1,200ユーロは、後で紹介するドイツの実験で1人が受け取った額です。"
+          ],
+          [
+            "t",
+            "1人あたり月額 | 年間の費用 | 税収全体に対する割合（2025年） | 連邦予算に対する割合（2026年） | GDPに対する割合（2025年）\n66ユーロ（貧困線） | 660億ユーロ | 7% | 13% | 1.5%\n563ユーロ（基準額） | 5,630億ユーロ | 57% | 107% | 12.4%\n1,000ユーロ | 1兆ユーロ | 101% | 191% | 22.1%\n1,200ユーロ（実験） | 1兆2,000億ユーロ | 121% | 229% | 26.5%"
+          ],
+          [
+            "p",
+            "比べた数字は次のとおりです。2025年にドイツで集めた税金は合計9,898億ユーロ（連邦・州・市町村の税金。EUに渡す分を含む）。[11] 連邦議会が可決した2026年の連邦予算は5,245億4,000万ユーロ。[12] 2025年の名目GDPは4兆5,297億ユーロです。[13] 社会保険料も含めた政府の収入全体は2兆1,379億ユーロで、全員に月1,000ユーロならその47％、1,200ユーロなら56％にあたります。[13]"
+          ],
+          [
+            "p",
+            "563ユーロでも、連邦予算をまるごと上回ります。無理なく収まるのは66ユーロの最低ラインだけで、税収の7％、GDPの1.5％です。"
+          ],
+          [
+            "h",
+            "差し引きの費用ではない"
+          ],
+          [
+            "p",
+            "ベーシックインカムを入れれば、今ある給付の一部はいらなくなるかもしれません。2025年に職業センター（ジョブセンター）が求職者向けの基礎保障（当時は市民手当）として530万人に払った給付は、事務費を除いて約467億ユーロ。[14] 家族手当金庫が払った児童手当（Kindergeld）は1,760万人の子どもに553億ユーロでした。[15] 合わせて約1,020億ユーロです。"
+          ],
+          [
+            "p",
+            "この2つを完全に置き換えたとしても、563ユーロなら年約4,610億ユーロ（税収の47％）、1,000ユーロなら約8,980億ユーロ（91％）、1,200ユーロなら約1.1兆ユーロ（111％）かかります。年金や失業手当はおもに保険料でまかなわれていて、ここでは数えていません。その一部を置き換えるかどうかは制度の設計しだいです。給付の一部を税で回収する仕組みも計算に入れていません。"
+          ],
+          [
+            "p",
+            "また、563ユーロは受給者が実際にもらっている額ではありません。2025年の平均の受給額は、住居費や社会保険を含めて1人月731ユーロでした。[14] 基準額だけのベーシックインカムで家賃分が出なければ、今の受給者の多くは受け取りが減ります。"
+          ],
+          [
+            "h",
+            "ドイツの実験でわかったこと"
+          ],
+          [
+            "p",
+            "2021年6月から2024年5月まで、ドイツの122人が無条件で月1,200ユーロを受け取りました。お金は団体「マイン・グルントアインコメン（Mein Grundeinkommen）」が集めた寄付です。ドイツ経済研究所（DIW）は、そのうち107人を、何も受け取らなかった似た条件の1,580人と比べました（{当サイトの年表|/timeline/#tl-pilotprojekt}）。[16]"
+          ],
+          [
+            "p",
+            "仕事：どの調査回でも、両グループとも約90％が働いていて、労働時間は週約40時間でした。受給者は労働時間をはっきり減らしてはおらず、仕事をやめた人が増えてもいません。学校や職業訓練に通う人は少し多かったものの（14％対10％）、統計的に意味のある差ではありませんでした。[16]"
+          ],
+          [
+            "p",
+            "心とお金：受給者の心の健康は比較グループより約0.3標準偏差よく、生活満足度は10点満点で7.6対7.1。貯金は月779ユーロ対332ユーロで、受け取った額の約8％を寄付や家族・友人の支援に回していました。[16]"
+          ],
+          [
+            "p",
+            "限界は、まさに費用の問題にかかわる点です。対象は122人、期間は3年で、まわりの人はお金を受け取っていません。8,300万人全員が受け取ったら物価や賃金、税金がどうなるかは、この種の実験ではわかりません。ほかの実験は{お金を配ると人は働かなくなるのか|/essays/does-cash-make-people-stop-working/}にまとめています。"
+          ],
+          [
+            "h",
+            "AIと仕事：「80万人」の出どころ"
+          ],
+          [
+            "p",
+            "「80万人分の仕事」という数字は、連邦雇用庁のアンドレア・ナーレス長官の発言です。2026年11月10日の報道によると、長官は経済紙ハンデルスブラットに「今後15年で、ドイツではAIのために約80万の仕事がなくなると予測している」と語り、同時に「ほぼ同じ数の仕事が新しく生まれる」とも述べました。[17] これは、雇用庁の研究所IABが職業教育研究所（BIBB）・経済構造研究所（GWS）と2025年11月に出したシナリオと合います。15年で約160万の仕事がなくなるか新しく生まれ、就業者の総数はほぼ変わらず、GDPの伸びは毎年0.8ポイント高くなる、というものです。[18] つまり80万は「なくなる側」だけの数字で、差し引きの減少ではありません。"
+          ],
+          [
+            "p",
+            "変化がすでに見えているのは、働き始める若い人のところです。ifo経済研究所は2026年11月9日、AIの影響を最も受けやすい職業で、20〜24歳のフルタイムの就業者が2022年から14％減り、約27万9,000人から23万9,000人になったと発表しました。一方、AIの影響を受けやすい職業全体の就業者は1.8％増えています。クレメンス・フュースト所長は「AIによる幅広い雇用削減は、今のところ見られない。ただ、社会に出たばかりの人が最初に変化を感じている」と述べ、研究者はAIだけが原因ではないとしています。[19] アメリカのデータも似た形です。{生成AIは仕事を奪ったか|/essays/generative-ai-jobs-basic-income/}もどうぞ。"
+          ],
+          [
+            "h",
+            "数字からわかること"
+          ],
+          [
+            "p",
+            "メルツ首相はベーシックインカムについて聞かれ、慎重な姿勢を保ちつつ、AIがこの問いを突きつけるだろうと述べました。数字で見ると、ドイツの無条件のベーシックインカムは、貧困線の最低ラインなら年660億ユーロ、ドイツの実験と同じ1,200ユーロなら年1.2兆ユーロです。月1,000ユーロなら今の税収全体とほぼ同じで、基礎保障と児童手当をなくしても、まかなえるのはその1割ほどです。ドイツの実験では受給者の仕事は減りませんでしたが、全員に配ったらどうなるかまではわかりません。"
+          ],
+          [
+            "p",
+            "ほかの金額や大人だけの場合は{ドイツの計算ページ|/calc/de/}で、すべての国は{211か国比較|/calc/countries/}で試せます。AIの利益でベーシックインカムを払うなら誰が払うのか、については{ユニバーサル・ハイ・インカム：誰が払うのか|/essays/universal-high-income/}をどうぞ。"
+          ],
+          [
+            "h",
+            "前提と限界"
+          ],
+          [
+            "p",
+            "全員に同じ額。子どもにも満額を配ります。人口は連邦統計庁の2026年6月30日の8,330万人で、[8] 変わらないものとしました。計算ページは国連の2025年の推計（8,410万人）と世界銀行のGDPを使うので、結果は1％ほど大きくなります。[9]"
+          ],
+          [
+            "p",
+            "総額の費用。給付にかかる税金、働き方や物価の変化、運営費は入れていません。比べた数字は年がそろっていません（税収とGDPは2025年、連邦予算は2026年）。"
+          ],
+          [
+            "p",
+            "連邦制の国。ドイツの税金は連邦・州・市町村で分け合っているので、ここでは税金全体と比べました。{世界地図|/essays/basic-income-world-map/}はどの国でも世界銀行の中央政府の税収を使うため、ドイツでは州と市町村の分が入りません。そこでは66ユーロの最低ラインが税収の7％ではなく14％と出ます。[9]"
+          ],
+          [
+            "p",
+            "差し引く給付。数えたのは求職者向けの基礎保障（給付のみ。事務費約68億ユーロは除く）と児童手当だけです。[14][15] 子どもの税控除やほかの給付は入れていません。"
+          ],
+          [
+            "p",
+            "発言の引用。メルツ首相の言葉は政府の公式会見録（ドイツ語）から当サイトが訳しました。ヴィルトベルガー大臣の10月の発言は、ターゲスシュピーゲル紙のインタビューを伝えた通信社の記事によります。信頼できる情報源で確かめられなかった話は載せていません。"
+          ],
+          [
+            "p",
+            "提案ではありません。金額はものさしです。ドイツがベーシックインカムを入れるべきかどうかは述べていません。数字は金額の大きさを示すだけです。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026年11月2日，在柏林举行的德国政府“数字峰会”上，一名记者问总理弗里德里希·默茨：人工智能会让人失去工作、因此需要某种基本收入，他是否同意这种看法。默茨回答说，这些年来他在这个问题上“一向有些保留”，因为他也看到这种基本收入“有许多缺点”；但人工智能将从根本上改变工作世界，“未来几年我们必须思考其中的许多方面”。[1] 他并没有表态支持基本收入。"
+          ],
+          [
+            "p",
+            "那么在德国实行基本收入要花多少钱？给住在德国的每个人（包括儿童）每月1000欧元，一年约需1万亿欧元，略多于德国2025年的全部税收（9900亿欧元），几乎是联邦预算的两倍。下文依次介绍：说了什么、四种金额下的费用、德国自己的实验发现了什么，以及关于人工智能与就业的估计。"
+          ],
+          [
+            "h",
+            "说了什么，没说什么"
+          ],
+          [
+            "p",
+            "这个问题出现在默茨与数字化和国家现代化部长卡斯滕·维尔德贝格尔的联合记者会上。记者提到，部长多次说过人工智能也会让人失去工作，尤其是入门级岗位，因此需要某种基本收入，并问默茨是否同意。[1]"
+          ],
+          [
+            "p",
+            "根据政府公布的记者会文字记录，默茨接着说，如今最大的危险是“在这个领域什么都不做”；政府正在跨部门研究人工智能对劳动力市场意味着什么；他确信机遇大于风险，但风险也必须讨论。[1]（译文为本站所译）"
+          ],
+          [
+            "p",
+            "网上流传一些报道，称默茨还呼吁改革社会保障制度、对人工智能创造的价值征税，以及推行附带条件、保留工作激励的基本收入。但记者会文字记录和他在峰会上的演讲中都没有这些内容，[1][2] 我们也没有找到可信的来源，因此不予采用。对人工智能营收征税是维尔德贝格尔提出的（见下文）。"
+          ],
+          [
+            "p",
+            "维尔德贝格尔的态度更开放。2026年3月，他对《新奥斯纳布吕克报》表示，他确信无条件基本收入“可以成为解决方案的一部分”，用来缓冲劳动力市场的剧变，但单靠它还不够；德国需要“大幅提高税收”，用这笔钱改造就业市场。[3] 据德国dts通讯社报道，他在2026年10月接受《每日镜报》采访时说，他不会再用这个词，但“仍会再仔细研究这个词背后的理念”，并说“必须对这项技术带来的极高营收征税”，用来为转型买单。[4]"
+          ],
+          [
+            "h",
+            "有条件还是无条件？"
+          ],
+          [
+            "p",
+            "德国已经有一种有条件的最低收入保障。自2026年7月1日起称为“基本保障金”（Grundsicherungsgeld），此前叫“公民收入”（Bürgergeld）。[5] 只有自身收入和资产不足以生活的人才能领取，有工作能力的人必须寻找并接受合理的工作。2026年单身成年人的标准额为每月563欧元，自2024年起未变；房租和取暖费另付。[6]"
+          ],
+          [
+            "p",
+            "按照基本收入地球网络（BIEN）的定义，无条件基本收入是定期、以现金、发给每个人个人的钱，不做经济状况审查，也不要求工作。[7] 两者之间还有许多设计，比如随收入增加而递减的补贴，或以参加培训、社区服务为条件的补贴。默茨没有说他想的是哪一种，或者是否有所设想。下面的数字针对无条件的版本，也就是费用的上限。"
+          ],
+          [
+            "h",
+            "要花多少钱：四种金额"
+          ],
+          [
+            "p",
+            "据德国联邦统计局（Destatis），2026年6月30日德国人口为8330万。[8] 如果每个人（包括儿童）都领同样的金额，费用就是“月额×12×8330万”。我们用四种金额计算。"
+          ],
+          [
+            "p",
+            "每月66欧元是本站{211国比较|/calc/countries/}的标准金额：世界银行每天3.00美元的贫困线，换算成德国物价。[9][10] 563欧元是2026年单身成年人的标准额。[6] 1000欧元是本站{德国计算页|/calc/de/}的默认值。1200欧元是下文德国实验中每位参与者领到的金额。"
+          ],
+          [
+            "t",
+            "每人每月 | 每年费用 | 占全部税收（2025年） | 占联邦预算（2026年） | 占GDP（2025年）\n66欧元（贫困线） | 660亿欧元 | 7% | 13% | 1.5%\n563欧元（标准额） | 5630亿欧元 | 57% | 107% | 12.4%\n1000欧元 | 1万亿欧元 | 101% | 191% | 22.1%\n1200欧元（实验） | 1.2万亿欧元 | 121% | 229% | 26.5%"
+          ],
+          [
+            "p",
+            "比较的基准：2025年德国征收的税款合计9898亿欧元（联邦、州和市镇的税收，包括上缴欧盟的部分）。[11] 联邦议院通过的2026年联邦预算为5245.4亿欧元。[12] 2025年名义GDP为45297亿欧元。[13] 包括社会保险缴费在内的政府总收入为21379亿欧元；每人每月1000欧元将占其中47%，1200欧元占56%。[13]"
+          ],
+          [
+            "p",
+            "即使是563欧元的版本，也超过整个联邦预算。只有66欧元的底线能轻松容纳，占税收的7%、GDP的1.5%。"
+          ],
+          [
+            "h",
+            "这不是净成本"
+          ],
+          [
+            "p",
+            "基本收入可以取代部分现有福利。2025年，就业中心按求职者基本保障（当时叫公民收入）向530万人支付了约467亿欧元的福利，不含行政费用。[14] 家庭福利署为1760万名儿童支付了553亿欧元的儿童金（Kindergeld）。[15] 两项合计约1020亿欧元。"
+          ],
+          [
+            "p",
+            "即使基本收入完全取代这两项，563欧元的版本每年仍需约4610亿欧元（税收的47%），1000欧元约8980亿欧元（91%），1200欧元约1.1万亿欧元（111%）。养老金和失业金主要来自社会保险缴费，这里没有计入；基本收入是否取代其中一部分，取决于制度设计。通过税收收回部分补贴的机制也没有计入。"
+          ],
+          [
+            "p",
+            "此外，563欧元也不是领取者实际拿到的钱。2025年平均每人每月的福利为731欧元，包括住房费用和社会保险。[14] 如果基本收入只按标准额发放、不包括房租，许多现在的领取者会拿得更少。"
+          ],
+          [
+            "h",
+            "德国自己的实验发现了什么"
+          ],
+          [
+            "p",
+            "2021年6月至2024年5月，德国有122人无条件地每月领取1200欧元，资金来自“我的基本收入”（Mein Grundeinkommen）协会募集的捐款。德国经济研究所（DIW）将其中107人与1580名条件相似但没有领钱的人进行比较（见{本站年表|/timeline/#tl-pilotprojekt}）。[16]"
+          ],
+          [
+            "p",
+            "工作：每一轮调查中，两组都约有90%的人在工作，每周约40小时。领取者没有明显减少工作时间，也没有退出劳动力市场。上学或接受培训的人略多（14%对10%），但差异在统计上不显著。[16]"
+          ],
+          [
+            "p",
+            "身心与钱：领取者的心理健康比对照组高约0.3个标准差，生活满意度（0至10分）为7.6对7.1。他们每月储蓄779欧元，对照组为332欧元；约8%的钱用于捐款或资助家人朋友。[16]"
+          ],
+          [
+            "p",
+            "局限恰恰与费用问题有关：122人、三年，而且周围的人没有领到钱。这类实验无法显示如果8300万人都领钱，物价、工资和税收会怎样。其他实验见{发钱会让人不再工作吗|/essays/does-cash-make-people-stop-working/}。"
+          ],
+          [
+            "h",
+            "人工智能与就业：“80万”从何而来"
+          ],
+          [
+            "p",
+            "“80万个工作岗位”这个数字出自德国联邦劳动局局长安德烈娅·纳勒斯。据2026年11月10日的报道，她对《商报》（Handelsblatt）说：“我们预测，未来15年德国约有80万个工作岗位会因人工智能而消失”，但“也会新出现数量相近的岗位”。[17] 这与劳动局下属研究所IAB联合联邦职业教育研究所（BIBB）和经济结构研究所（GWS）2025年11月发布的情景分析一致：15年内约160万个岗位或消失或新增，就业总数基本稳定，GDP年增速提高0.8个百分点。[18] 所以80万是毛数字，不是净减少。"
+          ],
+          [
+            "p",
+            "变化已经显现在刚入职的年轻人身上。ifo经济研究所2026年11月9日发布，在受人工智能影响最大的职业中，20至24岁的全职就业人数自2022年以来减少14%，从约27.9万降至23.9万；而受人工智能影响的职业总体就业增长了1.8%。所长克莱门斯·富斯特说：“到目前为止，我们没有看到人工智能造成大范围裁员。但刚踏入职场的人最先感受到变化。”研究人员也指出，人工智能并非唯一原因。[19] 美国的数据也呈现类似情况，见{生成式人工智能抢走了我们的工作吗|/essays/generative-ai-jobs-basic-income/}。"
+          ],
+          [
+            "h",
+            "数字说明了什么"
+          ],
+          [
+            "p",
+            "默茨被问到基本收入时保持了保留态度，同时认为人工智能会把这个问题摆上桌面。从数字看，德国的无条件基本收入，按贫困线的底线每年需660亿欧元，按德国实验的1200欧元则需1.2万亿欧元。每月1000欧元约等于目前的全部税收，取消基本保障和儿童金也只能覆盖其中约十分之一。德国实验中领取者的工作没有减少，但无法告诉我们给所有人发钱会怎样。"
+          ],
+          [
+            "p",
+            "想试其他金额或只发给成年人，请用{德国计算页|/calc/de/}；所有国家见{211国比较|/calc/countries/}。关于用人工智能的收益支付基本收入由谁买单，见{全民高收入：谁来买单？|/essays/universal-high-income/}"
+          ],
+          [
+            "h",
+            "前提与局限"
+          ],
+          [
+            "p",
+            "每人同样的金额。儿童领全额。人口采用联邦统计局2026年6月30日的8330万，[8] 并视为不变。计算页使用联合国2025年估计（8410万）和世界银行的GDP，因此结果高约1%。[9]"
+          ],
+          [
+            "p",
+            "总成本。没有计入对补贴征的税、工作或物价的变化以及运营费用。比较基准的年份不同：税收和GDP为2025年，联邦预算为2026年。"
+          ],
+          [
+            "p",
+            "联邦制国家。德国的税收由联邦、州和市镇分享，所以我们与全部税收比较。{世界地图|/essays/basic-income-world-map/}对每个国家都使用世界银行的中央政府税收数据，德国的数据不含州和市镇；在那里，66欧元的底线显示为税收的14%，而不是7%。[9]"
+          ],
+          [
+            "p",
+            "抵扣项。只计入求职者基本保障（福利部分，不含约68亿欧元行政费用）和儿童金。[14][15] 子女税收减免和其他福利未计入。"
+          ],
+          [
+            "p",
+            "引语。默茨的话出自官方德文文字记录，译文为本站所译。维尔德贝格尔10月的言论来自通讯社对《每日镜报》采访的报道。在可信来源中找不到的说法，我们不予采用。"
+          ],
+          [
+            "p",
+            "不是政策建议。这些金额只是参照。本文不讨论德国是否应该实行基本收入，数字只显示金额的规模。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "2 नवंबर 2026 को बर्लिन में जर्मन सरकार के डिजिटल सम्मेलन में एक पत्रकार ने चांसलर फ़्रीडरिख़ मैर्त्स से पूछा कि क्या वे इस राय से सहमत हैं कि AI से नौकरियाँ जाएँगी और इसलिए किसी तरह की बेसिक इनकम की ज़रूरत पड़ सकती है। उन्होंने कहा कि इस विषय पर वे “पिछले सालों में हमेशा कुछ संकोच में रहे”, क्योंकि उन्हें ऐसी बेसिक इनकम के “कई नुकसान” भी दिखते हैं; लेकिन AI काम की दुनिया को इतनी गहराई से बदलेगा कि “आने वाले सालों में हमें इनमें से कई पहलुओं पर सोचना होगा”।[1] उन्होंने बेसिक इनकम का समर्थन नहीं किया।"
+          ],
+          [
+            "p",
+            "तो जर्मनी में इसका ख़र्च कितना होगा? वहाँ रहने वाले हर व्यक्ति को, बच्चों समेत, हर महीने 1,000 यूरो देने पर साल में करीब 1,000 अरब यूरो लगेंगे: 2025 में जर्मनी में वसूले गए कुल कर (990 अरब यूरो) से थोड़ा ज़्यादा, और संघीय बजट का लगभग दोगुना। आगे: क्या कहा गया, चार रकमों पर ख़र्च, जर्मनी के अपने प्रयोग में क्या मिला, और AI और नौकरियों के अनुमान।"
+          ],
+          [
+            "h",
+            "क्या कहा गया, और क्या नहीं"
+          ],
+          [
+            "p",
+            "सवाल मैर्त्स और डिजिटल व राज्य आधुनिकीकरण मंत्री कार्स्टन विल्डबर्गर की साझा प्रेस कॉन्फ़्रेंस में पूछा गया। पत्रकार ने याद दिलाया कि मंत्री कई बार कह चुके हैं कि AI से नौकरियाँ भी जाएँगी, ख़ासकर शुरुआती नौकरियाँ, और किसी तरह की बेसिक इनकम चाहिए होगी; फिर पूछा कि क्या चांसलर भी ऐसा मानते हैं।[1]"
+          ],
+          [
+            "p",
+            "सरकार के आधिकारिक लिखित रिकॉर्ड के अनुसार मैर्त्स ने आगे कहा कि आज सबसे बड़ा ख़तरा “इस क्षेत्र में कुछ न करना” होगा; सरकार कई मंत्रालयों में मिलकर देख रही है कि AI का श्रम बाज़ार पर क्या असर होगा; और उन्हें यक़ीन है कि अवसर जोखिमों से बड़े हैं, पर जोखिमों पर भी बात करनी होगी।[1] (अनुवाद हमारा)"
+          ],
+          [
+            "p",
+            "इंटरनेट पर कुछ रिपोर्टें कहती हैं कि मैर्त्स ने सामाजिक सुरक्षा व्यवस्था बदलने, AI से बनी वैल्यू पर टैक्स लगाने और काम का प्रोत्साहन बनाए रखने वाली शर्तों वाली बेसिक इनकम की बात भी की। लेकिन प्रेस कॉन्फ़्रेंस के आधिकारिक रिकॉर्ड में या सम्मेलन में उनके भाषण में ऐसा कुछ नहीं है,[1][2] और हमें इसका कोई भरोसेमंद स्रोत नहीं मिला, इसलिए हम इसे शामिल नहीं करते। AI की कमाई पर टैक्स की बात विल्डबर्गर ने कही है (नीचे देखें)।"
+          ],
+          [
+            "p",
+            "विल्डबर्गर ज़्यादा खुले रहे हैं। मार्च 2026 में उन्होंने अख़बार नोए ओस्नाब्रुकर त्साइटुंग से कहा कि उन्हें यक़ीन है कि बिना शर्त बेसिक इनकम श्रम बाज़ार की उथल-पुथल को सँभालने के लिए “समाधान का हिस्सा बन सकती है”, हालाँकि अकेले वह काफ़ी नहीं होगी, और नौकरी के बाज़ार को नए सिरे से गढ़ने के लिए “कहीं ज़्यादा कर राजस्व” चाहिए।[3] समाचार एजेंसी dts के अनुसार अक्टूबर 2026 में अख़बार टागेसश्पीगल को दिए इंटरव्यू में उन्होंने कहा कि वे यह शब्द अब इस्तेमाल नहीं करेंगे, पर “इसके पीछे के विचार को फिर से ध्यान से देखेंगे”, और बदलाव का ख़र्च उठाने के लिए “इस तकनीक की बेहद ऊँची बिक्री” पर टैक्स लगाना होगा।[4]"
+          ],
+          [
+            "h",
+            "शर्तों वाली या बिना शर्त?"
+          ],
+          [
+            "p",
+            "जर्मनी में पहले से शर्तों वाली न्यूनतम आय सहायता है। 1 जुलाई 2026 से इसका नाम Grundsicherungsgeld (बुनियादी सुरक्षा भत्ता) है; उससे पहले यह Bürgergeld (नागरिक भत्ता) थी।[5] यह सिर्फ़ उन लोगों को मिलती है जिनकी अपनी आय और संपत्ति काफ़ी नहीं, और जो काम कर सकते हैं उन्हें उचित काम ढूँढना और लेना होता है। 2026 में अकेले वयस्क की मानक दर 563 यूरो महीना है, जो 2024 से नहीं बदली; किराया और हीटिंग अलग से मिलते हैं।[6]"
+          ],
+          [
+            "p",
+            "बेसिक इनकम अर्थ नेटवर्क (BIEN) की परिभाषा में बिना शर्त बेसिक इनकम हर व्यक्ति को, अलग-अलग, नियमित रूप से और नकद मिलती है, बिना आय-जाँच और बिना काम की शर्त के।[7] इन दोनों के बीच कई रूप हैं, जैसे आय बढ़ने पर घटने वाला भुगतान, या ट्रेनिंग या सामुदायिक काम से जुड़ा भुगतान। मैर्त्स ने नहीं बताया कि उनके मन में कौन-सा रूप था, या कोई था भी या नहीं। नीचे के आँकड़े बिना शर्त वाले रूप के हैं, यानी सबसे ऊपरी सीमा।"
+          ],
+          [
+            "h",
+            "ख़र्च कितना होगा: चार रकमें"
+          ],
+          [
+            "p",
+            "जर्मनी के संघीय सांख्यिकी कार्यालय (Destatis) के अनुसार 30 जून 2026 को जर्मनी की आबादी 8.33 करोड़ थी।[8] अगर बच्चों समेत सबको एक जैसी रकम मिले, तो ख़र्च बस मासिक रकम × 12 × 8.33 करोड़ है। हम चार रकमें लेते हैं।"
+          ],
+          [
+            "p",
+            "66 यूरो महीना इस साइट की {211 देशों की तुलना|/calc/countries/} की मानक रकम है: वर्ल्ड बैंक की 3.00 डॉलर रोज़ की गरीबी रेखा, जर्मनी की क़ीमतों में बदली हुई।[9][10] 563 यूरो 2026 में अकेले वयस्क की मानक दर है।[6] 1,000 यूरो इस साइट के {जर्मनी कैलकुलेटर पेज|/calc/de/} की शुरुआती रकम है। 1,200 यूरो नीचे बताए गए जर्मन प्रयोग में हर प्रतिभागी को मिले थे।"
+          ],
+          [
+            "t",
+            "हर व्यक्ति, हर महीने | सालाना ख़र्च | कुल कर राजस्व का हिस्सा (2025) | संघीय बजट का हिस्सा (2026) | GDP का हिस्सा (2025)\n66 यूरो (गरीबी रेखा) | 66 अरब यूरो | 7% | 13% | 1.5%\n563 यूरो (मानक दर) | 563 अरब यूरो | 57% | 107% | 12.4%\n1,000 यूरो | 1,000 अरब यूरो | 101% | 191% | 22.1%\n1,200 यूरो (प्रयोग) | 1,200 अरब यूरो | 121% | 229% | 26.5%"
+          ],
+          [
+            "p",
+            "तुलना के पैमाने: 2025 में जर्मनी में कुल 989.8 अरब यूरो कर वसूला गया (संघ, राज्यों और नगरपालिकाओं के कर, EU को जाने वाले हिस्से समेत)।[11] बुंडेसटाग ने 2026 के लिए 524.54 अरब यूरो का संघीय बजट पास किया।[12] 2025 में नाममात्र GDP 4,529.7 अरब यूरो था।[13] सामाजिक सुरक्षा अंशदान समेत सरकार की कुल आय 2,137.9 अरब यूरो थी; सबको 1,000 यूरो महीना देने में इसका 47% और 1,200 यूरो में 56% लगेगा।[13]"
+          ],
+          [
+            "p",
+            "563 यूरो वाला रूप भी पूरे संघीय बजट से महँगा है। आसानी से समाने वाली सिर्फ़ 66 यूरो की न्यूनतम रेखा है: कर राजस्व का 7% और GDP का 1.5%।"
+          ],
+          [
+            "h",
+            "यह शुद्ध ख़र्च नहीं है"
+          ],
+          [
+            "p",
+            "बेसिक इनकम कुछ मौजूदा भुगतानों की जगह ले सकती है। 2025 में जॉब सेंटरों ने नौकरी ढूँढने वालों की बुनियादी सहायता (तब Bürgergeld) के तहत 53 लाख लोगों को करीब 46.7 अरब यूरो दिए, प्रशासन के ख़र्च के बिना।[14] परिवार लाभ कार्यालयों ने 1.76 करोड़ बच्चों के लिए 55.3 अरब यूरो Kindergeld (बाल भत्ता) दिया।[15] दोनों मिलाकर करीब 102 अरब यूरो।"
+          ],
+          [
+            "p",
+            "अगर बेसिक इनकम इन दोनों की पूरी जगह ले ले, तब भी 563 यूरो वाला रूप साल में करीब 461 अरब यूरो (कर राजस्व का 47%), 1,000 यूरो वाला करीब 898 अरब यूरो (91%) और 1,200 यूरो वाला करीब 1.1 ट्रिलियन यूरो (111%) का होगा। पेंशन और बेरोज़गारी भत्ता ज़्यादातर अंशदान से चलते हैं और यहाँ नहीं गिने गए; बेसिक इनकम उनकी जगह लेगी या नहीं, यह योजना के डिज़ाइन पर निर्भर है। भुगतान का हिस्सा टैक्स से वापस लेने वाले नियम भी नहीं गिने गए।"
+          ],
+          [
+            "p",
+            "और 563 यूरो वह रकम नहीं है जो सहायता पाने वालों को असल में मिलती है। 2025 में औसत हक़ हर व्यक्ति के लिए 731 यूरो महीना था, आवास और सामाजिक बीमा समेत।[14] किराए के लिए कुछ न देने वाली मानक-दर जितनी बेसिक इनकम से आज के कई प्राप्तकर्ताओं को कम मिलेगा।"
+          ],
+          [
+            "h",
+            "जर्मनी के अपने प्रयोग में क्या मिला"
+          ],
+          [
+            "p",
+            "जून 2021 से मई 2024 तक जर्मनी में 122 लोगों को बिना शर्त हर महीने 1,200 यूरो मिले, जो संस्था Mein Grundeinkommen के जुटाए दान से दिए गए। जर्मन आर्थिक शोध संस्थान (DIW) ने इनमें से 107 की तुलना 1,580 ऐसे ही लोगों से की जिन्हें कुछ नहीं मिला (देखें {हमारी समयरेखा|/timeline/#tl-pilotprojekt})।[16]"
+          ],
+          [
+            "p",
+            "काम: हर सर्वे दौर में दोनों समूहों के करीब 90% लोग काम कर रहे थे, हफ़्ते में करीब 40 घंटे। पाने वालों ने काम के घंटे ख़ास कम नहीं किए और न श्रम बाज़ार छोड़ा। पढ़ाई या ट्रेनिंग में थोड़े ज़्यादा लोग थे (14% बनाम 10%), पर यह फ़र्क़ सांख्यिकीय रूप से अहम नहीं था।[16]"
+          ],
+          [
+            "p",
+            "मन और पैसा: पाने वालों का मानसिक स्वास्थ्य तुलना समूह से करीब 0.3 मानक विचलन बेहतर था, और 0 से 10 के पैमाने पर जीवन-संतोष 7.6 बनाम 7.1। उन्होंने महीने में 779 यूरो बचाए, तुलना समूह ने 332, और भुगतान का करीब 8% दान या परिवार-दोस्तों की मदद में दिया।[16]"
+          ],
+          [
+            "p",
+            "सीमाएँ ठीक वही हैं जो ख़र्च के सवाल के लिए मायने रखती हैं: 122 लोग, तीन साल, और आसपास के लोगों को पैसा नहीं मिला। ऐसा प्रयोग नहीं बता सकता कि सभी 8.3 करोड़ लोगों को मिलने पर क़ीमतों, मज़दूरी या करों का क्या होगा। दूसरे प्रयोगों के लिए देखें {क्या पैसे देने से लोग काम करना छोड़ देते हैं?|/essays/does-cash-make-people-stop-working/}"
+          ],
+          [
+            "h",
+            "AI और नौकरियाँ: 8 लाख का आँकड़ा कहाँ से आया"
+          ],
+          [
+            "p",
+            "8 लाख नौकरियों का आँकड़ा संघीय रोज़गार एजेंसी की प्रमुख आंद्रेया नालेस का है। 10 नवंबर 2026 की ख़बरों के मुताबिक़ उन्होंने अख़बार हांडेल्सब्लाट से कहा: “हमारा अनुमान है कि अगले 15 सालों में जर्मनी में AI की वजह से करीब 8 लाख नौकरियाँ ख़त्म होंगी”, पर “लगभग उतनी ही नई भी बनेंगी”।[17] यह एजेंसी के शोध संस्थान IAB के BIBB और GWS के साथ नवंबर 2025 में छपे परिदृश्य से मेल खाता है: 15 सालों में करीब 16 लाख नौकरियाँ या तो ख़त्म होंगी या नई बनेंगी, कुल रोज़गार लगभग स्थिर रहेगा, और GDP हर साल 0.8 प्रतिशत अंक तेज़ी से बढ़ेगा।[18] यानी 8 लाख सकल आँकड़ा है, शुद्ध नुक़सान नहीं।"
+          ],
+          [
+            "p",
+            "बदलाव अभी सबसे पहले शुरुआती नौकरियों में दिखता है। ifo संस्थान ने 9 नवंबर 2026 को बताया कि AI से सबसे ज़्यादा प्रभावित पेशों में 20 से 24 साल के लोगों का फ़ुल-टाइम रोज़गार 2022 से 14% घटा है, करीब 2,79,000 से 2,39,000, जबकि AI से प्रभावित पेशों में कुल रोज़गार 1.8% बढ़ा। संस्थान के अध्यक्ष क्लेमेंस फ़ुएस्ट ने कहा: “अब तक हमें AI से बड़े पैमाने पर नौकरियाँ जाती नहीं दिखीं। पर जो काम की दुनिया में क़दम रख रहे हैं, वे बदलाव सबसे पहले महसूस करते हैं।” शोधकर्ता कहते हैं कि AI अकेली वजह नहीं है।[19] अमेरिका के आँकड़े भी ऐसा ही दिखाते हैं; देखें {क्या जनरेटिव AI ने हमारी नौकरियाँ ले लीं?|/essays/generative-ai-jobs-basic-income/}"
+          ],
+          [
+            "h",
+            "आँकड़े क्या दिखाते हैं"
+          ],
+          [
+            "p",
+            "मैर्त्स से बेसिक इनकम पर पूछा गया तो वे संकोच में ही रहे, हालाँकि उन्हें लगता है कि AI यह सवाल सामने लाएगा। आँकड़ों में, जर्मनी में बिना शर्त बेसिक इनकम का ख़र्च गरीबी रेखा की न्यूनतम रकम पर साल में 66 अरब यूरो से लेकर जर्मन प्रयोग के 1,200 यूरो पर 1.2 ट्रिलियन यूरो तक है। 1,000 यूरो महीने पर यह आज के कुल कर राजस्व जितना होगा, और बुनियादी सहायता व बाल भत्ता हटाने से इसका सिर्फ़ करीब दसवाँ हिस्सा निकलेगा। जर्मन प्रयोग में पाने वालों का काम कम नहीं हुआ, पर वह यह नहीं बता सकता कि सबको देने पर क्या होगा।"
+          ],
+          [
+            "p",
+            "दूसरी रकमें या सिर्फ़ वयस्कों के लिए आज़माने को {जर्मनी कैलकुलेटर पेज|/calc/de/} देखें; हर देश के लिए {211 देशों की तुलना|/calc/countries/}। AI से बेसिक इनकम का पैसा कौन देगा, इस पर देखें {यूनिवर्सल हाई इनकम: पैसा कौन देगा?|/essays/universal-high-income/}"
+          ],
+          [
+            "h",
+            "मान्यताएँ और सीमाएँ"
+          ],
+          [
+            "p",
+            "सबको एक जैसी रकम। बच्चों को पूरी रकम मिलती है। आबादी Destatis की 30 जून 2026 की 8.33 करोड़ है,[8] जिसे स्थिर माना गया। कैलकुलेटर पेज संयुक्त राष्ट्र का 2025 का अनुमान (8.41 करोड़) और वर्ल्ड बैंक का GDP लेता है, इसलिए वहाँ नतीजे करीब 1% ज़्यादा हैं।[9]"
+          ],
+          [
+            "p",
+            "सकल ख़र्च। भुगतान पर टैक्स, काम या क़ीमतों में बदलाव और चलाने का ख़र्च नहीं गिना गया। पैमाने अलग-अलग सालों के हैं: कर राजस्व और GDP 2025 के, संघीय बजट 2026 का।"
+          ],
+          [
+            "p",
+            "संघीय देश। जर्मनी के कर संघ, राज्यों और नगरपालिकाओं में बँटते हैं, इसलिए हमने सभी करों से तुलना की। {विश्व नक़्शा|/essays/basic-income-world-map/} हर देश के लिए वर्ल्ड बैंक का केंद्र सरकार का कर आँकड़ा लेता है, जिसमें जर्मनी के राज्य और नगरपालिकाएँ शामिल नहीं; वहाँ 66 यूरो की न्यूनतम रकम कर राजस्व का 7% नहीं, 14% दिखती है।[9]"
+          ],
+          [
+            "p",
+            "घटाई गई रकमें। सिर्फ़ नौकरी ढूँढने वालों की बुनियादी सहायता (भुगतान, करीब 6.8 अरब यूरो प्रशासन ख़र्च के बिना) और Kindergeld गिने गए।[14][15] बच्चों के लिए कर छूट और दूसरे लाभ नहीं।"
+          ],
+          [
+            "p",
+            "उद्धरण। मैर्त्स के शब्द आधिकारिक जर्मन रिकॉर्ड से हैं; अनुवाद हमारा है। विल्डबर्गर की अक्टूबर की बातें टागेसश्पीगल इंटरव्यू पर समाचार एजेंसी की रिपोर्ट से हैं। जो दावे हमें किसी भरोसेमंद स्रोत में नहीं मिले, वे छोड़ दिए गए।"
+          ],
+          [
+            "p",
+            "यह प्रस्ताव नहीं है। रकमें सिर्फ़ पैमाना हैं। यहाँ यह नहीं कहा गया कि जर्मनी को बेसिक इनकम लानी चाहिए या नहीं; आँकड़े सिर्फ़ रकमों का आकार दिखाते हैं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "El 2 de noviembre de 2026, en la Cumbre Digital del Gobierno alemán en Berlín, un periodista preguntó al canciller Friedrich Merz si compartía la opinión de que la IA costará empleos y de que por eso haría falta algún tipo de renta básica. Respondió que en los últimos años siempre había sido «algo reservado» con este tema, porque también ve «las muchas desventajas» de una renta básica así, pero que la IA cambiará el mundo del trabajo de forma tan fundamental que «en los próximos años tendremos que pensar en muchos de estos aspectos».[1] No se pronunció a favor de una renta básica."
+          ],
+          [
+            "p",
+            "¿Cuánto costaría una en Alemania? Pagar 1.000 € al mes a todas las personas que viven allí, niños incluidos, costaría alrededor de un billón de euros al año: algo más que todos los impuestos recaudados en Alemania en 2025 (990.000 millones) y casi el doble del presupuesto federal. A continuación: qué se dijo, el coste con cuatro importes, qué encontró el propio experimento alemán y qué dicen las estimaciones sobre la IA y el empleo."
+          ],
+          [
+            "h",
+            "Qué se dijo y qué no"
+          ],
+          [
+            "p",
+            "La pregunta llegó en la rueda de prensa conjunta de Merz y Karsten Wildberger, ministro de Asuntos Digitales y Modernización del Estado. El periodista recordó que el ministro había dicho varias veces que la IA también costará empleos, sobre todo los de entrada, y que haría falta algún tipo de renta básica, y preguntó a Merz si compartía esa opinión.[1]"
+          ],
+          [
+            "p",
+            "Según la transcripción oficial, Merz añadió que hoy el mayor peligro sería «no hacer nada en este ámbito», que el Gobierno estudia entre varios ministerios qué significa la IA para el mercado laboral y que está convencido de que las oportunidades superan a los riesgos, aunque de los riesgos también hay que hablar.[1] (Traducción nuestra.)"
+          ],
+          [
+            "p",
+            "Circulan en internet informaciones según las cuales Merz pidió además reformar la seguridad social, gravar el valor creado por la IA y una renta básica condicionada que mantenga el incentivo a trabajar. Nada de eso aparece en la transcripción oficial de la rueda de prensa ni en su discurso en la cumbre,[1][2] y no hemos encontrado ninguna fuente fiable que lo respalde, así que lo dejamos fuera. Gravar los ingresos de la IA es algo que ha dicho Wildberger (véase abajo)."
+          ],
+          [
+            "p",
+            "Wildberger se ha mostrado más abierto. En marzo de 2026 dijo al diario Neue Osnabrücker Zeitung que estaba convencido de que una renta básica incondicional «puede llegar a ser parte de la solución» para amortiguar los cambios bruscos en el mercado laboral, aunque por sí sola no bastaría, y que Alemania necesitaba «una recaudación fiscal claramente mayor» para transformar el mercado de trabajo.[3] En una entrevista con el Tagesspiegel en octubre de 2026, según la agencia dts, dijo que ya no usaría ese término, pero que «aun así examinaría con atención el concepto que hay detrás», y que «la enorme facturación de esta tecnología» tendría que tributar para pagar la transición.[4]"
+          ],
+          [
+            "h",
+            "¿Condicionada o incondicional?"
+          ],
+          [
+            "p",
+            "Alemania ya tiene un ingreso mínimo condicionado. Desde el 1 de julio de 2026 se llama Grundsicherungsgeld; hasta entonces era el Bürgergeld.[5] Solo lo recibe quien no puede vivir de sus propios ingresos y patrimonio, y quien puede trabajar debe buscar y aceptar un empleo razonable. La cuantía estándar para un adulto que vive solo es de 563 € al mes en 2026, sin cambios desde 2024; el alquiler y la calefacción se pagan aparte.[6]"
+          ],
+          [
+            "p",
+            "Una renta básica incondicional, según la definición de la Red Mundial de Renta Básica (BIEN), se paga a todas las personas, de forma individual, periódica y en efectivo, sin comprobar ingresos y sin obligación de trabajar.[7] Entre ambas hay muchos diseños, como un pago que disminuye a medida que suben los ingresos o uno vinculado a la formación o al trabajo comunitario. Merz no dijo cuál tenía en mente, si es que tenía alguno. Las cifras que siguen son para la versión incondicional, el extremo más caro."
+          ],
+          [
+            "h",
+            "Cuánto costaría: cuatro importes"
+          ],
+          [
+            "p",
+            "Alemania tenía 83,3 millones de habitantes el 30 de junio de 2026, según la Oficina Federal de Estadística (Destatis).[8] Si todos, niños incluidos, reciben lo mismo, el coste es simplemente el importe mensual × 12 × 83,3 millones. Usamos cuatro importes."
+          ],
+          [
+            "p",
+            "66 € al mes es el importe estándar de la {comparación de 211 países|/calc/countries/} de este sitio: el umbral de pobreza del Banco Mundial de 3,00 dólares al día, convertido a precios alemanes.[9][10] 563 € es la cuantía estándar de 2026 para un adulto solo.[6] 1.000 € es el valor por defecto de nuestra {página de la calculadora para Alemania|/calc/de/}. 1.200 € es lo que recibió cada participante del experimento alemán que se describe más abajo."
+          ],
+          [
+            "t",
+            "Por persona y mes | Coste anual | Parte de toda la recaudación fiscal (2025) | Parte del presupuesto federal (2026) | Parte del PIB (2025)\n66 € (umbral de pobreza) | 66.000 millones € | 7 % | 13 % | 1,5 %\n563 € (cuantía estándar) | 563.000 millones € | 57 % | 107 % | 12,4 %\n1.000 € | 1 billón € | 101 % | 191 % | 22,1 %\n1.200 € (experimento) | 1,2 billones € | 121 % | 229 % | 26,5 %"
+          ],
+          [
+            "p",
+            "Las referencias: la recaudación fiscal total de Alemania en 2025 fue de 989.800 millones de euros (impuestos federales, regionales y municipales, incluida la parte que se transfiere a la UE).[11] El Bundestag aprobó un presupuesto federal de 524.540 millones para 2026.[12] El PIB nominal fue de 4,53 billones en 2025.[13] Los ingresos totales del Estado, incluidas las cotizaciones sociales, sumaron 2,14 billones; 1.000 € al mes para todos absorberían el 47 %, y 1.200 €, el 56 %.[13]"
+          ],
+          [
+            "p",
+            "Incluso la versión de 563 € costaría más que todo el presupuesto federal. Solo el mínimo de 66 € cabe con holgura: el 7 % de la recaudación y el 1,5 % del PIB."
+          ],
+          [
+            "h",
+            "No es el coste neto"
+          ],
+          [
+            "p",
+            "Una renta básica podría sustituir algunas prestaciones actuales. En 2025 los centros de empleo pagaron unos 46.700 millones de euros a 5,3 millones de personas en la prestación básica para demandantes de empleo (entonces Bürgergeld), sin contar la administración.[14] Las cajas familiares pagaron 55.300 millones en Kindergeld (prestación por hijo) para 17,6 millones de niños.[15] En total, unos 102.000 millones."
+          ],
+          [
+            "p",
+            "Si una renta básica sustituyera ambas por completo, la versión de 563 € seguiría costando unos 461.000 millones al año (el 47 % de la recaudación), la de 1.000 € unos 898.000 millones (91 %) y la de 1.200 € alrededor de 1,1 billones (111 %). Las pensiones y la prestación por desempleo se pagan sobre todo con cotizaciones y no se cuentan aquí; que una renta básica sustituya parte de ellas es una cuestión de diseño. Tampoco se calculan los impuestos que recuperarían parte del pago."
+          ],
+          [
+            "p",
+            "Además, 563 € no es lo que reciben de verdad los beneficiarios. En 2025 la prestación media era de 731 € al mes por persona, incluidos la vivienda y la seguridad social.[14] Una renta básica del nivel de la cuantía estándar, sin nada para el alquiler, dejaría a muchos de los beneficiarios actuales con menos."
+          ],
+          [
+            "h",
+            "Qué encontró el experimento alemán"
+          ],
+          [
+            "p",
+            "De junio de 2021 a mayo de 2024, 122 personas en Alemania recibieron 1.200 € al mes sin condiciones, pagados con donaciones recogidas por la asociación Mein Grundeinkommen. El Instituto Alemán de Investigación Económica (DIW Berlin) comparó a 107 de ellas con 1.580 personas parecidas que no recibieron nada (véase {nuestra cronología|/timeline/#tl-pilotprojekt}).[16]"
+          ],
+          [
+            "p",
+            "Trabajo: en cada ronda de encuestas, alrededor del 90 % de ambos grupos trabajaba, unas 40 horas a la semana. Los beneficiarios no redujeron sus horas de forma significativa ni dejaron el mercado laboral. Algo más de ellos estudiaban o se formaban (14 % frente a 10 %), una diferencia no significativa estadísticamente.[16]"
+          ],
+          [
+            "p",
+            "Bienestar y dinero: la salud mental de los beneficiarios era unas 0,3 desviaciones típicas mejor que la del grupo de comparación, y su satisfacción vital, de 7,6 frente a 7,1 en una escala de 0 a 10. Ahorraron 779 € al mes frente a 332, y destinaron cerca del 8 % del pago a donaciones o a ayudar a familiares y amigos.[16]"
+          ],
+          [
+            "p",
+            "Los límites son justo los que importan para la cuestión del coste: 122 personas, tres años, y su entorno no recibió dinero. Un experimento así no puede mostrar qué pasaría con los precios, los salarios o los impuestos si lo recibieran los 83 millones. Sobre otros experimentos: {¿Dar dinero hace que la gente deje de trabajar?|/essays/does-cash-make-people-stop-working/}"
+          ],
+          [
+            "h",
+            "La IA y el empleo: de dónde sale el 800.000"
+          ],
+          [
+            "p",
+            "La cifra de 800.000 empleos es de Andrea Nahles, presidenta de la Agencia Federal de Empleo. Según se informó el 10 de noviembre de 2026, dijo al Handelsblatt: «Prevemos que en los próximos 15 años desaparecerán en Alemania unos 800.000 empleos debido a la IA», pero que «se crearán también otros tantos».[17] Coincide con un escenario del instituto de investigación de la agencia, el IAB, junto con el BIBB y el GWS, publicado en noviembre de 2025: alrededor de 1,6 millones de puestos que desaparecen o se crean en 15 años, con el empleo total casi estable y el PIB creciendo 0,8 puntos porcentuales más al año.[18] Así que 800.000 es una cifra bruta, no una pérdida neta."
+          ],
+          [
+            "p",
+            "Donde el cambio ya se nota es en la entrada al mercado laboral. El Instituto ifo informó el 9 de noviembre de 2026 de que el empleo a tiempo completo de las personas de 20 a 24 años en las ocupaciones más expuestas a la IA ha caído un 14 % desde 2022, de unas 279.000 a 239.000, mientras que el empleo en las ocupaciones expuestas en su conjunto creció un 1,8 %. Su presidente, Clemens Fuest, dijo: «Hasta ahora no vemos una destrucción amplia de empleo por la IA. Pero quien empieza su vida laboral es el primero en notar el cambio». Los investigadores añaden que la IA no es la única causa.[19] Los datos de EE. UU. muestran un patrón parecido; véase {¿Nos ha quitado el trabajo la IA generativa?|/essays/generative-ai-jobs-basic-income/}"
+          ],
+          [
+            "h",
+            "Lo que muestran los números"
+          ],
+          [
+            "p",
+            "A Merz le preguntaron por la renta básica y se mantuvo reservado, aunque espera que la IA plantee la cuestión. En cifras, una renta básica incondicional en Alemania costaría desde 66.000 millones al año con un mínimo al nivel del umbral de pobreza hasta 1,2 billones con los 1.200 € del experimento alemán. Con 1.000 € al mes costaría más o menos lo mismo que toda la recaudación fiscal actual, y suprimir la prestación básica y el Kindergeld cubriría solo una décima parte. El experimento alemán no encontró menos trabajo entre los beneficiarios, pero no puede decir qué pasaría si se pagara a todos."
+          ],
+          [
+            "p",
+            "Para probar otros importes, o solo adultos, use {la página de la calculadora para Alemania|/calc/de/}; para todos los países, {la comparación de 211 países|/calc/countries/}. Sobre quién podría pagar una renta básica financiada con la IA: {Renta alta universal: ¿quién paga?|/essays/universal-high-income/}"
+          ],
+          [
+            "h",
+            "Supuestos y límites"
+          ],
+          [
+            "p",
+            "Todos, el mismo importe. Los niños reciben el importe completo. La población es la de Destatis, 83,3 millones el 30 de junio de 2026,[8] y se mantiene constante. La página de la calculadora usa la estimación de la ONU para 2025 (84,1 millones) y el PIB del Banco Mundial, por lo que sus resultados son alrededor de un 1 % más altos.[9]"
+          ],
+          [
+            "p",
+            "Coste bruto. No se incluyen los impuestos sobre el pago, los cambios en el trabajo o en los precios ni el coste de gestionarlo. Las referencias son de años distintos: recaudación y PIB de 2025, presupuesto federal de 2026."
+          ],
+          [
+            "p",
+            "Un país federal. Los impuestos alemanes se reparten entre la Federación, los estados federados y los municipios, así que comparamos con todos ellos. El {mapa mundial|/essays/basic-income-world-map/} usa para cada país la recaudación del Gobierno central según el Banco Mundial, que en Alemania deja fuera a los estados y municipios; allí el mínimo de 66 € aparece como el 14 % de la recaudación en lugar del 7 %.[9]"
+          ],
+          [
+            "p",
+            "Lo que se descuenta. Solo la prestación básica para demandantes de empleo (pagos, sin unos 6.800 millones de costes administrativos) y el Kindergeld.[14][15] No se cuentan las desgravaciones fiscales por hijos ni otras prestaciones."
+          ],
+          [
+            "p",
+            "Citas. Las palabras de Merz proceden de la transcripción oficial en alemán; las traducciones son nuestras. Las declaraciones de Wildberger de octubre proceden de una nota de agencia sobre una entrevista con el Tagesspiegel. Lo que no hemos encontrado en ninguna fuente fiable queda fuera."
+          ],
+          [
+            "p",
+            "No es una propuesta. Los importes son referencias. Aquí no se dice si Alemania debería introducir una renta básica; las cifras solo muestran el tamaño de las sumas."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Am 2. November 2026 wurde Bundeskanzler Friedrich Merz beim Digital-Gipfel der Bundesregierung in Berlin gefragt, ob er die Einschätzung teile, dass KI Arbeitsplätze kosten werde und man deshalb eine Art Grundeinkommen brauche. Er antwortete: „Ich bin bei diesem Thema in den letzten Jahren immer etwas zurückhaltend gewesen, weil ich auch die vielen Nachteile sehe, die mit einem solchen Grundeinkommen verbunden sind.“ Ihm sei aber klar, „dass das Thema der KI unsere Arbeitswelt so fundamental verändern wird, dass wir uns in den nächsten Jahren über viele dieser Aspekte Gedanken machen müssen“.[1] Für ein Grundeinkommen ausgesprochen hat er sich nicht."
+          ],
+          [
+            "p",
+            "Was würde ein Grundeinkommen in Deutschland kosten? 1.000 € im Monat für alle, die hier leben, Kinder eingeschlossen, kämen auf rund 1.000 Mrd. € im Jahr: etwas mehr als alle Steuern, die 2025 in Deutschland eingenommen wurden (990 Mrd. €), und fast das Doppelte des Bundeshaushalts. Im Folgenden: was gesagt wurde, die Kosten bei vier Beträgen, was der deutsche Modellversuch ergab und was die Schätzungen zu KI und Arbeitsplätzen sagen."
+          ],
+          [
+            "h",
+            "Was gesagt wurde und was nicht"
+          ],
+          [
+            "p",
+            "Die Frage fiel in der gemeinsamen Pressekonferenz von Merz und Karsten Wildberger, dem Bundesminister für Digitales und Staatsmodernisierung. Der Fragesteller verwies darauf, dass der Minister mehrfach gesagt habe, KI werde auch Arbeitsplätze kosten, besonders bei Einsteigerjobs, und man brauche eine Art Grundeinkommen. Ob Merz diese Einschätzung teile?[1]"
+          ],
+          [
+            "p",
+            "Nach der offiziellen Mitschrift sagt Merz weiter, die größte Gefahr wäre heute, „in diesem Bereich nichts zu tun“; die Bundesregierung prüfe ressortübergreifend, was KI für den Arbeitsmarkt bedeute; er sei überzeugt, dass die Chancen überwiegen, über die Risiken müsse man aber reden.[1]"
+          ],
+          [
+            "p",
+            "Im Netz kursieren Berichte, Merz habe außerdem einen Umbau der Sozialsysteme, eine Besteuerung der durch KI geschaffenen Wertschöpfung und ein an Bedingungen geknüpftes Grundeinkommen mit Arbeitsanreizen gefordert. Nichts davon steht in der Mitschrift der Pressekonferenz oder in seiner Rede auf dem Gipfel,[1][2] und wir haben dafür keine seriöse Quelle gefunden. Deshalb lassen wir es weg. Die Besteuerung von KI-Umsätzen hat Wildberger ins Gespräch gebracht (siehe unten)."
+          ],
+          [
+            "p",
+            "Wildberger zeigt sich offener. Im März 2026 sagte er der Neuen Osnabrücker Zeitung, er sei überzeugt, dass ein bedingungsloses Grundeinkommen „ein Teil der Lösung werden kann, um die Umwälzungen am Arbeitsmarkt aufzufangen“; allein werde das aber nicht reichen. Man brauche „deutlich höhere Steuereinnahmen, damit wir mit dem Geld den Jobmarkt umbauen können“.[3] In einem Interview mit dem Tagesspiegel im Oktober 2026 sagte er laut der Nachrichtenagentur dts: „Das Konzept hinter diesem Begriff, den ich nicht mehr verwenden werde, würde ich mir trotzdem noch einmal genau anschauen.“ Und: „Den extrem hohen Umsatz mit dieser Technologie müssen wir besteuern.“[4]"
+          ],
+          [
+            "h",
+            "Mit Bedingungen oder bedingungslos?"
+          ],
+          [
+            "p",
+            "Deutschland hat bereits eine an Bedingungen geknüpfte Grundsicherung. Seit dem 1. Juli 2026 heißt sie Grundsicherungsgeld, davor Bürgergeld.[5] Sie bekommt nur, wessen eigenes Einkommen und Vermögen nicht reicht, und wer erwerbsfähig ist, muss sich um zumutbare Arbeit bemühen und sie annehmen. Der Regelbedarf für Alleinstehende liegt 2026 bei 563 € im Monat, unverändert seit 2024; Miete und Heizung kommen hinzu.[6]"
+          ],
+          [
+            "p",
+            "Ein bedingungsloses Grundeinkommen im Sinne des Basic Income Earth Network (BIEN) geht an alle, an jede Person einzeln, regelmäßig und in Geld, ohne Bedürftigkeitsprüfung und ohne Pflicht zur Arbeit.[7] Dazwischen gibt es viele Modelle, etwa eine Zahlung, die mit steigendem Einkommen abschmilzt, oder eine, die an Weiterbildung oder gemeinnützige Arbeit gebunden ist. Welches Modell Merz im Sinn hatte, falls überhaupt eines, hat er nicht gesagt. Die Zahlen unten gelten für die bedingungslose Variante, also das obere Ende."
+          ],
+          [
+            "h",
+            "Was es kosten würde: vier Beträge"
+          ],
+          [
+            "p",
+            "Deutschland hatte am 30. Juni 2026 laut Statistischem Bundesamt (Destatis) 83,3 Millionen Einwohner.[8] Bekommen alle, Kinder eingeschlossen, denselben Betrag, sind die Kosten einfach Monatsbetrag × 12 × 83,3 Millionen. Wir rechnen mit vier Beträgen."
+          ],
+          [
+            "p",
+            "66 € im Monat sind der Standardbetrag im {Vergleich von 211 Ländern|/calc/countries/} auf dieser Seite: die Armutsgrenze der Weltbank von 3,00 Dollar am Tag, umgerechnet in deutsche Preise.[9][10] 563 € sind der Regelbedarf 2026 für Alleinstehende.[6] 1.000 € sind die Voreinstellung auf unserer {Rechner-Seite für Deutschland|/calc/de/}. 1.200 € bekam jede Person im deutschen Modellversuch, um den es weiter unten geht."
+          ],
+          [
+            "t",
+            "Pro Kopf und Monat | Kosten pro Jahr | Anteil an allen Steuereinnahmen (2025) | Anteil am Bundeshaushalt (2026) | Anteil am BIP (2025)\n66 € (Armutsgrenze) | 66 Mrd. € | 7 % | 13 % | 1,5 %\n563 € (Regelbedarf) | 563 Mrd. € | 57 % | 107 % | 12,4 %\n1.000 € | 1.000 Mrd. € | 101 % | 191 % | 22,1 %\n1.200 € (Modellversuch) | 1.200 Mrd. € | 121 % | 229 % | 26,5 %"
+          ],
+          [
+            "p",
+            "Die Vergleichsgrößen: Die Steuereinnahmen in Deutschland betrugen 2025 insgesamt 989,8 Mrd. € (Bund, Länder und Gemeinden, einschließlich des Anteils, der an die EU geht).[11] Der Bundestag hat für 2026 einen Bundeshaushalt mit Ausgaben von 524,54 Mrd. € beschlossen.[12] Das nominale BIP lag 2025 bei 4.529,7 Mrd. €.[13] Die gesamten Einnahmen des Staates einschließlich der Sozialbeiträge beliefen sich auf 2.137,9 Mrd. €; 1.000 € im Monat für alle würden davon 47 % beanspruchen, 1.200 € 56 %.[13]"
+          ],
+          [
+            "p",
+            "Schon die Variante mit 563 € kostete mehr als der gesamte Bundeshaushalt. Bequem finanzierbar wäre nur die Untergrenze von 66 €, mit 7 % der Steuereinnahmen und 1,5 % des BIP."
+          ],
+          [
+            "h",
+            "Nicht die Nettokosten"
+          ],
+          [
+            "p",
+            "Ein Grundeinkommen könnte bestehende Leistungen ersetzen. 2025 zahlten die Jobcenter in der Grundsicherung für Arbeitsuchende (damals Bürgergeld) Leistungen von rund 46,7 Mrd. € an 5,3 Millionen Menschen, ohne Verwaltungskosten.[14] Die Familienkassen zahlten 55,3 Mrd. € Kindergeld für 17,6 Millionen Kinder.[15] Zusammen sind das rund 102 Mrd. €."
+          ],
+          [
+            "p",
+            "Würde ein Grundeinkommen beides vollständig ersetzen, kostete die Variante mit 563 € immer noch rund 461 Mrd. € im Jahr (47 % der Steuereinnahmen), die mit 1.000 € rund 898 Mrd. € (91 %) und die mit 1.200 € rund 1,1 Billionen € (111 %). Renten und Arbeitslosengeld werden überwiegend aus Beiträgen bezahlt und sind hier nicht eingerechnet; ob ein Grundeinkommen Teile davon ersetzen würde, ist eine Frage der Ausgestaltung. Steuern, die einen Teil der Zahlung zurückholen, sind ebenfalls nicht berücksichtigt."
+          ],
+          [
+            "p",
+            "563 € sind zudem nicht das, was Leistungsbeziehende tatsächlich bekommen. 2025 lag der durchschnittliche Anspruch bei 731 € im Monat pro Person, einschließlich Kosten der Unterkunft und Sozialversicherung.[14] Ein Grundeinkommen in Höhe des Regelbedarfs ohne Geld für die Miete stellte viele heutige Beziehende schlechter."
+          ],
+          [
+            "h",
+            "Was der deutsche Modellversuch ergab"
+          ],
+          [
+            "p",
+            "Von Juni 2021 bis Mai 2024 erhielten 122 Menschen in Deutschland bedingungslos 1.200 € im Monat, finanziert aus Spenden, die der Verein Mein Grundeinkommen gesammelt hatte. Das Deutsche Institut für Wirtschaftsforschung (DIW Berlin) verglich 107 von ihnen mit 1.580 ähnlichen Personen, die nichts bekamen (siehe {unsere Zeitleiste|/timeline/#tl-pilotprojekt}).[16]"
+          ],
+          [
+            "p",
+            "Arbeit: In jeder Befragungswelle waren in beiden Gruppen rund 90 % erwerbstätig, mit etwa 40 Wochenstunden. Die Empfängerinnen und Empfänger haben ihre Arbeitszeit nicht signifikant verringert und sich nicht vom Arbeitsmarkt zurückgezogen. Etwas mehr von ihnen waren in Aus- oder Weiterbildung (14 % gegenüber 10 %); der Unterschied ist statistisch nicht signifikant.[16]"
+          ],
+          [
+            "p",
+            "Wohlbefinden und Geld: Die psychische Gesundheit war um rund 0,3 Standardabweichungen besser als in der Vergleichsgruppe, die Lebenszufriedenheit lag bei 7,6 gegenüber 7,1 auf einer Skala von 0 bis 10. Gespart wurden 779 € im Monat gegenüber 332 €, und rund 8 % der Zahlung gingen als Spenden oder Unterstützung an Familie und Freunde.[16]"
+          ],
+          [
+            "p",
+            "Die Grenzen sind genau die, auf die es bei der Kostenfrage ankommt: 122 Menschen, drei Jahre, und das Umfeld bekam kein Geld. Ein solcher Versuch kann nicht zeigen, was mit Preisen, Löhnen oder Steuern passierte, wenn alle 83 Millionen es bekämen. Zu anderen Studien: {Hören Menschen auf zu arbeiten, wenn man ihnen Geld gibt?|/essays/does-cash-make-people-stop-working/}"
+          ],
+          [
+            "h",
+            "KI und Arbeitsplätze: Woher die 800.000 stammen"
+          ],
+          [
+            "p",
+            "Die Zahl von 800.000 Jobs stammt von Andrea Nahles, der Vorstandsvorsitzenden der Bundesagentur für Arbeit. Dem Handelsblatt sagte sie, wie am 10. November 2026 berichtet wurde: „Wir prognostizieren, dass in den nächsten 15 Jahren etwa 800.000 Jobs in Deutschland aufgrund von KI wegfallen“, aber „ähnlich viele auch neu entstehen“.[17] Das passt zu einem Szenario des IAB, des Forschungsinstituts der Bundesagentur, mit BIBB und GWS vom November 2025: Rund 1,6 Millionen Stellen fallen in 15 Jahren weg oder entstehen neu, die Gesamtzahl der Arbeitsplätze bleibt weitgehend stabil, und das BIP wächst jährlich um 0,8 Prozentpunkte schneller.[18] Die 800.000 sind also eine Bruttozahl, kein Nettoverlust."
+          ],
+          [
+            "p",
+            "Sichtbar wird der Wandel schon beim Berufseinstieg. Das ifo Institut meldete am 9. November 2026, dass die Vollzeitbeschäftigung der 20- bis 24-Jährigen in den am stärksten KI-exponierten Berufen seit 2022 um 14 % gesunken ist, von rund 279.000 auf 239.000, während die Beschäftigung in KI-exponierten Berufen insgesamt um 1,8 % wuchs. ifo-Präsident Clemens Fuest: „Von einem breiten Jobabbau durch KI sehen wir bislang nichts. Aber wer ins Berufsleben startet, spürt die Veränderung als Erstes.“ KI sei nicht die einzige Ursache, betonen die Forschenden.[19] Daten aus den USA zeigen ein ähnliches Muster; siehe {Hat KI Jobs gekostet?|/essays/generative-ai-jobs-basic-income/}"
+          ],
+          [
+            "h",
+            "Was die Zahlen zeigen"
+          ],
+          [
+            "p",
+            "Merz wurde nach dem Grundeinkommen gefragt und blieb zurückhaltend, rechnet aber damit, dass KI die Frage aufwirft. In Zahlen kostete ein bedingungsloses Grundeinkommen in Deutschland zwischen 66 Mrd. € im Jahr als Untergrenze auf Höhe der Armutsgrenze und 1,2 Billionen € bei den 1.200 € des Modellversuchs. Bei 1.000 € im Monat wären es etwa so viel wie alle heutigen Steuereinnahmen; der Wegfall von Grundsicherung und Kindergeld deckte davon nur etwa ein Zehntel. Der Modellversuch fand bei den Empfängern keinen Rückgang der Arbeit, kann aber nicht sagen, was eine Zahlung an alle bewirken würde."
+          ],
+          [
+            "p",
+            "Andere Beträge oder nur Erwachsene lassen sich auf der {Rechner-Seite für Deutschland|/calc/de/} ausprobieren; alle Länder im {Vergleich von 211 Ländern|/calc/countries/}. Wer ein Grundeinkommen aus KI-Erträgen bezahlen könnte: {Universal High Income: Wer zahlt?|/essays/universal-high-income/}"
+          ],
+          [
+            "h",
+            "Annahmen und Grenzen"
+          ],
+          [
+            "p",
+            "Alle, derselbe Betrag. Kinder erhalten den vollen Betrag. Die Bevölkerung ist die von Destatis für den 30. Juni 2026 gemeldete Zahl von 83,3 Millionen,[8] konstant gehalten. Die Rechner-Seite nutzt die UN-Schätzung für 2025 (84,1 Millionen) und das BIP der Weltbank; ihre Ergebnisse liegen daher rund 1 % höher.[9]"
+          ],
+          [
+            "p",
+            "Bruttokosten. Steuern auf die Zahlung, Veränderungen bei Arbeit oder Preisen und die Verwaltungskosten sind nicht berücksichtigt. Die Vergleichsgrößen stammen aus verschiedenen Jahren: Steuereinnahmen und BIP aus 2025, der Bundeshaushalt aus 2026."
+          ],
+          [
+            "p",
+            "Ein Bundesstaat. Die Steuern teilen sich Bund, Länder und Gemeinden, deshalb vergleichen wir mit allen Steuern. Die {Weltkarte|/essays/basic-income-world-map/} nutzt für jedes Land die Steuereinnahmen des Zentralstaats laut Weltbank, für Deutschland also ohne Länder und Gemeinden; dort erscheint die Untergrenze von 66 € mit 14 % statt 7 % der Steuereinnahmen.[9]"
+          ],
+          [
+            "p",
+            "Gegenrechnung. Berücksichtigt sind nur die Grundsicherung für Arbeitsuchende (Leistungen, ohne rund 6,8 Mrd. € Verwaltungskosten) und das Kindergeld.[14][15] Kinderfreibeträge und andere Leistungen nicht."
+          ],
+          [
+            "p",
+            "Zitate. Merz’ Worte stammen aus der offiziellen Mitschrift. Wildbergers Äußerungen vom Oktober stammen aus einer Agenturmeldung über ein Tagesspiegel-Interview. Behauptungen, die wir in keiner seriösen Quelle gefunden haben, lassen wir weg."
+          ],
+          [
+            "p",
+            "Kein Vorschlag. Die Beträge sind Maßstäbe. Hier wird nicht gesagt, ob Deutschland ein Grundeinkommen einführen sollte; die Zahlen zeigen nur die Größenordnung."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في 2 نوفمبر 2026، خلال القمة الرقمية للحكومة الألمانية في برلين، سأل صحفي المستشار فريدريش ميرتس عمّا إذا كان يوافق على أن الذكاء الاصطناعي سيكلّف وظائف وأن نوعًا من الدخل الأساسي قد يصبح ضروريًا. فأجاب بأنه كان «دائمًا متحفظًا بعض الشيء» في هذا الموضوع خلال السنوات الماضية، لأنه يرى أيضًا «العيوب الكثيرة» لدخل أساسي كهذا، لكن الذكاء الاصطناعي سيغيّر عالم العمل تغييرًا جذريًا حتى «سيتعيّن علينا في السنوات المقبلة أن نفكر في كثير من هذه الجوانب».[1] ولم يعلن تأييده للدخل الأساسي."
+          ],
+          [
+            "p",
+            "فكم سيكلّف في ألمانيا؟ دفع 1,000 يورو شهريًا لكل من يعيش فيها، بمن فيهم الأطفال، يكلّف نحو 1,000 مليار يورو سنويًا: أكثر قليلًا من كل الضرائب التي جُمعت في ألمانيا عام 2025 (990 مليار يورو)، ونحو ضعف الميزانية الاتحادية. فيما يلي: ما الذي قيل، والتكلفة بأربعة مبالغ، وما وجدته التجربة الألمانية نفسها، وما تقوله التقديرات عن الذكاء الاصطناعي والوظائف."
+          ],
+          [
+            "h",
+            "ما الذي قيل، وما الذي لم يُقل"
+          ],
+          [
+            "p",
+            "جاء السؤال في المؤتمر الصحفي المشترك لميرتس وكارستن فيلدبرغر، وزير الشؤون الرقمية وتحديث الدولة. وذكّر الصحفي بأن الوزير قال مرارًا إن الذكاء الاصطناعي سيكلّف وظائف أيضًا، ولا سيما وظائف المبتدئين، وإن نوعًا من الدخل الأساسي سيكون ضروريًا، ثم سأل ميرتس هل يشاركه هذا الرأي.[1]"
+          ],
+          [
+            "p",
+            "وبحسب المحضر الرسمي، أضاف ميرتس أن الخطر الأكبر اليوم هو «ألّا نفعل شيئًا في هذا المجال»، وأن الحكومة تدرس عبر الوزارات ما يعنيه الذكاء الاصطناعي لسوق العمل، وأنه مقتنع بأن الفرص تفوق المخاطر، لكن لا بد من الحديث عن المخاطر أيضًا.[1] (الترجمة من عندنا.)"
+          ],
+          [
+            "p",
+            "تتداول مواقع على الإنترنت أن ميرتس دعا أيضًا إلى تغيير نظام الضمان الاجتماعي، وفرض ضريبة على القيمة التي يولّدها الذكاء الاصطناعي، ودخل أساسي مشروط يحافظ على الحافز للعمل. لا شيء من ذلك في المحضر الرسمي للمؤتمر الصحفي ولا في خطابه في القمة،[1][2] ولم نجد له مصدرًا موثوقًا، فتركناه. أما فرض الضريبة على إيرادات الذكاء الاصطناعي فقد قاله فيلدبرغر (انظر أدناه)."
+          ],
+          [
+            "p",
+            "كان فيلدبرغر أكثر انفتاحًا. ففي مارس 2026 قال لصحيفة ⁦Neue Osnabrücker Zeitung⁩ إنه مقتنع بأن الدخل الأساسي غير المشروط «يمكن أن يصبح جزءًا من الحل» لامتصاص الاضطرابات في سوق العمل، وإن كان لا يكفي وحده، وإن ألمانيا تحتاج إلى «إيرادات ضريبية أعلى بكثير» لإعادة بناء سوق العمل.[3] وفي مقابلة مع صحيفة ⁦Tagesspiegel⁩ في أكتوبر 2026، بحسب وكالة الأنباء ⁦dts⁩، قال إنه لن يستخدم هذا المصطلح بعد الآن، لكنه «سيدرس مع ذلك الفكرة التي وراءه بعناية»، وإن «الإيرادات الهائلة من هذه التقنية» يجب أن تخضع للضريبة لتمويل التحول.[4]"
+          ],
+          [
+            "h",
+            "مشروط أم غير مشروط؟"
+          ],
+          [
+            "p",
+            "لدى ألمانيا بالفعل حدّ أدنى مشروط للدخل. فمنذ 1 يوليو 2026 يُسمّى ⁦Grundsicherungsgeld⁩ (إعانة الضمان الأساسي)، وكان قبل ذلك ⁦Bürgergeld⁩ (إعانة المواطن).[5] لا يحصل عليه إلا من لا يكفيه دخله وماله، وعلى القادر على العمل أن يبحث عن عمل مناسب ويقبله. والمعدل المعياري للبالغ الذي يعيش وحده 563 يورو شهريًا في 2026، دون تغيير منذ 2024، ويُدفع الإيجار والتدفئة فوقه.[6]"
+          ],
+          [
+            "p",
+            "أما الدخل الأساسي غير المشروط، بتعريف الشبكة العالمية للدخل الأساسي (⁦BIEN⁩)، فيُدفع للجميع، لكل فرد على حدة، بانتظام ونقدًا، دون فحص للدخل ودون اشتراط العمل.[7] وبين الاثنين تصاميم كثيرة، مثل دفعة تتناقص كلما ارتفع الدخل، أو دفعة مرتبطة بالتدريب أو العمل المجتمعي. ولم يقل ميرتس أيّها كان يقصد، إن كان يقصد أيًّا منها. والأرقام أدناه للنسخة غير المشروطة، أي الحد الأعلى."
+          ],
+          [
+            "h",
+            "كم سيكلّف: أربعة مبالغ"
+          ],
+          [
+            "p",
+            "بلغ عدد سكان ألمانيا 83.3 مليون نسمة في 30 يونيو 2026 بحسب المكتب الاتحادي للإحصاء (⁦Destatis⁩).[8] وإذا حصل الجميع، بمن فيهم الأطفال، على المبلغ نفسه، فالتكلفة هي ببساطة المبلغ الشهري × 12 × 83.3 مليون. نستخدم أربعة مبالغ."
+          ],
+          [
+            "p",
+            "66 يورو شهريًا هو المبلغ المعياري في {مقارنة 211 دولة|/calc/countries/} في هذا الموقع: خط الفقر لدى البنك الدولي، 3.00 دولارات يوميًا، محوّلًا إلى الأسعار الألمانية.[9][10] و563 يورو هو المعدل المعياري لعام 2026 للبالغ الذي يعيش وحده.[6] و1,000 يورو هو المبلغ الافتراضي في {صفحة حاسبة ألمانيا|/calc/de/} في هذا الموقع. و1,200 يورو هو ما حصل عليه كل مشارك في التجربة الألمانية الموصوفة أدناه."
+          ],
+          [
+            "t",
+            "للفرد شهريًا | التكلفة السنوية | نسبتها من كل الإيرادات الضريبية (2025) | نسبتها من الميزانية الاتحادية (2026) | نسبتها من الناتج المحلي (2025)\n66 يورو (خط الفقر) | 66 مليار يورو | 7% | 13% | 1.5%\n563 يورو (المعدل المعياري) | 563 مليار يورو | 57% | 107% | 12.4%\n1,000 يورو | 1,000 مليار يورو | 101% | 191% | 22.1%\n1,200 يورو (التجربة) | 1,200 مليار يورو | 121% | 229% | 26.5%"
+          ],
+          [
+            "p",
+            "المقاييس: بلغت كل الضرائب المحصّلة في ألمانيا عام 2025 نحو 989.8 مليار يورو (ضرائب الاتحاد والولايات والبلديات، بما فيها الحصة المحوّلة إلى الاتحاد الأوروبي).[11] وأقرّ البرلمان الاتحادي ميزانية اتحادية بقيمة 524.54 مليار يورو لعام 2026.[12] وبلغ الناتج المحلي الإجمالي الاسمي 4,529.7 مليار يورو في 2025.[13] أما إجمالي إيرادات الدولة، بما فيها اشتراكات الضمان الاجتماعي، فبلغ 2,137.9 مليار يورو؛ و1,000 يورو شهريًا للجميع تستهلك ⁦47%⁩ منها، و1,200 يورو ⁦56%⁩.[13]"
+          ],
+          [
+            "p",
+            "حتى نسخة 563 يورو تكلّف أكثر من الميزانية الاتحادية كلها. ولا يتسع بسهولة إلا الحد الأدنى البالغ 66 يورو، بنسبة ⁦7%⁩ من الإيرادات الضريبية و⁦1.5%⁩ من الناتج المحلي."
+          ],
+          [
+            "h",
+            "ليست التكلفة الصافية"
+          ],
+          [
+            "p",
+            "قد يحلّ الدخل الأساسي محل بعض المدفوعات الحالية. ففي 2025 دفعت مراكز التوظيف نحو 46.7 مليار يورو لـ5.3 ملايين شخص ضمن الضمان الأساسي للباحثين عن عمل (⁦Bürgergeld⁩ آنذاك)، دون احتساب الإدارة.[14] ودفعت صناديق الأسرة 55.3 مليار يورو إعانةً للأطفال (⁦Kindergeld⁩) لـ17.6 مليون طفل.[15] والمجموع نحو 102 مليار يورو."
+          ],
+          [
+            "p",
+            "ولو حلّ الدخل الأساسي محلهما بالكامل، لظلت نسخة 563 يورو تكلّف نحو 461 مليار يورو سنويًا (⁦47%⁩ من الإيرادات الضريبية)، ونسخة 1,000 يورو نحو 898 مليارًا (⁦91%⁩)، ونسخة 1,200 يورو نحو 1.1 تريليون (⁦111%⁩). أما المعاشات وإعانة البطالة فتُموَّل في معظمها من الاشتراكات ولم نحتسبها هنا؛ وما إذا كان الدخل الأساسي سيحلّ محل جزء منها مسألة تصميم. كما لم نحتسب الضرائب التي تسترد جزءًا من الدفعة."
+          ],
+          [
+            "p",
+            "ثم إن 563 يورو ليست ما يحصل عليه المستفيدون فعلًا. ففي 2025 بلغ متوسط الاستحقاق 731 يورو شهريًا للفرد، شاملًا السكن والتأمين الاجتماعي.[14] ودخل أساسي بمستوى المعدل المعياري دون شيء للإيجار سيترك كثيرًا من المستفيدين الحاليين بأقل مما لديهم."
+          ],
+          [
+            "h",
+            "ما وجدته التجربة الألمانية"
+          ],
+          [
+            "p",
+            "من يونيو 2021 إلى مايو 2024، حصل 122 شخصًا في ألمانيا على 1,200 يورو شهريًا دون شروط، من تبرعات جمعتها جمعية ⁦Mein Grundeinkommen⁩. وقارن المعهد الألماني للبحوث الاقتصادية (⁦DIW⁩) بين 107 منهم و1,580 شخصًا مشابهًا لم يحصلوا على شيء (انظر {خطنا الزمني|/timeline/#tl-pilotprojekt}).[16]"
+          ],
+          [
+            "p",
+            "العمل: في كل جولة من الاستبيان كان نحو ⁦90%⁩ من المجموعتين يعملون، بنحو 40 ساعة أسبوعيًا. ولم يقلّل المستفيدون ساعات عملهم تقليلًا ملحوظًا ولم يتركوا سوق العمل. وكان عدد أكبر قليلًا منهم في الدراسة أو التدريب (⁦14%⁩ مقابل ⁦10%⁩)، وهو فرق غير دال إحصائيًا.[16]"
+          ],
+          [
+            "p",
+            "الرفاه والمال: كانت الصحة النفسية للمستفيدين أفضل بنحو 0.3 من الانحراف المعياري مقارنة بمجموعة المقارنة، والرضا عن الحياة 7.6 مقابل 7.1 على مقياس من 0 إلى 10. وادّخروا 779 يورو شهريًا مقابل 332، وأعطوا نحو ⁦8%⁩ من الدفعة للتبرع أو لمساعدة الأهل والأصدقاء.[16]"
+          ],
+          [
+            "p",
+            "والحدود هي بالضبط ما يهم لسؤال التكلفة: 122 شخصًا، ثلاث سنوات، ومن حولهم لم يحصلوا على المال. ولا تستطيع تجربة كهذه أن تبيّن ما سيحدث للأسعار والأجور والضرائب لو حصل عليه الـ83 مليونًا كلهم. وعن التجارب الأخرى: {هل يتوقف الناس عن العمل إذا أُعطوا المال؟|/essays/does-cash-make-people-stop-working/}"
+          ],
+          [
+            "h",
+            "الذكاء الاصطناعي والوظائف: من أين جاء رقم 800 ألف"
+          ],
+          [
+            "p",
+            "رقم 800 ألف وظيفة مصدره أندريا ناليس، رئيسة الوكالة الاتحادية للعمل. فبحسب ما نُشر في 10 نوفمبر 2026، قالت لصحيفة ⁦Handelsblatt⁩: «نتوقع أن تختفي في ألمانيا نحو 800 ألف وظيفة بسبب الذكاء الاصطناعي خلال السنوات الخمس عشرة المقبلة»، لكن «سينشأ عدد مماثل من الوظائف الجديدة».[17] ويتفق ذلك مع سيناريو نشره معهد أبحاث الوكالة ⁦IAB⁩ مع ⁦BIBB⁩ و⁦GWS⁩ في نوفمبر 2025: نحو 1.6 مليون وظيفة تختفي أو تنشأ خلال 15 عامًا، مع بقاء إجمالي التوظيف مستقرًا تقريبًا، ونمو الناتج المحلي أسرع بـ0.8 نقطة مئوية سنويًا.[18] فرقم 800 ألف إذن رقم إجمالي، لا خسارة صافية."
+          ],
+          [
+            "p",
+            "ويظهر التغيّر الآن عند بداية الحياة المهنية. فقد أفاد معهد ⁦ifo⁩ في 9 نوفمبر 2026 بأن التوظيف بدوام كامل لمن تتراوح أعمارهم بين 20 و24 عامًا في أكثر المهن تعرضًا للذكاء الاصطناعي انخفض بنسبة ⁦14%⁩ منذ 2022، من نحو 279 ألفًا إلى 239 ألفًا، بينما نما التوظيف في المهن المعرضة للذكاء الاصطناعي ككل بنسبة ⁦1.8%⁩. وقال رئيس المعهد كليمنس فوست: «حتى الآن لا نرى فقدانًا واسعًا للوظائف بسبب الذكاء الاصطناعي. لكن من يبدأ حياته المهنية هو أول من يشعر بالتغيير.» ويضيف الباحثون أن الذكاء الاصطناعي ليس السبب الوحيد.[19] وتُظهر البيانات الأمريكية نمطًا مشابهًا؛ انظر {هل أخذ الذكاء الاصطناعي التوليدي وظائفنا؟|/essays/generative-ai-jobs-basic-income/}"
+          ],
+          [
+            "h",
+            "ما تبيّنه الأرقام"
+          ],
+          [
+            "p",
+            "سُئل ميرتس عن الدخل الأساسي فبقي متحفظًا، مع توقعه أن يطرح الذكاء الاصطناعي هذا السؤال. وبالأرقام، يكلّف دخل أساسي غير مشروط في ألمانيا من 66 مليار يورو سنويًا عند حد أدنى بمستوى خط الفقر إلى 1.2 تريليون عند الـ1,200 يورو التي دفعتها التجربة الألمانية. وعند 1,000 يورو شهريًا يكلّف تقريبًا قدر كل الضرائب المحصّلة اليوم، والاستغناء عن الضمان الأساسي وإعانة الأطفال لا يغطي إلا نحو عُشر ذلك. ولم تجد التجربة الألمانية تراجعًا في عمل المستفيدين، لكنها لا تستطيع أن تقول ما الذي سيحدث لو دُفع للجميع."
+          ],
+          [
+            "p",
+            "لتجربة مبالغ أخرى، أو للبالغين فقط، استخدم {صفحة حاسبة ألمانيا|/calc/de/}؛ ولكل البلدان {مقارنة 211 دولة|/calc/countries/}. وعمّن قد يدفع دخلًا أساسيًا يموّله الذكاء الاصطناعي: {الدخل المرتفع الشامل: من يدفع؟|/essays/universal-high-income/}"
+          ],
+          [
+            "h",
+            "الافتراضات والحدود"
+          ],
+          [
+            "p",
+            "الجميع، المبلغ نفسه. يحصل الأطفال على المبلغ كاملًا. والسكان هم 83.3 مليونًا بحسب ⁦Destatis⁩ في 30 يونيو 2026،[8] ويُفترض ثباتهم. وتستخدم صفحة الحاسبة تقدير الأمم المتحدة لعام 2025 (84.1 مليونًا) والناتج المحلي من البنك الدولي، فتأتي نتائجها أعلى بنحو ⁦1%⁩.[9]"
+          ],
+          [
+            "p",
+            "تكلفة إجمالية. لم تُحتسب الضرائب على الدفعة، ولا التغيرات في العمل أو الأسعار، ولا تكلفة الإدارة. والمقاييس من سنوات مختلفة: الإيرادات الضريبية والناتج المحلي لعام 2025، والميزانية الاتحادية لعام 2026."
+          ],
+          [
+            "p",
+            "بلد اتحادي. تتقاسم الضرائبَ في ألمانيا الحكومةُ الاتحادية والولاياتُ والبلديات، لذا نقارن بها كلها. أما {خريطة العالم|/essays/basic-income-world-map/} فتستخدم لكل بلد رقم البنك الدولي لضرائب الحكومة المركزية، وهو في ألمانيا لا يشمل الولايات والبلديات؛ وهناك يظهر الحد الأدنى البالغ 66 يورو بنسبة ⁦14%⁩ من الإيرادات الضريبية بدل ⁦7%⁩.[9]"
+          ],
+          [
+            "p",
+            "ما يُطرح. لم نحتسب إلا الضمان الأساسي للباحثين عن عمل (المدفوعات، دون نحو 6.8 مليار يورو من تكاليف الإدارة) وإعانة الأطفال.[14][15] ولم نحتسب الإعفاءات الضريبية للأطفال ولا المزايا الأخرى."
+          ],
+          [
+            "p",
+            "الاقتباسات. كلمات ميرتس من المحضر الرسمي باللغة الألمانية، والترجمة من عندنا. وتصريحات فيلدبرغر في أكتوبر مصدرها خبر وكالة عن مقابلة مع ⁦Tagesspiegel⁩. وما لم نجده في مصدر موثوق تركناه."
+          ],
+          [
+            "p",
+            "ليس اقتراحًا. المبالغ مقاييس. ولا يقول هذا المقال هل ينبغي لألمانيا أن تعتمد دخلًا أساسيًا؛ الأرقام تبيّن حجم المبالغ فقط."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Bundesregierung — Mitschrift Pressekonferenz: “Künstliche Intelligenz – eine Jahrhundertchance für die Industrienation”, press conference of Chancellor Merz and Minister Wildberger at the Digital-Gipfel 2026, Berlin, 2 November 2026 (official transcript; the question on basic income and Merz’s answer)",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/digital-gipfel-pk-merz-2459634"
+        },
+        {
+          "n": 2,
+          "label": "Bundesregierung — speech by Chancellor Merz at the Digital-Gipfel 2026, “Wir müssen, wir wollen Spitzenreiter werden”, 2 November 2026 (no mention of basic income, social security or taxing AI)",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/rede-bk-digital-gipfel-2459548"
+        },
+        {
+          "n": 3,
+          "label": "ZDFheute (AFP) — “Künstliche Intelligenz: Wildberger warnt vor großen Jobverlusten”, 21 March 2026, on Wildberger’s interview with the Neue Osnabrücker Zeitung",
+          "url": "https://www.zdfheute.de/wirtschaft/wildberger-digitalminister-arbeitsmarkt-kuenstliche-intelligenz-jobverluste-grundeinkommen-100.html"
+        },
+        {
+          "n": 4,
+          "label": "dts Nachrichtenagentur via Presse Augsburg — “Wildberger will Grundeinkommens-Konzept weiter prüfen”, 13 October 2026, on Wildberger’s interview with the Tagesspiegel",
+          "url": "https://presse-augsburg.de/wildberger-will-grundeinkommens-konzept-weiter-pruefen/1201546/"
+        },
+        {
+          "n": 5,
+          "label": "Bundesregierung — “Neue Grundsicherung löst Bürgergeld ab”, 1 July 2026: Bürgergeld replaced by Grundsicherungsgeld from 1 July 2026",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562"
+        },
+        {
+          "n": 6,
+          "label": "Bundesregierung — “Regelsätze der Sozialleistungen bleiben unverändert”, 1 January 2026: standard rates for 2026, €563 a month for a single adult, unchanged since 2024",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/nullrunde-buergergeld-2383676"
+        },
+        {
+          "n": 7,
+          "label": "BIEN — About basic income",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 8,
+          "label": "Destatis — population at 30 June 2026: 83.3 million (released 22 September 2026)",
+          "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/aktuell-quartale.html"
+        },
+        {
+          "n": 9,
+          "label": "Free Lunch Lab — countries.json: Germany’s $3.00-a-day poverty line in local prices (€66 a month), UN population and World Bank GDP and central-government tax revenue used by the calculator (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/countries.json"
+        },
+        {
+          "n": 10,
+          "label": "World Bank — June 2025 update to the global poverty lines: the international poverty line of $3.00 a day in 2021 PPP",
+          "url": "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines"
+        },
+        {
+          "n": 11,
+          "label": "Destatis — “Steuereinnahmen 2025 summieren sich auf rund 990 Milliarden Euro”, 17 April 2026: €989.8 billion before distribution (federal €388.7 bn, Länder €415.3 bn, municipalities €150.9 bn, EU €34.9 bn)",
+          "url": "https://www.destatis.de/DE/Themen/Staat/Steuern/Steuereinnahmen/steuereinnahmen.html"
+        },
+        {
+          "n": 12,
+          "label": "Deutscher Bundestag — “Bundestag beschließt Ausgaben von 524,54 Milliarden Euro für 2026”, 28 November 2025",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw48-de-haushaltsgesetz-2026-dritte-lesung-1126152"
+        },
+        {
+          "n": 13,
+          "label": "Destatis — Wichtige gesamtwirtschaftliche Größen (as of 30 September 2026): 2025 nominal GDP €4,529.7 billion, general government revenue €2,137.9 billion",
+          "url": "https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Tabellen/inlandsprodukt-gesamtwirtschaft.html"
+        },
+        {
+          "n": 14,
+          "label": "Deutscher Bundestag — Drucksache 21/6855, government answer on SGB II spending in 2025 and 2026 (2 July 2026): benefit entitlements €46.65 billion in 2025 for 5.32 million recipients, €731 a month per recipient, administration about €6.8 billion",
+          "url": "https://dserver.bundestag.de/btd/21/068/2106855.pdf"
+        },
+        {
+          "n": 15,
+          "label": "Bundesagentur für Arbeit — “Familien im Blick: Die Bilanz der Familienkasse 2025”, 21 January 2026: €55.32 billion Kindergeld for 17.57 million children",
+          "url": "https://www.arbeitsagentur.de/presse/2026-04-familien-im-blick-die-bilanz-der-familienkasse-2025"
+        },
+        {
+          "n": 16,
+          "label": "DIW Berlin — Bohmann, Fiedler, Kasy, Schupp, Schwerter, “Pilotprojekt Grundeinkommen: kein Rückzug vom Arbeitsmarkt, aber bessere mentale Gesundheit”, DIW Wochenbericht 15/2025, pp. 221–229 (107 recipients of €1,200 a month vs 1,580 controls); press release of 9 April 2025",
+          "url": "https://www.diw.de/de/diw_01.c.945347.de/publikationen/wochenberichte/2025_15_1/pilotprojekt_grundeinkommen__kein_rueckzug_vom_arbeitsmarkt__aber_bessere_mentale_gesundheit.html",
+          "url2": "https://www.diw.de/de/diw_01.c.945271.de/pilotprojekt_grundeinkommen__feldstudie_entkraeftet_mythos_von_der_sozialen_haengematte.html"
+        },
+        {
+          "n": 17,
+          "label": "ZDFheute — “Nahles: 800.000 Jobs fallen durch KI weg - aber neue entstehen”, 10 November 2026, on Andrea Nahles’s interview with Handelsblatt",
+          "url": "https://www.zdfheute.de/wirtschaft/ki-jobs-stellenstreichungen-100.html"
+        },
+        {
+          "n": 18,
+          "label": "IAB — press release, 19 November 2025: “Künstliche Intelligenz könnte das BIP-Wachstum in den nächsten 15 Jahren um jährlich 0,8 Prozentpunkte erhöhen” (IAB/BIBB/GWS scenario: about 1.6 million jobs lost or created over 15 years, total employment largely stable); IAB-Forschungsbericht 23/2025",
+          "url": "https://iab.de/presseinfo/kuenstliche-intelligenz-koennte-das-bip-wachstum-in-den-naechsten-15-jahren-um-jaehrlich-08-prozentpunkte-erhoehen/",
+          "url2": "https://doku.iab.de/forschungsbericht/2025/fb2325.pdf"
+        },
+        {
+          "n": 19,
+          "label": "t3n (dpa) — “Auswirkungen von KI auf den Arbeitsmarkt: Berufseinsteiger spüren die Veränderung als Erstes”, 9 November 2026, on the ifo Institute’s AI early indicator",
+          "url": "https://t3n.de/news/auswirkungen-von-ki-auf-den-arbeitsmarkt-berufseinsteiger-spueren-die-veraenderung-als-erstes-1772398/"
+        }
+      ]
+    },
+    {
       "id": "billionaire-wealth-per-person",
       "date": "2026-11-14",
       "related": [
@@ -19038,6 +20257,7 @@ module.exports = {
       "id": "does-cash-make-people-stop-working",
       "date": "2026-11-11",
       "related": [
+        "germany-merz-basic-income-cost",
         "openresearch-cash-study",
         "finland-basic-income-experiment",
         "generative-ai-jobs-basic-income",
@@ -24904,6 +26124,7 @@ module.exports = {
       "id": "generative-ai-jobs-basic-income",
       "date": "2026-11-07",
       "related": [
+        "germany-merz-basic-income-cost",
         "refundable-tax-credit-vs-basic-income",
         "public-benefit-fund",
         "openresearch-cash-study",

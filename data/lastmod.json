@@ -1,11 +1,11 @@
 {
  "/": [
-  "bb45d62b2bc798d3",
-  "2026-11-14"
+  "6400a9577df71161",
+  "2026-11-16"
  ],
  "/ar/": [
-  "2a718de1011ddfb7",
-  "2026-11-14"
+  "75aac1f24037ddd5",
+  "2026-11-16"
  ],
  "/ar/badge/": [
   "a56636d38f2000da",
@@ -208,8 +208,8 @@
   "2026-11-11"
  ],
  "/ar/calc/de/": [
-  "24171f1675538b80",
-  "2026-11-14"
+  "e8eed7e7c46ca27d",
+  "2026-11-16"
  ],
  "/ar/calc/dj/": [
   "fb28a609aa06c1e1",
@@ -876,8 +876,8 @@
   "2026-11-11"
  ],
  "/ar/essays/": [
-  "4bc3e11aace62b52",
-  "2026-11-14"
+  "5f64985375b8ae77",
+  "2026-11-16"
  ],
  "/ar/essays/ai-agent-basic-income/": [
   "f07302ea6dd1a75d",
@@ -910,6 +910,10 @@
  "/ar/essays/generative-ai-jobs-basic-income/": [
   "e4e77c1a34630e13",
   "2026-11-11"
+ ],
+ "/ar/essays/germany-merz-basic-income-cost/": [
+  "9e9a1c0a12919d36",
+  "2026-11-16"
  ],
  "/ar/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "ab26c2f1b91092e5",
@@ -996,8 +1000,8 @@
   "2026-11-11"
  ],
  "/ar/services/aibtc/": [
-  "4b303c29ee4067dc",
-  "2026-11-11"
+  "58d4560cba8834e5",
+  "2026-11-16"
  ],
  "/ar/services/aidac/": [
   "58d8f3537a176b60",
@@ -1016,8 +1020,8 @@
   "2026-11-11"
  ],
  "/ar/services/braverewards/": [
-  "914763ffac95d2a8",
-  "2026-11-11"
+  "6ad38f5ab996cbc8",
+  "2026-11-16"
  ],
  "/ar/services/circles/": [
   "46853dfa3768b9ea",
@@ -1112,8 +1116,8 @@
   "2026-11-11"
  ],
  "/ar/services/perceptron/": [
-  "031e907972a9ffdd",
-  "2026-11-11"
+  "209eb1e09f223966",
+  "2026-11-16"
  ],
  "/ar/services/pinetwork/": [
   "848ccfeb3133f29d",
@@ -1124,8 +1128,8 @@
   "2026-11-11"
  ],
  "/ar/services/siblenetwork/": [
-  "392658b317efaec8",
-  "2026-11-11"
+  "ca5e9b107dab8147",
+  "2026-11-16"
  ],
  "/ar/services/sweatcoin/": [
   "266037f59e5c34bd",
@@ -1156,8 +1160,8 @@
   "2026-11-11"
  ],
  "/ar/shindan/careful/": [
-  "8320e2ba3602c2bc",
-  "2026-11-14"
+  "54664fb7a0f6dc54",
+  "2026-11-16"
  ],
  "/ar/shindan/crypto/": [
   "e442719628fcfe70",
@@ -1176,12 +1180,12 @@
   "2026-11-13"
  ],
  "/ar/shindan/sleeper/": [
-  "5e6f9565f201abca",
-  "2026-11-13"
+  "51d4810f4b1e32b1",
+  "2026-11-16"
  ],
  "/ar/timeline/": [
-  "33abd46ec6f73893",
-  "2026-11-11"
+  "0f65e735d2c2b9d5",
+  "2026-11-16"
  ],
  "/ar/verify/": [
   "b2491145fd5ebac8",
@@ -1192,12 +1196,12 @@
   "2026-11-11"
  ],
  "/ar/verify/kyc-id/": [
-  "4ec05e9bff2dfa76",
-  "2026-11-14"
+  "c5e3628ad9dadfc6",
+  "2026-11-16"
  ],
  "/ar/verify/none/": [
-  "84421eaa52520069",
-  "2026-11-13"
+  "41b14ac7fb55b1d9",
+  "2026-11-16"
  ],
  "/ar/verify/phone/": [
   "cffca6ee71118830",
@@ -1412,8 +1416,8 @@
   "2026-11-11"
  ],
  "/calc/de/": [
-  "0a04f1520ab88f79",
-  "2026-11-14"
+  "30f5c53f75538a2e",
+  "2026-11-16"
  ],
  "/calc/dj/": [
   "90b2651a7336b1ae",
@@ -2076,8 +2080,8 @@
   "2026-11-11"
  ],
  "/de/": [
-  "c8f480eaf1714077",
-  "2026-11-14"
+  "7be68697b1d4ee33",
+  "2026-11-16"
  ],
  "/de/badge/": [
   "edaffbdc0c0f5845",
@@ -2280,8 +2284,8 @@
   "2026-11-11"
  ],
  "/de/calc/de/": [
-  "77a7009c44f0a4e7",
-  "2026-11-14"
+  "97e3e60e9aff6ddb",
+  "2026-11-16"
  ],
  "/de/calc/dj/": [
   "9482e0515ae20ba0",
@@ -2948,8 +2952,8 @@
   "2026-11-11"
  ],
  "/de/essays/": [
-  "e1753874b17f2f26",
-  "2026-11-14"
+  "bf59ffd7ef4ba0eb",
+  "2026-11-16"
  ],
  "/de/essays/ai-agent-basic-income/": [
   "b33421dbb81ae37d",
@@ -2982,6 +2986,10 @@
  "/de/essays/generative-ai-jobs-basic-income/": [
   "6e7f03b88e0fbce7",
   "2026-11-11"
+ ],
+ "/de/essays/germany-merz-basic-income-cost/": [
+  "bcbe57af78019f1a",
+  "2026-11-16"
  ],
  "/de/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "68d681a01964a75f",
@@ -3068,8 +3076,8 @@
   "2026-11-11"
  ],
  "/de/services/aibtc/": [
-  "1d783cbf21a08dc4",
-  "2026-11-11"
+  "0626d115638e6ba9",
+  "2026-11-16"
  ],
  "/de/services/aidac/": [
   "92a13ee38480f8d7",
@@ -3088,8 +3096,8 @@
   "2026-11-11"
  ],
  "/de/services/braverewards/": [
-  "924640be32c120bb",
-  "2026-11-11"
+  "615bb726ead8c722",
+  "2026-11-16"
  ],
  "/de/services/circles/": [
   "98bf9bfad8a221fe",
@@ -3184,8 +3192,8 @@
   "2026-11-11"
  ],
  "/de/services/perceptron/": [
-  "41a6e7a8167d443e",
-  "2026-11-11"
+  "6dd03958fed5f173",
+  "2026-11-16"
  ],
  "/de/services/pinetwork/": [
   "e6bfea87ca5d2ef9",
@@ -3196,8 +3204,8 @@
   "2026-11-11"
  ],
  "/de/services/siblenetwork/": [
-  "b4856a5d767a840a",
-  "2026-11-11"
+  "dc93f7b54d2ba153",
+  "2026-11-16"
  ],
  "/de/services/sweatcoin/": [
   "550ca20633f29dd3",
@@ -3228,8 +3236,8 @@
   "2026-11-11"
  ],
  "/de/shindan/careful/": [
-  "1b252b2a966c6c51",
-  "2026-11-14"
+  "832f5e9028088053",
+  "2026-11-16"
  ],
  "/de/shindan/crypto/": [
   "a3ab14e18c00796d",
@@ -3248,12 +3256,12 @@
   "2026-11-13"
  ],
  "/de/shindan/sleeper/": [
-  "1ed29fce72a26a89",
-  "2026-11-13"
+  "977cadaa88cc3fb6",
+  "2026-11-16"
  ],
  "/de/timeline/": [
-  "26d8402a01a66850",
-  "2026-11-11"
+  "1fc06c685a6e2211",
+  "2026-11-16"
  ],
  "/de/verify/": [
   "88a8edea061399af",
@@ -3264,12 +3272,12 @@
   "2026-11-11"
  ],
  "/de/verify/kyc-id/": [
-  "5b6dd3ad4739662d",
-  "2026-11-14"
+  "513fb38e9f256b12",
+  "2026-11-16"
  ],
  "/de/verify/none/": [
-  "d45ed9e8adfcfb0e",
-  "2026-11-13"
+  "69110fb250c0bf45",
+  "2026-11-16"
  ],
  "/de/verify/phone/": [
   "1062deb8e3e64cf0",
@@ -3288,8 +3296,8 @@
   "2026-11-11"
  ],
  "/es/": [
-  "89340dcd8e53a855",
-  "2026-11-14"
+  "4642400d02c57579",
+  "2026-11-16"
  ],
  "/es/badge/": [
   "bcc6c011b9153512",
@@ -3492,8 +3500,8 @@
   "2026-11-11"
  ],
  "/es/calc/de/": [
-  "0faa198bcab20bd3",
-  "2026-11-14"
+  "b88070ae5fce88b4",
+  "2026-11-16"
  ],
  "/es/calc/dj/": [
   "856c1957b59b7ade",
@@ -4160,8 +4168,8 @@
   "2026-11-11"
  ],
  "/es/essays/": [
-  "b91e124bc694c390",
-  "2026-11-14"
+  "548b4a752766083a",
+  "2026-11-16"
  ],
  "/es/essays/ai-agent-basic-income/": [
   "2abb04143608077b",
@@ -4194,6 +4202,10 @@
  "/es/essays/generative-ai-jobs-basic-income/": [
   "007ae6b3aa3ef9fe",
   "2026-11-11"
+ ],
+ "/es/essays/germany-merz-basic-income-cost/": [
+  "92449f0b5a4b1a7b",
+  "2026-11-16"
  ],
  "/es/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "d214452cebac4350",
@@ -4280,8 +4292,8 @@
   "2026-11-11"
  ],
  "/es/services/aibtc/": [
-  "1ab1a86230ae6dda",
-  "2026-11-11"
+  "743cb21b4653091b",
+  "2026-11-16"
  ],
  "/es/services/aidac/": [
   "97110eb0129bb6f3",
@@ -4300,8 +4312,8 @@
   "2026-11-11"
  ],
  "/es/services/braverewards/": [
-  "6f6cacfdb637f748",
-  "2026-11-11"
+  "0ad9094ee2807779",
+  "2026-11-16"
  ],
  "/es/services/circles/": [
   "f296e2d949998280",
@@ -4396,8 +4408,8 @@
   "2026-11-11"
  ],
  "/es/services/perceptron/": [
-  "3b2f996564c62126",
-  "2026-11-11"
+  "e768f902eea12d41",
+  "2026-11-16"
  ],
  "/es/services/pinetwork/": [
   "a0f39ba5d6cce290",
@@ -4408,8 +4420,8 @@
   "2026-11-11"
  ],
  "/es/services/siblenetwork/": [
-  "e8c5ed30cc111fe3",
-  "2026-11-11"
+  "c848e7dc84c0705d",
+  "2026-11-16"
  ],
  "/es/services/sweatcoin/": [
   "73067bbacb244e83",
@@ -4440,8 +4452,8 @@
   "2026-11-11"
  ],
  "/es/shindan/careful/": [
-  "2c6f6c5cd22507fd",
-  "2026-11-14"
+  "c42f8906b1650673",
+  "2026-11-16"
  ],
  "/es/shindan/crypto/": [
   "bb486fa4f904c12a",
@@ -4460,12 +4472,12 @@
   "2026-11-13"
  ],
  "/es/shindan/sleeper/": [
-  "0bcc7e63ded11005",
-  "2026-11-13"
+  "f22e4ba0cda9822d",
+  "2026-11-16"
  ],
  "/es/timeline/": [
-  "acb683e6a3eef676",
-  "2026-11-11"
+  "e01357b7a74100d8",
+  "2026-11-16"
  ],
  "/es/verify/": [
   "4740b8bf1e6bd007",
@@ -4476,12 +4488,12 @@
   "2026-11-11"
  ],
  "/es/verify/kyc-id/": [
-  "82ce68900492fdd3",
-  "2026-11-14"
+  "a24e83c2f5e51c33",
+  "2026-11-16"
  ],
  "/es/verify/none/": [
-  "373e29a6881cf271",
-  "2026-11-13"
+  "5a4e6b199792175d",
+  "2026-11-16"
  ],
  "/es/verify/phone/": [
   "1e1a745eeb533985",
@@ -4496,8 +4508,8 @@
   "2026-11-11"
  ],
  "/essays/": [
-  "e68b837476dd2896",
-  "2026-11-14"
+  "826473ede5c7a5db",
+  "2026-11-16"
  ],
  "/essays/ai-agent-basic-income/": [
   "5425e102339e3088",
@@ -4530,6 +4542,10 @@
  "/essays/generative-ai-jobs-basic-income/": [
   "33eff51dce8fe768",
   "2026-11-11"
+ ],
+ "/essays/germany-merz-basic-income-cost/": [
+  "194bd6df1749c7ef",
+  "2026-11-16"
  ],
  "/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "c851a992898aa18e",
@@ -4592,8 +4608,8 @@
   "2026-11-11"
  ],
  "/hi/": [
-  "ab41c0c8810f619b",
-  "2026-11-14"
+  "e83ac4413c899ce7",
+  "2026-11-16"
  ],
  "/hi/badge/": [
   "f9fa4d28c49b877f",
@@ -4796,8 +4812,8 @@
   "2026-11-11"
  ],
  "/hi/calc/de/": [
-  "cfe712a06c69cc62",
-  "2026-11-14"
+  "caeb49e3fb0e1c49",
+  "2026-11-16"
  ],
  "/hi/calc/dj/": [
   "6a2bf7ce9aabd320",
@@ -5464,8 +5480,8 @@
   "2026-11-11"
  ],
  "/hi/essays/": [
-  "ccf88cc8d89f40a8",
-  "2026-11-14"
+  "1c779a830188a952",
+  "2026-11-16"
  ],
  "/hi/essays/ai-agent-basic-income/": [
   "bf11e7bea1bd9c1f",
@@ -5498,6 +5514,10 @@
  "/hi/essays/generative-ai-jobs-basic-income/": [
   "3dea1e9e3d730906",
   "2026-11-11"
+ ],
+ "/hi/essays/germany-merz-basic-income-cost/": [
+  "f7a6649136380435",
+  "2026-11-16"
  ],
  "/hi/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "3d26248d03b04248",
@@ -5584,8 +5604,8 @@
   "2026-11-11"
  ],
  "/hi/services/aibtc/": [
-  "bc25fa19bc81e78f",
-  "2026-11-11"
+  "b8d9e4a5583b63e3",
+  "2026-11-16"
  ],
  "/hi/services/aidac/": [
   "578c16e9f1a4eb44",
@@ -5604,8 +5624,8 @@
   "2026-11-11"
  ],
  "/hi/services/braverewards/": [
-  "a7c6a6c5c30eba28",
-  "2026-11-11"
+  "3a85e9d3302b2681",
+  "2026-11-16"
  ],
  "/hi/services/circles/": [
   "05f43c442afb0534",
@@ -5700,8 +5720,8 @@
   "2026-11-11"
  ],
  "/hi/services/perceptron/": [
-  "99dad918b4f6849d",
-  "2026-11-11"
+  "6d2f20ce6109b8a4",
+  "2026-11-16"
  ],
  "/hi/services/pinetwork/": [
   "02fe462f08579f0a",
@@ -5712,8 +5732,8 @@
   "2026-11-11"
  ],
  "/hi/services/siblenetwork/": [
-  "d2c521790e77123a",
-  "2026-11-11"
+  "20a3e8fe10c33cbe",
+  "2026-11-16"
  ],
  "/hi/services/sweatcoin/": [
   "bf72364c50e86867",
@@ -5744,8 +5764,8 @@
   "2026-11-11"
  ],
  "/hi/shindan/careful/": [
-  "be2df554066362a4",
-  "2026-11-14"
+  "d12d5fe738e48245",
+  "2026-11-16"
  ],
  "/hi/shindan/crypto/": [
   "f01266fe878b76c3",
@@ -5764,12 +5784,12 @@
   "2026-11-13"
  ],
  "/hi/shindan/sleeper/": [
-  "71a032ca40f03ccc",
-  "2026-11-13"
+  "900d03696ec9f778",
+  "2026-11-16"
  ],
  "/hi/timeline/": [
-  "62dcdfe766ced099",
-  "2026-11-11"
+  "b226a40e1cecc4ae",
+  "2026-11-16"
  ],
  "/hi/verify/": [
   "6f99bd9590c75664",
@@ -5780,12 +5800,12 @@
   "2026-11-11"
  ],
  "/hi/verify/kyc-id/": [
-  "0482f535e0995e72",
-  "2026-11-14"
+  "35d7efe281bd3728",
+  "2026-11-16"
  ],
  "/hi/verify/none/": [
-  "b5d3ca654e9f59af",
-  "2026-11-13"
+  "443d8e3eeead5f02",
+  "2026-11-16"
  ],
  "/hi/verify/phone/": [
   "4fe71cc34b4a6383",
@@ -5800,8 +5820,8 @@
   "2026-11-11"
  ],
  "/ja/": [
-  "509bfa0a56c2accc",
-  "2026-11-14"
+  "31c7d713401d9a92",
+  "2026-11-16"
  ],
  "/ja/badge/": [
   "249bae0b73177f1f",
@@ -6004,8 +6024,8 @@
   "2026-11-11"
  ],
  "/ja/calc/de/": [
-  "6b57a62b63a14aff",
-  "2026-11-14"
+  "f67ba31e86af5879",
+  "2026-11-16"
  ],
  "/ja/calc/dj/": [
   "6ff9d16f3f19ee2c",
@@ -6672,8 +6692,8 @@
   "2026-11-11"
  ],
  "/ja/essays/": [
-  "f1fe81901853b87c",
-  "2026-11-14"
+  "2e0fcafb5f269d85",
+  "2026-11-16"
  ],
  "/ja/essays/ai-agent-basic-income/": [
   "bdcbd8ba0f516d53",
@@ -6706,6 +6726,10 @@
  "/ja/essays/generative-ai-jobs-basic-income/": [
   "00ff33055302533c",
   "2026-11-11"
+ ],
+ "/ja/essays/germany-merz-basic-income-cost/": [
+  "a8e977a4459783d0",
+  "2026-11-16"
  ],
  "/ja/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "bf2c5b6aec995528",
@@ -6792,8 +6816,8 @@
   "2026-11-11"
  ],
  "/ja/services/aibtc/": [
-  "5bf73052bad0ec2b",
-  "2026-11-11"
+  "e34da777369af2bd",
+  "2026-11-16"
  ],
  "/ja/services/aidac/": [
   "ac6a1f54f44320a9",
@@ -6812,8 +6836,8 @@
   "2026-11-11"
  ],
  "/ja/services/braverewards/": [
-  "5243720743a24d26",
-  "2026-11-11"
+  "8abd3c0a08f41db1",
+  "2026-11-16"
  ],
  "/ja/services/circles/": [
   "f018eb4a477f83ce",
@@ -6908,8 +6932,8 @@
   "2026-11-11"
  ],
  "/ja/services/perceptron/": [
-  "e55aac4f0c3506f3",
-  "2026-11-11"
+  "b6f80e6056010307",
+  "2026-11-16"
  ],
  "/ja/services/pinetwork/": [
   "ede307619fcfe5df",
@@ -6920,8 +6944,8 @@
   "2026-11-11"
  ],
  "/ja/services/siblenetwork/": [
-  "f35dfd6b8a930223",
-  "2026-11-11"
+  "da566fc09fd6661b",
+  "2026-11-16"
  ],
  "/ja/services/sweatcoin/": [
   "b0ec4ee4bc0c6980",
@@ -6952,8 +6976,8 @@
   "2026-11-11"
  ],
  "/ja/shindan/careful/": [
-  "a72f849986b0e036",
-  "2026-11-14"
+  "0c4972906cce54e7",
+  "2026-11-16"
  ],
  "/ja/shindan/crypto/": [
   "7f566a2eb47518d8",
@@ -6972,12 +6996,12 @@
   "2026-11-13"
  ],
  "/ja/shindan/sleeper/": [
-  "adea1a7b240450cc",
-  "2026-11-13"
+  "0e8a5f02e956d950",
+  "2026-11-16"
  ],
  "/ja/timeline/": [
-  "1a7f5515ccd90321",
-  "2026-11-11"
+  "b028149a5ea78a27",
+  "2026-11-16"
  ],
  "/ja/verify/": [
   "4daac9c184322ab8",
@@ -6988,12 +7012,12 @@
   "2026-11-11"
  ],
  "/ja/verify/kyc-id/": [
-  "53f5c61a52667b4d",
-  "2026-11-14"
+  "4220212cc64e99ef",
+  "2026-11-16"
  ],
  "/ja/verify/none/": [
-  "aed95a90e9cd4c49",
-  "2026-11-13"
+  "5f037ba0055fd2c7",
+  "2026-11-16"
  ],
  "/ja/verify/phone/": [
   "91a8d0fbc42663fa",
@@ -7032,8 +7056,8 @@
   "2026-11-11"
  ],
  "/services/aibtc/": [
-  "c740a4945e2f3f32",
-  "2026-11-11"
+  "fd5f1fc9aea4f471",
+  "2026-11-16"
  ],
  "/services/aidac/": [
   "f02d6e0c954e7e1e",
@@ -7052,8 +7076,8 @@
   "2026-11-11"
  ],
  "/services/braverewards/": [
-  "a234982a5a325dda",
-  "2026-11-11"
+  "7f405b43003f9743",
+  "2026-11-16"
  ],
  "/services/circles/": [
   "55b49aff2c03af34",
@@ -7148,8 +7172,8 @@
   "2026-11-11"
  ],
  "/services/perceptron/": [
-  "60a62f254bc35ed9",
-  "2026-11-11"
+  "a34420450fb0f01e",
+  "2026-11-16"
  ],
  "/services/pinetwork/": [
   "fdce5306209f78f2",
@@ -7160,8 +7184,8 @@
   "2026-11-11"
  ],
  "/services/siblenetwork/": [
-  "647b3a6c4f96b861",
-  "2026-11-11"
+  "a21d8e88d79c5d65",
+  "2026-11-16"
  ],
  "/services/sweatcoin/": [
   "edec98b6da83ee81",
@@ -7192,8 +7216,8 @@
   "2026-11-11"
  ],
  "/shindan/careful/": [
-  "e73e704d2f1d5dfe",
-  "2026-11-14"
+  "e14e30b0e138d918",
+  "2026-11-16"
  ],
  "/shindan/crypto/": [
   "864e53a4c5966cab",
@@ -7212,12 +7236,12 @@
   "2026-11-13"
  ],
  "/shindan/sleeper/": [
-  "54af0a23b0008b20",
-  "2026-11-13"
+  "3744004255110730",
+  "2026-11-16"
  ],
  "/timeline/": [
-  "d6e28fd9a075f7de",
-  "2026-11-11"
+  "3f1da6683eaa5fc8",
+  "2026-11-16"
  ],
  "/verify/": [
   "50919aef4bafcd3e",
@@ -7228,12 +7252,12 @@
   "2026-11-11"
  ],
  "/verify/kyc-id/": [
-  "9e335ace81c822f7",
-  "2026-11-14"
+  "05711a5292d6fd90",
+  "2026-11-16"
  ],
  "/verify/none/": [
-  "d131f379634be343",
-  "2026-11-13"
+  "b14bb9a4a0430868",
+  "2026-11-16"
  ],
  "/verify/phone/": [
   "8479b478c11595d6",
@@ -7248,8 +7272,8 @@
   "2026-11-11"
  ],
  "/zh/": [
-  "3c13b01e21edf8f5",
-  "2026-11-14"
+  "fd7ed8b0a64267e3",
+  "2026-11-16"
  ],
  "/zh/badge/": [
   "8b3d0c67f2a5362a",
@@ -7452,8 +7476,8 @@
   "2026-11-11"
  ],
  "/zh/calc/de/": [
-  "4fb3828976ef09aa",
-  "2026-11-14"
+  "2706d3b127e766e7",
+  "2026-11-16"
  ],
  "/zh/calc/dj/": [
   "356fa39012baee70",
@@ -8120,8 +8144,8 @@
   "2026-11-11"
  ],
  "/zh/essays/": [
-  "3ed1b8855ce7966d",
-  "2026-11-14"
+  "ae599fb465748063",
+  "2026-11-16"
  ],
  "/zh/essays/ai-agent-basic-income/": [
   "542e79b98bae6c51",
@@ -8154,6 +8178,10 @@
  "/zh/essays/generative-ai-jobs-basic-income/": [
   "9175c4e4beb842db",
   "2026-11-11"
+ ],
+ "/zh/essays/germany-merz-basic-income-cost/": [
+  "8964b26afd6b9c09",
+  "2026-11-16"
  ],
  "/zh/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "62821569cc83dbb1",
@@ -8240,8 +8268,8 @@
   "2026-11-11"
  ],
  "/zh/services/aibtc/": [
-  "9ea4b19de418cbb9",
-  "2026-11-11"
+  "f21ed81a7984011a",
+  "2026-11-16"
  ],
  "/zh/services/aidac/": [
   "737a8964bc14cd8f",
@@ -8260,8 +8288,8 @@
   "2026-11-11"
  ],
  "/zh/services/braverewards/": [
-  "6fb94d5d9131e1bb",
-  "2026-11-11"
+  "e3bc8e5d5364164e",
+  "2026-11-16"
  ],
  "/zh/services/circles/": [
   "f7e2ff6273d8577a",
@@ -8356,8 +8384,8 @@
   "2026-11-11"
  ],
  "/zh/services/perceptron/": [
-  "491b69dafcdd54b0",
-  "2026-11-11"
+  "fc7525e260c3122d",
+  "2026-11-16"
  ],
  "/zh/services/pinetwork/": [
   "b7bbeb1050636d51",
@@ -8368,8 +8396,8 @@
   "2026-11-11"
  ],
  "/zh/services/siblenetwork/": [
-  "62192e999b8ed915",
-  "2026-11-11"
+  "6e86f422ec6252f4",
+  "2026-11-16"
  ],
  "/zh/services/sweatcoin/": [
   "d89b4c887c1d5a22",
@@ -8400,8 +8428,8 @@
   "2026-11-11"
  ],
  "/zh/shindan/careful/": [
-  "033f770376ad4af5",
-  "2026-11-14"
+  "ddfce49d100fa133",
+  "2026-11-16"
  ],
  "/zh/shindan/crypto/": [
   "43f7022721b7e8ef",
@@ -8420,12 +8448,12 @@
   "2026-11-13"
  ],
  "/zh/shindan/sleeper/": [
-  "49ac356844684206",
-  "2026-11-13"
+  "077723992129e660",
+  "2026-11-16"
  ],
  "/zh/timeline/": [
-  "13e32966baca9997",
-  "2026-11-11"
+  "56241d92bf4168be",
+  "2026-11-16"
  ],
  "/zh/verify/": [
   "b98c61fec1ac70fe",
@@ -8436,12 +8464,12 @@
   "2026-11-11"
  ],
  "/zh/verify/kyc-id/": [
-  "a59776b21877c84f",
-  "2026-11-14"
+  "81a9c9be716934ad",
+  "2026-11-16"
  ],
  "/zh/verify/none/": [
-  "72aee7211d2afa50",
-  "2026-11-13"
+  "8014c535c162c587",
+  "2026-11-16"
  ],
  "/zh/verify/phone/": [
   "eb6d9790e16a655e",

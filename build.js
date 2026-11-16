@@ -97,6 +97,7 @@ const ESSAY_DATA = {
   'basic-income-world-map': { calc: ['jp', 'us', 'in', 'ng', 'br', 'sa'] },
   'does-cash-make-people-stop-working': { calc: ['us', 'ca', 'fi', 'ke', 'ir'], pilots: true },
   'billionaire-wealth-per-person': { calc: ['us', 'cn', 'in', 'de', 'jp', 'hk'] },
+  'germany-merz-basic-income-cost': { calc: ['de'] },
 };
 for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
@@ -258,6 +259,29 @@ const billDrift = (() => {
     if (want.join(' | ') !== r.join(' | ')) bad.push(`${r[0]} (now ${want.slice(1).join(' / ')})`);
   }
   return bad.length ? `WARNING: billionaire-wealth-per-person: the country table differs from data/billionaires-2026.json and the calculator data for ${bad.join(', ')}; update the essay (all languages)` : '';
+})();
+// エッセイ germany-merz-basic-income-cost の費用の表（各言語の最初の 't'）は、data/germany-2026.json（Destatis の人口・税収・GDP、連邦予算）と
+// CALC_WORLD の de の貧困線（月額）から計算し直して、ずれたら知らせる（en は全列、ほかの言語は割合の3列）。ar はラテン文字を LRI/PDI で囲み、hi は CJK と isolate なし
+const GER = require('./data/germany-2026.json');
+const gerDrift = (() => {
+  const e = ESSAYS.find(x => x.id === 'germany-merz-basic-income-cost');
+  if (!e) return '';
+  for (const [k, t] of e.blocks.ar) if (k !== 't' && /[A-Za-z$]/.test(t.replace(ESSAY_LINK, '$1').replace(/⁦[^⁩]*⁩/g, ''))) throw new Error(`germany-merz-basic-income-cost.ar: Latin text outside LRI/PDI: ${t.slice(0, 60)}`);
+  for (const [, t] of e.blocks.hi) if (/[\u3000-\u9fff\u2066-\u2069]/.test(t)) throw new Error('germany-merz-basic-income-cost.hi: CJK or isolate characters');
+  const de = CALC_WORLD.find(x => x.id === 'de');
+  const bad = [];
+  const line = GER.levels.find(x => x.id === 'line');
+  if (de.line.monthly !== line.monthly) bad.push(`poverty line is now €${de.line.monthly} a month (data/germany-2026.json says €${line.monthly})`);
+  const g = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  const pct = (c, v, d = 0) => `${(c / v * 100).toFixed(d)}%`;
+  const want = GER.levels.map(l => { const c = GER.population.value * l.monthly * 12; return [`€${g(l.monthly)}`, `€${g(Math.round(c / 1e9))} billion`, pct(c, GER.taxRevenue.value), pct(c, GER.federalBudget.value), pct(c, GER.gdp.value, 1)]; });
+  const rows = l => { const t = e.blocks[l].find(([k]) => k === 't'); return t ? t[1].split('\n').slice(1).map(r => r.split(' | ')) : []; };
+  const en = rows('en');
+  if (en.length !== want.length) bad.push('en: row count');
+  en.forEach((r, i) => { const w = want[i]; if (!w) return; if (!r[0].startsWith(w[0]) || r.slice(1).join(' | ') !== w.slice(1).join(' | ')) bad.push(`en row ${i + 1} (now ${w.join(' / ')})`); });
+  const digits = r => r.slice(2).map(c => c.replace(/\D/g, '')).join('/');
+  for (const l of LANGS) if (l !== 'en') { const r = rows(l); if (r.length !== en.length || r.some((x, i) => digits(x) !== digits(en[i]))) bad.push(`${l} percentages differ from en`); }
+  return bad.length ? `WARNING: germany-merz-basic-income-cost: the cost table differs from data/germany-2026.json and the calculator data: ${bad.join(', ')}; update the essay (all languages)` : '';
 })();
 const mapRegionName = (lang, id) => { const c = CALC_WORLD.find(x => x.id === id); if (c) return c.name[lang]; try { return new Intl.DisplayNames([LANG_TAG[lang]], { type: 'region' }).of(id.toUpperCase()); } catch { return id.toUpperCase(); } };
 const mapYear = (lang, r) => (r.base ? (r.base.year ? String(r.base.year) : T[lang].mapBudgetYear) : '');
@@ -2947,6 +2971,7 @@ for (const lang of LANGS) {
 
 if (mapDrift) console.warn(mapDrift);
 if (billDrift) console.warn(billDrift);
+if (gerDrift) console.warn(gerDrift);
 if (workDrift) console.warn(workDrift);
 if (hhDrift) console.warn(hhDrift); else console.log(`household: the essay's ${HOUSEHOLD.check.length} households match (main, range, benefits now, basic income)`);
 if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);

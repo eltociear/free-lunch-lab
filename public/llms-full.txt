@@ -835,6 +835,124 @@ Cautions: Whether rewards need Orb verification is unknown, and we have not test
 
 ## Essays
 
+### Merz was asked about basic income. What would it cost Germany?
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/
+- Published: 2026-11-16
+
+On 2 November 2026, at the federal government’s Digital Summit in Berlin, a journalist asked Chancellor Friedrich Merz whether he agreed that AI would cost jobs and that some kind of basic income might be needed. He said he had “always been somewhat reserved” on the subject, because he also saw “the many disadvantages” of such a basic income, but that AI would change the world of work so fundamentally that “we will have to think about many of these aspects in the coming years”.[1] He did not come out in favour of a basic income.
+
+So what would one cost in Germany? Paying €1,000 a month to everyone who lives there, children included, would cost about €1,000 billion a year: slightly more than all the taxes collected in Germany in 2025 (€990 billion) and almost twice the federal budget. Below: what was said, the cost at four amounts, what Germany’s own experiment found, and what the estimates say about AI and jobs.
+
+#### What was said, and what was not
+
+The question came at the joint press conference of Merz and Karsten Wildberger, the minister for digital affairs and state modernisation. The journalist noted that the minister had said several times that AI would also cost jobs, especially entry-level jobs, and that some kind of basic income would be needed, and asked Merz whether he shared that view.[1]
+
+In the official transcript Merz begins: “I have always been somewhat reserved on this subject in recent years, because I also see the many disadvantages that come with such a basic income.” He goes on to say that AI “will change our world of work so fundamentally” that these questions will have to be thought through, that the greatest danger today would be “to do nothing in this area”, that the government is looking across ministries at what AI means for the labour market, and that he is convinced the opportunities outweigh the risks.[1] (Our translation of the German transcript.)
+
+Some reports circulating online say Merz also called for changing the social security system, for taxing the value AI creates and for a conditional basic income that keeps the incentive to work. None of this is in the official transcript of the press conference or in his speech at the summit,[1][2] and we found no credible source for it, so we leave it out. Taxing the revenue from AI is something Wildberger has said (see below).
+
+Wildberger has been more open. In March 2026 he told the Neue Osnabrücker Zeitung he was convinced that an unconditional basic income “can become part of the solution” to cushion the upheaval in the labour market, though it would not be enough on its own, and that Germany needed “significantly higher tax revenue” to rebuild the job market.[3] In a Tagesspiegel interview in October 2026, as reported by the dts news agency, he said he would no longer use the term but would “still take a close look at the concept behind it”, and that “the extremely high turnover from this technology” would have to be taxed to pay for the transition.[4]
+
+#### Conditional or unconditional?
+
+Germany already has a conditional minimum income. Since 1 July 2026 it has been called Grundsicherungsgeld; until then it was Bürgergeld.[5] It is paid only to people whose own income and assets are not enough, and those who are able to work are expected to look for and take a reasonable job. The standard rate for a single adult in 2026 is €563 a month, unchanged since 2024; rent and heating are paid on top.[6]
+
+An unconditional basic income, as the Basic Income Earth Network (BIEN) defines it, is paid to everyone, individually, regularly and in cash, with no means test and no requirement to work.[7] Between the two lie many designs, such as a payment that shrinks as income rises, or one tied to training or community work. Merz did not say which, if any, he had in mind. The figures below are for the unconditional version, the upper end of the range.
+
+#### What it would cost: four amounts
+
+Germany had 83.3 million inhabitants on 30 June 2026, according to the Federal Statistical Office (Destatis).[8] If everyone, children included, gets the same amount, the cost is simply the monthly amount × 12 × 83.3 million. We use four amounts.
+
+€66 a month is the standard amount in this site’s 211-country comparison (https://neteru-nyukin.eltociear.workers.dev/calc/countries/): the World Bank’s poverty line of $3.00 a day, converted into German prices.[9][10] €563 is the 2026 standard rate for a single adult.[6] €1,000 is the default on this site’s Germany calculator page (https://neteru-nyukin.eltociear.workers.dev/calc/de/). €1,200 is what each participant received in the German pilot described below.
+
+| Per person per month | Cost per year | Share of all tax revenue (2025) | Share of the federal budget (2026) | Share of GDP (2025) |
+| --- | --- | --- | --- | --- |
+| €66 (poverty line) | €66 billion | 7% | 13% | 1.5% |
+| €563 (standard rate) | €563 billion | 57% | 107% | 12.4% |
+| €1,000 | €1,000 billion | 101% | 191% | 22.1% |
+| €1,200 (pilot) | €1,200 billion | 121% | 229% | 26.5% |
+
+The yardsticks: all taxes collected in Germany in 2025 came to €989.8 billion (federal, state and local taxes, including the share passed on to the EU).[11] The Bundestag passed a federal budget of €524.54 billion for 2026.[12] Nominal GDP was €4,529.7 billion in 2025.[13] Total government revenue, including social security contributions, was €2,137.9 billion; €1,000 a month for everyone would take 47% of it, €1,200 would take 56%.[13]
+
+Even the €563 version would cost more than the whole federal budget. Only the €66 floor fits easily, at 7% of tax revenue and 1.5% of GDP.
+
+#### Not the net cost
+
+A basic income could replace some existing payments. In 2025 job centres paid benefits of about €46.7 billion to 5.3 million people under the basic income support for jobseekers (then Bürgergeld), not counting administration.[14] The family benefit offices paid €55.3 billion in Kindergeld (child benefit) for 17.6 million children.[15] Together that is about €102 billion.
+
+If a basic income replaced both completely, the €563 version would still cost about €461 billion a year (47% of tax revenue), €1,000 about €898 billion (91%) and €1,200 about €1.1 trillion (111%). Pensions and unemployment benefit are mostly paid from contributions and are not counted here; whether a basic income would replace part of them is a design choice. Taxes that claw part of the payment back are not modelled either.
+
+€563 is also not what people on the benefit actually receive. In 2025 the average entitlement was €731 a month per person, including housing costs and social insurance.[14] A basic income at the standard rate with nothing for rent would leave many of today’s recipients with less.
+
+#### What Germany’s own experiment found
+
+From June 2021 to May 2024, 122 people in Germany received €1,200 a month with no conditions, paid from donations collected by the association Mein Grundeinkommen. The German Institute for Economic Research (DIW Berlin) compared 107 of them with 1,580 similar people who received nothing (see our timeline (https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-pilotprojekt)).[16]
+
+Work: in every survey round about 90% of both groups were in work, at about 40 hours a week. Recipients did not cut their hours significantly or leave the labour market. Slightly more of them were in education or training (14% against 10%), a difference that was not statistically significant.[16]
+
+Wellbeing and money: recipients’ mental health was about 0.3 standard deviations better than the comparison group’s, and their life satisfaction 7.6 against 7.1 on a scale of 0 to 10. They saved €779 a month against €332, and gave about 8% of the payment to charity or to family and friends.[16]
+
+The limits are the ones that matter for the cost question: 122 people, three years, and the people around them did not get the money. A trial like this cannot show what would happen to prices, wages or taxes if all 83 million did. For other trials, see Does giving people money make them stop working? (https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/)
+
+#### AI and jobs in Germany: where the 800,000 comes from
+
+The figure of 800,000 jobs comes from Andrea Nahles, head of the Federal Employment Agency. She told Handelsblatt, as reported on 10 November 2026: “We forecast that over the next 15 years about 800,000 jobs in Germany will disappear because of AI”, but “a similar number will also be newly created”.[17] It matches a scenario by the agency’s research institute IAB with BIBB and GWS, published in November 2025: about 1.6 million jobs either lost or newly created over 15 years, total employment largely stable, and GDP growing 0.8 percentage points a year faster.[18] So 800,000 is a gross figure, not a net loss.
+
+Where change already shows is at the entry level. The ifo Institute reported on 9 November 2026 that full-time employment of 20- to 24-year-olds in the most AI-exposed occupations has fallen 14% since 2022, from about 279,000 to 239,000, while employment in AI-exposed occupations as a whole grew 1.8%. Its president, Clemens Fuest, said: “So far we see no broad job losses from AI. But those starting their working lives feel the change first.” The researchers add that AI is not the only cause.[19] US data show a similar pattern; see Has generative AI taken our jobs? (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/)
+
+#### What the numbers show
+
+Merz was asked about basic income and said he remained reserved, while expecting AI to force the question. In numbers, an unconditional basic income in Germany would cost from €66 billion a year at a poverty-line floor to €1.2 trillion at the €1,200 of the German pilot. At €1,000 a month it would cost about as much as all the taxes collected today, and replacing the basic income support and child benefit would cover only about a tenth of that. The German pilot found no drop in work among its recipients, but it cannot tell us what paying everyone would do.
+
+To try other amounts, or adults only, use the Germany calculator page (https://neteru-nyukin.eltociear.workers.dev/calc/de/); for every country, see the 211-country comparison (https://neteru-nyukin.eltociear.workers.dev/calc/countries/). On who might pay for a basic income funded by AI, see Universal high income: who pays? (https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/)
+
+#### Assumptions and limits
+
+Everyone, the same amount. Children get the full amount. The population is Destatis’s 83.3 million on 30 June 2026,[8] held constant. The calculator page uses the UN’s 2025 estimate (84.1 million) and World Bank GDP, so its results are about 1% higher.[9]
+
+Gross cost. Taxes on the payment, changes in work or prices, and the cost of running it are left out. The yardsticks are from different years: tax revenue and GDP for 2025, the federal budget for 2026.
+
+A federal country. Germany’s taxes are shared between the federal government, the states and the municipalities, so we compare with all of them. The world map (https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-world-map/) uses the World Bank’s central-government tax figure for every country, which for Germany leaves out the states and municipalities; there the €66 floor shows as 14% of tax revenue instead of 7%.[9]
+
+Offsets. Only the basic income support (benefit payments, without about €6.8 billion of administration costs) and Kindergeld are counted.[14][15] Tax allowances for children and other benefits are not.
+
+Quotes. Merz’s words are from the official German transcript; the translations are ours. Wildberger’s October remarks come from a news agency report on a Tagesspiegel interview. Claims we could not find in a credible source are left out.
+
+Not a proposal. The amounts are yardsticks. Nothing here says whether Germany should introduce a basic income; the numbers only show the size of the sums.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-world-map/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/billionaire-wealth-per-person/
+
+Sources:
+
+1. Bundesregierung — Mitschrift Pressekonferenz: “Künstliche Intelligenz – eine Jahrhundertchance für die Industrienation”, press conference of Chancellor Merz and Minister Wildberger at the Digital-Gipfel 2026, Berlin, 2 November 2026 (official transcript; the question on basic income and Merz’s answer): https://www.bundesregierung.de/breg-de/aktuelles/digital-gipfel-pk-merz-2459634
+2. Bundesregierung — speech by Chancellor Merz at the Digital-Gipfel 2026, “Wir müssen, wir wollen Spitzenreiter werden”, 2 November 2026 (no mention of basic income, social security or taxing AI): https://www.bundesregierung.de/breg-de/aktuelles/rede-bk-digital-gipfel-2459548
+3. ZDFheute (AFP) — “Künstliche Intelligenz: Wildberger warnt vor großen Jobverlusten”, 21 March 2026, on Wildberger’s interview with the Neue Osnabrücker Zeitung: https://www.zdfheute.de/wirtschaft/wildberger-digitalminister-arbeitsmarkt-kuenstliche-intelligenz-jobverluste-grundeinkommen-100.html
+4. dts Nachrichtenagentur via Presse Augsburg — “Wildberger will Grundeinkommens-Konzept weiter prüfen”, 13 October 2026, on Wildberger’s interview with the Tagesspiegel: https://presse-augsburg.de/wildberger-will-grundeinkommens-konzept-weiter-pruefen/1201546/
+5. Bundesregierung — “Neue Grundsicherung löst Bürgergeld ab”, 1 July 2026: Bürgergeld replaced by Grundsicherungsgeld from 1 July 2026: https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562
+6. Bundesregierung — “Regelsätze der Sozialleistungen bleiben unverändert”, 1 January 2026: standard rates for 2026, €563 a month for a single adult, unchanged since 2024: https://www.bundesregierung.de/breg-de/aktuelles/nullrunde-buergergeld-2383676
+7. BIEN — About basic income: https://basicincome.org/about-basic-income/
+8. Destatis — population at 30 June 2026: 83.3 million (released 22 September 2026): https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/aktuell-quartale.html
+9. Free Lunch Lab — countries.json: Germany’s $3.00-a-day poverty line in local prices (€66 a month), UN population and World Bank GDP and central-government tax revenue used by the calculator (CC BY 4.0): https://neteru-nyukin.eltociear.workers.dev/countries.json
+10. World Bank — June 2025 update to the global poverty lines: the international poverty line of $3.00 a day in 2021 PPP: https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines
+11. Destatis — “Steuereinnahmen 2025 summieren sich auf rund 990 Milliarden Euro”, 17 April 2026: €989.8 billion before distribution (federal €388.7 bn, Länder €415.3 bn, municipalities €150.9 bn, EU €34.9 bn): https://www.destatis.de/DE/Themen/Staat/Steuern/Steuereinnahmen/steuereinnahmen.html
+12. Deutscher Bundestag — “Bundestag beschließt Ausgaben von 524,54 Milliarden Euro für 2026”, 28 November 2025: https://www.bundestag.de/dokumente/textarchiv/2025/kw48-de-haushaltsgesetz-2026-dritte-lesung-1126152
+13. Destatis — Wichtige gesamtwirtschaftliche Größen (as of 30 September 2026): 2025 nominal GDP €4,529.7 billion, general government revenue €2,137.9 billion: https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Tabellen/inlandsprodukt-gesamtwirtschaft.html
+14. Deutscher Bundestag — Drucksache 21/6855, government answer on SGB II spending in 2025 and 2026 (2 July 2026): benefit entitlements €46.65 billion in 2025 for 5.32 million recipients, €731 a month per recipient, administration about €6.8 billion: https://dserver.bundestag.de/btd/21/068/2106855.pdf
+15. Bundesagentur für Arbeit — “Familien im Blick: Die Bilanz der Familienkasse 2025”, 21 January 2026: €55.32 billion Kindergeld for 17.57 million children: https://www.arbeitsagentur.de/presse/2026-04-familien-im-blick-die-bilanz-der-familienkasse-2025
+16. DIW Berlin — Bohmann, Fiedler, Kasy, Schupp, Schwerter, “Pilotprojekt Grundeinkommen: kein Rückzug vom Arbeitsmarkt, aber bessere mentale Gesundheit”, DIW Wochenbericht 15/2025, pp. 221–229 (107 recipients of €1,200 a month vs 1,580 controls); press release of 9 April 2025: https://www.diw.de/de/diw_01.c.945347.de/publikationen/wochenberichte/2025_15_1/pilotprojekt_grundeinkommen__kein_rueckzug_vom_arbeitsmarkt__aber_bessere_mentale_gesundheit.html (also https://www.diw.de/de/diw_01.c.945271.de/pilotprojekt_grundeinkommen__feldstudie_entkraeftet_mythos_von_der_sozialen_haengematte.html)
+17. ZDFheute — “Nahles: 800.000 Jobs fallen durch KI weg - aber neue entstehen”, 10 November 2026, on Andrea Nahles’s interview with Handelsblatt: https://www.zdfheute.de/wirtschaft/ki-jobs-stellenstreichungen-100.html
+18. IAB — press release, 19 November 2025: “Künstliche Intelligenz könnte das BIP-Wachstum in den nächsten 15 Jahren um jährlich 0,8 Prozentpunkte erhöhen” (IAB/BIBB/GWS scenario: about 1.6 million jobs lost or created over 15 years, total employment largely stable); IAB-Forschungsbericht 23/2025: https://iab.de/presseinfo/kuenstliche-intelligenz-koennte-das-bip-wachstum-in-den-naechsten-15-jahren-um-jaehrlich-08-prozentpunkte-erhoehen/ (also https://doku.iab.de/forschungsbericht/2025/fb2325.pdf)
+19. t3n (dpa) — “Auswirkungen von KI auf den Arbeitsmarkt: Berufseinsteiger spüren die Veränderung als Erstes”, 9 November 2026, on the ifo Institute’s AI early indicator: https://t3n.de/news/auswirkungen-von-ki-auf-den-arbeitsmarkt-berufseinsteiger-spueren-die-veraenderung-als-erstes-1772398/
+
 ### Share out the billionaires’ wealth: how much would each person get, once or every year?
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/billionaire-wealth-per-person/
@@ -1075,6 +1193,8 @@ Many pilot results rest on self-reported surveys. Estimates also move as better 
 Opinion: Across more than fifty years of experiments, in rich countries and poor ones, no study found that cash makes people stop working. Most found small reductions or none, and some found more work. Where work fell, it fell by hours a week or weeks a year, mostly for parents, the young and people between jobs.
 
 Opinion: That is not the same as “basic income has no effect on work”. OpenResearch and the 1970s experiments measured real, if modest, reductions, and those numbers belong in any honest costing. The better question is not “will people stop working?” but “how much less, who, and is it worth it?” The data answer the first two parts. The third is a judgement for each of us.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
 
@@ -1705,6 +1825,8 @@ Opinion: Here is what the data show as of November 2026. AI is not yet visible i
 Opinion: This is a disruption that falls first on the people with the least protection: those with no work history, no employer and no claim on unemployment insurance. That is where the simplest feature of a basic income, that it reaches everyone without asking whether you have worked, matters most. It is not the only answer, and its critics are right that it costs a great deal and that supply matters. But a floor that is ready before it is needed is easier to build than one improvised in a crisis.
 
 Opinion: In part 2 (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/), we turn to creative work: illustrators, translators, writers and voice actors, where the change has come fastest.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
 
@@ -3086,7 +3208,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-14. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-16. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -3156,7 +3278,7 @@ GoodDollar’s first smart contracts (v1), built on DAOstack: the G$ token and t
 - Language: Rust
 - License: AGPL-3.0
 - Stars: 10
-- Last commit: 2026-11-13
+- Last commit: 2026-11-14
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Node software for the Ğ1 libre currency, rebuilt on Substrate: every member of its web of trust creates a universal dividend each day
@@ -3191,7 +3313,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-14
+- Last commit: 2026-11-15
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -3338,7 +3460,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: TypeScript
 - License: AGPL-3.0
 - Stars: 6
-- Last commit: 2026-11-13
+- Last commit: 2026-11-14
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app
@@ -3350,7 +3472,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-13
+- Last commit: 2026-11-14
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s
@@ -3362,7 +3484,7 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-12
+- Last commit: 2026-11-15
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
@@ -3445,7 +3567,7 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Language: TypeScript
 - License: MIT (LICENSE)
 - Stars: 163
-- Last commit: 2026-11-14
+- Last commit: 2026-11-15
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
@@ -3533,8 +3655,8 @@ Reference mobile app for BrightID: people connect with others they know, and ana
 - Group: Simulators & research
 - Language: Python
 - License: AGPL-3.0
-- Stars: 171
-- Last commit: 2026-11-14
+- Stars: 174
+- Last commit: 2026-11-16
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 
@@ -3545,7 +3667,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-13
+- Last commit: 2026-11-14
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 
@@ -3566,8 +3688,8 @@ Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it search
 - Group: Simulators & research
 - Language: Python
 - License: CC0-1.0 (LICENSE)
-- Stars: 317
-- Last commit: 2026-11-11
+- Stars: 320
+- Last commit: 2026-11-14
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
 
