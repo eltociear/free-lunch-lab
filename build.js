@@ -218,6 +218,10 @@ function calcClientData(l) {
 }
 const CALC_DATA = Object.fromEntries(LANGS.map(l => [l, calcClientData(l)]));
 const CALC_CTX = Object.fromEntries(LANGS.map(l => [l, calcJs.context(l, CALC_DATA[l], T[l])]));
+const cfill = (t, o) => String(t).replace(/\{(\w+)\}/g, (m, k) => (k in o ? o[k] : m));
+const isoRtl = (lang, s) => (RTL.has(lang) && /[A-Za-z]/.test(s) ? `⁦${s}⁩` : s);
+const ucf = (lang, s) => (['en', 'es', 'de'].includes(lang) ? s.charAt(0).toUpperCase() + s.slice(1) : s);
+const calcIn = (c, l) => (c.inName && c.inName[l]) || c.name[l];
 const CALC_APP = Object.fromEntries(LANGS.map(l => {
   const L = T[l];
   const js = `var D=${JSON.stringify(CALC_DATA[l]).replace(/</g, '\\u003c')},L=${JSON.stringify(Object.fromEntries(CALC_KEYS.map(k => [k, L[k]]))).replace(/</g, '\\u003c')},LANG=${JSON.stringify(l)},LOC=${JSON.stringify(calcJs.LOCALE[l])};\n${calcJs.CLIENT}\n${calcJs.BOOT}`;
@@ -924,6 +928,24 @@ function clientScript(lang) {
 </script>`;
 }
 
+// トップのヒーローの下の入口（相対パス。?s=home-country / home-hh / home-essay で押された数を数える）。
+// 国のカードは言語の既定の国（en はアメリカの数字を見せて、主ボタンは全部の国の一覧）。エッセイは新しい順に3本
+function homeEntry(lang) {
+  const L = T[lang], arrow = RTL.has(lang) ? '←' : '→';
+  const c = CALC_WORLD.find(x => x.id === CALC.defaults[lang]), n = CALC_WORLD.length;
+  const A = calcCtyAnswer(lang, c, { home: true });
+  const ctyHref = `calc/${c.id}/?s=home-country`, idxHref = 'calc/countries/?s=home-country';
+  const [main, sub] = lang === 'en'
+    ? [[idxHref, cfill(L.homeCtyBtn, { n, country: c.name[lang] })], [ctyHref, cfill(L.calcCtyLink, { country: c.name[lang] })]]
+    : [[ctyHref, cfill(L.homeCtyBtn, { n, country: c.name[lang] })], [idxHref, cfill(L.calcIdxLink, { n })]];
+  const essays = ESSAYS.slice().sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0)).slice(0, 3);
+  return `<section class="he" aria-label="${esc(L.calcTitle)}">
+<div class="he-c"><h2>${esc(L.homeCtyH)}</h2><p>${esc(A.ans)}</p><p class="he-n">${esc(cfill(L.homeCtyN, { n }))}</p><p class="he-a"><a class="btn solid" href="${main[0]}">${esc(main[1])} ${arrow}</a><a href="${sub[0]}">${esc(sub[1])} ${arrow}</a></p></div>
+<div class="he-c"><h2>${esc(L.homeHhH)}</h2><p>${esc(L.homeHhP)}</p>${lang === 'ja' ? '' : `<p class="he-n">${esc(L.hhJapan)}</p>`}<p class="he-a"><a class="btn solid" href="calc/household/?s=home-hh">${esc(L.hhBoxBtn)} ${arrow}</a></p></div>
+<nav class="he-es" aria-label="${esc(L.homeEsH)}"><b>${esc(L.homeEsH)}</b><ul>${essays.map(e => `<li><a href="essays/${e.id}/?s=home-essay">${esc(e.title[lang] || e.title.en)}</a></li>`).join('')}</ul><a class="he-all" href="essays/">${esc(L.homeEsAll)} ${arrow}</a></nav>
+</section>`;
+}
+
 fs.rmSync(OUT, { recursive: true, force: true });
 for (const lang of LANGS) {
   const L = T[lang];
@@ -954,6 +976,7 @@ for (const lang of LANGS) {
     verifyAll: `<p class="news-more rv"><a class="orgs-tl" href="verify/">${esc(L.verifyAll)} →</a></p>`,
     verifyBlock: verifyPages.map(m => { const b = byMethod(m); return `<a href="verify/${m}/" dir="auto">${esc(VERIFY[m].name[lang])}<span>${b.req.length + b.opt.length}</span></a>`; }).join(''),
     quizCard: qzCard(lang, 'home-quiz'),
+    homeEntry: homeEntry(lang),
     rankHome: `<p class="news-more rv"><a class="orgs-tl" href="ranking/">${esc(L.rankHome.replace('{n}', live.length))} →</a></p>`,
     calcIdxHome: esc(L.calcIdxLink.replace('{n}', CALC_WORLD.length)),
     mapHome: esc(L.mapLink),
@@ -1382,6 +1405,12 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .cx-idx{margin-top:12px}
 .cx-cty a,.cx-idx a{display:inline-block;padding-block:10px;margin-block:-10px;color:var(--accent);font-weight:700}
 .cx-facts p{font-size:.95rem;line-height:1.9;margin:0 0 10px}
+.cx-ans{margin:14px 0 0;padding:12px 16px;border-radius:12px;border:1px solid color-mix(in srgb,var(--gold) 40%,var(--line));border-inline-start:4px solid var(--gold);background:var(--surface);font-size:1rem;line-height:1.8;overflow-wrap:break-word}
+.cx-ans strong{color:var(--gold)}
+.cx-faq h3,.cx-rel h3{margin:14px 0 4px;font-size:1rem;line-height:1.5}
+.cx-faq p{font-size:.95rem;line-height:1.9;margin:0 0 6px}
+.cx-rel .cx-ess-l{margin-bottom:6px}
+.cx-rel-p{margin-inline-start:6px;font-weight:400;color:var(--muted)}
 .cx-near-l{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .cx-near-l a{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border-radius:999px;border:1.5px solid var(--line);font-size:.875rem;font-weight:700;color:var(--ink);text-decoration:none}
 .cx-near-l a:hover{border-color:var(--muted)}
@@ -1901,12 +1930,8 @@ ${shr}<p class="qz-retry"><a class="btn line" href="${qzPath(lang)}">${esc(L.shi
 
 // ---- BI計算機（/calc/）。国・配る相手・月額を選ぶと年額と、予算・GDP との比を出す（JS）。?c=&w=&m= で結果を再現できる
 // JS が無くても、その言語の既定の国・全員・既定の月額の結果を読める。国のデータと計算のコードは /calc/app-{lang}.js（全ページ共通）
-const cfill = (t, o) => String(t).replace(/\{(\w+)\}/g, (m, k) => (k in o ? o[k] : m));
 const calcScript = lang => `<script src="/calc/app-${lang}.js?v=${CALC_APP[lang].v}"></script>`;
 // ar では、ラテン文字を含む値（FY2026、US$ など）を LRI/PDI で囲む
-const isoRtl = (lang, s) => (RTL.has(lang) && /[A-Za-z]/.test(s) ? `⁦${s}⁩` : s);
-const ucf = (lang, s) => (['en', 'es', 'de'].includes(lang) ? s.charAt(0).toUpperCase() + s.slice(1) : s);
-const calcIn = (c, l) => (c.inName && c.inName[l]) || c.name[l];
 const calcPopYear = c => String(c.pop.year || CALC_SOURCES[c.pop.src].year);
 const calcDate = lang => new Intl.DateTimeFormat(calcJs.LOCALE[lang], { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(WB.retrieved + 'T00:00:00Z'));
 const calcSrcA = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
@@ -2226,14 +2251,59 @@ function essayDataLinks(lang, e) {
   // 世界地図は小さな画像つきのカードにして目立たせる
   return `<section class="es-calc" aria-labelledby="es-calc-h"><a class="es-calc-map" href="${mapPath(lang)}">${thumbImg(`calc/${lang}/map.jpg`)}<span>${esc(L.mapLink)} ${RTL.has(lang) ? '←' : '→'}</span></a><div class="es-calc-t"><h2 id="es-calc-h">${esc(L.essayCalc)}</h2><p>${links.join(' · ')}</p></div></section>`;
 }
-// 国のページの「この国についてのエッセイ」欄（ESSAY_DATA の逆向き）。アメリカは保証所得実験の一覧も
-function calcCtyEssays(lang, c) {
-  const L = T[lang];
-  const list = ESSAYS.filter(e => ((ESSAY_DATA[e.id] || {}).calc || []).includes(c.id));
-  const us = c.id === 'us' ? `<p class="cx-idx"><a href="${usPath(lang)}">${esc(cfill(L.usH1, { n: US_TL.length }))} ${RTL.has(lang) ? '←' : '→'}</a></p>` : '';
-  if (!list.length && !us) return '';
-  return `<section class="g-sec cx-ess"><h2>${esc(L.calcCtyEssays)}</h2>${list.length ? `<ul class="cx-ess-l">${list.map(e => `<li><a href="${essayPath(lang, e)}">${esc(e.title[lang] || e.title.en)}</a></li>`).join('')}</ul>` : ''}${us}</section>`;
+// 国のページの「結論」の1文・FAQ・meta description に使う数字（ページの既定の金額で、全員に1年）。税収は CALC の国は国の税収、ほかは世界銀行の中央政府の税収
+function calcCtyAnswer(lang, c, { home = false } = {}) {
+  const L = T[lang], X = CALC_CTX[lang], v = s => isoRtl(lang, String(s));
+  const all = X.total(c.id, 'all', c.def), pct = X.pct(all / c.gdp.value);
+  let tax = null;
+  if (c.budget && c.budget.tax) tax = { pct: X.pct(all / c.budget.tax), year: v(CALC_SOURCES[c.budget.src].year), what: L.calcFaqTaxNat };
+  else if (c.gov && c.gov.tax) tax = { pct: X.pct(all / (c.gdp.value * c.gov.tax.p / 100)), year: cfill(L.calcFaqYear, { year: c.gov.tax.year }), what: L.calcFaqTaxGov };
+  const share = tax ? cfill(L.calcCtyShareTax, { tax: tax.pct, pct }) : cfill(L.calcCtyShareGdp, { pct });
+  const base = { country: c.name[lang], in: calcIn(c, lang) };
+  const usd = X.usd(all, c.id);
+  const amount = v(X.money(c.def, c.id)), total = v(X.money(all, c.id));
+  const ans = ucf(lang, cfill(L.calcCtyAns, { ...base, amount, total, share, level: home ? L.homeLvl : c.featured ? L.calcCtyLvlDef : L.calcCtyLvlLine, usdTotal: usd ? cfill(L.calcCtyAbout, { usd: v(usd) }) : '' }));
+  // meta description の候補: 全文 → 1文目だけ → 1文目を GDP 比だけに（長い通貨名の国で目安を超えるとき）
+  const tpl = L.calcCtySeoDesc, k = tpl.indexOf('{share}'), first = tpl.slice(0, k) + tpl.slice(k).match(/^\{share\}[^.。।]*[.。।]/)[0];
+  const gdpShare = cfill(L.calcCtyShareGdp, { pct });
+  const descs = [[tpl, share], [first, share], [first, gdpShare]].map(([t, sh]) => ucf(lang, cfill(t, { ...base, amount, total, share: sh })));
+  const faq = [[ucf(lang, cfill(L.calcFaqQ1, base)), ans]];
+  if (tax) faq.push([ucf(lang, cfill(L.calcFaqQ2, base)), ucf(lang, cfill(L.calcFaqA2, { tax: tax.pct, taxWhat: tax.what, year: tax.year, pct, gdpYear: c.gdp.year }))]);
+  return { ans, descs, faq, base };
 }
+// GDP 比（既定の金額で全員に1年）。「費用が近い国」を選ぶのに使う
+const CTY_SHARE = new Map(CALC_WORLD.map(c => [c.id, CALC_CTX.en.total(c.id, 'all', c.def) / c.gdp.value]));
+// 年表の項目と国（US の保証所得実験は一覧のページへ）
+const TL_CTY = { mincome: 'ca', ontario: 'ca', alaska: 'us', namibia: 'na', 'india-mp': 'in', kenya: 'ke', finland: 'fi', pilotprojekt: 'de', 'ireland-arts': 'ie', 'marshall-islands': 'mh', 'korea-rural': 'kr' };
+for (const id of Object.keys(TL_CTY)) if (!TIMELINE.some(t => t.id === id)) throw new Error(`TL_CTY: unknown timeline item ${id}`);
+const REL_ALWAYS = ['basic-income-world-map', 'billionaire-wealth-per-person'];
+for (const id of REL_ALWAYS) if (!ESSAYS.some(e => e.id === id)) throw new Error(`REL_ALWAYS: unknown essay ${id}`);
+// 国のページの「関連ページ」: 国の一覧・世界地図・億万長者のエッセイ、その国のエッセイ・年表・（日本は）わが家の計算機、同じ地域で費用（GDP 比）が近い4か国
+function calcCtyRelated(lang, c) {
+  const L = T[lang], X = CALC_CTX[lang], arrow = RTL.has(lang) ? '←' : '→';
+  const li = (href, text) => `<li><a href="${href}">${esc(text)}</a></li>`;
+  const essay = id => ESSAYS.find(e => e.id === id);
+  const items = [li(calcIdxPath(lang), cfill(L.calcIdxLink, { n: CALC_WORLD.length })), li(mapPath(lang), L.mapLink), li(essayPath(lang, essay('billionaire-wealth-per-person')), essay('billionaire-wealth-per-person').title[lang])];
+  if (c.id === 'jp') items.push(li(`${hhPath(lang)}?s=hh-cty`, L.hhHome));
+  for (const e of ESSAYS.filter(e => ((ESSAY_DATA[e.id] || {}).calc || []).includes(c.id) && !REL_ALWAYS.includes(e.id))) items.push(li(essayPath(lang, e), e.title[lang] || e.title.en));
+  for (const t of TIMELINE.filter(t => TL_CTY[t.id] === c.id)) items.push(li(`${tlPath(lang)}#tl-${t.id}`, cfill(L.calcRelTl, { name: isoRtl(lang, t.name) })));
+  if (c.id === 'us') items.push(li(usPath(lang), cfill(L.usH1, { n: US_TL.length })));
+  const me = CTY_SHARE.get(c.id);
+  const sim = CALC_WORLD.filter(x => x.region === c.region && x.id !== c.id).sort((a, b) => Math.abs(Math.log(CTY_SHARE.get(a.id) / me)) - Math.abs(Math.log(CTY_SHARE.get(b.id) / me))).slice(0, 4);
+  const simL = sim.length ? `<h3>${esc(cfill(L.calcRelSimilar, { region: L['calcRegion_' + c.region] }))}</h3><ul class="cx-near-l">${sim.map(x => `<li><a href="${calcCtyPath(lang, x)}">${esc(x.name[lang])} <span class="cx-rel-p">${esc(cfill(L.calcRelPct, { pct: X.pct(CTY_SHARE.get(x.id)) }))}</span></a></li>`).join('')}</ul>` : '';
+  return `<section class="g-sec cx-rel"><h2>${esc(L.calcRelH)}</h2><ul class="cx-ess-l">${items.join('')}</ul>${simL}</section>`;
+}
+const calcCtyFaq = (lang, faq) => `<section class="g-sec cx-faq"><h2>${esc(T[lang].calcFaqH)}</h2>${faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}</section>`;
+const faqLdOf = (lang, faq) => ({ '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: LANG_TAG[lang], mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q.replace(/[\u2066-\u2069]/g, ''), acceptedAnswer: { '@type': 'Answer', text: a.replace(/[\u2066-\u2069]/g, '') } })) });
+// 新しい文言: hi に CJK と isolate なし、ar の固定の文にラテン文字なし
+const CTY_SEO_KEYS = ['calcCtySeoTitle', 'calcCtySeoDesc', 'calcCtyShareTax', 'calcCtyShareGdp', 'calcCtyAnsLead', 'calcCtyAns', 'calcCtyLvlLine', 'calcCtyLvlDef', 'calcFaqH', 'calcFaqQ1', 'calcFaqQ2', 'calcFaqA2', 'calcFaqYear', 'calcFaqTaxGov', 'calcFaqTaxNat', 'calcFaqQ3', 'calcRelH', 'calcRelSimilar', 'calcRelPct', 'calcRelTl', 'homeCtyH', 'homeLvl', 'homeCtyN', 'homeCtyBtn', 'homeHhH', 'homeHhP', 'homeEsH', 'homeEsAll'];
+for (const l of LANGS) for (const k of CTY_SEO_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const k of CTY_SEO_KEYS) {
+  if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
+  if (/[A-Za-z$]/.test(T.ar[k].replace(/\{\w+\}/g, '').replace(/⁦[^⁩]*⁩/g, ''))) throw new Error(`ar.${k}: Latin text outside LRI/PDI`);
+}
+// 検索結果の title: サイト名を付けても目安（ja・zh 34 字、ほか 60 字）に収まるときだけ付ける
+const ctyTitle = (lang, base) => { const t = ucf(lang, cfill(T[lang].calcCtySeoTitle, base)), w = `${t} | ${T[lang].title}`; return [...w.replace(/[\u2066-\u2069]/g, '')].length <= (lang === 'ja' || lang === 'zh' ? 34 : 60) ? w : t; };
 
 function calcCountryPage(lang, c) {
   const L = T[lang];
@@ -2242,6 +2312,8 @@ function calcCountryPage(lang, c) {
   const ini = X.page(c.id, calcCtyAbs(lang, c));
   const base = { country: c.name[lang], in: calcIn(c, lang) };
   const facts = calcFacts(lang, c);
+  const A = calcCtyAnswer(lang, c);
+  A.faq.push([ucf(lang, cfill(L.calcFaqQ3, base)), facts.paras[2]]);
   const name = c.name[lang];
   const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
@@ -2261,19 +2333,19 @@ ${c.budget ? `<div><dt>${esc(L.calcSrcBudget)}</dt>${own(c.budget.src)}</div>` :
   const near = CALC_WORLD.filter(x => x.region === c.region && x.id !== c.id).sort((a, b) => b.pop.all - a.pop.all).slice(0, 12);
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></li><li><a href="${calcIdxPath(lang)}">${esc(L.calcIdxCrumb)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
 <main class="cx">
-<header class="orgs-head"><p class="eyebrow"><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></p><h1>${esc(cfill(L.calcCtyH1, base))}</h1><p class="orgs-intro">${esc(L.calcIntro)}</p></header>
+<header class="orgs-head"><p class="eyebrow"><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a></p><h1>${esc(cfill(L.calcCtyH1, base))}</h1><p class="cx-ans"><strong>${esc(L.calcCtyAnsLead)}</strong>${lang === 'ja' || lang === 'zh' ? '' : ' '}${esc(A.ans)}</p><p class="orgs-intro">${esc(L.calcIntro)}</p></header>
 <form class="cx-form" id="cx" data-url="${esc(calcCtyAbs(lang, c))}" data-c="${c.id}" onsubmit="return false"><div id="cxCtl" style="display:grid;gap:20px">${ini.controls}</div></form>
 <section class="cx-res" id="cxRes" aria-live="polite">${ini.result}</section>
 <section class="g-sec cx-facts"><h2>${esc(cfill(L.calcCtyFactsH, lang === 'en' ? { country: ucf(lang, calcIn(c, lang)) } : base))}</h2>${facts.paras.map(p => `<p>${esc(p)}</p>`).join('')}</section>
-${calcCtyEssays(lang, c)}
+${calcCtyFaq(lang, A.faq)}
+${calcCtyRelated(lang, c)}
 <section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p></section>
 ${embedSection(lang, c)}
 ${src}
 <section class="g-sec cx-near"><h2>${esc(cfill(L.calcCtyNear, { region: L['calcRegion_' + c.region] }))}</h2><ul class="cx-near-l">${near.map(x => `<li><a href="${calcCtyPath(lang, x)}">${esc(x.name[lang])}</a></li>`).join('')}</ul><p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a></p></section>
 <p class="back"><a class="btn line" href="${calcPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.calcTitle)}</a></p>
 </main>`;
-  const desc = cfill(L.calcCtyDesc, { ...base, amount: isoRtl(lang, X.money(c.def, c.id)), total: isoRtl(lang, X.money(facts.all, c.id)), pct: X.pct(facts.all / c.gdp.value) });
-  return shell(lang, { title: `${cfill(L.calcCtyTitle, base)} | ${L.title}`, desc: clip(ucf(lang, desc), lang), hrefFor: l => calcCtyAbs(l, c), pathFor: l => calcCtyPath(l, c), ld, ogType: 'website', body, script: calcScript(lang) + embedCopyScript(L), image: ogImage(`calc/${lang}/index.jpg`) });
+  return shell(lang, { title: ctyTitle(lang, base), desc: clip(A.descs.find(d => [...d].length <= DESC_RANGE(lang)[1]) || A.descs[2], lang), hrefFor: l => calcCtyAbs(l, c), pathFor: l => calcCtyPath(l, c), ld: [ld, faqLdOf(lang, A.faq)], ogType: 'website', body, script: calcScript(lang) + embedCopyScript(L), image: ogImage(`calc/${lang}/index.jpg`) });
 }
 
 // 国の一覧（/calc/countries/）: 全員に1日3.00ドル（貧困ライン）を1年配ったときの GDP 比。並べ替えと名前での絞り込みは JS

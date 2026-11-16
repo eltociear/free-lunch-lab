@@ -3313,7 +3313,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-15
+- Last commit: 2026-11-16
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -3567,7 +3567,7 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Language: TypeScript
 - License: MIT (LICENSE)
 - Stars: 163
-- Last commit: 2026-11-15
+- Last commit: 2026-11-16
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
@@ -3590,7 +3590,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 42
-- Last commit: 2026-11-13
+- Last commit: 2026-11-16
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -3655,7 +3655,7 @@ Reference mobile app for BrightID: people connect with others they know, and ana
 - Group: Simulators & research
 - Language: Python
 - License: AGPL-3.0
-- Stars: 174
+- Stars: 175
 - Last commit: 2026-11-16
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
@@ -3667,7 +3667,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-14
+- Last commit: 2026-11-16
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 
@@ -3688,7 +3688,7 @@ Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it search
 - Group: Simulators & research
 - Language: Python
 - License: CC0-1.0 (LICENSE)
-- Stars: 320
+- Stars: 321
 - Last commit: 2026-11-14
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
@@ -3711,7 +3711,7 @@ UBI analyses from the Policy Simulation Library, including the code behind an AE
 - Language: Python
 - License: AGPL-3.0
 - Stars: 252
-- Last commit: 2026-10-23
+- Last commit: 2026-11-16
 
 Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes
 

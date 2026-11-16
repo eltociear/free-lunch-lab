@@ -135,7 +135,7 @@
       "language": "JavaScript"
     },
     "github.com:PSLmodels/Tax-Calculator": {
-      "stars": 320,
+      "stars": 321,
       "lastCommit": "2026-11-14",
       "archived": false,
       "license": null,
@@ -150,13 +150,13 @@
     },
     "github.com:PolicyEngine/policyengine-uk": {
       "stars": 53,
-      "lastCommit": "2026-11-14",
+      "lastCommit": "2026-11-16",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
     },
     "github.com:PolicyEngine/policyengine-us": {
-      "stars": 174,
+      "stars": 175,
       "lastCommit": "2026-11-16",
       "archived": false,
       "license": "AGPL-3.0",
@@ -255,7 +255,7 @@
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-11-15",
+      "lastCommit": "2026-11-16",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"
@@ -304,21 +304,21 @@
     },
     "github.com:openfisca/openfisca-core": {
       "stars": 252,
-      "lastCommit": "2026-10-23",
+      "lastCommit": "2026-11-16",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
     },
     "github.com:socialincome-san/public": {
       "stars": 163,
-      "lastCommit": "2026-11-15",
+      "lastCommit": "2026-11-16",
       "archived": false,
       "license": null,
       "language": "TypeScript"
     },
     "github.com:worldcoin/world-id-protocol": {
       "stars": 42,
-      "lastCommit": "2026-11-13",
+      "lastCommit": "2026-11-16",
       "archived": false,
       "license": "MIT",
       "language": "Rust"

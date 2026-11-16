@@ -217,6 +217,7 @@
 @font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/noto-sans-sc-900-zh-aa24f28285.woff2) format("woff2");unicode-range:U+4f38,U+5bb9,U+5e8f,U+5ef6,U+624d,U+9605}
 @font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/noto-sans-sc-900-zh-3c46da3d57.woff2) format("woff2");unicode-range:U+4ebf,U+8c6a,U+8d22}
 @font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/noto-sans-sc-900-zh-e21bce4714.woff2) format("woff2");unicode-range:U+9ed8}
+@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/noto-sans-sc-900-zh-791cac3879.woff2) format("woff2");unicode-range:U+7ae5}
 @font-face{font-family:"Dela Gothic One";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/dela-gothic-one-400-zh-7bae6950fd.woff2) format("woff2");unicode-range:U+41-4d,U+4f-62,U+67-11e}
 @font-face{font-family:"Dela Gothic One";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/dela-gothic-one-400-zh-db092fbc2a.woff2) format("woff2");unicode-range:U+65}
 @font-face{font-family:"Dela Gothic One";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/dela-gothic-one-400-zh-11be7147c8.woff2) format("woff2");unicode-range:U+4e}
@@ -310,6 +311,22 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .qz-home{margin-top:10px;display:flex;flex-wrap:wrap;gap:0 20px}
 .qz-home a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;color:var(--gold);text-underline-offset:4px}
+/* ヒーローの下の入口: 国の費用・わが家の計算機・新しいエッセイ */
+.he{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding-bottom:clamp(28px,5vw,48px)}
+.he-c{display:grid;gap:8px;align-content:start;min-width:0;padding:20px 22px;border-radius:14px;border:1px solid var(--line);border-inline-start:4px solid var(--gold);background:color-mix(in srgb,var(--surface) 78%,transparent)}
+.he-c h2{font-size:clamp(1.25rem,3vw,1.6rem);color:#fff;overflow-wrap:break-word}
+.he-c p{margin:0;font-size:.95rem;line-height:1.75;overflow-wrap:break-word}
+.he-c .he-n{font-size:.875rem;color:var(--muted)}
+.he-a{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:6px}
+.he-a .btn{white-space:normal;text-align:center}
+.he-a a:not(.btn){display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.92rem;color:var(--gold);text-underline-offset:4px}
+.he-es{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:0 18px;min-width:0;font-size:.92rem}
+.he-es b{color:var(--muted);font-weight:700}
+.he-es ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0 18px;min-width:0}
+.he-es li{min-width:0}
+.he-es a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);overflow-wrap:anywhere;text-underline-offset:4px}
+.he-es .he-all{color:var(--gold)}
+@media (max-width:760px){.he{grid-template-columns:1fr}.he-c{padding:18px}.he-es{display:grid;gap:0}.he-es ul{display:grid;gap:0}}
 /* 診断への入口のカード（トップのヒーロー・エッセイの終わり） */
 .qzc{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px;padding:14px 16px;max-width:34em;border:1px solid var(--line);border-inline-start:3px solid var(--gold);border-radius:12px;background:color-mix(in srgb,var(--surface) 72%,transparent)}
 .qzc-t{flex:1 1 13em;min-width:0;display:grid;gap:2px}
@@ -787,6 +804,11 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
   <p class="awake"><span>打开本页已过</span><span class="dot" id="timer">00:00:00</span><small>躺赚应用在这段时间里也一直在后台运行</small></p>
   </div>
 </header>
+<section class="he" aria-label="基本收入计算器">
+<div class="he-c"><h2>在你的国家发基本收入要花多少钱？</h2><p>向中国所有人每月发¥1,000（计算器的基准金额），一年需要17万亿元（约2.36万亿美元），相当于税收的173%、GDP的12.1%。</p><p class="he-n">211个国家和地区，官方数据，附出处。</p><p class="he-a"><a class="btn solid" href="calc/cn/?s=home-country">查看中国的数字 →</a><a href="calc/countries/?s=home-country">全部211个国家和地区对比 →</a></p></div>
+<div class="he-c"><h2>你家会多拿还是少拿？</h2><p>输入家庭成员、收入、养老金和生活保护，看看每月3万至10万日元的基本收入会让你家每月多拿或少拿多少。</p><p class="he-n">适用于日本的家庭：使用日本2026年度的儿童补贴、养老金和生活保护标准，单位为日元。</p><p class="he-a"><a class="btn solid" href="calc/household/?s=home-hh">计算我家 →</a></p></div>
+<nav class="he-es" aria-label="最新随笔"><b>最新随笔</b><ul><li><a href="essays/germany-merz-basic-income-cost/?s=home-essay">德国总理默茨被问到基本收入。在德国给每个人发钱要花多少？</a></li><li><a href="essays/billionaire-wealth-per-person/?s=home-essay">把全世界亿万富豪的财富分给所有人，每人能拿多少？一次分完，还是每年分</a></li><li><a href="essays/does-cash-make-people-stop-working/?s=home-essay">发钱会让人不再工作吗？用世界各地的实验数据来检验</a></li></ul><a class="he-all" href="essays/">全部随笔 →</a></nav>
+</section>
 </div>
 </div>
 
