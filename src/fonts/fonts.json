@@ -1623,6 +1623,10 @@
    {
     "file": "dela-gothic-one-400-ja-0fc4541eef.woff2",
     "chars": "相費"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-46c5c271e7.woff2",
+    "chars": "官庁"
    }
   ],
   "ja:dot": [
@@ -2363,6 +2367,10 @@
    {
     "file": "noto-sans-sc-900-zh-791cac3879.woff2",
     "chars": "童"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-7cbe21b926.woff2",
+    "chars": "佐岗州推曾治消"
    }
   ],
   "zh:dot": [

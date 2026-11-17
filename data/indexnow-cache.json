@@ -1,6 +1,6 @@
 {
  "scheme": "main-v1",
- "submittedOn": "2026-11-16",
+ "submittedOn": "2026-11-17",
  "pages": {
   "https://neteru-nyukin.eltociear.workers.dev/organizations/": "5722388bbb90d695",
   "https://neteru-nyukin.eltociear.workers.dev/ja/organizations/": "12e1a422fd24a65a",
@@ -23,13 +23,6 @@
   "https://neteru-nyukin.eltociear.workers.dev/es/pilots/us/": "9147abcdbe91a1e4",
   "https://neteru-nyukin.eltociear.workers.dev/de/pilots/us/": "80a7eed351efcf6b",
   "https://neteru-nyukin.eltociear.workers.dev/ar/pilots/us/": "f76b4e915c6ae8b0",
-  "https://neteru-nyukin.eltociear.workers.dev/news/": "62c237011cae6626",
-  "https://neteru-nyukin.eltociear.workers.dev/ja/news/": "ae69ad6fcda4783f",
-  "https://neteru-nyukin.eltociear.workers.dev/zh/news/": "a0bcabf7b08afded",
-  "https://neteru-nyukin.eltociear.workers.dev/hi/news/": "a9073254a12ef517",
-  "https://neteru-nyukin.eltociear.workers.dev/es/news/": "c45b537a6a63c586",
-  "https://neteru-nyukin.eltociear.workers.dev/de/news/": "c428adccbd99b5b3",
-  "https://neteru-nyukin.eltociear.workers.dev/ar/news/": "0099404a987a1534",
   "https://neteru-nyukin.eltociear.workers.dev/open-source/": "a7f1f9b5b2e1eb00",
   "https://neteru-nyukin.eltociear.workers.dev/ja/open-source/": "c3e07212dabdf77d",
   "https://neteru-nyukin.eltociear.workers.dev/zh/open-source/": "9170987861cb61f4",
@@ -2122,6 +2115,13 @@
   "https://neteru-nyukin.eltociear.workers.dev/hi/calc/zw/": "ecb426bc9a95b02b",
   "https://neteru-nyukin.eltociear.workers.dev/es/calc/zw/": "729b7d2a1688c1c4",
   "https://neteru-nyukin.eltociear.workers.dev/de/calc/zw/": "3468870d965dfe7c",
-  "https://neteru-nyukin.eltociear.workers.dev/ar/calc/zw/": "edcb07082ad018e9"
+  "https://neteru-nyukin.eltociear.workers.dev/ar/calc/zw/": "edcb07082ad018e9",
+  "https://neteru-nyukin.eltociear.workers.dev/news/": "a5df4b018e514841",
+  "https://neteru-nyukin.eltociear.workers.dev/ja/news/": "23a77a0664458323",
+  "https://neteru-nyukin.eltociear.workers.dev/zh/news/": "6a562bb4a888c454",
+  "https://neteru-nyukin.eltociear.workers.dev/hi/news/": "2e4102c447374ab7",
+  "https://neteru-nyukin.eltociear.workers.dev/es/news/": "135b1a2551609a41",
+  "https://neteru-nyukin.eltociear.workers.dev/de/news/": "4cdefd29c3772cb9",
+  "https://neteru-nyukin.eltociear.workers.dev/ar/news/": "b3ca9129105e45f9"
  }
 }

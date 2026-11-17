@@ -5,8 +5,32 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/</link>
     <description>每周汇总全球基本收入、保障收入和现金转移的新闻：试点、政策、研究以及 AI 与资金的动向。每条新闻都经人工核实来源，用我们自己的话概括，并附上原文链接，方便查证。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/zh/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>德国联邦就业局局长：15年内AI将使80万个岗位消失</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-de-nahles-ai-800k-jobs</link>
+      <guid isPermaLink="false">bi-news-de-nahles-ai-800k-jobs</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <category>AI 与资金</category>
+      <description>德国联邦就业局局长安德烈娅·纳勒斯对《商报》表示，预计未来15年AI将使德国约80万个岗位消失，同时新增大致相同数量的岗位，企业服务以及银行和保险业的分析类工作等行业受冲击更大。她本人没有提到基本收入，但基本收入地球网络（BIEN）网站上的一篇文章援引这一预测，认为应重新思考收入保障。 来源: ZDFheute (dpa) https://www.zdfheute.de/wirtschaft/ki-jobs-stellenstreichungen-100.html, Basic Income Earth Network https://basicincome.org/news/2026/11/ai-the-future-of-work-and-why-we-need-to-rethink-income-security/</description>
+    </item>
+    <item>
+      <title>韩国农村基本收入试点：34个郡申请2027年加入</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-kr-rural-pilot-2027-applications</link>
+      <guid isPermaLink="false">bi-news-kr-rural-pilot-2027-applications</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <category>试点</category>
+      <description>在有资格申请的52个人口减少郡中，有34个郡申请从2027年起加入农村基本收入试点，约18个名额，竞争比约为1.9比1。农林畜产食品部计划经专家评审后于11月19日前后公布暂定结果，最终入选取决于国会通过2027年预算。 来源: Ministry of Agriculture, Food and Rural Affairs (Korea) https://www.mafra.go.kr/bbs/home/792/611224/download.do</description>
+    </item>
+    <item>
+      <title>曾在亚特兰大推动保障收入试点的前市长当选佐治亚州州长</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-us-georgia-bottoms-governor</link>
+      <guid isPermaLink="false">bi-news-us-georgia-bottoms-governor</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>基莎·兰斯·博顿斯在11月3日的佐治亚州州长选举中获胜。她任亚特兰大市长期间参与设立了I.M.P.A.C.T.试点，每月向300名低收入居民发放500美元。她并未提出全州范围的基本收入；《新闻周刊》指出，在共和党占多数的州参议院，由州财政出资的方案几乎没有机会通过。 来源: Newsweek https://www.newsweek.com/keisha-lance-bottoms-universal-basic-income-georgia-12708938, Basic Income Earth Network https://basicincome.org/news/2026/11/can-political-leadership-help-move-guaranteed-income-from-temporary-pilots-towards-lasting-public-policy/</description>
+    </item>
     <item>
       <title>李在明总统视察韩国农村基本收入试点</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-kr-lee-visits-rural-pilot</link>

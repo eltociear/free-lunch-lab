@@ -5,8 +5,32 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/es/news/</link>
     <description>Resumen semanal, revisado a mano, de noticias de renta básica, ingreso garantizado y transferencias de efectivo en el mundo, con nuestras palabras y fuentes.</description>
     <language>es</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/es/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>La jefa de la agencia de empleo alemana prevé que la IA elimine 800.000 empleos en 15 años</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-de-nahles-ai-800k-jobs</link>
+      <guid isPermaLink="false">bi-news-de-nahles-ai-800k-jobs</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <category>IA y financiación</category>
+      <description>Andrea Nahles, presidenta de la Agencia Federal de Empleo de Alemania, dijo al Handelsblatt que prevé que la IA elimine unos 800.000 empleos en Alemania en 15 años y cree otros tantos; algunos sectores, como los servicios a empresas y las tareas analíticas de bancos y aseguradoras, se verán más afectados. No mencionó la renta básica; un artículo publicado en la web de la Red Mundial de la Renta Básica (BIEN) citó la previsión como motivo para repensar la seguridad de ingresos. Fuente: ZDFheute (dpa) https://www.zdfheute.de/wirtschaft/ki-jobs-stellenstreichungen-100.html, Basic Income Earth Network https://basicincome.org/news/2026/11/ai-the-future-of-work-and-why-we-need-to-rethink-income-security/</description>
+    </item>
+    <item>
+      <title>34 condados coreanos piden sumarse al piloto de renta básica rural en 2027</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-kr-rural-pilot-2027-applications</link>
+      <guid isPermaLink="false">bi-news-kr-rural-pilot-2027-applications</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Piloto</category>
+      <description>34 de los 52 condados en despoblación que podían optar pidieron sumarse al piloto de renta básica rural desde 2027, unos 1,9 candidatos por cada una de las cerca de 18 plazas. El Ministerio de Agricultura prevé anunciar una selección provisional hacia el 19 de noviembre tras una evaluación de expertos; la decisión final depende de que el Parlamento apruebe el presupuesto de 2027. Fuente: Ministry of Agriculture, Food and Rural Affairs (Korea) https://www.mafra.go.kr/bbs/home/792/611224/download.do</description>
+    </item>
+    <item>
+      <title>La exalcaldesa que impulsó la renta garantizada en Atlanta, elegida gobernadora de Georgia</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-us-georgia-bottoms-governor</link>
+      <guid isPermaLink="false">bi-news-us-georgia-bottoms-governor</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Política</category>
+      <description>Keisha Lance Bottoms ganó el 3 de noviembre la elección a gobernadora de Georgia. Como alcaldesa de Atlanta ayudó a crear el piloto I.M.P.A.C.T., que pagó 500 dólares al mes a 300 residentes de bajos ingresos. No ha propuesto una renta básica estatal, y Newsweek señala que una financiada por el estado tiene pocas opciones en el Senado estatal, de mayoría republicana. Fuente: Newsweek https://www.newsweek.com/keisha-lance-bottoms-universal-basic-income-georgia-12708938, Basic Income Earth Network https://basicincome.org/news/2026/11/can-political-leadership-help-move-guaranteed-income-from-temporary-pilots-towards-lasting-public-policy/</description>
+    </item>
     <item>
       <title>El presidente Lee visita el piloto de renta básica rural de Corea del Sur</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/es/news/#n-kr-lee-visits-rural-pilot</link>

@@ -3975,6 +3975,119 @@ module.exports = {
   },
   "BI_NEWS": [
     {
+      "updated": "2026-11-17",
+      "items": [
+        {
+          "id": "de-nahles-ai-800k-jobs",
+          "date": "2026-11-10",
+          "region": "de",
+          "tag": "ai",
+          "essays": [
+            "germany-merz-basic-income-cost",
+            "generative-ai-jobs-basic-income"
+          ],
+          "sources": [
+            {
+              "name": "ZDFheute (dpa)",
+              "url": "https://www.zdfheute.de/wirtschaft/ki-jobs-stellenstreichungen-100.html"
+            },
+            {
+              "name": "Basic Income Earth Network",
+              "url": "https://basicincome.org/news/2026/11/ai-the-future-of-work-and-why-we-need-to-rethink-income-security/"
+            }
+          ],
+          "title": {
+            "en": "Germany’s job agency chief expects AI to cut 800,000 jobs in 15 years",
+            "ja": "ドイツ連邦雇用庁長官「AIで15年間に80万人分の仕事がなくなる」",
+            "zh": "德国联邦就业局局长：15年内AI将使80万个岗位消失",
+            "hi": "जर्मनी की रोज़गार एजेंसी प्रमुख: 15 साल में AI से 8 लाख नौकरियाँ जाएँगी",
+            "es": "La jefa de la agencia de empleo alemana prevé que la IA elimine 800.000 empleos en 15 años",
+            "de": "BA-Chefin Nahles: KI kostet in 15 Jahren rund 800.000 Jobs",
+            "ar": "رئيسة وكالة التوظيف الألمانية: الذكاء الاصطناعي سيلغي 800 ألف وظيفة خلال 15 عامًا"
+          },
+          "summary": {
+            "en": "Germany’s Federal Employment Agency chief Andrea Nahles told Handelsblatt she expects AI to cut about 800,000 jobs in 15 years and create about as many, hitting some sectors harder, such as business services and analytical work at banks and insurers. She did not mention basic income; an article on BIEN’s site cited it as a reason to rethink income security.",
+            "ja": "ドイツ連邦雇用庁のナーレス長官はハンデルスブラット紙に、15年でAIにより約80万人分の仕事がなくなり、ほぼ同数が生まれるとの見通しを語りました。影響がより大きい業界の例は企業向けサービスや銀行・保険の分析職です。本人はベーシックインカムに触れていませんが、BIENサイトの記事はこれを所得保障見直しの根拠に挙げました。",
+            "zh": "德国联邦就业局局长安德烈娅·纳勒斯对《商报》表示，预计未来15年AI将使德国约80万个岗位消失，同时新增大致相同数量的岗位，企业服务以及银行和保险业的分析类工作等行业受冲击更大。她本人没有提到基本收入，但基本收入地球网络（BIEN）网站上的一篇文章援引这一预测，认为应重新思考收入保障。",
+            "hi": "जर्मनी की संघीय रोज़गार एजेंसी की प्रमुख आंद्रेया नाहलेस ने हांडेल्सब्लाट से कहा कि अगले 15 साल में AI से जर्मनी में लगभग 8 लाख नौकरियाँ जाएँगी और लगभग इतनी ही नई बनेंगी; कुछ क्षेत्रों पर ज़्यादा असर होगा, जैसे कंपनियों को सेवाएँ देने वाले काम और बैंकों व बीमा कंपनियों के विश्लेषण वाले काम। उन्होंने बेसिक इनकम का ज़िक्र नहीं किया, पर बेसिक इनकम अर्थ नेटवर्क (BIEN) की वेबसाइट पर छपे एक लेख ने इस अनुमान को आय सुरक्षा पर फिर से सोचने का कारण बताया।",
+            "es": "Andrea Nahles, presidenta de la Agencia Federal de Empleo de Alemania, dijo al Handelsblatt que prevé que la IA elimine unos 800.000 empleos en Alemania en 15 años y cree otros tantos; algunos sectores, como los servicios a empresas y las tareas analíticas de bancos y aseguradoras, se verán más afectados. No mencionó la renta básica; un artículo publicado en la web de la Red Mundial de la Renta Básica (BIEN) citó la previsión como motivo para repensar la seguridad de ingresos.",
+            "de": "BA-Chefin Andrea Nahles sagte dem Handelsblatt, KI werde in Deutschland in den nächsten 15 Jahren etwa 800.000 Jobs kosten und ähnlich viele neue schaffen; einige Branchen treffe der Abbau härter, etwa Unternehmensdienstleister und analytische Tätigkeiten bei Banken und Versicherern. Ein Grundeinkommen erwähnte sie nicht; ein Beitrag auf der Website des Basic Income Earth Network nahm die Prognose zum Anlass, Einkommenssicherung neu zu denken.",
+            "ar": "قالت أندريا ناهلس، رئيسة الوكالة الاتحادية للتوظيف في ألمانيا، لصحيفة ⁦Handelsblatt⁩ إنها تتوقع أن يلغي الذكاء الاصطناعي نحو 800 ألف وظيفة في ألمانيا خلال 15 عامًا وأن يخلق عددًا مماثلًا، وأن بعض القطاعات ستتأثر أكثر، مثل خدمات الشركات والأعمال التحليلية في البنوك وشركات التأمين. ولم تذكر الدخل الأساسي، لكن مقالًا نُشر على موقع شبكة الدخل الأساسي العالمية (⁦BIEN⁩) استشهد بالتوقع سببًا لإعادة التفكير في أمن الدخل."
+          }
+        },
+        {
+          "id": "kr-rural-pilot-2027-applications",
+          "date": "2026-11-04",
+          "region": "kr",
+          "tag": "pilot",
+          "timeline": [
+            "korea-rural"
+          ],
+          "sources": [
+            {
+              "name": "Ministry of Agriculture, Food and Rural Affairs (Korea)",
+              "url": "https://www.mafra.go.kr/bbs/home/792/611224/download.do"
+            }
+          ],
+          "title": {
+            "en": "34 Korean counties apply to join the rural basic income pilot in 2027",
+            "ja": "韓国の農村基本所得、2027年からの参加公募に34郡が応募",
+            "zh": "韩国农村基本收入试点：34个郡申请2027年加入",
+            "hi": "दक्षिण कोरिया: 2027 से ग्रामीण बेसिक इनकम पायलट में जुड़ने के लिए 34 काउंटियों ने आवेदन किया",
+            "es": "34 condados coreanos piden sumarse al piloto de renta básica rural en 2027",
+            "de": "34 südkoreanische Landkreise bewerben sich für das ländliche Grundeinkommen ab 2027",
+            "ar": "34 مقاطعة كورية تتقدّم للانضمام إلى تجربة الدخل الأساسي الريفي في 2027"
+          },
+          "summary": {
+            "en": "34 of the 52 eligible depopulating counties applied to join the rural basic income pilot from 2027, about 1.9 applicants for each of the roughly 18 places. The agriculture ministry plans to name provisional picks around 19 November after an expert review; the final choice depends on parliament passing the 2027 budget.",
+            "ja": "2027年から農村基本所得の試験事業に加わる郡の公募に、対象となる人口減少地域52郡のうち34郡が応募しました。選ばれるのは18郡程度で、倍率は約1.9倍です。農林畜産食品部は専門家の審査を経て11月19日ごろに暫定結果を発表する予定で、最終決定は国会での2027年度予算の確定が前提です。",
+            "zh": "在有资格申请的52个人口减少郡中，有34个郡申请从2027年起加入农村基本收入试点，约18个名额，竞争比约为1.9比1。农林畜产食品部计划经专家评审后于11月19日前后公布暂定结果，最终入选取决于国会通过2027年预算。",
+            "hi": "पात्र 52 घटती आबादी वाली काउंटियों में से 34 ने 2027 से ग्रामीण बेसिक इनकम पायलट में जुड़ने के लिए आवेदन किया; लगभग 18 जगहें हैं, यानी हर जगह के लिए करीब 1.9 आवेदक। कृषि मंत्रालय विशेषज्ञ समीक्षा के बाद लगभग 19 नवंबर को अस्थायी सूची घोषित करेगा; अंतिम चयन संसद से 2027 का बजट पास होने पर निर्भर है।",
+            "es": "34 de los 52 condados en despoblación que podían optar pidieron sumarse al piloto de renta básica rural desde 2027, unos 1,9 candidatos por cada una de las cerca de 18 plazas. El Ministerio de Agricultura prevé anunciar una selección provisional hacia el 19 de noviembre tras una evaluación de expertos; la decisión final depende de que el Parlamento apruebe el presupuesto de 2027.",
+            "de": "34 der 52 berechtigten schrumpfenden Landkreise haben sich beworben, ab 2027 am ländlichen Grundeinkommen-Pilotprojekt teilzunehmen, rund 1,9 Bewerber für jeden der etwa 18 Plätze. Das Agrarministerium will nach einer Expertenprüfung um den 19. November eine vorläufige Auswahl bekanntgeben; endgültig entschieden wird erst, wenn das Parlament den Haushalt 2027 beschließt.",
+            "ar": "تقدّمت 34 من أصل 52 مقاطعة مؤهلة يتناقص سكانها للانضمام إلى تجربة الدخل الأساسي الريفي اعتبارًا من 2027، أي نحو 1.9 متقدّم لكل مقعد من قرابة 18 مقعدًا. وتعتزم وزارة الزراعة إعلان اختيار مؤقت نحو 19 نوفمبر بعد تقييم الخبراء، ويتوقف الاختيار النهائي على إقرار البرلمان لموازنة 2027."
+          }
+        },
+        {
+          "id": "us-georgia-bottoms-governor",
+          "date": "2026-11-03",
+          "region": "us",
+          "tag": "policy",
+          "timeline": [
+            "us-atlanta-impact"
+          ],
+          "sources": [
+            {
+              "name": "Newsweek",
+              "url": "https://www.newsweek.com/keisha-lance-bottoms-universal-basic-income-georgia-12708938"
+            },
+            {
+              "name": "Basic Income Earth Network",
+              "url": "https://basicincome.org/news/2026/11/can-political-leadership-help-move-guaranteed-income-from-temporary-pilots-towards-lasting-public-policy/"
+            }
+          ],
+          "title": {
+            "en": "Atlanta’s former guaranteed income mayor elected governor of Georgia",
+            "ja": "アトランタで保証所得の試験事業に関わった元市長、ジョージア州知事に",
+            "zh": "曾在亚特兰大推动保障收入试点的前市长当选佐治亚州州长",
+            "hi": "अटलांटा के गारंटीड इनकम पायलट से जुड़ी पूर्व मेयर जॉर्जिया की गवर्नर चुनी गईं",
+            "es": "La exalcaldesa que impulsó la renta garantizada en Atlanta, elegida gobernadora de Georgia",
+            "de": "Atlantas frühere Bürgermeisterin mit Garantieeinkommen-Pilot wird Gouverneurin von Georgia",
+            "ar": "رئيسة بلدية أتلانتا السابقة صاحبة تجربة الدخل المضمون تُنتخب حاكمةً لجورجيا"
+          },
+          "summary": {
+            "en": "Keisha Lance Bottoms won Georgia’s governor race on 3 November. As Atlanta mayor she helped set up the I.M.P.A.C.T. pilot, which paid 300 low-income residents $500 a month. She has not proposed a statewide basic income, and Newsweek notes a state-funded one has little chance in the Republican-held state Senate.",
+            "ja": "11月3日のジョージア州知事選でキーシャ・ランス・ボトムズ氏が当選しました。同氏は市長時代、アトランタの低所得の住民300人に月500ドルを配るI.M.P.A.C.T.に関わりました。州全体のベーシックインカムは掲げておらず、共和党多数の州上院では州予算での実施は難しいとNewsweekは指摘します。",
+            "zh": "基莎·兰斯·博顿斯在11月3日的佐治亚州州长选举中获胜。她任亚特兰大市长期间参与设立了I.M.P.A.C.T.试点，每月向300名低收入居民发放500美元。她并未提出全州范围的基本收入；《新闻周刊》指出，在共和党占多数的州参议院，由州财政出资的方案几乎没有机会通过。",
+            "hi": "कीशा लांस बॉटम्स ने 3 नवंबर को जॉर्जिया का गवर्नर चुनाव जीता। अटलांटा की मेयर रहते उन्होंने I.M.P.A.C.T. पायलट शुरू करवाने में मदद की थी, जिसमें 300 कम आय वाले निवासियों को हर महीने $500 मिले। उन्होंने पूरे राज्य के लिए बेसिक इनकम का प्रस्ताव नहीं रखा है, और Newsweek के मुताबिक रिपब्लिकन बहुमत वाली राज्य सीनेट में राज्य के पैसे से ऐसी योजना की संभावना कम है।",
+            "es": "Keisha Lance Bottoms ganó el 3 de noviembre la elección a gobernadora de Georgia. Como alcaldesa de Atlanta ayudó a crear el piloto I.M.P.A.C.T., que pagó 500 dólares al mes a 300 residentes de bajos ingresos. No ha propuesto una renta básica estatal, y Newsweek señala que una financiada por el estado tiene pocas opciones en el Senado estatal, de mayoría republicana.",
+            "de": "Keisha Lance Bottoms gewann am 3. November die Gouverneurswahl in Georgia. Als Bürgermeisterin von Atlanta half sie beim Aufbau des Pilotprojekts I.M.P.A.C.T., das 300 einkommensschwachen Einwohnern 500 Dollar im Monat zahlte. Ein landesweites Grundeinkommen hat sie nicht vorgeschlagen; laut Newsweek hätte ein staatlich finanziertes im republikanisch dominierten Senat des Bundesstaats kaum Chancen.",
+            "ar": "فازت كيشا لانس بوتومز في انتخابات حاكم ولاية جورجيا يوم 3 نوفمبر. وحين كانت رئيسة بلدية أتلانتا ساعدت في إطلاق تجربة ⁦I.M.P.A.C.T.⁩ التي دفعت 500 دولار شهريًا لـ300 من السكان محدودي الدخل. ولم تقترح دخلًا أساسيًا على مستوى الولاية، وتشير ⁦Newsweek⁩ إلى أن فرص برنامج تموّله الولاية ضئيلة في مجلس شيوخ الولاية ذي الأغلبية الجمهورية."
+          }
+        }
+      ]
+    },
+    {
       "updated": "2026-11-03",
       "items": [
         {

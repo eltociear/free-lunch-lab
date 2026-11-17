@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-16",
+  "fetchedOn": "2026-11-17",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -157,7 +157,7 @@
     },
     "github.com:PolicyEngine/policyengine-us": {
       "stars": 175,
-      "lastCommit": "2026-11-16",
+      "lastCommit": "2026-11-17",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
@@ -318,7 +318,7 @@
     },
     "github.com:worldcoin/world-id-protocol": {
       "stars": 42,
-      "lastCommit": "2026-11-16",
+      "lastCommit": "2026-11-17",
       "archived": false,
       "license": "MIT",
       "language": "Rust"

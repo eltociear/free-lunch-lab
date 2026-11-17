@@ -5,8 +5,32 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/</link>
     <description>世界のベーシックインカム、保障所得、現金給付のニュースを毎週まとめています。実験、政策、研究、AIと財源の動きを、出典を確かめたうえで自分たちの言葉で要約し、元の記事へのリンクを添えています。</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ja/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ドイツ連邦雇用庁長官「AIで15年間に80万人分の仕事がなくなる」</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-de-nahles-ai-800k-jobs</link>
+      <guid isPermaLink="false">bi-news-de-nahles-ai-800k-jobs</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <category>AIと財源</category>
+      <description>ドイツ連邦雇用庁のナーレス長官はハンデルスブラット紙に、15年でAIにより約80万人分の仕事がなくなり、ほぼ同数が生まれるとの見通しを語りました。影響がより大きい業界の例は企業向けサービスや銀行・保険の分析職です。本人はベーシックインカムに触れていませんが、BIENサイトの記事はこれを所得保障見直しの根拠に挙げました。 出典: ZDFheute (dpa) https://www.zdfheute.de/wirtschaft/ki-jobs-stellenstreichungen-100.html, Basic Income Earth Network https://basicincome.org/news/2026/11/ai-the-future-of-work-and-why-we-need-to-rethink-income-security/</description>
+    </item>
+    <item>
+      <title>韓国の農村基本所得、2027年からの参加公募に34郡が応募</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-kr-rural-pilot-2027-applications</link>
+      <guid isPermaLink="false">bi-news-kr-rural-pilot-2027-applications</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <category>実験</category>
+      <description>2027年から農村基本所得の試験事業に加わる郡の公募に、対象となる人口減少地域52郡のうち34郡が応募しました。選ばれるのは18郡程度で、倍率は約1.9倍です。農林畜産食品部は専門家の審査を経て11月19日ごろに暫定結果を発表する予定で、最終決定は国会での2027年度予算の確定が前提です。 出典: Ministry of Agriculture, Food and Rural Affairs (Korea) https://www.mafra.go.kr/bbs/home/792/611224/download.do</description>
+    </item>
+    <item>
+      <title>アトランタで保証所得の試験事業に関わった元市長、ジョージア州知事に</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-us-georgia-bottoms-governor</link>
+      <guid isPermaLink="false">bi-news-us-georgia-bottoms-governor</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>11月3日のジョージア州知事選でキーシャ・ランス・ボトムズ氏が当選しました。同氏は市長時代、アトランタの低所得の住民300人に月500ドルを配るI.M.P.A.C.T.に関わりました。州全体のベーシックインカムは掲げておらず、共和党多数の州上院では州予算での実施は難しいとNewsweekは指摘します。 出典: Newsweek https://www.newsweek.com/keisha-lance-bottoms-universal-basic-income-georgia-12708938, Basic Income Earth Network https://basicincome.org/news/2026/11/can-political-leadership-help-move-guaranteed-income-from-temporary-pilots-towards-lasting-public-policy/</description>
+    </item>
     <item>
       <title>李在明大統領、韓国の農村基本所得の試験事業を視察</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-kr-lee-visits-rural-pilot</link>
