@@ -18082,13 +18082,13 @@ module.exports = {
         "ar": "17 مقاطعة ريفية يتناقص سكانها في كوريا الجنوبية (10 في البداية، وأُضيفت 7 في يونيو 2026)"
       },
       "who": {
-        "ja": "韓国の農林畜産食品部と道・郡。費用は国が40%、道が30%、郡が30%を負担",
-        "en": "South Korea’s Ministry of Agriculture, Food and Rural Affairs (MAFRA) with provincial and county governments; the central government pays 40%, provinces 30% and counties 30%",
-        "zh": "韩国农林畜产食品部与道、郡政府；费用由中央政府承担 40%，道承担 30%，郡承担 30%",
-        "hi": "दक्षिण कोरिया का कृषि, खाद्य और ग्रामीण मामलों का मंत्रालय (MAFRA), प्रांतीय और काउंटी सरकारों के साथ; ख़र्च का 40% केंद्र सरकार, 30% प्रांत और 30% काउंटी देते हैं",
-        "es": "Ministerio de Agricultura, Alimentación y Asuntos Rurales de Corea del Sur (MAFRA), con las provincias y los condados; el gobierno central paga el 40 %, las provincias el 30 % y los condados el 30 %",
-        "de": "Südkoreas Ministerium für Landwirtschaft, Ernährung und ländliche Angelegenheiten (MAFRA) mit Provinzen und Landkreisen; der Zentralstaat zahlt 40 %, die Provinzen 30 % und die Landkreise 30 %",
-        "ar": "وزارة الزراعة والغذاء والشؤون الريفية في كوريا الجنوبية (⁦MAFRA⁩) مع حكومات المقاطعات والأقاليم؛ تدفع الحكومة المركزية 40% والأقاليم 30% والمقاطعات 30%"
+        "ja": "韓国の農林畜産食品部と道・郡。2026年の費用は国が40%、道が30%、郡が30%を負担。2027年度予算案では国の負担を50%に引き上げ（道25%、郡25%）、国会での予算確定が前提",
+        "en": "South Korea’s Ministry of Agriculture, Food and Rural Affairs (MAFRA) with provincial and county governments; in 2026 the central government pays 40%, provinces 30% and counties 30%; the 2027 budget proposal raises the central share to 50% (provinces 25%, counties 25%), subject to parliament",
+        "zh": "韩国农林畜产食品部与道、郡政府；2026 年费用由中央政府承担 40%，道承担 30%，郡承担 30%；2027 年预算案将中央负担提高到 50%（道 25%，郡 25%），需经国会通过",
+        "hi": "दक्षिण कोरिया का कृषि, खाद्य और ग्रामीण मामलों का मंत्रालय (MAFRA), प्रांतीय और काउंटी सरकारों के साथ; 2026 में ख़र्च का 40% केंद्र सरकार, 30% प्रांत और 30% काउंटी देते हैं; 2027 के बजट प्रस्ताव में केंद्र का हिस्सा बढ़ाकर 50% किया गया है (प्रांत 25%, काउंटी 25%), जो संसद की मंज़ूरी पर निर्भर है",
+        "es": "Ministerio de Agricultura, Alimentación y Asuntos Rurales de Corea del Sur (MAFRA), con las provincias y los condados; en 2026 el gobierno central paga el 40 %, las provincias el 30 % y los condados el 30 %; el proyecto de presupuesto de 2027 sube la parte central al 50 % (provincias 25 %, condados 25 %), a falta de que lo apruebe el Parlamento",
+        "de": "Südkoreas Ministerium für Landwirtschaft, Ernährung und ländliche Angelegenheiten (MAFRA) mit Provinzen und Landkreisen; 2026 zahlt der Zentralstaat 40 %, die Provinzen 30 % und die Landkreise 30 %; der Haushaltsentwurf 2027 hebt den Anteil des Zentralstaats auf 50 % (Provinzen 25 %, Landkreise 25 %), sofern das Parlament zustimmt",
+        "ar": "وزارة الزراعة والغذاء والشؤون الريفية في كوريا الجنوبية (⁦MAFRA⁩) مع حكومات المقاطعات والأقاليم؛ في 2026 تدفع الحكومة المركزية 40% والأقاليم 30% والمقاطعات 30%، ويرفع مشروع موازنة 2027 حصة الحكومة المركزية إلى 50% (الأقاليم 25% والمقاطعات 25%) رهنًا بموافقة البرلمان"
       },
       "paid": {
         "ja": "郡に住民登録して30日以上住む韓国国民全員に、所得の審査も就労要件もなく、1人月15万ウォン（約100ドル）を、その地域でだけ使える地域商品券（カード型かモバイル型）で2年間（2026〜2027年）。2025年10月に7郡を選び、12月に3郡を追加。この10郡は2026年2月26〜27日に初回を支給し、2026年6月11日に追加された7郡は8月から。新しく転入した人は、90日の実居住の確認後に3か月分をさかのぼって受け取る。宝城郡は独自財源で5万ウォンを上乗せして月20万ウォン、報恩郡は1万ウォンを上乗せ",
@@ -18108,7 +18108,8 @@ module.exports = {
         "de": "Laut Ministerium stieg die Bevölkerung der ersten 10 Landkreise nach Start des Pilotprojekts um 4,7 %, die Zahl der Geschäfte mit Lokalwährung um 13,7 %. Okcheon gewann im Dezember 2025 1.491 neue Einwohner (290 zogen weg), Cheongsong 318 in der Woche nach seiner Auswahl. Okcheon muss in zwei Jahren rund 53 Mrd. Won aufbringen, etwa 30 % seines Haushalts, und hat andere Programme ausgesetzt. BIEN hält fest, dass diese Form nicht seiner Definition entspricht, einer regelmäßigen Geldzahlung an alle; das Pilotprojekt ist auf einige Landkreise beschränkt und zahlt in lokalen Gutscheinen",
         "ar": "تقول الوزارة إن سكان المقاطعات العشر الأولى زادوا 4.7% بعد بدء التجربة، وزادت المتاجر التي تقبل العملة المحلية 13.7%. واستقبلت أوكتشون 1,491 ساكنًا جديدًا في ديسمبر 2025 (وغادر 290)، وتشونغسونغ 318 في الأسبوع التالي لاختيارها. وعلى أوكتشون أن تؤمّن نحو 53 مليار وون خلال عامين، أي نحو 30% من ميزانيتها، وقد علّقت برامج أخرى. وترى ⁦BIEN⁩ أن هذه الصيغة لا تطابق تعريفها (دفعة نقدية دورية للجميع)؛ فالتجربة مقصورة على بعض المقاطعات وتُدفع بقسائم محلية"
       },
-      "source": "https://www.mafra.go.kr/bbs/home/792/578154/artclView.do"
+      "source": "https://www.mafra.go.kr/bbs/home/792/578154/artclView.do",
+      "source2": "https://www.mafra.go.kr/bbs/home/792/611224/download.do"
     },
     {
       "id": "us-durham-rooted",
