@@ -1,11 +1,11 @@
 {
  "/": [
-  "b79cc3fc56e780bf",
-  "2026-11-16"
+  "363460ccede1ceb2",
+  "2026-11-17"
  ],
  "/ar/": [
-  "752bfaa6337726e8",
-  "2026-11-16"
+  "2ee194e0c1879d4d",
+  "2026-11-17"
  ],
  "/ar/badge/": [
   "a56636d38f2000da",
@@ -400,8 +400,8 @@
   "2026-11-16"
  ],
  "/ar/calc/jp/": [
-  "08f47c3f1e087685",
-  "2026-11-16"
+  "ccaf3f8481115ab4",
+  "2026-11-17"
  ],
  "/ar/calc/ke/": [
   "677a9cf64f6028ad",
@@ -876,8 +876,8 @@
   "2026-11-11"
  ],
  "/ar/essays/": [
-  "5f64985375b8ae77",
-  "2026-11-16"
+  "c379e9f7a5bd4008",
+  "2026-11-17"
  ],
  "/ar/essays/ai-agent-basic-income/": [
   "f07302ea6dd1a75d",
@@ -918,6 +918,10 @@
  "/ar/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "ab26c2f1b91092e5",
   "2026-11-11"
+ ],
+ "/ar/essays/japan-basic-income-cost/": [
+  "2b56d1fb96ee914a",
+  "2026-11-17"
  ],
  "/ar/essays/japan-special-cash-payment/": [
   "cdc3a031d0d4840e",
@@ -1608,8 +1612,8 @@
   "2026-11-16"
  ],
  "/calc/jp/": [
-  "80ba3578ffdd294b",
-  "2026-11-16"
+  "0d6fc539bb0ca49d",
+  "2026-11-17"
  ],
  "/calc/ke/": [
   "d4fea139d2054845",
@@ -2080,8 +2084,8 @@
   "2026-11-16"
  ],
  "/de/": [
-  "03b34a5bfd450364",
-  "2026-11-16"
+  "91e2a85ba1a1a4c3",
+  "2026-11-17"
  ],
  "/de/badge/": [
   "edaffbdc0c0f5845",
@@ -2476,8 +2480,8 @@
   "2026-11-16"
  ],
  "/de/calc/jp/": [
-  "48d4b18d21a767e0",
-  "2026-11-16"
+  "440d18a090512a4c",
+  "2026-11-17"
  ],
  "/de/calc/ke/": [
   "f9ef03e771d79214",
@@ -2952,8 +2956,8 @@
   "2026-11-11"
  ],
  "/de/essays/": [
-  "bf59ffd7ef4ba0eb",
-  "2026-11-16"
+  "aa30789139a35769",
+  "2026-11-17"
  ],
  "/de/essays/ai-agent-basic-income/": [
   "b33421dbb81ae37d",
@@ -2994,6 +2998,10 @@
  "/de/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "68d681a01964a75f",
   "2026-11-11"
+ ],
+ "/de/essays/japan-basic-income-cost/": [
+  "a0a0e154b539ca07",
+  "2026-11-17"
  ],
  "/de/essays/japan-special-cash-payment/": [
   "a69da4b93a677b9a",
@@ -3296,8 +3304,8 @@
   "2026-11-11"
  ],
  "/es/": [
-  "6792b15047da54fa",
-  "2026-11-16"
+  "29818f03df21556f",
+  "2026-11-17"
  ],
  "/es/badge/": [
   "bcc6c011b9153512",
@@ -3692,8 +3700,8 @@
   "2026-11-16"
  ],
  "/es/calc/jp/": [
-  "c23490d22eb89ade",
-  "2026-11-16"
+  "31b6d1a6b93285ec",
+  "2026-11-17"
  ],
  "/es/calc/ke/": [
   "ca87c039d317d38c",
@@ -4168,8 +4176,8 @@
   "2026-11-11"
  ],
  "/es/essays/": [
-  "548b4a752766083a",
-  "2026-11-16"
+  "b84ee1a4d9fc4716",
+  "2026-11-17"
  ],
  "/es/essays/ai-agent-basic-income/": [
   "2abb04143608077b",
@@ -4210,6 +4218,10 @@
  "/es/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "d214452cebac4350",
   "2026-11-11"
+ ],
+ "/es/essays/japan-basic-income-cost/": [
+  "463aa414d00cb96c",
+  "2026-11-17"
  ],
  "/es/essays/japan-special-cash-payment/": [
   "29a147c7f2127bae",
@@ -4508,8 +4520,8 @@
   "2026-11-11"
  ],
  "/essays/": [
-  "826473ede5c7a5db",
-  "2026-11-16"
+  "39206bf1faf6b7ef",
+  "2026-11-17"
  ],
  "/essays/ai-agent-basic-income/": [
   "5425e102339e3088",
@@ -4550,6 +4562,10 @@
  "/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "c851a992898aa18e",
   "2026-11-11"
+ ],
+ "/essays/japan-basic-income-cost/": [
+  "070482c6580a6600",
+  "2026-11-17"
  ],
  "/essays/japan-special-cash-payment/": [
   "a58e8f31d2429ef5",
@@ -4608,8 +4624,8 @@
   "2026-11-11"
  ],
  "/hi/": [
-  "f21386a1c6077a3d",
-  "2026-11-16"
+  "766434d65f138696",
+  "2026-11-17"
  ],
  "/hi/badge/": [
   "f9fa4d28c49b877f",
@@ -5004,8 +5020,8 @@
   "2026-11-16"
  ],
  "/hi/calc/jp/": [
-  "2096468b6b91d4bb",
-  "2026-11-16"
+  "d7f849a64c20aa33",
+  "2026-11-17"
  ],
  "/hi/calc/ke/": [
   "348ec17e8a3c5f3a",
@@ -5480,8 +5496,8 @@
   "2026-11-11"
  ],
  "/hi/essays/": [
-  "1c779a830188a952",
-  "2026-11-16"
+  "f38aff859c1383a9",
+  "2026-11-17"
  ],
  "/hi/essays/ai-agent-basic-income/": [
   "bf11e7bea1bd9c1f",
@@ -5522,6 +5538,10 @@
  "/hi/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "3d26248d03b04248",
   "2026-11-11"
+ ],
+ "/hi/essays/japan-basic-income-cost/": [
+  "9a0959c703c201d7",
+  "2026-11-17"
  ],
  "/hi/essays/japan-special-cash-payment/": [
   "ceeec2c161feb6ea",
@@ -5820,8 +5840,8 @@
   "2026-11-11"
  ],
  "/ja/": [
-  "cf98326852e98121",
-  "2026-11-16"
+  "8016523e4de1fa06",
+  "2026-11-17"
  ],
  "/ja/badge/": [
   "249bae0b73177f1f",
@@ -6216,8 +6236,8 @@
   "2026-11-16"
  ],
  "/ja/calc/jp/": [
-  "155bac7e3e29f01f",
-  "2026-11-16"
+  "c3e62cbc4a916226",
+  "2026-11-17"
  ],
  "/ja/calc/ke/": [
   "84a7d84367950f03",
@@ -6692,8 +6712,8 @@
   "2026-11-11"
  ],
  "/ja/essays/": [
-  "2e0fcafb5f269d85",
-  "2026-11-16"
+  "5bf66227bec196ca",
+  "2026-11-17"
  ],
  "/ja/essays/ai-agent-basic-income/": [
   "bdcbd8ba0f516d53",
@@ -6734,6 +6754,10 @@
  "/ja/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "bf2c5b6aec995528",
   "2026-11-11"
+ ],
+ "/ja/essays/japan-basic-income-cost/": [
+  "3f307ec94ed4ee2e",
+  "2026-11-17"
  ],
  "/ja/essays/japan-special-cash-payment/": [
   "4dda0a40647c1b74",
@@ -7272,8 +7296,8 @@
   "2026-11-11"
  ],
  "/zh/": [
-  "bc407e46d1f21723",
-  "2026-11-16"
+  "8cb7920e555c0e3e",
+  "2026-11-17"
  ],
  "/zh/badge/": [
   "8b3d0c67f2a5362a",
@@ -7668,8 +7692,8 @@
   "2026-11-16"
  ],
  "/zh/calc/jp/": [
-  "5f13af6fa649e179",
-  "2026-11-16"
+  "ad92603e64c8b992",
+  "2026-11-17"
  ],
  "/zh/calc/ke/": [
   "1397e13b62ba121a",
@@ -8144,8 +8168,8 @@
   "2026-11-11"
  ],
  "/zh/essays/": [
-  "ae599fb465748063",
-  "2026-11-16"
+  "ec2f315a27e8fb70",
+  "2026-11-17"
  ],
  "/zh/essays/ai-agent-basic-income/": [
   "542e79b98bae6c51",
@@ -8186,6 +8210,10 @@
  "/zh/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "62821569cc83dbb1",
   "2026-11-11"
+ ],
+ "/zh/essays/japan-basic-income-cost/": [
+  "42da0044b83540e5",
+  "2026-11-17"
  ],
  "/zh/essays/japan-special-cash-payment/": [
   "3abd6c819b6e70d6",

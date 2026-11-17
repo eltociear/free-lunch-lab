@@ -332,6 +332,76 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the essay japan-basic-income-cost: Statistics Bureau population × amount × 12 at three of the essay's amounts,
+  // against national tax revenue (FY2025 settled), plus the net cost of ¥70,000 with all public pensions replaced, computed from
+  // data/japan-2026.json (the same file the build checks the essay tables against). 1200x675, ja/en.
+  'japan': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const J = require('../../../data/japan-2026.json');
+      const P = J.population.value, tax = J.taxRevenue.value;
+      const lv = id => J.levels.find(x => x.id === id);
+      const off = Object.fromEntries(J.offsets.map(o => [o.id, o.value]));
+      const all = J.scenarios.find(x => x.id === 'C').replace.reduce((a, k) => a + off[k], 0);
+      const net = P * lv('takenaka').monthly * 12 - all, netT = (net / 1e12).toFixed(1), netP = Math.round(net / tax * 100);
+      const taxT = (tax / 1e12).toFixed(1);
+      const T3 = {
+        ja: { eb: `日本の人口 ${Math.floor(P / 1e8)}億${Math.round((P % 1e8) / 1e4)}万人（総務省統計局・2026年5月1日）`, hl: '日本で全員にベーシックインカム、年いくら？',
+          sb: `月1万円から10万円まで。国の税収（2025年度決算 ${taxT}兆円）とくらべると`,
+          amt: m => `月${m / 1e4}万円`, tag: { '10k': '', takenaka: '（竹中案）', '100k': '' },
+          d: { '10k': '多くの子どもの児童手当と同じ額', '100k': '2020年の特別定額給付金と同じ額を、毎月' },
+          cost: c => `${(c / 1e12).toFixed(1)}兆<small>円</small>`,
+          yr: '1年あたり', share: p => `国の税収の<b>${p}%</b>`, big: `公的年金をすべて置き換えても差し引き${netT}兆円（税収の${netP}%）`,
+          nt: '子どもも含め全員に同じ額。給付にかかる税、働き方や物価の変化は入れていない', wm: '不労所得研究所', path: 'ja/' },
+        en: { eb: `Japan: ${(P / 1e6).toFixed(1)} million people (Statistics Bureau, 1 May 2026)`, hl: 'A basic income for all of Japan: how much?',
+          sb: `From ¥10,000 to ¥100,000 a month, against national tax revenue (¥${taxT} trillion, FY2025)`,
+          amt: m => `¥${m.toLocaleString('en-US')} a month`, tag: { '10k': '', takenaka: ' (Takenaka)', '100k': '' },
+          d: { '10k': 'The child allowance most children get today', '100k': 'Japan’s 2020 one-off payment, every month' },
+          cost: c => `¥${(c / 1e12).toFixed(1)}<small>tn</small>`,
+          yr: 'a year', share: p => `<b>${p}%</b> of national tax revenue`, big: `With all public pensions replaced: ¥${netT}tn net (${netP}% of tax revenue)`,
+          nt: 'Everyone gets the same amount, children included. No taxes on the payment, no changes in work or prices', wm: 'Free <em>Lunch</em> Lab', path: '' },
+      }[lang];
+      const card = id => { const l = lv(id), c = P * l.monthly * 12, big = id === 'takenaka';
+        return `<section class="c${big ? ' big' : ''}"><p class="k">${T3.amt(l.monthly)}${T3.tag[id]}</p><p class="v">${T3.cost(c)}</p><p class="y">${T3.yr}</p><p class="cmp">${T3.share(Math.round(c / tax * 100))}</p><p class="d">${big ? T3.big : T3.d[id]}</p></section>`; };
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb">${T3.eb}</p>
+<h1 class="hl">${T3.hl}</h1>
+<p class="sb">${T3.sb}</p>
+<div class="cards">${['10k', 'takenaka', '100k'].map(card).join('')}</div>
+<p class="nt">${T3.nt}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${T3.wm}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${T3.path}essays/japan-basic-income-cost/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb{font-size:19px;color:#6CF0B0;font-weight:700}
+.hl{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 44 : 40}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:20px;line-height:1.35;color:#C9D0F0}
+.cards{margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) minmax(0,1fr);gap:16px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:16px 20px;display:flex;flex-direction:column}
+.c.big{border-color:rgba(255,214,107,.7);background:rgba(255,214,107,.08)}
+.k{font-size:21px;color:#A9B2D8;font-weight:700;line-height:1.3}
+.v{margin-top:8px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:44px;line-height:1.1;color:#FFFFFF;white-space:nowrap}
+.big .v{font-size:66px;color:#FFD66B}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.42em;margin-left:4px}
+.y{font-size:18px;color:#A9B2D8}
+.cmp{margin-top:12px;font-size:24px;line-height:1.35;color:#C9D0F0;word-break:auto-phrase}
+.cmp b{color:#6CF0B0;font-weight:900;font-size:1.25em}
+.d{margin-top:auto;font-size:17px;line-height:1.35;color:#E3E8FF}
+.nt{margin:14px 0 12px;font-size:17px;line-height:1.35;color:#A9B2D8}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:16px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
   // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
   'billionaire': {

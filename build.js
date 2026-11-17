@@ -98,6 +98,7 @@ const ESSAY_DATA = {
   'does-cash-make-people-stop-working': { calc: ['us', 'ca', 'fi', 'ke', 'ir'], pilots: true },
   'billionaire-wealth-per-person': { calc: ['us', 'cn', 'in', 'de', 'jp', 'hk'] },
   'germany-merz-basic-income-cost': { calc: ['de'] },
+  'japan-basic-income-cost': { calc: ['jp'] },
 };
 for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
@@ -286,6 +287,47 @@ const gerDrift = (() => {
   const digits = r => r.slice(2).map(c => c.replace(/\D/g, '')).join('/');
   for (const l of LANGS) if (l !== 'en') { const r = rows(l); if (r.length !== en.length || r.some((x, i) => digits(x) !== digits(en[i]))) bad.push(`${l} percentages differ from en`); }
   return bad.length ? `WARNING: germany-merz-basic-income-cost: the cost table differs from data/germany-2026.json and the calculator data: ${bad.join(', ')}; update the essay (all languages)` : '';
+})();
+// エッセイ japan-basic-income-cost の2つの表（各言語の 't'：5つの金額の費用、置き換えたあとの差し引き費用と消費税の何％分か）は、
+// data/japan-2026.json（統計局の人口、財務省の税収・予算・消費税収、内閣府の GDP、社人研の社会保障給付費、置き換える給付）から計算し直して、
+// ずれたら知らせる（en は全列、ほかの言語は数字の列）。人口は CALC の jp、貧困線は CALC_WORLD の jp、7万円は HOUSEHOLD.takenaka と同じか確かめる。
+// ar はラテン文字を LRI/PDI で囲み（表と 'k' の箱は除く）、hi は CJK と isolate なし
+const JPN = require('./data/japan-2026.json');
+const jpnDrift = (() => {
+  const e = ESSAYS.find(x => x.id === 'japan-basic-income-cost');
+  if (!e) return '';
+  for (const [k, t] of e.blocks.ar) if (k !== 't' && k !== 'k' && /[A-Za-z$]/.test(t.replace(ESSAY_LINK, '$1').replace(/\u2066[^\u2069]*\u2069/g, ''))) throw new Error(`japan-basic-income-cost.ar: Latin text outside LRI/PDI: ${t.slice(0, 60)}`);
+  for (const [, t] of e.blocks.hi) if (/[\u3000-\u9fff\u2066-\u2069]/.test(t)) throw new Error('japan-basic-income-cost.hi: CJK or isolate characters');
+  const bad = [];
+  const jp = CALC.countries.find(x => x.id === 'jp'), jw = CALC_WORLD.find(x => x.id === 'jp');
+  if (jp.pop.all !== JPN.population.value) bad.push(`CALC jp population is now ${jp.pop.all} (data/japan-2026.json says ${JPN.population.value})`);
+  if (jp.pop.adults !== JPN.adults.value) bad.push(`CALC jp adults are now ${jp.pop.adults}`);
+  const lv = id => JPN.levels.find(x => x.id === id);
+  if (jw.line.monthly !== lv('line').monthly) bad.push(`poverty line is now ¥${jw.line.monthly} a month (data/japan-2026.json says ¥${lv('line').monthly})`);
+  if (HOUSEHOLD.takenaka !== lv('takenaka').monthly) bad.push(`HOUSEHOLD.takenaka is now ¥${HOUSEHOLD.takenaka}`);
+  const P = JPN.population.value, cost = m => P * m * 12;
+  const g = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  const tr = c => `¥${(c / 1e12).toFixed(1)} trillion`;
+  const pct = (c, v, d = 0) => `${(c / v * 100).toFixed(d)}%`;
+  const R = JPN.consumptionTaxRates, point = JPN.consumptionTax.value / (R.standardNational / R.standard) / R.standard;
+  const pts = c => (c / point).toFixed(1);
+  const want1 = JPN.levels.map(l => { const c = cost(l.monthly); return [`¥${g(l.monthly)}`, tr(c), pct(c, JPN.taxRevenue.value), pct(c, JPN.budget.value), pct(c, JPN.gdp.value, 1), pct(c, JPN.socialBenefits.value)]; });
+  const off = Object.fromEntries(JPN.offsets.map(o => [o.id, o.value]));
+  const nets = JPN.netLevels.map(id => cost(lv(id).monthly));
+  const want2 = [[null, '–', ...nets.flatMap(c => [tr(c), pts(c)])],
+    ...JPN.scenarios.map(sc => { const sv = sc.replace.reduce((a, k) => a + off[k], 0); return [null, tr(sv), ...nets.flatMap(c => [tr(c - sv), pts(c - sv)])]; })];
+  const tables = l => e.blocks[l].filter(([k]) => k === 't').map(([, t]) => t.split('\n').slice(1).map(r => r.split(' | ')));
+  const [en1, en2] = tables('en');
+  [[en1, want1, 'cost'], [en2, want2, 'net cost']].forEach(([rows, want, name]) => {
+    if (!rows || rows.length !== want.length) { bad.push(`en ${name} table: row count`); return; }
+    rows.forEach((r, i) => { const w = want[i]; if ((w[0] && !r[0].startsWith(w[0])) || r.slice(1).join(' | ') !== w.slice(1).join(' | ')) bad.push(`en ${name} row ${i + 1} (now ${w.slice(w[0] ? 0 : 1).join(' / ')})`); });
+  });
+  const digits = r => r.slice(1).map(c => c.replace(/\D/g, '')).join('/');
+  for (const l of LANGS) if (l !== 'en') {
+    const t = tables(l);
+    [en1, en2].forEach((en, j) => { const r = t[j] || []; if (r.length !== en.length || r.some((x, i) => digits(x) !== digits(en[i]))) bad.push(`${l} table ${j + 1} numbers differ from en`); });
+  }
+  return bad.length ? `WARNING: japan-basic-income-cost: the tables differ from data/japan-2026.json and the calculator data: ${bad.join(', ')}; update the essay (all languages)` : '';
 })();
 const mapRegionName = (lang, id) => { const c = CALC_WORLD.find(x => x.id === id); if (c) return c.name[lang]; try { return new Intl.DisplayNames([LANG_TAG[lang]], { type: 'region' }).of(id.toUpperCase()); } catch { return id.toUpperCase(); } };
 const mapYear = (lang, r) => (r.base ? (r.base.year ? String(r.base.year) : T[lang].mapBudgetYear) : '');
@@ -1726,7 +1768,7 @@ function essayPage(e, lang) {
     if (k === 'm') return mapFigure(lang, { link: true }).replace('<figure class="wmap"', '<figure class="wmap es-wide"');
     if (k === 'w') return workChart(t, fn);
     // k は「わが家のBI計算機」への箱（/calc/household/?s=hh-essay）
-    if (k === 'k') return hhBox(lang, 'hh-essay');
+    if (k === 'k') return hhBox(lang, /^[a-z0-9-]+$/.test(t) ? t : 'hh-essay');
     if (k !== 'o') return `<p>${fn(t)}</p>`;
     const tag = tagged ? '' : `<span class="op-tag">${esc(L.essayOpinion)}</span>`;
     tagged = true;
@@ -3044,6 +3086,7 @@ for (const lang of LANGS) {
 if (mapDrift) console.warn(mapDrift);
 if (billDrift) console.warn(billDrift);
 if (gerDrift) console.warn(gerDrift);
+if (jpnDrift) console.warn(jpnDrift);
 if (workDrift) console.warn(workDrift);
 if (hhDrift) console.warn(hhDrift); else console.log(`household: the essay's ${HOUSEHOLD.check.length} households match (main, range, benefits now, basic income)`);
 if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);

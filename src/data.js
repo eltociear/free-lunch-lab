@@ -2937,6 +2937,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-17",
+      "en": "Published the essay “What would a basic income cost Japan? From ¥10,000 to ¥100,000 a month”",
+      "ja": "エッセイ『日本で全員にベーシックインカムを配ると、いくらかかる？ 月1万円から10万円まで』を公開",
+      "zh": "发布随笔《在日本给每个人发基本收入，要花多少钱？从每月1万到10万日元》",
+      "hi": "निबंध “जापान में सबको बेसिक इनकम देने का ख़र्च कितना? 10,000 से 1,00,000 येन महीना तक” प्रकाशित",
+      "es": "Publicado el ensayo «¿Cuánto le costaría a Japón una renta básica? De 10.000 a 100.000 yenes al mes»",
+      "de": "Essay „Was würde ein Grundeinkommen Japan kosten? Von 10.000 bis 100.000 Yen im Monat“ veröffentlicht",
+      "ar": "نشرنا مقال «كم يكلّف الدخل الأساسي في اليابان؟»"
+    },
+    {
       "date": "2026-11-16",
       "en": "Published the essay “Merz was asked about basic income. What would it cost Germany?”",
       "ja": "エッセイ『ドイツのメルツ首相がベーシックインカムに言及。ドイツで全員に配るといくら？』を公開",
@@ -18367,9 +18377,1179 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "japan-basic-income-cost",
+      "date": "2026-11-17",
+      "related": [
+        "takenaka-70000-yen-basic-income",
+        "germany-merz-basic-income-cost",
+        "basic-income-world-map",
+        "refundable-tax-credit-vs-basic-income",
+        "japan-special-cash-payment"
+      ],
+      "title": {
+        "en": "What would a basic income cost Japan? From ¥10,000 to ¥100,000 a month",
+        "ja": "日本で全員にベーシックインカムを配ると、いくらかかる？ 月1万円から10万円まで",
+        "zh": "在日本给每个人发基本收入，要花多少钱？从每月1万到10万日元",
+        "hi": "जापान में सबको बेसिक इनकम देने का ख़र्च कितना? 10,000 से 1,00,000 येन महीना तक",
+        "es": "¿Cuánto le costaría a Japón una renta básica? De 10.000 a 100.000 yenes al mes",
+        "de": "Was würde ein Grundeinkommen Japan kosten? Von 10.000 bis 100.000 Yen im Monat",
+        "ar": "كم يكلّف الدخل الأساسي في اليابان؟"
+      },
+      "desc": {
+        "en": "¥70,000 a month for everyone in Japan would cost about ¥103 trillion a year: more than all the national taxes collected.",
+        "ja": "全員に月7万円なら年約103兆円で、国の税収84.2兆円を上回ります。何を置き換えられるか、消費税なら何％分かも計算しました。",
+        "zh": "给日本每人每月7万日元，一年约103万亿日元，超过国家全部税收。还算了能替代哪些福利、相当于几个点的消费税。",
+        "hi": "जापान में सबको हर महीने 70,000 येन देने का ख़र्च साल में करीब 103 ट्रिलियन येन, देश के पूरे कर राजस्व से ज़्यादा।",
+        "es": "70.000 yenes al mes para todos en Japón costarían unos 103 billones de yenes al año: más que todos los impuestos nacionales.",
+        "de": "70.000 Yen im Monat für alle in Japan kosteten rund 103 Billionen Yen im Jahr, mehr als alle Steuern des Staates.",
+        "ar": "من 10,000 إلى 100,000 ين شهريًا. عند 70,000 ين للجميع: نحو 103 تريليونات ين سنويًا."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "How much would it cost to give everyone in Japan a basic income? The question comes up every time the idea does, and the answer depends almost entirely on the amount. At ¥70,000 a month, the figure in Heizo Takenaka’s 2020 proposal, it would cost about ¥103 trillion a year: more than all the national taxes collected in FY2025 (¥84.2 trillion) and 84% of the FY2026 general-account budget. Below: the cost at five amounts, which existing benefits it could replace, what that means in points of consumption tax, and what experiments have found."
+          ],
+          [
+            "h",
+            "How we count"
+          ],
+          [
+            "p",
+            "Japan had 122,812,000 inhabitants on 1 May 2026, according to the final population estimate of the Statistics Bureau.[1] If everyone, children included, gets the same amount, the cost is simply the monthly amount × 12 × 122.8 million. We use five amounts."
+          ],
+          [
+            "p",
+            "¥9,400 a month is the standard amount for Japan in this site’s {211-country comparison|/calc/countries/}: the World Bank’s poverty line of $3.00 a day, converted into Japanese prices.[2][3] ¥10,000 is what the child allowance pays each month for a first or second child aged 3 to 18.[4] ¥30,000 is the default on this site’s {Japan calculator page|/calc/jp/}. ¥70,000 is Takenaka’s figure (see {¥70,000 a month for everyone: who gains and who loses?|/essays/takenaka-70000-yen-basic-income/}), close to the full basic pension of ¥70,608 a month in FY2026.[5] ¥100,000 is what the 2020 Special Cash Payment gave almost everyone, once."
+          ],
+          [
+            "h",
+            "What it would cost: five amounts"
+          ],
+          [
+            "t",
+            "Per person per month | Cost per year | Share of national tax revenue (FY2025) | Share of the general-account budget (FY2026) | Share of GDP (FY2025) | Share of social security benefits (FY2024)\n¥9,400 (poverty line) | ¥13.9 trillion | 16% | 11% | 2.1% | 10%\n¥10,000 | ¥14.7 trillion | 17% | 12% | 2.2% | 11%\n¥30,000 | ¥44.2 trillion | 52% | 36% | 6.6% | 32%\n¥70,000 (Takenaka) | ¥103.2 trillion | 122% | 84% | 15.3% | 75%\n¥100,000 | ¥147.4 trillion | 175% | 120% | 21.9% | 107%"
+          ],
+          [
+            "p",
+            "The yardsticks: the national government’s general-account tax revenue for FY2025 (April 2025 to March 2026) was settled at ¥84.2226 trillion, a record; local taxes are not included.[6] The FY2026 general-account budget is ¥122.3092 trillion.[7] Nominal GDP for FY2025 was ¥672.682 trillion in the Cabinet Office’s estimate of 16 November 2026.[8] Social security benefits, meaning all pensions, medical care and welfare paid in FY2024, including those funded by insurance contributions, came to ¥138.3019 trillion.[9]"
+          ],
+          [
+            "p",
+            "Only the two smallest amounts stay under a fifth of national tax revenue. ¥30,000 would take about half of it. ¥70,000 would cost more than all of it, and ¥100,000 more than the whole budget and more than all social security benefits put together."
+          ],
+          [
+            "p",
+            "At the 2025 exchange rate in this site’s World Bank data, about ¥150 to the dollar, ¥70,000 is about $468 a month, and ¥103.2 trillion is about $689 billion a year.[2]"
+          ],
+          [
+            "p",
+            "Paying children less changes the total less than one might think, because only about 15% of people are under 20. Yutaka Harada’s design, on which Takenaka’s was based, with ¥70,000 for the 104.07 million people aged 20 and over and ¥30,000 for the 18.74 million under 20, would cost about ¥94.2 trillion a year. Adults only, at ¥70,000, would cost about ¥87.4 trillion.[1] The {Japan calculator page|/calc/jp/} lets you try adults only or children only."
+          ],
+          [
+            "h",
+            "What it could replace"
+          ],
+          [
+            "p",
+            "A basic income is usually meant to replace some existing benefits, not to come on top of all of them. Which ones is a design choice, and the most important one. These are the main cash benefits that could be replaced, with the latest official figures."
+          ],
+          [
+            "p",
+            "Child allowance. Cash benefits came to ¥2.11 trillion in FY2024.[9] The allowance was expanded in October 2024, partway through that year (no income limit, paid up to high-school age, ¥30,000 a month from the third child),[4] so a full year at the new rates costs more than this figure."
+          ],
+          [
+            "p",
+            "Public assistance (seikatsu hogo). Spending was ¥3.60 trillion in FY2023, the latest actual figure, and about half of it was medical assistance.[10] We count only living assistance (¥1.03 trillion) and housing assistance (¥0.60 trillion), ¥1.64 trillion in all, as replaceable: a cash payment does not replace cover for medical or long-term care."
+          ],
+          [
+            "p",
+            "Public pensions. At the end of FY2024, basic pensions for 36.3 million recipients came to ¥25.9 trillion a year, and all public pensions, including the earnings-related Employees’ Pension, to ¥58.3 trillion.[11] Pensions are paid in return for contributions, so replacing them is the most contested choice. Takenaka’s 2020 book spoke of abolishing pensions in exchange; in a later interview he said contributions already paid would be honoured."
+          ],
+          [
+            "p",
+            "Not counted: unemployment benefits from employment insurance, tax allowances, and health and long-term care insurance. Three scenarios, for the two amounts that are at least as large as a full basic pension:"
+          ],
+          [
+            "t",
+            "What is replaced | Saving per year | Net cost at ¥70,000 | In consumption-tax points | Net cost at ¥100,000 | In consumption-tax points\nNothing (gross cost) | – | ¥103.2 trillion | 30.9 | ¥147.4 trillion | 44.2\nA: child allowance, public assistance (living and housing) | ¥3.8 trillion | ¥99.4 trillion | 29.8 | ¥143.6 trillion | 43.0\nB: A + basic pensions | ¥29.6 trillion | ¥73.5 trillion | 22.0 | ¥117.7 trillion | 35.3\nC: A + all public pensions | ¥62.1 trillion | ¥41.1 trillion | 12.3 | ¥85.3 trillion | 25.6"
+          ],
+          [
+            "p",
+            "Child allowance and public assistance are small next to the totals: replacing both saves ¥3.8 trillion. Only pensions are large enough to change the picture. With all public pensions replaced (C), the ¥70,000 version would cost a net ¥41.1 trillion, about half of national tax revenue (49%). But a retired employee and spouse who now receive ¥237,279 a month together would then get ¥140,000.[5] Replacing only the basic pension (B) leaves most pensioners about where they are, since the average old-age basic pension is about ¥59,000 a month,[11] but the net cost stays at ¥73.5 trillion, 87% of national tax revenue."
+          ],
+          [
+            "p",
+            "At ¥10,000 or ¥30,000 there is little to replace. Both are below the basic pension and below what public assistance pays for living costs, so those would have to stay. ¥10,000 is what the child allowance already pays for most children; if a ¥10,000 basic income replaced it, the net cost would be about ¥12.6 trillion."
+          ],
+          [
+            "h",
+            "In points of consumption tax"
+          ],
+          [
+            "p",
+            "A common way to make such sums concrete is to ask how many points of consumption tax they equal. Our method: the national consumption tax brought in ¥26.03 trillion in FY2025.[6] Of the 10% standard rate, 7.8 points are national and 2.2 local; of the 8% reduced rate for food and newspapers, 6.24 points are national and 1.76 local. At both rates the national part is 78%,[12] so national and local consumption tax together came to about ¥26.03 trillion ÷ 0.78 = ¥33.4 trillion, and one tenth of that, ¥3.3 trillion, is what one point of the 10% rate stands for."
+          ],
+          [
+            "p",
+            "This is a yardstick, not a forecast. Raising only the standard rate by one point would bring in a little less, because food stays at 8%; raising both rates by a point would bring in a little more; ¥3.3 trillion lies between the two. It also ignores that people would spend differently if the tax went up."
+          ],
+          [
+            "p",
+            "On this yardstick the gross cost is 4.2 points at ¥9,400, 4.4 at ¥10,000, 13.2 at ¥30,000, 30.9 at ¥70,000 and 44.2 at ¥100,000. The net figures are in the table above. ¥70,000 with all public pensions replaced comes to about 12 points, which would mean a consumption tax of about 22% instead of 10%; with only the basic pension replaced it is about 22 points."
+          ],
+          [
+            "h",
+            "What it would mean for your household"
+          ],
+          [
+            "p",
+            "National totals do not say who gains. Families with children and few benefits today tend to gain; people who rely on pensions or public assistance can lose, depending on what is replaced. To compare ¥30,000 to ¥100,000 a month with your own household’s child allowance, pension and public assistance, use the household calculator."
+          ],
+          [
+            "k",
+            "hh-jp-cost"
+          ],
+          [
+            "h",
+            "What experiments found"
+          ],
+          [
+            "p",
+            "No country has paid a permanent basic income to everyone, so there is no direct evidence of what this would do. Trials paid smaller groups for a limited time. Most found small reductions in work or none, and none found people quitting en masse (see {Does giving people money make them stop working?|/essays/does-cash-make-people-stop-working/}). In Finland’s 2017–2018 trial, 2,000 unemployed people received €560 a month; the effect on employment was small and wellbeing improved (see {Did Finland’s basic income experiment fail?|/essays/finland-basic-income-experiment/}). Japan’s ¥100,000 in 2020 was paid once, so it shows how a one-off payment is spent, not how a monthly one changes work (see {Where did the ¥100,000 go?|/essays/japan-special-cash-payment/}). None of these can show what would happen to prices, wages or taxes if all 123 million people were paid."
+          ],
+          [
+            "h",
+            "What the numbers show"
+          ],
+          [
+            "p",
+            "A basic income for everyone in Japan would cost from about ¥14 trillion a year at the poverty-line floor to ¥147 trillion at ¥100,000 a month. At Takenaka’s ¥70,000 it would cost about ¥103 trillion, more than all national tax revenue. Child allowance and public assistance would cover only a few percent of that. Only pensions are large enough to bring the net cost down to about half of tax revenue, and replacing them would cut many pensioners’ income. In consumption-tax terms, the net cost at ¥70,000 is about 12 to 30 points, depending on what is replaced."
+          ],
+          [
+            "p",
+            "To try other amounts, or adults only, use {the Japan calculator page|/calc/jp/}; for other countries, see {the 211-country comparison|/calc/countries/} and {the world map|/essays/basic-income-world-map/}. For Germany, see {Merz was asked about basic income. What would it cost Germany?|/essays/germany-merz-basic-income-cost/} For a design that pays only people on low incomes, see {Refundable tax credits vs basic income|/essays/refundable-tax-credit-vs-basic-income/}."
+          ],
+          [
+            "h",
+            "Assumptions and limits"
+          ],
+          [
+            "p",
+            "Everyone, the same amount. Children get the full amount unless stated. The population is the Statistics Bureau’s 122,812,000 on 1 May 2026, held constant.[1] From its November 2026 report the bureau rebases its estimates on the 2025 census, so the figure will be revised."
+          ],
+          [
+            "p",
+            "Gross cost. Taxes on the payment, changes in work or prices, and the cost of running it are left out."
+          ],
+          [
+            "p",
+            "Yardsticks. They come from different years: tax revenue and GDP for FY2025, the budget for FY2026, social security benefits for FY2024. Tax revenue is the national government’s only; adding local taxes would lower every share of tax revenue. The {Japan calculator page|/calc/jp/} and the {world map|/essays/basic-income-world-map/} use the World Bank’s calendar-2025 GDP (¥663.8 trillion) and the ¥83.7 trillion of tax revenue budgeted for FY2026,[2][7] so their shares differ slightly: there the ¥9,400 floor is 16.5% of tax revenue. The {Takenaka essay|/essays/takenaka-70000-yen-basic-income/} uses the health ministry’s FY2026 budget-based estimate of social security benefits (¥144.1 trillion); here we use the settled FY2024 figure."
+          ],
+          [
+            "p",
+            "Offsets. The years differ: child allowance FY2024, public assistance FY2023, pensions at the end of FY2024. The pension figures are the yearly amounts due to recipients at the end of the year, not the cash paid during it. Unemployment benefits and tax allowances are not counted."
+          ],
+          [
+            "p",
+            "Consumption tax. The yardstick uses the rates in force in FY2025 and the revenue they raised; other rates or a different tax base would change it."
+          ],
+          [
+            "p",
+            "Not a proposal. The amounts are yardsticks. Nothing here says whether Japan should introduce a basic income; the numbers only show the size of the sums."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "日本に住む全員にベーシックインカム（BI）を配ったら、いくらかかるのか。BIが話題になるたびに出てくる問いで、答えはほとんど金額だけで決まります。2020年に竹中平蔵氏が示した月7万円なら、年約103兆円。2025年度の国の税収（84.2兆円）を上回り、2026年度の一般会計予算の84％にあたります。以下では、5つの金額での費用、今ある給付のうち何を置き換えられるか、それが消費税にして何％分か、そして実験でわかったことを順に見ていきます。"
+          ],
+          [
+            "h",
+            "数え方"
+          ],
+          [
+            "p",
+            "総務省統計局の人口推計によると、2026年5月1日の日本の人口は1億2281万2000人です（確定値）。[1] 子どもも含めて全員に同じ額を配るなら、費用は「月額×12か月×1億2281万人」です。金額は5つで計算します。"
+          ],
+          [
+            "p",
+            "月9,400円は、当サイトの{211か国比較|/calc/countries/}での日本の標準額です。世界銀行の貧困線「1日3.00ドル」を日本の物価に直したものです。[2][3] 1万円は、3歳から高校生年代までの第1子・第2子に児童手当が毎月払う額。[4] 3万円は当サイトの{日本の計算ページ|/calc/jp/}の初期値。7万円は竹中氏の案の額で（{月7万円のベーシックインカム、わが家は得する？損する？|/essays/takenaka-70000-yen-basic-income/}）、2026年度の国民年金の満額、月7万608円とほぼ同じです。[5] 10万円は、2020年の特別定額給付金がほぼ全員に1回だけ配った額です。"
+          ],
+          [
+            "h",
+            "いくらかかるか：5つの金額で"
+          ],
+          [
+            "t",
+            "1人あたり月額 | 年間の費用 | 国の税収に対する割合（2025年度） | 一般会計予算に対する割合（2026年度） | GDPに対する割合（2025年度） | 社会保障給付費に対する割合（2024年度）\n9,400円（貧困線） | 13.9兆円 | 16% | 11% | 2.1% | 10%\n1万円 | 14.7兆円 | 17% | 12% | 2.2% | 11%\n3万円 | 44.2兆円 | 52% | 36% | 6.6% | 32%\n7万円（竹中案） | 103.2兆円 | 122% | 84% | 15.3% | 75%\n10万円 | 147.4兆円 | 175% | 120% | 21.9% | 107%"
+          ],
+          [
+            "p",
+            "比べた数字は次のとおりです。2025年度（2025年4月〜2026年3月）の国の一般会計税収は、決算で84兆2226億円と過去最高でした。地方税は含みません。[6] 2026年度の一般会計予算は122兆3092億円。[7] 2025年度の名目GDPは、内閣府の2026年11月16日の速報で672兆6820億円です。[8] 年金・医療・福祉など、保険料でまかなう分も含めて2024年度に支払われた社会保障給付費は、138兆3019億円でした。[9]"
+          ],
+          [
+            "p",
+            "国の税収の5分の1に収まるのは、小さい2つの金額だけです。3万円で税収の約半分。7万円では税収をまるごと上回り、10万円では一般会計予算全体も、社会保障給付費の合計も上回ります。"
+          ],
+          [
+            "p",
+            "子どもの額を下げても、総額は思ったほど変わりません。20歳未満は人口の約15％だからです。竹中氏の案の元になった原田泰氏の案のように、20歳以上の1億407万人に7万円、20歳未満の1874万人に3万円を配ると、年約94.2兆円。大人だけに7万円なら、年約87.4兆円です。[1] 大人だけ、子どもだけの場合は{日本の計算ページ|/calc/jp/}で試せます。"
+          ],
+          [
+            "h",
+            "何を置き換えられるか"
+          ],
+          [
+            "p",
+            "BIは多くの場合、今ある給付の一部と置き換える前提で語られます。すべての給付に上乗せするわけではありません。何を置き換えるかは設計の問題で、しかもいちばん大事な部分です。置き換えの候補になる主な現金給付を、最新の公式の数字で見てみます。"
+          ],
+          [
+            "p",
+            "児童手当。2024年度の現金給付は2兆1138億円でした。[9] 児童手当は年度の途中、2024年10月に拡充されたので（所得制限の撤廃、高校生年代までの延長、第3子以降は月3万円）、[4] 新しい額で1年分払うと、この数字より大きくなります。"
+          ],
+          [
+            "p",
+            "生活保護。最新の実績（2023年度）は3兆6007億円で、その約半分は医療扶助です。[10] ここでは、生活扶助（1兆334億円）と住宅扶助（6031億円）の計1兆6365億円だけを置き換えられるものとして数えます。現金のBIは、医療や介護の保障の代わりにはならないからです。"
+          ],
+          [
+            "p",
+            "公的年金。2024年度末の時点で、3630万人が受け取る基礎年金（国民年金）は年25兆8897億円、厚生年金も含めた公的年金全体では年58兆3311億円です。[11] 年金は保険料を払った見返りとして支払われるので、置き換えはいちばん意見が分かれるところです。竹中氏は2020年の著書で年金の廃止とのバーターを書き、のちのインタビューでは積み立てた分は保障すると話しています。"
+          ],
+          [
+            "p",
+            "雇用保険の失業給付、税の控除、医療保険・介護保険は数えていません。基礎年金の満額と同じかそれ以上の2つの金額について、3通りで計算しました。"
+          ],
+          [
+            "t",
+            "置き換えるもの | 浮く額（年） | 7万円の差し引き費用 | 消費税にして | 10万円の差し引き費用 | 消費税にして\nなし（総額） | – | 103.2兆円 | 30.9% | 147.4兆円 | 44.2%\nA：児童手当、生活保護（生活扶助・住宅扶助） | 3.8兆円 | 99.4兆円 | 29.8% | 143.6兆円 | 43.0%\nB：A＋基礎年金 | 29.6兆円 | 73.5兆円 | 22.0% | 117.7兆円 | 35.3%\nC：A＋公的年金すべて | 62.1兆円 | 41.1兆円 | 12.3% | 85.3兆円 | 25.6%"
+          ],
+          [
+            "p",
+            "児童手当と生活保護は、総額にくらべると小さく、両方を置き換えても浮くのは3.8兆円です。様子を変えるほど大きいのは年金だけです。公的年金をすべて置き換えると（C）、7万円の差し引き費用は41.1兆円で、国の税収の約半分（49％）になります。ただしこの場合、いま夫婦で月23万7279円を受け取っている元会社員の夫婦は、月14万円になります。[5] 基礎年金だけを置き換えるなら（B）、老齢基礎年金の平均は月約5万9000円なので、[11] 多くの年金受給者の受け取りはほぼ変わりません。そのかわり差し引き費用は73.5兆円で、国の税収の87％のままです。"
+          ],
+          [
+            "p",
+            "1万円や3万円では、置き換えられるものがほとんどありません。どちらも基礎年金より、生活保護の生活費の額よりも少ないので、これらは残すしかありません。1万円は、多くの子どもが今もらっている児童手当と同じ額です。月1万円のBIで児童手当を置き換えると、差し引き費用は約12.6兆円です。"
+          ],
+          [
+            "h",
+            "消費税にすると何％分か"
+          ],
+          [
+            "p",
+            "こうした金額を身近にするために、「消費税にして何％分か」で表すことがよくあります。ここでの計算方法はこうです。2025年度の国の消費税収は26兆277億円でした。[6] 標準税率10％のうち国の分は7.8％、地方消費税が2.2％。食料品と新聞の軽減税率8％のうち国の分は6.24％、地方が1.76％です。どちらの税率でも国の分は78％なので、[12] 国と地方を合わせた消費税収は約26兆277億円÷0.78＝約33.4兆円。その10分の1の約3.3兆円を、税率10％の「1％分」とみなします。"
+          ],
+          [
+            "p",
+            "これは目安で、予測ではありません。標準税率だけを1％上げると、食料品は8％のままなので、税収の増え方はこれより少し小さく、両方の税率を1％ずつ上げると少し大きくなります。3.3兆円はその間です。税率が上がると人の買い方が変わる、という影響も入れていません。"
+          ],
+          [
+            "p",
+            "この目安では、総額は9,400円で4.2％分、1万円で4.4％分、3万円で13.2％分、7万円で30.9％分、10万円で44.2％分です。差し引きの数字は上の表のとおりです。7万円で公的年金をすべて置き換えると約12％分で、消費税は10％から約22％になる計算です。基礎年金だけを置き換えるなら約22％分です。"
+          ],
+          [
+            "h",
+            "わが家ではどうなるか"
+          ],
+          [
+            "p",
+            "国全体の総額からは、誰が得をするのかはわかりません。子どもがいて今の給付が少ない世帯は得をしやすく、年金や生活保護に頼っている人は、何を置き換えるかによっては損をします。月3万円から10万円のBIを、わが家の児童手当・年金・生活保護とくらべるには、家計の計算機を使ってください。"
+          ],
+          [
+            "k",
+            "hh-jp-cost"
+          ],
+          [
+            "h",
+            "実験でわかったこと"
+          ],
+          [
+            "p",
+            "恒久的なBIを国民全員に配った国はまだないので、日本で配ったらどうなるかを直接示すデータはありません。これまでの実験は、限られた人に限られた期間だけ配ったものです。多くの実験で、働く量は少し減ったか変わらず、仕事をやめる人が大勢出た例はありません（{お金を配ると、人は働かなくなるのか？|/essays/does-cash-make-people-stop-working/}）。フィンランドの2017〜2018年の実験では、失業中の2000人が月560ユーロを受け取り、就労への効果は小さく、幸福感は高まりました（{「フィンランドで失敗した」は本当か|/essays/finland-basic-income-experiment/}）。2020年の10万円は1回きりなので、わかるのは一時金の使われ方で、毎月の給付で働き方が変わるかどうかではありません（{10万円の給付金は、何に使われたのか|/essays/japan-special-cash-payment/}）。どの実験も、1億2300万人全員に配ったときに物価や賃金、税がどうなるかは示せません。"
+          ],
+          [
+            "h",
+            "数字からわかること"
+          ],
+          [
+            "p",
+            "日本の全員にBIを配る費用は、貧困線の最低ラインで年約14兆円、月10万円なら年147兆円です。竹中氏の7万円なら年約103兆円で、国の税収を上回ります。児童手当と生活保護を置き換えても、まかなえるのはその数％です。差し引き費用を税収の半分ほどまで下げられるのは年金だけで、置き換えれば多くの年金受給者の収入が減ります。消費税にすると、7万円の差し引き費用は、何を置き換えるかによって約12％分から30％分です。"
+          ],
+          [
+            "p",
+            "ほかの金額や大人だけの場合は{日本の計算ページ|/calc/jp/}で、ほかの国は{211か国比較|/calc/countries/}と{世界地図|/essays/basic-income-world-map/}で確かめられます。ドイツについては{ドイツのメルツ首相がベーシックインカムに言及。ドイツで全員に配るといくら？|/essays/germany-merz-basic-income-cost/}、所得の低い人だけに配るしくみについては{給付付き税額控除とベーシックインカムは、何が違うのか|/essays/refundable-tax-credit-vs-basic-income/}をどうぞ。"
+          ],
+          [
+            "h",
+            "前提と限界"
+          ],
+          [
+            "p",
+            "全員に同じ額。とくに書いていなければ、子どもも同じ額です。人口は総務省統計局の2026年5月1日の1億2281万2000人で、変わらないものとしています。[1] 統計局は2026年11月報から人口推計の基準を2025年国勢調査に切り替えるので、この数字は改定されます。"
+          ],
+          [
+            "p",
+            "総額。給付にかかる税、働き方や物価の変化、運営の費用は入れていません。"
+          ],
+          [
+            "p",
+            "比べた数字。年度がそろっていません。税収とGDPは2025年度、予算は2026年度、社会保障給付費は2024年度です。税収は国の分だけで、地方税を足せば税収に対する割合はどれも下がります。{日本の計算ページ|/calc/jp/}と{世界地図|/essays/basic-income-world-map/}は、世界銀行の2025年（暦年）のGDP（663.8兆円）と、2026年度予算の税収の見込み83.7兆円を使っているので、[2][7] 割合が少し違います。そちらでは9,400円の最低ラインは税収の16.5％です。{竹中氏の案のエッセイ|/essays/takenaka-70000-yen-basic-income/}は、厚生労働省の2026年度予算ベースの社会保障給付費（144.1兆円）を使っていますが、ここでは決算にあたる2024年度の数字を使いました。"
+          ],
+          [
+            "p",
+            "置き換え。年度がそろっていません。児童手当は2024年度、生活保護は2023年度、年金は2024年度末です。年金の数字は、年度末の受給者に払うことになっている1年分の額で、その年度に実際に払った額ではありません。失業給付や税の控除は数えていません。"
+          ],
+          [
+            "p",
+            "消費税。2025年度の税率と、その税収で計算しています。税率や課税の範囲が変われば、目安も変わります。"
+          ],
+          [
+            "p",
+            "提案ではありません。金額はものさしです。日本がBIを導入すべきかどうかは、ここでは何も言っていません。数字は、金額の大きさを示しているだけです。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "给住在日本的每个人发基本收入，要花多少钱？每次谈到基本收入都会有人这样问，而答案几乎完全取决于金额。按竹中平藏2020年方案中的每月7万日元计算，一年约103万亿日元，超过2025财年国家的全部税收（84.2万亿日元），相当于2026财年一般会计预算的84%。下面依次看五种金额的费用、能替代哪些现有福利、相当于几个点的消费税，以及实验发现了什么。"
+          ],
+          [
+            "h",
+            "怎么算"
+          ],
+          [
+            "p",
+            "据总务省统计局的人口推计，2026年5月1日日本人口为1亿2281万2000人（确定值）。[1] 如果包括孩子在内每人领同样的钱，费用就是“月额×12×1亿2281万人”。我们用五种金额来算。"
+          ],
+          [
+            "p",
+            "每月9400日元是本站{211个国家和地区比较|/calc/countries/}中日本的标准额：世界银行每天3.00美元的贫困线，换算成日本的物价。[2][3] 1万日元是儿童补贴每月给3岁到高中年龄段的第一、第二个孩子的金额。[4] 3万日元是本站{日本计算页面|/calc/jp/}的默认值。7万日元是竹中的方案（见{每人每月7万日元的基本收入，我家是赚还是亏？|/essays/takenaka-70000-yen-basic-income/}），与2026财年国民年金的全额每月70608日元相近。[5] 10万日元是2020年特别定额给付金给几乎所有人发过一次的金额。"
+          ],
+          [
+            "h",
+            "要花多少：五种金额"
+          ],
+          [
+            "t",
+            "每人每月 | 每年费用 | 占国家税收（2025财年） | 占一般会计预算（2026财年） | 占GDP（2025财年） | 占社会保障给付费（2024财年）\n9400日元（贫困线） | 13.9万亿日元 | 16% | 11% | 2.1% | 10%\n1万日元 | 14.7万亿日元 | 17% | 12% | 2.2% | 11%\n3万日元 | 44.2万亿日元 | 52% | 36% | 6.6% | 32%\n7万日元（竹中方案） | 103.2万亿日元 | 122% | 84% | 15.3% | 75%\n10万日元 | 147.4万亿日元 | 175% | 120% | 21.9% | 107%"
+          ],
+          [
+            "p",
+            "比较的基准如下：2025财年（2025年4月至2026年3月）国家一般会计税收决算为84.2226万亿日元，创历史新高，不含地方税。[6] 2026财年一般会计预算为122.3092万亿日元。[7] 据内阁府2026年11月16日的速报，2025财年名义GDP为672.682万亿日元。[8] 2024财年支付的社会保障给付费，包括养老金、医疗和福利，也包括由保险费负担的部分，共138.3019万亿日元。[9]"
+          ],
+          [
+            "p",
+            "只有两个最小的金额能控制在国家税收的五分之一以内。3万日元要用掉税收的一半左右。7万日元超过全部税收，10万日元则超过整个一般会计预算，也超过全部社会保障给付费的总和。"
+          ],
+          [
+            "p",
+            "按本站世界银行数据中2025年的汇率，7万日元约合3360元人民币，一年103.2万亿日元约合4.96万亿元人民币。[2]"
+          ],
+          [
+            "p",
+            "给孩子少发一些，总额的变化没有想象中大，因为20岁以下的人只占人口的15%左右。按竹中方案所依据的原田泰的方案，20岁及以上的1亿407万人每人7万日元、20岁以下的1874万人每人3万日元，一年约94.2万亿日元。只发给成年人、每人7万日元，一年约87.4万亿日元。[1] 只发给成年人或只发给孩子的情况，可以在{日本计算页面|/calc/jp/}上试算。"
+          ],
+          [
+            "h",
+            "能替代什么"
+          ],
+          [
+            "p",
+            "基本收入通常是以替代部分现有福利为前提的，而不是在所有福利之上再加一层。替代哪些是设计问题，而且是最重要的部分。下面用最新的官方数字，看看可以替代的主要现金福利。"
+          ],
+          [
+            "p",
+            "儿童补贴。2024财年现金给付为2.11万亿日元。[9] 儿童补贴在这一年的中途、2024年10月扩充（取消收入限制、延长到高中年龄段、第三个孩子起每月3万日元），[4] 所以按新标准发满一年，会比这个数字更多。"
+          ],
+          [
+            "p",
+            "生活保护（最低生活保障）。能查到的最新实际支出是2023财年的3.60万亿日元，其中约一半是医疗扶助。[10] 我们只把生活扶助（1.03万亿日元）和住房扶助（0.60万亿日元）共1.64万亿日元算作可以替代的部分：现金发放替代不了医疗和护理保障。"
+          ],
+          [
+            "p",
+            "公共养老金。2024财年末，3630万领取者的基础年金一年共25.9万亿日元，包括与收入挂钩的厚生年金在内，全部公共养老金一年共58.3万亿日元。[11] 养老金是缴纳保险费的回报，所以替代它是争议最大的选择。竹中在2020年的书里写过以废除养老金作为交换，后来接受采访时又说已缴纳的部分会得到保障。"
+          ],
+          [
+            "p",
+            "雇用保险的失业给付、税收扣除、医疗保险和护理保险都没有计算在内。下面对不低于基础年金全额的两个金额，按三种情形计算："
+          ],
+          [
+            "t",
+            "替代的内容 | 每年节省 | 7万日元的净费用 | 相当于几个点的消费税 | 10万日元的净费用 | 相当于几个点的消费税\n不替代（总费用） | – | 103.2万亿日元 | 30.9 | 147.4万亿日元 | 44.2\nA：儿童补贴、生活保护（生活扶助和住房扶助） | 3.8万亿日元 | 99.4万亿日元 | 29.8 | 143.6万亿日元 | 43.0\nB：A＋基础年金 | 29.6万亿日元 | 73.5万亿日元 | 22.0 | 117.7万亿日元 | 35.3\nC：A＋全部公共养老金 | 62.1万亿日元 | 41.1万亿日元 | 12.3 | 85.3万亿日元 | 25.6"
+          ],
+          [
+            "p",
+            "和总额相比，儿童补贴和生活保护都很小，两者都替代也只省下3.8万亿日元。大到足以改变局面的只有养老金。替代全部公共养老金（C）时，7万日元方案的净费用是41.1万亿日元，约为国家税收的一半（49%）。但这样一来，现在夫妻两人每月领237279日元的退休职员夫妇，就只能拿到14万日元。[5] 只替代基础年金（B）时，老龄基础年金的平均额约为每月5.9万日元，[11] 大多数养老金领取者的收入基本不变，但净费用仍有73.5万亿日元，占国家税收的87%。"
+          ],
+          [
+            "p",
+            "在1万或3万日元的水平上，几乎没有可以替代的东西。两者都低于基础年金，也低于生活保护的生活费标准，这些只能保留。1万日元是大多数孩子现在领的儿童补贴金额；如果用每月1万日元的基本收入替代儿童补贴，净费用约为12.6万亿日元。"
+          ],
+          [
+            "h",
+            "换算成消费税是几个点"
+          ],
+          [
+            "p",
+            "为了让这些数字更直观，常见的做法是问：相当于几个点的消费税？我们的算法是：2025财年国家消费税收入为26.03万亿日元。[6] 10%的标准税率中，国家占7.8个点，地方消费税占2.2个点；食品和报纸适用的8%轻减税率中，国家占6.24个点，地方占1.76个点。两种税率下国家部分都是78%，[12] 所以国家和地方的消费税合计约为26.03万亿÷0.78＝33.4万亿日元，其十分之一约3.3万亿日元，就是10%税率中“一个点”的分量。"
+          ],
+          [
+            "p",
+            "这是一个尺度，不是预测。只把标准税率提高一个点，因为食品仍是8%，增收会略少；两种税率各提高一个点，增收会略多；3.3万亿日元介于两者之间。它也没有考虑加税后人们消费方式的变化。"
+          ],
+          [
+            "p",
+            "按这个尺度，总费用在9400日元时是4.2个点，1万日元4.4个点，3万日元13.2个点，7万日元30.9个点，10万日元44.2个点。净费用见上表。7万日元并替代全部公共养老金，约为12个点，也就是消费税从10%提高到约22%；只替代基础年金，约为22个点。"
+          ],
+          [
+            "h",
+            "对你家意味着什么"
+          ],
+          [
+            "p",
+            "全国的总额说明不了谁会受益。有孩子、目前福利少的家庭容易受益；依靠养老金或生活保护的人，取决于替代什么，有可能吃亏。想把每月3万到10万日元的基本收入和自家的儿童补贴、养老金、生活保护比一比，请用家庭计算器（适用于日本的家庭）。"
+          ],
+          [
+            "k",
+            "hh-jp-cost"
+          ],
+          [
+            "h",
+            "实验发现了什么"
+          ],
+          [
+            "p",
+            "还没有哪个国家给全体国民发过永久性的基本收入，所以没有直接证据说明这样做会怎样。已有的实验只是在有限时间里给较小的群体发钱。多数实验发现工作量略有减少或没有变化，没有出现大批人辞职的情况（见{发钱会让人不再工作吗？|/essays/does-cash-make-people-stop-working/}）。芬兰2017—2018年的实验中，2000名失业者每月领560欧元，对就业的影响很小，幸福感有所提高（见{“芬兰已经试过了，失败了”是真的吗？|/essays/finland-basic-income-experiment/}）。日本2020年的10万日元只发了一次，它显示的是一次性给付怎么花，而不是每月给付会不会改变工作（见{那10万日元去了哪里？|/essays/japan-special-cash-payment/}）。这些都无法说明，给全部1.23亿人发钱时，物价、工资和税收会怎样。"
+          ],
+          [
+            "h",
+            "数字说明了什么"
+          ],
+          [
+            "p",
+            "给日本每个人发基本收入，按贫困线的最低标准一年约14万亿日元，每月10万日元则一年147万亿日元。按竹中的7万日元，一年约103万亿日元，超过国家全部税收。儿童补贴和生活保护只能抵掉其中百分之几。只有养老金大到能把净费用降到税收的一半左右，而替代它会减少许多养老金领取者的收入。换算成消费税，7万日元的净费用约为12到30个点，取决于替代什么。"
+          ],
+          [
+            "p",
+            "其他金额或只发给成年人的情况，可以用{日本计算页面|/calc/jp/}；其他国家见{211个国家和地区比较|/calc/countries/}和{世界地图|/essays/basic-income-world-map/}。德国的情况见{德国总理默茨被问到基本收入。在德国给每个人发钱要花多少？|/essays/germany-merz-basic-income-cost/}；只发给低收入者的设计见{可退还税收抵免与基本收入有何不同？|/essays/refundable-tax-credit-vs-basic-income/}。"
+          ],
+          [
+            "h",
+            "前提与局限"
+          ],
+          [
+            "p",
+            "每人同样的金额。除非特别说明，孩子也领全额。人口采用总务省统计局2026年5月1日的1亿2281万2000人，并假定不变。[1] 统计局从2026年11月的报告起，将人口推计的基准改为2025年人口普查，这个数字会被修订。"
+          ],
+          [
+            "p",
+            "总费用。没有考虑对给付征的税、工作和物价的变化，以及运营成本。"
+          ],
+          [
+            "p",
+            "比较的基准。年份不一致：税收和GDP是2025财年，预算是2026财年，社会保障给付费是2024财年。税收只是国家的部分，加上地方税，占税收的比例都会下降。{日本计算页面|/calc/jp/}和{世界地图|/essays/basic-income-world-map/}使用世界银行2025年（日历年）的GDP（663.8万亿日元）和2026财年预算中预计的税收83.7万亿日元，[2][7] 所以比例略有不同：那里9400日元的最低标准占税收的16.5%。{竹中方案那篇随笔|/essays/takenaka-70000-yen-basic-income/}用的是厚生劳动省2026财年预算口径的社会保障给付费（144.1万亿日元），这里用的是已经结算的2024财年数字。"
+          ],
+          [
+            "p",
+            "替代部分。年份不一致：儿童补贴是2024财年，生活保护是2023财年，养老金是2024财年末。养老金的数字是年末领取者应领的一年金额，而不是这一年实际支付的现金。失业给付和税收扣除没有计算在内。"
+          ],
+          [
+            "p",
+            "消费税。尺度采用2025财年的税率和当年的税收；税率或征税范围改变，尺度也会变。"
+          ],
+          [
+            "p",
+            "不是政策建议。这些金额只是尺度。这里没有主张日本该不该实行基本收入，数字只说明金额有多大。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "जापान में रहने वाले हर व्यक्ति को बेसिक इनकम देने में कितना ख़र्च आएगा? जब भी यह विचार उठता है, यह सवाल भी उठता है, और जवाब लगभग पूरी तरह रकम पर टिका है। हेइज़ो ताकेनाका के 2020 के प्रस्ताव वाली 70,000 येन महीना की रकम पर ख़र्च साल में करीब 103 ट्रिलियन येन होगा: वित्त वर्ष 2025 में वसूले गए पूरे राष्ट्रीय कर (84.2 ट्रिलियन येन) से ज़्यादा, और वित्त वर्ष 2026 के सामान्य खाते के बजट का 84%। आगे: पाँच रकमों पर ख़र्च, यह किन मौजूदा भुगतानों की जगह ले सकता है, उपभोग कर (कंज़म्प्शन टैक्स) के कितने अंकों के बराबर है, और प्रयोगों में क्या मिला।"
+          ],
+          [
+            "h",
+            "हिसाब कैसे किया"
+          ],
+          [
+            "p",
+            "सांख्यिकी ब्यूरो के अंतिम जनसंख्या अनुमान के अनुसार 1 मई 2026 को जापान की आबादी 12,28,12,000 थी।[1] अगर बच्चों समेत सबको एक जैसी रकम मिले, तो ख़र्च बस मासिक रकम × 12 × 12.28 करोड़ है। हम पाँच रकमें लेते हैं।"
+          ],
+          [
+            "p",
+            "9,400 येन महीना इस साइट की {211 देशों की तुलना|/calc/countries/} में जापान की मानक रकम है: वर्ल्ड बैंक की 3.00 डॉलर रोज़ की गरीबी रेखा, जापान की क़ीमतों में बदली हुई।[2][3] 10,000 येन वह रकम है जो बाल भत्ता 3 साल से हाई स्कूल की उम्र तक के पहले या दूसरे बच्चे को हर महीने देता है।[4] 30,000 येन इस साइट के {जापान कैलकुलेटर पेज|/calc/jp/} की शुरुआती रकम है। 70,000 येन ताकेनाका की रकम है (देखें {हर महीने सबको 70,000 येन: किसे फ़ायदा, किसे नुक़सान?|/essays/takenaka-70000-yen-basic-income/}), जो वित्त वर्ष 2026 की पूरी बुनियादी पेंशन, 70,608 येन महीना, के क़रीब है।[5] 1,00,000 येन वह रकम है जो 2020 के विशेष नकद भुगतान में लगभग सबको एक बार मिली थी।"
+          ],
+          [
+            "h",
+            "ख़र्च कितना होगा: पाँच रकमें"
+          ],
+          [
+            "t",
+            "हर व्यक्ति, हर महीने | सालाना ख़र्च | राष्ट्रीय कर राजस्व का हिस्सा (वित्त वर्ष 2025) | सामान्य खाते के बजट का हिस्सा (वित्त वर्ष 2026) | GDP का हिस्सा (वित्त वर्ष 2025) | सामाजिक सुरक्षा भुगतानों का हिस्सा (वित्त वर्ष 2024)\n9,400 येन (गरीबी रेखा) | 13.9 ट्रिलियन येन | 16% | 11% | 2.1% | 10%\n10,000 येन | 14.7 ट्रिलियन येन | 17% | 12% | 2.2% | 11%\n30,000 येन | 44.2 ट्रिलियन येन | 52% | 36% | 6.6% | 32%\n70,000 येन (ताकेनाका) | 103.2 ट्रिलियन येन | 122% | 84% | 15.3% | 75%\n1,00,000 येन | 147.4 ट्रिलियन येन | 175% | 120% | 21.9% | 107%"
+          ],
+          [
+            "p",
+            "तुलना के पैमाने: वित्त वर्ष 2025 (अप्रैल 2025 से मार्च 2026) में राष्ट्रीय सरकार के सामान्य खाते का कर राजस्व अंतिम हिसाब में 84.2226 ट्रिलियन येन रहा, जो अब तक का सबसे ऊँचा है; इसमें स्थानीय कर शामिल नहीं हैं।[6] वित्त वर्ष 2026 का सामान्य खाते का बजट 122.3092 ट्रिलियन येन है।[7] कैबिनेट ऑफ़िस के 16 नवंबर 2026 के अनुमान में वित्त वर्ष 2025 का नाममात्र GDP 672.682 ट्रिलियन येन था।[8] वित्त वर्ष 2024 में दिए गए सामाजिक सुरक्षा भुगतान, यानी सारी पेंशन, इलाज और कल्याण, बीमा अंशदान से चलने वाले हिस्से समेत, 138.3019 ट्रिलियन येन थे।[9]"
+          ],
+          [
+            "p",
+            "सिर्फ़ दो सबसे छोटी रकमें राष्ट्रीय कर राजस्व के पाँचवें हिस्से से कम रहती हैं। 30,000 येन में इसका लगभग आधा लगेगा। 70,000 येन पूरे कर राजस्व से महँगा है, और 1,00,000 येन पूरे बजट से भी और सारे सामाजिक सुरक्षा भुगतानों को मिलाकर भी उनसे ज़्यादा।"
+          ],
+          [
+            "p",
+            "इस साइट के वर्ल्ड बैंक डेटा की 2025 की औसत विनिमय दर पर 70,000 येन करीब 40,800 रुपये महीना हैं, और 103.2 ट्रिलियन येन साल में करीब 60 लाख करोड़ रुपये।[2]"
+          ],
+          [
+            "p",
+            "बच्चों को कम देने से कुल ख़र्च उतना नहीं घटता जितना लगता है, क्योंकि 20 साल से कम उम्र के लोग आबादी के सिर्फ़ करीब 15% हैं। युताका हरादा की योजना, जिस पर ताकेनाका की योजना टिकी थी, यानी 20 साल और ऊपर के 10.41 करोड़ लोगों को 70,000 येन और 20 से कम के 1.87 करोड़ को 30,000 येन, का ख़र्च साल में करीब 94.2 ट्रिलियन येन होगा। सिर्फ़ वयस्कों को 70,000 येन देने का ख़र्च करीब 87.4 ट्रिलियन येन।[1] {जापान कैलकुलेटर पेज|/calc/jp/} पर सिर्फ़ वयस्कों या सिर्फ़ बच्चों का हिसाब भी देखा जा सकता है।"
+          ],
+          [
+            "h",
+            "यह किसकी जगह ले सकता है"
+          ],
+          [
+            "p",
+            "बेसिक इनकम आम तौर पर कुछ मौजूदा भुगतानों की जगह लेने के लिए सोची जाती है, सब के ऊपर जोड़ने के लिए नहीं। किनकी जगह, यह डिज़ाइन का फ़ैसला है, और सबसे अहम फ़ैसला। ये वे मुख्य नकद भुगतान हैं जिनकी जगह यह ले सकता है, ताज़ा सरकारी आँकड़ों के साथ।"
+          ],
+          [
+            "p",
+            "बाल भत्ता। वित्त वर्ष 2024 में नकद भुगतान 2.11 ट्रिलियन येन था।[9] भत्ता उस साल के बीच, अक्टूबर 2024 में बढ़ाया गया (आय की सीमा ख़त्म, हाई स्कूल की उम्र तक, तीसरे बच्चे से 30,000 येन महीना),[4] इसलिए नई दरों पर पूरे साल का ख़र्च इस आँकड़े से ज़्यादा है।"
+          ],
+          [
+            "p",
+            "सार्वजनिक सहायता (सेइकात्सु होगो)। सबसे ताज़ा असली आँकड़ा वित्त वर्ष 2023 का है: 3.60 ट्रिलियन येन, जिसका करीब आधा इलाज की सहायता है।[10] हम सिर्फ़ जीवन-यापन की सहायता (1.03 ट्रिलियन येन) और मकान की सहायता (0.60 ट्रिलियन येन), कुल 1.64 ट्रिलियन येन, को बदले जाने लायक मानते हैं: नकद भुगतान इलाज या लंबी देखभाल की सुरक्षा की जगह नहीं ले सकता।"
+          ],
+          [
+            "p",
+            "सार्वजनिक पेंशन। वित्त वर्ष 2024 के अंत में 3.63 करोड़ लोगों की बुनियादी पेंशन साल में 25.9 ट्रिलियन येन थी, और कमाई से जुड़ी कर्मचारी पेंशन समेत सारी सार्वजनिक पेंशन 58.3 ट्रिलियन येन।[11] पेंशन अंशदान के बदले मिलती है, इसलिए उसे बदलना सबसे विवादित फ़ैसला है। ताकेनाका की 2020 की किताब में बदले में पेंशन ख़त्म करने की बात थी; बाद के एक इंटरव्यू में उन्होंने कहा कि जमा किया गया अंशदान सुरक्षित रहेगा।"
+          ],
+          [
+            "p",
+            "गिना नहीं गया: रोज़गार बीमा का बेरोज़गारी भत्ता, कर छूट, और स्वास्थ्य व लंबी देखभाल बीमा। उन दो रकमों के लिए तीन स्थितियाँ, जो कम से कम पूरी बुनियादी पेंशन जितनी हैं:"
+          ],
+          [
+            "t",
+            "किसकी जगह | सालाना बचत | 70,000 येन पर शुद्ध ख़र्च | उपभोग कर के अंकों में | 1,00,000 येन पर शुद्ध ख़र्च | उपभोग कर के अंकों में\nकुछ नहीं (कुल ख़र्च) | – | 103.2 ट्रिलियन येन | 30.9 | 147.4 ट्रिलियन येन | 44.2\nA: बाल भत्ता, सार्वजनिक सहायता (जीवन-यापन और मकान) | 3.8 ट्रिलियन येन | 99.4 ट्रिलियन येन | 29.8 | 143.6 ट्रिलियन येन | 43.0\nB: A + बुनियादी पेंशन | 29.6 ट्रिलियन येन | 73.5 ट्रिलियन येन | 22.0 | 117.7 ट्रिलियन येन | 35.3\nC: A + सारी सार्वजनिक पेंशन | 62.1 ट्रिलियन येन | 41.1 ट्रिलियन येन | 12.3 | 85.3 ट्रिलियन येन | 25.6"
+          ],
+          [
+            "p",
+            "कुल रकम के सामने बाल भत्ता और सार्वजनिक सहायता छोटे हैं: दोनों को बदलने से 3.8 ट्रिलियन येन बचते हैं। तस्वीर बदलने लायक बड़ी सिर्फ़ पेंशन है। सारी सार्वजनिक पेंशन बदलने पर (C) 70,000 येन वाले रूप का शुद्ध ख़र्च 41.1 ट्रिलियन येन होगा, राष्ट्रीय कर राजस्व का करीब आधा (49%)। लेकिन तब जो रिटायर्ड कर्मचारी दंपती आज मिलकर 2,37,279 येन महीना पाते हैं, उन्हें 1,40,000 येन मिलेंगे।[5] सिर्फ़ बुनियादी पेंशन बदलने पर (B) ज़्यादातर पेंशनभोगी लगभग वहीं रहते हैं, क्योंकि बुढ़ापे की औसत बुनियादी पेंशन करीब 59,000 येन महीना है,[11] पर शुद्ध ख़र्च 73.5 ट्रिलियन येन रहता है, राष्ट्रीय कर राजस्व का 87%।"
+          ],
+          [
+            "p",
+            "10,000 या 30,000 येन पर बदलने को ज़्यादा कुछ नहीं है। दोनों बुनियादी पेंशन से भी कम हैं और सार्वजनिक सहायता की जीवन-यापन रकम से भी, इसलिए वे बने रहेंगे। 10,000 येन वही है जो ज़्यादातर बच्चों को बाल भत्ते में अभी मिलता है; अगर 10,000 येन की बेसिक इनकम उसकी जगह ले, तो शुद्ध ख़र्च करीब 12.6 ट्रिलियन येन होगा।"
+          ],
+          [
+            "h",
+            "उपभोग कर के अंकों में"
+          ],
+          [
+            "p",
+            "ऐसी रकमों को समझने का एक आम तरीका यह पूछना है कि वे उपभोग कर के कितने अंकों के बराबर हैं। हमारा तरीका: वित्त वर्ष 2025 में राष्ट्रीय उपभोग कर से 26.03 ट्रिलियन येन आए।[6] 10% की मानक दर में 7.8 अंक राष्ट्रीय हैं और 2.2 स्थानीय; खाने और अख़बारों पर लगने वाली 8% की घटी दर में 6.24 अंक राष्ट्रीय और 1.76 स्थानीय। दोनों दरों पर राष्ट्रीय हिस्सा 78% है,[12] इसलिए राष्ट्रीय और स्थानीय उपभोग कर मिलाकर करीब 26.03 ट्रिलियन ÷ 0.78 = 33.4 ट्रिलियन येन हुए, और उसका दसवाँ हिस्सा, 3.3 ट्रिलियन येन, 10% की दर का एक अंक माना जा सकता है।"
+          ],
+          [
+            "p",
+            "यह एक पैमाना है, अनुमान नहीं। सिर्फ़ मानक दर एक अंक बढ़ाने से थोड़ा कम आएगा, क्योंकि खाना 8% पर रहेगा; दोनों दरें एक-एक अंक बढ़ाने से थोड़ा ज़्यादा; 3.3 ट्रिलियन येन दोनों के बीच है। इसमें यह भी नहीं गिना कि कर बढ़ने पर लोग अलग तरह से ख़र्च करेंगे।"
+          ],
+          [
+            "p",
+            "इस पैमाने पर कुल ख़र्च 9,400 येन पर 4.2 अंक, 10,000 येन पर 4.4, 30,000 येन पर 13.2, 70,000 येन पर 30.9 और 1,00,000 येन पर 44.2 अंक है। शुद्ध आँकड़े ऊपर की तालिका में हैं। सारी सार्वजनिक पेंशन बदलकर 70,000 येन करीब 12 अंक है, यानी 10% की जगह करीब 22% उपभोग कर; सिर्फ़ बुनियादी पेंशन बदलने पर करीब 22 अंक।"
+          ],
+          [
+            "h",
+            "आपके घर के लिए इसका मतलब"
+          ],
+          [
+            "p",
+            "देश की कुल रकम यह नहीं बताती कि फ़ायदा किसे होगा। जिन परिवारों में बच्चे हैं और जिन्हें आज कम भुगतान मिलते हैं, उन्हें अक्सर फ़ायदा होता है; जो पेंशन या सार्वजनिक सहायता पर टिके हैं, वे इस पर निर्भर करते हुए कि किसकी जगह ली जाए, नुक़सान में रह सकते हैं। 30,000 से 1,00,000 येन महीने की तुलना अपने घर के बाल भत्ते, पेंशन और सार्वजनिक सहायता से करने के लिए घरेलू कैलकुलेटर देखें (जापान के परिवारों के लिए)।"
+          ],
+          [
+            "k",
+            "hh-jp-cost"
+          ],
+          [
+            "h",
+            "प्रयोगों में क्या मिला"
+          ],
+          [
+            "p",
+            "किसी भी देश ने अब तक सबको स्थायी बेसिक इनकम नहीं दी है, इसलिए इसका सीधा सबूत नहीं है कि इससे क्या होगा। प्रयोगों में छोटे समूहों को सीमित समय तक पैसा दिया गया। ज़्यादातर में काम थोड़ा घटा या नहीं बदला, और किसी में लोग बड़ी संख्या में काम छोड़ते नहीं दिखे (देखें {क्या पैसे देने से लोग काम करना छोड़ देते हैं?|/essays/does-cash-make-people-stop-working/})। फ़िनलैंड के 2017–2018 के प्रयोग में 2,000 बेरोज़गार लोगों को 560 यूरो महीना मिले; रोज़गार पर असर छोटा था और ख़ुशहाली बढ़ी (देखें {“फ़िनलैंड में बेसिक इनकम नाकाम रही”?|/essays/finland-basic-income-experiment/})। जापान के 2020 के 1,00,000 येन एक ही बार दिए गए, इसलिए वे बताते हैं कि एक बार का भुगतान कैसे ख़र्च होता है, न कि हर महीने का भुगतान काम को कैसे बदलता है (देखें {1,00,000 येन कहाँ गए?|/essays/japan-special-cash-payment/})। इनमें से कोई यह नहीं दिखा सकता कि सभी 12.3 करोड़ लोगों को पैसा देने पर क़ीमतों, मज़दूरी या करों का क्या होगा।"
+          ],
+          [
+            "h",
+            "आँकड़े क्या बताते हैं"
+          ],
+          [
+            "p",
+            "जापान में सबको बेसिक इनकम देने का ख़र्च गरीबी रेखा की न्यूनतम रकम पर साल में करीब 14 ट्रिलियन येन से लेकर 1,00,000 येन महीना पर 147 ट्रिलियन येन तक है। ताकेनाका के 70,000 येन पर करीब 103 ट्रिलियन येन, पूरे राष्ट्रीय कर राजस्व से ज़्यादा। बाल भत्ता और सार्वजनिक सहायता इसका सिर्फ़ कुछ प्रतिशत ढकते हैं। शुद्ध ख़र्च को कर राजस्व के करीब आधे तक लाने लायक बड़ी सिर्फ़ पेंशन है, और उसे बदलने से बहुत से पेंशनभोगियों की आय घटेगी। उपभोग कर में, 70,000 येन का शुद्ध ख़र्च, इस पर निर्भर करते हुए कि किसकी जगह ली जाए, करीब 12 से 30 अंक है।"
+          ],
+          [
+            "p",
+            "दूसरी रकमें या सिर्फ़ वयस्क आज़माने के लिए {जापान कैलकुलेटर पेज|/calc/jp/} देखें; दूसरे देशों के लिए {211 देशों की तुलना|/calc/countries/} और {विश्व मानचित्र|/essays/basic-income-world-map/}। जर्मनी के लिए देखें {जर्मन चांसलर से बेसिक इनकम पर सवाल हुआ। जर्मनी में सबको देने का ख़र्च कितना?|/essays/germany-merz-basic-income-cost/} सिर्फ़ कम आय वालों को देने वाले डिज़ाइन के लिए देखें {रिफ़ंडेबल टैक्स क्रेडिट और बेसिक इनकम में क्या फ़र्क़ है?|/essays/refundable-tax-credit-vs-basic-income/}"
+          ],
+          [
+            "h",
+            "मान्यताएँ और सीमाएँ"
+          ],
+          [
+            "p",
+            "सबको एक जैसी रकम। जब तक अलग न कहा जाए, बच्चों को भी पूरी रकम। आबादी सांख्यिकी ब्यूरो की 1 मई 2026 की 12,28,12,000 है, जिसे स्थिर माना गया है।[1] नवंबर 2026 की रिपोर्ट से ब्यूरो अपने अनुमानों का आधार 2025 की जनगणना कर रहा है, इसलिए यह आँकड़ा बदलेगा।"
+          ],
+          [
+            "p",
+            "कुल ख़र्च। भुगतान पर कर, काम या क़ीमतों में बदलाव, और चलाने का ख़र्च शामिल नहीं हैं।"
+          ],
+          [
+            "p",
+            "पैमाने। ये अलग-अलग सालों के हैं: कर राजस्व और GDP वित्त वर्ष 2025 के, बजट वित्त वर्ष 2026 का, सामाजिक सुरक्षा भुगतान वित्त वर्ष 2024 के। कर राजस्व सिर्फ़ राष्ट्रीय सरकार का है; स्थानीय कर जोड़ने पर कर राजस्व के सारे हिस्से घट जाएँगे। {जापान कैलकुलेटर पेज|/calc/jp/} और {विश्व मानचित्र|/essays/basic-income-world-map/} वर्ल्ड बैंक का कैलेंडर वर्ष 2025 का GDP (663.8 ट्रिलियन येन) और वित्त वर्ष 2026 के बजट में अनुमानित 83.7 ट्रिलियन येन कर राजस्व लेते हैं,[2][7] इसलिए वहाँ के हिस्से थोड़े अलग हैं: वहाँ 9,400 येन की न्यूनतम रकम कर राजस्व का 16.5% है। {ताकेनाका वाला निबंध|/essays/takenaka-70000-yen-basic-income/} स्वास्थ्य मंत्रालय का वित्त वर्ष 2026 के बजट पर आधारित सामाजिक सुरक्षा भुगतानों का अनुमान (144.1 ट्रिलियन येन) लेता है; यहाँ हम वित्त वर्ष 2024 का अंतिम आँकड़ा लेते हैं।"
+          ],
+          [
+            "p",
+            "जिनकी जगह ली गई। साल अलग हैं: बाल भत्ता वित्त वर्ष 2024, सार्वजनिक सहायता वित्त वर्ष 2023, पेंशन वित्त वर्ष 2024 के अंत में। पेंशन के आँकड़े साल के अंत में पाने वालों की बनती सालाना रकम हैं, साल भर में दी गई नकदी नहीं। बेरोज़गारी भत्ता और कर छूट नहीं गिने गए।"
+          ],
+          [
+            "p",
+            "उपभोग कर। पैमाना वित्त वर्ष 2025 की दरों और उनसे आए राजस्व पर टिका है; दरें या कर का दायरा बदले तो यह भी बदलेगा।"
+          ],
+          [
+            "p",
+            "प्रस्ताव नहीं। रकमें पैमाने हैं। यहाँ यह नहीं कहा गया कि जापान को बेसिक इनकम लानी चाहिए या नहीं; आँकड़े सिर्फ़ रकमों का आकार दिखाते हैं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "¿Cuánto costaría dar una renta básica a todas las personas que viven en Japón? La pregunta aparece cada vez que surge la idea, y la respuesta depende casi por completo de la cuantía. Con 70.000 yenes al mes, la cifra de la propuesta de Heizo Takenaka de 2020, costaría unos 103 billones de yenes al año: más que todos los impuestos nacionales recaudados en el año fiscal 2025 (84,2 billones) y el 84 % del presupuesto de la cuenta general del año fiscal 2026. A continuación: el coste con cinco cuantías, qué prestaciones actuales podría sustituir, cuántos puntos del impuesto sobre el consumo supone y qué han encontrado los experimentos."
+          ],
+          [
+            "h",
+            "Cómo contamos"
+          ],
+          [
+            "p",
+            "Japón tenía 122.812.000 habitantes el 1 de mayo de 2026, según la estimación definitiva de población de la Oficina de Estadística.[1] Si todos, también los niños, reciben la misma cantidad, el coste es simplemente la cuantía mensual × 12 × 122,8 millones. Usamos cinco cuantías."
+          ],
+          [
+            "p",
+            "9.400 yenes al mes es la cuantía estándar de Japón en la {comparación de 211 países|/calc/countries/} de este sitio: el umbral de pobreza del Banco Mundial, 3,00 dólares al día, convertido a precios japoneses.[2][3] 10.000 yenes es lo que paga cada mes la asignación por hijo por el primer o segundo hijo de 3 a 18 años.[4] 30.000 yenes es el valor inicial de la {página de la calculadora de Japón|/calc/jp/}. 70.000 yenes es la cifra de Takenaka (véase {70.000 yenes al mes para todos: ¿quién gana y quién pierde?|/essays/takenaka-70000-yen-basic-income/}), cercana a la pensión básica completa de 70.608 yenes al mes en el año fiscal 2026.[5] 100.000 yenes es lo que el Pago Especial en Efectivo de 2020 dio a casi todos, una sola vez."
+          ],
+          [
+            "h",
+            "Lo que costaría: cinco cuantías"
+          ],
+          [
+            "t",
+            "Por persona y mes | Coste anual | Parte de la recaudación fiscal nacional (AF 2025) | Parte del presupuesto de la cuenta general (AF 2026) | Parte del PIB (AF 2025) | Parte de las prestaciones de seguridad social (AF 2024)\n9.400 yenes (umbral de pobreza) | 13,9 billones de yenes | 16 % | 11 % | 2,1 % | 10 %\n10.000 yenes | 14,7 billones de yenes | 17 % | 12 % | 2,2 % | 11 %\n30.000 yenes | 44,2 billones de yenes | 52 % | 36 % | 6,6 % | 32 %\n70.000 yenes (Takenaka) | 103,2 billones de yenes | 122 % | 84 % | 15,3 % | 75 %\n100.000 yenes | 147,4 billones de yenes | 175 % | 120 % | 21,9 % | 107 %"
+          ],
+          [
+            "p",
+            "Las referencias: la recaudación fiscal de la cuenta general del Estado en el año fiscal 2025 (de abril de 2025 a marzo de 2026) se liquidó en 84,2226 billones de yenes, un récord; no incluye los impuestos locales.[6] El presupuesto de la cuenta general del año fiscal 2026 es de 122,3092 billones de yenes.[7] El PIB nominal del año fiscal 2025 fue de 672,682 billones de yenes según la estimación de la Oficina del Gabinete del 16 de noviembre de 2026.[8] Las prestaciones de seguridad social, es decir, todas las pensiones, la sanidad y la asistencia social pagadas en el año fiscal 2024, incluidas las financiadas con cotizaciones, sumaron 138,3019 billones de yenes.[9]"
+          ],
+          [
+            "p",
+            "Solo las dos cuantías más pequeñas quedan por debajo de una quinta parte de la recaudación nacional. 30.000 yenes se llevarían cerca de la mitad. 70.000 yenes costarían más que toda ella, y 100.000 yenes más que el presupuesto entero y más que todas las prestaciones de seguridad social juntas."
+          ],
+          [
+            "p",
+            "Al tipo de cambio de 2025 de los datos del Banco Mundial de este sitio, 70.000 yenes son unos 414 euros o 468 dólares al mes, y 103,2 billones de yenes, unos 610.000 millones de euros al año.[2]"
+          ],
+          [
+            "p",
+            "Pagar menos a los niños cambia el total menos de lo que parece, porque solo un 15 % de la población tiene menos de 20 años. El diseño de Yutaka Harada, en el que se basó el de Takenaka, con 70.000 yenes para los 104,07 millones de personas de 20 años o más y 30.000 para los 18,74 millones de menores de 20, costaría unos 94,2 billones de yenes al año. Solo para adultos, a 70.000 yenes, unos 87,4 billones.[1] La {página de la calculadora de Japón|/calc/jp/} permite probar solo adultos o solo niños."
+          ],
+          [
+            "h",
+            "Qué podría sustituir"
+          ],
+          [
+            "p",
+            "Una renta básica suele pensarse para sustituir parte de las prestaciones existentes, no para sumarse a todas. Cuáles es una decisión de diseño, y la más importante. Estas son las principales prestaciones en efectivo que podrían sustituirse, con las cifras oficiales más recientes."
+          ],
+          [
+            "p",
+            "Asignación por hijo. Las prestaciones en efectivo sumaron 2,11 billones de yenes en el año fiscal 2024.[9] La asignación se amplió en octubre de 2024, a mitad de ese año (sin límite de ingresos, hasta la edad de bachillerato y 30.000 yenes al mes desde el tercer hijo),[4] así que un año completo con las nuevas cuantías cuesta más que esta cifra."
+          ],
+          [
+            "p",
+            "Asistencia pública (seikatsu hogo). El gasto fue de 3,60 billones de yenes en el año fiscal 2023, la última cifra real, y cerca de la mitad fue asistencia médica.[10] Solo contamos como sustituibles la ayuda para gastos de vida (1,03 billones) y la de vivienda (0,60 billones), 1,64 billones en total: un pago en efectivo no sustituye la cobertura médica ni de cuidados."
+          ],
+          [
+            "p",
+            "Pensiones públicas. A finales del año fiscal 2024, las pensiones básicas de 36,3 millones de perceptores sumaban 25,9 billones de yenes al año, y todas las pensiones públicas, incluida la pensión de los asalariados ligada a los ingresos, 58,3 billones.[11] Las pensiones se pagan a cambio de cotizaciones, así que sustituirlas es la decisión más discutida. El libro de Takenaka de 2020 hablaba de suprimir las pensiones a cambio; en una entrevista posterior dijo que se respetaría lo ya cotizado."
+          ],
+          [
+            "p",
+            "No se cuentan: las prestaciones por desempleo del seguro de empleo, las deducciones fiscales y los seguros de salud y de cuidados. Tres escenarios, para las dos cuantías que igualan o superan una pensión básica completa:"
+          ],
+          [
+            "t",
+            "Qué se sustituye | Ahorro anual | Coste neto con 70.000 yenes | En puntos del impuesto sobre el consumo | Coste neto con 100.000 yenes | En puntos del impuesto sobre el consumo\nNada (coste bruto) | – | 103,2 billones de yenes | 30,9 | 147,4 billones de yenes | 44,2\nA: asignación por hijo, asistencia pública (vida y vivienda) | 3,8 billones de yenes | 99,4 billones de yenes | 29,8 | 143,6 billones de yenes | 43,0\nB: A + pensiones básicas | 29,6 billones de yenes | 73,5 billones de yenes | 22,0 | 117,7 billones de yenes | 35,3\nC: A + todas las pensiones públicas | 62,1 billones de yenes | 41,1 billones de yenes | 12,3 | 85,3 billones de yenes | 25,6"
+          ],
+          [
+            "p",
+            "La asignación por hijo y la asistencia pública son pequeñas frente a los totales: sustituir ambas ahorra 3,8 billones de yenes. Solo las pensiones son lo bastante grandes para cambiar el panorama. Sustituyendo todas las pensiones públicas (C), la versión de 70.000 yenes costaría 41,1 billones netos, cerca de la mitad de la recaudación nacional (49 %). Pero un matrimonio de jubilados asalariados que hoy recibe 237.279 yenes al mes entre los dos pasaría a recibir 140.000.[5] Sustituir solo la pensión básica (B) deja a la mayoría de los pensionistas más o menos igual, porque la pensión básica de vejez media es de unos 59.000 yenes al mes,[11] pero el coste neto sigue en 73,5 billones, el 87 % de la recaudación nacional."
+          ],
+          [
+            "p",
+            "Con 10.000 o 30.000 yenes hay poco que sustituir. Ambas cuantías están por debajo de la pensión básica y de lo que paga la asistencia pública para gastos de vida, así que estas tendrían que seguir. 10.000 yenes es lo que la asignación por hijo ya paga por la mayoría de los niños; si una renta básica de 10.000 yenes la sustituyera, el coste neto sería de unos 12,6 billones."
+          ],
+          [
+            "h",
+            "En puntos del impuesto sobre el consumo"
+          ],
+          [
+            "p",
+            "Una forma habitual de concretar estas sumas es preguntar a cuántos puntos del impuesto sobre el consumo equivalen. Nuestro método: el impuesto nacional sobre el consumo recaudó 26,03 billones de yenes en el año fiscal 2025.[6] Del tipo general del 10 %, 7,8 puntos son nacionales y 2,2 locales; del tipo reducido del 8 % para alimentos y periódicos, 6,24 son nacionales y 1,76 locales. Con ambos tipos la parte nacional es el 78 %,[12] así que el impuesto nacional y el local juntos sumaron unos 26,03 billones ÷ 0,78 = 33,4 billones de yenes, y una décima parte, 3,3 billones, es lo que representa un punto del tipo del 10 %."
+          ],
+          [
+            "p",
+            "Es una referencia, no una previsión. Subir solo el tipo general un punto recaudaría algo menos, porque los alimentos seguirían al 8 %; subir ambos tipos un punto, algo más; 3,3 billones queda entre ambos. Tampoco tiene en cuenta que la gente gastaría de otra manera si subiera el impuesto."
+          ],
+          [
+            "p",
+            "Con esta referencia, el coste bruto es de 4,2 puntos con 9.400 yenes, 4,4 con 10.000, 13,2 con 30.000, 30,9 con 70.000 y 44,2 con 100.000. Las cifras netas están en la tabla de arriba. 70.000 yenes sustituyendo todas las pensiones públicas son unos 12 puntos, es decir, un impuesto sobre el consumo de alrededor del 22 % en lugar del 10 %; sustituyendo solo la pensión básica, unos 22 puntos."
+          ],
+          [
+            "h",
+            "Qué supondría para su hogar"
+          ],
+          [
+            "p",
+            "Los totales nacionales no dicen quién gana. Las familias con hijos y pocas prestaciones hoy suelen ganar; quienes dependen de pensiones o de la asistencia pública pueden perder, según lo que se sustituya. Para comparar de 30.000 a 100.000 yenes al mes con la asignación por hijo, la pensión y la asistencia pública de su propio hogar, use la calculadora del hogar (para hogares en Japón)."
+          ],
+          [
+            "k",
+            "hh-jp-cost"
+          ],
+          [
+            "h",
+            "Lo que encontraron los experimentos"
+          ],
+          [
+            "p",
+            "Ningún país ha pagado una renta básica permanente a toda su población, así que no hay pruebas directas de lo que esto haría. Los ensayos pagaron a grupos más pequeños durante un tiempo limitado. La mayoría encontró pequeñas reducciones del trabajo o ninguna, y ninguno encontró abandonos masivos del empleo (véase {¿Dejamos de trabajar si nos dan dinero?|/essays/does-cash-make-people-stop-working/}). En el ensayo de Finlandia de 2017–2018, 2.000 personas desempleadas recibieron 560 euros al mes; el efecto sobre el empleo fue pequeño y el bienestar mejoró (véase {«Finlandia ya lo probó y fracasó»|/essays/finland-basic-income-experiment/}). Los 100.000 yenes de Japón en 2020 se pagaron una vez, así que muestran cómo se gasta un pago único, no cómo cambia el trabajo un pago mensual (véase {¿Adónde fueron los 100.000 yenes?|/essays/japan-special-cash-payment/}). Ninguno de ellos puede mostrar qué pasaría con los precios, los salarios o los impuestos si se pagara a los 123 millones de personas."
+          ],
+          [
+            "h",
+            "Lo que muestran las cifras"
+          ],
+          [
+            "p",
+            "Una renta básica para todos en Japón costaría desde unos 14 billones de yenes al año con el mínimo del umbral de pobreza hasta 147 billones con 100.000 yenes al mes. Con los 70.000 yenes de Takenaka costaría unos 103 billones, más que toda la recaudación nacional. La asignación por hijo y la asistencia pública cubrirían solo un pequeño porcentaje. Solo las pensiones son lo bastante grandes para bajar el coste neto a cerca de la mitad de la recaudación, y sustituirlas reduciría los ingresos de muchos pensionistas. En puntos del impuesto sobre el consumo, el coste neto con 70.000 yenes va de unos 12 a 30 puntos, según lo que se sustituya."
+          ],
+          [
+            "p",
+            "Para probar otras cuantías, o solo adultos, use {la página de la calculadora de Japón|/calc/jp/}; para otros países, véase {la comparación de 211 países|/calc/countries/} y {el mapa del mundo|/essays/basic-income-world-map/}. Sobre Alemania, véase {Preguntan al canciller alemán por la renta básica. ¿Cuánto le costaría a Alemania?|/essays/germany-merz-basic-income-cost/} Sobre un diseño que paga solo a quienes tienen ingresos bajos, véase {Créditos fiscales reembolsables frente a renta básica|/essays/refundable-tax-credit-vs-basic-income/}."
+          ],
+          [
+            "h",
+            "Supuestos y límites"
+          ],
+          [
+            "p",
+            "Todos, la misma cuantía. Los niños reciben la cuantía completa salvo que se indique. La población es la de la Oficina de Estadística, 122.812.000 el 1 de mayo de 2026, y se mantiene constante.[1] A partir de su informe de noviembre de 2026 la oficina toma como base el censo de 2025, así que la cifra se revisará."
+          ],
+          [
+            "p",
+            "Coste bruto. Quedan fuera los impuestos sobre el pago, los cambios en el trabajo o en los precios y el coste de gestionarlo."
+          ],
+          [
+            "p",
+            "Referencias. Son de años distintos: recaudación y PIB del año fiscal 2025, presupuesto del 2026, prestaciones de seguridad social del 2024. La recaudación es solo la del Estado; si se sumaran los impuestos locales, todas las partes de la recaudación bajarían. La {página de la calculadora de Japón|/calc/jp/} y el {mapa del mundo|/essays/basic-income-world-map/} usan el PIB del año natural 2025 del Banco Mundial (663,8 billones de yenes) y los 83,7 billones de recaudación presupuestados para el año fiscal 2026,[2][7] así que sus porcentajes difieren un poco: allí el mínimo de 9.400 yenes es el 16,5 % de la recaudación. El {ensayo sobre Takenaka|/essays/takenaka-70000-yen-basic-income/} usa la estimación del Ministerio de Sanidad basada en el presupuesto de 2026 (144,1 billones de yenes); aquí usamos la cifra liquidada de 2024."
+          ],
+          [
+            "p",
+            "Sustituciones. Los años difieren: asignación por hijo del año fiscal 2024, asistencia pública del 2023, pensiones a finales del 2024. Las cifras de pensiones son las cuantías anuales que corresponden a los perceptores a final de año, no el efectivo pagado durante el año. No se cuentan las prestaciones por desempleo ni las deducciones fiscales."
+          ],
+          [
+            "p",
+            "Impuesto sobre el consumo. La referencia usa los tipos vigentes en el año fiscal 2025 y lo que recaudaron; otros tipos o una base distinta la cambiarían."
+          ],
+          [
+            "p",
+            "No es una propuesta. Las cuantías son referencias. Nada de esto dice si Japón debería introducir una renta básica; las cifras solo muestran el tamaño de las sumas."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Was würde es kosten, allen Menschen in Japan ein Grundeinkommen zu zahlen? Die Frage kommt jedes Mal, wenn die Idee aufkommt, und die Antwort hängt fast nur vom Betrag ab. Bei 70.000 Yen im Monat, dem Betrag aus Heizo Takenakas Vorschlag von 2020, wären es rund 103 Billionen Yen im Jahr: mehr als alle Steuern, die der Staat im Haushaltsjahr 2025 eingenommen hat (84,2 Billionen Yen), und 84 % des allgemeinen Haushalts für 2026. Im Folgenden: die Kosten bei fünf Beträgen, welche bestehenden Leistungen es ersetzen könnte, wie viele Punkte Verbrauchsteuer das wären und was Experimente gezeigt haben."
+          ],
+          [
+            "h",
+            "Wie wir rechnen"
+          ],
+          [
+            "p",
+            "Japan hatte am 1. Mai 2026 laut der endgültigen Bevölkerungsschätzung des Statistikamts 122.812.000 Einwohner.[1] Wenn alle, auch Kinder, denselben Betrag erhalten, sind die Kosten einfach Monatsbetrag × 12 × 122,8 Millionen. Wir rechnen mit fünf Beträgen."
+          ],
+          [
+            "p",
+            "9.400 Yen im Monat sind der Standardbetrag für Japan im {Vergleich von 211 Ländern|/calc/countries/} auf dieser Seite: die Armutsgrenze der Weltbank von 3,00 Dollar am Tag, umgerechnet in japanische Preise.[2][3] 10.000 Yen zahlt das Kindergeld jeden Monat für ein erstes oder zweites Kind zwischen 3 und 18 Jahren.[4] 30.000 Yen sind der Startwert auf der {Japan-Seite des Rechners|/calc/jp/}. 70.000 Yen sind Takenakas Betrag (siehe {70.000 Yen im Monat für alle: Wer gewinnt, wer verliert?|/essays/takenaka-70000-yen-basic-income/}), nahe an der vollen Grundrente von 70.608 Yen im Monat im Haushaltsjahr 2026.[5] 100.000 Yen hat die Sonderzahlung von 2020 fast allen einmal gezahlt."
+          ],
+          [
+            "h",
+            "Was es kosten würde: fünf Beträge"
+          ],
+          [
+            "t",
+            "Pro Kopf und Monat | Kosten pro Jahr | Anteil an den Steuereinnahmen des Staates (HJ 2025) | Anteil am allgemeinen Haushalt (HJ 2026) | Anteil am BIP (HJ 2025) | Anteil an den Sozialleistungen (HJ 2024)\n9.400 Yen (Armutsgrenze) | 13,9 Bio. Yen | 16 % | 11 % | 2,1 % | 10 %\n10.000 Yen | 14,7 Bio. Yen | 17 % | 12 % | 2,2 % | 11 %\n30.000 Yen | 44,2 Bio. Yen | 52 % | 36 % | 6,6 % | 32 %\n70.000 Yen (Takenaka) | 103,2 Bio. Yen | 122 % | 84 % | 15,3 % | 75 %\n100.000 Yen | 147,4 Bio. Yen | 175 % | 120 % | 21,9 % | 107 %"
+          ],
+          [
+            "p",
+            "Die Vergleichsgrößen: Die Steuereinnahmen im allgemeinen Haushalt des Staates für das Haushaltsjahr 2025 (April 2025 bis März 2026) lagen laut Abschluss bei 84,2226 Billionen Yen, ein Rekord; Steuern der Präfekturen und Gemeinden sind nicht enthalten.[6] Der allgemeine Haushalt 2026 umfasst 122,3092 Billionen Yen.[7] Das nominale BIP im Haushaltsjahr 2025 betrug laut Schätzung des Kabinettsbüros vom 16. November 2026 672,682 Billionen Yen.[8] Die Sozialleistungen, also alle Renten, Gesundheitsleistungen und Sozialhilfe im Haushaltsjahr 2024, einschließlich der aus Beiträgen finanzierten, summierten sich auf 138,3019 Billionen Yen.[9]"
+          ],
+          [
+            "p",
+            "Nur die beiden kleinsten Beträge bleiben unter einem Fünftel der Steuereinnahmen des Staates. 30.000 Yen würden etwa die Hälfte beanspruchen. 70.000 Yen kosteten mehr als alle Steuern, 100.000 Yen mehr als der ganze Haushalt und mehr als alle Sozialleistungen zusammen."
+          ],
+          [
+            "p",
+            "Zum Wechselkurs von 2025 aus den Weltbankdaten dieser Seite sind 70.000 Yen rund 414 € im Monat und 103,2 Billionen Yen rund 610 Mrd. € im Jahr.[2]"
+          ],
+          [
+            "p",
+            "Kindern weniger zu zahlen, ändert die Summe weniger, als man denkt, denn nur rund 15 % der Menschen sind unter 20. Der Entwurf von Yutaka Harada, auf dem Takenakas Vorschlag beruhte, mit 70.000 Yen für die 104,07 Millionen Menschen ab 20 und 30.000 Yen für die 18,74 Millionen unter 20, kostete rund 94,2 Billionen Yen im Jahr. Nur für Erwachsene, mit 70.000 Yen, wären es rund 87,4 Billionen.[1] Auf der {Japan-Seite des Rechners|/calc/jp/} lassen sich nur Erwachsene oder nur Kinder durchrechnen."
+          ],
+          [
+            "h",
+            "Was es ersetzen könnte"
+          ],
+          [
+            "p",
+            "Ein Grundeinkommen soll meist einen Teil der bestehenden Leistungen ersetzen, nicht zu allen hinzukommen. Welche, ist eine Frage der Ausgestaltung, und zwar die wichtigste. Das sind die wichtigsten Geldleistungen, die ersetzt werden könnten, mit den neuesten amtlichen Zahlen."
+          ],
+          [
+            "p",
+            "Kindergeld. Die Geldleistungen betrugen im Haushaltsjahr 2024 2,11 Billionen Yen.[9] Das Kindergeld wurde im Oktober 2024 ausgeweitet, mitten im Jahr (keine Einkommensgrenze, bis ins Oberstufenalter, 30.000 Yen im Monat ab dem dritten Kind),[4] ein volles Jahr zu den neuen Sätzen kostet also mehr als diese Zahl."
+          ],
+          [
+            "p",
+            "Sozialhilfe (Seikatsu Hogo). Die Ausgaben lagen im Haushaltsjahr 2023, der neuesten tatsächlichen Zahl, bei 3,60 Billionen Yen, etwa die Hälfte davon Krankenhilfe.[10] Als ersetzbar zählen wir nur die Hilfe zum Lebensunterhalt (1,03 Billionen) und die Wohnhilfe (0,60 Billionen), zusammen 1,64 Billionen: Eine Geldzahlung ersetzt keine Absicherung für Krankheit oder Pflege."
+          ],
+          [
+            "p",
+            "Gesetzliche Renten. Ende des Haushaltsjahres 2024 beliefen sich die Grundrenten für 36,3 Millionen Empfänger auf 25,9 Billionen Yen im Jahr, alle gesetzlichen Renten einschließlich der einkommensabhängigen Arbeitnehmerrente auf 58,3 Billionen.[11] Renten werden für Beiträge gezahlt, ihr Ersatz ist daher die umstrittenste Entscheidung. Takenakas Buch von 2020 sprach davon, im Gegenzug die Renten abzuschaffen; in einem späteren Interview sagte er, bereits gezahlte Beiträge würden berücksichtigt."
+          ],
+          [
+            "p",
+            "Nicht gezählt: Arbeitslosengeld aus der Arbeitslosenversicherung, Steuerfreibeträge sowie Kranken- und Pflegeversicherung. Drei Szenarien für die beiden Beträge, die mindestens so hoch sind wie eine volle Grundrente:"
+          ],
+          [
+            "t",
+            "Was ersetzt wird | Ersparnis pro Jahr | Nettokosten bei 70.000 Yen | In Punkten Verbrauchsteuer | Nettokosten bei 100.000 Yen | In Punkten Verbrauchsteuer\nNichts (Bruttokosten) | – | 103,2 Bio. Yen | 30,9 | 147,4 Bio. Yen | 44,2\nA: Kindergeld, Sozialhilfe (Lebensunterhalt und Wohnen) | 3,8 Bio. Yen | 99,4 Bio. Yen | 29,8 | 143,6 Bio. Yen | 43,0\nB: A + Grundrenten | 29,6 Bio. Yen | 73,5 Bio. Yen | 22,0 | 117,7 Bio. Yen | 35,3\nC: A + alle gesetzlichen Renten | 62,1 Bio. Yen | 41,1 Bio. Yen | 12,3 | 85,3 Bio. Yen | 25,6"
+          ],
+          [
+            "p",
+            "Kindergeld und Sozialhilfe sind klein neben den Summen: Beide zu ersetzen spart 3,8 Billionen Yen. Nur die Renten sind groß genug, um das Bild zu ändern. Werden alle gesetzlichen Renten ersetzt (C), kostete die 70.000-Yen-Variante netto 41,1 Billionen, etwa die Hälfte der Steuereinnahmen des Staates (49 %). Ein Rentnerehepaar, das heute zusammen 237.279 Yen im Monat aus der Arbeitnehmerrente bezieht, bekäme dann aber 140.000 Yen.[5] Wird nur die Grundrente ersetzt (B), stehen die meisten Rentner etwa so da wie heute, denn die durchschnittliche Altersgrundrente liegt bei rund 59.000 Yen im Monat,[11] aber die Nettokosten bleiben bei 73,5 Billionen, 87 % der Steuereinnahmen des Staates."
+          ],
+          [
+            "p",
+            "Bei 10.000 oder 30.000 Yen gibt es wenig zu ersetzen. Beide liegen unter der Grundrente und unter dem, was die Sozialhilfe für den Lebensunterhalt zahlt, diese müssten also bleiben. 10.000 Yen zahlt das Kindergeld schon heute für die meisten Kinder; ersetzte ein Grundeinkommen von 10.000 Yen das Kindergeld, lägen die Nettokosten bei rund 12,6 Billionen Yen."
+          ],
+          [
+            "h",
+            "In Punkten Verbrauchsteuer"
+          ],
+          [
+            "p",
+            "Solche Summen werden oft greifbar gemacht, indem man fragt, wie vielen Punkten Verbrauchsteuer sie entsprechen. Unsere Methode: Die staatliche Verbrauchsteuer brachte im Haushaltsjahr 2025 26,03 Billionen Yen.[6] Vom Regelsatz von 10 % sind 7,8 Punkte staatlich und 2,2 lokal; vom ermäßigten Satz von 8 % für Lebensmittel und Zeitungen 6,24 staatlich und 1,76 lokal. Bei beiden Sätzen beträgt der staatliche Teil 78 %,[12] staatliche und lokale Verbrauchsteuer zusammen ergaben also rund 26,03 Billionen ÷ 0,78 = 33,4 Billionen Yen, und ein Zehntel davon, 3,3 Billionen, steht für einen Punkt des 10-%-Satzes."
+          ],
+          [
+            "p",
+            "Das ist ein Maßstab, keine Prognose. Nur den Regelsatz um einen Punkt zu erhöhen, brächte etwas weniger, weil Lebensmittel bei 8 % blieben; beide Sätze um einen Punkt zu erhöhen, etwas mehr; 3,3 Billionen liegen dazwischen. Er lässt auch außer Acht, dass Menschen bei höherer Steuer anders einkaufen würden."
+          ],
+          [
+            "p",
+            "Nach diesem Maßstab betragen die Bruttokosten 4,2 Punkte bei 9.400 Yen, 4,4 bei 10.000, 13,2 bei 30.000, 30,9 bei 70.000 und 44,2 bei 100.000 Yen. Die Nettowerte stehen in der Tabelle oben. 70.000 Yen mit Ersatz aller gesetzlichen Renten entsprechen etwa 12 Punkten, also einer Verbrauchsteuer von rund 22 % statt 10 %; wird nur die Grundrente ersetzt, sind es etwa 22 Punkte."
+          ],
+          [
+            "h",
+            "Was es für Ihren Haushalt bedeuten würde"
+          ],
+          [
+            "p",
+            "Landesweite Summen sagen nicht, wer gewinnt. Familien mit Kindern und wenigen Leistungen gewinnen eher; wer von Rente oder Sozialhilfe lebt, kann verlieren, je nachdem, was ersetzt wird. Um 30.000 bis 100.000 Yen im Monat mit Kindergeld, Rente und Sozialhilfe des eigenen Haushalts zu vergleichen, nutzen Sie den Haushaltsrechner (für Haushalte in Japan)."
+          ],
+          [
+            "k",
+            "hh-jp-cost"
+          ],
+          [
+            "h",
+            "Was Experimente zeigten"
+          ],
+          [
+            "p",
+            "Kein Land hat bisher allen ein dauerhaftes Grundeinkommen gezahlt, direkte Belege dafür, was das bewirken würde, gibt es also nicht. Versuche zahlten kleineren Gruppen für begrenzte Zeit. Die meisten fanden geringe oder keine Rückgänge der Arbeit, und keiner fand, dass Menschen massenhaft aufhörten (siehe {Wer Geld bekommt, hört auf zu arbeiten?|/essays/does-cash-make-people-stop-working/}). Im finnischen Versuch 2017–2018 erhielten 2.000 Arbeitslose 560 € im Monat; die Wirkung auf die Beschäftigung war klein, das Wohlbefinden besser (siehe {„Finnland hat es versucht, und es ist gescheitert“?|/essays/finland-basic-income-experiment/}). Japans 100.000 Yen von 2020 wurden einmal gezahlt; sie zeigen, wie eine Einmalzahlung ausgegeben wird, nicht, wie eine monatliche Zahlung die Arbeit verändert (siehe {Wohin gingen die 100.000 Yen?|/essays/japan-special-cash-payment/}). Keiner dieser Versuche kann zeigen, was mit Preisen, Löhnen oder Steuern geschähe, wenn alle 123 Millionen Menschen Geld bekämen."
+          ],
+          [
+            "h",
+            "Was die Zahlen zeigen"
+          ],
+          [
+            "p",
+            "Ein Grundeinkommen für alle in Japan kostete zwischen rund 14 Billionen Yen im Jahr auf Höhe der Armutsgrenze und 147 Billionen bei 100.000 Yen im Monat. Bei Takenakas 70.000 Yen wären es rund 103 Billionen, mehr als alle Steuereinnahmen des Staates. Kindergeld und Sozialhilfe deckten davon nur wenige Prozent. Nur die Renten sind groß genug, um die Nettokosten auf etwa die Hälfte der Steuereinnahmen zu senken, und ihr Ersatz würde vielen Rentnern Einkommen nehmen. In Punkten Verbrauchsteuer liegen die Nettokosten bei 70.000 Yen je nach Ersatz bei etwa 12 bis 30 Punkten."
+          ],
+          [
+            "p",
+            "Andere Beträge oder nur Erwachsene lassen sich auf {der Japan-Seite des Rechners|/calc/jp/} durchrechnen; für andere Länder siehe {den Vergleich von 211 Ländern|/calc/countries/} und {die Weltkarte|/essays/basic-income-world-map/}. Zu Deutschland siehe {Merz wurde nach dem Grundeinkommen gefragt. Was würde es Deutschland kosten?|/essays/germany-merz-basic-income-cost/} Zu einem Modell, das nur Menschen mit niedrigem Einkommen zahlt, siehe {Erstattungsfähige Steuergutschrift oder Grundeinkommen?|/essays/refundable-tax-credit-vs-basic-income/}"
+          ],
+          [
+            "h",
+            "Annahmen und Grenzen"
+          ],
+          [
+            "p",
+            "Alle, derselbe Betrag. Kinder erhalten den vollen Betrag, sofern nicht anders angegeben. Die Bevölkerung ist die des Statistikamts, 122.812.000 am 1. Mai 2026, als konstant angenommen.[1] Ab seinem Bericht für November 2026 stellt das Amt seine Schätzungen auf den Zensus 2025 um, die Zahl wird also revidiert."
+          ],
+          [
+            "p",
+            "Bruttokosten. Steuern auf die Zahlung, Änderungen bei Arbeit oder Preisen und Verwaltungskosten sind nicht enthalten."
+          ],
+          [
+            "p",
+            "Vergleichsgrößen. Sie stammen aus verschiedenen Jahren: Steuereinnahmen und BIP aus dem Haushaltsjahr 2025, der Haushalt aus 2026, die Sozialleistungen aus 2024. Die Steuereinnahmen sind nur die des Staates; mit lokalen Steuern würden alle Anteile an den Steuereinnahmen sinken. Die {Japan-Seite des Rechners|/calc/jp/} und die {Weltkarte|/essays/basic-income-world-map/} nutzen das BIP der Weltbank für das Kalenderjahr 2025 (663,8 Billionen Yen) und die für 2026 veranschlagten Steuereinnahmen von 83,7 Billionen,[2][7] ihre Anteile weichen daher leicht ab: Dort macht die 9.400-Yen-Untergrenze 16,5 % der Steuereinnahmen aus. Der {Takenaka-Essay|/essays/takenaka-70000-yen-basic-income/} nutzt die Schätzung des Gesundheitsministeriums auf Basis des Haushalts 2026 (144,1 Billionen Yen); hier verwenden wir die abgerechnete Zahl für 2024."
+          ],
+          [
+            "p",
+            "Ersatz. Die Jahre unterscheiden sich: Kindergeld 2024, Sozialhilfe 2023, Renten Ende 2024. Die Rentenzahlen sind die Jahresbeträge, die den Empfängern am Jahresende zustehen, nicht das im Jahr gezahlte Geld. Arbeitslosengeld und Steuerfreibeträge sind nicht gezählt."
+          ],
+          [
+            "p",
+            "Verbrauchsteuer. Der Maßstab nutzt die im Haushaltsjahr 2025 geltenden Sätze und ihr Aufkommen; andere Sätze oder eine andere Bemessungsgrundlage würden ihn ändern."
+          ],
+          [
+            "p",
+            "Kein Vorschlag. Die Beträge sind Maßstäbe. Nichts hier sagt, ob Japan ein Grundeinkommen einführen sollte; die Zahlen zeigen nur die Größe der Summen."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "كم سيكلّف أن يحصل كل من يعيش في اليابان على دخل أساسي؟ يُطرح هذا السؤال كلما طُرحت الفكرة، والجواب يتوقف كله تقريبًا على المبلغ. بمبلغ 70,000 ين شهريًا، وهو الرقم الوارد في اقتراح هيزو تاكيناكا عام 2020، ستبلغ التكلفة نحو 103 تريليونات ين سنويًا: أكثر من كل الضرائب الوطنية المحصّلة في السنة المالية 2025 (84.2 تريليون ين)، و⁦84%⁩ من ميزانية الحساب العام للسنة المالية 2026. فيما يلي: التكلفة عند خمسة مبالغ، وما يمكن أن يحلّ محله من الإعانات القائمة، وكم يساوي ذلك من نقاط ضريبة الاستهلاك، وما وجدته التجارب."
+          ],
+          [
+            "h",
+            "كيف نحسب"
+          ],
+          [
+            "p",
+            "بلغ عدد سكان اليابان 122,812,000 نسمة في 1 مايو 2026، بحسب التقدير النهائي لمكتب الإحصاء.[1] وإذا حصل الجميع، بمن فيهم الأطفال، على المبلغ نفسه، فالتكلفة هي ببساطة المبلغ الشهري × 12 × 122.8 مليون. نستخدم خمسة مبالغ."
+          ],
+          [
+            "p",
+            "9,400 ين شهريًا هو المبلغ المعياري لليابان في {مقارنة 211 دولة|/calc/countries/} في هذا الموقع: خط الفقر لدى البنك الدولي، 3.00 دولارات يوميًا، محوّلًا إلى الأسعار اليابانية.[2][3] و10,000 ين هو ما تدفعه إعانة الأطفال شهريًا عن الطفل الأول أو الثاني من سن 3 إلى 18 عامًا.[4] و30,000 ين هو المبلغ الافتراضي في {صفحة حاسبة اليابان|/calc/jp/} في هذا الموقع. و70,000 ين هو رقم تاكيناكا (انظر {70,000 ين شهريًا للجميع: مَن يربح ومَن يخسر؟|/essays/takenaka-70000-yen-basic-income/})، وهو قريب من المعاش الأساسي الكامل البالغ 70,608 ين شهريًا في السنة المالية 2026.[5] و100,000 ين هو ما دفعته الدفعة النقدية الخاصة عام 2020 للجميع تقريبًا، مرة واحدة."
+          ],
+          [
+            "h",
+            "كم سيكلّف: خمسة مبالغ"
+          ],
+          [
+            "t",
+            "للفرد شهريًا | التكلفة السنوية | نسبتها من الإيرادات الضريبية الوطنية (السنة المالية 2025) | نسبتها من ميزانية الحساب العام (السنة المالية 2026) | نسبتها من الناتج المحلي (السنة المالية 2025) | نسبتها من إعانات الضمان الاجتماعي (السنة المالية 2024)\n9,400 ين (خط الفقر) | 13.9 تريليون ين | 16% | 11% | 2.1% | 10%\n10,000 ين | 14.7 تريليون ين | 17% | 12% | 2.2% | 11%\n30,000 ين | 44.2 تريليون ين | 52% | 36% | 6.6% | 32%\n70,000 ين (تاكيناكا) | 103.2 تريليون ين | 122% | 84% | 15.3% | 75%\n100,000 ين | 147.4 تريليون ين | 175% | 120% | 21.9% | 107%"
+          ],
+          [
+            "p",
+            "المقاييس: بلغت الإيرادات الضريبية في الحساب العام للحكومة الوطنية للسنة المالية 2025 (من أبريل 2025 إلى مارس 2026) بحسب الحساب الختامي 84.2226 تريليون ين، وهو رقم قياسي، من دون الضرائب المحلية.[6] وميزانية الحساب العام للسنة المالية 2026 هي 122.3092 تريليون ين.[7] وبلغ الناتج المحلي الإجمالي الاسمي للسنة المالية 2025 نحو 672.682 تريليون ين في تقدير مكتب مجلس الوزراء الصادر في 16 نوفمبر 2026.[8] أما إعانات الضمان الاجتماعي، أي كل المعاشات والرعاية الصحية والرعاية الاجتماعية المدفوعة في السنة المالية 2024، بما فيها الممولة من الاشتراكات، فبلغت 138.3019 تريليون ين.[9]"
+          ],
+          [
+            "p",
+            "لا يبقى دون خُمس الإيرادات الضريبية الوطنية إلا أصغر مبلغين. و30,000 ين تستهلك نحو نصفها. و70,000 ين تكلّف أكثر منها كلها، و100,000 ين أكثر من الميزانية كلها ومن كل إعانات الضمان الاجتماعي مجتمعةً."
+          ],
+          [
+            "p",
+            "وبمتوسط سعر الصرف في 2025 من بيانات البنك الدولي التي يستخدمها هذا الموقع، تساوي 70,000 ين نحو 1,750 ريالًا سعوديًا أو نحو 23,200 جنيه مصري شهريًا، وتساوي 103.2 تريليون ين نحو 2.6 تريليون ريال سنويًا.[2]"
+          ],
+          [
+            "p",
+            "دفع مبلغ أقل للأطفال يغيّر المجموع أقل مما قد يُظن، لأن من هم دون العشرين لا يتجاوزون نحو ⁦15%⁩ من السكان. فتصميم يوتاكا هارادا، الذي بُني عليه اقتراح تاكيناكا، أي 70,000 ين لـ104.07 ملايين شخص في سن العشرين فما فوق و30,000 ين لـ18.74 مليونًا دونها، يكلّف نحو 94.2 تريليون ين سنويًا. وللبالغين وحدهم بمبلغ 70,000 ين نحو 87.4 تريليون ين.[1] وتتيح {صفحة حاسبة اليابان|/calc/jp/} تجربة البالغين وحدهم أو الأطفال وحدهم."
+          ],
+          [
+            "h",
+            "ما الذي يمكن أن يحلّ محله"
+          ],
+          [
+            "p",
+            "يُقصد بالدخل الأساسي عادةً أن يحل محل بعض الإعانات القائمة، لا أن يُضاف فوقها كلها. وأيها يحل محله قرار في التصميم، وهو أهم قرار. هذه هي أهم الإعانات النقدية التي يمكن استبدالها، بأحدث الأرقام الرسمية."
+          ],
+          [
+            "p",
+            "إعانة الأطفال. بلغت الإعانات النقدية 2.11 تريليون ين في السنة المالية 2024.[9] ووُسّعت الإعانة في أكتوبر 2024، في منتصف تلك السنة (بلا حد للدخل، وحتى سن المرحلة الثانوية، و30,000 ين شهريًا ابتداءً من الطفل الثالث)،[4] لذا فإن سنة كاملة بالمبالغ الجديدة تكلّف أكثر من هذا الرقم."
+          ],
+          [
+            "p",
+            "المساعدة العامة. بلغ الإنفاق 3.60 تريليون ين في السنة المالية 2023، وهو أحدث رقم فعلي، ونحو نصفه مساعدة طبية.[10] لا نعدّ قابلًا للاستبدال إلا مساعدة المعيشة (1.03 تريليون ين) ومساعدة السكن (0.60 تريليون ين)، أي 1.64 تريليون ين في المجموع: فالدفعة النقدية لا تحل محل التغطية الطبية أو تغطية الرعاية طويلة الأمد."
+          ],
+          [
+            "p",
+            "المعاشات العامة. في نهاية السنة المالية 2024 بلغت المعاشات الأساسية لـ36.3 مليون مستفيد 25.9 تريليون ين سنويًا، وبلغت كل المعاشات العامة، بما فيها معاش الموظفين المرتبط بالدخل، 58.3 تريليون ين.[11] وتُدفع المعاشات مقابل اشتراكات، لذا فاستبدالها هو أكثر القرارات إثارة للخلاف. فقد تحدث كتاب تاكيناكا عام 2020 عن إلغاء المعاشات في المقابل، ثم قال في مقابلة لاحقة إن الاشتراكات المدفوعة سابقًا ستُحترم."
+          ],
+          [
+            "p",
+            "لم نحتسب: إعانات البطالة من تأمين التوظيف، والإعفاءات الضريبية، والتأمين الصحي وتأمين الرعاية طويلة الأمد. ثلاثة سيناريوهات للمبلغين اللذين يساويان المعاش الأساسي الكامل أو يزيدان عليه:"
+          ],
+          [
+            "t",
+            "ما يُستبدل | التوفير السنوي | التكلفة الصافية عند 70,000 ين | بنقاط ضريبة الاستهلاك | التكلفة الصافية عند 100,000 ين | بنقاط ضريبة الاستهلاك\nلا شيء (التكلفة الإجمالية) | – | 103.2 تريليون ين | 30.9 | 147.4 تريليون ين | 44.2\n(أ) إعانة الأطفال، والمساعدة العامة (المعيشة والسكن) | 3.8 تريليون ين | 99.4 تريليون ين | 29.8 | 143.6 تريليون ين | 43.0\n(ب) (أ) + المعاشات الأساسية | 29.6 تريليون ين | 73.5 تريليون ين | 22.0 | 117.7 تريليون ين | 35.3\n(ج) (أ) + كل المعاشات العامة | 62.1 تريليون ين | 41.1 تريليون ين | 12.3 | 85.3 تريليون ين | 25.6"
+          ],
+          [
+            "p",
+            "إعانة الأطفال والمساعدة العامة صغيرتان أمام المجاميع: استبدالهما معًا يوفّر 3.8 تريليون ين. ولا شيء كبير بما يكفي لتغيير الصورة إلا المعاشات. فإذا استُبدلت كل المعاشات العامة (ج)، كلّفت نسخة 70,000 ين صافيًا 41.1 تريليون ين، أي نحو نصف الإيرادات الضريبية الوطنية (⁦49%⁩). لكن زوجين متقاعدين من الموظفين يحصلان اليوم معًا على 237,279 ين شهريًا سيحصلان حينها على 140,000 ين.[5] أما استبدال المعاش الأساسي وحده (ب) فيترك معظم المتقاعدين في مكانهم تقريبًا، لأن متوسط معاش الشيخوخة الأساسي نحو 59,000 ين شهريًا،[11] لكن التكلفة الصافية تبقى 73.5 تريليون ين، أي ⁦87%⁩ من الإيرادات الضريبية الوطنية."
+          ],
+          [
+            "p",
+            "عند 10,000 أو 30,000 ين لا يبقى الكثير لاستبداله. فكلا المبلغين أقل من المعاش الأساسي ومما تدفعه المساعدة العامة لنفقات المعيشة، فيجب أن تبقى هذه الإعانات. و10,000 ين هو ما تدفعه إعانة الأطفال اليوم عن معظم الأطفال؛ ولو حلّ دخل أساسي بمبلغ 10,000 ين محلها، لكانت التكلفة الصافية نحو 12.6 تريليون ين."
+          ],
+          [
+            "h",
+            "بنقاط ضريبة الاستهلاك"
+          ],
+          [
+            "p",
+            "من الطرق الشائعة لتقريب هذه المبالغ أن نسأل: كم نقطة من ضريبة الاستهلاك تساوي؟ طريقتنا: جلبت ضريبة الاستهلاك الوطنية 26.03 تريليون ين في السنة المالية 2025.[6] من المعدل العادي البالغ ⁦10%⁩ هناك 7.8 نقطة وطنية و2.2 محلية؛ ومن المعدل المخفّض البالغ ⁦8%⁩ على الغذاء والصحف 6.24 نقطة وطنية و1.76 محلية. وفي المعدلين يكون الجزء الوطني ⁦78%⁩،[12] لذا بلغت ضريبة الاستهلاك الوطنية والمحلية معًا نحو 26.03 تريليون ÷ 0.78 = 33.4 تريليون ين، وعُشرها، أي 3.3 تريليون ين، هو ما تمثله نقطة واحدة من معدل ⁦10%⁩."
+          ],
+          [
+            "p",
+            "هذا مقياس لا توقع. رفع المعدل العادي وحده نقطة واحدة سيجلب أقل قليلًا، لأن الغذاء يبقى عند ⁦8%⁩؛ ورفع المعدلين نقطة لكل منهما سيجلب أكثر قليلًا؛ و3.3 تريليون ين تقع بينهما. كما أنه يتجاهل أن الناس سيغيّرون إنفاقهم إذا ارتفعت الضريبة."
+          ],
+          [
+            "p",
+            "بهذا المقياس، تبلغ التكلفة الإجمالية 4.2 نقطة عند 9,400 ين، و4.4 عند 10,000، و13.2 عند 30,000، و30.9 عند 70,000، و44.2 عند 100,000 ين. أما الأرقام الصافية ففي الجدول أعلاه. ومبلغ 70,000 ين مع استبدال كل المعاشات العامة يعادل نحو 12 نقطة، أي ضريبة استهلاك بنحو ⁦22%⁩ بدلًا من ⁦10%⁩؛ ومع استبدال المعاش الأساسي وحده نحو 22 نقطة."
+          ],
+          [
+            "h",
+            "ماذا يعني ذلك لأسرتك"
+          ],
+          [
+            "p",
+            "المجاميع الوطنية لا تقول مَن يربح. فالأسر التي لديها أطفال وإعانات قليلة اليوم تميل إلى الربح؛ ومن يعتمدون على المعاشات أو المساعدة العامة قد يخسرون، بحسب ما يُستبدل. لمقارنة 30,000 إلى 100,000 ين شهريًا بإعانة الأطفال والمعاش والمساعدة العامة في أسرتك، استخدم حاسبة الأسرة (للأسر في اليابان)."
+          ],
+          [
+            "k",
+            "hh-jp-cost"
+          ],
+          [
+            "h",
+            "ما وجدته التجارب"
+          ],
+          [
+            "p",
+            "لم تدفع أي دولة حتى الآن دخلًا أساسيًا دائمًا للجميع، لذا لا يوجد دليل مباشر على ما سيحدث. التجارب دفعت لمجموعات أصغر لمدة محدودة. وجد معظمها انخفاضًا صغيرًا في العمل أو لا انخفاض، ولم يجد أي منها أن الناس تركوا العمل بأعداد كبيرة (انظر {هل يتوقف الناس عن العمل إذا أعطيناهم المال؟|/essays/does-cash-make-people-stop-working/}). وفي تجربة فنلندا في 2017–2018 حصل 2,000 عاطل عن العمل على 560 يورو شهريًا؛ وكان الأثر على التوظيف صغيرًا وتحسّن الرفاه (انظر {«جرّبت فنلندا الدخل الأساسي وفشل»؟|/essays/finland-basic-income-experiment/}). أما 100,000 ين التي دفعتها اليابان عام 2020 فدُفعت مرة واحدة، لذا فهي تُظهر كيف تُنفق دفعة لمرة واحدة، لا كيف تغيّر دفعة شهرية العمل (انظر {أين ذهبت الـ100,000 ين؟|/essays/japan-special-cash-payment/}). ولا يمكن لأي منها أن يُظهر ما سيحدث للأسعار أو الأجور أو الضرائب لو دُفع المال لكل السكان البالغ عددهم 123 مليونًا."
+          ],
+          [
+            "h",
+            "ما تُظهره الأرقام"
+          ],
+          [
+            "p",
+            "سيكلّف دخل أساسي لكل من في اليابان من نحو 14 تريليون ين سنويًا عند الحد الأدنى لخط الفقر إلى 147 تريليون ين عند 100,000 ين شهريًا. وعند 70,000 ين التي اقترحها تاكيناكا نحو 103 تريليونات ين، أي أكثر من كل الإيرادات الضريبية الوطنية. ولن تغطي إعانة الأطفال والمساعدة العامة إلا نسبة مئوية صغيرة من ذلك. ولا شيء كبير بما يكفي لخفض التكلفة الصافية إلى نحو نصف الإيرادات الضريبية إلا المعاشات، واستبدالها سيقلّص دخل كثير من المتقاعدين. وبنقاط ضريبة الاستهلاك، تبلغ التكلفة الصافية عند 70,000 ين نحو 12 إلى 30 نقطة، بحسب ما يُستبدل."
+          ],
+          [
+            "p",
+            "لتجربة مبالغ أخرى، أو البالغين وحدهم، استخدم {صفحة حاسبة اليابان|/calc/jp/}؛ ولبقية الدول انظر {مقارنة 211 دولة|/calc/countries/} و{خريطة العالم|/essays/basic-income-world-map/}. وعن ألمانيا انظر {ميرتس والدخل الأساسي: كم سيكلّف ألمانيا؟|/essays/germany-merz-basic-income-cost/} وعن تصميم لا يدفع إلا لذوي الدخل المنخفض انظر {الائتمان الضريبي القابل للاسترداد أم الدخل الأساسي؟|/essays/refundable-tax-credit-vs-basic-income/}"
+          ],
+          [
+            "h",
+            "الافتراضات والحدود"
+          ],
+          [
+            "p",
+            "الجميع، المبلغ نفسه. يحصل الأطفال على المبلغ كاملًا ما لم يُذكر غير ذلك. السكان هم 122,812,000 بحسب مكتب الإحصاء في 1 مايو 2026، مع افتراض ثبات العدد.[1] وابتداءً من تقرير نوفمبر 2026 يعتمد المكتب تعداد 2025 أساسًا لتقديراته، لذا سيُعدَّل الرقم."
+          ],
+          [
+            "p",
+            "التكلفة الإجمالية. لا تشمل الضرائب على الدفعة، ولا التغيرات في العمل أو الأسعار، ولا تكلفة الإدارة."
+          ],
+          [
+            "p",
+            "المقاييس. هي من سنوات مختلفة: الإيرادات الضريبية والناتج المحلي من السنة المالية 2025، والميزانية من 2026، وإعانات الضمان الاجتماعي من 2024. والإيرادات الضريبية هي إيرادات الحكومة الوطنية وحدها؛ وإضافة الضرائب المحلية ستخفض كل النسب من الإيرادات الضريبية. وتستخدم {صفحة حاسبة اليابان|/calc/jp/} و{خريطة العالم|/essays/basic-income-world-map/} الناتج المحلي للسنة التقويمية 2025 من البنك الدولي (663.8 تريليون ين) والإيرادات الضريبية المقدّرة في ميزانية 2026 البالغة 83.7 تريليون ين،[2][7] لذا تختلف نسبهما قليلًا: هناك يساوي الحد الأدنى البالغ 9,400 ين ⁦16.5%⁩ من الإيرادات الضريبية. ويستخدم {مقال تاكيناكا|/essays/takenaka-70000-yen-basic-income/} تقدير وزارة الصحة المبني على ميزانية 2026 لإعانات الضمان الاجتماعي (144.1 تريليون ين)؛ أما هنا فنستخدم الرقم الختامي لعام 2024."
+          ],
+          [
+            "p",
+            "الاستبدال. السنوات مختلفة: إعانة الأطفال 2024، والمساعدة العامة 2023، والمعاشات في نهاية 2024. وأرقام المعاشات هي المبالغ السنوية المستحقة للمستفيدين في نهاية السنة، لا النقد المدفوع خلالها. ولم تُحتسب إعانات البطالة ولا الإعفاءات الضريبية."
+          ],
+          [
+            "p",
+            "ضريبة الاستهلاك. يستخدم المقياس المعدلات السارية في السنة المالية 2025 وما جلبته من إيرادات؛ وأي معدلات أخرى أو وعاء ضريبي مختلف سيغيّره."
+          ],
+          [
+            "p",
+            "ليس اقتراحًا. المبالغ مقاييس. لا شيء هنا يقول إن على اليابان أن تعتمد دخلًا أساسيًا أو لا؛ الأرقام تُظهر حجم المبالغ فقط."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Statistics Bureau of Japan — Population Estimates, October 2026 report (20 October 2026): final estimate for 1 May 2026, 122,812,000 (under 15: 13,263,000; ages 15–19: 5,480,000); from the November 2026 report the base moves to the 2025 census (PDF, in Japanese)",
+          "url": "https://www.stat.go.jp/data/jinsui/pdf/202610.pdf"
+        },
+        {
+          "n": 2,
+          "label": "Free Lunch Lab — countries.json: Japan’s $3.00-a-day poverty line in local prices (¥9,400 a month), World Bank GDP and 2025 exchange rates used by the calculator (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/countries.json"
+        },
+        {
+          "n": 3,
+          "label": "World Bank — June 2025 update to the global poverty lines: the international poverty line of $3.00 a day in 2021 PPP",
+          "url": "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines"
+        },
+        {
+          "n": 4,
+          "label": "Children and Families Agency — Guide to the child allowance: ¥15,000 a month under 3, ¥10,000 from 3 to high-school age, ¥30,000 from the third child, no income limit since October 2024 (in Japanese)",
+          "url": "https://www.cfa.go.jp/policies/kokoseido/jidouteate/annai"
+        },
+        {
+          "n": 5,
+          "label": "Japan Pension Service — Pension amounts from April 2026: full National Pension ¥70,608 a month, model couple ¥237,279 (in Japanese)",
+          "url": "https://www.nenkin.go.jp/oshirase/taisetu/kojin/2026/202604/0401.html"
+        },
+        {
+          "n": 6,
+          "label": "Ministry of Finance — FY2025 general-account budget and settlement comparison (31 July 2026): tax revenue settled at ¥84.2226 trillion, of which consumption tax ¥26.0277 trillion; FY2025 settlement summary (PDF, in Japanese)",
+          "url": "https://www.mof.go.jp/policy/budget/budger_workflow/account/fy2025/yosankessanhikakuhyour7.pdf",
+          "url2": "https://www.mof.go.jp/policy/budget/budger_workflow/account/fy2025/ke080731.pdf"
+        },
+        {
+          "n": 7,
+          "label": "Ministry of Finance — Explanation of the FY2026 budget and FILP plan: general-account budget ¥122.3092 trillion, tax and stamp revenue ¥83.7 trillion (in Japanese)",
+          "url": "https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/20260220.html"
+        },
+        {
+          "n": 8,
+          "label": "Cabinet Office (ESRI) — Quarterly GDP estimates, July–September 2026, first preliminary estimate (16 November 2026): nominal GDP for FY2025 ¥672,682.0 billion (in Japanese)",
+          "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/gdemenuja.html"
+        },
+        {
+          "n": 9,
+          "label": "National Institute of Population and Social Security Research (IPSS) — Financial Statistics of Social Security in Japan, FY2024 (29 July 2026): social security benefits ¥138.3019 trillion (pensions ¥57.8528 trillion); Summary Table 2: child allowance cash benefits ¥2,113.8 billion (in Japanese)",
+          "url": "https://www.ipss.go.jp/ss-cost/j/fsss-R06/fsss_R06.html",
+          "url2": "https://www.ipss.go.jp/ss-cost/j/fsss-R06/2/R06-syukei2.xlsx"
+        },
+        {
+          "n": 10,
+          "label": "Ministry of Health, Labour and Welfare — reference materials for the 2nd meeting of the study group on medical assistance (30 October 2025), p. 8: public assistance spending, FY2023 actual ¥3,600.7 billion (medical ¥1,834.1 bn, living ¥1,033.4 bn, housing ¥603.1 bn, long-term care ¥102.1 bn, other ¥28.0 bn) (PDF, in Japanese)",
+          "url": "https://www.mhlw.go.jp/content/12002000/001588227.pdf"
+        },
+        {
+          "n": 11,
+          "label": "Ministry of Health, Labour and Welfare — Overview of the Employees’ Pension and National Pension, FY2024 (December 2025): all public pensions ¥58,331.1 billion a year and National Pension (basic pension) ¥25,889.7 billion for 36.30 million recipients at the end of FY2024; average old-age basic pension ¥59,000 a month (PDF, in Japanese)",
+          "url": "https://www.mhlw.go.jp/content/001617995.pdf"
+        },
+        {
+          "n": 12,
+          "label": "National Tax Agency — Overview of the reduced tax rate system: standard rate 10% (national 7.8%, local 2.2%), reduced rate 8% (national 6.24%, local 1.76%) (in Japanese)",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/01.htm"
+        }
+      ]
+    },
+    {
       "id": "germany-merz-basic-income-cost",
       "date": "2026-11-16",
       "related": [
+        "japan-basic-income-cost",
         "does-cash-make-people-stop-working",
         "generative-ai-jobs-basic-income",
         "basic-income-world-map",
@@ -21887,6 +23067,7 @@ module.exports = {
       "id": "basic-income-world-map",
       "date": "2026-11-10",
       "related": [
+        "japan-basic-income-cost",
         "billionaire-wealth-per-person",
         "finland-basic-income-experiment",
         "india-basic-income-madhya-pradesh-ladli-behna",
@@ -28153,6 +29334,7 @@ module.exports = {
       "id": "refundable-tax-credit-vs-basic-income",
       "date": "2026-11-06",
       "related": [
+        "japan-basic-income-cost",
         "japan-special-cash-payment",
         "takenaka-70000-yen-basic-income",
         "openresearch-cash-study",
@@ -31412,6 +32594,7 @@ module.exports = {
       "id": "takenaka-70000-yen-basic-income",
       "date": "2026-11-06",
       "related": [
+        "japan-basic-income-cost",
         "japan-special-cash-payment",
         "thailand-digital-wallet",
         "refundable-tax-credit-vs-basic-income"
@@ -34336,6 +35519,7 @@ module.exports = {
       "id": "japan-special-cash-payment",
       "date": "2026-11-04",
       "related": [
+        "japan-basic-income-cost",
         "thailand-digital-wallet",
         "nesara-gesara-basic-income",
         "takenaka-70000-yen-basic-income",

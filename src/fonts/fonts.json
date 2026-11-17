@@ -75,6 +75,10 @@
    {
     "file": "noto-sans-arabic-400-ar-e51f5b1f0a.woff2",
     "chars": "ßü"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-1e892d0a75.woff2",
+    "chars": "÷"
    }
   ],
   "ar:body:700": [
@@ -137,6 +141,10 @@
    {
     "file": "noto-sans-arabic-700-ar-7b0eaa79f0.woff2",
     "chars": "ßü"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-6c3d968560.woff2",
+    "chars": "÷"
    }
   ],
   "ar:display": [
@@ -255,6 +263,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-b7571de769.woff2",
     "chars": "'"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-782107a63a.woff2",
+    "chars": "÷"
    }
   ],
   "de:body:700": [
@@ -333,6 +345,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-857269ac02.woff2",
     "chars": "'"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-77026558f4.woff2",
+    "chars": "÷"
    }
   ],
   "de:display": [
@@ -459,6 +475,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-e3d64b28f7.woff2",
     "chars": "ß"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-782107a63a.woff2",
+    "chars": "÷"
    }
   ],
   "en:body:700": [
@@ -537,6 +557,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-3851d6583d.woff2",
     "chars": "ß"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-77026558f4.woff2",
+    "chars": "÷"
    }
   ],
   "en:display": [
@@ -671,6 +695,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-e3d64b28f7.woff2",
     "chars": "ß"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-782107a63a.woff2",
+    "chars": "÷"
    }
   ],
   "es:body:700": [
@@ -765,6 +793,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-3851d6583d.woff2",
     "chars": "ß"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-77026558f4.woff2",
+    "chars": "÷"
    }
   ],
   "es:display": [
@@ -889,6 +921,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-c495543b18.woff2",
     "chars": "ßü"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-cd98601aa0.woff2",
+    "chars": "÷"
    }
   ],
   "hi:body:700": [
@@ -955,6 +991,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-07d9f9141c.woff2",
     "chars": "ßü"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-a918b77079.woff2",
+    "chars": "÷"
    }
   ],
   "hi:dot": [
@@ -1215,6 +1255,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-4b16b0ff59.woff2",
     "chars": "ßü庫房据暖"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-4a608f914a.woff2",
+    "chars": "÷撤暦"
    }
   ],
   "ja:body:700": [
@@ -1465,6 +1509,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-38fdba6369.woff2",
     "chars": "ßü庫房据暖"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-dd93ecfb38.woff2",
+    "chars": "÷撤暦"
    }
   ],
   "ja:display": [
@@ -1627,6 +1675,10 @@
    {
     "file": "dela-gothic-one-400-ja-46c5c271e7.woff2",
     "chars": "官庁"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-415b155be8.woff2",
+    "chars": "消％"
    }
   ],
   "ja:dot": [
@@ -1947,6 +1999,10 @@
    {
     "file": "noto-sans-sc-400-zh-b91423fa13.woff2",
     "chars": "ßü吕念暖讯踏遇镜"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-47cebd4e49.woff2",
+    "chars": "÷"
    }
   ],
   "zh:body:700": [
@@ -2213,6 +2269,10 @@
    {
     "file": "noto-sans-sc-700-zh-923d73a53d.woff2",
     "chars": "ßü吕念暖讯踏遇镜"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-8c3ccba535.woff2",
+    "chars": "÷"
    }
   ],
   "zh:display": [
@@ -2371,6 +2431,10 @@
    {
     "file": "noto-sans-sc-900-zh-7cbe21b926.woff2",
     "chars": "佐岗州推曾治消"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-3ae4fbec3d.woff2",
+    "chars": "替"
    }
   ],
   "zh:dot": [
