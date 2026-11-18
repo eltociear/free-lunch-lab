@@ -1263,6 +1263,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-6571a59b4e.woff2",
     "chars": "器巨建"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-b11b32004a.woff2",
+    "chars": "［］"
    }
   ],
   "ja:body:700": [
@@ -1521,6 +1525,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-0b65c9df01.woff2",
     "chars": "器巨建"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-f6d0eed49d.woff2",
+    "chars": "［］"
    }
   ],
   "ja:display": [
@@ -2019,6 +2027,10 @@
    {
     "file": "noto-sans-sc-400-zh-edf1f1d1ad.woff2",
     "chars": "云伟厂屏彭披潮牌甲粗粹苹"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-8aa1f853ce.woff2",
+    "chars": "沿"
    }
   ],
   "zh:body:700": [
@@ -2293,6 +2305,10 @@
    {
     "file": "noto-sans-sc-700-zh-9ac7746807.woff2",
     "chars": "云伟厂屏彭披潮牌甲粗粹苹"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-c677af3bbf.woff2",
+    "chars": "沿"
    }
   ],
   "zh:display": [

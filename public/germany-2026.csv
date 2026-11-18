@@ -1,0 +1,6 @@
+figure,value,year,date,age,note,source,asOf
+population,83300000,,2026-06-30,,"Destatis, rounded to 83.3 million (released 22 September 2026)",https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/aktuell-quartale.html,
+taxRevenue,989800000000,2025,,,"all taxes before distribution: federal, Länder, municipalities and the EU share",https://www.destatis.de/DE/Themen/Staat/Steuern/Steuereinnahmen/steuereinnahmen.html,
+federalBudget,524540000000,2026,,,expenditure as passed by the Bundestag on 28 November 2025,https://www.bundestag.de/dokumente/textarchiv/2025/kw48-de-haushaltsgesetz-2026-dritte-lesung-1126152,
+gdp,4529700000000,2025,,,"nominal, Destatis as of 30 September 2026",https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Tabellen/inlandsprodukt-gesamtwirtschaft.html,
+governmentRevenue,2137900000000,2025,,,"general government revenue incl. social contributions (ESA 2010), Destatis as of 30 September 2026",https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Tabellen/inlandsprodukt-gesamtwirtschaft.html,

@@ -1,0 +1,161 @@
+{
+  "name": "Free Lunch Lab: Japan: figures for the cost of a basic income",
+  "description": "The official figures behind the Japan cost essay: population, tax revenue, budget, GDP, social security benefits, consumption tax and the benefits a basic income could replace, each with its source and date.",
+  "source": "https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/",
+  "repository": "https://github.com/eltociear/free-lunch-lab",
+  "license": "CC BY 4.0 (figures from the official sources named in each entry)",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "about": "Official figures behind the essay japan-basic-income-cost (cost of a basic income in Japan at five monthly amounts, what it could replace, and a consumption-tax yardstick). build.js recomputes the essay's two tables from this file and the calculator data (CALC for the population, CALC_WORLD for the $3-a-day line) and warns on drift; brand/x/infographics/render.js draws the X images from it. Amounts in yen.",
+  "retrieved": "2026-11-17",
+  "population": {
+    "value": 122812000,
+    "date": "2026-05-01",
+    "note": "final estimate (確定値), Population Estimates October 2026 report, released 20 October 2026; same figure as CALC jp pop.all",
+    "source": "https://www.stat.go.jp/data/jinsui/pdf/202610.pdf"
+  },
+  "adults": {
+    "value": 104069000,
+    "age": 20,
+    "date": "2026-05-01",
+    "note": "aged 20 and over, same report; same figure as CALC jp pop.adults",
+    "source": "https://www.stat.go.jp/data/jinsui/pdf/202610.pdf"
+  },
+  "taxRevenue": {
+    "value": 84222600000000,
+    "year": "FY2025",
+    "note": "general-account tax and stamp revenue, settled (決算), ¥842,226 hundred million; national taxes only",
+    "source": "https://www.mof.go.jp/policy/budget/budger_workflow/account/fy2025/yosankessanhikakuhyour7.pdf",
+    "asOf": "2026-07-31"
+  },
+  "budget": {
+    "value": 122309247035000,
+    "year": "FY2026",
+    "note": "general-account initial budget (令和8年度当初予算), ¥122,309,247,035 thousand; same figure as CALC jp budget.total",
+    "source": "https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/20260220.html",
+    "asOf": "2026-02-20"
+  },
+  "gdp": {
+    "value": 672682000000000,
+    "year": "FY2025",
+    "note": "nominal GDP, fiscal year April 2025 to March 2026, Cabinet Office QE 2026 Jul-Sep first preliminary estimate (¥672,682.0 billion)",
+    "source": "https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/gdemenuja.html",
+    "asOf": "2026-11-16"
+  },
+  "socialBenefits": {
+    "value": 138301900000000,
+    "year": "FY2024",
+    "note": "social security benefit expenditure (社会保障給付費, ILO basis), IPSS; pensions ¥57.8528 trillion, medical care ¥44.8055 trillion, welfare and other ¥35.6436 trillion",
+    "source": "https://www.ipss.go.jp/ss-cost/j/fsss-R06/fsss_R06.html",
+    "asOf": "2026-07-29"
+  },
+  "consumptionTax": {
+    "value": 26027700000000,
+    "year": "FY2025",
+    "note": "national consumption tax, settled, ¥260,277 hundred million (same MOF table as taxRevenue)",
+    "source": "https://www.mof.go.jp/policy/budget/budger_workflow/account/fy2025/yosankessanhikakuhyour7.pdf",
+    "asOf": "2026-07-31"
+  },
+  "consumptionTaxRates": {
+    "standard": 10,
+    "standardNational": 7.8,
+    "reduced": 8,
+    "reducedNational": 6.24,
+    "note": "the national share is 78% of the combined rate at both rates (local consumption tax 22/78 of the national tax), so national revenue / 0.78 is the combined national and local revenue",
+    "source": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/01.htm"
+  },
+  "levels": [
+    {
+      "id": "line",
+      "monthly": 9400,
+      "note": "the World Bank's $3.00-a-day poverty line in Japanese prices, from the calculator data (CALC_WORLD jp line.monthly)"
+    },
+    {
+      "id": "10k",
+      "monthly": 10000,
+      "note": "first preset on /calc/jp/; the child allowance for a first or second child aged 3 to 18"
+    },
+    {
+      "id": "calc",
+      "monthly": 30000,
+      "note": "default amount on /calc/jp/"
+    },
+    {
+      "id": "takenaka",
+      "monthly": 70000,
+      "note": "Heizo Takenaka's 2020 figure (essay takenaka-70000-yen-basic-income); HOUSEHOLD.takenaka"
+    },
+    {
+      "id": "100k",
+      "monthly": 100000,
+      "note": "last preset on /calc/jp/; the 2020 Special Cash Payment was ¥100,000 once"
+    }
+  ],
+  "harada": {
+    "adult": 70000,
+    "child": 30000,
+    "note": "Yutaka Harada's design (20 and over ¥70,000, under 20 ¥30,000), as in the Takenaka essay and HOUSEHOLD.kidAlt"
+  },
+  "offsets": [
+    {
+      "id": "jidou",
+      "value": 2113800000000,
+      "year": "FY2024",
+      "note": "child allowance cash benefits (児童手当, family benefits column), IPSS Summary Table 2: ¥2,113,800 million; only 4 of the 12 months at the October 2024 expanded rates",
+      "source": "https://www.ipss.go.jp/ss-cost/j/fsss-R06/2/R06-syukei2.xlsx",
+      "asOf": "2026-07-29"
+    },
+    {
+      "id": "hogo",
+      "value": 1636500000000,
+      "year": "FY2023",
+      "note": "public assistance living assistance (生活扶助) ¥1,033.4 billion + housing assistance (住宅扶助) ¥603.1 billion, actual, project-cost basis; medical ¥1,834.1 billion and long-term care ¥102.1 billion kept; total ¥3,600.7 billion",
+      "source": "https://www.mhlw.go.jp/content/12002000/001588227.pdf",
+      "asOf": "2025-10-30"
+    },
+    {
+      "id": "kiso",
+      "value": 25889700000000,
+      "year": "FY2024",
+      "note": "total annual amount of National Pension (basic pension) benefits for recipients at the end of FY2024, ¥25,889.7 billion, 36.30 million recipients (old-age, disability, survivors); average old-age ¥59,000 a month",
+      "source": "https://www.mhlw.go.jp/content/001617995.pdf",
+      "asOf": "2025-12"
+    },
+    {
+      "id": "pension",
+      "value": 58331100000000,
+      "year": "FY2024",
+      "note": "total annual amount of all public pension benefits for recipients at the end of FY2024 (National Pension and Employees' Pension, incl. mutual aid), ¥58,331.1 billion",
+      "source": "https://www.mhlw.go.jp/content/001617995.pdf",
+      "asOf": "2025-12"
+    }
+  ],
+  "netLevels": [
+    "takenaka",
+    "100k"
+  ],
+  "scenarios": [
+    {
+      "id": "A",
+      "replace": [
+        "jidou",
+        "hogo"
+      ]
+    },
+    {
+      "id": "B",
+      "replace": [
+        "jidou",
+        "hogo",
+        "kiso"
+      ]
+    },
+    {
+      "id": "C",
+      "replace": [
+        "jidou",
+        "hogo",
+        "pension"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+figure,value,year,date,age,note,source,asOf
+population,122812000,,2026-05-01,,"final estimate (確定値), Population Estimates October 2026 report, released 20 October 2026; same figure as CALC jp pop.all",https://www.stat.go.jp/data/jinsui/pdf/202610.pdf,
+adults,104069000,,2026-05-01,20,"aged 20 and over, same report; same figure as CALC jp pop.adults",https://www.stat.go.jp/data/jinsui/pdf/202610.pdf,
+taxRevenue,84222600000000,FY2025,,,"general-account tax and stamp revenue, settled (決算), ¥842,226 hundred million; national taxes only",https://www.mof.go.jp/policy/budget/budger_workflow/account/fy2025/yosankessanhikakuhyour7.pdf,2026-07-31
+budget,122309247035000,FY2026,,,"general-account initial budget (令和8年度当初予算), ¥122,309,247,035 thousand; same figure as CALC jp budget.total",https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/20260220.html,2026-02-20
+gdp,672682000000000,FY2025,,,"nominal GDP, fiscal year April 2025 to March 2026, Cabinet Office QE 2026 Jul-Sep first preliminary estimate (¥672,682.0 billion)",https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/gdemenuja.html,2026-11-16
+socialBenefits,138301900000000,FY2024,,,"social security benefit expenditure (社会保障給付費, ILO basis), IPSS; pensions ¥57.8528 trillion, medical care ¥44.8055 trillion, welfare and other ¥35.6436 trillion",https://www.ipss.go.jp/ss-cost/j/fsss-R06/fsss_R06.html,2026-07-29
+consumptionTax,26027700000000,FY2025,,,"national consumption tax, settled, ¥260,277 hundred million (same MOF table as taxRevenue)",https://www.mof.go.jp/policy/budget/budger_workflow/account/fy2025/yosankessanhikakuhyour7.pdf,2026-07-31

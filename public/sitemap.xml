@@ -422,7 +422,7 @@
   </url>
   <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/pilots/us/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/pilots/us/"/>
@@ -434,7 +434,7 @@
   </url>
   <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/ja/pilots/us/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/pilots/us/"/>
@@ -446,7 +446,7 @@
   </url>
   <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/zh/pilots/us/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/pilots/us/"/>
@@ -458,7 +458,7 @@
   </url>
   <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/hi/pilots/us/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/pilots/us/"/>
@@ -470,7 +470,7 @@
   </url>
   <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/es/pilots/us/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/pilots/us/"/>
@@ -482,7 +482,7 @@
   </url>
   <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/de/pilots/us/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/pilots/us/"/>
@@ -494,7 +494,7 @@
   </url>
   <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/ar/pilots/us/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/pilots/us/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/pilots/us/"/>
@@ -3443,6 +3443,90 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/embed/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/embed/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/embed/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/data/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/data/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/data/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/data/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/data/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/data/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/data/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/ja/data/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/data/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/data/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/data/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/data/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/data/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/data/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/zh/data/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/data/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/data/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/data/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/data/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/data/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/data/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/hi/data/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/data/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/data/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/data/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/data/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/data/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/data/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/es/data/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/data/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/data/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/data/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/data/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/data/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/data/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/de/data/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/data/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/data/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/data/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/data/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/data/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/data/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+  </url>
+  <url>
+    <loc>https://neteru-nyukin.eltociear.workers.dev/ar/data/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://neteru-nyukin.eltociear.workers.dev/ja/data/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://neteru-nyukin.eltociear.workers.dev/zh/data/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://neteru-nyukin.eltociear.workers.dev/hi/data/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://neteru-nyukin.eltociear.workers.dev/es/data/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://neteru-nyukin.eltociear.workers.dev/de/data/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://neteru-nyukin.eltociear.workers.dev/ar/data/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://neteru-nyukin.eltociear.workers.dev/data/"/>
   </url>
   <url>
     <loc>https://neteru-nyukin.eltociear.workers.dev/calc/jp/</loc>

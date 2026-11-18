@@ -1,0 +1,79 @@
+{
+  "name": "Free Lunch Lab: Germany: figures for the cost of a basic income",
+  "description": "The official figures behind the Germany cost essay: population, tax revenue, federal budget, GDP and government revenue, each with its source and date.",
+  "source": "https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/",
+  "repository": "https://github.com/eltociear/free-lunch-lab",
+  "license": "CC BY 4.0 (figures from the official sources named in each entry)",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "about": "Official figures behind the essay germany-merz-basic-income-cost (cost of a basic income in Germany at four monthly amounts). build.js recomputes the essay's cost table from this file and the calculator data (CALC_WORLD, for the poverty line) and warns on drift; brand/x/infographics/render.js draws the X images from it. Amounts in euros.",
+  "retrieved": "2026-11-16",
+  "population": {
+    "value": 83300000,
+    "date": "2026-06-30",
+    "note": "Destatis, rounded to 83.3 million (released 22 September 2026)",
+    "source": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/aktuell-quartale.html"
+  },
+  "taxRevenue": {
+    "value": 989800000000,
+    "year": 2025,
+    "note": "all taxes before distribution: federal, Länder, municipalities and the EU share",
+    "source": "https://www.destatis.de/DE/Themen/Staat/Steuern/Steuereinnahmen/steuereinnahmen.html"
+  },
+  "federalBudget": {
+    "value": 524540000000,
+    "year": 2026,
+    "note": "expenditure as passed by the Bundestag on 28 November 2025",
+    "source": "https://www.bundestag.de/dokumente/textarchiv/2025/kw48-de-haushaltsgesetz-2026-dritte-lesung-1126152"
+  },
+  "gdp": {
+    "value": 4529700000000,
+    "year": 2025,
+    "note": "nominal, Destatis as of 30 September 2026",
+    "source": "https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Tabellen/inlandsprodukt-gesamtwirtschaft.html"
+  },
+  "governmentRevenue": {
+    "value": 2137900000000,
+    "year": 2025,
+    "note": "general government revenue incl. social contributions (ESA 2010), Destatis as of 30 September 2026",
+    "source": "https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Tabellen/inlandsprodukt-gesamtwirtschaft.html"
+  },
+  "levels": [
+    {
+      "id": "line",
+      "monthly": 66,
+      "note": "the World Bank's $3.00-a-day poverty line in German prices, from the calculator data (CALC_WORLD de line.monthly)"
+    },
+    {
+      "id": "standard-rate",
+      "monthly": 563,
+      "note": "Regelbedarfsstufe 1 (single adult), 2026",
+      "source": "https://www.bundesregierung.de/breg-de/aktuelles/nullrunde-buergergeld-2383676"
+    },
+    {
+      "id": "calc",
+      "monthly": 1000,
+      "note": "default amount on /calc/de/"
+    },
+    {
+      "id": "pilot",
+      "monthly": 1200,
+      "note": "Pilotprojekt Grundeinkommen (Mein Grundeinkommen / DIW), 2021-2024"
+    }
+  ],
+  "offsets": [
+    {
+      "id": "sgb2",
+      "value": 46651649218,
+      "year": 2025,
+      "note": "SGB II benefit entitlements (Zahlungsansprüche), excluding administration; 5,316,378 recipients; EUR 731 a month per recipient",
+      "source": "https://dserver.bundestag.de/btd/21/068/2106855.pdf"
+    },
+    {
+      "id": "kindergeld",
+      "value": 55320000000,
+      "year": 2025,
+      "note": "Kindergeld paid by the BA Familienkasse, 17.57 million children",
+      "source": "https://www.arbeitsagentur.de/presse/2026-04-familien-im-blick-die-bilanz-der-familienkasse-2025"
+    }
+  ]
+}

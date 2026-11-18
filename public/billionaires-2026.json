@@ -1,0 +1,513 @@
+{
+  "name": "Free Lunch Lab: Billionaire wealth by country, 2026",
+  "description": "The Forbes 2026 billionaires list summed by country of citizenship: the number of billionaires and their combined net worth, with the world population used for the per-person figures.",
+  "source": "https://www.forbes.com/billionaires/",
+  "repository": "https://github.com/eltociear/free-lunch-lab",
+  "license": "CC BY 4.0 (sums of the Forbes World's Billionaires 2026 list by country of citizenship; Forbes is the source of the underlying figures)",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "note": "Forbes World's Billionaires 2026: the list's entries summed by country of citizenship (Forbes lists billionaires by citizenship, not residence). Net worths as of 1 March 2026, in billions of US dollars. Used by the essay billionaire-wealth-per-person; build.js recomputes the essay's country table from this file and data/countries-worldbank.json and warns if they drift.",
+  "sourceArticles": [
+    "https://www.forbes.com/sites/chasewithorn/2026/03/10/2026-worlds-billionaires-list-facts-and-figures/",
+    "https://www.forbes.com/sites/samellefson/2026/03/11/the-countries-with-the-most-billionaires/"
+  ],
+  "netWorthDate": "2026-03-01",
+  "retrieved": "2026-11-14",
+  "published": {
+    "billionaires": 3428,
+    "netWorthTrillionUsd": 20.1,
+    "countries": 80
+  },
+  "listSum": {
+    "billionaires": 3428,
+    "netWorthBillionUsd": 20050.3
+  },
+  "worldPopulation": {
+    "value": 8215424893,
+    "year": 2025,
+    "source": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=1W"
+  },
+  "countries": [
+    {
+      "id": "us",
+      "forbesName": "United States",
+      "billionaires": 991,
+      "netWorthBillionUsd": 8431.4
+    },
+    {
+      "id": "cn",
+      "forbesName": "China",
+      "billionaires": 539,
+      "netWorthBillionUsd": 2175.3
+    },
+    {
+      "id": "in",
+      "forbesName": "India",
+      "billionaires": 229,
+      "netWorthBillionUsd": 1019.2
+    },
+    {
+      "id": "de",
+      "forbesName": "Germany",
+      "billionaires": 212,
+      "netWorthBillionUsd": 1016.2
+    },
+    {
+      "id": "ru",
+      "forbesName": "Russia",
+      "billionaires": 149,
+      "netWorthBillionUsd": 652.7
+    },
+    {
+      "id": "fr",
+      "forbesName": "France",
+      "billionaires": 53,
+      "netWorthBillionUsd": 627.8
+    },
+    {
+      "id": "it",
+      "forbesName": "Italy",
+      "billionaires": 90,
+      "netWorthBillionUsd": 483.9
+    },
+    {
+      "id": "ca",
+      "forbesName": "Canada",
+      "billionaires": 82,
+      "netWorthBillionUsd": 457.2
+    },
+    {
+      "id": "hk",
+      "forbesName": "Hong Kong",
+      "billionaires": 71,
+      "netWorthBillionUsd": 420.1
+    },
+    {
+      "id": "gb",
+      "forbesName": "United Kingdom",
+      "billionaires": 57,
+      "netWorthBillionUsd": 300.2
+    },
+    {
+      "id": "es",
+      "forbesName": "Spain",
+      "billionaires": 44,
+      "netWorthBillionUsd": 281.2
+    },
+    {
+      "id": "ch",
+      "forbesName": "Switzerland",
+      "billionaires": 44,
+      "netWorthBillionUsd": 278.4
+    },
+    {
+      "id": "mx",
+      "forbesName": "Mexico",
+      "billionaires": 24,
+      "netWorthBillionUsd": 267.3
+    },
+    {
+      "id": "br",
+      "forbesName": "Brazil",
+      "billionaires": 70,
+      "netWorthBillionUsd": 264.8
+    },
+    {
+      "id": "au",
+      "forbesName": "Australia",
+      "billionaires": 56,
+      "netWorthBillionUsd": 249.2
+    },
+    {
+      "id": "jp",
+      "forbesName": "Japan",
+      "billionaires": 44,
+      "netWorthBillionUsd": 228.9
+    },
+    {
+      "id": "se",
+      "forbesName": "Sweden",
+      "billionaires": 50,
+      "netWorthBillionUsd": 224.6
+    },
+    {
+      "id": "id",
+      "forbesName": "Indonesia",
+      "billionaires": 35,
+      "netWorthBillionUsd": 210.5
+    },
+    {
+      "id": "kr",
+      "forbesName": "South Korea",
+      "billionaires": 50,
+      "netWorthBillionUsd": 197.3
+    },
+    {
+      "id": "il",
+      "forbesName": "Israel",
+      "billionaires": 41,
+      "netWorthBillionUsd": 196.2
+    },
+    {
+      "id": "sg",
+      "forbesName": "Singapore",
+      "billionaires": 55,
+      "netWorthBillionUsd": 155.7
+    },
+    {
+      "id": "cz",
+      "forbesName": "Czech Republic",
+      "billionaires": 12,
+      "netWorthBillionUsd": 102.3
+    },
+    {
+      "id": "th",
+      "forbesName": "Thailand",
+      "billionaires": 22,
+      "netWorthBillionUsd": 100.3
+    },
+    {
+      "id": "tr",
+      "forbesName": "Turkey",
+      "billionaires": 40,
+      "netWorthBillionUsd": 91.7
+    },
+    {
+      "id": "gr",
+      "forbesName": "Greece",
+      "billionaires": 21,
+      "netWorthBillionUsd": 90.2
+    },
+    {
+      "id": "nl",
+      "forbesName": "Netherlands",
+      "billionaires": 13,
+      "netWorthBillionUsd": 83.3
+    },
+    {
+      "id": "at",
+      "forbesName": "Austria",
+      "billionaires": 8,
+      "netWorthBillionUsd": 80.3
+    },
+    {
+      "id": "my",
+      "forbesName": "Malaysia",
+      "billionaires": 25,
+      "netWorthBillionUsd": 79.8
+    },
+    {
+      "id": "no",
+      "forbesName": "Norway",
+      "billionaires": 18,
+      "netWorthBillionUsd": 79.5
+    },
+    {
+      "id": "ie",
+      "forbesName": "Ireland",
+      "billionaires": 13,
+      "netWorthBillionUsd": 72.9
+    },
+    {
+      "id": "cl",
+      "forbesName": "Chile",
+      "billionaires": 6,
+      "netWorthBillionUsd": 71
+    },
+    {
+      "id": "dk",
+      "forbesName": "Denmark",
+      "billionaires": 8,
+      "netWorthBillionUsd": 57.7
+    },
+    {
+      "id": "cy",
+      "forbesName": "Cyprus",
+      "billionaires": 10,
+      "netWorthBillionUsd": 56.5
+    },
+    {
+      "id": "be",
+      "forbesName": "Belgium",
+      "billionaires": 18,
+      "netWorthBillionUsd": 55.1
+    },
+    {
+      "id": "sa",
+      "forbesName": "Saudi Arabia",
+      "billionaires": 12,
+      "netWorthBillionUsd": 50.4
+    },
+    {
+      "id": "ng",
+      "forbesName": "Nigeria",
+      "billionaires": 4,
+      "netWorthBillionUsd": 47.5
+    },
+    {
+      "id": "vn",
+      "forbesName": "Vietnam",
+      "billionaires": 8,
+      "netWorthBillionUsd": 44.8
+    },
+    {
+      "id": "za",
+      "forbesName": "South Africa",
+      "billionaires": 8,
+      "netWorthBillionUsd": 44.7
+    },
+    {
+      "id": "ph",
+      "forbesName": "Philippines",
+      "billionaires": 15,
+      "netWorthBillionUsd": 44.5
+    },
+    {
+      "id": "co",
+      "forbesName": "Colombia",
+      "billionaires": 4,
+      "netWorthBillionUsd": 43.9
+    },
+    {
+      "id": "ae",
+      "forbesName": "United Arab Emirates",
+      "billionaires": 8,
+      "netWorthBillionUsd": 42
+    },
+    {
+      "id": "kz",
+      "forbesName": "Kazakhstan",
+      "billionaires": 8,
+      "netWorthBillionUsd": 37.5
+    },
+    {
+      "id": "pl",
+      "forbesName": "Poland",
+      "billionaires": 12,
+      "netWorthBillionUsd": 33.5
+    },
+    {
+      "id": "eg",
+      "forbesName": "Egypt",
+      "billionaires": 6,
+      "netWorthBillionUsd": 23.8
+    },
+    {
+      "id": "ar",
+      "forbesName": "Argentina",
+      "billionaires": 5,
+      "netWorthBillionUsd": 19.4
+    },
+    {
+      "id": "nz",
+      "forbesName": "New Zealand",
+      "billionaires": 4,
+      "netWorthBillionUsd": 18.5
+    },
+    {
+      "id": "fi",
+      "forbesName": "Finland",
+      "billionaires": 7,
+      "netWorthBillionUsd": 18
+    },
+    {
+      "id": "ua",
+      "forbesName": "Ukraine",
+      "billionaires": 7,
+      "netWorthBillionUsd": 17.9
+    },
+    {
+      "id": "lb",
+      "forbesName": "Lebanon",
+      "billionaires": 6,
+      "netWorthBillionUsd": 13.9
+    },
+    {
+      "id": "hu",
+      "forbesName": "Hungary",
+      "billionaires": 6,
+      "netWorthBillionUsd": 13.5
+    },
+    {
+      "id": "ro",
+      "forbesName": "Romania",
+      "billionaires": 5,
+      "netWorthBillionUsd": 12.4
+    },
+    {
+      "id": "ve",
+      "forbesName": "Venezuela",
+      "billionaires": 1,
+      "netWorthBillionUsd": 11.3
+    },
+    {
+      "id": "mc",
+      "forbesName": "Monaco",
+      "billionaires": 2,
+      "netWorthBillionUsd": 10.3
+    },
+    {
+      "id": "kn",
+      "forbesName": "St. Kitts and Nevis",
+      "billionaires": 2,
+      "netWorthBillionUsd": 9.7
+    },
+    {
+      "id": "sz",
+      "forbesName": "Eswatini (Swaziland)",
+      "billionaires": 1,
+      "netWorthBillionUsd": 9.1
+    },
+    {
+      "id": "ge",
+      "forbesName": "Georgia",
+      "billionaires": 2,
+      "netWorthBillionUsd": 8.7
+    },
+    {
+      "id": "pt",
+      "forbesName": "Portugal",
+      "billionaires": 1,
+      "netWorthBillionUsd": 7.6
+    },
+    {
+      "id": "qa",
+      "forbesName": "Qatar",
+      "billionaires": 2,
+      "netWorthBillionUsd": 7
+    },
+    {
+      "id": "bg",
+      "forbesName": "Bulgaria",
+      "billionaires": 2,
+      "netWorthBillionUsd": 5.8
+    },
+    {
+      "id": "pe",
+      "forbesName": "Peru",
+      "billionaires": 1,
+      "netWorthBillionUsd": 5.2
+    },
+    {
+      "id": "ma",
+      "forbesName": "Morocco",
+      "billionaires": 3,
+      "netWorthBillionUsd": 4.6
+    },
+    {
+      "id": "bz",
+      "forbesName": "Belize",
+      "billionaires": 1,
+      "netWorthBillionUsd": 4
+    },
+    {
+      "id": "om",
+      "forbesName": "Oman",
+      "billionaires": 1,
+      "netWorthBillionUsd": 3.9
+    },
+    {
+      "id": "sk",
+      "forbesName": "Slovakia",
+      "billionaires": 2,
+      "netWorthBillionUsd": 3.9
+    },
+    {
+      "id": "dz",
+      "forbesName": "Algeria",
+      "billionaires": 1,
+      "netWorthBillionUsd": 3.6
+    },
+    {
+      "id": "ee",
+      "forbesName": "Estonia",
+      "billionaires": 2,
+      "netWorthBillionUsd": 3.4
+    },
+    {
+      "id": "hr",
+      "forbesName": "Croatia",
+      "billionaires": 1,
+      "netWorthBillionUsd": 2.1
+    },
+    {
+      "id": "np",
+      "forbesName": "Nepal",
+      "billionaires": 1,
+      "netWorthBillionUsd": 2.1
+    },
+    {
+      "id": "tz",
+      "forbesName": "Tanzania",
+      "billionaires": 1,
+      "netWorthBillionUsd": 2.1
+    },
+    {
+      "id": "zw",
+      "forbesName": "Zimbabwe",
+      "billionaires": 1,
+      "netWorthBillionUsd": 2.1
+    },
+    {
+      "id": "al",
+      "forbesName": "Albania",
+      "billionaires": 1,
+      "netWorthBillionUsd": 1.9
+    },
+    {
+      "id": "af",
+      "forbesName": "Afghanistan",
+      "billionaires": 1,
+      "netWorthBillionUsd": 1.4
+    },
+    {
+      "id": "pk",
+      "forbesName": "Pakistan",
+      "billionaires": 1,
+      "netWorthBillionUsd": 1.3
+    },
+    {
+      "id": "am",
+      "forbesName": "Armenia",
+      "billionaires": 1,
+      "netWorthBillionUsd": 1.3
+    },
+    {
+      "id": "li",
+      "forbesName": "Liechtenstein",
+      "billionaires": 1,
+      "netWorthBillionUsd": 1.3
+    },
+    {
+      "id": "lu",
+      "forbesName": "Luxembourg",
+      "billionaires": 1,
+      "netWorthBillionUsd": 1.2
+    },
+    {
+      "id": "is",
+      "forbesName": "Iceland",
+      "billionaires": 1,
+      "netWorthBillionUsd": 1
+    },
+    {
+      "id": "bb",
+      "forbesName": "Barbados",
+      "billionaires": 1,
+      "netWorthBillionUsd": 1
+    },
+    {
+      "id": null,
+      "forbesName": "Taiwan",
+      "billionaires": 66,
+      "netWorthBillionUsd": 245.3,
+      "note": "not in data/countries-worldbank.json"
+    },
+    {
+      "id": null,
+      "forbesName": "Guernsey",
+      "billionaires": 1,
+      "netWorthBillionUsd": 3.2,
+      "note": "not in data/countries-worldbank.json"
+    }
+  ]
+}
