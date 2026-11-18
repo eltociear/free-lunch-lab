@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-17",
+  "fetchedOn": "2026-11-18",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -135,7 +135,7 @@
       "language": "JavaScript"
     },
     "github.com:PSLmodels/Tax-Calculator": {
-      "stars": 321,
+      "stars": 322,
       "lastCommit": "2026-11-14",
       "archived": false,
       "license": null,
@@ -255,7 +255,7 @@
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-11-16",
+      "lastCommit": "2026-11-17",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"
@@ -317,7 +317,7 @@
       "language": "TypeScript"
     },
     "github.com:worldcoin/world-id-protocol": {
-      "stars": 42,
+      "stars": 43,
       "lastCommit": "2026-11-17",
       "archived": false,
       "license": "MIT",

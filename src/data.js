@@ -2937,6 +2937,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-18",
+      "en": "Published the essay “Share out AI companies’ profits: how much would each person get?”",
+      "ja": "エッセイ『AI企業の利益を全員に配ったら、1人いくら？』を公開",
+      "zh": "发布随笔《把AI公司的利润分给所有人，每人能拿多少？》",
+      "hi": "निबंध “AI कंपनियों का मुनाफ़ा सबमें बाँटें तो हर व्यक्ति को कितना मिलेगा?” प्रकाशित",
+      "es": "Publicado el ensayo «Beneficios de la IA para todos: ¿cuánto por persona?»",
+      "de": "Essay „KI-Gewinne für alle: Wie viel bekäme jeder?“ veröffentlicht",
+      "ar": "نشرنا مقال «أرباح شركات الذكاء الاصطناعي للجميع: كم لكل شخص؟»"
+    },
+    {
       "date": "2026-11-17",
       "en": "Published the essay “What would a basic income cost Japan? From ¥10,000 to ¥100,000 a month”",
       "ja": "エッセイ『日本で全員にベーシックインカムを配ると、いくらかかる？ 月1万円から10万円まで』を公開",
@@ -18377,6 +18387,1680 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "ai-company-profits-per-person",
+      "date": "2026-11-18",
+      "related": [
+        "billionaire-wealth-per-person",
+        "universal-high-income",
+        "generative-ai-jobs-basic-income",
+        "public-benefit-fund",
+        "ai-agent-basic-income",
+        "germany-merz-basic-income-cost"
+      ],
+      "title": {
+        "en": "Share out AI companies’ profits: how much would each person get?",
+        "ja": "AI企業の利益を全員に配ったら、1人いくら？",
+        "zh": "把AI公司的利润分给所有人，每人能拿多少？",
+        "hi": "AI कंपनियों का मुनाफ़ा सबमें बाँटें तो हर व्यक्ति को कितना मिलेगा?",
+        "es": "Beneficios de la IA para todos: ¿cuánto por persona?",
+        "de": "KI-Gewinne für alle: Wie viel bekäme jeder?",
+        "ar": "أرباح شركات الذكاء الاصطناعي للجميع: كم لكل شخص؟"
+      },
+      "desc": {
+        "en": "Nine AI companies’ ${{aip.net:tn2}} trillion net profit: about ${{aip.net100PP}} a year per person.",
+        "ja": "AI関連の9社の直近4四半期の純利益は約{{aip.net:tn2}}兆ドル。世界の82億人で割ると1人年約{{aip.net100PP}}ドル、月{{aip.net100PM:d2}}ドルです。",
+        "zh": "9家AI相关公司最近四个季度的净利润约{{aip.net:tn2}}万亿美元。分给82亿人，每人每年约{{aip.net100PP}}美元，每月{{aip.net100PM:d2}}美元。",
+        "hi": "AI से जुड़ी 9 कंपनियों का पिछली चार तिमाहियों का शुद्ध मुनाफ़ा: करीब {{aip.net:tn2}} ट्रिलियन डॉलर। 8.2 अरब लोगों में बाँटें तो साल में करीब {{aip.net100PP}} डॉलर, महीने के {{aip.net100PM:d2}}।",
+        "es": "Nueve empresas de IA: unos {{aip.net100PP}} dólares por persona al año, {{aip.net100PM:d2}} al mes.",
+        "de": "Neun KI-Konzerne verdienten in vier Quartalen {{aip.net:tn2}} Billionen Dollar netto: rund {{aip.net100PP}} Dollar pro Kopf im Jahr, {{aip.net100PM:d2}} im Monat.",
+        "ar": "ربحت تسع شركات للذكاء الاصطناعي نحو {{aip.net:tn2}} تريليون دولار في عام: {{aip.net100PP:int:ard}} للفرد سنويًا."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "Nine companies at the centre of the AI boom (NVIDIA, Microsoft, Alphabet, Amazon, Meta, Apple, Broadcom, Oracle and TSMC) made a combined net profit of about ${{aip.net:tn2}} trillion over their last four reported quarters.[1][10] The World Bank puts the world’s population in 2025 at {{aip.pop:bn2}} billion.[11] Shared equally, that is about ${{aip.net100PP}} per person a year, or ${{aip.net100PM:d2}} a month."
+          ],
+          [
+            "p",
+            "This site’s {211-country comparison|/calc/countries/} uses the World Bank’s poverty line of $3.00 a day, converted into each country’s prices, as its standard amount.[13] Paying that to everyone in those 211 countries and territories for a year would cost about ${{aip.yard:tn2}} trillion at market exchange rates.[12] A whole year of the nine companies’ net profit would cover about {{aip.net100Yard:pct}}% of it, or {{aip.net100Months:d1}} months."
+          ],
+          [
+            "p",
+            "Operating profit (profit from the business itself, before interest, investment gains and losses, and tax) gives almost the same answer: ${{aip.op:tn2}} trillion, or ${{aip.op100PP}} per person a year (${{aip.op100PM:d2}} a month)."
+          ],
+          [
+            "t",
+            "What is shared out | Total a year | Per person a year | Per person a month | Share of $3 a day for everyone\nAll net profit | ${{aip.net:tn2}} trillion | ${{aip.net100PP}} | ${{aip.net100PM:d2}} | {{aip.net100Yard:pct}}%\nAll operating profit | ${{aip.op:tn2}} trillion | ${{aip.op100PP}} | ${{aip.op100PM:d2}} | {{aip.op100Yard:pct}}%\nNet profit without paper gains (our rough estimate) | ${{aip.exPaper:bn}} billion | ${{aip.exPaperPP}} | ${{aip.exPaperPM:d2}} | {{aip.exPaperYard:pct}}%"
+          ],
+          [
+            "h",
+            "Which companies, and why these nine"
+          ],
+          [
+            "p",
+            "There is no official list of “AI companies”. We took the listed companies whose profits come most directly from what AI runs on and is sold through: the chip designers NVIDIA and Broadcom, the chipmaker TSMC, the cloud providers Microsoft, Alphabet (Google), Amazon and Oracle, and the big platforms Meta and Apple. Each made more than $10 billion of net profit over its last four quarters."
+          ],
+          [
+            "p",
+            "None of them is purely an AI business. NVIDIA comes closest: in the quarter to {{aip.f_nvda_periodEnd:dmy}}, its data-centre business brought in ${{aip.f_nvda_dataCenterRevenueUsdBn:bn1}} billion of its ${{aip.f_nvda_revenueUsdBn:bn1}} billion revenue.[1] Broadcom’s AI chips were $16.7 billion of its $29.6 billion in the quarter to 2 August 2026.[7] For the others, AI sits next to search and video advertising (Alphabet), online shopping (Amazon), Office and Windows (Microsoft), social-media advertising (Meta) and databases (Oracle). Apple reports no AI revenue at all; its profit comes overwhelmingly from the iPhone, services and other hardware, and the AI share of it is small and unknown.[6]"
+          ],
+          [
+            "p",
+            "Two other groups are left out of the totals and shown only as checks. Tesla made just ${{aip.tesla:bn1}} billion of net profit over its last four quarters, mostly from cars and energy; adding it would raise the per-person figure by only ${{aip.teslaPP:d2}} a year.[25] The Korean memory makers SK hynix and Samsung Electronics, which supply the high-bandwidth memory used with AI chips, would add about ${{aip.korea:bn}} billion at the site’s 2025 exchange rate, taking the figure to ${{aip.withKoreaPP}}.[26][27] We leave them out because part of their figures comes from secondary reports rather than the companies’ own releases, both are swollen by one-off non-operating items, and Samsung also sells phones, TVs and displays."
+          ],
+          [
+            "h",
+            "Nine companies, four quarters"
+          ],
+          [
+            "p",
+            "Each company’s figures are the sum of its four latest reported quarters, so the periods do not line up exactly: most end in September 2026, Broadcom’s and Oracle’s in August, and NVIDIA’s in {{aip.thru_nvda:my}}. Where a company reports only a full year, its fourth quarter is the year minus the other three. TSMC reports in New Taiwan dollars; we convert each quarter at the rate implied by the US-dollar revenue it reports. Market values are at the close of {{aip.marketCapDate:dmy}}.[10]"
+          ],
+          [
+            "t",
+            "Company | Four quarters to | Net profit (US$ billion) | Operating profit (US$ billion) | Market value (US$ billion)\nNVIDIA[1] | {{aip.thru_nvda:mys}} | {{aip.net_nvda:bn}} | {{aip.op_nvda:bn}} | {{aip.cap_nvda:bn}}\nMicrosoft[2] | {{aip.thru_msft:mys}} | {{aip.net_msft:bn}} | {{aip.op_msft:bn}} | {{aip.cap_msft:bn}}\nAlphabet[3] | {{aip.thru_googl:mys}} | {{aip.net_googl:bn}} | {{aip.op_googl:bn}} | {{aip.cap_googl:bn}}\nAmazon[4] | {{aip.thru_amzn:mys}} | {{aip.net_amzn:bn}} | {{aip.op_amzn:bn}} | {{aip.cap_amzn:bn}}\nMeta[5] | {{aip.thru_meta:mys}} | {{aip.net_meta:bn}} | {{aip.op_meta:bn}} | {{aip.cap_meta:bn}}\nApple[6] | {{aip.thru_aapl:mys}} | {{aip.net_aapl:bn}} | {{aip.op_aapl:bn}} | {{aip.cap_aapl:bn}}\nBroadcom[7] | {{aip.thru_avgo:mys}} | {{aip.net_avgo:bn}} | {{aip.op_avgo:bn}} | {{aip.cap_avgo:bn}}\nOracle[8] | {{aip.thru_orcl:mys}} | {{aip.net_orcl:bn}} | {{aip.op_orcl:bn}} | {{aip.cap_orcl:bn}}\nTSMC[9] | {{aip.thru_tsmc:mys}} | {{aip.net_tsmc:bn}} | {{aip.op_tsmc:bn}} | {{aip.cap_tsmc:bn}}\nTotal | – | {{aip.net:bn}} | {{aip.op:bn}} | {{aip.cap:bn}}"
+          ],
+          [
+            "p",
+            "For Alphabet and Amazon, net profit is far above operating profit. The reason is the next section."
+          ],
+          [
+            "h",
+            "Part of the profit is other AI companies going up in value"
+          ],
+          [
+            "p",
+            "Net profit includes gains on shares a company holds in other companies, even shares it has not sold. When a private company such as an AI lab raises money at a higher valuation, an investor holding its shares can book the rise as profit. Over the four quarters, items of this kind came to about ${{aip.paper:bn}} billion before tax, equal to about {{aip.paperShare:pct}}% of the nine companies’ net profit."
+          ],
+          [
+            "p",
+            "Alphabet: ${{aip.paper_googl:bn}} billion of net gains on equity securities. Its quarterly report says this year’s gains were “primarily related to net unrealized gains on our nonmarketable equity securities largely from a private company, and SpaceX prior to its initial public offering”. It does not name the private company.[14]"
+          ],
+          [
+            "p",
+            "Amazon: ${{aip.paper_amzn:bn}} billion of other income. Its quarterly report says the gains in the first nine months of 2026 came “primarily from upward adjustments for observable changes in price relating to our nonvoting preferred stock in Anthropic”.[15]"
+          ],
+          [
+            "p",
+            "NVIDIA: ${{aip.paper_nvda:bn1}} billion of gains from equity securities.[16] Microsoft: ${{aip.paper_msft:bn1}} billion of other income, a line that includes items related to its investment in OpenAI; we count the whole line, not only investment gains, so this part is approximate.[2] Oracle: ${{aip.paper_orcl:bn1}} billion of gains on investments.[8]"
+          ],
+          [
+            "p",
+            "Gains like these are not cash. They are a higher price put on shares the company still holds, and they can go into reverse: in the third quarter of 2026 Alphabet booked a loss of $8.7 billion on its equity securities, “largely from SpaceX”.[14] Taking them out, after tax at the nine companies’ average effective tax rate over the period ({{aip.effTax:pct}}%), leaves net profit of about ${{aip.exPaper:bn}} billion. That is our rough estimate, not a figure any company reports. Shared out, it would be about ${{aip.exPaperPP}} per person a year."
+          ],
+          [
+            "h",
+            "If a share of it were handed out every year"
+          ],
+          [
+            "p",
+            "We show three shares of profit. 15% is the global minimum rate of corporate tax agreed through the OECD and G20,[24] but here it is not a tax rate: these profits have already been taxed, so 15% means handing out 15% of what is left after tax. 25% is a round figure in between, and 100% is all of it."
+          ],
+          [
+            "t",
+            "Handed out each year | Total a year | Per person a year | Per person a month | Share of $3 a day for everyone\n15% of net profit | ${{aip.net15Tot:bn}} billion | ${{aip.net15PP}} | ${{aip.net15PM:d2}} | {{aip.net15Yard:pct}}%\n25% of net profit | ${{aip.net25Tot:bn}} billion | ${{aip.net25PP}} | ${{aip.net25PM:d2}} | {{aip.net25Yard:pct}}%\n100% of net profit | ${{aip.net100Tot:bn}} billion | ${{aip.net100PP}} | ${{aip.net100PM:d2}} | {{aip.net100Yard:pct}}%\n15% of operating profit | ${{aip.op15Tot:bn}} billion | ${{aip.op15PP}} | ${{aip.op15PM:d2}} | {{aip.op15Yard:pct}}%\n25% of operating profit | ${{aip.op25Tot:bn}} billion | ${{aip.op25PP}} | ${{aip.op25PM:d2}} | {{aip.op25Yard:pct}}%\n100% of operating profit | ${{aip.op100Tot:bn}} billion | ${{aip.op100PP}} | ${{aip.op100PM:d2}} | {{aip.op100Yard:pct}}%"
+          ],
+          [
+            "p",
+            "Profit is a flow. Market value is a stock, like the billionaires’ wealth in {our earlier essay|/essays/billionaire-wealth-per-person/}. Shared out once, the nine companies’ ${{aip.cap:tn1}} trillion would come to about ${{aip.capOncePP:r10}} per person, enough for about {{aip.capOnceMonths}} months of $3 a day for everyone. But it could be done only once, and selling that many shares would push their price down."
+          ],
+          [
+            "p",
+            "Paid out every year as a share of market value instead: 2.5% is the yearly rate Sam Altman proposed in his 2021 essay “Moore’s Law for Everything”, for a fund paid in company shares.[17] 5% is the share of their assets that US private foundations must pay out each year, the same yardstick as in the billionaire essay.[28]"
+          ],
+          [
+            "t",
+            "Paid out each year | Total a year | Per person a year | Per person a month | Share of $3 a day for everyone\n2.5% of market value | ${{aip.cap25Tot:bn}} billion | ${{aip.cap25PP}} | ${{aip.cap25PM:d2}} | {{aip.cap25Yard:pct}}%\n5% of market value | ${{aip.cap5Tot:bn}} billion | ${{aip.cap5PP}} | ${{aip.cap5PM:d2}} | {{aip.cap5Yard:pct}}%"
+          ],
+          [
+            "p",
+            "None of these yearly figures reaches a $3-a-day floor for everyone. The largest, all of the net profit, would cover about {{aip.net100Yard:pct}}% of it, and 5% of market value a year about {{aip.cap5Yard:pct}}%."
+          ],
+          [
+            "p",
+            "A curiosity, not an option: if the nine companies’ net profit went only to the {{aip.jpPop:m1}} million people in Japan, each would get about ¥{{aip.jpOnly@jp:m2}} million a year at the 2025 exchange rate this site uses.[12] The money comes from customers all over the world, so this only gives a sense of scale."
+          ],
+          [
+            "h",
+            "The AI labs themselves lose money"
+          ],
+          [
+            "p",
+            "The companies that build the best-known AI models are not among the nine, because they do not make a profit. Anthropic, which has filed to list its shares, reported revenue of $33.2 billion in the first nine months of 2026, against $4.6 billion in all of 2025, and an operating loss of $1.3 billion for the nine months ($8.1 billion in 2025). Its net loss was far larger, $104.0 billion for the nine months, mostly from non-cash changes in the value of convertible notes, derivatives and SAFEs ($94.3 billion). These figures are from its amended registration statement of 10 November 2026.[18]"
+          ],
+          [
+            "p",
+            "OpenAI is private and publishes no accounts. Press reports of its investor materials, which we could not check, put its revenue at about $10 billion in the third quarter of 2026 and its operating loss at about $10.9 billion (Bloomberg, The Wall Street Journal and The Information, as reported by Gulf News and PYMNTS).[19] For the first quarter, The Information reported a cash burn of $3.7 billion (via The Next Web).[20] xAI, the maker of Grok, is now part of SpaceX, listed since June 2026; the AI segment, which also includes X and Cursor, had an operating loss of $3.3 billion over the first nine months of 2026.[21]"
+          ],
+          [
+            "p",
+            "So far, the profits of the AI boom sit mainly with the companies that sell the chips, the cloud computing and the big platforms, not with the labs. Anthropic has said it will put 5% of its shares into a public benefit fund; we looked at that in {a separate essay|/essays/public-benefit-fund/}.[22]"
+          ],
+          [
+            "h",
+            "Proposals that come with a rate"
+          ],
+          [
+            "p",
+            "Sam Altman (2021): each year, 2.5% of the market value of large companies, paid in shares, and 2.5% of the value of privately held land, into an American Equity Fund. He wrote that “a decade from now each of the 250 million adults in America would get about $13,500 every year”.[17]"
+          ],
+          [
+            "p",
+            "Anthropic (October 2026): 5% of its shares into a public benefit fund, subject to shareholder approval, with the board able to add 2% for every 50% rise in value above a baseline. Its uses may include “direct distributions to specific populations”.[22]"
+          ],
+          [
+            "p",
+            "H.R. 10044 (US House of Representatives, September 2026; Sara Jacobs, Greg Casar and Valerie Foushee): according to Fortune, an excise tax on major AI companies of the higher of 2% of the value of AI tokens or 3% of AI-services revenue while unemployment is 5% or less, rising with unemployment, with the money going to job creation rather than cash payments. We have not read the bill text.[23]"
+          ],
+          [
+            "p",
+            "The OECD/G20 global minimum tax: a minimum effective tax rate of 15% for groups with revenue over €750 million, applied from 2024. It is a floor on corporate tax, not a tax on AI.[24]"
+          ],
+          [
+            "p",
+            "Germany’s digital minister, Karsten Wildberger, has said the very high turnover from AI should be taxed, but has named no rate; see {our essay on Germany|/essays/germany-merz-basic-income-cost/}."
+          ],
+          [
+            "h",
+            "Why it could not simply be handed out"
+          ],
+          [
+            "p",
+            "Not all of it is AI. Apple’s profit comes almost entirely from devices and services, Amazon’s includes online shopping, Microsoft’s includes Office and Windows, and Alphabet’s and Meta’s come largely from advertising. No company reports how much of its profit comes from AI."
+          ],
+          [
+            "p",
+            "Much of it is already being spent. The companies are pouring cash into data centres. Amazon spent ${{aip.f_amzn_capexTtmUsdM:bn}} billion on property and equipment over its last four quarters, which it says “primarily reflects investments in artificial intelligence”, and its free cash flow over the period was negative, at −$42.4 billion.[4] Oracle’s free cash flow over its last four quarters was −$23.7 billion.[8] Alphabet spent $132.0 billion on property and equipment in the first nine months of 2026,[3] and Meta expects to spend $135–145 billion this year.[5] The companies also use profit to buy back their own shares. Handing out all of it would leave nothing for either."
+          ],
+          [
+            "p",
+            "Paper gains are not cash. About {{aip.paperShare:pct}}% of the net profit is a higher value put on shares in other companies, which cannot be paid out without selling them."
+          ],
+          [
+            "p",
+            "Fiscal years differ. Apple’s year ends in September, Microsoft’s in June, NVIDIA’s in January; using each company’s last four quarters avoids mixing years, but the periods still differ by a few months."
+          ],
+          [
+            "p",
+            "Exchange rates move. Yen figures use the 2025 average rate in the World Bank data this site uses, about ¥{{aip.yen:d1}} to the dollar.[12] On {{aip.yenMarketDate:dmy}} the market rate was about ¥{{aip.yenMarket:d1}}, so at that rate the yen figures would be about {{aip.yenMove:pct}}% higher."
+          ],
+          [
+            "p",
+            "Prices would not stay put. Taking a large share of the profit every year would lower what the companies are worth, and the market-value figures assume it would not."
+          ],
+          [
+            "p",
+            "At 2025 average exchange rates from the World Bank data this site uses, ${{aip.net100PP}} a year is about €{{aip.net100PP@de}}, £{{aip.net100PP@gb}}, ¥{{aip.net100PP@jp:r100}} or ₹{{aip.net100PP@in:r100}}; a month, about €{{aip.net100PM@de:d2}}, ¥{{aip.net100PM@jp:r10}} or ₹{{aip.net100PM@in:r10}}.[12]"
+          ],
+          [
+            "h",
+            "What the numbers show"
+          ],
+          [
+            "p",
+            "Shared out in full, a year of the nine companies’ net profit comes to about ${{aip.net100PP}} per person, about ${{aip.net100PM:d2}} a month: {{aip.net100Yard:pct}}% of a $3-a-day floor for everyone. Without the paper gains it is nearer ${{aip.exPaperPP}}, and a 15% or 25% share of it comes to ${{aip.net15PP}} to ${{aip.net25PP}} a year. The companies’ market value is much larger, about ${{aip.capOncePP:r10}} per person, but it could be shared out only once."
+          ],
+          [
+            "p",
+            "For what a basic income would cost in each country, see {the world map|/essays/basic-income-world-map/} and {the 211-country comparison|/calc/countries/}. On paying for one from AI, see {universal high income: who pays?|/essays/universal-high-income/}, {has generative AI taken our jobs?|/essays/generative-ai-jobs-basic-income/} and {should AI agents get a basic income?|/essays/ai-agent-basic-income/}."
+          ],
+          [
+            "h",
+            "Assumptions and limits"
+          ],
+          [
+            "p",
+            "Four quarters. Each company’s figures are the sum of its four latest quarters reported by {{aip.retrieved:dmy}}, from its releases and filings; quarters a company does not report separately are its full year minus the other three. Every quarter and its source is listed in our data file.[10]"
+          ],
+          [
+            "p",
+            "Net profit as reported. Net profit is GAAP or IFRS net income attributable to shareholders, after tax. Operating profit is GAAP operating income (for TSMC, income from operations), so it is before tax and could not be paid out in full. The paper-gains figure includes Microsoft’s and Amazon’s whole other-income lines, so it is approximate, and the profit without them is our estimate."
+          ],
+          [
+            "p",
+            "Market values. Closing prices on {{aip.marketCapDate:dmy}} times the shares outstanding on each company’s latest filing; for TSMC, its share count at the end of 2025 and the Taiwan dollar rate that day. Alphabet’s and Meta’s unlisted class B shares are valued at the class A price.[10]"
+          ],
+          [
+            "p",
+            "Populations and prices. World population is the World Bank’s 2025 figure.[11] Japan’s is the October 2026 estimate in the site’s data. The $3.00 a day is the World Bank’s poverty line in 2021 PPP dollars, converted into local prices as in the comparison; summed at market exchange rates it costs ${{aip.yard:tn2}} trillion a year.[12][13]"
+          ],
+          [
+            "p",
+            "Not a proposal. The shares are yardsticks, not policies we propose, and nothing here says whether these profits should be taxed or shared out. The numbers only show the size of the sums."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "AIブームの中心にいる9社（NVIDIA、マイクロソフト、アルファベット、アマゾン、メタ、アップル、ブロードコム、オラクル、TSMC）の純利益は、直近に発表した4四半期の合計で約{{aip.net:tn2}}兆ドルでした。[1][10] 世界銀行によると、2025年の世界の人口は{{aip.pop:oku1}}億人。[11] 全員で均等に分けると、1人あたり年約{{aip.net100PP}}ドル（約{{aip.net100PP@jp:jman}}円）、月{{aip.net100PM:d2}}ドル（約{{aip.net100PM@jp:jman}}円）です。"
+          ],
+          [
+            "p",
+            "このサイトの{211の国・地域の比較|/calc/countries/}は、世界銀行の貧困ライン「1日3.00ドル」を各国の物価に直した額を基準にしています。[13] 211の国・地域の全員にこれを1年配ると、市場の為替レートで約{{aip.yard:tn2}}兆ドル。[12] 9社の純利益を丸1年分すべて回しても、その約{{aip.net100Yard:pct}}％、{{aip.net100Months:d1}}か月分です。"
+          ],
+          [
+            "p",
+            "営業利益（本業のもうけ。利息、投資の損益、税を引く前）で計算しても、答えはほぼ同じです。{{aip.op:tn2}}兆ドルで、1人あたり年{{aip.op100PP}}ドル（月{{aip.op100PM:d2}}ドル）になります。"
+          ],
+          [
+            "t",
+            "何を配るか | 1年の総額 | 1人あたり年 | 1人あたり月 | 全員に1日3ドル配る費用に対する割合\n純利益の全部 | {{aip.net:tn2}}兆ドル | {{aip.net100PP}}ドル | {{aip.net100PM:d2}}ドル | {{aip.net100Yard:pct}}%\n営業利益の全部 | {{aip.op:tn2}}兆ドル | {{aip.op100PP}}ドル | {{aip.op100PM:d2}}ドル | {{aip.op100Yard:pct}}%\n含み益を除いた純利益（私たちの大まかな見積もり） | {{aip.exPaper:oku}}億ドル | {{aip.exPaperPP}}ドル | {{aip.exPaperPM:d2}}ドル | {{aip.exPaperYard:pct}}%"
+          ],
+          [
+            "h",
+            "どの会社か、なぜこの9社か"
+          ],
+          [
+            "p",
+            "「AI企業」の公式な一覧はありません。ここでは、AIが動く土台やAIを売る窓口から最も直接に利益を得ている上場企業を選びました。半導体を設計するNVIDIAとブロードコム、製造するTSMC、クラウドのマイクロソフト、アルファベット（グーグル）、アマゾン、オラクル、そして大きなプラットフォームのメタとアップルです。どの社も直近4四半期の純利益が100億ドルを超えています。"
+          ],
+          [
+            "p",
+            "どの社もAIだけの会社ではありません。いちばん近いのはNVIDIAで、{{aip.f_nvda_periodEnd:dmy}}までの四半期の売上高{{aip.f_nvda_revenueUsdBn:oku}}億ドルのうち、データセンター部門が{{aip.f_nvda_dataCenterRevenueUsdBn:oku}}億ドルでした。[1] ブロードコムは2026年8月2日までの四半期で、売上高296億ドルのうちAI向け半導体が167億ドルです。[7] ほかの会社では、AIは検索や動画の広告（アルファベット）、ネット通販（アマゾン）、OfficeやWindows（マイクロソフト）、SNSの広告（メタ）、データベース（オラクル）と並んでいます。アップルはAIの売上高をまったく公表していません。利益のほとんどはiPhone、サービス、ほかの機器からで、AIの割合は小さく、わかりません。[6]"
+          ],
+          [
+            "p",
+            "合計に入れず、確かめのためだけに示すものが2つあります。テスラの直近4四半期の純利益は{{aip.tesla:oku}}億ドルにとどまり、ほとんどは自動車とエネルギーからです。足しても1人あたりは年{{aip.teslaPP:d2}}ドル増えるだけです。[25] 韓国のメモリーメーカー、SKハイニックスとサムスン電子は、AI半導体と組み合わせる広帯域メモリー（HBM）をつくっていて、サイトの2025年の為替レートで約{{aip.korea:oku}}億ドルが加わり、1人あたり年{{aip.withKoreaPP}}ドルになります。[26][27] それでも外したのは、数字の一部が会社自身の発表ではなく二次的な報道によるもので、どちらも一時的な営業外の損益でふくらんでおり、サムスンはスマートフォン、テレビ、ディスプレイも売っているからです。"
+          ],
+          [
+            "h",
+            "9社の4四半期"
+          ],
+          [
+            "p",
+            "数字は各社の直近に発表された4四半期の合計なので、期間は少しずつずれます。多くは2026年9月まで、ブロードコムとオラクルは8月まで、NVIDIAは{{aip.thru_nvda:my}}までです。通年の数字しか出していない四半期は、通年からほかの3四半期を引いて出しました。TSMCは台湾ドルで発表しているので、各四半期を、その四半期に発表した米ドル建ての売上高から出したレートで換算しています。時価総額は{{aip.marketCapDate:dmy}}の終値です。[10]"
+          ],
+          [
+            "t",
+            "会社 | 4四半期の終わり | 純利益（億ドル） | 営業利益（億ドル） | 時価総額（億ドル）\nNVIDIA[1] | {{aip.thru_nvda:my}} | {{aip.net_nvda:oku}} | {{aip.op_nvda:oku}} | {{aip.cap_nvda:oku}}\nマイクロソフト[2] | {{aip.thru_msft:my}} | {{aip.net_msft:oku}} | {{aip.op_msft:oku}} | {{aip.cap_msft:oku}}\nアルファベット[3] | {{aip.thru_googl:my}} | {{aip.net_googl:oku}} | {{aip.op_googl:oku}} | {{aip.cap_googl:oku}}\nアマゾン[4] | {{aip.thru_amzn:my}} | {{aip.net_amzn:oku}} | {{aip.op_amzn:oku}} | {{aip.cap_amzn:oku}}\nメタ[5] | {{aip.thru_meta:my}} | {{aip.net_meta:oku}} | {{aip.op_meta:oku}} | {{aip.cap_meta:oku}}\nアップル[6] | {{aip.thru_aapl:my}} | {{aip.net_aapl:oku}} | {{aip.op_aapl:oku}} | {{aip.cap_aapl:oku}}\nブロードコム[7] | {{aip.thru_avgo:my}} | {{aip.net_avgo:oku}} | {{aip.op_avgo:oku}} | {{aip.cap_avgo:oku}}\nオラクル[8] | {{aip.thru_orcl:my}} | {{aip.net_orcl:oku}} | {{aip.op_orcl:oku}} | {{aip.cap_orcl:oku}}\nTSMC[9] | {{aip.thru_tsmc:my}} | {{aip.net_tsmc:oku}} | {{aip.op_tsmc:oku}} | {{aip.cap_tsmc:oku}}\n合計 | – | {{aip.net:oku}} | {{aip.op:oku}} | {{aip.cap:oku}}"
+          ],
+          [
+            "p",
+            "アルファベットとアマゾンは、純利益が営業利益を大きく上回っています。理由は次の節にあります。"
+          ],
+          [
+            "h",
+            "利益の一部は、ほかのAI企業の値上がり"
+          ],
+          [
+            "p",
+            "純利益には、会社がほかの会社の株を持っていて、その値段が上がった分も入ります。売っていない株でもです。AIの研究所のような未上場の会社が、前より高い評価額でお金を集めると、その株を持つ投資家は値上がり分を利益に計上できます。4四半期でこうした項目は税引き前で約{{aip.paper:oku}}億ドル。9社の純利益の約{{aip.paperShare:pct}}％にあたる額です。"
+          ],
+          [
+            "p",
+            "アルファベット：株式の評価益など{{aip.paper_googl:oku}}億ドル。四半期報告書は、今年の利益の増加を「主に、未上場株式の未実現の評価益によるもので、その多くはある未上場企業と、新規株式公開前のSpaceXからのもの」と説明しています。その未上場企業の名前は書いていません。[14]"
+          ],
+          [
+            "p",
+            "アマゾン：その他の収益{{aip.paper_amzn:oku}}億ドル。四半期報告書は、2026年1〜9月の利益は「主に、Anthropicの議決権のない優先株について、観察できる価格の変化に伴う上方修正によるもの」としています。[15]"
+          ],
+          [
+            "p",
+            "NVIDIA：株式の評価益など{{aip.paper_nvda:oku}}億ドル。[16] マイクロソフト：その他の収益{{aip.paper_msft:oku}}億ドル。OpenAIへの投資に関係する項目を含む行で、投資の利益だけでなく行全体を数えているので、この部分は大まかな数字です。[2] オラクル：投資の利益{{aip.paper_orcl:oku}}億ドル。[8]"
+          ],
+          [
+            "p",
+            "こうした利益は現金ではありません。まだ持っている株に高い値段がついただけで、逆に動くこともあります。アルファベットは2026年7〜9月期に、株式で87億ドルの損失を計上しました。「その多くはSpaceXから」です。[14] これを、9社のこの期間の平均の実効税率（{{aip.effTax:pct}}％）で税を引いたうえで除くと、純利益は約{{aip.exPaper:oku}}億ドル。会社が発表した数字ではなく、私たちの大まかな見積もりです。全員で分けると1人あたり年約{{aip.exPaperPP}}ドルです。"
+          ],
+          [
+            "h",
+            "利益の一部を毎年配るなら"
+          ],
+          [
+            "p",
+            "ここでは利益の3つの割合で計算しました。15％は、OECDとG20を通じて合意された法人税の世界最低税率です。[24] ただしここでは税率ではありません。この利益はもう税を払った後なので、15％とは「税引き後に残った利益の15％を配る」という意味です。25％はその間の切りのいい数字、100％は全部です。"
+          ],
+          [
+            "t",
+            "毎年配る分 | 1年の総額 | 1人あたり年 | 1人あたり月 | 全員に1日3ドル配る費用に対する割合\n純利益の15% | {{aip.net15Tot:oku}}億ドル | {{aip.net15PP}}ドル | {{aip.net15PM:d2}}ドル | {{aip.net15Yard:pct}}%\n純利益の25% | {{aip.net25Tot:oku}}億ドル | {{aip.net25PP}}ドル | {{aip.net25PM:d2}}ドル | {{aip.net25Yard:pct}}%\n純利益の100% | {{aip.net100Tot:oku}}億ドル | {{aip.net100PP}}ドル | {{aip.net100PM:d2}}ドル | {{aip.net100Yard:pct}}%\n営業利益の15% | {{aip.op15Tot:oku}}億ドル | {{aip.op15PP}}ドル | {{aip.op15PM:d2}}ドル | {{aip.op15Yard:pct}}%\n営業利益の25% | {{aip.op25Tot:oku}}億ドル | {{aip.op25PP}}ドル | {{aip.op25PM:d2}}ドル | {{aip.op25Yard:pct}}%\n営業利益の100% | {{aip.op100Tot:oku}}億ドル | {{aip.op100PP}}ドル | {{aip.op100PM:d2}}ドル | {{aip.op100Yard:pct}}%"
+          ],
+          [
+            "p",
+            "利益は「フロー」（毎年入ってくる量）です。時価総額は、{前回のエッセイ|/essays/billionaire-wealth-per-person/}の億万長者の資産と同じ「ストック」（たまっている量）です。9社の時価総額{{aip.cap:tn1}}兆ドルを1回で配ると、1人約{{aip.capOncePP:r10}}ドル。全員に1日3ドルを約{{aip.capOnceMonths}}か月配れる額です。ただし配れるのは1回きりで、それだけの株を売れば株価は下がります。"
+          ],
+          [
+            "p",
+            "かわりに時価総額の一定の割合を毎年配るなら。2.5％は、サム・アルトマン氏が2021年のエッセイ「Moore’s Law for Everything（すべてにムーアの法則を）」で提案した、株で払う基金の毎年の割合です。[17] 5％は、アメリカの民間財団が毎年配らなければならない資産の割合で、億万長者のエッセイと同じ目安です。[28]"
+          ],
+          [
+            "t",
+            "毎年配る分 | 1年の総額 | 1人あたり年 | 1人あたり月 | 全員に1日3ドル配る費用に対する割合\n時価総額の2.5% | {{aip.cap25Tot:oku}}億ドル | {{aip.cap25PP}}ドル | {{aip.cap25PM:d2}}ドル | {{aip.cap25Yard:pct}}%\n時価総額の5% | {{aip.cap5Tot:oku}}億ドル | {{aip.cap5PP}}ドル | {{aip.cap5PM:d2}}ドル | {{aip.cap5Yard:pct}}%"
+          ],
+          [
+            "p",
+            "毎年配る額は、どれも「全員に1日3ドル」に届きません。いちばん大きい純利益の全部でもその約{{aip.net100Yard:pct}}％、時価総額の毎年5％で約{{aip.cap5Yard:pct}}％です。"
+          ],
+          [
+            "p",
+            "参考までに、実際にはありえない計算をひとつ。9社の純利益を日本に住む{{aip.jpPop:oku2}}億人だけで分けると、1人あたり年約{{aip.jpOnly@jp:jman}}円になります（このサイトが使う2025年の為替レートで計算）。[12] お金は世界中の客から入ってくるので、これは大きさの感覚をつかむためだけの数字です。"
+          ],
+          [
+            "h",
+            "AIの研究所そのものは赤字"
+          ],
+          [
+            "p",
+            "いちばん有名なAIのモデルをつくっている会社は、9社に入っていません。利益が出ていないからです。株式の上場を申請したAnthropicの売上高は、2026年1〜9月で332億ドル。2025年の1年間は46億ドルでした。営業損失は1〜9月で13億ドル（2025年は81億ドル）。純損失はずっと大きく1〜9月で1,040億ドルですが、そのほとんどは転換社債、デリバティブ、SAFEの評価額の変化による、現金の出ていかない損失（943億ドル）です。数字は2026年11月10日の登録届出書の修正版によります。[18]"
+          ],
+          [
+            "p",
+            "OpenAIは未上場で、決算を公表していません。投資家向けの資料についての報道（私たちは確かめられていません）によると、2026年7〜9月期の売上高は約100億ドル、営業損失は約109億ドルでした（ブルームバーグ、ウォール・ストリート・ジャーナル、The Informationの報道を、Gulf NewsとPYMNTSが伝えたもの）。[19] 1〜3月期については、The Informationが37億ドルの現金の流出を報じています（The Next Web経由）。[20] Grokをつくるイーロン・マスク氏のxAIは、2026年6月に上場したSpaceXの一部になりました。XやCursorも含むAI部門の営業損失は、2026年1〜9月で33億ドルです。[21]"
+          ],
+          [
+            "p",
+            "いまのところ、AIブームの利益が集まっているのは、研究所ではなく、半導体やクラウドを売る会社と大きなプラットフォームです。Anthropicは株の5％を公益のための基金に出すと発表しています。これについては{別のエッセイ|/essays/public-benefit-fund/}で取り上げました。[22]"
+          ],
+          [
+            "h",
+            "割合のついた提案"
+          ],
+          [
+            "p",
+            "サム・アルトマン氏（2021年）：大企業の時価総額の2.5％を株で、民間が持つ土地の価値の2.5％をドルで、毎年「アメリカ株式基金」に入れる。「10年後には、アメリカの2億5,000万人の大人それぞれが毎年約1万3,500ドルを受け取る」と書いています。[17]"
+          ],
+          [
+            "p",
+            "Anthropic（2026年10月）：株の5％を公益のための基金に出す（株主の承認が条件）。ある基準から価値が50％上がるごとに、取締役会は2％を追加できます。使い道には「特定の人々への直接の分配」も含まれうるとしています。[22]"
+          ],
+          [
+            "p",
+            "H.R. 10044（アメリカ下院、2026年9月。サラ・ジェイコブス、グレッグ・カサール、ヴァレリー・フーシー議員）：Fortuneによると、大手AI企業に、失業率が5％以下のあいだは「AIのトークンの価値の2％」か「AIサービスの売上高の3％」の高いほうを課す物品税で、失業率が上がると税率も上がります。お金は現金の給付ではなく雇用づくりに使います。私たちは法案の本文は読んでいません。[23]"
+          ],
+          [
+            "p",
+            "OECDとG20の世界最低税：売上高7億5,000万ユーロを超える企業グループに、最低15％の実効税率。2024年から適用されています。法人税の下限で、AIへの税ではありません。[24]"
+          ],
+          [
+            "p",
+            "ドイツのカルステン・ヴィルトベルガー・デジタル相は、AIによる非常に大きな売上高に課税すべきだと話していますが、税率は示していません。{ドイツのエッセイ|/essays/germany-merz-basic-income-cost/}をどうぞ。"
+          ],
+          [
+            "h",
+            "そのまま配れない理由"
+          ],
+          [
+            "p",
+            "全部がAIではない。アップルの利益はほぼすべて機器とサービスから、アマゾンにはネット通販が、マイクロソフトにはOfficeとWindowsが含まれ、アルファベットとメタは多くが広告からです。利益のうちAIの分がいくらかを公表している会社はありません。"
+          ],
+          [
+            "p",
+            "すでに多くを使っている。各社はデータセンターに巨額のお金をつぎ込んでいます。アマゾンが直近4四半期に設備に使ったのは{{aip.f_amzn_capexTtmUsdM:oku}}億ドルで、「主にAIへの投資を反映したもの」としています。同じ期間のフリーキャッシュフローはマイナス424億ドルでした。[4] オラクルの直近4四半期のフリーキャッシュフローはマイナス237億ドルです。[8] アルファベットは2026年1〜9月に設備に1,320億ドルを使い、[3] メタは今年1,350億〜1,450億ドルを見込んでいます。[5] 各社は利益で自社株買いもしています。利益を全部配れば、どちらにも何も残りません。"
+          ],
+          [
+            "p",
+            "含み益は現金ではない。純利益の約{{aip.paperShare:pct}}％は、ほかの会社の株に高い値段がついた分で、売らなければ配れません。"
+          ],
+          [
+            "p",
+            "決算期が違う。アップルの年度は9月、マイクロソフトは6月、NVIDIAは1月に終わります。各社の直近4四半期を使えば年度が混ざるのは避けられますが、期間はなお数か月ずれます。"
+          ],
+          [
+            "p",
+            "為替は動く。円の額は、このサイトが使う世界銀行のデータの2025年の平均為替レート、1ドル約{{aip.yen:d1}}円で換算しています。[12] {{aip.yenMarketDate:dmy}}の市場のレートは約{{aip.yenMarket:d1}}円だったので、そのレートなら円の額は約{{aip.yenMove:pct}}％大きくなります。"
+          ],
+          [
+            "p",
+            "株価はそのままではない。毎年利益の大きな割合を取れば会社の価値は下がりますが、時価総額の計算はそうならないと仮定しています。"
+          ],
+          [
+            "p",
+            "円では、1人あたり年{{aip.net100PP}}ドルは約{{aip.net100PP@jp:jman}}円、月{{aip.net100PM:d2}}ドルは約{{aip.net100PM@jp:jman}}円です。営業利益なら年約{{aip.op100PP@jp:jman}}円、含み益を除いた見積もりなら年約{{aip.exPaperPP@jp:jman}}円。時価総額を1回で配る{{aip.capOncePP:r10}}ドルは約{{aip.capOncePP@jp:jman}}円です（いずれも2025年の平均為替レート）。[12]"
+          ],
+          [
+            "h",
+            "数字からわかること"
+          ],
+          [
+            "p",
+            "9社の1年分の純利益を全部配っても、1人あたり年約{{aip.net100PP}}ドル、月約{{aip.net100PM:d2}}ドル。全員に1日3ドルの{{aip.net100Yard:pct}}％です。含み益を除けば{{aip.exPaperPP}}ドルほどになり、15％や25％を配るなら年{{aip.net15PP}}〜{{aip.net25PP}}ドルです。会社の時価総額はずっと大きく1人約{{aip.capOncePP:r10}}ドルですが、配れるのは1回きりです。"
+          ],
+          [
+            "p",
+            "ベーシックインカムが国ごとにいくらかかるかは{世界地図のエッセイ|/essays/basic-income-world-map/}と{211の国・地域の比較|/calc/countries/}で見られます。AIからベーシックインカムを払う話は{「ユニバーサル・ハイ・インカム」は誰が払う？|/essays/universal-high-income/}、{生成AIは仕事を奪ったのか|/essays/generative-ai-jobs-basic-income/}、{AIエージェントにベーシックインカムは必要か|/essays/ai-agent-basic-income/}をどうぞ。"
+          ],
+          [
+            "h",
+            "前提と限界"
+          ],
+          [
+            "p",
+            "4四半期。各社の数字は、{{aip.retrieved:dmy}}までに発表された直近4四半期の合計で、決算発表と提出書類から取りました。別に発表されていない四半期は、通年からほかの3四半期を引いています。すべての四半期とその出典はデータのファイルに載せています。[10]"
+          ],
+          [
+            "p",
+            "発表どおりの純利益。純利益は米国会計基準（GAAP）か国際会計基準（IFRS）の、株主に帰属する税引き後の利益です。営業利益は米国会計基準の営業利益（TSMCは国際会計基準の営業利益）で、税を引く前なので全部を配ることはできません。含み益の数字はマイクロソフトとアマゾンの「その他の収益」の行全体を含むので大まかで、それを除いた利益は私たちの見積もりです。"
+          ],
+          [
+            "p",
+            "時価総額。{{aip.marketCapDate:dmy}}の終値に、各社の最新の提出書類にある発行済み株式数をかけました。TSMCは2025年末の株式数と、その日の台湾ドルのレートです。アルファベットとメタの上場していないクラスB株は、クラスA株の値段で計算しています。[10]"
+          ],
+          [
+            "p",
+            "人口と物価。世界の人口は世界銀行の2025年の数字です。[11] 日本の人口はこのサイトのデータにある2026年10月の推計です。1日3.00ドルは2021年の購買力平価で決めた世界銀行の貧困ラインで、比較の表と同じく各国の物価に直しています。市場の為替レートで足すと年{{aip.yard:tn2}}兆ドルです。[12][13]"
+          ],
+          [
+            "p",
+            "提案ではありません。割合はあくまで目安で、私たちが提案する政策ではありません。この利益に税をかけるべきか、配るべきかについても何も言っていません。数字が示すのは、金額の大きさだけです。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "处在AI热潮中心的9家公司（英伟达、微软、Alphabet、亚马逊、Meta、苹果、博通、甲骨文和台积电）最近公布的四个季度净利润合计约{{aip.net:tn2}}万亿美元。[1][10] 世界银行统计，2025年世界人口为{{aip.pop:oku1}}亿。[11] 平均分配，每人每年约{{aip.net100PP}}美元，每月{{aip.net100PM:d2}}美元。"
+          ],
+          [
+            "p",
+            "本站的{211个国家和地区比较|/calc/countries/}以世界银行每天3.00美元的贫困线为标准金额，并按各国物价换算。[13] 给这211个国家和地区的所有人发一年，按市场汇率约需{{aip.yard:tn2}}万亿美元。[12] 9家公司一整年的净利润全部拿出来，也只够支付其中约{{aip.net100Yard:pct}}%，即{{aip.net100Months:d1}}个月。"
+          ],
+          [
+            "p",
+            "改用营业利润（企业本业赚的钱，未计利息、投资损益和税）结果也差不多：{{aip.op:tn2}}万亿美元，每人每年{{aip.op100PP}}美元（每月{{aip.op100PM:d2}}美元）。"
+          ],
+          [
+            "t",
+            "分什么 | 每年总额 | 每人每年 | 每人每月 | 相当于给每人每天3美元费用的比例\n全部净利润 | {{aip.net:tn2}}万亿美元 | {{aip.net100PP}}美元 | {{aip.net100PM:d2}}美元 | {{aip.net100Yard:pct}}%\n全部营业利润 | {{aip.op:tn2}}万亿美元 | {{aip.op100PP}}美元 | {{aip.op100PM:d2}}美元 | {{aip.op100Yard:pct}}%\n扣除账面收益后的净利润（本站粗略估算） | {{aip.exPaper:oku}}亿美元 | {{aip.exPaperPP}}美元 | {{aip.exPaperPM:d2}}美元 | {{aip.exPaperYard:pct}}%"
+          ],
+          [
+            "h",
+            "哪些公司，为什么是这9家"
+          ],
+          [
+            "p",
+            "“AI公司”没有官方名单。我们选取的是利润最直接来自AI运行和销售所依托的东西的上市公司：芯片设计公司英伟达和博通，芯片制造商台积电，云服务商微软、Alphabet（谷歌）、亚马逊和甲骨文，以及大平台Meta和苹果。每家最近四个季度的净利润都超过100亿美元。"
+          ],
+          [
+            "p",
+            "它们都不是纯粹的AI企业。最接近的是英伟达：截至{{aip.f_nvda_periodEnd:dmy}}的季度，其{{aip.f_nvda_revenueUsdBn:oku}}亿美元营收中有{{aip.f_nvda_dataCenterRevenueUsdBn:oku}}亿美元来自数据中心业务。[1] 截至2026年8月2日的季度，博通296亿美元营收中有167亿美元来自AI芯片。[7] 其他公司的AI业务与搜索和视频广告（Alphabet）、网购（亚马逊）、Office和Windows（微软）、社交媒体广告（Meta）以及数据库（甲骨文）并存。苹果完全不披露AI收入；其利润绝大部分来自iPhone、服务和其他硬件，其中AI所占比例很小，而且无从得知。[6]"
+          ],
+          [
+            "p",
+            "另有两类公司不计入合计，只作为参照。特斯拉最近四个季度的净利润只有{{aip.tesla:oku}}亿美元，主要来自汽车和能源；把它加进来，每人每年也只多{{aip.teslaPP:d2}}美元。[25] 韩国存储芯片厂商SK海力士和三星电子供应与AI芯片配套使用的高带宽内存，按本站2025年的汇率约可再加{{aip.korea:oku}}亿美元，使每人每年达到{{aip.withKoreaPP}}美元。[26][27] 我们没有计入它们，是因为部分数字来自二手报道而非公司自己的发布，两家的利润都被一次性的营业外项目推高，而且三星还卖手机、电视和显示屏。"
+          ],
+          [
+            "h",
+            "9家公司，四个季度"
+          ],
+          [
+            "p",
+            "每家公司的数字是其最近公布的四个季度之和，所以期间并不完全一致：大多截至2026年9月，博通和甲骨文截至8月，英伟达截至{{aip.thru_nvda:my}}。只公布全年数字的公司，第四季度按全年减去其他三个季度计算。台积电以新台币公布财报；我们按其公布的美元营收所隐含的汇率逐季换算。市值按{{aip.marketCapDate:dmy}}的收盘价计算。[10]"
+          ],
+          [
+            "t",
+            "公司 | 四个季度截至 | 净利润（亿美元） | 营业利润（亿美元） | 市值（亿美元）\n英伟达[1] | {{aip.thru_nvda:my}} | {{aip.net_nvda:oku}} | {{aip.op_nvda:oku}} | {{aip.cap_nvda:oku}}\n微软[2] | {{aip.thru_msft:my}} | {{aip.net_msft:oku}} | {{aip.op_msft:oku}} | {{aip.cap_msft:oku}}\nAlphabet[3] | {{aip.thru_googl:my}} | {{aip.net_googl:oku}} | {{aip.op_googl:oku}} | {{aip.cap_googl:oku}}\n亚马逊[4] | {{aip.thru_amzn:my}} | {{aip.net_amzn:oku}} | {{aip.op_amzn:oku}} | {{aip.cap_amzn:oku}}\nMeta[5] | {{aip.thru_meta:my}} | {{aip.net_meta:oku}} | {{aip.op_meta:oku}} | {{aip.cap_meta:oku}}\n苹果[6] | {{aip.thru_aapl:my}} | {{aip.net_aapl:oku}} | {{aip.op_aapl:oku}} | {{aip.cap_aapl:oku}}\n博通[7] | {{aip.thru_avgo:my}} | {{aip.net_avgo:oku}} | {{aip.op_avgo:oku}} | {{aip.cap_avgo:oku}}\n甲骨文[8] | {{aip.thru_orcl:my}} | {{aip.net_orcl:oku}} | {{aip.op_orcl:oku}} | {{aip.cap_orcl:oku}}\n台积电[9] | {{aip.thru_tsmc:my}} | {{aip.net_tsmc:oku}} | {{aip.op_tsmc:oku}} | {{aip.cap_tsmc:oku}}\n合计 | – | {{aip.net:oku}} | {{aip.op:oku}} | {{aip.cap:oku}}"
+          ],
+          [
+            "p",
+            "Alphabet和亚马逊的净利润远高于营业利润。原因见下一节。"
+          ],
+          [
+            "h",
+            "部分利润来自其他AI公司估值上涨"
+          ],
+          [
+            "p",
+            "净利润包括公司持有的其他公司股份的收益，即使这些股份还没有卖出。当AI实验室等非上市公司以更高估值融资时，持有其股份的投资者可以把升值记为利润。四个季度里，这类项目税前合计约{{aip.paper:oku}}亿美元，相当于9家公司净利润的约{{aip.paperShare:pct}}%。"
+          ],
+          [
+            "p",
+            "Alphabet：股权投资净收益{{aip.paper_googl:oku}}亿美元。其季度报告称，今年的收益“主要与我们非上市股权投资的未实现净收益有关，大部分来自一家非上市公司，以及SpaceX首次公开募股之前”。报告没有写出这家非上市公司的名字。[14]"
+          ],
+          [
+            "p",
+            "亚马逊：其他收入{{aip.paper_amzn:oku}}亿美元。其季度报告称，2026年前九个月的收益“主要来自与我们持有的Anthropic无投票权优先股相关的、基于可观察价格变动的向上调整”。[15]"
+          ],
+          [
+            "p",
+            "英伟达：股权投资收益{{aip.paper_nvda:oku}}亿美元。[16] 微软：其他收入{{aip.paper_msft:oku}}亿美元，这一项包括与其对OpenAI投资相关的项目；我们计入的是整项，而不只是投资收益，因此这部分是近似值。[2] 甲骨文：投资收益{{aip.paper_orcl:oku}}亿美元。[8]"
+          ],
+          [
+            "p",
+            "这类收益不是现金，而是给公司仍然持有的股份标上了更高的价格，而且可能反转：2026年第三季度，Alphabet的股权投资亏损87亿美元，“主要来自SpaceX”。[14] 按9家公司这一期间的平均实际税率（{{aip.effTax:pct}}%）扣税后把它们去掉，净利润约为{{aip.exPaper:oku}}亿美元。这是本站的粗略估算，不是任何公司公布的数字。分下去，每人每年约{{aip.exPaperPP}}美元。"
+          ],
+          [
+            "h",
+            "如果每年拿出一部分来发"
+          ],
+          [
+            "p",
+            "我们列出三个比例。15%是经合组织和二十国集团商定的全球最低企业税率，[24] 但在这里它不是税率：这些利润已经缴过税，15%指的是把税后剩下的15%发出去。25%是介于两者之间的整数，100%就是全部。"
+          ],
+          [
+            "t",
+            "每年发出 | 每年总额 | 每人每年 | 每人每月 | 相当于给每人每天3美元费用的比例\n净利润的15% | {{aip.net15Tot:oku}}亿美元 | {{aip.net15PP}}美元 | {{aip.net15PM:d2}}美元 | {{aip.net15Yard:pct}}%\n净利润的25% | {{aip.net25Tot:oku}}亿美元 | {{aip.net25PP}}美元 | {{aip.net25PM:d2}}美元 | {{aip.net25Yard:pct}}%\n净利润的100% | {{aip.net100Tot:tn2}}万亿美元 | {{aip.net100PP}}美元 | {{aip.net100PM:d2}}美元 | {{aip.net100Yard:pct}}%\n营业利润的15% | {{aip.op15Tot:oku}}亿美元 | {{aip.op15PP}}美元 | {{aip.op15PM:d2}}美元 | {{aip.op15Yard:pct}}%\n营业利润的25% | {{aip.op25Tot:oku}}亿美元 | {{aip.op25PP}}美元 | {{aip.op25PM:d2}}美元 | {{aip.op25Yard:pct}}%\n营业利润的100% | {{aip.op100Tot:tn2}}万亿美元 | {{aip.op100PP}}美元 | {{aip.op100PM:d2}}美元 | {{aip.op100Yard:pct}}%"
+          ],
+          [
+            "p",
+            "利润是“流量”。市值则是“存量”，就像{前一篇文章|/essays/billionaire-wealth-per-person/}里亿万富豪的财富。9家公司{{aip.cap:tn1}}万亿美元的市值一次分完，每人约{{aip.capOncePP:r10}}美元，够给所有人每天3美元发约{{aip.capOnceMonths}}个月。但这只能做一次，而且卖出这么多股票会压低股价。"
+          ],
+          [
+            "p",
+            "如果改为每年按市值的一定比例发放：2.5%是萨姆·奥尔特曼在2021年的文章《万物的摩尔定律》中提出的年比例，用于一个以公司股份支付的基金。[17] 5%是美国私人基金会每年必须拨付的资产比例，与亿万富豪那篇文章用的参照相同。[28]"
+          ],
+          [
+            "t",
+            "每年发出 | 每年总额 | 每人每年 | 每人每月 | 相当于给每人每天3美元费用的比例\n市值的2.5% | {{aip.cap25Tot:oku}}亿美元 | {{aip.cap25PP}}美元 | {{aip.cap25PM:d2}}美元 | {{aip.cap25Yard:pct}}%\n市值的5% | {{aip.cap5Tot:tn2}}万亿美元 | {{aip.cap5PP}}美元 | {{aip.cap5PM:d2}}美元 | {{aip.cap5Yard:pct}}%"
+          ],
+          [
+            "p",
+            "这些每年的数字都达不到“每人每天3美元”的底线。最大的一项，即全部净利润，约能支付其中{{aip.net100Yard:pct}}%；每年拿出市值的5%，约为{{aip.cap5Yard:pct}}%。"
+          ],
+          [
+            "p",
+            "只是一个参考，不是选项：如果9家公司的净利润只分给日本的{{aip.jpPop:oku2}}亿人，按本站所用的2025年汇率，每人每年约{{aip.jpOnly@jp:man}}万日元。[12] 这些钱来自全世界的顾客，所以这只是为了让人感受一下规模。"
+          ],
+          [
+            "h",
+            "AI实验室本身在亏钱"
+          ],
+          [
+            "p",
+            "开发最知名AI模型的公司不在这9家之中，因为它们没有盈利。已申请上市的Anthropic公布，2026年前九个月营收332亿美元，而2025年全年为46亿美元；前九个月营业亏损13亿美元（2025年为81亿美元）。其净亏损大得多，前九个月达1,040亿美元，主要来自可转换票据、衍生工具和SAFE（未来股权简单协议）估值变化造成的非现金损失（943亿美元）。这些数字来自其2026年11月10日修订后的注册申报文件。[18]"
+          ],
+          [
+            "p",
+            "OpenAI未上市，不公布财务报表。关于其投资者材料的媒体报道（我们无法核实）称，其2026年第三季度营收约100亿美元，营业亏损约109亿美元（彭博社、《华尔街日报》和The Information的报道，经Gulf News和PYMNTS转述）。[19] 关于第一季度，The Information报道其现金消耗为37亿美元（经The Next Web转述）。[20] 开发Grok的xAI如今属于2026年6月上市的SpaceX；包括X和Cursor在内的AI业务部门，2026年前九个月营业亏损33亿美元。[21]"
+          ],
+          [
+            "p",
+            "到目前为止，AI热潮的利润主要落在卖芯片、卖云计算的公司和大平台手里，而不是实验室。Anthropic表示将把5%的股份投入一个公益基金；我们在{另一篇文章|/essays/public-benefit-fund/}中讨论过。[22]"
+          ],
+          [
+            "h",
+            "附带具体比例的提案"
+          ],
+          [
+            "p",
+            "萨姆·奥尔特曼（2021年）：每年把大公司市值的2.5%（以股份支付）和私人持有土地价值的2.5%投入一个“美国股权基金”。他写道：“十年后，美国2.5亿成年人每人每年将得到约13,500美元。”[17]"
+          ],
+          [
+            "p",
+            "Anthropic（2026年10月）：把5%的股份投入一个公益基金，须经股东批准；在某一基准之上价值每上涨50%，董事会可再增加2%。其用途可能包括“向特定人群直接分配”。[22]"
+          ],
+          [
+            "p",
+            "H.R. 10044法案（美国众议院，2026年9月；萨拉·雅各布斯、格雷格·卡萨尔和瓦莱丽·富希）：据《财富》杂志报道，在失业率不超过5%时，对大型AI公司征收消费税，税额取AI令牌价值的2%与AI服务收入的3%中较高者，税率随失业率上升而提高，所得款项用于创造就业而不是现金发放。我们没有读过法案原文。[23]"
+          ],
+          [
+            "p",
+            "经合组织和二十国集团的全球最低税：对营收超过7.5亿欧元的集团设定15%的最低实际税率，从2024年起实施。它是企业税的下限，不是针对AI的税。[24]"
+          ],
+          [
+            "p",
+            "德国数字部长卡斯滕·维尔德贝格尔表示，应对AI带来的巨额营业额征税，但没有提出税率；见{我们关于德国的文章|/essays/germany-merz-basic-income-cost/}。"
+          ],
+          [
+            "h",
+            "为什么不能直接发下去"
+          ],
+          [
+            "p",
+            "并不都是AI。苹果的利润几乎全部来自设备和服务，亚马逊的包括网购，微软的包括Office和Windows，Alphabet和Meta的利润主要来自广告。没有一家公司公布其利润中有多少来自AI。"
+          ],
+          [
+            "p",
+            "很多钱已经在花。这些公司正把大量现金投入数据中心。亚马逊最近四个季度在不动产和设备上花了{{aip.f_amzn_capexTtmUsdM:oku}}亿美元，并称这“主要反映了对人工智能的投资”，同期自由现金流为负，为−424亿美元。[4] 甲骨文最近四个季度的自由现金流为−237亿美元。[8] Alphabet在2026年前九个月的不动产和设备支出为1,320亿美元，[3] Meta预计今年支出1,350亿至1,450亿美元。[5] 这些公司还用利润回购自家股票。把利润全部发掉，这两样都无钱可用。"
+          ],
+          [
+            "p",
+            "账面收益不是现金。净利润中约{{aip.paperShare:pct}}%是给其他公司股份标上的更高价值，不卖出这些股份就无法支付。"
+          ],
+          [
+            "p",
+            "财年各不相同。苹果的财年在9月结束，微软在6月，英伟达在1月；用每家公司最近四个季度可以避免混用不同年份，但期间仍相差几个月。"
+          ],
+          [
+            "p",
+            "汇率会变。日元金额按本站所用世界银行数据中的2025年平均汇率换算，约1美元兑{{aip.yen:d1}}日元。[12] {{aip.yenMarketDate:dmy}}的市场汇率约为{{aip.yenMarket:d1}}日元，按这一汇率，日元金额会高出约{{aip.yenMove:pct}}%。"
+          ],
+          [
+            "p",
+            "价格不会不变。每年拿走大部分利润会降低这些公司的价值，而市值的数字假定不会。"
+          ],
+          [
+            "p",
+            "按本站所用世界银行数据中的2025年平均汇率，每年{{aip.net100PP}}美元约合{{aip.net100PP@cn:r10}}元人民币，每月{{aip.net100PM:d2}}美元约合{{aip.net100PM@cn:int}}元人民币。[12]"
+          ],
+          [
+            "h",
+            "数字说明了什么"
+          ],
+          [
+            "p",
+            "全部分掉，9家公司一年的净利润相当于每人约{{aip.net100PP}}美元，每月约{{aip.net100PM:d2}}美元：是“每人每天3美元”底线的{{aip.net100Yard:pct}}%。扣除账面收益后接近{{aip.exPaperPP}}美元，拿出其中15%或25%，则是每人每年{{aip.net15PP}}至{{aip.net25PP}}美元。这些公司的市值大得多，约合每人{{aip.capOncePP:r10}}美元，但只能分一次。"
+          ],
+          [
+            "p",
+            "基本收入在各国要花多少钱，请看{世界地图|/essays/basic-income-world-map/}和{211个国家和地区比较|/calc/countries/}。关于用AI支付基本收入，请看{全民高收入：谁来买单？|/essays/universal-high-income/}、{生成式AI抢走了我们的工作吗？|/essays/generative-ai-jobs-basic-income/}和{AI智能体需要基本收入吗？|/essays/ai-agent-basic-income/}。"
+          ],
+          [
+            "h",
+            "前提与局限"
+          ],
+          [
+            "p",
+            "四个季度。每家公司的数字是截至{{aip.retrieved:dmy}}已公布的最近四个季度之和，取自其发布的财报和申报文件；公司没有单独公布的季度，按全年减去其他三个季度计算。每个季度及其出处都列在我们的数据文件中。[10]"
+          ],
+          [
+            "p",
+            "按公布的净利润。净利润是归属于股东的税后净利润（按美国通用会计准则或国际财务报告准则）。营业利润是按美国通用会计准则计算的营业利润（台积电为营业利益），是税前数字，不可能全部发出。账面收益一项包括微软和亚马逊的整个其他收入项目，因此是近似值，扣除它们后的利润是本站的估算。"
+          ],
+          [
+            "p",
+            "市值。{{aip.marketCapDate:dmy}}的收盘价乘以各公司最近申报文件中的流通股数；台积电用的是2025年底的股数和当天的新台币汇率。Alphabet和Meta未上市的B类股按A类股价格计算。[10]"
+          ],
+          [
+            "p",
+            "人口与物价。世界人口是世界银行2025年的数字。[11] 日本人口是本站数据中2026年10月的估计值。每天3.00美元是按2021年购买力平价定的世界银行贫困线，与比较表一样换算成各国物价；按市场汇率加总，每年需{{aip.yard:tn2}}万亿美元。[12][13]"
+          ],
+          [
+            "p",
+            "不是提案。这些比例只是参照，不是我们提出的政策，本文也不评判这些利润该不该征税或分配。数字只说明金额有多大。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "AI बूम के केंद्र में खड़ी नौ कंपनियों (एनविडिया, माइक्रोसॉफ़्ट, अल्फ़ाबेट, अमेज़न, मेटा, ऐपल, ब्रॉडकॉम, ओरेकल और TSMC) ने अपनी पिछली चार घोषित तिमाहियों में मिलकर करीब {{aip.net:tn2}} ट्रिलियन डॉलर का शुद्ध मुनाफ़ा कमाया।[1][10] वर्ल्ड बैंक के अनुसार 2025 में दुनिया की आबादी {{aip.pop:bn2}} अरब थी।[11] बराबर बाँटें तो हर व्यक्ति को साल में करीब {{aip.net100PP}} डॉलर, यानी महीने के {{aip.net100PM:d2}} डॉलर मिलेंगे।"
+          ],
+          [
+            "p",
+            "इस साइट की {211 देशों की तुलना|/calc/countries/} में मानक रकम वर्ल्ड बैंक की ग़रीबी रेखा, रोज़ 3.00 डॉलर, है, जिसे हर देश की क़ीमतों में बदला गया है।[13] इन 211 देशों और क्षेत्रों के सभी लोगों को एक साल यह देने का खर्च बाज़ार विनिमय दर पर करीब {{aip.yard:tn2}} ट्रिलियन डॉलर है।[12] नौ कंपनियों का पूरे एक साल का शुद्ध मुनाफ़ा इसका करीब {{aip.net100Yard:pct}}%, यानी {{aip.net100Months:d1}} महीने, ही चला पाएगा।"
+          ],
+          [
+            "p",
+            "परिचालन मुनाफ़ा (कारोबार से हुआ मुनाफ़ा, ब्याज, निवेश पर लाभ-हानि और टैक्स से पहले) लगभग यही जवाब देता है: {{aip.op:tn2}} ट्रिलियन डॉलर, यानी प्रति व्यक्ति साल में {{aip.op100PP}} डॉलर (महीने के {{aip.op100PM:d2}} डॉलर)।"
+          ],
+          [
+            "t",
+            "क्या बाँटा जाए | साल का कुल | प्रति व्यक्ति सालाना | प्रति व्यक्ति मासिक | सबको रोज़ 3 डॉलर के खर्च का हिस्सा\nपूरा शुद्ध मुनाफ़ा | {{aip.net:tn2}} ट्रिलियन डॉलर | {{aip.net100PP}} डॉलर | {{aip.net100PM:d2}} डॉलर | {{aip.net100Yard:pct}}%\nपूरा परिचालन मुनाफ़ा | {{aip.op:tn2}} ट्रिलियन डॉलर | {{aip.op100PP}} डॉलर | {{aip.op100PM:d2}} डॉलर | {{aip.op100Yard:pct}}%\nकाग़ज़ी लाभ के बिना शुद्ध मुनाफ़ा (हमारा मोटा अनुमान) | {{aip.exPaper:bn}} अरब डॉलर | {{aip.exPaperPP}} डॉलर | {{aip.exPaperPM:d2}} डॉलर | {{aip.exPaperYard:pct}}%"
+          ],
+          [
+            "h",
+            "कौन सी कंपनियाँ, और यही नौ क्यों"
+          ],
+          [
+            "p",
+            "“AI कंपनियों” की कोई आधिकारिक सूची नहीं है। हमने वे सूचीबद्ध कंपनियाँ लीं जिनका मुनाफ़ा सबसे सीधे उस चीज़ से आता है जिस पर AI चलता है और जिसके ज़रिए बिकता है: चिप डिज़ाइन करने वाली एनविडिया और ब्रॉडकॉम, चिप बनाने वाली TSMC, क्लाउड सेवा देने वाली माइक्रोसॉफ़्ट, अल्फ़ाबेट (गूगल), अमेज़न और ओरेकल, और बड़े प्लेटफ़ॉर्म मेटा और ऐपल। हर एक ने पिछली चार तिमाहियों में 10 अरब डॉलर से ज़्यादा का शुद्ध मुनाफ़ा कमाया।"
+          ],
+          [
+            "p",
+            "इनमें से कोई भी पूरी तरह AI का कारोबार नहीं है। एनविडिया सबसे क़रीब है: {{aip.f_nvda_periodEnd:dmy}} को ख़त्म तिमाही में उसकी {{aip.f_nvda_revenueUsdBn:bn1}} अरब डॉलर की आमदनी में से {{aip.f_nvda_dataCenterRevenueUsdBn:bn1}} अरब डॉलर डेटा सेंटर कारोबार से आए।[1] 2 अगस्त 2026 को ख़त्म तिमाही में ब्रॉडकॉम की 29.6 अरब डॉलर की आमदनी में से 16.7 अरब डॉलर AI चिप से थे।[7] बाक़ी कंपनियों में AI सर्च और वीडियो विज्ञापन (अल्फ़ाबेट), ऑनलाइन शॉपिंग (अमेज़न), ऑफ़िस और विंडोज़ (माइक्रोसॉफ़्ट), सोशल मीडिया विज्ञापन (मेटा) और डेटाबेस (ओरेकल) के साथ-साथ चलता है। ऐपल AI से कोई आमदनी नहीं बताता; उसका मुनाफ़ा भारी मात्रा में आईफ़ोन, सेवाओं और दूसरे हार्डवेयर से आता है, और उसमें AI का हिस्सा छोटा है और पता नहीं है।[6]"
+          ],
+          [
+            "p",
+            "दो और समूह कुल से बाहर रखे गए हैं और सिर्फ़ जाँच के तौर पर दिखाए गए हैं। टेस्ला ने पिछली चार तिमाहियों में सिर्फ़ {{aip.tesla:bn1}} अरब डॉलर का शुद्ध मुनाफ़ा कमाया, ज़्यादातर कारों और ऊर्जा से; उसे जोड़ने से प्रति व्यक्ति रकम साल में सिर्फ़ {{aip.teslaPP:d2}} डॉलर बढ़ेगी।[25] कोरिया की मेमोरी कंपनियाँ SK हाइनिक्स और सैमसंग इलेक्ट्रॉनिक्स, जो AI चिप के साथ लगने वाली हाई-बैंडविड्थ मेमोरी बनाती हैं, साइट की 2025 की विनिमय दर पर करीब {{aip.korea:bn}} अरब डॉलर जोड़ेंगी, जिससे रकम {{aip.withKoreaPP}} डॉलर हो जाएगी।[26][27] हम इन्हें बाहर रखते हैं, क्योंकि इनके आँकड़ों का एक हिस्सा कंपनियों की अपनी घोषणाओं से नहीं बल्कि दूसरी रिपोर्टों से आता है, दोनों के आँकड़े एक बार के ग़ैर-परिचालन मदों से फूले हुए हैं, और सैमसंग फ़ोन, टीवी और डिस्प्ले भी बेचती है।"
+          ],
+          [
+            "h",
+            "नौ कंपनियाँ, चार तिमाहियाँ"
+          ],
+          [
+            "p",
+            "हर कंपनी के आँकड़े उसकी चार सबसे नई घोषित तिमाहियों का जोड़ हैं, इसलिए अवधियाँ पूरी तरह मेल नहीं खातीं: ज़्यादातर सितंबर 2026 में ख़त्म होती हैं, ब्रॉडकॉम और ओरेकल की अगस्त में, और एनविडिया की {{aip.thru_nvda:my}} में। जहाँ कोई कंपनी सिर्फ़ पूरे साल के आँकड़े देती है, वहाँ चौथी तिमाही पूरे साल में से बाक़ी तीन घटाकर निकाली गई है। TSMC नए ताइवान डॉलर में नतीजे देती है; हम हर तिमाही को उस दर से बदलते हैं जो उसकी बताई अमेरिकी डॉलर वाली आमदनी से निकलती है। बाज़ार मूल्य {{aip.marketCapDate:dmy}} के बंद भाव पर हैं।[10]"
+          ],
+          [
+            "t",
+            "कंपनी | चार तिमाहियाँ, जब तक | शुद्ध मुनाफ़ा (अरब डॉलर) | परिचालन मुनाफ़ा (अरब डॉलर) | बाज़ार मूल्य (अरब डॉलर)\nएनविडिया[1] | {{aip.thru_nvda:mys}} | {{aip.net_nvda:bn}} | {{aip.op_nvda:bn}} | {{aip.cap_nvda:bn}}\nमाइक्रोसॉफ़्ट[2] | {{aip.thru_msft:mys}} | {{aip.net_msft:bn}} | {{aip.op_msft:bn}} | {{aip.cap_msft:bn}}\nअल्फ़ाबेट[3] | {{aip.thru_googl:mys}} | {{aip.net_googl:bn}} | {{aip.op_googl:bn}} | {{aip.cap_googl:bn}}\nअमेज़न[4] | {{aip.thru_amzn:mys}} | {{aip.net_amzn:bn}} | {{aip.op_amzn:bn}} | {{aip.cap_amzn:bn}}\nमेटा[5] | {{aip.thru_meta:mys}} | {{aip.net_meta:bn}} | {{aip.op_meta:bn}} | {{aip.cap_meta:bn}}\nऐपल[6] | {{aip.thru_aapl:mys}} | {{aip.net_aapl:bn}} | {{aip.op_aapl:bn}} | {{aip.cap_aapl:bn}}\nब्रॉडकॉम[7] | {{aip.thru_avgo:mys}} | {{aip.net_avgo:bn}} | {{aip.op_avgo:bn}} | {{aip.cap_avgo:bn}}\nओरेकल[8] | {{aip.thru_orcl:mys}} | {{aip.net_orcl:bn}} | {{aip.op_orcl:bn}} | {{aip.cap_orcl:bn}}\nTSMC[9] | {{aip.thru_tsmc:mys}} | {{aip.net_tsmc:bn}} | {{aip.op_tsmc:bn}} | {{aip.cap_tsmc:bn}}\nकुल | – | {{aip.net:bn}} | {{aip.op:bn}} | {{aip.cap:bn}}"
+          ],
+          [
+            "p",
+            "अल्फ़ाबेट और अमेज़न का शुद्ध मुनाफ़ा परिचालन मुनाफ़े से बहुत ऊपर है। इसकी वजह अगले हिस्से में है।"
+          ],
+          [
+            "h",
+            "मुनाफ़े का एक हिस्सा दूसरी AI कंपनियों की क़ीमत बढ़ने से है"
+          ],
+          [
+            "p",
+            "शुद्ध मुनाफ़े में वे लाभ भी शामिल होते हैं जो किसी कंपनी को दूसरी कंपनियों में अपने शेयरों पर होते हैं, भले ही उसने वे शेयर बेचे न हों। जब कोई निजी कंपनी, जैसे कोई AI लैब, ऊँचे मूल्यांकन पर पैसा जुटाती है, तो उसके शेयर रखने वाला निवेशक इस बढ़त को मुनाफ़े के रूप में दर्ज कर सकता है। चार तिमाहियों में इस तरह की मदें टैक्स से पहले करीब {{aip.paper:bn}} अरब डॉलर रहीं, जो नौ कंपनियों के शुद्ध मुनाफ़े के करीब {{aip.paperShare:pct}}% के बराबर है।"
+          ],
+          [
+            "p",
+            "अल्फ़ाबेट: इक्विटी प्रतिभूतियों पर {{aip.paper_googl:bn}} अरब डॉलर का शुद्ध लाभ। उसकी तिमाही रिपोर्ट कहती है कि इस साल के लाभ “मुख्य रूप से हमारी ग़ैर-बाज़ार इक्विटी प्रतिभूतियों पर शुद्ध अप्राप्त लाभ से जुड़े हैं, जो ज़्यादातर एक निजी कंपनी से, और स्पेसएक्स से उसके आईपीओ से पहले आए”। रिपोर्ट उस निजी कंपनी का नाम नहीं बताती।[14]"
+          ],
+          [
+            "p",
+            "अमेज़न: {{aip.paper_amzn:bn}} अरब डॉलर की अन्य आय। उसकी तिमाही रिपोर्ट कहती है कि 2026 के पहले नौ महीनों के लाभ “मुख्य रूप से Anthropic में हमारे बिना मताधिकार वाले प्रेफ़र्ड शेयरों की क़ीमत में देखे गए बदलावों के आधार पर ऊपर की ओर किए गए समायोजन से” आए।[15]"
+          ],
+          [
+            "p",
+            "एनविडिया: इक्विटी प्रतिभूतियों से {{aip.paper_nvda:bn1}} अरब डॉलर का लाभ।[16] माइक्रोसॉफ़्ट: {{aip.paper_msft:bn1}} अरब डॉलर की अन्य आय, एक ऐसी मद जिसमें OpenAI में उसके निवेश से जुड़ी चीज़ें शामिल हैं; हम पूरी मद गिनते हैं, सिर्फ़ निवेश के लाभ नहीं, इसलिए यह हिस्सा अनुमानित है।[2] ओरेकल: निवेश पर {{aip.paper_orcl:bn1}} अरब डॉलर का लाभ।[8]"
+          ],
+          [
+            "p",
+            "ऐसे लाभ नक़द नहीं हैं। ये उन शेयरों पर लगाई गई ऊँची क़ीमत हैं जो कंपनी के पास अब भी हैं, और ये उलट भी सकते हैं: 2026 की तीसरी तिमाही में अल्फ़ाबेट ने अपनी इक्विटी प्रतिभूतियों पर 8.7 अरब डॉलर का घाटा दर्ज किया, “ज़्यादातर स्पेसएक्स से”।[14] इन्हें, इस अवधि में नौ कंपनियों की औसत प्रभावी टैक्स दर ({{aip.effTax:pct}}%) पर टैक्स घटाकर, हटा दें तो शुद्ध मुनाफ़ा करीब {{aip.exPaper:bn}} अरब डॉलर बचता है। यह हमारा मोटा अनुमान है, किसी कंपनी का बताया आँकड़ा नहीं। बाँटें तो यह प्रति व्यक्ति साल में करीब {{aip.exPaperPP}} डॉलर होगा।"
+          ],
+          [
+            "h",
+            "अगर हर साल इसका एक हिस्सा बाँटा जाए"
+          ],
+          [
+            "p",
+            "हम मुनाफ़े के तीन हिस्से दिखाते हैं। 15% OECD और G20 के ज़रिए तय हुई कॉर्पोरेट टैक्स की वैश्विक न्यूनतम दर है,[24] लेकिन यहाँ यह टैक्स दर नहीं है: इन मुनाफ़ों पर टैक्स पहले ही लग चुका है, इसलिए 15% का मतलब है टैक्स के बाद बचे का 15% बाँटना। 25% बीच का एक गोल आँकड़ा है, और 100% पूरा मुनाफ़ा।"
+          ],
+          [
+            "t",
+            "हर साल कितना बाँटें | साल का कुल | प्रति व्यक्ति सालाना | प्रति व्यक्ति मासिक | सबको रोज़ 3 डॉलर के खर्च का हिस्सा\nशुद्ध मुनाफ़े का 15% | {{aip.net15Tot:bn}} अरब डॉलर | {{aip.net15PP}} डॉलर | {{aip.net15PM:d2}} डॉलर | {{aip.net15Yard:pct}}%\nशुद्ध मुनाफ़े का 25% | {{aip.net25Tot:bn}} अरब डॉलर | {{aip.net25PP}} डॉलर | {{aip.net25PM:d2}} डॉलर | {{aip.net25Yard:pct}}%\nशुद्ध मुनाफ़े का 100% | {{aip.net100Tot:bn}} अरब डॉलर | {{aip.net100PP}} डॉलर | {{aip.net100PM:d2}} डॉलर | {{aip.net100Yard:pct}}%\nपरिचालन मुनाफ़े का 15% | {{aip.op15Tot:bn}} अरब डॉलर | {{aip.op15PP}} डॉलर | {{aip.op15PM:d2}} डॉलर | {{aip.op15Yard:pct}}%\nपरिचालन मुनाफ़े का 25% | {{aip.op25Tot:bn}} अरब डॉलर | {{aip.op25PP}} डॉलर | {{aip.op25PM:d2}} डॉलर | {{aip.op25Yard:pct}}%\nपरिचालन मुनाफ़े का 100% | {{aip.op100Tot:bn}} अरब डॉलर | {{aip.op100PP}} डॉलर | {{aip.op100PM:d2}} डॉलर | {{aip.op100Yard:pct}}%"
+          ],
+          [
+            "p",
+            "मुनाफ़ा एक बहाव (फ़्लो) है। बाज़ार मूल्य एक भंडार (स्टॉक) है, जैसे {हमारे पिछले लेख|/essays/billionaire-wealth-per-person/} में अरबपतियों की संपत्ति। एक बार में बाँटें तो नौ कंपनियों के {{aip.cap:tn1}} ट्रिलियन डॉलर प्रति व्यक्ति करीब {{aip.capOncePP:r10}} डॉलर बनेंगे, जो सबको रोज़ 3 डॉलर के करीब {{aip.capOnceMonths}} महीनों के लिए काफ़ी है। लेकिन यह सिर्फ़ एक बार हो सकता है, और इतने शेयर बेचने से उनकी क़ीमत गिरेगी।"
+          ],
+          [
+            "p",
+            "इसकी जगह हर साल बाज़ार मूल्य का एक हिस्सा दिया जाए: 2.5% वह सालाना दर है जो सैम ऑल्टमैन ने अपने 2021 के लेख “मूर्स लॉ फ़ॉर एवरीथिंग” में कंपनी के शेयरों में भुगतान करने वाले एक फ़ंड के लिए सुझाई थी।[17] 5% उनकी संपत्ति का वह हिस्सा है जो अमेरिका की निजी फ़ाउंडेशनों को हर साल बाँटना होता है, वही पैमाना जो अरबपतियों वाले लेख में था।[28]"
+          ],
+          [
+            "t",
+            "हर साल कितना दें | साल का कुल | प्रति व्यक्ति सालाना | प्रति व्यक्ति मासिक | सबको रोज़ 3 डॉलर के खर्च का हिस्सा\nबाज़ार मूल्य का 2.5% | {{aip.cap25Tot:bn}} अरब डॉलर | {{aip.cap25PP}} डॉलर | {{aip.cap25PM:d2}} डॉलर | {{aip.cap25Yard:pct}}%\nबाज़ार मूल्य का 5% | {{aip.cap5Tot:bn}} अरब डॉलर | {{aip.cap5PP}} डॉलर | {{aip.cap5PM:d2}} डॉलर | {{aip.cap5Yard:pct}}%"
+          ],
+          [
+            "p",
+            "इनमें से कोई भी सालाना आँकड़ा सबको रोज़ 3 डॉलर के न्यूनतम स्तर तक नहीं पहुँचता। सबसे बड़ा, पूरा शुद्ध मुनाफ़ा, इसका करीब {{aip.net100Yard:pct}}% देगा, और हर साल बाज़ार मूल्य का 5% करीब {{aip.cap5Yard:pct}}%।"
+          ],
+          [
+            "p",
+            "एक दिलचस्प हिसाब, कोई विकल्प नहीं: अगर नौ कंपनियों का शुद्ध मुनाफ़ा सिर्फ़ जापान के {{aip.jpPop:m1}} मिलियन लोगों को जाए, तो इस साइट की 2025 की विनिमय दर पर हर एक को साल में करीब {{aip.jpOnly@jp:lakh1}} लाख येन मिलेंगे।[12] पैसा दुनिया भर के ग्राहकों से आता है, इसलिए यह सिर्फ़ आकार का अंदाज़ा देता है।"
+          ],
+          [
+            "h",
+            "AI लैब ख़ुद घाटे में हैं"
+          ],
+          [
+            "p",
+            "सबसे मशहूर AI मॉडल बनाने वाली कंपनियाँ इन नौ में नहीं हैं, क्योंकि वे मुनाफ़ा नहीं कमातीं। Anthropic, जिसने अपने शेयर सूचीबद्ध कराने के लिए आवेदन किया है, ने 2026 के पहले नौ महीनों में 33.2 अरब डॉलर की आमदनी बताई, जबकि पूरे 2025 में 4.6 अरब डॉलर थी, और नौ महीनों का परिचालन घाटा 1.3 अरब डॉलर (2025 में 8.1 अरब डॉलर)। उसका शुद्ध घाटा कहीं बड़ा था, नौ महीनों में 104.0 अरब डॉलर, ज़्यादातर कन्वर्टिबल नोट्स, डेरिवेटिव और SAFE की क़ीमत में ग़ैर-नक़द बदलावों से (94.3 अरब डॉलर)। ये आँकड़े 10 नवंबर 2026 के उसके संशोधित पंजीकरण विवरण से हैं।[18]"
+          ],
+          [
+            "p",
+            "OpenAI निजी कंपनी है और कोई खाते प्रकाशित नहीं करती। उसकी निवेशक सामग्री पर आई मीडिया रिपोर्टें, जिन्हें हम जाँच नहीं सके, 2026 की तीसरी तिमाही में उसकी आमदनी करीब 10 अरब डॉलर और परिचालन घाटा करीब 10.9 अरब डॉलर बताती हैं (ब्लूमबर्ग, द वॉल स्ट्रीट जर्नल और द इन्फ़ॉर्मेशन, जैसा गल्फ़ न्यूज़ और PYMNTS ने बताया)।[19] पहली तिमाही के लिए द इन्फ़ॉर्मेशन ने 3.7 अरब डॉलर का कैश बर्न बताया (द नेक्स्ट वेब के ज़रिए)।[20] Grok बनाने वाली xAI अब स्पेसएक्स का हिस्सा है, जो जून 2026 से सूचीबद्ध है; AI खंड, जिसमें X और Cursor भी हैं, का 2026 के पहले नौ महीनों में परिचालन घाटा 3.3 अरब डॉलर था।[21]"
+          ],
+          [
+            "p",
+            "अब तक AI बूम का मुनाफ़ा मुख्य रूप से उन कंपनियों के पास है जो चिप, क्लाउड कंप्यूटिंग बेचती हैं और बड़े प्लेटफ़ॉर्म चलाती हैं, लैब के पास नहीं। Anthropic ने कहा है कि वह अपने 5% शेयर एक पब्लिक बेनिफ़िट फ़ंड में डालेगी; इस पर हमने {एक अलग लेख|/essays/public-benefit-fund/} में देखा था।[22]"
+          ],
+          [
+            "h",
+            "दर के साथ आने वाले प्रस्ताव"
+          ],
+          [
+            "p",
+            "सैम ऑल्टमैन (2021): हर साल बड़ी कंपनियों के बाज़ार मूल्य का 2.5%, शेयरों में, और निजी ज़मीन के मूल्य का 2.5%, एक “अमेरिकन इक्विटी फ़ंड” में। उन्होंने लिखा कि “अब से एक दशक बाद अमेरिका के 25 करोड़ वयस्कों में से हर एक को हर साल करीब 13,500 डॉलर मिलेंगे”।[17]"
+          ],
+          [
+            "p",
+            "Anthropic (अक्टूबर 2026): अपने 5% शेयर एक पब्लिक बेनिफ़िट फ़ंड में, शेयरधारकों की मंज़ूरी पर, और एक आधार स्तर से ऊपर मूल्य में हर 50% बढ़त पर बोर्ड 2% और जोड़ सकता है। इसके उपयोग में “ख़ास आबादियों को सीधे वितरण” शामिल हो सकते हैं।[22]"
+          ],
+          [
+            "p",
+            "H.R. 10044 (अमेरिकी प्रतिनिधि सभा, सितंबर 2026; सारा जैकब्स, ग्रेग कासार और वैलेरी फ़ाउशी): फ़ॉर्च्यून के अनुसार, बड़ी AI कंपनियों पर एक उत्पाद शुल्क, जो बेरोज़गारी 5% या उससे कम रहने तक AI टोकन के मूल्य के 2% या AI सेवाओं की आमदनी के 3% में से जो ज़्यादा हो, उतना होगा और बेरोज़गारी के साथ बढ़ेगा; पैसा नक़द भुगतान के बजाय रोज़गार पैदा करने में जाएगा। हमने विधेयक का पाठ नहीं पढ़ा है।[23]"
+          ],
+          [
+            "p",
+            "OECD/G20 वैश्विक न्यूनतम टैक्स: 75 करोड़ यूरो से ज़्यादा आमदनी वाले समूहों के लिए 15% की न्यूनतम प्रभावी टैक्स दर, 2024 से लागू। यह कॉर्पोरेट टैक्स की निचली सीमा है, AI पर टैक्स नहीं।[24]"
+          ],
+          [
+            "p",
+            "जर्मनी के डिजिटल मंत्री कार्स्टन विल्डबर्गर ने कहा है कि AI से होने वाली बहुत बड़ी बिक्री पर टैक्स लगना चाहिए, लेकिन कोई दर नहीं बताई; देखें {जर्मनी पर हमारा लेख|/essays/germany-merz-basic-income-cost/}।"
+          ],
+          [
+            "h",
+            "इसे सीधे क्यों नहीं बाँटा जा सकता"
+          ],
+          [
+            "p",
+            "यह सब AI नहीं है। ऐपल का मुनाफ़ा लगभग पूरी तरह डिवाइस और सेवाओं से आता है, अमेज़न के मुनाफ़े में ऑनलाइन शॉपिंग शामिल है, माइक्रोसॉफ़्ट के में ऑफ़िस और विंडोज़, और अल्फ़ाबेट और मेटा का मुनाफ़ा ज़्यादातर विज्ञापन से आता है। कोई भी कंपनी नहीं बताती कि उसके मुनाफ़े का कितना हिस्सा AI से आता है।"
+          ],
+          [
+            "p",
+            "इसका बड़ा हिस्सा पहले से खर्च हो रहा है। कंपनियाँ डेटा सेंटरों में भारी नक़दी लगा रही हैं। अमेज़न ने पिछली चार तिमाहियों में संपत्ति और उपकरणों पर {{aip.f_amzn_capexTtmUsdM:bn}} अरब डॉलर खर्च किए, जो उसके अनुसार “मुख्य रूप से आर्टिफ़िशियल इंटेलिजेंस में निवेश को दर्शाता है”, और इस अवधि में उसका फ़्री कैश फ़्लो नकारात्मक, −42.4 अरब डॉलर, रहा।[4] ओरेकल का पिछली चार तिमाहियों का फ़्री कैश फ़्लो −23.7 अरब डॉलर था।[8] अल्फ़ाबेट ने 2026 के पहले नौ महीनों में संपत्ति और उपकरणों पर 132.0 अरब डॉलर खर्च किए,[3] और मेटा को इस साल 135–145 अरब डॉलर खर्च करने की उम्मीद है।[5] कंपनियाँ मुनाफ़े से अपने ही शेयर भी वापस ख़रीदती हैं। पूरा मुनाफ़ा बाँट देने पर इन दोनों के लिए कुछ नहीं बचेगा।"
+          ],
+          [
+            "p",
+            "काग़ज़ी लाभ नक़द नहीं हैं। शुद्ध मुनाफ़े का करीब {{aip.paperShare:pct}}% दूसरी कंपनियों के शेयरों पर लगाया गया ऊँचा मूल्य है, जिसे उन्हें बेचे बिना बाँटा नहीं जा सकता।"
+          ],
+          [
+            "p",
+            "वित्त वर्ष अलग-अलग हैं। ऐपल का साल सितंबर में ख़त्म होता है, माइक्रोसॉफ़्ट का जून में, एनविडिया का जनवरी में; हर कंपनी की पिछली चार तिमाहियाँ लेने से साल आपस में नहीं मिलते, लेकिन अवधियों में फिर भी कुछ महीनों का अंतर है।"
+          ],
+          [
+            "p",
+            "विनिमय दरें बदलती हैं। येन की रकमें इस साइट के वर्ल्ड बैंक डेटा की 2025 की औसत दर पर हैं, एक डॉलर के करीब {{aip.yen:d1}} येन।[12] {{aip.yenMarketDate:dmy}} को बाज़ार दर करीब {{aip.yenMarket:d1}} येन थी, तो उस दर पर येन की रकमें करीब {{aip.yenMove:pct}}% ज़्यादा होतीं।"
+          ],
+          [
+            "p",
+            "क़ीमतें स्थिर नहीं रहेंगी। हर साल मुनाफ़े का बड़ा हिस्सा निकालने से कंपनियों का मूल्य घटेगा, और बाज़ार मूल्य वाले आँकड़े मानते हैं कि ऐसा नहीं होगा।"
+          ],
+          [
+            "p",
+            "इस साइट के वर्ल्ड बैंक डेटा की 2025 की औसत विनिमय दर पर, साल के {{aip.net100PP}} डॉलर करीब {{aip.net100PP@in:r100}} रुपये हैं, और महीने के {{aip.net100PM:d2}} डॉलर करीब {{aip.net100PM@in:r10}} रुपये।[12]"
+          ],
+          [
+            "h",
+            "आँकड़े क्या दिखाते हैं"
+          ],
+          [
+            "p",
+            "पूरा बाँटें तो नौ कंपनियों का एक साल का शुद्ध मुनाफ़ा प्रति व्यक्ति करीब {{aip.net100PP}} डॉलर बनता है, महीने के करीब {{aip.net100PM:d2}} डॉलर: सबको रोज़ 3 डॉलर के न्यूनतम स्तर का {{aip.net100Yard:pct}}%। काग़ज़ी लाभ के बिना यह {{aip.exPaperPP}} डॉलर के क़रीब है, और उसका 15% या 25% हिस्सा साल में {{aip.net15PP}} से {{aip.net25PP}} डॉलर बनता है। कंपनियों का बाज़ार मूल्य कहीं बड़ा है, प्रति व्यक्ति करीब {{aip.capOncePP:r10}} डॉलर, लेकिन उसे सिर्फ़ एक बार बाँटा जा सकता है।"
+          ],
+          [
+            "p",
+            "हर देश में बेसिक इनकम कितनी महँगी होगी, यह {विश्व मानचित्र|/essays/basic-income-world-map/} और {211 देशों की तुलना|/calc/countries/} में देखें। AI से इसका खर्च उठाने पर, {यूनिवर्सल हाई इनकम: पैसा कौन देगा?|/essays/universal-high-income/}, {क्या जनरेटिव AI ने हमारी नौकरियाँ छीन लीं?|/essays/generative-ai-jobs-basic-income/} और {क्या AI एजेंटों को बेसिक इनकम मिलनी चाहिए?|/essays/ai-agent-basic-income/} देखें।"
+          ],
+          [
+            "h",
+            "मान्यताएँ और सीमाएँ"
+          ],
+          [
+            "p",
+            "चार तिमाहियाँ। हर कंपनी के आँकड़े {{aip.retrieved:dmy}} तक घोषित उसकी चार सबसे नई तिमाहियों का जोड़ हैं, उसकी घोषणाओं और फ़ाइलिंग से; जो तिमाहियाँ कोई कंपनी अलग से नहीं बताती, वे पूरे साल में से बाक़ी तीन घटाकर निकाली गई हैं। हर तिमाही और उसका स्रोत हमारी डेटा फ़ाइल में दर्ज है।[10]"
+          ],
+          [
+            "p",
+            "जैसा बताया गया वैसा शुद्ध मुनाफ़ा। शुद्ध मुनाफ़ा GAAP या IFRS के तहत शेयरधारकों का टैक्स के बाद का शुद्ध मुनाफ़ा है। परिचालन मुनाफ़ा GAAP परिचालन आय है (TSMC के लिए, परिचालन से आय), इसलिए यह टैक्स से पहले है और पूरा नहीं बाँटा जा सकता। काग़ज़ी लाभ के आँकड़े में माइक्रोसॉफ़्ट और अमेज़न की पूरी अन्य आय वाली मदें शामिल हैं, इसलिए यह अनुमानित है, और उनके बिना मुनाफ़ा हमारा अनुमान है।"
+          ],
+          [
+            "p",
+            "बाज़ार मूल्य। {{aip.marketCapDate:dmy}} के बंद भाव, गुणा हर कंपनी की सबसे नई फ़ाइलिंग में बकाया शेयरों की संख्या; TSMC के लिए 2025 के अंत की शेयर संख्या और उस दिन की ताइवान डॉलर दर। अल्फ़ाबेट और मेटा के ग़ैर-सूचीबद्ध क्लास B शेयरों का मूल्य क्लास A के भाव पर लगाया गया है।[10]"
+          ],
+          [
+            "p",
+            "आबादी और क़ीमतें। दुनिया की आबादी वर्ल्ड बैंक का 2025 का आँकड़ा है।[11] जापान की आबादी साइट के डेटा में अक्टूबर 2026 का अनुमान है। रोज़ 3.00 डॉलर वर्ल्ड बैंक की 2021 PPP डॉलर वाली ग़रीबी रेखा है, जिसे तुलना की तरह स्थानीय क़ीमतों में बदला गया है; बाज़ार विनिमय दर पर जोड़ें तो खर्च साल में {{aip.yard:tn2}} ट्रिलियन डॉलर है।[12][13]"
+          ],
+          [
+            "p",
+            "यह कोई प्रस्ताव नहीं है। ये हिस्से पैमाने हैं, हमारी सुझाई नीतियाँ नहीं, और यहाँ यह नहीं कहा गया कि इन मुनाफ़ों पर टैक्स लगे या इन्हें बाँटा जाए। आँकड़े सिर्फ़ रकमों का आकार दिखाते हैं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "Nueve empresas en el centro del auge de la IA (NVIDIA, Microsoft, Alphabet, Amazon, Meta, Apple, Broadcom, Oracle y TSMC) obtuvieron en conjunto un beneficio neto de unos {{aip.net:tn2}} billones de dólares en sus cuatro últimos trimestres publicados.[1][10] El Banco Mundial sitúa la población mundial de 2025 en {{aip.pop:bn2}} mil millones de personas.[11] Repartido a partes iguales, son unos {{aip.net100PP}} dólares por persona al año, o {{aip.net100PM:d2}} dólares al mes."
+          ],
+          [
+            "p",
+            "La {comparación de 211 países|/calc/countries/} de este sitio usa como cantidad de referencia la línea de pobreza del Banco Mundial, 3,00 dólares al día, convertida a los precios de cada país.[13] Pagarla a todas las personas de esos 211 países y territorios durante un año costaría unos {{aip.yard:tn2}} billones de dólares a tipos de cambio de mercado.[12] Un año entero de beneficio neto de las nueve empresas cubriría alrededor del {{aip.net100Yard:pct}} % de esa cifra, o {{aip.net100Months:d1}} meses."
+          ],
+          [
+            "p",
+            "El beneficio operativo (el que deja el negocio en sí, antes de intereses, ganancias y pérdidas de inversiones e impuestos) da casi la misma respuesta: {{aip.op:tn2}} billones de dólares, o {{aip.op100PP}} dólares por persona al año ({{aip.op100PM:d2}} al mes)."
+          ],
+          [
+            "t",
+            "Qué se reparte | Total al año | Por persona al año | Por persona al mes | Parte de 3 dólares al día para todos\nTodo el beneficio neto | {{aip.net:tn2}} billones de dólares | {{aip.net100PP}} dólares | {{aip.net100PM:d2}} dólares | {{aip.net100Yard:pct}} %\nTodo el beneficio operativo | {{aip.op:tn2}} billones de dólares | {{aip.op100PP}} dólares | {{aip.op100PM:d2}} dólares | {{aip.op100Yard:pct}} %\nBeneficio neto sin ganancias sobre el papel (estimación aproximada nuestra) | {{aip.exPaper:bn}}.000 millones de dólares | {{aip.exPaperPP}} dólares | {{aip.exPaperPM:d2}} dólares | {{aip.exPaperYard:pct}} %"
+          ],
+          [
+            "h",
+            "Qué empresas, y por qué estas nueve"
+          ],
+          [
+            "p",
+            "No existe una lista oficial de «empresas de IA». Tomamos las empresas cotizadas cuyos beneficios proceden más directamente de aquello sobre lo que funciona la IA y a través de lo que se vende: las diseñadoras de chips NVIDIA y Broadcom, el fabricante de chips TSMC, los proveedores de nube Microsoft, Alphabet (Google), Amazon y Oracle, y las grandes plataformas Meta y Apple. Cada una ganó más de 10.000 millones de dólares netos en sus cuatro últimos trimestres."
+          ],
+          [
+            "p",
+            "Ninguna es un negocio puramente de IA. NVIDIA es la que más se acerca: en el trimestre cerrado el {{aip.f_nvda_periodEnd:dmy}}, su negocio de centros de datos aportó {{aip.f_nvda_dataCenterRevenueUsdBn:bn1}} mil millones de dólares de sus {{aip.f_nvda_revenueUsdBn:bn1}} mil millones de ingresos.[1] Los chips de IA de Broadcom fueron 16.700 millones de sus 29.600 millones en el trimestre cerrado el 2 de agosto de 2026.[7] En las demás, la IA convive con la publicidad en buscadores y vídeo (Alphabet), las compras en línea (Amazon), Office y Windows (Microsoft), la publicidad en redes sociales (Meta) y las bases de datos (Oracle). Apple no declara ningún ingreso por IA; su beneficio procede de forma abrumadora del iPhone, los servicios y otro hardware, y la parte que corresponde a la IA es pequeña y desconocida.[6]"
+          ],
+          [
+            "p",
+            "Otros dos grupos quedan fuera de los totales y se muestran solo como comprobación. Tesla ganó apenas {{aip.tesla:bn1}} mil millones de dólares netos en sus cuatro últimos trimestres, sobre todo con coches y energía; sumarla elevaría la cifra por persona en solo {{aip.teslaPP:d2}} dólares al año.[25] Los fabricantes coreanos de memoria SK hynix y Samsung Electronics, que suministran la memoria de alto ancho de banda que se usa con los chips de IA, añadirían unos {{aip.korea:bn}}.000 millones de dólares al tipo de cambio de 2025 del sitio, con lo que la cifra llegaría a {{aip.withKoreaPP}} dólares.[26][27] Los dejamos fuera porque parte de sus cifras procede de informaciones secundarias y no de los comunicados de las propias empresas, ambas están infladas por partidas no operativas puntuales, y Samsung también vende teléfonos, televisores y pantallas."
+          ],
+          [
+            "h",
+            "Nueve empresas, cuatro trimestres"
+          ],
+          [
+            "p",
+            "Las cifras de cada empresa son la suma de sus cuatro últimos trimestres publicados, así que los periodos no coinciden del todo: la mayoría terminan en septiembre de 2026, los de Broadcom y Oracle en agosto, y el de NVIDIA en {{aip.thru_nvda:my}}. Cuando una empresa solo publica el año completo, su cuarto trimestre es el año menos los otros tres. TSMC presenta sus resultados en nuevos dólares taiwaneses; convertimos cada trimestre al tipo implícito en los ingresos en dólares estadounidenses que declara. Los valores de mercado son al cierre del {{aip.marketCapDate:dmy}}.[10]"
+          ],
+          [
+            "t",
+            "Empresa | Cuatro trimestres hasta | Beneficio neto (miles de millones de US$) | Beneficio operativo (miles de millones de US$) | Valor de mercado (miles de millones de US$)\nNVIDIA[1] | {{aip.thru_nvda:mys}} | {{aip.net_nvda:bn}} | {{aip.op_nvda:bn}} | {{aip.cap_nvda:bn}}\nMicrosoft[2] | {{aip.thru_msft:mys}} | {{aip.net_msft:bn}} | {{aip.op_msft:bn}} | {{aip.cap_msft:bn}}\nAlphabet[3] | {{aip.thru_googl:mys}} | {{aip.net_googl:bn}} | {{aip.op_googl:bn}} | {{aip.cap_googl:bn}}\nAmazon[4] | {{aip.thru_amzn:mys}} | {{aip.net_amzn:bn}} | {{aip.op_amzn:bn}} | {{aip.cap_amzn:bn}}\nMeta[5] | {{aip.thru_meta:mys}} | {{aip.net_meta:bn}} | {{aip.op_meta:bn}} | {{aip.cap_meta:bn}}\nApple[6] | {{aip.thru_aapl:mys}} | {{aip.net_aapl:bn}} | {{aip.op_aapl:bn}} | {{aip.cap_aapl:bn}}\nBroadcom[7] | {{aip.thru_avgo:mys}} | {{aip.net_avgo:bn}} | {{aip.op_avgo:bn}} | {{aip.cap_avgo:bn}}\nOracle[8] | {{aip.thru_orcl:mys}} | {{aip.net_orcl:bn}} | {{aip.op_orcl:bn}} | {{aip.cap_orcl:bn}}\nTSMC[9] | {{aip.thru_tsmc:mys}} | {{aip.net_tsmc:bn}} | {{aip.op_tsmc:bn}} | {{aip.cap_tsmc:bn}}\nTotal | – | {{aip.net:bn}} | {{aip.op:bn}} | {{aip.cap:bn}}"
+          ],
+          [
+            "p",
+            "En Alphabet y Amazon, el beneficio neto está muy por encima del operativo. La razón está en el apartado siguiente."
+          ],
+          [
+            "h",
+            "Parte del beneficio es la revalorización de otras empresas de IA"
+          ],
+          [
+            "p",
+            "El beneficio neto incluye las ganancias en acciones que una empresa tiene en otras empresas, aunque no las haya vendido. Cuando una empresa privada, como un laboratorio de IA, capta dinero a una valoración más alta, el inversor que tiene sus acciones puede contabilizar la subida como beneficio. En los cuatro trimestres, las partidas de este tipo sumaron unos {{aip.paper:bn}}.000 millones de dólares antes de impuestos, alrededor del {{aip.paperShare:pct}} % del beneficio neto de las nueve empresas."
+          ],
+          [
+            "p",
+            "Alphabet: {{aip.paper_googl:bn}}.000 millones de dólares de ganancias netas en títulos de renta variable. Su informe trimestral dice que las ganancias de este año estaban «relacionadas principalmente con ganancias netas no realizadas en nuestros títulos de renta variable no negociables, en gran parte de una empresa privada, y de SpaceX antes de su salida a bolsa». No nombra a la empresa privada.[14]"
+          ],
+          [
+            "p",
+            "Amazon: {{aip.paper_amzn:bn}}.000 millones de dólares de otros ingresos. Su informe trimestral dice que las ganancias de los nueve primeros meses de 2026 procedían «principalmente de ajustes al alza por cambios observables de precio relativos a nuestras acciones preferentes sin derecho a voto de Anthropic».[15]"
+          ],
+          [
+            "p",
+            "NVIDIA: {{aip.paper_nvda:bn1}} mil millones de dólares de ganancias en títulos de renta variable.[16] Microsoft: {{aip.paper_msft:bn1}} mil millones de dólares de otros ingresos, una partida que incluye conceptos relacionados con su inversión en OpenAI; contamos la partida entera, no solo las ganancias de inversión, así que esta parte es aproximada.[2] Oracle: {{aip.paper_orcl:bn1}} mil millones de dólares de ganancias en inversiones.[8]"
+          ],
+          [
+            "p",
+            "Estas ganancias no son dinero en efectivo. Son un precio más alto puesto a acciones que la empresa sigue teniendo, y pueden darse la vuelta: en el tercer trimestre de 2026, Alphabet registró una pérdida de 8.700 millones de dólares en sus títulos de renta variable, «en gran parte por SpaceX».[14] Si se quitan, después de impuestos al tipo efectivo medio de las nueve empresas en el periodo ({{aip.effTax:pct}} %), queda un beneficio neto de unos {{aip.exPaper:bn}}.000 millones de dólares. Es una estimación aproximada nuestra, no una cifra que publique ninguna empresa. Repartido, serían unos {{aip.exPaperPP}} dólares por persona al año."
+          ],
+          [
+            "h",
+            "Si se repartiera una parte cada año"
+          ],
+          [
+            "p",
+            "Mostramos tres porcentajes del beneficio. El 15 % es el tipo mínimo global del impuesto de sociedades acordado en la OCDE y el G20,[24] pero aquí no es un tipo impositivo: estos beneficios ya han pagado impuestos, así que el 15 % significa repartir el 15 % de lo que queda después de impuestos. El 25 % es una cifra redonda intermedia, y el 100 % es todo."
+          ],
+          [
+            "t",
+            "Reparto anual | Total al año | Por persona al año | Por persona al mes | Parte de 3 dólares al día para todos\n15 % del beneficio neto | {{aip.net15Tot:bn}}.000 millones de dólares | {{aip.net15PP}} dólares | {{aip.net15PM:d2}} dólares | {{aip.net15Yard:pct}} %\n25 % del beneficio neto | {{aip.net25Tot:bn}}.000 millones de dólares | {{aip.net25PP}} dólares | {{aip.net25PM:d2}} dólares | {{aip.net25Yard:pct}} %\n100 % del beneficio neto | {{aip.net100Tot:tn2}} billones de dólares | {{aip.net100PP}} dólares | {{aip.net100PM:d2}} dólares | {{aip.net100Yard:pct}} %\n15 % del beneficio operativo | {{aip.op15Tot:bn}}.000 millones de dólares | {{aip.op15PP}} dólares | {{aip.op15PM:d2}} dólares | {{aip.op15Yard:pct}} %\n25 % del beneficio operativo | {{aip.op25Tot:bn}}.000 millones de dólares | {{aip.op25PP}} dólares | {{aip.op25PM:d2}} dólares | {{aip.op25Yard:pct}} %\n100 % del beneficio operativo | {{aip.op100Tot:tn2}} billones de dólares | {{aip.op100PP}} dólares | {{aip.op100PM:d2}} dólares | {{aip.op100Yard:pct}} %"
+          ],
+          [
+            "p",
+            "El beneficio es un flujo. El valor de mercado es un stock, como la riqueza de los milmillonarios en {nuestro ensayo anterior|/essays/billionaire-wealth-per-person/}. Repartidos una sola vez, los {{aip.cap:tn1}} billones de dólares de las nueve empresas darían unos {{aip.capOncePP:r10}} dólares por persona, suficiente para unos {{aip.capOnceMonths}} meses de 3 dólares al día para todos. Pero solo podría hacerse una vez, y vender tantas acciones haría bajar su precio."
+          ],
+          [
+            "p",
+            "Si en cambio se pagara cada año una parte del valor de mercado: el 2,5 % es el porcentaje anual que Sam Altman propuso en su ensayo de 2021 «Moore’s Law for Everything» (La ley de Moore para todo), para un fondo que se pagaría en acciones de las empresas.[17] El 5 % es la parte de sus activos que las fundaciones privadas de Estados Unidos deben repartir cada año, la misma referencia que en el ensayo sobre los milmillonarios.[28]"
+          ],
+          [
+            "t",
+            "Pago anual | Total al año | Por persona al año | Por persona al mes | Parte de 3 dólares al día para todos\n2,5 % del valor de mercado | {{aip.cap25Tot:bn}}.000 millones de dólares | {{aip.cap25PP}} dólares | {{aip.cap25PM:d2}} dólares | {{aip.cap25Yard:pct}} %\n5 % del valor de mercado | {{aip.cap5Tot:tn2}} billones de dólares | {{aip.cap5PP}} dólares | {{aip.cap5PM:d2}} dólares | {{aip.cap5Yard:pct}} %"
+          ],
+          [
+            "p",
+            "Ninguna de estas cifras anuales llega a un suelo de 3 dólares al día para todos. La mayor, todo el beneficio neto, cubriría alrededor del {{aip.net100Yard:pct}} %, y el 5 % anual del valor de mercado, alrededor del {{aip.cap5Yard:pct}} %."
+          ],
+          [
+            "p",
+            "Una curiosidad, no una opción: si el beneficio neto de las nueve empresas fuera solo para los {{aip.jpPop:m1}} millones de habitantes de Japón, cada uno recibiría unos {{aip.jpOnly@jp:m2}} millones de yenes al año al tipo de cambio de 2025 que usa este sitio.[12] El dinero procede de clientes de todo el mundo, así que esto solo da una idea de la escala."
+          ],
+          [
+            "h",
+            "Los propios laboratorios de IA pierden dinero"
+          ],
+          [
+            "p",
+            "Las empresas que crean los modelos de IA más conocidos no están entre las nueve, porque no tienen beneficios. Anthropic, que ha solicitado salir a bolsa, declaró unos ingresos de 33.200 millones de dólares en los nueve primeros meses de 2026, frente a 4.600 millones en todo 2025, y una pérdida operativa de 1.300 millones en esos nueve meses (8.100 millones en 2025). Su pérdida neta fue mucho mayor, 104.000 millones de dólares en los nueve meses, sobre todo por cambios no monetarios en el valor de pagarés convertibles, derivados y SAFE (94.300 millones). Estas cifras proceden de su folleto de registro modificado del 10 de noviembre de 2026.[18]"
+          ],
+          [
+            "p",
+            "OpenAI es privada y no publica cuentas. Informaciones de prensa sobre sus documentos para inversores, que no hemos podido comprobar, sitúan sus ingresos en unos 10.000 millones de dólares en el tercer trimestre de 2026 y su pérdida operativa en unos 10.900 millones (Bloomberg, The Wall Street Journal y The Information, según Gulf News y PYMNTS).[19] Para el primer trimestre, The Information informó de un consumo de caja de 3.700 millones de dólares (vía The Next Web).[20] xAI, creadora de Grok, forma parte ahora de SpaceX, que cotiza desde junio de 2026; el segmento de IA, que incluye también X y Cursor, tuvo una pérdida operativa de 3.300 millones de dólares en los nueve primeros meses de 2026.[21]"
+          ],
+          [
+            "p",
+            "Por ahora, los beneficios del auge de la IA están sobre todo en las empresas que venden los chips, la computación en la nube y las grandes plataformas, no en los laboratorios. Anthropic ha dicho que pondrá el 5 % de sus acciones en un fondo de beneficio público; lo analizamos en {otro ensayo|/essays/public-benefit-fund/}.[22]"
+          ],
+          [
+            "h",
+            "Propuestas que vienen con un porcentaje"
+          ],
+          [
+            "p",
+            "Sam Altman (2021): cada año, el 2,5 % del valor de mercado de las grandes empresas, pagado en acciones, y el 2,5 % del valor del suelo de propiedad privada, a un American Equity Fund (fondo estadounidense de acciones). Escribió que «dentro de una década, cada uno de los 250 millones de adultos de Estados Unidos recibiría unos 13.500 dólares al año».[17]"
+          ],
+          [
+            "p",
+            "Anthropic (octubre de 2026): el 5 % de sus acciones a un fondo de beneficio público, sujeto a la aprobación de los accionistas, y el consejo podrá añadir un 2 % por cada subida del 50 % del valor por encima de una base. Sus usos pueden incluir «repartos directos a poblaciones concretas».[22]"
+          ],
+          [
+            "p",
+            "H.R. 10044 (Cámara de Representantes de Estados Unidos, septiembre de 2026; Sara Jacobs, Greg Casar y Valerie Foushee): según Fortune, un impuesto especial a las grandes empresas de IA equivalente a la cifra mayor entre el 2 % del valor de los tokens de IA y el 3 % de los ingresos por servicios de IA mientras el desempleo sea del 5 % o menos, y que sube con el desempleo; el dinero iría a crear empleo y no a pagos en efectivo. No hemos leído el texto del proyecto de ley.[23]"
+          ],
+          [
+            "p",
+            "El impuesto mínimo global de la OCDE y el G20: un tipo efectivo mínimo del 15 % para los grupos con ingresos de más de 750 millones de euros, aplicado desde 2024. Es un suelo para el impuesto de sociedades, no un impuesto sobre la IA.[24]"
+          ],
+          [
+            "p",
+            "El ministro alemán de Asuntos Digitales, Karsten Wildberger, ha dicho que habría que gravar la enorme facturación de la IA, pero no ha dado ningún porcentaje; ver {nuestro ensayo sobre Alemania|/essays/germany-merz-basic-income-cost/}."
+          ],
+          [
+            "h",
+            "Por qué no podría repartirse sin más"
+          ],
+          [
+            "p",
+            "No todo es IA. El beneficio de Apple procede casi por completo de dispositivos y servicios, el de Amazon incluye las compras en línea, el de Microsoft incluye Office y Windows, y los de Alphabet y Meta salen en gran parte de la publicidad. Ninguna empresa declara qué parte de su beneficio procede de la IA."
+          ],
+          [
+            "p",
+            "Buena parte ya se está gastando. Las empresas están invirtiendo enormes sumas en centros de datos. Amazon gastó {{aip.f_amzn_capexTtmUsdM:bn}}.000 millones de dólares en inmuebles y equipos en sus cuatro últimos trimestres, lo que, según dice, «refleja principalmente inversiones en inteligencia artificial», y su flujo de caja libre en el periodo fue negativo, de −42.400 millones de dólares.[4] El flujo de caja libre de Oracle en sus cuatro últimos trimestres fue de −23.700 millones.[8] Alphabet gastó 132.000 millones de dólares en inmuebles y equipos en los nueve primeros meses de 2026,[3] y Meta prevé gastar entre 135.000 y 145.000 millones este año.[5] Las empresas también usan beneficios para recomprar sus propias acciones. Repartirlo todo no dejaría nada para ninguna de las dos cosas."
+          ],
+          [
+            "p",
+            "Las ganancias sobre el papel no son efectivo. Alrededor del {{aip.paperShare:pct}} % del beneficio neto es un valor más alto puesto a acciones de otras empresas, que no puede pagarse sin venderlas."
+          ],
+          [
+            "p",
+            "Los ejercicios fiscales no coinciden. El de Apple termina en septiembre, el de Microsoft en junio y el de NVIDIA en enero; tomar los cuatro últimos trimestres de cada empresa evita mezclar años, pero los periodos siguen difiriendo en unos meses."
+          ],
+          [
+            "p",
+            "Los tipos de cambio se mueven. Las cifras en yenes usan el tipo medio de 2025 de los datos del Banco Mundial que usa este sitio, unos {{aip.yen:d1}} yenes por dólar.[12] El {{aip.yenMarketDate:dmy}}, el tipo de mercado era de unos {{aip.yenMarket:d1}} yenes, así que a ese tipo las cifras en yenes serían alrededor de un {{aip.yenMove:pct}} % más altas."
+          ],
+          [
+            "p",
+            "Los precios no se quedarían quietos. Llevarse cada año una gran parte del beneficio reduciría lo que valen las empresas, y las cifras de valor de mercado suponen que no."
+          ],
+          [
+            "p",
+            "A los tipos de cambio medios de 2025 de los datos del Banco Mundial que usa este sitio, {{aip.net100PP}} dólares al año son unos {{aip.net100PP@de}} euros o unos {{aip.net100PP@mx:r10}} pesos mexicanos; al mes, unos {{aip.net100PM@de:d2}} euros o unos {{aip.net100PM@mx:int}} pesos mexicanos.[12]"
+          ],
+          [
+            "h",
+            "Lo que muestran los números"
+          ],
+          [
+            "p",
+            "Repartido entero, un año de beneficio neto de las nueve empresas equivale a unos {{aip.net100PP}} dólares por persona, unos {{aip.net100PM:d2}} dólares al mes: el {{aip.net100Yard:pct}} % de un suelo de 3 dólares al día para todos. Sin las ganancias sobre el papel se queda cerca de {{aip.exPaperPP}} dólares, y un 15 % o un 25 % del beneficio da de {{aip.net15PP}} a {{aip.net25PP}} dólares al año. El valor de mercado de las empresas es mucho mayor, unos {{aip.capOncePP:r10}} dólares por persona, pero solo podría repartirse una vez."
+          ],
+          [
+            "p",
+            "Para saber cuánto costaría una renta básica en cada país, ver {el mapa mundial|/essays/basic-income-world-map/} y {la comparación de 211 países|/calc/countries/}. Sobre pagarla con la IA, ver {la renta alta universal: ¿quién paga?|/essays/universal-high-income/}, {¿nos ha quitado el trabajo la IA generativa?|/essays/generative-ai-jobs-basic-income/} y {¿deberían los agentes de IA tener una renta básica?|/essays/ai-agent-basic-income/}."
+          ],
+          [
+            "h",
+            "Supuestos y límites"
+          ],
+          [
+            "p",
+            "Cuatro trimestres. Las cifras de cada empresa son la suma de sus cuatro últimos trimestres publicados hasta el {{aip.retrieved:dmy}}, a partir de sus comunicados y documentos registrados; los trimestres que una empresa no publica por separado son su año completo menos los otros tres. Cada trimestre y su fuente figuran en nuestro archivo de datos.[10]"
+          ],
+          [
+            "p",
+            "Beneficio neto tal como se declara. El beneficio neto es el resultado neto atribuible a los accionistas según GAAP o NIIF, después de impuestos. El beneficio operativo es el resultado operativo según GAAP (en TSMC, el resultado de explotación), así que es antes de impuestos y no podría repartirse entero. La cifra de ganancias sobre el papel incluye las partidas enteras de otros ingresos de Microsoft y Amazon, así que es aproximada, y el beneficio sin ellas es una estimación nuestra."
+          ],
+          [
+            "p",
+            "Valores de mercado. Precios de cierre del {{aip.marketCapDate:dmy}} multiplicados por las acciones en circulación del último documento registrado de cada empresa; en TSMC, su número de acciones a finales de 2025 y el tipo del dólar taiwanés de ese día. Las acciones de clase B no cotizadas de Alphabet y Meta se valoran al precio de la clase A.[10]"
+          ],
+          [
+            "p",
+            "Población y precios. La población mundial es la cifra del Banco Mundial de 2025.[11] La de Japón es la estimación de octubre de 2026 de los datos del sitio. Los 3,00 dólares al día son la línea de pobreza del Banco Mundial en dólares PPA de 2021, convertida a precios locales como en la comparación; sumado a tipos de cambio de mercado cuesta {{aip.yard:tn2}} billones de dólares al año.[12][13]"
+          ],
+          [
+            "p",
+            "No es una propuesta. Los porcentajes son referencias, no políticas que propongamos, y aquí no se dice si estos beneficios deben gravarse o repartirse. Los números solo muestran el tamaño de las cantidades."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Neun Unternehmen im Zentrum des KI-Booms (NVIDIA, Microsoft, Alphabet, Amazon, Meta, Apple, Broadcom, Oracle und TSMC) haben in ihren vier zuletzt gemeldeten Quartalen zusammen rund {{aip.net:tn2}} Billionen Dollar Nettogewinn gemacht.[1][10] Die Weltbank beziffert die Weltbevölkerung 2025 auf {{aip.pop:bn2}} Milliarden.[11] Gleichmäßig verteilt sind das rund {{aip.net100PP}} Dollar pro Kopf und Jahr oder {{aip.net100PM:d2}} Dollar im Monat."
+          ],
+          [
+            "p",
+            "Der {Vergleich von 211 Ländern|/calc/countries/} auf dieser Seite nimmt als Standardbetrag die Armutsgrenze der Weltbank von 3,00 Dollar am Tag, umgerechnet in die Preise jedes Landes.[13] Sie ein Jahr lang allen Menschen in diesen 211 Ländern und Gebieten zu zahlen, kostet zu Marktwechselkursen rund {{aip.yard:tn2}} Billionen Dollar.[12] Ein ganzes Jahr Nettogewinn der neun Unternehmen deckte davon etwa {{aip.net100Yard:pct}} %, also {{aip.net100Months:d1}} Monate."
+          ],
+          [
+            "p",
+            "Der operative Gewinn (der Gewinn aus dem eigentlichen Geschäft, vor Zinsen, Gewinnen und Verlusten aus Beteiligungen und Steuern) führt fast zum selben Ergebnis: {{aip.op:tn2}} Billionen Dollar oder {{aip.op100PP}} Dollar pro Kopf und Jahr ({{aip.op100PM:d2}} Dollar im Monat)."
+          ],
+          [
+            "t",
+            "Was verteilt wird | Summe pro Jahr | Pro Kopf und Jahr | Pro Kopf und Monat | Anteil an 3 Dollar am Tag für alle\nDer ganze Nettogewinn | {{aip.net:tn2}} Bio. Dollar | {{aip.net100PP}} Dollar | {{aip.net100PM:d2}} Dollar | {{aip.net100Yard:pct}} %\nDer ganze operative Gewinn | {{aip.op:tn2}} Bio. Dollar | {{aip.op100PP}} Dollar | {{aip.op100PM:d2}} Dollar | {{aip.op100Yard:pct}} %\nNettogewinn ohne Buchgewinne (unsere grobe Schätzung) | {{aip.exPaper:bn}} Mrd. Dollar | {{aip.exPaperPP}} Dollar | {{aip.exPaperPM:d2}} Dollar | {{aip.exPaperYard:pct}} %"
+          ],
+          [
+            "h",
+            "Welche Unternehmen, und warum diese neun"
+          ],
+          [
+            "p",
+            "Eine amtliche Liste der „KI-Unternehmen“ gibt es nicht. Wir haben die börsennotierten Unternehmen genommen, deren Gewinne am direktesten aus dem stammen, worauf KI läuft und worüber sie verkauft wird: die Chipentwickler NVIDIA und Broadcom, den Chiphersteller TSMC, die Cloud-Anbieter Microsoft, Alphabet (Google), Amazon und Oracle sowie die großen Plattformen Meta und Apple. Jedes hat in seinen letzten vier Quartalen mehr als 10 Milliarden Dollar Nettogewinn gemacht."
+          ],
+          [
+            "p",
+            "Keines davon ist ein reines KI-Geschäft. Am nächsten kommt NVIDIA: Im Quartal bis zum {{aip.f_nvda_periodEnd:dmy}} brachte sein Rechenzentrumsgeschäft {{aip.f_nvda_dataCenterRevenueUsdBn:bn1}} Milliarden Dollar seines Umsatzes von {{aip.f_nvda_revenueUsdBn:bn1}} Milliarden ein.[1] Bei Broadcom machten KI-Chips im Quartal bis zum 2. August 2026 16,7 Milliarden Dollar von 29,6 Milliarden aus.[7] Bei den anderen steht KI neben Such- und Videowerbung (Alphabet), Onlinehandel (Amazon), Office und Windows (Microsoft), Werbung in sozialen Medien (Meta) und Datenbanken (Oracle). Apple weist überhaupt keinen KI-Umsatz aus; sein Gewinn stammt ganz überwiegend vom iPhone, von Diensten und anderer Hardware, und der KI-Anteil daran ist klein und unbekannt.[6]"
+          ],
+          [
+            "p",
+            "Zwei weitere Gruppen bleiben außerhalb der Summen und dienen nur zur Kontrolle. Tesla machte in seinen letzten vier Quartalen nur {{aip.tesla:bn1}} Milliarden Dollar Nettogewinn, vor allem mit Autos und Energie; mit Tesla stiege der Betrag pro Kopf nur um {{aip.teslaPP:d2}} Dollar im Jahr.[25] Die koreanischen Speicherhersteller SK hynix und Samsung Electronics, die den mit KI-Chips verwendeten Speicher mit hoher Bandbreite liefern, kämen zum Wechselkurs der Seite für 2025 auf rund {{aip.korea:bn}} Milliarden Dollar dazu, womit der Betrag {{aip.withKoreaPP}} Dollar erreichte.[26][27] Wir lassen sie weg, weil ein Teil ihrer Zahlen aus Sekundärberichten statt aus den Mitteilungen der Unternehmen selbst stammt, beide durch einmalige nicht-operative Posten aufgebläht sind und Samsung auch Telefone, Fernseher und Displays verkauft."
+          ],
+          [
+            "h",
+            "Neun Unternehmen, vier Quartale"
+          ],
+          [
+            "p",
+            "Die Zahlen jedes Unternehmens sind die Summe seiner vier zuletzt gemeldeten Quartale, die Zeiträume decken sich also nicht genau: Die meisten enden im September 2026, die von Broadcom und Oracle im August und die von NVIDIA im {{aip.thru_nvda:my}}. Meldet ein Unternehmen nur ein ganzes Jahr, ist sein viertes Quartal das Jahr minus die anderen drei. TSMC berichtet in Neuen Taiwan-Dollar; wir rechnen jedes Quartal zu dem Kurs um, der sich aus dem gemeldeten Umsatz in US-Dollar ergibt. Die Marktwerte gelten zum Schlusskurs vom {{aip.marketCapDate:dmy}}.[10]"
+          ],
+          [
+            "t",
+            "Unternehmen | Vier Quartale bis | Nettogewinn (Mrd. US$) | Operativer Gewinn (Mrd. US$) | Marktwert (Mrd. US$)\nNVIDIA[1] | {{aip.thru_nvda:mys}} | {{aip.net_nvda:bn}} | {{aip.op_nvda:bn}} | {{aip.cap_nvda:bn}}\nMicrosoft[2] | {{aip.thru_msft:mys}} | {{aip.net_msft:bn}} | {{aip.op_msft:bn}} | {{aip.cap_msft:bn}}\nAlphabet[3] | {{aip.thru_googl:mys}} | {{aip.net_googl:bn}} | {{aip.op_googl:bn}} | {{aip.cap_googl:bn}}\nAmazon[4] | {{aip.thru_amzn:mys}} | {{aip.net_amzn:bn}} | {{aip.op_amzn:bn}} | {{aip.cap_amzn:bn}}\nMeta[5] | {{aip.thru_meta:mys}} | {{aip.net_meta:bn}} | {{aip.op_meta:bn}} | {{aip.cap_meta:bn}}\nApple[6] | {{aip.thru_aapl:mys}} | {{aip.net_aapl:bn}} | {{aip.op_aapl:bn}} | {{aip.cap_aapl:bn}}\nBroadcom[7] | {{aip.thru_avgo:mys}} | {{aip.net_avgo:bn}} | {{aip.op_avgo:bn}} | {{aip.cap_avgo:bn}}\nOracle[8] | {{aip.thru_orcl:mys}} | {{aip.net_orcl:bn}} | {{aip.op_orcl:bn}} | {{aip.cap_orcl:bn}}\nTSMC[9] | {{aip.thru_tsmc:mys}} | {{aip.net_tsmc:bn}} | {{aip.op_tsmc:bn}} | {{aip.cap_tsmc:bn}}\nSumme | – | {{aip.net:bn}} | {{aip.op:bn}} | {{aip.cap:bn}}"
+          ],
+          [
+            "p",
+            "Bei Alphabet und Amazon liegt der Nettogewinn weit über dem operativen Gewinn. Der Grund steht im nächsten Abschnitt."
+          ],
+          [
+            "h",
+            "Ein Teil des Gewinns ist der Wertzuwachs anderer KI-Unternehmen"
+          ],
+          [
+            "p",
+            "Der Nettogewinn enthält Gewinne auf Anteile, die ein Unternehmen an anderen Unternehmen hält, auch auf Anteile, die es nicht verkauft hat. Sammelt ein privates Unternehmen wie ein KI-Labor Geld zu einer höheren Bewertung ein, kann ein Investor, der Anteile daran hält, den Anstieg als Gewinn verbuchen. In den vier Quartalen kamen solche Posten vor Steuern auf rund {{aip.paper:bn}} Milliarden Dollar, etwa {{aip.paperShare:pct}} % des Nettogewinns der neun Unternehmen."
+          ],
+          [
+            "p",
+            "Alphabet: {{aip.paper_googl:bn}} Milliarden Dollar Nettogewinne aus Beteiligungspapieren. Laut Quartalsbericht stammten die Gewinne dieses Jahres „vor allem aus nicht realisierten Nettogewinnen auf unsere nicht börsengehandelten Beteiligungspapiere, größtenteils aus einem privaten Unternehmen, und aus SpaceX vor dessen Börsengang“. Das private Unternehmen wird nicht genannt.[14]"
+          ],
+          [
+            "p",
+            "Amazon: {{aip.paper_amzn:bn}} Milliarden Dollar sonstige Erträge. Laut Quartalsbericht stammten die Gewinne der ersten neun Monate 2026 „vor allem aus Aufwertungen aufgrund beobachtbarer Preisänderungen bei unseren stimmrechtslosen Vorzugsaktien von Anthropic“.[15]"
+          ],
+          [
+            "p",
+            "NVIDIA: {{aip.paper_nvda:bn1}} Milliarden Dollar Gewinne aus Beteiligungspapieren.[16] Microsoft: {{aip.paper_msft:bn1}} Milliarden Dollar sonstige Erträge, ein Posten, der auch Positionen im Zusammenhang mit der Beteiligung an OpenAI enthält; wir zählen den ganzen Posten, nicht nur Beteiligungsgewinne, dieser Teil ist also ungefähr.[2] Oracle: {{aip.paper_orcl:bn1}} Milliarden Dollar Gewinne aus Beteiligungen.[8]"
+          ],
+          [
+            "p",
+            "Solche Gewinne sind kein Bargeld. Sie sind ein höherer Preis für Anteile, die das Unternehmen weiter hält, und sie können sich umkehren: Im dritten Quartal 2026 verbuchte Alphabet auf seine Beteiligungspapiere einen Verlust von 8,7 Milliarden Dollar, „größtenteils aus SpaceX“.[14] Nimmt man sie heraus, nach Steuern zum durchschnittlichen effektiven Steuersatz der neun Unternehmen im Zeitraum ({{aip.effTax:pct}} %), bleibt ein Nettogewinn von rund {{aip.exPaper:bn}} Milliarden Dollar. Das ist unsere grobe Schätzung, keine Zahl, die ein Unternehmen meldet. Verteilt wären das rund {{aip.exPaperPP}} Dollar pro Kopf und Jahr."
+          ],
+          [
+            "h",
+            "Wenn jedes Jahr ein Teil davon ausgezahlt würde"
+          ],
+          [
+            "p",
+            "Wir zeigen drei Anteile am Gewinn. 15 % ist der über OECD und G20 vereinbarte globale Mindeststeuersatz für Unternehmen,[24] hier aber kein Steuersatz: Diese Gewinne sind schon versteuert, 15 % heißt also, 15 % dessen auszuzahlen, was nach Steuern übrig bleibt. 25 % ist ein runder Wert dazwischen, 100 % ist alles."
+          ],
+          [
+            "t",
+            "Jährlich ausgezahlt | Summe pro Jahr | Pro Kopf und Jahr | Pro Kopf und Monat | Anteil an 3 Dollar am Tag für alle\n15 % des Nettogewinns | {{aip.net15Tot:bn}} Mrd. Dollar | {{aip.net15PP}} Dollar | {{aip.net15PM:d2}} Dollar | {{aip.net15Yard:pct}} %\n25 % des Nettogewinns | {{aip.net25Tot:bn}} Mrd. Dollar | {{aip.net25PP}} Dollar | {{aip.net25PM:d2}} Dollar | {{aip.net25Yard:pct}} %\n100 % des Nettogewinns | {{aip.net100Tot:bn}} Mrd. Dollar | {{aip.net100PP}} Dollar | {{aip.net100PM:d2}} Dollar | {{aip.net100Yard:pct}} %\n15 % des operativen Gewinns | {{aip.op15Tot:bn}} Mrd. Dollar | {{aip.op15PP}} Dollar | {{aip.op15PM:d2}} Dollar | {{aip.op15Yard:pct}} %\n25 % des operativen Gewinns | {{aip.op25Tot:bn}} Mrd. Dollar | {{aip.op25PP}} Dollar | {{aip.op25PM:d2}} Dollar | {{aip.op25Yard:pct}} %\n100 % des operativen Gewinns | {{aip.op100Tot:bn}} Mrd. Dollar | {{aip.op100PP}} Dollar | {{aip.op100PM:d2}} Dollar | {{aip.op100Yard:pct}} %"
+          ],
+          [
+            "p",
+            "Gewinn ist ein Strom. Marktwert ist ein Bestand, wie das Vermögen der Milliardäre in {unserem früheren Essay|/essays/billionaire-wealth-per-person/}. Einmal verteilt, ergäben die {{aip.cap:tn1}} Billionen Dollar der neun Unternehmen rund {{aip.capOncePP:r10}} Dollar pro Kopf, genug für etwa {{aip.capOnceMonths}} Monate mit 3 Dollar am Tag für alle. Das ginge aber nur einmal, und der Verkauf so vieler Aktien drückte ihren Kurs."
+          ],
+          [
+            "p",
+            "Stattdessen jedes Jahr ein Anteil am Marktwert: 2,5 % ist der jährliche Satz, den Sam Altman 2021 in seinem Essay „Moore’s Law for Everything“ (Das Mooresche Gesetz für alles) für einen in Unternehmensaktien gezahlten Fonds vorgeschlagen hat.[17] 5 % ist der Anteil ihres Vermögens, den private Stiftungen in den USA jedes Jahr ausschütten müssen, derselbe Maßstab wie im Essay über die Milliardäre.[28]"
+          ],
+          [
+            "t",
+            "Jährlich ausgezahlt | Summe pro Jahr | Pro Kopf und Jahr | Pro Kopf und Monat | Anteil an 3 Dollar am Tag für alle\n2,5 % des Marktwerts | {{aip.cap25Tot:bn}} Mrd. Dollar | {{aip.cap25PP}} Dollar | {{aip.cap25PM:d2}} Dollar | {{aip.cap25Yard:pct}} %\n5 % des Marktwerts | {{aip.cap5Tot:bn}} Mrd. Dollar | {{aip.cap5PP}} Dollar | {{aip.cap5PM:d2}} Dollar | {{aip.cap5Yard:pct}} %"
+          ],
+          [
+            "p",
+            "Keiner dieser jährlichen Beträge erreicht eine Untergrenze von 3 Dollar am Tag für alle. Der größte, der ganze Nettogewinn, deckte etwa {{aip.net100Yard:pct}} % davon, 5 % des Marktwerts im Jahr etwa {{aip.cap5Yard:pct}} %."
+          ],
+          [
+            "p",
+            "Eine Kuriosität, keine Option: Ginge der Nettogewinn der neun Unternehmen nur an die {{aip.jpPop:m1}} Millionen Menschen in Japan, bekäme jeder zum Wechselkurs von 2025, den diese Seite verwendet, rund {{aip.jpOnly@jp:m2}} Millionen Yen im Jahr.[12] Das Geld kommt von Kunden in aller Welt, das gibt also nur ein Gefühl für die Größenordnung."
+          ],
+          [
+            "h",
+            "Die KI-Labore selbst verlieren Geld"
+          ],
+          [
+            "p",
+            "Die Unternehmen, die die bekanntesten KI-Modelle bauen, gehören nicht zu den neun, weil sie keinen Gewinn machen. Anthropic, das den Börsengang beantragt hat, meldete für die ersten neun Monate 2026 einen Umsatz von 33,2 Milliarden Dollar, gegenüber 4,6 Milliarden im ganzen Jahr 2025, und einen operativen Verlust von 1,3 Milliarden für die neun Monate (8,1 Milliarden 2025). Der Nettoverlust war weit größer, 104,0 Milliarden Dollar für die neun Monate, vor allem aus nicht zahlungswirksamen Wertänderungen von Wandelanleihen, Derivaten und SAFEs (94,3 Milliarden). Die Zahlen stammen aus dem geänderten Registrierungsantrag vom 10. November 2026.[18]"
+          ],
+          [
+            "p",
+            "OpenAI ist privat und veröffentlicht keine Abschlüsse. Presseberichte über seine Unterlagen für Investoren, die wir nicht prüfen konnten, beziffern den Umsatz im dritten Quartal 2026 auf rund 10 Milliarden Dollar und den operativen Verlust auf rund 10,9 Milliarden (Bloomberg, The Wall Street Journal und The Information, wiedergegeben von Gulf News und PYMNTS).[19] Für das erste Quartal meldete The Information einen Mittelabfluss von 3,7 Milliarden Dollar (über The Next Web).[20] xAI, der Entwickler von Grok, gehört inzwischen zu SpaceX, das seit Juni 2026 an der Börse ist; das KI-Segment, zu dem auch X und Cursor gehören, hatte in den ersten neun Monaten 2026 einen operativen Verlust von 3,3 Milliarden Dollar.[21]"
+          ],
+          [
+            "p",
+            "Bisher liegen die Gewinne des KI-Booms vor allem bei den Unternehmen, die die Chips, die Cloud-Rechenleistung und die großen Plattformen verkaufen, nicht bei den Laboren. Anthropic hat angekündigt, 5 % seiner Aktien in einen gemeinnützigen Fonds einzubringen; das haben wir in {einem eigenen Essay|/essays/public-benefit-fund/} betrachtet.[22]"
+          ],
+          [
+            "h",
+            "Vorschläge mit einem Satz"
+          ],
+          [
+            "p",
+            "Sam Altman (2021): jedes Jahr 2,5 % des Marktwerts großer Unternehmen, gezahlt in Aktien, und 2,5 % des Werts von Grund und Boden in Privatbesitz in einen American Equity Fund. Er schrieb, „in zehn Jahren würde jeder der 250 Millionen Erwachsenen in Amerika jedes Jahr rund 13.500 Dollar bekommen“.[17]"
+          ],
+          [
+            "p",
+            "Anthropic (Oktober 2026): 5 % seiner Aktien in einen gemeinnützigen Fonds, vorbehaltlich der Zustimmung der Aktionäre, wobei der Vorstand für jeden Wertanstieg um 50 % über einem Ausgangswert 2 % hinzufügen kann. Zu den Verwendungen können „direkte Ausschüttungen an bestimmte Bevölkerungsgruppen“ gehören.[22]"
+          ],
+          [
+            "p",
+            "H.R. 10044 (US-Repräsentantenhaus, September 2026; Sara Jacobs, Greg Casar und Valerie Foushee): laut Fortune eine Verbrauchsteuer auf große KI-Unternehmen in Höhe des höheren Betrags von 2 % des Werts der KI-Tokens oder 3 % des Umsatzes mit KI-Diensten, solange die Arbeitslosigkeit bei 5 % oder darunter liegt, steigend mit der Arbeitslosigkeit; das Geld ginge in die Schaffung von Arbeitsplätzen statt in Barzahlungen. Den Gesetzestext haben wir nicht gelesen.[23]"
+          ],
+          [
+            "p",
+            "Die globale Mindeststeuer von OECD und G20: ein effektiver Mindeststeuersatz von 15 % für Konzerne mit mehr als 750 Millionen Euro Umsatz, angewandt seit 2024. Sie ist eine Untergrenze für die Unternehmensteuer, keine Steuer auf KI.[24]"
+          ],
+          [
+            "p",
+            "Digitalminister Karsten Wildberger hat gesagt, die sehr hohen Umsätze aus KI sollten besteuert werden, hat aber keinen Satz genannt; siehe {unseren Essay über Deutschland|/essays/germany-merz-basic-income-cost/}."
+          ],
+          [
+            "h",
+            "Warum man es nicht einfach auszahlen könnte"
+          ],
+          [
+            "p",
+            "Nicht alles ist KI. Apples Gewinn stammt fast ganz aus Geräten und Diensten, Amazons enthält den Onlinehandel, Microsofts Office und Windows, und die von Alphabet und Meta kommen größtenteils aus Werbung. Kein Unternehmen meldet, wie viel seines Gewinns aus KI stammt."
+          ],
+          [
+            "p",
+            "Vieles wird schon ausgegeben. Die Unternehmen stecken Unsummen in Rechenzentren. Amazon gab in seinen letzten vier Quartalen {{aip.f_amzn_capexTtmUsdM:bn}} Milliarden Dollar für Sachanlagen aus, was nach eigenen Angaben „vor allem Investitionen in künstliche Intelligenz widerspiegelt“, und sein freier Cashflow im Zeitraum war negativ, bei −42,4 Milliarden Dollar.[4] Oracles freier Cashflow in den letzten vier Quartalen lag bei −23,7 Milliarden Dollar.[8] Alphabet gab in den ersten neun Monaten 2026 132,0 Milliarden Dollar für Sachanlagen aus,[3] und Meta rechnet in diesem Jahr mit 135 bis 145 Milliarden.[5] Die Unternehmen kaufen mit ihrem Gewinn auch eigene Aktien zurück. Alles auszuzahlen ließe für beides nichts übrig."
+          ],
+          [
+            "p",
+            "Buchgewinne sind kein Bargeld. Rund {{aip.paperShare:pct}} % des Nettogewinns sind ein höherer Wert für Anteile an anderen Unternehmen, der sich nicht auszahlen lässt, ohne sie zu verkaufen."
+          ],
+          [
+            "p",
+            "Geschäftsjahre sind verschieden. Apples Jahr endet im September, Microsofts im Juni, NVIDIAs im Januar; die letzten vier Quartale jedes Unternehmens zu nehmen vermeidet, Jahre zu vermischen, aber die Zeiträume unterscheiden sich trotzdem um einige Monate."
+          ],
+          [
+            "p",
+            "Wechselkurse bewegen sich. Beträge in Yen nutzen den Durchschnittskurs 2025 aus den Weltbankdaten dieser Seite, rund {{aip.yen:d1}} Yen pro Dollar.[12] Am {{aip.yenMarketDate:dmy}} lag der Marktkurs bei rund {{aip.yenMarket:d1}} Yen, zu diesem Kurs wären die Yen-Beträge also etwa {{aip.yenMove:pct}} % höher."
+          ],
+          [
+            "p",
+            "Die Preise blieben nicht, wo sie sind. Jedes Jahr einen großen Teil des Gewinns abzuschöpfen, senkte den Wert der Unternehmen, und die Zahlen zum Marktwert setzen voraus, dass das nicht geschieht."
+          ],
+          [
+            "p",
+            "Zu den durchschnittlichen Wechselkursen 2025 aus den Weltbankdaten dieser Seite sind {{aip.net100PP}} Dollar im Jahr rund {{aip.net100PP@de}} Euro, {{aip.net100PM:d2}} Dollar im Monat rund {{aip.net100PM@de:d2}} Euro.[12]"
+          ],
+          [
+            "h",
+            "Was die Zahlen zeigen"
+          ],
+          [
+            "p",
+            "Ganz verteilt ergibt ein Jahr Nettogewinn der neun Unternehmen rund {{aip.net100PP}} Dollar pro Kopf, etwa {{aip.net100PM:d2}} Dollar im Monat: {{aip.net100Yard:pct}} % einer Untergrenze von 3 Dollar am Tag für alle. Ohne die Buchgewinne sind es eher {{aip.exPaperPP}} Dollar, und ein Anteil von 15 % oder 25 % davon ergibt {{aip.net15PP}} bis {{aip.net25PP}} Dollar im Jahr. Der Marktwert der Unternehmen ist viel größer, rund {{aip.capOncePP:r10}} Dollar pro Kopf, ließe sich aber nur einmal verteilen."
+          ],
+          [
+            "p",
+            "Was ein Grundeinkommen in jedem Land kosten würde, zeigen {die Weltkarte|/essays/basic-income-world-map/} und {der Vergleich von 211 Ländern|/calc/countries/}. Zur Finanzierung aus KI siehe {Universelles Hocheinkommen: Wer zahlt?|/essays/universal-high-income/}, {Hat KI Jobs gekostet?|/essays/generative-ai-jobs-basic-income/} und {Brauchen KI-Agenten ein Grundeinkommen?|/essays/ai-agent-basic-income/}."
+          ],
+          [
+            "h",
+            "Annahmen und Grenzen"
+          ],
+          [
+            "p",
+            "Vier Quartale. Die Zahlen jedes Unternehmens sind die Summe seiner vier letzten bis zum {{aip.retrieved:dmy}} gemeldeten Quartale, aus seinen Mitteilungen und Pflichtveröffentlichungen; Quartale, die ein Unternehmen nicht gesondert meldet, sind sein ganzes Jahr minus die anderen drei. Jedes Quartal und seine Quelle stehen in unserer Datendatei.[10]"
+          ],
+          [
+            "p",
+            "Nettogewinn wie gemeldet. Der Nettogewinn ist der den Aktionären zurechenbare Jahresüberschuss nach GAAP oder IFRS, nach Steuern. Der operative Gewinn ist das operative Ergebnis nach GAAP (bei TSMC das Betriebsergebnis), also vor Steuern, und ließe sich nicht vollständig auszahlen. Die Zahl der Buchgewinne enthält die ganzen Posten der sonstigen Erträge von Microsoft und Amazon, ist also ungefähr, und der Gewinn ohne sie ist unsere Schätzung."
+          ],
+          [
+            "p",
+            "Marktwerte. Schlusskurse vom {{aip.marketCapDate:dmy}} mal die ausstehenden Aktien laut der jüngsten Pflichtveröffentlichung jedes Unternehmens; bei TSMC die Aktienzahl Ende 2025 und der Kurs des Taiwan-Dollars an jenem Tag. Die nicht börsennotierten Klasse-B-Aktien von Alphabet und Meta sind zum Kurs der Klasse A bewertet.[10]"
+          ],
+          [
+            "p",
+            "Bevölkerung und Preise. Die Weltbevölkerung ist der Wert der Weltbank für 2025.[11] Die Japans ist die Schätzung vom Oktober 2026 in den Daten der Seite. Die 3,00 Dollar am Tag sind die Armutsgrenze der Weltbank in KKP-Dollar von 2021, umgerechnet in lokale Preise wie im Vergleich; zu Marktwechselkursen summiert kostet das {{aip.yard:tn2}} Billionen Dollar im Jahr.[12][13]"
+          ],
+          [
+            "p",
+            "Kein Vorschlag. Die Anteile sind Maßstäbe, keine Politik, die wir vorschlagen, und hier wird nicht gesagt, ob diese Gewinne besteuert oder verteilt werden sollten. Die Zahlen zeigen nur, wie groß die Summen sind."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "حققت تسع شركات في قلب طفرة الذكاء الاصطناعي (إنفيديا ومايكروسوفت وألفابت وأمازون وميتا وآبل وبرودكوم وأوراكل وتي إس إم سي) صافي أرباح مجموعه نحو {{aip.net:tn2}} تريليون دولار في آخر أربعة أرباع أعلنت نتائجها.[1][10] ويقدّر البنك الدولي عدد سكان العالم في 2025 بنحو {{aip.pop:bn2}} مليار نسمة.[11] وإذا قُسم ذلك بالتساوي فنصيب الفرد نحو {{aip.net100PP:int:ard}} سنويًا، أو {{aip.net100PM:d2:ard}} شهريًا."
+          ],
+          [
+            "p",
+            "{مقارنة 211 دولة|/calc/countries/} في هذا الموقع تعتمد خط الفقر لدى البنك الدولي، 3.00 دولارات يوميًا، مبلغًا معياريًا محوّلًا إلى أسعار كل بلد.[13] ودفعه لجميع سكان هذه الدول والأقاليم الـ211 لعام واحد يكلف نحو {{aip.yard:tn2}} تريليون دولار بأسعار الصرف في السوق.[12] وصافي أرباح الشركات التسع عن عام كامل لا يغطي منه إلا نحو ⁦{{aip.net100Yard:pct}}%⁩، أي {{aip.net100Months:d1}} أشهر."
+          ],
+          [
+            "p",
+            "والربح التشغيلي (ربح النشاط نفسه، قبل الفوائد ومكاسب الاستثمارات وخسائرها والضرائب) يعطي الجواب نفسه تقريبًا: {{aip.op:tn2}} تريليون دولار، أي {{aip.op100PP:int:ard}} للفرد سنويًا ({{aip.op100PM:d2:ard}} شهريًا)."
+          ],
+          [
+            "t",
+            "ما يُوزَّع | المجموع في السنة | للفرد سنويًا | للفرد شهريًا | نسبتها من 3 دولارات يوميًا للجميع\nصافي الأرباح كلها | {{aip.net:tn2}} تريليون دولار | {{aip.net100PP}} دولار | {{aip.net100PM:d2}} دولار | {{aip.net100Yard:pct}}%\nالأرباح التشغيلية كلها | {{aip.op:tn2}} تريليون دولار | {{aip.op100PP}} دولار | {{aip.op100PM:d2}} دولار | {{aip.op100Yard:pct}}%\nصافي الأرباح دون المكاسب الدفترية (تقديرنا التقريبي) | {{aip.exPaper:bn}} مليار دولار | {{aip.exPaperPP}} دولار | {{aip.exPaperPM:d2}} دولار | {{aip.exPaperYard:pct}}%"
+          ],
+          [
+            "h",
+            "أي الشركات، ولماذا هذه التسع"
+          ],
+          [
+            "p",
+            "لا توجد قائمة رسمية بـ«شركات الذكاء الاصطناعي». اخترنا الشركات المدرجة التي تأتي أرباحها بأكثر الطرق مباشرة مما يعمل عليه الذكاء الاصطناعي ويُباع من خلاله: مصمّمتا الرقائق إنفيديا وبرودكوم، وصانعة الرقائق تي إس إم سي، ومزودو الحوسبة السحابية مايكروسوفت وألفابت (غوغل) وأمازون وأوراكل، والمنصتان الكبيرتان ميتا وآبل. وقد حققت كل منها أكثر من 10 مليارات دولار من صافي الأرباح في آخر أربعة أرباع."
+          ],
+          [
+            "p",
+            "ليست أي منها شركة ذكاء اصطناعي خالصة. وأقربها إنفيديا: ففي الربع المنتهي في {{aip.f_nvda_periodEnd:dmy}} جلب نشاط مراكز البيانات {{aip.f_nvda_dataCenterRevenueUsdBn:bn1}} مليار دولار من إيراداتها البالغة {{aip.f_nvda_revenueUsdBn:bn1}} مليار.[1] وبلغت رقائق الذكاء الاصطناعي لدى برودكوم 16.7 مليار دولار من 29.6 مليار في الربع المنتهي في 2 أغسطس 2026.[7] أما الأخرى فالذكاء الاصطناعي فيها إلى جانب إعلانات البحث والفيديو (ألفابت)، والتسوق الإلكتروني (أمازون)، وأوفيس وويندوز (مايكروسوفت)، وإعلانات وسائل التواصل الاجتماعي (ميتا)، وقواعد البيانات (أوراكل). ولا تعلن آبل أي إيرادات من الذكاء الاصطناعي؛ فأرباحها تأتي في معظمها الساحق من آيفون والخدمات والأجهزة الأخرى، وحصة الذكاء الاصطناعي منها صغيرة وغير معروفة.[6]"
+          ],
+          [
+            "p",
+            "وتُركت مجموعتان أخريان خارج المجاميع، وتُعرضان للمقارنة فقط. فقد حققت تسلا {{aip.tesla:bn1}} مليار دولار فقط من صافي الأرباح في آخر أربعة أرباع، معظمها من السيارات والطاقة؛ وإضافتها لا ترفع نصيب الفرد إلا بمقدار {{aip.teslaPP:d2:ard}} سنويًا.[25] أما صانعتا الذاكرة الكوريتان إس كيه هاينكس وسامسونغ للإلكترونيات، اللتان توفران الذاكرة عالية النطاق الترددي المستخدمة مع رقائق الذكاء الاصطناعي، فتضيفان نحو {{aip.korea:bn}} مليار دولار بسعر الصرف الذي يستخدمه الموقع لعام 2025، فيصل الرقم إلى {{aip.withKoreaPP:int:ard}}.[26][27] واستبعدناهما لأن جزءًا من أرقامهما مصدره تقارير ثانوية لا بيانات الشركتين نفسيهما، ولأن أرقام كلتيهما منتفخة ببنود غير تشغيلية لمرة واحدة، ولأن سامسونغ تبيع أيضًا الهواتف وأجهزة التلفزيون والشاشات."
+          ],
+          [
+            "h",
+            "تسع شركات، أربعة أرباع"
+          ],
+          [
+            "p",
+            "أرقام كل شركة هي مجموع آخر أربعة أرباع أعلنتها، لذلك لا تتطابق الفترات تمامًا: معظمها ينتهي في سبتمبر 2026، وفترتا برودكوم وأوراكل في أغسطس، وفترة إنفيديا في {{aip.thru_nvda:my}}. وحين لا تعلن الشركة إلا عن عام كامل، يكون ربعها الرابع هو العام مطروحًا منه الأرباع الثلاثة الأخرى. وتعلن تي إس إم سي نتائجها بالدولار التايواني الجديد؛ فنحوّل كل ربع بالسعر الضمني في إيراداتها المعلنة بالدولار الأمريكي. والقيم السوقية بأسعار الإغلاق في {{aip.marketCapDate:dmy}}.[10]"
+          ],
+          [
+            "t",
+            "الشركة | أربعة أرباع حتى | صافي الأرباح (مليار دولار) | الربح التشغيلي (مليار دولار) | القيمة السوقية (مليار دولار)\nإنفيديا[1] | {{aip.thru_nvda:mys}} | {{aip.net_nvda:bn}} | {{aip.op_nvda:bn}} | {{aip.cap_nvda:bn}}\nمايكروسوفت[2] | {{aip.thru_msft:mys}} | {{aip.net_msft:bn}} | {{aip.op_msft:bn}} | {{aip.cap_msft:bn}}\nألفابت[3] | {{aip.thru_googl:mys}} | {{aip.net_googl:bn}} | {{aip.op_googl:bn}} | {{aip.cap_googl:bn}}\nأمازون[4] | {{aip.thru_amzn:mys}} | {{aip.net_amzn:bn}} | {{aip.op_amzn:bn}} | {{aip.cap_amzn:bn}}\nميتا[5] | {{aip.thru_meta:mys}} | {{aip.net_meta:bn}} | {{aip.op_meta:bn}} | {{aip.cap_meta:bn}}\nآبل[6] | {{aip.thru_aapl:mys}} | {{aip.net_aapl:bn}} | {{aip.op_aapl:bn}} | {{aip.cap_aapl:bn}}\nبرودكوم[7] | {{aip.thru_avgo:mys}} | {{aip.net_avgo:bn}} | {{aip.op_avgo:bn}} | {{aip.cap_avgo:bn}}\nأوراكل[8] | {{aip.thru_orcl:mys}} | {{aip.net_orcl:bn}} | {{aip.op_orcl:bn}} | {{aip.cap_orcl:bn}}\nتي إس إم سي[9] | {{aip.thru_tsmc:mys}} | {{aip.net_tsmc:bn}} | {{aip.op_tsmc:bn}} | {{aip.cap_tsmc:bn}}\nالمجموع | – | {{aip.net:bn}} | {{aip.op:bn}} | {{aip.cap:bn}}"
+          ],
+          [
+            "p",
+            "لدى ألفابت وأمازون يفوق صافي الأرباح الربح التشغيلي بكثير. والسبب في القسم التالي."
+          ],
+          [
+            "h",
+            "جزء من الأرباح هو ارتفاع قيمة شركات ذكاء اصطناعي أخرى"
+          ],
+          [
+            "p",
+            "يشمل صافي الأرباح المكاسب على أسهم تملكها الشركة في شركات أخرى، حتى الأسهم التي لم تبعها. فحين تجمع شركة خاصة، مثل مختبر للذكاء الاصطناعي، أموالًا بتقييم أعلى، يستطيع المستثمر الذي يملك أسهمها أن يسجّل الارتفاع ربحًا. وعلى مدى الأرباع الأربعة بلغت البنود من هذا النوع نحو {{aip.paper:bn}} مليار دولار قبل الضرائب، أي ما يعادل نحو ⁦{{aip.paperShare:pct}}%⁩ من صافي أرباح الشركات التسع."
+          ],
+          [
+            "p",
+            "ألفابت: {{aip.paper_googl:bn}} مليار دولار صافي مكاسب على أوراق الملكية المالية. ويقول تقريرها الفصلي إن مكاسب هذا العام «تتعلق أساسًا بصافي مكاسب غير محققة على أوراق الملكية غير المتداولة لدينا، معظمها من شركة خاصة، ومن سبيس إكس قبل طرحها العام الأولي». ولا يسمّي التقرير الشركة الخاصة.[14]"
+          ],
+          [
+            "p",
+            "أمازون: {{aip.paper_amzn:bn}} مليار دولار من الإيرادات الأخرى. ويقول تقريرها الفصلي إن مكاسب الأشهر التسعة الأولى من 2026 جاءت «أساسًا من تعديلات بالزيادة بسبب تغيرات ملحوظة في السعر تتعلق بأسهمنا الممتازة غير المصوّتة في أنثروبيك».[15]"
+          ],
+          [
+            "p",
+            "إنفيديا: {{aip.paper_nvda:bn1}} مليار دولار مكاسب من أوراق الملكية.[16] مايكروسوفت: {{aip.paper_msft:bn1}} مليار دولار من الإيرادات الأخرى، وهو بند يشمل عناصر تتعلق باستثمارها في أوبن إيه آي؛ ونحتسب البند كله، لا مكاسب الاستثمار وحدها، فهذا الجزء تقريبي.[2] أوراكل: {{aip.paper_orcl:bn1}} مليار دولار مكاسب على الاستثمارات.[8]"
+          ],
+          [
+            "p",
+            "مثل هذه المكاسب ليست نقدًا. إنها سعر أعلى يوضع على أسهم ما زالت الشركة تملكها، وقد تنعكس: ففي الربع الثالث من 2026 سجلت ألفابت خسارة قدرها 8.7 مليار دولار على أوراق الملكية لديها، «معظمها من سبيس إكس».[14] وإذا استُبعدت، بعد الضريبة بمتوسط معدل الضريبة الفعلي للشركات التسع في الفترة (⁦{{aip.effTax:pct}}%⁩)، يبقى صافي أرباح يبلغ نحو {{aip.exPaper:bn}} مليار دولار. وهذا تقديرنا التقريبي، لا رقم تعلنه أي شركة. وإذا وُزّع فهو نحو {{aip.exPaperPP:int:ard}} للفرد سنويًا."
+          ],
+          [
+            "h",
+            "لو وُزّعت حصة منها كل عام"
+          ],
+          [
+            "p",
+            "نعرض ثلاث حصص من الأرباح. نسبة ⁦15%⁩ هي الحد الأدنى العالمي لضريبة الشركات المتفق عليه عبر منظمة التعاون الاقتصادي والتنمية ومجموعة العشرين،[24] لكنها هنا ليست معدل ضريبة: فهذه الأرباح خضعت للضريبة بالفعل، و⁦15%⁩ تعني توزيع ⁦15%⁩ مما يتبقى بعد الضريبة. و⁦25%⁩ رقم مستدير بينهما، و⁦100%⁩ هي الأرباح كلها."
+          ],
+          [
+            "t",
+            "ما يُوزَّع كل عام | المجموع في السنة | للفرد سنويًا | للفرد شهريًا | نسبتها من 3 دولارات يوميًا للجميع\n15% من صافي الأرباح | {{aip.net15Tot:bn}} مليار دولار | {{aip.net15PP}} دولار | {{aip.net15PM:d2}} دولار | {{aip.net15Yard:pct}}%\n25% من صافي الأرباح | {{aip.net25Tot:bn}} مليار دولار | {{aip.net25PP}} دولار | {{aip.net25PM:d2}} دولار | {{aip.net25Yard:pct}}%\n100% من صافي الأرباح | {{aip.net100Tot:bn}} مليار دولار | {{aip.net100PP}} دولار | {{aip.net100PM:d2}} دولار | {{aip.net100Yard:pct}}%\n15% من الأرباح التشغيلية | {{aip.op15Tot:bn}} مليار دولار | {{aip.op15PP}} دولار | {{aip.op15PM:d2}} دولار | {{aip.op15Yard:pct}}%\n25% من الأرباح التشغيلية | {{aip.op25Tot:bn}} مليار دولار | {{aip.op25PP}} دولار | {{aip.op25PM:d2}} دولار | {{aip.op25Yard:pct}}%\n100% من الأرباح التشغيلية | {{aip.op100Tot:bn}} مليار دولار | {{aip.op100PP}} دولار | {{aip.op100PM:d2}} دولار | {{aip.op100Yard:pct}}%"
+          ],
+          [
+            "p",
+            "الربح دخل متدفق. أما القيمة السوقية فرصيد مخزون، مثل ثروات المليارديرات في {مقالنا السابق|/essays/billionaire-wealth-per-person/}. وإذا وُزّعت مرة واحدة، فالقيمة السوقية للشركات التسع البالغة {{aip.cap:tn1}} تريليون دولار تعادل نحو {{aip.capOncePP:r10:ard}} للفرد، وتكفي لنحو {{aip.capOnceMonths}} شهرًا من 3 دولارات يوميًا للجميع. لكن ذلك لا يمكن إلا مرة واحدة، وبيع هذا القدر من الأسهم سيخفض سعرها."
+          ],
+          [
+            "p",
+            "أما إذا دُفعت حصة من القيمة السوقية كل عام: فنسبة ⁦2.5%⁩ هي المعدل السنوي الذي اقترحه سام ألتمان في مقاله عام 2021 «قانون مور لكل شيء» لصندوق يُدفع له بأسهم الشركات.[17] و⁦5%⁩ هي حصة الأصول التي يجب على المؤسسات الخيرية الخاصة في الولايات المتحدة أن توزعها كل عام، وهو المقياس نفسه المستخدم في مقال المليارديرات.[28]"
+          ],
+          [
+            "t",
+            "ما يُدفع كل عام | المجموع في السنة | للفرد سنويًا | للفرد شهريًا | نسبتها من 3 دولارات يوميًا للجميع\n2.5% من القيمة السوقية | {{aip.cap25Tot:bn}} مليار دولار | {{aip.cap25PP}} دولار | {{aip.cap25PM:d2}} دولار | {{aip.cap25Yard:pct}}%\n5% من القيمة السوقية | {{aip.cap5Tot:bn}} مليار دولار | {{aip.cap5PP}} دولار | {{aip.cap5PM:d2}} دولار | {{aip.cap5Yard:pct}}%"
+          ],
+          [
+            "p",
+            "لا يبلغ أي من هذه المبالغ السنوية حدًا أدنى قدره 3 دولارات يوميًا للجميع. فأكبرها، صافي الأرباح كلها، يغطي نحو ⁦{{aip.net100Yard:pct}}%⁩ منه، و⁦5%⁩ من القيمة السوقية سنويًا نحو ⁦{{aip.cap5Yard:pct}}%⁩."
+          ],
+          [
+            "p",
+            "حساب للطرافة لا خيار مطروح: لو ذهب صافي أرباح الشركات التسع إلى سكان اليابان وحدهم، وعددهم {{aip.jpPop:m1}} مليون نسمة، لنال كل منهم نحو {{aip.jpOnly@jp:m2}} مليون ين سنويًا بسعر الصرف لعام 2025 الذي يستخدمه هذا الموقع.[12] فالمال يأتي من زبائن في أنحاء العالم كله، وهذا الرقم لا يعطي إلا فكرة عن الحجم."
+          ],
+          [
+            "h",
+            "مختبرات الذكاء الاصطناعي نفسها تخسر"
+          ],
+          [
+            "p",
+            "الشركات التي تبني أشهر نماذج الذكاء الاصطناعي ليست بين التسع، لأنها لا تحقق أرباحًا. فقد أعلنت أنثروبيك، التي تقدمت بطلب لإدراج أسهمها، إيرادات قدرها 33.2 مليار دولار في الأشهر التسعة الأولى من 2026، مقابل 4.6 مليار دولار في عام 2025 كله، وخسارة تشغيلية قدرها 1.3 مليار دولار في الأشهر التسعة (8.1 مليار دولار في 2025). وكانت خسارتها الصافية أكبر بكثير، 104.0 مليار دولار في الأشهر التسعة، معظمها من تغيرات غير نقدية في قيمة السندات القابلة للتحويل والمشتقات واتفاقات ⁦SAFE⁩ (94.3 مليار دولار). وهذه الأرقام من بيان التسجيل المعدّل الصادر في 10 نوفمبر 2026.[18]"
+          ],
+          [
+            "p",
+            "أوبن إيه آي شركة خاصة لا تنشر حساباتها. وتقارير صحفية عن موادها المقدمة للمستثمرين، لم نتمكن من التحقق منها، تقدّر إيراداتها في الربع الثالث من 2026 بنحو 10 مليارات دولار وخسارتها التشغيلية بنحو 10.9 مليار دولار (بلومبرغ ووول ستريت جورنال وذي إنفورميشن، كما نقلتها غلف نيوز و⁦PYMNTS⁩).[19] وعن الربع الأول، أفادت ذي إنفورميشن بحرق نقدي قدره 3.7 مليار دولار (عبر ذا نكست ويب).[20] أما ⁦xAI⁩، صانعة ⁦Grok⁩، فصارت جزءًا من سبيس إكس المدرجة منذ يونيو 2026؛ وسجل قطاع الذكاء الاصطناعي، الذي يضم أيضًا ⁦X⁩ و⁦Cursor⁩، خسارة تشغيلية قدرها 3.3 مليار دولار في الأشهر التسعة الأولى من 2026.[21]"
+          ],
+          [
+            "p",
+            "حتى الآن، تتركز أرباح طفرة الذكاء الاصطناعي أساسًا لدى الشركات التي تبيع الرقائق والحوسبة السحابية ولدى المنصات الكبيرة، لا لدى المختبرات. وقد قالت أنثروبيك إنها ستضع ⁦5%⁩ من أسهمها في صندوق للمنفعة العامة؛ وتناولنا ذلك في {مقال مستقل|/essays/public-benefit-fund/}.[22]"
+          ],
+          [
+            "h",
+            "مقترحات تأتي بنسبة محددة"
+          ],
+          [
+            "p",
+            "سام ألتمان (2021): كل عام، ⁦2.5%⁩ من القيمة السوقية للشركات الكبيرة، تُدفع أسهمًا، و⁦2.5%⁩ من قيمة الأراضي المملوكة ملكية خاصة، في «صندوق أسهم أمريكي». وكتب أنه «بعد عقد من الآن سيحصل كل واحد من البالغين الـ250 مليونًا في أمريكا على نحو 13,500 دولار كل عام».[17]"
+          ],
+          [
+            "p",
+            "أنثروبيك (أكتوبر 2026): ⁦5%⁩ من أسهمها في صندوق للمنفعة العامة، رهنًا بموافقة المساهمين، مع قدرة مجلس الإدارة على إضافة ⁦2%⁩ عن كل ارتفاع بنسبة ⁦50%⁩ في القيمة فوق مستوى أساسي. ويمكن أن تشمل استخداماته «توزيعات مباشرة على فئات سكانية محددة».[22]"
+          ],
+          [
+            "p",
+            "مشروع القانون ⁦H.R. 10044⁩ (مجلس النواب الأمريكي، سبتمبر 2026؛ سارة جيكوبس وغريغ كاسار وفاليري فاوشي): وفقًا لمجلة فورتشن، ضريبة استهلاك على كبرى شركات الذكاء الاصطناعي تساوي الأعلى بين ⁦2%⁩ من قيمة رموز الذكاء الاصطناعي و⁦3%⁩ من إيرادات خدمات الذكاء الاصطناعي ما دامت البطالة ⁦5%⁩ أو أقل، وترتفع مع البطالة، ويذهب المال إلى خلق الوظائف لا إلى مدفوعات نقدية. ولم نقرأ نص المشروع.[23]"
+          ],
+          [
+            "p",
+            "الحد الأدنى العالمي للضريبة لدى منظمة التعاون الاقتصادي والتنمية ومجموعة العشرين: معدل ضريبة فعلي أدنى قدره ⁦15%⁩ للمجموعات التي تتجاوز إيراداتها 750 مليون يورو، يُطبَّق منذ 2024. وهو حد أدنى لضريبة الشركات، لا ضريبة على الذكاء الاصطناعي.[24]"
+          ],
+          [
+            "p",
+            "قال وزير الشؤون الرقمية الألماني كارستن فيلدبرغر إن حجم المبيعات الهائل الناتج عن الذكاء الاصطناعي ينبغي أن يخضع للضريبة، لكنه لم يحدد نسبة؛ انظر {مقالنا عن ألمانيا|/essays/germany-merz-basic-income-cost/}."
+          ],
+          [
+            "h",
+            "لماذا لا يمكن توزيعها ببساطة"
+          ],
+          [
+            "p",
+            "ليست كلها من الذكاء الاصطناعي. فأرباح آبل تأتي كلها تقريبًا من الأجهزة والخدمات، وأرباح أمازون تشمل التسوق الإلكتروني، وأرباح مايكروسوفت تشمل أوفيس وويندوز، وأرباح ألفابت وميتا تأتي في معظمها من الإعلانات. ولا تعلن أي شركة كم من أرباحها يأتي من الذكاء الاصطناعي."
+          ],
+          [
+            "p",
+            "جزء كبير منها يُنفَق بالفعل. فالشركات تضخ أموالًا طائلة في مراكز البيانات. أنفقت أمازون {{aip.f_amzn_capexTtmUsdM:bn}} مليار دولار على العقارات والمعدات في آخر أربعة أرباع، وتقول إن ذلك «يعكس أساسًا استثمارات في الذكاء الاصطناعي»، وكان تدفقها النقدي الحر في الفترة سالبًا، عند −42.4 مليار دولار.[4] وبلغ التدفق النقدي الحر لأوراكل في آخر أربعة أرباع −23.7 مليار دولار.[8] وأنفقت ألفابت 132.0 مليار دولار على العقارات والمعدات في الأشهر التسعة الأولى من 2026،[3] وتتوقع ميتا إنفاق ⁦135–145⁩ مليار دولار هذا العام.[5] وتستخدم الشركات الأرباح أيضًا لإعادة شراء أسهمها. وتوزيعها كلها لن يُبقي شيئًا لأي من الأمرين."
+          ],
+          [
+            "p",
+            "المكاسب الدفترية ليست نقدًا. فنحو ⁦{{aip.paperShare:pct}}%⁩ من صافي الأرباح قيمة أعلى وُضعت على أسهم في شركات أخرى، ولا يمكن دفعها دون بيع تلك الأسهم."
+          ],
+          [
+            "p",
+            "السنوات المالية مختلفة. فسنة آبل تنتهي في سبتمبر، ومايكروسوفت في يونيو، وإنفيديا في يناير؛ واستخدام آخر أربعة أرباع لكل شركة يتجنب خلط السنوات، لكن الفترات تظل مختلفة ببضعة أشهر."
+          ],
+          [
+            "p",
+            "أسعار الصرف تتغير. المبالغ بالين بمتوسط سعر الصرف لعام 2025 في بيانات البنك الدولي التي يستخدمها هذا الموقع، نحو {{aip.yen:d1}} ين للدولار.[12] وفي {{aip.yenMarketDate:dmy}} كان سعر السوق نحو {{aip.yenMarket:d1}} ين، فبهذا السعر تكون المبالغ بالين أعلى بنحو ⁦{{aip.yenMove:pct}}%⁩."
+          ],
+          [
+            "p",
+            "الأسعار لن تبقى على حالها. فأخذ حصة كبيرة من الأرباح كل عام سيخفض قيمة الشركات، وأرقام القيمة السوقية تفترض أن ذلك لن يحدث."
+          ],
+          [
+            "p",
+            "وبمتوسط أسعار الصرف في 2025 من بيانات البنك الدولي التي يستخدمها هذا الموقع، يعادل نصيب الفرد السنوي البالغ {{aip.net100PP:int:ard}} نحو {{aip.net100PP@sa:r10}} سنويًا و{{aip.net100PM@sa:int}} شهريًا بالريال السعودي، أو نحو {{aip.net100PP@eg:r100}} سنويًا و{{aip.net100PM@eg:r10}} شهريًا بالجنيه المصري.[12]"
+          ],
+          [
+            "h",
+            "ما تُظهره الأرقام"
+          ],
+          [
+            "p",
+            "إذا وُزّع بالكامل، فصافي أرباح الشركات التسع عن عام يعادل نحو {{aip.net100PP:int:ard}} للفرد، أي نحو {{aip.net100PM:d2:ard}} شهريًا: ⁦{{aip.net100Yard:pct}}%⁩ من حد أدنى قدره 3 دولارات يوميًا للجميع. ودون المكاسب الدفترية يقترب من {{aip.exPaperPP:int:ard}}، وحصة ⁦15%⁩ أو ⁦25%⁩ منه تعادل من {{aip.net15PP:int:ard}} إلى {{aip.net25PP:int:ard}} سنويًا. والقيمة السوقية للشركات أكبر بكثير، نحو {{aip.capOncePP:r10:ard}} للفرد، لكن لا يمكن توزيعها إلا مرة واحدة."
+          ],
+          [
+            "p",
+            "لمعرفة كلفة الدخل الأساسي في كل دولة، انظر {خريطة العالم|/essays/basic-income-world-map/} و{مقارنة 211 دولة|/calc/countries/}. وعن تمويله من الذكاء الاصطناعي، انظر {الدخل المرتفع الشامل: من يدفع؟|/essays/universal-high-income/} و{هل أخذ الذكاء الاصطناعي التوليدي وظائفنا؟|/essays/generative-ai-jobs-basic-income/} و{هل ينبغي أن يحصل وكلاء الذكاء الاصطناعي على دخل أساسي؟|/essays/ai-agent-basic-income/}."
+          ],
+          [
+            "h",
+            "الافتراضات والحدود"
+          ],
+          [
+            "p",
+            "أربعة أرباع. أرقام كل شركة هي مجموع آخر أربعة أرباع أعلنتها حتى {{aip.retrieved:dmy}}، من بياناتها وإفصاحاتها الرسمية؛ والأرباع التي لا تعلنها الشركة منفصلة هي عامها الكامل مطروحًا منه الأرباع الثلاثة الأخرى. وكل ربع ومصدره مدرج في ملف بياناتنا.[10]"
+          ],
+          [
+            "p",
+            "صافي الأرباح كما أُعلن. صافي الأرباح هو صافي الدخل العائد إلى المساهمين بعد الضريبة وفق المبادئ المحاسبية الأمريكية أو المعايير الدولية لإعداد التقارير المالية. والربح التشغيلي هو الدخل التشغيلي وفق المبادئ المحاسبية الأمريكية (ولتي إس إم سي، الدخل من العمليات)، فهو قبل الضريبة ولا يمكن دفعه كله. ورقم المكاسب الدفترية يشمل بنود الإيرادات الأخرى كاملة لمايكروسوفت وأمازون، فهو تقريبي، والربح من دونها تقديرنا."
+          ],
+          [
+            "p",
+            "القيم السوقية. أسعار الإغلاق في {{aip.marketCapDate:dmy}} مضروبة في عدد الأسهم القائمة في أحدث إفصاح لكل شركة؛ ولتي إس إم سي، عدد أسهمها في نهاية 2025 وسعر الدولار التايواني في ذلك اليوم. وتُقيَّم أسهم الفئة ب غير المدرجة لدى ألفابت وميتا بسعر الفئة أ.[10]"
+          ],
+          [
+            "p",
+            "السكان والأسعار. عدد سكان العالم هو رقم البنك الدولي لعام 2025.[11] وعدد سكان اليابان هو تقدير أكتوبر 2026 في بيانات الموقع. والـ3.00 دولارات يوميًا هي خط الفقر لدى البنك الدولي بدولارات تعادل القوة الشرائية لعام 2021، محوّلة إلى الأسعار المحلية كما في المقارنة؛ وبجمعها بأسعار الصرف في السوق تكلف {{aip.yard:tn2}} تريليون دولار سنويًا.[12][13]"
+          ],
+          [
+            "p",
+            "ليس اقتراحًا. الحصص مقاييس، لا سياسات نقترحها، ولا يقول هذا المقال إن كان ينبغي فرض الضرائب على هذه الأرباح أو توزيعها. الأرقام تُظهر حجم المبالغ فقط."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "NVIDIA — results for {{aip.lastq_nvda}}, the quarter to {{aip.thru_nvda:dmy}} (SEC filing); the other three quarters from its 10-K for fiscal 2026 and its later filings, listed in our data file",
+          "url": "{{aip.src_nvda}}"
+        },
+        {
+          "n": 2,
+          "label": "Microsoft — results for {{aip.lastq_msft}}, the quarter to {{aip.thru_msft:dmy}}, with the OpenAI items in its non-GAAP reconciliation (SEC filing, exhibit 99.1)",
+          "url": "{{aip.src_msft}}"
+        },
+        {
+          "n": 3,
+          "label": "Alphabet — results for {{aip.lastq_googl}}, the quarter to {{aip.thru_googl:dmy}}: Google Cloud, purchases of property and equipment, gains on equity securities (SEC filing, exhibit 99.1)",
+          "url": "{{aip.src_googl}}"
+        },
+        {
+          "n": 4,
+          "label": "Amazon — results for {{aip.lastq_amzn}}, the quarter to {{aip.thru_amzn:dmy}}: AWS, purchases of property and equipment and free cash flow over the trailing twelve months (SEC filing, exhibit 99.1)",
+          "url": "{{aip.src_amzn}}"
+        },
+        {
+          "n": 5,
+          "label": "Meta Platforms — results for {{aip.lastq_meta}}, the quarter to {{aip.thru_meta:dmy}}: capital expenditures and the 2026 outlook, the settlement charge (SEC filing, exhibit 99.1)",
+          "url": "{{aip.src_meta}}"
+        },
+        {
+          "n": 6,
+          "label": "Apple — results for {{aip.lastq_aapl}}, the quarter to {{aip.thru_aapl:dmy}} (SEC filing, exhibit 99.1)",
+          "url": "{{aip.src_aapl}}"
+        },
+        {
+          "n": 7,
+          "label": "Broadcom — results for {{aip.lastq_avgo}}, the quarter to {{aip.thru_avgo:dmy}}: AI semiconductor revenue (SEC filing, exhibit 99)",
+          "url": "{{aip.src_avgo}}"
+        },
+        {
+          "n": 8,
+          "label": "Oracle — results for {{aip.lastq_orcl}}, the quarter to {{aip.thru_orcl:dmy}}: capital expenditures and free cash flow over the trailing four quarters (SEC filing, exhibit 99.1)",
+          "url": "{{aip.src_orcl}}"
+        },
+        {
+          "n": 9,
+          "label": "TSMC — management report for {{aip.lastq_tsmc}}, the quarter to {{aip.thru_tsmc:dmy}}, in New Taiwan dollars with US-dollar revenue (SEC filing)",
+          "url": "{{aip.src_tsmc}}"
+        },
+        {
+          "n": 10,
+          "label": "Free Lunch Lab — data/ai-profits-2026.json: every quarter of the nine companies with its source, how derived quarters were worked out, share counts and closing prices of {{aip.marketCapDate:dmy}}, the paper-gain items, and the companies and labs left out",
+          "url": "https://github.com/eltociear/free-lunch-lab/blob/main/data/ai-profits-2026.json"
+        },
+        {
+          "n": 11,
+          "label": "World Bank — Population, total (SP.POP.TOTL), World, 2025: 8,215,424,893",
+          "url": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=1W"
+        },
+        {
+          "n": 12,
+          "label": "Free Lunch Lab — countries.json: population, GDP in local currency and US dollars, and the cost of the $3.00-a-day poverty line for 211 countries and territories (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/countries.json"
+        },
+        {
+          "n": 13,
+          "label": "World Bank — June 2025 update to the global poverty lines: the international poverty line of $3.00 a day in 2021 PPP",
+          "url": "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines"
+        },
+        {
+          "n": 14,
+          "label": "Alphabet — Form 10-Q for the quarter to 30 September 2026: gains on nonmarketable equity securities “largely from a private company, and SpaceX prior to its initial public offering”; the third-quarter loss “largely from SpaceX”",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        },
+        {
+          "n": 15,
+          "label": "Amazon — Form 10-Q for the quarter to 30 September 2026: other income “primarily from upward adjustments for observable changes in price relating to our nonvoting preferred stock in Anthropic”",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        },
+        {
+          "n": 16,
+          "label": "NVIDIA — CFO commentary for {{aip.lastq_nvda}}: gains from equity securities",
+          "url": "{{aip.paperSrc_nvda}}"
+        },
+        {
+          "n": 17,
+          "label": "Sam Altman — “Moore’s Law for Everything” (March 2021): an American Equity Fund taking 2.5% of the market value of large companies and 2.5% of the value of privately held land each year",
+          "url": "https://moores.samaltman.com/"
+        },
+        {
+          "n": 18,
+          "label": "Anthropic PBC — amended registration statement (Form S-1/A, 10 November 2026): revenue, operating loss, net loss and the fair-value changes behind it, for 2025 and the nine months to 30 September 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+        },
+        {
+          "n": 19,
+          "label": "Gulf News — OpenAI revenue hits $10bn but operating loss widens (citing Bloomberg, The Wall Street Journal and The Information); also PYMNTS",
+          "url": "https://gulfnews.com/business/openai-revenue-hits-10b-but-operating-loss-widens-1.500743326",
+          "url2": "https://www.pymnts.com/earnings/2026/openai-revenue-hits-10-billion-as-losses-mount/"
+        },
+        {
+          "n": 20,
+          "label": "The Next Web — OpenAI burned $3.7 billion in the first quarter of 2026 (citing The Information)",
+          "url": "https://thenextweb.com/news/openai-burned-3-7-billion-q1-2026"
+        },
+        {
+          "n": 21,
+          "label": "SpaceX — Form 10-Q for the quarter to 30 September 2026: the Super Intelligence segment (xAI, X and Cursor)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+        },
+        {
+          "n": 22,
+          "label": "Anthropic — Investing in the public benefit (18 October 2026): 5% of shares for a public benefit fund",
+          "url": "https://www.anthropic.com/news/public-benefit-fund"
+        },
+        {
+          "n": 23,
+          "label": "Fortune — a House bill would tax AI tokens to fund jobs (1 September 2026), on H.R. 10044",
+          "url": "https://fortune.com/2026/09/01/bill-tax-ai-tokens-fund-jobs-technology-unemployment/"
+        },
+        {
+          "n": 24,
+          "label": "OECD — International tax: the global minimum tax (Pillar Two), a 15% minimum effective rate for groups with revenue over €750 million",
+          "url": "https://www.oecd.org/en/topics/cross-border-and-international-tax"
+        },
+        {
+          "n": 25,
+          "label": "Tesla — results for the quarter to 30 September 2026 (SEC filing, exhibit 99.1); earlier quarters in our data file",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        },
+        {
+          "n": 26,
+          "label": "SK hynix — third-quarter 2026 business results (net profit; the fourth quarter of 2025 worked out from the full year, partly from secondary reports)",
+          "url": "https://news.skhynix.com/en/q3-2026-business-results/"
+        },
+        {
+          "n": 27,
+          "label": "Samsung Electronics — third-quarter 2026 results (the third-quarter and late-2025 figures from secondary reports; the first half from Samsung’s statement of income)",
+          "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+          "url2": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_con_quarter02_soi.pdf"
+        },
+        {
+          "n": 28,
+          "label": "IRS — Private foundations: minimum investment return (5% of the fair market value of non-charitable-use assets)",
+          "url": "https://www.irs.gov/charities-non-profits/private-foundations/minimum-investment-return"
+        }
+      ]
+    },
+    {
       "id": "japan-basic-income-cost",
       "date": "2026-11-17",
       "related": [
@@ -19549,6 +21233,7 @@ module.exports = {
       "id": "germany-merz-basic-income-cost",
       "date": "2026-11-16",
       "related": [
+        "ai-company-profits-per-person",
         "japan-basic-income-cost",
         "does-cash-make-people-stop-working",
         "generative-ai-jobs-basic-income",
@@ -20758,6 +22443,7 @@ module.exports = {
       "id": "billionaire-wealth-per-person",
       "date": "2026-11-14",
       "related": [
+        "ai-company-profits-per-person",
         "basic-income-world-map",
         "universal-high-income",
         "public-benefit-fund",
@@ -27615,6 +29301,7 @@ module.exports = {
       "id": "generative-ai-jobs-basic-income",
       "date": "2026-11-07",
       "related": [
+        "ai-company-profits-per-person",
         "germany-merz-basic-income-cost",
         "refundable-tax-credit-vs-basic-income",
         "public-benefit-fund",
@@ -38226,6 +39913,7 @@ module.exports = {
       "id": "public-benefit-fund",
       "date": "2026-11-03",
       "related": [
+        "ai-company-profits-per-person",
         "universal-high-income",
         "use-to-own",
         "ai-agent-basic-income",
@@ -43066,6 +44754,7 @@ module.exports = {
       "id": "universal-high-income",
       "date": "2026-10-29",
       "related": [
+        "ai-company-profits-per-person",
         "billionaire-wealth-per-person",
         "ai-agent-basic-income",
         "use-to-own",
@@ -43784,6 +45473,7 @@ module.exports = {
       "id": "ai-agent-basic-income",
       "date": "2026-10-28",
       "related": [
+        "ai-company-profits-per-person",
         "universal-high-income",
         "moltbook-basic-income"
       ],
@@ -48298,3 +49988,5 @@ module.exports = {
     ]
   }
 };
+// エッセイ ai-company-profits-per-person の {{aip.…}} を data/ai-profits-2026.json から計算した数字で埋める（src/ai-profits.js。build.js・og.js・readme.js・X 画像のどれから読んでも同じ数字になる）
+require('./ai-profits.js').fill(module.exports);

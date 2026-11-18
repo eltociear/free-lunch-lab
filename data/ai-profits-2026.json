@@ -1,0 +1,1127 @@
+{
+ "about": "AI companies' profits shared out per person, for the essay ai-company-profits-per-person. Money in US$ millions unless a key says otherwise (UsdBn = billions, KrwBn = billions of won, TwdM = millions of NT$). Net income is GAAP/IFRS net income as reported (attributable to the parent where relevant); operating income is GAAP operating income (TSMC: income from operations). src/ai-profits.js sums the four quarters of each company (the last four reported), divides by the world population in data/billionaires-2026.json, compares with the site's $3.00-a-day line from the calculator data (src/calc-world.js) and fills the {{aip.…}} numbers in the essay, the X images and the checks in build.js. Quarters marked derived = full year minus the other three quarters.",
+ "retrieved": "2026-11-18",
+ "marketCapDate": "2026-11-13",
+ "update": {
+  "note": "NVIDIA reports Q3 FY2027 (quarter ended 2026-10-25) at about 13:20 PT on 17 Nov 2026 (06:20 JST 18 Nov). To update, edit only this file; every number in the essay, its share cards and the X images is recomputed, and node build.js warns if a check no longer holds.",
+  "nvidiaSteps": [
+   "companies[id=nvda].quarters: remove Q3 FY2026 (periodEnd 2025-10-26) and add Q3 FY2027 (periodEnd 2026-10-25) with netIncomeUsdM, operatingIncomeUsdM, pretaxIncomeUsdM, incomeTaxUsdM, source (the release URL), derived: false",
+   "companies[id=nvda].paperGains[0].byQuarter: remove \"Q3 FY2026\", add \"Q3 FY2027\" (gains from equity securities, net, from the CFO commentary); set its source to the new CFO commentary URL",
+   "companies[id=nvda].facts: quarter, periodEnd, dataCenterRevenueUsdBn, revenueUsdBn and source from the new release; companies[id=nvda].note: rewrite for Q3 FY2027",
+   "retrieved: set to the date of the edit (the essay says the figures are the four quarters reported by that date)",
+   "pending: set to null",
+   "leave fy, shares, price and marketCapUsdBn as they are (market values are fixed at the 13 Nov 2026 close)"
+  ],
+  "changes": "Everything else follows from the quarters: the totals, per-person and scenario figures, the paper-gains share and the profit without it, the dates \"four quarters to …\", the NVIDIA source links and the X images. Market values, Tesla, SK hynix, Samsung, the AI labs and the proposals do not change."
+ },
+ "pending": null,
+ "yenMarket": {
+  "value": 159.9,
+  "date": "2026-11-13",
+  "note": "approximate market rate on 13 Nov 2026 from the research notes (no primary source recorded); the essay uses the site's 2025 World Bank rate for its yen figures and quotes this only to show how much the rate has moved"
+ },
+ "companies": [
+  {
+   "id": "nvda",
+   "name": "NVIDIA",
+   "ticker": "NVDA",
+   "country": "us",
+   "note": "Data Center revenue Q3 FY2027 (to 25 Oct 2026) $107.6bn of $115.8bn total, up 110% y/y. GAAP other income included gains from equity securities of $15,936m (Q1 FY2027), $7,771m (Q2 FY2027) and $1,767m (Q3 FY2027), pre-tax.",
+   "noteSource": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
+   "facts": {
+    "quarter": "Q3 FY2027",
+    "periodEnd": "2026-10-25",
+    "dataCenterRevenueUsdBn": 107.6,
+    "revenueUsdBn": 115.8,
+    "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+   },
+   "quarters": [
+    {
+     "quarter": "Q4 FY2026",
+     "periodEnd": "2026-01-25",
+     "netIncomeUsdM": 42960,
+     "operatingIncomeUsdM": 44299,
+     "pretaxIncomeUsdM": 50398,
+     "incomeTaxUsdM": 7438,
+     "source": "derived: FY2026 net income 120,067 minus Q1-Q3 FY2026 (18,775 + 26,422 + 31,910), 10-K and 10-Qs",
+     "derived": true,
+     "derivedFields": [
+      "operatingIncomeUsdM",
+      "pretaxIncomeUsdM",
+      "incomeTaxUsdM"
+     ]
+    },
+    {
+     "quarter": "Q1 FY2027",
+     "periodEnd": "2026-04-26",
+     "netIncomeUsdM": 58321,
+     "operatingIncomeUsdM": 53536,
+     "pretaxIncomeUsdM": 69903,
+     "incomeTaxUsdM": 11582,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/",
+     "derived": false
+    },
+    {
+     "quarter": "Q2 FY2027",
+     "periodEnd": "2026-07-26",
+     "netIncomeUsdM": 59688,
+     "operatingIncomeUsdM": 63734,
+     "pretaxIncomeUsdM": 71507,
+     "incomeTaxUsdM": 11819,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm",
+     "derived": false
+    },
+    {
+     "quarter": "Q3 FY2027",
+     "periodEnd": "2026-10-25",
+     "netIncomeUsdM": 65287,
+     "operatingIncomeUsdM": 77520,
+     "pretaxIncomeUsdM": 79017,
+     "incomeTaxUsdM": 13730,
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
+     "derived": false
+    }
+   ],
+   "paperGains": [
+    {
+     "item": "gains from equity securities, net (XBRL GainLossOnInvestments)",
+     "byQuarter": {
+      "Q4 FY2026": 5492,
+      "Q1 FY2027": 15936,
+      "Q2 FY2027": 7771,
+      "Q3 FY2027": 1767
+     },
+     "note": "Q4 FY2026 = FY 8,918 - 9M 3,426; Q3 FY2027 = 9M FY2027 25,474 - 15,936 - 7,771 (CFO commentary: $2.8bn gains on publicly held securities, $1.0bn net loss on non-marketable ones including $1.8bn impairment)",
+     "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
+    }
+   ],
+   "fy": {
+    "label": "FY2026",
+    "end": "2026-01-25",
+    "revenue": 215938,
+    "netIncome": 120067,
+    "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/",
+    "operatingIncome": 130387,
+    "operatingIncomeSource": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/"
+   },
+   "marketCapUsdBn": 3924.7,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "shares": 24100000000,
+   "sharesAsOf": "2026-08-21",
+   "sharesSource": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/",
+   "price": 162.85
+  },
+  {
+   "id": "msft",
+   "name": "Microsoft",
+   "ticker": "MSFT",
+   "country": "us",
+   "note": "Q1 FY2027: Microsoft Cloud revenue $63.9bn (+30%), Azure revenue +48% (no dollar figure disclosed), commercial RPO $677bn; additions to property and equipment $39,367m in the quarter. Net income includes OpenAI investment impact (+$207m in Q1 FY2027; -$3.1bn in Q1 FY2026). No AI revenue run-rate disclosed in the release.",
+   "noteSource": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm",
+   "facts": {
+    "quarter": "Q1 FY2027",
+    "microsoftCloudRevenueUsdBn": 63.9,
+    "capexQuarterUsdM": 39367,
+    "openAiNetIncomeImpactUsdM": 207,
+    "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm"
+   },
+   "quarters": [
+    {
+     "quarter": "Q2 FY2026",
+     "periodEnd": "2025-12-31",
+     "netIncomeUsdM": 38458,
+     "operatingIncomeUsdM": 38275,
+     "pretaxIncomeUsdM": 48246,
+     "incomeTaxUsdM": 9788,
+     "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/",
+     "derived": false
+    },
+    {
+     "quarter": "Q3 FY2026",
+     "periodEnd": "2026-03-31",
+     "netIncomeUsdM": 31778,
+     "operatingIncomeUsdM": 38398,
+     "pretaxIncomeUsdM": 39340,
+     "incomeTaxUsdM": 7562,
+     "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/",
+     "derived": false
+    },
+    {
+     "quarter": "Q4 FY2026",
+     "periodEnd": "2026-06-30",
+     "netIncomeUsdM": 35766,
+     "operatingIncomeUsdM": 40603,
+     "pretaxIncomeUsdM": 44047,
+     "incomeTaxUsdM": 8281,
+     "source": "derived: FY2026 133,749 minus Q1-Q3 (27,747 + 38,458 + 31,778)",
+     "derived": true,
+     "derivedFields": [
+      "operatingIncomeUsdM",
+      "pretaxIncomeUsdM",
+      "incomeTaxUsdM"
+     ]
+    },
+    {
+     "quarter": "Q1 FY2027",
+     "periodEnd": "2026-09-30",
+     "netIncomeUsdM": 36629,
+     "operatingIncomeUsdM": 45915,
+     "pretaxIncomeUsdM": 45953,
+     "incomeTaxUsdM": 9324,
+     "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm",
+     "derived": false
+    }
+   ],
+   "paperGains": [
+    {
+     "item": "other income (expense), net, total (includes OpenAI-related items)",
+     "byQuarter": {
+      "Q2 FY2026": 9971,
+      "Q3 FY2026": 942,
+      "Q4 FY2026": 3444,
+      "Q1 FY2027": 38
+     },
+     "note": "Q4 FY2026 derived from FY 10,697. Microsoft's non-GAAP reconciliation separates the OpenAI impact (+$207m net income in Q1 FY2027); the large Q2 FY2026 figure was not itemised here. Of the total, gains on investments were 339 / 1,652 / 2,966 / -46",
+     "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm"
+    }
+   ],
+   "fy": {
+    "label": "FY2026",
+    "end": "2026-06-30",
+    "revenue": 331839,
+    "netIncome": 133749,
+    "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/",
+    "operatingIncome": 155237,
+    "operatingIncomeSource": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/"
+   },
+   "marketCapUsdBn": 3890.4,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "shares": 7426194552,
+   "sharesAsOf": "2026-10-22",
+   "sharesSource": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/",
+   "price": 523.88
+  },
+  {
+   "id": "googl",
+   "name": "Alphabet",
+   "ticker": "GOOGL/GOOG",
+   "country": "us",
+   "note": "Q3 2026: Google Cloud revenue $30,709m (+103% y/y), operating income $11,121m; purchases of property and equipment $51,355m in Q3, $131,953m in 9M 2026. Net income 9M 2026 ($201,239m) includes $126,755m net gains on debt and equity securities (cash-flow statement line, pre-tax); Q3 2026 had an $8.7bn equity loss (-$6.7bn after tax).",
+   "noteSource": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+   "facts": {
+    "quarter": "Q3 2026",
+    "cloudRevenueUsdM": 30709,
+    "capex9mUsdM": 131953,
+    "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+   },
+   "quarters": [
+    {
+     "quarter": "Q4 2025",
+     "periodEnd": "2025-12-31",
+     "netIncomeUsdM": 34455,
+     "operatingIncomeUsdM": 35934,
+     "pretaxIncomeUsdM": 39117,
+     "incomeTaxUsdM": 4662,
+     "source": "derived: FY2025 132,170 minus Q1-Q3 2025 (34,540 + 28,196 + 34,979)",
+     "derived": true,
+     "derivedFields": [
+      "operatingIncomeUsdM",
+      "pretaxIncomeUsdM",
+      "incomeTaxUsdM"
+     ]
+    },
+    {
+     "quarter": "Q1 2026",
+     "periodEnd": "2026-03-31",
+     "netIncomeUsdM": 62578,
+     "operatingIncomeUsdM": 39696,
+     "pretaxIncomeUsdM": 77412,
+     "incomeTaxUsdM": 14834,
+     "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/",
+     "derived": false
+    },
+    {
+     "quarter": "Q2 2026",
+     "periodEnd": "2026-06-30",
+     "netIncomeUsdM": 112193,
+     "operatingIncomeUsdM": 40770,
+     "pretaxIncomeUsdM": 138753,
+     "incomeTaxUsdM": 26560,
+     "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/",
+     "derived": false
+    },
+    {
+     "quarter": "Q3 2026",
+     "periodEnd": "2026-09-30",
+     "netIncomeUsdM": 26468,
+     "operatingIncomeUsdM": 40576,
+     "pretaxIncomeUsdM": 32355,
+     "incomeTaxUsdM": 5887,
+     "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+     "derived": false
+    }
+   ],
+   "paperGains": [
+    {
+     "item": "gain (loss) on equity securities, net",
+     "byQuarter": {
+      "Q4 2025": 2302,
+      "Q1 2026": 36915,
+      "Q2 2026": 99031,
+      "Q3 2026": -8664
+     },
+     "note": "10-Q: 9M 2026 increase \"primarily related to net unrealized gains on our nonmarketable equity securities largely from a private company, and SpaceX prior to its initial public offering\"; Q3 2026 loss \"largely from SpaceX\". Q4 2025 = FY 24,080 - 9M 21,778",
+     "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+    }
+   ],
+   "fy": {
+    "label": "FY2025",
+    "end": "2025-12-31",
+    "revenue": 402836,
+    "netIncome": 132170,
+    "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/",
+    "operatingIncome": 129039,
+    "operatingIncomeSource": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/"
+   },
+   "marketCapUsdBn": 3618.1,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "shares": 12294000000,
+   "sharesAsOf": "2026-10-21",
+   "sharesNote": "5,888m Class A + 827m Class B + 5,579m Class C; Class A and B valued at the GOOGL close ($295.77), Class C at the GOOG close ($292.52); Class B is not traded",
+   "sharesSource": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+   "price": 295.77
+  },
+  {
+   "id": "amzn",
+   "name": "Amazon",
+   "ticker": "AMZN",
+   "country": "us",
+   "note": "Q3 2026: AWS net sales $45,984m (+39%), AWS operating income $17,773m; purchases of property and equipment $77,259m in Q3, $215,192m trailing twelve months (\"primarily reflects investments in artificial intelligence\"); TTM free cash flow -$42.4bn. Other income (expense), net was $68,359m in 9M 2026 (non-operating; Amazon holds Anthropic stakes, the release attributes Q3 2025 pre-tax gains of $9.5bn to them; the split for 2026 not checked).",
+   "noteSource": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+   "facts": {
+    "quarter": "Q3 2026",
+    "awsRevenueUsdM": 45984,
+    "capexTtmUsdM": 215192,
+    "freeCashFlowTtmUsdBn": -42.4,
+    "anthropicDiscreteTax9mUsdBn": 15.2,
+    "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm"
+   },
+   "quarters": [
+    {
+     "quarter": "Q4 2025",
+     "periodEnd": "2025-12-31",
+     "netIncomeUsdM": 21192,
+     "operatingIncomeUsdM": 24977,
+     "pretaxIncomeUsdM": 26605,
+     "incomeTaxUsdM": 4946,
+     "source": "derived: FY2025 77,670 minus Q1-Q3 2025 (17,127 + 18,164 + 21,187); equals the 10-Q trailing-twelve-month figure 134,779 less Q1-Q3 2026",
+     "derived": true,
+     "derivedFields": [
+      "operatingIncomeUsdM",
+      "pretaxIncomeUsdM",
+      "incomeTaxUsdM"
+     ]
+    },
+    {
+     "quarter": "Q1 2026",
+     "periodEnd": "2026-03-31",
+     "netIncomeUsdM": 30255,
+     "operatingIncomeUsdM": 23852,
+     "pretaxIncomeUsdM": 39834,
+     "incomeTaxUsdM": 9560,
+     "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/",
+     "derived": false
+    },
+    {
+     "quarter": "Q2 2026",
+     "periodEnd": "2026-06-30",
+     "netIncomeUsdM": 62647,
+     "operatingIncomeUsdM": 27461,
+     "pretaxIncomeUsdM": 80857,
+     "incomeTaxUsdM": 18199,
+     "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/",
+     "derived": false
+    },
+    {
+     "quarter": "Q3 2026",
+     "periodEnd": "2026-09-30",
+     "netIncomeUsdM": 20685,
+     "operatingIncomeUsdM": 28076,
+     "pretaxIncomeUsdM": 26869,
+     "incomeTaxUsdM": 6180,
+     "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+     "derived": false
+    }
+   ],
+   "paperGains": [
+    {
+     "item": "other income (expense), net",
+     "byQuarter": {
+      "Q4 2025": 1177,
+      "Q1 2026": 15647,
+      "Q2 2026": 53415,
+      "Q3 2026": -703
+     },
+     "note": "10-Q: 9M 2026 $68.4bn \"primarily from upward adjustments for observable changes in price relating to our nonvoting preferred stock in Anthropic\" ($62,853m upward adjustments on private equity investments + $4,474m reclassified gains on Anthropic convertible notes); 9M 2026 tax includes $15.2bn discrete tax expense mainly from these Anthropic adjustments. Q4 2025 = FY 15,229 - 9M 14,052",
+     "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+    }
+   ],
+   "reconciliationNote": "pretax - tax differs from net income by -501 (equity-method investment activity, net of tax: Q4 2025 -467, Q1-Q3 2026 -19, -11, -4)",
+   "fy": {
+    "label": "FY2025",
+    "end": "2025-12-31",
+    "revenue": 716924,
+    "netIncome": 77670,
+    "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/",
+    "operatingIncome": 79975,
+    "operatingIncomeSource": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/"
+   },
+   "marketCapUsdBn": 2883.4,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "shares": 10813138306,
+   "sharesAsOf": "2026-10-21",
+   "sharesSource": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/",
+   "price": 266.66
+  },
+  {
+   "id": "meta",
+   "name": "Meta Platforms",
+   "ticker": "META",
+   "country": "us",
+   "note": "Q3 2026 capital expenditures incl. finance-lease principal $34.91bn; 2026 outlook $135-145bn. Q3 2026 includes a $9.89bn charge for the settlement with 52 US state attorneys general; Q3 2025 (in FY2025, not in TTM) had an 87% effective tax rate.",
+   "noteSource": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
+   "facts": {
+    "quarter": "Q3 2026",
+    "capexQuarterUsdBn": 34.91,
+    "capexOutlook2026UsdBn": [
+     135,
+     145
+    ],
+    "settlementChargeUsdBn": 9.89,
+    "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+   },
+   "quarters": [
+    {
+     "quarter": "Q4 2025",
+     "periodEnd": "2025-12-31",
+     "netIncomeUsdM": 22768,
+     "operatingIncomeUsdM": 24745,
+     "pretaxIncomeUsdM": 25353,
+     "incomeTaxUsdM": 2585,
+     "source": "derived: FY2025 60,458 minus Q1-Q3 2025 (16,644 + 18,337 + 2,709)",
+     "derived": true,
+     "derivedFields": [
+      "operatingIncomeUsdM",
+      "pretaxIncomeUsdM",
+      "incomeTaxUsdM"
+     ]
+    },
+    {
+     "quarter": "Q1 2026",
+     "periodEnd": "2026-03-31",
+     "netIncomeUsdM": 26773,
+     "operatingIncomeUsdM": 22872,
+     "pretaxIncomeUsdM": 21752,
+     "incomeTaxUsdM": -5021,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/",
+     "derived": false
+    },
+    {
+     "quarter": "Q2 2026",
+     "periodEnd": "2026-06-30",
+     "netIncomeUsdM": 15848,
+     "operatingIncomeUsdM": 18775,
+     "pretaxIncomeUsdM": 18756,
+     "incomeTaxUsdM": 2908,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/",
+     "derived": false
+    },
+    {
+     "quarter": "Q3 2026",
+     "periodEnd": "2026-09-30",
+     "netIncomeUsdM": 9860,
+     "operatingIncomeUsdM": 12988,
+     "pretaxIncomeUsdM": 13001,
+     "incomeTaxUsdM": 3141,
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm",
+     "derived": false
+    }
+   ],
+   "otherItems": [
+    {
+     "item": "multistate attorneys general settlement charge (in operating expenses, so it lowers operating income too)",
+     "byQuarter": {
+      "Q3 2026": -9890
+     },
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+    },
+    {
+     "item": "income tax benefit in Q1 2026 (tax line -5,021); the 10-Q attributes the lower 9M 2026 tax mainly to OBBBA and US Treasury Notice 2026-7 (corporate minimum tax relief on capitalised R&D)",
+     "byQuarter": {
+      "Q1 2026": 5021
+     },
+     "note": "a tax item, not non-operating income; it raises TTM net income relative to operating income",
+     "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+    }
+   ],
+   "fy": {
+    "label": "FY2025",
+    "end": "2025-12-31",
+    "revenue": 200966,
+    "netIncome": 60458,
+    "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/",
+    "operatingIncome": 83276,
+    "operatingIncomeSource": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/"
+   },
+   "marketCapUsdBn": 1640.3,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "shares": 2556241253,
+   "sharesAsOf": "2026-10-16",
+   "sharesNote": "2,214,472,367 Class A + 341,768,886 Class B, all valued at the Class A close",
+   "sharesSource": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+   "price": 641.69
+  },
+  {
+   "id": "aapl",
+   "name": "Apple",
+   "ticker": "AAPL",
+   "country": "us",
+   "note": "Apple does not report AI revenue; its profit comes overwhelmingly from iPhone, services and other hardware. Included because it was on the brief; the AI share of its profit is small and unknown.",
+   "noteSource": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/a8-kex991q4202609262026.htm",
+   "quarters": [
+    {
+     "quarter": "Q1 FY2026",
+     "periodEnd": "2025-12-27",
+     "netIncomeUsdM": 42097,
+     "operatingIncomeUsdM": 50852,
+     "pretaxIncomeUsdM": 51002,
+     "incomeTaxUsdM": 8905,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/",
+     "derived": false
+    },
+    {
+     "quarter": "Q2 FY2026",
+     "periodEnd": "2026-03-28",
+     "netIncomeUsdM": 29578,
+     "operatingIncomeUsdM": 35885,
+     "pretaxIncomeUsdM": 35833,
+     "incomeTaxUsdM": 6255,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/",
+     "derived": false
+    },
+    {
+     "quarter": "Q3 FY2026",
+     "periodEnd": "2026-06-27",
+     "netIncomeUsdM": 29789,
+     "operatingIncomeUsdM": 35695,
+     "pretaxIncomeUsdM": 36267,
+     "incomeTaxUsdM": 6478,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/",
+     "derived": false
+    },
+    {
+     "quarter": "Q4 FY2026",
+     "periodEnd": "2026-09-26",
+     "netIncomeUsdM": 30711,
+     "operatingIncomeUsdM": 35631,
+     "pretaxIncomeUsdM": 36135,
+     "incomeTaxUsdM": 5424,
+     "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/a8-kex991q4202609262026.htm",
+     "derived": false,
+     "derivedFields": [
+      "operatingIncomeUsdM",
+      "pretaxIncomeUsdM",
+      "incomeTaxUsdM"
+     ]
+    }
+   ],
+   "fy": {
+    "label": "FY2026",
+    "end": "2026-09-26",
+    "revenue": 478834,
+    "netIncome": 132175,
+    "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/",
+    "operatingIncome": 158063,
+    "operatingIncomeSource": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/"
+   },
+   "marketCapUsdBn": 5177.4,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "shares": 14532182000,
+   "sharesAsOf": "2026-10-23",
+   "sharesSource": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/",
+   "price": 356.27
+  },
+  {
+   "id": "avgo",
+   "name": "Broadcom",
+   "ticker": "AVGO",
+   "country": "us",
+   "note": "Q3 FY2026 AI semiconductor revenue $16.7bn (+221% y/y) of $29.6bn total; Q4 guidance $21.7bn.",
+   "noteSource": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+   "facts": {
+    "quarter": "Q3 FY2026",
+    "aiSemiconductorRevenueUsdBn": 16.7,
+    "revenueUsdBn": 29.6,
+    "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm"
+   },
+   "quarters": [
+    {
+     "quarter": "Q4 FY2025",
+     "periodEnd": "2025-11-02",
+     "netIncomeUsdM": 8518,
+     "operatingIncomeUsdM": 7508,
+     "pretaxIncomeUsdM": 6869,
+     "incomeTaxUsdM": -1649,
+     "source": "derived: FY2025 23,126 minus 9M FY2025 14,608",
+     "derived": true,
+     "derivedFields": [
+      "operatingIncomeUsdM",
+      "pretaxIncomeUsdM",
+      "incomeTaxUsdM"
+     ]
+    },
+    {
+     "quarter": "Q1 FY2026",
+     "periodEnd": "2026-02-01",
+     "netIncomeUsdM": 7349,
+     "operatingIncomeUsdM": 8563,
+     "pretaxIncomeUsdM": 8195,
+     "incomeTaxUsdM": 846,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/",
+     "derived": false
+    },
+    {
+     "quarter": "Q2 FY2026",
+     "periodEnd": "2026-05-03",
+     "netIncomeUsdM": 9310,
+     "operatingIncomeUsdM": 10788,
+     "pretaxIncomeUsdM": 10130,
+     "incomeTaxUsdM": 820,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000054/",
+     "derived": false
+    },
+    {
+     "quarter": "Q3 FY2026",
+     "periodEnd": "2026-08-02",
+     "netIncomeUsdM": 13088,
+     "operatingIncomeUsdM": 15955,
+     "pretaxIncomeUsdM": 15275,
+     "incomeTaxUsdM": 2187,
+     "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+     "derived": false
+    }
+   ],
+   "fy": {
+    "label": "FY2025",
+    "end": "2025-11-02",
+    "revenue": 63887,
+    "netIncome": 23126,
+    "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/",
+    "operatingIncome": 25484,
+    "operatingIncomeSource": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/"
+   },
+   "marketCapUsdBn": 1656.5,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "shares": 4773629865,
+   "sharesAsOf": "2026-08-28",
+   "sharesSource": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/",
+   "price": 347.01
+  },
+  {
+   "id": "orcl",
+   "name": "Oracle",
+   "ticker": "ORCL",
+   "country": "us",
+   "note": "Q1 FY2027: cloud infrastructure revenue +121%, RPO $664bn (\"more than $30 billion of additional AI cloud contracts\" in Q1); capital expenditures $28,499m in the quarter, free cash flow -$23.7bn over the trailing four quarters. Q1 FY2027 net income $4,760m includes $81m preferred dividends deducted for common shareholders ($4,679m).",
+   "noteSource": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+   "facts": {
+    "quarter": "Q1 FY2027",
+    "capexQuarterUsdM": 28499,
+    "freeCashFlowTtmUsdBn": -23.7,
+    "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm"
+   },
+   "quarters": [
+    {
+     "quarter": "Q2 FY2026",
+     "periodEnd": "2025-11-30",
+     "netIncomeUsdM": 6135,
+     "operatingIncomeUsdM": 4731,
+     "pretaxIncomeUsdM": 6342,
+     "incomeTaxUsdM": 207,
+     "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525315925/",
+     "derived": false,
+     "derivedFields": [
+      "pretaxIncomeUsdM (net income + tax)"
+     ]
+    },
+    {
+     "quarter": "Q3 FY2026",
+     "periodEnd": "2026-02-28",
+     "netIncomeUsdM": 3721,
+     "operatingIncomeUsdM": 5464,
+     "pretaxIncomeUsdM": 4416,
+     "incomeTaxUsdM": 695,
+     "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/",
+     "derived": false,
+     "derivedFields": [
+      "pretaxIncomeUsdM (net income + tax)"
+     ]
+    },
+    {
+     "quarter": "Q4 FY2026",
+     "periodEnd": "2026-05-31",
+     "netIncomeUsdM": 4201,
+     "operatingIncomeUsdM": 6134,
+     "pretaxIncomeUsdM": 5266,
+     "incomeTaxUsdM": 1065,
+     "source": "derived: FY2026 16,984 minus Q1-Q3 (2,927 + 6,135 + 3,721)",
+     "derived": true,
+     "derivedFields": [
+      "operatingIncomeUsdM",
+      "incomeTaxUsdM",
+      "pretaxIncomeUsdM (net income + tax)"
+     ]
+    },
+    {
+     "quarter": "Q1 FY2027",
+     "periodEnd": "2026-08-31",
+     "netIncomeUsdM": 4760,
+     "operatingIncomeUsdM": 6728,
+     "pretaxIncomeUsdM": 5607,
+     "incomeTaxUsdM": 847,
+     "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+     "derived": false,
+     "derivedFields": [
+      "pretaxIncomeUsdM (net income + tax)"
+     ]
+    }
+   ],
+   "paperGains": [
+    {
+     "item": "gains on investments",
+     "byQuarter": {
+      "Q2 FY2026": 2493,
+      "Q3 FY2026": -7,
+      "Q4 FY2026": 377,
+      "Q1 FY2027": 53
+     },
+     "note": "the Q2 FY2026 gain was not itemised further here; Q4 FY2026 = FY 2,811 - 9M 2,434",
+     "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/"
+    }
+   ],
+   "fy": {
+    "label": "FY2026",
+    "end": "2026-05-31",
+    "revenue": 67357,
+    "netIncome": 16984,
+    "source": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/",
+    "operatingIncome": 20606,
+    "operatingIncomeSource": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/"
+   },
+   "marketCapUsdBn": 379,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "shares": 3023736000,
+   "sharesAsOf": "2026-09-07",
+   "sharesSource": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/",
+   "price": 125.35
+  },
+  {
+   "id": "tsmc",
+   "name": "TSMC",
+   "ticker": "2330.TW / TSM",
+   "country": "tw",
+   "note": "Quarterly net income converted at each quarter's own ratio of NT$ revenue to the US$ revenue TSMC reports. Q3 2026: advanced (7nm and below) 79% of wafer revenue. 2026 capital budget guided at US$52-56bn (Jan 2026).",
+   "noteSource": "https://pr.tsmc.com/english/news/3346",
+   "facts": {
+    "quarter": "Q3 2026",
+    "advancedNodeWaferSharePct": 79,
+    "source": "https://pr.tsmc.com/english/news/3346"
+   },
+   "quarters": [
+    {
+     "quarter": "Q4 2025",
+     "periodEnd": "2025-12-31",
+     "netIncomeUsdM": 16307,
+     "operatingIncomeUsdM": 18215,
+     "pretaxIncomeUsdM": 19100,
+     "incomeTaxUsdM": 2793,
+     "netIncomeTwdM": 505744,
+     "operatingIncomeTwdM": 564903,
+     "pretaxIncomeTwdM": 592363,
+     "twdPerUsd": 31.0136,
+     "source": "https://pr.tsmc.com/english/news/3281",
+     "derived": false,
+     "incomeTaxNote": "pretax minus net income attributable to the parent (includes the small non-controlling share)"
+    },
+    {
+     "quarter": "Q1 2026",
+     "periodEnd": "2026-03-31",
+     "netIncomeUsdM": 18122,
+     "operatingIncomeUsdM": 20860,
+     "pretaxIncomeUsdM": 21772,
+     "incomeTaxUsdM": 3650,
+     "netIncomeTwdM": 572480,
+     "operatingIncomeTwdM": 658966,
+     "pretaxIncomeTwdM": 687800,
+     "twdPerUsd": 31.5906,
+     "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26e_withguidancexfinal.htm",
+     "derived": false,
+     "incomeTaxNote": "pretax minus net income attributable to the parent (includes the small non-controlling share)"
+    },
+    {
+     "quarter": "Q2 2026",
+     "periodEnd": "2026-06-30",
+     "netIncomeUsdM": 22358,
+     "operatingIncomeUsdM": 24258,
+     "pretaxIncomeUsdM": 27291,
+     "incomeTaxUsdM": 4933,
+     "netIncomeTwdM": 706562,
+     "operatingIncomeTwdM": 766603,
+     "pretaxIncomeTwdM": 862430,
+     "twdPerUsd": 31.6015,
+     "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000451/a2q26e_withguidancexfinal.htm",
+     "derived": false,
+     "incomeTaxNote": "pretax minus net income attributable to the parent (includes the small non-controlling share)"
+    },
+    {
+     "quarter": "Q3 2026",
+     "periodEnd": "2026-09-30",
+     "netIncomeUsdM": 23858,
+     "operatingIncomeUsdM": 27404,
+     "pretaxIncomeUsdM": 28485,
+     "incomeTaxUsdM": 4627,
+     "netIncomeTwdM": 763064,
+     "operatingIncomeTwdM": 876445,
+     "pretaxIncomeTwdM": 911039,
+     "twdPerUsd": 31.9829,
+     "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm",
+     "derived": false,
+     "incomeTaxNote": "pretax minus net income attributable to the parent (includes the small non-controlling share)"
+    }
+   ],
+   "fy": {
+    "label": "FY2025",
+    "end": "2025-12-31",
+    "revenue": 121423.5,
+    "netIncome": 54115.5,
+    "revenueTwdM": 3809054.3,
+    "netIncomeTwdM": 1697604,
+    "fx": "NT$31.37 per US$, the Federal Reserve H.10 rate of 31 Dec 2025 used for convenience translation in TSMC's 20-F",
+    "note": "20-F is IFRS as issued; the quarterly releases are Taiwan-IFRS, whose four 2025 quarters sum to about NT$1,717.9bn",
+    "source": "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/R4.htm",
+    "operatingIncome": 61717.9,
+    "operatingIncomeTwdM": 1936091.7,
+    "operatingIncomeSource": "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/R4.htm"
+   },
+   "marketCapUsdBn": 1850.1,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "shares": 25932524521,
+   "sharesAsOf": "2025-12-31",
+   "sharesSource": "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/",
+   "priceLocal": 2350,
+   "priceCurrency": "TWD",
+   "fxClose": 32.939,
+   "fxCloseSource": "Yahoo Finance TWD=X close 2026-11-13 (not a primary source)"
+  }
+ ],
+ "sensitivity": {
+  "note": "Not in the core totals. Tesla: net income far below the core companies and mostly cars and energy. SK hynix and Samsung Electronics: memory makers (HBM) whose figures are partly from secondary reports and swollen by non-operating items; converted at the site's 2025 World Bank won rate (data/countries-worldbank.json).",
+  "tesla": {
+   "name": "Tesla",
+   "ticker": "TSLA",
+   "note": "Optional. Net income far below $10bn; most profit is cars and energy. Excluded from the core totals.",
+   "noteSource": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm",
+   "quarters": [
+    {
+     "quarter": "Q4 2025",
+     "periodEnd": "2025-12-31",
+     "netIncomeUsdM": 901,
+     "source": "derived: FY2025 3,855 minus Q1-Q3 2025 (409 + 1,172 + 1,373)",
+     "derived": true
+    },
+    {
+     "quarter": "Q1 2026",
+     "periodEnd": "2026-03-31",
+     "netIncomeUsdM": 477,
+     "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/",
+     "derived": false
+    },
+    {
+     "quarter": "Q2 2026",
+     "periodEnd": "2026-06-30",
+     "netIncomeUsdM": 1114,
+     "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/",
+     "derived": false
+    },
+    {
+     "quarter": "Q3 2026",
+     "periodEnd": "2026-09-30",
+     "netIncomeUsdM": 787,
+     "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm",
+     "derived": false
+    }
+   ],
+   "marketCapUsdBn": 1542.4,
+   "marketCapNote": "close of 2026-11-13 (Yahoo Finance chart data) x shares outstanding on the latest SEC cover page",
+   "fy": {
+    "label": "FY2025",
+    "end": "2025-12-31",
+    "revenue": 94827,
+    "netIncome": 3855,
+    "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/"
+   }
+  },
+  "korea": [
+   {
+    "name": "SK hynix",
+    "quarters": [
+     {
+      "quarter": "Q4 2025",
+      "periodEnd": "2025-12-31",
+      "netIncomeKrwBn": 15246.2,
+      "note": "derived: FY2025 net profit 42,947.9bn won minus Q1-Q3 2025 (8,108.2 + 6,996.2 + 12,597.5). Q2 and Q3 2025 confirmed from the 2Q26 and 3Q26 releases; Q1 2025 (8,108.2) not re-checked. A secondary report (StorageNewsletter) gives about 15.25 trillion won, consistent.",
+      "source": "https://news.skhynix.com/en/q3-2026-business-results/"
+     },
+     {
+      "quarter": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "netIncomeKrwBn": 40345.9,
+      "note": "",
+      "source": "https://news.skhynix.com/en/q2-2026-business-results/"
+     },
+     {
+      "quarter": "Q2 2026",
+      "periodEnd": "2026-06-30",
+      "netIncomeKrwBn": 93922.6,
+      "note": "includes non-operating gains (Reuters via Quartz: 63.3 trillion won investment-asset gains)",
+      "source": "https://news.skhynix.com/en/q2-2026-business-results/"
+     },
+     {
+      "quarter": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "netIncomeKrwBn": 39775.6,
+      "note": "after 32.63 trillion won net non-operating losses",
+      "source": "https://news.skhynix.com/en/q3-2026-business-results/"
+     }
+    ],
+    "fy": {
+     "label": "FY2025",
+     "netIncomeKrwBn": 42947.9,
+     "revenueKrwBn": 97146.7,
+     "source": "SK hynix FY2025 release figures via search summaries (revenue 97,146.7bn won, net profit 42,947.9bn won); not opened directly"
+    },
+    "marketCap": "not computed: share counts not verified (Yahoo shows SK hynix at 1,216,000 won on 13 Nov 2026 while June 2026 reports put its value near 2,080 trillion won, so a split or other change may have occurred)",
+    "secondary": true
+   },
+   {
+    "name": "Samsung Electronics",
+    "quarters": [
+     {
+      "quarter": "Q4 2025",
+      "periodEnd": "2025-12-31",
+      "netIncomeKrwBn": 19640,
+      "note": "Samsung FY2025 release (secondary summaries; 19.64 trillion won)",
+      "source": "https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results"
+     },
+     {
+      "quarter": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "netIncomeKrwBn": 47225.272,
+      "note": "derived: H1 2026 profit 118,849.733bn minus Q2 71,624.461bn",
+      "source": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_con_quarter02_soi.pdf"
+     },
+     {
+      "quarter": "Q2 2026",
+      "periodEnd": "2026-06-30",
+      "netIncomeKrwBn": 71624.461,
+      "note": "profit for the period incl. non-controlling interests",
+      "source": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_con_quarter02_soi.pdf"
+     },
+     {
+      "quarter": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "netIncomeKrwBn": 75136.1,
+      "note": "Korea Economic Daily via search summary; consistent with 9M 193,985.9bn; Samsung's own Q3 release page could not be loaded",
+      "source": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
+     }
+    ],
+    "fy": {
+     "label": "FY2025",
+     "netIncomeKrwBn": 45200,
+     "note": "rounded, from secondary summaries of the FY2025 release"
+    },
+    "marketCap": "not computed: share counts not verified (Yahoo shows SK hynix at 1,216,000 won on 13 Nov 2026 while June 2026 reports put its value near 2,080 trillion won, so a split or other change may have occurred)",
+    "secondary": true
+   }
+  ]
+ },
+ "aiLabs": [
+  {
+   "name": "Anthropic",
+   "status": "S-1/A filed 10 Nov 2026 (Nasdaq: ANT); not yet priced as of 17 Nov 2026",
+   "primary": true,
+   "revenueUsdM": {
+    "FY2025": 4585,
+    "9M2026": 33242,
+    "Q3 2026": "about 17,000 (\"$17.0 billion for the three months ended September 30, 2026\")"
+   },
+   "operatingLossUsdM": {
+    "FY2025": -8060,
+    "9M2026": -1260
+   },
+   "netLossUsdM": {
+    "FY2025": -41965,
+    "9M2026": -104039,
+    "note": "net loss is mostly non-cash fair-value changes on convertible notes, derivatives and SAFEs ($34,308m in 2025, $94,324m in 9M 2026); pro forma net loss 9M 2026 $96,799m"
+   },
+   "operatingCashFlowUsdM": {
+    "FY2025": -2637,
+    "9M2026": 6569
+   },
+   "investingCashFlowUsdM": {
+    "FY2025": -3077,
+    "9M2026": -36546
+   },
+   "runRateRevenue": "approximately $81 billion as of 31 October 2026 (company definition: trailing 28-day consumption fees x 13 plus monthly subscription fees x 12)",
+   "valuation": "IPO price range $70.00-78.00 per share; 13,086,672,593 shares of all classes outstanding after the offering imply about $916-1,021bn (our arithmetic, not a market value). Last private round reported as about $965bn post-money (Series H, May 2026, secondary reports).",
+   "publicBenefitFund": "5% of shares committed (subject to stockholder approval), board may add 2% per 50% rise in value above an undisclosed baseline: https://www.anthropic.com/news/public-benefit-fund (18 Oct 2026)",
+   "source": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm"
+  },
+  {
+   "name": "OpenAI",
+   "status": "private; figures are press reports of investor materials, not audited",
+   "primary": false,
+   "revenue": [
+    {
+     "period": "Q1 2026",
+     "usdBn": 5.7,
+     "outlet": "The Information (via The Next Web)",
+     "url": "https://thenextweb.com/news/openai-burned-3-7-billion-q1-2026"
+    },
+    {
+     "period": "Q2 2026",
+     "usdBn": 6.7,
+     "outlet": "reported (CryptoBriefing summary of The Information)",
+     "url": "https://cryptobriefing.com/openai-revenue-6-7-billion-q2-2026/"
+    },
+    {
+     "period": "Q3 2026",
+     "usdBn": 10,
+     "outlet": "Bloomberg / WSJ / The Information, via Gulf News and PYMNTS (investor call 10 Nov 2026)",
+     "url": "https://gulfnews.com/business/openai-revenue-hits-10b-but-operating-loss-widens-1.500743326",
+     "url2": "https://www.pymnts.com/earnings/2026/openai-revenue-hits-10-billion-as-losses-mount/"
+    }
+   ],
+   "losses": [
+    {
+     "period": "Q1 2026",
+     "item": "cash burn",
+     "usdBn": -3.7,
+     "outlet": "The Information (via TNW)"
+    },
+    {
+     "period": "Q2 2026",
+     "item": "operating loss",
+     "usdBn": -10.1,
+     "outlet": "WSJ via Gulf News"
+    },
+    {
+     "period": "Q3 2026",
+     "item": "operating loss (adjusted, margin -109%)",
+     "usdBn": -10.9,
+     "outlet": "WSJ via Gulf News; The Information via PYMNTS"
+    }
+   ],
+   "annualisedRevenue": "about $50bn at end of September 2026 per one report; another report said about $70bn; conflicting, unverified",
+   "valuation": [
+    {
+     "date": "2026-03-31",
+     "usdBn": 852,
+     "item": "post-money, $122bn round",
+     "outlet": "CNBC / Bloomberg",
+     "url": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html"
+    },
+    {
+     "date": "2026-11-06",
+     "usdBn": 1250,
+     "item": "first ~$11bn of a round reported at $1.25 trillion (pre/post-money unclear; round not finished)",
+     "outlet": "Bloomberg (via GV Wire)",
+     "url": "https://gvwire.com/2026/11/06/openai-secures-11-billion-funding-at-1-25-trillion-valuation-bloomberg-news-reports/"
+    }
+   ]
+  },
+  {
+   "name": "SpaceX (includes xAI/Grok, X and Cursor as its \"Super Intelligence\" segment)",
+   "status": "listed (SPCX) since June 2026",
+   "primary": true,
+   "netIncomeUsdM": {
+    "Q3 2025": -1054,
+    "Q2 2026": -541,
+    "Q3 2026": 4404,
+    "9M 2026": -413
+   },
+   "siSegment": {
+    "Q3 2026 revenue": 7560,
+    "Q3 2026 operating income": 431,
+    "9M 2026 revenue": 10939,
+    "9M 2026 operating loss": -3295,
+    "Q3 2025 operating loss": -1722
+   },
+   "marketCapApproxUsdBn": 1889,
+   "marketCapNote": "Class A 8,240m + Class B 5,339m shares at 30 Sep 2026 (balance sheet) x $139.11 close on 13 Nov 2026; approximate",
+   "note": "Not in the core totals: a rocket and satellite-internet company whose AI segment lost money over 9M 2026. xAI alone lost $6.35bn from operations in 2025 on $3.2bn revenue (S-1, via secondary reports).",
+   "source": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+  }
+ ],
+ "proposals": [
+  {
+   "name": "Sam Altman, \"Moore's Law for Everything\" (March 2021): American Equity Fund",
+   "rate": "2.5% of market value a year for companies above a certain valuation, paid in shares; plus 2.5% of the value of privately held land, paid in dollars",
+   "payoutClaim": "\"a decade from now each of the 250 million adults in America would get about $13,500 every year\"",
+   "url": "https://moores.samaltman.com/"
+  },
+  {
+   "name": "Anthropic Public Benefit Fund (18 Oct 2026)",
+   "rate": "5% of Anthropic shares committed (subject to stockholder approval); board may add 2% for every 50% increase in value above a baseline; uses may include \"direct distributions to specific populations\"",
+   "url": "https://www.anthropic.com/news/public-benefit-fund"
+  },
+  {
+   "name": "US H.R. 10044 (Sara Jacobs, Greg Casar, Valerie Foushee; September 2026)",
+   "rate": "excise tax on major AI companies, the higher of 2% of the value of AI tokens or 3% of AI-services revenue while unemployment is 5% or less, rising with unemployment (schedule not given in the article); proceeds to job creation, not cash",
+   "url": "https://fortune.com/2026/09/01/bill-tax-ai-tokens-fund-jobs-technology-unemployment/",
+   "caveat": "rates from Fortune's description; bill text not read"
+  },
+  {
+   "name": "OECD/G20 Pillar Two global minimum tax",
+   "rate": "15% minimum effective tax rate for groups with revenue over EUR 750m, applied from 2024",
+   "url": "https://www.oecd.org/en/topics/cross-border-and-international-tax",
+   "caveat": "a floor on corporate tax, not an AI tax; the 15% scenario here applies it to after-tax profit, which these firms have already been taxed on"
+  },
+  {
+   "name": "OpenAI, \"Industrial Policy for the Intelligence Age\" (April 2026)",
+   "rate": "no rate: floats a public wealth fund, higher taxes on capital/AI returns and a robot tax",
+   "url": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/"
+  },
+  {
+   "name": "Karsten Wildberger, German digital minister (Tagesspiegel interview, Oct 2026, via dts)",
+   "rate": "no rate: \"Den extrem hohen Umsatz mit dieser Technologie müssen wir besteuern\"",
+   "url": "https://presse-augsburg.de/wildberger-will-grundeinkommens-konzept-weiter-pruefen/1201546/"
+  },
+  {
+   "name": "Anthropic economic policy framework (2026)",
+   "rate": "no rate: mentions \"new sources of tax revenue\", sovereign wealth models and equity-sharing in a high-unemployment scenario",
+   "url": "https://www.anthropic.com/policy-on-the-ai-exponential/epf"
+  }
+ ],
+ "caveats": [
+  "Fiscal years differ; FY totals mix years ending Nov 2025 to Sep 2026. Prefer TTM.",
+  "Net income includes non-AI business (Apple almost entirely; Amazon retail; Microsoft Office; Meta ads; Alphabet search) and large paper gains on stakes in AI labs (Alphabet, Amazon, NVIDIA, Microsoft).",
+  "Profits are after corporate tax; the 15% and 25% scenarios are shares of after-tax profit, not tax rates on pre-tax profit.",
+  "Much of this profit is already spent on capex (Amazon alone $215bn over its last four quarters) and buybacks; taking 100% would leave nothing for either, and share prices would not stay put.",
+  "Market caps: Yahoo Finance closes x SEC cover-page share counts (dates differ by up to ~2.5 months; TSMC uses its 31 Dec 2025 count). Alphabet Class B and Meta Class B valued at Class A prices.",
+  "Yen figures use the 2025 World Bank rate (149.66), the rate the site uses; the spot rate on 13 Nov 2026 was about 159.9.",
+  "TSMC quarterly conversion uses each quarter's NT$/US$ revenue ratio (31.0-32.0); FY2025 uses the 20-F convenience rate 31.37.",
+  "Operating income is before interest, investment gains and tax. For Alphabet and Amazon it is far below net income because of paper gains on stakes in AI labs (largely Anthropic and SpaceX); for Meta and Broadcom it is above net income. Meta's $9.89bn settlement charge sits inside operating income.",
+  "\"Paper gains\" total includes Microsoft's whole other income line (not only investment gains) and Amazon's whole other income line; treat the share as approximate."
+ ]
+}

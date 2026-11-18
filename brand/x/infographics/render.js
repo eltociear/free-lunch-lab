@@ -332,6 +332,62 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the essay ai-company-profits-per-person: the nine AI-related companies' net profit over their last four quarters ÷ world
+  // population, a year and a month, with the paper-gains share as a second line. Every number comes from src/ai-profits.js (data/ai-profits-2026.json,
+  // the same figures the essay is filled from), so a new NVIDIA quarter only needs the data file and a re-render. 1200x675, ja/en.
+  'aiprofits': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const ja = lang === 'ja';
+      require('../../../src/data.js');
+      const A = require('../../../src/ai-profits.js'), R = A.result();
+      const f = (key, fmt = 'int', cc) => A.render(lang, R, key, cc, fmt);
+      const usd = (key, fmt) => (ja ? `${f(key, fmt)}<small>ドル</small>` : `$${f(key, fmt)}`);
+      const thru = ja ? `${f('thruMin', 'my')}〜${f('thruMax', 'my').replace(/^\d+年/, '')}` : `${f('thruMin', 'mys').replace(/ \d+$/, '')}–${f('thruMax', 'mys')}`;
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb">${ja ? `AI関連の9社 ・ 直近4四半期の純利益（${thru}までの決算）` : `9 AI-related companies · net profit, last four quarters (to ${thru})`}</p>
+<h1 class="hl">${ja ? 'AI企業の利益を全員に配ったら、1人いくら？' : 'AI companies’ profits for all: how much each?'}</h1>
+<p class="sb">${ja ? `9社の純利益 ${f('net', 'tn2')}兆ドル ÷ 世界の人口 ${f('pop', 'oku1')}億人（世界銀行・2025年）` : `Net profit of $${f('net', 'tn2')} trillion ÷ ${f('pop', 'bn2')} billion people (World Bank, 2025)`}</p>
+<div class="cards">
+  <section class="c big"><p class="k">${ja ? '純利益を全部配ると' : 'All of the net profit'}</p><p class="v">${usd('net100PP')}<small>${ja ? '／年' : ' a year'}</small></p><p class="cmp">${ja ? `月<b>${f('net100PM', 'd2')}ドル</b>（約${f('net100PM', 'jman', 'jp')}円）` : `<b>$${f('net100PM', 'd2')}</b> a month`}</p><p class="d">${ja ? `世界の全員に1日3ドル配る費用の<b>${f('net100Yard', 'pct')}％</b>` : `<b>${f('net100Yard', 'pct')}%</b> of $3 a day for everyone`}</p></section>
+  <section class="c"><p class="k">${ja ? '含み益を除くと' : 'Minus paper gains'}</p><p class="v">${usd('exPaperPP')}<small>${ja ? '／年' : ' a year'}</small></p><p class="cmp">${ja ? `月${f('exPaperPM', 'd2')}ドル` : `$${f('exPaperPM', 'd2')} a month`}</p><p class="d">${ja ? `私たちの見積もり<br>1日3ドルの${f('exPaperYard', 'pct')}％` : `Our estimate. ${f('exPaperYard', 'pct')}% of $3 a day`}</p></section>
+  <section class="c"><p class="k">${ja ? '純利益の15％なら' : '15% of the net profit'}</p><p class="v">${usd('net15PP')}<small>${ja ? '／年' : ' a year'}</small></p><p class="cmp">${ja ? `月${f('net15PM', 'd2')}ドル` : `$${f('net15PM', 'd2')} a month`}</p><p class="d">${ja ? `1日3ドルの${f('net15Yard', 'pct')}％` : `${f('net15Yard', 'pct')}% of $3 a day`}</p></section>
+</div>
+<p class="nt">${ja ? `純利益の約<b>${f('paperShare', 'pct')}％</b>（税引き前${f('paper', 'oku')}億ドル）は、AnthropicやSpaceXなど、ほかの会社の株の値上がり（含み益）。現金ではない` : `About <b>${f('paperShare', 'pct')}%</b> of the net profit ($${f('paper', 'bn')}bn before tax) is paper gains on stakes in firms such as Anthropic and SpaceX, not cash`}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${ja ? '不労所得研究所' : 'Free <em>Lunch</em> Lab'}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${ja ? 'ja/' : ''}essays/ai-company-profits-per-person/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb{font-size:19px;color:#6CF0B0;font-weight:700}
+.hl{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${ja ? 44 : 38}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:20px;line-height:1.35;color:#C9D0F0}
+.cards{margin-top:20px;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:16px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:18px 22px;display:flex;flex-direction:column}
+.c.big{border-color:rgba(255,214,107,.7);background:rgba(255,214,107,.08)}
+.k{font-size:22px;color:#A9B2D8;font-weight:700}
+.v{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:60px;line-height:1.1;color:#FFFFFF;white-space:nowrap}
+.big .v{font-size:84px;color:#FFD66B}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.42em;margin-left:4px}
+.cmp{margin-top:14px;font-size:26px;line-height:1.35;color:#E3E8FF;word-break:auto-phrase}
+.cmp b{color:#FFD66B;font-weight:900}
+.d{margin-top:auto;font-size:20px;line-height:1.35;color:#C9D0F0}
+.d b{color:#6CF0B0;font-weight:900}
+.nt{margin:14px 0 12px;font-size:19px;line-height:1.4;color:#C9D0F0}
+.nt b{color:#FFD66B;font-weight:900}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:16px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay japan-basic-income-cost: Statistics Bureau population × amount × 12 at three of the essay's amounts,
   // against national tax revenue (FY2025 settled), plus the net cost of ¥70,000 with all public pensions replaced, computed from
   // data/japan-2026.json (the same file the build checks the essay tables against). 1200x675, ja/en.

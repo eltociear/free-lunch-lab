@@ -835,6 +835,185 @@ Cautions: Whether rewards need Orb verification is unknown, and we have not test
 
 ## Essays
 
+### Share out AI companies’ profits: how much would each person get?
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
+- Published: 2026-11-18
+
+Nine companies at the centre of the AI boom (NVIDIA, Microsoft, Alphabet, Amazon, Meta, Apple, Broadcom, Oracle and TSMC) made a combined net profit of about $1.08 trillion over their last four reported quarters.[1][10] The World Bank puts the world’s population in 2025 at 8.22 billion.[11] Shared equally, that is about $132 per person a year, or $11.00 a month.
+
+This site’s 211-country comparison (https://neteru-nyukin.eltociear.workers.dev/calc/countries/) uses the World Bank’s poverty line of $3.00 a day, converted into each country’s prices, as its standard amount.[13] Paying that to everyone in those 211 countries and territories for a year would cost about $3.95 trillion at market exchange rates.[12] A whole year of the nine companies’ net profit would cover about 27% of it, or 3.3 months.
+
+Operating profit (profit from the business itself, before interest, investment gains and losses, and tax) gives almost the same answer: $1.06 trillion, or $129 per person a year ($10.73 a month).
+
+| What is shared out | Total a year | Per person a year | Per person a month | Share of $3 a day for everyone |
+| --- | --- | --- | --- | --- |
+| All net profit | $1.08 trillion | $132 | $11.00 | 27% |
+| All operating profit | $1.06 trillion | $129 | $10.73 | 27% |
+| Net profit without paper gains (our rough estimate) | $879 billion | $107 | $8.92 | 22% |
+
+#### Which companies, and why these nine
+
+There is no official list of “AI companies”. We took the listed companies whose profits come most directly from what AI runs on and is sold through: the chip designers NVIDIA and Broadcom, the chipmaker TSMC, the cloud providers Microsoft, Alphabet (Google), Amazon and Oracle, and the big platforms Meta and Apple. Each made more than $10 billion of net profit over its last four quarters.
+
+None of them is purely an AI business. NVIDIA comes closest: in the quarter to 25 October 2026, its data-centre business brought in $107.6 billion of its $115.8 billion revenue.[1] Broadcom’s AI chips were $16.7 billion of its $29.6 billion in the quarter to 2 August 2026.[7] For the others, AI sits next to search and video advertising (Alphabet), online shopping (Amazon), Office and Windows (Microsoft), social-media advertising (Meta) and databases (Oracle). Apple reports no AI revenue at all; its profit comes overwhelmingly from the iPhone, services and other hardware, and the AI share of it is small and unknown.[6]
+
+Two other groups are left out of the totals and shown only as checks. Tesla made just $3.3 billion of net profit over its last four quarters, mostly from cars and energy; adding it would raise the per-person figure by only $0.40 a year.[25] The Korean memory makers SK hynix and Samsung Electronics, which supply the high-bandwidth memory used with AI chips, would add about $283 billion at the site’s 2025 exchange rate, taking the figure to $166.[26][27] We leave them out because part of their figures comes from secondary reports rather than the companies’ own releases, both are swollen by one-off non-operating items, and Samsung also sells phones, TVs and displays.
+
+#### Nine companies, four quarters
+
+Each company’s figures are the sum of its four latest reported quarters, so the periods do not line up exactly: most end in September 2026, Broadcom’s and Oracle’s in August, and NVIDIA’s in October 2026. Where a company reports only a full year, its fourth quarter is the year minus the other three. TSMC reports in New Taiwan dollars; we convert each quarter at the rate implied by the US-dollar revenue it reports. Market values are at the close of 13 November 2026.[10]
+
+| Company | Four quarters to | Net profit (US$ billion) | Operating profit (US$ billion) | Market value (US$ billion) |
+| --- | --- | --- | --- | --- |
+| NVIDIA[1] | Oct 2026 | 226 | 239 | 3,925 |
+| Microsoft[2] | Sep 2026 | 143 | 163 | 3,890 |
+| Alphabet[3] | Sep 2026 | 236 | 157 | 3,618 |
+| Amazon[4] | Sep 2026 | 135 | 104 | 2,883 |
+| Meta[5] | Sep 2026 | 75 | 79 | 1,640 |
+| Apple[6] | Sep 2026 | 132 | 158 | 5,177 |
+| Broadcom[7] | Aug 2026 | 38 | 43 | 1,657 |
+| Oracle[8] | Aug 2026 | 19 | 23 | 379 |
+| TSMC[9] | Sep 2026 | 81 | 91 | 1,850 |
+| Total | – | 1,085 | 1,058 | 25,020 |
+
+For Alphabet and Amazon, net profit is far above operating profit. The reason is the next section.
+
+#### Part of the profit is other AI companies going up in value
+
+Net profit includes gains on shares a company holds in other companies, even shares it has not sold. When a private company such as an AI lab raises money at a higher valuation, an investor holding its shares can book the rise as profit. Over the four quarters, items of this kind came to about $247 billion before tax, equal to about 23% of the nine companies’ net profit.
+
+Alphabet: $130 billion of net gains on equity securities. Its quarterly report says this year’s gains were “primarily related to net unrealized gains on our nonmarketable equity securities largely from a private company, and SpaceX prior to its initial public offering”. It does not name the private company.[14]
+
+Amazon: $70 billion of other income. Its quarterly report says the gains in the first nine months of 2026 came “primarily from upward adjustments for observable changes in price relating to our nonvoting preferred stock in Anthropic”.[15]
+
+NVIDIA: $31.0 billion of gains from equity securities.[16] Microsoft: $14.4 billion of other income, a line that includes items related to its investment in OpenAI; we count the whole line, not only investment gains, so this part is approximate.[2] Oracle: $2.9 billion of gains on investments.[8]
+
+Gains like these are not cash. They are a higher price put on shares the company still holds, and they can go into reverse: in the third quarter of 2026 Alphabet booked a loss of $8.7 billion on its equity securities, “largely from SpaceX”.[14] Taking them out, after tax at the nine companies’ average effective tax rate over the period (17%), leaves net profit of about $879 billion. That is our rough estimate, not a figure any company reports. Shared out, it would be about $107 per person a year.
+
+#### If a share of it were handed out every year
+
+We show three shares of profit. 15% is the global minimum rate of corporate tax agreed through the OECD and G20,[24] but here it is not a tax rate: these profits have already been taxed, so 15% means handing out 15% of what is left after tax. 25% is a round figure in between, and 100% is all of it.
+
+| Handed out each year | Total a year | Per person a year | Per person a month | Share of $3 a day for everyone |
+| --- | --- | --- | --- | --- |
+| 15% of net profit | $163 billion | $20 | $1.65 | 4% |
+| 25% of net profit | $271 billion | $33 | $2.75 | 7% |
+| 100% of net profit | $1,085 billion | $132 | $11.00 | 27% |
+| 15% of operating profit | $159 billion | $19 | $1.61 | 4% |
+| 25% of operating profit | $264 billion | $32 | $2.68 | 7% |
+| 100% of operating profit | $1,058 billion | $129 | $10.73 | 27% |
+
+Profit is a flow. Market value is a stock, like the billionaires’ wealth in our earlier essay (https://neteru-nyukin.eltociear.workers.dev/essays/billionaire-wealth-per-person/). Shared out once, the nine companies’ $25.0 trillion would come to about $3,050 per person, enough for about 76 months of $3 a day for everyone. But it could be done only once, and selling that many shares would push their price down.
+
+Paid out every year as a share of market value instead: 2.5% is the yearly rate Sam Altman proposed in his 2021 essay “Moore’s Law for Everything”, for a fund paid in company shares.[17] 5% is the share of their assets that US private foundations must pay out each year, the same yardstick as in the billionaire essay.[28]
+
+| Paid out each year | Total a year | Per person a year | Per person a month | Share of $3 a day for everyone |
+| --- | --- | --- | --- | --- |
+| 2.5% of market value | $625 billion | $76 | $6.34 | 16% |
+| 5% of market value | $1,251 billion | $152 | $12.69 | 32% |
+
+None of these yearly figures reaches a $3-a-day floor for everyone. The largest, all of the net profit, would cover about 27% of it, and 5% of market value a year about 32%.
+
+A curiosity, not an option: if the nine companies’ net profit went only to the 122.8 million people in Japan, each would get about ¥1.32 million a year at the 2025 exchange rate this site uses.[12] The money comes from customers all over the world, so this only gives a sense of scale.
+
+#### The AI labs themselves lose money
+
+The companies that build the best-known AI models are not among the nine, because they do not make a profit. Anthropic, which has filed to list its shares, reported revenue of $33.2 billion in the first nine months of 2026, against $4.6 billion in all of 2025, and an operating loss of $1.3 billion for the nine months ($8.1 billion in 2025). Its net loss was far larger, $104.0 billion for the nine months, mostly from non-cash changes in the value of convertible notes, derivatives and SAFEs ($94.3 billion). These figures are from its amended registration statement of 10 November 2026.[18]
+
+OpenAI is private and publishes no accounts. Press reports of its investor materials, which we could not check, put its revenue at about $10 billion in the third quarter of 2026 and its operating loss at about $10.9 billion (Bloomberg, The Wall Street Journal and The Information, as reported by Gulf News and PYMNTS).[19] For the first quarter, The Information reported a cash burn of $3.7 billion (via The Next Web).[20] xAI, the maker of Grok, is now part of SpaceX, listed since June 2026; the AI segment, which also includes X and Cursor, had an operating loss of $3.3 billion over the first nine months of 2026.[21]
+
+So far, the profits of the AI boom sit mainly with the companies that sell the chips, the cloud computing and the big platforms, not with the labs. Anthropic has said it will put 5% of its shares into a public benefit fund; we looked at that in a separate essay (https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/).[22]
+
+#### Proposals that come with a rate
+
+Sam Altman (2021): each year, 2.5% of the market value of large companies, paid in shares, and 2.5% of the value of privately held land, into an American Equity Fund. He wrote that “a decade from now each of the 250 million adults in America would get about $13,500 every year”.[17]
+
+Anthropic (October 2026): 5% of its shares into a public benefit fund, subject to shareholder approval, with the board able to add 2% for every 50% rise in value above a baseline. Its uses may include “direct distributions to specific populations”.[22]
+
+H.R. 10044 (US House of Representatives, September 2026; Sara Jacobs, Greg Casar and Valerie Foushee): according to Fortune, an excise tax on major AI companies of the higher of 2% of the value of AI tokens or 3% of AI-services revenue while unemployment is 5% or less, rising with unemployment, with the money going to job creation rather than cash payments. We have not read the bill text.[23]
+
+The OECD/G20 global minimum tax: a minimum effective tax rate of 15% for groups with revenue over €750 million, applied from 2024. It is a floor on corporate tax, not a tax on AI.[24]
+
+Germany’s digital minister, Karsten Wildberger, has said the very high turnover from AI should be taxed, but has named no rate; see our essay on Germany (https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/).
+
+#### Why it could not simply be handed out
+
+Not all of it is AI. Apple’s profit comes almost entirely from devices and services, Amazon’s includes online shopping, Microsoft’s includes Office and Windows, and Alphabet’s and Meta’s come largely from advertising. No company reports how much of its profit comes from AI.
+
+Much of it is already being spent. The companies are pouring cash into data centres. Amazon spent $215 billion on property and equipment over its last four quarters, which it says “primarily reflects investments in artificial intelligence”, and its free cash flow over the period was negative, at −$42.4 billion.[4] Oracle’s free cash flow over its last four quarters was −$23.7 billion.[8] Alphabet spent $132.0 billion on property and equipment in the first nine months of 2026,[3] and Meta expects to spend $135–145 billion this year.[5] The companies also use profit to buy back their own shares. Handing out all of it would leave nothing for either.
+
+Paper gains are not cash. About 23% of the net profit is a higher value put on shares in other companies, which cannot be paid out without selling them.
+
+Fiscal years differ. Apple’s year ends in September, Microsoft’s in June, NVIDIA’s in January; using each company’s last four quarters avoids mixing years, but the periods still differ by a few months.
+
+Exchange rates move. Yen figures use the 2025 average rate in the World Bank data this site uses, about ¥149.7 to the dollar.[12] On 13 November 2026 the market rate was about ¥159.9, so at that rate the yen figures would be about 7% higher.
+
+Prices would not stay put. Taking a large share of the profit every year would lower what the companies are worth, and the market-value figures assume it would not.
+
+At 2025 average exchange rates from the World Bank data this site uses, $132 a year is about €117, £100, ¥19,800 or ₹11,500; a month, about €9.74, ¥1,650 or ₹960.[12]
+
+#### What the numbers show
+
+Shared out in full, a year of the nine companies’ net profit comes to about $132 per person, about $11.00 a month: 27% of a $3-a-day floor for everyone. Without the paper gains it is nearer $107, and a 15% or 25% share of it comes to $20 to $33 a year. The companies’ market value is much larger, about $3,050 per person, but it could be shared out only once.
+
+For what a basic income would cost in each country, see the world map (https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-world-map/) and the 211-country comparison (https://neteru-nyukin.eltociear.workers.dev/calc/countries/). On paying for one from AI, see universal high income: who pays? (https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/), has generative AI taken our jobs? (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/) and should AI agents get a basic income? (https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/).
+
+#### Assumptions and limits
+
+Four quarters. Each company’s figures are the sum of its four latest quarters reported by 18 November 2026, from its releases and filings; quarters a company does not report separately are its full year minus the other three. Every quarter and its source is listed in our data file.[10]
+
+Net profit as reported. Net profit is GAAP or IFRS net income attributable to shareholders, after tax. Operating profit is GAAP operating income (for TSMC, income from operations), so it is before tax and could not be paid out in full. The paper-gains figure includes Microsoft’s and Amazon’s whole other-income lines, so it is approximate, and the profit without them is our estimate.
+
+Market values. Closing prices on 13 November 2026 times the shares outstanding on each company’s latest filing; for TSMC, its share count at the end of 2025 and the Taiwan dollar rate that day. Alphabet’s and Meta’s unlisted class B shares are valued at the class A price.[10]
+
+Populations and prices. World population is the World Bank’s 2025 figure.[11] Japan’s is the October 2026 estimate in the site’s data. The $3.00 a day is the World Bank’s poverty line in 2021 PPP dollars, converted into local prices as in the comparison; summed at market exchange rates it costs $3.95 trillion a year.[12][13]
+
+Not a proposal. The shares are yardsticks, not policies we propose, and nothing here says whether these profits should be taxed or shared out. The numbers only show the size of the sums.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/billionaire-wealth-per-person/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/
+
+Sources:
+
+1. NVIDIA — results for Q3 FY2027, the quarter to 25 October 2026 (SEC filing); the other three quarters from its 10-K for fiscal 2026 and its later filings, listed in our data file: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm
+2. Microsoft — results for Q1 FY2027, the quarter to 30 September 2026, with the OpenAI items in its non-GAAP reconciliation (SEC filing, exhibit 99.1): https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm
+3. Alphabet — results for Q3 2026, the quarter to 30 September 2026: Google Cloud, purchases of property and equipment, gains on equity securities (SEC filing, exhibit 99.1): https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm
+4. Amazon — results for Q3 2026, the quarter to 30 September 2026: AWS, purchases of property and equipment and free cash flow over the trailing twelve months (SEC filing, exhibit 99.1): https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm
+5. Meta Platforms — results for Q3 2026, the quarter to 30 September 2026: capital expenditures and the 2026 outlook, the settlement charge (SEC filing, exhibit 99.1): https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm
+6. Apple — results for Q4 FY2026, the quarter to 26 September 2026 (SEC filing, exhibit 99.1): https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/a8-kex991q4202609262026.htm
+7. Broadcom — results for Q3 FY2026, the quarter to 2 August 2026: AI semiconductor revenue (SEC filing, exhibit 99): https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm
+8. Oracle — results for Q1 FY2027, the quarter to 31 August 2026: capital expenditures and free cash flow over the trailing four quarters (SEC filing, exhibit 99.1): https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm
+9. TSMC — management report for Q3 2026, the quarter to 30 September 2026, in New Taiwan dollars with US-dollar revenue (SEC filing): https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm
+10. Free Lunch Lab — data/ai-profits-2026.json: every quarter of the nine companies with its source, how derived quarters were worked out, share counts and closing prices of 13 November 2026, the paper-gain items, and the companies and labs left out: https://github.com/eltociear/free-lunch-lab/blob/main/data/ai-profits-2026.json
+11. World Bank — Population, total (SP.POP.TOTL), World, 2025: 8,215,424,893: https://data.worldbank.org/indicator/SP.POP.TOTL?locations=1W
+12. Free Lunch Lab — countries.json: population, GDP in local currency and US dollars, and the cost of the $3.00-a-day poverty line for 211 countries and territories (CC BY 4.0): https://neteru-nyukin.eltociear.workers.dev/countries.json
+13. World Bank — June 2025 update to the global poverty lines: the international poverty line of $3.00 a day in 2021 PPP: https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines
+14. Alphabet — Form 10-Q for the quarter to 30 September 2026: gains on nonmarketable equity securities “largely from a private company, and SpaceX prior to its initial public offering”; the third-quarter loss “largely from SpaceX”: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm
+15. Amazon — Form 10-Q for the quarter to 30 September 2026: other income “primarily from upward adjustments for observable changes in price relating to our nonvoting preferred stock in Anthropic”: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm
+16. NVIDIA — CFO commentary for Q3 FY2027: gains from equity securities: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm
+17. Sam Altman — “Moore’s Law for Everything” (March 2021): an American Equity Fund taking 2.5% of the market value of large companies and 2.5% of the value of privately held land each year: https://moores.samaltman.com/
+18. Anthropic PBC — amended registration statement (Form S-1/A, 10 November 2026): revenue, operating loss, net loss and the fair-value changes behind it, for 2025 and the nine months to 30 September 2026: https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm
+19. Gulf News — OpenAI revenue hits $10bn but operating loss widens (citing Bloomberg, The Wall Street Journal and The Information); also PYMNTS: https://gulfnews.com/business/openai-revenue-hits-10b-but-operating-loss-widens-1.500743326 (also https://www.pymnts.com/earnings/2026/openai-revenue-hits-10-billion-as-losses-mount/)
+20. The Next Web — OpenAI burned $3.7 billion in the first quarter of 2026 (citing The Information): https://thenextweb.com/news/openai-burned-3-7-billion-q1-2026
+21. SpaceX — Form 10-Q for the quarter to 30 September 2026: the Super Intelligence segment (xAI, X and Cursor): https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm
+22. Anthropic — Investing in the public benefit (18 October 2026): 5% of shares for a public benefit fund: https://www.anthropic.com/news/public-benefit-fund
+23. Fortune — a House bill would tax AI tokens to fund jobs (1 September 2026), on H.R. 10044: https://fortune.com/2026/09/01/bill-tax-ai-tokens-fund-jobs-technology-unemployment/
+24. OECD — International tax: the global minimum tax (Pillar Two), a 15% minimum effective rate for groups with revenue over €750 million: https://www.oecd.org/en/topics/cross-border-and-international-tax
+25. Tesla — results for the quarter to 30 September 2026 (SEC filing, exhibit 99.1); earlier quarters in our data file: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm
+26. SK hynix — third-quarter 2026 business results (net profit; the fourth quarter of 2025 worked out from the full year, partly from secondary reports): https://news.skhynix.com/en/q3-2026-business-results/
+27. Samsung Electronics — third-quarter 2026 results (the third-quarter and late-2025 figures from secondary reports; the first half from Samsung’s statement of income): https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results (also https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_con_quarter02_soi.pdf)
+28. IRS — Private foundations: minimum investment return (5% of the fair market value of non-charitable-use assets): https://www.irs.gov/charities-non-profits/private-foundations/minimum-investment-return
+
 ### What would a basic income cost Japan? From ¥10,000 to ¥100,000 a month
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/
@@ -1038,6 +1217,8 @@ Quotes. Merz’s words are from the official German transcript; the translations
 
 Not a proposal. The amounts are yardsticks. Nothing here says whether Germany should introduce a basic income; the numbers only show the size of the sums.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
@@ -1175,6 +1356,8 @@ Prices and exchange rates. The $3.00 a day is the World Bank’s poverty line in
 Populations. World population is the World Bank’s 2025 figure.[2] Country populations are those in the site’s data: mostly World Bank figures for 2025, with official national figures for seven featured countries (for Japan, the October 2026 estimate).[3]
 
 Not a proposal. The rates are yardsticks, not policies we propose, and nothing here says whether wealth should be taxed or shared out. The numbers only show the size of the sums.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-world-map/
 
@@ -1946,6 +2129,8 @@ Opinion: Here is what the data show as of November 2026. AI is not yet visible i
 Opinion: This is a disruption that falls first on the people with the least protection: those with no work history, no employer and no claim on unemployment insurance. That is where the simplest feature of a basic income, that it reaches everyone without asking whether you have worked, matters most. It is not the only answer, and its critics are right that it costs a great deal and that supply matters. But a floor that is ready before it is needed is easier to build than one improvised in a crisis.
 
 Opinion: In part 2 (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/), we turn to creative work: illustrators, translators, writers and voice actors, where the change has come fastest.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/
 
@@ -2843,6 +3028,8 @@ Opinion: The numbers. Stockholder approval, the undisclosed baseline, and how mu
 
 Opinion: Until then, the fund is a promise with an unfinished design. Read it the way this site reads every free lunch. Who pays: here, we know. Who decides, and who receives: not yet.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/use-to-own/
@@ -3251,6 +3438,8 @@ Opinion: Universal high income is a forecast, not a policy. It may even be a goo
 
 Opinion: In our previous essay (https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/), we argued that AI agents need operating budgets, not a basic income. Put the two together and the picture is simple: agents get budgets, humans get dividends, and someone has to build the pipe in between. Until someone does, treat any promise of a high income the way this site treats every free lunch. Check who is paying.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/billionaire-wealth-per-person/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-agent-basic-income/
@@ -3319,6 +3508,8 @@ Opinion: For an agent basic income to make sense, we think at least three things
 
 This site has a category called “For AI agents.” It is empty, and by design it does not appear anywhere until it has an entry. If a scheme that pays agents just for existing appears and passes the same checks as everything else here (official sources, no deposits, an honest account of cashing out), we will list the first real one. Until then, the free lunch still needs a human to eat it.[7]
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/moltbook-basic-income/
@@ -3335,7 +3526,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-17. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-18. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -3440,7 +3631,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-16
+- Last commit: 2026-11-17
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -3716,7 +3907,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Group: Proof of personhood
 - Language: Rust
 - License: MIT
-- Stars: 42
+- Stars: 43
 - Last commit: 2026-11-17
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
@@ -3815,7 +4006,7 @@ Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it search
 - Group: Simulators & research
 - Language: Python
 - License: CC0-1.0 (LICENSE)
-- Stars: 321
+- Stars: 322
 - Last commit: 2026-11-14
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income

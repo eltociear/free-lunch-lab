@@ -1259,6 +1259,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-4a608f914a.woff2",
     "chars": "÷撤暦"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-6571a59b4e.woff2",
+    "chars": "器巨建"
    }
   ],
   "ja:body:700": [
@@ -1513,6 +1517,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-dd93ecfb38.woff2",
     "chars": "÷撤暦"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-0b65c9df01.woff2",
+    "chars": "器巨建"
    }
   ],
   "ja:display": [
@@ -1679,6 +1687,10 @@
    {
     "file": "dela-gothic-one-400-ja-415b155be8.woff2",
     "chars": "消％"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-099f9e2e4f.woff2",
+    "chars": "値半四"
    }
   ],
   "ja:dot": [
@@ -2003,6 +2015,10 @@
    {
     "file": "noto-sans-sc-400-zh-47cebd4e49.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-edf1f1d1ad.woff2",
+    "chars": "云伟厂屏彭披潮牌甲粗粹苹"
    }
   ],
   "zh:body:700": [
@@ -2273,6 +2289,10 @@
    {
     "file": "noto-sans-sc-700-zh-8c3ccba535.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-9ac7746807.woff2",
+    "chars": "云伟厂屏彭披潮牌甲粗粹苹"
    }
   ],
   "zh:display": [
@@ -2435,6 +2455,10 @@
    {
     "file": "noto-sans-sc-900-zh-3ae4fbec3d.woff2",
     "chars": "替"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-888df7d058.woff2",
+    "chars": "具季室润涨"
    }
   ],
   "zh:dot": [

@@ -99,6 +99,7 @@ const ESSAY_DATA = {
   'billionaire-wealth-per-person': { calc: ['us', 'cn', 'in', 'de', 'jp', 'hk'] },
   'germany-merz-basic-income-cost': { calc: ['de'] },
   'japan-basic-income-cost': { calc: ['jp'] },
+  'ai-company-profits-per-person': { calc: ['us', 'jp'] },
 };
 for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
@@ -329,6 +330,10 @@ const jpnDrift = (() => {
   }
   return bad.length ? `WARNING: japan-basic-income-cost: the tables differ from data/japan-2026.json and the calculator data: ${bad.join(', ')}; update the essay (all languages)` : '';
 })();
+// エッセイ ai-company-profits-per-person の数字は、src/data.js を読んだときに src/ai-profits.js が data/ai-profits-2026.json から埋めている（{{aip.…}}）。
+// ここでは en の会社の表の計算し直し、データの形（4四半期など）、本文の言い回しの前提、各言語が en と同じ数字のキーを使っているか、NVIDIA に左右される数字を
+// 手で書いていないか、期限を過ぎた未発表の四半期を確かめて知らせる。ar はラテン文字を LRI/PDI で囲み、hi は CJK と isolate なし（違えば止める）
+const aipDrift = require('./src/ai-profits.js').check(require('./src/data.js'), ESSAY_LINK);
 const mapRegionName = (lang, id) => { const c = CALC_WORLD.find(x => x.id === id); if (c) return c.name[lang]; try { return new Intl.DisplayNames([LANG_TAG[lang]], { type: 'region' }).of(id.toUpperCase()); } catch { return id.toUpperCase(); } };
 const mapYear = (lang, r) => (r.base ? (r.base.year ? String(r.base.year) : T[lang].mapBudgetYear) : '');
 function mapTip(lang, r, id) {
@@ -3087,6 +3092,7 @@ if (mapDrift) console.warn(mapDrift);
 if (billDrift) console.warn(billDrift);
 if (gerDrift) console.warn(gerDrift);
 if (jpnDrift) console.warn(jpnDrift);
+for (const w of aipDrift) console.warn(`WARNING: ai-company-profits-per-person: ${w}`);
 if (workDrift) console.warn(workDrift);
 if (hhDrift) console.warn(hhDrift); else console.log(`household: the essay's ${HOUSEHOLD.check.length} households match (main, range, benefits now, basic income)`);
 if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);
