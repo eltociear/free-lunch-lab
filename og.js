@@ -114,6 +114,9 @@ function siteFonts(lang) {
 const { unicodeRange } = require('./fonts.js');
 const CAT_COLOR = { 'crypto-bi': '#9B82FF', 'ai-agent': '#22B8CF', app: '#3FCF92', pointsite: '#F59A3C', career: '#EE6A93', exchange: '#5B97F0', finance: '#2BC0C0' };
 const SKY = `background:radial-gradient(70% 90% at 88% 0%,#3B2A86 0%,transparent 60%),radial-gradient(60% 70% at 0% 100%,#0F3B5C 0%,transparent 60%),linear-gradient(180deg,#0A0F24,#121741)`;
+// ヒンディー語: デーヴァナーガリーは行が高いので、.mid の中身が入りきらないと（overflow:hidden の）.desc などが
+// 縮められて最後の行の下（ु ू ्र など）が切れていた。縮ませずにはみ出させ、下の「全体が入るまで小さくする」に任せる
+const HI_FIX = '.mid>*{flex-shrink:0}';
 function frame(lang, cls, inner, fonts) {
   const L = T[lang];
   const rtl = lang === 'ar';
@@ -141,6 +144,7 @@ h1 small{display:block;font-family:"${BODY[lang]}",sans-serif;font-weight:700;fo
 .chips .meter i{display:inline-block;width:14px;height:14px;border-radius:3px;margin-inline-start:4px;background:rgba(255,255,255,.18)}
 .chips .meter i.on{background:#6CF0B0}
 .chips .site{margin-inline-start:auto;background:none;border:0;color:#A9B2D8;font-size:22px;padding:0}
+${lang === 'hi' ? HI_FIX : ''}
 </style></head><body class="${cls}"><div class="moon"></div>
 <p class="top"><b>${esc(L.brandPlain)}</b><span>${esc(L.tagline)}</span></p>
 ${inner}
