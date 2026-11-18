@@ -70,8 +70,8 @@ function compute(s) {
   var share = fill(L.calcShare, { country: (c.inName && c.inName[LANG]) || c.name[LANG], who: who, amount: money(s.m, c), total: money(total, c), pct: pct(total / c.gdp.value) });
   return { c: c, n: n, total: total, rows: rows, share: share };
 }
-// シェア用の URL（?s=calc で X などからの訪問を数える）と、X に入れる文（結果の文・問いかけ・URL・ハッシュタグ1つ）
-function shareUrl(s, url) { return url + '?' + query(s) + '&s=calc'; }
+// シェア用の URL（?s=calc、国のページでは ?s=share-cty-{国} で X などからの訪問を数える）と、X に入れる文（結果の文・問いかけ・URL・ハッシュタグ1つ）
+function shareUrl(s, url) { return url + '?' + query(s) + '&s=' + (PAGE_C ? 'share-cty-' + PAGE_C : 'calc'); }
 function shareText(s, url) {
   var share = compute(s).share;
   return share + (/[。？！]$/.test(share) ? '' : ' ') + L.calcAsk + '\n' + shareUrl(s, url) + ' ' + L.calcTag;
@@ -113,6 +113,8 @@ function result(s, url) {
     }).join('') + '</ul>'
     + (D.base && PAGE_C !== c.id ? '<p class="cx-cty"><a href="' + D.base + c.id + '/">' + esc(fill(L.calcCtyLink, { country: c.name[LANG] })) + '</a></p>' : '')
     + '<div class="qz-acts cx-acts"><a class="btn solid qz-x" id="cxX" href="' + esc(x) + '" target="_blank" rel="noopener">' + esc(L.calcShareX) + '</a>'
+    // はてなブックマーク（日本語だけ）: ページ（クエリなし）のエントリーへのただのリンク
+    + (LANG === 'ja' ? '<a class="btn line" href="https://b.hatena.ne.jp/entry/s/' + esc(url.replace(/^https?:\/\//, '')) + '" target="_blank" rel="noopener" aria-label="はてなブックマークに追加">はてブ</a>' : '')
     + '<button class="btn line cx-copy" type="button" id="cxCopy" data-url="' + esc(shareUrl(s, url)) + '">' + esc(L.copyLink) + '</button></div>'
     + '<p class="cx-copied" id="cxCopied" role="status" aria-live="polite"></p>';
 }

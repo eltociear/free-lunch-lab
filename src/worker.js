@@ -30,7 +30,7 @@ export default {
       if (request.method === 'GET' && res.status === 200 && type.startsWith('text/html') && env.PAGEVIEWS) {
         const first = url.pathname.split('/')[1];
         const lang = LANGS.has(first) ? first : 'en';
-        const s = (url.searchParams.get('s') || '').slice(0, 16).replace(/[^\w-]/g, '');
+        const s = (url.searchParams.get('s') || '').slice(0, 32).replace(/[^\w-]/g, '');
         let ref = '';
         try { const r = new URL(request.headers.get('referer') || ''); ref = r.host === url.host ? 'self' : r.host; } catch {}
         const bot = BOT.test(request.headers.get('user-agent') || '') ? '1' : '0';
@@ -48,7 +48,7 @@ export default {
 // 1リクエストで1件だけ。どの結果でも 204 を返す（キャッシュしない）。記録の列の意味はサーバー側の記録と同じで、blob6 = 'js'
 const PAGE_PATH = /^\/(?:[a-z0-9-]{1,80}\/){0,4}$/;
 const HOST = /^[a-z0-9-]{1,63}(?:\.[a-z0-9-]{1,63})*(?::\d{1,5})?$/i;
-const MARK = /^[\w-]{0,16}$/;
+const MARK = /^[\w-]{0,32}$/;
 const NO_STORE = { 'cache-control': 'no-store' };
 async function beacon(request, env, url) {
   if (request.method !== 'POST') return new Response(null, { status: 405, headers: { allow: 'POST', ...NO_STORE } });

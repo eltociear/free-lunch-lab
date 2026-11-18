@@ -101,11 +101,19 @@ function summary(s) {
   var r = calc(s, chosen(s)), g = range(s);
   return { r: r, g: g, b: bucket(r.net) };
 }
-// シェア用の URL（?r= は OG 画像の区分、?s=hh-share で X などからの訪問を数える）と、X に入れる文（結果の文・URL・ハッシュタグ1つ）
-function shareUrl(s, url) { return url + '?' + query(s) + '&r=' + summary(s).b + '&s=hh-share'; }
+// シェア用の URL: 入力（家族・年収など）は入れず、OG 画像の区分（?r=）と経路の印（?s=share-hh、X 以外は share-hh-{経路}）だけ。
+// 開いた人には初期値の家計が出る（自分の家で計算し直す）。X に入れる文は、画面の見出しと同じ月の差し引き（得・損で文を変える）・URL・ハッシュタグ1つ
+function shareUrl(s, url, ch) { return url + '?r=' + summary(s).b + '&s=share-hh' + (ch ? '-' + ch : ''); }
+// 日本語・中国語のシェアの文の金額は「+3.2万円」の形（1万未満は「+5000円」）
+function short(n) {
+  n = Math.round(n);
+  var s = n > 0 ? '+' : n < 0 ? '−' : '±', a = Math.abs(n);
+  if (!D.fmt.man) return sgn(n);
+  return s + (a >= 10000 ? String(Math.round(a / 1000) / 10) + '万' : String(a)) + D.fmt.cur;
+}
 function shareHead(s) {
-  var x = summary(s);
-  return fill(x.g.min === x.g.max ? L.hhShare1 : L.hhShare, { amount: yen(s.m), year: sgn(12 * x.r.net), who: who(s), range: rangeText(x.g) });
+  var net = summary(s).r.net, k = Math.round(net) > 0 ? 'hhShareUp' : Math.round(net) < 0 ? 'hhShareDown' : 'hhShareZero';
+  return fill(L[k], { amount: yen(s.m), n: short(net), a: yen(net) });
 }
 function shareText(s, url) { return shareHead(s) + '\n' + shareUrl(s, url) + ' ' + L.calcTag; }
 // シェア用の画像（canvas）の文字
@@ -183,14 +191,15 @@ function result(s, url, js) {
     + '<p class="hh-fund"><b>' + esc(L.hhFundH) + '</b> ' + (s.m === D.takenaka ? '' : esc(fill(L.hhFund, { amount: yen(s.m), total: fund.total, pct: fund.pct })) + ' ') + esc(L.hhFund7) + '<br>' + esc(L.hhTax) + '</p>';
   if (!js) return out;
   var x2 = 'https://x.com/intent/post?text=' + encodeURIComponent(shareText(s, url));
-  var su = shareUrl(s, url);
-  var second = LANG === 'ja' ? ['LINE', 'https://social-plugins.line.me/lineit/share?url=' + encodeURIComponent(su)] : ['WhatsApp', 'https://wa.me/?text=' + encodeURIComponent(shareHead(s) + '\n' + su)];
+  var second = LANG === 'ja' ? ['LINE', 'https://social-plugins.line.me/lineit/share?url=' + encodeURIComponent(shareUrl(s, url, 'line'))] : ['WhatsApp', 'https://wa.me/?text=' + encodeURIComponent(shareHead(s) + '\n' + shareUrl(s, url, 'wa'))];
+  // はてなブックマーク（日本語だけ）: 計算機のページ（クエリなし）のエントリーへのただのリンク
+  var hb = LANG === 'ja' ? '<a class="btn shr-o" href="https://b.hatena.ne.jp/entry/s/' + esc(url.replace(/^https?:\/\//, '')) + '" target="_blank" rel="noopener" aria-label="はてなブックマークに追加">はてブ</a>' : '';
   return out + '<div class="hh-share"><h2 class="cx-cmph hh-h">' + esc(L.hhShareH) + '</h2>'
     + '<figure class="hh-card"><canvas id="hhCv" width="1200" height="630" role="img" aria-label="' + esc(shareHead(s)) + '"></canvas></figure>'
-    + '<div class="qz-acts hh-acts"><button class="btn solid qz-x" type="button" id="hhImg">' + esc(L.hhSaveImg) + '</button>'
-    + '<a class="btn shr-o" id="hhX" href="' + esc(x2) + '" target="_blank" rel="noopener">' + esc(L.hhShareX) + '</a>'
-    + '<a class="btn shr-o" href="' + esc(second[1]) + '" target="_blank" rel="noopener">' + iso(second[0]) + '</a>'
-    + '<button class="btn shr-o" type="button" id="hhCopy" data-url="' + esc(su) + '">' + esc(L.copyLink) + '</button></div></div>';
+    + '<div class="qz-acts hh-acts"><a class="btn solid qz-x" id="hhX" href="' + esc(x2) + '" target="_blank" rel="noopener">' + esc(L.hhShareX) + '</a>'
+    + '<a class="btn shr-o" href="' + esc(second[1]) + '" target="_blank" rel="noopener">' + iso(second[0]) + '</a>' + hb
+    + '<button class="btn shr-o" type="button" id="hhImg">' + esc(L.hhSaveImg) + '</button>'
+    + '<button class="btn shr-o" type="button" id="hhCopy" data-url="' + esc(shareUrl(s, url, 'copy')) + '">' + esc(L.copyLink) + '</button></div></div>';
 }
 `;
 
@@ -199,7 +208,7 @@ const BOOT = String.raw`
 (function(){
   var form = document.getElementById('hh'), ctl = document.getElementById('hhCtl'), res = document.getElementById('hhRes'), live = document.getElementById('hhLive'), url = form.getAttribute('data-url');
   var q = {}; location.search.replace(/^\?/, '').split('&').forEach(function (kv) { var p = kv.split('='); if (p[0]) try { q[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || ''); } catch (e) {} });
-  var s = parse(q), mark = /^[\w-]{1,16}$/.test(q.s || '') ? q.s : '';
+  var s = parse(q), mark = /^[\w-]{1,32}$/.test(q.s || '') ? q.s : '';
   var touch = window.matchMedia && matchMedia('(pointer:coarse)').matches;
   function focusKey() {
     var a = document.activeElement;

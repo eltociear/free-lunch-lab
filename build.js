@@ -135,15 +135,20 @@ const qzPath = l => `${urlPath(l)}shindan/`;
 const qzAbs = l => SITE_URL + qzPath(l);
 const qzTypePath = (l, t) => `${qzPath(l)}${t.id}/`;
 const qzTypeAbs = (l, t) => SITE_URL + qzTypePath(l, t);
-// 結果のシェア用 URL: 診断の入口（/shindan/?r={type}&s={経路}）。開いた人はそのまま診断を始められる。s は経路ごとの印（wa / line / tg / x / copy / native）
-// src/worker.js が r を見て、og:image などをそのタイプのカード（src/og/shindan/{lang}/{type}.jpg）に差し替える。canonical はクエリなしのまま
-const qzShareAbs = (l, t, s = 'copy') => `${qzAbs(l)}?r=${t.id}&s=${s}`;
+// 結果のシェア用 URL: その結果のページ（/shindan/{type}/?s=share-quiz-{type}、X 以外は share-quiz-{type}-{経路}: line / wa / tg / copy / native）。
+// 結果のページの og:image はもともとそのタイプのカード（src/og/shindan/{lang}/{type}.jpg）。シェアから来た人には、ページの JS が「友だちの結果」の1行と診断へのボタンを出す。
+// 前の形（診断の入口 /shindan/?r={type}&s=…）のリンクも、src/worker.js がカードに差し替えるので、そのまま使える
+const qzShareAbs = (l, t, ch = '') => `${qzTypeAbs(l, t)}?s=share-quiz-${t.id}${ch && ch !== 'x' ? `-${ch}` : ''}`;
 // 差し替える og:title。一人称の結果の文に、診断の名前（文に入っていなければ）かサイト名を足す
 const qzShareTitle = (l, t) => { const x = T[l].shindanShareText.replace('{type}', t.name[l]); return `${x} | ${x.includes(T[l].shindanTitle) ? T[l].brandPlain : T[l].shindanTitle}`; };
 const QZ_KEYS = ['shindanTitle', 'shindanH1', 'shindanDesc', 'shindanIntro', 'shindanQ', 'shindanBack', 'shindanEb', 'shindanYouAre', 'shindanMatch', 'shindanShareX', 'shindanShareText', 'shindanTag', 'shindanYours', 'shindanFriend', 'shindanRetry', 'shindanOthers', 'shindanHome', 'shindanAll', 'shindanNote', 'shindanCardQ', 'shindanCardSub', 'shindanCardBtn'];
 // 診断への入口のカード（トップのヒーローとエッセイの終わり）。?s= でどこから押されたかを数える。canonical はクエリなしのまま
 const qzCard = (lang, src) => { const L = T[lang]; return `<div class="qzc"><div class="qzc-t"><p class="qzc-e">${esc(L.shindanTitle)}</p><p class="qzc-q">${esc(L.shindanCardQ)}</p><p class="qzc-s">${esc(L.shindanCardSub)}</p></div><a class="btn solid" href="${qzPath(lang)}?s=${src}">${esc(L.shindanCardBtn)}</a></div>`; };
 for (const l of LANGS) for (const k of QZ_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+// 結果のページのシェアまわりの文（シェアの文・ボタン・友だちの結果の1行・診断へのボタン）は、hi は CJK と isolate の字なし、ar はラテン文字と数字を LRI/PDI の中だけに（{type} などの差し込みは除く）
+const QZ_SHARE_KEYS = ['shindanShareText', 'shindanShareX', 'shindanFriend', 'shindanCardBtn', 'shindanRetry', 'shindanEb', 'shindanYouAre'];
+for (const k of QZ_SHARE_KEYS) if (/[\u3000-\u9fff\uff00-\uffef\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
+for (const k of QZ_SHARE_KEYS) if (/[A-Za-z0-9]/.test(T.ar[k].replace(/\{\w+\}/g, '').replace(/\u2066[^\u2069]*\u2069/g, ''))) throw new Error(`ar.${k}: Latin letters or digits outside LRI/PDI`);
 for (const l of LANGS) for (const q of QUIZ.questions) { if (!q.q[l]) throw new Error(`quiz ${q.id}: missing q.${l}`); for (const a of q.a) { if (!a.t[l]) throw new Error(`quiz ${q.id}: missing answer ${l}`); for (const k of Object.keys(a.s)) if (!QUIZ.types.some(t => t.id === k)) throw new Error(`quiz ${q.id}: unknown type ${k}`); } }
 for (const t of QUIZ.types) { for (const l of LANGS) for (const f of ['name', 'desc']) if (!t[f][l]) throw new Error(`quiz type ${t.id}: missing ${f}.${l}`); if (!servicesFor(t, live).length) throw new Error(`quiz type ${t.id}: no matching services`); }
 // BI計算機: /calc/。数字は CALC（data.js）、計算と描画は src/calc.js（ブラウザと同じコード）
@@ -690,7 +695,9 @@ function shareBtns(lang) {
     wb: ['微博', `https://service.weibo.com/share/share.php?url=${u}&title=${t}`],
     fb: ['Facebook', `https://www.facebook.com/sharer/sharer.php?u=${u}`],
   };
-  return SHARE_ORDER[lang].map(k => `<a class="btn sb-${k}" href="${esc(SNS[k][1])}" target="_blank" rel="noopener">${SNS[k][0]}</a>`).join('')
+  // 日本語はとなりにはてなブックマーク（トップのエントリーへのただのリンク）
+  if (lang === 'ja') SNS.hb = ['はてなブックマーク', hatenaHref(abs(lang))];
+  return [...SHARE_ORDER[lang], ...(lang === 'ja' ? ['hb'] : [])].map(k => `<a class="btn sb-${k}" href="${esc(SNS[k][1])}" target="_blank" rel="noopener">${SNS[k][0]}</a>`).join('')
     + `<button class="btn sb-native" type="button" id="nativeShare" hidden>${esc(L.share)}</button>`
     + `<button class="btn sb-copy" type="button" id="copyLink">${esc(L.copyLink)}</button>`;
 }
@@ -726,12 +733,12 @@ function xShare(head, url, lang, tag = T[lang].calcTag) {
 // 年表のカードは「内容」の最初の文だけを使う（長い説明は投稿に向かないので）
 const firstClause = t => t.split(/[。；;؛]|\.\s(?=\D)/u)[0].trim();
 // 行（primary の X ボタンは金、ほかは静かな枠線）。compact は見出しの下に置く小さい版
-// はてなブックマーク（日本語ページだけ）。公式ボタンのスクリプトが開く追加画面 /entry/panel/ へのただのリンク（外部スクリプト・クッキーなし）
-// URL は canonical のまま（クエリなし）。はてなは URL ごとに数えるので、?s= を付けると人気エントリーへの数が割れる。はてなからの訪問は参照元 b.hatena.ne.jp で見える
+// はてなブックマーク（日本語ページだけ）。そのページのエントリー https://b.hatena.ne.jp/entry/s/{host}{path} へのただのリンク（外部スクリプト・クッキーなし）
+// URL は canonical のまま（クエリ・# なし）。はてなは URL ごとに数えるので、?s= を付けると人気エントリーへの数が割れる。はてなからの訪問は参照元 b.hatena.ne.jp で見える
+const hatenaHref = url => `https://b.hatena.ne.jp/entry/s/${url.split(/[?#]/)[0].replace(/^https:\/\//, '')}`;
+const HATENA_LABEL = 'はてなブックマークに追加';
 function hatenaLink(head, url, compact) {
-  const u = url.split(/[?#]/)[0];
-  const href = `https://b.hatena.ne.jp/entry/panel/?url=${encodeURIComponent(u)}&btitle=${encodeURIComponent(head.trim())}`;
-  return `<a class="btn shr-o" href="${esc(href)}" target="_blank" rel="noopener" aria-label="はてなブックマークに追加">${compact ? 'はてブ' : 'はてなブックマーク'}</a>`;
+  return `<a class="btn shr-o" href="${esc(hatenaHref(url))}" target="_blank" rel="noopener" aria-label="${HATENA_LABEL}">${compact ? 'はてブ' : 'はてなブックマーク'}</a>`;
 }
 // mk を渡すと、ボタンごとに経路の印の付いた URL を使う（mk('x') など）。渡さなければ url のまま
 function shareRow(lang, head, url, { compact = false, label = '', id = '', mk = null } = {}) {
@@ -743,7 +750,7 @@ function shareRow(lang, head, url, { compact = false, label = '', id = '', mk = 
 // 言語ごとに、その国でリンクが回る経路を先頭（金の主ボタン）に。中国語は WeChat にウェブのシェア URL がないので、コピーを先頭に
 // URL は mk(経路) で作り、経路ごとに ?s=wa / line / tg / x / copy / native を付けて Worker の記録で数える
 // スマホ（指で操作する端末）で navigator.share があれば、端末のシェアを主ボタンにして、ほかは枠線のボタンに下げる
-const CH_ORDER = { ja: ['line', 'x', 'wa', 'tg', 'copy'], zh: ['copy', 'x', 'tg', 'wa'], hi: ['wa', 'x', 'tg', 'copy'], ar: ['wa', 'x', 'tg', 'copy'], es: ['wa', 'x', 'tg', 'copy'], en: ['x', 'wa', 'tg', 'copy'], de: ['x', 'wa', 'tg', 'copy'] };
+const CH_ORDER = { ja: ['line', 'x', 'hb', 'wa', 'tg', 'copy'], zh: ['copy', 'x', 'tg', 'wa'], hi: ['wa', 'x', 'tg', 'copy'], ar: ['wa', 'x', 'tg', 'copy'], es: ['wa', 'x', 'tg', 'copy'], en: ['x', 'wa', 'tg', 'copy'], de: ['x', 'wa', 'tg', 'copy'] };
 const sic = d => `<svg class="sic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">${d}</svg>`;
 const CH_ICON = {
   x: XSVG.replace('width="14" height="14"', 'width="16" height="16"'),
@@ -752,10 +759,13 @@ const CH_ICON = {
   tg: sic('<path fill="currentColor" d="M21.6 4.2 18.5 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.4 13 1.7 11.5c-1-.3-1-1 .2-1.5L20.4 2.9c.8-.3 1.6.2 1.2 1.3z"/>'),
   copy: sic('<path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L11.6 6M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/>'),
   native: sic('<path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5M5 11v8.5c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5V11"/>'),
+  hb: sic('<text x="12" y="17" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="currentColor">B!</text>'),
 };
-const CH_NAME = { x: 'X', wa: 'WhatsApp', line: 'LINE', tg: 'Telegram' };
+const CH_NAME = { x: 'X', wa: 'WhatsApp', line: 'LINE', tg: 'Telegram', hb: 'はてブ' };
 // head: 見出し（エッセイの題・診断の一人称の結果）。primary: 主ボタンの文言（"X" の部分を経路名に置き換える）。tag: X のハッシュタグ
-function channelShare(lang, head, mk, { primary, tag, label = '', id = '', cls = 'shr' } = {}) {
+// order: 経路の並び（既定は CH_ORDER）。natPrimary: false なら端末のシェアを主ボタンにせず、ほかと同じ枠線のボタンにする（主ボタンを X のままにしたいとき）
+// page: はてブ（hb）が指すページ（canonical。省けば mk('copy') のクエリを外したもの）
+function channelShare(lang, head, mk, { primary, tag, label = '', id = '', cls = 'shr', order = CH_ORDER[lang], natPrimary = true, page = '' } = {}) {
   const L = T[lang], x = xShare(head, mk('x'), lang, tag), h = head.trim();
   const app = k => (RTL.has(lang) ? `\u2066${CH_NAME[k]}\u2069` : CH_NAME[k]);
   // 主ボタンの文言: "X"（ar は ⁦X⁩ と isolate 済み）を経路名に置き換える
@@ -765,16 +775,19 @@ function channelShare(lang, head, mk, { primary, tag, label = '', id = '', cls =
     wa: `https://wa.me/?text=${encodeURIComponent(`${h}\n${mk('wa')}`)}`,
     line: `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(mk('line'))}`,
     tg: `https://t.me/share/url?url=${encodeURIComponent(mk('tg'))}&text=${encodeURIComponent(h)}`,
+    hb: hatenaHref(page || mk('copy')),
   };
   const btn = (k, i) => {
     const first = i === 0, c = `btn sc sc-${k}${first ? ' sc-1' : ''}`;
     if (k === 'copy') return `<button class="${c}" type="button" data-copy="${esc(mk('copy'))}">${CH_ICON.copy}<span>${esc(L.copyLink)}</span></button>`;
     // 主ボタンは長い文言と経路名の両方を持ち、端末のシェアが主になったとき（.nat）は経路名だけにする
     const text = first ? `<span class="sc-long">${esc(lbl(k))}</span><span class="sc-short">${esc(app(k))}</span>` : `<span>${esc(app(k))}</span>`;
-    return `<a class="${c}" href="${esc(href[k])}" target="_blank" rel="noopener"${first ? '' : ` aria-label="${esc(lbl(k))}"`}>${CH_ICON[k]}${text}</a>`;
+    return `<a class="${c}" href="${esc(href[k])}" target="_blank" rel="noopener"${first ? '' : ` aria-label="${esc(k === 'hb' ? HATENA_LABEL : lbl(k))}"`}>${CH_ICON[k]}${text}</a>`;
   };
-  const nat = `<button class="btn sc shr-nat" type="button" data-native="${esc(mk('native'))}" data-text="${esc(`${x.head} ${x.tag}`)}" data-primary hidden>${CH_ICON.native}<span>${esc(L.share)}</span></button>`;
-  return `<div class="${cls} shr-ch"${id ? ` id="${id}"` : ''}>${label ? `<p class="shr-h">${esc(label)}</p>` : ''}${nat}${CH_ORDER[lang].map(btn).join('')}</div>`;
+  if (lang !== 'ja' && order.includes('hb')) throw new Error(`channelShare: hb is for ja only (${lang})`);
+  const nat = `<button class="btn sc ${natPrimary ? 'shr-nat' : `sc-native`}" type="button" data-native="${esc(mk('native'))}" data-text="${esc(`${x.head} ${x.tag}`)}"${natPrimary ? ' data-primary' : ''} hidden>${CH_ICON.native}<span>${esc(L.share)}</span></button>`;
+  const btns = order.map(btn).join('');
+  return `<div class="${cls} shr-ch"${id ? ` id="${id}"` : ''}>${label ? `<p class="shr-h">${esc(label)}</p>` : ''}${natPrimary ? nat + btns : btns + nat}</div>`;
 }
 // カードやニュース1件ごとの小さいリンク
 function shareMini(lang, head, url) {
@@ -1951,6 +1964,8 @@ ${qs}
 </script>`;
   return shell(lang, { title: `${L.shindanH1} | ${L.title}`, desc: clip(L.shindanDesc, lang), hrefFor: qzAbs, pathFor: qzPath, ld, ogType: 'website', body, script, image: ogImage(`shindan/${lang}/index.jpg`) });
 }
+// シェアされた結果のページ（?s=share-quiz-…）から来た人には、「あなたは」の代わりに友だちの結果の1行を出し、ボタンを「診断する」にする
+const QZ_FRIEND_JS = `<script>(function(){try{if(!/^share-quiz-/.test(new URLSearchParams(location.search).get('s')||''))return;var f=document.getElementById('qzFriend'),y=document.querySelector('.qz-you'),e=document.querySelector('.qz-res .eyebrow'),b=document.getElementById('qzRetry');f.hidden=false;if(y)y.hidden=true;if(e)e.hidden=true;if(b){b.textContent=b.getAttribute('data-friend');b.classList.add('solid')}}catch(err){}})();</script>`;
 function quizResultPage(t, lang) {
   const L = T[lang];
   const home = urlPath(lang);
@@ -1961,18 +1976,21 @@ function quizResultPage(t, lang) {
     { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
     { '@type': 'ListItem', position: 2, name: L.shindanTitle, item: qzAbs(lang) },
     { '@type': 'ListItem', position: 3, name, item: url } ] };
-  // シェアは結果のページではなく診断の入口へ（?r={type}&s={経路}）。投稿文は「一人称の結果 + 改行 + URL + ハッシュタグ1つ」
-  const shr = channelShare(lang, L.shindanShareText.replace('{type}', name), k => qzShareAbs(lang, t, k), { primary: L.shindanShareX, tag: L.shindanTag, cls: 'qz-acts' });
+  // シェアはこの結果のページへ（?s=share-quiz-{type}、X 以外は -{経路} 付き）。投稿文は「一人称の結果 + 改行 + URL + ハッシュタグ1つ」
+  // どの言語でも X を先頭の主ボタンに（端末のシェアは枠線のボタン）。日本語は LINE・はてブ・コピーも
+  const order = ['x', ...CH_ORDER[lang].filter(k => k !== 'x')];
+  const shr = channelShare(lang, L.shindanShareText.replace('{type}', name), k => qzShareAbs(lang, t, k), { primary: L.shindanShareX, tag: L.shindanTag, cls: 'qz-acts', order, natPrimary: false, page: url });
+  const [fr0, fr1] = L.shindanFriend.split('{type}');
   const guides = GUIDES.filter(g => list.some(s => s.id === g.svc));
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a></li><li aria-current="page">${esc(name)}</li></ol></nav>
 <main class="vmain">
-<header class="qz-res"><p class="eyebrow">${esc(L.shindanEb)}</p><p class="qz-you">${esc(L.shindanYouAre)}</p><h1>${esc(name)}</h1><p class="qz-desc">${esc(t.desc[lang])}</p>
-${shr}<p class="qz-retry"><a class="btn line" href="${qzPath(lang)}">${esc(L.shindanRetry)}</a></p></header>
+<header class="qz-res"><p class="eyebrow">${esc(L.shindanEb)}</p><p class="qz-friend" id="qzFriend" hidden>${esc(fr0)}<b>${esc(name)}</b>${esc(fr1 || '')}</p><p class="qz-you">${esc(L.shindanYouAre)}</p><h1>${esc(name)}</h1><p class="qz-desc">${esc(t.desc[lang])}</p>
+${shr}<p class="qz-retry"><a class="btn line" id="qzRetry" href="${qzPath(lang)}" data-friend="${esc(L.shindanCardBtn)}">${esc(L.shindanRetry)}</a></p></header>
 <section class="vsec"><h2>${esc(L.shindanMatch.replace('{n}', list.length))}</h2><p class="qz-note">${esc(L.shindanNote)}</p>${guides.map(g => guideLink(lang, g, 'g-link g-link-top')).join('')}<div class="grid">${list.map(s => card(s, lang)).join('\n')}</div></section>
 <section class="vsec"><h2>${esc(L.shindanOthers)}</h2>${qzChips(lang, t)}</section>
 <p class="back"><a class="btn line" href="${qzPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backQuiz)}</a></p>
 </main>`;
-  return shell(lang, { title: `${L.shindanTitle}: ${name} | ${L.title}`, desc: clip(`${L.shindanTitle}: ${name}. ${t.desc[lang]}`, lang), hrefFor: l => qzTypeAbs(l, t), pathFor: l => qzTypePath(l, t), ld, ogType: 'website', body, script: copyScript(L) + shareScript(L), pr: true, image: ogImage(`shindan/${lang}/${t.id}.jpg`) });
+  return shell(lang, { title: `${L.shindanTitle}: ${name} | ${L.title}`, desc: clip(`${L.shindanTitle}: ${name}. ${t.desc[lang]}`, lang), hrefFor: l => qzTypeAbs(l, t), pathFor: l => qzTypePath(l, t), ld, ogType: 'website', body, script: copyScript(L) + shareScript(L) + QZ_FRIEND_JS, pr: true, image: ogImage(`shindan/${lang}/${t.id}.jpg`) });
 }
 
 // ---- BI計算機（/calc/）。国・配る相手・月額を選ぶと年額と、予算・GDP との比を出す（JS）。?c=&w=&m= で結果を再現できる
@@ -2661,7 +2679,8 @@ function biNewsPage(lang) {
 <main class="orgs">
 <header class="orgs-head"><p class="eyebrow">${esc(L.biNewsTitle)}</p><h1>${esc(L.biNewsH1)}</h1><p class="orgs-intro">${esc(L.biNewsIntro)}</p>
 <p class="oss-note"><a href="${biNewsFeedPath(lang)}">${esc(L.biNewsFeed)}</a> · <a href="${SITE_URL}/news.json" dir="ltr">news.json</a></p>
-${BI_NEWS.length > 1 ? `<nav class="org-toc" aria-label="${esc(L.navLabel)}">${toc}</nav>` : ''}</header>
+${BI_NEWS.length > 1 ? `<nav class="org-toc" aria-label="${esc(L.navLabel)}">${toc}</nav>` : ''}
+${shareRow(lang, L.biNewsH1, shareUrlOf(biNewsAbs(lang)))}</header>
 ${weeks}
 <p class="tl-more"><a href="${tlPath(lang)}">${esc(L.tlTitle)}</a> · <a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a> · <a href="${orgPath(lang)}">${esc(L.orgsTitle)}</a></p>
 <p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
@@ -3197,7 +3216,7 @@ const thumbResolve = html => html.replace(/@@thumb:([^@]+)@@/g, (m, rel) => {
 // 人の閲覧を数える小さなビーコン（src/worker.js の /b）。ページが見えている状態で、本物の操作（ポインタ・キー・スクロール・タッチ）が
 // あったときに1回だけ送る。操作が読み込みから1秒未満なら1秒まで待つ。navigator.webdriver（自動操作のブラウザ）では送らない。
 // Cookie・localStorage・端末を見分ける ID は使わない。送るのはパス・言語・?s=・参照元のホスト名だけ。JS がなければ何も起きない
-const beacon = lang => `<script>(function(){var d=document,n=navigator,w=window,L=location,t0=Date.now(),k=0,E=['pointerdown','pointermove','keydown','scroll','wheel','touchstart'];if(n.webdriver)return;function go(){if(d.visibilityState!=='visible'){k=0;return}var r='',q='';try{var u=new URL(d.referrer);r=u.host===L.host?'self':u.host}catch(x){}try{q=new URLSearchParams(L.search).get('s')||''}catch(x){}var b=JSON.stringify({p:L.pathname,l:${JSON.stringify(lang)},s:q.slice(0,16),r:r.slice(0,100)});E.forEach(function(e){w.removeEventListener(e,f,true)});try{if(n.sendBeacon&&n.sendBeacon('/b',b))return}catch(x){}try{fetch('/b',{method:'POST',body:b,keepalive:true,credentials:'omit'})}catch(x){}}function f(e){if(k||!e.isTrusted||d.visibilityState!=='visible')return;k=1;setTimeout(go,Math.max(0,1000-(Date.now()-t0)))}E.forEach(function(e){w.addEventListener(e,f,{capture:true,passive:true})})})()</script>`;
+const beacon = lang => `<script>(function(){var d=document,n=navigator,w=window,L=location,t0=Date.now(),k=0,E=['pointerdown','pointermove','keydown','scroll','wheel','touchstart'];if(n.webdriver)return;function go(){if(d.visibilityState!=='visible'){k=0;return}var r='',q='';try{var u=new URL(d.referrer);r=u.host===L.host?'self':u.host}catch(x){}try{q=new URLSearchParams(L.search).get('s')||''}catch(x){}var b=JSON.stringify({p:L.pathname,l:${JSON.stringify(lang)},s:q.slice(0,32),r:r.slice(0,100)});E.forEach(function(e){w.removeEventListener(e,f,true)});try{if(n.sendBeacon&&n.sendBeacon('/b',b))return}catch(x){}try{fetch('/b',{method:'POST',body:b,keepalive:true,credentials:'omit'})}catch(x){}}function f(e){if(k||!e.isTrusted||d.visibilityState!=='visible')return;k=1;setTimeout(go,Math.max(0,1000-(Date.now()-t0)))}E.forEach(function(e){w.addEventListener(e,f,{capture:true,passive:true})})})()</script>`;
 for (const l of LANGS) if (Buffer.byteLength(beacon(l)) > 1024) throw new Error('beacon script over 1 KB');
 const withBeacon = (html, lang) => { const i = html.lastIndexOf('</body>'); return i < 0 ? html : html.slice(0, i) + beacon(lang) + '\n' + html.slice(i); };
 for (const { file, html, lang } of pages) fs.writeFileSync(file, withBeacon(thumbResolve(ogResolve(html.replace('<!--@fonts@-->', fontHead[lang]))), lang));
