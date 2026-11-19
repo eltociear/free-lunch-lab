@@ -327,6 +327,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
 .lede b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+/* ヒーローのボタンの下の道具の札: 国の比較・わが家の計算機・診断・アメリカの実験の一覧（よく見られるページを最初の画面に） */
+.hq{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:36em}
+.hq a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));background:color-mix(in srgb,var(--gold) 8%,transparent);color:var(--ink);font-weight:700;font-size:.9rem;line-height:1.3;text-decoration:none}
+.hq a:hover{border-color:var(--gold)}
 .qz-home{margin-top:10px;display:flex;flex-wrap:wrap;gap:0 20px}
 .qz-home a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;color:var(--gold);text-underline-offset:4px}
 /* ヒーローの下の入口: 国の費用・わが家の計算機・新しいエッセイ */
@@ -344,6 +348,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .he-es li{min-width:0}
 .he-es a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);overflow-wrap:anywhere;text-underline-offset:4px}
 .he-es .he-all{color:var(--gold)}
+.he-k{display:inline-block;flex:none;font-size:.75rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 60%,var(--line));background:color-mix(in srgb,var(--gold) 14%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
+.he-es li{display:flex;align-items:center;flex-wrap:wrap;padding-top:4px}
+.he-r{grid-column:1/-1;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 14px;font-size:.875rem;color:var(--muted)}
+.he-r a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);text-underline-offset:4px}
 @media (max-width:760px){.he{grid-template-columns:1fr}.he-c{padding:18px}.he-es{display:grid;gap:0}.he-es ul{display:grid;gap:0}}
 /* 診断への入口のカード（トップのヒーロー・エッセイの終わり） */
 .qzc{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px;padding:14px 16px;max-width:34em;border:1px solid var(--line);border-inline-start:3px solid var(--gold);border-radius:12px;background:color-mix(in srgb,var(--surface) 72%,transparent)}
@@ -792,8 +800,9 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
       <a class="btn solid" href="#list">查看服务</a>
       <a class="btn line" href="#how">使用方法</a>
     </div>
+    <nav class="hq" aria-label="工具"><a href="calc/countries/?s=home-top-countries">211个国家和地区的费用</a><a href="calc/household/?s=home-top-hh">我家基本收入计算器</a><a href="shindan/?s=home-top-quiz">免费午餐测试</a><a href="pilots/us/?s=home-top-pilots">美国试点一览</a></nav>
     <div class="qzc"><div class="qzc-t"><p class="qzc-e">免费午餐测试</p><p class="qzc-q">你是哪一型？</p><p class="qzc-s">5 个问题，30 秒，无需注册</p></div><a class="btn solid" href="/zh/shindan/?s=home-quiz">开始测试</a></div>
-    <p class="qz-home"><a href="calc/household/?s=hh-home">基本收入，我家是赚还是亏？我家基本收入计算器 →</a><a href="calc/">发放基本收入要花多少钱？试试计算器 →</a><a href="calc/countries/">全部211个国家和地区对比 →</a><a href="calc/map/">世界地图：费用与税收之比 →</a></p>
+    <p class="qz-home"><a href="calc/">发放基本收入要花多少钱？试试计算器 →</a><a href="calc/map/">世界地图：费用与税收之比 →</a></p>
     <div class="stats">
       <div><span class="dot">40</span><span>收录服务</span></div>
       <div><span class="dot">38</span><span>持续到账</span></div>
@@ -825,7 +834,8 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 <section class="he" aria-label="基本收入计算器">
 <div class="he-c"><h2>在你的国家发基本收入要花多少钱？</h2><p>向中国所有人每月发¥1,000（计算器的基准金额），一年需要17万亿元（约2.36万亿美元），相当于税收的173%、GDP的12.1%。</p><p class="he-n">211个国家和地区，官方数据，附出处。</p><p class="he-a"><a class="btn solid" href="calc/cn/?s=home-country">查看中国的数字 →</a><a href="calc/countries/?s=home-country">全部211个国家和地区对比 →</a></p></div>
 <div class="he-c"><h2>你家会多拿还是少拿？</h2><p>输入家庭成员、收入、养老金和生活保护，看看每月3万至10万日元的基本收入会让你家每月多拿或少拿多少。</p><p class="he-n">适用于日本的家庭：使用日本2026年度的儿童补贴、养老金和生活保护标准，单位为日元。</p><p class="he-a"><a class="btn solid" href="calc/household/?s=home-hh">计算我家 →</a></p></div>
-<nav class="he-es" aria-label="最新随笔"><b>最新随笔</b><ul><li><a href="essays/ai-unemployment-basic-income/?s=home-essay">如果AI让几乎所有人失业，现有福利撑不住。所以需要基本收入</a></li><li><a href="essays/us-basic-income-cost/?s=home-essay">在美国给每个人发基本收入，要花多少钱？从每月500到2,000美元</a></li><li><a href="essays/ai-company-profits-per-person/?s=home-essay">把AI公司的利润分给所有人，每人能拿多少？</a></li></ul><a class="he-all" href="essays/">全部随笔 →</a></nav>
+<nav class="he-es" aria-label="最新随笔"><b>最新随笔</b><ul><li><span class="he-k">评论（作者观点）</span><a href="essays/ai-unemployment-basic-income/?s=home-essay">如果AI让几乎所有人失业，现有福利撑不住。所以需要基本收入</a></li><li><span class="he-k">数据</span><a href="essays/us-basic-income-cost/?s=home-essay">在美国给每个人发基本收入，要花多少钱？从每月500到2,000美元</a></li><li><span class="he-k">数据</span><a href="essays/ai-company-profits-per-person/?s=home-essay">把AI公司的利润分给所有人，每人能拿多少？</a></li><li><span class="he-k">数据</span><a href="essays/japan-basic-income-cost/?s=home-essay">在日本给每个人发基本收入，要花多少钱？从每月1万到10万日元</a></li></ul><a class="he-all" href="essays/">全部随笔 →</a></nav>
+<p class="he-r"><span>写给研究者和记者：</span><a href="about/?s=home-about">关于本站：出处、引用与更正</a><a href="data/?s=home-data">开放数据：全部12个数据集</a></p>
 </section>
 </div>
 </div>

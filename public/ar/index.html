@@ -176,6 +176,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
 .lede b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+/* ヒーローのボタンの下の道具の札: 国の比較・わが家の計算機・診断・アメリカの実験の一覧（よく見られるページを最初の画面に） */
+.hq{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:36em}
+.hq a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));background:color-mix(in srgb,var(--gold) 8%,transparent);color:var(--ink);font-weight:700;font-size:.9rem;line-height:1.3;text-decoration:none}
+.hq a:hover{border-color:var(--gold)}
 .qz-home{margin-top:10px;display:flex;flex-wrap:wrap;gap:0 20px}
 .qz-home a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;color:var(--gold);text-underline-offset:4px}
 /* ヒーローの下の入口: 国の費用・わが家の計算機・新しいエッセイ */
@@ -193,6 +197,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .he-es li{min-width:0}
 .he-es a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);overflow-wrap:anywhere;text-underline-offset:4px}
 .he-es .he-all{color:var(--gold)}
+.he-k{display:inline-block;flex:none;font-size:.75rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 60%,var(--line));background:color-mix(in srgb,var(--gold) 14%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
+.he-es li{display:flex;align-items:center;flex-wrap:wrap;padding-top:4px}
+.he-r{grid-column:1/-1;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 14px;font-size:.875rem;color:var(--muted)}
+.he-r a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);text-underline-offset:4px}
 @media (max-width:760px){.he{grid-template-columns:1fr}.he-c{padding:18px}.he-es{display:grid;gap:0}.he-es ul{display:grid;gap:0}}
 /* 診断への入口のカード（トップのヒーロー・エッセイの終わり） */
 .qzc{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px;padding:14px 16px;max-width:34em;border:1px solid var(--line);border-inline-start:3px solid var(--gold);border-radius:12px;background:color-mix(in srgb,var(--surface) 72%,transparent)}
@@ -641,8 +649,9 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
       <a class="btn solid" href="#list">تصفّح الخدمات</a>
       <a class="btn line" href="#how">طريقة الاستخدام</a>
     </div>
+    <nav class="hq" aria-label="أدوات"><a href="calc/countries/?s=home-top-countries">التكلفة في 211 بلدًا وإقليمًا</a><a href="calc/household/?s=home-top-hh">حاسبة الأسرة</a><a href="shindan/?s=home-top-quiz">اختبار الغداء المجاني</a><a href="pilots/us/?s=home-top-pilots">جدول التجارب الأمريكية</a></nav>
     <div class="qzc"><div class="qzc-t"><p class="qzc-e">اختبار الغداء المجاني</p><p class="qzc-q">ما نوعك؟</p><p class="qzc-s">خمسة أسئلة، ⁦30⁩ ثانية، بلا تسجيل</p></div><a class="btn solid" href="/ar/shindan/?s=home-quiz">ابدأ الاختبار</a></div>
-    <p class="qz-home"><a href="calc/household/?s=hh-home">هل تربح أسرتك أم تخسر؟ حاسبة الدخل الأساسي للأسر →</a><a href="calc/">كم يكلّف الدخل الأساسي؟ جرّب الحاسبة →</a><a href="calc/countries/">مقارنة بين 211 بلدًا وإقليمًا →</a><a href="calc/map/">خريطة العالم: الكلفة مقابل الإيرادات الضريبية →</a></p>
+    <p class="qz-home"><a href="calc/">كم يكلّف الدخل الأساسي؟ جرّب الحاسبة →</a><a href="calc/map/">خريطة العالم: الكلفة مقابل الإيرادات الضريبية →</a></p>
     <div class="stats">
       <div><span class="dot">40</span><span>خدمات مدرجة</span></div>
       <div><span class="dot">38</span><span>تدفع بشكل متكرر</span></div>
@@ -674,7 +683,8 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 <section class="he" aria-label="حاسبة الدخل الأساسي">
 <div class="he-c"><h2>كم يكلّف في بلدك؟</h2><p>إعطاء الجميع في مصر مبلغ ⁦‏1,000 E£⁩ شهريًا (المبلغ المرجعي في الحاسبة) يكلّف 1.42 تريليون جنيه في السنة (نحو 28.6 مليار دولار أمريكي)، أي 7.8‎%‎ من الناتج المحلي الإجمالي.</p><p class="he-n">211 بلدًا وإقليمًا، ببيانات رسمية ومصادر.</p><p class="he-a"><a class="btn solid" href="calc/eg/?s=home-country">اطّلع على أرقام مصر ←</a><a href="calc/countries/?s=home-country">مقارنة بين 211 بلدًا وإقليمًا ←</a></p></div>
 <div class="he-c"><h2>هل تربح أسرتك أم تخسر؟</h2><p>أدخل أسرتك ودخلك ومعاشك والمساعدة العامة لترى كم تربح أسرتك أو تخسر كل شهر مع دخل أساسي من 30,000 إلى 100,000 ين شهريًا.</p><p class="he-n">للأسر في اليابان: تستخدم أرقام السنة المالية ⁦2026⁩ في اليابان لإعانة الأطفال والمعاشات والمساعدة العامة، بالين.</p><p class="he-a"><a class="btn solid" href="calc/household/?s=home-hh">احسب لأسرتي ←</a></p></div>
-<nav class="he-es" aria-label="أحدث المقالات"><b>أحدث المقالات</b><ul><li><a href="essays/ai-unemployment-basic-income/?s=home-essay">إذا أنهى الذكاء الاصطناعي الوظائف، فلن تصمد الرعاية. لهذا نحتاج دخلًا أساسيًا</a></li><li><a href="essays/us-basic-income-cost/?s=home-essay">كم يكلّف الدخل الأساسي في الولايات المتحدة؟</a></li><li><a href="essays/ai-company-profits-per-person/?s=home-essay">أرباح شركات الذكاء الاصطناعي للجميع: كم لكل شخص؟</a></li></ul><a class="he-all" href="essays/">كل المقالات ←</a></nav>
+<nav class="he-es" aria-label="أحدث المقالات"><b>أحدث المقالات</b><ul><li><span class="he-k">مقال رأي</span><a href="essays/ai-unemployment-basic-income/?s=home-essay">إذا أنهى الذكاء الاصطناعي الوظائف، فلن تصمد الرعاية. لهذا نحتاج دخلًا أساسيًا</a></li><li><span class="he-k">بيانات</span><a href="essays/us-basic-income-cost/?s=home-essay">كم يكلّف الدخل الأساسي في الولايات المتحدة؟</a></li><li><span class="he-k">بيانات</span><a href="essays/ai-company-profits-per-person/?s=home-essay">أرباح شركات الذكاء الاصطناعي للجميع: كم لكل شخص؟</a></li><li><span class="he-k">بيانات</span><a href="essays/japan-basic-income-cost/?s=home-essay">كم يكلّف الدخل الأساسي في اليابان؟</a></li></ul><a class="he-all" href="essays/">كل المقالات ←</a></nav>
+<p class="he-r"><span>للباحثين والصحفيين:</span><a href="about/?s=home-about">عن هذا الموقع: المصادر والاستشهاد والتصحيحات</a><a href="data/?s=home-data">البيانات المفتوحة: كل المجموعات وعددها 12</a></p>
 </section>
 </div>
 </div>

@@ -2137,13 +2137,6 @@
   "https://neteru-nyukin.eltociear.workers.dev/es/calc/jp/": "cf434b0faeae6b42",
   "https://neteru-nyukin.eltociear.workers.dev/de/calc/jp/": "895955294b358e90",
   "https://neteru-nyukin.eltociear.workers.dev/ar/calc/jp/": "af06d64ac5093ff3",
-  "https://neteru-nyukin.eltociear.workers.dev/": "0c1fabb418509f0c",
-  "https://neteru-nyukin.eltociear.workers.dev/ja/": "59c3902ac61f0e11",
-  "https://neteru-nyukin.eltociear.workers.dev/zh/": "d1fe33c8fdb32387",
-  "https://neteru-nyukin.eltociear.workers.dev/hi/": "7b5f046b0f2119f8",
-  "https://neteru-nyukin.eltociear.workers.dev/es/": "c8f282a3a15e3e03",
-  "https://neteru-nyukin.eltociear.workers.dev/de/": "dccb9693e5042afa",
-  "https://neteru-nyukin.eltociear.workers.dev/ar/": "573d1a1738b4da59",
   "https://neteru-nyukin.eltociear.workers.dev/pilots/us/": "9d1a7755d3fb3e58",
   "https://neteru-nyukin.eltociear.workers.dev/ja/pilots/us/": "14fc04bb131529c7",
   "https://neteru-nyukin.eltociear.workers.dev/zh/pilots/us/": "3f03ef1b7ba168cd",
@@ -2164,6 +2157,13 @@
   "https://neteru-nyukin.eltociear.workers.dev/hi/data/": "f66b2c407e6c8627",
   "https://neteru-nyukin.eltociear.workers.dev/es/data/": "8818f902054ce518",
   "https://neteru-nyukin.eltociear.workers.dev/de/data/": "ea931d87941ba20b",
-  "https://neteru-nyukin.eltociear.workers.dev/ar/data/": "16a8f105a9893b3e"
+  "https://neteru-nyukin.eltociear.workers.dev/ar/data/": "16a8f105a9893b3e",
+  "https://neteru-nyukin.eltociear.workers.dev/": "7c8c4d872041e50b",
+  "https://neteru-nyukin.eltociear.workers.dev/ja/": "ef1f8cd50af0b551",
+  "https://neteru-nyukin.eltociear.workers.dev/zh/": "8de0a93e54a9efb6",
+  "https://neteru-nyukin.eltociear.workers.dev/hi/": "839fb2b30d43abe2",
+  "https://neteru-nyukin.eltociear.workers.dev/es/": "bb47e609f2219472",
+  "https://neteru-nyukin.eltociear.workers.dev/de/": "78a8ebf5bae8cfe6",
+  "https://neteru-nyukin.eltociear.workers.dev/ar/": "1041998de987bae9"
  }
 }

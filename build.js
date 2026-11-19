@@ -78,6 +78,8 @@ for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack', 'essayTa
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 // kind: 'opinion' は論考（結論が筆者の意見のエッセイ）。見出しの上に札、署名の下に一行の注、一覧にも札を出す。ほかのエッセイは「数字だけ、主張なし」
 for (const e of ESSAYS) if (e.kind !== undefined && e.kind !== 'opinion') throw new Error(`essay ${e.id}: unknown kind ${e.kind}`);
+// データエッセイ = 論考でも意見の段落（o）もないもの（/about/ とトップの「新しいエッセイ」の札）
+const essayHasOp = e => e.blocks.en.some(([k]) => k === 'o');
 const opKind = (lang, e) => e.kind === 'opinion' ? `<span class="es-kind">${esc(T[lang].essayOpLabel)}</span>` : '';
 // related（エッセイ）と essays（サービス・年表）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
 const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
@@ -1074,11 +1076,18 @@ function homeEntry(lang) {
   const [main, sub] = lang === 'en'
     ? [[idxHref, cfill(L.homeCtyBtn, { n, country: c.name[lang] })], [ctyHref, cfill(L.calcCtyLink, { country: c.name[lang] })]]
     : [[ctyHref, cfill(L.homeCtyBtn, { n, country: c.name[lang] })], [idxHref, cfill(L.calcIdxLink, { n })]];
-  const essays = ESSAYS.slice().sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0)).slice(0, 3);
+  // 新しいエッセイ: いちばん新しい論考1本と、新しいデータエッセイ3本（意見の段落なし）。札で種類を示す。足りなければ新しい順に足す
+  const byDate = (a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0);
+  const sorted = ESSAYS.slice().sort(byDate);
+  const pickEs = [...sorted.filter(e => e.kind === 'opinion').slice(0, 1), ...sorted.filter(e => !e.kind && !essayHasOp(e)).slice(0, 3)];
+  for (const e of sorted) if (pickEs.length < 4 && !pickEs.includes(e)) pickEs.push(e);
+  const essays = pickEs.sort(byDate);
+  const kindTag = e => e.kind === 'opinion' ? L.essayOpLabel : !essayHasOp(e) ? L.homeEsDataTag : '';
   return `<section class="he" aria-label="${esc(L.calcTitle)}">
 <div class="he-c"><h2>${esc(L.homeCtyH)}</h2><p>${esc(A.ans)}</p><p class="he-n">${esc(cfill(L.homeCtyN, { n }))}</p><p class="he-a"><a class="btn solid" href="${main[0]}">${esc(main[1])} ${arrow}</a><a href="${sub[0]}">${esc(sub[1])} ${arrow}</a></p></div>
 <div class="he-c"><h2>${esc(L.homeHhH)}</h2><p>${esc(L.homeHhP)}</p>${lang === 'ja' ? '' : `<p class="he-n">${esc(L.hhJapan)}</p>`}<p class="he-a"><a class="btn solid" href="calc/household/?s=home-hh">${esc(L.hhBoxBtn)} ${arrow}</a></p></div>
-<nav class="he-es" aria-label="${esc(L.homeEsH)}"><b>${esc(L.homeEsH)}</b><ul>${essays.map(e => `<li><a href="essays/${e.id}/?s=home-essay">${esc(e.title[lang] || e.title.en)}</a></li>`).join('')}</ul><a class="he-all" href="essays/">${esc(L.homeEsAll)} ${arrow}</a></nav>
+<nav class="he-es" aria-label="${esc(L.homeEsH)}"><b>${esc(L.homeEsH)}</b><ul>${essays.map(e => `<li>${kindTag(e) ? `<span class="he-k">${esc(kindTag(e))}</span>` : ''}<a href="essays/${e.id}/?s=home-essay">${esc(e.title[lang] || e.title.en)}</a></li>`).join('')}</ul><a class="he-all" href="essays/">${esc(L.homeEsAll)} ${arrow}</a></nav>
+<p class="he-r"><span>${esc(L.homeRes)}</span><a href="about/?s=home-about">${esc(L.abLink)}</a><a href="data/?s=home-data">${esc(cfill(L.odLink, { n: DATASETS.length }))}</a></p>
 </section>`;
 }
 
@@ -1113,6 +1122,7 @@ for (const lang of LANGS) {
     verifyBlock: verifyPages.map(m => { const b = byMethod(m); return `<a href="verify/${m}/" dir="auto">${esc(VERIFY[m].name[lang])}<span>${b.req.length + b.opt.length}</span></a>`; }).join(''),
     quizCard: qzCard(lang, 'home-quiz'),
     homeEntry: homeEntry(lang),
+    homeTools: `<nav class="hq" aria-label="${esc(L.hqLabel)}"><a href="calc/countries/?s=home-top-countries">${esc(cfill(L.footCountries, { n: CALC_WORLD.length }))}</a><a href="calc/household/?s=home-top-hh">${esc(L.hqHh)}</a><a href="shindan/?s=home-top-quiz">${esc(L.shindanTitle)}</a><a href="pilots/us/?s=home-top-pilots">${esc(L.hqUs)}</a></nav>`,
     rankHome: `<p class="news-more rv"><a class="orgs-tl" href="ranking/">${esc(L.rankHome.replace('{n}', live.length))} →</a></p>`,
     calcIdxHome: esc(L.calcIdxLink.replace('{n}', CALC_WORLD.length)),
     mapHome: esc(L.mapLink),
@@ -1966,6 +1976,8 @@ const AB_KEYS = ['abNav', 'abMetaTitle', 'abDesc', 'abH1', 'abIntro', 'abWhoH', 
 // hi は CJK と isolate の字なし、ar はラテン文字と数字を LRI/PDI の中だけに（{n} などの差し込みは除く）
 const hiBad = s => /[　-鿿＀-￯⁦-⁩]/.test(s);
 const arBad = s => /[A-Za-z0-9]/.test(String(s).replace(/\{\w+\}/g, '').replace(/⁦[^⁩]*⁩/g, ''));
+const HOME_KEYS = ['hqLabel', 'hqHh', 'hqUs', 'homeEsDataTag', 'homeRes'];
+for (const k of HOME_KEYS) { for (const l of LANGS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`); if (hiBad(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`); if (arBad(T.ar[k])) throw new Error(`ar.${k}: Latin letters or digits outside LRI/PDI`); }
 for (const l of LANGS) for (const k of AB_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 for (const k of AB_KEYS) { if (hiBad(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`); if (arBad(T.ar[k])) throw new Error(`ar.${k}: Latin letters or digits outside LRI/PDI`); }
 CORRECTIONS.forEach((c, i) => {
@@ -1977,9 +1989,7 @@ CORRECTIONS.forEach((c, i) => {
   if (hiBad(c.hi)) throw new Error(`CORRECTIONS ${c.date}: hi has CJK or isolate characters`);
   if (arBad(c.ar)) throw new Error(`CORRECTIONS ${c.date}: ar has Latin letters or digits outside LRI/PDI`);
 });
-// データエッセイ = 論考でも意見の段落（o）もないもの。意見の段落があるものは「意見に印のあるエッセイ」
 const noIso = t => String(t).replace(/[\u2066-\u2069]/g, '');
-const essayHasOp = e => e.blocks.en.some(([k]) => k === 'o');
 const ABOUT_CSS = `<style>
 .ab .g-sec>p{margin:0;line-height:1.85}
 .ab a[dir="ltr"],.ab code{overflow-wrap:anywhere}

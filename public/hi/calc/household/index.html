@@ -236,6 +236,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
 .lede b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+/* ヒーローのボタンの下の道具の札: 国の比較・わが家の計算機・診断・アメリカの実験の一覧（よく見られるページを最初の画面に） */
+.hq{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:36em}
+.hq a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));background:color-mix(in srgb,var(--gold) 8%,transparent);color:var(--ink);font-weight:700;font-size:.9rem;line-height:1.3;text-decoration:none}
+.hq a:hover{border-color:var(--gold)}
 .qz-home{margin-top:10px;display:flex;flex-wrap:wrap;gap:0 20px}
 .qz-home a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;color:var(--gold);text-underline-offset:4px}
 /* ヒーローの下の入口: 国の費用・わが家の計算機・新しいエッセイ */
@@ -253,6 +257,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .he-es li{min-width:0}
 .he-es a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);overflow-wrap:anywhere;text-underline-offset:4px}
 .he-es .he-all{color:var(--gold)}
+.he-k{display:inline-block;flex:none;font-size:.75rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 60%,var(--line));background:color-mix(in srgb,var(--gold) 14%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
+.he-es li{display:flex;align-items:center;flex-wrap:wrap;padding-top:4px}
+.he-r{grid-column:1/-1;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 14px;font-size:.875rem;color:var(--muted)}
+.he-r a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);text-underline-offset:4px}
 @media (max-width:760px){.he{grid-template-columns:1fr}.he-c{padding:18px}.he-es{display:grid;gap:0}.he-es ul{display:grid;gap:0}}
 /* 診断への入口のカード（トップのヒーロー・エッセイの終わり） */
 .qzc{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px;padding:14px 16px;max-width:34em;border:1px solid var(--line);border-inline-start:3px solid var(--gold);border-radius:12px;background:color-mix(in srgb,var(--surface) 72%,transparent)}

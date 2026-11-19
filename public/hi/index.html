@@ -170,6 +170,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
 .lede b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+/* ヒーローのボタンの下の道具の札: 国の比較・わが家の計算機・診断・アメリカの実験の一覧（よく見られるページを最初の画面に） */
+.hq{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:36em}
+.hq a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));background:color-mix(in srgb,var(--gold) 8%,transparent);color:var(--ink);font-weight:700;font-size:.9rem;line-height:1.3;text-decoration:none}
+.hq a:hover{border-color:var(--gold)}
 .qz-home{margin-top:10px;display:flex;flex-wrap:wrap;gap:0 20px}
 .qz-home a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;color:var(--gold);text-underline-offset:4px}
 /* ヒーローの下の入口: 国の費用・わが家の計算機・新しいエッセイ */
@@ -187,6 +191,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .he-es li{min-width:0}
 .he-es a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);overflow-wrap:anywhere;text-underline-offset:4px}
 .he-es .he-all{color:var(--gold)}
+.he-k{display:inline-block;flex:none;font-size:.75rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 60%,var(--line));background:color-mix(in srgb,var(--gold) 14%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
+.he-es li{display:flex;align-items:center;flex-wrap:wrap;padding-top:4px}
+.he-r{grid-column:1/-1;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 14px;font-size:.875rem;color:var(--muted)}
+.he-r a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);text-underline-offset:4px}
 @media (max-width:760px){.he{grid-template-columns:1fr}.he-c{padding:18px}.he-es{display:grid;gap:0}.he-es ul{display:grid;gap:0}}
 /* 診断への入口のカード（トップのヒーロー・エッセイの終わり） */
 .qzc{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px;padding:14px 16px;max-width:34em;border:1px solid var(--line);border-inline-start:3px solid var(--gold);border-radius:12px;background:color-mix(in srgb,var(--surface) 72%,transparent)}
@@ -635,8 +643,9 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
       <a class="btn solid" href="#list">सेवाएँ देखें</a>
       <a class="btn line" href="#how">कैसे इस्तेमाल करें</a>
     </div>
+    <nav class="hq" aria-label="टूल"><a href="calc/countries/?s=home-top-countries">211 देशों में खर्च</a><a href="calc/household/?s=home-top-hh">परिवार का कैलकुलेटर</a><a href="shindan/?s=home-top-quiz">फ़्री लंच क्विज़</a><a href="pilots/us/?s=home-top-pilots">अमेरिकी पायलट तालिका</a></nav>
     <div class="qzc"><div class="qzc-t"><p class="qzc-e">फ़्री लंच क्विज़</p><p class="qzc-q">आप किस टाइप के हैं?</p><p class="qzc-s">5 सवाल, 30 सेकंड, साइन-अप नहीं</p></div><a class="btn solid" href="/hi/shindan/?s=home-quiz">क्विज़ शुरू करें</a></div>
-    <p class="qz-home"><a href="calc/household/?s=hh-home">बेसिक इनकम से आपके परिवार को फ़ायदा या नुक़सान? परिवार का कैलकुलेटर →</a><a href="calc/">बेसिक इनकम देने में कितना खर्च? कैलकुलेटर आज़माएँ →</a><a href="calc/countries/">सभी 211 देशों और क्षेत्रों की तुलना →</a><a href="calc/map/">विश्व मानचित्र: टैक्स राजस्व के मुकाबले खर्च →</a></p>
+    <p class="qz-home"><a href="calc/">बेसिक इनकम देने में कितना खर्च? कैलकुलेटर आज़माएँ →</a><a href="calc/map/">विश्व मानचित्र: टैक्स राजस्व के मुकाबले खर्च →</a></p>
     <div class="stats">
       <div><span class="dot">40</span><span>सेवाएँ</span></div>
       <div><span class="dot">38</span><span>बार-बार भुगतान</span></div>
@@ -668,7 +677,8 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 <section class="he" aria-label="बेसिक इनकम कैलकुलेटर">
 <div class="he-c"><h2>आपके देश में बेसिक इनकम पर कितना खर्च होगा?</h2><p>भारत में सभी को हर महीने ₹2,000 (कैलकुलेटर की मानक रकम) देने पर सालाना 35.1 लाख करोड़ रुपये (करीब 40,200 करोड़ अमेरिकी डॉलर) खर्च होगा, यानी कर राजस्व का 147% और GDP का 10.2%।</p><p class="he-n">211 देश और क्षेत्र, सरकारी आँकड़े और स्रोत।</p><p class="he-a"><a class="btn solid" href="calc/in/?s=home-country">भारत के आँकड़े देखें →</a><a href="calc/countries/?s=home-country">सभी 211 देशों और क्षेत्रों की तुलना →</a></p></div>
 <div class="he-c"><h2>आपके परिवार को फ़ायदा होगा या नुक़सान?</h2><p>परिवार, आमदनी, पेंशन और सरकारी सहायता डालें और देखें कि हर महीने 30,000 से 1,00,000 येन की बेसिक इनकम से आपके परिवार को हर महीने कितना फ़ायदा या नुक़सान होगा।</p><p class="he-n">यह जापान के परिवारों के लिए है: इसमें जापान के 2026 वित्त वर्ष के बाल भत्ते, पेंशन और सरकारी सहायता के आँकड़े येन में हैं।</p><p class="he-a"><a class="btn solid" href="calc/household/?s=home-hh">मेरे परिवार का हिसाब लगाएँ →</a></p></div>
-<nav class="he-es" aria-label="नए निबंध"><b>नए निबंध</b><ul><li><a href="essays/ai-unemployment-basic-income/?s=home-essay">अगर AI लगभग सबकी नौकरी ले ले, तो आज का कल्याण तंत्र टिक नहीं पाएगा। इसलिए बेसिक इनकम चाहिए</a></li><li><a href="essays/us-basic-income-cost/?s=home-essay">अमेरिका में सबको बेसिक इनकम देने का ख़र्च कितना? 500 से 2,000 डॉलर महीना तक</a></li><li><a href="essays/ai-company-profits-per-person/?s=home-essay">AI कंपनियों का मुनाफ़ा सबमें बाँटें तो हर व्यक्ति को कितना मिलेगा?</a></li></ul><a class="he-all" href="essays/">सभी निबंध →</a></nav>
+<nav class="he-es" aria-label="नए निबंध"><b>नए निबंध</b><ul><li><span class="he-k">राय (लेखक का मत)</span><a href="essays/ai-unemployment-basic-income/?s=home-essay">अगर AI लगभग सबकी नौकरी ले ले, तो आज का कल्याण तंत्र टिक नहीं पाएगा। इसलिए बेसिक इनकम चाहिए</a></li><li><span class="he-k">डेटा</span><a href="essays/us-basic-income-cost/?s=home-essay">अमेरिका में सबको बेसिक इनकम देने का ख़र्च कितना? 500 से 2,000 डॉलर महीना तक</a></li><li><span class="he-k">डेटा</span><a href="essays/ai-company-profits-per-person/?s=home-essay">AI कंपनियों का मुनाफ़ा सबमें बाँटें तो हर व्यक्ति को कितना मिलेगा?</a></li><li><span class="he-k">डेटा</span><a href="essays/japan-basic-income-cost/?s=home-essay">जापान में सबको बेसिक इनकम देने का ख़र्च कितना? 10,000 से 1,00,000 येन महीना तक</a></li></ul><a class="he-all" href="essays/">सभी निबंध →</a></nav>
+<p class="he-r"><span>शोधकर्ताओं और पत्रकारों के लिए:</span><a href="about/?s=home-about">इस साइट के बारे में: स्रोत, हवाला और सुधार</a><a href="data/?s=home-data">ओपन डेटा: सभी 12 डेटासेट</a></p>
 </section>
 </div>
 </div>

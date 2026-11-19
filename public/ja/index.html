@@ -320,6 +320,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
 .lede b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+/* ヒーローのボタンの下の道具の札: 国の比較・わが家の計算機・診断・アメリカの実験の一覧（よく見られるページを最初の画面に） */
+.hq{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:36em}
+.hq a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));background:color-mix(in srgb,var(--gold) 8%,transparent);color:var(--ink);font-weight:700;font-size:.9rem;line-height:1.3;text-decoration:none}
+.hq a:hover{border-color:var(--gold)}
 .qz-home{margin-top:10px;display:flex;flex-wrap:wrap;gap:0 20px}
 .qz-home a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;color:var(--gold);text-underline-offset:4px}
 /* ヒーローの下の入口: 国の費用・わが家の計算機・新しいエッセイ */
@@ -337,6 +341,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .he-es li{min-width:0}
 .he-es a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);overflow-wrap:anywhere;text-underline-offset:4px}
 .he-es .he-all{color:var(--gold)}
+.he-k{display:inline-block;flex:none;font-size:.75rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 60%,var(--line));background:color-mix(in srgb,var(--gold) 14%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
+.he-es li{display:flex;align-items:center;flex-wrap:wrap;padding-top:4px}
+.he-r{grid-column:1/-1;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 14px;font-size:.875rem;color:var(--muted)}
+.he-r a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);text-underline-offset:4px}
 @media (max-width:760px){.he{grid-template-columns:1fr}.he-c{padding:18px}.he-es{display:grid;gap:0}.he-es ul{display:grid;gap:0}}
 /* 診断への入口のカード（トップのヒーロー・エッセイの終わり） */
 .qzc{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px;padding:14px 16px;max-width:34em;border:1px solid var(--line);border-inline-start:3px solid var(--gold);border-radius:12px;background:color-mix(in srgb,var(--surface) 72%,transparent)}
@@ -785,8 +793,9 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
       <a class="btn solid" href="#list">サービスを見る</a>
       <a class="btn line" href="#how">使い方</a>
     </div>
+    <nav class="hq" aria-label="ツール"><a href="calc/countries/?s=home-top-countries">211の国・地域のBI費用</a><a href="calc/household/?s=home-top-hh">わが家のBI計算機</a><a href="shindan/?s=home-top-quiz">タダ飯診断</a><a href="pilots/us/?s=home-top-pilots">アメリカの実験の一覧</a></nav>
     <div class="qzc"><div class="qzc-t"><p class="qzc-e">タダ飯診断</p><p class="qzc-q">あなたは何型？</p><p class="qzc-s">5問・30秒・登録不要</p></div><a class="btn solid" href="/ja/shindan/?s=home-quiz">診断する</a></div>
-    <p class="qz-home"><a href="calc/household/?s=hh-home">わが家はBIで得？損？「わが家のBI計算機」 →</a><a href="calc/">ベーシックインカム、配るといくら？「BI計算機」 →</a><a href="calc/countries/">全211の国・地域をくらべる →</a><a href="calc/map/">世界地図：税収とくらべた費用 →</a></p>
+    <p class="qz-home"><a href="calc/">ベーシックインカム、配るといくら？「BI計算機」 →</a><a href="calc/map/">世界地図：税収とくらべた費用 →</a></p>
     <div class="stats">
       <div><span class="dot">40</span><span>掲載サービス</span></div>
       <div><span class="dot">38</span><span>継続して入るもの</span></div>
@@ -818,7 +827,8 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 <section class="he" aria-label="BI計算機">
 <div class="he-c"><h2>あなたの国で配ると、いくら？</h2><p>日本の全員に月3万円（計算機の基準額）を配ると、1年で44.2兆円（約2,950億米ドル）、税収の52.8%、GDPの6.7%にあたります。</p><p class="he-n">211の国・地域。公的データで出典つき。</p><p class="he-a"><a class="btn solid" href="calc/jp/?s=home-country">日本の数字を見る →</a><a href="calc/countries/?s=home-country">全211の国・地域をくらべる →</a></p></div>
 <div class="he-c"><h2>あなたの家は得する？ 損する？</h2><p>家族の人数、年収、年金、生活保護を入れると、月3万〜10万円のベーシックインカムで、あなたの家のお金が毎月いくら増えるか減るかがわかります。</p><p class="he-a"><a class="btn solid" href="calc/household/?s=home-hh">わが家で計算する →</a></p></div>
-<nav class="he-es" aria-label="新しいエッセイ"><b>新しいエッセイ</b><ul><li><a href="essays/ai-unemployment-basic-income/?s=home-essay">全員が失業する社会に、生活保護は耐えられない。だからベーシックインカムが要る</a></li><li><a href="essays/us-basic-income-cost/?s=home-essay">アメリカで全員にベーシックインカムを配ると、いくらかかる？ 月500ドルから2,000ドルまで</a></li><li><a href="essays/ai-company-profits-per-person/?s=home-essay">AI企業の利益を全員に配ったら、1人いくら？</a></li></ul><a class="he-all" href="essays/">エッセイ一覧 →</a></nav>
+<nav class="he-es" aria-label="新しいエッセイ"><b>新しいエッセイ</b><ul><li><span class="he-k">論考（筆者の意見です）</span><a href="essays/ai-unemployment-basic-income/?s=home-essay">全員が失業する社会に、生活保護は耐えられない。だからベーシックインカムが要る</a></li><li><span class="he-k">データ</span><a href="essays/us-basic-income-cost/?s=home-essay">アメリカで全員にベーシックインカムを配ると、いくらかかる？ 月500ドルから2,000ドルまで</a></li><li><span class="he-k">データ</span><a href="essays/ai-company-profits-per-person/?s=home-essay">AI企業の利益を全員に配ったら、1人いくら？</a></li><li><span class="he-k">データ</span><a href="essays/japan-basic-income-cost/?s=home-essay">日本で全員にベーシックインカムを配ると、いくらかかる？ 月1万円から10万円まで</a></li></ul><a class="he-all" href="essays/">エッセイ一覧 →</a></nav>
+<p class="he-r"><span>研究者・記者の方へ：</span><a href="about/?s=home-about">このサイトについて：出典・引用・訂正</a><a href="data/?s=home-data">オープンデータ: 12のデータセット</a></p>
 </section>
 </div>
 </div>

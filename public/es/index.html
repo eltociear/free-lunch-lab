@@ -193,6 +193,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .lede{margin-top:18px;font-size:1.05rem;max-width:32em;color:var(--muted)}
 .lede b{color:var(--ink)}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+/* ヒーローのボタンの下の道具の札: 国の比較・わが家の計算機・診断・アメリカの実験の一覧（よく見られるページを最初の画面に） */
+.hq{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:36em}
+.hq a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));background:color-mix(in srgb,var(--gold) 8%,transparent);color:var(--ink);font-weight:700;font-size:.9rem;line-height:1.3;text-decoration:none}
+.hq a:hover{border-color:var(--gold)}
 .qz-home{margin-top:10px;display:flex;flex-wrap:wrap;gap:0 20px}
 .qz-home a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;color:var(--gold);text-underline-offset:4px}
 /* ヒーローの下の入口: 国の費用・わが家の計算機・新しいエッセイ */
@@ -210,6 +214,10 @@ html[lang="hi"] .label,html[lang="hi"] .cat,html[lang="ar"] .label,html[lang="ar
 .he-es li{min-width:0}
 .he-es a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);overflow-wrap:anywhere;text-underline-offset:4px}
 .he-es .he-all{color:var(--gold)}
+.he-k{display:inline-block;flex:none;font-size:.75rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 60%,var(--line));background:color-mix(in srgb,var(--gold) 14%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
+.he-es li{display:flex;align-items:center;flex-wrap:wrap;padding-top:4px}
+.he-r{grid-column:1/-1;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 14px;font-size:.875rem;color:var(--muted)}
+.he-r a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink);text-underline-offset:4px}
 @media (max-width:760px){.he{grid-template-columns:1fr}.he-c{padding:18px}.he-es{display:grid;gap:0}.he-es ul{display:grid;gap:0}}
 /* 診断への入口のカード（トップのヒーロー・エッセイの終わり） */
 .qzc{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px;padding:14px 16px;max-width:34em;border:1px solid var(--line);border-inline-start:3px solid var(--gold);border-radius:12px;background:color-mix(in srgb,var(--surface) 72%,transparent)}
@@ -658,8 +666,9 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
       <a class="btn solid" href="#list">Ver los servicios</a>
       <a class="btn line" href="#how">Cómo funciona</a>
     </div>
+    <nav class="hq" aria-label="Herramientas"><a href="calc/countries/?s=home-top-countries">Coste en 211 países</a><a href="calc/household/?s=home-top-hh">Calculadora para tu hogar</a><a href="shindan/?s=home-top-quiz">Test del almuerzo gratis</a><a href="pilots/us/?s=home-top-pilots">Tabla de pilotos de EE. UU.</a></nav>
     <div class="qzc"><div class="qzc-t"><p class="qzc-e">Test del almuerzo gratis</p><p class="qzc-q">¿De qué tipo eres?</p><p class="qzc-s">5 preguntas, 30 segundos, sin registro</p></div><a class="btn solid" href="/es/shindan/?s=home-quiz">Hacer el test</a></div>
-    <p class="qz-home"><a href="calc/household/?s=hh-home">¿Tu hogar ganaría o perdería? Calculadora de renta básica para tu hogar →</a><a href="calc/">¿Cuánto costaría una renta básica? Prueba la calculadora →</a><a href="calc/countries/">Los 211 países y territorios comparados →</a><a href="calc/map/">Mapa mundial: el coste frente a la recaudación →</a></p>
+    <p class="qz-home"><a href="calc/">¿Cuánto costaría una renta básica? Prueba la calculadora →</a><a href="calc/map/">Mapa mundial: el coste frente a la recaudación →</a></p>
     <div class="stats">
       <div><span class="dot">40</span><span>servicios</span></div>
       <div><span class="dot">38</span><span>pagan de forma recurrente</span></div>
@@ -691,7 +700,8 @@ html[lang="ja"] .grid .svc .gain,html[lang="en"] .grid .svc .gain{font-size:1.18
 <section class="he" aria-label="Calculadora de la renta básica">
 <div class="he-c"><h2>¿Cuánto costaría en tu país?</h2><p>Dar a todo el mundo en España 500 € al mes (la cantidad de referencia de la calculadora) costaría 287 mil millones de euros al año (unos 325 mil millones de dólares estadounidenses), el 114 % de la recaudación tributaria y el 17,0 % del PIB.</p><p class="he-n">211 países y territorios, datos oficiales con fuentes.</p><p class="he-a"><a class="btn solid" href="calc/es/?s=home-country">Ver las cifras de España →</a><a href="calc/countries/?s=home-country">Los 211 países y territorios comparados →</a></p></div>
 <div class="he-c"><h2>¿Tu hogar ganaría o perdería?</h2><p>Indica tu familia, ingresos, pensión y asistencia pública para ver cuánto ganaría o perdería tu hogar cada mes con una renta básica de 30.000 a 100.000 yenes al mes.</p><p class="he-n">Para hogares en Japón: usa las cifras del año fiscal 2026 de Japón para la asignación por hijo, las pensiones y la asistencia pública, en yenes.</p><p class="he-a"><a class="btn solid" href="calc/household/?s=home-hh">Calcular para mi hogar →</a></p></div>
-<nav class="he-es" aria-label="Ensayos recientes"><b>Ensayos recientes</b><ul><li><a href="essays/ai-unemployment-basic-income/?s=home-essay">Si la IA deja sin trabajo a casi todos, hará falta una renta básica</a></li><li><a href="essays/us-basic-income-cost/?s=home-essay">¿Cuánto le costaría a Estados Unidos una renta básica?</a></li><li><a href="essays/ai-company-profits-per-person/?s=home-essay">Beneficios de la IA para todos: ¿cuánto por persona?</a></li></ul><a class="he-all" href="essays/">Todos los ensayos →</a></nav>
+<nav class="he-es" aria-label="Ensayos recientes"><b>Ensayos recientes</b><ul><li><span class="he-k">Opinión</span><a href="essays/ai-unemployment-basic-income/?s=home-essay">Si la IA deja sin trabajo a casi todos, hará falta una renta básica</a></li><li><span class="he-k">Datos</span><a href="essays/us-basic-income-cost/?s=home-essay">¿Cuánto le costaría a Estados Unidos una renta básica?</a></li><li><span class="he-k">Datos</span><a href="essays/ai-company-profits-per-person/?s=home-essay">Beneficios de la IA para todos: ¿cuánto por persona?</a></li><li><span class="he-k">Datos</span><a href="essays/japan-basic-income-cost/?s=home-essay">¿Cuánto le costaría a Japón una renta básica? De 10.000 a 100.000 yenes al mes</a></li></ul><a class="he-all" href="essays/">Todos los ensayos →</a></nav>
+<p class="he-r"><span>Para investigadores y periodistas:</span><a href="about/?s=home-about">Acerca de este sitio: fuentes, citas y correcciones</a><a href="data/?s=home-data">Datos abiertos: los 12 conjuntos de datos</a></p>
 </section>
 </div>
 </div>
