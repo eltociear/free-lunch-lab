@@ -3526,7 +3526,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-18. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-19. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -3688,7 +3688,7 @@ Runtime of Encointer’s common-good parachain on Kusama, the chain where its co
 - Language: JavaScript
 - License: AGPL-3.0
 - Stars: 350
-- Last commit: 2026-11-10
+- Last commit: 2026-11-18
 
 End-to-end encrypted app for a peer-to-peer basic income: friends pledge money each month so that everyone in the group stays above an agreed minimum
 
@@ -3802,7 +3802,7 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-15
+- Last commit: 2026-11-18
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
@@ -3885,7 +3885,7 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Language: TypeScript
 - License: MIT (LICENSE)
 - Stars: 163
-- Last commit: 2026-11-16
+- Last commit: 2026-11-18
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
@@ -3908,7 +3908,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 43
-- Last commit: 2026-11-17
+- Last commit: 2026-11-18
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -3974,7 +3974,7 @@ Reference mobile app for BrightID: people connect with others they know, and ana
 - Language: Python
 - License: AGPL-3.0
 - Stars: 175
-- Last commit: 2026-11-17
+- Last commit: 2026-11-19
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 
@@ -3985,7 +3985,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-16
+- Last commit: 2026-11-18
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 
@@ -4340,10 +4340,10 @@ What's in it: Five-wave panel survey microdata (household, individual, community
 
 A weekly roundup of basic income, guaranteed income and cash transfer news, checked by hand. Each item is summarised in our own words and links to its source; proposals are labelled as proposals. For changes to this site itself, see the update log on the home page. Page: https://neteru-nyukin.eltociear.workers.dev/news/
 
-### Week of 2026-11-16 (updated 2026-11-17)
+### Week of 2026-11-16 (updated 2026-11-19)
 
 - 2026-11-10, Germany (AI & funding): Germany’s job agency chief expects AI to cut 800,000 jobs in 15 years. Germany’s Federal Employment Agency chief Andrea Nahles told Handelsblatt she expects AI to cut about 800,000 jobs in 15 years and create about as many, hitting some sectors harder, such as business services and analytical work at banks and insurers. She did not mention basic income; an article on BIEN’s site cited it as a reason to rethink income security. Source: ZDFheute (dpa), https://www.zdfheute.de/wirtschaft/ki-jobs-stellenstreichungen-100.html; Basic Income Earth Network, https://basicincome.org/news/2026/11/ai-the-future-of-work-and-why-we-need-to-rethink-income-security/
-- 2026-11-04, South Korea (Pilot): 34 Korean counties apply to join the rural basic income pilot in 2027. 34 of the 52 eligible depopulating counties applied to join the rural basic income pilot from 2027, about 1.9 applicants for each of the roughly 18 places. The agriculture ministry plans to name provisional picks around 19 November after an expert review; the final choice depends on parliament passing the 2027 budget. Source: Ministry of Agriculture, Food and Rural Affairs (Korea), https://www.mafra.go.kr/bbs/home/792/611224/download.do
+- 2026-11-04, South Korea (Pilot): 34 Korean counties apply to join the rural basic income pilot in 2027. 34 of the 52 eligible depopulating counties applied to join the rural basic income pilot from 2027, about 1.9 applicants for each of the roughly 18 places. Picks were due around 19 November after an expert review, but that day the agriculture ministry told counties it would decide in December, after parliament passes the 2027 budget. Source: Ministry of Agriculture, Food and Rural Affairs (Korea), https://www.mafra.go.kr/bbs/home/792/611224/download.do; Newsis, https://www.newsis.com/view/NISX20261119_0003874509; Kangwon Domin Ilbo, https://www.kado.net/news/articleView.html?idxno=2085844
 - 2026-11-03, United States (Policy): Atlanta’s former guaranteed income mayor elected governor of Georgia. Keisha Lance Bottoms won Georgia’s governor race on 3 November. As Atlanta mayor she helped set up the I.M.P.A.C.T. pilot, which paid 300 low-income residents $500 a month. She has not proposed a statewide basic income, and Newsweek notes a state-funded one has little chance in the Republican-held state Senate. Source: Newsweek, https://www.newsweek.com/keisha-lance-bottoms-universal-basic-income-georgia-12708938; Basic Income Earth Network, https://basicincome.org/news/2026/11/can-political-leadership-help-move-guaranteed-income-from-temporary-pilots-towards-lasting-public-policy/
 
 ### Week of 2026-11-02 (updated 2026-11-03)

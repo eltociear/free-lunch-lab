@@ -5,7 +5,7 @@
   "repository": "https://github.com/eltociear/free-lunch-lab",
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-  "generatedAt": "2026-11-17",
+  "generatedAt": "2026-11-19",
   "languages": [
     "en",
     "ja",
@@ -26,7 +26,7 @@
   "weeks": [
     {
       "weekOf": "2026-11-16",
-      "updated": "2026-11-17",
+      "updated": "2026-11-19",
       "items": [
         {
           "id": "de-nahles-ai-800k-jobs",
@@ -85,6 +85,14 @@
             {
               "name": "Ministry of Agriculture, Food and Rural Affairs (Korea)",
               "url": "https://www.mafra.go.kr/bbs/home/792/611224/download.do"
+            },
+            {
+              "name": "Newsis",
+              "url": "https://www.newsis.com/view/NISX20261119_0003874509"
+            },
+            {
+              "name": "Kangwon Domin Ilbo",
+              "url": "https://www.kado.net/news/articleView.html?idxno=2085844"
             }
           ],
           "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/news/#n-kr-rural-pilot-2027-applications",
@@ -105,13 +113,13 @@
             "ar": "34 مقاطعة كورية تتقدّم للانضمام إلى تجربة الدخل الأساسي الريفي في 2027"
           },
           "summaries": {
-            "en": "34 of the 52 eligible depopulating counties applied to join the rural basic income pilot from 2027, about 1.9 applicants for each of the roughly 18 places. The agriculture ministry plans to name provisional picks around 19 November after an expert review; the final choice depends on parliament passing the 2027 budget.",
-            "ja": "2027年から農村基本所得の試験事業に加わる郡の公募に、対象となる人口減少地域52郡のうち34郡が応募しました。選ばれるのは18郡程度で、倍率は約1.9倍です。農林畜産食品部は専門家の審査を経て11月19日ごろに暫定結果を発表する予定で、最終決定は国会での2027年度予算の確定が前提です。",
-            "zh": "在有资格申请的52个人口减少郡中，有34个郡申请从2027年起加入农村基本收入试点，约18个名额，竞争比约为1.9比1。农林畜产食品部计划经专家评审后于11月19日前后公布暂定结果，最终入选取决于国会通过2027年预算。",
-            "hi": "पात्र 52 घटती आबादी वाली काउंटियों में से 34 ने 2027 से ग्रामीण बेसिक इनकम पायलट में जुड़ने के लिए आवेदन किया; लगभग 18 जगहें हैं, यानी हर जगह के लिए करीब 1.9 आवेदक। कृषि मंत्रालय विशेषज्ञ समीक्षा के बाद लगभग 19 नवंबर को अस्थायी सूची घोषित करेगा; अंतिम चयन संसद से 2027 का बजट पास होने पर निर्भर है।",
-            "es": "34 de los 52 condados en despoblación que podían optar pidieron sumarse al piloto de renta básica rural desde 2027, unos 1,9 candidatos por cada una de las cerca de 18 plazas. El Ministerio de Agricultura prevé anunciar una selección provisional hacia el 19 de noviembre tras una evaluación de expertos; la decisión final depende de que el Parlamento apruebe el presupuesto de 2027.",
-            "de": "34 der 52 berechtigten schrumpfenden Landkreise haben sich beworben, ab 2027 am ländlichen Grundeinkommen-Pilotprojekt teilzunehmen, rund 1,9 Bewerber für jeden der etwa 18 Plätze. Das Agrarministerium will nach einer Expertenprüfung um den 19. November eine vorläufige Auswahl bekanntgeben; endgültig entschieden wird erst, wenn das Parlament den Haushalt 2027 beschließt.",
-            "ar": "تقدّمت 34 من أصل 52 مقاطعة مؤهلة يتناقص سكانها للانضمام إلى تجربة الدخل الأساسي الريفي اعتبارًا من 2027، أي نحو 1.9 متقدّم لكل مقعد من قرابة 18 مقعدًا. وتعتزم وزارة الزراعة إعلان اختيار مؤقت نحو 19 نوفمبر بعد تقييم الخبراء، ويتوقف الاختيار النهائي على إقرار البرلمان لموازنة 2027."
+            "en": "34 of the 52 eligible depopulating counties applied to join the rural basic income pilot from 2027, about 1.9 applicants for each of the roughly 18 places. Picks were due around 19 November after an expert review, but that day the agriculture ministry told counties it would decide in December, after parliament passes the 2027 budget.",
+            "ja": "2027年から農村基本所得の試験事業に加わる郡の公募に、対象の人口減少地域52郡のうち34郡が応募しました（18郡程度、倍率約1.9倍）。結果は専門家の審査を経て11月19日に発表の予定でしたが、農林畜産食品部は当日、国会で2027年度予算が確定した後の12月に決めると各郡に伝えました。",
+            "zh": "在有资格申请的52个人口减少郡中，有34个郡申请从2027年起加入农村基本收入试点，约18个名额，竞争比约为1.9比1。原定经专家评审后于11月19日前后公布结果，但农林畜产食品部当天通知各郡，将在国会通过2027年预算后于12月决定。",
+            "hi": "पात्र 52 घटती आबादी वाली काउंटियों में से 34 ने 2027 से ग्रामीण बेसिक इनकम पायलट में जुड़ने के लिए आवेदन किया; लगभग 18 जगहें हैं, यानी हर जगह के लिए करीब 1.9 आवेदक। विशेषज्ञ समीक्षा के बाद नतीजे लगभग 19 नवंबर को आने थे, पर उसी दिन कृषि मंत्रालय ने काउंटियों को बताया कि फ़ैसला दिसंबर में, संसद से 2027 का बजट पास होने के बाद होगा।",
+            "es": "34 de los 52 condados en despoblación que podían optar pidieron sumarse al piloto de renta básica rural desde 2027, unos 1,9 candidatos por cada una de las cerca de 18 plazas. La selección se esperaba hacia el 19 de noviembre tras una evaluación de expertos, pero ese día el Ministerio de Agricultura comunicó a los condados que decidirá en diciembre, cuando el Parlamento apruebe el presupuesto de 2027.",
+            "de": "34 der 52 berechtigten schrumpfenden Landkreise haben sich beworben, ab 2027 am ländlichen Grundeinkommen-Pilotprojekt teilzunehmen, rund 1,9 Bewerber für jeden der etwa 18 Plätze. Die Auswahl war nach einer Expertenprüfung um den 19. November erwartet worden; an dem Tag teilte das Agrarministerium den Landkreisen jedoch mit, es entscheide erst im Dezember, wenn das Parlament den Haushalt 2027 beschlossen hat.",
+            "ar": "تقدّمت 34 من أصل 52 مقاطعة مؤهلة يتناقص سكانها للانضمام إلى تجربة الدخل الأساسي الريفي اعتبارًا من 2027، أي نحو 1.9 متقدّم لكل مقعد من قرابة 18 مقعدًا. وكان متوقعًا إعلان الاختيار نحو 19 نوفمبر بعد تقييم الخبراء، لكن وزارة الزراعة أبلغت المقاطعات في ذلك اليوم بأنها ستقرر في ديسمبر بعد أن يُقرّ البرلمان موازنة 2027."
           }
         },
         {

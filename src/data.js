@@ -3995,7 +3995,7 @@ module.exports = {
   },
   "BI_NEWS": [
     {
-      "updated": "2026-11-17",
+      "updated": "2026-11-19",
       "items": [
         {
           "id": "de-nahles-ai-800k-jobs",
@@ -4047,6 +4047,14 @@ module.exports = {
             {
               "name": "Ministry of Agriculture, Food and Rural Affairs (Korea)",
               "url": "https://www.mafra.go.kr/bbs/home/792/611224/download.do"
+            },
+            {
+              "name": "Newsis",
+              "url": "https://www.newsis.com/view/NISX20261119_0003874509"
+            },
+            {
+              "name": "Kangwon Domin Ilbo",
+              "url": "https://www.kado.net/news/articleView.html?idxno=2085844"
             }
           ],
           "title": {
@@ -4059,13 +4067,13 @@ module.exports = {
             "ar": "34 مقاطعة كورية تتقدّم للانضمام إلى تجربة الدخل الأساسي الريفي في 2027"
           },
           "summary": {
-            "en": "34 of the 52 eligible depopulating counties applied to join the rural basic income pilot from 2027, about 1.9 applicants for each of the roughly 18 places. The agriculture ministry plans to name provisional picks around 19 November after an expert review; the final choice depends on parliament passing the 2027 budget.",
-            "ja": "2027年から農村基本所得の試験事業に加わる郡の公募に、対象となる人口減少地域52郡のうち34郡が応募しました。選ばれるのは18郡程度で、倍率は約1.9倍です。農林畜産食品部は専門家の審査を経て11月19日ごろに暫定結果を発表する予定で、最終決定は国会での2027年度予算の確定が前提です。",
-            "zh": "在有资格申请的52个人口减少郡中，有34个郡申请从2027年起加入农村基本收入试点，约18个名额，竞争比约为1.9比1。农林畜产食品部计划经专家评审后于11月19日前后公布暂定结果，最终入选取决于国会通过2027年预算。",
-            "hi": "पात्र 52 घटती आबादी वाली काउंटियों में से 34 ने 2027 से ग्रामीण बेसिक इनकम पायलट में जुड़ने के लिए आवेदन किया; लगभग 18 जगहें हैं, यानी हर जगह के लिए करीब 1.9 आवेदक। कृषि मंत्रालय विशेषज्ञ समीक्षा के बाद लगभग 19 नवंबर को अस्थायी सूची घोषित करेगा; अंतिम चयन संसद से 2027 का बजट पास होने पर निर्भर है।",
-            "es": "34 de los 52 condados en despoblación que podían optar pidieron sumarse al piloto de renta básica rural desde 2027, unos 1,9 candidatos por cada una de las cerca de 18 plazas. El Ministerio de Agricultura prevé anunciar una selección provisional hacia el 19 de noviembre tras una evaluación de expertos; la decisión final depende de que el Parlamento apruebe el presupuesto de 2027.",
-            "de": "34 der 52 berechtigten schrumpfenden Landkreise haben sich beworben, ab 2027 am ländlichen Grundeinkommen-Pilotprojekt teilzunehmen, rund 1,9 Bewerber für jeden der etwa 18 Plätze. Das Agrarministerium will nach einer Expertenprüfung um den 19. November eine vorläufige Auswahl bekanntgeben; endgültig entschieden wird erst, wenn das Parlament den Haushalt 2027 beschließt.",
-            "ar": "تقدّمت 34 من أصل 52 مقاطعة مؤهلة يتناقص سكانها للانضمام إلى تجربة الدخل الأساسي الريفي اعتبارًا من 2027، أي نحو 1.9 متقدّم لكل مقعد من قرابة 18 مقعدًا. وتعتزم وزارة الزراعة إعلان اختيار مؤقت نحو 19 نوفمبر بعد تقييم الخبراء، ويتوقف الاختيار النهائي على إقرار البرلمان لموازنة 2027."
+            "en": "34 of the 52 eligible depopulating counties applied to join the rural basic income pilot from 2027, about 1.9 applicants for each of the roughly 18 places. Picks were due around 19 November after an expert review, but that day the agriculture ministry told counties it would decide in December, after parliament passes the 2027 budget.",
+            "ja": "2027年から農村基本所得の試験事業に加わる郡の公募に、対象の人口減少地域52郡のうち34郡が応募しました（18郡程度、倍率約1.9倍）。結果は専門家の審査を経て11月19日に発表の予定でしたが、農林畜産食品部は当日、国会で2027年度予算が確定した後の12月に決めると各郡に伝えました。",
+            "zh": "在有资格申请的52个人口减少郡中，有34个郡申请从2027年起加入农村基本收入试点，约18个名额，竞争比约为1.9比1。原定经专家评审后于11月19日前后公布结果，但农林畜产食品部当天通知各郡，将在国会通过2027年预算后于12月决定。",
+            "hi": "पात्र 52 घटती आबादी वाली काउंटियों में से 34 ने 2027 से ग्रामीण बेसिक इनकम पायलट में जुड़ने के लिए आवेदन किया; लगभग 18 जगहें हैं, यानी हर जगह के लिए करीब 1.9 आवेदक। विशेषज्ञ समीक्षा के बाद नतीजे लगभग 19 नवंबर को आने थे, पर उसी दिन कृषि मंत्रालय ने काउंटियों को बताया कि फ़ैसला दिसंबर में, संसद से 2027 का बजट पास होने के बाद होगा।",
+            "es": "34 de los 52 condados en despoblación que podían optar pidieron sumarse al piloto de renta básica rural desde 2027, unos 1,9 candidatos por cada una de las cerca de 18 plazas. La selección se esperaba hacia el 19 de noviembre tras una evaluación de expertos, pero ese día el Ministerio de Agricultura comunicó a los condados que decidirá en diciembre, cuando el Parlamento apruebe el presupuesto de 2027.",
+            "de": "34 der 52 berechtigten schrumpfenden Landkreise haben sich beworben, ab 2027 am ländlichen Grundeinkommen-Pilotprojekt teilzunehmen, rund 1,9 Bewerber für jeden der etwa 18 Plätze. Die Auswahl war nach einer Expertenprüfung um den 19. November erwartet worden; an dem Tag teilte das Agrarministerium den Landkreisen jedoch mit, es entscheide erst im Dezember, wenn das Parlament den Haushalt 2027 beschlossen hat.",
+            "ar": "تقدّمت 34 من أصل 52 مقاطعة مؤهلة يتناقص سكانها للانضمام إلى تجربة الدخل الأساسي الريفي اعتبارًا من 2027، أي نحو 1.9 متقدّم لكل مقعد من قرابة 18 مقعدًا. وكان متوقعًا إعلان الاختيار نحو 19 نوفمبر بعد تقييم الخبراء، لكن وزارة الزراعة أبلغت المقاطعات في ذلك اليوم بأنها ستقرر في ديسمبر بعد أن يُقرّ البرلمان موازنة 2027."
           }
         },
         {
@@ -18680,13 +18688,13 @@ module.exports = {
         "ar": "17 مقاطعة ريفية يتناقص سكانها في كوريا الجنوبية (10 في البداية، وأُضيفت 7 في يونيو 2026)"
       },
       "who": {
-        "ja": "韓国の農林畜産食品部と道・郡。2026年の費用は国が40%、道が30%、郡が30%を負担。2027年度予算案では国の負担を50%に引き上げ（道25%、郡25%）、国会での予算確定が前提",
-        "en": "South Korea’s Ministry of Agriculture, Food and Rural Affairs (MAFRA) with provincial and county governments; in 2026 the central government pays 40%, provinces 30% and counties 30%; the 2027 budget proposal raises the central share to 50% (provinces 25%, counties 25%), subject to parliament",
-        "zh": "韩国农林畜产食品部与道、郡政府；2026 年费用由中央政府承担 40%，道承担 30%，郡承担 30%；2027 年预算案将中央负担提高到 50%（道 25%，郡 25%），需经国会通过",
-        "hi": "दक्षिण कोरिया का कृषि, खाद्य और ग्रामीण मामलों का मंत्रालय (MAFRA), प्रांतीय और काउंटी सरकारों के साथ; 2026 में ख़र्च का 40% केंद्र सरकार, 30% प्रांत और 30% काउंटी देते हैं; 2027 के बजट प्रस्ताव में केंद्र का हिस्सा बढ़ाकर 50% किया गया है (प्रांत 25%, काउंटी 25%), जो संसद की मंज़ूरी पर निर्भर है",
-        "es": "Ministerio de Agricultura, Alimentación y Asuntos Rurales de Corea del Sur (MAFRA), con las provincias y los condados; en 2026 el gobierno central paga el 40 %, las provincias el 30 % y los condados el 30 %; el proyecto de presupuesto de 2027 sube la parte central al 50 % (provincias 25 %, condados 25 %), a falta de que lo apruebe el Parlamento",
-        "de": "Südkoreas Ministerium für Landwirtschaft, Ernährung und ländliche Angelegenheiten (MAFRA) mit Provinzen und Landkreisen; 2026 zahlt der Zentralstaat 40 %, die Provinzen 30 % und die Landkreise 30 %; der Haushaltsentwurf 2027 hebt den Anteil des Zentralstaats auf 50 % (Provinzen 25 %, Landkreise 25 %), sofern das Parlament zustimmt",
-        "ar": "وزارة الزراعة والغذاء والشؤون الريفية في كوريا الجنوبية (⁦MAFRA⁩) مع حكومات المقاطعات والأقاليم؛ في 2026 تدفع الحكومة المركزية 40% والأقاليم 30% والمقاطعات 30%، ويرفع مشروع موازنة 2027 حصة الحكومة المركزية إلى 50% (الأقاليم 25% والمقاطعات 25%) رهنًا بموافقة البرلمان"
+        "ja": "韓国の農林畜産食品部と道・郡。2026年の費用は国が40%、道が30%、郡が30%を負担。2027年度予算案では国の負担を50%に引き上げ（道25%、郡25%）、国会での予算確定が前提。2027年からの参加には34郡が応募（18郡程度）し、2026年11月19日の予定だった選定結果の発表は、2027年度予算の確定を待って12月に延期",
+        "en": "South Korea’s Ministry of Agriculture, Food and Rural Affairs (MAFRA) with provincial and county governments; in 2026 the central government pays 40%, provinces 30% and counties 30%; the 2027 budget proposal raises the central share to 50% (provinces 25%, counties 25%), subject to parliament; 34 counties applied for about 18 places from 2027, and the choice, due on 19 November 2026, was put off to December to wait for the 2027 budget",
+        "zh": "韩国农林畜产食品部与道、郡政府；2026 年费用由中央政府承担 40%，道承担 30%，郡承担 30%；2027 年预算案将中央负担提高到 50%（道 25%，郡 25%），需经国会通过；34 个郡申请从 2027 年起加入（约 18 个名额），原定 2026 年 11 月 19 日公布的入选结果推迟到 12 月，等待 2027 年预算确定",
+        "hi": "दक्षिण कोरिया का कृषि, खाद्य और ग्रामीण मामलों का मंत्रालय (MAFRA), प्रांतीय और काउंटी सरकारों के साथ; 2026 में ख़र्च का 40% केंद्र सरकार, 30% प्रांत और 30% काउंटी देते हैं; 2027 के बजट प्रस्ताव में केंद्र का हिस्सा बढ़ाकर 50% किया गया है (प्रांत 25%, काउंटी 25%), जो संसद की मंज़ूरी पर निर्भर है; 2027 से जुड़ने के लिए 34 काउंटियों ने लगभग 18 जगहों के लिए आवेदन किया, और 19 नवंबर 2026 को आने वाला चयन 2027 का बजट तय होने तक दिसंबर के लिए टाल दिया गया",
+        "es": "Ministerio de Agricultura, Alimentación y Asuntos Rurales de Corea del Sur (MAFRA), con las provincias y los condados; en 2026 el gobierno central paga el 40 %, las provincias el 30 % y los condados el 30 %; el proyecto de presupuesto de 2027 sube la parte central al 50 % (provincias 25 %, condados 25 %), a falta de que lo apruebe el Parlamento; 34 condados pidieron sumarse desde 2027 para unas 18 plazas, y la selección, prevista para el 19 de noviembre de 2026, se aplazó a diciembre a la espera del presupuesto de 2027",
+        "de": "Südkoreas Ministerium für Landwirtschaft, Ernährung und ländliche Angelegenheiten (MAFRA) mit Provinzen und Landkreisen; 2026 zahlt der Zentralstaat 40 %, die Provinzen 30 % und die Landkreise 30 %; der Haushaltsentwurf 2027 hebt den Anteil des Zentralstaats auf 50 % (Provinzen 25 %, Landkreise 25 %), sofern das Parlament zustimmt; 34 Landkreise bewarben sich um etwa 18 Plätze ab 2027, die für den 19. November 2026 erwartete Auswahl wurde auf Dezember verschoben, bis der Haushalt 2027 steht",
+        "ar": "وزارة الزراعة والغذاء والشؤون الريفية في كوريا الجنوبية (⁦MAFRA⁩) مع حكومات المقاطعات والأقاليم؛ في 2026 تدفع الحكومة المركزية 40% والأقاليم 30% والمقاطعات 30%، ويرفع مشروع موازنة 2027 حصة الحكومة المركزية إلى 50% (الأقاليم 25% والمقاطعات 25%) رهنًا بموافقة البرلمان؛ وتقدّمت 34 مقاطعة لنحو 18 مقعدًا اعتبارًا من 2027، وأُرجئ إعلان الاختيار الذي كان مقررًا في 19 نوفمبر 2026 إلى ديسمبر انتظارًا لإقرار موازنة 2027"
       },
       "paid": {
         "ja": "郡に住民登録して30日以上住む韓国国民全員に、所得の審査も就労要件もなく、1人月15万ウォン（約100ドル）を、その地域でだけ使える地域商品券（カード型かモバイル型）で2年間（2026〜2027年）。2025年10月に7郡を選び、12月に3郡を追加。この10郡は2026年2月26〜27日に初回を支給し、2026年6月11日に追加された7郡は8月から。新しく転入した人は、90日の実居住の確認後に3か月分をさかのぼって受け取る。宝城郡は独自財源で5万ウォンを上乗せして月20万ウォン、報恩郡は1万ウォンを上乗せ",
@@ -18707,7 +18715,8 @@ module.exports = {
         "ar": "تقول الوزارة إن سكان المقاطعات العشر الأولى زادوا 4.7% بعد بدء التجربة، وزادت المتاجر التي تقبل العملة المحلية 13.7%. واستقبلت أوكتشون 1,491 ساكنًا جديدًا في ديسمبر 2025 (وغادر 290)، وتشونغسونغ 318 في الأسبوع التالي لاختيارها. وعلى أوكتشون أن تؤمّن نحو 53 مليار وون خلال عامين، أي نحو 30% من ميزانيتها، وقد علّقت برامج أخرى. وترى ⁦BIEN⁩ أن هذه الصيغة لا تطابق تعريفها (دفعة نقدية دورية للجميع)؛ فالتجربة مقصورة على بعض المقاطعات وتُدفع بقسائم محلية"
       },
       "source": "https://www.mafra.go.kr/bbs/home/792/578154/artclView.do",
-      "source2": "https://www.mafra.go.kr/bbs/home/792/611224/download.do"
+      "source2": "https://www.mafra.go.kr/bbs/home/792/611224/download.do",
+      "source3": "https://www.newsis.com/view/NISX20261119_0003874509"
     },
     {
       "id": "us-durham-rooted",

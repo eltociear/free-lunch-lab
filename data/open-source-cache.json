@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-18",
+  "fetchedOn": "2026-11-19",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -24,7 +24,7 @@
     },
     "git.duniter.org:clients/ginkgo": {
       "stars": 8,
-      "lastCommit": "2026-11-15",
+      "lastCommit": "2026-11-18",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Dart"
@@ -150,14 +150,14 @@
     },
     "github.com:PolicyEngine/policyengine-uk": {
       "stars": 53,
-      "lastCommit": "2026-11-16",
+      "lastCommit": "2026-11-18",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
     },
     "github.com:PolicyEngine/policyengine-us": {
       "stars": 175,
-      "lastCommit": "2026-11-17",
+      "lastCommit": "2026-11-19",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
@@ -297,7 +297,7 @@
     },
     "github.com:okTurtles/group-income": {
       "stars": 350,
-      "lastCommit": "2026-11-10",
+      "lastCommit": "2026-11-18",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "JavaScript"
@@ -311,14 +311,14 @@
     },
     "github.com:socialincome-san/public": {
       "stars": 163,
-      "lastCommit": "2026-11-16",
+      "lastCommit": "2026-11-18",
       "archived": false,
       "license": null,
       "language": "TypeScript"
     },
     "github.com:worldcoin/world-id-protocol": {
       "stars": 43,
-      "lastCommit": "2026-11-17",
+      "lastCommit": "2026-11-18",
       "archived": false,
       "license": "MIT",
       "language": "Rust"

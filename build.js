@@ -410,7 +410,7 @@ for (const l of LANGS) for (const k of US_KEYS) if (!T[l][k]) throw new Error(`m
   for (const t of TIMELINE) {
     if (!/^[a-z0-9-]+$/.test(t.id) || seen.has(t.id)) throw new Error(`timeline ${t.id}: id must be unique, lowercase a-z 0-9 -`);
     seen.add(t.id);
-    for (const s of [t.source, t.source2].filter(Boolean)) if (!/^https?:\/\//.test(s)) throw new Error(`timeline ${t.id}: bad source ${s}`);
+    for (const s of [t.source, t.source2, t.source3].filter(Boolean)) if (!/^https?:\/\//.test(s)) throw new Error(`timeline ${t.id}: bad source ${s}`);
     for (const f of ['place', 'who', 'paid', 'result']) for (const l of LANGS) if (typeof (t[f] || {})[l] !== 'string' || (f !== 'result' && !t[f][l])) throw new Error(`timeline ${t.id}: missing ${f}.${l}`);
     // ar はラテン文字（名前・$ の金額）を LRI/PDI で囲む。hi に CJK や isolate を入れない
     for (const f of ['place', 'who', 'paid', 'result']) {
@@ -2647,7 +2647,7 @@ function timelinePage(lang) {
     const fund = i.us ? `<dt>${esc(L.tlFunding)}</dt><dd>${i.us.funders.map(f => esc(L['tlFund_' + f])).join(' · ')}</dd>` : '';
     const result = t(i.result) ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(t(i.result))}</dd>` : i.us ? `<dt>${esc(L.tlResult)}</dt><dd>${esc(L.tlNoEval)}</dd>` : '';
     return `<li class="tl-item tl-${i.type}" id="tl-${i.id}" data-r="${i.us ? 'us' : 'w'}"><div class="tl-when"><span class="dot" dir="ltr">${esc(i.years)}</span></div><div class="tl-card"><p class="tl-type">${esc(TYPE[i.type])}</p><h2 dir="auto">${esc(i.name)}</h2><p class="tl-place">${esc(t(i.place))}</p>
-<dl><dt>${esc(L.tlWho)}</dt><dd>${esc(t(i.who))}</dd><dt>${esc(L.tlPaid)}</dt><dd>${esc(t(i.paid))}</dd>${fund}${result}<dt>${esc(L.tlSource)}</dt><dd>${[i.source, i.source2].filter(Boolean).map(src).join(' · ')}</dd></dl>${links.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${links.join(' · ')}</p>` : ''}${essays.length ? `<p class="tl-links"><span>${esc(L.essayRelated)}:</span> ${essays.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : ''}${shareMini(lang, `${i.name}: ${firstClause(t(i.paid))}`, shareUrlOf(tlAbs(lang), `tl-${i.id}`))}</div></li>`;
+<dl><dt>${esc(L.tlWho)}</dt><dd>${esc(t(i.who))}</dd><dt>${esc(L.tlPaid)}</dt><dd>${esc(t(i.paid))}</dd>${fund}${result}<dt>${esc(L.tlSource)}</dt><dd>${[i.source, i.source2, i.source3].filter(Boolean).map(src).join(' · ')}</dd></dl>${links.length ? `<p class="tl-links"><span>${esc(L.tlOnSite)}:</span> ${links.join(' · ')}</p>` : ''}${essays.length ? `<p class="tl-links"><span>${esc(L.essayRelated)}:</span> ${essays.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : ''}${shareMini(lang, `${i.name}: ${firstClause(t(i.paid))}`, shareUrlOf(tlAbs(lang), `tl-${i.id}`))}</div></li>`;
   }).join('\n');
   const nUs = US_TL.length, nAll = TIMELINE.length;
   const fb = (r, label, n, on) => `<button type="button" data-r="${r}" aria-pressed="${on}">${esc(label)} <span class="dot">${n}</span></button>`;
@@ -3630,7 +3630,7 @@ const usPilotsJson = {
     monthlyUsd: i.us.monthly, months: i.us.months, recipients: i.us.recipients, unit: i.us.unit, eligibility: i.us.elig, funders: i.us.funders, controlGroup: i.us.control,
     operatorType: i.type === 'gov' ? 'government' : 'nonprofit or research',
     evaluation: i.us.eval ? { by: i.us.eval.by, year: i.us.eval.year, type: i.us.eval.type || null, url: i.us.eval.url } : null,
-    sources: [i.source, i.source2].filter(Boolean),
+    sources: [i.source, i.source2, i.source3].filter(Boolean),
     pageUrl: `${tlAbs(DEFAULT_LANG)}#tl-${i.id}`,
     text: Object.fromEntries(LANGS.map(l => [l, { place: clean(i.place[l]), operator: clean(i.who[l]), paid: clean(i.paid[l]), result: clean(i.result[l]) || clean(T[l].tlNoEval) }])),
   })),
@@ -4000,7 +4000,7 @@ ${BI_NEWS.map(b => [`### Week of ${weekOf(b.updated)} (updated ${b.updated})`, '
 
 ${md(cfill(T.en.usIntro, { n: US_TL.length }))} Page: ${usAbs(DEFAULT_LANG)}
 
-${US_TL.map(i => `- ${md(i.name)} (${md(i.place.en)}; ${i.years}): Run by ${md(i.who.en)}. ${md(i.paid.en)}. Funding: ${i.us.funders.map(f => md(T.en['tlFund_' + f])).join(', ')}. Result: ${md(i.result.en) || md(T.en.tlNoEval)}. Source: ${[i.source, i.source2].filter(Boolean).join(' ; ')}`).join('\n')}
+${US_TL.map(i => `- ${md(i.name)} (${md(i.place.en)}; ${i.years}): Run by ${md(i.who.en)}. ${md(i.paid.en)}. Funding: ${i.us.funders.map(f => md(T.en['tlFund_' + f])).join(', ')}. Result: ${md(i.result.en) || md(T.en.tlNoEval)}. Source: ${[i.source, i.source2, i.source3].filter(Boolean).join(' ; ')}`).join('\n')}
 
 ## Cash-out ranking
 
