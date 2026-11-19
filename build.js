@@ -2,7 +2,7 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, DATASETS = [], GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, HOUSEHOLD } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, DATASETS = [], GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, HOUSEHOLD, CORRECTIONS = [] } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
 const { ranking: rankingOf, TIERS: RANK_TIERS, POINTS: RANK_POINTS, MAX: RANK_MAX, FRESH_MONTHS: RANK_FRESH_MONTHS } = require('./src/ranking.js');
 const calcJs = require('./src/calc.js');
@@ -1799,7 +1799,7 @@ ${alts}
 <div class="wrap">
 ${pr ? `<p class="pr"><b>PR</b><span>${L.pr}</span></p>\n` : ''}${body}
 </div>
-<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a><a href="${calcIdxPath(lang)}">${esc(cfill(L.footCountries, { n: CALC_WORLD.length }))}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><a href="${dataPath(lang)}">${esc(L.odTitle)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
+<footer class="foot-band detail-foot"><div class="wrap foot"><span>${esc(L.foot)}</span><a class="xlink" href="https://x.com/FreeLunchLab" target="_blank" rel="me noopener" aria-label="X: @FreeLunchLab"><svg class="xicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span dir="ltr">@FreeLunchLab</span></a><a class="xlink" href="https://github.com/eltociear/free-lunch-lab" target="_blank" rel="me noopener" aria-label="GitHub: ${esc(L.ghLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>${esc(L.ghLabel)}</span></a><a class="xlink" href="${feedPath(lang)}" aria-label="${esc(L.rssLabel)}"><svg class="xicon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 2.5A11.5 11.5 0 0 1 13.5 14h-2A9.5 9.5 0 0 0 2 4.5zm0 4A7.5 7.5 0 0 1 9.5 14h-2A5.5 5.5 0 0 0 2 8.5zM3.5 11a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg><span>RSS</span></a><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a><a href="${biNewsPath(lang)}">${esc(L.biNewsTitle)}</a><a href="${qzPath(lang)}">${esc(L.shindanTitle)}</a><a href="${calcPath(lang)}">${esc(L.calcTitle)}</a><a href="${calcIdxPath(lang)}">${esc(cfill(L.footCountries, { n: CALC_WORLD.length }))}</a><a href="${badgePath(lang)}">${esc(L.badgeTitle)}</a><a href="${dataPath(lang)}">${esc(L.odTitle)}</a><a href="${aboutPath(lang)}">${esc(L.abNav)}</a><span class="dot">${esc(L.brandPlain)}</span></div></footer>
 <div class="toast" id="toast" role="status" hidden></div>
 ${script}
 </body>
@@ -1955,6 +1955,107 @@ function essaysIndex(lang) {
 <main class="orgs"><header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(L.essaysTitle)}</h1></header><ul class="org-list">${items}</ul>
 <p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p></main>`;
   return shell(lang, { title: `${L.essaysTitle} | ${L.title}`, desc: clip(T[lang].essaysDesc, lang), hrefFor: essaysAbs, pathFor: essaysPath, ld, ogType: 'website', body });
+}
+
+// ---- このサイトについて（/about/）。研究者・記者向けの入口: 運営者、編集方針、オープンデータと引用のしかた、表・計算機・フィード、エッセイ（データ・意見の印あり・論考）、訂正の記録。
+// 紹介リンクやランキングは載せない。訂正の記録は CORRECTIONS（data.js）から
+const aboutPath = l => `${urlPath(l)}about/`;
+const aboutAbs = l => SITE_URL + aboutPath(l);
+const GH_REPO = 'https://github.com/eltociear/free-lunch-lab';
+const AB_KEYS = ['abNav', 'abMetaTitle', 'abDesc', 'abH1', 'abIntro', 'abWhoH', 'abWho', 'abRef', 'abPolicyH', 'abP1', 'abP2', 'abP3', 'abP4', 'abDataH', 'abData', 'abCite', 'abCiteTpl', 'abToolsH', 'abUs', 'abTl', 'abCalc', 'abHh', 'abEmbedL', 'abEmbed', 'abNews', 'abNewsRss', 'abEsH', 'abEsData', 'abEsDataP', 'abEsMixed', 'abEsMixedP', 'abFixH', 'abFixP', 'abFeed', 'abContactH', 'abContact', 'abLink'];
+// hi は CJK と isolate の字なし、ar はラテン文字と数字を LRI/PDI の中だけに（{n} などの差し込みは除く）
+const hiBad = s => /[　-鿿＀-￯⁦-⁩]/.test(s);
+const arBad = s => /[A-Za-z0-9]/.test(String(s).replace(/\{\w+\}/g, '').replace(/⁦[^⁩]*⁩/g, ''));
+for (const l of LANGS) for (const k of AB_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const k of AB_KEYS) { if (hiBad(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`); if (arBad(T.ar[k])) throw new Error(`ar.${k}: Latin letters or digits outside LRI/PDI`); }
+CORRECTIONS.forEach((c, i) => {
+  if (!/^\d{4}-\d\d-\d\d$/.test(c.date || '')) throw new Error(`CORRECTIONS ${i}: bad date`);
+  if (i && CORRECTIONS[i - 1].date < c.date) throw new Error(`CORRECTIONS ${c.date}: not newest first`);
+  if (c.tl && !TIMELINE.some(t => t.id === c.tl)) throw new Error(`CORRECTIONS ${c.date}: unknown timeline id ${c.tl}`);
+  for (const id of c.essays || []) if (!ESSAYS.some(e => e.id === id)) throw new Error(`CORRECTIONS ${c.date}: unknown essay ${id}`);
+  for (const l of LANGS) if (!c[l]) throw new Error(`CORRECTIONS ${c.date}: missing ${l}`);
+  if (hiBad(c.hi)) throw new Error(`CORRECTIONS ${c.date}: hi has CJK or isolate characters`);
+  if (arBad(c.ar)) throw new Error(`CORRECTIONS ${c.date}: ar has Latin letters or digits outside LRI/PDI`);
+});
+// データエッセイ = 論考でも意見の段落（o）もないもの。意見の段落があるものは「意見に印のあるエッセイ」
+const noIso = t => String(t).replace(/[\u2066-\u2069]/g, '');
+const essayHasOp = e => e.blocks.en.some(([k]) => k === 'o');
+const ABOUT_CSS = `<style>
+.ab .g-sec>p{margin:0;line-height:1.85}
+.ab a[dir="ltr"],.ab code{overflow-wrap:anywhere}
+.ab-note{font-size:.92rem;color:var(--muted)}
+.ab-list{margin:0;padding-inline-start:1.2em;display:grid;gap:10px;line-height:1.85}
+.ab-cite{margin:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem;line-height:1.7;overflow-wrap:anywhere}
+.ab-tools,.ab-fix{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.ab-tools li{padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.ab-tools p{margin:4px 0 0;font-size:.95rem;line-height:1.75}
+.ab-tools .ab-t{font-weight:700}
+.ab-tools .ab-more{display:inline-flex;align-items:center;min-height:44px;font-size:.92rem}
+.ab-es h3{font-family:var(--f-body);font-weight:700;font-size:1.05rem;margin:10px 0 0}
+.ab-es h3+p{margin:2px 0 0;font-size:.92rem;color:var(--muted)}
+.ab-es ul{margin:6px 0 0;padding-inline-start:1.2em;line-height:1.7}
+.ab-es li{padding:4px 0}
+.ab-es time,.ab-fix time{color:var(--muted);font-size:.85rem;white-space:nowrap}
+.ab-fix li{border-inline-start:3px solid var(--line);padding-inline-start:12px}
+.ab-fix p{margin:2px 0 0;line-height:1.8}
+.ab-fix .ab-on{font-size:.9rem}
+</style>`;
+function aboutPage(lang) {
+  const L = T[lang], home = urlPath(lang), arrow = RTL.has(lang) ? '←' : '→';
+  const link = (href, text, ltr = false) => `<a href="${href}"${ltr ? ' dir="ltr"' : ''}>${text}</a>`;
+  const repo = link(GH_REPO, 'github.com/eltociear/free-lunch-lab', true);
+  const issues = link(`${GH_REPO}/issues`, 'github.com/eltociear/free-lunch-lab/issues', true);
+  const xl = link('https://x.com/FreeLunchLab', '@FreeLunchLab', true);
+  const fill = (t, o) => cfill(esc(t), o);
+  const lead = t => { const m = t.match(/^(.+?[.。।])\s*([\s\S]*)$/); return m ? `<b>${m[1]}</b> ${m[2]}` : t; };
+  const evals = US_TL.filter(i => i.us.eval).length;
+  const byDate = (a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0);
+  const esList = list => `<ul>${list.slice().sort(byDate).map(e => `<li><a href="${essayPath(lang, e)}">${esc(e.title[lang] || e.title.en)}</a> <time datetime="${e.date}">${esc(longDate(e.date, lang))}</time></li>`).join('')}</ul>`;
+  const groups = [
+    [L.abEsData, L.abEsDataP, ESSAYS.filter(e => !e.kind && !essayHasOp(e))],
+    [L.essayOpLabel, L.essayOpNote, ESSAYS.filter(e => e.kind === 'opinion')],
+    [L.abEsMixed, cfill(L.abEsMixedP, { op: L.essayOpinion }), ESSAYS.filter(e => !e.kind && essayHasOp(e))],
+  ].filter(g => g[2].length);
+  const tools = [
+    [usPath(lang), L.usCrumb, cfill(L.abUs, { n: US_TL.length, e: evals })],
+    [tlPath(lang), L.tlTitle, cfill(L.abTl, { n: TIMELINE.length })],
+    [calcPath(lang), L.calcTitle, cfill(L.abCalc, { n: CALC_WORLD.length }), [calcIdxPath(lang), cfill(L.calcIdxLink, { n: CALC_WORLD.length })]],
+    [hhPath(lang), L.hhTitle, L.abHh],
+    [embedPath(lang), L.abEmbedL, L.abEmbed],
+    [biNewsPath(lang), L.biNewsTitle, L.abNews, [biNewsFeedPath(lang), L.abNewsRss]],
+  ];
+  const tlName = id => TIMELINE.find(t => t.id === id).name;
+  const fixes = CORRECTIONS.map(c => {
+    const on = [c.us && link(usPath(lang), esc(L.usCrumb)), c.tl && `<a href="${tlPath(lang)}#tl-${c.tl}" dir="auto">${esc(tlName(c.tl))}</a>`, ...(c.essays || []).map(id => { const e = ESSAYS.find(x => x.id === id); return link(essayPath(lang, e), esc(e.title[lang] || e.title.en)); })].filter(Boolean);
+    return `<li><time datetime="${c.date}">${esc(longDate(c.date, lang))}</time><p>${esc(c[lang])}</p><p class="ab-on">${on.join(' · ')}</p></li>`;
+  }).join('');
+  const usTitle = cfill(L.usH1, { n: US_TL.length });
+  const year = ESSAYS.map(e => e.date).sort().pop().slice(0, 4);
+  const cite = cfill(L.abCiteTpl, { year, title: usTitle, url: isoRtl(lang, usAbs(lang)) });
+  const toc = [['who', L.abWhoH], ['policy', L.abPolicyH], ['data', L.abDataH], ['tools', L.abToolsH], ['essays', L.abEsH], ['corrections', L.abFixH], ['contact', L.abContactH]];
+  const ld = [
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: noIso(L.abNav), item: aboutAbs(lang) } ] },
+    { '@context': 'https://schema.org', '@type': 'AboutPage', name: noIso(L.abH1), description: noIso(L.abDesc), url: aboutAbs(lang), inLanguage: LANG_TAG[lang],
+      isPartOf: { '@type': 'WebSite', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
+      mainEntity: { '@type': 'Organization', name: 'Free Lunch Lab', alternateName: '不労所得研究所', url: abs(DEFAULT_LANG), sameAs: ['https://x.com/FreeLunchLab', GH_REPO],
+        founder: { '@type': 'Person', name: 'Ikko Ashimine', sameAs: 'https://github.com/eltociear' }, publishingPrinciples: `${aboutAbs(DEFAULT_LANG)}#policy`, correctionsPolicy: `${aboutAbs(DEFAULT_LANG)}#corrections` } },
+  ];
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.abNav)}</li></ol></nav>
+<main class="cx ab">
+<header class="orgs-head"><h1>${esc(L.abH1)}</h1><p class="orgs-intro">${esc(L.abIntro)}</p>
+<nav class="org-toc" aria-label="${esc(L.essayToc)}">${toc.map(([id, t]) => `<a href="#${id}">${esc(t)}</a>`).join('')}</nav></header>
+<section class="g-sec" id="who"><h2>${esc(L.abWhoH)}</h2><p>${fill(L.abWho, { repo })}</p><p class="ab-note">${esc(L.abRef)}</p></section>
+<section class="g-sec" id="policy"><h2>${esc(L.abPolicyH)}</h2><ul class="ab-list">${[L.abP1, L.abP2, L.abP3, L.abP4].map(t => `<li>${lead(fill(t, { issues }))}</li>`).join('')}</ul></section>
+<section class="g-sec" id="data"><h2>${esc(L.abDataH)}</h2><p>${esc(cfill(L.abData, { n: DATASETS.length, c: CALC_WORLD.length }))}</p><p>${esc(L.abCite)}</p><p class="ab-cite">${esc(cite)}</p><p><a class="btn line" href="${dataPath(lang)}">${esc(cfill(L.odLink, { n: DATASETS.length }))} ${arrow}</a></p></section>
+<section class="g-sec" id="tools"><h2>${esc(L.abToolsH)}</h2><ul class="ab-tools">${tools.map(([href, t, d, more]) => `<li><a class="ab-t" href="${href}">${esc(t)}</a><p>${esc(d)}</p>${more ? `<a class="ab-more" href="${more[0]}">${esc(more[1])} ${arrow}</a>` : ''}</li>`).join('')}</ul></section>
+<section class="g-sec ab-es" id="essays"><h2>${esc(L.abEsH)}</h2>${groups.map(([h, p, list]) => `<h3>${esc(h)} <span class="dot">${list.length}</span></h3><p>${esc(p)}</p>${esList(list)}`).join('')}</section>
+<section class="g-sec" id="corrections"><h2>${esc(L.abFixH)}</h2><p>${fill(L.abFixP, { feed: link(feedPath(lang), esc(L.abFeed)) })}</p><ol class="ab-fix">${fixes}</ol></section>
+<section class="g-sec" id="contact"><h2>${esc(L.abContactH)}</h2><p>${fill(L.abContact, { issues, x: xl })}</p></section>
+<p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p>
+</main>`;
+  return shell(lang, { title: `${L.abMetaTitle} | ${L.title}`, desc: clip(L.abDesc, lang), hrefFor: aboutAbs, pathFor: aboutPath, ld, ogType: 'website', body, extraHead: ABOUT_CSS + '\n' });
 }
 
 // ---- サービスの完全ガイド（/guides/{id}/）。あとから情報を足していく常設ページ。[n] は出典の番号
@@ -2782,7 +2883,7 @@ function usPilotsPage(lang) {
 <main class="cx cx-wide">
 <header class="orgs-head"><p class="eyebrow"><a href="${tlPath(lang)}">${esc(L.ebTimeline)}</a></p><h1>${esc(cfill(L.usH1, { n }))}</h1><p class="orgs-intro">${esc(cfill(L.usIntro, { n }))}</p>
 <p class="us-sum"><span>${esc(cfill(L.usStates, { n: states }))}</span><span>${esc(cfill(L.usEvaluated, { n: evals }))}</span></p>
-<p class="oss-note">${esc(L.usData).replace('{file}', file)} · <a href="${dataPath(lang)}#ds-us-pilots">${esc(cfill(L.odLink, { n: DATASETS.length }))}</a></p>
+<p class="oss-note">${esc(L.usData).replace('{file}', file)} · <a href="${dataPath(lang)}#ds-us-pilots">${esc(cfill(L.odLink, { n: DATASETS.length }))}</a> · <a href="${aboutPath(lang)}">${esc(L.abLink)}</a></p>
 ${shareRow(lang, cfill(L.usH1, { n }), shareUrlOf(usAbs(lang)))}</header>
 <label class="cx-q"><span class="vh">${esc(L.usFilter)}</span><input class="cx-num" id="cxQ" type="search" placeholder="${esc(L.usFilter)}" autocomplete="off"></label>
 <div class="cx-tw"><table class="cx-tbl us-tbl" id="cxTbl"><thead><tr>${th('n', L.usColProgram, '', 'ascending')}${th('s', L.usColState, 'us-st')}${th('y', L.usColYears, 'num us-y')}${th('m', L.usColMonthly, 'num')}${th('c', L.usColRecipients, 'num')}${th('e', L.usColEval)}</tr></thead><tbody>
@@ -3218,6 +3319,9 @@ for (const lang of LANGS) {
   const edir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'essays');
   fs.mkdirSync(edir, { recursive: true });
   fs.writeFileSync(path.join(edir, 'index.html'), essaysIndex(lang));
+  const abdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'about');
+  fs.mkdirSync(abdir, { recursive: true });
+  fs.writeFileSync(path.join(abdir, 'index.html'), aboutPage(lang));
   for (const e of ESSAYS) {
     fs.mkdirSync(path.join(edir, e.id), { recursive: true });
     fs.writeFileSync(path.join(edir, e.id, 'index.html'), essayPage(e, lang));
@@ -3408,6 +3512,7 @@ for (const [f, b] of Object.entries(BADGES)) fs.writeFileSync(path.join(OUT, 'ba
 const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 function newsLink(n, lang) {
   const en = n.en || '';
+  if (/about page/i.test(en)) return aboutAbs(lang);
   if (/cash-out ranking/i.test(en)) return rankAbs(lang);
   if (/basic income news page/i.test(en)) return biNewsAbs(lang);
   if (/badge/i.test(en)) return badgeAbs(lang);
@@ -3840,6 +3945,7 @@ function dataPage(lang) {
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.odTitle)}</li></ol></nav>
 <main class="cx od">
 <header class="orgs-head"><h1>${esc(cfill(L.odH1, { n }))}</h1><p class="orgs-intro">${esc(L.odIntro)}</p>
+<p class="oss-note"><a href="${aboutPath(lang)}#data">${esc(L.abLink)} ${arrow}</a></p>
 <nav class="org-toc" aria-label="${esc(L.odToc)}">${DATASETS.map(d => `<a href="#ds-${d.id}">${esc(d.name[lang])}</a>`).join('')}<a href="#feeds">${esc(L.odFeedsH)}</a></nav></header>
 ${items}
 <section class="g-sec od-feeds" id="feeds"><h2>${esc(L.odFeedsH)}</h2><ul class="od-fl">${feeds.map(([href, label]) => `<li><a href="${href}">${esc(label)}</a> <code dir="ltr">${esc(href)}</code></li>`).join('')}</ul></section>
@@ -3851,7 +3957,8 @@ ${items}
 for (const lang of LANGS) {
   const ddir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'data');
   fs.mkdirSync(ddir, { recursive: true });
-  fs.writeFileSync(path.join(ddir, 'index.html'), dataPage(lang));
+  // このページはフォントの集計のあとで書くので、ここでフォントの <head> とビーコンを入れる（字は他のページとほぼ同じ。足りない字は端末のフォント）
+  fs.writeFileSync(path.join(ddir, 'index.html'), withBeacon(dataPage(lang).replace('<!--@fonts@-->', fontHead[lang]), lang));
 }
 
 // ---- サイトマップ（オープンデータのページを書いたあと。lastmod はページのファイルの本文から）
@@ -3879,7 +3986,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(rankAbs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(hhAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), sitemapUrls(dataAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(rankAbs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), sitemapUrls(aboutAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(hhAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), sitemapUrls(dataAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 { const json = JSON.stringify(Object.fromEntries(Object.keys(lastmodNew).sort().map(k => [k, lastmodNew[k]])), null, 1) + '\n'; if (!fs.existsSync(LASTMOD_FILE) || fs.readFileSync(LASTMOD_FILE, 'utf8') !== json) fs.writeFileSync(LASTMOD_FILE, json); }
@@ -3899,6 +4006,7 @@ const llmsHead = full => `# Free Lunch Lab
 - License: content is CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), referral links excluded.
 - Data last checked: ${latest}
 - ${full ? `Short index: ${SITE_URL}/llms.txt` : `Full text: ${SITE_URL}/llms-full.txt`}
+- About, editorial policy, how to cite and corrections: ${aboutAbs(DEFAULT_LANG)}
 `;
 const ossFacts = p => [OSS_GROUPS.find(g => g.id === p.group).name.en, p.language, p.license && `license ${p.license}`, p.stars != null && `${p.stars} stars`, p.lastCommit && `last commit ${p.lastCommit}`, p.dormant && 'dormant', p.archived && 'archived'].filter(Boolean).map(md).join('; ');
 const dataFacts = x => [x.country.en, x.years, x.n != null && `n = ${x.n}`, `run by ${x.by}`, x.archive, `access: ${x.access}`, x.license && `license ${x.license}`].filter(Boolean).map(md).join('; ');

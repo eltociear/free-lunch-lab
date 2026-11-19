@@ -1299,6 +1299,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-e5d1c8abba.woff2",
     "chars": "恥敷旗筆肉賄"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-5148ead2f7.woff2",
+    "chars": "札閲"
    }
   ],
   "ja:body:700": [
@@ -1569,6 +1573,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-ac05619a83.woff2",
     "chars": "恥敷旗筆肉賄"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-3da45c7546.woff2",
+    "chars": "札閲"
    }
   ],
   "ja:display": [
@@ -1743,6 +1751,10 @@
    {
     "file": "dela-gothic-one-400-ja-8278f35878.woff2",
     "chars": "二模直祉福私耐規"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-dcf0feaa2b.woff2",
+    "chars": "印営筆絡訂運針集"
    }
   ],
   "ja:dot": [
@@ -2551,6 +2563,10 @@
    {
     "file": "noto-sans-sc-900-zh-ae9bf8aade.woff2",
     "chars": "乎住展扩率福规"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-d52eee6df1.woff2",
+    "chars": "引系编营订辑针"
    }
   ],
   "zh:dot": [

@@ -6,6 +6,7 @@
 - License: content is CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), referral links excluded.
 - Data last checked: 2026-11
 - Short index: https://neteru-nyukin.eltociear.workers.dev/llms.txt
+- About, editorial policy, how to cite and corrections: https://neteru-nyukin.eltociear.workers.dev/about/
 
 ## Services
 
