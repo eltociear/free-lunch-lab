@@ -1493,6 +1493,8 @@ html[lang="zh-Hans"] .qz-t,html[lang="hi"] .qz-t,html[lang="ar"] .qz-t{font-weig
 .od-fields code{display:inline-block;padding:0 6px;border-radius:6px;background:var(--surface);border:1px solid var(--line);margin-block:2px}
 .od-cl{display:block;font-weight:700;font-size:.875rem}.od-ct{min-height:72px;margin-top:6px}
 .od-fl{margin:0;padding-inline-start:1.2em;line-height:1.7}.od-fl a{display:inline-flex;align-items:center;min-height:44px}.od-fl code{font-size:.8125rem;color:var(--muted);overflow-wrap:anywhere}
+.ec-pv-l{font-size:.8125rem;color:var(--muted);margin-top:4px}
+.ec-pv{display:block;width:100%;max-width:600px;border:0;border-radius:14px;color-scheme:normal}
 .em-params{margin:0 0 10px;padding-inline-start:1.2em;font-size:.95rem;line-height:1.9}
 .cx-note code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85em;padding:1px 6px;border-radius:6px;border:1px solid var(--line);background:var(--paper);overflow-wrap:anywhere}
 .cx-ess-l{margin:0;padding-inline-start:1.2em;display:grid;gap:2px}
@@ -2255,6 +2257,74 @@ function embedSection(lang, c, { more = true } = {}) {
 <p class="cx-idx"><a href="${embedPath(lang)}">${esc(L.embedMore)} ${RTL.has(lang) ? '←' : '→'}</a></p>` : ''}</section>`;
 }
 const embedCopyScript = L => `<script>(function(){var b=document.getElementById('cxEmbCopy'),t=document.getElementById('cxEmb'),o=document.getElementById('cxEmbDone');if(!b)return;function done(){o.textContent=${JSON.stringify(L.embedCopied).replace(/</g, '\\u003c')}}function fb(){t.focus();t.select();try{if(document.execCommand('copy'))done()}catch(e){}}b.addEventListener('click',function(){try{navigator.clipboard.writeText(t.value).then(done,fb)}catch(e){fb()}})})()</script>`;
+// ---- 埋め込み用の小さなカード（/embed/{国}/、/{lang}/embed/{国}/、noindex）: 国のページと同じ数字（既定の金額で全員に1年、税収比・GDP 比）。
+// ブログなどに iframe で貼ってもらう。外部のスクリプト・フォントなし（システムの書体）、ライト／ダークは読む人の設定に合わせる（?theme=light|dark で固定もできる）。
+// 「Free Lunch Lab」へのリンクは国のページへ ?s=embed-{国} 付きで（Worker の表示の記録で、どのサイトに貼られたかは参照元のホストでわかる）
+const EC_KEYS = ['ecHead', 'ecShareTax', 'ecShareGdp', 'ecBasis', 'ecLink', 'ecTitle', 'ecH', 'ecP', 'ecPreview', 'ecCopy', 'ecCopied'];
+for (const l of LANGS) for (const k of EC_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+for (const k of EC_KEYS) {
+  if (/[　-鿿⁦-⁩]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
+  if (/[A-Za-z$]/.test(T.ar[k].replace(/\{\w+\}/g, '').replace(/⁦[^⁩]*⁩/g, ''))) throw new Error(`ar.${k}: Latin text outside LRI/PDI`);
+}
+const ecPath = (l, c) => `${embedPath(l)}${c.id}/`;
+const ecAbs = (l, c) => SITE_URL + ecPath(l, c);
+const EC_HEIGHT = 300;
+const ecCode = (l, c) => `<iframe src="${ecAbs(l, c)}" title="${cfill(T[l].ecTitle, { country: c.name[l] }).replace(/[⁦-⁩"]/g, '')} – Free Lunch Lab" width="100%" height="${EC_HEIGHT}" style="border:0;max-width:600px" loading="lazy"></iframe>`;
+function ecData(lang, c) {
+  const L = T[lang], X = CALC_CTX[lang], v = s => isoRtl(lang, String(s));
+  const all = X.total(c.id, 'all', c.def), pct = X.pct(all / c.gdp.value);
+  let tax = null;
+  if (c.budget && c.budget.tax) tax = X.pct(all / c.budget.tax);
+  else if (c.gov && c.gov.tax) tax = X.pct(all / (c.gdp.value * c.gov.tax.p / 100));
+  return {
+    head: ucf(lang, cfill(L.ecHead, { country: c.name[lang], total: v(X.money(all, c.id)) })),
+    share: ucf(lang, tax ? cfill(L.ecShareTax, { tax, pct }) : cfill(L.ecShareGdp, { pct })),
+    basis: ucf(lang, cfill(L.ecBasis, { amount: v(X.money(c.def, c.id)), pop: new Intl.NumberFormat(LANG_TAG[lang]).format(c.pop.all) })),
+  };
+}
+const EC_CSS = `:root{--bg:#fff;--card:#fff;--ink:#141A3A;--mut:#575E73;--line:#DADFEA;--acc:#3B4FC4;--num:#B4470A;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1320;--card:#161D2D;--ink:#E5EAF3;--mut:#A3ADC2;--line:#2A3448;--acc:#93A8FF;--num:#FFD66B;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1320;--card:#161D2D;--ink:#E5EAF3;--mut:#A3ADC2;--line:#2A3448;--acc:#93A8FF;--num:#FFD66B;color-scheme:dark}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{padding:4px;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic","Hiragino Sans","PingFang SC","Microsoft YaHei",sans-serif}
+.c{max-width:600px;min-height:calc(100vh - 8px);align-content:center;margin-inline:auto;padding:12px 16px 6px;border:1px solid var(--line);border-radius:14px;background:var(--card);display:grid;gap:4px}
+p{margin:0}.h{font-weight:800;font-size:clamp(1.05rem,4.4vw,1.3rem);line-height:1.35;overflow-wrap:anywhere}
+.s{font-weight:700;color:var(--num)}.b{font-size:.875rem;color:var(--mut)}
+.l{justify-self:start;display:inline-flex;align-items:center;gap:6px;min-height:40px;font-size:.875rem;font-weight:700;color:var(--acc);text-decoration:none}
+.l:hover,.l:focus-visible{text-decoration:underline}
+@media (max-width:360px){body{font-size:14px}.c{padding:10px 12px 4px}}`;
+function ecPage(lang, c) {
+  const L = T[lang], d = ecData(lang, c), arrow = RTL.has(lang) ? '←' : '→';
+  return `<!doctype html>
+<html lang="${LANG_TAG[lang]}"${RTL.has(lang) ? ' dir="rtl"' : ''}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${esc(cfill(L.ecTitle, { country: c.name[lang] }))} | ${esc(L.brandPlain)}</title>
+<meta name="robots" content="noindex, follow">
+<script>try{var t=new URLSearchParams(location.search).get('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<style>${EC_CSS}</style>
+</head>
+<body>
+<main class="c">
+<p class="h">${esc(d.head)}</p>
+<p class="s">${esc(d.share)}</p>
+<p class="b">${esc(d.basis)}</p>
+<a class="l" href="${calcCtyAbs(lang, c)}?s=embed-${c.id}" target="_blank" rel="noopener">${esc(L.ecLink)} ${arrow}</a>
+</main>
+</body>
+</html>
+`;
+}
+// 国のページの「このカードを埋め込む」欄（見本の iframe と、コピーするコード）
+function ecSection(lang, c) {
+  const L = T[lang];
+  return `<section class="g-sec cx-emb" id="embed-card"><h2>${esc(L.ecH)}</h2><p>${esc(cfill(L.ecP, { country: c.name[lang] }))}</p>
+<p class="ec-pv-l">${esc(L.ecPreview)}</p><iframe class="ec-pv" src="${ecPath(lang, c)}" title="${esc(cfill(L.ecTitle, { country: c.name[lang] }))}" height="${EC_HEIGHT}" loading="lazy"></iframe>
+<textarea class="cx-emb-code" id="ecCode" readonly rows="4" dir="ltr" spellcheck="false" aria-label="${esc(L.ecH)}">${esc(ecCode(lang, c))}</textarea>
+<div class="cx-emb-act"><button class="btn line cx-copy ec-copy" type="button" data-for="ecCode">${esc(L.ecCopy)}</button><span class="cx-copied" role="status" aria-live="polite"></span></div></section>`;
+}
+const ecCopyScript = L => `<script>(function(){[].forEach.call(document.querySelectorAll('.ec-copy'),function(b){var t=document.getElementById(b.getAttribute('data-for')),o=b.nextElementSibling;function done(){o.textContent=${JSON.stringify(L.ecCopied).replace(/</g, '\\u003c')}}function fb(){t.focus();t.select();try{if(document.execCommand('copy'))done()}catch(e){}}b.addEventListener('click',function(){try{navigator.clipboard.writeText(t.value).then(done,fb)}catch(e){fb()}})})})()</script>`;
 // 埋め込みの部品の CSS: サイトの色・書体の変数（template の :root と言語ごとの書体）と、計算機の部品の CSS の一部だけ
 const EMBED_CSS = () => [
   CSS.match(/:root\{[\s\S]*?\n\}/)[0],
@@ -2428,12 +2498,13 @@ ${c.budget ? `<div><dt>${esc(L.calcSrcBudget)}</dt>${own(c.budget.src)}</div>` :
 ${calcCtyFaq(lang, A.faq)}
 ${calcCtyRelated(lang, c)}
 <section class="g-sec cx-note"><h2>${esc(L.calcNoteH)}</h2><p>${esc(L.calcNote)}</p></section>
+${ecSection(lang, c)}
 ${embedSection(lang, c)}
 ${src}
 <section class="g-sec cx-near"><h2>${esc(cfill(L.calcCtyNear, { region: L['calcRegion_' + c.region] }))}</h2><ul class="cx-near-l">${near.map(x => `<li><a href="${calcCtyPath(lang, x)}">${esc(x.name[lang])}</a></li>`).join('')}</ul><p class="cx-idx"><a href="${calcIdxPath(lang)}">${esc(cfill(L.calcIdxLink, { n: CALC_WORLD.length }))}</a></p></section>
 <p class="back"><a class="btn line" href="${calcPath(lang)}">${RTL.has(lang) ? '→' : '←'} ${esc(L.calcTitle)}</a></p>
 </main>`;
-  return shell(lang, { title: ctyTitle(lang, base), desc: clip(A.descs.find(d => [...d].length <= DESC_RANGE(lang)[1]) || A.descs[2], lang), hrefFor: l => calcCtyAbs(l, c), pathFor: l => calcCtyPath(l, c), ld: [ld, faqLdOf(lang, A.faq)], ogType: 'website', body, script: calcScript(lang) + embedCopyScript(L), image: ogImage(`calc/${lang}/index.jpg`) });
+  return shell(lang, { title: ctyTitle(lang, base), desc: clip(A.descs.find(d => [...d].length <= DESC_RANGE(lang)[1]) || A.descs[2], lang), hrefFor: l => calcCtyAbs(l, c), pathFor: l => calcCtyPath(l, c), ld: [ld, faqLdOf(lang, A.faq)], ogType: 'website', body, script: calcScript(lang) + embedCopyScript(L) + ecCopyScript(L), image: ogImage(`calc/${lang}/index.jpg`) });
 }
 
 // 国の一覧（/calc/countries/）: 全員に1日3.00ドル（貧困ライン）を1年配ったときの GDP 比。並べ替えと名前での絞り込みは JS
@@ -3105,6 +3176,7 @@ for (const lang of LANGS) {
   fs.mkdirSync(path.join(emdir, 'calc'), { recursive: true });
   fs.writeFileSync(path.join(emdir, 'index.html'), embedInfoPage(lang));
   fs.writeFileSync(path.join(emdir, 'calc', 'index.html'), embedCalcPage(lang));
+  for (const c of CALC_WORLD) { fs.mkdirSync(path.join(emdir, c.id), { recursive: true }); const html = ecPage(lang, c); if (Buffer.byteLength(html) > 20000) throw new Error(`embed card ${lang}/${c.id}: ${Buffer.byteLength(html)} bytes, over 20 KB`); fs.writeFileSync(path.join(emdir, c.id, 'index.html'), html); }
   const osdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'open-source');
   fs.mkdirSync(osdir, { recursive: true });
   fs.writeFileSync(path.join(osdir, 'index.html'), ossPage(lang));

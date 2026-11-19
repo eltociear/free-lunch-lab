@@ -2031,6 +2031,10 @@
    {
     "file": "noto-sans-sc-400-zh-8aa1f853ce.woff2",
     "chars": "沿"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-dfa3aaba45.woff2",
+    "chars": "跟"
    }
   ],
   "zh:body:700": [
@@ -2309,6 +2313,10 @@
    {
     "file": "noto-sans-sc-700-zh-c677af3bbf.woff2",
     "chars": "沿"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-ee50839501.woff2",
+    "chars": "跟"
    }
   ],
   "zh:display": [
@@ -2475,6 +2483,10 @@
    {
     "file": "noto-sans-sc-900-zh-888df7d058.woff2",
     "chars": "具季室润涨"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-fef896b77e.woff2",
+    "chars": "张片"
    }
   ],
   "zh:dot": [

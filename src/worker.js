@@ -79,10 +79,10 @@ async function beacon(request, env, url) {
   return done;
 }
 
-// 埋め込み用の計算機（/embed/calc/、/{lang}/embed/calc/）だけは、どのサイトの iframe にも入れてよい。
+// 埋め込み用の計算機（/embed/calc/、/{lang}/embed/calc/）と国のカード（/embed/{国}/）だけは、どのサイトの iframe にも入れてよい。
 // サイトのほかのページには X-Frame-Options も frame-ancestors も付けていないが、念のためここで外してから frame-ancestors * を付ける。
 // 検索には出さない（ページの meta robots と同じ noindex, follow をヘッダーでも）
-const EMBED_PATH = /^\/(?:(?:ja|zh|hi|es|de|ar)\/)?embed\/calc\/$/;
+const EMBED_PATH = /^\/(?:(?:ja|zh|hi|es|de|ar)\/)?embed\/(?:calc|[a-z]{2})\/$/;
 function framable(res) {
   const r = new Response(res.body, res);
   r.headers.delete('x-frame-options');
