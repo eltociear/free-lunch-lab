@@ -4007,7 +4007,7 @@ Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it search
 - Language: Python
 - License: CC0-1.0 (LICENSE)
 - Stars: 322
-- Last commit: 2026-11-14
+- Last commit: 2026-11-18
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
 
