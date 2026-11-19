@@ -835,6 +835,100 @@ Cautions: Whether rewards need Orb verification is unknown, and we have not test
 
 ## Essays
 
+### If AI puts almost everyone out of work, welfare as we know it breaks. That is the case for basic income
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/ai-unemployment-basic-income/
+- Published: 2026-11-19
+
+On 19 November 2026 a Japanese headline travelled fast: “Almost all of humanity will be permanently unemployed”. It was about an interview with Tao Lin, who works at Anthropic. This piece is an opinion. We think he describes, without meaning to, why today’s welfare would not hold, and why a basic income should be built before it is needed, not after. The numbers are sourced; the conclusion is ours.
+
+#### What was said, and what was not
+
+The interview was published on YouTube on 15 November (16 November in Japan) in Palisade Research’s series “From Inside AI”; ASCII reported it in Japanese on 19 November.[1][2] Lin has worked at Anthropic for about a year and a half, first on alignment research and now on Safeguards, the team that screens harmful requests. The forecast is his own, not Anthropic’s; the series itself says its interviews are not representative of every perspective inside the AI companies, and Lin added that his view is common in the AI safety community.[1][3]
+
+As quoted in coverage of the interview, he said: “I think that it’s very likely that pretty much all humans on Earth will become permanently unemployable and will need to strictly rely on government welfare to sustain themselves.” He expects AI “as good as or better than the best expert at almost every field” in about 1.3 years, which ASCII put at around the end of 2027. But he sees a large gap before jobs actually go, because replacing physical work would take billions of robots; first, people would move to other occupations.[2][3] Asked whether this would happen within 15 months, he said no, and he gave no date.
+
+His proposal is not a basic income. He says the AI companies should slow down, to “something like one quarter of its current rate”, and coverage says he urged people to press for regulation. In the coverage we found, he does not mention a basic income at all; we could not check a full transcript.[2][3]
+
+He is not alone. Anthropic’s chief executive, Dario Amodei, warned in May 2025 that AI could wipe out half of all entry-level white-collar jobs and push US unemployment to 10–20% within one to five years.[4] On 16 November 2026 the economist Nouriel Roubini told Bloomberg that US unemployment could reach 80% by 2050, and that “some redistribution from the haves to the have-nots” would follow.[5] The IMF estimated in 2024 that about 40% of jobs worldwide, and 60% in advanced economies, are exposed to AI.[6]
+
+These are forecasts, not facts. In the US, employers cited AI for 121,401 announced job cuts from January to October 2026, about 20% of all announced cuts, but AI is not yet visible in overall employment (we looked at the data (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/)).[7] In a survey for the Anthropic Economic Index in June 2026, 10% of workers rated losing their own job as likely or very likely.[8] Nobody knows whether Lin is right. Our argument is about what happens if he is, and about why acting early costs little if he is not.
+
+#### Welfare built for a few
+
+Lin’s world ends with people living on “government welfare”. In Japan, the last safety net is public assistance (seikatsu hogo). In August 2026 it supported 1,641,451 households, 1,965,132 people, or 1.60% of the population; more than half of the households were elderly.[9] It is designed for a small minority, and even at that size it misses most of the people it is meant for.
+
+The take-up rate tells the story. In 2018 the Ministry of Health, Labour and Welfare estimated that among households with income below the public assistance standard, only 22.9% received it in 2016; counting only households that also had almost no savings, 43.7%.[10] The Japan Federation of Bar Associations puts it at about 20%.[11] Put the other way, most households poor enough to qualify do not get it.
+
+Some of the reasons are built in. Applicants must show they have used up savings and assets. Relatives can be asked whether they will support them first, which many people find shaming enough to stay away. And every case is handled by a caseworker: the Social Welfare Act sets a standard of one caseworker for every 80 recipient households in cities and 65 in towns and villages.[12] Even now there are not enough of them: in the latest staffing survey (2016), 18,183 caseworkers stood against a standard of 20,115, and almost a quarter had less than a year’s experience.[12]
+
+Now scale it. At the city standard, every million households on public assistance needs 12,500 caseworkers. If most of Japan’s working-age population lost their earnings, tens of millions of households would have to apply, prove they had nothing, and wait. A system that already turns away most of the poor would become a queue of nearly everyone. And earnings are deducted from the benefit after a small work allowance, so taking a part-time job or a few days of the work that remained would leave people little better off.[12] In a world with fewer jobs, that is exactly the wrong signal.
+
+#### A payment that scales
+
+A basic income asks one question, whether you live here, and the state already knows the answer. Japan showed that in 2020, when the Special Cash Payment gave ¥100,000 to almost everyone on the resident register, about ¥12.7 trillion in a few months, without a means test (what people did with it (https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/)). It was slow where municipalities had to collect bank details by hand; that part can be fixed once, in advance.
+
+There is no cliff. Earning more never takes the payment away; taxes on higher incomes take back what the better-off receive. No caseworker has to judge who deserves help, which matters most in exactly the world Lin describes, where the question “why aren’t you working?” stops having a fair answer.
+
+#### The honest arithmetic
+
+It is not cheap. ¥70,000 a month for everyone in Japan, the amount Heizo Takenaka floated, would cost ¥103.2 trillion a year, 122% of all national tax revenue in FY2025. ¥10,000 a month would cost ¥14.7 trillion, 17% (the full calculation (https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/)).[13]
+
+And today’s AI profits come nowhere near it. The nine companies at the centre of the AI boom made about $1.08 trillion of net profit over their last four quarters; shared among everyone on Earth, that is $11.00 a month each, about ¥1,650 (the calculation (https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/)).[14] A tax on today’s AI profits would not pay for a living income.
+
+But if Lin is right, today is the wrong yardstick. Work that AI and robots do does not stop producing value; the income moves from wages to whoever owns the models, the chips and the machines. The question then is not whether a country can afford a basic income, but who owns the wealth that pays for it. There are working models. Alaska has paid every resident a yearly dividend from its oil fund since 1982; the 2025 dividend was $1,000, and the 2026 payment $1,200 including a $200 energy relief payment.[15] Norway’s oil fund is worth about NOK 3.9 million per inhabitant (NOK 22,014 billion at the end of September 2026), though it pays into the budget, not to people directly.[16] Researchers have proposed a “Windfall Clause”, under which AI firms would commit in advance to share profits above an extremely high threshold.[17] Sam Altman proposed in 2021 a fund taking 2.5% of large companies’ value each year, and in 2024 floated a “universal basic compute”.[18] Anthropic has set aside 5% of its shares for a public benefit fund (our essay (https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/)).
+
+None of these yet adds up to a basic income. What they show is the shape of the answer: a public stake in AI-created wealth, decided before that wealth is concentrated, not after.
+
+#### Two objections
+
+What if the forecast is wrong? Then a small basic income still does work today: it reaches the many households that qualify for public assistance but do not receive it, and the freelancers and young people with no claim on unemployment insurance. If the forecast is right, building it during mass job loss would be too late; even a one-off payment in 2020 took months.
+
+Will people stop working? The evidence says not much. In OpenResearch’s study, $1,000 a month for three years led recipients to work about 1.3 hours a week less than the control group in the surveys; the paper’s latest version puts it at one to two hours.[19] In Finland’s 2017–2018 experiment, unemployed recipients worked about 6 days more in the second year than the control group, and felt better.[20] Ten studies, from the 1970s to 101 US pilots, show small cuts or none (the overview (https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/)). And in the world Lin describes, the worry is the reverse: not that people will stop working, but that there will be no work to stop.
+
+Slowing AI and a basic income are not opposites. Lin may be right that the pace should drop. A floor under everyone is useful at any pace.
+
+#### What we propose: start small, now
+
+Start a basic income of ¥10,000 a month for everyone now. It would cost ¥14.7 trillion a year, or about ¥12.6 trillion if it replaced the child allowance, which already pays ¥10,000 for most children.[13] The amount is small; the point is the pipe: one payment, to everyone, every month, through accounts linked in advance.
+
+Alongside it, set up a public AI fund that takes a stake in the wealth AI creates, through shares, a levy on large-scale compute or a share of AI profits, and pays a dividend on top of the base, Alaska-style. As AI’s share of income grows, so does the payment. Keep medical assistance and support for disability and care, which cash cannot replace.
+
+If Lin is wrong, Japan gets a modest floor that reaches people today’s welfare misses. If he is right, the system exists before the jobs go, not after. Either way, the time to build it is while it is still cheap.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/public-benefit-fund/
+
+Sources:
+
+1. Palisade Research, “From Inside AI”: “Anthropic Researcher: ‘Pretty Much All Humans Will Become Permanently Unemployable’” (YouTube, 15 November 2026, US time): https://www.youtube.com/watch?v=OPZCQk8jF-I
+2. ASCII (via Yahoo! News Japan): “Almost all of humanity will be permanently unemployed”: an Anthropic researcher predicts the future of AI (in Japanese, 19 November 2026): https://news.yahoo.co.jp/articles/aefda3ab1f30619a8c87ba32e24b53de7f20ad80
+3. ASCII, English edition of the same report (19 November 2026): https://ascii.jp/en/elem/000/004/452/4452982/
+4. Axios: “Behind the Curtain: A white-collar bloodbath”, interview with Dario Amodei (28 May 2025): https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic
+5. Business Insider: Nouriel Roubini on AI and an 80% unemployment rate, from his Bloomberg interview of 16 November 2026; Japanese edition, Business Insider Japan (18 November 2026): https://www.businessinsider.com/dr-doom-nouriel-roubini-ai-unemployment-forecast-universal-basic-income-2026-11 (also https://www.businessinsider.jp/article/2611-dr-doom-nouriel-roubini-ai-unemployment-forecast-universal-basic-income/)
+6. IMF, Kristalina Georgieva: “AI Will Transform the Global Economy. Let’s Make Sure It Benefits Humanity.” (14 January 2024): https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity
+7. Challenger, Gray & Christmas: October 2026 job cuts report (5 November 2026): https://www.challengergray.com/blog/october-layoffs-at-three-year-low-seasonal-hiring-plans-up-26/
+8. Anthropic Economic Index: June 2026 report (26 June 2026): https://www.anthropic.com/research/economic-index-june-2026-report
+9. Ministry of Health, Labour and Welfare: Survey of Public Assistance Recipients, preliminary figures for August 2026 (in Japanese, 4 November 2026): https://www.mhlw.go.jp/toukei/saikin/hw/hihogosya/m2026/dl/08-01.pdf
+10. Shimbun Akahata: the Ministry of Health, Labour and Welfare’s estimate of households below the public assistance standard, given to the House of Councillors on 29 May 2018 (3 June 2018): https://www.jcp.or.jp/akahata/aik18/2018-06-03/2018060301_03_1.html
+11. Bengo4.com: the Japan Federation of Bar Associations’ leaflet on public assistance and its take-up of about 20%: https://www.bengo4.com/c_18/n_2602/
+12. Ministry of Health, Labour and Welfare: survey of staffing at welfare offices (in Japanese, 1 October 2016); the caseworker standard is in Article 16 of the Social Welfare Act (e-Gov): https://www.mhlw.go.jp/toukei/list/dl/125-1-01.pdf (also https://laws.e-gov.go.jp/law/326AC0000000045)
+13. Free Lunch Lab: data/japan-2026.json, the official figures behind our Japan cost essay (population, tax revenue, child allowance): https://github.com/eltociear/free-lunch-lab/blob/main/data/japan-2026.json
+14. Free Lunch Lab: data/ai-profits-2026.json, the nine AI companies’ last four quarters: https://github.com/eltociear/free-lunch-lab/blob/main/data/ai-profits-2026.json
+15. Alaska Department of Revenue: 2025 Permanent Fund Dividend amount (22 September 2025); 2026 amount at pfd.alaska.gov: https://dor.alaska.gov/department-of-revenue/news-detail/2025/09/22/department-of-revenue-announces-2025-permanent-fund-dividend-amount (also https://pfd.alaska.gov/)
+16. Norges Bank Investment Management: key figures for the first three quarters of 2026; population from Statistics Norway (5,636,904 at the end of Q2 2026): https://www.nbim.no/en/news-and-insights/1q-3q/key-figures-q3-2026/ (also https://www.ssb.no/en/folkemengde)
+17. Cullen O’Keefe and others: “The Windfall Clause: Distributing the Benefits of AI for the Common Good” (arXiv, December 2019): https://arxiv.org/abs/1912.11595
+18. Sam Altman: “Moore’s Law for Everything” (16 March 2021); on “universal basic compute”, the All-In podcast of 10 May 2024 as reported by Business Insider: https://moores.samaltman.com/ (also https://www.yahoo.com/tech/openais-sam-altman-idea-universal-213637146.html)
+19. Eva Vivalt and others: “The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States”, NBER Working Paper 32719 (July 2024, revised): https://www.nber.org/papers/w32719
+20. Ministry of Social Affairs and Health and Kela: results of Finland’s basic income experiment 2017–2018 (6 May 2020): https://toolbox.finland.fi/wp-content/uploads/sites/2/2018/04/basic_income_experiment_2017-2018_results_2020.pdf
+
 ### What would a basic income cost the United States?
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
@@ -1080,6 +1174,8 @@ Populations and prices. World population is the World Bank’s 2025 figure.[11] 
 
 Not a proposal. The shares are yardsticks, not policies we propose, and nothing here says whether these profits should be taxed or shared out. The numbers only show the size of the sums.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-unemployment-basic-income/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/billionaire-wealth-per-person/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/universal-high-income/
@@ -1214,6 +1310,8 @@ Offsets. The years differ: child allowance FY2024, public assistance FY2023, pen
 Consumption tax. The yardstick uses the rates in force in FY2025 and the revenue they raised; other rates or a different tax base would change it.
 
 Not a proposal. The amounts are yardsticks. Nothing here says whether Japan should introduce a basic income; the numbers only show the size of the sums.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-unemployment-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
 
@@ -2244,6 +2342,8 @@ Opinion: Here is what the data show as of November 2026. AI is not yet visible i
 Opinion: This is a disruption that falls first on the people with the least protection: those with no work history, no employer and no claim on unemployment insurance. That is where the simplest feature of a basic income, that it reaches everyone without asking whether you have worked, matters most. It is not the only answer, and its critics are right that it costs a great deal and that supply matters. But a floor that is ready before it is needed is easier to build than one improvised in a crisis.
 
 Opinion: In part 2 (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/), we turn to creative work: illustrators, translators, writers and voice actors, where the change has come fastest.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-unemployment-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
 

@@ -73,9 +73,12 @@ const essayPath = (l, e) => `${essaysPath(l)}${e.id}/`;
 const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
 // エッセイ本文の {文字|/path/} はサイト内リンク（言語の接頭辞は自動で付く）。/essays/{id}/ への参照と related は実在を確かめる
 const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
-const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'essaySources', 'essayPublished', 'essayRelated', 'essayRelatedH', 'essayToc', 'essayRead', 'essayBack'];
+const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'essayOpLabel', 'essayOpNote', 'essaySources', 'essayPublished', 'essayRelated', 'essayRelatedH', 'essayToc', 'essayRead', 'essayBack'];
 for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack', 'essayTableHint', 'backHome', 'backQuiz', 'backSvc', 'backVerify', 'embedPrivacy']) if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
+// kind: 'opinion' は論考（結論が筆者の意見のエッセイ）。見出しの上に札、署名の下に一行の注、一覧にも札を出す。ほかのエッセイは「数字だけ、主張なし」
+for (const e of ESSAYS) if (e.kind !== undefined && e.kind !== 'opinion') throw new Error(`essay ${e.id}: unknown kind ${e.kind}`);
+const opKind = (lang, e) => e.kind === 'opinion' ? `<span class="es-kind">${esc(T[lang].essayOpLabel)}</span>` : '';
 // related（エッセイ）と essays（サービス・年表）は id の文字列か配列。どちらも実在するエッセイの配列にそろえる
 const essayList = v => [].concat(v || []).map(id => ESSAYS.find(x => x.id === id));
 // エッセイと BI計算機の国のページ（/calc/{id}/）・アメリカの保証所得実験の一覧（/pilots/us/）の対応。国のページからはこの逆向きでエッセイへ
@@ -99,6 +102,7 @@ const ESSAY_DATA = {
   'billionaire-wealth-per-person': { calc: ['us', 'cn', 'in', 'de', 'jp', 'hk'] },
   'germany-merz-basic-income-cost': { calc: ['de'] },
   'japan-basic-income-cost': { calc: ['jp'] },
+  'ai-unemployment-basic-income': { calc: ['jp'] },
   'us-basic-income-cost': { calc: ['us'], pilots: true },
   'ai-company-profits-per-person': { calc: ['us', 'jp'] },
 };
@@ -340,6 +344,32 @@ const jpnDrift = (() => {
 // ここでは en の会社の表の計算し直し、データの形（4四半期など）、本文の言い回しの前提、各言語が en と同じ数字のキーを使っているか、NVIDIA に左右される数字を
 // 手で書いていないか、期限を過ぎた未発表の四半期を確かめて知らせる。ar はラテン文字を LRI/PDI で囲み、hi は CJK と isolate なし（違えば止める）
 const aipDrift = require('./src/ai-profits.js').check(require('./src/data.js'), ESSAY_LINK);
+// 論考 ai-unemployment-basic-income の数字: 日本の費用（月7万円・月1万円、税収に対する割合、児童手当を置き換えた月1万円の差し引き）は data/japan-2026.json から、
+// 生活保護・捕捉率・ケースワーカーの標準数・実験の結果・基金などは data/ai-jobless-2026.json（出典と日付つき）から計算し、各言語の本文に同じ数字があるか確かめる
+// （数字は区切りを除いた数字の並びで比べる）。AI企業の利益の月あたりの円は {{aip.…}} で埋めている。ar はラテン文字を LRI/PDI で囲み、hi は CJK と isolate なし
+const AIJ = require('./data/ai-jobless-2026.json');
+const aijDrift = (() => {
+  const e = ESSAYS.find(x => x.id === AIJ.essay);
+  if (!e) return '';
+  for (const [k, t] of e.blocks.ar) if (k !== 't' && /[A-Za-z$]/.test(t.replace(ESSAY_LINK, '$1').replace(/\u2066[^\u2069]*\u2069/g, ''))) throw new Error(`${e.id}.ar: Latin text outside LRI/PDI: ${t.slice(0, 60)}`);
+  for (const t of [e.title.ar, e.desc.ar]) if (/[A-Za-z$]/.test(t.replace(/\u2066[^\u2069]*\u2069/g, ''))) throw new Error(`${e.id}.ar: Latin text outside LRI/PDI in title/desc`);
+  for (const t of [e.title.hi, e.desc.hi, ...e.blocks.hi.map(b => b[1])]) if (/[\u3000-\u9fff\u2066-\u2069]/.test(t)) throw new Error(`${e.id}.hi: CJK or isolate characters`);
+  if (e.kind !== 'opinion') throw new Error(`${e.id}: kind must be 'opinion'`);
+  const P = JPN.population.value, lv = id => JPN.levels.find(x => x.id === id).monthly, off = id => JPN.offsets.find(x => x.id === id).value;
+  const c70 = P * lv('takenaka') * 12, c10 = P * lv('10k') * 12;
+  const F = Object.fromEntries(AIJ.facts.map(f => [f.id, f]));
+  const want = { cost70: (c70 / 1e12).toFixed(1), pct70: (c70 / JPN.taxRevenue.value * 100).toFixed(0), cost10: (c10 / 1e12).toFixed(1), pct10: (c10 / JPN.taxRevenue.value * 100).toFixed(0), net10: ((c10 - off('jidou')) / 1e12).toFixed(1),
+    perMillion: String(1e6 / F.caseloadCity.value) };
+  for (const f of AIJ.facts) for (const d of f.digits || []) want[`${f.id}:${d}`] = d;
+  const bad = [];
+  for (const l of LANGS) {
+    const text = [e.desc[l], ...e.blocks[l].map(b => b[1])].join('\n').replace(/\[\d+\]/g, ' ').replace(/[\u2066-\u2069]/g, '');
+    const nums = new Set((text.match(/\d[\d.,\u00a0\u202f]*\d|\d/g) || []).map(x => x.replace(/\D/g, '')));
+    const miss = Object.entries(want).filter(([, v]) => !nums.has(String(v).replace(/\D/g, ''))).map(([k, v]) => `${k}=${v}`);
+    if (miss.length) bad.push(`${l} lacks ${miss.join(', ')}`);
+  }
+  return bad.length ? `WARNING: ${e.id}: numbers differ from data/japan-2026.json and data/ai-jobless-2026.json: ${bad.join('; ')}; update the essay (all languages)` : '';
+})();
 const mapRegionName = (lang, id) => { const c = CALC_WORLD.find(x => x.id === id); if (c) return c.name[lang]; try { return new Intl.DisplayNames([LANG_TAG[lang]], { type: 'region' }).of(id.toUpperCase()); } catch { return id.toUpperCase(); } };
 const mapYear = (lang, r) => (r.base ? (r.base.year ? String(r.base.year) : T[lang].mapBudgetYear) : '');
 function mapTip(lang, r, id) {
@@ -1272,6 +1302,9 @@ html[lang="ja"] .essay .orgs-head h1,html[lang="zh-Hans"] .essay .orgs-head h1{w
 .es-t-hint{display:none;justify-content:flex-end;align-items:center;gap:6px;margin:0;font-size:.8125rem;line-height:1.4;color:var(--muted)}
 .es-tw.is-over .es-t-hint{display:flex}
 @media (max-width:600px){.essay-table th,.essay-table td{padding:9px 10px}.es-t-fit table{font-size:.875rem}}
+.es-kind{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:0;text-transform:none;padding:1px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 60%,var(--line));background:color-mix(in srgb,var(--gold) 14%,transparent);color:var(--ink);margin-inline-start:8px;vertical-align:.1em}
+.org-head .es-kind{margin-inline-start:0}
+.es-opnote{margin-top:6px;font-size:.84rem;color:var(--muted);border-inline-start:3px solid color-mix(in srgb,var(--gold) 60%,transparent);padding-inline-start:8px}
 .op-tag{display:inline-block;font-size:.8125rem;font-weight:700;letter-spacing:0;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--gold) 22%,transparent);color:var(--ink);margin-inline-end:8px;vertical-align:.1em}
 /* 脚注の番号: 見た目は小さいまま、余白で押せる範囲を 24px 以上に（行の高さは変えない） */
 .fnref{line-height:0}
@@ -1863,14 +1896,14 @@ function essayPage(e, lang) {
       { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
       { '@type': 'ListItem', position: 2, name: L.essaysTitle, item: essaysAbs(lang) },
       { '@type': 'ListItem', position: 3, name: ttl, item: url } ] },
-    { '@context': 'https://schema.org', '@type': 'Article', headline: ttl, description: desc, inLanguage: LANG_TAG[lang], datePublished: e.date, dateModified: e.date,
+    { '@context': 'https://schema.org', '@type': e.kind === 'opinion' ? 'OpinionNewsArticle' : 'Article', headline: ttl, description: desc, inLanguage: LANG_TAG[lang], datePublished: e.date, dateModified: e.date,
       author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
       mainEntityOfPage: url, image: ogImage(`essay/${lang}/${e.id}.jpg`), timeRequired: `PT${mins}M` },
   ];
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a></li><li aria-current="page">${esc(ttl)}</li></ol></nav>
 <main class="essay${tocSide ? ' has-toc' : ''}">
 <article class="es-main">
-<header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time> · <span class="es-read">${esc(essayReadLabel(lang, mins))}</span></p>
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}${opKind(lang, e)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time> · <span class="es-read">${esc(essayReadLabel(lang, mins))}</span></p>${e.kind === 'opinion' ? `<p class="es-opnote">${esc(L.essayOpNote)}</p>` : ''}
 ${shareRow(lang, ttl, url, { compact: true, mk: k => `${url}?s=${k}` })}</header>
 ${tocTop}<div class="essay-body">${blocks}</div>
 ${channelShare(lang, ttl, k => `${url}?s=${k}`, { primary: L.calcShareX, tag: T[lang].calcTag, label: L.essayShare, id: 'share' })}
@@ -1917,7 +1950,7 @@ function essaysIndex(lang) {
   const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
     { '@type': 'ListItem', position: 2, name: L.essaysTitle, item: essaysAbs(lang) } ] };
-  const items = ESSAYS.map(e => `<li class="org"><div class="org-head"><a class="org-name essay-link" href="${essayPath(lang, e)}">${esc(e.title[lang] || e.title.en)}</a><span class="org-meta"><time datetime="${e.date}">${esc(longDate(e.date, lang))}</time></span></div><p>${esc(e.desc[lang] || e.desc.en)}</p></li>`).join('');
+  const items = ESSAYS.map(e => `<li class="org"><div class="org-head"><a class="org-name essay-link" href="${essayPath(lang, e)}">${esc(e.title[lang] || e.title.en)}</a>${opKind(lang, e)}<span class="org-meta"><time datetime="${e.date}">${esc(longDate(e.date, lang))}</time></span></div><p>${esc(e.desc[lang] || e.desc.en)}</p></li>`).join('');
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(L.essaysTitle)}</li></ol></nav>
 <main class="orgs"><header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}</p><h1>${esc(L.essaysTitle)}</h1></header><ul class="org-list">${items}</ul>
 <p class="back"><a class="btn line" href="${home}">${RTL.has(lang) ? '→' : '←'} ${esc(L.backHome)}</a></p></main>`;
@@ -3251,6 +3284,7 @@ if (gerDrift) console.warn(gerDrift);
 if (jpnDrift) console.warn(jpnDrift);
 if (usDrift) console.warn(usDrift);
 for (const w of aipDrift) console.warn(`WARNING: ai-company-profits-per-person: ${w}`);
+if (aijDrift) console.warn(aijDrift);
 if (workDrift) console.warn(workDrift);
 if (hhDrift) console.warn(hhDrift); else console.log(`household: the essay's ${HOUSEHOLD.check.length} households match (main, range, benefits now, basic income)`);
 if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);

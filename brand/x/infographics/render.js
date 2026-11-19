@@ -530,6 +530,64 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the opinion essay ai-unemployment-basic-income: public assistance today (MHLW, August 2026), its take-up
+  // (MHLW estimate for 2016) and caseworkers per million households at the Social Welfare Act standard, from data/ai-jobless-2026.json,
+  // against ¥10,000 a month for everyone, computed from data/japan-2026.json (the same files the build checks the essay against). 1200x675, ja/en.
+  'aijobless': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const J = require('../../../data/japan-2026.json'), A = require('../../../data/ai-jobless-2026.json');
+      const F = Object.fromEntries(A.facts.map(x => [x.id, x]));
+      const P = J.population.value, c10 = P * 10000 * 12, c10T = (c10 / 1e12).toFixed(1), c10P = Math.round(c10 / J.taxRevenue.value * 100);
+      const g = n => n.toLocaleString('en-US');
+      const cw = g(1e6 / F.caseloadCity.value);
+      const T3 = {
+        ja: { eb: '論考（筆者の意見です）', hl: '全員が失業する社会に、生活保護は耐えられない', sb: 'Anthropicの研究者「ほぼすべての人が永久に雇用されなくなり、政府の福祉に頼る」。いまの生活保護の規模は',
+          c: [[`${Math.round(F.hogoHouseholds.value / 1e4)}<small>万世帯</small>`, `いま生活保護を受けている世帯（人口の${F.hogoRate.value.toFixed(2)}%、2026年8月）`],
+            [`${F.takeupIncome.value}<small>%</small>`, `基準以下の所得の世帯のうち、受けている割合（厚労省推計・2016年）`],
+            [`${cw}<small>人</small>`, `100万世帯ごとに要るケースワーカー（社会福祉法の標準、1人80世帯）`]],
+          big: `だから、いま小さく始める：全員に月1万円で年${c10T}兆円（国の税収の${c10P}%）`, nt: '数字には出典を付けています。結論は筆者の意見です', wm: '不労所得研究所', path: 'ja/' },
+        en: { eb: 'Opinion', hl: 'If AI ends almost all jobs, welfare breaks', sb: 'An Anthropic researcher: almost all humans will become unemployable and rely on government welfare. Japan’s welfare today:',
+          c: [[`${(F.hogoHouseholds.value / 1e6).toFixed(2)}<small>m</small>`, `households on public assistance (${F.hogoRate.value.toFixed(2)}% of people, Aug 2026)`],
+            [`${F.takeupIncome.value}<small>%</small>`, 'of households below the standard actually receive it (MHLW estimate, 2016)'],
+            [`${cw}`, 'caseworkers needed per million households (legal standard: one per 80)']],
+          big: `So start small, now: ¥10,000 a month for everyone, ¥${c10T}tn a year (${c10P}% of national tax revenue)`, nt: 'The numbers are sourced; the conclusion is the author’s view', wm: 'Free <em>Lunch</em> Lab', path: '' },
+      }[lang];
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb"><span>${T3.eb}</span></p>
+<h1 class="hl">${T3.hl}</h1>
+<p class="sb">${T3.sb}</p>
+<div class="cards">${T3.c.map(([v, d]) => `<section class="c"><p class="v">${v}</p><p class="d">${d}</p></section>`).join('')}</div>
+<p class="big">${T3.big}</p>
+<p class="nt">${T3.nt}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${T3.wm}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${T3.path}essays/ai-unemployment-basic-income/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb span{display:inline-block;font-size:18px;font-weight:700;color:#14182E;background:#FFD66B;padding:3px 14px;border-radius:999px}
+.hl{margin-top:10px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 42 : 40}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:10px;font-size:20px;line-height:1.4;color:#C9D0F0}
+.cards{margin-top:16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:16px 20px;display:flex;flex-direction:column}
+.v{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:62px;line-height:1.1;color:#FFFFFF;white-space:nowrap}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.42em;margin-left:4px}
+.d{margin-top:12px;font-size:23px;line-height:1.4;color:#E3E8FF;word-break:auto-phrase}
+.big{margin-top:16px;font-size:24px;font-weight:900;line-height:1.35;color:#FFD66B;border:2px solid rgba(255,214,107,.6);background:rgba(255,214,107,.08);border-radius:14px;padding:10px 18px}
+.nt{margin:10px 0 10px;font-size:16px;line-height:1.35;color:#A9B2D8}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:15px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
   // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
   'billionaire': {

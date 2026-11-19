@@ -176,12 +176,14 @@ function svcHtml(s, lang) {
 function essayHtml(e, lang) {
   const L = T[lang];
   return frame(lang, 'essay', `<div class="mid">
-<p class="cat" style="--c:#FFD66B">${esc(L.ebEssay)}</p>
+<p class="cat" style="--c:#FFD66B">${esc(e.kind === 'opinion' ? L.essayOpLabel : L.ebEssay)}</p>
 <h1 data-fit="72,40,250">${esc(e.title[lang] || e.title.en)}</h1>
 <p class="desc">${esc(e.desc[lang] || e.desc.en)}</p>
 </div>
-<div class="chips"><span>${esc(L.essayBy)}</span></div>`);
+<div class="chips"><span>${esc(L.essayBy)}</span></div>${e.kind === 'opinion' ? OP_REFIT : ''}`);
 }
+// 論考（kind: opinion）のカードだけ: 共通の data-fit はフォントが届く前に測るので、届いてから見出しと要約を測り直す（ほかのカードの HTML は変えない）
+const OP_REFIT = `<script>document.fonts.ready.then(() => { const fs = [...document.querySelectorAll('[data-fit]')], m = document.querySelector('.mid'); for (const el of fs) { const [max, min, h] = el.dataset.fit.split(',').map(Number); let size = max; el.style.fontSize = size + 'px'; while ((el.scrollHeight > h || el.scrollWidth > el.clientWidth + 1) && size > min) { size -= 2; el.style.fontSize = size + 'px'; } } for (let i = 0; i < 40 && m.scrollHeight > m.clientHeight + 1; i++) { const el = fs[i % fs.length]; const size = parseFloat(el.style.fontSize); if (size > 24) el.style.fontSize = (size - 2) + 'px'; } });</script>`;
 
 // 世界地図のカード（/calc/map/ と、地図を載せたエッセイ）: 札・題と、小さな地図と凡例（区分ごとの国の数）
 const mapJs = require('./src/map.js');

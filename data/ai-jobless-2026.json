@@ -1,0 +1,168 @@
+{
+  "about": "Figures behind the opinion essay ai-unemployment-basic-income (Tao Lin's forecast of near-universal unemployment, why means-tested public assistance would not scale, and a small basic income now). Costs of a basic income in Japan come from data/japan-2026.json and AI profits from data/ai-profits-2026.json; build.js checks that every language of the essay carries the digits listed under 'digits' for each fact here, and the costs recomputed from data/japan-2026.json.",
+  "essay": "ai-unemployment-basic-income",
+  "retrieved": "2026-11-19",
+  "facts": [
+    {
+      "id": "hogoHouseholds",
+      "value": 1641451,
+      "date": "2026-08",
+      "note": "被保護実世帯数 (including suspended cases; 1,632,557 excluding), preliminary; 55.2% elderly households",
+      "source": "https://www.mhlw.go.jp/toukei/saikin/hw/hihogosya/m2026/dl/08-01.pdf",
+      "asOf": "2026-11-04",
+      "digits": [
+        "1641451"
+      ]
+    },
+    {
+      "id": "hogoPeople",
+      "value": 1965132,
+      "date": "2026-08",
+      "note": "被保護実人員, preliminary",
+      "source": "https://www.mhlw.go.jp/toukei/saikin/hw/hihogosya/m2026/dl/08-01.pdf",
+      "asOf": "2026-11-04",
+      "digits": [
+        "1965132"
+      ]
+    },
+    {
+      "id": "hogoRate",
+      "value": 1.6,
+      "unit": "%",
+      "date": "2026-08",
+      "note": "保護率",
+      "source": "https://www.mhlw.go.jp/toukei/saikin/hw/hihogosya/m2026/dl/08-01.pdf",
+      "asOf": "2026-11-04",
+      "digits": [
+        "160"
+      ]
+    },
+    {
+      "id": "takeupIncome",
+      "value": 22.9,
+      "unit": "%",
+      "year": 2016,
+      "note": "MHLW estimate given to the House of Councillors on 29 May 2018 from the 2016 Comprehensive Survey of Living Conditions: 1.61 million of 7.05 million households below the public assistance standard on income received it (a later MHLW reply gave 22.6% for 2016); not the original MHLW document, reported by Shimbun Akahata",
+      "source": "https://www.jcp.or.jp/akahata/aik18/2018-06-03/2018060301_03_1.html",
+      "asOf": "2018-06-03",
+      "digits": [
+        "229"
+      ]
+    },
+    {
+      "id": "takeupAssets",
+      "value": 43.7,
+      "unit": "%",
+      "year": 2016,
+      "note": "same estimate, households with savings under one month of the minimum cost of living",
+      "source": "https://www.jcp.or.jp/akahata/aik18/2018-06-03/2018060301_03_1.html",
+      "asOf": "2018-06-03",
+      "digits": [
+        "437"
+      ]
+    },
+    {
+      "id": "takeupJfba",
+      "value": 20,
+      "unit": "%",
+      "note": "Japan Federation of Bar Associations leaflet: only about 20% (2割) of eligible households use public assistance",
+      "source": "https://www.bengo4.com/c_18/n_2602/",
+      "digits": [
+        "20"
+      ]
+    },
+    {
+      "id": "caseloadCity",
+      "value": 80,
+      "note": "Social Welfare Act art. 16: standard number of caseworkers, one per 80 recipient households in cities (towns and villages run by a municipal office also 80)",
+      "source": "https://laws.e-gov.go.jp/law/326AC0000000045",
+      "digits": [
+        "80"
+      ]
+    },
+    {
+      "id": "caseloadPref",
+      "value": 65,
+      "note": "same article, offices of prefectures (郡部): one per 65 households",
+      "source": "https://laws.e-gov.go.jp/law/326AC0000000045",
+      "digits": [
+        "65"
+      ]
+    },
+    {
+      "id": "caseworkers",
+      "value": 18183,
+      "standard": 20115,
+      "date": "2016-10-01",
+      "note": "full-time public assistance caseworkers (生活保護担当現業員) against the standard number, 90.4%; 23.6% with under one year's experience; latest staffing survey found",
+      "source": "https://www.mhlw.go.jp/toukei/list/dl/125-1-01.pdf",
+      "digits": [
+        "18183",
+        "20115"
+      ]
+    },
+    {
+      "id": "pfd2025",
+      "value": 1000,
+      "unit": "USD",
+      "note": "Alaska Permanent Fund Dividend 2025 (HB 53)",
+      "source": "https://dor.alaska.gov/department-of-revenue/news-detail/2025/09/22/department-of-revenue-announces-2025-permanent-fund-dividend-amount",
+      "digits": [
+        "1000"
+      ]
+    },
+    {
+      "id": "pfd2026",
+      "value": 1200,
+      "unit": "USD",
+      "note": "2026: $1,000 dividend + $200 energy relief (HB 263), announced 21 September 2026",
+      "source": "https://pfd.alaska.gov/",
+      "digits": [
+        "1200",
+        "200"
+      ]
+    },
+    {
+      "id": "gpfg",
+      "value": 22014,
+      "unit": "NOK billion",
+      "date": "2026-09-30",
+      "perPerson": 3.9,
+      "population": 5636904,
+      "note": "Government Pension Fund Global market value; population Statistics Norway end of Q2 2026; per person NOK 3.905 million",
+      "source": "https://www.nbim.no/en/news-and-insights/1q-3q/key-figures-q3-2026/"
+    },
+    {
+      "id": "openresearchHours",
+      "value": 1.3,
+      "unit": "hours a week",
+      "note": "OpenResearch, NBER w32719: about 1.3 hours a week less in the surveys (July 2024 version); the August 2026 revision's abstract says 1 to 2 hours",
+      "source": "https://www.nber.org/papers/w32719",
+      "digits": [
+        "13"
+      ]
+    },
+    {
+      "id": "finlandDays",
+      "value": 6,
+      "unit": "days",
+      "note": "Finland 2017-2018: about 6 more days in work, November 2017 to October 2018, final evaluation 6 May 2020",
+      "source": "https://toolbox.finland.fi/wp-content/uploads/sites/2/2018/04/basic_income_experiment_2017-2018_results_2020.pdf",
+      "digits": [
+        "6"
+      ]
+    },
+    {
+      "id": "challengerAi",
+      "value": 121401,
+      "share": 20,
+      "date": "2026-10",
+      "note": "Challenger, Gray & Christmas: job cuts with AI cited as the reason, January to October 2026, of 617,189",
+      "source": "https://www.challengergray.com/blog/october-layoffs-at-three-year-low-seasonal-hiring-plans-up-26/",
+      "asOf": "2026-11-05",
+      "digits": [
+        "121401"
+      ]
+    }
+  ]
+}

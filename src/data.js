@@ -2938,6 +2938,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-19",
+      "en": "Published the opinion piece “If AI puts almost everyone out of work, welfare as we know it breaks. That is the case for basic income”",
+      "ja": "論考『全員が失業する社会に、生活保護は耐えられない。だからベーシックインカムが要る』を公開",
+      "zh": "发布评论文章《如果AI让几乎所有人失业，现有福利撑不住。所以需要基本收入》",
+      "hi": "लेख “अगर AI लगभग सबकी नौकरी ले ले, तो आज का कल्याण तंत्र टिक नहीं पाएगा। इसलिए बेसिक इनकम चाहिए” प्रकाशित किया",
+      "es": "Publicado el artículo de opinión «Si la IA deja sin trabajo a casi todos, hará falta una renta básica»",
+      "de": "Meinungsbeitrag „Wenn KI fast alle arbeitslos macht, braucht es ein Grundeinkommen“ veröffentlicht",
+      "ar": "نشرنا مقالة الرأي «إذا أنهى الذكاء الاصطناعي الوظائف، فلن تصمد الرعاية. لهذا نحتاج دخلًا أساسيًا»"
+    },
+    {
+      "date": "2026-11-19",
       "en": "Published the essay “What would a basic income cost the United States?”",
       "ja": "エッセイ『アメリカで全員にベーシックインカムを配ると、いくらかかる？ 月500ドルから2,000ドルまで』を公開",
       "zh": "发布随笔《在美国给每个人发基本收入，要花多少钱？从每月500到2,000美元》",
@@ -4775,6 +4785,8 @@ module.exports = {
       "essaysTitle": "エッセイ",
       "essayBy": "文：Free Lunch Lab",
       "essayOpinion": "意見",
+      "essayOpLabel": "論考（筆者の意見です）",
+      "essayOpNote": "数字には出典を付けていますが、結論は筆者の意見です。",
       "essaySources": "出典",
       "essayPublished": "公開",
       "essayRelated": "関連エッセイ",
@@ -5461,6 +5473,8 @@ module.exports = {
       "essaysTitle": "Essays",
       "essayBy": "By Free Lunch Lab",
       "essayOpinion": "Opinion",
+      "essayOpLabel": "Opinion",
+      "essayOpNote": "The numbers are sourced; the conclusion is the author’s view.",
       "essaySources": "Sources",
       "essayPublished": "Published",
       "essayRelated": "Related essay",
@@ -6147,6 +6161,8 @@ module.exports = {
       "essaysTitle": "निबंध",
       "essayBy": "लेखक: Free Lunch Lab",
       "essayOpinion": "राय",
+      "essayOpLabel": "राय (लेखक का मत)",
+      "essayOpNote": "आँकड़ों के स्रोत दिए गए हैं; निष्कर्ष लेखक की अपनी राय है।",
       "essaySources": "स्रोत",
       "essayPublished": "प्रकाशित",
       "essayRelated": "संबंधित निबंध",
@@ -6833,6 +6849,8 @@ module.exports = {
       "essaysTitle": "随笔",
       "essayBy": "作者：Free Lunch Lab",
       "essayOpinion": "观点",
+      "essayOpLabel": "评论（作者观点）",
+      "essayOpNote": "数字均注明出处，结论是作者的观点。",
       "essaySources": "出处",
       "essayPublished": "发布",
       "essayRelated": "相关随笔",
@@ -7521,6 +7539,8 @@ module.exports = {
       "essaysTitle": "Ensayos",
       "essayBy": "Por Free Lunch Lab",
       "essayOpinion": "Opinión",
+      "essayOpLabel": "Opinión",
+      "essayOpNote": "Las cifras tienen fuente; la conclusión es la opinión del autor.",
       "essaySources": "Fuentes",
       "essayPublished": "Publicado",
       "essayRelated": "Ensayo relacionado",
@@ -8207,6 +8227,8 @@ module.exports = {
       "essaysTitle": "مقالات",
       "essayBy": "بقلم ⁦Free Lunch Lab⁩",
       "essayOpinion": "رأي",
+      "essayOpLabel": "مقال رأي",
+      "essayOpNote": "الأرقام موثّقة بمصادرها، أما الخلاصة فهي رأي الكاتب.",
       "essaySources": "المصادر",
       "essayPublished": "نُشر",
       "essayRelated": "مقال ذو صلة",
@@ -8893,6 +8915,8 @@ module.exports = {
       "essaysTitle": "Essays",
       "essayBy": "Von Free Lunch Lab",
       "essayOpinion": "Meinung",
+      "essayOpLabel": "Meinung",
+      "essayOpNote": "Die Zahlen sind belegt, die Schlussfolgerung ist die Meinung des Autors.",
       "essaySources": "Quellen",
       "essayPublished": "Veröffentlicht",
       "essayRelated": "Verwandter Essay",
@@ -19017,6 +19041,943 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "ai-unemployment-basic-income",
+      "date": "2026-11-19",
+      "kind": "opinion",
+      "related": [
+        "ai-company-profits-per-person",
+        "japan-basic-income-cost",
+        "generative-ai-jobs-basic-income",
+        "does-cash-make-people-stop-working",
+        "public-benefit-fund"
+      ],
+      "title": {
+        "en": "If AI puts almost everyone out of work, welfare as we know it breaks. That is the case for basic income",
+        "ja": "全員が失業する社会に、生活保護は耐えられない。だからベーシックインカムが要る",
+        "zh": "如果AI让几乎所有人失业，现有福利撑不住。所以需要基本收入",
+        "hi": "अगर AI लगभग सबकी नौकरी ले ले, तो आज का कल्याण तंत्र टिक नहीं पाएगा। इसलिए बेसिक इनकम चाहिए",
+        "es": "Si la IA deja sin trabajo a casi todos, hará falta una renta básica",
+        "de": "Wenn KI fast alle arbeitslos macht, braucht es ein Grundeinkommen",
+        "ar": "إذا أنهى الذكاء الاصطناعي الوظائف، فلن تصمد الرعاية. لهذا نحتاج دخلًا أساسيًا"
+      },
+      "desc": {
+        "en": "An Anthropic researcher expects almost all humans to become unemployable and live on welfare. Japan’s welfare reaches only a minority today. We argue for a basic income, started small now.",
+        "ja": "アンソロピックの研究者は、ほぼ全人類が雇用されなくなり福祉に頼ると予測する。今の生活保護は少数しか支えていない。小さく始めるベーシックインカムを提案する。",
+        "zh": "一位Anthropic研究员预计几乎所有人将无法就业、靠福利生活。而日本的福利如今只覆盖少数人。我们主张从现在起、小规模地启动基本收入。",
+        "hi": "Anthropic के एक शोधकर्ता के अनुसार लगभग सभी इंसान बेरोज़गार होकर कल्याण पर जिएँगे। जापान का कल्याण तंत्र आज भी कुछ ही लोगों तक पहुँचता है। हमारा तर्क: बेसिक इनकम, अभी छोटे से शुरू।",
+        "es": "Un investigador de Anthropic prevé que casi todos vivirán de ayudas públicas. Defendemos una renta básica, pequeña y desde ya.",
+        "de": "Ein Anthropic-Forscher erwartet, dass fast alle von Sozialhilfe leben werden. Wir plädieren für ein Grundeinkommen, klein und jetzt.",
+        "ar": "باحث في أنثروبيك يتوقع أن يعيش الجميع تقريبًا على الرعاية. نرى الحل في دخل أساسي يبدأ صغيرًا الآن."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "On 19 November 2026 a Japanese headline travelled fast: “Almost all of humanity will be permanently unemployed”. It was about an interview with Tao Lin, who works at Anthropic. This piece is an opinion. We think he describes, without meaning to, why today’s welfare would not hold, and why a basic income should be built before it is needed, not after. The numbers are sourced; the conclusion is ours."
+          ],
+          [
+            "h",
+            "What was said, and what was not"
+          ],
+          [
+            "p",
+            "The interview was published on YouTube on 15 November (16 November in Japan) in Palisade Research’s series “From Inside AI”; ASCII reported it in Japanese on 19 November.[1][2] Lin has worked at Anthropic for about a year and a half, first on alignment research and now on Safeguards, the team that screens harmful requests. The forecast is his own, not Anthropic’s; the series itself says its interviews are not representative of every perspective inside the AI companies, and Lin added that his view is common in the AI safety community.[1][3]"
+          ],
+          [
+            "p",
+            "As quoted in coverage of the interview, he said: “I think that it’s very likely that pretty much all humans on Earth will become permanently unemployable and will need to strictly rely on government welfare to sustain themselves.” He expects AI “as good as or better than the best expert at almost every field” in about 1.3 years, which ASCII put at around the end of 2027. But he sees a large gap before jobs actually go, because replacing physical work would take billions of robots; first, people would move to other occupations.[2][3] Asked whether this would happen within 15 months, he said no, and he gave no date."
+          ],
+          [
+            "p",
+            "His proposal is not a basic income. He says the AI companies should slow down, to “something like one quarter of its current rate”, and coverage says he urged people to press for regulation. In the coverage we found, he does not mention a basic income at all; we could not check a full transcript.[2][3]"
+          ],
+          [
+            "p",
+            "He is not alone. Anthropic’s chief executive, Dario Amodei, warned in May 2025 that AI could wipe out half of all entry-level white-collar jobs and push US unemployment to 10–20% within one to five years.[4] On 16 November 2026 the economist Nouriel Roubini told Bloomberg that US unemployment could reach 80% by 2050, and that “some redistribution from the haves to the have-nots” would follow.[5] The IMF estimated in 2024 that about 40% of jobs worldwide, and 60% in advanced economies, are exposed to AI.[6]"
+          ],
+          [
+            "p",
+            "These are forecasts, not facts. In the US, employers cited AI for 121,401 announced job cuts from January to October 2026, about 20% of all announced cuts, but AI is not yet visible in overall employment ({we looked at the data|/essays/generative-ai-jobs-basic-income/}).[7] In a survey for the Anthropic Economic Index in June 2026, 10% of workers rated losing their own job as likely or very likely.[8] Nobody knows whether Lin is right. Our argument is about what happens if he is, and about why acting early costs little if he is not."
+          ],
+          [
+            "h",
+            "Welfare built for a few"
+          ],
+          [
+            "p",
+            "Lin’s world ends with people living on “government welfare”. In Japan, the last safety net is public assistance (seikatsu hogo). In August 2026 it supported 1,641,451 households, 1,965,132 people, or 1.60% of the population; more than half of the households were elderly.[9] It is designed for a small minority, and even at that size it misses most of the people it is meant for."
+          ],
+          [
+            "p",
+            "The take-up rate tells the story. In 2018 the Ministry of Health, Labour and Welfare estimated that among households with income below the public assistance standard, only 22.9% received it in 2016; counting only households that also had almost no savings, 43.7%.[10] The Japan Federation of Bar Associations puts it at about 20%.[11] Put the other way, most households poor enough to qualify do not get it."
+          ],
+          [
+            "p",
+            "Some of the reasons are built in. Applicants must show they have used up savings and assets. Relatives can be asked whether they will support them first, which many people find shaming enough to stay away. And every case is handled by a caseworker: the Social Welfare Act sets a standard of one caseworker for every 80 recipient households in cities and 65 in towns and villages.[12] Even now there are not enough of them: in the latest staffing survey (2016), 18,183 caseworkers stood against a standard of 20,115, and almost a quarter had less than a year’s experience.[12]"
+          ],
+          [
+            "p",
+            "Now scale it. At the city standard, every million households on public assistance needs 12,500 caseworkers. If most of Japan’s working-age population lost their earnings, tens of millions of households would have to apply, prove they had nothing, and wait. A system that already turns away most of the poor would become a queue of nearly everyone. And earnings are deducted from the benefit after a small work allowance, so taking a part-time job or a few days of the work that remained would leave people little better off.[12] In a world with fewer jobs, that is exactly the wrong signal."
+          ],
+          [
+            "h",
+            "A payment that scales"
+          ],
+          [
+            "p",
+            "A basic income asks one question, whether you live here, and the state already knows the answer. Japan showed that in 2020, when the Special Cash Payment gave ¥100,000 to almost everyone on the resident register, about ¥12.7 trillion in a few months, without a means test ({what people did with it|/essays/japan-special-cash-payment/}). It was slow where municipalities had to collect bank details by hand; that part can be fixed once, in advance."
+          ],
+          [
+            "p",
+            "There is no cliff. Earning more never takes the payment away; taxes on higher incomes take back what the better-off receive. No caseworker has to judge who deserves help, which matters most in exactly the world Lin describes, where the question “why aren’t you working?” stops having a fair answer."
+          ],
+          [
+            "h",
+            "The honest arithmetic"
+          ],
+          [
+            "p",
+            "It is not cheap. ¥70,000 a month for everyone in Japan, the amount Heizo Takenaka floated, would cost ¥103.2 trillion a year, 122% of all national tax revenue in FY2025. ¥10,000 a month would cost ¥14.7 trillion, 17% ({the full calculation|/essays/japan-basic-income-cost/}).[13]"
+          ],
+          [
+            "p",
+            "And today’s AI profits come nowhere near it. The nine companies at the centre of the AI boom made about $1.08 trillion of net profit over their last four quarters; shared among everyone on Earth, that is ${{aip.net100PM:d2}} a month each, about ¥{{aip.net100PM@jp:r10}} ({the calculation|/essays/ai-company-profits-per-person/}).[14] A tax on today’s AI profits would not pay for a living income."
+          ],
+          [
+            "p",
+            "But if Lin is right, today is the wrong yardstick. Work that AI and robots do does not stop producing value; the income moves from wages to whoever owns the models, the chips and the machines. The question then is not whether a country can afford a basic income, but who owns the wealth that pays for it. There are working models. Alaska has paid every resident a yearly dividend from its oil fund since 1982; the 2025 dividend was $1,000, and the 2026 payment $1,200 including a $200 energy relief payment.[15] Norway’s oil fund is worth about NOK 3.9 million per inhabitant (NOK 22,014 billion at the end of September 2026), though it pays into the budget, not to people directly.[16] Researchers have proposed a “Windfall Clause”, under which AI firms would commit in advance to share profits above an extremely high threshold.[17] Sam Altman proposed in 2021 a fund taking 2.5% of large companies’ value each year, and in 2024 floated a “universal basic compute”.[18] Anthropic has set aside 5% of its shares for a public benefit fund ({our essay|/essays/public-benefit-fund/})."
+          ],
+          [
+            "p",
+            "None of these yet adds up to a basic income. What they show is the shape of the answer: a public stake in AI-created wealth, decided before that wealth is concentrated, not after."
+          ],
+          [
+            "h",
+            "Two objections"
+          ],
+          [
+            "p",
+            "What if the forecast is wrong? Then a small basic income still does work today: it reaches the many households that qualify for public assistance but do not receive it, and the freelancers and young people with no claim on unemployment insurance. If the forecast is right, building it during mass job loss would be too late; even a one-off payment in 2020 took months."
+          ],
+          [
+            "p",
+            "Will people stop working? The evidence says not much. In OpenResearch’s study, $1,000 a month for three years led recipients to work about 1.3 hours a week less than the control group in the surveys; the paper’s latest version puts it at one to two hours.[19] In Finland’s 2017–2018 experiment, unemployed recipients worked about 6 days more in the second year than the control group, and felt better.[20] Ten studies, from the 1970s to 101 US pilots, show small cuts or none ({the overview|/essays/does-cash-make-people-stop-working/}). And in the world Lin describes, the worry is the reverse: not that people will stop working, but that there will be no work to stop."
+          ],
+          [
+            "p",
+            "Slowing AI and a basic income are not opposites. Lin may be right that the pace should drop. A floor under everyone is useful at any pace."
+          ],
+          [
+            "h",
+            "What we propose: start small, now"
+          ],
+          [
+            "p",
+            "Start a basic income of ¥10,000 a month for everyone now. It would cost ¥14.7 trillion a year, or about ¥12.6 trillion if it replaced the child allowance, which already pays ¥10,000 for most children.[13] The amount is small; the point is the pipe: one payment, to everyone, every month, through accounts linked in advance."
+          ],
+          [
+            "p",
+            "Alongside it, set up a public AI fund that takes a stake in the wealth AI creates, through shares, a levy on large-scale compute or a share of AI profits, and pays a dividend on top of the base, Alaska-style. As AI’s share of income grows, so does the payment. Keep medical assistance and support for disability and care, which cash cannot replace."
+          ],
+          [
+            "p",
+            "If Lin is wrong, Japan gets a modest floor that reaches people today’s welfare misses. If he is right, the system exists before the jobs go, not after. Either way, the time to build it is while it is still cheap."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "2026年11月19日、ある見出しが日本で一気に広がりました。「ほぼ全人類が永久に失業する」。アンソロピック（Anthropic）で働くタオ・リン（Tao Lin）氏へのインタビューを伝える記事です。この文章は論考（意見）です。私たちは、リン氏が意図せずして、今の福祉がなぜもたないのか、そしてなぜベーシックインカムを必要になってからではなく必要になる前に作っておくべきなのかを語っていると考えます。数字には出典を付けていますが、結論は私たちのものです。"
+          ],
+          [
+            "h",
+            "語られたこと、語られなかったこと"
+          ],
+          [
+            "p",
+            "インタビューは11月15日（日本時間16日）、パリセード・リサーチ（Palisade Research）のシリーズ「From Inside AI」としてYouTubeで公開され、ASCIIが11月19日に日本語で報じました。[1][2] リン氏はアンソロピックに約1年半在籍し、最初はアライメント研究に、現在は有害な依頼を見分けるセーフガード（Safeguards）チームに所属しています。予測は本人のものであり、アンソロピックの見解ではありません。シリーズ自体も、インタビューはAI企業内部のあらゆる見方を代表するものではないとしており、リン氏は自分の見方はAI安全性のコミュニティではよくあるものだと付け加えています。[1][3]"
+          ],
+          [
+            "p",
+            "インタビューを伝える報道での引用によれば、リン氏は「地球上のほぼすべての人間が、永久に雇用されなくなる可能性が非常に高い」と述べ、生きていくには政府の福祉に頼るしかなくなるとしました。ほぼすべての分野で最高の専門家と同等かそれ以上のAIが約1.3年で登場すると見ており、ASCIIはこれを2027年末ごろとしています。ただし、実際に仕事がなくなるまでには大きな時間差があると考えています。肉体労働を置き換えるには何十億台ものロボットが必要で、まず人々は別の職業へ移っていくからです。[2][3] 15か月以内に起きるかと問われると否定し、時期は示しませんでした。"
+          ],
+          [
+            "p",
+            "リン氏の提案はベーシックインカムではありません。AI企業は開発のペースを「現在の4分の1程度」に落とすべきだと言い、報道によれば規制を求めるよう人々に呼びかけました。私たちが確認した報道の中では、リン氏はベーシックインカムにまったく触れていません。ただし全文の書き起こしは確認できていません。[2][3]"
+          ],
+          [
+            "p",
+            "こうした見方はリン氏だけではありません。アンソロピックのダリオ・アモデイ最高経営責任者は2025年5月、AIが新人向けホワイトカラー職の半分を消し去り、1〜5年のうちに米国の失業率を10–20%に押し上げる可能性があると警告しました。[4] 2026年11月16日には経済学者のヌリエル・ルービニ氏がブルームバーグに対し、米国の失業率は2050年までに80%に達しうるとし、「持てる者から持たざる者への一定の再分配」が起きるだろうと語りました。[5] IMFは2024年、世界の仕事の約40%、先進国では60%がAIの影響を受けると推計しています。[6]"
+          ],
+          [
+            "p",
+            "これらは予測であって、事実ではありません。米国では2026年1〜10月に発表された人員削減のうち121,401人分で雇用主がAIを理由に挙げ、発表された削減全体の約20%を占めましたが、雇用全体の統計にはまだAIの影響は見えていません（{データを見た論考|/essays/generative-ai-jobs-basic-income/}）。[7] 2026年6月のアンソロピック経済指標（Anthropic Economic Index）向けの調査では、自分の仕事を失う可能性が「高い」または「非常に高い」と答えた働き手は10%でした。[8] リン氏が正しいかどうかは誰にもわかりません。私たちの主張は、もし彼が正しかったら何が起きるのか、そして彼が間違っていた場合でも早めに動くコストはなぜ小さいのか、という点にあります。"
+          ],
+          [
+            "h",
+            "少数のために作られた福祉"
+          ],
+          [
+            "p",
+            "リン氏の描く世界は、人々が「政府の福祉」で暮らすところで終わります。日本で最後のセーフティネットは生活保護です。2026年8月時点で1,641,451世帯、1,965,132人、人口の1.60%を支えており、世帯の半数以上は高齢者世帯です。[9] 生活保護はごく少数のために設計された制度であり、その規模でさえ、本来支えるべき人の多くに届いていません。"
+          ],
+          [
+            "p",
+            "それを物語るのが捕捉率です。厚生労働省は2018年、所得が生活保護基準を下回る世帯のうち、2016年に実際に保護を受けていたのは22.9%にとどまると推計しました。貯蓄もほとんどない世帯に限っても43.7%です。[10] 日本弁護士連合会は捕捉率を約20%としています。[11] 裏返せば、受給資格があるほど貧しい世帯の大半は、生活保護を受けていません。"
+          ],
+          [
+            "p",
+            "その理由の一部は制度に組み込まれています。申請者は貯蓄や資産を使い果たしたことを示さなければなりません。親族には先に援助できないかを問う扶養照会が行われ、それを恥と感じて申請をあきらめる人は少なくありません。そして一件一件をケースワーカーが担当します。社会福祉法は、ケースワーカー1人あたりの担当を市部で80世帯、町村部で65世帯と標準を定めています。[12] 今でさえ人手は足りていません。最新の配置状況調査（2016年）では、標準数20,115人に対してケースワーカーは18,183人で、4分の1近くは経験1年未満でした。[12]"
+          ],
+          [
+            "p",
+            "これを拡大してみましょう。市部の標準でいえば、保護世帯が100万増えるごとに12,500人のケースワーカーが必要です。もし日本の現役世代の大半が稼ぎを失えば、何千万もの世帯が申請し、何も持っていないことを証明し、待たなければなりません。今でも貧しい人の大半を取りこぼしている制度が、ほぼ全員の行列になるでしょう。しかも、わずかな勤労控除を超える収入は保護費から差し引かれるため、パートや、残ったわずかな仕事を数日しても、暮らしはほとんど良くなりません。[12] 仕事が減る世界で、これはまさに逆のメッセージです。"
+          ],
+          [
+            "h",
+            "規模を広げられる給付"
+          ],
+          [
+            "p",
+            "ベーシックインカムが問うのは、ここに住んでいるかどうか、という一点だけです。そして国はその答えをすでに知っています。日本は2020年にそれを示しました。特別定額給付金は住民基本台帳に載るほぼ全員に10万円を配り、数か月で約12.7兆円を、資力調査なしで届けたのです（{人々がそれをどう使ったか|/essays/japan-special-cash-payment/}）。遅れたのは、市区町村が口座情報を手作業で集めなければならなかったところです。そこは前もって一度直しておけば済みます。"
+          ],
+          [
+            "p",
+            "崖はありません。多く稼いでも給付が取り上げられることはなく、比較的豊かな人が受け取った分は高い所得への課税で取り戻します。誰が助けに値するかをケースワーカーが判断する必要もありません。それが最も重要になるのは、まさにリン氏の描く世界です。「なぜ働かないのか」という問いに、公正な答えがなくなるからです。"
+          ],
+          [
+            "h",
+            "正直な計算"
+          ],
+          [
+            "p",
+            "安くはありません。竹中平蔵氏が示した全国民に月7万円を配ると、年103.2兆円かかり、2025年度の国の税収全体の122%にあたります。月1万円なら14.7兆円、17%です（{計算の全体|/essays/japan-basic-income-cost/}）。[13]"
+          ],
+          [
+            "p",
+            "そして、今のAIの利益はそれにまったく届きません。AIブームの中心にある9社の直近4四半期の純利益は合計約1.08兆ドルです。地球上の全員で分けると、1人あたり月{{aip.net100PM:d2}}ドル（約{{aip.net100PM@jp:r10}}円）にしかなりません（{その計算|/essays/ai-company-profits-per-person/}）。[14] 今のAIの利益に課税しても、暮らせるだけの所得はまかなえません。"
+          ],
+          [
+            "p",
+            "しかし、リン氏が正しいなら、今日を物差しにするのは間違いです。AIやロボットがする仕事も価値を生み出し続けます。所得が賃金から、モデルや半導体や機械を持つ者へと移るだけです。そのとき問題になるのは、国がベーシックインカムを賄えるかどうかではなく、それを賄う富を誰が所有しているかです。手本になる仕組みはあります。アラスカ州は1982年から、石油基金の配当を毎年すべての住民に支払っています。2025年の配当は1,000ドル、2026年はエネルギー支援の200ドルを含めて1,200ドルでした。[15] ノルウェーの石油基金は国民1人あたり約390万ノルウェー・クローネ（2026年9月末の時価総額は約22兆クローネ）にのぼりますが、人々に直接ではなく国の予算に繰り入れられています。[16] 研究者は「ウィンドフォール条項（Windfall Clause）」を提案しています。AI企業が、極めて高い水準を超える利益を分配することを前もって約束するというものです。[17] サム・アルトマン氏は2021年、大企業の企業価値の2.5%を毎年取り込む基金を提案し、2024年には「ユニバーサル・ベーシック・コンピュート」を持ち出しました。[18] アンソロピックは株式の5%を公益のための基金に充てています（{私たちの論考|/essays/public-benefit-fund/}）。"
+          ],
+          [
+            "p",
+            "これらはまだどれも、ベーシックインカムには届きません。示しているのは答えの形です。AIが生み出す富に公共が持ち分を持つこと、それを富が集中した後ではなく、集中する前に決めておくことです。"
+          ],
+          [
+            "h",
+            "二つの反論"
+          ],
+          [
+            "p",
+            "予測が外れたらどうするのか。その場合でも、小さなベーシックインカムは今すぐ役に立ちます。生活保護の資格がありながら受けていない多くの世帯に届き、雇用保険の対象にならないフリーランスや若い人にも届きます。予測が当たるなら、大量失業のさなかに作り始めたのでは遅すぎます。2020年の一回限りの給付でさえ、数か月かかったのです。"
+          ],
+          [
+            "p",
+            "人々は働かなくなるのか。証拠が示すのは、それほどでもない、ということです。OpenResearchの研究では、月1,000ドルを3年間受け取った人は、調査上、対照群より週に約1.3時間働く時間が短くなりました。論文の最新版では1〜2時間としています。[19] フィンランドの2017–2018年の実験では、失業者の受給者は2年目に対照群より約6日多く働き、幸福感も高まりました。[20] 1970年代の実験から米国の101件のパイロットまで、10の研究が示すのは、わずかな減少か、減少なしです（{全体像|/essays/does-cash-make-people-stop-working/}）。そしてリン氏の描く世界では、心配は逆になります。人々が働くのをやめることではなく、やめるべき仕事そのものがなくなることです。"
+          ],
+          [
+            "p",
+            "AIの減速とベーシックインカムは対立するものではありません。ペースを落とすべきだというリン氏の主張は正しいかもしれません。全員の下に敷く床は、どんなペースでも役に立ちます。"
+          ],
+          [
+            "h",
+            "私たちの提案：小さく、今すぐ始める"
+          ],
+          [
+            "p",
+            "全員に月1万円のベーシックインカムを今すぐ始めましょう。費用は年14.7兆円、すでにほとんどの子どもに月1万円を支給している児童手当を置き換えれば約12.6兆円です。[13] 金額は小さくても、肝心なのはパイプです。一つの給付を、全員に、毎月、前もってひも付けた口座へ届けることです。"
+          ],
+          [
+            "p",
+            "あわせて、AIが生み出す富に持ち分を持つ公的なAI基金を作ります。株式の保有、大規模な計算資源への課金、あるいはAIの利益の一部を通じて、アラスカ方式で基本の給付に上乗せする配当を支払うのです。所得に占めるAIの割合が増えれば、給付も増えます。医療扶助や、障害・介護への支援は現金では代わりにならないので、残します。"
+          ],
+          [
+            "p",
+            "リン氏が間違っていれば、日本は今の福祉が取りこぼしている人に届くささやかな床を手に入れます。正しければ、仕事がなくなった後ではなく、その前に仕組みができています。どちらにしても、作るべき時は、まだ安く作れる今です。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026年11月19日，一则日文标题迅速传开：“几乎全人类将永久失业”。它讲的是对Anthropic员工Tao Lin的一次采访。本文是一篇评论。我们认为，他无意中说明了为什么现有的福利制度撑不住，以及为什么基本收入应当在需要之前就建立起来，而不是事后补救。文中数字均有出处；结论是我们自己的。"
+          ],
+          [
+            "h",
+            "他说了什么，没说什么"
+          ],
+          [
+            "p",
+            "这次采访于11月15日（日本时间11月16日）在YouTube上发布，属于Palisade Research的系列节目“From Inside AI”；ASCII于11月19日用日文作了报道。[1][2] Lin在Anthropic工作了大约一年半，起初从事对齐研究，现在在Safeguards团队，负责筛查有害请求。这一预测是他个人的看法，并非Anthropic的立场；该系列本身也说明，其采访并不代表AI公司内部的所有观点，而Lin补充说，他的看法在AI安全圈中很常见。[1][3]"
+          ],
+          [
+            "p",
+            "据有关这次采访的报道引述，他说：“我认为，地球上几乎所有人都极有可能永久失去就业能力，并且只能完全依靠政府福利来维持生活。”他预计，大约1.3年后会出现“在几乎所有领域都与最顶尖专家一样好甚至更好”的AI，ASCII将其解读为2027年底前后。但他认为，在工作真正消失之前还有很大的时间差，因为替代体力劳动需要数十亿台机器人；在此之前，人们会先转向其他职业。[2][3] 被问到这是否会在15个月内发生时，他回答不会，也没有给出具体时间。"
+          ],
+          [
+            "p",
+            "他的主张并不是基本收入。他说AI公司应当放慢速度，降到“大约现在速度的四分之一”，报道还称他呼吁人们推动监管。在我们找到的报道中，他完全没有提到基本收入；我们无法核对完整的采访文字记录。[2][3]"
+          ],
+          [
+            "p",
+            "持这种看法的并非只有他一人。Anthropic首席执行官达里奥·阿莫迪在2025年5月警告说，AI可能在一到五年内消灭一半的入门级白领工作，并把美国失业率推高到10–20%。[4] 2026年11月16日，经济学家努里埃尔·鲁比尼对彭博社表示，到2050年美国失业率可能达到80%，随之而来的将是“一定程度上从富人向穷人的再分配”。[5] 国际货币基金组织在2024年估计，全球约40%的工作、发达经济体中60%的工作受到AI影响。[6]"
+          ],
+          [
+            "p",
+            "这些是预测，不是事实。在美国，2026年1月至10月，雇主以AI为理由宣布裁员121,401人，约占全部已宣布裁员的20%，但在整体就业数据中还看不出AI的影响（{我们查看了数据|/essays/generative-ai-jobs-basic-income/}）。[7] 在2026年6月为Anthropic经济指数所做的调查中，10%的劳动者认为自己失业的可能性“较大”或“很大”。[8] 没有人知道Lin是否说对了。我们的论点关乎：如果他说对了会怎样；以及如果他说错了，为什么及早行动的代价也很小。"
+          ],
+          [
+            "h",
+            "只为少数人设计的福利"
+          ],
+          [
+            "p",
+            "在Lin描绘的世界里，人们最终要靠“政府福利”生活。在日本，最后一道安全网是生活保护（seikatsu hogo）。2026年8月，它支撑着1,641,451户、1,965,132人，占人口的1.60%；其中一半以上是老年人家庭。[9] 这项制度本就是为一小部分人设计的，而且即便在现有规模下，它也漏掉了大多数本应覆盖的人。"
+          ],
+          [
+            "p",
+            "捕捉率（实际领取率）说明了一切。2018年，日本厚生劳动省估计，在收入低于生活保护标准的家庭中，2016年实际领取的只有22.9%；若只计算同时几乎没有存款的家庭，则为43.7%。[10] 日本律师联合会估计约为20%。[11] 反过来说，大多数穷到符合条件的家庭都没有领到。"
+          ],
+          [
+            "p",
+            "部分原因是制度本身决定的。申请人必须证明自己已经用尽存款和资产。福利机构可能先向亲属询问是否愿意抚养（扶养照会），许多人觉得这太丢脸而宁愿不申请。而且每个案例都由一名个案工作者负责：《社会福利法》规定的标准是，在市里每80户受助家庭配一名个案工作者，在町村则是每65户一名。[12] 即便现在也人手不足：在最近一次人员配置调查（2016年）中，实际有18,183名个案工作者，而标准是20,115名，且近四分之一的人经验不足一年。[12]"
+          ],
+          [
+            "p",
+            "现在把规模放大。按市里的标准，每一百万户领取生活保护的家庭就需要12,500名个案工作者。如果日本大多数劳动年龄人口失去收入，就会有数千万户家庭必须提出申请、证明自己一无所有，然后等待。一个现在就已将大多数穷人拒之门外的制度，将变成几乎所有人都在排的长队。而且在少量的就业扣除之后，工作收入会从福利金中扣除，所以去做兼职或者干几天剩下的工作，生活也好不了多少。[12] 在工作越来越少的世界里，这恰恰是错误的信号。"
+          ],
+          [
+            "h",
+            "一种可以扩展规模的给付"
+          ],
+          [
+            "p",
+            "基本收入只问一个问题：你是否住在这里？而国家早已知道答案。日本在2020年就证明了这一点：当时的特别定额给付金向住民基本台账上几乎所有人发放了10万日元，几个月内共发放约12.7万亿日元，且不做收入审查（{人们拿这笔钱做了什么|/essays/japan-special-cash-payment/}）。在市町村需要手工收集银行账户信息的地方，发放很慢；这一环节可以事先一次性解决。"
+          ],
+          [
+            "p",
+            "这里没有“断崖”。多挣钱永远不会让你失去这笔给付；对较高收入征收的税会把较富裕者领到的部分收回。不需要个案工作者来判断谁值得帮助，而这一点恰恰在Lin描绘的世界里最为重要：在那里，“你为什么不工作？”这个问题已经没有公平的答案。"
+          ],
+          [
+            "h",
+            "坦率的算术"
+          ],
+          [
+            "p",
+            "这并不便宜。按竹中平藏提出的金额，向日本每个人每月发放7万日元，每年需要103.2万亿日元，相当于2025财年全部国税收入的122%。每月1万日元则需要14.7万亿日元，相当于17%（{完整计算|/essays/japan-basic-income-cost/}）。[13]"
+          ],
+          [
+            "p",
+            "而如今的AI利润远远不够。处于AI热潮中心的九家公司在最近四个季度共获得约1.08万亿美元的净利润；平摊给地球上的每一个人，每人每月是{{aip.net100PM:d2}}美元，约合{{aip.net100PM@jp:r10}}日元（{计算过程|/essays/ai-company-profits-per-person/}）。[14] 对今天的AI利润征税，并不足以支付能维持生活的收入。"
+          ],
+          [
+            "p",
+            "但如果Lin说对了，用今天来衡量就是错的。AI和机器人所做的工作不会停止创造价值；收入只是从工资转移到了拥有模型、芯片和机器的人手里。那时的问题就不是一个国家能否负担得起基本收入，而是谁拥有支付它的财富。已经有可行的模式。阿拉斯加自1982年起每年用其石油基金向每位居民发放分红；2025年的分红为1,000美元，2026年的给付为1,200美元，其中包括200美元的能源补助。[15] 挪威石油基金的规模约合每位居民390万挪威克朗（2026年9月底市值约22万亿挪威克朗），不过它是注入财政预算，而不是直接发给个人。[16] 有研究者提出了“意外之财条款”（Windfall Clause），即AI公司事先承诺，将超过极高门槛的利润拿出来分享。[17] 萨姆·奥尔特曼在2021年提议设立一个基金，每年征收大公司市值的2.5%，并在2024年提出了“全民基本算力”的设想。[18] Anthropic已拨出5%的股份用于公益基金（{我们的文章|/essays/public-benefit-fund/}）。"
+          ],
+          [
+            "p",
+            "这些措施目前加起来都还构不成基本收入。它们展示的是答案的轮廓：公众在AI创造的财富中持有一份股权，并且要在这些财富集中之前就定下来，而不是之后。"
+          ],
+          [
+            "h",
+            "两个反对意见"
+          ],
+          [
+            "p",
+            "如果预测错了怎么办？那么一份小额的基本收入在今天依然有用：它能惠及许多符合生活保护条件却没有领取的家庭，也能惠及无法享受失业保险的自由职业者和年轻人。如果预测是对的，等到大规模失业时再去建立就太晚了；就连2020年的一次性给付也花了好几个月。"
+          ],
+          [
+            "p",
+            "人们会不会不再工作？证据表明影响不大。在OpenResearch的研究中，连续三年每月领取1,000美元的受助者，在调查中每周工作时间比对照组少约1.3小时；论文最新版本给出的数字是一到两小时。[19] 在芬兰2017–2018年的实验中，失业的受助者在第二年比对照组多工作了约6天，而且自我感觉更好。[20] 从1970年代的实验到美国101个试点，共十项研究显示，工作减少得很少，或者根本没有减少（{综述|/essays/does-cash-make-people-stop-working/}）。而在Lin描绘的世界里，担忧恰恰相反：不是人们会停止工作，而是根本没有工作可停。"
+          ],
+          [
+            "p",
+            "放慢AI发展和基本收入并不对立。Lin说应当放慢速度，也许是对的。而给每个人托底，在任何速度下都有用。"
+          ],
+          [
+            "h",
+            "我们的主张：从小做起，从现在做起"
+          ],
+          [
+            "p",
+            "现在就开始向每个人每月发放1万日元的基本收入。每年需要14.7万亿日元；如果用它取代已经为大多数儿童每月发放1万日元的儿童补贴，则约为12.6万亿日元。[13] 金额虽小，关键在于管道：一笔给付，发给所有人，每月一次，通过事先绑定的账户发放。"
+          ],
+          [
+            "p",
+            "与此同时，设立一个公共AI基金，通过持股、对大规模算力征税或分享AI利润等方式，在AI创造的财富中持有一份股权，并像阿拉斯加那样，在基础给付之上再发放分红。随着AI在收入中所占份额的增长，给付也随之增加。医疗救助以及残障和护理方面的支持应当保留，因为现金无法取代它们。"
+          ],
+          [
+            "p",
+            "如果Lin错了，日本将得到一个温和的托底，惠及现有福利漏掉的人。如果他是对的，这套制度会在工作消失之前就已经存在，而不是之后。无论哪种情况，建立它的时机都是现在，趁它还便宜。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "19 नवंबर 2026 को जापान में एक सुर्ख़ी तेज़ी से फैली: “लगभग पूरी मानवता हमेशा के लिए बेरोज़गार हो जाएगी”। यह Anthropic में काम करने वाले ताओ लिन के एक इंटरव्यू के बारे में थी। यह लेख एक राय है। हमें लगता है कि वे अनजाने में ही बता देते हैं कि आज का कल्याण तंत्र क्यों नहीं टिकेगा, और क्यों बेसिक इनकम ज़रूरत पड़ने से पहले बना लेनी चाहिए, बाद में नहीं। आँकड़े स्रोतों से हैं; निष्कर्ष हमारा है।"
+          ],
+          [
+            "h",
+            "क्या कहा गया, और क्या नहीं"
+          ],
+          [
+            "p",
+            "यह इंटरव्यू 15 नवंबर (जापान में 16 नवंबर) को YouTube पर Palisade Research की शृंखला “From Inside AI” में प्रकाशित हुआ; ASCII ने 19 नवंबर को इसे जापानी में रिपोर्ट किया।[1][2] लिन लगभग डेढ़ साल से Anthropic में काम कर रहे हैं, पहले अलाइनमेंट रिसर्च पर और अब Safeguards पर, जो हानिकारक अनुरोधों की जाँच करने वाली टीम है। यह अनुमान उनका अपना है, Anthropic का नहीं; शृंखला ख़ुद कहती है कि उसके इंटरव्यू AI कंपनियों के भीतर के हर नज़रिए का प्रतिनिधित्व नहीं करते, और लिन ने जोड़ा कि उनका यह विचार AI सुरक्षा समुदाय में आम है।[1][3]"
+          ],
+          [
+            "p",
+            "इंटरव्यू की कवरेज में उद्धृत शब्दों के अनुसार, उन्होंने कहा: “मुझे लगता है कि इसकी बहुत संभावना है कि धरती के लगभग सभी इंसान हमेशा के लिए रोज़गार के अयोग्य हो जाएँगे और अपने गुज़ारे के लिए पूरी तरह सरकारी कल्याण पर निर्भर रहेंगे।” उन्हें लगभग 1.3 साल में ऐसे AI की उम्मीद है जो “लगभग हर क्षेत्र में सबसे अच्छे विशेषज्ञ जितना या उससे बेहतर” हो, जिसे ASCII ने लगभग 2027 के अंत के आसपास बताया। लेकिन वे नौकरियाँ वास्तव में जाने से पहले एक बड़ा अंतराल देखते हैं, क्योंकि शारीरिक काम की जगह लेने के लिए अरबों रोबोट चाहिए होंगे; पहले लोग दूसरे पेशों में जाएँगे।[2][3] पूछे जाने पर कि क्या यह 15 महीनों के भीतर होगा, उन्होंने कहा नहीं, और कोई तारीख़ नहीं दी।"
+          ],
+          [
+            "p",
+            "उनका प्रस्ताव बेसिक इनकम नहीं है। वे कहते हैं कि AI कंपनियों को अपनी रफ़्तार घटाकर “मौजूदा दर के लगभग एक चौथाई” पर ले आनी चाहिए, और कवरेज के अनुसार उन्होंने लोगों से नियमन के लिए दबाव डालने का आग्रह किया। हमें मिली कवरेज में वे बेसिक इनकम का ज़िक्र तक नहीं करते; हम पूरा ट्रांसक्रिप्ट जाँच नहीं पाए।[2][3]"
+          ],
+          [
+            "p",
+            "वे अकेले नहीं हैं। Anthropic के मुख्य कार्यकारी डारियो अमोदेई ने मई 2025 में चेतावनी दी थी कि AI एंट्री-लेवल की सफ़ेदपोश नौकरियों में से आधी ख़त्म कर सकता है और एक से पाँच साल के भीतर अमेरिका में बेरोज़गारी को 10–20% तक पहुँचा सकता है।[4] 16 नवंबर 2026 को अर्थशास्त्री नूरियल रूबिनी ने Bloomberg से कहा कि 2050 तक अमेरिका में बेरोज़गारी 80% तक पहुँच सकती है, और उसके बाद “संपन्न लोगों से वंचितों की ओर कुछ पुनर्वितरण” होगा।[5] IMF ने 2024 में अनुमान लगाया कि दुनिया भर में लगभग 40% नौकरियाँ, और उन्नत अर्थव्यवस्थाओं में 60%, AI के दायरे में हैं।[6]"
+          ],
+          [
+            "p",
+            "ये अनुमान हैं, तथ्य नहीं। अमेरिका में जनवरी से अक्टूबर 2026 के बीच नियोक्ताओं ने 121,401 घोषित छँटनियों के लिए AI को कारण बताया, जो सभी घोषित छँटनियों का लगभग 20% है, लेकिन कुल रोज़गार में AI का असर अभी दिखाई नहीं देता ({हमने आँकड़े देखे|/essays/generative-ai-jobs-basic-income/})।[7] जून 2026 में Anthropic Economic Index के एक सर्वे में 10% कामगारों ने अपनी नौकरी जाने को संभावित या बहुत संभावित बताया।[8] कोई नहीं जानता कि लिन सही हैं या नहीं। हमारा तर्क इस बारे में है कि अगर वे सही हैं तो क्या होगा, और यह कि अगर वे ग़लत हैं तो जल्दी क़दम उठाने की क़ीमत कम क्यों है।"
+          ],
+          [
+            "h",
+            "कुछ ही लोगों के लिए बना कल्याण तंत्र"
+          ],
+          [
+            "p",
+            "लिन की दुनिया का अंत लोगों के “सरकारी कल्याण” पर जीने से होता है। जापान में आख़िरी सुरक्षा जाल सार्वजनिक सहायता (सेइकात्सु होगो) है। अगस्त 2026 में इससे 1,641,451 परिवारों, यानी 1,965,132 लोगों, या आबादी के 1.60% को सहारा मिला; आधे से ज़्यादा परिवार बुज़ुर्गों के थे।[9] यह एक छोटे से अल्पसंख्यक वर्ग के लिए बना है, और इस आकार पर भी यह उन ज़्यादातर लोगों तक नहीं पहुँचता जिनके लिए यह बना है।"
+          ],
+          [
+            "p",
+            "लाभ लेने की दर पूरी कहानी कह देती है। 2018 में स्वास्थ्य, श्रम और कल्याण मंत्रालय ने अनुमान लगाया कि सार्वजनिक सहायता के मानक से कम आय वाले परिवारों में से 2016 में केवल 22.9% को यह मिली; केवल उन परिवारों को गिनें जिनके पास लगभग कोई बचत भी नहीं थी, तो 43.7%।[10] जापान फ़ेडरेशन ऑफ़ बार एसोसिएशंस इसे लगभग 20% बताता है।[11] दूसरे शब्दों में, पात्र होने लायक़ ग़रीब ज़्यादातर परिवारों को यह नहीं मिलती।"
+          ],
+          [
+            "p",
+            "कुछ कारण व्यवस्था में ही बने हुए हैं। आवेदकों को दिखाना होता है कि वे अपनी बचत और संपत्ति ख़र्च कर चुके हैं। रिश्तेदारों से पहले पूछा जा सकता है कि क्या वे उनका भरण-पोषण करेंगे, जिसे बहुत से लोग इतना शर्मनाक मानते हैं कि आवेदन ही नहीं करते। और हर मामला एक केसवर्कर संभालता है: सामाजिक कल्याण अधिनियम शहरों में हर 80 लाभार्थी परिवारों पर और कस्बों व गाँवों में हर 65 पर एक केसवर्कर का मानक तय करता है।[12] अभी भी उनकी संख्या कम है: सबसे हालिया स्टाफ़िंग सर्वे (2016) में 20,115 के मानक के मुक़ाबले 18,183 केसवर्कर थे, और लगभग एक चौथाई के पास एक साल से कम का अनुभव था।[12]"
+          ],
+          [
+            "p",
+            "अब इसे बड़े पैमाने पर सोचिए। शहरी मानक पर सार्वजनिक सहायता पाने वाले हर दस लाख परिवारों के लिए 12,500 केसवर्कर चाहिए। अगर जापान की कामकाजी उम्र की ज़्यादातर आबादी की कमाई चली जाए, तो करोड़ों परिवारों को आवेदन करना होगा, साबित करना होगा कि उनके पास कुछ नहीं है, और इंतज़ार करना होगा। जो व्यवस्था पहले ही ज़्यादातर ग़रीबों को लौटा देती है, वह लगभग सबकी कतार बन जाएगी। और एक छोटी कार्य-छूट के बाद कमाई लाभ में से काट ली जाती है, इसलिए पार्ट-टाइम नौकरी या बचे हुए काम के कुछ दिन करने से भी लोगों की हालत ज़्यादा नहीं सुधरेगी।[12] कम नौकरियों वाली दुनिया में यह बिल्कुल ग़लत संकेत है।"
+          ],
+          [
+            "h",
+            "ऐसा भुगतान जो बड़े पैमाने पर चल सके"
+          ],
+          [
+            "p",
+            "बेसिक इनकम एक ही सवाल पूछती है, क्या आप यहाँ रहते हैं, और सरकार को इसका जवाब पहले से पता है। जापान ने 2020 में यह दिखाया, जब विशेष नकद भुगतान के तहत निवासी रजिस्टर में दर्ज लगभग हर व्यक्ति को ¥100,000 दिए गए, कुछ ही महीनों में लगभग ¥12.7 ट्रिलियन, बिना किसी आय-जाँच के ({लोगों ने उसका क्या किया|/essays/japan-special-cash-payment/})। जहाँ नगरपालिकाओं को बैंक विवरण हाथ से जुटाने पड़े, वहाँ यह धीमा रहा; उस हिस्से को एक बार, पहले से ठीक किया जा सकता है।"
+          ],
+          [
+            "p",
+            "इसमें कोई अचानक गिरावट नहीं है। ज़्यादा कमाने से भुगतान कभी नहीं छिनता; ऊँची आय पर कर, संपन्न लोगों को मिली राशि वापस ले लेते हैं। किसी केसवर्कर को यह तय नहीं करना पड़ता कि मदद का हक़दार कौन है, और यह ठीक उसी दुनिया में सबसे ज़्यादा मायने रखता है जिसका वर्णन लिन करते हैं, जहाँ “आप काम क्यों नहीं कर रहे?” सवाल का कोई उचित जवाब नहीं रह जाता।"
+          ],
+          [
+            "h",
+            "ईमानदार हिसाब"
+          ],
+          [
+            "p",
+            "यह सस्ता नहीं है। जापान में हर व्यक्ति को ¥70,000 प्रति माह, जो राशि हेइज़ो ताकेनाका ने सुझाई थी, उसकी लागत ¥103.2 ट्रिलियन प्रति वर्ष होगी, यानी वित्त वर्ष 2025 के कुल राष्ट्रीय कर राजस्व का 122%। ¥10,000 प्रति माह की लागत ¥14.7 ट्रिलियन होगी, यानी 17% ({पूरा हिसाब|/essays/japan-basic-income-cost/})।[13]"
+          ],
+          [
+            "p",
+            "और आज का AI मुनाफ़ा इसके आसपास भी नहीं है। AI उछाल के केंद्र की नौ कंपनियों ने अपनी पिछली चार तिमाहियों में लगभग $1.08 ट्रिलियन का शुद्ध मुनाफ़ा कमाया; धरती के हर व्यक्ति में बाँटें तो यह प्रति व्यक्ति प्रति माह ${{aip.net100PM:d2}}, यानी लगभग ¥{{aip.net100PM@jp:r10}} है ({हिसाब|/essays/ai-company-profits-per-person/})।[14] आज के AI मुनाफ़े पर कर से गुज़ारे लायक़ आय नहीं चल सकती।"
+          ],
+          [
+            "p",
+            "लेकिन अगर लिन सही हैं, तो आज का दिन ग़लत पैमाना है। AI और रोबोट जो काम करते हैं, वह मूल्य पैदा करना बंद नहीं करता; आय मज़दूरी से उन लोगों की ओर चली जाती है जिनके पास मॉडल, चिप और मशीनें हैं। तब सवाल यह नहीं है कि कोई देश बेसिक इनकम का ख़र्च उठा सकता है या नहीं, बल्कि यह है कि उसका ख़र्च चलाने वाली संपत्ति का मालिक कौन है। काम करते हुए मॉडल मौजूद हैं। अलास्का 1982 से अपने तेल कोष से हर निवासी को सालाना लाभांश देता आ रहा है; 2025 का लाभांश $1,000 था, और 2026 का भुगतान $200 की ऊर्जा राहत राशि मिलाकर $1,200।[15] नॉर्वे के तेल कोष का मूल्य प्रति निवासी लगभग NOK 3.9 मिलियन है (सितंबर 2026 के अंत में NOK 22,014 बिलियन), हालाँकि यह सीधे लोगों को नहीं, बजट में पैसा देता है।[16] शोधकर्ताओं ने एक “Windfall Clause” का प्रस्ताव रखा है, जिसके तहत AI कंपनियाँ पहले से वादा करेंगी कि बेहद ऊँची सीमा से ऊपर का मुनाफ़ा साझा करेंगी।[17] सैम ऑल्टमैन ने 2021 में एक ऐसे कोष का प्रस्ताव रखा था जो हर साल बड़ी कंपनियों के मूल्य का 2.5% ले, और 2024 में “यूनिवर्सल बेसिक कंप्यूट” का विचार रखा।[18] Anthropic ने अपने 5% शेयर एक सार्वजनिक लाभ कोष के लिए अलग रखे हैं ({हमारा लेख|/essays/public-benefit-fund/})।"
+          ],
+          [
+            "p",
+            "इनमें से कोई भी अभी बेसिक इनकम के बराबर नहीं बैठता। ये जो दिखाते हैं, वह जवाब का आकार है: AI से बनी संपत्ति में सार्वजनिक हिस्सेदारी, जो उस संपत्ति के केंद्रित होने से पहले तय हो, बाद में नहीं।"
+          ],
+          [
+            "h",
+            "दो आपत्तियाँ"
+          ],
+          [
+            "p",
+            "अगर अनुमान ग़लत निकला तो? तब भी एक छोटी बेसिक इनकम आज काम आती है: यह उन बहुत से परिवारों तक पहुँचती है जो सार्वजनिक सहायता के पात्र हैं पर उसे पाते नहीं, और उन फ़्रीलांसरों और युवाओं तक जिनका बेरोज़गारी बीमा पर कोई दावा नहीं है। अगर अनुमान सही निकला, तो बड़े पैमाने पर नौकरियाँ जाने के दौरान इसे बनाना बहुत देर होगी; 2020 में एक बार के भुगतान में भी महीनों लगे थे।"
+          ],
+          [
+            "p",
+            "क्या लोग काम करना छोड़ देंगे? सबूत कहते हैं कि ज़्यादा नहीं। OpenResearch के अध्ययन में, तीन साल तक $1,000 प्रति माह पाने वालों ने सर्वे में नियंत्रण समूह की तुलना में हफ़्ते में लगभग 1.3 घंटे कम काम किया; शोधपत्र के नवीनतम संस्करण में यह एक से दो घंटे है।[19] फ़िनलैंड के 2017–2018 के प्रयोग में, बेरोज़गार लाभार्थियों ने दूसरे साल में नियंत्रण समूह से लगभग 6 दिन ज़्यादा काम किया, और बेहतर महसूस किया।[20] 1970 के दशक से लेकर अमेरिका के 101 पायलटों तक, दस अध्ययन छोटी कटौती या कोई कटौती नहीं दिखाते ({सारांश|/essays/does-cash-make-people-stop-working/})। और लिन जिस दुनिया का वर्णन करते हैं, उसमें चिंता उलटी है: यह नहीं कि लोग काम करना छोड़ देंगे, बल्कि यह कि छोड़ने के लिए काम ही नहीं बचेगा।"
+          ],
+          [
+            "p",
+            "AI को धीमा करना और बेसिक इनकम एक-दूसरे के विरोधी नहीं हैं। हो सकता है लिन सही हों कि रफ़्तार घटनी चाहिए। सबके नीचे एक न्यूनतम आधार किसी भी रफ़्तार पर उपयोगी है।"
+          ],
+          [
+            "h",
+            "हमारा प्रस्ताव: अभी, छोटे से शुरू करें"
+          ],
+          [
+            "p",
+            "अभी हर व्यक्ति के लिए ¥10,000 प्रति माह की बेसिक इनकम शुरू करें। इसकी लागत ¥14.7 ट्रिलियन प्रति वर्ष होगी, या अगर यह बाल भत्ते की जगह ले, जो पहले से ज़्यादातर बच्चों के लिए ¥10,000 देता है, तो लगभग ¥12.6 ट्रिलियन।[13] राशि छोटी है; असली बात पाइप है: एक भुगतान, सबको, हर महीने, पहले से जुड़े खातों के ज़रिए।"
+          ],
+          [
+            "p",
+            "इसके साथ एक सार्वजनिक AI कोष बनाएँ जो शेयरों, बड़े पैमाने के कंप्यूट पर शुल्क या AI मुनाफ़े के हिस्से के ज़रिए AI से बनी संपत्ति में हिस्सेदारी ले, और अलास्का की तरह आधार राशि के ऊपर लाभांश दे। आय में AI का हिस्सा जितना बढ़े, भुगतान भी उतना बढ़े। चिकित्सा सहायता और विकलांगता व देखभाल की मदद बनाए रखें, जिनकी जगह नकद नहीं ले सकता।"
+          ],
+          [
+            "p",
+            "अगर लिन ग़लत हैं, तो जापान को एक मामूली आधार मिलता है जो उन लोगों तक पहुँचता है जिन्हें आज का कल्याण तंत्र छोड़ देता है। अगर वे सही हैं, तो नौकरियाँ जाने से पहले व्यवस्था मौजूद होगी, बाद में नहीं। दोनों ही सूरतों में, इसे बनाने का समय वही है जब यह अभी सस्ता है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "El 19 de noviembre de 2026 un titular japonés se difundió rápidamente: «Casi toda la humanidad quedará en paro para siempre». Se refería a una entrevista con Tao Lin, que trabaja en Anthropic. Este texto es un artículo de opinión. Creemos que, sin pretenderlo, Lin describe por qué el sistema de ayudas actual no resistiría y por qué una renta básica debería construirse antes de que haga falta, no después. Las cifras tienen fuente; la conclusión es nuestra."
+          ],
+          [
+            "h",
+            "Qué se dijo y qué no"
+          ],
+          [
+            "p",
+            "La entrevista se publicó en YouTube el 15 de noviembre (16 de noviembre en Japón) dentro de la serie «From Inside AI» de Palisade Research; ASCII informó de ella en japonés el 19 de noviembre.[1][2] Lin lleva aproximadamente año y medio en Anthropic, primero en investigación de alineamiento y ahora en Safeguards, el equipo que filtra las peticiones dañinas. El pronóstico es suyo, no de Anthropic; la propia serie advierte que sus entrevistas no representan todas las perspectivas dentro de las empresas de IA, y Lin añadió que su opinión es habitual en la comunidad de seguridad de la IA.[1][3]"
+          ],
+          [
+            "p",
+            "Según las citas recogidas en la cobertura de la entrevista, dijo: «Creo que es muy probable que prácticamente todos los seres humanos de la Tierra dejen de ser empleables de forma permanente y tengan que depender estrictamente de las ayudas del Gobierno para mantenerse». Espera una IA «tan buena o mejor que el mejor experto en casi todos los campos» en aproximadamente 1,3 años, lo que ASCII situó hacia finales de 2027. Pero prevé un gran desfase antes de que los empleos desaparezcan de verdad, porque sustituir el trabajo físico requeriría miles de millones de robots; primero, la gente se pasaría a otras ocupaciones.[2][3] Cuando le preguntaron si esto ocurriría en 15 meses, dijo que no, y no dio ninguna fecha."
+          ],
+          [
+            "p",
+            "Su propuesta no es una renta básica. Dice que las empresas de IA deberían frenar, hasta «algo así como una cuarta parte de su ritmo actual», y según la cobertura instó a la gente a presionar para que haya regulación. En la cobertura que encontramos no menciona la renta básica en absoluto; no pudimos consultar una transcripción completa.[2][3]"
+          ],
+          [
+            "p",
+            "No es el único. El consejero delegado de Anthropic, Dario Amodei, advirtió en mayo de 2025 que la IA podría eliminar la mitad de todos los empleos administrativos de nivel inicial y llevar el desempleo en Estados Unidos al 10–20 % en un plazo de uno a cinco años.[4] El 16 de noviembre de 2026 el economista Nouriel Roubini dijo a Bloomberg que el desempleo en Estados Unidos podría alcanzar el 80 % en 2050 y que vendría a continuación «cierta redistribución de los que tienen hacia los que no tienen».[5] El FMI estimó en 2024 que alrededor del 40 % de los empleos del mundo, y el 60 % en las economías avanzadas, están expuestos a la IA.[6]"
+          ],
+          [
+            "p",
+            "Son pronósticos, no hechos. En Estados Unidos, las empresas atribuyeron a la IA 121.401 recortes de empleo anunciados entre enero y octubre de 2026, alrededor del 20 % de todos los recortes anunciados, pero la IA aún no se nota en el empleo total ({miramos los datos|/essays/generative-ai-jobs-basic-income/}).[7] En una encuesta para el Anthropic Economic Index de junio de 2026, el 10 % de los trabajadores consideró probable o muy probable perder su propio empleo.[8] Nadie sabe si Lin tiene razón. Nuestro argumento trata de lo que ocurre si la tiene, y de por qué actuar pronto cuesta poco si no la tiene."
+          ],
+          [
+            "h",
+            "Unas ayudas pensadas para unos pocos"
+          ],
+          [
+            "p",
+            "El mundo de Lin termina con la gente viviendo de las «ayudas del Gobierno». En Japón, la última red de seguridad es la asistencia pública (seikatsu hogo). En agosto de 2026 mantenía a 1.641.451 hogares, 1.965.132 personas, es decir, el 1,60 % de la población; más de la mitad de esos hogares eran de personas mayores.[9] Está diseñada para una pequeña minoría e, incluso con ese tamaño, no llega a la mayoría de las personas a las que va dirigida."
+          ],
+          [
+            "p",
+            "La tasa de acceso lo dice todo. En 2018 el Ministerio de Salud, Trabajo y Bienestar estimó que, entre los hogares con ingresos por debajo del umbral de la asistencia pública, solo el 22,9 % la recibía en 2016; contando solo los hogares que además casi no tenían ahorros, el 43,7 %.[10] La Federación de Colegios de Abogados de Japón la sitúa en torno al 20 %.[11] Dicho al revés: la mayoría de los hogares lo bastante pobres para tener derecho no la reciben."
+          ],
+          [
+            "p",
+            "Algunas de las razones están en el propio diseño. Quien la solicita debe demostrar que ha agotado sus ahorros y bienes. Se puede preguntar primero a los familiares si están dispuestos a mantenerlo, algo que a muchas personas les resulta tan humillante que prefieren no pedirla. Y cada caso lo lleva un trabajador social: la Ley de Bienestar Social fija como estándar un trabajador social por cada 80 hogares beneficiarios en las ciudades y por cada 65 en los pueblos y aldeas.[12] Ya hoy no hay suficientes: en la última encuesta de personal (2016), había 18.183 trabajadores sociales frente a un estándar de 20.115, y casi una cuarta parte tenía menos de un año de experiencia.[12]"
+          ],
+          [
+            "p",
+            "Ahora, a gran escala. Con el estándar urbano, cada millón de hogares en asistencia pública necesita 12.500 trabajadores sociales. Si la mayor parte de la población japonesa en edad de trabajar perdiera sus ingresos, decenas de millones de hogares tendrían que solicitarla, demostrar que no tienen nada y esperar. Un sistema que ya deja fuera a la mayoría de los pobres se convertiría en una cola de casi todo el mundo. Además, lo que se gana se descuenta de la prestación tras una pequeña deducción por trabajo, así que aceptar un empleo a tiempo parcial o unos pocos días del trabajo que quedara apenas mejoraría la situación de nadie.[12] En un mundo con menos empleos, es justo la señal equivocada."
+          ],
+          [
+            "h",
+            "Un pago que se puede ampliar"
+          ],
+          [
+            "p",
+            "Una renta básica hace una sola pregunta, si vives aquí, y el Estado ya conoce la respuesta. Japón lo demostró en 2020, cuando el Pago Especial en Efectivo dio 100.000 yenes a casi todas las personas inscritas en el padrón, unos 12,7 billones de yenes en pocos meses, sin comprobación de recursos ({qué hizo la gente con él|/essays/japan-special-cash-payment/}). Fue lento allí donde los municipios tuvieron que recoger los datos bancarios a mano; esa parte se puede arreglar una vez, con antelación."
+          ],
+          [
+            "p",
+            "No hay precipicio. Ganar más nunca hace perder el pago; los impuestos sobre las rentas más altas recuperan lo que reciben quienes están mejor. Ningún trabajador social tiene que juzgar quién merece ayuda, algo que importa sobre todo justo en el mundo que describe Lin, donde la pregunta «¿por qué no trabajas?» deja de tener una respuesta justa."
+          ],
+          [
+            "h",
+            "Las cuentas, con honestidad"
+          ],
+          [
+            "p",
+            "No es barata. 70.000 yenes al mes para todos en Japón, la cantidad que sugirió Heizo Takenaka, costaría 103,2 billones de yenes al año, el 122 % de toda la recaudación tributaria nacional del ejercicio fiscal 2025. 10.000 yenes al mes costarían 14,7 billones de yenes, el 17 % ({el cálculo completo|/essays/japan-basic-income-cost/}).[13]"
+          ],
+          [
+            "p",
+            "Y los beneficios actuales de la IA no se acercan ni de lejos. Las nueve empresas en el centro del auge de la IA obtuvieron unos 1,08 billones de dólares de beneficio neto en sus últimos cuatro trimestres; repartidos entre todas las personas de la Tierra, son {{aip.net100PM:d2}} dólares al mes por cabeza, unos {{aip.net100PM@jp:r10}} yenes ({el cálculo|/essays/ai-company-profits-per-person/}).[14] Un impuesto sobre los beneficios actuales de la IA no pagaría unos ingresos con los que vivir."
+          ],
+          [
+            "p",
+            "Pero si Lin tiene razón, el presente es la vara de medir equivocada. El trabajo que hacen la IA y los robots no deja de producir valor; los ingresos pasan de los salarios a quienes sean dueños de los modelos, los chips y las máquinas. La pregunta entonces no es si un país puede permitirse una renta básica, sino quién es dueño de la riqueza que la paga. Hay modelos que funcionan. Alaska paga desde 1982 a cada residente un dividendo anual de su fondo petrolero; el dividendo de 2025 fue de 1.000 dólares, y el pago de 2026 de 1.200 dólares, incluido un pago de 200 dólares de ayuda energética.[15] El fondo petrolero de Noruega vale unos 3,9 millones de NOK por habitante (22.014 mil millones de NOK a finales de septiembre de 2026), aunque aporta al presupuesto, no directamente a las personas.[16] Algunos investigadores han propuesto una «cláusula de ganancias extraordinarias» (Windfall Clause), por la que las empresas de IA se comprometerían de antemano a repartir los beneficios que superen un umbral extremadamente alto.[17] Sam Altman propuso en 2021 un fondo que tomaría cada año el 2,5 % del valor de las grandes empresas, y en 2024 lanzó la idea de un «cómputo básico universal».[18] Anthropic ha reservado el 5 % de sus acciones para un fondo de beneficio público ({nuestro ensayo|/essays/public-benefit-fund/})."
+          ],
+          [
+            "p",
+            "Nada de esto equivale todavía a una renta básica. Lo que muestran es la forma de la respuesta: una participación pública en la riqueza creada por la IA, decidida antes de que esa riqueza se concentre, no después."
+          ],
+          [
+            "h",
+            "Dos objeciones"
+          ],
+          [
+            "p",
+            "¿Y si el pronóstico es erróneo? Entonces una renta básica pequeña sigue siendo útil hoy: llega a los muchos hogares que tienen derecho a la asistencia pública pero no la reciben, y a los autónomos y jóvenes que no tienen derecho al seguro de desempleo. Si el pronóstico es correcto, construirla en plena pérdida masiva de empleos sería demasiado tarde; incluso un pago único en 2020 tardó meses."
+          ],
+          [
+            "p",
+            "¿Dejará la gente de trabajar? Las pruebas dicen que no mucho. En el estudio de OpenResearch, 1.000 dólares al mes durante tres años llevaron a los beneficiarios a trabajar alrededor de 1,3 horas semanales menos que el grupo de control en las encuestas; la versión más reciente del artículo lo sitúa entre una y dos horas.[19] En el experimento de Finlandia de 2017–2018, los beneficiarios desempleados trabajaron unos 6 días más que el grupo de control en el segundo año, y se sentían mejor.[20] Diez estudios, desde los años setenta hasta 101 programas piloto en Estados Unidos, muestran reducciones pequeñas o ninguna ({el panorama|/essays/does-cash-make-people-stop-working/}). Y en el mundo que describe Lin, la preocupación es la contraria: no que la gente deje de trabajar, sino que no quede trabajo que dejar."
+          ],
+          [
+            "p",
+            "Frenar la IA y una renta básica no son opuestos. Puede que Lin tenga razón en que hay que bajar el ritmo. Un suelo para todos es útil a cualquier ritmo."
+          ],
+          [
+            "h",
+            "Lo que proponemos: empezar poco a poco, ya"
+          ],
+          [
+            "p",
+            "Poner en marcha ya una renta básica de 10.000 yenes al mes para todos. Costaría 14,7 billones de yenes al año, o unos 12,6 billones de yenes si sustituyera a la prestación por hijos, que ya paga 10.000 yenes por la mayoría de los niños.[13] La cantidad es pequeña; lo importante es el conducto: un solo pago, a todos, cada mes, a través de cuentas vinculadas de antemano."
+          ],
+          [
+            "p",
+            "Junto a ella, crear un fondo público de IA que tome una participación en la riqueza que genera la IA, mediante acciones, un gravamen sobre la computación a gran escala o una parte de los beneficios de la IA, y que pague un dividendo además de la base, al estilo de Alaska. A medida que crezca la parte de los ingresos que corresponde a la IA, crecerá también el pago. Mantener la asistencia médica y el apoyo a la discapacidad y a los cuidados, que el dinero en efectivo no puede sustituir."
+          ],
+          [
+            "p",
+            "Si Lin se equivoca, Japón obtiene un suelo modesto que llega a las personas a las que no llegan las ayudas actuales. Si tiene razón, el sistema existirá antes de que desaparezcan los empleos, no después. En cualquier caso, el momento de construirlo es mientras todavía sale barato."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Am 19. November 2026 verbreitete sich in Japan rasch eine Schlagzeile: „Fast die gesamte Menschheit wird dauerhaft arbeitslos“. Es ging um ein Interview mit Tao Lin, der bei Anthropic arbeitet. Dieser Text ist ein Meinungsbeitrag. Wir meinen, dass er, ohne es zu wollen, beschreibt, warum der heutige Sozialstaat nicht standhalten würde und warum ein Grundeinkommen aufgebaut werden sollte, bevor es gebraucht wird, und nicht erst danach. Die Zahlen sind belegt; die Schlussfolgerung ist unsere."
+          ],
+          [
+            "h",
+            "Was gesagt wurde und was nicht"
+          ],
+          [
+            "p",
+            "Das Interview erschien am 15. November (in Japan am 16. November) auf YouTube in der Reihe „From Inside AI“ von Palisade Research; ASCII berichtete am 19. November auf Japanisch darüber.[1][2] Lin arbeitet seit etwa anderthalb Jahren bei Anthropic, zuerst in der Alignment-Forschung, heute bei Safeguards, dem Team, das schädliche Anfragen herausfiltert. Die Prognose ist seine eigene, nicht die von Anthropic; die Reihe selbst betont, dass ihre Interviews nicht jede Sichtweise innerhalb der KI-Unternehmen abbilden, und Lin fügte hinzu, dass seine Ansicht in der KI-Sicherheits-Community verbreitet sei.[1][3]"
+          ],
+          [
+            "p",
+            "Laut Berichten über das Interview sagte er: „Ich halte es für sehr wahrscheinlich, dass so gut wie alle Menschen auf der Erde dauerhaft nicht mehr vermittelbar sein werden und zum Lebensunterhalt ganz auf staatliche Sozialleistungen angewiesen sein werden.“ Er erwartet eine KI, die „in fast jedem Fach so gut wie oder besser als die besten Experten“ ist, in etwa 1,3 Jahren, was ASCII auf etwa Ende 2027 datierte. Doch er sieht eine große Lücke, bevor Arbeitsplätze tatsächlich wegfallen, weil der Ersatz körperlicher Arbeit Milliarden von Robotern erfordern würde; zunächst würden Menschen in andere Berufe wechseln.[2][3] Auf die Frage, ob das innerhalb von 15 Monaten geschehen werde, sagte er Nein, und er nannte kein Datum."
+          ],
+          [
+            "p",
+            "Sein Vorschlag ist kein Grundeinkommen. Er sagt, die KI-Unternehmen sollten langsamer werden, auf „etwa ein Viertel des heutigen Tempos“, und laut Berichten rief er dazu auf, auf Regulierung zu drängen. In den Berichten, die wir gefunden haben, erwähnt er ein Grundeinkommen überhaupt nicht; ein vollständiges Transkript konnten wir nicht prüfen.[2][3]"
+          ],
+          [
+            "p",
+            "Er ist nicht allein. Anthropic-Chef Dario Amodei warnte im Mai 2025, KI könne die Hälfte aller Einstiegsjobs im Büro vernichten und die Arbeitslosigkeit in den USA innerhalb von ein bis fünf Jahren auf 10–20 % treiben.[4] Am 16. November 2026 sagte der Ökonom Nouriel Roubini gegenüber Bloomberg, die US-Arbeitslosigkeit könne bis 2050 80 % erreichen, und es werde „eine gewisse Umverteilung von den Besitzenden zu den Besitzlosen“ folgen.[5] Der IWF schätzte 2024, dass weltweit etwa 40 % der Arbeitsplätze und in fortgeschrittenen Volkswirtschaften 60 % der KI ausgesetzt sind.[6]"
+          ],
+          [
+            "p",
+            "Das sind Prognosen, keine Fakten. In den USA nannten Arbeitgeber von Januar bis Oktober 2026 KI als Grund für 121.401 angekündigte Stellenstreichungen, etwa 20 % aller angekündigten Streichungen, doch in der Gesamtbeschäftigung ist KI noch nicht sichtbar ({wir haben uns die Daten angesehen|/essays/generative-ai-jobs-basic-income/}).[7] In einer Umfrage für den Anthropic Economic Index im Juni 2026 hielten 10 % der Beschäftigten den Verlust ihres eigenen Arbeitsplatzes für wahrscheinlich oder sehr wahrscheinlich.[8] Niemand weiß, ob Lin recht hat. Unser Argument handelt davon, was passiert, wenn er recht hat, und davon, warum frühes Handeln wenig kostet, wenn nicht."
+          ],
+          [
+            "h",
+            "Ein Sozialstaat für wenige"
+          ],
+          [
+            "p",
+            "Lins Welt endet damit, dass Menschen von „staatlichen Sozialleistungen“ leben. In Japan ist das letzte Netz die öffentliche Sozialhilfe (seikatsu hogo). Im August 2026 unterstützte sie 1.641.451 Haushalte, 1.965.132 Menschen oder 1,60 % der Bevölkerung; mehr als die Hälfte der Haushalte waren ältere Menschen.[9] Sie ist für eine kleine Minderheit gedacht, und selbst in dieser Größe verfehlt sie die meisten, für die sie bestimmt ist."
+          ],
+          [
+            "p",
+            "Die Inanspruchnahmequote sagt alles. 2018 schätzte das Ministerium für Gesundheit, Arbeit und Soziales, dass von den Haushalten mit einem Einkommen unter dem Sozialhilfesatz 2016 nur 22,9 % Sozialhilfe bezogen; zählt man nur Haushalte, die zudem fast keine Ersparnisse hatten, waren es 43,7 %.[10] Der japanische Anwaltsverband beziffert die Quote auf etwa 20 %.[11] Anders gesagt: Die meisten Haushalte, die arm genug für einen Anspruch sind, bekommen nichts."
+          ],
+          [
+            "p",
+            "Manche Gründe sind im System angelegt. Antragsteller müssen nachweisen, dass sie Ersparnisse und Vermögen aufgebraucht haben. Angehörige können zuerst gefragt werden, ob sie Unterhalt leisten, was viele als so beschämend empfinden, dass sie lieber fernbleiben. Und jeder Fall wird von einer Fallbearbeiterin oder einem Fallbearbeiter betreut: Das Sozialwohlfahrtsgesetz setzt als Richtwert eine Fachkraft je 80 unterstützte Haushalte in Städten und je 65 in Kleinstädten und Dörfern.[12] Schon heute gibt es zu wenige: In der jüngsten Personalerhebung (2016) standen 18.183 Fallbearbeiter einem Richtwert von 20.115 gegenüber, und fast ein Viertel hatte weniger als ein Jahr Erfahrung.[12]"
+          ],
+          [
+            "p",
+            "Nun hochgerechnet. Nach dem städtischen Richtwert braucht jede Million Haushalte in der Sozialhilfe 12.500 Fallbearbeiter. Verlöre der Großteil der japanischen Bevölkerung im Erwerbsalter sein Einkommen, müssten Dutzende Millionen Haushalte einen Antrag stellen, nachweisen, dass sie nichts haben, und warten. Ein System, das schon heute die meisten Armen abweist, würde zu einer Warteschlange fast aller. Und Einkünfte werden nach einem kleinen Freibetrag von der Leistung abgezogen, sodass ein Minijob oder ein paar Tage der verbliebenen Arbeit die Menschen kaum besserstellen würden.[12] In einer Welt mit weniger Arbeit ist das genau das falsche Signal."
+          ],
+          [
+            "h",
+            "Eine Zahlung, die mitwächst"
+          ],
+          [
+            "p",
+            "Ein Grundeinkommen stellt eine einzige Frage, nämlich ob man hier lebt, und die Antwort kennt der Staat bereits. Japan hat das 2020 gezeigt, als die Sonderzahlung fast allen im Einwohnerregister 100.000 Yen gab, insgesamt etwa 12,7 Billionen Yen in wenigen Monaten, ohne Bedürftigkeitsprüfung ({was die Menschen damit machten|/essays/japan-special-cash-payment/}). Langsam war sie dort, wo Kommunen Bankdaten von Hand erfassen mussten; das lässt sich einmal, im Voraus, beheben."
+          ],
+          [
+            "p",
+            "Es gibt keine Abbruchkante. Mehr zu verdienen nimmt die Zahlung nie weg; Steuern auf höhere Einkommen holen zurück, was Bessergestellte erhalten. Keine Fallbearbeiterin muss entscheiden, wer Hilfe verdient, und das zählt gerade in der Welt, die Lin beschreibt, am meisten, in der die Frage „Warum arbeiten Sie nicht?“ keine faire Antwort mehr hat."
+          ],
+          [
+            "h",
+            "Die ehrliche Rechnung"
+          ],
+          [
+            "p",
+            "Billig ist es nicht. 70.000 Yen im Monat für alle in Japan, der Betrag, den Heizo Takenaka ins Spiel brachte, würden 103,2 Billionen Yen im Jahr kosten, 122 % aller nationalen Steuereinnahmen im Haushaltsjahr 2025. 10.000 Yen im Monat würden 14,7 Billionen Yen kosten, 17 % ({die vollständige Rechnung|/essays/japan-basic-income-cost/}).[13]"
+          ],
+          [
+            "p",
+            "Und die heutigen KI-Gewinne reichen bei Weitem nicht heran. Die neun Unternehmen im Zentrum des KI-Booms erzielten in ihren letzten vier Quartalen zusammen etwa 1,08 Billionen Dollar Nettogewinn; auf alle Menschen der Erde verteilt sind das {{aip.net100PM:d2}} Dollar im Monat pro Kopf, etwa {{aip.net100PM@jp:r10}} Yen ({die Rechnung|/essays/ai-company-profits-per-person/}).[14] Eine Steuer auf die heutigen KI-Gewinne würde kein Einkommen zum Leben finanzieren."
+          ],
+          [
+            "p",
+            "Doch wenn Lin recht hat, ist das Heute der falsche Maßstab. Arbeit, die KI und Roboter erledigen, hört nicht auf, Wert zu schaffen; das Einkommen wandert von den Löhnen zu denen, denen die Modelle, die Chips und die Maschinen gehören. Die Frage ist dann nicht, ob sich ein Land ein Grundeinkommen leisten kann, sondern wem der Wohlstand gehört, der es bezahlt. Es gibt funktionierende Modelle. Alaska zahlt seit 1982 allen Einwohnern jährlich eine Dividende aus seinem Ölfonds; die Dividende für 2025 betrug 1.000 Dollar, die Zahlung 2026 1.200 Dollar einschließlich einer Energiehilfe von 200 Dollar.[15] Norwegens Ölfonds ist pro Einwohner etwa 3,9 Millionen NOK wert (22.014 Milliarden NOK Ende September 2026), zahlt aber in den Staatshaushalt und nicht direkt an die Menschen.[16] Forscher haben eine „Windfall Clause“ vorgeschlagen, mit der sich KI-Firmen im Voraus verpflichten würden, Gewinne oberhalb einer extrem hohen Schwelle zu teilen.[17] Sam Altman schlug 2021 einen Fonds vor, der jedes Jahr 2,5 % des Werts großer Unternehmen einzieht, und brachte 2024 ein „universelles Grundrechenkontingent“ (universal basic compute) ins Gespräch.[18] Anthropic hat 5 % seiner Anteile für einen gemeinnützigen Fonds zurückgelegt ({unser Beitrag|/essays/public-benefit-fund/})."
+          ],
+          [
+            "p",
+            "Nichts davon ergibt bisher ein Grundeinkommen. Was es zeigt, ist die Form der Antwort: eine öffentliche Beteiligung am durch KI geschaffenen Wohlstand, beschlossen, bevor dieser Wohlstand sich konzentriert, und nicht danach."
+          ],
+          [
+            "h",
+            "Zwei Einwände"
+          ],
+          [
+            "p",
+            "Was, wenn die Prognose falsch ist? Dann leistet ein kleines Grundeinkommen schon heute etwas: Es erreicht die vielen Haushalte, die Anspruch auf Sozialhilfe haben, sie aber nicht beziehen, sowie Freiberufler und junge Menschen ohne Anspruch auf Arbeitslosenversicherung. Ist die Prognose richtig, wäre es zu spät, es mitten im massenhaften Jobverlust aufzubauen; selbst eine einmalige Zahlung dauerte 2020 Monate."
+          ],
+          [
+            "p",
+            "Hören die Menschen dann auf zu arbeiten? Die Belege sagen: kaum. In der Studie von OpenResearch führten 1.000 Dollar im Monat über drei Jahre dazu, dass die Empfänger laut den Befragungen etwa 1,3 Stunden pro Woche weniger arbeiteten als die Kontrollgruppe; die neueste Fassung der Studie spricht von ein bis zwei Stunden.[19] Im finnischen Experiment 2017–2018 arbeiteten arbeitslose Empfänger im zweiten Jahr etwa 6 Tage mehr als die Kontrollgruppe und fühlten sich besser.[20] Zehn Studien, von den 1970er-Jahren bis zu 101 Pilotprojekten in den USA, zeigen geringe oder gar keine Rückgänge ({der Überblick|/essays/does-cash-make-people-stop-working/}). Und in der Welt, die Lin beschreibt, ist die Sorge umgekehrt: nicht, dass Menschen aufhören zu arbeiten, sondern dass es keine Arbeit mehr gibt, mit der man aufhören könnte."
+          ],
+          [
+            "p",
+            "KI zu bremsen und ein Grundeinkommen sind keine Gegensätze. Lin mag recht haben, dass das Tempo sinken sollte. Ein Boden unter allen ist bei jedem Tempo nützlich."
+          ],
+          [
+            "h",
+            "Unser Vorschlag: klein anfangen, jetzt"
+          ],
+          [
+            "p",
+            "Jetzt ein Grundeinkommen von 10.000 Yen im Monat für alle einführen. Es würde 14,7 Billionen Yen im Jahr kosten, oder etwa 12,6 Billionen Yen, wenn es das Kindergeld ersetzt, das für die meisten Kinder bereits 10.000 Yen zahlt.[13] Der Betrag ist klein; es geht um die Leitung: eine Zahlung, an alle, jeden Monat, über im Voraus verknüpfte Konten."
+          ],
+          [
+            "p",
+            "Daneben einen öffentlichen KI-Fonds einrichten, der sich am durch KI geschaffenen Wohlstand beteiligt, über Aktien, eine Abgabe auf Rechenleistung im großen Maßstab oder einen Anteil an KI-Gewinnen, und nach dem Vorbild Alaskas eine Dividende zusätzlich zum Grundbetrag auszahlt. Wächst der Anteil der KI am Einkommen, wächst auch die Zahlung. Medizinische Hilfe sowie Unterstützung bei Behinderung und Pflege bleiben, denn Bargeld kann sie nicht ersetzen."
+          ],
+          [
+            "p",
+            "Liegt Lin falsch, bekommt Japan einen bescheidenen Boden, der Menschen erreicht, die der heutige Sozialstaat verfehlt. Hat er recht, existiert das System, bevor die Jobs verschwinden, und nicht erst danach. So oder so ist jetzt die Zeit, es aufzubauen, solange es noch günstig ist."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في 19 نوفمبر 2026 انتشر عنوان ياباني بسرعة: «سيصبح البشر جميعًا تقريبًا عاطلين عن العمل إلى الأبد». كان يتناول مقابلة مع تاو لين، الذي يعمل في أنثروبيك. هذه المقالة مقالة رأي. نرى أنه يصف، من دون أن يقصد، لماذا لن تصمد الرعاية الاجتماعية الحالية، ولماذا ينبغي بناء دخل أساسي قبل أن نحتاج إليه، لا بعده. الأرقام موثقة بمصادرها؛ أما الاستنتاج فهو استنتاجنا."
+          ],
+          [
+            "h",
+            "ما قيل وما لم يُقل"
+          ],
+          [
+            "p",
+            "نُشرت المقابلة على يوتيوب في 15 نوفمبر (16 نوفمبر بتوقيت اليابان) ضمن سلسلة «من داخل الذكاء الاصطناعي» التي تنتجها باليسيد ريسيرش؛ ونقلها موقع ⁦ASCII⁩ باليابانية في 19 نوفمبر.[1][2] يعمل لين في أنثروبيك منذ نحو عام ونصف، أولًا في أبحاث المواءمة ثم الآن في فريق الضمانات، وهو الفريق الذي يفحص الطلبات الضارة. التوقع رأيه الشخصي لا رأي أنثروبيك؛ والسلسلة نفسها تقول إن مقابلاتها لا تمثل كل وجهات النظر داخل شركات الذكاء الاصطناعي، وأضاف لين أن رأيه شائع في أوساط أمان الذكاء الاصطناعي.[1][3]"
+          ],
+          [
+            "p",
+            "وبحسب ما نُقل عنه في التغطية الإعلامية للمقابلة، قال: «أظن أنه من المرجح جدًا أن يصبح كل البشر على الأرض تقريبًا غير قابلين للتوظيف بشكل دائم، وأن يضطروا إلى الاعتماد كليًا على الرعاية الحكومية لإعالة أنفسهم». ويتوقع ذكاءً اصطناعيًا «يضاهي أفضل خبير في كل مجال تقريبًا أو يتفوق عليه» خلال نحو 1.3 سنة، وهو ما قدّره موقع ⁦ASCII⁩ بنحو نهاية 2027. لكنه يرى فجوة كبيرة قبل أن تختفي الوظائف فعلًا، لأن استبدال العمل البدني يتطلب مليارات الروبوتات؛ وفي البداية سينتقل الناس إلى مهن أخرى.[2][3] وعندما سُئل هل سيحدث ذلك خلال 15 شهرًا، أجاب بالنفي، ولم يحدد موعدًا."
+          ],
+          [
+            "p",
+            "اقتراحه ليس دخلًا أساسيًا. فهو يقول إن على شركات الذكاء الاصطناعي أن تبطئ، إلى «ما يقارب ربع وتيرتها الحالية»، وتذكر التغطية أنه حثّ الناس على الضغط من أجل التنظيم. وفي التغطية التي وجدناها لا يذكر الدخل الأساسي إطلاقًا؛ ولم نتمكن من مراجعة نص كامل للمقابلة.[2][3]"
+          ],
+          [
+            "p",
+            "وهو ليس وحده. فقد حذّر الرئيس التنفيذي لأنثروبيك، داريو أمودي، في مايو 2025 من أن الذكاء الاصطناعي قد يقضي على نصف وظائف المبتدئين المكتبية كلها، وأن يرفع البطالة في الولايات المتحدة إلى ⁦10–20%⁩ خلال سنة إلى خمس سنوات.[4] وفي 16 نوفمبر 2026 قال الاقتصادي نورييل روبيني لبلومبرغ إن البطالة في الولايات المتحدة قد تبلغ ⁦80%⁩ بحلول 2050، وإن «قدرًا من إعادة التوزيع من الذين يملكون إلى الذين لا يملكون» سيتبع ذلك.[5] وقدّر صندوق النقد الدولي في 2024 أن نحو ⁦40%⁩ من الوظائف في العالم، و⁦60%⁩ في الاقتصادات المتقدمة، معرّضة للذكاء الاصطناعي.[6]"
+          ],
+          [
+            "p",
+            "هذه توقعات، لا حقائق. في الولايات المتحدة، ذكر أصحاب العمل الذكاء الاصطناعي سببًا لـ121,401 من تخفيضات الوظائف المعلنة من يناير إلى أكتوبر 2026، أي نحو ⁦20%⁩ من كل التخفيضات المعلنة، لكن الذكاء الاصطناعي لا يظهر بعد في إجمالي التوظيف ({اطّلعنا على البيانات|/essays/generative-ai-jobs-basic-income/}).[7] وفي استطلاع لمؤشر أنثروبيك الاقتصادي في يونيو 2026، قدّر ⁦10%⁩ من العاملين أن فقدانهم وظائفهم محتمل أو محتمل جدًا.[8] لا أحد يعرف هل لين محق. حجتنا تتعلق بما يحدث إن كان محقًا، وبسبب كون التحرك المبكر قليل الكلفة إن لم يكن كذلك."
+          ],
+          [
+            "h",
+            "رعاية صُممت لقلة"
+          ],
+          [
+            "p",
+            "ينتهي عالم لين بأناس يعيشون على «الرعاية الحكومية». في اليابان، شبكة الأمان الأخيرة هي المساعدة العامة (سيكاتسو هوغو). في أغسطس 2026 كانت تعيل 1,641,451 أسرة، أي 1,965,132 شخصًا، أو ⁦1.60%⁩ من السكان؛ وأكثر من نصف هذه الأسر من كبار السن.[9] إنها مصممة لأقلية صغيرة، وحتى بهذا الحجم تفوّت معظم من وُضعت من أجلهم."
+          ],
+          [
+            "p",
+            "معدل الاستفادة يروي القصة. ففي 2018 قدّرت وزارة الصحة والعمل والرعاية الاجتماعية أنه من بين الأسر التي يقل دخلها عن معيار المساعدة العامة، لم يحصل عليها في 2016 سوى ⁦22.9%⁩؛ وعند احتساب الأسر التي لا تملك أيضًا مدخرات تُذكر فقط، ⁦43.7%⁩.[10] ويقدّرها اتحاد نقابات المحامين الياباني بنحو ⁦20%⁩.[11] وبعبارة أخرى، معظم الأسر الفقيرة بما يكفي لاستحقاقها لا تحصل عليها."
+          ],
+          [
+            "p",
+            "بعض الأسباب مدمجة في النظام نفسه. على المتقدمين أن يثبتوا أنهم استنفدوا مدخراتهم وأصولهم. ويمكن أن يُسأل الأقارب أولًا هل سيعيلونهم، وهو ما يجده كثيرون مخجلًا إلى حد يجعلهم يحجمون عن التقدم. وكل حالة يتولاها أخصائي اجتماعي: يحدد قانون الرعاية الاجتماعية معيارًا بأخصائي واحد لكل 80 أسرة مستفيدة في المدن و65 في البلدات والقرى.[12] وحتى الآن لا يكفي عددهم: ففي أحدث مسح للتوظيف (2016) كان هناك 18,183 أخصائيًا مقابل معيار يبلغ 20,115، وكان ربعهم تقريبًا يملك خبرة تقل عن سنة.[12]"
+          ],
+          [
+            "p",
+            "والآن لنكبّر الصورة. وفق معيار المدن، يحتاج كل مليون أسرة على المساعدة العامة إلى 12,500 أخصائي. ولو فقد معظم السكان اليابانيين في سن العمل دخولهم، لاضطرت عشرات الملايين من الأسر إلى التقدم، وإثبات أنها لا تملك شيئًا، والانتظار. والنظام الذي يرد اليوم معظم الفقراء سيتحول إلى طابور يضم الجميع تقريبًا. ثم إن الدخل من العمل يُخصم من الإعانة بعد إعفاء صغير، فقبول عمل بدوام جزئي أو بضعة أيام مما تبقى من عمل لن يحسّن وضع الناس إلا قليلًا.[12] وفي عالم وظائفه أقل، هذه بالضبط هي الإشارة الخاطئة."
+          ],
+          [
+            "h",
+            "دفعة تتسع للجميع"
+          ],
+          [
+            "p",
+            "يطرح الدخل الأساسي سؤالًا واحدًا: هل تعيش هنا؟ والدولة تعرف الجواب مسبقًا. أثبتت اليابان ذلك في 2020، حين منحت الدفعة النقدية الخاصة 100,000 ين لكل من هو مقيد تقريبًا في سجل السكان، أي نحو 12.7 تريليون ين في بضعة أشهر، من دون اختبار للدخل ({ماذا فعل الناس بها|/essays/japan-special-cash-payment/}). وكانت بطيئة حيث اضطرت البلديات إلى جمع البيانات المصرفية يدويًا؛ وهذا الجزء يمكن إصلاحه مرة واحدة، مسبقًا."
+          ],
+          [
+            "p",
+            "لا يوجد منحدر مفاجئ. زيادة الكسب لا تُسقط الدفعة أبدًا؛ والضرائب على الدخول الأعلى تسترد ما يحصل عليه الميسورون. ولا يحتاج أي أخصائي اجتماعي إلى الحكم على من يستحق المساعدة، وهذا أهم ما يكون في العالم الذي يصفه لين تحديدًا، حيث يفقد سؤال «لماذا لا تعمل؟» أي جواب منصف."
+          ],
+          [
+            "h",
+            "الحساب بصراحة"
+          ],
+          [
+            "p",
+            "ليس الأمر رخيصًا. فمبلغ 70,000 ين شهريًا لكل فرد في اليابان، وهو المبلغ الذي طرحه هيزو تاكيناكا، سيكلف 103.2 تريليون ين سنويًا، أي ⁦122%⁩ من إجمالي الإيرادات الضريبية الوطنية في السنة المالية 2025. أما 10,000 ين شهريًا فستكلف 14.7 تريليون ين، أي ⁦17%⁩ ({الحساب الكامل|/essays/japan-basic-income-cost/}).[13]"
+          ],
+          [
+            "p",
+            "وأرباح الذكاء الاصطناعي اليوم بعيدة كل البعد عن ذلك. فقد حققت الشركات التسع التي تقع في قلب طفرة الذكاء الاصطناعي نحو 1.08 تريليون دولار من صافي الأرباح خلال أرباعها الأربعة الأخيرة؛ ولو وُزعت على كل سكان الأرض لبلغ نصيب الفرد ⁦{{aip.net100PM:d2}}⁩ دولار شهريًا، أي نحو ⁦{{aip.net100PM@jp:r10}}⁩ ين ({الحساب|/essays/ai-company-profits-per-person/}).[14] ضريبة على أرباح الذكاء الاصطناعي الحالية لن تموّل دخلًا يكفي للعيش."
+          ],
+          [
+            "p",
+            "لكن إن كان لين محقًا، فاليوم هو المقياس الخطأ. فالعمل الذي يؤديه الذكاء الاصطناعي والروبوتات لا يكف عن إنتاج القيمة؛ بل ينتقل الدخل من الأجور إلى من يملك النماذج والرقائق والآلات. عندها لا يكون السؤال هل يستطيع بلد ما تحمّل دخل أساسي، بل من يملك الثروة التي تموّله. وهناك نماذج قائمة. فألاسكا تدفع لكل مقيم فيها حصة سنوية من صندوقها النفطي منذ 1982؛ وبلغت حصة 2025 ⁦$1,000⁩، ودفعة 2026 ⁦$1,200⁩ بما فيها دفعة دعم للطاقة قدرها ⁦$200⁩.[15] ويبلغ صندوق النفط النرويجي نحو 3.9 مليون كرونة نرويجية (⁦NOK⁩) لكل مواطن (22,014 مليار كرونة في نهاية سبتمبر 2026)، مع أنه يصب في الميزانية لا في جيوب الناس مباشرة.[16] واقترح باحثون «بند الأرباح المفاجئة»، تلتزم بموجبه شركات الذكاء الاصطناعي مسبقًا بتقاسم الأرباح التي تتجاوز عتبة مرتفعة للغاية.[17] واقترح سام ألتمان في 2021 صندوقًا يأخذ ⁦2.5%⁩ من قيمة الشركات الكبرى كل عام، وطرح في 2024 فكرة «حوسبة أساسية شاملة».[18] وقد خصصت أنثروبيك ⁦5%⁩ من أسهمها لصندوق للمنفعة العامة ({مقالتنا|/essays/public-benefit-fund/})."
+          ],
+          [
+            "p",
+            "لا يرقى أي من هذه بعد إلى دخل أساسي. لكنها تُظهر شكل الجواب: حصة عامة في الثروة التي يولدها الذكاء الاصطناعي، يُتفق عليها قبل أن تتركز تلك الثروة، لا بعده."
+          ],
+          [
+            "h",
+            "اعتراضان"
+          ],
+          [
+            "p",
+            "ماذا لو كان التوقع خاطئًا؟ عندها يظل الدخل الأساسي الصغير مفيدًا اليوم: فهو يصل إلى الأسر الكثيرة المستحقة للمساعدة العامة التي لا تحصل عليها، وإلى العاملين المستقلين والشباب الذين لا يحق لهم تأمين البطالة. وإن كان التوقع صحيحًا، فإن بناءه في خضم فقدان الوظائف الجماعي سيكون متأخرًا جدًا؛ فحتى دفعة لمرة واحدة في 2020 استغرقت أشهرًا."
+          ],
+          [
+            "p",
+            "هل سيتوقف الناس عن العمل؟ تقول الأدلة: ليس كثيرًا. ففي دراسة أوبن ريسيرش، أدى مبلغ ⁦$1,000⁩ شهريًا لمدة ثلاث سنوات إلى أن يعمل المستفيدون نحو 1.3 ساعة أسبوعيًا أقل من المجموعة الضابطة في الاستطلاعات؛ وتقدّر أحدث نسخة من الورقة الفرق بساعة إلى ساعتين.[19] وفي تجربة فنلندا في 2017–2018، عمل المستفيدون العاطلون نحو 6 أيام أكثر في السنة الثانية مقارنة بالمجموعة الضابطة، وشعروا بتحسن.[20] وتُظهر عشر دراسات، من تجارب عقد 1970 إلى 101 تجربة في الولايات المتحدة، تراجعًا طفيفًا أو لا تراجع على الإطلاق ({النظرة العامة|/essays/does-cash-make-people-stop-working/}). وفي العالم الذي يصفه لين، القلق معكوس: ليس أن يتوقف الناس عن العمل، بل ألا يبقى عمل يتوقفون عنه."
+          ],
+          [
+            "p",
+            "إبطاء الذكاء الاصطناعي والدخل الأساسي ليسا نقيضين. قد يكون لين محقًا في أن الوتيرة يجب أن تنخفض. لكن أرضية تحت الجميع مفيدة بأي وتيرة."
+          ],
+          [
+            "h",
+            "ما نقترحه: ابدأوا صغارًا، الآن"
+          ],
+          [
+            "p",
+            "ابدأوا الآن دخلًا أساسيًا قدره 10,000 ين شهريًا لكل فرد. سيكلف 14.7 تريليون ين سنويًا، أو نحو 12.6 تريليون ين إذا حلّ محل علاوة الأطفال، التي تدفع أصلًا 10,000 ين لمعظم الأطفال.[13] المبلغ صغير؛ والمقصود هو القناة: دفعة واحدة، للجميع، كل شهر، عبر حسابات مربوطة مسبقًا."
+          ],
+          [
+            "p",
+            "وإلى جانبه، أنشئوا صندوقًا عامًا للذكاء الاصطناعي يأخذ حصة في الثروة التي يولدها الذكاء الاصطناعي، عبر الأسهم أو رسم على الحوسبة واسعة النطاق أو حصة من أرباح الذكاء الاصطناعي، ويدفع حصة أرباح فوق الأساس، على غرار ألاسكا. وكلما ازدادت حصة الذكاء الاصطناعي من الدخل، ازدادت الدفعة. وأبقوا على المساعدة الطبية ودعم الإعاقة والرعاية، فالنقد لا يحل محلها."
+          ],
+          [
+            "p",
+            "إن كان لين مخطئًا، تحصل اليابان على أرضية متواضعة تصل إلى من تفوّتهم الرعاية الحالية. وإن كان محقًا، يكون النظام قائمًا قبل أن تذهب الوظائف، لا بعد ذلك. وفي الحالتين، وقت بنائه هو الآن، ما دام رخيصًا."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Palisade Research, “From Inside AI”: “Anthropic Researcher: ‘Pretty Much All Humans Will Become Permanently Unemployable’” (YouTube, 15 November 2026, US time)",
+          "url": "https://www.youtube.com/watch?v=OPZCQk8jF-I"
+        },
+        {
+          "n": 2,
+          "label": "ASCII (via Yahoo! News Japan): “Almost all of humanity will be permanently unemployed”: an Anthropic researcher predicts the future of AI (in Japanese, 19 November 2026)",
+          "url": "https://news.yahoo.co.jp/articles/aefda3ab1f30619a8c87ba32e24b53de7f20ad80"
+        },
+        {
+          "n": 3,
+          "label": "ASCII, English edition of the same report (19 November 2026)",
+          "url": "https://ascii.jp/en/elem/000/004/452/4452982/"
+        },
+        {
+          "n": 4,
+          "label": "Axios: “Behind the Curtain: A white-collar bloodbath”, interview with Dario Amodei (28 May 2025)",
+          "url": "https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic"
+        },
+        {
+          "n": 5,
+          "label": "Business Insider: Nouriel Roubini on AI and an 80% unemployment rate, from his Bloomberg interview of 16 November 2026; Japanese edition, Business Insider Japan (18 November 2026)",
+          "url": "https://www.businessinsider.com/dr-doom-nouriel-roubini-ai-unemployment-forecast-universal-basic-income-2026-11",
+          "url2": "https://www.businessinsider.jp/article/2611-dr-doom-nouriel-roubini-ai-unemployment-forecast-universal-basic-income/"
+        },
+        {
+          "n": 6,
+          "label": "IMF, Kristalina Georgieva: “AI Will Transform the Global Economy. Let’s Make Sure It Benefits Humanity.” (14 January 2024)",
+          "url": "https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity"
+        },
+        {
+          "n": 7,
+          "label": "Challenger, Gray & Christmas: October 2026 job cuts report (5 November 2026)",
+          "url": "https://www.challengergray.com/blog/october-layoffs-at-three-year-low-seasonal-hiring-plans-up-26/"
+        },
+        {
+          "n": 8,
+          "label": "Anthropic Economic Index: June 2026 report (26 June 2026)",
+          "url": "https://www.anthropic.com/research/economic-index-june-2026-report"
+        },
+        {
+          "n": 9,
+          "label": "Ministry of Health, Labour and Welfare: Survey of Public Assistance Recipients, preliminary figures for August 2026 (in Japanese, 4 November 2026)",
+          "url": "https://www.mhlw.go.jp/toukei/saikin/hw/hihogosya/m2026/dl/08-01.pdf"
+        },
+        {
+          "n": 10,
+          "label": "Shimbun Akahata: the Ministry of Health, Labour and Welfare’s estimate of households below the public assistance standard, given to the House of Councillors on 29 May 2018 (3 June 2018)",
+          "url": "https://www.jcp.or.jp/akahata/aik18/2018-06-03/2018060301_03_1.html"
+        },
+        {
+          "n": 11,
+          "label": "Bengo4.com: the Japan Federation of Bar Associations’ leaflet on public assistance and its take-up of about 20%",
+          "url": "https://www.bengo4.com/c_18/n_2602/"
+        },
+        {
+          "n": 12,
+          "label": "Ministry of Health, Labour and Welfare: survey of staffing at welfare offices (in Japanese, 1 October 2016); the caseworker standard is in Article 16 of the Social Welfare Act (e-Gov)",
+          "url": "https://www.mhlw.go.jp/toukei/list/dl/125-1-01.pdf",
+          "url2": "https://laws.e-gov.go.jp/law/326AC0000000045"
+        },
+        {
+          "n": 13,
+          "label": "Free Lunch Lab: data/japan-2026.json, the official figures behind our Japan cost essay (population, tax revenue, child allowance)",
+          "url": "https://github.com/eltociear/free-lunch-lab/blob/main/data/japan-2026.json"
+        },
+        {
+          "n": 14,
+          "label": "Free Lunch Lab: data/ai-profits-2026.json, the nine AI companies’ last four quarters",
+          "url": "https://github.com/eltociear/free-lunch-lab/blob/main/data/ai-profits-2026.json"
+        },
+        {
+          "n": 15,
+          "label": "Alaska Department of Revenue: 2025 Permanent Fund Dividend amount (22 September 2025); 2026 amount at pfd.alaska.gov",
+          "url": "https://dor.alaska.gov/department-of-revenue/news-detail/2025/09/22/department-of-revenue-announces-2025-permanent-fund-dividend-amount",
+          "url2": "https://pfd.alaska.gov/"
+        },
+        {
+          "n": 16,
+          "label": "Norges Bank Investment Management: key figures for the first three quarters of 2026; population from Statistics Norway (5,636,904 at the end of Q2 2026)",
+          "url": "https://www.nbim.no/en/news-and-insights/1q-3q/key-figures-q3-2026/",
+          "url2": "https://www.ssb.no/en/folkemengde"
+        },
+        {
+          "n": 17,
+          "label": "Cullen O’Keefe and others: “The Windfall Clause: Distributing the Benefits of AI for the Common Good” (arXiv, December 2019)",
+          "url": "https://arxiv.org/abs/1912.11595"
+        },
+        {
+          "n": 18,
+          "label": "Sam Altman: “Moore’s Law for Everything” (16 March 2021); on “universal basic compute”, the All-In podcast of 10 May 2024 as reported by Business Insider",
+          "url": "https://moores.samaltman.com/",
+          "url2": "https://www.yahoo.com/tech/openais-sam-altman-idea-universal-213637146.html"
+        },
+        {
+          "n": 19,
+          "label": "Eva Vivalt and others: “The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States”, NBER Working Paper 32719 (July 2024, revised)",
+          "url": "https://www.nber.org/papers/w32719"
+        },
+        {
+          "n": 20,
+          "label": "Ministry of Social Affairs and Health and Kela: results of Finland’s basic income experiment 2017–2018 (6 May 2020)",
+          "url": "https://toolbox.finland.fi/wp-content/uploads/sites/2/2018/04/basic_income_experiment_2017-2018_results_2020.pdf"
+        }
+      ]
+    },
+    {
       "id": "us-basic-income-cost",
       "date": "2026-11-19",
       "related": [
@@ -20104,6 +21065,7 @@ module.exports = {
       "id": "ai-company-profits-per-person",
       "date": "2026-11-18",
       "related": [
+        "ai-unemployment-basic-income",
         "billionaire-wealth-per-person",
         "universal-high-income",
         "generative-ai-jobs-basic-income",
@@ -21778,6 +22740,7 @@ module.exports = {
       "id": "japan-basic-income-cost",
       "date": "2026-11-17",
       "related": [
+        "ai-unemployment-basic-income",
         "us-basic-income-cost",
         "takenaka-70000-yen-basic-income",
         "germany-merz-basic-income-cost",
@@ -31018,6 +31981,7 @@ module.exports = {
       "id": "generative-ai-jobs-basic-income",
       "date": "2026-11-07",
       "related": [
+        "ai-unemployment-basic-income",
         "ai-company-profits-per-person",
         "germany-merz-basic-income-cost",
         "refundable-tax-credit-vs-basic-income",

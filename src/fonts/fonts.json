@@ -267,6 +267,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-782107a63a.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-4d06977bb1.woff2",
+    "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
    }
   ],
   "de:body:700": [
@@ -349,6 +353,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-77026558f4.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-34b7c36763.woff2",
+    "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
    }
   ],
   "de:display": [
@@ -479,6 +487,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-782107a63a.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-4d06977bb1.woff2",
+    "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
    }
   ],
   "en:body:700": [
@@ -561,6 +573,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-77026558f4.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-34b7c36763.woff2",
+    "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
    }
   ],
   "en:display": [
@@ -699,6 +715,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-782107a63a.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-4d06977bb1.woff2",
+    "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
    }
   ],
   "es:body:700": [
@@ -797,6 +817,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-77026558f4.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-34b7c36763.woff2",
+    "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
    }
   ],
   "es:display": [
@@ -1267,6 +1291,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-b11b32004a.woff2",
     "chars": "［］"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-10a03e64d7.woff2",
+    "chars": "耐"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-e5d1c8abba.woff2",
+    "chars": "恥敷旗筆肉賄"
    }
   ],
   "ja:body:700": [
@@ -1529,6 +1561,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-f6d0eed49d.woff2",
     "chars": "［］"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-f5cd39696c.woff2",
+    "chars": "耐"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-ac05619a83.woff2",
+    "chars": "恥敷旗筆肉賄"
    }
   ],
   "ja:display": [
@@ -1699,6 +1739,10 @@
    {
     "file": "dela-gothic-one-400-ja-099f9e2e4f.woff2",
     "chars": "値半四"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-8278f35878.woff2",
+    "chars": "二模直祉福私耐規"
    }
   ],
   "ja:dot": [
@@ -2039,6 +2083,10 @@
    {
     "file": "noto-sans-sc-400-zh-b72b540085.woff2",
     "chars": "盲"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-9dc47bcc7b.woff2",
+    "chars": "しすぶほぼをんト働労員尖廓弁捉査業測調護趁類"
    }
   ],
   "zh:body:700": [
@@ -2325,6 +2373,10 @@
    {
     "file": "noto-sans-sc-700-zh-874b9a919d.woff2",
     "chars": "盲"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-0ae5998952.woff2",
+    "chars": "しすぶほぼをんト働労員尖廓弁捉査業測調護趁類"
    }
   ],
   "zh:display": [
@@ -2495,6 +2547,10 @@
    {
     "file": "noto-sans-sc-900-zh-fef896b77e.woff2",
     "chars": "张片"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-ae9bf8aade.woff2",
+    "chars": "乎住展扩率福规"
    }
   ],
   "zh:dot": [

@@ -1,10 +1,10 @@
 {
  "/": [
-  "a0fd053d12b00f1f",
+  "27c934cc99750110",
   "2026-11-19"
  ],
  "/ar/": [
-  "4a6c238c48c7950b",
+  "9f4b81f58a23b1dd",
   "2026-11-19"
  ],
  "/ar/badge/": [
@@ -400,7 +400,7 @@
   "2026-11-19"
  ],
  "/ar/calc/jp/": [
-  "8606f3abdce142d0",
+  "af06d64ac5093ff3",
   "2026-11-19"
  ],
  "/ar/calc/ke/": [
@@ -880,7 +880,7 @@
   "2026-11-11"
  ],
  "/ar/essays/": [
-  "7f7c167785de5c4b",
+  "ecc3458a76313cbe",
   "2026-11-19"
  ],
  "/ar/essays/ai-agent-basic-income/": [
@@ -890,6 +890,10 @@
  "/ar/essays/ai-company-profits-per-person/": [
   "ed5c881d66485b28",
   "2026-11-18"
+ ],
+ "/ar/essays/ai-unemployment-basic-income/": [
+  "f95db415240e5d9d",
+  "2026-11-19"
  ],
  "/ar/essays/basic-income-world-map/": [
   "308d1da251c19166",
@@ -1624,7 +1628,7 @@
   "2026-11-19"
  ],
  "/calc/jp/": [
-  "18299fd73f7e765a",
+  "a805b2f75f477e8f",
   "2026-11-19"
  ],
  "/calc/ke/": [
@@ -2100,7 +2104,7 @@
   "2026-11-19"
  ],
  "/de/": [
-  "2f564cbc21702ea0",
+  "90e798b6311c66a7",
   "2026-11-19"
  ],
  "/de/badge/": [
@@ -2496,7 +2500,7 @@
   "2026-11-19"
  ],
  "/de/calc/jp/": [
-  "80bf31958f3e78f6",
+  "895955294b358e90",
   "2026-11-19"
  ],
  "/de/calc/ke/": [
@@ -2976,7 +2980,7 @@
   "2026-11-11"
  ],
  "/de/essays/": [
-  "382e2d271c20536a",
+  "3d57affddf060a17",
   "2026-11-19"
  ],
  "/de/essays/ai-agent-basic-income/": [
@@ -2986,6 +2990,10 @@
  "/de/essays/ai-company-profits-per-person/": [
   "4be8cb233cf8cd6f",
   "2026-11-18"
+ ],
+ "/de/essays/ai-unemployment-basic-income/": [
+  "7084cf583ba4e7e9",
+  "2026-11-19"
  ],
  "/de/essays/basic-income-world-map/": [
   "962969a771d149f3",
@@ -3332,7 +3340,7 @@
   "2026-11-11"
  ],
  "/es/": [
-  "b4022b8672980a37",
+  "e841b86d255c9f7a",
   "2026-11-19"
  ],
  "/es/badge/": [
@@ -3728,7 +3736,7 @@
   "2026-11-19"
  ],
  "/es/calc/jp/": [
-  "e45a3403125c36d9",
+  "cf434b0faeae6b42",
   "2026-11-19"
  ],
  "/es/calc/ke/": [
@@ -4208,7 +4216,7 @@
   "2026-11-11"
  ],
  "/es/essays/": [
-  "19e4b64670b6aad5",
+  "56a680e29bc25419",
   "2026-11-19"
  ],
  "/es/essays/ai-agent-basic-income/": [
@@ -4218,6 +4226,10 @@
  "/es/essays/ai-company-profits-per-person/": [
   "7e8a73039136a19d",
   "2026-11-18"
+ ],
+ "/es/essays/ai-unemployment-basic-income/": [
+  "069d2aeb5500df0d",
+  "2026-11-19"
  ],
  "/es/essays/basic-income-world-map/": [
   "cefdf713e1640fb7",
@@ -4560,7 +4572,7 @@
   "2026-11-11"
  ],
  "/essays/": [
-  "df524a8fad27d76a",
+  "308083ad3ef7b617",
   "2026-11-19"
  ],
  "/essays/ai-agent-basic-income/": [
@@ -4570,6 +4582,10 @@
  "/essays/ai-company-profits-per-person/": [
   "2f67f807c038fe8a",
   "2026-11-18"
+ ],
+ "/essays/ai-unemployment-basic-income/": [
+  "e9cd069bb8daa11a",
+  "2026-11-19"
  ],
  "/essays/basic-income-world-map/": [
   "358313bb55ee6880",
@@ -4672,7 +4688,7 @@
   "2026-11-11"
  ],
  "/hi/": [
-  "5100240447756d31",
+  "7040d96c04e94b78",
   "2026-11-19"
  ],
  "/hi/badge/": [
@@ -5068,7 +5084,7 @@
   "2026-11-19"
  ],
  "/hi/calc/jp/": [
-  "fa46a9fd929c4450",
+  "d619dc1cb8c529b1",
   "2026-11-19"
  ],
  "/hi/calc/ke/": [
@@ -5548,7 +5564,7 @@
   "2026-11-11"
  ],
  "/hi/essays/": [
-  "9e7dc129872f353c",
+  "a34bc507a73e0010",
   "2026-11-19"
  ],
  "/hi/essays/ai-agent-basic-income/": [
@@ -5558,6 +5574,10 @@
  "/hi/essays/ai-company-profits-per-person/": [
   "4cc1e498866d40c7",
   "2026-11-18"
+ ],
+ "/hi/essays/ai-unemployment-basic-income/": [
+  "dcad8c7c85a87c4a",
+  "2026-11-19"
  ],
  "/hi/essays/basic-income-world-map/": [
   "e2f93c10aa4581ee",
@@ -5900,7 +5920,7 @@
   "2026-11-11"
  ],
  "/ja/": [
-  "4eafad9933e25683",
+  "5eb147b9dd25fa23",
   "2026-11-19"
  ],
  "/ja/badge/": [
@@ -6296,7 +6316,7 @@
   "2026-11-19"
  ],
  "/ja/calc/jp/": [
-  "417d777321b63dfb",
+  "a1c8bcb7f87dbcdb",
   "2026-11-19"
  ],
  "/ja/calc/ke/": [
@@ -6776,7 +6796,7 @@
   "2026-11-11"
  ],
  "/ja/essays/": [
-  "5e3ddde6b1a514db",
+  "f526347512b23fe3",
   "2026-11-19"
  ],
  "/ja/essays/ai-agent-basic-income/": [
@@ -6786,6 +6806,10 @@
  "/ja/essays/ai-company-profits-per-person/": [
   "2d28241db09e378a",
   "2026-11-18"
+ ],
+ "/ja/essays/ai-unemployment-basic-income/": [
+  "f2e223a7030a3db8",
+  "2026-11-19"
  ],
  "/ja/essays/basic-income-world-map/": [
   "485ec077d754cd7d",
@@ -7368,7 +7392,7 @@
   "2026-11-11"
  ],
  "/zh/": [
-  "904b81a1549f58f4",
+  "2f9da004f6ea8eba",
   "2026-11-19"
  ],
  "/zh/badge/": [
@@ -7764,7 +7788,7 @@
   "2026-11-19"
  ],
  "/zh/calc/jp/": [
-  "a3f5715fe429d580",
+  "e91a364bba70be19",
   "2026-11-19"
  ],
  "/zh/calc/ke/": [
@@ -8244,7 +8268,7 @@
   "2026-11-11"
  ],
  "/zh/essays/": [
-  "eee546ec05adb2ac",
+  "e1fdba743f9bc5dd",
   "2026-11-19"
  ],
  "/zh/essays/ai-agent-basic-income/": [
@@ -8254,6 +8278,10 @@
  "/zh/essays/ai-company-profits-per-person/": [
   "27e767db1830f62d",
   "2026-11-18"
+ ],
+ "/zh/essays/ai-unemployment-basic-income/": [
+  "0e5369a10339e933",
+  "2026-11-19"
  ],
  "/zh/essays/basic-income-world-map/": [
   "6361a1a843783a50",
