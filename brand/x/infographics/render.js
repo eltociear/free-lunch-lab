@@ -588,6 +588,62 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the data essay basic-income-inflation: price effects in the four cases (Kenya, Alaska, Japan 2020, US 2021-22),
+  // all numbers from data/inflation-2026.json (the same file the build checks the essay against). 1200x675, ja/en.
+  'inflation': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const I = require('../../../data/inflation-2026.json');
+      const F = Object.fromEntries(I.facts.map(x => [x.id, x]));
+      const pct = (v, d = 1) => `${v < 0 ? '−' : ''}${Math.abs(v).toFixed(d)}`;
+      const T3 = {
+        ja: { eb: 'データエッセイ', hl: 'ベーシックインカムで物価は上がる？', sb: '現金を配った4つの例で、物価はどうなったか',
+          c: [['ケニア（2014〜17年）', `${pct(F.kenyaPriceAvg.value)}<small>%</small>`, `地域のGDPの${F.kenyaGdpShare.value}%超を配って、地域の物価は平均${pct(F.kenyaPriceAvg.value)}%上昇`],
+            ['アラスカ（1982年〜）', `+${pct(F.alaskaInflation.value)}<small>pt</small>`, `毎年の配当でインフレ率が年${pct(F.alaskaInflation.value)}ポイント高い。統計的に有意ではない`],
+            ['日本（2020年）', `${pct(F.jpCpi2021.value)}<small>%</small>`, `全員に10万円、${(F.jpPayment.value / 1e12).toFixed(2)}兆円。消費者物価は2020年${pct(F.jpCpi2020.value)}%、2021年${pct(F.jpCpi2021.value)}%`],
+            ['アメリカ（2021〜22年）', `${pct(F.frbsf2021.value)}〜${F.frbsf2022.value}<small>pt</small>`, `財政支援全体がインフレ率を押し上げた推計。物価上昇は最大${pct(F.usCpiPeak.value)}%`]],
+          big: '税で配るお金は需要を移し、借金で配るお金は需要を足す。恒久的に全国で配った国はまだない', wm: '不労所得研究所', path: 'ja/' },
+        en: { eb: 'Data essay', hl: 'Does a basic income cause inflation?', sb: 'What happened to prices in four cases where cash was handed out',
+          c: [['Kenya (2014–17)', `${pct(F.kenyaPriceAvg.value)}<small>%</small>`, `Transfers worth over ${F.kenyaGdpShare.value}% of local GDP raised local prices by ${pct(F.kenyaPriceAvg.value)}% on average`],
+            ['Alaska (since 1982)', `+${pct(F.alaskaInflation.value)}<small>pt</small>`, `A yearly dividend: inflation ${pct(F.alaskaInflation.value)} points a year higher, not statistically significant`],
+            ['Japan (2020)', `${pct(F.jpCpi2021.value)}<small>%</small>`, `¥100,000 for everyone, ¥${(F.jpPayment.value / 1e12).toFixed(2)}tn. Consumer prices ${pct(F.jpCpi2020.value)}% in 2020, ${pct(F.jpCpi2021.value)}% in 2021`],
+            ['United States (2021–22)', `${pct(F.frbsf2021.value)}–${F.frbsf2022.value}<small>pt</small>`, `Estimates of what all fiscal support added to inflation. Prices peaked at +${pct(F.usCpiPeak.value)}%`]],
+          big: 'Tax-funded money moves demand; borrowed money adds to it. No country has paid a permanent national basic income yet', wm: 'Free <em>Lunch</em> Lab', path: '' },
+      }[lang];
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb"><span>${T3.eb}</span></p>
+<h1 class="hl">${T3.hl}</h1>
+<p class="sb">${T3.sb}</p>
+<div class="cards">${T3.c.map(([k, v, d]) => `<section class="c"><p class="k">${k}</p><p class="v">${v}</p><p class="d">${d}</p></section>`).join('')}</div>
+<p class="big">${T3.big}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${T3.wm}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${T3.path}essays/basic-income-inflation/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb span{display:inline-block;font-size:18px;font-weight:700;color:#14182E;background:#6CF0B0;padding:3px 14px;border-radius:999px}
+.hl{margin-top:10px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 44 : 42}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:21px;line-height:1.4;color:#C9D0F0}
+.cards{margin-top:16px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:14px 16px;display:flex;flex-direction:column}
+.k{font-size:18px;color:#A9B2D8;font-weight:700;line-height:1.3}
+.v{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:46px;line-height:1.1;color:#FFD66B;white-space:nowrap}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.45em;margin-left:4px}
+.d{margin-top:10px;font-size:18px;line-height:1.4;color:#E3E8FF;word-break:auto-phrase}
+.big{margin:14px 0 12px;font-size:21px;font-weight:900;line-height:1.35;color:#FFD66B;border:2px solid rgba(255,214,107,.6);background:rgba(255,214,107,.08);border-radius:14px;padding:10px 18px}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:15px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
   // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
   'billionaire': {

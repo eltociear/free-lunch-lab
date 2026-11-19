@@ -2938,6 +2938,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-19",
+      "en": "Published the essay “Does a basic income cause inflation?”",
+      "ja": "エッセイ『ベーシックインカムで物価は上がる？ 実験と給付金のデータで見る』を公開",
+      "zh": "发布随笔《基本收入会推高物价吗？》",
+      "hi": "निबंध “क्या बेसिक इनकम से महँगाई बढ़ती है?” प्रकाशित",
+      "es": "Publicado el ensayo «¿Una renta básica sube los precios?»",
+      "de": "Essay „Treibt ein Grundeinkommen die Preise?“ veröffentlicht",
+      "ar": "نشرنا مقال «هل يرفع الدخل الأساسي الأسعار؟»"
+    },
+    {
+      "date": "2026-11-19",
       "en": "Added an About page for researchers and journalists: who runs the site, the editorial policy, how to cite the open data, and a corrections log",
       "ja": "研究者・記者向けの「このサイトについて」のページを追加（運営者、編集方針、オープンデータの引用のしかた、訂正の記録）",
       "zh": "新增“关于本站”页面，写给研究者和记者：运营者、编辑方针、开放数据的引用方式和更正记录",
@@ -11359,6 +11369,33 @@ module.exports = {
         "de": "Die amtlichen Zahlen hinter dem Essay zu den Kosten in den USA: Bevölkerung, Bundeseinnahmen, Einkommensteuer, Ausgaben, BIP, die Programme, die ein Grundeinkommen ersetzen könnte, und die Zahl der Pilotprojekte, jeweils mit Quelle und Datum.",
         "ar": "الأرقام الرسمية التي يقوم عليها مقال تكلفة الدخل الأساسي في الولايات المتحدة: السكان والإيرادات الاتحادية وضريبة الدخل الفردي والنفقات والناتج المحلي والبرامج التي قد يحل محلها الدخل الأساسي وعدد التجارب، لكل منها مصدره وتاريخه."
       }
+    },
+    {
+      "id": "inflation-2026",
+      "files": [
+        "inflation-2026.json",
+        "inflation-2026.csv"
+      ],
+      "page": "essays/basic-income-inflation/",
+      "lic": "odLicSrc",
+      "name": {
+        "en": "Basic income and inflation: the evidence in figures",
+        "ja": "ベーシックインカムと物価：データの数字",
+        "zh": "基本收入与物价：证据中的数字",
+        "hi": "बेसिक इनकम और महँगाई: सबूतों के आंकड़े",
+        "es": "Renta básica e inflación: las cifras de la evidencia",
+        "de": "Grundeinkommen und Inflation: die Belege in Zahlen",
+        "ar": "الدخل الأساسي والتضخم: الأدلة بالأرقام"
+      },
+      "desc": {
+        "en": "The figures behind the essay on basic income and inflation: price effects in Kenya’s cash transfer study and in Alaska, Japan’s 2020 payment and consumer prices, the US stimulus checks and estimates of how much fiscal support added to inflation, each with its source and date.",
+        "ja": "ベーシックインカムと物価のエッセイに使った数字。ケニアの現金給付の研究とアラスカでの物価への影響、日本の2020年の給付と消費者物価、アメリカの給付小切手と財政支援がインフレをどれだけ押し上げたかの推計。それぞれ出典と日付つき。",
+        "zh": "基本收入与物价一文所用的数字：肯尼亚现金转移研究和阿拉斯加的物价影响、日本2020年的给付与消费者物价、美国刺激支票以及财政支持推高通胀的估计，每项均附来源和日期。",
+        "hi": "बेसिक इनकम और महँगाई वाले निबंध के पीछे के आंकड़े: केन्या के नकद हस्तांतरण अध्ययन और अलास्का में क़ीमतों पर असर, जापान का 2020 का भुगतान और उपभोक्ता क़ीमतें, अमेरिका के स्टिमुलस चेक और वित्तीय मदद से महँगाई कितनी बढ़ी इसके अनुमान, हर एक स्रोत और तारीख़ के साथ।",
+        "es": "Las cifras del ensayo sobre renta básica e inflación: efectos en los precios en el estudio de transferencias de Kenia y en Alaska, el pago de Japón de 2020 y los precios al consumo, los cheques de estímulo de EE. UU. y las estimaciones de cuánto añadió el apoyo fiscal a la inflación, cada una con su fuente y fecha.",
+        "de": "Die Zahlen hinter dem Essay zu Grundeinkommen und Inflation: Preiseffekte in Kenias Studie zu Geldtransfers und in Alaska, Japans Zahlung von 2020 und die Verbraucherpreise, die US-Schecks und Schätzungen, wie viel die Fiskalhilfe zur Inflation beitrug, jeweils mit Quelle und Datum.",
+        "ar": "الأرقام التي يقوم عليها مقال الدخل الأساسي والتضخم: الأثر على الأسعار في دراسة التحويلات النقدية في كينيا وفي ألاسكا، ودفعة اليابان عام 2020 وأسعار المستهلك، وشيكات التحفيز الأمريكية وتقديرات ما أضافه الدعم المالي إلى التضخم، لكل منها مصدره وتاريخه."
+      }
     }
   ],
   "OPEN_DATA": [
@@ -19375,10 +19412,834 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "basic-income-inflation",
+      "date": "2026-11-19",
+      "related": [
+        "ai-unemployment-basic-income",
+        "us-basic-income-cost",
+        "japan-basic-income-cost",
+        "japan-special-cash-payment",
+        "does-cash-make-people-stop-working",
+        "basic-income-world-map"
+      ],
+      "title": {
+        "ja": "ベーシックインカムで物価は上がる？ 実験と給付金のデータで見る",
+        "en": "Does a basic income cause inflation?",
+        "zh": "基本收入会推高物价吗？",
+        "hi": "क्या बेसिक इनकम से महँगाई बढ़ती है?",
+        "es": "¿Una renta básica sube los precios?",
+        "de": "Treibt ein Grundeinkommen die Preise?",
+        "ar": "هل يرفع الدخل الأساسي الأسعار؟"
+      },
+      "desc": {
+        "ja": "ケニアの現金給付、アラスカの配当、日本の10万円、アメリカの給付小切手で物価はどうなったか。税で配るお金と借金で配るお金はなぜ違うのか。そして、どの研究にもまだわからないこと。",
+        "en": "Kenya’s cash transfers, Alaska’s dividend, Japan’s ¥100,000 and the US stimulus checks: what happened to prices, why taxed and borrowed money differ, and what no study can tell us yet.",
+        "zh": "肯尼亚的现金转移、阿拉斯加的分红、日本的10万日元和美国的刺激支票：物价发生了什么，靠税收和靠借债发的钱为什么不同，以及哪些问题还没有研究能回答。",
+        "hi": "केन्या में नकद हस्तांतरण, अलास्का का डिविडेंड, जापान के 1,00,000 येन और अमेरिका के स्टिमुलस चेक: क़ीमतों का क्या हुआ, टैक्स से और उधार से दिए पैसे में फ़र्क क्यों है, और कौन-सी बात अभी कोई अध्ययन नहीं बता सकता।",
+        "es": "Kenia, el dividendo de Alaska, los 100.000 yenes de Japón y los cheques de EE. UU.: qué pasó con los precios, por qué no es igual pagar con impuestos que con deuda y qué no sabemos aún.",
+        "de": "Bargeld in Kenia, Alaskas Dividende, Japans 100.000 Yen und die US-Schecks: Was mit den Preisen geschah, warum Geld aus Steuern anders wirkt als Geld auf Pump und was noch keine Studie sagen kann.",
+        "ar": "التحويلات النقدية في كينيا وعائد ألاسكا ومبلغ الـ100,000 ين في اليابان وشيكات التحفيز الأمريكية: ماذا حدث للأسعار، ولماذا يختلف المال الممول بالضرائب عن المال الممول بالاقتراض، وما الذي لا تستطيع أي دراسة أن تخبرنا به بعد."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "ベーシックインカムへの反論でまず出てくるのが物価です。全員にお金を配れば、お店は値上げをして、お金の価値が下がるだけではないか。もっともな疑問で、いまは手がかりになるデータもあります。ケニアの農村では、地域の経済の15%を超える現金が配られても、地域の物価は平均で0.1%しか上がりませんでした。[1] 1982年からほぼ全住民に毎年配当を配っているアラスカでは、インフレ率が年に0.2ポイント高くなったというのがいちばん確からしい推計ですが、ゼロと区別できないほど不確かです。[2] アメリカのコロナ禍の給付では、政府の支援全体がインフレ率をどれだけ押し上げたかの推計は、およそ0.3ポイントから3ポイントまで開きがあります。[10][11][12] 以下、それぞれで何が測られたのか、お金の出どころがなぜ大事なのか、そしてどれにもわからないことを見ていきます。"
+          ],
+          [
+            "h",
+            "3種類の給付"
+          ],
+          [
+            "p",
+            "手がかりになるデータは、性質のまったく違う3つのものから来ていて、混同しやすいので分けておきます。1つめは地域の実験。限られた地域の限られた人に、多くは外から来たお金（慈善団体・財団・寄付）を配ります。2つめは全国一律の一回きりの給付で、2020年の日本の10万円やアメリカの給付小切手のように、ほぼ全員に1回か数回配るものです。どちらも新しい税で賄ったものではなく、景気が落ち込むなかで、ふだんの支出に上乗せされました。3つめが、全員に毎月、税を財源に配る恒久的なベーシックインカムで、これを国全体で試した国はありません。アラスカの配当はその中間です。恒久的で全員が対象ですが、1つの州の中だけで、財源は石油基金の運用益、額は2025年に1,000ドルでした。[4]"
+          ],
+          [
+            "t",
+            "事例 | 誰にいくら | お金の出どころ | 物価はどうなったか\nケニア、GiveDirectly（2014〜2017年） | 対象の世帯に約1,000ドル、地域のGDPの15%超 | 慈善団体（地域の外から） | 平均0.1%上昇、給付がいちばん多い時期でも1%未満[1]\nアラスカ永久基金配当（1982年〜） | ほぼ全住民に年1回（2025年は1,000ドル） | 州の石油基金の運用益 | インフレ率が年約0.2ポイント高い、統計的に有意ではない[2]\n日本、特別定額給付金（2020年） | 1人10万円を1回、総額12.67兆円 | 国の予算、新しい税なし | 消費者物価は2020年0.0%、2021年−0.2%[5][8]\nアメリカ、給付小切手（2020〜2021年） | 大人1人最大1,200ドル・600ドル・1,400ドル、直接給付は計9,310億ドル | 連邦政府の借金 | コロナ禍の財政支援全体で、推計によりインフレ率を約0.3〜3ポイント押し上げ[9][10][11][12]"
+          ],
+          [
+            "h",
+            "ケニア：地域には大きな衝撃、物価への影響はごくわずか"
+          ],
+          [
+            "p",
+            "いちばん強い証拠は、ケニア西部での GiveDirectly の給付を無作為化して調べた研究です。デニス・エガー、ヨハネス・ハウスホーファー、エドワード・ミゲル、ポール・ニーハウス、マイケル・ウォーカーが2022年に Econometrica に発表しました。653の村の世帯の約3分の1が対象になり、3回に分けて計87,000ケニア・シリング（約1,000ドル、購買力平価で1,871ドル）を受け取りました。受け取った世帯のふだんの年間支出の75%にあたります。給付のあった地域全体では、給付額は地域のGDPの15%を超えました。[1]"
+          ],
+          [
+            "p",
+            "支出は増え、地元の商店の売り上げも伸びました。お金を受け取っていない世帯への売り上げも含めてです。それでも物価はほとんど動きませんでした。物価の上昇は平均0.1%で、給付がいちばん多かった月でも、推計された物価への影響は1%未満でした。[1] 地元の店や農家は値上げせずに多く売ることができたので、増えた支出は値上がりではなく、売れた量の増加として表れました。"
+          ],
+          [
+            "p",
+            "ただ、この結果をどこまで当てはめられるかには限りが2つあります。お金は地域の外から来たので、地域にとってはまるごと新しい需要でした。そのぶん物価への影響の小ささは目を引きます。一方で、ケニアの農村には余力がありました。同じ値段でもっと作って売れる人や店があったということです。経済がすでに目いっぱい回っているところでは、反応が違うかもしれません。"
+          ],
+          [
+            "h",
+            "アラスカ：恒久的な配当、はっきりしない答え"
+          ],
+          [
+            "p",
+            "アラスカ州は1982年から毎年、永久基金の配当をほぼ全住民に配っています。2025年は1,000ドルでした。[4] デイモン・ジョーンズとイオアナ・マリネスクは、ほかの州を組み合わせて作った「合成アラスカ」とアラスカのインフレ率を比べました。1982年以降、アラスカのインフレ率は平均で年0.2ポイント高かったものの、推計の幅は−0.5ポイントから＋1ポイントまであり、ゼロの可能性を否定できません。2人はこれを「示唆的」な証拠とし、大きな不確かさが残るとしています。配当が始まった頃はインフレ率が高く、急速に下がっていた時期だったことも一因です。[2]"
+          ],
+          [
+            "p",
+            "同じ2人は、それより前の研究で、配当が就業を減らさなかったこと、パートタイムで働く人の割合は1.8ポイント増えたことを示しています。[3]"
+          ],
+          [
+            "h",
+            "日本の2020年：全員に10万円、物価は上がらなかった"
+          ],
+          [
+            "p",
+            "2020年、日本に住むほぼ全員が10万円を受け取り、総額は約12.67兆円でした。[5] 銀行口座や家計簿アプリの記録を使った研究では、多くはすぐには使われていません。ある研究では6週間で約16%、内閣府の分析では16週間で約22%が使われたと推計されています。[6][7] 消費者物価は上がりませんでした。全国の消費者物価指数は2020年が前年比0.0%、2021年が0.2%の下落です。[8]"
+          ],
+          [
+            "p",
+            "これで給付が物価にまったく影響しなかったと言えるわけではありません。コロナ禍で需要は落ちていて、旅行や外食も以前のようにはできず、ほかの政策も物価を動かしていました。言えるのは、この規模の一回きりの給付は、あの状況ではインフレを起こさなかったということです。規模を比べると、12.67兆円は、全員に月1万円のベーシックインカムを1年配る費用（{14.7兆円|/essays/japan-basic-income-cost/}）の約86%にすぎません。[14] {10万円が何に使われたか|/essays/japan-special-cash-payment/}は別のエッセイで詳しく見ています。"
+          ],
+          [
+            "h",
+            "アメリカの2021〜22年：インフレが来たとき"
+          ],
+          [
+            "p",
+            "アメリカは約1億6,500万人に3回、小切手を送りました。2020年春に大人1人最大1,200ドル、2020年末に600ドル、2021年3月に1,400ドルです。会計検査院（GAO）は、2020年4月から2021年12月までの個人への直接給付を、児童税額控除の前払いも含めて計9,310億ドルとしています。[9] 2022年6月には消費者物価が前年同月より9.1%高くなり、1981年以来の上昇幅になりました。[13]"
+          ],
+          [
+            "p",
+            "そのうちどれだけがコロナ禍の財政支出によるものかは議論が分かれ、しかも小切手はその支出の一部にすぎません（失業給付の上乗せや企業への支援などもありました）。サンフランシスコ連銀のエコノミストは、アメリカの財政支援が2021年末までにインフレ率を約3ポイント押し上げた可能性があると推計し、推計の不確かさが大きいことも強調しています。[10] 連邦準備制度の分析ノートは約2.5ポイントとしました。[12] それより前のサンフランシスコ連銀の推計では、1,400ドルの小切手を含む米国救済計画（American Rescue Plan）だけの影響は、コアインフレ率で年約0.3ポイントでした。[11] 同じ時期には、供給網の混乱やエネルギー価格が世界中でインフレを押し上げていました。"
+          ],
+          [
+            "p",
+            "こちらも規模を比べると、9,310億ドルは、アメリカで全員に月1,000ドルを1年配る費用（{4.10兆ドル|/essays/us-basic-income-cost/}）の約23%です。[14]"
+          ],
+          [
+            "h",
+            "お金の出どころがなぜ大事か"
+          ],
+          [
+            "p",
+            "これらの事例と、税を財源にしたベーシックインカムが違う理由は、経済学で簡単に説明できます。物価は、経済全体の支出が、経済が生み出せるものより速く増えると上がりやすくなります。税を財源にしたベーシックインカムは、おもに支出する力を一部の人から別の人へ移すものです。得をする人が支出を増やしても、税を多く払う人が支出を減らすので、少なくとも一部は打ち消し合います。全体の需要が増えるのは、追加の1円・1ドルのうち両者がどれだけ使うかの差の分だけです。2020年の日本では、所得が下から3分の1の世帯は給付の約32%を使い、中位と上位の3分の1でははっきりした効果が見られなかったと内閣府は分析しています。[7]"
+          ],
+          [
+            "p",
+            "借金で、あるいは中央銀行がお金を刷って配るベーシックインカムは、もとからある支出の上に新しい支出を足します。ケニアの農村のように経済に余力があれば、その多くはモノを増やすことで満たせますが、余力がなければ、2021〜22年のアメリカのように、より多くが値上がりとして表れます。どの税で賄うかも関係します。消費税を上げて賄えば、税率を上げた分だけ、物価は一度にそのまま上がります。またジョーンズとマリネスクは、住宅や地元のサービスのように供給をすぐには増やせないものの値段は、貿易される品物より反応が大きいと考えられると指摘しています。[2]"
+          ],
+          [
+            "p",
+            "いちばん大事なのは規模です。日本で月7万円のベーシックインカムを配れば年103.2兆円で、国の税収の122%にあたります。アメリカで全員に月1,000ドルなら4.10兆ドルで、連邦政府の収入の76%です。[14] これだけのお金を毎年、税の仕組みを通して動かすのは、上のどの事例よりもはるかに大きな話です。"
+          ],
+          [
+            "h",
+            "データにもわからないこと"
+          ],
+          [
+            "p",
+            "恒久的に、国全体で、税を財源に、暮らせる水準のベーシックインカムを配った国は、これまで一つもありません。どの証拠も、その一部が欠けています。ケニアの給付は大きかったものの地域限定で、一回きりで、外からのお金でした。アラスカの配当は恒久的ですが額は小さく、推計も不確かすぎて決着がつきません。日本とアメリカの給付は全国規模でしたが一回きりで、借金で賄われ、コロナ禍や世界的な供給の混乱と入り混じっていました。"
+          ],
+          [
+            "p",
+            "言えるのは次のことです。これまで試された規模の現金給付は、余力のある経済ではインフレをほとんど起こしていません。目いっぱいの経済に借金で大きな給付をすれば、いくらか押し上げたと考えられます。そして、本格的で恒久的な、税を財源にしたベーシックインカムが物価にどう影響するかは、まだ測られていません。費用は{BI計算機|/calc/}や{211か国の比較|/calc/countries/}で確かめられます。このエッセイの数字は、出典と日付とともに{inflation-2026.json|/inflation-2026.json}にまとめています。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "The first objection to a basic income is often about prices: if everyone gets money, shops will raise their prices and the money will be worth less. It is a fair question, and there is now some evidence on it. In rural Kenya, cash worth more than 15% of the local economy raised local prices by 0.1% on average.[1] In Alaska, where almost every resident has received a dividend every year since 1982, the best estimate is 0.2 percentage points more inflation a year, too imprecise to tell from zero.[2] For the pandemic payments in the United States, estimates of how much all the government’s support added to inflation run from about 0.3 to about 3 percentage points.[10][11][12] Below: what each case measured, why it matters where the money comes from, and what none of them can tell us."
+          ],
+          [
+            "h",
+            "Three kinds of payment"
+          ],
+          [
+            "p",
+            "The evidence comes from three quite different things, and they are easy to mix up. Local pilots pay a limited group in a limited area, often with money from outside it: a charity, a foundation or a donor. Nationwide one-off payments, like Japan’s ¥100,000 in 2020 or the US stimulus checks, reach almost everyone once or a few times; neither was paid for with new taxes, and both came on top of existing spending in the middle of a recession. A permanent basic income, paid to everyone every month and funded by taxes, is the third kind, and no country has tried it at a national scale. Alaska’s dividend sits in between: permanent and universal, but within one state, paid from the earnings of an oil fund, and $1,000 in 2025.[4]"
+          ],
+          [
+            "t",
+            "Case | Who got how much | Where the money came from | What happened to prices\nKenya, GiveDirectly (2014–2017) | About $1,000 per eligible household, over 15% of local GDP | A charity, from outside the area | 0.1% higher on average; under 1% even when transfers peaked[1]\nAlaska Permanent Fund Dividend (since 1982) | Almost every resident, once a year ($1,000 in 2025) | Earnings of the state’s oil fund | About 0.2 points more inflation a year; not statistically significant[2]\nJapan, Special Cash Payment (2020) | ¥100,000 per person once; ¥12.67 trillion | National budget, no new taxes | Consumer prices 0.0% in 2020 and −0.2% in 2021[5][8]\nUnited States, stimulus checks (2020–2021) | Up to $1,200, $600 and $1,400 per adult; $931 billion in direct payments | Federal borrowing | All pandemic fiscal support: about 0.3 to 3 points of inflation, depending on the estimate[9][10][11][12]"
+          ],
+          [
+            "h",
+            "Kenya: a big local shock, tiny price effects"
+          ],
+          [
+            "p",
+            "The strongest evidence is a randomised study of GiveDirectly’s transfers in western Kenya by Dennis Egger, Johannes Haushofer, Edward Miguel, Paul Niehaus and Michael Walker, published in Econometrica in 2022. About a third of the households in 653 villages were eligible and received three transfers totalling KES 87,000 (about $1,000, or $1,871 at purchasing power parity), 75% of a recipient household’s typical annual spending. Across the treated area the transfers came to over 15% of local GDP.[1]"
+          ],
+          [
+            "p",
+            "Spending rose, and local businesses sold more, including to households that got nothing. But prices barely moved: average price inflation was 0.1%, and even in the months with the largest transfers the estimated price effects stayed below 1%.[1] Local shops and farms could sell more without charging more, so the extra spending showed up as more goods sold rather than as higher prices."
+          ],
+          [
+            "p",
+            "Two things limit how far this result travels. The money came from outside the local economy, so locally it was entirely new demand, which makes the small price effect more striking. But rural Kenya had spare capacity: people and businesses who could produce and sell more at the same price. An economy already running at full stretch may respond differently."
+          ],
+          [
+            "h",
+            "Alaska: a permanent dividend, an imprecise answer"
+          ],
+          [
+            "p",
+            "Alaska has paid a dividend from its Permanent Fund to almost every resident each year since 1982; in 2025 it was $1,000.[4] Damon Jones and Ioana Marinescu compared Alaska’s inflation with a “synthetic Alaska” built from other states. After 1982 Alaska’s inflation was on average 0.2 percentage points a year higher, but the range of their estimate runs from −0.5 to +1 point, so it does not rule out zero. They call the evidence suggestive and say much uncertainty remains, partly because inflation was high and falling fast when the dividend began.[2]"
+          ],
+          [
+            "p",
+            "In an earlier study the same authors found that the dividend did not reduce employment, while part-time work rose by 1.8 percentage points.[3]"
+          ],
+          [
+            "h",
+            "Japan 2020: ¥100,000 for everyone, and prices did not rise"
+          ],
+          [
+            "p",
+            "In 2020 almost everyone living in Japan received ¥100,000; about ¥12.67 trillion was paid out.[5] Studies of bank and budgeting-app records found that much of it was not spent straight away: about 16% within six weeks in one study, and about 22% over 16 weeks in the Cabinet Office’s analysis.[6][7] Consumer prices did not rise: the national consumer price index was unchanged in 2020 (0.0%) and fell by 0.2% in 2021.[8]"
+          ],
+          [
+            "p",
+            "That does not prove the payment had no effect on prices. Demand was falling because of the pandemic, people could not travel or eat out as before, and other policies were moving prices too. What it does show is that a one-off payment of this size, in that situation, did not set off inflation. For scale, ¥12.67 trillion is about 86% of what a basic income of just ¥10,000 a month for everyone would cost in a single year ({¥14.7 trillion|/essays/japan-basic-income-cost/}).[14] We look at {where the ¥100,000 went|/essays/japan-special-cash-payment/} in a separate essay."
+          ],
+          [
+            "h",
+            "United States 2021–22: when inflation did come"
+          ],
+          [
+            "p",
+            "The United States sent three rounds of checks to around 165 million people: up to $1,200 per adult in spring 2020, $600 at the end of 2020 and $1,400 in March 2021. The Government Accountability Office counts $931 billion in direct payments to individuals from April 2020 to December 2021, including the advance payments of the child tax credit.[9] By June 2022 consumer prices were 9.1% higher than a year earlier, the largest rise since 1981.[13]"
+          ],
+          [
+            "p",
+            "How much of that came from pandemic spending is debated, and the checks were only part of that spending, next to extra unemployment benefits, support for businesses and more. Economists at the San Francisco Fed estimated that US fiscal support may have raised inflation by about 3 percentage points by the end of 2021, and stressed that the estimate is very uncertain.[10] A Federal Reserve note put the contribution at about 2.5 points.[12] An earlier San Francisco Fed estimate for the American Rescue Plan alone, which included the $1,400 checks, came to about 0.3 points of core inflation a year.[11] At the same time, supply-chain problems and energy prices were pushing inflation up around the world."
+          ],
+          [
+            "p",
+            "For scale again, $931 billion is about 23% of one year of $1,000 a month for everyone in the United States ({$4.10 trillion|/essays/us-basic-income-cost/}).[14]"
+          ],
+          [
+            "h",
+            "Why it matters where the money comes from"
+          ],
+          [
+            "p",
+            "Economics gives a simple reason why these cases differ from a tax-funded basic income. Prices tend to rise when total spending grows faster than what the economy can produce. A basic income funded by taxes mostly moves spending power from some people to others: the extra spending of those who gain is offset, at least in part, by lower spending of those who pay more tax. Total demand grows only by the difference in how much of each extra yen or dollar the two groups spend. In Japan in 2020, households in the bottom third by income spent about 32% of the payment, while the Cabinet Office found no clear effect for the middle and top thirds.[7]"
+          ],
+          [
+            "p",
+            "A basic income funded by borrowing, or by a central bank creating money, adds new spending on top of what is already there. If the economy has spare capacity, as rural Kenya did, much of it can be met with more goods; if it does not, more of it shows up as higher prices, as in the United States in 2021–22. The kind of tax matters too: paying for it with a higher consumption tax would raise prices directly, once, by the size of the tax change. And Jones and Marinescu note that prices of things that are hard to supply more of quickly, such as housing and local services, would be expected to respond more than traded goods.[2]"
+          ],
+          [
+            "p",
+            "Size matters most. A basic income of ¥70,000 a month in Japan would cost ¥103.2 trillion a year, 122% of national tax revenue; $1,000 a month for everyone in the United States would cost $4.10 trillion, 76% of federal revenue.[14] Moving that much money through the tax system every year is far larger than any of the cases above."
+          ],
+          [
+            "h",
+            "What the evidence can’t tell us"
+          ],
+          [
+            "p",
+            "No country has ever paid a permanent, national basic income, funded by taxes, at a level people could live on. Each piece of evidence misses part of that. Kenya’s transfers were large but local, paid once and funded from outside. Alaska’s dividend is permanent but small, and the estimate is too imprecise to settle the question. Japan’s and America’s payments were national but one-off, paid for by borrowing, and mixed up with a pandemic and global supply shocks."
+          ],
+          [
+            "p",
+            "What can be said is this: cash transfers of the sizes tried so far have caused little inflation where there was spare capacity; large borrowed payments into a stretched economy probably added some; and the effect of a full, permanent, tax-funded basic income has not been measured. To check the costs yourself, try the {basic income calculator|/calc/} or {all 211 countries|/calc/countries/}. Every figure in this essay, with its source and date, is in {inflation-2026.json|/inflation-2026.json}."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "对基本收入最常见的反对意见之一是物价：如果给每个人发钱，商店就会涨价，钱也就不值钱了。这个疑问很合理，而现在已经有一些证据。在肯尼亚农村，相当于当地经济15%以上的现金只让当地物价平均上涨了0.1%。[1] 在阿拉斯加，自1982年起几乎每位居民每年都领到分红，最可信的估计是通胀率每年高0.2个百分点，但不确定到无法与零区分。[2] 对于美国疫情期间的发钱，关于政府全部支持措施推高了多少通胀的估计，从约0.3个百分点到约3个百分点不等。[10][11][12] 下面依次看每个案例测到了什么、钱从哪里来为什么重要，以及它们都回答不了的问题。"
+          ],
+          [
+            "h",
+            "三种发钱方式"
+          ],
+          [
+            "p",
+            "这些证据来自性质很不一样的三类事情，容易混为一谈。第一类是地方试点：在有限地区给有限的人发钱，钱往往来自外部，比如慈善机构、基金会或捐助者。第二类是全国性的一次性发放，例如2020年日本的10万日元或美国的刺激支票，几乎人人都领到一次或几次；两者都不是靠新税筹资，而是在经济衰退中加在原有支出之上。第三类是永久性的基本收入：每月发给每个人、由税收支撑，没有任何国家在全国范围内试过。阿拉斯加的分红介于两者之间：永久而且普遍，但只在一个州内，来自石油基金的收益，2025年为1,000美元。[4]"
+          ],
+          [
+            "t",
+            "案例 | 谁领多少 | 钱从哪里来 | 物价怎样\n肯尼亚，GiveDirectly（2014–2017年） | 每个符合条件的家庭约1,000美元，超过当地GDP的15% | 慈善机构，来自当地以外 | 平均上涨0.1%；即使发放最多的时期也低于1%[1]\n阿拉斯加永久基金分红（1982年起） | 几乎所有居民，每年一次（2025年1,000美元） | 州石油基金的收益 | 通胀率每年约高0.2个百分点；统计上不显著[2]\n日本，特别定额给付金（2020年） | 每人一次10万日元；共12.67万亿日元 | 国家预算，没有新税 | 消费者物价2020年0.0%，2021年−0.2%[5][8]\n美国，刺激支票（2020–2021年） | 每位成年人最多1,200、600和1,400美元；直接支付共9,310亿美元 | 联邦借债 | 疫情期间全部财政支持：视估计而定，约推高通胀0.3至3个百分点[9][10][11][12]"
+          ],
+          [
+            "h",
+            "肯尼亚：当地冲击很大，物价影响很小"
+          ],
+          [
+            "p",
+            "最有力的证据是对GiveDirectly在肯尼亚西部发放现金所做的随机研究，作者是丹尼斯·埃格、约翰内斯·豪斯霍费尔、爱德华·米格尔、保罗·尼豪斯和迈克尔·沃克，2022年发表于《计量经济学》（Econometrica）。653个村庄中约三分之一的家庭符合条件，分三次共领到87,000肯尼亚先令（约1,000美元，按购买力平价为1,871美元），相当于领取家庭通常一年支出的75%。在发放地区整体上，转移金额超过当地GDP的15%。[1]"
+          ],
+          [
+            "p",
+            "支出增加了，当地商家的销售也增加了，包括卖给没有领钱的家庭。但物价几乎没动：平均物价上涨0.1%，即使在发放最多的月份，估计的物价影响也低于1%。[1] 当地商店和农户不用涨价就能多卖，所以多出来的支出体现为卖出更多商品，而不是价格更高。"
+          ],
+          [
+            "p",
+            "这个结果能推广多远，有两点限制。钱来自当地经济之外，对当地而言完全是新增需求，这让物价影响之小更引人注目。但肯尼亚农村有闲置产能：有人和商家能以同样的价格生产和卖出更多。已经满负荷运转的经济，反应可能不同。"
+          ],
+          [
+            "h",
+            "阿拉斯加：永久分红，答案不够精确"
+          ],
+          [
+            "p",
+            "阿拉斯加自1982年起每年从永久基金向几乎所有居民发放分红，2025年为1,000美元。[4] 达蒙·琼斯和约安娜·马里内斯库把阿拉斯加的通胀与用其他州合成的“合成阿拉斯加”作比较。1982年以后，阿拉斯加的通胀率平均每年高0.2个百分点，但估计区间从−0.5到+1个百分点，不能排除零。他们称这些证据只是提示性的，仍有很大不确定性，部分原因是分红开始时通胀很高并且正在快速回落。[2]"
+          ],
+          [
+            "p",
+            "两人在更早的研究中发现，分红没有减少就业，而兼职工作的比例上升了1.8个百分点。[3]"
+          ],
+          [
+            "h",
+            "日本2020年：人人10万日元，物价没有上涨"
+          ],
+          [
+            "p",
+            "2020年，几乎所有住在日本的人都领到10万日元，共发放约12.67万亿日元。[5] 利用银行和记账应用数据的研究发现，很大一部分没有马上花掉：一项研究估计六周内花掉约16%，内阁府的分析估计16周内约22%。[6][7] 消费者物价没有上涨：全国消费者物价指数2020年持平（0.0%），2021年下降0.2%。[8]"
+          ],
+          [
+            "p",
+            "这并不能证明发钱对物价毫无影响。疫情让需求下降，人们无法像以前那样旅行和外出就餐，其他政策也在影响物价。它能说明的是：这种规模的一次性发放，在那种情况下没有引发通胀。比较一下规模：12.67万亿日元约等于给每人每月仅1万日元的基本收入一年费用（{14.7万亿日元|/essays/japan-basic-income-cost/}）的86%。[14] {那10万日元去了哪里|/essays/japan-special-cash-payment/}，我们在另一篇随笔中细看。"
+          ],
+          [
+            "h",
+            "美国2021–22年：通胀真的来了"
+          ],
+          [
+            "p",
+            "美国向约1.65亿人寄出了三轮支票：2020年春每位成年人最多1,200美元，2020年底600美元，2021年3月1,400美元。美国政府问责局（GAO）统计，2020年4月至2021年12月对个人的直接支付共9,310亿美元，包括儿童税收抵免的预付款。[9] 到2022年6月，消费者物价比一年前高9.1%，是1981年以来的最大涨幅。[13]"
+          ],
+          [
+            "p",
+            "其中有多少来自疫情期间的财政支出仍有争议，而且支票只是这些支出的一部分，另外还有额外的失业救济、企业援助等。旧金山联储的经济学家估计，美国的财政支持到2021年底可能使通胀上升约3个百分点，并强调这个估计很不确定。[10] 美联储的一份研究笔记估计约2.5个百分点。[12] 旧金山联储更早对《美国救援计划》（包含1,400美元支票）单独所做的估计，是核心通胀每年约0.3个百分点。[11] 同一时期，供应链问题和能源价格也在全球推高通胀。"
+          ],
+          [
+            "p",
+            "同样比较一下规模：9,310亿美元约等于在美国给每人每月1,000美元一年费用（{4.10万亿美元|/essays/us-basic-income-cost/}）的23%。[14]"
+          ],
+          [
+            "h",
+            "钱从哪里来为什么重要"
+          ],
+          [
+            "p",
+            "经济学可以简单解释这些案例为什么不同于靠税收支撑的基本收入。当总支出增长快于经济的生产能力时，物价往往上涨。靠税收支撑的基本收入，主要是把购买力从一部分人转移给另一部分人：得益者多花的钱，至少部分会被多交税的人少花的钱抵消。总需求只增加两类人对每多一日元或一美元的花费比例之差。在2020年的日本，按收入排在最低三分之一的家庭花掉了约32%的给付金，而内阁府没有发现中间和最高三分之一家庭有明显效果。[7]"
+          ],
+          [
+            "p",
+            "靠借债或由中央银行印钱支撑的基本收入，则是在原有支出之上增加新的支出。如果经济有闲置产能，像肯尼亚农村那样，大部分可以通过多生产来满足；如果没有，更多会表现为涨价，就像2021–22年的美国。用哪种税也有关系：用提高消费税来筹资，会按税率变化的幅度一次性直接推高物价。琼斯和马里内斯库还指出，像住房和本地服务这类难以很快增加供给的东西，价格预计会比可贸易商品反应更大。[2]"
+          ],
+          [
+            "p",
+            "最重要的是规模。在日本发每月7万日元的基本收入，一年要103.2万亿日元，是国家税收的122%；在美国给每人每月1,000美元，一年要4.10万亿美元，是联邦收入的76%。[14] 每年通过税收体系转移这么多钱，远大于上面任何一个案例。"
+          ],
+          [
+            "h",
+            "证据还回答不了的问题"
+          ],
+          [
+            "p",
+            "还没有任何国家在全国范围内、永久地、靠税收发放足以生活的基本收入。每项证据都缺了其中一部分。肯尼亚的转移金额大，但局限于地方、只发一次、钱来自外部。阿拉斯加的分红是永久的，但金额小，估计也太不精确，无法定论。日本和美国的发放是全国性的，但只是一次性、靠借债，并且与疫情和全球供应冲击交织在一起。"
+          ],
+          [
+            "p",
+            "能说的是：迄今试过的规模的现金转移，在有闲置产能的地方几乎没有引发通胀；向满负荷的经济大规模发放借来的钱，可能推高了一些通胀；而完整、永久、靠税收支撑的基本收入对物价的影响，还没有被测量过。想自己核对费用，可以用{基本收入计算器|/calc/}或{211个国家的比较|/calc/countries/}。本文的每个数字及其出处和日期都在{inflation-2026.json|/inflation-2026.json}里。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "बेसिक इनकम पर पहली आपत्ति अक्सर क़ीमतों को लेकर होती है: अगर सबको पैसा मिलेगा तो दुकानें दाम बढ़ा देंगी और पैसे की क़ीमत घट जाएगी। सवाल वाजिब है, और अब इस पर कुछ सबूत हैं। केन्या के गाँवों में स्थानीय अर्थव्यवस्था के 15% से ज़्यादा के बराबर नकद बाँटा गया, फिर भी स्थानीय क़ीमतें औसतन सिर्फ़ 0.1% बढ़ीं।[1] अलास्का में, जहाँ 1982 से लगभग हर निवासी को हर साल डिविडेंड मिलता है, सबसे अच्छा अनुमान है कि महँगाई दर हर साल 0.2 प्रतिशत अंक ज़्यादा रही, लेकिन यह अनुमान इतना अनिश्चित है कि इसे शून्य से अलग नहीं किया जा सकता।[2] अमेरिका में महामारी के दौरान दी गई रक़म के बारे में, सरकार की पूरी मदद ने महँगाई कितनी बढ़ाई, इसके अनुमान लगभग 0.3 से लगभग 3 प्रतिशत अंक तक हैं।[10][11][12] आगे: हर मामले में क्या मापा गया, पैसा कहाँ से आता है यह क्यों मायने रखता है, और कौन-सी बात इनमें से कोई नहीं बता सकता।"
+          ],
+          [
+            "h",
+            "भुगतान के तीन प्रकार"
+          ],
+          [
+            "p",
+            "सबूत तीन काफ़ी अलग चीज़ों से आते हैं, और इन्हें आपस में मिलाना आसान है। पहला, स्थानीय पायलट: एक सीमित इलाक़े में सीमित लोगों को पैसा, अक्सर बाहर से आया हुआ, जैसे किसी चैरिटी, फ़ाउंडेशन या दानदाता से। दूसरा, देश भर में एक बार का भुगतान, जैसे 2020 में जापान के 1,00,000 येन या अमेरिका के स्टिमुलस चेक, जो लगभग सबको एक या कुछ बार मिले; दोनों में से कोई भी नए टैक्स से नहीं दिया गया, और दोनों मंदी के बीच मौजूदा ख़र्च के ऊपर जोड़े गए। तीसरा, स्थायी बेसिक इनकम, जो हर महीने सबको मिले और टैक्स से चले; इसे किसी देश ने राष्ट्रीय स्तर पर नहीं आज़माया है। अलास्का का डिविडेंड बीच में है: स्थायी और सबके लिए, लेकिन एक ही राज्य में, एक तेल फ़ंड की कमाई से, और 2025 में 1,000 डॉलर।[4]"
+          ],
+          [
+            "t",
+            "मामला | किसे कितना मिला | पैसा कहाँ से आया | क़ीमतों का क्या हुआ\nकेन्या, GiveDirectly (2014–2017) | हर पात्र परिवार को लगभग 1,000 डॉलर, स्थानीय GDP के 15% से ज़्यादा | एक चैरिटी, इलाक़े के बाहर से | औसतन 0.1% ज़्यादा; सबसे ज़्यादा भुगतान के समय भी 1% से कम[1]\nअलास्का परमानेंट फ़ंड डिविडेंड (1982 से) | लगभग हर निवासी, साल में एक बार (2025 में 1,000 डॉलर) | राज्य के तेल फ़ंड की कमाई | महँगाई हर साल लगभग 0.2 अंक ज़्यादा; सांख्यिकीय रूप से महत्वपूर्ण नहीं[2]\nजापान, विशेष नकद भुगतान (2020) | हर व्यक्ति को एक बार 1,00,000 येन; कुल 12.67 ट्रिलियन येन | राष्ट्रीय बजट, कोई नया टैक्स नहीं | उपभोक्ता क़ीमतें 2020 में 0.0%, 2021 में −0.2%[5][8]\nअमेरिका, स्टिमुलस चेक (2020–2021) | हर वयस्क को अधिकतम 1,200, 600 और 1,400 डॉलर; सीधे भुगतान कुल 931 अरब डॉलर | संघीय सरकार का उधार | महामारी की पूरी वित्तीय मदद: अनुमान के हिसाब से महँगाई में लगभग 0.3 से 3 अंक[9][10][11][12]"
+          ],
+          [
+            "h",
+            "केन्या: इलाक़े के लिए बड़ा झटका, क़ीमतों पर बहुत छोटा असर"
+          ],
+          [
+            "p",
+            "सबसे मज़बूत सबूत पश्चिमी केन्या में GiveDirectly के भुगतानों पर एक रैंडमाइज़्ड अध्ययन है, जिसे डेनिस एगर, योहानेस हाउसहोफ़र, एडवर्ड मिगेल, पॉल नीहॉस और माइकल वॉकर ने 2022 में Econometrica में प्रकाशित किया। 653 गाँवों के लगभग एक-तिहाई परिवार पात्र थे और उन्हें तीन किस्तों में कुल 87,000 केन्याई शिलिंग (लगभग 1,000 डॉलर, क्रय-शक्ति समता पर 1,871 डॉलर) मिले, जो पाने वाले परिवार के आम सालाना ख़र्च का 75% था। पूरे इलाक़े में यह रक़म स्थानीय GDP के 15% से ज़्यादा थी।[1]"
+          ],
+          [
+            "p",
+            "ख़र्च बढ़ा, और स्थानीय दुकानों की बिक्री भी बढ़ी, उन परिवारों को भी जिन्हें कुछ नहीं मिला था। लेकिन क़ीमतें लगभग नहीं हिलीं: औसत महँगाई 0.1% रही, और सबसे ज़्यादा भुगतान वाले महीनों में भी क़ीमतों पर अनुमानित असर 1% से कम रहा।[1] स्थानीय दुकानें और किसान दाम बढ़ाए बिना ज़्यादा बेच पाए, इसलिए बढ़ा हुआ ख़र्च ऊँची क़ीमतों के बजाय ज़्यादा बिके सामान के रूप में दिखा।"
+          ],
+          [
+            "p",
+            "यह नतीजा कितना दूर तक लागू होता है, इसकी दो सीमाएँ हैं। पैसा स्थानीय अर्थव्यवस्था के बाहर से आया, इसलिए इलाक़े के लिए यह पूरी तरह नई माँग थी, जो क़ीमतों पर छोटे असर को और उल्लेखनीय बनाती है। लेकिन केन्या के गाँवों में खाली क्षमता थी: ऐसे लोग और कारोबार जो उसी दाम पर ज़्यादा बना और बेच सकते थे। जो अर्थव्यवस्था पहले से पूरी क्षमता पर चल रही हो, वहाँ प्रतिक्रिया अलग हो सकती है।"
+          ],
+          [
+            "h",
+            "अलास्का: स्थायी डिविडेंड, अस्पष्ट जवाब"
+          ],
+          [
+            "p",
+            "अलास्का 1982 से हर साल अपने परमानेंट फ़ंड से लगभग हर निवासी को डिविडेंड देता है; 2025 में यह 1,000 डॉलर था।[4] डेमन जोन्स और इओआना मारिनेस्कू ने अलास्का की महँगाई की तुलना दूसरे राज्यों से बने एक “सिंथेटिक अलास्का” से की। 1982 के बाद अलास्का की महँगाई औसतन हर साल 0.2 प्रतिशत अंक ज़्यादा रही, लेकिन उनके अनुमान की सीमा −0.5 से +1 अंक तक है, इसलिए शून्य की संभावना ख़ारिज नहीं होती। वे इसे संकेत देने वाला सबूत कहते हैं और लिखते हैं कि बहुत अनिश्चितता बाक़ी है, कुछ इसलिए कि डिविडेंड शुरू होते समय महँगाई ऊँची थी और तेज़ी से गिर रही थी।[2]"
+          ],
+          [
+            "p",
+            "इन्हीं लेखकों ने एक पुराने अध्ययन में पाया कि डिविडेंड से रोज़गार कम नहीं हुआ, जबकि अंशकालिक काम 1.8 प्रतिशत अंक बढ़ा।[3]"
+          ],
+          [
+            "h",
+            "जापान 2020: सबको 1,00,000 येन, और क़ीमतें नहीं बढ़ीं"
+          ],
+          [
+            "p",
+            "2020 में जापान में रहने वाले लगभग हर व्यक्ति को 1,00,000 येन मिले; कुल लगभग 12.67 ट्रिलियन येन बाँटे गए।[5] बैंक और बजट ऐप के रिकॉर्ड पर आधारित अध्ययनों में पाया गया कि इसका बड़ा हिस्सा तुरंत ख़र्च नहीं हुआ: एक अध्ययन में छह हफ़्तों में लगभग 16%, और कैबिनेट ऑफ़िस के विश्लेषण में 16 हफ़्तों में लगभग 22%।[6][7] उपभोक्ता क़ीमतें नहीं बढ़ीं: राष्ट्रीय उपभोक्ता मूल्य सूचकांक 2020 में स्थिर रहा (0.0%) और 2021 में 0.2% गिरा।[8]"
+          ],
+          [
+            "p",
+            "इससे यह साबित नहीं होता कि भुगतान का क़ीमतों पर कोई असर नहीं था। महामारी की वजह से माँग गिर रही थी, लोग पहले की तरह यात्रा नहीं कर सकते थे या बाहर नहीं खा सकते थे, और दूसरी नीतियाँ भी क़ीमतों को प्रभावित कर रही थीं। इससे इतना पता चलता है कि उस हालत में इतने बड़े एक बार के भुगतान से महँगाई नहीं भड़की। आकार की तुलना करें तो 12.67 ट्रिलियन येन, सबको सिर्फ़ 10,000 येन महीने की बेसिक इनकम के एक साल के ख़र्च ({14.7 ट्रिलियन येन|/essays/japan-basic-income-cost/}) का लगभग 86% है।[14] {1,00,000 येन कहाँ गए|/essays/japan-special-cash-payment/}, यह हम एक अलग निबंध में देखते हैं।"
+          ],
+          [
+            "h",
+            "अमेरिका 2021–22: जब महँगाई सचमुच आई"
+          ],
+          [
+            "p",
+            "अमेरिका ने लगभग 16.5 करोड़ लोगों को तीन दौर में चेक भेजे: 2020 के वसंत में हर वयस्क को अधिकतम 1,200 डॉलर, 2020 के आख़िर में 600 डॉलर और मार्च 2021 में 1,400 डॉलर। गवर्नमेंट अकाउंटेबिलिटी ऑफ़िस (GAO) के अनुसार अप्रैल 2020 से दिसंबर 2021 तक लोगों को सीधे भुगतान कुल 931 अरब डॉलर था, जिसमें चाइल्ड टैक्स क्रेडिट के अग्रिम भुगतान भी शामिल हैं।[9] जून 2022 तक उपभोक्ता क़ीमतें एक साल पहले से 9.1% ज़्यादा थीं, जो 1981 के बाद सबसे बड़ी बढ़ोतरी थी।[13]"
+          ],
+          [
+            "p",
+            "इसमें से कितना महामारी के ख़र्च से आया, इस पर बहस है, और चेक उस ख़र्च का केवल एक हिस्सा थे; अतिरिक्त बेरोज़गारी भत्ता, कारोबारों को मदद और बहुत कुछ भी था। सैन फ़्रांसिस्को फ़ेड के अर्थशास्त्रियों ने अनुमान लगाया कि अमेरिकी वित्तीय मदद ने 2021 के अंत तक महँगाई लगभग 3 प्रतिशत अंक बढ़ाई होगी, और ज़ोर दिया कि यह अनुमान बहुत अनिश्चित है।[10] फ़ेडरल रिज़र्व के एक नोट ने यह योगदान लगभग 2.5 अंक बताया।[12] सैन फ़्रांसिस्को फ़ेड के एक पहले के अनुमान में, केवल अमेरिकन रेस्क्यू प्लान का असर, जिसमें 1,400 डॉलर के चेक थे, कोर महँगाई में साल में लगभग 0.3 अंक था।[11] उसी समय सप्लाई-चेन की दिक़्क़तें और ऊर्जा की क़ीमतें दुनिया भर में महँगाई बढ़ा रही थीं।"
+          ],
+          [
+            "p",
+            "फिर से आकार की तुलना करें तो 931 अरब डॉलर, अमेरिका में सबको 1,000 डॉलर महीने के एक साल के ख़र्च ({4.10 ट्रिलियन डॉलर|/essays/us-basic-income-cost/}) का लगभग 23% है।[14]"
+          ],
+          [
+            "h",
+            "पैसा कहाँ से आता है, यह क्यों मायने रखता है"
+          ],
+          [
+            "p",
+            "अर्थशास्त्र एक सीधा कारण बताता है कि ये मामले टैक्स से चलने वाली बेसिक इनकम से अलग क्यों हैं। जब कुल ख़र्च अर्थव्यवस्था की उत्पादन क्षमता से तेज़ बढ़ता है, तो क़ीमतें बढ़ने लगती हैं। टैक्स से चलने वाली बेसिक इनकम ज़्यादातर ख़र्च करने की ताक़त कुछ लोगों से दूसरों तक पहुँचाती है: जिन्हें फ़ायदा होता है उनका बढ़ा ख़र्च, कम से कम कुछ हद तक, ज़्यादा टैक्स देने वालों के घटे ख़र्च से बराबर हो जाता है। कुल माँग केवल इस अंतर जितनी बढ़ती है कि हर अतिरिक्त येन या डॉलर में से दोनों समूह कितना ख़र्च करते हैं। 2020 में जापान में आय के हिसाब से सबसे नीचे के एक-तिहाई परिवारों ने भुगतान का लगभग 32% ख़र्च किया, जबकि कैबिनेट ऑफ़िस को बीच और ऊपर के एक-तिहाई परिवारों में कोई साफ़ असर नहीं मिला।[7]"
+          ],
+          [
+            "p",
+            "उधार से, या केंद्रीय बैंक के नया पैसा बनाने से चलने वाली बेसिक इनकम मौजूदा ख़र्च के ऊपर नया ख़र्च जोड़ती है। अगर अर्थव्यवस्था में खाली क्षमता हो, जैसे केन्या के गाँवों में थी, तो इसका बड़ा हिस्सा ज़्यादा सामान बनाकर पूरा हो सकता है; अगर न हो, तो इसका ज़्यादा हिस्सा ऊँची क़ीमतों के रूप में दिखता है, जैसे 2021–22 में अमेरिका में। टैक्स का प्रकार भी मायने रखता है: इसे ऊँचे उपभोग कर से चलाया जाए तो क़ीमतें सीधे, एक बार, टैक्स में बदलाव जितनी बढ़ेंगी। और जोन्स व मारिनेस्कू लिखते हैं कि जिन चीज़ों की आपूर्ति जल्दी नहीं बढ़ाई जा सकती, जैसे मकान और स्थानीय सेवाएँ, उनकी क़ीमतें व्यापार होने वाले सामान से ज़्यादा प्रतिक्रिया दे सकती हैं।[2]"
+          ],
+          [
+            "p",
+            "सबसे ज़्यादा मायने आकार का है। जापान में 70,000 येन महीने की बेसिक इनकम का ख़र्च साल में 103.2 ट्रिलियन येन होगा, यानी राष्ट्रीय कर राजस्व का 122%; अमेरिका में सबको 1,000 डॉलर महीना देने का ख़र्च 4.10 ट्रिलियन डॉलर होगा, यानी संघीय आमदनी का 76%।[14] हर साल इतना पैसा टैक्स व्यवस्था से होकर ले जाना ऊपर के किसी भी मामले से कहीं बड़ा है।"
+          ],
+          [
+            "h",
+            "सबूत क्या नहीं बता सकते"
+          ],
+          [
+            "p",
+            "किसी भी देश ने आज तक टैक्स से चलने वाली, स्थायी, राष्ट्रीय बेसिक इनकम ऐसे स्तर पर नहीं दी जिस पर लोग गुज़ारा कर सकें। हर सबूत में इसका कोई हिस्सा छूट जाता है। केन्या के भुगतान बड़े थे, लेकिन स्थानीय, एक बार के और बाहर के पैसे से। अलास्का का डिविडेंड स्थायी है लेकिन छोटा, और अनुमान इतना अस्पष्ट है कि सवाल तय नहीं होता। जापान और अमेरिका के भुगतान राष्ट्रीय थे, लेकिन एक बार के, उधार से, और महामारी व दुनिया भर की आपूर्ति की गड़बड़ी से घुले-मिले।"
+          ],
+          [
+            "p",
+            "इतना कहा जा सकता है: अब तक आज़माए गए आकार के नकद भुगतानों से वहाँ बहुत कम महँगाई आई जहाँ खाली क्षमता थी; पूरी क्षमता पर चल रही अर्थव्यवस्था में उधार से दिए बड़े भुगतानों ने शायद कुछ महँगाई बढ़ाई; और पूरी, स्थायी, टैक्स से चलने वाली बेसिक इनकम का असर अभी मापा नहीं गया है। ख़र्च ख़ुद जाँचने के लिए {बेसिक इनकम कैलकुलेटर|/calc/} या {सभी 211 देश|/calc/countries/} देखें। इस निबंध का हर आँकड़ा, स्रोत और तारीख़ के साथ, {inflation-2026.json|/inflation-2026.json} में है।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "La primera objeción a una renta básica suele tener que ver con los precios: si todo el mundo recibe dinero, las tiendas subirán los precios y el dinero valdrá menos. Es una pregunta razonable, y ya hay algunos datos. En la Kenia rural, un dinero equivalente a más del 15% de la economía local subió los precios locales un 0,1% de media.[1] En Alaska, donde casi todos los residentes reciben un dividendo cada año desde 1982, la mejor estimación es 0,2 puntos más de inflación al año, demasiado imprecisa para distinguirla de cero.[2] En los pagos de la pandemia en Estados Unidos, las estimaciones de cuánto añadió a la inflación todo el apoyo público van de unos 0,3 a unos 3 puntos porcentuales.[10][11][12] A continuación: qué midió cada caso, por qué importa de dónde sale el dinero y qué no puede decirnos ninguno."
+          ],
+          [
+            "h",
+            "Tres tipos de pago"
+          ],
+          [
+            "p",
+            "Los datos proceden de tres cosas bastante distintas, y es fácil mezclarlas. Los pilotos locales pagan a un grupo limitado en una zona limitada, a menudo con dinero de fuera: una ONG, una fundación o un donante. Los pagos únicos a escala nacional, como los 100.000 yenes de Japón en 2020 o los cheques de estímulo de EE. UU., llegan a casi todos una o pocas veces; ninguno se pagó con impuestos nuevos, y ambos se sumaron al gasto existente en plena recesión. Una renta básica permanente, pagada a todos cada mes y financiada con impuestos, es el tercer tipo, y ningún país la ha probado a escala nacional. El dividendo de Alaska está en medio: permanente y universal, pero dentro de un solo estado, pagado con los rendimientos de un fondo petrolero, y de 1.000 dólares en 2025.[4]"
+          ],
+          [
+            "t",
+            "Caso | Quién recibió cuánto | De dónde salió el dinero | Qué pasó con los precios\nKenia, GiveDirectly (2014–2017) | Unos 1.000 dólares por hogar elegible, más del 15% del PIB local | Una ONG, desde fuera de la zona | 0,1% más altos de media; menos del 1% incluso en el pico de pagos[1]\nDividendo del Fondo Permanente de Alaska (desde 1982) | Casi todos los residentes, una vez al año (1.000 dólares en 2025) | Rendimientos del fondo petrolero del estado | Unos 0,2 puntos más de inflación al año; no significativo estadísticamente[2]\nJapón, Pago Especial en Efectivo (2020) | 100.000 yenes por persona una vez; 12,67 billones de yenes | Presupuesto nacional, sin impuestos nuevos | Precios al consumo: 0,0% en 2020 y −0,2% en 2021[5][8]\nEstados Unidos, cheques de estímulo (2020–2021) | Hasta 1.200, 600 y 1.400 dólares por adulto; 931.000 millones de dólares en pagos directos | Deuda federal | Todo el apoyo fiscal de la pandemia: de 0,3 a 3 puntos de inflación según la estimación[9][10][11][12]"
+          ],
+          [
+            "h",
+            "Kenia: un gran choque local, un efecto mínimo en los precios"
+          ],
+          [
+            "p",
+            "La evidencia más sólida es un estudio aleatorizado de las transferencias de GiveDirectly en el oeste de Kenia, de Dennis Egger, Johannes Haushofer, Edward Miguel, Paul Niehaus y Michael Walker, publicado en Econometrica en 2022. Alrededor de un tercio de los hogares de 653 aldeas era elegible y recibió tres transferencias por un total de 87.000 chelines kenianos (unos 1.000 dólares, o 1.871 dólares en paridad de poder adquisitivo), el 75% del gasto anual habitual de un hogar receptor. En el conjunto de la zona tratada, las transferencias superaron el 15% del PIB local.[1]"
+          ],
+          [
+            "p",
+            "El gasto subió y los negocios locales vendieron más, también a hogares que no recibieron nada. Pero los precios apenas se movieron: la inflación media fue del 0,1%, e incluso en los meses de mayores transferencias el efecto estimado en los precios quedó por debajo del 1%.[1] Las tiendas y granjas locales pudieron vender más sin cobrar más, así que el gasto adicional se tradujo en más bienes vendidos y no en precios más altos."
+          ],
+          [
+            "p",
+            "Dos cosas limitan hasta dónde se puede extrapolar este resultado. El dinero llegó de fuera de la economía local, así que para la zona fue demanda totalmente nueva, lo que hace aún más llamativo el pequeño efecto en los precios. Pero la Kenia rural tenía capacidad ociosa: personas y negocios que podían producir y vender más al mismo precio. Una economía que ya funciona a plena capacidad puede reaccionar de otra manera."
+          ],
+          [
+            "h",
+            "Alaska: un dividendo permanente, una respuesta imprecisa"
+          ],
+          [
+            "p",
+            "Alaska paga cada año desde 1982 un dividendo de su Fondo Permanente a casi todos sus residentes; en 2025 fue de 1.000 dólares.[4] Damon Jones e Ioana Marinescu compararon la inflación de Alaska con una «Alaska sintética» construida con otros estados. Después de 1982 la inflación de Alaska fue de media 0,2 puntos porcentuales más alta al año, pero el intervalo de su estimación va de −0,5 a +1 punto, así que no descarta el cero. Lo califican de evidencia sugerente y dicen que sigue habiendo mucha incertidumbre, en parte porque la inflación era alta y caía rápido cuando empezó el dividendo.[2]"
+          ],
+          [
+            "p",
+            "En un estudio anterior, los mismos autores encontraron que el dividendo no redujo el empleo, mientras que el trabajo a tiempo parcial subió 1,8 puntos porcentuales.[3]"
+          ],
+          [
+            "h",
+            "Japón 2020: 100.000 yenes para todos, y los precios no subieron"
+          ],
+          [
+            "p",
+            "En 2020 casi todas las personas que vivían en Japón recibieron 100.000 yenes; en total se pagaron unos 12,67 billones de yenes.[5] Los estudios con datos bancarios y de apps de presupuesto encontraron que buena parte no se gastó enseguida: un 16% en seis semanas según un estudio, y un 22% en 16 semanas según el análisis de la Oficina del Gabinete.[6][7] Los precios al consumo no subieron: el índice nacional de precios al consumo se mantuvo en 2020 (0,0%) y bajó un 0,2% en 2021.[8]"
+          ],
+          [
+            "p",
+            "Eso no demuestra que el pago no influyera en los precios. La demanda caía por la pandemia, la gente no podía viajar ni comer fuera como antes y otras políticas también movían los precios. Lo que sí muestra es que un pago único de ese tamaño, en esa situación, no desató la inflación. Para hacerse una idea, 12,67 billones de yenes son alrededor del 86% de lo que costaría en un solo año una renta básica de apenas 10.000 yenes al mes para todos ({14,7 billones de yenes|/essays/japan-basic-income-cost/}).[14] Vemos {adónde fueron los 100.000 yenes|/essays/japan-special-cash-payment/} en otro ensayo."
+          ],
+          [
+            "h",
+            "Estados Unidos 2021–22: cuando sí llegó la inflación"
+          ],
+          [
+            "p",
+            "Estados Unidos envió tres rondas de cheques a unos 165 millones de personas: hasta 1.200 dólares por adulto en la primavera de 2020, 600 dólares a finales de 2020 y 1.400 dólares en marzo de 2021. La Oficina de Rendición de Cuentas del Gobierno (GAO) cuenta 931.000 millones de dólares en pagos directos a personas entre abril de 2020 y diciembre de 2021, incluidos los anticipos del crédito fiscal por hijos.[9] En junio de 2022 los precios al consumo eran un 9,1% más altos que un año antes, la mayor subida desde 1981.[13]"
+          ],
+          [
+            "p",
+            "Cuánto de eso se debió al gasto de la pandemia es objeto de debate, y los cheques fueron solo una parte de ese gasto, junto a la ampliación del subsidio de desempleo, las ayudas a empresas y más. Economistas de la Reserva Federal de San Francisco estimaron que el apoyo fiscal de EE. UU. pudo subir la inflación unos 3 puntos porcentuales hasta finales de 2021, y subrayaron que la estimación es muy incierta.[10] Una nota de la Reserva Federal situó la aportación en unos 2,5 puntos.[12] Una estimación anterior de la Fed de San Francisco solo para el Plan de Rescate Estadounidense, que incluía los cheques de 1.400 dólares, era de unos 0,3 puntos de inflación subyacente al año.[11] Al mismo tiempo, los problemas en las cadenas de suministro y los precios de la energía empujaban la inflación en todo el mundo."
+          ],
+          [
+            "p",
+            "De nuevo, para comparar: 931.000 millones de dólares son alrededor del 23% de un año de 1.000 dólares al mes para todos en Estados Unidos ({4,10 billones de dólares|/essays/us-basic-income-cost/}).[14]"
+          ],
+          [
+            "h",
+            "Por qué importa de dónde sale el dinero"
+          ],
+          [
+            "p",
+            "La economía da una razón sencilla por la que estos casos difieren de una renta básica financiada con impuestos. Los precios tienden a subir cuando el gasto total crece más deprisa que lo que la economía puede producir. Una renta básica financiada con impuestos sobre todo traslada capacidad de gasto de unas personas a otras: el gasto adicional de quienes ganan se compensa, al menos en parte, con el menor gasto de quienes pagan más impuestos. La demanda total solo crece por la diferencia en cuánto gasta cada grupo de cada yen o dólar adicional. En Japón en 2020, los hogares del tercio de menores ingresos gastaron alrededor del 32% del pago, mientras que la Oficina del Gabinete no encontró un efecto claro en los tercios medio y alto.[7]"
+          ],
+          [
+            "p",
+            "Una renta básica financiada con deuda, o con dinero creado por un banco central, añade gasto nuevo encima del que ya existe. Si la economía tiene capacidad ociosa, como la Kenia rural, gran parte puede cubrirse con más bienes; si no la tiene, una parte mayor se nota en los precios, como en Estados Unidos en 2021–22. También importa el tipo de impuesto: pagarla con un impuesto al consumo más alto subiría los precios directamente, una vez, en la medida del cambio del impuesto. Y Jones y Marinescu señalan que los precios de lo que no se puede ofrecer más rápidamente, como la vivienda y los servicios locales, deberían reaccionar más que los de los bienes comerciables.[2]"
+          ],
+          [
+            "p",
+            "Lo que más importa es el tamaño. Una renta básica de 70.000 yenes al mes en Japón costaría 103,2 billones de yenes al año, el 122% de la recaudación tributaria nacional; 1.000 dólares al mes para todos en Estados Unidos costarían 4,10 billones de dólares, el 76% de los ingresos federales.[14] Mover tanto dinero cada año a través del sistema tributario es mucho más que cualquiera de los casos anteriores."
+          ],
+          [
+            "h",
+            "Lo que los datos no pueden decirnos"
+          ],
+          [
+            "p",
+            "Ningún país ha pagado nunca una renta básica nacional, permanente y financiada con impuestos a un nivel con el que se pueda vivir. A cada prueba le falta una parte. Las transferencias de Kenia fueron grandes, pero locales, únicas y financiadas desde fuera. El dividendo de Alaska es permanente pero pequeño, y la estimación es demasiado imprecisa para zanjar la cuestión. Los pagos de Japón y de EE. UU. fueron nacionales, pero únicos, financiados con deuda y mezclados con una pandemia y con choques de oferta mundiales."
+          ],
+          [
+            "p",
+            "Lo que sí puede decirse es esto: las transferencias de los tamaños probados hasta ahora han causado poca inflación donde había capacidad ociosa; los grandes pagos con deuda en una economía al límite probablemente añadieron algo; y el efecto de una renta básica completa, permanente y financiada con impuestos no se ha medido. Para comprobar los costes, prueba la {calculadora de renta básica|/calc/} o {los 211 países|/calc/countries/}. Todas las cifras de este ensayo, con su fuente y su fecha, están en {inflation-2026.json|/inflation-2026.json}."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Der erste Einwand gegen ein Grundeinkommen betrifft oft die Preise: Wenn alle Geld bekommen, erhöhen die Läden ihre Preise, und das Geld ist weniger wert. Die Frage ist berechtigt, und inzwischen gibt es Belege dazu. Im ländlichen Kenia hob Bargeld im Umfang von mehr als 15 % der lokalen Wirtschaft die lokalen Preise im Schnitt um 0,1 %.[1] In Alaska, wo fast alle Einwohner seit 1982 jedes Jahr eine Dividende bekommen, lautet die beste Schätzung 0,2 Prozentpunkte mehr Inflation pro Jahr, zu ungenau, um sie von null zu unterscheiden.[2] Für die Pandemiezahlungen in den USA reichen die Schätzungen, wie viel die gesamte staatliche Hilfe zur Inflation beitrug, von etwa 0,3 bis etwa 3 Prozentpunkten.[10][11][12] Im Folgenden: was jeder Fall gemessen hat, warum es wichtig ist, woher das Geld kommt, und was keiner von ihnen sagen kann."
+          ],
+          [
+            "h",
+            "Drei Arten von Zahlungen"
+          ],
+          [
+            "p",
+            "Die Belege stammen aus drei recht verschiedenen Dingen, die man leicht verwechselt. Lokale Pilotprojekte zahlen einer begrenzten Gruppe in einem begrenzten Gebiet Geld, oft von außerhalb: von einer Hilfsorganisation, einer Stiftung oder einem Spender. Landesweite Einmalzahlungen wie Japans 100.000 Yen 2020 oder die US-Schecks erreichen fast alle ein- oder ein paarmal; keine davon wurde mit neuen Steuern bezahlt, beide kamen mitten in einer Rezession zu den bestehenden Ausgaben hinzu. Ein dauerhaftes Grundeinkommen, jeden Monat an alle gezahlt und aus Steuern finanziert, ist die dritte Art, und kein Land hat es landesweit erprobt. Alaskas Dividende liegt dazwischen: dauerhaft und für alle, aber nur in einem Bundesstaat, aus den Erträgen eines Ölfonds und 2025 in Höhe von 1.000 Dollar.[4]"
+          ],
+          [
+            "t",
+            "Fall | Wer bekam wie viel | Woher das Geld kam | Was mit den Preisen geschah\nKenia, GiveDirectly (2014–2017) | Rund 1.000 Dollar je berechtigtem Haushalt, über 15 % des lokalen BIP | Eine Hilfsorganisation, von außerhalb | Im Schnitt 0,1 % höher; selbst auf dem Höhepunkt der Zahlungen unter 1 %[1]\nAlaska Permanent Fund Dividend (seit 1982) | Fast alle Einwohner, einmal im Jahr (2025: 1.000 Dollar) | Erträge des staatlichen Ölfonds | Rund 0,2 Punkte mehr Inflation pro Jahr; statistisch nicht signifikant[2]\nJapan, Sonderzahlung (2020) | 100.000 Yen pro Person einmalig; 12,67 Billionen Yen | Staatshaushalt, keine neuen Steuern | Verbraucherpreise 2020 0,0 %, 2021 −0,2 %[5][8]\nUSA, Konjunkturschecks (2020–2021) | Bis zu 1.200, 600 und 1.400 Dollar pro Erwachsenem; 931 Milliarden Dollar Direktzahlungen | Bundesschulden | Gesamte Pandemie-Fiskalhilfe: je nach Schätzung etwa 0,3 bis 3 Punkte Inflation[9][10][11][12]"
+          ],
+          [
+            "h",
+            "Kenia: großer lokaler Schub, winziger Preiseffekt"
+          ],
+          [
+            "p",
+            "Der stärkste Beleg ist eine randomisierte Studie zu den Zahlungen von GiveDirectly im Westen Kenias von Dennis Egger, Johannes Haushofer, Edward Miguel, Paul Niehaus und Michael Walker, 2022 in Econometrica erschienen. Etwa ein Drittel der Haushalte in 653 Dörfern war berechtigt und erhielt in drei Raten insgesamt 87.000 kenianische Schilling (rund 1.000 Dollar, kaufkraftbereinigt 1.871 Dollar), 75 % der üblichen Jahresausgaben eines Empfängerhaushalts. Im gesamten Gebiet machten die Zahlungen mehr als 15 % des lokalen BIP aus.[1]"
+          ],
+          [
+            "p",
+            "Die Ausgaben stiegen, und lokale Betriebe verkauften mehr, auch an Haushalte, die nichts bekamen. Doch die Preise bewegten sich kaum: Die durchschnittliche Teuerung lag bei 0,1 %, und selbst in den Monaten mit den größten Zahlungen blieb der geschätzte Preiseffekt unter 1 %.[1] Läden und Höfe vor Ort konnten mehr verkaufen, ohne mehr zu verlangen; die zusätzlichen Ausgaben zeigten sich also als mehr verkaufte Waren, nicht als höhere Preise."
+          ],
+          [
+            "p",
+            "Zwei Dinge begrenzen, wie weit sich das übertragen lässt. Das Geld kam von außerhalb der lokalen Wirtschaft, war dort also vollständig neue Nachfrage, was den kleinen Preiseffekt noch bemerkenswerter macht. Doch das ländliche Kenia hatte freie Kapazitäten: Menschen und Betriebe, die zum gleichen Preis mehr herstellen und verkaufen konnten. Eine Wirtschaft, die schon voll ausgelastet ist, kann anders reagieren."
+          ],
+          [
+            "h",
+            "Alaska: eine dauerhafte Dividende, eine ungenaue Antwort"
+          ],
+          [
+            "p",
+            "Alaska zahlt seit 1982 jedes Jahr eine Dividende aus seinem Permanent Fund an fast alle Einwohner; 2025 waren es 1.000 Dollar.[4] Damon Jones und Ioana Marinescu verglichen Alaskas Inflation mit einem „synthetischen Alaska“ aus anderen Bundesstaaten. Nach 1982 lag Alaskas Inflation im Schnitt um 0,2 Prozentpunkte pro Jahr höher, doch die Spanne ihrer Schätzung reicht von −0,5 bis +1 Punkt, schließt null also nicht aus. Sie nennen die Belege einen Hinweis und schreiben, dass große Unsicherheit bleibt, auch weil die Inflation zu Beginn der Dividende hoch war und schnell fiel.[2]"
+          ],
+          [
+            "p",
+            "In einer früheren Studie fanden dieselben Autoren, dass die Dividende die Beschäftigung nicht senkte, während Teilzeitarbeit um 1,8 Prozentpunkte zunahm.[3]"
+          ],
+          [
+            "h",
+            "Japan 2020: 100.000 Yen für alle, und die Preise stiegen nicht"
+          ],
+          [
+            "p",
+            "2020 erhielt fast jeder, der in Japan lebte, 100.000 Yen; ausgezahlt wurden rund 12,67 Billionen Yen.[5] Studien mit Bank- und Haushaltsbuch-App-Daten fanden, dass ein großer Teil nicht sofort ausgegeben wurde: rund 16 % binnen sechs Wochen in einer Studie, rund 22 % über 16 Wochen in der Analyse des Kabinettsamts.[6][7] Die Verbraucherpreise stiegen nicht: Der nationale Verbraucherpreisindex blieb 2020 unverändert (0,0 %) und sank 2021 um 0,2 %.[8]"
+          ],
+          [
+            "p",
+            "Das beweist nicht, dass die Zahlung keinen Einfluss auf die Preise hatte. Die Nachfrage brach wegen der Pandemie ein, Reisen und Essengehen waren kaum möglich, und andere Maßnahmen bewegten die Preise ebenfalls. Es zeigt aber, dass eine Einmalzahlung dieser Größe in dieser Lage keine Inflation auslöste. Zum Vergleich: 12,67 Billionen Yen sind etwa 86 % dessen, was ein Grundeinkommen von nur 10.000 Yen im Monat für alle in einem einzigen Jahr kosten würde ({14,7 Billionen Yen|/essays/japan-basic-income-cost/}).[14] {Wohin die 100.000 Yen gingen|/essays/japan-special-cash-payment/}, zeigt ein eigener Essay."
+          ],
+          [
+            "h",
+            "USA 2021–22: als die Inflation tatsächlich kam"
+          ],
+          [
+            "p",
+            "Die USA schickten etwa 165 Millionen Menschen drei Runden Schecks: bis zu 1.200 Dollar pro Erwachsenem im Frühjahr 2020, 600 Dollar Ende 2020 und 1.400 Dollar im März 2021. Der Rechnungshof GAO zählt von April 2020 bis Dezember 2021 Direktzahlungen an Privatpersonen von 931 Milliarden Dollar, einschließlich der Vorauszahlungen der Steuergutschrift für Kinder.[9] Im Juni 2022 lagen die Verbraucherpreise 9,1 % über dem Vorjahr, der stärkste Anstieg seit 1981.[13]"
+          ],
+          [
+            "p",
+            "Wie viel davon auf die Pandemieausgaben zurückging, ist umstritten, und die Schecks waren nur ein Teil dieser Ausgaben, neben aufgestocktem Arbeitslosengeld, Hilfen für Unternehmen und mehr. Ökonomen der Fed von San Francisco schätzten, dass die US-Fiskalhilfe die Inflation bis Ende 2021 um etwa 3 Prozentpunkte erhöht haben könnte, und betonten, dass die Schätzung sehr unsicher ist.[10] Eine Notiz der Federal Reserve bezifferte den Beitrag auf etwa 2,5 Punkte.[12] Eine frühere Schätzung der Fed von San Francisco nur für den American Rescue Plan, zu dem die 1.400-Dollar-Schecks gehörten, kam auf etwa 0,3 Punkte Kerninflation pro Jahr.[11] Gleichzeitig trieben Lieferkettenprobleme und Energiepreise die Inflation weltweit."
+          ],
+          [
+            "p",
+            "Wieder zum Vergleich: 931 Milliarden Dollar sind etwa 23 % eines Jahres mit 1.000 Dollar im Monat für alle in den USA ({4,10 Billionen Dollar|/essays/us-basic-income-cost/}).[14]"
+          ],
+          [
+            "h",
+            "Warum es wichtig ist, woher das Geld kommt"
+          ],
+          [
+            "p",
+            "Die Ökonomie liefert einen einfachen Grund, warum sich diese Fälle von einem steuerfinanzierten Grundeinkommen unterscheiden. Preise steigen tendenziell, wenn die Gesamtausgaben schneller wachsen als das, was die Wirtschaft herstellen kann. Ein steuerfinanziertes Grundeinkommen verschiebt vor allem Kaufkraft von den einen zu den anderen: Die Mehrausgaben derer, die gewinnen, werden zumindest teilweise durch geringere Ausgaben derer ausgeglichen, die mehr Steuern zahlen. Die Gesamtnachfrage wächst nur um den Unterschied, wie viel jede Gruppe von jedem zusätzlichen Yen oder Dollar ausgibt. In Japan gaben 2020 die Haushalte im untersten Einkommensdrittel etwa 32 % der Zahlung aus, während das Kabinettsamt für das mittlere und obere Drittel keinen klaren Effekt fand.[7]"
+          ],
+          [
+            "p",
+            "Ein Grundeinkommen, das über Schulden oder neu geschaffenes Geld einer Zentralbank finanziert wird, legt neue Ausgaben auf die bestehenden obendrauf. Hat die Wirtschaft freie Kapazitäten wie das ländliche Kenia, lässt sich vieles mit mehr Waren decken; hat sie keine, zeigt sich mehr davon in höheren Preisen, wie 2021–22 in den USA. Auch die Art der Steuer zählt: Eine Finanzierung über eine höhere Mehrwertsteuer würde die Preise direkt erhöhen, einmalig, um den Umfang der Steueränderung. Und Jones und Marinescu weisen darauf hin, dass die Preise von Dingen, deren Angebot sich nicht schnell ausweiten lässt, etwa Wohnungen und lokale Dienstleistungen, stärker reagieren dürften als die handelbarer Güter.[2]"
+          ],
+          [
+            "p",
+            "Am meisten zählt die Größe. Ein Grundeinkommen von 70.000 Yen im Monat in Japan würde 103,2 Billionen Yen im Jahr kosten, 122 % der nationalen Steuereinnahmen; 1.000 Dollar im Monat für alle in den USA würden 4,10 Billionen Dollar kosten, 76 % der Bundeseinnahmen.[14] So viel Geld jedes Jahr durch das Steuersystem zu bewegen, ist weit mehr als jeder der Fälle oben."
+          ],
+          [
+            "h",
+            "Was die Belege nicht sagen können"
+          ],
+          [
+            "p",
+            "Kein Land hat je ein dauerhaftes, landesweites, steuerfinanziertes Grundeinkommen in einer Höhe gezahlt, von der man leben kann. Jedem Beleg fehlt ein Teil davon. Kenias Zahlungen waren groß, aber lokal, einmalig und von außen finanziert. Alaskas Dividende ist dauerhaft, aber klein, und die Schätzung ist zu ungenau, um die Frage zu klären. Japans und Amerikas Zahlungen waren landesweit, aber einmalig, auf Pump finanziert und mit einer Pandemie und weltweiten Angebotsschocks vermischt."
+          ],
+          [
+            "p",
+            "Sagen lässt sich Folgendes: Geldtransfers in den bisher erprobten Größen haben dort wenig Inflation ausgelöst, wo es freie Kapazitäten gab; große schuldenfinanzierte Zahlungen in eine ausgelastete Wirtschaft haben wahrscheinlich etwas dazu beigetragen; und die Wirkung eines vollen, dauerhaften, steuerfinanzierten Grundeinkommens ist nicht gemessen. Die Kosten kannst du mit dem {Grundeinkommen-Rechner|/calc/} oder {allen 211 Ländern|/calc/countries/} selbst prüfen. Alle Zahlen dieses Essays stehen mit Quelle und Datum in {inflation-2026.json|/inflation-2026.json}."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "كثيرًا ما يتعلق الاعتراض الأول على الدخل الأساسي بالأسعار: إذا حصل الجميع على المال فسترفع المتاجر أسعارها وتقلّ قيمة المال. السؤال وجيه، وصارت لدينا بعض الأدلة عليه. في ريف كينيا، رفعت أموال تعادل أكثر من ⁦15%⁩ من الاقتصاد المحلي الأسعار المحلية بنحو ⁦0.1%⁩ في المتوسط.[1] وفي ألاسكا، حيث يتلقى كل السكان تقريبًا عائدًا سنويًا منذ 1982، أفضل تقدير هو أن التضخم أعلى بنحو 0.2 نقطة مئوية سنويًا، وهو تقدير غير دقيق إلى حد لا يمكن تمييزه عن الصفر.[2] أما مدفوعات الجائحة في الولايات المتحدة، فتتراوح تقديرات ما أضافه الدعم الحكومي كله إلى التضخم بين نحو 0.3 ونحو 3 نقاط مئوية.[10][11][12] فيما يلي: ماذا قاست كل حالة، ولماذا يهم مصدر المال، وما الذي لا تستطيع أيٌّ منها أن تخبرنا به."
+          ],
+          [
+            "h",
+            "ثلاثة أنواع من المدفوعات"
+          ],
+          [
+            "p",
+            "تأتي الأدلة من ثلاثة أمور مختلفة تمامًا، ومن السهل الخلط بينها. التجارب المحلية تدفع لمجموعة محدودة في منطقة محدودة، وغالبًا بمال من خارجها: جمعية خيرية أو مؤسسة أو متبرع. والمدفوعات الوطنية لمرة واحدة، مثل الـ100,000 ين في اليابان عام 2020 أو شيكات التحفيز الأمريكية، تصل إلى الجميع تقريبًا مرة أو بضع مرات؛ ولم يُموَّل أيٌّ منهما بضرائب جديدة، بل أُضيف كلاهما إلى الإنفاق القائم في خضم ركود. أما النوع الثالث فهو دخل أساسي دائم يُدفع للجميع كل شهر ويُموَّل بالضرائب، ولم تجرّبه أي دولة على المستوى الوطني. ويقع عائد ألاسكا بينهما: دائم وشامل، لكنه داخل ولاية واحدة، يُدفع من أرباح صندوق نفطي، وبلغ 1,000 دولار في 2025.[4]"
+          ],
+          [
+            "t",
+            "الحالة | من حصل على كم | مصدر المال | ماذا حدث للأسعار\nكينيا، ⁦GiveDirectly⁩ (⁦2014–2017⁩) | نحو 1,000 دولار لكل أسرة مؤهلة، أكثر من ⁦15%⁩ من الناتج المحلي | جمعية خيرية من خارج المنطقة | أعلى بنحو ⁦0.1%⁩ في المتوسط؛ أقل من ⁦1%⁩ حتى في ذروة الدفعات[1]\nعائد الصندوق الدائم في ألاسكا (منذ 1982) | كل السكان تقريبًا، مرة في السنة (1,000 دولار في 2025) | أرباح صندوق الولاية النفطي | تضخم أعلى بنحو 0.2 نقطة سنويًا؛ غير دال إحصائيًا[2]\nاليابان، الدفعة النقدية الخاصة (2020) | 100,000 ين للفرد مرة واحدة؛ 12.67 تريليون ين | الميزانية الوطنية، بلا ضرائب جديدة | أسعار المستهلك ⁦0.0%⁩ في 2020 و⁦−0.2%⁩ في 2021[5][8]\nالولايات المتحدة، شيكات التحفيز (⁦2020–2021⁩) | حتى 1,200 و600 و1,400 دولار لكل بالغ؛ 931 مليار دولار مدفوعات مباشرة | الاقتراض الاتحادي | كل الدعم المالي في الجائحة: من نحو 0.3 إلى 3 نقاط تضخم بحسب التقدير[9][10][11][12]"
+          ],
+          [
+            "h",
+            "كينيا: صدمة محلية كبيرة وأثر ضئيل على الأسعار"
+          ],
+          [
+            "p",
+            "أقوى الأدلة دراسة عشوائية لتحويلات ⁦GiveDirectly⁩ في غرب كينيا، أجراها دينيس إيغر ويوهانس هاوسهوفر وإدوارد ميغيل وبول نيهاوس ومايكل ووكر، ونُشرت في مجلة ⁦Econometrica⁩ عام 2022. كان نحو ثلث الأسر في 653 قرية مؤهلًا، وتلقّى ثلاث دفعات مجموعها 87,000 شلن كيني (نحو 1,000 دولار، أو 1,871 دولارًا بتعادل القوة الشرائية)، أي ⁦75%⁩ من الإنفاق السنوي المعتاد للأسرة المستفيدة. وفي المنطقة المشمولة كلها تجاوزت التحويلات ⁦15%⁩ من الناتج المحلي.[1]"
+          ],
+          [
+            "p",
+            "ارتفع الإنفاق وزادت مبيعات المتاجر المحلية، بما في ذلك للأسر التي لم تحصل على شيء. لكن الأسعار بالكاد تحركت: بلغ متوسط التضخم ⁦0.1%⁩، وحتى في الأشهر التي شهدت أكبر التحويلات بقي الأثر المقدَّر على الأسعار دون ⁦1%⁩.[1] استطاعت المتاجر والمزارع المحلية أن تبيع أكثر دون أن ترفع أسعارها، فظهر الإنفاق الإضافي في صورة سلع مبيعة أكثر لا أسعار أعلى."
+          ],
+          [
+            "p",
+            "هناك أمران يحدّان من تعميم هذه النتيجة. فقد جاء المال من خارج الاقتصاد المحلي، فكان بالنسبة إلى المنطقة طلبًا جديدًا بالكامل، وهذا يجعل صغر الأثر على الأسعار أكثر لفتًا للنظر. لكن ريف كينيا كان فيه طاقة غير مستغلة: أناس ومشروعات يمكنهم إنتاج المزيد وبيعه بالسعر نفسه. وقد يستجيب اقتصاد يعمل بكامل طاقته على نحو مختلف."
+          ],
+          [
+            "h",
+            "ألاسكا: عائد دائم وجواب غير دقيق"
+          ],
+          [
+            "p",
+            "تدفع ألاسكا منذ 1982 كل عام عائدًا من صندوقها الدائم لكل السكان تقريبًا؛ وبلغ 1,000 دولار في 2025.[4] قارن دامون جونز وإيوانا مارينيسكو تضخم ألاسكا بـ«ألاسكا اصطناعية» مركّبة من ولايات أخرى. بعد 1982 كان تضخم ألاسكا أعلى بنحو 0.2 نقطة مئوية سنويًا في المتوسط، لكن نطاق تقديرهما يمتد من ⁦−0.5⁩ إلى ⁦+1⁩ نقطة، فلا يستبعد الصفر. ويصفان الأدلة بأنها إيحائية ويقولان إن قدرًا كبيرًا من عدم اليقين لا يزال قائمًا، ويعود ذلك جزئيًا إلى أن التضخم كان مرتفعًا ويهبط بسرعة حين بدأ العائد.[2]"
+          ],
+          [
+            "p",
+            "وفي دراسة سابقة وجد الباحثان نفساهما أن العائد لم يقلّل التوظيف، بينما ارتفع العمل بدوام جزئي بمقدار 1.8 نقطة مئوية.[3]"
+          ],
+          [
+            "h",
+            "اليابان 2020: 100,000 ين للجميع، والأسعار لم ترتفع"
+          ],
+          [
+            "p",
+            "في 2020 حصل كل من يعيش في اليابان تقريبًا على 100,000 ين، ودُفع نحو 12.67 تريليون ين إجمالًا.[5] ووجدت دراسات استندت إلى سجلات البنوك وتطبيقات الميزانية أن جزءًا كبيرًا منها لم يُنفق فورًا: نحو ⁦16%⁩ خلال ستة أسابيع في إحدى الدراسات، ونحو ⁦22%⁩ خلال 16 أسبوعًا في تحليل مكتب مجلس الوزراء.[6][7] ولم ترتفع أسعار المستهلك: بقي المؤشر الوطني لأسعار المستهلك ثابتًا في 2020 (⁦0.0%⁩) وانخفض ⁦0.2%⁩ في 2021.[8]"
+          ],
+          [
+            "p",
+            "هذا لا يثبت أن الدفعة لم تؤثر في الأسعار. فقد كان الطلب يتراجع بسبب الجائحة، ولم يستطع الناس السفر أو الأكل خارج البيت كما من قبل، وكانت سياسات أخرى تحرّك الأسعار أيضًا. لكنه يبيّن أن دفعة لمرة واحدة بهذا الحجم، في ذلك الوضع، لم تُطلق التضخم. وللمقارنة، 12.67 تريليون ين هي نحو ⁦86%⁩ مما يكلّفه في عام واحد دخل أساسي لا يتجاوز 10,000 ين شهريًا للجميع ({14.7 تريليون ين|/essays/japan-basic-income-cost/}).[14] ونتناول {أين ذهبت الـ100,000 ين|/essays/japan-special-cash-payment/} في مقال مستقل."
+          ],
+          [
+            "h",
+            "الولايات المتحدة ⁦2021–22⁩: حين جاء التضخم فعلًا"
+          ],
+          [
+            "p",
+            "أرسلت الولايات المتحدة ثلاث جولات من الشيكات إلى نحو 165 مليون شخص: حتى 1,200 دولار لكل بالغ في ربيع 2020، و600 دولار في أواخر 2020، و1,400 دولار في مارس 2021. ويحصي مكتب محاسبة الحكومة (⁦GAO⁩) مدفوعات مباشرة للأفراد قدرها 931 مليار دولار من أبريل 2020 إلى ديسمبر 2021، بما فيها الدفعات المسبقة من الائتمان الضريبي للأطفال.[9] وبحلول يونيو 2022 كانت أسعار المستهلك أعلى بنسبة ⁦9.1%⁩ من العام السابق، وهو أكبر ارتفاع منذ 1981.[13]"
+          ],
+          [
+            "p",
+            "يدور جدل حول مقدار ما يعود من ذلك إلى إنفاق الجائحة، ولم تكن الشيكات سوى جزء من هذا الإنفاق، إلى جانب إعانات البطالة الإضافية ودعم الشركات وغير ذلك. قدّر اقتصاديون في الاحتياطي الفيدرالي في سان فرانسيسكو أن الدعم المالي الأمريكي ربما رفع التضخم بنحو 3 نقاط مئوية بحلول نهاية 2021، مع التشديد على أن التقدير غير مؤكد إلى حد كبير.[10] وقدّرت مذكرة للاحتياطي الفيدرالي الإسهام بنحو 2.5 نقطة.[12] أما تقدير سابق للاحتياطي الفيدرالي في سان فرانسيسكو لخطة الإنقاذ الأمريكية وحدها، التي شملت شيكات الـ1,400 دولار، فبلغ نحو 0.3 نقطة من التضخم الأساسي سنويًا.[11] وفي الوقت نفسه كانت مشكلات سلاسل الإمداد وأسعار الطاقة ترفع التضخم في أنحاء العالم."
+          ],
+          [
+            "p",
+            "وللمقارنة مرة أخرى، 931 مليار دولار هي نحو ⁦23%⁩ من عام واحد بمبلغ 1,000 دولار شهريًا لكل من في الولايات المتحدة ({4.10 تريليون دولار|/essays/us-basic-income-cost/}).[14]"
+          ],
+          [
+            "h",
+            "لماذا يهم مصدر المال"
+          ],
+          [
+            "p",
+            "يقدّم علم الاقتصاد سببًا بسيطًا لاختلاف هذه الحالات عن دخل أساسي ممول بالضرائب. تميل الأسعار إلى الارتفاع حين ينمو الإنفاق الكلي أسرع مما يستطيع الاقتصاد إنتاجه. والدخل الأساسي الممول بالضرائب ينقل القدرة على الإنفاق من بعض الناس إلى غيرهم في الغالب: فالإنفاق الإضافي لمن يكسبون يقابله، جزئيًا على الأقل، إنفاق أقل ممن يدفعون ضرائب أكثر. ولا يزيد الطلب الكلي إلا بمقدار الفرق بين ما ينفقه كل فريق من كل ين أو دولار إضافي. في اليابان عام 2020 أنفقت الأسر في الثلث الأدنى دخلًا نحو ⁦32%⁩ من الدفعة، بينما لم يجد مكتب مجلس الوزراء أثرًا واضحًا في الثلثين الأوسط والأعلى.[7]"
+          ],
+          [
+            "p",
+            "أما الدخل الأساسي الممول بالاقتراض، أو بنقود جديدة يصدرها بنك مركزي، فيضيف إنفاقًا جديدًا فوق الموجود. فإذا كان في الاقتصاد طاقة غير مستغلة، كما في ريف كينيا، أمكن تلبية كثير منه بسلع أكثر؛ وإن لم تكن، ظهر جزء أكبر منه في صورة أسعار أعلى، كما في الولايات المتحدة في ⁦2021–22⁩. ونوع الضريبة مهم أيضًا: فتمويله بضريبة استهلاك أعلى يرفع الأسعار مباشرة، مرة واحدة، بمقدار تغيّر الضريبة. ويشير جونز ومارينيسكو إلى أن أسعار ما يصعب زيادة عرضه بسرعة، كالسكن والخدمات المحلية، يُتوقع أن تستجيب أكثر من السلع المتداولة تجاريًا.[2]"
+          ],
+          [
+            "p",
+            "الحجم هو الأهم. دخل أساسي قدره 70,000 ين شهريًا في اليابان سيكلّف 103.2 تريليون ين سنويًا، أي ⁦122%⁩ من الإيرادات الضريبية الوطنية؛ و1,000 دولار شهريًا لكل من في الولايات المتحدة ستكلّف 4.10 تريليون دولار، أي ⁦76%⁩ من الإيرادات الاتحادية.[14] نقل هذا القدر من المال عبر النظام الضريبي كل عام أكبر بكثير من أي حالة مما سبق."
+          ],
+          [
+            "h",
+            "ما لا تستطيع الأدلة أن تخبرنا به"
+          ],
+          [
+            "p",
+            "لم تدفع أي دولة قط دخلًا أساسيًا وطنيًا دائمًا ممولًا بالضرائب بمستوى يكفي للعيش. وكل دليل ينقصه جزء من ذلك. فتحويلات كينيا كانت كبيرة لكنها محلية ولمرة واحدة وممولة من الخارج. وعائد ألاسكا دائم لكنه صغير، والتقدير غير دقيق بما لا يكفي لحسم المسألة. ومدفوعات اليابان والولايات المتحدة كانت وطنية لكنها لمرة واحدة وممولة بالاقتراض ومتداخلة مع جائحة وصدمات عرض عالمية."
+          ],
+          [
+            "p",
+            "ما يمكن قوله هو الآتي: التحويلات النقدية بالأحجام التي جُرّبت حتى الآن لم تسبب إلا قليلًا من التضخم حيث وُجدت طاقة غير مستغلة؛ والمدفوعات الكبيرة الممولة بالاقتراض في اقتصاد مُجهَد أضافت على الأرجح بعضه؛ أما أثر دخل أساسي كامل ودائم وممول بالضرائب فلم يُقَس بعد. للتحقق من التكاليف بنفسك جرّب {حاسبة الدخل الأساسي|/calc/} أو {البلدان الـ211 كلها|/calc/countries/}. وكل رقم في هذا المقال، مع مصدره وتاريخه، موجود في {⁦inflation-2026.json⁩|/inflation-2026.json}."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Dennis Egger, Johannes Haushofer, Edward Miguel, Paul Niehaus and Michael Walker — “General Equilibrium Effects of Cash Transfers: Experimental Evidence From Kenya”, Econometrica 90(6), 2603–2643 (November 2022): transfers of KES 87,000 (USD 1,000; USD 1,871 PPP) to eligible households in 653 villages, over 15% of local GDP; average price inflation 0.1%, under 1% at peak",
+          "url": "https://doi.org/10.3982/ECTA17945",
+          "url2": "https://www.nber.org/papers/w26600"
+        },
+        {
+          "n": 2,
+          "label": "Damon Jones and Ioana Marinescu — “Universal Cash Transfers and Inflation”, National Tax Journal 75(3), 627–653 (2022): Alaska’s inflation 0.2 percentage points a year higher than a synthetic Alaska after 1982, interval −0.5 to +1 point, not significant",
+          "url": "https://doi.org/10.1086/720770",
+          "url2": "https://home.uchicago.edu/j1s/Jones_Alaska_Prices.pdf"
+        },
+        {
+          "n": 3,
+          "label": "Damon Jones and Ioana Marinescu — “The Labor Market Impacts of Universal and Permanent Cash Transfers: Evidence from the Alaska Permanent Fund”, American Economic Journal: Economic Policy 14(2), 315–40 (May 2022): no effect on employment, part-time work up 1.8 percentage points",
+          "url": "https://doi.org/10.1257/pol.20190299"
+        },
+        {
+          "n": 4,
+          "label": "Alaska Department of Revenue — 2025 Permanent Fund Dividend amount: $1,000 (22 September 2025)",
+          "url": "https://dor.alaska.gov/department-of-revenue/news-detail/2025/09/22/department-of-revenue-announces-2025-permanent-fund-dividend-amount"
+        },
+        {
+          "n": 5,
+          "label": "Ministry of Internal Affairs and Communications (Japan) — Special Cash Payment: amounts paid (final figure, about ¥12.67 trillion; PDF, in Japanese)",
+          "url": "https://www.soumu.go.jp/main_content/000715720.pdf",
+          "url2": "https://www.soumu.go.jp/menu_seisaku/gyoumukanri_sonota/covid-19/kyufukin.html"
+        },
+        {
+          "n": 6,
+          "label": "Michiru Kaneda, So Kubota and Satoshi Tanaka — “Who spent their COVID-19 stimulus payment? Evidence from personal finance software in Japan”, The Japanese Economic Review 72, 409–437 (2021): 16% spent within six weeks (baseline definition)",
+          "url": "https://doi.org/10.1007/s42973-021-00080-0"
+        },
+        {
+          "n": 7,
+          "label": "Cabinet Office (Japan), Policy Issue Analysis Series 22 — the effect of the Special Cash Payment on household consumption (16 August 2023, in Japanese): about 22% spent over 16 weeks; about 32% for the bottom third by equivalised income",
+          "url": "https://www5.cao.go.jp/keizai3/2023/08seisakukadai22-0.pdf"
+        },
+        {
+          "n": 8,
+          "label": "Statistics Bureau of Japan — 2020-base consumer price index, national, monthly indices (CSV): 2021 average of all items 99.8 (2020 = 100), a fall of 0.2%; 2020 change from World Bank indicator FP.CPI.TOTL.ZG (Japan, −0.02%)",
+          "url": "https://www.stat.go.jp/data/cpi/2020/csv/zmi2020aa.csv",
+          "url2": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=JP"
+        },
+        {
+          "n": 9,
+          "label": "U.S. Government Accountability Office — “Stimulus Checks: Direct Payments to Individuals during the COVID-19 Pandemic”, GAO-22-106044 (29 June 2022): three rounds of Economic Impact Payments to around 165 million people; $931 billion in direct payments, April 2020 to December 2021",
+          "url": "https://www.gao.gov/products/GAO-22-106044"
+        },
+        {
+          "n": 10,
+          "label": "Òscar Jordà, Celeste Liu, Fernanda Nechio and Fabian Rivera-Reyes — “Why Is U.S. Inflation Higher than in Other Countries?”, FRBSF Economic Letter 2022-07 (28 March 2022): fiscal support may have raised inflation about 3 percentage points by 2021 Q4",
+          "url": "https://www.frbsf.org/research-and-insights/publications/economic-letter/2022/03/why-is-us-inflation-higher-than-in-other-countries/"
+        },
+        {
+          "n": 11,
+          "label": "Regis Barnichon, Luiz Edgard Oliveira and Adam Shapiro — “Is the American Rescue Plan Taking Us Back to the ’60s?”, FRBSF Economic Letter 2021-27 (18 October 2021): about 0.3 point of core PCE inflation a year",
+          "url": "https://www.frbsf.org/research-and-insights/publications/economic-letter/2021/10/is-american-rescue-plan-taking-us-back-to-1960s/"
+        },
+        {
+          "n": 12,
+          "label": "François de Soyres, Ana Maria Santacreu and Henry Young — “Fiscal policy and excess inflation during Covid-19: a cross-country view”, FEDS Notes, Board of Governors of the Federal Reserve System (15 July 2022): about 2.5 percentage points in the US",
+          "url": "https://www.federalreserve.gov/econres/notes/feds-notes/fiscal-policy-and-excess-inflation-during-covid-19-a-cross-country-view-20220715.htm"
+        },
+        {
+          "n": 13,
+          "label": "U.S. Bureau of Labor Statistics — Consumer Price Index, June 2022 (13 July 2022): all items up 9.1% over 12 months, the largest increase since November 1981",
+          "url": "https://www.bls.gov/news.release/archives/cpi_07132022.htm"
+        },
+        {
+          "n": 14,
+          "label": "Free Lunch Lab — japan-2026.json and us-2026.json: population, tax and federal revenue with sources, behind the essays on the cost of a basic income in Japan and the United States (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/japan-2026.json",
+          "url2": "https://neteru-nyukin.eltociear.workers.dev/us-2026.json"
+        }
+      ]
+    },
+    {
       "id": "ai-unemployment-basic-income",
       "date": "2026-11-19",
       "kind": "opinion",
       "related": [
+        "basic-income-inflation",
         "ai-company-profits-per-person",
         "japan-basic-income-cost",
         "generative-ai-jobs-basic-income",
@@ -20315,6 +21176,7 @@ module.exports = {
       "id": "us-basic-income-cost",
       "date": "2026-11-19",
       "related": [
+        "basic-income-inflation",
         "japan-basic-income-cost",
         "germany-merz-basic-income-cost",
         "openresearch-cash-study",
@@ -23074,6 +23936,7 @@ module.exports = {
       "id": "japan-basic-income-cost",
       "date": "2026-11-17",
       "related": [
+        "basic-income-inflation",
         "ai-unemployment-basic-income",
         "us-basic-income-cost",
         "takenaka-70000-yen-basic-income",
@@ -40223,6 +41086,7 @@ module.exports = {
       "id": "japan-special-cash-payment",
       "date": "2026-11-04",
       "related": [
+        "basic-income-inflation",
         "japan-basic-income-cost",
         "thailand-digital-wallet",
         "nesara-gesara-basic-income",

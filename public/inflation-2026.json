@@ -1,0 +1,253 @@
+{
+  "name": "Free Lunch Lab: Basic income and inflation: the evidence in figures",
+  "description": "The figures behind the essay on basic income and inflation: price effects in Kenya’s cash transfer study and in Alaska, Japan’s 2020 payment and consumer prices, the US stimulus checks and estimates of how much fiscal support added to inflation, each with its source and date.",
+  "source": "https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-inflation/",
+  "repository": "https://github.com/eltociear/free-lunch-lab",
+  "license": "CC BY 4.0 (figures from the papers and official sources named in each entry)",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "about": "Figures behind the data essay basic-income-inflation (does a basic income cause inflation?). Each fact gives its value, the date or period it refers to, the source and the day it was checked. build.js checks that every language of the essay carries the digits listed under 'digits' (any one of the alternatives in a nested list), and recomputes the comparisons with a basic income from data/japan-2026.json and data/us-2026.json.",
+  "essay": "basic-income-inflation",
+  "retrieved": "2026-11-19",
+  "facts": [
+    {
+      "id": "kenyaGdpShare",
+      "value": 15,
+      "unit": "% of local GDP (more than)",
+      "period": "2014-2017",
+      "note": "GiveDirectly transfers in Siaya County, Kenya: 'over 15 percent of local GDP' (abstract); about 16% of annual GDP in treated areas during the peak (main text)",
+      "source": "https://doi.org/10.3982/ECTA17945",
+      "asOf": "2026-11-19",
+      "digits": [
+        "15"
+      ]
+    },
+    {
+      "id": "kenyaPriceAvg",
+      "value": 0.1,
+      "unit": "% average local price increase",
+      "period": "2014-2017",
+      "note": "'Average price inflation is 0.1%, and even during periods with the largest transfers, estimated price effects are less than 1%' (Egger et al. 2022, introduction)",
+      "source": "https://doi.org/10.3982/ECTA17945",
+      "asOf": "2026-11-19",
+      "digits": [
+        "01"
+      ]
+    },
+    {
+      "id": "kenyaPricePeak",
+      "value": 1,
+      "unit": "% upper bound at peak transfers",
+      "period": "2014-2017",
+      "note": "price effects during the months with the largest transfers were below 1%",
+      "source": "https://doi.org/10.3982/ECTA17945",
+      "asOf": "2026-11-19",
+      "digits": [
+        "1"
+      ]
+    },
+    {
+      "id": "kenyaVillages",
+      "value": 653,
+      "unit": "villages",
+      "note": "about one third of households eligible",
+      "source": "https://doi.org/10.3982/ECTA17945",
+      "asOf": "2026-11-19",
+      "digits": [
+        "653"
+      ]
+    },
+    {
+      "id": "kenyaTransferKes",
+      "value": 87000,
+      "unit": "KES per eligible household",
+      "note": "three transfers totalling KES 87,000, USD 1,871 PPP, USD 1,000 nominal; 75 percent of mean annual household expenditure in recipient households",
+      "source": "https://doi.org/10.3982/ECTA17945",
+      "asOf": "2026-11-19",
+      "digits": [
+        "87000",
+        "1871",
+        "75"
+      ]
+    },
+    {
+      "id": "alaskaInflation",
+      "value": 0.2,
+      "unit": "percentage points a year (post-1982 average difference vs synthetic Alaska)",
+      "note": "pseudo p-value 0.4; placebo-based interval from -0.5 to +1 percentage point (Jones and Marinescu, National Tax Journal 75(3), 2022; working paper of 4 May 2022)",
+      "source": "https://doi.org/10.1086/720770",
+      "asOf": "2026-11-19",
+      "digits": [
+        "02",
+        "05",
+        "1982"
+      ]
+    },
+    {
+      "id": "alaskaPartTime",
+      "value": 1.8,
+      "unit": "percentage points (17%)",
+      "note": "the dividend had no effect on employment and raised part-time work by 1.8 percentage points (Jones and Marinescu, AEJ: Economic Policy 14(2), 2022)",
+      "source": "https://doi.org/10.1257/pol.20190299",
+      "asOf": "2026-11-19",
+      "digits": [
+        "18"
+      ]
+    },
+    {
+      "id": "pfd2025",
+      "value": 1000,
+      "unit": "USD",
+      "year": 2025,
+      "note": "Alaska Permanent Fund Dividend 2025",
+      "source": "https://dor.alaska.gov/department-of-revenue/news-detail/2025/09/22/department-of-revenue-announces-2025-permanent-fund-dividend-amount",
+      "asOf": "2026-11-19",
+      "digits": [
+        "1000"
+      ]
+    },
+    {
+      "id": "jpPayment",
+      "value": 12670000000000,
+      "unit": "JPY",
+      "year": 2020,
+      "note": "Special Cash Payment of ¥100,000 per person, about ¥12.67 trillion paid (99.7% of the planned amount; budget ¥12.88 trillion)",
+      "source": "https://www.soumu.go.jp/main_content/000715720.pdf",
+      "asOf": "2026-11-19",
+      "digits": [
+        "1267",
+        [
+          "100000",
+          "10"
+        ]
+      ]
+    },
+    {
+      "id": "jpSpent",
+      "value": [
+        16,
+        22
+      ],
+      "unit": "% of the payment spent",
+      "note": "16% within six weeks (Kaneda, Kubota and Tanaka 2021, Money Forward ME data, baseline definition); about 22% over 16 weeks (Cabinet Office 2023, Moneytree data)",
+      "source": "https://www5.cao.go.jp/keizai3/2023/08seisakukadai22-0.pdf",
+      "asOf": "2026-11-19",
+      "digits": [
+        "16",
+        "22"
+      ]
+    },
+    {
+      "id": "jpLowIncomeSpent",
+      "value": 32,
+      "unit": "% of the payment spent by the bottom third by equivalised income",
+      "note": "no clear effect for the middle and top thirds (Cabinet Office 2023)",
+      "source": "https://www5.cao.go.jp/keizai3/2023/08seisakukadai22-0.pdf",
+      "asOf": "2026-11-19",
+      "digits": [
+        "32"
+      ]
+    },
+    {
+      "id": "jpCpi2020",
+      "value": 0,
+      "unit": "% change, calendar year 2020, all items",
+      "note": "World Bank FP.CPI.TOTL.ZG for Japan, -0.02% (from the national CPI)",
+      "source": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=JP",
+      "asOf": "2026-11-19",
+      "digits": [
+        "00"
+      ]
+    },
+    {
+      "id": "jpCpi2021",
+      "value": -0.2,
+      "unit": "% change, calendar year 2021, all items",
+      "note": "2020-base national CPI, monthly indices averaged: 2021 = 99.8 (2020 = 100); excluding fresh food also 99.8",
+      "source": "https://www.stat.go.jp/data/cpi/2020/csv/zmi2020aa.csv",
+      "asOf": "2026-11-19",
+      "digits": [
+        "02",
+        "2021"
+      ]
+    },
+    {
+      "id": "usPeople",
+      "value": 165000000,
+      "unit": "people",
+      "note": "Economic Impact Payments went to around 165 million Americans (GAO-22-106044, 29 June 2022); up to $1,200, $600 and $1,400 per adult",
+      "source": "https://www.gao.gov/products/GAO-22-106044",
+      "asOf": "2026-11-19",
+      "digits": [
+        [
+          "165",
+          "16500",
+          "6500"
+        ],
+        "1200",
+        "600",
+        "1400"
+      ]
+    },
+    {
+      "id": "usDirect",
+      "value": 931000000000,
+      "unit": "USD",
+      "period": "2020-04/2021-12",
+      "note": "direct payments to individuals totaling $931 billion from April 2020 to December 2021 (all direct payments, including the advance child tax credit)",
+      "source": "https://www.gao.gov/products/GAO-22-106044",
+      "asOf": "2026-11-19",
+      "digits": [
+        [
+          "931",
+          "9310",
+          "931000"
+        ]
+      ]
+    },
+    {
+      "id": "usCpiPeak",
+      "value": 9.1,
+      "unit": "% 12-month change, June 2022",
+      "note": "the largest 12-month increase since the period ending November 1981 (BLS CPI release of 13 July 2022)",
+      "source": "https://www.bls.gov/news.release/archives/cpi_07132022.htm",
+      "asOf": "2026-11-19",
+      "digits": [
+        "91",
+        "1981"
+      ]
+    },
+    {
+      "id": "frbsf2022",
+      "value": 3,
+      "unit": "percentage points by 2021 Q4",
+      "note": "US fiscal support 'may have contributed to an increase in inflation of about 3 percentage points by the fourth quarter of 2021', estimated with considerable uncertainty (Jordà, Liu, Nechio and Rivera-Reyes, FRBSF Economic Letter 2022-07, 28 March 2022)",
+      "source": "https://www.frbsf.org/research-and-insights/publications/economic-letter/2022/03/why-is-us-inflation-higher-than-in-other-countries/",
+      "asOf": "2026-11-19",
+      "digits": [
+        "3"
+      ]
+    },
+    {
+      "id": "fedNote2022",
+      "value": 2.5,
+      "unit": "percentage points",
+      "note": "back-of-the-envelope contribution of US pandemic fiscal stimulus to inflation (de Soyres, Santacreu and Young, FEDS Notes, 15 July 2022)",
+      "source": "https://www.federalreserve.gov/econres/notes/feds-notes/fiscal-policy-and-excess-inflation-during-covid-19-a-cross-country-view-20220715.htm",
+      "asOf": "2026-11-19",
+      "digits": [
+        "25"
+      ]
+    },
+    {
+      "id": "frbsf2021",
+      "value": 0.3,
+      "unit": "percentage points of core PCE inflation a year",
+      "note": "American Rescue Plan alone: about 0.3 point in 2021 and a bit over 0.2 point in 2022 (Barnichon, Oliveira and Shapiro, FRBSF Economic Letter 2021-27, 18 October 2021)",
+      "source": "https://www.frbsf.org/research-and-insights/publications/economic-letter/2021/10/is-american-rescue-plan-taking-us-back-to-1960s/",
+      "asOf": "2026-11-19",
+      "digits": [
+        "03"
+      ]
+    }
+  ]
+}

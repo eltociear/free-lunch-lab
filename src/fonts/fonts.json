@@ -79,6 +79,10 @@
    {
     "file": "noto-sans-arabic-400-ar-1e892d0a75.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-3ec9853835.woff2",
+    "chars": "Òàç"
    }
   ],
   "ar:body:700": [
@@ -145,6 +149,10 @@
    {
     "file": "noto-sans-arabic-700-ar-6c3d968560.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-c84e047a14.woff2",
+    "chars": "Òàç"
    }
   ],
   "ar:display": [
@@ -271,6 +279,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-4d06977bb1.woff2",
     "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-db19c08cea.woff2",
+    "chars": "Òà"
    }
   ],
   "de:body:700": [
@@ -357,6 +369,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-34b7c36763.woff2",
     "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-08e47e1c80.woff2",
+    "chars": "Òà"
    }
   ],
   "de:display": [
@@ -491,6 +507,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-4d06977bb1.woff2",
     "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-db19c08cea.woff2",
+    "chars": "Òà"
    }
   ],
   "en:body:700": [
@@ -577,6 +597,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-34b7c36763.woff2",
     "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-08e47e1c80.woff2",
+    "chars": "Òà"
    }
   ],
   "en:display": [
@@ -719,6 +743,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-4d06977bb1.woff2",
     "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-557467158e.woff2",
+    "chars": "Òàç"
    }
   ],
   "es:body:700": [
@@ -821,6 +849,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-34b7c36763.woff2",
     "chars": "しすぶほぼをんトド久予事令体働全分制労厚和員士失年弁所数旗月未来査業概永測生研祉福究者被調護赤類"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-ac74c4b004.woff2",
+    "chars": "Òàç"
    }
   ],
   "es:display": [
@@ -949,6 +981,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-cd98601aa0.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-3a2b61421d.woff2",
+    "chars": "Òàç"
    }
   ],
   "hi:body:700": [
@@ -1019,6 +1055,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-a918b77079.woff2",
     "chars": "÷"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-fb4005b076.woff2",
+    "chars": "Òàç"
    }
   ],
   "hi:dot": [
@@ -1303,6 +1343,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-5148ead2f7.woff2",
     "chars": "札閲"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-aeb746bb91.woff2",
+    "chars": "Òàç唆易衝貿頃"
    }
   ],
   "ja:body:700": [
@@ -1577,6 +1621,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-3da45c7546.woff2",
     "chars": "札閲"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-ced05ba2fe.woff2",
+    "chars": "Òàç唆易衝貿頃"
    }
   ],
   "ja:display": [
@@ -1755,6 +1803,10 @@
    {
     "file": "dela-gothic-one-400-ja-dcf0feaa2b.woff2",
     "chars": "印営筆絡訂運針集"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-4d2c73beb3.woff2",
+    "chars": "撃衝"
    }
   ],
   "ja:dot": [
@@ -2099,6 +2151,10 @@
    {
     "file": "noto-sans-sc-400-zh-9dc47bcc7b.woff2",
     "chars": "しすぶほぼをんト働労員尖廓弁捉査業測調護趁類"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-401131ba7c.woff2",
+    "chars": "Òàç贸霍"
    }
   ],
   "zh:body:700": [
@@ -2389,6 +2445,10 @@
    {
     "file": "noto-sans-sc-700-zh-0ae5998952.woff2",
     "chars": "しすぶほぼをんト働労員尖廓弁捉査業測調護趁類"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-717505172c.woff2",
+    "chars": "Òàç贸霍"
    }
   ],
   "zh:display": [
@@ -2567,6 +2627,10 @@
    {
     "file": "noto-sans-sc-900-zh-d52eee6df1.woff2",
     "chars": "引系编营订辑针"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-3a35a89f89.woff2",
+    "chars": "响够影精胀"
    }
   ],
   "zh:dot": [
