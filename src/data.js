@@ -2937,6 +2937,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-19",
+      "en": "Published the essay “What would a basic income cost the United States?”",
+      "ja": "エッセイ『アメリカで全員にベーシックインカムを配ると、いくらかかる？ 月500ドルから2,000ドルまで』を公開",
+      "zh": "发布随笔《在美国给每个人发基本收入，要花多少钱？从每月500到2,000美元》",
+      "hi": "निबंध “अमेरिका में सबको बेसिक इनकम देने का ख़र्च कितना? 500 से 2,000 डॉलर महीना तक” प्रकाशित",
+      "es": "Publicado el ensayo «¿Cuánto le costaría a Estados Unidos una renta básica?»",
+      "de": "Essay „Was würde ein Grundeinkommen die USA kosten?“ veröffentlicht",
+      "ar": "نشرنا مقال «كم يكلّف الدخل الأساسي في الولايات المتحدة؟»"
+    },
+    {
       "date": "2026-11-18",
       "en": "Published the essay “Share out AI companies’ profits: how much would each person get?”",
       "ja": "エッセイ『AI企業の利益を全員に配ったら、1人いくら？』を公開",
@@ -10964,6 +10974,33 @@ module.exports = {
         "de": "Die amtlichen Zahlen hinter dem Essay zu den Kosten in Deutschland: Bevölkerung, Steuereinnahmen, Bundeshaushalt, BIP und Staatseinnahmen, jeweils mit Quelle und Datum.",
         "ar": "الأرقام الرسمية التي يقوم عليها مقال تكلفة الدخل الأساسي في ألمانيا: السكان والإيرادات الضريبية والميزانية الاتحادية والناتج المحلي والإيرادات الحكومية، لكل منها مصدره وتاريخه."
       }
+    },
+    {
+      "id": "us-2026",
+      "files": [
+        "us-2026.json",
+        "us-2026.csv"
+      ],
+      "page": "essays/us-basic-income-cost/",
+      "lic": "odLicSrc",
+      "name": {
+        "en": "United States: figures for the cost of a basic income",
+        "ja": "アメリカのベーシックインカムの費用の数字",
+        "zh": "美国基本收入成本的相关数字",
+        "hi": "अमेरिका: बेसिक इनकम के ख़र्च के आंकड़े",
+        "es": "Estados Unidos: cifras del coste de una renta básica",
+        "de": "USA: Zahlen zu den Kosten eines Grundeinkommens",
+        "ar": "الولايات المتحدة: أرقام تكلفة الدخل الأساسي"
+      },
+      "desc": {
+        "en": "The official figures behind the United States cost essay: population, federal revenue, individual income tax, outlays, GDP, the programs a basic income could replace and the pilot counts, each with its source and date.",
+        "ja": "アメリカの費用のエッセイに使った公的な数字。人口、連邦政府の収入、個人所得税、支出、GDP、置き換えられる制度、パイロット事業の件数。それぞれ出典と日付つき。",
+        "zh": "美国成本一文所用的官方数字：人口、联邦收入、个人所得税、支出、GDP、基本收入可以取代的项目以及试点数量，每项均附来源和日期。",
+        "hi": "अमेरिका के ख़र्च वाले निबंध के पीछे के आधिकारिक आंकड़े: आबादी, संघीय आमदनी, व्यक्तिगत आयकर, ख़र्च, GDP, वे योजनाएँ जिनकी जगह बेसिक इनकम ले सकती है और पायलटों की गिनती, हर एक स्रोत और तारीख़ के साथ।",
+        "es": "Las cifras oficiales del ensayo sobre el coste en Estados Unidos: población, ingresos federales, impuesto sobre la renta personal, gasto, PIB, los programas que podría sustituir una renta básica y el recuento de pilotos, cada una con su fuente y fecha.",
+        "de": "Die amtlichen Zahlen hinter dem Essay zu den Kosten in den USA: Bevölkerung, Bundeseinnahmen, Einkommensteuer, Ausgaben, BIP, die Programme, die ein Grundeinkommen ersetzen könnte, und die Zahl der Pilotprojekte, jeweils mit Quelle und Datum.",
+        "ar": "الأرقام الرسمية التي يقوم عليها مقال تكلفة الدخل الأساسي في الولايات المتحدة: السكان والإيرادات الاتحادية وضريبة الدخل الفردي والنفقات والناتج المحلي والبرامج التي قد يحل محلها الدخل الأساسي وعدد التجارب، لكل منها مصدره وتاريخه."
+      }
     }
   ],
   "OPEN_DATA": [
@@ -18974,6 +19011,1090 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "us-basic-income-cost",
+      "date": "2026-11-19",
+      "related": [
+        "japan-basic-income-cost",
+        "germany-merz-basic-income-cost",
+        "openresearch-cash-study",
+        "does-cash-make-people-stop-working",
+        "refundable-tax-credit-vs-basic-income",
+        "basic-income-world-map"
+      ],
+      "title": {
+        "en": "What would a basic income cost the United States?",
+        "ja": "アメリカで全員にベーシックインカムを配ると、いくらかかる？ 月500ドルから2,000ドルまで",
+        "zh": "在美国给每个人发基本收入，要花多少钱？从每月500到2,000美元",
+        "hi": "अमेरिका में सबको बेसिक इनकम देने का ख़र्च कितना? 500 से 2,000 डॉलर महीना तक",
+        "es": "¿Cuánto le costaría a Estados Unidos una renta básica?",
+        "de": "Was würde ein Grundeinkommen die USA kosten?",
+        "ar": "كم يكلّف الدخل الأساسي في الولايات المتحدة؟"
+      },
+      "desc": {
+        "en": "From $500 to $2,000 a month. $1,000 for every adult would cost about $3.24 trillion a year, 60% of federal revenue.",
+        "ja": "大人全員に月1,000ドルなら年約3.24兆ドルで、連邦政府の収入の60％。何を置き換えられるか、誰が損をするかも計算しました。",
+        "zh": "给美国每个成年人每月1,000美元，一年约3.24万亿美元，占联邦全部收入的60%。还算了能替代哪些项目、谁会吃亏。",
+        "hi": "अमेरिका के हर वयस्क को 1,000 डॉलर महीना देने का ख़र्च साल में करीब 3.24 ट्रिलियन डॉलर, संघीय आमदनी का 60%।",
+        "es": "De 500 a 2.000 dólares al mes. 1.000 dólares para cada adulto costarían unos 3,24 billones al año, el 60 % de los ingresos federales.",
+        "de": "Von 500 bis 2.000 Dollar im Monat. 1.000 Dollar für jeden Erwachsenen kosteten rund 3,24 Billionen im Jahr, 60 % der Bundeseinnahmen.",
+        "ar": "من 500 إلى 2,000 دولار شهريًا. عند 1,000 دولار لكل بالغ: نحو 3.24 تريليون دولار سنويًا."
+      },
+      "blocks": {
+        "en": [
+          [
+            "p",
+            "How much would it cost to give everyone in the United States a basic income? The answer depends almost entirely on the amount, and on who counts as everyone. At $1,000 a month for every adult, the Freedom Dividend Andrew Yang proposed in 2020, it would cost about $3.24 trillion a year: 60% of all federal revenue in fiscal year 2026. At $1,000 a month for everyone, children included, it would cost $4.10 trillion. Below: the cost at five amounts, which existing programs it could replace and who would lose if they were replaced, and what US pilots have found."
+          ],
+          [
+            "h",
+            "How we count"
+          ],
+          [
+            "p",
+            "The Census Bureau estimates that 341,784,857 people lived in the United States on 1 July 2025, of whom 269,763,509 were aged 18 or over. These are the latest official estimates.[1] If everyone gets the same amount, the cost is simply the monthly amount × 12 × 341.8 million; for adults only, × 269.8 million. We use five amounts."
+          ],
+          [
+            "p",
+            "$91 a month is the standard amount for the United States in this site’s {211-country comparison|/calc/countries/}: the World Bank’s poverty line of $3.00 a day.[2][3] $500 a month is the typical guaranteed income pilot: of the 101 US pilots in {our table|/pilots/us/}, the median pays $500 a month and 48 pay exactly that.[4] $1,000 a month for adults only is Andrew Yang’s Freedom Dividend from his 2020 presidential campaign, “for every American adult over the age of 18”.[5] $1,000 a month for everyone is the default on this site’s {US calculator page|/calc/us/}, and $2,000 is its highest preset."
+          ],
+          [
+            "h",
+            "What it would cost: five amounts"
+          ],
+          [
+            "t",
+            "Per person per month | Cost per year | Share of federal revenue (FY2026) | Share of individual income tax (FY2026) | Share of federal outlays (FY2026) | Share of GDP (FY2026)\n$91 (poverty line) | $0.37 trillion | 7% | 13% | 5% | 1.2%\n$500 | $2.05 trillion | 38% | 72% | 28% | 6.4%\n$1,000, adults 18+ only (Yang) | $3.24 trillion | 60% | 114% | 44% | 10.0%\n$1,000 | $4.10 trillion | 76% | 144% | 55% | 12.7%\n$2,000 | $8.20 trillion | 152% | 288% | 111% | 25.4%"
+          ],
+          [
+            "p",
+            "The yardsticks are for fiscal year 2026, which ran from October 2025 to September 2026. Federal receipts came to $5.403 trillion, of which individual income taxes were $2.846 trillion, and outlays to $7.396 trillion, according to the Monthly Treasury Statement for September 2026.[6] Nominal GDP over the same four quarters was $32.24 trillion; this is our average of the Bureau of Economic Analysis’s quarterly estimates, and the last quarter is still an advance estimate.[7] State and local taxes are not included."
+          ],
+          [
+            "p",
+            "Only the poverty-line floor stays under a tenth of federal revenue. The typical pilot amount, $500 for everyone, would take 38% of all federal revenue, almost three quarters of what the individual income tax brings in. Yang’s design would cost more than the whole individual income tax. $1,000 for everyone would cost 76% of federal revenue, and $2,000 more than all federal revenue and more than everything the federal government spends."
+          ],
+          [
+            "p",
+            "Children make a large difference, because they are about a fifth of the population: 72.0 million of the 341.8 million are under 18.[1] Leaving them out, as Yang did, cuts the cost of $1,000 a month from $4.10 trillion to $3.24 trillion. Yang’s plan was also for citizens only; we count all residents aged 18 and over, so his own design would cost somewhat less than the figure here.[5] The {US calculator page|/calc/us/} lets you try adults only or children only."
+          ],
+          [
+            "h",
+            "What it could replace"
+          ],
+          [
+            "p",
+            "A basic income is usually meant to replace some existing programs, not to come on top of all of them. Which ones is a design choice, and the most important one. These are the main federal cash or near-cash programs for individuals, with their outlays in fiscal year 2026 from the same Treasury statement.[6]"
+          ],
+          [
+            "p",
+            "Social Security. Old-age, survivors and disability benefits came to $1.654 trillion, by far the largest. In October 2026, 55.2 million retired workers received an average of $2,092.17 a month, and 6.9 million disabled workers an average of $1,639.28.[8] Benefits are earned through payroll taxes, so replacing them is the most contested choice."
+          ],
+          [
+            "p",
+            "Supplemental Security Income (SSI), for older, blind and disabled people with low incomes and few assets: $70.5 billion. In October 2026, 7.3 million recipients received an average of $740.07 a month.[6][8]"
+          ],
+          [
+            "p",
+            "SNAP (food stamps): $95.4 billion. The figure includes the federal share of states’ administrative costs as well as benefits.[6]"
+          ],
+          [
+            "p",
+            "The refundable parts of the Earned Income Tax Credit (EITC) and the Child Tax Credit (CTC), the amounts paid out beyond what families owe in tax: $68.5 billion and $28.6 billion.[6] The parts that only reduce tax bills are not counted."
+          ],
+          [
+            "p",
+            "Temporary Assistance for Needy Families (TANF): $17.5 billion in federal block-grant outlays. Most TANF money is not cash: in fiscal year 2024 only 21.8% of combined federal and state TANF spending went on basic assistance.[6][9]"
+          ],
+          [
+            "p",
+            "Not counted: Medicare, Medicaid and other health coverage, unemployment insurance, housing assistance, veterans’ benefits and tax allowances. Two scenarios, for the three amounts of $1,000 a month or more (in brackets, the share of federal revenue):"
+          ],
+          [
+            "t",
+            "What is replaced | Saving per year | Net cost at $1,000, adults 18+ (Yang) | Net cost at $1,000, everyone | Net cost at $2,000, everyone\nNothing (gross cost) | – | $3.24 trillion (60%) | $4.10 trillion (76%) | $8.20 trillion (152%)\nA: SSI, SNAP, refundable EITC and CTC, TANF | $0.28 trillion | $2.96 trillion (55%) | $3.82 trillion (71%) | $7.92 trillion (147%)\nB: A + Social Security | $1.93 trillion | $1.30 trillion (24%) | $2.17 trillion (40%) | $6.27 trillion (116%)"
+          ],
+          [
+            "p",
+            "The means-tested programs are small next to the totals: replacing all of them saves $0.28 trillion, which lowers the cost of $1,000 for everyone only from 76% to 71% of federal revenue. Only Social Security is large enough to change the picture. With it replaced too (B), Yang’s design would cost a net $1.30 trillion, 24% of federal revenue, and $1,000 for everyone $2.17 trillion, 40%."
+          ],
+          [
+            "p",
+            "But replacing Social Security has clear losers. At $1,000 a month, the average retired worker, who now receives $2,092.17, would lose about $1,092 a month, roughly half of the benefit, and the average disabled worker about $639.[8] Even $2,000 a month is slightly below the average retired worker’s benefit, and many retirees receive more than the average. People on SSI, whose average payment is $740.07, would get more at $1,000."
+          ],
+          [
+            "p",
+            "Yang did not propose scenario B. In his plan Social Security retirement benefits would “stack” with the dividend, and people on welfare or food stamps would choose between their current benefits and the $1,000 rather than receive both; people on disability insurance would choose between adding the $1,000 and adding SSI.[5] His design therefore sits between the gross cost and scenario A. He proposed paying for it mainly with a 10% value-added tax.[5]"
+          ],
+          [
+            "h",
+            "What US pilots found"
+          ],
+          [
+            "p",
+            "No one has paid a permanent basic income to everyone in the United States. What exists are guaranteed income pilots that pay limited groups for a limited time. {Our table of US guaranteed income pilots|/pilots/us/} lists 101: the median pays $500 a month for 18 months, 48 pay exactly $500 and 26 pay $1,000.[4] Most are for residents with low incomes, so they test a guaranteed income rather than a universal one."
+          ],
+          [
+            "p",
+            "The largest randomised study is OpenResearch’s Unconditional Cash Study, funded in part by Sam Altman. From November 2020 to October 2023, 1,000 people aged 21 to 40 with low incomes in Illinois and Texas received $1,000 a month with no conditions, and 2,000 others received $50 a month as a control group. The results first came out in July 2024, and the employment paper was last revised in August 2026. In that version, recipients’ own income, not counting the transfers, was about $1,900 a year lower than the control group’s, and they were 4.2 percentage points less likely to be in the labour force; there was no measurable gain in job quality, and higher well-being in the first year faded afterwards.[10]"
+          ],
+          [
+            "p",
+            "In the surveys, recipients worked about 1.3 hours a week less than the control group. Employment rose in both groups, from 58% to 72% among recipients and from 59% to 74% in the control group.[11] More in {What happened when Sam Altman’s study gave people $1,000 a month for three years|/essays/openresearch-cash-study/}. Other studies point the same way: most found small reductions in work or none, and none found people quitting en masse (see {Does giving people money make them stop working?|/essays/does-cash-make-people-stop-working/}). None of them can show what would happen to prices, wages or taxes if all 342 million people were paid, or how people would act if the payment were for life."
+          ],
+          [
+            "h",
+            "What the numbers show"
+          ],
+          [
+            "p",
+            "A basic income for everyone in the United States would cost from about $0.37 trillion a year at the poverty-line floor to $8.20 trillion at $2,000 a month. Yang’s $1,000 for adults would cost about $3.24 trillion, 60% of federal revenue and 10% of GDP. Replacing SSI, SNAP, TANF and the refundable tax credits would cover less than a tenth of that. Only Social Security is large enough to bring the net cost down to about a quarter of federal revenue, and replacing it would cut the average retired worker’s benefit roughly in half."
+          ],
+          [
+            "p",
+            "To try other amounts, or adults or children only, use {the US calculator page|/calc/us/}; for other countries, see {the 211-country comparison|/calc/countries/} and {the world map|/essays/basic-income-world-map/}. For Japan and Germany, see {What would a basic income cost Japan?|/essays/japan-basic-income-cost/} and {Merz was asked about basic income. What would it cost Germany?|/essays/germany-merz-basic-income-cost/} For a design that pays only people on low incomes, see {Refundable tax credits vs basic income|/essays/refundable-tax-credit-vs-basic-income/}."
+          ],
+          [
+            "h",
+            "Assumptions and limits"
+          ],
+          [
+            "p",
+            "Everyone, the same amount. Children get the full amount unless stated. The population is the Census Bureau’s resident population on 1 July 2025, held constant; it includes people who are not citizens.[1]"
+          ],
+          [
+            "p",
+            "Gross cost. Taxes on the payment, changes in work or prices, and the cost of running it are left out. If the payment were taxable income, part of its cost would come back as tax."
+          ],
+          [
+            "p",
+            "Yardsticks. Revenue and outlays are federal only, for fiscal year 2026; adding state and local taxes would lower every share of revenue. GDP for the fiscal year is our average of four quarterly estimates, the last of them an advance estimate that will be revised.[7] The {US calculator page|/calc/us/} and the {world map|/essays/basic-income-world-map/} use the UN’s population estimate (347.3 million) and the World Bank’s GDP for calendar 2025 ($30.77 trillion),[2] so their totals and shares differ slightly from the ones here."
+          ],
+          [
+            "p",
+            "Offsets. The program figures are federal outlays as recorded by the Treasury: for SNAP they include administrative costs, for TANF non-cash services, and state spending is not included. The Social Security figure covers benefit payments only. Health coverage is not counted."
+          ],
+          [
+            "p",
+            "Not a proposal. The amounts are yardsticks. Nothing here says whether the United States should introduce a basic income; the numbers only show the size of the sums."
+          ]
+        ],
+        "ja": [
+          [
+            "p",
+            "アメリカに住む全員にベーシックインカム（BI）を配ったら、いくらかかるのか。答えはほとんど、金額と「全員」に誰を含めるかで決まります。2020年にアンドリュー・ヤン氏が掲げた「自由の配当」のように大人全員に月1,000ドルなら、年約3.24兆ドル。2026会計年度の連邦政府の収入の60％にあたります。子どもも含めた全員に月1,000ドルなら、年4.10兆ドルです。以下では、5つの金額での費用、今ある制度のうち何を置き換えられるか、置き換えたら誰が損をするか、そしてアメリカのパイロット事業でわかったことを順に見ていきます。"
+          ],
+          [
+            "h",
+            "数え方"
+          ],
+          [
+            "p",
+            "国勢調査局の推計によると、2025年7月1日のアメリカの人口は3億4178万4857人で、うち18歳以上は2億6976万3509人です。これが最新の公式推計です。[1] 全員に同じ額を配るなら、費用は「月額×12か月×3億4178万人」。大人だけなら「×2億6976万人」です。金額は5つで計算します。"
+          ],
+          [
+            "p",
+            "月91ドルは、当サイトの{211か国比較|/calc/countries/}でのアメリカの標準額で、世界銀行の貧困線「1日3.00ドル」です。[2][3] 月500ドルは、典型的な保証所得のパイロット事業の額です。{当サイトの一覧|/pilots/us/}にあるアメリカの101件のうち、月額の中央値は500ドルで、48件がちょうど500ドルです。[4] 大人だけに月1,000ドルは、2020年の大統領選でヤン氏が掲げた「自由の配当（Freedom Dividend）」で、「18歳を超えるすべてのアメリカの大人に」配るものです。[5] 全員に月1,000ドルは当サイトの{アメリカの計算ページ|/calc/us/}の初期値、2,000ドルはそのいちばん大きいプリセットです。"
+          ],
+          [
+            "h",
+            "いくらかかるか：5つの金額で"
+          ],
+          [
+            "t",
+            "1人あたり月額 | 年間の費用 | 連邦政府の収入に対する割合（2026会計年度） | 個人所得税に対する割合（2026会計年度） | 連邦政府の支出に対する割合（2026会計年度） | GDPに対する割合（2026会計年度）\n91ドル（貧困線） | 0.37兆ドル | 7% | 13% | 5% | 1.2%\n500ドル | 2.05兆ドル | 38% | 72% | 28% | 6.4%\n1,000ドル、18歳以上だけ（ヤン案） | 3.24兆ドル | 60% | 114% | 44% | 10.0%\n1,000ドル | 4.10兆ドル | 76% | 144% | 55% | 12.7%\n2,000ドル | 8.20兆ドル | 152% | 288% | 111% | 25.4%"
+          ],
+          [
+            "p",
+            "比べた数字は2026会計年度（2025年10月〜2026年9月）のものです。財務省の2026年9月の月次財政報告によると、連邦政府の収入は5.403兆ドルで、うち個人所得税が2.846兆ドル、支出は7.396兆ドルでした。[6] 同じ4四半期の名目GDPは32.24兆ドルです。これは経済分析局（BEA）の四半期の推計を当サイトで平均したもので、最後の四半期はまだ速報値です。[7] 州や地方の税は含みません。"
+          ],
+          [
+            "p",
+            "連邦政府の収入の1割に収まるのは、貧困線の最低ラインだけです。パイロット事業で典型的な500ドルを全員に配ると、連邦政府の収入の38％、個人所得税の4分の3近くになります。ヤン氏の案は個人所得税をまるごと上回ります。全員に1,000ドルなら収入の76％、2,000ドルなら連邦政府の収入も、支出の全体も上回ります。"
+          ],
+          [
+            "p",
+            "当サイトの世界銀行データの2025年の為替レート（1ドル約150円）では、月1,000ドルは約15万円、年4.10兆ドルは約614兆円です。[2]"
+          ],
+          [
+            "p",
+            "子どもを含めるかどうかで、総額は大きく変わります。18歳未満が人口の約5分の1、3億4178万人のうち7202万人を占めるからです。[1] ヤン氏のように子どもを除くと、月1,000ドルの費用は4.10兆ドルから3.24兆ドルに下がります。ヤン氏の案は国民（市民）だけが対象でしたが、ここでは18歳以上の住民全員を数えているので、ヤン氏の案そのものはこの数字より少し安くなります。[5] 大人だけ、子どもだけの場合は{アメリカの計算ページ|/calc/us/}で試せます。"
+          ],
+          [
+            "h",
+            "何を置き換えられるか"
+          ],
+          [
+            "p",
+            "BIは多くの場合、今ある制度の一部と置き換える前提で語られます。すべてに上乗せするわけではありません。何を置き換えるかは設計の問題で、しかもいちばん大事な部分です。個人に現金やそれに近い形で払っている主な連邦の制度を、同じ財務省の報告にある2026会計年度の支出で見てみます。[6]"
+          ],
+          [
+            "p",
+            "社会保障年金（Social Security）。老齢・遺族・障害年金の給付は1.654兆ドルで、ほかを大きく引き離しています。2026年10月には、5521万人の退職者が平均で月2,092.17ドル、694万人の障害者が平均で月1,639.28ドルを受け取っていました。[8] 給与から払う社会保障税の見返りとして支払われるので、置き換えはいちばん意見が分かれるところです。"
+          ],
+          [
+            "p",
+            "補足的保障所得（SSI）。所得と資産の少ない高齢者、視覚障害者、障害者のための制度で、705億ドル。2026年10月には730万人が平均で月740.07ドルを受け取っていました。[6][8]"
+          ],
+          [
+            "p",
+            "SNAP（フードスタンプ）。954億ドル。給付のほか、州の事務費のうち連邦が負担する分も含みます。[6]"
+          ],
+          [
+            "p",
+            "勤労所得税額控除（EITC）と児童税額控除（CTC）のうち、納める税を超えて家族に払い出す「給付」の部分。それぞれ685億ドルと286億ドルです。[6] 税を減らすだけの部分は数えていません。"
+          ],
+          [
+            "p",
+            "貧困家庭一時扶助（TANF）。連邦の一括補助金の支出は175億ドル。ただしTANFのお金の多くは現金ではありません。2024会計年度に連邦と州を合わせたTANFの支出のうち、基本的な現金扶助に使われたのは21.8％だけでした。[6][9]"
+          ],
+          [
+            "p",
+            "メディケア、メディケイドなどの医療保障、失業保険、住宅支援、退役軍人の給付、税の控除は数えていません。月1,000ドル以上の3つの金額について、2通りで計算しました（かっこ内は連邦政府の収入に対する割合）。"
+          ],
+          [
+            "t",
+            "置き換えるもの | 浮く額（年） | 1,000ドル・18歳以上（ヤン案）の差し引き費用 | 1,000ドル・全員の差し引き費用 | 2,000ドル・全員の差し引き費用\nなし（総額） | – | 3.24兆ドル（60%） | 4.10兆ドル（76%） | 8.20兆ドル（152%）\nA：SSI、SNAP、EITCとCTCの給付部分、TANF | 0.28兆ドル | 2.96兆ドル（55%） | 3.82兆ドル（71%） | 7.92兆ドル（147%）\nB：A＋社会保障年金 | 1.93兆ドル | 1.30兆ドル（24%） | 2.17兆ドル（40%） | 6.27兆ドル（116%）"
+          ],
+          [
+            "p",
+            "所得の低い人向けの制度は、総額にくらべると小さく、すべて置き換えても浮くのは0.28兆ドルです。全員に1,000ドルの費用は、連邦政府の収入の76％から71％に下がるだけです。様子を変えるほど大きいのは社会保障年金だけです。これも置き換えると（B）、ヤン氏の案の差し引き費用は1.30兆ドルで収入の24％、全員に1,000ドルなら2.17兆ドルで40％になります。"
+          ],
+          [
+            "p",
+            "ただし社会保障年金を置き換えると、はっきり損をする人が出ます。月1,000ドルなら、いま月2,092.17ドルを受け取っている平均的な退職者は月約1,092ドル、給付のほぼ半分を失い、平均的な障害者は約639ドルを失います。[8] 月2,000ドルでも平均的な退職者の給付をわずかに下回り、平均より多く受け取っている退職者も大勢います。一方、平均で月740.07ドルのSSIの受給者は、1,000ドルなら受け取りが増えます。"
+          ],
+          [
+            "p",
+            "ヤン氏自身はBの案を示していません。ヤン氏の案では、社会保障の退職年金は配当に「上乗せ」され、生活保護（welfare）やフードスタンプを受けている人は、今の給付と1,000ドルのどちらかを選び、両方は受け取りません。障害保険を受けている人は、1,000ドルを足すかSSIを足すかを選びます。[5] つまりヤン氏の案は、総額とAの間に位置します。財源は主に10％の付加価値税（VAT）としていました。[5]"
+          ],
+          [
+            "h",
+            "アメリカのパイロット事業でわかったこと"
+          ],
+          [
+            "p",
+            "アメリカで全員に恒久的なBIを配ったことはありません。あるのは、限られた人に限られた期間だけ配る保証所得のパイロット事業です。{当サイトのアメリカの保証所得パイロット一覧|/pilots/us/}には101件あり、中央値は月500ドルを18か月。48件がちょうど500ドル、26件が1,000ドルです。[4] 多くは所得の低い住民が対象で、試しているのは全員に配るBIではなく、保証所得です。"
+          ],
+          [
+            "p",
+            "いちばん大きなランダム化比較試験は、サム・アルトマン氏も資金を出したOpenResearchの「無条件現金給付研究」です。2020年11月から2023年10月まで、イリノイ州とテキサス州の21〜40歳の所得の低い1,000人が条件なしで月1,000ドルを受け取り、別の2,000人が対照群として月50ドルを受け取りました。結果は2024年7月に初めて公表され、就労についての論文は2026年8月に最新の改訂が出ています。それによると、給付を除いた本人の所得は対照群より年約1,900ドル少なく、働いているか仕事を探している人の割合は4.2ポイント低くなりました。仕事の質が上がった形跡はなく、1年目に高まった幸福感はその後薄れました。[10]"
+          ],
+          [
+            "p",
+            "調査では、受給者は対照群より週に約1.3時間少なく働いていました。働いている人の割合はどちらのグループでも上がり、受給者は58％から72％、対照群は59％から74％になりました。[11] くわしくは{サム・アルトマンの研究で、月1,000ドルを3年間もらった人たちに何が起きたか|/essays/openresearch-cash-study/}をどうぞ。ほかの研究も同じ傾向で、多くは働く量が少し減ったか変わらず、仕事をやめる人が大勢出た例はありません（{お金を配ると、人は働かなくなるのか？|/essays/does-cash-make-people-stop-working/}）。ただし、3億4000万人全員に配ったら物価や賃金や税がどうなるか、一生続く給付なら人がどう動くかは、どの研究からもわかりません。"
+          ],
+          [
+            "h",
+            "数字からわかること"
+          ],
+          [
+            "p",
+            "アメリカの全員にBIを配る費用は、貧困線の最低ラインで年約0.37兆ドル、月2,000ドルなら年8.20兆ドルです。ヤン氏の大人に1,000ドルなら年約3.24兆ドルで、連邦政府の収入の60％、GDPの10％です。SSI、SNAP、TANF、税額控除の給付部分を置き換えても、まかなえるのはその1割未満です。差し引き費用を収入の4分の1ほどまで下げられるのは社会保障年金だけで、置き換えれば平均的な退職者の給付はおよそ半分になります。"
+          ],
+          [
+            "p",
+            "ほかの金額や、大人だけ・子どもだけの場合は{アメリカの計算ページ|/calc/us/}で、ほかの国は{211か国比較|/calc/countries/}と{世界地図|/essays/basic-income-world-map/}で確かめられます。日本とドイツについては{日本で全員にベーシックインカムを配ると、いくらかかる？|/essays/japan-basic-income-cost/}と{ドイツのメルツ首相がベーシックインカムに言及。ドイツで全員に配るといくら？|/essays/germany-merz-basic-income-cost/}、所得の低い人だけに配るしくみについては{給付付き税額控除とベーシックインカムは、何が違うのか|/essays/refundable-tax-credit-vs-basic-income/}をどうぞ。"
+          ],
+          [
+            "h",
+            "前提と限界"
+          ],
+          [
+            "p",
+            "全員に同じ額。とくに書いていなければ、子どもも同じ額です。人口は国勢調査局の2025年7月1日の住民人口で、変わらないものとしています。市民でない人も含みます。[1]"
+          ],
+          [
+            "p",
+            "総額。給付にかかる税、働き方や物価の変化、運営の費用は入れていません。給付が課税所得になるなら、費用の一部は税として戻ってきます。"
+          ],
+          [
+            "p",
+            "比べた数字。収入と支出は連邦政府の分だけで、2026会計年度のものです。州や地方の税を足せば、収入に対する割合はどれも下がります。会計年度のGDPは4四半期の推計の平均で、最後の四半期は今後改定される速報値です。[7] {アメリカの計算ページ|/calc/us/}と{世界地図|/essays/basic-income-world-map/}は、国連の人口推計（3億4730万人）と世界銀行の2025年（暦年）のGDP（30.77兆ドル）を使っているので、[2] 総額や割合がここと少し違います。"
+          ],
+          [
+            "p",
+            "置き換え。制度の数字は財務省が記録した連邦の支出です。SNAPは事務費を、TANFは現金以外のサービスを含み、州の支出は含みません。社会保障年金は給付の支払いだけです。医療保障は数えていません。"
+          ],
+          [
+            "p",
+            "提案ではありません。金額はものさしです。アメリカがBIを導入すべきかどうかは、ここでは何も言っていません。数字は、金額の大きさを示しているだけです。"
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "给住在美国的每个人发基本收入，要花多少钱？答案几乎完全取决于金额，以及“每个人”包括谁。按安德鲁·杨2020年提出的“自由红利”，给每个成年人每月1,000美元，一年约3.24万亿美元，相当于2026财年联邦政府全部收入的60%。如果连孩子在内每人每月1,000美元，一年要4.10万亿美元。下面依次看五种金额的费用、能替代哪些现有项目、替代后谁会吃亏，以及美国的试点项目发现了什么。"
+          ],
+          [
+            "h",
+            "怎么算"
+          ],
+          [
+            "p",
+            "据人口普查局估计，2025年7月1日美国人口为341,784,857人，其中18岁及以上为269,763,509人。这是最新的官方估计。[1] 如果每个人领同样的金额，费用就是“月额×12×3.418亿”；只发给成年人则是“×2.698亿”。我们用五种金额来算。"
+          ],
+          [
+            "p",
+            "每月91美元是本站{211个国家和地区比较|/calc/countries/}中美国的标准额，即世界银行每天3.00美元的贫困线。[2][3] 每月500美元是典型的保障收入试点金额：在{本站列表|/pilots/us/}的101个美国试点中，月额中位数是500美元，有48个正好是500美元。[4] 只给成年人每月1,000美元，是安德鲁·杨在2020年总统竞选中提出的“自由红利”，发给“每一位年满18岁的美国成年人”。[5] 每人每月1,000美元是本站{美国计算页面|/calc/us/}的默认值，2,000美元是其中最高的预设金额。"
+          ],
+          [
+            "h",
+            "要花多少：五种金额"
+          ],
+          [
+            "t",
+            "每人每月 | 每年费用 | 占联邦收入（2026财年） | 占个人所得税（2026财年） | 占联邦支出（2026财年） | 占GDP（2026财年）\n91美元（贫困线） | 0.37万亿美元 | 7% | 13% | 5% | 1.2%\n500美元 | 2.05万亿美元 | 38% | 72% | 28% | 6.4%\n1,000美元，仅限18岁及以上（杨的方案） | 3.24万亿美元 | 60% | 114% | 44% | 10.0%\n1,000美元 | 4.10万亿美元 | 76% | 144% | 55% | 12.7%\n2,000美元 | 8.20万亿美元 | 152% | 288% | 111% | 25.4%"
+          ],
+          [
+            "p",
+            "比较的基准都是2026财年（2025年10月至2026年9月）。根据财政部2026年9月的月度财政报告，联邦收入为5.403万亿美元，其中个人所得税2.846万亿美元，支出为7.396万亿美元。[6] 同期四个季度的名义GDP为32.24万亿美元，这是我们对经济分析局（BEA）季度估计的平均，最后一个季度仍是初步估计。[7] 不含州和地方税。"
+          ],
+          [
+            "p",
+            "只有贫困线这一最低标准低于联邦收入的一成。试点中典型的500美元发给每个人，要占联邦收入的38%，接近个人所得税的四分之三。杨的方案超过全部个人所得税。每人1,000美元要占联邦收入的76%，2,000美元则超过联邦全部收入，也超过联邦政府的全部支出。"
+          ],
+          [
+            "p",
+            "按本站世界银行数据中2025年的汇率，1,000美元约合7,190元人民币，一年4.10万亿美元约合29.5万亿元人民币。[2]"
+          ],
+          [
+            "p",
+            "孩子算不算在内差别很大，因为他们约占人口的五分之一：3.418亿人中有7,202万人未满18岁。[1] 像杨那样不发给孩子，每月1,000美元的费用就从4.10万亿美元降到3.24万亿美元。杨的方案只发给公民，而这里算的是所有18岁及以上的居民，所以他的方案本身会比这里的数字略低。[5] 只发给成年人或只发给孩子的情况，可以在{美国计算页面|/calc/us/}上试算。"
+          ],
+          [
+            "h",
+            "能替代什么"
+          ],
+          [
+            "p",
+            "基本收入通常被设想为替代部分现有项目，而不是叠加在所有项目之上。替代哪些是设计上的选择，也是最重要的选择。下面是联邦政府以现金或接近现金的方式发给个人的主要项目，金额是同一份财政部报告中的2026财年支出。[6]"
+          ],
+          [
+            "p",
+            "社会保障养老金（Social Security）。养老、遗属和残障给付共1.654万亿美元，远远超过其他项目。2026年10月，5,521万名退休劳动者平均每月领取2,092.17美元，694万名残障劳动者平均每月领取1,639.28美元。[8] 这些给付是用工资税换来的，所以替代它们是争议最大的选择。"
+          ],
+          [
+            "p",
+            "补充保障收入（SSI），面向收入低、资产少的老年人、盲人和残障人士：705亿美元。2026年10月，730万名领取者平均每月领取740.07美元。[6][8]"
+          ],
+          [
+            "p",
+            "SNAP（食品券）：954亿美元。这个数字除了给付，还包括联邦承担的州行政费用。[6]"
+          ],
+          [
+            "p",
+            "劳动所得税抵免（EITC）和儿童税收抵免（CTC）中可退还的部分，即超出家庭应纳税额而实际发放的金额：分别为685亿美元和286亿美元。[6] 只减少税额的部分不计入。"
+          ],
+          [
+            "p",
+            "贫困家庭临时援助（TANF）：联邦整笔拨款支出175亿美元。TANF的钱大部分不是现金：2024财年联邦和州合计的TANF支出中，只有21.8%用于基本援助。[6][9]"
+          ],
+          [
+            "p",
+            "未计入：联邦医疗保险（Medicare）、医疗补助（Medicaid）等医疗保障，失业保险，住房援助，退伍军人福利和税收减免。对每月1,000美元及以上的三种金额，分两种情形计算（括号内为占联邦收入的比例）："
+          ],
+          [
+            "t",
+            "替代什么 | 每年节省 | 1,000美元、18岁及以上（杨的方案）的净费用 | 1,000美元、所有人的净费用 | 2,000美元、所有人的净费用\n不替代（总费用） | – | 3.24万亿美元（60%） | 4.10万亿美元（76%） | 8.20万亿美元（152%）\nA：SSI、SNAP、EITC和CTC的可退还部分、TANF | 0.28万亿美元 | 2.96万亿美元（55%） | 3.82万亿美元（71%） | 7.92万亿美元（147%）\nB：A＋社会保障养老金 | 1.93万亿美元 | 1.30万亿美元（24%） | 2.17万亿美元（40%） | 6.27万亿美元（116%）"
+          ],
+          [
+            "p",
+            "面向低收入者的项目与总额相比很小：全部替代也只节省0.28万亿美元，每人1,000美元的费用只从联邦收入的76%降到71%。只有社会保障养老金大到足以改变局面。连它也替代（B），杨的方案净费用为1.30万亿美元，占联邦收入的24%；每人1,000美元则为2.17万亿美元，占40%。"
+          ],
+          [
+            "p",
+            "但替代社会保障养老金会有明显的受损者。按每月1,000美元，目前每月领取2,092.17美元的普通退休劳动者每月将少拿约1,092美元，约为给付的一半；普通残障劳动者少拿约639美元。[8] 即使每月2,000美元，也略低于退休劳动者的平均给付，而领取高于平均数的退休者很多。SSI领取者的平均额为740.07美元，按1,000美元会拿得更多。"
+          ],
+          [
+            "p",
+            "杨本人并没有提出B方案。在他的方案中，社会保障退休金与红利“叠加”；领取福利（welfare）或食品券的人要在现有给付和1,000美元之间选择，不能两者兼得；领取残障保险的人在加领1,000美元和加领SSI之间选择。[5] 所以他的方案介于总费用和A之间。他提出的主要财源是10%的增值税。[5]"
+          ],
+          [
+            "h",
+            "美国试点发现了什么"
+          ],
+          [
+            "p",
+            "美国从未给所有人发过永久性的基本收入。现有的是保障收入试点，在有限时间内发给有限人群。{本站的美国保障收入试点列表|/pilots/us/}收录了101个：中位数是每月500美元、为期18个月，48个正好是500美元，26个是1,000美元。[4] 大多数面向低收入居民，所以检验的是保障收入，而不是全民基本收入。"
+          ],
+          [
+            "p",
+            "规模最大的随机对照研究，是山姆·阿尔特曼也出资的OpenResearch“无条件现金研究”。2020年11月至2023年10月，伊利诺伊州和得克萨斯州1,000名21至40岁的低收入者无条件每月领取1,000美元，另外2,000人作为对照组每月领取50美元。结果于2024年7月首次公布，关于就业的论文最近一次修订是在2026年8月。按这一版本，不计转移支付，领取者本人的收入比对照组每年少约1,900美元，劳动参与率低4.2个百分点；工作质量没有可测量的提高，第一年提高的幸福感后来消退了。[10]"
+          ],
+          [
+            "p",
+            "在问卷调查中，领取者每周比对照组少工作约1.3小时。两组的就业率都上升了：领取者从58%升到72%，对照组从59%升到74%。[11] 详见{当山姆·阿尔特曼的研究连续三年每月发给人们 1,000 美元，发生了什么|/essays/openresearch-cash-study/}。其他研究的方向相同：多数发现工作量略有减少或没有变化，没有发现大批人辞职（见{发钱会让人不再工作吗？|/essays/does-cash-make-people-stop-working/}）。但这些研究都无法说明，如果3.4亿人都领钱，物价、工资和税收会怎样，也无法说明终身发放时人们会怎样行动。"
+          ],
+          [
+            "h",
+            "数字说明了什么"
+          ],
+          [
+            "p",
+            "给美国每个人发基本收入，按贫困线最低标准一年约0.37万亿美元，每月2,000美元则一年8.20万亿美元。杨的成年人1,000美元一年约3.24万亿美元，占联邦收入的60%、GDP的10%。替代SSI、SNAP、TANF和可退还的税收抵免，只能抵消其中不到一成。只有社会保障养老金大到能把净费用降到联邦收入的四分之一左右，而替代它会让普通退休劳动者的给付减少约一半。"
+          ],
+          [
+            "p",
+            "其他金额，或只发给成年人、只发给孩子的情况，可以在{美国计算页面|/calc/us/}上试算；其他国家见{211个国家和地区比较|/calc/countries/}和{世界地图|/essays/basic-income-world-map/}。日本和德国见{在日本给每个人发基本收入，要花多少钱？|/essays/japan-basic-income-cost/}和{德国总理默茨被问到基本收入。在德国给每个人发钱要花多少？|/essays/germany-merz-basic-income-cost/}；只发给低收入者的设计见{可退还税收抵免与基本收入有何不同？|/essays/refundable-tax-credit-vs-basic-income/}。"
+          ],
+          [
+            "h",
+            "前提与局限"
+          ],
+          [
+            "p",
+            "每个人同样的金额。除非另有说明，孩子也领全额。人口采用人口普查局2025年7月1日的居民人口，并假定不变；其中包括非公民。[1]"
+          ],
+          [
+            "p",
+            "总费用。不计给付的税、工作和物价的变化以及运营成本。如果给付算作应税收入，部分费用会以税收的形式回来。"
+          ],
+          [
+            "p",
+            "比较的基准。收入和支出只算联邦政府，为2026财年；加上州和地方税，占收入的比例都会下降。财年GDP是四个季度估计的平均，最后一个季度是今后会修订的初步估计。[7] {美国计算页面|/calc/us/}和{世界地图|/essays/basic-income-world-map/}使用联合国的人口估计（3.473亿）和世界银行2025年（日历年）的GDP（30.77万亿美元），[2] 所以总额和比例与这里略有不同。"
+          ],
+          [
+            "p",
+            "替代。各项目的数字是财政部记录的联邦支出：SNAP包括行政费用，TANF包括非现金服务，不含州的支出。社会保障养老金只算给付支付。医疗保障不计入。"
+          ],
+          [
+            "p",
+            "不是提案。这些金额只是尺子。这里没有说美国是否应该实行基本收入，数字只显示金额的大小。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "अमेरिका में रहने वाले हर व्यक्ति को बेसिक इनकम देने का ख़र्च कितना होगा? जवाब लगभग पूरी तरह रकम पर, और इस पर टिका है कि \"हर व्यक्ति\" में कौन गिना जाए। हर वयस्क को 1,000 डॉलर महीना, यानी 2020 में एंड्रयू यांग का प्रस्तावित \"फ़्रीडम डिविडेंड\", साल में करीब 3.24 ट्रिलियन डॉलर का होगा: वित्त वर्ष 2026 में संघीय सरकार की कुल आमदनी का 60%। बच्चों समेत सबको 1,000 डॉलर महीना देने पर 4.10 ट्रिलियन डॉलर लगेंगे। आगे: पाँच रकमों पर ख़र्च, किन मौजूदा योजनाओं की जगह यह ले सकती है और ऐसा होने पर किसका नुक़सान होगा, और अमेरिका के पायलट प्रोजेक्टों में क्या मिला।"
+          ],
+          [
+            "h",
+            "हम कैसे गिनते हैं"
+          ],
+          [
+            "p",
+            "जनगणना ब्यूरो के अनुमान के मुताबिक़ 1 जुलाई 2025 को अमेरिका में 341,784,857 लोग रहते थे, जिनमें 269,763,509 की उम्र 18 साल या उससे ज़्यादा थी। ये सबसे नए आधिकारिक अनुमान हैं।[1] अगर सबको एक जैसी रकम मिले, तो ख़र्च बस मासिक रकम × 12 × 34.18 करोड़ है; सिर्फ़ वयस्कों के लिए × 26.98 करोड़। हम पाँच रकमें लेते हैं।"
+          ],
+          [
+            "p",
+            "91 डॉलर महीना इस साइट की {211 देशों की तुलना|/calc/countries/} में अमेरिका की मानक रकम है: वर्ल्ड बैंक की 3.00 डॉलर रोज़ की गरीबी रेखा।[2][3] 500 डॉलर महीना गारंटीड इनकम के पायलट की आम रकम है: {हमारी सूची|/pilots/us/} के 101 अमेरिकी पायलटों में मासिक रकम का माध्यिका 500 डॉलर है, और 48 ठीक इतना ही देते हैं।[4] सिर्फ़ वयस्कों को 1,000 डॉलर महीना एंड्रयू यांग का 2020 के राष्ट्रपति चुनाव अभियान वाला फ़्रीडम डिविडेंड है, \"18 साल से ऊपर के हर अमेरिकी वयस्क के लिए\"।[5] सबको 1,000 डॉलर महीना इस साइट के {अमेरिका कैलकुलेटर पेज|/calc/us/} की शुरुआती रकम है, और 2,000 डॉलर उसका सबसे बड़ा प्रीसेट।"
+          ],
+          [
+            "h",
+            "ख़र्च कितना: पाँच रकमें"
+          ],
+          [
+            "t",
+            "हर व्यक्ति, हर महीने | सालाना ख़र्च | संघीय आमदनी का हिस्सा (वित्त वर्ष 2026) | व्यक्तिगत आयकर का हिस्सा (वित्त वर्ष 2026) | संघीय ख़र्च का हिस्सा (वित्त वर्ष 2026) | GDP का हिस्सा (वित्त वर्ष 2026)\n91 डॉलर (गरीबी रेखा) | 0.37 ट्रिलियन डॉलर | 7% | 13% | 5% | 1.2%\n500 डॉलर | 2.05 ट्रिलियन डॉलर | 38% | 72% | 28% | 6.4%\n1,000 डॉलर, सिर्फ़ 18+ (यांग) | 3.24 ट्रिलियन डॉलर | 60% | 114% | 44% | 10.0%\n1,000 डॉलर | 4.10 ट्रिलियन डॉलर | 76% | 144% | 55% | 12.7%\n2,000 डॉलर | 8.20 ट्रिलियन डॉलर | 152% | 288% | 111% | 25.4%"
+          ],
+          [
+            "p",
+            "तुलना के आंकड़े वित्त वर्ष 2026 (अक्टूबर 2025 से सितंबर 2026) के हैं। सितंबर 2026 के मासिक ट्रेज़री विवरण के मुताबिक़ संघीय आमदनी 5.403 ट्रिलियन डॉलर रही, जिसमें व्यक्तिगत आयकर 2.846 ट्रिलियन डॉलर था, और ख़र्च 7.396 ट्रिलियन डॉलर।[6] उन्हीं चार तिमाहियों का नॉमिनल GDP 32.24 ट्रिलियन डॉलर था; यह आर्थिक विश्लेषण ब्यूरो (BEA) के तिमाही अनुमानों का हमारा औसत है, और आख़िरी तिमाही अभी शुरुआती अनुमान है।[7] राज्यों और स्थानीय सरकारों के कर शामिल नहीं हैं।"
+          ],
+          [
+            "p",
+            "सिर्फ़ गरीबी रेखा वाली न्यूनतम रकम संघीय आमदनी के दसवें हिस्से से नीचे रहती है। पायलटों की आम रकम, सबको 500 डॉलर, संघीय आमदनी का 38% ले लेगी, जो व्यक्तिगत आयकर का करीब तीन-चौथाई है। यांग का प्रस्ताव पूरे व्यक्तिगत आयकर से ज़्यादा का है। सबको 1,000 डॉलर संघीय आमदनी का 76% होगा, और 2,000 डॉलर पूरी संघीय आमदनी से भी ज़्यादा, और संघीय सरकार के पूरे ख़र्च से भी ज़्यादा।"
+          ],
+          [
+            "p",
+            "इस साइट के वर्ल्ड बैंक डेटा की 2025 की औसत विनिमय दर पर 1,000 डॉलर करीब 87,200 रुपये हैं, और 4.10 ट्रिलियन डॉलर साल में करीब 358 लाख करोड़ रुपये।[2]"
+          ],
+          [
+            "p",
+            "बच्चों को गिनने या न गिनने से बड़ा फ़र्क़ पड़ता है, क्योंकि वे आबादी का करीब पाँचवाँ हिस्सा हैं: 34.18 करोड़ में से 7.20 करोड़ 18 साल से कम के हैं।[1] यांग की तरह उन्हें छोड़ देने पर 1,000 डॉलर महीने का ख़र्च 4.10 ट्रिलियन से घटकर 3.24 ट्रिलियन डॉलर रह जाता है। यांग की योजना सिर्फ़ नागरिकों के लिए थी; हम 18 साल और उससे ऊपर के सभी निवासियों को गिनते हैं, इसलिए उनकी अपनी योजना यहाँ के आंकड़े से कुछ सस्ती होती।[5] सिर्फ़ वयस्कों या सिर्फ़ बच्चों के लिए {अमेरिका कैलकुलेटर पेज|/calc/us/} पर आज़माएँ।"
+          ],
+          [
+            "h",
+            "किसकी जगह ले सकती है"
+          ],
+          [
+            "p",
+            "बेसिक इनकम को आम तौर पर कुछ मौजूदा योजनाओं की जगह लेने वाला माना जाता है, सबके ऊपर जोड़ने वाला नहीं। कौन सी योजनाएँ, यह डिज़ाइन का फ़ैसला है, और सबसे अहम फ़ैसला। ये लोगों को नकद या लगभग नकद देने वाली मुख्य संघीय योजनाएँ हैं, उसी ट्रेज़री विवरण से वित्त वर्ष 2026 के ख़र्च के साथ।[6]"
+          ],
+          [
+            "p",
+            "सोशल सिक्योरिटी। वृद्धावस्था, आश्रितों और विकलांगता के लाभ 1.654 ट्रिलियन डॉलर रहे, बाक़ी सबसे कहीं बड़े। अक्टूबर 2026 में 5.52 करोड़ रिटायर कामगारों को औसतन 2,092.17 डॉलर महीना और 69.4 लाख विकलांग कामगारों को औसतन 1,639.28 डॉलर महीना मिला।[8] ये लाभ वेतन से कटने वाले टैक्स के बदले मिलते हैं, इसलिए इनकी जगह लेना सबसे विवादित विकल्प है।"
+          ],
+          [
+            "p",
+            "सप्लीमेंटल सिक्योरिटी इनकम (SSI), कम आय और कम संपत्ति वाले बुज़ुर्गों, दृष्टिहीनों और विकलांगों के लिए: 70.5 अरब डॉलर। अक्टूबर 2026 में 73 लाख लाभार्थियों को औसतन 740.07 डॉलर महीना मिला।[6][8]"
+          ],
+          [
+            "p",
+            "SNAP (फ़ूड स्टैम्प): 95.4 अरब डॉलर। इस आंकड़े में लाभों के साथ राज्यों के प्रशासनिक ख़र्च का संघीय हिस्सा भी है।[6]"
+          ],
+          [
+            "p",
+            "अर्न्ड इनकम टैक्स क्रेडिट (EITC) और चाइल्ड टैक्स क्रेडिट (CTC) के रिफ़ंडेबल हिस्से, यानी परिवारों के देय कर से ऊपर जो रकम उन्हें दी जाती है: 68.5 अरब और 28.6 अरब डॉलर।[6] जो हिस्से सिर्फ़ कर घटाते हैं, वे नहीं गिने गए।"
+          ],
+          [
+            "p",
+            "टेम्पररी असिस्टेंस फ़ॉर नीडी फ़ैमिलीज़ (TANF): संघीय ब्लॉक ग्रांट का ख़र्च 17.5 अरब डॉलर। TANF का ज़्यादातर पैसा नकद नहीं है: वित्त वर्ष 2024 में संघीय और राज्य के कुल TANF ख़र्च का सिर्फ़ 21.8% बुनियादी सहायता पर गया।[6][9]"
+          ],
+          [
+            "p",
+            "नहीं गिने गए: मेडिकेयर, मेडिकेड और दूसरी स्वास्थ्य सुरक्षा, बेरोज़गारी बीमा, आवास सहायता, पूर्व सैनिकों के लाभ और कर छूट। 1,000 डॉलर महीना या उससे ज़्यादा की तीन रकमों के लिए दो स्थितियाँ (कोष्ठक में संघीय आमदनी का हिस्सा):"
+          ],
+          [
+            "t",
+            "किसकी जगह | सालाना बचत | 1,000 डॉलर, 18+ (यांग) पर शुद्ध ख़र्च | 1,000 डॉलर, सब पर शुद्ध ख़र्च | 2,000 डॉलर, सब पर शुद्ध ख़र्च\nकुछ नहीं (कुल ख़र्च) | – | 3.24 ट्रिलियन डॉलर (60%) | 4.10 ट्रिलियन डॉलर (76%) | 8.20 ट्रिलियन डॉलर (152%)\nA: SSI, SNAP, EITC और CTC के रिफ़ंडेबल हिस्से, TANF | 0.28 ट्रिलियन डॉलर | 2.96 ट्रिलियन डॉलर (55%) | 3.82 ट्रिलियन डॉलर (71%) | 7.92 ट्रिलियन डॉलर (147%)\nB: A + सोशल सिक्योरिटी | 1.93 ट्रिलियन डॉलर | 1.30 ट्रिलियन डॉलर (24%) | 2.17 ट्रिलियन डॉलर (40%) | 6.27 ट्रिलियन डॉलर (116%)"
+          ],
+          [
+            "p",
+            "कम आय वालों की योजनाएँ कुल रकम के आगे छोटी हैं: सबकी जगह लेने पर भी 0.28 ट्रिलियन डॉलर बचते हैं, जिससे सबको 1,000 डॉलर का ख़र्च संघीय आमदनी के 76% से सिर्फ़ 71% पर आता है। तस्वीर बदलने लायक़ बड़ी सिर्फ़ सोशल सिक्योरिटी है। उसकी भी जगह लेने पर (B) यांग की योजना का शुद्ध ख़र्च 1.30 ट्रिलियन डॉलर, यानी संघीय आमदनी का 24% होगा, और सबको 1,000 डॉलर का 2.17 ट्रिलियन डॉलर, यानी 40%।"
+          ],
+          [
+            "p",
+            "लेकिन सोशल सिक्योरिटी की जगह लेने से साफ़ नुक़सान उठाने वाले लोग हैं। 1,000 डॉलर महीने पर, आज 2,092.17 डॉलर पाने वाला औसत रिटायर कामगार हर महीने करीब 1,092 डॉलर, यानी लगभग आधा लाभ खो देगा, और औसत विकलांग कामगार करीब 639 डॉलर।[8] 2,000 डॉलर महीना भी औसत रिटायर कामगार के लाभ से थोड़ा कम है, और बहुत से रिटायर लोग औसत से ज़्यादा पाते हैं। SSI वाले लोग, जिनका औसत भुगतान 740.07 डॉलर है, 1,000 डॉलर पर ज़्यादा पाएँगे।"
+          ],
+          [
+            "p",
+            "यांग ने स्थिति B का प्रस्ताव नहीं दिया था। उनकी योजना में सोशल सिक्योरिटी का रिटायरमेंट लाभ डिविडेंड के साथ \"जुड़ता\", और वेलफ़ेयर या फ़ूड स्टैम्प पाने वाले लोग मौजूदा लाभ और 1,000 डॉलर में से एक चुनते, दोनों नहीं; विकलांगता बीमा पाने वाले 1,000 डॉलर जोड़ने या SSI जोड़ने में से चुनते।[5] इसलिए उनकी योजना कुल ख़र्च और स्थिति A के बीच आती है। पैसे के लिए उन्होंने मुख्य रूप से 10% वैल्यू ऐडेड टैक्स (VAT) सुझाया था।[5]"
+          ],
+          [
+            "h",
+            "अमेरिका के पायलटों में क्या मिला"
+          ],
+          [
+            "p",
+            "अमेरिका में किसी ने सबको स्थायी बेसिक इनकम नहीं दी है। जो हैं, वे गारंटीड इनकम के पायलट हैं, जो सीमित लोगों को सीमित समय तक पैसा देते हैं। {अमेरिका के गारंटीड इनकम पायलटों की हमारी सूची|/pilots/us/} में 101 हैं: माध्यिका 18 महीने तक 500 डॉलर महीना है, 48 ठीक 500 डॉलर और 26 1,000 डॉलर देते हैं।[4] ज़्यादातर कम आय वाले निवासियों के लिए हैं, इसलिए वे सबके लिए बेसिक इनकम नहीं, गारंटीड इनकम को परखते हैं।"
+          ],
+          [
+            "p",
+            "सबसे बड़ा रैंडम अध्ययन OpenResearch का अनकंडीशनल कैश स्टडी है, जिसमें सैम ऑल्टमैन का भी पैसा लगा। नवंबर 2020 से अक्टूबर 2023 तक इलिनॉय और टेक्सस के 21 से 40 साल के कम आय वाले 1,000 लोगों को बिना शर्त 1,000 डॉलर महीना मिला, और 2,000 दूसरे लोगों को नियंत्रण समूह के तौर पर 50 डॉलर महीना। नतीजे पहली बार जुलाई 2024 में आए, और रोज़गार वाले पेपर का सबसे नया संशोधन अगस्त 2026 का है। उसके मुताबिक़, भुगतान को छोड़कर पाने वालों की अपनी आय नियंत्रण समूह से साल में करीब 1,900 डॉलर कम रही, और श्रम बल में उनके होने की संभावना 4.2 प्रतिशत अंक कम; काम की गुणवत्ता में कोई मापने लायक़ सुधार नहीं हुआ, और पहले साल बढ़ी ख़ुशहाली बाद में घट गई।[10]"
+          ],
+          [
+            "p",
+            "सर्वेक्षणों में पाने वालों ने नियंत्रण समूह से हफ़्ते में करीब 1.3 घंटे कम काम किया। दोनों समूहों में रोज़गार बढ़ा: पाने वालों में 58% से 72%, नियंत्रण समूह में 59% से 74%।[11] ज़्यादा जानकारी {जब सैम ऑल्टमैन के अध्ययन ने लोगों को तीन साल तक हर महीने $1,000 दिए, तो क्या हुआ|/essays/openresearch-cash-study/} में। दूसरे अध्ययन भी इसी ओर इशारा करते हैं: ज़्यादातर में काम थोड़ा घटा या नहीं बदला, और कहीं भी लोग बड़ी संख्या में काम छोड़ते नहीं दिखे (देखें {क्या पैसे देने से लोग काम करना छोड़ देते हैं?|/essays/does-cash-make-people-stop-working/})। लेकिन कोई भी अध्ययन यह नहीं दिखा सकता कि सभी 34 करोड़ लोगों को पैसा मिलने पर क़ीमतों, मज़दूरी या करों का क्या होगा, या उम्र भर चलने वाले भुगतान पर लोग कैसे बर्ताव करेंगे।"
+          ],
+          [
+            "h",
+            "आंकड़े क्या दिखाते हैं"
+          ],
+          [
+            "p",
+            "अमेरिका में सबको बेसिक इनकम देने का ख़र्च गरीबी रेखा वाली न्यूनतम रकम पर साल में करीब 0.37 ट्रिलियन डॉलर से लेकर 2,000 डॉलर महीने पर 8.20 ट्रिलियन डॉलर तक है। यांग का वयस्कों को 1,000 डॉलर करीब 3.24 ट्रिलियन डॉलर का है, संघीय आमदनी का 60% और GDP का 10%। SSI, SNAP, TANF और रिफ़ंडेबल टैक्स क्रेडिट की जगह लेने से इसका दसवें हिस्से से भी कम पूरा होता है। शुद्ध ख़र्च को संघीय आमदनी के करीब चौथाई तक लाने लायक़ बड़ी सिर्फ़ सोशल सिक्योरिटी है, और उसकी जगह लेने से औसत रिटायर कामगार का लाभ लगभग आधा हो जाएगा।"
+          ],
+          [
+            "p",
+            "दूसरी रकमों, या सिर्फ़ वयस्कों या बच्चों के लिए {अमेरिका कैलकुलेटर पेज|/calc/us/} देखें; दूसरे देशों के लिए {211 देशों की तुलना|/calc/countries/} और {दुनिया का नक्शा|/essays/basic-income-world-map/}। जापान और जर्मनी के लिए {जापान में सबको बेसिक इनकम देने का ख़र्च कितना?|/essays/japan-basic-income-cost/} और {जर्मन चांसलर से बेसिक इनकम पर सवाल हुआ। जर्मनी में सबको देने का ख़र्च कितना?|/essays/germany-merz-basic-income-cost/} देखें; सिर्फ़ कम आय वालों को देने वाले डिज़ाइन के लिए {रिफ़ंडेबल टैक्स क्रेडिट और बेसिक इनकम में क्या फ़र्क़ है?|/essays/refundable-tax-credit-vs-basic-income/}।"
+          ],
+          [
+            "h",
+            "मान्यताएँ और सीमाएँ"
+          ],
+          [
+            "p",
+            "सबको एक जैसी रकम। जब तक अलग न कहा जाए, बच्चों को भी पूरी रकम। आबादी जनगणना ब्यूरो की 1 जुलाई 2025 की निवासी आबादी है, जिसे स्थिर माना गया है; इसमें वे लोग भी हैं जो नागरिक नहीं हैं।[1]"
+          ],
+          [
+            "p",
+            "कुल ख़र्च। भुगतान पर कर, काम या क़ीमतों में बदलाव और इसे चलाने का ख़र्च शामिल नहीं हैं। अगर भुगतान पर आयकर लगे, तो ख़र्च का कुछ हिस्सा कर के रूप में लौट आएगा।"
+          ],
+          [
+            "p",
+            "तुलना के आंकड़े। आमदनी और ख़र्च सिर्फ़ संघीय सरकार के हैं, वित्त वर्ष 2026 के; राज्य और स्थानीय कर जोड़ने पर आमदनी के सारे हिस्से घट जाएँगे। वित्त वर्ष का GDP चार तिमाही अनुमानों का औसत है, जिनमें आख़िरी एक शुरुआती अनुमान है जो बदलेगा।[7] {अमेरिका कैलकुलेटर पेज|/calc/us/} और {दुनिया का नक्शा|/essays/basic-income-world-map/} संयुक्त राष्ट्र का आबादी अनुमान (34.73 करोड़) और वर्ल्ड बैंक का कैलेंडर वर्ष 2025 का GDP (30.77 ट्रिलियन डॉलर) इस्तेमाल करते हैं,[2] इसलिए उनके कुल और हिस्से यहाँ से थोड़े अलग हैं।"
+          ],
+          [
+            "p",
+            "जगह लेना। योजनाओं के आंकड़े ट्रेज़री में दर्ज संघीय ख़र्च हैं: SNAP में प्रशासनिक ख़र्च और TANF में नकद के अलावा सेवाएँ शामिल हैं, और राज्यों का ख़र्च शामिल नहीं है। सोशल सिक्योरिटी का आंकड़ा सिर्फ़ लाभ भुगतान का है। स्वास्थ्य सुरक्षा नहीं गिनी गई।"
+          ],
+          [
+            "p",
+            "यह प्रस्ताव नहीं है। रकमें पैमाने हैं। यहाँ कुछ नहीं कहा गया कि अमेरिका को बेसिक इनकम लानी चाहिए या नहीं; आंकड़े सिर्फ़ रकमों का आकार दिखाते हैं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "¿Cuánto costaría dar una renta básica a todas las personas que viven en Estados Unidos? La respuesta depende casi por completo de la cuantía y de a quién se cuenta como «todos». Con 1.000 dólares al mes para cada adulto, el «dividendo de la libertad» que propuso Andrew Yang en 2020, costaría unos 3,24 billones de dólares al año: el 60 % de todos los ingresos federales del año fiscal 2026. Con 1.000 dólares al mes para todos, niños incluidos, costaría 4,10 billones. A continuación: el coste con cinco cuantías, qué programas actuales podría sustituir y quién perdería si se sustituyeran, y qué han encontrado los programas piloto de Estados Unidos."
+          ],
+          [
+            "h",
+            "Cómo contamos"
+          ],
+          [
+            "p",
+            "La Oficina del Censo estima que el 1 de julio de 2025 vivían en Estados Unidos 341.784.857 personas, de las cuales 269.763.509 tenían 18 años o más. Son las estimaciones oficiales más recientes.[1] Si todos reciben la misma cantidad, el coste es simplemente la cuantía mensual × 12 × 341,8 millones; solo para adultos, × 269,8 millones. Usamos cinco cuantías."
+          ],
+          [
+            "p",
+            "91 dólares al mes es la cuantía estándar de Estados Unidos en la {comparación de 211 países|/calc/countries/} de este sitio: el umbral de pobreza del Banco Mundial, 3,00 dólares al día.[2][3] 500 dólares al mes es lo típico de un piloto de ingreso garantizado: de los 101 pilotos de {nuestra tabla|/pilots/us/}, la mediana paga 500 dólares al mes y 48 pagan exactamente eso.[4] 1.000 dólares al mes solo para adultos es el «dividendo de la libertad» de Andrew Yang en su campaña presidencial de 2020, «para todo adulto estadounidense mayor de 18 años».[5] 1.000 dólares al mes para todos es el valor inicial de la {página de la calculadora de Estados Unidos|/calc/us/}, y 2.000 dólares su opción más alta."
+          ],
+          [
+            "h",
+            "Lo que costaría: cinco cuantías"
+          ],
+          [
+            "t",
+            "Por persona y mes | Coste anual | Parte de los ingresos federales (AF 2026) | Parte del impuesto sobre la renta personal (AF 2026) | Parte del gasto federal (AF 2026) | Parte del PIB (AF 2026)\n91 dólares (umbral de pobreza) | 0,37 billones de dólares | 7 % | 13 % | 5 % | 1,2 %\n500 dólares | 2,05 billones de dólares | 38 % | 72 % | 28 % | 6,4 %\n1.000 dólares, solo mayores de 18 (Yang) | 3,24 billones de dólares | 60 % | 114 % | 44 % | 10,0 %\n1.000 dólares | 4,10 billones de dólares | 76 % | 144 % | 55 % | 12,7 %\n2.000 dólares | 8,20 billones de dólares | 152 % | 288 % | 111 % | 25,4 %"
+          ],
+          [
+            "p",
+            "Las referencias son del año fiscal 2026, de octubre de 2025 a septiembre de 2026. Según el informe mensual del Tesoro de septiembre de 2026, los ingresos federales fueron 5,403 billones de dólares, de ellos 2,846 billones del impuesto sobre la renta personal, y el gasto 7,396 billones.[6] El PIB nominal de esos cuatro trimestres fue de 32,24 billones: es nuestra media de las estimaciones trimestrales de la Oficina de Análisis Económico (BEA), y el último trimestre es aún una estimación anticipada.[7] No se incluyen los impuestos estatales ni locales."
+          ],
+          [
+            "p",
+            "Solo el mínimo del umbral de pobreza queda por debajo de una décima parte de los ingresos federales. La cuantía típica de los pilotos, 500 dólares para todos, se llevaría el 38 % de todos los ingresos federales, casi tres cuartas partes de lo que recauda el impuesto sobre la renta personal. El diseño de Yang costaría más que todo ese impuesto. 1.000 dólares para todos costarían el 76 % de los ingresos federales, y 2.000 dólares más que todos los ingresos federales y más que todo lo que gasta el Gobierno federal."
+          ],
+          [
+            "p",
+            "Al tipo de cambio de 2025 de los datos del Banco Mundial de este sitio, 1.000 dólares son unos 885 euros, y 4,10 billones de dólares, unos 3,6 billones de euros al año.[2]"
+          ],
+          [
+            "p",
+            "Contar o no a los niños cambia mucho el total, porque son alrededor de una quinta parte de la población: 72,0 de los 341,8 millones tienen menos de 18 años.[1] Dejarlos fuera, como hizo Yang, reduce el coste de 1.000 dólares al mes de 4,10 a 3,24 billones. El plan de Yang era además solo para ciudadanos; aquí contamos a todos los residentes de 18 años o más, así que su diseño costaría algo menos que esta cifra.[5] La {página de la calculadora de Estados Unidos|/calc/us/} permite probar solo adultos o solo niños."
+          ],
+          [
+            "h",
+            "Qué podría sustituir"
+          ],
+          [
+            "p",
+            "Una renta básica suele pensarse para sustituir algunos programas existentes, no para sumarse a todos. Cuáles es una decisión de diseño, y la más importante. Estos son los principales programas federales que pagan a las personas en efectivo o casi, con su gasto del año fiscal 2026 según el mismo informe del Tesoro.[6]"
+          ],
+          [
+            "p",
+            "Seguridad Social. Las pensiones de jubilación, supervivencia e incapacidad sumaron 1,654 billones de dólares, con mucho la partida mayor. En octubre de 2026, 55,2 millones de trabajadores jubilados recibían de media 2.092,17 dólares al mes, y 6,9 millones de trabajadores con discapacidad, 1.639,28 dólares.[8] Las prestaciones se ganan con las cotizaciones sobre el salario, así que sustituirlas es la opción más discutida."
+          ],
+          [
+            "p",
+            "Ingreso Suplementario de Seguridad (SSI), para personas mayores, ciegas o con discapacidad con pocos ingresos y bienes: 70.500 millones de dólares. En octubre de 2026, 7,3 millones de beneficiarios recibían de media 740,07 dólares al mes.[6][8]"
+          ],
+          [
+            "p",
+            "SNAP (cupones de alimentos): 95.400 millones de dólares. La cifra incluye, además de las prestaciones, la parte federal de los costes administrativos de los estados.[6]"
+          ],
+          [
+            "p",
+            "Las partes reembolsables del crédito fiscal por ingresos del trabajo (EITC) y del crédito fiscal por hijos (CTC), lo que se paga a las familias por encima de lo que deben en impuestos: 68.500 y 28.600 millones de dólares.[6] Las partes que solo reducen la factura fiscal no se cuentan."
+          ],
+          [
+            "p",
+            "Asistencia Temporal para Familias Necesitadas (TANF): 17.500 millones de dólares de gasto federal en subvenciones globales. La mayor parte del dinero de TANF no es efectivo: en el año fiscal 2024 solo el 21,8 % del gasto federal y estatal de TANF se destinó a asistencia básica.[6][9]"
+          ],
+          [
+            "p",
+            "No se cuentan: Medicare, Medicaid y otras coberturas sanitarias, el seguro de desempleo, las ayudas a la vivienda, las prestaciones a veteranos ni las deducciones fiscales. Dos escenarios, para las tres cuantías de 1.000 dólares al mes o más (entre paréntesis, la parte de los ingresos federales):"
+          ],
+          [
+            "t",
+            "Qué se sustituye | Ahorro anual | Coste neto con 1.000 dólares, mayores de 18 (Yang) | Coste neto con 1.000 dólares, todos | Coste neto con 2.000 dólares, todos\nNada (coste bruto) | – | 3,24 billones de dólares (60 %) | 4,10 billones de dólares (76 %) | 8,20 billones de dólares (152 %)\nA: SSI, SNAP, EITC y CTC reembolsables, TANF | 0,28 billones de dólares | 2,96 billones de dólares (55 %) | 3,82 billones de dólares (71 %) | 7,92 billones de dólares (147 %)\nB: A + Seguridad Social | 1,93 billones de dólares | 1,30 billones de dólares (24 %) | 2,17 billones de dólares (40 %) | 6,27 billones de dólares (116 %)"
+          ],
+          [
+            "p",
+            "Los programas para personas con pocos ingresos son pequeños frente a los totales: sustituirlos todos ahorra 0,28 billones, y el coste de 1.000 dólares para todos solo baja del 76 % al 71 % de los ingresos federales. Solo la Seguridad Social es lo bastante grande para cambiar el panorama. Si también se sustituye (B), el diseño de Yang costaría 1,30 billones netos, el 24 % de los ingresos federales, y 1.000 dólares para todos, 2,17 billones, el 40 %."
+          ],
+          [
+            "p",
+            "Pero sustituir la Seguridad Social tiene perdedores claros. Con 1.000 dólares al mes, el trabajador jubilado medio, que hoy recibe 2.092,17 dólares, perdería unos 1.092 dólares al mes, aproximadamente la mitad de su pensión, y el trabajador con discapacidad medio unos 639.[8] Incluso 2.000 dólares al mes quedan algo por debajo de la pensión media de jubilación, y muchos jubilados cobran más que la media. Las personas con SSI, cuyo pago medio es de 740,07 dólares, recibirían más con 1.000."
+          ],
+          [
+            "p",
+            "Yang no propuso el escenario B. En su plan, la pensión de jubilación de la Seguridad Social se «sumaría» al dividendo, y quienes reciben asistencia social o cupones de alimentos elegirían entre sus prestaciones actuales y los 1.000 dólares, sin recibir ambos; quienes cobran el seguro de incapacidad elegirían entre añadir los 1.000 dólares o añadir el SSI.[5] Su diseño queda, por tanto, entre el coste bruto y el escenario A. Propuso financiarlo sobre todo con un impuesto sobre el valor añadido del 10 %.[5]"
+          ],
+          [
+            "h",
+            "Qué encontraron los pilotos de Estados Unidos"
+          ],
+          [
+            "p",
+            "Nadie ha pagado una renta básica permanente a todos en Estados Unidos. Lo que hay son pilotos de ingreso garantizado que pagan a grupos limitados durante un tiempo limitado. {Nuestra tabla de pilotos de ingreso garantizado en Estados Unidos|/pilots/us/} recoge 101: la mediana paga 500 dólares al mes durante 18 meses, 48 pagan exactamente 500 dólares y 26 pagan 1.000.[4] La mayoría se dirige a residentes con pocos ingresos, así que ponen a prueba un ingreso garantizado, no uno universal."
+          ],
+          [
+            "p",
+            "El mayor estudio aleatorizado es el estudio de efectivo incondicional de OpenResearch, financiado en parte por Sam Altman. De noviembre de 2020 a octubre de 2023, 1.000 personas de 21 a 40 años con pocos ingresos en Illinois y Texas recibieron 1.000 dólares al mes sin condiciones, y otras 2.000 recibieron 50 dólares al mes como grupo de control. Los resultados se publicaron por primera vez en julio de 2024, y el artículo sobre el empleo se revisó por última vez en agosto de 2026. Según esa versión, los ingresos propios de los receptores, sin contar las transferencias, fueron unos 1.900 dólares al año inferiores a los del grupo de control, y su probabilidad de estar en la población activa, 4,2 puntos menor; no hubo una mejora medible en la calidad del empleo, y el mayor bienestar del primer año se desvaneció después.[10]"
+          ],
+          [
+            "p",
+            "En las encuestas, los receptores trabajaron unas 1,3 horas a la semana menos que el grupo de control. El empleo subió en ambos grupos, del 58 % al 72 % entre los receptores y del 59 % al 74 % en el grupo de control.[11] Más en {Qué pasó cuando el estudio de Sam Altman dio a la gente 1.000 $ al mes durante tres años|/essays/openresearch-cash-study/}. Otros estudios apuntan en la misma dirección: la mayoría encontró pequeñas reducciones del trabajo o ninguna, y ninguno encontró abandonos masivos (véase {¿Dejamos de trabajar si nos dan dinero?|/essays/does-cash-make-people-stop-working/}). Ninguno puede mostrar qué pasaría con los precios, los salarios o los impuestos si se pagara a los 342 millones de personas, ni cómo actuaría la gente si el pago fuera de por vida."
+          ],
+          [
+            "h",
+            "Lo que muestran las cifras"
+          ],
+          [
+            "p",
+            "Una renta básica para todos en Estados Unidos costaría desde unos 0,37 billones de dólares al año con el mínimo del umbral de pobreza hasta 8,20 billones con 2.000 dólares al mes. Los 1.000 dólares de Yang para adultos costarían unos 3,24 billones, el 60 % de los ingresos federales y el 10 % del PIB. Sustituir el SSI, el SNAP, el TANF y los créditos fiscales reembolsables cubriría menos de una décima parte. Solo la Seguridad Social es lo bastante grande para bajar el coste neto a una cuarta parte de los ingresos federales, y sustituirla reduciría a la mitad, más o menos, la pensión del jubilado medio."
+          ],
+          [
+            "p",
+            "Para probar otras cuantías, o solo adultos o solo niños, use {la página de la calculadora de Estados Unidos|/calc/us/}; para otros países, véase {la comparación de 211 países|/calc/countries/} y {el mapa mundial|/essays/basic-income-world-map/}. Sobre Japón y Alemania, véase {¿Cuánto le costaría a Japón una renta básica?|/essays/japan-basic-income-cost/} y {Preguntan al canciller alemán por la renta básica. ¿Cuánto le costaría a Alemania?|/essays/germany-merz-basic-income-cost/} Sobre un diseño que solo paga a quienes tienen pocos ingresos, véase {Créditos fiscales reembolsables frente a renta básica|/essays/refundable-tax-credit-vs-basic-income/}."
+          ],
+          [
+            "h",
+            "Supuestos y límites"
+          ],
+          [
+            "p",
+            "Todos, la misma cantidad. Los niños reciben la cuantía completa salvo que se indique otra cosa. La población es la población residente de la Oficina del Censo a 1 de julio de 2025, que se mantiene constante; incluye a personas que no son ciudadanas.[1]"
+          ],
+          [
+            "p",
+            "Coste bruto. Se dejan fuera los impuestos sobre el pago, los cambios en el trabajo o los precios y el coste de gestionarlo. Si el pago tributara como renta, parte de su coste volvería en impuestos."
+          ],
+          [
+            "p",
+            "Referencias. Los ingresos y el gasto son solo federales, del año fiscal 2026; sumar los impuestos estatales y locales reduciría todas las partes de los ingresos. El PIB del año fiscal es nuestra media de cuatro estimaciones trimestrales, la última de ellas anticipada y sujeta a revisión.[7] La {página de la calculadora de Estados Unidos|/calc/us/} y el {mapa mundial|/essays/basic-income-world-map/} usan la estimación de población de la ONU (347,3 millones) y el PIB del Banco Mundial del año natural 2025 (30,77 billones de dólares),[2] por lo que sus totales y porcentajes difieren algo de los de aquí."
+          ],
+          [
+            "p",
+            "Sustituciones. Las cifras de los programas son el gasto federal registrado por el Tesoro: en el SNAP incluyen costes administrativos, en el TANF servicios que no son efectivo, y no incluyen el gasto de los estados. La cifra de la Seguridad Social cubre solo el pago de prestaciones. La cobertura sanitaria no se cuenta."
+          ],
+          [
+            "p",
+            "No es una propuesta. Las cuantías son referencias. Nada aquí dice si Estados Unidos debería introducir una renta básica; las cifras solo muestran el tamaño de las sumas."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Was würde es kosten, allen Menschen in den USA ein Grundeinkommen zu zahlen? Die Antwort hängt fast nur vom Betrag ab und davon, wer zu „allen“ zählt. Mit 1.000 Dollar im Monat für jeden Erwachsenen, der „Freiheitsdividende“, die Andrew Yang 2020 vorschlug, wären es rund 3,24 Billionen Dollar im Jahr: 60 % aller Einnahmen des Bundes im Haushaltsjahr 2026. Mit 1.000 Dollar im Monat für alle, Kinder eingeschlossen, wären es 4,10 Billionen. Im Folgenden: die Kosten bei fünf Beträgen, welche bestehenden Programme ersetzt werden könnten und wer verlöre, wenn man sie ersetzte, und was die US-Pilotprojekte gefunden haben."
+          ],
+          [
+            "h",
+            "Wie wir rechnen"
+          ],
+          [
+            "p",
+            "Nach Schätzung des Census Bureau lebten am 1. Juli 2025 341.784.857 Menschen in den USA, davon 269.763.509 im Alter von 18 Jahren oder mehr. Das sind die neuesten amtlichen Schätzungen.[1] Bekommen alle denselben Betrag, sind die Kosten einfach Monatsbetrag × 12 × 341,8 Millionen; nur für Erwachsene × 269,8 Millionen. Wir rechnen mit fünf Beträgen."
+          ],
+          [
+            "p",
+            "91 Dollar im Monat sind der Standardbetrag für die USA im {Vergleich von 211 Ländern|/calc/countries/} auf dieser Seite: die Armutsgrenze der Weltbank von 3,00 Dollar am Tag.[2][3] 500 Dollar im Monat sind der typische Betrag eines Pilotprojekts für ein garantiertes Einkommen: Von den 101 US-Pilotprojekten in {unserer Tabelle|/pilots/us/} zahlt der Median 500 Dollar im Monat, 48 zahlen genau diesen Betrag.[4] 1.000 Dollar im Monat nur für Erwachsene sind Andrew Yangs Freiheitsdividende aus seinem Präsidentschaftswahlkampf 2020, „für jeden amerikanischen Erwachsenen über 18 Jahren“.[5] 1.000 Dollar im Monat für alle sind der Startwert auf der {USA-Seite des Rechners|/calc/us/}, 2.000 Dollar ihre höchste Vorgabe."
+          ],
+          [
+            "h",
+            "Was es kosten würde: fünf Beträge"
+          ],
+          [
+            "t",
+            "Pro Kopf und Monat | Kosten pro Jahr | Anteil an den Bundeseinnahmen (HJ 2026) | Anteil an der Einkommensteuer (HJ 2026) | Anteil an den Bundesausgaben (HJ 2026) | Anteil am BIP (HJ 2026)\n91 Dollar (Armutsgrenze) | 0,37 Bio. Dollar | 7 % | 13 % | 5 % | 1,2 %\n500 Dollar | 2,05 Bio. Dollar | 38 % | 72 % | 28 % | 6,4 %\n1.000 Dollar, nur ab 18 (Yang) | 3,24 Bio. Dollar | 60 % | 114 % | 44 % | 10,0 %\n1.000 Dollar | 4,10 Bio. Dollar | 76 % | 144 % | 55 % | 12,7 %\n2.000 Dollar | 8,20 Bio. Dollar | 152 % | 288 % | 111 % | 25,4 %"
+          ],
+          [
+            "p",
+            "Die Vergleichsgrößen gelten für das Haushaltsjahr 2026, von Oktober 2025 bis September 2026. Laut dem Monatsbericht des Finanzministeriums für September 2026 nahm der Bund 5,403 Billionen Dollar ein, davon 2,846 Billionen aus der Einkommensteuer der Bürger, und gab 7,396 Billionen aus.[6] Das nominale BIP dieser vier Quartale betrug 32,24 Billionen Dollar; das ist unser Durchschnitt der Quartalsschätzungen des Bureau of Economic Analysis (BEA), das letzte Quartal ist noch eine Vorabschätzung.[7] Steuern der Bundesstaaten und Gemeinden sind nicht enthalten."
+          ],
+          [
+            "p",
+            "Nur die Untergrenze der Armutsgrenze bleibt unter einem Zehntel der Bundeseinnahmen. Der typische Pilotbetrag, 500 Dollar für alle, nähme 38 % aller Bundeseinnahmen, fast drei Viertel dessen, was die Einkommensteuer einbringt. Yangs Modell kostete mehr als die gesamte Einkommensteuer. 1.000 Dollar für alle kosteten 76 % der Bundeseinnahmen, 2.000 Dollar mehr als alle Bundeseinnahmen und mehr als alles, was der Bund ausgibt."
+          ],
+          [
+            "p",
+            "Zum Wechselkurs von 2025 aus den Weltbankdaten dieser Seite sind 1.000 Dollar rund 885 Euro und 4,10 Billionen Dollar rund 3,6 Billionen Euro im Jahr.[2]"
+          ],
+          [
+            "p",
+            "Ob Kinder mitzählen, macht viel aus, denn sie sind etwa ein Fünftel der Bevölkerung: 72,0 der 341,8 Millionen sind unter 18.[1] Lässt man sie weg wie Yang, sinken die Kosten von 1.000 Dollar im Monat von 4,10 auf 3,24 Billionen. Yangs Plan galt zudem nur für Staatsbürger; wir zählen alle Einwohner ab 18, sein eigenes Modell wäre also etwas billiger als die Zahl hier.[5] Auf der {USA-Seite des Rechners|/calc/us/} lassen sich nur Erwachsene oder nur Kinder ausprobieren."
+          ],
+          [
+            "h",
+            "Was es ersetzen könnte"
+          ],
+          [
+            "p",
+            "Ein Grundeinkommen soll meist einige bestehende Programme ersetzen, nicht zu allen hinzukommen. Welche, ist eine Frage der Ausgestaltung, und die wichtigste. Das sind die wichtigsten Bundesprogramme, die Menschen Geld oder fast Geld zahlen, mit ihren Ausgaben im Haushaltsjahr 2026 aus demselben Bericht des Finanzministeriums.[6]"
+          ],
+          [
+            "p",
+            "Social Security. Alters-, Hinterbliebenen- und Erwerbsunfähigkeitsrenten kosteten 1,654 Billionen Dollar, weit mehr als alles andere. Im Oktober 2026 bekamen 55,2 Millionen Rentner im Durchschnitt 2.092,17 Dollar im Monat und 6,9 Millionen erwerbsunfähige Versicherte 1.639,28 Dollar.[8] Die Renten werden mit Beiträgen auf den Lohn erworben, ihr Ersatz ist deshalb die umstrittenste Wahl."
+          ],
+          [
+            "p",
+            "Supplemental Security Income (SSI), für ältere, blinde und behinderte Menschen mit geringem Einkommen und Vermögen: 70,5 Milliarden Dollar. Im Oktober 2026 bekamen 7,3 Millionen Empfänger im Durchschnitt 740,07 Dollar im Monat.[6][8]"
+          ],
+          [
+            "p",
+            "SNAP (Lebensmittelmarken): 95,4 Milliarden Dollar. Die Zahl enthält neben den Leistungen auch den Bundesanteil an den Verwaltungskosten der Bundesstaaten.[6]"
+          ],
+          [
+            "p",
+            "Die erstattungsfähigen Teile der Steuergutschrift für Erwerbseinkommen (EITC) und der Kindersteuergutschrift (CTC), also was Familien über ihre Steuerschuld hinaus ausgezahlt wird: 68,5 und 28,6 Milliarden Dollar.[6] Die Teile, die nur die Steuer senken, sind nicht gezählt."
+          ],
+          [
+            "p",
+            "Temporary Assistance for Needy Families (TANF): 17,5 Milliarden Dollar Bundesausgaben für die Pauschalzuweisung. Das meiste TANF-Geld ist kein Bargeld: Im Haushaltsjahr 2024 gingen nur 21,8 % der TANF-Ausgaben von Bund und Staaten in die Grundunterstützung.[6][9]"
+          ],
+          [
+            "p",
+            "Nicht gezählt: Medicare, Medicaid und andere Gesundheitsleistungen, Arbeitslosenversicherung, Wohnhilfen, Leistungen für Veteranen und Steuerfreibeträge. Zwei Szenarien, für die drei Beträge ab 1.000 Dollar im Monat (in Klammern der Anteil an den Bundeseinnahmen):"
+          ],
+          [
+            "t",
+            "Was ersetzt wird | Ersparnis pro Jahr | Nettokosten bei 1.000 Dollar, ab 18 (Yang) | Nettokosten bei 1.000 Dollar, alle | Nettokosten bei 2.000 Dollar, alle\nNichts (Bruttokosten) | – | 3,24 Bio. Dollar (60 %) | 4,10 Bio. Dollar (76 %) | 8,20 Bio. Dollar (152 %)\nA: SSI, SNAP, erstattungsfähiger EITC und CTC, TANF | 0,28 Bio. Dollar | 2,96 Bio. Dollar (55 %) | 3,82 Bio. Dollar (71 %) | 7,92 Bio. Dollar (147 %)\nB: A + Social Security | 1,93 Bio. Dollar | 1,30 Bio. Dollar (24 %) | 2,17 Bio. Dollar (40 %) | 6,27 Bio. Dollar (116 %)"
+          ],
+          [
+            "p",
+            "Die bedürftigkeitsgeprüften Programme sind klein gegenüber den Summen: Alle zu ersetzen spart 0,28 Billionen, die Kosten von 1.000 Dollar für alle sinken damit nur von 76 % auf 71 % der Bundeseinnahmen. Groß genug, um das Bild zu ändern, ist nur Social Security. Wird auch sie ersetzt (B), kostete Yangs Modell netto 1,30 Billionen Dollar, 24 % der Bundeseinnahmen, und 1.000 Dollar für alle 2,17 Billionen, 40 %."
+          ],
+          [
+            "p",
+            "Doch der Ersatz von Social Security hat klare Verlierer. Bei 1.000 Dollar im Monat verlöre der durchschnittliche Rentner, der heute 2.092,17 Dollar bekommt, rund 1.092 Dollar im Monat, etwa die Hälfte seiner Rente, und der durchschnittliche Erwerbsunfähige rund 639 Dollar.[8] Selbst 2.000 Dollar im Monat liegen leicht unter der durchschnittlichen Altersrente, und viele Rentner bekommen mehr als den Durchschnitt. Wer SSI bezieht, im Durchschnitt 740,07 Dollar, bekäme bei 1.000 Dollar mehr."
+          ],
+          [
+            "p",
+            "Yang hat Szenario B nicht vorgeschlagen. In seinem Plan sollte die Altersrente aus Social Security zur Dividende hinzukommen, und wer Sozialhilfe oder Lebensmittelmarken bezieht, sollte zwischen den bisherigen Leistungen und den 1.000 Dollar wählen, nicht beides bekommen; Bezieher der Erwerbsunfähigkeitsversicherung sollten wählen, ob sie die 1.000 Dollar oder SSI hinzunehmen.[5] Sein Modell liegt also zwischen den Bruttokosten und Szenario A. Finanzieren wollte er es vor allem mit einer Mehrwertsteuer von 10 %.[5]"
+          ],
+          [
+            "h",
+            "Was die US-Pilotprojekte fanden"
+          ],
+          [
+            "p",
+            "In den USA hat noch niemand allen ein dauerhaftes Grundeinkommen gezahlt. Es gibt Pilotprojekte für ein garantiertes Einkommen, die begrenzten Gruppen für begrenzte Zeit zahlen. {Unsere Tabelle der US-Pilotprojekte|/pilots/us/} umfasst 101: Der Median zahlt 500 Dollar im Monat für 18 Monate, 48 zahlen genau 500 Dollar, 26 zahlen 1.000.[4] Die meisten richten sich an Einwohner mit geringem Einkommen, sie testen also ein garantiertes Einkommen, kein allgemeines."
+          ],
+          [
+            "p",
+            "Die größte randomisierte Studie ist die Unconditional Cash Study von OpenResearch, die Sam Altman mitfinanziert hat. Von November 2020 bis Oktober 2023 bekamen 1.000 Menschen zwischen 21 und 40 Jahren mit geringem Einkommen in Illinois und Texas 1.000 Dollar im Monat ohne Bedingungen, 2.000 weitere als Kontrollgruppe 50 Dollar im Monat. Die Ergebnisse erschienen erstmals im Juli 2024, die Arbeit zur Beschäftigung wurde zuletzt im August 2026 überarbeitet. Danach war das eigene Einkommen der Empfänger ohne die Zahlungen rund 1.900 Dollar im Jahr niedriger als in der Kontrollgruppe, und sie standen mit einer um 4,2 Prozentpunkte geringeren Wahrscheinlichkeit dem Arbeitsmarkt zur Verfügung; die Qualität der Arbeit verbesserte sich nicht messbar, und das höhere Wohlbefinden im ersten Jahr verschwand danach.[10]"
+          ],
+          [
+            "p",
+            "In den Befragungen arbeiteten die Empfänger rund 1,3 Stunden pro Woche weniger als die Kontrollgruppe. Die Beschäftigung stieg in beiden Gruppen, bei den Empfängern von 58 % auf 72 %, in der Kontrollgruppe von 59 % auf 74 %.[11] Mehr dazu in {Was geschah, als Sam Altmans Studie Menschen drei Jahre lang 1.000 $ im Monat gab|/essays/openresearch-cash-study/}. Andere Studien weisen in dieselbe Richtung: Die meisten fanden etwas weniger Arbeit oder keine Veränderung, keine fand massenhafte Kündigungen (siehe {Wer Geld bekommt, hört auf zu arbeiten?|/essays/does-cash-make-people-stop-working/}). Keine kann zeigen, was mit Preisen, Löhnen oder Steuern geschähe, wenn alle 342 Millionen Menschen Geld bekämen, oder wie Menschen handelten, wenn die Zahlung lebenslang wäre."
+          ],
+          [
+            "h",
+            "Was die Zahlen zeigen"
+          ],
+          [
+            "p",
+            "Ein Grundeinkommen für alle in den USA kostete von rund 0,37 Billionen Dollar im Jahr an der Armutsgrenze bis 8,20 Billionen bei 2.000 Dollar im Monat. Yangs 1.000 Dollar für Erwachsene kosteten rund 3,24 Billionen, 60 % der Bundeseinnahmen und 10 % des BIP. Der Ersatz von SSI, SNAP, TANF und den erstattungsfähigen Steuergutschriften deckte weniger als ein Zehntel davon. Nur Social Security ist groß genug, um die Nettokosten auf etwa ein Viertel der Bundeseinnahmen zu senken, und ihr Ersatz halbierte ungefähr die Rente des durchschnittlichen Rentners."
+          ],
+          [
+            "p",
+            "Andere Beträge, nur Erwachsene oder nur Kinder lassen sich auf der {USA-Seite des Rechners|/calc/us/} ausprobieren; für andere Länder siehe {den Vergleich von 211 Ländern|/calc/countries/} und {die Weltkarte|/essays/basic-income-world-map/}. Zu Japan und Deutschland siehe {Was würde ein Grundeinkommen Japan kosten?|/essays/japan-basic-income-cost/} und {Merz wurde nach dem Grundeinkommen gefragt. Was würde es Deutschland kosten?|/essays/germany-merz-basic-income-cost/} Zu einem Modell, das nur Menschen mit geringem Einkommen zahlt, siehe {Erstattungsfähige Steuergutschrift oder Grundeinkommen?|/essays/refundable-tax-credit-vs-basic-income/}"
+          ],
+          [
+            "h",
+            "Annahmen und Grenzen"
+          ],
+          [
+            "p",
+            "Alle, derselbe Betrag. Kinder bekommen den vollen Betrag, sofern nicht anders angegeben. Die Bevölkerung ist die Wohnbevölkerung des Census Bureau am 1. Juli 2025, als konstant angenommen; sie schließt Menschen ohne Staatsbürgerschaft ein.[1]"
+          ],
+          [
+            "p",
+            "Bruttokosten. Steuern auf die Zahlung, Veränderungen bei Arbeit oder Preisen und die Kosten der Verwaltung sind nicht berücksichtigt. Wäre die Zahlung steuerpflichtiges Einkommen, käme ein Teil der Kosten als Steuer zurück."
+          ],
+          [
+            "p",
+            "Vergleichsgrößen. Einnahmen und Ausgaben sind nur die des Bundes, für das Haushaltsjahr 2026; mit den Steuern der Bundesstaaten und Gemeinden sänken alle Anteile an den Einnahmen. Das BIP des Haushaltsjahres ist unser Durchschnitt aus vier Quartalsschätzungen, die letzte davon eine Vorabschätzung, die noch revidiert wird.[7] Die {USA-Seite des Rechners|/calc/us/} und die {Weltkarte|/essays/basic-income-world-map/} nutzen die Bevölkerungsschätzung der UN (347,3 Millionen) und das BIP der Weltbank für das Kalenderjahr 2025 (30,77 Billionen Dollar),[2] daher weichen ihre Summen und Anteile leicht ab."
+          ],
+          [
+            "p",
+            "Ersatz. Die Zahlen der Programme sind die vom Finanzministerium erfassten Bundesausgaben: Bei SNAP enthalten sie Verwaltungskosten, bei TANF Dienstleistungen, die kein Bargeld sind; Ausgaben der Bundesstaaten sind nicht enthalten. Die Zahl für Social Security umfasst nur die Rentenzahlungen. Gesundheitsleistungen sind nicht gezählt."
+          ],
+          [
+            "p",
+            "Kein Vorschlag. Die Beträge sind Maßstäbe. Nichts hier sagt, ob die USA ein Grundeinkommen einführen sollten; die Zahlen zeigen nur die Größe der Summen."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "كم سيكلّف أن يحصل كل من يعيش في الولايات المتحدة على دخل أساسي؟ يتوقف الجواب كله تقريبًا على المبلغ، وعلى مَن يُحسب ضمن «الجميع». بمبلغ 1,000 دولار شهريًا لكل بالغ، وهو «عائد الحرية» الذي اقترحه أندرو يانغ عام 2020، ستبلغ التكلفة نحو 3.24 تريليون دولار سنويًا: ⁦60%⁩ من كل إيرادات الحكومة الاتحادية في السنة المالية 2026. وبمبلغ 1,000 دولار شهريًا للجميع، والأطفال منهم، ستبلغ 4.10 تريليون دولار. فيما يلي: التكلفة عند خمسة مبالغ، وما يمكن أن يحلّ محله من البرامج القائمة ومَن سيخسر إن استُبدلت، وما وجدته التجارب الأمريكية."
+          ],
+          [
+            "h",
+            "كيف نحسب"
+          ],
+          [
+            "p",
+            "يقدّر مكتب الإحصاء الأمريكي أن 341,784,857 شخصًا كانوا يعيشون في الولايات المتحدة في 1 يوليو 2025، منهم 269,763,509 في سن 18 فما فوق. هذه أحدث التقديرات الرسمية.[1] إذا حصل الجميع على المبلغ نفسه، فالتكلفة هي ببساطة المبلغ الشهري × 12 × 341.8 مليونًا؛ وللبالغين وحدهم × 269.8 مليونًا. نستخدم خمسة مبالغ."
+          ],
+          [
+            "p",
+            "91 دولارًا شهريًا هو المبلغ المعياري للولايات المتحدة في {مقارنة 211 دولة|/calc/countries/} في هذا الموقع: خط الفقر لدى البنك الدولي، 3.00 دولارات يوميًا.[2][3] و500 دولار شهريًا هو المبلغ المعتاد في تجارب الدخل المضمون: من بين 101 تجربة أمريكية في {جدولنا|/pilots/us/}، الوسيط 500 دولار شهريًا، و48 منها تدفع هذا المبلغ بالضبط.[4] و1,000 دولار شهريًا للبالغين وحدهم هو «عائد الحرية» الذي طرحه أندرو يانغ في حملته الرئاسية عام 2020، «لكل أمريكي بالغ تجاوز الثامنة عشرة».[5] و1,000 دولار شهريًا للجميع هو المبلغ الافتراضي في {صفحة حاسبة الولايات المتحدة|/calc/us/}، و2,000 دولار أعلى خياراتها."
+          ],
+          [
+            "h",
+            "كم سيكلّف: خمسة مبالغ"
+          ],
+          [
+            "t",
+            "للفرد شهريًا | التكلفة السنوية | نسبتها من الإيرادات الاتحادية (السنة المالية 2026) | نسبتها من ضريبة الدخل الفردي (السنة المالية 2026) | نسبتها من النفقات الاتحادية (السنة المالية 2026) | نسبتها من الناتج المحلي (السنة المالية 2026)\n91 دولارًا (خط الفقر) | 0.37 تريليون دولار | 7% | 13% | 5% | 1.2%\n500 دولار | 2.05 تريليون دولار | 38% | 72% | 28% | 6.4%\n1,000 دولار، للبالغين 18 فما فوق فقط (يانغ) | 3.24 تريليون دولار | 60% | 114% | 44% | 10.0%\n1,000 دولار | 4.10 تريليون دولار | 76% | 144% | 55% | 12.7%\n2,000 دولار | 8.20 تريليون دولار | 152% | 288% | 111% | 25.4%"
+          ],
+          [
+            "p",
+            "المقاييس كلها للسنة المالية 2026، من أكتوبر 2025 إلى سبتمبر 2026. بحسب البيان الشهري لوزارة الخزانة عن سبتمبر 2026، بلغت الإيرادات الاتحادية 5.403 تريليون دولار، منها 2.846 تريليون من ضريبة الدخل الفردي، وبلغت النفقات 7.396 تريليون.[6] وبلغ الناتج المحلي الإجمالي الاسمي في الفصول الأربعة نفسها 32.24 تريليون دولار، وهو متوسط حسبناه من التقديرات الفصلية لمكتب التحليل الاقتصادي (⁦BEA⁩)، والفصل الأخير ما زال تقديرًا أوليًا.[7] ولا تدخل ضرائب الولايات والسلطات المحلية."
+          ],
+          [
+            "p",
+            "وحده الحد الأدنى عند خط الفقر يبقى دون عُشر الإيرادات الاتحادية. والمبلغ المعتاد في التجارب، 500 دولار للجميع، سيأخذ ⁦38%⁩ من كل الإيرادات الاتحادية، أي قرابة ثلاثة أرباع ما تجلبه ضريبة الدخل الفردي. وتصميم يانغ يكلّف أكثر من ضريبة الدخل الفردي كلها. و1,000 دولار للجميع تكلّف ⁦76%⁩ من الإيرادات الاتحادية، و2,000 دولار أكثر من كل الإيرادات الاتحادية وأكثر من كل ما تنفقه الحكومة الاتحادية."
+          ],
+          [
+            "p",
+            "وبمتوسط سعر الصرف في 2025 من بيانات البنك الدولي التي يستخدمها هذا الموقع، تساوي 1,000 دولار نحو 3,750 ريالًا سعوديًا أو نحو 49,200 جنيه مصري، وتساوي 4.10 تريليون دولار نحو 15.4 تريليون ريال سنويًا.[2]"
+          ],
+          [
+            "p",
+            "احتساب الأطفال أو استبعادهم يغيّر المجموع كثيرًا، لأنهم نحو خُمس السكان: 72.0 مليونًا من 341.8 مليونًا دون الثامنة عشرة.[1] واستبعادهم، كما فعل يانغ، يخفض تكلفة 1,000 دولار شهريًا من 4.10 إلى 3.24 تريليون دولار. وكانت خطة يانغ للمواطنين وحدهم؛ ونحن نحسب كل المقيمين في سن 18 فما فوق، فتصميمه نفسه سيكلّف أقل قليلًا من الرقم هنا.[5] وتتيح {صفحة حاسبة الولايات المتحدة|/calc/us/} تجربة البالغين وحدهم أو الأطفال وحدهم."
+          ],
+          [
+            "h",
+            "ما الذي يمكن أن يحلّ محله"
+          ],
+          [
+            "p",
+            "يُقصد بالدخل الأساسي عادةً أن يحلّ محل بعض البرامج القائمة، لا أن يُضاف فوقها كلها. وأيّها يُستبدل خيار في التصميم، وهو أهم خيار. هذه هي البرامج الاتحادية الرئيسية التي تدفع للأفراد نقدًا أو ما يشبه النقد، مع نفقاتها في السنة المالية 2026 من بيان الخزانة نفسه.[6]"
+          ],
+          [
+            "p",
+            "الضمان الاجتماعي (⁦Social Security⁩). بلغت معاشات الشيخوخة والورثة والعجز 1.654 تريليون دولار، وهي أكبر البنود بفارق كبير. في أكتوبر 2026، حصل 55.2 مليون عامل متقاعد على متوسط 2,092.17 دولار شهريًا، و6.9 ملايين عامل عاجز على متوسط 1,639.28 دولار.[8] وهذه المعاشات تُكتسب باشتراكات على الأجور، لذلك فاستبدالها أكثر الخيارات إثارة للخلاف."
+          ],
+          [
+            "p",
+            "دخل الضمان التكميلي (⁦SSI⁩)، لكبار السن والمكفوفين وذوي الإعاقة من أصحاب الدخل والأصول القليلة: 70.5 مليار دولار. في أكتوبر 2026، حصل 7.3 ملايين مستفيد على متوسط 740.07 دولار شهريًا.[6][8]"
+          ],
+          [
+            "p",
+            "برنامج المساعدة الغذائية التكميلية (⁦SNAP⁩)، أي قسائم الطعام: 95.4 مليار دولار. ويشمل الرقم، إلى جانب الإعانات، الحصة الاتحادية من التكاليف الإدارية للولايات.[6]"
+          ],
+          [
+            "p",
+            "الجزءان القابلان للاسترداد من الائتمان الضريبي على دخل العمل (⁦EITC⁩) والائتمان الضريبي للأطفال (⁦CTC⁩)، أي ما يُدفع للأسر فوق ما عليها من ضريبة: 68.5 و28.6 مليار دولار.[6] أما الأجزاء التي تخفّض الضريبة فقط فلم تُحتسب."
+          ],
+          [
+            "p",
+            "المساعدة المؤقتة للأسر المحتاجة (⁦TANF⁩): 17.5 مليار دولار من نفقات المنحة الاتحادية المجمّعة. ومعظم أموال هذا البرنامج ليس نقدًا: في السنة المالية 2024 لم يذهب إلى المساعدة الأساسية إلا ⁦21.8%⁩ من إنفاقه الاتحادي وإنفاق الولايات معًا.[6][9]"
+          ],
+          [
+            "p",
+            "لم يُحتسب: برنامجا الرعاية الصحية الاتحاديان للمسنين ولذوي الدخل المنخفض وغيرهما من التغطية الصحية، وتأمين البطالة، ودعم السكن، وإعانات المحاربين القدامى، والإعفاءات الضريبية. سيناريوهان، للمبالغ الثلاثة التي تبلغ 1,000 دولار شهريًا أو أكثر (وبين القوسين نسبتها من الإيرادات الاتحادية):"
+          ],
+          [
+            "t",
+            "ما يُستبدل | التوفير السنوي | التكلفة الصافية عند 1,000 دولار للبالغين (يانغ) | التكلفة الصافية عند 1,000 دولار للجميع | التكلفة الصافية عند 2,000 دولار للجميع\nلا شيء (التكلفة الإجمالية) | – | 3.24 تريليون دولار (60%) | 4.10 تريليون دولار (76%) | 8.20 تريليون دولار (152%)\n(أ) دخل الضمان التكميلي، وقسائم الطعام، والائتمانان الضريبيان القابلان للاسترداد، والمساعدة المؤقتة للأسر | 0.28 تريليون دولار | 2.96 تريليون دولار (55%) | 3.82 تريليون دولار (71%) | 7.92 تريليون دولار (147%)\n(ب) (أ) + الضمان الاجتماعي | 1.93 تريليون دولار | 1.30 تريليون دولار (24%) | 2.17 تريليون دولار (40%) | 6.27 تريليون دولار (116%)"
+          ],
+          [
+            "p",
+            "البرامج المخصصة لأصحاب الدخل المنخفض صغيرة أمام المجاميع: استبدالها كلها يوفّر 0.28 تريليون دولار، فتنخفض تكلفة 1,000 دولار للجميع من ⁦76%⁩ إلى ⁦71%⁩ فقط من الإيرادات الاتحادية. ولا شيء كبير بما يكفي لتغيير الصورة إلا الضمان الاجتماعي. فإذا استُبدل هو أيضًا (ب)، كلّف تصميم يانغ صافيًا 1.30 تريليون دولار، أي ⁦24%⁩ من الإيرادات الاتحادية، و1,000 دولار للجميع 2.17 تريليون، أي ⁦40%⁩."
+          ],
+          [
+            "p",
+            "لكن لاستبدال الضمان الاجتماعي خاسرين واضحين. عند 1,000 دولار شهريًا، سيخسر العامل المتقاعد المتوسط، الذي يحصل اليوم على 2,092.17 دولار، نحو 1,092 دولارًا شهريًا، أي نحو نصف معاشه، وسيخسر العامل العاجز المتوسط نحو 639 دولارًا.[8] وحتى 2,000 دولار شهريًا أقل قليلًا من متوسط معاش التقاعد، وكثير من المتقاعدين يحصلون على أكثر من المتوسط. أما المستفيدون من دخل الضمان التكميلي، ومتوسط ما يحصلون عليه 740.07 دولار، فسيحصلون على أكثر عند 1,000 دولار."
+          ],
+          [
+            "p",
+            "لم يقترح يانغ السيناريو (ب). ففي خطته كان معاش التقاعد من الضمان الاجتماعي «يُضاف» إلى العائد، ومن يتلقى إعانات الرعاية الاجتماعية أو قسائم الطعام يختار بين إعاناته الحالية والـ1,000 دولار ولا يحصل على الاثنين؛ ومن يتلقى تأمين العجز يختار بين إضافة الـ1,000 دولار وإضافة دخل الضمان التكميلي.[5] لذا يقع تصميمه بين التكلفة الإجمالية والسيناريو (أ). واقترح تمويله أساسًا بضريبة قيمة مضافة نسبتها ⁦10%⁩.[5]"
+          ],
+          [
+            "h",
+            "ما وجدته التجارب الأمريكية"
+          ],
+          [
+            "p",
+            "لم يدفع أحد دخلًا أساسيًا دائمًا للجميع في الولايات المتحدة. الموجود هو تجارب للدخل المضمون تدفع لمجموعات محدودة لمدة محدودة. يضم {جدولنا لتجارب الدخل المضمون الأمريكية|/pilots/us/} 101 تجربة: الوسيط يدفع 500 دولار شهريًا لمدة 18 شهرًا، و48 تدفع 500 دولار بالضبط، و26 تدفع 1,000 دولار.[4] ومعظمها موجّه إلى المقيمين ذوي الدخل المنخفض، فهي تختبر دخلًا مضمونًا لا دخلًا شاملًا."
+          ],
+          [
+            "p",
+            "أكبر دراسة عشوائية هي دراسة النقد غير المشروط لمختبر ⁦OpenResearch⁩، التي موّلها سام ألتمان جزئيًا. من نوفمبر 2020 إلى أكتوبر 2023، حصل 1,000 شخص من ذوي الدخل المنخفض بين 21 و40 عامًا في إلينوي وتكساس على 1,000 دولار شهريًا دون شروط، وحصل 2,000 آخرون على 50 دولارًا شهريًا كمجموعة ضابطة. نُشرت النتائج أول مرة في يوليو 2024، وآخر مراجعة لورقة التوظيف صدرت في أغسطس 2026. وفيها أن دخل المستفيدين الخاص، دون التحويلات، كان أقل من دخل المجموعة الضابطة بنحو 1,900 دولار سنويًا، وأن احتمال وجودهم في قوة العمل كان أقل بـ4.2 نقطة مئوية؛ ولم يتحسّن مستوى الوظائف تحسّنًا قابلًا للقياس، وتلاشى ارتفاع الرفاه في السنة الأولى بعد ذلك.[10]"
+          ],
+          [
+            "p",
+            "في الاستبيانات، عمل المستفيدون نحو 1.3 ساعة أسبوعيًا أقل من المجموعة الضابطة. وارتفع التوظيف في المجموعتين، من ⁦58%⁩ إلى ⁦72%⁩ بين المستفيدين ومن ⁦59%⁩ إلى ⁦74%⁩ في المجموعة الضابطة.[11] المزيد في {ماذا حدث حين أعطت دراسة سام ألتمان الناس ⁦$1,000⁩ شهريًا لثلاث سنوات|/essays/openresearch-cash-study/}. وتشير دراسات أخرى إلى الاتجاه نفسه: معظمها وجد انخفاضًا صغيرًا في العمل أو لا انخفاض، ولم يجد أيٌّ منها تركًا جماعيًا للعمل (انظر {هل يتوقف الناس عن العمل إذا أعطيناهم المال؟|/essays/does-cash-make-people-stop-working/}). ولا يمكن لأيٍّ منها أن يبيّن ما سيحدث للأسعار والأجور والضرائب لو دُفع المال لكل الـ342 مليون شخص، أو كيف سيتصرف الناس لو كانت الدفعة مدى الحياة."
+          ],
+          [
+            "h",
+            "ما تُظهره الأرقام"
+          ],
+          [
+            "p",
+            "سيكلّف دخل أساسي لكل من في الولايات المتحدة من نحو 0.37 تريليون دولار سنويًا عند الحد الأدنى لخط الفقر إلى 8.20 تريليون عند 2,000 دولار شهريًا. وتكلّف 1,000 دولار للبالغين كما اقترح يانغ نحو 3.24 تريليون، أي ⁦60%⁩ من الإيرادات الاتحادية و⁦10%⁩ من الناتج المحلي. واستبدال دخل الضمان التكميلي وقسائم الطعام والمساعدة المؤقتة للأسر والائتمانات الضريبية القابلة للاسترداد لا يغطي إلا أقل من عُشر ذلك. ولا شيء كبير بما يكفي لخفض التكلفة الصافية إلى نحو ربع الإيرادات الاتحادية إلا الضمان الاجتماعي، واستبداله سيخفض معاش العامل المتقاعد المتوسط إلى النصف تقريبًا."
+          ],
+          [
+            "p",
+            "لتجربة مبالغ أخرى، أو البالغين أو الأطفال وحدهم، استخدم {صفحة حاسبة الولايات المتحدة|/calc/us/}؛ وللدول الأخرى انظر {مقارنة 211 دولة|/calc/countries/} و{خريطة العالم|/essays/basic-income-world-map/}. وعن اليابان وألمانيا انظر {كم يكلّف الدخل الأساسي في اليابان؟|/essays/japan-basic-income-cost/} و{ميرتس والدخل الأساسي: كم سيكلّف ألمانيا؟|/essays/germany-merz-basic-income-cost/} وعن تصميم يدفع لأصحاب الدخل المنخفض وحدهم انظر {الائتمان الضريبي القابل للاسترداد أم الدخل الأساسي؟|/essays/refundable-tax-credit-vs-basic-income/}"
+          ],
+          [
+            "h",
+            "الافتراضات والحدود"
+          ],
+          [
+            "p",
+            "الجميع، المبلغ نفسه. يحصل الأطفال على المبلغ كاملًا ما لم يُذكر غير ذلك. السكان هم السكان المقيمون بحسب مكتب الإحصاء في 1 يوليو 2025، ويُفترض ثباتهم؛ ويشملون من ليسوا مواطنين.[1]"
+          ],
+          [
+            "p",
+            "التكلفة الإجمالية. لم تُحتسب الضرائب على الدفعة، ولا تغيّرات العمل أو الأسعار، ولا تكلفة الإدارة. ولو كانت الدفعة دخلًا خاضعًا للضريبة لعاد جزء من تكلفتها ضرائب."
+          ],
+          [
+            "p",
+            "المقاييس. الإيرادات والنفقات اتحادية فقط، للسنة المالية 2026؛ وإضافة ضرائب الولايات والسلطات المحلية ستخفض كل النسب من الإيرادات. والناتج المحلي للسنة المالية متوسط حسبناه من أربعة تقديرات فصلية، آخرها تقدير أولي سيُراجع.[7] وتستخدم {صفحة حاسبة الولايات المتحدة|/calc/us/} و{خريطة العالم|/essays/basic-income-world-map/} تقدير الأمم المتحدة للسكان (347.3 مليونًا) والناتج المحلي للبنك الدولي لعام 2025 (30.77 تريليون دولار)،[2] لذا تختلف مجاميعهما ونسبهما قليلًا عمّا هنا."
+          ],
+          [
+            "p",
+            "الاستبدال. أرقام البرامج هي النفقات الاتحادية كما سجلتها وزارة الخزانة: تشمل في قسائم الطعام التكاليف الإدارية، وفي المساعدة المؤقتة للأسر خدمات غير نقدية، ولا تشمل إنفاق الولايات. ورقم الضمان الاجتماعي يغطي دفع المعاشات فقط. ولم تُحتسب التغطية الصحية."
+          ],
+          [
+            "p",
+            "ليس اقتراحًا. المبالغ مقاييس. لا شيء هنا يقول إن على الولايات المتحدة أن تعتمد دخلًا أساسيًا أو لا؛ الأرقام تُظهر حجم المبالغ فقط."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "U.S. Census Bureau — Vintage 2025 population estimates: national population by characteristics, 2020–2025 (released 25 June 2026): resident population on 1 July 2025, 341,784,857, of whom 269,763,509 aged 18 and over (single-year-of-age file NC-EST2025-AGESEX-RES); national totals first released 27 January 2026",
+          "url": "https://www.census.gov/data/tables/time-series/demo/popest/2020s-national-detail.html",
+          "url2": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/national/asrh/nc-est2025-agesex-res.csv"
+        },
+        {
+          "n": 2,
+          "label": "Free Lunch Lab — countries.json: the United States’ $3.00-a-day poverty line ($91 a month), UN population, World Bank GDP and 2025 exchange rates used by the calculator (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/countries.json"
+        },
+        {
+          "n": 3,
+          "label": "World Bank — June 2025 update to the global poverty lines: the international poverty line of $3.00 a day in 2021 PPP",
+          "url": "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines"
+        },
+        {
+          "n": 4,
+          "label": "Free Lunch Lab — US guaranteed income pilots (us-pilots.json): 101 pilots, median monthly payment $500 (48 at $500, 26 at $1,000), median length 18 months (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/pilots/us/",
+          "url2": "https://neteru-nyukin.eltociear.workers.dev/us-pilots.json"
+        },
+        {
+          "n": 5,
+          "label": "Yang 2020 — The Freedom Dividend, defined (campaign FAQ): $1,000 a month for every citizen over 18; Social Security retirement benefits stack; welfare and food stamp recipients choose; 10% value-added tax; policy page",
+          "url": "https://2020.yang2020.com/what-is-freedom-dividend-faq",
+          "url2": "https://2020.yang2020.com/policies/the-freedom-dividend"
+        },
+        {
+          "n": 6,
+          "label": "U.S. Treasury, Bureau of the Fiscal Service — Monthly Treasury Statement for September 2026 (FY2026 year end, October 2026): receipts $5,403.3 bn, individual income taxes $2,845.5 bn, outlays $7,395.8 bn (Tables 4 and 9); Social Security benefit payments OASI $1,494.6 bn + DI $159.9 bn, SSI $70.5 bn, SNAP $95.4 bn, refundable EITC $68.5 bn and CTC $28.6 bn, TANF $17.5 bn (Table 5)",
+          "url": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/outlays-of-the-united-states-government",
+          "url2": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/receipts-of-the-united-states-government"
+        },
+        {
+          "n": 7,
+          "label": "U.S. Bureau of Economic Analysis — GDP (advance estimate), 3rd quarter 2026 (29 October 2026): current-dollar GDP at seasonally adjusted annual rates, 2025 Q4 $31,462.5 bn, 2026 Q1 $31,906.3 bn, Q2 $32,563.0 bn, Q3 $33,010.0 bn (series via FRED)",
+          "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026",
+          "url2": "https://fred.stlouisfed.org/series/GDP"
+        },
+        {
+          "n": 8,
+          "label": "Social Security Administration — Monthly Statistical Snapshot, October 2026 (released November 2026): 55,213,000 retired workers, average $2,092.17; 6,940,000 disabled workers, average $1,639.28; 7,295,000 SSI recipients, average $740.07",
+          "url": "https://www.ssa.gov/policy/docs/quickfacts/stat_snapshot/2026-10.pdf"
+        },
+        {
+          "n": 9,
+          "label": "Administration for Children and Families, Office of Family Assistance — TANF and MOE spending and transfers by activity, FY2024 (updated 21 November 2025): total $37.5 bn, basic assistance 21.8%",
+          "url": "https://acf.gov/sites/default/files/documents/ofa/fy-2024-tanf-moe-financial-national-summary.pdf"
+        },
+        {
+          "n": 10,
+          "label": "Vivalt, Rhodes, Bartik, Broockman, Krause and Miller — The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States (NBER w32719, July 2024, revised August 2026)",
+          "url": "https://www.nber.org/papers/w32719"
+        },
+        {
+          "n": 11,
+          "label": "OpenResearch — Key Findings: Employment (21 July 2024): 1.3 fewer hours of work a week; employment 58% to 72% (recipients) and 59% to 74% (control group)",
+          "url": "https://www.openresearchlab.org/findings/key-findings-employment-and-income"
+        }
+      ]
+    },
+    {
       "id": "ai-company-profits-per-person",
       "date": "2026-11-18",
       "related": [
@@ -20651,6 +21772,7 @@ module.exports = {
       "id": "japan-basic-income-cost",
       "date": "2026-11-17",
       "related": [
+        "us-basic-income-cost",
         "takenaka-70000-yen-basic-income",
         "germany-merz-basic-income-cost",
         "basic-income-world-map",
@@ -21820,6 +22942,7 @@ module.exports = {
       "id": "germany-merz-basic-income-cost",
       "date": "2026-11-16",
       "related": [
+        "us-basic-income-cost",
         "ai-company-profits-per-person",
         "japan-basic-income-cost",
         "does-cash-make-people-stop-working",
@@ -24020,6 +25143,7 @@ module.exports = {
       "id": "does-cash-make-people-stop-working",
       "date": "2026-11-11",
       "related": [
+        "us-basic-income-cost",
         "germany-merz-basic-income-cost",
         "openresearch-cash-study",
         "finland-basic-income-experiment",
@@ -31608,6 +32732,7 @@ module.exports = {
       "id": "refundable-tax-credit-vs-basic-income",
       "date": "2026-11-06",
       "related": [
+        "us-basic-income-cost",
         "japan-basic-income-cost",
         "japan-special-cash-payment",
         "takenaka-70000-yen-basic-income",
@@ -36571,6 +37696,7 @@ module.exports = {
       "id": "openresearch-cash-study",
       "date": "2026-11-04",
       "related": [
+        "us-basic-income-cost",
         "does-cash-make-people-stop-working",
         "universal-high-income",
         "public-benefit-fund",

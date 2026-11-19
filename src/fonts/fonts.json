@@ -2035,6 +2035,10 @@
    {
     "file": "noto-sans-sc-400-zh-dfa3aaba45.woff2",
     "chars": "跟"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-b72b540085.woff2",
+    "chars": "盲"
    }
   ],
   "zh:body:700": [
@@ -2317,6 +2321,10 @@
    {
     "file": "noto-sans-sc-700-zh-ee50839501.woff2",
     "chars": "跟"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-874b9a919d.woff2",
+    "chars": "盲"
    }
   ],
   "zh:display": [

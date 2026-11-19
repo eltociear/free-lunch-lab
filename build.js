@@ -99,6 +99,7 @@ const ESSAY_DATA = {
   'billionaire-wealth-per-person': { calc: ['us', 'cn', 'in', 'de', 'jp', 'hk'] },
   'germany-merz-basic-income-cost': { calc: ['de'] },
   'japan-basic-income-cost': { calc: ['jp'] },
+  'us-basic-income-cost': { calc: ['us'], pilots: true },
   'ai-company-profits-per-person': { calc: ['us', 'jp'] },
 };
 for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
@@ -387,6 +388,48 @@ const usPath = l => `${urlPath(l)}pilots/us/`;
 const usAbs = l => SITE_URL + usPath(l);
 const US_FUNDERS = ['public', 'arpa', 'philanthropic'];
 const US_TL = TIMELINE.filter(t => t.us);
+// エッセイ us-basic-income-cost の2つの表（各言語の 't'：5つの金額の費用、置き換えたあとの差し引き費用と連邦収入に対する割合）は、
+// data/us-2026.json（国勢調査局の人口、財務省の月次財政報告の収入・個人所得税・支出・各制度の支出、BEA の GDP）から計算し直して、
+// ずれたら知らせる（en は全列、ほかの言語は数字の列）。貧困線は CALC_WORLD の us、パイロットの件数・中央値は年表（US_TL）と同じか、
+// 計算機の人口（国連）と GDP（世界銀行）が「前提と限界」の数字のままか確かめる。ar はラテン文字を LRI/PDI で囲み（表は除く）、hi は CJK と isolate なし
+const USD = require('./data/us-2026.json');
+const usDrift = (() => {
+  const e = ESSAYS.find(x => x.id === 'us-basic-income-cost');
+  if (!e) return '';
+  for (const [k, t] of e.blocks.ar) if (k !== 't' && /[A-Za-z$]/.test(t.replace(ESSAY_LINK, '$1').replace(/⁦[^⁩]*⁩/g, ''))) throw new Error(`us-basic-income-cost.ar: Latin text outside LRI/PDI: ${t.slice(0, 60)}`);
+  for (const [, t] of e.blocks.hi) if (/[　-鿿⁦-⁩]/.test(t)) throw new Error('us-basic-income-cost.hi: CJK or isolate characters');
+  const bad = [];
+  const us = CALC.countries.find(x => x.id === 'us'), uw = CALC_WORLD.find(x => x.id === 'us');
+  const lv = id => USD.levels.find(x => x.id === id);
+  if (uw.line.monthly !== lv('line').monthly) bad.push(`poverty line is now $${uw.line.monthly} a month (data/us-2026.json says $${lv('line').monthly})`);
+  if ((us.pop.all / 1e6).toFixed(1) !== '347.3') bad.push(`CALC us population is now ${us.pop.all} (the essay says 347.3 million)`);
+  if ((us.gdp.value / 1e12).toFixed(2) !== '30.77') bad.push(`CALC us GDP is now ${us.gdp.value} (the essay says $30.77 trillion)`);
+  const m = US_TL.map(t => t.us.monthly).sort((a, b) => a - b), mo = US_TL.map(t => t.us.months).filter(Boolean).sort((a, b) => a - b);
+  const med = a => a.length % 2 ? a[(a.length - 1) / 2] : (a[a.length / 2 - 1] + a[a.length / 2]) / 2;
+  const pl = { count: US_TL.length, medianMonthly: med(m), at500: m.filter(x => x === 500).length, at1000: m.filter(x => x === 1000).length, medianMonths: med(mo) };
+  for (const [k, v] of Object.entries(pl)) if (USD.pilots[k] !== v) bad.push(`pilots.${k} is now ${v} (data/us-2026.json says ${USD.pilots[k]})`);
+  const cost = l => (l.who === 'adults' ? USD.adults.value : USD.population.value) * l.monthly * 12;
+  const tr = c => `$${(c / 1e12).toFixed(2)} trillion`;
+  const pct = (c, v, d = 0) => `${(c / v * 100).toFixed(d)}%`;
+  const want1 = USD.levels.map(l => { const c = cost(l); return [`$${l.monthly.toLocaleString('en-US')}`, tr(c), pct(c, USD.revenue.value), pct(c, USD.incomeTax.value), pct(c, USD.outlays.value), pct(c, USD.gdp.value, 1)]; });
+  const off = Object.fromEntries(USD.offsets.map(o => [o.id, o.value]));
+  const nets = USD.netLevels.map(id => cost(lv(id)));
+  const cell = c => `${tr(c)} (${pct(c, USD.revenue.value)})`;
+  const want2 = [[null, '–', ...nets.map(cell)],
+    ...USD.scenarios.map(sc => { const sv = sc.replace.reduce((a, k) => a + off[k], 0); return [null, tr(sv), ...nets.map(c => cell(c - sv))]; })];
+  const tables = l => e.blocks[l].filter(([k]) => k === 't').map(([, t]) => t.split('\n').slice(1).map(r => r.split(' | ')));
+  const [en1, en2] = tables('en');
+  [[en1, want1, 'cost'], [en2, want2, 'net cost']].forEach(([rows, want, name]) => {
+    if (!rows || rows.length !== want.length) { bad.push(`en ${name} table: row count`); return; }
+    rows.forEach((r, i) => { const w = want[i]; if ((w[0] && !r[0].startsWith(w[0])) || r.slice(1).join(' | ') !== w.slice(1).join(' | ')) bad.push(`en ${name} row ${i + 1} (now ${w.slice(w[0] ? 0 : 1).join(' / ')})`); });
+  });
+  const digits = r => r.slice(1).map(c => c.replace(/\D/g, '')).join('/');
+  for (const l of LANGS) if (l !== 'en') {
+    const t = tables(l);
+    [en1, en2].forEach((en, j) => { const r = t[j] || []; if (r.length !== en.length || r.some((x, i) => digits(x) !== digits(en[i]))) bad.push(`${l} table ${j + 1} numbers differ from en`); });
+  }
+  return bad.length ? `WARNING: us-basic-income-cost: the tables differ from data/us-2026.json, the calculator data or the pilots list: ${bad.join(', ')}; update the essay (all languages)` : '';
+})();
 // エッセイ does-cash-make-people-stop-working の「対照群のある評価のうち、仕事についての結果」の分類（評価の要約 result を読んで分けたもの）。
 // 図の件数（減った, 変化なし, 増えた）と本文の 18件・8/7/2/1 はここに合わせる。一覧から消えた試みや、図の件数とのずれは警告する
 const WORK_PILOTS = {
@@ -3206,6 +3249,7 @@ if (mapDrift) console.warn(mapDrift);
 if (billDrift) console.warn(billDrift);
 if (gerDrift) console.warn(gerDrift);
 if (jpnDrift) console.warn(jpnDrift);
+if (usDrift) console.warn(usDrift);
 for (const w of aipDrift) console.warn(`WARNING: ai-company-profits-per-person: ${w}`);
 if (workDrift) console.warn(workDrift);
 if (hhDrift) console.warn(hhDrift); else console.log(`household: the essay's ${HOUSEHOLD.check.length} households match (main, range, benefits now, basic income)`);
@@ -3667,6 +3711,7 @@ const ESSAY_FILES = {
   'ai-profits-2026.json': { essay: 'ai-company-profits-per-person', license: 'CC BY 4.0 (figures from the company filings and other sources named in each entry)' },
   'japan-2026.json': { essay: 'japan-basic-income-cost', license: 'CC BY 4.0 (figures from the official sources named in each entry)' },
   'germany-2026.json': { essay: 'germany-merz-basic-income-cost', license: 'CC BY 4.0 (figures from the official sources named in each entry)' },
+  'us-2026.json': { essay: 'us-basic-income-cost', license: 'CC BY 4.0 (figures from the official sources named in each entry; pilot counts from this site\'s list)' },
 };
 const PUB = {};
 for (const [file, meta] of Object.entries(ESSAY_FILES)) {
@@ -3677,7 +3722,7 @@ for (const [file, meta] of Object.entries(ESSAY_FILES)) {
   if (!ds) throw new Error(`DATASETS: no entry for ${file}`);
   PUB[file] = { name: `Free Lunch Lab: ${ds.name.en}`, description: ds.desc.en, source: essayAbs(DEFAULT_LANG, e), repository: 'https://github.com/eltociear/free-lunch-lab', license: meta.license, licenseUrl: 'https://creativecommons.org/licenses/by/4.0/', ...rest };
 }
-// 表の形の CSV: 国、アメリカのパイロット、億万長者（国ごと）、AI企業（会社 × 四半期）、日本とドイツ（出典つきの数字ごとに1行）
+// 表の形の CSV: 国、アメリカのパイロット、億万長者（国ごと）、AI企業（会社 × 四半期）、日本・ドイツ・アメリカ（出典つきの数字ごとに1行。アメリカは置き換える制度の支出も）
 const figureRows = j => Object.entries(j).filter(([, v]) => v && typeof v === 'object' && !Array.isArray(v) && 'value' in v).map(([k, v]) => ({ figure: k, value: v.value, year: v.year ?? null, date: v.date ?? null, age: v.age ?? null, note: v.note ?? null, source: v.source ?? null, asOf: v.asOf ?? null }));
 const CSV_ROWS = {
   'countries.csv': countriesJson.countries.map(({ names, currencyNames, ...c }) => ({ id: c.id, name: names.en, currencyName: currencyNames.en, ...c })),
@@ -3686,6 +3731,7 @@ const CSV_ROWS = {
   'ai-profits-2026.csv': PUB['ai-profits-2026.json'].companies.flatMap(c => c.quarters.map(q => ({ company: c.id, name: c.name, ticker: c.ticker, country: c.country, ...q }))),
   'japan-2026.csv': figureRows(PUB['japan-2026.json']),
   'germany-2026.csv': figureRows(PUB['germany-2026.json']),
+  'us-2026.csv': [...figureRows(PUB['us-2026.json']), ...PUB['us-2026.json'].offsets.map(o => ({ figure: `offsets.${o.id}`, value: o.value, year: o.year, date: null, age: null, note: o.note, source: o.source, asOf: o.asOf }))],
 };
 const CSV = {};
 for (const [file, rows] of Object.entries(CSV_ROWS)) {
@@ -3697,7 +3743,7 @@ for (const [file, obj] of Object.entries(PUB)) fs.writeFileSync(path.join(OUT, f
 // データセットごとの行・項目（CSV があれば CSV の列、なければ JSON の1行目のキー）
 const DS_ROWS = {
   countries: countriesJson.countries, 'us-pilots': usPilotsJson.pilots, news: biNewsJson.weeks.flatMap(w => w.items), services: servicesJson.services, graveyard: graveJson.graveyard,
-  'open-source': ossJson.projects, 'open-data': dataJson.datasets, 'billionaires-2026': CSV_ROWS['billionaires-2026.csv'], 'ai-profits-2026': CSV_ROWS['ai-profits-2026.csv'], 'japan-2026': CSV_ROWS['japan-2026.csv'], 'germany-2026': CSV_ROWS['germany-2026.csv'],
+  'open-source': ossJson.projects, 'open-data': dataJson.datasets, 'billionaires-2026': CSV_ROWS['billionaires-2026.csv'], 'ai-profits-2026': CSV_ROWS['ai-profits-2026.csv'], 'japan-2026': CSV_ROWS['japan-2026.csv'], 'germany-2026': CSV_ROWS['germany-2026.csv'], 'us-2026': CSV_ROWS['us-2026.csv'],
 };
 {
   const seen = new Set();

@@ -835,6 +835,115 @@ Cautions: Whether rewards need Orb verification is unknown, and we have not test
 
 ## Essays
 
+### What would a basic income cost the United States?
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
+- Published: 2026-11-19
+
+How much would it cost to give everyone in the United States a basic income? The answer depends almost entirely on the amount, and on who counts as everyone. At $1,000 a month for every adult, the Freedom Dividend Andrew Yang proposed in 2020, it would cost about $3.24 trillion a year: 60% of all federal revenue in fiscal year 2026. At $1,000 a month for everyone, children included, it would cost $4.10 trillion. Below: the cost at five amounts, which existing programs it could replace and who would lose if they were replaced, and what US pilots have found.
+
+#### How we count
+
+The Census Bureau estimates that 341,784,857 people lived in the United States on 1 July 2025, of whom 269,763,509 were aged 18 or over. These are the latest official estimates.[1] If everyone gets the same amount, the cost is simply the monthly amount × 12 × 341.8 million; for adults only, × 269.8 million. We use five amounts.
+
+$91 a month is the standard amount for the United States in this site’s 211-country comparison (https://neteru-nyukin.eltociear.workers.dev/calc/countries/): the World Bank’s poverty line of $3.00 a day.[2][3] $500 a month is the typical guaranteed income pilot: of the 101 US pilots in our table (https://neteru-nyukin.eltociear.workers.dev/pilots/us/), the median pays $500 a month and 48 pay exactly that.[4] $1,000 a month for adults only is Andrew Yang’s Freedom Dividend from his 2020 presidential campaign, “for every American adult over the age of 18”.[5] $1,000 a month for everyone is the default on this site’s US calculator page (https://neteru-nyukin.eltociear.workers.dev/calc/us/), and $2,000 is its highest preset.
+
+#### What it would cost: five amounts
+
+| Per person per month | Cost per year | Share of federal revenue (FY2026) | Share of individual income tax (FY2026) | Share of federal outlays (FY2026) | Share of GDP (FY2026) |
+| --- | --- | --- | --- | --- | --- |
+| $91 (poverty line) | $0.37 trillion | 7% | 13% | 5% | 1.2% |
+| $500 | $2.05 trillion | 38% | 72% | 28% | 6.4% |
+| $1,000, adults 18+ only (Yang) | $3.24 trillion | 60% | 114% | 44% | 10.0% |
+| $1,000 | $4.10 trillion | 76% | 144% | 55% | 12.7% |
+| $2,000 | $8.20 trillion | 152% | 288% | 111% | 25.4% |
+
+The yardsticks are for fiscal year 2026, which ran from October 2025 to September 2026. Federal receipts came to $5.403 trillion, of which individual income taxes were $2.846 trillion, and outlays to $7.396 trillion, according to the Monthly Treasury Statement for September 2026.[6] Nominal GDP over the same four quarters was $32.24 trillion; this is our average of the Bureau of Economic Analysis’s quarterly estimates, and the last quarter is still an advance estimate.[7] State and local taxes are not included.
+
+Only the poverty-line floor stays under a tenth of federal revenue. The typical pilot amount, $500 for everyone, would take 38% of all federal revenue, almost three quarters of what the individual income tax brings in. Yang’s design would cost more than the whole individual income tax. $1,000 for everyone would cost 76% of federal revenue, and $2,000 more than all federal revenue and more than everything the federal government spends.
+
+Children make a large difference, because they are about a fifth of the population: 72.0 million of the 341.8 million are under 18.[1] Leaving them out, as Yang did, cuts the cost of $1,000 a month from $4.10 trillion to $3.24 trillion. Yang’s plan was also for citizens only; we count all residents aged 18 and over, so his own design would cost somewhat less than the figure here.[5] The US calculator page (https://neteru-nyukin.eltociear.workers.dev/calc/us/) lets you try adults only or children only.
+
+#### What it could replace
+
+A basic income is usually meant to replace some existing programs, not to come on top of all of them. Which ones is a design choice, and the most important one. These are the main federal cash or near-cash programs for individuals, with their outlays in fiscal year 2026 from the same Treasury statement.[6]
+
+Social Security. Old-age, survivors and disability benefits came to $1.654 trillion, by far the largest. In October 2026, 55.2 million retired workers received an average of $2,092.17 a month, and 6.9 million disabled workers an average of $1,639.28.[8] Benefits are earned through payroll taxes, so replacing them is the most contested choice.
+
+Supplemental Security Income (SSI), for older, blind and disabled people with low incomes and few assets: $70.5 billion. In October 2026, 7.3 million recipients received an average of $740.07 a month.[6][8]
+
+SNAP (food stamps): $95.4 billion. The figure includes the federal share of states’ administrative costs as well as benefits.[6]
+
+The refundable parts of the Earned Income Tax Credit (EITC) and the Child Tax Credit (CTC), the amounts paid out beyond what families owe in tax: $68.5 billion and $28.6 billion.[6] The parts that only reduce tax bills are not counted.
+
+Temporary Assistance for Needy Families (TANF): $17.5 billion in federal block-grant outlays. Most TANF money is not cash: in fiscal year 2024 only 21.8% of combined federal and state TANF spending went on basic assistance.[6][9]
+
+Not counted: Medicare, Medicaid and other health coverage, unemployment insurance, housing assistance, veterans’ benefits and tax allowances. Two scenarios, for the three amounts of $1,000 a month or more (in brackets, the share of federal revenue):
+
+| What is replaced | Saving per year | Net cost at $1,000, adults 18+ (Yang) | Net cost at $1,000, everyone | Net cost at $2,000, everyone |
+| --- | --- | --- | --- | --- |
+| Nothing (gross cost) | – | $3.24 trillion (60%) | $4.10 trillion (76%) | $8.20 trillion (152%) |
+| A: SSI, SNAP, refundable EITC and CTC, TANF | $0.28 trillion | $2.96 trillion (55%) | $3.82 trillion (71%) | $7.92 trillion (147%) |
+| B: A + Social Security | $1.93 trillion | $1.30 trillion (24%) | $2.17 trillion (40%) | $6.27 trillion (116%) |
+
+The means-tested programs are small next to the totals: replacing all of them saves $0.28 trillion, which lowers the cost of $1,000 for everyone only from 76% to 71% of federal revenue. Only Social Security is large enough to change the picture. With it replaced too (B), Yang’s design would cost a net $1.30 trillion, 24% of federal revenue, and $1,000 for everyone $2.17 trillion, 40%.
+
+But replacing Social Security has clear losers. At $1,000 a month, the average retired worker, who now receives $2,092.17, would lose about $1,092 a month, roughly half of the benefit, and the average disabled worker about $639.[8] Even $2,000 a month is slightly below the average retired worker’s benefit, and many retirees receive more than the average. People on SSI, whose average payment is $740.07, would get more at $1,000.
+
+Yang did not propose scenario B. In his plan Social Security retirement benefits would “stack” with the dividend, and people on welfare or food stamps would choose between their current benefits and the $1,000 rather than receive both; people on disability insurance would choose between adding the $1,000 and adding SSI.[5] His design therefore sits between the gross cost and scenario A. He proposed paying for it mainly with a 10% value-added tax.[5]
+
+#### What US pilots found
+
+No one has paid a permanent basic income to everyone in the United States. What exists are guaranteed income pilots that pay limited groups for a limited time. Our table of US guaranteed income pilots (https://neteru-nyukin.eltociear.workers.dev/pilots/us/) lists 101: the median pays $500 a month for 18 months, 48 pay exactly $500 and 26 pay $1,000.[4] Most are for residents with low incomes, so they test a guaranteed income rather than a universal one.
+
+The largest randomised study is OpenResearch’s Unconditional Cash Study, funded in part by Sam Altman. From November 2020 to October 2023, 1,000 people aged 21 to 40 with low incomes in Illinois and Texas received $1,000 a month with no conditions, and 2,000 others received $50 a month as a control group. The results first came out in July 2024, and the employment paper was last revised in August 2026. In that version, recipients’ own income, not counting the transfers, was about $1,900 a year lower than the control group’s, and they were 4.2 percentage points less likely to be in the labour force; there was no measurable gain in job quality, and higher well-being in the first year faded afterwards.[10]
+
+In the surveys, recipients worked about 1.3 hours a week less than the control group. Employment rose in both groups, from 58% to 72% among recipients and from 59% to 74% in the control group.[11] More in What happened when Sam Altman’s study gave people $1,000 a month for three years (https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/). Other studies point the same way: most found small reductions in work or none, and none found people quitting en masse (see Does giving people money make them stop working? (https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/)). None of them can show what would happen to prices, wages or taxes if all 342 million people were paid, or how people would act if the payment were for life.
+
+#### What the numbers show
+
+A basic income for everyone in the United States would cost from about $0.37 trillion a year at the poverty-line floor to $8.20 trillion at $2,000 a month. Yang’s $1,000 for adults would cost about $3.24 trillion, 60% of federal revenue and 10% of GDP. Replacing SSI, SNAP, TANF and the refundable tax credits would cover less than a tenth of that. Only Social Security is large enough to bring the net cost down to about a quarter of federal revenue, and replacing it would cut the average retired worker’s benefit roughly in half.
+
+To try other amounts, or adults or children only, use the US calculator page (https://neteru-nyukin.eltociear.workers.dev/calc/us/); for other countries, see the 211-country comparison (https://neteru-nyukin.eltociear.workers.dev/calc/countries/) and the world map (https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-world-map/). For Japan and Germany, see What would a basic income cost Japan? (https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/) and Merz was asked about basic income. What would it cost Germany? (https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/) For a design that pays only people on low incomes, see Refundable tax credits vs basic income (https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/).
+
+#### Assumptions and limits
+
+Everyone, the same amount. Children get the full amount unless stated. The population is the Census Bureau’s resident population on 1 July 2025, held constant; it includes people who are not citizens.[1]
+
+Gross cost. Taxes on the payment, changes in work or prices, and the cost of running it are left out. If the payment were taxable income, part of its cost would come back as tax.
+
+Yardsticks. Revenue and outlays are federal only, for fiscal year 2026; adding state and local taxes would lower every share of revenue. GDP for the fiscal year is our average of four quarterly estimates, the last of them an advance estimate that will be revised.[7] The US calculator page (https://neteru-nyukin.eltociear.workers.dev/calc/us/) and the world map (https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-world-map/) use the UN’s population estimate (347.3 million) and the World Bank’s GDP for calendar 2025 ($30.77 trillion),[2] so their totals and shares differ slightly from the ones here.
+
+Offsets. The program figures are federal outlays as recorded by the Treasury: for SNAP they include administrative costs, for TANF non-cash services, and state spending is not included. The Social Security figure covers benefit payments only. Health coverage is not counted.
+
+Not a proposal. The amounts are yardsticks. Nothing here says whether the United States should introduce a basic income; the numbers only show the size of the sums.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/refundable-tax-credit-vs-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-world-map/
+
+Sources:
+
+1. U.S. Census Bureau — Vintage 2025 population estimates: national population by characteristics, 2020–2025 (released 25 June 2026): resident population on 1 July 2025, 341,784,857, of whom 269,763,509 aged 18 and over (single-year-of-age file NC-EST2025-AGESEX-RES); national totals first released 27 January 2026: https://www.census.gov/data/tables/time-series/demo/popest/2020s-national-detail.html (also https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/national/asrh/nc-est2025-agesex-res.csv)
+2. Free Lunch Lab — countries.json: the United States’ $3.00-a-day poverty line ($91 a month), UN population, World Bank GDP and 2025 exchange rates used by the calculator (CC BY 4.0): https://neteru-nyukin.eltociear.workers.dev/countries.json
+3. World Bank — June 2025 update to the global poverty lines: the international poverty line of $3.00 a day in 2021 PPP: https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines
+4. Free Lunch Lab — US guaranteed income pilots (us-pilots.json): 101 pilots, median monthly payment $500 (48 at $500, 26 at $1,000), median length 18 months (CC BY 4.0): https://neteru-nyukin.eltociear.workers.dev/pilots/us/ (also https://neteru-nyukin.eltociear.workers.dev/us-pilots.json)
+5. Yang 2020 — The Freedom Dividend, defined (campaign FAQ): $1,000 a month for every citizen over 18; Social Security retirement benefits stack; welfare and food stamp recipients choose; 10% value-added tax; policy page: https://2020.yang2020.com/what-is-freedom-dividend-faq (also https://2020.yang2020.com/policies/the-freedom-dividend)
+6. U.S. Treasury, Bureau of the Fiscal Service — Monthly Treasury Statement for September 2026 (FY2026 year end, October 2026): receipts $5,403.3 bn, individual income taxes $2,845.5 bn, outlays $7,395.8 bn (Tables 4 and 9); Social Security benefit payments OASI $1,494.6 bn + DI $159.9 bn, SSI $70.5 bn, SNAP $95.4 bn, refundable EITC $68.5 bn and CTC $28.6 bn, TANF $17.5 bn (Table 5): https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/outlays-of-the-united-states-government (also https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/receipts-of-the-united-states-government)
+7. U.S. Bureau of Economic Analysis — GDP (advance estimate), 3rd quarter 2026 (29 October 2026): current-dollar GDP at seasonally adjusted annual rates, 2025 Q4 $31,462.5 bn, 2026 Q1 $31,906.3 bn, Q2 $32,563.0 bn, Q3 $33,010.0 bn (series via FRED): https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026 (also https://fred.stlouisfed.org/series/GDP)
+8. Social Security Administration — Monthly Statistical Snapshot, October 2026 (released November 2026): 55,213,000 retired workers, average $2,092.17; 6,940,000 disabled workers, average $1,639.28; 7,295,000 SSI recipients, average $740.07: https://www.ssa.gov/policy/docs/quickfacts/stat_snapshot/2026-10.pdf
+9. Administration for Children and Families, Office of Family Assistance — TANF and MOE spending and transfers by activity, FY2024 (updated 21 November 2025): total $37.5 bn, basic assistance 21.8%: https://acf.gov/sites/default/files/documents/ofa/fy-2024-tanf-moe-financial-national-summary.pdf
+10. Vivalt, Rhodes, Bartik, Broockman, Krause and Miller — The Employment Effects of a Guaranteed Income: Experimental Evidence from Two U.S. States (NBER w32719, July 2024, revised August 2026): https://www.nber.org/papers/w32719
+11. OpenResearch — Key Findings: Employment (21 July 2024): 1.3 fewer hours of work a week; employment 58% to 72% (recipients) and 59% to 74% (control group): https://www.openresearchlab.org/findings/key-findings-employment-and-income
+
 ### Share out AI companies’ profits: how much would each person get?
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
@@ -1106,6 +1215,8 @@ Consumption tax. The yardstick uses the rates in force in FY2025 and the revenue
 
 Not a proposal. The amounts are yardsticks. Nothing here says whether Japan should introduce a basic income; the numbers only show the size of the sums.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/
@@ -1216,6 +1327,8 @@ Offsets. Only the basic income support (benefit payments, without about €6.8 b
 Quotes. Merz’s words are from the official German transcript; the translations are ours. Wildberger’s October remarks come from a news agency report on a Tagesspiegel interview. Claims we could not find in a credible source are left out.
 
 Not a proposal. The amounts are yardsticks. Nothing here says whether Germany should introduce a basic income; the numbers only show the size of the sums.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-company-profits-per-person/
 
@@ -1495,6 +1608,8 @@ Many pilot results rest on self-reported surveys. Estimates also move as better 
 Opinion: Across more than fifty years of experiments, in rich countries and poor ones, no study found that cash makes people stop working. Most found small reductions or none, and some found more work. Where work fell, it fell by hours a week or weeks a year, mostly for parents, the young and people between jobs.
 
 Opinion: That is not the same as “basic income has no effect on work”. OpenResearch and the 1970s experiments measured real, if modest, reductions, and those numbers belong in any honest costing. The better question is not “will people stop working?” but “how much less, who, and is it worth it?” The data answer the first two parts. The third is a judgement for each of us.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/germany-merz-basic-income-cost/
 
@@ -2286,6 +2401,8 @@ Opinion: What Japan’s payment is building, a way to know each person’s incom
 
 Opinion: But its limits matter too. It does not reach people who cannot work, it arrives a year late, and only once a year. The reference amount of about ¥30,000 a year is one twelfth of a ¥30,000-a-month basic income. It is more accurate to see a refundable tax credit not as a substitute for basic income but as a tool that fills one gap in the current system. How far that tool grows will become clear as the amounts and lines are set ahead of the full launch in fiscal 2029. We will be watching.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/
@@ -2690,6 +2807,8 @@ Opinion: For anyone designing an AI-funded payment, this study gives planning nu
 Opinion: Altman asked an honest question in 2016 and paid for a careful answer, and the answer did not simply flatter the idea. The researchers published the null results alongside the good ones, revised their main estimate upward, and opened their data. That is worth more than any single headline.
 
 Opinion: If you share one line from this study, make it the accurate one: 1,000 lower-income people received $1,000 a month for three years; they worked about 1.3 hours a week less, spent mostly on basics, felt better for a year, and many used the money to choose how they spent their time. Read it the way this site reads every free lunch: who paid, who received, and for how long.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
 
@@ -3631,7 +3750,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-17
+- Last commit: 2026-11-19
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -3802,7 +3921,7 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-18
+- Last commit: 2026-11-19
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
@@ -3884,7 +4003,7 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Group: Apps & wallets
 - Language: TypeScript
 - License: MIT (LICENSE)
-- Stars: 163
+- Stars: 164
 - Last commit: 2026-11-18
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
@@ -3908,7 +4027,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 43
-- Last commit: 2026-11-18
+- Last commit: 2026-11-19
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 

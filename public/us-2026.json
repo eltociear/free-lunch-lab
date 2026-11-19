@@ -1,0 +1,212 @@
+{
+  "name": "Free Lunch Lab: United States: figures for the cost of a basic income",
+  "description": "The official figures behind the United States cost essay: population, federal revenue, individual income tax, outlays, GDP, the programs a basic income could replace and the pilot counts, each with its source and date.",
+  "source": "https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/",
+  "repository": "https://github.com/eltociear/free-lunch-lab",
+  "license": "CC BY 4.0 (figures from the official sources named in each entry; pilot counts from this site's list)",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "about": "Official figures behind the essay us-basic-income-cost (cost of a basic income in the United States at five monthly amounts, what it could replace, and what US pilots found). build.js recomputes the essay's two tables from this file and the calculator data (CALC_WORLD for the $3-a-day line) and checks the pilot counts against the timeline, warning on drift; brand/x/infographics/render.js draws the X images from it. Amounts in US dollars.",
+  "retrieved": "2026-11-19",
+  "population": {
+    "value": 341784857,
+    "date": "2025-07-01",
+    "note": "resident population, Census Bureau Vintage 2025 estimate (national totals released 27 January 2026; age detail released 25 June 2026); the calculator uses the UN World Population Prospects figure instead (CALC us pop.all)",
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/national/asrh/nc-est2025-agesex-res.csv",
+    "asOf": "2026-06-25"
+  },
+  "adults": {
+    "value": 269763509,
+    "age": 18,
+    "date": "2025-07-01",
+    "note": "resident population aged 18 and over, sum of single years of age 18 to 85+, same file",
+    "source": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/national/asrh/nc-est2025-agesex-res.csv",
+    "asOf": "2026-06-25"
+  },
+  "revenue": {
+    "value": 5403326758961,
+    "year": "FY2026",
+    "note": "total federal receipts, fiscal year October 2025 to September 2026, Monthly Treasury Statement for September 2026 (Table 4, year to date), $5,403,326,758,960.81",
+    "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/receipts-of-the-united-states-government",
+    "asOf": "2026-10-16"
+  },
+  "incomeTax": {
+    "value": 2845526866160,
+    "year": "FY2026",
+    "note": "federal individual income taxes, net of refunds, same table, $2,845,526,866,159.55",
+    "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/receipts-of-the-united-states-government",
+    "asOf": "2026-10-16"
+  },
+  "outlays": {
+    "value": 7395799983313,
+    "year": "FY2026",
+    "note": "total federal outlays, Monthly Treasury Statement for September 2026 (Table 9, year to date), $7,395,799,983,313.23",
+    "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/summary-of-receipts-and-outlays-of-the-united-states-government",
+    "asOf": "2026-10-16"
+  },
+  "gdp": {
+    "value": 32235465750000,
+    "year": "FY2026",
+    "note": "nominal GDP for the fiscal year, our average of BEA's seasonally adjusted annual rates for 2025 Q4 ($31,462.523 bn), 2026 Q1 ($31,906.274 bn), Q2 ($32,563.030 bn) and Q3 ($33,010.036 bn, advance estimate of 29 October 2026); calendar 2025 was $30,861.292 bn",
+    "source": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026",
+    "asOf": "2026-10-29"
+  },
+  "levels": [
+    {
+      "id": "line",
+      "monthly": 91,
+      "who": "all",
+      "note": "the World Bank's $3.00-a-day poverty line, from the calculator data (CALC_WORLD us line.monthly)"
+    },
+    {
+      "id": "500",
+      "monthly": 500,
+      "who": "all",
+      "note": "the median and most common monthly amount of the US guaranteed income pilots on /pilots/us/"
+    },
+    {
+      "id": "yang",
+      "monthly": 1000,
+      "who": "adults",
+      "note": "Andrew Yang's Freedom Dividend (2020 campaign): $1,000 a month for every citizen over 18; here every resident aged 18 and over"
+    },
+    {
+      "id": "1000",
+      "monthly": 1000,
+      "who": "all",
+      "note": "default amount on /calc/us/, everyone including children"
+    },
+    {
+      "id": "2000",
+      "monthly": 2000,
+      "who": "all",
+      "note": "last preset on /calc/us/"
+    }
+  ],
+  "offsets": [
+    {
+      "id": "ss",
+      "value": 1654461698011,
+      "year": "FY2026",
+      "note": "Social Security (OASDI) benefit payments: Old-Age and Survivors Insurance $1,494,558,724,109.46 + Disability Insurance $159,902,973,901.26, Monthly Treasury Statement for September 2026, Table 5 (administrative expenses not included)",
+      "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/outlays-of-the-united-states-government",
+      "asOf": "2026-10-16"
+    },
+    {
+      "id": "ssi",
+      "value": 70456540282,
+      "year": "FY2026",
+      "note": "Supplemental Security Income program, federal outlays, same table",
+      "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/outlays-of-the-united-states-government",
+      "asOf": "2026-10-16"
+    },
+    {
+      "id": "snap",
+      "value": 95392605256,
+      "year": "FY2026",
+      "note": "Supplemental Nutrition Assistance Program account, federal outlays, same table (benefits plus the federal share of state administrative costs)",
+      "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/outlays-of-the-united-states-government",
+      "asOf": "2026-10-16"
+    },
+    {
+      "id": "eitc",
+      "value": 68491613303,
+      "year": "FY2026",
+      "note": "payment where earned income credit exceeds liability for tax (refundable part of the EITC), same table",
+      "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/outlays-of-the-united-states-government",
+      "asOf": "2026-10-16"
+    },
+    {
+      "id": "ctc",
+      "value": 28609669266,
+      "year": "FY2026",
+      "note": "payment where child tax credit exceeds liability for tax (refundable part of the CTC), same table",
+      "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/outlays-of-the-united-states-government",
+      "asOf": "2026-10-16"
+    },
+    {
+      "id": "tanf",
+      "value": 17519116564,
+      "year": "FY2026",
+      "note": "Temporary Assistance for Needy Families, federal outlays, same table (the whole block grant, of which only part is cash assistance)",
+      "source": "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/outlays-of-the-united-states-government",
+      "asOf": "2026-10-16"
+    }
+  ],
+  "netLevels": [
+    "yang",
+    "1000",
+    "2000"
+  ],
+  "scenarios": [
+    {
+      "id": "A",
+      "replace": [
+        "ssi",
+        "snap",
+        "eitc",
+        "ctc",
+        "tanf"
+      ]
+    },
+    {
+      "id": "B",
+      "replace": [
+        "ssi",
+        "snap",
+        "eitc",
+        "ctc",
+        "tanf",
+        "ss"
+      ]
+    }
+  ],
+  "retiredWorkerBenefit": {
+    "value": 2092.17,
+    "date": "2026-10",
+    "note": "average monthly Social Security benefit of the 55,213,000 retired workers, October 2026 (all 71,758,000 beneficiaries: $1,946.23; disabled workers, 6,940,000: $1,639.28), Monthly Statistical Snapshot released November 2026",
+    "source": "https://www.ssa.gov/policy/docs/quickfacts/stat_snapshot/2026-10.pdf",
+    "asOf": "2026-11"
+  },
+  "ssiPayment": {
+    "value": 740.07,
+    "date": "2026-10",
+    "note": "average monthly SSI payment of the 7,295,000 recipients, October 2026, same snapshot",
+    "source": "https://www.ssa.gov/policy/docs/quickfacts/stat_snapshot/2026-10.pdf",
+    "asOf": "2026-11"
+  },
+  "tanfBasicAssistance": {
+    "value": 21.8,
+    "year": "FY2024",
+    "note": "percent of combined federal TANF and state maintenance-of-effort spending and transfers ($37,515,712,342) used for basic assistance, ACF, updated 21 November 2025",
+    "source": "https://acf.gov/sites/default/files/documents/ofa/fy-2024-tanf-moe-financial-national-summary.pdf",
+    "asOf": "2025-11-21"
+  },
+  "pilots": {
+    "count": 101,
+    "medianMonthly": 500,
+    "at500": 48,
+    "at1000": 26,
+    "medianMonths": 18,
+    "note": "US guaranteed income pilots on this site's list (timeline entries with US data), computed from us-pilots.json",
+    "source": "https://neteru-nyukin.eltociear.workers.dev/pilots/us/"
+  },
+  "openResearch": {
+    "recipients": 1000,
+    "controls": 2000,
+    "monthly": 1000,
+    "months": 36,
+    "earningsChange": -1900,
+    "participationChangePts": -4.2,
+    "hoursChangeSurvey": -1.3,
+    "employedStart": [
+      58,
+      59
+    ],
+    "employedEnd": [
+      72,
+      74
+    ],
+    "note": "OpenResearch Unconditional Cash Study, November 2020 to October 2023; employment paper NBER w32719 (July 2024, revised August 2026): earnings excluding transfers about $1,900 a year lower, labour force participation 4.2 points lower; key findings of 21 July 2024: 1.3 fewer hours a week, employment 58% to 72% (recipients) and 59% to 74% (controls)",
+    "source": "https://www.nber.org/papers/w32719"
+  }
+}

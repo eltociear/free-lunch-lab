@@ -458,6 +458,78 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the essay us-basic-income-cost: Census Bureau population × amount × 12 at three of the essay's amounts
+  // ($1,000 for adults 18+ only), against federal revenue (FY2026, Monthly Treasury Statement), plus the net cost of Yang's
+  // $1,000 with SSI, SNAP, refundable credits, TANF and Social Security replaced, computed from data/us-2026.json
+  // (the same file the build checks the essay tables against). 1200x675, ja/en.
+  'us': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const U = require('../../../data/us-2026.json');
+      const P = U.population.value, A = U.adults.value, rev = U.revenue.value;
+      const lv = id => U.levels.find(x => x.id === id);
+      const cost = l => (l.who === 'adults' ? A : P) * l.monthly * 12;
+      const off = Object.fromEntries(U.offsets.map(o => [o.id, o.value]));
+      const all = U.scenarios.find(x => x.id === 'B').replace.reduce((a, k) => a + off[k], 0);
+      const net = cost(lv('yang')) - all, netT = (net / 1e12).toFixed(2), netP = Math.round(net / rev * 100);
+      const revT = (rev / 1e12).toFixed(2);
+      const T3 = {
+        ja: { eb: `アメリカの人口 ${Math.floor(P / 1e8)}億${Math.round((P % 1e8) / 1e4)}万人（国勢調査局・2025年7月1日）`, hl: 'アメリカで全員にベーシックインカム、年いくら？',
+          sb: `月500ドルから2,000ドルまで。連邦政府の収入（2026会計年度 ${revT}兆ドル）とくらべると`,
+          amt: m => `月${m.toLocaleString('en-US')}ドル`, tag: { '500': '', yang: '（ヤン案・大人だけ）', '2000': '' },
+          d: { '500': 'アメリカの保証所得パイロットで典型的な額', '2000': '子どもも含めて全員に' },
+          cost: c => `${(c / 1e12).toFixed(2)}兆<small>ドル</small>`,
+          yr: '1年あたり', share: p => `連邦政府の収入の<b>${p}%</b>`, big: `社会保障年金なども置き換えると差し引き${netT}兆ドル（収入の${netP}%）`,
+          nt: '数えた人には全員同じ額。給付にかかる税、働き方や物価の変化は入れていない', wm: '不労所得研究所', path: 'ja/' },
+        en: { eb: `United States: ${(P / 1e6).toFixed(1)} million people (Census Bureau, 1 July 2025)`, hl: 'A basic income for all of America: how much?',
+          sb: `From $500 to $2,000 a month, against federal revenue ($${revT} trillion, FY2026)`,
+          amt: m => `$${m.toLocaleString('en-US')} a month`, tag: { '500': '', yang: ' (Yang, adults)', '2000': '' },
+          d: { '500': 'The typical US guaranteed income pilot', '2000': 'Everyone, children included' },
+          cost: c => `$${(c / 1e12).toFixed(2)}<small>tn</small>`,
+          yr: 'a year', share: p => `<b>${p}%</b> of federal revenue`, big: `With Social Security and aid replaced: $${netT}tn net (${netP}% of revenue)`,
+          nt: 'The same amount for each person counted. No taxes on the payment, no changes in work or prices', wm: 'Free <em>Lunch</em> Lab', path: '' },
+      }[lang];
+      const card = id => { const l = lv(id), c = cost(l), big = id === 'yang';
+        return `<section class="c${big ? ' big' : ''}"><p class="k">${T3.amt(l.monthly)}${T3.tag[id]}</p><p class="v">${T3.cost(c)}</p><p class="y">${T3.yr}</p><p class="cmp">${T3.share(Math.round(c / rev * 100))}</p><p class="d">${big ? T3.big : T3.d[id]}</p></section>`; };
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb">${T3.eb}</p>
+<h1 class="hl">${T3.hl}</h1>
+<p class="sb">${T3.sb}</p>
+<div class="cards">${['500', 'yang', '2000'].map(card).join('')}</div>
+<p class="nt">${T3.nt}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${T3.wm}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${T3.path}essays/us-basic-income-cost/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb{font-size:19px;color:#6CF0B0;font-weight:700}
+.hl{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 44 : 40}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:20px;line-height:1.35;color:#C9D0F0}
+.cards{margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) minmax(0,1fr);gap:16px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:16px 20px;display:flex;flex-direction:column}
+.c.big{border-color:rgba(255,214,107,.7);background:rgba(255,214,107,.08)}
+.k{font-size:21px;color:#A9B2D8;font-weight:700;line-height:1.3}
+.v{margin-top:8px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:44px;line-height:1.1;color:#FFFFFF;white-space:nowrap}
+.big .v{font-size:66px;color:#FFD66B}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.42em;margin-left:4px}
+.y{font-size:18px;color:#A9B2D8}
+.cmp{margin-top:12px;font-size:24px;line-height:1.35;color:#C9D0F0;word-break:auto-phrase}
+.cmp b{color:#6CF0B0;font-weight:900;font-size:1.25em}
+.d{margin-top:auto;font-size:17px;line-height:1.35;color:#E3E8FF}
+.nt{margin:14px 0 12px;font-size:17px;line-height:1.35;color:#A9B2D8}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:16px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
   // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
   'billionaire': {
