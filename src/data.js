@@ -12592,16 +12592,17 @@ module.exports = {
         "ar": "⁦$1,000⁩ شهريًا بلا شروط لمدة 12 شهرًا لأمهات سود منخفضات الدخل في جاكسون، إضافة إلى ⁦$1,000⁩ في حساب ادخار جامعي لكل طفل؛ بدأ في 2018 مع 20 أمًّا، وتلقت أكثر من 550 أمًّا الدفعات عبر ست دفعات"
       },
       "result": {
-        "en": "",
-        "ja": "",
-        "zh": "",
-        "hi": "",
-        "es": "",
-        "de": "",
-        "ar": ""
+        "en": "Social Insights Research’s evaluation of the fourth cohort (May 2022–April 2023; 86 of 87 mothers surveyed at the start and end, no comparison group) reported that the share of mothers who always paid their bills on time rose from 25% to 56%, those reporting “a great deal” of financial stress fell from 41% to 20%, and the share employed rose from 28% to 45%",
+        "ja": "Social Insights Researchによる第4期（2022年5月〜2023年4月）の評価（母親87人中86人の開始時と終了時の調査、比較群なし）は、請求書をいつも期限内に払えた母親が25%から56%に増え、お金のストレスが「非常に大きい」人は41%から20%に減り、働いている人は28%から45%に増えたと報告",
+        "zh": "Social Insights Research 对第四批（2022年5月至2023年4月）的评估（87名母亲中86人在开始和结束时接受调查，无对照组）报告：总能按时付账单的母亲从25%升至56%，财务压力“非常大”的从41%降至20%，有工作的从28%升至45%",
+        "hi": "Social Insights Research के चौथे समूह (मई 2022–अप्रैल 2023; 87 में से 86 माताओं का शुरुआत और अंत में सर्वे, कोई तुलना समूह नहीं) के मूल्यांकन के मुताबिक़ हमेशा समय पर बिल भरने वाली माताओं का हिस्सा 25% से 56% हुआ, \"बहुत ज़्यादा\" आर्थिक तनाव बताने वाली 41% से घटकर 20% रह गईं, और काम करने वालों का हिस्सा 28% से 45% हुआ",
+        "es": "La evaluación de la cuarta cohorte por Social Insights Research (mayo de 2022 a abril de 2023; 86 de 87 madres encuestadas al inicio y al final, sin grupo de comparación) informó de que la parte de madres que siempre pagaban sus facturas a tiempo pasó del 25 % al 56 %, las que declaraban «mucho» estrés financiero bajaron del 41 % al 20 % y la parte con empleo subió del 28 % al 45 %",
+        "de": "Die Auswertung der vierten Kohorte durch Social Insights Research (Mai 2022 bis April 2023; 86 von 87 Müttern zu Beginn und am Ende befragt, ohne Vergleichsgruppe) ergab: Der Anteil der Mütter, die ihre Rechnungen immer pünktlich zahlten, stieg von 25 % auf 56 %, der Anteil mit „sehr großem“ finanziellem Stress sank von 41 % auf 20 %, und der Anteil Erwerbstätiger stieg von 28 % auf 45 %",
+        "ar": "أفاد تقييم ⁦Social Insights Research⁩ للدفعة الرابعة (مايو 2022 – أبريل 2023؛ استطلاع 86 من 87 أمًّا في البداية والنهاية، دون مجموعة مقارنة) بأن نسبة الأمهات اللواتي يدفعن فواتيرهن في موعدها دائمًا ارتفعت من 25% إلى 56%، وانخفضت نسبة من يعانين ضغطًا ماليًا «كبيرًا جدًا» من 41% إلى 20%، وارتفعت نسبة العاملات من 28% إلى 45%"
       },
       "source": "https://springboardto.org/magnolia-mothers-trust/",
       "source2": "https://www.pbs.org/newshour/amp/show/in-mississippi-a-long-running-guaranteed-income-program-is-helping-black-mothers",
+      "source3": "https://springboardto.org/report/mmt-4th-cohort-full-report/",
       "us": {
         "city": "Jackson",
         "state": "MS",
@@ -12615,7 +12616,12 @@ module.exports = {
         "funders": ["philanthropic"],
         "control": false,
         "elig": "Low-income Black mothers in Jackson; the first cohort was limited to working Black mothers in subsidized housing, chosen by lottery",
-        "eval": null
+        "eval": {
+          "by": "Social Insights Research (Stephanie Campos, Christyl Wilson Ebba, Nidal Karim and Sashana Rowe-Harriott), for Springboard to Opportunities",
+          "year": 2024,
+          "type": "program report",
+          "url": "https://springboardto.org/report/mmt-4th-cohort-full-report/"
+        }
       }
     },
     {
@@ -25236,7 +25242,7 @@ module.exports = {
           ],
           [
             "p",
-            "Our {table of US guaranteed income pilots|/pilots/us/} lists 101 programmes; the median pays $500 a month. 53 have a published evaluation, and 34 of those compared recipients with a control or comparison group. 18 of the 34 report a result on work.[1]"
+            "Our {table of US guaranteed income pilots|/pilots/us/} lists 101 programmes; the median pays $500 a month. 54 have a published evaluation, and 34 of those compared recipients with a control or comparison group. 18 of the 34 report a result on work.[1]"
           ],
           [
             "p",
@@ -25410,7 +25416,7 @@ module.exports = {
           ],
           [
             "p",
-            "{アメリカの保証所得の試みの一覧|/pilots/us/}には101件が載っていて、支給額の中央値は月500ドルです。評価が公表されているのは53件、そのうち対照群や比較グループと比べたのは34件。34件のうち18件が、仕事についての結果を報告しています。[1]"
+            "{アメリカの保証所得の試みの一覧|/pilots/us/}には101件が載っていて、支給額の中央値は月500ドルです。評価が公表されているのは54件、そのうち対照群や比較グループと比べたのは34件。34件のうち18件が、仕事についての結果を報告しています。[1]"
           ],
           [
             "p",
@@ -25584,7 +25590,7 @@ module.exports = {
           ],
           [
             "p",
-            "我们的{美国保障收入试点一览|/pilots/us/}收录了101个项目，发放额中位数为每月500美元。其中53个有已发表的评估，34个与对照组或比较组做了比较；这34个中有18个报告了工作方面的结果。[1]"
+            "我们的{美国保障收入试点一览|/pilots/us/}收录了101个项目，发放额中位数为每月500美元。其中54个有已发表的评估，34个与对照组或比较组做了比较；这34个中有18个报告了工作方面的结果。[1]"
           ],
           [
             "p",
@@ -25758,7 +25764,7 @@ module.exports = {
           ],
           [
             "p",
-            "हमारी {अमेरिकी गारंटीड इनकम पायलटों की तालिका|/pilots/us/} में 101 कार्यक्रम हैं; मध्य राशि हर महीने $500 है। 53 का मूल्यांकन प्रकाशित है, और उनमें से 34 ने पाने वालों की तुलना कंट्रोल या तुलना समूह से की। इन 34 में से 18 काम पर नतीजा बताते हैं।[1]"
+            "हमारी {अमेरिकी गारंटीड इनकम पायलटों की तालिका|/pilots/us/} में 101 कार्यक्रम हैं; मध्य राशि हर महीने $500 है। 54 का मूल्यांकन प्रकाशित है, और उनमें से 34 ने पाने वालों की तुलना कंट्रोल या तुलना समूह से की। इन 34 में से 18 काम पर नतीजा बताते हैं।[1]"
           ],
           [
             "p",
@@ -25932,7 +25938,7 @@ module.exports = {
           ],
           [
             "p",
-            "Nuestra {tabla de pilotos de ingreso garantizado en EE. UU.|/pilots/us/} recoge 101 programas; la mediana paga 500 $ al mes. 53 tienen una evaluación publicada, y 34 de ellos compararon a los receptores con un grupo de control o de comparación. 18 de esos 34 dan un resultado sobre el trabajo.[1]"
+            "Nuestra {tabla de pilotos de ingreso garantizado en EE. UU.|/pilots/us/} recoge 101 programas; la mediana paga 500 $ al mes. 54 tienen una evaluación publicada, y 34 de ellos compararon a los receptores con un grupo de control o de comparación. 18 de esos 34 dan un resultado sobre el trabajo.[1]"
           ],
           [
             "p",
@@ -26106,7 +26112,7 @@ module.exports = {
           ],
           [
             "p",
-            "Unsere {Tabelle der US-Pilotprojekte zum garantierten Einkommen|/pilots/us/} führt 101 Programme; der Median zahlt 500 $ im Monat. 53 haben eine veröffentlichte Auswertung, 34 davon verglichen die Empfänger mit einer Kontroll- oder Vergleichsgruppe. 18 dieser 34 berichten ein Ergebnis zur Arbeit.[1]"
+            "Unsere {Tabelle der US-Pilotprojekte zum garantierten Einkommen|/pilots/us/} führt 101 Programme; der Median zahlt 500 $ im Monat. 54 haben eine veröffentlichte Auswertung, 34 davon verglichen die Empfänger mit einer Kontroll- oder Vergleichsgruppe. 18 dieser 34 berichten ein Ergebnis zur Arbeit.[1]"
           ],
           [
             "p",
@@ -26280,7 +26286,7 @@ module.exports = {
           ],
           [
             "p",
-            "يضم {جدولنا لتجارب الدخل المضمون في الولايات المتحدة|/pilots/us/} 101 برنامج، والوسيط يدفع ⁦$500⁩ شهريًا. لـ53 منها تقييم منشور، وقارن 34 من هذه المستفيدين بمجموعة ضابطة أو مجموعة مقارنة. ومن هذه الـ34، تذكر 18 نتيجة عن العمل.[1]"
+            "يضم {جدولنا لتجارب الدخل المضمون في الولايات المتحدة|/pilots/us/} 101 برنامج، والوسيط يدفع ⁦$500⁩ شهريًا. لـ54 منها تقييم منشور، وقارن 34 من هذه المستفيدين بمجموعة ضابطة أو مجموعة مقارنة. ومن هذه الـ34، تذكر 18 نتيجة عن العمل.[1]"
           ],
           [
             "p",

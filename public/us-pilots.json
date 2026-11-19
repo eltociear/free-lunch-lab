@@ -49,10 +49,16 @@
       ],
       "controlGroup": false,
       "operatorType": "nonprofit or research",
-      "evaluation": null,
+      "evaluation": {
+        "by": "Social Insights Research (Stephanie Campos, Christyl Wilson Ebba, Nidal Karim and Sashana Rowe-Harriott), for Springboard to Opportunities",
+        "year": 2024,
+        "type": "program report",
+        "url": "https://springboardto.org/report/mmt-4th-cohort-full-report/"
+      },
       "sources": [
         "https://springboardto.org/magnolia-mothers-trust/",
-        "https://www.pbs.org/newshour/amp/show/in-mississippi-a-long-running-guaranteed-income-program-is-helping-black-mothers"
+        "https://www.pbs.org/newshour/amp/show/in-mississippi-a-long-running-guaranteed-income-program-is-helping-black-mothers",
+        "https://springboardto.org/report/mmt-4th-cohort-full-report/"
       ],
       "pageUrl": "https://neteru-nyukin.eltociear.workers.dev/timeline/#tl-us-jackson-magnolia",
       "text": {
@@ -60,43 +66,43 @@
           "place": "Jackson, Mississippi, USA",
           "operator": "Springboard to Opportunities, a Jackson nonprofit, funded by private donors; it launched with $300,000 from the Economic Security Project and a private donor",
           "paid": "$1,000 a month with no conditions for 12 months to low-income Black mothers in Jackson, plus $1,000 into a college savings account per child; it began in 2018 with 20 mothers, and over 550 mothers have been paid across six cohorts",
-          "result": "No published evaluation yet"
+          "result": "Social Insights Research’s evaluation of the fourth cohort (May 2022–April 2023; 86 of 87 mothers surveyed at the start and end, no comparison group) reported that the share of mothers who always paid their bills on time rose from 25% to 56%, those reporting “a great deal” of financial stress fell from 41% to 20%, and the share employed rose from 28% to 45%"
         },
         "ja": {
           "place": "アメリカ・ミシシッピ州ジャクソン",
           "operator": "ジャクソンの非営利団体Springboard to Opportunities。財源は個人の寄付で、Economic Security Projectと個人の寄付者からの30万ドルで始まった",
           "paid": "ジャクソンの低所得の黒人の母親に、条件なしで月1,000ドルを12か月と、子ども1人につき大学貯蓄口座に1,000ドル。2018年に母親20人で始まり、6期で550人超の母親に支給",
-          "result": "評価はまだ公表されていない"
+          "result": "Social Insights Researchによる第4期（2022年5月〜2023年4月）の評価（母親87人中86人の開始時と終了時の調査、比較群なし）は、請求書をいつも期限内に払えた母親が25%から56%に増え、お金のストレスが「非常に大きい」人は41%から20%に減り、働いている人は28%から45%に増えたと報告"
         },
         "zh": {
           "place": "美国密西西比州杰克逊",
           "operator": "杰克逊非营利组织 Springboard to Opportunities，资金来自私人捐助者；以经济安全项目（Economic Security Project）和一位私人捐助者提供的 30 万美元启动",
           "paid": "向杰克逊的低收入黑人母亲无条件每月发放 1,000 美元，为期 12 个月，并为每个孩子向大学储蓄账户存入 1,000 美元；2018 年从 20 名母亲开始，六批共向 550 多名母亲发放",
-          "result": "尚未发布评估"
+          "result": "Social Insights Research 对第四批（2022年5月至2023年4月）的评估（87名母亲中86人在开始和结束时接受调查，无对照组）报告：总能按时付账单的母亲从25%升至56%，财务压力“非常大”的从41%降至20%，有工作的从28%升至45%"
         },
         "hi": {
           "place": "जैक्सन, मिसिसिपी, अमेरिका",
           "operator": "Springboard to Opportunities, जैक्सन की एक ग़ैर-लाभकारी संस्था, निजी दानदाताओं के पैसे से; इसकी शुरुआत Economic Security Project और एक निजी दानदाता के $3 लाख से हुई",
           "paid": "जैक्सन की कम आय वाली अश्वेत माताओं को 12 महीने तक बिना शर्त हर महीने $1,000, साथ ही हर बच्चे के कॉलेज बचत खाते में $1,000; 2018 में 20 माताओं से शुरू हुआ, और छह समूहों में 550 से ज़्यादा माताओं को भुगतान मिल चुका है",
-          "result": "अभी कोई प्रकाशित मूल्यांकन नहीं"
+          "result": "Social Insights Research के चौथे समूह (मई 2022–अप्रैल 2023; 87 में से 86 माताओं का शुरुआत और अंत में सर्वे, कोई तुलना समूह नहीं) के मूल्यांकन के मुताबिक़ हमेशा समय पर बिल भरने वाली माताओं का हिस्सा 25% से 56% हुआ, \"बहुत ज़्यादा\" आर्थिक तनाव बताने वाली 41% से घटकर 20% रह गईं, और काम करने वालों का हिस्सा 28% से 45% हुआ"
         },
         "es": {
           "place": "Jackson, Misisipi (EE. UU.)",
           "operator": "Springboard to Opportunities, una organización sin ánimo de lucro de Jackson, financiado por donantes privados; arrancó con 300.000 $ del Economic Security Project y de un donante privado",
           "paid": "1.000 $ al mes sin condiciones durante 12 meses para madres negras de bajos ingresos de Jackson, más 1.000 $ en una cuenta de ahorro universitario por hijo; empezó en 2018 con 20 madres, y más de 550 madres han cobrado a lo largo de seis cohortes",
-          "result": "Aún no hay evaluación publicada"
+          "result": "La evaluación de la cuarta cohorte por Social Insights Research (mayo de 2022 a abril de 2023; 86 de 87 madres encuestadas al inicio y al final, sin grupo de comparación) informó de que la parte de madres que siempre pagaban sus facturas a tiempo pasó del 25 % al 56 %, las que declaraban «mucho» estrés financiero bajaron del 41 % al 20 % y la parte con empleo subió del 28 % al 45 %"
         },
         "de": {
           "place": "Jackson, Mississippi (USA)",
           "operator": "Springboard to Opportunities, eine gemeinnützige Organisation in Jackson, finanziert von privaten Spendern; gestartet mit 300.000 $ vom Economic Security Project und einem privaten Spender",
           "paid": "1.000 $ im Monat ohne Bedingungen für 12 Monate an einkommensschwache schwarze Mütter in Jackson, dazu 1.000 $ pro Kind auf ein College-Sparkonto; Beginn 2018 mit 20 Müttern, inzwischen haben über 550 Mütter in sechs Kohorten Zahlungen erhalten",
-          "result": "Noch keine veröffentlichte Auswertung"
+          "result": "Die Auswertung der vierten Kohorte durch Social Insights Research (Mai 2022 bis April 2023; 86 von 87 Müttern zu Beginn und am Ende befragt, ohne Vergleichsgruppe) ergab: Der Anteil der Mütter, die ihre Rechnungen immer pünktlich zahlten, stieg von 25 % auf 56 %, der Anteil mit „sehr großem“ finanziellem Stress sank von 41 % auf 20 %, und der Anteil Erwerbstätiger stieg von 28 % auf 45 %"
         },
         "ar": {
           "place": "جاكسون، ميسيسيبي، الولايات المتحدة",
           "operator": "Springboard to Opportunities، منظمة غير ربحية في جاكسون، بتمويل من متبرعين خاصين؛ وانطلقت بـ$300,000 من Economic Security Project ومتبرع خاص",
           "paid": "$1,000 شهريًا بلا شروط لمدة 12 شهرًا لأمهات سود منخفضات الدخل في جاكسون، إضافة إلى $1,000 في حساب ادخار جامعي لكل طفل؛ بدأ في 2018 مع 20 أمًّا، وتلقت أكثر من 550 أمًّا الدفعات عبر ست دفعات",
-          "result": "لا يوجد تقييم منشور بعد"
+          "result": "أفاد تقييم Social Insights Research للدفعة الرابعة (مايو 2022 – أبريل 2023؛ استطلاع 86 من 87 أمًّا في البداية والنهاية، دون مجموعة مقارنة) بأن نسبة الأمهات اللواتي يدفعن فواتيرهن في موعدها دائمًا ارتفعت من 25% إلى 56%، وانخفضت نسبة من يعانين ضغطًا ماليًا «كبيرًا جدًا» من 41% إلى 20%، وارتفعت نسبة العاملات من 28% إلى 45%"
         }
       }
     },
