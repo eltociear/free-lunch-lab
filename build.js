@@ -2,7 +2,7 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const path = require('path');
-const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, DATASETS = [], GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, HOUSEHOLD, CORRECTIONS = [] } = require('./src/data.js');
+const { SITE_URL, LANGS, DEFAULT_LANG, SERVICES, PICKS, NEWS, CATS, T, ORGS, ORG_GROUPS, ORG_REGIONS, ORG_PREVIEW, GRAVE, VERIFY, VERIFY_ORDER, TIMELINE, ESSAYS, OSS_GROUPS, OSS_PREVIEW, OPEN_DATA, DATASETS = [], GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, HOUSEHOLD, CORRECTIONS = [], WRP } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
 const { ranking: rankingOf, TIERS: RANK_TIERS, POINTS: RANK_POINTS, MAX: RANK_MAX, FRESH_MONTHS: RANK_FRESH_MONTHS } = require('./src/ranking.js');
 const calcJs = require('./src/calc.js');
@@ -73,7 +73,7 @@ const essayPath = (l, e) => `${essaysPath(l)}${e.id}/`;
 const essayAbs = (l, e) => SITE_URL + essayPath(l, e);
 // エッセイ本文の {文字|/path/} はサイト内リンク（言語の接頭辞は自動で付く）。/essays/{id}/ への参照と related は実在を確かめる
 const ESSAY_LINK = /\{([^{}|]+)\|(\/[^{}\s]*)\}/g;
-const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayOpinion', 'essayOpLabel', 'essayOpNote', 'essaySources', 'essayPublished', 'essayRelated', 'essayRelatedH', 'essayToc', 'essayRead', 'essayBack'];
+const ESSAY_KEYS = ['essaysTitle', 'essaysDesc', 'essayBy', 'essayUpdated', 'essayOpinion', 'essayOpLabel', 'essayOpNote', 'essaySources', 'essayPublished', 'essayRelated', 'essayRelatedH', 'essayToc', 'essayRead', 'essayBack'];
 for (const k of ['essayRelatedH', 'essayToc', 'essayRead', 'essayBack', 'essayTableHint', 'backHome', 'backQuiz', 'backSvc', 'backVerify', 'embedPrivacy']) if (/[\u3000-\u9fff\u2066-\u2069]/.test(T.hi[k])) throw new Error(`hi.${k}: CJK or isolate characters`);
 for (const l of LANGS) for (const k of ESSAY_KEYS) if (!T[l][k]) throw new Error(`missing ${l}.${k}`);
 // kind: 'opinion' は論考（結論が筆者の意見のエッセイ）。見出しの上に札、署名の下に一行の注、一覧にも札を出す。ほかのエッセイは「数字だけ、主張なし」
@@ -1938,20 +1938,21 @@ function essayPage(e, lang) {
       { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
       { '@type': 'ListItem', position: 2, name: L.essaysTitle, item: essaysAbs(lang) },
       { '@type': 'ListItem', position: 3, name: ttl, item: url } ] },
-    { '@context': 'https://schema.org', '@type': e.kind === 'opinion' ? 'OpinionNewsArticle' : 'Article', headline: ttl, description: desc, inLanguage: LANG_TAG[lang], datePublished: e.date, dateModified: e.date,
+    { '@context': 'https://schema.org', '@type': e.kind === 'opinion' ? 'OpinionNewsArticle' : 'Article', headline: ttl, description: desc, inLanguage: LANG_TAG[lang], datePublished: e.date, dateModified: e.updated || e.date,
       author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
       mainEntityOfPage: url, image: ogImage(`essay/${lang}/${e.id}.jpg`), timeRequired: `PT${mins}M` },
   ];
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li><a href="${essaysPath(lang)}">${esc(L.essaysTitle)}</a></li><li aria-current="page">${esc(ttl)}</li></ol></nav>
 <main class="essay${tocSide ? ' has-toc' : ''}">
 <article class="es-main">
-<header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}${opKind(lang, e)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time> · <span class="es-read">${esc(essayReadLabel(lang, mins))}</span></p>${e.kind === 'opinion' ? `<p class="es-opnote">${esc(L.essayOpNote)}</p>` : ''}
+<header class="orgs-head"><p class="eyebrow">${esc(L.ebEssay)}${opKind(lang, e)}</p><h1>${esc(ttl)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${e.date}">${esc(L.essayPublished)} ${esc(longDate(e.date, lang))}</time>${e.updated ? ` · <time datetime="${e.updated}">${esc(L.essayUpdated)} ${esc(longDate(e.updated, lang))}</time>` : ''} · <span class="es-read">${esc(essayReadLabel(lang, mins))}</span></p>${e.kind === 'opinion' ? `<p class="es-opnote">${esc(L.essayOpNote)}</p>` : ''}
 ${shareRow(lang, ttl, url, { compact: true, mk: k => `${url}?s=${k}` })}</header>
 ${tocTop}<div class="essay-body">${blocks}</div>
 ${channelShare(lang, ttl, k => `${url}?s=${k}`, { primary: L.calcShareX, tag: T[lang].calcTag, label: L.essayShare, id: 'share' })}
 ${essayDataLinks(lang, e)}
 ${essayRelatedCards(lang, essayList(e.related))}
 ${GUIDES.filter(g => g.essay === e.id).map(g => guideLink(lang, g, 'related g-rel')).join('')}
+${(WRP.essays || []).includes(e.id) ? `<p class="related g-rel"><a href="${wrpPath(lang)}?s=essay-wrp">${esc(WRP[lang].essayLink)} ${RTL.has(lang) ? '←' : '→'}</a></p>` : ''}
 ${qzCard(lang, 'essay-quiz')}
 <section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
 </article>
@@ -2063,6 +2064,7 @@ function aboutPage(lang) {
     [tlPath(lang), L.tlTitle, cfill(L.abTl, { n: TIMELINE.length })],
     [calcPath(lang), L.calcTitle, cfill(L.abCalc, { n: CALC_WORLD.length }), [calcIdxPath(lang), cfill(L.calcIdxLink, { n: CALC_WORLD.length })]],
     [hhPath(lang), L.hhTitle, L.abHh],
+    [wrpPath(lang), WRP[lang].short, WRP[lang].about],
     [embedPath(lang), L.abEmbedL, L.abEmbed],
     [biNewsPath(lang), L.biNewsTitle, L.abNews, [biNewsFeedPath(lang), L.abNewsRss]],
   ];
@@ -2400,11 +2402,162 @@ function hhPage(lang) {
 <section class="g-sec cx-note hh-as"><h2>${esc(L.hhAssumeH)}</h2><ul>${['hhA1', 'hhA2', 'hhA3', 'hhA4', 'hhA5', 'hhA6', 'hhTax'].map(k => `<li>${esc(L[k])}</li>`).join('')}</ul></section>
 <section class="g-sec hh-src"><h2>${esc(L.hhSrcH)}</h2><ol><li><a href="${essayPath(lang, HH_ESSAY)}">${esc(HH_ESSAY.title[lang])}</a></li>${src}</ol></section>
 <p class="cx-idx"><a href="${calcPath(lang)}">${esc(L.hhCalcLink)} ${rtl ? '←' : '→'}</a></p>
+<p class="cx-idx"><a href="${wrpPath(lang)}?s=hh-wrp">${esc(WRP[lang].hhBack)} ${rtl ? '←' : '→'}</a></p>
 <p class="back"><a class="btn line" href="${calcPath(lang)}">${rtl ? '→' : '←'} ${esc(L.calcTitle)}</a></p>
 </main>`;
   const script = `<script>(function(){var D=${jsonScript(HH_DATA[lang])},L=${jsonScript(HH_L(lang))},LANG=${JSON.stringify(lang)};${hhJs.CLIENT}${hhJs.BOOT}})()</script>`;
   return shell(lang, { title: `${L.hhH1} | ${L.title}`, desc: clip(L.hhDesc, lang), hrefFor: hhAbs, pathFor: hhPath, ld, ogType: 'website', body, script, image: ogImage(`hh/${lang}/index.jpg`), extraHead: HH_CSS + '\n' });
 }
+
+// ---- 就業者負担軽減支援金（/guides/worker-relief-payment/）。「いつ・いくら・誰が・どうやって」に答える常設のページ。情報が出るたびに足していく
+// 中身は WRP（data.js）、数字は data/worker-relief-2026.json（事実ごとに出典・日付・確認日・status）。最終更新日（updated）と更新履歴（log）を出すので、内容を足したら両方とも足す。
+// status は decided（法案・大綱に書いてある）、considering（政府が検討中と答弁）、reported（報道された案）、open（まだ決まっていない）。
+// 計算機は src/worker-relief.js（ブラウザとビルド時の照合が同じコード）。金額と税率はデータファイルから渡し、コードには書かない
+const wrJs = require('./src/worker-relief.js');
+const wrpPath = l => `${urlPath(l)}guides/${WRP.id}/`;
+const wrpAbs = l => SITE_URL + wrpPath(l);
+const WRF = require('./data/worker-relief-2026.json');
+const WR_STATUS = ['decided', 'considering', 'reported', 'open'];
+const WR_DAY = /^\d{4}-\d\d-\d\d$/;
+const WR_FIELDS = ['title', 'short', 'eb', 'desc', 'asOf', 'lead', 'answerH', 'answer', 'legend', 'openH', 'open', 'toc', 'sections', 'timelineH', 'timeline', 'faqH', 'faq', 'calcH', 'calcIntro', 'calc', 'relatedH', 'related', 'logH', 'updatedL', 'statusL', 'essayLink', 'hhLink', 'hhBack', 'about'];
+const WR_CALC_KEYS = ['family', 'workers', 'workersHint', 'kids', 'kidsHint', 'others', 'othersHint', 'food', 'foodL', 'foodHint', 'minus', 'plus', 'resEb', 'status', 'year', 'totalSub', 'payH', 'payF', 'payNote', 'foodH', 'foodF', 'foodNote', 'totalH', 'biH', 'biRow', 'biF', 'biNote', 'noJs'];
+const WRF_BY = Object.fromEntries(WRF.facts.map(f => [f.id, f]));
+// calc の値は事実の id か comparison.{key}（比較の行だけに使う、政策ではない数字）
+const wrVal = k => (k.startsWith('comparison.') ? WRF.comparison[k.slice(11)] : (WRF_BY[k] || {}).value);
+{
+  if (!WR_DAY.test(WRP.published || '') || !WR_DAY.test(WRP.updated || '') || !WRP.log || !WRP.log.length) throw new Error('WRP: needs published, updated (YYYY-MM-DD) and a log');
+  if (WRP.log[0].date !== WRP.updated) throw new Error(`WRP: the newest log entry must have the date of updated (${WRP.updated})`);
+  WRP.log.forEach((x, i) => { if (i && WRP.log[i - 1].date < x.date) throw new Error(`WRP log ${x.date}: not newest first`); });
+  for (const id of WRP.essays || []) if (!ESSAYS.some(e => e.id === id)) throw new Error(`WRP: unknown essay ${id}`);
+  for (const f of WRF.facts) {
+    if (!f.source || !f.asOf || !(f.date || f.period) || !WR_STATUS.includes(f.status)) throw new Error(`worker-relief-2026.json ${f.id}: needs a source, asOf, a date or period and a status (${WR_STATUS.join('/')})`);
+    if (f.asOf > WRP.updated) throw new Error(`worker-relief-2026.json ${f.id}: checked after the page's updated date`);
+  }
+  for (const k of Object.values(WRF.calc)) if (typeof wrVal(k) !== 'number') throw new Error(`worker-relief-2026.json calc: unknown fact ${k}`);
+  for (const l of LANGS) {
+    const W = WRP[l];
+    if (!W) throw new Error(`WRP: missing ${l}`);
+    for (const f of WR_FIELDS) if (!W[f] || (Array.isArray(W[f]) && !W[f].length)) throw new Error(`WRP: missing ${l}.${f}`);
+    for (const k of WR_CALC_KEYS) if (typeof W.calc[k] !== 'string' || !W.calc[k]) throw new Error(`WRP: missing ${l}.calc.${k}`);
+    for (const k of WR_STATUS) if (!W.statusL[k]) throw new Error(`WRP: missing ${l}.statusL.${k}`);
+    for (const x of WRP.log) if (!x[l]) throw new Error(`WRP: log ${x.date} missing ${l}`);
+    if (W.answer.length !== WRP.ja.answer.length || W.timeline.length !== WRP.ja.timeline.length || W.sections.length !== WRP.ja.sections.length || W.faq.length !== WRP.ja.faq.length) throw new Error(`WRP.${l}: answer, timeline, sections or faq differ in length from ja`);
+    W.answer.forEach((a, i) => { if (a[2] !== WRP.ja.answer[i][2] || !WR_STATUS.includes(a[2])) throw new Error(`WRP.${l}.answer ${i}: status must match ja`); });
+    W.timeline.forEach((t, i) => { if (t[0] !== WRP.ja.timeline[i][0]) throw new Error(`WRP.${l}.timeline ${i}: date must match ja`); });
+    W.sections.forEach((s, i) => { if (s[0] !== WRP.ja.sections[i][0]) throw new Error(`WRP.${l}.sections ${i}: id must match ja`); });
+    const refs = JSON.stringify(W).match(/\[(\d+)\]/g) || [];
+    for (const r of refs) if (!WRP.sources.some(x => `[${x.n}]` === r)) throw new Error(`WRP.${l}: unknown source ${r}`);
+    for (const m of JSON.stringify(W).matchAll(ESSAY_LINK)) if (!/^\/(essays|calc|guides|timeline|data|pilots)\//.test(m[2])) throw new Error(`WRP.${l}: odd link ${m[2]}`);
+    // hi はひらがな・漢字や isolate の字を入れない。ar はラテン文字（と $・¥）を LRI/PDI で囲む（エッセイと同じ。{n} などの差し込みと {文|/path} のリンク先は除く）
+    const strs = []; (function walk(v) { if (typeof v === 'string') strs.push(v); else if (v && typeof v === 'object') Object.values(v).forEach(walk); })(W);
+    if (l === 'hi') for (const t of strs) if (/[　-鿿＀-￯⁦-⁩]/.test(t)) throw new Error(`WRP.hi: CJK or isolate characters: ${t.slice(0, 60)}`);
+    if (l === 'ar') for (const t of strs) if (/[A-Za-z$¥]/.test(t.replace(ESSAY_LINK, '$1').replace(/\{\w+\}/g, '').replace(/\[\d+\]/g, '').replace(/⁦[^⁩]*⁩/g, '').replace(/^(decided|considering|reported|open|wr-[a-z-]+)$/, '').replace(/^\/[a-z0-9\/?=&.-]*$/, ''))) throw new Error(`WRP.ar: Latin letters or digits outside LRI/PDI: ${t.slice(0, 60)}`);
+  }
+}
+// 計算機に渡す数字（data/worker-relief-2026.json の calc が指す事実の値）と、言語ごとの書式（わが家のBI計算機と同じ HOUSEHOLD.fmt）
+const WR_D = Object.fromEntries(LANGS.map(l => [l, { def: WRP.def, fmt: HOUSEHOLD.fmt[l], ...Object.fromEntries(Object.entries(WRF.calc).map(([k, id]) => [k, wrVal(id)])) }]));
+const WR_CTX = Object.fromEntries(LANGS.map(l => [l, wrJs.context(l, WR_D[l], WRP[l].calc)]));
+// ビルド時の照合: 計算機の結果を、データファイルの数字から別に計算した値とくらべる（入力の組み合わせをいくつか）
+{
+  const v = id => wrVal(WRF.calc[id]), bad = [];
+  for (const w of [0, 1, 2, 3]) for (const c of [0, 1, 4]) for (const o of [0, 2]) for (const f of [0, 1, 45000, 83333]) {
+    const r = WR_CTX.en.calc({ w, c, o, f });
+    const pay = v('perWorker') * w + v('perChild') * c, food = Math.round(f * 12 * (v('rateNow') - v('rateCut')) / (100 + v('rateNow'))), bi = v('bi') * 12 * (w + c + o);
+    if (r.pay !== pay || r.food !== food || r.total !== pay + food || r.bi !== bi) bad.push(JSON.stringify({ w, c, o, f, r }));
+  }
+  if (bad.length) throw new Error(`worker relief calculator differs from data/worker-relief-2026.json: ${bad.slice(0, 3).join('; ')}`);
+  if (/\b(25000|5000|108)\b|\b[0-9] ?\/ ?108/.test(wrJs.CLIENT)) throw new Error('src/worker-relief.js: amounts and rates come from data/worker-relief-2026.json, not the code');
+}
+const WR_CSS = `<style>
+.wr-ans{display:grid;gap:0;margin-top:8px;border:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));border-inline-start:4px solid var(--gold);border-radius:14px;background:var(--surface);overflow:hidden}
+.wr-ans>h2{margin:0;padding:14px 16px 4px;font-family:var(--f-body);font-weight:700;font-size:1.1rem;color:var(--gold)}
+.wr-ans dl{margin:0;display:grid}
+.wr-ans dl div{display:grid;grid-template-columns:minmax(6em,22%) 1fr;gap:4px 14px;padding:12px 16px;border-top:1px solid var(--line)}
+.wr-ans dl div:first-child{border-top:0}
+.wr-ans dt{font-weight:700;font-size:.95rem}
+.wr-ans dd{margin:0;font-size:.95rem;line-height:1.75;min-width:0;overflow-wrap:anywhere}
+@media (max-width:520px){.wr-ans dl div{grid-template-columns:1fr}}
+.wr-st{display:inline-block;margin-inline-start:6px;padding:0 8px;border-radius:999px;border:1px solid currentColor;font-size:.72rem;font-weight:700;line-height:1.7;white-space:nowrap;vertical-align:.1em}
+.wr-st.decided{color:var(--pos)}.wr-st.considering{color:var(--amber)}.wr-st.reported{color:var(--muted)}.wr-st.open{color:var(--stamp)}
+.wr-open{margin:0;padding:12px 16px 16px;border-top:1px solid var(--line);display:grid;gap:6px}
+.wr-open h3{margin:0;font-family:var(--f-body);font-weight:700;font-size:.95rem;color:var(--stamp)}
+.wr-open ul{margin:0;padding-inline-start:1.2em;display:grid;gap:4px;font-size:.92rem;line-height:1.7}
+.wr-asof{margin:0;font-size:.84rem;color:var(--muted)}
+.wr-legend{margin:0;font-size:.8125rem;line-height:1.9;color:var(--muted)}
+.wr .tl-when .wr-st{margin-inline-start:8px}
+.wr .hh-form{margin-top:4px}
+.wr .cx-res{margin-top:4px}
+.wr .wr-ans{padding:0;margin-top:16px}
+</style>`;
+function wrpPage(lang) {
+  const L = T[lang], W = WRP[lang], C = W.calc, X = WR_CTX[lang], home = urlPath(lang), url = wrpAbs(lang), rtl = RTL.has(lang), arrow = rtl ? '←' : '→';
+  const seen = new Set();
+  const fn = t => esc(t).replace(ESSAY_LINK, (_, txt, href) => `<a href="${urlPath(lang)}${href.slice(1)}">${txt}</a>`).replace(/\[(\d+)\]/g, (_, n) => { const first = !seen.has(n); seen.add(n); return `<sup class="fnref"><a href="#fn-${n}"${first ? ` id="ref-${n}"` : ''}>${n}</a></sup>`; });
+  const plain = t => String(t).replace(ESSAY_LINK, '$1').replace(/\s*\[\d+\]/g, '').trim();
+  const chip = k => k ? `<span class="wr-st ${k}">${esc(W.statusL[k])}</span>` : '';
+  const sec = (id, h, inner) => `<section class="g-sec" id="${id}"><h2>${esc(h)}</h2>${inner}</section>`;
+  const s0 = X.parse({});
+  const essays = (WRP.essays || []).map(id => ESSAYS.find(e => e.id === id));
+  const ld = [
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
+      { '@type': 'ListItem', position: 2, name: W.short, item: url } ] },
+    { '@context': 'https://schema.org', '@type': 'Article', headline: W.title, description: W.desc, inLanguage: LANG_TAG[lang], datePublished: WRP.published, dateModified: WRP.updated,
+      author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
+      mainEntityOfPage: url, image: ogImage(`guide/${lang}/${WRP.id}.jpg`), isBasedOn: `${SITE_URL}/worker-relief-2026.json` },
+    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: W.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: plain(a) } })) },
+  ];
+  const toc = [...W.sections.map(([id, h]) => [id, h]), ['wr-calc', W.calcH], ['wr-dates', W.timelineH], ['wr-faq', W.faqH], ['wr-log', W.logH]];
+  const sources = WRP.sources.map(x => `<li id="fn-${x.n}"><a href="${esc(x.url)}" target="_blank" rel="noopener" dir="auto">${esc(typeof x.label === 'string' ? x.label : (x.label[lang] || x.label.en))}</a> <a class="fnback" href="#ref-${x.n}" aria-label="↩">↩</a></li>`).join('');
+  const related = [
+    ...essays.map(e => [essayPath(lang, e) + '?s=wrp', e.title[lang] || e.title.en]),
+    ...W.related.map(([href, text]) => [`${urlPath(lang)}${href.slice(1)}`, text]),
+  ];
+  const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(W.short)}</li></ol></nav>
+<main class="guide wr">
+<article>
+<header class="orgs-head"><p class="eyebrow">${esc(W.eb)}</p><h1>${esc(W.title)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${WRP.updated}">${esc(W.updatedL)} ${esc(longDate(WRP.updated, lang))}</time></p><p class="wr-asof">${esc(W.asOf)}</p>
+${shareRow(lang, W.title, url, { compact: true, mk: k => `${url}?s=${k}` })}</header>
+<section class="wr-ans" id="wr-answer" aria-labelledby="wr-ans-h"><h2 id="wr-ans-h">${esc(W.answerH)}</h2><dl>${W.answer.map(([k, v, st]) => `<div><dt>${esc(k)}</dt><dd>${fn(v)}${chip(st)}</dd></div>`).join('')}</dl>
+<div class="wr-open"><h3>${esc(W.openH)}</h3><ul>${W.open.map(x => `<li>${fn(x)}</li>`).join('')}</ul></div></section>
+<p class="wr-legend">${WR_STATUS.map(k => chip(k)).join(' ')} ${esc(W.legend)}</p>
+<section class="g-sum" aria-label="${esc(W.short)}">${W.lead.map(p => `<p>${fn(p)}</p>`).join('')}</section>
+<nav class="org-toc g-toc" aria-label="${esc(W.toc)}">${toc.map(([id, h]) => `<a href="#${id}">${esc(h)}</a>`).join('')}</nav>
+${W.sections.map(([id, h, paras]) => sec(id, h, paras.map(p => Array.isArray(p) ? `<ul class="g-list">${p.map(x => `<li>${fn(x)}</li>`).join('')}</ul>` : `<p>${fn(p)}</p>`).join(''))).join('\n')}
+<section class="g-sec" id="wr-calc"><h2>${esc(W.calcH)}</h2><p>${fn(W.calcIntro)}</p>
+<noscript><p class="hh-nojs">${esc(C.noJs)}</p></noscript>
+<form class="cx-form hh-form" id="wr" onsubmit="return false"><div class="hh-ctl" id="wrCtl">${X.controls(s0)}</div></form>
+<p class="hh-sr" id="wrLive" aria-live="polite"></p>
+<section class="cx-res hh-res" id="wrRes">${X.result(s0)}</section>
+<p class="cx-idx"><a href="${hhPath(lang)}?s=wrp-calc">${esc(W.hhLink)} ${arrow}</a></p></section>
+${sec('wr-dates', W.timelineH, `<ol class="tl g-tl">${W.timeline.map(([iso, when, t, st]) => `<li class="tl-item"><div class="tl-when"><time${/^\d{4}(-\d\d(-\d\d)?)?$/.test(iso) ? ` datetime="${iso}"` : ''}>${esc(when)}</time>${chip(st)}</div><p>${fn(t)}</p></li>`).join('')}</ol>`)}
+${sec('wr-faq', W.faqH, `<div class="faq">${W.faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${fn(a)}</p></details>`).join('')}</div>`)}
+<section class="g-sec" id="wr-related"><h2>${esc(W.relatedH)}</h2><ul class="g-list">${related.map(([href, t]) => `<li><a href="${href}">${esc(t)}</a></li>`).join('')}</ul></section>
+${sec('wr-log', W.logH, `<ol class="g-log">${WRP.log.map(x => `<li><time datetime="${x.date}">${esc(longDate(x.date, lang))}</time> ${esc(x[lang] || x.en)}</li>`).join('')}</ol>`)}
+<section class="fn"><h2>${esc(L.essaySources)}</h2><ol>${sources}</ol></section>
+</article>
+<p class="back"><a class="btn line" href="${home}">${rtl ? '→' : '←'} ${esc(L.backHome)}</a></p>
+</main>`;
+  const script = `<script>(function(){var D=${jsonScript(WR_D[lang])},L=${jsonScript(C)},LANG=${JSON.stringify(lang)};${wrJs.CLIENT}${wrJs.BOOT}})()</script>`;
+  return shell(lang, { title: `${W.title} | ${L.title}`, desc: clip(W.desc, lang), hrefFor: wrpAbs, pathFor: wrpPath, ld, ogType: 'article', body, script: shareScript(L) + script, image: ogImage(`guide/${lang}/${WRP.id}.jpg`), extraHead: HH_CSS + '\n' + WR_CSS + '\n' });
+}
+// 照合: データファイルの事実ごとの digits（入れ子の配列はどれか1つ）が、各言語のページの本文（<main>）にあるか。計算式の「7/108」も
+const wrpDrift = () => {
+  const bad = [], v = id => wrVal(WRF.calc[id]), frac = `${v('rateNow') - v('rateCut')}/${100 + v('rateNow')}`;
+  for (const l of LANGS) {
+    const html = fs.readFileSync(path.join(OUT, l === DEFAULT_LANG ? '' : l, 'guides', WRP.id, 'index.html'), 'utf8');
+    const text = html.slice(html.indexOf('<main'), html.indexOf('</main>')).replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ').replace(/[⁦-⁩]/g, '');
+    // 日本語・中国語の「2万5,000円」「6,000億円」も数として読む（元の数字の並びも残す）
+    const big = text.replace(/(\d[\d,]*(?:\.\d+)?)\s?(億|亿|万)\s?(\d[\d,]*)?/g, (m, x, u, y) => `${m} ; ${Math.round(Number(x.replace(/,/g, '')) * (u === '万' ? 1e4 : 1e8) + (y ? Number(y.replace(/,/g, '')) : 0))}`);
+    const nums = new Set((big.match(/\d[\d.,  ]*\d|\d/g) || []).map(x => x.replace(/\D/g, '')));
+    const want = {};
+    for (const f of WRF.facts) for (const d of f.digits || []) want[`${f.id}:${[].concat(d)[0]}`] = [].concat(d);
+    const miss = Object.entries(want).filter(([, alts]) => !alts.some(x => nums.has(String(x).replace(/\D/g, '')))).map(([k, x]) => `${k}=${x[0]}`);
+    if (!text.includes(frac)) miss.push(`formula ${frac}`);
+    if (miss.length) bad.push(`${l} lacks ${miss.join(', ')}`);
+  }
+  return bad.length ? `WARNING: ${WRP.id}: numbers differ from data/worker-relief-2026.json: ${bad.join('; ')}; update WRP (all languages)` : '';
+};
 
 function calcPage(lang) {
   const L = T[lang];
@@ -2654,7 +2807,7 @@ function calcCtyRelated(lang, c) {
   const li = (href, text) => `<li><a href="${href}">${esc(text)}</a></li>`;
   const essay = id => ESSAYS.find(e => e.id === id);
   const items = [li(calcIdxPath(lang), cfill(L.calcIdxLink, { n: CALC_WORLD.length })), li(mapPath(lang), L.mapLink), li(essayPath(lang, essay('billionaire-wealth-per-person')), essay('billionaire-wealth-per-person').title[lang])];
-  if (c.id === 'jp') items.push(li(`${hhPath(lang)}?s=hh-cty`, L.hhHome));
+  if (c.id === 'jp') items.push(li(`${hhPath(lang)}?s=hh-cty`, L.hhHome), li(`${wrpPath(lang)}?s=cty-wrp`, WRP[lang].short));
   for (const e of ESSAYS.filter(e => ((ESSAY_DATA[e.id] || {}).calc || []).includes(c.id) && !REL_ALWAYS.includes(e.id))) items.push(li(essayPath(lang, e), e.title[lang] || e.title.en));
   for (const t of TIMELINE.filter(t => TL_CTY[t.id] === c.id)) items.push(li(`${tlPath(lang)}#tl-${t.id}`, cfill(L.calcRelTl, { name: isoRtl(lang, t.name) })));
   if (c.id === 'us') items.push(li(usPath(lang), cfill(L.usH1, { n: US_TL.length })));
@@ -3373,6 +3526,7 @@ for (const lang of LANGS) {
     fs.mkdirSync(gdir2, { recursive: true });
     fs.writeFileSync(path.join(gdir2, 'index.html'), guidePage(g, lang));
   }
+  { const wdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'guides', WRP.id); fs.mkdirSync(wdir, { recursive: true }); fs.writeFileSync(path.join(wdir, 'index.html'), wrpPage(lang)); }
   const qdir = path.join(OUT, lang === DEFAULT_LANG ? '' : lang, 'shindan');
   fs.mkdirSync(qdir, { recursive: true });
   fs.writeFileSync(path.join(qdir, 'index.html'), quizPage(lang));
@@ -3432,6 +3586,7 @@ if (usDrift) console.warn(usDrift);
 for (const w of aipDrift) console.warn(`WARNING: ai-company-profits-per-person: ${w}`);
 if (aijDrift) console.warn(aijDrift);
 if (infDrift) console.warn(infDrift);
+{ const w = wrpDrift(); if (w) console.warn(w); else console.log(`worker relief payment: the page carries every figure of data/worker-relief-2026.json in ${LANGS.length} languages`); }
 if (workDrift) console.warn(workDrift);
 if (hhDrift) console.warn(hhDrift); else console.log(`household: the essay's ${HOUSEHOLD.check.length} households match (main, range, benefits now, basic income)`);
 if (SEO_LOG.length) console.warn(`WARNING: service page title over the length guideline even when shortened: ${SEO_LOG.join(', ')}`);
@@ -3465,6 +3620,8 @@ for (const { html, lang, file } of pages) {
 }
 // JS で出す文言（トーストなど）も本文の文字に入れる
 for (const l of LANGS) for (const v of Object.values(T[l])) add(roles[l].body, textOf(String(v)));
+// 就業者負担軽減支援金の計算機が JS で出す文言と「万」
+for (const l of LANGS) add(roles[l].body, Object.values(WRP[l].calc).join('') + '万');
 // BI計算機が JS で出す国名・通貨名と、結果カード（og.js）の文字
 for (const l of LANGS) {
   for (const c of CALC_WORLD) add(roles[l].body, c.name[l] + c.cur[l] + ((c.inName && c.inName[l]) || '') + cfill(T[l].calcCtyLink, { country: c.name[l] }));
@@ -3555,6 +3712,7 @@ for (const [f, b] of Object.entries(BADGES)) fs.writeFileSync(path.join(OUT, 'ba
 const xesc = t => String(t).replace(/[\u2066-\u2069]/g, '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 function newsLink(n, lang) {
   const en = n.en || '';
+  if (/Worker Burden Relief Payment/i.test(en) && !/essay/i.test(en)) return wrpAbs(lang);
   if (/about page/i.test(en)) return aboutAbs(lang);
   if (/cash-out ranking/i.test(en)) return rankAbs(lang);
   if (/basic income news page/i.test(en)) return biNewsAbs(lang);
@@ -3895,15 +4053,16 @@ const ESSAY_FILES = {
   'germany-2026.json': { essay: 'germany-merz-basic-income-cost', license: 'CC BY 4.0 (figures from the official sources named in each entry)' },
   'us-2026.json': { essay: 'us-basic-income-cost', license: 'CC BY 4.0 (figures from the official sources named in each entry; pilot counts from this site\'s list)' },
   'inflation-2026.json': { essay: 'basic-income-inflation', license: 'CC BY 4.0 (figures from the papers and official sources named in each entry)' },
+  'worker-relief-2026.json': { page: () => wrpAbs(DEFAULT_LANG), license: 'CC BY 4.0 (figures from the bill, the government documents, the Diet record and the news reports named in each entry)' },
 };
 const PUB = {};
 for (const [file, meta] of Object.entries(ESSAY_FILES)) {
-  const e = ESSAYS.find(x => x.id === meta.essay);
-  if (!e) throw new Error(`ESSAY_FILES ${file}: unknown essay ${meta.essay}`);
+  const e = meta.page ? null : ESSAYS.find(x => x.id === meta.essay);
+  if (!e && !meta.page) throw new Error(`ESSAY_FILES ${file}: unknown essay ${meta.essay}`);
   const { update, pending, ...rest } = readData(file);
   const ds = DATASETS.find(d => d.files.includes(file));
   if (!ds) throw new Error(`DATASETS: no entry for ${file}`);
-  PUB[file] = { name: `Free Lunch Lab: ${ds.name.en}`, description: ds.desc.en, source: essayAbs(DEFAULT_LANG, e), repository: 'https://github.com/eltociear/free-lunch-lab', license: meta.license, licenseUrl: 'https://creativecommons.org/licenses/by/4.0/', ...rest };
+  PUB[file] = { name: `Free Lunch Lab: ${ds.name.en}`, description: ds.desc.en, source: e ? essayAbs(DEFAULT_LANG, e) : meta.page(), repository: 'https://github.com/eltociear/free-lunch-lab', license: meta.license, licenseUrl: 'https://creativecommons.org/licenses/by/4.0/', ...rest };
 }
 // 表の形の CSV: 国、アメリカのパイロット、億万長者（国ごと）、AI企業（会社 × 四半期）、日本・ドイツ・アメリカ（出典つきの数字ごとに1行。アメリカは置き換える制度の支出も）
 const figureRows = j => Object.entries(j).filter(([, v]) => v && typeof v === 'object' && !Array.isArray(v) && 'value' in v).map(([k, v]) => ({ figure: k, value: v.value, year: v.year ?? null, date: v.date ?? null, age: v.age ?? null, note: v.note ?? null, source: v.source ?? null, asOf: v.asOf ?? null }));
@@ -3915,6 +4074,7 @@ const CSV_ROWS = {
   'japan-2026.csv': figureRows(PUB['japan-2026.json']),
   'germany-2026.csv': figureRows(PUB['germany-2026.json']),
   'us-2026.csv': [...figureRows(PUB['us-2026.json']), ...PUB['us-2026.json'].offsets.map(o => ({ figure: `offsets.${o.id}`, value: o.value, year: o.year, date: null, age: null, note: o.note, source: o.source, asOf: o.asOf }))],
+  'worker-relief-2026.csv': PUB['worker-relief-2026.json'].facts.map(({ digits, value, ...f }) => ({ figure: f.id, value, unit: f.unit ?? null, status: f.status, date: f.date ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, asOf: f.asOf })),
   'inflation-2026.csv': PUB['inflation-2026.json'].facts.map(({ digits, value, ...f }) => ({ figure: f.id, value: Array.isArray(value) ? value.join(';') : value, unit: f.unit ?? null, date: f.date ?? null, year: f.year ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, asOf: f.asOf })),
 };
 const CSV = {};
@@ -3927,7 +4087,7 @@ for (const [file, obj] of Object.entries(PUB)) fs.writeFileSync(path.join(OUT, f
 // データセットごとの行・項目（CSV があれば CSV の列、なければ JSON の1行目のキー）
 const DS_ROWS = {
   countries: countriesJson.countries, 'us-pilots': usPilotsJson.pilots, news: biNewsJson.weeks.flatMap(w => w.items), services: servicesJson.services, graveyard: graveJson.graveyard,
-  'open-source': ossJson.projects, 'open-data': dataJson.datasets, 'billionaires-2026': CSV_ROWS['billionaires-2026.csv'], 'ai-profits-2026': CSV_ROWS['ai-profits-2026.csv'], 'japan-2026': CSV_ROWS['japan-2026.csv'], 'germany-2026': CSV_ROWS['germany-2026.csv'], 'us-2026': CSV_ROWS['us-2026.csv'], 'inflation-2026': CSV_ROWS['inflation-2026.csv'],
+  'open-source': ossJson.projects, 'open-data': dataJson.datasets, 'billionaires-2026': CSV_ROWS['billionaires-2026.csv'], 'ai-profits-2026': CSV_ROWS['ai-profits-2026.csv'], 'japan-2026': CSV_ROWS['japan-2026.csv'], 'germany-2026': CSV_ROWS['germany-2026.csv'], 'us-2026': CSV_ROWS['us-2026.csv'], 'inflation-2026': CSV_ROWS['inflation-2026.csv'], 'worker-relief-2026': CSV_ROWS['worker-relief-2026.csv'],
 };
 {
   const seen = new Set();
@@ -4031,7 +4191,7 @@ ${LANGS.map(k => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[k]}" href
   </url>`).join('\n');
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${[sitemapUrls(abs), sitemapUrls(rankAbs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), sitemapUrls(aboutAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(hhAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), sitemapUrls(dataAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
+${[sitemapUrls(abs), sitemapUrls(rankAbs), sitemapUrls(orgAbs), sitemapUrls(graveAbs), sitemapUrls(tlAbs), sitemapUrls(usAbs), sitemapUrls(biNewsAbs), sitemapUrls(ossAbs), sitemapUrls(badgeAbs), sitemapUrls(essaysAbs), sitemapUrls(aboutAbs), ...ESSAYS.map(e => sitemapUrls(l => essayAbs(l, e))), ...GUIDES.map(g => sitemapUrls(l => guideAbs(l, g))), sitemapUrls(wrpAbs), sitemapUrls(qzAbs), sitemapUrls(calcAbs), sitemapUrls(hhAbs), sitemapUrls(calcIdxAbs), sitemapUrls(mapAbs), sitemapUrls(embedAbs), sitemapUrls(dataAbs), ...CALC_WORLD.map(c => sitemapUrls(l => calcCtyAbs(l, c))), sitemapUrls(verifyIdxAbs), ...QUIZ.types.map(t => sitemapUrls(l => qzTypeAbs(l, t))), ...verifyPages.map(m => sitemapUrls(l => verifyAbs(l, m))), ...live.map(s => sitemapUrls(l => svcAbs(l, s)))].join('\n')}
 </urlset>
 `);
 { const json = JSON.stringify(Object.fromEntries(Object.keys(lastmodNew).sort().map(k => [k, lastmodNew[k]])), null, 1) + '\n'; if (!fs.existsSync(LASTMOD_FILE) || fs.readFileSync(LASTMOD_FILE, 'utf8') !== json) fs.writeFileSync(LASTMOD_FILE, json); }
@@ -4087,6 +4247,7 @@ ${verifyPages.map(m => `- [${mdLink(VERIFY[m].title.en)}](${verifyAbs(DEFAULT_LA
 - [${md(T.en.badgeH1)}](${badgeAbs(DEFAULT_LANG)}): ${md(T.en.badgeDesc)} Image: ${badgeImg('listed.svg')}. Each entry in services.json and open-source.json has a \`badge\` object with the Markdown snippet and target URL.
 ${ESSAYS.map(e => `- [Essay: ${mdLink(e.title.en)}](${essayAbs(DEFAULT_LANG, e)}): ${md(e.desc.en)}`).join('\n')}
 ${GUIDES.map(g => `- [${mdLink(g.en.title)}](${guideAbs(DEFAULT_LANG, g)}): ${md(g.en.desc)} Last updated ${g.updated}.`).join('\n')}
+- [${mdLink(WRP.en.title)}](${wrpAbs(DEFAULT_LANG)}) ([日本語](${wrpAbs('ja')})): ${md(WRP.en.desc)} Every figure is dated and marked as in the bill, under consideration, reported or not yet decided; the figures are in [worker-relief-2026.json](${SITE_URL}/worker-relief-2026.json). Household calculator inputs are reproducible from the URL: \`?w={working adults who may qualify}&c={children under 16}&o={other household members}&f={monthly food spending at home, yen, tax included}\`. Last updated ${WRP.updated}.
 - [${md(T.en.shindanH1)}](${qzAbs(DEFAULT_LANG)}): ${md(T.en.shindanDesc)} Result types: ${QUIZ.types.map(t => `[${mdLink(t.name.en)}](${qzTypeAbs(DEFAULT_LANG, t)}) (${servicesFor(t, live).length} services)`).join(', ')}.
 - [${md(T.en.calcH1)}](${calcAbs(DEFAULT_LANG)}): ${md(T.en.calcDesc)} ${CALC_WORLD.length} countries and territories (${CALC.countries.map(c => `${c.name.en} (${c.id})`).join(', ')} with national figures; the rest from World Bank data). Inputs are reproducible from the URL: \`?c={country id}&w=all|adults|kids&m={monthly amount in local currency}\`. Each country also has its own page at \`/calc/{country id}/\` (e.g. ${calcCtyAbs(DEFAULT_LANG, CALC_WORLD.find(c => c.id === 'br'))}), and [all countries are compared](${calcIdxAbs(DEFAULT_LANG)}) by the yearly cost of paying everyone the World Bank's $3.00-a-day poverty line, as a share of GDP. Figures: ${Object.values(CALC.sources).map(x => `[${mdLink(x.en.split('. ')[0])}](${x.url}) (${x.year})`).join('; ')}.
 - [${md(T.en.hhH1)}](${hhAbs(DEFAULT_LANG)}): ${md(T.en.hhDesc)} For households in Japan, monthly, before any tax rise to fund it, with the assumptions of the essay [${mdLink(HH_ESSAY.title.en)}](${essayAbs(DEFAULT_LANG, HH_ESSAY)}) (child allowance under the FY2026 rules, pensions kept / only the basic pension replaced / replaced entirely, public assistance topping up or abolished, clawback from households earning ¥10 million or more). Inputs are reproducible from the URL: \`?a={adults}&u={of whom university-age children}&k={children 0-2}&c={children 3 to high-school age}&i={income band 0-${HOUSEHOLD.income.length - 1}: ${HOUSEHOLD.income.map(x => `¥${x / 100}m`).join(', ')}}&p={pension: 0 none, 1 one National Pension, 2 two, 3 model couple, 4 custom with pb= and pu=}&h=1&hs={monthly public assistance}&m={${HOUSEHOLD.amounts.join('|')}}\`, with optional assumptions \`sp=A|B|C\`, \`sh=A|B\`, \`sc=0|1\`, \`sk=0|1\`. The essay's five households: ${hhEssayRows('en').map((r, i) => { const X = HH_CTX.en, sm = X.summary(X.parse(HOUSEHOLD.check[i].q)); return `${md(r[0])}: ${md(X.sgn(sm.r.net))} a month by default (${md(sm.g.min === sm.g.max ? X.sgn(sm.g.min) : X.rangeText(sm.g))})`; }).join('; ')}.

@@ -2937,6 +2937,26 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-20",
+      "en": "Added a Worker Burden Relief Payment page for Japan: when, how much, who and how, what is still open, the timeline and a household calculator, with a source and date for every figure",
+      "ja": "就業者負担軽減支援金のページを追加（いつ・いくら・誰が・どうやって、まだ決まっていないこと、経緯、わが家の金額の計算機。数字ごとに出典と日付）",
+      "zh": "新增日本“就业者负担减轻支援金”页面：何时、多少、谁、怎么领，尚未确定的事项、来龙去脉和我家金额计算器，每个数字附出处和日期",
+      "hi": "जापान के वर्कर बर्डन रिलीफ़ पेमेंट पर पेज जोड़ा गया: कब, कितना, किसे और कैसे, क्या अभी तय नहीं, घटनाक्रम और परिवार का कैलकुलेटर, हर आँकड़े के स्रोत और तारीख़ के साथ",
+      "es": "Añadida una página sobre el pago de alivio de cargas para trabajadores de Japón: cuándo, cuánto, quién y cómo, lo que sigue abierto, la cronología y una calculadora para tu hogar, con una fuente y una fecha para cada cifra",
+      "de": "Seite zu Japans Entlastungszahlung für Erwerbstätige veröffentlicht: wann, wie viel, wer und wie, was noch offen ist, der zeitliche Ablauf und ein Haushaltsrechner, mit Quelle und Datum zu jeder Zahl",
+      "ar": "أضفنا صفحة عن دفعة تخفيف العبء عن العاملين في اليابان: متى، وكم، ومن، وكيف، وما لم يُحسم بعد، والتسلسل الزمني، وحاسبة للأسرة، مع مصدر وتاريخ لكل رقم"
+    },
+    {
+      "date": "2026-11-20",
+      "en": "Updated the essay “Refundable tax credits vs basic income: what Japan’s new payment for workers is, and is not” with the Prime Minister’s answer of 13 November and the Finance Minister’s of 16 November (the October reference plan kept as history)",
+      "ja": "エッセイ『給付付き税額控除とベーシックインカムは、何が違うのか』を更新（11月13日の首相答弁と11月16日の財務相答弁を追加。10月の参考案は経緯として残す）",
+      "zh": "更新随笔《可退还税收抵免与基本收入有何不同？从日本新的“就业者负担减轻支援金”说起》：加入11月13日的首相答辩和11月16日的财务大臣答辩（10月的参考方案作为经过保留）",
+      "hi": "निबंध “रिफ़ंडेबल टैक्स क्रेडिट और बेसिक इनकम में क्या फ़र्क़ है? कामगारों के लिए जापान का नया भुगतान क्या है, और क्या नहीं” अपडेट किया गया: 13 नवंबर का प्रधानमंत्री का जवाब और 16 नवंबर का वित्त मंत्री का जवाब जोड़े गए (अक्टूबर की संदर्भ योजना इतिहास के रूप में रखी गई)",
+      "es": "Actualizado el ensayo «Créditos fiscales reembolsables frente a renta básica: qué es, y qué no es, el nuevo pago de Japón para quienes trabajan» con la respuesta de la primera ministra del 13 de noviembre y la de la ministra de Finanzas del 16 de noviembre (el plan de referencia de octubre se mantiene como antecedente)",
+      "de": "Essay „Erstattungsfähige Steuergutschrift oder Grundeinkommen? Was Japans neue Zahlung für Erwerbstätige ist und was nicht“ aktualisiert: mit der Antwort der Premierministerin vom 13. November und der Finanzministerin vom 16. November (der Orientierungsplan vom Oktober bleibt als Vorgeschichte erhalten)",
+      "ar": "حدّثنا مقال «الائتمان الضريبي القابل للاسترداد أم الدخل الأساسي؟ ما هي دفعة اليابان الجديدة للعاملين، وما ليست هي» بجواب رئيسة الوزراء في 13 نوفمبر وجواب وزير المالية في 16 نوفمبر (مع الإبقاء على خطة أكتوبر المرجعية جزءًا من التسلسل)"
+    },
+    {
       "date": "2026-11-19",
       "en": "Published the essay “Does a basic income cause inflation?”",
       "ja": "エッセイ『ベーシックインカムで物価は上がる？ 実験と給付金のデータで見る』を公開",
@@ -4809,6 +4829,7 @@ module.exports = {
       "essayOpNote": "数字には出典を付けていますが、結論は筆者の意見です。",
       "essaySources": "出典",
       "essayPublished": "公開",
+      "essayUpdated": "更新",
       "essayRelated": "関連エッセイ",
       "essayToc": "目次",
       "essayRead": "約{n}分で読めます",
@@ -5539,6 +5560,7 @@ module.exports = {
       "essayOpNote": "The numbers are sourced; the conclusion is the author’s view.",
       "essaySources": "Sources",
       "essayPublished": "Published",
+      "essayUpdated": "Updated",
       "essayRelated": "Related essay",
       "essayToc": "Contents",
       "essayRead": "{n} min read",
@@ -6269,6 +6291,7 @@ module.exports = {
       "essayOpNote": "आँकड़ों के स्रोत दिए गए हैं; निष्कर्ष लेखक की अपनी राय है।",
       "essaySources": "स्रोत",
       "essayPublished": "प्रकाशित",
+      "essayUpdated": "अपडेट",
       "essayRelated": "संबंधित निबंध",
       "essayToc": "विषय-सूची",
       "essayRead": "पढ़ने में {n} मिनट",
@@ -6999,6 +7022,7 @@ module.exports = {
       "essayOpNote": "数字均注明出处，结论是作者的观点。",
       "essaySources": "出处",
       "essayPublished": "发布",
+      "essayUpdated": "更新",
       "essayRelated": "相关随笔",
       "essayToc": "目录",
       "essayRead": "阅读约需 {n} 分钟",
@@ -7731,6 +7755,7 @@ module.exports = {
       "essayOpNote": "Las cifras tienen fuente; la conclusión es la opinión del autor.",
       "essaySources": "Fuentes",
       "essayPublished": "Publicado",
+      "essayUpdated": "Actualizado",
       "essayRelated": "Ensayo relacionado",
       "essayToc": "Índice",
       "essayRead": "{n} min de lectura",
@@ -8461,6 +8486,7 @@ module.exports = {
       "essayOpNote": "الأرقام موثّقة بمصادرها، أما الخلاصة فهي رأي الكاتب.",
       "essaySources": "المصادر",
       "essayPublished": "نُشر",
+      "essayUpdated": "حُدِّث",
       "essayRelated": "مقال ذو صلة",
       "essayToc": "المحتويات",
       "essayRead": "مدة القراءة: {n} {min}",
@@ -9191,6 +9217,7 @@ module.exports = {
       "essayOpNote": "Die Zahlen sind belegt, die Schlussfolgerung ist die Meinung des Autors.",
       "essaySources": "Quellen",
       "essayPublished": "Veröffentlicht",
+      "essayUpdated": "Aktualisiert",
       "essayRelated": "Verwandter Essay",
       "essayToc": "Inhalt",
       "essayRead": "{n} Min. Lesezeit",
@@ -11395,6 +11422,33 @@ module.exports = {
         "es": "Las cifras del ensayo sobre renta básica e inflación: efectos en los precios en el estudio de transferencias de Kenia y en Alaska, el pago de Japón de 2020 y los precios al consumo, los cheques de estímulo de EE. UU. y las estimaciones de cuánto añadió el apoyo fiscal a la inflación, cada una con su fuente y fecha.",
         "de": "Die Zahlen hinter dem Essay zu Grundeinkommen und Inflation: Preiseffekte in Kenias Studie zu Geldtransfers und in Alaska, Japans Zahlung von 2020 und die Verbraucherpreise, die US-Schecks und Schätzungen, wie viel die Fiskalhilfe zur Inflation beitrug, jeweils mit Quelle und Datum.",
         "ar": "الأرقام التي يقوم عليها مقال الدخل الأساسي والتضخم: الأثر على الأسعار في دراسة التحويلات النقدية في كينيا وفي ألاسكا، ودفعة اليابان عام 2020 وأسعار المستهلك، وشيكات التحفيز الأمريكية وتقديرات ما أضافه الدعم المالي إلى التضخم، لكل منها مصدره وتاريخه."
+      }
+    },
+    {
+      "id": "worker-relief-2026",
+      "files": [
+        "worker-relief-2026.json",
+        "worker-relief-2026.csv"
+      ],
+      "page": "guides/worker-relief-payment/",
+      "lic": "odLicSrc",
+      "name": {
+        "en": "Japan’s Worker Burden Relief Payment: the figures",
+        "ja": "就業者負担軽減支援金：数字と日付",
+        "zh": "日本就业者负担减轻支援金：数字与日期",
+        "hi": "जापान का श्रमिक बोझ राहत भुगतान: आंकड़े और तारीख़ें",
+        "es": "El pago de alivio para trabajadores de Japón: las cifras",
+        "de": "Japans Entlastungszahlung für Erwerbstätige: die Zahlen",
+        "ar": "دفعة تخفيف العبء عن العاملين في اليابان: الأرقام والتواريخ"
+      },
+      "desc": {
+        "en": "Every figure on the Worker Burden Relief Payment page: amounts under consideration, the income lines given or reported, the October reference plan, the food consumption tax rates and the bill’s dates, each with its status (in the bill, under consideration, reported or not decided), source, date and check date.",
+        "ja": "就業者負担軽減支援金のページの数字。検討中の金額、示された・報じられた年収の線、10月の参考案、食料品の消費税率、法案の日付。それぞれ状態（法案に明記・検討中・報道・未定）、出典、日付、確認日つき。",
+        "zh": "就业者负担减轻支援金页面上的全部数字：正在研究的金额、已提出或报道的收入界线、10月的参考方案、食品消费税税率和法案的日期，每项均附状态（法案明确、研究中、报道、未定）、来源、日期和核对日期。",
+        "hi": "श्रमिक बोझ राहत भुगतान पेज के सभी आंकड़े: विचाराधीन रकम, बताई गई या रिपोर्ट की गई आय सीमाएँ, अक्टूबर की संदर्भ योजना, खाने पर उपभोग कर की दरें और विधेयक की तारीख़ें, हर एक की स्थिति (विधेयक में, विचाराधीन, रिपोर्ट, तय नहीं), स्रोत, तारीख़ और जाँच की तारीख़ के साथ।",
+        "es": "Todas las cifras de la página sobre el pago de alivio para trabajadores: cuantías en estudio, umbrales de ingresos anunciados o publicados, el plan de referencia de octubre, los tipos del impuesto al consumo sobre alimentos y las fechas del proyecto de ley, cada una con su estado (en el proyecto, en estudio, publicado o sin decidir), fuente, fecha y fecha de comprobación.",
+        "de": "Alle Zahlen der Seite zur Entlastungszahlung für Erwerbstätige: geprüfte Beträge, genannte oder gemeldete Einkommensgrenzen, der Referenzplan vom Oktober, die Verbrauchsteuersätze auf Lebensmittel und die Daten des Gesetzentwurfs, jeweils mit Status (im Gesetzentwurf, in Prüfung, gemeldet oder offen), Quelle, Datum und Prüfdatum.",
+        "ar": "كل الأرقام في صفحة دفعة تخفيف العبء عن العاملين: المبالغ قيد الدراسة، وحدود الدخل المعلنة أو المنشورة، وخطة أكتوبر المرجعية، ونسب ضريبة الاستهلاك على الغذاء، وتواريخ مشروع القانون، لكل منها حالته (في مشروع القانون، قيد الدراسة، منشور، لم يُحسم) ومصدره وتاريخه وتاريخ التحقق."
       }
     }
   ],
@@ -34898,6 +34952,7 @@ module.exports = {
     {
       "id": "refundable-tax-credit-vs-basic-income",
       "date": "2026-11-06",
+      "updated": "2026-11-20",
       "related": [
         "us-basic-income-cost",
         "japan-basic-income-cost",
@@ -34965,11 +35020,11 @@ module.exports = {
           ],
           [
             "p",
-            "決まっていないのは、肝心の金額と線引きです。所得の下限と上限、支援金の額は、すべて政令で決めることになっています。[3] 政府が10月に与野党に「一つの参考」として示した案では、2027・2028年度の対象は約2,000万人、1人あたり平均で年3万円程度、総額は年約6,000億円で、個人年収300万円台が上限になる可能性があると報じられています。[4] 所得の下限については、国民会議で給与収入約53万円、74万円、約106万円という案が出ていました。[1]"
+            "決まっていないのは、肝心の金額と線引きです。所得の下限と上限、支援金の額は、すべて政令で決めることになっています。[3] 政府が10月に与野党に「一つの参考」として示した案では、2027・2028年度の対象は約2,000万人、1人あたり平均で年3万円程度、総額は年約6,000億円で、個人年収300万円台が上限になる可能性があると報じられていました。[4] その後、高市首相は11月13日の参院の特別委員会で、1人あたり最大2万5,000円程度を基本に、16歳未満の子ども1人につき5,000円程度を上乗せし、対象を働く人の5割以上（約3,000万人）に広げる方向で検討していると答えました。それまでは「3割以上」とされていました。[15][16] 11月16日には片山財務相が、年収100万〜450万円の3,000万人程度を「大づかみのイメージ」と答弁しています。[17] 所得の下限については、国民会議で給与収入約53万円、74万円、約106万円という案が出ていました。[1] 最新の数字と日付は{就業者負担軽減支援金のまとめのページ|/guides/worker-relief-payment/}で更新しています。"
           ],
           [
             "p",
-            "法案は11月6日、自民党と日本維新の会などの賛成多数で衆院を通過し、野党はすべて反対しました。参院での審議は翌週から始まる見通しですが、参院では与党が過半数に届いておらず、12月12日までの会期中に成立するかはまだ分かりません。[5]"
+            "法案は11月6日、自民党と日本維新の会などの賛成多数で衆院を通過し、野党はすべて反対しました。[5] 参院では11月11日に特別委員会に付託され、11月20日の時点で採決の日程は決まっていません。参院では与党が過半数に届いておらず、12月12日までの会期中に成立するかはまだ分かりません。[5][18]"
           ],
           [
             "o",
@@ -35017,7 +35072,7 @@ module.exports = {
           ],
           [
             "p",
-            "一つめは、誰に届くかです。ベーシックインカムは全員に届きます。給付付き税額控除は、所得の線を引いて、その内側の人に届けます。日本の支援金も、参考の数字では対象は約2,000万人です。[4]"
+            "一つめは、誰に届くかです。ベーシックインカムは全員に届きます。給付付き税額控除は、所得の線を引いて、その内側の人に届けます。日本の支援金も、10月の参考の数字では対象は約2,000万人、11月13日の首相答弁では働く人の5割以上、約3,000万人です。[4][15]"
           ],
           [
             "p",
@@ -35117,7 +35172,7 @@ module.exports = {
           ],
           [
             "p",
-            "Cさんは、会社員で、去年の給与収入は450万円です。政府の参考案の上限（個人年収300万円台）を上回るので、支援金は受け取れない見込みです。[4] ベーシックインカムなら年36万円を受け取りますが、財源のための税も増えるので、正味では負担が増える可能性があります。"
+            "Cさんは、会社員で、去年の給与収入は450万円です。10月の参考案の上限（個人年収300万円台）なら、支援金は受け取れない見込みでした。[4] ただ11月16日に財務相が示した「大づかみのイメージ」は年収100万〜450万円で、Cさんはちょうどその端にいます。受け取れるかどうかは、政令で決まる上限しだいです。[17] ベーシックインカムなら年36万円を受け取りますが、財源のための税も増えるので、正味では負担が増える可能性があります。"
           ],
           [
             "o",
@@ -35137,7 +35192,7 @@ module.exports = {
           ],
           [
             "o",
-            "ただ、限界も見ておく必要があります。働けない人には届かず、届くのは1年遅れで、年1回です。年3万円程度という参考の額は、月3万円のベーシックインカムの12分の1です。給付付き税額控除は、ベーシックインカムの代わりというより、いまある制度の穴の一つを埋める道具だと考えるのが正確だと思います。その道具がどこまで育つのか。2029年度の本格導入に向けて、金額と線引きが決まっていくのを見ていきます。"
+            "ただ、限界も見ておく必要があります。働けない人には届かず、届くのは1年遅れで、年1回です。10月の参考案の平均年3万円程度も、11月に検討中とされた1人最大2万5,000円程度も、月3万円（年36万円）のベーシックインカムの12分の1以下です。給付付き税額控除は、ベーシックインカムの代わりというより、いまある制度の穴の一つを埋める道具だと考えるのが正確だと思います。その道具がどこまで育つのか。2029年度の本格導入に向けて、金額と線引きが決まっていくのを見ていきます。"
           ]
         ],
         "en": [
@@ -35179,11 +35234,11 @@ module.exports = {
           ],
           [
             "p",
-            "What is not decided is the part that matters most: the amounts and the lines. The income floor, the ceiling and the payment amounts will all be set by cabinet order.[3] As “one reference”, the government told the parties in October that in fiscal 2027 and 2028 about 20 million people could be covered, with an average of about ¥30,000 a year each, about ¥600 billion a year in total, and that a ceiling somewhere in the ¥3 million range of individual annual income was possible.[4] For the floor, options of about ¥530,000, ¥740,000 and about ¥1.06 million in wages had been discussed in the council.[1]"
+            "What is not decided is the part that matters most: the amounts and the lines. The income floor, the ceiling and the payment amounts will all be set by cabinet order.[3] As “one reference”, the government told the parties in October that in fiscal 2027 and 2028 about 20 million people could be covered, with an average of about ¥30,000 a year each, about ¥600 billion a year in total, and that a ceiling somewhere in the ¥3 million range of individual annual income was possible.[4] Then, on 13 November, in a special committee of the upper house, Prime Minister Takaichi said the government is considering a maximum of about ¥25,000 per person as the base, about ¥5,000 extra for each child under 16, and widening coverage to 50% or more of workers (about 30 million people), up from “30% or more” before.[15][16] On 16 November the Finance Minister, Satsuki Katayama, gave about 30 million people with incomes of ¥1 million to ¥4.5 million as the “rough image”.[17] For the floor, options of about ¥530,000, ¥740,000 and about ¥1.06 million in wages had been discussed in the council.[1] We keep the latest figures and dates on {our Worker Burden Relief Payment page|/guides/worker-relief-payment/}."
           ],
           [
             "p",
-            "The bill passed the lower house on 6 November with the votes of the Liberal Democratic Party, the Japan Innovation Party and others; every opposition party voted against. Upper house deliberations are expected to start the following week, but the ruling parties lack a majority there, so it is not yet clear whether the bill will become law before the session ends on 12 December.[5]"
+            "The bill passed the lower house on 6 November with the votes of the Liberal Democratic Party, the Japan Innovation Party and others; every opposition party voted against.[5] In the upper house it was referred to a special committee on 11 November, and as of 20 November no vote had been scheduled. The ruling parties lack a majority there, so it is not yet clear whether the bill will become law before the session ends on 12 December.[5][18]"
           ],
           [
             "o",
@@ -35231,7 +35286,7 @@ module.exports = {
           ],
           [
             "p",
-            "First, who gets it. A basic income goes to everyone. A refundable tax credit draws income lines and pays the people inside them. In Japan’s reference figures, about 20 million people would get the new payment.[4]"
+            "First, who gets it. A basic income goes to everyone. A refundable tax credit draws income lines and pays the people inside them. In Japan’s October reference figures, about 20 million people would get the new payment; in the Prime Minister’s answer of 13 November, 50% or more of workers, about 30 million.[4][15]"
           ],
           [
             "p",
@@ -35331,7 +35386,7 @@ module.exports = {
           ],
           [
             "p",
-            "C is an office worker who earned ¥4.5 million in wages last year. That is above the ceiling in the government’s reference figures (individual income in the ¥3 million range), so C would likely get nothing.[4] A basic income would bring C ¥360,000 a year, but C would also pay more tax to fund it, so C could end up paying more, net."
+            "C is an office worker who earned ¥4.5 million in wages last year. Under the ceiling in October’s reference figures (individual income in the ¥3 million range), C would likely have got nothing.[4] But the “rough image” the Finance Minister gave on 16 November runs from ¥1 million to ¥4.5 million, which puts C right at the edge; whether C qualifies depends on the ceiling the cabinet order sets.[17] A basic income would bring C ¥360,000 a year, but C would also pay more tax to fund it, so C could end up paying more, net."
           ],
           [
             "o",
@@ -35351,7 +35406,7 @@ module.exports = {
           ],
           [
             "o",
-            "But its limits matter too. It does not reach people who cannot work, it arrives a year late, and only once a year. The reference amount of about ¥30,000 a year is one twelfth of a ¥30,000-a-month basic income. It is more accurate to see a refundable tax credit not as a substitute for basic income but as a tool that fills one gap in the current system. How far that tool grows will become clear as the amounts and lines are set ahead of the full launch in fiscal 2029. We will be watching."
+            "But its limits matter too. It does not reach people who cannot work, it arrives a year late, and only once a year. October’s reference average of about ¥30,000 a year, and the maximum of about ¥25,000 per person under consideration in November, are each one twelfth or less of a ¥30,000-a-month basic income (¥360,000 a year). It is more accurate to see a refundable tax credit not as a substitute for basic income but as a tool that fills one gap in the current system. How far that tool grows will become clear as the amounts and lines are set ahead of the full launch in fiscal 2029. We will be watching."
           ]
         ],
         "zh": [
@@ -35393,11 +35448,11 @@ module.exports = {
           ],
           [
             "p",
-            "还没定的，恰恰是最关键的金额和界线。收入下限、上限和支援金额，都将由政令决定。[3] 据报道，政府 10 月作为“一个参考”向朝野各党出示的方案是：2027、2028 财年对象约 2000 万人，人均每年约 3 万日元，总额每年约 6000 亿日元，上限可能定在个人年收入 300 多万日元。[4] 关于收入下限，国民会议上曾提出工资收入约 53 万、74 万、约 106 万日元三个方案。[1]"
+            "还没定的，恰恰是最关键的金额和界线。收入下限、上限和支援金额，都将由政令决定。[3] 据报道，政府 10 月作为“一个参考”向朝野各党出示的方案是：2027、2028 财年对象约 2000 万人，人均每年约 3 万日元，总额每年约 6000 亿日元，上限可能定在个人年收入 300 多万日元。[4] 此后，高市首相在 11 月 13 日的参议院特别委员会上答辩称，政府正在研究的方向是：以每人最多约 2 万 5000 日元为基础，每名未满 16 岁的孩子加约 5000 日元，并把对象扩大到劳动者的 50% 以上（约 3000 万人）。此前的说法是“30% 以上”。[15][16] 11 月 16 日，片山财务大臣答辩称，年收入 100 万至 450 万日元的约 3000 万人是“大致的印象”。[17] 关于收入下限，国民会议上曾提出工资收入约 53 万、74 万、约 106 万日元三个方案。[1] 最新的数字和日期，我们在{就业者负担减轻支援金的整理页面|/guides/worker-relief-payment/}上持续更新。"
           ],
           [
             "p",
-            "法案于 11 月 6 日在自民党、日本维新会等的多数赞成下通过众议院，所有在野党都投了反对票。参议院预计从下周开始审议，但执政党在参议院未过半数，能否在 12 月 12 日会期结束前成立，目前还不清楚。[5]"
+            "法案于 11 月 6 日在自民党、日本维新会等的多数赞成下通过众议院，所有在野党都投了反对票。[5] 参议院于 11 月 11 日将法案交付特别委员会，截至 11 月 20 日，表决日程尚未确定。执政党在参议院未过半数，能否在 12 月 12 日会期结束前成立，目前还不清楚。[5][18]"
           ],
           [
             "o",
@@ -35445,7 +35500,7 @@ module.exports = {
           ],
           [
             "p",
-            "第一，发给谁。基本收入发给所有人。可退还税收抵免划出收入界线，只发给线内的人。按参考数字，日本的支援金对象约 2000 万人。[4]"
+            "第一，发给谁。基本收入发给所有人。可退还税收抵免划出收入界线，只发给线内的人。日本的支援金，按 10 月的参考数字对象约 2000 万人，按 11 月 13 日的首相答辩则是劳动者的 50% 以上，约 3000 万人。[4][15]"
           ],
           [
             "p",
@@ -35545,7 +35600,7 @@ module.exports = {
           ],
           [
             "p",
-            "C 是公司职员，去年工资收入 450 万日元，高于政府参考方案中的上限（个人年收入 300 多万日元），大概领不到支援金。[4] 如果是基本收入，C 每年领 36 万日元，但为筹措财源缴的税也会增加，净额上可能是负担增加。"
+            "C 是公司职员，去年工资收入 450 万日元。按 10 月参考方案中的上限（个人年收入 300 多万日元），C 大概领不到支援金。[4] 不过，财务大臣 11 月 16 日给出的“大致的印象”是年收入 100 万至 450 万日元，C 正好处在边缘。能否领取，要看政令定下的上限。[17] 如果是基本收入，C 每年领 36 万日元，但为筹措财源缴的税也会增加，净额上可能是负担增加。"
           ],
           [
             "o",
@@ -35565,7 +35620,7 @@ module.exports = {
           ],
           [
             "o",
-            "但也要看到它的局限：无法工作的人领不到，到手晚一年，而且一年只有一次。每年约 3 万日元的参考金额，是每月 3 万日元基本收入的十二分之一。与其把可退还税收抵免看作基本收入的替代品，不如把它看作填补现有制度一个漏洞的工具，这样更准确。这个工具能长到多大，要看 2029 财年正式实施前金额与界线如何确定。我们会继续关注。"
+            "但也要看到它的局限：无法工作的人领不到，到手晚一年，而且一年只有一次。无论是 10 月参考方案中人均每年约 3 万日元，还是 11 月正在研究的每人最多约 2 万 5000 日元，都只有每月 3 万日元（每年 36 万日元）基本收入的十二分之一或更少。与其把可退还税收抵免看作基本收入的替代品，不如把它看作填补现有制度一个漏洞的工具，这样更准确。这个工具能长到多大，要看 2029 财年正式实施前金额与界线如何确定。我们会继续关注。"
           ]
         ],
         "hi": [
@@ -35607,11 +35662,11 @@ module.exports = {
           ],
           [
             "p",
-            "जो तय नहीं हुआ, वही सबसे अहम है: राशियाँ और सीमाएँ। आय की निचली और ऊपरी सीमा और भुगतान की राशि, सब मंत्रिमंडल के आदेश से तय होंगी।[3] ख़बरों के अनुसार अक्टूबर में सरकार ने दलों को “एक संदर्भ” के रूप में बताया कि वित्त वर्ष 2027 और 2028 में लगभग 2 करोड़ लोग शामिल हो सकते हैं, हर व्यक्ति को औसतन लगभग 30,000 येन सालाना, कुल लगभग 600 अरब येन सालाना, और ऊपरी सीमा व्यक्तिगत सालाना आय के 30 लाख येन वाले दायरे में हो सकती है।[4] निचली सीमा के लिए परिषद में वेतन में लगभग 5,30,000 येन, 7,40,000 येन और लगभग 10,60,000 येन के विकल्पों पर चर्चा हुई थी।[1]"
+            "जो तय नहीं हुआ, वही सबसे अहम है: राशियाँ और सीमाएँ। आय की निचली और ऊपरी सीमा और भुगतान की राशि, सब मंत्रिमंडल के आदेश से तय होंगी।[3] ख़बरों के अनुसार अक्टूबर में सरकार ने दलों को “एक संदर्भ” के रूप में बताया कि वित्त वर्ष 2027 और 2028 में लगभग 20 मिलियन लोग शामिल हो सकते हैं, हर व्यक्ति को औसतन लगभग 30,000 येन सालाना, कुल लगभग 600 अरब येन सालाना, और ऊपरी सीमा व्यक्तिगत सालाना आय के 3 मिलियन येन वाले दायरे में हो सकती है।[4] फिर 13 नवंबर को उच्च सदन की एक विशेष समिति में प्रधानमंत्री ताकाइची ने कहा कि सरकार आधार के रूप में हर व्यक्ति को अधिकतम लगभग 25,000 येन, 16 साल से कम उम्र के हर बच्चे पर लगभग 5,000 येन अतिरिक्त, और दायरे को 50% या उससे ज़्यादा कामगारों (लगभग 30 मिलियन लोग) तक बढ़ाने पर विचार कर रही है; पहले यह “30% या उससे ज़्यादा” था।[15][16] 16 नवंबर को वित्त मंत्री सात्सुकी कातायामा ने 1 मिलियन से 4.5 मिलियन येन आय वाले लगभग 30 मिलियन लोगों को “मोटी तस्वीर” बताया।[17] निचली सीमा के लिए परिषद में वेतन में लगभग 530,000 येन, 740,000 येन और लगभग 1.06 मिलियन येन के विकल्पों पर चर्चा हुई थी।[1] ताज़ा आँकड़े और तारीख़ें हम {वर्कर बर्डन रिलीफ़ पेमेंट वाले अपने पेज|/guides/worker-relief-payment/} पर रखते हैं।"
           ],
           [
             "p",
-            "विधेयक 6 नवंबर को लिबरल डेमोक्रेटिक पार्टी, जापान इनोवेशन पार्टी और कुछ अन्य के वोटों से निचले सदन से पास हुआ; सभी विपक्षी दलों ने इसके ख़िलाफ़ वोट दिया। उच्च सदन में बहस अगले हफ़्ते शुरू होने की उम्मीद है, लेकिन वहाँ सत्ताधारी दलों के पास बहुमत नहीं है, इसलिए अभी साफ़ नहीं कि यह 12 दिसंबर को सत्र ख़त्म होने से पहले क़ानून बनेगा या नहीं।[5]"
+            "विधेयक 6 नवंबर को लिबरल डेमोक्रेटिक पार्टी, जापान इनोवेशन पार्टी और कुछ अन्य के वोटों से निचले सदन से पास हुआ; सभी विपक्षी दलों ने इसके ख़िलाफ़ वोट दिया।[5] उच्च सदन में इसे 11 नवंबर को एक विशेष समिति को भेजा गया, और 20 नवंबर तक कोई मतदान तय नहीं हुआ था। वहाँ सत्ताधारी दलों के पास बहुमत नहीं है, इसलिए अभी साफ़ नहीं कि यह 12 दिसंबर को सत्र ख़त्म होने से पहले क़ानून बनेगा या नहीं।[5][18]"
           ],
           [
             "o",
@@ -35659,7 +35714,7 @@ module.exports = {
           ],
           [
             "p",
-            "पहला, यह किसे मिलता है। बेसिक इनकम सबको मिलती है। रिफ़ंडेबल टैक्स क्रेडिट आय की रेखाएँ खींचता है और उनके भीतर के लोगों को देता है। जापान के संदर्भ आँकड़ों में लगभग 2 करोड़ लोगों को नया भुगतान मिलेगा।[4]"
+            "पहला, यह किसे मिलता है। बेसिक इनकम सबको मिलती है। रिफ़ंडेबल टैक्स क्रेडिट आय की रेखाएँ खींचता है और उनके भीतर के लोगों को देता है। जापान के अक्टूबर के संदर्भ आँकड़ों में लगभग 20 मिलियन लोगों को नया भुगतान मिलेगा; 13 नवंबर के प्रधानमंत्री के जवाब में 50% या उससे ज़्यादा कामगार, यानी लगभग 30 मिलियन।[4][15]"
           ],
           [
             "p",
@@ -35759,7 +35814,7 @@ module.exports = {
           ],
           [
             "p",
-            "C दफ़्तर में काम करता है और पिछले साल उसने वेतन में 45,00,000 येन कमाए। यह सरकार के संदर्भ आँकड़ों की ऊपरी सीमा (30 लाख येन वाले दायरे की व्यक्तिगत आय) से ऊपर है, इसलिए C को शायद कुछ नहीं मिलेगा।[4] बेसिक इनकम से C को साल में 3,60,000 येन मिलेंगे, लेकिन उसकी फ़ंडिंग के लिए C ज़्यादा टैक्स भी देगा, इसलिए शुद्ध रूप में C ज़्यादा चुका सकता है।"
+            "C दफ़्तर में काम करता है और पिछले साल उसने वेतन में 4.5 मिलियन येन कमाए। अक्टूबर के संदर्भ आँकड़ों की ऊपरी सीमा (3 मिलियन येन वाले दायरे की व्यक्तिगत आय) के हिसाब से C को शायद कुछ नहीं मिलता।[4] लेकिन 16 नवंबर को वित्त मंत्री ने जो “मोटी तस्वीर” दी, वह 1 मिलियन से 4.5 मिलियन येन तक है, जिससे C ठीक किनारे पर है; C हक़दार होगा या नहीं, यह मंत्रिमंडल के आदेश में तय होने वाली ऊपरी सीमा पर निर्भर है।[17] बेसिक इनकम से C को साल में 360,000 येन मिलेंगे, लेकिन उसकी फ़ंडिंग के लिए C ज़्यादा टैक्स भी देगा, इसलिए शुद्ध रूप में C ज़्यादा चुका सकता है।"
           ],
           [
             "o",
@@ -35779,7 +35834,7 @@ module.exports = {
           ],
           [
             "o",
-            "लेकिन इसकी सीमाएँ भी मायने रखती हैं। यह काम न कर सकने वालों तक नहीं पहुँचता, एक साल देर से आता है, और साल में सिर्फ़ एक बार। सालाना लगभग 30,000 येन की संदर्भ राशि, महीने में 30,000 येन वाली बेसिक इनकम का बारहवाँ हिस्सा है। रिफ़ंडेबल टैक्स क्रेडिट को बेसिक इनकम का विकल्प नहीं, बल्कि मौजूदा व्यवस्था की एक कमी भरने वाला औज़ार मानना ज़्यादा सही है। यह औज़ार कितना बड़ा होता है, यह वित्त वर्ष 2029 की पूरी शुरुआत से पहले राशियाँ और सीमाएँ तय होने पर साफ़ होगा। हम नज़र रखेंगे।"
+            "लेकिन इसकी सीमाएँ भी मायने रखती हैं। यह काम न कर सकने वालों तक नहीं पहुँचता, एक साल देर से आता है, और साल में सिर्फ़ एक बार। अक्टूबर की सालाना लगभग 30,000 येन की संदर्भ औसत राशि, और नवंबर में विचाराधीन बताई गई हर व्यक्ति को अधिकतम लगभग 25,000 येन की राशि, दोनों ही महीने में 30,000 येन (साल में 360,000 येन) वाली बेसिक इनकम का बारहवाँ हिस्सा या उससे कम हैं। रिफ़ंडेबल टैक्स क्रेडिट को बेसिक इनकम का विकल्प नहीं, बल्कि मौजूदा व्यवस्था की एक कमी भरने वाला औज़ार मानना ज़्यादा सही है। यह औज़ार कितना बड़ा होता है, यह वित्त वर्ष 2029 की पूरी शुरुआत से पहले राशियाँ और सीमाएँ तय होने पर साफ़ होगा। हम नज़र रखेंगे।"
           ]
         ],
         "es": [
@@ -35821,11 +35876,11 @@ module.exports = {
           ],
           [
             "p",
-            "Lo que no está decidido es lo más importante: las cuantías y los límites. El mínimo y el máximo de ingresos y las cuantías se fijarán por decreto.[3] Como «una referencia», el Gobierno dijo a los partidos en octubre que en los años fiscales 2027 y 2028 podrían recibirlo unos 20 millones de personas, con una media de unos 30.000 yenes al año cada una, unos 600.000 millones de yenes al año en total, y que el máximo podría situarse en la franja de los 3 millones de yenes de renta individual anual.[4] Para el mínimo, en el consejo se habían planteado unos 530.000, 740.000 y unos 1,06 millones de yenes de salario.[1]"
+            "Lo que no está decidido es lo más importante: las cuantías y los límites. El mínimo y el máximo de ingresos y las cuantías se fijarán por decreto.[3] Como «una referencia», el Gobierno dijo a los partidos en octubre que en los años fiscales 2027 y 2028 podrían recibirlo unos 20 millones de personas, con una media de unos 30.000 yenes al año cada una, unos 600.000 millones de yenes al año en total, y que el máximo podría situarse en la franja de los 3 millones de yenes de renta individual anual.[4] Después, el 13 de noviembre, en una comisión especial de la cámara alta, la primera ministra Takaichi dijo que el Gobierno estudia un máximo de unos 25.000 yenes por persona como base, unos 5.000 yenes más por cada hijo menor de 16 años y ampliar la cobertura al 50% o más de los trabajadores (unos 30 millones de personas), frente al «30% o más» de antes.[15][16] El 16 de noviembre, la ministra de Finanzas, Satsuki Katayama, dio como «imagen aproximada» unos 30 millones de personas con ingresos de 1 a 4,5 millones de yenes.[17] Para el mínimo, en el consejo se habían planteado unos 530.000, 740.000 y unos 1,06 millones de yenes de salario.[1] Las últimas cifras y fechas están en {nuestra página sobre el pago de alivio de cargas para trabajadores|/guides/worker-relief-payment/}."
           ],
           [
             "p",
-            "El proyecto pasó la cámara baja el 6 de noviembre con los votos del Partido Liberal Democrático, el Partido de la Innovación de Japón y otros; todos los partidos de la oposición votaron en contra. Se espera que el debate en la cámara alta empiece la semana siguiente, pero allí los partidos del Gobierno no tienen mayoría, así que aún no está claro si será ley antes de que termine el periodo de sesiones, el 12 de diciembre.[5]"
+            "El proyecto pasó la cámara baja el 6 de noviembre con los votos del Partido Liberal Democrático, el Partido de la Innovación de Japón y otros; todos los partidos de la oposición votaron en contra.[5] En la cámara alta se remitió a una comisión especial el 11 de noviembre, y a 20 de noviembre no había fecha para la votación. Allí los partidos del Gobierno no tienen mayoría, así que aún no está claro si será ley antes de que termine el periodo de sesiones, el 12 de diciembre.[5][18]"
           ],
           [
             "o",
@@ -35873,7 +35928,7 @@ module.exports = {
           ],
           [
             "p",
-            "Primera, quién lo recibe. Una renta básica llega a todo el mundo. Un crédito fiscal reembolsable traza límites de ingresos y paga a quienes quedan dentro. Según las cifras de referencia de Japón, unos 20 millones de personas recibirían el nuevo pago.[4]"
+            "Primera, quién lo recibe. Una renta básica llega a todo el mundo. Un crédito fiscal reembolsable traza límites de ingresos y paga a quienes quedan dentro. Según las cifras de referencia de Japón de octubre, unos 20 millones de personas recibirían el nuevo pago; según la respuesta de la primera ministra del 13 de noviembre, el 50% o más de los trabajadores, unos 30 millones.[4][15]"
           ],
           [
             "p",
@@ -35973,7 +36028,7 @@ module.exports = {
           ],
           [
             "p",
-            "C trabaja en una oficina y el año pasado ganó 4,5 millones de yenes de salario. Eso supera el máximo de las cifras de referencia del Gobierno (renta individual en la franja de los 3 millones), así que C probablemente no recibiría nada.[4] Una renta básica le daría 360.000 yenes al año, pero C también pagaría más impuestos para financiarla, de modo que en neto podría acabar pagando más."
+            "C trabaja en una oficina y el año pasado ganó 4,5 millones de yenes de salario. Con el máximo de las cifras de referencia de octubre (renta individual en la franja de los 3 millones), C probablemente no habría recibido nada.[4] Pero la «imagen aproximada» que dio la ministra de Finanzas el 16 de noviembre va de 1 a 4,5 millones de yenes, lo que deja a C justo en el borde; que C lo reciba depende del máximo que fije el decreto.[17] Una renta básica le daría 360.000 yenes al año, pero C también pagaría más impuestos para financiarla, de modo que en neto podría acabar pagando más."
           ],
           [
             "o",
@@ -35993,7 +36048,7 @@ module.exports = {
           ],
           [
             "o",
-            "Pero sus límites también cuentan. No llega a quien no puede trabajar, llega con un año de retraso y solo una vez al año. La cuantía de referencia, unos 30.000 yenes al año, es la doceava parte de una renta básica de 30.000 yenes al mes. Es más exacto ver un crédito fiscal reembolsable no como un sustituto de la renta básica, sino como una herramienta que tapa uno de los huecos del sistema actual. Hasta dónde crezca esa herramienta se verá cuando se fijen las cuantías y los límites antes del arranque completo en el año fiscal 2029. Lo seguiremos de cerca."
+            "Pero sus límites también cuentan. No llega a quien no puede trabajar, llega con un año de retraso y solo una vez al año. La media de referencia de octubre, unos 30.000 yenes al año, y el máximo de unos 25.000 yenes por persona en estudio en noviembre son, cada uno, la doceava parte o menos de una renta básica de 30.000 yenes al mes (360.000 yenes al año). Es más exacto ver un crédito fiscal reembolsable no como un sustituto de la renta básica, sino como una herramienta que tapa uno de los huecos del sistema actual. Hasta dónde crezca esa herramienta se verá cuando se fijen las cuantías y los límites antes del arranque completo en el año fiscal 2029. Lo seguiremos de cerca."
           ]
         ],
         "de": [
@@ -36035,11 +36090,11 @@ module.exports = {
           ],
           [
             "p",
-            "Offen ist das Wichtigste: die Beträge und die Grenzen. Unter- und Obergrenze des Einkommens sowie die Höhe der Zahlung werden per Kabinettsverordnung festgelegt.[3] Als „eine Orientierung“ nannte die Regierung den Parteien im Oktober für die Fiskaljahre 2027 und 2028 rund 20 Millionen Berechtigte mit durchschnittlich etwa 30.000 Yen pro Jahr, zusammen etwa 600 Milliarden Yen jährlich, und eine Obergrenze, die bei einem individuellen Jahreseinkommen im Bereich von 3 Millionen Yen liegen könnte.[4] Für die Untergrenze waren im Rat etwa 530.000, 740.000 und etwa 1,06 Millionen Yen Lohn im Gespräch.[1]"
+            "Offen ist das Wichtigste: die Beträge und die Grenzen. Unter- und Obergrenze des Einkommens sowie die Höhe der Zahlung werden per Kabinettsverordnung festgelegt.[3] Als „eine Orientierung“ nannte die Regierung den Parteien im Oktober für die Fiskaljahre 2027 und 2028 rund 20 Millionen Berechtigte mit durchschnittlich etwa 30.000 Yen pro Jahr, zusammen etwa 600 Milliarden Yen jährlich, und eine Obergrenze, die bei einem individuellen Jahreseinkommen im Bereich von 3 Millionen Yen liegen könnte.[4] Am 13. November sagte Premierministerin Takaichi dann in einem Sonderausschuss des Oberhauses, die Regierung prüfe einen Grundbetrag von höchstens etwa 25.000 Yen pro Person, etwa 5.000 Yen zusätzlich für jedes Kind unter 16 und eine Ausweitung auf 50 % oder mehr der Erwerbstätigen (etwa 30 Millionen Menschen), nach zuvor „30 % oder mehr“.[15][16] Am 16. November nannte Finanzministerin Satsuki Katayama etwa 30 Millionen Menschen mit Einkommen von 1 Million bis 4,5 Millionen Yen als „grobes Bild“.[17] Für die Untergrenze waren im Rat etwa 530.000, 740.000 und etwa 1,06 Millionen Yen Lohn im Gespräch.[1] Die neuesten Zahlen und Daten führen wir auf {unserer Seite zur Entlastungszahlung für Erwerbstätige|/guides/worker-relief-payment/}."
           ],
           [
             "p",
-            "Der Entwurf passierte am 6. November mit den Stimmen der Liberaldemokratischen Partei, der Japanischen Innovationspartei und weiterer Abgeordneter das Unterhaus; alle Oppositionsparteien stimmten dagegen. Die Beratungen im Oberhaus sollen in der Folgewoche beginnen, doch dort fehlt den Regierungsparteien die Mehrheit. Ob der Entwurf vor dem Sitzungsende am 12. Dezember Gesetz wird, ist noch offen.[5]"
+            "Der Entwurf passierte am 6. November mit den Stimmen der Liberaldemokratischen Partei, der Japanischen Innovationspartei und weiterer Abgeordneter das Unterhaus; alle Oppositionsparteien stimmten dagegen.[5] Im Oberhaus wurde er am 11. November an einen Sonderausschuss überwiesen, und Stand 20. November war keine Abstimmung angesetzt. Dort fehlt den Regierungsparteien die Mehrheit. Ob der Entwurf vor dem Sitzungsende am 12. Dezember Gesetz wird, ist noch offen.[5][18]"
           ],
           [
             "o",
@@ -36087,7 +36142,7 @@ module.exports = {
           ],
           [
             "p",
-            "Erstens: wer es bekommt. Ein Grundeinkommen geht an alle. Eine erstattungsfähige Steuergutschrift zieht Einkommensgrenzen und zahlt an die Menschen innerhalb. Nach Japans Orientierungswerten würden etwa 20 Millionen Menschen die neue Zahlung erhalten.[4]"
+            "Erstens: wer es bekommt. Ein Grundeinkommen geht an alle. Eine erstattungsfähige Steuergutschrift zieht Einkommensgrenzen und zahlt an die Menschen innerhalb. Nach Japans Orientierungswerten vom Oktober würden etwa 20 Millionen Menschen die neue Zahlung erhalten, nach der Antwort der Premierministerin vom 13. November 50 % oder mehr der Erwerbstätigen, etwa 30 Millionen.[4][15]"
           ],
           [
             "p",
@@ -36187,7 +36242,7 @@ module.exports = {
           ],
           [
             "p",
-            "C ist Büroangestellte und verdiente im vergangenen Jahr 4,5 Millionen Yen Lohn. Das liegt über der Obergrenze in den Orientierungswerten der Regierung (individuelles Einkommen im Bereich von 3 Millionen Yen), also bekäme C wahrscheinlich nichts.[4] Ein Grundeinkommen brächte C 360.000 Yen im Jahr, doch C zahlte auch mehr Steuern zu seiner Finanzierung und könnte netto mehr zahlen."
+            "C ist Büroangestellte und verdiente im vergangenen Jahr 4,5 Millionen Yen Lohn. Mit der Obergrenze in den Orientierungswerten vom Oktober (individuelles Einkommen im Bereich von 3 Millionen Yen) hätte C wahrscheinlich nichts bekommen.[4] Das „grobe Bild“, das die Finanzministerin am 16. November nannte, reicht aber von 1 Million bis 4,5 Millionen Yen, C liegt also genau am Rand; ob C berechtigt ist, hängt von der Obergrenze in der Kabinettsverordnung ab.[17] Ein Grundeinkommen brächte C 360.000 Yen im Jahr, doch C zahlte auch mehr Steuern zu seiner Finanzierung und könnte netto mehr zahlen."
           ],
           [
             "o",
@@ -36207,7 +36262,7 @@ module.exports = {
           ],
           [
             "o",
-            "Doch auch die Grenzen zählen. Die Zahlung erreicht niemanden, der nicht arbeiten kann, sie kommt ein Jahr zu spät und nur einmal im Jahr. Der Orientierungsbetrag von etwa 30.000 Yen im Jahr ist ein Zwölftel eines Grundeinkommens von 30.000 Yen im Monat. Genauer ist es, eine erstattungsfähige Steuergutschrift nicht als Ersatz für ein Grundeinkommen zu sehen, sondern als Werkzeug, das eine Lücke im heutigen System schließt. Wie weit dieses Werkzeug wächst, wird sich zeigen, wenn Beträge und Grenzen vor dem vollen Start im Fiskaljahr 2029 festgelegt werden. Wir bleiben dran."
+            "Doch auch die Grenzen zählen. Die Zahlung erreicht niemanden, der nicht arbeiten kann, sie kommt ein Jahr zu spät und nur einmal im Jahr. Der Orientierungsbetrag vom Oktober von durchschnittlich etwa 30.000 Yen im Jahr und der im November geprüfte Höchstbetrag von etwa 25.000 Yen pro Person sind jeweils ein Zwölftel oder weniger eines Grundeinkommens von 30.000 Yen im Monat (360.000 Yen im Jahr). Genauer ist es, eine erstattungsfähige Steuergutschrift nicht als Ersatz für ein Grundeinkommen zu sehen, sondern als Werkzeug, das eine Lücke im heutigen System schließt. Wie weit dieses Werkzeug wächst, wird sich zeigen, wenn Beträge und Grenzen vor dem vollen Start im Fiskaljahr 2029 festgelegt werden. Wir bleiben dran."
           ]
         ],
         "ar": [
@@ -36249,11 +36304,11 @@ module.exports = {
           ],
           [
             "p",
-            "الأهم لم يُحسم بعد: المبالغ والحدود. فالحدان الأدنى والأعلى للدخل ومبالغ الدفعة كلها ستُحدَّد بمرسوم حكومي.[3] وبوصفها «مرجعًا واحدًا»، أبلغت الحكومة الأحزاب في أكتوبر أن نحو 20 مليون شخص قد يشملهم البرنامج في السنتين الماليتين 2027 و2028، بمتوسط نحو 30,000 ين سنويًا للفرد، ونحو 600 مليار ين سنويًا في المجموع، وأن الحد الأعلى قد يقع عند دخل فردي سنوي في حدود 3 ملايين ين وما فوقها بقليل.[4] وبالنسبة إلى الحد الأدنى، نوقشت في المجلس خيارات بنحو 530,000 ين و740,000 ين ونحو 1.06 مليون ين من الأجر.[1]"
+            "الأهم لم يُحسم بعد: المبالغ والحدود. فالحدان الأدنى والأعلى للدخل ومبالغ الدفعة كلها ستُحدَّد بمرسوم حكومي.[3] وبوصفها «مرجعًا واحدًا»، أبلغت الحكومة الأحزاب في أكتوبر أن نحو 20 مليون شخص قد يشملهم البرنامج في السنتين الماليتين 2027 و2028، بمتوسط نحو 30,000 ين سنويًا للفرد، ونحو 600 مليار ين سنويًا في المجموع، وأن الحد الأعلى قد يقع عند دخل فردي سنوي في حدود 3 ملايين ين وما فوقها بقليل.[4] ثم قالت رئيسة الوزراء تاكايتشي في 13 نوفمبر، في لجنة خاصة بمجلس المستشارين، إن الحكومة تدرس حدًا أقصى بنحو 25,000 ين للفرد كمبلغ أساسي، مع نحو 5,000 ين إضافية لكل طفل دون 16 عامًا، وتوسيع التغطية إلى 50% أو أكثر من العاملين (نحو 30 مليون شخص)، بعد أن كان الهدف من قبل «30% أو أكثر».[15][16] وفي 16 نوفمبر قدّم وزير المالية ساتسوكي كاتاياما نحو 30 مليون شخص بدخل من مليون إلى 4.5 ملايين ين بوصفه «التصور التقريبي».[17] وبالنسبة إلى الحد الأدنى، نوقشت في المجلس خيارات بنحو 530,000 ين و740,000 ين ونحو 1.06 مليون ين من الأجر.[1] ونتابع أحدث الأرقام والتواريخ في {صفحتنا عن دفعة تخفيف العبء عن العاملين|/guides/worker-relief-payment/}."
           ],
           [
             "p",
-            "أُقرّ مشروع القانون في مجلس النواب في 6 نوفمبر بأصوات الحزب الليبرالي الديمقراطي وحزب الابتكار الياباني وآخرين، وصوّتت كل أحزاب المعارضة ضده. ويُتوقع أن تبدأ مناقشته في مجلس المستشارين في الأسبوع التالي، لكن أحزاب الحكم لا تملك أغلبية هناك، ولذلك لم يتضح بعد هل سيصبح قانونًا قبل انتهاء الدورة في 12 ديسمبر.[5]"
+            "أُقرّ مشروع القانون في مجلس النواب في 6 نوفمبر بأصوات الحزب الليبرالي الديمقراطي وحزب الابتكار الياباني وآخرين، وصوّتت كل أحزاب المعارضة ضده.[5] وفي مجلس المستشارين أُحيل إلى لجنة خاصة في 11 نوفمبر، وحتى 20 نوفمبر لم يُحدَّد موعد للتصويت. ولا تملك أحزاب الحكم أغلبية هناك، ولذلك لم يتضح بعد هل سيصبح قانونًا قبل انتهاء الدورة في 12 ديسمبر.[5][18]"
           ],
           [
             "o",
@@ -36301,7 +36356,7 @@ module.exports = {
           ],
           [
             "p",
-            "أولًا: من يحصل عليه. الدخل الأساسي يذهب إلى الجميع. أما الائتمان الضريبي القابل للاسترداد فيرسم حدودًا للدخل ويدفع لمن هم داخلها. وبحسب الأرقام المرجعية اليابانية، سيحصل على الدفعة الجديدة نحو 20 مليون شخص.[4]"
+            "أولًا: من يحصل عليه. الدخل الأساسي يذهب إلى الجميع. أما الائتمان الضريبي القابل للاسترداد فيرسم حدودًا للدخل ويدفع لمن هم داخلها. وبحسب الأرقام المرجعية اليابانية في أكتوبر، سيحصل على الدفعة الجديدة نحو 20 مليون شخص، وبحسب جواب رئيسة الوزراء في 13 نوفمبر، 50% أو أكثر من العاملين، أي نحو 30 مليونًا.[4][15]"
           ],
           [
             "p",
@@ -36401,7 +36456,7 @@ module.exports = {
           ],
           [
             "p",
-            "«ج» موظفة مكتب كسبت العام الماضي 4.5 مليون ين أجرًا. وهذا فوق الحد الأعلى في الأرقام المرجعية للحكومة (دخل فردي في حدود 3 ملايين ين وما فوقها بقليل)، فالأرجح ألا تحصل على شيء.[4] أما الدخل الأساسي فيمنحها 360,000 ين سنويًا، لكنها ستدفع أيضًا ضرائب أكثر لتمويله، فقد ينتهي بها الأمر إلى دفع أكثر بالصافي."
+            "«ج» موظفة مكتب كسبت العام الماضي 4.5 مليون ين أجرًا. وفي ظل الحد الأعلى في الأرقام المرجعية لشهر أكتوبر (دخل فردي في حدود 3 ملايين ين وما فوقها بقليل)، كان الأرجح ألا تحصل على شيء.[4] لكن «التصور التقريبي» الذي قدّمه وزير المالية في 16 نوفمبر يمتد من مليون إلى 4.5 ملايين ين، وهذا يضعها على الحافة تمامًا، فاستحقاقها يتوقف على الحد الأعلى الذي سيحدّده المرسوم الحكومي.[17] أما الدخل الأساسي فيمنحها 360,000 ين سنويًا، لكنها ستدفع أيضًا ضرائب أكثر لتمويله، فقد ينتهي بها الأمر إلى دفع أكثر بالصافي."
           ],
           [
             "o",
@@ -36421,7 +36476,7 @@ module.exports = {
           ],
           [
             "o",
-            "لكن حدودها مهمة أيضًا. فهي لا تصل إلى من لا يستطيعون العمل، وتصل متأخرة عامًا، ومرة واحدة فقط في السنة. والمبلغ المرجعي البالغ نحو 30,000 ين سنويًا هو جزء من اثني عشر من دخل أساسي قدره 30,000 ين شهريًا. ومن الأدق أن نرى الائتمان الضريبي القابل للاسترداد لا بديلًا عن الدخل الأساسي، بل أداةً تسد ثغرة واحدة في النظام القائم. وإلى أي مدى ستنمو هذه الأداة، سيتضح حين تُحدَّد المبالغ والحدود قبل الانطلاق الكامل في السنة المالية 2029. وسنتابع ذلك."
+            "لكن حدودها مهمة أيضًا. فهي لا تصل إلى من لا يستطيعون العمل، وتصل متأخرة عامًا، ومرة واحدة فقط في السنة. والمتوسط المرجعي لشهر أكتوبر البالغ نحو 30,000 ين سنويًا، والحد الأقصى البالغ نحو 25,000 ين للفرد قيد الدراسة في نوفمبر، كلاهما جزء من اثني عشر أو أقل من دخل أساسي قدره 30,000 ين شهريًا (360,000 ين سنويًا). ومن الأدق أن نرى الائتمان الضريبي القابل للاسترداد لا بديلًا عن الدخل الأساسي، بل أداةً تسد ثغرة واحدة في النظام القائم. وإلى أي مدى ستنمو هذه الأداة، سيتضح حين تُحدَّد المبالغ والحدود قبل الانطلاق الكامل في السنة المالية 2029. وسنتابع ذلك."
           ]
         ]
       },
@@ -36438,7 +36493,7 @@ module.exports = {
         },
         {
           "n": 3,
-          "label": "Cabinet Secretariat — Summary of the bill on the temporary cut in the consumption tax rate on food and the Worker Burden Relief Payment (Cabinet decision and submission to the Diet, 9 Oct 2026; PDF, in Japanese)",
+          "label": "Cabinet Secretariat and Ministry of Finance — Outline (yōkō) of the bill on the temporary cut in the consumption tax rate on food and the Worker Burden Relief Payment (9 Oct 2026; PDF, in Japanese)",
           "url": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf"
         },
         {
@@ -36495,6 +36550,26 @@ module.exports = {
           "n": 14,
           "label": "Basic Income Earth Network (BIEN) — About Basic Income",
           "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 15,
+          "label": "Kyodo News via Tokyo Shimbun — PM Takaichi: up to about ¥25,000 as the base, about ¥5,000 extra per child, more than half of workers (13 Nov 2026, in Japanese)",
+          "url": "https://www.tokyo-np.co.jp/article/527904"
+        },
+        {
+          "n": 16,
+          "label": "Jiji Press — Base amount ¥25,000 a year, child add-on ¥5,000, coverage 50% or more of workers (13 Nov 2026, in Japanese)",
+          "url": "https://www.jiji.com/jc/article?k=2026111300707&g=pol"
+        },
+        {
+          "n": 17,
+          "label": "Jiji Press via Yahoo! News — Finance Minister Katayama: about 30 million people with incomes of ¥1 million to ¥4.5 million (16 Nov 2026, in Japanese)",
+          "url": "https://news.yahoo.co.jp/articles/d49e9f989b6e9b568c08754073e30c209be89024"
+        },
+        {
+          "n": 18,
+          "label": "House of Councillors — Bill information, Cabinet Bill No. 1, 222nd Diet (in Japanese)",
+          "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm"
         }
       ]
     },
@@ -53867,6 +53942,2138 @@ module.exports = {
         "en": "J-CAST News — interview with Heizo Takenaka on basic income (10 Oct 2020, in Japanese)"
       }
     ]
+  },
+  "WRP": {
+    "id": "worker-relief-payment",
+    "published": "2026-11-20",
+    "updated": "2026-11-20",
+    "essays": [
+      "refundable-tax-credit-vs-basic-income",
+      "generative-ai-jobs-basic-income"
+    ],
+    "def": {
+      "w": 2,
+      "c": 2,
+      "o": 0,
+      "f": 60000
+    },
+    "log": [
+      {
+        "date": "2026-11-20",
+        "ja": "公開。11月13日の首相答弁（1人最大2万5,000円程度、子ども1人5,000円程度、働く人の5割以上）、16日の財務相答弁（年収100万〜450万円）、20日の下限56万円程度の報道までを反映",
+        "en": "Published, covering the Prime Minister’s answer of 13 November (up to about ¥25,000 per person, about ¥5,000 per child, 50% or more of workers), the Finance Minister’s of 16 November (incomes of ¥1 million to ¥4.5 million) and the report of 20 November on a floor of about ¥560,000",
+        "zh": "发布。反映了11月13日的首相答辩（每人最多约2万5,000日元，每个孩子约5,000日元，劳动者的50%以上）、16日的财务大臣答辩（年收入100万至450万日元）以及20日关于下限约56万日元的报道",
+        "hi": "प्रकाशित, जिसमें 13 नवंबर का प्रधानमंत्री का जवाब (हर व्यक्ति को लगभग 25,000 येन तक, हर बच्चे पर लगभग 5,000 येन, 50% या उससे ज़्यादा कामगार), 16 नवंबर का वित्त मंत्री का जवाब (1 मिलियन से 4.5 मिलियन येन की आय) और लगभग 560,000 येन की निचली सीमा पर 20 नवंबर की ख़बर शामिल हैं",
+        "es": "Publicada, con la respuesta de la primera ministra del 13 de noviembre (hasta unos 25.000 yenes por persona, unos 5.000 yenes por hijo, el 50% o más de los trabajadores), la de la ministra de Finanzas del 16 de noviembre (ingresos de 1 a 4,5 millones de yenes) y la información del 20 de noviembre sobre un mínimo de unos 560.000 yenes",
+        "de": "Veröffentlicht, mit der Antwort der Premierministerin vom 13. November (bis zu etwa 25.000 Yen pro Person, etwa 5.000 Yen pro Kind, 50 % oder mehr der Erwerbstätigen), der Antwort der Finanzministerin vom 16. November (Einkommen von 1 Million bis 4,5 Millionen Yen) und dem Bericht vom 20. November über eine Untergrenze von etwa 560.000 Yen",
+        "ar": "نُشرت الصفحة، وتشمل جواب رئيسة الوزراء في 13 نوفمبر (حتى نحو 25,000 ين للفرد، ونحو 5,000 ين لكل طفل، و50% أو أكثر من العاملين)، وجواب وزير المالية في 16 نوفمبر (دخل من مليون إلى 4.5 ملايين ين)، وتقرير 20 نوفمبر عن حد أدنى بنحو 560,000 ين"
+      }
+    ],
+    "sources": [
+      {
+        "n": 1,
+        "label": {
+          "ja": "社会保障国民会議「中間とりまとめ」（2026年7月29日、PDF）",
+          "en": "Social Security National Council — Interim report (29 Jul 2026; PDF, in Japanese)"
+        },
+        "url": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260729-4/01_siryou1.pdf"
+      },
+      {
+        "n": 2,
+        "label": {
+          "ja": "内閣官房「飲食料品に係る消費税率の臨時的な引下げ及び就業者負担軽減支援金制度の導入に関する大綱」（2026年9月15日閣議決定、PDF）",
+          "en": "Cabinet Secretariat — Outline for the temporary cut in the consumption tax rate on food and the Worker Burden Relief Payment (cabinet decision, 15 Sep 2026; PDF, in Japanese)"
+        },
+        "url": "https://www.cas.go.jp/jp/seisaku/shouhizei_futankeigenshienkin/dai1/sanko2.pdf"
+      },
+      {
+        "n": 3,
+        "label": {
+          "ja": "内閣官房・財務省「法律案要綱」（2026年10月9日、PDF）",
+          "en": "Cabinet Secretariat and Ministry of Finance — Outline (yōkō) of the bill (9 Oct 2026; PDF, in Japanese)"
+        },
+        "url": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf"
+      },
+      {
+        "n": 4,
+        "label": {
+          "ja": "内閣官房・財務省「法律案の概要」（2026年10月、PDF）",
+          "en": "Cabinet Secretariat and Ministry of Finance — Summary of the bill (Oct 2026; PDF, in Japanese)"
+        },
+        "url": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou1.pdf"
+      },
+      {
+        "n": 5,
+        "label": {
+          "ja": "衆議院「議案審議経過情報」閣法第1号（第222回国会）",
+          "en": "House of Representatives — Bill progress, Cabinet Bill No. 1, 222nd Diet (in Japanese)"
+        },
+        "url": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/keika/1DE342E.htm"
+      },
+      {
+        "n": 6,
+        "label": {
+          "ja": "参議院「議案情報」閣法第1号（第222回国会）",
+          "en": "House of Councillors — Bill information, Cabinet Bill No. 1, 222nd Diet (in Japanese)"
+        },
+        "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm"
+      },
+      {
+        "n": 7,
+        "label": {
+          "ja": "共同通信（熊本日日新聞）「新給付、平均3万円程度を提示」（2026年10月17日）",
+          "en": "Kyodo News via Kumamoto Nichinichi Shimbun — Government floats an average of about ¥30,000, about 20 million people (17 Oct 2026, in Japanese)"
+        },
+        "url": "https://kumanichi.com/articles/2047683"
+      },
+      {
+        "n": 8,
+        "label": {
+          "ja": "共同通信（東京新聞）首相答弁：最大2万5千円程度を基本に検討、子ども1人5千円程度を上乗せ（2026年11月13日）",
+          "en": "Kyodo News via Tokyo Shimbun — PM: up to about ¥25,000 as the base, about ¥5,000 extra per child (13 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.tokyo-np.co.jp/article/527904"
+      },
+      {
+        "n": 9,
+        "label": {
+          "ja": "時事通信 支援基本額2万5000円、定額支援額・子ども加算5000円、対象5割以上（2026年11月13日）",
+          "en": "Jiji Press — Base amount ¥25,000, flat amount and child add-on ¥5,000, 50% or more of workers (13 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.jiji.com/jc/article?k=2026111300707&g=pol"
+      },
+      {
+        "n": 10,
+        "label": {
+          "ja": "東京新聞 夫婦と子2人で合計6万円（2026年11月13日）",
+          "en": "Tokyo Shimbun — ¥60,000 in total for a couple with two children (13 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.tokyo-np.co.jp/article/527998"
+      },
+      {
+        "n": 11,
+        "label": {
+          "ja": "時事通信（Yahoo!ニュース）片山財務相「年収100万〜450万円の3000万人程度」（2026年11月16日）",
+          "en": "Jiji Press via Yahoo! News — Finance Minister: about 30 million people with incomes of ¥1 million to ¥4.5 million (16 Nov 2026, in Japanese)"
+        },
+        "url": "https://news.yahoo.co.jp/articles/d49e9f989b6e9b568c08754073e30c209be89024"
+      },
+      {
+        "n": 12,
+        "label": {
+          "ja": "NHK 支給が始まる年収を56万円程度とする方向で検討（2026年11月20日）",
+          "en": "NHK — Income at which payments start: about ¥560,000 under consideration (20 Nov 2026, in Japanese)"
+        },
+        "url": "https://news.web.nhk/newsweb/na/nd-20261120de78748"
+      },
+      {
+        "n": 13,
+        "label": {
+          "ja": "日本経済新聞 2027年秋に初回の就業者負担軽減支援金を給付（2026年11月13日）",
+          "en": "Nikkei — First Worker Burden Relief Payment planned for autumn 2027 (13 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.nikkei.com/article/DGXZQOUA042J30U6A101C2000000/"
+      },
+      {
+        "n": 14,
+        "label": {
+          "ja": "国税庁 飲食料品の消費税率の臨時的な引下げのリーフレット（2026年9月、PDF）",
+          "en": "National Tax Agency — Leaflet on the temporary cut in the consumption tax rate on food (Sep 2026; PDF, in Japanese)"
+        },
+        "url": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/0026008-127_leaflet.pdf"
+      },
+      {
+        "n": 15,
+        "label": {
+          "ja": "野村総合研究所 木内登英「木内登英のGlobal Economy & Policy Insight」（2026年11月16日）",
+          "en": "Nomura Research Institute — Takahide Kiuchi, column (16 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.nri.com/jp/media/column/kiuchi/20261116.html"
+      },
+      {
+        "n": 16,
+        "label": {
+          "ja": "衆議院 トップページ（会期：12月12日まで）",
+          "en": "House of Representatives — home page (session until 12 December; in Japanese)"
+        },
+        "url": "https://www.shugiin.go.jp/"
+      },
+      {
+        "n": 17,
+        "label": {
+          "ja": "ANNニュース（KSB瀬戸内海放送）消費税減税法案が衆院通過、野党はすべて反対（2026年11月6日）",
+          "en": "ANN News via KSB Setonaikai Broadcasting — Consumption tax cut bill passes the lower house; all opposition parties against (6 Nov 2026, in Japanese)"
+        },
+        "url": "https://news.ksb.co.jp/ann/article/17029673"
+      }
+    ],
+    "ja": {
+      "title": "就業者負担軽減支援金はいつ・いくら？ 年収いくらまで対象か、わが家の金額を計算",
+      "short": "就業者負担軽減支援金",
+      "eb": "制度のまとめ",
+      "desc": "就業者負担軽減支援金はいつから、いくら、誰が対象？ 1人最大約2万5,000円・子ども1人約5,000円の検討案、年収100万〜450万円という目安、まだ決まっていないことを出典と日付つきで整理。わが家の金額も計算できます。",
+      "asOf": "2026年11月時点の情報です（最終確認：2026年11月20日）。法案はまだ成立していません。",
+      "lead": [
+        "就業者負担軽減支援金は、働く中低所得の人に国が現金を配る新しい制度です。食料品の消費税を2年間8%から1%に下げる法案の中でつくられ、政府は「給付付き税額控除」の第一歩と位置づけています。[2][4]",
+        "法案は2026年11月6日に衆議院を通過し、いまは参議院で審議されています。金額と年収の線は法律ではなく政令で決めることになっていて、まだ決まっていません。このページでは、法案や政府の資料に書いてあること、政府が検討中と答弁したこと、報道された案を分けて、数字ごとに出典と日付を示します。新しい情報が出たら更新します。[3][5][6]"
+      ],
+      "answerH": "答え：いつ・いくら・誰が・どうやって",
+      "answer": [
+        [
+          "いつ",
+          "制度は2027年4月から。2027・2028年度は、年度ごとに原則年1回の支給です。最初の支給の時期はまだ決まっておらず、2027年秋と報じられています。[3][13]",
+          "decided"
+        ],
+        [
+          "いくら",
+          "1人あたり年最大2万5,000円程度を基本に、16歳未満の子ども1人につき年5,000円程度を上乗せする方向で検討中です（11月13日の首相答弁）。夫婦と子ども2人で満額なら年6万円です。[8][9][10]",
+          "considering"
+        ],
+        [
+          "誰が",
+          "前の年に働いて収入があった人です（個人単位）。対象は働く人の5割以上、約3,000万人に広げる方向です。年収100万〜450万円が「大づかみのイメージ」と答弁されていますが、上限と下限はまだ決まっていません。[8][9][11]",
+          "considering"
+        ],
+        [
+          "どうやって",
+          "住んでいる市区町村が受給資格を認定して振り込みます。公金受取口座を登録していれば、申請なしが原則です（登録率は5割程度）。税金はかからず、差し押さえもできません。[1][2][3]",
+          "decided"
+        ]
+      ],
+      "openH": "まだ決まっていないこと",
+      "open": [
+        "年収の上限と下限。政令で決めます。下限は56万円程度とする方向で検討していると報じられています。[3][12]",
+        "最終的な金額。上の金額は検討中の数字で、政令で決まります。[3][8]",
+        "法案が成立するかどうか。参議院で審議中で、会期末は12月12日です。[6][16]",
+        "最初に振り込まれる時期と、公金受取口座を登録していない人の手続き。[13]"
+      ],
+      "legend": "：このページの札の意味です。",
+      "statusL": {
+        "decided": "法案・政府資料に明記",
+        "considering": "政府が検討中",
+        "reported": "報道された案",
+        "open": "未定"
+      },
+      "toc": "目次",
+      "sections": [
+        [
+          "wr-amount",
+          "いくら受け取れる？",
+          [
+            "高市首相は2026年11月13日、参議院の特別委員会で、2027・2028年度は1人あたり最大2万5,000円程度を基本に、16歳未満の子ども1人につき5,000円程度を上乗せする方向で検討していると答えました。どちらも年額です。[8][9]",
+            "時事通信によると、所得が低い人に定額で配る「定額支援額」が年5,000円、最大の「支援基本額」が年2万5,000円です。大綱では、勤労所得が住民税のかからない水準までは定額で、そこから所得とともに増え、頭打ちになったあと、所得がさらに高くなると減ってゼロになる形とされています。夫婦と子ども2人で満額を受け取れる世帯なら、合計で年6万円です。[2][9][10]",
+            "10月に政府が与野党に「一つの参考」として示した案では、約2,000万人に1人平均で年3万円程度、総額は年約6,000億円でした。6,000億円は食料品の消費税1%分の税収にあたると報じられており、法案でも、2027・2028年度の支援金の総額はこの1%分の税収見込みの範囲内とされています。[3][7]",
+            "「年収の壁」に当たる人には、壁がなくなるまでの時限的な加算（就業促進特例加算）もあります。金額はすべて政令で決まり、まだ確定していません。[2][3]"
+          ]
+        ],
+        [
+          "wr-who",
+          "誰が対象？ 年収いくらまで？",
+          [
+            "対象は個人単位で、単身者も含みます。条件は、前の年の勤労所得（給与所得と、一定額を超える事業所得や業務に係る雑所得）が下限を超えていること、合計所得が上限以下であること、税と社会保険料の負担が一定の基準を超えていることです。働いていて現役並みの負担がある年金受給者も対象になります。[2][3]",
+            "年収の線は政令で決めるので、まだ決まっていません。これまでに出た数字は次のとおりです。",
+            [
+              "10月：「一つの参考」として、個人年収300万円台が上限になる可能性があると報じられました。[7]",
+              "11月13日：首相が、働く人の5割以上が対象になるよう所得の上限を設けることを検討すると答弁しました。中所得の人にも届くようにするためで、具体的な金額は示していません。それまでは「3割以上」とされていました。対象は約3,000万人で、共同通信は「3,000万人超」と報じています。[8][9]",
+              "11月16日：片山財務相が、年収100万〜450万円の3,000万人程度を「大づかみのイメージ」と答弁しました。[11]",
+              "11月20日：支給が始まる年収（下限）を56万円程度とする方向で検討していると報じられました。[12]"
+            ],
+            "前の年に働いていない人は、この支援金の対象ではありません。病気や障害、介護などで働けない人への対応は、2028年度中に検討して結論を出すとされています。生活保護を受けている人の場合、支援金は収入として認定されます。[2][3]"
+          ]
+        ],
+        [
+          "wr-when",
+          "いつから？ いつ振り込まれる？",
+          [
+            "食料品の消費税率1%は、2027年4月1日から2029年3月31日までの2年間です。支援金の制度も2027年4月から始まり、2027・2028年度は年度ごとに原則年1回支払われます。税率が8%に戻る2029年度からが本格導入です。[2][3]",
+            "受給資格は前の年の所得で判断され、その年の1月1日に住んでいる市区町村が認定します。2027年度分なら、2026年の所得と、2027年1月1日の住所が基準になります。支払いは、認定から2か月以内です。[3]",
+            "最初の支給がいつになるかは、政府の資料にはまだ書かれていません。日本経済新聞は、2027年秋に初回を支給する計画だと報じています。[13]"
+          ]
+        ],
+        [
+          "wr-how",
+          "どうやって受け取る？ 申請は必要？",
+          [
+            "住んでいる市区町村が受給資格を認定して振り込みます。公金受取口座を登録している人は、申請しなくても市区町村が職権で認定するのが原則です。[2][3]",
+            "公金受取口座の登録率はまだ5割程度で、政府は登録を増やすとしています。登録していない人の手続きは、まだ詳しく示されていません。[1]",
+            "支援金には税金がかからず、差し押さえもできません（国税の滞納処分を除く）。費用は国が3分の2以上を負担し、2027・2028年度は自治体の負担分も国の特別な交付金でまかないます。[2][3]"
+          ]
+        ],
+        [
+          "wr-food",
+          "食料品の消費税1%で、どれだけ安くなる？",
+          [
+            "1%になるのは、いまの軽減税率（8%）の対象の飲食料品と同じ範囲です。酒類と外食（店内での飲食やケータリング）は対象外で10%のまま、新聞の定期購読は8%のままです。[2][14]",
+            "税込みの値段が税率の差の分だけ下がるとすると、税込み108円の品は101円になります。食料品の支出が税込みで月6万円なら、6万円 × 7/108 で月約3,900円、年約4万7,000円です。実際にどれだけ下がるかは、お店の値付けしだいです。",
+            "政府はこの2年間の減税の規模を示していません。野村総合研究所の木内登英氏は、年約5兆円、2年で約10兆円と見積もっています。[15]"
+          ]
+        ],
+        [
+          "wr-bill",
+          "法案はいまどこにある？",
+          [
+            "正式な名前は「租税及び社会保険料による負担の軽減のための飲食料品に係る消費税率の臨時的な引下げ及び就業者負担軽減支援金の支給に関する法律案」です。第222回国会（臨時会）の閣法第1号として、2026年10月9日に提出されました。[5]",
+            "衆議院では財務金融委員会で審議され、11月6日に委員会と本会議で可決されました。賛成は自民党と日本維新の会の会派で、ほかの会派は反対しました。修正はされていません。[5][17]",
+            "参議院では11月11日に「消費税・支援金法案に関する特別委員会」に付託され、審議が続いています。11月20日の時点で、採決の日程は決まっていません。参議院では与党が過半数に届いていません。会期は12月12日までで、延長は決まっていません。[6][16][17]"
+          ]
+        ]
+      ],
+      "timelineH": "これまでの経緯と今後の日程",
+      "timeline": [
+        [
+          "2026-07-29",
+          "2026年7月29日",
+          "社会保障国民会議の中間とりまとめ。所得に連動した給付を2029年度に導入し、それまでのつなぎを設けることを示す。[1]",
+          "decided"
+        ],
+        [
+          "2026-09-15",
+          "2026年9月15日",
+          "政府が大綱を閣議決定。[2]",
+          "decided"
+        ],
+        [
+          "2026-10-09",
+          "2026年10月9日",
+          "法案を閣議決定し、国会に提出。[4][5]",
+          "decided"
+        ],
+        [
+          "2026-10-17",
+          "2026年10月17日",
+          "「一つの参考」の案が報じられる：約2,000万人、1人平均年3万円程度、総額年約6,000億円、上限は個人年収300万円台の可能性。[7]",
+          "reported"
+        ],
+        [
+          "2026-11-06",
+          "2026年11月6日",
+          "衆議院で可決。[5]",
+          "decided"
+        ],
+        [
+          "2026-11-11",
+          "2026年11月11日",
+          "参議院の特別委員会に付託。[6]",
+          "decided"
+        ],
+        [
+          "2026-11-13",
+          "2026年11月13日",
+          "首相答弁：1人最大2万5,000円程度、子ども1人5,000円程度を上乗せ、対象は働く人の5割以上（約3,000万人）に広げる方向。[8][9]",
+          "considering"
+        ],
+        [
+          "2026-11-16",
+          "2026年11月16日",
+          "財務相答弁：年収100万〜450万円の3,000万人程度が「大づかみのイメージ」。[11]",
+          "considering"
+        ],
+        [
+          "2026-11-20",
+          "2026年11月20日",
+          "支給が始まる年収（下限）を56万円程度とする方向と報じられる。[12]",
+          "reported"
+        ],
+        [
+          "2026-12-12",
+          "2026年12月12日",
+          "国会の会期末。それまでに成立するかは未定。[16]",
+          "open"
+        ],
+        [
+          "2027-04",
+          "2027年4月",
+          "食料品の消費税1%と支援金の制度が始まる（法案が成立した場合）。[3]",
+          "decided"
+        ],
+        [
+          "2027",
+          "2027年秋",
+          "初回の支給（日本経済新聞の報道）。[13]",
+          "reported"
+        ],
+        [
+          "2029-04",
+          "2029年4月",
+          "税率が8%に戻り、支援金は本格導入へ（2029年度）。[2][3]",
+          "decided"
+        ]
+      ],
+      "faqH": "よくある質問",
+      "faq": [
+        [
+          "就業者負担軽減支援金はいくらもらえますか？",
+          "まだ決まっていません。2027・2028年度について政府が検討しているのは、1人あたり年最大2万5,000円程度と、16歳未満の子ども1人につき年5,000円程度の上乗せです。夫婦と子ども2人で満額なら年6万円です。金額は政令で決まります。[8][9][10]"
+        ],
+        [
+          "年収いくらまでが対象ですか？",
+          "上限も下限もまだ決まっていません。財務相は11月16日、年収100万〜450万円の3,000万人程度を「大づかみのイメージ」と答弁しました。下限は56万円程度とする方向と報じられています。[11][12]"
+        ],
+        [
+          "いつから、いつ振り込まれますか？",
+          "制度は2027年4月に始まり、2027・2028年度は年1回の支給です。最初の支給の時期は政府の資料にはまだなく、日本経済新聞は2027年秋と報じています。[3][13]"
+        ],
+        [
+          "申請は必要ですか？",
+          "公金受取口座を登録していれば、原則として申請なしで市区町村が認定し、振り込みます。[2][3]"
+        ],
+        [
+          "働いていない人や、年金だけの人は対象ですか？",
+          "前の年の勤労所得が条件なので、働いていない人は対象外です。年金を受け取っていても、働いていて現役並みの税・社会保険料を負担している人は対象になります。[2][3]"
+        ],
+        [
+          "支援金に税金はかかりますか？",
+          "かかりません。差し押さえもできません。ただし生活保護では、収入として認定されます。[2][3]"
+        ],
+        [
+          "外食やお酒も1%になりますか？",
+          "なりません。1%になるのは、いまの軽減税率（8%）の対象の飲食料品と同じ範囲で、酒類と外食は10%のままです。[2][14]"
+        ],
+        [
+          "ベーシックインカムとは何が違いますか？",
+          "支援金は、所得の線の内側にいる働く人だけに、年1回届きます。ベーシックインカムは、全員に無条件で定期的に届きます。くわしくは{給付付き税額控除とベーシックインカムを比べたエッセイ|/essays/refundable-tax-credit-vs-basic-income/}で整理しています。"
+        ]
+      ],
+      "calcH": "わが家の金額を計算する",
+      "calcIntro": "政府が検討中の最大額（1人年2万5,000円、16歳未満の子ども1人年5,000円）で計算します。年収の線がまだ決まっていないので、実際に受け取れるかどうかや金額は変わります。食料品の消費税が下がる分は、税込みの値段が税率の差の分だけ下がると仮定した計算です。入力した数字はどこにも送られず、URLを保存すれば同じ結果をあとで開けます。[8][9]",
+      "calc": {
+        "family": "家族",
+        "workers": "対象になりうる働く大人",
+        "workersHint": "前の年に働いて収入があった人。年収の上限・下限はまだ決まっていません",
+        "kids": "16歳未満の子ども",
+        "kidsHint": "2027・2028年度の子どもの加算の対象（法案）",
+        "others": "そのほかの家族",
+        "othersHint": "16歳以上の子どもや働いていない大人など。下の比較の行だけに数えます",
+        "food": "食料品の支出",
+        "foodL": "家で食べる食料品の支出（月・税込み）",
+        "foodHint": "外食と酒類は含めません（いまの軽減税率と同じく対象外です）。持ち帰りや宅配の食品は含めます。初期値の6万円は入力例です。",
+        "minus": "{what}を1人減らす",
+        "plus": "{what}を1人増やす",
+        "resEb": "わが家の場合（年額）",
+        "status": "検討中の最大額で計算",
+        "year": "年{n}",
+        "totalSub": "支援金と、食料品の消費税が下がる分の合計",
+        "payH": "支援金（検討中の最大額）",
+        "payF": "{a} × {w}人 ＋ {k} × {c}人",
+        "payNote": "支援金の額は、首相が2026年11月13日に検討中と答弁した最大額です。年収の上限・下限がまだ決まっていないので、受け取れるかどうかも、実際の額も未定です。",
+        "foodH": "食料品の消費税が下がる分（8%→1%）",
+        "foodF": "{f} × {d}/{b} × 12か月",
+        "foodNote": "税込みの値段が、税率の差の分だけそのまま下がると仮定した計算です（税込み108円の品が101円に）。実際にどれだけ下がるかはお店しだいです。",
+        "totalH": "合計（年）",
+        "biH": "比較：全員に月1万円のベーシックインカムなら",
+        "biRow": "ベーシックインカム（月1万円）",
+        "biF": "{m} × 12か月 × {n}人",
+        "biNote": "比べるための参考の行です。働いていない人も含めて家族全員が対象で、年収の線はありません。財源は考えていません。",
+        "noJs": "JavaScript をオンにすると、人数と金額を変えて計算できます。下は、働く大人2人・16歳未満の子ども2人・食料品の支出が月6万円の例です。"
+      },
+      "relatedH": "関連ページ",
+      "related": [
+        [
+          "/calc/household/?s=wrp",
+          "わが家のBI計算機：ベーシックインカムで家計は月いくら変わる？"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=wrp",
+          "BI計算機：日本の全員に月1万円配ると、年いくら？"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "2020年の10万円は何に使われた？"
+        ]
+      ],
+      "logH": "更新履歴",
+      "updatedL": "最終更新日",
+      "essayLink": "就業者負担軽減支援金はいつ・いくら？ 最新の情報と、わが家の金額の計算",
+      "hhLink": "わが家のBI計算機で、ほかの金額のベーシックインカムを試す",
+      "hhBack": "就業者負担軽減支援金はいくら？ わが家の金額を計算",
+      "about": "国会で審議中の就業者負担軽減支援金の、いつ・いくら・誰が・どうやって。法案に書いてあること、検討中のこと、報道を分けて数字ごとに出典と日付を付け、情報が出るたびに更新します。わが家の金額の計算機つき。"
+    },
+    "en": {
+      "title": "Japan’s Worker Burden Relief Payment: when, how much, and up to what income? Work out your household’s amount",
+      "short": "Worker Burden Relief Payment",
+      "eb": "Policy explainer",
+      "desc": "Japan’s Worker Burden Relief Payment: when, how much and who qualifies. Up to about ¥25,000 per worker plus ¥5,000 per child under consideration, incomes of ¥1–4.5 million as a rough guide, what is still open. With a calculator.",
+      "asOf": "Information as of November 2026 (last checked 20 November 2026). The bill has not yet become law.",
+      "lead": [
+        "The Worker Burden Relief Payment (shūgyōsha futan keigen shienkin) is a new cash payment from the Japanese state to low- and middle-income people who work. It is created by the same bill that cuts the consumption tax on food from 8% to 1% for two years, and the government calls it the first step toward a refundable tax credit.[2][4]",
+        "The bill passed the House of Representatives on 6 November 2026 and is now before the House of Councillors. The amounts and the income lines will be set by cabinet order, not in the law, and have not been decided. This page keeps apart what the bill and government documents say, what the government has said it is considering, and what has been reported, and gives a source and date for every figure. We update it as new facts come in.[3][5][6]"
+      ],
+      "answerH": "The answer: when, how much, who and how",
+      "answer": [
+        [
+          "When",
+          "The scheme starts in April 2027. In fiscal 2027 and 2028 it is paid once a year in principle. The date of the first payment has not been set; autumn 2027 has been reported.[3][13]",
+          "decided"
+        ],
+        [
+          "How much",
+          "Under consideration: up to about ¥25,000 a year per person as the base, plus about ¥5,000 a year for each child under 16 (the Prime Minister in the Diet, 13 November). A couple with two children receiving the full amount would get ¥60,000 a year.[8][9][10]",
+          "considering"
+        ],
+        [
+          "Who",
+          "People who worked and had earnings in the previous year, assessed one by one. The plan is to widen coverage to 50% or more of workers, about 30 million people. Incomes of ¥1 million to ¥4.5 million have been given as a “rough image”, but the floor and ceiling are not decided.[8][9][11]",
+          "considering"
+        ],
+        [
+          "How",
+          "The municipality you live in certifies you and pays into your account. If you have registered a public-funds receipt account (kōkin uketori kōza), no application is needed in principle (about 50% of people have registered). The payment is not taxed and cannot be seized.[1][2][3]",
+          "decided"
+        ]
+      ],
+      "openH": "Not decided yet",
+      "open": [
+        "The income floor and ceiling, to be set by cabinet order. A floor of about ¥560,000 is reportedly under consideration.[3][12]",
+        "The final amounts. The figures above are under consideration and will be set by cabinet order.[3][8]",
+        "Whether the bill passes. It is before the House of Councillors, and the session ends on 12 December.[6][16]",
+        "When the first payment arrives, and how people without a registered account will claim.[13]"
+      ],
+      "legend": ": what the labels on this page mean.",
+      "statusL": {
+        "decided": "In the bill or government documents",
+        "considering": "Under consideration",
+        "reported": "Reported plan",
+        "open": "Not decided"
+      },
+      "toc": "Contents",
+      "sections": [
+        [
+          "wr-amount",
+          "How much will people get?",
+          [
+            "On 13 November 2026, in a special committee of the House of Councillors, Prime Minister Takaichi said that for fiscal 2027 and 2028 the government is considering a maximum of about ¥25,000 per person as the base, plus about ¥5,000 for each child under 16. Both are yearly amounts.[8][9]",
+            "According to Jiji Press, the flat amount paid to people on low incomes would be ¥5,000 a year and the maximum “base amount” ¥25,000 a year. The cabinet outline describes the shape: a flat amount up to the earnings at which local income tax starts, then rising with earnings, levelling off, and finally falling to zero as total income rises further. A couple with two children who both qualify for the full amount would receive ¥60,000 a year.[2][9][10]",
+            "As “one reference”, the government told the parties in October that about 20 million people could get about ¥30,000 a year each on average, about ¥600 billion a year in total. That ¥600 billion is reported to be the revenue from 1 point of the consumption tax on food, and the bill caps total payments in fiscal 2027 and 2028 at the projected revenue from that 1% rate.[3][7]",
+            "People who hit an “income wall” also get a temporary add-on until the wall is removed. All amounts will be set by cabinet order and are not final.[2][3]"
+          ]
+        ],
+        [
+          "wr-who",
+          "Who qualifies, and up to what income?",
+          [
+            "Eligibility is individual, and single people are included. The conditions are: earned income in the previous year (wages, and business or work-related miscellaneous income above a set amount) above a floor; total income at or below a ceiling; and taxes and social insurance contributions above a set level. Pensioners who work and pay contributions like other workers also qualify.[2][3]",
+            "The income lines will be set by cabinet order and have not been decided. The figures so far:",
+            [
+              "October: as “one reference”, a ceiling somewhere in the ¥3 million range of individual annual income was reported as possible.[7]",
+              "13 November: the Prime Minister said the government will consider a ceiling that makes 50% or more of workers eligible, so that more middle-income workers benefit. She gave no figure. Earlier the aim had been “30% or more”. That is about 30 million people; Kyodo reported “over 30 million”.[8][9]",
+              "16 November: Finance Minister Katayama said that about 30 million people with annual incomes of ¥1 million to ¥4.5 million is the “rough image”.[11]",
+              "20 November: a floor of about ¥560,000 of annual income was reported to be under consideration.[12]"
+            ],
+            "People who did not work in the previous year are not covered. A response for people who cannot work because of illness, disability or care duties is to be considered and decided during fiscal 2028. For people on public assistance, the payment counts as income.[2][3]"
+          ]
+        ],
+        [
+          "wr-when",
+          "When does it start, and when is it paid?",
+          [
+            "The 1% rate on food applies for two years, from 1 April 2027 to 31 March 2029. The payment scheme also starts in April 2027 and in fiscal 2027 and 2028 is paid once a year in principle. The full scheme starts in fiscal 2029, when the rate returns to 8%.[2][3]",
+            "Eligibility is based on the previous year’s income and certified by the municipality you live in on 1 January. For fiscal 2027 that means 2026 income and your address on 1 January 2027. Payment follows within two months of certification.[3]",
+            "Government documents do not yet say when the first payment will be made. The Nikkei reported a plan to make the first payment in autumn 2027.[13]"
+          ]
+        ],
+        [
+          "wr-how",
+          "How is it paid? Do you need to apply?",
+          [
+            "The municipality you live in certifies eligibility and pays into your account. For people who have registered a public-funds receipt account, the municipality certifies them on its own initiative, without an application, in principle.[2][3]",
+            "Only about 50% of people have registered such an account so far, and the government says it will push to raise that. How people without one will claim has not yet been set out in detail.[1]",
+            "The payment is not taxed and cannot be seized (except for national tax arrears). The national government pays at least two thirds of the cost, and in fiscal 2027 and 2028 a special grant also covers the local share.[2][3]"
+          ]
+        ],
+        [
+          "wr-food",
+          "How much cheaper does food get at 1%?",
+          [
+            "The 1% rate covers the same food and drink as today’s reduced 8% rate. Alcohol and eating out (eating in restaurants, and catering) are excluded and stay at 10%; newspaper subscriptions stay at 8%.[2][14]",
+            "If tax-inclusive prices fall by exactly the change in the tax rate, an item that costs ¥108 with tax would cost ¥101. If a household spends ¥60,000 a month on food including tax, ¥60,000 × 7/108 is about ¥3,900 a month, about ¥47,000 a year. How far prices actually fall depends on how shops set them.",
+            "The government has not given the size of the two-year tax cut. Takahide Kiuchi of the Nomura Research Institute estimates about ¥5 trillion a year, about ¥10 trillion over two years.[15]"
+          ]
+        ],
+        [
+          "wr-bill",
+          "Where is the bill now?",
+          [
+            "Its formal name is the Bill on the temporary reduction of the consumption tax rate on food and drink to lighten the burden of taxes and social insurance contributions, and on the payment of the Worker Burden Relief Payment. It was submitted on 9 October 2026 as Cabinet Bill No. 1 of the 222nd (extraordinary) Diet session.[5]",
+            "In the House of Representatives it was examined by the Committee on Financial Affairs and passed in committee and in the plenary on 6 November. The Liberal Democratic Party and the Japan Innovation Party groups voted for it, and the other groups against. It was not amended.[5][17]",
+            "In the House of Councillors it was referred on 11 November to the Special Committee on the consumption tax and relief payment bill, where deliberations continue. As of 20 November no vote has been scheduled. The ruling parties lack a majority in the House of Councillors. The session runs until 12 December, and no extension has been decided.[6][16][17]"
+          ]
+        ]
+      ],
+      "timelineH": "How it got here, and what comes next",
+      "timeline": [
+        [
+          "2026-07-29",
+          "29 July 2026",
+          "The Social Security National Council’s interim report proposes an income-linked payment from fiscal 2029, with a bridge until then.[1]",
+          "decided"
+        ],
+        [
+          "2026-09-15",
+          "15 September 2026",
+          "The cabinet adopts the outline.[2]",
+          "decided"
+        ],
+        [
+          "2026-10-09",
+          "9 October 2026",
+          "The cabinet approves the bill and submits it to the Diet.[4][5]",
+          "decided"
+        ],
+        [
+          "2026-10-17",
+          "17 October 2026",
+          "“One reference” plan reported: about 20 million people, about ¥30,000 a year each on average, about ¥600 billion a year in total, a ceiling possibly in the ¥3 million range of individual income.[7]",
+          "reported"
+        ],
+        [
+          "2026-11-06",
+          "6 November 2026",
+          "Passed by the House of Representatives.[5]",
+          "decided"
+        ],
+        [
+          "2026-11-11",
+          "11 November 2026",
+          "Referred to the special committee of the House of Councillors.[6]",
+          "decided"
+        ],
+        [
+          "2026-11-13",
+          "13 November 2026",
+          "The Prime Minister: up to about ¥25,000 per person, about ¥5,000 extra per child, coverage widened to 50% or more of workers (about 30 million).[8][9]",
+          "considering"
+        ],
+        [
+          "2026-11-16",
+          "16 November 2026",
+          "The Finance Minister: about 30 million people with incomes of ¥1 million to ¥4.5 million is the “rough image”.[11]",
+          "considering"
+        ],
+        [
+          "2026-11-20",
+          "20 November 2026",
+          "An income floor of about ¥560,000 reported to be under consideration.[12]",
+          "reported"
+        ],
+        [
+          "2026-12-12",
+          "12 December 2026",
+          "End of the Diet session. Whether the bill passes by then is open.[16]",
+          "open"
+        ],
+        [
+          "2027-04",
+          "April 2027",
+          "The 1% rate on food and the payment scheme start (if the bill becomes law).[3]",
+          "decided"
+        ],
+        [
+          "2027",
+          "Autumn 2027",
+          "First payment (as reported by the Nikkei).[13]",
+          "reported"
+        ],
+        [
+          "2029-04",
+          "April 2029",
+          "The rate returns to 8% and the full scheme starts (fiscal 2029).[2][3]",
+          "decided"
+        ]
+      ],
+      "faqH": "Frequently asked questions",
+      "faq": [
+        [
+          "How much is the Worker Burden Relief Payment?",
+          "It has not been decided. For fiscal 2027 and 2028 the government is considering up to about ¥25,000 a year per person, plus about ¥5,000 a year for each child under 16. A couple with two children receiving the full amount would get ¥60,000 a year. The amounts will be set by cabinet order.[8][9][10]"
+        ],
+        [
+          "Up to what income does it apply?",
+          "Neither the ceiling nor the floor has been decided. On 16 November the Finance Minister gave about 30 million people with incomes of ¥1 million to ¥4.5 million as the “rough image”. A floor of about ¥560,000 has been reported.[11][12]"
+        ],
+        [
+          "When does it start, and when is it paid?",
+          "The scheme starts in April 2027 and in fiscal 2027 and 2028 pays once a year. Government documents do not yet give the date of the first payment; the Nikkei reported autumn 2027.[3][13]"
+        ],
+        [
+          "Do I need to apply?",
+          "If you have registered a public-funds receipt account, the municipality certifies you and pays without an application, in principle.[2][3]"
+        ],
+        [
+          "Are people who do not work, or who live on a pension, covered?",
+          "Earned income in the previous year is required, so people who do not work are not covered. Pensioners who work and pay taxes and social insurance contributions like other workers do qualify.[2][3]"
+        ],
+        [
+          "Is the payment taxed?",
+          "No, and it cannot be seized. For public assistance, however, it counts as income.[2][3]"
+        ],
+        [
+          "Do eating out and alcohol go down to 1% too?",
+          "No. The 1% rate covers the same food and drink as today’s reduced 8% rate; alcohol and eating out stay at 10%.[2][14]"
+        ],
+        [
+          "How is this different from a basic income?",
+          "The payment reaches only people who work and fall inside the income lines, once a year. A basic income reaches everyone, unconditionally and regularly. {Our essay comparing refundable tax credits and basic income|/essays/refundable-tax-credit-vs-basic-income/} goes through the differences."
+        ]
+      ],
+      "calcH": "Work out your household’s amount",
+      "calcIntro": "This uses the maximum amounts under consideration (¥25,000 a year per person and ¥5,000 a year per child under 16). The income lines are not yet set, so whether you qualify and how much you would get may differ. The food line assumes tax-inclusive prices fall by exactly the change in the tax rate. Nothing you enter is sent anywhere, and you can save the URL to open the same result later.[8][9]",
+      "calc": {
+        "family": "Household",
+        "workers": "Working adults who may qualify",
+        "workersHint": "People who worked and had earnings last year. The income floor and ceiling are not yet set",
+        "kids": "Children under 16",
+        "kidsHint": "The age for the child add-on in fiscal 2027 and 2028 (in the bill)",
+        "others": "Other household members",
+        "othersHint": "Children aged 16 or over, adults who do not work and so on. Counted only in the comparison line below",
+        "food": "Food spending",
+        "foodL": "Food eaten at home, per month, tax included",
+        "foodHint": "Leave out eating out and alcohol (excluded, as with today’s reduced rate). Include takeaway and delivered food. The starting value of ¥60,000 is only an example.",
+        "minus": "One fewer: {what}",
+        "plus": "One more: {what}",
+        "resEb": "Your household (per year)",
+        "status": "At the maximum under consideration",
+        "year": "{n} a year",
+        "totalSub": "The relief payment plus the lower consumption tax on food",
+        "payH": "Relief payment (maximum under consideration)",
+        "payF": "{a} × {w} + {k} × {c}",
+        "payNote": "The payment uses the maximum amounts the Prime Minister said on 13 November 2026 are under consideration. The income floor and ceiling are not yet set, so whether you qualify and the actual amount are both open.",
+        "foodH": "Lower consumption tax on food (8% to 1%)",
+        "foodF": "{f} × {d}/{b} × 12 months",
+        "foodNote": "This assumes tax-inclusive prices fall by exactly the change in the tax rate (an item at ¥108 with tax becomes ¥101). How far prices actually fall depends on the shops.",
+        "totalH": "Total (per year)",
+        "biH": "For comparison: a basic income of ¥10,000 a month for everyone",
+        "biRow": "Basic income (¥10,000 a month)",
+        "biF": "{m} × 12 months × {n} people",
+        "biNote": "A reference line for comparison only. Everyone in the household counts, including people who do not work, and there is no income line. Funding is not considered.",
+        "noJs": "Turn on JavaScript to change the numbers. Below is the example of two working adults, two children under 16 and ¥60,000 a month of food spending."
+      },
+      "relatedH": "Related pages",
+      "related": [
+        [
+          "/calc/household/?s=wrp",
+          "Household calculator: how would a basic income change your household’s budget?"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=wrp",
+          "Basic income calculator: what would ¥10,000 a month for everyone in Japan cost?"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "Where did Japan’s 2020 ¥100,000 payment go?"
+        ]
+      ],
+      "logH": "Update log",
+      "updatedL": "Last updated",
+      "essayLink": "Japan’s Worker Burden Relief Payment: when and how much? The latest figures and a household calculator",
+      "hhLink": "Try other basic income amounts in the household calculator",
+      "hhBack": "Japan’s Worker Burden Relief Payment: how much? Work out your household’s amount",
+      "about": "When, how much, who and how for Japan’s Worker Burden Relief Payment, now before the Diet. What the bill says, what is under consideration and what has been reported are kept apart, with a source and date for every figure, updated as facts come in, with a household calculator."
+    },
+    "zh": {
+      "title": "日本“就业者负担减轻支援金”何时发、发多少？年收入多少以内可领，算算我家能拿多少",
+      "short": "就业者负担减轻支援金",
+      "eb": "制度解读",
+      "desc": "日本“就业者负担减轻支援金”何时开始、发多少、谁能领？正在研究每人最多约2万5,000日元、每个孩子约5,000日元，年收入100万至450万日元的大致目标，以及尚未确定的事项，均附出处和日期。还可以计算我家的金额。",
+      "asOf": "信息截至2026年11月（最后核对：2026年11月20日）。法案尚未成立。",
+      "lead": [
+        "就业者负担减轻支援金（日语：就業者負担軽減支援金）是日本国家向有工作的中低收入者发放现金的新制度。它由把食品消费税在两年内从8%降到1%的同一部法案设立，政府将其定位为“可退还税收抵免”（日语：給付付き税額控除）的第一步。[2][4]",
+        "法案于2026年11月6日通过众议院，目前正在参议院审议。金额和收入界线不写在法律里，而是由政令决定，目前还没有确定。本页把法案和政府文件中写明的内容、政府答辩表示正在研究的内容，以及媒体报道的方案分开整理，每个数字都附出处和日期。有新信息时会随时更新。[3][5][6]"
+      ],
+      "answerH": "答案：何时、多少、谁、怎么领",
+      "answer": [
+        [
+          "何时",
+          "制度从2027年4月开始。2027、2028财年原则上每财年发放一次。首次发放的时间尚未确定，有报道称为2027年秋季。[3][13]",
+          "decided"
+        ],
+        [
+          "多少",
+          "正在研究的方向是：以每人每年最多约2万5,000日元为基础，每名未满16岁的孩子每年再加约5,000日元（首相11月13日答辩）。夫妻加两个孩子全额领取的话，每年6万日元。[8][9][10]",
+          "considering"
+        ],
+        [
+          "谁",
+          "上一年工作并有收入的人，以个人为单位认定。方向是把对象扩大到劳动者的50%以上，约3,000万人。年收入100万至450万日元被称为“大致的印象”，但上限和下限尚未确定。[8][9][11]",
+          "considering"
+        ],
+        [
+          "怎么领",
+          "由居住地的市区町村认定资格并打款到账户。如果已登记“公金受取口座”（公款领取账户），原则上无需申请（登记率约为50%）。支援金不征税，也不能被扣押。[1][2][3]",
+          "decided"
+        ]
+      ],
+      "openH": "尚未确定的事项",
+      "open": [
+        "年收入的上限和下限，将由政令决定。据报道，正在研究把下限定为约56万日元。[3][12]",
+        "最终金额。上面的金额是正在研究的数字，将由政令决定。[3][8]",
+        "法案能否成立。目前正在参议院审议，会期于12月12日结束。[6][16]",
+        "首次到账的时间，以及没有登记公款领取账户的人如何办理手续。[13]"
+      ],
+      "legend": "：本页标签的含义。",
+      "statusL": {
+        "decided": "法案或政府文件中写明",
+        "considering": "政府正在研究",
+        "reported": "媒体报道的方案",
+        "open": "未定"
+      },
+      "toc": "目录",
+      "sections": [
+        [
+          "wr-amount",
+          "能领多少？",
+          [
+            "2026年11月13日，高市首相在参议院特别委员会答辩称，政府正在研究的方向是：2027、2028财年以每人最多约2万5,000日元为基础，每名未满16岁的孩子再加约5,000日元。两者都是年额。[8][9]",
+            "据时事通信社报道，向低收入者定额发放的“定额支援额”为每年5,000日元，最高的“支援基本额”为每年2万5,000日元。根据大纲，劳动所得在不需缴纳居民税的水平以内时为定额，之后随所得增加而增加，达到上限后持平，所得进一步提高后再逐步减少直至为零。夫妻加两个孩子、都能全额领取的家庭，合计每年6万日元。[2][9][10]",
+            "10月，政府作为“一个参考”向朝野各党出示的方案是：约2,000万人，人均每年约3万日元，总额每年约6,000亿日元。据报道，这6,000亿日元相当于食品消费税1个百分点的税收；法案也规定，2027、2028财年支援金总额不超过这1%税率的预计税收。[3][7]",
+            "遇到“年收入之墙”的人，在这道墙消除之前还可以领取临时加算（就业促进特例加算）。所有金额都将由政令决定，尚未最终确定。[2][3]"
+          ]
+        ],
+        [
+          "wr-who",
+          "谁能领？年收入多少以内？",
+          [
+            "对象以个人为单位认定，单身者也包括在内。条件是：上一年的劳动所得（工资所得，以及超过一定金额的事业所得和与业务相关的杂项所得）高于下限；合计所得不超过上限；税和社会保险费的负担超过一定标准。仍在工作、负担与在职者相当的养老金领取者也属于对象。[2][3]",
+            "收入界线由政令决定，目前尚未确定。迄今出现过的数字如下：",
+            [
+              "10月：据报道，作为“一个参考”，上限可能定在个人年收入300多万日元。[7]",
+              "11月13日：首相答辩称，将研究设定所得上限，使劳动者的50%以上成为对象，以便让中等收入者也能受益，但没有给出具体金额。此前的说法是“30%以上”。对象约3,000万人，共同社报道为“超过3,000万人”。[8][9]",
+              "11月16日：片山财务大臣答辩称，年收入100万至450万日元的约3,000万人是“大致的印象”。[11]",
+              "11月20日：据报道，正在研究把开始发放的年收入（下限）定为约56万日元。[12]"
+            ],
+            "上一年没有工作的人不属于这项支援金的对象。对于因疾病、残疾或照护等原因无法工作的人，将在2028财年内研究并得出结论。领取生活保护（最低生活保障）的人，支援金会被认定为收入。[2][3]"
+          ]
+        ],
+        [
+          "wr-when",
+          "何时开始？何时到账？",
+          [
+            "食品消费税率1%的适用期为两年，从2027年4月1日到2029年3月31日。支援金制度也从2027年4月开始，2027、2028财年原则上每财年发放一次。税率恢复为8%的2029财年起正式实施。[2][3]",
+            "领取资格按上一年的所得判断，由当年1月1日居住地的市区町村认定。以2027财年为例，依据的是2026年的所得和2027年1月1日的住址。认定后两个月内发放。[3]",
+            "首次发放的时间，政府文件中尚未写明。日本经济新闻报道称，计划在2027年秋季首次发放。[13]"
+          ]
+        ],
+        [
+          "wr-how",
+          "怎么领？需要申请吗？",
+          [
+            "由居住地的市区町村认定资格并打款到账户。已登记公款领取账户的人，原则上无需申请，由市区町村依职权认定。[2][3]",
+            "目前公款领取账户的登记率只有约50%，政府表示将推动增加登记。没有登记的人如何办理手续，尚未公布详细内容。[1]",
+            "支援金不征税，也不能被扣押（国税滞纳处分除外）。费用由国家负担三分之二以上，2027、2028财年地方政府负担的部分也由国家的特别交付金承担。[2][3]"
+          ]
+        ],
+        [
+          "wr-food",
+          "食品消费税降到1%，能便宜多少？",
+          [
+            "适用1%税率的范围，与目前适用8%轻减税率的饮食品相同。酒类和外食（在店内用餐和餐饮外送服务）不在范围内，仍为10%；报纸订阅仍为8%。[2][14]",
+            "假设含税价格正好按税率差下降，含税108日元的商品会变成101日元。如果家庭每月含税食品支出为6万日元，6万日元 × 7/108，每月约3,900日元，每年约4万7,000日元。实际能降多少，取决于商店如何定价。",
+            "政府没有公布这两年减税的规模。野村综合研究所的木内登英估算，每年约5万亿日元，两年约10万亿日元。[15]"
+          ]
+        ],
+        [
+          "wr-bill",
+          "法案现在进展到哪一步？",
+          [
+            "正式名称是《为减轻税收及社会保险费负担而临时下调饮食品消费税率及发放就业者负担减轻支援金的法律案》。作为第222届国会（临时会）的内阁提出法案第1号，于2026年10月9日提交。[5]",
+            "在众议院由财务金融委员会审议，11月6日在委员会和全体会议上获得通过。自民党和日本维新会的议员团体投了赞成票，其他议员团体投了反对票。法案未经修改。[5][17]",
+            "在参议院，法案于11月11日交付“消费税与支援金法案特别委员会”，审议仍在继续。截至11月20日，表决日程尚未确定。执政党在参议院未过半数。会期到12月12日为止，尚未决定延长。[6][16][17]"
+          ]
+        ]
+      ],
+      "timelineH": "来龙去脉与今后的日程",
+      "timeline": [
+        [
+          "2026-07-29",
+          "2026年7月29日",
+          "社会保障国民会议发表中期汇总，提出在2029财年引入与所得挂钩的给付，并在此之前设置过渡措施。[1]",
+          "decided"
+        ],
+        [
+          "2026-09-15",
+          "2026年9月15日",
+          "内阁会议通过大纲。[2]",
+          "decided"
+        ],
+        [
+          "2026-10-09",
+          "2026年10月9日",
+          "内阁会议通过法案并提交国会。[4][5]",
+          "decided"
+        ],
+        [
+          "2026-10-17",
+          "2026年10月17日",
+          "“一个参考”方案见报：约2,000万人，人均每年约3万日元，总额每年约6,000亿日元，上限可能为个人年收入300多万日元。[7]",
+          "reported"
+        ],
+        [
+          "2026-11-06",
+          "2026年11月6日",
+          "众议院表决通过。[5]",
+          "decided"
+        ],
+        [
+          "2026-11-11",
+          "2026年11月11日",
+          "交付参议院特别委员会。[6]",
+          "decided"
+        ],
+        [
+          "2026-11-13",
+          "2026年11月13日",
+          "首相答辩：每人最多约2万5,000日元，每个孩子加约5,000日元，对象扩大到劳动者的50%以上（约3,000万人）。[8][9]",
+          "considering"
+        ],
+        [
+          "2026-11-16",
+          "2026年11月16日",
+          "财务大臣答辩：年收入100万至450万日元的约3,000万人是“大致的印象”。[11]",
+          "considering"
+        ],
+        [
+          "2026-11-20",
+          "2026年11月20日",
+          "据报道，开始发放的年收入（下限）拟定为约56万日元。[12]",
+          "reported"
+        ],
+        [
+          "2026-12-12",
+          "2026年12月12日",
+          "国会会期结束。在此之前能否成立尚未确定。[16]",
+          "open"
+        ],
+        [
+          "2027-04",
+          "2027年4月",
+          "食品消费税1%和支援金制度开始（如果法案成立）。[3]",
+          "decided"
+        ],
+        [
+          "2027",
+          "2027年秋季",
+          "首次发放（据日本经济新闻报道）。[13]",
+          "reported"
+        ],
+        [
+          "2029-04",
+          "2029年4月",
+          "税率恢复为8%，支援金正式实施（2029财年）。[2][3]",
+          "decided"
+        ]
+      ],
+      "faqH": "常见问题",
+      "faq": [
+        [
+          "就业者负担减轻支援金能领多少？",
+          "尚未确定。政府正在研究的是，2027、2028财年每人每年最多约2万5,000日元，每名未满16岁的孩子每年再加约5,000日元。夫妻加两个孩子全额领取的话，每年6万日元。金额将由政令决定。[8][9][10]"
+        ],
+        [
+          "年收入多少以内可以领？",
+          "上限和下限都还没有确定。财务大臣11月16日答辩称，年收入100万至450万日元的约3,000万人是“大致的印象”。据报道，下限拟定为约56万日元。[11][12]"
+        ],
+        [
+          "何时开始？何时到账？",
+          "制度于2027年4月开始，2027、2028财年每年发放一次。首次发放的时间政府文件中尚未写明，日本经济新闻报道为2027年秋季。[3][13]"
+        ],
+        [
+          "需要申请吗？",
+          "如果已登记公款领取账户，原则上无需申请，由市区町村认定并打款。[2][3]"
+        ],
+        [
+          "不工作的人，或只领养老金的人能领吗？",
+          "条件是上一年有劳动所得，所以不工作的人不属于对象。即使领取养老金，只要仍在工作并负担与在职者相当的税和社会保险费，也属于对象。[2][3]"
+        ],
+        [
+          "支援金要缴税吗？",
+          "不缴税，也不能被扣押。但在生活保护中，会被认定为收入。[2][3]"
+        ],
+        [
+          "外食和酒类也会降到1%吗？",
+          "不会。适用1%税率的范围与目前适用8%轻减税率的饮食品相同，酒类和外食仍为10%。[2][14]"
+        ],
+        [
+          "和基本收入有什么不同？",
+          "支援金每年一次，只发给处在收入界线以内的劳动者。基本收入则无条件、定期地发给所有人。详见{比较可退还税收抵免与基本收入的随笔|/essays/refundable-tax-credit-vs-basic-income/}。"
+        ]
+      ],
+      "calcH": "算算我家能拿多少",
+      "calcIntro": "按政府正在研究的最高金额（每人每年2万5,000日元，每名未满16岁的孩子每年5,000日元）计算。收入界线尚未确定，所以实际能否领取以及金额都可能不同。食品消费税下降的部分，是假设含税价格正好按税率差下降计算的。输入的数字不会发送到任何地方，保存网址就能在以后打开同样的结果。[8][9]",
+      "calc": {
+        "family": "家庭",
+        "workers": "可能符合条件的劳动者（成人）",
+        "workersHint": "上一年工作并有收入的人。年收入的上限和下限尚未确定",
+        "kids": "未满16岁的孩子",
+        "kidsHint": "2027、2028财年儿童加算的对象（法案）",
+        "others": "其他家庭成员",
+        "othersHint": "16岁以上的孩子、不工作的成人等。只计入下方的比较行",
+        "food": "食品支出",
+        "foodL": "在家吃的食品支出（每月，含税）",
+        "foodHint": "不包括外食和酒类（与目前的轻减税率一样不在范围内）。包括外带和配送的食品。初始值6万日元只是示例。",
+        "minus": "减少一位：{what}",
+        "plus": "增加一位：{what}",
+        "resEb": "我家的情况（每年）",
+        "status": "按正在研究的最高金额计算",
+        "year": "每年{n}",
+        "totalSub": "支援金加上食品消费税下降部分的合计",
+        "payH": "支援金（正在研究的最高金额）",
+        "payF": "{a} × {w}人 ＋ {k} × {c}人",
+        "payNote": "支援金额采用首相2026年11月13日答辩时表示正在研究的最高金额。年收入的上限和下限尚未确定，所以能否领取和实际金额都还未定。",
+        "foodH": "食品消费税下降的部分（8%→1%）",
+        "foodF": "{f} × {d}/{b} × 12个月",
+        "foodNote": "假设含税价格正好按税率差下降计算（含税108日元的商品变为101日元）。实际能降多少取决于商店。",
+        "totalH": "合计（每年）",
+        "biH": "比较：如果给所有人每月1万日元的基本收入",
+        "biRow": "基本收入（每月1万日元）",
+        "biF": "{m} × 12个月 × {n}人",
+        "biNote": "仅供比较的参考行。包括不工作的人在内，全家每个人都算，没有收入界线。不考虑财源。",
+        "noJs": "开启JavaScript后，可以改变人数和金额来计算。下面是两名工作的成人、两名未满16岁的孩子、每月食品支出6万日元的示例。"
+      },
+      "relatedH": "相关页面",
+      "related": [
+        [
+          "/calc/household/?s=wrp",
+          "我家基本收入计算器：基本收入会让家庭收支每月变化多少？"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=wrp",
+          "基本收入计算器：给日本所有人每月发1万日元，每年要花多少？"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "2020年的10万日元去了哪里？"
+        ]
+      ],
+      "logH": "更新记录",
+      "updatedL": "最后更新",
+      "essayLink": "就业者负担减轻支援金何时发、发多少？最新信息和我家金额计算",
+      "hhLink": "用我家基本收入计算器试试其他金额的基本收入",
+      "hhBack": "就业者负担减轻支援金能领多少？算算我家的金额",
+      "about": "正在国会审议的日本就业者负担减轻支援金：何时、多少、谁、怎么领。把法案写明的内容、正在研究的内容和媒体报道分开，每个数字附出处和日期，有新信息就更新，并附我家金额计算器。"
+    },
+    "hi": {
+      "title": "जापान का वर्कर बर्डन रिलीफ़ पेमेंट: कब, कितना, और किस आय तक? अपने परिवार की राशि निकालें",
+      "short": "वर्कर बर्डन रिलीफ़ पेमेंट",
+      "eb": "नीति की व्याख्या",
+      "desc": "जापान का वर्कर बर्डन रिलीफ़ पेमेंट: कब, कितना और किसे। हर कामगार को लगभग 25,000 येन तक और हर बच्चे पर 5,000 येन पर विचार, मोटे तौर पर 1 मिलियन से 4.5 मिलियन येन की आय, और क्या अभी तय नहीं। कैलकुलेटर के साथ।",
+      "asOf": "नवंबर 2026 तक की जानकारी (आख़िरी जाँच 20 नवंबर 2026)। विधेयक अभी क़ानून नहीं बना है।",
+      "lead": [
+        "वर्कर बर्डन रिलीफ़ पेमेंट (shūgyōsha futan keigen shienkin) जापान सरकार का एक नया नकद भुगतान है, जो काम करने वाले कम और मध्यम आय के लोगों को मिलेगा। यह उसी विधेयक से बनता है जो खाने-पीने की चीज़ों पर उपभोग कर दो साल के लिए 8% से घटाकर 1% करता है, और सरकार इसे रिफ़ंडेबल टैक्स क्रेडिट की ओर पहला क़दम कहती है।[2][4]",
+        "विधेयक 6 नवंबर 2026 को प्रतिनिधि सभा (निचले सदन) से पास हुआ और अब पार्षद सभा (उच्च सदन) के सामने है। राशियाँ और आय की सीमाएँ क़ानून में नहीं, मंत्रिमंडल के आदेश से तय होंगी, और अभी तय नहीं हुई हैं। यह पेज अलग-अलग रखता है कि विधेयक और सरकारी दस्तावेज़ क्या कहते हैं, सरकार ने किस पर विचार करने की बात कही है, और क्या ख़बरों में आया है, और हर आँकड़े का स्रोत और तारीख़ देता है। नए तथ्य आने पर हम इसे अपडेट करते हैं।[3][5][6]"
+      ],
+      "answerH": "जवाब: कब, कितना, किसे और कैसे",
+      "answer": [
+        [
+          "कब",
+          "योजना अप्रैल 2027 से शुरू होगी। वित्त वर्ष 2027 और 2028 में सिद्धांततः साल में एक बार भुगतान होगा। पहले भुगतान की तारीख़ तय नहीं हुई है; ख़बरों में शरद 2027 बताया गया है।[3][13]",
+          "decided"
+        ],
+        [
+          "कितना",
+          "विचार यह है: आधार के रूप में हर व्यक्ति को सालाना लगभग 25,000 येन तक, और 16 साल से कम उम्र के हर बच्चे पर सालाना लगभग 5,000 येन अतिरिक्त (प्रधानमंत्री, संसद में, 13 नवंबर)। पूरी राशि पाने वाले दो बच्चों वाले दंपती को सालाना 60,000 येन मिलेंगे।[8][9][10]",
+          "considering"
+        ],
+        [
+          "किसे",
+          "जिन लोगों ने पिछले साल काम किया और कमाई की, हर व्यक्ति का अलग आकलन। योजना दायरे को 50% या उससे ज़्यादा कामगारों, यानी लगभग 30 मिलियन लोगों तक बढ़ाने की है। 1 मिलियन से 4.5 मिलियन येन की आय को “मोटी तस्वीर” बताया गया है, लेकिन निचली और ऊपरी सीमा तय नहीं हुई है।[8][9][11]",
+          "considering"
+        ],
+        [
+          "कैसे",
+          "आप जिस नगरपालिका में रहते हैं, वह आपको प्रमाणित करती है और आपके खाते में पैसे डालती है। अगर आपने सार्वजनिक धन प्राप्ति खाता (kōkin uketori kōza) पंजीकृत किया है, तो सिद्धांततः आवेदन की ज़रूरत नहीं (लगभग 50% लोगों ने पंजीकरण किया है)। इस भुगतान पर टैक्स नहीं लगता और इसे ज़ब्त नहीं किया जा सकता।[1][2][3]",
+          "decided"
+        ]
+      ],
+      "openH": "अभी तय नहीं",
+      "open": [
+        "आय की निचली और ऊपरी सीमा, जो मंत्रिमंडल के आदेश से तय होगी। ख़बरों के अनुसार लगभग 560,000 येन की निचली सीमा पर विचार हो रहा है।[3][12]",
+        "अंतिम राशियाँ। ऊपर दिए आँकड़े विचाराधीन हैं और मंत्रिमंडल के आदेश से तय होंगे।[3][8]",
+        "विधेयक पास होगा या नहीं। यह पार्षद सभा के सामने है, और सत्र 12 दिसंबर को ख़त्म होता है।[6][16]",
+        "पहला भुगतान कब आएगा, और बिना पंजीकृत खाते वाले लोग कैसे दावा करेंगे।[13]"
+      ],
+      "legend": ": इस पेज पर लगे लेबलों का मतलब।",
+      "statusL": {
+        "decided": "विधेयक या सरकारी दस्तावेज़ों में",
+        "considering": "विचाराधीन",
+        "reported": "ख़बरों में आई योजना",
+        "open": "तय नहीं"
+      },
+      "toc": "विषय-सूची",
+      "sections": [
+        [
+          "wr-amount",
+          "लोगों को कितना मिलेगा?",
+          [
+            "13 नवंबर 2026 को पार्षद सभा की एक विशेष समिति में प्रधानमंत्री ताकाइची ने कहा कि वित्त वर्ष 2027 और 2028 के लिए सरकार आधार के रूप में हर व्यक्ति को अधिकतम लगभग 25,000 येन, और 16 साल से कम उम्र के हर बच्चे पर लगभग 5,000 येन अतिरिक्त देने पर विचार कर रही है। दोनों सालाना राशियाँ हैं।[8][9]",
+            "जिजी प्रेस के अनुसार कम आय वाले लोगों को मिलने वाली तय राशि सालाना 5,000 येन होगी और अधिकतम “आधार राशि” सालाना 25,000 येन। मंत्रिमंडल की रूपरेखा इसका आकार बताती है: जिस कमाई पर स्थानीय आयकर शुरू होता है वहाँ तक एक तय राशि, फिर कमाई के साथ बढ़ती राशि, फिर एक स्तर पर स्थिर, और कुल आय और बढ़ने पर घटकर शून्य। जिस दो बच्चों वाले दंपती में सब पूरी राशि के हक़दार हों, उसे सालाना 60,000 येन मिलेंगे।[2][9][10]",
+            "अक्टूबर में सरकार ने दलों को “एक संदर्भ” के रूप में बताया कि लगभग 20 मिलियन लोगों को औसतन हर एक को सालाना लगभग 30,000 येन मिल सकते हैं, कुल लगभग 600 अरब येन सालाना। ख़बरों के अनुसार यह 600 अरब येन खाने-पीने की चीज़ों पर उपभोग कर के 1 प्रतिशत अंक से मिलने वाला राजस्व है, और विधेयक वित्त वर्ष 2027 और 2028 में कुल भुगतान को उस 1% दर से अनुमानित राजस्व तक सीमित करता है।[3][7]",
+            "जो लोग “आय की दीवार” से टकराते हैं, उन्हें दीवार हटने तक एक अस्थायी अतिरिक्त राशि भी मिलती है। सभी राशियाँ मंत्रिमंडल के आदेश से तय होंगी और अंतिम नहीं हैं।[2][3]"
+          ]
+        ],
+        [
+          "wr-who",
+          "कौन हक़दार है, और किस आय तक?",
+          [
+            "पात्रता व्यक्तिगत है, और अकेले रहने वाले लोग भी शामिल हैं। शर्तें ये हैं: पिछले साल की कमाई से आय (वेतन, और एक तय राशि से ज़्यादा कारोबारी या काम से जुड़ी विविध आय) एक निचली सीमा से ऊपर हो; कुल आय एक ऊपरी सीमा तक या उससे कम हो; और टैक्स और सामाजिक बीमा अंशदान एक तय स्तर से ऊपर हों। जो पेंशनभोगी काम करते हैं और दूसरे कामगारों की तरह अंशदान देते हैं, वे भी हक़दार हैं।[2][3]",
+            "आय की सीमाएँ मंत्रिमंडल के आदेश से तय होंगी और अभी तय नहीं हुई हैं। अब तक के आँकड़े:",
+            [
+              "अक्टूबर: “एक संदर्भ” के रूप में ख़बर आई कि ऊपरी सीमा व्यक्तिगत सालाना आय के 3 मिलियन येन वाले दायरे में कहीं हो सकती है।[7]",
+              "13 नवंबर: प्रधानमंत्री ने कहा कि सरकार ऐसी ऊपरी सीमा पर विचार करेगी जिससे 50% या उससे ज़्यादा कामगार हक़दार हों, ताकि ज़्यादा मध्यम आय वाले कामगारों को फ़ायदा हो। उन्होंने कोई आँकड़ा नहीं दिया। पहले लक्ष्य “30% या उससे ज़्यादा” था। यह लगभग 30 मिलियन लोग हैं; क्योदो ने “30 मिलियन से ज़्यादा” बताया।[8][9]",
+              "16 नवंबर: वित्त मंत्री कातायामा ने कहा कि 1 मिलियन से 4.5 मिलियन येन सालाना आय वाले लगभग 30 मिलियन लोग “मोटी तस्वीर” है।[11]",
+              "20 नवंबर: ख़बर आई कि लगभग 560,000 येन सालाना आय की निचली सीमा पर विचार हो रहा है।[12]"
+            ],
+            "जिन्होंने पिछले साल काम नहीं किया, वे इसमें शामिल नहीं हैं। बीमारी, विकलांगता या देखभाल की ज़िम्मेदारियों के कारण काम न कर सकने वाले लोगों के लिए क्या किया जाए, इस पर वित्त वर्ष 2028 के दौरान विचार करके फ़ैसला होगा। सार्वजनिक सहायता पाने वालों के लिए यह भुगतान आय माना जाता है।[2][3]"
+          ]
+        ],
+        [
+          "wr-when",
+          "यह कब शुरू होगा, और भुगतान कब होगा?",
+          [
+            "खाने-पीने की चीज़ों पर 1% की दर दो साल लागू रहेगी, 1 अप्रैल 2027 से 31 मार्च 2029 तक। भुगतान योजना भी अप्रैल 2027 में शुरू होगी और वित्त वर्ष 2027 और 2028 में सिद्धांततः साल में एक बार भुगतान होगा। पूरी योजना वित्त वर्ष 2029 में शुरू होगी, जब दर वापस 8% हो जाएगी।[2][3]",
+            "पात्रता पिछले साल की आय पर आधारित है और उस नगरपालिका द्वारा प्रमाणित होती है जहाँ आप 1 जनवरी को रहते हैं। वित्त वर्ष 2027 के लिए इसका मतलब है 2026 की आय और 1 जनवरी 2027 का आपका पता। प्रमाणन के दो महीने के भीतर भुगतान होता है।[3]",
+            "सरकारी दस्तावेज़ अभी नहीं बताते कि पहला भुगतान कब होगा। निक्केई ने शरद 2027 में पहला भुगतान करने की योजना की ख़बर दी।[13]"
+          ]
+        ],
+        [
+          "wr-how",
+          "भुगतान कैसे होगा? क्या आवेदन करना होगा?",
+          [
+            "आप जिस नगरपालिका में रहते हैं, वह पात्रता प्रमाणित करती है और आपके खाते में पैसे डालती है। जिन लोगों ने सार्वजनिक धन प्राप्ति खाता पंजीकृत किया है, उन्हें नगरपालिका सिद्धांततः बिना आवेदन के, अपनी ओर से प्रमाणित करती है।[2][3]",
+            "अब तक केवल लगभग 50% लोगों ने ऐसा खाता पंजीकृत किया है, और सरकार कहती है कि वह इसे बढ़ाने पर ज़ोर देगी। जिनके पास ऐसा खाता नहीं, वे कैसे दावा करेंगे, यह अभी विस्तार से नहीं बताया गया है।[1]",
+            "इस भुगतान पर टैक्स नहीं लगता और इसे ज़ब्त नहीं किया जा सकता (राष्ट्रीय कर बकाये को छोड़कर)। राष्ट्रीय सरकार लागत का कम से कम दो-तिहाई देती है, और वित्त वर्ष 2027 और 2028 में एक विशेष अनुदान स्थानीय हिस्सा भी पूरा करता है।[2][3]"
+          ]
+        ],
+        [
+          "wr-food",
+          "1% पर खाना कितना सस्ता होगा?",
+          [
+            "1% की दर उन्हीं खाने-पीने की चीज़ों पर लागू होगी जिन पर आज 8% की घटी हुई दर है। शराब और बाहर खाना (रेस्टोरेंट में बैठकर खाना, और कैटरिंग) इसमें नहीं हैं और 10% पर रहेंगे; अख़बार की सदस्यता 8% पर रहेगी।[2][14]",
+            "अगर टैक्स सहित दाम ठीक कर दर के अंतर जितने घटें, तो टैक्स सहित 108 येन की चीज़ 101 येन की होगी। अगर कोई परिवार टैक्स सहित महीने में 60,000 येन खाने पर ख़र्च करता है, तो 60,000 येन × 7/108 लगभग 3,900 येन महीना, यानी लगभग 47,000 येन सालाना होता है। दाम असल में कितने घटेंगे, यह दुकानों के दाम तय करने पर निर्भर है।",
+            "सरकार ने दो साल की कर कटौती का आकार नहीं बताया है। नोमुरा रिसर्च इंस्टिट्यूट के ताकाहिदे किउची का अनुमान है लगभग 5 ट्रिलियन येन सालाना, यानी दो साल में लगभग 10 ट्रिलियन येन।[15]"
+          ]
+        ],
+        [
+          "wr-bill",
+          "विधेयक अभी कहाँ है?",
+          [
+            "इसका औपचारिक नाम है: कर और सामाजिक बीमा अंशदान का बोझ हल्का करने के लिए खाने-पीने की चीज़ों पर उपभोग कर दर में अस्थायी कटौती, और वर्कर बर्डन रिलीफ़ पेमेंट के भुगतान से जुड़ा विधेयक। इसे 9 अक्टूबर 2026 को संसद के 222वें (असाधारण) सत्र में मंत्रिमंडल विधेयक संख्या 1 के रूप में पेश किया गया।[5]",
+            "प्रतिनिधि सभा में इसकी जाँच वित्तीय मामलों की समिति ने की, और 6 नवंबर को यह समिति और पूर्ण सदन दोनों में पास हुआ। लिबरल डेमोक्रेटिक पार्टी और जापान इनोवेशन पार्टी के समूहों ने इसके पक्ष में वोट दिया, और बाक़ी समूहों ने ख़िलाफ़। इसमें कोई संशोधन नहीं हुआ।[5][17]",
+            "पार्षद सभा में इसे 11 नवंबर को उपभोग कर और रिलीफ़ पेमेंट विधेयक पर विशेष समिति को भेजा गया, जहाँ बहस जारी है। 20 नवंबर तक कोई मतदान तय नहीं हुआ है। पार्षद सभा में सत्ताधारी दलों के पास बहुमत नहीं है। सत्र 12 दिसंबर तक चलेगा, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[6][16][17]"
+          ]
+        ]
+      ],
+      "timelineH": "यहाँ तक कैसे पहुँचे, और आगे क्या",
+      "timeline": [
+        [
+          "2026-07-29",
+          "29 जुलाई 2026",
+          "सामाजिक सुरक्षा राष्ट्रीय परिषद की अंतरिम रिपोर्ट वित्त वर्ष 2029 से आय से जुड़े भुगतान का प्रस्ताव देती है, तब तक एक अंतरिम व्यवस्था के साथ।[1]",
+          "decided"
+        ],
+        [
+          "2026-09-15",
+          "15 सितंबर 2026",
+          "मंत्रिमंडल रूपरेखा को मंज़ूरी देता है।[2]",
+          "decided"
+        ],
+        [
+          "2026-10-09",
+          "9 अक्टूबर 2026",
+          "मंत्रिमंडल विधेयक को मंज़ूरी देकर संसद में पेश करता है।[4][5]",
+          "decided"
+        ],
+        [
+          "2026-10-17",
+          "17 अक्टूबर 2026",
+          "“एक संदर्भ” वाली योजना की ख़बर: लगभग 20 मिलियन लोग, हर एक को औसतन सालाना लगभग 30,000 येन, कुल लगभग 600 अरब येन सालाना, ऊपरी सीमा शायद व्यक्तिगत आय के 3 मिलियन येन वाले दायरे में।[7]",
+          "reported"
+        ],
+        [
+          "2026-11-06",
+          "6 नवंबर 2026",
+          "प्रतिनिधि सभा से पास।[5]",
+          "decided"
+        ],
+        [
+          "2026-11-11",
+          "11 नवंबर 2026",
+          "पार्षद सभा की विशेष समिति को भेजा गया।[6]",
+          "decided"
+        ],
+        [
+          "2026-11-13",
+          "13 नवंबर 2026",
+          "प्रधानमंत्री: हर व्यक्ति को लगभग 25,000 येन तक, हर बच्चे पर लगभग 5,000 येन अतिरिक्त, दायरा 50% या उससे ज़्यादा कामगारों (लगभग 30 मिलियन) तक।[8][9]",
+          "considering"
+        ],
+        [
+          "2026-11-16",
+          "16 नवंबर 2026",
+          "वित्त मंत्री: 1 मिलियन से 4.5 मिलियन येन आय वाले लगभग 30 मिलियन लोग “मोटी तस्वीर” है।[11]",
+          "considering"
+        ],
+        [
+          "2026-11-20",
+          "20 नवंबर 2026",
+          "ख़बर: लगभग 560,000 येन की आय की निचली सीमा पर विचार।[12]",
+          "reported"
+        ],
+        [
+          "2026-12-12",
+          "12 दिसंबर 2026",
+          "संसद सत्र का अंत। विधेयक तब तक पास होगा या नहीं, यह तय नहीं।[16]",
+          "open"
+        ],
+        [
+          "2027-04",
+          "अप्रैल 2027",
+          "खाने-पीने की चीज़ों पर 1% की दर और भुगतान योजना शुरू (अगर विधेयक क़ानून बनता है)।[3]",
+          "decided"
+        ],
+        [
+          "2027",
+          "शरद 2027",
+          "पहला भुगतान (निक्केई की ख़बर के अनुसार)।[13]",
+          "reported"
+        ],
+        [
+          "2029-04",
+          "अप्रैल 2029",
+          "दर वापस 8% और पूरी योजना शुरू (वित्त वर्ष 2029)।[2][3]",
+          "decided"
+        ]
+      ],
+      "faqH": "अक्सर पूछे जाने वाले सवाल",
+      "faq": [
+        [
+          "वर्कर बर्डन रिलीफ़ पेमेंट कितना है?",
+          "यह तय नहीं हुआ है। वित्त वर्ष 2027 और 2028 के लिए सरकार हर व्यक्ति को सालाना लगभग 25,000 येन तक, और 16 साल से कम उम्र के हर बच्चे पर सालाना लगभग 5,000 येन अतिरिक्त पर विचार कर रही है। पूरी राशि पाने वाले दो बच्चों वाले दंपती को सालाना 60,000 येन मिलेंगे। राशियाँ मंत्रिमंडल के आदेश से तय होंगी।[8][9][10]"
+        ],
+        [
+          "यह किस आय तक लागू होता है?",
+          "न ऊपरी सीमा तय हुई है, न निचली। 16 नवंबर को वित्त मंत्री ने 1 मिलियन से 4.5 मिलियन येन आय वाले लगभग 30 मिलियन लोगों को “मोटी तस्वीर” बताया। लगभग 560,000 येन की निचली सीमा की ख़बर आई है।[11][12]"
+        ],
+        [
+          "यह कब शुरू होगा, और भुगतान कब होगा?",
+          "योजना अप्रैल 2027 में शुरू होगी और वित्त वर्ष 2027 और 2028 में साल में एक बार भुगतान करेगी। सरकारी दस्तावेज़ अभी पहले भुगतान की तारीख़ नहीं बताते; निक्केई ने शरद 2027 बताया।[3][13]"
+        ],
+        [
+          "क्या मुझे आवेदन करना होगा?",
+          "अगर आपने सार्वजनिक धन प्राप्ति खाता पंजीकृत किया है, तो नगरपालिका सिद्धांततः बिना आवेदन के आपको प्रमाणित करके भुगतान करती है।[2][3]"
+        ],
+        [
+          "क्या काम न करने वाले या पेंशन पर रहने वाले लोग शामिल हैं?",
+          "पिछले साल की कमाई से आय ज़रूरी है, इसलिए काम न करने वाले लोग शामिल नहीं हैं। जो पेंशनभोगी काम करते हैं और दूसरे कामगारों की तरह टैक्स और सामाजिक बीमा अंशदान देते हैं, वे हक़दार हैं।[2][3]"
+        ],
+        [
+          "क्या इस भुगतान पर टैक्स लगता है?",
+          "नहीं, और इसे ज़ब्त भी नहीं किया जा सकता। हालाँकि सार्वजनिक सहायता के लिए इसे आय माना जाता है।[2][3]"
+        ],
+        [
+          "क्या बाहर खाना और शराब भी 1% पर आएँगे?",
+          "नहीं। 1% की दर उन्हीं खाने-पीने की चीज़ों पर लागू होगी जिन पर आज 8% की घटी हुई दर है; शराब और बाहर खाना 10% पर रहेंगे।[2][14]"
+        ],
+        [
+          "यह बेसिक इनकम से कैसे अलग है?",
+          "यह भुगतान साल में एक बार सिर्फ़ उन लोगों तक पहुँचता है जो काम करते हैं और आय की सीमाओं के भीतर आते हैं। बेसिक इनकम सबको, बिना शर्त और नियमित रूप से मिलती है। {रिफ़ंडेबल टैक्स क्रेडिट और बेसिक इनकम की तुलना वाला हमारा निबंध|/essays/refundable-tax-credit-vs-basic-income/} इन फ़र्क़ों को विस्तार से बताता है।"
+        ]
+      ],
+      "calcH": "अपने परिवार की राशि निकालें",
+      "calcIntro": "यह विचाराधीन अधिकतम राशियों का इस्तेमाल करता है (हर व्यक्ति को सालाना 25,000 येन और 16 साल से कम उम्र के हर बच्चे पर सालाना 5,000 येन)। आय की सीमाएँ अभी तय नहीं हैं, इसलिए आप हक़दार होंगे या नहीं और आपको कितना मिलेगा, यह अलग हो सकता है। खाने वाली पंक्ति मानती है कि टैक्स सहित दाम ठीक कर दर के अंतर जितने घटते हैं। आप जो भरते हैं वह कहीं नहीं भेजा जाता, और आप URL सेव करके बाद में वही नतीजा खोल सकते हैं।[8][9]",
+      "calc": {
+        "family": "परिवार",
+        "workers": "काम करने वाले वयस्क जो हक़दार हो सकते हैं",
+        "workersHint": "जिन्होंने पिछले साल काम किया और कमाई की। आय की निचली और ऊपरी सीमा अभी तय नहीं",
+        "kids": "16 साल से कम उम्र के बच्चे",
+        "kidsHint": "वित्त वर्ष 2027 और 2028 में बच्चे वाली अतिरिक्त राशि की उम्र (विधेयक में)",
+        "others": "परिवार के दूसरे सदस्य",
+        "othersHint": "16 साल या उससे ज़्यादा उम्र के बच्चे, काम न करने वाले वयस्क आदि। सिर्फ़ नीचे की तुलना वाली पंक्ति में गिने जाते हैं",
+        "food": "खाने पर ख़र्च",
+        "foodL": "घर पर खाया जाने वाला खाना, प्रति माह, टैक्स सहित",
+        "foodHint": "बाहर खाना और शराब छोड़ दें (आज की घटी हुई दर की तरह ये शामिल नहीं)। टेकअवे और घर पहुँचाया गया खाना शामिल करें। शुरुआती 60,000 येन सिर्फ़ एक उदाहरण है।",
+        "minus": "एक कम: {what}",
+        "plus": "एक ज़्यादा: {what}",
+        "resEb": "आपका परिवार (प्रति वर्ष)",
+        "status": "विचाराधीन अधिकतम पर",
+        "year": "{n} सालाना",
+        "totalSub": "रिलीफ़ पेमेंट और खाने पर घटा उपभोग कर",
+        "payH": "रिलीफ़ पेमेंट (विचाराधीन अधिकतम)",
+        "payF": "{a} × {w} + {k} × {c}",
+        "payNote": "भुगतान उन अधिकतम राशियों का इस्तेमाल करता है जिन पर, प्रधानमंत्री ने 13 नवंबर 2026 को कहा, विचार हो रहा है। आय की निचली और ऊपरी सीमा अभी तय नहीं, इसलिए आप हक़दार होंगे या नहीं और असली राशि, दोनों खुले सवाल हैं।",
+        "foodH": "खाने पर घटा उपभोग कर (8% से 1%)",
+        "foodF": "{f} × {d}/{b} × 12 महीने",
+        "foodNote": "यह मानता है कि टैक्स सहित दाम ठीक कर दर के अंतर जितने घटते हैं (टैक्स सहित 108 येन की चीज़ 101 येन की हो जाती है)। दाम असल में कितने घटेंगे, यह दुकानों पर निर्भर है।",
+        "totalH": "कुल (प्रति वर्ष)",
+        "biH": "तुलना के लिए: सबको महीने में 10,000 येन की बेसिक इनकम",
+        "biRow": "बेसिक इनकम (महीने में 10,000 येन)",
+        "biF": "{m} × 12 महीने × {n} लोग",
+        "biNote": "सिर्फ़ तुलना के लिए एक संदर्भ पंक्ति। परिवार के सभी लोग गिने जाते हैं, काम न करने वाले भी, और आय की कोई सीमा नहीं। फ़ंडिंग पर विचार नहीं किया गया है।",
+        "noJs": "आँकड़े बदलने के लिए JavaScript चालू करें। नीचे दो काम करने वाले वयस्कों, 16 साल से कम उम्र के दो बच्चों और महीने में 60,000 येन खाने पर ख़र्च का उदाहरण है।"
+      },
+      "relatedH": "संबंधित पेज",
+      "related": [
+        [
+          "/calc/household/?s=wrp",
+          "परिवार का कैलकुलेटर: बेसिक इनकम आपके परिवार के बजट को कैसे बदलेगी?"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=wrp",
+          "बेसिक इनकम कैलकुलेटर: जापान में सबको महीने में 10,000 येन देने पर कितना ख़र्च आएगा?"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "जापान के 2020 के 100,000 येन के भुगतान का पैसा कहाँ गया?"
+        ]
+      ],
+      "logH": "अपडेट लॉग",
+      "updatedL": "आख़िरी अपडेट",
+      "essayLink": "जापान का वर्कर बर्डन रिलीफ़ पेमेंट: कब और कितना? ताज़ा आँकड़े और परिवार का कैलकुलेटर",
+      "hhLink": "परिवार के कैलकुलेटर में बेसिक इनकम की दूसरी राशियाँ आज़माएँ",
+      "hhBack": "जापान का वर्कर बर्डन रिलीफ़ पेमेंट: कितना? अपने परिवार की राशि निकालें",
+      "about": "संसद के सामने मौजूद जापान के वर्कर बर्डन रिलीफ़ पेमेंट के बारे में कब, कितना, किसे और कैसे। विधेयक क्या कहता है, किस पर विचार हो रहा है और क्या ख़बरों में आया है, ये अलग-अलग रखे गए हैं, हर आँकड़े के स्रोत और तारीख़ के साथ, तथ्य आने पर अपडेट, और परिवार के कैलकुलेटर के साथ।"
+    },
+    "es": {
+      "title": "Pago de alivio de cargas para trabajadores de Japón: cuándo, cuánto y hasta qué ingresos. Calcula la cuantía de tu hogar",
+      "short": "Pago de alivio de cargas para trabajadores",
+      "eb": "Explicación de una política",
+      "desc": "El pago de alivio de cargas para trabajadores de Japón: cuándo, cuánto y quién lo recibe. Se estudian hasta unos 25.000 yenes por trabajador y 5.000 yenes por hijo, ingresos de 1 a 4,5 millones de yenes como orientación, y lo que sigue abierto. Con calculadora.",
+      "asOf": "Información a noviembre de 2026 (última comprobación: 20 de noviembre de 2026). El proyecto de ley aún no es ley.",
+      "lead": [
+        "El pago de alivio de cargas para trabajadores (shūgyōsha futan keigen shienkin) es un nuevo pago en efectivo del Estado japonés a las personas que trabajan con ingresos bajos y medios. Lo crea el mismo proyecto de ley que baja el impuesto sobre el consumo de los alimentos del 8% al 1% durante dos años, y el Gobierno lo presenta como el primer paso hacia un crédito fiscal reembolsable.[2][4]",
+        "El proyecto pasó la Cámara de Representantes el 6 de noviembre de 2026 y está ahora en la Cámara de Consejeros. Las cuantías y los límites de ingresos se fijarán por decreto del Gobierno, no en la ley, y no están decididos. Esta página separa lo que dicen el proyecto y los documentos del Gobierno, lo que el Gobierno ha dicho que estudia y lo que se ha publicado en la prensa, y da una fuente y una fecha para cada cifra. La actualizamos a medida que hay datos nuevos.[3][5][6]"
+      ],
+      "answerH": "La respuesta: cuándo, cuánto, quién y cómo",
+      "answer": [
+        [
+          "Cuándo",
+          "El sistema empieza en abril de 2027. En los años fiscales 2027 y 2028 se paga, en principio, una vez al año. La fecha del primer pago no está fijada; la prensa ha hablado del otoño de 2027.[3][13]",
+          "decided"
+        ],
+        [
+          "Cuánto",
+          "En estudio: hasta unos 25.000 yenes al año por persona como base, más unos 5.000 yenes al año por cada hijo menor de 16 años (la primera ministra en la Dieta, 13 de noviembre). Una pareja con dos hijos que cobre la cuantía completa recibiría 60.000 yenes al año.[8][9][10]",
+          "considering"
+        ],
+        [
+          "Quién",
+          "Quienes trabajaron y tuvieron ingresos el año anterior, de forma individual. La idea es ampliarlo al 50% o más de los trabajadores, unos 30 millones de personas. Se han dado los ingresos de 1 a 4,5 millones de yenes como una «imagen aproximada», pero el mínimo y el máximo no están decididos.[8][9][11]",
+          "considering"
+        ],
+        [
+          "Cómo",
+          "El municipio donde vives reconoce el derecho y paga en tu cuenta. Si has registrado una cuenta para recibir fondos públicos (kōkin uketori kōza), en principio no hace falta solicitarlo (la ha registrado alrededor del 50% de la población). El pago no tributa y no se puede embargar.[1][2][3]",
+          "decided"
+        ]
+      ],
+      "openH": "Lo que aún no está decidido",
+      "open": [
+        "El mínimo y el máximo de ingresos, que se fijarán por decreto. Según la prensa, se estudia un mínimo de unos 560.000 yenes.[3][12]",
+        "Las cuantías finales. Las cifras de arriba están en estudio y se fijarán por decreto.[3][8]",
+        "Si el proyecto se aprueba. Está en la Cámara de Consejeros, y el periodo de sesiones termina el 12 de diciembre.[6][16]",
+        "Cuándo llega el primer pago y cómo lo pedirán quienes no tengan una cuenta registrada.[13]"
+      ],
+      "legend": ": qué significan las etiquetas de esta página.",
+      "statusL": {
+        "decided": "En el proyecto o en documentos del Gobierno",
+        "considering": "En estudio",
+        "reported": "Plan publicado en la prensa",
+        "open": "Sin decidir"
+      },
+      "toc": "Contenido",
+      "sections": [
+        [
+          "wr-amount",
+          "¿Cuánto se recibirá?",
+          [
+            "El 13 de noviembre de 2026, en una comisión especial de la Cámara de Consejeros, la primera ministra Takaichi dijo que para los años fiscales 2027 y 2028 el Gobierno estudia un máximo de unos 25.000 yenes por persona como base, más unos 5.000 yenes por cada hijo menor de 16 años. Ambas cifras son anuales.[8][9]",
+            "Según la agencia Jiji, la cantidad fija para las personas con ingresos bajos sería de 5.000 yenes al año, y la «cuantía base» máxima, de 25.000 yenes al año. El esquema del Gobierno describe la forma: una cantidad fija hasta los ingresos del trabajo a partir de los cuales se paga el impuesto local sobre la renta, después una subida con los ingresos, un tramo plano y, por último, una bajada hasta cero a medida que crece la renta total. Una pareja con dos hijos en la que ambos cobren la cuantía completa recibiría 60.000 yenes al año.[2][9][10]",
+            "Como «una referencia», el Gobierno dijo a los partidos en octubre que unos 20 millones de personas podrían recibir de media unos 30.000 yenes al año cada una, unos 600.000 millones de yenes al año en total. Según la prensa, esos 600.000 millones equivalen a la recaudación de 1 punto del impuesto sobre el consumo de los alimentos, y el proyecto limita el total de los pagos de los años fiscales 2027 y 2028 a la recaudación prevista con ese tipo del 1%.[3][7]",
+            "Quienes chocan con un «muro de ingresos» reciben además un suplemento temporal hasta que ese muro desaparezca. Todas las cuantías se fijarán por decreto y no son definitivas.[2][3]"
+          ]
+        ],
+        [
+          "wr-who",
+          "¿Quién lo recibe y hasta qué ingresos?",
+          [
+            "El derecho es individual, y las personas que viven solas también entran. Las condiciones son: ingresos del trabajo el año anterior (salarios, e ingresos de actividades económicas o ingresos varios ligados al trabajo por encima de una cantidad fijada) por encima de un mínimo; renta total igual o inferior a un máximo; e impuestos y cotizaciones sociales por encima de un nivel fijado. Los pensionistas que trabajan y cotizan como los demás trabajadores también lo reciben.[2][3]",
+            "Los límites de ingresos se fijarán por decreto y no están decididos. Las cifras dadas hasta ahora:",
+            [
+              "Octubre: como «una referencia», la prensa informó de que el máximo podría situarse en la franja de los 3 millones de yenes de renta individual anual.[7]",
+              "13 de noviembre: la primera ministra dijo que el Gobierno estudiará un máximo que haga beneficiarios al 50% o más de los trabajadores, para que lleguen más trabajadores de ingresos medios. No dio ninguna cifra. Antes el objetivo era «el 30% o más». Son unos 30 millones de personas; la agencia Kyodo habló de «más de 30 millones».[8][9]",
+              "16 de noviembre: la ministra de Finanzas, Katayama, dijo que la «imagen aproximada» son unos 30 millones de personas con ingresos anuales de 1 a 4,5 millones de yenes.[11]",
+              "20 de noviembre: la prensa informó de que se estudia un mínimo de unos 560.000 yenes de ingresos anuales.[12]"
+            ],
+            "Quien no trabajó el año anterior no está incluido. La respuesta para quienes no pueden trabajar por enfermedad, discapacidad o cuidados se estudiará y decidirá durante el año fiscal 2028. Para quienes reciben la asistencia pública, el pago cuenta como ingreso.[2][3]"
+          ]
+        ],
+        [
+          "wr-when",
+          "¿Cuándo empieza y cuándo se paga?",
+          [
+            "El tipo del 1% para los alimentos se aplica durante dos años, del 1 de abril de 2027 al 31 de marzo de 2029. El sistema de pagos también empieza en abril de 2027 y en los años fiscales 2027 y 2028 se paga, en principio, una vez al año. El sistema completo empieza en el año fiscal 2029, cuando el tipo vuelve al 8%.[2][3]",
+            "El derecho se basa en los ingresos del año anterior y lo reconoce el municipio donde vives el 1 de enero. Para el año fiscal 2027, eso significa los ingresos de 2026 y tu domicilio el 1 de enero de 2027. El pago llega en los dos meses siguientes al reconocimiento.[3]",
+            "Los documentos del Gobierno aún no dicen cuándo será el primer pago. El diario Nikkei informó de un plan para hacerlo en el otoño de 2027.[13]"
+          ]
+        ],
+        [
+          "wr-how",
+          "¿Cómo se paga? ¿Hay que solicitarlo?",
+          [
+            "El municipio donde vives reconoce el derecho y paga en tu cuenta. A quienes han registrado una cuenta para recibir fondos públicos, el municipio los reconoce de oficio, en principio sin solicitud.[2][3]",
+            "Hasta ahora solo alrededor del 50% de la población ha registrado esa cuenta, y el Gobierno dice que impulsará el registro. Cómo lo pedirán quienes no la tengan aún no se ha detallado.[1]",
+            "El pago no tributa y no se puede embargar (salvo por deudas de impuestos nacionales). El Estado paga al menos dos tercios del coste, y en los años fiscales 2027 y 2028 una subvención especial cubre también la parte local.[2][3]"
+          ]
+        ],
+        [
+          "wr-food",
+          "¿Cuánto bajan los alimentos con el 1%?",
+          [
+            "El tipo del 1% cubre los mismos alimentos y bebidas que el tipo reducido actual del 8%. Las bebidas alcohólicas y comer fuera (comer en restaurantes y el catering) quedan excluidos y siguen al 10%; las suscripciones a periódicos siguen al 8%.[2][14]",
+            "Si los precios con impuestos bajan exactamente lo que cambia el tipo, un producto que cuesta 108 yenes con impuestos costaría 101 yenes. Si un hogar gasta 60.000 yenes al mes en alimentos, impuestos incluidos, 60.000 yenes × 7/108 son unos 3.900 yenes al mes, unos 47.000 yenes al año. Cuánto bajen de verdad los precios depende de cómo los fijen las tiendas.",
+            "El Gobierno no ha dado el tamaño de la rebaja fiscal de dos años. Takahide Kiuchi, del Instituto de Investigación Nomura, la calcula en unos 5 billones de yenes al año, unos 10 billones de yenes en dos años.[15]"
+          ]
+        ],
+        [
+          "wr-bill",
+          "¿En qué punto está el proyecto de ley?",
+          [
+            "Su nombre oficial es Proyecto de ley sobre la reducción temporal del tipo del impuesto sobre el consumo de los alimentos y bebidas para aliviar la carga de los impuestos y las cotizaciones sociales, y sobre el pago de alivio de cargas para trabajadores. Se presentó el 9 de octubre de 2026 como proyecto del Gobierno n.º 1 del 222.º periodo de sesiones (extraordinario) de la Dieta.[5]",
+            "En la Cámara de Representantes lo examinó la Comisión de Asuntos Financieros, y se aprobó en comisión y en el pleno el 6 de noviembre. Votaron a favor los grupos del Partido Liberal Democrático y del Partido de la Innovación de Japón, y en contra los demás grupos. No se enmendó.[5][17]",
+            "En la Cámara de Consejeros se remitió el 11 de noviembre a la Comisión Especial sobre el proyecto del impuesto sobre el consumo y del pago de alivio, donde siguen los debates. A 20 de noviembre no hay fecha para la votación. Los partidos del Gobierno no tienen mayoría en la Cámara de Consejeros. El periodo de sesiones dura hasta el 12 de diciembre, y no se ha decidido ninguna prórroga.[6][16][17]"
+          ]
+        ]
+      ],
+      "timelineH": "Cómo se ha llegado hasta aquí y qué viene después",
+      "timeline": [
+        [
+          "2026-07-29",
+          "29 de julio de 2026",
+          "El informe intermedio del Consejo Nacional de la Seguridad Social propone un pago ligado a los ingresos a partir del año fiscal 2029, con una transición hasta entonces.[1]",
+          "decided"
+        ],
+        [
+          "2026-09-15",
+          "15 de septiembre de 2026",
+          "El Consejo de Ministros aprueba el esquema.[2]",
+          "decided"
+        ],
+        [
+          "2026-10-09",
+          "9 de octubre de 2026",
+          "El Consejo de Ministros aprueba el proyecto de ley y lo envía a la Dieta.[4][5]",
+          "decided"
+        ],
+        [
+          "2026-10-17",
+          "17 de octubre de 2026",
+          "La prensa informa del plan de «una referencia»: unos 20 millones de personas, de media unos 30.000 yenes al año cada una, unos 600.000 millones de yenes al año en total y un máximo que podría estar en la franja de los 3 millones de yenes de renta individual.[7]",
+          "reported"
+        ],
+        [
+          "2026-11-06",
+          "6 de noviembre de 2026",
+          "Aprobado por la Cámara de Representantes.[5]",
+          "decided"
+        ],
+        [
+          "2026-11-11",
+          "11 de noviembre de 2026",
+          "Remitido a la comisión especial de la Cámara de Consejeros.[6]",
+          "decided"
+        ],
+        [
+          "2026-11-13",
+          "13 de noviembre de 2026",
+          "La primera ministra: hasta unos 25.000 yenes por persona, unos 5.000 yenes más por hijo y cobertura ampliada al 50% o más de los trabajadores (unos 30 millones).[8][9]",
+          "considering"
+        ],
+        [
+          "2026-11-16",
+          "16 de noviembre de 2026",
+          "La ministra de Finanzas: la «imagen aproximada» son unos 30 millones de personas con ingresos de 1 a 4,5 millones de yenes.[11]",
+          "considering"
+        ],
+        [
+          "2026-11-20",
+          "20 de noviembre de 2026",
+          "La prensa informa de que se estudia un mínimo de ingresos de unos 560.000 yenes.[12]",
+          "reported"
+        ],
+        [
+          "2026-12-12",
+          "12 de diciembre de 2026",
+          "Fin del periodo de sesiones de la Dieta. Sigue abierto si el proyecto se aprueba antes.[16]",
+          "open"
+        ],
+        [
+          "2027-04",
+          "Abril de 2027",
+          "Empiezan el tipo del 1% para los alimentos y el sistema de pagos (si el proyecto se convierte en ley).[3]",
+          "decided"
+        ],
+        [
+          "2027",
+          "Otoño de 2027",
+          "Primer pago (según el Nikkei).[13]",
+          "reported"
+        ],
+        [
+          "2029-04",
+          "Abril de 2029",
+          "El tipo vuelve al 8% y empieza el sistema completo (año fiscal 2029).[2][3]",
+          "decided"
+        ]
+      ],
+      "faqH": "Preguntas frecuentes",
+      "faq": [
+        [
+          "¿Cuánto es el pago de alivio de cargas para trabajadores?",
+          "No está decidido. Para los años fiscales 2027 y 2028 el Gobierno estudia hasta unos 25.000 yenes al año por persona, más unos 5.000 yenes al año por cada hijo menor de 16 años. Una pareja con dos hijos que cobre la cuantía completa recibiría 60.000 yenes al año. Las cuantías se fijarán por decreto.[8][9][10]"
+        ],
+        [
+          "¿Hasta qué ingresos se aplica?",
+          "No están decididos ni el máximo ni el mínimo. El 16 de noviembre la ministra de Finanzas dio como «imagen aproximada» unos 30 millones de personas con ingresos de 1 a 4,5 millones de yenes. La prensa ha informado de un mínimo de unos 560.000 yenes.[11][12]"
+        ],
+        [
+          "¿Cuándo empieza y cuándo se paga?",
+          "El sistema empieza en abril de 2027 y en los años fiscales 2027 y 2028 paga una vez al año. Los documentos del Gobierno aún no dan la fecha del primer pago; el Nikkei habló del otoño de 2027.[3][13]"
+        ],
+        [
+          "¿Tengo que solicitarlo?",
+          "Si has registrado una cuenta para recibir fondos públicos, en principio el municipio reconoce tu derecho y paga sin solicitud.[2][3]"
+        ],
+        [
+          "¿Están incluidas las personas que no trabajan o que viven de una pensión?",
+          "Hacen falta ingresos del trabajo el año anterior, así que quienes no trabajan no están incluidos. Los pensionistas que trabajan y pagan impuestos y cotizaciones sociales como los demás trabajadores sí lo reciben.[2][3]"
+        ],
+        [
+          "¿El pago tributa?",
+          "No, y tampoco se puede embargar. Para la asistencia pública, en cambio, cuenta como ingreso.[2][3]"
+        ],
+        [
+          "¿Comer fuera y el alcohol también bajan al 1%?",
+          "No. El tipo del 1% cubre los mismos alimentos y bebidas que el tipo reducido actual del 8%; el alcohol y comer fuera siguen al 10%.[2][14]"
+        ],
+        [
+          "¿En qué se diferencia de una renta básica?",
+          "El pago solo llega a quienes trabajan y están dentro de los límites de ingresos, una vez al año. Una renta básica llega a todo el mundo, sin condiciones y de forma periódica. {Nuestro ensayo que compara los créditos fiscales reembolsables y la renta básica|/essays/refundable-tax-credit-vs-basic-income/} repasa las diferencias."
+        ]
+      ],
+      "calcH": "Calcula la cuantía de tu hogar",
+      "calcIntro": "Usa las cuantías máximas en estudio (25.000 yenes al año por persona y 5.000 yenes al año por hijo menor de 16 años). Los límites de ingresos aún no están fijados, así que si te corresponde y cuánto recibirías puede ser distinto. La línea de los alimentos supone que los precios con impuestos bajan exactamente lo que cambia el tipo. Nada de lo que escribes se envía a ningún sitio, y puedes guardar la URL para volver a ver el mismo resultado.[8][9]",
+      "calc": {
+        "family": "Hogar",
+        "workers": "Adultos que trabajan y podrían recibirlo",
+        "workersHint": "Personas que trabajaron y tuvieron ingresos el año pasado. El mínimo y el máximo de ingresos aún no están fijados",
+        "kids": "Hijos menores de 16 años",
+        "kidsHint": "La edad para el suplemento por hijo en los años fiscales 2027 y 2028 (en el proyecto de ley)",
+        "others": "Otros miembros del hogar",
+        "othersHint": "Hijos de 16 años o más, adultos que no trabajan, etc. Solo cuentan en la línea de comparación de abajo",
+        "food": "Gasto en alimentos",
+        "foodL": "Alimentos para comer en casa, al mes, impuestos incluidos",
+        "foodHint": "No incluyas comer fuera ni el alcohol (excluidos, como en el tipo reducido actual). Incluye la comida para llevar y a domicilio. El valor inicial de 60.000 yenes es solo un ejemplo.",
+        "minus": "Uno menos: {what}",
+        "plus": "Uno más: {what}",
+        "resEb": "Tu hogar (al año)",
+        "status": "Con el máximo en estudio",
+        "year": "{n} al año",
+        "totalSub": "El pago de alivio más la bajada del impuesto sobre el consumo de los alimentos",
+        "payH": "Pago de alivio (máximo en estudio)",
+        "payF": "{a} × {w} + {k} × {c}",
+        "payNote": "El pago usa las cuantías máximas que la primera ministra dijo el 13 de noviembre de 2026 que están en estudio. El mínimo y el máximo de ingresos aún no están fijados, así que siguen abiertos tanto si te corresponde como la cuantía real.",
+        "foodH": "Bajada del impuesto sobre el consumo de los alimentos (del 8% al 1%)",
+        "foodF": "{f} × {d}/{b} × 12 meses",
+        "foodNote": "Supone que los precios con impuestos bajan exactamente lo que cambia el tipo (un producto de 108 yenes con impuestos pasa a 101 yenes). Cuánto bajen de verdad los precios depende de las tiendas.",
+        "totalH": "Total (al año)",
+        "biH": "Para comparar: una renta básica de 10.000 yenes al mes para todos",
+        "biRow": "Renta básica (10.000 yenes al mes)",
+        "biF": "{m} × 12 meses × {n} personas",
+        "biNote": "Una línea de referencia solo para comparar. Cuentan todos los miembros del hogar, también quienes no trabajan, y no hay límite de ingresos. No se tiene en cuenta la financiación.",
+        "noJs": "Activa JavaScript para cambiar los números. Abajo está el ejemplo de dos adultos que trabajan, dos hijos menores de 16 años y 60.000 yenes al mes de gasto en alimentos."
+      },
+      "relatedH": "Páginas relacionadas",
+      "related": [
+        [
+          "/calc/household/?s=wrp",
+          "Calculadora para tu hogar: ¿cómo cambiaría una renta básica el presupuesto de tu hogar?"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=wrp",
+          "Calculadora de renta básica: ¿cuánto costaría dar 10.000 yenes al mes a todo el mundo en Japón?"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "¿Adónde fue el pago de 100.000 yenes de Japón en 2020?"
+        ]
+      ],
+      "logH": "Registro de cambios",
+      "updatedL": "Última actualización",
+      "essayLink": "El pago de alivio de cargas para trabajadores de Japón: ¿cuándo y cuánto? Las últimas cifras y una calculadora para tu hogar",
+      "hhLink": "Prueba otras cuantías de renta básica en la calculadora para tu hogar",
+      "hhBack": "El pago de alivio de cargas para trabajadores de Japón: ¿cuánto? Calcula la cuantía de tu hogar",
+      "about": "Cuándo, cuánto, quién y cómo del pago de alivio de cargas para trabajadores de Japón, ahora en la Dieta. Se separan lo que dice el proyecto, lo que está en estudio y lo que ha publicado la prensa, con una fuente y una fecha para cada cifra, actualizado a medida que hay datos, y con una calculadora para tu hogar."
+    },
+    "de": {
+      "title": "Japans Entlastungszahlung für Erwerbstätige: wann, wie viel und bis zu welchem Einkommen? Berechnen Sie den Betrag für Ihren Haushalt",
+      "short": "Entlastungszahlung für Erwerbstätige",
+      "eb": "Erklärt",
+      "desc": "Japans Entlastungszahlung für Erwerbstätige: wann, wie viel, wer sie bekommt. Geprüft werden bis zu etwa 25.000 Yen pro Person plus 5.000 Yen pro Kind, Einkommen von 1 bis 4,5 Millionen Yen als Richtwert, und was noch offen ist. Mit Rechner.",
+      "asOf": "Stand: November 2026 (zuletzt geprüft am 20. November 2026). Der Gesetzentwurf ist noch nicht verabschiedet.",
+      "lead": [
+        "Die Entlastungszahlung für Erwerbstätige (shūgyōsha futan keigen shienkin) ist eine neue Geldleistung des japanischen Staates an Menschen mit niedrigem und mittlerem Einkommen, die arbeiten. Sie wird mit demselben Gesetzentwurf eingeführt, der die Verbrauchsteuer auf Lebensmittel für zwei Jahre von 8 % auf 1 % senkt, und die Regierung nennt sie den ersten Schritt zu einer erstattungsfähigen Steuergutschrift.[2][4]",
+        "Der Entwurf passierte am 6. November 2026 das Unterhaus und liegt jetzt dem Oberhaus vor. Die Beträge und die Einkommensgrenzen werden nicht im Gesetz, sondern per Kabinettsverordnung festgelegt und sind noch nicht entschieden. Diese Seite trennt, was im Gesetzentwurf und in Regierungsunterlagen steht, was die Regierung nach eigenen Worten prüft und was berichtet wurde, und nennt zu jeder Zahl Quelle und Datum. Wir aktualisieren sie, sobald es Neues gibt.[3][5][6]"
+      ],
+      "answerH": "Die Antwort: wann, wie viel, wer und wie",
+      "answer": [
+        [
+          "Wann",
+          "Die Regelung beginnt im April 2027. In den Fiskaljahren 2027 und 2028 wird grundsätzlich einmal im Jahr gezahlt. Der Termin der ersten Zahlung steht noch nicht fest; berichtet wurde Herbst 2027.[3][13]",
+          "decided"
+        ],
+        [
+          "Wie viel",
+          "Geprüft wird: als Grundbetrag bis zu etwa 25.000 Yen pro Person und Jahr, dazu etwa 5.000 Yen pro Jahr für jedes Kind unter 16 (die Premierministerin im Parlament, 13. November). Ein Paar mit zwei Kindern bekäme beim vollen Betrag 60.000 Yen im Jahr.[8][9][10]",
+          "considering"
+        ],
+        [
+          "Wer",
+          "Menschen, die im Vorjahr gearbeitet und Erwerbseinkommen hatten, jeweils einzeln betrachtet. Geplant ist, den Kreis auf 50 % oder mehr der Erwerbstätigen auszuweiten, etwa 30 Millionen Menschen. Einkommen von 1 Million bis 4,5 Millionen Yen wurden als „grobes Bild“ genannt, Unter- und Obergrenze sind aber nicht entschieden.[8][9][11]",
+          "considering"
+        ],
+        [
+          "Wie",
+          "Die Wohngemeinde stellt die Berechtigung fest und überweist auf Ihr Konto. Wer ein Konto für öffentliche Zahlungen (kōkin uketori kōza) registriert hat, muss grundsätzlich keinen Antrag stellen (etwa 50 % haben eines registriert). Die Zahlung ist steuerfrei und unpfändbar.[1][2][3]",
+          "decided"
+        ]
+      ],
+      "openH": "Noch nicht entschieden",
+      "open": [
+        "Unter- und Obergrenze des Einkommens, die per Kabinettsverordnung festgelegt werden. Berichten zufolge wird eine Untergrenze von etwa 560.000 Yen geprüft.[3][12]",
+        "Die endgültigen Beträge. Die Zahlen oben werden geprüft und per Kabinettsverordnung festgelegt.[3][8]",
+        "Ob der Entwurf verabschiedet wird. Er liegt dem Oberhaus vor, und die Sitzungsperiode endet am 12. Dezember.[6][16]",
+        "Wann die erste Zahlung kommt und wie Menschen ohne registriertes Konto sie beantragen.[13]"
+      ],
+      "legend": ": Das bedeuten die Kennzeichnungen auf dieser Seite.",
+      "statusL": {
+        "decided": "Im Gesetzentwurf oder in Regierungsunterlagen",
+        "considering": "Wird geprüft",
+        "reported": "Berichteter Plan",
+        "open": "Nicht entschieden"
+      },
+      "toc": "Inhalt",
+      "sections": [
+        [
+          "wr-amount",
+          "Wie viel bekommt man?",
+          [
+            "Am 13. November 2026 sagte Premierministerin Takaichi in einem Sonderausschuss des Oberhauses, die Regierung prüfe für die Fiskaljahre 2027 und 2028 einen Grundbetrag von höchstens etwa 25.000 Yen pro Person, dazu etwa 5.000 Yen für jedes Kind unter 16. Beides sind Jahresbeträge.[8][9]",
+            "Laut der Nachrichtenagentur Jiji läge der Pauschalbetrag für Menschen mit niedrigem Einkommen bei 5.000 Yen im Jahr und der höchste „Grundbetrag“ bei 25.000 Yen im Jahr. Die Eckpunkte des Kabinetts beschreiben den Verlauf: ein Pauschalbetrag bis zu dem Erwerbseinkommen, ab dem die lokale Einkommensteuer anfällt, dann ein Anstieg mit dem Einkommen, ein Plateau und schließlich ein Rückgang auf null, wenn das Gesamteinkommen weiter steigt. Ein Paar mit zwei Kindern, bei dem beide den vollen Betrag erhalten, bekäme 60.000 Yen im Jahr.[2][9][10]",
+            "Als „eine Orientierung“ nannte die Regierung den Parteien im Oktober etwa 20 Millionen Menschen mit durchschnittlich etwa 30.000 Yen pro Jahr, zusammen etwa 600 Milliarden Yen jährlich. Diese 600 Milliarden Yen entsprechen Berichten zufolge den Einnahmen aus 1 Prozentpunkt der Verbrauchsteuer auf Lebensmittel, und der Entwurf begrenzt die Zahlungen in den Fiskaljahren 2027 und 2028 insgesamt auf die erwarteten Einnahmen aus diesem Satz von 1 %.[3][7]",
+            "Wer an eine „Einkommensmauer“ stößt, erhält außerdem einen befristeten Zuschlag, bis die Mauer beseitigt ist. Alle Beträge werden per Kabinettsverordnung festgelegt und sind nicht endgültig.[2][3]"
+          ]
+        ],
+        [
+          "wr-who",
+          "Wer ist berechtigt, und bis zu welchem Einkommen?",
+          [
+            "Die Berechtigung gilt pro Person, Alleinstehende sind eingeschlossen. Die Bedingungen: Erwerbseinkommen im Vorjahr (Lohn sowie Einkünfte aus Gewerbe oder arbeitsbezogene sonstige Einkünfte über einem bestimmten Betrag) über einer Untergrenze; Gesamteinkommen höchstens bis zu einer Obergrenze; und Steuern und Sozialversicherungsbeiträge über einem bestimmten Niveau. Auch Rentnerinnen und Rentner, die arbeiten und Beiträge wie andere Erwerbstätige zahlen, sind berechtigt.[2][3]",
+            "Die Einkommensgrenzen werden per Kabinettsverordnung festgelegt und sind noch nicht entschieden. Die bisherigen Zahlen:",
+            [
+              "Oktober: Als „eine Orientierung“ wurde eine mögliche Obergrenze bei einem individuellen Jahreseinkommen im Bereich von 3 Millionen Yen berichtet.[7]",
+              "13. November: Die Premierministerin sagte, die Regierung prüfe eine Obergrenze, mit der 50 % oder mehr der Erwerbstätigen berechtigt wären, damit mehr Erwerbstätige mit mittlerem Einkommen profitieren. Eine Zahl nannte sie nicht. Zuvor hatte das Ziel „30 % oder mehr“ gelautet. Das sind etwa 30 Millionen Menschen; Kyodo berichtete von „über 30 Millionen“.[8][9]",
+              "16. November: Finanzministerin Katayama sagte, etwa 30 Millionen Menschen mit Jahreseinkommen von 1 Million bis 4,5 Millionen Yen seien das „grobe Bild“.[11]",
+              "20. November: Berichten zufolge wird eine Untergrenze von etwa 560.000 Yen Jahreseinkommen geprüft.[12]"
+            ],
+            "Wer im Vorjahr nicht gearbeitet hat, ist nicht erfasst. Eine Lösung für Menschen, die wegen Krankheit, Behinderung oder Pflegeaufgaben nicht arbeiten können, soll im Fiskaljahr 2028 geprüft und entschieden werden. Bei Bezug von Sozialhilfe wird die Zahlung als Einkommen angerechnet.[2][3]"
+          ]
+        ],
+        [
+          "wr-when",
+          "Wann beginnt sie, und wann wird gezahlt?",
+          [
+            "Der Satz von 1 % auf Lebensmittel gilt zwei Jahre, vom 1. April 2027 bis zum 31. März 2029. Auch die Zahlung beginnt im April 2027 und wird in den Fiskaljahren 2027 und 2028 grundsätzlich einmal im Jahr geleistet. Die volle Regelung beginnt im Fiskaljahr 2029, wenn der Satz wieder auf 8 % steigt.[2][3]",
+            "Die Berechtigung richtet sich nach dem Einkommen des Vorjahres und wird von der Gemeinde festgestellt, in der man am 1. Januar wohnt. Für das Fiskaljahr 2027 heißt das: Einkommen 2026 und Wohnsitz am 1. Januar 2027. Gezahlt wird innerhalb von zwei Monaten nach der Feststellung.[3]",
+            "Wann die erste Zahlung erfolgt, steht in den Regierungsunterlagen noch nicht. Die Wirtschaftszeitung Nikkei berichtete von einem Plan, erstmals im Herbst 2027 zu zahlen.[13]"
+          ]
+        ],
+        [
+          "wr-how",
+          "Wie wird gezahlt? Muss man einen Antrag stellen?",
+          [
+            "Die Wohngemeinde stellt die Berechtigung fest und überweist auf Ihr Konto. Bei Menschen, die ein Konto für öffentliche Zahlungen registriert haben, stellt die Gemeinde die Berechtigung grundsätzlich von Amts wegen fest, ohne Antrag.[2][3]",
+            "Bisher haben nur etwa 50 % der Menschen ein solches Konto registriert, und die Regierung will die Zahl erhöhen. Wie Menschen ohne ein solches Konto die Zahlung beantragen, ist noch nicht im Einzelnen festgelegt.[1]",
+            "Die Zahlung ist steuerfrei und unpfändbar (außer bei Rückständen nationaler Steuern). Der Staat trägt mindestens zwei Drittel der Kosten, und in den Fiskaljahren 2027 und 2028 deckt ein Sonderzuschuss auch den kommunalen Anteil.[2][3]"
+          ]
+        ],
+        [
+          "wr-food",
+          "Wie viel billiger werden Lebensmittel mit 1 %?",
+          [
+            "Der Satz von 1 % gilt für dieselben Lebensmittel und Getränke wie der heutige ermäßigte Satz von 8 %. Alkohol und Gastronomie (Essen im Restaurant und Catering) sind ausgenommen und bleiben bei 10 %; Zeitungsabonnements bleiben bei 8 %.[2][14]",
+            "Sinken die Bruttopreise genau um die Änderung des Steuersatzes, kostet ein Artikel für 108 Yen inklusive Steuer danach 101 Yen. Gibt ein Haushalt 60.000 Yen im Monat für Lebensmittel inklusive Steuer aus, ergeben 60.000 Yen × 7/108 etwa 3.900 Yen im Monat, etwa 47.000 Yen im Jahr. Wie stark die Preise tatsächlich sinken, hängt davon ab, wie die Geschäfte sie festsetzen.",
+            "Die Regierung hat den Umfang der zweijährigen Steuersenkung nicht beziffert. Takahide Kiuchi vom Nomura Research Institute schätzt etwa 5 Billionen Yen im Jahr, etwa 10 Billionen Yen über zwei Jahre.[15]"
+          ]
+        ],
+        [
+          "wr-bill",
+          "Wo steht der Gesetzentwurf?",
+          [
+            "Sein offizieller Name lautet Gesetzentwurf über die befristete Senkung des Verbrauchsteuersatzes auf Lebensmittel und Getränke zur Entlastung von Steuern und Sozialversicherungsbeiträgen und über die Zahlung der Entlastungszahlung für Erwerbstätige. Er wurde am 9. Oktober 2026 als Kabinettsentwurf Nr. 1 der 222. (außerordentlichen) Sitzungsperiode des Parlaments eingebracht.[5]",
+            "Im Unterhaus beriet ihn der Finanzausschuss; am 6. November wurde er im Ausschuss und im Plenum angenommen. Die Fraktionen der Liberaldemokratischen Partei und der Japanischen Innovationspartei stimmten dafür, die übrigen Fraktionen dagegen. Er wurde nicht geändert.[5][17]",
+            "Im Oberhaus wurde er am 11. November an den Sonderausschuss zum Gesetzentwurf über Verbrauchsteuer und Entlastungszahlung überwiesen, wo die Beratungen andauern. Stand 20. November ist keine Abstimmung angesetzt. Die Regierungsparteien haben im Oberhaus keine Mehrheit. Die Sitzungsperiode läuft bis zum 12. Dezember, eine Verlängerung ist nicht beschlossen.[6][16][17]"
+          ]
+        ]
+      ],
+      "timelineH": "Wie es dazu kam und was als Nächstes ansteht",
+      "timeline": [
+        [
+          "2026-07-29",
+          "29. Juli 2026",
+          "Der Zwischenbericht des Nationalen Rats für soziale Sicherheit schlägt ab dem Fiskaljahr 2029 eine einkommensabhängige Zahlung vor, mit einer Übergangslösung bis dahin.[1]",
+          "decided"
+        ],
+        [
+          "2026-09-15",
+          "15. September 2026",
+          "Das Kabinett beschließt die Eckpunkte.[2]",
+          "decided"
+        ],
+        [
+          "2026-10-09",
+          "9. Oktober 2026",
+          "Das Kabinett billigt den Gesetzentwurf und bringt ihn ins Parlament ein.[4][5]",
+          "decided"
+        ],
+        [
+          "2026-10-17",
+          "17. Oktober 2026",
+          "Berichtet wird ein Plan als „eine Orientierung“: etwa 20 Millionen Menschen, durchschnittlich etwa 30.000 Yen pro Jahr, zusammen etwa 600 Milliarden Yen jährlich, eine Obergrenze womöglich im Bereich von 3 Millionen Yen individuellen Einkommens.[7]",
+          "reported"
+        ],
+        [
+          "2026-11-06",
+          "6. November 2026",
+          "Das Unterhaus nimmt den Entwurf an.[5]",
+          "decided"
+        ],
+        [
+          "2026-11-11",
+          "11. November 2026",
+          "Überweisung an den Sonderausschuss des Oberhauses.[6]",
+          "decided"
+        ],
+        [
+          "2026-11-13",
+          "13. November 2026",
+          "Die Premierministerin: bis zu etwa 25.000 Yen pro Person, etwa 5.000 Yen zusätzlich pro Kind, Ausweitung auf 50 % oder mehr der Erwerbstätigen (etwa 30 Millionen).[8][9]",
+          "considering"
+        ],
+        [
+          "2026-11-16",
+          "16. November 2026",
+          "Die Finanzministerin: etwa 30 Millionen Menschen mit Einkommen von 1 Million bis 4,5 Millionen Yen sind das „grobe Bild“.[11]",
+          "considering"
+        ],
+        [
+          "2026-11-20",
+          "20. November 2026",
+          "Berichten zufolge wird eine Einkommensuntergrenze von etwa 560.000 Yen geprüft.[12]",
+          "reported"
+        ],
+        [
+          "2026-12-12",
+          "12. Dezember 2026",
+          "Ende der Sitzungsperiode. Ob der Entwurf bis dahin verabschiedet wird, ist offen.[16]",
+          "open"
+        ],
+        [
+          "2027-04",
+          "April 2027",
+          "Der Satz von 1 % auf Lebensmittel und die Zahlung beginnen (falls der Entwurf Gesetz wird).[3]",
+          "decided"
+        ],
+        [
+          "2027",
+          "Herbst 2027",
+          "Erste Zahlung (laut Bericht der Nikkei).[13]",
+          "reported"
+        ],
+        [
+          "2029-04",
+          "April 2029",
+          "Der Satz steigt wieder auf 8 %, und die volle Regelung beginnt (Fiskaljahr 2029).[2][3]",
+          "decided"
+        ]
+      ],
+      "faqH": "Häufige Fragen",
+      "faq": [
+        [
+          "Wie hoch ist die Entlastungszahlung für Erwerbstätige?",
+          "Das ist noch nicht entschieden. Für die Fiskaljahre 2027 und 2028 prüft die Regierung bis zu etwa 25.000 Yen pro Person und Jahr, dazu etwa 5.000 Yen pro Jahr für jedes Kind unter 16. Ein Paar mit zwei Kindern bekäme beim vollen Betrag 60.000 Yen im Jahr. Die Beträge werden per Kabinettsverordnung festgelegt.[8][9][10]"
+        ],
+        [
+          "Bis zu welchem Einkommen gilt sie?",
+          "Weder Ober- noch Untergrenze sind entschieden. Am 16. November nannte die Finanzministerin etwa 30 Millionen Menschen mit Einkommen von 1 Million bis 4,5 Millionen Yen als „grobes Bild“. Berichtet wurde eine Untergrenze von etwa 560.000 Yen.[11][12]"
+        ],
+        [
+          "Wann beginnt sie, und wann wird gezahlt?",
+          "Die Regelung beginnt im April 2027 und zahlt in den Fiskaljahren 2027 und 2028 einmal im Jahr. Den Termin der ersten Zahlung nennen die Regierungsunterlagen noch nicht; die Nikkei berichtete von Herbst 2027.[3][13]"
+        ],
+        [
+          "Muss ich einen Antrag stellen?",
+          "Wenn Sie ein Konto für öffentliche Zahlungen registriert haben, stellt die Gemeinde die Berechtigung grundsätzlich ohne Antrag fest und zahlt.[2][3]"
+        ],
+        [
+          "Sind Menschen erfasst, die nicht arbeiten oder von einer Rente leben?",
+          "Voraussetzung ist Erwerbseinkommen im Vorjahr, daher sind Menschen, die nicht arbeiten, nicht erfasst. Rentnerinnen und Rentner, die arbeiten und Steuern und Sozialversicherungsbeiträge wie andere Erwerbstätige zahlen, sind berechtigt.[2][3]"
+        ],
+        [
+          "Ist die Zahlung steuerpflichtig?",
+          "Nein, und sie ist unpfändbar. Bei der Sozialhilfe wird sie allerdings als Einkommen angerechnet.[2][3]"
+        ],
+        [
+          "Sinken auch Gastronomie und Alkohol auf 1 %?",
+          "Nein. Der Satz von 1 % gilt für dieselben Lebensmittel und Getränke wie der heutige ermäßigte Satz von 8 %; Alkohol und Gastronomie bleiben bei 10 %.[2][14]"
+        ],
+        [
+          "Was ist der Unterschied zu einem Grundeinkommen?",
+          "Die Zahlung erreicht nur Menschen, die arbeiten und innerhalb der Einkommensgrenzen liegen, einmal im Jahr. Ein Grundeinkommen erreicht alle, bedingungslos und regelmäßig. {Unser Essay zum Vergleich von erstattungsfähigen Steuergutschriften und Grundeinkommen|/essays/refundable-tax-credit-vs-basic-income/} geht die Unterschiede durch."
+        ]
+      ],
+      "calcH": "Berechnen Sie den Betrag für Ihren Haushalt",
+      "calcIntro": "Gerechnet wird mit den geprüften Höchstbeträgen (25.000 Yen pro Person und Jahr und 5.000 Yen pro Jahr für jedes Kind unter 16). Die Einkommensgrenzen stehen noch nicht fest, daher können Berechtigung und Betrag abweichen. Die Zeile zu Lebensmitteln nimmt an, dass die Bruttopreise genau um die Änderung des Steuersatzes sinken. Ihre Eingaben werden nirgendwohin gesendet, und Sie können die URL speichern, um dasselbe Ergebnis später wieder zu öffnen.[8][9]",
+      "calc": {
+        "family": "Haushalt",
+        "workers": "Erwerbstätige Erwachsene, die berechtigt sein könnten",
+        "workersHint": "Menschen, die im Vorjahr gearbeitet und Erwerbseinkommen hatten. Unter- und Obergrenze des Einkommens stehen noch nicht fest",
+        "kids": "Kinder unter 16",
+        "kidsHint": "Die Altersgrenze für den Kinderzuschlag in den Fiskaljahren 2027 und 2028 (laut Gesetzentwurf)",
+        "others": "Weitere Haushaltsmitglieder",
+        "othersHint": "Kinder ab 16, Erwachsene, die nicht arbeiten, und andere. Nur in der Vergleichszeile unten gezählt",
+        "food": "Ausgaben für Lebensmittel",
+        "foodL": "Lebensmittel für zu Hause, pro Monat, inklusive Steuer",
+        "foodHint": "Gastronomie und Alkohol nicht mitzählen (ausgenommen wie beim heutigen ermäßigten Satz). Essen zum Mitnehmen und Lieferessen mitzählen. Der Startwert von 60.000 Yen ist nur ein Beispiel.",
+        "minus": "Eine Person weniger: {what}",
+        "plus": "Eine Person mehr: {what}",
+        "resEb": "Ihr Haushalt (pro Jahr)",
+        "status": "Beim geprüften Höchstbetrag",
+        "year": "{n} pro Jahr",
+        "totalSub": "Entlastungszahlung plus niedrigere Verbrauchsteuer auf Lebensmittel",
+        "payH": "Entlastungszahlung (geprüfter Höchstbetrag)",
+        "payF": "{a} × {w} + {k} × {c}",
+        "payNote": "Die Zahlung beruht auf den Höchstbeträgen, die laut der Premierministerin am 13. November 2026 geprüft werden. Unter- und Obergrenze des Einkommens stehen noch nicht fest, daher sind Berechtigung und tatsächlicher Betrag offen.",
+        "foodH": "Niedrigere Verbrauchsteuer auf Lebensmittel (8 % auf 1 %)",
+        "foodF": "{f} × {d}/{b} × 12 Monate",
+        "foodNote": "Angenommen wird, dass die Bruttopreise genau um die Änderung des Steuersatzes sinken (ein Artikel für 108 Yen inklusive Steuer kostet dann 101 Yen). Wie stark die Preise tatsächlich sinken, hängt von den Geschäften ab.",
+        "totalH": "Summe (pro Jahr)",
+        "biH": "Zum Vergleich: ein Grundeinkommen von 10.000 Yen im Monat für alle",
+        "biRow": "Grundeinkommen (10.000 Yen im Monat)",
+        "biF": "{m} × 12 Monate × {n} Personen",
+        "biNote": "Nur eine Vergleichszeile. Alle im Haushalt zählen, auch wer nicht arbeitet, und es gibt keine Einkommensgrenze. Die Finanzierung ist nicht berücksichtigt.",
+        "noJs": "Schalten Sie JavaScript ein, um die Zahlen zu ändern. Unten steht das Beispiel mit zwei erwerbstätigen Erwachsenen, zwei Kindern unter 16 und 60.000 Yen Lebensmittelausgaben im Monat."
+      },
+      "relatedH": "Verwandte Seiten",
+      "related": [
+        [
+          "/calc/household/?s=wrp",
+          "Haushaltsrechner: Wie würde ein Grundeinkommen das Budget Ihres Haushalts verändern?"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=wrp",
+          "Grundeinkommensrechner: Was würden 10.000 Yen im Monat für alle in Japan kosten?"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "Wofür wurden Japans 100.000 Yen von 2020 ausgegeben?"
+        ]
+      ],
+      "logH": "Änderungsprotokoll",
+      "updatedL": "Zuletzt aktualisiert",
+      "essayLink": "Japans Entlastungszahlung für Erwerbstätige: wann und wie viel? Die neuesten Zahlen und ein Haushaltsrechner",
+      "hhLink": "Andere Grundeinkommensbeträge im Haushaltsrechner ausprobieren",
+      "hhBack": "Japans Entlastungszahlung für Erwerbstätige: wie viel? Berechnen Sie den Betrag für Ihren Haushalt",
+      "about": "Wann, wie viel, wer und wie bei Japans Entlastungszahlung für Erwerbstätige, die derzeit im Parlament beraten wird. Was im Gesetzentwurf steht, was geprüft wird und was berichtet wurde, wird getrennt, mit Quelle und Datum zu jeder Zahl, laufend aktualisiert, mit Haushaltsrechner."
+    },
+    "ar": {
+      "title": "دفعة تخفيف العبء عن العاملين في اليابان: متى، وكم، وحتى أي دخل؟ احسب مبلغ أسرتك",
+      "short": "دفعة تخفيف العبء عن العاملين",
+      "eb": "شرح سياسة",
+      "desc": "دفعة تخفيف العبء عن العاملين في اليابان: متى، وكم، ومن يستحقها. قيد الدراسة حتى نحو 25,000 ين للعامل و5,000 ين لكل طفل، ودخل من مليون إلى 4.5 ملايين ين كتصور تقريبي، وما لم يُحسم بعد. مع حاسبة.",
+      "asOf": "المعلومات حتى نوفمبر 2026 (آخر مراجعة في 20 نوفمبر 2026). لم يصبح مشروع القانون قانونًا بعد.",
+      "lead": [
+        "دفعة تخفيف العبء عن العاملين (باليابانية: شوغيوشا فوتان كيغين شيينكين) دفعة نقدية جديدة من الدولة اليابانية لذوي الدخل المنخفض والمتوسط الذين يعملون. ينشئها مشروع القانون نفسه الذي يخفّض ضريبة الاستهلاك على الغذاء من 8% إلى 1% لمدة عامين، وتصفها الحكومة بأنها الخطوة الأولى نحو ائتمان ضريبي قابل للاسترداد.[2][4]",
+        "أقرّ مجلس النواب مشروع القانون في 6 نوفمبر 2026، وهو الآن أمام مجلس المستشارين. ستُحدَّد المبالغ وحدود الدخل بمرسوم حكومي لا في القانون نفسه، ولم تُحسم بعد. تفصل هذه الصفحة بين ما يقوله مشروع القانون ووثائق الحكومة، وما قالت الحكومة إنها تدرسه، وما ورد في التقارير الصحفية، وتذكر مصدرًا وتاريخًا لكل رقم. ونحدّثها كلما ظهرت معلومات جديدة.[3][5][6]"
+      ],
+      "answerH": "الجواب: متى، وكم، ومن، وكيف",
+      "answer": [
+        [
+          "متى",
+          "يبدأ النظام في أبريل 2027. وفي السنتين الماليتين 2027 و2028 تُصرف الدفعة مرة واحدة في السنة من حيث المبدأ. لم يُحدَّد موعد الدفعة الأولى، وأفادت تقارير بأنها في خريف 2027.[3][13]",
+          "decided"
+        ],
+        [
+          "كم",
+          "قيد الدراسة: حتى نحو 25,000 ين سنويًا للفرد كمبلغ أساسي، مع نحو 5,000 ين سنويًا لكل طفل دون 16 عامًا (رئيسة الوزراء في البرلمان، 13 نوفمبر). زوجان مع طفلين يحصلان على المبلغ الكامل سيتلقيان 60,000 ين سنويًا.[8][9][10]",
+          "considering"
+        ],
+        [
+          "من",
+          "من عملوا وكان لهم دخل من العمل في العام السابق، ويُقيَّم كل فرد على حدة. والخطة توسيع التغطية إلى 50% أو أكثر من العاملين، أي نحو 30 مليون شخص. وطُرح الدخل من مليون إلى 4.5 ملايين ين «تصورًا تقريبيًا»، لكن الحدين الأدنى والأعلى لم يُحسما.[8][9][11]",
+          "considering"
+        ],
+        [
+          "كيف",
+          "تعتمد البلدية التي تسكن فيها أهليتك وتحوّل المبلغ إلى حسابك. وإذا سجّلت حسابًا لاستلام الأموال العامة فلا حاجة إلى طلب من حيث المبدأ (سجّل نحو 50% من الناس). الدفعة معفاة من الضريبة ولا يجوز الحجز عليها.[1][2][3]",
+          "decided"
+        ]
+      ],
+      "openH": "ما لم يُحسم بعد",
+      "open": [
+        "الحدان الأدنى والأعلى للدخل، وسيُحدَّدان بمرسوم حكومي. وأفادت تقارير بدراسة حد أدنى بنحو 560,000 ين.[3][12]",
+        "المبالغ النهائية. الأرقام أعلاه قيد الدراسة وستُحدَّد بمرسوم حكومي.[3][8]",
+        "هل سيُقرّ مشروع القانون. فهو أمام مجلس المستشارين، وتنتهي الدورة في 12 ديسمبر.[6][16]",
+        "موعد وصول الدفعة الأولى، وكيف سيتقدم من لم يسجّلوا حسابًا.[13]"
+      ],
+      "legend": ": معنى التسميات في هذه الصفحة.",
+      "statusL": {
+        "decided": "في مشروع القانون أو وثائق الحكومة",
+        "considering": "قيد الدراسة",
+        "reported": "خطة وردت في التقارير",
+        "open": "لم يُحسم"
+      },
+      "toc": "المحتويات",
+      "sections": [
+        [
+          "wr-amount",
+          "كم سيحصل الناس؟",
+          [
+            "في 13 نوفمبر 2026، قالت رئيسة الوزراء تاكايتشي في لجنة خاصة بمجلس المستشارين إن الحكومة تدرس، للسنتين الماليتين 2027 و2028، حدًا أقصى بنحو 25,000 ين للفرد كمبلغ أساسي، مع نحو 5,000 ين لكل طفل دون 16 عامًا. والمبلغان سنويان.[8][9]",
+            "وبحسب وكالة جيجي للأنباء، سيكون المبلغ الثابت المدفوع لذوي الدخل المنخفض 5,000 ين سنويًا، والحد الأقصى «للمبلغ الأساسي» 25,000 ين سنويًا. ويصف المخطط الحكومي الشكل كالتالي: مبلغ ثابت حتى مستوى دخل العمل الذي تبدأ عنده ضريبة الدخل المحلية، ثم يرتفع مع الدخل، ثم يستقر، ثم ينخفض أخيرًا إلى الصفر مع ارتفاع الدخل الإجمالي أكثر. زوجان مع طفلين يستحق كلاهما المبلغ الكامل سيتلقيان 60,000 ين سنويًا.[2][9][10]",
+            "وبوصفها «مرجعًا واحدًا»، أبلغت الحكومة الأحزاب في أكتوبر أن نحو 20 مليون شخص قد يحصل كل منهم على نحو 30,000 ين سنويًا في المتوسط، أي نحو 600 مليار ين سنويًا في المجموع. وتفيد التقارير بأن هذه الـ600 مليار ين تعادل حصيلة نقطة مئوية واحدة من ضريبة الاستهلاك على الغذاء، ويحدّد مشروع القانون سقفًا لإجمالي المدفوعات في السنتين الماليتين 2027 و2028 بالحصيلة المتوقعة من نسبة الـ1% هذه.[3][7]",
+            "ويحصل من يصطدمون بـ«جدار الدخل» أيضًا على إضافة مؤقتة إلى أن يُزال هذا الجدار. وستُحدَّد كل المبالغ بمرسوم حكومي، وهي ليست نهائية.[2][3]"
+          ]
+        ],
+        [
+          "wr-who",
+          "من يستحقها، وحتى أي دخل؟",
+          [
+            "الأهلية فردية، ويشمل ذلك العُزّاب. والشروط هي: أن يتجاوز دخل العمل في العام السابق (الأجور، ودخل الأعمال أو الدخل المتنوع المرتبط بالعمل فوق مبلغ محدد) حدًا أدنى؛ وأن يكون الدخل الإجمالي عند حد أعلى أو دونه؛ وأن تتجاوز الضرائب واشتراكات التأمين الاجتماعي مستوى محددًا. ويستحقها أيضًا المتقاعدون الذين يعملون ويدفعون الاشتراكات مثل غيرهم من العاملين.[2][3]",
+            "ستُحدَّد حدود الدخل بمرسوم حكومي ولم تُحسم بعد. الأرقام حتى الآن:",
+            [
+              "أكتوبر: بوصفه «مرجعًا واحدًا»، أفادت التقارير بإمكان أن يقع الحد الأعلى عند دخل فردي سنوي في حدود 3 ملايين ين وما فوقها بقليل.[7]",
+              "13 نوفمبر: قالت رئيسة الوزراء إن الحكومة ستدرس حدًا أعلى يجعل 50% أو أكثر من العاملين مستحقين، حتى يستفيد عدد أكبر من العاملين ذوي الدخل المتوسط. ولم تذكر رقمًا. وكان الهدف من قبل «30% أو أكثر». وهذا نحو 30 مليون شخص، وذكرت وكالة كيودو «أكثر من 30 مليونًا».[8][9]",
+              "16 نوفمبر: قال وزير المالية كاتاياما إن نحو 30 مليون شخص بدخل سنوي من مليون إلى 4.5 ملايين ين هو «التصور التقريبي».[11]",
+              "20 نوفمبر: أفادت التقارير بدراسة حد أدنى بنحو 560,000 ين من الدخل السنوي.[12]"
+            ],
+            "لا تشمل الدفعة من لم يعملوا في العام السابق. وستُدرس استجابة لمن لا يستطيعون العمل بسبب المرض أو الإعاقة أو واجبات الرعاية، ويُبتّ فيها خلال السنة المالية 2028. ولمن يتلقون المساعدة العامة، تُحتسب الدفعة دخلًا.[2][3]"
+          ]
+        ],
+        [
+          "wr-when",
+          "متى تبدأ، ومتى تُصرف؟",
+          [
+            "تُطبَّق نسبة الـ1% على الغذاء لمدة عامين، من 1 أبريل 2027 إلى 31 مارس 2029. ويبدأ نظام الدفعة أيضًا في أبريل 2027، ويُصرف في السنتين الماليتين 2027 و2028 مرة واحدة في السنة من حيث المبدأ. ويبدأ النظام الكامل في السنة المالية 2029، حين تعود النسبة إلى 8%.[2][3]",
+            "تقوم الأهلية على دخل العام السابق، وتعتمدها البلدية التي تسكن فيها في 1 يناير. وللسنة المالية 2027 يعني ذلك دخل عام 2026 وعنوانك في 1 يناير 2027. ويُصرف المبلغ خلال شهرين من الاعتماد.[3]",
+            "لا تذكر وثائق الحكومة بعد موعد الدفعة الأولى. وأفادت صحيفة نيكاي بوجود خطة لصرف الدفعة الأولى في خريف 2027.[13]"
+          ]
+        ],
+        [
+          "wr-how",
+          "كيف تُصرف؟ هل تحتاج إلى تقديم طلب؟",
+          [
+            "تعتمد البلدية التي تسكن فيها الأهلية وتحوّل المبلغ إلى حسابك. ومن سجّلوا حسابًا لاستلام الأموال العامة تعتمدهم البلدية بمبادرة منها، دون طلب، من حيث المبدأ.[2][3]",
+            "لم يسجّل مثل هذا الحساب حتى الآن سوى نحو 50% من الناس، وتقول الحكومة إنها ستعمل على رفع هذه النسبة. ولم تُحدَّد بعد بالتفصيل طريقة تقديم من ليس لديهم حساب.[1]",
+            "الدفعة معفاة من الضريبة ولا يجوز الحجز عليها (باستثناء متأخرات الضرائب الوطنية). وتتحمل الحكومة الوطنية ثلثي التكلفة على الأقل، وفي السنتين الماليتين 2027 و2028 تغطي منحة خاصة أيضًا الحصة المحلية.[2][3]"
+          ]
+        ],
+        [
+          "wr-food",
+          "كم سيرخص الغذاء بنسبة 1%؟",
+          [
+            "تشمل نسبة الـ1% الأطعمة والمشروبات نفسها التي تشملها اليوم النسبة المخفضة البالغة 8%. وتُستثنى المشروبات الكحولية والأكل خارج المنزل (الأكل في المطاعم، وخدمات التموين) وتبقى عند 10%، وتبقى اشتراكات الصحف عند 8%.[2][14]",
+            "إذا انخفضت الأسعار شاملة الضريبة بمقدار تغيّر نسبة الضريبة بالضبط، فإن سلعة سعرها 108 ين مع الضريبة ستصبح بـ101 ين. وإذا أنفقت أسرة 60,000 ين شهريًا على الغذاء شاملة الضريبة، فإن 60,000 ين × 7/108 تساوي نحو 3,900 ين شهريًا، أي نحو 47,000 ين سنويًا. أما مقدار انخفاض الأسعار فعلًا فيتوقف على طريقة تسعير المتاجر.",
+            "لم تذكر الحكومة حجم التخفيض الضريبي على مدى العامين. ويقدّره تاكاهيدي كيوتشي من معهد نومورا للأبحاث بنحو 5 تريليونات ين سنويًا، أي نحو 10 تريليونات ين على مدى عامين.[15]"
+          ]
+        ],
+        [
+          "wr-bill",
+          "أين وصل مشروع القانون؟",
+          [
+            "اسمه الرسمي: مشروع قانون التخفيض المؤقت لنسبة ضريبة الاستهلاك على الأطعمة والمشروبات لتخفيف عبء الضرائب واشتراكات التأمين الاجتماعي، وصرف دفعة تخفيف العبء عن العاملين. وقُدّم في 9 أكتوبر 2026 بوصفه مشروع القانون الحكومي رقم 1 في الدورة الـ222 (الاستثنائية) للبرلمان.[5]",
+            "في مجلس النواب درسته لجنة الشؤون المالية، وأُقرّ في اللجنة وفي الجلسة العامة في 6 نوفمبر. وصوّتت لصالحه كتلتا الحزب الليبرالي الديمقراطي وحزب الابتكار الياباني، وصوّتت الكتل الأخرى ضده. ولم يُعدَّل.[5][17]",
+            "وفي مجلس المستشارين أُحيل في 11 نوفمبر إلى اللجنة الخاصة بمشروع قانون ضريبة الاستهلاك ودفعة تخفيف العبء، حيث تتواصل المداولات. وحتى 20 نوفمبر لم يُحدَّد موعد للتصويت. ولا تملك أحزاب الحكم أغلبية في مجلس المستشارين. وتستمر الدورة حتى 12 ديسمبر، ولم يُقرَّر تمديدها.[6][16][17]"
+          ]
+        ]
+      ],
+      "timelineH": "كيف وصلنا إلى هنا، وما الذي سيأتي",
+      "timeline": [
+        [
+          "2026-07-29",
+          "29 يوليو 2026",
+          "يقترح التقرير المرحلي للمجلس الوطني للضمان الاجتماعي دفعة مرتبطة بالدخل ابتداءً من السنة المالية 2029، مع ترتيب انتقالي حتى ذلك الحين.[1]",
+          "decided"
+        ],
+        [
+          "2026-09-15",
+          "15 سبتمبر 2026",
+          "يعتمد مجلس الوزراء المخطط.[2]",
+          "decided"
+        ],
+        [
+          "2026-10-09",
+          "9 أكتوبر 2026",
+          "يوافق مجلس الوزراء على مشروع القانون ويقدّمه إلى البرلمان.[4][5]",
+          "decided"
+        ],
+        [
+          "2026-10-17",
+          "17 أكتوبر 2026",
+          "تقارير عن خطة «المرجع الواحد»: نحو 20 مليون شخص، بمتوسط نحو 30,000 ين سنويًا للفرد، ونحو 600 مليار ين سنويًا في المجموع، وحد أعلى قد يقع عند دخل فردي في حدود 3 ملايين ين وما فوقها بقليل.[7]",
+          "reported"
+        ],
+        [
+          "2026-11-06",
+          "6 نوفمبر 2026",
+          "يقرّه مجلس النواب.[5]",
+          "decided"
+        ],
+        [
+          "2026-11-11",
+          "11 نوفمبر 2026",
+          "يُحال إلى اللجنة الخاصة في مجلس المستشارين.[6]",
+          "decided"
+        ],
+        [
+          "2026-11-13",
+          "13 نوفمبر 2026",
+          "رئيسة الوزراء: حتى نحو 25,000 ين للفرد، ونحو 5,000 ين إضافية لكل طفل، وتوسيع التغطية إلى 50% أو أكثر من العاملين (نحو 30 مليونًا).[8][9]",
+          "considering"
+        ],
+        [
+          "2026-11-16",
+          "16 نوفمبر 2026",
+          "وزير المالية: نحو 30 مليون شخص بدخل من مليون إلى 4.5 ملايين ين هو «التصور التقريبي».[11]",
+          "considering"
+        ],
+        [
+          "2026-11-20",
+          "20 نوفمبر 2026",
+          "تقارير عن دراسة حد أدنى للدخل بنحو 560,000 ين.[12]",
+          "reported"
+        ],
+        [
+          "2026-12-12",
+          "12 ديسمبر 2026",
+          "نهاية دورة البرلمان. ولم يتضح هل سيُقرّ مشروع القانون قبلها.[16]",
+          "open"
+        ],
+        [
+          "2027-04",
+          "أبريل 2027",
+          "تبدأ نسبة الـ1% على الغذاء ونظام الدفعة (إذا أصبح مشروع القانون قانونًا).[3]",
+          "decided"
+        ],
+        [
+          "2027",
+          "خريف 2027",
+          "الدفعة الأولى (بحسب صحيفة نيكاي).[13]",
+          "reported"
+        ],
+        [
+          "2029-04",
+          "أبريل 2029",
+          "تعود النسبة إلى 8% ويبدأ النظام الكامل (السنة المالية 2029).[2][3]",
+          "decided"
+        ]
+      ],
+      "faqH": "أسئلة شائعة",
+      "faq": [
+        [
+          "كم تبلغ دفعة تخفيف العبء عن العاملين؟",
+          "لم يُحسم ذلك. للسنتين الماليتين 2027 و2028 تدرس الحكومة حتى نحو 25,000 ين سنويًا للفرد، مع نحو 5,000 ين سنويًا لكل طفل دون 16 عامًا. زوجان مع طفلين يحصلان على المبلغ الكامل سيتلقيان 60,000 ين سنويًا. وستُحدَّد المبالغ بمرسوم حكومي.[8][9][10]"
+        ],
+        [
+          "حتى أي دخل تُطبَّق؟",
+          "لم يُحسم الحد الأعلى ولا الحد الأدنى. وفي 16 نوفمبر قدّم وزير المالية نحو 30 مليون شخص بدخل من مليون إلى 4.5 ملايين ين بوصفه «التصور التقريبي». وأفادت تقارير بحد أدنى بنحو 560,000 ين.[11][12]"
+        ],
+        [
+          "متى تبدأ، ومتى تُصرف؟",
+          "يبدأ النظام في أبريل 2027، ويُصرف في السنتين الماليتين 2027 و2028 مرة واحدة في السنة. ولا تذكر وثائق الحكومة بعد موعد الدفعة الأولى، وأفادت صحيفة نيكاي بأنها في خريف 2027.[3][13]"
+        ],
+        [
+          "هل أحتاج إلى تقديم طلب؟",
+          "إذا سجّلت حسابًا لاستلام الأموال العامة، تعتمدك البلدية وتصرف لك المبلغ دون طلب، من حيث المبدأ.[2][3]"
+        ],
+        [
+          "هل يشمل ذلك من لا يعملون أو من يعيشون على معاش تقاعدي؟",
+          "يُشترط وجود دخل من العمل في العام السابق، فلا يشمل من لا يعملون. أما المتقاعدون الذين يعملون ويدفعون الضرائب واشتراكات التأمين الاجتماعي مثل غيرهم من العاملين فيستحقونها.[2][3]"
+        ],
+        [
+          "هل تخضع الدفعة للضريبة؟",
+          "لا، ولا يجوز الحجز عليها. لكنها تُحتسب دخلًا في حالة المساعدة العامة.[2][3]"
+        ],
+        [
+          "هل تنخفض ضريبة الأكل خارج المنزل والمشروبات الكحولية إلى 1% أيضًا؟",
+          "لا. تشمل نسبة الـ1% الأطعمة والمشروبات نفسها التي تشملها اليوم النسبة المخفضة البالغة 8%، وتبقى المشروبات الكحولية والأكل خارج المنزل عند 10%.[2][14]"
+        ],
+        [
+          "ما الفرق بينها وبين الدخل الأساسي؟",
+          "لا تصل الدفعة إلا إلى من يعملون ويقعون داخل حدود الدخل، ومرة واحدة في السنة. أما الدخل الأساسي فيصل إلى الجميع، دون شروط وبانتظام. ويعرض {مقالنا الذي يقارن الائتمان الضريبي القابل للاسترداد بالدخل الأساسي|/essays/refundable-tax-credit-vs-basic-income/} الفروق بالتفصيل."
+        ]
+      ],
+      "calcH": "احسب مبلغ أسرتك",
+      "calcIntro": "تستخدم هذه الحاسبة الحدود القصوى قيد الدراسة (25,000 ين سنويًا للفرد و5,000 ين سنويًا لكل طفل دون 16 عامًا). ولم تُحدَّد حدود الدخل بعد، فقد تختلف أهليتك والمبلغ الذي ستحصل عليه. ويفترض سطر الغذاء أن الأسعار شاملة الضريبة تنخفض بمقدار تغيّر نسبة الضريبة بالضبط. لا يُرسَل أي شيء تُدخله إلى أي مكان، ويمكنك حفظ الرابط لفتح النتيجة نفسها لاحقًا.[8][9]",
+      "calc": {
+        "family": "الأسرة",
+        "workers": "البالغون العاملون الذين قد يستحقونها",
+        "workersHint": "من عملوا وكان لهم دخل من العمل في العام الماضي. لم يُحدَّد الحدان الأدنى والأعلى للدخل بعد",
+        "kids": "الأطفال دون 16 عامًا",
+        "kidsHint": "سن الإضافة الخاصة بالأطفال في السنتين الماليتين 2027 و2028 (في مشروع القانون)",
+        "others": "أفراد الأسرة الآخرون",
+        "othersHint": "الأطفال في سن 16 فما فوق، والبالغون الذين لا يعملون، وغيرهم. يُحتسبون فقط في سطر المقارنة أدناه",
+        "food": "الإنفاق على الغذاء",
+        "foodL": "الطعام المأكول في المنزل، شهريًا، شاملًا الضريبة",
+        "foodHint": "لا تُدرج الأكل خارج المنزل والمشروبات الكحولية (مستثناة، كما في النسبة المخفضة اليوم). وأدرج الطعام الجاهز للأخذ والطعام الموصَّل. القيمة الابتدائية 60,000 ين مجرد مثال.",
+        "minus": "واحد أقل: {what}",
+        "plus": "واحد أكثر: {what}",
+        "resEb": "أسرتك (سنويًا)",
+        "status": "عند الحد الأقصى قيد الدراسة",
+        "year": "{n} سنويًا",
+        "totalSub": "دفعة تخفيف العبء مضافًا إليها خفض ضريبة الاستهلاك على الغذاء",
+        "payH": "دفعة تخفيف العبء (الحد الأقصى قيد الدراسة)",
+        "payF": "{a} × {w} + {k} × {c}",
+        "payNote": "تستخدم الدفعة الحدود القصوى التي قالت رئيسة الوزراء في 13 نوفمبر 2026 إنها قيد الدراسة. ولم يُحدَّد الحدان الأدنى والأعلى للدخل بعد، فالأهلية والمبلغ الفعلي كلاهما لم يُحسما.",
+        "foodH": "خفض ضريبة الاستهلاك على الغذاء (من 8% إلى 1%)",
+        "foodF": "{f} × {d}/{b} × 12 شهرًا",
+        "foodNote": "يفترض هذا أن الأسعار شاملة الضريبة تنخفض بمقدار تغيّر نسبة الضريبة بالضبط (سلعة بـ108 ين مع الضريبة تصبح بـ101 ين). أما مقدار انخفاض الأسعار فعلًا فيتوقف على المتاجر.",
+        "totalH": "المجموع (سنويًا)",
+        "biH": "للمقارنة: دخل أساسي قدره 10,000 ين شهريًا للجميع",
+        "biRow": "الدخل الأساسي (10,000 ين شهريًا)",
+        "biF": "{m} × 12 شهرًا × {n} أشخاص",
+        "biNote": "سطر مرجعي للمقارنة فقط. يُحتسب فيه كل أفراد الأسرة، بمن فيهم من لا يعملون، ولا توجد حدود للدخل. ولا يُنظر في التمويل.",
+        "noJs": "فعّل ⁦JavaScript⁩ لتغيير الأرقام. وفيما يلي مثال لبالغَين عاملَين وطفلين دون 16 عامًا وإنفاق 60,000 ين شهريًا على الغذاء."
+      },
+      "relatedH": "صفحات ذات صلة",
+      "related": [
+        [
+          "/calc/household/?s=wrp",
+          "حاسبة الأسرة: كيف سيغيّر الدخل الأساسي ميزانية أسرتك؟"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=wrp",
+          "حاسبة الدخل الأساسي: كم سيكلّف دفع 10,000 ين شهريًا لكل فرد في اليابان؟"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "أين ذهبت دفعة الـ100,000 ين في اليابان عام 2020؟"
+        ]
+      ],
+      "logH": "سجل التحديثات",
+      "updatedL": "آخر تحديث",
+      "essayLink": "دفعة تخفيف العبء عن العاملين في اليابان: متى وكم؟ أحدث الأرقام وحاسبة للأسرة",
+      "hhLink": "جرّب مبالغ أخرى للدخل الأساسي في حاسبة الأسرة",
+      "hhBack": "دفعة تخفيف العبء عن العاملين في اليابان: كم؟ احسب مبلغ أسرتك",
+      "about": "متى، وكم، ومن، وكيف: دفعة تخفيف العبء عن العاملين في اليابان المعروضة الآن على البرلمان. نفصل بين ما يقوله مشروع القانون وما هو قيد الدراسة وما ورد في التقارير، مع مصدر وتاريخ لكل رقم، ونحدّثها كلما ظهرت وقائع جديدة، ومعها حاسبة للأسرة."
+    }
   }
 };
 // エッセイ ai-company-profits-per-person の {{aip.…}} を data/ai-profits-2026.json から計算した数字で埋める（src/ai-profits.js。build.js・og.js・readme.js・X 画像のどれから読んでも同じ数字になる）

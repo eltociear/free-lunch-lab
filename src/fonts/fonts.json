@@ -1347,6 +1347,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-aeb746bb91.woff2",
     "chars": "Òàç唆易衝貿頃"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-53c9722e43.woff2",
+    "chars": "促木瀬熊飲"
    }
   ],
   "ja:body:700": [
@@ -1625,6 +1629,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-ced05ba2fe.woff2",
     "chars": "Òàç唆易衝貿頃"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-6fbc4296fb.woff2",
+    "chars": "促木瀬熊飲"
    }
   ],
   "ja:display": [
@@ -1807,6 +1815,10 @@
    {
     "file": "dela-gothic-one-400-ja-4d2c73beb3.woff2",
     "chars": "撃衝"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-4011feac5c.woff2",
+    "chars": "品安緯請象較"
    }
   ],
   "ja:dot": [
@@ -2155,6 +2167,14 @@
    {
     "file": "noto-sans-sc-400-zh-401131ba7c.woff2",
     "chars": "Òàç贸霍"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-303453b135.woff2",
+    "chars": "脉龙"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-7498854c0c.woff2",
+    "chars": "き座減滞負軽"
    }
   ],
   "zh:body:700": [
@@ -2449,6 +2469,14 @@
    {
     "file": "noto-sans-sc-700-zh-717505172c.woff2",
     "chars": "Òàç贸霍"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-fd833321de.woff2",
+    "chars": "脉龙"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-fb9f54a86a.woff2",
+    "chars": "き座減滞負軽"
    }
   ],
   "zh:display": [
@@ -2631,6 +2659,10 @@
    {
     "file": "noto-sans-sc-900-zh-3a35a89f89.woff2",
     "chars": "响够影精胀"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-f492697ffc.woff2",
+    "chars": "便宜脉降龙"
    }
   ],
   "zh:dot": [

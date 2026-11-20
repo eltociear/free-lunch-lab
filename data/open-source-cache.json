@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-19",
+  "fetchedOn": "2026-11-20",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -136,7 +136,7 @@
     },
     "github.com:PSLmodels/Tax-Calculator": {
       "stars": 322,
-      "lastCommit": "2026-11-18",
+      "lastCommit": "2026-11-19",
       "archived": false,
       "license": null,
       "language": "Python"
@@ -150,14 +150,14 @@
     },
     "github.com:PolicyEngine/policyengine-uk": {
       "stars": 53,
-      "lastCommit": "2026-11-18",
+      "lastCommit": "2026-11-19",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
     },
     "github.com:PolicyEngine/policyengine-us": {
       "stars": 175,
-      "lastCommit": "2026-11-19",
+      "lastCommit": "2026-11-20",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
@@ -310,15 +310,15 @@
       "language": "Python"
     },
     "github.com:socialincome-san/public": {
-      "stars": 164,
-      "lastCommit": "2026-11-18",
+      "stars": 165,
+      "lastCommit": "2026-11-20",
       "archived": false,
       "license": null,
       "language": "TypeScript"
     },
     "github.com:worldcoin/world-id-protocol": {
       "stars": 43,
-      "lastCommit": "2026-11-19",
+      "lastCommit": "2026-11-20",
       "archived": false,
       "license": "MIT",
       "language": "Rust"

@@ -1,0 +1,26 @@
+figure,value,unit,status,date,period,note,source,asOf
+foodRateNow,8,"% consumption tax on food and drink (reduced rate, excluding alcohol and eating out)",decided,2026-11-20,,current reduced rate; newspaper subscriptions also 8% and stay at 8%,https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/01.htm,2026-11-20
+foodRateCut,1,% consumption tax on food and drink (national 0.78% plus local),decided,,2027-04-01 to 2029-03-31,bill (outline 9 Oct 2026); same food as the current reduced rate,https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf,2026-11-20
+maxPerWorker,25000,"yen per person per year, maximum ('support base amount'), FY2027-28",considering,2026-11-13,,"Prime Minister Takaichi, House of Councillors special committee: 'about ¥25,000 at most as the base' (Kyodo); Jiji: support base amount ¥25,000 a year",https://www.jiji.com/jc/article?k=2026111300707&g=pol,2026-11-20
+flatAmount,5000,"yen per person per year, flat amount for low earners, FY2027-28",considering,2026-11-13,,"Jiji: flat support amount ¥5,000 a year",https://www.jiji.com/jc/article?k=2026111300707&g=pol,2026-11-20
+perChild,5000,"yen per child under 16 per year, FY2027-28",considering,2026-11-13,,"'about ¥5,000 per child' (Kyodo); under 16 in FY2027-28 per the bill (under 19 in the full scheme)",https://www.tokyo-np.co.jp/article/527904,2026-11-20
+coupleTwoKids,60000,"yen per year, maximum for a couple with two children",considering,2026-11-13,,"Prime Minister: a household of a couple and two children receiving the full amount gets ¥60,000 in total",https://www.tokyo-np.co.jp/article/527998,2026-11-20
+coverageShare,50,% of workers or more,considering,2026-11-13,,earlier '30% or more',https://www.tokyo-np.co.jp/article/527904,2026-11-20
+coverageEarlier,30,% of workers or more (before 13 Nov),considering,2026-11-13,,,https://www.tokyo-np.co.jp/article/527904,2026-11-20
+coveragePeople,30000000,people (about; Kyodo: over 30 million),considering,2026-11-13,,,https://www.tokyo-np.co.jp/article/527904,2026-11-20
+incomeImageLow,1000000,"yen annual income, lower end of the 'rough image'",considering,2026-11-16,,Finance Minister Katayama: about 30 million people with incomes of ¥1 million to ¥4.5 million,https://news.yahoo.co.jp/articles/d49e9f989b6e9b568c08754073e30c209be89024,2026-11-20
+incomeImageHigh,4500000,"yen annual income, upper end of the 'rough image'",considering,2026-11-16,,,https://news.yahoo.co.jp/articles/d49e9f989b6e9b568c08754073e30c209be89024,2026-11-20
+incomeFloorReported,560000,yen annual income at which payments start (floor under consideration),reported,2026-11-20,,,https://news.web.nhk/newsweb/na/nd-20261120de78748,2026-11-20
+octPeople,20000000,"people, October 'one reference' plan",reported,2026-10-17,,,https://kumanichi.com/articles/2047683,2026-11-20
+octAverage,30000,"yen per person per year on average, October plan",reported,2026-10-17,,,https://kumanichi.com/articles/2047683,2026-11-20
+octTotal,600000000000,"yen a year in total, October plan (revenue from 1 point of the food consumption tax)",reported,2026-10-17,,,https://kumanichi.com/articles/2047683,2026-11-20
+octCeiling,3000000,"yen individual annual income, possible ceiling 'in the ¥3 million range'",reported,2026-10-17,,,https://kumanichi.com/articles/2047683,2026-11-20
+accountRegistration,50,% of people with a registered public-funds receipt account (about),decided,2026-07-29,,Social Security National Council interim report: 'registration remains at about 50%',https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260729-4/01_siryou1.pdf,2026-11-20
+payWithinMonths,2,months from certification to payment,decided,2026-10-09,,,https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf,2026-11-20
+nationalShare,2/3,"national share of the cost, at least",decided,2026-10-09,,,https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf,2026-11-20
+childAgeEarly,16,"age limit (under) for the child add-on, FY2027-28",decided,2026-10-09,,under 19 in the full scheme from FY2029,https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf,2026-11-20
+billSubmitted,2026-10-09,date,decided,2026-10-09,,"Cabinet Bill No. 1, 222nd Diet (extraordinary session)",https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/keika/1DE342E.htm,2026-11-20
+passedLowerHouse,2026-11-06,date,decided,2026-11-06,,"committee on financial affairs and plenary, by majority, unamended",https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/keika/1DE342E.htm,2026-11-20
+referredUpperHouse,2026-11-11,date,decided,2026-11-11,,Special Committee on the consumption tax and relief payment bill; no vote as of 20 Nov 2026,https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm,2026-11-20
+sessionEnds,2026-12-12,date,open,2026-11-20,,"69-day session to 12 December, no extension decided",https://www.shugiin.go.jp/,2026-11-20
+firstPaymentReported,2027 autumn,first payment (reported),reported,2026-11-13,,Nikkei; not in any government document,https://www.nikkei.com/article/DGXZQOUA042J30U6A101C2000000/,2026-11-20

@@ -2509,9 +2509,9 @@ The amount is flat for people whose earned income is up to a level set with refe
 
 As a rule it is paid once a year. The municipality where the person lives confirms eligibility and pays within two months. For people who have registered a bank account for public payments, the municipality is meant to confirm eligibility on its own, with no application needed. The payment is not taxed and cannot be seized. The national government pays at least two thirds of the cost.[2][3]
 
-What is not decided is the part that matters most: the amounts and the lines. The income floor, the ceiling and the payment amounts will all be set by cabinet order.[3] As “one reference”, the government told the parties in October that in fiscal 2027 and 2028 about 20 million people could be covered, with an average of about ¥30,000 a year each, about ¥600 billion a year in total, and that a ceiling somewhere in the ¥3 million range of individual annual income was possible.[4] For the floor, options of about ¥530,000, ¥740,000 and about ¥1.06 million in wages had been discussed in the council.[1]
+What is not decided is the part that matters most: the amounts and the lines. The income floor, the ceiling and the payment amounts will all be set by cabinet order.[3] As “one reference”, the government told the parties in October that in fiscal 2027 and 2028 about 20 million people could be covered, with an average of about ¥30,000 a year each, about ¥600 billion a year in total, and that a ceiling somewhere in the ¥3 million range of individual annual income was possible.[4] Then, on 13 November, in a special committee of the upper house, Prime Minister Takaichi said the government is considering a maximum of about ¥25,000 per person as the base, about ¥5,000 extra for each child under 16, and widening coverage to 50% or more of workers (about 30 million people), up from “30% or more” before.[15][16] On 16 November the Finance Minister, Satsuki Katayama, gave about 30 million people with incomes of ¥1 million to ¥4.5 million as the “rough image”.[17] For the floor, options of about ¥530,000, ¥740,000 and about ¥1.06 million in wages had been discussed in the council.[1] We keep the latest figures and dates on our Worker Burden Relief Payment page (https://neteru-nyukin.eltociear.workers.dev/guides/worker-relief-payment/).
 
-The bill passed the lower house on 6 November with the votes of the Liberal Democratic Party, the Japan Innovation Party and others; every opposition party voted against. Upper house deliberations are expected to start the following week, but the ruling parties lack a majority there, so it is not yet clear whether the bill will become law before the session ends on 12 December.[5]
+The bill passed the lower house on 6 November with the votes of the Liberal Democratic Party, the Japan Innovation Party and others; every opposition party voted against.[5] In the upper house it was referred to a special committee on 11 November, and as of 20 November no vote had been scheduled. The ruling parties lack a majority there, so it is not yet clear whether the bill will become law before the session ends on 12 December.[5][18]
 
 Opinion: So although it carries the name “refundable tax credit”, what Japan is building first is not a tax credit but an income-linked cash payment, aimed at low- and middle-income people who work. That is the starting point for comparing it with basic income.
 
@@ -2535,7 +2535,7 @@ The Canada Child Benefit uses tax returns to learn a family’s income and pays 
 
 #### Six differences from basic income
 
-First, who gets it. A basic income goes to everyone. A refundable tax credit draws income lines and pays the people inside them. In Japan’s reference figures, about 20 million people would get the new payment.[4]
+First, who gets it. A basic income goes to everyone. A refundable tax credit draws income lines and pays the people inside them. In Japan’s October reference figures, about 20 million people would get the new payment; in the Prime Minister’s answer of 13 November, 50% or more of workers, about 30 million.[4][15]
 
 Second, whether work is a condition. The EITC and Japan’s payment are designed so that you get nothing without earned income and more once you start working, because they exist to encourage work. The flip side is that they do not reach people who cannot work because of illness, disability, caring or unemployment. Japan’s bill says the government will study measures for such people and reach a conclusion during fiscal 2028.[3] A basic income has no conditions at all.
 
@@ -2585,7 +2585,7 @@ A is looking for work and had no earned income last year. A gets no payment. A b
 
 B works part-time and earned ¥1 million in wages last year. Whether B qualifies depends on where the floor is set. With a floor of about ¥530,000 or ¥740,000 in wages, B qualifies and, being below the no-local-tax line, would likely receive the flat amount. With about ¥1.06 million, B does not qualify.[1][2] A basic income would bring ¥360,000 a year.
 
-C is an office worker who earned ¥4.5 million in wages last year. That is above the ceiling in the government’s reference figures (individual income in the ¥3 million range), so C would likely get nothing.[4] A basic income would bring C ¥360,000 a year, but C would also pay more tax to fund it, so C could end up paying more, net.
+C is an office worker who earned ¥4.5 million in wages last year. Under the ceiling in October’s reference figures (individual income in the ¥3 million range), C would likely have got nothing.[4] But the “rough image” the Finance Minister gave on 16 November runs from ¥1 million to ¥4.5 million, which puts C right at the edge; whether C qualifies depends on the ceiling the cabinet order sets.[17] A basic income would bring C ¥360,000 a year, but C would also pay more tax to fund it, so C could end up paying more, net.
 
 Opinion: The new payment works best for someone like B, and does not reach A. A basic income gives all three the same amount and lets the tax system make the difference. Which is better depends on what you want to achieve.
 
@@ -2595,7 +2595,7 @@ Opinion: Refundable tax credits have strengths a basic income lacks. Because the
 
 Opinion: What Japan’s payment is building, a way to know each person’s income and pay into their account without an application, is also the foundation any basic income would need. Remembering that the ¥100,000 of 2020 took months to reach some people because each bank account had to be checked by hand, that is no small thing.
 
-Opinion: But its limits matter too. It does not reach people who cannot work, it arrives a year late, and only once a year. The reference amount of about ¥30,000 a year is one twelfth of a ¥30,000-a-month basic income. It is more accurate to see a refundable tax credit not as a substitute for basic income but as a tool that fills one gap in the current system. How far that tool grows will become clear as the amounts and lines are set ahead of the full launch in fiscal 2029. We will be watching.
+Opinion: But its limits matter too. It does not reach people who cannot work, it arrives a year late, and only once a year. October’s reference average of about ¥30,000 a year, and the maximum of about ¥25,000 per person under consideration in November, are each one twelfth or less of a ¥30,000-a-month basic income (¥360,000 a year). It is more accurate to see a refundable tax credit not as a substitute for basic income but as a tool that fills one gap in the current system. How far that tool grows will become clear as the amounts and lines are set ahead of the full launch in fiscal 2029. We will be watching.
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
 
@@ -2615,7 +2615,7 @@ Sources:
 
 1. Social Security National Council (Shakai Hoshō Kokumin Kaigi) — Interim report on the refundable tax credit (29 Jul 2026; PDF, in Japanese): https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260729-4/01_siryou1.pdf
 2. Cabinet Secretariat — Outline for the temporary cut in the consumption tax rate on food and the introduction of the Worker Burden Relief Payment (Cabinet decision, 15 Sep 2026; PDF, in Japanese): https://www.cas.go.jp/jp/seisaku/shouhizei_futankeigenshienkin/dai1/sanko2.pdf
-3. Cabinet Secretariat — Summary of the bill on the temporary cut in the consumption tax rate on food and the Worker Burden Relief Payment (Cabinet decision and submission to the Diet, 9 Oct 2026; PDF, in Japanese): https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf
+3. Cabinet Secretariat and Ministry of Finance — Outline (yōkō) of the bill on the temporary cut in the consumption tax rate on food and the Worker Burden Relief Payment (9 Oct 2026; PDF, in Japanese): https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf
 4. Kyodo News via Kumamoto Nichinichi Shimbun — Government floats an average of about ¥30,000 for the new payment, about 20 million people in FY2027–28 (17 Oct 2026, in Japanese): https://kumanichi.com/articles/2047683
 5. ANN News (via KSB Setonaikai Broadcasting) — Consumption tax cut bill passes the House of Representatives with the ruling parties’ votes; all opposition parties against (6 Nov 2026, in Japanese): https://news.ksb.co.jp/ann/article/17029673
 6. US Department of Health and Human Services, ASPE — Overview of the Final Report of the Seattle-Denver Income Maintenance Experiment (1983): https://aspe.hhs.gov/reports/overview-final-report-seattle-denver-income-maintenance-experiment
@@ -2627,6 +2627,10 @@ Sources:
 12. Canada Revenue Agency — Canada Child Benefit: how we calculate your CCB (July 2026 to June 2027): https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html
 13. Karl Widerquist — “The cost of basic income: back-of-the-envelope calculations”, Basic Income Studies 12(2) (2017): https://doi.org/10.1515/bis-2017-0016
 14. Basic Income Earth Network (BIEN) — About Basic Income: https://basicincome.org/about-basic-income/
+15. Kyodo News via Tokyo Shimbun — PM Takaichi: up to about ¥25,000 as the base, about ¥5,000 extra per child, more than half of workers (13 Nov 2026, in Japanese): https://www.tokyo-np.co.jp/article/527904
+16. Jiji Press — Base amount ¥25,000 a year, child add-on ¥5,000, coverage 50% or more of workers (13 Nov 2026, in Japanese): https://www.jiji.com/jc/article?k=2026111300707&g=pol
+17. Jiji Press via Yahoo! News — Finance Minister Katayama: about 30 million people with incomes of ¥1 million to ¥4.5 million (16 Nov 2026, in Japanese): https://news.yahoo.co.jp/articles/d49e9f989b6e9b568c08754073e30c209be89024
+18. House of Councillors — Bill information, Cabinet Bill No. 1, 222nd Diet (in Japanese): https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm
 
 ### Did Finland’s basic income experiment fail? What it showed, and what it could not
 
@@ -3843,7 +3847,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-19. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-20. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -4201,8 +4205,8 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Group: Apps & wallets
 - Language: TypeScript
 - License: MIT (LICENSE)
-- Stars: 164
-- Last commit: 2026-11-18
+- Stars: 165
+- Last commit: 2026-11-20
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
@@ -4225,7 +4229,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 43
-- Last commit: 2026-11-19
+- Last commit: 2026-11-20
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -4291,7 +4295,7 @@ Reference mobile app for BrightID: people connect with others they know, and ana
 - Language: Python
 - License: AGPL-3.0
 - Stars: 175
-- Last commit: 2026-11-19
+- Last commit: 2026-11-20
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 
@@ -4302,7 +4306,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-18
+- Last commit: 2026-11-19
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 
@@ -4324,7 +4328,7 @@ Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it search
 - Language: Python
 - License: CC0-1.0 (LICENSE)
 - Stars: 322
-- Last commit: 2026-11-18
+- Last commit: 2026-11-19
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
 

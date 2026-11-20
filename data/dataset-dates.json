@@ -60,8 +60,8 @@
   "2026-11-01"
  ],
  "open-source.json": [
-  "662552dc2cce0a34",
-  "2026-11-19"
+  "85c33f5cef6aa4ae",
+  "2026-11-20"
  ],
  "services.json": [
   "f0602fcaf72f3780",
@@ -82,5 +82,13 @@
  "us-pilots.json": [
   "ba9ed82d78e83ddf",
   "2026-11-19"
+ ],
+ "worker-relief-2026.csv": [
+  "c2dcdc8684cc70ca",
+  "2026-11-20"
+ ],
+ "worker-relief-2026.json": [
+  "1d2faa69beb42068",
+  "2026-11-20"
  ]
 }
