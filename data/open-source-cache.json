@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-20",
+  "fetchedOn": "2026-11-23",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -10,14 +10,14 @@
     },
     "git.duniter.org:clients/cesium-grp/cesium2s": {
       "stars": 6,
-      "lastCommit": "2026-11-14",
+      "lastCommit": "2026-11-22",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "TypeScript"
     },
     "git.duniter.org:clients/gecko": {
       "stars": 8,
-      "lastCommit": "2026-11-14",
+      "lastCommit": "2026-11-22",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Dart"
@@ -135,8 +135,8 @@
       "language": "JavaScript"
     },
     "github.com:PSLmodels/Tax-Calculator": {
-      "stars": 322,
-      "lastCommit": "2026-11-19",
+      "stars": 323,
+      "lastCommit": "2026-11-22",
       "archived": false,
       "license": null,
       "language": "Python"
@@ -156,8 +156,8 @@
       "language": "Python"
     },
     "github.com:PolicyEngine/policyengine-us": {
-      "stars": 175,
-      "lastCommit": "2026-11-20",
+      "stars": 177,
+      "lastCommit": "2026-11-23",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
@@ -248,14 +248,14 @@
     },
     "github.com:encointer/pallets": {
       "stars": 18,
-      "lastCommit": "2026-10-01",
+      "lastCommit": "2026-11-23",
       "archived": false,
       "license": "GPL-3.0",
       "language": "Rust"
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-11-19",
+      "lastCommit": "2026-11-22",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"
@@ -297,7 +297,7 @@
     },
     "github.com:okTurtles/group-income": {
       "stars": 350,
-      "lastCommit": "2026-11-18",
+      "lastCommit": "2026-11-22",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "JavaScript"
@@ -311,7 +311,7 @@
     },
     "github.com:socialincome-san/public": {
       "stars": 165,
-      "lastCommit": "2026-11-20",
+      "lastCommit": "2026-11-23",
       "archived": false,
       "license": null,
       "language": "TypeScript"

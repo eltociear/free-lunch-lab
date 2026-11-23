@@ -2937,6 +2937,26 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-23",
+      "en": "Added a roundup of Japan’s national cash benefits and subsidies as of November 2026: what is running, in the Diet, under consideration, not decided or ended, with the amount, who, when, how to receive it and a dated source for each",
+      "ja": "国の給付金・支援金・補助金の一覧のページを追加（2026年11月時点。実施中・法案審議中・検討中・未定・終了に分け、金額・対象・時期・受け取り方・出典と確認日つき）",
+      "zh": "新增日本国家给付金、支援金与补贴一览页面（截至2026年11月）：分为实施中、法案审议中、研究中、未定和已结束，每项附金额、对象、时间、领取方式、出处和日期",
+      "hi": "नवंबर 2026 तक जापान के राष्ट्रीय नकद भुगतानों और सब्सिडी का सार जोड़ा: लागू, संसद में, विचाराधीन, तय नहीं या समाप्त, हर एक की रकम, किसे, कब, कैसे और तारीख़ वाले स्रोत के साथ",
+      "es": "Añadido un resumen de los pagos en efectivo y subsidios del Estado en Japón a noviembre de 2026: en vigor, en el Parlamento, en estudio, sin decidir o terminados, cada uno con cuantía, quién, cuándo, cómo cobrarlo y una fuente fechada",
+      "de": "Übersicht über Japans staatliche Geldleistungen und Zuschüsse, Stand November 2026, veröffentlicht: laufend, im Parlament, in Prüfung, offen oder beendet, jeweils mit Betrag, Berechtigten, Zeitpunkt, Auszahlungsweg und datierter Quelle",
+      "ar": "أضفنا ملخصًا للمدفوعات النقدية والدعم الحكومي في اليابان حتى نوفمبر 2026: ما يُطبَّق وما في البرلمان وما قيد الدراسة وما لم يُحسم وما انتهى، ولكل منها المبلغ ومن ومتى وكيف ومصدر مؤرخ"
+    },
+    {
+      "date": "2026-11-23",
+      "en": "Updated the Worker Burden Relief Payment page with the Finance Minister’s answer of 19 November (a floor of about ¥560,000 of annual income under consideration) and the central public hearing set for 24 November",
+      "ja": "就業者負担軽減支援金のページを更新（11月19日の財務相答弁：下限は年収56万円程度の方向で検討。11月24日の中央公聴会の予定）",
+      "zh": "更新就业者负担减轻支援金页面：加入11月19日财务大臣答辩（正在研究把下限定为年收入约56万日元）和11月24日的中央公听会日程",
+      "hi": "वर्कर बर्डन रिलीफ़ पेमेंट पेज अपडेट किया: 19 नवंबर का वित्त मंत्री का जवाब (लगभग 560,000 येन सालाना आय की निचली सीमा पर विचार) और 24 नवंबर की केंद्रीय जन सुनवाई",
+      "es": "Actualizada la página del pago de alivio de cargas para trabajadores con la respuesta de la ministra de Finanzas del 19 de noviembre (se estudia un mínimo de unos 560.000 yenes de ingresos anuales) y la audiencia pública central del 24 de noviembre",
+      "de": "Seite zur Entlastungszahlung für Erwerbstätige aktualisiert: mit der Antwort der Finanzministerin vom 19. November (Untergrenze von etwa 560.000 Yen Jahreseinkommen in Prüfung) und der zentralen öffentlichen Anhörung am 24. November",
+      "ar": "حدّثنا صفحة دفعة تخفيف العبء عن العاملين بجواب وزير المالية في 19 نوفمبر (حد أدنى بنحو 560,000 ين من الدخل السنوي قيد الدراسة) وجلسة الاستماع العامة المركزية في 24 نوفمبر"
+    },
+    {
       "date": "2026-11-20",
       "en": "Added a Worker Burden Relief Payment page for Japan: when, how much, who and how, what is still open, the timeline and a household calculator, with a source and date for every figure",
       "ja": "就業者負担軽減支援金のページを追加（いつ・いくら・誰が・どうやって、まだ決まっていないこと、経緯、わが家の金額の計算機。数字ごとに出典と日付）",
@@ -11449,6 +11469,33 @@ module.exports = {
         "es": "Todas las cifras de la página sobre el pago de alivio para trabajadores: cuantías en estudio, umbrales de ingresos anunciados o publicados, el plan de referencia de octubre, los tipos del impuesto al consumo sobre alimentos y las fechas del proyecto de ley, cada una con su estado (en el proyecto, en estudio, publicado o sin decidir), fuente, fecha y fecha de comprobación.",
         "de": "Alle Zahlen der Seite zur Entlastungszahlung für Erwerbstätige: geprüfte Beträge, genannte oder gemeldete Einkommensgrenzen, der Referenzplan vom Oktober, die Verbrauchsteuersätze auf Lebensmittel und die Daten des Gesetzentwurfs, jeweils mit Status (im Gesetzentwurf, in Prüfung, gemeldet oder offen), Quelle, Datum und Prüfdatum.",
         "ar": "كل الأرقام في صفحة دفعة تخفيف العبء عن العاملين: المبالغ قيد الدراسة، وحدود الدخل المعلنة أو المنشورة، وخطة أكتوبر المرجعية، ونسب ضريبة الاستهلاك على الغذاء، وتواريخ مشروع القانون، لكل منها حالته (في مشروع القانون، قيد الدراسة، منشور، لم يُحسم) ومصدره وتاريخه وتاريخ التحقق."
+      }
+    },
+    {
+      "id": "japan-benefits-2026",
+      "files": [
+        "japan-benefits-2026.json",
+        "japan-benefits-2026.csv"
+      ],
+      "page": "guides/japan-benefits-2026/",
+      "lic": "odLicSrc",
+      "name": {
+        "en": "Japan’s national cash benefits and subsidies, November 2026",
+        "ja": "国の給付金・支援金・補助金の一覧（2026年11月）",
+        "zh": "日本国家层面的现金给付与补贴一览（2026年11月）",
+        "hi": "जापान के राष्ट्रीय नकद भुगतान और सब्सिडी (नवंबर 2026)",
+        "es": "Ayudas y pagos en efectivo del Estado en Japón, noviembre de 2026",
+        "de": "Japans staatliche Geldleistungen und Zuschüsse, November 2026",
+        "ar": "الإعانات النقدية والدعم الحكومي في اليابان، نوفمبر 2026"
+      },
+      "desc": {
+        "en": "Every figure on the roundup of Japan’s national cash benefits: amounts, who gets them, dates and periods for each benefit or subsidy, each with its status (running, in a bill, under consideration, reported only, not decided or not planned, ended), source, source name in Japanese and English, and check date.",
+        "ja": "国の給付金・支援金・補助金の一覧のページの数字。給付ごとの金額、対象、日付や期間。それぞれ状態（実施中・法案審議中・検討中・報道のみ・未定や予定なし・終了）、出典、出典名（日本語と英語）、確認日つき。",
+        "zh": "日本国家现金给付一览页面上的全部数字：每项给付或补贴的金额、对象、日期和期间，每项均附状态（实施中、法案审议中、研究中、仅有报道、未定或无计划、已结束）、来源、日文和英文来源名称以及核对日期。",
+        "hi": "जापान के राष्ट्रीय नकद भुगतानों वाले पेज के सभी आंकड़े: हर भुगतान या सब्सिडी की रकम, किसे मिलती है, तारीख़ें और अवधि, हर एक की स्थिति (लागू, विधेयक में, विचाराधीन, सिर्फ़ ख़बर, तय नहीं या योजना नहीं, समाप्त), स्रोत, जापानी और अंग्रेज़ी में स्रोत का नाम और जाँच की तारीख़ के साथ।",
+        "es": "Todas las cifras del resumen de ayudas en efectivo del Estado en Japón: cuantías, quién las recibe, fechas y periodos de cada ayuda o subvención, cada una con su estado (en vigor, en un proyecto de ley, en estudio, solo publicado, sin decidir o no previsto, terminado), fuente, nombre de la fuente en japonés e inglés y fecha de comprobación.",
+        "de": "Alle Zahlen der Übersicht über Japans staatliche Geldleistungen: Beträge, Berechtigte, Daten und Zeiträume jeder Leistung oder jedes Zuschusses, jeweils mit Status (läuft, im Gesetzentwurf, in Prüfung, nur gemeldet, offen oder nicht geplant, beendet), Quelle, Name der Quelle auf Japanisch und Englisch und Prüfdatum.",
+        "ar": "كل الأرقام في صفحة الإعانات النقدية الحكومية في اليابان: المبالغ، ومن يحصل عليها، والتواريخ والفترات لكل إعانة أو دعم، لكل منها حالته (سارية، في مشروع قانون، قيد الدراسة، تقارير فقط، لم تُحسم أو غير مخطط لها، انتهت) ومصدره واسم المصدر باليابانية والإنجليزية وتاريخ التحقق."
       }
     }
   ],
@@ -53946,7 +53993,7 @@ module.exports = {
   "WRP": {
     "id": "worker-relief-payment",
     "published": "2026-11-20",
-    "updated": "2026-11-20",
+    "updated": "2026-11-23",
     "essays": [
       "refundable-tax-credit-vs-basic-income",
       "generative-ai-jobs-basic-income"
@@ -53958,6 +54005,16 @@ module.exports = {
       "f": 60000
     },
     "log": [
+      {
+        "date": "2026-11-23",
+        "ja": "11月19日の財務相答弁（下限は年収56万円程度の方向で検討）と、11月24日の中央公聴会の予定を追加。採決の日程は11月23日の時点で未定",
+        "en": "Added the Finance Minister’s answer of 19 November (a floor of about ¥560,000 of annual income under consideration) and the central public hearing set for 24 November; no vote scheduled as of 23 November",
+        "zh": "加入11月19日的财务大臣答辩（正在研究把下限定为年收入约56万日元）和11月24日的中央公听会日程。截至11月23日，表决日程未定",
+        "hi": "19 नवंबर का वित्त मंत्री का जवाब (लगभग 560,000 येन सालाना आय की निचली सीमा पर विचार) और 24 नवंबर की केंद्रीय जन सुनवाई जोड़ी गई; 23 नवंबर तक मतदान की तारीख़ तय नहीं",
+        "es": "Añadidas la respuesta de la ministra de Finanzas del 19 de noviembre (se estudia un mínimo de unos 560.000 yenes de ingresos anuales) y la audiencia pública central del 24 de noviembre; a 23 de noviembre no hay fecha para la votación",
+        "de": "Ergänzt um die Antwort der Finanzministerin vom 19. November (Untergrenze von etwa 560.000 Yen Jahreseinkommen in Prüfung) und die zentrale öffentliche Anhörung am 24. November; Stand 23. November keine Abstimmung angesetzt",
+        "ar": "أضفنا جواب وزير المالية في 19 نوفمبر (حد أدنى بنحو 560,000 ين من الدخل السنوي قيد الدراسة) وجلسة الاستماع العامة المركزية المقررة في 24 نوفمبر؛ ولم يُحدَّد موعد التصويت حتى 23 نوفمبر"
+      },
       {
         "date": "2026-11-20",
         "ja": "公開。11月13日の首相答弁（1人最大2万5,000円程度、子ども1人5,000円程度、働く人の5割以上）、16日の財務相答弁（年収100万〜450万円）、20日の下限56万円程度の報道までを反映",
@@ -54105,6 +54162,22 @@ module.exports = {
           "en": "ANN News via KSB Setonaikai Broadcasting — Consumption tax cut bill passes the lower house; all opposition parties against (6 Nov 2026, in Japanese)"
         },
         "url": "https://news.ksb.co.jp/ann/article/17029673"
+      },
+      {
+        "n": 18,
+        "label": {
+          "ja": "時事通信（Yahoo!ニュース）「年収下限は56万円程度　所得連動給付で検討表明　片山財務相」（2026年11月19日）",
+          "en": "Jiji Press via Yahoo! News — Finance Minister Katayama: income floor of about ¥560,000 under consideration (19 Nov 2026, in Japanese)"
+        },
+        "url": "https://news.yahoo.co.jp/articles/51723a0d8b8a8c7f2a4e1ab311e10e18e61be6f8"
+      },
+      {
+        "n": 19,
+        "label": {
+          "ja": "参議院「消費税・支援金法案に関する特別委員会公聴会の公述人公募のお知らせ」（2026年11月18日、公聴会は11月24日）",
+          "en": "House of Councillors — Call for witnesses at the special committee’s public hearing on 24 November (18 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.sangiin.go.jp/jpn/ugoki/r8/shohi-kochou261118.html"
       }
     ],
     "ja": {
@@ -54112,7 +54185,7 @@ module.exports = {
       "short": "就業者負担軽減支援金",
       "eb": "制度のまとめ",
       "desc": "就業者負担軽減支援金はいつから、いくら、誰が対象？ 1人最大約2万5,000円・子ども1人約5,000円の検討案、年収100万〜450万円という目安、まだ決まっていないことを出典と日付つきで整理。わが家の金額も計算できます。",
-      "asOf": "2026年11月時点の情報です（最終確認：2026年11月20日）。法案はまだ成立していません。",
+      "asOf": "2026年11月時点の情報です（最終確認：2026年11月23日）。法案はまだ成立していません。",
       "lead": [
         "就業者負担軽減支援金は、働く中低所得の人に国が現金を配る新しい制度です。食料品の消費税を2年間8%から1%に下げる法案の中でつくられ、政府は「給付付き税額控除」の第一歩と位置づけています。[2][4]",
         "法案は2026年11月6日に衆議院を通過し、いまは参議院で審議されています。金額と年収の線は法律ではなく政令で決めることになっていて、まだ決まっていません。このページでは、法案や政府の資料に書いてあること、政府が検討中と答弁したこと、報道された案を分けて、数字ごとに出典と日付を示します。新しい情報が出たら更新します。[3][5][6]"
@@ -54142,7 +54215,7 @@ module.exports = {
       ],
       "openH": "まだ決まっていないこと",
       "open": [
-        "年収の上限と下限。政令で決めます。下限は56万円程度とする方向で検討していると報じられています。[3][12]",
+        "年収の上限と下限。政令で決めます。下限は、片山財務相が11月19日に56万円程度とする方向で検討すると答弁しています。[3][18]",
         "最終的な金額。上の金額は検討中の数字で、政令で決まります。[3][8]",
         "法案が成立するかどうか。参議院で審議中で、会期末は12月12日です。[6][16]",
         "最初に振り込まれる時期と、公金受取口座を登録していない人の手続き。[13]"
@@ -54176,7 +54249,7 @@ module.exports = {
               "10月：「一つの参考」として、個人年収300万円台が上限になる可能性があると報じられました。[7]",
               "11月13日：首相が、働く人の5割以上が対象になるよう所得の上限を設けることを検討すると答弁しました。中所得の人にも届くようにするためで、具体的な金額は示していません。それまでは「3割以上」とされていました。対象は約3,000万人で、共同通信は「3,000万人超」と報じています。[8][9]",
               "11月16日：片山財務相が、年収100万〜450万円の3,000万人程度を「大づかみのイメージ」と答弁しました。[11]",
-              "11月20日：支給が始まる年収（下限）を56万円程度とする方向で検討していると報じられました。[12]"
+              "11月19日：片山財務相が、支給が始まる年収（下限）を56万円程度とする方向で検討すると、参議院の特別委員会で答弁しました。2026年度の最低賃金で計算し直した数字で、それまでは約53万円、74万円、約106万円の3案でした。20日にはNHKも同じ方向と報じています。[18][12]"
             ],
             "前の年に働いていない人は、この支援金の対象ではありません。病気や障害、介護などで働けない人への対応は、2028年度中に検討して結論を出すとされています。生活保護を受けている人の場合、支援金は収入として認定されます。[2][3]"
           ]
@@ -54214,7 +54287,7 @@ module.exports = {
           [
             "正式な名前は「租税及び社会保険料による負担の軽減のための飲食料品に係る消費税率の臨時的な引下げ及び就業者負担軽減支援金の支給に関する法律案」です。第222回国会（臨時会）の閣法第1号として、2026年10月9日に提出されました。[5]",
             "衆議院では財務金融委員会で審議され、11月6日に委員会と本会議で可決されました。賛成は自民党と日本維新の会の会派で、ほかの会派は反対しました。修正はされていません。[5][17]",
-            "参議院では11月11日に「消費税・支援金法案に関する特別委員会」に付託され、審議が続いています。11月20日の時点で、採決の日程は決まっていません。参議院では与党が過半数に届いていません。会期は12月12日までで、延長は決まっていません。[6][16][17]"
+            "参議院では11月11日に「消費税・支援金法案に関する特別委員会」に付託され、審議が続いています。11月24日には中央公聴会が開かれます。11月23日の時点で、採決の日程は決まっていません。参議院では与党が過半数に届いていません。会期は12月12日までで、延長は決まっていません。[6][19][16][17]"
           ]
         ]
       ],
@@ -54269,10 +54342,22 @@ module.exports = {
           "considering"
         ],
         [
+          "2026-11-19",
+          "2026年11月19日",
+          "財務相答弁：支給が始まる年収（下限）を56万円程度とする方向で検討。[18]",
+          "considering"
+        ],
+        [
           "2026-11-20",
           "2026年11月20日",
-          "支給が始まる年収（下限）を56万円程度とする方向と報じられる。[12]",
+          "下限56万円程度の方向をNHKも報じる。[12]",
           "reported"
+        ],
+        [
+          "2026-11-24",
+          "2026年11月24日",
+          "参議院の特別委員会が中央公聴会を開く。[19]",
+          "decided"
         ],
         [
           "2026-12-12",
@@ -54307,7 +54392,7 @@ module.exports = {
         ],
         [
           "年収いくらまでが対象ですか？",
-          "上限も下限もまだ決まっていません。財務相は11月16日、年収100万〜450万円の3,000万人程度を「大づかみのイメージ」と答弁しました。下限は56万円程度とする方向と報じられています。[11][12]"
+          "上限はまだ決まっていません。財務相は11月16日、年収100万〜450万円の3,000万人程度を「大づかみのイメージ」と答弁し、11月19日には、下限を56万円程度とする方向で検討すると答弁しました。どちらも政令で決まります。[11][18]"
         ],
         [
           "いつから、いつ振り込まれますか？",
@@ -54393,7 +54478,7 @@ module.exports = {
       "short": "Worker Burden Relief Payment",
       "eb": "Policy explainer",
       "desc": "Japan’s Worker Burden Relief Payment: when, how much and who qualifies. Up to about ¥25,000 per worker plus ¥5,000 per child under consideration, incomes of ¥1–4.5 million as a rough guide, what is still open. With a calculator.",
-      "asOf": "Information as of November 2026 (last checked 20 November 2026). The bill has not yet become law.",
+      "asOf": "Information as of November 2026 (last checked 23 November 2026). The bill has not yet become law.",
       "lead": [
         "The Worker Burden Relief Payment (shūgyōsha futan keigen shienkin) is a new cash payment from the Japanese state to low- and middle-income people who work. It is created by the same bill that cuts the consumption tax on food from 8% to 1% for two years, and the government calls it the first step toward a refundable tax credit.[2][4]",
         "The bill passed the House of Representatives on 6 November 2026 and is now before the House of Councillors. The amounts and the income lines will be set by cabinet order, not in the law, and have not been decided. This page keeps apart what the bill and government documents say, what the government has said it is considering, and what has been reported, and gives a source and date for every figure. We update it as new facts come in.[3][5][6]"
@@ -54423,7 +54508,7 @@ module.exports = {
       ],
       "openH": "Not decided yet",
       "open": [
-        "The income floor and ceiling, to be set by cabinet order. A floor of about ¥560,000 is reportedly under consideration.[3][12]",
+        "The income floor and ceiling, to be set by cabinet order. On 19 November the Finance Minister said a floor of about ¥560,000 is being considered.[3][18]",
         "The final amounts. The figures above are under consideration and will be set by cabinet order.[3][8]",
         "Whether the bill passes. It is before the House of Councillors, and the session ends on 12 December.[6][16]",
         "When the first payment arrives, and how people without a registered account will claim.[13]"
@@ -54457,7 +54542,7 @@ module.exports = {
               "October: as “one reference”, a ceiling somewhere in the ¥3 million range of individual annual income was reported as possible.[7]",
               "13 November: the Prime Minister said the government will consider a ceiling that makes 50% or more of workers eligible, so that more middle-income workers benefit. She gave no figure. Earlier the aim had been “30% or more”. That is about 30 million people; Kyodo reported “over 30 million”.[8][9]",
               "16 November: Finance Minister Katayama said that about 30 million people with annual incomes of ¥1 million to ¥4.5 million is the “rough image”.[11]",
-              "20 November: a floor of about ¥560,000 of annual income was reported to be under consideration.[12]"
+              "19 November: in the upper house special committee, Finance Minister Katayama said the government will consider setting the annual income at which payments start (the floor) at about ¥560,000, a figure recalculated with the fiscal 2026 minimum wage; the earlier options were about ¥530,000, ¥740,000 and about ¥1.06 million. NHK reported the same direction on 20 November.[18][12]"
             ],
             "People who did not work in the previous year are not covered. A response for people who cannot work because of illness, disability or care duties is to be considered and decided during fiscal 2028. For people on public assistance, the payment counts as income.[2][3]"
           ]
@@ -54495,7 +54580,7 @@ module.exports = {
           [
             "Its formal name is the Bill on the temporary reduction of the consumption tax rate on food and drink to lighten the burden of taxes and social insurance contributions, and on the payment of the Worker Burden Relief Payment. It was submitted on 9 October 2026 as Cabinet Bill No. 1 of the 222nd (extraordinary) Diet session.[5]",
             "In the House of Representatives it was examined by the Committee on Financial Affairs and passed in committee and in the plenary on 6 November. The Liberal Democratic Party and the Japan Innovation Party groups voted for it, and the other groups against. It was not amended.[5][17]",
-            "In the House of Councillors it was referred on 11 November to the Special Committee on the consumption tax and relief payment bill, where deliberations continue. As of 20 November no vote has been scheduled. The ruling parties lack a majority in the House of Councillors. The session runs until 12 December, and no extension has been decided.[6][16][17]"
+            "In the House of Councillors it was referred on 11 November to the Special Committee on the consumption tax and relief payment bill, where deliberations continue. A central public hearing is set for 24 November. As of 23 November no vote has been scheduled. The ruling parties lack a majority in the House of Councillors. The session runs until 12 December, and no extension has been decided.[6][19][16][17]"
           ]
         ]
       ],
@@ -54550,10 +54635,22 @@ module.exports = {
           "considering"
         ],
         [
+          "2026-11-19",
+          "19 November 2026",
+          "Finance Minister: an income floor of about ¥560,000 is being considered.[18]",
+          "considering"
+        ],
+        [
           "2026-11-20",
           "20 November 2026",
-          "An income floor of about ¥560,000 reported to be under consideration.[12]",
+          "NHK also reports a floor of about ¥560,000.[12]",
           "reported"
+        ],
+        [
+          "2026-11-24",
+          "24 November 2026",
+          "The upper house special committee holds a central public hearing.[19]",
+          "decided"
         ],
         [
           "2026-12-12",
@@ -54588,7 +54685,7 @@ module.exports = {
         ],
         [
           "Up to what income does it apply?",
-          "Neither the ceiling nor the floor has been decided. On 16 November the Finance Minister gave about 30 million people with incomes of ¥1 million to ¥4.5 million as the “rough image”. A floor of about ¥560,000 has been reported.[11][12]"
+          "The ceiling has not been decided. On 16 November the Finance Minister gave about 30 million people with incomes of ¥1 million to ¥4.5 million as the “rough image”, and on 19 November she said a floor of about ¥560,000 is being considered. Both will be set by cabinet order.[11][18]"
         ],
         [
           "When does it start, and when is it paid?",
@@ -54674,7 +54771,7 @@ module.exports = {
       "short": "就业者负担减轻支援金",
       "eb": "制度解读",
       "desc": "日本“就业者负担减轻支援金”何时开始、发多少、谁能领？正在研究每人最多约2万5,000日元、每个孩子约5,000日元，年收入100万至450万日元的大致目标，以及尚未确定的事项，均附出处和日期。还可以计算我家的金额。",
-      "asOf": "信息截至2026年11月（最后核对：2026年11月20日）。法案尚未成立。",
+      "asOf": "信息截至2026年11月（最后核对：2026年11月23日）。法案尚未成立。",
       "lead": [
         "就业者负担减轻支援金（日语：就業者負担軽減支援金）是日本国家向有工作的中低收入者发放现金的新制度。它由把食品消费税在两年内从8%降到1%的同一部法案设立，政府将其定位为“可退还税收抵免”（日语：給付付き税額控除）的第一步。[2][4]",
         "法案于2026年11月6日通过众议院，目前正在参议院审议。金额和收入界线不写在法律里，而是由政令决定，目前还没有确定。本页把法案和政府文件中写明的内容、政府答辩表示正在研究的内容，以及媒体报道的方案分开整理，每个数字都附出处和日期。有新信息时会随时更新。[3][5][6]"
@@ -54704,7 +54801,7 @@ module.exports = {
       ],
       "openH": "尚未确定的事项",
       "open": [
-        "年收入的上限和下限，将由政令决定。据报道，正在研究把下限定为约56万日元。[3][12]",
+        "年收入的上限和下限，将由政令决定。片山财务大臣11月19日答辩称，正在研究把下限定为约56万日元。[3][18]",
         "最终金额。上面的金额是正在研究的数字，将由政令决定。[3][8]",
         "法案能否成立。目前正在参议院审议，会期于12月12日结束。[6][16]",
         "首次到账的时间，以及没有登记公款领取账户的人如何办理手续。[13]"
@@ -54738,7 +54835,7 @@ module.exports = {
               "10月：据报道，作为“一个参考”，上限可能定在个人年收入300多万日元。[7]",
               "11月13日：首相答辩称，将研究设定所得上限，使劳动者的50%以上成为对象，以便让中等收入者也能受益，但没有给出具体金额。此前的说法是“30%以上”。对象约3,000万人，共同社报道为“超过3,000万人”。[8][9]",
               "11月16日：片山财务大臣答辩称，年收入100万至450万日元的约3,000万人是“大致的印象”。[11]",
-              "11月20日：据报道，正在研究把开始发放的年收入（下限）定为约56万日元。[12]"
+              "11月19日：片山财务大臣在参议院特别委员会答辩称，将研究把开始发放的年收入（下限）定为约56万日元。这是按2026财年最低工资重新计算的数字，此前的三个方案是约53万、74万和约106万日元。NHK在20日也报道了同样的方向。[18][12]"
             ],
             "上一年没有工作的人不属于这项支援金的对象。对于因疾病、残疾或照护等原因无法工作的人，将在2028财年内研究并得出结论。领取生活保护（最低生活保障）的人，支援金会被认定为收入。[2][3]"
           ]
@@ -54776,7 +54873,7 @@ module.exports = {
           [
             "正式名称是《为减轻税收及社会保险费负担而临时下调饮食品消费税率及发放就业者负担减轻支援金的法律案》。作为第222届国会（临时会）的内阁提出法案第1号，于2026年10月9日提交。[5]",
             "在众议院由财务金融委员会审议，11月6日在委员会和全体会议上获得通过。自民党和日本维新会的议员团体投了赞成票，其他议员团体投了反对票。法案未经修改。[5][17]",
-            "在参议院，法案于11月11日交付“消费税与支援金法案特别委员会”，审议仍在继续。截至11月20日，表决日程尚未确定。执政党在参议院未过半数。会期到12月12日为止，尚未决定延长。[6][16][17]"
+            "在参议院，法案于11月11日交付“消费税与支援金法案特别委员会”，审议仍在继续。11月24日将举行中央公听会。截至11月23日，表决日程尚未确定。执政党在参议院未过半数。会期到12月12日为止，尚未决定延长。[6][19][16][17]"
           ]
         ]
       ],
@@ -54831,10 +54928,22 @@ module.exports = {
           "considering"
         ],
         [
+          "2026-11-19",
+          "2026年11月19日",
+          "财务大臣答辩：正在研究把开始发放的年收入（下限）定为约56万日元。[18]",
+          "considering"
+        ],
+        [
           "2026-11-20",
           "2026年11月20日",
-          "据报道，开始发放的年收入（下限）拟定为约56万日元。[12]",
+          "NHK也报道下限约56万日元的方向。[12]",
           "reported"
+        ],
+        [
+          "2026-11-24",
+          "2026年11月24日",
+          "参议院特别委员会举行中央公听会。[19]",
+          "decided"
         ],
         [
           "2026-12-12",
@@ -54869,7 +54978,7 @@ module.exports = {
         ],
         [
           "年收入多少以内可以领？",
-          "上限和下限都还没有确定。财务大臣11月16日答辩称，年收入100万至450万日元的约3,000万人是“大致的印象”。据报道，下限拟定为约56万日元。[11][12]"
+          "上限还没有确定。财务大臣11月16日答辩称，年收入100万至450万日元的约3,000万人是“大致的印象”；11月19日又答辩称，正在研究把下限定为约56万日元。两者都将由政令决定。[11][18]"
         ],
         [
           "何时开始？何时到账？",
@@ -54955,7 +55064,7 @@ module.exports = {
       "short": "वर्कर बर्डन रिलीफ़ पेमेंट",
       "eb": "नीति की व्याख्या",
       "desc": "जापान का वर्कर बर्डन रिलीफ़ पेमेंट: कब, कितना और किसे। हर कामगार को लगभग 25,000 येन तक और हर बच्चे पर 5,000 येन पर विचार, मोटे तौर पर 1 मिलियन से 4.5 मिलियन येन की आय, और क्या अभी तय नहीं। कैलकुलेटर के साथ।",
-      "asOf": "नवंबर 2026 तक की जानकारी (आख़िरी जाँच 20 नवंबर 2026)। विधेयक अभी क़ानून नहीं बना है।",
+      "asOf": "नवंबर 2026 तक की जानकारी (आख़िरी जाँच 23 नवंबर 2026)। विधेयक अभी क़ानून नहीं बना है।",
       "lead": [
         "वर्कर बर्डन रिलीफ़ पेमेंट (shūgyōsha futan keigen shienkin) जापान सरकार का एक नया नकद भुगतान है, जो काम करने वाले कम और मध्यम आय के लोगों को मिलेगा। यह उसी विधेयक से बनता है जो खाने-पीने की चीज़ों पर उपभोग कर दो साल के लिए 8% से घटाकर 1% करता है, और सरकार इसे रिफ़ंडेबल टैक्स क्रेडिट की ओर पहला क़दम कहती है।[2][4]",
         "विधेयक 6 नवंबर 2026 को प्रतिनिधि सभा (निचले सदन) से पास हुआ और अब पार्षद सभा (उच्च सदन) के सामने है। राशियाँ और आय की सीमाएँ क़ानून में नहीं, मंत्रिमंडल के आदेश से तय होंगी, और अभी तय नहीं हुई हैं। यह पेज अलग-अलग रखता है कि विधेयक और सरकारी दस्तावेज़ क्या कहते हैं, सरकार ने किस पर विचार करने की बात कही है, और क्या ख़बरों में आया है, और हर आँकड़े का स्रोत और तारीख़ देता है। नए तथ्य आने पर हम इसे अपडेट करते हैं।[3][5][6]"
@@ -54985,7 +55094,7 @@ module.exports = {
       ],
       "openH": "अभी तय नहीं",
       "open": [
-        "आय की निचली और ऊपरी सीमा, जो मंत्रिमंडल के आदेश से तय होगी। ख़बरों के अनुसार लगभग 560,000 येन की निचली सीमा पर विचार हो रहा है।[3][12]",
+        "आय की निचली और ऊपरी सीमा, जो मंत्रिमंडल के आदेश से तय होगी। 19 नवंबर को वित्त मंत्री ने कहा कि लगभग 560,000 येन की निचली सीमा पर विचार हो रहा है।[3][18]",
         "अंतिम राशियाँ। ऊपर दिए आँकड़े विचाराधीन हैं और मंत्रिमंडल के आदेश से तय होंगे।[3][8]",
         "विधेयक पास होगा या नहीं। यह पार्षद सभा के सामने है, और सत्र 12 दिसंबर को ख़त्म होता है।[6][16]",
         "पहला भुगतान कब आएगा, और बिना पंजीकृत खाते वाले लोग कैसे दावा करेंगे।[13]"
@@ -55019,7 +55128,7 @@ module.exports = {
               "अक्टूबर: “एक संदर्भ” के रूप में ख़बर आई कि ऊपरी सीमा व्यक्तिगत सालाना आय के 3 मिलियन येन वाले दायरे में कहीं हो सकती है।[7]",
               "13 नवंबर: प्रधानमंत्री ने कहा कि सरकार ऐसी ऊपरी सीमा पर विचार करेगी जिससे 50% या उससे ज़्यादा कामगार हक़दार हों, ताकि ज़्यादा मध्यम आय वाले कामगारों को फ़ायदा हो। उन्होंने कोई आँकड़ा नहीं दिया। पहले लक्ष्य “30% या उससे ज़्यादा” था। यह लगभग 30 मिलियन लोग हैं; क्योदो ने “30 मिलियन से ज़्यादा” बताया।[8][9]",
               "16 नवंबर: वित्त मंत्री कातायामा ने कहा कि 1 मिलियन से 4.5 मिलियन येन सालाना आय वाले लगभग 30 मिलियन लोग “मोटी तस्वीर” है।[11]",
-              "20 नवंबर: ख़बर आई कि लगभग 560,000 येन सालाना आय की निचली सीमा पर विचार हो रहा है।[12]"
+              "19 नवंबर: उच्च सदन की विशेष समिति में वित्त मंत्री कातायामा ने कहा कि सरकार भुगतान शुरू होने वाली सालाना आय (निचली सीमा) को लगभग 560,000 येन रखने पर विचार करेगी; यह आँकड़ा वित्त वर्ष 2026 के न्यूनतम वेतन से दोबारा निकाला गया है, और पहले के विकल्प लगभग 530,000 येन, 740,000 येन और लगभग 1.06 मिलियन येन थे। 20 नवंबर को एनएचके ने भी यही दिशा बताई।[18][12]"
             ],
             "जिन्होंने पिछले साल काम नहीं किया, वे इसमें शामिल नहीं हैं। बीमारी, विकलांगता या देखभाल की ज़िम्मेदारियों के कारण काम न कर सकने वाले लोगों के लिए क्या किया जाए, इस पर वित्त वर्ष 2028 के दौरान विचार करके फ़ैसला होगा। सार्वजनिक सहायता पाने वालों के लिए यह भुगतान आय माना जाता है।[2][3]"
           ]
@@ -55057,7 +55166,7 @@ module.exports = {
           [
             "इसका औपचारिक नाम है: कर और सामाजिक बीमा अंशदान का बोझ हल्का करने के लिए खाने-पीने की चीज़ों पर उपभोग कर दर में अस्थायी कटौती, और वर्कर बर्डन रिलीफ़ पेमेंट के भुगतान से जुड़ा विधेयक। इसे 9 अक्टूबर 2026 को संसद के 222वें (असाधारण) सत्र में मंत्रिमंडल विधेयक संख्या 1 के रूप में पेश किया गया।[5]",
             "प्रतिनिधि सभा में इसकी जाँच वित्तीय मामलों की समिति ने की, और 6 नवंबर को यह समिति और पूर्ण सदन दोनों में पास हुआ। लिबरल डेमोक्रेटिक पार्टी और जापान इनोवेशन पार्टी के समूहों ने इसके पक्ष में वोट दिया, और बाक़ी समूहों ने ख़िलाफ़। इसमें कोई संशोधन नहीं हुआ।[5][17]",
-            "पार्षद सभा में इसे 11 नवंबर को उपभोग कर और रिलीफ़ पेमेंट विधेयक पर विशेष समिति को भेजा गया, जहाँ बहस जारी है। 20 नवंबर तक कोई मतदान तय नहीं हुआ है। पार्षद सभा में सत्ताधारी दलों के पास बहुमत नहीं है। सत्र 12 दिसंबर तक चलेगा, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[6][16][17]"
+            "पार्षद सभा में इसे 11 नवंबर को उपभोग कर और रिलीफ़ पेमेंट विधेयक पर विशेष समिति को भेजा गया, जहाँ बहस जारी है। 24 नवंबर को केंद्रीय जन सुनवाई तय है। 23 नवंबर तक कोई मतदान तय नहीं हुआ है। पार्षद सभा में सत्ताधारी दलों के पास बहुमत नहीं है। सत्र 12 दिसंबर तक चलेगा, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[6][19][16][17]"
           ]
         ]
       ],
@@ -55112,10 +55221,22 @@ module.exports = {
           "considering"
         ],
         [
+          "2026-11-19",
+          "19 नवंबर 2026",
+          "वित्त मंत्री: लगभग 560,000 येन की आय की निचली सीमा पर विचार।[18]",
+          "considering"
+        ],
+        [
           "2026-11-20",
           "20 नवंबर 2026",
-          "ख़बर: लगभग 560,000 येन की आय की निचली सीमा पर विचार।[12]",
+          "एनएचके ने भी लगभग 560,000 येन की निचली सीमा की ख़बर दी।[12]",
           "reported"
+        ],
+        [
+          "2026-11-24",
+          "24 नवंबर 2026",
+          "उच्च सदन की विशेष समिति की केंद्रीय जन सुनवाई।[19]",
+          "decided"
         ],
         [
           "2026-12-12",
@@ -55150,7 +55271,7 @@ module.exports = {
         ],
         [
           "यह किस आय तक लागू होता है?",
-          "न ऊपरी सीमा तय हुई है, न निचली। 16 नवंबर को वित्त मंत्री ने 1 मिलियन से 4.5 मिलियन येन आय वाले लगभग 30 मिलियन लोगों को “मोटी तस्वीर” बताया। लगभग 560,000 येन की निचली सीमा की ख़बर आई है।[11][12]"
+          "ऊपरी सीमा तय नहीं हुई है। 16 नवंबर को वित्त मंत्री ने 1 मिलियन से 4.5 मिलियन येन आय वाले लगभग 30 मिलियन लोगों को “मोटी तस्वीर” बताया, और 19 नवंबर को कहा कि लगभग 560,000 येन की निचली सीमा पर विचार हो रहा है। दोनों मंत्रिमंडल के आदेश से तय होंगी।[11][18]"
         ],
         [
           "यह कब शुरू होगा, और भुगतान कब होगा?",
@@ -55236,7 +55357,7 @@ module.exports = {
       "short": "Pago de alivio de cargas para trabajadores",
       "eb": "Explicación de una política",
       "desc": "El pago de alivio de cargas para trabajadores de Japón: cuándo, cuánto y quién lo recibe. Se estudian hasta unos 25.000 yenes por trabajador y 5.000 yenes por hijo, ingresos de 1 a 4,5 millones de yenes como orientación, y lo que sigue abierto. Con calculadora.",
-      "asOf": "Información a noviembre de 2026 (última comprobación: 20 de noviembre de 2026). El proyecto de ley aún no es ley.",
+      "asOf": "Información a noviembre de 2026 (última comprobación: 23 de noviembre de 2026). El proyecto de ley aún no es ley.",
       "lead": [
         "El pago de alivio de cargas para trabajadores (shūgyōsha futan keigen shienkin) es un nuevo pago en efectivo del Estado japonés a las personas que trabajan con ingresos bajos y medios. Lo crea el mismo proyecto de ley que baja el impuesto sobre el consumo de los alimentos del 8% al 1% durante dos años, y el Gobierno lo presenta como el primer paso hacia un crédito fiscal reembolsable.[2][4]",
         "El proyecto pasó la Cámara de Representantes el 6 de noviembre de 2026 y está ahora en la Cámara de Consejeros. Las cuantías y los límites de ingresos se fijarán por decreto del Gobierno, no en la ley, y no están decididos. Esta página separa lo que dicen el proyecto y los documentos del Gobierno, lo que el Gobierno ha dicho que estudia y lo que se ha publicado en la prensa, y da una fuente y una fecha para cada cifra. La actualizamos a medida que hay datos nuevos.[3][5][6]"
@@ -55266,7 +55387,7 @@ module.exports = {
       ],
       "openH": "Lo que aún no está decidido",
       "open": [
-        "El mínimo y el máximo de ingresos, que se fijarán por decreto. Según la prensa, se estudia un mínimo de unos 560.000 yenes.[3][12]",
+        "El mínimo y el máximo de ingresos, que se fijarán por decreto. El 19 de noviembre la ministra de Finanzas dijo que se estudia un mínimo de unos 560.000 yenes.[3][18]",
         "Las cuantías finales. Las cifras de arriba están en estudio y se fijarán por decreto.[3][8]",
         "Si el proyecto se aprueba. Está en la Cámara de Consejeros, y el periodo de sesiones termina el 12 de diciembre.[6][16]",
         "Cuándo llega el primer pago y cómo lo pedirán quienes no tengan una cuenta registrada.[13]"
@@ -55300,7 +55421,7 @@ module.exports = {
               "Octubre: como «una referencia», la prensa informó de que el máximo podría situarse en la franja de los 3 millones de yenes de renta individual anual.[7]",
               "13 de noviembre: la primera ministra dijo que el Gobierno estudiará un máximo que haga beneficiarios al 50% o más de los trabajadores, para que lleguen más trabajadores de ingresos medios. No dio ninguna cifra. Antes el objetivo era «el 30% o más». Son unos 30 millones de personas; la agencia Kyodo habló de «más de 30 millones».[8][9]",
               "16 de noviembre: la ministra de Finanzas, Katayama, dijo que la «imagen aproximada» son unos 30 millones de personas con ingresos anuales de 1 a 4,5 millones de yenes.[11]",
-              "20 de noviembre: la prensa informó de que se estudia un mínimo de unos 560.000 yenes de ingresos anuales.[12]"
+              "19 de noviembre: en la comisión especial de la cámara alta, la ministra de Finanzas, Katayama, dijo que el Gobierno estudiará fijar en unos 560.000 yenes los ingresos anuales a partir de los cuales se cobra (el mínimo), una cifra recalculada con el salario mínimo del año fiscal 2026; las opciones anteriores eran unos 530.000, 740.000 y unos 1,06 millones de yenes. La NHK informó en el mismo sentido el 20 de noviembre.[18][12]"
             ],
             "Quien no trabajó el año anterior no está incluido. La respuesta para quienes no pueden trabajar por enfermedad, discapacidad o cuidados se estudiará y decidirá durante el año fiscal 2028. Para quienes reciben la asistencia pública, el pago cuenta como ingreso.[2][3]"
           ]
@@ -55338,7 +55459,7 @@ module.exports = {
           [
             "Su nombre oficial es Proyecto de ley sobre la reducción temporal del tipo del impuesto sobre el consumo de los alimentos y bebidas para aliviar la carga de los impuestos y las cotizaciones sociales, y sobre el pago de alivio de cargas para trabajadores. Se presentó el 9 de octubre de 2026 como proyecto del Gobierno n.º 1 del 222.º periodo de sesiones (extraordinario) de la Dieta.[5]",
             "En la Cámara de Representantes lo examinó la Comisión de Asuntos Financieros, y se aprobó en comisión y en el pleno el 6 de noviembre. Votaron a favor los grupos del Partido Liberal Democrático y del Partido de la Innovación de Japón, y en contra los demás grupos. No se enmendó.[5][17]",
-            "En la Cámara de Consejeros se remitió el 11 de noviembre a la Comisión Especial sobre el proyecto del impuesto sobre el consumo y del pago de alivio, donde siguen los debates. A 20 de noviembre no hay fecha para la votación. Los partidos del Gobierno no tienen mayoría en la Cámara de Consejeros. El periodo de sesiones dura hasta el 12 de diciembre, y no se ha decidido ninguna prórroga.[6][16][17]"
+            "En la Cámara de Consejeros se remitió el 11 de noviembre a la Comisión Especial sobre el proyecto del impuesto sobre el consumo y del pago de alivio, donde siguen los debates. El 24 de noviembre se celebra una audiencia pública central. A 23 de noviembre no hay fecha para la votación. Los partidos del Gobierno no tienen mayoría en la Cámara de Consejeros. El periodo de sesiones dura hasta el 12 de diciembre, y no se ha decidido ninguna prórroga.[6][19][16][17]"
           ]
         ]
       ],
@@ -55393,10 +55514,22 @@ module.exports = {
           "considering"
         ],
         [
+          "2026-11-19",
+          "19 de noviembre de 2026",
+          "La ministra de Finanzas: se estudia un mínimo de ingresos de unos 560.000 yenes.[18]",
+          "considering"
+        ],
+        [
           "2026-11-20",
           "20 de noviembre de 2026",
-          "La prensa informa de que se estudia un mínimo de ingresos de unos 560.000 yenes.[12]",
+          "La NHK también informa de un mínimo de unos 560.000 yenes.[12]",
           "reported"
+        ],
+        [
+          "2026-11-24",
+          "24 de noviembre de 2026",
+          "La comisión especial de la cámara alta celebra una audiencia pública central.[19]",
+          "decided"
         ],
         [
           "2026-12-12",
@@ -55431,7 +55564,7 @@ module.exports = {
         ],
         [
           "¿Hasta qué ingresos se aplica?",
-          "No están decididos ni el máximo ni el mínimo. El 16 de noviembre la ministra de Finanzas dio como «imagen aproximada» unos 30 millones de personas con ingresos de 1 a 4,5 millones de yenes. La prensa ha informado de un mínimo de unos 560.000 yenes.[11][12]"
+          "El máximo no está decidido. El 16 de noviembre la ministra de Finanzas dio como «imagen aproximada» unos 30 millones de personas con ingresos de 1 a 4,5 millones de yenes, y el 19 de noviembre dijo que se estudia un mínimo de unos 560.000 yenes. Ambos se fijarán por decreto.[11][18]"
         ],
         [
           "¿Cuándo empieza y cuándo se paga?",
@@ -55517,7 +55650,7 @@ module.exports = {
       "short": "Entlastungszahlung für Erwerbstätige",
       "eb": "Erklärt",
       "desc": "Japans Entlastungszahlung für Erwerbstätige: wann, wie viel, wer sie bekommt. Geprüft werden bis zu etwa 25.000 Yen pro Person plus 5.000 Yen pro Kind, Einkommen von 1 bis 4,5 Millionen Yen als Richtwert, und was noch offen ist. Mit Rechner.",
-      "asOf": "Stand: November 2026 (zuletzt geprüft am 20. November 2026). Der Gesetzentwurf ist noch nicht verabschiedet.",
+      "asOf": "Stand: November 2026 (zuletzt geprüft am 23. November 2026). Der Gesetzentwurf ist noch nicht verabschiedet.",
       "lead": [
         "Die Entlastungszahlung für Erwerbstätige (shūgyōsha futan keigen shienkin) ist eine neue Geldleistung des japanischen Staates an Menschen mit niedrigem und mittlerem Einkommen, die arbeiten. Sie wird mit demselben Gesetzentwurf eingeführt, der die Verbrauchsteuer auf Lebensmittel für zwei Jahre von 8 % auf 1 % senkt, und die Regierung nennt sie den ersten Schritt zu einer erstattungsfähigen Steuergutschrift.[2][4]",
         "Der Entwurf passierte am 6. November 2026 das Unterhaus und liegt jetzt dem Oberhaus vor. Die Beträge und die Einkommensgrenzen werden nicht im Gesetz, sondern per Kabinettsverordnung festgelegt und sind noch nicht entschieden. Diese Seite trennt, was im Gesetzentwurf und in Regierungsunterlagen steht, was die Regierung nach eigenen Worten prüft und was berichtet wurde, und nennt zu jeder Zahl Quelle und Datum. Wir aktualisieren sie, sobald es Neues gibt.[3][5][6]"
@@ -55547,7 +55680,7 @@ module.exports = {
       ],
       "openH": "Noch nicht entschieden",
       "open": [
-        "Unter- und Obergrenze des Einkommens, die per Kabinettsverordnung festgelegt werden. Berichten zufolge wird eine Untergrenze von etwa 560.000 Yen geprüft.[3][12]",
+        "Unter- und Obergrenze des Einkommens, die per Kabinettsverordnung festgelegt werden. Am 19. November sagte die Finanzministerin, eine Untergrenze von etwa 560.000 Yen werde geprüft.[3][18]",
         "Die endgültigen Beträge. Die Zahlen oben werden geprüft und per Kabinettsverordnung festgelegt.[3][8]",
         "Ob der Entwurf verabschiedet wird. Er liegt dem Oberhaus vor, und die Sitzungsperiode endet am 12. Dezember.[6][16]",
         "Wann die erste Zahlung kommt und wie Menschen ohne registriertes Konto sie beantragen.[13]"
@@ -55581,7 +55714,7 @@ module.exports = {
               "Oktober: Als „eine Orientierung“ wurde eine mögliche Obergrenze bei einem individuellen Jahreseinkommen im Bereich von 3 Millionen Yen berichtet.[7]",
               "13. November: Die Premierministerin sagte, die Regierung prüfe eine Obergrenze, mit der 50 % oder mehr der Erwerbstätigen berechtigt wären, damit mehr Erwerbstätige mit mittlerem Einkommen profitieren. Eine Zahl nannte sie nicht. Zuvor hatte das Ziel „30 % oder mehr“ gelautet. Das sind etwa 30 Millionen Menschen; Kyodo berichtete von „über 30 Millionen“.[8][9]",
               "16. November: Finanzministerin Katayama sagte, etwa 30 Millionen Menschen mit Jahreseinkommen von 1 Million bis 4,5 Millionen Yen seien das „grobe Bild“.[11]",
-              "20. November: Berichten zufolge wird eine Untergrenze von etwa 560.000 Yen Jahreseinkommen geprüft.[12]"
+              "19. November: Im Sonderausschuss des Oberhauses sagte Finanzministerin Katayama, die Regierung werde prüfen, das Jahreseinkommen, ab dem gezahlt wird (die Untergrenze), auf etwa 560.000 Yen festzulegen, neu berechnet mit dem Mindestlohn des Fiskaljahres 2026; zuvor standen etwa 530.000, 740.000 und etwa 1,06 Millionen Yen zur Wahl. NHK berichtete am 20. November in dieselbe Richtung.[18][12]"
             ],
             "Wer im Vorjahr nicht gearbeitet hat, ist nicht erfasst. Eine Lösung für Menschen, die wegen Krankheit, Behinderung oder Pflegeaufgaben nicht arbeiten können, soll im Fiskaljahr 2028 geprüft und entschieden werden. Bei Bezug von Sozialhilfe wird die Zahlung als Einkommen angerechnet.[2][3]"
           ]
@@ -55619,7 +55752,7 @@ module.exports = {
           [
             "Sein offizieller Name lautet Gesetzentwurf über die befristete Senkung des Verbrauchsteuersatzes auf Lebensmittel und Getränke zur Entlastung von Steuern und Sozialversicherungsbeiträgen und über die Zahlung der Entlastungszahlung für Erwerbstätige. Er wurde am 9. Oktober 2026 als Kabinettsentwurf Nr. 1 der 222. (außerordentlichen) Sitzungsperiode des Parlaments eingebracht.[5]",
             "Im Unterhaus beriet ihn der Finanzausschuss; am 6. November wurde er im Ausschuss und im Plenum angenommen. Die Fraktionen der Liberaldemokratischen Partei und der Japanischen Innovationspartei stimmten dafür, die übrigen Fraktionen dagegen. Er wurde nicht geändert.[5][17]",
-            "Im Oberhaus wurde er am 11. November an den Sonderausschuss zum Gesetzentwurf über Verbrauchsteuer und Entlastungszahlung überwiesen, wo die Beratungen andauern. Stand 20. November ist keine Abstimmung angesetzt. Die Regierungsparteien haben im Oberhaus keine Mehrheit. Die Sitzungsperiode läuft bis zum 12. Dezember, eine Verlängerung ist nicht beschlossen.[6][16][17]"
+            "Im Oberhaus wurde er am 11. November an den Sonderausschuss zum Gesetzentwurf über Verbrauchsteuer und Entlastungszahlung überwiesen, wo die Beratungen andauern. Für den 24. November ist eine zentrale öffentliche Anhörung angesetzt. Stand 23. November ist keine Abstimmung angesetzt. Die Regierungsparteien haben im Oberhaus keine Mehrheit. Die Sitzungsperiode läuft bis zum 12. Dezember, eine Verlängerung ist nicht beschlossen.[6][19][16][17]"
           ]
         ]
       ],
@@ -55674,10 +55807,22 @@ module.exports = {
           "considering"
         ],
         [
+          "2026-11-19",
+          "19. November 2026",
+          "Finanzministerin: eine Einkommensuntergrenze von etwa 560.000 Yen wird geprüft.[18]",
+          "considering"
+        ],
+        [
           "2026-11-20",
           "20. November 2026",
-          "Berichten zufolge wird eine Einkommensuntergrenze von etwa 560.000 Yen geprüft.[12]",
+          "Auch NHK berichtet über eine Untergrenze von etwa 560.000 Yen.[12]",
           "reported"
+        ],
+        [
+          "2026-11-24",
+          "24. November 2026",
+          "Der Sonderausschuss des Oberhauses hält eine zentrale öffentliche Anhörung ab.[19]",
+          "decided"
         ],
         [
           "2026-12-12",
@@ -55712,7 +55857,7 @@ module.exports = {
         ],
         [
           "Bis zu welchem Einkommen gilt sie?",
-          "Weder Ober- noch Untergrenze sind entschieden. Am 16. November nannte die Finanzministerin etwa 30 Millionen Menschen mit Einkommen von 1 Million bis 4,5 Millionen Yen als „grobes Bild“. Berichtet wurde eine Untergrenze von etwa 560.000 Yen.[11][12]"
+          "Die Obergrenze ist nicht entschieden. Am 16. November nannte die Finanzministerin etwa 30 Millionen Menschen mit Einkommen von 1 Million bis 4,5 Millionen Yen als „grobes Bild“, am 19. November sagte sie, eine Untergrenze von etwa 560.000 Yen werde geprüft. Beides wird per Kabinettsverordnung festgelegt.[11][18]"
         ],
         [
           "Wann beginnt sie, und wann wird gezahlt?",
@@ -55798,7 +55943,7 @@ module.exports = {
       "short": "دفعة تخفيف العبء عن العاملين",
       "eb": "شرح سياسة",
       "desc": "دفعة تخفيف العبء عن العاملين في اليابان: متى، وكم، ومن يستحقها. قيد الدراسة حتى نحو 25,000 ين للعامل و5,000 ين لكل طفل، ودخل من مليون إلى 4.5 ملايين ين كتصور تقريبي، وما لم يُحسم بعد. مع حاسبة.",
-      "asOf": "المعلومات حتى نوفمبر 2026 (آخر مراجعة في 20 نوفمبر 2026). لم يصبح مشروع القانون قانونًا بعد.",
+      "asOf": "المعلومات حتى نوفمبر 2026 (آخر مراجعة في 23 نوفمبر 2026). لم يصبح مشروع القانون قانونًا بعد.",
       "lead": [
         "دفعة تخفيف العبء عن العاملين (باليابانية: شوغيوشا فوتان كيغين شيينكين) دفعة نقدية جديدة من الدولة اليابانية لذوي الدخل المنخفض والمتوسط الذين يعملون. ينشئها مشروع القانون نفسه الذي يخفّض ضريبة الاستهلاك على الغذاء من 8% إلى 1% لمدة عامين، وتصفها الحكومة بأنها الخطوة الأولى نحو ائتمان ضريبي قابل للاسترداد.[2][4]",
         "أقرّ مجلس النواب مشروع القانون في 6 نوفمبر 2026، وهو الآن أمام مجلس المستشارين. ستُحدَّد المبالغ وحدود الدخل بمرسوم حكومي لا في القانون نفسه، ولم تُحسم بعد. تفصل هذه الصفحة بين ما يقوله مشروع القانون ووثائق الحكومة، وما قالت الحكومة إنها تدرسه، وما ورد في التقارير الصحفية، وتذكر مصدرًا وتاريخًا لكل رقم. ونحدّثها كلما ظهرت معلومات جديدة.[3][5][6]"
@@ -55828,7 +55973,7 @@ module.exports = {
       ],
       "openH": "ما لم يُحسم بعد",
       "open": [
-        "الحدان الأدنى والأعلى للدخل، وسيُحدَّدان بمرسوم حكومي. وأفادت تقارير بدراسة حد أدنى بنحو 560,000 ين.[3][12]",
+        "الحدان الأدنى والأعلى للدخل، وسيُحدَّدان بمرسوم حكومي. وفي 19 نوفمبر قال وزير المالية إن حدًا أدنى بنحو 560,000 ين قيد الدراسة.[3][18]",
         "المبالغ النهائية. الأرقام أعلاه قيد الدراسة وستُحدَّد بمرسوم حكومي.[3][8]",
         "هل سيُقرّ مشروع القانون. فهو أمام مجلس المستشارين، وتنتهي الدورة في 12 ديسمبر.[6][16]",
         "موعد وصول الدفعة الأولى، وكيف سيتقدم من لم يسجّلوا حسابًا.[13]"
@@ -55862,7 +56007,7 @@ module.exports = {
               "أكتوبر: بوصفه «مرجعًا واحدًا»، أفادت التقارير بإمكان أن يقع الحد الأعلى عند دخل فردي سنوي في حدود 3 ملايين ين وما فوقها بقليل.[7]",
               "13 نوفمبر: قالت رئيسة الوزراء إن الحكومة ستدرس حدًا أعلى يجعل 50% أو أكثر من العاملين مستحقين، حتى يستفيد عدد أكبر من العاملين ذوي الدخل المتوسط. ولم تذكر رقمًا. وكان الهدف من قبل «30% أو أكثر». وهذا نحو 30 مليون شخص، وذكرت وكالة كيودو «أكثر من 30 مليونًا».[8][9]",
               "16 نوفمبر: قال وزير المالية كاتاياما إن نحو 30 مليون شخص بدخل سنوي من مليون إلى 4.5 ملايين ين هو «التصور التقريبي».[11]",
-              "20 نوفمبر: أفادت التقارير بدراسة حد أدنى بنحو 560,000 ين من الدخل السنوي.[12]"
+              "19 نوفمبر: قال وزير المالية كاتاياما في اللجنة الخاصة بمجلس المستشارين إن الحكومة ستدرس تحديد الدخل السنوي الذي يبدأ عنده الصرف (الحد الأدنى) بنحو 560,000 ين، وهو رقم أُعيد حسابه بالحد الأدنى للأجور في السنة المالية 2026، بعد أن كانت الخيارات السابقة نحو 530,000 ين و740,000 ين ونحو 1.06 مليون ين. ونقلت هيئة الإذاعة اليابانية الاتجاه نفسه في 20 نوفمبر.[18][12]"
             ],
             "لا تشمل الدفعة من لم يعملوا في العام السابق. وستُدرس استجابة لمن لا يستطيعون العمل بسبب المرض أو الإعاقة أو واجبات الرعاية، ويُبتّ فيها خلال السنة المالية 2028. ولمن يتلقون المساعدة العامة، تُحتسب الدفعة دخلًا.[2][3]"
           ]
@@ -55900,7 +56045,7 @@ module.exports = {
           [
             "اسمه الرسمي: مشروع قانون التخفيض المؤقت لنسبة ضريبة الاستهلاك على الأطعمة والمشروبات لتخفيف عبء الضرائب واشتراكات التأمين الاجتماعي، وصرف دفعة تخفيف العبء عن العاملين. وقُدّم في 9 أكتوبر 2026 بوصفه مشروع القانون الحكومي رقم 1 في الدورة الـ222 (الاستثنائية) للبرلمان.[5]",
             "في مجلس النواب درسته لجنة الشؤون المالية، وأُقرّ في اللجنة وفي الجلسة العامة في 6 نوفمبر. وصوّتت لصالحه كتلتا الحزب الليبرالي الديمقراطي وحزب الابتكار الياباني، وصوّتت الكتل الأخرى ضده. ولم يُعدَّل.[5][17]",
-            "وفي مجلس المستشارين أُحيل في 11 نوفمبر إلى اللجنة الخاصة بمشروع قانون ضريبة الاستهلاك ودفعة تخفيف العبء، حيث تتواصل المداولات. وحتى 20 نوفمبر لم يُحدَّد موعد للتصويت. ولا تملك أحزاب الحكم أغلبية في مجلس المستشارين. وتستمر الدورة حتى 12 ديسمبر، ولم يُقرَّر تمديدها.[6][16][17]"
+            "وفي مجلس المستشارين أُحيل في 11 نوفمبر إلى اللجنة الخاصة بمشروع قانون ضريبة الاستهلاك ودفعة تخفيف العبء، حيث تتواصل المداولات. وتُعقد جلسة استماع عامة مركزية في 24 نوفمبر. وحتى 23 نوفمبر لم يُحدَّد موعد للتصويت. ولا تملك أحزاب الحكم أغلبية في مجلس المستشارين. وتستمر الدورة حتى 12 ديسمبر، ولم يُقرَّر تمديدها.[6][19][16][17]"
           ]
         ]
       ],
@@ -55955,10 +56100,22 @@ module.exports = {
           "considering"
         ],
         [
+          "2026-11-19",
+          "19 نوفمبر 2026",
+          "وزير المالية: حد أدنى للدخل بنحو 560,000 ين قيد الدراسة.[18]",
+          "considering"
+        ],
+        [
           "2026-11-20",
           "20 نوفمبر 2026",
-          "تقارير عن دراسة حد أدنى للدخل بنحو 560,000 ين.[12]",
+          "هيئة الإذاعة اليابانية تنقل أيضًا حدًا أدنى بنحو 560,000 ين.[12]",
           "reported"
+        ],
+        [
+          "2026-11-24",
+          "24 نوفمبر 2026",
+          "اللجنة الخاصة بمجلس المستشارين تعقد جلسة استماع عامة مركزية.[19]",
+          "decided"
         ],
         [
           "2026-12-12",
@@ -55993,7 +56150,7 @@ module.exports = {
         ],
         [
           "حتى أي دخل تُطبَّق؟",
-          "لم يُحسم الحد الأعلى ولا الحد الأدنى. وفي 16 نوفمبر قدّم وزير المالية نحو 30 مليون شخص بدخل من مليون إلى 4.5 ملايين ين بوصفه «التصور التقريبي». وأفادت تقارير بحد أدنى بنحو 560,000 ين.[11][12]"
+          "لم يُحسم الحد الأعلى. ففي 16 نوفمبر قدّم وزير المالية نحو 30 مليون شخص بدخل من مليون إلى 4.5 ملايين ين بوصفه «التصور التقريبي»، وفي 19 نوفمبر قال إن حدًا أدنى بنحو 560,000 ين قيد الدراسة. وسيُحدَّد الاثنان بمرسوم حكومي.[11][18]"
         ],
         [
           "متى تبدأ، ومتى تُصرف؟",
@@ -56073,6 +56230,2513 @@ module.exports = {
       "hhLink": "جرّب مبالغ أخرى للدخل الأساسي في حاسبة الأسرة",
       "hhBack": "دفعة تخفيف العبء عن العاملين في اليابان: كم؟ احسب مبلغ أسرتك",
       "about": "متى، وكم، ومن، وكيف: دفعة تخفيف العبء عن العاملين في اليابان المعروضة الآن على البرلمان. نفصل بين ما يقوله مشروع القانون وما هو قيد الدراسة وما ورد في التقارير، مع مصدر وتاريخ لكل رقم، ونحدّثها كلما ظهرت وقائع جديدة، ومعها حاسبة للأسرة."
+    }
+  },
+  "JB": {
+    "id": "japan-benefits-2026",
+    "published": "2026-11-23",
+    "updated": "2026-11-23",
+    "items": [
+      {
+        "id": "wrp",
+        "status": "bill",
+        "checked": "2026-11-23",
+        "link": "/guides/worker-relief-payment/"
+      },
+      {
+        "id": "food",
+        "status": "bill",
+        "checked": "2026-11-23",
+        "link": "/guides/worker-relief-payment/"
+      },
+      {
+        "id": "energy",
+        "status": "running",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "fuel",
+        "status": "running",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "incometax",
+        "status": "running",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "kosodate",
+        "status": "ended",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "uniform",
+        "status": "none",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "lowincome",
+        "status": "none",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "grant",
+        "status": "running",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "credit",
+        "status": "considering",
+        "checked": "2026-11-23",
+        "link": "/essays/refundable-tax-credit-vs-basic-income/"
+      }
+    ],
+    "log": [
+      {
+        "date": "2026-11-23",
+        "ja": "公開。就業者負担軽減支援金（11月19日の財務相答弁と11月24日の中央公聴会まで）、食料品の消費税1%、電気・ガス料金の支援、ガソリンなどの補助、年末調整の所得税減税、子育て応援手当、一律給付、非課税世帯への給付、重点支援地方交付金、給付付き税額控除を、11月23日時点で確認",
+        "en": "Published, with the Worker Burden Relief Payment (up to the Finance Minister’s answer of 19 November and the public hearing of 24 November), the 1% food tax, power and gas support, the fuel subsidy, the year-end income tax cut, the child-rearing allowance, a uniform payment, payments for exempt households, the priority regional grant and the refundable tax credit, all checked on 23 November",
+        "zh": "发布。收录就业者负担减轻支援金（截至11月19日财务大臣答辩和11月24日中央公听会）、食品消费税1%、电费燃气费支援、燃料补贴、年末调整所得税减税、育儿支援津贴、全民统一给付、免税家庭给付、重点支援地方交付金和可退还税收抵免，均于11月23日核对",
+        "hi": "प्रकाशित, जिसमें वर्कर बर्डन रिलीफ़ पेमेंट (19 नवंबर के वित्त मंत्री के जवाब और 24 नवंबर की जन सुनवाई तक), खाने पर 1% कर, बिजली-गैस मदद, ईंधन सब्सिडी, साल के अंत की आयकर कटौती, बाल-पालन भत्ता, सबको एक जैसा भुगतान, छूट वाले परिवारों के भुगतान, प्राथमिक क्षेत्रीय अनुदान और रिफ़ंडेबल टैक्स क्रेडिट हैं, सब 23 नवंबर को जाँचे गए",
+        "es": "Publicada, con el pago de alivio para trabajadores (hasta la respuesta de la ministra de Finanzas del 19 de noviembre y la audiencia del 24 de noviembre), el impuesto del 1% en alimentos, la ayuda de luz y gas, el subsidio a los combustibles, la rebaja fiscal de fin de año, la ayuda por crianza, el pago para todos, los pagos a hogares exentos, la subvención regional prioritaria y el crédito fiscal reembolsable, todo comprobado el 23 de noviembre",
+        "de": "Veröffentlicht, mit der Entlastungszahlung für Erwerbstätige (bis zur Antwort der Finanzministerin vom 19. November und der Anhörung am 24. November), der 1 % Steuer auf Lebensmittel, der Strom- und Gashilfe, dem Kraftstoffzuschuss, der Steuersenkung im Jahresausgleich, dem Kinderzuschlag, der Zahlung für alle, Zahlungen an befreite Haushalte, dem regionalen Schwerpunktzuschuss und der Steuergutschrift, alles am 23. November geprüft",
+        "ar": "نُشرت الصفحة، وتشمل دفعة تخفيف العبء عن العاملين (حتى جواب وزير المالية في 19 نوفمبر وجلسة الاستماع في 24 نوفمبر)، وضريبة 1% على الغذاء، ودعم الكهرباء والغاز، ودعم الوقود، وخفض ضريبة الدخل في آخر العام، وبدل تربية الأطفال، والدفعة الموحدة، ومدفوعات الأسر المعفاة، والمنحة الإقليمية ذات الأولوية، والائتمان الضريبي القابل للاسترداد، وكلها رُوجعت في 23 نوفمبر"
+      }
+    ],
+    "sources": [
+      {
+        "n": 1,
+        "label": {
+          "ja": "内閣官房・財務省「法律案要綱」（2026年10月9日、PDF）",
+          "en": "Cabinet Secretariat and Ministry of Finance — Outline (yōkō) of the bill (9 Oct 2026; PDF, in Japanese)"
+        },
+        "url": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf"
+      },
+      {
+        "n": 2,
+        "label": {
+          "ja": "共同通信（東京新聞）首相答弁：最大2万5千円程度を基本に検討、子ども1人5千円程度を上乗せ（2026年11月13日）",
+          "en": "Kyodo News via Tokyo Shimbun — PM: up to about ¥25,000 as the base, about ¥5,000 extra per child (13 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.tokyo-np.co.jp/article/527904"
+      },
+      {
+        "n": 3,
+        "label": {
+          "ja": "時事通信 支援基本額2万5000円、定額支援額・子ども加算5000円、対象5割以上（2026年11月13日）",
+          "en": "Jiji Press — Base amount ¥25,000, flat amount and child add-on ¥5,000, 50% or more of workers (13 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.jiji.com/jc/article?k=2026111300707&g=pol"
+      },
+      {
+        "n": 4,
+        "label": {
+          "ja": "東京新聞 夫婦と子2人で合計6万円（2026年11月13日）",
+          "en": "Tokyo Shimbun — ¥60,000 in total for a couple with two children (13 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.tokyo-np.co.jp/article/527998"
+      },
+      {
+        "n": 5,
+        "label": {
+          "ja": "時事通信（Yahoo!ニュース）片山財務相「年収100万〜450万円の3000万人程度」（2026年11月16日）",
+          "en": "Jiji Press via Yahoo! News — Finance Minister: about 30 million people with incomes of ¥1 million to ¥4.5 million (16 Nov 2026, in Japanese)"
+        },
+        "url": "https://news.yahoo.co.jp/articles/d49e9f989b6e9b568c08754073e30c209be89024"
+      },
+      {
+        "n": 6,
+        "label": {
+          "ja": "時事通信（Yahoo!ニュース）「年収下限は56万円程度　所得連動給付で検討表明　片山財務相」（2026年11月19日）",
+          "en": "Jiji Press via Yahoo! News — Finance Minister Katayama: income floor of about ¥560,000 under consideration (19 Nov 2026, in Japanese)"
+        },
+        "url": "https://news.yahoo.co.jp/articles/51723a0d8b8a8c7f2a4e1ab311e10e18e61be6f8"
+      },
+      {
+        "n": 7,
+        "label": {
+          "ja": "参議院「議案情報」閣法第1号（第222回国会）",
+          "en": "House of Councillors — Bill information, Cabinet Bill No. 1, 222nd Diet (in Japanese)"
+        },
+        "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm"
+      },
+      {
+        "n": 8,
+        "label": {
+          "ja": "参議院「消費税・支援金法案に関する特別委員会公聴会の公述人公募のお知らせ」（2026年11月18日、公聴会は11月24日）",
+          "en": "House of Councillors — Call for witnesses at the special committee’s public hearing on 24 November (18 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.sangiin.go.jp/jpn/ugoki/r8/shohi-kochou261118.html"
+      },
+      {
+        "n": 9,
+        "label": {
+          "ja": "衆議院 トップページ（会期：12月12日まで）",
+          "en": "House of Representatives — home page (session until 12 December; in Japanese)"
+        },
+        "url": "https://www.shugiin.go.jp/"
+      },
+      {
+        "n": 10,
+        "label": {
+          "ja": "国税庁「消費税の軽減税率制度の実施について」",
+          "en": "National Tax Agency — The reduced consumption tax rate (in Japanese)"
+        },
+        "url": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/01.htm"
+      },
+      {
+        "n": 11,
+        "label": {
+          "ja": "資源エネルギー庁「電気・都市ガスをご利用するみなさまへ（電気・ガス料金支援）」",
+          "en": "Agency for Natural Resources and Energy — Electricity and gas price support, for users (in Japanese)"
+        },
+        "url": "https://denkigas-gekihenkanwa.go.jp/"
+      },
+      {
+        "n": 12,
+        "label": {
+          "ja": "首相官邸「中東情勢を踏まえた『緊急的激変緩和措置』の今後の対応についての会見」（2026年10月29日）",
+          "en": "Prime Minister’s Office — Press conference on the emergency price measures in light of the Middle East situation (29 Oct 2026, in Japanese)"
+        },
+        "url": "https://www.kantei.go.jp/jp/105/statement/2026/1029kaiken.html"
+      },
+      {
+        "n": 13,
+        "label": {
+          "ja": "資源エネルギー庁「中東情勢を踏まえた緊急的激変緩和措置」（2026年11月19日以降の支給単価）",
+          "en": "Agency for Natural Resources and Energy — Emergency fuel price measure (subsidy rates from 19 Nov 2026, in Japanese)"
+        },
+        "url": "https://nenryo-teigakuhikisage.go.jp/"
+      },
+      {
+        "n": 14,
+        "label": {
+          "ja": "国税庁「揮発油税等の特例税率の廃止について」（2025年12月）",
+          "en": "National Tax Agency — Abolition of the special (provisional) petrol tax rates (Dec 2025, in Japanese)"
+        },
+        "url": "https://www.nta.go.jp/information/other/data/r07/kihatsu/index.htm"
+      },
+      {
+        "n": 15,
+        "label": {
+          "ja": "国税庁「令和8年度税制改正による所得税の基礎控除の引上げ等について」",
+          "en": "National Tax Agency — Higher basic deduction for income tax under the FY2026 tax reform (in Japanese)"
+        },
+        "url": "https://www.nta.go.jp/users/gensen/2026kiso/index.htm"
+      },
+      {
+        "n": 16,
+        "label": {
+          "ja": "こども家庭庁「物価高対応子育て応援手当」",
+          "en": "Children and Families Agency — Child-rearing support allowance for high prices (in Japanese)"
+        },
+        "url": "https://www.cfa.go.jp/policies/kokoseido/kosodate-ouenteate"
+      },
+      {
+        "n": 17,
+        "label": {
+          "ja": "自由民主党・日本維新の会「連立政権合意書」（2025年10月20日、PDF）",
+          "en": "LDP and Nippon Ishin no Kai — Coalition agreement (20 Oct 2025; PDF, in Japanese)"
+        },
+        "url": "https://storage2.jimin.jp/pdf/news/information/211626.pdf"
+      },
+      {
+        "n": 18,
+        "label": {
+          "ja": "内閣官房「基本方針」（社会保障国民会議、2026年8月5日、PDF）",
+          "en": "Cabinet Secretariat — Basic policy (Social Security National Council, 5 Aug 2026; PDF, in Japanese)"
+        },
+        "url": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260805/01_siryou1.pdf"
+      },
+      {
+        "n": 19,
+        "label": {
+          "ja": "内閣府地方創生推進室「物価高騰対応重点支援地方創生臨時交付金」",
+          "en": "Cabinet Office — Priority regional grant for price rises (in Japanese)"
+        },
+        "url": "https://www.chisou.go.jp/tiiki/rinjikoufukin/juutenshien.html"
+      },
+      {
+        "n": 20,
+        "label": {
+          "ja": "内閣府「重点支援地方交付金（令和8年度予備費）の概要」（2026年11月、PDF）",
+          "en": "Cabinet Office — Outline of the priority regional grant from the FY2026 reserve fund (Nov 2026; PDF, in Japanese)"
+        },
+        "url": "https://www.chisou.go.jp/tiiki/rinjikoufukin/juutenshien/r8yobi_gaiyou.pdf"
+      },
+      {
+        "n": 21,
+        "label": {
+          "ja": "八代市「八代市物価高騰重点支援給付金のお知らせ」（2026年9月25日更新）",
+          "en": "Yatsushiro City — Price-rise priority support payment (updated 25 Sep 2026, in Japanese)"
+        },
+        "url": "https://www.city.yatsushiro.lg.jp/kiji00325683/index.html"
+      },
+      {
+        "n": 22,
+        "label": {
+          "ja": "桑名市「『実感』手元に現金5000円お届け事業」（2026年11月9日更新）",
+          "en": "Kuwana City — ¥5,000 in cash per resident (updated 9 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.city.kuwana.lg.jp/kyufu/shien.html"
+      },
+      {
+        "n": 23,
+        "label": {
+          "ja": "総務省・消費者庁・警察庁「給付金のサギに注意!!」（2020年5月、PDF）",
+          "en": "Ministry of Internal Affairs, Consumer Affairs Agency and National Police Agency — Beware of benefit scams (May 2020; PDF, in Japanese)"
+        },
+        "url": "https://www.npa.go.jp/bureau/soumu/corona/sagihigaibousi.pdf"
+      },
+      {
+        "n": 24,
+        "label": {
+          "ja": "消費者庁「支援団体等の名称をかたり、いわゆる支援金の給付を持ち掛けて架空の料金請求を行う事業者に関する注意喚起」（2025年9月11日、PDF）",
+          "en": "Consumer Affairs Agency — Warning about businesses that offer “support payments” in the name of support groups and demand fake fees (11 Sep 2025; PDF, in Japanese)"
+        },
+        "url": "https://www.caa.go.jp/notice/assets/consumer_policy_cms103_250911_01.pdf"
+      },
+      {
+        "n": 25,
+        "label": {
+          "ja": "財務省「令和8年度一般会計予備費使用」閣議決定（2026年11月13日、PDF）",
+          "en": "Ministry of Finance — Use of the FY2026 general account reserve fund, cabinet decision (13 Nov 2026; PDF, in Japanese)"
+        },
+        "url": "https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/r81113kakugikettei.pdf"
+      }
+    ],
+    "ja": {
+      "title": "【2026年11月最新】給付金はいつ・いくら？ 国の給付金・支援金・補助金の一覧（決定済み／審議中／未定）",
+      "short": "国の給付金の一覧（2026年）",
+      "eb": "給付金のまとめ",
+      "desc": "給付金はいつ・いくら？ 2026年11月最新の国の給付金・支援金・補助金の一覧。一律給付は決まっていません。就業者負担軽減支援金（審議中）、電気・ガス代の値引き、所得税の減税、子育て応援手当などを、状態・金額・時期・出典つきで整理。",
+      "asOf": "2026年11月23日時点の情報です（すべての項目を11月23日に確認）。新しい情報が出たら更新します。",
+      "lead": [
+        "「給付金はいつ？」「一律給付はある？」に答えるため、国の給付金・支援金・補助金を、すでに決まって実施中のもの、法案を国会で審議中のもの、政府が検討中のもの、決まっていないもの、終わったものに分けて一覧にしました。項目ごとに金額、対象、時期、受け取り方、出典と確認日を示します。",
+        "結論から言うと、2026年11月の時点で、国民全員に一律に配る現金給付は決まっていません。いま実施中なのは電気・都市ガス代の値引き、ガソリンなどの補助、年末調整での所得税の減税で、現金を配るものは市区町村ごとの給付が中心です。国の新しい現金給付である就業者負担軽減支援金は、法案が参議院で審議されています。[17][1][7]"
+      ],
+      "answerH": "答え：いま、給付金はある？",
+      "answer": [
+        [
+          "一律の給付金は？",
+          "ありません。2026年11月23日の時点で、国民全員に一律に配る国の現金給付は決まっていません。2025年に掲げられた1人2万円の給付は、2025年10月20日の自民党と日本維新の会の連立合意で「行わない」とされました。[17]",
+          "none"
+        ],
+        [
+          "いま実施中のものは？",
+          "電気・都市ガス代の値引き（2026年12月使用分から、申請不要）、ガソリン・軽油などの補助、2026年12月の年末調整での所得税の減税（首相は納税者1人あたり3万〜6万円と説明）です。現金の給付は、国の交付金を使った市区町村ごとの給付が中心です。[11][12][13][19]",
+          "running"
+        ],
+        [
+          "次の国の給付は？",
+          "就業者負担軽減支援金です。法案は参議院で審議中で、成立すれば2027年4月に制度が始まり、2027・2028年度は年1回の支給です。政府は1人あたり年最大2万5,000円程度を基本に検討しています。[1][3][7]",
+          "bill"
+        ],
+        [
+          "申請は必要？",
+          "電気・ガス代の値引き、ガソリンの補助、年末調整の減税は申請不要です。市区町村の給付は、口座がわかる世帯には申請なしで振り込み、それ以外は申請が必要という形が多く、期限があります（例：熊本県八代市は12月28日消印有効）。[11][15][21]",
+          "running"
+        ]
+      ],
+      "legend": "：このページの札の意味です。",
+      "statusL": {
+        "running": "決定・実施中",
+        "bill": "法案審議中",
+        "considering": "政府が検討中",
+        "reported": "報道のみ",
+        "none": "未定・予定なし",
+        "ended": "終了"
+      },
+      "openH": "まだ決まっていないこと",
+      "open": [
+        "就業者負担軽減支援金の法案が成立するか、最終的な金額と年収の線（政令で決めます）。国会の会期末は12月12日です。[7][9]",
+        "2027年3月使用分の電気・ガス代の支援。首相は「様々な状況を見極めた上で、対応を検討」と述べています。[12]",
+        "ガソリンなどの補助がいつ終わるか。12月から基準価格を段階的に引き上げますが、終わりの時期は示されていません。[12][13]",
+        "給付付き税額控除の具体的な制度。2029年度の導入を目指して検討が続いています。[18]"
+      ],
+      "toc": "目次",
+      "listH": "一覧：国の給付金・支援金・補助金",
+      "fieldL": {
+        "amount": "いくら",
+        "who": "誰が",
+        "when": "いつ",
+        "how": "受け取り方",
+        "checked": "確認日",
+        "more": "くわしく見る"
+      },
+      "items": [
+        {
+          "id": "wrp",
+          "name": "就業者負担軽減支援金",
+          "gist": "働く中低所得の人に年1回の現金。法案を参議院で審議中で、1人年最大2万5,000円程度で検討中。",
+          "amount": "1人あたり年最大2万5,000円程度を基本に、16歳未満の子ども1人につき年5,000円程度を上乗せする方向で検討中です（11月13日の首相答弁）。夫婦と子ども2人で満額なら年6万円です。金額は政令で決まります。[3][2][4]",
+          "who": "前の年に働いて収入があった人（個人単位）。財務相は年収100万〜450万円の3,000万人程度を「大づかみのイメージ」とし、11月19日には、支給が始まる年収（下限）を56万円程度とする方向で検討すると答弁しました。[5][6]",
+          "when": "法案が成立すれば2027年4月から。2027・2028年度は年度ごとに原則年1回です。最初の支給の時期は決まっていません。法案は11月6日に衆議院を通過し、参議院では11月24日に中央公聴会が開かれます。会期末は12月12日です。[1][7][8][9]",
+          "how": "住んでいる市区町村が受給資格を認定して振り込みます。公金受取口座を登録していれば、原則として申請は要りません。[1]"
+        },
+        {
+          "id": "food",
+          "name": "食料品の消費税1%",
+          "gist": "2027年4月から2年間、食料品の消費税を8%から1%に。就業者負担軽減支援金と同じ法案で、審議中。",
+          "amount": "いまの軽減税率（8%）の対象の飲食料品が1%になります。税込みの値段が税率の差の分だけ下がるとすると、税込み108円の品は101円です。酒類と外食は10%のままです。[1][10]",
+          "who": "食料品を買うすべての人（給付ではなく、税率の引下げです）。",
+          "when": "2027年4月1日から2029年3月31日までの2年間（法案が成立した場合）。[1]",
+          "how": "手続きは要りません。実際にどれだけ安くなるかは、お店の値付けしだいです。"
+        },
+        {
+          "id": "energy",
+          "name": "電気・ガス料金の支援",
+          "gist": "2026年12月〜2027年2月使用分の電気・都市ガス代を値引き。申請不要。",
+          "amount": "電気（低圧・家庭）は1kWhあたり、12月使用分1.0円、1・2月使用分4.5円。高圧は0.5円と2.3円です。都市ガスは1㎥あたり4.0円と18.0円です。首相は、標準的な家庭で3か月あわせて7,000円程度の負担引下げと説明しています。[11][12]",
+          "who": "電気と都市ガスを使う家庭と企業（都市ガスは年間契約量1,000万㎥未満）。LPガス（プロパンガス）は対象外です。[11]",
+          "when": "2026年12月使用分から2027年2月使用分まで。12月使用分は、原則として12月中の検針日から1月中の検針日までの使用分です。3月分は決まっていません。[11][12]",
+          "how": "申請は要りません。電力・ガス会社が毎月の料金から値引きします。費用は予備費から約5,219億円です（11月13日閣議決定）。[11][25]"
+        },
+        {
+          "id": "fuel",
+          "name": "ガソリン・軽油などの補助",
+          "gist": "ガソリンの暫定税率は2025年末に廃止。いまは1リットルあたり29.6円の補助で、12月から段階的に縮小。",
+          "amount": "11月19日以降の補助は、ガソリン・軽油・灯油・重油が1リットルあたり29.6円、航空機燃料が23.6円です。これとは別に、ガソリンの暫定税率（1リットルあたり25.1円）は2025年12月31日に廃止されています。[13][14]",
+          "who": "燃料を買うすべての人。現金の給付ではなく、石油元売りなどに補助金を出して店頭の価格を抑える仕組みです。[13]",
+          "when": "今回の措置は2026年3月19日から。12月以降は、春先に向けて基準価格を毎月5円ずつ引き上げることを基本に、補助を縮めていきます。終わりの時期は示されていません。[12][13]",
+          "how": "手続きは要りません。"
+        },
+        {
+          "id": "incometax",
+          "name": "所得税の減税（年末調整）",
+          "gist": "基礎控除の引上げなどで、2026年12月の年末調整で精算。首相は納税者1人あたり3万〜6万円と説明。",
+          "amount": "首相は、納税者1人あたり3万円から6万円の所得税負担の軽減と説明しています。基礎控除の引上げ、給与所得控除の最低保障額の引上げなどによるもので、実際の額は所得や家族構成で変わります。[12][15]",
+          "who": "所得税を納めている人。",
+          "when": "改正は2026年12月1日に施行され、2026年分の所得税から適用されます。会社員は2026年12月の年末調整でまとめて精算され、11月までの毎月の源泉徴収は変わりません。[15]",
+          "how": "会社員は勤務先の年末調整で反映されます。確定申告をする人は、2026年分の確定申告で反映されます。[15]"
+        },
+        {
+          "id": "kosodate",
+          "name": "物価高対応子育て応援手当（子ども1人2万円）",
+          "gist": "子ども1人2万円を1回。2026年3月末までに約1,782.7万人分を支給し、国のコールセンターは7月に終了。",
+          "amount": "子ども1人あたり一律2万円、1回だけです。所得制限はなく、税金もかかりません。[16]",
+          "who": "児童手当を受け取っている人。2007年4月2日から2026年3月31日までに生まれた子ども（0歳から高校生年代）が対象です。[16]",
+          "when": "2026年3月末までに、約1,782.7万人分、約3,565.3億円が支給されました（精査中の数字）。予算は3,677億円です。国のコールセンターは2026年7月31日に終了しました。申請の期限は市区町村ごとです。[16]",
+          "how": "原則として、児童手当の口座に申請なしで振り込まれました（プッシュ型）。2025年10月以降に生まれた子どもや公務員などは申請が必要でした。[16]"
+        },
+        {
+          "id": "uniform",
+          "name": "国民一律の現金給付（一律2万円・10万円など）",
+          "gist": "決まっていません。2025年の一律2万円の案は「行わない」とされ、政府はほかの一律給付も示していません。",
+          "amount": "なし。2025年に掲げられた「1人2万円（子どもと住民税非課税世帯の大人は1人4万円）」の給付は、2025年10月20日の自民党と日本維新の会の連立合意で「行わない」とされました。[17]",
+          "who": "対象はありません（制度がありません）。全員に10万円が配られたのは2020年の特別定額給付金です。{2020年の10万円は何に使われた？|/essays/japan-special-cash-payment/}",
+          "when": "2026年11月23日の時点で、政府が決めた、または示した一律の現金給付はありません。政府の基本方針（2026年8月5日）は、新しい給付を、これまでの経済対策のような一律の金額での給付とは違う、所得に連動した仕組みとしています。[18]",
+          "how": "なし。「一律給付の申請」をうたう電話やメール、SMSは詐欺を疑ってください（下の「詐欺に注意」）。"
+        },
+        {
+          "id": "lowincome",
+          "name": "住民税非課税世帯・低所得世帯への国の給付",
+          "gist": "2026年は、国が全国で世帯ごとに配る現金給付はありません。支援は市区町村を通じて。",
+          "amount": "このページで確認した政府の資料には、2026年に国が全国一律で非課税世帯に配る現金給付はありません。代わりに国は自治体への交付金を積み増していて、11月13日には予備費から1,300億円を追加し、低所得世帯・高齢者世帯の電気・ガス（LPガスを含む）・灯油の支援に使うことを特に勧めています。[19][20][25]",
+          "who": "対象と金額は、市区町村ごとに決まります。",
+          "when": "市区町村が交付金を使って実施する時期によります。2026年12月に交付が決まる分は、特別高圧電力・LPガス・灯油の利用者への支援に限られます。[20]",
+          "how": "住んでいる市区町村のホームページや広報を確認してください。"
+        },
+        {
+          "id": "grant",
+          "name": "重点支援地方交付金（自治体の給付の財源）",
+          "gist": "国から自治体へのお金。自治体が現金給付、商品券、お米券などに使う。2025年度補正予算で2兆377億円。",
+          "amount": "正式には「物価高騰対応重点支援地方創生臨時交付金」です。2025年度補正予算で2兆377億円（うち推奨事業メニュー2.0兆円、その中に食料品の物価高への特別加算0.4兆円）、2026年度補正予算で1,000億円、11月13日の予備費で1,300億円です。[19]",
+          "who": "都道府県と市区町村に配られます。住民への給付の対象と金額は、それぞれの自治体が決めます。[19]",
+          "when": "2025年度補正予算の分から、各自治体が順に実施しています。[19]",
+          "how": "申請なしで振り込む（プッシュ型）か、申請が必要かは自治体ごとに違います。下の「お住まいの市区町村の給付」を見てください。"
+        },
+        {
+          "id": "credit",
+          "name": "給付付き税額控除",
+          "gist": "2029年度の本格導入を目指して制度を検討中。それまでの2年間は、就業者負担軽減支援金と食料品の消費税1%が「つなぎ」。",
+          "amount": "決まっていません。[18]",
+          "who": "決まっていません。所得に連動した給付として検討されています。[18]",
+          "when": "2029年度（令和11年度）の導入を目指しています（2026年8月5日の基本方針）。就業者負担軽減支援金は、そこまでの「つなぎ」であり、本格的な給付付き税額控除への第一歩とされています。[18]",
+          "how": "決まっていません。{給付付き税額控除とベーシックインカムの違い|/essays/refundable-tax-credit-vs-basic-income/}も参考にしてください。"
+        }
+      ],
+      "localH": "お住まいの市区町村の給付",
+      "local": [
+        "国の制度とは別に、多くの市区町村が、国の交付金（上の重点支援地方交付金）を使って独自の給付をしています。金額、対象、申請の期限は自治体ごとに違うので、住んでいる市区町村のホームページや広報で確認してください。自治体の公式サイトで確かめられた例を挙げます。[19]",
+        [
+          "熊本県八代市：1人1万円。2026年1月1日に八代市に住民登録がある人が対象です。口座がわかる世帯には7月上旬に申請なしで振り込まれ、それ以外の人は申請が必要です。申請の期限は熊本地震の影響で9月30日から延び、12月28日（消印有効）です。国の重点支援地方交付金を使っています。[21]",
+          "三重県桑名市：1人5,000円。2026年3月1日に住民登録があり、2007年4月1日以前に生まれた人（19歳以上）が対象です。いまは口座振込の申請だけを受け付けていて、期限は12月31日（消印有効）です。市のページには財源が書かれていません。[22]"
+        ],
+        "ここに挙げた2つは例です。どちらも2026年11月23日に市の公式サイトで確認しました。"
+      ],
+      "scamH": "詐欺に注意",
+      "scam": [
+        "市区町村や国が、給付金のためにATM（現金自動預払機）の操作をお願いしたり、手数料の振込みを求めたりすることは絶対にありません（総務省・消費者庁・警察庁のチラシ）。[23]",
+        "「支援金を受け取るにはまず〇〇円を支払ってください」は典型的な詐欺の手口です（消費者庁、2025年9月11日）。困ったときは消費者ホットライン188、警察相談専用電話#9110へ。[24]",
+        "電気・ガス代の値引きは申請不要で、資源エネルギー庁は個人情報や手数料を求めることはないとしています。同庁の名前をかたる電話やメールが出ています。[11]"
+      ],
+      "timelineH": "これまでの経緯と今後の日程",
+      "timeline": [
+        [
+          "2025-10-20",
+          "2025年10月20日",
+          "自民党と日本維新の会の連立合意で、1人2万円（子どもと非課税世帯の大人は4万円）の給付は「行わない」とされる。[17]",
+          "none"
+        ],
+        [
+          "2025-12-31",
+          "2025年12月31日",
+          "ガソリンの暫定税率（1リットルあたり25.1円）を廃止。[14]",
+          "running"
+        ],
+        [
+          "2026-03-19",
+          "2026年3月19日",
+          "ガソリン・軽油などの補助（緊急的激変緩和措置）が始まる。[13]",
+          "running"
+        ],
+        [
+          "2026-07-31",
+          "2026年7月31日",
+          "子育て応援手当の国のコールセンターが終了。[16]",
+          "ended"
+        ],
+        [
+          "2026-08-05",
+          "2026年8月5日",
+          "政府の基本方針：給付付き税額控除は2029年度の導入を目指し、それまでは就業者負担軽減支援金と食料品の消費税1%でつなぐ。[18]",
+          "considering"
+        ],
+        [
+          "2026-10-29",
+          "2026年10月29日",
+          "首相が、12月から2月の電気・ガス代の支援と、12月からのガソリン補助の段階的な縮小を表明。[12]",
+          "running"
+        ],
+        [
+          "2026-11-06",
+          "2026年11月6日",
+          "就業者負担軽減支援金と食料品の消費税1%の法案が衆議院を通過。[7]",
+          "bill"
+        ],
+        [
+          "2026-11-13",
+          "2026年11月13日",
+          "予備費の使用を閣議決定：電気・ガス代の支援に約5,219億円、重点支援地方交付金に1,300億円。[25]",
+          "running"
+        ],
+        [
+          "2026-11-19",
+          "2026年11月19日",
+          "財務相が、就業者負担軽減支援金の下限を年収56万円程度とする方向で検討すると答弁。[6]",
+          "considering"
+        ],
+        [
+          "2026-11-24",
+          "2026年11月24日",
+          "参議院の特別委員会が中央公聴会を開く。[8]",
+          "bill"
+        ],
+        [
+          "2026-12",
+          "2026年12月",
+          "電気・都市ガス代の値引きが12月使用分から始まる。年末調整で所得税の減税を精算。[11][15]",
+          "running"
+        ],
+        [
+          "2026-12-12",
+          "2026年12月12日",
+          "国会の会期末。それまでに法案が成立するかは未定。[9]",
+          "none"
+        ],
+        [
+          "2026-12-28",
+          "2026年12月28日",
+          "熊本県八代市の1人1万円の申請期限（消印有効）。[21]",
+          "running"
+        ],
+        [
+          "2027-03",
+          "2027年3月",
+          "3月使用分の電気・ガス代の支援は、首相が「対応を検討」としている。[12]",
+          "considering"
+        ],
+        [
+          "2027-04",
+          "2027年4月",
+          "食料品の消費税1%と就業者負担軽減支援金の制度が始まる（法案が成立した場合）。[1]",
+          "bill"
+        ]
+      ],
+      "faqH": "よくある質問",
+      "faq": [
+        [
+          "2026年に一律の給付金はありますか？",
+          "ありません。2026年11月23日の時点で、国民全員に一律に配る国の現金給付は決まっていません。2025年の1人2万円の給付は、2025年10月20日の連立合意で「行わない」とされました。[17]"
+        ],
+        [
+          "給付金はいつもらえますか？",
+          "国の新しい現金給付である就業者負担軽減支援金は、法案が成立すれば2027年4月に制度が始まり、2027・2028年度は年1回の支給です。最初の支給の時期はまだ決まっていません。いま受け取れる現金の給付は、市区町村ごとの給付です。[1][21]"
+        ],
+        [
+          "就業者負担軽減支援金はいくらですか？",
+          "政府が検討しているのは、1人あたり年最大2万5,000円程度と、16歳未満の子ども1人につき年5,000円程度の上乗せです。金額は政令で決まります。くわしくは{就業者負担軽減支援金のページ|/guides/worker-relief-payment/}で。[3][2]"
+        ],
+        [
+          "住民税非課税世帯への給付はありますか？",
+          "2026年に国が全国一律で配る非課税世帯向けの現金給付はありません。国は自治体への交付金を積み増しているので、住んでいる市区町村の給付を確認してください。[19][20]"
+        ],
+        [
+          "電気代・ガス代の補助はいつから、いくらですか？",
+          "2026年12月使用分から2027年2月使用分までです。家庭の電気は1kWhあたり12月1.0円、1・2月4.5円、都市ガスは1㎥あたり4.0円と18.0円の値引きで、申請は要りません。[11]"
+        ],
+        [
+          "子育て応援手当（2万円）はまだもらえますか？",
+          "国の手当は2026年3月末までに大半が支給され、国のコールセンターは7月31日に終わりました。申請の期限は市区町村ごとなので、受け取っていない場合は市区町村に問い合わせてください。[16]"
+        ],
+        [
+          "年末調整の減税はいくらですか？",
+          "首相は、納税者1人あたり3万円から6万円の所得税負担の軽減と説明しています。会社員は2026年12月の年末調整で精算されます。[12][15]"
+        ],
+        [
+          "給付金の詐欺を見分けるには？",
+          "国や市区町村が、ATMの操作や手数料の振込みを求めることは絶対にありません。お金を払わせる話は詐欺を疑い、消費者ホットライン188か#9110に相談してください。[23][24]"
+        ]
+      ],
+      "relatedH": "関連ページ",
+      "related": [
+        [
+          "/calc/household/?s=jb",
+          "わが家のBI計算機：ベーシックインカムで家計は月いくら変わる？"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=jb",
+          "BI計算機：日本の全員に月1万円配ると、年いくら？"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "2020年の10万円は何に使われた？"
+        ],
+        [
+          "/essays/refundable-tax-credit-vs-basic-income/",
+          "給付付き税額控除とベーシックインカムは、何が違うのか"
+        ]
+      ],
+      "logH": "更新履歴",
+      "updatedL": "最終更新日",
+      "wrpLink": "ほかの給付金は？ 国の給付金・支援金・補助金の一覧（2026年11月）",
+      "hhLink": "給付金はいつ・いくら？ 国の給付金・支援金・補助金の一覧（2026年）",
+      "about": "給付金はいつ・いくら？ 国の給付金・支援金・補助金を、実施中・法案審議中・検討中・未定・終了に分けて、金額・対象・時期・受け取り方・出典と確認日つきで一覧にしたページ。情報が出るたびに更新します。"
+    },
+    "en": {
+      "title": "Japan cash benefits, November 2026: when and how much? Every national payment and subsidy, decided, in the Diet or undecided",
+      "short": "Japan’s benefits in 2026",
+      "eb": "Benefits roundup",
+      "desc": "When are Japan’s cash benefits paid and how much? No payment for everyone is decided. The relief payment for workers, power and gas discounts and more, sourced.",
+      "asOf": "Information as of 23 November 2026 (every item checked on 23 November). We update this page when new facts come in.",
+      "lead": [
+        "To answer “when is the next payment?” and “is there a payment for everyone?”, this page lists Japan’s national cash benefits, support payments and subsidies, split into those decided and running, those in a bill before the Diet, those the government is considering, those not decided and those that have ended. Each item gives the amount, who gets it, when, how to receive it, its sources and the day it was checked.",
+        "In short: as of November 2026 no uniform cash payment to everyone has been decided. What is running now is a discount on electricity and city gas bills, a subsidy on petrol and other fuels, and an income tax cut settled in the year-end adjustment; cash payments come mainly from individual municipalities. The government’s new cash payment, the Worker Burden Relief Payment, is in a bill now before the House of Councillors.[17][1][7]"
+      ],
+      "answerH": "The answer: is there a payment now?",
+      "answer": [
+        [
+          "A payment for everyone?",
+          "No. As of 23 November 2026 no national cash payment to every resident has been decided. The ¥20,000-per-person payment promised in 2025 was dropped in the coalition agreement between the LDP and Nippon Ishin no Kai of 20 October 2025, which says it “will not be carried out”.[17]",
+          "none"
+        ],
+        [
+          "What is running now?",
+          "A discount on electricity and city gas bills (from December 2026 usage, no application), a subsidy on petrol, diesel and other fuels, and an income tax cut settled in the December 2026 year-end adjustment (¥30,000 to ¥60,000 per taxpayer, as the Prime Minister put it). Cash payments come mainly from municipalities, funded by a national grant.[11][12][13][19]",
+          "running"
+        ],
+        [
+          "The next national payment?",
+          "The Worker Burden Relief Payment. The bill is before the House of Councillors; if it passes, the scheme starts in April 2027 and pays once a year in fiscal 2027 and 2028. The government is considering up to about ¥25,000 a year per person as the base.[1][3][7]",
+          "bill"
+        ],
+        [
+          "Do I need to apply?",
+          "Not for the power and gas discount, the fuel subsidy or the year-end tax cut. Municipal payments often go without an application to households whose account the city already has, while others must apply by a deadline (Yatsushiro, Kumamoto: postmarked by 28 December).[11][15][21]",
+          "running"
+        ]
+      ],
+      "legend": ": what the labels on this page mean.",
+      "statusL": {
+        "running": "Decided, running",
+        "bill": "In a bill before the Diet",
+        "considering": "Under consideration",
+        "reported": "Reported only",
+        "none": "Not decided / not planned",
+        "ended": "Ended"
+      },
+      "openH": "Not decided yet",
+      "open": [
+        "Whether the Worker Burden Relief Payment bill passes, and the final amounts and income lines (set by cabinet order). The Diet session ends on 12 December.[7][9]",
+        "Support for March 2027 power and gas use. The Prime Minister said the government will “consider a response after looking carefully at the situation”.[12]",
+        "When the fuel subsidy ends. The base price rises step by step from December, but no end date has been given.[12][13]",
+        "The design of a refundable tax credit, which the government aims to introduce in fiscal 2029.[18]"
+      ],
+      "toc": "Contents",
+      "listH": "The list: national benefits, payments and subsidies",
+      "fieldL": {
+        "amount": "How much",
+        "who": "Who",
+        "when": "When",
+        "how": "How to receive it",
+        "checked": "Checked",
+        "more": "More detail"
+      },
+      "items": [
+        {
+          "id": "wrp",
+          "name": "Worker Burden Relief Payment",
+          "gist": "Cash once a year for low- and middle-income workers. The bill is in the House of Councillors; up to about ¥25,000 a year per person is under consideration.",
+          "amount": "The government is considering up to about ¥25,000 a year per person as the base, plus about ¥5,000 a year for each child under 16 (the Prime Minister’s answer of 13 November). A couple with two children receiving the full amount would get ¥60,000 a year. The amounts will be set by cabinet order.[3][2][4]",
+          "who": "People who worked and earned in the previous year (each person counts separately). The Finance Minister gave about 30 million people with incomes of ¥1 million to ¥4.5 million as the “rough image”, and on 19 November said a floor of about ¥560,000 of annual income is being considered.[5][6]",
+          "when": "From April 2027 if the bill passes, paid in principle once in each of fiscal 2027 and 2028. The date of the first payment has not been set. The bill passed the House of Representatives on 6 November; the House of Councillors holds a central public hearing on 24 November. The session ends on 12 December.[1][7][8][9]",
+          "how": "The municipality you live in certifies you and pays into your account. If you have registered a public-funds receipt account, no application is needed in principle.[1]"
+        },
+        {
+          "id": "food",
+          "name": "1% consumption tax on food",
+          "gist": "For two years from April 2027 the consumption tax on food falls from 8% to 1%. In the same bill as the Worker Burden Relief Payment, before the Diet.",
+          "amount": "Food and drink now taxed at the reduced 8% rate would be taxed at 1%. If prices fall by exactly the change in the rate, an item at ¥108 with tax becomes ¥101. Alcohol and eating out stay at 10%.[1][10]",
+          "who": "Everyone who buys food (a cut in the tax rate, not a payment).",
+          "when": "1 April 2027 to 31 March 2029, if the bill passes.[1]",
+          "how": "Nothing to do. How far prices actually fall depends on the shops."
+        },
+        {
+          "id": "energy",
+          "name": "Electricity and gas bill support",
+          "gist": "A discount on electricity and city gas used from December 2026 to February 2027. No application.",
+          "amount": "Low-voltage electricity (households): ¥1.0 per kWh for December use and ¥4.5 for January and February. High voltage: ¥0.5 and ¥2.3. City gas: ¥4.0 and ¥18.0 per m³. The Prime Minister put the saving for a standard household at about ¥7,000 over the three months.[11][12]",
+          "who": "Households and businesses using electricity and city gas (for gas, annual contracts under 10 million m³). LP gas (propane) is not covered.[11]",
+          "when": "December 2026 use to February 2027 use. “December use” means, in principle, use between the December and January meter readings. March has not been decided.[11][12]",
+          "how": "No application. The power and gas companies take the discount off each monthly bill. It costs about ¥521.9 billion from the reserve fund (cabinet decision of 13 November).[11][25]"
+        },
+        {
+          "id": "fuel",
+          "name": "Petrol and diesel subsidy",
+          "gist": "The provisional petrol tax was abolished at the end of 2025. A subsidy of ¥29.6 a litre now, to be scaled back step by step from December.",
+          "amount": "From 19 November the subsidy is ¥29.6 a litre for petrol, diesel, kerosene and heavy oil, and ¥23.6 for jet fuel. Separately, the provisional petrol tax rate (¥25.1 a litre) was abolished on 31 December 2025.[13][14]",
+          "who": "Everyone who buys fuel. It is not a cash payment: the subsidy goes to oil wholesalers to hold down pump prices.[13]",
+          "when": "The current measure began on 19 March 2026. From December the subsidy will shrink, with the base price raised by ¥5 a month towards spring as the basic plan. No end date has been given.[12][13]",
+          "how": "Nothing to do."
+        },
+        {
+          "id": "incometax",
+          "name": "Income tax cut (year-end adjustment)",
+          "gist": "A higher basic deduction and other changes, settled in the December 2026 year-end adjustment. ¥30,000 to ¥60,000 per taxpayer, as the Prime Minister put it.",
+          "amount": "The Prime Minister described it as a cut in income tax of ¥30,000 to ¥60,000 per taxpayer. It comes from a higher basic deduction, a higher minimum employment income deduction and other changes; the actual amount depends on income and family.[12][15]",
+          "who": "People who pay income tax.",
+          "when": "The changes take effect on 1 December 2026 and apply to income tax for 2026. Employees get it all at once in the December 2026 year-end adjustment; monthly withholding up to November does not change.[15]",
+          "how": "Employees get it through their employer’s year-end adjustment; people who file a tax return get it in their 2026 return.[15]"
+        },
+        {
+          "id": "kosodate",
+          "name": "Child-rearing support allowance for high prices (¥20,000 per child)",
+          "gist": "¥20,000 per child, paid once. About 17.827 million children paid by the end of March 2026; the national call centre closed in July.",
+          "amount": "¥20,000 per child, once. No income limit, and not taxed.[16]",
+          "who": "Recipients of the child allowance, for children born between 2 April 2007 and 31 March 2026 (from newborns to high-school age).[16]",
+          "when": "By the end of March 2026 about 17.827 million children had been paid, about ¥356.53 billion (figures under review). The budget was ¥367.7 billion. The national call centre closed on 31 July 2026. Deadlines were set by each municipality.[16]",
+          "how": "In principle paid without an application into the child allowance account. Children born from October 2025, children of public servants and some others needed an application.[16]"
+        },
+        {
+          "id": "uniform",
+          "name": "A uniform cash payment to everyone (¥20,000, ¥100,000 or similar)",
+          "gist": "Not decided. The 2025 plan of ¥20,000 per person was dropped, and the government has put forward no other payment for everyone.",
+          "amount": "None. The payment promised in 2025, ¥20,000 per person (¥40,000 for children and for adults in households exempt from residence tax), was dropped in the LDP–Ishin coalition agreement of 20 October 2025.[17]",
+          "who": "No one (there is no such scheme). The last time everyone received ¥100,000 was the Special Cash Payment of 2020: {where did that ¥100,000 go?|/essays/japan-special-cash-payment/}",
+          "when": "As of 23 November 2026 the government has neither decided nor proposed a cash payment of the same amount to everyone. Its basic policy of 5 August 2026 describes the new payment as income-linked, unlike the flat payments of past economic packages.[18]",
+          "how": "None. Treat calls, emails or text messages about “applying for the uniform payment” as a likely scam (see “Watch out for scams” below)."
+        },
+        {
+          "id": "lowincome",
+          "name": "National payment for low-income and residence-tax-exempt households",
+          "gist": "In 2026 there is no national cash payment per household. Support goes through the municipalities.",
+          "amount": "The government documents checked for this page contain no national cash payment to residence-tax-exempt households in 2026. Instead the government has topped up its grant to local governments: on 13 November it added ¥130 billion from the reserve fund and particularly recommends spending it on electricity, gas (including LP gas) and kerosene support for low-income and elderly households.[19][20][25]",
+          "who": "Each municipality decides who gets what.",
+          "when": "Whenever the municipality uses the grant. Grants decided in December 2026 are limited to support for users of extra-high-voltage power, LP gas and kerosene.[20]",
+          "how": "Check your municipality’s website or newsletter."
+        },
+        {
+          "id": "grant",
+          "name": "Priority regional grant (the money behind local payments)",
+          "gist": "Money from the state to local governments, which use it for cash payments, vouchers, rice vouchers and more. ¥2.0377 trillion in the fiscal 2025 supplementary budget.",
+          "amount": "Its full name is the Priority Regional Grant for Price Rises. ¥2.0377 trillion in the fiscal 2025 supplementary budget (of which ¥2.0 trillion for the recommended menu, including a ¥0.4 trillion special addition for food prices), ¥100 billion in the fiscal 2026 supplementary budget and ¥130 billion from the reserve fund on 13 November.[19]",
+          "who": "Prefectures and municipalities receive it; each decides who among its residents gets what.[19]",
+          "when": "Local governments have been spending the fiscal 2025 supplementary money in turn.[19]",
+          "how": "Some municipalities pay automatically, others need an application. See “Payments from your municipality” below."
+        },
+        {
+          "id": "credit",
+          "name": "Refundable tax credit",
+          "gist": "Being designed, with full introduction aimed for fiscal 2029. Until then the Worker Burden Relief Payment and the 1% food tax are the bridge.",
+          "amount": "Not decided.[18]",
+          "who": "Not decided. It is being designed as an income-linked benefit.[18]",
+          "when": "The aim is fiscal 2029 (basic policy of 5 August 2026). The Worker Burden Relief Payment is the bridge until then and is called the first step towards a full refundable tax credit.[18]",
+          "how": "Not decided. See also {refundable tax credits vs basic income|/essays/refundable-tax-credit-vs-basic-income/}."
+        }
+      ],
+      "localH": "Payments from your municipality",
+      "local": [
+        "Apart from the national schemes, many municipalities run their own payments with the national grant above. Amounts, who qualifies and deadlines differ from place to place, so check your own municipality’s website or newsletter. Two examples confirmed on the cities’ own websites:[19]",
+        [
+          "Yatsushiro City, Kumamoto: ¥10,000 per person for residents registered on 1 January 2026. Households whose account the city had were paid without applying in early July; everyone else must apply. Because of the Kumamoto earthquake the deadline moved from 30 September to 28 December (postmark). It is funded by the national priority regional grant.[21]",
+          "Kuwana City, Mie: ¥5,000 per person for residents registered on 1 March 2026 and born on or before 1 April 2007 (aged 19 and over). Only bank-transfer applications are still accepted, postmarked by 31 December. The city’s page does not name the funding source.[22]"
+        ],
+        "These two are examples only. Both were checked on the cities’ websites on 23 November 2026."
+      ],
+      "scamH": "Watch out for scams",
+      "scam": [
+        "Municipalities and the national government will never ask you to operate an ATM or to pay a fee in order to receive a payment (leaflet by the Ministry of Internal Affairs, the Consumer Affairs Agency and the National Police Agency).[23]",
+        "“Pay ¥… first to receive your support payment” is a typical scam (Consumer Affairs Agency, 11 September 2025). For help, call the consumer hotline 188 or the police advice line #9110.[24]",
+        "The power and gas discount needs no application, and the Agency for Natural Resources and Energy says it never asks for personal details or fees. Calls and emails falsely using its name have been reported.[11]"
+      ],
+      "timelineH": "Timeline and upcoming dates",
+      "timeline": [
+        [
+          "2025-10-20",
+          "20 October 2025",
+          "The LDP–Ishin coalition agreement drops the ¥20,000-per-person payment (¥40,000 for children and adults in exempt households).[17]",
+          "none"
+        ],
+        [
+          "2025-12-31",
+          "31 December 2025",
+          "The provisional petrol tax rate (¥25.1 a litre) is abolished.[14]",
+          "running"
+        ],
+        [
+          "2026-03-19",
+          "19 March 2026",
+          "The petrol and diesel subsidy (emergency measure) begins.[13]",
+          "running"
+        ],
+        [
+          "2026-07-31",
+          "31 July 2026",
+          "The national call centre for the child-rearing support allowance closes.[16]",
+          "ended"
+        ],
+        [
+          "2026-08-05",
+          "5 August 2026",
+          "Basic policy: a refundable tax credit is aimed for fiscal 2029, with the Worker Burden Relief Payment and the 1% food tax as the bridge.[18]",
+          "considering"
+        ],
+        [
+          "2026-10-29",
+          "29 October 2026",
+          "The Prime Minister announces power and gas support for December to February and a gradual cut in the fuel subsidy from December.[12]",
+          "running"
+        ],
+        [
+          "2026-11-06",
+          "6 November 2026",
+          "The bill for the Worker Burden Relief Payment and the 1% food tax passes the House of Representatives.[7]",
+          "bill"
+        ],
+        [
+          "2026-11-13",
+          "13 November 2026",
+          "Cabinet decides to use the reserve fund: about ¥521.9 billion for power and gas support and ¥130 billion for the priority regional grant.[25]",
+          "running"
+        ],
+        [
+          "2026-11-19",
+          "19 November 2026",
+          "The Finance Minister says a floor of about ¥560,000 of annual income is being considered for the Worker Burden Relief Payment.[6]",
+          "considering"
+        ],
+        [
+          "2026-11-24",
+          "24 November 2026",
+          "The upper house special committee holds a central public hearing.[8]",
+          "bill"
+        ],
+        [
+          "2026-12",
+          "December 2026",
+          "The power and gas discount starts with December use. The income tax cut is settled in the year-end adjustment.[11][15]",
+          "running"
+        ],
+        [
+          "2026-12-12",
+          "12 December 2026",
+          "The Diet session ends. Whether the bill passes by then is open.[9]",
+          "none"
+        ],
+        [
+          "2026-12-28",
+          "28 December 2026",
+          "Deadline for Yatsushiro City’s ¥10,000 per person (postmark).[21]",
+          "running"
+        ],
+        [
+          "2027-03",
+          "March 2027",
+          "Power and gas support for March use: the Prime Minister said a response will be considered.[12]",
+          "considering"
+        ],
+        [
+          "2027-04",
+          "April 2027",
+          "The 1% food tax and the Worker Burden Relief Payment start, if the bill passes.[1]",
+          "bill"
+        ]
+      ],
+      "faqH": "Frequently asked questions",
+      "faq": [
+        [
+          "Is there a payment for everyone in 2026?",
+          "No. As of 23 November 2026 no national cash payment to every resident has been decided. The 2025 plan of ¥20,000 per person was dropped in the coalition agreement of 20 October 2025.[17]"
+        ],
+        [
+          "When will benefits be paid?",
+          "The government’s new cash payment, the Worker Burden Relief Payment, starts in April 2027 if the bill passes and is paid once a year in fiscal 2027 and 2028; the first payment date has not been set. The cash payments you can get now are the ones run by municipalities.[1][21]"
+        ],
+        [
+          "How much is the Worker Burden Relief Payment?",
+          "The government is considering up to about ¥25,000 a year per person plus about ¥5,000 a year per child under 16. The amounts will be set by cabinet order. Details on {our Worker Burden Relief Payment page|/guides/worker-relief-payment/}.[3][2]"
+        ],
+        [
+          "Is there a payment for residence-tax-exempt households?",
+          "There is no national cash payment to exempt households in 2026. The government has added money to its grant to local governments, so check what your municipality offers.[19][20]"
+        ],
+        [
+          "When does the electricity and gas support start, and how much is it?",
+          "It covers December 2026 to February 2027 use: household electricity ¥1.0 per kWh in December and ¥4.5 in January and February, city gas ¥4.0 and ¥18.0 per m³. No application is needed.[11]"
+        ],
+        [
+          "Can I still get the ¥20,000 child-rearing support allowance?",
+          "Most of it was paid by the end of March 2026 and the national call centre closed on 31 July. Deadlines were set by each municipality, so if you were not paid, ask your municipality.[16]"
+        ],
+        [
+          "How big is the year-end tax cut?",
+          "The Prime Minister described it as ¥30,000 to ¥60,000 of income tax per taxpayer. Employees get it in the December 2026 year-end adjustment.[12][15]"
+        ],
+        [
+          "How can I spot a benefit scam?",
+          "The national government and municipalities never ask you to operate an ATM or pay a fee. Treat any request for money as a scam and call 188 or #9110.[23][24]"
+        ]
+      ],
+      "relatedH": "Related pages",
+      "related": [
+        [
+          "/calc/household/?s=jb",
+          "Household calculator: how would a basic income change your household’s budget?"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=jb",
+          "Basic income calculator: what would ¥10,000 a month for everyone in Japan cost?"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "Where did Japan’s 2020 ¥100,000 payment go?"
+        ],
+        [
+          "/essays/refundable-tax-credit-vs-basic-income/",
+          "Refundable tax credits vs basic income: what Japan’s new payment for workers is, and is not"
+        ]
+      ],
+      "logH": "Update log",
+      "updatedL": "Last updated",
+      "wrpLink": "Other benefits? All of Japan’s national payments and subsidies, November 2026",
+      "hhLink": "When and how much? All of Japan’s national payments and subsidies in 2026",
+      "about": "When and how much: Japan’s national cash benefits, payments and subsidies, split into running, in the Diet, under consideration, not decided and ended, each with the amount, who gets it, when, how to receive it, sources and check date. Updated as new facts come in."
+    },
+    "zh": {
+      "title": "【2026年11月最新】日本的给付金何时发、发多少？国家给付金、支援金与补贴一览（已定／审议中／未定）",
+      "short": "日本国家给付金一览（2026年）",
+      "eb": "给付金汇总",
+      "desc": "日本的给付金何时发、发多少？2026年11月最新的国家给付金、支援金和补贴一览。全民统一给付尚未决定；就业者负担减轻支援金法案在审议中；另有电费燃气费减免、所得税减税等，附状态、金额、时间和出处。",
+      "asOf": "信息截至2026年11月23日（所有项目均于11月23日核对）。有新信息时我们会更新。",
+      "lead": [
+        "为了回答“给付金什么时候发？”“有没有全民统一给付？”，本页把日本国家层面的给付金、支援金和补贴分成已定并实施中、法案在国会审议中、政府研究中、未定、已结束几类列出。每一项都写明金额、对象、时间、领取方式、出处和核对日期。",
+        "先说结论：截至2026年11月，向全体国民统一发放的现金给付并未决定。目前实施中的是电费和城市燃气费减免、汽油等燃料补贴，以及在年末调整中结算的所得税减税；发放现金的主要是各市区町村自己的给付。政府新的现金给付“就业者负担减轻支援金”的法案正在参议院审议。[17][1][7]"
+      ],
+      "answerH": "答案：现在有给付金吗？",
+      "answer": [
+        [
+          "有全民统一给付吗？",
+          "没有。截至2026年11月23日，向全体国民统一发放的国家现金给付并未决定。2025年提出的每人2万日元给付，在2025年10月20日自民党与日本维新会的联合执政协议中被写明“不实施”。[17]",
+          "none"
+        ],
+        [
+          "现在实施中的有哪些？",
+          "电费和城市燃气费减免（自2026年12月用量起，无需申请）、汽油和柴油等燃料补贴，以及2026年12月年末调整中结算的所得税减税（首相称每位纳税人3万至6万日元）。现金给付主要是各市区町村利用国家交付金发放的给付。[11][12][13][19]",
+          "running"
+        ],
+        [
+          "下一项国家给付是什么？",
+          "就业者负担减轻支援金。法案正在参议院审议，若通过，制度于2027年4月开始，2027、2028财年每年发放一次。政府正以每人每年最多约2万5,000日元为基础进行研究。[1][3][7]",
+          "bill"
+        ],
+        [
+          "需要申请吗？",
+          "电费燃气费减免、燃料补贴和年末调整减税都不需要申请。市区町村的给付多为：已掌握账户的家庭无需申请即可到账，其余需要在期限内申请（例如熊本县八代市以12月28日邮戳为准）。[11][15][21]",
+          "running"
+        ]
+      ],
+      "legend": "：本页标签的含义。",
+      "statusL": {
+        "running": "已定・实施中",
+        "bill": "法案审议中",
+        "considering": "政府研究中",
+        "reported": "仅有报道",
+        "none": "未定・无计划",
+        "ended": "已结束"
+      },
+      "openH": "尚未确定的事项",
+      "open": [
+        "就业者负担减轻支援金的法案能否成立，以及最终金额和收入界线（由政令决定）。国会会期到12月12日结束。[7][9]",
+        "2027年3月用量的电费燃气费支援。首相表示将“在看清各种情况后研究对策”。[12]",
+        "燃料补贴何时结束。12月起分阶段提高基准价格，但没有给出结束时间。[12][13]",
+        "可退还税收抵免（给付付税额控除）的具体制度。目标是2029财年导入，仍在研究中。[18]"
+      ],
+      "toc": "目录",
+      "listH": "一览：国家给付金、支援金与补贴",
+      "fieldL": {
+        "amount": "多少",
+        "who": "对象",
+        "when": "时间",
+        "how": "领取方式",
+        "checked": "核对日期",
+        "more": "查看详情"
+      },
+      "items": [
+        {
+          "id": "wrp",
+          "name": "就业者负担减轻支援金",
+          "gist": "向中低收入劳动者每年发一次现金。法案在参议院审议中，正在研究每人每年最多约2万5,000日元。",
+          "amount": "政府正在研究以每人每年最多约2万5,000日元为基础，并为每名未满16岁的孩子每年加约5,000日元（11月13日首相答辩）。夫妇加两个孩子全额领取的话，每年共6万日元。金额由政令决定。[3][2][4]",
+          "who": "上一年工作并有收入的人（以个人为单位）。财务大臣把年收入100万至450万日元的约3,000万人称为“大致的印象”，并在11月19日答辩称，正在研究把开始发放的年收入（下限）定为约56万日元。[5][6]",
+          "when": "法案通过的话从2027年4月开始，2027、2028财年原则上每年一次。首次发放时间尚未确定。法案已于11月6日通过众议院，参议院将于11月24日举行中央公听会。会期到12月12日。[1][7][8][9]",
+          "how": "由居住地的市区町村认定资格并汇款。已登记公款领取账户的，原则上无需申请。[1]"
+        },
+        {
+          "id": "food",
+          "name": "食品消费税1%",
+          "gist": "自2027年4月起两年内，食品消费税由8%降到1%。与就业者负担减轻支援金同属一项法案，正在审议。",
+          "amount": "目前适用8%轻减税率的饮食品将降为1%。若含税价格正好按税率差下降，含税108日元的商品变为101日元。酒类和外食仍为10%。[1][10]",
+          "who": "所有购买食品的人（这是降低税率，不是给付）。",
+          "when": "2027年4月1日至2029年3月31日（法案通过的情况下）。[1]",
+          "how": "无需任何手续。实际能便宜多少取决于商店定价。"
+        },
+        {
+          "id": "energy",
+          "name": "电费和燃气费支援",
+          "gist": "2026年12月至2027年2月用量的电费和城市燃气费减免，无需申请。",
+          "amount": "电（低压、家庭）每千瓦时：12月用量减1.0日元，1、2月用量减4.5日元。高压为0.5日元和2.3日元。城市燃气每立方米减4.0日元和18.0日元。首相称标准家庭三个月合计减负约7,000日元。[11][12]",
+          "who": "使用电和城市燃气的家庭和企业（燃气为年合同量不到1,000万立方米）。液化石油气（丙烷）不在对象内。[11]",
+          "when": "2026年12月用量至2027年2月用量。12月用量原则上指12月抄表日至1月抄表日之间的用量。3月尚未决定。[11][12]",
+          "how": "无需申请，由电力和燃气公司从每月费用中直接减免。费用来自预备费，约5,219亿日元（11月13日内阁决定）。[11][25]"
+        },
+        {
+          "id": "fuel",
+          "name": "汽油和柴油等燃料补贴",
+          "gist": "汽油暂定税率已于2025年底废除。目前每升补贴29.6日元，12月起分阶段缩小。",
+          "amount": "11月19日起，汽油、柴油、灯油、重油每升补贴29.6日元，航空燃料为23.6日元。另外，汽油暂定税率（每升25.1日元）已于2025年12月31日废除。[13][14]",
+          "who": "所有购买燃料的人。这不是现金给付，而是向石油批发商等发补贴，压低零售价格。[13]",
+          "when": "本轮措施自2026年3月19日开始。12月起，以朝着春季每月把基准价格提高5日元为基本方针，逐步缩小补贴。没有给出结束时间。[12][13]",
+          "how": "无需任何手续。"
+        },
+        {
+          "id": "incometax",
+          "name": "所得税减税（年末调整）",
+          "gist": "提高基础扣除等，在2026年12月年末调整中结算。首相称每位纳税人3万至6万日元。",
+          "amount": "首相称，每位纳税人的所得税负担减轻3万至6万日元。这来自提高基础扣除、提高工资所得扣除最低保障额等，实际金额因收入和家庭情况而异。[12][15]",
+          "who": "缴纳所得税的人。",
+          "when": "修改于2026年12月1日施行，适用于2026年度所得税。上班族在2026年12月的年末调整中一并结算，11月以前每月的预扣不变。[15]",
+          "how": "上班族通过单位的年末调整获得；自行报税的人在2026年度的确定申报中反映。[15]"
+        },
+        {
+          "id": "kosodate",
+          "name": "应对物价上涨育儿支援津贴（每个孩子2万日元）",
+          "gist": "每个孩子2万日元，发一次。截至2026年3月底约1,782.7万人已领取，国家呼叫中心已于7月结束。",
+          "amount": "每个孩子统一2万日元，仅一次。无收入限制，不征税。[16]",
+          "who": "领取儿童津贴的人。对象是2007年4月2日至2026年3月31日出生的孩子（0岁至高中年龄）。[16]",
+          "when": "截至2026年3月底，约1,782.7万人、约3,565.3亿日元已发放（数字仍在核查）。预算为3,677亿日元。国家呼叫中心于2026年7月31日结束。申请期限由各市区町村决定。[16]",
+          "how": "原则上无需申请，直接汇入儿童津贴账户。2025年10月以后出生的孩子、公务员等需要申请。[16]"
+        },
+        {
+          "id": "uniform",
+          "name": "全民统一现金给付（统一2万日元、10万日元等）",
+          "gist": "尚未决定。2025年每人2万日元的方案已决定“不实施”，政府也没有提出其他全民统一给付。",
+          "amount": "没有。2025年提出的“每人2万日元（儿童和免征居民税家庭的成人每人4万日元）”给付，在2025年10月20日自民党与日本维新会的联合执政协议中被写明“不实施”。[17]",
+          "who": "没有对象（不存在这一制度）。全体国民领到10万日元的是2020年的特别定额给付金：{那10万日元去了哪里？|/essays/japan-special-cash-payment/}",
+          "when": "截至2026年11月23日，政府没有决定或提出向所有人发放相同金额的现金给付。政府的基本方针（2026年8月5日）把新给付定位为与收入挂钩的制度，有别于以往经济对策中的统一金额给付。[18]",
+          "how": "没有。凡是声称“申请统一给付”的电话、邮件或短信，请怀疑是诈骗（见下方“谨防诈骗”）。"
+        },
+        {
+          "id": "lowincome",
+          "name": "面向免征居民税家庭和低收入家庭的国家给付",
+          "gist": "2026年没有国家按家庭直接发放的现金给付，支援通过市区町村进行。",
+          "amount": "本页核对的政府资料中，没有2026年国家统一向免征居民税家庭发放的现金给付。政府转而增加了给地方的交付金：11月13日从预备费追加1,300亿日元，并特别建议用于低收入家庭和老年人家庭的电、燃气（含液化石油气）和灯油支援。[19][20][25]",
+          "who": "对象和金额由各市区町村决定。",
+          "when": "取决于市区町村何时使用交付金。2026年12月决定交付的部分，仅限于对特高压电力、液化石油气和灯油用户的支援。[20]",
+          "how": "请查看所住市区町村的网站或公告。"
+        },
+        {
+          "id": "grant",
+          "name": "重点支援地方交付金（地方给付的资金来源）",
+          "gist": "国家拨给地方政府的资金，地方用于现金给付、商品券、大米券等。2025财年补充预算为2兆377亿日元。",
+          "amount": "正式名称为“应对物价上涨重点支援地方创生临时交付金”。2025财年补充预算2兆377亿日元（其中推荐事业菜单2.0兆日元，内含针对食品涨价的特别加算0.4兆日元），2026财年补充预算1,000亿日元，11月13日的预备费1,300亿日元。[19]",
+          "who": "拨给都道府县和市区町村，向居民给付的对象和金额由各地方决定。[19]",
+          "when": "各地方从2025财年补充预算的部分开始依次实施。[19]",
+          "how": "是无需申请直接汇款（推送式）还是需要申请，因地方而异。请看下方“所住市区町村的给付”。"
+        },
+        {
+          "id": "credit",
+          "name": "可退还税收抵免（给付付税额控除）",
+          "gist": "以2029财年正式导入为目标，制度仍在研究中。在此之前的两年，由就业者负担减轻支援金和食品消费税1%作为“过渡”。",
+          "amount": "尚未决定。[18]",
+          "who": "尚未决定，正作为与收入挂钩的给付进行研究。[18]",
+          "when": "目标是2029财年（令和11年度）导入（2026年8月5日基本方针）。就业者负担减轻支援金是此前的“过渡”，被称为迈向正式可退还税收抵免的第一步。[18]",
+          "how": "尚未决定。另请参阅{可退还税收抵免与基本收入有何不同|/essays/refundable-tax-credit-vs-basic-income/}。"
+        }
+      ],
+      "localH": "所住市区町村的给付",
+      "local": [
+        "在国家制度之外，许多市区町村利用国家交付金（上面的重点支援地方交付金）发放自己的给付。金额、对象和申请期限各地不同，请查看所住市区町村的网站或公告。以下是在市政府官网上核实的例子：[19]",
+        [
+          "熊本县八代市：每人1万日元，对象是2026年1月1日在八代市登记住民的人。已掌握账户的家庭在7月上旬无需申请即已到账，其他人需要申请。受熊本地震影响，申请期限由9月30日延至12月28日（以邮戳为准）。资金来自国家的重点支援地方交付金。[21]",
+          "三重县桑名市：每人5,000日元，对象是2026年3月1日登记住民且在2007年4月1日或之前出生的人（19岁以上）。目前只受理银行转账的申请，期限为12月31日（以邮戳为准）。市政府网页没有写明资金来源。[22]"
+        ],
+        "以上两项只是例子，均于2026年11月23日在市政府官网上核对。"
+      ],
+      "scamH": "谨防诈骗",
+      "scam": [
+        "市区町村和国家绝不会为了给付而要求你操作自动取款机（ATM），或要求你汇手续费（总务省、消费者厅、警察厅的传单）。[23]",
+        "“要领取支援金，请先支付〇〇日元”是典型的诈骗手法（消费者厅，2025年9月11日）。遇到问题请拨打消费者热线188或警察咨询专线#9110。[24]",
+        "电费燃气费减免无需申请，资源能源厅表示绝不会索要个人信息或手续费。已有冒用该厅名义的电话和邮件。[11]"
+      ],
+      "timelineH": "来龙去脉与今后日程",
+      "timeline": [
+        [
+          "2025-10-20",
+          "2025年10月20日",
+          "自民党与日本维新会的联合执政协议写明，每人2万日元（儿童和免税家庭成人4万日元）的给付“不实施”。[17]",
+          "none"
+        ],
+        [
+          "2025-12-31",
+          "2025年12月31日",
+          "废除汽油暂定税率（每升25.1日元）。[14]",
+          "running"
+        ],
+        [
+          "2026-03-19",
+          "2026年3月19日",
+          "汽油和柴油等燃料补贴（紧急激变缓和措施）开始。[13]",
+          "running"
+        ],
+        [
+          "2026-07-31",
+          "2026年7月31日",
+          "育儿支援津贴的国家呼叫中心结束。[16]",
+          "ended"
+        ],
+        [
+          "2026-08-05",
+          "2026年8月5日",
+          "政府基本方针：可退还税收抵免以2029财年导入为目标，此前以就业者负担减轻支援金和食品消费税1%过渡。[18]",
+          "considering"
+        ],
+        [
+          "2026-10-29",
+          "2026年10月29日",
+          "首相宣布12月至2月的电费燃气费支援，以及12月起分阶段缩小燃料补贴。[12]",
+          "running"
+        ],
+        [
+          "2026-11-06",
+          "2026年11月6日",
+          "就业者负担减轻支援金与食品消费税1%的法案通过众议院。[7]",
+          "bill"
+        ],
+        [
+          "2026-11-13",
+          "2026年11月13日",
+          "内阁决定动用预备费：电费燃气费支援约5,219亿日元，重点支援地方交付金1,300亿日元。[25]",
+          "running"
+        ],
+        [
+          "2026-11-19",
+          "2026年11月19日",
+          "财务大臣答辩称，正在研究把就业者负担减轻支援金的下限定为年收入约56万日元。[6]",
+          "considering"
+        ],
+        [
+          "2026-11-24",
+          "2026年11月24日",
+          "参议院特别委员会举行中央公听会。[8]",
+          "bill"
+        ],
+        [
+          "2026-12",
+          "2026年12月",
+          "电费和城市燃气费减免从12月用量开始。所得税减税在年末调整中结算。[11][15]",
+          "running"
+        ],
+        [
+          "2026-12-12",
+          "2026年12月12日",
+          "国会会期结束。法案届时能否通过尚未确定。[9]",
+          "none"
+        ],
+        [
+          "2026-12-28",
+          "2026年12月28日",
+          "熊本县八代市每人1万日元的申请截止（以邮戳为准）。[21]",
+          "running"
+        ],
+        [
+          "2027-03",
+          "2027年3月",
+          "3月用量的电费燃气费支援：首相表示将研究对策。[12]",
+          "considering"
+        ],
+        [
+          "2027-04",
+          "2027年4月",
+          "食品消费税1%和就业者负担减轻支援金制度开始（法案通过的情况下）。[1]",
+          "bill"
+        ]
+      ],
+      "faqH": "常见问题",
+      "faq": [
+        [
+          "2026年有全民统一给付吗？",
+          "没有。截至2026年11月23日，向全体国民统一发放的国家现金给付并未决定。2025年每人2万日元的给付，已在2025年10月20日的联合执政协议中被写明“不实施”。[17]"
+        ],
+        [
+          "给付金什么时候发？",
+          "政府新的现金给付“就业者负担减轻支援金”若法案通过，2027年4月开始，2027、2028财年每年发放一次；首次发放时间尚未确定。现在能领到的现金给付是各市区町村的给付。[1][21]"
+        ],
+        [
+          "就业者负担减轻支援金是多少？",
+          "政府正在研究每人每年最多约2万5,000日元，以及每名未满16岁的孩子每年加约5,000日元。金额由政令决定。详见{就业者负担减轻支援金页面|/guides/worker-relief-payment/}。[3][2]"
+        ],
+        [
+          "有面向免征居民税家庭的给付吗？",
+          "2026年没有国家统一向免税家庭发放的现金给付。政府增加了给地方的交付金，请查看所住市区町村的给付。[19][20]"
+        ],
+        [
+          "电费燃气费补贴从什么时候开始，多少？",
+          "对象是2026年12月至2027年2月的用量：家庭用电每千瓦时12月减1.0日元，1、2月减4.5日元；城市燃气每立方米减4.0日元和18.0日元。无需申请。[11]"
+        ],
+        [
+          "育儿支援津贴（2万日元）还能领吗？",
+          "大部分已在2026年3月底前发放，国家呼叫中心已于7月31日结束。申请期限由各市区町村决定，如果还没领到，请向市区町村咨询。[16]"
+        ],
+        [
+          "年末调整减税有多少？",
+          "首相称每位纳税人的所得税减轻3万至6万日元。上班族在2026年12月的年末调整中结算。[12][15]"
+        ],
+        [
+          "怎样识别给付金诈骗？",
+          "国家和市区町村绝不会要求你操作自动取款机或支付手续费。凡是要你付钱的，都请怀疑是诈骗，并拨打188或#9110咨询。[23][24]"
+        ]
+      ],
+      "relatedH": "相关页面",
+      "related": [
+        [
+          "/calc/household/?s=jb",
+          "我家基本收入计算器：基本收入会让家庭收支每月变化多少？"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=jb",
+          "基本收入计算器：给日本所有人每月发1万日元，每年要花多少？"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "2020年的10万日元去了哪里？"
+        ],
+        [
+          "/essays/refundable-tax-credit-vs-basic-income/",
+          "可退还税收抵免与基本收入有何不同？"
+        ]
+      ],
+      "logH": "更新记录",
+      "updatedL": "最后更新",
+      "wrpLink": "还有哪些给付？日本国家给付金、支援金与补贴一览（2026年11月）",
+      "hhLink": "何时发、发多少？日本国家给付金、支援金与补贴一览（2026年）",
+      "about": "日本的给付金何时发、发多少：把国家给付金、支援金和补贴分为实施中、法案审议中、研究中、未定、已结束，并附金额、对象、时间、领取方式、出处和核对日期的一览页面。有新信息时更新。"
+    },
+    "hi": {
+      "title": "जापान के नकद भुगतान, नवंबर 2026: कब और कितना? सभी राष्ट्रीय भुगतान और सब्सिडी, तय, संसद में या तय नहीं",
+      "short": "जापान के भुगतान 2026",
+      "eb": "भुगतानों का सार",
+      "desc": "जापान में नकद भुगतान कब और कितना? सबको एक जैसा भुगतान तय नहीं। कामगारों का रिलीफ़ पेमेंट, बिजली-गैस छूट, आयकर कटौती और बाक़ी, स्थिति और स्रोत के साथ।",
+      "asOf": "23 नवंबर 2026 तक की जानकारी (हर मद 23 नवंबर को जाँची गई)। नई जानकारी आने पर हम यह पेज अपडेट करते हैं।",
+      "lead": [
+        "“अगला भुगतान कब?” और “क्या सबको भुगतान मिलेगा?” का जवाब देने के लिए यह पेज जापान के राष्ट्रीय नकद भुगतान, सहायता भुगतान और सब्सिडी को इन हिस्सों में बाँटता है: तय और लागू, संसद में विधेयक के रूप में, सरकार के विचाराधीन, तय नहीं, और समाप्त। हर मद में रकम, किसे मिलता है, कब, कैसे मिलता है, स्रोत और जाँच की तारीख़ दी गई है।",
+        "संक्षेप में: नवंबर 2026 तक सबको एक जैसा नकद भुगतान देने का कोई फ़ैसला नहीं हुआ है। अभी लागू हैं बिजली और शहरी गैस के बिलों पर छूट, पेट्रोल और दूसरे ईंधनों पर सब्सिडी, और साल के अंत के समायोजन में मिलने वाली आयकर कटौती; नकद भुगतान मुख्य रूप से अलग-अलग नगरपालिकाएँ देती हैं। सरकार का नया नकद भुगतान, वर्कर बर्डन रिलीफ़ पेमेंट, एक विधेयक में है जिस पर अभी पार्षद सभा में बहस हो रही है।[17][1][7]"
+      ],
+      "answerH": "जवाब: क्या अभी कोई भुगतान है?",
+      "answer": [
+        [
+          "सबको एक जैसा भुगतान?",
+          "नहीं। 23 नवंबर 2026 तक हर निवासी को राष्ट्रीय नकद भुगतान देने का कोई फ़ैसला नहीं हुआ है। 2025 में वादा किया गया प्रति व्यक्ति 20,000 येन का भुगतान 20 अक्टूबर 2025 के एलडीपी और निप्पॉन इशिन नो काई के गठबंधन समझौते में छोड़ दिया गया, जिसमें लिखा है कि यह “नहीं किया जाएगा”।[17]",
+          "none"
+        ],
+        [
+          "अभी क्या लागू है?",
+          "बिजली और शहरी गैस के बिलों पर छूट (दिसंबर 2026 की खपत से, आवेदन की ज़रूरत नहीं), पेट्रोल, डीज़ल और दूसरे ईंधनों पर सब्सिडी, और दिसंबर 2026 के साल के अंत के समायोजन में आयकर कटौती (प्रधानमंत्री के अनुसार हर करदाता के लिए 30,000 से 60,000 येन)। नकद भुगतान मुख्य रूप से नगरपालिकाएँ राष्ट्रीय अनुदान से देती हैं।[11][12][13][19]",
+          "running"
+        ],
+        [
+          "अगला राष्ट्रीय भुगतान?",
+          "वर्कर बर्डन रिलीफ़ पेमेंट। विधेयक पार्षद सभा में है; पास होने पर योजना अप्रैल 2027 में शुरू होगी और वित्त वर्ष 2027 और 2028 में साल में एक बार भुगतान होगा। सरकार आधार के रूप में हर व्यक्ति को सालाना अधिकतम लगभग 25,000 येन पर विचार कर रही है।[1][3][7]",
+          "bill"
+        ],
+        [
+          "क्या आवेदन करना होगा?",
+          "बिजली-गैस छूट, ईंधन सब्सिडी और साल के अंत की कर कटौती के लिए नहीं। नगरपालिकाओं के भुगतान अक्सर उन परिवारों को बिना आवेदन मिल जाते हैं जिनका खाता शहर के पास है, बाक़ी को तय तारीख़ तक आवेदन करना होता है (यात्सुशिरो, कुमामोतो: 28 दिसंबर की डाक मुहर तक)।[11][15][21]",
+          "running"
+        ]
+      ],
+      "legend": ": इस पेज के लेबल का मतलब।",
+      "statusL": {
+        "running": "तय, लागू",
+        "bill": "संसद में विधेयक",
+        "considering": "विचाराधीन",
+        "reported": "सिर्फ़ ख़बर",
+        "none": "तय नहीं / योजना नहीं",
+        "ended": "समाप्त"
+      },
+      "openH": "अभी तय नहीं",
+      "open": [
+        "वर्कर बर्डन रिलीफ़ पेमेंट का विधेयक पास होगा या नहीं, और अंतिम रकम और आय की सीमाएँ (मंत्रिमंडल के आदेश से तय होंगी)। संसद का सत्र 12 दिसंबर को ख़त्म होता है।[7][9]",
+        "मार्च 2027 की बिजली और गैस खपत के लिए मदद। प्रधानमंत्री ने कहा कि सरकार “हालात को ध्यान से देखकर क़दम पर विचार करेगी”।[12]",
+        "ईंधन सब्सिडी कब ख़त्म होगी। दिसंबर से आधार मूल्य धीरे-धीरे बढ़ेगा, पर ख़त्म होने की कोई तारीख़ नहीं बताई गई।[12][13]",
+        "रिफ़ंडेबल टैक्स क्रेडिट का ढाँचा, जिसे सरकार वित्त वर्ष 2029 में लाना चाहती है।[18]"
+      ],
+      "toc": "विषय-सूची",
+      "listH": "सूची: राष्ट्रीय भुगतान, सहायता और सब्सिडी",
+      "fieldL": {
+        "amount": "कितना",
+        "who": "किसे",
+        "when": "कब",
+        "how": "कैसे मिलेगा",
+        "checked": "जाँच की तारीख़",
+        "more": "और जानकारी"
+      },
+      "items": [
+        {
+          "id": "wrp",
+          "name": "वर्कर बर्डन रिलीफ़ पेमेंट",
+          "gist": "कम और मध्यम आय वाले कामगारों को साल में एक बार नकद। विधेयक पार्षद सभा में है; हर व्यक्ति को सालाना अधिकतम लगभग 25,000 येन विचाराधीन।",
+          "amount": "सरकार आधार के रूप में हर व्यक्ति को सालाना अधिकतम लगभग 25,000 येन और 16 साल से कम उम्र के हर बच्चे पर सालाना लगभग 5,000 येन अतिरिक्त पर विचार कर रही है (13 नवंबर का प्रधानमंत्री का जवाब)। पूरी रकम पाने वाले दो बच्चों वाले दंपति को सालाना 60,000 येन मिलेंगे। रकम मंत्रिमंडल के आदेश से तय होगी।[3][2][4]",
+          "who": "वे लोग जिन्होंने पिछले साल काम करके कमाई की (हर व्यक्ति अलग गिना जाता है)। वित्त मंत्री ने 1 मिलियन से 4.5 मिलियन येन आय वाले लगभग 30 मिलियन लोगों को “मोटी तस्वीर” बताया, और 19 नवंबर को कहा कि लगभग 560,000 येन सालाना आय की निचली सीमा पर विचार हो रहा है।[5][6]",
+          "when": "विधेयक पास हुआ तो अप्रैल 2027 से, सिद्धांत रूप में वित्त वर्ष 2027 और 2028 में एक-एक बार। पहले भुगतान की तारीख़ तय नहीं है। विधेयक 6 नवंबर को प्रतिनिधि सभा से पास हुआ; पार्षद सभा 24 नवंबर को केंद्रीय जन सुनवाई करेगी। सत्र 12 दिसंबर को ख़त्म होता है।[1][7][8][9]",
+          "how": "आपकी नगरपालिका पात्रता प्रमाणित करके खाते में पैसा भेजती है। सार्वजनिक भुगतान प्राप्ति खाता पंजीकृत हो तो सिद्धांत रूप में आवेदन नहीं करना पड़ता।[1]"
+        },
+        {
+          "id": "food",
+          "name": "खाने पर 1% उपभोग कर",
+          "gist": "अप्रैल 2027 से दो साल तक खाने पर उपभोग कर 8% से घटकर 1%। वर्कर बर्डन रिलीफ़ पेमेंट वाले उसी विधेयक में, संसद के सामने।",
+          "amount": "अभी 8% की घटी दर वाले खाने-पीने के सामान पर 1% कर लगेगा। अगर दाम ठीक दर के अंतर जितने घटें, तो टैक्स सहित 108 येन की चीज़ 101 येन की हो जाएगी। शराब और बाहर खाना 10% पर रहेंगे।[1][10]",
+          "who": "खाना ख़रीदने वाले सभी लोग (यह कर दर में कटौती है, भुगतान नहीं)।",
+          "when": "1 अप्रैल 2027 से 31 मार्च 2029 तक, अगर विधेयक पास हो।[1]",
+          "how": "कुछ करने की ज़रूरत नहीं। दाम असल में कितने घटेंगे, यह दुकानों पर निर्भर है।"
+        },
+        {
+          "id": "energy",
+          "name": "बिजली और गैस बिल में मदद",
+          "gist": "दिसंबर 2026 से फ़रवरी 2027 तक की बिजली और शहरी गैस खपत पर छूट। आवेदन की ज़रूरत नहीं।",
+          "amount": "कम वोल्टेज बिजली (घर): दिसंबर की खपत पर 1.0 येन प्रति किलोवाट-घंटा, जनवरी और फ़रवरी पर 4.5 येन। उच्च वोल्टेज: 0.5 और 2.3 येन। शहरी गैस: 4.0 और 18.0 येन प्रति घन मीटर। प्रधानमंत्री के अनुसार एक सामान्य परिवार की तीन महीने में लगभग 7,000 येन की बचत होगी।[11][12]",
+          "who": "बिजली और शहरी गैस इस्तेमाल करने वाले घर और कारोबार (गैस के लिए सालाना 1 करोड़ घन मीटर से कम का अनुबंध)। एलपी गैस (प्रोपेन) शामिल नहीं है।[11]",
+          "when": "दिसंबर 2026 की खपत से फ़रवरी 2027 की खपत तक। “दिसंबर की खपत” का मतलब सिद्धांत रूप में दिसंबर और जनवरी की मीटर रीडिंग के बीच की खपत है। मार्च तय नहीं है।[11][12]",
+          "how": "आवेदन नहीं करना। बिजली और गैस कंपनियाँ हर महीने के बिल से छूट घटाती हैं। इसका ख़र्च आरक्षित कोष से लगभग 521.9 अरब येन है (13 नवंबर का मंत्रिमंडल फ़ैसला)।[11][25]"
+        },
+        {
+          "id": "fuel",
+          "name": "पेट्रोल और डीज़ल सब्सिडी",
+          "gist": "पेट्रोल पर अस्थायी कर दर 2025 के अंत में ख़त्म। अभी 29.6 येन प्रति लीटर सब्सिडी, जो दिसंबर से धीरे-धीरे घटेगी।",
+          "amount": "19 नवंबर से पेट्रोल, डीज़ल, केरोसिन और भारी तेल पर 29.6 येन प्रति लीटर और विमान ईंधन पर 23.6 येन सब्सिडी है। इससे अलग, पेट्रोल पर अस्थायी कर दर (25.1 येन प्रति लीटर) 31 दिसंबर 2025 को ख़त्म कर दी गई।[13][14]",
+          "who": "ईंधन ख़रीदने वाले सभी लोग। यह नकद भुगतान नहीं है: सब्सिडी तेल थोक विक्रेताओं को जाती है ताकि पंप पर दाम कम रहें।[13]",
+          "when": "मौजूदा क़दम 19 मार्च 2026 को शुरू हुआ। दिसंबर से सब्सिडी घटेगी, मूल योजना यह है कि वसंत तक आधार मूल्य हर महीने 5 येन बढ़ाया जाए। ख़त्म होने की तारीख़ नहीं बताई गई।[12][13]",
+          "how": "कुछ करने की ज़रूरत नहीं।"
+        },
+        {
+          "id": "incometax",
+          "name": "आयकर कटौती (साल के अंत का समायोजन)",
+          "gist": "बढ़ी हुई बुनियादी कटौती और दूसरे बदलाव, दिसंबर 2026 के साल के अंत के समायोजन में। प्रधानमंत्री के अनुसार हर करदाता के लिए 30,000 से 60,000 येन।",
+          "amount": "प्रधानमंत्री ने इसे हर करदाता के लिए 30,000 से 60,000 येन की आयकर कटौती बताया। यह बढ़ी हुई बुनियादी कटौती, वेतन आय कटौती की बढ़ी न्यूनतम रकम और दूसरे बदलावों से आती है; असल रकम आय और परिवार पर निर्भर है।[12][15]",
+          "who": "आयकर देने वाले लोग।",
+          "when": "बदलाव 1 दिसंबर 2026 से लागू हैं और 2026 के आयकर पर लगते हैं। कर्मचारियों को यह दिसंबर 2026 के साल के अंत के समायोजन में एक साथ मिलता है; नवंबर तक की मासिक कटौती नहीं बदलती।[15]",
+          "how": "कर्मचारियों को नियोक्ता के साल के अंत के समायोजन से; रिटर्न भरने वालों को 2026 के रिटर्न में।[15]"
+        },
+        {
+          "id": "kosodate",
+          "name": "महँगाई के लिए बाल-पालन सहायता भत्ता (हर बच्चे पर 20,000 येन)",
+          "gist": "हर बच्चे पर 20,000 येन, एक बार। मार्च 2026 के अंत तक लगभग 17.827 मिलियन बच्चों को भुगतान; राष्ट्रीय कॉल सेंटर जुलाई में बंद।",
+          "amount": "हर बच्चे पर 20,000 येन, एक बार। आय की कोई सीमा नहीं, और कर नहीं लगता।[16]",
+          "who": "बाल भत्ता पाने वाले, 2 अप्रैल 2007 से 31 मार्च 2026 के बीच जन्मे बच्चों के लिए (नवजात से हाई स्कूल की उम्र तक)।[16]",
+          "when": "मार्च 2026 के अंत तक लगभग 17.827 मिलियन बच्चों को लगभग 356.53 अरब येन दिए गए (आँकड़ों की जाँच जारी)। बजट 367.7 अरब येन था। राष्ट्रीय कॉल सेंटर 31 जुलाई 2026 को बंद हुआ। आख़िरी तारीख़ें हर नगरपालिका ने तय कीं।[16]",
+          "how": "सिद्धांत रूप में बिना आवेदन बाल भत्ते वाले खाते में। अक्टूबर 2025 से जन्मे बच्चों, सरकारी कर्मचारियों के बच्चों और कुछ और मामलों में आवेदन करना पड़ा।[16]"
+        },
+        {
+          "id": "uniform",
+          "name": "सबको एक जैसा नकद भुगतान (20,000 येन, 100,000 येन या ऐसा कुछ)",
+          "gist": "तय नहीं। 2025 की प्रति व्यक्ति 20,000 येन की योजना छोड़ दी गई, और सरकार ने सबके लिए कोई दूसरा भुगतान प्रस्तावित नहीं किया।",
+          "amount": "कुछ नहीं। 2025 में वादा किया गया भुगतान, प्रति व्यक्ति 20,000 येन (बच्चों और निवासी कर से छूट वाले परिवारों के वयस्कों के लिए 40,000 येन), 20 अक्टूबर 2025 के एलडीपी-इशिन गठबंधन समझौते में छोड़ दिया गया।[17]",
+          "who": "कोई नहीं (ऐसी कोई योजना नहीं है)। आख़िरी बार सबको 100,000 येन 2020 के विशेष नकद भुगतान में मिले थे: {वह पैसा कहाँ गया?|/essays/japan-special-cash-payment/}",
+          "when": "23 नवंबर 2026 तक सरकार ने सबको एक जैसी रकम का नकद भुगतान न तय किया है, न प्रस्तावित। 5 अगस्त 2026 की उसकी बुनियादी नीति नए भुगतान को आय से जुड़ा बताती है, जो पिछले आर्थिक पैकेजों के एक जैसी रकम वाले भुगतानों से अलग है।[18]",
+          "how": "कुछ नहीं। “एक जैसे भुगतान के लिए आवेदन” वाले फ़ोन, ईमेल या संदेश को धोखा मानें (नीचे “धोखाधड़ी से सावधान” देखें)।"
+        },
+        {
+          "id": "lowincome",
+          "name": "कम आय वाले और निवासी कर से छूट वाले परिवारों के लिए राष्ट्रीय भुगतान",
+          "gist": "2026 में परिवारों को सीधा कोई राष्ट्रीय नकद भुगतान नहीं। मदद नगरपालिकाओं के ज़रिए।",
+          "amount": "इस पेज के लिए जाँचे गए सरकारी दस्तावेज़ों में 2026 में निवासी कर से छूट वाले परिवारों को कोई राष्ट्रीय नकद भुगतान नहीं है। इसके बजाय सरकार ने स्थानीय सरकारों का अनुदान बढ़ाया है: 13 नवंबर को आरक्षित कोष से 130 अरब येन जोड़े और कम आय वाले और बुज़ुर्ग परिवारों को बिजली, गैस (एलपी गैस समेत) और केरोसिन में मदद पर ख़र्च करने की ख़ास सिफ़ारिश की।[19][20][25]",
+          "who": "हर नगरपालिका तय करती है कि किसे क्या मिलेगा।",
+          "when": "जब नगरपालिका अनुदान का इस्तेमाल करे। दिसंबर 2026 में तय होने वाले अनुदान सिर्फ़ अति उच्च वोल्टेज बिजली, एलपी गैस और केरोसिन इस्तेमाल करने वालों की मदद के लिए हैं।[20]",
+          "how": "अपनी नगरपालिका की वेबसाइट या पत्रिका देखें।"
+        },
+        {
+          "id": "grant",
+          "name": "प्राथमिक क्षेत्रीय अनुदान (स्थानीय भुगतानों के पीछे का पैसा)",
+          "gist": "राज्य से स्थानीय सरकारों को पैसा, जिसे वे नकद भुगतान, वाउचर, चावल वाउचर वग़ैरह पर ख़र्च करती हैं। वित्त वर्ष 2025 के पूरक बजट में 2.0377 ट्रिलियन येन।",
+          "amount": "इसका पूरा नाम महँगाई के लिए प्राथमिक क्षेत्रीय अनुदान है। वित्त वर्ष 2025 के पूरक बजट में 2.0377 ट्रिलियन येन (जिसमें 2.0 ट्रिलियन येन सुझाई गई सूची के लिए, उसमें खाने के दामों के लिए 0.4 ट्रिलियन येन का ख़ास हिस्सा), वित्त वर्ष 2026 के पूरक बजट में 100 अरब येन और 13 नवंबर को आरक्षित कोष से 130 अरब येन।[19]",
+          "who": "प्रान्त और नगरपालिकाएँ इसे पाती हैं; हर एक तय करती है कि उसके निवासियों में किसे क्या मिलेगा।[19]",
+          "when": "स्थानीय सरकारें वित्त वर्ष 2025 के पूरक बजट का पैसा बारी-बारी से ख़र्च कर रही हैं।[19]",
+          "how": "कुछ नगरपालिकाएँ अपने आप भुगतान करती हैं, कुछ में आवेदन करना पड़ता है। नीचे “आपकी नगरपालिका के भुगतान” देखें।"
+        },
+        {
+          "id": "credit",
+          "name": "रिफ़ंडेबल टैक्स क्रेडिट",
+          "gist": "ढाँचा बन रहा है, पूरी तरह लागू करने का लक्ष्य वित्त वर्ष 2029। तब तक वर्कर बर्डन रिलीफ़ पेमेंट और खाने पर 1% कर पुल का काम करेंगे।",
+          "amount": "तय नहीं।[18]",
+          "who": "तय नहीं। इसे आय से जुड़े लाभ के रूप में बनाया जा रहा है।[18]",
+          "when": "लक्ष्य वित्त वर्ष 2029 है (5 अगस्त 2026 की बुनियादी नीति)। वर्कर बर्डन रिलीफ़ पेमेंट तब तक का पुल है और पूरे रिफ़ंडेबल टैक्स क्रेडिट की ओर पहला क़दम कहा गया है।[18]",
+          "how": "तय नहीं। {रिफ़ंडेबल टैक्स क्रेडिट और बेसिक इनकम में फ़र्क़|/essays/refundable-tax-credit-vs-basic-income/} भी देखें।"
+        }
+      ],
+      "localH": "आपकी नगरपालिका के भुगतान",
+      "local": [
+        "राष्ट्रीय योजनाओं के अलावा, कई नगरपालिकाएँ ऊपर वाले राष्ट्रीय अनुदान से अपने भुगतान देती हैं। रकम, पात्रता और आख़िरी तारीख़ जगह-जगह अलग हैं, इसलिए अपनी नगरपालिका की वेबसाइट या पत्रिका देखें। शहरों की अपनी वेबसाइटों पर पुष्ट दो उदाहरण:[19]",
+        [
+          "यात्सुशिरो शहर, कुमामोतो: 1 जनवरी 2026 को पंजीकृत निवासियों को प्रति व्यक्ति 10,000 येन। जिन परिवारों का खाता शहर के पास था, उन्हें जुलाई की शुरुआत में बिना आवेदन भुगतान हो गया; बाक़ी को आवेदन करना होगा। कुमामोतो भूकंप की वजह से आख़िरी तारीख़ 30 सितंबर से बढ़कर 28 दिसंबर (डाक मुहर) हो गई। पैसा राष्ट्रीय प्राथमिक क्षेत्रीय अनुदान से है।[21]",
+          "कुवाना शहर, मिए: 1 मार्च 2026 को पंजीकृत और 1 अप्रैल 2007 या उससे पहले जन्मे निवासियों (19 साल और ऊपर) को प्रति व्यक्ति 5,000 येन। अब सिर्फ़ बैंक ट्रांसफ़र के आवेदन लिए जा रहे हैं, 31 दिसंबर की डाक मुहर तक। शहर के पेज पर पैसे का स्रोत नहीं लिखा है।[22]"
+        ],
+        "ये दोनों सिर्फ़ उदाहरण हैं। दोनों 23 नवंबर 2026 को शहरों की वेबसाइटों पर जाँचे गए।"
+      ],
+      "scamH": "धोखाधड़ी से सावधान",
+      "scam": [
+        "नगरपालिकाएँ और राष्ट्रीय सरकार भुगतान देने के लिए आपसे कभी एटीएम चलाने या शुल्क भेजने को नहीं कहेंगी (आंतरिक मामलों के मंत्रालय, उपभोक्ता मामलों की एजेंसी और राष्ट्रीय पुलिस एजेंसी का पर्चा)।[23]",
+        "“सहायता भुगतान पाने के लिए पहले इतने येन भरें” एक आम धोखा है (उपभोक्ता मामलों की एजेंसी, 11 सितंबर 2025)। मदद के लिए उपभोक्ता हेल्पलाइन 188 या पुलिस सलाह लाइन #9110 पर फ़ोन करें।[24]",
+        "बिजली-गैस छूट के लिए कोई आवेदन नहीं करना होता, और प्राकृतिक संसाधन और ऊर्जा एजेंसी कहती है कि वह कभी निजी जानकारी या शुल्क नहीं माँगती। उसके नाम से झूठे फ़ोन और ईमेल की ख़बरें आई हैं।[11]"
+      ],
+      "timelineH": "घटनाक्रम और आगे की तारीख़ें",
+      "timeline": [
+        [
+          "2025-10-20",
+          "20 अक्टूबर 2025",
+          "एलडीपी-इशिन गठबंधन समझौते में प्रति व्यक्ति 20,000 येन (बच्चों और छूट वाले परिवारों के वयस्कों को 40,000 येन) का भुगतान छोड़ा गया।[17]",
+          "none"
+        ],
+        [
+          "2025-12-31",
+          "31 दिसंबर 2025",
+          "पेट्रोल पर अस्थायी कर दर (25.1 येन प्रति लीटर) ख़त्म।[14]",
+          "running"
+        ],
+        [
+          "2026-03-19",
+          "19 मार्च 2026",
+          "पेट्रोल और डीज़ल सब्सिडी (आपात क़दम) शुरू।[13]",
+          "running"
+        ],
+        [
+          "2026-07-31",
+          "31 जुलाई 2026",
+          "बाल-पालन सहायता भत्ते का राष्ट्रीय कॉल सेंटर बंद।[16]",
+          "ended"
+        ],
+        [
+          "2026-08-05",
+          "5 अगस्त 2026",
+          "बुनियादी नीति: रिफ़ंडेबल टैक्स क्रेडिट का लक्ष्य वित्त वर्ष 2029, तब तक वर्कर बर्डन रिलीफ़ पेमेंट और खाने पर 1% कर पुल।[18]",
+          "considering"
+        ],
+        [
+          "2026-10-29",
+          "29 अक्टूबर 2026",
+          "प्रधानमंत्री ने दिसंबर से फ़रवरी तक बिजली-गैस मदद और दिसंबर से ईंधन सब्सिडी में धीरे-धीरे कटौती की घोषणा की।[12]",
+          "running"
+        ],
+        [
+          "2026-11-06",
+          "6 नवंबर 2026",
+          "वर्कर बर्डन रिलीफ़ पेमेंट और खाने पर 1% कर वाला विधेयक प्रतिनिधि सभा से पास।[7]",
+          "bill"
+        ],
+        [
+          "2026-11-13",
+          "13 नवंबर 2026",
+          "मंत्रिमंडल ने आरक्षित कोष के इस्तेमाल का फ़ैसला किया: बिजली-गैस मदद के लिए लगभग 521.9 अरब येन और प्राथमिक क्षेत्रीय अनुदान के लिए 130 अरब येन।[25]",
+          "running"
+        ],
+        [
+          "2026-11-19",
+          "19 नवंबर 2026",
+          "वित्त मंत्री: वर्कर बर्डन रिलीफ़ पेमेंट के लिए लगभग 560,000 येन सालाना आय की निचली सीमा पर विचार।[6]",
+          "considering"
+        ],
+        [
+          "2026-11-24",
+          "24 नवंबर 2026",
+          "उच्च सदन की विशेष समिति की केंद्रीय जन सुनवाई।[8]",
+          "bill"
+        ],
+        [
+          "2026-12",
+          "दिसंबर 2026",
+          "बिजली-गैस छूट दिसंबर की खपत से शुरू। आयकर कटौती साल के अंत के समायोजन में।[11][15]",
+          "running"
+        ],
+        [
+          "2026-12-12",
+          "12 दिसंबर 2026",
+          "संसद का सत्र ख़त्म। तब तक विधेयक पास होगा या नहीं, तय नहीं।[9]",
+          "none"
+        ],
+        [
+          "2026-12-28",
+          "28 दिसंबर 2026",
+          "यात्सुशिरो शहर के प्रति व्यक्ति 10,000 येन के आवेदन की आख़िरी तारीख़ (डाक मुहर)।[21]",
+          "running"
+        ],
+        [
+          "2027-03",
+          "मार्च 2027",
+          "मार्च की खपत के लिए बिजली-गैस मदद: प्रधानमंत्री ने कहा कि क़दम पर विचार होगा।[12]",
+          "considering"
+        ],
+        [
+          "2027-04",
+          "अप्रैल 2027",
+          "खाने पर 1% कर और वर्कर बर्डन रिलीफ़ पेमेंट शुरू, अगर विधेयक पास हो।[1]",
+          "bill"
+        ]
+      ],
+      "faqH": "अक्सर पूछे जाने वाले सवाल",
+      "faq": [
+        [
+          "क्या 2026 में सबको भुगतान मिलेगा?",
+          "नहीं। 23 नवंबर 2026 तक हर निवासी को राष्ट्रीय नकद भुगतान का कोई फ़ैसला नहीं हुआ है। 2025 की प्रति व्यक्ति 20,000 येन की योजना 20 अक्टूबर 2025 के गठबंधन समझौते में छोड़ दी गई।[17]"
+        ],
+        [
+          "भुगतान कब होंगे?",
+          "सरकार का नया नकद भुगतान, वर्कर बर्डन रिलीफ़ पेमेंट, विधेयक पास होने पर अप्रैल 2027 में शुरू होगा और वित्त वर्ष 2027 और 2028 में साल में एक बार मिलेगा; पहले भुगतान की तारीख़ तय नहीं है। अभी मिलने वाले नकद भुगतान नगरपालिकाओं के हैं।[1][21]"
+        ],
+        [
+          "वर्कर बर्डन रिलीफ़ पेमेंट कितना है?",
+          "सरकार हर व्यक्ति को सालाना अधिकतम लगभग 25,000 येन और 16 साल से कम उम्र के हर बच्चे पर सालाना लगभग 5,000 येन पर विचार कर रही है। रकम मंत्रिमंडल के आदेश से तय होगी। विस्तार {हमारे वर्कर बर्डन रिलीफ़ पेमेंट पेज|/guides/worker-relief-payment/} पर।[3][2]"
+        ],
+        [
+          "क्या निवासी कर से छूट वाले परिवारों के लिए भुगतान है?",
+          "2026 में छूट वाले परिवारों को कोई राष्ट्रीय नकद भुगतान नहीं है। सरकार ने स्थानीय सरकारों का अनुदान बढ़ाया है, इसलिए देखें कि आपकी नगरपालिका क्या देती है।[19][20]"
+        ],
+        [
+          "बिजली और गैस मदद कब से और कितनी?",
+          "यह दिसंबर 2026 से फ़रवरी 2027 की खपत पर है: घरेलू बिजली पर दिसंबर में 1.0 येन और जनवरी-फ़रवरी में 4.5 येन प्रति किलोवाट-घंटा, शहरी गैस पर 4.0 और 18.0 येन प्रति घन मीटर। आवेदन की ज़रूरत नहीं।[11]"
+        ],
+        [
+          "क्या 20,000 येन का बाल-पालन सहायता भत्ता अब भी मिल सकता है?",
+          "ज़्यादातर भुगतान मार्च 2026 के अंत तक हो गया और राष्ट्रीय कॉल सेंटर 31 जुलाई को बंद हुआ। आख़िरी तारीख़ें हर नगरपालिका ने तय कीं, इसलिए अगर भुगतान नहीं मिला तो अपनी नगरपालिका से पूछें।[16]"
+        ],
+        [
+          "साल के अंत की कर कटौती कितनी है?",
+          "प्रधानमंत्री ने इसे हर करदाता के लिए 30,000 से 60,000 येन की आयकर कटौती बताया। कर्मचारियों को यह दिसंबर 2026 के साल के अंत के समायोजन में मिलती है।[12][15]"
+        ],
+        [
+          "भुगतान वाले धोखे को कैसे पहचानें?",
+          "राष्ट्रीय सरकार और नगरपालिकाएँ कभी एटीएम चलाने या शुल्क देने को नहीं कहतीं। पैसे माँगने वाली हर बात को धोखा मानें और 188 या #9110 पर फ़ोन करें।[23][24]"
+        ]
+      ],
+      "relatedH": "संबंधित पेज",
+      "related": [
+        [
+          "/calc/household/?s=jb",
+          "परिवार का कैलकुलेटर: बेसिक इनकम आपके परिवार के बजट को कैसे बदलेगी?"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=jb",
+          "बेसिक इनकम कैलकुलेटर: जापान में सबको महीने में 10,000 येन देने पर कितना ख़र्च आएगा?"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "जापान के 2020 के 100,000 येन के भुगतान का पैसा कहाँ गया?"
+        ],
+        [
+          "/essays/refundable-tax-credit-vs-basic-income/",
+          "रिफ़ंडेबल टैक्स क्रेडिट और बेसिक इनकम में क्या फ़र्क़ है?"
+        ]
+      ],
+      "logH": "अपडेट का रिकॉर्ड",
+      "updatedL": "आख़िरी अपडेट",
+      "wrpLink": "और भुगतान? जापान के सभी राष्ट्रीय भुगतान और सब्सिडी, नवंबर 2026",
+      "hhLink": "कब और कितना? 2026 में जापान के सभी राष्ट्रीय भुगतान और सब्सिडी",
+      "about": "कब और कितना: जापान के राष्ट्रीय नकद भुगतान, सहायता और सब्सिडी, लागू, संसद में, विचाराधीन, तय नहीं और समाप्त में बँटे, हर एक की रकम, किसे, कब, कैसे, स्रोत और जाँच की तारीख़ के साथ। नई जानकारी आने पर अपडेट।"
+    },
+    "es": {
+      "title": "Ayudas en efectivo en Japón, noviembre de 2026: ¿cuándo y cuánto? Todos los pagos y subsidios del Estado, decididos, en el Parlamento o sin decidir",
+      "short": "Ayudas de Japón en 2026",
+      "eb": "Resumen de ayudas",
+      "desc": "¿Cuándo y cuánto pagan las ayudas en Japón? No hay pago para todos decidido. El pago de alivio para trabajadores, descuentos de luz y gas y más, con fuentes.",
+      "asOf": "Información a 23 de noviembre de 2026 (todos los puntos comprobados el 23 de noviembre). Actualizamos la página cuando hay datos nuevos.",
+      "lead": [
+        "Para responder a «¿cuándo es el próximo pago?» y «¿hay un pago para todos?», esta página reúne los pagos en efectivo, ayudas y subsidios del Estado japonés, separados en decididos y en vigor, en un proyecto de ley ante el Parlamento, en estudio por el Gobierno, sin decidir y terminados. Cada punto da la cuantía, quién lo recibe, cuándo, cómo cobrarlo, sus fuentes y el día en que se comprobó.",
+        "En resumen: a noviembre de 2026 no se ha decidido ningún pago en efectivo igual para todos. Lo que está en vigor es un descuento en las facturas de electricidad y gas ciudad, un subsidio a la gasolina y otros combustibles y una rebaja del impuesto sobre la renta que se liquida en el ajuste de fin de año; los pagos en efectivo vienen sobre todo de cada municipio. El nuevo pago del Gobierno, el pago de alivio de cargas para trabajadores, está en un proyecto de ley que debate ahora la Cámara de Consejeros.[17][1][7]"
+      ],
+      "answerH": "La respuesta: ¿hay algún pago ahora?",
+      "answer": [
+        [
+          "¿Un pago para todos?",
+          "No. A 23 de noviembre de 2026 no se ha decidido ningún pago estatal en efectivo para todos los residentes. El pago de 20.000 yenes por persona prometido en 2025 se descartó en el acuerdo de coalición entre el PLD y Nippon Ishin no Kai del 20 de octubre de 2025, que dice que «no se llevará a cabo».[17]",
+          "none"
+        ],
+        [
+          "¿Qué está en vigor?",
+          "Un descuento en las facturas de electricidad y gas ciudad (desde el consumo de diciembre de 2026, sin solicitud), un subsidio a la gasolina, el gasóleo y otros combustibles y una rebaja del impuesto sobre la renta en el ajuste de fin de año de diciembre de 2026 (de 30.000 a 60.000 yenes por contribuyente, según la primera ministra). Los pagos en efectivo los hacen sobre todo los municipios con una subvención estatal.[11][12][13][19]",
+          "running"
+        ],
+        [
+          "¿El próximo pago estatal?",
+          "El pago de alivio de cargas para trabajadores. El proyecto está en la Cámara de Consejeros; si se aprueba, empieza en abril de 2027 y paga una vez al año en los años fiscales 2027 y 2028. El Gobierno estudia una base de hasta unos 25.000 yenes al año por persona.[1][3][7]",
+          "bill"
+        ],
+        [
+          "¿Hay que solicitarlo?",
+          "No para el descuento de luz y gas, el subsidio a los combustibles ni la rebaja fiscal de fin de año. Los pagos municipales suelen llegar sin solicitud a los hogares cuya cuenta ya conoce el ayuntamiento, y el resto debe pedirlos antes de un plazo (Yatsushiro, Kumamoto: matasellos del 28 de diciembre).[11][15][21]",
+          "running"
+        ]
+      ],
+      "legend": ": qué significan las etiquetas de esta página.",
+      "statusL": {
+        "running": "Decidido, en vigor",
+        "bill": "En un proyecto de ley",
+        "considering": "En estudio",
+        "reported": "Solo en la prensa",
+        "none": "Sin decidir / no previsto",
+        "ended": "Terminado"
+      },
+      "openH": "Lo que aún no está decidido",
+      "open": [
+        "Si se aprueba el proyecto del pago de alivio para trabajadores, y las cuantías y límites de ingresos definitivos (por decreto). El periodo de sesiones termina el 12 de diciembre.[7][9]",
+        "La ayuda para el consumo de luz y gas de marzo de 2027. La primera ministra dijo que el Gobierno «estudiará una respuesta tras observar bien la situación».[12]",
+        "Cuándo termina el subsidio a los combustibles. El precio de referencia sube por tramos desde diciembre, pero no hay fecha de fin.[12][13]",
+        "El diseño de un crédito fiscal reembolsable, que el Gobierno quiere introducir en el año fiscal 2029.[18]"
+      ],
+      "toc": "Índice",
+      "listH": "La lista: pagos, ayudas y subsidios del Estado",
+      "fieldL": {
+        "amount": "Cuánto",
+        "who": "Quién",
+        "when": "Cuándo",
+        "how": "Cómo se cobra",
+        "checked": "Comprobado",
+        "more": "Más detalle"
+      },
+      "items": [
+        {
+          "id": "wrp",
+          "name": "Pago de alivio de cargas para trabajadores",
+          "gist": "Dinero una vez al año para trabajadores con ingresos bajos y medios. El proyecto está en la Cámara de Consejeros; se estudian hasta unos 25.000 yenes al año por persona.",
+          "amount": "El Gobierno estudia una base de hasta unos 25.000 yenes al año por persona, más unos 5.000 yenes al año por cada hijo menor de 16 años (respuesta de la primera ministra del 13 de noviembre). Una pareja con dos hijos que cobre el máximo recibiría 60.000 yenes al año. Las cuantías se fijarán por decreto.[3][2][4]",
+          "who": "Quienes trabajaron y tuvieron ingresos el año anterior (cada persona cuenta por separado). La ministra de Finanzas dio como «imagen aproximada» unos 30 millones de personas con ingresos de 1 a 4,5 millones de yenes, y el 19 de noviembre dijo que se estudia un mínimo de unos 560.000 yenes de ingresos anuales.[5][6]",
+          "when": "Desde abril de 2027 si se aprueba el proyecto, en principio un pago en cada uno de los años fiscales 2027 y 2028. No hay fecha para el primer pago. El proyecto pasó la Cámara de Representantes el 6 de noviembre; la Cámara de Consejeros celebra una audiencia pública central el 24 de noviembre. El periodo de sesiones termina el 12 de diciembre.[1][7][8][9]",
+          "how": "Tu municipio te reconoce el derecho y te lo ingresa. Si tienes registrada una cuenta para cobros públicos, en principio no hace falta solicitarlo.[1]"
+        },
+        {
+          "id": "food",
+          "name": "Impuesto sobre el consumo del 1% en alimentos",
+          "gist": "Durante dos años desde abril de 2027, el impuesto sobre el consumo de los alimentos baja del 8% al 1%. En el mismo proyecto que el pago de alivio, ante el Parlamento.",
+          "amount": "Los alimentos y bebidas que hoy pagan el tipo reducido del 8% pasarían al 1%. Si los precios bajan exactamente lo que cambia el tipo, un producto de 108 yenes con impuestos pasa a 101 yenes. El alcohol y la comida en restaurantes siguen al 10%.[1][10]",
+          "who": "Todo el que compra alimentos (es una rebaja del tipo, no un pago).",
+          "when": "Del 1 de abril de 2027 al 31 de marzo de 2029, si se aprueba el proyecto.[1]",
+          "how": "No hay que hacer nada. Cuánto bajen de verdad los precios depende de las tiendas."
+        },
+        {
+          "id": "energy",
+          "name": "Ayuda en las facturas de luz y gas",
+          "gist": "Descuento en la electricidad y el gas ciudad consumidos de diciembre de 2026 a febrero de 2027. Sin solicitud.",
+          "amount": "Electricidad de baja tensión (hogares): 1,0 yenes por kWh en el consumo de diciembre y 4,5 yenes en enero y febrero. Alta tensión: 0,5 y 2,3 yenes. Gas ciudad: 4,0 y 18,0 yenes por m³. La primera ministra cifró el ahorro de un hogar tipo en unos 7.000 yenes en los tres meses.[11][12]",
+          "who": "Hogares y empresas que usan electricidad y gas ciudad (para el gas, contratos anuales de menos de 10 millones de m³). El gas licuado (propano) no está incluido.[11]",
+          "when": "Del consumo de diciembre de 2026 al de febrero de 2027. «Consumo de diciembre» es, en principio, el que hay entre las lecturas del contador de diciembre y de enero. Marzo no está decidido.[11][12]",
+          "how": "Sin solicitud. Las compañías de luz y gas descuentan la ayuda de cada factura mensual. Cuesta unos 521.900 millones de yenes del fondo de reserva (decisión del Gobierno del 13 de noviembre).[11][25]"
+        },
+        {
+          "id": "fuel",
+          "name": "Subsidio a la gasolina y el gasóleo",
+          "gist": "El tipo provisional del impuesto sobre la gasolina se suprimió a finales de 2025. Ahora hay un subsidio de 29,6 yenes por litro, que se reduce por tramos desde diciembre.",
+          "amount": "Desde el 19 de noviembre el subsidio es de 29,6 yenes por litro para la gasolina, el gasóleo, el queroseno y el fuelóleo, y de 23,6 yenes para el combustible de aviación. Aparte, el tipo provisional del impuesto sobre la gasolina (25,1 yenes por litro) se suprimió el 31 de diciembre de 2025.[13][14]",
+          "who": "Todo el que compra combustible. No es un pago en efectivo: el subsidio va a los mayoristas de petróleo para contener los precios en el surtidor.[13]",
+          "when": "La medida actual empezó el 19 de marzo de 2026. Desde diciembre el subsidio se reducirá, con el plan básico de subir el precio de referencia 5 yenes al mes hasta la primavera. No hay fecha de fin.[12][13]",
+          "how": "No hay que hacer nada."
+        },
+        {
+          "id": "incometax",
+          "name": "Rebaja del impuesto sobre la renta (ajuste de fin de año)",
+          "gist": "Una deducción básica más alta y otros cambios, liquidados en el ajuste de fin de año de diciembre de 2026. De 30.000 a 60.000 yenes por contribuyente, según la primera ministra.",
+          "amount": "La primera ministra la describió como una rebaja del impuesto sobre la renta de 30.000 a 60.000 yenes por contribuyente. Viene de una deducción básica más alta, un mínimo más alto en la deducción por rendimientos del trabajo y otros cambios; la cantidad real depende de los ingresos y la familia.[12][15]",
+          "who": "Quienes pagan el impuesto sobre la renta.",
+          "when": "Los cambios entran en vigor el 1 de diciembre de 2026 y se aplican al impuesto de 2026. Los asalariados la reciben de una vez en el ajuste de fin de año de diciembre de 2026; la retención mensual hasta noviembre no cambia.[15]",
+          "how": "Los asalariados, en el ajuste de fin de año de su empresa; quienes hacen la declaración, en la de 2026.[15]"
+        },
+        {
+          "id": "kosodate",
+          "name": "Ayuda por crianza ante la subida de precios (20.000 yenes por hijo)",
+          "gist": "20.000 yenes por hijo, una vez. Unos 17,827 millones de niños cobrados a finales de marzo de 2026; el centro de atención estatal cerró en julio.",
+          "amount": "20.000 yenes por hijo, una sola vez. Sin límite de ingresos y sin impuestos.[16]",
+          "who": "Quienes cobran el subsidio por hijos, por los niños nacidos entre el 2 de abril de 2007 y el 31 de marzo de 2026 (de recién nacidos a edad de bachillerato).[16]",
+          "when": "A finales de marzo de 2026 se había pagado a unos 17,827 millones de niños, unos 356.530 millones de yenes (cifras en revisión). El presupuesto era de 367.700 millones de yenes. El centro de atención estatal cerró el 31 de julio de 2026. Los plazos los fijó cada municipio.[16]",
+          "how": "En principio se ingresó sin solicitud en la cuenta del subsidio por hijos. Los niños nacidos desde octubre de 2025, los hijos de funcionarios y algunos casos más necesitaban solicitud.[16]"
+        },
+        {
+          "id": "uniform",
+          "name": "Un pago en efectivo igual para todos (20.000, 100.000 yenes u otro)",
+          "gist": "Sin decidir. El plan de 2025 de 20.000 yenes por persona se descartó, y el Gobierno no ha propuesto ningún otro pago para todos.",
+          "amount": "Ninguno. El pago prometido en 2025, 20.000 yenes por persona (40.000 para niños y para adultos de hogares exentos del impuesto de residentes), se descartó en el acuerdo de coalición PLD–Ishin del 20 de octubre de 2025.[17]",
+          "who": "Nadie (no existe tal ayuda). La última vez que todos recibieron 100.000 yenes fue el Pago Especial en Efectivo de 2020: {¿adónde fueron esos 100.000 yenes?|/essays/japan-special-cash-payment/}",
+          "when": "A 23 de noviembre de 2026 el Gobierno no ha decidido ni propuesto un pago en efectivo de la misma cuantía para todos. Su política básica del 5 de agosto de 2026 describe el nuevo pago como ligado a los ingresos, a diferencia de los pagos fijos de paquetes económicos anteriores.[18]",
+          "how": "Ninguno. Trata como probable estafa las llamadas, correos o mensajes sobre «solicitar el pago para todos» (ver «Cuidado con las estafas» abajo)."
+        },
+        {
+          "id": "lowincome",
+          "name": "Pago estatal a hogares con ingresos bajos y exentos del impuesto de residentes",
+          "gist": "En 2026 no hay un pago estatal en efectivo por hogar. La ayuda pasa por los municipios.",
+          "amount": "Los documentos del Gobierno consultados para esta página no recogen ningún pago estatal en efectivo a los hogares exentos del impuesto de residentes en 2026. En su lugar, el Gobierno ha ampliado su subvención a los gobiernos locales: el 13 de noviembre añadió 130.000 millones de yenes del fondo de reserva y recomienda en especial usarlos en ayudas de electricidad, gas (incluido el licuado) y queroseno para hogares con ingresos bajos y de mayores.[19][20][25]",
+          "who": "Cada municipio decide quién recibe qué.",
+          "when": "Cuando el municipio use la subvención. Las asignaciones decididas en diciembre de 2026 se limitan a ayudas para usuarios de muy alta tensión, gas licuado y queroseno.[20]",
+          "how": "Consulta la web o el boletín de tu municipio."
+        },
+        {
+          "id": "grant",
+          "name": "Subvención regional prioritaria (el dinero de los pagos locales)",
+          "gist": "Dinero del Estado a los gobiernos locales, que lo usan en pagos en efectivo, vales, vales de arroz y más. 2,0377 billones de yenes en el presupuesto suplementario de 2025.",
+          "amount": "Su nombre completo es Subvención Regional Prioritaria ante la Subida de Precios. 2,0377 billones de yenes en el presupuesto suplementario del año fiscal 2025 (de ellos 2,0 billones para el menú recomendado, con un añadido especial de 0,4 billones por los precios de los alimentos), 100.000 millones en el suplementario de 2026 y 130.000 millones del fondo de reserva el 13 de noviembre.[19]",
+          "who": "La reciben prefecturas y municipios; cada uno decide quién de sus vecinos recibe qué.[19]",
+          "when": "Los gobiernos locales han ido gastando el dinero del suplementario de 2025.[19]",
+          "how": "Unos municipios pagan de oficio y otros piden solicitud. Ver «Pagos de tu municipio» abajo."
+        },
+        {
+          "id": "credit",
+          "name": "Crédito fiscal reembolsable",
+          "gist": "En diseño, con su implantación completa prevista para el año fiscal 2029. Hasta entonces, el pago de alivio y el impuesto del 1% en alimentos hacen de puente.",
+          "amount": "Sin decidir.[18]",
+          "who": "Sin decidir. Se diseña como una prestación ligada a los ingresos.[18]",
+          "when": "El objetivo es el año fiscal 2029 (política básica del 5 de agosto de 2026). El pago de alivio para trabajadores es el puente hasta entonces y se presenta como el primer paso hacia un crédito fiscal reembolsable completo.[18]",
+          "how": "Sin decidir. Ver también {créditos fiscales reembolsables frente a renta básica|/essays/refundable-tax-credit-vs-basic-income/}."
+        }
+      ],
+      "localH": "Pagos de tu municipio",
+      "local": [
+        "Además de las ayudas estatales, muchos municipios pagan las suyas con la subvención estatal de arriba. Cuantías, requisitos y plazos cambian de un sitio a otro, así que consulta la web o el boletín de tu municipio. Dos ejemplos confirmados en las webs de las propias ciudades:[19]",
+        [
+          "Yatsushiro (Kumamoto): 10.000 yenes por persona para los empadronados el 1 de enero de 2026. Los hogares cuya cuenta conocía la ciudad cobraron sin solicitud a principios de julio; el resto debe solicitarlo. Por el terremoto de Kumamoto el plazo pasó del 30 de septiembre al 28 de diciembre (matasellos). Se paga con la subvención regional prioritaria del Estado.[21]",
+          "Kuwana (Mie): 5.000 yenes por persona para los empadronados el 1 de marzo de 2026 nacidos el 1 de abril de 2007 o antes (19 años o más). Solo se aceptan ya solicitudes por transferencia, con matasellos hasta el 31 de diciembre. La página de la ciudad no indica la fuente de financiación.[22]"
+        ],
+        "Son solo ejemplos. Ambos se comprobaron en las webs de las ciudades el 23 de noviembre de 2026."
+      ],
+      "scamH": "Cuidado con las estafas",
+      "scam": [
+        "Ni los municipios ni el Estado te pedirán nunca que uses un cajero automático ni que pagues una comisión para cobrar una ayuda (folleto del Ministerio del Interior, la Agencia de Consumo y la Agencia Nacional de Policía).[23]",
+        "«Para recibir la ayuda, pague primero tantos yenes» es una estafa típica (Agencia de Consumo, 11 de septiembre de 2025). Si necesitas ayuda, llama a la línea de consumo 188 o a la línea de consultas de la policía #9110.[24]",
+        "El descuento de luz y gas no requiere solicitud, y la Agencia de Recursos Naturales y Energía dice que nunca pide datos personales ni comisiones. Se han dado llamadas y correos falsos en su nombre.[11]"
+      ],
+      "timelineH": "Cronología y próximas fechas",
+      "timeline": [
+        [
+          "2025-10-20",
+          "20 de octubre de 2025",
+          "El acuerdo de coalición PLD–Ishin descarta el pago de 20.000 yenes por persona (40.000 para niños y adultos de hogares exentos).[17]",
+          "none"
+        ],
+        [
+          "2025-12-31",
+          "31 de diciembre de 2025",
+          "Se suprime el tipo provisional del impuesto sobre la gasolina (25,1 yenes por litro).[14]",
+          "running"
+        ],
+        [
+          "2026-03-19",
+          "19 de marzo de 2026",
+          "Empieza el subsidio a la gasolina y el gasóleo (medida de emergencia).[13]",
+          "running"
+        ],
+        [
+          "2026-07-31",
+          "31 de julio de 2026",
+          "Cierra el centro de atención estatal de la ayuda por crianza.[16]",
+          "ended"
+        ],
+        [
+          "2026-08-05",
+          "5 de agosto de 2026",
+          "Política básica: crédito fiscal reembolsable previsto para el año fiscal 2029, con el pago de alivio y el impuesto del 1% en alimentos como puente.[18]",
+          "considering"
+        ],
+        [
+          "2026-10-29",
+          "29 de octubre de 2026",
+          "La primera ministra anuncia la ayuda de luz y gas de diciembre a febrero y un recorte gradual del subsidio a los combustibles desde diciembre.[12]",
+          "running"
+        ],
+        [
+          "2026-11-06",
+          "6 de noviembre de 2026",
+          "El proyecto del pago de alivio y del impuesto del 1% en alimentos pasa la Cámara de Representantes.[7]",
+          "bill"
+        ],
+        [
+          "2026-11-13",
+          "13 de noviembre de 2026",
+          "El Gobierno decide usar el fondo de reserva: unos 521.900 millones de yenes para la ayuda de luz y gas y 130.000 millones para la subvención regional prioritaria.[25]",
+          "running"
+        ],
+        [
+          "2026-11-19",
+          "19 de noviembre de 2026",
+          "La ministra de Finanzas dice que se estudia un mínimo de unos 560.000 yenes de ingresos anuales para el pago de alivio.[6]",
+          "considering"
+        ],
+        [
+          "2026-11-24",
+          "24 de noviembre de 2026",
+          "La comisión especial de la cámara alta celebra una audiencia pública central.[8]",
+          "bill"
+        ],
+        [
+          "2026-12",
+          "Diciembre de 2026",
+          "Empieza el descuento de luz y gas con el consumo de diciembre. La rebaja del impuesto sobre la renta se liquida en el ajuste de fin de año.[11][15]",
+          "running"
+        ],
+        [
+          "2026-12-12",
+          "12 de diciembre de 2026",
+          "Termina el periodo de sesiones. No se sabe si el proyecto se aprobará antes.[9]",
+          "none"
+        ],
+        [
+          "2026-12-28",
+          "28 de diciembre de 2026",
+          "Fin del plazo de los 10.000 yenes por persona de Yatsushiro (matasellos).[21]",
+          "running"
+        ],
+        [
+          "2027-03",
+          "Marzo de 2027",
+          "Ayuda de luz y gas para el consumo de marzo: la primera ministra dijo que se estudiará.[12]",
+          "considering"
+        ],
+        [
+          "2027-04",
+          "Abril de 2027",
+          "Empiezan el impuesto del 1% en alimentos y el pago de alivio, si se aprueba el proyecto.[1]",
+          "bill"
+        ]
+      ],
+      "faqH": "Preguntas frecuentes",
+      "faq": [
+        [
+          "¿Hay un pago para todos en 2026?",
+          "No. A 23 de noviembre de 2026 no se ha decidido ningún pago estatal en efectivo para todos los residentes. El plan de 2025 de 20.000 yenes por persona se descartó en el acuerdo de coalición del 20 de octubre de 2025.[17]"
+        ],
+        [
+          "¿Cuándo se cobran las ayudas?",
+          "El nuevo pago del Gobierno, el pago de alivio para trabajadores, empieza en abril de 2027 si se aprueba el proyecto y se cobra una vez al año en 2027 y 2028; la fecha del primer pago no está fijada. Los pagos en efectivo que se pueden cobrar ahora son los de los municipios.[1][21]"
+        ],
+        [
+          "¿Cuánto es el pago de alivio para trabajadores?",
+          "El Gobierno estudia hasta unos 25.000 yenes al año por persona más unos 5.000 yenes al año por hijo menor de 16 años. Las cuantías se fijarán por decreto. Detalles en {nuestra página sobre el pago de alivio|/guides/worker-relief-payment/}.[3][2]"
+        ],
+        [
+          "¿Hay un pago para los hogares exentos del impuesto de residentes?",
+          "En 2026 no hay un pago estatal en efectivo a los hogares exentos. El Gobierno ha ampliado su subvención a los gobiernos locales, así que mira qué ofrece tu municipio.[19][20]"
+        ],
+        [
+          "¿Cuándo empieza la ayuda de luz y gas y cuánto es?",
+          "Cubre el consumo de diciembre de 2026 a febrero de 2027: electricidad doméstica 1,0 yenes por kWh en diciembre y 4,5 en enero y febrero; gas ciudad 4,0 y 18,0 yenes por m³. No hay que solicitarla.[11]"
+        ],
+        [
+          "¿Todavía puedo cobrar la ayuda por crianza de 20.000 yenes?",
+          "La mayor parte se pagó antes de finales de marzo de 2026 y el centro de atención estatal cerró el 31 de julio. Los plazos los fijó cada municipio, así que si no la cobraste, pregunta en el tuyo.[16]"
+        ],
+        [
+          "¿De cuánto es la rebaja fiscal de fin de año?",
+          "La primera ministra la describió como de 30.000 a 60.000 yenes de impuesto sobre la renta por contribuyente. Los asalariados la reciben en el ajuste de fin de año de diciembre de 2026.[12][15]"
+        ],
+        [
+          "¿Cómo reconocer una estafa con ayudas?",
+          "Ni el Estado ni los municipios piden nunca usar un cajero ni pagar comisiones. Toma por estafa cualquier petición de dinero y llama al 188 o al #9110.[23][24]"
+        ]
+      ],
+      "relatedH": "Páginas relacionadas",
+      "related": [
+        [
+          "/calc/household/?s=jb",
+          "Calculadora para tu hogar: ¿cómo cambiaría una renta básica el presupuesto de tu hogar?"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=jb",
+          "Calculadora de renta básica: ¿cuánto costaría dar 10.000 yenes al mes a todo el mundo en Japón?"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "¿Adónde fue el pago de 100.000 yenes de Japón en 2020?"
+        ],
+        [
+          "/essays/refundable-tax-credit-vs-basic-income/",
+          "Créditos fiscales reembolsables frente a renta básica"
+        ]
+      ],
+      "logH": "Registro de cambios",
+      "updatedL": "Última actualización",
+      "wrpLink": "¿Otras ayudas? Todos los pagos y subsidios del Estado en Japón, noviembre de 2026",
+      "hhLink": "¿Cuándo y cuánto? Todos los pagos y subsidios del Estado en Japón en 2026",
+      "about": "Cuándo y cuánto: los pagos en efectivo, ayudas y subsidios del Estado japonés, separados en en vigor, en el Parlamento, en estudio, sin decidir y terminados, cada uno con cuantía, quién, cuándo, cómo, fuentes y fecha de comprobación. Se actualiza con cada dato nuevo."
+    },
+    "de": {
+      "title": "Geldleistungen in Japan, November 2026: wann und wie viel? Alle staatlichen Zahlungen und Zuschüsse, beschlossen, im Parlament oder offen",
+      "short": "Japans Leistungen 2026",
+      "eb": "Leistungen im Überblick",
+      "desc": "Wann und wie viel zahlt Japans Staat? Keine Zahlung für alle beschlossen. Entlastungszahlung für Erwerbstätige, Strom- und Gasrabatt und mehr, mit Quellen.",
+      "asOf": "Stand: 23. November 2026 (alle Punkte am 23. November geprüft). Wir aktualisieren die Seite, sobald es Neues gibt.",
+      "lead": [
+        "Um die Fragen „Wann kommt die nächste Zahlung?“ und „Gibt es eine Zahlung für alle?“ zu beantworten, listet diese Seite Japans staatliche Geldleistungen, Hilfszahlungen und Zuschüsse auf, getrennt nach beschlossen und laufend, als Gesetzentwurf im Parlament, von der Regierung geprüft, offen und beendet. Zu jedem Punkt stehen Betrag, Berechtigte, Zeitpunkt, Weg der Auszahlung, Quellen und Prüfdatum.",
+        "Kurz gesagt: Stand November 2026 ist keine einheitliche Geldzahlung an alle beschlossen. Laufend sind ein Rabatt auf Strom- und Stadtgasrechnungen, ein Zuschuss auf Benzin und andere Kraftstoffe und eine Senkung der Einkommensteuer, die im Lohnsteuer-Jahresausgleich verrechnet wird; Geld zahlen vor allem einzelne Gemeinden aus. Die neue Geldleistung der Regierung, die Entlastungszahlung für Erwerbstätige, steckt in einem Gesetzentwurf, den das Oberhaus gerade berät.[17][1][7]"
+      ],
+      "answerH": "Die Antwort: Gibt es jetzt eine Zahlung?",
+      "answer": [
+        [
+          "Eine Zahlung für alle?",
+          "Nein. Stand 23. November 2026 ist keine staatliche Geldzahlung an alle Einwohner beschlossen. Die 2025 versprochene Zahlung von 20.000 Yen pro Person wurde im Koalitionsvertrag von LDP und Nippon Ishin no Kai vom 20. Oktober 2025 gestrichen: Sie „wird nicht durchgeführt“.[17]",
+          "none"
+        ],
+        [
+          "Was läuft gerade?",
+          "Ein Rabatt auf Strom- und Stadtgasrechnungen (ab dem Verbrauch im Dezember 2026, ohne Antrag), ein Zuschuss auf Benzin, Diesel und andere Kraftstoffe und eine Einkommensteuersenkung im Jahresausgleich im Dezember 2026 (laut Premierministerin 30.000 bis 60.000 Yen pro Steuerzahler). Geld zahlen vor allem die Gemeinden aus einem staatlichen Zuschuss.[11][12][13][19]",
+          "running"
+        ],
+        [
+          "Die nächste staatliche Zahlung?",
+          "Die Entlastungszahlung für Erwerbstätige. Der Gesetzentwurf liegt im Oberhaus; wird er verabschiedet, startet sie im April 2027 und zahlt in den Fiskaljahren 2027 und 2028 je einmal. Die Regierung prüft als Grundbetrag bis zu etwa 25.000 Yen pro Person und Jahr.[1][3][7]",
+          "bill"
+        ],
+        [
+          "Muss ich einen Antrag stellen?",
+          "Nicht für den Strom- und Gasrabatt, den Kraftstoffzuschuss oder die Steuersenkung im Jahresausgleich. Gemeinden zahlen oft ohne Antrag an Haushalte, deren Konto sie kennen; die übrigen müssen fristgerecht beantragen (Yatsushiro, Kumamoto: Poststempel bis 28. Dezember).[11][15][21]",
+          "running"
+        ]
+      ],
+      "legend": ": was die Markierungen auf dieser Seite bedeuten.",
+      "statusL": {
+        "running": "Beschlossen, läuft",
+        "bill": "Gesetzentwurf im Parlament",
+        "considering": "In Prüfung",
+        "reported": "Nur gemeldet",
+        "none": "Offen / nicht geplant",
+        "ended": "Beendet"
+      },
+      "openH": "Noch nicht entschieden",
+      "open": [
+        "Ob der Gesetzentwurf zur Entlastungszahlung verabschiedet wird, und die endgültigen Beträge und Einkommensgrenzen (per Kabinettsverordnung). Die Sitzungsperiode endet am 12. Dezember.[7][9]",
+        "Hilfe für den Strom- und Gasverbrauch im März 2027. Die Premierministerin sagte, man werde „nach genauer Betrachtung der Lage über eine Antwort beraten“.[12]",
+        "Wann der Kraftstoffzuschuss endet. Ab Dezember steigt der Referenzpreis schrittweise, ein Enddatum gibt es nicht.[12][13]",
+        "Die Ausgestaltung einer erstattungsfähigen Steuergutschrift, die die Regierung im Fiskaljahr 2029 einführen will.[18]"
+      ],
+      "toc": "Inhalt",
+      "listH": "Die Liste: staatliche Zahlungen, Hilfen und Zuschüsse",
+      "fieldL": {
+        "amount": "Wie viel",
+        "who": "Wer",
+        "when": "Wann",
+        "how": "Wie man sie erhält",
+        "checked": "Geprüft",
+        "more": "Mehr dazu"
+      },
+      "items": [
+        {
+          "id": "wrp",
+          "name": "Entlastungszahlung für Erwerbstätige",
+          "gist": "Einmal im Jahr Geld für Erwerbstätige mit niedrigem und mittlerem Einkommen. Der Entwurf liegt im Oberhaus; geprüft werden bis zu etwa 25.000 Yen pro Person und Jahr.",
+          "amount": "Die Regierung prüft einen Grundbetrag von höchstens etwa 25.000 Yen pro Person und Jahr, dazu etwa 5.000 Yen im Jahr für jedes Kind unter 16 (Antwort der Premierministerin vom 13. November). Ein Paar mit zwei Kindern, das den vollen Betrag erhält, bekäme 60.000 Yen im Jahr. Die Beträge werden per Kabinettsverordnung festgelegt.[3][2][4]",
+          "who": "Wer im Vorjahr gearbeitet und Einkommen erzielt hat (jede Person für sich). Die Finanzministerin nannte etwa 30 Millionen Menschen mit Einkommen von 1 Million bis 4,5 Millionen Yen als „grobes Bild“ und sagte am 19. November, eine Untergrenze von etwa 560.000 Yen Jahreseinkommen werde geprüft.[5][6]",
+          "when": "Ab April 2027, wenn der Entwurf verabschiedet wird, grundsätzlich je eine Zahlung in den Fiskaljahren 2027 und 2028. Ein Termin für die erste Zahlung steht nicht fest. Das Unterhaus stimmte am 6. November zu; das Oberhaus hält am 24. November eine zentrale öffentliche Anhörung ab. Die Sitzungsperiode endet am 12. Dezember.[1][7][8][9]",
+          "how": "Die Wohngemeinde stellt die Berechtigung fest und überweist. Wer ein Konto für öffentliche Zahlungen registriert hat, muss grundsätzlich keinen Antrag stellen.[1]"
+        },
+        {
+          "id": "food",
+          "name": "1 % Verbrauchsteuer auf Lebensmittel",
+          "gist": "Zwei Jahre ab April 2027 sinkt die Verbrauchsteuer auf Lebensmittel von 8 % auf 1 %. Im selben Gesetzentwurf wie die Entlastungszahlung, im Parlament.",
+          "amount": "Lebensmittel und Getränke, für die heute der ermäßigte Satz von 8 % gilt, würden mit 1 % besteuert. Sinken die Preise genau um die Änderung des Satzes, kostet ein Artikel für 108 Yen inklusive Steuer dann 101 Yen. Alkohol und Restaurantbesuche bleiben bei 10 %.[1][10]",
+          "who": "Alle, die Lebensmittel kaufen (eine Senkung des Steuersatzes, keine Zahlung).",
+          "when": "1. April 2027 bis 31. März 2029, wenn der Entwurf verabschiedet wird.[1]",
+          "how": "Nichts zu tun. Wie stark die Preise tatsächlich sinken, hängt von den Geschäften ab."
+        },
+        {
+          "id": "energy",
+          "name": "Hilfe bei Strom- und Gasrechnungen",
+          "gist": "Rabatt auf Strom und Stadtgas, verbraucht von Dezember 2026 bis Februar 2027. Ohne Antrag.",
+          "amount": "Niederspannungsstrom (Haushalte): 1,0 Yen pro kWh für den Verbrauch im Dezember, 4,5 Yen für Januar und Februar. Hochspannung: 0,5 und 2,3 Yen. Stadtgas: 4,0 und 18,0 Yen pro m³. Die Premierministerin bezifferte die Ersparnis eines Standardhaushalts auf etwa 7.000 Yen in den drei Monaten.[11][12]",
+          "who": "Haushalte und Unternehmen mit Strom und Stadtgas (beim Gas Jahresverträge unter 10 Millionen m³). Flüssiggas (Propan) ist nicht erfasst.[11]",
+          "when": "Verbrauch Dezember 2026 bis Februar 2027. „Verbrauch im Dezember“ ist grundsätzlich der Verbrauch zwischen der Zählerablesung im Dezember und der im Januar. Der März ist nicht entschieden.[11][12]",
+          "how": "Kein Antrag. Die Strom- und Gasversorger ziehen den Rabatt von jeder Monatsrechnung ab. Kosten: etwa 521,9 Milliarden Yen aus der Reserve (Kabinettsbeschluss vom 13. November).[11][25]"
+        },
+        {
+          "id": "fuel",
+          "name": "Zuschuss auf Benzin und Diesel",
+          "gist": "Der vorläufige Benzinsteuersatz wurde Ende 2025 abgeschafft. Jetzt gibt es 29,6 Yen Zuschuss pro Liter, ab Dezember schrittweise weniger.",
+          "amount": "Seit dem 19. November beträgt der Zuschuss 29,6 Yen pro Liter für Benzin, Diesel, Kerosin und Schweröl und 23,6 Yen für Flugtreibstoff. Unabhängig davon wurde der vorläufige Benzinsteuersatz (25,1 Yen pro Liter) am 31. Dezember 2025 abgeschafft.[13][14]",
+          "who": "Alle, die Kraftstoff kaufen. Es ist keine Geldzahlung: Der Zuschuss geht an Ölgroßhändler, um die Preise an der Zapfsäule zu dämpfen.[13]",
+          "when": "Die jetzige Maßnahme begann am 19. März 2026. Ab Dezember sinkt der Zuschuss; der Grundplan ist, den Referenzpreis bis zum Frühjahr um 5 Yen pro Monat anzuheben. Ein Enddatum gibt es nicht.[12][13]",
+          "how": "Nichts zu tun."
+        },
+        {
+          "id": "incometax",
+          "name": "Einkommensteuersenkung (Jahresausgleich)",
+          "gist": "Ein höherer Grundfreibetrag und weitere Änderungen, verrechnet im Jahresausgleich im Dezember 2026. Laut Premierministerin 30.000 bis 60.000 Yen pro Steuerzahler.",
+          "amount": "Die Premierministerin beschrieb sie als Senkung der Einkommensteuer um 30.000 bis 60.000 Yen pro Steuerzahler. Sie ergibt sich aus einem höheren Grundfreibetrag, einem höheren Mindestabzug für Arbeitseinkommen und weiteren Änderungen; der tatsächliche Betrag hängt von Einkommen und Familie ab.[12][15]",
+          "who": "Wer Einkommensteuer zahlt.",
+          "when": "Die Änderungen gelten ab 1. Dezember 2026 für die Einkommensteuer 2026. Angestellte erhalten sie auf einmal im Jahresausgleich im Dezember 2026; der monatliche Lohnsteuerabzug bis November ändert sich nicht.[15]",
+          "how": "Angestellte über den Jahresausgleich des Arbeitgebers, wer eine Steuererklärung abgibt, in der Erklärung für 2026.[15]"
+        },
+        {
+          "id": "kosodate",
+          "name": "Kinderzuschlag gegen hohe Preise (20.000 Yen pro Kind)",
+          "gist": "20.000 Yen pro Kind, einmalig. Bis Ende März 2026 für etwa 17,827 Millionen Kinder gezahlt; die staatliche Hotline schloss im Juli.",
+          "amount": "20.000 Yen pro Kind, einmal. Keine Einkommensgrenze, steuerfrei.[16]",
+          "who": "Bezieher des Kindergeldes, für Kinder, die zwischen dem 2. April 2007 und dem 31. März 2026 geboren sind (vom Säugling bis zum Oberschulalter).[16]",
+          "when": "Bis Ende März 2026 wurden etwa 17,827 Millionen Kinder bezahlt, etwa 356,53 Milliarden Yen (Zahlen in Prüfung). Das Budget betrug 367,7 Milliarden Yen. Die staatliche Hotline schloss am 31. Juli 2026. Fristen legte jede Gemeinde fest.[16]",
+          "how": "Grundsätzlich ohne Antrag auf das Kindergeldkonto. Für Kinder, die ab Oktober 2025 geboren wurden, für Kinder von Beamten und in einigen weiteren Fällen war ein Antrag nötig.[16]"
+        },
+        {
+          "id": "uniform",
+          "name": "Eine einheitliche Geldzahlung an alle (20.000 Yen, 100.000 Yen o. Ä.)",
+          "gist": "Nicht beschlossen. Der Plan von 2025 mit 20.000 Yen pro Person wurde gestrichen, und die Regierung hat keine andere Zahlung für alle vorgeschlagen.",
+          "amount": "Keine. Die 2025 versprochene Zahlung von 20.000 Yen pro Person (40.000 Yen für Kinder und für Erwachsene in von der Einwohnersteuer befreiten Haushalten) wurde im Koalitionsvertrag von LDP und Ishin vom 20. Oktober 2025 gestrichen.[17]",
+          "who": "Niemand (es gibt keine solche Leistung). Zuletzt bekamen alle 100.000 Yen mit der Sonderzahlung von 2020: {wohin gingen diese 100.000 Yen?|/essays/japan-special-cash-payment/}",
+          "when": "Stand 23. November 2026 hat die Regierung keine Geldzahlung in gleicher Höhe für alle beschlossen oder vorgeschlagen. Ihre Grundsatzpolitik vom 5. August 2026 beschreibt die neue Zahlung als einkommensabhängig, anders als die Pauschalzahlungen früherer Konjunkturpakete.[18]",
+          "how": "Keine. Anrufe, E-Mails oder SMS zum „Antrag auf die Zahlung für alle“ sind sehr wahrscheinlich Betrug (siehe „Vorsicht vor Betrug“ unten)."
+        },
+        {
+          "id": "lowincome",
+          "name": "Staatliche Zahlung an einkommensschwache und von der Einwohnersteuer befreite Haushalte",
+          "gist": "2026 gibt es keine staatliche Geldzahlung pro Haushalt. Die Hilfe läuft über die Gemeinden.",
+          "amount": "Die für diese Seite geprüften Regierungsdokumente enthalten für 2026 keine staatliche Geldzahlung an von der Einwohnersteuer befreite Haushalte. Stattdessen hat die Regierung ihren Zuschuss an die Kommunen aufgestockt: Am 13. November kamen 130 Milliarden Yen aus der Reserve hinzu, mit der besonderen Empfehlung, sie für Strom-, Gas- (auch Flüssiggas-) und Kerosinhilfen für einkommensschwache und ältere Haushalte einzusetzen.[19][20][25]",
+          "who": "Jede Gemeinde entscheidet, wer was bekommt.",
+          "when": "Je nachdem, wann die Gemeinde den Zuschuss einsetzt. Im Dezember 2026 bewilligte Mittel sind auf Hilfen für Nutzer von Höchstspannungsstrom, Flüssiggas und Kerosin beschränkt.[20]",
+          "how": "Website oder Amtsblatt der eigenen Gemeinde prüfen."
+        },
+        {
+          "id": "grant",
+          "name": "Regionaler Schwerpunktzuschuss (das Geld hinter kommunalen Zahlungen)",
+          "gist": "Geld vom Staat an die Kommunen, die es für Geldzahlungen, Gutscheine, Reisgutscheine und mehr nutzen. 2,0377 Billionen Yen im Nachtragshaushalt 2025.",
+          "amount": "Der volle Name lautet Regionaler Schwerpunktzuschuss gegen Preissteigerungen. 2,0377 Billionen Yen im Nachtragshaushalt des Fiskaljahres 2025 (davon 2,0 Billionen für die empfohlenen Maßnahmen, darunter 0,4 Billionen als Sonderzuschlag für Lebensmittelpreise), 100 Milliarden Yen im Nachtragshaushalt 2026 und 130 Milliarden Yen aus der Reserve am 13. November.[19]",
+          "who": "Präfekturen und Gemeinden erhalten ihn; jede entscheidet, wer von ihren Einwohnern was bekommt.[19]",
+          "when": "Die Kommunen setzen das Geld aus dem Nachtragshaushalt 2025 nach und nach ein.[19]",
+          "how": "Manche Gemeinden zahlen automatisch, bei anderen ist ein Antrag nötig. Siehe „Zahlungen Ihrer Gemeinde“ unten."
+        },
+        {
+          "id": "credit",
+          "name": "Erstattungsfähige Steuergutschrift",
+          "gist": "In Planung, volle Einführung für das Fiskaljahr 2029 angestrebt. Bis dahin sind die Entlastungszahlung und die 1 % Steuer auf Lebensmittel die Brücke.",
+          "amount": "Nicht entschieden.[18]",
+          "who": "Nicht entschieden. Sie wird als einkommensabhängige Leistung geplant.[18]",
+          "when": "Ziel ist das Fiskaljahr 2029 (Grundsatzpolitik vom 5. August 2026). Die Entlastungszahlung für Erwerbstätige ist die Brücke bis dahin und gilt als erster Schritt zu einer vollen erstattungsfähigen Steuergutschrift.[18]",
+          "how": "Nicht entschieden. Siehe auch {Steuergutschrift oder Grundeinkommen?|/essays/refundable-tax-credit-vs-basic-income/}"
+        }
+      ],
+      "localH": "Zahlungen Ihrer Gemeinde",
+      "local": [
+        "Neben den staatlichen Leistungen zahlen viele Gemeinden eigene Leistungen mit dem staatlichen Zuschuss oben. Beträge, Berechtigte und Fristen unterscheiden sich von Ort zu Ort, prüfen Sie also Website oder Amtsblatt Ihrer Gemeinde. Zwei Beispiele, bestätigt auf den Websites der Städte selbst:[19]",
+        [
+          "Yatsushiro (Kumamoto): 10.000 Yen pro Person für Einwohner, die am 1. Januar 2026 gemeldet waren. Haushalte, deren Konto die Stadt kannte, wurden Anfang Juli ohne Antrag bezahlt; alle anderen müssen beantragen. Wegen des Kumamoto-Erdbebens wurde die Frist vom 30. September auf den 28. Dezember (Poststempel) verlängert. Bezahlt wird aus dem staatlichen regionalen Schwerpunktzuschuss.[21]",
+          "Kuwana (Mie): 5.000 Yen pro Person für Einwohner, die am 1. März 2026 gemeldet und am oder vor dem 1. April 2007 geboren sind (ab 19 Jahren). Angenommen werden nur noch Anträge auf Überweisung, Poststempel bis 31. Dezember. Die Seite der Stadt nennt die Finanzierung nicht.[22]"
+        ],
+        "Das sind nur Beispiele. Beide wurden am 23. November 2026 auf den Websites der Städte geprüft."
+      ],
+      "scamH": "Vorsicht vor Betrug",
+      "scam": [
+        "Gemeinden und Staat verlangen nie, dass Sie für eine Zahlung einen Geldautomaten bedienen oder eine Gebühr überweisen (Merkblatt des Innenministeriums, der Verbraucherbehörde und der Nationalen Polizeibehörde).[23]",
+        "„Zahlen Sie zuerst so und so viel Yen, um Ihre Hilfe zu erhalten“ ist ein typischer Betrug (Verbraucherbehörde, 11. September 2025). Hilfe gibt es unter der Verbraucher-Hotline 188 oder der Polizei-Beratungsnummer #9110.[24]",
+        "Für den Strom- und Gasrabatt ist kein Antrag nötig, und die Behörde für natürliche Ressourcen und Energie fragt nach eigenen Angaben nie nach persönlichen Daten oder Gebühren. Es gibt Anrufe und E-Mails, die ihren Namen missbrauchen.[11]"
+      ],
+      "timelineH": "Ablauf und kommende Termine",
+      "timeline": [
+        [
+          "2025-10-20",
+          "20. Oktober 2025",
+          "Der Koalitionsvertrag von LDP und Ishin streicht die Zahlung von 20.000 Yen pro Person (40.000 Yen für Kinder und Erwachsene in befreiten Haushalten).[17]",
+          "none"
+        ],
+        [
+          "2025-12-31",
+          "31. Dezember 2025",
+          "Der vorläufige Benzinsteuersatz (25,1 Yen pro Liter) wird abgeschafft.[14]",
+          "running"
+        ],
+        [
+          "2026-03-19",
+          "19. März 2026",
+          "Der Zuschuss auf Benzin und Diesel (Notmaßnahme) beginnt.[13]",
+          "running"
+        ],
+        [
+          "2026-07-31",
+          "31. Juli 2026",
+          "Die staatliche Hotline zum Kinderzuschlag schließt.[16]",
+          "ended"
+        ],
+        [
+          "2026-08-05",
+          "5. August 2026",
+          "Grundsatzpolitik: Steuergutschrift für das Fiskaljahr 2029 angestrebt, bis dahin Entlastungszahlung und 1 % Steuer auf Lebensmittel als Brücke.[18]",
+          "considering"
+        ],
+        [
+          "2026-10-29",
+          "29. Oktober 2026",
+          "Die Premierministerin kündigt die Strom- und Gashilfe für Dezember bis Februar und einen schrittweisen Abbau des Kraftstoffzuschusses ab Dezember an.[12]",
+          "running"
+        ],
+        [
+          "2026-11-06",
+          "6. November 2026",
+          "Der Gesetzentwurf zur Entlastungszahlung und zur 1 % Steuer auf Lebensmittel passiert das Unterhaus.[7]",
+          "bill"
+        ],
+        [
+          "2026-11-13",
+          "13. November 2026",
+          "Das Kabinett beschließt den Einsatz der Reserve: etwa 521,9 Milliarden Yen für die Strom- und Gashilfe und 130 Milliarden Yen für den regionalen Schwerpunktzuschuss.[25]",
+          "running"
+        ],
+        [
+          "2026-11-19",
+          "19. November 2026",
+          "Die Finanzministerin sagt, für die Entlastungszahlung werde eine Untergrenze von etwa 560.000 Yen Jahreseinkommen geprüft.[6]",
+          "considering"
+        ],
+        [
+          "2026-11-24",
+          "24. November 2026",
+          "Der Sonderausschuss des Oberhauses hält eine zentrale öffentliche Anhörung ab.[8]",
+          "bill"
+        ],
+        [
+          "2026-12",
+          "Dezember 2026",
+          "Der Strom- und Gasrabatt beginnt mit dem Dezemberverbrauch. Die Einkommensteuersenkung wird im Jahresausgleich verrechnet.[11][15]",
+          "running"
+        ],
+        [
+          "2026-12-12",
+          "12. Dezember 2026",
+          "Ende der Sitzungsperiode. Ob der Entwurf bis dahin verabschiedet wird, ist offen.[9]",
+          "none"
+        ],
+        [
+          "2026-12-28",
+          "28. Dezember 2026",
+          "Antragsfrist für die 10.000 Yen pro Person in Yatsushiro (Poststempel).[21]",
+          "running"
+        ],
+        [
+          "2027-03",
+          "März 2027",
+          "Strom- und Gashilfe für den Märzverbrauch: Die Premierministerin sagte, darüber werde beraten.[12]",
+          "considering"
+        ],
+        [
+          "2027-04",
+          "April 2027",
+          "Die 1 % Steuer auf Lebensmittel und die Entlastungszahlung starten, wenn der Entwurf verabschiedet wird.[1]",
+          "bill"
+        ]
+      ],
+      "faqH": "Häufige Fragen",
+      "faq": [
+        [
+          "Gibt es 2026 eine Zahlung für alle?",
+          "Nein. Stand 23. November 2026 ist keine staatliche Geldzahlung an alle Einwohner beschlossen. Der Plan von 2025 mit 20.000 Yen pro Person wurde im Koalitionsvertrag vom 20. Oktober 2025 gestrichen.[17]"
+        ],
+        [
+          "Wann werden Leistungen ausgezahlt?",
+          "Die neue Geldleistung der Regierung, die Entlastungszahlung für Erwerbstätige, beginnt im April 2027, wenn der Entwurf verabschiedet wird, und wird in den Fiskaljahren 2027 und 2028 je einmal gezahlt; ein Termin für die erste Zahlung steht nicht fest. Geld, das man jetzt bekommen kann, zahlen die Gemeinden.[1][21]"
+        ],
+        [
+          "Wie hoch ist die Entlastungszahlung für Erwerbstätige?",
+          "Die Regierung prüft bis zu etwa 25.000 Yen pro Person und Jahr plus etwa 5.000 Yen im Jahr pro Kind unter 16. Die Beträge werden per Kabinettsverordnung festgelegt. Details auf {unserer Seite zur Entlastungszahlung|/guides/worker-relief-payment/}.[3][2]"
+        ],
+        [
+          "Gibt es eine Zahlung für von der Einwohnersteuer befreite Haushalte?",
+          "2026 gibt es keine staatliche Geldzahlung an befreite Haushalte. Die Regierung hat ihren Zuschuss an die Kommunen aufgestockt, schauen Sie also, was Ihre Gemeinde anbietet.[19][20]"
+        ],
+        [
+          "Ab wann gibt es die Strom- und Gashilfe, und wie viel?",
+          "Sie gilt für den Verbrauch von Dezember 2026 bis Februar 2027: Haushaltsstrom 1,0 Yen pro kWh im Dezember und 4,5 Yen im Januar und Februar, Stadtgas 4,0 und 18,0 Yen pro m³. Ein Antrag ist nicht nötig.[11]"
+        ],
+        [
+          "Kann ich den Kinderzuschlag von 20.000 Yen noch bekommen?",
+          "Das meiste wurde bis Ende März 2026 gezahlt, und die staatliche Hotline schloss am 31. Juli. Die Fristen legte jede Gemeinde fest; wer nichts bekommen hat, fragt bei seiner Gemeinde nach.[16]"
+        ],
+        [
+          "Wie groß ist die Steuersenkung im Jahresausgleich?",
+          "Die Premierministerin nannte 30.000 bis 60.000 Yen Einkommensteuer pro Steuerzahler. Angestellte erhalten sie im Jahresausgleich im Dezember 2026.[12][15]"
+        ],
+        [
+          "Woran erkenne ich Betrug mit Leistungen?",
+          "Staat und Gemeinden verlangen nie, einen Geldautomaten zu bedienen oder eine Gebühr zu zahlen. Behandeln Sie jede Geldforderung als Betrug und rufen Sie 188 oder #9110 an.[23][24]"
+        ]
+      ],
+      "relatedH": "Verwandte Seiten",
+      "related": [
+        [
+          "/calc/household/?s=jb",
+          "Haushaltsrechner: Wie würde ein Grundeinkommen das Budget Ihres Haushalts verändern?"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=jb",
+          "Grundeinkommensrechner: Was würden 10.000 Yen im Monat für alle in Japan kosten?"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "Wofür wurden Japans 100.000 Yen von 2020 ausgegeben?"
+        ],
+        [
+          "/essays/refundable-tax-credit-vs-basic-income/",
+          "Erstattungsfähige Steuergutschrift oder Grundeinkommen?"
+        ]
+      ],
+      "logH": "Änderungen",
+      "updatedL": "Zuletzt aktualisiert",
+      "wrpLink": "Andere Leistungen? Alle staatlichen Zahlungen und Zuschüsse in Japan, November 2026",
+      "hhLink": "Wann und wie viel? Alle staatlichen Zahlungen und Zuschüsse in Japan 2026",
+      "about": "Wann und wie viel: Japans staatliche Geldleistungen, Hilfen und Zuschüsse, getrennt nach laufend, im Parlament, in Prüfung, offen und beendet, jeweils mit Betrag, Berechtigten, Zeitpunkt, Auszahlungsweg, Quellen und Prüfdatum. Wird bei neuen Fakten aktualisiert."
+    },
+    "ar": {
+      "title": "الإعانات النقدية في اليابان، نوفمبر 2026: متى وكم؟ كل المدفوعات والدعم الحكومي، ما حُسم وما في البرلمان وما لم يُحسم",
+      "short": "إعانات اليابان في 2026",
+      "eb": "ملخص الإعانات",
+      "desc": "متى تُصرف الإعانات النقدية في اليابان وكم تبلغ؟ لا دفعة للجميع حتى الآن. دفعة تخفيف العبء عن العاملين وخصم الكهرباء والغاز وغيرها، مع الحالة والمصادر.",
+      "asOf": "المعلومات حتى 23 نوفمبر 2026 (رُوجع كل بند في 23 نوفمبر). نحدّث الصفحة كلما ظهرت وقائع جديدة.",
+      "lead": [
+        "للإجابة عن سؤالَي «متى الدفعة القادمة؟» و«هل هناك دفعة للجميع؟» تجمع هذه الصفحة المدفوعات النقدية والإعانات والدعم الذي تقدمه الحكومة اليابانية، مقسّمة إلى: ما حُسم ويُطبَّق، وما في مشروع قانون أمام البرلمان، وما تدرسه الحكومة، وما لم يُحسم، وما انتهى. ولكل بند المبلغ ومن يستحقه ومتى وكيف يُصرف ومصادره ويوم مراجعته.",
+        "باختصار: حتى نوفمبر 2026 لم يُتخذ قرار بأي دفعة نقدية موحدة للجميع. المطبَّق الآن هو خصم على فواتير الكهرباء وغاز المدن، ودعم للبنزين وأنواع الوقود الأخرى، وخفض لضريبة الدخل يُسوّى في التسوية الضريبية آخر العام؛ أما المدفوعات النقدية فتأتي أساسًا من البلديات كلٌّ على حدة. والدفعة النقدية الجديدة للحكومة، أي دفعة تخفيف العبء عن العاملين، واردة في مشروع قانون يناقشه مجلس المستشارين الآن.[17][1][7]"
+      ],
+      "answerH": "الجواب: هل هناك دفعة الآن؟",
+      "answer": [
+        [
+          "دفعة للجميع؟",
+          "لا. حتى 23 نوفمبر 2026 لم يُتخذ قرار بأي دفعة نقدية حكومية لكل السكان. والدفعة الموعودة في 2025 بقيمة 20,000 ين للفرد أُلغيت في اتفاق الائتلاف بين الحزب الليبرالي الديمقراطي وحزب نيبون إيشين في 20 أكتوبر 2025، الذي ينص على أنها «لن تُنفَّذ».[17]",
+          "none"
+        ],
+        [
+          "ما المطبَّق الآن؟",
+          "خصم على فواتير الكهرباء وغاز المدن (من استهلاك ديسمبر 2026، دون طلب)، ودعم للبنزين والديزل وأنواع وقود أخرى، وخفض لضريبة الدخل في تسوية آخر العام في ديسمبر 2026 (من 30,000 إلى 60,000 ين لكل دافع ضرائب بحسب رئيسة الوزراء). أما المدفوعات النقدية فتصرفها البلديات أساسًا من منحة حكومية.[11][12][13][19]",
+          "running"
+        ],
+        [
+          "الدفعة الحكومية القادمة؟",
+          "دفعة تخفيف العبء عن العاملين. مشروع القانون أمام مجلس المستشارين؛ وإذا أُقرّ يبدأ النظام في أبريل 2027 ويُصرف مرة في السنة في السنتين الماليتين 2027 و2028. وتدرس الحكومة مبلغًا أساسيًا يصل إلى نحو 25,000 ين سنويًا للفرد.[1][3][7]",
+          "bill"
+        ],
+        [
+          "هل يلزم تقديم طلب؟",
+          "لا لخصم الكهرباء والغاز ولا لدعم الوقود ولا لخفض الضريبة في آخر العام. وكثيرًا ما تصرف البلديات دون طلب للأسر التي تعرف حساباتها، بينما يتعين على الباقين التقدّم قبل موعد محدد (ياتسوشيرو في كوماموتو: بختم بريد حتى 28 ديسمبر).[11][15][21]",
+          "running"
+        ]
+      ],
+      "legend": ": معنى العلامات في هذه الصفحة.",
+      "statusL": {
+        "running": "محسوم ومطبَّق",
+        "bill": "في مشروع قانون",
+        "considering": "قيد الدراسة",
+        "reported": "تقارير فقط",
+        "none": "لم يُحسم / غير مخطط",
+        "ended": "انتهى"
+      },
+      "openH": "ما لم يُحسم بعد",
+      "open": [
+        "هل يُقرّ مشروع قانون دفعة تخفيف العبء عن العاملين، والمبالغ وحدود الدخل النهائية (بمرسوم حكومي). وتنتهي الدورة البرلمانية في 12 ديسمبر.[7][9]",
+        "الدعم لاستهلاك الكهرباء والغاز في مارس 2027. وقالت رئيسة الوزراء إن الحكومة «ستدرس الاستجابة بعد تقدير الأوضاع بعناية».[12]",
+        "متى ينتهي دعم الوقود. يرتفع السعر المرجعي تدريجيًا من ديسمبر، لكن لم يُعلن موعد للانتهاء.[12][13]",
+        "تصميم الائتمان الضريبي القابل للاسترداد، الذي تريد الحكومة تطبيقه في السنة المالية 2029.[18]"
+      ],
+      "toc": "المحتويات",
+      "listH": "القائمة: المدفوعات والإعانات والدعم الحكومي",
+      "fieldL": {
+        "amount": "كم",
+        "who": "من",
+        "when": "متى",
+        "how": "طريقة الصرف",
+        "checked": "تاريخ المراجعة",
+        "more": "تفاصيل أكثر"
+      },
+      "items": [
+        {
+          "id": "wrp",
+          "name": "دفعة تخفيف العبء عن العاملين",
+          "gist": "مبلغ نقدي مرة في السنة للعاملين من ذوي الدخل المنخفض والمتوسط. المشروع أمام مجلس المستشارين، ويُدرس ما يصل إلى نحو 25,000 ين سنويًا للفرد.",
+          "amount": "تدرس الحكومة مبلغًا أساسيًا يصل إلى نحو 25,000 ين سنويًا للفرد، مع نحو 5,000 ين سنويًا إضافية لكل طفل دون 16 عامًا (جواب رئيسة الوزراء في 13 نوفمبر). والزوجان مع طفلين، إذا حصلا على المبلغ كاملًا، ينالان 60,000 ين سنويًا. وستُحدَّد المبالغ بمرسوم حكومي.[3][2][4]",
+          "who": "من عمل وكسب دخلًا في السنة السابقة (كل فرد على حدة). وقدّم وزير المالية نحو 30 مليون شخص بدخل من مليون إلى 4.5 ملايين ين بوصفه «التصور التقريبي»، وقال في 19 نوفمبر إن حدًا أدنى بنحو 560,000 ين من الدخل السنوي قيد الدراسة.[5][6]",
+          "when": "من أبريل 2027 إذا أُقرّ المشروع، ومن حيث المبدأ دفعة واحدة في كل من السنتين الماليتين 2027 و2028. ولم يُحدَّد موعد الدفعة الأولى. وقد أقرّ مجلس النواب المشروع في 6 نوفمبر، ويعقد مجلس المستشارين جلسة استماع عامة مركزية في 24 نوفمبر. وتنتهي الدورة في 12 ديسمبر.[1][7][8][9]",
+          "how": "تتحقق البلدية التي تسكن فيها من استحقاقك وتحوّل المبلغ. وإذا سجّلت حسابًا لاستلام الأموال العامة فلا حاجة من حيث المبدأ إلى تقديم طلب.[1]"
+        },
+        {
+          "id": "food",
+          "name": "ضريبة استهلاك بنسبة 1% على الغذاء",
+          "gist": "لمدة سنتين من أبريل 2027 تنخفض ضريبة الاستهلاك على الغذاء من 8% إلى 1%. في مشروع القانون نفسه الذي يتضمن دفعة تخفيف العبء، أمام البرلمان.",
+          "amount": "الأطعمة والمشروبات الخاضعة اليوم للنسبة المخفضة 8% ستخضع لنسبة 1%. وإذا انخفضت الأسعار بمقدار تغيّر النسبة بالضبط، فإن سلعة بـ108 ين مع الضريبة تصبح بـ101 ين. ويبقى الكحول والأكل في المطاعم عند 10%.[1][10]",
+          "who": "كل من يشتري الغذاء (هذا خفض لنسبة الضريبة، لا دفعة).",
+          "when": "من 1 أبريل 2027 إلى 31 مارس 2029، إذا أُقرّ المشروع.[1]",
+          "how": "لا شيء يلزم فعله. أما مقدار انخفاض الأسعار فعلًا فيتوقف على المتاجر."
+        },
+        {
+          "id": "energy",
+          "name": "دعم فواتير الكهرباء والغاز",
+          "gist": "خصم على الكهرباء وغاز المدن المستهلكين من ديسمبر 2026 إلى فبراير 2027. دون طلب.",
+          "amount": "كهرباء الجهد المنخفض (المنازل): 1.0 ين لكل كيلوواط ساعة عن استهلاك ديسمبر، و4.5 ين عن يناير وفبراير. الجهد العالي: 0.5 ين و2.3 ين. غاز المدن: 4.0 ين و18.0 ين لكل متر مكعب. وقدّرت رئيسة الوزراء التوفير لأسرة نموذجية بنحو 7,000 ين على مدى الأشهر الثلاثة.[11][12]",
+          "who": "المنازل والشركات التي تستخدم الكهرباء وغاز المدن (للغاز: عقود سنوية دون 10 ملايين متر مكعب). ولا يشمل غاز البترول المسال (البروبان).[11]",
+          "when": "من استهلاك ديسمبر 2026 إلى استهلاك فبراير 2027. و«استهلاك ديسمبر» هو من حيث المبدأ الاستهلاك بين قراءة العداد في ديسمبر وقراءته في يناير. ولم يُحسم شهر مارس.[11][12]",
+          "how": "دون طلب. تخصم شركات الكهرباء والغاز الدعم من كل فاتورة شهرية. وتبلغ الكلفة نحو 521.9 مليار ين من الاحتياطي (قرار مجلس الوزراء في 13 نوفمبر).[11][25]"
+        },
+        {
+          "id": "fuel",
+          "name": "دعم البنزين والديزل",
+          "gist": "أُلغيت النسبة المؤقتة لضريبة البنزين في نهاية 2025. والدعم الآن 29.6 ين للتر، ويُقلَّص تدريجيًا من ديسمبر.",
+          "amount": "منذ 19 نوفمبر يبلغ الدعم 29.6 ين للتر للبنزين والديزل والكيروسين وزيت الوقود الثقيل، و23.6 ين لوقود الطائرات. وبمعزل عن ذلك، أُلغيت النسبة المؤقتة لضريبة البنزين (25.1 ين للتر) في 31 ديسمبر 2025.[13][14]",
+          "who": "كل من يشتري الوقود. وهو ليس دفعة نقدية: يذهب الدعم إلى تجار الجملة لكبح الأسعار في المحطات.[13]",
+          "when": "بدأ الإجراء الحالي في 19 مارس 2026. ومن ديسمبر يتقلص الدعم، والخطة الأساسية رفع السعر المرجعي 5 ين شهريًا حتى الربيع. ولم يُعلن موعد للانتهاء.[12][13]",
+          "how": "لا شيء يلزم فعله."
+        },
+        {
+          "id": "incometax",
+          "name": "خفض ضريبة الدخل (تسوية آخر العام)",
+          "gist": "رفع الخصم الأساسي وتغييرات أخرى تُسوّى في تسوية آخر العام في ديسمبر 2026. من 30,000 إلى 60,000 ين لكل دافع ضرائب بحسب رئيسة الوزراء.",
+          "amount": "وصفته رئيسة الوزراء بأنه خفض لضريبة الدخل من 30,000 إلى 60,000 ين لكل دافع ضرائب. وينتج عن رفع الخصم الأساسي ورفع الحد الأدنى لخصم دخل العمل وتغييرات أخرى؛ والمبلغ الفعلي يتوقف على الدخل والأسرة.[12][15]",
+          "who": "من يدفعون ضريبة الدخل.",
+          "when": "تسري التغييرات من 1 ديسمبر 2026 على ضريبة دخل 2026. ويحصل الموظفون عليه دفعة واحدة في تسوية آخر العام في ديسمبر 2026؛ ولا يتغير الاقتطاع الشهري حتى نوفمبر.[15]",
+          "how": "الموظفون عبر تسوية آخر العام لدى جهة العمل؛ ومن يقدّمون إقرارًا ضريبيًا في إقرار 2026.[15]"
+        },
+        {
+          "id": "kosodate",
+          "name": "بدل دعم تربية الأطفال في مواجهة الغلاء (20,000 ين لكل طفل)",
+          "gist": "20,000 ين لكل طفل، مرة واحدة. صُرف لنحو 17.827 مليون طفل حتى نهاية مارس 2026، وأُغلق مركز الاتصال الحكومي في يوليو.",
+          "amount": "20,000 ين لكل طفل، مرة واحدة. بلا حد للدخل، ومعفى من الضريبة.[16]",
+          "who": "المستفيدون من بدل الأطفال، عن الأطفال المولودين بين 2 أبريل 2007 و31 مارس 2026 (من حديثي الولادة إلى سن الثانوية).[16]",
+          "when": "حتى نهاية مارس 2026 صُرف لنحو 17.827 مليون طفل، بنحو 356.53 مليار ين (أرقام قيد المراجعة). وكانت الميزانية 367.7 مليار ين. وأُغلق مركز الاتصال الحكومي في 31 يوليو 2026. وحددت كل بلدية مواعيدها.[16]",
+          "how": "من حيث المبدأ دون طلب في حساب بدل الأطفال. واحتاج الأطفال المولودون منذ أكتوبر 2025 وأبناء موظفي الدولة وحالات أخرى إلى طلب.[16]"
+        },
+        {
+          "id": "uniform",
+          "name": "دفعة نقدية موحدة للجميع (20,000 ين أو 100,000 ين أو ما شابه)",
+          "gist": "لم تُحسم. أُلغيت خطة 2025 بقيمة 20,000 ين للفرد، ولم تقترح الحكومة أي دفعة أخرى للجميع.",
+          "amount": "لا شيء. الدفعة الموعودة في 2025، أي 20,000 ين للفرد (40,000 ين للأطفال وللبالغين في الأسر المعفاة من ضريبة السكان)، أُلغيت في اتفاق الائتلاف في 20 أكتوبر 2025.[17]",
+          "who": "لا أحد (لا يوجد نظام كهذا). وآخر مرة حصل فيها الجميع على 100,000 ين كانت الدفعة النقدية الخاصة عام 2020: {أين ذهبت تلك الـ100,000 ين؟|/essays/japan-special-cash-payment/}",
+          "when": "حتى 23 نوفمبر 2026 لم تقرّر الحكومة ولم تقترح دفعة نقدية بالمبلغ نفسه للجميع. وتصف سياستها الأساسية في 5 أغسطس 2026 الدفعة الجديدة بأنها مرتبطة بالدخل، بخلاف المبالغ الموحدة في حزم اقتصادية سابقة.[18]",
+          "how": "لا شيء. اعتبر المكالمات أو الرسائل التي تتحدث عن «طلب الدفعة الموحدة» احتيالًا على الأرجح (انظر «احذر الاحتيال» أدناه)."
+        },
+        {
+          "id": "lowincome",
+          "name": "دفعة حكومية للأسر منخفضة الدخل والمعفاة من ضريبة السكان",
+          "gist": "لا توجد في 2026 دفعة نقدية حكومية لكل أسرة. والدعم يمر عبر البلديات.",
+          "amount": "لا تتضمن الوثائق الحكومية التي راجعناها لهذه الصفحة أي دفعة نقدية حكومية للأسر المعفاة من ضريبة السكان في 2026. وبدلًا من ذلك زادت الحكومة منحتها للحكومات المحلية: ففي 13 نوفمبر أضافت 130 مليار ين من الاحتياطي، وتوصي خصوصًا بإنفاقها على دعم الكهرباء والغاز (ومنه غاز البترول المسال) والكيروسين للأسر منخفضة الدخل وأسر كبار السن.[19][20][25]",
+          "who": "تقرر كل بلدية من يحصل على ماذا.",
+          "when": "بحسب توقيت استخدام البلدية للمنحة. والمخصصات المقررة في ديسمبر 2026 تقتصر على دعم مستخدمي الكهرباء فائقة الجهد وغاز البترول المسال والكيروسين.[20]",
+          "how": "راجع موقع بلديتك أو نشرتها."
+        },
+        {
+          "id": "grant",
+          "name": "المنحة الإقليمية ذات الأولوية (مصدر مدفوعات البلديات)",
+          "gist": "أموال من الدولة إلى الحكومات المحلية التي تنفقها على مدفوعات نقدية وقسائم وقسائم أرز وغيرها. 2.0377 تريليون ين في الميزانية التكميلية لعام 2025.",
+          "amount": "اسمها الكامل المنحة الإقليمية ذات الأولوية لمواجهة ارتفاع الأسعار. 2.0377 تريليون ين في الميزانية التكميلية للسنة المالية 2025 (منها 2.0 تريليون للقائمة الموصى بها، وفيها إضافة خاصة بـ0.4 تريليون لأسعار الغذاء)، و100 مليار ين في الميزانية التكميلية لعام 2026، و130 مليار ين من الاحتياطي في 13 نوفمبر.[19]",
+          "who": "تتلقاها المحافظات والبلديات، وتقرر كل منها من يحصل على ماذا من سكانها.[19]",
+          "when": "تنفق الحكومات المحلية أموال الميزانية التكميلية لعام 2025 تباعًا.[19]",
+          "how": "بعض البلديات تصرف تلقائيًا وبعضها يشترط طلبًا. انظر «مدفوعات بلديتك» أدناه."
+        },
+        {
+          "id": "credit",
+          "name": "الائتمان الضريبي القابل للاسترداد",
+          "gist": "قيد التصميم، والهدف تطبيقه كاملًا في السنة المالية 2029. وحتى ذلك الحين تؤدي دفعة تخفيف العبء وضريبة 1% على الغذاء دور الجسر.",
+          "amount": "لم يُحسم.[18]",
+          "who": "لم يُحسم. يجري تصميمه إعانةً مرتبطة بالدخل.[18]",
+          "when": "الهدف هو السنة المالية 2029 (السياسة الأساسية في 5 أغسطس 2026). ودفعة تخفيف العبء عن العاملين هي الجسر حتى ذلك الحين، وتوصف بأنها الخطوة الأولى نحو ائتمان ضريبي قابل للاسترداد كامل.[18]",
+          "how": "لم يُحسم. انظر أيضًا {الائتمان الضريبي القابل للاسترداد أم الدخل الأساسي؟|/essays/refundable-tax-credit-vs-basic-income/}"
+        }
+      ],
+      "localH": "مدفوعات بلديتك",
+      "local": [
+        "إلى جانب البرامج الحكومية، تصرف بلديات كثيرة مدفوعات خاصة بها من المنحة الحكومية المذكورة أعلاه. وتختلف المبالغ والشروط والمواعيد من مكان إلى آخر، فراجع موقع بلديتك أو نشرتها. وهذان مثالان تحققنا منهما على موقعَي المدينتين نفسيهما:[19]",
+        [
+          "مدينة ياتسوشيرو (كوماموتو): 10,000 ين للفرد للمقيمين المسجلين في 1 يناير 2026. وصُرف المبلغ دون طلب في أوائل يوليو للأسر التي تعرف المدينة حساباتها، وعلى الباقين التقدّم بطلب. وبسبب زلزال كوماموتو مُدّد الموعد من 30 سبتمبر إلى 28 ديسمبر (بختم البريد). ويُموَّل من المنحة الإقليمية الحكومية ذات الأولوية.[21]",
+          "مدينة كوانا (ميه): 5,000 ين للفرد للمقيمين المسجلين في 1 مارس 2026 والمولودين في 1 أبريل 2007 أو قبله (19 عامًا فأكثر). ولا تُقبل الآن إلا طلبات التحويل المصرفي، بختم بريد حتى 31 ديسمبر. ولا تذكر صفحة المدينة مصدر التمويل.[22]"
+        ],
+        "هذان مثالان فقط، وقد رُوجعا على موقعَي المدينتين في 23 نوفمبر 2026."
+      ],
+      "scamH": "احذر الاحتيال",
+      "scam": [
+        "لن تطلب منك البلديات ولا الحكومة أبدًا تشغيل جهاز الصراف الآلي أو دفع رسوم لتلقي دفعة (منشور وزارة الشؤون الداخلية ووكالة شؤون المستهلك ووكالة الشرطة الوطنية).[23]",
+        "عبارة «ادفع كذا ينًا أولًا لتحصل على الإعانة» أسلوب احتيال معتاد (وكالة شؤون المستهلك، 11 سبتمبر 2025). وللمساعدة اتصل بخط المستهلك 188 أو بخط استشارات الشرطة #9110.[24]",
+        "لا يحتاج خصم الكهرباء والغاز إلى أي طلب، وتقول وكالة الموارد الطبيعية والطاقة إنها لا تطلب أبدًا بيانات شخصية أو رسومًا. وقد رُصدت مكالمات ورسائل بريد إلكتروني تنتحل اسمها.[11]"
+      ],
+      "timelineH": "التسلسل الزمني والمواعيد القادمة",
+      "timeline": [
+        [
+          "2025-10-20",
+          "20 أكتوبر 2025",
+          "اتفاق الائتلاف يلغي دفعة 20,000 ين للفرد (40,000 ين للأطفال وللبالغين في الأسر المعفاة).[17]",
+          "none"
+        ],
+        [
+          "2025-12-31",
+          "31 ديسمبر 2025",
+          "إلغاء النسبة المؤقتة لضريبة البنزين (25.1 ين للتر).[14]",
+          "running"
+        ],
+        [
+          "2026-03-19",
+          "19 مارس 2026",
+          "بدء دعم البنزين والديزل (إجراء طارئ).[13]",
+          "running"
+        ],
+        [
+          "2026-07-31",
+          "31 يوليو 2026",
+          "إغلاق مركز الاتصال الحكومي لبدل دعم تربية الأطفال.[16]",
+          "ended"
+        ],
+        [
+          "2026-08-05",
+          "5 أغسطس 2026",
+          "السياسة الأساسية: الائتمان الضريبي القابل للاسترداد مستهدف للسنة المالية 2029، ودفعة تخفيف العبء وضريبة 1% على الغذاء جسر حتى ذلك الحين.[18]",
+          "considering"
+        ],
+        [
+          "2026-10-29",
+          "29 أكتوبر 2026",
+          "رئيسة الوزراء تعلن دعم الكهرباء والغاز من ديسمبر إلى فبراير وتقليصًا تدريجيًا لدعم الوقود من ديسمبر.[12]",
+          "running"
+        ],
+        [
+          "2026-11-06",
+          "6 نوفمبر 2026",
+          "مجلس النواب يقرّ مشروع قانون دفعة تخفيف العبء وضريبة 1% على الغذاء.[7]",
+          "bill"
+        ],
+        [
+          "2026-11-13",
+          "13 نوفمبر 2026",
+          "مجلس الوزراء يقرر استخدام الاحتياطي: نحو 521.9 مليار ين لدعم الكهرباء والغاز و130 مليار ين للمنحة الإقليمية ذات الأولوية.[25]",
+          "running"
+        ],
+        [
+          "2026-11-19",
+          "19 نوفمبر 2026",
+          "وزير المالية يقول إن حدًا أدنى بنحو 560,000 ين من الدخل السنوي قيد الدراسة لدفعة تخفيف العبء.[6]",
+          "considering"
+        ],
+        [
+          "2026-11-24",
+          "24 نوفمبر 2026",
+          "اللجنة الخاصة بمجلس المستشارين تعقد جلسة استماع عامة مركزية.[8]",
+          "bill"
+        ],
+        [
+          "2026-12",
+          "ديسمبر 2026",
+          "يبدأ خصم الكهرباء والغاز مع استهلاك ديسمبر، ويُسوّى خفض ضريبة الدخل في تسوية آخر العام.[11][15]",
+          "running"
+        ],
+        [
+          "2026-12-12",
+          "12 ديسمبر 2026",
+          "نهاية الدورة البرلمانية. ولم يُحسم إن كان المشروع سيُقرّ قبلها.[9]",
+          "none"
+        ],
+        [
+          "2026-12-28",
+          "28 ديسمبر 2026",
+          "آخر موعد لطلب الـ10,000 ين للفرد في ياتسوشيرو (بختم البريد).[21]",
+          "running"
+        ],
+        [
+          "2027-03",
+          "مارس 2027",
+          "دعم الكهرباء والغاز لاستهلاك مارس: قالت رئيسة الوزراء إنه سيُدرس.[12]",
+          "considering"
+        ],
+        [
+          "2027-04",
+          "أبريل 2027",
+          "بدء ضريبة 1% على الغذاء ودفعة تخفيف العبء، إذا أُقرّ المشروع.[1]",
+          "bill"
+        ]
+      ],
+      "faqH": "أسئلة شائعة",
+      "faq": [
+        [
+          "هل هناك دفعة للجميع في 2026؟",
+          "لا. حتى 23 نوفمبر 2026 لم يُتخذ قرار بأي دفعة نقدية حكومية لكل السكان. وأُلغيت خطة 2025 بقيمة 20,000 ين للفرد في اتفاق الائتلاف في 20 أكتوبر 2025.[17]"
+        ],
+        [
+          "متى تُصرف الإعانات؟",
+          "الدفعة النقدية الجديدة للحكومة، دفعة تخفيف العبء عن العاملين، تبدأ في أبريل 2027 إذا أُقرّ المشروع وتُصرف مرة في السنة في 2027 و2028؛ ولم يُحدَّد موعد الدفعة الأولى. أما المدفوعات النقدية المتاحة الآن فهي مدفوعات البلديات.[1][21]"
+        ],
+        [
+          "كم تبلغ دفعة تخفيف العبء عن العاملين؟",
+          "تدرس الحكومة ما يصل إلى نحو 25,000 ين سنويًا للفرد، مع نحو 5,000 ين سنويًا لكل طفل دون 16 عامًا. وستُحدَّد المبالغ بمرسوم حكومي. التفاصيل في {صفحتنا عن دفعة تخفيف العبء عن العاملين|/guides/worker-relief-payment/}.[3][2]"
+        ],
+        [
+          "هل هناك دفعة للأسر المعفاة من ضريبة السكان؟",
+          "لا توجد في 2026 دفعة نقدية حكومية للأسر المعفاة. وقد زادت الحكومة منحتها للحكومات المحلية، فراجع ما تقدمه بلديتك.[19][20]"
+        ],
+        [
+          "متى يبدأ دعم الكهرباء والغاز وكم يبلغ؟",
+          "يغطي استهلاك ديسمبر 2026 إلى فبراير 2027: كهرباء المنازل 1.0 ين لكل كيلوواط ساعة في ديسمبر و4.5 ين في يناير وفبراير، وغاز المدن 4.0 ين و18.0 ين لكل متر مكعب. ولا حاجة إلى طلب.[11]"
+        ],
+        [
+          "هل ما زال بإمكاني الحصول على بدل تربية الأطفال البالغ 20,000 ين؟",
+          "صُرف معظمه حتى نهاية مارس 2026، وأُغلق مركز الاتصال الحكومي في 31 يوليو. وحددت كل بلدية مواعيدها، فإن لم تحصل عليه فاسأل بلديتك.[16]"
+        ],
+        [
+          "كم يبلغ خفض الضريبة في آخر العام؟",
+          "وصفته رئيسة الوزراء بأنه من 30,000 إلى 60,000 ين من ضريبة الدخل لكل دافع ضرائب. ويحصل عليه الموظفون في تسوية آخر العام في ديسمبر 2026.[12][15]"
+        ],
+        [
+          "كيف أكشف احتيال الإعانات؟",
+          "لا تطلب الحكومة ولا البلديات أبدًا تشغيل جهاز الصراف الآلي أو دفع رسوم. اعتبر أي طلب للمال احتيالًا واتصل بالرقم 188 أو #9110.[23][24]"
+        ]
+      ],
+      "relatedH": "صفحات ذات صلة",
+      "related": [
+        [
+          "/calc/household/?s=jb",
+          "حاسبة الأسرة: كيف سيغيّر الدخل الأساسي ميزانية أسرتك؟"
+        ],
+        [
+          "/calc/?c=jp&w=all&m=10000&s=jb",
+          "حاسبة الدخل الأساسي: كم سيكلّف دفع 10,000 ين شهريًا لكل فرد في اليابان؟"
+        ],
+        [
+          "/essays/japan-special-cash-payment/",
+          "أين ذهبت دفعة الـ100,000 ين في اليابان عام 2020؟"
+        ],
+        [
+          "/essays/refundable-tax-credit-vs-basic-income/",
+          "الائتمان الضريبي القابل للاسترداد أم الدخل الأساسي؟"
+        ]
+      ],
+      "logH": "سجل التحديثات",
+      "updatedL": "آخر تحديث",
+      "wrpLink": "إعانات أخرى؟ كل المدفوعات والدعم الحكومي في اليابان، نوفمبر 2026",
+      "hhLink": "متى وكم؟ كل المدفوعات والدعم الحكومي في اليابان في 2026",
+      "about": "متى وكم: المدفوعات النقدية والإعانات والدعم الحكومي في اليابان، مقسّمة إلى مطبَّق وفي البرلمان وقيد الدراسة ولم يُحسم ومنتهٍ، ولكل منها المبلغ ومن ومتى وكيف والمصادر وتاريخ المراجعة. نحدّثها كلما ظهرت وقائع جديدة."
     }
   }
 };

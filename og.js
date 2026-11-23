@@ -2,7 +2,7 @@
 //   src/og/{lang}.png              言語ごとのトップページ
 //   src/og/svc/{lang}/{id}.jpg     サービスの個別ページ（名前・もらえるもの・目安）
 //   src/og/essay/{lang}/{id}.jpg   エッセイ（題・要約）
-//   src/og/guide/{lang}/{id}.jpg   サービスの完全ガイド（題・最終更新日）。就業者負担軽減支援金のページ（WRP）も同じ形
+//   src/og/guide/{lang}/{id}.jpg   サービスの完全ガイド（題・最終更新日）。就業者負担軽減支援金のページ（WRP）と国の給付金の一覧（JB）も同じ形
 //   src/og/shindan/{lang}/index.jpg, {type}.jpg   タダ飯診断（入口と、タイプごとの結果カード）
 //   src/og/calc/{lang}/index.jpg   BI計算機（題・説明・国の名前）
 //   src/og/calc/{lang}/map.jpg     世界地図（/calc/map/。題・小さな地図・凡例。地図を載せたエッセイも同じ形）
@@ -19,7 +19,7 @@ const os = require('os');
 const path = require('path');
 const { execFileSync } = require('child_process');
 const crypto = require('crypto');
-const { LANGS, SERVICES, T, CATS, ESSAYS, GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, TIMELINE = [], WRP } = require('./src/data.js');
+const { LANGS, SERVICES, T, CATS, ESSAYS, GUIDES = [], QUIZ, CALC, BI_NEWS = [], BI_NEWS_REGIONS = {}, TIMELINE = [], WRP, JB } = require('./src/data.js');
 const { servicesFor } = require('./src/shindan.js');
 const { ranking: rankingOf, MAX: RANK_MAX } = require('./src/ranking.js');
 
@@ -231,6 +231,18 @@ function wrpHtml(lang) {
 <p class="desc" style="-webkit-line-clamp:2" data-fit="30,22,110">${esc(W.desc)}</p>
 </div>
 <div class="chips"><span>${esc(W.updatedL)} ${esc(date)}</span><span>${esc(L.essayBy)}</span></div>`);
+}
+
+// 国の給付金の一覧のページ: 札・題・要約と、最終更新日（WRP と同じ形）
+function jbHtml(lang) {
+  const L = T[lang], J = JB[lang];
+  const date = new Intl.DateTimeFormat(lang === 'zh' ? 'zh-Hans' : lang, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(JB.updated + 'T00:00:00Z'));
+  return frame(lang, 'essay', `<div class="mid">
+<p class="cat" style="--c:#FFD66B">${esc(J.eb)}</p>
+<h1 data-fit="${lang === 'ja' || lang === 'zh' ? 62 : 52},34,230">${esc(J.title)}</h1>
+<p class="desc" style="-webkit-line-clamp:2" data-fit="30,22,110">${esc(J.desc)}</p>
+</div>
+<div class="chips"><span>${esc(J.updatedL)} ${esc(date)}</span><span>${esc(L.essayBy)}</span></div>${OP_REFIT}`);
 }
 
 // タダ飯診断: 入口（題・説明）と、結果のタイプカード（タイプ名を大きく・説明・合うサービスの数）
@@ -461,6 +473,7 @@ for (const lang of ONLY) {
   for (const k of calcCards[lang]) { const rel = `calc/${lang}/${k.id}.jpg`, key = hash(calcCardHtml(k, lang)); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => calcCardHtml(k, lang, cardFonts(lang)), format: 'jpeg', quality: 72 }); }
   for (const g of GUIDES) { const html = guideHtml(g, lang); const rel = `guide/${lang}/${g.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
   { const html = wrpHtml(lang), rel = `guide/${lang}/${WRP.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
+  { const html = jbHtml(lang), rel = `guide/${lang}/${JB.id}.jpg`, key = hash(html); if (fresh(rel, key)) kept++; else todo.push({ rel, key, mk: () => html, format: 'jpeg' }); }
 }
 const iconsFresh = () => !FORCE && manifest['static/icons'] === hash(fs.readFileSync(path.join(STATIC, 'favicon.svg'), 'utf8')) && fs.existsSync(path.join(STATIC, 'favicon.ico'));
 if (!todo.length && iconsFresh()) { console.log(`og: 0 made, ${kept} unchanged`); process.exit(0); }

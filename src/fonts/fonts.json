@@ -283,6 +283,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-db19c08cea.woff2",
     "chars": "Òà"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-91ee538686.woff2",
+    "chars": "³"
    }
   ],
   "de:body:700": [
@@ -373,6 +377,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-08e47e1c80.woff2",
     "chars": "Òà"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-abfd4e46d6.woff2",
+    "chars": "³"
    }
   ],
   "de:display": [
@@ -511,6 +519,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-db19c08cea.woff2",
     "chars": "Òà"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-91ee538686.woff2",
+    "chars": "³"
    }
   ],
   "en:body:700": [
@@ -601,6 +613,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-08e47e1c80.woff2",
     "chars": "Òà"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-abfd4e46d6.woff2",
+    "chars": "³"
    }
   ],
   "en:display": [
@@ -747,6 +763,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-557467158e.woff2",
     "chars": "Òàç"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-91ee538686.woff2",
+    "chars": "³"
    }
   ],
   "es:body:700": [
@@ -853,6 +873,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-ac74c4b004.woff2",
     "chars": "Òàç"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-abfd4e46d6.woff2",
+    "chars": "³"
    }
   ],
   "es:display": [
@@ -1351,6 +1375,14 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-53c9722e43.woff2",
     "chars": "促木瀬熊飲"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-48238a7d45.woff2",
+    "chars": "聴"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-8e1bf25b96.woff2",
+    "chars": "〇【】㎥奨抑掛措揮架桑泉灯絶航邸震騰"
    }
   ],
   "ja:body:700": [
@@ -1633,6 +1665,14 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-6fbc4296fb.woff2",
     "chars": "促木瀬熊飲"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-d45f972e72.woff2",
+    "chars": "聴"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-5f5fc47327.woff2",
+    "chars": "〇【】㎥奨抑掛措揮架桑泉灯絶航邸震騰"
    }
   ],
   "ja:display": [
@@ -1819,6 +1859,10 @@
    {
     "file": "dela-gothic-one-400-ja-4011feac5c.woff2",
     "chars": "品安緯請象較"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-420cdc3e68.woff2",
+    "chars": "【】低住区帯府手政整施末油治源町討課調財重非"
    }
   ],
   "ja:dot": [
@@ -2175,6 +2219,10 @@
    {
     "file": "noto-sans-sc-400-zh-7498854c0c.woff2",
     "chars": "き座減滞負軽"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-8a9da0ec82.woff2",
+    "chars": "〇【】丙兆戳抄旬柴液灯烷熊震"
    }
   ],
   "zh:body:700": [
@@ -2477,6 +2525,10 @@
    {
     "file": "noto-sans-sc-700-zh-fb9f54a86a.woff2",
     "chars": "き座減滞負軽"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-6b1aae4baa.woff2",
+    "chars": "〇【】丙兆戳抄旬柴液灯烷熊震"
    }
   ],
   "zh:display": [
@@ -2663,6 +2715,10 @@
    {
     "file": "noto-sans-sc-900-zh-f492697ffc.woff2",
     "chars": "便宜脉降龙"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-64ce7a05b9.woff2",
+    "chars": "【】低居府控政料施末柴汽油町谨防除"
    }
   ],
   "zh:dot": [

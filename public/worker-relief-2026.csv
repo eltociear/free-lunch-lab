@@ -10,6 +10,7 @@ coverageEarlier,30,% of workers or more (before 13 Nov),considering,2026-11-13,,
 coveragePeople,30000000,people (about; Kyodo: over 30 million),considering,2026-11-13,,,https://www.tokyo-np.co.jp/article/527904,2026-11-20
 incomeImageLow,1000000,"yen annual income, lower end of the 'rough image'",considering,2026-11-16,,Finance Minister Katayama: about 30 million people with incomes of ¥1 million to ¥4.5 million,https://news.yahoo.co.jp/articles/d49e9f989b6e9b568c08754073e30c209be89024,2026-11-20
 incomeImageHigh,4500000,"yen annual income, upper end of the 'rough image'",considering,2026-11-16,,,https://news.yahoo.co.jp/articles/d49e9f989b6e9b568c08754073e30c209be89024,2026-11-20
+incomeFloorStated,560000,yen annual income at which payments start (floor under consideration),considering,2026-11-19,,"Finance Minister Katayama, House of Councillors special committee, answering Komeito's Daijiro Harada: 'will consider about ¥560,000', recalculated with the FY2026 minimum wage; earlier options about ¥530,000, ¥740,000 and about ¥1.06 million (Jiji)",https://news.yahoo.co.jp/articles/51723a0d8b8a8c7f2a4e1ab311e10e18e61be6f8,2026-11-23
 incomeFloorReported,560000,yen annual income at which payments start (floor under consideration),reported,2026-11-20,,,https://news.web.nhk/newsweb/na/nd-20261120de78748,2026-11-20
 octPeople,20000000,"people, October 'one reference' plan",reported,2026-10-17,,,https://kumanichi.com/articles/2047683,2026-11-20
 octAverage,30000,"yen per person per year on average, October plan",reported,2026-10-17,,,https://kumanichi.com/articles/2047683,2026-11-20
@@ -21,6 +22,7 @@ nationalShare,2/3,"national share of the cost, at least",decided,2026-10-09,,,ht
 childAgeEarly,16,"age limit (under) for the child add-on, FY2027-28",decided,2026-10-09,,under 19 in the full scheme from FY2029,https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20261009/siryou2.pdf,2026-11-20
 billSubmitted,2026-10-09,date,decided,2026-10-09,,"Cabinet Bill No. 1, 222nd Diet (extraordinary session)",https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/keika/1DE342E.htm,2026-11-20
 passedLowerHouse,2026-11-06,date,decided,2026-11-06,,"committee on financial affairs and plenary, by majority, unamended",https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/keika/1DE342E.htm,2026-11-20
-referredUpperHouse,2026-11-11,date,decided,2026-11-11,,Special Committee on the consumption tax and relief payment bill; no vote as of 20 Nov 2026,https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm,2026-11-20
-sessionEnds,2026-12-12,date,open,2026-11-20,,"69-day session to 12 December, no extension decided",https://www.shugiin.go.jp/,2026-11-20
+referredUpperHouse,2026-11-11,date,decided,2026-11-11,,Special Committee on the consumption tax and relief payment bill; no vote as of 23 Nov 2026,https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm,2026-11-23
+publicHearing,2026-11-24,date of the special committee's central public hearing (13:00),decided,2026-11-18,,,https://www.sangiin.go.jp/jpn/ugoki/r8/shohi-kochou261118.html,2026-11-23
+sessionEnds,2026-12-12,date,open,2026-11-20,,"69-day session to 12 December, no extension decided",https://www.shugiin.go.jp/,2026-11-23
 firstPaymentReported,2027 autumn,first payment (reported),reported,2026-11-13,,Nikkei; not in any government document,https://www.nikkei.com/article/DGXZQOUA042J30U6A101C2000000/,2026-11-20

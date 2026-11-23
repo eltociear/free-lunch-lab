@@ -7,7 +7,7 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "about": "Figures behind the page on Japan's Worker Burden Relief Payment (就業者負担軽減支援金), /guides/worker-relief-payment/. Each fact gives its value, the date it refers to, its status (decided: in the bill or government documents; considering: the government said in the Diet that it is considering it; reported: a plan reported by the press; open: not decided), the source and the day it was checked. build.js checks that every language of the page carries the digits listed under 'digits' (any one of the alternatives in each nested list), and the page's household calculator takes its amounts and rates from 'calc' (fact ids) and 'comparison'.",
   "page": "guides/worker-relief-payment/",
-  "retrieved": "2026-11-20",
+  "retrieved": "2026-11-23",
   "facts": [
     {
       "id": "foodRateNow",
@@ -177,6 +177,22 @@
       ]
     },
     {
+      "id": "incomeFloorStated",
+      "value": 560000,
+      "unit": "yen annual income at which payments start (floor under consideration)",
+      "status": "considering",
+      "date": "2026-11-19",
+      "note": "Finance Minister Katayama, House of Councillors special committee, answering Komeito's Daijiro Harada: 'will consider about ¥560,000', recalculated with the FY2026 minimum wage; earlier options about ¥530,000, ¥740,000 and about ¥1.06 million (Jiji)",
+      "source": "https://news.yahoo.co.jp/articles/51723a0d8b8a8c7f2a4e1ab311e10e18e61be6f8",
+      "asOf": "2026-11-23",
+      "digits": [
+        [
+          "560000",
+          "56"
+        ]
+      ]
+    },
+    {
       "id": "incomeFloorReported",
       "value": 560000,
       "unit": "yen annual income at which payments start (floor under consideration)",
@@ -340,9 +356,23 @@
       "unit": "date",
       "status": "decided",
       "date": "2026-11-11",
-      "note": "Special Committee on the consumption tax and relief payment bill; no vote as of 20 Nov 2026",
+      "note": "Special Committee on the consumption tax and relief payment bill; no vote as of 23 Nov 2026",
       "source": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm",
-      "asOf": "2026-11-20"
+      "asOf": "2026-11-23"
+    },
+    {
+      "id": "publicHearing",
+      "value": "2026-11-24",
+      "unit": "date of the special committee's central public hearing (13:00)",
+      "status": "decided",
+      "date": "2026-11-18",
+      "source": "https://www.sangiin.go.jp/jpn/ugoki/r8/shohi-kochou261118.html",
+      "asOf": "2026-11-23",
+      "digits": [
+        [
+          "24"
+        ]
+      ]
     },
     {
       "id": "sessionEnds",
@@ -352,7 +382,7 @@
       "date": "2026-11-20",
       "note": "69-day session to 12 December, no extension decided",
       "source": "https://www.shugiin.go.jp/",
-      "asOf": "2026-11-20",
+      "asOf": "2026-11-23",
       "digits": [
         [
           "12"
