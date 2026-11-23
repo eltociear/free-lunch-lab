@@ -1474,6 +1474,57 @@ h1{font-size:${ja ? 64 : 52}px}
 `,
     }),
   },
+  // note.com header for the article on Japan's national cash benefits roundup (/ja/guides/japan-benefits-2026/,
+  // data/japan-benefits-2026.json). Same 1100x560 safe area, kicker / hero / footer layout as note-kyufu; instead of
+  // a .deco card, four status rows (inside the safe area) carry the page's status labels in its dark-mode colours
+  // (running = --pos, bill = --accent, none = --stamp). Figures only from the page as of 23 Nov 2026.
+  'note-benefits': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => {
+      const rows = [
+        ['就業者負担軽減支援金', 'bill', '法案審議中', '年最大2万5,000円程度で検討'],
+        ['電気・ガス代の値引き', 'running', '決定・実施中', '12月使用分から・申請不要'],
+        ['所得税の減税', 'running', '決定・実施中', '12月の年末調整で精算'],
+        ['国民一律の現金給付', 'none', '未定・予定なし', '2025年の一律2万円案は「行わない」'],
+      ];
+      return {
+        bare: true,
+        moon: [1192, 92, 44],
+        body: `
+<div class="wrap">
+  <p class="kicker">2026年11月 国の給付金・支援金・補助金 いま何がある？</p>
+  <h1 class="hero">一律給付は、<em>決まっていない。</em></h1>
+  <div class="grid">
+    ${rows.map(([n, k, s, d]) => `<div class="cell"><p class="nm"><span>${n}</span><i class="${k}">${s}</i></p><p class="dt">${d}</p></div>`).join('')}
+  </div>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+        css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:82px;width:1060px}
+.kicker{display:inline-block;font-size:28px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px;white-space:nowrap}
+.hero{margin-top:22px;font-size:76px;line-height:1.12;padding-right:0;white-space:nowrap}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.grid{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cell{padding:17px 20px 17px;border-radius:18px;background:rgba(20,26,58,.72);border:2px solid rgba(207,214,255,.18)}
+.nm{display:flex;align-items:center;justify-content:space-between;gap:12px;white-space:nowrap}
+.nm span{font-size:29px;line-height:1.15;font-weight:900;color:#FFFFFF}
+.nm i{font-style:normal;font-size:20px;font-weight:900;line-height:1;padding:6px 14px 7px;border-radius:999px;border:2.5px solid currentColor}
+.nm .running{color:#6CF0B0;background:rgba(108,240,176,.12)}
+.nm .bill{color:#FFD66B;background:rgba(255,214,107,.12)}
+.nm .none{color:#FF6E61;background:rgba(255,110,97,.12)}
+.dt{margin-top:8px;font-size:23px;line-height:1.15;font-weight:700;color:#C9D0F0;white-space:nowrap}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+      };
+    },
+  },
   // Three-people card for the same note article, built on myth() like note-takenaka-table. Facts only from the
   // refundable-tax-credit essay: the bill and outline (earned income above a floor, total income below a ceiling),
   // the council's floor options (wages of about ¥530k, ¥740k or about ¥1.06m; below the no-local-tax line the payment
