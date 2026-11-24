@@ -644,6 +644,67 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the data essay traditional-crafts-basic-income: workers since the peak, age, the ¥120,000 offer against the minimum wage,
+  // and the totals with a basic income; all numbers from data/crafts-2026.json and data/japan-2026.json (the files the build checks the essay against). 1200x675, ja/en.
+  'crafts': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const C = require('../../../data/crafts-2026.json');
+      const J = require('../../../data/japan-2026.json');
+      const F = Object.fromEntries(C.facts.map(x => [x.id, x]));
+      const n = v => v.toLocaleString('en-US');
+      const lv = id => J.levels.find(x => x.id === id).monthly;
+      const hook = C.hook.value, hourly = Math.round(hook / F.hours.value), mw = Math.round(F.minWage.value * F.hours.value);
+      const share = Math.round(F.workers2022.value / F.peakWorkers.value * 100);
+      const cost70 = (J.population.value * lv('takenaka') * 12 / 1e12).toFixed(1);
+      const T3 = {
+        ja: { eb: 'データエッセイ', hl: '伝統工芸の担い手は、ピークの6分の1', sb: '月給12万円の求人と、月7万円のベーシックインカムを数字で比べる',
+          c: [['従業者（1979年→2022年度）', `${F.peakWorkers.value / 1e4}<small>万→</small>${F.workers2022.value / 1e4}<small>万人</small>`, `ピークの約${share}%。生産額は1983年の${n(F.peakOutput.value / 1e8)}億円から2017年度に${F.output2017.value / 1e8}億円`],
+            ['50歳代以上（2022年度）', `${F.age.value[0]}<small>%</small>`, `70歳代以上が${F.age.value[1].toFixed(1)}%、20歳代までは${F.age.value[2].toFixed(1)}%`],
+            ['月給12万円を時給にすると', `${hourly}<small>円</small>`, `月${F.hours.value}時間で割った額。最低賃金は全国加重平均${n(F.minWage.value)}円、最低の県は${n(F.minWage.lowest)}円`],
+            ['＋月7万円のBI', `${(hook + lv('takenaka')) / 1e4}<small>万円</small>`, `最低賃金でフルタイムなら月${n(mw)}円。全員に月7万円は年${cost70}兆円`]],
+          big: `アイルランドは芸術家${n(2000)}人に週${F.biaPilot.value}ユーロを配り、創作の時間が週${F.biaImpact.value}時間増えた。2026年から後継の制度に`, wm: '不労所得研究所', path: 'ja/' },
+        en: { eb: 'Data essay', hl: 'Japan’s craft makers: a sixth of the peak', sb: 'A ¥120,000-a-month job offer and a ¥70,000 basic income, side by side',
+          c: [['Workers (1979 → FY2022)', `${F.peakWorkers.value / 1e3}<small>k→</small>${F.workers2022.value / 1e3}<small>k</small>`, `About ${share}% of the peak. Production fell from ¥${F.peakOutput.value / 1e9}bn (1983) to ¥${F.output2017.value / 1e9}bn (FY2017)`],
+            ['Aged 50 and over (FY2022)', `${F.age.value[0]}<small>%</small>`, `${F.age.value[1].toFixed(1)}% are 70 or older; ${F.age.value[2].toFixed(1)}% are 29 or younger`],
+            ['¥120,000 a month, per hour', `¥${hourly}`, `Over ${F.hours.value} hours a month. Average minimum wage ¥${n(F.minWage.value)}, lowest ¥${n(F.minWage.lowest)}`],
+            ['+ ¥70,000 basic income', `¥${n(hook + lv('takenaka'))}`, `Full time at the minimum wage pays ¥${n(mw)}. ¥70,000 for everyone: ¥${cost70}tn a year`]],
+          big: `Ireland paid ${n(2000)} artists €${F.biaPilot.value} a week: ${F.biaImpact.value} more hours a week of creative work. A successor scheme began in 2026`, wm: 'Free <em>Lunch</em> Lab', path: '' },
+      }[lang];
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb"><span>${T3.eb}</span></p>
+<h1 class="hl">${T3.hl}</h1>
+<p class="sb">${T3.sb}</p>
+<div class="cards">${T3.c.map(([k, v, d]) => `<section class="c"><p class="k">${k}</p><p class="v">${v}</p><p class="d">${d}</p></section>`).join('')}</div>
+<p class="big">${T3.big}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${T3.wm}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${T3.path}essays/traditional-crafts-basic-income/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb span{display:inline-block;font-size:18px;font-weight:700;color:#14182E;background:#6CF0B0;padding:3px 14px;border-radius:999px}
+.hl{margin-top:10px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 46 : 44}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:21px;line-height:1.4;color:#C9D0F0}
+.cards{margin-top:16px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:14px 16px;display:flex;flex-direction:column}
+.k{font-size:18px;color:#A9B2D8;font-weight:700;line-height:1.3}
+.v{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 34 : 36}px;line-height:1.1;color:#FFD66B;white-space:nowrap}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.45em;margin-left:2px}
+.d{margin-top:12px;font-size:21px;line-height:1.45;color:#E3E8FF;word-break:auto-phrase}
+.big{margin:14px 0 12px;font-size:21px;font-weight:900;line-height:1.35;color:#FFD66B;border:2px solid rgba(255,214,107,.6);background:rgba(255,214,107,.08);border-radius:14px;padding:10px 18px}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:15px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
   // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
   'billionaire': {

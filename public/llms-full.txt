@@ -836,6 +836,88 @@ Cautions: Whether rewards need Orb verification is unknown, and we have not test
 
 ## Essays
 
+### ¥120,000 job offers, a ¥70,000 basic income and Japan’s crafts
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
+- Published: 2026-11-24
+
+In November 2026 an X post viewed about two million times put a number on a familiar complaint. Responding to talk of saving Japan’s traditional crafts as workshops close, a graduate of a craft school wrote that the job offers reaching the school were almost all about ¥120,000 a month before tax, which nobody can live on. This essay does not try to check that post. It sets out what the official figures say: how many people make Japan’s traditional crafts, how old they are, how ¥120,000 compares with the minimum wage and with other wages, what the state spends, what a basic income of ¥10,000 or ¥70,000 a month would add, and what Ireland found when it paid artists €325 a week.
+
+#### A sixth of the peak
+
+Japan protects its crafts under a law on promoting traditional craft industries. As of 27 October 2025 the Minister of Economy, Trade and Industry had designated 244 traditional crafts (dentōteki kōgeihin), the latest being Tokyo hand-carved seals.[3][4] Figures from the Association for the Promotion of Traditional Craft Industries, as cited in a 2018 paper for the Small and Medium Enterprise Agency’s advisory council, put the peak at 288,000 workers in 1979 and production at ¥541 billion in 1983.[1]
+
+The Ministry of Internal Affairs and Communications found that production of the designated crafts fell from about ¥278.4 billion in fiscal 1998 to about ¥92.7 billion in fiscal 2017, a drop of about 67%, while the number of workers halved from about 115,000 to about 58,000.[2] In fiscal 2022 there were about 48,000 workers, according to the Ministry of Economy, Trade and Industry (METI), about 17% of the 1979 peak, or roughly one in six.[3] METI’s text does not give a production figure for fiscal 2022; it says only that production has kept edging down since it fell below ¥100 billion in fiscal 2016.
+
+| Year | Workers | Production | Source |
+| --- | --- | --- | --- |
+| 1979 | 288,000 (peak) | – | Association data, cited in [1] |
+| 1983 | – | ¥541 billion (peak) | Association data, cited in [1] |
+| Fiscal 1998 | about 115,000 | about ¥278.4 billion | [2] |
+| Fiscal 2017 | about 58,000 | about ¥92.7 billion | [2] |
+| Fiscal 2022 | about 48,000 | below ¥100 billion since fiscal 2016 | [3] |
+
+#### Who is left
+
+The workforce is old. In fiscal 2022, 63.6% of people working in the designated crafts were in their 50s or older, and 18.0% were 70 or older, three times the 6.0% aged 29 or younger.[3] In a paper for a study group in March 2026, METI wrote that the number of workers could halve within ten years, and that some workshops were turning down people who wanted to learn a craft, because the work does not pay.[5]
+
+#### ¥120,000 against the minimum wage
+
+For fiscal 2026 the national weighted average minimum wage is ¥1,177 an hour, up from ¥1,121; the new rates took effect between 1 October and 2 December 2026, from ¥1,085 in Miyazaki to ¥1,280 in Tokyo.[6] The Ministry of Health, Labour and Welfare compares the minimum wage with public assistance using 173.8 working hours a month.[7] At that rate, full-time work at the average minimum wage pays ¥204,563 a month before tax. Spread over the same 173.8 hours, ¥120,000 comes to about ¥690 an hour, below the lowest minimum wage in any prefecture. The post did not say how many hours the offers were for, so this is a comparison, not a finding about those jobs.
+
+There is no official wage figure for traditional craft workers. The nearest categories in the 2025 Basic Survey on Wage Structure, which covers firms with ten or more employees, give scheduled monthly earnings of ¥283,900 for ceramic and stone products workers, ¥269,700 for wood and paper products workers and ¥221,000 for textile and clothing workers, against ¥340,600 for all full-time workers.[8][9] Many craft workshops are smaller than ten people and are not in these figures.
+
+#### What a basic income would add
+
+A basic income is paid to everyone, whatever their job, so it would not pay crafts in particular. For one person on ¥120,000 a month, ¥10,000 a month would make ¥130,000 and ¥70,000 a month, the figure Heizo Takenaka proposed in 2020, would make ¥190,000, still below the ¥204,563 of a full-time job at the average minimum wage. The other side is the bill: for everyone in Japan, ¥10,000 a month costs about ¥14.7 trillion a year and ¥70,000 a month about ¥103.2 trillion, 122% of national tax revenue.[10] The cost at five amounts (https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/) and the ¥70,000 plan (https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/) are covered in separate essays, and the calculator below works it out for a household.
+
+[Work it out for your household: Household basic income calculator](https://neteru-nyukin.eltociear.workers.dev/calc/household/)
+
+#### What the state spends on crafts now
+
+METI’s budget for traditional crafts in fiscal 2026 is ¥1.08 billion: ¥360 million in grants to producers’ associations and makers for training successors, new products and finding buyers (84 projects approved in fiscal 2026, 82 the year before, at up to two thirds of the cost), and ¥720 million for the Association, which certifies master craftspeople and runs exhibitions.[3] That is about ¥22,500 a year for each of the 48,000 workers. Paying those 48,000 people ¥70,000 a month would cost about ¥40.3 billion a year, about 37 times the current budget. Neither figure is a proposal; they show the scale.
+
+#### Ireland: €325 a week for artists
+
+The closest test of an income floor for creative work is Ireland’s Basic Income for the Arts. In 2022, 2,000 artists and arts workers were picked by lottery from 8,206 eligible applicants and paid €325 a week, about €16,900 a year, from 29 August 2022; the pilot was later extended to February 2026. The payment is taxable. Another 1,000 eligible applicants formed a control group and were paid €650 a year to answer surveys.[11]
+
+The government’s two-year impact assessment, published in September 2025, compared the two groups. Recipients spent 11 hours a week more on their creative practice, were 14 percentage points more likely to have completed new works, and spent 3.5 hours a week less working in other sectors. They were 15 points less likely to have felt downhearted or depressed and 16 points less likely to have had anxiety, and rated their life satisfaction 7 out of 10 against 6 for the control group.[12] A cost-benefit analysis for the department put the gross cost at about €114 million from 2021 to 2025 and estimated €1.39 of benefit to society for every €1 of public money, most of it in wellbeing.[13]
+
+Ireland kept the scheme. In February 2026 the government announced a successor scheme with €18.27 million from Budget 2026: €325 a week for three years to 2,000 artists, in three-year cycles, again chosen at random.[14] Applications ran from 15 April to 12 May 2026; 10,030 were received, so about one applicant in five (20%) can get a place.[15] Payments are backdated to September 2026, Budget 2027 set aside €34.4 million, and the department notified 780 people from 15 October and a further 450 on 12 November 2026.[15][16] It is still a payment to a selected group, not a basic income for everyone.
+
+#### What the data can’t tell us
+
+The ¥120,000 figure comes from one person’s post, not from a survey of job offers, and there is no official pay figure for craft workers or apprentices. The wage survey leaves out the smallest workshops, and METI’s own text has no production figure after fiscal 2017. No one has measured whether a basic income in Japan would keep people in crafts. Ireland’s results come from 2,000 artists chosen from applicants and paid for three years, not from a payment to everyone, and they cover the arts in general rather than crafts. What the figures do show is a workforce that has shrunk to about a sixth of its peak and is growing older, starting pay that can be far below the minimum wage for full-time hours, and a state budget for the sector of about ¥1.08 billion a year. The figures are collected, with sources and dates, in crafts-2026.json (https://neteru-nyukin.eltociear.workers.dev/crafts-2026.json).
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-inflation/
+
+Sources:
+
+1. Japan Craft Sangyo Association (Tomohiro Haraoka) — paper 4 for the Small and Medium Enterprise Agency’s small business basic policy subcommittee (12 October 2018; PDF, in Japanese): workers peaked at 288,000 in 1979 and production at ¥541 billion in 1983, from the Association for the Promotion of Traditional Craft Industries’ data: https://www.chusho.meti.go.jp/koukai/shingikai/syoukibokihon/2018/download/181012syoukiboKihon04.pdf
+2. Ministry of Internal Affairs and Communications, Administrative Evaluation Bureau — survey on the use of traditional crafts as regional resources, report (June 2022; PDF, in Japanese): production about ¥278.4 billion in FY1998 and ¥92.7 billion in FY2017; workers about 115,000 and 58,000: https://www.soumu.go.jp/main_content/000818488.pdf
+3. Ministry of Economy, Trade and Industry — explanatory material on traditional crafts for the Agency for Cultural Affairs’ council (July 2026; PDF, in Japanese): about 48,000 workers in FY2022, age structure, 244 designated crafts, FY2026 budget of ¥1.08 billion and 84 approved projects: https://www.bunka.go.jp/seisaku/bunkashingikai/bunkazai/kikaku/r07_r08/05/pdf/94408301_03.pdf
+4. Ministry of Economy, Trade and Industry — traditional crafts: 244 designated crafts as of 27 October 2025 (in Japanese); Kanto Bureau of Economy, Trade and Industry — Tokyo hand-carved seals designated (27 October 2025; PDF): https://www.meti.go.jp/policy/mono_info_service/mono/nichiyo-densan/index.html (also https://www.kanto.meti.go.jp/press/data/20251027densan_press.pdf)
+5. Ministry of Economy, Trade and Industry — secretariat paper for the 15th meeting of the entertainment and creative policy study group (9 March 2026; PDF, in Japanese): workers could halve within ten years; would-be apprentices turned down because the work does not pay: https://www.meti.go.jp/shingikai/mono_info_service/entertainment_creative/pdf/015_03_00.pdf
+6. Ministry of Health, Labour and Welfare — FY2026 regional minimum wages: national weighted average ¥1,177 (¥1,121 the year before), in force from 1 October to 2 December 2026 (3 September 2026, in Japanese): https://www.mhlw.go.jp/stf/newpage_75950.html (also https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/)
+7. Ministry of Health, Labour and Welfare — “Public assistance and the minimum wage”, material for the Central Minimum Wages Council’s subcommittee (10 July 2026; PDF posted by the Niigata Labour Bureau, in Japanese): 173.8 working hours a month: https://jsite.mhlw.go.jp/niigata-roudoukyoku/content/contents/B2_H2_R080820_3.pdf
+8. Ministry of Health, Labour and Welfare — 2025 Basic Survey on Wage Structure, summary (March 2026; PDF, in Japanese): scheduled monthly earnings of general workers ¥340,600: https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2025/dl/13.pdf
+9. e-Stat — 2025 Basic Survey on Wage Structure, general workers by occupation, table 1 (firms with 10 or more employees; Excel, in Japanese): https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421116&fileKind=4
+10. Free Lunch Lab — japan-2026.json: population and national tax revenue with sources, behind the essay on the cost of a basic income in Japan (CC BY 4.0): https://neteru-nyukin.eltociear.workers.dev/japan-2026.json
+11. Government of Ireland, Department of Culture, Communications and Sport — Basic Income for the Arts pilot scheme: first payments issue (28 October 2022); six-month extension to February 2026 (19 June 2025): https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/basic-income-for-the-arts-bia-pilot-scheme-first-payments-issue/ (also https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/minister-odonovan-announces-6-month-extension-to-the-basic-income-for-the-arts-pilot-scheme)
+12. Government of Ireland — Basic Income for the Arts: Impact Assessment (2 years) (September 2025; PDF): https://assets.gov.ie/static/documents/25207450/2-year_report.pdf
+13. Government of Ireland, Department of Culture, Communications and Sport — Alma Economics, Cost-benefit analysis for the Basic Income for the Arts, final report (29 September 2025; PDF): about €114 million gross cost 2021–2025, €1.39 per €1: https://assets.gov.ie/static/documents/b87d2659/20250929_BIA_CBA_Final_Report.pdf
+14. Government of Ireland, Department of Culture, Communications and Sport — Minister announces the new Basic Income for the Arts scheme (10 February 2026): https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/minister-odonovan-announces-the-new-basic-income-for-the-arts-scheme
+15. EY — Basic Income for the Arts scheme 2026–2029: selection report, 10,030 applications (31 July 2026; PDF); Department of Culture, Communications and Sport — first tranche of successful applicants, €34.4 million in Budget 2027 (13 October 2026): https://assets.gov.ie/static/documents/5b39e11d/FINAL_REPORT_-_EY_DCCS_BIA_Scheme_Selection_31_July_2026_NOT_PASSWORD_PROTECTED.pdf (also https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/minister-odonovan-announces-notification-of-first-tranche-of-successful-applicants-for-the-new-basic-income-for-the-arts-scheme/)
+16. Government of Ireland, Department of Culture, Communications and Sport — Second tranche of Basic Income for the Arts scheme recipients to be notified (12 November 2026): https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/second-tranche-of-basic-income-for-the-arts-scheme-recipients-to-be-notified/
+
 ### Does a basic income cause inflation?
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-inflation/
@@ -1405,6 +1487,8 @@ Consumption tax. The yardstick uses the rates in force in FY2025 and the revenue
 
 Not a proposal. The amounts are yardsticks. Nothing here says whether Japan should introduce a basic income; the numbers only show the size of the sums.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-inflation/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-unemployment-basic-income/
@@ -1802,6 +1886,8 @@ Many pilot results rest on self-reported surveys. Estimates also move as better 
 Opinion: Across more than fifty years of experiments, in rich countries and poor ones, no study found that cash makes people stop working. Most found small reductions or none, and some found more work. Where work fell, it fell by hours a week or weeks a year, mostly for parents, the young and people between jobs.
 
 Opinion: That is not the same as “basic income has no effect on work”. OpenResearch and the 1970s experiments measured real, if modest, reductions, and those numbers belong in any honest costing. The better question is not “will people stop working?” but “how much less, who, and is it worth it?” The data answer the first two parts. The third is a judgement for each of us.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
 
@@ -2282,6 +2368,8 @@ Japan has neither yet: no national income scheme for artists, and copyright rule
 Opinion: Here is what the evidence shows as of November 2026. Generative AI has cut demand for some kinds of creative work, especially illustration, translation and writing bought piece by piece, and the cuts are measurable on freelance platforms and visible in creators’ surveys. It has not ended creative work, and most of the scary figures in circulation are projections or fears rather than measurements. Compensation is starting to flow, but mostly to rights holders, once, and through lawsuits.
 
 Opinion: Creators are right to ask first for consent and pay. A basic income is not a substitute for that, and it should not be sold as one. But the best experiment we have, Ireland’s, suggests that a floor keeps people in their craft and steadies their lives at a moment when their markets are shifting under them. In part 1 (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/) we saw that the people hit first are the ones with the least protection. In creative work, that is the freelancer with no employer, no union and no claim on any settlement. That is exactly who a floor is for.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
 
@@ -2900,6 +2988,8 @@ Paying everyone would cost about ¥103 trillion a year. Even all of the pension 
 Opinion: When judging a basic income plan, it is worth looking past the amount to two questions: what is it traded for, and who pays it back? The same “¥70,000 a month” can be an entirely different system depending on the answers.
 
 In 2020 Japan did pay ¥100,000 to everyone, once, as the Special Cash Payment. We looked at how that money was used, with data, in our essay on the ¥100,000 payment (https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/).
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-basic-income-cost/
 
@@ -3847,7 +3937,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-23. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-24. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -3952,7 +4042,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-22
+- Last commit: 2026-11-23
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -4099,7 +4189,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: TypeScript
 - License: AGPL-3.0
 - Stars: 6
-- Last commit: 2026-11-22
+- Last commit: 2026-11-23
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app
@@ -4111,7 +4201,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-22
+- Last commit: 2026-11-23
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s
@@ -4229,7 +4319,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 43
-- Last commit: 2026-11-20
+- Last commit: 2026-11-23
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 

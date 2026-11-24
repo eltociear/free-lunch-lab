@@ -1383,6 +1383,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-8e1bf25b96.woff2",
     "chars": "〇【】㎥奨抑掛措揮架桑泉灯絶航邸震騰"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-ee12f7cf9c.woff2",
+    "chars": "倒嘆宮展崎弟彫拓漸礼窯紡繊衣軒－"
    }
   ],
   "ja:body:700": [
@@ -1673,6 +1677,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-5f5fc47327.woff2",
     "chars": "〇【】㎥奨抑掛措揮架桑泉灯絶航邸震騰"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-4bd8b5d22c.woff2",
+    "chars": "倒嘆宮展崎弟彫拓漸礼窯紡繊衣軒－"
    }
   ],
   "ja:display": [
@@ -1863,6 +1871,10 @@
    {
     "file": "dela-gothic-one-400-ja-420cdc3e68.woff2",
     "chars": "【】低住区帯府手政整施末油治源町討課調財重非"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-50456a2974.woff2",
+    "chars": "伝工賃"
    }
   ],
   "ja:dot": [
@@ -2223,6 +2235,10 @@
    {
     "file": "noto-sans-sc-400-zh-8a9da0ec82.woff2",
     "chars": "〇【】丙兆戳抄旬柴液灯烷熊震"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-af6196a504.woff2",
+    "chars": "崎怨拓拯瓷纺"
    }
   ],
   "zh:body:700": [
@@ -2529,6 +2545,10 @@
    {
     "file": "noto-sans-sc-700-zh-6b1aae4baa.woff2",
     "chars": "〇【】丙兆戳抄旬柴液灯烷熊震"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-cfbb4357b3.woff2",
+    "chars": "崎怨拓拯瓷纺"
    }
   ],
   "zh:display": [
@@ -2719,6 +2739,10 @@
    {
     "file": "noto-sans-sc-900-zh-64ce7a05b9.woff2",
     "chars": "【】低居府控政料施末柴汽油町谨防除"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-74fc649ae0.woff2",
+    "chars": "传剩招聘"
    }
   ],
   "zh:dot": [

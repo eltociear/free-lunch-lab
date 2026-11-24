@@ -108,6 +108,7 @@ const ESSAY_DATA = {
   'us-basic-income-cost': { calc: ['us'], pilots: true },
   'ai-company-profits-per-person': { calc: ['us', 'jp'] },
   'basic-income-inflation': { calc: ['jp', 'us', 'ke'], pilots: true },
+  'traditional-crafts-basic-income': { calc: ['jp', 'ie'] },
 };
 for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
@@ -404,6 +405,44 @@ const infDrift = (() => {
   }
   return bad.length ? `WARNING: ${e.id}: numbers differ from data/inflation-2026.json, data/japan-2026.json or data/us-2026.json: ${bad.join('; ')}; update the essay (all languages)` : '';
 })();
+// データエッセイ共通の確かめ（basic-income-inflation と同じ決まり）: data/{file} の essay のエッセイが kind も意見の段落（o）も持たないこと、
+// ar はラテン文字と $ € を LRI/PDI の中だけに、hi は CJK と isolate なし、事実ごとに source・asOf・日付か注、
+// 各言語の本文と desc に、事実ごとの digits（入れ子の配列はどれか1つ）と、want(F) で計算し直した数字（同じくどれか1つ）があること
+function dataEssayDrift(file, want) {
+  const D = require(`./data/${file}`);
+  const e = ESSAYS.find(x => x.id === D.essay);
+  if (!e) throw new Error(`${file}: unknown essay ${D.essay}`);
+  if (e.kind || LANGS.some(l => e.blocks[l].some(([k]) => k === 'o'))) throw new Error(`${e.id}: a data essay has no kind and no opinion paragraphs`);
+  const lat = /[A-Za-z$€]/, iso = /⁦[^⁩]*⁩/g;
+  for (const [k, t] of e.blocks.ar) if (k !== 'k' && lat.test((k === 't' ? t : t.replace(ESSAY_LINK, '$1')).replace(iso, ''))) throw new Error(`${e.id}.ar: Latin text outside LRI/PDI: ${t.slice(0, 60)}`);
+  for (const t of [e.title.ar, e.desc.ar]) if (lat.test(t.replace(iso, ''))) throw new Error(`${e.id}.ar: Latin text outside LRI/PDI in title/desc`);
+  for (const t of [e.title.hi, e.desc.hi, ...e.blocks.hi.map(b => b[1])]) if (/[　-鿿＀-￯⁦-⁩]/.test(t)) throw new Error(`${e.id}.hi: CJK or isolate characters`);
+  for (const f of D.facts) if (!f.source || !f.asOf || !(f.date || f.year || f.period || f.note)) throw new Error(`${file} ${f.id}: needs a source, asOf and a date or note`);
+  const F = Object.fromEntries(D.facts.map(f => [f.id, f]));
+  const W = Object.fromEntries(Object.entries(want(F)).map(([k, v]) => [k, [].concat(v).map(String)]));
+  for (const f of D.facts) for (const d of f.digits || []) W[`${f.id}:${[].concat(d)[0]}`] = [].concat(d).map(String);
+  const bad = [];
+  for (const l of LANGS) {
+    const text = [e.desc[l], ...e.blocks[l].map(b => b[1])].join('\n').replace(/\[\d+\]/g, ' ').replace(/[⁦-⁩]/g, '');
+    const nums = new Set((text.match(/\d[\d.,  ]*\d|\d/g) || []).map(x => x.replace(/\D/g, '')));
+    const miss = Object.entries(W).filter(([, alts]) => !alts.some(v => nums.has(v.replace(/\D/g, '')))).map(([k, v]) => `${k}=${v[0]}`);
+    if (miss.length) bad.push(`${l} lacks ${miss.join(', ')}`);
+  }
+  return bad.length ? `WARNING: ${e.id}: numbers differ from data/${file}: ${bad.join('; ')}; update the essay (all languages)` : '';
+}
+// データエッセイ traditional-crafts-basic-income: data/crafts-2026.json の digits に加えて、最低賃金×月173.8時間、12万円を173.8時間で割った時給、
+// 12万円に月1万円・月7万円を足した額、2022年度の従業員がピークの何%か、全員に月1万円・月7万円の費用と税収に対する割合（data/japan-2026.json）、
+// 予算を従業員で割った額、従業員に月7万円を配った額とその予算の何倍か、アイルランドの週325ユーロの1年分と当選の確率を計算し直して確かめる
+const CRAFTS = require('./data/crafts-2026.json');
+const craftsDrift = dataEssayDrift('crafts-2026.json', F => {
+  const P = JPN.population.value, lv = id => JPN.levels.find(x => x.id === id).monthly, hook = CRAFTS.hook.value;
+  const c70 = P * lv('takenaka') * 12, c10 = P * lv('10k') * 12, staff = F.workers2022.value, bi70 = staff * lv('takenaka') * 12;
+  return { mwMonthly: Math.round(F.minWage.value * F.hours.value), hookHourly: Math.round(hook / F.hours.value),
+    hook10: [hook + lv('10k'), (hook + lv('10k')) / 1e4], hook70: [hook + lv('takenaka'), (hook + lv('takenaka')) / 1e4],
+    peakShare: (staff / F.peakWorkers.value * 100).toFixed(0), cost10: (c10 / 1e12).toFixed(1), cost70: (c70 / 1e12).toFixed(1), pct70: (c70 / JPN.taxRevenue.value * 100).toFixed(0),
+    perWorker: Math.round(F.budget.value / staff), craftBi70: [(bi70 / 1e8).toFixed(0), String(Math.round(bi70 / 1e8) * 100)], craftBiTimes: (bi70 / F.budget.value).toFixed(0),
+    biaYear: F.biaPilot.value * 52, biaOdds: (2000 / F.biaApplicants.value * 100).toFixed(0) };
+});
 const mapRegionName = (lang, id) => { const c = CALC_WORLD.find(x => x.id === id); if (c) return c.name[lang]; try { return new Intl.DisplayNames([LANG_TAG[lang]], { type: 'region' }).of(id.toUpperCase()); } catch { return id.toUpperCase(); } };
 const mapYear = (lang, r) => (r.base ? (r.base.year ? String(r.base.year) : T[lang].mapBudgetYear) : '');
 function mapTip(lang, r, id) {
@@ -3741,6 +3780,7 @@ if (usDrift) console.warn(usDrift);
 for (const w of aipDrift) console.warn(`WARNING: ai-company-profits-per-person: ${w}`);
 if (aijDrift) console.warn(aijDrift);
 if (infDrift) console.warn(infDrift);
+if (craftsDrift) console.warn(craftsDrift);
 { const w = wrpDrift(); if (w) console.warn(w); else console.log(`worker relief payment: the page carries every figure of data/worker-relief-2026.json in ${LANGS.length} languages`); }
 { const w = jbDrift(); if (w) console.warn(w); else console.log(`japan benefits: the page carries every figure of data/japan-benefits-2026.json in ${LANGS.length} languages`); }
 if (workDrift) console.warn(workDrift);
@@ -4210,6 +4250,7 @@ const ESSAY_FILES = {
   'germany-2026.json': { essay: 'germany-merz-basic-income-cost', license: 'CC BY 4.0 (figures from the official sources named in each entry)' },
   'us-2026.json': { essay: 'us-basic-income-cost', license: 'CC BY 4.0 (figures from the official sources named in each entry; pilot counts from this site\'s list)' },
   'inflation-2026.json': { essay: 'basic-income-inflation', license: 'CC BY 4.0 (figures from the papers and official sources named in each entry)' },
+  'crafts-2026.json': { essay: 'traditional-crafts-basic-income', license: 'CC BY 4.0 (figures from the official sources named in each entry)' },
   'japan-benefits-2026.json': { page: () => jbAbs(DEFAULT_LANG), license: 'CC BY 4.0 (figures from the government, Diet, municipal and news sources named in each entry)' },
   'worker-relief-2026.json': { page: () => wrpAbs(DEFAULT_LANG), license: 'CC BY 4.0 (figures from the bill, the government documents, the Diet record and the news reports named in each entry)' },
 };
@@ -4235,6 +4276,7 @@ const CSV_ROWS = {
   'worker-relief-2026.csv': PUB['worker-relief-2026.json'].facts.map(({ digits, value, ...f }) => ({ figure: f.id, value, unit: f.unit ?? null, status: f.status, date: f.date ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, asOf: f.asOf })),
   'japan-benefits-2026.csv': PUB['japan-benefits-2026.json'].facts.map(({ digits, value, sourceLabel, ...f }) => ({ figure: f.id, item: f.item, value: Array.isArray(value) ? value.join(';') : value, unit: f.unit ?? null, status: f.status, date: f.date ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, sourceLabelJa: sourceLabel.ja, sourceLabelEn: sourceLabel.en, asOf: f.asOf, sameAs: f.wrp ? `worker-relief-2026.json#${f.wrp}` : null })),
   'inflation-2026.csv': PUB['inflation-2026.json'].facts.map(({ digits, value, ...f }) => ({ figure: f.id, value: Array.isArray(value) ? value.join(';') : value, unit: f.unit ?? null, date: f.date ?? null, year: f.year ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, asOf: f.asOf })),
+  'crafts-2026.csv': PUB['crafts-2026.json'].facts.map(({ digits, value, ...f }) => ({ figure: f.id, value: Array.isArray(value) ? value.join(';') : value, unit: f.unit ?? null, date: f.date ?? null, year: f.year ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, asOf: f.asOf })),
 };
 const CSV = {};
 for (const [file, rows] of Object.entries(CSV_ROWS)) {
@@ -4246,7 +4288,7 @@ for (const [file, obj] of Object.entries(PUB)) fs.writeFileSync(path.join(OUT, f
 // データセットごとの行・項目（CSV があれば CSV の列、なければ JSON の1行目のキー）
 const DS_ROWS = {
   countries: countriesJson.countries, 'us-pilots': usPilotsJson.pilots, news: biNewsJson.weeks.flatMap(w => w.items), services: servicesJson.services, graveyard: graveJson.graveyard,
-  'open-source': ossJson.projects, 'open-data': dataJson.datasets, 'billionaires-2026': CSV_ROWS['billionaires-2026.csv'], 'ai-profits-2026': CSV_ROWS['ai-profits-2026.csv'], 'japan-2026': CSV_ROWS['japan-2026.csv'], 'germany-2026': CSV_ROWS['germany-2026.csv'], 'us-2026': CSV_ROWS['us-2026.csv'], 'inflation-2026': CSV_ROWS['inflation-2026.csv'], 'worker-relief-2026': CSV_ROWS['worker-relief-2026.csv'], 'japan-benefits-2026': CSV_ROWS['japan-benefits-2026.csv'],
+  'open-source': ossJson.projects, 'open-data': dataJson.datasets, 'billionaires-2026': CSV_ROWS['billionaires-2026.csv'], 'ai-profits-2026': CSV_ROWS['ai-profits-2026.csv'], 'japan-2026': CSV_ROWS['japan-2026.csv'], 'germany-2026': CSV_ROWS['germany-2026.csv'], 'us-2026': CSV_ROWS['us-2026.csv'], 'inflation-2026': CSV_ROWS['inflation-2026.csv'], 'crafts-2026': CSV_ROWS['crafts-2026.csv'], 'worker-relief-2026': CSV_ROWS['worker-relief-2026.csv'], 'japan-benefits-2026': CSV_ROWS['japan-benefits-2026.csv'],
 };
 {
   const seen = new Set();

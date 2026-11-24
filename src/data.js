@@ -2937,6 +2937,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-24",
+      "en": "Published the data essay “¥120,000 job offers, a ¥70,000 basic income and Japan’s crafts”",
+      "ja": "データエッセイ『月給12万円の求人と、月7万円のベーシックインカム。伝統工芸の担い手はなぜ減ったのか、データで見る』を公開",
+      "zh": "发布数据随笔《月薪12万日元的招聘与每月7万日元的基本收入：日本传统工艺为何留不住手艺人》",
+      "hi": "डेटा निबंध “1,20,000 येन की नौकरी और 70,000 येन की बेसिक इनकम: जापान के शिल्प कारीगर क्यों घट रहे हैं” प्रकाशित",
+      "es": "Publicado el ensayo de datos «Un sueldo de 120.000 ¥ y una renta básica de 70.000 ¥: Japón se queda sin artesanos»",
+      "de": "Datenessay „120.000 ¥ Lohn, 70.000 ¥ Grundeinkommen: Japans Handwerk fehlt der Nachwuchs“ veröffentlicht",
+      "ar": "نشرنا مقال البيانات «وظيفة بـ120,000 ين ودخل أساسي بـ70,000 ين: لماذا تفقد حرف اليابان صنّاعها»"
+    },
+    {
       "date": "2026-11-23",
       "en": "The home page’s “Start with these 3” now begins with WAVEE, an invite-only job matching service, followed by Pawns.app and Sweatcoin",
       "ja": "トップページの「まず入れるならこの3つ」の1つ目を招待制の仕事マッチング「WAVEE」に変更（続いてPawns.app、Sweatcoin）",
@@ -11455,6 +11465,33 @@ module.exports = {
       }
     },
     {
+      "id": "crafts-2026",
+      "files": [
+        "crafts-2026.json",
+        "crafts-2026.csv"
+      ],
+      "page": "essays/traditional-crafts-basic-income/",
+      "lic": "odLicSrc",
+      "name": {
+        "en": "Japan’s traditional crafts, pay and basic income: the figures",
+        "ja": "伝統工芸の担い手・賃金・ベーシックインカムの数字",
+        "zh": "日本传统工艺的从业者、工资与基本收入：相关数字",
+        "hi": "जापान के पारंपरिक शिल्प, वेतन और बेसिक इनकम: आंकड़े",
+        "es": "Artesanía tradicional de Japón, salarios y renta básica: las cifras",
+        "de": "Japans traditionelles Handwerk, Löhne und Grundeinkommen: die Zahlen",
+        "ar": "الحرف التقليدية في اليابان والأجور والدخل الأساسي: الأرقام"
+      },
+      "desc": {
+        "en": "The figures behind the essay on Japan’s traditional crafts: workers and production since the peak, age structure, the designated crafts, METI’s budget, the minimum wage and wages, and Ireland’s Basic Income for the Arts, each with its source and date.",
+        "ja": "伝統工芸のエッセイに使った数字。ピークからの従業者数と生産額、年齢構成、指定品目、経産省の予算、最低賃金と賃金、アイルランドの芸術家向けベーシックインカム。それぞれ出典と日付つき。",
+        "zh": "日本传统工艺一文所用的数字：高峰以来的从业人数与产值、年龄结构、指定品类、经济产业省的预算、最低工资与工资，以及爱尔兰的艺术基本收入，每项均附来源和日期。",
+        "hi": "जापान के पारंपरिक शिल्प वाले निबंध के पीछे के आंकड़े: चरम के बाद से कामगार और उत्पादन, उम्र का ढांचा, घोषित शिल्प, METI का बजट, न्यूनतम वेतन और वेतन, और आयरलैंड की कलाकारों के लिए बेसिक इनकम, हर एक स्रोत और तारीख़ के साथ।",
+        "es": "Las cifras del ensayo sobre la artesanía tradicional de Japón: trabajadores y producción desde el máximo, edades, oficios reconocidos, presupuesto del METI, salario mínimo y salarios, y la renta básica para las artes de Irlanda, cada una con su fuente y fecha.",
+        "de": "Die Zahlen hinter dem Essay zu Japans traditionellem Handwerk: Beschäftigte und Produktion seit dem Höchststand, Altersstruktur, anerkannte Handwerke, METI-Budget, Mindestlohn und Löhne sowie Irlands Grundeinkommen für Kunstschaffende, jeweils mit Quelle und Datum.",
+        "ar": "الأرقام التي يقوم عليها مقال الحرف التقليدية في اليابان: العاملون والإنتاج منذ الذروة، والتركيب العمري، والحرف المعتمدة، وميزانية وزارة الاقتصاد، والحد الأدنى للأجور والأجور، والدخل الأساسي للفنانين في أيرلندا، لكل منها مصدره وتاريخه."
+      }
+    },
+    {
       "id": "worker-relief-2026",
       "files": [
         "worker-relief-2026.json",
@@ -19523,6 +19560,725 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "traditional-crafts-basic-income",
+      "date": "2026-11-24",
+      "related": [
+        "takenaka-70000-yen-basic-income",
+        "japan-basic-income-cost",
+        "generative-ai-creative-work-basic-income",
+        "does-cash-make-people-stop-working",
+        "basic-income-inflation"
+      ],
+      "title": {
+        "ja": "月給12万円の求人と、月7万円のベーシックインカム。伝統工芸の担い手はなぜ減ったのか、データで見る",
+        "en": "¥120,000 job offers, a ¥70,000 basic income and Japan’s crafts",
+        "zh": "月薪12万日元的招聘与每月7万日元的基本收入：日本传统工艺为何留不住手艺人",
+        "hi": "1,20,000 येन की नौकरी और 70,000 येन की बेसिक इनकम: जापान के शिल्प कारीगर क्यों घट रहे हैं",
+        "es": "Un sueldo de 120.000 ¥ y una renta básica de 70.000 ¥: Japón se queda sin artesanos",
+        "de": "120.000 ¥ Lohn, 70.000 ¥ Grundeinkommen: Japans Handwerk fehlt der Nachwuchs",
+        "ar": "وظيفة بـ120,000 ين ودخل أساسي بـ70,000 ين: لماذا تفقد حرف اليابان صنّاعها"
+      },
+      "desc": {
+        "ja": "伝統的工芸品の従業者は1979年のピークの約6分の1に。年齢構成、最低賃金との比較、国の支援、ベーシックインカムを足した場合、アイルランドの芸術家への週325ユーロをデータで見ます。",
+        "en": "Japan’s craft workforce is a sixth of its 1979 peak. Age, pay, state support, a basic income and Ireland’s €325 a week for artists.",
+        "zh": "日本传统工艺从业者已减至1979年峰值的约六分之一。用数据看年龄结构、薪资与最低工资的对比、国家支持、叠加基本收入的效果，以及爱尔兰每周发给艺术家的325欧元。",
+        "hi": "जापान में शिल्प कारीगर 1979 के शिखर के लगभग छठे हिस्से तक घट गए हैं। उम्र, न्यूनतम वेतन के मुक़ाबले कमाई, सरकारी मदद, बेसिक इनकम और आयरलैंड में कलाकारों के हफ़्ते के 325 यूरो पर आँकड़े।",
+        "es": "Los artesanos tradicionales de Japón son una sexta parte de los de 1979. Edad, sueldo y salario mínimo, ayudas, renta básica y los 325 € semanales de Irlanda.",
+        "de": "Ein Sechstel der Beschäftigten von 1979: Alter, Lohn und Mindestlohn, Förderung, Grundeinkommen und Irlands 325 € pro Woche für Kunstschaffende.",
+        "ar": "تقلّص العاملون في الحرف اليابانية إلى نحو سدس ذروة 1979. أرقام عن الأعمار والأجور والدعم والدخل الأساسي و325 يورو أسبوعيًا لفناني أيرلندا."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2026年11月、約200万回表示されたXの投稿が、よく聞く嘆きに数字を与えました。工房の倒産をきっかけに「日本文化を守るべき、継ぐ人を」という声が上がるなか、工芸を学ぶ学校を出た人が、学校に届いていた求人は軒並み額面で月給12万円ほどで、それでは普通に生活できない、と書いたのです。このエッセイは、その投稿の真偽を確かめるものではありません。公的な数字で、伝統的工芸品をつくる人が何人いて、何歳なのか、12万円が最低賃金やほかの賃金と比べてどうなのか、国がいくら使っているのか、月1万円・月7万円のベーシックインカムを足すとどうなるのか、そして芸術家に週325ユーロを配ったアイルランドで何がわかったのかを見ていきます。"
+          ],
+          [
+            "h",
+            "担い手はピークの6分の1"
+          ],
+          [
+            "p",
+            "伝統工芸は「伝統的工芸品産業の振興に関する法律」（伝産法）で守られています。経済産業大臣が指定する伝統的工芸品は、2025年10月27日時点で244品目。いちばん新しいのは東京手彫り印章です。[3][4] 伝統的工芸品産業振興協会のデータとして中小企業庁の審議会に2018年に出された資料によると、従業者数のピークは1979年の28.8万人、生産額のピークは1983年の5,410億円でした。[1]"
+          ],
+          [
+            "p",
+            "総務省の調査では、指定された伝統的工芸品の生産額は1998年度の約2,784億円から2017年度には約927億円へと約67%減り、従業員数も約11万5,000人から約5万8,000人へと半減しました。[2] 経済産業省によると、2022年度の従業員数は約4.8万人で、1979年のピークの約17%、およそ6分の1です。[3] 経産省の資料の本文には2022年度の生産額は書かれておらず、「平成28年度に1,000億円を下回って以降、漸減傾向」とあるだけです。"
+          ],
+          [
+            "t",
+            "年 | 従業者数 | 生産額 | 出典\n1979年 | 28.8万人（ピーク） | － | 協会のデータ、[1]に引用\n1983年 | － | 5,410億円（ピーク） | 協会のデータ、[1]に引用\n1998年度 | 約11万5,000人 | 約2,784億円 | [2]\n2017年度 | 約5万8,000人 | 約927億円 | [2]\n2022年度 | 約4.8万人 | 2016年度から1,000億円未満 | [3]"
+          ],
+          [
+            "h",
+            "残っているのは誰か"
+          ],
+          [
+            "p",
+            "担い手の高齢化は進んでいます。2022年度、伝統的工芸品の従事者のうち50歳代以上が63.6%を占め、70歳代以上は18.0%と、20歳代までの6.0%の3倍でした。[3] 経産省は2026年3月の研究会の資料で、10年以内に従事者が半減する可能性があること、伝統工芸を学びたい人がいても「稼げないから」という理由で弟子入りを断るケースも生じていることを書いています。[5]"
+          ],
+          [
+            "h",
+            "12万円と最低賃金"
+          ],
+          [
+            "p",
+            "2026年度の最低賃金は全国加重平均で時給1,177円（前年度1,121円）です。10月1日から12月2日にかけて順次発効し、最も低い宮崎県が1,085円、最も高い東京都が1,280円です。[6] 厚生労働省は最低賃金と生活保護を比べるとき、1か月の労働時間を173.8時間としています。[7] この時間で平均の最低賃金で働くと、額面で月204,563円です。同じ173.8時間で12万円を割ると時給約690円になり、どの都道府県の最低賃金よりも低くなります。投稿は求人が何時間の勤務かを書いていないので、これは比較であって、その求人について確かめたことではありません。"
+          ],
+          [
+            "p",
+            "伝統工芸の従事者の賃金を示す公的な統計はありません。近い職種を2025年の賃金構造基本統計調査（常用労働者10人以上の企業）で見ると、一般労働者の所定内給与額は、窯業・土石製品製造従事者が283,900円、木・紙製品製造従事者が269,700円、紡織・衣服・繊維製品製造従事者が221,000円で、全体は340,600円です。[8][9] 従業員が10人に満たない工房も多く、そうした工房はこの数字に入っていません。"
+          ],
+          [
+            "h",
+            "ベーシックインカムを足すと"
+          ],
+          [
+            "p",
+            "ベーシックインカムは仕事に関係なく全員に配るもので、工芸の仕事だけにお金を出すものではありません。月12万円の人ひとりで見ると、月1万円なら13万円、竹中平蔵氏が2020年に示した月7万円なら19万円になります。それでも、平均の最低賃金でフルタイムで働いた月204,563円には届きません。反対側には費用があります。日本に住む全員に月1万円なら年約14.7兆円、月7万円なら年約103.2兆円で、国の税収の122%です。[10] {5つの金額での費用|/essays/japan-basic-income-cost/}と{月7万円の案|/essays/takenaka-70000-yen-basic-income/}は別のエッセイで詳しく見ています。下の計算機では、家族ごとの金額を計算できます。"
+          ],
+          [
+            "k",
+            "hh-essay-crafts"
+          ],
+          [
+            "h",
+            "国がいま工芸に使っているお金"
+          ],
+          [
+            "p",
+            "経産省の2026年度の伝統的工芸品の予算は10.8億円です。内訳は、産地組合や事業者が行う後継者育成、新商品開発、需要開拓などへの「支援補助金」が3.6億円（2026年度は84件採択、前年度は82件、補助率は最大3分の2）、伝統工芸士の認定や展示販売会などを行う伝統的工芸品産業振興協会への「振興補助金」が7.2億円です。[3] 4.8万人の従業員1人あたりにすると年約22,500円。4.8万人に月7万円を配ると年約403億円で、いまの予算の約37倍です。どちらも提案ではなく、規模を示すための計算です。"
+          ],
+          [
+            "h",
+            "アイルランド：芸術家に週325ユーロ"
+          ],
+          [
+            "p",
+            "創作の仕事に「収入の床」を設けた例でいちばん近いのは、アイルランドの「芸術のためのベーシックインカム（Basic Income for the Arts）」です。2022年、条件を満たした8,206人の応募者から抽選で選ばれた芸術家と芸術関連の仕事をする2,000人が、2022年8月29日から週325ユーロ（年約16,900ユーロ）を受け取りました。試行はのちに2026年2月まで延長されています。給付は課税対象です。条件を満たした別の1,000人が比較グループになり、調査に答える謝礼として年650ユーロを受け取りました。[11]"
+          ],
+          [
+            "p",
+            "政府が2025年9月に公表した2年間の影響評価は、2つのグループを比べています。受給者は創作活動に使う時間が週11時間多く、新しい作品を完成させた確率が14ポイント高く、芸術以外の仕事に使う時間は週3.5時間少なくなりました。落ち込みやうつを感じた確率は15ポイント、不安を感じた確率は16ポイント低く、生活満足度は10点満点で受給者が7、比較グループが6でした。[12] 文化省の委託による費用便益分析は、2021年から2025年の総費用を約1億1,400万ユーロとし、公的資金1ユーロにつき社会に1.39ユーロの便益があったと推計しました。便益の多くは心身の健康です。[13]"
+          ],
+          [
+            "p",
+            "アイルランドはこの制度を続けることにしました。政府は2026年2月、2026年度予算の1,827万ユーロで後継の制度を始めると発表しました。2,000人の芸術家に週325ユーロを3年間、3年ごとのサイクルで、今回も無作為に選びます。[14] 募集は2026年4月15日から5月12日までで、応募は10,030件。枠に入れるのは応募者の約5人に1人（20%）です。[15] 支払いは2026年9月にさかのぼり、2027年度予算で3,440万ユーロが確保されました。文化省は10月15日から780人に、11月12日にさらに450人に通知しています。[15][16] ただし、これも選ばれた人への給付で、全員に配るベーシックインカムではありません。"
+          ],
+          [
+            "h",
+            "データにもわからないこと"
+          ],
+          [
+            "p",
+            "12万円という数字は1人の投稿によるもので、求人を調べた統計ではありません。伝統工芸の職人や見習いの賃金を示す公的な数字もありません。賃金の統計はいちばん小さな工房を含まず、総務省の調査にある生産額は2017年度まで、経産省の資料の本文にもその後の生産額はありません。日本でベーシックインカムが工芸の担い手を引き留めるかどうかは、誰も測っていません。アイルランドの結果は、応募者から選んだ2,000人の芸術家に3年間払ったもので、全員への給付ではなく、工芸ではなく芸術全般が対象です。数字が示しているのは、担い手がピークの約6分の1に減って高齢化が進んでいること、フルタイムの時間で割ると最低賃金を大きく下回る初任給がありうること、そして国の工芸への予算が年約10.8億円であることです。このエッセイの数字は、出典と日付とともに{crafts-2026.json|/crafts-2026.json}にまとめています。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "In November 2026 an X post viewed about two million times put a number on a familiar complaint. Responding to talk of saving Japan’s traditional crafts as workshops close, a graduate of a craft school wrote that the job offers reaching the school were almost all about ¥120,000 a month before tax, which nobody can live on. This essay does not try to check that post. It sets out what the official figures say: how many people make Japan’s traditional crafts, how old they are, how ¥120,000 compares with the minimum wage and with other wages, what the state spends, what a basic income of ¥10,000 or ¥70,000 a month would add, and what Ireland found when it paid artists €325 a week."
+          ],
+          [
+            "h",
+            "A sixth of the peak"
+          ],
+          [
+            "p",
+            "Japan protects its crafts under a law on promoting traditional craft industries. As of 27 October 2025 the Minister of Economy, Trade and Industry had designated 244 traditional crafts (dentōteki kōgeihin), the latest being Tokyo hand-carved seals.[3][4] Figures from the Association for the Promotion of Traditional Craft Industries, as cited in a 2018 paper for the Small and Medium Enterprise Agency’s advisory council, put the peak at 288,000 workers in 1979 and production at ¥541 billion in 1983.[1]"
+          ],
+          [
+            "p",
+            "The Ministry of Internal Affairs and Communications found that production of the designated crafts fell from about ¥278.4 billion in fiscal 1998 to about ¥92.7 billion in fiscal 2017, a drop of about 67%, while the number of workers halved from about 115,000 to about 58,000.[2] In fiscal 2022 there were about 48,000 workers, according to the Ministry of Economy, Trade and Industry (METI), about 17% of the 1979 peak, or roughly one in six.[3] METI’s text does not give a production figure for fiscal 2022; it says only that production has kept edging down since it fell below ¥100 billion in fiscal 2016."
+          ],
+          [
+            "t",
+            "Year | Workers | Production | Source\n1979 | 288,000 (peak) | – | Association data, cited in [1]\n1983 | – | ¥541 billion (peak) | Association data, cited in [1]\nFiscal 1998 | about 115,000 | about ¥278.4 billion | [2]\nFiscal 2017 | about 58,000 | about ¥92.7 billion | [2]\nFiscal 2022 | about 48,000 | below ¥100 billion since fiscal 2016 | [3]"
+          ],
+          [
+            "h",
+            "Who is left"
+          ],
+          [
+            "p",
+            "The workforce is old. In fiscal 2022, 63.6% of people working in the designated crafts were in their 50s or older, and 18.0% were 70 or older, three times the 6.0% aged 29 or younger.[3] In a paper for a study group in March 2026, METI wrote that the number of workers could halve within ten years, and that some workshops were turning down people who wanted to learn a craft, because the work does not pay.[5]"
+          ],
+          [
+            "h",
+            "¥120,000 against the minimum wage"
+          ],
+          [
+            "p",
+            "For fiscal 2026 the national weighted average minimum wage is ¥1,177 an hour, up from ¥1,121; the new rates took effect between 1 October and 2 December 2026, from ¥1,085 in Miyazaki to ¥1,280 in Tokyo.[6] The Ministry of Health, Labour and Welfare compares the minimum wage with public assistance using 173.8 working hours a month.[7] At that rate, full-time work at the average minimum wage pays ¥204,563 a month before tax. Spread over the same 173.8 hours, ¥120,000 comes to about ¥690 an hour, below the lowest minimum wage in any prefecture. The post did not say how many hours the offers were for, so this is a comparison, not a finding about those jobs."
+          ],
+          [
+            "p",
+            "There is no official wage figure for traditional craft workers. The nearest categories in the 2025 Basic Survey on Wage Structure, which covers firms with ten or more employees, give scheduled monthly earnings of ¥283,900 for ceramic and stone products workers, ¥269,700 for wood and paper products workers and ¥221,000 for textile and clothing workers, against ¥340,600 for all full-time workers.[8][9] Many craft workshops are smaller than ten people and are not in these figures."
+          ],
+          [
+            "h",
+            "What a basic income would add"
+          ],
+          [
+            "p",
+            "A basic income is paid to everyone, whatever their job, so it would not pay crafts in particular. For one person on ¥120,000 a month, ¥10,000 a month would make ¥130,000 and ¥70,000 a month, the figure Heizo Takenaka proposed in 2020, would make ¥190,000, still below the ¥204,563 of a full-time job at the average minimum wage. The other side is the bill: for everyone in Japan, ¥10,000 a month costs about ¥14.7 trillion a year and ¥70,000 a month about ¥103.2 trillion, 122% of national tax revenue.[10] {The cost at five amounts|/essays/japan-basic-income-cost/} and {the ¥70,000 plan|/essays/takenaka-70000-yen-basic-income/} are covered in separate essays, and the calculator below works it out for a household."
+          ],
+          [
+            "k",
+            "hh-essay-crafts"
+          ],
+          [
+            "h",
+            "What the state spends on crafts now"
+          ],
+          [
+            "p",
+            "METI’s budget for traditional crafts in fiscal 2026 is ¥1.08 billion: ¥360 million in grants to producers’ associations and makers for training successors, new products and finding buyers (84 projects approved in fiscal 2026, 82 the year before, at up to two thirds of the cost), and ¥720 million for the Association, which certifies master craftspeople and runs exhibitions.[3] That is about ¥22,500 a year for each of the 48,000 workers. Paying those 48,000 people ¥70,000 a month would cost about ¥40.3 billion a year, about 37 times the current budget. Neither figure is a proposal; they show the scale."
+          ],
+          [
+            "h",
+            "Ireland: €325 a week for artists"
+          ],
+          [
+            "p",
+            "The closest test of an income floor for creative work is Ireland’s Basic Income for the Arts. In 2022, 2,000 artists and arts workers were picked by lottery from 8,206 eligible applicants and paid €325 a week, about €16,900 a year, from 29 August 2022; the pilot was later extended to February 2026. The payment is taxable. Another 1,000 eligible applicants formed a control group and were paid €650 a year to answer surveys.[11]"
+          ],
+          [
+            "p",
+            "The government’s two-year impact assessment, published in September 2025, compared the two groups. Recipients spent 11 hours a week more on their creative practice, were 14 percentage points more likely to have completed new works, and spent 3.5 hours a week less working in other sectors. They were 15 points less likely to have felt downhearted or depressed and 16 points less likely to have had anxiety, and rated their life satisfaction 7 out of 10 against 6 for the control group.[12] A cost-benefit analysis for the department put the gross cost at about €114 million from 2021 to 2025 and estimated €1.39 of benefit to society for every €1 of public money, most of it in wellbeing.[13]"
+          ],
+          [
+            "p",
+            "Ireland kept the scheme. In February 2026 the government announced a successor scheme with €18.27 million from Budget 2026: €325 a week for three years to 2,000 artists, in three-year cycles, again chosen at random.[14] Applications ran from 15 April to 12 May 2026; 10,030 were received, so about one applicant in five (20%) can get a place.[15] Payments are backdated to September 2026, Budget 2027 set aside €34.4 million, and the department notified 780 people from 15 October and a further 450 on 12 November 2026.[15][16] It is still a payment to a selected group, not a basic income for everyone."
+          ],
+          [
+            "h",
+            "What the data can’t tell us"
+          ],
+          [
+            "p",
+            "The ¥120,000 figure comes from one person’s post, not from a survey of job offers, and there is no official pay figure for craft workers or apprentices. The wage survey leaves out the smallest workshops, and METI’s own text has no production figure after fiscal 2017. No one has measured whether a basic income in Japan would keep people in crafts. Ireland’s results come from 2,000 artists chosen from applicants and paid for three years, not from a payment to everyone, and they cover the arts in general rather than crafts. What the figures do show is a workforce that has shrunk to about a sixth of its peak and is growing older, starting pay that can be far below the minimum wage for full-time hours, and a state budget for the sector of about ¥1.08 billion a year. The figures are collected, with sources and dates, in {crafts-2026.json|/crafts-2026.json}."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026年11月，一条在X上被浏览约200万次的帖子，为一种常见的抱怨给出了具体数字。在工坊相继倒闭、“应当拯救日本传统工艺”的呼声中，一位工艺学校的毕业生写道：学校收到的招聘几乎都是税前月薪约12万日元，靠这点钱根本无法生活。本文不打算核实这条帖子，而是梳理官方数据：日本传统工艺有多少从业者、他们多大年纪、12万日元与最低工资及其他工资相比如何、国家花了多少钱、每月1万日元或7万日元的基本收入能增加多少，以及爱尔兰每周发给艺术家325欧元后发现了什么。"
+          ],
+          [
+            "h",
+            "只剩峰值的六分之一"
+          ],
+          [
+            "p",
+            "日本依据《传统工艺品产业振兴法》保护传统工艺。截至2025年10月27日，经济产业大臣共指定了244种“传统工艺品”，最新的一种是东京手刻印章。[3][4] 2018年提交给中小企业厅审议会的一份资料引用传统工艺品产业振兴协会的数据显示，从业者人数的峰值是1979年的28.8万人，产值的峰值是1983年的5,410亿日元。[1]"
+          ],
+          [
+            "p",
+            "总务省的调查发现，指定传统工艺品的产值从1998年度的约2,784亿日元降至2017年度的约927亿日元，降幅约67%；从业人数也从约115,000人减半至约58,000人。[2] 据经济产业省（经产省）统计，2022年度从业人数约为4.8万人，约为1979年峰值的17%，大致是六分之一。[3] 经产省的资料正文没有给出2022年度的产值，只说产值自2016年度跌破1,000亿日元后持续缓慢下降。"
+          ],
+          [
+            "t",
+            "年份 | 从业人数 | 产值 | 出处\n1979年 | 28.8万人（峰值） | – | 协会数据，引自[1]\n1983年 | – | 5,410亿日元（峰值） | 协会数据，引自[1]\n1998年度 | 约115,000人 | 约2,784亿日元 | [2]\n2017年度 | 约58,000人 | 约927亿日元 | [2]\n2022年度 | 约4.8万人 | 2016年度起低于1,000亿日元 | [3]"
+          ],
+          [
+            "h",
+            "留下来的是谁"
+          ],
+          [
+            "p",
+            "从业者老龄化严重。2022年度，指定传统工艺品的从业者中，50多岁及以上占63.6%，70岁及以上占18.0%，是29岁及以下（6.0%）的三倍。[3] 经产省在2026年3月提交给研究会的资料中写道，从业者人数可能在十年内减半；还有一些工坊因为“赚不到钱”而拒绝了想学手艺的人。[5]"
+          ],
+          [
+            "h",
+            "12万日元与最低工资"
+          ],
+          [
+            "p",
+            "2026年度全国加权平均最低工资为每小时1,177日元，上一年度为1,121日元；新标准于2026年10月1日至12月2日陆续生效，从宫崎县的1,085日元到东京都的1,280日元不等。[6] 厚生劳动省在比较最低工资与生活保护（低保）时，以每月173.8个工作小时计算。[7] 按这一时数，以平均最低工资全职工作，税前月收入为204,563日元。把12万日元摊到同样的173.8小时，时薪约为690日元，低于任何一个都道府县的最低工资。帖子没有说明这些招聘的工作时长，因此这只是一种比较，并不是对这些岗位的认定。"
+          ],
+          [
+            "p",
+            "传统工艺从业者没有官方的工资统计。2025年《工资结构基本统计调查》（覆盖10人及以上的企业）中最接近的职业类别显示，月所定内工资为：陶瓷与土石制品制造人员283,900日元，木材与纸制品制造人员269,700日元，纺织与服装制造人员221,000日元，而全体全职劳动者为340,600日元。[8][9] 许多工坊不足10人，不在这些数据之内。"
+          ],
+          [
+            "h",
+            "加上基本收入会怎样"
+          ],
+          [
+            "p",
+            "基本收入不论职业发给所有人，因此并不会专门资助工艺。以一个月薪12万日元的人为例，每月1万日元会让收入变成13万日元；竹中平藏在2020年提出的每月7万日元会让收入变成19万日元，仍低于以平均最低工资全职工作的204,563日元。另一面是开支：给日本所有人每月1万日元，每年约需14.7万亿日元；每月7万日元每年约需103.2万亿日元，相当于国家税收的122%。[10] {五种金额下的费用|/essays/japan-basic-income-cost/}和{每月7万日元方案|/essays/takenaka-70000-yen-basic-income/}另有专文介绍，下方的计算器可按家庭计算金额。"
+          ],
+          [
+            "k",
+            "hh-essay-crafts"
+          ],
+          [
+            "h",
+            "国家目前在工艺上花多少钱"
+          ],
+          [
+            "p",
+            "经产省2026年度的传统工艺品预算为10.8亿日元：其中3.6亿日元是给产地组合和制作者的补助金，用于培养接班人、开发新产品和开拓销路（2026年度批准84个项目，上一年度82个，补助比例最高三分之二）；7.2亿日元拨给负责认定传统工艺士、举办展销会的振兴协会。[3] 摊到4.8万名从业者身上，每人每年约22,500日元。若给这4.8万人每月发7万日元，每年约需403亿日元，约为现有预算的37倍。这两个数字都不是提案，只是为了说明规模。"
+          ],
+          [
+            "h",
+            "爱尔兰：每周给艺术家325欧元"
+          ],
+          [
+            "p",
+            "在创作领域设立“收入底线”的最接近的试验，是爱尔兰的“艺术基本收入”（Basic Income for the Arts）。2022年，从8,206名符合条件的申请者中抽签选出2,000名艺术家和艺术从业者，自2022年8月29日起每周发放325欧元，约合每年16,900欧元；试点后来延长至2026年2月。这笔钱需要纳税。另有1,000名符合条件的申请者组成对照组，每年领取650欧元作为回答调查的报酬。[11]"
+          ],
+          [
+            "p",
+            "政府于2025年9月发布的两年影响评估比较了两组人。领取者每周用于创作的时间多11小时，完成新作品的概率高14个百分点，每周在其他行业工作的时间少3.5小时。他们感到情绪低落或抑郁的概率低15个百分点，有焦虑的概率低16个百分点，生活满意度在10分制下为7分，对照组为6分。[12] 为文化部所做的成本收益分析估计，2021年至2025年的总成本约为1.14亿欧元，每1欧元公共资金为社会带来1.39欧元的收益，其中大部分是身心健康方面的收益。[13]"
+          ],
+          [
+            "p",
+            "爱尔兰保留了这项制度。2026年2月，政府宣布用2026年预算中的1,827万欧元启动后续计划：向2,000名艺术家每周发放325欧元，为期三年，以三年为一个周期，仍然随机抽选。[14] 申请期为2026年4月15日至5月12日，共收到10,030份申请，约五分之一（20%）的申请者能获得名额。[15] 款项追溯至2026年9月发放，2027年预算预留了3,440万欧元；文化部自10月15日起通知了780人，并于2026年11月12日又通知了450人。[15][16] 这仍然是发给被选中群体的款项，而不是面向所有人的基本收入。"
+          ],
+          [
+            "h",
+            "数据无法告诉我们的"
+          ],
+          [
+            "p",
+            "12万日元这个数字来自一个人的帖子，而非招聘调查；传统工艺的从业者和学徒也没有官方的工资数据。工资调查不包括最小的工坊，经产省资料正文中也没有2017年度之后的产值。没有人衡量过日本的基本收入能否把人留在工艺行业。爱尔兰的结果来自从申请者中选出、领取三年的2,000名艺术家，而不是发给所有人的款项，而且涵盖的是整个艺术领域，而不是工艺。这些数字能说明的是：从业者已减至峰值的约六分之一并在老龄化；按全职工时计算，起薪可能远低于最低工资；国家对该行业的预算约为每年10.8亿日元。本文的数字及其出处和日期汇总在{crafts-2026.json|/crafts-2026.json}中。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "नवंबर 2026 में X पर लगभग बीस लाख बार देखी गई एक पोस्ट ने एक जानी-पहचानी शिकायत को एक संख्या दे दी। कार्यशालाओं के बंद होने के बीच जापान के पारंपरिक शिल्पों को बचाने की चर्चा पर, एक शिल्प स्कूल के स्नातक ने लिखा कि स्कूल तक पहुँचने वाले नौकरी के प्रस्ताव लगभग सभी टैक्स से पहले महीने के लगभग 1,20,000 येन के थे, जिस पर कोई गुज़ारा नहीं कर सकता। यह निबंध उस पोस्ट की जाँच करने की कोशिश नहीं करता। यह बताता है कि सरकारी आँकड़े क्या कहते हैं: जापान के पारंपरिक शिल्प कितने लोग बनाते हैं, उनकी उम्र क्या है, 1,20,000 येन न्यूनतम वेतन और दूसरी मज़दूरी के मुक़ाबले कैसा है, सरकार कितना ख़र्च करती है, महीने के 10,000 या 70,000 येन की बेसिक इनकम कितना जोड़ेगी, और आयरलैंड ने कलाकारों को हफ़्ते के 325 यूरो देकर क्या पाया।"
+          ],
+          [
+            "h",
+            "शिखर का छठा हिस्सा"
+          ],
+          [
+            "p",
+            "जापान अपने शिल्पों की रक्षा पारंपरिक शिल्प उद्योगों को बढ़ावा देने वाले एक क़ानून के तहत करता है। 27 अक्टूबर 2025 तक अर्थव्यवस्था, व्यापार और उद्योग मंत्री ने 244 पारंपरिक शिल्पों (देंतोतेकी कोगेहिन) को नामित किया था, जिनमें सबसे नया टोक्यो की हाथ से तराशी मुहरें हैं।[3][4] पारंपरिक शिल्प उद्योग संवर्धन संघ के आँकड़े, जैसा कि लघु और मध्यम उद्यम एजेंसी की सलाहकार परिषद के लिए 2018 के एक पेपर में उद्धृत हैं, शिखर 1979 में 2,88,000 कारीगरों और 1983 में 541 अरब येन के उत्पादन पर बताते हैं।[1]"
+          ],
+          [
+            "p",
+            "आंतरिक मामलों और संचार मंत्रालय ने पाया कि नामित शिल्पों का उत्पादन वित्त वर्ष 1998 के लगभग 278.4 अरब येन से घटकर वित्त वर्ष 2017 में लगभग 92.7 अरब येन रह गया, यानी लगभग 67% की गिरावट, जबकि कारीगरों की संख्या लगभग 1,15,000 से आधी होकर लगभग 58,000 रह गई।[2] अर्थव्यवस्था, व्यापार और उद्योग मंत्रालय (METI) के अनुसार वित्त वर्ष 2022 में लगभग 48,000 कारीगर थे, जो 1979 के शिखर का लगभग 17%, यानी मोटे तौर पर छह में से एक है।[3] METI के पाठ में वित्त वर्ष 2022 के उत्पादन का आँकड़ा नहीं है; उसमें केवल इतना कहा गया है कि वित्त वर्ष 2016 में 100 अरब येन से नीचे जाने के बाद से उत्पादन धीरे-धीरे घटता रहा है।"
+          ],
+          [
+            "t",
+            "वर्ष | कारीगर | उत्पादन | स्रोत\n1979 | 2,88,000 (शिखर) | – | संघ के आँकड़े, [1] में उद्धृत\n1983 | – | 541 अरब येन (शिखर) | संघ के आँकड़े, [1] में उद्धृत\nवित्त वर्ष 1998 | लगभग 1,15,000 | लगभग 278.4 अरब येन | [2]\nवित्त वर्ष 2017 | लगभग 58,000 | लगभग 92.7 अरब येन | [2]\nवित्त वर्ष 2022 | लगभग 48,000 | वित्त वर्ष 2016 से 100 अरब येन से कम | [3]"
+          ],
+          [
+            "h",
+            "कौन बचे हैं"
+          ],
+          [
+            "p",
+            "कारीगरों की आबादी बुज़ुर्ग है। वित्त वर्ष 2022 में नामित शिल्पों में काम करने वाले 63.6% लोग 50 वर्ष या उससे अधिक उम्र के थे, और 18.0% 70 वर्ष या उससे अधिक के, जो 29 वर्ष या उससे कम उम्र वालों के 6.0% का तीन गुना है।[3] मार्च 2026 में एक अध्ययन समूह के लिए एक पेपर में METI ने लिखा कि दस साल के भीतर कारीगरों की संख्या आधी हो सकती है, और कुछ कार्यशालाएँ शिल्प सीखना चाहने वालों को लौटा रही थीं, क्योंकि इस काम में कमाई नहीं है।[5]"
+          ],
+          [
+            "h",
+            "न्यूनतम वेतन के मुक़ाबले 1,20,000 येन"
+          ],
+          [
+            "p",
+            "वित्त वर्ष 2026 के लिए राष्ट्रीय भारित औसत न्यूनतम वेतन 1,177 येन प्रति घंटा है, जो पहले 1,121 येन था; नई दरें 1 अक्टूबर से 2 दिसंबर 2026 के बीच लागू हुईं, मियाज़ाकी में 1,085 येन से टोक्यो में 1,280 येन तक।[6] स्वास्थ्य, श्रम और कल्याण मंत्रालय न्यूनतम वेतन की तुलना सार्वजनिक सहायता से महीने के 173.8 कार्य-घंटों के आधार पर करता है।[7] इस हिसाब से औसत न्यूनतम वेतन पर पूर्णकालिक काम से टैक्स से पहले महीने के 2,04,563 येन मिलते हैं। उन्हीं 173.8 घंटों में बाँटने पर 1,20,000 येन लगभग 690 येन प्रति घंटा बनते हैं, जो किसी भी प्रान्त के सबसे कम न्यूनतम वेतन से भी नीचे है। पोस्ट में यह नहीं बताया गया कि प्रस्ताव कितने घंटों के थे, इसलिए यह एक तुलना है, उन नौकरियों के बारे में कोई निष्कर्ष नहीं।"
+          ],
+          [
+            "p",
+            "पारंपरिक शिल्प कारीगरों की मज़दूरी का कोई सरकारी आँकड़ा नहीं है। दस या अधिक कर्मचारियों वाली फ़र्मों को कवर करने वाले 2025 के मज़दूरी संरचना बुनियादी सर्वेक्षण की सबसे नज़दीकी श्रेणियों में तय मासिक कमाई सिरेमिक और पत्थर उत्पाद कामगारों के लिए 2,83,900 येन, लकड़ी और काग़ज़ उत्पाद कामगारों के लिए 2,69,700 येन और कपड़ा व परिधान कामगारों के लिए 2,21,000 येन है, जबकि सभी पूर्णकालिक कामगारों के लिए यह 3,40,600 येन है।[8][9] कई शिल्प कार्यशालाओं में दस से कम लोग हैं और वे इन आँकड़ों में शामिल नहीं हैं।"
+          ],
+          [
+            "h",
+            "बेसिक इनकम कितना जोड़ेगी"
+          ],
+          [
+            "p",
+            "बेसिक इनकम हर किसी को मिलती है, चाहे उसका काम कुछ भी हो, इसलिए यह ख़ास तौर पर शिल्पों को भुगतान नहीं करेगी। महीने के 1,20,000 येन पाने वाले एक व्यक्ति के लिए, महीने के 10,000 येन से कुल 1,30,000 येन हो जाएँगे, और महीने के 70,000 येन से, जो रक़म हेइज़ो ताकेनाका ने 2020 में प्रस्तावित की थी, कुल 1,90,000 येन होंगे, जो फिर भी औसत न्यूनतम वेतन पर पूर्णकालिक नौकरी के 2,04,563 येन से कम है। दूसरा पहलू ख़र्च है: जापान में हर किसी के लिए महीने के 10,000 येन पर सालाना लगभग 14.7 ट्रिलियन येन और महीने के 70,000 येन पर लगभग 103.2 ट्रिलियन येन लगेंगे, जो राष्ट्रीय कर राजस्व का 122% है।[10] {पाँच रक़मों पर लागत|/essays/japan-basic-income-cost/} और {70,000 येन की योजना|/essays/takenaka-70000-yen-basic-income/} पर अलग निबंध हैं, और नीचे दिया कैलकुलेटर इसे एक परिवार के लिए निकालता है।"
+          ],
+          [
+            "k",
+            "hh-essay-crafts"
+          ],
+          [
+            "h",
+            "सरकार अभी शिल्पों पर कितना ख़र्च करती है"
+          ],
+          [
+            "p",
+            "वित्त वर्ष 2026 में पारंपरिक शिल्पों के लिए METI का बजट 1.08 अरब येन है: उत्तराधिकारियों के प्रशिक्षण, नए उत्पादों और ख़रीदार खोजने के लिए उत्पादक संघों और कारीगरों को 360 मिलियन येन के अनुदान (वित्त वर्ष 2026 में 84 परियोजनाएँ मंज़ूर, उससे पिछले साल 82, लागत के अधिकतम दो-तिहाई तक), और संघ के लिए 720 मिलियन येन, जो मास्टर कारीगरों को प्रमाणित करता है और प्रदर्शनियाँ चलाता है।[3] यह 48,000 कारीगरों में से हर एक के लिए साल के लगभग 22,500 येन है। उन 48,000 लोगों को महीने के 70,000 येन देने पर सालाना लगभग 40.3 अरब येन लगेंगे, जो मौजूदा बजट का लगभग 37 गुना है। इनमें से कोई भी आँकड़ा प्रस्ताव नहीं है; ये केवल पैमाना दिखाते हैं।"
+          ],
+          [
+            "h",
+            "आयरलैंड: कलाकारों के लिए हफ़्ते के 325 यूरो"
+          ],
+          [
+            "p",
+            "रचनात्मक काम के लिए आय की न्यूनतम सीमा का सबसे नज़दीकी परीक्षण आयरलैंड का Basic Income for the Arts है। 2022 में 8,206 पात्र आवेदकों में से लॉटरी से 2,000 कलाकारों और कला कर्मियों को चुना गया और 29 अगस्त 2022 से उन्हें हफ़्ते के 325 यूरो, यानी साल के लगभग 16,900 यूरो दिए गए; बाद में पायलट को फ़रवरी 2026 तक बढ़ा दिया गया। यह भुगतान कर-योग्य है। अन्य 1,000 पात्र आवेदकों ने नियंत्रण समूह बनाया और सर्वेक्षणों का जवाब देने के लिए उन्हें साल के 650 यूरो दिए गए।[11]"
+          ],
+          [
+            "p",
+            "सितंबर 2025 में प्रकाशित सरकार के दो साल के प्रभाव आकलन ने दोनों समूहों की तुलना की। पाने वालों ने अपने रचनात्मक काम पर हफ़्ते में 11 घंटे ज़्यादा बिताए, उनके नई कृतियाँ पूरी करने की संभावना 14 प्रतिशत अंक ज़्यादा थी, और उन्होंने दूसरे क्षेत्रों में काम पर हफ़्ते में 3.5 घंटे कम बिताए। उनके उदास या हताश महसूस करने की संभावना 15 अंक कम और चिंता होने की संभावना 16 अंक कम थी, और उन्होंने अपनी जीवन-संतुष्टि को 10 में से 7 आँका, जबकि नियंत्रण समूह ने 6।[12] विभाग के लिए किए गए लागत-लाभ विश्लेषण ने 2021 से 2025 तक सकल लागत लगभग 114 मिलियन यूरो आँकी और अनुमान लगाया कि सार्वजनिक धन के हर 1 यूरो पर समाज को 1.39 यूरो का लाभ हुआ, जिसका अधिकांश हिस्सा कल्याण (वेलबीइंग) में था।[13]"
+          ],
+          [
+            "p",
+            "आयरलैंड ने योजना जारी रखी। फ़रवरी 2026 में सरकार ने बजट 2026 से 18.27 मिलियन यूरो के साथ एक उत्तराधिकारी योजना की घोषणा की: 2,000 कलाकारों को तीन साल तक हफ़्ते के 325 यूरो, तीन-तीन साल के चक्रों में, फिर से यादृच्छिक रूप से चुने गए।[14] आवेदन 15 अप्रैल से 12 मई 2026 तक खुले रहे; 10,030 आवेदन आए, इसलिए लगभग पाँच में से एक आवेदक (20%) को जगह मिल सकती है।[15] भुगतान सितंबर 2026 से पिछली तारीख़ से दिए जाते हैं, बजट 2027 में 34.4 मिलियन यूरो रखे गए, और विभाग ने 15 अक्टूबर से 780 लोगों को और 12 नवंबर 2026 को अन्य 450 लोगों को सूचित किया।[15][16] यह अब भी एक चुने हुए समूह को दिया जाने वाला भुगतान है, हर किसी के लिए बेसिक इनकम नहीं।"
+          ],
+          [
+            "h",
+            "आँकड़े क्या नहीं बता सकते"
+          ],
+          [
+            "p",
+            "1,20,000 येन का आँकड़ा एक व्यक्ति की पोस्ट से आता है, नौकरी के प्रस्तावों के किसी सर्वेक्षण से नहीं, और शिल्प कारीगरों या प्रशिक्षुओं की कमाई का कोई सरकारी आँकड़ा नहीं है। मज़दूरी सर्वेक्षण सबसे छोटी कार्यशालाओं को छोड़ देता है, और METI के अपने पाठ में वित्त वर्ष 2017 के बाद उत्पादन का कोई आँकड़ा नहीं है। किसी ने नहीं मापा कि जापान में बेसिक इनकम लोगों को शिल्पों में बनाए रखेगी या नहीं। आयरलैंड के नतीजे आवेदकों में से चुने गए और तीन साल तक भुगतान पाने वाले 2,000 कलाकारों से आते हैं, हर किसी को दिए गए भुगतान से नहीं, और वे ख़ास तौर पर शिल्पों के बजाय आम तौर पर कलाओं को कवर करते हैं। आँकड़े जो दिखाते हैं वह है: शिखर के लगभग छठे हिस्से तक सिकुड़ चुके और बूढ़े होते कारीगर, ऐसा शुरुआती वेतन जो पूर्णकालिक घंटों के न्यूनतम वेतन से काफ़ी कम हो सकता है, और इस क्षेत्र के लिए सालाना लगभग 1.08 अरब येन का सरकारी बजट। आँकड़े स्रोतों और तारीख़ों के साथ {crafts-2026.json|/crafts-2026.json} में एकत्र हैं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "En noviembre de 2026, una publicación en X vista unos dos millones de veces puso cifra a una queja conocida. Ante los llamamientos a salvar la artesanía tradicional japonesa mientras cierran talleres, un exalumno de una escuela de artesanía escribió que casi todas las ofertas de empleo que llegaban a la escuela eran de unos 120.000 ¥ al mes brutos, con los que nadie puede vivir. Este ensayo no intenta verificar esa publicación. Expone lo que dicen las cifras oficiales: cuántas personas hacen artesanía tradicional en Japón, qué edad tienen, cómo se comparan 120.000 ¥ con el salario mínimo y con otros sueldos, cuánto gasta el Estado, qué añadiría una renta básica de 10.000 ¥ o de 70.000 ¥ al mes y qué descubrió Irlanda al pagar a artistas 325 € a la semana."
+          ],
+          [
+            "h",
+            "Una sexta parte del máximo"
+          ],
+          [
+            "p",
+            "Japón protege su artesanía mediante una ley de fomento de las industrias artesanales tradicionales. A 27 de octubre de 2025, el ministro de Economía, Comercio e Industria había designado 244 artesanías tradicionales (dentōteki kōgeihin); la más reciente son los sellos tallados a mano de Tokio.[3][4] Según datos de la Asociación para la Promoción de las Industrias Artesanales Tradicionales, citados en un documento de 2018 para el consejo asesor de la Agencia de la Pequeña y Mediana Empresa, el máximo fue de 288.000 trabajadores en 1979 y la producción alcanzó 541.000 millones de ¥ en 1983.[1]"
+          ],
+          [
+            "p",
+            "El Ministerio de Asuntos Internos y Comunicaciones constató que la producción de las artesanías designadas cayó de unos 278.400 millones de ¥ en el ejercicio 1998 a unos 92.700 millones en el ejercicio 2017, un descenso de alrededor del 67 %, mientras que el número de trabajadores se redujo a la mitad, de unos 115.000 a unos 58.000.[2] En el ejercicio 2022 había unos 48.000 trabajadores, según el Ministerio de Economía, Comercio e Industria (METI), alrededor del 17 % del máximo de 1979, aproximadamente uno de cada seis.[3] El texto del METI no da una cifra de producción para el ejercicio 2022; solo dice que la producción sigue bajando poco a poco desde que cayó por debajo de 100.000 millones de ¥ en el ejercicio 2016."
+          ],
+          [
+            "t",
+            "Año | Trabajadores | Producción | Fuente\n1979 | 288.000 (máximo) | – | Datos de la Asociación, citados en [1]\n1983 | – | 541.000 millones de ¥ (máximo) | Datos de la Asociación, citados en [1]\nEjercicio 1998 | unos 115.000 | unos 278.400 millones de ¥ | [2]\nEjercicio 2017 | unos 58.000 | unos 92.700 millones de ¥ | [2]\nEjercicio 2022 | unos 48.000 | menos de 100.000 millones de ¥ desde el ejercicio 2016 | [3]"
+          ],
+          [
+            "h",
+            "Quién queda"
+          ],
+          [
+            "p",
+            "La plantilla es mayor. En el ejercicio 2022, el 63,6 % de quienes trabajaban en las artesanías designadas tenía 50 años o más, y el 18,0 % tenía 70 o más, el triple que el 6,0 % de 29 años o menos.[3] En un documento para un grupo de estudio de marzo de 2026, el METI escribió que el número de trabajadores podría reducirse a la mitad en diez años y que algunos talleres rechazaban a personas que querían aprender el oficio porque el trabajo no da para vivir.[5]"
+          ],
+          [
+            "h",
+            "120.000 ¥ frente al salario mínimo"
+          ],
+          [
+            "p",
+            "En el ejercicio 2026, el salario mínimo medio ponderado nacional es de 1.177 ¥ por hora, frente a 1.121 ¥; las nuevas tarifas entraron en vigor entre el 1 de octubre y el 2 de diciembre de 2026, desde 1.085 ¥ en Miyazaki hasta 1.280 ¥ en Tokio.[6] El Ministerio de Sanidad, Trabajo y Bienestar compara el salario mínimo con la asistencia pública usando 173,8 horas de trabajo al mes.[7] Con esa cifra, un empleo a tiempo completo con el salario mínimo medio paga 204.563 ¥ al mes brutos. Repartidos en esas mismas 173,8 horas, 120.000 ¥ equivalen a unos 690 ¥ por hora, por debajo del salario mínimo más bajo de cualquier prefectura. La publicación no decía cuántas horas suponían las ofertas, así que esto es una comparación, no una conclusión sobre esos empleos."
+          ],
+          [
+            "p",
+            "No hay cifras oficiales de salarios de los artesanos tradicionales. Las categorías más cercanas de la Encuesta Básica sobre la Estructura Salarial de 2025, que abarca empresas de diez o más empleados, dan una retribución mensual ordinaria de 283.900 ¥ para trabajadores de cerámica y piedra, 269.700 ¥ para los de madera y papel y 221.000 ¥ para los de textil y confección, frente a 340.600 ¥ para el conjunto de trabajadores a tiempo completo.[8][9] Muchos talleres tienen menos de diez personas y no figuran en estas cifras."
+          ],
+          [
+            "h",
+            "Qué añadiría una renta básica"
+          ],
+          [
+            "p",
+            "Una renta básica se paga a todo el mundo, sea cual sea su trabajo, así que no financiaría la artesanía en particular. Para una persona con 120.000 ¥ al mes, 10.000 ¥ al mes darían 130.000 ¥, y 70.000 ¥ al mes, la cifra que propuso Heizo Takenaka en 2020, darían 190.000 ¥, todavía por debajo de los 204.563 ¥ de un empleo a tiempo completo con el salario mínimo medio. La otra cara es el coste: para toda la población de Japón, 10.000 ¥ al mes cuestan unos 14,7 billones de ¥ al año y 70.000 ¥ al mes unos 103,2 billones, el 122 % de la recaudación tributaria nacional.[10] {El coste con cinco importes|/essays/japan-basic-income-cost/} y {el plan de 70.000 ¥|/essays/takenaka-70000-yen-basic-income/} se tratan en otros ensayos, y la calculadora de abajo lo calcula para un hogar."
+          ],
+          [
+            "k",
+            "hh-essay-crafts"
+          ],
+          [
+            "h",
+            "Lo que gasta hoy el Estado en artesanía"
+          ],
+          [
+            "p",
+            "El presupuesto del METI para artesanía tradicional en el ejercicio 2026 es de 1.080 millones de ¥: 360 millones en subvenciones a asociaciones de productores y artesanos para formar sucesores, crear productos nuevos y encontrar compradores (84 proyectos aprobados en el ejercicio 2026 y 82 el año anterior, hasta dos tercios del coste) y 720 millones para la Asociación, que certifica a los maestros artesanos y organiza exposiciones.[3] Son unos 22.500 ¥ al año por cada uno de los 48.000 trabajadores. Pagar 70.000 ¥ al mes a esas 48.000 personas costaría unos 40.300 millones de ¥ al año, unas 37 veces el presupuesto actual. Ninguna de las dos cifras es una propuesta; muestran la escala."
+          ],
+          [
+            "h",
+            "Irlanda: 325 € a la semana para artistas"
+          ],
+          [
+            "p",
+            "La prueba más cercana de un suelo de ingresos para el trabajo creativo es la Basic Income for the Arts (renta básica para las artes) de Irlanda. En 2022 se eligieron por sorteo 2.000 artistas y trabajadores del sector entre 8.206 solicitantes que cumplían los requisitos, y desde el 29 de agosto de 2022 cobraron 325 € a la semana, unos 16.900 € al año; el piloto se amplió después hasta febrero de 2026. El pago tributa. Otros 1.000 solicitantes que cumplían los requisitos formaron un grupo de control y recibieron 650 € al año por responder encuestas.[11]"
+          ],
+          [
+            "p",
+            "La evaluación de impacto a dos años del Gobierno, publicada en septiembre de 2025, comparó ambos grupos. Los perceptores dedicaron 11 horas semanales más a su práctica creativa, tenían 14 puntos porcentuales más de probabilidad de haber terminado obras nuevas y trabajaron 3,5 horas semanales menos en otros sectores. Tenían 15 puntos menos de probabilidad de haberse sentido desanimados o deprimidos y 16 puntos menos de haber sufrido ansiedad, y valoraron su satisfacción vital con un 7 sobre 10, frente a un 6 del grupo de control.[12] Un análisis coste-beneficio para el departamento cifró el coste bruto en unos 114 millones de € entre 2021 y 2025 y estimó 1,39 € de beneficio social por cada 1 € de dinero público, en su mayor parte en bienestar.[13]"
+          ],
+          [
+            "p",
+            "Irlanda mantuvo el programa. En febrero de 2026, el Gobierno anunció un programa sucesor con 18,27 millones de € del Presupuesto 2026: 325 € a la semana durante tres años para 2.000 artistas, en ciclos de tres años, de nuevo elegidos al azar.[14] Las solicitudes se presentaron del 15 de abril al 12 de mayo de 2026; se recibieron 10.030, así que aproximadamente uno de cada cinco solicitantes (20 %) puede obtener plaza.[15] Los pagos son retroactivos a septiembre de 2026, el Presupuesto 2027 reservó 34,4 millones de € y el departamento notificó a 780 personas a partir del 15 de octubre y a otras 450 el 12 de noviembre de 2026.[15][16] Sigue siendo un pago a un grupo seleccionado, no una renta básica para todos."
+          ],
+          [
+            "h",
+            "Lo que los datos no pueden decirnos"
+          ],
+          [
+            "p",
+            "La cifra de 120.000 ¥ procede de la publicación de una persona, no de una encuesta sobre ofertas de empleo, y no hay cifras oficiales de sueldos de artesanos ni de aprendices. La encuesta salarial deja fuera los talleres más pequeños, y el propio texto del METI no tiene cifras de producción posteriores al ejercicio 2017. Nadie ha medido si una renta básica en Japón mantendría a la gente en la artesanía. Los resultados de Irlanda proceden de 2.000 artistas elegidos entre solicitantes y pagados durante tres años, no de un pago a todo el mundo, y abarcan las artes en general, no la artesanía. Lo que sí muestran las cifras es una plantilla que se ha reducido a una sexta parte de su máximo y que envejece, sueldos iniciales que pueden quedar muy por debajo del salario mínimo a tiempo completo y un presupuesto estatal para el sector de unos 1.080 millones de ¥ al año. Las cifras están recopiladas, con fuentes y fechas, en {crafts-2026.json|/crafts-2026.json}."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Im November 2026 gab ein rund zwei Millionen Mal angesehener Beitrag auf X einer bekannten Klage eine Zahl. Als angesichts schließender Werkstätten davon die Rede war, Japans traditionelles Kunsthandwerk zu retten, schrieb ein Absolvent einer Handwerksschule, die Stellenangebote an der Schule hätten fast alle bei etwa 120.000 ¥ brutto im Monat gelegen, wovon niemand leben könne. Dieser Essay prüft den Beitrag nicht. Er zeigt, was die amtlichen Zahlen sagen: wie viele Menschen Japans traditionelles Kunsthandwerk herstellen, wie alt sie sind, wie sich 120.000 ¥ zum Mindestlohn und zu anderen Löhnen verhalten, was der Staat ausgibt, was ein Grundeinkommen von 10.000 ¥ oder 70.000 ¥ im Monat hinzufügen würde und was Irland herausfand, als es Künstlern 325 € pro Woche zahlte."
+          ],
+          [
+            "h",
+            "Ein Sechstel des Höchststands"
+          ],
+          [
+            "p",
+            "Japan schützt sein Kunsthandwerk mit einem Gesetz zur Förderung traditioneller Handwerksindustrien. Am 27. Oktober 2025 hatte der Minister für Wirtschaft, Handel und Industrie 244 traditionelle Handwerkserzeugnisse (dentōteki kōgeihin) anerkannt, zuletzt handgeschnitzte Siegel aus Tokio.[3][4] Nach Daten des Verbands zur Förderung traditioneller Handwerksindustrien, zitiert in einem Papier von 2018 für den Beirat der Agentur für kleine und mittlere Unternehmen, lag der Höchststand bei 288.000 Beschäftigten im Jahr 1979 und bei einer Produktion von 541 Mrd. ¥ im Jahr 1983.[1]"
+          ],
+          [
+            "p",
+            "Das Ministerium für Innere Angelegenheiten und Kommunikation stellte fest, dass die Produktion der anerkannten Handwerkserzeugnisse von etwa 278,4 Mrd. ¥ im Fiskaljahr 1998 auf etwa 92,7 Mrd. ¥ im Fiskaljahr 2017 sank, ein Rückgang um etwa 67 %, während sich die Zahl der Beschäftigten von etwa 115.000 auf etwa 58.000 halbierte.[2] Im Fiskaljahr 2022 gab es laut dem Ministerium für Wirtschaft, Handel und Industrie (METI) etwa 48.000 Beschäftigte, rund 17 % des Höchststands von 1979, also etwa jeder sechste.[3] Der Text des METI nennt keine Produktionszahl für das Fiskaljahr 2022; er sagt nur, dass die Produktion weiter leicht sinkt, seit sie im Fiskaljahr 2016 unter 100 Mrd. ¥ fiel."
+          ],
+          [
+            "t",
+            "Jahr | Beschäftigte | Produktion | Quelle\n1979 | 288.000 (Höchststand) | – | Verbandsdaten, zitiert in [1]\n1983 | – | 541 Mrd. ¥ (Höchststand) | Verbandsdaten, zitiert in [1]\nFiskaljahr 1998 | etwa 115.000 | etwa 278,4 Mrd. ¥ | [2]\nFiskaljahr 2017 | etwa 58.000 | etwa 92,7 Mrd. ¥ | [2]\nFiskaljahr 2022 | etwa 48.000 | seit Fiskaljahr 2016 unter 100 Mrd. ¥ | [3]"
+          ],
+          [
+            "h",
+            "Wer übrig ist"
+          ],
+          [
+            "p",
+            "Die Belegschaft ist alt. Im Fiskaljahr 2022 waren 63,6 % der Beschäftigten im anerkannten Kunsthandwerk 50 Jahre oder älter und 18,0 % 70 oder älter, dreimal so viele wie die 6,0 % im Alter von bis zu 29 Jahren.[3] In einem Papier für eine Arbeitsgruppe im März 2026 schrieb das METI, die Zahl der Beschäftigten könne sich innerhalb von zehn Jahren halbieren, und manche Werkstätten wiesen Lernwillige ab, weil sich mit der Arbeit kein Geld verdienen lasse.[5]"
+          ],
+          [
+            "h",
+            "120.000 ¥ und der Mindestlohn"
+          ],
+          [
+            "p",
+            "Im Fiskaljahr 2026 beträgt der landesweite gewichtete Durchschnitt des Mindestlohns 1.177 ¥ pro Stunde, nach 1.121 ¥; die neuen Sätze traten zwischen dem 1. Oktober und dem 2. Dezember 2026 in Kraft, von 1.085 ¥ in Miyazaki bis 1.280 ¥ in Tokio.[6] Das Ministerium für Gesundheit, Arbeit und Soziales vergleicht den Mindestlohn mit der Sozialhilfe anhand von 173,8 Arbeitsstunden im Monat.[7] Damit bringt eine Vollzeitstelle zum durchschnittlichen Mindestlohn 204.563 ¥ brutto im Monat. Auf dieselben 173,8 Stunden verteilt, ergeben 120.000 ¥ etwa 690 ¥ pro Stunde, weniger als der niedrigste Mindestlohn aller Präfekturen. Der Beitrag nannte keine Arbeitszeit für die Angebote, daher ist dies ein Vergleich und kein Befund über diese Stellen."
+          ],
+          [
+            "p",
+            "Es gibt keine amtliche Lohnstatistik für Beschäftigte im traditionellen Kunsthandwerk. Die nächstliegenden Kategorien der Grunderhebung zur Lohnstruktur 2025, die Betriebe mit zehn oder mehr Beschäftigten erfasst, ergeben regelmäßige Monatsverdienste von 283.900 ¥ in der Keramik- und Steinwarenherstellung, 269.700 ¥ in der Holz- und Papierwarenherstellung und 221.000 ¥ in der Textil- und Bekleidungsherstellung, gegenüber 340.600 ¥ für alle Vollzeitbeschäftigten.[8][9] Viele Werkstätten haben weniger als zehn Leute und sind in diesen Zahlen nicht enthalten."
+          ],
+          [
+            "h",
+            "Was ein Grundeinkommen hinzufügen würde"
+          ],
+          [
+            "p",
+            "Ein Grundeinkommen wird allen gezahlt, unabhängig vom Beruf, und würde daher nicht gezielt das Kunsthandwerk finanzieren. Für eine Person mit 120.000 ¥ im Monat ergäben 10.000 ¥ im Monat 130.000 ¥, und 70.000 ¥ im Monat, der Betrag, den Heizo Takenaka 2020 vorschlug, ergäben 190.000 ¥, immer noch weniger als die 204.563 ¥ einer Vollzeitstelle zum durchschnittlichen Mindestlohn. Die andere Seite sind die Kosten: Für alle Einwohner Japans kosten 10.000 ¥ im Monat etwa 14,7 Bio. ¥ im Jahr und 70.000 ¥ im Monat etwa 103,2 Bio. ¥, 122 % der nationalen Steuereinnahmen.[10] {Die Kosten bei fünf Beträgen|/essays/japan-basic-income-cost/} und {der 70.000-¥-Plan|/essays/takenaka-70000-yen-basic-income/} werden in eigenen Essays behandelt, und der Rechner unten rechnet es für einen Haushalt aus."
+          ],
+          [
+            "k",
+            "hh-essay-crafts"
+          ],
+          [
+            "h",
+            "Was der Staat heute für das Kunsthandwerk ausgibt"
+          ],
+          [
+            "p",
+            "Das Budget des METI für traditionelles Kunsthandwerk beträgt im Fiskaljahr 2026 1,08 Mrd. ¥: 360 Mio. ¥ an Zuschüssen für Herstellerverbände und Handwerker für Nachwuchsausbildung, neue Produkte und die Suche nach Käufern (84 bewilligte Projekte im Fiskaljahr 2026, 82 im Vorjahr, bis zu zwei Drittel der Kosten) und 720 Mio. ¥ für den Verband, der Meisterhandwerker zertifiziert und Ausstellungen veranstaltet.[3] Das sind etwa 22.500 ¥ im Jahr für jeden der 48.000 Beschäftigten. Diesen 48.000 Menschen 70.000 ¥ im Monat zu zahlen, würde etwa 40,3 Mrd. ¥ im Jahr kosten, etwa das 37-Fache des heutigen Budgets. Keine der beiden Zahlen ist ein Vorschlag; sie zeigen die Größenordnung."
+          ],
+          [
+            "h",
+            "Irland: 325 € pro Woche für Künstler"
+          ],
+          [
+            "p",
+            "Der nächstliegende Test einer Einkommensuntergrenze für kreative Arbeit ist Irlands Basic Income for the Arts (Grundeinkommen für die Künste). 2022 wurden 2.000 Künstler und Kulturschaffende per Los aus 8.206 berechtigten Bewerbern ausgewählt und erhielten ab dem 29. August 2022 325 € pro Woche, etwa 16.900 € im Jahr; das Pilotprojekt wurde später bis Februar 2026 verlängert. Die Zahlung ist steuerpflichtig. Weitere 1.000 berechtigte Bewerber bildeten eine Kontrollgruppe und erhielten 650 € im Jahr für die Teilnahme an Umfragen.[11]"
+          ],
+          [
+            "p",
+            "Die im September 2025 veröffentlichte zweijährige Wirkungsanalyse der Regierung verglich beide Gruppen. Die Empfänger verbrachten 11 Stunden pro Woche mehr mit ihrer künstlerischen Arbeit, hatten mit einer um 14 Prozentpunkte höheren Wahrscheinlichkeit neue Werke fertiggestellt und arbeiteten 3,5 Stunden pro Woche weniger in anderen Branchen. Sie fühlten sich mit einer um 15 Punkte geringeren Wahrscheinlichkeit niedergeschlagen oder deprimiert, hatten mit einer um 16 Punkte geringeren Wahrscheinlichkeit Angstzustände und bewerteten ihre Lebenszufriedenheit mit 7 von 10, gegenüber 6 in der Kontrollgruppe.[12] Eine Kosten-Nutzen-Analyse für das Ministerium bezifferte die Bruttokosten 2021 bis 2025 auf etwa 114 Mio. € und schätzte für jeden Euro öffentlicher Mittel einen gesellschaftlichen Nutzen von 1,39 €, größtenteils beim Wohlbefinden.[13]"
+          ],
+          [
+            "p",
+            "Irland behielt das Programm bei. Im Februar 2026 kündigte die Regierung ein Nachfolgeprogramm mit 18,27 Mio. € aus dem Haushalt 2026 an: 325 € pro Woche für drei Jahre an 2.000 Künstler, in Dreijahreszyklen, wieder per Zufall ausgewählt.[14] Bewerbungen liefen vom 15. April bis 12. Mai 2026; es gingen 10.030 ein, sodass etwa jeder fünfte Bewerber (20 %) einen Platz bekommen kann.[15] Die Zahlungen gelten rückwirkend ab September 2026, der Haushalt 2027 sieht 34,4 Mio. € vor, und das Ministerium benachrichtigte ab dem 15. Oktober 780 Personen und am 12. November 2026 weitere 450.[15][16] Es bleibt eine Zahlung an eine ausgewählte Gruppe, kein Grundeinkommen für alle."
+          ],
+          [
+            "h",
+            "Was die Daten nicht sagen können"
+          ],
+          [
+            "p",
+            "Die Zahl von 120.000 ¥ stammt aus dem Beitrag einer einzelnen Person, nicht aus einer Erhebung von Stellenangeboten, und es gibt keine amtlichen Lohnzahlen für Handwerker oder Lehrlinge im Kunsthandwerk. Die Lohnerhebung lässt die kleinsten Werkstätten aus, und der Text des METI enthält keine Produktionszahl nach dem Fiskaljahr 2017. Niemand hat gemessen, ob ein Grundeinkommen in Japan Menschen im Kunsthandwerk halten würde. Irlands Ergebnisse beruhen auf 2.000 aus den Bewerbern ausgewählten Künstlern, die drei Jahre lang bezahlt werden, nicht auf einer Zahlung an alle, und sie betreffen die Künste allgemein, nicht das Kunsthandwerk. Was die Zahlen zeigen, ist eine Belegschaft, die auf etwa ein Sechstel ihres Höchststands geschrumpft ist und altert, Einstiegslöhne, die bei Vollzeit weit unter dem Mindestlohn liegen können, und ein staatliches Budget für den Sektor von etwa 1,08 Mrd. ¥ im Jahr. Die Zahlen sind mit Quellen und Daten in {crafts-2026.json|/crafts-2026.json} zusammengestellt."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في نوفمبر 2026 وضعت تدوينة على منصة إكس شوهدت نحو مليوني مرة رقمًا لشكوى مألوفة. فردًّا على الحديث عن إنقاذ الحرف اليابانية التقليدية فيما تُغلق الورش أبوابها، كتب خرّيج مدرسة حرفية أن عروض العمل التي تصل إلى المدرسة كانت كلها تقريبًا بنحو 120,000 ين شهريًا قبل الضريبة، وهو مبلغ لا يكفي أحدًا للعيش. لا يحاول هذا المقال التحقق من تلك التدوينة، بل يعرض ما تقوله الأرقام الرسمية: كم عدد من يصنعون الحرف اليابانية التقليدية، وما أعمارهم، وكيف يُقارَن مبلغ 120,000 ين بالحد الأدنى للأجور وبالأجور الأخرى، وكم تنفق الدولة، وما الذي سيضيفه دخل أساسي قدره 10,000 أو 70,000 ين شهريًا، وما الذي وجدته أيرلندا حين دفعت للفنانين 325 يورو أسبوعيًا."
+          ],
+          [
+            "h",
+            "سدس الذروة"
+          ],
+          [
+            "p",
+            "تحمي اليابان حرفها بموجب قانون لتعزيز صناعات الحرف التقليدية. وحتى 27 أكتوبر 2025 كان وزير الاقتصاد والتجارة والصناعة قد صنّف 244 حرفة تقليدية («دينتوتيكي كوغيهين»)، أحدثها الأختام المنحوتة يدويًا في طوكيو.[3][4] وتضع أرقام جمعية تعزيز صناعات الحرف التقليدية، كما وردت في ورقة أُعدّت عام 2018 للمجلس الاستشاري لوكالة المؤسسات الصغيرة والمتوسطة، الذروةَ عند 288,000 عامل في 1979، والإنتاجَ عند 541 مليار ين في 1983.[1]"
+          ],
+          [
+            "p",
+            "ووجدت وزارة الشؤون الداخلية والاتصالات أن إنتاج الحرف المصنّفة انخفض من نحو 278.4 مليار ين في السنة المالية 1998 إلى نحو 92.7 مليار ين في السنة المالية 2017، أي بنحو ⁦67%⁩، بينما انخفض عدد العاملين إلى النصف من نحو 115,000 إلى نحو 58,000.[2] وفي السنة المالية 2022 كان هناك نحو 48,000 عامل بحسب وزارة الاقتصاد والتجارة والصناعة، أي نحو ⁦17%⁩ من ذروة 1979، أو واحد من كل ستة تقريبًا.[3] ولا يذكر نص الوزارة رقمًا للإنتاج في السنة المالية 2022، بل يقول فقط إن الإنتاج ظل يتراجع تدريجيًا منذ أن هبط دون 100 مليار ين في السنة المالية 2016."
+          ],
+          [
+            "t",
+            "السنة | العاملون | الإنتاج | المصدر\n1979 | 288,000 (الذروة) | – | بيانات الجمعية، واردة في [1]\n1983 | – | 541 مليار ين (الذروة) | بيانات الجمعية، واردة في [1]\nالسنة المالية 1998 | نحو 115,000 | نحو 278.4 مليار ين | [2]\nالسنة المالية 2017 | نحو 58,000 | نحو 92.7 مليار ين | [2]\nالسنة المالية 2022 | نحو 48,000 | أقل من 100 مليار ين منذ السنة المالية 2016 | [3]"
+          ],
+          [
+            "h",
+            "من تبقّى"
+          ],
+          [
+            "p",
+            "القوى العاملة مسنّة. ففي السنة المالية 2022 كان ⁦63.6%⁩ من العاملين في الحرف المصنّفة في سن 50 أو أكبر، و⁦18.0%⁩ في سن 70 أو أكبر، أي ثلاثة أضعاف نسبة ⁦6.0%⁩ ممن هم في سن 29 أو أصغر.[3] وفي ورقة لفريق دراسة في مارس 2026، كتبت وزارة الاقتصاد والتجارة والصناعة أن عدد العاملين قد ينخفض إلى النصف خلال عشر سنوات، وأن بعض الورش كانت ترفض من يريدون تعلّم حرفة لأن العمل لا يدرّ دخلًا كافيًا.[5]"
+          ],
+          [
+            "h",
+            "120,000 ين مقابل الحد الأدنى للأجور"
+          ],
+          [
+            "p",
+            "في السنة المالية 2026 يبلغ المتوسط الوطني المرجّح للحد الأدنى للأجور 1,177 ينًا في الساعة، ارتفاعًا من 1,121 ينًا؛ وبدأ تطبيق المعدلات الجديدة بين 1 أكتوبر و2 ديسمبر 2026، من 1,085 ينًا في ميازاكي إلى 1,280 ينًا في طوكيو.[6] وتقارن وزارة الصحة والعمل والرعاية الاجتماعية الحد الأدنى للأجور بالمساعدة العامة على أساس 173.8 ساعة عمل شهريًا.[7] وبهذا المعدل، يدرّ العمل بدوام كامل بمتوسط الحد الأدنى للأجور 204,563 ينًا شهريًا قبل الضريبة. وإذا وُزّع مبلغ 120,000 ين على الساعات نفسها، أي 173.8 ساعة، فإنه يعادل نحو 690 ينًا في الساعة، وهو أقل من أدنى حد أدنى للأجور في أي محافظة. ولم تذكر التدوينة عدد ساعات العمل في تلك العروض، لذا فهذه مقارنة وليست استنتاجًا بشأن تلك الوظائف."
+          ],
+          [
+            "p",
+            "لا يوجد رقم رسمي لأجور العاملين في الحرف التقليدية. وتعطي أقرب الفئات في المسح الأساسي لهيكل الأجور لعام 2025، الذي يشمل المنشآت التي تضم عشرة موظفين أو أكثر، أجورًا شهرية مقررة قدرها 283,900 ين لعمال منتجات الخزف والحجر، و269,700 ين لعمال منتجات الخشب والورق، و221,000 ين لعمال المنسوجات والملابس، مقابل 340,600 ين لجميع العاملين بدوام كامل.[8][9] وكثير من الورش الحرفية تضم أقل من عشرة أشخاص ولا تدخل في هذه الأرقام."
+          ],
+          [
+            "h",
+            "ما الذي سيضيفه الدخل الأساسي"
+          ],
+          [
+            "p",
+            "يُدفع الدخل الأساسي للجميع أيًّا كان عملهم، فلن يكون دعمًا للحرف تحديدًا. فلشخص يتقاضى 120,000 ين شهريًا، يرفع مبلغ 10,000 ين شهريًا دخله إلى 130,000 ين، ويرفعه مبلغ 70,000 ين شهريًا، وهو الرقم الذي اقترحه هيزو تاكيناكا في 2020، إلى 190,000 ين، أي ما يظل دون 204,563 ينًا لوظيفة بدوام كامل بمتوسط الحد الأدنى للأجور. أما الجانب الآخر فهو الكلفة: لكل من في اليابان، يكلّف مبلغ 10,000 ين شهريًا نحو 14.7 تريليون ين سنويًا، ومبلغ 70,000 ين شهريًا نحو 103.2 تريليون ين، أي ⁦122%⁩ من إيرادات الضرائب الوطنية.[10] ويتناول مقالان منفصلان {الكلفة عند خمسة مبالغ|/essays/japan-basic-income-cost/} و{خطة الـ70,000 ين|/essays/takenaka-70000-yen-basic-income/}، وتحسب الحاسبة أدناه ذلك لأسرة."
+          ],
+          [
+            "k",
+            "hh-essay-crafts"
+          ],
+          [
+            "h",
+            "ما تنفقه الدولة على الحرف الآن"
+          ],
+          [
+            "p",
+            "تبلغ ميزانية وزارة الاقتصاد والتجارة والصناعة للحرف التقليدية في السنة المالية 2026 مبلغ 1.08 مليار ين: 360 مليون ين منحًا لجمعيات المنتجين والحرفيين لتدريب الخلفاء وتطوير منتجات جديدة وإيجاد مشترين (أُقرّ 84 مشروعًا في السنة المالية 2026 و82 في السنة السابقة، بما يصل إلى ثلثي الكلفة)، و720 مليون ين للجمعية التي تعتمد كبار الحرفيين وتنظّم المعارض.[3] وهذا يعادل نحو 22,500 ين سنويًا لكل واحد من العاملين البالغ عددهم 48,000. ودفع 70,000 ين شهريًا لهؤلاء الـ48,000 سيكلّف نحو 40.3 مليار ين سنويًا، أي نحو 37 ضعف الميزانية الحالية. وليس أيٌّ من الرقمين اقتراحًا؛ إنما يبيّنان الحجم."
+          ],
+          [
+            "h",
+            "أيرلندا: 325 يورو أسبوعيًا للفنانين"
+          ],
+          [
+            "p",
+            "أقرب اختبار لحدّ أدنى من الدخل للعمل الإبداعي هو برنامج «الدخل الأساسي للفنون» في أيرلندا. ففي 2022 اختير 2,000 فنان وعامل في مجال الفنون بالقرعة من بين 8,206 متقدمين مؤهلين، وتلقّوا 325 يورو أسبوعيًا، أي نحو 16,900 يورو سنويًا، بدءًا من 29 أغسطس 2022؛ ومُدّدت التجربة لاحقًا حتى فبراير 2026. والمبلغ خاضع للضريبة. وشكّل 1,000 متقدم مؤهل آخرون مجموعة ضابطة، وتلقّوا 650 يورو سنويًا مقابل الإجابة عن استبيانات.[11]"
+          ],
+          [
+            "p",
+            "وقارن تقييم الأثر الحكومي لمدة عامين، المنشور في سبتمبر 2025، بين المجموعتين. فقد أمضى المستفيدون 11 ساعة أسبوعيًا إضافية في ممارستهم الإبداعية، وكانوا أكثر احتمالًا بـ14 نقطة مئوية لإنجاز أعمال جديدة، وأمضوا 3.5 ساعات أسبوعيًا أقل في العمل في قطاعات أخرى. وكانوا أقل احتمالًا بـ15 نقطة للشعور بالإحباط أو الاكتئاب، وأقل احتمالًا بـ16 نقطة للإصابة بالقلق، وقيّموا رضاهم عن الحياة بـ7 من 10 مقابل 6 للمجموعة الضابطة.[12] وقدّر تحليل للتكاليف والمنافع أُعدّ للوزارة الكلفة الإجمالية بنحو 114 مليون يورو من 2021 إلى 2025، وقدّر أن كل 1 يورو من المال العام يعود على المجتمع بمنفعة قدرها 1.39 يورو، معظمها في الرفاه.[13]"
+          ],
+          [
+            "p",
+            "وأبقت أيرلندا على البرنامج. ففي فبراير 2026 أعلنت الحكومة برنامجًا خلفًا بتمويل 18.27 مليون يورو من ميزانية 2026: 325 يورو أسبوعيًا لمدة ثلاث سنوات لـ2,000 فنان، في دورات مدة كل منها ثلاث سنوات، يُختارون مرة أخرى عشوائيًا.[14] وفُتح باب التقديم من 15 أبريل إلى 12 مايو 2026، ووردت 10,030 طلبًا، أي أن نحو متقدم واحد من كل خمسة (⁦20%⁩) يمكنه الحصول على مقعد.[15] وتُصرف المدفوعات بأثر رجعي من سبتمبر 2026، وخصّصت ميزانية 2027 مبلغ 34.4 مليون يورو، وأبلغت الوزارة 780 شخصًا اعتبارًا من 15 أكتوبر، ثم 450 آخرين في 12 نوفمبر 2026.[15][16] ويبقى ذلك دفعة لمجموعة مختارة، لا دخلًا أساسيًا للجميع."
+          ],
+          [
+            "h",
+            "ما لا تستطيع البيانات أن تخبرنا به"
+          ],
+          [
+            "p",
+            "يأتي رقم 120,000 ين من تدوينة شخص واحد، لا من مسح لعروض العمل، ولا يوجد رقم رسمي لأجور العاملين في الحرف أو المتدربين. ويستبعد مسح الأجور أصغر الورش، ولا يتضمن نص وزارة الاقتصاد والتجارة والصناعة نفسه رقمًا للإنتاج بعد السنة المالية 2017. ولم يقِس أحد ما إذا كان دخل أساسي في اليابان سيُبقي الناس في الحرف. وتأتي نتائج أيرلندا من 2,000 فنان اختيروا من بين المتقدمين وتلقّوا المال لثلاث سنوات، لا من دفعة للجميع، وهي تشمل الفنون عمومًا لا الحرف تحديدًا. أما ما تُظهره الأرقام فهو قوى عاملة تقلّصت إلى نحو سدس ذروتها وتزداد شيخوخة، وأجور بداية قد تقل كثيرًا عن الحد الأدنى للأجور لساعات الدوام الكامل، وميزانية حكومية للقطاع تبلغ نحو 1.08 مليار ين سنويًا. والأرقام مجمّعة مع مصادرها وتواريخها في {⁦crafts-2026.json⁩|/crafts-2026.json}."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Japan Craft Sangyo Association (Tomohiro Haraoka) — paper 4 for the Small and Medium Enterprise Agency’s small business basic policy subcommittee (12 October 2018; PDF, in Japanese): workers peaked at 288,000 in 1979 and production at ¥541 billion in 1983, from the Association for the Promotion of Traditional Craft Industries’ data",
+          "url": "https://www.chusho.meti.go.jp/koukai/shingikai/syoukibokihon/2018/download/181012syoukiboKihon04.pdf"
+        },
+        {
+          "n": 2,
+          "label": "Ministry of Internal Affairs and Communications, Administrative Evaluation Bureau — survey on the use of traditional crafts as regional resources, report (June 2022; PDF, in Japanese): production about ¥278.4 billion in FY1998 and ¥92.7 billion in FY2017; workers about 115,000 and 58,000",
+          "url": "https://www.soumu.go.jp/main_content/000818488.pdf"
+        },
+        {
+          "n": 3,
+          "label": "Ministry of Economy, Trade and Industry — explanatory material on traditional crafts for the Agency for Cultural Affairs’ council (July 2026; PDF, in Japanese): about 48,000 workers in FY2022, age structure, 244 designated crafts, FY2026 budget of ¥1.08 billion and 84 approved projects",
+          "url": "https://www.bunka.go.jp/seisaku/bunkashingikai/bunkazai/kikaku/r07_r08/05/pdf/94408301_03.pdf"
+        },
+        {
+          "n": 4,
+          "label": "Ministry of Economy, Trade and Industry — traditional crafts: 244 designated crafts as of 27 October 2025 (in Japanese); Kanto Bureau of Economy, Trade and Industry — Tokyo hand-carved seals designated (27 October 2025; PDF)",
+          "url": "https://www.meti.go.jp/policy/mono_info_service/mono/nichiyo-densan/index.html",
+          "url2": "https://www.kanto.meti.go.jp/press/data/20251027densan_press.pdf"
+        },
+        {
+          "n": 5,
+          "label": "Ministry of Economy, Trade and Industry — secretariat paper for the 15th meeting of the entertainment and creative policy study group (9 March 2026; PDF, in Japanese): workers could halve within ten years; would-be apprentices turned down because the work does not pay",
+          "url": "https://www.meti.go.jp/shingikai/mono_info_service/entertainment_creative/pdf/015_03_00.pdf"
+        },
+        {
+          "n": 6,
+          "label": "Ministry of Health, Labour and Welfare — FY2026 regional minimum wages: national weighted average ¥1,177 (¥1,121 the year before), in force from 1 October to 2 December 2026 (3 September 2026, in Japanese)",
+          "url": "https://www.mhlw.go.jp/stf/newpage_75950.html",
+          "url2": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/"
+        },
+        {
+          "n": 7,
+          "label": "Ministry of Health, Labour and Welfare — “Public assistance and the minimum wage”, material for the Central Minimum Wages Council’s subcommittee (10 July 2026; PDF posted by the Niigata Labour Bureau, in Japanese): 173.8 working hours a month",
+          "url": "https://jsite.mhlw.go.jp/niigata-roudoukyoku/content/contents/B2_H2_R080820_3.pdf"
+        },
+        {
+          "n": 8,
+          "label": "Ministry of Health, Labour and Welfare — 2025 Basic Survey on Wage Structure, summary (March 2026; PDF, in Japanese): scheduled monthly earnings of general workers ¥340,600",
+          "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2025/dl/13.pdf"
+        },
+        {
+          "n": 9,
+          "label": "e-Stat — 2025 Basic Survey on Wage Structure, general workers by occupation, table 1 (firms with 10 or more employees; Excel, in Japanese)",
+          "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421116&fileKind=4"
+        },
+        {
+          "n": 10,
+          "label": "Free Lunch Lab — japan-2026.json: population and national tax revenue with sources, behind the essay on the cost of a basic income in Japan (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/japan-2026.json"
+        },
+        {
+          "n": 11,
+          "label": "Government of Ireland, Department of Culture, Communications and Sport — Basic Income for the Arts pilot scheme: first payments issue (28 October 2022); six-month extension to February 2026 (19 June 2025)",
+          "url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/basic-income-for-the-arts-bia-pilot-scheme-first-payments-issue/",
+          "url2": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/minister-odonovan-announces-6-month-extension-to-the-basic-income-for-the-arts-pilot-scheme"
+        },
+        {
+          "n": 12,
+          "label": "Government of Ireland — Basic Income for the Arts: Impact Assessment (2 years) (September 2025; PDF)",
+          "url": "https://assets.gov.ie/static/documents/25207450/2-year_report.pdf"
+        },
+        {
+          "n": 13,
+          "label": "Government of Ireland, Department of Culture, Communications and Sport — Alma Economics, Cost-benefit analysis for the Basic Income for the Arts, final report (29 September 2025; PDF): about €114 million gross cost 2021–2025, €1.39 per €1",
+          "url": "https://assets.gov.ie/static/documents/b87d2659/20250929_BIA_CBA_Final_Report.pdf"
+        },
+        {
+          "n": 14,
+          "label": "Government of Ireland, Department of Culture, Communications and Sport — Minister announces the new Basic Income for the Arts scheme (10 February 2026)",
+          "url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/minister-odonovan-announces-the-new-basic-income-for-the-arts-scheme"
+        },
+        {
+          "n": 15,
+          "label": "EY — Basic Income for the Arts scheme 2026–2029: selection report, 10,030 applications (31 July 2026; PDF); Department of Culture, Communications and Sport — first tranche of successful applicants, €34.4 million in Budget 2027 (13 October 2026)",
+          "url": "https://assets.gov.ie/static/documents/5b39e11d/FINAL_REPORT_-_EY_DCCS_BIA_Scheme_Selection_31_July_2026_NOT_PASSWORD_PROTECTED.pdf",
+          "url2": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/minister-odonovan-announces-notification-of-first-tranche-of-successful-applicants-for-the-new-basic-income-for-the-arts-scheme/"
+        },
+        {
+          "n": 16,
+          "label": "Government of Ireland, Department of Culture, Communications and Sport — Second tranche of Basic Income for the Arts scheme recipients to be notified (12 November 2026)",
+          "url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/second-tranche-of-basic-income-for-the-arts-scheme-recipients-to-be-notified/"
+        }
+      ]
+    },
+    {
       "id": "basic-income-inflation",
       "date": "2026-11-19",
       "related": [
@@ -24047,6 +24803,7 @@ module.exports = {
       "id": "japan-basic-income-cost",
       "date": "2026-11-17",
       "related": [
+        "traditional-crafts-basic-income",
         "basic-income-inflation",
         "ai-unemployment-basic-income",
         "us-basic-income-cost",
@@ -27420,6 +28177,7 @@ module.exports = {
       "id": "does-cash-make-people-stop-working",
       "date": "2026-11-11",
       "related": [
+        "traditional-crafts-basic-income",
         "us-basic-income-cost",
         "germany-merz-basic-income-cost",
         "openresearch-cash-study",
@@ -32041,6 +32799,7 @@ module.exports = {
       "id": "generative-ai-creative-work-basic-income",
       "date": "2026-11-07",
       "related": [
+        "traditional-crafts-basic-income",
         "generative-ai-jobs-basic-income",
         "openresearch-cash-study",
         "finland-basic-income-experiment",
@@ -38292,6 +39051,7 @@ module.exports = {
       "id": "takenaka-70000-yen-basic-income",
       "date": "2026-11-06",
       "related": [
+        "traditional-crafts-basic-income",
         "japan-basic-income-cost",
         "japan-special-cash-payment",
         "thailand-digital-wallet",
