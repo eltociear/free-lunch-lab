@@ -836,6 +836,75 @@ Cautions: Whether rewards need Orb verification is unknown, and we have not test
 
 ## Essays
 
+### Do lottery winners keep working? What the studies of winners found
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
+- Published: 2026-11-24
+
+In November 2026, as people argued on X about AI and jobs, a common reply was that many would happily let AI take their job if their living were guaranteed; in English the same argument often ends with a basic income and a lot of video games. Whether people stop working when they no longer need the money is a question that can be checked. The closest real-world test is the lottery: among people who buy tickets, who wins is random, so winners can be compared with players who did not win. Economists have done this with tax and earnings records in Massachusetts, Sweden, the United States and the Netherlands. This essay sets out what they found.
+
+#### Massachusetts: about 11 cents per dollar
+
+Guido Imbens, Donald Rubin and Bruce Sacerdote surveyed 496 people who played the Massachusetts lottery in the mid-1980s and linked the answers to their Social Security earnings records. Major prizes were paid as yearly instalments over 20 years. They found that unearned income reduced labour earnings with a marginal propensity to consume leisure of about 11%: for each extra dollar of prize, earnings fell by about 11 cents. The effect was larger for winners aged 55 to 65.[1][2]
+
+#### Sweden: 1.1% of the prize a year, for more than ten years
+
+David Cesarini, Erik Lindqvist, Matthew Notowidigdo and Robert Östling followed 200,937 Swedish lottery players through government registers. Winning reduced earnings immediately, and the effect stayed roughly constant for more than ten years: pre-tax earnings fell by about 1.1% of the prize each year. A prize of 1 million kronor (about US$140,000) reduced earnings by about 11,000 kronor a year, 5.5% of the average. Participation in the labour force fell by about 2 percentage points per million kronor won. The response was “quite similar by age, education, and sex”; over a lifetime, the propensity to earn less ran from 0.17 per krona for a winner aged 20 to 0.04 for a winner aged 60. Most of the drop came from fewer hours rather than from leaving work.[3]
+
+#### The United States: about 50 cents per dollar, and differences by income
+
+Mikhail Golosov, Michael Graber, Magne Mogstad and David Novgorodsky used US tax records on lottery winners. In the published paper, an extra $1 of unearned income in a given period reduced household labour earnings by about 50 cents, reduced labour taxes by 10 cents and raised consumption by 60 cents. Households with higher incomes cut their earnings by larger amounts.[4]
+
+Their January 2023 working paper gives more detail on 90,731 winners aged 21 to 64 who won at least $30,000. For each $100 won, earnings fell by about $2.30 in each of the following five years; $1.30 for households in the lowest income quartile and $3.10 in the highest. The chance that a winner was employed fell by 3.7 percentage points per $100,000 won, and that fall was more than twice as large in the lowest quartile as in the highest: higher earners worked a little less, while lower earners were more likely to stop altogether.[5]
+
+#### The Netherlands: small and significant
+
+Matteo Picchio, Sigrid Suetens and Jan van Ours studied Dutch lottery winners. A prize of €100,000 reduced earnings by about €1,100 after one year and almost €1,800 after three years. They found the effects “small but statistically significant”, with winners working fewer hours, and no significant effect on the probability of being employed.[6][7]
+
+| Study | Where and data | Effect on work |
+| --- | --- | --- |
+| Imbens, Rubin and Sacerdote (2001) | Massachusetts, 496 players, prizes over 20 years | Earnings down about 11 cents per dollar of prize; larger at ages 55 to 65[1] |
+| Cesarini, Lindqvist, Notowidigdo and Östling (2017) | Sweden, 200,937 players, registers | Earnings down about 1.1% of the prize a year for over ten years; participation down 2 points per million kronor[3] |
+| Golosov, Graber, Mogstad and Novgorodsky (2024) | United States, tax records, 90,731 winners | About 50 cents less household earnings per dollar; employment down 3.7 points per $100,000[4][5] |
+| Picchio, Suetens and van Ours (2018) | Netherlands | About €1,100 less after one year per €100,000; no significant effect on being employed[6] |
+
+#### What people say they would do
+
+Surveys ask the question directly. In August 2013 Gallup asked 1,039 American workers what they would do if they won $10 million: about two thirds said they would keep working and 31% said they would stop. In earlier Gallup surveys, 39% to 44% had said they would quit. Workers aged 55 and older were much more likely than young workers to say they would quit.[8] In Japan, an internet survey in 2015 of 1,361 working members of a prize-site panel asked what they would do if their prize were enough to live on without other income: 49.8% would keep their job, 16.0% would change jobs and 9.7% would start a business, 75.5% in all. It was not a random sample.[9] These are intentions, not behaviour; the studies above measure what winners actually did.
+
+#### How a lottery prize differs from a basic income
+
+A prize and a basic income are both money that does not depend on work, but they differ in ways that matter. A prize is usually paid once, or in instalments for a fixed time; a basic income is paid every month for as long as it lasts. A prize goes to a few people; a basic income goes to everyone, so it can change wages and prices, and it has to be paid for, mostly with taxes, which can affect work too. Sizes differ: ¥70,000 a month is ¥840,000 a year and about ¥33.6 million over 40 years, and $1,000 a month is $12,000 a year. For everyone in Japan, ¥70,000 a month would cost about ¥103.2 trillion a year; $1,000 a month for everyone in the United States about $4.10 trillion.[10] And people who buy lottery tickets are not a random sample of the population.
+
+Experiments that pay money every month look at that question more directly. Our essays on what the experiments found about work (https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/), the OpenResearch study (https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/) and Finland’s basic income experiment (https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/) cover them.
+
+#### What the data can’t tell us
+
+The lottery studies measure earnings, hours and employment. They do not say whether the time not spent working went to care, study, a new business or video games. They cover individual winners in a society where almost everyone else still works, not a whole country that receives the same payment. And the estimates differ in what they measure: cents per dollar of income in a period, or a share of a lump-sum prize per year, so they should not be compared as if they were the same number. What they agree on is the direction and the order of size: winners kept working in most cases and earned somewhat less, the response lasted for years, and in the United States lower-income winners were more likely to stop working altogether. The figures are collected, with sources and dates, in lottery-2026.json (https://neteru-nyukin.eltociear.workers.dev/lottery-2026.json).
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-unemployment-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
+
+Sources:
+
+1. Guido W. Imbens, Donald B. Rubin and Bruce I. Sacerdote — “Estimating the Effect of Unearned Income on Labor Earnings, Savings, and Consumption: Evidence from a Survey of Lottery Players”, American Economic Review 91(4), 778–794 (September 2001): marginal propensity to consume leisure of about 11%, larger for ages 55 to 65: https://doi.org/10.1257/aer.91.4.778
+2. J-PAL — evaluation summary of Imbens, Rubin and Sacerdote (496 lottery players, prizes paid over 20 years); NBER working paper 7001 (1999): https://www.povertyactionlab.org/evaluation/estimating-effect-unearned-income-earnings-savings-and-consumption-evidence-survey-0?lang=en (also https://www.nber.org/papers/w7001)
+3. David Cesarini, Erik Lindqvist, Matthew J. Notowidigdo and Robert Östling — “The Effect of Wealth on Individual and Household Labor Supply: Evidence from Swedish Lotteries”, American Economic Review 107(12), 3917–46 (December 2017): earnings down about 1.1% of the prize a year for more than ten years; 200,937 individuals: https://doi.org/10.1257/aer.20151589
+4. Mikhail Golosov, Michael Graber, Magne Mogstad and David Novgorodsky — “How Americans Respond to Idiosyncratic and Exogenous Changes in Household Wealth and Unearned Income”, Quarterly Journal of Economics 139(2), 1321–1395 (2024): about 50 cents less household labour earnings per extra dollar of unearned income: https://doi.org/10.1093/qje/qjad053
+5. Golosov, Graber, Mogstad and Novgorodsky — working paper version (January 2023; PDF): 90,731 winners of at least $30,000; $2.3 less earnings per $100 a year; employment down 3.7 points per $100,000; NBER working paper 29000 (July 2021): https://voices.uchicago.edu/golosov/files/2023/02/Income-effects.pdf (also https://www.nber.org/papers/w29000)
+6. Matteo Picchio, Sigrid Suetens and Jan C. van Ours — “Labour Supply Effects of Winning a Lottery”, Economic Journal 128(611), 1700–1729 (2018): small but significant fall in hours, no significant effect on employment: https://doi.org/10.1111/ecoj.12465
+7. Picchio, Suetens and van Ours — IZA Discussion Paper 9472 (November 2015; PDF): €100,000 reduces earnings by about €1,100 after one year and almost €1,800 after three: https://repec.iza.org/dp9472.pdf
+8. Gallup — “In U.S., Most Would Still Work Even if They Won Millions” (14 August 2013): 1,039 employed adults, 7–11 August 2013; 31% would stop: https://news.gallup.com/poll/163973/work-even-won-millions.aspx
+9. ChangeField (Kokowan Research) — survey on lotteries and work, 1,361 working panel members, 29 July to 30 August 2015 (DreamNews, 28 September 2015, in Japanese): 75.5% would keep working: https://www.dreamnews.jp/press/0000119896/
+10. Free Lunch Lab — japan-2026.json and us-2026.json: population with sources, behind the essays on the cost of a basic income in Japan and the United States (CC BY 4.0): https://neteru-nyukin.eltociear.workers.dev/japan-2026.json (also https://neteru-nyukin.eltociear.workers.dev/us-2026.json)
+
 ### ¥120,000 job offers, a ¥70,000 basic income and Japan’s crafts
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
@@ -1067,6 +1136,8 @@ Start a basic income of ¥10,000 a month for everyone now. It would cost ¥14.7 
 Alongside it, set up a public AI fund that takes a stake in the wealth AI creates, through shares, a levy on large-scale compute or a share of AI profits, and pays a dividend on top of the base, Alaska-style. As AI’s share of income grows, so does the payment. Keep medical assistance and support for disability and care, which cash cannot replace.
 
 If Lin is wrong, Japan gets a modest floor that reaches people today’s welfare misses. If he is right, the system exists before the jobs go, not after. Either way, the time to build it is while it is still cheap.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-inflation/
 
@@ -1886,6 +1957,8 @@ Many pilot results rest on self-reported surveys. Estimates also move as better 
 Opinion: Across more than fifty years of experiments, in rich countries and poor ones, no study found that cash makes people stop working. Most found small reductions or none, and some found more work. Where work fell, it fell by hours a week or weeks a year, mostly for parents, the young and people between jobs.
 
 Opinion: That is not the same as “basic income has no effect on work”. OpenResearch and the 1970s experiments measured real, if modest, reductions, and those numbers belong in any honest costing. The better question is not “will people stop working?” but “how much less, who, and is it worth it?” The data answer the first two parts. The third is a judgement for each of us.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
 
@@ -2833,6 +2906,8 @@ Opinion: So you cannot say “basic income failed”, and you cannot say “basi
 
 Opinion: Next time someone tells you “Finland already tried it and it failed”, try asking: what exactly failed? The answer is more interesting than they think.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
@@ -3097,6 +3172,8 @@ Opinion: For anyone designing an AI-funded payment, this study gives planning nu
 Opinion: Altman asked an honest question in 2016 and paid for a careful answer, and the answer did not simply flatter the idea. The researchers published the null results alongside the good ones, revised their main estimate upward, and opened their data. That is worth more than any single headline.
 
 Opinion: If you share one line from this study, make it the accurate one: 1,000 lower-income people received $1,000 a month for three years; they worked about 1.3 hours a week less, spent mostly on basics, felt better for a year, and many used the money to choose how they spent their time. Read it the way this site reads every free lunch: who paid, who received, and for how long.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
 

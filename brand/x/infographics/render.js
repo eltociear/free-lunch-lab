@@ -705,6 +705,62 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the data essay lottery-winners-keep-working: the four lottery studies and the Gallup survey;
+  // all numbers from data/lottery-2026.json (the file the build checks the essay against). 1200x675, ja/en.
+  'lottery': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const Lt = require('../../../data/lottery-2026.json');
+      const F = Object.fromEntries(Lt.facts.map(x => [x.id, x]));
+      const n = v => v.toLocaleString('en-US');
+      const T3 = {
+        ja: { eb: 'データエッセイ', hl: '宝くじに当たっても、人は働き続けるのか？', sb: '4か国の当選者の研究：多くは働き続け、稼ぎを少し減らした',
+          c: [['マサチューセッツ（2001）', `${F.irsMpe.value}<small>セント</small>`, `賞金1ドルあたりの勤労収入の減少。${F.irsSample.value}人、賞金は20年の分割払い`],
+            ['スウェーデン（2017）', `${F.seEarn.value}<small>%/年</small>`, `毎年、賞金に対して減った収入。10年以上続いた。${n(F.seSample.value)}人`],
+            ['アメリカ（2024）', `${F.usMpe.value}<small>セント</small>`, `収入1ドルにつき世帯の勤労収入が減った額。所得の低い人ほど仕事そのものをやめた`],
+            ['オランダ（2018）', `${n(F.nlEarn.value)}<small>ユーロ</small>`, `${n(100000)}ユーロの当選で、1年後に減った収入。働いている確率には有意な影響なし`]],
+          big: `アンケートでは、1,000万ドル当たっても働き続けるが約3分の2、やめるは${F.gallup2013.value}%（ギャラップ、${n(1039)}人）`, wm: '不労所得研究所', path: 'ja/' },
+        en: { eb: 'Data essay', hl: 'Do lottery winners keep working?', sb: 'Studies of winners in four countries: most kept working and earned a little less',
+          c: [['Massachusetts (2001)', `${F.irsMpe.value}<small>¢</small>`, `Less labour earnings per $1 of prize. ${F.irsSample.value} players, prizes paid over 20 years`],
+            ['Sweden (2017)', `${F.seEarn.value}<small>%/yr</small>`, `Of the prize, lost in earnings each year, for over ten years. ${n(F.seSample.value)} players`],
+            ['United States (2024)', `${F.usMpe.value}<small>¢</small>`, `Less household earnings per $1 of unearned income. Lower earners more often stopped work`],
+            ['Netherlands (2018)', `€${n(F.nlEarn.value)}`, `Less earnings a year after winning €${n(100000)}. No significant effect on being employed`]],
+          big: `Asked about winning $10 million, about two thirds of US workers said they would keep working; ${F.gallup2013.value}% would stop (Gallup, ${n(1039)} workers)`, wm: 'Free <em>Lunch</em> Lab', path: '' },
+      }[lang];
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb"><span>${T3.eb}</span></p>
+<h1 class="hl">${T3.hl}</h1>
+<p class="sb">${T3.sb}</p>
+<div class="cards">${T3.c.map(([k, v, d]) => `<section class="c"><p class="k">${k}</p><p class="v">${v}</p><p class="d">${d}</p></section>`).join('')}</div>
+<p class="big">${T3.big}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${T3.wm}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${T3.path}essays/lottery-winners-keep-working/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb span{display:inline-block;font-size:18px;font-weight:700;color:#14182E;background:#6CF0B0;padding:3px 14px;border-radius:999px}
+.hl{margin-top:10px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 46 : 44}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:21px;line-height:1.4;color:#C9D0F0}
+.cards{margin-top:16px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:14px 16px;display:flex;flex-direction:column}
+.k{font-size:18px;color:#A9B2D8;font-weight:700;line-height:1.3}
+.v{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 34 : 36}px;line-height:1.1;color:#FFD66B;white-space:nowrap}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.45em;margin-left:2px}
+.d{margin-top:12px;font-size:21px;line-height:1.45;color:#E3E8FF;word-break:auto-phrase}
+.big{margin:14px 0 12px;font-size:21px;font-weight:900;line-height:1.35;color:#FFD66B;border:2px solid rgba(255,214,107,.6);background:rgba(255,214,107,.08);border-radius:14px;padding:10px 18px}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:15px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
   // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
   'billionaire': {

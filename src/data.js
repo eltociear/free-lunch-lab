@@ -2938,6 +2938,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-24",
+      "en": "Published the data essay “Do lottery winners keep working? What the studies of winners found”",
+      "ja": "データエッセイ『宝くじに当たっても、人は働き続けるのか？ 当選者の研究で見る「お金があっても働くか」』を公開",
+      "zh": "发布数据随笔《中了彩票的人还会继续工作吗？中奖者研究的发现》",
+      "hi": "डेटा निबंध “क्या लॉटरी जीतने वाले काम करते रहते हैं? अध्ययनों में क्या मिला” प्रकाशित",
+      "es": "Publicado el ensayo de datos «¿Siguen trabajando los ganadores de lotería? Qué hallaron los estudios»",
+      "de": "Datenessay „Arbeiten Lottogewinner weiter? Was Studien über Gewinner zeigen“ veröffentlicht",
+      "ar": "نشرنا مقال البيانات «هل يواصل الفائزون باليانصيب العمل؟ ماذا وجدت الدراسات»"
+    },
+    {
+      "date": "2026-11-24",
       "en": "Published the data essay “¥120,000 job offers, a ¥70,000 basic income and Japan’s crafts”",
       "ja": "データエッセイ『月給12万円の求人と、月7万円のベーシックインカム。伝統工芸の担い手はなぜ減ったのか、データで見る』を公開",
       "zh": "发布数据随笔《月薪12万日元的招聘与每月7万日元的基本收入：日本传统工艺为何留不住手艺人》",
@@ -11492,6 +11502,33 @@ module.exports = {
       }
     },
     {
+      "id": "lottery-2026",
+      "files": [
+        "lottery-2026.json",
+        "lottery-2026.csv"
+      ],
+      "page": "essays/lottery-winners-keep-working/",
+      "lic": "odLicSrc",
+      "name": {
+        "en": "Lottery winners and work: the figures",
+        "ja": "宝くじの当選者と働き方の数字",
+        "zh": "彩票中奖者与工作：相关数字",
+        "hi": "लॉटरी विजेता और काम: आंकड़े",
+        "es": "Ganadores de lotería y trabajo: las cifras",
+        "de": "Lotteriegewinner und Arbeit: die Zahlen",
+        "ar": "الفائزون باليانصيب والعمل: الأرقام"
+      },
+      "desc": {
+        "en": "The figures behind the essay on whether lottery winners keep working: estimates from Massachusetts, Sweden, the United States and the Netherlands, and surveys in the US and Japan, each with its source and date.",
+        "ja": "宝くじの当選者が働き続けるかのエッセイに使った数字。マサチューセッツ、スウェーデン、アメリカ、オランダの研究の推計と、アメリカと日本のアンケート。それぞれ出典と日付つき。",
+        "zh": "彩票中奖者是否继续工作一文所用的数字：马萨诸塞、瑞典、美国和荷兰研究的估计，以及美国和日本的问卷调查，每项均附来源和日期。",
+        "hi": "लॉटरी विजेता काम करते रहते हैं या नहीं, इस निबंध के पीछे के आंकड़े: मैसाचुसेट्स, स्वीडन, अमेरिका और नीदरलैंड्स के अध्ययनों के अनुमान, और अमेरिका व जापान के सर्वे, हर एक स्रोत और तारीख़ के साथ।",
+        "es": "Las cifras del ensayo sobre si los ganadores de lotería siguen trabajando: estimaciones de Massachusetts, Suecia, Estados Unidos y Países Bajos, y encuestas en EE. UU. y Japón, cada una con su fuente y fecha.",
+        "de": "Die Zahlen hinter dem Essay, ob Lotteriegewinner weiterarbeiten: Schätzungen aus Massachusetts, Schweden, den USA und den Niederlanden sowie Umfragen in den USA und Japan, jeweils mit Quelle und Datum.",
+        "ar": "الأرقام التي يقوم عليها مقال استمرار الفائزين باليانصيب في العمل: تقديرات من ماساتشوستس والسويد والولايات المتحدة وهولندا، واستطلاعات في الولايات المتحدة واليابان، لكل منها مصدره وتاريخه."
+      }
+    },
+    {
       "id": "worker-relief-2026",
       "files": [
         "worker-relief-2026.json",
@@ -19560,6 +19597,610 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "lottery-winners-keep-working",
+      "date": "2026-11-24",
+      "related": [
+        "does-cash-make-people-stop-working",
+        "openresearch-cash-study",
+        "ai-unemployment-basic-income",
+        "finland-basic-income-experiment",
+        "traditional-crafts-basic-income"
+      ],
+      "title": {
+        "ja": "宝くじに当たっても、人は働き続けるのか？ 当選者の研究で見る「お金があっても働くか」",
+        "en": "Do lottery winners keep working? What the studies of winners found",
+        "zh": "中了彩票的人还会继续工作吗？中奖者研究的发现",
+        "hi": "क्या लॉटरी जीतने वाले काम करते रहते हैं? अध्ययनों में क्या मिला",
+        "es": "¿Siguen trabajando los ganadores de lotería? Qué hallaron los estudios",
+        "de": "Arbeiten Lottogewinner weiter? Was Studien über Gewinner zeigen",
+        "ar": "هل يواصل الفائزون باليانصيب العمل؟ ماذا وجدت الدراسات"
+      },
+      "desc": {
+        "ja": "マサチューセッツ、スウェーデン、アメリカ、オランダの当選者の多くは働き続け、稼ぎを少し減らしました。研究が測ったこと、アンケートの答え、宝くじの賞金とベーシックインカムの違いを見ます。",
+        "en": "Winners in Massachusetts, Sweden, the United States and the Netherlands mostly kept working and earned a little less. What the studies measured, what people say in surveys, and how a prize differs from a basic income.",
+        "zh": "马萨诸塞州、瑞典、美国和荷兰的中奖者大多继续工作，收入略有减少。研究衡量了什么、人们在调查中怎么说，以及奖金与基本收入有何不同。",
+        "hi": "मैसाचुसेट्स, स्वीडन, अमेरिका और नीदरलैंड्स में ज़्यादातर विजेता काम करते रहे और थोड़ा कम कमाने लगे। अध्ययन, सर्वे और बेसिक इनकम से इनाम का फ़र्क़।",
+        "es": "La mayoría de los ganadores en Massachusetts, Suecia, EE. UU. y Países Bajos siguió trabajando y ganó algo menos. Qué miden los estudios y qué difiere en una renta básica.",
+        "de": "Lottogewinner in Massachusetts, Schweden, den USA und den Niederlanden arbeiteten meist weiter, verdienten aber etwas weniger. Was Studien messen und was anders ist.",
+        "ar": "واصل معظم الفائزين في أربع دول العمل وكسبوا أقل قليلًا. ما قاسته الدراسات وما يقوله الناس والفرق عن الدخل الأساسي."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2026年11月、AIと仕事をめぐるXの議論で、生活さえ保障されるならAIに仕事を喜んで明け渡すという声が多く見られました。英語圏でも同じ議論は、ベーシックインカムとビデオゲーム三昧の暮らしの話になりがちです。お金に困らなくなったら人は働くのをやめるのか。これは確かめられる問いです。現実でいちばん近い実験は宝くじです。くじを買った人の中で誰が当たるかは偶然なので、当選者と外れた人を比べられます。経済学者は、マサチューセッツ、スウェーデン、アメリカ、オランダで、税や収入の記録を使ってこれを調べてきました。このエッセイでは、その結果を並べます。"
+          ],
+          [
+            "h",
+            "マサチューセッツ：1ドルあたり約11セント"
+          ],
+          [
+            "p",
+            "グイド・インベンス、ドナルド・ルービン、ブルース・サセルドートは、1980年代半ばにマサチューセッツ州の宝くじを買った496人に調査を行い、回答を社会保障の収入記録と結びつけました。高額の賞金は20年間の分割で毎年支払われます。働かずに入るお金は勤労収入を減らし、余暇に回る割合は約11%でした。賞金1ドルにつき、勤労収入が約11セント減ったということです。55〜65歳の当選者では影響がより大きくなりました。[1][2]"
+          ],
+          [
+            "h",
+            "スウェーデン：毎年賞金の1.1%、10年以上"
+          ],
+          [
+            "p",
+            "デビッド・セザリーニ、エリック・リンドクビスト、マシュー・ノトウィディグド、ロバート・エストリングは、スウェーデンの宝くじを買った200,937人を、政府の登録データで追いました。当選すると収入はすぐに減り、その効果は10年以上ほぼ変わらずに続きました。税引き前の収入は毎年、賞金の約1.1%ずつ減りました。100万クローナ（約140,000ドル）が当たると、収入は年に約11,000クローナ、平均の5.5%減ります。働く人の割合は、100万クローナあたり約2ポイント下がりました。反応は「年齢、学歴、性別でかなり似ていた」とされ、生涯で見た収入の減り方は、20歳の当選者で1クローナあたり0.17、60歳で0.04でした。減った分の多くは、仕事をやめることではなく、働く時間を減らすことによるものでした。[3]"
+          ],
+          [
+            "h",
+            "アメリカ：1ドルあたり約50セント、所得による違い"
+          ],
+          [
+            "p",
+            "ミハイル・ゴロソフ、マイケル・グレーバー、マグネ・モグスタッド、デビッド・ノブゴロドスキーは、アメリカの宝くじ当選者の税の記録を使いました。学術誌に掲載された論文では、ある期間に働かずに入るお金が1ドル増えると、世帯の勤労収入は約50セント減り、勤労にかかる税は10セント減り、消費は60セント増えました。所得の高い世帯ほど、収入を大きく減らしています。[4]"
+          ],
+          [
+            "p",
+            "2023年1月の論文の草稿は、30,000ドル以上が当たった21〜64歳の当選者90,731人について、もう少し詳しく示しています。当選額100ドルにつき、その後5年間、毎年の収入が約2.3ドル減りました。所得がいちばん低い4分の1の世帯では1.3ドル、いちばん高い4分の1では3.1ドルです。当選者が働いている確率は、当選額100,000ドルにつき3.7ポイント下がり、その下がり方は所得の低い4分の1で高い4分の1の2倍を超えていました。所得の高い人は少し働く量を減らし、所得の低い人は仕事そのものをやめる人が多かったということです。[5]"
+          ],
+          [
+            "h",
+            "オランダ：小さいが、統計的に有意"
+          ],
+          [
+            "p",
+            "マッテオ・ピッキオ、シグリッド・スーテンス、ヤン・ファン・アウルスは、オランダの宝くじ当選者を調べました。100,000ユーロが当たると、収入は1年後に約1,100ユーロ、3年後に約1,800ユーロ近く減りました。影響は「小さいが統計的に有意」で、当選者は働く時間を減らしたものの、働いている確率にははっきりした影響が見られませんでした。[6][7]"
+          ],
+          [
+            "t",
+            "研究 | 場所とデータ | 働き方への影響\nインベンス、ルービン、サセルドート（2001年） | マサチューセッツ、496人、賞金は20年分割 | 賞金1ドルにつき勤労収入が約11セント減、55〜65歳で大きい[1]\nセザリーニ、リンドクビスト、ノトウィディグド、エストリング（2017年） | スウェーデン、200,937人、登録データ | 10年以上、毎年賞金の約1.1%の収入減、100万クローナあたり働く人が2ポイント減[3]\nゴロソフ、グレーバー、モグスタッド、ノブゴロドスキー（2024年） | アメリカ、税の記録、当選者90,731人 | 1ドルにつき世帯の勤労収入が約50セント減、100,000ドルにつき働く確率が3.7ポイント減[4][5]\nピッキオ、スーテンス、ファン・アウルス（2018年） | オランダ | 100,000ユーロにつき1年後に約1,100ユーロ減、働く確率にははっきりした影響なし[6]"
+          ],
+          [
+            "h",
+            "人は「どうする」と答えるか"
+          ],
+          [
+            "p",
+            "アンケートでは、この問いを直接たずねます。ギャラップは2013年8月、アメリカで働く1,039人に、1,000万ドルが当たったらどうするかを聞きました。約3分の2が働き続けると答え、31%がやめると答えました。それ以前のギャラップの調査では、やめると答えた人は39〜44%でした。55歳以上の人は、若い人よりもやめると答える割合がずっと高くなっています。[8] 日本では2015年、懸賞サイトのモニターで仕事を持つ1,361人へのインターネット調査が、当たった額がほかに収入がなくても生活できるほどだったら仕事をどうするかをたずねています。今の仕事を続けたいが49.8%、転職したいが16.0%、自分で起業したいが9.7%で、合わせて75.5%でした。無作為に選んだ標本ではありません。[9] これらは意向であって行動ではありません。上の研究は、当選者が実際にどうしたかを測ったものです。"
+          ],
+          [
+            "h",
+            "宝くじの賞金とベーシックインカムの違い"
+          ],
+          [
+            "p",
+            "賞金もベーシックインカムも、働いたかどうかに関係なく入るお金です。けれど、大事な点で違います。賞金はふつう1回きりか、決まった期間の分割で支払われます。ベーシックインカムは、制度が続くかぎり毎月支払われます。賞金を受け取るのは一部の人ですが、ベーシックインカムは全員に配られるので、賃金や物価が変わりうるうえ、財源が必要で、その多くは税です。税もまた働き方に影響しえます。金額も違います。月7万円は年84万円、40年で約3,360万円、月1,000ドルは年12,000ドルです。日本に住む全員に月7万円なら年約103.2兆円、アメリカで全員に月1,000ドルなら年約4.10兆ドルかかります。[10] そして、宝くじを買う人は、人口から無作為に選ばれた人たちではありません。"
+          ],
+          [
+            "p",
+            "毎月お金を配る実験は、この問いをより直接に調べています。{世界の実験で働き方はどうなったか|/essays/does-cash-make-people-stop-working/}、{OpenResearchの研究|/essays/openresearch-cash-study/}、{フィンランドのベーシックインカム実験|/essays/finland-basic-income-experiment/}は、別のエッセイで詳しく見ています。"
+          ],
+          [
+            "h",
+            "データにもわからないこと"
+          ],
+          [
+            "p",
+            "宝くじの研究が測っているのは、収入、働く時間、働いているかどうかです。働かなくなった時間が、介護や子育て、学び直し、起業、あるいはビデオゲームのどれに使われたのかはわかりません。また、ほかのほとんどの人が働き続けている社会での、個々の当選者の話であって、国全体が同じお金を受け取る場合のことではありません。推計が測っているものも違います。ある期間の収入1ドルあたりのセントなのか、一括の賞金に対する毎年の割合なのかで、同じ数字として比べることはできません。どの研究も一致しているのは、向きとおおよその大きさです。当選者の多くは働き続け、稼ぎをいくらか減らし、その影響は何年も続きました。アメリカでは、所得の低い当選者ほど仕事そのものをやめる人が多くなっていました。このエッセイの数字は、出典と日付とともに{lottery-2026.json|/lottery-2026.json}にまとめています。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "In November 2026, as people argued on X about AI and jobs, a common reply was that many would happily let AI take their job if their living were guaranteed; in English the same argument often ends with a basic income and a lot of video games. Whether people stop working when they no longer need the money is a question that can be checked. The closest real-world test is the lottery: among people who buy tickets, who wins is random, so winners can be compared with players who did not win. Economists have done this with tax and earnings records in Massachusetts, Sweden, the United States and the Netherlands. This essay sets out what they found."
+          ],
+          [
+            "h",
+            "Massachusetts: about 11 cents per dollar"
+          ],
+          [
+            "p",
+            "Guido Imbens, Donald Rubin and Bruce Sacerdote surveyed 496 people who played the Massachusetts lottery in the mid-1980s and linked the answers to their Social Security earnings records. Major prizes were paid as yearly instalments over 20 years. They found that unearned income reduced labour earnings with a marginal propensity to consume leisure of about 11%: for each extra dollar of prize, earnings fell by about 11 cents. The effect was larger for winners aged 55 to 65.[1][2]"
+          ],
+          [
+            "h",
+            "Sweden: 1.1% of the prize a year, for more than ten years"
+          ],
+          [
+            "p",
+            "David Cesarini, Erik Lindqvist, Matthew Notowidigdo and Robert Östling followed 200,937 Swedish lottery players through government registers. Winning reduced earnings immediately, and the effect stayed roughly constant for more than ten years: pre-tax earnings fell by about 1.1% of the prize each year. A prize of 1 million kronor (about US$140,000) reduced earnings by about 11,000 kronor a year, 5.5% of the average. Participation in the labour force fell by about 2 percentage points per million kronor won. The response was “quite similar by age, education, and sex”; over a lifetime, the propensity to earn less ran from 0.17 per krona for a winner aged 20 to 0.04 for a winner aged 60. Most of the drop came from fewer hours rather than from leaving work.[3]"
+          ],
+          [
+            "h",
+            "The United States: about 50 cents per dollar, and differences by income"
+          ],
+          [
+            "p",
+            "Mikhail Golosov, Michael Graber, Magne Mogstad and David Novgorodsky used US tax records on lottery winners. In the published paper, an extra $1 of unearned income in a given period reduced household labour earnings by about 50 cents, reduced labour taxes by 10 cents and raised consumption by 60 cents. Households with higher incomes cut their earnings by larger amounts.[4]"
+          ],
+          [
+            "p",
+            "Their January 2023 working paper gives more detail on 90,731 winners aged 21 to 64 who won at least $30,000. For each $100 won, earnings fell by about $2.30 in each of the following five years; $1.30 for households in the lowest income quartile and $3.10 in the highest. The chance that a winner was employed fell by 3.7 percentage points per $100,000 won, and that fall was more than twice as large in the lowest quartile as in the highest: higher earners worked a little less, while lower earners were more likely to stop altogether.[5]"
+          ],
+          [
+            "h",
+            "The Netherlands: small and significant"
+          ],
+          [
+            "p",
+            "Matteo Picchio, Sigrid Suetens and Jan van Ours studied Dutch lottery winners. A prize of €100,000 reduced earnings by about €1,100 after one year and almost €1,800 after three years. They found the effects “small but statistically significant”, with winners working fewer hours, and no significant effect on the probability of being employed.[6][7]"
+          ],
+          [
+            "t",
+            "Study | Where and data | Effect on work\nImbens, Rubin and Sacerdote (2001) | Massachusetts, 496 players, prizes over 20 years | Earnings down about 11 cents per dollar of prize; larger at ages 55 to 65[1]\nCesarini, Lindqvist, Notowidigdo and Östling (2017) | Sweden, 200,937 players, registers | Earnings down about 1.1% of the prize a year for over ten years; participation down 2 points per million kronor[3]\nGolosov, Graber, Mogstad and Novgorodsky (2024) | United States, tax records, 90,731 winners | About 50 cents less household earnings per dollar; employment down 3.7 points per $100,000[4][5]\nPicchio, Suetens and van Ours (2018) | Netherlands | About €1,100 less after one year per €100,000; no significant effect on being employed[6]"
+          ],
+          [
+            "h",
+            "What people say they would do"
+          ],
+          [
+            "p",
+            "Surveys ask the question directly. In August 2013 Gallup asked 1,039 American workers what they would do if they won $10 million: about two thirds said they would keep working and 31% said they would stop. In earlier Gallup surveys, 39% to 44% had said they would quit. Workers aged 55 and older were much more likely than young workers to say they would quit.[8] In Japan, an internet survey in 2015 of 1,361 working members of a prize-site panel asked what they would do if their prize were enough to live on without other income: 49.8% would keep their job, 16.0% would change jobs and 9.7% would start a business, 75.5% in all. It was not a random sample.[9] These are intentions, not behaviour; the studies above measure what winners actually did."
+          ],
+          [
+            "h",
+            "How a lottery prize differs from a basic income"
+          ],
+          [
+            "p",
+            "A prize and a basic income are both money that does not depend on work, but they differ in ways that matter. A prize is usually paid once, or in instalments for a fixed time; a basic income is paid every month for as long as it lasts. A prize goes to a few people; a basic income goes to everyone, so it can change wages and prices, and it has to be paid for, mostly with taxes, which can affect work too. Sizes differ: ¥70,000 a month is ¥840,000 a year and about ¥33.6 million over 40 years, and $1,000 a month is $12,000 a year. For everyone in Japan, ¥70,000 a month would cost about ¥103.2 trillion a year; $1,000 a month for everyone in the United States about $4.10 trillion.[10] And people who buy lottery tickets are not a random sample of the population."
+          ],
+          [
+            "p",
+            "Experiments that pay money every month look at that question more directly. Our essays on {what the experiments found about work|/essays/does-cash-make-people-stop-working/}, {the OpenResearch study|/essays/openresearch-cash-study/} and {Finland’s basic income experiment|/essays/finland-basic-income-experiment/} cover them."
+          ],
+          [
+            "h",
+            "What the data can’t tell us"
+          ],
+          [
+            "p",
+            "The lottery studies measure earnings, hours and employment. They do not say whether the time not spent working went to care, study, a new business or video games. They cover individual winners in a society where almost everyone else still works, not a whole country that receives the same payment. And the estimates differ in what they measure: cents per dollar of income in a period, or a share of a lump-sum prize per year, so they should not be compared as if they were the same number. What they agree on is the direction and the order of size: winners kept working in most cases and earned somewhat less, the response lasted for years, and in the United States lower-income winners were more likely to stop working altogether. The figures are collected, with sources and dates, in {lottery-2026.json|/lottery-2026.json}."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026年11月，X上围绕AI与工作的讨论中，常见的一种回复是：只要生活有保障，很多人乐意让AI接手自己的工作；在英语圈，同样的争论往往以基本收入和大量电子游戏收尾。人们不再需要钱时是否会停止工作，这是一个可以检验的问题。现实中最接近的检验是彩票：在买彩票的人中，谁中奖是随机的，因此可以把中奖者与未中奖的玩家进行比较。经济学家已经利用马萨诸塞州、瑞典、美国和荷兰的税务与收入记录做过这样的研究。本文整理他们的发现。"
+          ],
+          [
+            "h",
+            "马萨诸塞州：每1美元约11美分"
+          ],
+          [
+            "p",
+            "因本斯、鲁宾和萨切尔多特调查了1980年代中期购买马萨诸塞州彩票的496人，并将回答与他们的社会保障收入记录相关联。大奖按年分期支付，为期20年。他们发现，非劳动收入会减少劳动收入，闲暇的边际消费倾向约为11%：奖金每多1美元，劳动收入约减少11美分。在55至65岁的中奖者中，这一影响更大。[1][2]"
+          ],
+          [
+            "h",
+            "瑞典：每年减少奖金的1.1%，持续十年以上"
+          ],
+          [
+            "p",
+            "切萨里尼、林德奎斯特、诺托维迪格多和厄斯特林通过政府登记数据追踪了200,937名瑞典彩票玩家。中奖后收入立即下降，且这一效应在十年以上的时间里大致保持不变：税前收入每年减少约相当于奖金的1.1%。100万克朗（约140,000美元）的奖金使收入每年减少约11,000克朗，相当于平均水平的5.5%。每赢得100万克朗，劳动参与率下降约2个百分点。这一反应“在年龄、教育程度和性别之间相当相似”；从一生来看，少挣钱的倾向从20岁中奖者的每克朗0.17到60岁中奖者的0.04不等。下降的大部分来自工作时间减少，而不是离开工作。[3]"
+          ],
+          [
+            "h",
+            "美国：每1美元约50美分，以及按收入的差异"
+          ],
+          [
+            "p",
+            "戈洛索夫、格雷伯、莫格斯塔德和诺夫哥罗德斯基利用了美国彩票中奖者的税务记录。在已发表的论文中，某一时期非劳动收入每增加1美元，家庭劳动收入减少约50美分，劳动税减少10美分，消费增加60美分。收入较高的家庭减少的收入金额更大。[4]"
+          ],
+          [
+            "p",
+            "他们2023年1月的工作论文对90,731名年龄在21至64岁、中奖至少30,000美元的中奖者给出了更多细节。每赢得100美元，此后五年中每年收入减少约2.30美元；收入最低四分之一的家庭为1.30美元，最高四分之一为3.10美元。每赢得100,000美元，中奖者就业的概率下降3.7个百分点，而最低四分之一的降幅是最高四分之一的两倍多：高收入者稍微少工作一些，低收入者则更可能完全停止工作。[5]"
+          ],
+          [
+            "h",
+            "荷兰：小但显著"
+          ],
+          [
+            "p",
+            "皮基奥、苏滕斯和范乌尔斯研究了荷兰的彩票中奖者。100,000欧元的奖金使收入在一年后减少约1,100欧元，三年后减少近1,800欧元。他们认为这些效应“虽小但在统计上显著”，中奖者减少了工作时间，但对就业概率没有显著影响。[6][7]"
+          ],
+          [
+            "t",
+            "研究 | 地点与数据 | 对工作的影响\n因本斯、鲁宾和萨切尔多特（2001年） | 马萨诸塞州，496名玩家，奖金分20年支付 | 每1美元奖金收入减少约11美分；55至65岁影响更大[1]\n切萨里尼、林德奎斯特、诺托维迪格多和厄斯特林（2017年） | 瑞典，200,937名玩家，登记数据 | 十年以上每年收入减少约相当于奖金的1.1%；每100万克朗劳动参与率下降2个百分点[3]\n戈洛索夫、格雷伯、莫格斯塔德和诺夫哥罗德斯基（2024年） | 美国，税务记录，90,731名中奖者 | 每1美元家庭收入减少约50美分；每100,000美元就业下降3.7个百分点[4][5]\n皮基奥、苏滕斯和范乌尔斯（2018年） | 荷兰 | 每100,000欧元一年后减少约1,100欧元；对就业无显著影响[6]"
+          ],
+          [
+            "h",
+            "人们说自己会怎么做"
+          ],
+          [
+            "p",
+            "问卷调查直接询问这个问题。2013年8月，盖洛普询问1,039名美国在职者，如果赢得1,000万美元会怎么做：约三分之二表示会继续工作，31%表示会停止工作。在更早的盖洛普调查中，有39%至44%的人表示会辞职。55岁及以上的在职者比年轻人更倾向于说会辞职。[8] 在日本，2015年一项面向有奖网站会员中1,361名在职者的网络调查询问：如果中奖金额足以在没有其他收入的情况下生活，会如何对待工作？49.8%会继续现在的工作，16.0%会换工作，9.7%会自己创业，合计75.5%。这并非随机样本。[9] 这些是意向而非行为；上面的研究衡量的是中奖者实际的做法。"
+          ],
+          [
+            "h",
+            "彩票奖金与基本收入有何不同"
+          ],
+          [
+            "p",
+            "奖金和基本收入都是与工作无关的钱，但它们在一些重要方面不同。奖金通常一次性支付，或在固定期限内分期支付；基本收入只要制度存在，就每月支付。奖金只发给少数人；基本收入发给所有人，因此可能改变工资和物价，而且需要资金来源，主要是税收，而税收也可能影响工作。金额也不同：每月70,000日元相当于每年840,000日元，40年约3,360万日元；每月1,000美元相当于每年12,000美元。在日本给所有人每月70,000日元，每年约需103.2万亿日元；在美国给所有人每月1,000美元，每年约需4.10万亿美元。[10] 而且，购买彩票的人并不是人口中的随机样本。"
+          ],
+          [
+            "p",
+            "每月发钱的实验更直接地考察了这个问题。我们在{实验对工作有何影响|/essays/does-cash-make-people-stop-working/}、{OpenResearch研究|/essays/openresearch-cash-study/}和{芬兰的基本收入实验|/essays/finland-basic-income-experiment/}等文章中对此有所介绍。"
+          ],
+          [
+            "h",
+            "数据无法告诉我们的"
+          ],
+          [
+            "p",
+            "彩票研究衡量的是收入、工作时间和就业。它们没有说明不工作的时间是用于照护、学习、创业还是电子游戏。它们涉及的是在几乎所有其他人仍在工作的社会中的个别中奖者，而不是整个国家都获得同样款项的情况。而且各项估计衡量的内容不同：某一时期每1美元收入对应的美分，或一次性奖金每年所占的比例，因此不应把它们当作同一个数字来比较。它们一致的是方向和量级：在大多数情况下中奖者继续工作，收入有所减少，这一反应持续多年；在美国，低收入中奖者更可能完全停止工作。这些数字连同来源和日期汇总在{lottery-2026.json|/lottery-2026.json}中。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "नवंबर 2026 में, जब X पर AI और नौकरियों को लेकर बहस चल रही थी, एक आम जवाब यह था कि अगर गुज़ारा पक्का हो तो बहुत से लोग ख़ुशी-ख़ुशी अपनी नौकरी AI को दे देंगे; अंग्रेज़ी में यही तर्क अक्सर बेसिक इनकम और ढेर सारे वीडियो गेम पर ख़त्म होता है। जब पैसे की ज़रूरत न रहे तो क्या लोग काम छोड़ देते हैं, यह ऐसा सवाल है जिसे जाँचा जा सकता है। असल दुनिया में इसका सबसे क़रीबी परीक्षण लॉटरी है: टिकट ख़रीदने वालों में कौन जीतेगा यह संयोग से तय होता है, इसलिए विजेताओं की तुलना उन खिलाड़ियों से की जा सकती है जो नहीं जीते। अर्थशास्त्रियों ने मैसाचुसेट्स, स्वीडन, अमेरिका और नीदरलैंड्स में टैक्स और कमाई के रिकॉर्ड से यह किया है। यह निबंध बताता है कि उन्हें क्या मिला।"
+          ],
+          [
+            "h",
+            "मैसाचुसेट्स: हर डॉलर पर लगभग 11 सेंट"
+          ],
+          [
+            "p",
+            "Guido Imbens, Donald Rubin और Bruce Sacerdote ने 1980 के दशक के मध्य में मैसाचुसेट्स लॉटरी खेलने वाले 496 लोगों का सर्वे किया और उनके जवाबों को उनके सोशल सिक्योरिटी कमाई रिकॉर्ड से जोड़ा। बड़े इनाम 20 साल तक सालाना किस्तों में दिए जाते थे। उन्होंने पाया कि बिना काम की आय ने श्रम से होने वाली कमाई घटाई, और फ़ुर्सत पर ख़र्च करने की सीमांत प्रवृत्ति लगभग 11% रही: इनाम के हर अतिरिक्त डॉलर पर कमाई लगभग 11 सेंट घटी। 55 से 65 साल के विजेताओं में असर ज़्यादा था।[1][2]"
+          ],
+          [
+            "h",
+            "स्वीडन: दस साल से ज़्यादा तक हर साल इनाम का 1.1%"
+          ],
+          [
+            "p",
+            "David Cesarini, Erik Lindqvist, Matthew Notowidigdo और Robert Östling ने सरकारी रजिस्टरों के ज़रिए स्वीडन के 2,00,937 लॉटरी खिलाड़ियों पर नज़र रखी। जीतने से कमाई तुरंत घटी, और यह असर दस साल से ज़्यादा तक लगभग स्थिर रहा: टैक्स से पहले की कमाई हर साल इनाम के लगभग 1.1% के बराबर घटी। 1 मिलियन क्रोना (लगभग 1,40,000 अमेरिकी डॉलर) के इनाम से कमाई साल में लगभग 11,000 क्रोना घटी, जो औसत का 5.5% है। श्रम बल में भागीदारी हर मिलियन क्रोना की जीत पर लगभग 2 प्रतिशत अंक घटी। प्रतिक्रिया “उम्र, शिक्षा और लिंग के हिसाब से काफ़ी मिलती-जुलती” थी; पूरे जीवन में कम कमाने की प्रवृत्ति 20 साल के विजेता के लिए प्रति क्रोना 0.17 से लेकर 60 साल के विजेता के लिए 0.04 तक रही। ज़्यादातर गिरावट काम छोड़ने से नहीं, बल्कि कम घंटे काम करने से आई।[3]"
+          ],
+          [
+            "h",
+            "अमेरिका: हर डॉलर पर लगभग 50 सेंट, और आय के हिसाब से अंतर"
+          ],
+          [
+            "p",
+            "Mikhail Golosov, Michael Graber, Magne Mogstad और David Novgorodsky ने लॉटरी विजेताओं के अमेरिकी टैक्स रिकॉर्ड का इस्तेमाल किया। प्रकाशित शोधपत्र में, किसी अवधि में बिना काम की 1 डॉलर की अतिरिक्त आय ने परिवार की श्रम से कमाई लगभग 50 सेंट घटाई, श्रम पर टैक्स 10 सेंट घटाया और उपभोग 60 सेंट बढ़ाया। ज़्यादा आय वाले परिवारों ने अपनी कमाई में ज़्यादा बड़ी कटौती की।[4]"
+          ],
+          [
+            "p",
+            "उनका जनवरी 2023 का वर्किंग पेपर 21 से 64 साल के उन 90,731 विजेताओं के बारे में और ब्योरा देता है जिन्होंने कम से कम 30,000 डॉलर जीते। हर 100 डॉलर की जीत पर अगले पाँच साल में से हर साल कमाई लगभग 2.30 डॉलर घटी; सबसे कम आय वाले चौथाई परिवारों में 1.30 डॉलर और सबसे ऊँचे चौथाई में 3.10 डॉलर। किसी विजेता के नौकरी में होने की संभावना हर 1,00,000 डॉलर की जीत पर 3.7 प्रतिशत अंक घटी, और यह गिरावट सबसे निचले चौथाई में सबसे ऊँचे चौथाई से दोगुनी से भी ज़्यादा थी: ज़्यादा कमाने वालों ने थोड़ा कम काम किया, जबकि कम कमाने वालों के पूरी तरह काम छोड़ने की संभावना ज़्यादा थी।[5]"
+          ],
+          [
+            "h",
+            "नीदरलैंड्स: छोटा लेकिन महत्वपूर्ण"
+          ],
+          [
+            "p",
+            "Matteo Picchio, Sigrid Suetens और Jan van Ours ने डच लॉटरी विजेताओं का अध्ययन किया। 1,00,000 यूरो के इनाम से एक साल बाद कमाई लगभग 1,100 यूरो और तीन साल बाद लगभग 1,800 यूरो घटी। उन्होंने असर को “छोटा लेकिन सांख्यिकीय रूप से महत्वपूर्ण” पाया, विजेताओं ने कम घंटे काम किया, और नौकरी में होने की संभावना पर कोई महत्वपूर्ण असर नहीं मिला।[6][7]"
+          ],
+          [
+            "t",
+            "अध्ययन | जगह और डेटा | काम पर असर\nImbens, Rubin और Sacerdote (2001) | मैसाचुसेट्स, 496 खिलाड़ी, 20 साल में दिए जाने वाले इनाम | इनाम के हर डॉलर पर कमाई लगभग 11 सेंट कम; 55 से 65 की उम्र में ज़्यादा[1]\nCesarini, Lindqvist, Notowidigdo और Östling (2017) | स्वीडन, 2,00,937 खिलाड़ी, रजिस्टर | दस साल से ज़्यादा तक हर साल कमाई इनाम के लगभग 1.1% कम; हर मिलियन क्रोना पर भागीदारी 2 अंक कम[3]\nGolosov, Graber, Mogstad और Novgorodsky (2024) | अमेरिका, टैक्स रिकॉर्ड, 90,731 विजेता | हर डॉलर पर परिवार की कमाई लगभग 50 सेंट कम; हर 1,00,000 डॉलर पर रोज़गार 3.7 अंक कम[4][5]\nPicchio, Suetens और van Ours (2018) | नीदरलैंड्स | हर 1,00,000 यूरो पर एक साल बाद लगभग 1,100 यूरो कम; नौकरी में होने पर कोई महत्वपूर्ण असर नहीं[6]"
+          ],
+          [
+            "h",
+            "लोग क्या कहते हैं कि वे क्या करेंगे"
+          ],
+          [
+            "p",
+            "सर्वे यह सवाल सीधे पूछते हैं। अगस्त 2013 में Gallup ने 1,039 अमेरिकी कामगारों से पूछा कि अगर वे 10 मिलियन डॉलर जीत जाएँ तो क्या करेंगे: लगभग दो-तिहाई ने कहा कि वे काम करते रहेंगे और 31% ने कहा कि वे काम छोड़ देंगे। Gallup के पहले के सर्वे में 39% से 44% ने कहा था कि वे नौकरी छोड़ देंगे। 55 साल और उससे ज़्यादा उम्र के कामगारों के नौकरी छोड़ने की बात कहने की संभावना युवा कामगारों से कहीं ज़्यादा थी।[8] जापान में 2015 के एक इंटरनेट सर्वे में एक इनाम-साइट पैनल के 1,361 कामकाजी सदस्यों से पूछा गया कि अगर उनका इनाम बिना किसी और आय के गुज़ारे के लिए काफ़ी हो तो वे क्या करेंगे: 49.8% अपनी नौकरी जारी रखेंगे, 16.0% नौकरी बदलेंगे और 9.7% अपना कारोबार शुरू करेंगे, कुल 75.5%। यह रैंडम सैंपल नहीं था।[9] ये इरादे हैं, व्यवहार नहीं; ऊपर के अध्ययन यह मापते हैं कि विजेताओं ने असल में क्या किया।"
+          ],
+          [
+            "h",
+            "लॉटरी का इनाम बेसिक इनकम से कैसे अलग है"
+          ],
+          [
+            "p",
+            "इनाम और बेसिक इनकम दोनों ऐसा पैसा हैं जो काम पर निर्भर नहीं करता, लेकिन उनमें ऐसे अंतर हैं जो मायने रखते हैं। इनाम आम तौर पर एक बार में, या तय समय तक किस्तों में दिया जाता है; बेसिक इनकम जब तक चले, हर महीने दी जाती है। इनाम कुछ लोगों को मिलता है; बेसिक इनकम सबको मिलती है, इसलिए यह वेतन और क़ीमतें बदल सकती है, और इसके लिए पैसा जुटाना पड़ता है, ज़्यादातर टैक्स से, जो काम पर भी असर डाल सकता है। रक़में भी अलग हैं: महीने के 70,000 येन साल के 8,40,000 येन और 40 साल में लगभग 33.6 मिलियन येन होते हैं, और महीने के 1,000 डॉलर साल के 12,000 डॉलर। जापान में सबको महीने के 70,000 येन देने पर साल में लगभग 103.2 ट्रिलियन येन ख़र्च होंगे; अमेरिका में सबको महीने के 1,000 डॉलर देने पर लगभग 4.10 ट्रिलियन डॉलर।[10] और लॉटरी टिकट ख़रीदने वाले लोग आबादी का रैंडम सैंपल नहीं हैं।"
+          ],
+          [
+            "p",
+            "हर महीने पैसा देने वाले प्रयोग इस सवाल को ज़्यादा सीधे देखते हैं। {काम के बारे में प्रयोगों में क्या मिला|/essays/does-cash-make-people-stop-working/}, {OpenResearch अध्ययन|/essays/openresearch-cash-study/} और {फ़िनलैंड के बेसिक इनकम प्रयोग|/essays/finland-basic-income-experiment/} पर हमारे निबंध इन्हें कवर करते हैं।"
+          ],
+          [
+            "h",
+            "आँकड़े क्या नहीं बता सकते"
+          ],
+          [
+            "p",
+            "लॉटरी अध्ययन कमाई, काम के घंटे और रोज़गार मापते हैं। वे यह नहीं बताते कि काम में न लगाया गया समय देखभाल, पढ़ाई, नए कारोबार या वीडियो गेम में गया। वे ऐसे समाज के अलग-अलग विजेताओं को कवर करते हैं जहाँ लगभग बाक़ी सभी लोग अब भी काम करते हैं, न कि ऐसे पूरे देश को जिसे एक जैसा भुगतान मिले। और अनुमान अलग-अलग चीज़ें मापते हैं: किसी अवधि में आय के हर डॉलर पर सेंट, या एकमुश्त इनाम का हर साल का हिस्सा, इसलिए उनकी तुलना ऐसे नहीं करनी चाहिए जैसे वे एक ही संख्या हों। वे जिस बात पर सहमत हैं वह दिशा और आकार का क्रम है: ज़्यादातर मामलों में विजेता काम करते रहे और कुछ कम कमाने लगे, यह प्रतिक्रिया सालों तक चली, और अमेरिका में कम आय वाले विजेताओं के पूरी तरह काम छोड़ने की संभावना ज़्यादा थी। आँकड़े स्रोतों और तारीख़ों के साथ {lottery-2026.json|/lottery-2026.json} में जुटाए गए हैं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "En noviembre de 2026, mientras en X se discutía sobre la IA y el empleo, una respuesta frecuente era que muchos dejarían con gusto que la IA se quedara con su trabajo si tuvieran el sustento garantizado; en inglés, la misma discusión suele terminar en una renta básica y muchos videojuegos. Si la gente deja de trabajar cuando ya no necesita el dinero es una pregunta que se puede comprobar. La prueba real más cercana es la lotería: entre quienes compran billetes, quién gana es cuestión de azar, así que los ganadores pueden compararse con los jugadores que no ganaron. Los economistas lo han hecho con registros fiscales y de ingresos en Massachusetts, Suecia, Estados Unidos y los Países Bajos. Este ensayo expone lo que encontraron."
+          ],
+          [
+            "h",
+            "Massachusetts: unos 11 centavos por dólar"
+          ],
+          [
+            "p",
+            "Guido Imbens, Donald Rubin y Bruce Sacerdote encuestaron a 496 personas que jugaron a la lotería de Massachusetts a mediados de la década de 1980 y vincularon sus respuestas con sus registros de ingresos de la Seguridad Social. Los premios mayores se pagaban en cuotas anuales durante 20 años. Encontraron que los ingresos no laborales reducían los ingresos del trabajo, con una propensión marginal a consumir ocio de alrededor del 11 %: por cada dólar adicional de premio, los ingresos laborales caían unos 11 centavos. El efecto era mayor entre los ganadores de 55 a 65 años.[1][2]"
+          ],
+          [
+            "h",
+            "Suecia: el 1,1 % del premio al año, durante más de diez años"
+          ],
+          [
+            "p",
+            "David Cesarini, Erik Lindqvist, Matthew Notowidigdo y Robert Östling siguieron a 200.937 jugadores de lotería suecos a través de registros oficiales. Ganar redujo los ingresos de inmediato, y el efecto se mantuvo más o menos constante durante más de diez años: los ingresos antes de impuestos cayeron cada año alrededor del 1,1 % del premio. Un premio de 1 millón de coronas (unos 140.000 $) redujo los ingresos en unas 11.000 coronas al año, el 5,5 % de la media. La participación en la población activa cayó unos 2 puntos porcentuales por cada millón de coronas ganado. La respuesta fue «bastante similar por edad, educación y sexo»; a lo largo de la vida, la propensión a ganar menos iba de 0,17 por corona para un ganador de 20 años a 0,04 para uno de 60. La mayor parte de la caída se debió a menos horas de trabajo y no a dejar de trabajar.[3]"
+          ],
+          [
+            "h",
+            "Estados Unidos: unos 50 centavos por dólar, y diferencias según los ingresos"
+          ],
+          [
+            "p",
+            "Mikhail Golosov, Michael Graber, Magne Mogstad y David Novgorodsky utilizaron registros fiscales estadounidenses de ganadores de lotería. En el artículo publicado, 1 $ adicional de ingresos no laborales en un periodo determinado reducía los ingresos laborales del hogar en unos 50 centavos, reducía los impuestos sobre el trabajo en 10 centavos y aumentaba el consumo en 60 centavos. Los hogares con ingresos más altos redujeron sus ingresos en cantidades mayores.[4]"
+          ],
+          [
+            "p",
+            "Su documento de trabajo de enero de 2023 ofrece más detalle sobre 90.731 ganadores de 21 a 64 años que ganaron al menos 30.000 $. Por cada 100 $ ganados, los ingresos cayeron unos 2,30 $ en cada uno de los cinco años siguientes; 1,30 $ en los hogares del cuartil de ingresos más bajo y 3,10 $ en el más alto. La probabilidad de que un ganador tuviera empleo cayó 3,7 puntos porcentuales por cada 100.000 $ ganados, y esa caída fue más del doble en el cuartil más bajo que en el más alto: quienes más ganaban trabajaron algo menos, mientras que quienes ganaban menos tenían más probabilidades de dejar de trabajar por completo.[5]"
+          ],
+          [
+            "h",
+            "Países Bajos: pequeño y significativo"
+          ],
+          [
+            "p",
+            "Matteo Picchio, Sigrid Suetens y Jan van Ours estudiaron a ganadores de lotería neerlandeses. Un premio de 100.000 € redujo los ingresos en unos 1.100 € al cabo de un año y en casi 1.800 € al cabo de tres años. Consideraron los efectos «pequeños pero estadísticamente significativos»: los ganadores trabajaban menos horas, sin un efecto significativo en la probabilidad de tener empleo.[6][7]"
+          ],
+          [
+            "t",
+            "Estudio | Lugar y datos | Efecto en el trabajo\nImbens, Rubin y Sacerdote (2001) | Massachusetts, 496 jugadores, premios en 20 años | Ingresos unos 11 centavos menores por dólar de premio; mayor entre los 55 y 65 años[1]\nCesarini, Lindqvist, Notowidigdo y Östling (2017) | Suecia, 200.937 jugadores, registros | Ingresos alrededor del 1,1 % del premio menores al año durante más de diez años; participación 2 puntos menor por millón de coronas[3]\nGolosov, Graber, Mogstad y Novgorodsky (2024) | Estados Unidos, registros fiscales, 90.731 ganadores | Unos 50 centavos menos de ingresos del hogar por dólar; empleo 3,7 puntos menor por cada 100.000 $[4][5]\nPicchio, Suetens y van Ours (2018) | Países Bajos | Unos 1.100 € menos al cabo de un año por cada 100.000 €; sin efecto significativo en el empleo[6]"
+          ],
+          [
+            "h",
+            "Lo que la gente dice que haría"
+          ],
+          [
+            "p",
+            "Las encuestas lo preguntan directamente. En agosto de 2013, Gallup preguntó a 1.039 trabajadores estadounidenses qué harían si ganaran 10 millones de dólares: unos dos tercios dijeron que seguirían trabajando y el 31 % que lo dejarían. En encuestas anteriores de Gallup, entre el 39 % y el 44 % había dicho que lo dejaría. Los trabajadores de 55 años o más eran mucho más propensos que los jóvenes a decir que lo dejarían.[8] En Japón, una encuesta por internet de 2015 a 1.361 miembros con empleo del panel de un sitio de sorteos preguntó qué harían si el premio bastara para vivir sin otros ingresos: el 49,8 % mantendría su empleo, el 16,0 % cambiaría de trabajo y el 9,7 % montaría un negocio, el 75,5 % en total. No era una muestra aleatoria.[9] Son intenciones, no comportamientos; los estudios anteriores miden lo que los ganadores hicieron realmente."
+          ],
+          [
+            "h",
+            "En qué se diferencia un premio de lotería de una renta básica"
+          ],
+          [
+            "p",
+            "Un premio y una renta básica son ambos dinero que no depende del trabajo, pero difieren en aspectos importantes. Un premio suele pagarse una sola vez, o en cuotas durante un tiempo fijo; una renta básica se paga cada mes mientras dure. Un premio llega a unas pocas personas; una renta básica llega a todos, por lo que puede alterar salarios y precios, y hay que financiarla, sobre todo con impuestos, que también pueden afectar al trabajo. Los importes difieren: 70.000 yenes al mes son 840.000 yenes al año y unos 33,6 millones de yenes en 40 años, y 1.000 $ al mes son 12.000 $ al año. Para todos los residentes en Japón, 70.000 yenes al mes costarían unos 103,2 billones de yenes al año; 1.000 $ al mes para todos en Estados Unidos, unos 4,10 billones de dólares.[10] Y quienes compran lotería no son una muestra aleatoria de la población."
+          ],
+          [
+            "p",
+            "Los experimentos que pagan dinero cada mes abordan esa cuestión de forma más directa. Nuestros ensayos sobre {lo que encontraron los experimentos sobre el trabajo|/essays/does-cash-make-people-stop-working/}, {el estudio de OpenResearch|/essays/openresearch-cash-study/} y {el experimento de renta básica de Finlandia|/essays/finland-basic-income-experiment/} los tratan."
+          ],
+          [
+            "h",
+            "Lo que los datos no pueden decirnos"
+          ],
+          [
+            "p",
+            "Los estudios sobre la lotería miden ingresos, horas y empleo. No dicen si el tiempo que no se dedicó a trabajar fue a cuidados, estudios, un nuevo negocio o videojuegos. Se refieren a ganadores individuales en una sociedad en la que casi todos los demás siguen trabajando, no a un país entero que recibe el mismo pago. Y las estimaciones difieren en lo que miden: centavos por dólar de ingresos en un periodo, o una parte de un premio único por año, por lo que no deben compararse como si fueran la misma cifra. En lo que coinciden es en la dirección y el orden de magnitud: en la mayoría de los casos los ganadores siguieron trabajando y ganaron algo menos, la respuesta duró años y, en Estados Unidos, los ganadores con menos ingresos tenían más probabilidades de dejar de trabajar por completo. Las cifras están recogidas, con fuentes y fechas, en {lottery-2026.json|/lottery-2026.json}."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Im November 2026, als auf X über KI und Arbeitsplätze gestritten wurde, lautete eine häufige Antwort, viele würden ihren Job gern der KI überlassen, wenn ihr Lebensunterhalt gesichert wäre; im Englischen endet dieselbe Debatte oft bei einem Grundeinkommen und vielen Videospielen. Ob Menschen aufhören zu arbeiten, wenn sie das Geld nicht mehr brauchen, lässt sich überprüfen. Der realitätsnächste Test ist die Lotterie: Unter denen, die Lose kaufen, entscheidet der Zufall über den Gewinn, sodass man Gewinner mit Spielern vergleichen kann, die nicht gewonnen haben. Ökonomen haben das mit Steuer- und Einkommensdaten in Massachusetts, Schweden, den Vereinigten Staaten und den Niederlanden getan. Dieser Essay stellt zusammen, was sie herausfanden."
+          ],
+          [
+            "h",
+            "Massachusetts: etwa 11 Cent pro Dollar"
+          ],
+          [
+            "p",
+            "Guido Imbens, Donald Rubin und Bruce Sacerdote befragten 496 Menschen, die Mitte der 1980er-Jahre in Massachusetts Lotterie gespielt hatten, und verknüpften die Antworten mit ihren Einkommensdaten der Sozialversicherung. Große Gewinne wurden über 20 Jahre in jährlichen Raten ausgezahlt. Sie stellten fest, dass Einkommen ohne Arbeit das Arbeitseinkommen verringerte, mit einer marginalen Neigung, Freizeit zu konsumieren, von etwa 11 %: Pro zusätzlichem Dollar Gewinn sank das Arbeitseinkommen um etwa 11 Cent. Bei Gewinnern zwischen 55 und 65 Jahren war der Effekt größer.[1][2]"
+          ],
+          [
+            "h",
+            "Schweden: 1,1 % des Gewinns pro Jahr, über mehr als zehn Jahre"
+          ],
+          [
+            "p",
+            "David Cesarini, Erik Lindqvist, Matthew Notowidigdo und Robert Östling verfolgten 200.937 schwedische Lotteriespieler anhand staatlicher Register. Ein Gewinn senkte das Einkommen sofort, und der Effekt blieb über mehr als zehn Jahre ungefähr konstant: Das Bruttoeinkommen sank jedes Jahr um etwa 1,1 % des Gewinns. Ein Gewinn von 1 Million Kronen (etwa 140.000 US-Dollar) senkte das Einkommen um etwa 11.000 Kronen im Jahr, 5,5 % des Durchschnitts. Die Erwerbsbeteiligung sank um etwa 2 Prozentpunkte pro gewonnener Million Kronen. Die Reaktion war „nach Alter, Bildung und Geschlecht recht ähnlich“; über das ganze Leben reichte die Neigung, weniger zu verdienen, von 0,17 pro Krone bei einem 20-jährigen Gewinner bis 0,04 bei einem 60-jährigen. Der größte Teil des Rückgangs kam von weniger Arbeitsstunden, nicht vom Ausstieg aus der Arbeit.[3]"
+          ],
+          [
+            "h",
+            "Vereinigte Staaten: etwa 50 Cent pro Dollar und Unterschiede nach Einkommen"
+          ],
+          [
+            "p",
+            "Mikhail Golosov, Michael Graber, Magne Mogstad und David Novgorodsky nutzten US-Steuerdaten von Lotteriegewinnern. In der veröffentlichten Studie senkte 1 $ zusätzliches arbeitsfreies Einkommen in einem Zeitraum das Arbeitseinkommen des Haushalts um etwa 50 Cent und die Steuern auf Arbeit um 10 Cent und erhöhte den Konsum um 60 Cent. Haushalte mit höherem Einkommen verringerten ihr Einkommen um größere Beträge.[4]"
+          ],
+          [
+            "p",
+            "Ihr Arbeitspapier vom Januar 2023 liefert mehr Details zu 90.731 Gewinnern im Alter von 21 bis 64 Jahren, die mindestens 30.000 $ gewonnen hatten. Pro gewonnenen 100 $ sank das Einkommen in jedem der folgenden fünf Jahre um etwa 2,30 $; um 1,30 $ bei Haushalten im untersten Einkommensquartil und um 3,10 $ im obersten. Die Wahrscheinlichkeit, erwerbstätig zu sein, sank um 3,7 Prozentpunkte pro gewonnenen 100.000 $, und dieser Rückgang war im untersten Quartil mehr als doppelt so groß wie im obersten: Besserverdienende arbeiteten etwas weniger, Geringverdiener hörten dagegen eher ganz auf.[5]"
+          ],
+          [
+            "h",
+            "Niederlande: klein und signifikant"
+          ],
+          [
+            "p",
+            "Matteo Picchio, Sigrid Suetens und Jan van Ours untersuchten niederländische Lotteriegewinner. Ein Gewinn von 100.000 € senkte das Einkommen nach einem Jahr um etwa 1.100 € und nach drei Jahren um fast 1.800 €. Sie bezeichneten die Effekte als „klein, aber statistisch signifikant“; die Gewinner arbeiteten weniger Stunden, ohne signifikanten Effekt auf die Wahrscheinlichkeit, erwerbstätig zu sein.[6][7]"
+          ],
+          [
+            "t",
+            "Studie | Ort und Daten | Effekt auf die Arbeit\nImbens, Rubin und Sacerdote (2001) | Massachusetts, 496 Spieler, Gewinne über 20 Jahre | Einkommen etwa 11 Cent niedriger pro Dollar Gewinn; stärker im Alter von 55 bis 65[1]\nCesarini, Lindqvist, Notowidigdo und Östling (2017) | Schweden, 200.937 Spieler, Register | Einkommen über mehr als zehn Jahre jährlich um etwa 1,1 % des Gewinns niedriger; Erwerbsbeteiligung 2 Punkte niedriger pro Million Kronen[3]\nGolosov, Graber, Mogstad und Novgorodsky (2024) | Vereinigte Staaten, Steuerdaten, 90.731 Gewinner | Etwa 50 Cent weniger Haushaltseinkommen pro Dollar; Beschäftigung 3,7 Punkte niedriger pro 100.000 $[4][5]\nPicchio, Suetens und van Ours (2018) | Niederlande | Etwa 1.100 € weniger nach einem Jahr pro 100.000 €; kein signifikanter Effekt auf die Beschäftigung[6]"
+          ],
+          [
+            "h",
+            "Was Menschen nach eigener Aussage tun würden"
+          ],
+          [
+            "p",
+            "Umfragen stellen die Frage direkt. Im August 2013 fragte Gallup 1.039 amerikanische Beschäftigte, was sie tun würden, wenn sie 10 Millionen Dollar gewännen: Etwa zwei Drittel sagten, sie würden weiterarbeiten, 31 % sagten, sie würden aufhören. In früheren Gallup-Umfragen hatten 39 % bis 44 % gesagt, sie würden kündigen. Beschäftigte ab 55 Jahren sagten viel häufiger als junge, dass sie aufhören würden.[8] In Japan fragte eine Internetumfrage von 2015 unter 1.361 erwerbstätigen Mitgliedern des Panels einer Gewinnspielseite, was sie tun würden, wenn ihr Gewinn reichte, um ohne weiteres Einkommen zu leben: 49,8 % würden ihre Stelle behalten, 16,0 % den Job wechseln und 9,7 % ein Unternehmen gründen, insgesamt 75,5 %. Es war keine Zufallsstichprobe.[9] Das sind Absichten, kein Verhalten; die Studien oben messen, was Gewinner tatsächlich taten."
+          ],
+          [
+            "h",
+            "Wie sich ein Lotteriegewinn von einem Grundeinkommen unterscheidet"
+          ],
+          [
+            "p",
+            "Ein Gewinn und ein Grundeinkommen sind beide Geld, das nicht von Arbeit abhängt, doch sie unterscheiden sich in wichtigen Punkten. Ein Gewinn wird meist einmal ausgezahlt oder in Raten über eine feste Zeit; ein Grundeinkommen wird jeden Monat gezahlt, solange es besteht. Ein Gewinn geht an wenige; ein Grundeinkommen an alle, sodass es Löhne und Preise verändern kann, und es muss finanziert werden, meist über Steuern, die ebenfalls die Arbeit beeinflussen können. Auch die Höhe unterscheidet sich: 70.000 Yen im Monat sind 840.000 Yen im Jahr und etwa 33,6 Mio. Yen in 40 Jahren, und 1.000 $ im Monat sind 12.000 $ im Jahr. Für alle in Japan würden 70.000 Yen im Monat etwa 103,2 Billionen Yen im Jahr kosten; 1.000 $ im Monat für alle in den Vereinigten Staaten etwa 4,10 Billionen Dollar.[10] Und wer Lose kauft, ist keine Zufallsstichprobe der Bevölkerung."
+          ],
+          [
+            "p",
+            "Experimente, die jeden Monat Geld auszahlen, gehen dieser Frage direkter nach. Unsere Essays darüber, {was die Experimente zur Arbeit ergaben|/essays/does-cash-make-people-stop-working/}, zur {OpenResearch-Studie|/essays/openresearch-cash-study/} und zum {finnischen Grundeinkommensexperiment|/essays/finland-basic-income-experiment/} behandeln sie."
+          ],
+          [
+            "h",
+            "Was die Daten nicht verraten"
+          ],
+          [
+            "p",
+            "Die Lotteriestudien messen Einkommen, Arbeitsstunden und Beschäftigung. Sie sagen nicht, ob die nicht gearbeitete Zeit in Pflege, Ausbildung, ein neues Unternehmen oder Videospiele floss. Sie betreffen einzelne Gewinner in einer Gesellschaft, in der fast alle anderen weiterarbeiten, nicht ein ganzes Land, das dieselbe Zahlung erhält. Und die Schätzungen messen Verschiedenes: Cent pro Dollar Einkommen in einem Zeitraum oder einen Anteil eines einmaligen Gewinns pro Jahr; man sollte sie daher nicht vergleichen, als wären sie dieselbe Zahl. Einig sind sie sich in Richtung und Größenordnung: Die Gewinner arbeiteten meist weiter und verdienten etwas weniger, die Reaktion hielt jahrelang an, und in den Vereinigten Staaten hörten Gewinner mit geringerem Einkommen eher ganz auf zu arbeiten. Die Zahlen sind mit Quellen und Daten in {lottery-2026.json|/lottery-2026.json} zusammengestellt."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في نوفمبر 2026، وبينما كان الناس يتجادلون على منصة إكس حول الذكاء الاصطناعي والوظائف، كان من الردود الشائعة أن كثيرين سيتركون وظائفهم للذكاء الاصطناعي عن طيب خاطر لو ضُمنت لهم معيشتهم؛ وبالإنجليزية كثيرًا ما تنتهي الحجة نفسها بدخل أساسي وكثير من ألعاب الفيديو. وهل يتوقف الناس عن العمل حين لا يعودون بحاجة إلى المال؟ هذا سؤال يمكن التحقق منه. وأقرب اختبار له في الواقع هو اليانصيب: فبين من يشترون التذاكر يكون الفائز عشوائيًا، ولذلك يمكن مقارنة الفائزين باللاعبين الذين لم يفوزوا. وقد فعل الاقتصاديون ذلك بسجلات الضرائب والدخل في ماساتشوستس والسويد والولايات المتحدة وهولندا. ويعرض هذا المقال ما توصلوا إليه."
+          ],
+          [
+            "h",
+            "ماساتشوستس: نحو 11 سنتًا لكل دولار"
+          ],
+          [
+            "p",
+            "استطلع إمبنز وروبن وساسردوت آراء 496 شخصًا لعبوا يانصيب ماساتشوستس في منتصف عقد 1980، وربطوا إجاباتهم بسجلات دخلهم لدى الضمان الاجتماعي. وكانت الجوائز الكبرى تُدفع على أقساط سنوية على مدى 20 عامًا. ووجدوا أن الدخل غير المكتسب من العمل خفّض دخل العمل بميل حدّي لاستهلاك وقت الفراغ يبلغ نحو ⁦11%⁩: فمقابل كل دولار إضافي من الجائزة انخفض الدخل بنحو 11 سنتًا. وكان الأثر أكبر لدى الفائزين الذين تتراوح أعمارهم بين 55 و65 عامًا.[1][2]"
+          ],
+          [
+            "h",
+            "السويد: ⁦1.1%⁩ من الجائزة سنويًا لأكثر من عشر سنوات"
+          ],
+          [
+            "p",
+            "تتبّع سيزاريني وليندكفيست ونوتويديغدو وأوستلينغ 200,937 لاعب يانصيب سويديًا عبر السجلات الحكومية. فقد خفّض الفوز الدخل فورًا، وظل الأثر ثابتًا تقريبًا لأكثر من عشر سنوات: انخفض الدخل قبل الضريبة بنحو ⁦1.1%⁩ من الجائزة كل عام. وخفّضت جائزة قدرها 1 مليون كرونة (نحو 140,000 دولار أمريكي) الدخل بنحو 11,000 كرونة سنويًا، أي ⁦5.5%⁩ من المتوسط. وانخفضت المشاركة في القوى العاملة بنحو 2 نقطة مئوية لكل مليون كرونة من الجائزة. وكانت الاستجابة «متشابهة إلى حد كبير بحسب العمر والتعليم والجنس»؛ وعلى مدى العمر تراوح الميل إلى كسب دخل أقل بين 0.17 لكل كرونة لفائز عمره 20 عامًا و0.04 لفائز عمره 60 عامًا. وجاء معظم الانخفاض من تقليل ساعات العمل لا من ترك العمل.[3]"
+          ],
+          [
+            "h",
+            "الولايات المتحدة: نحو 50 سنتًا لكل دولار، وفروق بحسب الدخل"
+          ],
+          [
+            "p",
+            "استخدم غولوسوف وغرابر وموغستاد ونوفغورودسكي سجلات الضرائب الأمريكية الخاصة بالفائزين باليانصيب. وفي الورقة المنشورة، خفّض 1 دولار إضافي من الدخل غير المكتسب في فترة ما دخلَ الأسرة من العمل بنحو 50 سنتًا، وخفّض ضرائب العمل بـ10 سنتات، ورفع الاستهلاك بـ60 سنتًا. وخفّضت الأسر ذات الدخل الأعلى دخلها بمقادير أكبر.[4]"
+          ],
+          [
+            "p",
+            "وتقدّم ورقة العمل الصادرة في يناير 2023 مزيدًا من التفاصيل عن 90,731 فائزًا تتراوح أعمارهم بين 21 و64 عامًا وفازوا بـ30,000 دولار على الأقل. فمقابل كل 100 دولار من الجائزة انخفض الدخل بنحو 2.30 دولار في كل سنة من السنوات الخمس التالية؛ و1.30 دولار للأسر في الربع الأدنى دخلًا و3.10 دولار في الربع الأعلى. وانخفض احتمال أن يكون الفائز موظفًا بـ3.7 نقطة مئوية لكل 100,000 دولار من الجائزة، وكان هذا الانخفاض في الربع الأدنى أكبر بأكثر من الضعف منه في الربع الأعلى: فأصحاب الدخل الأعلى عملوا أقل قليلًا، بينما كان أصحاب الدخل الأدنى أكثر ميلًا إلى التوقف عن العمل تمامًا.[5]"
+          ],
+          [
+            "h",
+            "هولندا: أثر صغير لكنه ذو دلالة"
+          ],
+          [
+            "p",
+            "درس بيكيو وسوتنز وفان أورس الفائزين باليانصيب في هولندا. فقد خفّضت جائزة قدرها 100,000 يورو الدخل بنحو 1,100 يورو بعد عام واحد وبنحو 1,800 يورو تقريبًا بعد ثلاث سنوات. ووجدوا أن الآثار «صغيرة لكنها ذات دلالة إحصائية»، إذ عمل الفائزون ساعات أقل، ولم يجدوا أثرًا ذا دلالة على احتمال أن يكون الشخص موظفًا.[6][7]"
+          ],
+          [
+            "t",
+            "الدراسة | المكان والبيانات | الأثر على العمل\nإمبنز وروبن وساسردوت (2001) | ماساتشوستس، 496 لاعبًا، جوائز على مدى 20 عامًا | انخفاض الدخل بنحو 11 سنتًا لكل دولار من الجائزة؛ أكبر في سن 55 إلى 65[1]\nسيزاريني وليندكفيست ونوتويديغدو وأوستلينغ (2017) | السويد، 200,937 لاعبًا، سجلات حكومية | انخفاض الدخل بنحو ⁦1.1%⁩ من الجائزة سنويًا لأكثر من عشر سنوات؛ انخفاض المشاركة 2 نقطة لكل مليون كرونة[3]\nغولوسوف وغرابر وموغستاد ونوفغورودسكي (2024) | الولايات المتحدة، سجلات ضريبية، 90,731 فائزًا | دخل الأسرة أقل بنحو 50 سنتًا لكل دولار؛ انخفاض التوظف 3.7 نقطة لكل 100,000 دولار[4][5]\nبيكيو وسوتنز وفان أورس (2018) | هولندا | أقل بنحو 1,100 يورو بعد عام لكل 100,000 يورو؛ لا أثر ذا دلالة على التوظف[6]"
+          ],
+          [
+            "h",
+            "ما يقول الناس إنهم سيفعلونه"
+          ],
+          [
+            "p",
+            "تطرح الاستطلاعات السؤال مباشرة. ففي أغسطس 2013 سألت غالوب 1,039 عاملًا أمريكيًا عمّا سيفعلونه لو فازوا بـ10 ملايين دولار: قال نحو الثلثين إنهم سيواصلون العمل، وقال ⁦31%⁩ إنهم سيتوقفون. وفي استطلاعات سابقة لغالوب قال ما بين ⁦39%⁩ و⁦44%⁩ إنهم سيتركون العمل. وكان العاملون في سن 55 فما فوق أكثر ميلًا بكثير من الشباب إلى القول إنهم سيتركون العمل.[8] وفي اليابان، سأل استطلاع عبر الإنترنت أُجري عام 2015 شمل 1,361 عضوًا عاملًا في لوحة مستخدمين لموقع جوائز عمّا سيفعلونه لو كانت جائزتهم تكفي للعيش دون دخل آخر: ⁦49.8%⁩ سيحتفظون بوظائفهم، و⁦16.0%⁩ سيغيّرون وظائفهم، و⁦9.7%⁩ سيبدؤون مشروعًا تجاريًا، أي ⁦75.5%⁩ إجمالًا. ولم تكن عينة عشوائية.[9] وهذه نوايا لا سلوك؛ أما الدراسات السابقة فتقيس ما فعله الفائزون فعلًا."
+          ],
+          [
+            "h",
+            "كيف تختلف جائزة اليانصيب عن الدخل الأساسي"
+          ],
+          [
+            "p",
+            "الجائزة والدخل الأساسي كلاهما مال لا يتوقف على العمل، لكنهما يختلفان في أمور مهمة. فالجائزة تُدفع عادة مرة واحدة، أو على أقساط لمدة محددة؛ أما الدخل الأساسي فيُدفع كل شهر ما دام قائمًا. والجائزة تذهب إلى قلة من الناس؛ أما الدخل الأساسي فيذهب إلى الجميع، ولذلك قد يغيّر الأجور والأسعار، ولا بد من تمويله، غالبًا بالضرائب، وهي قد تؤثر في العمل أيضًا. والمبالغ مختلفة: 70,000 ين شهريًا تعني 840,000 ين سنويًا ونحو 33.6 مليون ين على مدى 40 عامًا، و1,000 دولار شهريًا تعني 12,000 دولار سنويًا. وإعطاء 70,000 ين شهريًا لكل من في اليابان سيكلّف نحو 103.2 تريليون ين سنويًا؛ وإعطاء 1,000 دولار شهريًا لكل من في الولايات المتحدة نحو 4.10 تريليون دولار.[10] كما أن من يشترون تذاكر اليانصيب ليسوا عينة عشوائية من السكان."
+          ],
+          [
+            "p",
+            "وتتناول التجارب التي تدفع المال كل شهر هذا السؤال بصورة أكثر مباشرة. وتغطيها مقالاتنا عن {ما وجدته التجارب بشأن العمل|/essays/does-cash-make-people-stop-working/} و{دراسة «أوبن ريسيرش»|/essays/openresearch-cash-study/} و{تجربة الدخل الأساسي في فنلندا|/essays/finland-basic-income-experiment/}."
+          ],
+          [
+            "h",
+            "ما لا تستطيع البيانات أن تخبرنا به"
+          ],
+          [
+            "p",
+            "تقيس دراسات اليانصيب الدخل وساعات العمل والتوظف. ولا تقول ما إذا كان الوقت الذي لم يُقضَ في العمل قد ذهب إلى الرعاية أو الدراسة أو مشروع جديد أو ألعاب الفيديو. وهي تغطي فائزين أفرادًا في مجتمع لا يزال فيه الجميع تقريبًا يعملون، لا بلدًا بأكمله يتلقى الدفعة نفسها. كما تختلف التقديرات فيما تقيسه: سنتات لكل دولار من الدخل في فترة ما، أو حصة سنوية من جائزة تُدفع دفعة واحدة، ولذلك لا ينبغي مقارنتها كأنها الرقم نفسه. أما ما تتفق عليه فهو الاتجاه ورتبة الحجم: في معظم الحالات واصل الفائزون العمل وكسبوا أقل بعض الشيء، واستمرت الاستجابة سنوات، وفي الولايات المتحدة كان الفائزون الأدنى دخلًا أكثر ميلًا إلى التوقف عن العمل تمامًا. والأرقام مجمّعة مع مصادرها وتواريخها في {⁦lottery-2026.json⁩|/lottery-2026.json}."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Guido W. Imbens, Donald B. Rubin and Bruce I. Sacerdote — “Estimating the Effect of Unearned Income on Labor Earnings, Savings, and Consumption: Evidence from a Survey of Lottery Players”, American Economic Review 91(4), 778–794 (September 2001): marginal propensity to consume leisure of about 11%, larger for ages 55 to 65",
+          "url": "https://doi.org/10.1257/aer.91.4.778"
+        },
+        {
+          "n": 2,
+          "label": "J-PAL — evaluation summary of Imbens, Rubin and Sacerdote (496 lottery players, prizes paid over 20 years); NBER working paper 7001 (1999)",
+          "url": "https://www.povertyactionlab.org/evaluation/estimating-effect-unearned-income-earnings-savings-and-consumption-evidence-survey-0?lang=en",
+          "url2": "https://www.nber.org/papers/w7001"
+        },
+        {
+          "n": 3,
+          "label": "David Cesarini, Erik Lindqvist, Matthew J. Notowidigdo and Robert Östling — “The Effect of Wealth on Individual and Household Labor Supply: Evidence from Swedish Lotteries”, American Economic Review 107(12), 3917–46 (December 2017): earnings down about 1.1% of the prize a year for more than ten years; 200,937 individuals",
+          "url": "https://doi.org/10.1257/aer.20151589"
+        },
+        {
+          "n": 4,
+          "label": "Mikhail Golosov, Michael Graber, Magne Mogstad and David Novgorodsky — “How Americans Respond to Idiosyncratic and Exogenous Changes in Household Wealth and Unearned Income”, Quarterly Journal of Economics 139(2), 1321–1395 (2024): about 50 cents less household labour earnings per extra dollar of unearned income",
+          "url": "https://doi.org/10.1093/qje/qjad053"
+        },
+        {
+          "n": 5,
+          "label": "Golosov, Graber, Mogstad and Novgorodsky — working paper version (January 2023; PDF): 90,731 winners of at least $30,000; $2.3 less earnings per $100 a year; employment down 3.7 points per $100,000; NBER working paper 29000 (July 2021)",
+          "url": "https://voices.uchicago.edu/golosov/files/2023/02/Income-effects.pdf",
+          "url2": "https://www.nber.org/papers/w29000"
+        },
+        {
+          "n": 6,
+          "label": "Matteo Picchio, Sigrid Suetens and Jan C. van Ours — “Labour Supply Effects of Winning a Lottery”, Economic Journal 128(611), 1700–1729 (2018): small but significant fall in hours, no significant effect on employment",
+          "url": "https://doi.org/10.1111/ecoj.12465"
+        },
+        {
+          "n": 7,
+          "label": "Picchio, Suetens and van Ours — IZA Discussion Paper 9472 (November 2015; PDF): €100,000 reduces earnings by about €1,100 after one year and almost €1,800 after three",
+          "url": "https://repec.iza.org/dp9472.pdf"
+        },
+        {
+          "n": 8,
+          "label": "Gallup — “In U.S., Most Would Still Work Even if They Won Millions” (14 August 2013): 1,039 employed adults, 7–11 August 2013; 31% would stop",
+          "url": "https://news.gallup.com/poll/163973/work-even-won-millions.aspx"
+        },
+        {
+          "n": 9,
+          "label": "ChangeField (Kokowan Research) — survey on lotteries and work, 1,361 working panel members, 29 July to 30 August 2015 (DreamNews, 28 September 2015, in Japanese): 75.5% would keep working",
+          "url": "https://www.dreamnews.jp/press/0000119896/"
+        },
+        {
+          "n": 10,
+          "label": "Free Lunch Lab — japan-2026.json and us-2026.json: population with sources, behind the essays on the cost of a basic income in Japan and the United States (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/japan-2026.json",
+          "url2": "https://neteru-nyukin.eltociear.workers.dev/us-2026.json"
+        }
+      ]
+    },
+    {
       "id": "traditional-crafts-basic-income",
       "date": "2026-11-24",
       "related": [
@@ -21106,6 +21747,7 @@ module.exports = {
       "date": "2026-11-19",
       "kind": "opinion",
       "related": [
+        "lottery-winners-keep-working",
         "basic-income-inflation",
         "ai-company-profits-per-person",
         "japan-basic-income-cost",
@@ -28177,6 +28819,7 @@ module.exports = {
       "id": "does-cash-make-people-stop-working",
       "date": "2026-11-11",
       "related": [
+        "lottery-winners-keep-working",
         "traditional-crafts-basic-income",
         "us-basic-income-cost",
         "germany-merz-basic-income-cost",
@@ -37393,6 +38036,7 @@ module.exports = {
       "id": "finland-basic-income-experiment",
       "date": "2026-11-06",
       "related": [
+        "lottery-winners-keep-working",
         "does-cash-make-people-stop-working",
         "openresearch-cash-study",
         "japan-special-cash-payment",
@@ -40755,6 +41399,7 @@ module.exports = {
       "id": "openresearch-cash-study",
       "date": "2026-11-04",
       "related": [
+        "lottery-winners-keep-working",
         "us-basic-income-cost",
         "does-cash-make-people-stop-working",
         "universal-high-income",

@@ -287,6 +287,10 @@
    {
     "file": "zen-kaku-gothic-new-400-de-91ee538686.woff2",
     "chars": "³"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-de-4a54b7c460.woff2",
+    "chars": "サチリワ"
    }
   ],
   "de:body:700": [
@@ -381,6 +385,10 @@
    {
     "file": "zen-kaku-gothic-new-700-de-abfd4e46d6.woff2",
     "chars": "³"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-de-9891ca2f6d.woff2",
+    "chars": "サチリワ"
    }
   ],
   "de:display": [
@@ -523,6 +531,10 @@
    {
     "file": "zen-kaku-gothic-new-400-en-91ee538686.woff2",
     "chars": "³"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-en-4a54b7c460.woff2",
+    "chars": "サチリワ"
    }
   ],
   "en:body:700": [
@@ -617,6 +629,10 @@
    {
     "file": "zen-kaku-gothic-new-700-en-abfd4e46d6.woff2",
     "chars": "³"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-en-9891ca2f6d.woff2",
+    "chars": "サチリワ"
    }
   ],
   "en:display": [
@@ -767,6 +783,10 @@
    {
     "file": "zen-kaku-gothic-new-400-es-91ee538686.woff2",
     "chars": "³"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-es-4a54b7c460.woff2",
+    "chars": "サチリワ"
    }
   ],
   "es:body:700": [
@@ -877,6 +897,10 @@
    {
     "file": "zen-kaku-gothic-new-700-es-abfd4e46d6.woff2",
     "chars": "³"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-es-9891ca2f6d.woff2",
+    "chars": "サチリワ"
    }
   ],
   "es:display": [
@@ -1387,6 +1411,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-ee12f7cf9c.woff2",
     "chars": "倒嘆宮展崎弟彫拓漸礼窯紡繊衣軒－"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-6bca3a0127.woff2",
+    "chars": "喜昧草"
    }
   ],
   "ja:body:700": [
@@ -1681,6 +1709,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-4bd8b5d22c.woff2",
     "chars": "倒嘆宮展崎弟彫拓漸礼窯紡繊衣軒－"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-9dfd9584c4.woff2",
+    "chars": "喜昧草"
    }
   ],
   "ja:display": [
@@ -1875,6 +1907,10 @@
    {
     "file": "dela-gothic-one-400-ja-50456a2974.woff2",
     "chars": "伝工賃"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-70ae4db6aa.woff2",
+    "chars": "宝続"
    }
   ],
   "ja:dot": [
@@ -2239,6 +2275,10 @@
    {
     "file": "noto-sans-sc-400-zh-af6196a504.woff2",
     "chars": "崎怨拓拯瓷纺"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-aff8f2ed42.woff2",
+    "chars": "サチワ"
    }
   ],
   "zh:body:700": [
@@ -2549,6 +2589,10 @@
    {
     "file": "noto-sans-sc-700-zh-cfbb4357b3.woff2",
     "chars": "崎怨拓拯瓷纺"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-7aaee39c21.woff2",
+    "chars": "サチワ"
    }
   ],
   "zh:display": [
@@ -2743,6 +2787,10 @@
    {
     "file": "noto-sans-sc-900-zh-74fc649ae0.woff2",
     "chars": "传剩招聘"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-691cfeb098.woff2",
+    "chars": "十差异彩继著诸"
    }
   ],
   "zh:dot": [
