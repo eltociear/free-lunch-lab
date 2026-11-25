@@ -1415,6 +1415,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-6bca3a0127.woff2",
     "chars": "喜昧草"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-af131f734b.woff2",
+    "chars": "僚弘擁芳"
    }
   ],
   "ja:body:700": [
@@ -1713,6 +1717,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-9dfd9584c4.woff2",
     "chars": "喜昧草"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-5e84336810.woff2",
+    "chars": "僚弘擁芳"
    }
   ],
   "ja:display": [
@@ -2279,6 +2287,10 @@
    {
     "file": "noto-sans-sc-400-zh-aff8f2ed42.woff2",
     "chars": "サチワ"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-36ff59a602.woff2",
+    "chars": "履弘稔"
    }
   ],
   "zh:body:700": [
@@ -2593,6 +2605,10 @@
    {
     "file": "noto-sans-sc-700-zh-7aaee39c21.woff2",
     "chars": "サチワ"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-2a56f60348.woff2",
+    "chars": "履弘稔"
    }
   ],
   "zh:display": [

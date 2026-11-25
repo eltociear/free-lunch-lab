@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-24",
+  "fetchedOn": "2026-11-25",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -255,7 +255,7 @@
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-11-23",
+      "lastCommit": "2026-11-25",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"

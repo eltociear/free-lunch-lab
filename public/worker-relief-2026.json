@@ -7,7 +7,7 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "about": "Figures behind the page on Japan's Worker Burden Relief Payment (就業者負担軽減支援金), /guides/worker-relief-payment/. Each fact gives its value, the date it refers to, its status (decided: in the bill or government documents; considering: the government said in the Diet that it is considering it; reported: a plan reported by the press; open: not decided), the source and the day it was checked. build.js checks that every language of the page carries the digits listed under 'digits' (any one of the alternatives in each nested list), and the page's household calculator takes its amounts and rates from 'calc' (fact ids) and 'comparison'.",
   "page": "guides/worker-relief-payment/",
-  "retrieved": "2026-11-23",
+  "retrieved": "2026-11-26",
   "facts": [
     {
       "id": "foodRateNow",
@@ -356,21 +356,68 @@
       "unit": "date",
       "status": "decided",
       "date": "2026-11-11",
-      "note": "Special Committee on the consumption tax and relief payment bill; no vote as of 23 Nov 2026",
+      "note": "Special Committee on the consumption tax and relief payment bill; no vote as of 26 Nov 2026",
       "source": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm",
-      "asOf": "2026-11-23"
+      "asOf": "2026-11-26"
+    },
+    {
+      "id": "regionalHearing",
+      "value": "2026-11-20",
+      "unit": "date of the special committee's regional public hearing (Aomori Prefecture)",
+      "status": "decided",
+      "date": "2026-11-20",
+      "source": "https://www.sangiin.go.jp/jpn/ugoki/r8/261124-1.html",
+      "asOf": "2026-11-26",
+      "digits": [
+        [
+          "20"
+        ]
+      ]
     },
     {
       "id": "publicHearing",
       "value": "2026-11-24",
-      "unit": "date of the special committee's central public hearing (13:00)",
+      "unit": "date of the special committee's central public hearing (held; 4 witnesses)",
       "status": "decided",
-      "date": "2026-11-18",
-      "source": "https://www.sangiin.go.jp/jpn/ugoki/r8/shohi-kochou261118.html",
-      "asOf": "2026-11-23",
+      "date": "2026-11-24",
+      "source": "https://www.sangiin.go.jp/jpn/ugoki/r8/261124-2.html",
+      "asOf": "2026-11-26",
       "digits": [
         [
           "24"
+        ],
+        [
+          "4"
+        ]
+      ]
+    },
+    {
+      "id": "oppositionBoycott",
+      "value": "2026-11-24",
+      "unit": "date the Diet affairs chiefs of 6 opposition parties in the House of Councillors agreed not to take part in deliberations on the bill for the time being",
+      "status": "reported",
+      "date": "2026-11-24",
+      "note": "reason given: Education Minister Yoshihiro Seki's false answer in the special committee about political fundraising parties (on 19 Nov he said officials attended only 2 parties, in 2024; on 20 Nov he disclosed 3 more, per Tokyo Shimbun); they also agreed to submit a censure motion against him; PM Takaichi said he is fulfilling his duty to explain (Kyodo; Tokyo Shimbun 24 Nov)",
+      "source": "https://www.47news.jp/15277179.html",
+      "asOf": "2026-11-26",
+      "digits": [
+        [
+          "6"
+        ]
+      ]
+    },
+    {
+      "id": "censureMotion",
+      "value": "2026-11-27",
+      "unit": "expected plenary vote on the opposition's censure motion against the education minister (submission announced for 26 Nov)",
+      "status": "reported",
+      "date": "2026-11-25",
+      "note": "Constitutional Democratic Party Diet affairs chief Yoshitaka Saito, 25 Nov; the opposition is not taking part in talks on the upper house schedule; Chief Cabinet Secretary Minoru Kihara: Seki will explain properly and stays in office (Jiji)",
+      "source": "https://www.nippon.com/ja/articles/-/57960",
+      "asOf": "2026-11-26",
+      "digits": [
+        [
+          "27"
         ]
       ]
     },
@@ -379,10 +426,10 @@
       "value": "2026-12-12",
       "unit": "date",
       "status": "open",
-      "date": "2026-11-20",
-      "note": "69-day session to 12 December, no extension decided",
+      "date": "2026-11-26",
+      "note": "69-day session to 12 December, no extension decided as of 26 Nov",
       "source": "https://www.shugiin.go.jp/",
-      "asOf": "2026-11-23",
+      "asOf": "2026-11-26",
       "digits": [
         [
           "12"
@@ -401,6 +448,37 @@
       "digits": [
         [
           "2027"
+        ]
+      ]
+    },
+    {
+      "id": "fullSchemeMax",
+      "value": 270000,
+      "unit": "yen per year, maximum for some dual-earner couples with two children in the full scheme from FY2029 (plan under consideration in the government)",
+      "status": "reported",
+      "date": "2026-11-24",
+      "note": "Asahi Shimbun, citing several government officials; the government puts the net burden of a model couple with two children up to ¥270,000 above the US, Germany and France; amounts to be decided in light of wages and the economy and of permanent funding; not in any government document",
+      "source": "https://news.yahoo.co.jp/articles/a230baefbc16dfb47d2a46bae9ac8b364c997e1c",
+      "asOf": "2026-11-26",
+      "digits": [
+        [
+          "270000",
+          "27"
+        ]
+      ]
+    },
+    {
+      "id": "fullSchemeCost",
+      "value": 2700000000000,
+      "unit": "yen a year, scale of the full scheme seen as needed within the government (about)",
+      "status": "reported",
+      "date": "2026-11-24",
+      "source": "https://news.yahoo.co.jp/articles/a230baefbc16dfb47d2a46bae9ac8b364c997e1c",
+      "asOf": "2026-11-26",
+      "digits": [
+        [
+          "2700000000000",
+          "27"
         ]
       ]
     }
