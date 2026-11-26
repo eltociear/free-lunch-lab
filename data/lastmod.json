@@ -1,18 +1,18 @@
 {
  "/": [
-  "c848dcc5ce464ebb",
+  "a83f249c7cc4a883",
   "2026-11-26"
  ],
  "/about/": [
-  "2651c3c88e185a0b",
+  "a4412cda7ce2969d",
   "2026-11-26"
  ],
  "/ar/": [
-  "6fd868aae5caa182",
+  "23554ae28bbb1d3c",
   "2026-11-26"
  ],
  "/ar/about/": [
-  "ba5d914b3db7db25",
+  "cc0e080d874e5c0b",
   "2026-11-26"
  ],
  "/ar/badge/": [
@@ -260,8 +260,8 @@
   "2026-11-19"
  ],
  "/ar/calc/fi/": [
-  "ff848b32a408c616",
-  "2026-11-19"
+  "ff462f3b6fd0cea6",
+  "2026-11-26"
  ],
  "/ar/calc/fj/": [
   "97cfd39219e126f1",
@@ -364,8 +364,8 @@
   "2026-11-19"
  ],
  "/ar/calc/ie/": [
-  "bfc53accc192de8a",
-  "2026-11-24"
+  "386d3401f426efd0",
+  "2026-11-26"
  ],
  "/ar/calc/il/": [
   "66c98329088b4cf8",
@@ -880,7 +880,7 @@
   "2026-11-19"
  ],
  "/ar/data/": [
-  "139833a4b0cbfbb8",
+  "66a34f8022c21fd4",
   "2026-11-26"
  ],
  "/ar/embed/": [
@@ -888,7 +888,7 @@
   "2026-11-11"
  ],
  "/ar/essays/": [
-  "c0ec86fb9770baa1",
+  "152502ff0a3db045",
   "2026-11-26"
  ],
  "/ar/essays/ai-agent-basic-income/": [
@@ -946,6 +946,10 @@
  "/ar/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "ab26c2f1b91092e5",
   "2026-11-11"
+ ],
+ "/ar/essays/ireland-basic-income-arts-lottery/": [
+  "d30e5181b4083dbe",
+  "2026-11-26"
  ],
  "/ar/essays/japan-basic-income-cost/": [
   "2b56d1fb96ee914a",
@@ -1040,7 +1044,7 @@
   "2026-11-11"
  ],
  "/ar/pilots/us/": [
-  "14e6a7e2f0ae634e",
+  "aa82b381df5ea5ea",
   "2026-11-26"
  ],
  "/ar/ranking/": [
@@ -1512,8 +1516,8 @@
   "2026-11-19"
  ],
  "/calc/fi/": [
-  "47455c944ece5a7d",
-  "2026-11-19"
+  "55804491b19fa2c4",
+  "2026-11-26"
  ],
  "/calc/fj/": [
   "b417d42f74960405",
@@ -1616,8 +1620,8 @@
   "2026-11-19"
  ],
  "/calc/ie/": [
-  "8f5e7e34e4296a99",
-  "2026-11-24"
+  "55fe81b7e848e3de",
+  "2026-11-26"
  ],
  "/calc/il/": [
   "5be994786c8e987b",
@@ -2132,15 +2136,15 @@
   "2026-11-19"
  ],
  "/data/": [
-  "9e6842a8308c1170",
+  "7cb15999608980e7",
   "2026-11-26"
  ],
  "/de/": [
-  "54d89a432f386241",
+  "5465ee989d802541",
   "2026-11-26"
  ],
  "/de/about/": [
-  "84eefcdf65a22d81",
+  "b5cb96c724418e0c",
   "2026-11-26"
  ],
  "/de/badge/": [
@@ -2388,8 +2392,8 @@
   "2026-11-19"
  ],
  "/de/calc/fi/": [
-  "0f25ff0b740de7e4",
-  "2026-11-19"
+  "b897bf85e7c76c78",
+  "2026-11-26"
  ],
  "/de/calc/fj/": [
   "94860ca8276b4783",
@@ -2492,8 +2496,8 @@
   "2026-11-19"
  ],
  "/de/calc/ie/": [
-  "50366282623c19c6",
-  "2026-11-24"
+  "b1877dfef66d3aca",
+  "2026-11-26"
  ],
  "/de/calc/il/": [
   "5a18731ef05dc95b",
@@ -3008,7 +3012,7 @@
   "2026-11-19"
  ],
  "/de/data/": [
-  "c930311ccfed577b",
+  "abec4abf7002e464",
   "2026-11-26"
  ],
  "/de/embed/": [
@@ -3016,7 +3020,7 @@
   "2026-11-11"
  ],
  "/de/essays/": [
-  "b30f3d0b1932931f",
+  "26e4216237beecfe",
   "2026-11-26"
  ],
  "/de/essays/ai-agent-basic-income/": [
@@ -3074,6 +3078,10 @@
  "/de/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "68d681a01964a75f",
   "2026-11-11"
+ ],
+ "/de/essays/ireland-basic-income-arts-lottery/": [
+  "1d23bfa0adc76369",
+  "2026-11-26"
  ],
  "/de/essays/japan-basic-income-cost/": [
   "a0a0e154b539ca07",
@@ -3168,7 +3176,7 @@
   "2026-11-11"
  ],
  "/de/pilots/us/": [
-  "be28a0730f5f9608",
+  "9255dd7e5f97c1af",
   "2026-11-26"
  ],
  "/de/ranking/": [
@@ -3400,11 +3408,11 @@
   "2026-11-11"
  ],
  "/es/": [
-  "f7c132aaa7bdc865",
+  "e9747d72e00ffbd8",
   "2026-11-26"
  ],
  "/es/about/": [
-  "ba5dbab67bd37c95",
+  "d630f035f743c083",
   "2026-11-26"
  ],
  "/es/badge/": [
@@ -3652,8 +3660,8 @@
   "2026-11-19"
  ],
  "/es/calc/fi/": [
-  "5cd8da3f92428ad6",
-  "2026-11-19"
+  "2c001e3223bf37ca",
+  "2026-11-26"
  ],
  "/es/calc/fj/": [
   "4cec8cd6a4e3f335",
@@ -3756,8 +3764,8 @@
   "2026-11-19"
  ],
  "/es/calc/ie/": [
-  "1cf2497d72a3adb7",
-  "2026-11-24"
+  "b1017115f98ada1c",
+  "2026-11-26"
  ],
  "/es/calc/il/": [
   "c8e6c173d2748d37",
@@ -4272,7 +4280,7 @@
   "2026-11-19"
  ],
  "/es/data/": [
-  "02dc0f1739c87600",
+  "ad49be5f1ec33041",
   "2026-11-26"
  ],
  "/es/embed/": [
@@ -4280,7 +4288,7 @@
   "2026-11-11"
  ],
  "/es/essays/": [
-  "635933487325f141",
+  "edf0496ffd995139",
   "2026-11-26"
  ],
  "/es/essays/ai-agent-basic-income/": [
@@ -4338,6 +4346,10 @@
  "/es/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "d214452cebac4350",
   "2026-11-11"
+ ],
+ "/es/essays/ireland-basic-income-arts-lottery/": [
+  "5251d56240f7b533",
+  "2026-11-26"
  ],
  "/es/essays/japan-basic-income-cost/": [
   "463aa414d00cb96c",
@@ -4432,7 +4444,7 @@
   "2026-11-11"
  ],
  "/es/pilots/us/": [
-  "4cb46ad3b046d1bb",
+  "842ec2f70db0af1f",
   "2026-11-26"
  ],
  "/es/ranking/": [
@@ -4660,7 +4672,7 @@
   "2026-11-24"
  ],
  "/essays/": [
-  "0e80b3d11bad4953",
+  "d7efbd13b7a6ac37",
   "2026-11-26"
  ],
  "/essays/ai-agent-basic-income/": [
@@ -4718,6 +4730,10 @@
  "/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "c851a992898aa18e",
   "2026-11-11"
+ ],
+ "/essays/ireland-basic-income-arts-lottery/": [
+  "fc9fd927fba138a2",
+  "2026-11-26"
  ],
  "/essays/japan-basic-income-cost/": [
   "070482c6580a6600",
@@ -4800,11 +4816,11 @@
   "2026-11-25"
  ],
  "/hi/": [
-  "b4436287b8b86571",
+  "551a7636fe99dd13",
   "2026-11-26"
  ],
  "/hi/about/": [
-  "e0f6be902d6d343e",
+  "42cc9154a23ba68d",
   "2026-11-26"
  ],
  "/hi/badge/": [
@@ -5052,8 +5068,8 @@
   "2026-11-19"
  ],
  "/hi/calc/fi/": [
-  "76e4f33431ce6f2f",
-  "2026-11-19"
+  "56f99a44a916c0bb",
+  "2026-11-26"
  ],
  "/hi/calc/fj/": [
   "8c17332f9d7de051",
@@ -5156,8 +5172,8 @@
   "2026-11-19"
  ],
  "/hi/calc/ie/": [
-  "0368147e56e1c3e4",
-  "2026-11-24"
+  "0011945e02aaff79",
+  "2026-11-26"
  ],
  "/hi/calc/il/": [
   "4253c2368c0a700e",
@@ -5672,7 +5688,7 @@
   "2026-11-19"
  ],
  "/hi/data/": [
-  "4aa5c28f1aa0761b",
+  "8297a1ebd6573ea2",
   "2026-11-26"
  ],
  "/hi/embed/": [
@@ -5680,7 +5696,7 @@
   "2026-11-11"
  ],
  "/hi/essays/": [
-  "c32065d7ba23e441",
+  "5a45a2e24beca998",
   "2026-11-26"
  ],
  "/hi/essays/ai-agent-basic-income/": [
@@ -5738,6 +5754,10 @@
  "/hi/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "3d26248d03b04248",
   "2026-11-11"
+ ],
+ "/hi/essays/ireland-basic-income-arts-lottery/": [
+  "58353ca2ebdb61b7",
+  "2026-11-26"
  ],
  "/hi/essays/japan-basic-income-cost/": [
   "9a0959c703c201d7",
@@ -5832,7 +5852,7 @@
   "2026-11-11"
  ],
  "/hi/pilots/us/": [
-  "03d7eefeac05b902",
+  "ea4c0d49303c800a",
   "2026-11-26"
  ],
  "/hi/ranking/": [
@@ -6060,11 +6080,11 @@
   "2026-11-24"
  ],
  "/ja/": [
-  "31839e54268be9fe",
+  "9ccc6bed7fed3525",
   "2026-11-26"
  ],
  "/ja/about/": [
-  "48fdbc3fb22c1ec9",
+  "32c98d3f28d36c2d",
   "2026-11-26"
  ],
  "/ja/badge/": [
@@ -6312,8 +6332,8 @@
   "2026-11-19"
  ],
  "/ja/calc/fi/": [
-  "53595627bfe24a76",
-  "2026-11-19"
+  "a2a3455f920d7034",
+  "2026-11-26"
  ],
  "/ja/calc/fj/": [
   "bfd2f16e772ed519",
@@ -6416,8 +6436,8 @@
   "2026-11-19"
  ],
  "/ja/calc/ie/": [
-  "7eedb2f22c8572ea",
-  "2026-11-24"
+  "c0e92bb610b6c32e",
+  "2026-11-26"
  ],
  "/ja/calc/il/": [
   "0d7d65acb3260cbc",
@@ -6932,7 +6952,7 @@
   "2026-11-19"
  ],
  "/ja/data/": [
-  "aa598006671a5ac2",
+  "063c3f760efa87c1",
   "2026-11-26"
  ],
  "/ja/embed/": [
@@ -6940,7 +6960,7 @@
   "2026-11-11"
  ],
  "/ja/essays/": [
-  "0a6fd0621e9a8983",
+  "487a662de5298b04",
   "2026-11-26"
  ],
  "/ja/essays/ai-agent-basic-income/": [
@@ -6998,6 +7018,10 @@
  "/ja/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "cfc00f9b9eddc0f9",
   "2026-11-18"
+ ],
+ "/ja/essays/ireland-basic-income-arts-lottery/": [
+  "3f262c2bb7dae1aa",
+  "2026-11-26"
  ],
  "/ja/essays/japan-basic-income-cost/": [
   "3a99de64d6d3c92c",
@@ -7092,7 +7116,7 @@
   "2026-11-11"
  ],
  "/ja/pilots/us/": [
-  "c97ae2b0460b9809",
+  "270c0ad24db69666",
   "2026-11-26"
  ],
  "/ja/ranking/": [
@@ -7332,7 +7356,7 @@
   "2026-11-11"
  ],
  "/pilots/us/": [
-  "7146210a61a30dd8",
+  "6d0bd7d45154c831",
   "2026-11-26"
  ],
  "/ranking/": [
@@ -7560,11 +7584,11 @@
   "2026-11-24"
  ],
  "/zh/": [
-  "edd4dcf9844c1308",
+  "fee18f26edd212e1",
   "2026-11-26"
  ],
  "/zh/about/": [
-  "1f825fcaeb272626",
+  "dd4b1c678011ab72",
   "2026-11-26"
  ],
  "/zh/badge/": [
@@ -7812,8 +7836,8 @@
   "2026-11-19"
  ],
  "/zh/calc/fi/": [
-  "ad53960ec131d72e",
-  "2026-11-19"
+  "87a6b0baee581978",
+  "2026-11-26"
  ],
  "/zh/calc/fj/": [
   "a269e8cebeb86484",
@@ -7916,8 +7940,8 @@
   "2026-11-19"
  ],
  "/zh/calc/ie/": [
-  "9f8fe97a9d461424",
-  "2026-11-24"
+  "b4c18e4f1f04c033",
+  "2026-11-26"
  ],
  "/zh/calc/il/": [
   "75be68341005d7ff",
@@ -8432,7 +8456,7 @@
   "2026-11-19"
  ],
  "/zh/data/": [
-  "2b1a8c21d0d3e393",
+  "ce5f1a04657bd29b",
   "2026-11-26"
  ],
  "/zh/embed/": [
@@ -8440,7 +8464,7 @@
   "2026-11-11"
  ],
  "/zh/essays/": [
-  "de8e81dcf1c5fcc6",
+  "b6c667899ea82fa0",
   "2026-11-26"
  ],
  "/zh/essays/ai-agent-basic-income/": [
@@ -8498,6 +8522,10 @@
  "/zh/essays/india-basic-income-madhya-pradesh-ladli-behna/": [
   "62821569cc83dbb1",
   "2026-11-11"
+ ],
+ "/zh/essays/ireland-basic-income-arts-lottery/": [
+  "51e0f937d6934104",
+  "2026-11-26"
  ],
  "/zh/essays/japan-basic-income-cost/": [
   "42da0044b83540e5",
@@ -8592,7 +8620,7 @@
   "2026-11-11"
  ],
  "/zh/pilots/us/": [
-  "7061644b6e753326",
+  "965af46d61f0b535",
   "2026-11-26"
  ],
  "/zh/ranking/": [

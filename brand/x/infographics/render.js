@@ -819,6 +819,66 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the data essay ireland-basic-income-arts-lottery: the odds of a place, three rounds, the tranches so far and the cost of paying everyone who applied;
+  // all numbers from data/ireland-bia-2026.json (the file the build checks the essay against). 1200x675, ja/en.
+  'bia': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const B = require('../../../data/ireland-bia-2026.json');
+      const F = Object.fromEntries(B.facts.map(x => [x.id, x]));
+      const n = v => v.toLocaleString('en-US');
+      const yr = F.biaPilot.value * 52, places = F.biaPilot.places, apps = F.biaApps.value, p = places / apps;
+      const odds = (p * 100).toFixed(1), never = ((1 - p) ** 3 * 100).toFixed(0);
+      const told = F.biaNotified.value[0] + F.biaSecond.value, left = places - told;
+      const all = apps * yr, times = (all / F.biaBudget2027.value).toFixed(1);
+      const T3 = {
+        ja: { eb: 'データエッセイ', hl: '抽選で選ぶ「ベーシックインカム」', sb: `アイルランドの芸術家向け制度：${n(apps)}件の応募から${n(places)}人に週${F.biaPilot.value}ユーロを3年間`,
+          c: [['1回の募集で選ばれる確率', `${odds}<small>%</small>`, `${n(places)}の枠÷応募${n(apps)}件。資格ありの人数は非公表で、これが下限`],
+            ['3回の募集で1度も選ばれず', `${never}<small>%</small>`, '各回同じ条件と仮定した例。受給者は次の回に応募できない'],
+            ['通知済み（11月17日答弁）', `${n(told)}<small>人</small>`, `10月15日から${F.biaNotified.value[0]}人、11月12日に${F.biaSecond.value}人。残り${left}人分`],
+            ['応募者全員に払うと', `${times}<small>倍</small>`, `年約${(all / 1e8).toFixed(3)}億ユーロ。2027年度予算は${n(F.biaBudget2027.value / 1e4)}万ユーロ`]],
+          big: 'BIENの定義の5つの特徴のうち「普遍的」で外れる。文化省も「ユニバーサル・ベーシックインカムではない」と説明', wm: '不労所得研究所', path: 'ja/' },
+        en: { eb: 'Data essay', hl: 'A basic income by lottery', sb: `Ireland’s arts scheme: €${F.biaPilot.value} a week for three years to ${n(places)} of ${n(apps)} applicants`,
+          c: [['Chance of a place in one round', `${odds}<small>%</small>`, `${n(places)} places ÷ ${n(apps)} applications. The eligible count is not published, so this is the floor`],
+            ['Never picked in three rounds', `${never}<small>%</small>`, 'An illustration with the same odds each round; recipients sit out the next round'],
+            ['Notified (Dáil, 17 Nov)', `${n(told)}`, `${F.biaNotified.value[0]} from 15 October and ${F.biaSecond.value} on 12 November; ${left} places still to fill`],
+            ['Paying every applicant', `${times}<small>×</small>`, `About €${(all / 1e6).toFixed(1)} million a year, against €${F.biaBudget2027.value / 1e6} million in Budget 2027`]],
+          big: 'Of BIEN’s five characteristics it fails “universal”. The department itself says it is “not a Universal Basic Income”', wm: 'Free <em>Lunch</em> Lab', path: '' },
+      }[lang];
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb"><span>${T3.eb}</span></p>
+<h1 class="hl">${T3.hl}</h1>
+<p class="sb">${T3.sb}</p>
+<div class="cards">${T3.c.map(([k, v, d]) => `<section class="c"><p class="k">${k}</p><p class="v">${v}</p><p class="d">${d}</p></section>`).join('')}</div>
+<p class="big">${T3.big}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${T3.wm}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${T3.path}essays/ireland-basic-income-arts-lottery/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb span{display:inline-block;font-size:18px;font-weight:700;color:#14182E;background:#6CF0B0;padding:3px 14px;border-radius:999px}
+.hl{margin-top:10px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 46 : 46}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:21px;line-height:1.4;color:#C9D0F0}
+.cards{margin-top:16px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:14px 16px;display:flex;flex-direction:column}
+.k{font-size:18px;color:#A9B2D8;font-weight:700;line-height:1.3}
+.v{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 34 : 36}px;line-height:1.1;color:#FFD66B;white-space:nowrap}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.45em;margin-left:2px}
+.d{margin-top:12px;font-size:20px;line-height:1.45;color:#E3E8FF;word-break:auto-phrase}
+.big{margin:14px 0 12px;font-size:21px;font-weight:900;line-height:1.35;color:#FFD66B;border:2px solid rgba(255,214,107,.6);background:rgba(255,214,107,.08);border-radius:14px;padding:10px 18px}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:15px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
   // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
   'billionaire': {

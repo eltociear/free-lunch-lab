@@ -83,6 +83,10 @@
    {
     "file": "noto-sans-arabic-400-ar-3ec9853835.woff2",
     "chars": "Òàç"
+   },
+   {
+    "file": "noto-sans-arabic-400-ar-555a7f91be.woff2",
+    "chars": "á"
    }
   ],
   "ar:body:700": [
@@ -153,6 +157,10 @@
    {
     "file": "noto-sans-arabic-700-ar-c84e047a14.woff2",
     "chars": "Òàç"
+   },
+   {
+    "file": "noto-sans-arabic-700-ar-573428ad0a.woff2",
+    "chars": "á"
    }
   ],
   "ar:display": [
@@ -1033,6 +1041,10 @@
    {
     "file": "noto-sans-devanagari-400-hi-3a2b61421d.woff2",
     "chars": "Òàç"
+   },
+   {
+    "file": "noto-sans-devanagari-400-hi-46acff68f7.woff2",
+    "chars": "á"
    }
   ],
   "hi:body:700": [
@@ -1107,6 +1119,10 @@
    {
     "file": "noto-sans-devanagari-700-hi-fb4005b076.woff2",
     "chars": "Òàç"
+   },
+   {
+    "file": "noto-sans-devanagari-700-hi-ee429b4a58.woff2",
+    "chars": "á"
    }
   ],
   "hi:dot": [
@@ -1423,6 +1439,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-347d830d19.woff2",
     "chars": "喫娯惑揄揶杯没煙薬酔麻"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-d076e62d0b.woff2",
+    "chars": "á"
    }
   ],
   "ja:body:700": [
@@ -1729,6 +1749,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-d72334146f.woff2",
     "chars": "喫娯惑揄揶杯没煙薬酔麻"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-bd340756a4.woff2",
+    "chars": "á"
    }
   ],
   "ja:display": [
@@ -1931,6 +1955,10 @@
    {
     "file": "dela-gothic-one-400-ja-7c5b96b47a.woff2",
     "chars": "均酒"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-f369256849.woff2",
+    "chars": "ぶ"
    }
   ],
   "ja:dot": [
@@ -2311,6 +2339,10 @@
    {
     "file": "noto-sans-sc-400-zh-a4a3cf079f.woff2",
     "chars": "喝宿惑毒浸滥瘾耐荡讽诱醉颠"
+   },
+   {
+    "file": "noto-sans-sc-400-zh-b74dbe9dc5.woff2",
+    "chars": "á函坛督诞"
    }
   ],
   "zh:body:700": [
@@ -2637,6 +2669,10 @@
    {
     "file": "noto-sans-sc-700-zh-989f67422f.woff2",
     "chars": "喝宿惑毒浸滥瘾耐荡讽诱醉颠"
+   },
+   {
+    "file": "noto-sans-sc-700-zh-b525d5a6cb.woff2",
+    "chars": "á函坛督诞"
    }
   ],
   "zh:display": [
@@ -2839,6 +2875,10 @@
    {
     "file": "noto-sans-sc-900-zh-b5cb63be0d.woff2",
     "chars": "华温烟综草赌转述酒"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-3eaeeb9881.woff2",
+    "chars": "批签轮"
    }
   ],
   "zh:dot": [

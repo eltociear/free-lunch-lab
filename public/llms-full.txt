@@ -836,6 +836,99 @@ Cautions: Whether rewards need Orb verification is unknown, and we have not test
 
 ## Essays
 
+### A basic income by lottery: is Ireland’s arts scheme a basic income?
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/ireland-basic-income-arts-lottery/
+- Published: 2026-11-26
+
+In November 2026, on an online forum where applicants to Ireland’s Basic Income for the Arts compare notes, people were waiting for the next “tranche”, the batches in which the department sends out offers. Applicants passed around the department’s email about the second tranche.[1] Some wrote that the waiting was hurting their mental health. Others called the lottery unfair: some artists would be picked again and again, they said, and others never. This essay does not rely on the forum for any fact. It sets out, from the department’s guidelines, press releases and answers in the Dáil, what the scheme is, where the 2026 round stands, whether it meets the definition of a basic income, and what the lottery means for one applicant’s chances.
+
+#### What the scheme is
+
+The scheme pays €325 a week for three years to 2,000 artists. It is paid monthly, at €1,413.21; €325 a week comes to €16,900 a year and €50,700 over three years.[2] The government announced it on 10 February 2026 as the permanent successor to a pilot, with €18.27 million from Budget 2026, and Budget 2027 set aside €34.4 million for a full year.[3][6] Paying 2,000 people €16,900 a year costs €33.8 million.
+
+Only professional artists can apply. Applicants must be 18 or over, based in the Republic of Ireland with a practice mainly based there, and apply as individuals, not as bands or companies. They must upload three proofs of a professional practice, at least two of them from Irish organisations, grant bodies or representative bodies: for example an Arts Council award, a contract, a published credit, professional membership of a listed body, receipt of Artists’ Jobseeker’s Allowance or a tax return showing arts income. Amateur or aspiring artists, members of Aosdána receiving its Cnuas payment and full-time students are not eligible; up to 100 places are kept for recent graduates. Every applicant must fill in a survey of up to 70 questions, and recipients must answer further surveys and pass a yearly audit of their eligibility.[2][4] There is no means test.[4]
+
+The payment counts as income. Recipients must register with Revenue as self-employed, be tax cleared and file a tax return each year; the payment is taxed as self-employment income and liable for Class S social insurance. The Department of Social Protection treats it as income from self-employment in its means tests, so whether it reduces a social welfare payment depends on that payment’s rules and the person’s circumstances. Some payments disregard part of such income and some do not. People on social welfare, including Disability Allowance, may apply, but must tell the Department of Social Protection if they are selected.[2][15]
+
+There is also a rule on repeat payments. “An artist can only receive BIA for 3 years out of any 6 year cycle”: those selected for the 2026–2029 round cannot apply for the 2030–2033 round, but may apply for the 2034–2037 round. The department says this is to let as many artists as possible take part. Recipients of the pilot, and members of its control group, could apply to the new round if they met its rules.[2][4]
+
+#### The 2026 round: from the draw to the tranches
+
+Applications ran from 15 April to 12 May 2026, and 10,030 were received. Under the eye of the auditing firm EY, every application was given a random number and the list was sorted by it. Eligibility is then checked from the top: if an application near the top is ineligible, or someone declines, the next one on the list is checked. The department has not published how many of the 10,030 applicants are eligible, because it does not check them all.[5][8]
+
+The department began writing to 780 applicants on 15 October. By 29 October, 743 had accepted. On 3 November the minister answered 32 Dáil questions about the scheme in a single reply, saying the remaining recipients would be told “in the coming weeks” and that the first tranche would be paid before the end of the year.[6] By 6 November, 442 applicants had been told they were ineligible.[7] A press release said a further 450 would be notified on 12 November and another tranche before Christmas;[1] in the Dáil on 17 November the minister gave the figure for 12 November as 467, or 1,247 in all, with 862 acceptances and eight refusals by 13 November. That leaves 753 of the 2,000 places to fill. By 12 November there had been 154 appeals, and the original decision was upheld in 150. Appeals are only about whether the process was followed. Applicants whose place on the list is never reached will be told only when all 2,000 places are final, which the minister expects in early 2027. Recipients first paid in 2026 are paid back to September 2026; those first paid in 2027 are paid from or back to January 2027.[8]
+
+#### Is it a basic income?
+
+The Basic Income Earth Network (BIEN) defines a basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”, and lists five characteristics.[9] The department itself answers the question in its FAQ: “the Basic Income for the Arts is not a Universal Basic Income. This is a sectoral intervention to support practicing professional artists.”[4] Measured against each characteristic:
+
+| BIEN characteristic | What BIEN means | Basic Income for the Arts |
+| --- | --- | --- |
+| Periodic | Paid at regular intervals, not once | Yes: €1,413.21 a month for three years[2] |
+| Cash | Recipients decide what to spend it on | Yes: a payment into a bank account, with no rules on how it is spent[2] |
+| Individual | Paid to each person, not to households | Yes: individuals only; groups cannot apply[4] |
+| Universal | Paid to all | No: only eligible professional artists can apply, and 2,000 of them are drawn by lottery[2] |
+| Unconditional | No means test, no work requirement | Partly: no means test, but recipients must keep a professional practice, answer surveys and pass yearly audits[2][4] |
+
+It fails on universality, and partly on conditions. Payments to a chosen group with few strings attached are often called a guaranteed income, as in the US pilots; the OpenResearch study, which paid $1,000 a month to 1,000 people, describes itself as a trial of a guaranteed income.[14] Finland’s experiment is the nearest European comparison: from 2017 to 2018 it paid €560 a month, tax-free, to 2,000 unemployed people aged 25 to 58, chosen at random from those on basic unemployment benefits, and taking part was compulsory.[13] Finland’s draw was a research design for a two-year experiment; Ireland’s is how a permanent scheme rations places, and people apply to enter it. Our essay on Finland’s experiment (https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/) covers what it found.
+
+#### What the pilot found
+
+The pilot paid the same €325 a week from 2022 to 2,000 artists and arts workers drawn from 8,206 eligible applicants, with 1,000 others in a control group paid €650 a year.[10] After two years, recipients spent 11 hours a week more on creative practice than the control group and 3.5 hours less working in other sectors, were 14 percentage points more likely to have completed new works, and were 15 and 16 points less likely to report feeling depressed and anxious; their life satisfaction was 7 against 6.[11] A cost-benefit analysis put the gross cost at about €114 million and the benefit at €1.39 per €1.[12] Our essay on Japan’s traditional crafts (https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/) sets these results out in more detail.
+
+#### The lottery arithmetic
+
+Because eligibility is checked down a random list, an eligible applicant’s chance of a place in this round is 2,000 divided by the number of eligible applicants. That number is not published. If all 10,030 applicants were eligible, the chance would be 19.9%, so it is at least that. If the eligible pool were the pilot’s 8,206, it would be 24.4%.[5][10]
+
+The table shows what this would mean over three rounds, 2026–2029, 2030–2033 and 2034–2037. These are illustrations, not forecasts. They assume the same number of eligible applicants and 2,000 places in each round, draws that are independent of each other, and someone who applies in every round they may. They also apply the official rule: a recipient sits out the next round. So no one can be picked in all three rounds, and the most anyone can get is two, in the first and the third.
+
+| Over three rounds | 19.9% a round (all 10,030 eligible) | 24.4% a round (8,206 eligible) |
+| --- | --- | --- |
+| Never picked | 51% | 43% |
+| Picked at least once | 49% | 57% |
+| Picked exactly once | 45% | 51% |
+| Picked twice (first and third rounds) | 4.0% | 5.9% |
+| Picked in all three rounds | 0% under the rule (0.8% without it) | 0% under the rule (1.4% without it) |
+
+Under these assumptions, about half of eligible applicants would never get a place in three rounds. Without the rule, a few would win every time; with it, no one does. The rule spreads places more widely, but it does not change the chance of never being picked, which depends only on the odds in each round.
+
+#### What it would cost to pay every applicant
+
+Paying €16,900 a year to all 10,030 applicants would cost about €169.5 million a year, 4.9 times the €34.4 million in Budget 2027. Paying the pilot’s 8,206 eligible applicants would cost about €138.7 million, 4.0 times. Neither figure counts artists who did not apply, and neither is a basic income for everyone in Ireland.
+
+#### What the data can’t tell us
+
+The pilot measured recipients against a control group paid €650 a year; it says little about how applicants who are not picked fare, or how the hope of a later round shapes what they do. Nobody has measured the waiting itself: applicants who sent their applications in May were still being told in November, and some will hear nothing until 2027. The eligible pool, and so the true odds, is unknown, and future rounds depend on future budgets. And results from 2,000 chosen artists paid for three years do not show what a basic income for everyone would do to work, prices or taxes. The figures in this essay are collected, with their sources and dates, in ireland-bia-2026.json (https://neteru-nyukin.eltociear.workers.dev/ireland-bia-2026.json).
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/finland-basic-income-experiment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-creative-work-basic-income/
+
+Sources:
+
+1. Department of Culture, Communications and Sport — “Second tranche of Basic Income for the Arts scheme recipients to be notified” (press release, 12 Nov 2026): 780 notified from 15 October, a further 450 on 12 November, another tranche before Christmas: https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/second-tranche-of-basic-income-for-the-arts-scheme-recipients-to-be-notified/
+2. Department of Culture, Communications and Sport — Basic Income for the Arts Scheme 2026–2029: Guidelines for Application (1 Apr 2026, updated 15 May 2026): eligibility, proofs, €1,413.21 a month, tax and social welfare, “3 years out of any 6 year cycle”: https://www.gov.ie/en/department-of-culture-communications-and-sport/publications/basic-income-for-the-arts-scheme-2026-2029-guidelines-for-application
+3. Department of Culture, Communications and Sport — “Minister O’Donovan announces the New Basic Income for the Arts scheme” (press release, 10 Feb 2026): https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/minister-odonovan-announces-the-new-basic-income-for-the-arts-scheme
+4. Department of Culture, Communications and Sport — Basic Income for the Arts Scheme 2026–2029: FAQ (10 Feb 2026, updated 15 May 2026): “not a Universal Basic Income”, no means test, individuals only, pilot recipients may apply: https://www.gov.ie/en/department-of-culture-communications-and-sport/publications/basic-income-for-the-arts-scheme-2026-2029-faq/
+5. EY — Basic Income for the Arts Scheme: report on the selection process (27 Jul 2026, published Nov 2026; PDF): 10,030 applications, random numbers and a ranked list: https://assets.gov.ie/static/documents/5b39e11d/FINAL_REPORT_-_EY_DCCS_BIA_Scheme_Selection_31_July_2026_NOT_PASSWORD_PROTECTED.pdf
+6. Dáil Éireann — written answers, 3 Nov 2026, questions 943 and others (743 accepted as of 29 October; €34.4 million in Budget 2027) and 942, 959 and others (first tranche paid before year-end): https://www.oireachtas.ie/en/debates/question/2026-11-03/943/ (also https://www.oireachtas.ie/en/debates/question/2026-11-03/959/)
+7. Dáil Éireann — written answer, 11 Nov 2026, question 126: 442 applicants told they were ineligible as of 6 November: https://www.oireachtas.ie/en/debates/question/2026-11-11/126/
+8. Dáil Éireann — questions 82 and 83 (oral) and 152 (written), 17 Nov 2026: 467 notified on 12 November, 1,247 in all, 862 accepted and eight declined by 13 November; 154 appeals, 150 upheld; backdating; ranked list: https://www.oireachtas.ie/en/debates/question/2026-11-17/82/ (also https://www.oireachtas.ie/en/debates/question/2026-11-17/152/)
+9. Basic Income Earth Network (BIEN) — About basic income: definition and five characteristics: https://basicincome.org/about-basic-income/
+10. Department of Tourism, Culture, Arts, Gaeltacht, Sport and Media — “Basic Income for the Arts (BIA) pilot scheme: first payments issue” (press release, 28 Oct 2022): 2,000 recipients drawn from 8,206 eligible applicants, 1,000 in a control group: https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/basic-income-for-the-arts-bia-pilot-scheme-first-payments-issue/
+11. Department of Culture, Communications and Sport — Basic Income for the Arts: Impact Assessment (2 years) (Sep 2025; PDF): https://assets.gov.ie/static/documents/25207450/2-year_report.pdf
+12. Alma Economics — Basic Income for the Arts pilot: cost-benefit analysis (29 Sep 2025; PDF): about €114 million gross cost, €1.39 per €1: https://assets.gov.ie/static/documents/b87d2659/20250929_BIA_CBA_Final_Report.pdf
+13. Kela — Finland’s Basic Income Experiment 2017–2018: results (2020; PDF): 2,000 unemployed people, €560 a month: https://toolbox.finland.fi/wp-content/uploads/sites/2/2018/04/basic_income_experiment_2017-2018_results_2020.pdf
+14. Sarah Miller, Elizabeth Rhodes, Alexander W. Bartik, David E. Broockman, Patrick K. Krause and Eva Vivalt — “Does Income Affect Health? Evidence from a Randomized Controlled Trial of a Guaranteed Income”, NBER Working Paper 32711 (July 2024, revised August 2026): https://www.nber.org/papers/w32711
+15. Department of Social Protection — Interaction of the Basic Income for the Arts pilot scheme with DSP payments (13 Apr 2022, updated 15 Apr 2025): https://www.gov.ie/en/department-of-social-protection/publications/interaction-of-the-basic-income-for-the-arts-pilot-scheme-with-dsp-payments/
+
 ### Is cash aid spent on alcohol and gambling? What the studies found
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/cash-transfers-alcohol-gambling/
@@ -957,6 +1050,8 @@ Experiments that pay money every month look at that question more directly. Our 
 
 The lottery studies measure earnings, hours and employment. They do not say whether the time not spent working went to care, study, a new business or video games. They cover individual winners in a society where almost everyone else still works, not a whole country that receives the same payment. And the estimates differ in what they measure: cents per dollar of income in a period, or a share of a lump-sum prize per year, so they should not be compared as if they were the same number. What they agree on is the direction and the order of size: winners kept working in most cases and earned somewhat less, the response lasted for years, and in the United States lower-income winners were more likely to stop working altogether. The figures are collected, with sources and dates, in lottery-2026.json (https://neteru-nyukin.eltociear.workers.dev/lottery-2026.json).
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ireland-basic-income-arts-lottery/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/cash-transfers-alcohol-gambling/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
@@ -1034,6 +1129,8 @@ Ireland kept the scheme. In February 2026 the government announced a successor s
 #### What the data can’t tell us
 
 The ¥120,000 figure comes from one person’s post, not from a survey of job offers, and there is no official pay figure for craft workers or apprentices. The wage survey leaves out the smallest workshops, and METI’s own text has no production figure after fiscal 2017. No one has measured whether a basic income in Japan would keep people in crafts. Ireland’s results come from 2,000 artists chosen from applicants and paid for three years, not from a payment to everyone, and they cover the arts in general rather than crafts. What the figures do show is a workforce that has shrunk to about a sixth of its peak and is growing older, starting pay that can be far below the minimum wage for full-time hours, and a state budget for the sector of about ¥1.08 billion a year. The figures are collected, with sources and dates, in crafts-2026.json (https://neteru-nyukin.eltociear.workers.dev/crafts-2026.json).
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ireland-basic-income-arts-lottery/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/takenaka-70000-yen-basic-income/
 
@@ -2037,6 +2134,8 @@ Opinion: Across more than fifty years of experiments, in rich countries and poor
 
 Opinion: That is not the same as “basic income has no effect on work”. OpenResearch and the 1970s experiments measured real, if modest, reductions, and those numbers belong in any honest costing. The better question is not “will people stop working?” but “how much less, who, and is it worth it?” The data answer the first two parts. The third is a judgement for each of us.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ireland-basic-income-arts-lottery/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/cash-transfers-alcohol-gambling/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
@@ -2523,6 +2622,8 @@ Opinion: Here is what the evidence shows as of November 2026. Generative AI has 
 
 Opinion: Creators are right to ask first for consent and pay. A basic income is not a substitute for that, and it should not be sold as one. But the best experiment we have, Ireland’s, suggests that a floor keeps people in their craft and steadies their lives at a moment when their markets are shifting under them. In part 1 (https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/) we saw that the people hit first are the ones with the least protection. In creative work, that is the freelancer with no employer, no union and no claim on any settlement. That is exactly who a floor is for.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ireland-basic-income-arts-lottery/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/traditional-crafts-basic-income/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/generative-ai-jobs-basic-income/
@@ -2986,6 +3087,8 @@ Only unemployed people took part, it lasted two years, and the funding side was 
 Opinion: So you cannot say “basic income failed”, and you cannot say “basic income succeeded”. What you can say is: the money did not make people stop working, it did not make them work much more, and it made their lives feel more secure.
 
 Opinion: Next time someone tells you “Finland already tried it and it failed”, try asking: what exactly failed? The answer is more interesting than they think.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ireland-basic-income-arts-lottery/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
 

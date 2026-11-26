@@ -2938,6 +2938,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-26",
+      "en": "Published the data essay “A basic income by lottery: is Ireland’s arts scheme a basic income?”",
+      "ja": "データエッセイ『抽選で選ぶ「ベーシックインカム」 アイルランドの芸術家向け制度は、BIなのか』を公開",
+      "zh": "发布数据随笔《抽签发放的“基本收入”：爱尔兰的艺术家计划算是基本收入吗？》",
+      "hi": "डेटा निबंध “लॉटरी से बेसिक इनकम? आयरलैंड की कला योजना की जाँच” प्रकाशित",
+      "es": "Publicado el ensayo de datos «Renta básica por sorteo: ¿lo es el plan de Irlanda?»",
+      "de": "Datenessay „Grundeinkommen per Los? Irlands Programm für Künstler“ veröffentlicht",
+      "ar": "نشرنا مقال البيانات «دخل أساسي بالقرعة؟ برنامج فناني أيرلندا»"
+    },
+    {
+      "date": "2026-11-26",
       "en": "Published the data essay “Is cash aid spent on alcohol and gambling? What the studies found”",
       "ja": "データエッセイ『給付金は酒やギャンブルに消える？ 現金給付の研究で見る「お金を配ると何に使われるか」』を公開",
       "zh": "发布数据随笔《发钱会被花在酒和赌博上吗？现金转移研究的发现》",
@@ -11576,6 +11586,33 @@ module.exports = {
       }
     },
     {
+      "id": "ireland-bia-2026",
+      "files": [
+        "ireland-bia-2026.json",
+        "ireland-bia-2026.csv"
+      ],
+      "page": "essays/ireland-basic-income-arts-lottery/",
+      "lic": "odLicSrc",
+      "name": {
+        "en": "Ireland’s Basic Income for the Arts: the figures",
+        "ja": "アイルランドの芸術のためのベーシックインカムの数字",
+        "zh": "爱尔兰艺术基本收入：相关数字",
+        "hi": "आयरलैंड का Basic Income for the Arts: आंकड़े",
+        "es": "La renta básica para las artes de Irlanda: las cifras",
+        "de": "Irlands Grundeinkommen für die Künste: die Zahlen",
+        "ar": "الدخل الأساسي للفنون في أيرلندا: الأرقام"
+      },
+      "desc": {
+        "en": "The figures behind the essay on whether Ireland’s arts scheme is a basic income: the rules, the 2026 round and its tranches, the pilot’s results, BIEN’s definition and Finland’s experiment, each with its source and date.",
+        "ja": "アイルランドの芸術家向け制度はベーシックインカムかを見たエッセイに使った数字。制度のルール、2026年の募集と通知、試行の結果、BIENの定義、フィンランドの実験。それぞれ出典と日付つき。",
+        "zh": "爱尔兰艺术家计划是否算基本收入一文所用的数字：制度规则、2026年的申请与分批通知、试点结果、BIEN的定义和芬兰的实验，每项均附来源和日期。",
+        "hi": "आयरलैंड की कला योजना बेसिक इनकम है या नहीं, इस निबंध के पीछे के आंकड़े: नियम, 2026 का दौर और उसकी किस्तें, पायलट के नतीजे, BIEN की परिभाषा और फ़िनलैंड का प्रयोग, हर एक स्रोत और तारीख़ के साथ।",
+        "es": "Las cifras del ensayo sobre si el programa irlandés para las artes es una renta básica: las reglas, la convocatoria de 2026 y sus tramos, los resultados del piloto, la definición de BIEN y el experimento finlandés, cada una con su fuente y fecha.",
+        "de": "Die Zahlen hinter dem Essay, ob Irlands Kunstprogramm ein Grundeinkommen ist: die Regeln, die Runde 2026 und ihre Tranchen, die Ergebnisse des Pilotprojekts, die BIEN-Definition und Finnlands Experiment, jeweils mit Quelle und Datum.",
+        "ar": "الأرقام التي يقوم عليها مقال ما إذا كان برنامج فناني أيرلندا دخلًا أساسيًا: القواعد، ودورة 2026 ودفعاتها، ونتائج التجربة، والتعريف، وتجربة فنلندا، لكل منها مصدره وتاريخه."
+      }
+    },
+    {
       "id": "worker-relief-2026",
       "files": [
         "worker-relief-2026.json",
@@ -19644,6 +19681,802 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "ireland-basic-income-arts-lottery",
+      "date": "2026-11-26",
+      "related": [
+        "traditional-crafts-basic-income",
+        "finland-basic-income-experiment",
+        "lottery-winners-keep-working",
+        "does-cash-make-people-stop-working",
+        "generative-ai-creative-work-basic-income"
+      ],
+      "title": {
+        "ja": "抽選で選ぶ「ベーシックインカム」 アイルランドの芸術家向け制度は、BIなのか",
+        "en": "A basic income by lottery: is Ireland’s arts scheme a basic income?",
+        "zh": "抽签发放的“基本收入”：爱尔兰的艺术家计划算是基本收入吗？",
+        "hi": "लॉटरी से बेसिक इनकम? आयरलैंड की कला योजना की जाँच",
+        "es": "Renta básica por sorteo: ¿lo es el plan de Irlanda?",
+        "de": "Grundeinkommen per Los? Irlands Programm für Künstler",
+        "ar": "دخل أساسي بالقرعة؟ برنامج فناني أيرلندا"
+      },
+      "desc": {
+        "ja": "10,030件の応募から抽選で2,000人に週325ユーロ。アイルランドの制度のルール、通知を待つ期間、3回の募集での当選確率、そしてBIの定義に当てはめた結果。",
+        "en": "€325 a week for 2,000 artists, drawn from 10,030 applications: the rules, the waiting, the odds over three rounds and the BIEN test.",
+        "zh": "从10,030份申请中抽出2,000名艺术家，每周325欧元：规则、等待、三轮的中签概率与BIEN定义的对照。",
+        "hi": "10,030 आवेदनों में से 2,000 कलाकारों को हफ़्ते के 325 यूरो: नियम, इंतज़ार, तीन दौर में संभावना और BIEN की कसौटी।",
+        "es": "325 € semanales para 2.000 artistas de 10.030 solicitudes: reglas, espera, probabilidades y la definición de BIEN.",
+        "de": "325 € pro Woche für 2.000 von 10.030 Bewerbern: Regeln, Wartezeit, Chancen über drei Runden und BIEN-Definition.",
+        "ar": "325 يورو أسبوعيًا لـ2,000 فنان من 10,030 طلبًا: القواعد والفرص والتعريف."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2026年11月、アイルランドの「芸術のためのベーシックインカム（Basic Income for the Arts）」に応募した人たちが情報を交わすネットの掲示板では、次の「トランシェ」を待つ声が続いていました。トランシェとは、文化省が当選の通知を何回かに分けて送る、その1回分のことです。掲示板では、2回目のトランシェについての文化省のメールも回し読みされていました。[1] 待つこと自体がメンタルヘルスにこたえる、という書き込みがありました。何度も当たる芸術家と一度も当たらない芸術家が出る抽選は不公平だ、という声もありました。このエッセイは、掲示板の書き込みを事実の根拠には使いません。文化省の募集要項、発表、議会（ドイル）での答弁から、制度の中身、2026年の募集がいまどこまで進んだか、ベーシックインカムの定義に当てはまるか、そして抽選が1人の応募者の当選確率にとって何を意味するかを見ていきます。"
+          ],
+          [
+            "h",
+            "どんな制度か"
+          ],
+          [
+            "p",
+            "この制度は、2,000人の芸術家に週325ユーロを3年間払います。支払いは月ごとで、月1,413.21ユーロです。週325ユーロは年16,900ユーロ、3年で50,700ユーロになります。[2] 政府は2026年2月10日、試行（パイロット）の後を継ぐ恒久的な制度としてこれを発表し、2026年度予算から1,827万ユーロを充てました。2027年度予算では、1年分として3,440万ユーロが確保されています。[3][6] 2,000人に年16,900ユーロを払うと、3,380万ユーロです。"
+          ],
+          [
+            "p",
+            "応募できるのはプロの芸術家だけです。18歳以上で、アイルランド共和国に住み、主にアイルランドで活動していること、バンドや会社ではなく個人で応募することが条件です。プロとして活動している証拠を3つ出す必要があり、そのうち2つ以上はアイルランドの団体、助成機関、職能団体のものでなければなりません。たとえば芸術評議会（Arts Council）の助成、契約書、作品のクレジット、指定された団体のプロ会員資格、芸術家向けの求職者手当の受給、芸術での収入が載った確定申告書です。アマチュアや芸術家を目指している段階の人、芸術家団体アオスダーナから年金（クヌース）を受けている人、フルタイムの学生は応募できません。最近卒業した人には最大100人分の枠があります。応募者は全員、最大70問の調査に答えなければならず、受給者はその後も調査に答え、毎年の資格の監査を受けます。[2][4] 所得や資産の審査（ミーンズテスト）はありません。[4]"
+          ],
+          [
+            "p",
+            "給付は所得として扱われます。受給者は歳入庁に自営業者として登録し、納税証明を受け、毎年確定申告をします。給付には自営業の所得として所得税がかかり、自営業者向けの社会保険料（Class S）の対象にもなります。社会保護省は、所得や資産を審査する手当では、この給付を自営業の収入として数えます。ほかの手当が減るかどうかは、その手当のルールと本人の事情によります。こうした収入の一部を数えない手当もあれば、そうでない手当もあります。障害手当などの社会保障を受けている人も応募できますが、選ばれたら社会保護省に知らせる必要があります。[2][15]"
+          ],
+          [
+            "p",
+            "続けて受け取ることについてのルールもあります。「芸術家がBIAを受け取れるのは、6年のうち3年だけ」です。2026〜2029年の回で選ばれた人は2030〜2033年の回には応募できず、2034〜2037年の回には応募できます。文化省は、できるだけ多くの芸術家が利用できるようにするためだとしています。試行で給付を受けた人や比較グループにいた人も、新しい制度の条件を満たせば応募できました。[2][4]"
+          ],
+          [
+            "h",
+            "2026年の募集：抽選から通知まで"
+          ],
+          [
+            "p",
+            "募集は2026年4月15日から5月12日までで、応募は10,030件でした。監査法人EYの立ち会いのもと、すべての応募に乱数を割り当て、その順に並べました。資格の確認はこの名簿の上から進めます。上のほうの応募が資格を満たさなかったり、辞退したりすれば、次の応募を確認します。全員を確認するわけではないので、10,030人のうち何人が資格を満たすのか、文化省は公表していません。[5][8]"
+          ],
+          [
+            "p",
+            "文化省は10月15日から780人に通知を始め、10月29日までに743人が受け入れました。11月3日、大臣は制度についての議会の質問32件にまとめて一つの答弁で答え、残りの人には「今後数週間で」知らせること、最初のトランシェの人には年内に支払うことを述べました。[6] 11月6日までに、442人が資格を満たさないと伝えられています。[7] 文化省の発表は、11月12日にさらに450人に通知し、クリスマス前にもう1回トランシェがあるとしていました。[1] 11月17日の議会で、大臣は11月12日の通知を467人、合わせて1,247人とし、11月13日までに862人が受け入れ、8人が辞退したと述べました。2,000人の枠のうち、残りは753人分です。11月12日までに異議申し立ては154件あり、150件でもとの判断が維持されました。異議を申し立てられるのは、手続きが守られたかどうかだけです。名簿で順番が回ってこなかった人には、2,000人がすべて決まってから知らされます。大臣は、それを2027年のはじめと見込んでいます。2026年に初めて支払いを受ける人は2026年9月にさかのぼって、2027年に初めて受ける人は2027年1月から、またはそこにさかのぼって支払われます。[8]"
+          ],
+          [
+            "h",
+            "ベーシックインカムと言えるか"
+          ],
+          [
+            "p",
+            "ベーシックインカム世界ネットワーク（BIEN）は、ベーシックインカムを「資力調査や就労要件なしに、すべての人に個人単位で無条件に支払われる定期的な現金給付」と定義し、5つの特徴を挙げています。[9] 文化省自身も、よくある質問でこう答えています。「芸術のためのベーシックインカムは、ユニバーサル・ベーシックインカムではありません。活動するプロの芸術家を支えるための、分野を絞った施策です」。[4] 特徴ごとに当てはめると、次のようになります。"
+          ],
+          [
+            "t",
+            "BIENの特徴 | BIENの意味 | 芸術のためのベーシックインカム\n定期的 | 1回きりでなく、決まった間隔で払う | 当てはまる：月1,413.21ユーロを3年間[2]\n現金 | 使い道は受け取った人が決める | 当てはまる：口座への振り込みで、使い道の決まりはない[2]\n個人単位 | 世帯ではなく、1人ひとりに払う | 当てはまる：個人のみ。団体は応募できない[4]\n普遍的 | すべての人に払う | 当てはまらない：応募できるのは資格を満たすプロの芸術家だけで、そのうち2,000人を抽選で選ぶ[2]\n無条件 | 資力調査も就労要件もない | 一部：資力調査はないが、プロとしての活動を続け、調査に答え、毎年の監査を受ける必要がある[2][4]"
+          ],
+          [
+            "p",
+            "普遍性で外れ、条件でも一部が外れます。選ばれた人に、ほとんど条件をつけずに払う給付は、アメリカの試行のように「保証所得（ガランティード・インカム）」と呼ばれることがよくあります。1,000人に月1,000ドルを払ったOpenResearchの研究も、自らを保証所得の試験と呼んでいます。[14] ヨーロッパでいちばん近い例はフィンランドの実験です。2017年から2018年まで、基礎的な失業手当を受けていた25〜58歳の失業者から無作為に選んだ2,000人に、非課税で月560ユーロを払いました。参加は義務でした。[13] フィンランドの抽選は、2年間の実験のための研究上の設計でした。アイルランドの抽選は、恒久的な制度が限られた枠を割り振る方法で、人々は自分から応募して入ります。実験で何がわかったかは、{フィンランドの実験についてのエッセイ|/essays/finland-basic-income-experiment/}で見ています。"
+          ],
+          [
+            "h",
+            "試行でわかったこと"
+          ],
+          [
+            "p",
+            "試行は2022年から、条件を満たした8,206人の応募者から抽選で選んだ芸術家と芸術関連の仕事をする2,000人に、同じ週325ユーロを払いました。別の1,000人が比較グループになり、年650ユーロを受け取りました。[10] 2年後、受給者は比較グループより創作に週11時間多く使い、ほかの分野で働く時間は3.5時間少なく、新しい作品を仕上げた割合は14ポイント高く、落ち込みや不安を感じた割合はそれぞれ15ポイント、16ポイント低くなりました。生活の満足度は7対6でした。[11] 費用便益分析は、総費用を約1億1,400万ユーロ、1ユーロあたりの便益を1.39ユーロとしています。[12] くわしくは{日本の伝統工芸についてのエッセイ|/essays/traditional-crafts-basic-income/}で見ています。"
+          ],
+          [
+            "h",
+            "抽選の計算"
+          ],
+          [
+            "p",
+            "資格の確認は無作為に並べた名簿の上から進むので、資格を満たす応募者が今回枠に入る確率は、2,000を資格を満たす応募者の数で割ったものです。その数は公表されていません。10,030人全員が資格を満たすなら確率は19.9%なので、少なくともそれ以上です。資格を満たす人が試行と同じ8,206人なら、24.4%になります。[5][10]"
+          ],
+          [
+            "p",
+            "下の表は、2026〜2029年、2030〜2033年、2034〜2037年の3回の募集でこれが何を意味するかを示します。予測ではなく、例として計算したものです。各回の資格を満たす応募者の数と枠の2,000人が同じであること、各回の抽選がたがいに独立していること、応募できる回にはすべて応募することを仮定しています。そのうえで、受給者は次の回に応募できないという公式のルールを当てはめています。したがって、3回すべてで選ばれる人はいません。最も多くて2回、1回目と3回目です。"
+          ],
+          [
+            "t",
+            "3回の募集で | 1回19.9%（10,030人全員が資格あり） | 1回24.4%（資格ありが8,206人）\n一度も選ばれない | 51% | 43%\n少なくとも1回選ばれる | 49% | 57%\nちょうど1回選ばれる | 45% | 51%\n2回選ばれる（1回目と3回目） | 4.0% | 5.9%\n3回とも選ばれる | ルールのもとでは0%（ルールがなければ0.8%） | ルールのもとでは0%（ルールがなければ1.4%）"
+          ],
+          [
+            "p",
+            "この仮定のもとでは、資格を満たす応募者の約半分が、3回の募集で一度も枠に入れません。ルールがなければ、毎回当たる人がわずかに出ます。ルールがあれば、そういう人は出ません。ルールは枠をより多くの人に行きわたらせますが、一度も選ばれない確率は変えません。それは各回の確率だけで決まるからです。"
+          ],
+          [
+            "h",
+            "応募者全員に払うといくらかかるか"
+          ],
+          [
+            "p",
+            "応募者10,030人全員に年16,900ユーロを払うと、年約1.695億ユーロで、2027年度予算の3,440万ユーロの4.9倍です。試行の8,206人に払うと約1.387億ユーロで、4.0倍です。どちらも応募しなかった芸術家は数えておらず、アイルランドの全員へのベーシックインカムでもありません。"
+          ],
+          [
+            "h",
+            "データでわからないこと"
+          ],
+          [
+            "p",
+            "試行は、受給者を年650ユーロを受け取った比較グループと比べました。選ばれなかった応募者がどう暮らしているか、次の回への期待がその行動をどう変えるかは、ほとんどわかりません。待つこと自体の影響も、誰も測っていません。5月に応募した人が11月になっても通知を受けており、2027年まで何も知らされない人もいます。資格を満たす応募者の数、つまり本当の確率はわからず、次の回があるかどうかは今後の予算しだいです。そして、選ばれた2,000人の芸術家に3年間払った結果は、全員へのベーシックインカムが働き方や物価、税にどう影響するかを示すものではありません。このエッセイの数字は、出典と日付とともに{ireland-bia-2026.json|/ireland-bia-2026.json}にまとめています。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "In November 2026, on an online forum where applicants to Ireland’s Basic Income for the Arts compare notes, people were waiting for the next “tranche”, the batches in which the department sends out offers. Applicants passed around the department’s email about the second tranche.[1] Some wrote that the waiting was hurting their mental health. Others called the lottery unfair: some artists would be picked again and again, they said, and others never. This essay does not rely on the forum for any fact. It sets out, from the department’s guidelines, press releases and answers in the Dáil, what the scheme is, where the 2026 round stands, whether it meets the definition of a basic income, and what the lottery means for one applicant’s chances."
+          ],
+          [
+            "h",
+            "What the scheme is"
+          ],
+          [
+            "p",
+            "The scheme pays €325 a week for three years to 2,000 artists. It is paid monthly, at €1,413.21; €325 a week comes to €16,900 a year and €50,700 over three years.[2] The government announced it on 10 February 2026 as the permanent successor to a pilot, with €18.27 million from Budget 2026, and Budget 2027 set aside €34.4 million for a full year.[3][6] Paying 2,000 people €16,900 a year costs €33.8 million."
+          ],
+          [
+            "p",
+            "Only professional artists can apply. Applicants must be 18 or over, based in the Republic of Ireland with a practice mainly based there, and apply as individuals, not as bands or companies. They must upload three proofs of a professional practice, at least two of them from Irish organisations, grant bodies or representative bodies: for example an Arts Council award, a contract, a published credit, professional membership of a listed body, receipt of Artists’ Jobseeker’s Allowance or a tax return showing arts income. Amateur or aspiring artists, members of Aosdána receiving its Cnuas payment and full-time students are not eligible; up to 100 places are kept for recent graduates. Every applicant must fill in a survey of up to 70 questions, and recipients must answer further surveys and pass a yearly audit of their eligibility.[2][4] There is no means test.[4]"
+          ],
+          [
+            "p",
+            "The payment counts as income. Recipients must register with Revenue as self-employed, be tax cleared and file a tax return each year; the payment is taxed as self-employment income and liable for Class S social insurance. The Department of Social Protection treats it as income from self-employment in its means tests, so whether it reduces a social welfare payment depends on that payment’s rules and the person’s circumstances. Some payments disregard part of such income and some do not. People on social welfare, including Disability Allowance, may apply, but must tell the Department of Social Protection if they are selected.[2][15]"
+          ],
+          [
+            "p",
+            "There is also a rule on repeat payments. “An artist can only receive BIA for 3 years out of any 6 year cycle”: those selected for the 2026–2029 round cannot apply for the 2030–2033 round, but may apply for the 2034–2037 round. The department says this is to let as many artists as possible take part. Recipients of the pilot, and members of its control group, could apply to the new round if they met its rules.[2][4]"
+          ],
+          [
+            "h",
+            "The 2026 round: from the draw to the tranches"
+          ],
+          [
+            "p",
+            "Applications ran from 15 April to 12 May 2026, and 10,030 were received. Under the eye of the auditing firm EY, every application was given a random number and the list was sorted by it. Eligibility is then checked from the top: if an application near the top is ineligible, or someone declines, the next one on the list is checked. The department has not published how many of the 10,030 applicants are eligible, because it does not check them all.[5][8]"
+          ],
+          [
+            "p",
+            "The department began writing to 780 applicants on 15 October. By 29 October, 743 had accepted. On 3 November the minister answered 32 Dáil questions about the scheme in a single reply, saying the remaining recipients would be told “in the coming weeks” and that the first tranche would be paid before the end of the year.[6] By 6 November, 442 applicants had been told they were ineligible.[7] A press release said a further 450 would be notified on 12 November and another tranche before Christmas;[1] in the Dáil on 17 November the minister gave the figure for 12 November as 467, or 1,247 in all, with 862 acceptances and eight refusals by 13 November. That leaves 753 of the 2,000 places to fill. By 12 November there had been 154 appeals, and the original decision was upheld in 150. Appeals are only about whether the process was followed. Applicants whose place on the list is never reached will be told only when all 2,000 places are final, which the minister expects in early 2027. Recipients first paid in 2026 are paid back to September 2026; those first paid in 2027 are paid from or back to January 2027.[8]"
+          ],
+          [
+            "h",
+            "Is it a basic income?"
+          ],
+          [
+            "p",
+            "The Basic Income Earth Network (BIEN) defines a basic income as “a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement”, and lists five characteristics.[9] The department itself answers the question in its FAQ: “the Basic Income for the Arts is not a Universal Basic Income. This is a sectoral intervention to support practicing professional artists.”[4] Measured against each characteristic:"
+          ],
+          [
+            "t",
+            "BIEN characteristic | What BIEN means | Basic Income for the Arts\nPeriodic | Paid at regular intervals, not once | Yes: €1,413.21 a month for three years[2]\nCash | Recipients decide what to spend it on | Yes: a payment into a bank account, with no rules on how it is spent[2]\nIndividual | Paid to each person, not to households | Yes: individuals only; groups cannot apply[4]\nUniversal | Paid to all | No: only eligible professional artists can apply, and 2,000 of them are drawn by lottery[2]\nUnconditional | No means test, no work requirement | Partly: no means test, but recipients must keep a professional practice, answer surveys and pass yearly audits[2][4]"
+          ],
+          [
+            "p",
+            "It fails on universality, and partly on conditions. Payments to a chosen group with few strings attached are often called a guaranteed income, as in the US pilots; the OpenResearch study, which paid $1,000 a month to 1,000 people, describes itself as a trial of a guaranteed income.[14] Finland’s experiment is the nearest European comparison: from 2017 to 2018 it paid €560 a month, tax-free, to 2,000 unemployed people aged 25 to 58, chosen at random from those on basic unemployment benefits, and taking part was compulsory.[13] Finland’s draw was a research design for a two-year experiment; Ireland’s is how a permanent scheme rations places, and people apply to enter it. {Our essay on Finland’s experiment|/essays/finland-basic-income-experiment/} covers what it found."
+          ],
+          [
+            "h",
+            "What the pilot found"
+          ],
+          [
+            "p",
+            "The pilot paid the same €325 a week from 2022 to 2,000 artists and arts workers drawn from 8,206 eligible applicants, with 1,000 others in a control group paid €650 a year.[10] After two years, recipients spent 11 hours a week more on creative practice than the control group and 3.5 hours less working in other sectors, were 14 percentage points more likely to have completed new works, and were 15 and 16 points less likely to report feeling depressed and anxious; their life satisfaction was 7 against 6.[11] A cost-benefit analysis put the gross cost at about €114 million and the benefit at €1.39 per €1.[12] {Our essay on Japan’s traditional crafts|/essays/traditional-crafts-basic-income/} sets these results out in more detail."
+          ],
+          [
+            "h",
+            "The lottery arithmetic"
+          ],
+          [
+            "p",
+            "Because eligibility is checked down a random list, an eligible applicant’s chance of a place in this round is 2,000 divided by the number of eligible applicants. That number is not published. If all 10,030 applicants were eligible, the chance would be 19.9%, so it is at least that. If the eligible pool were the pilot’s 8,206, it would be 24.4%.[5][10]"
+          ],
+          [
+            "p",
+            "The table shows what this would mean over three rounds, 2026–2029, 2030–2033 and 2034–2037. These are illustrations, not forecasts. They assume the same number of eligible applicants and 2,000 places in each round, draws that are independent of each other, and someone who applies in every round they may. They also apply the official rule: a recipient sits out the next round. So no one can be picked in all three rounds, and the most anyone can get is two, in the first and the third."
+          ],
+          [
+            "t",
+            "Over three rounds | 19.9% a round (all 10,030 eligible) | 24.4% a round (8,206 eligible)\nNever picked | 51% | 43%\nPicked at least once | 49% | 57%\nPicked exactly once | 45% | 51%\nPicked twice (first and third rounds) | 4.0% | 5.9%\nPicked in all three rounds | 0% under the rule (0.8% without it) | 0% under the rule (1.4% without it)"
+          ],
+          [
+            "p",
+            "Under these assumptions, about half of eligible applicants would never get a place in three rounds. Without the rule, a few would win every time; with it, no one does. The rule spreads places more widely, but it does not change the chance of never being picked, which depends only on the odds in each round."
+          ],
+          [
+            "h",
+            "What it would cost to pay every applicant"
+          ],
+          [
+            "p",
+            "Paying €16,900 a year to all 10,030 applicants would cost about €169.5 million a year, 4.9 times the €34.4 million in Budget 2027. Paying the pilot’s 8,206 eligible applicants would cost about €138.7 million, 4.0 times. Neither figure counts artists who did not apply, and neither is a basic income for everyone in Ireland."
+          ],
+          [
+            "h",
+            "What the data can’t tell us"
+          ],
+          [
+            "p",
+            "The pilot measured recipients against a control group paid €650 a year; it says little about how applicants who are not picked fare, or how the hope of a later round shapes what they do. Nobody has measured the waiting itself: applicants who sent their applications in May were still being told in November, and some will hear nothing until 2027. The eligible pool, and so the true odds, is unknown, and future rounds depend on future budgets. And results from 2,000 chosen artists paid for three years do not show what a basic income for everyone would do to work, prices or taxes. The figures in this essay are collected, with their sources and dates, in {ireland-bia-2026.json|/ireland-bia-2026.json}."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026年11月，在爱尔兰“艺术基本收入”（Basic Income for the Arts）申请者交流信息的一个网络论坛上，人们在等待下一个“批次”，也就是文化部分批发出录取通知的批次。申请者互相转发文化部关于第二批的电子邮件。[1] 有人写道，漫长的等待正在损害自己的心理健康。也有人说抽签不公平：在他们看来，有的艺术家会一次又一次被抽中，有的却永远抽不中。本文的任何事实都不依赖该论坛，而是根据文化部的指南、新闻稿和在众议院（Dáil）的答复，梳理这项计划是什么、2026年这一轮进展到哪里、它是否符合基本收入的定义，以及抽签对一名申请者的机会意味着什么。"
+          ],
+          [
+            "h",
+            "计划内容"
+          ],
+          [
+            "p",
+            "该计划向2,000名艺术家每周发放325欧元，为期三年。款项按月发放，每月1,413.21欧元；每周325欧元相当于每年16,900欧元，三年共50,700欧元。[2] 政府于2026年2月10日宣布将其作为试点的常设后续计划，资金为2026年预算中的1,827万欧元，2027年预算则为全年预留了3,440万欧元。[3][6] 向2,000人每年各发16,900欧元，需要3,380万欧元。"
+          ],
+          [
+            "p",
+            "只有职业艺术家可以申请。申请者须年满18岁，居住在爱尔兰共和国且主要在当地从事艺术实践，并以个人身份申请，乐队或公司不能申请。申请者须上传三份职业实践的证明，其中至少两份来自爱尔兰的机构、资助机构或代表性团体：例如艺术委员会的奖项、合同、已发表作品的署名、所列团体的专业会员资格、领取“艺术家求职者津贴”的记录，或显示艺术收入的纳税申报表。业余或有志成为艺术家的人、领取Cnuas津贴的Aosdána成员以及全日制学生不符合条件；最多100个名额留给应届毕业生。每名申请者都须填写一份最多70个问题的调查问卷，入选者还须回答后续调查，并通过每年一次的资格审核。[2][4] 该计划没有收入审查。[4]"
+          ],
+          [
+            "p",
+            "这笔钱计为收入。入选者须以自雇者身份在税务局（Revenue）登记、取得完税证明并每年提交纳税申报；这笔钱按自雇收入征税，并须缴纳S类社会保险。社会保障部在收入审查中将其视为自雇收入，因此它是否会减少某项社会福利，取决于该福利的规则和个人情况。有些福利会将这类收入的一部分不计入，有些则不会。领取社会福利（包括残疾津贴）的人可以申请，但如果入选，须告知社会保障部。[2][15]"
+          ],
+          [
+            "p",
+            "此外还有关于重复领取的规则。“艺术家在任何6年周期内只能领取BIA 3年”：2026–2029年这一轮的入选者不能申请2030–2033年那一轮，但可以申请2034–2037年那一轮。文化部表示，这是为了让尽可能多的艺术家参与。试点的领取者及其对照组成员，只要符合新一轮的规则，也可以申请。[2][4]"
+          ],
+          [
+            "h",
+            "2026年这一轮：从抽签到分批通知"
+          ],
+          [
+            "p",
+            "申请期为2026年4月15日至5月12日，共收到10,030份申请。在审计公司EY的监督下，每份申请都被赋予一个随机编号，名单按编号排序。随后从名单顶端开始审查资格：如果靠前的申请不符合条件，或有人放弃，就审查名单上的下一份。文化部没有公布10,030名申请者中有多少人符合条件，因为它不会逐一审查所有人。[5][8]"
+          ],
+          [
+            "p",
+            "文化部自10月15日起开始致函780名申请者。到10月29日，已有743人接受。11月3日，部长在一份答复中回答了众议院关于该计划的32个问题，表示其余入选者将在“未来几周内”得到通知，第一批款项将在年底前发放。[6] 截至11月6日，已有442名申请者被告知不符合条件。[7] 一份新闻稿称，11月12日将再通知450人，圣诞节前还有一批；[1] 11月17日，部长在众议院表示11月12日通知的人数为467人，累计1,247人，截至11月13日有862人接受、八人拒绝。这意味着2,000个名额中还有753个待定。截至11月12日共有154起申诉，其中150起维持原决定。申诉只涉及程序是否得到遵守。名单上始终没有轮到的申请者，要等到全部2,000个名额确定后才会得到通知，部长预计这将在2027年初。2026年首次领取的人可追溯至2026年9月领取；2027年首次领取的人从2027年1月起领取，或追溯至2027年1月。[8]"
+          ],
+          [
+            "h",
+            "它是基本收入吗？"
+          ],
+          [
+            "p",
+            "基本收入地球网络（BIEN）将基本收入定义为“无条件地以个人为单位定期发放给所有人的现金，不经收入审查，也没有工作要求”，并列出了五个特征。[9] 文化部在其常见问题解答中自己回答了这个问题：“艺术基本收入不是全民基本收入。这是一项支持从业职业艺术家的行业性措施。”[4] 逐项对照各个特征："
+          ],
+          [
+            "t",
+            "BIEN的特征 | BIEN的含义 | 艺术基本收入\n定期 | 定期发放，而非一次性 | 是：三年内每月1,413.21欧元[2]\n现金 | 由领取者决定用途 | 是：打入银行账户，对用途没有规定[2]\n个人 | 发给每个人，而非家庭 | 是：仅限个人，团体不能申请[4]\n普遍 | 发给所有人 | 否：只有符合条件的职业艺术家可以申请，并从中抽签选出2,000人[2]\n无条件 | 无收入审查，无工作要求 | 部分：无收入审查，但领取者须保持职业实践、回答调查并通过每年的审核[2][4]"
+          ],
+          [
+            "p",
+            "它在普遍性上不符合，在条件上部分不符合。向选定群体发放、附带条件很少的款项通常被称为“保障收入”，美国的各项试点就是如此；OpenResearch的研究向1,000人每月发放1,000美元，它将自己描述为一项保障收入试验。[14] 芬兰的实验是欧洲最接近的比较对象：2017年至2018年，它从领取基本失业救济的人中随机抽选2,000名25至58岁的失业者，每月发放560欧元，免税，且参与是强制性的。[13] 芬兰的抽签是一项为期两年的实验的研究设计；爱尔兰的抽签则是一项常设计划分配名额的方式，人们要主动申请才能参加。{本站关于芬兰实验的文章|/essays/finland-basic-income-experiment/}介绍了其发现。"
+          ],
+          [
+            "h",
+            "试点的发现"
+          ],
+          [
+            "p",
+            "试点自2022年起向从8,206名符合条件的申请者中抽出的2,000名艺术家和艺术从业者发放同样的每周325欧元，另有1,000人组成对照组，每年领取650欧元。[10] 两年后，与对照组相比，领取者每周用于创作的时间多11小时，在其他行业工作的时间少3.5小时，完成新作品的可能性高14个百分点，报告感到抑郁和焦虑的可能性分别低15和16个百分点；他们的生活满意度为7，对照组为6。[11] 一项成本效益分析估计总成本约为1亿1,400万欧元，每1欧元带来1.39欧元的收益。[12] {本站关于日本传统工艺的文章|/essays/traditional-crafts-basic-income/}更详细地介绍了这些结果。"
+          ],
+          [
+            "h",
+            "抽签的算术"
+          ],
+          [
+            "p",
+            "由于资格是沿着一份随机名单依次审查的，一名符合条件的申请者在这一轮获得名额的概率，等于2,000除以符合条件的申请者人数。这个人数没有公布。如果10,030名申请者全部符合条件，概率为19.9%，因此概率至少是这个数。如果符合条件的人数与试点的8,206人相同，概率为24.4%。[5][10]"
+          ],
+          [
+            "p",
+            "下表显示在2026–2029年、2030–2033年和2034–2037年三轮中这意味着什么。这些只是示意，不是预测。它假设每一轮符合条件的申请者人数相同、名额都是2,000个、各轮抽签相互独立，并且申请者在每一轮只要有资格就会申请。它还适用官方规则：入选者须跳过下一轮。因此没有人能在三轮中都被抽中，任何人最多只能被抽中两次，即第一轮和第三轮。"
+          ],
+          [
+            "t",
+            "三轮合计 | 每轮19.9%（10,030人全部符合条件） | 每轮24.4%（8,206人符合条件）\n一次也没抽中 | 51% | 43%\n至少抽中一次 | 49% | 57%\n恰好抽中一次 | 45% | 51%\n抽中两次（第一轮和第三轮） | 4.0% | 5.9%\n三轮都抽中 | 按规则为0%（无规则时为0.8%） | 按规则为0%（无规则时为1.4%）"
+          ],
+          [
+            "p",
+            "在这些假设下，约有一半符合条件的申请者在三轮中都得不到名额。如果没有这条规则，少数人会每次都中签；有了它，没有人会这样。这条规则让名额分配得更广，但不会改变一次也抽不中的概率，后者只取决于每一轮的中签率。"
+          ],
+          [
+            "h",
+            "如果发给每一位申请者要花多少钱"
+          ],
+          [
+            "p",
+            "向全部10,030名申请者每年各发16,900欧元，每年约需1.695亿欧元，是2027年预算中3,440万欧元的4.9倍。向试点的8,206名符合条件的申请者发放，约需1.387亿欧元，是4.0倍。这两个数字都没有计入未申请的艺术家，也都不是面向爱尔兰所有人的基本收入。"
+          ],
+          [
+            "h",
+            "数据无法告诉我们的"
+          ],
+          [
+            "p",
+            "试点将领取者与每年领取650欧元的对照组进行比较；它几乎没有说明未被抽中的申请者境况如何，也没有说明对下一轮的期望如何影响他们的行为。没有人衡量过等待本身：5月提交申请的人到11月仍在陆续收到通知，有些人要到2027年才会得到消息。符合条件的人数，因而真实的概率，都是未知的，而今后各轮取决于今后的预算。此外，选定的2,000名艺术家领取三年的结果，并不能说明面向所有人的基本收入会对工作、物价或税收产生什么影响。本文的数字及其出处和日期汇总在{ireland-bia-2026.json|/ireland-bia-2026.json}中。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "नवंबर 2026 में, एक ऑनलाइन फ़ोरम पर जहाँ आयरलैंड की Basic Income for the Arts के आवेदक आपस में जानकारी बाँटते हैं, लोग अगली “किस्त” का इंतज़ार कर रहे थे, यानी वे खेप जिनमें विभाग प्रस्ताव भेजता है। आवेदक दूसरी किस्त के बारे में विभाग का ईमेल आपस में साझा कर रहे थे।[1] कुछ ने लिखा कि यह इंतज़ार उनके मानसिक स्वास्थ्य को नुक़सान पहुँचा रहा है। दूसरों ने लॉटरी को अनुचित कहा: उनके अनुसार कुछ कलाकार बार-बार चुने जाएँगे और कुछ कभी नहीं। यह निबंध किसी भी तथ्य के लिए उस फ़ोरम पर निर्भर नहीं है। यह विभाग के दिशानिर्देशों, प्रेस विज्ञप्तियों और Dáil (संसद के निचले सदन) में दिए गए उत्तरों के आधार पर बताता है कि योजना क्या है, 2026 का दौर कहाँ तक पहुँचा है, क्या यह बेसिक इनकम की परिभाषा पर खरी उतरती है, और लॉटरी का एक आवेदक की संभावना के लिए क्या अर्थ है।"
+          ],
+          [
+            "h",
+            "योजना क्या है"
+          ],
+          [
+            "p",
+            "यह योजना 2,000 कलाकारों को तीन साल तक हफ़्ते के 325 यूरो देती है। भुगतान महीने में 1,413.21 यूरो के रूप में होता है; हफ़्ते के 325 यूरो साल के 16,900 यूरो और तीन साल में 50,700 यूरो बनते हैं।[2] सरकार ने 10 फ़रवरी 2026 को इसे एक पायलट की स्थायी उत्तराधिकारी योजना के रूप में घोषित किया, बजट 2026 से 18.27 मिलियन यूरो के साथ, और बजट 2027 ने पूरे साल के लिए 34.4 मिलियन यूरो रखे।[3][6] 2,000 लोगों को साल के 16,900 यूरो देने की लागत 33.8 मिलियन यूरो है।"
+          ],
+          [
+            "p",
+            "केवल पेशेवर कलाकार आवेदन कर सकते हैं। आवेदक की उम्र 18 साल या उससे अधिक होनी चाहिए, वह आयरलैंड गणराज्य में रहता हो और उसकी कला-साधना मुख्य रूप से वहीं हो, और वह व्यक्ति के रूप में आवेदन करे, बैंड या कंपनी के रूप में नहीं। आवेदकों को पेशेवर कला-साधना के तीन प्रमाण अपलोड करने होते हैं, जिनमें से कम से कम दो आयरलैंड के संगठनों, अनुदान देने वाली संस्थाओं या प्रतिनिधि संस्थाओं से हों: उदाहरण के लिए Arts Council का पुरस्कार, कोई अनुबंध, प्रकाशित क्रेडिट, सूचीबद्ध संस्था की पेशेवर सदस्यता, Artists’ Jobseeker’s Allowance पाने का प्रमाण, या कला से आय दिखाने वाला टैक्स रिटर्न। शौक़िया या कलाकार बनने की इच्छा रखने वाले लोग, Cnuas भुगतान पाने वाले Aosdána के सदस्य और पूर्णकालिक छात्र पात्र नहीं हैं; हाल के स्नातकों के लिए 100 तक जगहें रखी गई हैं। हर आवेदक को अधिकतम 70 प्रश्नों का एक सर्वेक्षण भरना होता है, और चुने गए लोगों को आगे के सर्वेक्षणों का जवाब देना होता है और अपनी पात्रता की सालाना जाँच से गुज़रना होता है।[2][4] आय की कोई जाँच नहीं है।[4]"
+          ],
+          [
+            "p",
+            "यह भुगतान आय माना जाता है। चुने गए लोगों को Revenue (कर विभाग) में स्व-नियोजित के रूप में पंजीकरण कराना, टैक्स क्लियरेंस लेना और हर साल टैक्स रिटर्न भरना होता है; भुगतान पर स्व-रोज़गार आय के रूप में टैक्स लगता है और Class S सामाजिक बीमा देय होता है। सामाजिक संरक्षण विभाग अपनी आय जाँचों में इसे स्व-रोज़गार से आय मानता है, इसलिए यह किसी कल्याण भुगतान को घटाएगा या नहीं, यह उस भुगतान के नियमों और व्यक्ति की परिस्थितियों पर निर्भर करता है। कुछ भुगतान ऐसी आय का एक हिस्सा अनदेखा करते हैं और कुछ नहीं। सामाजिक कल्याण पाने वाले लोग, Disability Allowance पाने वालों सहित, आवेदन कर सकते हैं, लेकिन चुने जाने पर उन्हें सामाजिक संरक्षण विभाग को बताना होगा।[2][15]"
+          ],
+          [
+            "p",
+            "दोबारा भुगतान पर भी एक नियम है। “कोई कलाकार किसी भी 6 साल के चक्र में केवल 3 साल के लिए BIA पा सकता है”: 2026–2029 के दौर के लिए चुने गए लोग 2030–2033 के दौर के लिए आवेदन नहीं कर सकते, लेकिन 2034–2037 के दौर के लिए कर सकते हैं। विभाग का कहना है कि ऐसा इसलिए है ताकि ज़्यादा से ज़्यादा कलाकार भाग ले सकें। पायलट के भुगतान पाने वाले और उसके नियंत्रण समूह के सदस्य भी, नए दौर के नियमों पर खरे उतरने पर, आवेदन कर सकते थे।[2][4]"
+          ],
+          [
+            "h",
+            "2026 का दौर: लॉटरी से किस्तों तक"
+          ],
+          [
+            "p",
+            "आवेदन 15 अप्रैल से 12 मई 2026 तक खुले रहे, और 10,030 आवेदन आए। ऑडिट फ़र्म EY की निगरानी में हर आवेदन को एक यादृच्छिक संख्या दी गई और सूची को उसी के अनुसार क्रम में लगाया गया। फिर पात्रता ऊपर से जाँची जाती है: अगर ऊपर के पास का कोई आवेदन अपात्र है, या कोई प्रस्ताव ठुकरा देता है, तो सूची में अगला आवेदन जाँचा जाता है। विभाग ने यह प्रकाशित नहीं किया है कि 10,030 आवेदकों में से कितने पात्र हैं, क्योंकि वह सभी की जाँच नहीं करता।[5][8]"
+          ],
+          [
+            "p",
+            "विभाग ने 15 अक्टूबर से 780 आवेदकों को पत्र भेजने शुरू किए। 29 अक्टूबर तक 743 ने स्वीकार कर लिया था। 3 नवंबर को मंत्री ने योजना के बारे में Dáil के 32 प्रश्नों का एक ही उत्तर में जवाब दिया और कहा कि बाक़ी चुने गए लोगों को “आने वाले हफ़्तों में” बताया जाएगा और पहली किस्त साल ख़त्म होने से पहले दी जाएगी।[6] 6 नवंबर तक 442 आवेदकों को बताया जा चुका था कि वे अपात्र हैं।[7] एक प्रेस विज्ञप्ति में कहा गया कि 12 नवंबर को अन्य 450 लोगों को सूचित किया जाएगा और क्रिसमस से पहले एक और किस्त होगी;[1] 17 नवंबर को Dáil में मंत्री ने 12 नवंबर का आँकड़ा 467 बताया, यानी कुल 1,247, और 13 नवंबर तक 862 स्वीकृतियाँ और आठ इनकार। इससे 2,000 में से 753 जगहें भरनी बाक़ी रहती हैं। 12 नवंबर तक 154 अपीलें हुई थीं, और उनमें से 150 में मूल निर्णय बरक़रार रखा गया। अपीलें केवल इस बारे में होती हैं कि प्रक्रिया का पालन हुआ या नहीं। जिन आवेदकों की सूची में बारी कभी नहीं आती, उन्हें तभी बताया जाएगा जब सभी 2,000 जगहें अंतिम हो जाएँगी, जिसकी मंत्री को 2027 की शुरुआत में उम्मीद है। 2026 में पहली बार भुगतान पाने वालों को सितंबर 2026 से पिछली तारीख़ से भुगतान मिलता है; 2027 में पहली बार भुगतान पाने वालों को जनवरी 2027 से, या जनवरी 2027 से पिछली तारीख़ से, भुगतान मिलता है।[8]"
+          ],
+          [
+            "h",
+            "क्या यह बेसिक इनकम है?"
+          ],
+          [
+            "p",
+            "Basic Income Earth Network (BIEN) बेसिक इनकम को “सभी को व्यक्तिगत आधार पर, बिना आय जाँच या काम की शर्त के, बिना शर्त दिया जाने वाला आवधिक नक़द भुगतान” के रूप में परिभाषित करता है, और इसकी पाँच विशेषताएँ बताता है।[9] विभाग ख़ुद अपने FAQ में इस प्रश्न का उत्तर देता है: “Basic Income for the Arts एक सार्वभौमिक बेसिक इनकम नहीं है। यह सक्रिय पेशेवर कलाकारों की सहायता के लिए एक क्षेत्रीय हस्तक्षेप है।”[4] हर विशेषता की कसौटी पर:"
+          ],
+          [
+            "t",
+            "BIEN की विशेषता | BIEN का अर्थ | Basic Income for the Arts\nआवधिक | नियमित अंतराल पर दिया जाए, एक बार नहीं | हाँ: तीन साल तक महीने के 1,413.21 यूरो[2]\nनक़द | पाने वाले तय करें कि किस पर ख़र्च करें | हाँ: बैंक खाते में भुगतान, ख़र्च पर कोई नियम नहीं[2]\nव्यक्तिगत | हर व्यक्ति को दिया जाए, परिवारों को नहीं | हाँ: केवल व्यक्ति; समूह आवेदन नहीं कर सकते[4]\nसार्वभौमिक | सभी को दिया जाए | नहीं: केवल पात्र पेशेवर कलाकार आवेदन कर सकते हैं, और उनमें से 2,000 लॉटरी से चुने जाते हैं[2]\nबिना शर्त | न आय जाँच, न काम की शर्त | आंशिक: आय जाँच नहीं, लेकिन पाने वालों को पेशेवर कला-साधना बनाए रखनी, सर्वेक्षणों का जवाब देना और सालाना जाँच से गुज़रना होता है[2][4]"
+          ],
+          [
+            "p",
+            "यह सार्वभौमिकता पर, और आंशिक रूप से शर्तों पर, खरी नहीं उतरती। कम शर्तों के साथ एक चुने हुए समूह को दिए जाने वाले भुगतान को अक्सर गारंटीड इनकम कहा जाता है, जैसे अमेरिका के पायलटों में; OpenResearch अध्ययन, जिसने 1,000 लोगों को महीने के 1,000 डॉलर दिए, ख़ुद को गारंटीड इनकम का परीक्षण बताता है।[14] यूरोप में सबसे नज़दीकी तुलना फ़िनलैंड का प्रयोग है: 2017 से 2018 तक उसने बुनियादी बेरोज़गारी लाभ पाने वालों में से यादृच्छिक रूप से चुने गए 25 से 58 साल के 2,000 बेरोज़गार लोगों को महीने के 560 यूरो, टैक्स-मुक्त, दिए, और भाग लेना अनिवार्य था।[13] फ़िनलैंड की लॉटरी दो साल के प्रयोग की शोध-रूपरेखा थी; आयरलैंड की लॉटरी वह तरीक़ा है जिससे एक स्थायी योजना जगहें बाँटती है, और लोग उसमें शामिल होने के लिए आवेदन करते हैं। {फ़िनलैंड के प्रयोग पर हमारा निबंध|/essays/finland-basic-income-experiment/} बताता है कि उसमें क्या पाया गया।"
+          ],
+          [
+            "h",
+            "पायलट ने क्या पाया"
+          ],
+          [
+            "p",
+            "पायलट ने 2022 से वही हफ़्ते के 325 यूरो 8,206 पात्र आवेदकों में से चुने गए 2,000 कलाकारों और कला कर्मियों को दिए, और अन्य 1,000 लोग नियंत्रण समूह में थे जिन्हें साल के 650 यूरो दिए गए।[10] दो साल बाद, नियंत्रण समूह की तुलना में भुगतान पाने वालों ने रचनात्मक काम पर हफ़्ते में 11 घंटे ज़्यादा और दूसरे क्षेत्रों में काम पर 3.5 घंटे कम बिताए, उनके नई कृतियाँ पूरी करने की संभावना 14 प्रतिशत अंक ज़्यादा थी, और उदास और चिंतित महसूस करने की बात कहने की संभावना 15 और 16 अंक कम थी; उनकी जीवन-संतुष्टि 6 के मुक़ाबले 7 थी।[11] एक लागत-लाभ विश्लेषण ने सकल लागत लगभग 114 मिलियन यूरो और लाभ हर 1 यूरो पर 1.39 यूरो आँका।[12] {जापान के पारंपरिक शिल्पों पर हमारा निबंध|/essays/traditional-crafts-basic-income/} इन नतीजों को और विस्तार से बताता है।"
+          ],
+          [
+            "h",
+            "लॉटरी का हिसाब"
+          ],
+          [
+            "p",
+            "क्योंकि पात्रता एक यादृच्छिक सूची में ऊपर से नीचे जाँची जाती है, इस दौर में किसी पात्र आवेदक को जगह मिलने की संभावना 2,000 को पात्र आवेदकों की संख्या से भाग देने पर मिलती है। वह संख्या प्रकाशित नहीं है। अगर सभी 10,030 आवेदक पात्र होते, तो संभावना 19.9% होती, इसलिए यह कम से कम इतनी है। अगर पात्र आवेदकों की संख्या पायलट जितनी, 8,206, होती, तो यह 24.4% होती।[5][10]"
+          ],
+          [
+            "p",
+            "तालिका दिखाती है कि तीन दौरों, 2026–2029, 2030–2033 और 2034–2037, में इसका क्या अर्थ होगा। ये उदाहरण हैं, पूर्वानुमान नहीं। ये मानते हैं कि हर दौर में पात्र आवेदकों की संख्या समान है और 2,000 जगहें हैं, लॉटरियाँ एक-दूसरे से स्वतंत्र हैं, और कोई व्यक्ति हर उस दौर में आवेदन करता है जिसमें वह कर सकता है। ये आधिकारिक नियम भी लागू करते हैं: चुना गया व्यक्ति अगले दौर से बाहर रहता है। इसलिए कोई भी तीनों दौरों में नहीं चुना जा सकता, और कोई अधिकतम दो बार, पहले और तीसरे दौर में, चुना जा सकता है।"
+          ],
+          [
+            "t",
+            "तीन दौरों में | हर दौर में 19.9% (सभी 10,030 पात्र) | हर दौर में 24.4% (8,206 पात्र)\nकभी नहीं चुने गए | 51% | 43%\nकम से कम एक बार चुने गए | 49% | 57%\nठीक एक बार चुने गए | 45% | 51%\nदो बार चुने गए (पहला और तीसरा दौर) | 4.0% | 5.9%\nतीनों दौरों में चुने गए | नियम के तहत 0% (नियम के बिना 0.8%) | नियम के तहत 0% (नियम के बिना 1.4%)"
+          ],
+          [
+            "p",
+            "इन मान्यताओं के तहत, लगभग आधे पात्र आवेदकों को तीन दौरों में कभी जगह नहीं मिलेगी। नियम के बिना कुछ लोग हर बार जीतते; नियम के साथ कोई नहीं जीतता। नियम जगहों को ज़्यादा लोगों में बाँटता है, लेकिन कभी न चुने जाने की संभावना को नहीं बदलता, जो केवल हर दौर की संभावना पर निर्भर करती है।"
+          ],
+          [
+            "h",
+            "हर आवेदक को भुगतान करने की लागत"
+          ],
+          [
+            "p",
+            "सभी 10,030 आवेदकों को साल के 16,900 यूरो देने की लागत लगभग 169.5 मिलियन यूरो सालाना होगी, जो बजट 2027 के 34.4 मिलियन यूरो का 4.9 गुना है। पायलट के 8,206 पात्र आवेदकों को देने की लागत लगभग 138.7 मिलियन यूरो होगी, यानी 4.0 गुना। कोई भी आँकड़ा उन कलाकारों को नहीं गिनता जिन्होंने आवेदन नहीं किया, और कोई भी आयरलैंड में हर किसी के लिए बेसिक इनकम नहीं है।"
+          ],
+          [
+            "h",
+            "आँकड़े क्या नहीं बता सकते"
+          ],
+          [
+            "p",
+            "पायलट ने भुगतान पाने वालों की तुलना साल के 650 यूरो पाने वाले नियंत्रण समूह से की; इससे यह बहुत कम पता चलता है कि जो आवेदक नहीं चुने जाते उनका क्या होता है, या अगले दौर की उम्मीद उनके कामों को कैसे प्रभावित करती है। इंतज़ार को ख़ुद किसी ने नहीं मापा: मई में आवेदन भेजने वालों को नवंबर में भी सूचनाएँ मिल रही थीं, और कुछ को 2027 तक कोई ख़बर नहीं मिलेगी। पात्र आवेदकों की संख्या, और इसलिए असली संभावना, अज्ञात है, और भविष्य के दौर भविष्य के बजटों पर निर्भर हैं। और तीन साल तक भुगतान पाने वाले 2,000 चुने हुए कलाकारों के नतीजे यह नहीं दिखाते कि हर किसी के लिए बेसिक इनकम काम, क़ीमतों या टैक्स पर क्या असर डालेगी। इस निबंध के आँकड़े स्रोतों और तारीख़ों के साथ {ireland-bia-2026.json|/ireland-bia-2026.json} में एकत्र हैं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "En noviembre de 2026, en un foro en línea donde los solicitantes de la Basic Income for the Arts (renta básica para las artes) de Irlanda comparten información, la gente esperaba el siguiente «tramo», las tandas en que el departamento envía las ofertas. Los solicitantes se pasaban el correo del departamento sobre el segundo tramo.[1] Algunos escribían que la espera les estaba afectando a la salud mental. Otros llamaban injusto al sorteo: unos artistas saldrían elegidos una y otra vez, decían, y otros nunca. Este ensayo no se apoya en el foro para ningún dato. Expone, a partir de las bases del departamento, sus notas de prensa y sus respuestas en el Dáil, qué es el programa, en qué punto está la convocatoria de 2026, si cumple la definición de renta básica y qué supone el sorteo para las posibilidades de un solicitante."
+          ],
+          [
+            "h",
+            "Qué es el programa"
+          ],
+          [
+            "p",
+            "El programa paga 325 € a la semana durante tres años a 2.000 artistas. Se abona mensualmente, 1.413,21 €; 325 € a la semana suman 16.900 € al año y 50.700 € en tres años.[2] El Gobierno lo anunció el 10 de febrero de 2026 como sucesor permanente de un piloto, con 18,27 millones de € del Presupuesto 2026, y el Presupuesto 2027 reservó 34,4 millones de € para un año completo.[3][6] Pagar 16.900 € al año a 2.000 personas cuesta 33,8 millones de €."
+          ],
+          [
+            "p",
+            "Solo pueden solicitarlo artistas profesionales. Los solicitantes deben tener 18 años o más, residir en la República de Irlanda con una práctica artística desarrollada principalmente allí y presentarse a título individual, no como grupos ni compañías. Deben aportar tres pruebas de una práctica profesional, al menos dos de ellas de organizaciones, entidades financiadoras u organismos representativos irlandeses: por ejemplo, una ayuda del Arts Council, un contrato, un crédito publicado, la afiliación profesional a una entidad de la lista, el cobro del subsidio de desempleo para artistas (Artists’ Jobseeker’s Allowance) o una declaración de la renta con ingresos artísticos. No pueden optar los artistas aficionados o en ciernes, los miembros de Aosdána que cobran su pago Cnuas ni los estudiantes a tiempo completo; se reservan hasta 100 plazas para recién titulados. Todos los solicitantes deben rellenar una encuesta de hasta 70 preguntas, y los beneficiarios deben responder más encuestas y superar una auditoría anual de sus requisitos.[2][4] No hay comprobación de recursos.[4]"
+          ],
+          [
+            "p",
+            "El pago cuenta como ingreso. Los beneficiarios deben darse de alta en Revenue como autónomos, estar al corriente con Hacienda y presentar la declaración de la renta cada año; el pago tributa como rendimiento de actividad por cuenta propia y cotiza a la seguridad social en la clase S. El Departamento de Protección Social lo trata como ingreso por cuenta propia en sus comprobaciones de recursos, así que el que reduzca o no una prestación social depende de las reglas de esa prestación y de la situación de cada persona. Algunas prestaciones no computan parte de esos ingresos y otras sí. Quienes cobran prestaciones sociales, incluida la Disability Allowance, pueden presentarse, pero deben comunicarlo al Departamento de Protección Social si resultan elegidos.[2][15]"
+          ],
+          [
+            "p",
+            "Hay además una regla sobre la repetición. «Un artista solo puede recibir la BIA durante 3 años de cada ciclo de 6 años»: quienes salgan elegidos en la convocatoria 2026–2029 no pueden presentarse a la de 2030–2033, pero sí a la de 2034–2037. El departamento dice que así participa el mayor número posible de artistas. Los beneficiarios del piloto, y los miembros de su grupo de control, podían presentarse a la nueva convocatoria si cumplían sus requisitos.[2][4]"
+          ],
+          [
+            "h",
+            "La convocatoria de 2026: del sorteo a los tramos"
+          ],
+          [
+            "p",
+            "Las solicitudes se presentaron del 15 de abril al 12 de mayo de 2026, y se recibieron 10.030. Bajo la supervisión de la auditora EY, a cada solicitud se le asignó un número aleatorio y la lista se ordenó por ese número. Después se comprueban los requisitos empezando por arriba: si una solicitud cercana al principio no los cumple, o alguien renuncia, se comprueba la siguiente de la lista. El departamento no ha publicado cuántos de los 10.030 solicitantes cumplen los requisitos, porque no los comprueba todos.[5][8]"
+          ],
+          [
+            "p",
+            "El departamento empezó a escribir a 780 solicitantes el 15 de octubre. Al 29 de octubre, 743 habían aceptado. El 3 de noviembre, el ministro respondió en una sola contestación a 32 preguntas del Dáil sobre el programa y dijo que el resto de beneficiarios recibiría la notificación «en las próximas semanas» y que el primer tramo se pagaría antes de fin de año.[6] Al 6 de noviembre, a 442 solicitantes se les había comunicado que no cumplían los requisitos.[7] Una nota de prensa anunció que otros 450 recibirían la notificación el 12 de noviembre y que habría otro tramo antes de Navidad;[1] en el Dáil, el 17 de noviembre, el ministro dio para el 12 de noviembre la cifra de 467, con lo que el total era de 1.247, con 862 aceptaciones y ocho renuncias al 13 de noviembre. Quedan así por cubrir 753 de las 2.000 plazas. Al 12 de noviembre se habían presentado 154 recursos, y en 150 se mantuvo la decisión inicial. Los recursos solo tratan de si se siguió el procedimiento. A los solicitantes cuyo puesto en la lista no se alcance solo se les avisará cuando las 2.000 plazas sean definitivas, lo que el ministro prevé para principios de 2027. A los beneficiarios que cobren por primera vez en 2026 se les paga con efecto retroactivo desde septiembre de 2026; a quienes cobren por primera vez en 2027, desde enero de 2027 o con efecto retroactivo a esa fecha.[8]"
+          ],
+          [
+            "h",
+            "¿Es una renta básica?"
+          ],
+          [
+            "p",
+            "La Red Mundial de Renta Básica (BIEN) define la renta básica como «un pago periódico en efectivo entregado incondicionalmente a todos de forma individual, sin comprobación de recursos ni exigencia de trabajo», y enumera cinco características.[9] El propio departamento responde a la pregunta en sus preguntas frecuentes: «la Basic Income for the Arts no es una renta básica universal. Es una intervención sectorial para apoyar a artistas profesionales en activo».[4] Comparada con cada característica:"
+          ],
+          [
+            "t",
+            "Característica de BIEN | Qué entiende BIEN | Basic Income for the Arts\nPeriódica | Se paga a intervalos regulares, no una sola vez | Sí: 1.413,21 € al mes durante tres años[2]\nEn efectivo | Los beneficiarios deciden en qué gastarla | Sí: un ingreso en cuenta bancaria, sin reglas sobre cómo se gasta[2]\nIndividual | Se paga a cada persona, no a los hogares | Sí: solo personas; los grupos no pueden solicitarla[4]\nUniversal | Se paga a todos | No: solo pueden solicitarla artistas profesionales que cumplen los requisitos, y 2.000 se eligen por sorteo[2]\nIncondicional | Sin comprobación de recursos ni exigencia de trabajo | En parte: no hay comprobación de recursos, pero los beneficiarios deben mantener una práctica profesional, responder encuestas y superar auditorías anuales[2][4]"
+          ],
+          [
+            "p",
+            "Falla en la universalidad, y en parte en las condiciones. Los pagos a un grupo elegido con pocas condiciones suelen llamarse ingreso garantizado, como en los pilotos de Estados Unidos; el estudio de OpenResearch, que pagó 1.000 $ al mes a 1.000 personas, se describe a sí mismo como un ensayo de ingreso garantizado.[14] El experimento de Finlandia es la comparación europea más cercana: en 2017 y 2018 pagó 560 € al mes, libres de impuestos, a 2.000 desempleados de entre 25 y 58 años, elegidos al azar entre quienes cobraban la prestación básica por desempleo, y la participación era obligatoria.[13] El sorteo de Finlandia era un diseño de investigación para un experimento de dos años; el de Irlanda es la forma en que un programa permanente reparte plazas, y la gente se presenta para entrar. {Nuestro ensayo sobre el experimento de Finlandia|/essays/finland-basic-income-experiment/} explica lo que encontró."
+          ],
+          [
+            "h",
+            "Qué encontró el piloto"
+          ],
+          [
+            "p",
+            "El piloto pagó los mismos 325 € a la semana desde 2022 a 2.000 artistas y trabajadores del sector elegidos entre 8.206 solicitantes que cumplían los requisitos, con otros 1.000 en un grupo de control que recibían 650 € al año.[10] Al cabo de dos años, los beneficiarios dedicaban 11 horas a la semana más a la práctica creativa que el grupo de control y 3,5 horas menos a trabajar en otros sectores, tenían 14 puntos porcentuales más de probabilidad de haber terminado obras nuevas, y 15 y 16 puntos menos de probabilidad de decir que se sentían deprimidos y ansiosos; su satisfacción con la vida era de 7 frente a 6.[11] Un análisis coste-beneficio situó el coste bruto en unos 114 millones de € y el beneficio en 1,39 € por cada euro.[12] {Nuestro ensayo sobre la artesanía tradicional de Japón|/essays/traditional-crafts-basic-income/} expone estos resultados con más detalle."
+          ],
+          [
+            "h",
+            "La aritmética del sorteo"
+          ],
+          [
+            "p",
+            "Como los requisitos se comprueban recorriendo una lista aleatoria, la probabilidad de que un solicitante que cumple los requisitos obtenga plaza en esta convocatoria es 2.000 dividido entre el número de solicitantes que los cumplen. Ese número no se ha publicado. Si los 10.030 solicitantes los cumplieran, la probabilidad sería del 19,9 %, así que es como mínimo esa. Si fueran los 8.206 del piloto, sería del 24,4 %.[5][10]"
+          ],
+          [
+            "p",
+            "La tabla muestra qué supondría esto en tres convocatorias, 2026–2029, 2030–2033 y 2034–2037. Son ilustraciones, no previsiones. Suponen el mismo número de solicitantes que cumplen los requisitos y 2.000 plazas en cada convocatoria, sorteos independientes entre sí y una persona que se presenta a todas las convocatorias en que puede. También aplican la regla oficial: quien sale elegido no puede presentarse a la convocatoria siguiente. Así, nadie puede salir elegido en las tres, y lo máximo que alguien puede conseguir son dos, la primera y la tercera."
+          ],
+          [
+            "t",
+            "En tres convocatorias | 19,9 % por convocatoria (los 10.030 cumplen los requisitos) | 24,4 % por convocatoria (8.206 cumplen los requisitos)\nNunca elegido | 51 % | 43 %\nElegido al menos una vez | 49 % | 57 %\nElegido exactamente una vez | 45 % | 51 %\nElegido dos veces (primera y tercera convocatorias) | 4,0 % | 5,9 %\nElegido en las tres convocatorias | 0 % con la regla (0,8 % sin ella) | 0 % con la regla (1,4 % sin ella)"
+          ],
+          [
+            "p",
+            "Con estos supuestos, aproximadamente la mitad de los solicitantes que cumplen los requisitos no obtendría nunca plaza en tres convocatorias. Sin la regla, unos pocos ganarían siempre; con ella, nadie. La regla reparte las plazas más ampliamente, pero no cambia la probabilidad de no salir nunca elegido, que depende solo de la probabilidad en cada convocatoria."
+          ],
+          [
+            "h",
+            "Lo que costaría pagar a todos los solicitantes"
+          ],
+          [
+            "p",
+            "Pagar 16.900 € al año a los 10.030 solicitantes costaría unos 169,5 millones de € al año, 4,9 veces los 34,4 millones de € del Presupuesto 2027. Pagar a los 8.206 solicitantes que cumplían los requisitos en el piloto costaría unos 138,7 millones de €, 4,0 veces. Ninguna de las dos cifras cuenta a los artistas que no se presentaron, y ninguna es una renta básica para toda Irlanda."
+          ],
+          [
+            "h",
+            "Lo que los datos no pueden decirnos"
+          ],
+          [
+            "p",
+            "El piloto comparó a los beneficiarios con un grupo de control que recibía 650 € al año; dice poco de cómo les va a los solicitantes que no salen elegidos, o de cómo la esperanza de una convocatoria posterior influye en lo que hacen. Nadie ha medido la espera en sí: solicitantes que enviaron su solicitud en mayo seguían recibiendo notificaciones en noviembre, y algunos no sabrán nada hasta 2027. El número de solicitantes que cumplen los requisitos, y por tanto la probabilidad real, es desconocido, y las convocatorias futuras dependen de presupuestos futuros. Y los resultados de 2.000 artistas elegidos y pagados durante tres años no muestran qué haría una renta básica para todos con el trabajo, los precios o los impuestos. Las cifras de este ensayo están recopiladas, con sus fuentes y fechas, en {ireland-bia-2026.json|/ireland-bia-2026.json}."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Im November 2026 warteten Bewerber für Irlands Basic Income for the Arts (Grundeinkommen für die Künste) in einem Onlineforum, in dem sie sich austauschen, auf die nächste „Tranche“, die Runden, in denen das Ministerium Zusagen verschickt. Die Bewerber reichten die E-Mail des Ministeriums zur zweiten Tranche herum.[1] Manche schrieben, das Warten schade ihrer psychischen Gesundheit. Andere nannten die Verlosung ungerecht: Manche Künstler würden immer wieder gezogen, sagten sie, andere nie. Dieser Essay stützt sich für keine Angabe auf das Forum. Er legt anhand der Richtlinien, Pressemitteilungen und Antworten des Ministeriums im Dáil dar, was das Programm ist, wo die Runde 2026 steht, ob es die Definition eines Grundeinkommens erfüllt und was die Verlosung für die Chancen eines Bewerbers bedeutet."
+          ],
+          [
+            "h",
+            "Was das Programm ist"
+          ],
+          [
+            "p",
+            "Das Programm zahlt 2.000 Künstlern drei Jahre lang 325 € pro Woche. Ausgezahlt wird monatlich, 1.413,21 €; 325 € pro Woche ergeben 16.900 € im Jahr und 50.700 € in drei Jahren.[2] Die Regierung kündigte es am 10. Februar 2026 als dauerhaften Nachfolger eines Pilotprojekts an, mit 18,27 Mio. € aus dem Haushalt 2026, und der Haushalt 2027 sieht 34,4 Mio. € für ein volles Jahr vor.[3][6] 2.000 Personen 16.900 € im Jahr zu zahlen kostet 33,8 Mio. €."
+          ],
+          [
+            "p",
+            "Bewerben können sich nur professionelle Künstler. Bewerber müssen mindestens 18 Jahre alt sein, in der Republik Irland leben und ihre künstlerische Praxis überwiegend dort ausüben, und sie bewerben sich als Einzelpersonen, nicht als Bands oder Ensembles. Sie müssen drei Nachweise einer professionellen Praxis hochladen, davon mindestens zwei von irischen Organisationen, Förderstellen oder Interessenverbänden: etwa eine Förderung des Arts Council, einen Vertrag, eine veröffentlichte Nennung, die Berufsmitgliedschaft in einem gelisteten Verband, den Bezug der Arbeitslosenunterstützung für Künstler (Artists’ Jobseeker’s Allowance) oder eine Steuererklärung mit Einkünften aus künstlerischer Tätigkeit. Nicht berechtigt sind Amateure und angehende Künstler, Mitglieder von Aosdána, die deren Cnuas-Zahlung erhalten, und Vollzeitstudierende; bis zu 100 Plätze sind für Hochschulabsolventen der letzten Jahre reserviert. Alle Bewerber müssen eine Umfrage mit bis zu 70 Fragen ausfüllen, und die Empfänger müssen weitere Umfragen beantworten und eine jährliche Prüfung ihrer Berechtigung bestehen.[2][4] Eine Bedürftigkeitsprüfung gibt es nicht.[4]"
+          ],
+          [
+            "p",
+            "Die Zahlung zählt als Einkommen. Empfänger müssen sich bei der Steuerbehörde Revenue als Selbstständige registrieren, eine steuerliche Unbedenklichkeitsbescheinigung haben und jedes Jahr eine Steuererklärung abgeben; die Zahlung wird als Einkommen aus selbstständiger Tätigkeit besteuert und ist in der Klasse S sozialversicherungspflichtig. Das Ministerium für Sozialschutz behandelt sie bei seinen Bedürftigkeitsprüfungen als Einkommen aus selbstständiger Tätigkeit, ob sie also eine Sozialleistung mindert, hängt von den Regeln dieser Leistung und den Umständen der Person ab. Manche Leistungen lassen einen Teil solcher Einkünfte unberücksichtigt, andere nicht. Wer Sozialleistungen bezieht, auch Disability Allowance, kann sich bewerben, muss dem Ministerium für Sozialschutz aber melden, wenn er ausgewählt wird.[2][15]"
+          ],
+          [
+            "p",
+            "Außerdem gibt es eine Regel für wiederholte Zahlungen. „Ein Künstler kann BIA nur für 3 Jahre innerhalb eines 6-Jahres-Zyklus erhalten“: Wer für die Runde 2026–2029 ausgewählt wird, kann sich nicht für die Runde 2030–2033 bewerben, wohl aber für die Runde 2034–2037. Das Ministerium begründet dies damit, dass so möglichst viele Künstler teilnehmen können. Empfänger des Pilotprojekts und Mitglieder seiner Kontrollgruppe konnten sich für die neue Runde bewerben, wenn sie deren Regeln erfüllten.[2][4]"
+          ],
+          [
+            "h",
+            "Die Runde 2026: von der Ziehung zu den Tranchen"
+          ],
+          [
+            "p",
+            "Bewerbungen liefen vom 15. April bis 12. Mai 2026, und es gingen 10.030 ein. Unter Aufsicht der Prüfungsgesellschaft EY erhielt jede Bewerbung eine Zufallszahl, und die Liste wurde danach sortiert. Die Berechtigung wird dann von oben geprüft: Ist eine Bewerbung weit oben nicht berechtigt oder lehnt jemand ab, wird die nächste auf der Liste geprüft. Das Ministerium hat nicht veröffentlicht, wie viele der 10.030 Bewerber berechtigt sind, weil es nicht alle prüft.[5][8]"
+          ],
+          [
+            "p",
+            "Das Ministerium begann am 15. Oktober, 780 Bewerber anzuschreiben. Bis zum 29. Oktober hatten 743 angenommen. Am 3. November beantwortete der Minister 32 Fragen im Dáil zum Programm in einer einzigen Antwort und sagte, die übrigen Empfänger würden „in den kommenden Wochen“ benachrichtigt und die erste Tranche werde vor Jahresende ausgezahlt.[6] Bis zum 6. November war 442 Bewerbern mitgeteilt worden, dass sie nicht berechtigt sind.[7] Eine Pressemitteilung kündigte an, weitere 450 würden am 12. November benachrichtigt und eine weitere Tranche folge vor Weihnachten;[1] im Dáil nannte der Minister am 17. November für den 12. November die Zahl 467, insgesamt also 1.247, mit 862 Zusagen und acht Absagen bis zum 13. November. Damit sind noch 753 der 2.000 Plätze zu besetzen. Bis zum 12. November hatte es 154 Einsprüche gegeben, und in 150 Fällen wurde die ursprüngliche Entscheidung bestätigt. Einsprüche betreffen nur die Frage, ob das Verfahren eingehalten wurde. Bewerber, deren Platz auf der Liste nie erreicht wird, erfahren dies erst, wenn alle 2.000 Plätze feststehen, was der Minister für Anfang 2027 erwartet. Empfänger, die erstmals 2026 Geld erhalten, werden rückwirkend ab September 2026 bezahlt; wer erstmals 2027 Geld erhält, ab Januar 2027 oder rückwirkend dazu.[8]"
+          ],
+          [
+            "h",
+            "Ist es ein Grundeinkommen?"
+          ],
+          [
+            "p",
+            "Das Basic Income Earth Network (BIEN) definiert ein Grundeinkommen als „eine regelmäßige Geldzahlung, die bedingungslos an alle auf individueller Basis ausgezahlt wird, ohne Bedürftigkeitsprüfung oder Arbeitsverpflichtung“, und nennt fünf Merkmale.[9] Das Ministerium beantwortet die Frage in seinen FAQ selbst: „Das Basic Income for the Arts ist kein universelles Grundeinkommen. Es ist eine sektorale Maßnahme zur Unterstützung praktizierender professioneller Künstler.“[4] Gemessen an jedem Merkmal:"
+          ],
+          [
+            "t",
+            "BIEN-Merkmal | Was BIEN meint | Basic Income for the Arts\nRegelmäßig | In festen Abständen gezahlt, nicht einmalig | Ja: 1.413,21 € im Monat für drei Jahre[2]\nGeld | Empfänger entscheiden, wofür sie es ausgeben | Ja: eine Zahlung auf ein Bankkonto, ohne Vorgaben zur Verwendung[2]\nIndividuell | An jede Person gezahlt, nicht an Haushalte | Ja: nur Einzelpersonen; Gruppen können sich nicht bewerben[4]\nUniversell | An alle gezahlt | Nein: Nur berechtigte professionelle Künstler können sich bewerben, und 2.000 von ihnen werden ausgelost[2]\nBedingungslos | Keine Bedürftigkeitsprüfung, keine Arbeitsverpflichtung | Teilweise: keine Bedürftigkeitsprüfung, aber Empfänger müssen eine professionelle Praxis beibehalten, Umfragen beantworten und jährliche Prüfungen bestehen[2][4]"
+          ],
+          [
+            "p",
+            "Es scheitert an der Universalität und teilweise an den Bedingungen. Zahlungen an eine ausgewählte Gruppe mit wenigen Auflagen werden oft garantiertes Einkommen genannt, wie bei den US-Pilotprojekten; die OpenResearch-Studie, die 1.000 Menschen 1.000 $ im Monat zahlte, bezeichnet sich selbst als Versuch mit einem garantierten Einkommen.[14] Finnlands Experiment ist der nächstliegende europäische Vergleich: 2017 und 2018 zahlte es 2.000 Arbeitslosen im Alter von 25 bis 58 Jahren, zufällig ausgewählt unter Beziehern der Grundsicherung für Arbeitslose, steuerfrei 560 € im Monat, und die Teilnahme war Pflicht.[13] Finnlands Ziehung war ein Forschungsdesign für ein zweijähriges Experiment; Irlands ist die Art, wie ein dauerhaftes Programm Plätze zuteilt, und man bewirbt sich, um hineinzukommen. {Unser Essay über Finnlands Experiment|/essays/finland-basic-income-experiment/} beschreibt, was es ergab."
+          ],
+          [
+            "h",
+            "Was das Pilotprojekt ergab"
+          ],
+          [
+            "p",
+            "Das Pilotprojekt zahlte ab 2022 dieselben 325 € pro Woche an 2.000 Künstler und Kulturschaffende, ausgelost aus 8.206 berechtigten Bewerbern; weitere 1.000 bildeten eine Kontrollgruppe und erhielten 650 € im Jahr.[10] Nach zwei Jahren verbrachten die Empfänger 11 Stunden pro Woche mehr mit künstlerischer Arbeit als die Kontrollgruppe und 3,5 Stunden weniger mit Arbeit in anderen Branchen, hatten mit einer um 14 Prozentpunkte höheren Wahrscheinlichkeit neue Werke fertiggestellt und gaben mit einer um 15 und 16 Punkte geringeren Wahrscheinlichkeit an, sich depressiv und ängstlich zu fühlen; ihre Lebenszufriedenheit lag bei 7 gegenüber 6.[11] Eine Kosten-Nutzen-Analyse bezifferte die Bruttokosten auf etwa 114 Mio. € und den Nutzen auf 1,39 € je 1 €.[12] {Unser Essay über Japans traditionelles Kunsthandwerk|/essays/traditional-crafts-basic-income/} stellt diese Ergebnisse ausführlicher dar."
+          ],
+          [
+            "h",
+            "Die Rechnung hinter der Verlosung"
+          ],
+          [
+            "p",
+            "Weil die Berechtigung entlang einer zufälligen Liste geprüft wird, liegt die Chance eines berechtigten Bewerbers auf einen Platz in dieser Runde bei 2.000 geteilt durch die Zahl der berechtigten Bewerber. Diese Zahl ist nicht veröffentlicht. Wären alle 10.030 Bewerber berechtigt, läge die Chance bei 19,9 %, sie ist also mindestens so hoch. Entspräche die Zahl der Berechtigten den 8.206 des Pilotprojekts, läge sie bei 24,4 %.[5][10]"
+          ],
+          [
+            "p",
+            "Die Tabelle zeigt, was das über drei Runden bedeuten würde, 2026–2029, 2030–2033 und 2034–2037. Das sind Veranschaulichungen, keine Prognosen. Sie unterstellen in jeder Runde dieselbe Zahl berechtigter Bewerber und 2.000 Plätze, voneinander unabhängige Ziehungen und eine Person, die sich in jeder Runde bewirbt, in der sie darf. Außerdem wenden sie die offizielle Regel an: Wer ausgewählt wurde, setzt die nächste Runde aus. Niemand kann also in allen drei Runden gezogen werden, und mehr als zwei Zuschläge, in der ersten und der dritten, sind nicht möglich."
+          ],
+          [
+            "t",
+            "Über drei Runden | 19,9 % pro Runde (alle 10.030 berechtigt) | 24,4 % pro Runde (8.206 berechtigt)\nNie gezogen | 51 % | 43 %\nMindestens einmal gezogen | 49 % | 57 %\nGenau einmal gezogen | 45 % | 51 %\nZweimal gezogen (erste und dritte Runde) | 4,0 % | 5,9 %\nIn allen drei Runden gezogen | 0 % mit der Regel (0,8 % ohne sie) | 0 % mit der Regel (1,4 % ohne sie)"
+          ],
+          [
+            "p",
+            "Unter diesen Annahmen bekäme etwa die Hälfte der berechtigten Bewerber in drei Runden nie einen Platz. Ohne die Regel würden einige wenige jedes Mal gewinnen; mit ihr niemand. Die Regel verteilt die Plätze breiter, ändert aber nichts an der Wahrscheinlichkeit, nie gezogen zu werden, die nur von der Chance in jeder Runde abhängt."
+          ],
+          [
+            "h",
+            "Was es kosten würde, alle Bewerber zu bezahlen"
+          ],
+          [
+            "p",
+            "Allen 10.030 Bewerbern 16.900 € im Jahr zu zahlen, würde etwa 169,5 Mio. € im Jahr kosten, das 4,9-Fache der 34,4 Mio. € im Haushalt 2027. Die 8.206 berechtigten Bewerber des Pilotprojekts zu bezahlen, würde etwa 138,7 Mio. € kosten, das 4,0-Fache. Keine der beiden Zahlen berücksichtigt Künstler, die sich nicht beworben haben, und keine ist ein Grundeinkommen für alle in Irland."
+          ],
+          [
+            "h",
+            "Was die Daten nicht sagen können"
+          ],
+          [
+            "p",
+            "Das Pilotprojekt verglich die Empfänger mit einer Kontrollgruppe, die 650 € im Jahr erhielt; es sagt wenig darüber, wie es nicht gezogenen Bewerbern ergeht oder wie die Hoffnung auf eine spätere Runde ihr Handeln prägt. Das Warten selbst hat niemand gemessen: Bewerber, die ihre Bewerbung im Mai abgeschickt hatten, wurden noch im November benachrichtigt, und manche hören bis 2027 nichts. Die Zahl der Berechtigten und damit die tatsächliche Chance ist unbekannt, und künftige Runden hängen von künftigen Haushalten ab. Und Ergebnisse von 2.000 ausgewählten Künstlern, die drei Jahre lang bezahlt werden, zeigen nicht, was ein Grundeinkommen für alle mit Arbeit, Preisen oder Steuern machen würde. Die Zahlen dieses Essays sind mit Quellen und Daten in {ireland-bia-2026.json|/ireland-bia-2026.json} zusammengestellt."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في نوفمبر 2026، وعلى منتدى إلكتروني يتبادل فيه المتقدمون إلى برنامج «الدخل الأساسي للفنون» في أيرلندا أخبارهم، كان الناس ينتظرون «الدفعة» التالية، أي المجموعات التي ترسل فيها الوزارة عروض القبول. وتداول المتقدمون رسالة الوزارة الإلكترونية بشأن الدفعة الثانية.[1] وكتب بعضهم أن الانتظار يضرّ بصحتهم النفسية. ووصف آخرون القرعة بأنها غير عادلة، قائلين إن بعض الفنانين سيُختارون مرة بعد مرة وآخرين لن يُختاروا أبدًا. لا يعتمد هذا المقال على المنتدى في أي معلومة. بل يعرض، استنادًا إلى إرشادات الوزارة وبياناتها الصحفية وإجاباتها في الدايل (مجلس النواب الأيرلندي)، ما هو البرنامج، وأين وصلت دورة 2026، وهل ينطبق عليه تعريف الدخل الأساسي، وماذا تعني القرعة لفرص متقدم واحد."
+          ],
+          [
+            "h",
+            "ما هو البرنامج"
+          ],
+          [
+            "p",
+            "يدفع البرنامج 325 يورو أسبوعيًا لمدة ثلاث سنوات إلى 2,000 فنان. ويُصرف شهريًا بمبلغ 1,413.21 يورو؛ ومبلغ 325 يورو أسبوعيًا يعادل 16,900 يورو سنويًا و50,700 يورو على مدى ثلاث سنوات.[2] وأعلنته الحكومة في 10 فبراير 2026 خلفًا دائمًا لتجربة سابقة، بمبلغ 18.27 مليون يورو من ميزانية 2026، وخصصت ميزانية 2027 مبلغ 34.4 مليون يورو لسنة كاملة.[3][6] ودفع 16,900 يورو سنويًا لـ2,000 شخص يكلّف 33.8 مليون يورو."
+          ],
+          [
+            "p",
+            "لا يحق التقدم إلا للفنانين المحترفين. ويجب أن يكون المتقدم في سن 18 أو أكبر، ومقيمًا في جمهورية أيرلندا وتمارَس مهنته فيها أساسًا، وأن يتقدم بصفته الفردية لا بصفته فرقة أو شركة. وعليه أن يرفع ثلاثة إثباتات على ممارسة مهنية، اثنان منها على الأقل صادران عن مؤسسات أو جهات منح أو هيئات تمثيلية أيرلندية: مثل منحة من مجلس الفنون، أو عقد، أو ذكر منشور لاسمه في عمل، أو عضوية مهنية في هيئة مدرجة، أو تلقّي إعانة الباحثين عن عمل الخاصة بالفنانين، أو إقرار ضريبي يُظهر دخلًا من الفنون. ولا يحق التقدم للفنانين الهواة أو الطامحين، ولا لأعضاء «أوسدانا» الذين يتلقون مخصصها «كنواس»، ولا للطلاب المتفرغين؛ وتُحجز حتى 100 مقعد للخريجين الجدد. وعلى كل متقدم أن يملأ استبيانًا يصل إلى 70 سؤالًا، وعلى المستفيدين أن يجيبوا عن استبيانات أخرى وأن يجتازوا تدقيقًا سنويًا لأهليتهم.[2][4] ولا يوجد اختبار للدخل والموارد.[4]"
+          ],
+          [
+            "p",
+            "تُحتسب الدفعة دخلًا. فعلى المستفيدين أن يسجّلوا لدى مصلحة الضرائب بصفتهم عاملين لحسابهم الخاص، وأن يحصلوا على شهادة براءة ذمة ضريبية، وأن يقدّموا إقرارًا ضريبيًا كل عام؛ وتخضع الدفعة للضريبة بوصفها دخلًا من العمل الحر ولاشتراكات الضمان الاجتماعي من الفئة ⁦Class S⁩. وتعاملها وزارة الحماية الاجتماعية في اختبارات الموارد على أنها دخل من العمل الحر، لذا فإن كونها تُنقص إعانة اجتماعية أم لا يتوقف على قواعد تلك الإعانة وظروف الشخص. فبعض الإعانات تستثني جزءًا من هذا الدخل وبعضها لا يستثني. ويجوز لمتلقي الإعانات الاجتماعية، ومنها إعانة الإعاقة، أن يتقدموا، لكن عليهم إبلاغ وزارة الحماية الاجتماعية إذا اختيروا.[2][15]"
+          ],
+          [
+            "p",
+            "وهناك أيضًا قاعدة بشأن تكرار الدفع. «لا يجوز للفنان أن يتلقى الدخل الأساسي للفنون إلا 3 سنوات من أي دورة مدتها 6 سنوات»: فمن اختيروا لدورة 2026–2029 لا يمكنهم التقدم لدورة 2030–2033، لكن يمكنهم التقدم لدورة 2034–2037. وتقول الوزارة إن الغرض إتاحة المشاركة لأكبر عدد ممكن من الفنانين. وكان بإمكان المستفيدين من التجربة، وأعضاء مجموعتها الضابطة، التقدم إلى الدورة الجديدة إذا استوفوا شروطها.[2][4]"
+          ],
+          [
+            "h",
+            "دورة 2026: من القرعة إلى الدفعات"
+          ],
+          [
+            "p",
+            "فُتح باب التقديم من 15 أبريل إلى 12 مايو 2026، ووصل 10,030 طلبًا. وتحت إشراف شركة التدقيق ⁦EY⁩، أُعطي كل طلب رقمًا عشوائيًا ورُتّبت القائمة وفقه. ثم تُفحص الأهلية من أعلى القائمة: فإذا كان طلب قريب من القمة غير مؤهل، أو رفض صاحبه العرض، يُفحص الطلب التالي في القائمة. ولم تنشر الوزارة عدد المؤهلين من بين المتقدمين البالغ عددهم 10,030، لأنها لا تفحصهم جميعًا.[5][8]"
+          ],
+          [
+            "p",
+            "بدأت الوزارة مراسلة 780 متقدمًا في 15 أكتوبر. وبحلول 29 أكتوبر قبِل 743 منهم. وفي 3 نوفمبر أجاب الوزير عن 32 سؤالًا في الدايل بشأن البرنامج في ردّ واحد، قائلًا إن بقية المستفيدين سيُبلَّغون «في الأسابيع المقبلة» وإن الدفعة الأولى ستُصرف قبل نهاية العام.[6] وبحلول 6 نوفمبر كان 442 متقدمًا قد أُبلغوا بأنهم غير مؤهلين.[7] وذكر بيان صحفي أن 450 آخرين سيُبلَّغون في 12 نوفمبر، وأن دفعة أخرى ستأتي قبل عيد الميلاد؛[1] وفي الدايل في 17 نوفمبر ذكر الوزير أن عدد من أُبلغوا في 12 نوفمبر بلغ 467، أي 1,247 في المجموع، مع 862 قبولًا وثمانية رفضات حتى 13 نوفمبر. ويبقى بذلك 753 مقعدًا من أصل 2,000 لم تُشغل بعد. وحتى 12 نوفمبر قُدّم 154 طعنًا، وأُيّد القرار الأصلي في 150 منها. ولا تتناول الطعون إلا مدى اتباع الإجراءات. أما المتقدمون الذين لن يصل الدور إلى موقعهم في القائمة فلن يُبلَّغوا إلا عندما تُحسم المقاعد الـ2,000 كلها، وهو ما يتوقعه الوزير في أوائل 2027. ويُصرف لمن تبدأ دفعاتهم في 2026 بأثر رجعي حتى سبتمبر 2026؛ ولمن تبدأ دفعاتهم في 2027 اعتبارًا من يناير 2027 أو بأثر رجعي حتى يناير 2027.[8]"
+          ],
+          [
+            "h",
+            "هل هو دخل أساسي؟"
+          ],
+          [
+            "p",
+            "تعرّف شبكة الدخل الأساسي العالمية (⁦BIEN⁩) الدخل الأساسي بأنه «دفعة نقدية دورية تُقدَّم دون شروط للجميع على أساس فردي، دون اختبار للموارد أو اشتراط للعمل»، وتذكر له خمس خصائص.[9] وتجيب الوزارة نفسها عن السؤال في أسئلتها الشائعة: «الدخل الأساسي للفنون ليس دخلًا أساسيًا شاملًا. إنه تدخّل قطاعي لدعم الفنانين المحترفين الممارسين».[4] وعند قياسه بكل خاصية:"
+          ],
+          [
+            "t",
+            "خاصية الشبكة | ما تعنيه الشبكة | الدخل الأساسي للفنون\nدوري | يُدفع على فترات منتظمة لا مرة واحدة | نعم: 1,413.21 يورو شهريًا لمدة ثلاث سنوات[2]\nنقدي | يقرر المستفيدون فيمَ ينفقونه | نعم: دفعة إلى حساب مصرفي دون قواعد لكيفية إنفاقها[2]\nفردي | يُدفع لكل شخص لا للأسر | نعم: للأفراد فقط؛ ولا يحق للمجموعات التقدم[4]\nشامل | يُدفع للجميع | لا: لا يتقدم إلا الفنانون المحترفون المؤهلون، ويُختار 2,000 منهم بالقرعة[2]\nغير مشروط | لا اختبار للموارد ولا اشتراط للعمل | جزئيًا: لا اختبار للموارد، لكن على المستفيدين الحفاظ على ممارسة مهنية والإجابة عن الاستبيانات واجتياز تدقيق سنوي[2][4]"
+          ],
+          [
+            "p",
+            "لا يستوفي البرنامج خاصية الشمول، ويستوفي خاصية عدم الاشتراط جزئيًا. وكثيرًا ما تسمى الدفعات المقدَّمة لمجموعة مختارة بشروط قليلة «الدخل المضمون»، كما في التجارب الأمريكية؛ فدراسة ⁦OpenResearch⁩، التي دفعت 1,000 دولار شهريًا لـ1,000 شخص، تصف نفسها بأنها تجربة لدخل مضمون.[14] وأقرب مقارنة أوروبية هي تجربة فنلندا: فمن 2017 إلى 2018 دفعت 560 يورو شهريًا معفاة من الضريبة لـ2,000 عاطل عن العمل تتراوح أعمارهم بين 25 و58 عامًا، اختيروا عشوائيًا من بين متلقي إعانة البطالة الأساسية، وكانت المشاركة إلزامية.[13] كانت قرعة فنلندا تصميمًا بحثيًا لتجربة مدتها عامان؛ أما قرعة أيرلندا فهي طريقة برنامج دائم في توزيع مقاعد محدودة، ويتقدم الناس للدخول فيه. ويتناول {مقالنا عن تجربة فنلندا|/essays/finland-basic-income-experiment/} ما توصلت إليه."
+          ],
+          [
+            "h",
+            "ما وجدته التجربة"
+          ],
+          [
+            "p",
+            "دفعت التجربة المبلغ نفسه، 325 يورو أسبوعيًا، بدءًا من 2022 إلى 2,000 فنان وعامل في مجال الفنون اختيروا من بين 8,206 متقدمين مؤهلين، مع 1,000 آخرين في مجموعة ضابطة تلقّوا 650 يورو سنويًا.[10] وبعد عامين، كان المستفيدون يقضون 11 ساعة أسبوعيًا أكثر من المجموعة الضابطة في الممارسة الإبداعية و3.5 ساعة أقل في العمل في قطاعات أخرى، وكانوا أرجح بـ14 نقطة مئوية لأن يكونوا قد أنجزوا أعمالًا جديدة، وأقل بـ15 و16 نقطة لأن يُبلغوا عن شعورهم بالاكتئاب والقلق؛ وبلغ رضاهم عن الحياة 7 مقابل 6.[11] وقدّر تحليل للتكاليف والمنافع الكلفة الإجمالية بنحو 114 مليون يورو، والمنفعة بـ1.39 يورو لكل يورو واحد.[12] ويعرض {مقالنا عن الحرف اليابانية التقليدية|/essays/traditional-crafts-basic-income/} هذه النتائج بمزيد من التفصيل."
+          ],
+          [
+            "h",
+            "حساب القرعة"
+          ],
+          [
+            "p",
+            "لأن الأهلية تُفحص على طول قائمة عشوائية، فإن فرصة المتقدم المؤهل في الحصول على مقعد في هذه الدورة هي 2,000 مقسومة على عدد المتقدمين المؤهلين. وهذا العدد غير منشور. فلو كان المتقدمون الـ10,030 جميعًا مؤهلين، لكانت الفرصة ⁦19.9%⁩، فهي إذن لا تقل عن ذلك. ولو كان عدد المؤهلين مثل عددهم في التجربة، أي 8,206، لكانت ⁦24.4%⁩.[5][10]"
+          ],
+          [
+            "p",
+            "يبيّن الجدول ما يعنيه ذلك على مدى ثلاث دورات: 2026–2029 و2030–2033 و2034–2037. وهذه أمثلة توضيحية لا توقعات. وهي تفترض العدد نفسه من المتقدمين المؤهلين و2,000 مقعد في كل دورة، وقرعات مستقلة بعضها عن بعض، وشخصًا يتقدم في كل دورة يحق له التقدم فيها. وتطبّق أيضًا القاعدة الرسمية: فالمستفيد لا يشارك في الدورة التالية. لذا لا يمكن أن يُختار أحد في الدورات الثلاث كلها، وأقصى ما يمكن لأي شخص الحصول عليه دورتان، الأولى والثالثة."
+          ],
+          [
+            "t",
+            "على مدى ثلاث دورات | ⁦19.9%⁩ في الدورة (جميع الـ10,030 مؤهلون) | ⁦24.4%⁩ في الدورة (8,206 مؤهلون)\nلم يُختر قط | ⁦51%⁩ | ⁦43%⁩\nاختير مرة واحدة على الأقل | ⁦49%⁩ | ⁦57%⁩\nاختير مرة واحدة بالضبط | ⁦45%⁩ | ⁦51%⁩\nاختير مرتين (الدورتان الأولى والثالثة) | ⁦4.0%⁩ | ⁦5.9%⁩\nاختير في الدورات الثلاث كلها | ⁦0%⁩ بموجب القاعدة (⁦0.8%⁩ من دونها) | ⁦0%⁩ بموجب القاعدة (⁦1.4%⁩ من دونها)"
+          ],
+          [
+            "p",
+            "في ظل هذه الافتراضات، لن يحصل نحو نصف المتقدمين المؤهلين على مقعد أبدًا في ثلاث دورات. ومن دون القاعدة، سيفوز قلة في كل مرة؛ ومعها لا يفوز أحد في كل مرة. فالقاعدة توزّع المقاعد على نطاق أوسع، لكنها لا تغيّر فرصة عدم الاختيار مطلقًا، التي لا تتوقف إلا على الاحتمال في كل دورة."
+          ],
+          [
+            "h",
+            "كلفة الدفع لكل المتقدمين"
+          ],
+          [
+            "p",
+            "دفع 16,900 يورو سنويًا لجميع المتقدمين البالغ عددهم 10,030 سيكلّف نحو 169.5 مليون يورو سنويًا، أي 4.9 أضعاف مبلغ 34.4 مليون يورو في ميزانية 2027. ودفعه للمتقدمين المؤهلين في التجربة البالغ عددهم 8,206 سيكلّف نحو 138.7 مليون يورو، أي 4.0 أضعاف. ولا يشمل أيٌّ من الرقمين الفنانين الذين لم يتقدموا، وليس أيٌّ منهما دخلًا أساسيًا لكل من في أيرلندا."
+          ],
+          [
+            "h",
+            "ما لا تستطيع البيانات إخبارنا به"
+          ],
+          [
+            "p",
+            "قاست التجربة المستفيدين مقارنةً بمجموعة ضابطة تلقّت 650 يورو سنويًا؛ ولا تقول الكثير عن أحوال المتقدمين الذين لا يُختارون، ولا عن أثر الأمل في دورة لاحقة على ما يفعلونه. ولم يقِس أحد الانتظار نفسه: فالمتقدمون الذين أرسلوا طلباتهم في مايو كانوا لا يزالون يتلقون الإبلاغات في نوفمبر، وبعضهم لن يسمع شيئًا حتى 2027. وعدد المؤهلين، ومن ثم الاحتمال الفعلي، غير معروف، والدورات المقبلة تتوقف على الميزانيات المقبلة. ونتائج 2,000 فنان مختارين تلقّوا الدفع ثلاث سنوات لا تبيّن ما الذي سيفعله دخل أساسي للجميع بالعمل أو الأسعار أو الضرائب. والأرقام الواردة في هذا المقال مجموعة، مع مصادرها وتواريخها، في {⁦ireland-bia-2026.json⁩|/ireland-bia-2026.json}."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "Department of Culture, Communications and Sport — “Second tranche of Basic Income for the Arts scheme recipients to be notified” (press release, 12 Nov 2026): 780 notified from 15 October, a further 450 on 12 November, another tranche before Christmas",
+          "url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/second-tranche-of-basic-income-for-the-arts-scheme-recipients-to-be-notified/"
+        },
+        {
+          "n": 2,
+          "label": "Department of Culture, Communications and Sport — Basic Income for the Arts Scheme 2026–2029: Guidelines for Application (1 Apr 2026, updated 15 May 2026): eligibility, proofs, €1,413.21 a month, tax and social welfare, “3 years out of any 6 year cycle”",
+          "url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/publications/basic-income-for-the-arts-scheme-2026-2029-guidelines-for-application"
+        },
+        {
+          "n": 3,
+          "label": "Department of Culture, Communications and Sport — “Minister O’Donovan announces the New Basic Income for the Arts scheme” (press release, 10 Feb 2026)",
+          "url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/minister-odonovan-announces-the-new-basic-income-for-the-arts-scheme"
+        },
+        {
+          "n": 4,
+          "label": "Department of Culture, Communications and Sport — Basic Income for the Arts Scheme 2026–2029: FAQ (10 Feb 2026, updated 15 May 2026): “not a Universal Basic Income”, no means test, individuals only, pilot recipients may apply",
+          "url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/publications/basic-income-for-the-arts-scheme-2026-2029-faq/"
+        },
+        {
+          "n": 5,
+          "label": "EY — Basic Income for the Arts Scheme: report on the selection process (27 Jul 2026, published Nov 2026; PDF): 10,030 applications, random numbers and a ranked list",
+          "url": "https://assets.gov.ie/static/documents/5b39e11d/FINAL_REPORT_-_EY_DCCS_BIA_Scheme_Selection_31_July_2026_NOT_PASSWORD_PROTECTED.pdf"
+        },
+        {
+          "n": 6,
+          "label": "Dáil Éireann — written answers, 3 Nov 2026, questions 943 and others (743 accepted as of 29 October; €34.4 million in Budget 2027) and 942, 959 and others (first tranche paid before year-end)",
+          "url": "https://www.oireachtas.ie/en/debates/question/2026-11-03/943/",
+          "url2": "https://www.oireachtas.ie/en/debates/question/2026-11-03/959/"
+        },
+        {
+          "n": 7,
+          "label": "Dáil Éireann — written answer, 11 Nov 2026, question 126: 442 applicants told they were ineligible as of 6 November",
+          "url": "https://www.oireachtas.ie/en/debates/question/2026-11-11/126/"
+        },
+        {
+          "n": 8,
+          "label": "Dáil Éireann — questions 82 and 83 (oral) and 152 (written), 17 Nov 2026: 467 notified on 12 November, 1,247 in all, 862 accepted and eight declined by 13 November; 154 appeals, 150 upheld; backdating; ranked list",
+          "url": "https://www.oireachtas.ie/en/debates/question/2026-11-17/82/",
+          "url2": "https://www.oireachtas.ie/en/debates/question/2026-11-17/152/"
+        },
+        {
+          "n": 9,
+          "label": "Basic Income Earth Network (BIEN) — About basic income: definition and five characteristics",
+          "url": "https://basicincome.org/about-basic-income/"
+        },
+        {
+          "n": 10,
+          "label": "Department of Tourism, Culture, Arts, Gaeltacht, Sport and Media — “Basic Income for the Arts (BIA) pilot scheme: first payments issue” (press release, 28 Oct 2022): 2,000 recipients drawn from 8,206 eligible applicants, 1,000 in a control group",
+          "url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/basic-income-for-the-arts-bia-pilot-scheme-first-payments-issue/"
+        },
+        {
+          "n": 11,
+          "label": "Department of Culture, Communications and Sport — Basic Income for the Arts: Impact Assessment (2 years) (Sep 2025; PDF)",
+          "url": "https://assets.gov.ie/static/documents/25207450/2-year_report.pdf"
+        },
+        {
+          "n": 12,
+          "label": "Alma Economics — Basic Income for the Arts pilot: cost-benefit analysis (29 Sep 2025; PDF): about €114 million gross cost, €1.39 per €1",
+          "url": "https://assets.gov.ie/static/documents/b87d2659/20250929_BIA_CBA_Final_Report.pdf"
+        },
+        {
+          "n": 13,
+          "label": "Kela — Finland’s Basic Income Experiment 2017–2018: results (2020; PDF): 2,000 unemployed people, €560 a month",
+          "url": "https://toolbox.finland.fi/wp-content/uploads/sites/2/2018/04/basic_income_experiment_2017-2018_results_2020.pdf"
+        },
+        {
+          "n": 14,
+          "label": "Sarah Miller, Elizabeth Rhodes, Alexander W. Bartik, David E. Broockman, Patrick K. Krause and Eva Vivalt — “Does Income Affect Health? Evidence from a Randomized Controlled Trial of a Guaranteed Income”, NBER Working Paper 32711 (July 2024, revised August 2026)",
+          "url": "https://www.nber.org/papers/w32711"
+        },
+        {
+          "n": 15,
+          "label": "Department of Social Protection — Interaction of the Basic Income for the Arts pilot scheme with DSP payments (13 Apr 2022, updated 15 Apr 2025)",
+          "url": "https://www.gov.ie/en/department-of-social-protection/publications/interaction-of-the-basic-income-for-the-arts-pilot-scheme-with-dsp-payments/"
+        }
+      ]
+    },
+    {
       "id": "cash-transfers-alcohol-gambling",
       "date": "2026-11-26",
       "related": [
@@ -20304,6 +21137,7 @@ module.exports = {
       "id": "lottery-winners-keep-working",
       "date": "2026-11-24",
       "related": [
+        "ireland-basic-income-arts-lottery",
         "cash-transfers-alcohol-gambling",
         "does-cash-make-people-stop-working",
         "openresearch-cash-study",
@@ -20909,6 +21743,7 @@ module.exports = {
       "id": "traditional-crafts-basic-income",
       "date": "2026-11-24",
       "related": [
+        "ireland-basic-income-arts-lottery",
         "takenaka-70000-yen-basic-income",
         "japan-basic-income-cost",
         "generative-ai-creative-work-basic-income",
@@ -29525,6 +30360,7 @@ module.exports = {
       "id": "does-cash-make-people-stop-working",
       "date": "2026-11-11",
       "related": [
+        "ireland-basic-income-arts-lottery",
         "cash-transfers-alcohol-gambling",
         "lottery-winners-keep-working",
         "traditional-crafts-basic-income",
@@ -34149,6 +34985,7 @@ module.exports = {
       "id": "generative-ai-creative-work-basic-income",
       "date": "2026-11-07",
       "related": [
+        "ireland-basic-income-arts-lottery",
         "traditional-crafts-basic-income",
         "generative-ai-jobs-basic-income",
         "openresearch-cash-study",
@@ -38743,6 +39580,7 @@ module.exports = {
       "id": "finland-basic-income-experiment",
       "date": "2026-11-06",
       "related": [
+        "ireland-basic-income-arts-lottery",
         "lottery-winners-keep-working",
         "does-cash-make-people-stop-working",
         "openresearch-cash-study",

@@ -1,0 +1,260 @@
+{
+  "name": "Free Lunch Lab: Ireland’s Basic Income for the Arts: the figures",
+  "description": "The figures behind the essay on whether Ireland’s arts scheme is a basic income: the rules, the 2026 round and its tranches, the pilot’s results, BIEN’s definition and Finland’s experiment, each with its source and date.",
+  "source": "https://neteru-nyukin.eltociear.workers.dev/essays/ireland-basic-income-arts-lottery/",
+  "repository": "https://github.com/eltociear/free-lunch-lab",
+  "license": "CC BY 4.0 (figures from the Irish government, Dáil and other sources named in each entry)",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "about": "Figures behind the data essay ireland-basic-income-arts-lottery (a basic income by lottery: is Ireland's arts scheme a basic income?). Each fact gives its value, the period or date it refers to, the source and the day it was checked. build.js checks that every language of the essay carries the digits listed under 'digits' (any one of the alternatives in a nested list), and recomputes the yearly and three-year amounts, the cost of the 2,000 places, the chance of a place in one round, the illustrative chances over three rounds under the official rule that recipients sit out the next round, the places still to fill and the cost of paying every applicant. The pilot's results (biaImpact, biaCba) are the same as in crafts-2026.json.",
+  "essay": "ireland-basic-income-arts-lottery",
+  "retrieved": "2026-11-26",
+  "facts": [
+    {
+      "id": "bien",
+      "value": "periodic; cash payment; individual; universal; unconditional",
+      "unit": "the five characteristics in BIEN's definition: 'A Basic Income is a periodic cash payment unconditionally delivered to all on an individual basis, without means-test or work requirement'",
+      "note": "Basic Income Earth Network, About basic income: periodic (paid at regular intervals, not as a one-off grant), cash payment (recipients decide what to spend it on), individual (not to households), universal (paid to all), unconditional (without means test and without a requirement to work or to demonstrate willingness to work)",
+      "source": "https://basicincome.org/about-basic-income/",
+      "asOf": "2026-11-26",
+      "digits": []
+    },
+    {
+      "id": "notUbi",
+      "value": "not a Universal Basic Income",
+      "unit": "the Department's own answer to 'Why is this not a Universal Basic Income?'",
+      "date": "2026-05-15",
+      "note": "'It is important to note that the Basic Income for the Arts is not a Universal Basic Income. This is a sectoral intervention to support practicing professional artists to focus on their creative practice' (Basic Income for the Arts Scheme 2026-2029 FAQ, published 10 February 2026, last updated 15 May 2026)",
+      "source": "https://www.gov.ie/en/department-of-culture-communications-and-sport/publications/basic-income-for-the-arts-scheme-2026-2029-faq/",
+      "asOf": "2026-11-26",
+      "digits": []
+    },
+    {
+      "id": "biaPilot",
+      "value": 325,
+      "eligible": 8206,
+      "places": 2000,
+      "unit": "EUR a week to 2,000 artists and arts workers in the pilot, picked at random from 8,206 eligible applicants; 1,000 eligible applicants in a control group paid EUR 650 a year",
+      "period": "2022-08-29/2026-02",
+      "note": "the same fact as biaPilot in crafts-2026.json: over 9,000 applications, payments from 29 August 2022 for three years, extended to February 2026, taxable (Department press releases of 28 October 2022 and 19 June 2025)",
+      "source": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/basic-income-for-the-arts-bia-pilot-scheme-first-payments-issue/",
+      "asOf": "2026-11-26",
+      "digits": [
+        "325",
+        "2000",
+        "8206",
+        "1000",
+        "650",
+        "2022"
+      ]
+    },
+    {
+      "id": "biaNew",
+      "value": 18270000,
+      "unit": "EUR from Budget 2026 for the successor scheme: EUR 325 a week for three years to 2,000 eligible artists, chosen by anonymised random sampling",
+      "date": "2026-02-10",
+      "note": "the same fact as biaNew in crafts-2026.json (Department, 10 February 2026); the FAQ: 'With an allocation of €18.27 million for 2026, the Department is in a position to fund 2,000 artists'",
+      "source": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/minister-odonovan-announces-the-new-basic-income-for-the-arts-scheme",
+      "asOf": "2026-11-26",
+      "digits": [
+        "1827",
+        "10"
+      ]
+    },
+    {
+      "id": "biaMonthly",
+      "value": 1413.21,
+      "unit": "EUR a month, the monthly payment of the EUR 325 a week; reckonable for income tax (Schedule D), liable for Class S PRSI; recipients must register as self-employed, be tax cleared and file a Form 11 each year from 2027",
+      "date": "2026-04-01",
+      "note": "Guidelines for Application, 'Notes on payment to BIA recipients' and 'Tax and social welfare treatment of the payments' (published 1 April 2026, last updated 15 May 2026); the FAQ: 'No, BIA applicants will not be tested for means'",
+      "source": "https://www.gov.ie/en/department-of-culture-communications-and-sport/publications/basic-income-for-the-arts-scheme-2026-2029-guidelines-for-application",
+      "asOf": "2026-11-26",
+      "digits": [
+        [
+          "141321",
+          "1413"
+        ]
+      ]
+    },
+    {
+      "id": "biaRules",
+      "value": 3,
+      "unit": "proofs of a professional artistic practice, at least two of them from Irish organisations, grant bodies or representative bodies; applicants aged 18 or over, based in the Republic of Ireland, individuals only; a separate stream of up to 100 places for recent graduates",
+      "date": "2026-04-01",
+      "note": "Guidelines for Application: not eligible are amateur or aspiring artists, Aosdána members receiving the Cnuas and full-time students; accepted proofs include Arts Council awards, contracts, published credits, membership of listed professional bodies, receipt of Artists' Jobseeker's Allowance and a Form 11 showing arts income; the survey of up to 70 questions is compulsory; eligibility is re-audited every year",
+      "source": "https://www.gov.ie/en/department-of-culture-communications-and-sport/publications/basic-income-for-the-arts-scheme-2026-2029-guidelines-for-application",
+      "asOf": "2026-11-26",
+      "digits": [
+        "18",
+        "100",
+        "70"
+      ]
+    },
+    {
+      "id": "biaRepeat",
+      "value": "3 years out of any 6",
+      "unit": "rule on repeat payments: those selected for the 2026-2029 round cannot apply for the 2030-2033 round but may apply for the 2034-2037 round",
+      "date": "2026-04-01",
+      "note": "'Those selected for the 2026 – 2029 BIA will not be eligible for the next round of funding, i.e. an artist can only receive BIA for 3 years out of any 6 year cycle ... This is to allow as many artists as possible to avail of the scheme' (Guidelines for Application, Selection and Payment); pilot recipients and pilot control group members may apply if they meet the new criteria (FAQ)",
+      "source": "https://www.gov.ie/en/department-of-culture-communications-and-sport/publications/basic-income-for-the-arts-scheme-2026-2029-guidelines-for-application",
+      "asOf": "2026-11-26",
+      "digits": [
+        "2029",
+        "2030",
+        "2033",
+        "2034",
+        "2037",
+        "6"
+      ]
+    },
+    {
+      "id": "biaWelfare",
+      "value": "income from self-employment",
+      "unit": "how the Department of Social Protection treats BIA payments in its means tests; the effect on a social welfare payment depends on that scheme's means test and the person's circumstances",
+      "date": "2026-04-01",
+      "note": "Guidelines for Application, 'Notes on Interaction with Social Protection Payments': where a scheme has a disregard for self-employment income it applies; not all means-tested schemes have one; artists on social welfare (including Disability Allowance) may apply and must tell the Department of Social Protection; the Department of Social Protection's page on the pilot says the separate Scheme for Professional Artists on Jobseeker's Allowance pays the Jobseeker's Allowance rate",
+      "source": "https://www.gov.ie/en/department-of-social-protection/publications/interaction-of-the-basic-income-for-the-arts-pilot-scheme-with-dsp-payments/",
+      "asOf": "2026-11-26",
+      "digits": []
+    },
+    {
+      "id": "biaApps",
+      "value": 10030,
+      "unit": "applications to the 2026-2029 scheme (10,035 records including 5 placeholders); every record was given a random number and ranked, and eligibility is checked from the top of the list",
+      "period": "2026-04-15/2026-05-12",
+      "note": "EY, selection report of 27 July 2026 (file dated 31 July, published 4 November 2026), paragraphs 1.5, 2.14 and 2.30: 'where an earlier application is deemed ineligible or an applicant declines the grant offer, the next record in the ranked list will be reviewed for eligibility'; the Minister: 'This process listed all applications from 1 to 10,000. Eligibility checks then started from the first 2,000' (written answer of 17 November 2026); no count of eligible applicants has been published",
+      "source": "https://assets.gov.ie/static/documents/5b39e11d/FINAL_REPORT_-_EY_DCCS_BIA_Scheme_Selection_31_July_2026_NOT_PASSWORD_PROTECTED.pdf",
+      "asOf": "2026-11-26",
+      "digits": [
+        "10030",
+        "15",
+        "12"
+      ]
+    },
+    {
+      "id": "biaNotified",
+      "value": [
+        780,
+        450
+      ],
+      "unit": "applicants notified from 15 October and on 12 November 2026, according to the Department's press release; 'A further tranche of successful applicants will be notified before Christmas'",
+      "date": "2026-11-12",
+      "note": "press release of 12 November 2026, 'Second tranche of Basic Income for the Arts scheme recipients to be notified'",
+      "source": "https://www.gov.ie/en/department-of-culture-communications-and-sport/press-releases/second-tranche-of-basic-income-for-the-arts-scheme-recipients-to-be-notified/",
+      "asOf": "2026-11-26",
+      "digits": [
+        "780",
+        "450"
+      ]
+    },
+    {
+      "id": "biaAccepted",
+      "value": 743,
+      "unit": "applicants who had accepted their offer as of 29 October 2026, of the 780 notified from 15 October",
+      "date": "2026-10-29",
+      "note": "written answer to Dáil questions 943 and others, taken together, 3 November 2026 (32 questions answered in one reply); the reply to question 959 and 13 others, taken together, adds 'Payments to the first tranche of successful applicants will take place before year-end'",
+      "source": "https://www.oireachtas.ie/en/debates/question/2026-11-03/943/",
+      "asOf": "2026-11-26",
+      "digits": [
+        "743",
+        "29",
+        "32"
+      ]
+    },
+    {
+      "id": "biaSecond",
+      "value": 467,
+      "unit": "applicants notified on 12 November 2026 according to the Minister's replies (1,247 in all); 862 had accepted and eight had declined as of 13 November",
+      "date": "2026-11-13",
+      "note": "Dáil, oral and written answers of 17 November 2026 (questions 82 and 83; 136; 494): 'to a further 467 applicants on 12 November ... That is a total of 1,247 applicants'; the press release of 12 November said 450; monthly payments of €1,413.21; those first paid in 2026 are backdated to September 2026, those first paid in 2027 from or backdated to January 2027; selection and appeals expected to conclude in early 2027",
+      "source": "https://www.oireachtas.ie/en/debates/question/2026-11-17/82/",
+      "asOf": "2026-11-26",
+      "digits": [
+        "467",
+        "1247",
+        "862",
+        "13"
+      ]
+    },
+    {
+      "id": "biaIneligible",
+      "value": 442,
+      "unit": "applicants told they were ineligible as of 6 November 2026; 154 appeals received as of 12 November, the original decision upheld in 150",
+      "date": "2026-11-12",
+      "note": "written answers of 11 November 2026 (question 126: 'As of Friday 6 November, the Department have communicated with 442 applicants deemed ineligible') and 17 November 2026 (question 152); appeals are on the process only, within 5 working days; applicants whose place in the list was not reached will be told once the 2,000 are final",
+      "source": "https://www.oireachtas.ie/en/debates/question/2026-11-11/126/",
+      "asOf": "2026-11-26",
+      "digits": [
+        "442",
+        "6",
+        "154",
+        "150"
+      ]
+    },
+    {
+      "id": "biaBudget2027",
+      "value": 34400000,
+      "unit": "EUR in Budget 2027, the full-year cost of the scheme for 2,000 artists",
+      "date": "2026-10-13",
+      "note": "the same figure as in biaApplicants of crafts-2026.json (Department, 13 October 2026); repeated in the written answers of 3 November 2026",
+      "source": "https://www.oireachtas.ie/en/debates/question/2026-11-03/943/",
+      "asOf": "2026-11-26",
+      "digits": [
+        [
+          "344",
+          "3440"
+        ]
+      ]
+    },
+    {
+      "id": "biaImpact",
+      "value": 11,
+      "unit": "hours a week more on creative practice than the control group",
+      "date": "2025-09",
+      "note": "the same fact as biaImpact in crafts-2026.json: Impact Assessment (2 years), data October 2022 to October 2024: 14 percentage points more likely to have completed new works; 3.5 weekly hours less working in another sector; 15 points less likely to have felt downhearted or depressed and 16 points less likely to have experienced anxiety; life satisfaction 7 against 6",
+      "source": "https://assets.gov.ie/static/documents/25207450/2-year_report.pdf",
+      "asOf": "2026-11-26",
+      "digits": [
+        "11",
+        "14",
+        "35",
+        "15",
+        "16",
+        "7",
+        "6"
+      ]
+    },
+    {
+      "id": "biaCba",
+      "value": 1.39,
+      "unit": "EUR of benefit to society per EUR of public money",
+      "date": "2025-09-29",
+      "note": "the same fact as biaCba in crafts-2026.json: Alma Economics cost-benefit analysis, total gross pilot costs about €114 million between 2021 and 2025 (2025 prices)",
+      "source": "https://assets.gov.ie/static/documents/b87d2659/20250929_BIA_CBA_Final_Report.pdf",
+      "asOf": "2026-11-26",
+      "digits": [
+        "139",
+        [
+          "114",
+          "1400"
+        ]
+      ]
+    },
+    {
+      "id": "finland",
+      "value": 560,
+      "unit": "EUR a month, tax-free, to 2,000 unemployed people aged 25 to 58 chosen at random from those receiving basic unemployment benefits from Kela; taking part was compulsory",
+      "period": "2017-01/2018-12",
+      "note": "Kela, Finland's Basic Income Experiment 2017-2018: results (2020); the payment was not reduced by work or other income and there was no duty to look for a job",
+      "source": "https://toolbox.finland.fi/wp-content/uploads/sites/2/2018/04/basic_income_experiment_2017-2018_results_2020.pdf",
+      "asOf": "2026-11-26",
+      "digits": [
+        "560",
+        "2000",
+        "25",
+        "58",
+        "2017",
+        "2018"
+      ]
+    }
+  ]
+}
