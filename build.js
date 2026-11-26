@@ -110,6 +110,7 @@ const ESSAY_DATA = {
   'basic-income-inflation': { calc: ['jp', 'us', 'ke'], pilots: true },
   'traditional-crafts-basic-income': { calc: ['jp', 'ie'] },
   'lottery-winners-keep-working': { calc: ['us', 'se', 'nl', 'jp'] },
+  'cash-transfers-alcohol-gambling': { calc: ['us', 'ke', 'ca', 'jp'], pilots: true },
 };
 for (const id of Object.keys(ESSAY_DATA)) if (!ESSAYS.some(x => x.id === id)) throw new Error(`ESSAY_DATA: unknown essay ${id}`);
 const relatedLinks = (lang, list) => list.length ? `<p class="related">${esc(T[lang].essayRelated)}: ${list.map(x => `<a href="${essayPath(lang, x)}">${esc(x.title[lang] || x.title.en)}</a>`).join(' · ')}</p>` : '';
@@ -452,6 +453,16 @@ const lotteryDrift = dataEssayDrift('lottery-2026.json', F => {
   return { jp70Year: [y70, y70 / 1e4], jp70Forty: [(y70 * 40 / 1e6).toFixed(1), y70 * 40 / 1e4], us1000Year: 1000 * 12,
     jpCost70: (JPN.population.value * y70 / 1e12).toFixed(1), usCost1000: (US26.population.value * 1000 * 12 / 1e12).toFixed(2),
     seKronor: Math.round(1e6 * F.seEarn.value / 100) };
+});
+// データエッセイ cash-transfers-alcohol-gambling: data/temptation-2026.json の digits に加えて、ストックトン（月500ドル×24か月）と OpenResearch（月1,000ドル×36か月）の合計、
+// OpenResearch の給付額に対する酒・たばこ・大麻・ギャンブルの増加の割合、ケニアの支出の伸び（%）、SEED のカードで追えた割合、
+// 月7万円の1年分と全員に月7万円（日本）・月1,000ドル（アメリカ）の費用（data/japan-2026.json・data/us-2026.json）を計算し直して確かめる
+const temptationDrift = dataEssayDrift('temptation-2026.json', F => {
+  const lv = id => JPN.levels.find(x => x.id === id).monthly, US26 = require('./data/us-2026.json');
+  const y70 = lv('takenaka') * 12;
+  return { seedTotal: F.seed.value * 24, orTotal: F.orDesign.value * 36, orViceShare: [(F.orVice.value / F.orDesign.value * 100).toFixed(1), Math.round(F.orVice.value / F.orDesign.value * 100)],
+    hsRise: Math.round(F.hsSpend.value / F.hsSpend.control * 100), seedCard: 100 - F.seedShares.offCard,
+    jp70Year: [y70, y70 / 1e4], jpCost70: (JPN.population.value * y70 / 1e12).toFixed(1), usCost1000: (US26.population.value * 1000 * 12 / 1e12).toFixed(2) };
 });
 const mapRegionName = (lang, id) => { const c = CALC_WORLD.find(x => x.id === id); if (c) return c.name[lang]; try { return new Intl.DisplayNames([LANG_TAG[lang]], { type: 'region' }).of(id.toUpperCase()); } catch { return id.toUpperCase(); } };
 const mapYear = (lang, r) => (r.base ? (r.base.year ? String(r.base.year) : T[lang].mapBudgetYear) : '');
@@ -3792,6 +3803,7 @@ if (aijDrift) console.warn(aijDrift);
 if (infDrift) console.warn(infDrift);
 if (craftsDrift) console.warn(craftsDrift);
 if (lotteryDrift) console.warn(lotteryDrift);
+if (temptationDrift) console.warn(temptationDrift);
 { const w = wrpDrift(); if (w) console.warn(w); else console.log(`worker relief payment: the page carries every figure of data/worker-relief-2026.json in ${LANGS.length} languages`); }
 { const w = jbDrift(); if (w) console.warn(w); else console.log(`japan benefits: the page carries every figure of data/japan-benefits-2026.json in ${LANGS.length} languages`); }
 if (workDrift) console.warn(workDrift);
@@ -4263,6 +4275,7 @@ const ESSAY_FILES = {
   'inflation-2026.json': { essay: 'basic-income-inflation', license: 'CC BY 4.0 (figures from the papers and official sources named in each entry)' },
   'crafts-2026.json': { essay: 'traditional-crafts-basic-income', license: 'CC BY 4.0 (figures from the official sources named in each entry)' },
   'lottery-2026.json': { essay: 'lottery-winners-keep-working', license: 'CC BY 4.0 (figures from the papers and surveys named in each entry)' },
+  'temptation-2026.json': { essay: 'cash-transfers-alcohol-gambling', license: 'CC BY 4.0 (figures from the papers, reports and surveys named in each entry)' },
   'japan-benefits-2026.json': { page: () => jbAbs(DEFAULT_LANG), license: 'CC BY 4.0 (figures from the government, Diet, municipal and news sources named in each entry)' },
   'worker-relief-2026.json': { page: () => wrpAbs(DEFAULT_LANG), license: 'CC BY 4.0 (figures from the bill, the government documents, the Diet record and the news reports named in each entry)' },
 };
@@ -4290,6 +4303,7 @@ const CSV_ROWS = {
   'inflation-2026.csv': PUB['inflation-2026.json'].facts.map(({ digits, value, ...f }) => ({ figure: f.id, value: Array.isArray(value) ? value.join(';') : value, unit: f.unit ?? null, date: f.date ?? null, year: f.year ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, asOf: f.asOf })),
   'crafts-2026.csv': PUB['crafts-2026.json'].facts.map(({ digits, value, ...f }) => ({ figure: f.id, value: Array.isArray(value) ? value.join(';') : value, unit: f.unit ?? null, date: f.date ?? null, year: f.year ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, asOf: f.asOf })),
   'lottery-2026.csv': PUB['lottery-2026.json'].facts.map(({ digits, value, ...f }) => ({ figure: f.id, value: Array.isArray(value) ? value.join(';') : value, unit: f.unit ?? null, date: f.date ?? null, year: f.year ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, asOf: f.asOf })),
+  'temptation-2026.csv': PUB['temptation-2026.json'].facts.map(({ digits, value, ...f }) => ({ figure: f.id, value: Array.isArray(value) ? value.join(';') : value, unit: f.unit ?? null, date: f.date ?? null, year: f.year ?? null, period: f.period ?? null, note: f.note ?? null, source: f.source, asOf: f.asOf })),
 };
 const CSV = {};
 for (const [file, rows] of Object.entries(CSV_ROWS)) {
@@ -4301,7 +4315,7 @@ for (const [file, obj] of Object.entries(PUB)) fs.writeFileSync(path.join(OUT, f
 // データセットごとの行・項目（CSV があれば CSV の列、なければ JSON の1行目のキー）
 const DS_ROWS = {
   countries: countriesJson.countries, 'us-pilots': usPilotsJson.pilots, news: biNewsJson.weeks.flatMap(w => w.items), services: servicesJson.services, graveyard: graveJson.graveyard,
-  'open-source': ossJson.projects, 'open-data': dataJson.datasets, 'billionaires-2026': CSV_ROWS['billionaires-2026.csv'], 'ai-profits-2026': CSV_ROWS['ai-profits-2026.csv'], 'japan-2026': CSV_ROWS['japan-2026.csv'], 'germany-2026': CSV_ROWS['germany-2026.csv'], 'us-2026': CSV_ROWS['us-2026.csv'], 'inflation-2026': CSV_ROWS['inflation-2026.csv'], 'crafts-2026': CSV_ROWS['crafts-2026.csv'], 'lottery-2026': CSV_ROWS['lottery-2026.csv'], 'worker-relief-2026': CSV_ROWS['worker-relief-2026.csv'], 'japan-benefits-2026': CSV_ROWS['japan-benefits-2026.csv'],
+  'open-source': ossJson.projects, 'open-data': dataJson.datasets, 'billionaires-2026': CSV_ROWS['billionaires-2026.csv'], 'ai-profits-2026': CSV_ROWS['ai-profits-2026.csv'], 'japan-2026': CSV_ROWS['japan-2026.csv'], 'germany-2026': CSV_ROWS['germany-2026.csv'], 'us-2026': CSV_ROWS['us-2026.csv'], 'inflation-2026': CSV_ROWS['inflation-2026.csv'], 'crafts-2026': CSV_ROWS['crafts-2026.csv'], 'lottery-2026': CSV_ROWS['lottery-2026.csv'], 'temptation-2026': CSV_ROWS['temptation-2026.csv'], 'worker-relief-2026': CSV_ROWS['worker-relief-2026.csv'], 'japan-benefits-2026': CSV_ROWS['japan-benefits-2026.csv'],
 };
 {
   const seen = new Set();

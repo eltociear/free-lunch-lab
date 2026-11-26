@@ -84,12 +84,20 @@
   "2026-11-01"
  ],
  "open-source.json": [
-  "06c8b2bc37d2fbfa",
-  "2026-11-25"
+  "ee3d441c737142d7",
+  "2026-11-26"
  ],
  "services.json": [
   "f0602fcaf72f3780",
   "2026-11-10"
+ ],
+ "temptation-2026.csv": [
+  "2c3e2eca3737f18f",
+  "2026-11-26"
+ ],
+ "temptation-2026.json": [
+  "be17c355b4392d9b",
+  "2026-11-26"
  ],
  "us-2026.csv": [
   "7f0e3ae737bdd130",

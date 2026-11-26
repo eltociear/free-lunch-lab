@@ -2938,6 +2938,16 @@ module.exports = {
   "NEWS": [
     {
       "date": "2026-11-26",
+      "en": "Published the data essay “Is cash aid spent on alcohol and gambling? What the studies found”",
+      "ja": "データエッセイ『給付金は酒やギャンブルに消える？ 現金給付の研究で見る「お金を配ると何に使われるか」』を公開",
+      "zh": "发布数据随笔《发钱会被花在酒和赌博上吗？现金转移研究的发现》",
+      "hi": "डेटा निबंध “क्या नकद सहायता शराब और जुए में उड़ जाती है? अध्ययनों में क्या मिला” प्रकाशित",
+      "es": "Publicado el ensayo de datos «¿Se gasta la ayuda en efectivo en alcohol y juego? Qué hallaron los estudios»",
+      "de": "Datenessay „Geht Bargeldhilfe für Alkohol und Glücksspiel drauf? Was Studien zeigen“ veröffentlicht",
+      "ar": "نشرنا مقال البيانات «هل تذهب النقود إلى الكحول والقمار؟ ماذا وجدت الدراسات»"
+    },
+    {
+      "date": "2026-11-26",
       "en": "Updated the Worker Burden Relief Payment page and the roundup of national benefits: the public hearings of 20 and 24 November, the opposition’s decision on 24 November not to take part in deliberations on the bill for now, a reported plan of up to about ¥270,000 a year from fiscal 2029, and the fuel subsidy’s base prices for December",
       "ja": "就業者負担軽減支援金のページと国の給付金の一覧を更新（11月20日・24日の公聴会、24日に野党が法案の審議に当面応じない方針で一致、2029年度以降の最大年27万円程度の案の報道、ガソリン補助の12月の基準価格）",
       "zh": "更新就业者负担减轻支援金页面和国家给付金一览：加入11月20日和24日的公听会、24日在野党决定暂不参加该法案审议、2029财年起每年最多约27万日元方案的报道，以及燃料补贴12月的基准价格",
@@ -11539,6 +11549,33 @@ module.exports = {
       }
     },
     {
+      "id": "temptation-2026",
+      "files": [
+        "temptation-2026.json",
+        "temptation-2026.csv"
+      ],
+      "page": "essays/cash-transfers-alcohol-gambling/",
+      "lic": "odLicSrc",
+      "name": {
+        "en": "Cash transfers and alcohol, tobacco and gambling: the figures",
+        "ja": "現金給付と酒・たばこ・ギャンブルの数字",
+        "zh": "现金转移与酒、烟草和赌博：相关数字",
+        "hi": "नकद ट्रांसफ़र और शराब, तंबाकू व जुआ: आंकड़े",
+        "es": "Transferencias en efectivo y alcohol, tabaco y juego: las cifras",
+        "de": "Geldtransfers und Alkohol, Tabak und Glücksspiel: die Zahlen",
+        "ar": "التحويلات النقدية والكحول والتبغ والقمار: الأرقام"
+      },
+      "desc": {
+        "en": "The figures behind the essay on whether cash aid is spent on alcohol and gambling: a review of 19 studies, trials in Kenya, the United States and Canada, and a survey on Japan’s 2020 payment, each with its source and date.",
+        "ja": "給付金が酒やギャンブルに消えるかのエッセイに使った数字。19の研究のレビュー、ケニア、アメリカ、カナダの実験、日本の2020年の給付金についての調査。それぞれ出典と日付つき。",
+        "zh": "现金补助是否被花在酒和赌博上一文所用的数字：19项研究的综述，肯尼亚、美国和加拿大的实验，以及关于日本2020年给付金的调查，每项均附来源和日期。",
+        "hi": "नकद सहायता शराब और जुए पर ख़र्च होती है या नहीं, इस निबंध के पीछे के आंकड़े: 19 अध्ययनों की समीक्षा, केन्या, अमेरिका और कनाडा के प्रयोग, और जापान के 2020 के भुगतान पर सर्वे, हर एक स्रोत और तारीख़ के साथ।",
+        "es": "Las cifras del ensayo sobre si la ayuda en efectivo se gasta en alcohol y juego: una revisión de 19 estudios, ensayos en Kenia, Estados Unidos y Canadá, y una encuesta sobre el pago de Japón de 2020, cada una con su fuente y fecha.",
+        "de": "Die Zahlen hinter dem Essay, ob Bargeldhilfe für Alkohol und Glücksspiel ausgegeben wird: eine Übersicht über 19 Studien, Versuche in Kenia, den USA und Kanada und eine Umfrage zu Japans Zahlung von 2020, jeweils mit Quelle und Datum.",
+        "ar": "الأرقام التي يقوم عليها مقال إنفاق المساعدات النقدية على الكحول والقمار: مراجعة لـ19 دراسة، وتجارب في كينيا والولايات المتحدة وكندا، واستطلاع عن دفعة اليابان عام 2020، لكل منها مصدره وتاريخه."
+      }
+    },
+    {
       "id": "worker-relief-2026",
       "files": [
         "worker-relief-2026.json",
@@ -19607,9 +19644,667 @@ module.exports = {
   ],
   "ESSAYS": [
     {
+      "id": "cash-transfers-alcohol-gambling",
+      "date": "2026-11-26",
+      "related": [
+        "does-cash-make-people-stop-working",
+        "openresearch-cash-study",
+        "lottery-winners-keep-working",
+        "japan-special-cash-payment",
+        "basic-income-inflation",
+        "ai-unemployment-basic-income"
+      ],
+      "title": {
+        "ja": "給付金は酒やギャンブルに消える？ 現金給付の研究で見る「お金を配ると何に使われるか」",
+        "en": "Is cash aid spent on alcohol and gambling? What the studies found",
+        "zh": "发钱会被花在酒和赌博上吗？现金转移研究的发现",
+        "hi": "क्या नकद सहायता शराब और जुए में उड़ जाती है? अध्ययनों में क्या मिला",
+        "es": "¿Se gasta la ayuda en efectivo en alcohol y juego? Qué hallaron los estudios",
+        "de": "Geht Bargeldhilfe für Alkohol und Glücksspiel drauf? Was Studien zeigen",
+        "ar": "هل تذهب النقود إلى الكحول والقمار؟ ماذا وجدت الدراسات"
+      },
+      "desc": {
+        "ja": "19の研究のレビューと、ケニア、アメリカ、カナダの実験を見ると、増えたお金の多くは食費、家賃、交通費に使われ、酒とたばこはほとんど、あるいはまったく増えていませんでした。",
+        "en": "Kenya, the US, Canada and a review of 19 studies: extra cash went mostly on food, rent and transport; alcohol and tobacco barely rose.",
+        "zh": "19项研究的综述和肯尼亚、美国、加拿大的实验：多出来的钱主要用于食物、房租和交通，酒和烟草几乎没有增加。",
+        "hi": "19 अध्ययनों की समीक्षा और केन्या, अमेरिका व कनाडा के प्रयोग: अतिरिक्त पैसा ज़्यादातर खाने, किराए और आने-जाने पर गया; शराब और तंबाकू पर ख़र्च लगभग नहीं बढ़ा।",
+        "es": "Una revisión de 19 estudios y ensayos en Kenia, EE. UU. y Canadá: el dinero extra fue sobre todo a comida, alquiler y transporte; alcohol y tabaco apenas subieron.",
+        "de": "Eine Übersicht über 19 Studien und Versuche in Kenia, den USA und Kanada: Das Geld floss vor allem in Essen, Miete und Verkehr; Alkohol und Tabak stiegen kaum.",
+        "ar": "19 دراسة وتجارب في ثلاث دول: ذهب المال إلى الطعام والإيجار والمواصلات، وبالكاد زاد الكحول والتبغ."
+      },
+      "blocks": {
+        "ja": [
+          [
+            "p",
+            "2026年11月21日、ウォール・ストリート・ジャーナルは、AnthropicのCEOダリオ・アモデイ氏と社長ダニエラ・アモデイ氏の人物記事を掲載しました。ダリオ氏はOpenAIにいたころ、AIで仕事を失う人々による政治的な混乱を、没入型のビデオゲームが和らげるかもしれないと示唆していた、と報じています。[1] この報道を広めたXの投稿は約560万回表示され、ベーシックインカムを配ればドラッグやOnlyFans、ゲームに使われるだけだという揶揄が続きました。日本語でも、給付金の話になると「どうせ酒やギャンブルに消える」という声がよく見られます。配られたお金が何に使われるかは、これまで何度も測られてきました。このエッセイでは、その研究を並べます。投稿の内容を確かめるものではありません。"
+          ],
+          [
+            "h",
+            "19の研究のレビュー：酒とたばこは増えなかった"
+          ],
+          [
+            "p",
+            "世界銀行のデビッド・エバンスとアンナ・ポポワは、ラテンアメリカ、アフリカ、アジアで1997年から2014年はじめまでに出た、現金給付が酒とたばこへの支出にどう影響したかを数字で示す19の研究を調べました。経済学では、これらを「誘惑財」と呼びます。給付を酒やたばこに使ったかを受給者にたずねた11の研究も見ています。19の研究にある44の推計のうち、マイナスで有意が12、マイナスで有意でないものが24、プラスで有意でないものが6、プラスで有意が2で、82%がマイナスでした。プラスで有意だった2つは効果が弱く、実験によらない研究のもので、同じ研究の中でも手法によって結果が変わっていました。著者は、現金給付が酒やたばこに使われるという心配には根拠がないと結論づけています。[2]"
+          ],
+          [
+            "h",
+            "ケニア：平均709ドル、酒とたばこはわずかに減少"
+          ],
+          [
+            "p",
+            "慈善団体GiveDirectlyは2011年から2013年にかけて、ケニア西部の村で無作為に選んだ貧しい世帯に、使い道を問わない現金をモバイルマネーで送りました。ヨハネス・ハウスホーファーとジェレミー・シャピロは、受け取った503世帯を調べています。給付額は購買力平価で平均709ドル、1人あたりの支出のほぼ2年分です。給付が始まって約9か月後、毎月の支出は、同じ村で受け取らなかった世帯（平均158ドル）より36ドル、23%多く、いちばん増えたのは食費の19ドルでした。酒への支出（比較の世帯で月6.38ドル）は0.93ドル減、たばこ（1.52ドル）は0.15ドル減で、どちらも有意ではありません。受給世帯の資産は、比較の世帯の495ドルに対して302ドル増えました。[3]"
+          ],
+          [
+            "p",
+            "著者は限界も示しています。この研究は規模が小さく、ある程度の増加を否定できません。酒の場合、見つけられる最小の増加は約44%でした。飲酒や喫煙を直接答えなくてよい「リスト法」で聞いても、効果は見られませんでした。[3]"
+          ],
+          [
+            "h",
+            "アメリカ：月1,000ドルを3年間"
+          ],
+          [
+            "p",
+            "OpenResearchの無条件現金給付の研究では、イリノイ州とテキサス州の所得の低い21〜40歳の1,000人に、2020年11月から2023年10月までの3年間、毎月1,000ドルを配りました。比較のための2,000人には月50ドルです。アレクサンダー・バーティクらによると、受給者の支出は、比較の人たち（平均で月3,979ドル）より月に約310ドル多くなりました。大きく増えたのは、もともと大きな費目で、食費が67ドル、家賃が52ドル、車のローンと保険が30ドルです。家族への贈与や貸し付け、寄付は22ドル、約26%増え、割合ではいちばん大きな伸びでした。酒、たばこ、大麻、ギャンブルを合わせた支出は、比較の人たちの138ドルから月に約13ドル増えました。給付額の1%強で、有意なのは10%水準だけです。娯楽は月5ドル（比較の人たちは51ドル）、旅行は7ドル（80ドル）増えました。[4]"
+          ],
+          [
+            "p",
+            "同じ研究の健康についての論文で、サラ・ミラーらは、給付で酒や薬物の使用が変わったという証拠はあまり見つからなかったとしています。比較の人たちは直近30日のうち27.24日お酒を飲まず、受給者はそれより0.32日少なくなりました。受給者は、飲酒や二日酔いで用事に差し支えたと答える割合が低くなっています。どちらも有意なのは10%水準だけで、多くの項目を検定したことを補正すると有意ではなくなります。直近30日に飲んだ杯数（比較の人たちは9.56杯）は0.98杯増えましたが、有意ではありません。著者は、心配されていたような薬物や酒の乱用という害は見られなかったと書いています。[5]"
+          ],
+          [
+            "h",
+            "ストックトン：カードの支払いのうち1%未満"
+          ],
+          [
+            "p",
+            "カリフォルニア州ストックトンの経済的エンパワーメント実証（SEED）は、2019年2月から24か月間、住民125人にプリペイドのデビットカードで月500ドルを配りました。2020年2月までの1年目について、研究者はカードの支払いを店の種類で分けています。平均で36.92%が食料品、22.70%が量販店など（ウォルマートやターゲットのような店での食料品を含むとみられる）、11.34%が光熱費、8.77%が車の維持費でした。たばことお酒は、追跡できた支払いの1%未満です。ただし、お金の約40%は銀行口座に移されるか現金で引き出されていて、その使い道はこの数字に入っていません。[6]"
+          ],
+          [
+            "h",
+            "バンクーバー：家を失ったばかりの人に7,500カナダドルを1回"
+          ],
+          [
+            "p",
+            "バンクーバーでは、ブリティッシュコロンビア大学の研究者と慈善団体Foundations for Social Changeが、ホームレスになって2年未満の50人に7,500カナダドルを1回だけ渡しました。2016年のブリティッシュコロンビア州の生活保護の1年分にあたる額です。65人は比較のグループでした。参加できたのは薬物や酒の使用、精神的な症状が重くない人で、審査を受けた人のうち参加したのは31%です。1年間で、受け取った人は住まいのない日が99日少なく、貯蓄が1,160カナダドル多く、月の支出が平均429カナダドル多くなりました。増えたのは主に家具などの耐久財、家賃、食費、交通費です。酒、薬物、たばこへの支出は、比較のグループと違いがありませんでした。支出は本人の申告で、著者は分析を探索的なものとしています。シェルターに泊まる夜が減ったことで、給付の費用を差し引いても、社会は受給者1人あたり年に約777カナダドルを節約しました。[7]"
+          ],
+          [
+            "h",
+            "日本の10万円：何に使ったと答えたか"
+          ],
+          [
+            "p",
+            "日本にはこうした実験はありませんが、2020年の特別定額給付金10万円を何に使ったかをたずねた調査はあります。ニッセイ基礎研究所が2020年6月に20〜69歳の2,062人に聞いたところ（複数回答）、「生活費の補填」が53.7%、「貯蓄」が26.1%、「国内旅行」が10.1%で、全額を貯蓄に回した人は9.7%でした。たずねたのは使い道で、金額ではありません。[8] 銀行口座や家計のデータで、給付金のうちどれだけが使われたかは、{別のエッセイ|/essays/japan-special-cash-payment/}で詳しく見ています。"
+          ],
+          [
+            "t",
+            "研究 | 場所と金額 | 酒、たばこなどへの影響\nエバンス、ポポワ（2017年） | ラテンアメリカ、アフリカ、アジアの19の研究 | 44の推計の82%がマイナス、プラスで有意は2つで効果は弱い[2]\nハウスホーファー、シャピロ（2016年） | ケニア、購買力平価で平均709ドル、503世帯 | 酒は月0.93ドル減、たばこは0.15ドル減、有意ではない[3]\nバーティクら、ミラーら（2024年、2026年改訂） | イリノイ州とテキサス州、月1,000ドルを3年間、1,000人 | 酒、たばこ、大麻、ギャンブルで月13ドル増、給付額の約1%、飲酒はほとんど変わらず[4][5]\nSEED（2021年） | ストックトン、月500ドルを24か月、125人 | 追跡できたカードの支払いのうち、たばことお酒は1%未満[6]\nドワイヤーら（2023年） | バンクーバー、7,500カナダドルを1回、50人 | 酒、薬物、たばこへの支出に違いなし[7]"
+          ],
+          [
+            "h",
+            "これらの給付とベーシックインカムの違い"
+          ],
+          [
+            "p",
+            "どの給付も、一部の人に、期間を限って配られました。ケニアでは1回、または9か月に分けての支給です。ストックトンの月500ドルを24か月は合計12,000ドル、OpenResearchの月1,000ドルを3年間は36,000ドルで、受給者はいつ終わるかを知っていました。ベーシックインカムは配られ続けます。月7万円は年84万円で、日本に住む全員に配ると年約103.2兆円、アメリカで全員に月1,000ドルなら年約4.10兆ドルかかります。[9] 対象も選ばれていました。ケニアの村の貧しい世帯、自分から申し込んだ所得の低い21〜40歳、バンクーバーでは依存症の重くないホームレスの人だけです。ベーシックインカムは、依存症を抱える人にも、お金に余裕のある人にも配られます。全員に配ると物価や賃金、税がどう変わるかは別の問いで、{ベーシックインカムでインフレは起きるか|/essays/basic-income-inflation/}で見ています。働き方への影響は{お金を配ると人は働かなくなるのか|/essays/does-cash-make-people-stop-working/}で扱っています。"
+          ],
+          [
+            "h",
+            "データにもわからないこと"
+          ],
+          [
+            "p",
+            "これらの支出の数字の多くは、本人が答えたものです。受給者は飲酒を少なめに答えるかもしれません。ケニアのリスト法やストックトンのカードのデータも同じ向きを示していますが、ストックトンのカードで追えるのはお金の約60%だけです。期間も短く、ケニアは9か月、バンクーバーは1年、アメリカは3年です。そして、これは平均です。平均がほとんど動かなくても、酒やギャンブルに大きく使う少数の人と、使う額を減らした多くの人が混ざっているかもしれません。ケニアの研究は、ある程度の増加を否定できるほど大きくありませんでした。ギャンブルだけを測った例も少なく、OpenResearchでは酒、たばこ、大麻とまとめて数えています。ゲームやネットのサブスクへの支出を分けて測った研究は、ここにはありません。どの研究も一致しているのは向きです。増えたお金の多くは食費、住まい、交通、人への援助に使われ、酒とたばこへの支出はほとんど、あるいはまったく増えませんでした。このエッセイの数字は、出典と日付とともに{temptation-2026.json|/temptation-2026.json}にまとめています。"
+          ]
+        ],
+        "en": [
+          [
+            "p",
+            "On 21 November 2026 the Wall Street Journal published a profile of Anthropic’s chief executive, Dario Amodei, and its president, Daniela Amodei. It reported that while he was at OpenAI, Dario Amodei had suggested that immersive video games might ease the political strife caused by people losing their jobs to AI.[1] A post on X spreading the report was viewed about 5.6 million times, and mocking replies followed: give people a basic income and they will spend it on drugs, OnlyFans and games. In Japanese the same idea comes up whenever cash handouts are discussed: the money will vanish on drink and gambling. What people do with cash they are given has been measured many times. This essay sets out those studies; it does not check the posts."
+          ],
+          [
+            "h",
+            "A review of 19 studies: alcohol and tobacco did not rise"
+          ],
+          [
+            "p",
+            "David Evans and Anna Popova of the World Bank reviewed 19 studies with quantitative evidence on how cash transfers affect spending on alcohol and tobacco, which economists call “temptation goods”, in Latin America, Africa and Asia, from 1997 to early 2014. They also looked at 11 studies that asked recipients whether they had used transfers on such goods. Of the 44 estimates in the 19 studies, 12 were negative and significant, 24 negative and not significant, 6 positive and not significant, and 2 positive and significant: 82% were negative. The two positive results were weak, came from non-experimental studies and did not hold across methods within the same study. The authors conclude that concerns about cash transfers being spent on alcohol and tobacco are unfounded.[2]"
+          ],
+          [
+            "h",
+            "Kenya: $709 on average, alcohol and tobacco slightly down"
+          ],
+          [
+            "p",
+            "The charity GiveDirectly sent unconditional transfers by mobile money to randomly chosen poor households in villages in western Kenya between 2011 and 2013. Johannes Haushofer and Jeremy Shapiro studied 503 recipient households. The average transfer was $709 at purchasing power parity (PPP), almost two years of spending per person. About nine months after the transfers began, monthly spending was $36 (23%) higher than in households in the same villages that received nothing, whose spending averaged $158; food rose most, by $19. Spending on alcohol (in the comparison group, $6.38 a month) changed by −$0.93 and on tobacco ($1.52) by −$0.15, neither significantly. Recipients also held $302 more in assets, against $495 in the comparison group.[3]"
+          ],
+          [
+            "p",
+            "The authors point out a limit. The study was too small to rule out moderate increases: for alcohol, the smallest rise it could have detected was about 44%. A list method, in which people do not have to say directly whether they drink or smoke, also found no effect.[3]"
+          ],
+          [
+            "h",
+            "The United States: $1,000 a month for three years"
+          ],
+          [
+            "p",
+            "The OpenResearch Unconditional Cash Study gave 1,000 lower-income adults aged 21 to 40 in Illinois and Texas $1,000 a month for three years, from November 2020 to October 2023, while 2,000 people in a control group received $50 a month. Alexander Bartik and colleagues found that recipients spent about $310 a month more than the control group, whose spending averaged $3,979 a month. The biggest increases were on the biggest items: food $67, rent $52 and car payments and insurance $30. Gifts and loans to family and to charity rose by $22, almost 26%, the largest rise in percentage terms. Spending on alcohol, tobacco, marijuana and gambling, counted together, rose by about $13 a month from $138 in the control group: a little over 1% of the transfer, and significant only at the 10% level. Recreation and entertainment rose by $5 a month (control group: $51), and vacations and trips by $7 ($80).[4]"
+          ],
+          [
+            "p",
+            "In the study’s health paper, Sarah Miller and colleagues do not find much evidence that the transfer changed people’s use of alcohol and drugs. The control group went without a drink on 27.24 of the last 30 days; recipients on 0.32 fewer days. Recipients were also less likely to say that drinking or hangovers got in the way of their responsibilities. Both results are significant only at the 10% level, and neither survives the adjustment for testing many outcomes. The number of drinks in the last 30 days (9.56 in the control group) rose by 0.98, not significantly. The authors write that they found no evidence of the harmful effects on drug and alcohol abuse that some may have feared.[5]"
+          ],
+          [
+            "h",
+            "Stockton: less than 1% of card purchases"
+          ],
+          [
+            "p",
+            "The Stockton Economic Empowerment Demonstration (SEED) in California gave 125 residents $500 a month for 24 months from February 2019, on a prepaid debit card. For the first year, to February 2020, the researchers sorted card purchases by type of shop. On average, 36.92% went on food, 22.70% on sales and merchandise (likely also food at stores such as Walmart and Target), 11.34% on utilities and 8.77% on car care. Less than 1% of tracked purchases were for tobacco and alcohol. About 40% of the money, however, was moved to a bank account or withdrawn as cash, and what it was spent on is not in these figures.[6]"
+          ],
+          [
+            "h",
+            "Vancouver: C$7,500 once, for people who had just lost their homes"
+          ],
+          [
+            "p",
+            "In Vancouver, researchers at the University of British Columbia and the charity Foundations for Social Change gave a one-off C$7,500, the annual income assistance in British Columbia in 2016, to 50 people who had been homeless for less than two years; 65 others were the control group. Only people without severe drug use, alcohol use or mental health symptoms could take part, and 31% of those screened were admitted. Over a year, recipients spent 99 fewer days homeless, kept C$1,160 more in savings and spent C$429 more a month on average, mainly on durable goods such as furniture, rent, food and transit. Their spending on alcohol, drugs and cigarettes was no different from the control group’s. Spending was self-reported, and the authors describe the analyses as exploratory. Fewer nights in shelters saved society about C$777 per recipient a year after the cost of the transfer.[7]"
+          ],
+          [
+            "h",
+            "Japan’s ¥100,000: what people said they used it for"
+          ],
+          [
+            "p",
+            "Japan has no trial of this kind, but surveys asked what people did with the ¥100,000 Special Cash Payment of 2020. In June 2020 the NLI Research Institute asked 2,062 people aged 20 to 69, with more than one answer allowed: 53.7% said covering living costs, 26.1% savings and 10.1% domestic travel, and 9.7% said they had saved all of it. The survey asked about uses, not amounts.[8] How much of the payment was spent, according to bank and household data, is covered in {another essay|/essays/japan-special-cash-payment/}."
+          ],
+          [
+            "t",
+            "Study | Where and how much | Alcohol, tobacco and the like\nEvans and Popova (2017) | 19 studies in Latin America, Africa and Asia | 82% of 44 estimates negative; 2 positive and significant, weak[2]\nHaushofer and Shapiro (2016) | Kenya, $709 PPP on average, 503 households | Alcohol −$0.93 and tobacco −$0.15 a month, not significant[3]\nBartik et al.; Miller et al. (2024, revised 2026) | Illinois and Texas, $1,000 a month for three years, 1,000 recipients | Alcohol, tobacco, marijuana and gambling +$13 a month, about 1% of the transfer; little change in drinking[4][5]\nSEED (2021) | Stockton, $500 a month for 24 months, 125 recipients | Less than 1% of tracked card purchases on tobacco and alcohol[6]\nDwyer et al. (2023) | Vancouver, C$7,500 once, 50 recipients | Spending on alcohol, drugs and cigarettes no different[7]"
+          ],
+          [
+            "h",
+            "How these transfers differ from a basic income"
+          ],
+          [
+            "p",
+            "All of these went to some people, for a limited time. In Kenya the money came once or over nine months. Stockton’s $500 a month for 24 months adds up to $12,000, and OpenResearch’s $1,000 a month for three years to $36,000; recipients knew when it would end. A basic income keeps coming. ¥70,000 a month is ¥840,000 a year; for everyone in Japan it would cost about ¥103.2 trillion a year, and $1,000 a month for everyone in the United States about $4.10 trillion.[9] The samples were also chosen: poor households in Kenyan villages, lower-income adults aged 21 to 40 who signed up, and in Vancouver only homeless people without severe addiction. A basic income would also go to people with an addiction, and to people with plenty of money. Whether a payment to everyone changes prices, wages and taxes is a separate question, covered in {Does a basic income cause inflation?|/essays/basic-income-inflation/}; what such payments do to work is covered in {Does cash make people stop working?|/essays/does-cash-make-people-stop-working/}."
+          ],
+          [
+            "h",
+            "What the data can’t tell us"
+          ],
+          [
+            "p",
+            "Most of these spending figures are what people reported. Recipients may say less about drinking than they do; Kenya’s list method and Stockton’s card data point the same way, but Stockton’s card covers only about 60% of the money. The horizons are short: nine months in Kenya, a year in Vancouver, three years in the United States. And these are averages. An average that barely moves can hide a few people who spend much more on drink or gambling alongside many who spend less, and the Kenyan study was too small to rule out moderate rises. Gambling is rarely measured on its own: OpenResearch counts it together with alcohol, tobacco and marijuana, and none of these studies measures spending on games or online subscriptions separately. What the studies agree on is the direction. The extra money went mostly on food, housing, transport and help for others, and spending on alcohol and tobacco rose little or not at all. The figures in this essay are collected, with their sources and dates, in {temptation-2026.json|/temptation-2026.json}."
+          ]
+        ],
+        "zh": [
+          [
+            "p",
+            "2026年11月21日，《华尔街日报》刊登了Anthropic首席执行官达里奥·阿莫代伊和总裁丹妮拉·阿莫代伊的人物报道。报道称，达里奥在OpenAI工作时曾提出，沉浸式电子游戏或许能缓和因人工智能而失业的人们带来的政治动荡。[1] 在X上传播这则报道的一条帖子被浏览了约560万次，随后出现了不少嘲讽：给人发基本收入，他们只会拿去买毒品、订OnlyFans、打游戏。在日语里，每当谈到发放现金补助，也常有人说“反正会被花在酒和赌博上”。人们拿到钱后用在了什么地方，已经被测量过很多次。本文梳理这些研究，并不核实那些帖子。"
+          ],
+          [
+            "h",
+            "19项研究的综述：酒和烟草没有增加"
+          ],
+          [
+            "p",
+            "世界银行的戴维·埃文斯和安娜·波波娃梳理了1997年至2014年初在拉丁美洲、非洲和亚洲发表的19项研究，这些研究用数据说明了现金转移对酒和烟草支出的影响。经济学家把这类商品称为“诱惑品”。他们还查看了11项询问受助者是否把钱用在这类商品上的研究。在19项研究的44个估计值中，12个为负且显著，24个为负但不显著，6个为正但不显著，2个为正且显著：82%为负。这两个正的结果效果很弱，来自非实验性研究，而且在同一研究中换一种方法就不成立。作者的结论是，担心现金转移被花在酒和烟草上是没有根据的。[2]"
+          ],
+          [
+            "h",
+            "肯尼亚：平均709美元，酒和烟草略有减少"
+          ],
+          [
+            "p",
+            "慈善组织GiveDirectly在2011年至2013年间，通过手机支付向肯尼亚西部村庄里随机选出的贫困家庭发放不附带条件的现金。约翰内斯·豪斯霍费尔和杰里米·夏皮罗研究了503个受助家庭。按购买力平价计算，平均发放额为709美元，几乎相当于人均两年的支出。发放开始约9个月后，受助家庭每月的支出比同村没有收到钱的家庭（平均158美元）多36美元，即多23%，增加最多的是食物，多19美元。酒的支出（对照家庭每月6.38美元）变化了−0.93美元，烟草（1.52美元）变化了−0.15美元，都不显著。受助家庭的资产比对照家庭的495美元多出302美元。[3]"
+          ],
+          [
+            "p",
+            "作者也指出了局限。这项研究规模较小，无法排除中等程度的增加：就酒而言，能够检测出的最小增幅约为44%。用不必直接回答自己是否喝酒或抽烟的“列表法”来调查，也没有发现影响。[3]"
+          ],
+          [
+            "h",
+            "美国：每月1,000美元，持续三年"
+          ],
+          [
+            "p",
+            "OpenResearch的无条件现金研究在2020年11月至2023年10月的三年里，每月向伊利诺伊州和得克萨斯州1,000名21至40岁的低收入成年人发放1,000美元，对照组的2,000人每月领取50美元。亚历山大·巴蒂克等人发现，受助者每月的支出比对照组（平均每月3,979美元）多约310美元。增加最多的是本来就大的开支：食物67美元、房租52美元、车贷和车险30美元。给家人的赠与和借款以及捐款增加了22美元，约26%，按比例是增幅最大的一项。酒、烟草、大麻和赌博合计的支出，从对照组的138美元每月增加了约13美元：略多于发放额的1%，而且只在10%的水平上显著。娱乐每月增加5美元（对照组为51美元），度假和旅行增加7美元（80美元）。[4]"
+          ],
+          [
+            "p",
+            "在这项研究关于健康的论文中，萨拉·米勒等人没有发现多少证据表明现金改变了人们饮酒和使用毒品的情况。对照组在最近30天里有27.24天没有喝酒，受助者比这少0.32天。受助者说喝酒或宿醉妨碍了自己履行责任的比例也更低。这两个结果都只在10%的水平上显著，在对多项检验进行校正后都不再显著。最近30天的饮酒杯数（对照组为9.56杯）增加了0.98杯，不显著。作者写道，他们没有发现一些人所担心的毒品和酒精滥用之类的危害。[5]"
+          ],
+          [
+            "h",
+            "斯托克顿：卡上消费不到1%"
+          ],
+          [
+            "p",
+            "加利福尼亚州的斯托克顿经济赋权示范项目（SEED）从2019年2月起，用预付借记卡向125名居民每月发放500美元，为期24个月。对于截至2020年2月的第一年，研究人员按商户类型对卡上的消费进行了分类。平均而言，36.92%用于食物，22.70%用于综合零售（很可能也包括在沃尔玛、塔吉特等商店购买的食物），11.34%用于水电等公用事业，8.77%用于汽车保养。可追踪的消费中，烟草和酒不到1%。不过，约40%的钱被转到银行账户或提取为现金，这部分花在了哪里，不在这些数字之内。[6]"
+          ],
+          [
+            "h",
+            "温哥华：给刚失去住所的人一次性7,500加元"
+          ],
+          [
+            "p",
+            "在温哥华，不列颠哥伦比亚大学的研究人员和慈善组织Foundations for Social Change向50名无家可归不到两年的人一次性发放了7,500加元，相当于2016年不列颠哥伦比亚省一年的社会救助金，另有65人作为对照组。只有吸毒、饮酒和精神症状不严重的人才能参加，接受筛查的人中有31%被纳入。一年里，受助者无家可归的天数少了99天，储蓄多了1,160加元，每月支出平均多了429加元，主要用于家具等耐用品、房租、食物和交通。他们在酒、毒品和香烟上的支出与对照组没有差别。支出是本人申报的，作者称这些分析属于探索性分析。由于住收容所的夜晚减少，扣除发放的费用后，社会每年为每名受助者节省了约777加元。[7]"
+          ],
+          [
+            "h",
+            "日本的10万日元：人们说用在了哪里"
+          ],
+          [
+            "p",
+            "日本没有这类实验，但有调查询问人们把2020年的10万日元特别定额给付金用在了哪里。日生基础研究所在2020年6月询问了2,062名20至69岁的人（可多选）：53.7%说用于“补贴生活费”，26.1%说“储蓄”，10.1%说“国内旅行”，9.7%说全部存了起来。调查问的是用途，不是金额。[8] 根据银行账户和家庭收支数据，给付金中有多少被花掉，可以参看{另一篇文章|/essays/japan-special-cash-payment/}。"
+          ],
+          [
+            "t",
+            "研究 | 地点和金额 | 对酒、烟草等的影响\n埃文斯、波波娃（2017年） | 拉丁美洲、非洲和亚洲的19项研究 | 44个估计值中82%为负；正且显著的2个，效果很弱[2]\n豪斯霍费尔、夏皮罗（2016年） | 肯尼亚，按购买力平价平均709美元，503户 | 酒每月−0.93美元，烟草−0.15美元，不显著[3]\n巴蒂克等；米勒等（2024年，2026年修订） | 伊利诺伊州和得克萨斯州，每月1,000美元，三年，1,000人 | 酒、烟草、大麻和赌博每月+13美元，约为发放额的1%；饮酒几乎没有变化[4][5]\nSEED（2021年） | 斯托克顿，每月500美元，24个月，125人 | 可追踪的卡上消费中，烟草和酒不到1%[6]\n德怀尔等（2023年） | 温哥华，一次性7,500加元，50人 | 酒、毒品和香烟的支出没有差别[7]"
+          ],
+          [
+            "h",
+            "这些现金转移与基本收入有何不同"
+          ],
+          [
+            "p",
+            "这些钱都只发给一部分人，而且有期限。在肯尼亚，钱是一次性或分9个月发放的。斯托克顿每月500美元、24个月，合计12,000美元；OpenResearch每月1,000美元、三年，合计36,000美元；受助者都知道什么时候结束。基本收入则会一直发下去。每月7万日元就是每年84万日元，发给日本的每一个居民每年约需103.2万亿日元；在美国给每人每月1,000美元，每年约需4.10万亿美元。[9] 研究对象也是经过挑选的：肯尼亚村庄里的贫困家庭，自愿报名的21至40岁低收入成年人，温哥华则只有成瘾不严重的无家可归者。基本收入也会发给有成瘾问题的人，以及手头宽裕的人。发给所有人是否会改变物价、工资和税收，是另一个问题，见{基本收入会引发通货膨胀吗？|/essays/basic-income-inflation/}；这类现金对工作的影响，见{发钱会让人不工作吗？|/essays/does-cash-make-people-stop-working/}。"
+          ],
+          [
+            "h",
+            "数据无法告诉我们的"
+          ],
+          [
+            "p",
+            "这些支出数字大多是本人回答的。受助者可能少报自己喝的酒；肯尼亚的列表法和斯托克顿的刷卡数据指向同一个方向，但斯托克顿的卡只能追踪约60%的钱。观察期也很短：肯尼亚9个月，温哥华一年，美国三年。而且这些都是平均值。平均值几乎不动，背后也可能是少数人在酒或赌博上花得多得多，而许多人花得更少；肯尼亚的研究规模不足以排除中等程度的增加。单独测量赌博的研究也很少：OpenResearch把赌博和酒、烟草、大麻算在一起，这些研究也都没有单独测量游戏或网络订阅的支出。各项研究一致的是方向。多出来的钱主要用在食物、住房、交通和帮助他人上，酒和烟草的支出几乎没有增加，甚至完全没有增加。本文的数字连同来源和日期，汇总在{temptation-2026.json|/temptation-2026.json}中。"
+          ]
+        ],
+        "hi": [
+          [
+            "p",
+            "21 नवंबर 2026 को वॉल स्ट्रीट जर्नल ने Anthropic के मुख्य कार्यकारी Dario Amodei और अध्यक्ष Daniela Amodei पर एक प्रोफ़ाइल छापी। उसके मुताबिक़, OpenAI में रहते हुए Dario Amodei ने सुझाव दिया था कि AI के कारण नौकरी खोने वाले लोगों से पैदा होने वाले राजनीतिक तनाव को इमर्सिव वीडियो गेम कम कर सकते हैं।[1] इस ख़बर को फैलाने वाली X की एक पोस्ट लगभग 56 लाख बार देखी गई, और फिर मज़ाक़ उड़ाने वाले जवाब आए: लोगों को बेसिक इनकम दो, वे इसे ड्रग्स, OnlyFans और गेम पर उड़ा देंगे। जापानी में भी नकद सहायता की बात आते ही यही ख़याल सुनाई देता है: पैसा शराब और जुए में चला जाएगा। लोग मिले हुए पैसे का क्या करते हैं, यह कई बार मापा जा चुका है। यह निबंध उन अध्ययनों को सामने रखता है; यह उन पोस्टों की जाँच नहीं करता।"
+          ],
+          [
+            "h",
+            "19 अध्ययनों की समीक्षा: शराब और तंबाकू नहीं बढ़े"
+          ],
+          [
+            "p",
+            "विश्व बैंक के David Evans और Anna Popova ने लैटिन अमेरिका, अफ़्रीका और एशिया के 1997 से 2014 की शुरुआत तक के 19 अध्ययनों की समीक्षा की, जो आंकड़ों से दिखाते हैं कि नकद ट्रांसफ़र का शराब और तंबाकू पर ख़र्च पर क्या असर होता है। अर्थशास्त्री इन्हें “प्रलोभन वाली वस्तुएं” कहते हैं। उन्होंने 11 ऐसे अध्ययन भी देखे जिनमें लाभार्थियों से पूछा गया कि क्या उन्होंने ट्रांसफ़र का पैसा ऐसी चीज़ों पर ख़र्च किया। 19 अध्ययनों के 44 अनुमानों में से 12 नकारात्मक और सांख्यिकीय रूप से महत्वपूर्ण थे, 24 नकारात्मक पर महत्वपूर्ण नहीं, 6 सकारात्मक पर महत्वपूर्ण नहीं, और 2 सकारात्मक और महत्वपूर्ण: 82% नकारात्मक थे। दोनों सकारात्मक नतीजे कमज़ोर थे, ग़ैर-प्रयोगात्मक अध्ययनों से आए थे और उसी अध्ययन में दूसरे तरीक़े से टिक नहीं पाए। लेखकों का निष्कर्ष है कि नकद ट्रांसफ़र के शराब और तंबाकू पर ख़र्च होने की चिंता बेबुनियाद है।[2]"
+          ],
+          [
+            "h",
+            "केन्या: औसतन 709 डॉलर, शराब और तंबाकू थोड़े घटे"
+          ],
+          [
+            "p",
+            "चैरिटी GiveDirectly ने 2011 से 2013 के बीच पश्चिमी केन्या के गाँवों में बेतरतीब ढंग से चुने गए ग़रीब परिवारों को मोबाइल मनी से बिना शर्त पैसा भेजा। Johannes Haushofer और Jeremy Shapiro ने 503 लाभार्थी परिवारों का अध्ययन किया। औसत ट्रांसफ़र क्रय शक्ति समता (PPP) पर 709 डॉलर था, यानी प्रति व्यक्ति लगभग दो साल का ख़र्च। ट्रांसफ़र शुरू होने के लगभग नौ महीने बाद, मासिक ख़र्च उन्हीं गाँवों के उन परिवारों से 36 डॉलर (23%) ज़्यादा था जिन्हें कुछ नहीं मिला और जिनका औसत ख़र्च 158 डॉलर था; सबसे ज़्यादा बढ़ोतरी खाने पर हुई, 19 डॉलर। शराब पर ख़र्च (तुलना समूह में हर महीने 6.38 डॉलर) में −0.93 डॉलर का और तंबाकू (1.52 डॉलर) में −0.15 डॉलर का बदलाव हुआ, दोनों में से कोई भी महत्वपूर्ण नहीं। लाभार्थियों के पास संपत्ति भी 302 डॉलर ज़्यादा थी, जबकि तुलना समूह में यह 495 डॉलर थी।[3]"
+          ],
+          [
+            "p",
+            "लेखक एक सीमा भी बताते हैं। अध्ययन इतना छोटा था कि मध्यम बढ़ोतरी को ख़ारिज नहीं कर सकता था: शराब के मामले में वह कम से कम लगभग 44% की बढ़ोतरी ही पकड़ सकता था। एक सूची वाले तरीक़े से, जिसमें किसी को सीधे बताना नहीं पड़ता कि वह पीता या धूम्रपान करता है, भी कोई असर नहीं मिला।[3]"
+          ],
+          [
+            "h",
+            "अमेरिका: तीन साल तक हर महीने 1,000 डॉलर"
+          ],
+          [
+            "p",
+            "OpenResearch के बिना शर्त नकद अध्ययन में इलिनॉय और टेक्सास के 21 से 40 साल के 1,000 कम आय वाले वयस्कों को नवंबर 2020 से अक्टूबर 2023 तक तीन साल हर महीने 1,000 डॉलर दिए गए, जबकि नियंत्रण समूह के 2,000 लोगों को हर महीने 50 डॉलर मिले। Alexander Bartik और साथियों ने पाया कि लाभार्थियों ने नियंत्रण समूह से हर महीने लगभग 310 डॉलर ज़्यादा ख़र्च किए, जिसका औसत मासिक ख़र्च 3,979 डॉलर था। सबसे बड़ी बढ़ोतरी सबसे बड़ी मदों में हुई: खाना 67 डॉलर, किराया 52 डॉलर और कार की किस्त व बीमा 30 डॉलर। परिवार को उपहार और क़र्ज़ तथा दान 22 डॉलर, लगभग 26%, बढ़े, जो प्रतिशत में सबसे बड़ी बढ़ोतरी थी। शराब, तंबाकू, गांजा और जुए पर मिलाकर ख़र्च नियंत्रण समूह के 138 डॉलर से हर महीने लगभग 13 डॉलर बढ़ा: ट्रांसफ़र का 1% से थोड़ा ज़्यादा, और सिर्फ़ 10% के स्तर पर महत्वपूर्ण। मनोरंजन पर ख़र्च हर महीने 5 डॉलर (नियंत्रण समूह: 51 डॉलर) और छुट्टियों व यात्राओं पर 7 डॉलर (80 डॉलर) बढ़ा।[4]"
+          ],
+          [
+            "p",
+            "अध्ययन के स्वास्थ्य वाले पेपर में Sarah Miller और साथियों को इस बात के ज़्यादा सबूत नहीं मिले कि पैसे से लोगों का शराब और नशीले पदार्थों का सेवन बदला। नियंत्रण समूह ने पिछले 30 दिनों में से 27.24 दिन शराब नहीं पी; लाभार्थियों ने इससे 0.32 दिन कम। लाभार्थियों ने यह भी कम कहा कि पीने या हैंगओवर से उनकी ज़िम्मेदारियों में रुकावट आई। दोनों नतीजे सिर्फ़ 10% के स्तर पर महत्वपूर्ण हैं, और कई नतीजों की जाँच के लिए किए गए समायोजन के बाद कोई भी नहीं टिकता। पिछले 30 दिनों में पी गई ड्रिंक्स की संख्या (नियंत्रण समूह में 9.56) 0.98 बढ़ी, जो महत्वपूर्ण नहीं है। लेखक लिखते हैं कि उन्हें नशीले पदार्थों और शराब के दुरुपयोग पर वैसे नुक़सान का कोई सबूत नहीं मिला जिसका कुछ लोगों को डर रहा होगा।[5]"
+          ],
+          [
+            "h",
+            "स्टॉकटन: कार्ड से हुई ख़रीद का 1% से कम"
+          ],
+          [
+            "p",
+            "कैलिफ़ोर्निया के स्टॉकटन इकोनॉमिक एम्पावरमेंट डेमॉन्स्ट्रेशन (SEED) ने फ़रवरी 2019 से 24 महीने तक 125 निवासियों को एक प्रीपेड डेबिट कार्ड पर हर महीने 500 डॉलर दिए। फ़रवरी 2020 तक के पहले साल के लिए शोधकर्ताओं ने कार्ड की ख़रीद को दुकान के प्रकार के हिसाब से बाँटा। औसतन 36.92% खाने पर, 22.70% बड़े स्टोरों और सामान पर (जिसमें शायद Walmart और Target जैसी दुकानों से ख़रीदा खाना भी शामिल है), 11.34% बिजली-पानी जैसे बिलों पर और 8.77% कार के रखरखाव पर गया। दर्ज की गई ख़रीद में तंबाकू और शराब 1% से कम थे। लेकिन लगभग 40% पैसा बैंक खाते में भेजा गया या नकद निकाला गया, और वह किस पर ख़र्च हुआ, यह इन आंकड़ों में नहीं है।[6]"
+          ],
+          [
+            "h",
+            "वैंकूवर: हाल ही में घर खोने वालों को एक बार 7,500 कनाडाई डॉलर"
+          ],
+          [
+            "p",
+            "वैंकूवर में यूनिवर्सिटी ऑफ़ ब्रिटिश कोलंबिया के शोधकर्ताओं और चैरिटी Foundations for Social Change ने दो साल से कम समय से बेघर 50 लोगों को एक बार 7,500 कनाडाई डॉलर दिए, जो 2016 में ब्रिटिश कोलंबिया की सालाना आय सहायता के बराबर था; 65 अन्य लोग नियंत्रण समूह में थे। सिर्फ़ वे लोग हिस्सा ले सकते थे जिनमें नशीले पदार्थों या शराब का गंभीर सेवन या गंभीर मानसिक लक्षण नहीं थे, और जाँचे गए लोगों में से 31% को शामिल किया गया। एक साल में लाभार्थियों ने 99 दिन कम बेघर रहकर बिताए, 1,160 कनाडाई डॉलर ज़्यादा बचाए और हर महीने औसतन 429 कनाडाई डॉलर ज़्यादा ख़र्च किए, मुख्य रूप से फ़र्नीचर जैसी टिकाऊ चीज़ों, किराए, खाने और आने-जाने पर। शराब, नशीले पदार्थों और सिगरेट पर उनका ख़र्च नियंत्रण समूह से अलग नहीं था। ख़र्च के आंकड़े लोगों ने ख़ुद बताए थे, और लेखक इन विश्लेषणों को खोजपरक बताते हैं। शेल्टर में कम रातें बिताने से, ट्रांसफ़र की लागत घटाकर भी, समाज को हर लाभार्थी पर साल में लगभग 777 कनाडाई डॉलर की बचत हुई।[7]"
+          ],
+          [
+            "h",
+            "जापान के 1,00,000 येन: लोगों ने कहा कि उन्होंने किस पर ख़र्च किए"
+          ],
+          [
+            "p",
+            "जापान में इस तरह का कोई प्रयोग नहीं है, लेकिन सर्वे में पूछा गया कि लोगों ने 2020 के 1,00,000 येन के विशेष नकद भुगतान का क्या किया। जून 2020 में NLI Research Institute ने 20 से 69 साल के 2,062 लोगों से पूछा, जिसमें एक से ज़्यादा जवाब दिए जा सकते थे: 53.7% ने रोज़मर्रा का ख़र्च चलाना बताया, 26.1% ने बचत और 10.1% ने देश के भीतर यात्रा, और 9.7% ने कहा कि उन्होंने पूरा पैसा बचा लिया। सर्वे में इस्तेमाल के बारे में पूछा गया था, रक़म के बारे में नहीं।[8] बैंक और घरेलू आंकड़ों के मुताबिक़ भुगतान का कितना हिस्सा ख़र्च हुआ, यह {एक दूसरे निबंध|/essays/japan-special-cash-payment/} में है।"
+          ],
+          [
+            "t",
+            "अध्ययन | कहाँ और कितना | शराब, तंबाकू और ऐसी चीज़ें\nEvans और Popova (2017) | लैटिन अमेरिका, अफ़्रीका और एशिया के 19 अध्ययन | 44 अनुमानों में से 82% नकारात्मक; 2 सकारात्मक और महत्वपूर्ण, कमज़ोर[2]\nHaushofer और Shapiro (2016) | केन्या, PPP पर औसतन 709 डॉलर, 503 परिवार | शराब −0.93 डॉलर और तंबाकू −0.15 डॉलर प्रति माह, महत्वपूर्ण नहीं[3]\nBartik और साथी; Miller और साथी (2024, 2026 में संशोधित) | इलिनॉय और टेक्सास, तीन साल तक हर महीने 1,000 डॉलर, 1,000 लाभार्थी | शराब, तंबाकू, गांजा और जुआ +13 डॉलर प्रति माह, ट्रांसफ़र का लगभग 1%; पीने में ख़ास बदलाव नहीं[4][5]\nSEED (2021) | स्टॉकटन, 24 महीने तक हर महीने 500 डॉलर, 125 लाभार्थी | दर्ज की गई कार्ड ख़रीद में तंबाकू और शराब 1% से कम[6]\nDwyer और साथी (2023) | वैंकूवर, एक बार 7,500 कनाडाई डॉलर, 50 लाभार्थी | शराब, नशीले पदार्थों और सिगरेट पर ख़र्च में कोई फ़र्क़ नहीं[7]"
+          ],
+          [
+            "h",
+            "ये ट्रांसफ़र बेसिक इनकम से कैसे अलग हैं"
+          ],
+          [
+            "p",
+            "ये सभी कुछ लोगों को और सीमित समय के लिए दिए गए। केन्या में पैसा एक बार में या नौ महीनों में आया। स्टॉकटन के 24 महीने तक हर महीने 500 डॉलर कुल 12,000 डॉलर होते हैं, और OpenResearch के तीन साल तक हर महीने 1,000 डॉलर कुल 36,000 डॉलर; लाभार्थी जानते थे कि यह कब ख़त्म होगा। बेसिक इनकम आती रहती है। हर महीने 70,000 येन का मतलब साल में 8,40,000 येन है; जापान में सभी को देने पर इसकी लागत साल में लगभग 103.2 ट्रिलियन येन होगी, और अमेरिका में सभी को हर महीने 1,000 डॉलर देने पर लगभग 4.10 ट्रिलियन डॉलर।[9] नमूने भी चुने हुए थे: केन्या के गाँवों के ग़रीब परिवार, ख़ुद नाम लिखवाने वाले 21 से 40 साल के कम आय वाले वयस्क, और वैंकूवर में सिर्फ़ गंभीर लत के बिना बेघर लोग। बेसिक इनकम उन लोगों को भी मिलेगी जिन्हें लत है, और उन्हें भी जिनके पास काफ़ी पैसा है। सबको भुगतान करने से क़ीमतें, मज़दूरी और टैक्स बदलते हैं या नहीं, यह अलग सवाल है, जिसे {क्या बेसिक इनकम से महंगाई बढ़ती है?|/essays/basic-income-inflation/} में देखा गया है; ऐसे भुगतानों का काम पर असर {क्या पैसा मिलने पर लोग काम छोड़ देते हैं?|/essays/does-cash-make-people-stop-working/} में है।"
+          ],
+          [
+            "h",
+            "आंकड़े हमें क्या नहीं बता सकते"
+          ],
+          [
+            "p",
+            "ख़र्च के इनमें से ज़्यादातर आंकड़े वही हैं जो लोगों ने ख़ुद बताए। लाभार्थी अपनी पीने की आदत कम बता सकते हैं; केन्या का सूची वाला तरीक़ा और स्टॉकटन के कार्ड के आंकड़े एक ही दिशा दिखाते हैं, लेकिन स्टॉकटन का कार्ड सिर्फ़ लगभग 60% पैसे को दर्ज करता है। अवधि भी छोटी है: केन्या में नौ महीने, वैंकूवर में एक साल, अमेरिका में तीन साल। और ये औसत हैं। जो औसत मुश्किल से हिलता है, उसके पीछे कुछ ऐसे लोग छिपे हो सकते हैं जो शराब या जुए पर कहीं ज़्यादा ख़र्च करते हैं, और साथ में बहुत से ऐसे जो कम ख़र्च करते हैं; केन्या का अध्ययन मध्यम बढ़ोतरी को ख़ारिज करने के लिए बहुत छोटा था। जुए को शायद ही कभी अलग से मापा जाता है: OpenResearch इसे शराब, तंबाकू और गांजे के साथ जोड़कर गिनता है, और इनमें से कोई भी अध्ययन गेम या ऑनलाइन सब्सक्रिप्शन पर ख़र्च को अलग से नहीं मापता। अध्ययन जिस बात पर सहमत हैं, वह दिशा है। अतिरिक्त पैसा ज़्यादातर खाने, रहने, आने-जाने और दूसरों की मदद पर गया, और शराब व तंबाकू पर ख़र्च थोड़ा बढ़ा या बिल्कुल नहीं बढ़ा। इस निबंध के आंकड़े उनके स्रोतों और तारीख़ों के साथ {temptation-2026.json|/temptation-2026.json} में हैं।"
+          ]
+        ],
+        "es": [
+          [
+            "p",
+            "El 21 de noviembre de 2026, The Wall Street Journal publicó un perfil del consejero delegado de Anthropic, Dario Amodei, y de su presidenta, Daniela Amodei. Según el diario, cuando trabajaba en OpenAI, Dario Amodei sugirió que los videojuegos inmersivos podrían aliviar las tensiones políticas causadas por quienes pierdan su empleo por la IA.[1] Una publicación en X que difundía la noticia se vio unos 5,6 millones de veces, y llegaron las burlas: dale a la gente una renta básica y se la gastará en drogas, OnlyFans y videojuegos. En japonés aparece la misma idea cada vez que se habla de ayudas en efectivo: el dinero se irá en bebida y apuestas. Qué hace la gente con el dinero que recibe se ha medido muchas veces. Este ensayo reúne esos estudios; no verifica las publicaciones."
+          ],
+          [
+            "h",
+            "Una revisión de 19 estudios: el alcohol y el tabaco no subieron"
+          ],
+          [
+            "p",
+            "David Evans y Anna Popova, del Banco Mundial, revisaron 19 estudios con datos cuantitativos sobre cómo las transferencias en efectivo afectan al gasto en alcohol y tabaco, los llamados «bienes de tentación», en América Latina, África y Asia, entre 1997 y principios de 2014. También examinaron 11 estudios que preguntaron a los beneficiarios si habían usado las transferencias en esos bienes. De las 44 estimaciones de los 19 estudios, 12 fueron negativas y significativas, 24 negativas y no significativas, 6 positivas y no significativas, y 2 positivas y significativas: el 82% fueron negativas. Los dos resultados positivos fueron débiles, procedían de estudios no experimentales y no se sostenían con otro método dentro del mismo estudio. Los autores concluyen que la preocupación de que las transferencias se gasten en alcohol y tabaco carece de fundamento.[2]"
+          ],
+          [
+            "h",
+            "Kenia: 709 $ de media; alcohol y tabaco, un poco a la baja"
+          ],
+          [
+            "p",
+            "La organización benéfica GiveDirectly envió entre 2011 y 2013, por dinero móvil, transferencias sin condiciones a hogares pobres elegidos al azar en aldeas del oeste de Kenia. Johannes Haushofer y Jeremy Shapiro estudiaron 503 hogares beneficiarios. La transferencia media fue de 709 $ en paridad de poder adquisitivo (PPA), casi dos años de gasto por persona. Unos nueve meses después del inicio, el gasto mensual era 36 $ (un 23%) mayor que en los hogares de las mismas aldeas que no recibieron nada, cuyo gasto medio era de 158 $; la comida fue lo que más subió, 19 $. El gasto en alcohol (6,38 $ al mes en el grupo de comparación) varió en −0,93 $ y el de tabaco (1,52 $) en −0,15 $, sin significación en ningún caso. Los beneficiarios tenían además 302 $ más en activos, frente a 495 $ en el grupo de comparación.[3]"
+          ],
+          [
+            "p",
+            "Los autores señalan un límite. El estudio era demasiado pequeño para descartar aumentos moderados: en el alcohol, el menor aumento que podía detectar era de alrededor del 44%. Un método de lista, en el que nadie tiene que decir directamente si bebe o fuma, tampoco halló efecto.[3]"
+          ],
+          [
+            "h",
+            "Estados Unidos: 1.000 $ al mes durante tres años"
+          ],
+          [
+            "p",
+            "El estudio de efectivo incondicional de OpenResearch dio a 1.000 adultos de ingresos bajos de entre 21 y 40 años, en Illinois y Texas, 1.000 $ al mes durante tres años, de noviembre de 2020 a octubre de 2023, mientras 2.000 personas de un grupo de control recibían 50 $ al mes. Alexander Bartik y sus colegas hallaron que los beneficiarios gastaban unos 310 $ al mes más que el grupo de control, cuyo gasto medio era de 3979 $ al mes. Las mayores subidas fueron en las partidas más grandes: comida 67 $, alquiler 52 $ y cuotas y seguro del coche 30 $. Los regalos y préstamos a la familia y las donaciones subieron 22 $, casi un 26%, la mayor subida en porcentaje. El gasto en alcohol, tabaco, marihuana y juego, sumados, subió unos 13 $ al mes desde 138 $ en el grupo de control: algo más del 1% de la transferencia, y significativo solo al nivel del 10%. El ocio y entretenimiento subió 5 $ al mes (grupo de control: 51 $), y las vacaciones y viajes, 7 $ (80 $).[4]"
+          ],
+          [
+            "p",
+            "En el artículo del estudio sobre salud, Sarah Miller y sus colegas no encuentran muchas pruebas de que la transferencia cambiara el consumo de alcohol y drogas. El grupo de control pasó sin beber 27,24 de los últimos 30 días; los beneficiarios, 0,32 días menos. Los beneficiarios también dijeron con menos frecuencia que la bebida o la resaca les impedía cumplir con sus obligaciones. Ambos resultados son significativos solo al nivel del 10%, y ninguno resiste el ajuste por haber probado muchos resultados. El número de bebidas en los últimos 30 días (9,56 en el grupo de control) subió 0,98, sin significación. Los autores escriben que no hallaron los efectos dañinos sobre el abuso de drogas y alcohol que algunos podían temer.[5]"
+          ],
+          [
+            "h",
+            "Stockton: menos del 1% de las compras con tarjeta"
+          ],
+          [
+            "p",
+            "La Demostración de Empoderamiento Económico de Stockton (SEED), en California, dio a 125 vecinos 500 $ al mes durante 24 meses desde febrero de 2019, en una tarjeta de débito prepago. Para el primer año, hasta febrero de 2020, los investigadores clasificaron las compras con tarjeta por tipo de comercio. De media, el 36,92% fue a comida, el 22,70% a grandes superficies y mercancía general (probablemente también comida en tiendas como Walmart y Target), el 11,34% a suministros y el 8,77% al mantenimiento del coche. Menos del 1% de las compras registradas fueron de tabaco y alcohol. Sin embargo, cerca del 40% del dinero se pasó a una cuenta bancaria o se sacó en efectivo, y en qué se gastó no figura en estas cifras.[6]"
+          ],
+          [
+            "h",
+            "Vancouver: 7.500 C$ de una vez para quienes acababan de perder su casa"
+          ],
+          [
+            "p",
+            "En Vancouver, investigadores de la Universidad de la Columbia Británica y la organización Foundations for Social Change entregaron una sola vez 7.500 C$, la ayuda anual de ingresos de la Columbia Británica en 2016, a 50 personas que llevaban menos de dos años sin hogar; otras 65 formaron el grupo de control. Solo podían participar personas sin un consumo grave de drogas o alcohol ni síntomas graves de salud mental, y se admitió al 31% de los evaluados. En un año, los beneficiarios pasaron 99 días menos sin hogar, ahorraron 1.160 C$ más y gastaron de media 429 C$ más al mes, sobre todo en bienes duraderos como muebles, alquiler, comida y transporte. Su gasto en alcohol, drogas y cigarrillos no fue distinto del del grupo de control. El gasto fue declarado por los propios participantes y los autores califican los análisis de exploratorios. Al pasar menos noches en albergues, la sociedad ahorró unos 777 C$ por beneficiario al año, descontado el coste de la transferencia.[7]"
+          ],
+          [
+            "h",
+            "Los 100.000 ¥ de Japón: en qué dijeron gastarlos"
+          ],
+          [
+            "p",
+            "Japón no tiene un ensayo de este tipo, pero hubo encuestas sobre qué hizo la gente con el Pago Especial en Efectivo de 100.000 ¥ de 2020. En junio de 2020, el NLI Research Institute preguntó a 2062 personas de 20 a 69 años, con respuesta múltiple: el 53,7% dijo cubrir gastos de vida, el 26,1% ahorrar y el 10,1% viajar por el país, y el 9,7% dijo haberlo ahorrado todo. La encuesta preguntó por usos, no por importes.[8] Cuánto del pago se gastó, según datos bancarios y de hogares, se trata en {otro ensayo|/essays/japan-special-cash-payment/}."
+          ],
+          [
+            "t",
+            "Estudio | Dónde y cuánto | Alcohol, tabaco y similares\nEvans y Popova (2017) | 19 estudios en América Latina, África y Asia | 82% de 44 estimaciones negativas; 2 positivas y significativas, débiles[2]\nHaushofer y Shapiro (2016) | Kenia, 709 $ PPA de media, 503 hogares | Alcohol −0,93 $ y tabaco −0,15 $ al mes, no significativo[3]\nBartik et al.; Miller et al. (2024, revisado en 2026) | Illinois y Texas, 1.000 $ al mes durante tres años, 1.000 beneficiarios | Alcohol, tabaco, marihuana y juego +13 $ al mes, cerca del 1% de la transferencia; apenas cambia la bebida[4][5]\nSEED (2021) | Stockton, 500 $ al mes durante 24 meses, 125 beneficiarios | Menos del 1% de las compras registradas con tarjeta en tabaco y alcohol[6]\nDwyer et al. (2023) | Vancouver, 7.500 C$ una vez, 50 beneficiarios | Gasto en alcohol, drogas y cigarrillos sin diferencias[7]"
+          ],
+          [
+            "h",
+            "En qué se diferencian estas transferencias de una renta básica"
+          ],
+          [
+            "p",
+            "Todas fueron para algunas personas y por un tiempo limitado. En Kenia el dinero llegó de una vez o a lo largo de nueve meses. Los 500 $ al mes de Stockton durante 24 meses suman 12.000 $, y los 1.000 $ al mes de OpenResearch durante tres años, 36.000 $; los beneficiarios sabían cuándo terminaría. Una renta básica sigue llegando. 70.000 ¥ al mes son 840.000 ¥ al año; para todos los habitantes de Japón costaría unos 103,2 billones de yenes al año, y 1.000 $ al mes para todos en Estados Unidos, unos 4,10 billones de dólares.[9] Las muestras también fueron elegidas: hogares pobres de aldeas kenianas, adultos de ingresos bajos de 21 a 40 años que se apuntaron y, en Vancouver, solo personas sin hogar sin una adicción grave. Una renta básica llegaría también a personas con una adicción y a personas con mucho dinero. Si un pago a todos cambia precios, salarios e impuestos es otra cuestión, tratada en {¿Provoca inflación una renta básica?|/essays/basic-income-inflation/}; qué hacen estos pagos con el trabajo se trata en {¿Deja la gente de trabajar si recibe dinero?|/essays/does-cash-make-people-stop-working/}."
+          ],
+          [
+            "h",
+            "Lo que los datos no pueden decirnos"
+          ],
+          [
+            "p",
+            "La mayoría de estas cifras de gasto son lo que la gente declaró. Los beneficiarios pueden declarar menos bebida de la real; el método de lista de Kenia y los datos de tarjeta de Stockton apuntan en el mismo sentido, pero la tarjeta de Stockton solo cubre cerca del 60% del dinero. Los plazos son cortos: nueve meses en Kenia, un año en Vancouver, tres años en Estados Unidos. Y son medias. Una media que apenas se mueve puede ocultar a unas pocas personas que gastan mucho más en bebida o apuestas junto a muchas que gastan menos, y el estudio de Kenia era demasiado pequeño para descartar aumentos moderados. El juego rara vez se mide por separado: OpenResearch lo cuenta junto con alcohol, tabaco y marihuana, y ninguno de estos estudios mide aparte el gasto en videojuegos o suscripciones en línea. En lo que coinciden los estudios es en la dirección. El dinero extra fue sobre todo a comida, vivienda, transporte y ayuda a otros, y el gasto en alcohol y tabaco subió poco o nada. Las cifras de este ensayo, con sus fuentes y fechas, están en {temptation-2026.json|/temptation-2026.json}."
+          ]
+        ],
+        "de": [
+          [
+            "p",
+            "Am 21. November 2026 veröffentlichte das Wall Street Journal ein Porträt von Anthropic-Chef Dario Amodei und Präsidentin Daniela Amodei. Demnach hatte Dario Amodei während seiner Zeit bei OpenAI angeregt, immersive Videospiele könnten die politischen Spannungen dämpfen, wenn Menschen ihre Arbeit an die KI verlieren.[1] Ein Beitrag auf X, der den Bericht verbreitete, wurde rund 5,6 Millionen Mal angesehen, und es folgten spöttische Antworten: Gib den Leuten ein Grundeinkommen, und sie geben es für Drogen, OnlyFans und Spiele aus. Auf Japanisch taucht dieselbe Idee auf, sobald es um Bargeldhilfen geht: Das Geld verschwinde in Alkohol und Glücksspiel. Was Menschen mit Geld tun, das sie bekommen, wurde schon oft gemessen. Dieser Essay stellt diese Studien zusammen; die Beiträge prüft er nicht."
+          ],
+          [
+            "h",
+            "Eine Übersicht über 19 Studien: Alkohol und Tabak stiegen nicht"
+          ],
+          [
+            "p",
+            "David Evans und Anna Popova von der Weltbank werteten 19 Studien aus Lateinamerika, Afrika und Asien von 1997 bis Anfang 2014 aus, die mit Zahlen zeigen, wie sich Geldtransfers auf die Ausgaben für Alkohol und Tabak auswirken; Ökonomen nennen solche Güter „Versuchungsgüter“. Dazu kamen 11 Studien, die Empfänger fragten, ob sie Transfers für solche Güter ausgegeben hatten. Von den 44 Schätzungen der 19 Studien waren 12 negativ und signifikant, 24 negativ und nicht signifikant, 6 positiv und nicht signifikant und 2 positiv und signifikant: 82 % waren negativ. Die beiden positiven Ergebnisse waren schwach, stammten aus nicht experimentellen Studien und hielten innerhalb derselben Studie mit einer anderen Methode nicht. Die Autoren folgern, dass die Sorge, Geldtransfers würden für Alkohol und Tabak ausgegeben, unbegründet ist.[2]"
+          ],
+          [
+            "h",
+            "Kenia: im Schnitt 709 $, Alkohol und Tabak leicht gesunken"
+          ],
+          [
+            "p",
+            "Die Hilfsorganisation GiveDirectly schickte zwischen 2011 und 2013 per Mobile Money bedingungslose Transfers an zufällig ausgewählte arme Haushalte in Dörfern im Westen Kenias. Johannes Haushofer und Jeremy Shapiro untersuchten 503 Empfängerhaushalte. Der durchschnittliche Transfer betrug 709 $ in Kaufkraftparität (KKP), fast zwei Jahre Ausgaben pro Kopf. Etwa neun Monate nach Beginn der Zahlungen lagen die monatlichen Ausgaben um 36 $ (23 %) höher als in Haushalten derselben Dörfer, die nichts bekamen und im Schnitt 158 $ ausgaben; am stärksten stiegen die Ausgaben für Essen, um 19 $. Die Ausgaben für Alkohol (in der Vergleichsgruppe 6,38 $ im Monat) änderten sich um −0,93 $ und für Tabak (1,52 $) um −0,15 $, beides nicht signifikant. Die Empfänger besaßen zudem 302 $ mehr an Vermögenswerten, bei 495 $ in der Vergleichsgruppe.[3]"
+          ],
+          [
+            "p",
+            "Die Autoren nennen eine Grenze. Die Studie war zu klein, um mäßige Anstiege auszuschließen: Beim Alkohol hätte sie erst einen Anstieg von rund 44 % erkennen können. Eine Listenmethode, bei der niemand direkt sagen muss, ob er trinkt oder raucht, fand ebenfalls keine Wirkung.[3]"
+          ],
+          [
+            "h",
+            "Die USA: 1.000 $ im Monat, drei Jahre lang"
+          ],
+          [
+            "p",
+            "Die OpenResearch-Studie zu bedingungslosem Geld zahlte 1.000 Erwachsenen mit niedrigem Einkommen im Alter von 21 bis 40 Jahren in Illinois und Texas drei Jahre lang 1.000 $ im Monat, von November 2020 bis Oktober 2023; 2.000 Menschen in einer Kontrollgruppe erhielten 50 $ im Monat. Alexander Bartik und Kollegen fanden, dass die Empfänger rund 310 $ im Monat mehr ausgaben als die Kontrollgruppe, deren Ausgaben im Schnitt bei 3.979 $ im Monat lagen. Am stärksten stiegen die größten Posten: Essen um 67 $, Miete um 52 $ und Autoraten und -versicherung um 30 $. Geschenke und Darlehen an Familie sowie Spenden stiegen um 22 $, fast 26 %, der größte Anstieg in Prozent. Die Ausgaben für Alkohol, Tabak, Marihuana und Glücksspiel zusammen stiegen um rund 13 $ im Monat, ausgehend von 138 $ in der Kontrollgruppe: gut 1 % des Transfers und nur auf dem 10-%-Niveau signifikant. Freizeit und Unterhaltung stiegen um 5 $ im Monat (Kontrollgruppe: 51 $), Urlaub und Reisen um 7 $ (80 $).[4]"
+          ],
+          [
+            "p",
+            "Im Gesundheitspapier der Studie finden Sarah Miller und Kollegen wenig Hinweise darauf, dass der Transfer den Konsum von Alkohol und Drogen verändert hat. Die Kontrollgruppe trank an 27,24 der letzten 30 Tage keinen Alkohol, die Empfänger an 0,32 Tagen weniger. Die Empfänger gaben auch seltener an, dass Trinken oder ein Kater sie an ihren Pflichten hinderte. Beide Ergebnisse sind nur auf dem 10-%-Niveau signifikant, und keines hält der Korrektur für das Testen vieler Ergebnisse stand. Die Zahl der Getränke in den letzten 30 Tagen (9,56 in der Kontrollgruppe) stieg um 0,98, nicht signifikant. Die Autoren schreiben, sie hätten keine Belege für die schädlichen Folgen für Drogen- und Alkoholmissbrauch gefunden, die manche befürchtet haben mögen.[5]"
+          ],
+          [
+            "h",
+            "Stockton: weniger als 1 % der Kartenzahlungen"
+          ],
+          [
+            "p",
+            "Die Stockton Economic Empowerment Demonstration (SEED) in Kalifornien zahlte 125 Einwohnern ab Februar 2019 für 24 Monate 500 $ im Monat auf eine Prepaid-Debitkarte. Für das erste Jahr bis Februar 2020 ordneten die Forschenden die Kartenzahlungen nach Art des Geschäfts. Im Schnitt gingen 36,92 % in Lebensmittel, 22,70 % in Kaufhäuser und Warenhandel (vermutlich ebenfalls Lebensmittel in Geschäften wie Walmart und Target), 11,34 % in Nebenkosten und 8,77 % in Autopflege. Weniger als 1 % der erfassten Zahlungen entfiel auf Tabak und Alkohol. Rund 40 % des Geldes wurden allerdings auf ein Bankkonto überwiesen oder bar abgehoben, und wofür es ausgegeben wurde, steht nicht in diesen Zahlen.[6]"
+          ],
+          [
+            "h",
+            "Vancouver: einmal 7.500 C$ für Menschen, die gerade ihre Wohnung verloren hatten"
+          ],
+          [
+            "p",
+            "In Vancouver gaben Forschende der University of British Columbia und die Organisation Foundations for Social Change 50 Menschen, die seit weniger als zwei Jahren obdachlos waren, einmalig 7.500 C$, so viel wie die jährliche Sozialhilfe in British Columbia im Jahr 2016; 65 weitere bildeten die Kontrollgruppe. Teilnehmen durften nur Menschen ohne schweren Drogen- oder Alkoholkonsum und ohne schwere psychische Symptome; 31 % der Geprüften wurden aufgenommen. Innerhalb eines Jahres verbrachten die Empfänger 99 Tage weniger ohne Wohnung, hatten 1.160 C$ mehr gespart und gaben im Schnitt 429 C$ im Monat mehr aus, vor allem für langlebige Güter wie Möbel, für Miete, Essen und Nahverkehr. Ihre Ausgaben für Alkohol, Drogen und Zigaretten unterschieden sich nicht von denen der Kontrollgruppe. Die Ausgaben waren selbst angegeben, und die Autoren bezeichnen die Analysen als explorativ. Weniger Nächte in Notunterkünften sparten der Gesellschaft nach Abzug der Transferkosten rund 777 C$ pro Empfänger und Jahr.[7]"
+          ],
+          [
+            "h",
+            "Japans 100.000 ¥: wofür die Menschen sie nach eigener Angabe nutzten"
+          ],
+          [
+            "p",
+            "Einen solchen Versuch gibt es in Japan nicht, aber Umfragen fragten, was die Menschen mit der Sonderzahlung von 100.000 ¥ im Jahr 2020 machten. Im Juni 2020 fragte das NLI Research Institute 2.062 Menschen im Alter von 20 bis 69 Jahren, mit Mehrfachantworten: 53,7 % nannten die Deckung der Lebenshaltungskosten, 26,1 % das Sparen und 10,1 % Reisen im Inland, und 9,7 % sagten, sie hätten alles gespart. Gefragt wurde nach dem Zweck, nicht nach Beträgen.[8] Wie viel von der Zahlung laut Bank- und Haushaltsdaten ausgegeben wurde, behandelt {ein anderer Essay|/essays/japan-special-cash-payment/}."
+          ],
+          [
+            "t",
+            "Studie | Wo und wie viel | Alkohol, Tabak und Ähnliches\nEvans und Popova (2017) | 19 Studien in Lateinamerika, Afrika und Asien | 82 % von 44 Schätzungen negativ; 2 positiv und signifikant, schwach[2]\nHaushofer und Shapiro (2016) | Kenia, im Schnitt 709 $ KKP, 503 Haushalte | Alkohol −0,93 $ und Tabak −0,15 $ im Monat, nicht signifikant[3]\nBartik u. a.; Miller u. a. (2024, überarbeitet 2026) | Illinois und Texas, 1.000 $ im Monat für drei Jahre, 1.000 Empfänger | Alkohol, Tabak, Marihuana und Glücksspiel +13 $ im Monat, etwa 1 % des Transfers; Trinkverhalten kaum verändert[4][5]\nSEED (2021) | Stockton, 500 $ im Monat für 24 Monate, 125 Empfänger | Weniger als 1 % der erfassten Kartenzahlungen für Tabak und Alkohol[6]\nDwyer u. a. (2023) | Vancouver, einmal 7.500 C$, 50 Empfänger | Ausgaben für Alkohol, Drogen und Zigaretten ohne Unterschied[7]"
+          ],
+          [
+            "h",
+            "Wie sich diese Transfers von einem Grundeinkommen unterscheiden"
+          ],
+          [
+            "p",
+            "Alle diese Zahlungen gingen an einige Menschen und für begrenzte Zeit. In Kenia kam das Geld einmalig oder verteilt über neun Monate. Stocktons 500 $ im Monat über 24 Monate ergeben 12.000 $, OpenResearchs 1.000 $ im Monat über drei Jahre 36.000 $; die Empfänger wussten, wann es endet. Ein Grundeinkommen kommt weiter. 70.000 ¥ im Monat sind 840.000 ¥ im Jahr; für alle Einwohner Japans würde das rund 103,2 Billionen Yen im Jahr kosten, und 1.000 $ im Monat für alle in den USA rund 4,10 Billionen Dollar.[9] Auch die Stichproben waren ausgewählt: arme Haushalte in kenianischen Dörfern, Erwachsene mit niedrigem Einkommen von 21 bis 40 Jahren, die sich angemeldet hatten, und in Vancouver nur Obdachlose ohne schwere Sucht. Ein Grundeinkommen ginge auch an Menschen mit einer Sucht und an Menschen mit viel Geld. Ob eine Zahlung an alle Preise, Löhne und Steuern verändert, ist eine andere Frage, behandelt in {Führt ein Grundeinkommen zu Inflation?|/essays/basic-income-inflation/}; was solche Zahlungen mit der Arbeit machen, in {Hören Menschen mit Geld auf zu arbeiten?|/essays/does-cash-make-people-stop-working/}."
+          ],
+          [
+            "h",
+            "Was die Daten nicht sagen können"
+          ],
+          [
+            "p",
+            "Die meisten dieser Ausgabenzahlen beruhen auf eigenen Angaben. Empfänger geben ihr Trinken womöglich zu niedrig an; Kenias Listenmethode und Stocktons Kartendaten zeigen in dieselbe Richtung, doch Stocktons Karte erfasst nur rund 60 % des Geldes. Die Zeiträume sind kurz: neun Monate in Kenia, ein Jahr in Vancouver, drei Jahre in den USA. Und es sind Durchschnittswerte. Ein Durchschnitt, der sich kaum bewegt, kann einige wenige verbergen, die viel mehr für Alkohol oder Glücksspiel ausgeben, neben vielen, die weniger ausgeben; die kenianische Studie war zu klein, um mäßige Anstiege auszuschließen. Glücksspiel wird selten für sich gemessen: OpenResearch zählt es mit Alkohol, Tabak und Marihuana zusammen, und keine dieser Studien misst die Ausgaben für Spiele oder Online-Abos gesondert. Einig sind sich die Studien in der Richtung. Das zusätzliche Geld floss vor allem in Essen, Wohnen, Verkehr und Hilfe für andere, und die Ausgaben für Alkohol und Tabak stiegen wenig oder gar nicht. Die Zahlen dieses Essays stehen mit Quellen und Daten in {temptation-2026.json|/temptation-2026.json}."
+          ]
+        ],
+        "ar": [
+          [
+            "p",
+            "في 21 نوفمبر 2026 نشرت صحيفة وول ستريت جورنال تقريرًا عن الرئيس التنفيذي لشركة أنثروبيك داريو أمودي ورئيستها دانييلا أمودي. وذكرت أن داريو أمودي اقترح، حين كان يعمل في أوبن إيه آي، أن ألعاب الفيديو الغامرة قد تخفف الاضطراب السياسي الذي يسببه فقدان الناس وظائفهم لصالح الذكاء الاصطناعي.[1] وشوهد منشور على منصة إكس نشر هذا التقرير نحو 5.6 مليون مرة، وتلته ردود ساخرة: أعطِ الناس دخلًا أساسيًا وسينفقونه على المخدرات وأونلي فانز والألعاب. وفي اليابانية تتكرر الفكرة نفسها كلما جرى الحديث عن المساعدات النقدية: سيضيع المال على الشراب والقمار. وما يفعله الناس بالمال الذي يُعطى لهم قيس مرات كثيرة. ويعرض هذا المقال تلك الدراسات؛ ولا يتحقق من المنشورات."
+          ],
+          [
+            "h",
+            "مراجعة لـ19 دراسة: لم يزد الكحول والتبغ"
+          ],
+          [
+            "p",
+            "راجع ديفيد إيفانز وآنا بوبوفا من البنك الدولي 19 دراسة تقدم أدلة كمية على أثر التحويلات النقدية في الإنفاق على الكحول والتبغ، وهي ما يسميه الاقتصاديون «سلع الإغراء»، في أمريكا اللاتينية وأفريقيا وآسيا بين 1997 وأوائل 2014. ونظرا أيضًا في 11 دراسة سألت المستفيدين عما إذا كانوا قد أنفقوا التحويلات على هذه السلع. ومن بين 44 تقديرًا في الدراسات الـ19، كان 12 سالبًا ودالًا إحصائيًا، و24 سالبًا وغير دال، و6 موجبًا وغير دال، و2 موجبًا ودالًا: أي إن ⁦82%⁩ كانت سالبة. وكانت النتيجتان الموجبتان ضعيفتين، وجاءتا من دراسات غير تجريبية، ولم تصمدا بطريقة أخرى داخل الدراسة نفسها. ويخلص المؤلفان إلى أن المخاوف من إنفاق التحويلات النقدية على الكحول والتبغ لا أساس لها.[2]"
+          ],
+          [
+            "h",
+            "كينيا: 709 دولارات في المتوسط، وتراجع طفيف في الكحول والتبغ"
+          ],
+          [
+            "p",
+            "أرسلت الجمعية الخيرية غيف دايركتلي بين 2011 و2013 تحويلات غير مشروطة عبر المال المحمول إلى أسر فقيرة اختيرت عشوائيًا في قرى غرب كينيا. ودرس يوهانس هاوسهوفر وجيريمي شابيرو 503 أسر مستفيدة. وبلغ متوسط التحويل 709 دولارات بتعادل القوة الشرائية، أي نحو عامين من إنفاق الفرد. وبعد نحو تسعة أشهر من بدء التحويلات، كان الإنفاق الشهري أعلى بـ36 دولارًا (⁦23%⁩) مما لدى أسر القرى نفسها التي لم تتلق شيئًا، وكان متوسط إنفاقها 158 دولارًا؛ وكان أكبر ارتفاع في الطعام، بـ19 دولارًا. وانخفض الإنفاق على الكحول (6.38 دولار شهريًا لدى مجموعة المقارنة) بـ0.93 دولار، وعلى التبغ (1.52 دولار) بـ0.15 دولار، ولم يكن أي منهما دالًا. كما امتلك المستفيدون أصولًا أكثر بـ302 دولار، مقابل 495 دولارًا لدى مجموعة المقارنة.[3]"
+          ],
+          [
+            "p",
+            "ويشير المؤلفان إلى حدّ. فالدراسة كانت أصغر من أن تستبعد زيادات معتدلة: ففي الكحول كان أصغر ارتفاع يمكنها رصده نحو ⁦44%⁩. كما لم تجد طريقة القائمة، التي لا يضطر فيها أحد إلى القول مباشرة إنه يشرب أو يدخن، أي أثر.[3]"
+          ],
+          [
+            "h",
+            "الولايات المتحدة: 1,000 دولار شهريًا لثلاث سنوات"
+          ],
+          [
+            "p",
+            "أعطت دراسة أوبن ريسيرش للمال غير المشروط 1,000 بالغ من ذوي الدخل المنخفض تتراوح أعمارهم بين 21 و40 عامًا في إلينوي وتكساس 1,000 دولار شهريًا لثلاث سنوات، من نوفمبر 2020 إلى أكتوبر 2023، بينما تلقى 2,000 شخص في مجموعة ضابطة 50 دولارًا شهريًا. ووجد ألكسندر بارتيك وزملاؤه أن المستفيدين أنفقوا نحو 310 دولارات شهريًا أكثر من المجموعة الضابطة، التي بلغ متوسط إنفاقها 3,979 دولارًا شهريًا. وكانت أكبر الزيادات في أكبر البنود: الطعام 67 دولارًا، والإيجار 52 دولارًا، وأقساط السيارة وتأمينها 30 دولارًا. وارتفعت الهدايا والقروض للأسرة والتبرعات بـ22 دولارًا، أي نحو ⁦26%⁩، وهي أكبر زيادة بالنسبة المئوية. أما الإنفاق على الكحول والتبغ والماريجوانا والقمار مجتمعة فارتفع بنحو 13 دولارًا شهريًا من 138 دولارًا لدى المجموعة الضابطة: أي ما يزيد قليلًا على ⁦1%⁩ من التحويل، وهو دال عند مستوى ⁦10%⁩ فقط. وارتفع الترفيه والتسلية بـ5 دولارات شهريًا (المجموعة الضابطة: 51 دولارًا)، والعطلات والرحلات بـ7 دولارات (80 دولارًا).[4]"
+          ],
+          [
+            "p",
+            "وفي ورقة الدراسة عن الصحة، لا تجد سارة ميلر وزملاؤها أدلة كثيرة على أن التحويل غيّر تعاطي الناس للكحول والمخدرات. فقد امتنعت المجموعة الضابطة عن الشرب في 27.24 يومًا من آخر 30 يومًا، والمستفيدون في 0.32 يوم أقل. كما كان المستفيدون أقل قولًا إن الشرب أو آثاره أعاقتهم عن أداء مسؤولياتهم. والنتيجتان دالتان عند مستوى ⁦10%⁩ فقط، ولا تصمد أي منهما بعد التصحيح لاختبار نتائج كثيرة. وارتفع عدد المشروبات في آخر 30 يومًا (9.56 لدى المجموعة الضابطة) بـ0.98، دون دلالة. ويكتب المؤلفون أنهم لم يجدوا أدلة على الأضرار في تعاطي المخدرات والكحول التي ربما خشيها البعض.[5]"
+          ],
+          [
+            "h",
+            "ستوكتون: أقل من ⁦1%⁩ من مشتريات البطاقة"
+          ],
+          [
+            "p",
+            "أعطى برنامج ستوكتون للتمكين الاقتصادي في كاليفورنيا 125 من السكان 500 دولار شهريًا لمدة 24 شهرًا ابتداءً من فبراير 2019، على بطاقة خصم مسبقة الدفع. وفي السنة الأولى، حتى فبراير 2020، صنّف الباحثون مشتريات البطاقة حسب نوع المتجر. ففي المتوسط ذهب ⁦36.92%⁩ إلى الطعام، و⁦22.70%⁩ إلى المتاجر الكبرى والسلع العامة (ويُرجح أنها تشمل الطعام من متاجر مثل وولمارت وتارغت)، و⁦11.34%⁩ إلى فواتير الخدمات، و⁦8.77%⁩ إلى صيانة السيارات. وكانت أقل من ⁦1%⁩ من المشتريات المرصودة للتبغ والكحول. لكن نحو ⁦40%⁩ من المال نُقل إلى حساب مصرفي أو سُحب نقدًا، وما أُنفق عليه ليس في هذه الأرقام.[6]"
+          ],
+          [
+            "h",
+            "فانكوفر: 7,500 دولار كندي مرة واحدة لمن فقدوا مساكنهم حديثًا"
+          ],
+          [
+            "p",
+            "في فانكوفر، قدّم باحثون من جامعة كولومبيا البريطانية ومؤسسة خيرية تُعنى بالتغيير الاجتماعي مبلغًا لمرة واحدة قدره 7,500 دولار كندي، وهو ما يعادل المساعدة السنوية للدخل في كولومبيا البريطانية عام 2016، إلى 50 شخصًا كانوا بلا مأوى منذ أقل من عامين؛ وشكّل 65 آخرون المجموعة الضابطة. ولم يُسمح بالمشاركة إلا لمن ليس لديهم تعاطٍ شديد للمخدرات أو الكحول ولا أعراض نفسية شديدة، وقُبل ⁦31%⁩ ممن خضعوا للفحص. وخلال عام، قضى المستفيدون 99 يومًا أقل بلا مأوى، وادخروا 1,160 دولارًا كنديًا أكثر، وأنفقوا في المتوسط 429 دولارًا كنديًا أكثر شهريًا، معظمها على السلع المعمّرة مثل الأثاث وعلى الإيجار والطعام والمواصلات. ولم يختلف إنفاقهم على الكحول والمخدرات والسجائر عن إنفاق المجموعة الضابطة. وكان الإنفاق مبلّغًا عنه ذاتيًا، ويصف المؤلفون التحليلات بأنها استكشافية. ووفّر تقليل الليالي في الملاجئ على المجتمع نحو 777 دولارًا كنديًا لكل مستفيد سنويًا بعد خصم كلفة التحويل.[7]"
+          ],
+          [
+            "h",
+            "مئة ألف ين في اليابان: فيمَ قال الناس إنهم استخدموها"
+          ],
+          [
+            "p",
+            "لا توجد في اليابان تجربة من هذا النوع، لكن استطلاعات سألت عما فعله الناس بالدفعة النقدية الخاصة البالغة 100,000 ين عام 2020. ففي يونيو 2020 سأل معهد أبحاث تابع لشركة نيبون للتأمين على الحياة 2,062 شخصًا تتراوح أعمارهم بين 20 و69 عامًا، مع السماح بأكثر من إجابة: قال ⁦53.7%⁩ إنهم غطّوا نفقات المعيشة، و⁦26.1%⁩ الادخار، و⁦10.1%⁩ السفر الداخلي، وقال ⁦9.7%⁩ إنهم ادخروها كلها. وسأل الاستطلاع عن أوجه الاستخدام لا عن المبالغ.[8] أما مقدار ما أُنفق من الدفعة بحسب بيانات المصارف والأسر فيتناوله {مقال آخر|/essays/japan-special-cash-payment/}."
+          ],
+          [
+            "t",
+            "الدراسة | أين وكم | الكحول والتبغ وما شابه\nإيفانز وبوبوفا (2017) | 19 دراسة في أمريكا اللاتينية وأفريقيا وآسيا | ⁦82%⁩ من 44 تقديرًا سالبة؛ 2 موجبة ودالة، ضعيفة[2]\nهاوسهوفر وشابيرو (2016) | كينيا، 709 دولارات في المتوسط بتعادل القوة الشرائية، 503 أسر | الكحول أقل بـ0.93 دولار والتبغ بـ0.15 دولار شهريًا، غير دال[3]\nبارتيك وزملاؤه؛ ميلر وزملاؤها (2024، نسخة منقحة 2026) | إلينوي وتكساس، 1,000 دولار شهريًا لثلاث سنوات، 1,000 مستفيد | الكحول والتبغ والماريجوانا والقمار أكثر بـ13 دولارًا شهريًا، نحو ⁦1%⁩ من التحويل؛ تغير طفيف في الشرب[4][5]\nبرنامج ستوكتون (2021) | ستوكتون، 500 دولار شهريًا لمدة 24 شهرًا، 125 مستفيدًا | أقل من ⁦1%⁩ من مشتريات البطاقة المرصودة للتبغ والكحول[6]\nدواير وزملاؤه (2023) | فانكوفر، 7,500 دولار كندي مرة واحدة، 50 مستفيدًا | لا فرق في الإنفاق على الكحول والمخدرات والسجائر[7]"
+          ],
+          [
+            "h",
+            "كيف تختلف هذه التحويلات عن الدخل الأساسي"
+          ],
+          [
+            "p",
+            "ذهبت كل هذه المبالغ إلى بعض الناس ولمدة محدودة. ففي كينيا جاء المال مرة واحدة أو على مدى تسعة أشهر. ومبلغ ستوكتون البالغ 500 دولار شهريًا لمدة 24 شهرًا يصل إلى 12,000 دولار، ومبلغ أوبن ريسيرش البالغ 1,000 دولار شهريًا لثلاث سنوات إلى 36,000 دولار؛ وكان المستفيدون يعرفون متى ينتهي. أما الدخل الأساسي فيستمر. و70,000 ين شهريًا تعني 840,000 ين سنويًا؛ وإعطاؤها لكل من في اليابان سيكلّف نحو 103.2 تريليون ين سنويًا، وإعطاء 1,000 دولار شهريًا لكل من في الولايات المتحدة نحو 4.10 تريليون دولار.[9] كما أن العينات كانت مختارة: أسر فقيرة في قرى كينية، وبالغون من ذوي الدخل المنخفض بين 21 و40 عامًا سجّلوا بأنفسهم، وفي فانكوفر أشخاص بلا مأوى ليس لديهم إدمان شديد فقط. أما الدخل الأساسي فسيذهب أيضًا إلى من لديهم إدمان، وإلى من لديهم مال وفير. وهل تغيّر دفعة للجميع الأسعار والأجور والضرائب؟ هذا سؤال آخر يتناوله مقال {هل يسبب الدخل الأساسي التضخم؟|/essays/basic-income-inflation/}؛ وأثر هذه الدفعات في العمل يتناوله مقال {هل يتوقف الناس عن العمل إذا أُعطوا المال؟|/essays/does-cash-make-people-stop-working/}."
+          ],
+          [
+            "h",
+            "ما لا تستطيع البيانات أن تخبرنا به"
+          ],
+          [
+            "p",
+            "معظم أرقام الإنفاق هذه هي ما أبلغ عنه الناس أنفسهم. وقد يقلل المستفيدون من ذكر شربهم؛ وتشير طريقة القائمة في كينيا وبيانات البطاقة في ستوكتون إلى الاتجاه نفسه، لكن بطاقة ستوكتون لا تغطي إلا نحو ⁦60%⁩ من المال. والمدد قصيرة: تسعة أشهر في كينيا، وعام في فانكوفر، وثلاث سنوات في الولايات المتحدة. وهذه متوسطات. فالمتوسط الذي لا يكاد يتحرك قد يخفي قلة تنفق أكثر بكثير على الشراب أو القمار إلى جانب كثيرين ينفقون أقل، وكانت الدراسة الكينية أصغر من أن تستبعد زيادات معتدلة. ونادرًا ما يُقاس القمار وحده: فأوبن ريسيرش تحسبه مع الكحول والتبغ والماريجوانا، ولا تقيس أي من هذه الدراسات الإنفاق على الألعاب أو الاشتراكات على الإنترنت بشكل منفصل. أما ما تتفق عليه الدراسات فهو الاتجاه. فقد ذهب المال الإضافي في معظمه إلى الطعام والسكن والمواصلات ومساعدة الآخرين، ولم يزد الإنفاق على الكحول والتبغ إلا قليلًا أو لم يزد أبدًا. والأرقام مجمّعة مع مصادرها وتواريخها في {⁦temptation-2026.json⁩|/temptation-2026.json}."
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "n": 1,
+          "label": "The Wall Street Journal — “The Brother-Sister Duo Who Want to Keep Anthropic Weird” (21 Nov 2026, paywalled): profile of Dario and Daniela Amodei; while at OpenAI, Dario Amodei suggested immersive video games might ease political strife from AI-induced joblessness (as summarised by Techmeme)",
+          "url": "https://www.wsj.com/tech/ai/anthropic-dario-daniela-amodei-siblings-ipo-be84ad11"
+        },
+        {
+          "n": 2,
+          "label": "David K. Evans and Anna Popova — “Cash Transfers and Temptation Goods”, Economic Development and Cultural Change 65(2), 189–221 (2017); World Bank Policy Research Working Paper 6886 (May 2014): 19 studies, 44 estimates, 82% negative",
+          "url": "https://doi.org/10.1086/689575",
+          "url2": "https://documents1.worldbank.org/curated/en/617631468001808739/pdf/WPS6886.pdf"
+        },
+        {
+          "n": 3,
+          "label": "Johannes Haushofer and Jeremy Shapiro — “The Short-term Impact of Unconditional Cash Transfers to the Poor: Experimental Evidence from Kenya”, Quarterly Journal of Economics 131(4), 1973–2042 (2016); author manuscript on PubMed Central: average transfer $709 PPP, no significant effect on alcohol and tobacco",
+          "url": "https://doi.org/10.1093/qje/qjw025",
+          "url2": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7575201/"
+        },
+        {
+          "n": 4,
+          "label": "Alexander W. Bartik, Elizabeth Rhodes, David E. Broockman, Patrick K. Krause, Sarah Miller and Eva Vivalt — “The Impact of Unconditional Cash Transfers on Consumption and Household Balance Sheets: Experimental Evidence from Two US States”, NBER Working Paper 32784 (August 2024, revised September 2026): $310 a month more spending, about $13 on alcohol, tobacco, marijuana and gambling; OpenResearch, Key Findings: Spending (21 Jul 2024)",
+          "url": "https://www.nber.org/papers/w32784",
+          "url2": "https://www.openresearchlab.org/findings/key-findings-spending"
+        },
+        {
+          "n": 5,
+          "label": "Sarah Miller, Elizabeth Rhodes, Alexander W. Bartik, David E. Broockman, Patrick K. Krause and Eva Vivalt — “Does Income Affect Health? Evidence from a Randomized Controlled Trial of a Guaranteed Income”, NBER Working Paper 32711 (July 2024, revised August 2026), Table 12: alcohol, tobacco and drug use",
+          "url": "https://www.nber.org/papers/w32711"
+        },
+        {
+          "n": 6,
+          "label": "Stacia West, Amy Castro Baker, Sukhi Samra and Erin Coltrera — “Preliminary Analysis: SEED’s First Year”, Stockton Economic Empowerment Demonstration (March 2021): 125 recipients, $500 a month; less than 1% of tracked purchases on tobacco and alcohol",
+          "url": "https://static1.squarespace.com/static/6039d612b17d055cac14070f/t/603ef1194c474b329f33c329/1614737690661/SEED_Preliminary+Analysis-SEEDs+First+Year_Final+Report_Individual+Pages+.pdf"
+        },
+        {
+          "n": 7,
+          "label": "Ryan Dwyer, Anita Palepu, Claire Williams, Daniel Daly-Grafstein and Jiaying Zhao — “Unconditional cash transfers reduce homelessness”, PNAS 120(36), e2222103120 (2023): C$7,500 to 50 people, no difference in spending on alcohol, drugs and cigarettes",
+          "url": "https://doi.org/10.1073/pnas.2222103120"
+        },
+        {
+          "n": 8,
+          "label": "NLI Research Institute — Naoko Kuga, “How households with children used the cash payments” (12 Nov 2021, in Japanese; survey of 2,062 people aged 20–69, June 2020): 53.7% living costs, 26.1% savings",
+          "url": "https://www.nli-research.co.jp/files/topics/69350_ext_18_0.pdf?site=nli"
+        },
+        {
+          "n": 9,
+          "label": "Free Lunch Lab — japan-2026.json and us-2026.json: population with sources, behind the essays on the cost of a basic income in Japan and the United States (CC BY 4.0)",
+          "url": "https://neteru-nyukin.eltociear.workers.dev/japan-2026.json",
+          "url2": "https://neteru-nyukin.eltociear.workers.dev/us-2026.json"
+        }
+      ]
+    },
+    {
       "id": "lottery-winners-keep-working",
       "date": "2026-11-24",
       "related": [
+        "cash-transfers-alcohol-gambling",
         "does-cash-make-people-stop-working",
         "openresearch-cash-study",
         "ai-unemployment-basic-income",
@@ -21757,6 +22452,7 @@ module.exports = {
       "date": "2026-11-19",
       "kind": "opinion",
       "related": [
+        "cash-transfers-alcohol-gambling",
         "lottery-winners-keep-working",
         "basic-income-inflation",
         "ai-company-profits-per-person",
@@ -28829,6 +29525,7 @@ module.exports = {
       "id": "does-cash-make-people-stop-working",
       "date": "2026-11-11",
       "related": [
+        "cash-transfers-alcohol-gambling",
         "lottery-winners-keep-working",
         "traditional-crafts-basic-income",
         "us-basic-income-cost",
@@ -41409,6 +42106,7 @@ module.exports = {
       "id": "openresearch-cash-study",
       "date": "2026-11-04",
       "related": [
+        "cash-transfers-alcohol-gambling",
         "lottery-winners-keep-working",
         "us-basic-income-cost",
         "does-cash-make-people-stop-working",
@@ -42633,6 +43331,7 @@ module.exports = {
       "id": "japan-special-cash-payment",
       "date": "2026-11-04",
       "related": [
+        "cash-transfers-alcohol-gambling",
         "basic-income-inflation",
         "japan-basic-income-cost",
         "thailand-digital-wallet",

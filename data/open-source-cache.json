@@ -1,5 +1,5 @@
 {
-  "fetchedOn": "2026-11-25",
+  "fetchedOn": "2026-11-26",
   "repos": {
     "git.duniter.org:clients/cesium-grp/cesium": {
       "stars": 8,
@@ -10,14 +10,14 @@
     },
     "git.duniter.org:clients/cesium-grp/cesium2s": {
       "stars": 6,
-      "lastCommit": "2026-11-23",
+      "lastCommit": "2026-11-24",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "TypeScript"
     },
     "git.duniter.org:clients/gecko": {
       "stars": 8,
-      "lastCommit": "2026-11-23",
+      "lastCommit": "2026-11-26",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Dart"
@@ -135,7 +135,7 @@
       "language": "JavaScript"
     },
     "github.com:PSLmodels/Tax-Calculator": {
-      "stars": 323,
+      "stars": 324,
       "lastCommit": "2026-11-22",
       "archived": false,
       "license": null,
@@ -150,14 +150,14 @@
     },
     "github.com:PolicyEngine/policyengine-uk": {
       "stars": 53,
-      "lastCommit": "2026-11-19",
+      "lastCommit": "2026-11-25",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
     },
     "github.com:PolicyEngine/policyengine-us": {
-      "stars": 177,
-      "lastCommit": "2026-11-23",
+      "stars": 178,
+      "lastCommit": "2026-11-25",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
@@ -255,7 +255,7 @@
     },
     "github.com:gradido/gradido": {
       "stars": 10,
-      "lastCommit": "2026-11-25",
+      "lastCommit": "2026-11-26",
       "archived": false,
       "license": "Apache-2.0",
       "language": "TypeScript"
@@ -304,21 +304,21 @@
     },
     "github.com:openfisca/openfisca-core": {
       "stars": 252,
-      "lastCommit": "2026-11-16",
+      "lastCommit": "2026-11-24",
       "archived": false,
       "license": "AGPL-3.0",
       "language": "Python"
     },
     "github.com:socialincome-san/public": {
       "stars": 165,
-      "lastCommit": "2026-11-23",
+      "lastCommit": "2026-11-26",
       "archived": false,
       "license": null,
       "language": "TypeScript"
     },
     "github.com:worldcoin/world-id-protocol": {
-      "stars": 43,
-      "lastCommit": "2026-11-23",
+      "stars": 44,
+      "lastCommit": "2026-11-25",
       "archived": false,
       "license": "MIT",
       "language": "Rust"

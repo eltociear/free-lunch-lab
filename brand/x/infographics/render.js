@@ -761,6 +761,64 @@ const GRAPHICS = {
       };
     },
   },
+  // X post image for the data essay cash-transfers-alcohol-gambling: the review of 19 studies, Kenya, OpenResearch and Stockton;
+  // all numbers from data/temptation-2026.json (the file the build checks the essay against). 1200x675, ja/en.
+  'temptation': {
+    w: 1200, h: 675, langs: ['ja', 'en'],
+    build: lang => {
+      const Tp = require('../../../data/temptation-2026.json');
+      const F = Object.fromEntries(Tp.facts.map(x => [x.id, x]));
+      const n = v => v.toLocaleString('en-US');
+      const [epNegSig, epNeg] = F.epSplit.value, neg = Math.round((epNegSig + epNeg) / 44 * 100);
+      const [hsAlc] = F.hsAlcohol.value;
+      const T3 = {
+        ja: { eb: 'データエッセイ', hl: '給付金は酒やギャンブルに消える？', sb: '現金給付の研究：増えたお金の多くは食費、家賃、交通費へ',
+          c: [['世界の研究のレビュー', `${neg}<small>%</small>`, `${F.epStudies.value}の研究の44の推計のうち、酒・たばこの支出がマイナスだった割合`],
+            ['ケニア（GiveDirectly）', `${Math.abs(hsAlc)}<small>ドル減</small>`, `月の酒の支出の変化（有意ではない）。平均${F.hsTransfer.value}ドル（購買力平価）を受け取った${F.hsTransfer.digits[1]}世帯`],
+            ['アメリカ（月1,000ドル）', `+${F.orVice.value}<small>ドル/月</small>`, `酒・たばこ・大麻・ギャンブルの合計。給付額の約1%。支出全体は+${F.orSpend.value}ドル`],
+            ['ストックトン（月500ドル）', `1<small>%未満</small>`, `カードの支払いのうち、たばことお酒。いちばん多いのは食料品で${F.seedShares.value[0]}%`]],
+          big: `バンクーバーで家を失った人に${n(F.nlDesign.value)}カナダドルを1回：酒・薬物・たばこの支出は比較のグループと差なし`, wm: '不労所得研究所', path: 'ja/' },
+        en: { eb: 'Data essay', hl: 'Is cash aid spent on alcohol and gambling?', sb: 'Studies of cash transfers: the extra money went mostly on food, rent and transport',
+          c: [['Review of studies', `${neg}<small>%</small>`, `Of 44 estimates in ${F.epStudies.value} studies, the share showing lower alcohol and tobacco spending`],
+            ['Kenya (GiveDirectly)', `−$${Math.abs(hsAlc)}`, `Change in monthly alcohol spending, not significant. ${F.hsTransfer.digits[1]} households got $${F.hsTransfer.value} PPP on average`],
+            ['US ($1,000 a month)', `+$${F.orVice.value}<small>/mo</small>`, `Alcohol, tobacco, marijuana and gambling together: about 1% of the transfer. All spending +$${F.orSpend.value}`],
+            ['Stockton ($500 a month)', `&lt;1<small>%</small>`, `Of card purchases on tobacco and alcohol. Food was the largest at ${F.seedShares.value[0]}%`]],
+          big: `Vancouver, C$${n(F.nlDesign.value)} once to people who had lost their homes: spending on alcohol, drugs and cigarettes no different from the control group`, wm: 'Free <em>Lunch</em> Lab', path: '' },
+      }[lang];
+      return {
+        bare: true,
+        moon: [1146, 58, 24],
+        body: `
+<p class="eb"><span>${T3.eb}</span></p>
+<h1 class="hl">${T3.hl}</h1>
+<p class="sb">${T3.sb}</p>
+<div class="cards">${T3.c.map(([k, v, d]) => `<section class="c"><p class="k">${k}</p><p class="v">${v}</p><p class="d">${d}</p></section>`).join('')}</div>
+<p class="big">${T3.big}</p>
+<div class="ft">
+  <svg width="56" height="39" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ${lang}">${T3.wm}</p>
+  <p class="url">neteru-nyukin.eltociear.workers.dev/${T3.path}essays/cash-transfers-alcohol-gambling/</p>
+</div>`,
+        css: `
+.page{padding:30px 52px 22px}
+.eb span{display:inline-block;font-size:18px;font-weight:700;color:#14182E;background:#6CF0B0;padding:3px 14px;border-radius:999px}
+.hl{margin-top:10px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 46 : 44}px;line-height:1.12;padding-right:80px;white-space:nowrap;text-shadow:0 6px 40px rgba(120,100,255,.45)}
+.sb{margin-top:8px;font-size:21px;line-height:1.4;color:#C9D0F0}
+.cards{margin-top:16px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;flex:1;min-height:0}
+.c{border-radius:18px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);padding:14px 16px;display:flex;flex-direction:column}
+.k{font-size:18px;color:#A9B2D8;font-weight:700;line-height:1.3}
+.v{margin-top:6px;font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:${lang === 'ja' ? 34 : 36}px;line-height:1.1;color:#FFD66B;white-space:nowrap}
+.v small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:.45em;margin-left:2px}
+.d{margin-top:12px;font-size:21px;line-height:1.45;color:#E3E8FF;word-break:auto-phrase}
+.big{margin:14px 0 12px;font-size:21px;font-weight:900;line-height:1.35;color:#FFD66B;border:2px solid rgba(255,214,107,.6);background:rgba(255,214,107,.08);border-radius:14px;padding:10px 18px}
+.ft{margin-top:auto;display:flex;align-items:center;gap:14px;padding-top:10px;border-top:2px solid rgba(255,255,255,.12)}
+.ft .wm{font-size:24px}
+.ft .wm.ja{font-size:26px}
+.url{margin-left:auto;font-size:15px;color:#EEF1FF;background:rgba(255,255,255,.08);border:2px solid rgba(255,214,107,.55);padding:6px 16px;border-radius:999px}
+`,
+      };
+    },
+  },
   // X post image for the essay billionaire-wealth-per-person: Forbes 2026 total ÷ world population (World Bank 2025), once and
   // at 2% / 5% a year, computed from data/billionaires-2026.json (the same file the build checks the essay table against). 1200x675.
   'billionaire': {

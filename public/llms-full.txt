@@ -836,6 +836,81 @@ Cautions: Whether rewards need Orb verification is unknown, and we have not test
 
 ## Essays
 
+### Is cash aid spent on alcohol and gambling? What the studies found
+
+- Page: https://neteru-nyukin.eltociear.workers.dev/essays/cash-transfers-alcohol-gambling/
+- Published: 2026-11-26
+
+On 21 November 2026 the Wall Street Journal published a profile of Anthropic’s chief executive, Dario Amodei, and its president, Daniela Amodei. It reported that while he was at OpenAI, Dario Amodei had suggested that immersive video games might ease the political strife caused by people losing their jobs to AI.[1] A post on X spreading the report was viewed about 5.6 million times, and mocking replies followed: give people a basic income and they will spend it on drugs, OnlyFans and games. In Japanese the same idea comes up whenever cash handouts are discussed: the money will vanish on drink and gambling. What people do with cash they are given has been measured many times. This essay sets out those studies; it does not check the posts.
+
+#### A review of 19 studies: alcohol and tobacco did not rise
+
+David Evans and Anna Popova of the World Bank reviewed 19 studies with quantitative evidence on how cash transfers affect spending on alcohol and tobacco, which economists call “temptation goods”, in Latin America, Africa and Asia, from 1997 to early 2014. They also looked at 11 studies that asked recipients whether they had used transfers on such goods. Of the 44 estimates in the 19 studies, 12 were negative and significant, 24 negative and not significant, 6 positive and not significant, and 2 positive and significant: 82% were negative. The two positive results were weak, came from non-experimental studies and did not hold across methods within the same study. The authors conclude that concerns about cash transfers being spent on alcohol and tobacco are unfounded.[2]
+
+#### Kenya: $709 on average, alcohol and tobacco slightly down
+
+The charity GiveDirectly sent unconditional transfers by mobile money to randomly chosen poor households in villages in western Kenya between 2011 and 2013. Johannes Haushofer and Jeremy Shapiro studied 503 recipient households. The average transfer was $709 at purchasing power parity (PPP), almost two years of spending per person. About nine months after the transfers began, monthly spending was $36 (23%) higher than in households in the same villages that received nothing, whose spending averaged $158; food rose most, by $19. Spending on alcohol (in the comparison group, $6.38 a month) changed by −$0.93 and on tobacco ($1.52) by −$0.15, neither significantly. Recipients also held $302 more in assets, against $495 in the comparison group.[3]
+
+The authors point out a limit. The study was too small to rule out moderate increases: for alcohol, the smallest rise it could have detected was about 44%. A list method, in which people do not have to say directly whether they drink or smoke, also found no effect.[3]
+
+#### The United States: $1,000 a month for three years
+
+The OpenResearch Unconditional Cash Study gave 1,000 lower-income adults aged 21 to 40 in Illinois and Texas $1,000 a month for three years, from November 2020 to October 2023, while 2,000 people in a control group received $50 a month. Alexander Bartik and colleagues found that recipients spent about $310 a month more than the control group, whose spending averaged $3,979 a month. The biggest increases were on the biggest items: food $67, rent $52 and car payments and insurance $30. Gifts and loans to family and to charity rose by $22, almost 26%, the largest rise in percentage terms. Spending on alcohol, tobacco, marijuana and gambling, counted together, rose by about $13 a month from $138 in the control group: a little over 1% of the transfer, and significant only at the 10% level. Recreation and entertainment rose by $5 a month (control group: $51), and vacations and trips by $7 ($80).[4]
+
+In the study’s health paper, Sarah Miller and colleagues do not find much evidence that the transfer changed people’s use of alcohol and drugs. The control group went without a drink on 27.24 of the last 30 days; recipients on 0.32 fewer days. Recipients were also less likely to say that drinking or hangovers got in the way of their responsibilities. Both results are significant only at the 10% level, and neither survives the adjustment for testing many outcomes. The number of drinks in the last 30 days (9.56 in the control group) rose by 0.98, not significantly. The authors write that they found no evidence of the harmful effects on drug and alcohol abuse that some may have feared.[5]
+
+#### Stockton: less than 1% of card purchases
+
+The Stockton Economic Empowerment Demonstration (SEED) in California gave 125 residents $500 a month for 24 months from February 2019, on a prepaid debit card. For the first year, to February 2020, the researchers sorted card purchases by type of shop. On average, 36.92% went on food, 22.70% on sales and merchandise (likely also food at stores such as Walmart and Target), 11.34% on utilities and 8.77% on car care. Less than 1% of tracked purchases were for tobacco and alcohol. About 40% of the money, however, was moved to a bank account or withdrawn as cash, and what it was spent on is not in these figures.[6]
+
+#### Vancouver: C$7,500 once, for people who had just lost their homes
+
+In Vancouver, researchers at the University of British Columbia and the charity Foundations for Social Change gave a one-off C$7,500, the annual income assistance in British Columbia in 2016, to 50 people who had been homeless for less than two years; 65 others were the control group. Only people without severe drug use, alcohol use or mental health symptoms could take part, and 31% of those screened were admitted. Over a year, recipients spent 99 fewer days homeless, kept C$1,160 more in savings and spent C$429 more a month on average, mainly on durable goods such as furniture, rent, food and transit. Their spending on alcohol, drugs and cigarettes was no different from the control group’s. Spending was self-reported, and the authors describe the analyses as exploratory. Fewer nights in shelters saved society about C$777 per recipient a year after the cost of the transfer.[7]
+
+#### Japan’s ¥100,000: what people said they used it for
+
+Japan has no trial of this kind, but surveys asked what people did with the ¥100,000 Special Cash Payment of 2020. In June 2020 the NLI Research Institute asked 2,062 people aged 20 to 69, with more than one answer allowed: 53.7% said covering living costs, 26.1% savings and 10.1% domestic travel, and 9.7% said they had saved all of it. The survey asked about uses, not amounts.[8] How much of the payment was spent, according to bank and household data, is covered in another essay (https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/).
+
+| Study | Where and how much | Alcohol, tobacco and the like |
+| --- | --- | --- |
+| Evans and Popova (2017) | 19 studies in Latin America, Africa and Asia | 82% of 44 estimates negative; 2 positive and significant, weak[2] |
+| Haushofer and Shapiro (2016) | Kenya, $709 PPP on average, 503 households | Alcohol −$0.93 and tobacco −$0.15 a month, not significant[3] |
+| Bartik et al.; Miller et al. (2024, revised 2026) | Illinois and Texas, $1,000 a month for three years, 1,000 recipients | Alcohol, tobacco, marijuana and gambling +$13 a month, about 1% of the transfer; little change in drinking[4][5] |
+| SEED (2021) | Stockton, $500 a month for 24 months, 125 recipients | Less than 1% of tracked card purchases on tobacco and alcohol[6] |
+| Dwyer et al. (2023) | Vancouver, C$7,500 once, 50 recipients | Spending on alcohol, drugs and cigarettes no different[7] |
+
+#### How these transfers differ from a basic income
+
+All of these went to some people, for a limited time. In Kenya the money came once or over nine months. Stockton’s $500 a month for 24 months adds up to $12,000, and OpenResearch’s $1,000 a month for three years to $36,000; recipients knew when it would end. A basic income keeps coming. ¥70,000 a month is ¥840,000 a year; for everyone in Japan it would cost about ¥103.2 trillion a year, and $1,000 a month for everyone in the United States about $4.10 trillion.[9] The samples were also chosen: poor households in Kenyan villages, lower-income adults aged 21 to 40 who signed up, and in Vancouver only homeless people without severe addiction. A basic income would also go to people with an addiction, and to people with plenty of money. Whether a payment to everyone changes prices, wages and taxes is a separate question, covered in Does a basic income cause inflation? (https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-inflation/); what such payments do to work is covered in Does cash make people stop working? (https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/).
+
+#### What the data can’t tell us
+
+Most of these spending figures are what people reported. Recipients may say less about drinking than they do; Kenya’s list method and Stockton’s card data point the same way, but Stockton’s card covers only about 60% of the money. The horizons are short: nine months in Kenya, a year in Vancouver, three years in the United States. And these are averages. An average that barely moves can hide a few people who spend much more on drink or gambling alongside many who spend less, and the Kenyan study was too small to rule out moderate rises. Gambling is rarely measured on its own: OpenResearch counts it together with alcohol, tobacco and marijuana, and none of these studies measures spending on games or online subscriptions separately. What the studies agree on is the direction. The extra money went mostly on food, housing, transport and help for others, and spending on alcohol and tobacco rose little or not at all. The figures in this essay are collected, with their sources and dates, in temptation-2026.json (https://neteru-nyukin.eltociear.workers.dev/temptation-2026.json).
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/openresearch-cash-study/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/japan-special-cash-payment/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-inflation/
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/ai-unemployment-basic-income/
+
+Sources:
+
+1. The Wall Street Journal — “The Brother-Sister Duo Who Want to Keep Anthropic Weird” (21 Nov 2026, paywalled): profile of Dario and Daniela Amodei; while at OpenAI, Dario Amodei suggested immersive video games might ease political strife from AI-induced joblessness (as summarised by Techmeme): https://www.wsj.com/tech/ai/anthropic-dario-daniela-amodei-siblings-ipo-be84ad11
+2. David K. Evans and Anna Popova — “Cash Transfers and Temptation Goods”, Economic Development and Cultural Change 65(2), 189–221 (2017); World Bank Policy Research Working Paper 6886 (May 2014): 19 studies, 44 estimates, 82% negative: https://doi.org/10.1086/689575 (also https://documents1.worldbank.org/curated/en/617631468001808739/pdf/WPS6886.pdf)
+3. Johannes Haushofer and Jeremy Shapiro — “The Short-term Impact of Unconditional Cash Transfers to the Poor: Experimental Evidence from Kenya”, Quarterly Journal of Economics 131(4), 1973–2042 (2016); author manuscript on PubMed Central: average transfer $709 PPP, no significant effect on alcohol and tobacco: https://doi.org/10.1093/qje/qjw025 (also https://pmc.ncbi.nlm.nih.gov/articles/PMC7575201/)
+4. Alexander W. Bartik, Elizabeth Rhodes, David E. Broockman, Patrick K. Krause, Sarah Miller and Eva Vivalt — “The Impact of Unconditional Cash Transfers on Consumption and Household Balance Sheets: Experimental Evidence from Two US States”, NBER Working Paper 32784 (August 2024, revised September 2026): $310 a month more spending, about $13 on alcohol, tobacco, marijuana and gambling; OpenResearch, Key Findings: Spending (21 Jul 2024): https://www.nber.org/papers/w32784 (also https://www.openresearchlab.org/findings/key-findings-spending)
+5. Sarah Miller, Elizabeth Rhodes, Alexander W. Bartik, David E. Broockman, Patrick K. Krause and Eva Vivalt — “Does Income Affect Health? Evidence from a Randomized Controlled Trial of a Guaranteed Income”, NBER Working Paper 32711 (July 2024, revised August 2026), Table 12: alcohol, tobacco and drug use: https://www.nber.org/papers/w32711
+6. Stacia West, Amy Castro Baker, Sukhi Samra and Erin Coltrera — “Preliminary Analysis: SEED’s First Year”, Stockton Economic Empowerment Demonstration (March 2021): 125 recipients, $500 a month; less than 1% of tracked purchases on tobacco and alcohol: https://static1.squarespace.com/static/6039d612b17d055cac14070f/t/603ef1194c474b329f33c329/1614737690661/SEED_Preliminary+Analysis-SEEDs+First+Year_Final+Report_Individual+Pages+.pdf
+7. Ryan Dwyer, Anita Palepu, Claire Williams, Daniel Daly-Grafstein and Jiaying Zhao — “Unconditional cash transfers reduce homelessness”, PNAS 120(36), e2222103120 (2023): C$7,500 to 50 people, no difference in spending on alcohol, drugs and cigarettes: https://doi.org/10.1073/pnas.2222103120
+8. NLI Research Institute — Naoko Kuga, “How households with children used the cash payments” (12 Nov 2021, in Japanese; survey of 2,062 people aged 20–69, June 2020): 53.7% living costs, 26.1% savings: https://www.nli-research.co.jp/files/topics/69350_ext_18_0.pdf?site=nli
+9. Free Lunch Lab — japan-2026.json and us-2026.json: population with sources, behind the essays on the cost of a basic income in Japan and the United States (CC BY 4.0): https://neteru-nyukin.eltociear.workers.dev/japan-2026.json (also https://neteru-nyukin.eltociear.workers.dev/us-2026.json)
+
 ### Do lottery winners keep working? What the studies of winners found
 
 - Page: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
@@ -881,6 +956,8 @@ Experiments that pay money every month look at that question more directly. Our 
 #### What the data can’t tell us
 
 The lottery studies measure earnings, hours and employment. They do not say whether the time not spent working went to care, study, a new business or video games. They cover individual winners in a society where almost everyone else still works, not a whole country that receives the same payment. And the estimates differ in what they measure: cents per dollar of income in a period, or a share of a lump-sum prize per year, so they should not be compared as if they were the same number. What they agree on is the direction and the order of size: winners kept working in most cases and earned somewhat less, the response lasted for years, and in the United States lower-income winners were more likely to stop working altogether. The figures are collected, with sources and dates, in lottery-2026.json (https://neteru-nyukin.eltociear.workers.dev/lottery-2026.json).
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/cash-transfers-alcohol-gambling/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/does-cash-make-people-stop-working/
 
@@ -1136,6 +1213,8 @@ Start a basic income of ¥10,000 a month for everyone now. It would cost ¥14.7 
 Alongside it, set up a public AI fund that takes a stake in the wealth AI creates, through shares, a levy on large-scale compute or a share of AI profits, and pays a dividend on top of the base, Alaska-style. As AI’s share of income grows, so does the payment. Keep medical assistance and support for disability and care, which cash cannot replace.
 
 If Lin is wrong, Japan gets a modest floor that reaches people today’s welfare misses. If he is right, the system exists before the jobs go, not after. Either way, the time to build it is while it is still cheap.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/cash-transfers-alcohol-gambling/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
 
@@ -1957,6 +2036,8 @@ Many pilot results rest on self-reported surveys. Estimates also move as better 
 Opinion: Across more than fifty years of experiments, in rich countries and poor ones, no study found that cash makes people stop working. Most found small reductions or none, and some found more work. Where work fell, it fell by hours a week or weeks a year, mostly for parents, the young and people between jobs.
 
 Opinion: That is not the same as “basic income has no effect on work”. OpenResearch and the 1970s experiments measured real, if modest, reductions, and those numbers belong in any honest costing. The better question is not “will people stop working?” but “how much less, who, and is it worth it?” The data answer the first two parts. The third is a judgement for each of us.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/cash-transfers-alcohol-gambling/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
 
@@ -3173,6 +3254,8 @@ Opinion: Altman asked an honest question in 2016 and paid for a careful answer, 
 
 Opinion: If you share one line from this study, make it the accurate one: 1,000 lower-income people received $1,000 a month for three years; they worked about 1.3 hours a week less, spent mostly on basics, felt better for a year, and many used the money to choose how they spent their time. Read it the way this site reads every free lunch: who paid, who received, and for how long.
 
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/cash-transfers-alcohol-gambling/
+
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/lottery-winners-keep-working/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/us-basic-income-cost/
@@ -3296,6 +3379,8 @@ Opinion: The 2020 payment was a big experience: the same amount of cash, with no
 Opinion: But it was not a basic income experiment. It was money paid once, into the household head’s account, in the middle of a pandemic. It does not answer the question of how people’s work and lives change when money is certain to arrive every month. For that we need to keep looking at schemes that pay again and again.
 
 Opinion: We would rather not remember the ¥100,000 as “wasted,” or as “a rehearsal for basic income,” but by its proper name: a one-off emergency payment to everyone. That alone was a big enough event.
+
+Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/cash-transfers-alcohol-gambling/
 
 Related essay: https://neteru-nyukin.eltociear.workers.dev/essays/basic-income-inflation/
 
@@ -4014,7 +4099,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-25. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-26. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -4119,7 +4204,7 @@ Early open protocol (2010–2012, built on OpenPGP) for currencies that pay ever
 - Language: TypeScript
 - License: Apache-2.0
 - Stars: 10
-- Last commit: 2026-11-25
+- Last commit: 2026-11-26
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/gradido/
 
 Server, web wallet and admin tools for Gradido, which creates money for each person as an “active basic income” for contributing to the community
@@ -4266,7 +4351,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: TypeScript
 - License: AGPL-3.0
 - Stars: 6
-- Last commit: 2026-11-23
+- Last commit: 2026-11-24
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app
@@ -4278,7 +4363,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-23
+- Last commit: 2026-11-26
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre currency on Duniter v2s
@@ -4373,7 +4458,7 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Language: TypeScript
 - License: MIT (LICENSE)
 - Stars: 165
-- Last commit: 2026-11-23
+- Last commit: 2026-11-26
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
 
@@ -4395,8 +4480,8 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Group: Proof of personhood
 - Language: Rust
 - License: MIT
-- Stars: 43
-- Last commit: 2026-11-23
+- Stars: 44
+- Last commit: 2026-11-25
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -4461,8 +4546,8 @@ Reference mobile app for BrightID: people connect with others they know, and ana
 - Group: Simulators & research
 - Language: Python
 - License: AGPL-3.0
-- Stars: 177
-- Last commit: 2026-11-23
+- Stars: 178
+- Last commit: 2026-11-25
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 
@@ -4473,7 +4558,7 @@ Rules engine for the US tax and benefit system, used to model the cost and pover
 - Language: Python
 - License: AGPL-3.0
 - Stars: 53
-- Last commit: 2026-11-19
+- Last commit: 2026-11-25
 
 Microsimulation model of the UK tax and benefit system, including the UBI Center’s basic income parameters, used to estimate the cost and poverty impact of UBI proposals
 
@@ -4494,7 +4579,7 @@ Code that reproduces UBI Center’s Blank Slate UBI report for the UK: it search
 - Group: Simulators & research
 - Language: Python
 - License: CC0-1.0 (LICENSE)
-- Stars: 323
+- Stars: 324
 - Last commit: 2026-11-22
 
 Microsimulation model of US federal income and payroll taxes, with built-in UBI parameters (such as UBI_u18 for children) for estimating the cost and distributional effects of a basic income
@@ -4517,7 +4602,7 @@ UBI analyses from the Policy Simulation Library, including the code behind an AE
 - Language: Python
 - License: AGPL-3.0
 - Stars: 252
-- Last commit: 2026-11-16
+- Last commit: 2026-11-24
 
 Open engine for writing tax and benefit rules as code; country models built on it are used to simulate basic income schemes
 
