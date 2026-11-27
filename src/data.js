@@ -2937,6 +2937,16 @@ module.exports = {
   ],
   "NEWS": [
     {
+      "date": "2026-11-27",
+      "en": "Updated the Worker Burden Relief Payment page and the roundup of national benefits: the censure motion against the education minister, submitted by 8 opposition groups on 26 November, rejected by the House of Councillors plenary on 27 November by 124 votes to 120, and the fuel subsidy rate of ¥27.3 a litre from 26 November",
+      "ja": "就業者負担軽減支援金のページと国の給付金の一覧を更新（11月26日に野党8会派が提出した文部科学相の問責決議案を27日に参議院本会議が賛成120、反対124で否決、ガソリンなどの補助の11月26日以降の支給単価27.3円）",
+      "zh": "更新就业者负担减轻支援金页面和国家给付金一览：8个在野党会派11月26日提出的针对文部科学大臣的问责决议案，于27日在参议院全体会议上以赞成120票、反对124票被否决，以及11月26日起每升27.3日元的燃料补贴",
+      "hi": "वर्कर बर्डन रिलीफ़ पेमेंट पेज और राष्ट्रीय भुगतानों की सूची अपडेट की: 8 विपक्षी समूहों का 26 नवंबर को पेश शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव 27 नवंबर को पार्षद सभा के पूर्ण सदन में पक्ष में 120 और विरोध में 124 मतों से ख़ारिज, और 26 नवंबर से ईंधन सब्सिडी की दर 27.3 येन प्रति लीटर",
+      "es": "Actualizadas la página del pago de alivio de cargas para trabajadores y la lista de ayudas nacionales: la moción de censura contra el ministro de Educación, presentada por 8 grupos de la oposición el 26 de noviembre, rechazada por el pleno de la Cámara de Consejeros el 27 de noviembre por 124 votos contra 120, y el subsidio a los combustibles de 27,3 yenes por litro desde el 26 de noviembre",
+      "de": "Seite zur Entlastungszahlung für Erwerbstätige und Übersicht der staatlichen Leistungen aktualisiert: der von 8 Oppositionsgruppen am 26. November eingebrachte Tadelsantrag gegen den Bildungsminister, vom Plenum des Oberhauses am 27. November mit 124 zu 120 Stimmen abgelehnt, und der Kraftstoffzuschuss von 27,3 Yen pro Liter ab dem 26. November",
+      "ar": "حدّثنا صفحة دفعة تخفيف العبء عن العاملين وقائمة المدفوعات الوطنية: رفض الجلسة العامة لمجلس المستشارين في 27 نوفمبر مشروع قرار اللوم ضد وزير التعليم الذي قدّمته 8 كتل معارضة في 26 نوفمبر، بأغلبية 124 صوتًا مقابل 120، ودعم الوقود بمعدل 27.3 ين للتر منذ 26 نوفمبر"
+    },
+    {
       "date": "2026-11-26",
       "en": "Published the data essay “A basic income by lottery: is Ireland’s arts scheme a basic income?”",
       "ja": "データエッセイ『抽選で選ぶ「ベーシックインカム」 アイルランドの芸術家向け制度は、BIなのか』を公開",
@@ -57093,7 +57103,7 @@ module.exports = {
   "WRP": {
     "id": "worker-relief-payment",
     "published": "2026-11-20",
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "essays": [
       "refundable-tax-credit-vs-basic-income",
       "generative-ai-jobs-basic-income"
@@ -57105,6 +57115,16 @@ module.exports = {
       "f": 60000
     },
     "log": [
+      {
+        "date": "2026-11-27",
+        "ja": "11月26日に野党8会派が提出した文部科学相の問責決議案を、27日に参議院本会議が賛成120、反対124で否決したことと、与党が審議の早期再開を野党に求める方針であることを追加。採決の日程は11月27日の時点で報じられていません",
+        "en": "Added the censure motion against the education minister, submitted by 8 opposition groups on 26 November and rejected by the House of Councillors plenary on 27 November by 124 votes to 120, and the ruling side’s plan to ask the opposition to resume deliberations soon. No vote date for the bill has been reported as of 27 November",
+        "zh": "加入8个在野党会派于11月26日提出的针对文部科学大臣的问责决议案，以及参议院全体会议27日以赞成120票、反对124票将其否决，和执政党打算请在野党尽早恢复审议。截至11月27日，尚未有该法案表决日程的报道",
+        "hi": "शिक्षा मंत्री के ख़िलाफ़ 8 विपक्षी समूहों के 26 नवंबर को पेश निंदा प्रस्ताव, पार्षद सभा के पूर्ण सदन द्वारा 27 नवंबर को पक्ष में 120 और विरोध में 124 मतों से उसके ख़ारिज होने, और सत्ता पक्ष की विपक्ष से जल्द बहस फिर शुरू करने को कहने की योजना को जोड़ा गया। 27 नवंबर तक विधेयक पर मतदान की किसी तारीख़ की ख़बर नहीं है",
+        "es": "Añadida la moción de censura contra el ministro de Educación, presentada por 8 grupos de la oposición el 26 de noviembre y rechazada por el pleno de la Cámara de Consejeros el 27 de noviembre por 124 votos contra 120, y el plan del oficialismo de pedir a la oposición que reanude pronto los debates. A 27 de noviembre no se ha informado de fecha para la votación del proyecto",
+        "de": "Ergänzt um den Tadelsantrag gegen den Bildungsminister, den 8 Oppositionsgruppen am 26. November einbrachten und das Plenum des Oberhauses am 27. November mit 124 zu 120 Stimmen ablehnte, sowie den Plan der Regierungsseite, die Opposition zu bitten, die Beratungen bald wieder aufzunehmen. Stand 27. November ist kein Abstimmungstermin für den Entwurf gemeldet",
+        "ar": "أضفنا مشروع قرار اللوم ضد وزير التعليم الذي قدّمته 8 كتل معارضة في 26 نوفمبر ورفضته الجلسة العامة لمجلس المستشارين في 27 نوفمبر بأغلبية 124 صوتًا مقابل 120، وخطة الأغلبية الحاكمة لمطالبة المعارضة باستئناف المداولات سريعًا. وحتى 27 نوفمبر لم يُعلن موعد لتصويت المشروع"
+      },
       {
         "date": "2026-11-26",
         "ja": "11月20日の地方公聴会と11月24日の中央公聴会（公述人4人）、24日に参議院の野党6党が文部科学相の答弁を理由に審議に当面応じない方針で一致したこと、25日に示された問責決議案の予定（26日提出、27日採決の見通し）、2029年度以降の最大年27万円程度の案（朝日新聞の報道）を追加。採決の日程と会期の延長は11月26日の時点で未定",
@@ -57328,6 +57348,14 @@ module.exports = {
           "en": "Asahi Shimbun via Yahoo! News — Up to ¥270,000 a year under consideration for couples with two children in the relief payment after the tax cut (24 Nov 2026, in Japanese)"
         },
         "url": "https://news.yahoo.co.jp/articles/a230baefbc16dfb47d2a46bae9ac8b364c997e1c"
+      },
+      {
+        "n": 25,
+        "label": {
+          "ja": "時事通信「参院、関文科相問責案を否決　与党、消費税審議再開要請へ」（2026年11月27日）",
+          "en": "Jiji Press — House of Councillors rejects the censure motion against Education Minister Seki; the ruling side to ask for deliberations on the consumption tax bills to resume (27 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.jiji.com/jc/article?k=2026112700415&g=pol"
       }
     ],
     "ja": {
@@ -57335,7 +57363,7 @@ module.exports = {
       "short": "就業者負担軽減支援金",
       "eb": "制度のまとめ",
       "desc": "就業者負担軽減支援金はいつから、いくら、誰が対象？ 1人最大約2万5,000円・子ども1人約5,000円の検討案、年収100万〜450万円という目安、まだ決まっていないことを出典と日付つきで整理。わが家の金額も計算できます。",
-      "asOf": "2026年11月時点の情報です（最終確認：2026年11月26日）。法案はまだ成立していません。",
+      "asOf": "2026年11月時点の情報です（最終確認：2026年11月27日）。法案はまだ成立していません。",
       "lead": [
         "就業者負担軽減支援金は、働く中低所得の人に国が現金を配る新しい制度です。食料品の消費税を2年間8%から1%に下げる法案の中でつくられ、政府は「給付付き税額控除」の第一歩と位置づけています。[2][4]",
         "法案は2026年11月6日に衆議院を通過し、いまは参議院で審議されています。金額と年収の線は法律ではなく政令で決めることになっていて、まだ決まっていません。このページでは、法案や政府の資料に書いてあること、政府が検討中と答弁したこと、報道された案を分けて、数字ごとに出典と日付を示します。新しい情報が出たら更新します。[3][5][6]"
@@ -57367,7 +57395,7 @@ module.exports = {
       "open": [
         "年収の上限と下限。政令で決めます。下限は、片山財務相が11月19日に56万円程度とする方向で検討すると答弁しています。[3][18]",
         "最終的な金額。上の金額は検討中の数字で、政令で決まります。[3][8]",
-        "法案が成立するかどうか。参議院で審議中ですが、11月24日から野党が審議に当面応じない方針で、採決の日程は決まっていません。会期末は12月12日で、延長は決まっていません。[6][21][23][16]",
+        "法案が成立するかどうか。参議院で審議中です。11月24日から野党が審議に当面応じない方針でしたが、27日に参議院本会議が文部科学相の問責決議案を賛成120、反対124で否決し、与党は審議の早期再開を求める方針です。採決の日程は報じられていません。会期末は12月12日で、延長は決まっていません。[6][21][23][25][16]",
         "最初に振り込まれる時期と、公金受取口座を登録していない人の手続き。[13]"
       ],
       "legend": "：このページの札の意味です。",
@@ -57441,7 +57469,7 @@ module.exports = {
             "参議院では11月11日に「消費税・支援金法案に関する特別委員会」に付託されました。特別委員会は11月20日に青森県で地方公聴会を、24日に中央公聴会を開き、中央公聴会では4人の公述人が意見を述べました。[6][20][19]",
             "同じ11月24日、参議院の野党6党の国会対策委員長は、関芳弘文部科学相が特別委員会で政治資金パーティーについて事実と異なる答弁をしたとして、この法案の審議に当面応じない方針で一致し、関氏への問責決議案を提出することも決めました。関氏は19日の特別委員会で、官僚を呼んだパーティーは2024年の2件だけと説明し、20日に、ほかにも3件あったと明らかにしていました。高市首相は、関氏は説明責任を果たしていると述べています。[21][22]",
             "時事通信によると、野党は参議院での日程の協議に応じていません。立憲民主党の国会対策委員長は25日、問責決議案を26日に提出し、27日の本会議で採決される見通しを示しました。木原官房長官は25日、「関氏にしっかり説明を行ってもらう」と述べ、続投させる考えを示しています。[23]",
-            "11月26日の時点で、採決の日程は決まっていません。参議院では与党が過半数に届いていません。会期は12月12日までで、延長は決まっていません。[6][16][17]"
+            "26日に野党8会派が関氏の問責決議案を参議院に提出し、27日の本会議で賛成120、反対124で否決されました。時事通信によると、与党は食料品の消費税減税関連法案の審議を早期に再開するよう野党に求める方針です。[25]11月27日の時点で、この法案の採決の日程は報じられていません。参議院では与党が過半数に届いていません。会期は12月12日までで、延長は決まっていません。[6][16][17]"
           ]
         ]
       ],
@@ -57538,6 +57566,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "2026年11月27日",
+          "参議院本会議が、野党8会派が26日に提出した文部科学相の問責決議案を賛成120、反対124で否決。与党は審議の早期再開を野党に求める方針。[25]",
+          "reported"
+        ],
+        [
           "2026-12-12",
           "2026年12月12日",
           "国会の会期末。それまでに成立するかは未定。[16]",
@@ -57578,7 +57612,7 @@ module.exports = {
         ],
         [
           "法案はいつ成立しますか？",
-          "まだわかりません。参議院の特別委員会で審議中ですが、11月24日から野党が審議に当面応じない方針で、11月26日の時点で採決の日程は決まっていません。会期末は12月12日で、延長は決まっていません。[21][23][16]"
+          "まだわかりません。参議院の特別委員会で審議中です。11月24日から野党が審議に当面応じない方針でしたが、27日に参議院本会議が文部科学相の問責決議案を賛成120、反対124で否決し、与党は審議の早期再開を求める方針です。11月27日の時点で採決の日程は報じられていません。会期末は12月12日で、延長は決まっていません。[21][23][25][16]"
         ],
         [
           "申請は必要ですか？",
@@ -57660,7 +57694,7 @@ module.exports = {
       "short": "Worker Burden Relief Payment",
       "eb": "Policy explainer",
       "desc": "Japan’s Worker Burden Relief Payment: when, how much and who qualifies. Up to about ¥25,000 per worker plus ¥5,000 per child under consideration, incomes of ¥1–4.5 million as a rough guide, what is still open. With a calculator.",
-      "asOf": "Information as of November 2026 (last checked 26 November 2026). The bill has not yet become law.",
+      "asOf": "Information as of November 2026 (last checked 27 November 2026). The bill has not yet become law.",
       "lead": [
         "The Worker Burden Relief Payment (shūgyōsha futan keigen shienkin) is a new cash payment from the Japanese state to low- and middle-income people who work. It is created by the same bill that cuts the consumption tax on food from 8% to 1% for two years, and the government calls it the first step toward a refundable tax credit.[2][4]",
         "The bill passed the House of Representatives on 6 November 2026 and is now before the House of Councillors. The amounts and the income lines will be set by cabinet order, not in the law, and have not been decided. This page keeps apart what the bill and government documents say, what the government has said it is considering, and what has been reported, and gives a source and date for every figure. We update it as new facts come in.[3][5][6]"
@@ -57692,7 +57726,7 @@ module.exports = {
       "open": [
         "The income floor and ceiling, to be set by cabinet order. On 19 November the Finance Minister said a floor of about ¥560,000 is being considered.[3][18]",
         "The final amounts. The figures above are under consideration and will be set by cabinet order.[3][8]",
-        "Whether the bill passes. It is before the House of Councillors, but since 24 November the opposition has refused to take part in deliberations for the time being, and no vote has been scheduled. The session ends on 12 December, and no extension has been decided.[6][21][23][16]",
+        "Whether the bill passes. It is before the House of Councillors. Since 24 November the opposition has refused to take part in deliberations for the time being, but on 27 November the plenary rejected the censure motion against the education minister by 124 votes to 120, and the ruling side plans to ask for deliberations to resume soon. No vote date has been reported. The session ends on 12 December, and no extension has been decided.[6][21][23][25][16]",
         "When the first payment arrives, and how people without a registered account will claim.[13]"
       ],
       "legend": ": what the labels on this page mean.",
@@ -57766,7 +57800,7 @@ module.exports = {
             "In the House of Councillors it was referred on 11 November to the Special Committee on the consumption tax and relief payment bill. The committee held a regional public hearing in Aomori Prefecture on 20 November and a central public hearing on 24 November, where 4 witnesses gave their views.[6][20][19]",
             "On the same day, 24 November, the Diet affairs chiefs of 6 opposition parties in the House of Councillors agreed not to take part in deliberations on the bill for the time being, saying that Education Minister Yoshihiro Seki had given a false answer in the special committee about his political fundraising parties, and decided to submit a censure motion against him. On 19 November Seki had told the committee that officials attended only 2 such parties, in 2024; on 20 November he disclosed 3 more. Prime Minister Takaichi has said Seki is fulfilling his duty to explain.[21][22]",
             "According to Jiji Press, the opposition is not taking part in talks on the House of Councillors’ schedule. On 25 November the Constitutional Democratic Party’s Diet affairs chief said the censure motion would be submitted on 26 November and was expected to be put to a vote in the plenary on 27 November. Chief Cabinet Secretary Minoru Kihara said on 25 November that Seki would “explain properly”, indicating that he stays in office.[23]",
-            "As of 26 November no vote has been scheduled. The ruling parties lack a majority in the House of Councillors. The session runs until 12 December, and no extension has been decided.[6][16][17]"
+            "On 26 November 8 opposition groups submitted a censure motion against Seki in the House of Councillors, and on 27 November the plenary rejected it by 124 votes to 120. According to Jiji Press, the ruling side plans to ask the opposition to resume deliberations on the bill soon.[25] As of 27 November no vote on the bill has been reported. The ruling parties lack a majority in the House of Councillors. The session runs until 12 December, and no extension has been decided.[6][16][17]"
           ]
         ]
       ],
@@ -57863,6 +57897,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27 November 2026",
+          "The House of Councillors plenary rejects the censure motion against the education minister, submitted by 8 opposition groups on 26 November, by 124 votes to 120; the ruling side plans to ask the opposition to resume deliberations soon.[25]",
+          "reported"
+        ],
+        [
           "2026-12-12",
           "12 December 2026",
           "End of the Diet session. Whether the bill passes by then is open.[16]",
@@ -57903,7 +57943,7 @@ module.exports = {
         ],
         [
           "When will the bill pass?",
-          "That is not known. It is before a special committee of the House of Councillors, but since 24 November the opposition has refused to take part in deliberations for the time being, and as of 26 November no vote has been scheduled. The session ends on 12 December, and no extension has been decided.[21][23][16]"
+          "That is not known. It is before a special committee of the House of Councillors. Since 24 November the opposition has refused to take part in deliberations for the time being, but on 27 November the plenary rejected the censure motion against the education minister by 124 votes to 120, and the ruling side plans to ask for deliberations to resume soon. As of 27 November no vote date has been reported. The session ends on 12 December, and no extension has been decided.[21][23][25][16]"
         ],
         [
           "Do I need to apply?",
@@ -57985,7 +58025,7 @@ module.exports = {
       "short": "就业者负担减轻支援金",
       "eb": "制度解读",
       "desc": "日本“就业者负担减轻支援金”何时开始、发多少、谁能领？正在研究每人最多约2万5,000日元、每个孩子约5,000日元，年收入100万至450万日元的大致目标，以及尚未确定的事项，均附出处和日期。还可以计算我家的金额。",
-      "asOf": "信息截至2026年11月（最后核对：2026年11月26日）。法案尚未成立。",
+      "asOf": "信息截至2026年11月（最后核对：2026年11月27日）。法案尚未成立。",
       "lead": [
         "就业者负担减轻支援金（日语：就業者負担軽減支援金）是日本国家向有工作的中低收入者发放现金的新制度。它由把食品消费税在两年内从8%降到1%的同一部法案设立，政府将其定位为“可退还税收抵免”（日语：給付付き税額控除）的第一步。[2][4]",
         "法案于2026年11月6日通过众议院，目前正在参议院审议。金额和收入界线不写在法律里，而是由政令决定，目前还没有确定。本页把法案和政府文件中写明的内容、政府答辩表示正在研究的内容，以及媒体报道的方案分开整理，每个数字都附出处和日期。有新信息时会随时更新。[3][5][6]"
@@ -58017,7 +58057,7 @@ module.exports = {
       "open": [
         "年收入的上限和下限，将由政令决定。片山财务大臣11月19日答辩称，正在研究把下限定为约56万日元。[3][18]",
         "最终金额。上面的金额是正在研究的数字，将由政令决定。[3][8]",
-        "法案能否成立。目前在参议院审议，但自11月24日起在野党表示暂不参加审议，表决日程尚未确定。会期于12月12日结束，尚未决定延长。[6][21][23][16]",
+        "法案能否成立。目前在参议院审议。自11月24日起在野党表示暂不参加审议，但27日参议院全体会议以赞成120票、反对124票否决了针对文部科学大臣的问责决议案，执政党打算请在野党尽早恢复审议。表决日程尚未见报道。会期于12月12日结束，尚未决定延长。[6][21][23][25][16]",
         "首次到账的时间，以及没有登记公款领取账户的人如何办理手续。[13]"
       ],
       "legend": "：本页标签的含义。",
@@ -58091,7 +58131,7 @@ module.exports = {
             "在参议院，法案于11月11日交付“消费税与支援金法案特别委员会”。该委员会于11月20日在青森县举行地方公听会，11月24日举行中央公听会，中央公听会上有4名公述人陈述了意见。[6][20][19]",
             "同在11月24日，参议院6个在野党的国会对策委员长以文部科学大臣关芳弘在特别委员会上就政治资金募款会作了与事实不符的答辩为由，一致决定暂不参加该法案的审议，并决定提出针对关芳弘的问责决议案。关芳弘曾在19日的特别委员会上说明，邀请官员出席的募款会只有2024年的2场，20日又公开另有3场。高市首相表示，关芳弘正在履行说明责任。[21][22]",
             "据时事通信报道，在野党没有参加参议院的日程协商。立宪民主党国会对策委员长25日表示，将于26日提出问责决议案，预计27日在全体会议上表决。官房长官木原稔25日表示“将请关芳弘好好说明”，显示出让其留任的意向。[23]",
-            "截至11月26日，表决日程尚未确定。执政党在参议院未过半数。会期到12月12日为止，尚未决定延长。[6][16][17]"
+            "26日，8个在野党会派在参议院提出了针对关芳弘的问责决议案，27日全体会议以124票对120票否决。据时事通信报道，执政党打算请在野党尽早恢复该法案的审议。[25]截至11月27日，尚未有该法案表决的报道。执政党在参议院未过半数。会期到12月12日为止，尚未决定延长。[6][16][17]"
           ]
         ]
       ],
@@ -58188,6 +58228,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "2026年11月27日",
+          "参议院全体会议以赞成120票、反对124票否决了8个在野党会派于26日提出的针对文部科学大臣的问责决议案；执政党打算请在野党尽早恢复审议。[25]",
+          "reported"
+        ],
+        [
           "2026-12-12",
           "2026年12月12日",
           "国会会期结束。在此之前能否成立尚未确定。[16]",
@@ -58228,7 +58274,7 @@ module.exports = {
         ],
         [
           "法案什么时候成立？",
-          "目前还不知道。法案正在参议院特别委员会审议，但自11月24日起在野党表示暂不参加审议，截至11月26日表决日程尚未确定。会期于12月12日结束，尚未决定延长。[21][23][16]"
+          "目前还不知道。法案正在参议院特别委员会审议。自11月24日起在野党表示暂不参加审议，但27日参议院全体会议以赞成120票、反对124票否决了针对文部科学大臣的问责决议案，执政党打算请在野党尽早恢复审议。截至11月27日，尚未有表决日程的报道。会期于12月12日结束，尚未决定延长。[21][23][25][16]"
         ],
         [
           "需要申请吗？",
@@ -58310,7 +58356,7 @@ module.exports = {
       "short": "वर्कर बर्डन रिलीफ़ पेमेंट",
       "eb": "नीति की व्याख्या",
       "desc": "जापान का वर्कर बर्डन रिलीफ़ पेमेंट: कब, कितना और किसे। हर कामगार को लगभग 25,000 येन तक और हर बच्चे पर 5,000 येन पर विचार, मोटे तौर पर 1 मिलियन से 4.5 मिलियन येन की आय, और क्या अभी तय नहीं। कैलकुलेटर के साथ।",
-      "asOf": "नवंबर 2026 तक की जानकारी (आख़िरी जाँच 26 नवंबर 2026)। विधेयक अभी क़ानून नहीं बना है।",
+      "asOf": "नवंबर 2026 तक की जानकारी (आख़िरी जाँच 27 नवंबर 2026)। विधेयक अभी क़ानून नहीं बना है।",
       "lead": [
         "वर्कर बर्डन रिलीफ़ पेमेंट (shūgyōsha futan keigen shienkin) जापान सरकार का एक नया नकद भुगतान है, जो काम करने वाले कम और मध्यम आय के लोगों को मिलेगा। यह उसी विधेयक से बनता है जो खाने-पीने की चीज़ों पर उपभोग कर दो साल के लिए 8% से घटाकर 1% करता है, और सरकार इसे रिफ़ंडेबल टैक्स क्रेडिट की ओर पहला क़दम कहती है।[2][4]",
         "विधेयक 6 नवंबर 2026 को प्रतिनिधि सभा (निचले सदन) से पास हुआ और अब पार्षद सभा (उच्च सदन) के सामने है। राशियाँ और आय की सीमाएँ क़ानून में नहीं, मंत्रिमंडल के आदेश से तय होंगी, और अभी तय नहीं हुई हैं। यह पेज अलग-अलग रखता है कि विधेयक और सरकारी दस्तावेज़ क्या कहते हैं, सरकार ने किस पर विचार करने की बात कही है, और क्या ख़बरों में आया है, और हर आँकड़े का स्रोत और तारीख़ देता है। नए तथ्य आने पर हम इसे अपडेट करते हैं।[3][5][6]"
@@ -58342,7 +58388,7 @@ module.exports = {
       "open": [
         "आय की निचली और ऊपरी सीमा, जो मंत्रिमंडल के आदेश से तय होगी। 19 नवंबर को वित्त मंत्री ने कहा कि लगभग 560,000 येन की निचली सीमा पर विचार हो रहा है।[3][18]",
         "अंतिम राशियाँ। ऊपर दिए आँकड़े विचाराधीन हैं और मंत्रिमंडल के आदेश से तय होंगे।[3][8]",
-        "विधेयक पास होगा या नहीं। यह पार्षद सभा के सामने है, पर 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया है, और मतदान की कोई तारीख़ तय नहीं है। सत्र 12 दिसंबर को ख़त्म होता है, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[6][21][23][16]",
+        "विधेयक पास होगा या नहीं। यह पार्षद सभा के सामने है। 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया था, पर 27 नवंबर को पूर्ण सदन ने शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव पक्ष में 120 और विरोध में 124 मतों से ख़ारिज कर दिया, और सत्ता पक्ष विपक्ष से जल्द बहस फिर शुरू करने को कहने की योजना बना रहा है। मतदान की किसी तारीख़ की ख़बर नहीं है। सत्र 12 दिसंबर को ख़त्म होता है, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[6][21][23][25][16]",
         "पहला भुगतान कब आएगा, और बिना पंजीकृत खाते वाले लोग कैसे दावा करेंगे।[13]"
       ],
       "legend": ": इस पेज पर लगे लेबलों का मतलब।",
@@ -58416,7 +58462,7 @@ module.exports = {
             "पार्षद सभा में इसे 11 नवंबर को उपभोग कर और रिलीफ़ पेमेंट विधेयक पर विशेष समिति को भेजा गया। समिति ने 20 नवंबर को आओमोरी प्रान्त में क्षेत्रीय जन सुनवाई और 24 नवंबर को केंद्रीय जन सुनवाई की, जिसमें 4 विशेषज्ञों ने अपनी राय रखी।[6][20][19]",
             "उसी दिन, 24 नवंबर को, पार्षद सभा में 6 विपक्षी दलों के संसदीय मामलों के प्रमुखों ने तय किया कि वे फ़िलहाल इस विधेयक पर बहस में हिस्सा नहीं लेंगे। उनका कहना है कि शिक्षा मंत्री योशिहिरो सेकी ने विशेष समिति में अपनी राजनीतिक चंदा पार्टियों के बारे में ग़लत जवाब दिया। उन्होंने सेकी के ख़िलाफ़ निंदा प्रस्ताव लाने का भी फ़ैसला किया। 19 नवंबर को सेकी ने समिति को बताया था कि अधिकारी ऐसी सिर्फ़ 2 पार्टियों में आए थे, 2024 में; 20 नवंबर को उन्होंने 3 और पार्टियों की जानकारी दी। प्रधानमंत्री ताकाइची ने कहा है कि सेकी सफ़ाई देने की अपनी ज़िम्मेदारी निभा रहे हैं।[21][22]",
             "जीजी प्रेस के अनुसार विपक्ष पार्षद सभा के कार्यक्रम पर बातचीत में हिस्सा नहीं ले रहा है। 25 नवंबर को कॉन्स्टिट्यूशनल डेमोक्रेटिक पार्टी के संसदीय मामलों के प्रमुख ने कहा कि निंदा प्रस्ताव 26 नवंबर को पेश होगा और 27 नवंबर को पूर्ण सदन में उस पर मतदान होने की उम्मीद है। मुख्य कैबिनेट सचिव मिनोरु किहारा ने 25 नवंबर को कहा कि सेकी “ठीक से सफ़ाई देंगे”, यानी वे पद पर बने रहेंगे।[23]",
-            "26 नवंबर तक कोई मतदान तय नहीं हुआ है। पार्षद सभा में सत्ताधारी दलों के पास बहुमत नहीं है। सत्र 12 दिसंबर तक चलेगा, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[6][16][17]"
+            "26 नवंबर को 8 विपक्षी समूहों ने पार्षद सभा में सेकी के ख़िलाफ़ निंदा प्रस्ताव पेश किया, और 27 नवंबर को पूर्ण सदन ने उसे पक्ष में 120 और विरोध में 124 मतों से ख़ारिज कर दिया। जीजी प्रेस के अनुसार सत्ता पक्ष विपक्ष से विधेयक पर बहस जल्द फिर शुरू करने को कहने की योजना बना रहा है।[25] 27 नवंबर तक विधेयक पर मतदान की कोई ख़बर नहीं है। पार्षद सभा में सत्ताधारी दलों के पास बहुमत नहीं है। सत्र 12 दिसंबर तक चलेगा, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[6][16][17]"
           ]
         ]
       ],
@@ -58513,6 +58559,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27 नवंबर 2026",
+          "पार्षद सभा के पूर्ण सदन ने 8 विपक्षी समूहों के 26 नवंबर को पेश शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव को पक्ष में 120 और विरोध में 124 मतों से ख़ारिज किया; सत्ता पक्ष विपक्ष से जल्द बहस फिर शुरू करने को कहने की योजना बना रहा है।[25]",
+          "reported"
+        ],
+        [
           "2026-12-12",
           "12 दिसंबर 2026",
           "संसद सत्र का अंत। विधेयक तब तक पास होगा या नहीं, यह तय नहीं।[16]",
@@ -58553,7 +58605,7 @@ module.exports = {
         ],
         [
           "विधेयक कब पास होगा?",
-          "अभी पता नहीं। यह पार्षद सभा की एक विशेष समिति के सामने है, पर 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया है, और 26 नवंबर तक मतदान की कोई तारीख़ तय नहीं हुई है। सत्र 12 दिसंबर को ख़त्म होता है, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[21][23][16]"
+          "अभी पता नहीं। यह पार्षद सभा की एक विशेष समिति के सामने है। 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया था, पर 27 नवंबर को पूर्ण सदन ने शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव पक्ष में 120 और विरोध में 124 मतों से ख़ारिज कर दिया, और सत्ता पक्ष बहस जल्द फिर शुरू कराने को कहने की योजना बना रहा है। 27 नवंबर तक मतदान की किसी तारीख़ की ख़बर नहीं है। सत्र 12 दिसंबर को ख़त्म होता है, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[21][23][25][16]"
         ],
         [
           "क्या मुझे आवेदन करना होगा?",
@@ -58635,7 +58687,7 @@ module.exports = {
       "short": "Pago de alivio de cargas para trabajadores",
       "eb": "Explicación de una política",
       "desc": "El pago de alivio de cargas para trabajadores de Japón: cuándo, cuánto y quién lo recibe. Se estudian hasta unos 25.000 yenes por trabajador y 5.000 yenes por hijo, ingresos de 1 a 4,5 millones de yenes como orientación, y lo que sigue abierto. Con calculadora.",
-      "asOf": "Información a noviembre de 2026 (última comprobación: 26 de noviembre de 2026). El proyecto de ley aún no es ley.",
+      "asOf": "Información a noviembre de 2026 (última comprobación: 27 de noviembre de 2026). El proyecto de ley aún no es ley.",
       "lead": [
         "El pago de alivio de cargas para trabajadores (shūgyōsha futan keigen shienkin) es un nuevo pago en efectivo del Estado japonés a las personas que trabajan con ingresos bajos y medios. Lo crea el mismo proyecto de ley que baja el impuesto sobre el consumo de los alimentos del 8% al 1% durante dos años, y el Gobierno lo presenta como el primer paso hacia un crédito fiscal reembolsable.[2][4]",
         "El proyecto pasó la Cámara de Representantes el 6 de noviembre de 2026 y está ahora en la Cámara de Consejeros. Las cuantías y los límites de ingresos se fijarán por decreto del Gobierno, no en la ley, y no están decididos. Esta página separa lo que dicen el proyecto y los documentos del Gobierno, lo que el Gobierno ha dicho que estudia y lo que se ha publicado en la prensa, y da una fuente y una fecha para cada cifra. La actualizamos a medida que hay datos nuevos.[3][5][6]"
@@ -58667,7 +58719,7 @@ module.exports = {
       "open": [
         "El mínimo y el máximo de ingresos, que se fijarán por decreto. El 19 de noviembre la ministra de Finanzas dijo que se estudia un mínimo de unos 560.000 yenes.[3][18]",
         "Las cuantías finales. Las cifras de arriba están en estudio y se fijarán por decreto.[3][8]",
-        "Si el proyecto se aprueba. Está en la Cámara de Consejeros, pero desde el 24 de noviembre la oposición se niega por ahora a participar en los debates y no hay fecha para la votación. El periodo de sesiones termina el 12 de diciembre y no se ha decidido ninguna prórroga.[6][21][23][16]",
+        "Si el proyecto se aprueba. Está en la Cámara de Consejeros. Desde el 24 de noviembre la oposición se niega por ahora a participar en los debates, pero el 27 de noviembre el pleno rechazó la moción de censura contra el ministro de Educación por 124 votos contra 120, y el oficialismo prevé pedir a la oposición que reanude pronto los debates. No se ha informado de fecha para la votación. El periodo de sesiones termina el 12 de diciembre y no se ha decidido ninguna prórroga.[6][21][23][25][16]",
         "Cuándo llega el primer pago y cómo lo pedirán quienes no tengan una cuenta registrada.[13]"
       ],
       "legend": ": qué significan las etiquetas de esta página.",
@@ -58741,7 +58793,7 @@ module.exports = {
             "En la Cámara de Consejeros se remitió el 11 de noviembre a la Comisión Especial sobre el proyecto del impuesto sobre el consumo y del pago de alivio. La comisión celebró una audiencia pública regional en la prefectura de Aomori el 20 de noviembre y una audiencia pública central el 24 de noviembre, en la que 4 comparecientes dieron su opinión.[6][20][19]",
             "Ese mismo 24 de noviembre, los responsables de asuntos parlamentarios de 6 partidos de la oposición en la Cámara de Consejeros acordaron no participar por ahora en los debates del proyecto, alegando que el ministro de Educación, Yoshihiro Seki, había dado en la comisión especial una respuesta falsa sobre sus fiestas de recaudación política, y decidieron presentar una moción de censura contra él. El 19 de noviembre Seki había dicho a la comisión que solo hubo 2 de esas fiestas con funcionarios, en 2024; el 20 de noviembre reveló otras 3. La primera ministra Takaichi ha dicho que Seki está cumpliendo con su deber de dar explicaciones.[21][22]",
             "Según Jiji Press, la oposición no participa en las conversaciones sobre el calendario de la Cámara de Consejeros. El 25 de noviembre, el responsable de asuntos parlamentarios del Partido Democrático Constitucional dijo que la moción de censura se presentaría el 26 de noviembre y que se espera votarla en el pleno el 27 de noviembre. El secretario jefe del Gabinete, Minoru Kihara, dijo el 25 de noviembre que Seki «dará explicaciones como es debido», en señal de que sigue en el cargo.[23]",
-            "A 26 de noviembre no hay fecha para la votación. Los partidos del Gobierno no tienen mayoría en la Cámara de Consejeros. El periodo de sesiones dura hasta el 12 de diciembre, y no se ha decidido ninguna prórroga.[6][16][17]"
+            "El 26 de noviembre 8 grupos de la oposición presentaron en la Cámara de Consejeros una moción de censura contra Seki, y el 27 de noviembre el pleno la rechazó por 124 votos contra 120. Según Jiji Press, el oficialismo prevé pedir a la oposición que reanude pronto los debates del proyecto.[25] A 27 de noviembre no se ha informado de ninguna votación del proyecto. Los partidos del Gobierno no tienen mayoría en la Cámara de Consejeros. El periodo de sesiones dura hasta el 12 de diciembre, y no se ha decidido ninguna prórroga.[6][16][17]"
           ]
         ]
       ],
@@ -58838,6 +58890,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27 de noviembre de 2026",
+          "El pleno de la Cámara de Consejeros rechaza, por 124 votos contra 120, la moción de censura contra el ministro de Educación presentada el 26 de noviembre por 8 grupos de la oposición; el oficialismo prevé pedir a la oposición que reanude pronto los debates.[25]",
+          "reported"
+        ],
+        [
           "2026-12-12",
           "12 de diciembre de 2026",
           "Fin del periodo de sesiones de la Dieta. Sigue abierto si el proyecto se aprueba antes.[16]",
@@ -58878,7 +58936,7 @@ module.exports = {
         ],
         [
           "¿Cuándo se aprobará el proyecto?",
-          "No se sabe. Está en una comisión especial de la Cámara de Consejeros, pero desde el 24 de noviembre la oposición se niega por ahora a participar en los debates, y a 26 de noviembre no hay fecha para la votación. El periodo de sesiones termina el 12 de diciembre y no se ha decidido ninguna prórroga.[21][23][16]"
+          "No se sabe. Está en una comisión especial de la Cámara de Consejeros. Desde el 24 de noviembre la oposición se niega por ahora a participar en los debates, pero el 27 de noviembre el pleno rechazó la moción de censura contra el ministro de Educación por 124 votos contra 120, y el oficialismo prevé pedir que los debates se reanuden pronto. A 27 de noviembre no se ha informado de fecha para la votación. El periodo de sesiones termina el 12 de diciembre y no se ha decidido ninguna prórroga.[21][23][25][16]"
         ],
         [
           "¿Tengo que solicitarlo?",
@@ -58960,7 +59018,7 @@ module.exports = {
       "short": "Entlastungszahlung für Erwerbstätige",
       "eb": "Erklärt",
       "desc": "Japans Entlastungszahlung für Erwerbstätige: wann, wie viel, wer sie bekommt. Geprüft werden bis zu etwa 25.000 Yen pro Person plus 5.000 Yen pro Kind, Einkommen von 1 bis 4,5 Millionen Yen als Richtwert, und was noch offen ist. Mit Rechner.",
-      "asOf": "Stand: November 2026 (zuletzt geprüft am 26. November 2026). Der Gesetzentwurf ist noch nicht verabschiedet.",
+      "asOf": "Stand: November 2026 (zuletzt geprüft am 27. November 2026). Der Gesetzentwurf ist noch nicht verabschiedet.",
       "lead": [
         "Die Entlastungszahlung für Erwerbstätige (shūgyōsha futan keigen shienkin) ist eine neue Geldleistung des japanischen Staates an Menschen mit niedrigem und mittlerem Einkommen, die arbeiten. Sie wird mit demselben Gesetzentwurf eingeführt, der die Verbrauchsteuer auf Lebensmittel für zwei Jahre von 8 % auf 1 % senkt, und die Regierung nennt sie den ersten Schritt zu einer erstattungsfähigen Steuergutschrift.[2][4]",
         "Der Entwurf passierte am 6. November 2026 das Unterhaus und liegt jetzt dem Oberhaus vor. Die Beträge und die Einkommensgrenzen werden nicht im Gesetz, sondern per Kabinettsverordnung festgelegt und sind noch nicht entschieden. Diese Seite trennt, was im Gesetzentwurf und in Regierungsunterlagen steht, was die Regierung nach eigenen Worten prüft und was berichtet wurde, und nennt zu jeder Zahl Quelle und Datum. Wir aktualisieren sie, sobald es Neues gibt.[3][5][6]"
@@ -58992,7 +59050,7 @@ module.exports = {
       "open": [
         "Unter- und Obergrenze des Einkommens, die per Kabinettsverordnung festgelegt werden. Am 19. November sagte die Finanzministerin, eine Untergrenze von etwa 560.000 Yen werde geprüft.[3][18]",
         "Die endgültigen Beträge. Die Zahlen oben werden geprüft und per Kabinettsverordnung festgelegt.[3][8]",
-        "Ob der Entwurf verabschiedet wird. Er liegt dem Oberhaus vor, doch seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, und eine Abstimmung ist nicht angesetzt. Die Sitzungsperiode endet am 12. Dezember, eine Verlängerung ist nicht beschlossen.[6][21][23][16]",
+        "Ob der Entwurf verabschiedet wird. Er liegt dem Oberhaus vor. Seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, doch am 27. November lehnte das Plenum den Tadelsantrag gegen den Bildungsminister mit 124 zu 120 Stimmen ab, und die Regierungsseite will die Opposition bitten, die Beratungen bald wieder aufzunehmen. Ein Abstimmungstermin ist nicht gemeldet. Die Sitzungsperiode endet am 12. Dezember, eine Verlängerung ist nicht beschlossen.[6][21][23][25][16]",
         "Wann die erste Zahlung kommt und wie Menschen ohne registriertes Konto sie beantragen.[13]"
       ],
       "legend": ": Das bedeuten die Kennzeichnungen auf dieser Seite.",
@@ -59066,7 +59124,7 @@ module.exports = {
             "Im Oberhaus wurde er am 11. November an den Sonderausschuss zum Gesetzentwurf über Verbrauchsteuer und Entlastungszahlung überwiesen. Der Ausschuss hielt am 20. November eine regionale öffentliche Anhörung in der Präfektur Aomori und am 24. November eine zentrale öffentliche Anhörung ab, bei der 4 Sachverständige Stellung nahmen.[6][20][19]",
             "Am selben Tag, dem 24. November, einigten sich die parlamentarischen Geschäftsführer von 6 Oppositionsparteien im Oberhaus darauf, sich vorerst nicht an den Beratungen über den Entwurf zu beteiligen. Sie werfen Bildungsminister Yoshihiro Seki vor, im Sonderausschuss falsch über seine politischen Spendenpartys ausgesagt zu haben, und beschlossen, einen Tadelsantrag gegen ihn einzubringen. Seki hatte dem Ausschuss am 19. November gesagt, Beamte seien nur bei 2 solchen Partys im Jahr 2024 gewesen; am 20. November nannte er 3 weitere. Premierministerin Takaichi sagt, Seki komme seiner Pflicht zur Erklärung nach.[21][22]",
             "Laut Jiji Press beteiligt sich die Opposition nicht an den Gesprächen über den Zeitplan des Oberhauses. Der parlamentarische Geschäftsführer der Konstitutionell-Demokratischen Partei sagte am 25. November, der Tadelsantrag werde am 26. November eingebracht; die Abstimmung im Plenum werde für den 27. November erwartet. Kabinettschef Minoru Kihara sagte am 25. November, Seki werde „ordentlich erklären“, und deutete damit an, dass er im Amt bleibt.[23]",
-            "Stand 26. November ist keine Abstimmung angesetzt. Die Regierungsparteien haben im Oberhaus keine Mehrheit. Die Sitzungsperiode läuft bis zum 12. Dezember, eine Verlängerung ist nicht beschlossen.[6][16][17]"
+            "Am 26. November brachten 8 Oppositionsgruppen im Oberhaus einen Tadelsantrag gegen Seki ein, den das Plenum am 27. November mit 124 zu 120 Stimmen ablehnte. Laut Jiji Press will die Regierungsseite die Opposition bitten, die Beratungen über den Entwurf bald wieder aufzunehmen.[25] Stand 27. November ist keine Abstimmung über den Entwurf gemeldet. Die Regierungsparteien haben im Oberhaus keine Mehrheit. Die Sitzungsperiode läuft bis zum 12. Dezember, eine Verlängerung ist nicht beschlossen.[6][16][17]"
           ]
         ]
       ],
@@ -59163,6 +59221,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27. November 2026",
+          "Das Plenum des Oberhauses lehnt den von 8 Oppositionsgruppen am 26. November eingebrachten Tadelsantrag gegen den Bildungsminister mit 124 zu 120 Stimmen ab; die Regierungsseite will die Opposition bitten, die Beratungen bald wieder aufzunehmen.[25]",
+          "reported"
+        ],
+        [
           "2026-12-12",
           "12. Dezember 2026",
           "Ende der Sitzungsperiode. Ob der Entwurf bis dahin verabschiedet wird, ist offen.[16]",
@@ -59203,7 +59267,7 @@ module.exports = {
         ],
         [
           "Wann wird der Gesetzentwurf verabschiedet?",
-          "Das ist offen. Er liegt einem Sonderausschuss des Oberhauses vor, doch seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, und Stand 26. November ist keine Abstimmung angesetzt. Die Sitzungsperiode endet am 12. Dezember, eine Verlängerung ist nicht beschlossen.[21][23][16]"
+          "Das ist offen. Er liegt einem Sonderausschuss des Oberhauses vor. Seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, doch am 27. November lehnte das Plenum den Tadelsantrag gegen den Bildungsminister mit 124 zu 120 Stimmen ab, und die Regierungsseite will darum bitten, die Beratungen bald wieder aufzunehmen. Stand 27. November ist kein Abstimmungstermin gemeldet. Die Sitzungsperiode endet am 12. Dezember, eine Verlängerung ist nicht beschlossen.[21][23][25][16]"
         ],
         [
           "Muss ich einen Antrag stellen?",
@@ -59285,7 +59349,7 @@ module.exports = {
       "short": "دفعة تخفيف العبء عن العاملين",
       "eb": "شرح سياسة",
       "desc": "دفعة تخفيف العبء عن العاملين في اليابان: متى، وكم، ومن يستحقها. قيد الدراسة حتى نحو 25,000 ين للعامل و5,000 ين لكل طفل، ودخل من مليون إلى 4.5 ملايين ين كتصور تقريبي، وما لم يُحسم بعد. مع حاسبة.",
-      "asOf": "المعلومات حتى نوفمبر 2026 (آخر مراجعة في 26 نوفمبر 2026). لم يصبح مشروع القانون قانونًا بعد.",
+      "asOf": "المعلومات حتى نوفمبر 2026 (آخر مراجعة في 27 نوفمبر 2026). لم يصبح مشروع القانون قانونًا بعد.",
       "lead": [
         "دفعة تخفيف العبء عن العاملين (باليابانية: شوغيوشا فوتان كيغين شيينكين) دفعة نقدية جديدة من الدولة اليابانية لذوي الدخل المنخفض والمتوسط الذين يعملون. ينشئها مشروع القانون نفسه الذي يخفّض ضريبة الاستهلاك على الغذاء من 8% إلى 1% لمدة عامين، وتصفها الحكومة بأنها الخطوة الأولى نحو ائتمان ضريبي قابل للاسترداد.[2][4]",
         "أقرّ مجلس النواب مشروع القانون في 6 نوفمبر 2026، وهو الآن أمام مجلس المستشارين. ستُحدَّد المبالغ وحدود الدخل بمرسوم حكومي لا في القانون نفسه، ولم تُحسم بعد. تفصل هذه الصفحة بين ما يقوله مشروع القانون ووثائق الحكومة، وما قالت الحكومة إنها تدرسه، وما ورد في التقارير الصحفية، وتذكر مصدرًا وتاريخًا لكل رقم. ونحدّثها كلما ظهرت معلومات جديدة.[3][5][6]"
@@ -59317,7 +59381,7 @@ module.exports = {
       "open": [
         "الحدان الأدنى والأعلى للدخل، وسيُحدَّدان بمرسوم حكومي. وفي 19 نوفمبر قال وزير المالية إن حدًا أدنى بنحو 560,000 ين قيد الدراسة.[3][18]",
         "المبالغ النهائية. الأرقام أعلاه قيد الدراسة وستُحدَّد بمرسوم حكومي.[3][8]",
-        "هل سيُقرّ مشروع القانون. فهو أمام مجلس المستشارين، لكن المعارضة قررت منذ 24 نوفمبر عدم المشاركة في المداولات في الوقت الحالي، ولم يُحدَّد موعد للتصويت. وتنتهي الدورة في 12 ديسمبر، ولم يُقرَّر تمديدها.[6][21][23][16]",
+        "هل سيُقرّ مشروع القانون. فهو أمام مجلس المستشارين. وكانت المعارضة قررت منذ 24 نوفمبر عدم المشاركة في المداولات في الوقت الحالي، لكن الجلسة العامة رفضت في 27 نوفمبر مشروع قرار اللوم ضد وزير التعليم بأغلبية 124 صوتًا مقابل 120، وتعتزم الأغلبية الحاكمة مطالبة المعارضة باستئناف المداولات سريعًا. ولم يُعلن موعد للتصويت. وتنتهي الدورة في 12 ديسمبر، ولم يُقرَّر تمديدها.[6][21][23][25][16]",
         "موعد وصول الدفعة الأولى، وكيف سيتقدم من لم يسجّلوا حسابًا.[13]"
       ],
       "legend": ": معنى التسميات في هذه الصفحة.",
@@ -59391,7 +59455,7 @@ module.exports = {
             "وفي مجلس المستشارين أُحيل في 11 نوفمبر إلى اللجنة الخاصة بمشروع قانون ضريبة الاستهلاك ودفعة تخفيف العبء. وعقدت اللجنة جلسة استماع عامة إقليمية في محافظة أوموري في 20 نوفمبر، وجلسة استماع عامة مركزية في 24 نوفمبر أدلى فيها 4 من الخبراء بآرائهم.[6][20][19]",
             "وفي اليوم نفسه، 24 نوفمبر، اتفق مسؤولو الشؤون البرلمانية في 6 أحزاب معارضة بمجلس المستشارين على عدم المشاركة في مداولات مشروع القانون في الوقت الحالي، قائلين إن وزير التعليم يوشيهيرو سيكي قدّم في اللجنة الخاصة جوابًا كاذبًا عن حفلات جمع التبرعات السياسية التي أقامها، وقرروا تقديم مشروع قرار لوم ضده. وكان سيكي قد قال للجنة في 19 نوفمبر إن موظفين حكوميين حضروا 2 فقط من هذه الحفلات في 2024، ثم كشف في 20 نوفمبر عن 3 حفلات أخرى. وقالت رئيسة الوزراء تاكايتشي إن سيكي يفي بمسؤوليته في التوضيح.[21][22]",
             "وبحسب وكالة جيجي للأنباء، لا تشارك المعارضة في مشاورات جدول أعمال مجلس المستشارين. وقال مسؤول الشؤون البرلمانية في الحزب الدستوري الديمقراطي في 25 نوفمبر إن مشروع قرار اللوم سيُقدَّم في 26 نوفمبر، ويُتوقع التصويت عليه في الجلسة العامة في 27 نوفمبر. وقال كبير أمناء مجلس الوزراء مينورو كيهارا في 25 نوفمبر إن سيكي «سيقدّم توضيحًا وافيًا»، في إشارة إلى بقائه في منصبه.[23]",
-            "وحتى 26 نوفمبر لم يُحدَّد موعد للتصويت. ولا تملك أحزاب الحكم أغلبية في مجلس المستشارين. وتستمر الدورة حتى 12 ديسمبر، ولم يُقرَّر تمديدها.[6][16][17]"
+            "وفي 26 نوفمبر قدّمت 8 كتل معارضة في مجلس المستشارين مشروع قرار لوم ضد سيكي، ورفضته الجلسة العامة في 27 نوفمبر بأغلبية 124 صوتًا مقابل 120. وبحسب وكالة جيجي للأنباء، تعتزم الأغلبية الحاكمة مطالبة المعارضة باستئناف مداولات المشروع سريعًا.[25] وحتى 27 نوفمبر لم يُعلن عن أي تصويت على المشروع. ولا تملك أحزاب الحكم أغلبية في مجلس المستشارين. وتستمر الدورة حتى 12 ديسمبر، ولم يُقرَّر تمديدها.[6][16][17]"
           ]
         ]
       ],
@@ -59488,6 +59552,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27 نوفمبر 2026",
+          "رفضت الجلسة العامة لمجلس المستشارين، بأغلبية 124 صوتًا مقابل 120، مشروع قرار اللوم ضد وزير التعليم الذي قدّمته 8 كتل معارضة في 26 نوفمبر؛ وتعتزم الأغلبية الحاكمة مطالبة المعارضة باستئناف المداولات سريعًا.[25]",
+          "reported"
+        ],
+        [
           "2026-12-12",
           "12 ديسمبر 2026",
           "نهاية دورة البرلمان. ولم يتضح هل سيُقرّ مشروع القانون قبلها.[16]",
@@ -59528,7 +59598,7 @@ module.exports = {
         ],
         [
           "متى يُقرّ مشروع القانون؟",
-          "لا يُعرف بعد. فهو أمام لجنة خاصة في مجلس المستشارين، لكن المعارضة قررت منذ 24 نوفمبر عدم المشاركة في المداولات في الوقت الحالي، وحتى 26 نوفمبر لم يُحدَّد موعد للتصويت. وتنتهي الدورة في 12 ديسمبر، ولم يُقرَّر تمديدها.[21][23][16]"
+          "لا يُعرف بعد. فهو أمام لجنة خاصة في مجلس المستشارين. وكانت المعارضة قررت منذ 24 نوفمبر عدم المشاركة في المداولات في الوقت الحالي، لكن الجلسة العامة رفضت في 27 نوفمبر مشروع قرار اللوم ضد وزير التعليم بأغلبية 124 صوتًا مقابل 120، وتعتزم الأغلبية الحاكمة مطالبة المعارضة باستئناف المداولات سريعًا. وحتى 27 نوفمبر لم يُعلن موعد للتصويت. وتنتهي الدورة في 12 ديسمبر، ولم يُقرَّر تمديدها.[21][23][25][16]"
         ],
         [
           "هل أحتاج إلى تقديم طلب؟",
@@ -59609,12 +59679,12 @@ module.exports = {
   "JB": {
     "id": "japan-benefits-2026",
     "published": "2026-11-23",
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "items": [
       {
         "id": "wrp",
         "status": "bill",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "link": "/guides/worker-relief-payment/"
       },
       {
@@ -59631,7 +59701,7 @@ module.exports = {
       {
         "id": "fuel",
         "status": "running",
-        "checked": "2026-11-26"
+        "checked": "2026-11-27"
       },
       {
         "id": "incometax",
@@ -59666,6 +59736,16 @@ module.exports = {
       }
     ],
     "log": [
+      {
+        "date": "2026-11-27",
+        "ja": "就業者負担軽減支援金に、11月27日に参議院本会議が文部科学相の問責決議案を賛成120、反対124で否決したことを、ガソリンなどの補助に11月26日以降の支給単価（ガソリン・軽油・灯油・重油は1リットルあたり27.3円、航空機燃料は21.8円）を追加。ほかの項目は11月23日の確認のまま",
+        "en": "Added, for the Worker Burden Relief Payment, the rejection on 27 November of the censure motion against the education minister by the House of Councillors plenary, 124 votes to 120, and, for the fuel subsidy, the rates from 26 November (¥27.3 a litre for petrol, diesel, kerosene and heavy oil, ¥21.8 for jet fuel). The other items stay as checked on 23 November",
+        "zh": "为就业者负担减轻支援金加入11月27日参议院全体会议以赞成120票、反对124票否决针对文部科学大臣的问责决议案一事，并为燃料补贴加入11月26日起的补贴单价（汽油、柴油、灯油、重油每升27.3日元，航空燃料21.8日元）。其他项目仍为11月23日的核对结果",
+        "hi": "वर्कर बर्डन रिलीफ़ पेमेंट के लिए 27 नवंबर को पार्षद सभा के पूर्ण सदन द्वारा शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव को पक्ष में 120 और विरोध में 124 मतों से ख़ारिज करना, और ईंधन सब्सिडी के लिए 26 नवंबर से की दरें (पेट्रोल, डीज़ल, केरोसिन और भारी तेल पर 27.3 येन प्रति लीटर, विमान ईंधन पर 21.8 येन) जोड़ी गईं। बाक़ी मदें 23 नवंबर की जाँच के अनुसार ही हैं",
+        "es": "Añadidos, para el pago de alivio para trabajadores, el rechazo el 27 de noviembre por el pleno de la Cámara de Consejeros de la moción de censura contra el ministro de Educación, por 124 votos contra 120, y, para el subsidio a los combustibles, las tarifas desde el 26 de noviembre (27,3 yenes por litro para gasolina, gasóleo, queroseno y fuelóleo; 21,8 yenes para combustible de aviación). Los demás puntos siguen como se comprobaron el 23 de noviembre",
+        "de": "Ergänzt für die Entlastungszahlung die Ablehnung des Tadelsantrags gegen den Bildungsminister durch das Plenum des Oberhauses am 27. November mit 124 zu 120 Stimmen und für den Kraftstoffzuschuss die Sätze ab dem 26. November (27,3 Yen pro Liter für Benzin, Diesel, Kerosin und Schweröl, 21,8 Yen für Flugtreibstoff). Die übrigen Punkte bleiben auf dem Stand vom 23. November",
+        "ar": "أضفنا، لدفعة تخفيف العبء عن العاملين، رفض الجلسة العامة لمجلس المستشارين في 27 نوفمبر مشروع قرار اللوم ضد وزير التعليم بأغلبية 124 صوتًا مقابل 120، ولدعم الوقود المعدلات منذ 26 نوفمبر (27.3 ين للتر للبنزين والديزل والكيروسين وزيت الوقود الثقيل، و21.8 ين لوقود الطائرات). وتبقى بقية البنود كما رُوجعت في 23 نوفمبر"
+      },
       {
         "date": "2026-11-26",
         "ja": "就業者負担軽減支援金（11月24日の中央公聴会、同じ日に野党6党が審議に当面応じない方針で一致したこと、2029年度以降の最大年27万円程度の案の報道）と、ガソリン補助の12月の基準価格（3日172円、10日174円、17日175円）を追加。電気・ガス代の3月使用分の支援は11月26日の時点で未定",
@@ -59927,6 +60007,14 @@ module.exports = {
           "en": "Agency for Natural Resources and Energy and Japan Fair Trade Commission — Stepwise rise of the base price under the emergency fuel measure (6 Nov 2026; PDF, in Japanese)"
         },
         "url": "https://nenryo-teigakuhikisage.go.jp/assets/pdf/261106_%E5%9F%BA%E6%BA%96%E4%BE%A1%E6%A0%BC%E3%81%AE%E6%AE%B5%E9%9A%8E%E7%9A%84%E3%81%AA%E5%BC%95%E4%B8%8A%E3%81%92%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%88%E8%A3%9C%E5%8A%A9%E4%BA%8B%E6%A5%AD%E8%80%85%EF%BC%89.pdf"
+      },
+      {
+        "n": 30,
+        "label": {
+          "ja": "時事通信「参院、関文科相問責案を否決　与党、消費税審議再開要請へ」（2026年11月27日）",
+          "en": "Jiji Press — House of Councillors rejects the censure motion against Education Minister Seki; the ruling side to ask for deliberations on the consumption tax bills to resume (27 Nov 2026, in Japanese)"
+        },
+        "url": "https://www.jiji.com/jc/article?k=2026112700415&g=pol"
       }
     ],
     "ja": {
@@ -59934,7 +60022,7 @@ module.exports = {
       "short": "国の給付金の一覧（2026年）",
       "eb": "給付金のまとめ",
       "desc": "給付金はいつ・いくら？ 2026年11月最新の国の給付金・支援金・補助金の一覧。一律給付は決まっていません。就業者負担軽減支援金（審議中）、電気・ガス代の値引き、所得税の減税、子育て応援手当などを、状態・金額・時期・出典つきで整理。",
-      "asOf": "2026年11月26日時点の情報です（就業者負担軽減支援金、食料品の消費税、電気・ガス代、ガソリンの補助は11月26日に、ほかの項目は11月23日に確認）。新しい情報が出たら更新します。",
+      "asOf": "2026年11月27日時点の情報です（就業者負担軽減支援金とガソリンの補助は11月27日に、食料品の消費税と電気・ガス代は11月26日に、ほかの項目は11月23日に確認）。新しい情報が出たら更新します。",
       "lead": [
         "「給付金はいつ？」「一律給付はある？」に答えるため、国の給付金・支援金・補助金を、すでに決まって実施中のもの、法案を国会で審議中のもの、政府が検討中のもの、決まっていないもの、終わったものに分けて一覧にしました。項目ごとに金額、対象、時期、受け取り方、出典と確認日を示します。",
         "結論から言うと、2026年11月の時点で、国民全員に一律に配る現金給付は決まっていません。いま実施中なのは電気・都市ガス代の値引き、ガソリンなどの補助、年末調整での所得税の減税で、現金を配るものは市区町村ごとの給付が中心です。国の新しい現金給付である就業者負担軽減支援金は、法案が参議院で審議されています。[17][1][7]"
@@ -59953,7 +60041,7 @@ module.exports = {
         ],
         [
           "次の国の給付は？",
-          "就業者負担軽減支援金です。法案は参議院で審議中で、成立すれば2027年4月に制度が始まり、2027・2028年度は年1回の支給です。政府は1人あたり年最大2万5,000円程度を基本に検討しています。11月24日から野党が審議に当面応じない方針で、採決の日程は決まっていません。[1][3][7][26]",
+          "就業者負担軽減支援金です。法案は参議院で審議中で、成立すれば2027年4月に制度が始まり、2027・2028年度は年1回の支給です。政府は1人あたり年最大2万5,000円程度を基本に検討しています。11月24日から野党が審議に当面応じない方針でしたが、27日に参議院本会議が文部科学相の問責決議案を賛成120、反対124で否決しました。採決の日程は報じられていません。[1][3][7][26][30]",
           "bill"
         ],
         [
@@ -59973,7 +60061,7 @@ module.exports = {
       },
       "openH": "まだ決まっていないこと",
       "open": [
-        "就業者負担軽減支援金の法案が成立するか、最終的な金額と年収の線（政令で決めます）。11月24日から野党が審議に当面応じない方針で、採決の日程は決まっていません。国会の会期末は12月12日で、延長は決まっていません。[7][26][28][9]",
+        "就業者負担軽減支援金の法案が成立するか、最終的な金額と年収の線（政令で決めます）。11月24日から野党が審議に当面応じない方針でしたが、27日に参議院本会議が文部科学相の問責決議案を賛成120、反対124で否決し、与党は審議の早期再開を求める方針です。採決の日程は報じられていません。国会の会期末は12月12日で、延長は決まっていません。[7][26][28][30][9]",
         "2027年3月使用分の電気・ガス代の支援。首相は「様々な状況を見極めた上で、対応を検討」と述べています。[12]",
         "ガソリンなどの補助がいつ終わるか。12月は基準価格を3日に172円、10日に174円、17日に175円へ引き上げます（いまは170円）が、終わりの時期は示されていません。[12][13][30]",
         "給付付き税額控除の具体的な制度。2029年度の導入を目指して検討が続いています。[18]"
@@ -59995,7 +60083,7 @@ module.exports = {
           "gist": "働く中低所得の人に年1回の現金。法案を参議院で審議中で、1人年最大2万5,000円程度で検討中。",
           "amount": "1人あたり年最大2万5,000円程度を基本に、16歳未満の子ども1人につき年5,000円程度を上乗せする方向で検討中です（11月13日の首相答弁）。夫婦と子ども2人で満額なら年6万円です。金額は政令で決まります。本格導入の2029年度以降については、共働きの夫婦と子ども2人の一部の世帯に最大年27万円程度を給付する案を政府が検討していると朝日新聞が報じています（政府の資料にはまだありません）。[3][2][4][29]",
           "who": "前の年に働いて収入があった人（個人単位）。財務相は年収100万〜450万円の3,000万人程度を「大づかみのイメージ」とし、11月19日には、支給が始まる年収（下限）を56万円程度とする方向で検討すると答弁しました。[5][6]",
-          "when": "法案が成立すれば2027年4月から。2027・2028年度は年度ごとに原則年1回です。最初の支給の時期は決まっていません。法案は11月6日に衆議院を通過し、参議院では11月24日に中央公聴会が開かれました。同じ日に野党6党が、文部科学相の答弁を理由に審議に当面応じない方針で一致し、11月26日の時点で採決の日程は決まっていません。会期末は12月12日です。[1][7][8][26][27][9]",
+          "when": "法案が成立すれば2027年4月から。2027・2028年度は年度ごとに原則年1回です。最初の支給の時期は決まっていません。法案は11月6日に衆議院を通過し、参議院では11月24日に中央公聴会が開かれました。同じ日に野党6党が、文部科学相の答弁を理由に審議に当面応じない方針で一致しました。27日には参議院本会議が文部科学相の問責決議案を賛成120、反対124で否決し、11月27日の時点で採決の日程は報じられていません。会期末は12月12日です。[1][7][8][26][27][30][9]",
           "how": "住んでいる市区町村が受給資格を認定して振り込みます。公金受取口座を登録していれば、原則として申請は要りません。[1]"
         },
         {
@@ -60019,8 +60107,8 @@ module.exports = {
         {
           "id": "fuel",
           "name": "ガソリン・軽油などの補助",
-          "gist": "ガソリンの暫定税率は2025年末に廃止。いまは1リットルあたり29.6円の補助で、12月から段階的に縮小。",
-          "amount": "11月19日以降の補助は、ガソリン・軽油・灯油・重油が1リットルあたり29.6円、航空機燃料が23.6円です。これとは別に、ガソリンの暫定税率（1リットルあたり25.1円）は2025年12月31日に廃止されています。[13][14]",
+          "gist": "ガソリンの暫定税率は2025年末に廃止。いまは1リットルあたり27.3円の補助で、12月から段階的に縮小。",
+          "amount": "11月26日以降の補助は、ガソリン・軽油・灯油・重油が1リットルあたり27.3円、航空機燃料が21.8円です（11月19日以降は29.6円と23.6円でした）。これとは別に、ガソリンの暫定税率（1リットルあたり25.1円）は2025年12月31日に廃止されています。[13][14]",
           "who": "燃料を買うすべての人。現金の給付ではなく、石油元売りなどに補助金を出して店頭の価格を抑える仕組みです。[13]",
           "when": "今回の措置は2026年3月19日から。12月以降は、春先に向けて基準価格を毎月5円ずつ引き上げることを基本に、補助を縮めていきます。12月は、いま170円の基準価格を3日に172円、10日に174円、17日に175円へ引き上げます。終わりの時期は示されていません。[12][13][30]",
           "how": "手続きは要りません。"
@@ -60164,6 +60252,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "2026年11月27日",
+          "参議院本会議が、野党8会派が26日に提出した文部科学相の問責決議案を賛成120、反対124で否決。与党は審議の早期再開を野党に求める方針。[30]",
+          "reported"
+        ],
+        [
           "2026-12",
           "2026年12月",
           "電気・都市ガス代の値引きが12月使用分から始まる。年末調整で所得税の減税を精算。[11][15]",
@@ -60216,7 +60310,7 @@ module.exports = {
         ],
         [
           "就業者負担軽減支援金の法案はいつ成立しますか？",
-          "まだわかりません。参議院の特別委員会で審議中ですが、11月24日から野党が審議に当面応じない方針で、11月26日の時点で採決の日程は決まっていません。会期末は12月12日で、延長は決まっていません。[26][28][9]"
+          "まだわかりません。参議院の特別委員会で審議中です。11月24日から野党が審議に当面応じない方針でしたが、27日に参議院本会議が文部科学相の問責決議案を賛成120、反対124で否決し、与党は審議の早期再開を求める方針です。11月27日の時点で採決の日程は報じられていません。会期末は12月12日で、延長は決まっていません。[26][28][30][9]"
         ],
         [
           "住民税非課税世帯への給付はありますか？",
@@ -60269,7 +60363,7 @@ module.exports = {
       "short": "Japan’s benefits in 2026",
       "eb": "Benefits roundup",
       "desc": "When are Japan’s cash benefits paid and how much? No payment for everyone is decided. The relief payment for workers, power and gas discounts and more, sourced.",
-      "asOf": "Information as of 26 November 2026 (the relief payment, the food tax, power and gas support and the fuel subsidy checked on 26 November, the other items on 23 November). We update this page when new facts come in.",
+      "asOf": "Information as of 27 November 2026 (the relief payment and the fuel subsidy checked on 27 November, the food tax and power and gas support on 26 November, the other items on 23 November). We update this page when new facts come in.",
       "lead": [
         "To answer “when is the next payment?” and “is there a payment for everyone?”, this page lists Japan’s national cash benefits, support payments and subsidies, split into those decided and running, those in a bill before the Diet, those the government is considering, those not decided and those that have ended. Each item gives the amount, who gets it, when, how to receive it, its sources and the day it was checked.",
         "In short: as of November 2026 no uniform cash payment to everyone has been decided. What is running now is a discount on electricity and city gas bills, a subsidy on petrol and other fuels, and an income tax cut settled in the year-end adjustment; cash payments come mainly from individual municipalities. The government’s new cash payment, the Worker Burden Relief Payment, is in a bill now before the House of Councillors.[17][1][7]"
@@ -60288,7 +60382,7 @@ module.exports = {
         ],
         [
           "The next national payment?",
-          "The Worker Burden Relief Payment. The bill is before the House of Councillors; if it passes, the scheme starts in April 2027 and pays once a year in fiscal 2027 and 2028. The government is considering up to about ¥25,000 a year per person as the base. Since 24 November the opposition has refused to take part in deliberations for the time being, and no vote has been scheduled.[1][3][7][26]",
+          "The Worker Burden Relief Payment. The bill is before the House of Councillors; if it passes, the scheme starts in April 2027 and pays once a year in fiscal 2027 and 2028. The government is considering up to about ¥25,000 a year per person as the base. Since 24 November the opposition has refused to take part in deliberations for the time being, but on 27 November the plenary rejected the censure motion against the education minister by 124 votes to 120. No vote date has been reported.[1][3][7][26][30]",
           "bill"
         ],
         [
@@ -60308,7 +60402,7 @@ module.exports = {
       },
       "openH": "Not decided yet",
       "open": [
-        "Whether the Worker Burden Relief Payment bill passes, and the final amounts and income lines (set by cabinet order). Since 24 November the opposition has refused to take part in deliberations for the time being, and no vote has been scheduled. The Diet session ends on 12 December, and no extension has been decided.[7][26][28][9]",
+        "Whether the Worker Burden Relief Payment bill passes, and the final amounts and income lines (set by cabinet order). Since 24 November the opposition has refused to take part in deliberations for the time being, but on 27 November the plenary rejected the censure motion against the education minister by 124 votes to 120, and the ruling side plans to ask for deliberations to resume soon. No vote date has been reported. The Diet session ends on 12 December, and no extension has been decided.[7][26][28][30][9]",
         "Support for March 2027 power and gas use. The Prime Minister said the government will “consider a response after looking carefully at the situation”.[12]",
         "When the fuel subsidy ends. In December the base price rises to ¥172 on the 3rd, ¥174 on the 10th and ¥175 on the 17th (it is ¥170 now), but no end date has been given.[12][13][30]",
         "The design of a refundable tax credit, which the government aims to introduce in fiscal 2029.[18]"
@@ -60330,7 +60424,7 @@ module.exports = {
           "gist": "Cash once a year for low- and middle-income workers. The bill is in the House of Councillors; up to about ¥25,000 a year per person is under consideration.",
           "amount": "The government is considering up to about ¥25,000 a year per person as the base, plus about ¥5,000 a year for each child under 16 (the Prime Minister’s answer of 13 November). A couple with two children receiving the full amount would get ¥60,000 a year. The amounts will be set by cabinet order. For the full scheme from fiscal 2029, the Asahi Shimbun reports that the government is considering up to about ¥270,000 a year for some dual-earner couples with two children (not yet in any government document).[3][2][4][29]",
           "who": "People who worked and earned in the previous year (each person counts separately). The Finance Minister gave about 30 million people with incomes of ¥1 million to ¥4.5 million as the “rough image”, and on 19 November said a floor of about ¥560,000 of annual income is being considered.[5][6]",
-          "when": "From April 2027 if the bill passes, paid in principle once in each of fiscal 2027 and 2028. The date of the first payment has not been set. The bill passed the House of Representatives on 6 November; the House of Councillors held a central public hearing on 24 November. The same day 6 opposition parties agreed not to take part in deliberations for the time being, citing the education minister’s answers, and as of 26 November no vote has been scheduled. The session ends on 12 December.[1][7][8][26][27][9]",
+          "when": "From April 2027 if the bill passes, paid in principle once in each of fiscal 2027 and 2028. The date of the first payment has not been set. The bill passed the House of Representatives on 6 November; the House of Councillors held a central public hearing on 24 November. The same day 6 opposition parties agreed not to take part in deliberations for the time being, citing the education minister’s answers. On 27 November the plenary rejected the censure motion against the education minister by 124 votes to 120, and as of 27 November no vote date has been reported. The session ends on 12 December.[1][7][8][26][27][30][9]",
           "how": "The municipality you live in certifies you and pays into your account. If you have registered a public-funds receipt account, no application is needed in principle.[1]"
         },
         {
@@ -60354,8 +60448,8 @@ module.exports = {
         {
           "id": "fuel",
           "name": "Petrol and diesel subsidy",
-          "gist": "The provisional petrol tax was abolished at the end of 2025. A subsidy of ¥29.6 a litre now, to be scaled back step by step from December.",
-          "amount": "From 19 November the subsidy is ¥29.6 a litre for petrol, diesel, kerosene and heavy oil, and ¥23.6 for jet fuel. Separately, the provisional petrol tax rate (¥25.1 a litre) was abolished on 31 December 2025.[13][14]",
+          "gist": "The provisional petrol tax was abolished at the end of 2025. A subsidy of ¥27.3 a litre now, to be scaled back step by step from December.",
+          "amount": "From 26 November the subsidy is ¥27.3 a litre for petrol, diesel, kerosene and heavy oil, and ¥21.8 for jet fuel (from 19 November it was ¥29.6 and ¥23.6). Separately, the provisional petrol tax rate (¥25.1 a litre) was abolished on 31 December 2025.[13][14]",
           "who": "Everyone who buys fuel. It is not a cash payment: the subsidy goes to oil wholesalers to hold down pump prices.[13]",
           "when": "The current measure began on 19 March 2026. From December the subsidy will shrink, with the base price raised by ¥5 a month towards spring as the basic plan. In December the base price, now ¥170, rises to ¥172 on the 3rd, ¥174 on the 10th and ¥175 on the 17th. No end date has been given.[12][13][30]",
           "how": "Nothing to do."
@@ -60499,6 +60593,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27 November 2026",
+          "The House of Councillors plenary rejects the censure motion against the education minister, submitted by 8 opposition groups on 26 November, by 124 votes to 120; the ruling side plans to ask the opposition to resume deliberations soon.[30]",
+          "reported"
+        ],
+        [
           "2026-12",
           "December 2026",
           "The power and gas discount starts with December use. The income tax cut is settled in the year-end adjustment.[11][15]",
@@ -60551,7 +60651,7 @@ module.exports = {
         ],
         [
           "When will the Worker Burden Relief Payment bill pass?",
-          "That is not known. It is before a special committee of the House of Councillors, but since 24 November the opposition has refused to take part in deliberations for the time being, and as of 26 November no vote has been scheduled. The session ends on 12 December, and no extension has been decided.[26][28][9]"
+          "That is not known. It is before a special committee of the House of Councillors. Since 24 November the opposition has refused to take part in deliberations for the time being, but on 27 November the plenary rejected the censure motion against the education minister by 124 votes to 120, and the ruling side plans to ask for deliberations to resume soon. As of 27 November no vote date has been reported. The session ends on 12 December, and no extension has been decided.[26][28][30][9]"
         ],
         [
           "Is there a payment for residence-tax-exempt households?",
@@ -60604,7 +60704,7 @@ module.exports = {
       "short": "日本国家给付金一览（2026年）",
       "eb": "给付金汇总",
       "desc": "日本的给付金何时发、发多少？2026年11月最新的国家给付金、支援金和补贴一览。全民统一给付尚未决定；就业者负担减轻支援金法案在审议中；另有电费燃气费减免、所得税减税等，附状态、金额、时间和出处。",
-      "asOf": "信息截至2026年11月26日（就业者负担减轻支援金、食品消费税、电费燃气费支援和燃料补贴于11月26日核对，其他项目于11月23日核对）。有新信息时我们会更新。",
+      "asOf": "信息截至2026年11月27日（就业者负担减轻支援金和燃料补贴于11月27日核对，食品消费税和电费燃气费支援于11月26日核对，其他项目于11月23日核对）。有新信息时我们会更新。",
       "lead": [
         "为了回答“给付金什么时候发？”“有没有全民统一给付？”，本页把日本国家层面的给付金、支援金和补贴分成已定并实施中、法案在国会审议中、政府研究中、未定、已结束几类列出。每一项都写明金额、对象、时间、领取方式、出处和核对日期。",
         "先说结论：截至2026年11月，向全体国民统一发放的现金给付并未决定。目前实施中的是电费和城市燃气费减免、汽油等燃料补贴，以及在年末调整中结算的所得税减税；发放现金的主要是各市区町村自己的给付。政府新的现金给付“就业者负担减轻支援金”的法案正在参议院审议。[17][1][7]"
@@ -60623,7 +60723,7 @@ module.exports = {
         ],
         [
           "下一项国家给付是什么？",
-          "就业者负担减轻支援金。法案正在参议院审议，若通过，制度于2027年4月开始，2027、2028财年每年发放一次。政府正以每人每年最多约2万5,000日元为基础进行研究。自11月24日起在野党表示暂不参加审议，表决日程尚未确定。[1][3][7][26]",
+          "就业者负担减轻支援金。法案正在参议院审议，若通过，制度于2027年4月开始，2027、2028财年每年发放一次。政府正以每人每年最多约2万5,000日元为基础进行研究。自11月24日起在野党表示暂不参加审议，但27日参议院全体会议以赞成120票、反对124票否决了针对文部科学大臣的问责决议案。表决日程尚未见报道。[1][3][7][26][30]",
           "bill"
         ],
         [
@@ -60643,7 +60743,7 @@ module.exports = {
       },
       "openH": "尚未确定的事项",
       "open": [
-        "就业者负担减轻支援金的法案能否成立，以及最终金额和收入界线（由政令决定）。自11月24日起在野党表示暂不参加审议，表决日程尚未确定。国会会期到12月12日结束，尚未决定延长。[7][26][28][9]",
+        "就业者负担减轻支援金的法案能否成立，以及最终金额和收入界线（由政令决定）。自11月24日起在野党表示暂不参加审议，但27日参议院全体会议以赞成120票、反对124票否决了针对文部科学大臣的问责决议案，执政党打算请在野党尽早恢复审议。表决日程尚未见报道。国会会期到12月12日结束，尚未决定延长。[7][26][28][30][9]",
         "2027年3月用量的电费燃气费支援。首相表示将“在看清各种情况后研究对策”。[12]",
         "燃料补贴何时结束。12月基准价格将于3日提高到172日元、10日174日元、17日175日元（目前为170日元），但没有给出结束时间。[12][13][30]",
         "可退还税收抵免（给付付税额控除）的具体制度。目标是2029财年导入，仍在研究中。[18]"
@@ -60665,7 +60765,7 @@ module.exports = {
           "gist": "向中低收入劳动者每年发一次现金。法案在参议院审议中，正在研究每人每年最多约2万5,000日元。",
           "amount": "政府正在研究以每人每年最多约2万5,000日元为基础，并为每名未满16岁的孩子每年加约5,000日元（11月13日首相答辩）。夫妇加两个孩子全额领取的话，每年共6万日元。金额由政令决定。关于2029财年起的正式实施，朝日新闻报道政府正在研究向部分双职工夫妇加两个孩子的家庭每年最多发放约27万日元的方案（尚未出现在政府文件中）。[3][2][4][29]",
           "who": "上一年工作并有收入的人（以个人为单位）。财务大臣把年收入100万至450万日元的约3,000万人称为“大致的印象”，并在11月19日答辩称，正在研究把开始发放的年收入（下限）定为约56万日元。[5][6]",
-          "when": "法案通过的话从2027年4月开始，2027、2028财年原则上每年一次。首次发放时间尚未确定。法案已于11月6日通过众议院，参议院于11月24日举行了中央公听会。同日6个在野党以文部科学大臣的答辩为由，一致决定暂不参加审议，截至11月26日表决日程尚未确定。会期到12月12日。[1][7][8][26][27][9]",
+          "when": "法案通过的话从2027年4月开始，2027、2028财年原则上每年一次。首次发放时间尚未确定。法案已于11月6日通过众议院，参议院于11月24日举行了中央公听会。同日6个在野党以文部科学大臣的答辩为由，一致决定暂不参加审议。27日参议院全体会议以赞成120票、反对124票否决了针对文部科学大臣的问责决议案，截至11月27日尚未有表决日程的报道。会期到12月12日。[1][7][8][26][27][30][9]",
           "how": "由居住地的市区町村认定资格并汇款。已登记公款领取账户的，原则上无需申请。[1]"
         },
         {
@@ -60689,8 +60789,8 @@ module.exports = {
         {
           "id": "fuel",
           "name": "汽油和柴油等燃料补贴",
-          "gist": "汽油暂定税率已于2025年底废除。目前每升补贴29.6日元，12月起分阶段缩小。",
-          "amount": "11月19日起，汽油、柴油、灯油、重油每升补贴29.6日元，航空燃料为23.6日元。另外，汽油暂定税率（每升25.1日元）已于2025年12月31日废除。[13][14]",
+          "gist": "汽油暂定税率已于2025年底废除。目前每升补贴27.3日元，12月起分阶段缩小。",
+          "amount": "11月26日起，汽油、柴油、灯油、重油每升补贴27.3日元，航空燃料为21.8日元（11月19日起为29.6日元和23.6日元）。另外，汽油暂定税率（每升25.1日元）已于2025年12月31日废除。[13][14]",
           "who": "所有购买燃料的人。这不是现金给付，而是向石油批发商等发补贴，压低零售价格。[13]",
           "when": "本轮措施自2026年3月19日开始。12月起，以朝着春季每月把基准价格提高5日元为基本方针，逐步缩小补贴。12月，目前为170日元的基准价格将于3日提高到172日元、10日174日元、17日175日元。没有给出结束时间。[12][13][30]",
           "how": "无需任何手续。"
@@ -60834,6 +60934,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "2026年11月27日",
+          "参议院全体会议以赞成120票、反对124票否决了8个在野党会派于26日提出的针对文部科学大臣的问责决议案；执政党打算请在野党尽早恢复审议。[30]",
+          "reported"
+        ],
+        [
           "2026-12",
           "2026年12月",
           "电费和城市燃气费减免从12月用量开始。所得税减税在年末调整中结算。[11][15]",
@@ -60886,7 +60992,7 @@ module.exports = {
         ],
         [
           "就业者负担减轻支援金的法案什么时候成立？",
-          "目前还不知道。法案正在参议院特别委员会审议，但自11月24日起在野党表示暂不参加审议，截至11月26日表决日程尚未确定。会期于12月12日结束，尚未决定延长。[26][28][9]"
+          "目前还不知道。法案正在参议院特别委员会审议。自11月24日起在野党表示暂不参加审议，但27日参议院全体会议以赞成120票、反对124票否决了针对文部科学大臣的问责决议案，执政党打算请在野党尽早恢复审议。截至11月27日，尚未有表决日程的报道。会期于12月12日结束，尚未决定延长。[26][28][30][9]"
         ],
         [
           "有面向免征居民税家庭的给付吗？",
@@ -60939,7 +61045,7 @@ module.exports = {
       "short": "जापान के भुगतान 2026",
       "eb": "भुगतानों का सार",
       "desc": "जापान में नकद भुगतान कब और कितना? सबको एक जैसा भुगतान तय नहीं। कामगारों का रिलीफ़ पेमेंट, बिजली-गैस छूट, आयकर कटौती और बाक़ी, स्थिति और स्रोत के साथ।",
-      "asOf": "26 नवंबर 2026 तक की जानकारी (रिलीफ़ पेमेंट, खाने पर कर, बिजली-गैस मदद और ईंधन सब्सिडी 26 नवंबर को, बाक़ी मदें 23 नवंबर को जाँची गईं)। नई जानकारी आने पर हम यह पेज अपडेट करते हैं।",
+      "asOf": "27 नवंबर 2026 तक की जानकारी (रिलीफ़ पेमेंट और ईंधन सब्सिडी 27 नवंबर को, खाने पर कर और बिजली-गैस मदद 26 नवंबर को, बाक़ी मदें 23 नवंबर को जाँची गईं)। नई जानकारी आने पर हम यह पेज अपडेट करते हैं।",
       "lead": [
         "“अगला भुगतान कब?” और “क्या सबको भुगतान मिलेगा?” का जवाब देने के लिए यह पेज जापान के राष्ट्रीय नकद भुगतान, सहायता भुगतान और सब्सिडी को इन हिस्सों में बाँटता है: तय और लागू, संसद में विधेयक के रूप में, सरकार के विचाराधीन, तय नहीं, और समाप्त। हर मद में रकम, किसे मिलता है, कब, कैसे मिलता है, स्रोत और जाँच की तारीख़ दी गई है।",
         "संक्षेप में: नवंबर 2026 तक सबको एक जैसा नकद भुगतान देने का कोई फ़ैसला नहीं हुआ है। अभी लागू हैं बिजली और शहरी गैस के बिलों पर छूट, पेट्रोल और दूसरे ईंधनों पर सब्सिडी, और साल के अंत के समायोजन में मिलने वाली आयकर कटौती; नकद भुगतान मुख्य रूप से अलग-अलग नगरपालिकाएँ देती हैं। सरकार का नया नकद भुगतान, वर्कर बर्डन रिलीफ़ पेमेंट, एक विधेयक में है जिस पर अभी पार्षद सभा में बहस हो रही है।[17][1][7]"
@@ -60958,7 +61064,7 @@ module.exports = {
         ],
         [
           "अगला राष्ट्रीय भुगतान?",
-          "वर्कर बर्डन रिलीफ़ पेमेंट। विधेयक पार्षद सभा में है; पास होने पर योजना अप्रैल 2027 में शुरू होगी और वित्त वर्ष 2027 और 2028 में साल में एक बार भुगतान होगा। सरकार आधार के रूप में हर व्यक्ति को सालाना अधिकतम लगभग 25,000 येन पर विचार कर रही है। 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया है, और मतदान की कोई तारीख़ तय नहीं है।[1][3][7][26]",
+          "वर्कर बर्डन रिलीफ़ पेमेंट। विधेयक पार्षद सभा में है; पास होने पर योजना अप्रैल 2027 में शुरू होगी और वित्त वर्ष 2027 और 2028 में साल में एक बार भुगतान होगा। सरकार आधार के रूप में हर व्यक्ति को सालाना अधिकतम लगभग 25,000 येन पर विचार कर रही है। 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया था, पर 27 नवंबर को पूर्ण सदन ने शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव पक्ष में 120 और विरोध में 124 मतों से ख़ारिज कर दिया। मतदान की किसी तारीख़ की ख़बर नहीं है।[1][3][7][26][30]",
           "bill"
         ],
         [
@@ -60978,7 +61084,7 @@ module.exports = {
       },
       "openH": "अभी तय नहीं",
       "open": [
-        "वर्कर बर्डन रिलीफ़ पेमेंट का विधेयक पास होगा या नहीं, और अंतिम रकम और आय की सीमाएँ (मंत्रिमंडल के आदेश से तय होंगी)। 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया है, और मतदान की कोई तारीख़ तय नहीं है। संसद का सत्र 12 दिसंबर को ख़त्म होता है, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[7][26][28][9]",
+        "वर्कर बर्डन रिलीफ़ पेमेंट का विधेयक पास होगा या नहीं, और अंतिम रकम और आय की सीमाएँ (मंत्रिमंडल के आदेश से तय होंगी)। 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया था, पर 27 नवंबर को पूर्ण सदन ने शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव पक्ष में 120 और विरोध में 124 मतों से ख़ारिज कर दिया, और सत्ता पक्ष विपक्ष से जल्द बहस फिर शुरू करने को कहने की योजना बना रहा है। मतदान की किसी तारीख़ की ख़बर नहीं है। संसद का सत्र 12 दिसंबर को ख़त्म होता है, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[7][26][28][30][9]",
         "मार्च 2027 की बिजली और गैस खपत के लिए मदद। प्रधानमंत्री ने कहा कि सरकार “हालात को ध्यान से देखकर क़दम पर विचार करेगी”।[12]",
         "ईंधन सब्सिडी कब ख़त्म होगी। दिसंबर में आधार मूल्य 3 तारीख़ को 172 येन, 10 तारीख़ को 174 येन और 17 तारीख़ को 175 येन होगा (अभी 170 येन), पर ख़त्म होने की कोई तारीख़ नहीं बताई गई।[12][13][30]",
         "रिफ़ंडेबल टैक्स क्रेडिट का ढाँचा, जिसे सरकार वित्त वर्ष 2029 में लाना चाहती है।[18]"
@@ -61000,7 +61106,7 @@ module.exports = {
           "gist": "कम और मध्यम आय वाले कामगारों को साल में एक बार नकद। विधेयक पार्षद सभा में है; हर व्यक्ति को सालाना अधिकतम लगभग 25,000 येन विचाराधीन।",
           "amount": "सरकार आधार के रूप में हर व्यक्ति को सालाना अधिकतम लगभग 25,000 येन और 16 साल से कम उम्र के हर बच्चे पर सालाना लगभग 5,000 येन अतिरिक्त पर विचार कर रही है (13 नवंबर का प्रधानमंत्री का जवाब)। पूरी रकम पाने वाले दो बच्चों वाले दंपति को सालाना 60,000 येन मिलेंगे। रकम मंत्रिमंडल के आदेश से तय होगी। वित्त वर्ष 2029 से पूरी योजना के लिए असाही शिंबुन की ख़बर है कि सरकार दोनों कमाने वाले दो बच्चों वाले कुछ दंपतियों को सालाना अधिकतम लगभग 270,000 येन देने पर विचार कर रही है (अभी किसी सरकारी दस्तावेज़ में नहीं)।[3][2][4][29]",
           "who": "वे लोग जिन्होंने पिछले साल काम करके कमाई की (हर व्यक्ति अलग गिना जाता है)। वित्त मंत्री ने 1 मिलियन से 4.5 मिलियन येन आय वाले लगभग 30 मिलियन लोगों को “मोटी तस्वीर” बताया, और 19 नवंबर को कहा कि लगभग 560,000 येन सालाना आय की निचली सीमा पर विचार हो रहा है।[5][6]",
-          "when": "विधेयक पास हुआ तो अप्रैल 2027 से, सिद्धांत रूप में वित्त वर्ष 2027 और 2028 में एक-एक बार। पहले भुगतान की तारीख़ तय नहीं है। विधेयक 6 नवंबर को प्रतिनिधि सभा से पास हुआ; पार्षद सभा ने 24 नवंबर को केंद्रीय जन सुनवाई की। उसी दिन 6 विपक्षी दलों ने शिक्षा मंत्री के जवाबों का हवाला देकर फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया, और 26 नवंबर तक मतदान की कोई तारीख़ तय नहीं है। सत्र 12 दिसंबर को ख़त्म होता है।[1][7][8][26][27][9]",
+          "when": "विधेयक पास हुआ तो अप्रैल 2027 से, सिद्धांत रूप में वित्त वर्ष 2027 और 2028 में एक-एक बार। पहले भुगतान की तारीख़ तय नहीं है। विधेयक 6 नवंबर को प्रतिनिधि सभा से पास हुआ; पार्षद सभा ने 24 नवंबर को केंद्रीय जन सुनवाई की। उसी दिन 6 विपक्षी दलों ने शिक्षा मंत्री के जवाबों का हवाला देकर फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया। 27 नवंबर को पूर्ण सदन ने शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव पक्ष में 120 और विरोध में 124 मतों से ख़ारिज कर दिया, और 27 नवंबर तक मतदान की किसी तारीख़ की ख़बर नहीं है। सत्र 12 दिसंबर को ख़त्म होता है।[1][7][8][26][27][30][9]",
           "how": "आपकी नगरपालिका पात्रता प्रमाणित करके खाते में पैसा भेजती है। सार्वजनिक भुगतान प्राप्ति खाता पंजीकृत हो तो सिद्धांत रूप में आवेदन नहीं करना पड़ता।[1]"
         },
         {
@@ -61024,8 +61130,8 @@ module.exports = {
         {
           "id": "fuel",
           "name": "पेट्रोल और डीज़ल सब्सिडी",
-          "gist": "पेट्रोल पर अस्थायी कर दर 2025 के अंत में ख़त्म। अभी 29.6 येन प्रति लीटर सब्सिडी, जो दिसंबर से धीरे-धीरे घटेगी।",
-          "amount": "19 नवंबर से पेट्रोल, डीज़ल, केरोसिन और भारी तेल पर 29.6 येन प्रति लीटर और विमान ईंधन पर 23.6 येन सब्सिडी है। इससे अलग, पेट्रोल पर अस्थायी कर दर (25.1 येन प्रति लीटर) 31 दिसंबर 2025 को ख़त्म कर दी गई।[13][14]",
+          "gist": "पेट्रोल पर अस्थायी कर दर 2025 के अंत में ख़त्म। अभी 27.3 येन प्रति लीटर सब्सिडी, जो दिसंबर से धीरे-धीरे घटेगी।",
+          "amount": "26 नवंबर से पेट्रोल, डीज़ल, केरोसिन और भारी तेल पर 27.3 येन प्रति लीटर और विमान ईंधन पर 21.8 येन सब्सिडी है (19 नवंबर से यह 29.6 और 23.6 येन थी)। इससे अलग, पेट्रोल पर अस्थायी कर दर (25.1 येन प्रति लीटर) 31 दिसंबर 2025 को ख़त्म कर दी गई।[13][14]",
           "who": "ईंधन ख़रीदने वाले सभी लोग। यह नकद भुगतान नहीं है: सब्सिडी तेल थोक विक्रेताओं को जाती है ताकि पंप पर दाम कम रहें।[13]",
           "when": "मौजूदा क़दम 19 मार्च 2026 को शुरू हुआ। दिसंबर से सब्सिडी घटेगी, मूल योजना यह है कि वसंत तक आधार मूल्य हर महीने 5 येन बढ़ाया जाए। दिसंबर में आधार मूल्य, जो अभी 170 येन है, 3 तारीख़ को 172 येन, 10 तारीख़ को 174 येन और 17 तारीख़ को 175 येन होगा। ख़त्म होने की तारीख़ नहीं बताई गई।[12][13][30]",
           "how": "कुछ करने की ज़रूरत नहीं।"
@@ -61169,6 +61275,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27 नवंबर 2026",
+          "पार्षद सभा के पूर्ण सदन ने 8 विपक्षी समूहों के 26 नवंबर को पेश शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव को पक्ष में 120 और विरोध में 124 मतों से ख़ारिज किया; सत्ता पक्ष विपक्ष से जल्द बहस फिर शुरू करने को कहने की योजना बना रहा है।[30]",
+          "reported"
+        ],
+        [
           "2026-12",
           "दिसंबर 2026",
           "बिजली-गैस छूट दिसंबर की खपत से शुरू। आयकर कटौती साल के अंत के समायोजन में।[11][15]",
@@ -61221,7 +61333,7 @@ module.exports = {
         ],
         [
           "वर्कर बर्डन रिलीफ़ पेमेंट का विधेयक कब पास होगा?",
-          "अभी पता नहीं। यह पार्षद सभा की एक विशेष समिति के सामने है, पर 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया है, और 26 नवंबर तक मतदान की कोई तारीख़ तय नहीं हुई है। सत्र 12 दिसंबर को ख़त्म होता है, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[26][28][9]"
+          "अभी पता नहीं। यह पार्षद सभा की एक विशेष समिति के सामने है। 24 नवंबर से विपक्ष ने फ़िलहाल बहस में हिस्सा न लेने का फ़ैसला किया था, पर 27 नवंबर को पूर्ण सदन ने शिक्षा मंत्री के ख़िलाफ़ निंदा प्रस्ताव पक्ष में 120 और विरोध में 124 मतों से ख़ारिज कर दिया, और सत्ता पक्ष बहस जल्द फिर शुरू कराने को कहने की योजना बना रहा है। 27 नवंबर तक मतदान की किसी तारीख़ की ख़बर नहीं है। सत्र 12 दिसंबर को ख़त्म होता है, और इसे बढ़ाने का कोई फ़ैसला नहीं हुआ है।[26][28][30][9]"
         ],
         [
           "क्या निवासी कर से छूट वाले परिवारों के लिए भुगतान है?",
@@ -61274,7 +61386,7 @@ module.exports = {
       "short": "Ayudas de Japón en 2026",
       "eb": "Resumen de ayudas",
       "desc": "¿Cuándo y cuánto pagan las ayudas en Japón? No hay pago para todos decidido. El pago de alivio para trabajadores, descuentos de luz y gas y más, con fuentes.",
-      "asOf": "Información a 26 de noviembre de 2026 (el pago de alivio, el impuesto en alimentos, la ayuda de luz y gas y el subsidio a los combustibles comprobados el 26 de noviembre; los demás puntos, el 23 de noviembre). Actualizamos la página cuando hay datos nuevos.",
+      "asOf": "Información a 27 de noviembre de 2026 (el pago de alivio y el subsidio a los combustibles comprobados el 27 de noviembre; el impuesto en alimentos y la ayuda de luz y gas, el 26 de noviembre; los demás puntos, el 23 de noviembre). Actualizamos la página cuando hay datos nuevos.",
       "lead": [
         "Para responder a «¿cuándo es el próximo pago?» y «¿hay un pago para todos?», esta página reúne los pagos en efectivo, ayudas y subsidios del Estado japonés, separados en decididos y en vigor, en un proyecto de ley ante el Parlamento, en estudio por el Gobierno, sin decidir y terminados. Cada punto da la cuantía, quién lo recibe, cuándo, cómo cobrarlo, sus fuentes y el día en que se comprobó.",
         "En resumen: a noviembre de 2026 no se ha decidido ningún pago en efectivo igual para todos. Lo que está en vigor es un descuento en las facturas de electricidad y gas ciudad, un subsidio a la gasolina y otros combustibles y una rebaja del impuesto sobre la renta que se liquida en el ajuste de fin de año; los pagos en efectivo vienen sobre todo de cada municipio. El nuevo pago del Gobierno, el pago de alivio de cargas para trabajadores, está en un proyecto de ley que debate ahora la Cámara de Consejeros.[17][1][7]"
@@ -61293,7 +61405,7 @@ module.exports = {
         ],
         [
           "¿El próximo pago estatal?",
-          "El pago de alivio de cargas para trabajadores. El proyecto está en la Cámara de Consejeros; si se aprueba, empieza en abril de 2027 y paga una vez al año en los años fiscales 2027 y 2028. El Gobierno estudia una base de hasta unos 25.000 yenes al año por persona. Desde el 24 de noviembre la oposición se niega por ahora a participar en los debates y no hay fecha para la votación.[1][3][7][26]",
+          "El pago de alivio de cargas para trabajadores. El proyecto está en la Cámara de Consejeros; si se aprueba, empieza en abril de 2027 y paga una vez al año en los años fiscales 2027 y 2028. El Gobierno estudia una base de hasta unos 25.000 yenes al año por persona. Desde el 24 de noviembre la oposición se niega por ahora a participar en los debates, pero el 27 de noviembre el pleno rechazó la moción de censura contra el ministro de Educación por 124 votos contra 120. No se ha informado de fecha para la votación.[1][3][7][26][30]",
           "bill"
         ],
         [
@@ -61313,7 +61425,7 @@ module.exports = {
       },
       "openH": "Lo que aún no está decidido",
       "open": [
-        "Si se aprueba el proyecto del pago de alivio para trabajadores, y las cuantías y límites de ingresos definitivos (por decreto). Desde el 24 de noviembre la oposición se niega por ahora a participar en los debates y no hay fecha para la votación. El periodo de sesiones termina el 12 de diciembre y no se ha decidido ninguna prórroga.[7][26][28][9]",
+        "Si se aprueba el proyecto del pago de alivio para trabajadores, y las cuantías y límites de ingresos definitivos (por decreto). Desde el 24 de noviembre la oposición se niega por ahora a participar en los debates, pero el 27 de noviembre el pleno rechazó la moción de censura contra el ministro de Educación por 124 votos contra 120, y el oficialismo prevé pedir que los debates se reanuden pronto. No se ha informado de fecha para la votación. El periodo de sesiones termina el 12 de diciembre y no se ha decidido ninguna prórroga.[7][26][28][30][9]",
         "La ayuda para el consumo de luz y gas de marzo de 2027. La primera ministra dijo que el Gobierno «estudiará una respuesta tras observar bien la situación».[12]",
         "Cuándo termina el subsidio a los combustibles. En diciembre el precio de referencia sube a 172 yenes el día 3, a 174 el 10 y a 175 el 17 (ahora es de 170), pero no hay fecha de fin.[12][13][30]",
         "El diseño de un crédito fiscal reembolsable, que el Gobierno quiere introducir en el año fiscal 2029.[18]"
@@ -61335,7 +61447,7 @@ module.exports = {
           "gist": "Dinero una vez al año para trabajadores con ingresos bajos y medios. El proyecto está en la Cámara de Consejeros; se estudian hasta unos 25.000 yenes al año por persona.",
           "amount": "El Gobierno estudia una base de hasta unos 25.000 yenes al año por persona, más unos 5.000 yenes al año por cada hijo menor de 16 años (respuesta de la primera ministra del 13 de noviembre). Una pareja con dos hijos que cobre el máximo recibiría 60.000 yenes al año. Las cuantías se fijarán por decreto. Para el sistema completo desde el año fiscal 2029, el Asahi Shimbun informa de que el Gobierno estudia hasta unos 270.000 yenes al año para algunas parejas con dos hijos en las que trabajan los dos (aún no figura en ningún documento del Gobierno).[3][2][4][29]",
           "who": "Quienes trabajaron y tuvieron ingresos el año anterior (cada persona cuenta por separado). La ministra de Finanzas dio como «imagen aproximada» unos 30 millones de personas con ingresos de 1 a 4,5 millones de yenes, y el 19 de noviembre dijo que se estudia un mínimo de unos 560.000 yenes de ingresos anuales.[5][6]",
-          "when": "Desde abril de 2027 si se aprueba el proyecto, en principio un pago en cada uno de los años fiscales 2027 y 2028. No hay fecha para el primer pago. El proyecto pasó la Cámara de Representantes el 6 de noviembre; la Cámara de Consejeros celebró una audiencia pública central el 24 de noviembre. Ese mismo día 6 partidos de la oposición acordaron no participar por ahora en los debates, por las respuestas del ministro de Educación, y a 26 de noviembre no hay fecha para la votación. El periodo de sesiones termina el 12 de diciembre.[1][7][8][26][27][9]",
+          "when": "Desde abril de 2027 si se aprueba el proyecto, en principio un pago en cada uno de los años fiscales 2027 y 2028. No hay fecha para el primer pago. El proyecto pasó la Cámara de Representantes el 6 de noviembre; la Cámara de Consejeros celebró una audiencia pública central el 24 de noviembre. Ese mismo día 6 partidos de la oposición acordaron no participar por ahora en los debates, por las respuestas del ministro de Educación. El 27 de noviembre el pleno rechazó la moción de censura contra el ministro de Educación por 124 votos contra 120, y a 27 de noviembre no se ha informado de fecha para la votación. El periodo de sesiones termina el 12 de diciembre.[1][7][8][26][27][30][9]",
           "how": "Tu municipio te reconoce el derecho y te lo ingresa. Si tienes registrada una cuenta para cobros públicos, en principio no hace falta solicitarlo.[1]"
         },
         {
@@ -61359,8 +61471,8 @@ module.exports = {
         {
           "id": "fuel",
           "name": "Subsidio a la gasolina y el gasóleo",
-          "gist": "El tipo provisional del impuesto sobre la gasolina se suprimió a finales de 2025. Ahora hay un subsidio de 29,6 yenes por litro, que se reduce por tramos desde diciembre.",
-          "amount": "Desde el 19 de noviembre el subsidio es de 29,6 yenes por litro para la gasolina, el gasóleo, el queroseno y el fuelóleo, y de 23,6 yenes para el combustible de aviación. Aparte, el tipo provisional del impuesto sobre la gasolina (25,1 yenes por litro) se suprimió el 31 de diciembre de 2025.[13][14]",
+          "gist": "El tipo provisional del impuesto sobre la gasolina se suprimió a finales de 2025. Ahora hay un subsidio de 27,3 yenes por litro, que se reduce por tramos desde diciembre.",
+          "amount": "Desde el 26 de noviembre el subsidio es de 27,3 yenes por litro para la gasolina, el gasóleo, el queroseno y el fuelóleo, y de 21,8 yenes para el combustible de aviación (desde el 19 de noviembre era de 29,6 y 23,6 yenes). Aparte, el tipo provisional del impuesto sobre la gasolina (25,1 yenes por litro) se suprimió el 31 de diciembre de 2025.[13][14]",
           "who": "Todo el que compra combustible. No es un pago en efectivo: el subsidio va a los mayoristas de petróleo para contener los precios en el surtidor.[13]",
           "when": "La medida actual empezó el 19 de marzo de 2026. Desde diciembre el subsidio se reducirá, con el plan básico de subir el precio de referencia 5 yenes al mes hasta la primavera. En diciembre, el precio de referencia, ahora de 170 yenes, sube a 172 el día 3, a 174 el 10 y a 175 el 17. No hay fecha de fin.[12][13][30]",
           "how": "No hay que hacer nada."
@@ -61504,6 +61616,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27 de noviembre de 2026",
+          "El pleno de la Cámara de Consejeros rechaza, por 124 votos contra 120, la moción de censura contra el ministro de Educación presentada el 26 de noviembre por 8 grupos de la oposición; el oficialismo prevé pedir a la oposición que reanude pronto los debates.[30]",
+          "reported"
+        ],
+        [
           "2026-12",
           "Diciembre de 2026",
           "Empieza el descuento de luz y gas con el consumo de diciembre. La rebaja del impuesto sobre la renta se liquida en el ajuste de fin de año.[11][15]",
@@ -61556,7 +61674,7 @@ module.exports = {
         ],
         [
           "¿Cuándo se aprobará el proyecto del pago de alivio para trabajadores?",
-          "No se sabe. Está en una comisión especial de la Cámara de Consejeros, pero desde el 24 de noviembre la oposición se niega por ahora a participar en los debates, y a 26 de noviembre no hay fecha para la votación. El periodo de sesiones termina el 12 de diciembre y no se ha decidido ninguna prórroga.[26][28][9]"
+          "No se sabe. Está en una comisión especial de la Cámara de Consejeros. Desde el 24 de noviembre la oposición se niega por ahora a participar en los debates, pero el 27 de noviembre el pleno rechazó la moción de censura contra el ministro de Educación por 124 votos contra 120, y el oficialismo prevé pedir que los debates se reanuden pronto. A 27 de noviembre no se ha informado de fecha para la votación. El periodo de sesiones termina el 12 de diciembre y no se ha decidido ninguna prórroga.[26][28][30][9]"
         ],
         [
           "¿Hay un pago para los hogares exentos del impuesto de residentes?",
@@ -61609,7 +61727,7 @@ module.exports = {
       "short": "Japans Leistungen 2026",
       "eb": "Leistungen im Überblick",
       "desc": "Wann und wie viel zahlt Japans Staat? Keine Zahlung für alle beschlossen. Entlastungszahlung für Erwerbstätige, Strom- und Gasrabatt und mehr, mit Quellen.",
-      "asOf": "Stand: 26. November 2026 (Entlastungszahlung, Lebensmittelsteuer, Strom- und Gashilfe und Kraftstoffzuschuss am 26. November geprüft, die übrigen Punkte am 23. November). Wir aktualisieren die Seite, sobald es Neues gibt.",
+      "asOf": "Stand: 27. November 2026 (Entlastungszahlung und Kraftstoffzuschuss am 27. November geprüft, Lebensmittelsteuer sowie Strom- und Gashilfe am 26. November, die übrigen Punkte am 23. November). Wir aktualisieren die Seite, sobald es Neues gibt.",
       "lead": [
         "Um die Fragen „Wann kommt die nächste Zahlung?“ und „Gibt es eine Zahlung für alle?“ zu beantworten, listet diese Seite Japans staatliche Geldleistungen, Hilfszahlungen und Zuschüsse auf, getrennt nach beschlossen und laufend, als Gesetzentwurf im Parlament, von der Regierung geprüft, offen und beendet. Zu jedem Punkt stehen Betrag, Berechtigte, Zeitpunkt, Weg der Auszahlung, Quellen und Prüfdatum.",
         "Kurz gesagt: Stand November 2026 ist keine einheitliche Geldzahlung an alle beschlossen. Laufend sind ein Rabatt auf Strom- und Stadtgasrechnungen, ein Zuschuss auf Benzin und andere Kraftstoffe und eine Senkung der Einkommensteuer, die im Lohnsteuer-Jahresausgleich verrechnet wird; Geld zahlen vor allem einzelne Gemeinden aus. Die neue Geldleistung der Regierung, die Entlastungszahlung für Erwerbstätige, steckt in einem Gesetzentwurf, den das Oberhaus gerade berät.[17][1][7]"
@@ -61628,7 +61746,7 @@ module.exports = {
         ],
         [
           "Die nächste staatliche Zahlung?",
-          "Die Entlastungszahlung für Erwerbstätige. Der Gesetzentwurf liegt im Oberhaus; wird er verabschiedet, startet sie im April 2027 und zahlt in den Fiskaljahren 2027 und 2028 je einmal. Die Regierung prüft als Grundbetrag bis zu etwa 25.000 Yen pro Person und Jahr. Seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, eine Abstimmung ist nicht angesetzt.[1][3][7][26]",
+          "Die Entlastungszahlung für Erwerbstätige. Der Gesetzentwurf liegt im Oberhaus; wird er verabschiedet, startet sie im April 2027 und zahlt in den Fiskaljahren 2027 und 2028 je einmal. Die Regierung prüft als Grundbetrag bis zu etwa 25.000 Yen pro Person und Jahr. Seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, doch am 27. November lehnte das Plenum den Tadelsantrag gegen den Bildungsminister mit 124 zu 120 Stimmen ab. Ein Abstimmungstermin ist nicht gemeldet.[1][3][7][26][30]",
           "bill"
         ],
         [
@@ -61648,7 +61766,7 @@ module.exports = {
       },
       "openH": "Noch nicht entschieden",
       "open": [
-        "Ob der Gesetzentwurf zur Entlastungszahlung verabschiedet wird, und die endgültigen Beträge und Einkommensgrenzen (per Kabinettsverordnung). Seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, eine Abstimmung ist nicht angesetzt. Die Sitzungsperiode endet am 12. Dezember, eine Verlängerung ist nicht beschlossen.[7][26][28][9]",
+        "Ob der Gesetzentwurf zur Entlastungszahlung verabschiedet wird, und die endgültigen Beträge und Einkommensgrenzen (per Kabinettsverordnung). Seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, doch am 27. November lehnte das Plenum den Tadelsantrag gegen den Bildungsminister mit 124 zu 120 Stimmen ab, und die Regierungsseite will darum bitten, die Beratungen bald wieder aufzunehmen. Ein Abstimmungstermin ist nicht gemeldet. Die Sitzungsperiode endet am 12. Dezember, eine Verlängerung ist nicht beschlossen.[7][26][28][30][9]",
         "Hilfe für den Strom- und Gasverbrauch im März 2027. Die Premierministerin sagte, man werde „nach genauer Betrachtung der Lage über eine Antwort beraten“.[12]",
         "Wann der Kraftstoffzuschuss endet. Im Dezember steigt der Referenzpreis am 3. auf 172 Yen, am 10. auf 174 Yen und am 17. auf 175 Yen (jetzt 170 Yen), ein Enddatum gibt es nicht.[12][13][30]",
         "Die Ausgestaltung einer erstattungsfähigen Steuergutschrift, die die Regierung im Fiskaljahr 2029 einführen will.[18]"
@@ -61670,7 +61788,7 @@ module.exports = {
           "gist": "Einmal im Jahr Geld für Erwerbstätige mit niedrigem und mittlerem Einkommen. Der Entwurf liegt im Oberhaus; geprüft werden bis zu etwa 25.000 Yen pro Person und Jahr.",
           "amount": "Die Regierung prüft einen Grundbetrag von höchstens etwa 25.000 Yen pro Person und Jahr, dazu etwa 5.000 Yen im Jahr für jedes Kind unter 16 (Antwort der Premierministerin vom 13. November). Ein Paar mit zwei Kindern, das den vollen Betrag erhält, bekäme 60.000 Yen im Jahr. Die Beträge werden per Kabinettsverordnung festgelegt. Für das volle System ab dem Fiskaljahr 2029 berichtet die Asahi Shimbun, die Regierung prüfe bis zu etwa 270.000 Yen im Jahr für manche Doppelverdiener-Paare mit zwei Kindern (noch in keiner Regierungsunterlage).[3][2][4][29]",
           "who": "Wer im Vorjahr gearbeitet und Einkommen erzielt hat (jede Person für sich). Die Finanzministerin nannte etwa 30 Millionen Menschen mit Einkommen von 1 Million bis 4,5 Millionen Yen als „grobes Bild“ und sagte am 19. November, eine Untergrenze von etwa 560.000 Yen Jahreseinkommen werde geprüft.[5][6]",
-          "when": "Ab April 2027, wenn der Entwurf verabschiedet wird, grundsätzlich je eine Zahlung in den Fiskaljahren 2027 und 2028. Ein Termin für die erste Zahlung steht nicht fest. Das Unterhaus stimmte am 6. November zu; das Oberhaus hielt am 24. November eine zentrale öffentliche Anhörung ab. Am selben Tag beschlossen 6 Oppositionsparteien wegen der Antworten des Bildungsministers, sich vorerst nicht an den Beratungen zu beteiligen; Stand 26. November ist keine Abstimmung angesetzt. Die Sitzungsperiode endet am 12. Dezember.[1][7][8][26][27][9]",
+          "when": "Ab April 2027, wenn der Entwurf verabschiedet wird, grundsätzlich je eine Zahlung in den Fiskaljahren 2027 und 2028. Ein Termin für die erste Zahlung steht nicht fest. Das Unterhaus stimmte am 6. November zu; das Oberhaus hielt am 24. November eine zentrale öffentliche Anhörung ab. Am selben Tag beschlossen 6 Oppositionsparteien wegen der Antworten des Bildungsministers, sich vorerst nicht an den Beratungen zu beteiligen. Am 27. November lehnte das Plenum den Tadelsantrag gegen den Bildungsminister mit 124 zu 120 Stimmen ab; Stand 27. November ist kein Abstimmungstermin gemeldet. Die Sitzungsperiode endet am 12. Dezember.[1][7][8][26][27][30][9]",
           "how": "Die Wohngemeinde stellt die Berechtigung fest und überweist. Wer ein Konto für öffentliche Zahlungen registriert hat, muss grundsätzlich keinen Antrag stellen.[1]"
         },
         {
@@ -61694,8 +61812,8 @@ module.exports = {
         {
           "id": "fuel",
           "name": "Zuschuss auf Benzin und Diesel",
-          "gist": "Der vorläufige Benzinsteuersatz wurde Ende 2025 abgeschafft. Jetzt gibt es 29,6 Yen Zuschuss pro Liter, ab Dezember schrittweise weniger.",
-          "amount": "Seit dem 19. November beträgt der Zuschuss 29,6 Yen pro Liter für Benzin, Diesel, Kerosin und Schweröl und 23,6 Yen für Flugtreibstoff. Unabhängig davon wurde der vorläufige Benzinsteuersatz (25,1 Yen pro Liter) am 31. Dezember 2025 abgeschafft.[13][14]",
+          "gist": "Der vorläufige Benzinsteuersatz wurde Ende 2025 abgeschafft. Jetzt gibt es 27,3 Yen Zuschuss pro Liter, ab Dezember schrittweise weniger.",
+          "amount": "Seit dem 26. November beträgt der Zuschuss 27,3 Yen pro Liter für Benzin, Diesel, Kerosin und Schweröl und 21,8 Yen für Flugtreibstoff (seit dem 19. November waren es 29,6 und 23,6 Yen). Unabhängig davon wurde der vorläufige Benzinsteuersatz (25,1 Yen pro Liter) am 31. Dezember 2025 abgeschafft.[13][14]",
           "who": "Alle, die Kraftstoff kaufen. Es ist keine Geldzahlung: Der Zuschuss geht an Ölgroßhändler, um die Preise an der Zapfsäule zu dämpfen.[13]",
           "when": "Die jetzige Maßnahme begann am 19. März 2026. Ab Dezember sinkt der Zuschuss; der Grundplan ist, den Referenzpreis bis zum Frühjahr um 5 Yen pro Monat anzuheben. Im Dezember steigt der Referenzpreis von jetzt 170 Yen am 3. auf 172 Yen, am 10. auf 174 Yen und am 17. auf 175 Yen. Ein Enddatum gibt es nicht.[12][13][30]",
           "how": "Nichts zu tun."
@@ -61839,6 +61957,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27. November 2026",
+          "Das Plenum des Oberhauses lehnt den von 8 Oppositionsgruppen am 26. November eingebrachten Tadelsantrag gegen den Bildungsminister mit 124 zu 120 Stimmen ab; die Regierungsseite will die Opposition bitten, die Beratungen bald wieder aufzunehmen.[30]",
+          "reported"
+        ],
+        [
           "2026-12",
           "Dezember 2026",
           "Der Strom- und Gasrabatt beginnt mit dem Dezemberverbrauch. Die Einkommensteuersenkung wird im Jahresausgleich verrechnet.[11][15]",
@@ -61891,7 +62015,7 @@ module.exports = {
         ],
         [
           "Wann wird der Gesetzentwurf zur Entlastungszahlung verabschiedet?",
-          "Das ist offen. Er liegt einem Sonderausschuss des Oberhauses vor, doch seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, und Stand 26. November ist keine Abstimmung angesetzt. Die Sitzungsperiode endet am 12. Dezember, eine Verlängerung ist nicht beschlossen.[26][28][9]"
+          "Das ist offen. Er liegt einem Sonderausschuss des Oberhauses vor. Seit dem 24. November beteiligt sich die Opposition vorerst nicht an den Beratungen, doch am 27. November lehnte das Plenum den Tadelsantrag gegen den Bildungsminister mit 124 zu 120 Stimmen ab, und die Regierungsseite will darum bitten, die Beratungen bald wieder aufzunehmen. Stand 27. November ist kein Abstimmungstermin gemeldet. Die Sitzungsperiode endet am 12. Dezember, eine Verlängerung ist nicht beschlossen.[26][28][30][9]"
         ],
         [
           "Gibt es eine Zahlung für von der Einwohnersteuer befreite Haushalte?",
@@ -61944,7 +62068,7 @@ module.exports = {
       "short": "إعانات اليابان في 2026",
       "eb": "ملخص الإعانات",
       "desc": "متى تُصرف الإعانات النقدية في اليابان وكم تبلغ؟ لا دفعة للجميع حتى الآن. دفعة تخفيف العبء عن العاملين وخصم الكهرباء والغاز وغيرها، مع الحالة والمصادر.",
-      "asOf": "المعلومات حتى 26 نوفمبر 2026 (رُوجعت دفعة تخفيف العبء وضريبة الغذاء ودعم الكهرباء والغاز ودعم الوقود في 26 نوفمبر، وبقية البنود في 23 نوفمبر). نحدّث الصفحة كلما ظهرت وقائع جديدة.",
+      "asOf": "المعلومات حتى 27 نوفمبر 2026 (رُوجعت دفعة تخفيف العبء ودعم الوقود في 27 نوفمبر، وضريبة الغذاء ودعم الكهرباء والغاز في 26 نوفمبر، وبقية البنود في 23 نوفمبر). نحدّث الصفحة كلما ظهرت وقائع جديدة.",
       "lead": [
         "للإجابة عن سؤالَي «متى الدفعة القادمة؟» و«هل هناك دفعة للجميع؟» تجمع هذه الصفحة المدفوعات النقدية والإعانات والدعم الذي تقدمه الحكومة اليابانية، مقسّمة إلى: ما حُسم ويُطبَّق، وما في مشروع قانون أمام البرلمان، وما تدرسه الحكومة، وما لم يُحسم، وما انتهى. ولكل بند المبلغ ومن يستحقه ومتى وكيف يُصرف ومصادره ويوم مراجعته.",
         "باختصار: حتى نوفمبر 2026 لم يُتخذ قرار بأي دفعة نقدية موحدة للجميع. المطبَّق الآن هو خصم على فواتير الكهرباء وغاز المدن، ودعم للبنزين وأنواع الوقود الأخرى، وخفض لضريبة الدخل يُسوّى في التسوية الضريبية آخر العام؛ أما المدفوعات النقدية فتأتي أساسًا من البلديات كلٌّ على حدة. والدفعة النقدية الجديدة للحكومة، أي دفعة تخفيف العبء عن العاملين، واردة في مشروع قانون يناقشه مجلس المستشارين الآن.[17][1][7]"
@@ -61963,7 +62087,7 @@ module.exports = {
         ],
         [
           "الدفعة الحكومية القادمة؟",
-          "دفعة تخفيف العبء عن العاملين. مشروع القانون أمام مجلس المستشارين؛ وإذا أُقرّ يبدأ النظام في أبريل 2027 ويُصرف مرة في السنة في السنتين الماليتين 2027 و2028. وتدرس الحكومة مبلغًا أساسيًا يصل إلى نحو 25,000 ين سنويًا للفرد. ومنذ 24 نوفمبر قررت المعارضة عدم المشاركة في المداولات في الوقت الحالي، ولم يُحدَّد موعد للتصويت.[1][3][7][26]",
+          "دفعة تخفيف العبء عن العاملين. مشروع القانون أمام مجلس المستشارين؛ وإذا أُقرّ يبدأ النظام في أبريل 2027 ويُصرف مرة في السنة في السنتين الماليتين 2027 و2028. وتدرس الحكومة مبلغًا أساسيًا يصل إلى نحو 25,000 ين سنويًا للفرد. وكانت المعارضة قررت منذ 24 نوفمبر عدم المشاركة في المداولات في الوقت الحالي، لكن الجلسة العامة رفضت في 27 نوفمبر مشروع قرار اللوم ضد وزير التعليم بأغلبية 124 صوتًا مقابل 120. ولم يُعلن موعد للتصويت.[1][3][7][26][30]",
           "bill"
         ],
         [
@@ -61983,7 +62107,7 @@ module.exports = {
       },
       "openH": "ما لم يُحسم بعد",
       "open": [
-        "هل يُقرّ مشروع قانون دفعة تخفيف العبء عن العاملين، والمبالغ وحدود الدخل النهائية (بمرسوم حكومي). ومنذ 24 نوفمبر قررت المعارضة عدم المشاركة في المداولات في الوقت الحالي، ولم يُحدَّد موعد للتصويت. وتنتهي الدورة البرلمانية في 12 ديسمبر، ولم يُقرَّر تمديدها.[7][26][28][9]",
+        "هل يُقرّ مشروع قانون دفعة تخفيف العبء عن العاملين، والمبالغ وحدود الدخل النهائية (بمرسوم حكومي). وكانت المعارضة قررت منذ 24 نوفمبر عدم المشاركة في المداولات في الوقت الحالي، لكن الجلسة العامة رفضت في 27 نوفمبر مشروع قرار اللوم ضد وزير التعليم بأغلبية 124 صوتًا مقابل 120، وتعتزم الأغلبية الحاكمة مطالبة المعارضة باستئناف المداولات سريعًا. ولم يُعلن موعد للتصويت. وتنتهي الدورة البرلمانية في 12 ديسمبر، ولم يُقرَّر تمديدها.[7][26][28][30][9]",
         "الدعم لاستهلاك الكهرباء والغاز في مارس 2027. وقالت رئيسة الوزراء إن الحكومة «ستدرس الاستجابة بعد تقدير الأوضاع بعناية».[12]",
         "متى ينتهي دعم الوقود. في ديسمبر يرتفع السعر المرجعي إلى 172 ين في اليوم 3، و174 ين في اليوم 10، و175 ين في اليوم 17 (وهو الآن 170 ين)، لكن لم يُعلن موعد للانتهاء.[12][13][30]",
         "تصميم الائتمان الضريبي القابل للاسترداد، الذي تريد الحكومة تطبيقه في السنة المالية 2029.[18]"
@@ -62005,7 +62129,7 @@ module.exports = {
           "gist": "مبلغ نقدي مرة في السنة للعاملين من ذوي الدخل المنخفض والمتوسط. المشروع أمام مجلس المستشارين، ويُدرس ما يصل إلى نحو 25,000 ين سنويًا للفرد.",
           "amount": "تدرس الحكومة مبلغًا أساسيًا يصل إلى نحو 25,000 ين سنويًا للفرد، مع نحو 5,000 ين سنويًا إضافية لكل طفل دون 16 عامًا (جواب رئيسة الوزراء في 13 نوفمبر). والزوجان مع طفلين، إذا حصلا على المبلغ كاملًا، ينالان 60,000 ين سنويًا. وستُحدَّد المبالغ بمرسوم حكومي. وبالنسبة إلى النظام الكامل ابتداءً من السنة المالية 2029، تفيد صحيفة أساهي بأن الحكومة تدرس ما يصل إلى نحو 270,000 ين سنويًا لبعض الأزواج العاملين كليهما ولديهم طفلان (ولا يرد ذلك بعد في أي وثيقة حكومية).[3][2][4][29]",
           "who": "من عمل وكسب دخلًا في السنة السابقة (كل فرد على حدة). وقدّم وزير المالية نحو 30 مليون شخص بدخل من مليون إلى 4.5 ملايين ين بوصفه «التصور التقريبي»، وقال في 19 نوفمبر إن حدًا أدنى بنحو 560,000 ين من الدخل السنوي قيد الدراسة.[5][6]",
-          "when": "من أبريل 2027 إذا أُقرّ المشروع، ومن حيث المبدأ دفعة واحدة في كل من السنتين الماليتين 2027 و2028. ولم يُحدَّد موعد الدفعة الأولى. وقد أقرّ مجلس النواب المشروع في 6 نوفمبر، وعقد مجلس المستشارين جلسة استماع عامة مركزية في 24 نوفمبر. وفي اليوم نفسه اتفقت 6 أحزاب معارضة على عدم المشاركة في المداولات في الوقت الحالي بسبب أجوبة وزير التعليم، وحتى 26 نوفمبر لم يُحدَّد موعد للتصويت. وتنتهي الدورة في 12 ديسمبر.[1][7][8][26][27][9]",
+          "when": "من أبريل 2027 إذا أُقرّ المشروع، ومن حيث المبدأ دفعة واحدة في كل من السنتين الماليتين 2027 و2028. ولم يُحدَّد موعد الدفعة الأولى. وقد أقرّ مجلس النواب المشروع في 6 نوفمبر، وعقد مجلس المستشارين جلسة استماع عامة مركزية في 24 نوفمبر. وفي اليوم نفسه اتفقت 6 أحزاب معارضة على عدم المشاركة في المداولات في الوقت الحالي بسبب أجوبة وزير التعليم. ورفضت الجلسة العامة في 27 نوفمبر مشروع قرار اللوم ضد وزير التعليم بأغلبية 124 صوتًا مقابل 120، وحتى 27 نوفمبر لم يُعلن موعد للتصويت. وتنتهي الدورة في 12 ديسمبر.[1][7][8][26][27][30][9]",
           "how": "تتحقق البلدية التي تسكن فيها من استحقاقك وتحوّل المبلغ. وإذا سجّلت حسابًا لاستلام الأموال العامة فلا حاجة من حيث المبدأ إلى تقديم طلب.[1]"
         },
         {
@@ -62029,8 +62153,8 @@ module.exports = {
         {
           "id": "fuel",
           "name": "دعم البنزين والديزل",
-          "gist": "أُلغيت النسبة المؤقتة لضريبة البنزين في نهاية 2025. والدعم الآن 29.6 ين للتر، ويُقلَّص تدريجيًا من ديسمبر.",
-          "amount": "منذ 19 نوفمبر يبلغ الدعم 29.6 ين للتر للبنزين والديزل والكيروسين وزيت الوقود الثقيل، و23.6 ين لوقود الطائرات. وبمعزل عن ذلك، أُلغيت النسبة المؤقتة لضريبة البنزين (25.1 ين للتر) في 31 ديسمبر 2025.[13][14]",
+          "gist": "أُلغيت النسبة المؤقتة لضريبة البنزين في نهاية 2025. والدعم الآن 27.3 ين للتر، ويُقلَّص تدريجيًا من ديسمبر.",
+          "amount": "منذ 26 نوفمبر يبلغ الدعم 27.3 ين للتر للبنزين والديزل والكيروسين وزيت الوقود الثقيل، و21.8 ين لوقود الطائرات (وكان منذ 19 نوفمبر 29.6 و23.6 ين). وبمعزل عن ذلك، أُلغيت النسبة المؤقتة لضريبة البنزين (25.1 ين للتر) في 31 ديسمبر 2025.[13][14]",
           "who": "كل من يشتري الوقود. وهو ليس دفعة نقدية: يذهب الدعم إلى تجار الجملة لكبح الأسعار في المحطات.[13]",
           "when": "بدأ الإجراء الحالي في 19 مارس 2026. ومن ديسمبر يتقلص الدعم، والخطة الأساسية رفع السعر المرجعي 5 ين شهريًا حتى الربيع. وفي ديسمبر يرتفع السعر المرجعي، وهو الآن 170 ين، إلى 172 ين في اليوم 3، و174 ين في اليوم 10، و175 ين في اليوم 17. ولم يُعلن موعد للانتهاء.[12][13][30]",
           "how": "لا شيء يلزم فعله."
@@ -62174,6 +62298,12 @@ module.exports = {
           "reported"
         ],
         [
+          "2026-11-27",
+          "27 نوفمبر 2026",
+          "رفضت الجلسة العامة لمجلس المستشارين، بأغلبية 124 صوتًا مقابل 120، مشروع قرار اللوم ضد وزير التعليم الذي قدّمته 8 كتل معارضة في 26 نوفمبر؛ وتعتزم الأغلبية الحاكمة مطالبة المعارضة باستئناف المداولات سريعًا.[30]",
+          "reported"
+        ],
+        [
           "2026-12",
           "ديسمبر 2026",
           "يبدأ خصم الكهرباء والغاز مع استهلاك ديسمبر، ويُسوّى خفض ضريبة الدخل في تسوية آخر العام.[11][15]",
@@ -62226,7 +62356,7 @@ module.exports = {
         ],
         [
           "متى يُقرّ مشروع قانون دفعة تخفيف العبء عن العاملين؟",
-          "لا يُعرف بعد. فهو أمام لجنة خاصة في مجلس المستشارين، لكن المعارضة قررت منذ 24 نوفمبر عدم المشاركة في المداولات في الوقت الحالي، وحتى 26 نوفمبر لم يُحدَّد موعد للتصويت. وتنتهي الدورة في 12 ديسمبر، ولم يُقرَّر تمديدها.[26][28][9]"
+          "لا يُعرف بعد. فهو أمام لجنة خاصة في مجلس المستشارين. وكانت المعارضة قررت منذ 24 نوفمبر عدم المشاركة في المداولات في الوقت الحالي، لكن الجلسة العامة رفضت في 27 نوفمبر مشروع قرار اللوم ضد وزير التعليم بأغلبية 124 صوتًا مقابل 120، وتعتزم الأغلبية الحاكمة مطالبة المعارضة باستئناف المداولات سريعًا. وحتى 27 نوفمبر لم يُعلن موعد للتصويت. وتنتهي الدورة في 12 ديسمبر، ولم يُقرَّر تمديدها.[26][28][30][9]"
         ],
         [
           "هل هناك دفعة للأسر المعفاة من ضريبة السكان؟",
