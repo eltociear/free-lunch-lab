@@ -1443,6 +1443,10 @@
    {
     "file": "zen-kaku-gothic-new-400-ja-d076e62d0b.woff2",
     "chars": "á"
+   },
+   {
+    "file": "zen-kaku-gothic-new-400-ja-fb8bb3e7de.woff2",
+    "chars": "豪"
    }
   ],
   "ja:body:700": [
@@ -1753,6 +1757,10 @@
    {
     "file": "zen-kaku-gothic-new-700-ja-bd340756a4.woff2",
     "chars": "á"
+   },
+   {
+    "file": "zen-kaku-gothic-new-700-ja-b3be5ed6cc.woff2",
+    "chars": "豪"
    }
   ],
   "ja:display": [
@@ -1959,6 +1967,10 @@
    {
     "file": "dela-gothic-one-400-ja-f369256849.woff2",
     "chars": "ぶ"
+   },
+   {
+    "file": "dela-gothic-one-400-ja-eb96891fc3.woff2",
+    "chars": "光暮納苦豪"
    }
   ],
   "ja:dot": [
@@ -2879,6 +2891,10 @@
    {
     "file": "noto-sans-sc-900-zh-3eaeeb9881.woff2",
     "chars": "批签轮"
+   },
+   {
+    "file": "noto-sans-sc-900-zh-f431b4ea90.woff2",
+    "chars": "光悉艰讲"
    }
   ],
   "zh:dot": [

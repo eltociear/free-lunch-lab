@@ -4202,7 +4202,7 @@ Sources:
 
 ## Open-source projects
 
-The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-26. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
+The code behind basic income that anyone can read, run or improve: protocols that issue a UBI, the wallets used to claim it, proof-of-personhood systems and simulators that estimate what a basic income would cost. Stars and last commit dates are fetched from GitHub and GitLab when the site is built, and projects with no commit in over 12 months are marked dormant. Metadata fetched on 2026-11-27. Page: https://neteru-nyukin.eltociear.workers.dev/open-source/
 
 ### Circles v2 contracts
 
@@ -4454,7 +4454,7 @@ Web wallet and mobile client for the original Circles (v1) at circles.garden: si
 - Language: TypeScript
 - License: AGPL-3.0
 - Stars: 6
-- Last commit: 2026-11-24
+- Last commit: 2026-11-26
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Ğ1 wallet and web-of-trust explorer for Duniter v2s, the successor to the Cesium app
@@ -4478,7 +4478,7 @@ Mobile wallet for Ğ1, built with Flutter, for sending and receiving the libre c
 - Language: Dart
 - License: AGPL-3.0
 - Stars: 8
-- Last commit: 2026-11-19
+- Last commit: 2026-11-26
 - Service page: https://neteru-nyukin.eltociear.workers.dev/services/g1/
 
 Simple, lightweight Ğ1 wallet built with Flutter for Android and the browser, running on Duniter v2: pay by QR code, show amounts in Ğ1 or in universal dividends, and manage web-of-trust certifications
@@ -4560,7 +4560,7 @@ Web app for Idena at app.idena.io: take part in validation sessions and manage y
 - Group: Apps & wallets
 - Language: TypeScript
 - License: MIT (LICENSE)
-- Stars: 165
+- Stars: 166
 - Last commit: 2026-11-26
 
 Code of the NGO Social Income, which turns donations into an unconditional basic income paid to mobile phones in the Global South (Sierra Leone); the repository holds the website, admin tools and the recipient app
@@ -4584,7 +4584,7 @@ Scripts that ran Steem Basic Income (SBI) on the Steem blockchain: sponsors boug
 - Language: Rust
 - License: MIT
 - Stars: 44
-- Last commit: 2026-11-25
+- Last commit: 2026-11-26
 
 Core protocol and developer docs for World ID, the anonymous proof of personhood from World (formerly Worldcoin)
 
@@ -4650,7 +4650,7 @@ Reference mobile app for BrightID: people connect with others they know, and ana
 - Language: Python
 - License: AGPL-3.0
 - Stars: 178
-- Last commit: 2026-11-25
+- Last commit: 2026-11-26
 
 Rules engine for the US tax and benefit system, used to model the cost and poverty impact of UBI and other reforms
 
@@ -5015,6 +5015,12 @@ What's in it: Five-wave panel survey microdata (household, individual, community
 ## Basic income news
 
 A weekly roundup of basic income, guaranteed income and cash transfer news, checked by hand. Each item is summarised in our own words and links to its source; proposals are labelled as proposals. For changes to this site itself, see the update log on the home page. Page: https://neteru-nyukin.eltociear.workers.dev/news/
+
+### Week of 2026-11-23 (updated 2026-11-27)
+
+- 2026-11-18, Australia (Other): Sydney gives 40 local artists A$25,000 each, with no project to deliver. The City of Sydney council endorsed A$1 million in artist support grants: A$25,000 each for 40 local artists, to spend over a year on living costs or any part of their practice, with no set project to deliver. It is a one-off grant to chosen artists, not a basic income; an article on BIEN’s site used it to argue that artists need lasting income security. Source: City of Sydney (Medianet), https://newshub.medianet.com.au/2026/11/1m-awarded-to-sydney-artists-to-combat-exodus-of-creative-talent/182368/; City of Sydney, https://www.cityofsydney.nsw.gov.au/opportunities/apply-artist-support-grant; Basic Income Earth Network, https://basicincome.org/news/2026/11/beyond-project-grants-why-artists-need-income-security/
+- 2026-11-17, South Korea (Policy): Jeonnam-Gwangju budget proposal sets aside 433 billion won for rural basic income in 16 counties. Jeonnam-Gwangju’s 2027 budget proposal sets aside about 433 billion won to pay rural basic income to about 709,000 residents of its 16 depopulating counties: 150,000 won a month in counties picked for the national pilot, and about 75,000 won from the second half of 2027 in the rest. The city council has yet to pass it. Source: Pressian, https://www.pressian.com/pages/articles/2026111821154308453; Kyunghyang Shinmun, https://khan.co.kr/article/202611180600091
+- 2026-11-10, Namibia (Pilot): Omitara residents describe harder times since Namibia’s basic income pilot ended. Residents of Omitara, where the 2008–2009 BIG pilot paid N$100 a month, told The Namibian that life has grown harder since the payments stopped, with families often short of food. These are residents’ accounts, not a new study. The government’s N$600 conditional grant has not reached Omitara and was paused in early October for lack of funds. Source: The Namibian, https://www.namibian.com.na/omitara-hungers-for-basic-income-grant-return/; Basic Income Earth Network, https://basicincome.org/news/2026/11/namibias-omitara-what-happens-when-basic-income-disappears/
 
 ### Week of 2026-11-16 (updated 2026-11-19)
 

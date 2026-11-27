@@ -5,8 +5,32 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/news/</link>
     <description>A weekly, hand-checked roundup of basic income, guaranteed income and cash transfer news from around the world, summarised in our own words with sources.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Sydney gives 40 local artists A$25,000 each, with no project to deliver</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-au-sydney-artist-support-grants</link>
+      <guid isPermaLink="false">bi-news-au-sydney-artist-support-grants</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Other</category>
+      <description>The City of Sydney council endorsed A$1 million in artist support grants: A$25,000 each for 40 local artists, to spend over a year on living costs or any part of their practice, with no set project to deliver. It is a one-off grant to chosen artists, not a basic income; an article on BIEN’s site used it to argue that artists need lasting income security. Source: City of Sydney (Medianet) https://newshub.medianet.com.au/2026/11/1m-awarded-to-sydney-artists-to-combat-exodus-of-creative-talent/182368/, City of Sydney https://www.cityofsydney.nsw.gov.au/opportunities/apply-artist-support-grant, Basic Income Earth Network https://basicincome.org/news/2026/11/beyond-project-grants-why-artists-need-income-security/</description>
+    </item>
+    <item>
+      <title>Jeonnam-Gwangju budget proposal sets aside 433 billion won for rural basic income in 16 counties</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-kr-jeonnam-gwangju-rural-budget-2027</link>
+      <guid isPermaLink="false">bi-news-kr-jeonnam-gwangju-rural-budget-2027</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Policy</category>
+      <description>Jeonnam-Gwangju’s 2027 budget proposal sets aside about 433 billion won to pay rural basic income to about 709,000 residents of its 16 depopulating counties: 150,000 won a month in counties picked for the national pilot, and about 75,000 won from the second half of 2027 in the rest. The city council has yet to pass it. Source: Pressian https://www.pressian.com/pages/articles/2026111821154308453, Kyunghyang Shinmun https://khan.co.kr/article/202611180600091</description>
+    </item>
+    <item>
+      <title>Omitara residents describe harder times since Namibia’s basic income pilot ended</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-na-omitara-after-big-pilot</link>
+      <guid isPermaLink="false">bi-news-na-omitara-after-big-pilot</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Pilot</category>
+      <description>Residents of Omitara, where the 2008–2009 BIG pilot paid N$100 a month, told The Namibian that life has grown harder since the payments stopped, with families often short of food. These are residents’ accounts, not a new study. The government’s N$600 conditional grant has not reached Omitara and was paused in early October for lack of funds. Source: The Namibian https://www.namibian.com.na/omitara-hungers-for-basic-income-grant-return/, Basic Income Earth Network https://basicincome.org/news/2026/11/namibias-omitara-what-happens-when-basic-income-disappears/</description>
+    </item>
     <item>
       <title>Germany’s job agency chief expects AI to cut 800,000 jobs in 15 years</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/news/#n-de-nahles-ai-800k-jobs</link>

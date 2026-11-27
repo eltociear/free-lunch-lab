@@ -4131,9 +4131,147 @@ module.exports = {
       "es": "Nueva Zelanda",
       "de": "Neuseeland",
       "ar": "نيوزيلندا"
+    },
+    "na": {
+      "en": "Namibia",
+      "ja": "ナミビア",
+      "zh": "纳米比亚",
+      "hi": "नामीबिया",
+      "es": "Namibia",
+      "de": "Namibia",
+      "ar": "ناميبيا"
+    },
+    "au": {
+      "en": "Australia",
+      "ja": "オーストラリア",
+      "zh": "澳大利亚",
+      "hi": "ऑस्ट्रेलिया",
+      "es": "Australia",
+      "de": "Australien",
+      "ar": "أستراليا"
     }
   },
   "BI_NEWS": [
+    {
+      "updated": "2026-11-27",
+      "items": [
+        {
+          "id": "au-sydney-artist-support-grants",
+          "date": "2026-11-18",
+          "region": "au",
+          "tag": "other",
+          "essays": [
+            "ireland-basic-income-arts-lottery"
+          ],
+          "sources": [
+            {
+              "name": "City of Sydney (Medianet)",
+              "url": "https://newshub.medianet.com.au/2026/11/1m-awarded-to-sydney-artists-to-combat-exodus-of-creative-talent/182368/"
+            },
+            {
+              "name": "City of Sydney",
+              "url": "https://www.cityofsydney.nsw.gov.au/opportunities/apply-artist-support-grant"
+            },
+            {
+              "name": "Basic Income Earth Network",
+              "url": "https://basicincome.org/news/2026/11/beyond-project-grants-why-artists-need-income-security/"
+            }
+          ],
+          "title": {
+            "en": "Sydney gives 40 local artists A$25,000 each, with no project to deliver",
+            "ja": "シドニー市、地元の芸術家40人に2万5,000豪ドルずつ　作品の納品は求めず",
+            "zh": "悉尼市向40名本地艺术家各发放2.5万澳元，不要求交付项目",
+            "hi": "सिडनी ने 40 स्थानीय कलाकारों को A$25,000-A$25,000 दिए, कोई प्रोजेक्ट पूरा करने की शर्त नहीं",
+            "es": "Sídney da 25.000 dólares australianos a cada uno de 40 artistas, sin exigir un proyecto",
+            "de": "Sydney zahlt 40 Kunstschaffenden je 25.000 australische Dollar, ohne Projektpflicht",
+            "ar": "سيدني تمنح 40 فنانًا محليًا 25 ألف دولار أسترالي لكل منهم دون اشتراط مشروع"
+          },
+          "summary": {
+            "en": "The City of Sydney council endorsed A$1 million in artist support grants: A$25,000 each for 40 local artists, to spend over a year on living costs or any part of their practice, with no set project to deliver. It is a one-off grant to chosen artists, not a basic income; an article on BIEN’s site used it to argue that artists need lasting income security.",
+            "ja": "シドニー市議会は、地元の芸術家40人に2万5,000豪ドルずつ、計100万豪ドルの支援金を承認しました。1年間、生活費を含む創作活動のどんな費用にも使え、決まった作品を納める必要はありません。選ばれた人への1回限りの助成で、ベーシックインカムではありません。",
+            "zh": "悉尼市议会批准了总额100万澳元的艺术家支持补助：40名本地艺术家每人2.5万澳元，可在一年内用于生活费或创作的任何开支，无需交付指定项目。这是面向入选者的一次性补助，并非基本收入；基本收入地球网络（BIEN）网站上的一篇文章借此主张艺术家需要长期的收入保障。",
+            "hi": "सिडनी नगर परिषद ने कलाकारों के लिए कुल A$10 लाख की सहायता मंज़ूर की: 40 स्थानीय कलाकारों को A$25,000-A$25,000, जिन्हें वे एक साल में रहने के खर्च या अपने कला-कार्य के किसी भी हिस्से पर लगा सकते हैं, कोई तय प्रोजेक्ट पूरा किए बिना। यह चुने गए कलाकारों को एक बार का अनुदान है, बेसिक इनकम नहीं; बेसिक इनकम अर्थ नेटवर्क (BIEN) की वेबसाइट पर एक लेख ने इसके सहारे कहा कि कलाकारों को स्थायी आय सुरक्षा चाहिए।",
+            "es": "El Ayuntamiento de Sídney aprobó un millón de dólares australianos en ayudas a artistas: 25.000 para cada uno de 40 artistas locales, para gastar en un año en su vida diaria o en cualquier parte de su práctica, sin un proyecto que entregar. Es una ayuda puntual a artistas seleccionados, no una renta básica; un artículo en la web de la Red Mundial de la Renta Básica (BIEN) la usó para defender una seguridad de ingresos duradera para los artistas.",
+            "de": "Der Stadtrat von Sydney hat 1 Million australische Dollar an Künstlerförderung beschlossen: je 25.000 für 40 lokale Kunstschaffende, ein Jahr lang frei für Lebenshaltung oder jeden Teil ihrer Arbeit, ohne ein festgelegtes Projekt abzuliefern. Es ist eine einmalige Förderung für Ausgewählte, kein Grundeinkommen; ein Beitrag auf der Website des Basic Income Earth Network forderte daraus eine dauerhafte Einkommenssicherung für Kunstschaffende.",
+            "ar": "أقرّ مجلس مدينة سيدني منحًا لدعم الفنانين بقيمة مليون دولار أسترالي: 25 ألفًا لكل واحد من 40 فنانًا محليًا، يُنفقونها خلال عام على المعيشة أو على أي جانب من عملهم الفني، دون مشروع محدد يُسلَّم. وهي منحة لمرة واحدة لفنانين مختارين وليست دخلًا أساسيًا، وقد استند إليها مقال على موقع شبكة الدخل الأساسي العالمية (⁦BIEN⁩) للدعوة إلى أمن دخل دائم للفنانين."
+          }
+        },
+        {
+          "id": "kr-jeonnam-gwangju-rural-budget-2027",
+          "date": "2026-11-17",
+          "region": "kr",
+          "tag": "policy",
+          "timeline": [
+            "korea-rural"
+          ],
+          "sources": [
+            {
+              "name": "Pressian",
+              "url": "https://www.pressian.com/pages/articles/2026111821154308453"
+            },
+            {
+              "name": "Kyunghyang Shinmun",
+              "url": "https://khan.co.kr/article/202611180600091"
+            }
+          ],
+          "title": {
+            "en": "Jeonnam-Gwangju budget proposal sets aside 433 billion won for rural basic income in 16 counties",
+            "ja": "韓国・全南光州市、16郡の農村基本所得に4,330億ウォンを予算案に計上",
+            "zh": "韩国全南光州市预算案为16个郡的农村基本收入列入4330亿韩元",
+            "hi": "दक्षिण कोरिया: जॉन्नाम-ग्वांगजू के बजट प्रस्ताव में 16 काउंटियों की ग्रामीण बेसिक इनकम के लिए 433 अरब वॉन",
+            "es": "El presupuesto propuesto de Jeonnam-Gwangju reserva 433.000 millones de wones para la renta básica rural en 16 condados",
+            "de": "Jeonnam-Gwangju plant 433 Milliarden Won für ländliches Grundeinkommen in 16 Landkreisen ein",
+            "ar": "مشروع موازنة جونّام-غوانغجو يخصص 433 مليار وون للدخل الأساسي الريفي في 16 مقاطعة"
+          },
+          "summary": {
+            "en": "Jeonnam-Gwangju’s 2027 budget proposal sets aside about 433 billion won to pay rural basic income to about 709,000 residents of its 16 depopulating counties: 150,000 won a month in counties picked for the national pilot, and about 75,000 won from the second half of 2027 in the rest. The city council has yet to pass it.",
+            "ja": "韓国の全南光州市は2027年度予算案に、人口減少地域の16郡の住民約70万9,000人に農村基本所得を配るための約4,330億ウォンを計上しました。国の試験事業に選ばれた郡は月15万ウォン、それ以外は2027年後半から月7万5,000ウォン程度の予定です。市議会の議決はまだです。",
+            "zh": "韩国全南光州市在2027年预算案中列入约4330亿韩元，用于向16个人口减少郡的约70.9万名居民发放农村基本收入：入选国家试点的郡每月15万韩元，其余郡从2027年下半年起每月约7.5万韩元。预算案尚待市议会通过。",
+            "hi": "जॉन्नाम-ग्वांगजू के 2027 के बजट प्रस्ताव में घटती आबादी वाली 16 काउंटियों के लगभग 7,09,000 निवासियों को ग्रामीण बेसिक इनकम देने के लिए करीब 433 अरब वॉन रखे गए हैं: राष्ट्रीय पायलट के लिए चुनी गई काउंटियों में हर महीने 1,50,000 वॉन, और बाकी में 2027 की दूसरी छमाही से लगभग 75,000 वॉन। नगर परिषद ने इसे अभी पास नहीं किया है।",
+            "es": "El presupuesto propuesto de Jeonnam-Gwangju para 2027 reserva unos 433.000 millones de wones para pagar la renta básica rural a unos 709.000 residentes de sus 16 condados en despoblación: 150.000 wones al mes en los condados elegidos para el piloto nacional y unos 75.000 desde la segunda mitad de 2027 en el resto. El consejo municipal aún debe aprobarlo.",
+            "de": "Der Haushaltsentwurf 2027 von Jeonnam-Gwangju sieht rund 433 Milliarden Won vor, um etwa 709.000 Einwohnern seiner 16 schrumpfenden Landkreise ein ländliches Grundeinkommen zu zahlen: 150.000 Won im Monat in den für das nationale Pilotprojekt ausgewählten Kreisen, in den übrigen ab der zweiten Jahreshälfte 2027 etwa 75.000 Won. Der Stadtrat muss noch zustimmen.",
+            "ar": "خصص مشروع موازنة جونّام-غوانغجو لعام 2027 نحو 433 مليار وون لدفع الدخل الأساسي الريفي لنحو 709 آلاف من سكان مقاطعاتها الست عشرة التي يتناقص سكانها: 150 ألف وون شهريًا في المقاطعات المختارة للتجربة الوطنية، ونحو 75 ألف وون في البقية اعتبارًا من النصف الثاني من 2027. ولم يقرّه مجلس المدينة بعد."
+          }
+        },
+        {
+          "id": "na-omitara-after-big-pilot",
+          "date": "2026-11-10",
+          "region": "na",
+          "tag": "pilot",
+          "timeline": [
+            "namibia"
+          ],
+          "sources": [
+            {
+              "name": "The Namibian",
+              "url": "https://www.namibian.com.na/omitara-hungers-for-basic-income-grant-return/"
+            },
+            {
+              "name": "Basic Income Earth Network",
+              "url": "https://basicincome.org/news/2026/11/namibias-omitara-what-happens-when-basic-income-disappears/"
+            }
+          ],
+          "title": {
+            "en": "Omitara residents describe harder times since Namibia’s basic income pilot ended",
+            "ja": "ナミビアのBIG試験事業の地オミタラ、終了後の暮らしの苦しさを住民が語る",
+            "zh": "纳米比亚基本收入试点结束多年后，奥米塔拉居民讲述生活更加艰难",
+            "hi": "नामीबिया: बेसिक इनकम पायलट खत्म होने के बाद ओमिटारा के निवासी बताते हैं कि ज़िंदगी कठिन हुई",
+            "es": "Vecinos de Omitara cuentan que la vida empeoró tras el fin del piloto de renta básica de Namibia",
+            "de": "Einwohner von Omitara berichten von härteren Zeiten seit dem Ende von Namibias Grundeinkommen-Pilot",
+            "ar": "سكان أوميتارا يروون صعوبة العيش منذ انتهاء تجربة الدخل الأساسي في ناميبيا"
+          },
+          "summary": {
+            "en": "Residents of Omitara, where the 2008–2009 BIG pilot paid N$100 a month, told The Namibian that life has grown harder since the payments stopped, with families often short of food. These are residents’ accounts, not a new study. The government’s N$600 conditional grant has not reached Omitara and was paused in early October for lack of funds.",
+            "ja": "2008〜2009年にBIG試験事業で月100ナミビア・ドルが配られたオミタラの住民は、ナミビアン紙に、給付が止まってから暮らしが苦しくなり食事にも困ると話しました。新しい調査ではなく住民の証言です。政府の月600ナミビア・ドルの条件付き給付は同地に届かず、資金不足で10月初めから止まっています。",
+            "zh": "2008至2009年BIG试点曾每月发放100纳米比亚元的奥米塔拉，居民对《纳米比亚人报》说，发放停止后生活变得更艰难，家庭常常吃不饱。这些是居民的讲述，并非新的研究。政府每月600纳米比亚元的有条件补助尚未覆盖奥米塔拉，并因资金不足于10月初暂停。",
+            "hi": "ओमिटारा, जहाँ 2008–2009 के BIG पायलट में हर महीने N$100 मिलते थे, के निवासियों ने द नामीबियन को बताया कि भुगतान बंद होने के बाद ज़िंदगी कठिन हुई है और परिवारों को अक्सर पूरा खाना नहीं मिलता। ये निवासियों के बयान हैं, कोई नया अध्ययन नहीं। सरकार का N$600 का सशर्त अनुदान ओमिटारा तक नहीं पहुँचा है और पैसे की कमी से अक्टूबर की शुरुआत में रोक दिया गया।",
+            "es": "Vecinos de Omitara, donde el piloto BIG de 2008 y 2009 pagó 100 N$ al mes, contaron a The Namibian que la vida se ha vuelto más dura desde que acabaron los pagos y que a menudo les falta comida. Son testimonios de residentes, no un estudio nuevo. La ayuda condicionada del Gobierno, de 600 N$, no ha llegado a Omitara y se suspendió a principios de octubre por falta de fondos.",
+            "de": "Einwohner von Omitara, wo das BIG-Pilotprojekt 2008 und 2009 monatlich 100 N$ zahlte, sagten The Namibian, das Leben sei seit dem Ende der Zahlungen härter geworden, Familien fehle oft das Essen. Es sind Aussagen von Einwohnern, keine neue Studie. Der an Bedingungen geknüpfte Zuschuss der Regierung von 600 N$ hat Omitara nicht erreicht und ist seit Anfang Oktober mangels Geld ausgesetzt.",
+            "ar": "قال سكان أوميتارا، حيث دفعت تجربة ⁦BIG⁩ في 2008 و2009 مئة دولار ناميبي شهريًا، لصحيفة ⁦The Namibian⁩ إن الحياة صارت أصعب منذ توقف الدفعات وإن الأسر كثيرًا ما ينقصها الطعام. وهذه روايات للسكان وليست دراسة جديدة. ولم تصل منحة الحكومة المشروطة البالغة 600 دولار ناميبي إلى أوميتارا، وقد أوقفت مطلع أكتوبر لنقص التمويل."
+          }
+        }
+      ]
+    },
     {
       "updated": "2026-11-19",
       "items": [

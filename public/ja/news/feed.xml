@@ -5,8 +5,32 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/</link>
     <description>世界のベーシックインカム、保障所得、現金給付のニュースを毎週まとめています。実験、政策、研究、AIと財源の動きを、出典を確かめたうえで自分たちの言葉で要約し、元の記事へのリンクを添えています。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/ja/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>シドニー市、地元の芸術家40人に2万5,000豪ドルずつ　作品の納品は求めず</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-au-sydney-artist-support-grants</link>
+      <guid isPermaLink="false">bi-news-au-sydney-artist-support-grants</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <category>その他</category>
+      <description>シドニー市議会は、地元の芸術家40人に2万5,000豪ドルずつ、計100万豪ドルの支援金を承認しました。1年間、生活費を含む創作活動のどんな費用にも使え、決まった作品を納める必要はありません。選ばれた人への1回限りの助成で、ベーシックインカムではありません。 出典: City of Sydney (Medianet) https://newshub.medianet.com.au/2026/11/1m-awarded-to-sydney-artists-to-combat-exodus-of-creative-talent/182368/, City of Sydney https://www.cityofsydney.nsw.gov.au/opportunities/apply-artist-support-grant, Basic Income Earth Network https://basicincome.org/news/2026/11/beyond-project-grants-why-artists-need-income-security/</description>
+    </item>
+    <item>
+      <title>韓国・全南光州市、16郡の農村基本所得に4,330億ウォンを予算案に計上</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-kr-jeonnam-gwangju-rural-budget-2027</link>
+      <guid isPermaLink="false">bi-news-kr-jeonnam-gwangju-rural-budget-2027</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>韓国の全南光州市は2027年度予算案に、人口減少地域の16郡の住民約70万9,000人に農村基本所得を配るための約4,330億ウォンを計上しました。国の試験事業に選ばれた郡は月15万ウォン、それ以外は2027年後半から月7万5,000ウォン程度の予定です。市議会の議決はまだです。 出典: Pressian https://www.pressian.com/pages/articles/2026111821154308453, Kyunghyang Shinmun https://khan.co.kr/article/202611180600091</description>
+    </item>
+    <item>
+      <title>ナミビアのBIG試験事業の地オミタラ、終了後の暮らしの苦しさを住民が語る</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-na-omitara-after-big-pilot</link>
+      <guid isPermaLink="false">bi-news-na-omitara-after-big-pilot</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <category>実験</category>
+      <description>2008〜2009年にBIG試験事業で月100ナミビア・ドルが配られたオミタラの住民は、ナミビアン紙に、給付が止まってから暮らしが苦しくなり食事にも困ると話しました。新しい調査ではなく住民の証言です。政府の月600ナミビア・ドルの条件付き給付は同地に届かず、資金不足で10月初めから止まっています。 出典: The Namibian https://www.namibian.com.na/omitara-hungers-for-basic-income-grant-return/, Basic Income Earth Network https://basicincome.org/news/2026/11/namibias-omitara-what-happens-when-basic-income-disappears/</description>
+    </item>
     <item>
       <title>ドイツ連邦雇用庁長官「AIで15年間に80万人分の仕事がなくなる」</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/ja/news/#n-de-nahles-ai-800k-jobs</link>

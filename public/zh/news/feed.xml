@@ -5,8 +5,32 @@
     <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/</link>
     <description>每周汇总全球基本收入、保障收入和现金转移的新闻：试点、政策、研究以及 AI 与资金的动向。每条新闻都经人工核实来源，用我们自己的话概括，并附上原文链接，方便查证。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://neteru-nyukin.eltociear.workers.dev/zh/news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>悉尼市向40名本地艺术家各发放2.5万澳元，不要求交付项目</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-au-sydney-artist-support-grants</link>
+      <guid isPermaLink="false">bi-news-au-sydney-artist-support-grants</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <category>其他</category>
+      <description>悉尼市议会批准了总额100万澳元的艺术家支持补助：40名本地艺术家每人2.5万澳元，可在一年内用于生活费或创作的任何开支，无需交付指定项目。这是面向入选者的一次性补助，并非基本收入；基本收入地球网络（BIEN）网站上的一篇文章借此主张艺术家需要长期的收入保障。 来源: City of Sydney (Medianet) https://newshub.medianet.com.au/2026/11/1m-awarded-to-sydney-artists-to-combat-exodus-of-creative-talent/182368/, City of Sydney https://www.cityofsydney.nsw.gov.au/opportunities/apply-artist-support-grant, Basic Income Earth Network https://basicincome.org/news/2026/11/beyond-project-grants-why-artists-need-income-security/</description>
+    </item>
+    <item>
+      <title>韩国全南光州市预算案为16个郡的农村基本收入列入4330亿韩元</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-kr-jeonnam-gwangju-rural-budget-2027</link>
+      <guid isPermaLink="false">bi-news-kr-jeonnam-gwangju-rural-budget-2027</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <category>政策</category>
+      <description>韩国全南光州市在2027年预算案中列入约4330亿韩元，用于向16个人口减少郡的约70.9万名居民发放农村基本收入：入选国家试点的郡每月15万韩元，其余郡从2027年下半年起每月约7.5万韩元。预算案尚待市议会通过。 来源: Pressian https://www.pressian.com/pages/articles/2026111821154308453, Kyunghyang Shinmun https://khan.co.kr/article/202611180600091</description>
+    </item>
+    <item>
+      <title>纳米比亚基本收入试点结束多年后，奥米塔拉居民讲述生活更加艰难</title>
+      <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-na-omitara-after-big-pilot</link>
+      <guid isPermaLink="false">bi-news-na-omitara-after-big-pilot</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <category>试点</category>
+      <description>2008至2009年BIG试点曾每月发放100纳米比亚元的奥米塔拉，居民对《纳米比亚人报》说，发放停止后生活变得更艰难，家庭常常吃不饱。这些是居民的讲述，并非新的研究。政府每月600纳米比亚元的有条件补助尚未覆盖奥米塔拉，并因资金不足于10月初暂停。 来源: The Namibian https://www.namibian.com.na/omitara-hungers-for-basic-income-grant-return/, Basic Income Earth Network https://basicincome.org/news/2026/11/namibias-omitara-what-happens-when-basic-income-disappears/</description>
+    </item>
     <item>
       <title>德国联邦就业局局长：15年内AI将使80万个岗位消失</title>
       <link>https://neteru-nyukin.eltociear.workers.dev/zh/news/#n-de-nahles-ai-800k-jobs</link>
