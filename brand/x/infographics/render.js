@@ -1760,6 +1760,57 @@ h1{font-size:${ja ? 64 : 52}px}
       };
     },
   },
+  // note.com header for the weekly benefits news article of 27 Nov 2026 (PR #1). Same layout as note-benefits, with a
+  // two-line hook. Figures from data/worker-relief-2026.json and data/japan-benefits-2026.json (censureMotion: 120 for,
+  // 124 against on 27 Nov; sessionEnds 12 Dec; fuelRate ¥27.3/L from 26 Nov; uniformNow none). The rejected motion uses
+  // the "none" colour.
+  'note-wk-20261127': {
+    w: 1280, h: 670, langs: ['ja'], safe: [1100, 560],
+    build: () => {
+      const rows = [
+        ['就業者負担軽減支援金', 'bill', '法案審議中', '参院で審議中断・会期末12/12'],
+        ['文科相の問責決議案', 'none', '否決', '賛成120・反対124（11/27）'],
+        ['ガソリンなどの補助', 'running', '決定・実施中', '11/26から1Lあたり27.3円'],
+        ['国民一律の現金給付', 'none', '未定・予定なし', '政府の決定・提案なし'],
+      ];
+      return {
+        bare: true,
+        moon: [1192, 92, 44],
+        body: `
+<div class="wrap">
+  <p class="kicker">今週の給付金ニュース 11/27</p>
+  <h1 class="hero">問責案は否決。<br>支援金法案は、<em>まだ止まったまま。</em></h1>
+  <div class="grid">
+    ${rows.map(([n, k, s, d]) => `<div class="cell"><p class="nm"><span>${n}</span><i class="${k}">${s}</i></p><p class="dt">${d}</p></div>`).join('')}
+  </div>
+</div>
+<div class="foot2">
+  <svg width="64" height="45" viewBox="-8 -8 256 184">${bento}</svg>
+  <p class="wm ja">不労所得研究所</p>
+  <p class="handle">@FreeLunchLab</p>
+</div>`,
+        css: `
+.page{padding:0}
+.wrap{position:absolute;left:110px;top:72px;width:1060px}
+.kicker{display:inline-block;font-size:28px;line-height:1;color:#141A3A;background:#FFD66B;padding:10px 22px 12px;border-radius:999px;white-space:nowrap}
+.hero{margin-top:18px;font-size:60px;line-height:1.16;padding-right:0;white-space:nowrap}
+.hero em{font-style:normal;background:linear-gradient(100deg,#FFD66B 10%,#6CF0B0 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.grid{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cell{padding:14px 20px 14px;border-radius:18px;background:rgba(20,26,58,.72);border:2px solid rgba(207,214,255,.18)}
+.nm{display:flex;align-items:center;justify-content:space-between;gap:12px;white-space:nowrap}
+.nm span{font-size:28px;line-height:1.15;font-weight:900;color:#FFFFFF}
+.nm i{font-style:normal;font-size:20px;font-weight:900;line-height:1;padding:6px 14px 7px;border-radius:999px;border:2.5px solid currentColor}
+.nm .running{color:#6CF0B0;background:rgba(108,240,176,.12)}
+.nm .bill{color:#FFD66B;background:rgba(255,214,107,.12)}
+.nm .none{color:#FF6E61;background:rgba(255,110,97,.12)}
+.dt{margin-top:7px;font-size:23px;line-height:1.15;font-weight:700;color:#C9D0F0;white-space:nowrap}
+.foot2{position:absolute;left:110px;right:110px;bottom:62px;display:flex;align-items:center;gap:16px}
+.foot2 .wm{font-size:30px}
+.foot2 .handle{margin-left:10px;font-size:28px;padding:6px 20px}
+`,
+      };
+    },
+  },
   // Three-people card for the same note article, built on myth() like note-takenaka-table. Facts only from the
   // refundable-tax-credit essay: the bill and outline (earned income above a floor, total income below a ceiling),
   // the council's floor options (wages of about ¥530k, ¥740k or about ¥1.06m; below the no-local-tax line the payment
