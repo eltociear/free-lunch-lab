@@ -7,7 +7,7 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "about": "Figures behind the page on Japan's Worker Burden Relief Payment (就業者負担軽減支援金), /guides/worker-relief-payment/. Each fact gives its value, the date it refers to, its status (decided: in the bill or government documents; considering: the government said in the Diet that it is considering it; reported: a plan reported by the press; open: not decided), the source and the day it was checked. build.js checks that every language of the page carries the digits listed under 'digits' (any one of the alternatives in each nested list), and the page's household calculator takes its amounts and rates from 'calc' (fact ids) and 'comparison'.",
   "page": "guides/worker-relief-payment/",
-  "retrieved": "2026-11-26",
+  "retrieved": "2026-11-27",
   "facts": [
     {
       "id": "foodRateNow",
@@ -356,9 +356,9 @@
       "unit": "date",
       "status": "decided",
       "date": "2026-11-11",
-      "note": "Special Committee on the consumption tax and relief payment bill; no vote as of 26 Nov 2026",
+      "note": "Special Committee on the consumption tax and relief payment bill; no committee vote reported as of 27 Nov 2026",
       "source": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/222/meisai/m222080222001.htm",
-      "asOf": "2026-11-26"
+      "asOf": "2026-11-27"
     },
     {
       "id": "regionalHearing",
@@ -409,15 +409,21 @@
     {
       "id": "censureMotion",
       "value": "2026-11-27",
-      "unit": "expected plenary vote on the opposition's censure motion against the education minister (submission announced for 26 Nov)",
+      "unit": "date the House of Councillors plenary rejected the censure motion against the education minister, 124 votes against and 120 in favour (submitted on 26 Nov by 8 opposition groups)",
       "status": "reported",
-      "date": "2026-11-25",
-      "note": "Constitutional Democratic Party Diet affairs chief Yoshitaka Saito, 25 Nov; the opposition is not taking part in talks on the upper house schedule; Chief Cabinet Secretary Minoru Kihara: Seki will explain properly and stays in office (Jiji)",
-      "source": "https://www.nippon.com/ja/articles/-/57960",
-      "asOf": "2026-11-26",
+      "date": "2026-11-27",
+      "note": "Jiji Press, 27 Nov: the ruling side plans to ask the opposition to resume, as soon as possible, deliberations on the suspended food consumption tax cut bills; no vote date for the bill reported as of 27 Nov",
+      "source": "https://www.jiji.com/jc/article?k=2026112700415&g=pol",
+      "asOf": "2026-11-27",
       "digits": [
         [
           "27"
+        ],
+        [
+          "120"
+        ],
+        [
+          "124"
         ]
       ]
     },
@@ -426,10 +432,10 @@
       "value": "2026-12-12",
       "unit": "date",
       "status": "open",
-      "date": "2026-11-26",
-      "note": "69-day session to 12 December, no extension decided as of 26 Nov",
+      "date": "2026-11-27",
+      "note": "69-day session to 12 December, no extension decided as of 27 Nov",
       "source": "https://www.shugiin.go.jp/",
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "digits": [
         [
           "12"

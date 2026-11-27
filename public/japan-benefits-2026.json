@@ -7,7 +7,7 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "about": "Figures behind the roundup of Japan's national cash benefits and subsidies, /guides/japan-benefits-2026/. Each fact gives its value, the benefit it belongs to (item), the date or period it refers to, its status (running: decided and running; bill: in a bill before the Diet; considering: the government says it is considering it; reported: reported by the press only; none: not decided or not planned; ended), the source URL with its name in Japanese and English, and the day it was checked. Facts shared with the Worker Burden Relief Payment page name the fact in worker-relief-2026.json under 'wrp' and have the same value and source. build.js checks that every language of the page carries the digits listed under 'digits' (any one of the alternatives in each nested list).",
   "page": "guides/japan-benefits-2026/",
-  "retrieved": "2026-11-26",
+  "retrieved": "2026-11-27",
   "facts": [
     {
       "id": "wrpMaxPerWorker",
@@ -153,7 +153,7 @@
         "ja": "朝日新聞（Yahoo!ニュース）「夫婦と子2人世帯で最大年27万円給付検討　消費減税後の支援金制度」（2026年11月24日）",
         "en": "Asahi Shimbun via Yahoo! News — Up to ¥270,000 a year under consideration for couples with two children in the relief payment after the tax cut (24 Nov 2026, in Japanese)"
       },
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "wrp": "fullSchemeMax",
       "digits": [
         [
@@ -174,7 +174,7 @@
         "ja": "参議院「参議院の動き」消費税・支援金法案に関する特別委員会公聴会（2026年11月24日）",
         "en": "House of Councillors — The special committee’s public hearing on the consumption tax and relief payment bill (24 Nov 2026, in Japanese)"
       },
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "wrp": "publicHearing",
       "digits": [
         [
@@ -198,11 +198,38 @@
         "ja": "共同通信（47NEWS）「野党、消費減税法案の審議に当面応じず」（2026年11月24日）",
         "en": "Kyodo News via 47NEWS — Opposition will not take part in deliberations on the consumption tax cut bill for now (24 Nov 2026, in Japanese)"
       },
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "wrp": "oppositionBoycott",
       "digits": [
         [
           "6"
+        ]
+      ]
+    },
+    {
+      "id": "wrpCensureMotion",
+      "item": "wrp",
+      "value": "2026-11-27",
+      "unit": "date the House of Councillors plenary rejected the censure motion against the education minister, 124 votes against and 120 in favour (submitted on 26 Nov by 8 opposition groups)",
+      "status": "reported",
+      "date": "2026-11-27",
+      "note": "Jiji Press, 27 Nov: the ruling side plans to ask the opposition to resume, as soon as possible, deliberations on the suspended food consumption tax cut bills; no vote date for the bill reported as of 27 Nov",
+      "source": "https://www.jiji.com/jc/article?k=2026112700415&g=pol",
+      "sourceLabel": {
+        "ja": "時事通信「参院、関文科相問責案を否決　与党、消費税審議再開要請へ」（2026年11月27日）",
+        "en": "Jiji Press — House of Councillors rejects the censure motion against Education Minister Seki; the ruling side to ask for deliberations on the consumption tax bills to resume (27 Nov 2026, in Japanese)"
+      },
+      "asOf": "2026-11-27",
+      "wrp": "censureMotion",
+      "digits": [
+        [
+          "27"
+        ],
+        [
+          "120"
+        ],
+        [
+          "124"
         ]
       ]
     },
@@ -212,14 +239,14 @@
       "value": "2026-12-12",
       "unit": "date",
       "status": "none",
-      "date": "2026-11-26",
-      "note": "69-day session to 12 December, no extension decided as of 26 Nov",
+      "date": "2026-11-27",
+      "note": "69-day session to 12 December, no extension decided as of 27 Nov",
       "source": "https://www.shugiin.go.jp/",
       "sourceLabel": {
         "ja": "衆議院 トップページ（会期：12月12日まで）",
         "en": "House of Representatives — home page (session until 12 December; in Japanese)"
       },
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "wrp": "sessionEnds",
       "digits": [
         [
@@ -443,20 +470,20 @@
     {
       "id": "fuelRate",
       "item": "fuel",
-      "value": 29.6,
-      "unit": "yen per litre subsidy for petrol, diesel, kerosene and heavy oil from 19 Nov 2026 (jet fuel 23.6)",
+      "value": 27.3,
+      "unit": "yen per litre subsidy for petrol, diesel, kerosene and heavy oil from 26 Nov 2026 (jet fuel 21.8; 29.6 and 23.6 from 19 Nov)",
       "status": "running",
-      "date": "2026-11-19",
+      "date": "2026-11-26",
       "note": "emergency measure since 19 Mar 2026; covers the part of the national average petrol price above the base price",
       "source": "https://nenryo-teigakuhikisage.go.jp/",
       "sourceLabel": {
-        "ja": "資源エネルギー庁「中東情勢を踏まえた緊急的激変緩和措置」（2026年11月19日以降の支給単価）",
-        "en": "Agency for Natural Resources and Energy — Emergency fuel price measure (subsidy rates from 19 Nov 2026, in Japanese)"
+        "ja": "資源エネルギー庁「中東情勢を踏まえた緊急的激変緩和措置」（2026年11月26日以降の支給単価）",
+        "en": "Agency for Natural Resources and Energy — Emergency fuel price measure (subsidy rates from 26 Nov 2026, in Japanese)"
       },
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "digits": [
         [
-          "296"
+          "273"
         ]
       ]
     },
@@ -489,8 +516,8 @@
       "date": "2026-03-19",
       "source": "https://nenryo-teigakuhikisage.go.jp/",
       "sourceLabel": {
-        "ja": "資源エネルギー庁「中東情勢を踏まえた緊急的激変緩和措置」（2026年11月19日以降の支給単価）",
-        "en": "Agency for Natural Resources and Energy — Emergency fuel price measure (subsidy rates from 19 Nov 2026, in Japanese)"
+        "ja": "資源エネルギー庁「中東情勢を踏まえた緊急的激変緩和措置」（2026年11月26日以降の支給単価）",
+        "en": "Agency for Natural Resources and Energy — Emergency fuel price measure (subsidy rates from 26 Nov 2026, in Japanese)"
       },
       "asOf": "2026-11-23",
       "digits": [
@@ -506,13 +533,13 @@
       "unit": "yen per litre, base price of the petrol subsidy from 17 Dec 2026 (172 from 3 Dec, 174 from 10 Dec; 170 before)",
       "status": "running",
       "date": "2026-11-06",
-      "note": "notice to subsidised companies; diesel, heavy oil and kerosene keep the same subsidy as petrol, domestic jet fuel 80% of it; the rates page still showed the rates from 19 Nov on 26 Nov",
+      "note": "notice to subsidised companies; diesel, heavy oil and kerosene keep the same subsidy as petrol, domestic jet fuel 80% of it; the rates page showed the rates from 26 Nov on 27 Nov",
       "source": "https://nenryo-teigakuhikisage.go.jp/assets/pdf/261106_%E5%9F%BA%E6%BA%96%E4%BE%A1%E6%A0%BC%E3%81%AE%E6%AE%B5%E9%9A%8E%E7%9A%84%E3%81%AA%E5%BC%95%E4%B8%8A%E3%81%92%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%88%E8%A3%9C%E5%8A%A9%E4%BA%8B%E6%A5%AD%E8%80%85%EF%BC%89.pdf",
       "sourceLabel": {
         "ja": "資源エネルギー庁・公正取引委員会「緊急的激変緩和措置の基準価格の段階的な引上げについて（依頼）」（2026年11月6日、PDF）",
         "en": "Agency for Natural Resources and Energy and Japan Fair Trade Commission — Stepwise rise of the base price under the emergency fuel measure (6 Nov 2026; PDF, in Japanese)"
       },
-      "asOf": "2026-11-26",
+      "asOf": "2026-11-27",
       "digits": [
         [
           "172"
