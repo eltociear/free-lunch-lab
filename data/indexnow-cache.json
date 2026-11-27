@@ -2193,15 +2193,11 @@
   "https://neteru-nyukin.eltociear.workers.dev/es/": "642450c810ada6ed",
   "https://neteru-nyukin.eltociear.workers.dev/de/": "a829f1bba66e8826",
   "https://neteru-nyukin.eltociear.workers.dev/ar/": "53e904becbbac7eb",
-  "https://neteru-nyukin.eltociear.workers.dev/guides/worker-relief-payment/": "373567a8a70b395d",
-  "https://neteru-nyukin.eltociear.workers.dev/ja/guides/worker-relief-payment/": "18924ab3fe95e8be",
   "https://neteru-nyukin.eltociear.workers.dev/zh/guides/worker-relief-payment/": "4d6704d8303607d4",
   "https://neteru-nyukin.eltociear.workers.dev/hi/guides/worker-relief-payment/": "5661641ac1e37547",
   "https://neteru-nyukin.eltociear.workers.dev/es/guides/worker-relief-payment/": "d372c971d4651955",
   "https://neteru-nyukin.eltociear.workers.dev/de/guides/worker-relief-payment/": "ec52a5ca4701581b",
   "https://neteru-nyukin.eltociear.workers.dev/ar/guides/worker-relief-payment/": "27c858855d8bb8ae",
-  "https://neteru-nyukin.eltociear.workers.dev/guides/japan-benefits-2026/": "27f11e18d8ba37a4",
-  "https://neteru-nyukin.eltociear.workers.dev/ja/guides/japan-benefits-2026/": "8c62607f63c6a6eb",
   "https://neteru-nyukin.eltociear.workers.dev/zh/guides/japan-benefits-2026/": "e93574d9eed01753",
   "https://neteru-nyukin.eltociear.workers.dev/hi/guides/japan-benefits-2026/": "da55caf989fad65e",
   "https://neteru-nyukin.eltociear.workers.dev/es/guides/japan-benefits-2026/": "1dba4f47c2e82d10",
@@ -2213,6 +2209,10 @@
   "https://neteru-nyukin.eltociear.workers.dev/hi/data/": "496178d7b5dc38f3",
   "https://neteru-nyukin.eltociear.workers.dev/es/data/": "006b20068eacffd0",
   "https://neteru-nyukin.eltociear.workers.dev/de/data/": "24bda1624491d7ba",
-  "https://neteru-nyukin.eltociear.workers.dev/ar/data/": "1b8a0b375b2bfb13"
+  "https://neteru-nyukin.eltociear.workers.dev/ar/data/": "1b8a0b375b2bfb13",
+  "https://neteru-nyukin.eltociear.workers.dev/guides/worker-relief-payment/": "a6069ee23562ebf1",
+  "https://neteru-nyukin.eltociear.workers.dev/ja/guides/worker-relief-payment/": "da5bdfeed6e4b810",
+  "https://neteru-nyukin.eltociear.workers.dev/guides/japan-benefits-2026/": "dc8716e354770d36",
+  "https://neteru-nyukin.eltociear.workers.dev/ja/guides/japan-benefits-2026/": "59b53e1dc416fa06"
  }
 }

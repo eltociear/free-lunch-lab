@@ -57359,10 +57359,10 @@ module.exports = {
       }
     ],
     "ja": {
-      "title": "就業者負担軽減支援金はいつ・いくら？ 年収いくらまで対象か、わが家の金額を計算",
+      "title": "就業者負担軽減支援金はいつ・いくら？対象・年収と受け取り方",
       "short": "就業者負担軽減支援金",
       "eb": "制度のまとめ",
-      "desc": "就業者負担軽減支援金はいつから、いくら、誰が対象？ 1人最大約2万5,000円・子ども1人約5,000円の検討案、年収100万〜450万円という目安、まだ決まっていないことを出典と日付つきで整理。わが家の金額も計算できます。",
+      "desc": "就業者負担軽減支援金はいつから・いくら・誰が対象？法案は参議院で審議中で、金額は未定です。1人最大約2万5,000円・子ども1人約5,000円の検討案、年収100万〜450万円の目安、受け取り方を出典つきで整理。金額の計算機つき。",
       "asOf": "2026年11月時点の情報です（最終確認：2026年11月27日）。法案はまだ成立していません。",
       "lead": [
         "就業者負担軽減支援金は、働く中低所得の人に国が現金を配る新しい制度です。食料品の消費税を2年間8%から1%に下げる法案の中でつくられ、政府は「給付付き税額控除」の第一歩と位置づけています。[2][4]",
@@ -57690,10 +57690,10 @@ module.exports = {
       "about": "国会で審議中の就業者負担軽減支援金の、いつ・いくら・誰が・どうやって。法案に書いてあること、検討中のこと、報道を分けて数字ごとに出典と日付を付け、情報が出るたびに更新します。わが家の金額の計算機つき。"
     },
     "en": {
-      "title": "Japan’s Worker Burden Relief Payment: when, how much, and up to what income? Work out your household’s amount",
+      "title": "Japan’s Worker Burden Relief Payment: when, how much and who qualifies",
       "short": "Worker Burden Relief Payment",
       "eb": "Policy explainer",
-      "desc": "Japan’s Worker Burden Relief Payment: when, how much and who qualifies. Up to about ¥25,000 per worker plus ¥5,000 per child under consideration, incomes of ¥1–4.5 million as a rough guide, what is still open. With a calculator.",
+      "desc": "When is Japan’s Worker Burden Relief Payment paid, how much, who gets it? Still a bill; up to about ¥25,000 a worker is being considered. With a calculator.",
       "asOf": "Information as of November 2026 (last checked 27 November 2026). The bill has not yet become law.",
       "lead": [
         "The Worker Burden Relief Payment (shūgyōsha futan keigen shienkin) is a new cash payment from the Japanese state to low- and middle-income people who work. It is created by the same bill that cuts the consumption tax on food from 8% to 1% for two years, and the government calls it the first step toward a refundable tax credit.[2][4]",
@@ -60018,10 +60018,10 @@ module.exports = {
       }
     ],
     "ja": {
-      "title": "【2026年11月最新】給付金はいつ・いくら？ 国の給付金・支援金・補助金の一覧（決定済み／審議中／未定）",
+      "title": "給付金はいつ・いくら？2026年の国の給付金・補助金一覧",
       "short": "国の給付金の一覧（2026年）",
       "eb": "給付金のまとめ",
-      "desc": "給付金はいつ・いくら？ 2026年11月最新の国の給付金・支援金・補助金の一覧。一律給付は決まっていません。就業者負担軽減支援金（審議中）、電気・ガス代の値引き、所得税の減税、子育て応援手当などを、状態・金額・時期・出典つきで整理。",
+      "desc": "2026年の給付金はいつ・いくら？国民一律の現金給付は決まっていません。就業者負担軽減支援金（法案審議中）、ガソリン補助、電気・ガス代の値引き、所得税の減税など、国の給付金・補助金を金額・対象・時期・出典つきで一覧にしました。",
       "asOf": "2026年11月27日時点の情報です（就業者負担軽減支援金とガソリンの補助は11月27日に、食料品の消費税と電気・ガス代は11月26日に、ほかの項目は11月23日に確認）。新しい情報が出たら更新します。",
       "lead": [
         "「給付金はいつ？」「一律給付はある？」に答えるため、国の給付金・支援金・補助金を、すでに決まって実施中のもの、法案を国会で審議中のもの、政府が検討中のもの、決まっていないもの、終わったものに分けて一覧にしました。項目ごとに金額、対象、時期、受け取り方、出典と確認日を示します。",
@@ -60359,10 +60359,10 @@ module.exports = {
       "about": "給付金はいつ・いくら？ 国の給付金・支援金・補助金を、実施中・法案審議中・検討中・未定・終了に分けて、金額・対象・時期・受け取り方・出典と確認日つきで一覧にしたページ。情報が出るたびに更新します。"
     },
     "en": {
-      "title": "Japan cash benefits, November 2026: when and how much? Every national payment and subsidy, decided, in the Diet or undecided",
+      "title": "Japan benefits 2026: when and how much? Every national payment and subsidy",
       "short": "Japan’s benefits in 2026",
       "eb": "Benefits roundup",
-      "desc": "When are Japan’s cash benefits paid and how much? No payment for everyone is decided. The relief payment for workers, power and gas discounts and more, sourced.",
+      "desc": "When are Japan’s 2026 cash benefits paid and how much? No payment for everyone is decided. Worker relief payment (a bill), fuel subsidy, power and gas aid.",
       "asOf": "Information as of 27 November 2026 (the relief payment and the fuel subsidy checked on 27 November, the food tax and power and gas support on 26 November, the other items on 23 November). We update this page when new facts come in.",
       "lead": [
         "To answer “when is the next payment?” and “is there a payment for everyone?”, this page lists Japan’s national cash benefits, support payments and subsidies, split into those decided and running, those in a bill before the Diet, those the government is considering, those not decided and those that have ended. Each item gives the amount, who gets it, when, how to receive it, its sources and the day it was checked.",

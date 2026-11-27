@@ -2492,6 +2492,9 @@ const wrJs = require('./src/worker-relief.js');
 const wrpPath = l => `${urlPath(l)}guides/${WRP.id}/`;
 const wrpAbs = l => SITE_URL + wrpPath(l);
 const WRF = require('./data/worker-relief-2026.json');
+// 検索向けの題: 本文の題（W.title / J.title）のうしろに最終更新日（updated から作る、手で書かない）。ja と en だけ。シェア画像と llms.txt は題だけ
+const UPD_TAG = { ja: d => `【${d.getUTCMonth() + 1}月${d.getUTCDate()}日更新】`, en: d => ` (updated ${d.getUTCDate()} ${['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][d.getUTCMonth()]})` };
+const updTitle = (title, iso, lang) => UPD_TAG[lang] ? title + UPD_TAG[lang](new Date(iso + 'T00:00:00Z')) : title;
 const WR_STATUS = ['decided', 'considering', 'reported', 'open'];
 const WR_DAY = /^\d{4}-\d\d-\d\d$/;
 const WR_FIELDS = ['title', 'short', 'eb', 'desc', 'asOf', 'lead', 'answerH', 'answer', 'legend', 'openH', 'open', 'toc', 'sections', 'timelineH', 'timeline', 'faqH', 'faq', 'calcH', 'calcIntro', 'calc', 'relatedH', 'related', 'logH', 'updatedL', 'statusL', 'essayLink', 'hhLink', 'hhBack', 'about'];
@@ -2577,7 +2580,7 @@ function wrpPage(lang) {
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
       { '@type': 'ListItem', position: 2, name: W.short, item: url } ] },
-    { '@context': 'https://schema.org', '@type': 'Article', headline: W.title, description: W.desc, inLanguage: LANG_TAG[lang], datePublished: WRP.published, dateModified: WRP.updated,
+    { '@context': 'https://schema.org', '@type': 'Article', headline: updTitle(W.title, WRP.updated, lang), description: W.desc, inLanguage: LANG_TAG[lang], datePublished: WRP.published, dateModified: WRP.updated,
       author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
       mainEntityOfPage: url, image: ogImage(`guide/${lang}/${WRP.id}.jpg`), isBasedOn: `${SITE_URL}/worker-relief-2026.json` },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: W.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: plain(a) } })) },
@@ -2592,7 +2595,7 @@ function wrpPage(lang) {
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(W.short)}</li></ol></nav>
 <main class="guide wr">
 <article>
-<header class="orgs-head"><p class="eyebrow">${esc(W.eb)}</p><h1>${esc(W.title)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${WRP.updated}">${esc(W.updatedL)} ${esc(longDate(WRP.updated, lang))}</time></p><p class="wr-asof">${esc(W.asOf)}</p>
+<header class="orgs-head"><p class="eyebrow">${esc(W.eb)}</p><h1>${esc(updTitle(W.title, WRP.updated, lang))}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${WRP.updated}">${esc(W.updatedL)} ${esc(longDate(WRP.updated, lang))}</time></p><p class="wr-asof">${esc(W.asOf)}</p>
 ${shareRow(lang, W.title, url, { compact: true, mk: k => `${url}?s=${k}` })}</header>
 <section class="wr-ans" id="wr-answer" aria-labelledby="wr-ans-h"><h2 id="wr-ans-h">${esc(W.answerH)}</h2><dl>${W.answer.map(([k, v, st]) => `<div><dt>${esc(k)}</dt><dd>${fn(v)}${chip(st)}</dd></div>`).join('')}</dl>
 <div class="wr-open"><h3>${esc(W.openH)}</h3><ul>${W.open.map(x => `<li>${fn(x)}</li>`).join('')}</ul></div></section>
@@ -2616,7 +2619,7 @@ ${sec('wr-log', W.logH, `<ol class="g-log">${WRP.log.map(x => `<li><time datetim
 <p class="back"><a class="btn line" href="${home}">${rtl ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
   const script = `<script>(function(){var D=${jsonScript(WR_D[lang])},L=${jsonScript(C)},LANG=${JSON.stringify(lang)};${wrJs.CLIENT}${wrJs.BOOT}})()</script>`;
-  return shell(lang, { title: `${W.title} | ${L.title}`, desc: clip(W.desc, lang), hrefFor: wrpAbs, pathFor: wrpPath, ld, ogType: 'article', body, script: shareScript(L) + script, image: ogImage(`guide/${lang}/${WRP.id}.jpg`), extraHead: HH_CSS + '\n' + WR_CSS + '\n' });
+  return shell(lang, { title: `${updTitle(W.title, WRP.updated, lang)} | ${L.title}`, desc: clip(W.desc, lang), hrefFor: wrpAbs, pathFor: wrpPath, ld, ogType: 'article', body, script: shareScript(L) + script, image: ogImage(`guide/${lang}/${WRP.id}.jpg`), extraHead: HH_CSS + '\n' + WR_CSS + '\n' });
 }
 // 照合: データファイルの事実ごとの digits（入れ子の配列はどれか1つ）が、各言語のページの本文（<main>）にあるか。計算式の「7/108」も
 const wrpDrift = () => {
@@ -2727,7 +2730,7 @@ function jbPage(lang) {
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: L.brandPlain, item: abs(lang) },
       { '@type': 'ListItem', position: 2, name: J.short, item: url } ] },
-    { '@context': 'https://schema.org', '@type': 'Article', headline: J.title, description: J.desc, inLanguage: LANG_TAG[lang], datePublished: JB.published, dateModified: JB.updated,
+    { '@context': 'https://schema.org', '@type': 'Article', headline: updTitle(J.title, JB.updated, lang), description: J.desc, inLanguage: LANG_TAG[lang], datePublished: JB.published, dateModified: JB.updated,
       author: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) }, publisher: { '@type': 'Organization', name: 'Free Lunch Lab', url: abs(DEFAULT_LANG) },
       mainEntityOfPage: url, image: ogImage(`guide/${lang}/${JB.id}.jpg`), isBasedOn: `${SITE_URL}/japan-benefits-2026.json` },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: J.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: plain(a) } })) },
@@ -2746,7 +2749,7 @@ function jbPage(lang) {
   const body = `<nav class="crumbs" aria-label="${esc(L.crumbLabel)}"><ol><li><a href="${home}">${esc(L.brandPlain)}</a></li><li aria-current="page">${esc(J.short)}</li></ol></nav>
 <main class="guide wr jb">
 <article>
-<header class="orgs-head"><p class="eyebrow">${esc(J.eb)}</p><h1>${esc(J.title)}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${JB.updated}">${esc(J.updatedL)} ${esc(longDate(JB.updated, lang))}</time></p><p class="wr-asof jb-asof">${esc(J.asOf)}</p>
+<header class="orgs-head"><p class="eyebrow">${esc(J.eb)}</p><h1>${esc(updTitle(J.title, JB.updated, lang))}</h1><p class="byline">${esc(L.essayBy)} · <time datetime="${JB.updated}">${esc(J.updatedL)} ${esc(longDate(JB.updated, lang))}</time></p><p class="wr-asof jb-asof">${esc(J.asOf)}</p>
 ${shareRow(lang, J.title, url, { compact: true, mk: k => `${url}?s=${k}` })}</header>
 <section class="wr-ans" id="jb-answer" aria-labelledby="jb-ans-h"><h2 id="jb-ans-h">${esc(J.answerH)}</h2><dl>${J.answer.map(([k, v, st]) => `<div><dt>${esc(k)}</dt><dd>${fn(v)}${chip(st)}</dd></div>`).join('')}</dl>
 <div class="wr-open"><h3>${esc(J.openH)}</h3><ul>${J.open.map(x => `<li>${fn(x)}</li>`).join('')}</ul></div></section>
@@ -2765,7 +2768,7 @@ ${sec('jb-log', J.logH, `<ol class="g-log">${JB.log.map(x => `<li><time datetime
 </article>
 <p class="back"><a class="btn line" href="${home}">${rtl ? '→' : '←'} ${esc(L.backHome)}</a></p>
 </main>`;
-  return shell(lang, { title: `${J.title} | ${L.title}`, desc: clip(J.desc, lang), hrefFor: jbAbs, pathFor: jbPath, ld, ogType: 'article', body, script: shareScript(L), image: ogImage(`guide/${lang}/${JB.id}.jpg`), extraHead: WR_CSS + '\n' + JB_CSS + '\n' });
+  return shell(lang, { title: `${updTitle(J.title, JB.updated, lang)} | ${L.title}`, desc: clip(J.desc, lang), hrefFor: jbAbs, pathFor: jbPath, ld, ogType: 'article', body, script: shareScript(L), image: ogImage(`guide/${lang}/${JB.id}.jpg`), extraHead: WR_CSS + '\n' + JB_CSS + '\n' });
 }
 // 照合: データファイルの事実ごとの digits が、各言語のページの本文（<main>）にあるか（就業者負担軽減支援金のページと同じ読み方）
 const pageNums = file => {
